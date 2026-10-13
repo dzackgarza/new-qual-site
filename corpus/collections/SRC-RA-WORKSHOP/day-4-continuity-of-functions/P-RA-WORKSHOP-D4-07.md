@@ -18,44 +18,47 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 (c.f. January 2007 #3a, June 2010 #2a) Prove Theorem 3.2 for a function $f:K\subset\mathbb R\to\mathbb R$.
 (The proof is nearly unchanged when $n$ or $m$ is greater than 1.)
 :::
 
-:::: {.solution}
+::: {.solution}
+Let $K\subseteq\mathbb R$ be compact and $f:K\to\mathbb R$ continuous.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Reduce to the one-dimensional extreme value theorem.
-Proof: let $f: K \to \mathbb{R}$ be continuous with $K \subseteq \mathbb{R}$ compact.
-We show $f$ attains a maximum; the minimum follows by applying the result to $-f$.
+The image $f(K)$ is compact.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-$f(K)$ is bounded above.
-Proof: suppose not; then for each $n$ there is $x_n \in K$ with $f(x_n) \ge n$.
-Since $K$ is compact (sequentially compact in $\mathbb{R}$), a subsequence $x_{n_j} \to x \in K$.
-By continuity $f(x_{n_j}) \to f(x)$, but $f(x_{n_j}) \ge n_j \to \infty$, contradiction.
+Let $(V_\alpha)_{\alpha\in A}$ be an open cover of $f(K)$ in $\mathbb R$. The sets $f^{-1}(V_\alpha)$ are open in the subspace $K$ by continuity and cover $K$. Compactness supplies finitely many indices $\alpha_1,\ldots,\alpha_r$ such that
+\[
+K=\bigcup_{j=1}^{r}f^{-1}(V_{\alpha_j}).
+\]
+Applying $f$ yields $f(K)\subseteq\bigcup_{j=1}^{r}V_{\alpha_j}$. Thus every open cover of $f(K)$ has a finite subcover.
 
 :::
 
-::: pf-step
+:::
 
-The supremum is attained.
-Proof: let $M = \sup_{x \in K} f(x) < \infty$; choose $x_n \in K$ with $f(x_n) \to M$ (e.g. $f(x_n) \ge M - 1/n$). A subsequence $x_{n_j} \to x^* \in K$ (compactness), and by continuity $f(x^*) = \lim_j f(x_{n_j}) = M$.
-Hence $f$ attains its maximum at $x^* \in K$.
+::: {.pf-step #s2}
+
+If $K$ is nonempty, then $f$ attains both its maximum and minimum on $K$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the nonempty set $f(K)\subseteq\mathbb R$ is compact, hence closed and bounded. Set $M=\sup f(K)$ and $m=\inf f(K)$. Boundedness makes both numbers finite. The defining properties of supremum and infimum put $M$ and $m$ in the closure of $f(K)$; closedness therefore implies $M,m\in f(K)$. Thus there exist $p,q\in K$ with $f(p)=M$ and $f(q)=m$.
+
+:::
 
 :::
 
 ::: pf-qed
 
-Proof: $f$ attains both its maximum and (applied to $-f$) its minimum on $K$.
+Step [](#s1){.pf-ref} proves the compact-image assertion of Theorem 3.2 for functions on subsets of $\mathbb R$. Step [](#s2){.pf-ref} proves the extreme-value assertion, including its stated specialization to nondegenerate closed intervals.
 
 :::
 

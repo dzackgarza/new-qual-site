@@ -28,51 +28,46 @@ c. Exhibit explicitly the correspondence between subgroups of $G$ and intermedia
 :::
 
 ::: {.solution}
-Put
+Set $\theta=\sqrt2+\sqrt5$.
+
+<1>1. The extension has degree
 \[
-\theta=\sqrt2+\sqrt5.
-\]
-Then
-\[
-\theta^2=7+2\sqrt{10},
-\qquad
-\sqrt{10}=\frac{\theta^2-7}{2}\in\mathbb Q(\theta).
-\]
-Moreover
-\[
-\theta\sqrt{10}=5\sqrt2+2\sqrt5,
-\]
-so subtracting $2\theta$ gives
-\[
-3\sqrt2=\theta(\sqrt{10}-2).
-\]
-Hence $\sqrt2\in\mathbb Q(\theta)$, and then $\sqrt5=\theta-\sqrt2\in\mathbb Q(\theta)$. Thus
-\[
-K=\mathbb Q(\theta)=\mathbb Q(\sqrt2,\sqrt5).
-\]
-Since $\sqrt5\notin\mathbb Q(\sqrt2)$, the degree is
-\[
-[K:\mathbb Q]=4.
+\boxed{[K:\mathbb Q]=4}.
 \]
 
-The field contains all four conjugates
+::: {.proof}
+From $\theta^2=7+2\sqrt{10}$ follows $\sqrt{10}=(\theta^2-7)/2\in K$. Since $\theta\sqrt{10}=5\sqrt2+2\sqrt5$, subtracting $2\theta$ yields $3\sqrt2=\theta(\sqrt{10}-2)\in K$. Consequently $\sqrt5=\theta-\sqrt2\in K$, and $K=\mathbb Q(\sqrt2,\sqrt5)$. Were $\sqrt5=a+b\sqrt2$ for rational $a,b$, squaring would give $5=a^2+2b^2+2ab\sqrt2$, so $ab=0$. If $b=0$, $a^2=5$ is impossible in $\mathbb Q$; if $a=0$, $b^2=5/2$ is impossible in $\mathbb Q$. Therefore $\sqrt5\notin\mathbb Q(\sqrt2)$, and the tower law gives degree four.
+:::
+
+<1>2. The extension $K/\mathbb Q$ is Galois, with group
 \[
-\pm\sqrt2\pm\sqrt5
+\boxed{G\cong C_2\times C_2}.
 \]
-of $\theta$, so $K/\mathbb Q$ is Galois. Its automorphisms independently change the signs of $\sqrt2$ and $\sqrt5$, giving
+
+::: {.proof}
+The field $K=\mathbb Q(\sqrt2,\sqrt5)$ is the splitting field of the separable polynomial $(x^2-2)(x^2-5)$, so it is Galois. Each automorphism independently sends $\sqrt2$ to $\pm\sqrt2$ and $\sqrt5$ to $\pm\sqrt5$. All four sign choices define automorphisms, since the field has degree four, and their composition is coordinatewise multiplication of signs. Hence $G$ is the Klein four group.
+:::
+
+<1>3. The complete Galois correspondence is
 \[
-G\cong C_2\times C_2.
-\]
-Let $\sigma_2$ change the sign of $\sqrt2$ and fix $\sqrt5$, and let $\sigma_5$ change the sign of $\sqrt5$ and fix $\sqrt2$. Then the Galois correspondence is
-\[
-\begin{array}{c|c}
+\boxed{\begin{array}{c|c}
 H&K^H\\ \hline
 G&\mathbb Q\\
 \langle\sigma_2\rangle&\mathbb Q(\sqrt5)\\
 \langle\sigma_5\rangle&\mathbb Q(\sqrt2)\\
 \langle\sigma_2\sigma_5\rangle&\mathbb Q(\sqrt{10})\\
-\{1\}&K.
-\end{array}
+\{1\}&K
+\end{array}}
 \]
-These are all subgroups of $G$ and hence all intermediate fields.
+where $\sigma_i$ changes the sign of $\sqrt i$ and fixes the other generator.
+
+::: {.proof}
+The displayed quadratic fields are fixed respectively by the indicated order-two subgroups. Each fixed field has degree two over $\mathbb Q$, by Galois correspondence, so the inclusions are equalities. The whole group fixes precisely $\mathbb Q$, and the trivial subgroup fixes $K$. These five subgroups exhaust the subgroups of $C_2\times C_2$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2, and <1>3 answer parts (a), (b), and (c).
+:::
 :::

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: T-CRVJINV
-kind: theorem
+kind: definition
 title: The $j$-invariant classifies elliptic curves
 slogan: 'The $j$-invariant is the coarse coordinate on elliptic curves: equal $j$ means isomorphic, and the special $j$-values are where automorphisms jump.'
 classification:
@@ -16,6 +16,8 @@ relations:
   target: PR-CRVGRP
 - kind: uses
   target: T-LKT0U
+- kind: related-to
+  target: D-CRVMOD
 review: draft
 prompts:
 - What is the $j$-invariant?
@@ -24,52 +26,84 @@ prompts:
 - What changes in characteristic $2$ and $3$?
 ---
 
-::: {.theorem}
-Over $k = \bar{k}$ with $\operatorname{char} k \neq 2$, every elliptic curve has a Legendre model $y^2 = x(x-1)(x-\lambda)$ with $\lambda \neq 0,1$, and
-\[
-j = 2^8 \frac{(\lambda^2 - \lambda + 1)^3}{\lambda^2(\lambda-1)^2}
-\]
-depends only on $E$.
-Two elliptic curves are isomorphic exactly when their $j$-invariants agree, and every element of $k$ occurs.
-So $\AA^1$ is a coarse moduli space for elliptic curves.
+::: {.definition title="$j$-invariant"}
+Let an elliptic curve be given by a Weierstrass equation
+$$
+y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6.
+$$
+Put
+$$
+\begin{aligned}
+b_2&=a_1^2+4a_2,&
+b_4&=2a_4+a_1a_3,\\
+b_6&=a_3^2+4a_6,&
+b_8&=a_1^2a_6+4a_2a_6-a_1a_3a_4+a_2a_3^2-a_4^2,
+\end{aligned}
+$$
+and
+$$
+c_4=b_2^2-24b_4,
+\qquad
+\Delta=-b_2^2b_8-8b_4^3-27b_6^2+9b_2b_4b_6.
+$$
+For a nonsingular Weierstrass equation, $\Delta\ne0$. The \dfn{$j$-invariant} is
+$$
+j(E)\coloneqq\frac{c_4^3}{\Delta}.
+$$
+It is unchanged by admissible changes of Weierstrass coordinates and therefore depends only on the elliptic curve.
+:::
+
+::: {.theorem title="Classification by $j$"}
+Let $k$ be algebraically closed. Two elliptic curves over $k$ are isomorphic if and only if their $j$-invariants agree, and every element of $k$ occurs as a $j$-invariant. Thus $\AA^1_k$ is the coarse moduli space of elliptic curves over $k$.
+
+If $\operatorname{char}k\ne2$, every elliptic curve has a Legendre model
+$$
+y^2=x(x-1)(x-\lambda),\qquad \lambda\ne0,1,
+$$
+and in this model
+$$
+j(E)=2^8\frac{(\lambda^2-\lambda+1)^3}{\lambda^2(\lambda-1)^2}.
+$$
 :::
 
 ::: {.remark}
-The construction combines Riemann--Roch, Riemann--Hurwitz, and normalization of branch points.
-Take $\abs{2p_0}$: it is nonspecial, so Riemann--Roch gives $\dim = 1$, and it is base-point free since $E$ is not rational, giving a degree-two map $E \to \PP^1$ with $p_0 \mapsto \infty$.
-Riemann--Hurwitz forces exactly four branch points, which a Möbius transformation fixing $\infty$ normalizes to $0, 1, \lambda, \infty$.
+For $\operatorname{char}k\ne2$, Riemann--Roch gives $\ell(2p_0)=2$ and $\ell(2p_0-q)=1$ for every $q\in E$, so $\abs{2p_0}$ is base-point free and defines a degree-two morphism
+$$
+E\longrightarrow\PP^1
+$$
+with $p_0$ mapping to $\infty$. The map is separable and tamely ramified. Riemann--Hurwitz gives four branch points; after an automorphism of $\PP^1$ they are $0,1,\lambda,\infty$, yielding the Legendre equation.
 The residual ambiguity is the $S_3$-action permuting $\{0,1,\lambda\}$, whose orbit is $\lambda, \lambda^{-1}, 1-\lambda, (1-\lambda)^{-1}, \lambda(\lambda-1)^{-1}, \lambda^{-1}(\lambda-1)$; the formula for $j$ is the symmetric function that kills it.
 
-The Weierstrass model comes from $\abs{3p_0}$: $\ell(np_0) = n$ gives a linear relation among $1, x, y, x^2, xy, y^2, x^3$, and completing the square puts it in Legendre form.
+The complete linear system $\abs{3p_0}$ gives a plane cubic Weierstrass model. The Legendre form is instead obtained from the degree-two map above by normalizing its branch divisor.
 
-The space $\AA^1$ is only a coarse moduli space: nontrivial isotrivial families show that no fine moduli space exists.
+The space $\AA^1_j$ is only coarse; the twisting obstruction to a fine moduli space is described in [[D-CRVMOD]].
 :::
 
 ::: {.theorem title="Automorphisms"}
-Over $k = \bar k$,
-\[
+Let $k$ be algebraically closed. Then
+$$
 \abs{\Aut(E, p_0)} =
 \begin{cases}
-2 & j \neq 0, 1728 \\
-4 & j = 1728, \ \operatorname{ch} k \neq 2, 3 \\
-6 & j = 0, \ \operatorname{ch} k \neq 2, 3 \\
-12 & \operatorname{ch} k = 3 \\
-24 & \operatorname{ch} k = 2
+2, & \operatorname{char}k\ne2,3\text{ and }j\ne0,1728,\\
+4, & \operatorname{char}k\ne2,3\text{ and }j=1728,\\
+6, & \operatorname{char}k\ne2,3\text{ and }j=0,\\
+2, & \operatorname{char}k=3\text{ and }j\ne0,\\
+12, & \operatorname{char}k=3\text{ and }j=0,\\
+2, & \operatorname{char}k=2\text{ and }j\ne0,\\
+24, & \operatorname{char}k=2\text{ and }j=0.
 \end{cases}
-\]
-where in the last two rows $1728 = 2^6 \cdot 3^3$ is zero in $k$, so the conditions $j = 0$ and $j = 1728$ coincide and name a single curve.
+$$
+In characteristics $2$ and $3$, the element $1728$ is zero, so the special values $0$ and $1728$ coincide.
 :::
 
 ::: {.remark}
 Away from characteristics $2$ and $3$ the counts come from where the $S_3$-orbit of $\lambda$ collapses: generically $\Aut(E,p_0) = \theset{\pm 1}$; the orbit meets itself once at $j = 1728$ ($\lambda = -1$, the curve $y^2 = x^3-x$), giving order $4$; and twice at $j = 0$ (the Fermat cubic $x^3+y^3=z^3$), giving order $6$.
 In all three cases the group is cyclic, generated by $(x,y) \mapsto (\zeta^2 x, \zeta^3 y)$ for an appropriate root of unity.
 
-Characteristics $2$ and $3$ have different automorphism groups.
+The exceptional $j=0$ curves in characteristics $2$ and $3$ have larger automorphism groups.
 In characteristic $3$ take $y^2 = x^3 - x$.
 Substituting $x \mapsto u^2 x + r$, $y \mapsto u^3 y$ and using that cubing is additive, the equation is preserved exactly when $u^4 = 1$ and $r^3 = r$, that is $u \in \mu_4$ and $r \in \FF_3$: twelve automorphisms.
 In characteristic $2$ take $y^2 + y = x^3$; the same computation with $x \mapsto u^2x+r$, $y \mapsto u^3y + u^2 s x + t$ forces $u^3 = 1$, $r = s^2$, $s^4 = s$ and $t^2 + t = s^6$, giving $3 \cdot 4 \cdot 2 = 24$.
 
-Two consequences follow.
-The automorphism group is noncommutative in these two characteristics --- order $12$ as $\FF_3 \rtimes \mu_4$, order $24$ as $\SL_2(\FF_3)$ --- whereas it is cyclic everywhere else.
-And the unique curve involved is supersingular, which is why characteristics $2$ and $3$ are excluded from so many statements in this chapter: the Legendre model itself requires $\operatorname{ch} k \neq 2$.
+For these special curves the automorphism groups are noncommutative: in characteristic $3$ it is $\FF_3\rtimes\mu_4$ of order $12$, and in characteristic $2$ it is isomorphic to $\SL_2(\FF_3)$ of order $24$. The unique $j=0$ curve in each of these characteristics is supersingular. Elliptic curves with $j\ne0$ still have only the two automorphisms generated by inversion.
 :::

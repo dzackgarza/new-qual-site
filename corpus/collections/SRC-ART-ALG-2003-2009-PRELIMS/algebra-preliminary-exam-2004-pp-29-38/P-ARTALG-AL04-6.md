@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked AP=PC for the 2-by-2 matrix, exhausted the invariant-factor chains in part (b), and checked the coefficients and distinct minimal polynomials of both displayed forms."
 ---
-
 ::: {.problem}
 (a) Find the rational canonical form of
 $$
@@ -40,7 +39,7 @@ and last column $(-c_0,\ldots,-c_{d-1})^{\mathsf T}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The answer to part (a) is
 $$
@@ -99,7 +98,7 @@ This proves that the two chains exhaust all possibilities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The two rational canonical forms are
 $$
@@ -134,6 +133,12 @@ factors, of degrees four and three respectively [@DF04]. They are
 therefore not similar, and step [](#s2){.pf-ref} proves completeness.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s3){.pf-ref} gives all possibilities in part (b).
 
 :::
 

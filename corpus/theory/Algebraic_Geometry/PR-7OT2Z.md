@@ -42,18 +42,19 @@ Under that bijection:
 :::
 
 ::: {.proposition title="Operations on vanishing sets and ideals"}
-Let $\mfa, \mfa_1, \mfa_2$ and $\mfa_i$ ($i \in I$) be ideals of $A \definedas k[x_1,\ldots,x_n]$, and let $Y_j$ ($j \in J$) be subsets of $\AA^n$.
+Let $\mfa, \mfa_1, \mfa_2$ and $\mfa_i$ ($i \in I$) be ideals of $A \coloneqq k[x_1,\ldots,x_n]$, and let $Y_j$ ($j \in J$) be subsets of $\AA^n$.
 Then
-\[
+$$
 \bigcap_{i \in I} V(\mfa_i) = V\Big(\sum_{i \in I} \mfa_i\Big), \qquad
 V(\mfa_1) \union V(\mfa_2) = V(\mfa_1 \mfa_2), \qquad
 \AA^n \sm V(\mfa) = \bigcup_{f \in \mfa} D(f), \qquad
 D(fg) = D(f) \intersect D(g),
-\]
-\[
+$$
+and
+$$
 I\Big(\bigcup_{j \in J} Y_j\Big) = \bigcap_{j \in J} I(Y_j), \qquad
 V(I(Y)) = \overline{Y} \text{ for } Y \subseteq \AA^n .
-\]
+$$
 If $k$ is algebraically closed, then $V(\mfa_1) \subseteq V(\mfa_2)$ if and only if $\sqrt{\mfa_1} \supseteq \sqrt{\mfa_2}$.
 [@Har10a, §I.1]
 :::
@@ -70,7 +71,11 @@ Over $k = \RR$ the ideal $(x^2+1) \subseteq \RR[x]$ is maximal and is not of the
 :::
 
 ::: {.remark}
-The correspondence turns geometric properties into ring-theoretic ones: $V(J)$ is irreducible exactly when $J$ is prime, equivalently when $k[x_1,\ldots,x_n]/J$ is a domain.
+For a radical ideal $J\subseteq k[x_1,\ldots,x_n]$, the closed set $V(J)$ is irreducible exactly when $J$ is prime, equivalently when $k[x_1,\ldots,x_n]/J$ is a domain.
 
-For a closed $X \subseteq \AA^n$ the coordinate ring is $k[X] \definedas k[x_1,\ldots,x_n]/I(X)$, the polynomial functions restricted to $X$, and the same dictionary reappears inside it: closed subsets of $X$ correspond to radical ideals of $k[X]$, and $X$ is irreducible exactly when $k[X]$ is a domain.
+For a closed $X \subseteq \AA^n$, its coordinate ring is
+$$
+k[X]\coloneqq k[x_1,\ldots,x_n]/I(X).
+$$
+The closed subsets of $X$ correspond contravariantly to the radical ideals of $k[X]$, and $X$ is irreducible exactly when $k[X]$ is a domain.
 :::

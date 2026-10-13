@@ -2,10 +2,10 @@
 schema: qual/card@1
 id: FF-ESIOA
 kind: fact
-title: Krull's Hauptidealsatz
+title: Nonzerodivisor corollary of Krull's principal ideal theorem
 slogan: In a Noetherian ring, a principal nonzerodivisor cuts codimension one.
 prompts:
-- What is Krull's Hauptidealsatz?
+- What does Krull's principal ideal theorem imply for a principal nonzerodivisor?
 classification:
   areas:
   - algebra
@@ -13,7 +13,9 @@ classification:
   - Krull Dimension
   - Prime Ideals
   - Noetherian Rings
-relations: []
+relations:
+- kind: uses
+  target: PR-VARHT
 review: draft
 ---
 

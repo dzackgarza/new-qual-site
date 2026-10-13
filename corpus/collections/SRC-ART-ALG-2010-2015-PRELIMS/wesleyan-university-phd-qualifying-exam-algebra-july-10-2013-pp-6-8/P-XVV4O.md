@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the order of A4, normality forced by index two, and the count of eight distinct 3-cycles forced into a hypothetical subgroup of order six."
 ---
-
 ::: {.problem}
 Present and explain an example refuting the converse to Lagrange's Theorem.
 :::
@@ -55,7 +54,7 @@ They all have order $3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The group $A_4$ has no subgroup of order $6$.
 
@@ -79,6 +78,13 @@ group order. Here that divisibility holds for $6\mid12$ but
 the requested subgroup does not exist, disproving the converse.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} provide the required counterexample and prove that it
+indeed refutes the converse of Lagrange's theorem.
 
 :::
 

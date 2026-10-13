@@ -24,41 +24,44 @@ prompts:
 ---
 
 ::: {.theorem title="Riemann--Roch"}
-For $D$ a divisor on a smooth projective curve $X$ of genus $g$ over $k = \bar{k}$,
-\[
+Let $X$ be a smooth projective geometrically connected curve of genus $g$ over a field $k$. For every divisor $D$ on $X$,
+$$
 \ell(D) - \ell(K - D) = \deg D + 1 - g ,
-\]
-where $\ell(D) = h^0(X, \OO(D))$ and $K$ is a canonical divisor [@Har10a, Theorem IV.1.3].
+$$
+where $\ell(D) \coloneqq \dim_k H^0(X, \OO_X(D))$ and $K$ is a canonical divisor [@Har10a, Theorem IV.1.3].
 :::
 
 ::: {.theorem title="Serre duality"}
-$H^1(X, \OO(D)) \cong \dualof{H^0(X, \OO(K-D))}$, so $\ell(K-D) = h^1(D)$ and Riemann--Roch reads
-\[
-\chi(\OO(D)) = \deg D + 1 - g .
-\]
+$H^1(X, \OO_X(D)) \cong H^0(X, \OO_X(K-D))\dual$, so $\ell(K-D) = h^1(X,\OO_X(D))$ and Riemann--Roch gives
+$$
+\chi(\OO_X(D)) = \deg D + 1 - g .
+$$
 :::
 
 ::: {.example title="Hyperplane sections"}
-If $X \subseteq \PP^n$ is a curve of degree $d$ and $D = X \cap H$ is a hyperplane section, then $\mcl(D) \cong \OO_X(1)$, $\deg D = d$, and Riemann--Roch gives
-\[
-\chi(\mcl(D)) = d + 1 - p_a .
-\]
+If $X \subseteq \PP^n_k$ is a smooth projective geometrically connected curve of degree $d$ and $D = X \cap H$ is a hyperplane section, then $\OO_X(D) \cong \OO_X(1)$, $\deg D = d$, and Riemann--Roch gives
+$$
+\chi(\OO_X(D)) = d + 1 - g .
+$$
 :::
 
 ::: {.remark}
-Over a field $k$ that is not algebraically closed, adding a closed point $P$ to $D$ raises $\chi(\OO(D))$ by $\deg P = [\kappa(P) : k]$, and the formula reads $\chi(\OO(D)) = \deg D + \chi(\OO_X)$ with $\deg D = \sum n_P \deg P$ ([[D-CRVDEGREES]]).
+For a closed point $P\in X$, adding $P$ to a divisor raises the degree and Euler characteristic by
+$$
+\deg P=[\kappa(P):k].
+$$
+Thus $\chi(\OO_X(D))=\deg D+\chi(\OO_X)$ with $\deg D=\sum_P n_P\deg P$ ([[D-CRVDEGREES]]).
 :::
 
 ::: {.remark}
-The second form is the one to state first when asked, because it says what the theorem is: the Euler characteristic is linear in the divisor, and the genus is the constant of integration.
-Duality is what converts the unknown $h^1$ into a countable $h^0$.
+Taking $D=0$ gives $\ell(K)=g$, equivalently
+$$
+\dim_k H^0(X,\omega_X)=g.
+$$
+Taking $D=K$ gives $\deg K=2g-2$.
 
-Two immediate consequences, both asked:
-
-- $D = 0$ gives $\ell(K) = g$: the space of global regular differentials on a curve of genus $g$ has dimension exactly $g$.
-  This is the answer to the question about holomorphic differentials on a Riemann surface, and it is also how $g$ can be *defined* so that Riemann--Roch becomes a statement rather than a tautology.
-
-- $D = K$ gives $\deg K = 2g-2$, which is the input to Riemann--Hurwitz and to every genus computation.
-
-For $\deg D > 2g - 2$ the correction term vanishes and $\ell(D) = \deg D + 1 - g$ exactly; this is the range in which everything is computable and where "very ample" questions are settled.
+If $\deg D>2g-2$, then $\deg(K-D)<0$, hence $\ell(K-D)=0$ and
+$$
+\ell(D)=\deg D+1-g.
+$$
 :::

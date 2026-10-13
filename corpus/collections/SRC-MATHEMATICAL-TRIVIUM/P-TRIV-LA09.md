@@ -22,3 +22,72 @@ $$
 A = \left[ { \begin{array} { l l l l l } { 1 } & { 1 } & { 1 } & { \dots } & { 1 } \\ { 1 } & { 0 } & { 1 } & { \dots } & { 1 } \\ { 1 } & { 1 } & { 0 } & { \dots } & { 1 } \\ { \vdots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { 1 } & { 1 } & { 1 } & { \dots } & { 0 } \end{array} } \right] .\tag{2}
 $$
 :::
+
+::: {.solution}
+Assume $A$ is $n\times n$.
+
+<1>1. For each
+$$
+i=2,\ldots,n,
+$$
+perform the row operation
+$$
+R_i\longleftarrow R_i-R_1.
+$$
+
+::: {.proof}
+Adding a multiple of one row to another does not change the determinant.
+:::
+
+<1>2. After the operations in step <1>1, the matrix becomes
+$$
+\begin{pmatrix}
+1&1&1&\cdots&1\\
+0&-1&0&\cdots&0\\
+0&0&-1&\cdots&0\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+0&0&0&\cdots&-1
+\end{pmatrix}.
+$$
+
+::: {.proof}
+In row $i\geq2$, the first entry is
+$$
+1-1=0.
+$$
+At column $i$, the entry is
+$$
+0-1=-1.
+$$
+Every other entry in that row is
+$$
+1-1=0.
+$$
+:::
+
+<1>3. The transformed matrix has determinant
+$$
+1\cdot(-1)^{n-1}.
+$$
+
+::: {.proof}
+The matrix in step <1>2 is upper triangular. The determinant of a triangular
+matrix is the product of its diagonal entries.
+:::
+
+<1>4. Therefore
+$$
+\boxed{\det A=(-1)^{n-1}}.
+$$
+
+::: {.proof}
+The row operations in step <1>1 preserve the determinant, and step <1>3
+computes the determinant of the resulting matrix.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required value.
+:::
+:::

@@ -26,3 +26,119 @@ $$
 
 where $\gamma _ { r } : = \lbrace z \mid z = a + r e ^ { i t } , 0 \leq t \leq \beta _ { 0 } \rbrace$
 :::
+
+::: {.solution}
+Parametrize
+$$
+\gamma_r(t)=a+re^{it},
+\qquad
+0\le t\le\beta_0.
+$$
+
+<1>1. For every $0<r\le R$,
+$$
+\int_{\gamma_r}f(z)\,dz
+=
+i\int_0^{\beta_0}
+(\gamma_r(t)-a)f(\gamma_r(t))\,dt.
+$$
+
+::: {.proof}
+Since
+$$
+\gamma_r'(t)=ire^{it}=i(\gamma_r(t)-a),
+$$
+the definition of the contour integral gives
+$$
+\begin{aligned}
+\int_{\gamma_r}f(z)\,dz
+&=
+\int_0^{\beta_0}f(\gamma_r(t))\gamma_r'(t)\,dt\\
+&=
+i\int_0^{\beta_0}
+(\gamma_r(t)-a)f(\gamma_r(t))\,dt.
+\end{aligned}
+$$
+:::
+
+<1>2. For every $\varepsilon>0$, there is $\delta>0$ such that
+$$
+\left|
+(\gamma_r(t)-a)f(\gamma_r(t))-A
+\right|
+<\varepsilon
+$$
+whenever $0<r<\delta$ and $0\le t\le\beta_0$.
+
+::: {.proof}
+The hypothesis
+$$
+\lim_{\substack{z\to a\\ z\text{ in the sector}}}(z-a)f(z)=A
+$$
+means that for every $\varepsilon>0$ there is $\delta>0$ such that
+$$
+|(z-a)f(z)-A|<\varepsilon
+$$
+throughout the sector whenever $0<|z-a|<\delta$. Since
+$$
+|\gamma_r(t)-a|=r,
+$$
+the estimate holds simultaneously for every $t\in[0,\beta_0]$ once $r<\delta$.
+:::
+
+<1>3. For $0<r<\delta$,
+$$
+\left|
+\int_{\gamma_r}f(z)\,dz-iA\beta_0
+\right|
+\le
+\beta_0\varepsilon.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\int_{\gamma_r}f(z)\,dz-iA\beta_0
+=
+i\int_0^{\beta_0}
+\left(
+(\gamma_r(t)-a)f(\gamma_r(t))-A
+\right)dt.
+$$
+Taking absolute values and applying step <1>2 gives
+$$
+\left|
+\int_{\gamma_r}f(z)\,dz-iA\beta_0
+\right|
+\le
+\int_0^{\beta_0}\varepsilon\,dt
+=
+\beta_0\varepsilon.
+$$
+:::
+
+<1>4. Therefore
+$$
+\boxed{
+\lim_{r\to0}
+\int_{\gamma_r}f(z)\,dz
+=
+iA\beta_0
+}.
+$$
+
+::: {.proof}
+Given $\eta>0$, use step <1>3 with
+$$
+\varepsilon=\frac{\eta}{\beta_0}.
+$$
+Then the difference from $iA\beta_0$ is smaller than $\eta$ for all sufficiently small
+$r>0$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required limit.
+:::
+:::

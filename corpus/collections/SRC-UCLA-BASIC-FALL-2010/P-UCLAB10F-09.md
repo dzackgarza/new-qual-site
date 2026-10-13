@@ -33,3 +33,195 @@ B=\begin{pmatrix}2&1\\1&2\end{pmatrix}.
 (b) Does the iteration converge for arbitrary initial vectors $\vec x_0$?
 Justify your answer.
 :::
+
+::: {.solution}
+Since
+\[
+A^{-1}=\frac12I,
+\]
+write the iteration as
+\[
+\vec x_{k+1}=C\vec x_k+\vec d,
+\]
+where
+\[
+C=A^{-1}B
+=
+\begin{pmatrix}
+1&\frac12\\[1mm]
+\frac12&1
+\end{pmatrix}
+\]
+and
+\[
+\vec d=A^{-1}\vec c
+=
+\begin{pmatrix}
+\frac12\\[1mm]
+\frac12
+\end{pmatrix}.
+\]
+
+<1>1. If the iteration converges to a vector $\vec x$, then
+\[
+\vec x=C\vec x+\vec d.
+\]
+
+::: {.proof}
+Assume
+\[
+\vec x_k\to\vec x.
+\]
+Matrix multiplication and addition are continuous, so passing to the limit in
+\[
+\vec x_{k+1}=C\vec x_k+\vec d
+\]
+gives
+\[
+\vec x=C\vec x+\vec d.
+\]
+:::
+
+<1>2. The unique fixed point is
+\[
+\boxed{
+\vec x=
+\begin{pmatrix}
+-1\\
+-1
+\end{pmatrix}
+}.
+\]
+
+::: {.proof}
+The fixed-point equation from step <1>1 is
+\[
+(I-C)\vec x=\vec d.
+\]
+Now
+\[
+I-C
+=
+\begin{pmatrix}
+0&-\frac12\\[1mm]
+-\frac12&0
+\end{pmatrix},
+\]
+so the equations are
+\[
+-\frac12x_2=\frac12,
+\qquad
+-\frac12x_1=\frac12.
+\]
+Hence
+\[
+x_1=x_2=-1.
+\]
+Thus any convergent iteration must converge to the displayed vector.
+:::
+
+<1>3. If
+\[
+\vec x_*=
+\begin{pmatrix}
+-1\\
+-1
+\end{pmatrix},
+\qquad
+\vec e_k=\vec x_k-\vec x_*,
+\]
+then
+\[
+\vec e_{k+1}=C\vec e_k.
+\]
+
+::: {.proof}
+By step <1>2,
+\[
+\vec x_*=C\vec x_*+\vec d.
+\]
+Subtract this fixed-point identity from
+\[
+\vec x_{k+1}=C\vec x_k+\vec d
+\]
+to obtain
+\[
+\vec x_{k+1}-\vec x_*
+=
+C(\vec x_k-\vec x_*).
+\]
+:::
+
+<1>4. The matrix $C$ has eigenvalue
+\[
+\frac32
+\]
+with eigenvector
+\[
+u=
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}.
+\]
+
+::: {.proof}
+Direct multiplication gives
+\[
+Cu
+=
+\begin{pmatrix}
+1+\frac12\\[1mm]
+\frac12+1
+\end{pmatrix}
+=
+\frac32
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}.
+\]
+:::
+
+<1>5. The iteration does not converge for arbitrary initial vectors.
+
+::: {.proof}
+Take
+\[
+\vec x_0=
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}.
+\]
+Then
+\[
+\vec e_0
+=
+\vec x_0-\vec x_*
+=
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}
+=u.
+\]
+By steps <1>3--<1>4,
+\[
+\vec e_k=C^ku
+=
+\left(\frac32\right)^ku.
+\]
+Therefore
+\[
+\|\vec e_k\|\to\infty,
+\]
+so $\vec x_k$ does not converge.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>2 answers part (a), and step <1>5 answers part (b) negatively.
+:::
+:::

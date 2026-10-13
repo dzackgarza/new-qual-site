@@ -20,33 +20,36 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $f \in k[x_0,\ldots,x_n]$ be homogeneous, irreducible, of degree $d$, and let $X = V(f) \subseteq \PP^n$.
+Let $k$ be a field, let $f \in k[x_0,\ldots,x_n]$ be a nonzero homogeneous irreducible polynomial of degree $d$, and let $X = V(f) \subseteq \PP_k^n$.
 Then $\deg X = d$.
 :::
 
 ::: {.theorem title="Degree of a hypersurface section"}
 Let $Y \subseteq \PP^n$ be a projective variety of dimension $\geq 1$ and $H$ a hypersurface not containing $Y$, with $Y \cap H = Z_1 \cup \cdots \cup Z_s$ the irreducible components.
 Then
-\[
+$$
 \sum_{j=1}^s i(Y, H; Z_j) \deg Z_j = (\deg Y)(\deg H) ,
-\]
+$$
 where $i(Y, H; Z_j)$ is the intersection multiplicity along $Z_j$.
 For distinct plane curves $Y, Z \subseteq \PP^2$ of degrees $d$ and $e$ with no common component, $\sum_{P \in Y \cap Z} i(Y, Z; P) = de$ (Bézout).
 [@Har10a, Theorem I.7.7]
 :::
 
-::: {.remark}
-The proof is the exact sequence
-\[
+::: {.proof}
+Put $S=k[x_0,\ldots,x_n]$. Since $S$ is a domain and $f\ne0$, multiplication by $f$ gives a graded exact sequence
+$$
 0 \to S(-d) \xrightarrow{\; \cdot f \;} S \to S/(f) \to 0 ,
-\]
-which is exact because $S$ is a domain and $f \neq 0$, so multiplication by $f$ is injective.
-Taking dimensions in degree $r$,
-\[
+$$
+and hence, for $r\gg0$,
+$$
 P_X(r) = \binom{r+n}{n} - \binom{r-d+n}{n} ,
-\]
-a polynomial of degree $n-1$ whose leading coefficient is $d/(n-1)!$.
+$$
+whose degree is $n-1$ and whose leading coefficient is $d/(n-1)!$. By [[D-L6ERW]], the degree of the $(n-1)$-dimensional projective variety $X$ is $(n-1)!$ times this leading coefficient, hence $\deg X=d$.
+:::
 
-The statement is the compatibility of two definitions of degree that look unrelated: the degree of the defining equation, and the normalised leading term of the Hilbert polynomial.
-The geometric count — the number of points in which $X$ meets a general line — agrees with both, and that is Bezout in the first nontrivial case.
+::: {.remark}
+If $n\geq2$, then after base change to an algebraic closure a general line $L\subseteq\PP^n$ meets the hypersurface $X$ in a zero-dimensional scheme of length $d$. This is the intersection-theoretic form of the same equality, since Bézout gives
+$$
+\deg(X\cap L)=(\deg X)(\deg L)=d.
+$$
 :::

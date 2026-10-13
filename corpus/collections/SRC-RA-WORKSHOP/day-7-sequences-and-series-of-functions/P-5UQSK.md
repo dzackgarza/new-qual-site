@@ -17,7 +17,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Let $M<\infty$ and $\mathcal{F} \subseteq C[a,b]$.
 Assume that each $f \in \mathcal{F}$ is differentiable on $(a,b)$ and satisfies $|f(a)| \leq M$ and $|f'(x)| \leq M$ for all $x \in (a,b)$.
@@ -25,56 +24,70 @@ Prove that $\mathcal{F}$ is equicontinuous on $[a,b]$.
 :::
 
 ::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
+
 Every $f \in \mathcal F$ is Lipschitz with constant $M$: $|f(x) - f(y)| \le M|x - y|$ for all $x, y \in [a,b]$.
 
 ::: pf-proof
-mean value theorem — for $x \ne y$, $f(x) - f(y) = f'(c)(x - y)$ for some $c$ between $x$ and $y$, and $|f'(c)| \le M$.
-:::
+
+The assertion is immediate if $\mathcal F$ is empty. Otherwise $|f'(x)|\le M$ implies $M\ge0$. For $a\le x<y\le b$, continuity on $[x,y]$ and differentiability on $(x,y)$ permit the mean value theorem: there is $c\in(x,y)$ such that $f(y)-f(x)=f'(c)(y-x)$. Taking absolute values proves the bound; the case $x=y$ is immediate.
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s2}
+
 $\mathcal F$ is equicontinuous on $[a,b]$.
 
 ::: pf-proof
 
 ::: {.pf-step #s2-1}
-Given $\eps > 0$, set $\delta = \eps/M$.
+
+For every $\varepsilon>0$, the number $\delta=\varepsilon/(M+1)$ is positive and independent of $f\in\mathcal F$ and $x,y\in[a,b]$.
 
 ::: pf-proof
-$M < \infty$ by hypothesis.
+
+If $\mathcal F$ is nonempty, step [](#s1){.pf-ref} gives $M\ge0$, so $M+1>0$. If $\mathcal F$ is empty, equicontinuity is vacuous and any $\delta>0$ works.
+
 :::
 
 :::
 
 ::: {.pf-step #s2-2}
-For $|x - y| < \delta$: $|f(x) - f(y)| \le M|x - y| < \eps$ for every $f \in \mathcal F$.
+
+Whenever $x,y\in[a,b]$ satisfy $|x-y|<\delta$, one has $|f(x)-f(y)|<\varepsilon$ for every $f\in\mathcal F$.
 
 ::: pf-proof
-Steps [](#s1){.pf-ref} and [](#s2-1){.pf-ref}.
+
+By step [](#s1){.pf-ref}, $|f(x)-f(y)|\le M|x-y|<M\varepsilon/(M+1)<\varepsilon$ for $M>0$. If $M=0$, the bound in step [](#s1){.pf-ref} is zero, giving the same conclusion.
+
 :::
 
 :::
 
 ::: pf-qed
-Step [](#s2-2){.pf-ref} is exactly the definition of equicontinuity ($\delta$ independent of $x, y$, and $f$).
-:::
+
+Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref} establish the epsilon-delta criterion uniformly over the family.
 
 :::
 
 :::
 
-::: pf-step
-(Remark) each $f \in \mathcal F$ is also uniformly bounded: $|f(x)| \le M + M(b - a)$.
+:::
 
-::: pf-proof
-$|f(x)| \le |f(a)| + |f(x) - f(a)| \le M + M|x - a| \le M + M(b - a)$ by step [](#s1){.pf-ref}.
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves equicontinuity on $[a,b]$.
+
+:::
+
 :::
 
 :::
 
-:::
+For every $f\in\mathcal F$, the same Lipschitz estimate also gives the uniform bound $|f(x)|\le M+M(b-a)$, using $|f(a)|\le M$.
 :::

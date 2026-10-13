@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the complete Sylow statements, both Sylow counts for order 35, and the kernel and faithful-image cases for order 24."
 ---
-
 ::: {.problem}
 (a) State Sylow's theorems.
 
@@ -53,7 +52,7 @@ In particular, $P$ is normal exactly when $n_p=1$ [@DF04].
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Every group of order $35$ is cyclic; hence $C_{35}$ is the
 unique isomorphism class.
@@ -87,7 +86,7 @@ the required order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Every group of order $24$ has a nontrivial proper normal subgroup.
 
@@ -112,6 +111,12 @@ All possibilities have been covered, so no group of order $24$
 is simple.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), step [](#s2){.pf-ref} answers part (b), and step [](#s3){.pf-ref} proves part (c).
 
 :::
 

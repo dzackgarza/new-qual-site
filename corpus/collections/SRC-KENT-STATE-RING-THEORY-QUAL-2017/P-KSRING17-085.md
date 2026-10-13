@@ -23,3 +23,297 @@ Show the following:
 
 (b) D is not a unique factorization domain.
 :::
+
+::: {.solution}
+Set
+$$
+f(x)
+\coloneqq
+x^2+3x-1.
+$$
+
+<1>1. The roots of $f$ in
+$$
+F=\QQ(\sqrt{13})
+$$
+are
+$$
+\alpha
+\coloneqq
+\frac{-3+\sqrt{13}}2,
+\qquad
+\beta
+\coloneqq
+\frac{-3-\sqrt{13}}2.
+$$
+
+::: {.proof}
+The discriminant of
+$$
+x^2+3x-1
+$$
+is
+$$
+3^2-4(1)(-1)
+=
+13.
+$$
+The quadratic formula gives the displayed roots.
+:::
+
+<1>2. Hence
+$$
+\boxed{
+f(x)
+=(x-\alpha)(x-\beta)
+}
+$$
+in
+$$
+F[x].
+$$
+
+::: {.proof}
+This is the factorization determined by the two roots from step <1>1.
+Thus $f$ is reducible over $F$.
+:::
+
+<1>3. Neither $\alpha$ nor $\beta$ belongs to
+$$
+D=\ZZ[\sqrt{13}].
+$$
+
+::: {.proof}
+Suppose
+$$
+\alpha
+=
+m+n\sqrt{13}
+$$
+with
+$$
+m,n\in\ZZ.
+$$
+Then
+$$
+-\frac32
++
+\frac12\sqrt{13}
+=
+m+n\sqrt{13}.
+$$
+Since
+$$
+\sqrt{13}\notin\QQ,
+$$
+comparison of the coefficients of
+$$
+1
+\qquad\text{and}\qquad
+\sqrt{13}
+$$
+gives
+$$
+m=-\frac32,
+\qquad
+n=\frac12,
+$$
+contradicting
+$$
+m,n\in\ZZ.
+$$
+Thus
+$$
+\alpha\notin D.
+$$
+
+The same argument for
+$$
+\beta
+=
+-\frac32
+-
+\frac12\sqrt{13}
+$$
+gives
+$$
+\beta\notin D.
+$$
+:::
+
+<1>4. A monic quadratic over an integral domain is reducible only if it has a root in that domain.
+
+::: {.proof}
+Let
+$$
+A
+$$
+be an integral domain and suppose the monic quadratic
+$$
+g(x)
+$$
+has a nontrivial factorization
+$$
+g(x)
+=(ux+a)(vx+b).
+$$
+Since the leading coefficient of $g$ is $1$,
+$$
+uv=1,
+$$
+so $u$ and $v$ are units.
+Therefore
+$$
+g(x)
+=(x+u^{-1}a)(x+v^{-1}b),
+$$
+and
+$$
+-u^{-1}a
+\in A
+$$
+is a root.
+:::
+
+<1>5. The polynomial
+$$
+x^2+3x-1
+$$
+is irreducible in
+$$
+D[x].
+$$
+
+::: {.proof}
+The ring $D$ is an integral domain by hypothesis.
+If $f$ were reducible in $D[x]$, step <1>4 would give a root of $f$ in $D$.
+Its only roots in the fraction field are $\alpha$ and $\beta$, and step <1>3 shows neither lies in $D$.
+Hence $f$ is irreducible over $D$.
+:::
+
+<1>6. Therefore
+$$
+\boxed{
+x^2+3x-1
+\text{ is irreducible in }D[x]
+\text{ but reducible in }F[x].
+}
+$$
+
+::: {.proof}
+Combine steps <1>2 and <1>5.
+:::
+
+<1>7. The element
+$$
+\alpha
+=
+\frac{-3+\sqrt{13}}2
+$$
+is integral over $D$ but does not belong to $D$.
+
+::: {.proof}
+By step <1>1,
+$$
+f(\alpha)=0,
+$$
+where
+$$
+f(x)=x^2+3x-1
+$$
+is monic with coefficients in
+$$
+\ZZ\subseteq D.
+$$
+Thus $\alpha$ is integral over $D$.
+Step <1>3 gives
+$$
+\alpha\notin D.
+$$
+:::
+
+<1>8. Every UFD is integrally closed in its field of fractions.
+
+::: {.proof}
+Let
+$$
+A
+$$
+be a UFD and let
+$$
+z=\frac ab
+\in
+\operatorname{Frac}(A)
+$$
+be integral over $A$, with $a,b$ chosen to have no common irreducible factor.
+If
+$$
+z^n+c_{n-1}z^{n-1}+\cdots+c_0=0
+$$
+is a monic equation over $A$, then multiplying by
+$$
+b^n
+$$
+gives
+$$
+a^n
+=
+-b
+\left(
+c_{n-1}a^{n-1}
++
+\cdots
++
+c_0b^{n-1}
+\right).
+$$
+Thus
+$$
+b\mid a^n.
+$$
+If $b$ were not a unit, some irreducible
+$$
+\pi
+$$
+would divide $b$.
+In a UFD irreducibles are prime, so
+$$
+\pi\mid a^n
+$$
+would imply
+$$
+\pi\mid a,
+$$
+contradicting the choice of $a,b$.
+Therefore $b$ is a unit and
+$$
+z\in A.
+$$
+Hence $A$ is integrally closed.
+:::
+
+<1>9. The ring $D$ is not a UFD.
+
+::: {.proof}
+Step <1>7 exhibits an element of
+$$
+\operatorname{Frac}(D)=F
+$$
+that is integral over $D$ but not in $D$.
+Thus $D$ is not integrally closed.
+Step <1>8 shows that every UFD is integrally closed.
+Therefore
+$$
+\boxed{
+D
+\text{ is not a unique factorization domain}.
+}
+$$
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>6 proves part (a), and step <1>9 proves part (b).
+:::
+:::

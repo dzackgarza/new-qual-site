@@ -20,7 +20,25 @@ prompts:
 ---
 
 ::: {.definition title="Gluing data"}
-Let $\theset{X_i}$ be schemes, and for each pair $i,j$ let $U_{ij} \subseteq X_i$ be open with isomorphisms $\varphi_{ij}: U_{ij} \to U_{ji}$ satisfying $\varphi_{ii} = \id$, $\varphi_{ji} = \inverseof{\varphi_{ij}}$, and the cocycle condition $\varphi_{ik} = \varphi_{jk} \circ \varphi_{ij}$ on $U_{ij} \intersect U_{ik}$.
+Let $\theset{X_i}$ be schemes, and for each pair $i,j$ let $U_{ij} \subseteq X_i$ be open with isomorphisms $\varphi_{ij}: U_{ij} \to U_{ji}$ satisfying
+
+1. $U_{ii}=X_i$ and $\varphi_{ii}=\id_{X_i}$;
+
+2. $\varphi_{ji}=\varphi_{ij}^{-1}$;
+
+3. for every $i,j,k$,
+$$
+\varphi_{ij}(U_{ij}\intersect U_{ik})
+=
+U_{ji}\intersect U_{jk},
+$$
+and on $U_{ij}\intersect U_{ik}$,
+$$
+\varphi_{ik}
+=
+\varphi_{jk}\circ\varphi_{ij}.
+$$
+
 Then there is a scheme $X$ with an open cover by copies of the $X_i$ inducing the $\varphi_{ij}$, unique up to isomorphism.
 :::
 

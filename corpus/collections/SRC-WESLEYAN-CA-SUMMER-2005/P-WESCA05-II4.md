@@ -24,3 +24,90 @@ Suppose there are a constant $M$ and a fixed positive integer $n$ such that
 \]
 Prove that $f$ is a polynomial of degree at most $n$.
 :::
+
+::: {.solution}
+<1>1. For every \(R>0\),
+\[
+\max_{|z|=R}|f(z)|\le MR^n.
+\]
+
+::: {.proof}
+This is the given growth estimate restricted to the circle \(|z|=R\).
+:::
+
+<1>2. For every integer \(k\ge0\) and every \(R>0\),
+\[
+|f^{(k)}(0)|
+\le
+k!MR^{n-k}.
+\]
+
+::: {.proof}
+By Cauchy's formula for derivatives on the circle \(|z|=R\),
+\[
+f^{(k)}(0)
+=
+\frac{k!}{2\pi i}
+\int_{|z|=R}\frac{f(z)}{z^{k+1}}\,dz.
+\]
+Taking absolute values and using the ML estimate together with step <1>1 gives
+\[
+\begin{aligned}
+|f^{(k)}(0)|
+&\le
+\frac{k!}{2\pi}
+(2\pi R)
+\frac{MR^n}{R^{k+1}}\\
+&=
+k!MR^{n-k}.
+\end{aligned}
+\]
+:::
+
+<1>3. If \(k>n\), then
+\[
+f^{(k)}(0)=0.
+\]
+
+::: {.proof}
+For \(k>n\), step <1>2 gives
+\[
+|f^{(k)}(0)|
+\le
+k!M R^{n-k}
+\]
+for every \(R>0\). Since \(n-k<0\), the right-hand side tends to \(0\) as \(R\to\infty\). Hence \(|f^{(k)}(0)|=0\).
+:::
+
+<1>4. The Taylor series of \(f\) about \(0\) terminates after degree \(n\):
+\[
+f(z)
+=
+\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}z^k.
+\]
+
+::: {.proof}
+Because \(f\) is entire, its Taylor series about \(0\) converges to \(f\) for every \(z\in\mathbb C\):
+\[
+f(z)
+=
+\sum_{k=0}^{\infty}\frac{f^{(k)}(0)}{k!}z^k.
+\]
+Step <1>3 shows that every coefficient with \(k>n\) is zero, so only the terms through degree \(n\) remain.
+:::
+
+<1>5. Therefore
+\[
+\boxed{f\text{ is a polynomial of degree at most }n.}
+\]
+
+::: {.proof}
+The expression in step <1>4 is a polynomial with no term of degree greater than \(n\), and it equals \(f\) everywhere.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::

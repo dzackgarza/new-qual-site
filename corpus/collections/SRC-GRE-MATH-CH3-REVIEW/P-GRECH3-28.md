@@ -25,3 +25,88 @@ Set up, but do not evaluate, a double integral that gives the volume of the soli
 (D) $2\int_0^1\int_{-3}^3\left(2-x^2-\frac{1}{9}y^2-\sqrt{x^2+\frac{1}{9}y^2}\right)dy\,dx$
 (E) $\int_{-1}^1\int_{-3\sqrt{1-x^2}}^{3\sqrt{1-x^2}}\left(2-x^2-\frac{1}{9}y^2-\sqrt{x^2+\frac{1}{9}y^2}\right)dy\,dx$
 :::
+
+::: {.solution}
+Write
+$$
+q(x,y)=x^2+\frac19y^2.
+$$
+
+<1>1. The two surfaces intersect above the ellipse
+$$
+q(x,y)=1.
+$$
+
+::: {.proof}
+At an intersection,
+$$
+1-q=\sqrt q-1,
+$$
+so
+$$
+2-q-\sqrt q=0.
+$$
+Setting $r=\sqrt q\ge0$ gives
+$$
+2-r^2-r=(1-r)(r+2)=0.
+$$
+Thus $r=1$, hence $q=1$.
+:::
+
+<1>2. The projection of the solid to the $xy$-plane is
+$$
+R=\left\{(x,y):-1\le x\le1,
+-3\sqrt{1-x^2}\le y\le3\sqrt{1-x^2}\right\}.
+$$
+
+::: {.proof}
+By step <1>1, the boundary of the projection is the ellipse
+$$
+x^2+\frac19y^2=1.
+$$
+Inside this ellipse, $0\le r=\sqrt q\le1$, and the vertical separation of the surfaces is
+$$
+\bigl(1-q\bigr)-\bigl(\sqrt q-1\bigr)
+=2-r^2-r
+=(1-r)(r+2)\ge0.
+$$
+Thus the bounded solid projects to the ellipse interior $q\le1$. Solving the ellipse inequality for $y$ gives the displayed iterated-integral bounds.
+:::
+
+<1>3. The required volume integral is
+$$
+\boxed{
+\int_{-1}^1
+\int_{-3\sqrt{1-x^2}}^{3\sqrt{1-x^2}}
+\left(
+2-x^2-\frac19y^2-\sqrt{x^2+\frac19y^2}
+\right)
+dy\,dx
+},
+$$
+so the answer is (E).
+
+::: {.proof}
+Over the region $R$ from step <1>2, the upper surface is
+$$
+z_{\mathrm{top}}=1-q
+$$
+and the lower surface is
+$$
+z_{\mathrm{bottom}}=\sqrt q-1.
+$$
+Hence
+$$
+z_{\mathrm{top}}-z_{\mathrm{bottom}}
+=2-q-\sqrt q
+=2-x^2-\frac19y^2-\sqrt{x^2+\frac19y^2}.
+$$
+Integrating this vertical thickness over the bounds from step <1>2 yields the displayed integral.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested double-integral setup and corresponding choice.
+:::
+:::

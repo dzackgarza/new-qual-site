@@ -23,9 +23,9 @@ prompts:
 
 ::: {.example title="The ruling is a toric morphism"}
 With the fan of $\FF_a$ given by $u_1 = (1,0)$, $u_2 = (0,1)$, $u_3 = (-1,a)$, $u_4 = (0,-1)$, the lattice map
-\[
+$$
 \phi : N = \ZZ^2 \to \ZZ, \qquad (p,q) \mapsto p
-\]
+$$
 sends $u_1 \mapsto 1$, $u_3 \mapsto -1$, and $u_2, u_4 \mapsto 0$, so each cone of $\FF_a$ lands in a cone of the fan $\theset{\RR_{\geq 0}, \theset{0}, \RR_{\leq 0}}$ of $\PP^1$.
 The induced toric morphism $\pi : \FF_a \to \PP^1$ is the ruling, with invariant fibres $D_1$ and $D_3$ and disjoint invariant sections $D_2$ and $D_4$.
 :::
@@ -33,12 +33,12 @@ The induced toric morphism $\pi : \FF_a \to \PP^1$ is the ruling, with invariant
 ::: {.example title="The four charts"}
 Let $\sigma_1 = \Cone(u_1, u_2)$, $\sigma_2 = \Cone(u_4, u_1)$, $\sigma_3 = \Cone(u_3, u_4)$ and $\sigma_4 = \Cone(u_2, u_3)$.
 Then
-\[
+$$
 U_{\sigma_1} = \Spec \CC[x, y], \quad
 U_{\sigma_2} = \Spec \CC[x, y^{-1}], \quad
 U_{\sigma_3} = \Spec \CC[x^{-1}, x^{-a}y^{-1}], \quad
 U_{\sigma_4} = \Spec \CC[x^{-1}, x^{a}y] ,
-\]
+$$
 which patch as follows:
 
 \begin{tikzcd}
@@ -54,26 +54,27 @@ Setting $y = 0$ gives the patching $x \mapsto x^{-1}$ of a copy of $\PP^1$, and 
 :::
 
 ::: {.example title="The bundle"}
-\[
+$$
 \FF_a \cong \PP\big( \OO_{\PP^1} \oplus \OO_{\PP^1}(a) \big) .
-\]
+$$
 The two disjoint sections are the ones cut out by the two summands, and they have
-\[
+$$
 D_2^2 = -a, \qquad D_4^2 = +a ,
-\]
+$$
 so $D_2$ is the **negative section**. Its normal bundle is
-\[
+$$
 N_{D_2 / \FF_a} \cong \OO_{D_2}(D_2) \cong \OO_{\PP^1}(-a) ,
-\]
+$$
 because the normal bundle of a divisor in a surface is its own restriction, of degree $D_2^2 = -a$ on $D_2 \cong \PP^1$.
 Likewise $N_{D_4/\FF_a} \cong \OO_{\PP^1}(a)$.
 :::
 
 ::: {.remark title="Conventions, and what is invariant"}
-Twisting changes the bundle and not the surface: $\PP(E) \cong \PP(E \tensor L)$ for any line bundle $L$, so
-\[
+Twisting changes the bundle and not the surface:
+$\PP(E) \cong \PP(E \tensor_{\OO_{\PP^1}} L)$ for any line bundle $L$ on $\PP^1$, so
+$$
 \PP\big( \OO \oplus \OO(a) \big) \cong \PP\big( \OO(-a) \oplus \OO \big) ,
-\]
+$$
 and both notations name $\FF_a$.
 What does not depend on the convention is the pair of self-intersections $\theset{-a, +a}$ and the difference $a$ between them.
 

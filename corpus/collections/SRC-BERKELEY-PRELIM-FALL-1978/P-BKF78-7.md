@@ -25,7 +25,6 @@ audit:
     D_4=<r,s>, the reflection subgroup H=<s> and quarter-turn x=r
     satisfy rH={r,rs} while Hr={r,sr}, with rs distinct from sr.
 ---
-
 ::: {.problem}
 Let $H$ be a subgroup of a finite group $G$.
 
@@ -42,7 +41,8 @@ xH\ne Hx.
 
 ::: pf
 
-::: {.pf-step #coset-bijection}
+::: {.pf-step #s1}
+
 The map
 $$
 gH\longmapsto Hg^{-1}
@@ -51,6 +51,7 @@ is a bijection from the set of left cosets of $H$ to the set of right
 cosets of $H$.
 
 ::: pf-proof
+
 For every $g\in G$,
 $$
 (gH)^{-1}
@@ -63,23 +64,29 @@ Hg^{-1},
 $$
 because inversion permutes the elements of the subgroup $H$.
 Therefore the displayed assignment is simply set inversion applied to
-a left coset. Since inversion of subsets is an involution, this
-assignment is bijective.
-:::
+a left coset. In particular it is well defined: if $gH=g'H$, then
+$(gH)^{-1}=(g'H)^{-1}$, hence $Hg^{-1}=H(g')^{-1}$. Since inversion of
+subsets is an involution, this assignment is bijective.
 
 :::
 
-::: {.pf-step #part-one-done}
+:::
+
+::: {.pf-step #s2}
+
 The subgroup $H$ has the same number of left cosets as right
 cosets.
 
 ::: pf-proof
-This follows immediately from the bijection in step [](#coset-bijection){.pf-ref}.
-:::
+
+This follows immediately from the bijection in step [](#s1){.pf-ref}.
 
 :::
 
-::: {.pf-step #square-group-setup}
+:::
+
+::: {.pf-step #s3}
+
 For part 2, write the symmetry group of the square as
 $$
 G
@@ -93,20 +100,24 @@ H=\langle s\rangle=\{1,s\}.
 $$
 
 ::: pf-proof
+
 The element $s$ has order $2$, so $H=\{1,s\}$ is a subgroup of $G$.
 The displayed presentation records the standard relation between a
 quarter-turn and a reflection of the square.
-:::
 
 :::
 
-::: {.pf-step #example-done}
+:::
+
+::: {.pf-step #s4}
+
 With $x=r$,
 $$
 \boxed{rH\ne Hr}.
 $$
 
 ::: pf-proof
+
 We have
 $$
 rH=\{r,rs\},
@@ -123,14 +134,18 @@ r=r^{-1},
 $$
 hence $r^2=1$, contradicting that $r$ is a quarter-turn of order $4$.
 Thus $rs\ne sr$, so the two displayed cosets are different.
+
 :::
 
 :::
 
 ::: pf-qed
-Step [](#part-one-done){.pf-ref} proves part 1, and steps [](#square-group-setup){.pf-ref} and [](#example-done){.pf-ref} give the requested
+
+Step [](#s2){.pf-ref} proves part 1, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the requested
 example for part 2.
+
 :::
 
 :::
+
 :::

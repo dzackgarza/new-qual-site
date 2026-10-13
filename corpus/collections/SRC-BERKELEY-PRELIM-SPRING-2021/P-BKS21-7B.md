@@ -26,3 +26,125 @@ a_{ij}=\begin{cases}
 \end{cases}
 $$
 :::
+
+::: {.solution}
+Let $A=(a_{ij})$, and let $T$ be the real symmetric tridiagonal matrix with $1$ on both the superdiagonal and subdiagonal and $0$ elsewhere.
+
+<1>1. The matrix $A$ is similar over $\mathbb C$ to $iT$.
+
+::: {.proof}
+Set
+$$
+D\coloneqq
+\operatorname{diag}\bigl(1,-i,(-i)^2,\ldots,(-i)^{n-1}\bigr).
+$$
+Then $D$ is invertible. For $1\leq j<n$,
+$$
+(D^{-1}AD)_{j,j+1}
+=
+(-i)^{-(j-1)}(-1)(-i)^j
+=i,
+$$
+and
+$$
+(D^{-1}AD)_{j+1,j}
+=
+(-i)^{-j}(1)(-i)^{j-1}
+=i.
+$$
+All other entries remain $0$. Hence
+$$
+D^{-1}AD=iT.
+$$
+:::
+
+<1>2. For each $m=1,\ldots,n$, set
+$$
+\theta_m\coloneqq\frac{m\pi}{n+1}
+$$
+and define $v^{(m)}\in\mathbb R^n$ by
+$$
+v^{(m)}_j\coloneqq\sin(j\theta_m),
+\qquad
+1\leq j\leq n.
+$$
+Then
+$$
+Tv^{(m)}
+=
+2\cos(\theta_m)\,v^{(m)}.
+$$
+
+::: {.proof}
+Extend the notation by
+$$
+v^{(m)}_0=0,
+\qquad
+v^{(m)}_{n+1}
+=
+\sin((n+1)\theta_m)
+=
+\sin(m\pi)
+=0.
+$$
+For $1\leq j\leq n$,
+$$
+(Tv^{(m)})_j
+=
+v^{(m)}_{j-1}+v^{(m)}_{j+1}.
+$$
+Using
+$$
+\sin((j-1)\theta)+\sin((j+1)\theta)
+=
+2\cos\theta\,\sin(j\theta),
+$$
+one gets
+$$
+(Tv^{(m)})_j
+=
+2\cos(\theta_m)v^{(m)}_j.
+$$
+The vector $v^{(m)}$ is nonzero because its first coordinate is $\sin\theta_m\neq0$.
+:::
+
+<1>3. The $n$ numbers
+$$
+2\cos\frac{m\pi}{n+1},
+\qquad
+m=1,\ldots,n,
+$$
+are all the eigenvalues of $T$.
+
+::: {.proof}
+Step <1>2 gives all of them as eigenvalues. The angles
+$$
+\frac{\pi}{n+1},
+\frac{2\pi}{n+1},
+\ldots,
+\frac{n\pi}{n+1}
+$$
+are distinct and lie in $(0,\pi)$, where $\cos$ is strictly decreasing. Hence the displayed eigenvalues are distinct. An $n\times n$ matrix has at most $n$ distinct eigenvalues, so these are all of them.
+:::
+
+<1>4. The eigenvalues of $A$ are
+$$
+\boxed{
+\lambda_m
+=
+2i\cos\frac{m\pi}{n+1},
+\qquad
+m=1,\ldots,n
+}.
+$$
+
+::: {.proof}
+By step <1>1, $A$ and $iT$ are similar and therefore have the same eigenvalues. Multiplying a matrix by $i$ multiplies each eigenvalue by $i$. Apply step <1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the complete list of eigenvalues.
+:::
+:::

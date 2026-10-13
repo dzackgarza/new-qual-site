@@ -24,17 +24,22 @@ prompts:
 ---
 
 Throughout, consider a Cartesian square
-\[
+$$
 \begin{array}{ccc}
 X' & \xrightarrow{g'} & X \\
 \downarrow{\scriptstyle f'} & & \downarrow{\scriptstyle f} \\
 Y' & \xrightarrow{g} & Y
 \end{array}
-\]
-and the base change map $g^* R^i f_* \mathcal{F} \to R^i f'_* g'^* \mathcal{F}$.
+$$
+of schemes.
 
 ::: {.theorem title="Flat base change"}
-If $f$ is quasicompact and separated, $g$ is flat, and $\mathcal{F}$ is quasicoherent on $X$, the base change map is an isomorphism for all $i$.
+If $f$ is quasicompact and quasiseparated, $g$ is flat, and $\mathcal{F}$ is quasicoherent on $X$, the base change map is an isomorphism for all $i$.
+$$
+g^*R^if_*\mathcal F
+\xrightarrow{\sim}
+R^if'_*g'^*\mathcal F.
+$$
 [@Har10a, Proposition III.9.3]
 :::
 
@@ -44,19 +49,35 @@ Then $H^i(X_K, \mathcal{F}_K) \cong H^i(X, \mathcal{F}) \otimes_k K$ for every $
 :::
 
 ::: {.theorem title="Proper base change"}
-If $f$ is proper, $g$ is arbitrary, and $\mathcal{F}$ is a torsion étale sheaf on $X$, the base change map $g^* R^i f_* \mathcal{F} \to R^i f'_* g'^* \mathcal{F}$ is an isomorphism for all $i$.
-The same holds for sheaves of abelian groups on locally compact Hausdorff spaces when $f$ is proper.
-In particular the stalk of $R^i f_* \mathcal{F}$ at a geometric point $\bar{y}$ is $H^i(X_{\bar{y}}, \mathcal{F})$.
+If $f$ is proper, $g$ is arbitrary, and $\mathcal{F}$ is an abelian torsion sheaf on the small étale site $X_{\acute{e}tale}$, then
+$$
+g^{-1}R^if_*\mathcal F
+\xrightarrow{\sim}
+R^if'_*g'^{-1}\mathcal F
+$$
+for every $i\geq0$.
+In particular, for a geometric point $\bar y\to Y$,
+$$
+(R^if_*\mathcal F)_{\bar y}
+\cong
+H^i_{\acute{e}tale}(X_{\bar y},\mathcal F|_{X_{\bar y}}).
+$$
 :::
 
 ::: {.theorem title="Smooth base change"}
-If $g$ is smooth, $f$ is quasicompact and quasiseparated, and $\mathcal{F}$ is a torsion étale sheaf with torsion orders invertible on $Y$, the base change map is an isomorphism for all $i$.
+If $g$ is smooth, $f$ is quasicompact and quasiseparated, and $\mathcal{F}$ is an abelian étale sheaf on $X$ whose geometric stalks are torsion of orders invertible on $Y$, then
+$$
+g^{-1}R^if_*\mathcal F
+\xrightarrow{\sim}
+R^if'_*g'^{-1}\mathcal F
+$$
+for every $i\geq0$.
 :::
 
 ::: {.remark}
 Without flatness of $g$, quasicoherent base change fails.
 Let $E$ be an elliptic curve over an algebraically closed field, $p \in E$, $f \colon E \times E \to E$ the second projection, and $\mathcal{L} = \OO(\Delta - \{p\} \times E)$.
-The restriction of $\mathcal{L}$ to the fibre $E \times \{t\}$ is $\OO_E(t - p)$, which has no nonzero sections for $t \neq p$, so the torsion-free sheaf $f_* \mathcal{L}$ is $0$.
+The restriction of $\mathcal{L}$ to the fibre $E \times \{t\}$ is $\OO_E(t - p)$, which has no nonzero sections for $t \neq p$. Thus $f_*\mathcal L$ vanishes on $E\sm\theset p$. It is torsion-free: a section of $\mathcal L$ over $E\times U$ that vanishes after restricting to a dense open subset of the integral scheme $E\times U$ is zero. Hence $f_*\mathcal L=0$.
 For $g$ the inclusion of the point $p$, $g^* f_* \mathcal{L} = 0$, while the fibre gives $H^0(E, \OO_E) = k$.
 The coherent statement comparing $R^i f_* \mathcal{F} \otimes \kappa(y)$ with $H^i(X_y, \mathcal{F}_y)$ at arbitrary points is the theorem on cohomology and base change.
 :::

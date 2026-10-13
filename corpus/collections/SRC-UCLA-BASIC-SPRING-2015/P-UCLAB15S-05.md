@@ -24,3 +24,180 @@ Show that
 \]
 converges to a finite limit as $N\to\infty$.
 :::
+
+::: {.solution}
+Define
+\[
+D_N
+=
+\int_1^{N+1}f(x)\,dx
+-
+\sum_{n=1}^Nf(n).
+\]
+
+<1>1. One has
+\[
+D_N
+=
+-
+\sum_{n=1}^N
+\left(
+f(n)-\int_n^{n+1}f(x)\,dx
+\right).
+\]
+
+::: {.proof}
+Split the integral into unit intervals:
+\[
+\int_1^{N+1}f(x)\,dx
+=
+\sum_{n=1}^N
+\int_n^{n+1}f(x)\,dx.
+\]
+Subtract
+\[
+\sum_{n=1}^Nf(n)
+\]
+and collect the terms.
+:::
+
+<1>2. For every $n\ge1$,
+\[
+0
+\le
+f(n)-\int_n^{n+1}f(x)\,dx.
+\]
+
+::: {.proof}
+Because $f$ is decreasing,
+\[
+f(x)\le f(n)
+\]
+for
+\[
+n\le x\le n+1.
+\]
+Therefore
+\[
+\int_n^{n+1}f(x)\,dx
+\le
+f(n).
+\]
+:::
+
+<1>3. For every $n\ge1$,
+\[
+f(n)-\int_n^{n+1}f(x)\,dx
+\le
+f(n)-f(n+1).
+\]
+
+::: {.proof}
+Because $f$ is decreasing,
+\[
+f(x)\ge f(n+1)
+\]
+on
+\[
+[n,n+1].
+\]
+Hence
+\[
+\int_n^{n+1}f(x)\,dx
+\ge
+f(n+1).
+\]
+Subtract from $f(n)$.
+:::
+
+<1>4. The partial sums
+\[
+S_N
+=
+\sum_{n=1}^N
+\left(
+f(n)-\int_n^{n+1}f(x)\,dx
+\right)
+\]
+form an increasing sequence.
+
+::: {.proof}
+Every summand is nonnegative by step <1>2.
+Therefore
+\[
+S_{N+1}\ge S_N.
+\]
+:::
+
+<1>5. The sequence $(S_N)$ is bounded above by $f(1)$.
+
+::: {.proof}
+By step <1>3,
+\[
+\begin{aligned}
+S_N
+&\le
+\sum_{n=1}^N
+\bigl(f(n)-f(n+1)\bigr)\\
+&=
+f(1)-f(N+1)\\
+&\le
+f(1),
+\end{aligned}
+\]
+because
+\[
+f(N+1)\ge0.
+\]
+:::
+
+<1>6. Hence $(S_N)$ converges to a finite limit
+\[
+S.
+\]
+
+::: {.proof}
+By step <1>4, $(S_N)$ is increasing.
+By step <1>5, it is bounded above.
+The monotone convergence theorem for real sequences therefore gives a finite limit.
+:::
+
+<1>7. Consequently,
+\[
+\boxed{
+D_N\to -S
+}
+\]
+as
+\[
+N\to\infty.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+D_N=-S_N.
+\]
+Take the limit from step <1>6.
+:::
+
+<1>8. Therefore
+\[
+\boxed{
+\int_1^{N+1}f(x)\,dx
+-
+\sum_{n=1}^Nf(n)
+}
+\]
+converges to a finite limit.
+
+::: {.proof}
+This is exactly step <1>7.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required conclusion.
+:::
+:::

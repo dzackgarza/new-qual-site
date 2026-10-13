@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the bimodule structure, representative independence, balancing, left linearity, vanishing on IM, and both inverse identities; preserved the source hint separately."
 ---
-
 ::: {.problem}
 Let $R$ be a ring with 1, and let $I$ be a two sided ideal of $R$.
 Let $M$ be a left $R$-module.
@@ -46,10 +45,11 @@ $$
 &m+IM&\longmapsto(1+I)\otimes m.
 \end{aligned}
 $$
+We verify these maps without assuming that $R$ is commutative.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The tensor product and quotient have the required left
 $R$-module structures.
@@ -79,7 +79,7 @@ left submodule, and $M/IM$ is a left quotient module.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The displayed rule defines a left $R$-linear map $\Phi$.
 
@@ -106,7 +106,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The map $\Psi$ is well defined and left $R$-linear,
 and is inverse to $\Phi$.
@@ -135,6 +135,13 @@ that both composites are the identity. Thus $\Phi$ is the
 claimed left $R$-module isomorphism.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct the two maps and prove that they are inverse
+left $R$-module homomorphisms.
 
 :::
 

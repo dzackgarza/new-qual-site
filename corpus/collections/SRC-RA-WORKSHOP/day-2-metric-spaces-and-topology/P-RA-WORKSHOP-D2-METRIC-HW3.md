@@ -15,35 +15,41 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Is the set of all sequences $x_1,x_2,\ldots$ with $x_i\in\{0,1\}$ for $i=1,2,\ldots$ countable?
 :::
 
-:::: {.solution}
+::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The set $\{0,1\}^{\mathbb{N}}$ of binary sequences is NOT countable.
-Proof: suppose it were countable, enumerated as $x^{(1)}, x^{(2)}, x^{(3)}, \ldots$ with $x^{(m)} = (x^{(m)}_1, x^{(m)}_2, \ldots)$.
+Assume that the set $\{0,1\}^{\mathbb N}$ is countable, and choose a surjection $f:\mathbb N\to\{0,1\}^{\mathbb N}$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-Diagonal construction.
-Proof: define the sequence $y = (y_1, y_2, \ldots)$ by $y_n = 1 - x^{(n)}_n$, i.e. $y_n$ differs from the $n$-th entry of the $n$-th listed sequence.
-Then $y \in \{0,1\}^{\mathbb{N}}$ since each $y_n \in \{0,1\}$.
+The set is nonempty. Under the assumed countability it admits an enumeration, with repetitions permitted. Write $f(n)=(x^{(n)}_k)_{k\geq1}$.
 
 :::
 
-::: pf-step
+:::
 
-$y$ is not in the enumeration.
-Proof: for every $m$, $y_m = 1 - x^{(m)}_m \ne x^{(m)}_m$, so $y \ne x^{(m)}$.
-Hence the enumeration missed $y$, contradicting surjectivity.
+::: {.pf-step #s2}
+
+The sequence $y=(1-x^{(n)}_n)_{n\geq1}$ belongs to $\{0,1\}^{\mathbb N}$ but is unequal to $f(n)$ for every $n\in\mathbb N$.
+
+::: pf-proof
+
+Each $x^{(n)}_n$ belongs to $\{0,1\}$, so the coordinate $y_n=1-x^{(n)}_n$ also belongs to $\{0,1\}$. Moreover $y_n\ne x^{(n)}_n$, hence $y\ne f(n)$ for every $n$. This contradicts surjectivity of $f$ in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+The contradiction between steps [](#s1){.pf-ref} and [](#s2){.pf-ref} proves that the set of binary sequences is uncountable.
 
 :::
 

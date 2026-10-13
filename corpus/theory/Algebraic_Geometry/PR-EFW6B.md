@@ -21,14 +21,23 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $X$ be a connected projective variety over $k = \bar{k}$.
-Then $\OO_X(X) = k$.
+Let $X$ be a projective variety over an algebraically closed field $k$.
+Then
+$$
+\Gamma(X,\OO_X)=k.
+$$
 :::
 
 ::: {.remark}
-This is the algebraic shadow of the maximum principle, and it is the fastest separator of the two categories.
-An affine variety is determined by its ring of global functions and has as many of them as it has coordinates; a projective one has only the constants, so it can be affine only if it is a point.
-In particular $\PP^n$ is not affine for $n \geq 1$.
+If $Y=\Spec A$ is affine, then a morphism $f\colon X\to Y$ corresponds to a $k$-algebra homomorphism
+$$
+A\longrightarrow\Gamma(X,\OO_X)=k.
+$$
+Hence $f$ factors through a $k$-point of $Y$ and is constant.
 
-The same statement is the reason a morphism from a projective variety to an affine one is constant on each connected component, which is how one usually shows some proposed map cannot exist.
+If $X$ were also affine, then
+$$
+X\cong\Spec\Gamma(X,\OO_X)=\Spec k.
+$$
+Thus every positive-dimensional projective variety is non-affine; in particular, $\PP_k^n$ is not affine for $n\geq1$.
 :::

@@ -16,7 +16,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 (January 2012 #1b) Let $y\in\mathbb R$ and $f:\mathbb R\to\mathbb R$ be given.
 Suppose that for every sequence $\{x_n\}$ we have
@@ -27,28 +26,44 @@ $$
 Prove that $f$ is continuous at $y$.
 :::
 
-:::: {.solution}
+::: {.solution}
+
 ::: pf
 
-::: pf-step
-Prove the contrapositive: if $f$ is not continuous at $y$, the hypothesis fails.
+::: {.pf-step #s1}
+
+If $f$ is discontinuous at $y$, there exist $\varepsilon>0$ and a sequence $x_n\to y$ such that $|f(x_n)-f(y)|\geq\varepsilon$ for every $n$.
+
+::: pf-proof
+
+Negating continuity at $y$ gives $\varepsilon>0$ such that, for every $\delta>0$, there is an $x\in\mathbb R$ with $|x-y|<\delta$ but $|f(x)-f(y)|\geq\varepsilon$. For each $n\geq1$, take $\delta=1/n$ and select the corresponding $x_n$. Then $|x_n-y|<1/n$, so $x_n\to y$.
+
 :::
 
-::: pf-step
-Discontinuity gives a sequence violating the liminf condition.
-Proof: suppose $f$ is discontinuous at $y$.
-Then there is $\epsilon > 0$ and a sequence $x_n \to y$ with $|f(x_n) - f(y)| \ge \epsilon$ for all $n$ (take $x_n \in (y - 1/n, y + 1/n)$ with $|f(x_n) - f(y)| \ge \epsilon$, which exists since $f$ is not continuous at $y$).
 :::
 
-::: pf-step
-Compare the two liminfs.
-Proof: for this sequence, $\liminf_{n\to\infty}|x_n - y| = 0$ (as $x_n \to y$), while $\liminf_{n\to\infty}|f(x_n) - f(y)| \ge \epsilon > 0$.
-Hence \[\liminf |f(x_n) - f(y)| \ge \epsilon > 0 = \liminf |x_n - y|,\] violating the hypothesis for this particular sequence.
+::: {.pf-step #s2}
+
+The sequence of step [](#s1){.pf-ref} violates the assumed lower-limit inequality.
+
+::: pf-proof
+
+Since $|f(x_n)-f(y)|\geq\varepsilon$ for all $n$,
+\[
+\liminf_{n\to\infty}|f(x_n)-f(y)|\geq\varepsilon>0.
+\]
+On the other hand, $x_n\to y$ gives $\liminf_{n\to\infty}|x_n-y|=0$. This contradicts the hypothesis applied to the sequence $(x_n)$.
+
+:::
+
 :::
 
 ::: pf-qed
-Proof: contrapositive established: hypothesis ⟹ $f$ continuous at $y$.
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} rule out discontinuity at $y$. Hence $f$ is continuous at $y$.
+
 :::
 
 :::
-::::
+
+:::

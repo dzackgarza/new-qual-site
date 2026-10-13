@@ -19,42 +19,73 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Assume that $\{f_n\}$ is a sequence of continuous functions $f_n:E\subset\mathbb R\to\mathbb R$ which converges uniformly to $f$.
 Prove the results of Theorem 6.1 directly.
 :::
 
-:::: {.solution}
-**Goal:** Prove directly that the uniform limit $f$ of continuous functions $f_n: E \to \mathbb R$ is continuous.
+::: {.solution}
 
 ::: pf
 
-::: pf-step
-$f$ is a function $E \to \mathbb R$.
-Proof: $f_n(x)$ converges for every $x \in E$ (uniform convergence implies pointwise), so $f(x) := \lim_n f_n(x)$ is a well-defined real number at each $x$.
+::: {.pf-step #s1}
+
+For every $x_0\in E$ and $\varepsilon>0$, there exists $N\geq1$ such that
+\[
+|f_N(x)-f(x)|<\varepsilon/3\qquad(x\in E).
+\]
+
+::: pf-proof
+
+This is the definition of uniform convergence applied with tolerance $\varepsilon/3$. If $E$ is empty, the continuity assertion is vacuous.
+
+:::
+
 :::
 
 ::: {.pf-step #s2}
-Fix $x_0 \in E$ and $\varepsilon > 0$.
-Choose $N$ with $\|f_n - f\|_\infty < \varepsilon/3$ for all $n \ge N$.
-Proof: uniform convergence of $f_n$ to $f$.
+
+For $x_0,\varepsilon,N$ as in step [](#s1){.pf-ref}, there exists $\delta>0$ such that
+\[
+|f_N(x)-f_N(x_0)|<\varepsilon/3
+\quad\text{whenever }x\in E,\ |x-x_0|<\delta.
+\]
+
+::: pf-proof
+
+The function $f_N$ is continuous at $x_0$ by hypothesis. Apply its epsilon-delta condition with tolerance $\varepsilon/3$.
+
+:::
+
 :::
 
 ::: {.pf-step #s3}
-Choose $\delta > 0$ such that $|x - x_0| < \delta \Rightarrow |f_N(x) - f_N(x_0)| < \varepsilon/3$.
-Proof: $f_N$ is continuous at $x_0$.
+
+The function $f$ is continuous at every $x_0\in E$.
+
+::: pf-proof
+
+Fix $x_0\in E$ and $\varepsilon>0$, and choose $N$ and $\delta$ by steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. Whenever $x\in E$ and $|x-x_0|<\delta$, the triangle inequality gives
+\[
+\begin{aligned}
+|f(x)-f(x_0)|
+&\leq |f(x)-f_N(x)|+|f_N(x)-f_N(x_0)|\\
+&\quad+|f_N(x_0)-f(x_0)|
+<\varepsilon.
+\end{aligned}
+\]
+Thus the epsilon-delta condition holds at every $x_0\in E$.
+
 :::
 
-::: {.pf-step #s4}
-For $|x - x_0| < \delta$: $|f(x) - f(x_0)| \le |f(x) - f_N(x)| + |f_N(x) - f_N(x_0)| + |f_N(x_0) - f(x_0)| < \varepsilon/3 + \varepsilon/3 + \varepsilon/3 = \varepsilon$.
-Proof: the first and third terms are $< \varepsilon/3$ by step [](#s2){.pf-ref} (uniform closeness of $f_N$ to $f$), the middle by step [](#s3){.pf-ref}.
 :::
 
-::: pf-step
-$f$ is continuous at $x_0$.
-Proof: step [](#s4){.pf-ref} gives the $\varepsilon$-$\delta$ condition at $x_0$; $x_0$ was arbitrary, so $f$ is continuous on $E$.
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves continuity of the uniform limit on $E$.
+
 :::
 
 :::
-::::
+
+:::

@@ -17,72 +17,78 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Find the pointwise limit of the sequence of functions $\{f_n\}$ given by $f_n(x)=x^n$ on $[0,1]$.
 Is the convergence of $f_n$ to $f$ uniform?
 ([KRD10, 8.6.A]) Why is $$B=\{f\in C([0,1]):\|f\|_\infty\le1\}$$ not compact?
 :::
 
-:::: {.solution}
-**Goal:** (1) Find the pointwise limit of $f_n(x) = x^n$ on $[0,1]$; (2) decide uniformity; (3) explain why $B = \{f \in C[0,1] : \|f\|_\infty \le 1\}$ is not compact.
+::: {.solution}
 
 ::: pf
 
 ::: {.pf-step #s1}
-The pointwise limit is $f(x) = 0$ for $0 \le x < 1$ and $f(1) = 1$.
-Proof: for $0 \le x < 1$, $x^n \to 0$; at $x = 1$, $x^n = 1$ for all $n$.
-:::
 
-::: pf-step
-The convergence is not uniform on $[0,1]$.
-
-::: pf-proof
-
-::: pf-step
-Each $f_n$ is continuous.
-:::
-
-::: {.pf-step #s2-2}
-$f$ is discontinuous at $1$: $\lim_{x \to 1^-} f(x) = 0 \neq 1 = f(1)$.
-Proof: by step [](#s1){.pf-ref}.
-:::
-
-::: {.pf-step #s2-3}
-If $f_n \to f$ uniformly, $f$ would be continuous.
-Proof: uniform limits of continuous functions are continuous (e.g. Theorem 6.1 / D7-W3).
-:::
-
-::: pf-qed
-Proof: step [](#s2-2){.pf-ref} contradicts step [](#s2-3){.pf-ref}. Alternatively: $\|f_n - f\|_\infty = \sup_{x \in [0,1)}x^n = 1 \not\to 0$ — the sup is approached as $x \to 1^-$.
-:::
-
-:::
-
-:::
-
-::: pf-step
-$B = \{f \in C[0,1] : \|f\|_\infty \le 1\}$ is not compact.
+The pointwise limit is
+\[
+\boxed{f(x)=\begin{cases}0,&0\leq x<1,\\1,&x=1.\end{cases}}
+\]
 
 ::: pf-proof
 
-::: {.pf-step #s3-1}
-$f_n(x) = x^n$ is a sequence in $B$ with no uniformly convergent subsequence.
-Proof: every subsequence $f_{n_k}$ converges pointwise to the same discontinuous $f$ of step [](#s1){.pf-ref}; if some subsequence converged uniformly, its uniform limit (necessarily $f$, by uniqueness of pointwise limits) would be continuous, contradiction.
+For each fixed $x\in[0,1)$, the geometric sequence $x^n$ tends to zero. At $x=1$, one has $x^n=1$ for every positive integer $n$.
+
 :::
 
-::: {.pf-step #s3-2}
-In a compact metric space every sequence has a convergent subsequence.
-Proof: sequential compactness, equivalent to compactness for metric spaces.
+:::
+
+::: {.pf-step #s2}
+
+The convergence $f_n\to f$ is not uniform on $[0,1]$.
+
+::: pf-proof
+
+For every positive integer $n$, step [](#s1){.pf-ref} gives
+\[
+\|f_n-f\|_\infty
+=\sup_{0\leq x<1}x^n=1.
+\]
+Indeed $x^n<1$ for $x<1$, while $x^n\to1$ as $x\to1^-$ for fixed $n$. Thus the supremum norms do not tend to zero.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The sequence $(f_n)$ in $B$ has no subsequence converging in the supremum norm.
+
+::: pf-proof
+
+Each $f_n$ is continuous with $\|f_n\|_\infty=1$, so $f_n\in B$. Every subsequence $(f_{n_k})$ converges pointwise to the function $f$ from step [](#s1){.pf-ref}, since $n_k\to\infty$. If a subsequence converged in supremum norm to a function $g\in C([0,1])$, then it would converge pointwise to $g$, forcing $g=f$. But $f$ is discontinuous at $1$, contradicting continuity of $g$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The set $B$ is not compact in the supremum-norm topology.
+
+::: pf-proof
+
+The supremum norm makes $C([0,1])$ a metric space. Compact metric spaces are sequentially compact, whereas step [](#s3){.pf-ref} supplies a sequence in $B$ without a convergent subsequence in $B$.
+
+:::
+
 :::
 
 ::: pf-qed
-Proof: step [](#s3-1){.pf-ref} gives a sequence in $B$ without a convergent subsequence, so $B$ is not compact by step [](#s3-2){.pf-ref}. (Intuitively: $B$ is closed and bounded but not equicontinuous, so Arzelà–Ascoli fails.)
-:::
+
+Step [](#s1){.pf-ref} identifies the pointwise limit, step [](#s2){.pf-ref} rules out uniform convergence, and step [](#s4){.pf-ref} establishes noncompactness of $B$.
 
 :::
 
 :::
 
 :::
-::::

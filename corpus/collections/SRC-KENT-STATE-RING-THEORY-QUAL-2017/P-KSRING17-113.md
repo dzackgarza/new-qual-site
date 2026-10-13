@@ -20,3 +20,323 @@ audit:
 
 (b) Find an ideal I of $\mathbb { Z } [ x ]$ such that $( 2 x - 1 ) \subsetneq I \subsetneq \mathbb { Z } [ x ]$
 :::
+
+::: {.solution}
+Define
+$$
+\varphi:\ZZ[x]\to\ZZ\left[\frac12\right]
+$$
+by
+$$
+\varphi(f(x))
+\coloneqq
+f\left(\frac12\right).
+$$
+
+<1>1. The map $\varphi$ is a ring homomorphism.
+
+::: {.proof}
+Evaluation at a fixed element of a commutative ring preserves addition, multiplication, and the identity:
+$$
+\varphi(f+g)
+=
+f\left(\frac12\right)
++
+g\left(\frac12\right),
+$$
+and
+$$
+\varphi(fg)
+=
+f\left(\frac12\right)
+g\left(\frac12\right).
+$$
+Also
+$$
+\varphi(1)=1.
+$$
+:::
+
+<1>2. The map $\varphi$ is surjective.
+
+::: {.proof}
+Let
+$$
+\frac{a}{2^n}
+\in
+\ZZ\left[\frac12\right].
+$$
+Then
+$$
+\varphi(ax^n)
+=
+a\left(\frac12\right)^n
+=
+\frac{a}{2^n}.
+$$
+Thus every element of
+$$
+\ZZ[1/2]
+$$
+lies in the image.
+:::
+
+<1>3. One has
+$$
+(2x-1)
+\subseteq
+\ker\varphi.
+$$
+
+::: {.proof}
+Evaluate the generator:
+$$
+\varphi(2x-1)
+=
+2\cdot\frac12-1
+=
+0.
+$$
+Therefore every multiple of
+$$
+2x-1
+$$
+lies in the kernel.
+:::
+
+<1>4. Let
+$$
+f(x)\in\ker\varphi.
+$$
+Then
+$$
+x-\frac12
+$$
+divides $f(x)$ in
+$$
+\QQ[x].
+$$
+
+::: {.proof}
+The condition
+$$
+f\in\ker\varphi
+$$
+means
+$$
+f\left(\frac12\right)=0.
+$$
+By the factor theorem over the field $\QQ$,
+$$
+x-\frac12
+$$
+divides $f$ in $\QQ[x]$.
+Equivalently,
+$$
+2x-1
+$$
+divides $f$ in $\QQ[x]$.
+:::
+
+<1>5. The polynomial
+$$
+2x-1
+$$
+is primitive in
+$$
+\ZZ[x].
+$$
+
+::: {.proof}
+Its coefficients are
+$$
+2
+\qquad\text{and}\qquad
+-1,
+$$
+whose greatest common divisor is $1$.
+:::
+
+<1>6. The divisibility in step <1>4 already holds in
+$$
+\ZZ[x].
+$$
+
+::: {.proof}
+By step <1>5,
+$$
+2x-1
+$$
+is primitive.
+Gauss's lemma says that if a primitive polynomial in
+$$
+\ZZ[x]
+$$
+divides another polynomial from
+$$
+\ZZ[x]
+$$
+in
+$$
+\QQ[x],
+$$
+then it divides that polynomial in
+$$
+\ZZ[x].
+$$
+Hence
+$$
+2x-1
+\mid
+f(x)
+$$
+in
+$$
+\ZZ[x].
+$$
+:::
+
+<1>7. Therefore
+$$
+\ker\varphi
+=
+(2x-1).
+$$
+
+::: {.proof}
+Step <1>3 gives one inclusion.
+Steps <1>4--<1>6 show that every element of the kernel is divisible by
+$$
+2x-1,
+$$
+giving the reverse inclusion.
+:::
+
+<1>8. Hence
+$$
+\boxed{
+\ZZ[x]/(2x-1)
+\cong
+\ZZ\left[\frac12\right].
+}
+$$
+
+::: {.proof}
+By steps <1>2 and <1>7, $\varphi$ is surjective with kernel
+$$
+(2x-1).
+$$
+The first isomorphism theorem gives the result.
+:::
+
+<1>9. For part (b), set
+$$
+\boxed{
+I
+\coloneqq
+(2x-1,3).
+}
+$$
+Then
+$$
+(2x-1)
+\subsetneq
+I.
+$$
+
+::: {.proof}
+The containment is immediate from the definition.
+It is strict because
+$$
+3\in I,
+$$
+but
+$$
+3\notin(2x-1).
+$$
+Indeed, if
+$$
+3=(2x-1)g(x),
+$$
+then evaluating at
+$$
+x=\frac12
+$$
+would give
+$$
+3=0,
+$$
+impossible.
+:::
+
+<1>10. The ideal $I$ is proper.
+
+::: {.proof}
+Define
+$$
+\psi:\ZZ[x]\to\FF_3
+$$
+by reducing coefficients modulo $3$ and evaluating at
+$$
+x=2.
+$$
+Then
+$$
+\psi(3)=0,
+$$
+and
+$$
+\psi(2x-1)
+=
+2\cdot2-1
+=
+3
+=
+0
+$$
+in $\FF_3$.
+Thus
+$$
+I
+\subseteq
+\ker\psi.
+$$
+But
+$$
+\psi(1)=1\ne0,
+$$
+so
+$$
+\ker\psi
+\subsetneq
+\ZZ[x].
+$$
+Hence
+$$
+I
+\subsetneq
+\ZZ[x].
+$$
+:::
+
+<1>11. Therefore
+$$
+\boxed{
+(2x-1)
+\subsetneq
+(2x-1,3)
+\subsetneq
+\ZZ[x].
+}
+$$
+
+::: {.proof}
+Combine steps <1>9 and <1>10.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>8 proves part (a), and step <1>11 proves part (b).
+:::
+:::

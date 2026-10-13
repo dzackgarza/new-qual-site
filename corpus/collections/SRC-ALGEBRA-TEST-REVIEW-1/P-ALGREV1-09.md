@@ -22,23 +22,22 @@ audit:
   date: 2026-09-11
   note: "Classified the assertion as sometimes true; in C4×C2 two isomorphic normal C2 subgroups yield quotients C2×C2 and C4."
 ---
-
 ::: {.problem}
 Classify the following assertion as true, sometimes true, or false: if $H\cong K$, then $G/H\cong G/K$.
 :::
 
 ::: {.solution}
-The assertion is sometimes true.
+The assertion is **sometimes true**.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-If $H=K$, then $G/H\cong G/K$.
+There are cases in which the quotients are isomorphic.
 
 ::: pf-proof
 
-If $H=K$, then $H\cong K$ and
+For example, if $H=K$, then certainly $H\cong K$ and
 $$
 G/H=G/K.
 $$
@@ -82,12 +81,24 @@ they are not isomorphic.
 
 :::
 
-::: pf-qed
+::: {.pf-step #s3}
+
+Conclude the classification.
+
+::: pf-proof
 
 The assertion holds in step [](#s1){.pf-ref} and fails in step [](#s2){.pf-ref}. Hence
 $$
 \boxed{\text{sometimes true}.}
 $$
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested classification.
 
 :::
 

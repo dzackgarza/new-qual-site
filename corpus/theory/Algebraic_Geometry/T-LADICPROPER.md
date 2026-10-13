@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-LADICPROPER
 kind: theorem
-title: Proper pushforward preserves constructible $\ell$-adic sheaves
+title: Proper-support pushforward preserves constructible $\ell$-adic sheaves
 slogan: 'Proper-support pushforward preserves constructible $\ell$-adic sheaves, so compact-support $\ell$-adic cohomology stays finite-dimensional.'
 classification:
   areas:
@@ -21,16 +21,19 @@ prompts:
 - Why are higher direct images with proper support of $\ell$-adic sheaves again $\ell$-adic?
 ---
 
-::: {.definition title="Constructible $\ell$-adic sheaf"}
-Let $X$ be a scheme of finite type over a field and $\ell$ a prime invertible on $X$.
-A \dfn{constructible $\ell$-adic sheaf} is a projective system $\mcf = (\mcf_n)_{n \geq 1}$ of constructible étale sheaves of $\ZZ/\ell^n$-modules with $\mcf_{n+1} \otimes_{\ZZ/\ell^{n+1}} \ZZ/\ell^n \cong \mcf_n$.
-:::
-
-::: {.theorem title="Finiteness of proper pushforward"}
-Let $f \colon X \to Y$ be a morphism of schemes of finite type over a field, with $\ell$ invertible, and $\mcf$ a constructible $\ell$-adic sheaf on $X$.
-Then $R^i f_! \mcf = (R^i f_! \mcf_n)_n$ is, up to Artin--Rees equivalence, a constructible $\ell$-adic sheaf on $Y$.
+::: {.theorem title="Finiteness under proper-support pushforward"}
+Let $f\colon X\to Y$ be a separated morphism of finite type between schemes of finite type over a field, let $\ell$ be invertible on $Y$, and let $\mcf$ be a constructible $\ell$-adic sheaf on $X$ in the sense of [[D-SHFCONSTR]].
+Then each higher direct image with proper support
+$$
+R^if_!\mcf
+$$
+is constructible $\ell$-adic on $Y$ in the adic derived category. If $f$ is proper, then $Rf_!=Rf_*$, so every $R^if_*\mcf$ is constructible $\ell$-adic.
 :::
 
 ::: {.remark}
-For $Y = \Spec \overline{\FF}_q$, this is the statement that $H^i_c(X_{\overline{\FF}_q}, \QQ_\ell) = \big(\varprojlim_n H^i_c(X, \ZZ/\ell^n)\big) \otimes \QQ_\ell$ is finite-dimensional, which is what the Grothendieck--Lefschetz trace formula needs.
+For $Y = \Spec \overline{\FF}_q$, constructibility gives finite-dimensional compactly supported cohomology
+$$
+H^i_c(X_{\overline{\FF}_q},\QQ_\ell).
+$$
+For a proper $X$, compactly supported and ordinary étale cohomology agree. These finite-dimensional $\QQ_\ell$-vector spaces are the cohomology groups appearing in the Grothendieck--Lefschetz trace formula.
 :::

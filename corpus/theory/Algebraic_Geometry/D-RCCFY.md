@@ -17,7 +17,7 @@ prompts:
 ---
 
 ::: {.definition title="Presheaf"}
-A \dfn{presheaf} $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially, with $\mcf(\emptyset) = 0$.
+A \dfn{presheaf} $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially.
 Equivalently, $\mcf$ is a contravariant functor from the category of open subsets of $X$, with inclusions as morphisms, to abelian groups.
 More generally, a presheaf with values in a category $\mcc$ (sets, rings, modules) is a contravariant functor from open subsets of $X$ to $\mcc$, and sheaves with values in $\mcc$ are defined by the same two axioms.
 Elements of $\mcf(U)$ are \dfn{sections} of $\mcf$ over $U$, and elements of $\mcf(X)$ are \dfn{global sections}.
@@ -30,7 +30,7 @@ A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\theset{
 
 - *gluing*: sections $s_i \in \mcf(U_i)$ agreeing on every overlap $U_i \intersect U_j$ come from a section of $\mcf(U)$.
 
-A presheaf satisfying the identity axiom is a \dfn{separated presheaf}.
+For the empty cover of $\emptyset$, these axioms force $\mcf(\emptyset)=0$.
 :::
 
 ::: {.remark}

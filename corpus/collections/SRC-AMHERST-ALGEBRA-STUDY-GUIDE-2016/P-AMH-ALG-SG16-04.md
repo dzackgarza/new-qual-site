@@ -23,8 +23,36 @@ You may assume without proof that $H\cap K$ is a subgroup.
 :::
 
 ::: {.solution}
-Proof.
-Givena∈H∩K,g∈G, we know thatgag−1∈H andgag−1∈K sinceH andK are normal.
-Thus,gag−1∈H∩K, so H∩K is normal in G as desired.
-QED
+<1>1. The intersection $H\cap K$ is invariant under conjugation by every element of $G$.
+::: {.proof}
+Let
+$$
+a\in H\cap K
+$$
+and let $g\in G$. Since $H\trianglelefteq G$ and $a\in H$,
+$$
+gag^{-1}\in H.
+$$
+Likewise, since $K\trianglelefteq G$ and $a\in K$,
+$$
+gag^{-1}\in K.
+$$
+Therefore
+$$
+gag^{-1}\in H\cap K.
+$$
+:::
+
+<1>2. Therefore
+$$
+\boxed{H\cap K\trianglelefteq G}.
+$$
+::: {.proof}
+By hypothesis, $H\cap K$ is already a subgroup of $G$. Step <1>1 shows it is invariant under conjugation by every element of $G$, which is exactly normality.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
 :::

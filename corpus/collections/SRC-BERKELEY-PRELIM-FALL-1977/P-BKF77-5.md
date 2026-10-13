@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Proved the unit-group property and the gcd criterion, corrected the missing distinct-primes hypothesis in part (c), and counted units by inclusion-exclusion."
 ---
-
 ::: {.problem}
 (a) Show that the set of all units in a ring with unity forms a group under multiplication.
 
@@ -31,14 +30,22 @@ audit:
 (c) If $n=pq$ with $p,q$ distinct primes, prove that the number of units in $\mathbb Z_n$ is $(p-1)(q-1)$.
 :::
 
+::: {.remark}
+The printed source says only that $p$ and $q$ are primes. Distinctness is
+necessary: if $p=q=2$, then $n=4$ and $\mathbb Z_4$ has the two units
+$[1]$ and $[3]$, whereas $(p-1)(q-1)=1$.
+:::
+
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
+
 The units of a ring with unity form a group under multiplication.
 
 ::: pf-proof
+
 Let $R$ be a ring with identity $1$, and let
 $$
 R^\times=\{u\in R:\text{$u$ has a two-sided multiplicative inverse}\}.
@@ -62,14 +69,17 @@ $$
 $$
 Finally, if $u$ is a unit, then its inverse $u^{-1}$ is again a unit, with
 inverse $u$. Hence $R^\times$ satisfies all the group axioms.
-:::
 
 :::
 
-::: {.pf-step #unit-iff-coprime}
-A class $[k]\in\mathbb Z_n$ is a unit if and only if $\gcd(k,n)=1$.
+:::
+
+::: {.pf-step #s2}
+
+Characterize the units of $\mathbb Z_n$.
 
 ::: pf-proof
+
 The residue class $[k]\in\mathbb Z_n$ is a unit exactly when there exists
 $[\ell]\in\mathbb Z_n$ such that
 $$
@@ -91,15 +101,18 @@ Therefore
 $$
 \boxed{[k]\in\mathbb Z_n^\times\iff \gcd(k,n)=1.}
 $$
-:::
 
 :::
 
-::: pf-step
-If $n=pq$ with $p\ne q$ prime, then $\mathbb Z_n$ has $(p-1)(q-1)$ units.
+:::
+
+::: {.pf-step #s3}
+
+Count the units when $n=pq$ with $p\ne q$ prime.
 
 ::: pf-proof
-By step [](#unit-iff-coprime){.pf-ref}, a residue class modulo $pq$ fails to be a unit exactly when
+
+By step [](#s2){.pf-ref}, a residue class modulo $pq$ fails to be a unit exactly when
 its representative is divisible by $p$ or by $q$.
 
 Among the $pq$ residue classes, exactly $q$ are multiples of $p$, and exactly
@@ -118,15 +131,17 @@ Thus
 $$
 \boxed{|\mathbb Z_{pq}^\times|=(p-1)(q-1).}
 $$
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a)--(c), respectively.
+
 :::
 
-::: {.remark}
-The printed source says only that $p$ and $q$ are primes. Distinctness is
-necessary: if $p=q=2$, then $n=4$ and $\mathbb Z_4$ has the two units
-$[1]$ and $[3]$, whereas $(p-1)(q-1)=1$.
+:::
+
 :::

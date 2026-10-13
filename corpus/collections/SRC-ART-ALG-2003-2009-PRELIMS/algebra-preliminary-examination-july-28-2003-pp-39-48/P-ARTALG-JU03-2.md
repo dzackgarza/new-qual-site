@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the explicit dihedral generators, disjoint-support direct product, block-swap conjugation, order 128, and transport to an arbitrary Sylow subgroup."
 ---
-
 ::: {.problem}
 Let $D_8$ be the dihedral group with 8 elements.
 Show that every Sylow 2-subgroup of $S_8$ contains a normal subgroup that is isomorphic to $D_8 \times D_8$.
@@ -111,7 +110,7 @@ $|S_8|=8!$, so $P$ is a Sylow $2$-subgroup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Every Sylow $2$-subgroup has the asserted normal subgroup.
 
@@ -124,6 +123,12 @@ Conjugating the relation $H\lhd P$ gives $H'\lhd P'$, which
 proves the statement for the arbitrary chosen $P'$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required statement for every Sylow $2$-subgroup of $S_8$.
 
 :::
 

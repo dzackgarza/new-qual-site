@@ -22,13 +22,12 @@ audit:
   date: 2026-09-11
   note: "Classified the assertion as sometimes true: coprime exponents force equality, while m=2,n=4 with a=-1,b=1 in Z is a counterexample."
 ---
-
 ::: {.problem}
 Classify the following assertion as true, sometimes true, or false: in an integral domain, for distinct positive integers $m$ and $n$, if $a^m=b^m$ and $a^n=b^n$, then $a=b$.
 :::
 
 ::: {.solution}
-The assertion is sometimes true.
+The assertion is **sometimes true**.
 
 ::: pf
 
@@ -94,14 +93,26 @@ but $a\ne b$.
 
 :::
 
-::: pf-qed
+::: {.pf-step #s3}
 
-Step [](#s1){.pf-ref} gives cases in which the implication holds, and step [](#s2){.pf-ref} gives a
-case in which it fails.
+Conclude the classification.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives a broad class of cases in which the implication is true,
+while step [](#s2){.pf-ref} gives a valid counterexample to the unrestricted statement.
 Hence
 $$
 \boxed{\text{sometimes true}.}
 $$
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested classification.
 
 :::
 

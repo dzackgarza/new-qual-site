@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the coset action without presupposing normality, both image-order divisibilities, and the final equality of the subgroup with the action kernel."
 ---
-
 ::: {.problem}
 Let $G$ be a group and let $p$ be the smallest prime divisor of $|G|$.
 Suppose that $H$ is a subgroup of $G$ of index $p$.
@@ -47,6 +46,7 @@ Composition agrees with multiplication in $G$, giving $\rho$.
 The action is transitive, since $yx^{-1}$ sends $xH$ to $yH$.
 Any element of the kernel fixes the coset $H$, hence belongs to
 its stabilizer, which is exactly $H$. Thus $K\subseteq H$.
+This construction uses cosets as a set, not a quotient group.
 
 :::
 
@@ -70,7 +70,7 @@ Transitivity and orbit-stabilizer give $p\mid m$, hence $m=p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The subgroup $H$ equals $K$ and is normal.
 
@@ -85,6 +85,12 @@ Therefore $[H:K]=1$ and $H=K$. A homomorphism kernel is normal,
 so $H\lhd G$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

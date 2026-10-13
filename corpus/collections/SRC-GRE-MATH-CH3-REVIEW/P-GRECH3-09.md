@@ -25,3 +25,37 @@ If the curve $z=f(x)$ in the $xz$-plane is revolved around the $x$-axis, which o
 (D) $x^2+z^2=[f(x)]^2$
 (E) $y^2+z^2=[f(x)]^2$
 :::
+
+::: {.solution}
+<1>1. For each fixed $x$, revolving the point $(x,0,f(x))$ about the $x$-axis produces the circle
+$$
+y^2+z^2=[f(x)]^2.
+$$
+
+::: {.proof}
+Rotation about the $x$-axis leaves the $x$-coordinate fixed and preserves the distance to the $x$-axis. The point $(x,0,f(x))$ has distance
+$$
+\sqrt{0^2+[f(x)]^2}=\abs{f(x)}
+$$
+from the $x$-axis. Hence its orbit under rotation is exactly the circle in the plane with that fixed $x$-coordinate and radius $\abs{f(x)}$, whose equation is
+$$
+y^2+z^2=\abs{f(x)}^2=[f(x)]^2.
+$$
+:::
+
+<1>2. Therefore the surface of revolution is described by
+$$
+\boxed{y^2+z^2=[f(x)]^2},
+$$
+so the answer is (E).
+
+::: {.proof}
+The original curve consists of the points $(x,0,f(x))$ as $x$ varies. By step <1>1, the rotation orbit of each such point is exactly the circle cut out by the displayed equation at that value of $x$. Taking these circles over all $x$ on the curve gives precisely the stated surface.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the requested equation and corresponding choice.
+:::
+:::

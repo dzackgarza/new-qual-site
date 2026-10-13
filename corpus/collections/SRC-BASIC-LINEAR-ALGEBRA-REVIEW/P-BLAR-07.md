@@ -30,3 +30,73 @@ Decide which of the following transformations are linear. For those that are, fi
 ::: {.remark}
 In part (d) the declared domain is $\RR^3$, but the formula has two input variables. As a map $\RR^2\to\RR^2$, $T(x,y)=(x+2y,x+3y)$ is linear with matrix $\begin{pmatrix}1&2\\1&3\end{pmatrix}$.
 :::
+
+::: {.solution}
+Use the standard ordered bases in every matrix representation below, and use the standard convention that a positive planar rotation is counterclockwise.
+
+<1>1. In part (1), \(T\) is linear, with matrix
+\[
+\boxed{\begin{bmatrix}2&0\\0&1\end{bmatrix}}.
+\]
+
+::: {.proof}
+For \((x,y)\in\mathbb R^2\),
+\[
+T(x,y)=x(2,0)+y(0,1).
+\]
+Thus \(T\) is given by multiplication by the displayed matrix, hence is linear.
+:::
+
+<1>2. In part (2), \(T\) is \(\boxed{\text{not linear}}\).
+
+::: {.proof}
+A linear map must send the zero vector to the zero vector, but here
+\[
+T(0,0)=(1,2)\neq(0,0).
+\]
+:::
+
+<1>3. In part (3), the rotation is linear, with matrix
+\[
+\boxed{
+\begin{bmatrix}
+\tfrac12&-\tfrac{\sqrt3}{2}\\
+\tfrac{\sqrt3}{2}&\tfrac12
+\end{bmatrix}}.
+\]
+
+::: {.proof}
+Rotation through angle \(\theta\) sends the standard basis vectors to
+\[
+e_1\longmapsto(\cos\theta,\sin\theta),
+\qquad
+e_2\longmapsto(-\sin\theta,\cos\theta).
+\]
+These images determine a linear transformation whose standard matrix is
+\[
+\begin{bmatrix}
+\cos\theta&-\sin\theta\\
+\sin\theta&\cos\theta
+\end{bmatrix}.
+\]
+Substituting \(\theta=\pi/3\) gives the displayed matrix.
+:::
+
+<1>4. In part (4), the source as written does \(\boxed{\text{not define a map }\mathbb R^3\to\mathbb R^2}\), so its linearity and a \(2\times3\) transformation matrix are not determined.
+
+::: {.proof}
+An element of \(\mathbb R^3\) has three coordinates, whereas the displayed rule accepts only two inputs, \(T(x,y)\). No dependence on a third coordinate is specified, so the rule does not assign an output to a general element \((x,y,z)\in\mathbb R^3\).
+
+If the displayed formula is instead read literally as a map \(\mathbb R^2\to\mathbb R^2\), it is linear and has matrix
+\[
+\begin{bmatrix}1&2\\1&3\end{bmatrix},
+\]
+because \((x+2y,x+3y)^T=\begin{bmatrix}1&2\\1&3\end{bmatrix}(x,y)^T\). This observation does not determine which \(\mathbb R^3\to\mathbb R^2\) map the source intended.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 through <1>4 settle every transformation exactly as stated, including the domain/formula mismatch in part (4).
+:::
+:::

@@ -24,3 +24,258 @@ are exactly the solutions of the normal equation
 A^*Av=A^*w.
 \]
 :::
+
+::: {.solution}
+For
+\[
+v\in V,
+\]
+define the residual
+\[
+r_v=Av-w.
+\]
+
+<1>1. The normal equation
+\[
+A^*Av=A^*w
+\]
+is equivalent to
+\[
+\boxed{A^*r_v=0}.
+\]
+
+::: {.proof}
+By linearity,
+\[
+A^*r_v
+=
+A^*(Av-w)
+=
+A^*Av-A^*w.
+\]
+Thus the displayed vector vanishes exactly when the normal equation holds.
+:::
+
+<1>2. The condition
+\[
+A^*r_v=0
+\]
+is equivalent to
+\[
+r_v\perp\operatorname{im}A.
+\]
+
+::: {.proof}
+For every
+\[
+h\in V,
+\]
+the defining property of the adjoint gives
+\[
+\langle r_v,Ah\rangle_W
+=
+\langle A^*r_v,h\rangle_V.
+\]
+Thus
+\[
+A^*r_v=0
+\]
+if and only if
+\[
+\langle r_v,Ah\rangle_W=0
+\]
+for every $h$, which is exactly orthogonality to $\operatorname{im}A$.
+:::
+
+<1>3. Suppose $v$ satisfies the normal equation.
+Then for every $u\in V$,
+\[
+Au-w
+=
+r_v+A(u-v),
+\]
+and the two terms on the right are orthogonal.
+
+::: {.proof}
+The algebraic identity is
+\[
+Au-w
+=
+(Av-w)+A(u-v)
+=
+r_v+A(u-v).
+\]
+By steps <1>1--<1>2, the normal equation implies
+\[
+r_v\perp\operatorname{im}A.
+\]
+Since
+\[
+A(u-v)\in\operatorname{im}A,
+\]
+the two summands are orthogonal.
+:::
+
+<1>4. If $v$ satisfies the normal equation, then
+\[
+\|Au-w\|^2
+=
+\|Av-w\|^2
++
+\|A(u-v)\|^2
+\]
+for every $u\in V$.
+
+::: {.proof}
+Apply the Pythagorean theorem to the orthogonal decomposition in step <1>3.
+:::
+
+<1>5. Every solution of the normal equation minimizes
+\[
+\|Av-w\|.
+\]
+
+::: {.proof}
+Step <1>4 gives
+\[
+\|Au-w\|^2
+\ge
+\|Av-w\|^2
+\]
+for every $u\in V$.
+Taking square roots gives
+\[
+\|Au-w\|
+\ge
+\|Av-w\|.
+\]
+Thus $v$ is a minimizer.
+:::
+
+<1>6. Conversely, suppose $v$ minimizes
+\[
+\|Av-w\|.
+\]
+Fix
+\[
+h\in V
+\]
+and define
+\[
+\phi(t)
+=
+\|A(v+th)-w\|^2.
+\]
+Then $\phi$ has a minimum at
+\[
+t=0.
+\]
+
+::: {.proof}
+For every real $t$,
+\[
+v+th\in V.
+\]
+Since $v$ is a global minimizer,
+\[
+\|Av-w\|
+\le
+\|A(v+th)-w\|.
+\]
+Squaring preserves the inequality because both sides are nonnegative.
+Thus
+\[
+\phi(0)\le\phi(t)
+\]
+for every $t$.
+:::
+
+<1>7. One has
+\[
+\phi'(0)
+=
+2\langle r_v,Ah\rangle_W.
+\]
+
+::: {.proof}
+Since
+\[
+A(v+th)-w
+=
+r_v+tAh,
+\]
+one has
+\[
+\begin{aligned}
+\phi(t)
+&=
+\|r_v+tAh\|^2\\
+&=
+\|r_v\|^2
++
+2t\langle r_v,Ah\rangle
++
+t^2\|Ah\|^2.
+\end{aligned}
+\]
+Differentiate at $t=0$.
+:::
+
+<1>8. For every
+\[
+h\in V,
+\]
+one has
+\[
+\langle r_v,Ah\rangle_W=0.
+\]
+
+::: {.proof}
+By step <1>6, $\phi$ has a minimum at $0$.
+Therefore
+\[
+\phi'(0)=0.
+\]
+Using step <1>7,
+\[
+2\langle r_v,Ah\rangle_W=0.
+\]
+:::
+
+<1>9. Every minimizer satisfies the normal equation.
+
+::: {.proof}
+Step <1>8 says
+\[
+r_v\perp\operatorname{im}A.
+\]
+By step <1>2,
+\[
+A^*r_v=0.
+\]
+By step <1>1, this is equivalent to
+\[
+A^*Av=A^*w.
+\]
+:::
+
+<1>10. Therefore
+\[
+\boxed{
+v\text{ minimizes }\|Av-w\|
+\iff
+A^*Av=A^*w.
+}
+\]
+
+::: {.proof}
+Step <1>5 proves the reverse implication from the normal equation to minimality.
+Step <1>9 proves the converse.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required characterization.
+:::
+:::

@@ -21,7 +21,6 @@ audit:
   date: 2026-09-13
   note: Verified the determinantal equations, irreducibility via the Segre cone, and the dimension by an explicit dense affine chart.
 ---
-
 ::: {.problem}
 Let $X$ be the set of all $2\times3$ matrices over an algebraically closed field $k$ having rank at most one, viewed as a subset of $\operatorname{Mat}_{2,3}(k)=\mathbb A^6$.
 Show that $X$ is an affine variety.
@@ -30,7 +29,6 @@ What is its dimension?
 
 You may use the Segre embedding.
 :::
-
 
 ::: {.solution}
 Write a matrix in coordinates as
@@ -41,20 +39,18 @@ y_1&y_2&y_3
 \end{pmatrix}.
 \]
 Then
-\[
-\boxed{X=V(x_1y_2-x_2y_1,\ x_1y_3-x_3y_1,\ x_2y_3-x_3y_2)}.
-\]
-In particular, \(X\) is an affine variety. Moreover, \(X\) is irreducible and
-\[
-\boxed{\dim X=4}.
-\]
 
 ::: pf
 
-::: pf-step
-The displayed equations cut out exactly the matrices of rank at most one.
+::: {.pf-step #s1}
+
+The matrices of rank at most one form the affine variety
+\[
+\boxed{X=V(x_1y_2-x_2y_1,\ x_1y_3-x_3y_1,\ x_2y_3-x_3y_2)}.
+\]
 
 ::: pf-proof
+
 A \(2\times3\) matrix has rank at most one if and only if every \(2\times2\) minor vanishes. The three \(2\times2\) minors of \(M\) are precisely
 \[
 x_1y_2-x_2y_1,
@@ -64,14 +60,17 @@ x_1y_3-x_3y_1,
 x_2y_3-x_3y_2.
 \]
 Thus the displayed zero set is exactly \(X\), so \(X\subseteq\mathbb A^6\) is Zariski closed.
-:::
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s2}
+
 \(X\) is irreducible.
 
 ::: pf-proof
+
 Consider
 \[
 \phi:\mathbb A^2\times\mathbb A^3\longrightarrow\mathbb A^6,
@@ -87,14 +86,17 @@ Equivalently, \(X\) is the affine cone over the Segre embedding
 \[
 \mathbf P^1\times\mathbf P^2\hookrightarrow\mathbf P^5.
 \]
-:::
 
 :::
 
-::: pf-step
-\(\dim X=4\).
+:::
+
+::: {.pf-step #s3}
+
+\(\dim X=\boxed{4}\).
 
 ::: pf-proof
+
 Use the affine chart
 \[
 U=X\cap D(x_1).
@@ -117,7 +119,14 @@ The set \(U\) is nonempty and open in the irreducible variety \(X\), hence it is
 \dim X=4.
 \]
 This also agrees with the cone description: the Segre variety \(\mathbf P^1\times\mathbf P^2\) has dimension \(1+2=3\), and its affine cone has dimension \(3+1=4\).
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves that $X$ is an affine variety, step [](#s2){.pf-ref} proves that it is irreducible, and step [](#s3){.pf-ref} computes its dimension.
 
 :::
 

@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the Frobenius-fixed-field construction, the affine root recurrence, irreducibility in both positive cases, and the integer divisibility excluding all other positive n."
 ---
-
 ::: {.problem}
 Let $p$ be prime, $n$ be a positive integer, $f(X) = X^{p^n} - X + 1$, and $K$ be an algebraic closure of $\mathbb{F}_p$.
 
@@ -65,7 +64,7 @@ a finite-dimensional vector space over $\mathbb F_p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The two assertions in part (a) hold.
 
@@ -155,7 +154,7 @@ excluded, so the quartic is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s6}
 
 No other cases are irreducible, proving part (d).
 
@@ -177,6 +176,13 @@ Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} establish irreducibility in both sur
 cases, completing every part.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), step [](#s4){.pf-ref} proves part (b), step [](#s5){.pf-ref} proves
+part (c), and step [](#s6){.pf-ref} proves part (d).
 
 :::
 

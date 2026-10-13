@@ -40,3 +40,55 @@ How many of the students surveyed are enrolled in all three of these courses?
 (D) $4$
 (E) $5$
 :::
+
+::: {.solution}
+<1>1. Exactly $90$ of the surveyed students are enrolled in at least one of
+the three courses.
+
+::: {.proof}
+There are $100$ students in the survey and $10$ are enrolled in none of the
+three courses, so the union of the three enrollment sets has cardinality
+$100-10=90$.
+:::
+
+<1>2. If $n$ is the number enrolled in all three courses, then
+$$
+|R\cup D\cup L|=89+n.
+$$
+
+::: {.proof}
+By inclusion--exclusion,
+$$
+\begin{aligned}
+|R\cup D\cup L|
+&=|R|+|D|+|L|\\
+&\quad-|R\cap D|-|R\cap L|-|D\cap L|\\
+&\quad+|R\cap D\cap L|.
+\end{aligned}
+$$
+Substituting the given values gives
+$$
+41+44+48-14-11-19+n=89+n.
+$$
+:::
+
+<1>3. Therefore
+$$
+n=\boxed{1},
+$$
+so the answer is (A).
+
+::: {.proof}
+Equating the union size from step <1>1 with the expression in step <1>2 gives
+$$
+90=89+n,
+$$
+hence $n=1$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested number of students.
+:::
+:::

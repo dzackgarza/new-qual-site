@@ -27,3 +27,149 @@ A map $f:X\to Y$ is called closed if $f(F)$ is closed in $Y$ for every closed su
    \]
    need not be a closed map.
 :::
+
+::: {.solution}
+<1>1. Suppose
+\[
+f:X\to Y
+\]
+is closed and
+\[
+f(X)\subseteq B\subseteq Y.
+\]
+Let
+\[
+f^B:X\to B
+\]
+be the corestriction.
+Then
+\[
+\boxed{
+f^B\text{ is closed}.
+}
+\]
+
+::: {.proof}
+Let
+\[
+F\subseteq X
+\]
+be closed.
+Since $f$ is a closed map,
+\[
+f(F)
+\]
+is closed in $Y$.
+
+Because
+\[
+f(F)\subseteq f(X)\subseteq B,
+\]
+the image under the corestriction is the same set:
+\[
+f^B(F)
+=
+f(F).
+\]
+
+In the subspace topology on $B$,
+\[
+f(F)
+=
+B\cap f(F).
+\]
+The right-hand side is the intersection of $B$ with a closed subset of $Y$,
+so it is closed in $B$.
+Thus every closed subset of $X$ has closed image under $f^B$.
+:::
+
+<1>2. Coordinate projections from products need not be closed.
+
+::: {.proof}
+Take
+\[
+X_1=X_2=\mathbb R
+\]
+with the usual topology and consider
+\[
+\pi_1:
+\mathbb R^2
+\to
+\mathbb R,
+\qquad
+\pi_1(x,y)=x.
+\]
+
+Let
+\[
+F
+\coloneqq
+\{(x,y)\in\mathbb R^2:xy=1\}.
+\]
+The function
+\[
+\varphi:\mathbb R^2\to\mathbb R,
+\qquad
+\varphi(x,y)=xy
+\]
+is continuous, and
+\[
+F
+=
+\varphi^{-1}(\{1\}).
+\]
+Since
+\[
+\{1\}
+\]
+is closed in $mathbb R$, the set $F$ is closed in $mathbb R^2$.
+
+Its projection is
+\[
+\pi_1(F)
+=
+\mathbb R\setminus\{0\},
+\]
+because for every
+\[
+x\ne0
+\]
+the point
+\[
+(x,1/x)
+\]
+lies in $F$, while no point of $F$ has first coordinate $0$.
+
+But
+\[
+\mathbb R\setminus\{0\}
+\]
+is not closed in $mathbb R$, since
+\[
+0
+\]
+is a limit point.
+Therefore
+\[
+\pi_1
+\]
+is not a closed map.
+:::
+
+<1>3. Thus the answer is:
+
+1. corestricting a closed map to any subspace containing its image preserves
+   closedness;
+2. coordinate projections in product spaces need not be closed.
+
+::: {.proof}
+This is exactly the content of steps <1>1--<1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (1), and step <1>2 supplies the required counterexample
+for part (2).
+:::
+:::

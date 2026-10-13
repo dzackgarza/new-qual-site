@@ -32,3 +32,61 @@ Find the determinant of each matrix:
 \begin{bmatrix}2&3&-2\\1&0&1\\4&1&2\end{bmatrix}.
 \]
 :::
+
+::: {.solution}
+For the matrices in parts (a)--(d), write \(A,B,C,D\), respectively.
+
+<1>1. \(\det A=\boxed{-1}\).
+
+::: {.proof}
+By the \(2\times2\) determinant formula,
+\[
+\det A=5\cdot1-2\cdot3=-1.
+\]
+:::
+
+<1>2. \(\det B=\boxed{-54}\).
+
+::: {.proof}
+The matrix \(B\) is upper triangular, so its determinant is the product of its diagonal entries:
+\[
+\det B=6\cdot3\cdot(-3)=-54.
+\]
+:::
+
+<1>3. \(\det C=\boxed{0}\).
+
+::: {.proof}
+Expanding along the first row gives
+\[
+\begin{aligned}
+\det C
+&=2\det\begin{bmatrix}3&-2\\3&2\end{bmatrix}
+  +4\det\begin{bmatrix}1&3\\3&3\end{bmatrix}\\
+&=2(6+6)+4(3-9)\\
+&=24-24=0.
+\end{aligned}
+\]
+:::
+
+<1>4. \(\det D=\boxed{2}\).
+
+::: {.proof}
+Expanding along the second row gives
+\[
+\begin{aligned}
+\det D
+&=-\det\begin{bmatrix}3&-2\\1&2\end{bmatrix}
+  -\det\begin{bmatrix}2&3\\4&1\end{bmatrix}\\
+&=-(6+2)-(2-12)\\
+&=-8+10=2.
+\end{aligned}
+\]
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 through <1>4 give the determinant in each of the four cases.
+:::
+:::

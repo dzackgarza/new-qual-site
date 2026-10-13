@@ -24,3 +24,66 @@ $$
 
 with $y ^ { \prime } ( 0 ) = y ^ { \prime } ( \pi ) = 0 ;$
 :::
+
+::: {.solution}
+<1>1. There is no nonzero solution when $\lambda<0$.
+
+::: {.proof}
+Write $\lambda=-\mu^2$ with $\mu>0$. Then
+\[
+y=A\cosh(\mu x)+B\sinh(\mu x),
+\]
+so
+\[
+y'=\mu A\sinh(\mu x)+\mu B\cosh(\mu x).
+\]
+The condition $y'(0)=0$ gives $B=0$, and then $y'(\pi)=\mu A\sinh(\mu\pi)=0$ gives $A=0$.
+:::
+
+<1>2. When $\lambda=0$, the nonzero solutions are the constant functions
+\[
+\boxed{y(x)=A},\qquad A\ne0.
+\]
+
+::: {.proof}
+The equation is $y''=0$, so $y=A+Bx$. Both boundary conditions reduce to $B=0$.
+:::
+
+<1>3. If $\lambda>0$, write $\lambda=\mu^2$. A nonzero solution exists exactly when
+\[
+\mu=n\in\mathbb N,
+\]
+and then
+\[
+\boxed{y(x)=A\cos(nx)}.
+\]
+
+::: {.proof}
+For $\mu>0$,
+\[
+y=A\cos(\mu x)+B\sin(\mu x),
+\qquad
+y'=-\mu A\sin(\mu x)+\mu B\cos(\mu x).
+\]
+The condition $y'(0)=0$ gives $B=0$. The second condition becomes
+\[
+-\mu A\sin(\mu\pi)=0.
+\]
+For a nonzero solution $A\ne0$, so $\sin(\mu\pi)=0$, equivalently $\mu=n\in\mathbb N$.
+:::
+
+<1>4. Thus all eigenvalues and corresponding nonzero solutions are
+\[
+\boxed{\lambda_n=n^2,\qquad y_n(x)=A\cos(nx),\qquad n=0,1,2,\ldots,\ A\ne0}.
+\]
+
+::: {.proof}
+Step <1>1 excludes negative eigenvalues, step <1>2 supplies $n=0$, and step <1>3 supplies every positive integer $n$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 lists every nonzero solution satisfying both Neumann boundary conditions.
+:::
+:::

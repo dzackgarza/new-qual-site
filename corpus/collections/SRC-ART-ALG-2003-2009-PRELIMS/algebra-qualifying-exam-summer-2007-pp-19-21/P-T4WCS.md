@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Verified the support intersections, transitivity, conjugate-cycle support, and order arguments without assuming simplicity of A5."
 ---
-
 ::: {.problem}
 Let $x, y$ be $3$-cycles in $S_5$, $x$ not equal to $y$ or $y^{-1}$.
 
@@ -84,7 +83,7 @@ The inclusion in $A(U)$ now forces $|H|=12$ and $H=A(U)\cong A_4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 If there is no common fixed point, then $H=A_5$.
 
@@ -112,6 +111,12 @@ so $H\subseteq A_5$, whose order is $5!/2=60$.
 Thus $H=A_5$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and step [](#s3){.pf-ref} proves part (b).
 
 :::
 

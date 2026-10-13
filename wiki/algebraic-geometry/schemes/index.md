@@ -11,7 +11,7 @@ topics:
 
 $\Spec$ and $\Proj$, gluing, fibre products, and the properties — reduced, irreducible, integral, Noetherian — read off the ring.
 
-A scheme $X$ is affine exactly when the canonical morphism $X\to\Spec\OO_X(X)$ is an isomorphism.
+The definition of a scheme is the starting point for everything on this page: the next questions are how to recognise an affine scheme, whether the Noetherian hypothesis in Serre's criterion can be weakened, and what goes wrong without quasicompactness.
 
 ## Syllabus
 

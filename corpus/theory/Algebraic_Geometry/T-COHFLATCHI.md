@@ -26,12 +26,9 @@ Then $\mcf$ is flat over $T$ exactly when the Hilbert polynomial of $\restrictio
 :::
 
 ::: {.remark}
-This is the theorem that makes "flat family" mean "family in which the numerical invariants do not jump", and it is the reason the Hilbert scheme is stratified by Hilbert polynomials.
+For a closed subscheme $X\subseteq\PP_T^n$, apply the theorem to $\mcf=\OO_X$. Flatness of $X\to T$ is then equivalent to constancy of the fibre Hilbert polynomial.
 
-The invariants that do stay constant are exactly the ones read off the Hilbert polynomial: degree, dimension, arithmetic genus, $\chi(\OO)$.
-Everything else can degenerate.
-Irreducibility, reducedness, the geometric genus, and the Picard number are all lost in flat limits, and a flat family with smooth general fibre can have a singular or non-reduced special fibre.
-A conic degenerating to a double line keeps $\chi$ and loses reducedness.
+For such a flat projective family, the fibre dimension, degree, arithmetic genus, and Euler characteristic $\chi(\OO_{X_t})$ are determined by the common Hilbert polynomial and are therefore constant. Properties not determined by the Hilbert polynomial may change: irreducibility, reducedness, smoothness, and Picard number need not be constant in a flat family. A flat family of plane conics can specialize from smooth conics to a double line while retaining the polynomial $2m+1$.
 
-A blowup is not flat because the fibre dimension jumps over the centre.
+If $X$ is integral and $Z\subseteq X$ is a smooth center of codimension at least $2$, the blowup $\Bl_ZX\to X$ is not flat: its generic fibre is a point, whereas the fibre over a point of $Z$ is a projective space of positive dimension. This does not apply to a blowup along an effective Cartier divisor, which is an isomorphism.
 :::

@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Proved arbitrary intersections of normal subgroups are normal by conjugating an element inside every subgroup."
 ---
-
 ::: {.problem}
 Prove or disprove that normal subgroups are closed under intersection.
 :::
@@ -76,7 +75,7 @@ inclusion, so $gNg^{-1}=N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Therefore normal subgroups are closed under intersection.
 
@@ -89,6 +88,12 @@ $$
 In particular, the intersection of any two normal subgroups is normal.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

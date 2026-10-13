@@ -24,3 +24,44 @@ $$\lim_{x \to 0} \frac{\sqrt{x + 1} - 1}{x} =$$
 (D) $2$
 (E) $\infty$
 :::
+
+::: {.solution}
+<1>1. For $x\ne0$,
+$$
+\frac{\sqrt{x+1}-1}{x}
+=\frac1{\sqrt{x+1}+1}.
+$$
+
+::: {.proof}
+Multiplying numerator and denominator by the conjugate $\sqrt{x+1}+1$ gives
+$$
+\frac{\sqrt{x+1}-1}{x}
+\cdot
+\frac{\sqrt{x+1}+1}{\sqrt{x+1}+1}
+=\frac{(x+1)-1}{x(\sqrt{x+1}+1)}
+=\frac1{\sqrt{x+1}+1}.
+$$
+:::
+
+<1>2. Therefore
+$$
+\lim_{x\to0}\frac{\sqrt{x+1}-1}{x}
+=\boxed{\frac12},
+$$
+so the answer is (B).
+
+::: {.proof}
+By step <1>1, the limit equals
+$$
+\lim_{x\to0}\frac1{\sqrt{x+1}+1}
+=\frac1{1+1}=\frac12,
+$$
+because the simplified denominator is continuous at $x=0$ and nonzero there.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the required limit.
+:::
+:::

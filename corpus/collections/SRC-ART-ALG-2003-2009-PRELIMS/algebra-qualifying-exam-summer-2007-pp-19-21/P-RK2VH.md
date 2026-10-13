@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked the complete Sylow-count possibilities, disjoint element count, normal inverse image, and conjugation argument for both Sylow subgroups."
 ---
-
 ::: {.problem}
 a. State the Sylow theorems.
 
@@ -87,7 +86,7 @@ This is impossible. Hence $n_5=1$ or $n_7=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 There is a normal subgroup $N\lhd G$ of order $35$.
 
@@ -110,7 +109,7 @@ its fibers are the cosets of $P$. Hence $|N|=pq=35$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Both Sylow subgroups are normal in $G$.
 
@@ -129,6 +128,12 @@ of $5$ and $7$ to the first power. By conjugacy, they are also the
 unique Sylow subgroups of $G$ for their respective primes.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), step [](#s2){.pf-ref} proves part (b), step [](#s3){.pf-ref} proves part (c), and step [](#s4){.pf-ref} proves part (d).
 
 :::
 

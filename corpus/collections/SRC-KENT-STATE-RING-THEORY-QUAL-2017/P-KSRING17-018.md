@@ -23,3 +23,234 @@ Show the following.
 
 (b) The homomorphism in part (a) is surjective if and only if $A + B = R$
 :::
+
+::: {.solution}
+Define
+$$
+\varphi:R\to R/A\times R/B
+$$
+by
+$$
+\varphi(r)
+\coloneqq
+(r+A,r+B).
+$$
+
+<1>1. The map $\varphi$ preserves addition.
+
+::: {.proof}
+For
+$$
+r,s\in R,
+$$
+one has
+$$
+\begin{aligned}
+\varphi(r+s)
+&=
+(r+s+A,r+s+B)\\
+&=
+(r+A,r+B)
++
+(s+A,s+B)\\
+&=
+\varphi(r)+\varphi(s).
+\end{aligned}
+$$
+:::
+
+<1>2. The map $\varphi$ preserves multiplication and identity.
+
+::: {.proof}
+For
+$$
+r,s\in R,
+$$
+coordinatewise multiplication gives
+$$
+\begin{aligned}
+\varphi(rs)
+&=
+(rs+A,rs+B)\\
+&=
+(r+A,r+B)
+(s+A,s+B)\\
+&=
+\varphi(r)\varphi(s).
+\end{aligned}
+$$
+Also,
+$$
+\varphi(1_R)
+=
+(1_R+A,1_R+B),
+$$
+which is the identity of
+$$
+R/A\times R/B.
+$$
+Hence $\varphi$ is a ring homomorphism.
+:::
+
+<1>3. If $\varphi$ is surjective, then
+$$
+A+B=R.
+$$
+
+::: {.proof}
+Assume $\varphi$ is surjective. Then the element
+$$
+(1+A,0+B)
+$$
+has a preimage
+$$
+r\in R.
+$$
+Thus
+$$
+r+A=1+A,
+\qquad
+r+B=0+B.
+$$
+The first equality means
+$$
+1-r\in A,
+$$
+while the second means
+$$
+r\in B.
+$$
+Therefore
+$$
+1
+=
+(1-r)+r
+\in
+A+B.
+$$
+Since an ideal containing $1$ is the whole ring,
+$$
+A+B=R.
+$$
+:::
+
+<1>4. Assume
+$$
+A+B=R.
+$$
+Then there exist
+$$
+a\in A,
+\qquad
+b\in B
+$$
+such that
+$$
+a+b=1.
+$$
+
+::: {.proof}
+The equality
+$$
+A+B=R
+$$
+means in particular that
+$$
+1\in A+B.
+$$
+Thus
+$$
+1=a+b
+$$
+for some
+$$
+a\in A,
+\qquad
+b\in B.
+$$
+:::
+
+<1>5. Under the hypothesis of step <1>4, the map $\varphi$ is surjective.
+
+::: {.proof}
+Let
+$$
+(r+A,s+B)
+\in
+R/A\times R/B
+$$
+be arbitrary. Choose $a,b$ as in step <1>4 and define
+$$
+x
+\coloneqq
+rb+sa.
+$$
+
+Modulo $A$, one has
+$$
+a\equiv0
+\pmod A
+$$
+and
+$$
+b=1-a\equiv1\pmod A.
+$$
+Hence
+$$
+x
+=
+rb+sa
+\equiv
+r
+\pmod A.
+$$
+Therefore
+$$
+x+A=r+A.
+$$
+
+Similarly, modulo $B$,
+$$
+b\equiv0,
+\qquad
+a=1-b\equiv1,
+$$
+so
+$$
+x
+\equiv
+s
+\pmod B.
+$$
+Thus
+$$
+x+B=s+B.
+$$
+Consequently
+$$
+\varphi(x)
+=
+(r+A,s+B),
+$$
+and $\varphi$ is surjective.
+:::
+
+<1>6. Therefore
+$$
+\boxed{
+\varphi\text{ is surjective}
+\iff
+A+B=R.
+}
+$$
+
+::: {.proof}
+Step <1>3 proves the forward implication, and step <1>5 proves the converse.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 prove part (a), and step <1>6 proves part (b).
+:::
+:::

@@ -28,3 +28,290 @@ for every \(z\in\mathbb C\), and
 \]
 for every \(z\in\mathbb C\). Prove that \(f\) is constant.
 :::
+
+::: {.solution}
+For each integer
+$$
+n\in\ZZ
+$$
+and each real number
+$$
+y,
+$$
+define
+$$
+c_n(y)
+\coloneqq
+\int_0^1
+f(x+iy)
+e^{-2\pi i n(x+iy)}
+\,dx.
+$$
+
+<1>1. For every
+$$
+n\in\ZZ,
+$$
+the quantity
+$$
+c_n(y)
+$$
+is independent of $y$.
+
+::: {.proof}
+Fix real numbers
+$$
+y_0<y_1
+$$
+and consider the entire function
+$$
+F_n(z)
+\coloneqq
+f(z)e^{-2\pi inz}.
+$$
+Because
+$$
+f(z+1)=f(z)
+$$
+and
+$$
+e^{-2\pi in(z+1)}
+=
+e^{-2\pi inz},
+$$
+the function $F_n$ is also $1$-periodic.
+
+Integrate $F_n$ around the rectangle with vertices
+$$
+iy_0,quad
+1+iy_0,quad
+1+iy_1,quad
+iy_1.
+$$
+By Cauchy's theorem, the total integral is zero. The integrals over the two vertical sides cancel because of $1$-periodicity. Hence the two horizontal integrals are equal:
+$$
+\int_0^1
+F_n(x+iy_0)
+\,dx
+=
+\int_0^1
+F_n(x+iy_1)
+\,dx.
+$$
+These are exactly
+$$
+c_n(y_0)
+\quad\text{and}\quad
+c_n(y_1).
+$$
+:::
+
+<1>2. For
+$$
+0\le x\le1,
+$$
+one has
+$$
+|f(x+iy)|
+\le
+e^{1+|y|}.
+$$
+
+::: {.proof}
+By the triangle inequality,
+$$
+|x+iy|
+\le
+|x|+|y|
+\le
+1+|y|.
+$$
+The assumed growth bound therefore gives
+$$
+|f(x+iy)|
+\le
+e^{|x+iy|}
+\le
+e^{1+|y|}.
+$$
+:::
+
+<1>3. If
+$$
+n>0,
+$$
+then
+$$
+\boxed{c_n=0}.
+$$
+
+::: {.proof}
+By step <1>1, write simply
+$$
+c_n
+$$
+for the common value of $c_n(y)$. For
+$$
+y<0,
+$$
+steps <1>1--<1>2 give
+$$
+\begin{aligned}
+|c_n|
+&\le
+\int_0^1
+|f(x+iy)|
+\left|
+e^{-2\pi in(x+iy)}
+\right|
+dx\\
+&\le
+e^{1-y}
+e^{2\pi ny}.
+\end{aligned}
+$$
+Thus
+$$
+|c_n|
+\le
+e^{1+(2\pi n-1)y}.
+$$
+Since
+$$
+2\pi n-1>0,
+$$
+letting
+$$
+y\to-\infty
+$$
+forces the right-hand side to tend to $0$. Hence
+$$
+c_n=0.
+$$
+:::
+
+<1>4. If
+$$
+n<0,
+$$
+then
+$$
+\boxed{c_n=0}.
+$$
+
+::: {.proof}
+For
+$$
+y>0,
+$$
+steps <1>1--<1>2 give
+$$
+\begin{aligned}
+|c_n|
+&\le
+e^{1+y}
+e^{2\pi ny}\\
+&=
+e^{1+(1+2\pi n)y}.
+\end{aligned}
+$$
+Since
+$$
+n\le-1,
+$$
+one has
+$$
+1+2\pi n<0.
+$$
+Letting
+$$
+y\to+\infty
+$$
+forces the right-hand side to $0$. Therefore
+$$
+c_n=0.
+$$
+:::
+
+<1>5. For each fixed real $y$, the ordinary Fourier coefficients of the continuous $1$-periodic function
+$$
+x\longmapsto f(x+iy)
+$$
+vanish in every nonzero degree.
+
+::: {.proof}
+Its $n$th Fourier coefficient is
+$$
+\widehat f_y(n)
+\coloneqq
+\int_0^1
+f(x+iy)e^{-2\pi inx}
+\,dx.
+$$
+By definition of $c_n$,
+$$
+c_n
+=
+e^{2\pi ny}
+\widehat f_y(n).
+$$
+Steps <1>3--<1>4 give
+$$
+c_n=0
+$$
+for
+$$
+n\ne0,
+$$
+and the exponential factor is nonzero. Hence
+$$
+\widehat f_y(n)=0
+$$
+for every nonzero integer $n$.
+:::
+
+<1>6. For every fixed $y$, the function
+$$
+x\longmapsto f(x+iy)
+$$
+is constant in $x$.
+
+::: {.proof}
+By step <1>5, all nonconstant Fourier coefficients of this continuous $1$-periodic function vanish. Uniqueness of Fourier coefficients for continuous periodic functions therefore implies that the function equals its constant Fourier mode.
+:::
+
+<1>7. The constant from step <1>6 is independent of $y$.
+
+::: {.proof}
+The constant Fourier mode is
+$$
+\widehat f_y(0)
+=
+\int_0^1
+f(x+iy)
+\,dx
+=
+c_0(y).
+$$
+By step <1>1,
+$$
+c_0(y)
+$$
+is independent of $y$.
+:::
+
+<1>8. Therefore
+$$
+\boxed{f\text{ is constant on }\CC}.
+$$
+
+::: {.proof}
+Step <1>6 says that $f$ is constant along every horizontal line, and step <1>7 says that these constants are all the same.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required conclusion.
+:::
+:::

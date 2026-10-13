@@ -21,7 +21,6 @@ audit:
   date: 2026-09-13
   note: Verified the projective closure, failure of extension at the cusp, birational parameter, blow-up charts, smooth locus, and integral closure.
 ---
-
 ::: {.problem}
 Describe $\mathbb P^2$ and the standard embedding $\mathbb A^2\hookrightarrow\mathbb P^2$.
 Let
@@ -56,7 +55,6 @@ Answer the following questions about $Z$.
    What is the normalization of $Z$?
 :::
 
-
 ::: {.solution}
 Use homogeneous coordinates \([X:Y:Z]\) on \(\mathbb P^2\), with the standard embedding
 \[
@@ -68,10 +66,12 @@ Recall that \(\mathbb P^2=(k^3\setminus\{0\})/k^\times\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
+
 The coordinate ring is \(k[t^2,t^3]\), and \(Z\) is irreducible.
 
 ::: pf-proof
+
 By definition,
 \[
 A(Z)=k[x,y]/(y^2-x^3).
@@ -89,14 +89,17 @@ has kernel \((y^2-x^3)\). Hence
 A(Z)\cong k[t^2,t^3]\subseteq k[t].
 \]
 Since \(k[t]\) is a domain, so is \(A(Z)\). Therefore \(Z\) is irreducible.
+
 :::
 
 :::
 
 ::: pf-step
+
 The projective closure is the cuspidal cubic \(Y^2Z=X^3\), with one point at infinity.
 
 ::: pf-proof
+
 Homogenizing \(y^2-x^3\) gives
 \[
 \overline Z=V(Y^2Z-X^3)\subseteq\mathbb P^2.
@@ -106,14 +109,17 @@ On the line at infinity \(Z=0\), the equation becomes \(X^3=0\), so \(X=0\). Thu
 \overline Z-Z=\{[0:1:0]\}.
 \]
 Geometrically, \(\overline Z\) is the projective cuspidal cubic: its affine part has a cusp at \((0,0)\), and one smooth point is added at infinity.
+
 :::
 
 :::
 
 ::: pf-step
+
 The map \(f:Z\setminus\{0\}\to\mathbb P^1\) does not extend to a morphism on \(Z\).
 
 ::: pf-proof
+
 Every nonzero point of \(Z\) has \(x\ne0\), because \(x=0\) forces \(y=0\). Hence on \(Z\setminus\{0\}\),
 \[
 f(x,y)=[x:y]=[1:y/x].
@@ -138,14 +144,17 @@ But
 \mathcal O_{Z,0}=k[t^2,t^3]_{(t^2,t^3)},
 \]
 and \(t\notin\mathcal O_{Z,0}\). Indeed, if \(t=a/b\) with \(a,b\in k[t^2,t^3]\) and \(b(0)\ne0\), then the \(t\)-adic order of \(a=tb\) would be \(1\), whereas every nonzero element of \(k[t^2,t^3]\) has order \(0\) or at least \(2\). This is impossible. Therefore no such extension exists.
+
 :::
 
 :::
 
 ::: pf-step
+
 The displayed \(f\) is neither bijective nor an isomorphism onto \(\mathbb P^1\), but it is birational.
 
 ::: pf-proof
+
 Via \(t\mapsto(t^2,t^3)\), the punctured curve is \(\mathbb G_m\), and
 \[
 f(t)=[1:t].
@@ -162,14 +171,17 @@ On the other hand, it is dominant and induces the function-field map generated b
 t=\frac yx.
 \]
 As shown below, \(k(Z)=k(t)=k(\mathbb P^1)\). Therefore \(f\) is a birational equivalence.
+
 :::
 
 :::
 
 ::: pf-step
+
 The function field is \(k(t)\).
 
 ::: pf-proof
+
 From \(A(Z)=k[t^2,t^3]\),
 \[
 k(Z)=\operatorname{Frac}k[t^2,t^3].
@@ -182,14 +194,17 @@ belongs to this fraction field, it contains \(k(t)\); the reverse inclusion is i
 \[
 \boxed{k(Z)=k(t)}.
 \]
+
 :::
 
 :::
 
 ::: pf-step
+
 Blowing up the cusp produces \(\mathbb A^1\), with map \(t\mapsto(t^2,t^3)\).
 
 ::: pf-proof
+
 View \(Z\) inside \(\mathbb A^2\) and blow up the origin. On the \(x\)-chart of the blow-up, write
 \[
 y=ux.
@@ -206,7 +221,7 @@ Then
 \[
 y=ux=u^3.
 \]
-Thus this chart of the strict transform is \(\mathbb A^1_u\).
+Thus this chart of the strict transform is simply \(\mathbb A^1_u\).
 
 On the \(y\)-chart, writing \(x=vy\) gives
 \[
@@ -221,14 +236,17 @@ This is the open subset \(u\ne0\) of the \(u\)-chart, with \(v=u^{-1}\). Hence t
 u\longmapsto(u^2,u^3).
 \]
 The exceptional fiber over the cusp is the single point \(u=0\).
+
 :::
 
 :::
 
 ::: pf-step
+
 The only singular point of \(Z\) is the cusp \((0,0)\).
 
 ::: pf-proof
+
 Let
 \[
 F(x,y)=y^2-x^3.
@@ -243,14 +261,17 @@ On \(Z\), both derivatives vanish simultaneously only at \((0,0)\) (the same con
 \[
 Z_{\mathrm{sm}}=Z\setminus\{(0,0)\}.
 \]
-:::
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s8}
+
 The integral closure is \(k[t]\), and the normalization is \(\mathbb A^1\to Z\), \(t\mapsto(t^2,t^3)\).
 
 ::: pf-proof
+
 Inside the common function field \(k(t)\), the element \(t\) is integral over \(A(Z)=k[t^2,t^3]\), because it satisfies the monic equation
 \[
 T^2-t^2=0
@@ -265,7 +286,14 @@ Consequently the normalization is
 \qquad
  t\longmapsto(t^2,t^3).
 \]
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} through step [](#s8){.pf-ref} answer the eight requested questions about the cuspidal cubic, from its coordinate ring through its normalization.
 
 :::
 

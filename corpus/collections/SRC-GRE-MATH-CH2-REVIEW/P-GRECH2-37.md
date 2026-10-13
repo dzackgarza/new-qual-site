@@ -28,3 +28,61 @@ Evaluate the following limit:
 (D) $1$
 (E) $\sqrt{e}$
 :::
+
+::: {.solution}
+For $x$ sufficiently close to $0$, one has $\cos x>0$, so define
+$$
+y(x)=(\cos x)^{\cot^2x}.
+$$
+
+<1>1. The logarithm satisfies
+$$
+\log y(x)=\frac{\log(\cos x)}{\tan^2x}.
+$$
+
+::: {.proof}
+Taking logarithms gives
+$$
+\log y(x)=\cot^2x\,\log(\cos x).
+$$
+Since $\cot^2x=1/\tan^2x$, this is the displayed quotient.
+:::
+
+<1>2. One has
+$$
+\lim_{x\to0}\log y(x)=-\frac12.
+$$
+
+::: {.proof}
+The quotient in step <1>1 has the form $0/0$. By L'Hôpital's rule,
+$$
+\begin{aligned}
+\lim_{x\to0}\frac{\log(\cos x)}{\tan^2x}
+&=\lim_{x\to0}\frac{-\tan x}{2\tan x\sec^2x}\\
+&=\lim_{x\to0}-\frac{\cos^2x}{2}\\
+&=-\frac12.
+\end{aligned}
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{\lim_{x\to0}(\cos x)^{\cot^2x}=\frac1{\sqrt e}},
+$$
+so the answer is (B).
+
+::: {.proof}
+By step <1>2 and continuity of the exponential function,
+$$
+\lim_{x\to0}y(x)
+=\exp\left(-\frac12\right)
+=\frac1{\sqrt e}.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested limit and corresponding choice.
+:::
+:::

@@ -21,18 +21,36 @@ prompts:
 ---
 
 ::: {.proposition title="Separation"}
-Let $\sigma \subseteq N_\RR$ be a convex polyhedral cone and let $v \in N_\RR$ with $v \notin \sigma$.
-Then there is a **support vector** $u \in \dualof{\sigma}$ with
-\[
+Let $N_\RR$ be a finite-dimensional real vector space, let $M_\RR=N_\RR^\vee$, let $\sigma\subseteq N_\RR$ be a convex polyhedral cone, and let $v\in N_\RR\sm\sigma$.
+Then there is a linear functional $u\in\sigma\dual\subseteq M_\RR$ such that
+$$
 \inner{u}{v} < 0 .
-\]
-That is, $v$ lies strictly on the negative side of a hyperplane that has all of $\sigma$ on its non-negative side.
+$$
+Equivalently, the hyperplane $u^\perp$ places $\sigma$ in the closed half-space $\inner{u}{\wait}\geq0$ and $v$ in the opposite open half-space.
+:::
+
+::: {.proof}
+Choose an inner product on $N_\RR$ and let $p\in\sigma$ be the point minimizing the distance to $v$; it exists because a polyhedral cone is closed and convex. The characterization of the metric projection gives
+$$
+\langle v-p,x-p\rangle\leq0
+\qquad\text{for every }x\in\sigma.
+$$
+Taking $x=0$ and $x=2p$ shows $\langle v-p,p\rangle=0$. Hence
+$$
+\langle p-v,x\rangle\geq0
+\qquad\text{for every }x\in\sigma,
+$$
+while
+$$
+\langle p-v,v\rangle=-\norm{v-p}^2<0.
+$$
+The functional $u=\langle p-v,\wait\rangle\in M_\RR$ therefore has the required properties.
 :::
 
 ::: {.proposition title="Double duality"}
-\[
-\dualof{(\dualof{\sigma})} = \sigma .
-\]
+$$
+(\sigma\dual)\dual = \sigma .
+$$
 :::
 
 ::: {.proof}
@@ -42,10 +60,6 @@ For the reverse, take $v \notin \sigma$ and apply separation to get $u \in \dual
 That $u$ witnesses $v \notin \dualof{(\dualof{\sigma})}$.
 :::
 
-::: {.remark title="What separation rests on"}
-Separation is the finite-dimensional Hahn--Banach statement, and for a polyhedral cone it is elementary: $\sigma$ is closed and convex, so the point of $\sigma$ nearest to $v$ exists, and the vector from it to $v$ gives the required $u$ after a sign change.
-Convexity and closedness are both needed, and polyhedral cones have both for free.
-
-Double duality makes the cone-dual correspondence reversible.
-The equality $(\sigma^\vee)^\vee=\sigma$ means that $\sigma\subseteq N_\RR$ and $\sigma^\vee\subseteq M_\RR$ determine each other.
+::: {.remark}
+The proof uses only finite dimensionality, convexity, and closedness; polyhedrality guarantees closedness. The equality $(\sigma^\vee)^\vee=\sigma$ therefore holds more generally for every closed convex cone in a finite-dimensional real vector space.
 :::

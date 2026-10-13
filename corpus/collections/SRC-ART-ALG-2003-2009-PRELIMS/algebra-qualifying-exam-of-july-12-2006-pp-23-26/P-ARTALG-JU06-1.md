@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the conjugacy-class coset bijection and divisibility of every noncentral class size by p."
 ---
-
 ::: {.problem}
 (a) State the class equation for finite groups.
 
@@ -63,7 +62,7 @@ Adding the class sizes gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 If $|G|=p^k$ with $k\geq1$, then $|Z(G)|\geq p$.
 
@@ -78,6 +77,12 @@ The center contains the identity, so its size is a positive multiple
 of $p$ and therefore at least $p>1$. In particular it is nontrivial.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s2){.pf-ref} proves part (b).
 
 :::
 

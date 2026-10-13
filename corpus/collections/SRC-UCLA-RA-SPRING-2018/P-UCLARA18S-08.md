@@ -27,3 +27,338 @@ among all harmonic functions $u:\mathbb D\to[0,1]$, where
 \]
 Prove that your answer is correct.
 :::
+
+::: {.solution}
+<1>1. It suffices to consider nonconstant \(u\).
+
+::: {.proof}
+If \(u\) is constant, then
+\[
+u_x(0,0)=0.
+\]
+Thus constant functions cannot increase the supremum.
+:::
+
+<1>2. If \(u:\mathbb D\to[0,1]\) is nonconstant and harmonic, then
+\[
+0<u(z)<1
+\qquad(z\in\mathbb D).
+\]
+
+::: {.proof}
+If \(u\) attained either its minimum \(0\) or maximum \(1\) at an interior
+point, the strong minimum or maximum principle for harmonic functions would
+force \(u\) to be constant. Hence a nonconstant \(u\) takes values in the
+open interval \((0,1)\).
+:::
+
+<1>3. There is a holomorphic function
+\[
+F=u+iv:\mathbb D\to
+S
+\coloneqq
+\{w\in\mathbb C:0<\operatorname{Re}w<1\}
+\]
+whose real part is \(u\), and \(v\) may be chosen so that
+\[
+F(0)=u(0)\in(0,1).
+\]
+
+::: {.proof}
+The unit disk is simply connected, so the harmonic function \(u\) admits a
+harmonic conjugate \(v\). Then
+\[
+F=u+iv
+\]
+is holomorphic. Adding a real constant to \(v\) multiplied by \(i\), i.e.
+adding a purely imaginary constant to \(F\), does not change its real part.
+Choose that constant so that
+\[
+v(0)=0.
+\]
+Step <1>2 shows that the image lies in the vertical strip \(S\).
+:::
+
+<1>4. Define
+\[
+T:S\longrightarrow\mathbb D,
+\qquad
+T(w)
+=
+\frac{e^{i\pi w}-i}{e^{i\pi w}+i}.
+\]
+Then \(T\) is a conformal bijection.
+
+::: {.proof}
+If \(0<\operatorname{Re}w<1\), then
+\[
+e^{i\pi w}
+\]
+has argument strictly between \(0\) and \(\pi\), hence lies in the upper
+half-plane. The Cayley map
+\[
+\zeta\longmapsto\frac{\zeta-i}{\zeta+i}
+\]
+is a conformal bijection from the upper half-plane to \(\mathbb D\).
+Their composition is \(T\).
+:::
+
+<1>5. Let
+\[
+t=F(0)=u(0)\in(0,1),
+\qquad
+\alpha=T(t).
+\]
+Then Schwarz--Pick gives
+\[
+\boxed{
+|F'(0)|
+\le
+\frac{1-|\alpha|^2}{|T'(t)|}}.
+\]
+
+::: {.proof}
+Let
+\[
+\psi_\alpha(\zeta)
+=
+\frac{\zeta-\alpha}{1-\overline\alpha\,\zeta},
+\]
+the disk automorphism sending \(\alpha\) to \(0\). Then
+\[
+G
+=
+\psi_\alpha\circ T\circ F
+:
+\mathbb D\to\mathbb D
+\]
+is holomorphic and
+\[
+G(0)=0.
+\]
+Schwarz's lemma gives
+\[
+|G'(0)|\le1.
+\]
+By the chain rule,
+\[
+|G'(0)|
+=
+|\psi_\alpha'(\alpha)|
+|T'(t)|
+|F'(0)|.
+\]
+Since
+\[
+|\psi_\alpha'(\alpha)|
+=
+\frac1{1-|\alpha|^2},
+\]
+the displayed estimate follows.
+:::
+
+<1>6. For \(t\in(0,1)\),
+\[
+\boxed{
+\frac{1-|T(t)|^2}{|T'(t)|}
+=
+\frac{2\sin(\pi t)}{\pi}
+\le
+\frac2\pi}.
+\]
+
+::: {.proof}
+Set
+\[
+\zeta=e^{i\pi t},
+\]
+so \(|\zeta|=1\) and
+\[
+\operatorname{Im}\zeta=\sin(\pi t)>0.
+\]
+From
+\[
+T(t)
+=
+\frac{\zeta-i}{\zeta+i},
+\]
+one gets
+\[
+1-|T(t)|^2
+=
+\frac{|\zeta+i|^2-|\zeta-i|^2}{|\zeta+i|^2}
+=
+\frac{4\sin(\pi t)}{|\zeta+i|^2}.
+\]
+Also
+\[
+\frac{d}{d\zeta}
+\frac{\zeta-i}{\zeta+i}
+=
+\frac{2i}{(\zeta+i)^2},
+\]
+so
+\[
+|T'(t)|
+=
+\frac{2\pi}{|\zeta+i|^2}.
+\]
+Dividing gives
+\[
+\frac{1-|T(t)|^2}{|T'(t)|}
+=
+\frac{2\sin(\pi t)}{\pi}
+\le
+\frac2\pi.
+\]
+:::
+
+<1>7. Every admissible harmonic function satisfies
+\[
+\boxed{
+|u_x(0,0)|
+\le
+\frac2\pi}.
+\]
+
+::: {.proof}
+By the Cauchy--Riemann equations,
+\[
+F'(0)
+=
+u_x(0,0)-iu_y(0,0),
+\]
+so
+\[
+|u_x(0,0)|
+\le
+|F'(0)|.
+\]
+Combine steps <1>5 and <1>6.
+:::
+
+<1>8. Let \(H=T^{-1}:\mathbb D\to S\) be the inverse conformal map,
+\[
+H(z)
+=
+\frac1{i\pi}
+\Log\!\left(
+i\frac{1+z}{1-z}
+\right),
+\]
+where \(\Log\) is the holomorphic logarithm on the upper half-plane. Then
+\[
+H(0)=\frac12
+\qquad\text{and}\qquad
+H'(0)=-\frac{2i}{\pi}.
+\]
+
+::: {.proof}
+Solving
+\[
+z
+=
+\frac{\zeta-i}{\zeta+i}
+\]
+for \(\zeta\) gives
+\[
+\zeta
+=
+i\frac{1+z}{1-z}.
+\]
+Since \(\zeta=e^{i\pi w}\),
+\[
+w
+=
+\frac1{i\pi}\Log\zeta,
+\]
+which is the displayed formula.
+
+At \(z=0\),
+\[
+\Log i
+=
+\frac{i\pi}{2},
+\]
+so \(H(0)=1/2\). Differentiating,
+\[
+H'(z)
+=
+\frac1{i\pi}
+\left(
+\frac1{1+z}
++
+\frac1{1-z}
+\right),
+\]
+hence
+\[
+H'(0)
+=
+\frac2{i\pi}
+=
+-\frac{2i}{\pi}.
+\]
+:::
+
+<1>9. Define
+\[
+\widetilde H(z)=H(iz)
+\]
+and
+\[
+u_*(z)=\operatorname{Re}\widetilde H(z).
+\]
+Then \(u_*:\mathbb D\to(0,1)\) is harmonic and
+\[
+\boxed{
+\frac{\partial u_*}{\partial x}(0,0)
+=
+\frac2\pi}.
+\]
+
+::: {.proof}
+Since multiplication by \(i\) is an automorphism of \(\mathbb D\),
+\[
+\widetilde H:\mathbb D\to S
+\]
+is holomorphic, so its real part \(u_*\) is harmonic and takes values in
+\((0,1)\).
+
+By step <1>8,
+\[
+\widetilde H'(0)
+=
+iH'(0)
+=
+i\left(-\frac{2i}{\pi}\right)
+=
+\frac2\pi.
+\]
+For a holomorphic function, the real part of the derivative is the
+\(x\)-derivative of its real part. Therefore
+\[
+(u_*)_x(0,0)
+=
+\operatorname{Re}\widetilde H'(0)
+=
+\frac2\pi.
+\]
+:::
+
+<1>10. Hence the supremum is
+\[
+\boxed{\frac2\pi}.
+\]
+
+::: {.proof}
+Step <1>7 gives \(2/\pi\) as an upper bound, while step <1>9 constructs an
+admissible harmonic function attaining that value.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required sharp result.
+:::
+:::

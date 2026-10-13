@@ -32,3 +32,171 @@ where $\arg$ is the principal argument.
 
 3. Show that $f$ has no analytic logarithm on $\Omega$.
 :::
+
+::: {.solution}
+<1>1. The function $g$ is well-defined on $\Omega$ and satisfies
+$$
+g(z)^2=f(z)
+$$
+for every $z\in\Omega$.
+
+::: {.proof}
+For $z\in\Omega$, neither $z-1$ nor $z+1$ is zero, so both principal
+arguments in the definition of $g$ are defined. Moreover,
+$$
+z-1=|z-1|e^{i\arg(z-1)},
+\qquad
+z+1=|z+1|e^{i\arg(z+1)}.
+$$
+Therefore
+$$
+\begin{aligned}
+g(z)^2
+&=|f(z)|
+e^{i(\arg(z-1)+\arg(z+1))}\\
+&=|z-1||z+1|
+e^{i\arg(z-1)}e^{i\arg(z+1)}\\
+&=(z-1)(z+1)\\
+&=f(z).
+\end{aligned}
+$$
+Thus the displayed formula defines a single value $g(z)$ and its
+square is $f(z)$.
+:::
+
+<1>2. The function $g$ is continuous on
+$$
+\Omega\setminus(1,\infty).
+$$
+
+::: {.proof}
+By Problem 3.1, the principal argument is continuous away from the
+positive real axis. Hence $z\mapsto\arg(z-1)$ can be discontinuous
+only when $z\in(1,\infty)$, while
+$z\mapsto\arg(z+1)$ can be discontinuous only when
+$z\in(-1,\infty)$. Intersecting with
+$\Omega=\mathbb C\setminus[-1,1]$, both possible discontinuity sets
+reduce to $(1,\infty)$. Thus away from that ray both argument terms
+are continuous. Since $f$ is continuous and nonzero on $\Omega$, so
+is $|f|^{1/2}$, and the defining product for $g$ is continuous there.
+:::
+
+<1>3. The function $g$ is continuous at every $x\in(1,\infty)$.
+
+::: {.proof}
+Fix $x>1$ and choose a disk about $x$ small enough that its real points
+all lie in $(1,\infty)$. As $z\to x$ through the upper half-plane,
+both $z-1$ and $z+1$ approach positive real numbers from above, so
+$$
+\arg(z-1)\to0,
+\qquad
+\arg(z+1)\to0.
+$$
+As $z\to x$ through the lower half-plane, both approach the positive
+real axis from below, so
+$$
+\arg(z-1)\to2\pi,
+\qquad
+\arg(z+1)\to2\pi.
+$$
+Consequently the exponential factor in $g$ tends respectively to
+$$
+e^{i(0+0)/2}=1
+\qquad\text{or}\qquad
+e^{i(2\pi+2\pi)/2}=e^{2\pi i}=1.
+$$
+Along the positive real axis itself the two arguments are both $0$.
+Thus for every approach to $x$ the exponential factor tends to $1$.
+Also $|f(z)|^{1/2}\to|f(x)|^{1/2}$, and the defining formula gives
+$g(x)=|f(x)|^{1/2}$. Hence $g(z)\to g(x)$.
+:::
+
+<1>4. The function $g$ is continuous on all of $\Omega$.
+
+::: {.proof}
+Step <1>2 gives continuity away from $(1,\infty)$, and step <1>3 gives
+continuity at every point of that remaining ray.
+:::
+
+<1>5. The function $g$ is analytic on $\Omega$.
+
+::: {.proof}
+Fix $z_0\in\Omega$. By step <1>1,
+$$
+g(z_0)^2=f(z_0)\ne0,
+$$
+so $g(z_0)\ne0$. For $z\ne z_0$, the identity $g^2=f$ gives
+$$
+\frac{g(z)-g(z_0)}{z-z_0}
+=
+\frac{f(z)-f(z_0)}{z-z_0}
+\frac1{g(z)+g(z_0)}.
+$$
+By step <1>4, $g(z)\to g(z_0)$ as $z\to z_0$, and the denominator on
+the right tends to $2g(z_0)\ne0$. Since $f$ is analytic,
+$$
+\lim_{z\to z_0}\frac{g(z)-g(z_0)}{z-z_0}
+=\frac{f'(z_0)}{2g(z_0)}.
+$$
+Thus $g$ is complex differentiable at every point of $\Omega$, hence
+analytic there.
+:::
+
+<1>6. If an analytic function $L$ on $\Omega$ satisfied
+$$
+e^{L(z)}=f(z),
+$$
+then
+$$
+L'(z)=\frac{f'(z)}{f(z)}
+=\frac1{z-1}+\frac1{z+1}.
+$$
+
+::: {.proof}
+Differentiating $e^L=f$ gives
+$$
+L'(z)e^{L(z)}=f'(z).
+$$
+Since $e^{L(z)}=f(z)\ne0$ on $\Omega$,
+$$
+L'(z)=\frac{f'(z)}{f(z)}
+=\frac{2z}{z^2-1}
+=\frac1{z-1}+\frac1{z+1}.
+$$
+:::
+
+<1>7. The function $f$ has no analytic logarithm on $\Omega$.
+
+::: {.proof}
+Suppose such an $L$ existed. Choose $R>1$ and let
+$$
+\gamma(t)=Re^{it},
+\qquad
+0\le t\le2\pi.
+$$
+The circle $\gamma$ lies in $\Omega$. Since $L'$ has the primitive
+$L$ on $\Omega$,
+$$
+\int_\gamma L'(z)\,dz=0.
+$$
+On the other hand, step <1>6 and the Cauchy integral formula give
+$$
+\begin{aligned}
+\int_\gamma L'(z)\,dz
+&=\int_\gamma\frac{dz}{z-1}
+ +\int_\gamma\frac{dz}{z+1}\\
+&=2\pi i+2\pi i\\
+&=4\pi i,
+\end{aligned}
+$$
+because both $1$ and $-1$ lie inside the circle. This contradiction
+shows that no analytic logarithm of $f$ exists on $\Omega$.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 prove part 1, step <1>5 proves part 2, and step <1>7
+proves part 3.
+:::
+:::

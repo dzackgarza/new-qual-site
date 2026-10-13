@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked every Sylow-count possibility, the abelian factors at order 15, and nontriviality and properness of the order-36 action kernel."
 ---
-
 ::: {.problem}
 (a) Prove that all groups of size 15 are solvable.
 
@@ -34,7 +33,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Every group of order $15$ is solvable.
 
@@ -62,7 +61,7 @@ derived-series definition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Every group of order $36$ has a nontrivial proper normal subgroup.
 
@@ -83,6 +82,12 @@ normal subgroup in this case as well. Neither possibility allows
 $G$ to be simple.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b).
 
 :::
 

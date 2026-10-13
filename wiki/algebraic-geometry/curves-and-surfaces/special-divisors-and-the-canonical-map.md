@@ -35,7 +35,7 @@ Every curve of genus $2$ is hyperelliptic, so none has a canonical embedding.
 
 [[PR-CRVHYPCI]]
 
-The canonical curve of genus $4$ is the complete intersection of a quadric and a cubic in $\PP^3$, with $\omega_C\cong\OO_C(2+3-3-1)=\OO_C(1)$.
+In genus $4$ the canonical curve *is* a complete intersection, and the formula $\omega_C \cong \OO_C(\sum d_i - n - 1)$ gives the corresponding computation.
 
 ## Brill--Noether theory
 

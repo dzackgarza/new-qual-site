@@ -10,7 +10,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: The retained extraction places a dot over the symbol b in the boundary word. The remaining edge labels and inverses are legible; the marked b is preserved as b rather than assigning additional mathematical meaning to the OCR dot.
+  note: Direct inspection of page 3 of assets/attachments/topology_2005-2003.pdf confirms that the printed cyclic word is abaca^{-1}c^{-1}. Thus the source itself is inconsistent with its instruction to identify the six edges in pairs: a occurs three times, b once, and c twice.
 ---
 
 ::: {.problem}
@@ -19,5 +19,137 @@ audit:
    \[
    abac a^{-1}c^{-1},
    \]
-   where the source extraction places an otherwise unexplained dot over the $b$. Identify the resulting compact connected surface and justify the answer.
+   and identify the resulting compact connected surface.
+:::
+
+::: {.solution}
+<1>1. The compact connected surfaces are, up to homeomorphism,
+$$
+\boxed{
+S^2,qquad
+\#^g(S^1\times S^1)\ (g\ge1),qquad
+\#^k\mathbb{RP}^2\ (k\ge1).}
+$$
+
+::: {.proof}
+This is the classification theorem for compact connected surfaces.
+The orientable surfaces are the sphere and the connected sums of
+$$
+g
+$$
+tori.
+The nonorientable surfaces are the connected sums of
+$$
+k
+$$
+real projective planes.
+:::
+
+<1>2. A hexagon whose six boundary edges are to be identified in pairs must
+have each edge-pair label occur exactly twice in the boundary word.
+
+::: {.proof}
+Pairwise edge identification partitions the six boundary edges into three
+two-element subsets.
+
+If the usual polygon-word notation labels the two members of one pair by
+the same letter, with an inverse exponent recording reversal of orientation,
+then every label necessarily appears exactly twice.
+:::
+
+<1>3. In the printed source word
+$$
+w
+=
+abaca^{-1}c^{-1},
+$$
+the multiplicities of the labels are
+$$
+\boxed{
+\#a=3,qquad
+\#b=1,qquad
+\#c=2.}
+$$
+
+::: {.proof}
+Reading the six letters in order gives
+$$
+a, b, a, c, a^{-1}, c^{-1}.
+$$
+Thus three boundary edges carry the label
+$$
+a,
+$$
+one carries
+$$
+b,
+$$
+and two carry
+$$
+c.
+$$
+The inverse signs affect orientation, not which label occurs.
+:::
+
+<1>4. Therefore the printed data do not specify a pairing of the six
+boundary edges.
+
+::: {.proof}
+By step <1>2, every label in a valid pair-identification word must occur
+exactly twice.
+Step <1>3 violates this condition for both
+$$
+a
+$$
+and
+$$
+b.
+$$
+
+In particular, one cannot partition the three
+$$
+a
+$$
+-edges into pairs, and the lone
+$$
+b
+$$
+-edge has no partner.
+:::
+
+<1>5. Consequently, no quotient surface is determined by the problem as
+printed.
+
+::: {.proof}
+The requested quotient depends on an equivalence relation pairing boundary
+edges.
+Step <1>4 shows that the printed labeling does not define such an
+equivalence relation.
+
+Different corrections of the apparent typo can lead to different polygon
+words and hence to different quotient surfaces.
+Therefore a particular compact connected surface cannot be inferred
+uniquely from the retained source.
+:::
+
+<1>6. Hence the complete answer to the printed problem is:
+$$
+\boxed{
+\text{Part (1) is the standard surface-classification list above, while
+part (2) is not well-posed as printed.}}
+$$
+
+::: {.proof}
+Step <1>1 answers the classification request.
+Steps <1>2--<1>5 prove that the source's boundary word cannot encode the
+claimed pairwise edge identification, so there is no mathematically
+determined surface to classify without an external correction to the
+source.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the complete mathematically valid disposition of both parts.
+:::
 :::

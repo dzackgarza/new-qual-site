@@ -24,12 +24,19 @@ audit:
   date: 2026-09-10
   note: "Checked nontriviality of the root action from the fixed-field property, simplicity of A_n for n at least five, and the strict factorial inequality excluding every smaller degree."
 ---
-
 ::: {.problem}
 Suppose $K/F$ is a Galois extension and that $\mathrm{Gal}(K/F)$ is isomorphic to $A_n$, with $n \geq 5$.
 Suppose $\alpha \in K\setminus F$.
 Prove that the minimal polynomial of $\alpha$ over $F$ has degree at least $n$.
 (You may use whatever group theoretic facts you know about $A_n$ without proof.)
+:::
+
+::: {.remark}
+The exclusion $\alpha\notin F$ is necessary: every element
+of $F$ has a linear minimal polynomial over $F$.
+The coefficient field in the conclusion must also be $F$,
+not $K$; over $K$, the minimal polynomial of $\alpha\in K$
+is always $T-\alpha$.
 :::
 
 ::: {.solution}
@@ -66,7 +73,8 @@ The homomorphism $\rho$ is injective.
 
 ::: pf-proof
 
-For $n\geq5$, the group $A_n$ is simple [@DF04]. Hence
+For $n\geq5$, the group $A_n$ is simple [@DF04], a
+group-theoretic fact permitted in the question. Hence
 $G\cong A_n$ has no normal subgroups other than $1$ and
 $G$. The kernel of a homomorphism is normal, and step
 [](#s1){.pf-ref} excludes the latter possibility. Therefore
@@ -76,7 +84,7 @@ $\ker\rho=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 One has $d\geq n$.
 
@@ -88,10 +96,17 @@ $$
 d!\leq(n-1)!<\frac n2(n-1)!=\frac{n!}{2},
 $$
 where strictness follows from $n\geq5>2$.
-This contradicts $n!/2\leq d!$. Thus $d\geq n$,
+This contradicts the previous inequality. Thus $d\geq n$,
 as required.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required lower bound on the degree of the minimal
+polynomial.
 
 :::
 

@@ -24,3 +24,103 @@ f(z)=g(z)^2
 \]
 for every $z\in\mathbb C$.
 :::
+
+::: {.solution}
+Let
+$$
+Z\coloneqq\{z\in\CC:f(z)=0\},
+\qquad
+\Omega\coloneqq\CC\setminus Z.
+$$
+Choose $z_0\in\Omega$ and choose $c\in\CC$ with
+$$
+c^2=f(z_0).
+$$
+
+<1>1. For every closed piecewise smooth curve $\gamma$ in $\Omega$,
+$$
+\frac12\int_\gamma\frac{f'(z)}{f(z)}\,dz
+\in2\pi i\ZZ.
+$$
+
+::: {.proof}
+By the argument principle,
+$$
+\frac1{2\pi i}
+\int_\gamma\frac{f'}f\,dz
+=\sum_{a\in Z}
+m(a)\operatorname{Ind}(\gamma,a),
+$$
+where $m(a)$ is the multiplicity of the zero $a$. Only finitely many terms are nonzero for a fixed compact curve. By hypothesis every $m(a)$ is even, so the integer on the right is even. Therefore half of the integral is an integral multiple of $2\pi i$.
+:::
+
+<1>2. For $z\in\Omega$, define
+$$
+g(z)
+\coloneqq
+c\exp\!\left(
+\frac12\int_{z_0}^z\frac{f'(\zeta)}{f(\zeta)}\,d\zeta
+\right),
+$$
+where the integral is taken along any path in $\Omega$ from $z_0$ to $z$. Then $g$ is well-defined and holomorphic on $\Omega$.
+
+::: {.proof}
+If two paths from $z_0$ to $z$ are chosen, their difference is a closed curve in $\Omega$. By step <1>1, the difference between the corresponding half-integrals is in $2\pi i\ZZ$, so their exponentials agree. Thus $g$ is well-defined.
+
+Locally, on a simply connected disk contained in $\Omega$, the integral has a holomorphic primitive. Hence the displayed formula is locally the exponential of a holomorphic function and is therefore holomorphic.
+:::
+
+<1>3. On $\Omega$,
+$$
+g(z)^2=f(z).
+$$
+
+::: {.proof}
+By construction,
+$$
+\frac{g'(z)}{g(z)}
+=\frac12\frac{f'(z)}{f(z)}.
+$$
+Therefore
+$$
+\frac{d}{dz}\left(\frac{g(z)^2}{f(z)}\right)=0
+$$
+on the connected set $\Omega$. At $z=z_0$,
+$$
+\frac{g(z_0)^2}{f(z_0)}
+=\frac{c^2}{f(z_0)}=1.
+$$
+Hence $g^2/f\equiv1$ on $\Omega$.
+:::
+
+<1>4. The function $g$ extends holomorphically across every point of $Z$.
+
+::: {.proof}
+Let $a\in Z$ have multiplicity $2m$. On a sufficiently small disk about $a$,
+$$
+f(z)=(z-a)^{2m}h(z),
+$$
+where $h$ is holomorphic and nonvanishing. By step <1>3, on the punctured disk,
+$$
+|g(z)|^2
+=|f(z)|
+=|z-a|^{2m}|h(z)|.
+$$
+Since $h$ is bounded near $a$, the function $g$ is bounded near $a$ and in fact tends to $0$ there. By Riemann's removable singularity theorem, $g$ extends holomorphically across $a$. This applies to every zero.
+:::
+
+<1>5. The extended function, still denoted $g$, is entire and satisfies
+$$
+\boxed{f(z)=g(z)^2\qquad(z\in\CC)}.
+$$
+
+::: {.proof}
+Step <1>4 extends $g$ holomorphically over all zeros, so $g$ is entire. The identity $g^2=f$ holds on the dense open set $\Omega$ by step <1>3 and therefore, by continuity, also at every zero of $f$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required entire square root.
+:::
+:::

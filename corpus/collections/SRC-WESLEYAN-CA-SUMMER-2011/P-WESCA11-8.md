@@ -22,3 +22,158 @@ z^4-6z+3=0
 \]
 have absolute value strictly between $1$ and $2$?
 :::
+
+::: {.solution}
+Let
+\[
+P(z)=z^4-6z+3.
+\]
+
+<1>1. The polynomial $P$ has exactly one zero in the disk
+\[
+|z|<1.
+\]
+
+::: {.proof}
+On the circle
+\[
+|z|=1,
+\]
+write
+\[
+P(z)
+=
+-6z+(z^4+3).
+\]
+Then
+\[
+|-6z|
+=
+6,
+\]
+while
+\[
+|z^4+3|
+\le
+|z|^4+3
+=
+4.
+\]
+Thus
+\[
+|z^4+3|
+<
+|-6z|
+\]
+on the entire unit circle.
+
+By Rouché's theorem, $P$ and
+\[
+-6z
+\]
+have the same number of zeros in
+\[
+|z|<1,
+\]
+counted with multiplicity. The latter has exactly one zero there, namely
+\[
+z=0.
+\]
+Hence $P$ has exactly one zero in the unit disk.
+:::
+
+<1>2. The polynomial $P$ has exactly four zeros in the disk
+\[
+|z|<2.
+\]
+
+::: {.proof}
+On the circle
+\[
+|z|=2,
+\]
+write
+\[
+P(z)
+=
+z^4+(-6z+3).
+\]
+Then
+\[
+|z^4|
+=
+16,
+\]
+while
+\[
+|-6z+3|
+\le
+6|z|+3
+=
+15.
+\]
+Thus
+\[
+|-6z+3|
+<
+|z^4|
+\]
+on the entire circle.
+
+By Rouché's theorem, $P$ and
+\[
+z^4
+\]
+have the same number of zeros in
+\[
+|z|<2,
+\]
+counted with multiplicity. The polynomial $z^4$ has four zeros there,
+counted with multiplicity. Therefore $P$ has four zeros in the disk.
+:::
+
+<1>3. The polynomial has no zero on either boundary circle
+\[
+|z|=1
+\qquad\text{or}\qquad
+|z|=2.
+\]
+
+::: {.proof}
+The strict Rouché inequalities in steps <1>1 and <1>2 imply that on each
+boundary circle the dominant term has strictly larger modulus than the
+remaining terms. Hence their sum cannot vanish there.
+:::
+
+<1>4. Exactly
+\[
+\boxed{3}
+\]
+roots of $P$ have modulus strictly between $1$ and $2$.
+
+::: {.proof}
+Step <1>2 gives four zeros in
+\[
+|z|<2,
+\]
+and step <1>1 gives one zero in
+\[
+|z|<1.
+\]
+By step <1>3, no zero lies on either boundary circle. Therefore the annulus
+\[
+1<|z|<2
+\]
+contains
+\[
+4-1=3
+\]
+zeros, counted with multiplicity.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested count.
+:::
+:::

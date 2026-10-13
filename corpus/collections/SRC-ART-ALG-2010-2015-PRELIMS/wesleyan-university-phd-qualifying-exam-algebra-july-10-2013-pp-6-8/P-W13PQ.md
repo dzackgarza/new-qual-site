@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the full Sylow statement, both unique-subgroup deductions, commutation via the intersection, and the exact order of the cyclic generator."
 ---
-
 ::: {.problem}
 a. State all parts of Sylow's Theorem.
 
@@ -35,7 +34,7 @@ b. Show that if $0 < p < q$ are primes and $p \nmid q - 1$, then any group of or
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Sylow's theorems have the following form.
 
@@ -53,7 +52,7 @@ In particular, $S$ is normal exactly when $n_\ell=1$ [@DF04].
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Under the hypotheses of part (b), both Sylow subgroups
 of $G$ are normal.
@@ -72,7 +71,7 @@ normality because conjugation preserves subgroup orders.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The group $G$ is cyclic of order $pq$.
 
@@ -93,6 +92,12 @@ divide $d$, that is, exactly when $pq\mid d$. Hence $(x,y)$
 has order $pq$, and its image generates $G$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 

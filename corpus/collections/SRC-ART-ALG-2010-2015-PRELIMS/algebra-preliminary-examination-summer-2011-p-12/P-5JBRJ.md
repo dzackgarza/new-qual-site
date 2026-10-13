@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked the abelian-extension obstruction, splitting in the root field of size q^n, the transposition-generation obstruction, and explicit permutations of the three pair partitions."
 ---
-
 ::: {.problem}
 For each of the following statements, determine if it is true or false.
 Explain your answers.
@@ -48,7 +47,7 @@ The answers, in order, are false, true, false, true, and true.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The assertion in part (a) is false.
 
@@ -75,7 +74,7 @@ of a cyclotomic extension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The assertion in part (b) is true.
 
@@ -103,7 +102,7 @@ and contains $\mathbb F(a)=E$, so equals $E$ and has degree $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The assertion in part (c) is false.
 
@@ -149,7 +148,7 @@ Thus $\psi$ is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 The assertion in part (e) is true.
 
@@ -161,6 +160,12 @@ step [](#s4){.pf-ref}. The orbit of $A$ is all of $X$, proving
 transitivity on this three-element set.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} answer parts (a)--(e), respectively.
 
 :::
 

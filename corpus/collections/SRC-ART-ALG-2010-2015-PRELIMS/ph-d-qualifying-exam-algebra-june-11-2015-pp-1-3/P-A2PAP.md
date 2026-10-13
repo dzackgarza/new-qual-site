@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the explicit quotient-to-image map and proved both equal cardinality and elementary-abelian structure before inferring the second isomorphism."
 ---
-
 ::: {.problem}
 Let $A$ be an abelian group (we will write the group multiplicatively in this problem).
 For a prime number $p$, define the following subgroups of $A$: $$A^p := \{a^p : a \in A\}, \qquad A[p] := \{a \in A : a^p = 1\}.$$
@@ -38,7 +37,7 @@ b. Prove: If $A$ is finite, then $A/A^p \cong A[p]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The assertion in part (a) is true for every abelian group $A$.
 
@@ -55,8 +54,8 @@ $$
 It is well-defined: changing $a$ to $ac$ with $c^p=1$ does not
 change $a^p$. It is a homomorphism and is onto by the definition
 of $A^p$. If $a^p=b^p$, then $(b^{-1}a)^p=1$, so
-$aA[p]=bA[p]$; thus it is also injective, and
-$A/A[p]\cong A^p$.
+$aA[p]=bA[p]$; thus it is also injective. This proves the first
+isomorphism without any finiteness assumption.
 
 :::
 
@@ -78,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Under the same finiteness assumption, the groups in part (b)
 are isomorphic.
@@ -107,6 +106,12 @@ isomorphism and hence the asserted group isomorphism. This also
 covers the trivial groups, with dimension zero.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 

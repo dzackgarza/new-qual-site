@@ -40,14 +40,14 @@ On a non-simplicial fan the index can be infinite: the cone over a square, whose
 
 [[PR-TORPOS]]
 
-For $D=\sum a_\rho D_\rho$ Cartier on a complete $X_\Sigma$, $P_D$ is cut out by the inequalities $\inner{m}{u_\rho}\geq-a_\rho$.
-If the Cartier data $m_\sigma$ are distinct vertices of $P_D$, one for each maximal cone, then $D$ is ample; if every $m_\sigma$ lies in $P_D$ but two maximal cones have the same $m_\sigma$, then $D$ is base-point free and not ample.
+For $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inner{m}{u_\rho} \geq -a_\rho$ and compare its vertices with the maximal cones.
+If they are, $D$ is ample and $h^0$ is the number of lattice points in $P_D$; if two maximal cones share a vertex, the support function failed to crease and $D$ is at best base point free.
 
 [[D-FULNORMPOLY]]
 
 [[FE-FULAVA]]
 
-Very ampleness depends on the lattice points of $P_D$ as well as on $\Sigma$: for the lattice simplex $P$ with vertices $(0,0,0)$, $(0,1,1)$, $(1,0,1)$, $(1,1,0)$, the divisor $D_P$ is ample, and its four lattice points give a finite morphism $X_P\to\PP^3$ of degree $2$.
+Very ampleness is not visible from the fan alone; [[FE-FULAVA]] gives a strictly convex support function and an ample divisor whose associated map is two-to-one rather than an embedding.
 
 ## Fano and Calabi-Yau
 
@@ -56,4 +56,4 @@ Very ampleness depends on the lattice points of $P_D$ as well as on $\Sigma$: fo
 ![The five reflexive polygons of the toric del Pezzo surfaces](/assets/algebraic-geometry/toric/reflexive-polygons-of-toric-del-pezzo-surfaces.png)
 
 Reflexivity is also where toric geometry meets mirror symmetry: a reflexive polytope $P$ gives a Calabi-Yau anticanonical hypersurface in $X_P$, and $P^\circ$ gives its mirror.
-There are $16$ reflexive polygons and $4319$ reflexive polytopes in dimension three, up to lattice isomorphism.
+This mirror construction motivates the classification and tabulation of the $16$ reflexive polygons and the $4319$ reflexive polytopes in dimension three.

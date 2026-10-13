@@ -17,59 +17,98 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 To clarify Remark 6.6: A family of functions $\mathcal F\subset C(K,\mathbb R^m)$ mapping a set $K\subset\mathbb R^n$ into $\mathbb R^m$ is pointwise equicontinuous on $K$ provided for every $x\in K$ and $\epsilon>0$ there exists some $\delta>0$ (which may depend on $x$) such that $\|f(x)-f(y)\|<\epsilon$ for all $f\in\mathcal F$ and $y\in K$ with $\|x-y\|<\delta$.
 The family $\mathcal F$ is uniformly equicontinuous if for every $\epsilon>0$ there exists some $\delta>0$ such that $\|f(x)-f(y)\|<\epsilon$ for all $f\in\mathcal F$ and $x,y\in K$ with $\|x-y\|<\delta$.
 Prove that these definitions are equivalent when $K$ is compact.
 :::
 
-:::: {.solution}
-**Goal:** Prove pointwise equicontinuity and uniform equicontinuity of a family $\mathcal F \subseteq C(K;\mathbb R^m)$ are equivalent when $K$ is compact.
+::: {.solution}
 
 ::: pf
 
-::: pf-step
-Uniform equicontinuity implies pointwise equicontinuity.
-Proof: if $\delta$ works for all $x, y$ simultaneously, then in particular it works for all $y$ with $y$ near a fixed $x$; so the pointwise condition holds with the same $\delta$ (independent of $x$, hence certainly allowed to depend on $x$).
-:::
+::: {.pf-step #s1}
 
-::: pf-step
-Pointwise equicontinuity implies uniform equicontinuity.
+Uniform equicontinuity implies pointwise equicontinuity.
 
 ::: pf-proof
 
-::: pf-step
-Fix $\varepsilon > 0$.
-For each $x \in K$ choose $\delta_x > 0$ such that $\|x - y\| < \delta_x \Rightarrow \|f(x) - f(y)\| < \varepsilon/2$ for all $f \in \mathcal F$.
-Proof: the pointwise equicontinuity hypothesis at $x$ with $\varepsilon/2$ in place of $\varepsilon$.
+Fix $x\in K$ and $\varepsilon>0$. A radius $\delta>0$ satisfying the uniform condition works in particular for every $y\in K$ within $\delta$ of this fixed $x$, uniformly over $f\in\mathcal F$.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $K$ is compact, pointwise equicontinuity implies uniform equicontinuity.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+For each $\varepsilon>0$ and each $z\in K$, there exists $r_z>0$ such that
+\[
+\|f(z)-f(w)\|<\varepsilon/2
+\quad\text{for all }f\in\mathcal F\text{ and }w\in K\text{ with }\|z-w\|<r_z.
+\]
+
+::: pf-proof
+
+Apply pointwise equicontinuity at $z$ with tolerance $\varepsilon/2$.
+
+:::
+
 :::
 
 ::: {.pf-step #s2-2}
-The balls $B(x, \delta_x/2)$, $x \in K$, cover $K$.
-Proof: $x \in B(x, \delta_x/2)$ for each $x$.
+
+If $K\ne\varnothing$, there exist $z_1,\ldots,z_N\in K$ such that
+\[
+K\subseteq\bigcup_{i=1}^N B(z_i,r_{z_i}/2).
+\]
+
+::: pf-proof
+
+The balls $B(z,r_z/2)$ for $z\in K$ form an open cover of $K$. Compactness supplies a finite subcover. If $K$ is empty, uniform equicontinuity is vacuous.
+
+:::
+
 :::
 
 ::: {.pf-step #s2-3}
-$K$ is covered by finitely many of them: $K \subseteq \bigcup_{i=1}^n B(x_i, \delta_{x_i}/2)$.
-Proof: compactness of $K$ applied to the open cover of step [](#s2-2){.pf-ref}.
+
+For $K\ne\varnothing$, the number $\delta:=\min_{1\le i\le N}r_{z_i}/2>0$ satisfies the uniform equicontinuity condition for tolerance $\varepsilon$.
+
+::: pf-proof
+
+Fix $x,y\in K$ with $\|x-y\|<\delta$. By step [](#s2-2){.pf-ref}, choose $i$ such that $\|x-z_i\|<r_{z_i}/2$. Then
+\[
+\|y-z_i\|\leq\|y-x\|+\|x-z_i\|
+<\delta+r_{z_i}/2\leq r_{z_i}.
+\]
+Step [](#s2-1){.pf-ref} applied at $z_i$ gives $\|f(x)-f(z_i)\|<\varepsilon/2$ and $\|f(y)-f(z_i)\|<\varepsilon/2$ for every $f\in\mathcal F$. The triangle inequality gives $\|f(x)-f(y)\|<\varepsilon$. The radius $\delta$ depends only on $\varepsilon$, not on $x,y$ or $f$.
+
 :::
 
-::: {.pf-step #s2-4}
-Set $\delta := \min_i \delta_{x_i}/2 > 0$.
-If $\|x - y\| < \delta$, then for every $f \in \mathcal F$, $\|f(x) - f(y)\| < \varepsilon$.
-Proof: $x$ lies in some $B(x_i, \delta_{x_i}/2)$ by step [](#s2-3){.pf-ref}, so $\|x - x_i\| < \delta_{x_i}/2$; then $\|y - x_i\| \le \|y - x\| + \|x - x_i\| < \delta + \delta_{x_i}/2 \le \delta_{x_i}/2 + \delta_{x_i}/2 = \delta_{x_i}$ since $\delta \le \delta_{x_i}/2$.
-Both $x$ and $y$ are within $\delta_{x_i}$ of $x_i$, so $\|f(x) - f(x_i)\| < \varepsilon/2$ and $\|f(y) - f(x_i)\| < \varepsilon/2$, hence $\|f(x) - f(y)\| \le \|f(x)-f(x_i)\| + \|f(y)-f(x_i)\| < \varepsilon$ by the triangle inequality.
-This holds for all $f \in \mathcal F$ simultaneously, and $\delta$ is independent of $x, y, f$.
 :::
 
 ::: pf-qed
-Proof: step [](#s2-4){.pf-ref} is uniform equicontinuity.
-:::
+
+Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} prove uniform equicontinuity for nonempty $K$, and the empty case is immediate.
 
 :::
 
 :::
 
 :::
-::::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} establish both implications.
+
+:::
+
+:::
+
+:::

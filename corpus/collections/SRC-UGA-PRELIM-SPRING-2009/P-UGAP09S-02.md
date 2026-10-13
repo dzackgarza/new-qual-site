@@ -21,3 +21,72 @@ f(x)=x+\frac1x
 \]
 is continuous at $x=3$.
 :::
+
+::: {.solution}
+<1>1. If
+\[
+|x-3|<1,
+\]
+then
+\[
+\left|f(x)-f(3)\right|
+\le
+\frac76|x-3|.
+\]
+
+::: {.proof}
+The inequality $|x-3|<1$ implies
+\[
+2<x<4,
+\]
+so in particular $|x|>2$. Since
+\[
+f(3)=3+\frac13=\frac{10}{3},
+\]
+one has
+\[
+\begin{aligned}
+\left|f(x)-f(3)\right|
+&=
+\left|x-3+\frac1x-\frac13\right|\\
+&\le
+|x-3|
++\left|\frac{3-x}{3x}\right|\\
+&=
+|x-3|
+\left(1+\frac1{3|x|}\right)\\
+&\le
+|x-3|
+\left(1+\frac16\right)
+=
+\frac76|x-3|.
+\end{aligned}
+\]
+:::
+
+<1>2. Given $\varepsilon>0$, choose
+\[
+\boxed{\delta=\min\left\{1,\frac{6\varepsilon}{7}\right\}}.
+\]
+
+::: {.proof}
+If $|x-3|<\delta$, then $|x-3|<1$, so step <1>1 applies, and
+\[
+\left|f(x)-f(3)\right|
+\le
+\frac76|x-3|
+<
+\frac76\delta
+\le
+\varepsilon.
+\]
+Thus the $\varepsilon$-$\delta$ condition for continuity at $3$ is satisfied.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves directly from the definition that $f$ is continuous at
+$x=3$.
+:::
+:::

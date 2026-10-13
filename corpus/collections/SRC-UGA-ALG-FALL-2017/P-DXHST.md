@@ -18,7 +18,6 @@ audit:
   by: Gemini 3.7 Flash
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Suppose the group $G$ acts on the non-empty set $A$.
 Assume this action is **faithful** ($\ker(G \to \operatorname{Sym}(A)) = \{1\}$) and **transitive** (for all $a, b \in A$, there exists $g \in G$ such that $g \cdot a = b$).
@@ -32,119 +31,74 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove that the kernel of a transitive action is the normal core $\bigcap_{g \in G} g G_a g^{-1} = \{1\}$, and show that transitive faithful abelian actions are regular ($G_a = \{1\}$ and $|G| = |A|$).
+Let $\rho:G\to\operatorname{Sym}(A)$ denote the action homomorphism and fix $a\in A$.
 
 ::: pf
 
-::: pf-step
-Part (a): Proof that the Normal Core $\bigcap_{\sigma \in G} \sigma G_a \sigma^{-1} = \{1\}$:
+::: {.pf-step #s1}
+
+The kernel of $\rho$ is the normal core of $G_a$:
+\[
+\ker\rho=\bigcap_{\sigma\in G}\sigma G_a\sigma^{-1}.
+\]
 
 ::: pf-proof
 
-::: pf-step
-The action of $G$ on $A$ is given by a group homomorphism $\rho: G \to \operatorname{Sym}(A)$, where $\rho(g)(x) = g \cdot x$.
-:::
-
-::: pf-step
-The kernel of the action is defined as:
-$$\ker(\rho) = \{ g \in G \mid g \cdot x = x \text{ for all } x \in A \} = \bigcap_{x \in A} G_x.$$
-:::
-
-::: pf-step
-Since the action is transitive, every element $x \in A$ can be written as $x = \sigma \cdot a$ for some $\sigma \in G$.
-:::
-
-::: pf-step
-The stabilizer of $x = \sigma \cdot a$ is the conjugate subgroup:
-$$G_x = G_{\sigma \cdot a} = \sigma G_a \sigma^{-1}.$$
-:::
-
-::: pf-step
-Therefore, the intersection of all stabilizers over all points in $A$ is:
-$$\bigcap_{x \in A} G_x = \bigcap_{\sigma \in G} \sigma G_a \sigma^{-1}.$$
-:::
-
-::: pf-step
-Since the action is faithful by hypothesis, $\ker(\rho) = \{1\}$.
-:::
-
-::: pf-step
-Thus:
-$$\bigcap_{\sigma \in G} \sigma G_a \sigma^{-1} = \ker(\rho) = \{1\}.$$
-:::
+By definition, $\ker\rho=\bigcap_{b\in A}G_b$. Transitivity supplies, for every $b\in A$, an element $\sigma\in G$ with $b=\sigma a$. The stabilizer identity $G_{\sigma a}=\sigma G_a\sigma^{-1}$ follows because $g(\sigma a)=\sigma a$ exactly when $\sigma^{-1}g\sigma$ fixes $a$. Substitution into the intersection proves the identity.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): Faithful Transitive Actions of Abelian Groups are Regular:
+::: {.pf-step #s2}
+
+The intersection in part (a) is trivial.
 
 ::: pf-proof
 
-::: pf-step
-Now assume that $G$ is **abelian**.
-:::
-
-::: pf-step
-Since $G$ is abelian, every subgroup of $G$ is normal.
-:::
-
-::: pf-step
-In particular, the stabilizer subgroup $G_a$ is normal in $G$:
-$$\sigma G_a \sigma^{-1} = G_a \quad \text{for all } \sigma \in G.$$
-:::
-
-::: pf-step
-Substituting this into the intersection formula from Part (a):
-$$\bigcap_{\sigma \in G} \sigma G_a \sigma^{-1} = \bigcap_{\sigma \in G} G_a = G_a.$$
-:::
-
-::: pf-step
-By Part (a), this intersection is trivial:
-$$G_a = \{1\}.$$
-:::
-
-::: pf-step
-By the **Orbit-Stabilizer Theorem**, since the action is transitive, the single orbit is the entire set $A = G \cdot a$:
-$$|A| = [G : G_a] = \frac{|G|}{|G_a|} = \frac{|G|}{1} = |G|.$$
-:::
-
-::: pf-step
-Thus $|G| = |A|$ (the action is free and transitive, i.e., **simply transitive / regular**).
-:::
+Faithfulness means $\ker\rho=\{1\}$. Apply step [](#s1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
-Application to Abelian Transitive Subgroups of $S_n$:
+::: {.pf-step #s3}
+
+If $G$ is abelian, then the orbit map
+\[
+\theta:G\longrightarrow A,\qquad g\longmapsto ga
+\]
+is a bijection.
 
 ::: pf-proof
 
-::: pf-step
-Let $G \le S_n$ be an abelian transitive subgroup acting on $A = \{1, 2, \dots, n\}$.
-:::
-
-::: pf-step
-Since $G$ is a subgroup of $S_n = \operatorname{Sym}(A)$, the permutation action of $G$ on $A$ is faithful by definition ($\rho: G \hookrightarrow S_n$ is an inclusion).
-:::
-
-::: pf-step
-Since $G$ is abelian and transitive, by Step 2 we have:
-$$|G| = |A| = n.$$
-:::
+Every subgroup of an abelian group is normal, so every conjugate of $G_a$ equals $G_a$. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give $G_a=\{1\}$. Transitivity makes $\theta$ surjective. If $\theta(g)=\theta(h)$, then $h^{-1}g\in G_a=\{1\}$, and hence $g=h$. Thus $\theta$ is injective.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-(a) $\bigcap_{\sigma \in G} \sigma G_a \sigma^{-1} = \ker(\rho) = \{1\}$;
-(b) $G_a = \{1\} \implies |G| = |A| = n$.
+::: {.pf-step #s4}
+
+The conclusions of part (b) are
+\[
+\boxed{|G|=|A|,\qquad\text{and every abelian transitive subgroup of }S_n\text{ has order }n.}
+\]
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives a bijection $G\cong A$, so their cardinalities agree, including when $G$ and $A$ are infinite. For an abelian transitive subgroup $H\leq S_n$, its natural action on $\{1,\ldots,n\}$ is faithful because the homomorphism $H\hookrightarrow S_n$ is injective. The same argument gives $|H|=n$.
+
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

@@ -19,3 +19,110 @@ audit:
 ::: {.problem}
 Prove that there is no function \(f\) analytic on the punctured disk \(\mathbb D\setminus\{0\}\) such that \(f'\) has a simple pole at \(0\).
 :::
+
+::: {.solution}
+<1>1. Since $f$ is analytic on the punctured disk, it has a Laurent expansion
+$$
+f(z)
+=
+\sum_{n=-\infty}^{\infty}
+a_nz^n
+$$
+valid for
+$$
+0<|z|<1.
+$$
+
+::: {.proof}
+The punctured disk is an annulus centered at the origin, so Laurent's theorem applies.
+:::
+
+<1>2. Differentiating term by term gives
+$$
+f'(z)
+=
+\sum_{n=-\infty}^{\infty}
+n a_n z^{n-1}.
+$$
+
+::: {.proof}
+Laurent series may be differentiated term by term on every compact subannulus
+$$
+r\le|z|\le R
+$$
+with
+$$
+0<r<R<1.
+$$
+The differentiated series therefore represents $f'$ on the punctured disk.
+:::
+
+<1>3. The coefficient of
+$$
+z^{-1}
+$$
+in the Laurent expansion of $f'$ is zero.
+
+::: {.proof}
+A term
+$$
+z^{-1}
+$$
+in
+$$
+n a_n z^{n-1}
+$$
+would require
+$$
+n-1=-1,
+$$
+hence
+$$
+n=0.
+$$
+But the corresponding coefficient is
+$$
+n a_n
+=
+0\cdot a_0
+=0.
+$$
+Therefore
+$$
+\operatorname{Res}_{z=0}f'=0.
+$$
+:::
+
+<1>4. A function with a simple pole at $0$ has a nonzero
+$$
+z^{-1}
+$$
+coefficient in its Laurent expansion.
+
+::: {.proof}
+By definition, if a meromorphic function $g$ has a simple pole at $0$, then its Laurent expansion has the form
+$$
+g(z)
+=
+\frac{c_{-1}}z
++c_0+c_1z+\cdots,
+$$
+with
+$$
+c_{-1}\ne0.
+$$
+Equivalently, its residue at the pole is nonzero.
+:::
+
+<1>5. Therefore $f'$ cannot have a simple pole at $0$.
+
+::: {.proof}
+Step <1>3 says that the $z^{-1}$ coefficient of $f'$ is zero. Step <1>4 says that a simple pole would require that coefficient to be nonzero. These conditions are incompatible.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves that no such analytic function $f$ exists.
+:::
+:::

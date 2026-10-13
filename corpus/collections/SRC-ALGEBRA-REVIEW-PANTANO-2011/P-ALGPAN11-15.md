@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-15
 kind: problem
-title: Zero divisors among $\CC$, $\ZZ/11$, $C([0,1],\RR)$, $\QQ(\sqrt2)$, and $\RR[x]$
+title: Which listed ring has zero divisors
 classification:
   areas:
   - algebra
@@ -22,7 +22,6 @@ audit:
   date: 2026-09-16
   note: Replaced the misattached Euclidean-algorithm scan (test 1, problem 33) with a transcription of test 1, problem 40 from ALGEBRA_REVIEW1.pdf page 5.
 ---
-
 ::: {.problem}
 For which of the following rings is it possible for the product of two nonzero elements to be zero?
 
@@ -42,7 +41,7 @@ The answer is $\boxed{\text{(C)}}$, the ring $C([0,1],\mathbb R)$ of continuous 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Choice (C) has nonzero zero divisors.
 
@@ -64,7 +63,7 @@ fg=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The other listed rings are integral domains.
 
@@ -74,6 +73,12 @@ $\mathbb C$ is a field; $\mathbb Z/11$ is a field because $11$ is prime; $\mathb
 None of them has nonzero zero divisors.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} shows that choice (C) has nonzero zero divisors, and step [](#s2){.pf-ref} rules out every other choice.
 
 :::
 

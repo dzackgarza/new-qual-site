@@ -25,8 +25,6 @@ sections:
       - ref: D-P6XOT
       - ref: FT-PUVIQ
       - ref: T-V7JRG
-      - ref: FF-QELG7
-      - ref: T-QSTRJ
       - ref: PR-UTFSY
       - ref: D-JX3YC
       - ref: FF-SOE5P
@@ -111,7 +109,6 @@ sections:
       - ref: D-WYC7C
       - ref: D-3T6O2
       - ref: D-KGGWK
-      - ref: FD-IGEOR
       - ref: FD-XRRNZ
       - ref: T-QYDVH
       - ref: PR-GSDKO
@@ -121,14 +118,11 @@ sections:
       - ref: D-PX64W
       - ref: D-NK7G7
       - ref: D-OZ2RR
-      - ref: C-A6UAR
-      - ref: FD-L2TEC
+      - ref: C-O7CP3
       - ref: T-4CDTT
-      - ref: L-DJKXL
       - ref: L-354HC
       - ref: PR-PYYRK
-      - ref: C-CM7ZS
-      - ref: FF-OL75S
+      - ref: C-HE5SL
   - slug: sylow-theory
     title: Sylow theory
     parent: group-actions-and-counting
@@ -176,16 +170,13 @@ sections:
     items:
       - ref: D-6BTFJ
       - ref: D-BZ3KD
-      - ref: FD-PIVQZ
       - ref: FD-GHDF2
       - ref: FF-6MNV6
       - ref: D-TMME3
-      - ref: FD-X4DBP
       - ref: PR-JY4PV
       - ref: D-7UIPO
       - ref: PR-5PI25
       - ref: D-T2NZ4
-      - ref: FD-2UWAQ
       - ref: PR-5FGA7
       - ref: T-EN5H4
       - ref: PR-2JG3F
@@ -214,7 +205,6 @@ sections:
     items:
       - ref: D-KM2DV
       - ref: D-FYX4I
-      - ref: FD-PLAEO
       - ref: T-OSJ5S
       - ref: D-BQ4BQ
       - ref: D-W2QAA
@@ -224,7 +214,6 @@ sections:
       - ref: PR-2ZOAV
       - ref: D-5NV3N
       - ref: D-BGNME
-      - ref: D-D7L4X
       - ref: D-XEDSI
       - ref: D-53JVH
       - ref: T-4INET
@@ -301,7 +290,6 @@ sections:
       - ref: PR-PZZUO
       - ref: D-QQIQZ
       - ref: D-4I3SL
-      - ref: FD-S62UB
       - ref: D-QJ3QL
       - ref: D-7O2CH
       - ref: D-UI6CU
@@ -354,9 +342,7 @@ sections:
       - ref: D-AWSKI
       - ref: PR-LX7GH
       - ref: D-INULL
-      - ref: FD-25SUQ
       - ref: D-NKRGN
-      - ref: FD-GXXBV
       - ref: D-HTIL5
       - ref: PR-LLBRB
       - ref: PR-GEHJF
@@ -364,12 +350,9 @@ sections:
       - ref: FD-CI4NB
       - ref: FD-24RNF
       - ref: D-BVMTZ
-      - ref: FD-GHY34
-      - ref: FT-2P5VV
       - ref: T-CF6S3
       - ref: D-4VC6X
       - ref: T-JEZZY
-      - ref: FT-OXN3Y
       - ref: D-W3DSO
       - ref: D-FK47C
       - ref: FF-HK72Z
@@ -421,7 +404,6 @@ sections:
       - ref: D-C2IM4
       - ref: D-JLCOX
       - ref: D-PQHHJ
-      - ref: FF-U4FHF
       - ref: D-2IO6Q
       - ref: FF-7U6UY
       - ref: FF-QWCKR
@@ -434,7 +416,7 @@ sections:
       - ref: FF-6K35J
       - ref: FF-X6C7Z
       - ref: FF-HJGPV
-      - ref: FF-IBDAT
+      - ref: PR-RJ3P7
       - ref: D-DU4UQ
   - slug: modules
     title: Modules
@@ -463,17 +445,14 @@ sections:
       - ref: PR-TAPZF
       - ref: FD-SK4ON
       - ref: D-HY7UU
-      - ref: FD-S2W5E
       - ref: PR-RIJSC
       - ref: D-LIEMF
       - ref: FD-CVEAI
       - ref: PR-DLPTR
       - ref: PR-RPL4Q
       - ref: D-RHJMK
-      - ref: FD-6XJ7D
       - ref: D-ZJJ7G
       - ref: FD-BPUNZ
-      - ref: FD-U6KUJ
       - ref: FF-CY5EA
       - ref: PR-4K4XZ
       - ref: D-BJYH3
@@ -486,7 +465,6 @@ sections:
       - ref: D-4KM4P
       - ref: D-CYAJI
       - ref: D-4HEUB
-      - ref: FD-2EUYX
       - ref: FD-BVM37
   - slug: structure-theorem
     title: The structure theorem over a PID
@@ -510,7 +488,6 @@ sections:
       - ref: D-SS34F
       - ref: D-JQNJQ
       - ref: FD-JTWOB
-      - ref: FD-H764S
       - ref: PR-TLPVU
       - ref: L-VDLNM
       - ref: L-Y5KNM
@@ -541,7 +518,6 @@ sections:
     items:
       - ref: FD-J3HIA
       - ref: FD-3V3ZW
-      - ref: FD-QPNDA
       - ref: FD-NS5RF
       - ref: FD-2EVYB
       - ref: T-NGBVC
@@ -552,7 +528,6 @@ sections:
       - ref: D-JMATC
       - ref: FD-LHTRR
       - ref: D-LZTAK
-      - ref: FD-JJFZ3
       - ref: PR-TZN4M
       - ref: D-XD5NG
       - ref: C-4GQK3
@@ -567,7 +542,6 @@ sections:
       - ref: PR-TLBPS
       - ref: C-C2GYX
       - ref: D-KQFIV
-      - ref: FD-YYLYR
       - ref: PR-IK6AM
       - ref: PR-25FLW
       - ref: T-3HPWT
@@ -606,14 +580,11 @@ sections:
       - Galois Theory
     items:
       - ref: D-5JYEI
-      - ref: FD-4GFTY
-      - ref: FT-3WWKN
       - ref: D-5FG7E
       - ref: D-MN47W
       - ref: FD-YJEDU
       - ref: T-SGY3O
       - ref: PR-ZCKLJ
-      - ref: FT-GJ6NR
       - ref: T-NLPZY
       - ref: PR-QDRB4
       - ref: PR-3TYBE
@@ -704,7 +675,7 @@ sections:
       - ref: PR-24CPI
       - ref: D-HGMOW
       - ref: D-23FX7
-      - ref: FF-VKYM3
+      - ref: FE-ISVDM
   - slug: canonical-forms
     title: Canonical forms
     parent: structure-theorem
@@ -729,7 +700,6 @@ sections:
     items:
       - ref: D-GK5SF
       - ref: D-QFYAC
-      - ref: FD-GOB47
       - ref: T-SJCF7
       - ref: PR-UFVPY
       - ref: PR-EDD7U

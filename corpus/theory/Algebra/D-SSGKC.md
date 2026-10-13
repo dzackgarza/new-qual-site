@@ -11,19 +11,20 @@ classification:
   - Bilinear Forms
   - Diagonalization
 relations:
-- kind: related-to
+- kind: uses
   target: D-NRRIT
 review: draft
 ---
 
 ::: {.definition}
 Let $k$ be a field with $\characteristic k\neq 2$ and $n\geq 1$.
-A \dfn{quadratic form} in $n$ variables over $k$ is a homogeneous polynomial of degree $2$ in $x_1,\ldots,x_n$; it can be written uniquely as
+Let $q$ be a [[D-NRRIT|quadratic form]] on $k^n$.
+In the standard coordinates $X=(x_1,\ldots,x_n)^t$, there is a unique symmetric matrix $A=(a_{ij})\in\Mat_{n\times n}(k)$ such that
 $$
 q(x_1, \ldots, x_n) = \sum_{i} a_{ii}x_i^2 + \sum_{i < j} 2a_{ij}x_ix_j = X^t A X, \qquad X = (x_1,\ldots,x_n)^t,
 $$
-where $A = (a_{ij})\in\Mat_{n\times n}(k)$ is symmetric, $a_{ji}=a_{ij}$.
-The matrix $A$ is the \dfn{matrix of the form}.
+with $a_{ji}=a_{ij}$.
+The matrix $A$ is the \dfn{matrix of the quadratic form} in these coordinates.
 :::
 
 ::: {.remark}
@@ -50,15 +51,11 @@ The \dfn{signature} of $q$ is the pair $(p,m)$, where $p$ and $m$ are the number
 
 ::: {.theorem title="Sylvester's law of inertia"}
 For a nondegenerate real quadratic form, the numbers $p$ and $m$ do not depend on the invertible change of variables that diagonalizes it.
+[@Art11]
 :::
 
 ::: {.example}
 For a nondegenerate real quadratic form $q$ and $c>0$, the signature determines the level set $\theset{q = c}$ up to an invertible linear change of variables.
 In two variables, signature $(2,0)$ gives an ellipse, $(1,1)$ a hyperbola, and $(0,2)$ the empty set.
 In three variables, signature $(3,0)$ gives an ellipsoid, $(2,1)$ a hyperboloid of one sheet, $(1,2)$ a hyperboloid of two sheets, and $(0,3)$ the empty set.
-:::
-
-::: {.concept}
-See [@Art11].
-A basis-free [[D-NRRIT|quadratic form]] is a function $q$ with $q(\lambda x) = \lambda^2 q(x)$ whose polarization is bilinear.
 :::

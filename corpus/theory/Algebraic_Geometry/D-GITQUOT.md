@@ -27,13 +27,31 @@ Each fibre contains a unique closed orbit, so the closed points of $X/\!\!/G$ co
 :::
 
 ::: {.definition title="Projective GIT quotient"}
-If $G$ acts on a projective variety $X$ with a $G$-linearized ample line bundle $L$, a point $x$ is \dfn{semistable} if some invariant section $s \in H^0(X, L^m)^G$ has $s(x) \neq 0$.
-The GIT quotient is $X /\!\!/_L G = \Proj \bigoplus_{m \geq 0} H^0(X, L^m)^G$, a projective variety receiving a morphism from the open set $X^{ss}$ of semistable points.
+If $G$ acts on a projective variety $X$ with a $G$-linearized ample line bundle $L$, a point $x$ is \dfn{semistable} if there are an integer $m>0$ and
+$$
+s\in H^0\qty{X,L\tensorpower{\OO_X}{m}}^G
+$$
+with $s(x)\neq0$.
+The GIT quotient is
+$$
+X /\!\!/_L G
+=
+\Proj\bigoplus_{m\geq0}
+H^0\qty{X,L\tensorpower{\OO_X}{m}}^G,
+$$
+a projective variety receiving a morphism from the open set $X^{ss}$ of semistable points.
 :::
 
 ::: {.example}
 Let $\GG_m$ act on $\AA^2$.
 With weights $(1,1)$, $k[x,y]^{\GG_m} = k$ and $\AA^2/\!\!/\GG_m$ is a point, because every orbit closure contains the origin.
 With weights $(1,-1)$, $k[x,y]^{\GG_m} = k[xy]$ and $\AA^2/\!\!/\GG_m = \AA^1$; the fibre over $0$ is the union of the two axes and contains three orbits, of which only the origin is closed.
-With weights $(1,1)$ and the linearization $\OO$ twisted by the identity character, the semistable locus is $\AA^2 \setminus \{0\}$ and the projective quotient is $\PP^1$.
+Separately, for the scalar action with weights $(1,1)$ and the trivial line bundle linearized by the identity character $\chi(\lambda)=\lambda$, the character-linearized affine construction uses the graded ring
+$$
+\bigoplus_{m\geq0}
+\theset{f\in k[x,y]\st f(\lambda x,\lambda y)=\lambda^m f(x,y)}
+=
+\bigoplus_{m\geq0}k[x,y]_m.
+$$
+Its positive-degree semi-invariants vanish simultaneously only at the origin, so the semistable locus is $\AA^2\setminus\{0\}$ and the Proj quotient is $\PP^1$.
 :::

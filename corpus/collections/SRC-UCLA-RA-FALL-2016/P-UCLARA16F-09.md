@@ -31,3 +31,335 @@ is holomorphic on $\mathbb C$.
 \]
 Show that then $\mu$ is equal to the Dirac measure $\delta_0$ at $0$.
 :::
+
+::: {.solution}
+## Part (a)
+
+For every \(k\ge0\), define the moment
+\[
+m_k
+=
+\int_{[0,1]}t^k\,d\mu(t).
+\]
+
+<1>1. One has
+\[
+\boxed{0\le m_k\le1}.
+\]
+
+::: {.proof}
+Since \(0\le t\le1\),
+\[
+0\le t^k\le1.
+\]
+Integrating against the probability measure \(\mu\) gives
+\[
+0\le m_k\le\mu([0,1])=1.
+\]
+:::
+
+<1>2. For fixed \(z\in\mathbb C\),
+\[
+e^{izt}
+=
+\sum_{k=0}^{\infty}
+\frac{(izt)^k}{k!}
+\]
+uniformly for \(t\in[0,1]\).
+
+::: {.proof}
+For \(t\in[0,1]\),
+\[
+\left|
+\frac{(izt)^k}{k!}
+\right|
+\le
+\frac{|z|^k}{k!},
+\]
+and
+\[
+\sum_{k=0}^{\infty}
+\frac{|z|^k}{k!}
+=
+e^{|z|}<\infty.
+\]
+Apply the Weierstrass \(M\)-test.
+:::
+
+<1>3. Therefore
+\[
+\boxed{
+f(z)
+=
+\sum_{k=0}^{\infty}
+\frac{i^k m_k}{k!}z^k}.
+\]
+
+::: {.proof}
+Integrate the uniformly convergent series from step <1>2 term by term:
+\[
+\begin{aligned}
+f(z)
+&=
+\int
+\sum_{k=0}^{\infty}
+\frac{(izt)^k}{k!}\,d\mu(t)\\
+&=
+\sum_{k=0}^{\infty}
+\frac{(iz)^k}{k!}
+\int t^k\,d\mu(t).
+\end{aligned}
+\]
+:::
+
+<1>4. The series in step <1>3 has infinite radius of convergence.
+
+::: {.proof}
+By step <1>1,
+\[
+\left|
+\frac{i^k m_k}{k!}z^k
+\right|
+\le
+\frac{|z|^k}{k!},
+\]
+and the exponential series converges for every \(z\in\mathbb C\).
+:::
+
+<1>5. Hence
+\[
+\boxed{
+f\text{ is entire}.}
+\]
+
+::: {.proof}
+Step <1>3 represents \(f\) by a power series with infinite radius of convergence.
+:::
+
+## Part (b)
+
+Assume
+\[
+\limsup_{|z|\to\infty}
+\frac{|f(z)|}{|z|^n}
+<
+\infty
+\]
+for some \(n\in\mathbb N\).
+
+<1>6. There exist constants \(C>0\) and \(R_0>0\) such that
+\[
+\boxed{
+|f(z)|
+\le
+C|z|^n}
+\]
+whenever \(|z|\ge R_0\).
+
+::: {.proof}
+This is the definition of finiteness of the stated limsup.
+:::
+
+<1>7. There is a constant \(C_1>0\) such that for every \(R\ge1\),
+\[
+\boxed{
+\max_{|z|=R}|f(z)|
+\le
+C_1R^n}.
+\]
+
+::: {.proof}
+For \(R\ge R_0\), use step <1>6. For \(1\le R\le R_0\), continuity of \(f\) on the compact disk \(|z|\le R_0\) gives a finite maximum; enlarge \(C_1\) to absorb this bounded range.
+:::
+
+<1>8. For every integer \(m>n\), Cauchy's estimate gives
+\[
+|f^{(m)}(0)|
+\le
+\frac{m!}{R^m}
+\max_{|z|=R}|f(z)|.
+\]
+
+::: {.proof}
+Apply Cauchy's estimate to the entire function \(f\) on the circle \(|z|=R\).
+:::
+
+<1>9. Therefore
+\[
+|f^{(m)}(0)|
+\le
+m!C_1R^{n-m}
+\]
+for every \(R\ge1\).
+
+::: {.proof}
+Substitute step <1>7 into step <1>8.
+:::
+
+<1>10. Letting \(R\to\infty\),
+\[
+\boxed{
+f^{(m)}(0)=0}
+\]
+for every \(m>n\).
+
+::: {.proof}
+Since \(m>n\),
+\[
+R^{n-m}\to0.
+\]
+The left-hand side of step <1>9 is independent of \(R\), so it must vanish.
+:::
+
+<1>11. Hence \(f\) is a polynomial of degree at most \(n\).
+
+::: {.proof}
+All Taylor coefficients of degree \(>n\) vanish by step <1>10, and \(f\) is entire.
+:::
+
+<1>12. For every real \(x\),
+\[
+\boxed{|f(x)|\le1}.
+\]
+
+::: {.proof}
+Since \(|e^{ixt}|=1\),
+\[
+\begin{aligned}
+|f(x)|
+&=
+\left|
+\int e^{ixt}\,d\mu(t)
+\right|\\
+&\le
+\int |e^{ixt}|\,d\mu(t)\\
+&=
+\mu([0,1])\\
+&=
+1.
+\end{aligned}
+\]
+:::
+
+<1>13. Therefore \(f\) is constant.
+
+::: {.proof}
+A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step <1>12 says \(f\) is bounded on \(\mathbb R\).
+:::
+
+<1>14. Since
+\[
+f(0)=1,
+\]
+one has
+\[
+\boxed{f\equiv1}.
+\]
+
+::: {.proof}
+\[
+f(0)
+=
+\int 1\,d\mu
+=
+\mu([0,1])
+=
+1.
+\]
+Combine with step <1>13.
+:::
+
+<1>15. Differentiating the power series at \(0\),
+\[
+\boxed{
+f'(0)
+=
+i\int_{[0,1]}t\,d\mu(t)}.
+\]
+
+::: {.proof}
+From step <1>3, the coefficient of \(z\) is
+\[
+im_1
+=
+i\int t\,d\mu.
+\]
+:::
+
+<1>16. Since \(f\equiv1\),
+\[
+\boxed{
+\int_{[0,1]}t\,d\mu(t)=0}.
+\]
+
+::: {.proof}
+Step <1>14 gives
+\[
+f'(0)=0.
+\]
+Use step <1>15 and divide by \(i\).
+:::
+
+<1>17. For every \(\varepsilon>0\),
+\[
+\boxed{
+\mu([\varepsilon,1])=0}.
+\]
+
+::: {.proof}
+Since \(t\ge\varepsilon\) on \([\varepsilon,1]\),
+\[
+0
+=
+\int_0^1 t\,d\mu(t)
+\ge
+\int_{[\varepsilon,1]}t\,d\mu(t)
+\ge
+\varepsilon\,\mu([\varepsilon,1]).
+\]
+Thus the measure must vanish there.
+:::
+
+<1>18. Therefore
+\[
+\boxed{
+\mu((0,1])=0}.
+\]
+
+::: {.proof}
+Since
+\[
+(0,1]
+=
+\bigcup_{m=1}^{\infty}
+[1/m,1],
+\]
+and each set in the union has measure zero by step <1>17, countable subadditivity gives zero measure to the union.
+:::
+
+<1>19. Since \(\mu([0,1])=1\),
+\[
+\boxed{
+\mu(\{0\})=1}.
+\]
+
+::: {.proof}
+The complement of \(\{0\}\) in \([0,1]\) is \((0,1]\), which has measure zero by step <1>18.
+:::
+
+<1>20. Hence
+\[
+\boxed{
+\mu=\delta_0}.
+\]
+
+::: {.proof}
+A probability measure concentrated entirely at \(0\) is the Dirac measure at \(0\).
+:::
+
+<1>21. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves part (a), and step <1>20 proves part (b).
+:::
+:::

@@ -1,9 +1,8 @@
 ---
 schema: qual/card@1
 id: PR-MK2W6
-kind: proposition
-title: Irreducible polynomials over a perfect field are separable
-slogan: 'Over a perfect field, irreducible polynomials have no repeated roots.'
+kind: example
+title: An irreducible inseparable polynomial over an imperfect field
 classification:
   areas:
   - algebra
@@ -15,11 +14,30 @@ relations: []
 review: draft
 ---
 
-::: {.proposition}
-Let $k$ be a [[D-KQFIV|perfect]] field, for instance a field of characteristic $0$ or a finite field.
-Every irreducible polynomial $f \in k[x]$ has distinct roots in a splitting field of $f$ over $k$.
+::: {.example}
+Let $k=\FF_p(t)$.
+The polynomial
+$$
+f(x)=x^p-t\in k[x]
+$$
+is irreducible and inseparable, and
+$$
+k(t^{1/p})/k
+$$
+is an inseparable extension of degree $p$.
 :::
 
-::: {.example}
-Over an imperfect field, an irreducible polynomial can have a repeated root: for $k = \FF_p(t)$, the polynomial $x^p - t$ is irreducible, and in a splitting field it factors as $(x - t^{1/p})^p$.
+::: {.proof}
+Let $\alpha=t^{1/p}$ in an algebraic closure of $k$.
+Then
+$$
+x^p-t=(x-\alpha)^p.
+$$
+If $f$ had a monic factor in $k[x]$ of degree $j$ with $0<j<p$, then over the algebraic closure that factor would be $(x-\alpha)^j$.
+Its coefficient of $x^{j-1}$ is $-j\alpha$.
+Since $j\neq0$ in $\FF_p$, this would imply $\alpha\in k$, hence $t=\alpha^p\in k^p$.
+But $t$ is not a $p$th power in $\FF_p(t)$, since the $t$-adic valuation of a $p$th power is divisible by $p$ while $v_t(t)=1$.
+Thus $f$ is irreducible.
+Its derivative is zero, so [[PR-ENHVC]] shows that $f$ is inseparable.
+Therefore the minimal polynomial of $\alpha$ over $k$ is inseparable of degree $p$.
 :::

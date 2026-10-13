@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-10
 kind: problem
-title: Order of a finite group with a subgroup of order $7$ and no involution
+title: Possible order of a finite group under the stated element condition
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 ![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-10.png)
 :::
@@ -28,9 +27,9 @@ The order could be $35$, so the answer is $\boxed{\text{(C)}}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$\abs{G}$ is an odd multiple of $7$.
+Necessary divisibility conditions.
 
 ::: pf-proof
 
@@ -42,9 +41,9 @@ By Cauchy's theorem, $|G|$ must therefore be odd.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-Among the choices, $35$ is the only possible order, and $C_{35}$ attains it.
+Check the choices and exhibit an example.
 
 ::: pf-proof
 
@@ -52,6 +51,12 @@ Among $27,28,35,37,42$, the only odd multiple of $7$ is $35$.
 This value occurs: the cyclic group $C_{35}$ contains a subgroup of order $7$ and, being of odd order, has no nontrivial element of order $2$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} restricts the possible order to an odd multiple of $7$, and step [](#s2){.pf-ref} shows that among the choices exactly $35$ works. Hence choice (C) is correct.
 
 :::
 

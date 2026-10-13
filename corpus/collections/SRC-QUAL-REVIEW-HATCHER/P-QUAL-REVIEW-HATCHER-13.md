@@ -25,3 +25,158 @@ is not a retract of
 S^1\times S^1.
 \]
 :::
+
+::: {.solution}
+Let
+\[
+A=S^1\vee S^1
+\]
+and
+\[
+X=S^1\times S^1.
+\]
+
+Suppose, toward a contradiction, that \(A\) is a retract of \(X\). Let
+\[
+i:A\hookrightarrow X
+\]
+be the inclusion and
+\[
+r:X\to A
+\]
+a retraction.
+
+<1>1. Since \(r\) is a retraction,
+\[
+\boxed{
+r\circ i=\operatorname{id}_A}.
+\]
+
+::: {.proof}
+A retraction restricts to the identity on the retract.
+:::
+
+<1>2. Passing to fundamental groups,
+\[
+\boxed{
+r_*\circ i_*=\operatorname{id}_{\pi_1(A)}}.
+\]
+
+::: {.proof}
+Fundamental group is functorial with respect to composition.
+:::
+
+<1>3. Therefore
+\[
+\boxed{
+i_*:\pi_1(A)\to\pi_1(X)
+\text{ is injective}}.
+\]
+
+::: {.proof}
+If
+\[
+i_*(g)=1,
+\]
+then
+\[
+g
+=
+(r_*\circ i_*)(g)
+=
+r_*(1)
+=
+1.
+\]
+Thus the kernel is trivial.
+:::
+
+<1>4. One has
+\[
+\boxed{
+\pi_1(A)\cong F_2},
+\]
+the free group on two generators.
+
+::: {.proof}
+The fundamental group of a wedge of two circles is the free product
+\[
+\mathbb Z*\mathbb Z
+\cong
+F_2.
+\]
+:::
+
+<1>5. One has
+\[
+\boxed{
+\pi_1(X)
+\cong
+\mathbb Z^2}.
+\]
+
+::: {.proof}
+For the torus,
+\[
+\pi_1(S^1\times S^1)
+\cong
+\pi_1(S^1)\times\pi_1(S^1)
+\cong
+\mathbb Z^2.
+\]
+:::
+
+<1>6. Every subgroup of \(\mathbb Z^2\) is abelian.
+
+::: {.proof}
+Every subgroup of an abelian group is abelian.
+:::
+
+<1>7. The group \(F_2\) is nonabelian.
+
+::: {.proof}
+If \(a,b\) are its free generators, then the reduced words
+\[
+ab
+\qquad\text{and}\qquad
+ba
+\]
+are distinct. Hence
+\[
+ab\ne ba.
+\]
+:::
+
+<1>8. Therefore there is no injective homomorphism
+\[
+F_2\hookrightarrow\mathbb Z^2.
+\]
+
+::: {.proof}
+The image of such an injection would be a subgroup of \(\mathbb Z^2\), hence abelian by step <1>6. Then \(F_2\) itself would be abelian, contradicting step <1>7.
+:::
+
+<1>9. This contradicts the injectivity of \(i_*\) from step <1>3.
+
+::: {.proof}
+Combine steps <1>4--<1>5 with step <1>8.
+:::
+
+<1>10. Hence
+\[
+\boxed{
+S^1\vee S^1
+\text{ is not a retract of }
+S^1\times S^1}.
+\]
+
+::: {.proof}
+The assumption of a retraction led to the contradiction in step <1>9.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required conclusion.
+:::
+:::

@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the exhaustive subgroup enumeration by intersection with rotations, all subgroup orders and normality decisions, and the resulting eight strict intermediate fields."
 ---
-
 ::: {.problem}
 Suppose the field $K$ is a Galois extension of the field $F$, such that the Galois group of $K$ over $F$ is isomorphic to the 8 element dihedral group $D_8$.
 
@@ -115,7 +114,7 @@ exactly the eight subgroups stated above, without repetitions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The strict intermediate fields and Galois counts are
 
@@ -129,8 +128,9 @@ The strict intermediate fields and Galois counts are
 The subgroup orders in step [](#s2){.pf-ref} and the degree formula
 in step [](#s1){.pf-ref} give exactly the stated fields and degrees.
 Different subgroups have different fixed fields, so none
-of these entries is duplicated. The subgroup $G$
-corresponds to $F$ and the subgroup $\{1\}$ to $K$.
+of these entries is duplicated. The excluded subgroup
+$G$ corresponds to $F$ and the excluded subgroup $\{1\}$
+to $K$, exactly the two endpoints forbidden in the question.
 
 All three subgroups of order four have index two and
 are normal: both the left and right cosets of any element
@@ -147,6 +147,13 @@ that subgroup. The normality criterion in step [](#s1){.pf-ref}
 therefore gives precisely the last column of the table.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives both the complete list requested in part (a) and the
+Galois refinement requested in part (b).
 
 :::
 

@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked all degree partitions for the invariant-factor chain and the coefficients of every companion block."
 ---
-
 ::: {.problem}
 There are finitely many $6 \times 6$ matrices over $\mathbb{Q}$, in rational canonical form, with minimal polynomial $(x + 2)^2(x - 1)$.
 Find them.
@@ -34,7 +33,7 @@ Find them.
 ::: {.solution}
 Put $p=x+2$, $q=x-1$, and $f=p^2q=x^3+3x^2-4$.
 For a monic polynomial $h$, write $C(h)$ for the matrix of multiplication
-by $x$ on $\mathbf Q[x]/(h)$ in the ordered basis
+by $x$ on $\QQ[x]/(h)$ in the ordered basis
 $1,x,\ldots,x^{\deg h-1}$. The answer consists of the following six
 block diagonal matrices:
 $$
@@ -59,7 +58,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The invariant factors form a chain of nonconstant monic polynomials
 $$
@@ -69,8 +68,8 @@ $$
 
 ::: pf-proof
 
-Apply the rational canonical form theorem to $\mathbf Q^6$ as a
-$\mathbf Q[x]$-module, with $x$ acting by the given matrix [@DF04].
+Apply the rational canonical form theorem to $\QQ^6$ as a
+$\QQ[x]$-module, with $x$ acting by the given matrix [@DF04].
 Its invariant factors determine the companion blocks, their degrees
 sum to the dimension, and their largest member is the minimal
 polynomial. Since $\deg f=3$, all the earlier invariant factors have
@@ -105,7 +104,7 @@ $(q,q,q,f)$. This exhausts the possible chains.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Every displayed matrix has the required minimal polynomial, and
 no two are similar.
@@ -113,7 +112,7 @@ no two are similar.
 ::: pf-proof
 
 The minimal polynomial of $C(h)$ is $h$: a polynomial $g$ annihilates
-multiplication by $x$ on $\mathbf Q[x]/(h)$ exactly when $h\mid g$,
+multiplication by $x$ on $\QQ[x]/(h)$ exactly when $h\mid g$,
 as can be checked by applying it to $1$. A polynomial annihilates a
 block diagonal matrix exactly when it annihilates every block, so its
 minimal polynomial is the least common multiple of the block minimal
@@ -124,6 +123,14 @@ the invariant factors makes the six matrices pairwise nonsimilar
 possible.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the six displayed block diagonal matrices are
+exactly the rational canonical forms with the prescribed minimal
+polynomial.
 
 :::
 

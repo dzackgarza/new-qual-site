@@ -20,3 +20,76 @@ Show that for $p>0$ and $q>0$,
 =\frac{\pi}{2q}\log(pq).
 \]
 :::
+
+::: {.solution}
+<1>1. The integrals
+\[
+\int_0^\infty\frac{|\log t|}{1+t^2}\,dt
+\qquad\text{and}\qquad
+\int_0^\infty\frac{dt}{1+t^2}
+\]
+are finite, and
+\[
+\int_0^\infty\frac{dt}{1+t^2}=\frac\pi2.
+\]
+
+::: {.proof}
+On \((0,1]\), one has \((1+t^2)^{-1}\le1\), and
+\[
+\int_0^1|\log t|\,dt=1.
+\]
+On \([1,\infty)\), \((1+t^2)^{-1}\le t^{-2}\), and \(\int_1^\infty (\log t)t^{-2}\,dt<\infty\) by integration by parts. Hence the logarithmic integral is absolutely convergent. The second integral is
+\[
+\left[\arctan t\right]_{0}^{\infty}=\frac\pi2.
+\]
+:::
+
+<1>2. One has
+\[
+\int_0^\infty\frac{\log t}{1+t^2}\,dt=0.
+\]
+
+::: {.proof}
+Let
+\[
+J=\int_0^\infty\frac{\log t}{1+t^2}\,dt,
+\]
+which is absolutely convergent by step <1>1. In the substitution \(t=1/u\),
+\[
+\begin{aligned}
+J
+&=\int_\infty^0
+\frac{-\log u}{1+u^{-2}}\left(-\frac{du}{u^2}\right)\\
+&=-\int_0^\infty\frac{\log u}{1+u^2}\,du\\
+&=-J.
+\end{aligned}
+\]
+Thus \(2J=0\), so \(J=0\).
+:::
+
+<1>3. For \(p,q>0\),
+\[
+\boxed{
+\int_0^\infty \frac{\log(px)}{q^2+x^2}\,dx
+=\frac{\pi}{2q}\log(pq)}.
+\]
+
+::: {.proof}
+Substitute \(x=qt\). Then
+\[
+\begin{aligned}
+\int_0^\infty \frac{\log(px)}{q^2+x^2}\,dx
+&=\frac1q\int_0^\infty\frac{\log(pq)+\log t}{1+t^2}\,dt\\
+&=\frac{\log(pq)}q\int_0^\infty\frac{dt}{1+t^2}
++\frac1q\int_0^\infty\frac{\log t}{1+t^2}\,dt.
+\end{aligned}
+\]
+Step <1>1 evaluates the first integral as \(\pi/2\), and step <1>2 makes the second integral zero. This gives the claimed formula.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the required identity.
+:::
+:::

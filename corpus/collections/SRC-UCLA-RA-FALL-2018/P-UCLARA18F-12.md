@@ -26,3 +26,87 @@ has exactly $n$ simple roots in the half-plane
 \{z:\operatorname{Re}z>0\}.
 \]
 :::
+
+::: {.solution}
+Write
+\[
+H(z)=e^z(z-1)^n,
+\qquad
+F(z)=H(z)-\alpha.
+\]
+
+<1>1. If \(R>2\) and
+\[
+D_R=\{z:\operatorname{Re}z>0,\ |z|<R\},
+\]
+then \(|H(z)|>|\alpha|\) for every \(z\in\partial D_R\).
+
+::: {.proof}
+On the imaginary-axis part of the boundary, write \(z=iy\). Then
+\[
+|H(iy)|
+=|e^{iy}|\,|iy-1|^n
+=(1+y^2)^{n/2}
+\ge1
+>|\alpha|.
+\]
+On the semicircular part, \(|z|=R\) and \(\operatorname{Re}z\ge0\), so
+\[
+|H(z)|
+=e^{\operatorname{Re}z}|z-1|^n
+\ge (R-1)^n
+>1
+>|\alpha|.
+\]
+Thus the strict inequality holds on all of \(\partial D_R\).
+:::
+
+<1>2. The function \(H\) has exactly \(n\) zeros in \(D_R\), counted with multiplicity.
+
+::: {.proof}
+The exponential function has no zeros. Hence the only zero of \(H(z)=e^z(z-1)^n\) is \(z=1\), with multiplicity \(n\). Since \(R>2\), the point \(1\) lies in \(D_R\), so \(H\) has exactly \(n\) zeros there when multiplicity is counted.
+:::
+
+<1>3. For every \(R>2\), the equation \(F(z)=0\) has exactly \(n\) roots in \(D_R\), counted with multiplicity.
+
+::: {.proof}
+On \(\partial D_R\), step <1>1 gives
+\[
+|{-\alpha}|<|H(z)|.
+\]
+Rouché's theorem therefore implies that \(H\) and
+\[
+H-\alpha=F
+\]
+have the same number of zeros in \(D_R\), counted with multiplicity. Step <1>2 gives that number as \(n\).
+:::
+
+<1>4. The equation \(F(z)=0\) has exactly \(n\) roots in the entire half-plane \(\{\operatorname{Re}z>0\}\), counted with multiplicity.
+
+::: {.proof}
+Step <1>3 already gives \(n\) roots in every \(D_R\) with \(R>2\). If there were any additional root \(w\) in the right half-plane outside one such half-disc, choose \(R>|w|\). Then \(D_R\) would contain the \(n\) roots already counted together with \(w\), contradicting step <1>3. Since the increasing union of the sets \(D_R\) is the whole open right half-plane, the total number there is exactly \(n\), counted with multiplicity.
+:::
+
+<1>5. Every root of \(F\) in the right half-plane is simple.
+
+::: {.proof}
+Differentiating gives
+\[
+F'(z)=H'(z)
+=e^z(z-1)^{n-1}(z+n-1).
+\]
+At a zero of \(F\), one has \(H(z)=\alpha\ne0\), so \(z\ne1\). Therefore a multiple zero of \(F\) would have to satisfy
+\[
+z+n-1=0,
+\qquad\text{hence}\qquad
+z=1-n.
+\]
+But \(1-n\le0\) is real, so it does not lie in the open right half-plane. Thus every root counted in step <1>4 is simple.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>4 and <1>5 show that there are exactly \(n\) roots in the right half-plane and that all of them are simple.
+:::
+:::

@@ -26,3 +26,187 @@ Prove that there is no linear operator $S:V\to V$ such that $S^2=T$.
 
 Does the answer change if $V\cong\mathbb R^{12}$?
 :::
+
+::: {.solution}
+<1>1. If
+\[
+T^{18}=0,
+\]
+then $T$ is nilpotent.
+
+::: {.proof}
+This is the definition of nilpotence: some positive power of $T$ is zero.
+:::
+
+<1>2. If
+\[
+\dim V=6,
+\]
+then
+\[
+T^6=0.
+\]
+
+::: {.proof}
+Since $T$ is nilpotent by step <1>1, every eigenvalue of $T$ is $0$.
+Hence the characteristic polynomial of $T$ on a six-dimensional space is
+\[
+\chi_T(X)=X^6.
+\]
+By the Cayley--Hamilton theorem,
+\[
+\chi_T(T)=T^6=0.
+\]
+:::
+
+<1>3. Suppose, for contradiction, that there exists
+\[
+S:V\to V
+\]
+with
+\[
+S^2=T.
+\]
+Then $S$ is nilpotent.
+
+::: {.proof}
+Using
+\[
+T^{18}=0,
+\]
+one gets
+\[
+S^{36}
+=(S^2)^{18}
+=T^{18}
+=0.
+\]
+Thus $S$ is nilpotent.
+:::
+
+<1>4. If
+\[
+\dim V=6,
+\]
+then
+\[
+S^6=0.
+\]
+
+::: {.proof}
+By step <1>3, $S$ is nilpotent.
+As in step <1>2, its characteristic polynomial is
+\[
+X^6.
+\]
+Cayley--Hamilton gives
+\[
+S^6=0.
+\]
+:::
+
+<1>5. Under the hypothesis
+\[
+S^2=T,
+\]
+one has
+\[
+T^3=S^6.
+\]
+
+::: {.proof}
+\[
+T^3
+=(S^2)^3
+=S^6.
+\]
+:::
+
+<1>6. No such square root $S$ exists when
+\[
+\dim V=6.
+\]
+
+::: {.proof}
+If such $S$ existed, steps <1>4--<1>5 would give
+\[
+T^3=S^6=0.
+\]
+Then
+\[
+T^5=T^2T^3=0,
+\]
+contradicting the hypothesis
+\[
+T^5\ne0.
+\]
+Therefore no such $S$ exists.
+:::
+
+<1>7. In dimension $12$, the answer changes: such examples do exist.
+
+::: {.proof}
+Let
+\[
+V=\mathbb R^{12}
+\]
+with basis
+\[
+e_1,\ldots,e_{12}.
+\]
+Define $S$ by
+\[
+Se_1=0,
+\qquad
+Se_j=e_{j-1}
+\quad
+(2\le j\le12).
+\]
+Then
+\[
+S^{12}=0
+\]
+but
+\[
+S^{10}e_{12}=e_2\ne0.
+\]
+Set
+\[
+T=S^2.
+\]
+Then
+\[
+T^5
+=(S^2)^5
+=S^{10}
+\ne0.
+\]
+Also
+\[
+T^{18}
+=(S^2)^{18}
+=S^{36}
+=0
+\]
+because already $S^{12}=0$.
+Thus $T$ satisfies the hypotheses and has the square root $S$.
+:::
+
+<1>8. Therefore
+\[
+\boxed{
+\text{no square root exists in dimension }6,
+\text{ but one may exist in dimension }12.
+}
+\]
+
+::: {.proof}
+Step <1>6 proves impossibility in dimension $6$, and step <1>7 gives an explicit dimension-$12$ example.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 answers both parts.
+:::
+:::

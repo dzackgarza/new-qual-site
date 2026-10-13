@@ -19,3 +19,248 @@ audit:
 Let D be an integral domain and F a subring of D that is a field.
 Show that if each element of D is algebraic over F , then D is a field.
 :::
+
+::: {.solution}
+Let
+$$
+0\ne a\in D.
+$$
+
+<1>1. Since $a$ is algebraic over $F$, there is a nonzero polynomial
+$$
+f(X)
+\in
+F[X]
+$$
+such that
+$$
+f(a)=0.
+$$
+Choose such a polynomial of minimal degree.
+
+::: {.proof}
+Algebraicity of $a$ over the field $F$ gives at least one nonzero polynomial relation.
+The set of degrees of such relations is a nonempty subset of the nonnegative integers, so it has a least element.
+:::
+
+<1>2. We may assume the chosen polynomial is monic:
+$$
+f(X)
+=
+X^n
++
+c_{n-1}X^{n-1}
++
+\cdots
++
+c_1X
++
+c_0,
+$$
+with
+$$
+c_i\in F.
+$$
+
+::: {.proof}
+The leading coefficient of the minimal-degree polynomial is a nonzero element of the field $F$, hence a unit.
+Multiplying the polynomial by the inverse of its leading coefficient preserves its degree and its set of roots, and makes it monic.
+:::
+
+<1>3. The constant coefficient
+$$
+c_0
+$$
+is nonzero.
+
+::: {.proof}
+Suppose
+$$
+c_0=0.
+$$
+Then
+$$
+f(X)
+=
+X
+\left(
+X^{n-1}
++
+c_{n-1}X^{n-2}
++
+\cdots
++
+c_1
+\right).
+$$
+Evaluating at $a$ gives
+$$
+a
+\left(
+a^{n-1}
++
+c_{n-1}a^{n-2}
++
+\cdots
++
+c_1
+\right)
+=
+0.
+$$
+Because $D$ is an integral domain and
+$$
+a\ne0,
+$$
+the second factor must vanish:
+$$
+a^{n-1}
++
+c_{n-1}a^{n-2}
++
+\cdots
++
+c_1
+=
+0.
+$$
+This is a polynomial relation over $F$ of degree
+$$
+n-1,
+$$
+contradicting minimality.
+Therefore
+$$
+c_0\ne0.
+$$
+:::
+
+<1>4. Rearranging
+$$
+f(a)=0
+$$
+gives
+$$
+a
+\left(
+a^{n-1}
++
+c_{n-1}a^{n-2}
++
+\cdots
++
+c_1
+\right)
+=
+-c_0.
+$$
+
+::: {.proof}
+Substitute
+$$
+X=a
+$$
+in the monic relation from step <1>2 and factor $a$ from all positive-degree terms.
+:::
+
+<1>5. The element
+$$
+c_0
+$$
+is a unit of $D$.
+
+::: {.proof}
+By step <1>3,
+$$
+c_0\ne0.
+$$
+Since
+$$
+c_0\in F
+$$
+and $F$ is a field,
+$$
+c_0^{-1}\in F.
+$$
+Because
+$$
+F\subseteq D,
+$$
+both
+$$
+c_0
+$$
+and
+$$
+c_0^{-1}
+$$
+lie in $D$.
+Thus $c_0$ is a unit of $D$.
+:::
+
+<1>6. The element $a$ is a unit of $D$.
+
+::: {.proof}
+Multiply the identity in step <1>4 by
+$$
+-c_0^{-1}.
+$$
+Then
+$$
+a
+\left[
+-c_0^{-1}
+\left(
+a^{n-1}
++
+c_{n-1}a^{n-2}
++
+\cdots
++
+c_1
+\right)
+\right]
+=
+1.
+$$
+The bracketed element belongs to $D$ because
+$$
+a\in D
+$$
+and all
+$$
+c_i,c_0^{-1}\in F\subseteq D.
+$$
+Thus $a$ has a multiplicative inverse in $D$.
+:::
+
+<1>7. Every nonzero element of $D$ is invertible.
+
+::: {.proof}
+The nonzero element
+$$
+a\in D
+$$
+was arbitrary.
+Step <1>6 shows that every such $a$ is a unit.
+:::
+
+<1>8. Therefore
+$$
+\boxed{
+D\text{ is a field}.
+}
+$$
+
+::: {.proof}
+The ring $D$ is already assumed to be an integral domain, hence a nonzero commutative ring with identity.
+Step <1>7 shows that every nonzero element is invertible.
+This is exactly the definition of a field.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required conclusion.
+:::
+:::

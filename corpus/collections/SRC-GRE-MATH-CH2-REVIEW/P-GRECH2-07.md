@@ -28,3 +28,49 @@ Evaluate the following limit:
 (D) $1$
 (E) $\frac{\pi}{2}$
 :::
+
+::: {.solution}
+Let
+$$
+F(x)=\int_0^x\frac{t+t^2}{1+\sin t}\,dt.
+$$
+
+<1>1. For $x$ near $0$,
+$$
+F'(x)=\frac{x+x^2}{1+\sin x}.
+$$
+
+::: {.proof}
+The integrand is continuous near $0$ because $1+\sin t$ is nonzero there. The fundamental theorem of calculus therefore gives the displayed derivative.
+:::
+
+<1>2. The limit equals $1/2$.
+
+::: {.proof}
+Since $F(0)=0$, the original quotient has the indeterminate form $0/0$. By L'Hôpital's rule and step <1>1,
+$$
+\begin{aligned}
+\lim_{x\to0}\frac{F(x)}{x^2}
+&=\lim_{x\to0}\frac{x+x^2}{2x(1+\sin x)}\\
+&=\lim_{x\to0}\frac{1+x}{2(1+\sin x)}\\
+&=\frac12.
+\end{aligned}
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{\frac12},
+$$
+so the answer is (C).
+
+::: {.proof}
+This is exactly the value obtained in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested limit and corresponding choice.
+:::
+:::

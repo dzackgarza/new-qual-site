@@ -13,6 +13,8 @@ topics:
 
 ## Pullback and pushforward
 
+Pullback and pushforward are the basic functors relating sheaves on the source and target of a morphism.
+
 [[D-MODPULL]]
 
 For a morphism of ringed spaces $f\colon X\to Y$, the module pullback $f^*\mcg=f^{-1}\mcg\otimes_{f^{-1}\OO_Y}\OO_X$ is left adjoint to $f_*$.

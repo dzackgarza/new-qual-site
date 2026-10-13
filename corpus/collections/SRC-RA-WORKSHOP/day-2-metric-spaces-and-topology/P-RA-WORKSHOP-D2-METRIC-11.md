@@ -17,40 +17,159 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Show that if $f:\mathbb R\to\mathbb R$ is monotone increasing, then $f$ has at most a countable set of jump discontinuities.
 :::
 
-:::: {.solution}
+::: {.solution}
+For $x\in\RR$, define the one-sided limits
+$$
+f(x-)=\sup_{t<x}f(t),
+\qquad
+f(x+)=\inf_{t>x}f(t).
+$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Every discontinuity of a monotone increasing $f$ is a jump.
-Proof: at each $x$, the one-sided limits $f(x-) = \sup_{y<x}f(y)$ and $f(x+) = \inf_{y>x}f(y)$ exist (boundedness on compact intervals follows from monotonicity; for the extended real line they exist in $[-\infty,\infty]$). Continuity at $x$ holds iff $f(x-) = f(x) = f(x+)$, so a discontinuity is exactly a point where $f(x-) < f(x+)$, a jump of positive size.
+These one-sided limits are finite and satisfy
+$$
+f(x-)\le f(x)\le f(x+).
+$$
+
+::: pf-proof
+
+Because $f$ is increasing,
+$$
+f(x-1)\le f(t)\le f(x)
+\qquad(x-1<t<x),
+$$
+so the set of values to the left of $x$ is bounded above and nonempty;
+its supremum is finite. Likewise
+$$
+f(x)\le f(t)\le f(x+1)
+\qquad(x<t<x+1),
+$$
+so the values to the right have a finite infimum. Monotonicity gives the
+displayed inequalities.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The function $f$ is continuous at $x$ if and only if
+$$
+f(x-)=f(x+).
+$$
+
+::: pf-proof
+
+If $f$ is continuous at $x$, both one-sided limits equal $f(x)$.
+
+Conversely, suppose
+$$
+f(x-)=f(x+)=L.
+$$
+Step [](#s1){.pf-ref} gives
+$$
+L\le f(x)\le L,
+$$
+so $f(x)=L$. Given $\varepsilon>0$, the definitions of supremum and
+infimum give points $u<x<v$ sufficiently close to $x$ with
+$$
+L-\varepsilon<f(u)\le L\le f(v)<L+\varepsilon.
+$$
+For every $t\in(u,v)$, monotonicity yields
+$$
+f(u)\le f(t)\le f(v),
+$$
+hence $|f(t)-f(x)|<\varepsilon$. Thus $f$ is continuous at $x$.
+
+:::
 
 :::
 
 ::: pf-step
 
-Associate to each jump point a distinct rational.
-Proof: for a jump at $x$, pick a rational $q(x) \in (f(x-), f(x+))$ (possible since the interval is nonempty and $\mathbb{Q}$ is dense).
+Every discontinuity $x$ determines a nonempty open interval
+$$
+J_x=(f(x-),f(x+)).
+$$
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, discontinuity means $f(x-)\ne f(x+)$. Step [](#s1){.pf-ref} orders
+these quantities, so necessarily
+$$
+f(x-)<f(x+).
+$$
+Therefore $J_x$ is a nonempty open interval.
 
 :::
 
-::: pf-step
+:::
 
-Distinct jump points get distinct rationals.
-Proof: if $x_1 < x_2$ are jump points, then $f(x_1+) \le f(x_2-)$ (as $f$ is increasing), so the intervals $(f(x_1-), f(x_1+))$ and $(f(x_2-), f(x_2+))$ are disjoint; hence $q(x_1) \ne q(x_2)$.
-Thus $x \mapsto q(x)$ is injective from the set of jump discontinuities into $\mathbb{Q}$.
+::: {.pf-step #s4}
+
+If $x<y$ are discontinuities, then
+$$
+J_x\cap J_y=\varnothing.
+$$
+
+::: pf-proof
+
+Choose any $s$ with $x<s<y$. By the definitions of the one-sided limits,
+$$
+f(x+)\le f(s)\le f(y-).
+$$
+Thus $f(x+)\le f(y-)$.
+Hence every point of $J_x$ is strictly less than every point of $J_y$.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+The set of discontinuities injects into $\QQ$.
+
+::: pf-proof
+
+For each discontinuity $x$, choose a rational number
+$$
+q_x\in J_x,
+$$
+which is possible because $\QQ$ is dense in $\RR$. By step [](#s4){.pf-ref},
+distinct discontinuities have disjoint intervals $J_x$, so their chosen
+rationals are distinct. Thus
+$$
+x\longmapsto q_x
+$$
+is injective from the discontinuity set into $\QQ$.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+The discontinuity set is finite or countably infinite.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref} it is in bijection with a subset of the countable set
+$\QQ$. Therefore it is at most countable.
+
+:::
 
 :::
 
 ::: pf-qed
 
-Proof: the jump set injects into the countable set $\mathbb{Q}$, so it is at most countable.
+Step [](#s6){.pf-ref} is the required conclusion.
 
 :::
 

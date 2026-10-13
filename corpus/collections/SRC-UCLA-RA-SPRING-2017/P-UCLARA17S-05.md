@@ -26,3 +26,101 @@ Let $d\nu$ be a finite complex Borel measure on $[0,1]$ absolutely continuous wi
 \widehat\nu(n)\to0\qquad(n\to\infty).
 \]
 :::
+
+::: {.solution}
+<1>1. The assertion is false as written for complex measures on the closed interval $[0,1]$.
+
+::: {.proof}
+Let
+$$
+\mu\coloneqq\delta_0-\delta_1.
+$$
+Then for every integer $n$,
+$$
+\widehat\mu(n)
+=\int_0^1 e^{2\pi i n x}\,d\mu(x)
+=1-e^{2\pi i n}
+=0.
+$$
+Now let
+$$
+f(x)\coloneqq1-x
+$$
+and define $\nu$ by $d\nu=f\,d\mu$. Since $f(0)=1$ and $f(1)=0$,
+$$
+\nu=\delta_0.
+$$
+Thus $\nu$ is absolutely continuous with respect to $\mu$ even in the density sense used by the retained source solution, but
+$$
+\widehat\nu(n)=1
+$$
+for every integer $n$. Hence the printed conclusion fails.
+:::
+
+<1>2. The failure in step <1>1 comes from the fact that the characters
+$$
+x\longmapsto e^{2\pi i n x}
+$$
+identify the two distinct endpoints $0$ and $1$.
+
+::: {.proof}
+For every integer $n$,
+$$
+e^{2\pi i n\cdot0}=e^{2\pi i n\cdot1}=1.
+$$
+Thus the Fourier coefficients cannot distinguish $\delta_0$ from $\delta_1$, which is exactly the cancellation used in step <1>1.
+:::
+
+<1>3. The intended statement is true on the circle $\mathbb T=\RR/\ZZ$ (equivalently on the half-open interval $[0,1)$): if $\mu$ is a finite complex Borel measure on $\mathbb T$ with
+$$
+\widehat\mu(n)\to0
+\qquad(n\to\infty)
+$$
+and $\nu\ll\mu$, then
+$$
+\boxed{\widehat\nu(n)\to0}.
+$$
+
+::: {.proof}
+By the Radon--Nikodym theorem for complex measures, write
+$$
+d\nu=f\,d\mu
+$$
+with $f\in L^1(|\mu|)$. Let $\varepsilon>0$. Continuous functions are dense in $L^1(|\mu|)$ on the compact metric space $\mathbb T$, and trigonometric polynomials are uniformly dense in $C(\mathbb T)$ by the Stone--Weierstrass theorem. Hence there is a trigonometric polynomial
+$$
+P(x)=\sum_{m=-N}^N c_m e^{2\pi i m x}
+$$
+such that
+$$
+\int_{\mathbb T}|f-P|\,d|\mu|<\varepsilon.
+$$
+For every $n$,
+$$
+\begin{aligned}
+\left|\widehat\nu(n)-\int_{\mathbb T}e^{2\pi i n x}P(x)\,d\mu(x)\right|
+&=\left|\int_{\mathbb T}e^{2\pi i n x}(f-P)\,d\mu\right|\\
+&\le\int_{\mathbb T}|f-P|\,d|\mu|\\
+&<\varepsilon.
+\end{aligned}
+$$
+Moreover,
+$$
+\int_{\mathbb T}e^{2\pi i n x}P(x)\,d\mu(x)
+=\sum_{m=-N}^N c_m\widehat\mu(n+m)
+\longrightarrow0,
+$$
+because each $n+m\to\infty$ as $n\to\infty$ and the sum is finite. Therefore
+$$
+\limsup_{n\to\infty}|\widehat\nu(n)|\le\varepsilon.
+$$
+Since $\varepsilon>0$ is arbitrary, $\widehat\nu(n)\to0$.
+
+The same proof applies on $[0,1)$ after identifying it Borel-isomorphically with $\mathbb T$ by $x\mapsto e^{2\pi i x}$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 refutes the literal source statement, and step <1>3 proves the corrected periodic version that the retained source solution attempts to use.
+:::
+:::

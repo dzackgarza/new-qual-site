@@ -26,17 +26,17 @@ prompts:
 ::: {.example}
 Let $\pi \colon \tilde{X} = \Bl_p X \to X$ be the blowup of a smooth surface at a point, with exceptional curve $E \cong \PP^1$.
 Then
-\[
+$$
 \Pic \tilde{X} = \pi^* \Pic X \oplus \ZZ E ,
-\]
+$$
 and the intersection numbers are
-\[
+$$
 \pi^*C \cdot \pi^*D = C \cdot D , \qquad \pi^*C \cdot E = 0 , \qquad E^2 = -1 .
-\]
+$$
 For the canonical divisor,
-\[
+$$
 K_{\tilde{X}} = \pi^* K_X + E , \qquad K_{\tilde{X}}^2 = K_X^2 - 1 ,
-\]
+$$
 and $\chi(\OO)$, $p_g$ and $q$ are unchanged.
 :::
 
@@ -56,15 +56,15 @@ In particular every projective variety admits a desingularization by a sequence 
 
 ::: {.definition title="Strict transform"}
 For $C \subseteq X$ passing through $p$ with multiplicity $m$, the \dfn{strict transform} $\tilde{C}$ is the closure of $\pi^{-1}(C \setminus p)$, and
-\[
+$$
 \pi^* C = \tilde{C} + mE , \qquad \tilde{C}^2 = C^2 - m^2 , \qquad p_a(\tilde{C}) = p_a(C) - \binom{m}{2} .
-\]
+$$
 :::
 
 ::: {.remark}
-$E^2 = -1$ is the fact the rest hangs on, and it follows from $\pi^*C \cdot E = 0$ applied to a curve through $p$: writing $\pi^*C = \tilde{C} + E$ for a smooth $C$ gives $0 = \tilde{C}\cdot E + E^2 = 1 + E^2$.
+$E^2=-1$ follows from $\pi^*C\cdot E=0$ applied to a smooth curve $C$ through $p$: writing $\pi^*C=\tilde C+E$ gives $0=\tilde C\cdot E+E^2=1+E^2$.
 
-The genus drop is the tool for resolving plane curve singularities: blowing up an ordinary $m$-fold point removes $\binom{m}{2}$ from the arithmetic genus, which matches the delta invariant, so repeated blowups compute the geometric genus.
+Blowing up an ordinary $m$-fold point lowers the arithmetic genus by $\binom{m}{2}$, matching its delta invariant; repeated blowups therefore recover the geometric genus from the plane model.
 A node has $m=2$ and drops the genus by one.
 
 $K^2$ decreasing by one while $\chi(\OO)$ stays fixed is the numerical fingerprint of a blowup, and it is what Noether's formula balances: $c_2$ goes up by one.

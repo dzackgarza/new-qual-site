@@ -30,3 +30,53 @@ then the slope of the line tangent to the graph of $f$ at its $y$-intercept is
 (D) $1$
 (E) $\frac{\pi}{2} + 1$
 :::
+
+::: {.solution}
+The $y$-intercept occurs at $x=0$, so the required slope is $f'(0)$.
+
+<1>1. Writing
+$$
+f(x)=e^x(\arccos x)\sec x,
+$$
+one has
+$$
+f'(x)
+=e^x(\arccos x)\sec x
+-\frac{e^x\sec x}{\sqrt{1-x^2}}
++e^x(\arccos x)\sec x\tan x.
+$$
+
+::: {.proof}
+Apply the product rule to the three factors $e^x$, $\arccos x$, and $\sec x$, using
+$$
+\frac{d}{dx}\arccos x=-\frac1{\sqrt{1-x^2}}
+$$
+and
+$$
+\frac{d}{dx}\sec x=\sec x\tan x.
+$$
+:::
+
+<1>2. The tangent slope is
+$$
+\boxed{f'(0)=\frac\pi2-1},
+$$
+so the answer is (C).
+
+::: {.proof}
+Substitute
+$$
+e^0=1,\qquad \arccos0=\frac\pi2,\qquad \sec0=1,\qquad \tan0=0
+$$
+into step <1>1. This gives
+$$
+f'(0)=\frac\pi2-1+0.
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the slope at the $y$-intercept and corresponding choice.
+:::
+:::

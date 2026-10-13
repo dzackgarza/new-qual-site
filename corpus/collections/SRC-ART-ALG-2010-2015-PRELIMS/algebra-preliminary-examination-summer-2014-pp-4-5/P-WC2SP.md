@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked maximal-ideal existence, closure and unique maximality of the valuation ideal including a trivial absolute value, and every maximal ideal above M^n."
 ---
-
 ::: {.problem}
 A local ring is a commutative ring with 1 which has a unique maximal ideal.
 
@@ -50,7 +49,7 @@ Show that $R/M^n$ is a local ring.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If $A$ is a local ring with unique maximal ideal $M$, then
 $A^\times=A\setminus M$.
@@ -62,7 +61,7 @@ unit, then $1=u^{-1}u\in I$. Thus no element of $M$ is a unit.
 
 Conversely, if $a\in A$ is not a unit, then $(a)$ is proper.
 Every proper ideal of a commutative unital ring is contained in
-a maximal ideal. Order the proper ideals
+a maximal ideal. To recall the argument, order the proper ideals
 containing $(a)$ by inclusion. The union of any nonempty chain is
 an ideal containing $(a)$ and remains proper, since membership
 of $1$ in that union would put $1$ in a member of the chain.
@@ -73,7 +72,7 @@ of $A$ [@DF04]. By uniqueness it is $M$, so $a\in M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 In part (b), $R$ is local with unique maximal ideal
 $$
@@ -110,7 +109,7 @@ $\mathfrak m=(0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 In part (c), the unique maximal ideal of $R/M^n$ is $M/M^n$.
 
@@ -134,6 +133,12 @@ Maximality of $M$ and properness of $N$ give $N=M$, so
 $\mathfrak n=M/M^n$. Thus no other maximal ideal exists.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a)--(c), respectively.
 
 :::
 

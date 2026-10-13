@@ -38,7 +38,8 @@ A line on $S$ is a class $L$ with $L^2 = -1$ and $L \cdot K_S = -1$, and there a
 :::
 
 ::: {.remark}
-The count $6 + 15 + 6 = 27$ is the answer to give, and it is a computation in $\Pic$, not a geometric miracle: adjunction says a line has $2g-2 = -2 = L^2 + L\cdot K$, so $L^2 = -1$ and $L \cdot K = -1$, and enumerating integer solutions in the basis gives exactly those three families.
+The count $6+15+6=27$ is a computation in $\Pic(S)$: adjunction gives
+$-2=L^2+L\cdot K_S$ for a line, hence $L^2=-1$ and $L\cdot K_S=-1$, and enumerating the effective classes with these intersection numbers gives exactly the three families above.
 
 A line on $S$ is a $(-1)$-curve, so each of the $27$ can be contracted; different choices of six pairwise disjoint lines realise $S$ as a blowup of $\PP^2$ in different ways, which is why the configuration has a large symmetry group, the Weyl group of $E_6$ of order $51840$.
 

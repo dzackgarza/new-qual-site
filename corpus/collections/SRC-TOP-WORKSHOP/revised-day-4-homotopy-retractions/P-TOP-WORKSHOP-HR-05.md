@@ -23,3 +23,129 @@ g:T\to S^1\vee S^1
 \]
 such that $f\circ g$ is the identity map on $T$.
 :::
+
+::: {.solution}
+<1>1. The second homology group of the wedge is
+\[
+H_2(S^1\vee S^1;\mathbb Z)=0.
+\]
+
+::: {.proof}
+The space
+\[
+S^1\vee S^1
+\]
+is a $1$-dimensional CW complex: it has one $0$-cell and two $1$-cells, with no cells of dimension at least $2$.
+
+Hence its cellular chain group in degree $2$ is
+\[
+C_2^{\mathrm{cell}}(S^1\vee S^1)=0.
+\]
+Therefore
+\[
+H_2(S^1\vee S^1;\mathbb Z)=0.
+\]
+:::
+
+<1>2. The second homology group of the torus is
+\[
+H_2(T;\mathbb Z)\cong\mathbb Z.
+\]
+
+::: {.proof}
+Use the standard CW structure on the torus with one $0$-cell, two $1$-cells $a,b$, and one $2$-cell attached by the word
+\[
+aba^{-1}b^{-1}.
+\]
+Thus
+\[
+C_2^{\mathrm{cell}}(T)\cong\mathbb Z,
+\qquad
+C_1^{\mathrm{cell}}(T)\cong\mathbb Z^2.
+\]
+The cellular boundary of the $2$-cell records the total exponent sums of $a$ and $b$ in the attaching word. Both exponent sums are zero, so
+\[
+\partial_2=0.
+\]
+There are no $3$-cells, hence
+\[
+H_2(T;\mathbb Z)
+=
+\ker\partial_2
+\cong
+\mathbb Z.
+\]
+:::
+
+<1>3. Suppose there were a continuous map
+\[
+g:T\to S^1\vee S^1
+\]
+such that
+\[
+f\circ g=\operatorname{id}_T.
+\]
+Then on second homology,
+\[
+f_*\circ g_*
+=
+\operatorname{id}_{H_2(T;\mathbb Z)}.
+\]
+
+::: {.proof}
+Singular homology is functorial, so
+\[
+(f\circ g)_*
+=
+f_*\circ g_*.
+\]
+Under the assumed identity
+\[
+f\circ g=\operatorname{id}_T,
+\]
+the left-hand side is
+\[
+(\operatorname{id}_T)_*
+=
+\operatorname{id}_{H_2(T;\mathbb Z)}.
+\]
+:::
+
+<1>4. The identity in step <1>3 is impossible.
+
+::: {.proof}
+By step <1>1,
+\[
+H_2(S^1\vee S^1;\mathbb Z)=0.
+\]
+Therefore the homomorphism
+\[
+g_*:
+H_2(T;\mathbb Z)
+\longrightarrow
+H_2(S^1\vee S^1;\mathbb Z)
+\]
+is the zero map. Consequently
+\[
+f_*\circ g_*=0.
+\]
+
+But by step <1>2,
+\[
+H_2(T;\mathbb Z)\cong\mathbb Z\ne0,
+\]
+so its identity homomorphism is not the zero map. This contradicts step <1>3.
+:::
+
+<1>5. Therefore no such continuous map $g$ exists.
+
+::: {.proof}
+The assumption that $g$ exists leads to the contradiction in step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is exactly the required conclusion.
+:::
+:::

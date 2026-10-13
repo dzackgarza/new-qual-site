@@ -47,3 +47,313 @@ $$
 T \sum _ { n } { \frac { 1 } { i \omega _ { n } - \xi } } = { \frac { 1 } { e ^ { \beta \xi } + 1 } }
 $$
 :::
+
+::: {.remark}
+The bilateral Matsubara sums have terms of order $1/n$, so they are not
+ordinary absolutely convergent series. The values below are the contour
+summation values prescribed by the problem: first sum the residues at the
+Matsubara poles inside the chosen finite contour, then enlarge that contour and
+replace those residues by the finitely many remaining poles.
+:::
+
+::: {.solution}
+Assume $T>0$ and put
+$$
+\beta=T^{-1}.
+$$
+
+<1>1. In the bosonic case,
+$$
+h(w)=-\frac{T}{iw-\xi}
+$$
+has a simple pole at
+$$
+w=-i\xi.
+$$
+
+::: {.proof}
+The denominator vanishes exactly when
+$$
+iw-\xi=0,
+$$
+equivalently $w=-i\xi$.
+:::
+
+<1>2. The auxiliary function
+$$
+g_B(z)=\frac{\beta}{e^{\beta z}-1}
+$$
+has simple poles at
+$$
+z=i\omega_n=i2\pi nT,
+\qquad
+n\in\ZZ,
+$$
+and each such pole has residue $1$.
+
+::: {.proof}
+The poles satisfy
+$$
+e^{\beta z}=1,
+$$
+so
+$$
+\beta z=2\pi i n,
+$$
+hence
+$$
+z=i2\pi nT.
+$$
+At such a point $z_n$,
+$$
+\operatorname{Res}_{z=z_n}g_B(z)
+=
+\frac{\beta}{\beta e^{\beta z_n}}
+=1.
+$$
+:::
+
+<1>3. Define
+$$
+F_B(z)
+=
+g_B(z)h(-iz)
+=
+-\frac{1}{(e^{\beta z}-1)(z-\xi)}.
+$$
+At each Matsubara pole $z=i\omega_n$,
+$$
+\operatorname{Res}_{z=i\omega_n}F_B(z)
+=
+h(\omega_n).
+$$
+
+::: {.proof}
+Since
+$$
+h(-iz)
+=
+-\frac{T}{z-\xi},
+$$
+and
+$$
+T\beta=1,
+$$
+the displayed formula for $F_B$ follows. By step <1>2, the residue of $g_B$
+at $i\omega_n$ is $1$, so multiplying by the holomorphic factor
+$h(-iz)$ gives residue $h(\omega_n)$.
+:::
+
+<1>4. Besides the Matsubara poles, $F_B$ has a simple pole at
+$$
+z=\xi
+$$
+with residue
+$$
+\operatorname{Res}_{z=\xi}F_B(z)
+=
+-\frac{1}{e^{\beta\xi}-1}.
+$$
+
+::: {.proof}
+At $z=\xi$, only the factor $z-\xi$ vanishes, so
+$$
+\operatorname{Res}_{z=\xi}F_B(z)
+=
+\lim_{z\to\xi}
+(z-\xi)F_B(z)
+=
+-\frac{1}{e^{\beta\xi}-1}.
+$$
+:::
+
+<1>5. Under the contour prescription in the problem,
+$$
+\sum_{n\in\ZZ} h(\omega_n)
+=
+-\operatorname{Res}_{z=\xi}F_B(z).
+$$
+
+::: {.proof}
+For a finite contour enclosing a finite symmetric set of Matsubara poles and
+excluding $\xi$, the residue theorem and step <1>3 identify the contour
+integral with the corresponding finite Matsubara sum.
+
+Now enlarge and deform the contour as prescribed in the problem. The outer
+boundary contribution is discarded in this contour summation prescription,
+and reversing orientation leaves a negatively oriented contour around the
+remaining finite pole $z=\xi$. Hence the limiting Matsubara residue sum is
+the negative of the residue at $\xi$.
+:::
+
+<1>6. Therefore
+$$
+\boxed{
+-T
+\sum_{n\in\ZZ}
+\frac{1}{i\omega_n-\xi}
+=
+\frac{1}{e^{\beta\xi}-1}.
+}
+$$
+
+::: {.proof}
+By definition,
+$$
+h(\omega_n)
+=
+-\frac{T}{i\omega_n-\xi}.
+$$
+Combine steps <1>4 and <1>5.
+:::
+
+<1>7. This is the Bose distribution.
+
+::: {.proof}
+The right-hand side in step <1>6 is the Bose--Einstein occupation factor
+$$
+n_B(\xi)
+=
+\frac1{e^{\beta\xi}-1}.
+$$
+:::
+
+<1>8. In the fermionic case,
+$$
+g_F(z)
+=
+\frac{\beta}{e^{\beta z}+1}
+$$
+has simple poles at
+$$
+z=i\omega_n
+=
+i(2n+1)\pi T,
+\qquad
+n\in\ZZ,
+$$
+and each pole has residue $-1$.
+
+::: {.proof}
+The poles satisfy
+$$
+e^{\beta z}=-1,
+$$
+so
+$$
+\beta z=(2n+1)\pi i.
+$$
+At such a pole $z_n$,
+$$
+\operatorname{Res}_{z=z_n}g_F(z)
+=
+\frac{\beta}{\beta e^{\beta z_n}}
+=
+\frac{\beta}{-\beta}
+=
+-1.
+$$
+:::
+
+<1>9. Define
+$$
+F_F(z)
+=
+g_F(z)h(-iz)
+=
+-\frac{1}{(e^{\beta z}+1)(z-\xi)}.
+$$
+At each fermionic Matsubara pole,
+$$
+\operatorname{Res}_{z=i\omega_n}F_F(z)
+=
+\frac{T}{i\omega_n-\xi}.
+$$
+
+::: {.proof}
+As before,
+$$
+h(-iz)
+=
+-\frac{T}{z-\xi}.
+$$
+By step <1>8, the residue of $g_F$ at $i\omega_n$ is $-1$. Hence
+$$
+\operatorname{Res}_{z=i\omega_n}F_F(z)
+=
+(-1)
+\left(
+-\frac{T}{i\omega_n-\xi}
+\right)
+=
+\frac{T}{i\omega_n-\xi}.
+$$
+:::
+
+<1>10. The remaining pole of $F_F$ is at $z=\xi$, with residue
+$$
+\operatorname{Res}_{z=\xi}F_F(z)
+=
+-\frac{1}{e^{\beta\xi}+1}.
+$$
+
+::: {.proof}
+Only the factor $z-\xi$ vanishes at $z=\xi$, so
+$$
+\operatorname{Res}_{z=\xi}F_F(z)
+=
+\lim_{z\to\xi}(z-\xi)F_F(z)
+=
+-\frac{1}{e^{\beta\xi}+1}.
+$$
+:::
+
+<1>11. Under the same contour prescription,
+$$
+\sum_{n\in\ZZ}
+\frac{T}{i\omega_n-\xi}
+=
+-\operatorname{Res}_{z=\xi}F_F(z).
+$$
+
+::: {.proof}
+For each finite contour, step <1>9 identifies the enclosed fermionic
+Matsubara residues with the corresponding finite sum. Inflate and reverse the
+contour as in step <1>5. Under the prescribed regularization, the outer
+contribution is discarded and the remaining contour has negative orientation
+around $z=\xi$.
+:::
+
+<1>12. Therefore
+$$
+\boxed{
+T
+\sum_{n\in\ZZ}
+\frac{1}{i\omega_n-\xi}
+=
+\frac{1}{e^{\beta\xi}+1}.
+}
+$$
+
+::: {.proof}
+Combine steps <1>10 and <1>11.
+:::
+
+<1>13. This is the Fermi distribution.
+
+::: {.proof}
+The right-hand side in step <1>12 is the Fermi--Dirac occupation factor
+$$
+n_F(\xi)
+=
+\frac1{e^{\beta\xi}+1}.
+$$
+:::
+
+<1>14. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>7 establish the bosonic formula, and steps <1>8--<1>13
+establish the fermionic formula.
+:::
+:::

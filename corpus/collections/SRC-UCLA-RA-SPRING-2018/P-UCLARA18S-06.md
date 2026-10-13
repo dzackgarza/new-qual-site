@@ -32,3 +32,135 @@ F(\gamma)=\iint_{\mathbb T\times\mathbb T}
 \]
 achieves its minimum on $\mathcal M$.
 :::
+
+::: {.solution}
+<1>1. The set \(\mathcal M\) is nonempty.
+
+::: {.proof}
+The product probability measure
+\[
+\mu\times\nu
+\]
+belongs to \(\mathcal P(\mathbb T\times\mathbb T)\). For every
+\[
+f,g\in C(\mathbb T),
+\]
+Fubini's theorem gives
+\[
+\iint f(x)g(y)\,d(\mu\times\nu)(x,y)
+=
+\left(\int f\,d\mu\right)
+\left(\int g\,d\nu\right).
+\]
+Thus
+\[
+\mu\times\nu\in\mathcal M.
+\]
+:::
+
+<1>2. For
+\[
+x=e^{i\theta},
+\qquad
+y=e^{i\phi},
+\]
+the cost satisfies
+\[
+\boxed{
+\sin^2\!\left(\frac{\theta-\phi}{2}\right)
+=
+\frac12
+\left(
+1
+-
+\operatorname{Re}(x)\operatorname{Re}(y)
+-
+\operatorname{Im}(x)\operatorname{Im}(y)
+\right)}.
+\]
+
+::: {.proof}
+Use
+\[
+\sin^2\frac{\alpha}{2}
+=
+\frac{1-\cos\alpha}{2}
+\]
+and
+\[
+\cos(\theta-\phi)
+=
+\cos\theta\cos\phi
++
+\sin\theta\sin\phi.
+\]
+Since
+\[
+\operatorname{Re}(e^{i\theta})=\cos\theta,
+\qquad
+\operatorname{Im}(e^{i\theta})=\sin\theta,
+\]
+the displayed identity follows.
+:::
+
+<1>3. For every \(\gamma\in\mathcal M\),
+\[
+\begin{aligned}
+F(\gamma)
+=
+\frac12
+\Bigg[
+1
+&-
+\left(\int_{\mathbb T}\operatorname{Re}(x)\,d\mu(x)\right)
+\left(\int_{\mathbb T}\operatorname{Re}(y)\,d\nu(y)\right)\\
+&-
+\left(\int_{\mathbb T}\operatorname{Im}(x)\,d\mu(x)\right)
+\left(\int_{\mathbb T}\operatorname{Im}(y)\,d\nu(y)\right)
+\Bigg].
+\end{aligned}
+\]
+
+::: {.proof}
+The functions
+\[
+1,\qquad
+\operatorname{Re},\qquad
+\operatorname{Im}
+\]
+are continuous on \(\mathbb T\). Apply the defining identity of
+\(\mathcal M\) to the three product functions
+\[
+1\cdot1,\qquad
+\operatorname{Re}(x)\operatorname{Re}(y),\qquad
+\operatorname{Im}(x)\operatorname{Im}(y),
+\]
+and then use the cost decomposition from step <1>2.
+:::
+
+<1>4. The value in step <1>3 is independent of \(\gamma\).
+
+::: {.proof}
+Every quantity on the right-hand side depends only on the fixed measures
+\[
+\mu
+\qquad\text{and}\qquad
+\nu.
+\]
+Thus the same value is obtained for every \(\gamma\in\mathcal M\).
+:::
+
+<1>5. Therefore \(F\) attains its minimum on \(\mathcal M\).
+
+::: {.proof}
+By step <1>1, \(\mathcal M\ne\varnothing\). By step <1>4, \(F\) is constant
+on \(\mathcal M\). Hence every \(\gamma\in\mathcal M\), in particular
+\(\mu\times\nu\), is a minimizer.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves the claim.
+:::
+:::

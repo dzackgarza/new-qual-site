@@ -23,8 +23,6 @@ The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihi
 
 [[D-QFYAC]]
 
-[[FD-GOB47]]
-
 ## The relation between the two polynomials
 
 [[T-SJCF7]]
@@ -58,7 +56,7 @@ If $\chi_A = \prod_i q_i^{e_i}$ with the $q_i$ distinct monic irreducibles, then
 :::
 
 ::: {.example title="Polynomial long division"}
-For $f(x) \definedas x^3-6x^2+12x-8$, the rational root theorem restricts the rational roots to $\theset{\pm 8, \pm 4, \pm 2, \pm 1}$.
+For $f(x) \definedas x^3-6x^2+12x-8$, [[PR-RRTST|the rational root theorem]] restricts the rational roots to $\theset{\pm 8, \pm 4, \pm 2, \pm 1}$.
 Since $f(2) = 0$, divide by $x-2$:
 
 ![](../../../assets/figures/2021-07-24_18-32-38.png)

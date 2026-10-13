@@ -22,3 +22,235 @@ Using Stirling's approximation, find the leading behavior of:
 
 (b) $S = \log Z ( N , m )$ with $\begin{array} { r } { Z = \frac { N ! } { ( N - m ) ! m ! } } \end{array}$ for large N.
 :::
+
+::: {.solution}
+Use Stirling's formula
+$$
+n!
+\sim
+\sqrt{2\pi n}
+\left(\frac ne\right)^n.
+$$
+
+<1>1. One has
+$$
+\binom{2N}{N}
+=
+\frac{(2N)!}{(N!)^2}.
+$$
+
+::: {.proof}
+This is the definition of the central binomial coefficient.
+:::
+
+<1>2. Applying Stirling's formula to step <1>1 gives
+$$
+\binom{2N}{N}
+\sim
+\frac{
+\sqrt{4\pi N}
+\left(\frac{2N}{e}\right)^{2N}
+}{
+2\pi N
+\left(\frac Ne\right)^{2N}
+}.
+$$
+
+::: {.proof}
+Apply Stirling's formula to $(2N)!$ and to each factor $N!$.
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\binom{2N}{N}
+\sim
+\frac{4^N}{\sqrt{\pi N}}
+}.
+$$
+
+::: {.proof}
+In step <1>2,
+$$
+\left(
+\frac{2N}{N}
+\right)^{2N}
+=
+2^{2N}
+=
+4^N,
+$$
+and
+$$
+\frac{\sqrt{4\pi N}}{2\pi N}
+=
+\frac1{\sqrt{\pi N}}.
+$$
+:::
+
+<1>4. Part (a) follows.
+
+::: {.proof}
+This is step <1>3.
+:::
+
+<1>5. Assume
+$$
+m\to\infty
+\qquad\text{and}\qquad
+N-m\to\infty.
+$$
+Then
+$$
+Z(N,m)
+=
+\binom Nm
+\sim
+\sqrt{
+\frac{N}
+{2\pi m(N-m)}
+}
+\frac{
+N^N
+}{
+m^m(N-m)^{N-m}
+}.
+$$
+
+::: {.proof}
+Apply Stirling's formula to
+$$
+Z(N,m)
+=
+\frac{N!}{m!(N-m)!}.
+$$
+The exponential factors $e^{-N}$, $e^{-m}$, and $e^{-(N-m)}$ cancel because
+$$
+m+(N-m)=N.
+$$
+The square-root prefactors simplify to
+$$
+\frac{\sqrt{2\pi N}}
+{\sqrt{2\pi m}\sqrt{2\pi(N-m)}}
+=
+\sqrt{
+\frac{N}
+{2\pi m(N-m)}
+}.
+$$
+:::
+
+<1>6. Taking logarithms in step <1>5 gives
+$$
+\boxed{
+\begin{aligned}
+S
+&=
+N\log N
+-
+m\log m
+-
+(N-m)\log(N-m)\\
+&\qquad
+-
+\frac12
+\log\left(
+\frac{2\pi m(N-m)}{N}
+\right)
++
+o(1).
+\end{aligned}
+}
+$$
+
+::: {.proof}
+Take the logarithm of the asymptotic formula in step <1>5. Since the quotient
+of the two sides tends to $1$, the logarithm of that quotient is $o(1)$.
+:::
+
+<1>7. If
+$$
+m=pN
+$$
+with fixed
+$$
+0<p<1,
+$$
+then
+$$
+\boxed{
+S
+=
+N
+\left[
+-p\log p
+-
+(1-p)\log(1-p)
+\right]
+-
+\frac12
+\log\left(
+2\pi Np(1-p)
+\right)
++
+o(1).
+}
+$$
+
+::: {.proof}
+Substitute
+$$
+m=pN,
+\qquad
+N-m=(1-p)N
+$$
+into step <1>6. The coefficients of $\log N$ in the leading terms cancel:
+$$
+N-pN-(1-p)N=0.
+$$
+after collecting the three logarithmic contributions, leaving
+$$
+-Np\log p
+-
+N(1-p)\log(1-p).
+$$
+The square-root correction becomes
+$$
+-\frac12
+\log\left(
+2\pi Np(1-p)
+\right).
+$$
+:::
+
+<1>8. The leading extensive behavior in the fixed-density regime is
+$$
+\boxed{
+S
+\sim
+N
+\left[
+-p\log p
+-
+(1-p)\log(1-p)
+\right].
+}
+$$
+
+::: {.proof}
+The logarithmic correction in step <1>7 is lower order than $N$.
+:::
+
+<1>9. Part (b) follows.
+
+::: {.proof}
+Step <1>6 gives the general Stirling form when both $m$ and $N-m$ grow, and
+steps <1>7--<1>8 give the standard fixed-density large-$N$ form.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>4 and <1>9 establish parts (a) and (b), respectively.
+:::
+:::

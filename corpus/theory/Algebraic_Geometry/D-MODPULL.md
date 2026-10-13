@@ -24,7 +24,7 @@ prompts:
 
 ::: {.definition title="Topological inverse image"}
 Let $f: X \to Y$ be a continuous map and $\mcg$ a sheaf on $Y$.
-The \dfn{inverse image sheaf} $\inverseof{f} \mcg$ is the sheafification of the presheaf
+The \dfn{inverse image sheaf} $f\inv \mcg$ is the sheafification of the presheaf
 $$
 U \mapsto \colim_{V \supseteq f(U)} \mcg(V) ,
 $$
@@ -42,9 +42,9 @@ If $\mcg$ is an $\OO_Y$-module, then $\inverseof{f} \mcg$ is an $\inverseof{f} \
 For $f: X \to Y$ of ringed spaces, $f_*\mcf$ is the $\OO_Y$-module $U \mapsto \mcf(\inverseof{f} U)$.
 For $\mcg \in \mods{\OO_Y}$, the \dfn{inverse image} is
 $$
-f^*\mcg \definedas \inverseof{f} \mcg \tensor_{\inverseof{f} \OO_Y} \OO_X ,
+f^*\mcg \definedas f\inv \mcg \tensor_{f\inv \OO_Y} \OO_X ,
 $$
-the sheaf-theoretic inverse image, base changed along $\inverseof{f}\OO_Y \to \OO_X$.
+the sheaf-theoretic inverse image, base changed along $f\inv\OO_Y \to \OO_X$.
 :::
 
 ::: {.proposition}
@@ -56,10 +56,11 @@ $f^*$ preserves quasicoherence always, and coherence when $f$ is a morphism of N
 :::
 
 ::: {.remark}
-For a morphism $\Spec B\to\Spec A$ of affine schemes, $f^*\tilde M\cong\widetilde{M\tensor_AB}$, so $f^*$ is right exact on quasicoherent sheaves.
-The functor $f_*$ is left exact, and its right derived functors are the higher direct images $R^i f_*$.
-For $f: \AA^1_k \to \Spec k$, $f_*\OO_{\AA^1}$ corresponds to the $k$-module $k[t]$, which is not finitely generated, so $f_*$ does not preserve coherence.
-If $Y$ is Noetherian, $f$ is projective, and $\mcf$ is coherent, then every $R^i f_*\mcf$ is coherent [@Har10a, Theorem III.8.8]; the same holds for $f$ proper.
+Pullback and pushforward have different exactness behavior.
+$f^*$ is right exact: on affines it is $\wait \tensor_A B$.
+It is exact when $B$ is flat over $A$, equivalently when the corresponding morphism is flat.
+$f_*$ is only left exact, and its failure to be exact is the definition of higher direct images $R^i f_*$; its failure to preserve coherence is visible already in $f: \AA^1_k \to \Spec k$, where $f_*\OO_{\AA^1}$ has global sections $k[t]$, not finite over $k$.
+For a proper morphism of Noetherian schemes and coherent $\mcf$, every $R^i f_*\mcf$ is coherent.
 
 On line bundles $f^*$ is a group homomorphism $\Pic(Y) \to \Pic(X)$.
 A very ample line bundle is obtained by pulling back $\OO(1)$ along an immersion into projective space.

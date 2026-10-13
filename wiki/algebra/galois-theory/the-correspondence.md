@@ -12,10 +12,6 @@ topics:
 
 [[D-5JYEI]]
 
-[[FD-4GFTY]]
-
-[[FT-3WWKN]]
-
 [[FD-YJEDU]]
 
 [[FE-Z4VF2]]
@@ -27,8 +23,6 @@ topics:
 ## The fundamental theorem
 
 [[T-NLPZY]]
-
-[[FT-GJ6NR]]
 
 [[T-SGY3O]]
 
@@ -95,8 +89,6 @@ Modulo $2$, $f(0)=f(1)=1$, so $f$ has no linear factor, and the only monic irred
 :::
 
 [[T-CF6S3]]
-
-[[FT-2P5VV]]
 
 ::: {.remark title="Shifting"}
 For $a\in\ZZ$, $g(x)\mapsto g(x+a)$ is a ring automorphism of $\QQ[x]$, so if $f(x+a)$ satisfies Eisenstein's criterion at $p$, then $f$ is irreducible.

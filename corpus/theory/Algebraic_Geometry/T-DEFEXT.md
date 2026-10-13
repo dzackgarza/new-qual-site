@@ -16,18 +16,31 @@ relations:
   target: D-COTCPLX
 review: draft
 prompts:
-- For $X \to B$ smooth, why is $\operatorname{Ext}^0(\Omega_{X/B}, \OO_X) \cong H^0(T_{X/B})$, and why does it measure infinitesimal automorphisms?
-- Why does $\operatorname{Ext}^1(\Omega_{X/B}, \OO_X)$ measure first-order deformations?
+- For $X/k$ smooth, why is $\operatorname{Ext}^0_{\OO_X}(\Omega_{X/k}, \OO_X) \cong H^0(X,T_X)$, and why does it measure infinitesimal automorphisms?
+- Why does $\operatorname{Ext}^1_{\OO_X}(\Omega_{X/k}, \OO_X)$ measure first-order deformations?
 ---
 
-Let $k$ be a field, $D = \Spec k[\varepsilon]/(\varepsilon^2)$, and $X$ a smooth separated scheme of finite type over $k$ with tangent sheaf $T_X = \mathcal{H}om(\Omega_{X/k}, \OO_X)$.
+Let $k$ be a field, let $D=\Spec k[\varepsilon]/(\varepsilon^2)$, and let $X$ be a smooth separated scheme of finite type over $k$. Write
+$$
+T_X\coloneqq\mathcal{H}om_{\OO_X}(\Omega_{X/k},\OO_X).
+$$
 
 ::: {.theorem}
-1. $\operatorname{Ext}^0(\Omega_{X/k}, \OO_X) = H^0(X, T_X)$, and it is in bijection with the automorphisms of $X \times D$ over $D$ that restrict to the identity on $X$.
+1. There is a natural isomorphism
+   $$
+   \operatorname{Ext}^0_{\OO_X}(\Omega_{X/k},\OO_X)
+   \cong H^0(X,T_X),
+   $$
+   and this vector space parametrizes automorphisms of $X\times_kD$ over $D$ that restrict to the identity on the special fibre $X$.
 
-2. $\operatorname{Ext}^1(\Omega_{X/k}, \OO_X) = H^1(X, T_X)$, and it is in bijection with the isomorphism classes of first-order deformations: flat $D$-schemes $\mathcal{X}$ with $\mathcal{X} \times_D \Spec k \cong X$.
+2. Since $\Omega_{X/k}$ is locally free,
+   $$
+   \operatorname{Ext}^1_{\OO_X}(\Omega_{X/k},\OO_X)
+   \cong H^1(X,T_X).
+   $$
+   This group parametrizes isomorphism classes of first-order deformations: flat $D$-schemes $\mathcal X$ equipped with an identification $\mathcal X\times_D\Spec k\cong X$.
 
-3. Let $A_n = k[t]/(t^{n+1})$ for $n \geq 1$, so $A_1 \cong k[\varepsilon]/(\varepsilon^2)$.
+3. Let $A_n\coloneqq k[t]/(t^{n+1})$ for $n \geq 1$, so $A_1 \cong k[\varepsilon]/(\varepsilon^2)$.
    A flat deformation $\mathcal{X}_n$ of $X$ over $A_n$ determines an obstruction class $o(\mathcal{X}_n) \in H^2(X, T_X)$, and $o(\mathcal{X}_n) = 0$ if and only if there is a flat deformation $\mathcal{X}_{n+1}$ over $A_{n+1}$ with $\mathcal{X}_{n+1} \times_{A_{n+1}} \Spec A_n \cong \mathcal{X}_n$.
 :::
 

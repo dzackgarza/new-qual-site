@@ -18,3 +18,158 @@ audit:
 ::: {.problem}
 [NEW] Let R be a commutative ring with identity and let $I _ { 1 } , I _ { 2 } , \ldots , I _ { n }$ be pairwise comaximal ideals of $R \ ( { \mathrm { i . e . , } } \ I _ { i } + I _ { j } = R { \mathrm { i f } } \ i \neq j )$ . Show that $I _ { i } + \bigcap I _ { j } = R$ for all i.
 :::
+
+::: {.remark}
+Erratum: the intersection must exclude $I_i$. The literal statement
+$$
+I_i+\bigcap_j I_j=R
+$$
+is generally false because
+$$
+\bigcap_j I_j\subseteq I_i.
+$$
+The intended conclusion is
+$$
+I_i+\bigcap_{j\ne i}I_j=R.
+$$
+:::
+
+::: {.solution}
+Fix
+$$
+i\in\{1,\ldots,n\}.
+$$
+
+<1>1. For each
+$$
+j\ne i,
+$$
+there exist
+$$
+a_j\in I_i,
+\qquad
+b_j\in I_j
+$$
+such that
+$$
+a_j+b_j=1.
+$$
+
+::: {.proof}
+Pairwise comaximality gives
+$$
+I_i+I_j=R
+$$
+for every $j\ne i$. Hence
+$$
+1\in I_i+I_j,
+$$
+so one can write
+$$
+1=a_j+b_j
+$$
+with
+$$
+a_j\in I_i,
+\qquad
+b_j\in I_j.
+$$
+:::
+
+<1>2. Define
+$$
+b
+\coloneqq
+\prod_{j\ne i}b_j.
+$$
+Then
+$$
+b\in\bigcap_{j\ne i}I_j.
+$$
+
+::: {.proof}
+Fix
+$$
+k\ne i.
+$$
+The product defining $b$ contains the factor
+$$
+b_k\in I_k.
+$$
+Since $I_k$ is an ideal, multiplying $b_k$ by the remaining factors keeps the result in $I_k$. Therefore
+$$
+b\in I_k.
+$$
+As this holds for every $k\ne i$,
+$$
+b\in\bigcap_{j\ne i}I_j.
+$$
+:::
+
+<1>3. One has
+$$
+1-b\in I_i.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+b_j
+=
+1-a_j
+\equiv
+1
+\pmod{I_i}
+$$
+for every $j\ne i$. Therefore
+$$
+b
+=
+\prod_{j\ne i}b_j
+\equiv
+1
+\pmod{I_i}.
+$$
+Hence
+$$
+1-b\in I_i.
+$$
+:::
+
+<1>4. Therefore
+$$
+\boxed{
+I_i
++
+\bigcap_{j\ne i}I_j
+=
+R.
+}
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+b\in\bigcap_{j\ne i}I_j,
+$$
+and by step <1>3,
+$$
+1-b\in I_i.
+$$
+Thus
+$$
+1
+=
+(1-b)+b
+\in
+I_i+\bigcap_{j\ne i}I_j.
+$$
+Any ideal containing $1$ is the whole ring, so the sum equals $R$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+The index $i$ was arbitrary, so step <1>4 proves the corrected conclusion for every $i$.
+:::
+:::

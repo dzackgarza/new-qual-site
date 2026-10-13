@@ -24,3 +24,157 @@ $$
 
 Prove that there exists a differentiable function $f ( x , y )$ defined in an open neighborhood N of $( 1 , 1 )$ in $\mathbf { R } ^ { 2 }$ such that $f ( 1 , 1 ) = 1$ and $( x , y , f ( x , y ) )$ lies in S for all $( x , y ) \in \mathcal { N }$
 :::
+
+::: {.solution}
+Define
+\[
+G(x,y,z)
+=
+x^2y^3+x^3z+2yz^4-4.
+\]
+Then
+\[
+S=G^{-1}(0).
+\]
+
+<1>1. One has
+\[
+G(1,1,1)=0.
+\]
+
+::: {.proof}
+Direct substitution gives
+\[
+1^2\cdot1^3+1^3\cdot1+2\cdot1\cdot1^4-4
+=
+1+1+2-4
+=0.
+\]
+:::
+
+<1>2. The partial derivative of $G$ with respect to $z$ is
+\[
+G_z(x,y,z)
+=
+x^3+8yz^3.
+\]
+
+::: {.proof}
+Differentiate the polynomial term by term with respect to $z$:
+\[
+\frac{\partial}{\partial z}(x^2y^3)=0,
+\]
+\[
+\frac{\partial}{\partial z}(x^3z)=x^3,
+\]
+and
+\[
+\frac{\partial}{\partial z}(2yz^4)=8yz^3.
+\]
+:::
+
+<1>3. At the point $(1,1,1)$,
+\[
+\boxed{G_z(1,1,1)=9\ne0}.
+\]
+
+::: {.proof}
+By step <1>2,
+\[
+G_z(1,1,1)
+=
+1^3+8\cdot1\cdot1^3
+=
+1+8
+=9.
+\]
+:::
+
+<1>4. The function $G$ is continuously differentiable near $(1,1,1)$.
+
+::: {.proof}
+The function $G$ is a polynomial in $(x,y,z)$.
+Hence it is smooth, in particular $C^1$, on all of $\mathbb R^3$.
+:::
+
+<1>5. There exist open neighborhoods
+\[
+N\subseteq\mathbb R^2
+\]
+of $(1,1)$ and
+\[
+J\subseteq\mathbb R
+\]
+of $1$, together with a continuously differentiable function
+\[
+f:N\to J
+\]
+such that
+\[
+f(1,1)=1
+\]
+and
+\[
+G(x,y,f(x,y))=0
+\]
+for every $(x,y)\in N$.
+
+::: {.proof}
+Apply the implicit function theorem to
+\[
+G:\mathbb R^2\times\mathbb R\to\mathbb R
+\]
+at the point
+\[
+((1,1),1).
+\]
+The hypotheses are satisfied:
+\[
+G(1,1,1)=0
+\]
+by step <1>1,
+\[
+G
+\]
+is $C^1$ by step <1>4, and the derivative with respect to the dependent variable $z$ is invertible as a linear map
+\[
+\mathbb R\to\mathbb R
+\]
+because
+\[
+G_z(1,1,1)=9\ne0
+\]
+by step <1>3.
+Therefore the implicit function theorem gives the stated neighborhoods and function.
+:::
+
+<1>6. For every $(x,y)\in N$,
+\[
+\boxed{(x,y,f(x,y))\in S}.
+\]
+
+::: {.proof}
+By step <1>5,
+\[
+G(x,y,f(x,y))=0.
+\]
+Since
+\[
+S=G^{-1}(0),
+\]
+this is exactly the condition that
+\[
+(x,y,f(x,y))\in S.
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the differentiable function with
+\[
+f(1,1)=1,
+\]
+and step <1>6 proves that its graph lies on the surface $S$ near $(1,1,1)$.
+:::
+:::

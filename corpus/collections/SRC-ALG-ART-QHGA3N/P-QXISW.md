@@ -19,7 +19,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Let $p$ be a prime.
 Show that $S_p = \generators{\tau, \sigma}$ where $\tau$ is a transposition and $\sigma$ is a $p\dash$cycle.
@@ -31,7 +30,7 @@ Show that $S_p = \generators{\tau, \sigma}$ where $\tau$ is a transposition and 
 
 ::: pf-step
 
-Label the letters moved by \(\sigma\) as the elements of \(\mathbb Z/p\mathbb Z\) so that
+Label the letters moved by \(\sigma\) as the elements of \(\ZZ/p\ZZ\) so that
 \[
 \sigma(i)=i+1.
 \]
@@ -39,11 +38,11 @@ Write the transposition as
 \[
 \tau=(a,\,a+d)
 \]
-for some nonzero \(d\in\mathbb Z/p\mathbb Z\).
+for some nonzero \(d\in\ZZ/p\ZZ\).
 
 ::: pf-proof
 
-A \(p\)-cycle acts transitively on the \(p\) letters, so after relabeling we may identify its action with translation by \(1\) on \(\mathbb Z/p\mathbb Z\). Since \(\tau\) is a transposition, its two entries are distinct, hence their difference \(d\) is nonzero.
+A \(p\)-cycle acts transitively on the \(p\) letters, so after relabeling we may identify its action with translation by \(1\) on \(\ZZ/p\ZZ\). Since \(\tau\) is a transposition, its two entries are distinct, hence their difference \(d\) is nonzero.
 
 :::
 
@@ -51,7 +50,7 @@ A \(p\)-cycle acts transitively on the \(p\) letters, so after relabeling we may
 
 ::: {.pf-step #s2}
 
-For every \(k\in\mathbb Z/p\mathbb Z\), the subgroup \(\langle\tau,\sigma\rangle\) contains the transposition
+For every \(k\in\ZZ/p\ZZ\), the subgroup \(\langle\tau,\sigma\rangle\) contains the transposition
 \[
 (a+k,\,a+d+k).
 \]
@@ -70,7 +69,7 @@ Since \(\tau,\sigma\in\langle\tau,\sigma\rangle\), every such conjugate lies in 
 
 ::: {.pf-step #s3}
 
-The graph on \(\mathbb Z/p\mathbb Z\) with edges
+The graph on \(\ZZ/p\ZZ\) with edges
 \[
 \{i,i+d\}
 \]
@@ -78,7 +77,7 @@ is connected.
 
 ::: pf-proof
 
-Because \(p\) is prime and \(d\neq0\), the element \(d\) generates the additive group \(\mathbb Z/p\mathbb Z\). Thus from any vertex \(i\), repeated addition of \(d\) reaches every vertex.
+Because \(p\) is prime and \(d\neq0\), the element \(d\) generates the additive group \(\ZZ/p\ZZ\). Thus from any vertex \(i\), repeated addition of \(d\) reaches every vertex.
 
 :::
 
@@ -94,10 +93,7 @@ Fix a spanning tree and a root vertex \(r\). Along the unique path
 \[
 r=v_0,v_1,\dots,v_m=v
 \]
-the edge transpositions generate the transposition \((r,v)\): by induction on \(m\), the subgroup contains \((r,v_{m-1})\), and
-\[
-(r,v_m)=(r,v_{m-1})(v_{m-1},v_m)(r,v_{m-1}).
-\] Hence all transpositions \((r,v)\) lie in the generated subgroup. These star transpositions generate \(S_p\), since
+the edge transpositions generate the transposition \((r,v)\); explicitly, conjugating \((v_{m-1},v_m)\) by a product carrying \(r\) to \(v_{m-1}\) gives \((r,v)\). Hence all transpositions \((r,v)\) lie in the generated subgroup. These star transpositions generate \(S_p\), since
 \[
 (u,v)=(r,u)(r,v)(r,u).
 \]
@@ -106,11 +102,11 @@ the edge transpositions generate the transposition \((r,v)\): by induction on \(
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 Therefore
 \[
-S_p=\langle\tau,\sigma\rangle.
+\boxed{S_p=\langle\tau,\sigma\rangle}.
 \]
 
 ::: pf-proof
@@ -118,6 +114,12 @@ S_p=\langle\tau,\sigma\rangle.
 By step [](#s2){.pf-ref}, \(\langle\tau,\sigma\rangle\) contains every edge transposition of the connected graph in step [](#s3){.pf-ref}. By step [](#s4){.pf-ref} these transpositions generate \(S_p\). The reverse inclusion is automatic because \(\tau,\sigma\in S_p\).
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required equality.
 
 :::
 

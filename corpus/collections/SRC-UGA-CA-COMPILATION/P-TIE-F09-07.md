@@ -40,3 +40,189 @@ $$
 $$
 With $n = 1$ and $a = 1 - s$ for $0 < s < 1$ it reads $\int_0^\infty \frac{v^{-s}}{1+v}\,dv = \frac{\pi}{\sin \pi s}$, which the hint turns into the reflection formula.
 :::
+
+::: {.solution}
+For $t>0$ and $s\in\CC$, write
+$$
+t^{s-1}=e^{(s-1)\log t},
+$$
+where $\log t$ is the real logarithm.
+
+<1>1. For $0<\varepsilon<R<\infty$, the function
+$$
+\Gamma_{\varepsilon,R}(s)
+=
+\int_\varepsilon^R e^{-t}t^{s-1}\,dt
+$$
+is entire in $s$.
+
+::: {.proof}
+On the compact interval $[\varepsilon,R]$, the function
+$$
+(s,t)\longmapsto e^{-t}e^{(s-1)\log t}
+$$
+is continuous and entire in $s$ for each fixed $t$. On every compact subset of the
+$s$-plane, its $s$-derivatives are uniformly bounded on $[\varepsilon,R]$. Hence
+differentiation under the finite integral is valid and gives
+$$
+\Gamma_{\varepsilon,R}'(s)
+=
+\int_\varepsilon^R e^{-t}t^{s-1}\log t\,dt.
+$$
+Thus $\Gamma_{\varepsilon,R}$ is entire.
+:::
+
+<1>2. The improper integrals
+$$
+\int_0^\infty e^{-t}t^{s-1}\,dt
+$$
+converge uniformly for $s$ in every compact subset of
+$$
+H=\{s\in\CC:\Re s>0\}.
+$$
+
+::: {.proof}
+Let $K\subset H$ be compact. Put
+$$
+\delta=\min_{s\in K}\Re s>0,
+\qquad
+M=\max_{s\in K}\Re s.
+$$
+For $0<t\le1$ and $s\in K$,
+$$
+|e^{-t}t^{s-1}|
+\le
+t^{\delta-1},
+$$
+and
+$$
+\int_0^1 t^{\delta-1}\,dt<\infty.
+$$
+For $t\ge1$ and $s\in K$,
+$$
+|e^{-t}t^{s-1}|
+\le
+e^{-t}t^{M-1},
+$$
+whose integral over $[1,\infty)$ is finite. The two majorants give uniform control of the
+tails at $0$ and at $\infty$, uniformly for $s\in K$.
+:::
+
+<1>3. The function
+$$
+\boxed{
+\Gamma(s)=\int_0^\infty e^{-t}t^{s-1}\,dt
+}
+$$
+is analytic on $\Re s>0$.
+
+::: {.proof}
+Choose sequences $\varepsilon_j\downarrow0$ and $R_j\uparrow\infty$. By step <1>2,
+$$
+\Gamma_{\varepsilon_j,R_j}(s)
+\longrightarrow
+\int_0^\infty e^{-t}t^{s-1}\,dt
+$$
+uniformly on every compact subset of $H$. Each truncated function is entire by step <1>1.
+The locally uniform limit of analytic functions is analytic, so the displayed integral defines
+an analytic function on $H$. For real $s>0$ it is the original defining integral, hence this is
+the analytic extension of the gamma function.
+:::
+
+<1>4. For real $0<s<1$ and every $t>0$,
+$$
+\Gamma(1-s)
+=
+t\int_0^\infty e^{-vt}(vt)^{-s}\,dv.
+$$
+
+::: {.proof}
+Starting from step <1>3,
+$$
+\Gamma(1-s)
+=
+\int_0^\infty e^{-u}u^{-s}\,du.
+$$
+Substitute $u=vt$, so $du=t\,dv$. This gives exactly the stated formula.
+:::
+
+<1>5. For real $0<s<1$,
+$$
+\Gamma(s)\Gamma(1-s)
+=
+\int_0^\infty\frac{v^{-s}}{1+v}\,dv.
+$$
+
+::: {.proof}
+Using step <1>4,
+$$
+\begin{aligned}
+\Gamma(s)\Gamma(1-s)
+&=
+\int_0^\infty
+e^{-t}t^{s-1}
+\left(
+t\int_0^\infty e^{-vt}(vt)^{-s}\,dv
+\right)dt\\
+&=
+\int_0^\infty\int_0^\infty
+e^{-(1+v)t}v^{-s}\,dv\,dt.
+\end{aligned}
+$$
+For real $0<s<1$ the integrand is nonnegative, so Tonelli's theorem permits reversing the
+order of integration. Therefore
+$$
+\begin{aligned}
+\Gamma(s)\Gamma(1-s)
+&=
+\int_0^\infty
+v^{-s}
+\left(
+\int_0^\infty e^{-(1+v)t}\,dt
+\right)dv\\
+&=
+\int_0^\infty\frac{v^{-s}}{1+v}\,dv.
+\end{aligned}
+$$
+:::
+
+<1>6. For real $0<s<1$,
+$$
+\Gamma(s)\Gamma(1-s)
+=
+\boxed{\frac{\pi}{\sin\pi s}}.
+$$
+
+::: {.proof}
+The formula quoted from the preceding problem, with $n=1$ and $a=1-s$, gives
+$$
+\int_0^\infty\frac{v^{-s}}{1+v}\,dv
+=
+\frac{\pi}{\sin(\pi(1-s))}
+=
+\frac{\pi}{\sin\pi s}.
+$$
+Combine this with step <1>5.
+:::
+
+<1>7. The reflection formula holds for every complex $s$ with
+$$
+0<\Re s<1.
+$$
+
+::: {.proof}
+By step <1>3, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip
+$0<\Re s<1$. Since $\sin\pi s$ has no zero in this open strip, so is
+$$
+\frac{\pi}{\sin\pi s}.
+$$
+Step <1>6 proves equality on the real interval $(0,1)$, which has accumulation points inside
+the strip. The identity theorem therefore gives the equality throughout the strip.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves part (a), and steps <1>4--<1>7 prove part (b).
+:::
+:::

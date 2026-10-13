@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Verified all three implications in the local-ring characterization and the power-series example.
 ---
-
 ::: {.problem}
 Let A be a commutative ring with identity which is not a field.
 Prove that the following conditions are equivalent.
@@ -44,13 +43,13 @@ We prove
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 \((a)\Rightarrow(b)\): the nonunits form a proper ideal.
 
 ::: pf-proof
 
-Since \(0\cdot c=0\ne1\) for every \(c\), \(0\in N\). If \(a\in N\), then \(-a\in N\), because if \(-a\) were invertible then so would \(a=-(-a)\). By hypothesis (a), if \(a,b\in N\), then
+Certainly \(0\in N\). If \(a\in N\), then \(-a\in N\), because if \(-a\) were invertible then so would \(a=-(-a)\). By hypothesis (a), if \(a,b\in N\), then
 \[
 a+b\in N.
 \]
@@ -72,7 +71,7 @@ Finally, \(1\notin N\), so \(N\ne A\). Hence \(N\) is a proper ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 \((b)\Rightarrow(c)\): \(A\) has a unique maximal ideal.
 
@@ -102,7 +101,7 @@ Therefore \(N\) is the unique maximal ideal of \(A\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 \((c)\Rightarrow(a)\): sums of nonunits are nonunits.
 
@@ -128,7 +127,7 @@ Every element of a proper ideal is a nonunit, so \(x+y\) is noninvertible. This 
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Example: the formal power-series ring \(k[[t]]\).
 
@@ -149,6 +148,12 @@ Thus \(k[[t]]\) has the unique maximal ideal
 Since \((t)\ne0\), the ring is not a field, and it satisfies the three equivalent conditions.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s3){.pf-ref} prove the equivalence, and step [](#s4){.pf-ref} gives the requested example.
 
 :::
 

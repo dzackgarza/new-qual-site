@@ -18,3 +18,56 @@ audit:
 ::: {.problem}
 $\mathrm { C a l c u l a t e } \int \frac { d x } { \tan x }$
 :::
+
+::: {.solution}
+<1>1. One has
+$$
+\frac1{\tan x}
+=
+\frac{\cos x}{\sin x}.
+$$
+
+::: {.proof}
+Since
+$$
+\tan x=\frac{\sin x}{\cos x},
+$$
+taking the reciprocal gives the identity wherever the integrand is defined.
+:::
+
+<1>2. Set
+$$
+u=\sin x.
+$$
+Then
+$$
+du=\cos x\,dx.
+$$
+
+::: {.proof}
+Differentiate $u=\sin x$.
+:::
+
+<1>3. Therefore
+$$
+\int\frac{dx}{\tan x}
+=
+\int\frac{du}{u}
+=
+\boxed{\log|\sin x|+C}.
+$$
+
+::: {.proof}
+Use steps <1>1--<1>2 and the antiderivative
+$$
+\int\frac{du}{u}=\log|u|+C.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required antiderivative on each interval where
+$\sin x\neq0$.
+:::
+:::

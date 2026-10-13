@@ -31,3 +31,89 @@ $$
 
 where L is the part of the circle $| z | = R ^ { \prime }$ which lies in the region D.
 :::
+
+::: {.solution}
+For $r>R$, parametrize the positively oriented arc $L_r$ by
+$$
+z(t)=re^{it},
+\qquad 0\le t\le\theta.
+$$
+
+<1>1. The integral over $L_r$ satisfies
+$$
+\int_{L_r} f(z)\,dz
+=
+i\int_0^\theta re^{it}f(re^{it})\,dt.
+$$
+
+::: {.proof}
+Under the parametrization above,
+$$
+dz=ire^{it}\,dt.
+$$
+Substitution into the contour integral gives
+$$
+\int_{L_r} f(z)\,dz
+=
+\int_0^\theta f(re^{it})ire^{it}\,dt
+=
+i\int_0^\theta re^{it}f(re^{it})\,dt.
+$$
+:::
+
+<1>2. One has
+$$
+\lim_{r\to\infty}
+\int_0^\theta
+\left(re^{it}f(re^{it})-k\right)\,dt
+=0.
+$$
+
+::: {.proof}
+Since $zf(z)\to k$ as $z\to\infty$ in $D$, for every $\varepsilon>0$ there exists $M>0$ such that
+$$
+\abs{zf(z)-k}<\frac{\varepsilon}{1+\theta}
+$$
+whenever $z\in D$ and $\abs{z}>M$. If $r>M$, then $re^{it}\in D$ and $\abs{re^{it}}=r>M$ for every $t\in[0,\theta]$. Hence
+$$
+\begin{aligned}
+\abs{
+\int_0^\theta
+\left(re^{it}f(re^{it})-k\right)\,dt
+}
+&\le
+\int_0^\theta
+\abs{re^{it}f(re^{it})-k}\,dt \\
+&\le
+\frac{\theta}{1+\theta}\varepsilon
+<\varepsilon.
+\end{aligned}
+$$
+This proves the asserted limit.
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\lim_{r\to\infty}\int_{L_r}f(z)\,dz
+=i\theta k.
+}
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\int_{L_r}f(z)\,dz-i\theta k
+=
+i\int_0^\theta
+\left(re^{it}f(re^{it})-k\right)\,dt.
+$$
+The right-hand side tends to $0$ by step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required limit.
+:::
+:::

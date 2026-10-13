@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Solved the repeated-root homogeneous equation, found a trigonometric particular solution, and imposed both initial conditions."
 ---
-
 ::: {.problem}
 Find all solutions of
 \[
@@ -36,9 +35,11 @@ subject to $x(0)=1$ and $x'(0)=0$.
 ::: pf
 
 ::: pf-step
-The solutions of $x''-2x'+x=0$ are $x_h(t)=(C_1+C_2t)e^t$.
+
+Solve the homogeneous equation.
 
 ::: pf-proof
+
 The characteristic polynomial of
 $$
 x''-2x'+x=0
@@ -51,14 +52,17 @@ Thus the homogeneous solutions are
 $$
 x_h(t)=(C_1+C_2t)e^t.
 $$
+
 :::
 
 :::
 
 ::: pf-step
-$x_p(t)=\frac12\cos t$ is a particular solution.
+
+Find a particular solution.
 
 ::: pf-proof
+
 Try
 $$
 x_p(t)=a\sin t+b\cos t.
@@ -86,14 +90,17 @@ Hence one particular solution is
 $$
 x_p(t)=\frac12\cos t.
 $$
-:::
 
 :::
 
-::: pf-step
-The unique solution with $x(0)=1$, $x'(0)=0$ is $x(t)=\frac{(1-t)e^t+\cos t}{2}$.
+:::
+
+::: {.pf-step #s3}
+
+Impose the initial conditions.
 
 ::: pf-proof
+
 The general solution is
 $$
 x(t)=(C_1+C_2t)e^t+\frac12\cos t.
@@ -124,9 +131,17 @@ $$
 \boxed{
 x(t)=\frac{(1-t)e^t+\cos t}{2}.}
 $$
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the unique solution satisfying both initial conditions.
+
+:::
+
+:::
+
 :::

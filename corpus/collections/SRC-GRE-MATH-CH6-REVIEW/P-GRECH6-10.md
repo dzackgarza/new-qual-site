@@ -25,3 +25,58 @@ If $S = \{a \in \RR^+ : a \neq 1\}$, with the binary operation $\bullet$ defined
 (D) $e^{\log(1/a)}$
 (E) $e^{1/\log a}$
 :::
+
+::: {.solution}
+<1>1. The identity element of $(S,\bullet)$ is $e$.
+
+::: {.proof}
+For every $a\in S$,
+$$
+a\bullet e=a^{\log e}=a
+$$
+and
+$$
+e\bullet a=e^{\log a}=a.
+$$
+Thus $e$ is a two-sided identity.
+:::
+
+<1>2. If $b$ is the inverse of $a$, then
+$$
+\log b=\frac1{\log a}.
+$$
+
+::: {.proof}
+By step <1>1, an inverse must satisfy $a\bullet b=e$. Taking natural logarithms in
+$$
+a^{\log b}=e
+$$
+gives
+$$
+(\log a)(\log b)=1.
+$$
+Because $a\ne1$, one has $\log a\ne0$, so division by $\log a$ yields the displayed equation.
+:::
+
+<1>3. The inverse of $a$ is
+$$
+\boxed{e^{1/\log a}},
+$$
+so the answer is (E).
+
+::: {.proof}
+Step <1>2 gives $b=e^{1/\log a}$. Since $1/\log a\ne0$, this number is positive and not equal to $1$, so $b\in S$. Moreover,
+$$
+a\bullet b
+=\exp\bigl((\log a)(\log b)\bigr)
+=e,
+$$
+and the same symmetric expression gives $b\bullet a=e$. Hence $b$ is the inverse of $a$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives and verifies the required inverse.
+:::
+:::

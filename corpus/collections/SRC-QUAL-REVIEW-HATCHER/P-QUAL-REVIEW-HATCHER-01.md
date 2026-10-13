@@ -33,3 +33,303 @@ H_k(X;R)\times H^k(X;R)\longrightarrow R.
 \]
 This pairing is sometimes called the Kronecker product.
 :::
+
+::: {.solution}
+The first assertion in the source needs the standard missing hypothesis
+\[
+\delta\alpha=0.
+\]
+Without it, the assertion is false.
+
+<1>1. The literal first assertion fails for an arbitrary cochain.
+
+::: {.proof}
+Take
+\[
+X=[0,1],
+\qquad
+R=\mathbb Z,
+\qquad
+k=0.
+\]
+Let
+\[
+z=[1],
+\qquad
+z'=[0].
+\]
+Both are $0$-cycles, and if
+\[
+\sigma:[0,1]\to[0,1],
+\qquad
+\sigma(t)=t,
+\]
+is the standard singular $1$-simplex, then
+\[
+z-z'
+=
+\partial\sigma.
+\]
+
+Choose a $0$-cochain
+\[
+\alpha\in C^0(X;\mathbb Z)
+\]
+with
+\[
+\alpha([1])=1,
+\qquad
+\alpha([0])=0.
+\]
+Then
+\[
+\langle z,\alpha\rangle=1
+\]
+while
+\[
+\langle z',\alpha\rangle=0.
+\]
+Thus boundary-equivalent cycles need not pair equally with an arbitrary
+cochain.
+:::
+
+<1>2. For a singular chain
+\[
+c\in C_k(X;R)
+\]
+and a cochain
+\[
+\beta\in C^{k-1}(X;R),
+\]
+the chain--cochain pairing satisfies
+\[
+\boxed{
+\langle c,\delta\beta\rangle
+=
+\langle\partial c,\beta\rangle.
+}
+\]
+
+::: {.proof}
+By definition, the singular coboundary
+\[
+\delta\beta\in C^k(X;R)
+\]
+is the cochain
+\[
+(\delta\beta)(\sigma)
+=
+\beta(\partial\sigma)
+\]
+on each singular $k$-simplex $\sigma$.
+
+If
+\[
+c=\sum_i r_i\sigma_i,
+\]
+then
+\[
+\begin{aligned}
+\langle c,\delta\beta\rangle
+&=
+\sum_i r_i(\delta\beta)(\sigma_i)\\
+&=
+\sum_i r_i\beta(\partial\sigma_i)\\
+&=
+\beta\left(
+\sum_i r_i\partial\sigma_i
+\right)\\
+&=
+\beta(\partial c)\\
+&=
+\langle\partial c,\beta\rangle.
+\end{aligned}
+\]
+:::
+
+<1>3. If
+\[
+z-z'=\partial w
+\]
+and
+\[
+\alpha\in Z^k(X;R)
+\]
+is a cocycle, then
+\[
+\boxed{
+\langle z,\alpha\rangle
+=
+\langle z',\alpha\rangle.
+}
+\]
+
+::: {.proof}
+Since
+\[
+\delta\alpha=0,
+\]
+step <1>2 gives
+\[
+\begin{aligned}
+\langle z,\alpha\rangle
+-
+\langle z',\alpha\rangle
+&=
+\langle z-z',\alpha\rangle\\
+&=
+\langle\partial w,\alpha\rangle\\
+&=
+\langle w,\delta\alpha\rangle\\
+&=
+0.
+\end{aligned}
+\]
+:::
+
+<1>4. If
+\[
+\alpha=\delta\beta
+\]
+is a coboundary and
+\[
+z\in Z_k(X;R)
+\]
+is a cycle, then
+\[
+\boxed{
+\langle z,\alpha\rangle=0.
+}
+\]
+
+::: {.proof}
+By step <1>2,
+\[
+\langle z,\alpha\rangle
+=
+\langle z,\delta\beta\rangle
+=
+\langle\partial z,\beta\rangle.
+\]
+Since
+\[
+\partial z=0,
+\]
+the right-hand side is zero.
+:::
+
+<1>5. If
+\[
+z,z'\in Z_k(X;R)
+\]
+represent the same homology class and
+\[
+\alpha,\alpha'\in Z^k(X;R)
+\]
+represent the same cohomology class, then
+\[
+\langle z,\alpha\rangle
+=
+\langle z',\alpha'\rangle.
+\]
+
+::: {.proof}
+Because
+\[
+[z]=[z'],
+\]
+one has
+\[
+z-z'=\partial w
+\]
+for some
+\[
+w\in C_{k+1}(X;R).
+\]
+Step <1>3 gives
+\[
+\langle z,\alpha\rangle
+=
+\langle z',\alpha\rangle.
+\]
+
+Because
+\[
+[\alpha]=[\alpha'],
+\]
+there is
+\[
+\beta\in C^{k-1}(X;R)
+\]
+with
+\[
+\alpha-\alpha'=\delta\beta.
+\]
+Then step <1>4, applied to the cycle $z'$, gives
+\[
+\langle z',\alpha-\alpha'\rangle=0.
+\]
+Hence
+\[
+\langle z',\alpha\rangle
+=
+\langle z',\alpha'\rangle.
+\]
+Combining the two equalities proves the claim.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\langle-,-\rangle:
+H_k(X;R)\times H^k(X;R)
+\longrightarrow
+R,
+\qquad
+([z],[\alpha])
+\longmapsto
+\langle z,\alpha\rangle
+}
+\]
+is well defined.
+
+::: {.proof}
+Step <1>5 shows independence of both the cycle representative and the
+cocycle representative.
+:::
+
+<1>7. The pairing is bilinear.
+
+::: {.proof}
+On chain and cochain representatives,
+\[
+\left\langle
+z_1+z_2,\alpha
+\right\rangle
+=
+\langle z_1,\alpha\rangle
++
+\langle z_2,\alpha\rangle,
+\]
+and
+\[
+\left\langle
+z,\alpha_1+\alpha_2
+\right\rangle
+=
+\langle z,\alpha_1\rangle
++
+\langle z,\alpha_2\rangle.
+\]
+Scalar multiplication behaves compatibly as well.
+These identities descend through the quotient groups by step <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 records the defect in the literal source statement.
+Steps <1>2--<1>7 prove the corrected Kronecker pairing on homology and
+cohomology.
+:::
+:::

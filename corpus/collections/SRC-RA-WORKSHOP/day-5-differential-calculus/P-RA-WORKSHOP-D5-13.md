@@ -17,41 +17,74 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Prove Theorem 4.1.
 :::
 
-:::: {.solution}
+::: {.solution}
+Let $a<b$, let $f:[a,b]\to\mathbb R$, and let $c\in(a,b)$ be a local extremum at which $f$ is differentiable, as in [[T-RA-WORKSHOP-D5-4-1|Theorem 4.1]].
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Suppose $f$ has a local maximum at $c \in (a,b)$ and $f'(c)$ exists.
-Proof: by definition of local maximum, there is $\delta > 0$ with $f(x) \le f(c)$ for all $x \in (c-\delta, c+\delta) \subseteq (a,b)$.
+If $f$ has a local maximum at $c$, then $f'(c)\geq0$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-The left-hand derivative is $\ge 0$.
-Proof: for $h < 0$ with $|h| < \delta$, $\frac{f(c+h) - f(c)}{h} \ge 0$ (numerator $\le 0$, denominator $< 0$). Hence $f'(c) = \lim_{h\to 0^-}\frac{f(c+h)-f(c)}{h} \ge 0$.
-
-:::
-
-::: pf-step
-
-The right-hand derivative is $\le 0$.
-Proof: for $h > 0$ with $h < \delta$, $\frac{f(c+h) - f(c)}{h} \le 0$ (numerator $\le 0$, denominator $> 0$). Hence $f'(c) = \lim_{h\to 0^+}\frac{f(c+h)-f(c)}{h} \le 0$.
+There is $\delta>0$ such that $[c-\delta,c+\delta]\subset(a,b)$ and $f(c+h)\leq f(c)$ whenever $|h|<\delta$. For $-\delta<h<0$,
+\[
+\frac{f(c+h)-f(c)}{h}\geq0.
+\]
+Since $f'(c)$ exists, taking the left-hand limit yields $f'(c)\geq0$.
 
 :::
 
-::: pf-step
+:::
 
-Conclude.
-Proof: $f'(c) \ge 0$ and $f'(c) \le 0$, so $f'(c) = 0$.
-(For a local minimum, apply the argument to $-f$.)
+::: {.pf-step #s2}
+
+If $f$ has a local maximum at $c$, then $f'(c)\leq0$.
+
+::: pf-proof
+
+With $\delta$ as in step [](#s1){.pf-ref}, for $0<h<\delta$ one has
+\[
+\frac{f(c+h)-f(c)}{h}\leq0.
+\]
+Taking the right-hand limit yields $f'(c)\leq0$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+At a local maximum, $f'(c)=0$.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give $0\leq f'(c)\leq0$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+At a local minimum, $f'(c)=0$.
+
+::: pf-proof
+
+The function $-f$ is differentiable at $c$ with derivative $-f'(c)$ and has a local maximum there. Applying step [](#s3){.pf-ref} to $-f$ gives $-f'(c)=0$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} establish the assertion for both kinds of local extrema.
 
 :::
 

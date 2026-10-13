@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-07
 kind: problem
-title: Properties of the operation $a*b=ab+a+b$ on $\QQ$
+title: Properties of the operation a star b equals ab plus a plus b
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 Let $*$ be the binary operation on the rational numbers given by $a*b=ab+a+b$.
 Decide which of the following assertions are true: (I) $*$ is commutative; (II) there is a rational $*$-identity; (III) every rational number has a $*$-inverse.
@@ -31,7 +30,7 @@ Assertions I and II are true, while III is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The operation is commutative.
 
@@ -46,7 +45,7 @@ a*b=ab+a+b=ba+b+a=b*a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The $*$-identity is $0$.
 
@@ -62,7 +61,7 @@ and by commutativity also $0*a=a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Not every rational has a $*$-inverse.
 
@@ -87,7 +86,24 @@ Thus $-1$ has no inverse.
 
 :::
 
-:::
+::: pf-step
 
 Hence exactly I and II hold.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} proves I, step [](#s2){.pf-ref} proves II, and step [](#s3){.pf-ref} disproves III.
+
+:::
+
+:::
+
+::: pf-qed
+
+The preceding conclusion gives the requested truth values.
+
+:::
+
+:::
+
 :::

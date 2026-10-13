@@ -31,3 +31,54 @@ Find a formula for $\sinh^{-1} x$.
 (D) $\log(x + \sqrt{x^2 + 1})$
 (E) $\log(\sqrt{x^2 + 1} - x)$
 :::
+
+::: {.solution}
+Let $y=\sinh^{-1}x$, so that $x=\sinh y$.
+
+<1>1. $e^y$ satisfies
+$$
+(e^y)^2-2xe^y-1=0.
+$$
+
+::: {.proof}
+From the definition of hyperbolic sine,
+$$
+x=\frac{e^y-e^{-y}}2.
+$$
+Multiplying by $2e^y$ gives
+$$
+2xe^y=e^{2y}-1,
+$$
+which is the claimed quadratic equation in $e^y$.
+:::
+
+<1>2. $e^y=x+\sqrt{x^2+1}$.
+
+::: {.proof}
+Solving the quadratic in step <1>1 gives
+$$
+e^y=x\pm\sqrt{x^2+1}.
+$$
+Since $\sqrt{x^2+1}>|x|$, the quantity $x-\sqrt{x^2+1}$ is negative, while $x+\sqrt{x^2+1}$ is positive. Because $e^y>0$, only the positive sign is possible.
+:::
+
+<1>3. Therefore
+$$
+\boxed{\sinh^{-1}x=\log\left(x+\sqrt{x^2+1}\right)},
+$$
+so the answer is (D).
+
+::: {.proof}
+Taking logarithms in step <1>2 gives
+$$
+y=\log\left(x+\sqrt{x^2+1}\right).
+$$
+The expression inside the logarithm is positive by step <1>2, so this is defined for every real $x$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested inverse formula and corresponding choice.
+:::
+:::

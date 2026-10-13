@@ -22,7 +22,129 @@ f(x)=
 \end{cases}
 \]
 
+Use the course convention
+\[
+f(x)=\frac{a_0}{\sqrt2}
++\sum_{n=1}^\infty\bigl(a_n\cos(nx)+b_n\sin(nx)\bigr).
+\]
+
 (a) Find the Fourier series of $f$.
 
-(b) Find the sum of the squares of all Fourier coefficients of $f$.
+(b) Find
+\[
+a_0^2+\sum_{n=1}^\infty(a_n^2+b_n^2).
+\]
+:::
+
+::: {.solution}
+<1>1. Every sine coefficient is zero.
+
+::: {.proof}
+The function $f$ is even, while $\sin(nx)$ is odd. Hence
+$f(x)\sin(nx)$ is odd and
+\[
+b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin(nx)\,dx=0
+\]
+for every $n\geq1$.
+:::
+
+<1>2. For every $n\geq1$,
+\[
+a_n=-\frac{4\sin n}{\pi n}.
+\]
+
+::: {.proof}
+By evenness,
+\[
+\begin{aligned}
+a_n
+&=\frac2\pi\int_0^\pi f(x)\cos(nx)\,dx\\
+&=\frac2\pi\left(
+-\int_0^1\cos(nx)\,dx
++\int_1^\pi\cos(nx)\,dx
+\right).
+\end{aligned}
+\]
+Since $\sin(n\pi)=0$,
+\[
+\begin{aligned}
+a_n
+&=\frac2\pi\left(
+-\frac{\sin n}{n}
++\frac{\sin(n\pi)-\sin n}{n}
+\right)\\
+&=-\frac{4\sin n}{\pi n}.
+\end{aligned}
+\]
+:::
+
+<1>3. The constant coefficient is
+\[
+a_0=\frac{\sqrt2(\pi-2)}{\pi}.
+\]
+
+::: {.proof}
+With the stated convention,
+\[
+a_0
+=\frac1\pi\int_{-\pi}^{\pi}
+f(x)\frac1{\sqrt2}\,dx.
+\]
+Using evenness,
+\[
+\begin{aligned}
+a_0
+&=\frac{\sqrt2}{\pi}
+\left(-\int_0^1 1\,dx+\int_1^\pi1\,dx\right)\\
+&=\frac{\sqrt2}{\pi}(-1+\pi-1)
+=\frac{\sqrt2(\pi-2)}{\pi}.
+\end{aligned}
+\]
+:::
+
+<1>4. The Fourier series is
+\[
+\boxed{
+f(x)\sim
+\frac{\pi-2}{\pi}
+-\frac4\pi\sum_{n=1}^\infty
+\frac{\sin n}{n}\cos(nx).}
+\]
+
+::: {.proof}
+Substitute steps <1>1--<1>3 into
+\[
+\frac{a_0}{\sqrt2}
++\sum_{n=1}^\infty(a_n\cos(nx)+b_n\sin(nx)).
+\]
+The constant term is
+$a_0/\sqrt2=(\pi-2)/\pi$, giving the displayed series.
+At continuity points it converges to $f(x)$; at the jump points
+$x=\pm1$ it converges to the midpoint value $0$.
+:::
+
+<1>5. The sum of the squares of all Fourier coefficients is
+\[
+\boxed{2}.
+\]
+
+::: {.proof}
+For the inner product underlying the stated coefficient normalization,
+Parseval's identity gives
+\[
+a_0^2+\sum_{n=1}^\infty(a_n^2+b_n^2)
+=\frac1\pi\int_{-\pi}^{\pi}|f(x)|^2\,dx.
+\]
+Since $|f(x)|=1$ everywhere,
+\[
+\frac1\pi\int_{-\pi}^{\pi}1\,dx=2.
+\]
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the Fourier series and step <1>5 gives the requested
+Parseval sum.
+:::
 :::

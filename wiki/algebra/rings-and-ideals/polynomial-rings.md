@@ -21,8 +21,6 @@ For a commutative ring $R$, the polynomial ring $R[x]$ contains $R$ as the const
 
 [[D-JNCUB]]
 
-[[FD-LXZIW]]
-
 ::: {.remark title="Properties inherited by $R[x]$"}
 If $R$ is a [[D-INULL|UFD]], then $R[x]$ is a UFD, and if $R$ is [[D-TZXBO|Noetherian]], then $R[x]$ is Noetherian by the Hilbert basis theorem.
 If $R$ is a [[D-HTIL5|PID]], then $R[x]$ need not be a PID: the ideal $\generators{2,x}\normal\ZZ[x]$ is not principal.

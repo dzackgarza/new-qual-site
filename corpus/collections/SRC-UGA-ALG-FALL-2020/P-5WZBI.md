@@ -29,6 +29,9 @@ For the nonabelian group(s), give a presentation by generators and relations.
 ::: {.solution}
 Let $|G|=2p$.
 
+<1>1. Every group of order $2p$ is not simple.
+
+::: {.proof}
 First suppose $p$ is odd. If $n_p$ denotes the number of Sylow $p$-subgroups, then
 \[
 n_p\equiv1\pmod p,
@@ -38,9 +41,17 @@ n_p\mid2.
 Because $p>2$, the only possibility is $n_p=1$. Thus the unique subgroup $P$ of order $p$ is normal and proper, so $G$ is not simple.
 
 If $p=2$, then $|G|=4$. By Cauchy's theorem, $G$ contains an element of order $2$; the subgroup it generates has index $2$, hence is normal. Thus $G$ is again not simple.
+:::
 
+<1>2. If $p=2$, the two isomorphism classes of groups of order $2p=4$ are $C_4$ and $C_2\times C_2$.
+
+::: {.proof}
 Now classify the possibilities. For $p=2$, every group of order $4$ is abelian: if some element has order $4$, then $G\cong C_4$; otherwise every nonidentity element has order $2$, and $G\cong C_2\times C_2$.
+:::
 
+<1>3. For odd $p$, there are exactly two isomorphism classes of groups of order $2p$: the cyclic group $C_{2p}$ and the dihedral group of order $2p$.
+
+::: {.proof}
 Assume henceforth that $p$ is odd, and let $P=\langle y\rangle\cong C_p$ be the unique Sylow $p$-subgroup. Since $G/P$ has order $2$, conjugation by any $x\notin P$ induces on $P$ an automorphism whose square is the identity.
 
 If this action is trivial, then $x$ centralizes $P$. Because $xP$ has order $2$ in $G/P$, $x^2\in P$. Since $p$ is odd, replacing $x$ by $xy^m$ for a suitable $m$ makes its square equal to $1$: indeed, if $x^2=y^k$, choose $m$ with $2m\equiv-k\pmod p$, so
@@ -64,4 +75,11 @@ G\cong\langle x,y\mid x^2=1,\ y^p=1,\ xyx^{-1}=y^{-1}\rangle,
 the dihedral group of order $2p$.
 
 Hence, for $p=2$, the groups are $C_4$ and $C_2\times C_2$; for odd $p$, the groups are $C_{2p}$ and the dihedral group of order $2p$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 establishes part (a), and steps <1>2 and <1>3 classify all groups and give the required nonabelian presentation for part (b).
+:::
 :::

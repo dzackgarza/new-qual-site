@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the finite-dimensional subring argument for inverses and algebraicity, the biquadratic degree, and recovery of both radicals from the proposed generator."
 ---
-
 ::: {.problem}
 a. Suppose $K/F$ is a field extension.
 Prove that the elements of $K$ that are algebraic over $F$ form a subfield of $K$.
@@ -36,7 +35,7 @@ b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\mathbb{Q}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The elements algebraic over $F$ form a subfield of $K$.
 
@@ -95,7 +94,7 @@ $2$, and the tower law gives $[E:\mathbb Q]=2\cdot2=4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The minimal polynomial in part (b) is
 $$
@@ -109,7 +108,7 @@ $\gamma^2=11-4\sqrt6$, so
 $(\gamma^2-11)^2=96$. Expanding gives
 $\gamma^4-22\gamma^2+25=0$.
 
-The element $\gamma$ has degree $4$ over $\mathbb Q$. Indeed,
+To prove minimality, rather than just annihilation, note that
 $$
 (2\sqrt2-\sqrt3)(2\sqrt2+\sqrt3)=8-3=5.
 $$
@@ -125,6 +124,12 @@ Its minimal polynomial is therefore the monic degree-four
 annihilating polynomial displayed above.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 

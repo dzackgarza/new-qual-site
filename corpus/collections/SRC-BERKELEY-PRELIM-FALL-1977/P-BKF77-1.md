@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Computed the characteristic polynomial, exhibited two independent real eigenvectors, and checked that their eigenbasis diagonalizes A."
 ---
-
 ::: {.problem}
 Let
 \[
@@ -47,9 +46,11 @@ Thus the eigenvalues are $1$ and $2$.
 ::: pf
 
 ::: pf-step
-$v_1=\binom{-5}{2}$ is an eigenvector of $A$ for $\lambda=1$.
+
+Find an eigenvector for $\lambda=1$.
 
 ::: pf-proof
+
 We have
 $$
 A-I=\begin{pmatrix}6&15\\-2&-5\end{pmatrix}.
@@ -66,14 +67,17 @@ Indeed,
 $$
 Av_1=v_1.
 $$
+
 :::
 
 :::
 
 ::: pf-step
-$v_2=\binom{-3}{1}$ is an eigenvector of $A$ for $\lambda=2$.
+
+Find an eigenvector for $\lambda=2$.
 
 ::: pf-proof
+
 We have
 $$
 A-2I=\begin{pmatrix}5&15\\-2&-6\end{pmatrix}.
@@ -90,14 +94,17 @@ and
 $$
 Av_2=2v_2.
 $$
-:::
 
 :::
 
-::: pf-step
-The matrix $B=\begin{pmatrix}-5&-3\\2&1\end{pmatrix}$ with columns $v_1,v_2$ satisfies $B^{-1}AB=\operatorname{diag}(1,2)$.
+:::
+
+::: {.pf-step #s3}
+
+Form the eigenvector matrix.
 
 ::: pf-proof
+
 Let
 $$
 B=\begin{pmatrix}-5&-3\\2&1\end{pmatrix}.
@@ -116,9 +123,18 @@ $$
 \boxed{
 B^{-1}AB=\begin{pmatrix}1&0\\0&2\end{pmatrix}.}
 $$
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} exhibits the required real matrix $B$ and computes the
+diagonal matrix $B^{-1}AB$.
+
+:::
+
+:::
+
 :::

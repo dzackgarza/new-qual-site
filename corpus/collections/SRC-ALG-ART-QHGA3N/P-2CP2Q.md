@@ -20,7 +20,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Compute the Galois group of $f(x) = x^3-3x -3\in \QQ[x]/\QQ$.
 :::
@@ -67,7 +66,7 @@ Since $-135<0$, it is not a square in $\QQ$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The Galois group of the splitting field of $f$ over $\QQ$ is $S_3$.
 
@@ -76,12 +75,18 @@ The Galois group of the splitting field of $f$ over $\QQ$ is $S_3$.
 For an irreducible separable cubic over a field of characteristic different from $2$,
 the Galois group acts transitively on the three roots, so it is either $A_3$ or $S_3$.
 It is contained in $A_3$ exactly when the discriminant is a square in the base field. By
-steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the polynomial is irreducible and its discriminant is not a square, hence
+step [](#s1){.pf-ref} and step [](#s2){.pf-ref}, the polynomial is irreducible and its discriminant is not a square, hence
 \[
-\operatorname{Gal}(f/\QQ)\cong S_3.
+\boxed{\operatorname{Gal}(f/\QQ)\cong S_3}.
 \]
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested Galois group.
 
 :::
 

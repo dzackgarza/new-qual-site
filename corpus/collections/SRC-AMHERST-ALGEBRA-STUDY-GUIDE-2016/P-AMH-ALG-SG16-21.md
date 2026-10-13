@@ -22,7 +22,52 @@ Prove that the quotient ring $R/I$ is commutative.
 :::
 
 ::: {.solution}
-Proof.
-GivenI +a,I +b∈R/I, our assumption on I implies that ab−ba∈I. By the coset relation, we obtain I +ab =I +ba.
-Then (I +a)(I +b) =I +ab =I +ba = (I +b)(I +a), so R/I is commutative, as desired QED
+<1>1. For all $a,b\in R$,
+$$
+I+ab=I+ba
+$$
+in the quotient ring $R/I$.
+
+::: {.proof}
+By hypothesis,
+$$
+ab-ba\in I.
+$$
+Two elements of $R$ determine the same coset modulo $I$ exactly when their
+difference lies in $I$.  Hence $ab$ and $ba$ determine the same coset:
+$$
+I+ab=I+ba.
+$$
+:::
+
+<1>2. Multiplication in $R/I$ is commutative.
+
+::: {.proof}
+Let $I+a,I+b\in R/I$.  Using the definition of multiplication in the quotient
+ring and step <1>1,
+$$
+\begin{aligned}
+(I+a)(I+b)
+&=I+ab\\
+&=I+ba\\
+&=(I+b)(I+a).
+\end{aligned}
+$$
+Thus any two elements of $R/I$ commute.
+:::
+
+<1>3. Therefore
+$$
+\boxed{R/I\text{ is commutative}.}
+$$
+
+::: {.proof}
+This is exactly the conclusion of step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the assertion.
+:::
 :::

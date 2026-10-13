@@ -25,3 +25,52 @@ Define linear operators $S$ and $T$ on the $xy$-plane ($\RR^2$) as follows: $S$ 
 (D) $ST = TS$
 (E) $ST = -TS$
 :::
+
+::: {.solution}
+<1>1. In the standard basis, the matrices of $S$ and $T$ are
+$$
+[S]=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix},
+\qquad
+[T]=\begin{pmatrix}-1&0\\ 0&1\end{pmatrix}.
+$$
+
+::: {.proof}
+A $90^\circ$ counterclockwise rotation sends $(1,0)$ to $(0,1)$ and $(0,1)$ to $(-1,0)$, giving the two columns of $[S]$. Reflection through the $y$-axis sends $(1,0)$ to $(-1,0)$ and fixes $(0,1)$, giving the two columns of $[T]$.
+:::
+
+<1>2. The two compositions satisfy
+$$
+[ST]=\begin{pmatrix}0&-1\\ -1&0\end{pmatrix},
+\qquad
+[TS]=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}.
+$$
+
+::: {.proof}
+Because $ST=S\circ T$ and $TS=T\circ S$, step <1>1 gives
+$$
+[ST]=[S][T]
+=\begin{pmatrix}0&-1\\ -1&0\end{pmatrix}
+$$
+and
+$$
+[TS]=[T][S]
+=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{ST=-TS},
+$$
+so the answer is (E).
+
+::: {.proof}
+The two matrices in step <1>2 are negatives of one another. Equality of standard matrices is equivalent to equality of the corresponding linear operators.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 identifies the true relation.
+:::
+:::

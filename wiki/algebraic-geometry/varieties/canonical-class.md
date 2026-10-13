@@ -13,13 +13,12 @@ Fano, Calabi--Yau, and general type are distinguished by the positivity behavior
 
 [[D-VARFANO]]
 
-## Hypersurfaces
+## Adjunction for hypersurfaces
 
 [[FE-VARADJ]]
 
-For a smooth hypersurface $X\subset\PP^n$ of degree $d$, $n\ge2$, adjunction and $K_{\PP^n}=-(n+1)H$ give $K_X=(d-n-1)H|_X$.
-So $X$ is Fano for $d<n+1$, has $K_X\sim0$ for $d=n+1$, and has ample $K_X$ for $d>n+1$.
-In $\PP^3$, smooth quadric and cubic surfaces are del Pezzo surfaces, and smooth quartic surfaces are K3 surfaces.
+Adjunction computes $K$ of a hypersurface from $K$ of the ambient space. Since $K_{\PP^n}=-(n+1)H$, a degree-$d$ hypersurface in $\PP^n$ is distinguished by the sign of $d-(n+1)$.
+For surfaces in $\PP^3$, the quadric, cubic, and quartic correspond to degrees $2,3,4$ against the threshold $n+1=4$.
 
 ## Where completeness enters
 

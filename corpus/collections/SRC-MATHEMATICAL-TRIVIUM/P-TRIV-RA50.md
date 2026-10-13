@@ -18,3 +18,177 @@ audit:
 ::: {.problem}
 Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \left\{ \begin{array} { l l } { f _ { 0 } , r \leqslant r _ { 0 } , } \\ { 0 , r > r _ { 0 } } \end{array} \right.$ in R3.
 :::
+
+::: {.remark}
+Use the three-dimensional Fourier convention from Problem 49:
+$$
+\widetilde f(\vec k)
+=
+\frac1{(2\pi)^3}
+\int_{\mathbb R^3}
+f(\vec r)e^{-i\vec k\cdot\vec r}
+\,d^3r.
+$$
+:::
+
+::: {.solution}
+Put
+$$
+k=|\vec k|.
+$$
+
+<1>1. By rotational symmetry, choose spherical coordinates whose polar axis is
+parallel to $\vec k$.
+
+::: {.proof}
+The function $f$ depends only on $r=|\vec r|$, and Lebesgue measure is rotation
+invariant. Thus rotating the coordinate system does not change the integral.
+In the chosen coordinates,
+$$
+\vec k\cdot\vec r
+=
+kr\cos\theta.
+$$
+:::
+
+<1>2. The Fourier transform is
+$$
+\widetilde f(\vec k)
+=
+\frac{f_0}{(2\pi)^3}
+\int_0^{r_0}r^2\,dr
+\int_0^{2\pi}d\varphi
+\int_0^\pi
+e^{-ikr\cos\theta}
+\sin\theta
+\,d\theta.
+$$
+
+::: {.proof}
+Inside the ball $r\leq r_0$, the function equals the constant $f_0$; outside
+it vanishes. The spherical volume element is
+$$
+r^2\sin\theta\,dr\,d\theta\,d\varphi.
+$$
+:::
+
+<1>3. The angular integrals give
+$$
+\int_0^{2\pi}d\varphi
+\int_0^\pi
+e^{-ikr\cos\theta}
+\sin\theta\,d\theta
+=
+4\pi\frac{\sin(kr)}{kr}.
+$$
+
+::: {.proof}
+The $\varphi$-integral contributes $2\pi$. For the polar integral, set
+$$
+u=\cos\theta.
+$$
+Then
+$$
+\int_0^\pi
+e^{-ikr\cos\theta}\sin\theta\,d\theta
+=
+\int_{-1}^{1}e^{-ikru}\,du
+=
+\frac{2\sin(kr)}{kr}.
+$$
+:::
+
+<1>4. For $k>0$,
+$$
+\widetilde f(\vec k)
+=
+\frac{4\pi f_0}{(2\pi)^3k}
+\int_0^{r_0}
+r\sin(kr)
+\,dr.
+$$
+
+::: {.proof}
+Substitute step <1>3 into step <1>2 and cancel one factor of $r$.
+:::
+
+<1>5. One has
+$$
+\int_0^{r_0}
+r\sin(kr)
+\,dr
+=
+-\frac{r_0\cos(kr_0)}{k}
++
+\frac{\sin(kr_0)}{k^2}.
+$$
+
+::: {.proof}
+Integration by parts gives
+$$
+\int r\sin(kr)\,dr
+=
+-\frac{r\cos(kr)}k
++
+\frac{\sin(kr)}{k^2}.
+$$
+The lower endpoint contributes zero.
+:::
+
+<1>6. Hence, for $k>0$,
+$$
+\boxed{
+\widetilde f(\vec k)
+=
+\frac{f_0}{2\pi^2}
+\frac{
+\sin(kr_0)-kr_0\cos(kr_0)
+}{k^3}.
+}
+$$
+
+::: {.proof}
+Substitute step <1>5 into step <1>4 and use
+$$
+\frac{4\pi}{(2\pi)^3}
+=
+\frac1{2\pi^2}.
+$$
+:::
+
+<1>7. At $k=0$,
+$$
+\boxed{
+\widetilde f(0)
+=
+\frac{f_0r_0^3}{6\pi^2}.
+}
+$$
+
+::: {.proof}
+Directly,
+$$
+\widetilde f(0)
+=
+\frac1{(2\pi)^3}
+f_0\operatorname{Vol}(B_{r_0}^3)
+=
+\frac1{8\pi^3}
+f_0\frac{4\pi r_0^3}{3}
+=
+\frac{f_0r_0^3}{6\pi^2}.
+$$
+Equivalently, the expression in step <1>6 has the same limit because
+$$
+\sin z-z\cos z
+=
+\frac{z^3}{3}+O(z^5).
+$$
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>6--<1>7 give the Fourier image for all $\vec k\in\mathbb R^3$.
+:::
+:::

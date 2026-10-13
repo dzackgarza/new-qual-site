@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-02
 kind: problem
-title: Subfields of $\RR$ among $\ZZ_{(2)}$, $\ZZ[\sqrt2]$, $\QQ(\sqrt2)$, and $\QQ+\QQ\sqrt[4]2$
+title: Which listed subsets of the reals are subfields
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 Which of the following subsets $F_i$ of $\mathbb R$, $1\le i\le4$, are subfields of $\mathbb R$?
 
@@ -38,7 +37,7 @@ Only $F_3$ is a subfield of $\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 $F_1$ is not a field.
 
@@ -51,7 +50,7 @@ Thus $F_1$ is not closed under inverses of nonzero elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 $F_2$ is not a field.
 
@@ -68,7 +67,7 @@ would force $b=0$ and then $a=1/2\notin\mathbb Z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 $F_3$ is a field.
 
@@ -86,7 +85,7 @@ The denominator is nonzero (otherwise $a/b=\pm\sqrt2$ when $b\ne0$), and the coe
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 $F_4$ is not a field.
 
@@ -105,7 +104,24 @@ Hence $\sqrt2\notin\operatorname{span}_{\mathbb Q}\{1,\alpha\}$.
 
 :::
 
-:::
+::: pf-step
 
 Therefore the answer is $\boxed{F_3\text{ only}}$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s4){.pf-ref} rule out the other three subsets, while step [](#s3){.pf-ref} proves that $F_3$ is a field.
+
+:::
+
+:::
+
+::: pf-qed
+
+The preceding conclusion gives the complete classification.
+
+:::
+
+:::
+
 :::

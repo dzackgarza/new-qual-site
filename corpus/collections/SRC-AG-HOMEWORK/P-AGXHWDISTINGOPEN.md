@@ -13,49 +13,155 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
-Let $A\in \Ring$ and $X\definedas \Spec(A)$, and for $f\in A$ let $D(f) \definedas V(\generators{f})^c$.
+Let $A\in \Ring$ and $X\coloneqq\Spec(A)$, and for $f\in A$ let $D(f)\coloneqq V(\generators{f})^c$.
 Show that there is an isomorphism of ringed spaces
-\[
+$$
 (D(f), \restrictionof{\OO_X}{D(f)}) \iso \Spec(A_f)
-.\]
-:::
-
-::: {.hint}
-- Take $\iota: A\to A_f$ and the induced map $\iota^*: \Spec A_f \to \Spec A$.
-- Use $\Spec S^{-1}A \cong \theset{\mfp\in \Spec A \st \mfp \intersect S = \emptyset }$, so $\Spec A_f = \theset{\mfp\in \Spec A \st \mfp \not\supseteq \generators{f}}$.
-- Construct $\psi \definedas \iota^*$, and check $D(g/f^k) \xrightarrow{\psi} D(gf)$ and $D(g) \xrightarrow{\psi^{-1}} D(g/1)$.
-- Use $\restrictionof{\OO_{\Spec A}}{D(f)}(D(g)) = (A_f)_g$ and define $\psi^\# = \id$.
+.$$
 :::
 
 ::: {.solution}
-Let $\iota\colon A\to A_f$, $a\mapsto a/1$, let $Y\definedas\Spec A_f$, and let $\psi\colon Y\to X$ be $\psi(\mfq)\definedas\iota^{-1}(\mfq)$.
+Let $S=\{1,f,f^2,\ldots\}$ and let $\lambda:A\to A_f=S^{-1}A$ be the localization map.
 
 ::: pf
 
-::: {.pf-step #psi-homeomorphism}
-$\psi$ is a homeomorphism of $Y$ onto $D(f)$.
+::: pf-step
+
+Contraction along $\lambda$ gives a bijection
+$$
+\phi:\Spec(A_f)\longrightarrow D(f),
+\qquad
+\mathfrak q\longmapsto\lambda^{-1}(\mathfrak q).
+$$
 
 ::: pf-proof
-The primes of $A_f$ correspond to the primes $\mfp$ of $A$ with $f\notin\mfp$, by $\mfq\mapsto\iota^{-1}(\mfq)$ with inverse $\mfp\mapsto\mfp A_f$; so $\psi$ is a bijection onto $D(f)$. For $a\in A$, $\psi^{-1}(D(a))=D(a/1)$, so $\psi$ is continuous. Every $a/f^k\in A_f$ differs from $a/1$ by a unit, so the sets $D(a/1)$ form a basis of $Y$, and $\psi(D(a/1))=D(a)\cap D(f)=D(af)$ is open. So $\psi$ is open onto $D(f)$.
+
+Prime ideals of a localization $S^{-1}A$ are in bijection with prime ideals $\mathfrak p\subseteq A$ disjoint from $S$, by contraction and extension. For the present multiplicative set,
+$$
+\mathfrak p\cap S=\varnothing
+\iff f\notin\mathfrak p
+\iff \mathfrak p\in D(f).
+$$
+Thus contraction has the stated image and is bijective, with inverse $\mathfrak p\mapsto\mathfrak pA_f$.
+
 :::
 
 :::
 
-::: {.pf-step #sections-isomorphism}
-For $a\in A$, there is an isomorphism $\OO_X(D(af))\to\OO_Y(\psi^{-1}(D(af)))$, compatible with restriction.
+::: {.pf-step #s2}
+
+For every $g\in A$,
+$$
+\phi^{-1}(D(g)\cap D(f))=D(g/1)\subseteq\Spec(A_f).
+$$
 
 ::: pf-proof
-By step [](#psi-homeomorphism){.pf-ref}, $\psi^{-1}(D(af))=D(a/1)$. The sections are $\OO_X(D(af))=A_{af}$ and $\OO_Y(D(a/1))=(A_f)_{a/1}$, and $x/(af)^n\mapsto (x/1)/(af/1)^n$ is an isomorphism $A_{af}\to(A_f)_{a/1}$, since both rings are $A$ with $a$ and $f$ inverted. For $D(bf)\subseteq D(af)$ the restriction maps on both sides are the canonical maps between localizations of $A$, so the isomorphisms commute with them.
+
+For $\mathfrak q\in\Spec(A_f)$,
+$$
+\begin{aligned}
+\mathfrak q\in\phi^{-1}(D(g)\cap D(f))
+&\iff g\notin\lambda^{-1}(\mathfrak q)\\
+&\iff g/1\notin\mathfrak q\\
+&\iff \mathfrak q\in D(g/1).
+\end{aligned}
+$$
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The map $\phi$ is a homeomorphism.
+
+::: pf-proof
+
+The sets $D(g)\cap D(f)$ form a basis for the subspace topology on $D(f)$, while the sets $D(h)$ form a basis for $\Spec(A_f)$. Every element $h\in A_f$ has the form $g/f^n$, and
+$$
+D(g/f^n)=D(g/1)
+$$
+because $f/1$ is a unit in $A_f$. Step [](#s2){.pf-ref} therefore identifies basis opens on the two spaces under the bijection $\phi$, proving that both $\phi$ and $\phi^{-1}$ are continuous.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+On corresponding basis opens there are canonical ring isomorphisms
+$$
+\mathcal O_{\Spec(A_f)}(D(g/1))
+\cong
+\restrictionof{\mathcal O_X}{D(f)}(D(g)\cap D(f)).
+$$
+
+::: pf-proof
+
+By the definition of the structure sheaf on an affine scheme,
+$$
+\mathcal O_{\Spec(A_f)}(D(g/1))=(A_f)_{g/1}.
+$$
+Since $D(g)\cap D(f)=D(fg)$ inside $\Spec(A)$,
+$$
+\restrictionof{\mathcal O_X}{D(f)}(D(g)\cap D(f))
+=\mathcal O_X(D(fg))
+=A_{fg}.
+$$
+Localization is transitive, and both rings canonically identify with the localization of $A$ in which both $f$ and $g$ are inverted:
+$$
+(A_f)_{g/1}\cong A_{fg}.
+$$
+These isomorphisms commute with restriction maps because all restriction maps on distinguished opens are the canonical localization homomorphisms.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+The basis isomorphisms of step [](#s4){.pf-ref} determine an isomorphism of sheaves
+$$
+\mathcal O_{\Spec(A_f)}
+\cong
+\phi^{-1}\!\left(\restrictionof{\mathcal O_X}{D(f)}\right).
+$$
+
+::: pf-proof
+
+Distinguished opens form a basis closed under finite intersections. An isomorphism on such a basis that is compatible with restriction maps extends uniquely to an isomorphism of sheaves. The compatibility was established in step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+Hence
+$$
+\boxed{(D(f),\restrictionof{\mathcal O_X}{D(f)})\cong\Spec(A_f)}
+$$
+as ringed spaces.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives the homeomorphism of underlying spaces, and step [](#s5){.pf-ref} identifies the structure sheaves under that homeomorphism. Together they define the required isomorphism of ringed spaces.
+
 :::
 
 :::
 
 ::: pf-qed
-The sets $D(af)$, $a\in A$, form a basis of $D(f)$ closed under intersection. By step [](#sections-isomorphism){.pf-ref}, $\psi^\#\colon\restrictionof{\OO_X}{D(f)}\to\psi_*\OO_Y$ is defined and bijective on this basis and commutes with restriction, so it extends uniquely to an isomorphism of sheaves on $D(f)$. With step [](#psi-homeomorphism){.pf-ref}, $(\psi,\psi^\#)\colon(Y,\OO_Y)\to(D(f),\restrictionof{\OO_X}{D(f)})$ is an isomorphism of ringed spaces, and its inverse is the required isomorphism.
+
+Step [](#s6){.pf-ref} is the desired conclusion.
+
+:::
+
 :::
 
 :::
 
+::: {.remark}
+The isomorphism is induced by the localization map $A\to A_f$: on points it is contraction of prime ideals, and on distinguished opens it is the canonical localization isomorphism $(A_f)_{g/1}\cong A_{fg}$.
 :::

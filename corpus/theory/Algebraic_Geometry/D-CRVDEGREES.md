@@ -33,8 +33,26 @@ The \dfn{degree} of $p$ is $\deg p = [\kappa(p) : k]$, which is finite by the Nu
 
 ::: {.definition title="Degree of a finite morphism"}
 Let $\pi \colon X \to Y$ be a finite morphism and $y \in Y$.
-The \dfn{degree of $\pi$ at $y$} is $\dim_{\kappa(y)} (\pi_* \OO_X \otimes_{\OO_Y} \kappa(y))$.
-Since $\pi$ is affine, $\pi^{-1}(y) = \Spec (\pi_* \OO_X \otimes \kappa(y))$, so this is the dimension of the ring of functions on the fibre.
+The \dfn{degree of $\pi$ at $y$} is
+$$
+\dim_{\kappa(y)}
+\qty{
+(\pi_*\OO_X)_y
+\tensor_{\OO_{Y,y}}
+\kappa(y)
+}.
+$$
+Since $\pi$ is affine,
+$$
+\pi^{-1}(y)
+\cong
+\Spec\qty{
+(\pi_*\OO_X)_y
+\tensor_{\OO_{Y,y}}
+\kappa(y)
+},
+$$
+so this is the dimension of the ring of functions on the fibre.
 If $X$ is a curve without embedded points, $Y$ is a regular curve and $\pi$ is finite and surjective, then $\pi_* \OO_X$ is locally free of finite rank, and its rank, the degree at every point, is the \dfn{degree} $\deg \pi$.
 :::
 
@@ -50,8 +68,7 @@ Let $C$ be a regular projective integral curve over $k$.
 
 1. For a divisor $D = \sum_i n_i p_i$, $\deg \OO_C(D) = \deg D = \sum_i n_i \deg p_i$ ([[PR-Y5S7V]]); so if $s$ is a nonzero rational section of $\mathcal{L}$, then $\deg \mathcal{L} = \deg \div s$.
 
-2. For a locally free sheaf $\mathcal{E}$ of rank $r$ and an invertible sheaf $\mathcal{L}$, $\chi(\mathcal{E} \otimes \mathcal{L}) = \chi(\mathcal{E}) + r \deg \mathcal{L}$.
+2. For a locally free sheaf $\mathcal{E}$ of rank $r$ and an invertible sheaf $\mathcal{L}$, $\chi(\mathcal{E} \tensor_{\OO_C} \mathcal{L}) = \chi(\mathcal{E}) + r \deg \mathcal{L}$.
 
 3. If $\pi \colon C' \to C$ is a finite surjective morphism from a projective integral curve, then $\deg_{C'} \pi^* \mathcal{L} = (\deg \pi)(\deg_C \mathcal{L})$ [@Har10a, Proposition II.6.9].
 :::
-

@@ -1,20 +1,142 @@
----
-schema: qual/card@1
-id: P-MAXAT-6-11
-kind: problem
-title: Maxim algebraic topology 6.11
-classification:
-  areas: [topology]
-  topics: []
-relations: []
-review: draft
-audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-12
-  note: Checked against section 6, problem 11 of the retained Laurentiu Maxim Problems in Algebraic Topology PDF.
----
 
-::: {.problem}
-Find the cohomology ring of $B U ( n ) , B O ( n )$
+
+::: {.solution}
+The natural coefficient choices are integral coefficients for $BU(n)$ and mod-$2$ coefficients for $BO(n)$.
+
+<1>1. Let
+\[
+\gamma_n^{\mathbb C}\to BU(n)
+\]
+be the universal complex $n$-plane bundle. Its Chern classes are
+\[
+c_i=c_i(\gamma_n^{\mathbb C})
+\in H^{2i}(BU(n);\mathbb Z),
+\qquad 1\leq i\leq n.
+\]
+
+::: {.proof}
+By definition, $BU(n)$ classifies rank-$n$ complex vector bundles. Applying the universal Chern-class construction to the universal bundle gives the displayed classes in their standard degrees.
+:::
+
+<1>2. The inclusion of a maximal torus
+\[
+T^n=U(1)^n\hookrightarrow U(n)
+\]
+induces
+\[
+BT^n=(\mathbb{CP}^{\infty})^n\longrightarrow BU(n).
+\]
+If $x_i\in H^2(BT^n;\mathbb Z)$ is the first Chern class of the $i$th universal line bundle, then
+\[
+c_k\longmapsto e_k(x_1,\ldots,x_n),
+\]
+the $k$th elementary symmetric polynomial.
+
+::: {.proof}
+The pullback of the universal $n$-plane bundle to $BT^n$ splits as the direct sum of the $n$ universal line bundles. By the Whitney product formula,
+\[
+c(\gamma_n^{\mathbb C}|_{BT^n})
+=\prod_{i=1}^n(1+x_i).
+\]
+Comparing homogeneous components gives the elementary symmetric polynomials.
+:::
+
+<1>3. Consequently
+\[
+\boxed{
+H^*(BU(n);\mathbb Z)
+\cong\mathbb Z[c_1,\ldots,c_n],
+\qquad |c_i|=2i.}
+\]
+
+::: {.proof}
+The splitting principle makes the map to the cohomology of the complete flag bundle injective, so a relation among the $c_i$ would yield a relation among the elementary symmetric polynomials $e_i(x_1,\ldots,x_n)$. The fundamental theorem of symmetric polynomials says
+\[
+\mathbb Z[x_1,\ldots,x_n]^{S_n}
+=\mathbb Z[e_1,\ldots,e_n]
+\]
+with the $e_i$ algebraically independent. Conversely, the Schubert-cell decomposition of the infinite complex Grassmannian model of $BU(n)$ has only even-dimensional cells, and its Poincare series equals
+\[
+\prod_{i=1}^n\frac1{1-t^{2i}},
+\]
+the Hilbert series of $\mathbb Z[c_1,\ldots,c_n]$. Thus these classes generate all integral cohomology and satisfy no relations.
+:::
+
+<1>4. Let
+\[
+\gamma_n^{\mathbb R}\to BO(n)
+\]
+be the universal real $n$-plane bundle. Its Stiefel--Whitney classes are
+\[
+w_i=w_i(\gamma_n^{\mathbb R})
+\in H^i(BO(n);\mathbb F_2),
+\qquad1\leq i\leq n.
+\]
+
+::: {.proof}
+The space $BO(n)$ classifies rank-$n$ real vector bundles. Applying the universal Stiefel--Whitney-class construction gives these classes in degree $i$.
+:::
+
+<1>5. Restriction to the diagonal subgroup
+\[
+O(1)^n\hookrightarrow O(n)
+\]
+gives
+\[
+(\mathbb{RP}^{\infty})^n\to BO(n),
+\]
+under which
+\[
+w_k\longmapsto e_k(y_1,\ldots,y_n),
+\qquad |y_i|=1.
+\]
+
+::: {.proof}
+The pulled-back universal real bundle is the direct sum of the $n$ universal real line bundles. If their first Stiefel--Whitney classes are $y_i$, the Whitney formula gives
+\[
+w(\gamma_n^{\mathbb R})\longmapsto
+\prod_{i=1}^n(1+y_i).
+\]
+Again, homogeneous components are elementary symmetric polynomials.
+:::
+
+<1>6. Hence
+\[
+\boxed{
+H^*(BO(n);\mathbb F_2)
+\cong\mathbb F_2[w_1,\ldots,w_n],
+\qquad |w_i|=i.}
+\]
+
+::: {.proof}
+The mod-$2$ splitting principle reduces relations to symmetric-polynomial relations in
+\[
+H^*((\mathbb{RP}^{\infty})^n;\mathbb F_2)
+=\mathbb F_2[y_1,\ldots,y_n].
+\]
+The elementary symmetric polynomials are algebraically independent and generate the invariant ring. The Schubert-cell decomposition of the real Grassmannian model of $BO(n)$ gives the matching mod-$2$ Poincare series
+\[
+\prod_{i=1}^n\frac1{1-t^i},
+\]
+so the $w_i$ generate the entire ring.
+:::
+
+<1>7. Therefore the standard cohomology-ring calculations are
+\[
+\boxed{H^*(BU(n);\mathbb Z)=\mathbb Z[c_1,\ldots,c_n]}
+\]
+and
+\[
+\boxed{H^*(BO(n);\mathbb F_2)=\mathbb F_2[w_1,\ldots,w_n].}
+\]
+
+::: {.proof}
+These are steps <1>3 and <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 gives both requested classifying-space cohomology rings with their standard coefficient systems.
+:::
 :::

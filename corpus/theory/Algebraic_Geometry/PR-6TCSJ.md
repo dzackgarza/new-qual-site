@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: PR-6TCSJ
 kind: proposition
-title: Properties of $\Spec A$ read off $A$
-slogan: 'Affine-scheme properties are ring-theoretic: reduced, irreducible, integral, connected, Noetherian, and one-point all read off $A$.'
+title: Ring-theoretic criteria for affine schemes
+slogan: 'For $X=\Spec A$, reducedness, irreducibility, integrality, connectedness, Noetherianity, and the one-point property have ring-theoretic criteria in $A$.'
 classification:
   areas:
   - algebraic-geometry
@@ -30,16 +30,16 @@ For a ring $A$:
 | integral | a domain |
 | connected | no nontrivial idempotents |
 | Noetherian | Noetherian |
-| a single point | local artinian |
+| underlying space has one point | $A_{\mathrm{red}}$ is a field |
 
 More generally, a scheme $X$ is integral if and only if it is reduced and irreducible [@Har10a, Proposition II.3.1].
+If $A$ is Noetherian, the last row is also equivalent to $A$ being a local Artinian ring.
 
-An irreducible scheme has a unique **generic point**, dense in it; for $\Spec A$ integral it is the prime $(0)$, with residue field $\Frac(A)$.
+An irreducible scheme has a unique [[D-SCHPTS|generic point]] $\eta$. For $\Spec A$ integral, $\eta=(0)$ and $\kappa(\eta)\cong\Frac(A)$.
 :::
 
 ::: {.remark}
-"Integral is reduced plus irreducible" follows immediately from the table: no nilpotents plus a prime nilradical means $(0)$ is prime.
+The affine integral criterion follows from the first three rows: if $A$ is reduced, then its nilradical is $(0)$, and irreducibility says this ideal is prime.
 
-Generic points are the visible difference from the classical picture, and the useful slogan is that a statement holds generically exactly when it holds at the generic point.
-The function field of an integral scheme is the residue field there, which is how $k(X)$ becomes an object rather than a construction.
+For an integral scheme $X$ with generic point $\eta$, its function field is the residue field $\kappa(\eta)$.
 :::

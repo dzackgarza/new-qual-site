@@ -24,3 +24,36 @@ Among $N$ tickets for $N$ students there are $n$ happy tickets.
 The students take the tickets one by one, each takes one random ticket.
 What is the probability that $j$'s student gets a happy ticket, $1 \leqslant j \leqslant N$?
 :::
+
+::: {.solution}
+<1>1. Drawing the tickets sequentially without replacement produces a uniformly random permutation of the $N$ tickets.
+
+::: {.proof}
+For any prescribed ordered list of all $N$ tickets, the probability that the draws occur in that order is
+\[
+\frac1N\frac1{N-1}\cdots\frac11=\frac1{N!}.
+\]
+Thus every permutation is equally likely.
+:::
+
+<1>2. Consequently, the ticket in position $j$ is uniformly distributed among the $N$ tickets.
+
+::: {.proof}
+Fix any ticket. Among the $N!$ permutations from step <1>1, exactly $(N-1)!$ place that ticket in position $j$. Hence its probability of occupying position $j$ is $(N-1)!/N!=1/N$, independently of $j$.
+:::
+
+<1>3. Since exactly $n$ tickets are happy, the probability that student $j$ receives one is
+\[
+\boxed{\frac nN}.
+\]
+
+::: {.proof}
+By step <1>2, each of the $N$ tickets has probability $1/N$ of being drawn in position $j$. The $n$ favorable tickets are disjoint possibilities, so their probabilities sum to $n/N$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested probability for every $1\leq j\leq N$.
+:::
+:::

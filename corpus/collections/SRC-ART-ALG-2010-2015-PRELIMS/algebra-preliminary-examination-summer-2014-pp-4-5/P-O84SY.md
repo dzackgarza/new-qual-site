@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked the complete Sylow counts and cyclic automorphism group, the order-3 centralizer obstruction, and the characteristic involution that rules out centralizer order 14."
 ---
-
 ::: {.problem}
 Let $G$ be a finite group of order 84 with 28 Sylow $3$-subgroups.
 For any subgroup $H$ of $G$, let $N_G(H)$ and $Z_G(H)$ be the normalizer and the centralizer of $H$ in $G$, respectively.
@@ -132,7 +131,7 @@ and $3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 The centralizer $C$ has order $28$.
 
@@ -162,6 +161,12 @@ belong to a group of order $3$. This contradiction excludes
 $|C|=14$, leaving $|C|=28$ as required.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} establish parts (a)--(e), respectively.
 
 :::
 

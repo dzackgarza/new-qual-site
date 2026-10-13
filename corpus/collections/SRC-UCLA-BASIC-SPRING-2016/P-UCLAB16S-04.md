@@ -28,3 +28,328 @@ f(x):=\lim_{n\to\infty}f_n(x)
 \]
 exists and compute its value.
 :::
+
+::: {.solution}
+Define the operator
+\[
+(K\varphi)(x)
+=
+\int_0^x\beta(t)\varphi(t)\,dt
+\]
+on
+\[
+C([0,1]).
+\]
+Then
+\[
+f_{n+1}
+=
+\alpha+Kf_n,
+\qquad
+f_0=0.
+\]
+
+<1>1. There exists
+\[
+q<1
+\]
+such that
+\[
+0\le\beta(t)\le q
+\]
+for every
+\[
+t\in[0,1].
+\]
+
+::: {.proof}
+The function $\beta$ is continuous on the compact interval $[0,1]$, so it attains a maximum.
+Because its values lie in
+\[
+[0,1),
+\]
+that maximum is a number
+\[
+q<1.
+\]
+:::
+
+<1>2. For every
+\[
+\varphi,\psi\in C([0,1]),
+\]
+one has
+\[
+\|K\varphi-K\psi\|_\infty
+\le
+q\|\varphi-\psi\|_\infty.
+\]
+
+::: {.proof}
+For
+\[
+x\in[0,1],
+\]
+\[
+\begin{aligned}
+|(K\varphi)(x)-(K\psi)(x)|
+&=
+\left|
+\int_0^x
+\beta(t)(\varphi(t)-\psi(t))
+\,dt
+\right|\\
+&\le
+\int_0^x
+q\|\varphi-\psi\|_\infty
+\,dt\\
+&\le
+q\|\varphi-\psi\|_\infty.
+\end{aligned}
+\]
+Take the supremum over $x$.
+:::
+
+<1>3. The map
+\[
+\mathcal T(\varphi)
+=
+\alpha+K\varphi
+\]
+is a contraction on the Banach space
+\[
+C([0,1])
+\]
+with the supremum norm.
+
+::: {.proof}
+The space
+\[
+C([0,1])
+\]
+is complete in the uniform norm.
+Step <1>2 gives
+\[
+\|\mathcal T(\varphi)-\mathcal T(\psi)\|_\infty
+\le
+q\|\varphi-\psi\|_\infty
+\]
+with
+\[
+q<1.
+\]
+Thus $\mathcal T$ is a contraction.
+:::
+
+<1>4. The sequence $(f_n)$ converges uniformly to the unique fixed point
+\[
+f
+\]
+of $\mathcal T$.
+
+::: {.proof}
+By definition,
+\[
+f_{n+1}
+=
+\mathcal T(f_n).
+\]
+The contraction mapping theorem applied to step <1>3 therefore implies
+\[
+f_n\to f
+\]
+uniformly for a unique continuous function $f$ satisfying
+\[
+\mathcal T(f)=f.
+\]
+In particular, the pointwise limit exists for every $x\in[0,1]$.
+:::
+
+<1>5. The limit satisfies the integral equation
+\[
+\boxed{
+f(x)
+=
+\alpha(x)
++
+\int_0^x\beta(t)f(t)\,dt.
+}
+\]
+
+::: {.proof}
+This is precisely the fixed-point equation
+\[
+\mathcal T(f)=f.
+\]
+:::
+
+<1>6. Define
+\[
+B(x)
+=
+\int_0^x\beta(s)\,ds
+\]
+and
+\[
+H(x)
+=
+e^{B(x)}
+\int_0^x
+\beta(t)\alpha(t)e^{-B(t)}
+\,dt.
+\]
+Then
+\[
+H(0)=0.
+\]
+
+::: {.proof}
+At
+\[
+x=0,
+\]
+the integral is zero.
+Thus
+\[
+H(0)
+=
+e^{B(0)}\cdot0
+=0.
+\]
+:::
+
+<1>7. One has
+\[
+\boxed{
+H'(x)
+=
+\beta(x)\bigl(\alpha(x)+H(x)\bigr).
+}
+\]
+
+::: {.proof}
+Because $\alpha$ and $\beta$ are continuous,
+\[
+B'(x)=\beta(x).
+\]
+Differentiate using the product rule and the fundamental theorem of calculus:
+\[
+\begin{aligned}
+H'(x)
+&=
+\beta(x)e^{B(x)}
+\int_0^x
+\beta(t)\alpha(t)e^{-B(t)}
+\,dt\\
+&\quad+
+e^{B(x)}
+\beta(x)\alpha(x)e^{-B(x)}\\
+&=
+\beta(x)H(x)
++
+\beta(x)\alpha(x).
+\end{aligned}
+\]
+:::
+
+<1>8. Consequently,
+\[
+H(x)
+=
+\int_0^x
+\beta(t)\bigl(\alpha(t)+H(t)\bigr)
+\,dt.
+\]
+
+::: {.proof}
+Integrate the differential equation from step <1>7 from $0$ to $x$ and use
+\[
+H(0)=0
+\]
+from step <1>6.
+:::
+
+<1>9. Define
+\[
+g(x)
+=
+\alpha(x)+H(x).
+\]
+Then
+\[
+g
+\]
+satisfies the fixed-point equation in step <1>5.
+
+::: {.proof}
+By step <1>8,
+\[
+\begin{aligned}
+g(x)
+&=
+\alpha(x)+H(x)\\
+&=
+\alpha(x)
++
+\int_0^x
+\beta(t)\bigl(\alpha(t)+H(t)\bigr)
+\,dt\\
+&=
+\alpha(x)
++
+\int_0^x
+\beta(t)g(t)
+\,dt.
+\end{aligned}
+\]
+:::
+
+<1>10. Therefore the limit is
+\[
+\boxed{
+f(x)
+=
+\alpha(x)
++
+e^{\int_0^x\beta(s)\,ds}
+\int_0^x
+\beta(t)\alpha(t)
+e^{-\int_0^t\beta(s)\,ds}
+\,dt.
+}
+\]
+
+::: {.proof}
+By step <1>9, the function $g$ is a fixed point of $\mathcal T$.
+By uniqueness of the fixed point from step <1>4,
+\[
+f=g.
+\]
+Substitute the definition of $H$ from step <1>6.
+:::
+
+<1>11. Hence for every $x\in[0,1]$,
+\[
+\boxed{
+\lim_{n\to\infty}f_n(x)
+=
+\alpha(x)
++
+e^{\int_0^x\beta(s)\,ds}
+\int_0^x
+\beta(t)\alpha(t)
+e^{-\int_0^t\beta(s)\,ds}
+\,dt.
+}
+\]
+
+::: {.proof}
+Step <1>4 gives convergence of $f_n$ to $f$, and step <1>10 computes $f$ explicitly.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>11 is the required pointwise limit and its value.
+:::
+:::

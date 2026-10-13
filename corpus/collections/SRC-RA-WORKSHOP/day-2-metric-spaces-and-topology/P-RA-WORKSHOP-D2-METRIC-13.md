@@ -17,42 +17,52 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Verify the remark following the definition of normed space: Every normed space $(X,\lVert\cdot\rVert)$ is a metric space by taking $d(x,y)=\lVert x-y\rVert$, while the converse is not true in general—even if $X$ is a vector space.
 :::
 
-:::: {.solution}
+::: {.solution}
+
 ::: pf
 
-::: pf-step
-Every normed space is a metric space via $d(x,y) = \lVert x-y\rVert$.
+::: {.pf-step #s1}
+
+For every normed vector space $X$, the function $d(x,y)=\lVert x-y\rVert$ is a metric.
 
 ::: pf-proof
 
-::: pf-step
-Non-negativity and separation: $\lVert x-y\rVert \ge 0$ with equality iff $x = y$ (norm axioms), so $d(x,y) \ge 0$ and $d(x,y) = 0$ iff $x = y$.
-:::
-
-::: pf-step
-Symmetry: $d(x,y) = \lVert x-y\rVert = \lVert -(y-x)\rVert = \lVert y-x\rVert = d(y,x)$ (homogeneity with $\lambda = -1$).
-:::
-
-::: pf-step
-Triangle inequality: $d(x,z) = \lVert x-z\rVert = \lVert (x-y) + (y-z)\rVert \le \lVert x-y\rVert + \lVert y-z\rVert = d(x,y) + d(y,z)$.
-:::
+The norm axioms give $d(x,y)\geq0$ with equality exactly when $x=y$. Absolute homogeneity yields $d(y,x)=\lVert -(x-y)\rVert=d(x,y)$. Finally, the norm triangle inequality yields
+\[
+d(x,z)=\lVert (x-y)+(y-z)\rVert\leq d(x,y)+d(y,z).
+\]
+These are precisely the metric axioms.
 
 :::
 
 :::
 
-::: pf-step
-The converse fails in general, even for a vector space.
-Proof: take $X = \mathbb{R}$ with the discrete metric $d(x,y) = 1$ for $x \ne y$, $d(x,x) = 0$.
-This is a metric on the vector space $\mathbb{R}$.
-But no norm induces it: a norm-induced metric satisfies $d(nx, 0) = \lVert nx\rVert = n\lVert x\rVert$, which grows with $n$, whereas the discrete metric gives $d(nx,0) = 1$ for every $n \ge 1$ (with $x \ne 0$). Contradiction.
-(More conceptually, a norm-induced metric is translation-invariant and homogeneous; the discrete metric is neither.)
+::: {.pf-step #s2}
+
+The discrete metric on $\mathbb R$ is not induced by any norm.
+
+::: pf-proof
+
+Define $\delta(x,y)=0$ for $x=y$ and $\delta(x,y)=1$ otherwise. Non-negativity, separation, and symmetry are immediate. If $x\ne z$, at least one of $x\ne y$ and $y\ne z$ holds, so $\delta(x,z)\leq\delta(x,y)+\delta(y,z)$; thus $\delta$ is a metric. Suppose a norm induced $\delta$. For any $x\ne0$, absolute homogeneity would give
+\[
+1=\delta(2x,0)=\lVert2x\rVert=2\lVert x\rVert=2\delta(x,0)=2,
+\]
+a contradiction. In fact $\delta$ is translation-invariant, but not homogeneous; failure of homogeneity is the obstruction.
+
 :::
 
 :::
-::::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the forward assertion, while step [](#s2){.pf-ref} supplies a metric on a vector space that is not induced by a norm.
+
+:::
+
+:::
+
+:::

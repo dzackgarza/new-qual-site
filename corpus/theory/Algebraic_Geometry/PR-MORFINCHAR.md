@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: PR-MORFINCHAR
 kind: proposition
-title: Finite equals proper plus quasi-finite
-slogan: 'Over locally Noetherian schemes, finite means proper plus quasi-finite, equivalently proper with finite fibres.'
+title: Finite morphisms as proper quasi-finite morphisms
+slogan: 'Over locally Noetherian schemes, a morphism is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres.'
 classification:
   areas:
   - algebraic-geometry
@@ -27,20 +27,21 @@ Let $\pi \colon X \to Y$ be a morphism of schemes.
 
 1. $\pi$ is finite if and only if it is integral and locally of finite type.
 
-2. If $\pi$ is finite, then it is quasi-finite: every fibre is a finite discrete set [@Har10a, Exercise II.3.5].
+2. If $\pi$ is finite, then it is quasi-finite: every fibre is a finite scheme over its residue field and therefore has finitely many points [@Har10a, Exercise II.3.5].
 
-3. If $\pi$ is finite, then $X \cong \operatorname{\mathbf{Proj}}_Y \mathcal{S}$ over $Y$ for a quasicoherent graded $\OO_Y$-algebra $\mathcal{S}$ generated in degree $1$ by the finite type module $\mathcal{S}_1$; in particular $\pi$ is projective in the sense of [[D-SCHRELSPECPROJ]], and proper.
+3. Every finite morphism is projective in the sense of [[D-MORPROJ]], hence proper.
 
-4. A morphism of locally Noetherian schemes is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres [@Har10a, Exercise III.11.2]. Without Noetherian hypotheses: finite exactly when proper, locally of finite presentation, and with finite fibres.
+4. Let $X$ and $Y$ be locally Noetherian. Then $\pi$ is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres [@Har10a, Exercise III.11.2].
 :::
 
 ::: {.remark}
-This characterization converts the module-theoretic definition of finiteness into geometric conditions.
-The implications are
-\[
+The implications
+$$
 \text{finite} \implies \text{projective} \implies \text{proper} \implies \text{universally closed},
-\]
-with none of them reversible: $\PP^1_k \to \Spec k$ is projective and not finite, and complete non-projective threefolds give proper morphisms to a point that are not projective.
+$$
+follow from [[D-MORPROJ]] and [[D-8XX95]]. The first implication is not reversible: $\PP^1_k\to\Spec k$ is projective and not finite.
 
-The converse direction, proper plus finite fibres giving finite, recognizes normalization maps and proper zero-dimensional-fibre morphisms as finite.
+For locally Noetherian schemes, the converse in part 4 is a consequence of Zariski's main theorem: a separated quasi-finite morphism factors as an open immersion followed by a finite morphism ([[T-MORZMT]]). If the original morphism is proper, [[PR-MORCANCEL]] applied to the finite second factor shows that the open immersion is proper; a proper open immersion is also closed. Its composite with the finite morphism is therefore finite.
+
+The locally Noetherian hypothesis in part 4 is the scope of the cited Hartshorne result, not a replacement by local finite presentation outside that scope. In particular, a finite morphism over a non-Noetherian base need not be locally of finite presentation: if $A$ has a non-finitely-generated ideal $I$, then $A\to A/I$ is finite as a module map but is not finitely presented as an $A$-algebra.
 :::

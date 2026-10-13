@@ -21,7 +21,6 @@ audit:
   by: OpenAI
   date: 2026-09-11
 ---
-
 ::: {.problem}
 a. Show that two $3\times 3$ matrices over $\CC$ are similar $\iff$ their characteristic polynomials are equal and their minimal polynomials are equal.
 
@@ -34,15 +33,19 @@ Justify your answer with a proof or counterexample.
 ::: pf
 
 ::: pf-step
+
 Over $\mathbb C$, two matrices are similar if and only if they have the same Jordan canonical form.
 
 ::: pf-proof
+
 Every complex matrix is similar to a Jordan matrix, and the multiset of Jordan blocks is uniquely determined up to reordering. Thus it suffices to determine the Jordan block sizes from the characteristic and minimal polynomials.
+
 :::
 
 :::
 
 ::: pf-step
+
 Let $A\in M_3(\mathbb C)$. For each eigenvalue $\lambda$, write
 \[
 \chi_A(t)=\prod_\lambda (t-\lambda)^{m_\lambda}
@@ -54,15 +57,19 @@ and
 Then $m_\lambda$ is the total size of the Jordan blocks for $\lambda$, while $e_\lambda$ is the size of the largest Jordan block for $\lambda$.
 
 ::: pf-proof
+
 The algebraic multiplicity $m_\lambda$ is the dimension of the generalized $\lambda$-eigenspace, hence the sum of the sizes of all Jordan blocks for $\lambda$. For a Jordan block $J_r(\lambda)$, the minimal polynomial is $(t-\lambda)^r$; taking the least common multiple over all blocks shows that the exponent of $(t-\lambda)$ in $\mu_A$ is the largest such block size.
-:::
 
 :::
 
-::: {.pf-step #partition-determined-by-pair}
+:::
+
+::: {.pf-step #s3}
+
 If $m_\lambda\le3$, then the pair $(m_\lambda,e_\lambda)$ uniquely determines the partition of $m_\lambda$ given by the Jordan block sizes.
 
 ::: pf-proof
+
 The possible partitions are
 \[
 1=(1),
@@ -75,25 +82,31 @@ and
 3=(3),\quad(2,1),\quad(1,1,1).
 \]
 For $m=1$ there is only one partition. For $m=2$, the largest part is respectively $2$ or $1$. For $m=3$, the largest part is respectively $3$, $2$, or $1$. Hence the largest block size determines the entire partition whenever $m\le3$.
-:::
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s4}
+
 Therefore two $3\times3$ complex matrices are similar if and only if they have the same characteristic polynomial and the same minimal polynomial.
 
 ::: pf-proof
+
 If two matrices are similar, their characteristic and minimal polynomials are invariant under similarity, so the forward implication is immediate.
 
-Conversely, suppose $A,B\in M_3(\mathbb C)$ have the same characteristic and minimal polynomials. Then for every eigenvalue $\lambda$, they have the same numbers $m_\lambda$ and $e_\lambda$. Since $m_\lambda\le3$, step [](#partition-determined-by-pair){.pf-ref} shows that the Jordan block sizes for $\lambda$ are identical for $A$ and $B$. This holds for every eigenvalue, so $A$ and $B$ have the same Jordan form and are similar.
-:::
+Conversely, suppose $A,B\in M_3(\mathbb C)$ have the same characteristic and minimal polynomials. Then for every eigenvalue $\lambda$, they have the same numbers $m_\lambda$ and $e_\lambda$. Since $m_\lambda\le3$, step [](#s3){.pf-ref} shows that the Jordan block sizes for $\lambda$ are identical for $A$ and $B$. This holds for every eigenvalue, so $A$ and $B$ have the same Jordan form and are similar.
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s5}
+
 The corresponding statement is false for $4\times4$ matrices.
 
 ::: pf-proof
+
 Take
 \[
 A=J_2(0)\oplus J_2(0)
@@ -113,7 +126,14 @@ and because the largest Jordan block in each case has size $2$, their minimal po
 However, their Jordan block multisets are different: $A$ has type $(2,2)$ while $B$ has type $(2,1,1)$. Hence they are not similar.
 
 Thus the conclusion of part (a) fails in dimension $4$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (a), and step [](#s5){.pf-ref} supplies the counterexample required for part (b).
 
 :::
 

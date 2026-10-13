@@ -24,3 +24,58 @@ What is the coefficient of the $(z-2)^{-1}$ term in the Laurent series for $f(z)
 (D) $3$
 (E) $1$
 :::
+
+::: {.solution}
+Put $w=z-2$, so that
+$$
+f(z)=\frac1{w-3}.
+$$
+
+<1>1. On the disk $|z-2|<3$, the Laurent series centered at $2$ is the Taylor series
+$$
+f(z)=-\sum_{n=0}^{\infty}\frac{(z-2)^n}{3^{n+1}},
+$$
+and its $(z-2)^{-1}$ coefficient is $0$.
+
+::: {.proof}
+If $|w|<3$, then $|w/3|<1$, so the geometric-series identity gives
+$$
+\frac1{w-3}
+=-\frac13\frac1{1-w/3}
+=-\frac13\sum_{n=0}^{\infty}\left(\frac w3\right)^n.
+$$
+Only nonnegative powers of $w=z-2$ occur, so the coefficient of $(z-2)^{-1}$ is $0$.
+:::
+
+<1>2. On the exterior annulus $|z-2|>3$, the Laurent series centered at $2$ is
+$$
+f(z)=\sum_{n=0}^{\infty}3^n(z-2)^{-n-1},
+$$
+whose $(z-2)^{-1}$ coefficient is
+$$
+\boxed{1}.
+$$
+
+::: {.proof}
+If $|w|>3$, then $|3/w|<1$, and hence
+$$
+\frac1{w-3}
+=\frac1w\frac1{1-3/w}
+=\frac1w\sum_{n=0}^{\infty}\left(\frac3w\right)^n
+=\sum_{n=0}^{\infty}3^nw^{-n-1}.
+$$
+The power $w^{-1}$ occurs exactly for $n=0$, with coefficient $1$.
+:::
+
+<1>3. Therefore the question, as written without an annulus of convergence, does not determine a unique coefficient; under the exterior-Laurent interpretation represented by the answer choices, the answer is (E).
+
+::: {.proof}
+Steps <1>1 and <1>2 give two distinct Laurent expansions centered at $2$, on the two maximal annuli separated by the singularity $z=5$, and their $(z-2)^{-1}$ coefficients are respectively $0$ and $1$. Thus the annulus is mathematically necessary. Choice (E) is the value from the exterior expansion in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 records both the mathematical ambiguity and the answer corresponding to the intended exterior expansion.
+:::
+:::

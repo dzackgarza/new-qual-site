@@ -9,6 +9,18 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-02
+  note: Checked Problem 6B against the vendored Berkeley Spring 2016 exam. The exam states $A^T(y-Ax)\geq0$, while its supplied solution proves the opposite sign by working with $A^T(Ax-y)$.
+- event: solution-written
+  by: chatgpt
+  date: 2026-10-02
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-10-02
+  note: Verified a one-dimensional counterexample to the printed sign and proved the corrected first-order inequality in every coordinate.
 ---
 
 ::: {.problem}

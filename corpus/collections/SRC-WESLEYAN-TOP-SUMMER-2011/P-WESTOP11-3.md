@@ -14,3 +14,254 @@ audit:
 1. State Zorn's Lemma.
 2. Use Zorn's Lemma to prove that every commutative ring with identity $1\ne0$ has a maximal ideal.
 :::
+
+::: {.solution}
+<1>1. **Zorn's Lemma.**
+
+Let
+\[
+(P,\le)
+\]
+be a partially ordered set. If every chain
+\[
+C\subseteq P
+\]
+has an upper bound in $P$, then $P$ contains a maximal element.
+
+::: {.proof}
+This is the statement of Zorn's Lemma. Here a chain means a totally ordered
+subset of $P$, and an element $m\in P$ is maximal if
+\[
+m\le x
+\quad\Longrightarrow\quad
+x=m.
+\]
+:::
+
+<1>2. Let $R$ be a commutative ring with identity
+\[
+1\ne0.
+\]
+Let
+\[
+\mathcal P
+\coloneqq
+\{I\subset R:I\text{ is a proper ideal}\},
+\]
+ordered by inclusion.
+Then
+\[
+\mathcal P\ne\varnothing.
+\]
+
+::: {.proof}
+The zero ideal
+\[
+(0)
+\]
+is proper because
+\[
+1\ne0.
+\]
+Hence
+\[
+(0)\in\mathcal P.
+\]
+:::
+
+<1>3. Let
+\[
+\mathcal C\subseteq\mathcal P
+\]
+be a chain. Define
+\[
+J
+\coloneqq
+\bigcup_{I\in\mathcal C}I.
+\]
+Then $J$ is an ideal of $R$.
+
+::: {.proof}
+Let
+\[
+x,y\in J.
+\]
+Then there exist
+\[
+I_x,I_y\in\mathcal C
+\]
+with
+\[
+x\in I_x,
+\qquad
+y\in I_y.
+\]
+Since $\mathcal C$ is a chain, either
+\[
+I_x\subseteq I_y
+\]
+or
+\[
+I_y\subseteq I_x.
+\]
+Assume, without loss of generality,
+\[
+I_x\subseteq I_y.
+\]
+Then
+\[
+x,y\in I_y,
+\]
+so
+\[
+x-y\in I_y\subseteq J.
+\]
+
+If
+\[
+r\in R
+\]
+and
+\[
+x\in J,
+\]
+choose
+\[
+I\in\mathcal C
+\]
+with
+\[
+x\in I.
+\]
+Since $I$ is an ideal,
+\[
+rx\in I\subseteq J.
+\]
+Thus $J$ is an ideal.
+:::
+
+<1>4. The ideal $J$ from step <1>3 is proper.
+
+::: {.proof}
+Suppose, toward a contradiction, that
+\[
+J=R.
+\]
+Then
+\[
+1\in J.
+\]
+By definition of the union, there would exist some
+\[
+I\in\mathcal C
+\]
+such that
+\[
+1\in I.
+\]
+But an ideal containing $1$ equals $R$, so
+\[
+I=R,
+\]
+contradicting
+\[
+I\in\mathcal P.
+\]
+Therefore
+\[
+J\ne R.
+\]
+:::
+
+<1>5. Hence every chain in $\mathcal P$ has an upper bound in
+$\mathcal P$.
+
+::: {.proof}
+For a chain
+\[
+\mathcal C\subseteq\mathcal P,
+\]
+steps <1>3--<1>4 show that
+\[
+J=\bigcup_{I\in\mathcal C}I
+\]
+is a proper ideal. Thus
+\[
+J\in\mathcal P.
+\]
+Moreover,
+\[
+I\subseteq J
+\qquad
+(I\in\mathcal C),
+\]
+so $J$ is an upper bound for the chain.
+:::
+
+<1>6. By Zorn's Lemma, $\mathcal P$ contains a maximal element
+\[
+\mathfrak m.
+\]
+
+::: {.proof}
+Step <1>2 shows that $\mathcal P$ is nonempty, and step <1>5 verifies the
+chain-upper-bound hypothesis of Zorn's Lemma. Apply step <1>1.
+:::
+
+<1>7. The ideal
+\[
+\mathfrak m
+\]
+is a maximal ideal of $R$.
+
+::: {.proof}
+By construction,
+\[
+\mathfrak m\ne R.
+\]
+Suppose
+\[
+\mathfrak m\subseteq I\subseteq R
+\]
+for some ideal $I$.
+
+If
+\[
+I\ne R,
+\]
+then
+\[
+I\in\mathcal P.
+\]
+Since $\mathfrak m$ is maximal in $\mathcal P$,
+\[
+I=\mathfrak m.
+\]
+Thus there is no proper ideal strictly between
+\[
+\mathfrak m
+\]
+and
+\[
+R.
+\]
+This is exactly the definition of a maximal ideal.
+:::
+
+<1>8. Therefore every commutative ring with identity
+\[
+1\ne0
+\]
+has a maximal ideal.
+
+::: {.proof}
+Step <1>7 constructs one.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>1 states Zorn's Lemma, and steps <1>2--<1>8 apply it to prove the
+maximal-ideal theorem.
+:::
+:::

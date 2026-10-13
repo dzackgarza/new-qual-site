@@ -4,8 +4,7 @@ id: P-NORI-GT-4-09
 kind: problem
 title: Rational functions invariant under $X\mapsto X+1$ in characteristic zero
 classification:
-  areas:
-  - algebra
+  areas: [algebra]
   topics: []
 relations: []
 review: draft
@@ -24,4 +23,134 @@ audit:
 Given an automorphism $\sigma$ of a ring R, denote by $R ^ { \sigma }$ the subring $\{ a \in R : a = \sigma a \}$
 
 Let F be a field of characteristic zero. Define $\sigma f ( X ) = f ( X + 1 )$ for all $f \in F [ X ]$ Note that $\sigma$ also gives rise to an automorphism of its fraction field $F ( X )$ . Prove that $F = F [ X ] ^ { \sigma } = F ( X ) ^ { \sigma }$
+:::
+
+::: {.solution}
+<1>1. If $f\in F[X]$ is nonconstant, then
+$$
+f(X+1)\ne f(X).
+$$
+
+::: {.proof}
+Write
+$$
+f(X)=a_dX^d+\text{lower-degree terms},
+\qquad
+ d\ge1,
+\qquad
+ a_d\ne0.
+$$
+Then
+$$
+f(X+1)-f(X)
+$$
+has leading term
+$$
+da_dX^{d-1}.
+$$
+Since $F$ has characteristic $0$, the scalar $d$ is nonzero in $F$. Hence
+$$
+da_d\ne0,
+$$
+so the difference is not the zero polynomial.
+:::
+
+<1>2. Therefore
+$$
+\boxed{F[X]^\sigma=F}.
+$$
+
+::: {.proof}
+Every constant polynomial is fixed by $\sigma$. Step <1>1 shows that no nonconstant polynomial is fixed.
+:::
+
+<1>3. Let
+$$
+r(X)\in F(X)
+$$
+satisfy
+$$
+r(X+1)=r(X).
+$$
+If $r$ has a pole $\alpha$ in an algebraic closure $\overline F$, then every
+$$
+\alpha+n,
+\qquad n\in\ZZ,
+$$
+is also a pole of $r$.
+
+::: {.proof}
+The identity
+$$
+r(X+1)=r(X)
+$$
+holds in $\overline F(X)$ as well. If $r$ has a pole at $\alpha$, then replacing $X$ by $X-1$ gives
+$$
+r(X)=r(X-1),
+$$
+so $r$ has a pole at $\alpha+1$. Iterating gives poles at $\alpha+n$ for all positive $n$. Using the original identity in the opposite direction gives the negative translates as well.
+:::
+
+<1>4. In characteristic $0$, the elements
+$$
+\alpha+n
+\qquad(n\in\ZZ)
+$$
+are pairwise distinct.
+
+::: {.proof}
+If
+$$
+\alpha+m=\alpha+n,
+$$
+then
+$$
+m-n=0
+$$
+in $\overline F$. Since the characteristic is $0$, the natural map
+$$
+\ZZ\hookrightarrow\overline F
+$$
+is injective, so $m=n$.
+:::
+
+<1>5. A $\sigma$-invariant rational function has no finite pole.
+
+::: {.proof}
+If it had one finite pole, steps <1>3--<1>4 would produce infinitely many distinct poles. A rational function has only finitely many finite poles, namely the roots of its denominator after cancellation. Contradiction.
+:::
+
+<1>6. Hence every $\sigma$-invariant element of $F(X)$ actually lies in $F[X]$.
+
+::: {.proof}
+Write
+$$
+r=\frac fg
+$$
+with coprime $f,g\in F[X]$. If $g$ were nonconstant, it would have a root in $\overline F$, producing a finite pole of $r$. Step <1>5 rules this out. Thus $g$ is constant and $r\in F[X]$.
+:::
+
+<1>7. Therefore
+$$
+\boxed{F(X)^\sigma=F}.
+$$
+
+::: {.proof}
+By step <1>6, every invariant rational function is a polynomial. Step <1>2 says the only invariant polynomials are constants.
+:::
+
+<1>8. Consequently
+$$
+\boxed{F=F[X]^\sigma=F(X)^\sigma}.
+$$
+
+::: {.proof}
+Combine steps <1>2 and <1>7.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is exactly the required assertion.
+:::
 :::

@@ -26,3 +26,344 @@ Consider the matrix $A = \left[ \begin{array} { l l } { a } & { b } \\ { c } & {
 
 (d) Show that this decomposition is unique.
 :::
+
+::: {.solution}
+Write
+$$
+g_1=
+\begin{pmatrix}a\\c\end{pmatrix},
+\qquad
+g_2=
+\begin{pmatrix}b\\d\end{pmatrix},
+$$
+and put
+$$
+r=\sqrt{a^2+c^2}>0.
+$$
+
+<1>1. Define
+$$
+R=
+\frac1r
+\begin{pmatrix}
+a&-c\\
+c&a
+\end{pmatrix}.
+$$
+Then $R$ is a rotation matrix.
+
+::: {.proof}
+Its columns are orthonormal because
+$$
+a^2+c^2=r^2,
+$$
+and
+$$
+\det R
+=
+\frac{a^2+c^2}{r^2}
+=1.
+$$
+Thus $R\in SO(2)$.
+:::
+
+<1>2. One has
+$$
+R^{-1}g_1
+=
+\begin{pmatrix}r\\0\end{pmatrix}.
+$$
+
+::: {.proof}
+Since
+$$
+R^{-1}=R^T
+=
+\frac1r
+\begin{pmatrix}
+a&c\\
+-c&a
+\end{pmatrix},
+$$
+direct multiplication gives
+$$
+R^{-1}g_1
+=
+\frac1r
+\begin{pmatrix}
+a^2+c^2\\
+-ca+ac
+\end{pmatrix}
+=
+\begin{pmatrix}r\\0\end{pmatrix}.
+$$
+:::
+
+<1>3. The transformed second column is
+$$
+R^{-1}g_2
+=
+\begin{pmatrix}
+\dfrac{ab+cd}{r}\\[4pt]
+\dfrac1r
+\end{pmatrix}.
+$$
+
+::: {.proof}
+Direct multiplication gives first component $(ab+cd)/r$. The second is
+$$
+\frac{-cb+ad}{r}
+=
+\frac{ad-bc}{r}
+=
+\frac1r,
+$$
+because $\det A=1$.
+:::
+
+<1>4. Part (a) follows.
+
+::: {.proof}
+Steps <1>1--<1>3 construct the required rotation and describe its action on
+both columns.
+:::
+
+<1>5. Define
+$$
+P^{-1}
+=
+\begin{pmatrix}
+r^{-1}&0\\
+0&r
+\end{pmatrix}.
+$$
+Then
+$$
+\det P^{-1}=1
+$$
+and
+$$
+P^{-1}R^{-1}g_1=e_1.
+$$
+
+::: {.proof}
+The determinant is $r^{-1}r=1$. By step <1>2,
+$$
+P^{-1}
+\begin{pmatrix}r\\0\end{pmatrix}
+=
+\begin{pmatrix}1\\0\end{pmatrix}.
+$$
+:::
+
+<1>6. One has
+$$
+P^{-1}R^{-1}g_2
+=
+\begin{pmatrix}x\\1\end{pmatrix},
+\qquad
+x=\frac{ab+cd}{r^2}.
+$$
+
+::: {.proof}
+Apply $P^{-1}$ to the vector in step <1>3:
+$$
+\begin{pmatrix}
+r^{-1}&0\\
+0&r
+\end{pmatrix}
+\begin{pmatrix}
+(ab+cd)/r\\
+1/r
+\end{pmatrix}
+=
+\begin{pmatrix}
+(ab+cd)/r^2\\
+1
+\end{pmatrix}.
+$$
+:::
+
+<1>7. Part (b) follows.
+
+::: {.proof}
+Steps <1>5--<1>6 give the required diagonal transformation and the claimed
+coordinates of the second column.
+:::
+
+<1>8. Define
+$$
+T^{-1}
+=
+\begin{pmatrix}
+1&-x\\
+0&1
+\end{pmatrix}.
+$$
+Then
+$$
+T^{-1}e_1=e_1
+$$
+and
+$$
+T^{-1}
+\begin{pmatrix}x\\1\end{pmatrix}
+=
+e_2.
+$$
+
+::: {.proof}
+Directly,
+$$
+\begin{pmatrix}
+1&-x\\
+0&1
+\end{pmatrix}
+\begin{pmatrix}1\\0\end{pmatrix}
+=
+\begin{pmatrix}1\\0\end{pmatrix},
+$$
+and
+$$
+\begin{pmatrix}
+1&-x\\
+0&1
+\end{pmatrix}
+\begin{pmatrix}x\\1\end{pmatrix}
+=
+\begin{pmatrix}0\\1\end{pmatrix}.
+$$
+:::
+
+<1>9. Therefore
+$$
+T^{-1}P^{-1}R^{-1}A=I.
+$$
+
+::: {.proof}
+The columns of $A$ are $g_1,g_2$. By steps <1>5--<1>6, the first two inverse
+steps send those columns to
+$$
+e_1
+\qquad\text{and}\qquad
+\begin{pmatrix}x\\1\end{pmatrix}.
+$$
+Step <1>8 sends these to $e_1,e_2$, respectively. Hence the resulting matrix
+is the identity.
+:::
+
+<1>10. Thus
+$$
+\boxed{A=RPT},
+$$
+where
+$$
+R=
+\frac1r
+\begin{pmatrix}
+a&-c\\
+c&a
+\end{pmatrix},
+$$
+$$
+P=
+\begin{pmatrix}
+r&0\\
+0&r^{-1}
+\end{pmatrix},
+$$
+and
+$$
+T=
+\begin{pmatrix}
+1&x\\
+0&1
+\end{pmatrix},
+\qquad
+x=\frac{ab+cd}{a^2+c^2}.
+$$
+
+::: {.proof}
+Invert the identity in step <1>9. The formulas for $P$ and $T$ are the
+inverses of those in steps <1>5 and <1>8, and $r^2=a^2+c^2$.
+:::
+
+<1>11. Part (c) follows.
+
+::: {.proof}
+Steps <1>8--<1>10 construct the required shear and yield the decomposition.
+:::
+
+<1>12. The factor $R$ is uniquely determined.
+
+::: {.proof}
+In any decomposition of the required form, the first column of $A$ is
+$$
+A e_1=RPT e_1.
+$$
+Since
+$$
+Te_1=e_1
+$$
+and
+$$
+Pe_1=r e_1
+$$
+with $r>0$, one has
+$$
+g_1=rRe_1.
+$$
+Thus $r=\|g_1\|$ and $Re_1=g_1/\|g_1\|$. A rotation in $SO(2)$ is uniquely
+determined by its first column, so $R$ is unique.
+:::
+
+<1>13. The factor $P$ is uniquely determined.
+
+::: {.proof}
+Step <1>12 fixes
+$$
+r=\|g_1\|=\sqrt{a^2+c^2}.
+$$
+The required positive diagonal matrix with determinant $1$ and first diagonal
+entry $r$ is uniquely
+$$
+P=\operatorname{diag}(r,r^{-1}).
+$$
+:::
+
+<1>14. The factor $T$ is uniquely determined.
+
+::: {.proof}
+Once $R$ and $P$ are fixed,
+$$
+T=P^{-1}R^{-1}A.
+$$
+Equivalently, step <1>6 uniquely determines its shear parameter
+$$
+x=\frac{ab+cd}{r^2}.
+$$
+:::
+
+<1>15. Therefore the decomposition
+$$
+\boxed{A=RPT}
+$$
+with $R\in SO(2)$, $P=\operatorname{diag}(r,r^{-1})$ for $r>0$, and
+$T=\begin{pmatrix}1&x\\0&1\end{pmatrix}$ is unique.
+
+::: {.proof}
+Steps <1>12--<1>14 show uniqueness of the three factors successively.
+:::
+
+<1>16. Part (d) follows.
+
+::: {.proof}
+This is step <1>15.
+:::
+
+<1>17. Q.E.D.
+
+::: {.proof}
+Steps <1>4, <1>7, <1>11, and <1>16 establish parts (a)--(d).
+:::
+:::

@@ -90,24 +90,27 @@ is a free resolution of $G$ of length $1$.
 ## Properties of tensor products
 
 ::: {.fact}
-For abelian groups ($R$-modules over a commutative ring $R$) $A$, $B$, $A_i$, $B_j$, and integers $m,n\geq 1$ with $d=\gcd(m,n)$:
+Let $R$ be a commutative ring and let $A$, $B$, $A_i$, and $B_j$ be $R$-modules.
 
-- $A\tensor B \cong B\tensor A$.
+- $A\tensor_R B \cong B\tensor_R A$.
 - $A \tensor_R R^n \cong A^n$.
-- $\qty{\bigoplus_i A_i} \tensor \qty{\bigoplus_j B_j} \cong \bigoplus_i\bigoplus_j(A_i \tensor B_j)$.
-- $\ZZ/m \tensor \ZZ/n \cong \ZZ/d$.
-- $\ZZ/n \tensor A \cong A/nA$.
+- $\qty{\bigoplus_i A_i} \tensor_R \qty{\bigoplus_j B_j} \cong \bigoplus_i\bigoplus_j(A_i \tensor_R B_j)$.
+
+For abelian groups, regarded as $\ZZ$-modules, and integers $m,n\geq1$ with $d=\gcd(m,n)$:
+
+- $\ZZ/m \tensor_\ZZ \ZZ/n \cong \ZZ/d$.
+- $\ZZ/n \tensor_\ZZ A \cong A/nA$.
 
 :::
 
 ## Properties of Hom
 
 ::: {.fact}
-\envlist
+Let $R$ be a commutative ring, let $A_i$ and $B_j$ be $R$-modules, and let $A$ and $B$ be $R$-modules.
 
 - $\Hom_R \qty{\bigoplus_i A_i, \prod_j B_j} \cong \prod_i \prod_j \Hom_R(A_i, B_j)$.
 - $\Hom_R(\wait,\wait)$ is contravariant in the first variable and covariant in the second.
-- Over a field, $\Hom(\wait, B)$ and $\Hom(A,\wait)$ are exact.
+- If $R=k$ is a field, $\Hom_k(\wait, B)$ and $\Hom_k(A,\wait)$ are exact.
 
 :::
 
@@ -116,33 +119,33 @@ For abelian groups ($R$-modules over a commutative ring $R$) $A$, $B$, $A_i$, $B
 ## Properties of Tor
 
 ::: {.fact}
-For abelian groups, with $\mathbf{T}G$ the torsion subgroup of $G$:
+For abelian groups $A$, $B$, $A_i$, $B_j$, and $G$, let $\mathbf{T}G$ denote the torsion subgroup of $G$.
 
-- $\Tor_0^R(A, B) \cong A \tensor_R B$.
-- $\Tor\qty{\bigoplus_i A_i, \bigoplus_j B_j} \cong \bigoplus_i \bigoplus_j \Tor(\mathbf{T}A_i, \mathbf{T}B_j)$.
-- $\Tor(A, B) \cong \Tor(B, A)$.
-- $\Tor(\ZZ/n, G) \cong \ker (G\xrightarrow{\times n} G) = \theset{g\in G\mid ng = 0}$.
+- $\Tor_0^\ZZ(A, B) \cong A \tensor_\ZZ B$.
+- $\Tor_1^\ZZ\qty{\bigoplus_i A_i, \bigoplus_j B_j} \cong \bigoplus_i \bigoplus_j \Tor_1^\ZZ(\mathbf{T}A_i, \mathbf{T}B_j)$.
+- $\Tor_1^\ZZ(A, B) \cong \Tor_1^\ZZ(B, A)$.
+- $\Tor_1^\ZZ(\ZZ/n, G) \cong \ker (G\xrightarrow{\times n} G) = \theset{g\in G\mid ng = 0}$.
 
 :::
 
 ## Properties of Ext
 
 ::: {.fact}
-For abelian groups:
+For abelian groups $A$, $B$, $A_i$, $B_j$, $F$, and $G$:
 
-- $\Ext_R^0(A, B) \cong \Hom_R(A, B)$.
-- $\Ext\qty{\bigoplus_i A_i, \prod_j B_j} \cong \prod_i \prod_j \Ext(A_i, B_j)$.
-- $\Ext(F, G) = 0$ if $F$ is free.
-- $\Ext(\ZZ/n, G) \cong G/nG$.
+- $\Ext^0_\ZZ(A, B) \cong \Hom_\ZZ(A, B)$.
+- $\Ext^1_\ZZ\qty{\bigoplus_i A_i, \prod_j B_j} \cong \prod_i \prod_j \Ext^1_\ZZ(A_i, B_j)$.
+- $\Ext^1_\ZZ(F, G) = 0$ if $F$ is free.
+- $\Ext^1_\ZZ(\ZZ/n, G) \cong G/nG$.
 
 :::
 
 ## Computing Tor
 
 ::: {.fact}
-If $\cdots \to F_1\to F_0\to A\to 0$ is a free resolution of $A$, then
+If $A$ and $B$ are abelian groups and $\cdots \to F_1\to F_0\to A\to 0$ is a free resolution of $A$, then
 $$
-\Tor_n(A, B) \cong H_n\qty{\cdots \to F_n \tensor B \to F_{n-1}\tensor B \to \cdots \to F_0\tensor B \to 0}.
+\Tor_n^\ZZ(A, B) \cong H_n\qty{\cdots \to F_n \tensor_\ZZ B \to F_{n-1}\tensor_\ZZ B \to \cdots \to F_0\tensor_\ZZ B \to 0}.
 $$
 
 :::
@@ -152,9 +155,9 @@ $$
 ## Computing Ext
 
 ::: {.fact}
-If $\cdots \to F_1\to F_0\to A\to 0$ is a free resolution of $A$, then
+If $A$ and $B$ are abelian groups and $\cdots \to F_1\to F_0\to A\to 0$ is a free resolution of $A$, then
 $$
-\Ext^n(A, B) \cong H^n\qty{0 \to \Hom(F_0, B) \to \Hom(F_1, B) \to \cdots \to \Hom(F_n, B) \to \cdots}.
+\Ext^n_\ZZ(A, B) \cong H^n\qty{0 \to \Hom_\ZZ(F_0, B) \to \Hom_\ZZ(F_1, B) \to \cdots \to \Hom_\ZZ(F_n, B) \to \cdots}.
 $$
 
 :::
@@ -166,33 +169,33 @@ $$
 ::: {.fact}
 For $m,n\geq 1$ and $d = \gcd(m, n)$, with the first argument indexing rows and the second columns:
 
-| $\Hom$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
+| $\Hom_\ZZ$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
 | --- | --- | --- | --- |
 | $\ZZ/n$ | $\ZZ/d$ | $0$ | $0$ |
 | $\ZZ$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
 | $\QQ$ | $0$ | $0$ | $\QQ$ |
 
-| $\Tor$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
+| $\Tor_1^\ZZ$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
 | --- | --- | --- | --- |
 | $\ZZ/n$ | $\ZZ/d$ | $0$ | $0$ |
 | $\ZZ$ | $0$ | $0$ | $0$ |
 | $\QQ$ | $0$ | $0$ | $0$ |
 
-| $\Ext$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
+| $\Ext^1_\ZZ$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
 | --- | --- | --- | --- |
 | $\ZZ/n$ | $\ZZ/d$ | $\ZZ/n$ | $0$ |
 | $\ZZ$ | $0$ | $0$ | $0$ |
 | $\QQ$ | $0$ | $\mathbb{A}_f/\QQ$ | $0$ |
 
 Here $\mathbb{A}_f$ is the ring of finite adeles of $\QQ$, containing $\QQ$ diagonally.
-Applying $\Hom(\QQ,\wait)$ to $0\to\ZZ\to\QQ\to\QQ/\ZZ\to 0$, with $\Hom(\QQ,\ZZ)=0$ and $\Ext(\QQ,\QQ)=0$, gives the exact sequence $0\to\QQ\to\Hom(\QQ,\QQ/\ZZ)\to\Ext(\QQ,\ZZ)\to 0$, and $\Hom(\QQ,\QQ/\ZZ)\cong\mathbb{A}_f$.
+A computation of $\Ext^1_\ZZ(\QQ,\ZZ)$ is in [these notes on Tor and Ext](http://math.jhu.edu/~jmb/note/torext.pdf).
 
 :::
 
 [[FF-D2KJJ]]
 
 ::: {.remark}
-The following functors are zero: $\Ext(\ZZ, \wait)$, $\Tor(\wait, \ZZ)$, $\Tor(\ZZ, \wait)$, $\Tor(\wait, \QQ)$, and $\Tor(\QQ, \wait)$.
-The following are naturally isomorphic to the identity functor: $\Hom(\ZZ, \wait)$, $\wait \tensor_\ZZ \ZZ$, and $\ZZ \tensor_\ZZ \wait$.
+The following functors are zero: $\Ext^1_\ZZ(\ZZ, \wait)$, $\Tor_1^\ZZ(\wait, \ZZ)$, $\Tor_1^\ZZ(\ZZ, \wait)$, $\Tor_1^\ZZ(\wait, \QQ)$, and $\Tor_1^\ZZ(\QQ, \wait)$.
+The following are naturally isomorphic to the identity functor: $\Hom_\ZZ(\ZZ, \wait)$, $\wait \tensor_\ZZ \ZZ$, and $\ZZ \tensor_\ZZ \wait$.
 
 :::

@@ -30,7 +30,7 @@ S^{-1}A &\definedas \theset{ {a\over s} \st a\in A,\, s\in S} / \sim \\
 ,\]
 and similarly $S^{-1}M = \theset{{m\over s}}/\sim$.
 
-The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq \unitsof{N}$:
+The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq \units{N}$:
 
 \begin{tikzcd}
 	& S^{-1}M \ar[d, dotted, "{\exists ! \tilde\alpha}"] \\

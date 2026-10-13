@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-04
 kind: problem
-title: Number of field automorphisms of $\QQ$
+title: Prime expressions selected by an arithmetic property
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 ![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-04.png)
 :::
@@ -28,7 +27,7 @@ Every field automorphism of $\mathbb Q$ is the identity, so the answer is $\boxe
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Any automorphism fixes every rational number.
 
@@ -43,6 +42,12 @@ For $m/n\in\mathbb Q$ with $n\ne0$,
 Thus $\varphi=\operatorname{id}_{\mathbb Q}$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves that the identity is the only field automorphism of $\QQ$, so choice (B) is correct.
 
 :::
 

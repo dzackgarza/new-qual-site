@@ -23,3 +23,142 @@ Determine the matrix of $S\circ T$ in the standard basis
 \]
 You do not have to multiply the resulting matrices, but you must determine any inverses that arise.
 :::
+
+::: {.solution}
+Let
+\[
+u_1=\frac1{\sqrt2}(1,-1,0),\qquad
+u_2=\frac1{\sqrt6}(1,1,-2),\qquad
+u_3=\frac1{\sqrt3}(1,1,1).
+\]
+The ordered basis $(u_1,u_2,u_3)$ is positively oriented, so the given normal vector $u_3$ induces the usual counterclockwise orientation on $u_3^\perp$.
+
+<1>1. The vectors $u_1,u_2,u_3$ form a positively oriented orthonormal basis of $\mathbb R^3$.
+
+::: {.proof}
+Direct computation gives
+\[
+u_i\cdot u_j=\delta_{ij}.
+\]
+Moreover,
+\[
+(1,-1,0)\times(1,1,-2)=(2,2,2),
+\]
+which is a positive multiple of $(1,1,1)$. Hence $(u_1,u_2,u_3)$ is positively oriented.
+:::
+
+<1>2. In the basis $(u_1,u_2,u_3)$, the matrix of $T$ is
+\[
+R=
+\begin{pmatrix}
+\frac12&-\frac{\sqrt3}{2}&0\\
+\frac{\sqrt3}{2}&\frac12&0\\
+0&0&1
+\end{pmatrix}.
+\]
+
+::: {.proof}
+The vectors $u_1,u_2$ form an oriented orthonormal basis of the plane perpendicular to $(1,1,1)$, while $u_3$ spans the rotation axis. Thus $T$ acts on $\operatorname{span}(u_1,u_2)$ as counterclockwise rotation through $60^\circ$ and fixes $u_3$. The displayed matrix is exactly this action.
+:::
+
+<1>3. If
+\[
+Q=
+\begin{pmatrix}
+\frac1{\sqrt2}&\frac1{\sqrt6}&\frac1{\sqrt3}\\
+-\frac1{\sqrt2}&\frac1{\sqrt6}&\frac1{\sqrt3}\\
+0&-\frac2{\sqrt6}&\frac1{\sqrt3}
+\end{pmatrix},
+\]
+then
+\[
+Q^{-1}=Q^t
+=
+\begin{pmatrix}
+\frac1{\sqrt2}&-\frac1{\sqrt2}&0\\
+\frac1{\sqrt6}&\frac1{\sqrt6}&-\frac2{\sqrt6}\\
+\frac1{\sqrt3}&\frac1{\sqrt3}&\frac1{\sqrt3}
+\end{pmatrix}
+\]
+and the standard-basis matrix of $T$ is
+\[
+[T]=QRQ^t.
+\]
+
+::: {.proof}
+The columns of $Q$ are $u_1,u_2,u_3$. By step <1>1, $Q$ is orthogonal, so $Q^{-1}=Q^t$. Conjugating the matrix from step <1>2 by the change-of-basis matrix gives
+\[
+[T]=QRQ^{-1}=QRQ^t.
+\]
+:::
+
+<1>4. The standard-basis matrix of the reflection $S$ is
+\[
+[S]=
+\begin{pmatrix}
+0&0&-1\\
+0&1&0\\
+-1&0&0
+\end{pmatrix}.
+\]
+
+::: {.proof}
+Let
+\[
+n=(1,0,1)^t.
+\]
+Reflection across the plane $n^\perp$ is
+\[
+S(v)=v-2\frac{v\cdot n}{n\cdot n}n.
+\]
+Since $n\cdot n=2$,
+\[
+[S]
+=
+I-nn^t
+=
+I-
+\begin{pmatrix}
+1&0&1\\
+0&0&0\\
+1&0&1
+\end{pmatrix},
+\]
+which is the displayed matrix.
+:::
+
+<1>5. The matrix of $S\circ T$ in the standard basis is
+\[
+\boxed{
+[S\circ T]
+=
+\begin{pmatrix}
+0&0&-1\\
+0&1&0\\
+-1&0&0
+\end{pmatrix}
+Q
+\begin{pmatrix}
+\frac12&-\frac{\sqrt3}{2}&0\\
+\frac{\sqrt3}{2}&\frac12&0\\
+0&0&1
+\end{pmatrix}
+Q^t
+},
+\]
+where $Q$ and $Q^t=Q^{-1}$ are the explicit matrices in step <1>3.
+
+::: {.proof}
+Matrix multiplication represents composition in the order
+\[
+[S\circ T]=[S][T].
+\]
+Substitute step <1>3 for $[T]$ and step <1>4 for $[S]$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the requested standard-basis matrix and step <1>3 explicitly determines the inverse arising from the change of basis.
+:::
+:::

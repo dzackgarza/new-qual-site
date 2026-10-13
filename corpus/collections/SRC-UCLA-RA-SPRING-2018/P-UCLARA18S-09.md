@@ -26,3 +26,292 @@ Problem 9. Consider the formal product
 
 (b) Show that the resulting function extends from this interval to an entire function of $z\in\mathbb C$.
 :::
+
+::: {.solution}
+For \(n\ge1\), define the entire function
+\[
+q_n(z)
+=
+\left(1+\frac1n\right)^z
+\left(1-\frac zn\right)
+=
+e^{z a_n}
+\left(1-\frac zn\right),
+\qquad
+a_n=\log\left(1+\frac1n\right).
+\]
+
+<1>1. One has
+\[
+\boxed{
+\left|
+a_n-\frac1n
+\right|
+\le
+\frac1{2n^2}}.
+\]
+
+::: {.proof}
+Using
+\[
+\log(1+x)
+=
+\int_0^x\frac{dt}{1+t},
+\]
+one obtains
+\[
+\begin{aligned}
+\frac1n-a_n
+&=
+\int_0^{1/n}
+\left(
+1-\frac1{1+t}
+\right)dt\\
+&=
+\int_0^{1/n}
+\frac{t}{1+t}\,dt.
+\end{aligned}
+\]
+The integrand is nonnegative and at most \(t\), so
+\[
+0
+\le
+\frac1n-a_n
+\le
+\int_0^{1/n}t\,dt
+=
+\frac1{2n^2}.
+\]
+:::
+
+<1>2. Fix \(R>0\). There is a constant \(C_R\) such that for every
+\[
+|z|\le R
+\]
+and all sufficiently large \(n\),
+\[
+\boxed{
+|q_n(z)-1|
+\le
+\frac{C_R}{n^2}}.
+\]
+
+::: {.proof}
+Write
+\[
+w=za_n.
+\]
+For \(n\) sufficiently large,
+\[
+|w|
+\le
+\frac{2R}{n}.
+\]
+Using
+\[
+|e^w-1-w|
+\le
+\frac12|w|^2e^{|w|},
+\]
+step <1>1 gives
+\[
+\begin{aligned}
+\left|
+e^{za_n}-1-\frac zn
+\right|
+&\le
+|e^{za_n}-1-za_n|
++
+|z|
+\left|
+a_n-\frac1n
+\right|\\
+&\le
+\frac{C_R'}{n^2}.
+\end{aligned}
+\]
+Also
+\[
+|e^{za_n}-1|
+\le
+|za_n|e^{|za_n|}
+\le
+\frac{C_R''}{n}.
+\]
+Now
+\[
+\begin{aligned}
+q_n(z)-1
+&=
+e^{za_n}
+\left(1-\frac zn\right)-1\\
+&=
+\left(
+e^{za_n}-1-\frac zn
+\right)
+-
+\frac zn
+\left(
+e^{za_n}-1
+\right).
+\end{aligned}
+\]
+The first term is \(O_R(n^{-2})\), and the second is also
+\(O_R(n^{-2})\). This proves the bound.
+:::
+
+<1>3. For every compact set \(K\subset\mathbb C\),
+\[
+\boxed{
+\sum_{n=1}^{\infty}
+\sup_{z\in K}|q_n(z)-1|
+<\infty}.
+\]
+
+::: {.proof}
+Choose \(R\) with
+\[
+K\subseteq\{z:|z|\le R\}.
+\]
+Step <1>2 bounds the tail by a constant multiple of
+\[
+\sum_{n=1}^{\infty}\frac1{n^2},
+\]
+and the finitely many initial terms cause no problem.
+:::
+
+<1>4. The partial products
+\[
+P_N(z)
+=
+\prod_{n=1}^{N}q_n(z)
+\]
+converge uniformly on every compact subset of \(\mathbb C\).
+
+::: {.proof}
+Fix a compact \(K\). Put
+\[
+u_n(z)=q_n(z)-1.
+\]
+By step <1>3,
+\[
+\sum_n\|u_n\|_{K,\infty}<\infty.
+\]
+For \(M>N\),
+\[
+\prod_{n=N+1}^{M}(1+u_n(z))-1
+\]
+has absolute value at most
+\[
+\exp\left(
+\sum_{n=N+1}^{M}|u_n(z)|
+\right)-1.
+\]
+The right-hand side tends uniformly to \(0\) on \(K\) as \(N\to\infty\).
+The initial product
+\[
+\prod_{n=1}^{N}q_n
+\]
+is uniformly bounded on \(K\), since
+\[
+\prod_{n=1}^{N}|q_n(z)|
+\le
+\prod_{n=1}^{N}(1+|u_n(z)|)
+\le
+\exp\left(
+\sum_{n=1}^{\infty}\|u_n\|_{K,\infty}
+\right).
+\]
+Hence \((P_N)\) is uniformly Cauchy on \(K\).
+:::
+
+<1>5. The locally uniform limit
+\[
+\boxed{
+P(z)
+=
+\prod_{n=1}^{\infty}
+\left(1+\frac1n\right)^z
+\left(1-\frac zn\right)}
+\]
+is entire on \(\mathbb C\).
+
+::: {.proof}
+Each finite product \(P_N\) is entire because every \(q_n\) is entire.
+Step <1>4 gives locally uniform convergence on \(\mathbb C\). By the
+Weierstrass theorem, the locally uniform limit \(P\) is entire.
+:::
+
+<1>6. Fix \(z<0\). Then every factor \(q_n(z)\) is positive.
+
+::: {.proof}
+For real \(z<0\),
+\[
+\left(1+\frac1n\right)^z>0
+\]
+and
+\[
+1-\frac zn>1>0.
+\]
+Thus their product is positive.
+:::
+
+<1>7. For each fixed \(z<0\), the infinite product converges to a strictly
+positive finite number.
+
+::: {.proof}
+Step <1>2, applied to the compact singleton \(\{z\}\), gives
+\[
+\sum_{n=1}^{\infty}|q_n(z)-1|<\infty.
+\]
+Hence \(q_n(z)\to1\). For all sufficiently large \(n\),
+\[
+|q_n(z)-1|\le\frac12.
+\]
+Since the factors are positive by step <1>6, the real logarithm is defined,
+and
+\[
+|\log q_n(z)|
+\le
+2|q_n(z)-1|.
+\]
+Thus
+\[
+\sum_n\log q_n(z)
+\]
+converges, and therefore
+\[
+\prod_nq_n(z)
+=
+\exp\left(
+\sum_n\log q_n(z)
+\right)
+\]
+converges to a positive finite number.
+:::
+
+<1>8. Part (a) holds for every \(z\in(-\infty,0)\).
+
+::: {.proof}
+This is exactly step <1>7.
+:::
+
+<1>9. The function obtained in part (a) extends to the entire function \(P\)
+from step <1>5.
+
+::: {.proof}
+For every negative real \(z\), both constructions are limits of the same
+partial products
+\[
+P_N(z).
+\]
+Hence the entire function \(P\) restricts on \((-\infty,0)\) to the
+convergent product from part (a).
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>8 proves part (a), and steps <1>5 and <1>9 prove part (b).
+:::
+:::

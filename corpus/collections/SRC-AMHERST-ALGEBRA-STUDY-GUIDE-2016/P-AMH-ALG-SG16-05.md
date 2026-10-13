@@ -22,7 +22,43 @@ Prove that $H$ is a normal subgroup of $G$.
 :::
 
 ::: {.solution}
-Proof.
-Assume g∈G and h∈H. By the given property of H, we have ghg−1h−1∈H. Since H is closed under multiplication, ghg−1 =ghg−1(h−1h) = (ghg−1h−1)h∈H as desired.
-QED
+<1>1. Conjugates of elements of $H$ remain in $H$.
+::: {.proof}
+Let
+$$
+g\in G,
+\qquad
+h\in H.
+$$
+By hypothesis, the commutator
+$$
+ghg^{-1}h^{-1}
+$$
+lies in $H$. Since also $h\in H$ and $H$ is closed under multiplication,
+$$
+(ghg^{-1}h^{-1})h=ghg^{-1}\in H.
+$$
+Thus every conjugate of every element of $H$ lies in $H$.
+:::
+
+<1>2. Therefore
+$$
+\boxed{H\trianglelefteq G}.
+$$
+::: {.proof}
+Step <1>1 shows that
+$$
+gHg^{-1}\subseteq H
+$$
+for every $g\in G$. Replacing $g$ by $g^{-1}$ gives the reverse inclusion, so
+$$
+gHg^{-1}=H
+$$
+for every $g\in G$.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
 :::

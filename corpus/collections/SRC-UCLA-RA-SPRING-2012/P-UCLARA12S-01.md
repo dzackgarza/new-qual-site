@@ -28,3 +28,158 @@ Determine whether each statement is true or false:
 
 (d) If $f_n\to f$ in $L^3$, then $f_n\to f$ in measure.
 :::
+
+::: {.solution}
+<1>1. Statement (a) is false.
+
+::: {.proof}
+Define
+\[
+f_n(x)=n\mathbf 1_{[0,1/n]}(x).
+\]
+For every $x>0$, one has $f_n(x)=0$ for all sufficiently large $n$, so
+\[
+f_n(x)\longrightarrow0
+\]
+for almost every $x\in[0,1]$.
+
+However,
+\[
+\|f_n\|_3^3
+=
+\int_0^{1/n}n^3\,dx
+=
+n^2.
+\]
+Thus
+\[
+\|f_n\|_3=n^{2/3},
+\]
+which does not tend to $0$ along any subsequence. Hence no subsequence converges to the almost-everywhere limit $0$ in $L^3$.
+:::
+
+<1>2. Statement (b) is true.
+
+::: {.proof}
+Assume
+\[
+f_n\longrightarrow f
+\]
+in $L^3([0,1])$. Choose inductively a subsequence $(f_{n_k})$ such that
+\[
+\|f_{n_k}-f\|_3^3<2^{-k}.
+\]
+Then Tonelli's theorem gives
+\[
+\begin{aligned}
+\int_0^1
+\sum_{k=1}^{\infty}
+|f_{n_k}(x)-f(x)|^3\,dx
+&=
+\sum_{k=1}^{\infty}
+\|f_{n_k}-f\|_3^3\\
+&<
+\sum_{k=1}^{\infty}2^{-k}
+<\infty.
+\end{aligned}
+\]
+Therefore
+\[
+\sum_{k=1}^{\infty}
+|f_{n_k}(x)-f(x)|^3
+<
+\infty
+\]
+for almost every $x$. For each such $x$, the terms of this convergent nonnegative series tend to $0$, so
+\[
+f_{n_k}(x)\longrightarrow f(x).
+\]
+Thus a subsequence converges almost everywhere.
+:::
+
+<1>3. Statement (c) is false.
+
+::: {.proof}
+Use the same sequence as in step <1>1:
+\[
+f_n=n\mathbf 1_{[0,1/n]}.
+\]
+For any $\varepsilon>0$ and all $n>\varepsilon$,
+\[
+\{x:|f_n(x)|>\varepsilon\}
+=
+[0,1/n],
+\]
+whose measure is $1/n\to0$. Hence
+\[
+f_n\longrightarrow0
+\]
+in measure.
+
+But step <1>1 gives
+\[
+\|f_n\|_3=n^{2/3}\not\to0.
+\]
+Thus convergence in measure does not imply convergence in $L^3$.
+:::
+
+<1>4. Statement (d) is true.
+
+::: {.proof}
+Assume
+\[
+\|f_n-f\|_3\longrightarrow0.
+\]
+Fix $\varepsilon>0$. On the set
+\[
+E_{n,\varepsilon}
+\coloneqq
+\{x:|f_n(x)-f(x)|>\varepsilon\},
+\]
+one has
+\[
+|f_n-f|^3>\varepsilon^3.
+\]
+Therefore
+\[
+\begin{aligned}
+\|f_n-f\|_3^3
+&\ge
+\int_{E_{n,\varepsilon}}
+|f_n-f|^3\,dx\\
+&\ge
+\varepsilon^3
+m(E_{n,\varepsilon}).
+\end{aligned}
+\]
+Hence
+\[
+m(E_{n,\varepsilon})
+\le
+\varepsilon^{-3}
+\|f_n-f\|_3^3
+\longrightarrow0.
+\]
+This is convergence in measure.
+:::
+
+<1>5. The answers are
+\[
+\boxed{
+\text{(a) false,\quad
+(b) true,\quad
+(c) false,\quad
+(d) true.}
+}
+\]
+
+::: {.proof}
+Steps <1>1--<1>4 establish the four assertions respectively.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 records the complete classification.
+:::
+:::

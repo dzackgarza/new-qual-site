@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the identification of fixed cosets with normalizer cosets, the divisibility of every nontrivial orbit, and the case of the trivial acting subgroup."
 ---
-
 ::: {.problem}
 Let $p$ be a prime number, and $P$ a finite $p$-group.
 Suppose $H$ is a proper subgroup of $P$.
@@ -85,7 +84,7 @@ and the same count applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The containment $H\subseteq N_P(H)$ is strict.
 
@@ -95,6 +94,12 @@ Every subgroup normalizes itself. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} gi
 $[N_P(H):H]=|X^H|\geq p>1$, so $H\ne N_P(H)$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required strict containment $H<N_P(H)$.
 
 :::
 

@@ -36,12 +36,11 @@ Finite means finitely generated as a module, while finite type means finitely ge
 [[D-MORPROJ]]
 
 The implication chain is
-\[
+$$
 \text{closed immersion} \implies \text{finite} \implies \text{projective} \implies \text{proper} \implies \text{universally closed} ,
-\]
-and the first four classes consist of morphisms of finite type.
-A universally closed morphism need not be of finite type: $\Spec\bar\QQ\to\Spec\QQ$ is integral, hence universally closed, and not of finite type.
-$\PP^1_k\to\Spec k$ is projective but not finite, and the projection $V(xy-1)\to\AA^1_k$, $(x,y)\mapsto x$, is quasi-finite but not proper, since its image $\AA^1_k\setminus\{0\}$ is not closed.
+$$
+together with the fact that finite type sits underneath all of it and is implied by each.
+Standard converse counterexamples include $\PP^1_k \to \Spec k$, which is projective but not finite, and the hyperbola projection, which is quasi-finite but not proper.
 
 ## Base change
 

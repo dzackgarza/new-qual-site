@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Showed a cyclic additive quotient would force every two ring elements to commute modulo central corrections, contradicting noncommutativity."
 ---
-
 ::: {.problem}
 Let $R$ be a noncommutative ring and let $Z(R)$ be its center. Prove that the additive group of $R/Z(R)$ is not cyclic.
 :::
@@ -34,7 +33,7 @@ Suppose for contradiction that the additive quotient $R/Z(R)$ is cyclic.
 
 ::: {.pf-step #s1}
 
-There is $a\in R$ such that every $x\in R$ equals $ma+z$ for some $m\in\mathbb Z$ and $z\in Z(R)$.
+Choose a representative of an additive generator.
 
 ::: pf-proof
 
@@ -88,7 +87,7 @@ Hence $xy=yx$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 This contradicts the hypothesis that $R$ is noncommutative.
 
@@ -101,6 +100,12 @@ $$
 $$
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

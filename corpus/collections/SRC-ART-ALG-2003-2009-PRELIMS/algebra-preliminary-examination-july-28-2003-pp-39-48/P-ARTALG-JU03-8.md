@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Enumerated every partition of 4 and 2, checked uniqueness rather than relying only on group exponents, and canceled all free-rank and prime-power multiplicity invariants."
 ---
-
 ::: {.problem}
 (a) How many abelian groups of order 720 are there?
 
@@ -53,7 +52,7 @@ equivalent to isomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 There are exactly $10$ abelian groups of order $720$, up to
 isomorphism.
@@ -91,7 +90,7 @@ multiplicities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Finitely generated $\mathbb Z$-modules admit cancellation
 of a common direct summand.
@@ -118,6 +117,12 @@ preserves integer multiples, so this is the required module
 isomorphism.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} answers part (a), and step [](#s3){.pf-ref} proves part (b).
 
 :::
 

@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked representative independence and balancing, descent through mA, both inverse identities, and the case m=1."
 ---
-
 ::: {.problem}
 Let $A$ be a $\mathbb{Z}$-module, and suppose $m \in \mathbb{Z}^+$.
 Prove that $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$.
@@ -44,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The displayed formula defines a $\mathbb Z$-linear map $\Psi$.
 
@@ -68,7 +67,7 @@ abelian groups is $\mathbb Z$-linear, so this is a module map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The formula for $\Phi$ descends to $A/mA$, and
 the maps are inverse.
@@ -94,6 +93,13 @@ identity, proving the isomorphism. When $m=1$, the same
 formulas apply and both modules are zero.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct mutually inverse $\ZZ$-module homomorphisms,
+which proves the required isomorphism.
 
 :::
 

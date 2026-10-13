@@ -26,3 +26,74 @@ Show that if $f_n$ converges almost everywhere to a function $f:\mathbb R^3\to\m
 \int_{\mathbb R^3}\left(|f_n|^2-|f_n-f|^2-|f|^2\right)\,dx\longrightarrow0.
 \]
 :::
+
+::: {.solution}
+Choose $M<\infty$ such that
+$$
+\|f_n\|_{L^2}\le M
+$$
+for every $n$.
+
+<1>1. The almost-everywhere limit $f$ belongs to $L^2(\RR^3)$.
+
+::: {.proof}
+By Fatou's lemma,
+$$
+\int_{\RR^3}|f|^2
+\le
+\liminf_{n\to\infty}
+\int_{\RR^3}|f_n|^2
+\le M^2.
+$$
+:::
+
+<1>2. The sequence $(f_n)$ converges weakly to $f$ in $L^2(\RR^3)$.
+
+::: {.proof}
+This is exactly the result of `P-UCLARA12F-01` applied with $p=2$: an almost-everywhere convergent sequence that is uniformly bounded in $L^p$, with $1<p<\infty$, converges weakly in $L^p$ to its almost-everywhere limit.
+:::
+
+<1>3. For every $n$,
+$$
+|f_n|^2-|f_n-f|^2-|f|^2
+=2f(f_n-f)
+$$
+almost everywhere.
+
+::: {.proof}
+Since the functions are real-valued,
+$$
+|f_n-f|^2
+=|f_n|^2-2f_nf+|f|^2.
+$$
+Rearranging gives the displayed identity.
+:::
+
+<1>4. One has
+$$
+\boxed{
+\int_{\RR^3}
+\left(|f_n|^2-|f_n-f|^2-|f|^2\right)\,dx
+\longrightarrow0.}
+$$
+
+::: {.proof}
+By steps <1>1 and <1>3,
+$$
+\int_{\RR^3}
+\left(|f_n|^2-|f_n-f|^2-|f|^2\right)
+=2\int_{\RR^3}f(f_n-f).
+$$
+Since $f\in L^2$, it is an admissible test function for weak convergence. Step <1>2 therefore gives
+$$
+\int f f_n\to\int f^2,
+$$
+so the right-hand side tends to $0$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
+:::

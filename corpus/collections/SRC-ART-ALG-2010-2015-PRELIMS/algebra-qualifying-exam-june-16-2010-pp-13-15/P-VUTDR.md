@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked ideal generation in Z, nonprincipality of (2,x), the divisibility obstruction to freeness of Q, and vanishing of every elementary tensor for two nonzero modules."
 ---
-
 ::: {.problem}
 Give an example of each of the following.
 Justification is not necessary.
@@ -43,7 +42,7 @@ d. A commutative ring $R$, and two non-trivial $R$-modules $M$ and $N$ such that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For part (a), take $D=\mathbb Z$.
 
@@ -61,7 +60,7 @@ field, because $2$ has no multiplicative inverse in $\mathbb Z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For part (b), take $D=\mathbb Z[x]$.
 
@@ -85,7 +84,7 @@ $D$ is not a PID.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 For part (c), take $R=\mathbb Z$ and $M=\mathbb Q$.
 
@@ -104,7 +103,7 @@ is nonzero and equals twice itself, it cannot be free.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 For part (d), take
 $R=\mathbb Z$, $M=\mathbb Z/2\mathbb Z$, and
@@ -120,6 +119,12 @@ product is a finite sum of elementary tensors, so the
 whole tensor product is zero, as required.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} answer parts (a)--(d), respectively.
 
 :::
 

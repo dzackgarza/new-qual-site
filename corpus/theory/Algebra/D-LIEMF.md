@@ -33,7 +33,7 @@ The following are equivalent:
 	{\mathcal{B}} && N
 	\arrow["f", from=3-1, to=3-3]
 	\arrow["{\tilde f}"', dashed, from=1-1, to=3-3]
-	\arrow["\iota", hook, from=3-1, to=1-1]
+	\arrow["\iota", from=3-1, to=1-1]
 \end{tikzcd}
 
 3. there is a family $(\beta_i)_{i\in I}$ in $M$ such that $M = \bigoplus_{i\in I} R\beta_i$ is the internal direct sum of the cyclic submodules $R\beta_i$, and $r\mapsto r\beta_i$ is injective for each $i$, so that $R\beta_i\cong R$.

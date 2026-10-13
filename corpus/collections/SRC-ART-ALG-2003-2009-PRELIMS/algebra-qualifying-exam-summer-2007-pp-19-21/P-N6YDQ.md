@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked both Eisenstein arguments, the coprime-degree lower bound after base extension, and the explicit cyclic automorphism action."
 ---
-
 ::: {.problem}
 Let $L$ be the splitting field of $x^5 - 3$ over $\mathbb{Q}$.
 
@@ -48,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The splitting field contains $\zeta$ and equals
 $\mathbb Q(\alpha,\zeta)$.
@@ -65,7 +64,7 @@ These two containments prove the assertion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The degrees are $[L:F]=5$ and $[L:\mathbb Q]=20$.
 
@@ -91,12 +90,14 @@ The tower law gives $[L:\mathbb Q]=4d$. The subfield
 $\mathbb Q(\alpha)\subseteq L$ has degree $5$, so the same law
 implies $5\mid4d$. As $\gcd(4,5)=1$, we obtain $5\mid d$,
 hence $d=5$ and $[L:\mathbb Q]=20$.
+This establishes the degree over $F$ without assuming that
+irreducibility over $\mathbb Q$ survives a change of coefficient field.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The Galois group over $F$ is cyclic of order $5$.
 
@@ -119,6 +120,12 @@ In particular the automorphism fixing $F$ and sending
 $\alpha$ to $\zeta\alpha$ generates the group.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), and step [](#s2){.pf-ref} proves part (c).
 
 :::
 

@@ -29,20 +29,21 @@ Then $t \mapsto h^i(X_t, \mcf_t)$ is upper semicontinuous on $T$, and $t \mapsto
 :::
 
 ::: {.theorem title="Grauert and base change"}
-If $T$ is reduced and $t \mapsto h^i(X_t,\mcf_t)$ is constant, then $R^i f_* \mcf$ is locally free and
-\[
-R^i f_* \mcf \tensor k(t) \iso H^i(X_t, \mcf_t)
-\]
-for all $t$.
+In the setup above, if $T$ is reduced and $t \mapsto h^i(X_t,\mcf_t)$ is locally constant, then $R^i f_* \mcf$ is locally free and
+$$
+(R^i f_* \mcf)\tensor_{\OO_T} \kappa(t) \xrightarrow{\sim} H^i(X_t, \mcf_t)
+$$
+for every $t\in T$.
 Without reducedness there is still Grothendieck's criterion: if the base change map in degree $i$ is surjective at $t$, it is an isomorphism near $t$, and $R^i f_* \mcf$ is locally free at $t$ exactly when the map in degree $i-1$ is surjective as well.
 :::
 
 ::: {.remark}
-The shape to hold: individual $h^i$ can only *jump up* on closed subsets, the alternating sum cannot jump at all, and cohomology commutes with restriction to a fibre exactly when nothing jumps.
-
-Flatness is the load-bearing hypothesis throughout, and dropping it destroys even the constancy of $\chi$.
-Reducedness of the base is what Grauert needs, and it is where non-reduced bases genuinely fail.
+Upper semicontinuity means that the loci
+$$
+\theset{t\in T\st h^i(X_t,\mcf_t)\geq r}
+$$
+are closed. Flatness makes the Euler characteristic locally constant, while constancy of a fixed $h^i$ on a reduced base is sufficient for local freeness and fibrewise base change in that degree. At a single point, the precise criterion is the surjectivity statement in the theorem above; constancy of all fibre dimensions is not necessary for an individual base-change map to be an isomorphism.
 
 The standard specimen is a family of line bundles of degree $0$ on a curve: $h^0$ is $0$ at a general point and $1$ at the trivial bundle, a jump on a closed subset, while $\chi = 1 - g$ throughout.
-That single example answers "give an example where cohomology does not commute with base change".
+At the trivial bundle this jump is the standard source of failure of the naive fibrewise base-change isomorphism.
 :::

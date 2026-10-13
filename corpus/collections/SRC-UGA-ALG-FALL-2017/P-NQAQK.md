@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-NQAQK
 kind: problem
-title: $F[x]$-modules of linear operators, similarity, and simplicity in dimension
-  $2$
+title: $F[x]$-modules of linear operators, similarity, and simplicity in dimension $2$
 classification:
   areas:
   - algebra
@@ -14,7 +13,6 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $W$ into $F[x]$-modules via linear operators $T \in \operatorname{End}_F(V)$ and $S \in \operatorname{End}_F(W)$ by defining $x \cdot v = T(v)$ for all $v \in V$ and $x \cdot w = S(w)$ for all $w \in W$. Denote the resulting $F[x]$-modules by $V_T$ and $W_S$ respectively.
 
@@ -28,161 +26,71 @@ Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $
 :::
 
 ::: {.solution}
-**Goal:** Characterize module homomorphisms and isomorphisms for polynomial modules $V_T$, and analyze simplicity via invariant subspaces and eigenvalues.
+For $h(x)=\sum_{j=0}^m a_jx^j\in F[x]$, the module action on $V_T$ is $h\cdot v=\sum_{j=0}^m a_jT^jv$, and similarly for $W_S$.
 
 ::: pf
 
-::: pf-step
-Part (a): $F[x]$-module homomorphisms correspond to intertwining linear maps ($R T = S R$).
+::: {.pf-step #s1}
+
+An additive map $R:V_T\to W_S$ is $F[x]$-linear if and only if it is $F$-linear and $RT=SR$.
 
 ::: pf-proof
 
-::: pf-step
-Forward direction ($\implies$):
-
-- Let $\varphi: V_T \to W_S$ be an $F[x]$-module homomorphism.
-- Since $F \subset F[x]$, $\varphi(c v) = c \varphi(v)$ for all $c \in F$ and $\varphi(v_1 + v_2) = \varphi(v_1) + \varphi(v_2)$, so $\varphi$ is an $F$-linear transformation $R: V \to W$.
-- Module compatibility on $x$ gives $\varphi(x \cdot v) = x \cdot \varphi(v)$.
-- Since $x \cdot v = T(v)$ and $x \cdot \varphi(v) = S(\varphi(v))$, this means $R(T(v)) = S(R(v))$ for all $v \in V$.
-- Thus $R T = S R$.
-:::
-
-::: pf-step
-Reverse direction ($\impliedby$):
-
-- Let $R: V \to W$ be an $F$-linear transformation such that $R T = S R$.
-- By induction, $R T^k = S^k R$ for all $k \ge 0$.
-- Let $p(x) = \sum_{k=0}^d a_k x^k \in F[x]$ be any polynomial.
-- For any $v \in V$:
-$$R(p(x) \cdot v) = R\left( \sum_{k=0}^d a_k T^k(v) \right) = \sum_{k=0}^d a_k R(T^k(v)) = \sum_{k=0}^d a_k S^k(R(v)) = p(x) \cdot R(v).$$
-- Together with additivity, $R$ is an $F[x]$-module homomorphism.
-:::
+An $F[x]$-linear map is $F$-linear by restriction along $F\hookrightarrow F[x]$, and compatibility with multiplication by $x$ gives $RT=SR$. Conversely, if $R$ is $F$-linear and $RT=SR$, induction on $j$ gives $RT^j=S^jR$. Hence for every polynomial $h=\sum a_jx^j$ and $v\in V$, one has
+\[
+R(h\cdot v)=\sum_j a_jRT^jv=\sum_j a_jS^jRv=h\cdot R(v).
+\]
+Thus $R$ is an $F[x]$-module homomorphism.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): $V_T \cong W_S \iff T = P^{-1} S P$ for an $F$-linear isomorphism $P$.
+::: {.pf-step #s2}
+
+The modules $V_T$ and $W_S$ are isomorphic if and only if there is an $F$-linear isomorphism $P:V\to W$ such that $T=P^{-1}SP$.
 
 ::: pf-proof
 
-::: pf-step
-An $F[x]$-module isomorphism is a bijective $F[x]$-module homomorphism.
-:::
-
-::: pf-step
-By Part (a), a map $P: V_T \to W_S$ is an $F[x]$-module homomorphism if and only if $P: V \to W$ is $F$-linear and $P T = S P$.
-:::
-
-::: pf-step
-A map between vector spaces is a bijective module homomorphism if and only if it is an $F$-linear isomorphism whose inverse is also compatible.
-:::
-
-::: pf-step
-If $P$ is invertible, multiplying $P T = S P$ on the left by $P^{-1}$ gives $T = P^{-1} S P$.
-:::
-
-::: pf-step
-Conversely, if $P: V \to W$ is an $F$-linear isomorphism with $T = P^{-1} S P$, then $P T = S P$, so $P$ is an $F[x]$-module isomorphism.
-:::
+By step [](#s1){.pf-ref}, an $F[x]$-linear isomorphism $P$ is an invertible $F$-linear map satisfying $PT=SP$, which is equivalent to $T=P^{-1}SP$. Conversely, an invertible $F$-linear map satisfying this relation is $F[x]$-linear by step [](#s1){.pf-ref}, and its inverse is automatically $F[x]$-linear by applying the intertwining identity to the inverse.
 
 :::
 
 :::
 
-::: pf-step
-Part (c): Example of a simple $V_T$ of dimension 2 over $\mathbb{R}$.
+::: {.pf-step #s3}
+
+A simple two-dimensional example is
+\[
+\boxed{F=\mathbb R,\quad V=\mathbb R^2,\quad T=\begin{pmatrix}0&-1\\1&0\end{pmatrix}}.
+\]
 
 ::: pf-proof
 
-::: pf-step
-Let $F = \mathbb{R}$, $V = \mathbb{R}^2$, and let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be given by the matrix
-$$T = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}.$$
-:::
-
-::: pf-step
-Submodules of $V_T$ are precisely the $T$-invariant $\mathbb{R}$-subspaces of $\mathbb{R}^2$.
-:::
-
-::: pf-step
-If $V_T$ had a proper non-trivial submodule $U$, then $\dim_{\mathbb{R}} U = 1$.
-:::
-
-::: pf-step
-A 1-dimensional $T$-invariant subspace is spanned by an eigenvector of $T$.
-:::
-
-::: pf-step
-The characteristic polynomial of $T$ is
-$$\chi_T(x) = \det(x I - T) = \det \begin{pmatrix} x & 1 \\ -1 & x \end{pmatrix} = x^2 + 1.$$
-:::
-
-::: pf-step
-Since $x^2 + 1$ has no real roots, $T$ has no real eigenvalues, and therefore no 1-dimensional $T$-invariant subspaces.
-:::
-
-::: pf-step
-Thus the only $T$-invariant subspaces of $\mathbb{R}^2$ are $\{0\}$ and $\mathbb{R}^2$, so $V_T$ is simple.
-:::
+The $F[x]$-submodules of $V_T$ are precisely the $T$-invariant $F$-linear subspaces. Every proper nonzero subspace of $\mathbb R^2$ is one-dimensional. Such a subspace is $T$-invariant only when it is an eigenspace of $T$ over $\mathbb R$. But the characteristic polynomial $x^2+1$ has no real root, so $T$ has no nonzero real eigenvector. Hence $V_T$ has no proper nonzero submodule and is simple.
 
 :::
 
 :::
 
-::: pf-step
-Part (d): Over an algebraically closed field $F$, $V_T$ is never simple when $\dim_F V = 2$.
+::: {.pf-step #s4}
+
+If $F$ is algebraically closed and $\dim_F V=2$, then $V_T$ is not simple.
 
 ::: pf-proof
 
-::: pf-step
-Let $F$ be algebraically closed and $\dim_F V = 2$.
-:::
-
-::: pf-step
-The characteristic polynomial $\chi_T(x) = \det(x I - T) \in F[x]$ has degree 2.
-:::
-
-::: pf-step
-Because $F$ is algebraically closed, $\chi_T(x)$ has at least one root $\lambda \in F$.
-:::
-
-::: pf-step
-The root $\lambda$ is an eigenvalue of $T$, so there exists a non-zero eigenvector $v \in V \setminus \{0\}$ such that $T(v) = \lambda v$.
-:::
-
-::: pf-step
-Define the 1-dimensional subspace $U = \operatorname{span}_F(v) \subset V$.
-:::
-
-::: pf-step
-For any $u = c v \in U$ ($c \in F$), $T(u) = c T(v) = c \lambda v = (\lambda c) v \in U$.
-:::
-
-::: pf-step
-Thus $U$ is a $T$-invariant subspace, hence an $F[x]$-submodule of $V_T$.
-:::
-
-::: pf-step
-Since $\dim_F U = 1$ and $\dim_F V = 2$, $\{0\} \subsetneq U \subsetneq V_T$, so $U$ is a proper non-trivial submodule.
-:::
-
-::: pf-step
-Therefore $V_T$ is not simple.
-:::
+The characteristic polynomial of $T$ has degree two and therefore has a root $\lambda\in F$. Consequently there exists a nonzero eigenvector $v\in V$ with $Tv=\lambda v$. The one-dimensional subspace $Fv$ is stable under $T$, hence is an $F[x]$-submodule. Since $0\neq Fv\neq V$, this proves that $V_T$ is not simple.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
+::: pf-qed
 
-::: pf-proof
-$F[x]$-homomorphisms intertwine operators, isomorphisms correspond to similarity, $90^\circ$ rotation on $\mathbb{R}^2$ gives a simple module, and over algebraically closed fields existence of eigenvalues prevents simplicity in dimension 2.
-:::
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (a)--(d), respectively.
 
 :::
 
 :::
+
 :::

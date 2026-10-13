@@ -34,3 +34,296 @@ $$
 
 (c) Show that $W _ { x } ( y y _ { 1 } , . . . , y y _ { n } ) = y ^ { n } W _ { x } ( y _ { 1 } , . . . , y _ { n } )$ , where y is some $C ^ { n - 1 }$ function.
 :::
+
+::: {.solution}
+<1>1. For two functions,
+$$
+W(x)
+=
+W_x(y_1,y_2)
+=
+y_1y_2'-y_2y_1'.
+$$
+
+::: {.proof}
+This is the determinant of the $2\times2$ Wronskian matrix.
+:::
+
+<1>2. If $y_1,y_2$ solve
+$$
+y''-a(x)y'-b(x)y=0,
+$$
+then
+$$
+W'(x)=a(x)W(x).
+$$
+
+::: {.proof}
+Differentiate step <1>1:
+$$
+\begin{aligned}
+W'
+&=
+y_1'y_2'+y_1y_2''-y_2'y_1'-y_2y_1''\\
+&=
+y_1y_2''-y_2y_1''.
+\end{aligned}
+$$
+Since each solution satisfies
+$$
+y_j''=a y_j'+b y_j,
+$$
+one obtains
+$$
+\begin{aligned}
+W'
+&=
+y_1(ay_2'+by_2)-y_2(ay_1'+by_1)\\
+&=
+a(y_1y_2'-y_2y_1')\\
+&=aW.
+\end{aligned}
+$$
+:::
+
+<1>3. Hence
+$$
+\boxed{
+W_x(y_1,y_2)
+=
+C\exp\left(\int^x a(s)\,ds\right)
+}
+$$
+for some constant $C$.
+
+::: {.proof}
+Step <1>2 is the first-order equation
+$$
+W'=aW.
+$$
+Separating variables gives the stated solution. The coefficient $b$ does not
+enter the Wronskian equation.
+:::
+
+<1>4. If $y_1$ is known, then $y_2$ satisfies the first-order equation
+$$
+y_1y_2'-y_1'y_2=W.
+$$
+
+::: {.proof}
+This is simply the defining identity for the Wronskian from step <1>1, with
+$W$ already known from step <1>3.
+:::
+
+<1>5. Wherever $y_1\neq0$, step <1>4 is equivalently
+$$
+y_2'
+-
+\frac{y_1'}{y_1}y_2
+=
+\frac{W}{y_1}.
+$$
+
+::: {.proof}
+Divide step <1>4 by $y_1$.
+:::
+
+<1>6. The equation printed in the source,
+$$
+y_1'
+-
+\frac{y_2'}{y_2}y_1
++
+\frac{W}{y_2}
+=0,
+$$
+is the same first-order relation wherever $y_2\neq0$.
+
+::: {.proof}
+Multiply the displayed equation by $y_2$:
+$$
+y_1'y_2-y_1y_2'+W=0.
+$$
+Rearranging gives
+$$
+y_1y_2'-y_1'y_2=W,
+$$
+which is step <1>4.
+:::
+
+<1>7. Part (a) follows.
+
+::: {.proof}
+Step <1>3 gives Abel's formula, and steps <1>4--<1>6 give the requested
+first-order reduction.
+:::
+
+<1>8. Under a change of variable $t=t(x)$,
+$$
+\frac{d}{dx}
+=
+\frac{dt}{dx}
+\frac{d}{dt}.
+$$
+
+::: {.proof}
+This is the chain rule.
+:::
+
+<1>9. For every $k\geq0$,
+$$
+\frac{d^k y_j}{dx^k}
+=
+\left(
+\frac{dt}{dx}
+\right)^k
+\frac{d^k y_j}{dt^k}
++
+\sum_{r=0}^{k-1}
+c_{k,r}(x)
+\frac{d^r y_j}{dt^r}
+$$
+for coefficients $c_{k,r}$ independent of $j$.
+
+::: {.proof}
+Proceed by induction on $k$. The case $k=0$ is immediate. If the formula
+holds at order $k$, differentiate it using step <1>8. The derivative of the
+leading term contributes
+$$
+\left(
+\frac{dt}{dx}
+\right)^{k+1}
+\frac{d^{k+1}y_j}{dt^{k+1}}
+$$
+plus terms involving only derivatives of order at most $k$. Differentiating
+the lower-order terms also produces only derivatives of order at most $k$.
+Thus the formula holds at order $k+1$.
+:::
+
+<1>10. The $x$-Wronskian matrix is obtained from the $t$-Wronskian matrix by
+left multiplication by a lower-triangular matrix whose diagonal is
+$$
+1,
+\frac{dt}{dx},
+\left(\frac{dt}{dx}\right)^2,
+\ldots,
+\left(\frac{dt}{dx}\right)^{n-1}.
+$$
+
+::: {.proof}
+Row $k+1$ of the Wronskian contains the $k$th derivatives of all $y_j$.
+Step <1>9 says that this row equals
+$$
+\left(\frac{dt}{dx}\right)^k
+$$
+times the $k$th-derivative row in the $t$-Wronskian, plus a linear combination
+of earlier rows. This is exactly a lower-triangular row transformation.
+:::
+
+<1>11. Therefore
+$$
+\boxed{
+W_x(y_1,\ldots,y_n)
+=
+\left(
+\frac{dt}{dx}
+\right)^{n(n-1)/2}
+W_t(y_1,\ldots,y_n).
+}
+$$
+
+::: {.proof}
+By step <1>10, the determinant multiplier is the product of the diagonal
+entries:
+$$
+\prod_{k=0}^{n-1}
+\left(
+\frac{dt}{dx}
+\right)^k
+=
+\left(
+\frac{dt}{dx}
+\right)^{\sum_{k=0}^{n-1}k}.
+$$
+Since
+$$
+\sum_{k=0}^{n-1}k
+=
+\frac{n(n-1)}2,
+$$
+the formula follows.
+:::
+
+<1>12. Part (b) follows.
+
+::: {.proof}
+This is step <1>11.
+:::
+
+<1>13. For every $k\geq0$,
+$$
+\frac{d^k}{dx^k}(y,y_j)
+=
+y\,y_j^{(k)}
++
+\sum_{r=0}^{k-1}
+d_{k,r}(x)y_j^{(r)},
+$$
+where the coefficients $d_{k,r}$ are independent of $j$.
+
+::: {.proof}
+By Leibniz's rule,
+$$
+\frac{d^k}{dx^k}(y,y_j)
+=
+\sum_{r=0}^{k}
+\binom{k}{r}
+y^{(k-r)}y_j^{(r)}.
+$$
+The term with $r=k$ is $y,y_j^{(k)}$, and every other term involves a
+derivative of $y_j$ of order less than $k$.
+:::
+
+<1>14. The Wronskian matrix of
+$$
+yy_1,\ldots,yy_n
+$$
+is obtained from the Wronskian matrix of
+$$
+y_1,\ldots,y_n
+$$
+by a lower-triangular row transformation with diagonal entries all equal to
+$y$.
+
+::: {.proof}
+Apply step <1>13 to each derivative row. The $k$th derivative row equals
+$y$ times the corresponding original row plus a linear combination of earlier
+rows.
+:::
+
+<1>15. Hence
+$$
+\boxed{
+W_x(yy_1,\ldots,yy_n)
+=
+y^nW_x(y_1,\ldots,y_n).
+}
+$$
+
+::: {.proof}
+The determinant of the lower-triangular row-transformation matrix in step
+<1>14 is the product of its $n$ diagonal entries, namely $y^n$.
+:::
+
+<1>16. Part (c) follows.
+
+::: {.proof}
+This is step <1>15.
+:::
+
+<1>17. Q.E.D.
+
+::: {.proof}
+Steps <1>7, <1>12, and <1>16 establish parts (a), (b), and (c), respectively.
+:::
+:::

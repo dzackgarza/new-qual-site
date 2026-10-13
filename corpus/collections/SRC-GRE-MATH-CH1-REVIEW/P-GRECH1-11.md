@@ -25,3 +25,48 @@ One of the foci of the hyperbola $y^2 = \left(\frac{x}{a}\right)^2 + 1$ is the p
 (D) $1$
 (E) $\sqrt{3}$
 :::
+
+::: {.solution}
+<1>1. The hyperbola can be written as
+$$
+\frac{y^2}{1}-\frac{x^2}{a^2}=1.
+$$
+
+::: {.proof}
+Rearranging the given equation gives
+$$
+y^2-\frac{x^2}{a^2}=1,
+$$
+which is the displayed standard form.
+:::
+
+<1>2. The focus condition implies $a^2=1$.
+
+::: {.proof}
+For a hyperbola
+$$
+\frac{y^2}{b^2}-\frac{x^2}{A^2}=1,
+$$
+the foci are $(0,\pm c)$ with $c^2=A^2+b^2$. In step <1>1, $b^2=1$ and $A^2=a^2$. Since the stated focus has $c=\sqrt2$,
+$$
+2=c^2=a^2+1,
+$$
+so $a^2=1$.
+:::
+
+<1>3. Thus $|a|=1$, and the listed value is
+$$
+\boxed{a=1},
+$$
+so the answer is (D).
+
+::: {.proof}
+Step <1>2 gives $a=\pm1$. The equation of the hyperbola depends only on $a^2$, while among the listed choices only $a=1$ occurs.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 identifies the unique listed choice satisfying the focus condition.
+:::
+:::

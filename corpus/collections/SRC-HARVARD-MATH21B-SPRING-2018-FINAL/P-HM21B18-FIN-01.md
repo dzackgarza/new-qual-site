@@ -39,3 +39,271 @@ Mark each statement true or false. No justifications are required.
 18. Solutions of $u_t=u_{xx}$ with initial condition $u(x,0)=\sin(14x)$ converge to $0$ as $t\to\infty$.
 19. If $Av=5v$ and $Au=-u$, then $A(3v+2u)=15v-2u$.
 :::
+
+::: {.solution}
+For statement 15, use the course convention that a QR decomposition has
+$Q$ orthogonal and $R$ upper triangular with positive diagonal entries.
+
+<1>1. Statement 1 is false.
+
+::: {.proof}
+Take $A=I$ and $B=-I$. Both are orthogonal, but $A+B=0$ is not orthogonal,
+since $0^T0=0\neq I$.
+:::
+
+<1>2. Statement 2 is false.
+
+::: {.proof}
+The real matrix
+\[
+\begin{pmatrix}
+0&-1\\
+1&0
+\end{pmatrix}
+\]
+has characteristic polynomial $\lambda^2+1$, so it has no real
+eigenvalue.
+:::
+
+<1>3. Statement 3 is true.
+
+::: {.proof}
+Suppose
+$c_1Av_1+c_2Av_2=0$. Since $A$ is invertible,
+\[
+A(c_1v_1+c_2v_2)=0
+\]
+implies $c_1v_1+c_2v_2=0$, and because $\{v_1,v_2\}$ is a basis,
+$c_1=c_2=0$. Thus $Av_1,Av_2$ are linearly independent. Two linearly
+independent vectors in $\mathbb R^2$ form a basis.
+:::
+
+<1>4. Statement 4 is true.
+
+::: {.proof}
+If $(D-1)^2f=0$, set $g=(D-1)f$. Then $(D-1)g=0$, so
+$g=ce^t$ for some constant $c$. Hence
+\[
+f'-f=ce^t.
+\]
+Multiplying by $e^{-t}$ gives
+\[
+(e^{-t}f)'=c,
+\]
+so $f=(ct+d)e^t$. Therefore
+\[
+\ker(D-1)^2=\operatorname{span}\{e^t,te^t\},
+\]
+and the two displayed functions are linearly independent.
+:::
+
+<1>5. Statement 5 is false.
+
+::: {.proof}
+The matrix
+\[
+\begin{pmatrix}
+1&2\\
+2&1
+\end{pmatrix}
+\]
+is symmetric and every entry is positive, but its eigenvalues are $3$ and
+$-1$.
+:::
+
+<1>6. Statement 6 is true.
+
+::: {.proof}
+A reflection $R$ satisfies $R^2=I$. Hence $R^{-1}=R$, so $R$ is
+invertible.
+:::
+
+<1>7. Statement 7 is false.
+
+::: {.proof}
+Take $A=-I$. Then $A$ is symmetric and
+$A^6=(-I)^6=I$, but $A\neq I$.
+:::
+
+<1>8. Statement 8 is true.
+
+::: {.proof}
+For $f,g\in C^\infty$ and scalars $a,b$,
+\[
+T(af+bg)
+=(af+bg)''+(af+bg)
+=a(f''+f)+b(g''+g)
+=aTf+bTg.
+\]
+Also $f''+f$ is smooth whenever $f$ is smooth. Thus
+$T\colon C^\infty\to C^\infty$ is linear.
+:::
+
+<1>9. Statement 9 is true.
+
+::: {.proof}
+Since $A^T=A$ and $B^T=B$,
+\[
+(A^2-B^2)^T
+=(A^T)^2-(B^T)^2
+=A^2-B^2.
+\]
+Therefore $A^2-B^2$ is symmetric.
+:::
+
+<1>10. Statement 10 is true.
+
+::: {.proof}
+For every $n\geq0$, the function $\cos(nx)$ is even, whereas $x^5$ is
+odd. Hence $x^5\cos(nx)$ is odd, and therefore
+\[
+\int_{-\pi}^{\pi}x^5\cos(nx)\,dx=0.
+\]
+Thus every cosine coefficient is zero.
+:::
+
+<1>11. Statement 11 is false.
+
+::: {.proof}
+Let
+\[
+A=
+\begin{pmatrix}
+1&0\\
+0&-1
+\end{pmatrix},
+\qquad
+B=
+\begin{pmatrix}
+0&1\\
+0&2
+\end{pmatrix}.
+\]
+The matrix $A$ is diagonal. The matrix $B$ has the distinct real
+eigenvalues $0$ and $2$, so it is diagonalizable over $\mathbb R$.
+However,
+\[
+A+B=
+\begin{pmatrix}
+1&1\\
+0&1
+\end{pmatrix}
+\]
+has only the eigenvalue $1$ and a one-dimensional eigenspace, so it is
+not diagonalizable.
+:::
+
+<1>12. Statement 12 is false.
+
+::: {.proof}
+The $5\times4$ matrix
+\[
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1\\
+0&0&0&0
+\end{pmatrix}
+\]
+has rank $4$, so by rank-nullity its kernel has dimension $0$. Hence its
+kernel contains no nonzero vector.
+:::
+
+<1>13. Statement 13 is false.
+
+::: {.proof}
+Take $A=I$. Then
+$\ker A=\{0\}\subseteq\operatorname{im}A$, but $A^2=I\neq0$.
+:::
+
+<1>14. Statement 14 is false.
+
+::: {.proof}
+The zeroth cosine coefficient is a positive constant multiple of
+\[
+\int_{-\pi}^{\pi}e^{-x^2}\,dx.
+\]
+The integrand is strictly positive, so this integral, and therefore
+$a_0$, is strictly positive rather than zero.
+:::
+
+<1>15. Statement 15 is true.
+
+::: {.proof}
+From
+$Q_1R_1=Q_2R_2$ one obtains
+\[
+U:=Q_2^TQ_1=R_2R_1^{-1}.
+\]
+The left-hand expression shows that $U$ is orthogonal, while the
+right-hand expression shows that $U$ is upper triangular. An upper
+triangular orthogonal matrix is diagonal with diagonal entries in
+$\{\pm1\}$. Since the diagonal entries of both $R_1$ and $R_2$ are
+positive, every diagonal entry of $R_2R_1^{-1}$ is positive. Hence
+$U=I$, and therefore $R_1=R_2$.
+:::
+
+<1>16. Statement 16 is true.
+
+::: {.proof}
+For reflection in a line $L\subset\mathbb R^2$, every vector has a
+unique decomposition $v=v_L+v_\perp$ with $v_L\in L$ and
+$v_\perp\in L^\perp$, and reflection sends
+$v_L+v_\perp$ to $v_L-v_\perp$. Thus a vector is fixed exactly when
+$v_\perp=0$, so the eigenspace for eigenvalue $1$ is precisely the
+one-dimensional line $L$. Its geometric multiplicity is therefore $1$,
+not $2$.
+:::
+
+<1>17. Statement 17 is false.
+
+::: {.proof}
+Take $A=-2I_2$. Then every solution of $x'=Ax$ is
+\[
+x(t)=e^{-2t}x(0),
+\]
+so the origin is asymptotically stable. But every eigenvalue of $A$ is
+$-2$, whose absolute value is $2>1$.
+:::
+
+<1>18. Statement 18 is true.
+
+::: {.proof}
+The initial datum $\sin(14x)$ is a Laplacian eigenfunction:
+\[
+\frac{d^2}{dx^2}\sin(14x)=-196\sin(14x).
+\]
+Hence its heat evolution is
+\[
+u(x,t)=e^{-196t}\sin(14x).
+\]
+This satisfies $u_t=u_{xx}$ and $u(x,0)=\sin(14x)$, and
+$|u(x,t)|\leq e^{-196t}\to0$. Thus the solution converges uniformly to
+$0$ as $t\to\infty$.
+:::
+
+<1>19. Statement 19 is true.
+
+::: {.proof}
+By linearity of $A$,
+\[
+A(3v+2u)=3Av+2Au=3(5v)+2(-u)=15v-2u.
+\]
+:::
+
+<1>20. The recovered truth values, in order, are
+\[
+\boxed{\mathrm{F,F,T,T,F,T,F,T,T,T,F,F,F,F,T,T,F,T,T}}.
+\]
+
+::: {.proof}
+Steps <1>1 through <1>19 establish the corresponding truth values.
+:::
+
+<1>21. Q.E.D.
+
+::: {.proof}
+Step <1>20 records the required answers to all recovered statements.
+:::
+:::

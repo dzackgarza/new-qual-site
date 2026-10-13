@@ -22,3 +22,141 @@ $$
 z ^ { 2 } + 3 z + 1 2 = 0 , \qquad z ^ { 4 } + 5 z ^ { 2 } + 4 = 0 , \qquad z ^ { 6 } = 1 , \qquad z ^ { 3 } = - 1 .
 $$
 :::
+
+::: {.solution}
+<1>1. The roots of
+$$
+z^2+3z+12=0
+$$
+are
+$$
+\boxed{
+z=\frac{-3\pm i\sqrt{39}}{2}.
+}
+$$
+
+::: {.proof}
+The quadratic formula gives
+$$
+z
+=
+\frac{-3\pm\sqrt{9-48}}{2}
+=
+\frac{-3\pm\sqrt{-39}}{2}
+=
+\frac{-3\pm i\sqrt{39}}{2}.
+$$
+:::
+
+<1>2. The roots of
+$$
+z^4+5z^2+4=0
+$$
+are
+$$
+\boxed{z=\pm i,\ \pm2i}.
+$$
+
+::: {.proof}
+Set
+$$
+w=z^2.
+$$
+Then
+$$
+w^2+5w+4
+=(w+1)(w+4).
+$$
+Hence
+$$
+z^2=-1
+\qquad\text{or}\qquad
+z^2=-4,
+$$
+which gives the four stated roots.
+:::
+
+<1>3. The solutions of
+$$
+z^6=1
+$$
+are
+$$
+\boxed{
+z=e^{i\pi k/3},
+\qquad
+k=0,1,2,3,4,5.
+}
+$$
+
+::: {.proof}
+Write
+$$
+1=e^{2\pi i m},
+\qquad m\in\ZZ.
+$$
+If $z=re^{i\theta}$ and $z^6=1$, then
+$$
+r^6=1,
+$$
+so $r=1$, and
+$$
+6\theta=2\pi m.
+$$
+Thus
+$$
+\theta=\frac{\pi m}{3}.
+$$
+Modulo $2\pi$, exactly six values occur, represented by $m=0,\ldots,5$.
+:::
+
+<1>4. The solutions of
+$$
+z^3=-1
+$$
+are
+$$
+\boxed{
+e^{i\pi/3},
+\quad
+e^{i\pi},
+\quad
+e^{i5\pi/3}.
+}
+$$
+
+::: {.proof}
+Write
+$$
+-1=e^{i(\pi+2\pi m)}.
+$$
+Taking cube roots gives
+$$
+z
+=
+e^{i(\pi+2\pi m)/3}.
+$$
+Modulo $2\pi$, the three distinct values arise from $m=0,1,2$.
+:::
+
+<1>5. Equivalently, the roots in step <1>4 are
+$$
+\boxed{
+\frac12+i\frac{\sqrt3}{2},
+\quad
+-1,
+\quad
+\frac12-i\frac{\sqrt3}{2}.
+}
+$$
+
+::: {.proof}
+Apply Euler's formula to the three polar forms from step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 give all roots requested in the four equations.
+:::
+:::

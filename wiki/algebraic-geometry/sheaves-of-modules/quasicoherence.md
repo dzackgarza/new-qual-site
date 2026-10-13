@@ -9,10 +9,11 @@ topics:
 
 # Quasicoherence and twisting
 
+A quasicoherent sheaf is locally the sheaf associated to a module on each affine chart; the sheaf of differentials and the twisting sheaves on projective space are basic examples.
+
 [[D-QNTZY]]
 
-A sheaf of $\OO_X$-modules $\mcf$ is quasicoherent exactly when every point has an open neighbourhood $U$ with an exact sequence $\OO_U^{(J)}\to\OO_U^{(I)}\to\mcf|_U\to0$.
-For a morphism $X\to S$ and affine opens $\Spec B\subseteq X$ and $\Spec A\subseteq S$ with $\Spec B$ mapping into $\Spec A$, $\Omega_{X/S}|_{\Spec B}\cong\widetilde{\Omega_{B/A}}$.
+Quasicoherence is established by exhibiting such local module presentations; a single global module need not exist on a nonaffine scheme.
 
 ## The twists
 
@@ -23,5 +24,5 @@ For a morphism $X\to S$ and affine opens $\Spec B\subseteq X$ and $\Spec A\subse
 For $S=k[x_0,\ldots,x_n]$, $H^0(\PP^n_k,\OO(d))=S_d$ for $d\ge0$.
 For a closed subscheme $X=V(I)\subseteq\PP^n_k$, the Hilbert polynomial of $S/I$ from [[algebraic-geometry/varieties/dimension-and-degree|dimension and degree]] equals $h^0(X,\OO_X(d))$ for $d\gg0$.
 
-Every coherent sheaf on $\PP^n_A$ is a quotient of a finite sum of twists $\OO(-d_i)$.
-By descending induction on $i$, starting above $n$ where $H^i$ vanishes, finiteness of $H^i(\PP^n_A,\mcf)$ for coherent $\mcf$ and noetherian $A$ follows from finiteness of $H^i(\PP^n_A,\OO(d))$.
+Every coherent sheaf on projective space is a quotient of a sum of twists.
+Finite resolutions by twists reduce cohomological statements about coherent sheaves to the groups $H^*(\PP^n,\OO(d))$.

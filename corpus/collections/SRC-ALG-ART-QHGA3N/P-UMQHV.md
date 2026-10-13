@@ -21,7 +21,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Let $k$ be a field of characteristic $p\neq 0$ and $f\in k[x]$ irreducible.
 Show that $f(x) = g(x^{p^d})$ where $g(x) \in k[x]$ is irreducible and separable.
@@ -88,11 +87,11 @@ would be a nontrivial factorization of \(f\), contradicting irreducibility.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
-Repeating steps [](#s2){.pf-ref} and [](#s3){.pf-ref} finitely many times gives
+Repeating step [](#s2){.pf-ref} and step [](#s3){.pf-ref} finitely many times gives
 \[
-f(x)=g(x^{p^d})
+\boxed{f(x)=g(x^{p^d})}
 \]
 for some \(d\ge0\), where \(g\in k[x]\) is irreducible and \(g'\neq0\).
 
@@ -148,15 +147,24 @@ f(x)=g(x^{p^d})
 
 :::
 
-::: pf-step
+::: {.pf-step #s7}
 
-Every root of \(f\) has multiplicity exactly \(p^d\).
+Every root of \(f\) has multiplicity exactly
+\[
+\boxed{p^d}.
+\]
 
 ::: pf-proof
 
 The roots \(\alpha_i\) are distinct: if \(\alpha_i=\alpha_j\), then \(\beta_i=\alpha_i^{p^d}=\alpha_j^{p^d}=\beta_j\), contradicting distinctness of the roots of \(g\). Thus the factorization in step [](#s6){.pf-ref} has distinct linear factors, each occurring with exponent \(p^d\).
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required representation with irreducible $g$, step [](#s5){.pf-ref} proves that $g$ is separable, and step [](#s7){.pf-ref} gives the common multiplicity of the roots of $f$.
 
 :::
 

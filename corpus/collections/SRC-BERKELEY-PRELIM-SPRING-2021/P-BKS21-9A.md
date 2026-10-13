@@ -22,3 +22,96 @@ $$
 G\ne\bigcup_{g\in G}gHg^{-1}.
 $$
 :::
+
+::: {.solution}
+Let
+$$
+N\coloneqq N_G(H)
+=
+\{g\in G:gHg^{-1}=H\},
+$$
+and let
+$$
+\mathcal C\coloneqq\{gHg^{-1}:g\in G\}
+$$
+be the set of distinct conjugates of $H$.
+
+<1>1. The number of distinct conjugates of $H$ is
+$$
+|\mathcal C|=[G:N].
+$$
+
+::: {.proof}
+The group $G$ acts on its subgroups by conjugation. The stabilizer of $H$ for this action is exactly $N_G(H)=N$. By the orbit-stabilizer theorem, the orbit of $H$, namely $\mathcal C$, has cardinality $[G:N]$.
+:::
+
+<1>2. One has
+$$
+|\mathcal C|\leq [G:H].
+$$
+
+::: {.proof}
+Since every element of $H$ normalizes $H$,
+$$
+H\subseteq N.
+$$
+Hence
+$$
+[G:N]\leq [G:H].
+$$
+Apply step <1>1.
+:::
+
+<1>3. The union of all conjugates satisfies
+$$
+\left|
+\bigcup_{K\in\mathcal C}K
+\right|
+\leq
+1+|\mathcal C|(|H|-1).
+$$
+
+::: {.proof}
+Every $K\in\mathcal C$ is conjugate to $H$, so $|K|=|H|$. Also every subgroup $K$ contains the identity element $e$. Thus, after counting $e$ once, each of the $|\mathcal C|$ conjugates can contribute at most $|H|-1$ further elements. This gives the stated bound.
+:::
+
+<1>4. The union of the conjugates has strictly fewer than $|G|$ elements.
+
+::: {.proof}
+By steps <1>2--<1>3,
+$$
+\begin{aligned}
+\left|
+\bigcup_{g\in G}gHg^{-1}
+\right|
+&\leq
+1+[G:H](|H|-1)\\
+&=
+1+\frac{|G|}{|H|}(|H|-1)\\
+&=
+|G|-[G:H]+1.
+\end{aligned}
+$$
+Since $H$ is proper, $[G:H]\geq2$. Therefore
+$$
+|G|-[G:H]+1\leq |G|-1<|G|.
+$$
+:::
+
+<1>5. Therefore
+$$
+\boxed{
+G\ne\bigcup_{g\in G}gHg^{-1}
+}.
+$$
+
+::: {.proof}
+If the union were all of $G$, its cardinality would be $|G|$, contradicting step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::

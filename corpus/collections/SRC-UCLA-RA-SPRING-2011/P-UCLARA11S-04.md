@@ -16,3 +16,171 @@ Let $f_n:[0,1]\to[0,\infty)$ be Borel functions satisfying
 Suppose $f_n\to f$ Lebesgue almost everywhere.
 Show that $f\in L^1([0,1])$ and $f_n\to f$ in $L^1$.
 :::
+
+::: {.solution}
+Choose $M<\infty$ such that
+\[
+\int_0^1
+f_n(x)\log(2+f_n(x))\,dx
+\le M
+\qquad
+(n\ge1).
+\]
+
+<1>1. The limit function satisfies
+\[
+f\in L^1([0,1]).
+\]
+
+::: {.proof}
+Since all functions are nonnegative, Fatou's lemma gives
+\[
+\int_0^1
+f(x)\log(2+f(x))\,dx
+\le
+\liminf_{n\to\infty}
+\int_0^1
+f_n(x)\log(2+f_n(x))\,dx
+\le M.
+\]
+Because
+\[
+\log(2+t)\ge\log2
+\qquad
+(t\ge0),
+\]
+one has
+\[
+\log2
+\int_0^1f(x)\,dx
+\le
+M.
+\]
+Thus $f\in L^1([0,1])$.
+:::
+
+<1>2. The family $(f_n)$ is uniformly integrable on $[0,1]$.
+
+::: {.proof}
+Fix $\varepsilon>0$. Choose $R>0$ so large that
+\[
+\frac{M}{\log(2+R)}
+<
+\frac\varepsilon2.
+\]
+If $E\subset[0,1]$ is measurable, then
+\[
+\begin{aligned}
+\int_E f_n
+&=
+\int_{E\cap\{f_n\le R\}}f_n
++
+\int_{E\cap\{f_n>R\}}f_n\\
+&\le
+R|E|
++
+\frac1{\log(2+R)}
+\int_{\{f_n>R\}}
+f_n\log(2+f_n)\\
+&\le
+R|E|
++
+\frac{M}{\log(2+R)}.
+\end{aligned}
+\]
+Choose
+\[
+\delta
+=
+\frac{\varepsilon}{2R}.
+\]
+Then $|E|<\delta$ implies
+\[
+\int_E f_n<\varepsilon
+\]
+for every $n$.
+:::
+
+<1>3. The limit function $f$ satisfies the same small-set estimate: for every $\varepsilon>0$ there is $\delta>0$ such that
+\[
+|E|<\delta
+\quad\Longrightarrow\quad
+\int_E f<\varepsilon.
+\]
+
+::: {.proof}
+Take $\delta$ from step <1>2. By Fatou's lemma applied on $E$,
+\[
+\int_Ef
+\le
+\liminf_{n\to\infty}
+\int_Ef_n
+\le
+\varepsilon.
+\]
+If desired, start step <1>2 with $\varepsilon/2$ to obtain the strict inequality displayed here.
+:::
+
+<1>4. For every $\varepsilon>0$, there is a measurable set $E\subset[0,1]$ such that
+\[
+|E|<\delta
+\]
+and
+\[
+f_n\longrightarrow f
+\]
+uniformly on $[0,1]\setminus E$, where $\delta$ is chosen as in steps <1>2--<1>3.
+
+::: {.proof}
+This is Egorov's theorem, since $[0,1]$ has finite measure and $f_n\to f$ almost everywhere.
+:::
+
+<1>5. One has
+\[
+\|f_n-f\|_1\longrightarrow0.
+\]
+
+::: {.proof}
+Fix $\varepsilon>0$. Choose $\delta>0$ from steps <1>2--<1>3 with $\varepsilon$ replaced by $\varepsilon/4$, and choose $E$ from step <1>4.
+
+Then
+\[
+\int_E f_n<\frac\varepsilon4,
+\qquad
+\int_E f<\frac\varepsilon4.
+\]
+On $E^c$, convergence is uniform, so for all sufficiently large $n$,
+\[
+\sup_{x\in E^c}|f_n(x)-f(x)|
+<
+\frac\varepsilon2.
+\]
+Since $|E^c|\le1$,
+\[
+\begin{aligned}
+\|f_n-f\|_1
+&\le
+\int_{E^c}|f_n-f|
++
+\int_Ef_n
++
+\int_Ef\\
+&<
+\frac\varepsilon2
++
+\frac\varepsilon4
++
+\frac\varepsilon4\\
+&=
+\varepsilon.
+\end{aligned}
+\]
+Thus $f_n\to f$ in $L^1$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives $f\in L^1$, and step <1>5 gives the required $L^1$ convergence.
+:::
+:::

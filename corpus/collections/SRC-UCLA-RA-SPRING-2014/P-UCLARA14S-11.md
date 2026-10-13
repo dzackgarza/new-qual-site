@@ -22,3 +22,158 @@ For each $p\in(-1,1)$, compute
 \int_0^\infty \frac{x^p}{x^2+1}\,dx.
 \]
 :::
+
+::: {.solution}
+<1>1. The improper integral
+\[
+I_p
+\coloneqq
+\int_0^\infty\frac{x^p}{1+x^2}\,dx
+\]
+converges for every $p\in(-1,1)$.
+
+::: {.proof}
+As $x\downarrow0$,
+\[
+\frac{x^p}{1+x^2}
+\sim
+x^p,
+\]
+and
+\[
+\int_0^1x^p\,dx<\infty
+\]
+exactly when $p>-1$.
+
+As $x\to\infty$,
+\[
+\frac{x^p}{1+x^2}
+\sim
+x^{p-2},
+\]
+and
+\[
+\int_1^\infty x^{p-2}\,dx<\infty
+\]
+exactly when $p<1$. Thus the given range of $p$ guarantees convergence at both endpoints.
+:::
+
+<1>2. With
+\[
+a
+\coloneqq
+\frac{p+1}{2},
+\]
+one has $a\in(0,1)$ and
+\[
+I_p
+=
+\frac12
+\int_0^\infty
+\frac{t^{a-1}}{1+t}\,dt.
+\]
+
+::: {.proof}
+Make the substitution
+\[
+t=x^2,
+\qquad
+dx=\frac12t^{-1/2}\,dt.
+\]
+Then
+\[
+x^p\,dx
+=
+t^{p/2}\frac12t^{-1/2}\,dt
+=
+\frac12
+t^{(p-1)/2}\,dt
+=
+\frac12
+t^{a-1}\,dt.
+\]
+The denominator becomes $1+t$, giving the formula.
+:::
+
+<1>3. For $0<a<1$,
+\[
+\int_0^\infty
+\frac{t^{a-1}}{1+t}\,dt
+=
+\Gamma(a)\Gamma(1-a)
+=
+\frac{\pi}{\sin(\pi a)}.
+\]
+
+::: {.proof}
+The substitution
+\[
+s=\frac{t}{1+t},
+\qquad
+t=\frac{s}{1-s},
+\qquad
+dt=\frac{ds}{(1-s)^2},
+\]
+gives
+\[
+\int_0^\infty
+\frac{t^{a-1}}{1+t}\,dt
+=
+\int_0^1
+s^{a-1}(1-s)^{-a}\,ds
+=
+B(a,1-a).
+\]
+The beta--gamma identity gives
+\[
+B(a,1-a)
+=
+\Gamma(a)\Gamma(1-a),
+\]
+and Euler's reflection formula gives
+\[
+\Gamma(a)\Gamma(1-a)
+=
+\frac{\pi}{\sin(\pi a)}.
+\]
+:::
+
+<1>4. Therefore
+\[
+\boxed{
+\int_0^\infty
+\frac{x^p}{1+x^2}\,dx
+=
+\frac{\pi}
+{2\cos(\pi p/2)}
+}.
+\]
+
+::: {.proof}
+By steps <1>2 and <1>3,
+\[
+I_p
+=
+\frac\pi{2\sin(\pi a)}.
+\]
+Since
+\[
+a=\frac{p+1}{2},
+\]
+one has
+\[
+\sin(\pi a)
+=
+\sin\left(\frac\pi2+\frac{\pi p}{2}\right)
+=
+\cos\left(\frac{\pi p}{2}\right).
+\]
+Substitution gives the boxed value.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the value of the convergent improper integral for every $p\in(-1,1)$.
+:::
+:::

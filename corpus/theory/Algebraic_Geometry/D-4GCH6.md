@@ -37,7 +37,7 @@ For a morphism of schemes $f:X\to Y$, the \dfn{sheaf of relative differentials} 
 ::: {.proposition}
 $\Omega_{X/Y}$ is [[D-QNTZY|quasi-coherent]], and it is coherent when $Y$ is noetherian and $f$ is of finite type.
 Differentials commute with localization: $\Omega_{B_s/A}\cong(\Omega_{B/A})_s$.
-For the affine diagonal with ideal $J=\ker(B\otimes_A B\to B)$, there is a canonical isomorphism $\Omega_{B/A}\cong J/J^2$, sending $db$ to $1\otimes b-b\otimes1$.
+For the affine diagonal with ideal $J=\ker(B\otimes_A B\to B)$, there is a canonical isomorphism $\Omega_{B/A}\cong J/J^2$, sending $db$ to $1\otimes_A b-b\otimes_A1$.
 Thus differentials are also the conormal sheaf of the diagonal; this description is computed on affine neighborhoods, and for a separated morphism the diagonal itself is a closed immersion [@Har10a, Chapter II, §8].
 :::
 
@@ -51,7 +51,7 @@ For an $S$-scheme $X$ and a closed immersion $i:Z\hookrightarrow X$ with ideal s
 $$
 \mci/\mci^2\longrightarrow i^*\Omega_{X/S}\longrightarrow\Omega_{Z/S}\longrightarrow0.
 $$
-Its first map sends the class of a local section $g$ of $\mci$ to $dg\otimes1$.
+Its first map sends the class of a local section $g$ of $\mci$ to $dg\otimes_{\OO_X}1$.
 Affinely, for $B\to A$ and an ideal $I\subseteq A$, it is the map $I/I^2\to\Omega_{A/B}\otimes_A A/I$ [@Har10a, Propositions II.8.4A, II.8.11 and II.8.12].
 :::
 

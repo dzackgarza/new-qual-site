@@ -23,3 +23,98 @@ f(x)=\sqrt{x}
 uniformly continuous on $[0,\infty)$?
 Prove your assertion.
 :::
+
+::: {.solution}
+Yes.
+
+<1>1. For all $x,y\ge0$,
+\[
+\boxed{
+|\sqrt{x}-\sqrt{y}|
+\le
+\sqrt{|x-y|}
+}.
+\]
+
+::: {.proof}
+Assume without loss of generality that
+\[
+x\ge y.
+\]
+Then
+\[
+\sqrt{x}-\sqrt{y}\ge0.
+\]
+Squaring gives
+\[
+(\sqrt{x}-\sqrt{y})^2
+=
+x+y-2\sqrt{xy}.
+\]
+Since
+\[
+x\ge y,
+\]
+one has
+\[
+\sqrt{xy}\ge y.
+\]
+Therefore
+\[
+(\sqrt{x}-\sqrt{y})^2
+\le
+x+y-2y
+=
+x-y
+=
+|x-y|.
+\]
+Both sides are nonnegative, so taking square roots gives the desired inequality.
+:::
+
+<1>2. Let $\varepsilon>0$ and choose
+\[
+\delta=\varepsilon^2.
+\]
+If
+\[
+|x-y|<\delta,
+\]
+then
+\[
+|\sqrt{x}-\sqrt{y}|<\varepsilon.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+|\sqrt{x}-\sqrt{y}|
+\le
+\sqrt{|x-y|}
+<
+\sqrt{\delta}
+=
+\varepsilon.
+\]
+:::
+
+<1>3. Therefore
+\[
+\boxed{f(x)=\sqrt{x}\text{ is uniformly continuous on }[0,\infty).}
+\]
+
+::: {.proof}
+The number
+\[
+\delta=\varepsilon^2
+\]
+in step <1>2 depends only on $\varepsilon$, not on the points $x,y$.
+Thus step <1>2 is exactly the definition of uniform continuity.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required assertion.
+:::
+:::

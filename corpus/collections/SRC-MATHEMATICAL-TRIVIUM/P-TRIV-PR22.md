@@ -22,3 +22,96 @@ Long time after, in a sample of n randomly selected birds X had the marker.
 What is the most probable total amount of birds in the population?
 Assume the flock was not mixed with other groups of birds.
 :::
+
+::: {.solution}
+Let $N$ be the unknown total population size. Necessarily
+\[
+N\geq M+n-X.
+\]
+
+<1>1. Conditional on $N$, the number $X$ of marked birds in the sample has the hypergeometric likelihood
+\[
+L(N)=P_N(X)
+=\frac{\binom MX\binom{N-M}{n-X}}{\binom Nn}.
+\]
+
+::: {.proof}
+Among the $N$ birds, $M$ are marked and $N-M$ are unmarked. A sample of $n$ birds contains exactly $X$ marked birds in $\binom MX\binom{N-M}{n-X}$ ways, while there are $\binom Nn$ equally likely samples in total.
+:::
+
+<1>2. For admissible consecutive population sizes,
+\[
+\frac{L(N+1)}{L(N)}
+=\frac{(N+1-M)(N+1-n)}{(N+1)(N+1-M-n+X)}.
+\]
+
+::: {.proof}
+The factor $\binom MX$ cancels. Using
+\[
+\frac{\binom{r+1}{k}}{\binom rk}=\frac{r+1}{r+1-k}
+\]
+for the numerator and
+\[
+\frac{\binom Nn}{\binom{N+1}n}=\frac{N+1-n}{N+1}
+\]
+for the denominator gives the displayed ratio.
+:::
+
+<1>3. The likelihood is nondecreasing from $N$ to $N+1$ exactly when
+\[
+NX\leq Mn-X.
+\]
+
+::: {.proof}
+Comparing the ratio in step <1>2 with $1$ gives
+\[
+(N+1-M)(N+1-n)
+\geq(N+1)(N+1-M-n+X).
+\]
+Expanding and cancelling common terms leaves
+\[
+Mn-X(N+1)\geq0,
+\]
+which is $NX\leq Mn-X$.
+:::
+
+<1>4. If $X>0$, the maximum-likelihood population size is therefore the integer nearest the transition point $Mn/X$, with the exact rule
+\[
+\boxed{\widehat N=\left\lfloor\frac{Mn}{X}\right\rfloor}
+\]
+unless $Mn/X$ is an integer, in which case both
+\[
+\boxed{\widehat N=\frac{Mn}{X}-1\quad\text{and}\quad\widehat N=\frac{Mn}{X}}
+\]
+maximize the likelihood.
+
+::: {.proof}
+Step <1>3 says $L(N+1)\geq L(N)$ precisely for $N+1\leq Mn/X$. Thus the likelihood increases until the ratio crosses $1$ and decreases afterward. If $Mn/X$ is not an integer, the last increase ends at $\lfloor Mn/X\rfloor$, which is the unique maximizer. If $Mn/X=K$ is an integer, then $L(K)=L(K-1)$ and the adjacent ratios on either side are respectively greater and less than $1$, so both $K-1$ and $K$ are maximizers.
+:::
+
+<1>5. In the usual large-population interpretation, this is the capture--recapture estimate
+\[
+\boxed{N\approx\frac{Mn}{X}}.
+\]
+
+::: {.proof}
+The observed marked fraction $X/n$ estimates the population marked fraction $M/N$. Solving $X/n=M/N$ gives $N=Mn/X$, agreeing with the exact likelihood transition in step <1>4.
+:::
+
+<1>6. If $X=0$, there is no finite maximum-likelihood estimate of $N$.
+
+::: {.proof}
+With no recaptured marked birds, step <1>2 becomes
+\[
+\frac{L(N+1)}{L(N)}
+=\frac{(N+1-M)(N+1-n)}{(N+1)(N+1-M-n)}>1
+\]
+for admissible finite $N$, so the likelihood increases toward its supremum as $N\to\infty$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>4--<1>6 give the maximum-likelihood answer, including the integer tie and zero-recapture cases.
+:::
+:::

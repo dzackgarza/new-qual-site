@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the maximal-ideal existence argument and proved separately that the nonunit ideal is proper, maximal, and the only maximal ideal."
 ---
-
 ::: {.problem}
 A commutative ring $R$ is called a local ring if it has a unique maximal ideal.
 Prove that if $R$ is a local ring with maximal ideal $M$ then an element $a \in R$ is a unit if and only if $a \notin M$.
@@ -46,7 +45,7 @@ If an ideal contains a unit $u$, it contains $u^{-1}u=1$ and
 therefore the whole ring. If $a$ is a nonunit, its principal ideal
 $(a)$ is proper, since $1=ra$ would make $a$ invertible.
 
-Consider the partially ordered set of proper
+For completeness, consider the partially ordered set of proper
 ideals containing $(a)$. It is nonempty. The union of any nonempty
 chain is an ideal containing $(a)$, and is proper: if it contained
 $1$, one ideal in the chain would already contain $1$.
@@ -57,7 +56,7 @@ a maximal member, which is a maximal ideal of $R$ containing $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 If $R$ has a unique maximal ideal $M$, its units are exactly
 the elements outside $M$.
@@ -72,7 +71,7 @@ must be $M$. Thus $a$ is a unit if and only if $a\notin M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 If the set $I$ of nonunits is an ideal, it is the unique
 maximal ideal of $R$.
@@ -89,6 +88,12 @@ Consequently $M\subseteq I$. Since $M$ is maximal and $I$
 is proper, $M=I$. This proves uniqueness and hence locality.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the characterization of units in a local ring, and step [](#s3){.pf-ref} proves the converse.
 
 :::
 

@@ -19,10 +19,6 @@ Throughout, rings are commutative with identity.
 
 [[FT-PUVIQ]]
 
-[[T-QSTRJ]]
-
-[[FF-QELG7]]
-
 [[PR-UTFSY]]
 
 [[E-NXHG6]]
@@ -71,7 +67,7 @@ Let $R$ be a Noetherian ring and $I\subseteq R$ an ideal.
 
 For an integral extension of rings $A\subseteq B$, every prime of $A$ is the contraction of a prime of $B$, and by the going-up theorem a chain of primes $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of $A$ together with a prime $\mathfrak q_1$ of $B$ satisfying $\mathfrak q_1\intersect A=\mfp_1$ extends to a chain $\mathfrak q_1\subseteq\cdots\subseteq\mathfrak q_n$ of primes of $B$ with $\mathfrak q_i\intersect A=\mfp_i$.
 
-[[FF-IBDAT]]
+[[PR-RJ3P7]]
 
 ## Localization
 

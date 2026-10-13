@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the full theorem statement, stabilizer formula, divisibility by the prime-to-p factor, uniqueness of the fixed Sylow subgroup, and the normality criterion."
 ---
-
 ::: {.problem}
 State the Sylow Theorems.
 Include information about the existence, order, and number $n_p$ of Sylow $p$-subgroups of a finite group, and mention additional divisibility and congruence properties of $n_p$.
@@ -37,6 +36,8 @@ $|G|=p^a m$ with $a\geq0$ and $p\nmid m$.
 
 ::: {.pf-step #s1}
 
+Existence, containment, and conjugacy.
+
 A Sylow $p$-subgroup is a subgroup of order $p^a$.
 Such subgroups exist. Every subgroup of $G$ whose order
 is a power of $p$ is contained in a Sylow $p$-subgroup.
@@ -45,7 +46,7 @@ of $G$ [@DF04, sec. 4.5].
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The number $n_p$ of Sylow $p$-subgroups satisfies
 $$
@@ -80,7 +81,7 @@ counting orbits gives $n_p\equiv1\pmod p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 A Sylow $p$-subgroup $P$ is normal exactly when $n_p=1$.
 
@@ -90,9 +91,17 @@ If $P$ is normal, its conjugacy orbit has one member;
 conjugacy in step [](#s1){.pf-ref} then implies that it is the only
 Sylow subgroup. Conversely, if it is unique, each conjugate
 has the same order and must equal $P$, which is normality.
-For $a=0$, the unique Sylow $p$-subgroup is the trivial group.
+For $a=0$, the unique Sylow subgroup is the trivial group,
+so all statements above also cover primes not dividing $|G|$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} state the Sylow theorems and the requested properties
+of the number $n_p$ of Sylow $p$-subgroups.
 
 :::
 

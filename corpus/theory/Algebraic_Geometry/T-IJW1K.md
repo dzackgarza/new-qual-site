@@ -34,13 +34,13 @@ Then
 
 - $H^p(\PP^n, \OO(d)) = 0$ for $0 < p < n$ and for $p > n$, for every $d$.
 
-[@Har10a, Theorem III.5.1] The [projective-space cohomology calculation](https://stacks.math.columbia.edu/tag/01XS) gives these formulas over every ring $A$.
+[@Har10a, Theorem III.5.1] The same Čech computation on the standard affine cover gives these formulas over an arbitrary ring $A$.
 :::
 
 ::: {.remark title="Projective dimension zero"}
 For $n=0$, the scheme $\PP_A^0$ is $\Spec A$, and every $\OO(d)$ is trivial.
 Thus $H^0(\PP_A^0,\OO(d))\cong A$ for every integer $d$, and all positive-degree cohomology groups vanish.
-The negative-degree sections are represented on its single standard chart by $Ax_0^d$, as in [[P-AGH2510SATIDEAL]], step 4.1.
+The negative-degree sections are represented on its single standard chart by $Ax_0^d$, as computed in [[P-AGH2510SATIDEAL]].
 :::
 
 ::: {.remark title="Consequences over a field"}

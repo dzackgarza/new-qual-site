@@ -19,3 +19,66 @@ audit:
 Let L be a finite Galois extension of F . Let $H _ { 1 }$ and $H _ { 2 }$ be subgroups of $G =$ $\operatorname { G a l } ( L / F )$ and consider their fixed fields $E _ { 1 } = L ^ { H _ { 1 } }$ and $E _ { 2 } = L ^ { H _ { 2 } }$ respectively.
 Prove that $\operatorname { G a l } ( L / E _ { 1 } E _ { 2 } )$ equals $H _ { 1 } \cap H _ { 2 }$
 :::
+
+::: {.solution}
+<1>1. An element
+$$
+\sigma\in G=\operatorname{Gal}(L/F)
+$$
+belongs to
+$$
+\operatorname{Gal}(L/E_1E_2)
+$$
+if and only if it fixes both $E_1$ and $E_2$ pointwise.
+
+::: {.proof}
+If $\sigma$ fixes the compositum $E_1E_2$ pointwise, then it certainly fixes the subfields
+$$
+E_1\subseteq E_1E_2
+$$
+and
+$$
+E_2\subseteq E_1E_2.
+$$
+
+Conversely, suppose $\sigma$ fixes $E_1$ and $E_2$ pointwise. The compositum $E_1E_2$ is the smallest subfield of $L$ containing both fields. Every element of it is obtained from elements of $E_1\cup E_2$ by the field operations. Since $\sigma$ fixes all generators and respects the field operations, it fixes every element of $E_1E_2$.
+:::
+
+<1>2. For $i=1,2$,
+$$
+\operatorname{Gal}(L/E_i)=H_i.
+$$
+
+::: {.proof}
+By definition
+$$
+E_i=L^{H_i}.
+$$
+The fundamental theorem of Galois theory for the finite Galois extension $L/F$ states that the subgroup fixing the fixed field $L^{H_i}$ pointwise is exactly $H_i$.
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\operatorname{Gal}(L/E_1E_2)=H_1\cap H_2.
+}
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\operatorname{Gal}(L/E_1E_2)
+=
+\operatorname{Gal}(L/E_1)
+\cap
+\operatorname{Gal}(L/E_2).
+$$
+Substitute the identities from step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is exactly the required equality.
+:::
+:::

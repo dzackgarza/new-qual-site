@@ -29,3 +29,60 @@ Find the minimum distance from the origin to the curve $3x^2+4xy+3y^2=20$.
 ::: {.remark}
 The source prints choices (D) and (E) as the digits $2,3$ and $5,3$ followed by $\sqrt{2}$, with no fraction bar.
 :::
+
+::: {.solution}
+<1>1. Every point on the curve satisfies
+$$
+x^2+y^2\ge4.
+$$
+
+::: {.proof}
+For all real $x,y$,
+$$
+5(x^2+y^2)-(3x^2+4xy+3y^2)
+=2(x-y)^2
+\ge0.
+$$
+Hence
+$$
+3x^2+4xy+3y^2\le5(x^2+y^2).
+$$
+On the given curve the left-hand side is $20$, so
+$$
+20\le5(x^2+y^2),
+$$
+which gives $x^2+y^2\ge4$.
+:::
+
+<1>2. The lower bound in step <1>1 is attained on the curve.
+
+::: {.proof}
+Equality in step <1>1 occurs when $x=y$. Substituting $y=x$ into the curve equation gives
+$$
+3x^2+4x^2+3x^2=10x^2=20,
+$$
+so $x^2=2$. Thus the points
+$$
+(\sqrt2,\sqrt2)
+\qquad\text{and}\qquad
+(-\sqrt2,-\sqrt2)
+$$
+lie on the curve and satisfy $x^2+y^2=4$.
+:::
+
+<1>3. The minimum distance from the origin to the curve is
+$$
+\boxed{2},
+$$
+so the answer is (C).
+
+::: {.proof}
+The distance from the origin to $(x,y)$ is $\sqrt{x^2+y^2}$. Step <1>1 gives the lower bound $2$, and step <1>2 exhibits points on the curve where this bound is attained.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested minimum distance and corresponding choice.
+:::
+:::

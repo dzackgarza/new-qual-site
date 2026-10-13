@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Conjugated an arbitrary inner automorphism by an arbitrary automorphism and obtained c_{phi(g)}."
 ---
-
 ::: {.problem}
 Prove or disprove that $\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G)$.
 :::
@@ -61,7 +60,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Therefore $\operatorname{Inn}(G)$ is normal in $\operatorname{Aut}(G)$.
 
@@ -79,6 +78,12 @@ $$
 $$
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} is the required conclusion.
 
 :::
 

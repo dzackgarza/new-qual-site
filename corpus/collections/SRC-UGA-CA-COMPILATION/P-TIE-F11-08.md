@@ -25,3 +25,53 @@ $$
 
 is a polynomial of degree n, then it has n zeros in $\mathbb { C } .$
 :::
+
+::: {.solution}
+Write
+$$
+P_n(z)=a_nz^n+Q(z),
+\qquad
+Q(z)=\sum_{j=0}^{n-1}a_jz^j.
+$$
+
+<1>1. There exists $R>0$ such that on the circle $\abs{z}=R$,
+$$
+\abs{Q(z)}<\abs{a_nz^n}.
+$$
+
+::: {.proof}
+For $R>0$ and $\abs{z}=R$,
+$$
+\frac{\abs{Q(z)}}{\abs{a_nz^n}}
+\le
+\sum_{j=0}^{n-1}\frac{\abs{a_j}}{\abs{a_n}}R^{j-n}.
+$$
+Each exponent $j-n$ is negative, so the finite sum on the right tends to $0$ as $R\to\infty$. Hence $R$ can be chosen so large that this sum is strictly less than $1$, which gives the desired inequality.
+:::
+
+<1>2. The polynomials $P_n(z)$ and $a_nz^n$ have the same number of zeros in $\abs{z}<R$, counted with multiplicity.
+
+::: {.proof}
+On $\abs{z}=R$, step <1>1 gives
+$$
+\abs{P_n(z)-a_nz^n}
+=
+\abs{Q(z)}
+<
+\abs{a_nz^n}.
+$$
+Rouché's theorem therefore implies that $P_n$ and $a_nz^n$ have the same number of zeros inside the circle, counted with multiplicity.
+:::
+
+<1>3. The polynomial $P_n$ has exactly $n$ zeros in $\CC$, counted with multiplicity.
+
+::: {.proof}
+The polynomial $a_nz^n$ has exactly one zero, namely $0$, of multiplicity $n$. By step <1>2, $P_n$ therefore has exactly $n$ zeros in the disk $\abs{z}<R$, counted with multiplicity. In particular, these are $n$ complex zeros of $P_n$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the Fundamental Theorem of Algebra for the given polynomial.
+:::
+:::

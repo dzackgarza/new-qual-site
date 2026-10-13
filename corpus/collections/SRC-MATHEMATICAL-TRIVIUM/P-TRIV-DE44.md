@@ -24,3 +24,87 @@ $$
 
 find $u ( x , y , t )$ knowing that it satisfies the wave equation with a velocity v.
 :::
+
+::: {.solution}
+The wave equation is
+\[
+u_{tt}=v^2(u_{xx}+u_{yy})
+\]
+on $0<x<a$, $0<y<b$, with $u=0$ on the boundary. To determine a unique evolution from the stated initial displacement, take the customary unstated initial condition $u_t(x,y,0)=0$.
+
+<1>1. The initial profile is already a single Dirichlet eigenmode of the spatial Laplacian:
+\[
+\phi(x,y)=\sin\frac{2\pi x}{a}\sin\frac{3\pi y}{b}.
+\]
+
+::: {.proof}
+The sine factors vanish at $x=0,a$ and $y=0,b$. Moreover,
+\[
+\phi_{xx}+\phi_{yy}
+=-\left[\left(\frac{2\pi}{a}\right)^2
++\left(\frac{3\pi}{b}\right)^2\right]\phi.
+\]
+:::
+
+<1>2. A solution retaining this spatial mode has the form
+\[
+u(x,y,t)=T(t)\phi(x,y),
+\]
+where
+\[
+T''+\omega^2T=0,
+\qquad
+\omega=v\pi\sqrt{\frac4{a^2}+\frac9{b^2}}.
+\]
+
+::: {.proof}
+Substitute $T\phi$ into the wave equation and use step <1>1. Division by the nonzero spatial mode gives
+\[
+T''=-v^2\pi^2\left(\frac4{a^2}+\frac9{b^2}\right)T.
+\]
+:::
+
+<1>3. The initial conditions give
+\[
+T(0)=1,
+\qquad
+T'(0)=0,
+\]
+so
+\[
+T(t)=\cos(\omega t).
+\]
+
+::: {.proof}
+The general solution of step <1>2 is $T=A\cos(\omega t)+B\sin(\omega t)$. The prescribed initial displacement gives $A=1$, and zero initial velocity gives $B=0$.
+:::
+
+<1>4. Therefore
+\[
+\boxed{
+u(x,y,t)=
+\sin\frac{2\pi x}{a}
+\sin\frac{3\pi y}{b}
+\cos\left(v\pi t\sqrt{\frac4{a^2}+\frac9{b^2}}\right)}.
+\]
+
+::: {.proof}
+Combine steps <1>1--<1>3. The result satisfies the fixed-edge conditions, the wave equation, the stated initial profile, and zero initial velocity.
+:::
+
+<1>5. Without an initial-velocity condition, the problem is underdetermined.
+
+::: {.proof}
+For any constant $B$, adding
+\[
+B\sin(\omega t)\phi(x,y)
+\]
+preserves the PDE, boundary conditions, and initial displacement while changing $u_t(x,y,0)$ by $B\omega\phi(x,y)$. Thus the displayed solution is the unique one only after imposing $u_t(x,y,0)=0$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the standard zero-initial-velocity solution, and step <1>5 records the missing datum in the source statement.
+:::
+:::

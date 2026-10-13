@@ -27,3 +27,205 @@ Tx_{k+1},Tx_{k+2},\ldots,Tx_n
 \]
 is a basis for $\operatorname{range}T$.
 :::
+
+::: {.solution}
+<1>1. The vectors
+\[
+Tx_{k+1},\dots,Tx_n
+\]
+span
+\[
+\operatorname{range}T.
+\]
+
+::: {.proof}
+Let
+\[
+y\in\operatorname{range}T.
+\]
+Then there exists
+\[
+v\in V
+\]
+such that
+\[
+y=T(v).
+\]
+
+Since
+\[
+x_1,dots,x_n
+\]
+is a basis of $V$, write
+\[
+v
+=
+a_1x_1+cdots+a_nx_n.
+\]
+By linearity,
+\[
+\begin{aligned}
+y
+&=
+T(v)\\
+&=
+a_1Tx_1+cdots+a_nTx_n.
+\end{aligned}
+\]
+
+For
+\[
+1\le i\le k,
+\]
+one has
+\[
+x_i\in\ker T,
+\]
+so
+\[
+Tx_i=0.
+\]
+Therefore
+\[
+y
+=
+a_{k+1}Tx_{k+1}
++\cdots+
+a_nTx_n.
+\]
+Thus the displayed vectors span the range.
+:::
+
+<1>2. Suppose
+\[
+a_{k+1}Tx_{k+1}
++\cdots+
+a_nTx_n
+=
+0.
+\]
+Then
+\[
+a_{k+1}x_{k+1}
++\cdots+
+a_nx_n
+\in
+\ker T.
+\]
+
+::: {.proof}
+By linearity,
+\[
+T
+\left(
+a_{k+1}x_{k+1}
++\cdots+
+a_nx_n
+\right)
+=
+0.
+\]
+This is exactly the condition for the vector in parentheses to lie in the
+kernel.
+:::
+
+<1>3. Since
+\[
+x_1,dots,x_k
+\]
+is a basis of
+\[
+\ker T,
+\]
+there exist scalars
+\[
+b_1,dots,b_k
+\]
+such that
+\[
+a_{k+1}x_{k+1}
++\cdots+
+a_nx_n
+=
+b_1x_1+cdots+b_kx_k.
+\]
+
+::: {.proof}
+Step <1>2 places the left-hand side in
+\[
+\ker T.
+\]
+Every vector in the kernel is a linear combination of its basis
+\[
+x_1,dots,x_k.
+\]
+:::
+
+<1>4. Therefore
+\[
+b_1x_1+cdots+b_kx_k
+-
+a_{k+1}x_{k+1}
+-\cdots-
+a_nx_n
+=
+0.
+\]
+
+::: {.proof}
+Move all terms in step <1>3 to one side.
+:::
+
+<1>5. Because
+\[
+x_1,dots,x_n
+\]
+is a basis of $V$, every coefficient in step <1>4 is zero.
+In particular,
+\[
+a_{k+1}
+=
+\cdots
+=
+a_n
+=
+0.
+\]
+
+::: {.proof}
+A basis is linearly independent.
+Thus the only linear relation among the basis vectors is the trivial one.
+:::
+
+<1>6. Hence
+\[
+Tx_{k+1},\dots,Tx_n
+\]
+are linearly independent.
+
+::: {.proof}
+Step <1>5 shows that every linear relation among them has only zero
+coefficients.
+:::
+
+<1>7. Combining spanning and independence,
+\[
+\boxed{
+Tx_{k+1},Tx_{k+2},\ldots,Tx_n
+}
+\]
+is a basis of
+\[
+\operatorname{range}T.
+\]
+
+::: {.proof}
+Step <1>1 gives spanning and step <1>6 gives linear independence.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the desired conclusion.
+:::
+:::

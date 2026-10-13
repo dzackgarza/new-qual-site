@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the equivalence of the solvability criteria, every normal-series factor for S4, the faithful root action for reducible as well as irreducible quartics, and a radical tower containing all roots of the quintic."
 ---
-
 ::: {.problem}
 (a) Given a group $G$, state the criteria that make $G$ a solvable group.
 Use your definition to prove that $S_4$ is solvable.
@@ -121,7 +120,7 @@ Applying it proves the claim and disproves the proposed negation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The assertion in part (c) is also false. An irreducible
 counterexample is $g(x)=x^5-2$.
@@ -139,9 +138,16 @@ lie in a radical extension of $\mathbb Q$. Choose a radical
 tower ending in a field $M$ containing them. Adjoining $a$ is
 one further radical adjunction, since $a^5=2\in M$.
 The resulting field $M(a)$ contains all five displayed roots of
-$g$. Thus $g$ is solvable by radicals.
+$g$. Thus $g$ is solvable by radicals. Degree five alone does
+not imply the nonsolvability claimed in part (c).
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the solvability criteria, step [](#s2){.pf-ref} proves that $S_4$ is solvable, step [](#s3){.pf-ref} answers part (b), and step [](#s4){.pf-ref} answers part (c).
 
 :::
 

@@ -23,41 +23,37 @@ Moreover, when the characteristic of $k$ is 2, find a counterexample to this sta
 :::
 
 ::: {.solution}
-Assume first that $\operatorname{char}k=0$. Suppose for contradiction that
-$A$ is invertible. From
-\[
-AB-BA=A
-\]
-and right multiplication by $A^{-1}$ we obtain
-\[
-ABA^{-1}-B=I_n.
-\]
-Taking traces and using invariance of trace under conjugation gives
-\[
-0=\operatorname{tr}(ABA^{-1})-\operatorname{tr}(B)
-=\operatorname{tr}(I_n)=n.
-\]
-This is impossible in characteristic zero. Hence $A$ is not invertible, so
+<1>1. In characteristic zero, $AB-BA=A$ forces
 \[
 \boxed{\det A=0}.
 \]
 
-In characteristic $2$, take
+::: {.proof}
+Suppose $A$ were invertible. Right multiplication of $AB-BA=A$ by $A^{-1}$ gives $ABA^{-1}-B=I_n$. Taking traces yields
 \[
-A=\begin{pmatrix}0&1\\1&0\end{pmatrix},
-\qquad
-B=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
+0=\operatorname{tr}(ABA^{-1})-\operatorname{tr}(B)=\operatorname{tr}(I_n)=n,
 \]
-Since $A^{-1}=A$,
+where the first equality uses invariance of trace under conjugation. Because $n>0$ and $\operatorname{char}k=0$, this is impossible. Hence $A$ is singular.
+:::
+
+<1>2. In characteristic two, there are invertible matrices satisfying $AB-BA=A$; one example is
 \[
-ABA^{-1}
-=\begin{pmatrix}1&0\\0&0\end{pmatrix}
-=B+I_2
+\boxed{A=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+B=\begin{pmatrix}0&0\\0&1\end{pmatrix}}.
 \]
-in characteristic $2$. Therefore
-$ABA^{-1}-B=I_2$, equivalently $AB-BA=A$. But
+
+::: {.proof}
+Here $A^2=I_2$, so $A$ is invertible. Direct multiplication gives
 \[
-\det A=-1=1\ne0
+AB=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\qquad BA=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
 \]
-in characteristic $2$. Thus this pair is the required counterexample.
+In characteristic two, subtraction equals addition, so $AB-BA=A$. Nevertheless $\det A=-1=1\neq0$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves the characteristic-zero assertion, and step <1>2 supplies the required characteristic-two counterexample.
+:::
 :::

@@ -27,9 +27,169 @@ A=\begin{pmatrix}2&1\\1&1\end{pmatrix},
 
 (d) find an orthogonal matrix $S$ and diagonal matrix $B$ with $B=S^{-1}AS$;
 
-(e) choose which picture A--D is the image of the Garfield figure under $T$.
+(e) choose which source picture A--D is the image of the displayed upright
+Garfield figure under $T$. In the source, candidate A is flattened
+horizontally, candidate B is strongly elongated along a line of positive
+slope, candidate C is elongated along the opposite diagonal direction, and
+candidate D has a broader opposite shear.
 :::
 
-::: {.remark}
-Part (e) refers to a Garfield figure and four candidate images A--D that are printed in the source exam.
+::: {.solution}
+Set
+\[
+\lambda_\pm=\frac{3\pm\sqrt5}{2},
+\qquad
+\alpha=\frac{\sqrt5-1}{2},
+\qquad
+\beta=\frac{\sqrt5+1}{2}.
+\]
+
+<1>1. The characteristic polynomial is
+\[
+\chi_A(\lambda)=\lambda^2-3\lambda+1.
+\]
+
+::: {.proof}
+One has
+\[
+\det(\lambda I-A)
+=
+\det
+\begin{pmatrix}
+\lambda-2&-1\\
+-1&\lambda-1
+\end{pmatrix}
+=(\lambda-2)(\lambda-1)-1
+=\lambda^2-3\lambda+1.
+\]
+:::
+
+<1>2. The eigenvalues are $\lambda_+$ and $\lambda_-$, with respective
+eigenvectors
+\[
+u_+=\begin{pmatrix}1\\\alpha\end{pmatrix},
+\qquad
+u_-=\begin{pmatrix}-1\\\beta\end{pmatrix}.
+\]
+
+::: {.proof}
+Solving the quadratic in step <1>1 gives
+$\lambda_\pm=(3\pm\sqrt5)/2$. Directly,
+\[
+Au_+
+=
+\begin{pmatrix}2+\alpha\\1+\alpha\end{pmatrix}
+=\lambda_+
+\begin{pmatrix}1\\\alpha\end{pmatrix},
+\]
+because $2+\alpha=\lambda_+$ and $1+\alpha=\lambda_+\alpha$. Likewise,
+\[
+Au_-
+=
+\begin{pmatrix}-2+\beta\\-1+\beta\end{pmatrix}
+=\lambda_-
+\begin{pmatrix}-1\\\beta\end{pmatrix}.
+\]
+Thus the displayed vectors are eigenvectors for the stated eigenvalues.
+:::
+
+<1>3. The discrete system $x(t+1)=Ax(t)$ is not asymptotically stable.
+
+::: {.proof}
+Since
+\[
+\lambda_+=\frac{3+\sqrt5}{2}>1,
+\]
+the trajectory starting at $u_+$ is
+\[
+x(t)=A^tu_+=\lambda_+^t u_+,
+\]
+which does not tend to $0$. Hence the origin is not asymptotically
+stable.
+:::
+
+<1>4. The eigenvectors $u_+$ and $u_-$ are orthogonal.
+
+::: {.proof}
+Their dot product is
+\[
+u_+\cdot u_-
+=-1+\alpha\beta
+=-1+\frac{(\sqrt5-1)(\sqrt5+1)}4
+=0.
+\]
+:::
+
+<1>5. Define
+\[
+n_+=\sqrt{\frac{5-\sqrt5}{2}},
+\qquad
+n_-=\sqrt{\frac{5+\sqrt5}{2}},
+\]
+and
+\[
+S=
+\begin{pmatrix}
+1/n_+&-1/n_-\\
+\alpha/n_+&\beta/n_-
+\end{pmatrix},
+\qquad
+B=
+\begin{pmatrix}
+\lambda_+&0\\
+0&\lambda_-
+\end{pmatrix}.
+\]
+Then $S$ is orthogonal and $B=S^{-1}AS$.
+
+::: {.proof}
+One computes
+\[
+\|u_+\|^2=1+\alpha^2=\frac{5-\sqrt5}{2}=n_+^2,
+\qquad
+\|u_-\|^2=1+\beta^2=\frac{5+\sqrt5}{2}=n_-^2.
+\]
+By step <1>4, the columns of $S$ form an orthonormal basis, so
+$S^{-1}=S^T$. Step <1>2 says that these columns are eigenvectors with
+eigenvalues $\lambda_+,\lambda_-$, hence
+\[
+AS=SB.
+\]
+Multiplying on the left by $S^{-1}$ gives $S^{-1}AS=B$.
+:::
+
+<1>6. In part (e), the transformed picture is candidate B.
+
+::: {.proof}
+The eigendirection $u_+=(1,\alpha)^T$ has positive slope
+$\alpha>0$ and is expanded by the factor $\lambda_+>1$. The perpendicular
+eigendirection $u_-$ is contracted by
+$0<\lambda_-<1$. Therefore the image of a generic figure is strongly
+elongated along the positive-slope direction $u_+$. Among the source
+candidates, this is precisely picture B.
+:::
+
+<1>7. The requested answers are
+\[
+\boxed{
+\begin{gathered}
+\chi_A(\lambda)=\lambda^2-3\lambda+1,\qquad
+\lambda_\pm=\frac{3\pm\sqrt5}{2},\\
+u_+=(1,\alpha)^T,\quad u_-=(-1,\beta)^T,\qquad
+\text{the system is not asymptotically stable},\\
+B=S^{-1}AS\text{ for the }S,B\text{ of step <1>5},\qquad
+\text{picture B in part (e).}
+\end{gathered}}
+\]
+
+::: {.proof}
+Steps <1>1--<1>6 establish parts (a)--(e), respectively, with step <1>5
+providing the requested orthogonal diagonalization.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 records all requested outputs.
+:::
 :::

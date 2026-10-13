@@ -156,7 +156,7 @@ A space with a point at which these local homology groups differ from those of e
 
 ::: {.proof title="Odd-dimensional closed manifolds"}
 Let $M$ be a closed $n$-manifold and work with $\FF_2$ coefficients, for which Poincaré duality holds without an orientability hypothesis: $H^k(M;\FF_2)\cong H_{n-k}(M;\FF_2)$.
-Since $H^k(M;\FF_2)\cong\Hom(H_k(M;\FF_2),\FF_2)$, the Betti numbers $b_k\coloneqq\dim_{\FF_2} H_k(M;\FF_2)$ satisfy $b_k=b_{n-k}$, and $\chi(M)=\sum_k(-1)^kb_k$ for any field of coefficients.
+Since $H^k(M;\FF_2)\cong\Hom_{\FF_2}(H_k(M;\FF_2),\FF_2)$, the Betti numbers $b_k\coloneqq\dim_{\FF_2} H_k(M;\FF_2)$ satisfy $b_k=b_{n-k}$, and $\chi(M)=\sum_k(-1)^kb_k$ for any field of coefficients.
 Then
 $$
 \chi(M)

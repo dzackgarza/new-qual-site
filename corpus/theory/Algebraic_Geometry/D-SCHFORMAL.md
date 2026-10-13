@@ -34,7 +34,17 @@ For $X = \Spec A$ and $Z = V(I)$, $\hat{X} = \operatorname{Spf} \hat{A}$ with $\
 :::
 
 ::: {.example title="The formal disc"}
-$\Spec k[[t]]$ has two points: the closed point $(t)$ and the generic point $(0)$, whose residue field is $k((t))$.
-It plays the role of a small disc $\mathbb{D}$ around $0$ in the $t$-line, and its open subscheme $\Spec k((t))$, the generic point, plays the role of the punctured disc $\mathbb{D} \setminus \{0\}$.
-The formal completion of $\AA^1_k$ at the origin is $\operatorname{Spf} k[[t]]$, whose underlying space is the single point $0$ and which remembers every infinitesimal neighbourhood $\Spec k[t]/(t^n)$.
+The formal completion of $\AA^1_k$ at the origin is
+$$
+\widehat{\AA^1_{k,0}}
+=
+\operatorname{Spf} k[[t]],
+$$
+the \dfn{formal disc}.
+Its underlying topological space is the single closed point $(t)$, and its structure sheaf remembers the compatible system of infinitesimal neighbourhoods
+$\Spec k[t]/(t^n)$.
+
+The ordinary scheme $\Spec k[[t]]$ is different: it has the closed point $(t)$ and the generic point $(0)$, with open generic subscheme $\Spec k((t))$.
+Thus $\Spec k((t))$ is the punctured spectrum of $k[[t]]$, not an open formal subscheme of $\operatorname{Spf}k[[t]]$.
+In the category of formal schemes used here, deleting the unique point of the formal disc gives the empty open; a “punctured formal disc” requires an additional generic-fibre or adic framework.
 :::

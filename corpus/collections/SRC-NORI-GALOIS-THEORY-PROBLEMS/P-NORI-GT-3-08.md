@@ -33,3 +33,103 @@ Deduce the equality $\Phi_n(X) = \Phi_{n'}(X)^{\varphi(p^k)}$ in $\mathbb{F}_p[X
 ::: {.remark}
 Here $\mu_{n'}(F) = \{x \in F : x^{n'} = 1\}$, as in the notation paragraph of the source.
 :::
+
+::: {.solution}
+Let
+$$
+\overline{\FF}_p
+$$
+be an algebraic closure of $\FF_p$.
+
+<1>1. The group
+$$
+\mu_{n'}(\overline{\FF}_p)
+$$
+has exactly $n'$ elements.
+
+::: {.proof}
+Since $p\nmid n'$, the derivative of
+$$
+X^{n'}-1
+$$
+is
+$$
+n'X^{n'-1},
+$$
+which has no common root with $X^{n'}-1$ in characteristic $p$. Thus $X^{n'}-1$ is separable. It splits in the algebraic closure and has degree $n'$, so it has exactly $n'$ distinct roots there.
+:::
+
+<1>2. By Problem 3.7, the roots of the reduction of $\Phi_n(X)$ in $\overline{\FF}_p$ are precisely the primitive $n'$-th roots of unity, and each occurs with multiplicity
+$$
+\varphi(p^k).
+$$
+
+::: {.proof}
+The field $\overline{\FF}_p$ has characteristic $p$, and step <1>1 verifies the hypothesis
+$$
+|\mu_{n'}(\overline{\FF}_p)|=n'.
+$$
+Problem 3.7 therefore applies directly to
+$$
+n=n'p^k.
+$$
+:::
+
+<1>3. The roots of the reduction of $\Phi_{n'}(X)$ in $\overline{\FF}_p$ are precisely the primitive $n'$-th roots of unity, each with multiplicity $1$.
+
+::: {.proof}
+Apply Problem 3.7 to
+$$
+n=n'p^0=n'.
+$$
+Since
+$$
+\varphi(p^0)=\varphi(1)=1,
+$$
+the stated roots occur with multiplicity one.
+:::
+
+<1>4. Hence the two polynomials
+$$
+\Phi_n(X)
+$$
+and
+$$
+\Phi_{n'}(X)^{\varphi(p^k)}
+$$
+viewed in $\FF_p[X]$ have the same roots with the same multiplicities in $\overline{\FF}_p$.
+
+::: {.proof}
+By step <1>2, every primitive $n'$-th root occurs in $\Phi_n$ with multiplicity $\varphi(p^k)$. By step <1>3, every such root occurs once in $\Phi_{n'}$, hence with multiplicity $\varphi(p^k)$ in its indicated power. Neither polynomial has any other root.
+:::
+
+<1>5. Both polynomials in step <1>4 are monic.
+
+::: {.proof}
+Every cyclotomic polynomial is monic over $\ZZ$, so its reduction modulo $p$ is monic. A positive integral power of a monic polynomial is monic.
+:::
+
+<1>6. Therefore
+$$
+\boxed{
+\Phi_{n'p^k}(X)
+=
+\Phi_{n'}(X)^{\varphi(p^k)}
+\quad\text{in }\FF_p[X].
+}
+$$
+
+::: {.proof}
+Over the algebraically closed field $\overline{\FF}_p$, a monic polynomial is uniquely determined by its roots counted with multiplicity. Steps <1>4--<1>5 therefore give equality after extending scalars to $\overline{\FF}_p$. The natural map
+$$
+\FF_p[X]\hookrightarrow\overline{\FF}_p[X]
+$$
+is injective, so the equality already holds in $\FF_p[X]$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is exactly the required deduction from Problem 3.7.
+:::
+:::

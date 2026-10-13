@@ -25,3 +25,96 @@ Let $P=(1,-1,1)$ and $Q=(-3,3,3)$. Find the point $R$ on the line containing $P$
 (D) $\left(-\frac{15}{2},\frac{15}{2},\frac{11}{2}\right)$
 (E) $(-9,9,6)$
 :::
+
+::: {.solution}
+<1>1. Parametrize the line through $P$ and $Q$ by
+$$
+R(t)=P+t(Q-P)
+=(1,-1,1)+t(-4,4,2).
+$$
+
+::: {.proof}
+The direction vector is
+$$
+Q-P=(-3,3,3)-(1,-1,1)=(-4,4,2),
+$$
+which gives the displayed parametrization. Here $t=0$ gives $P$ and $t=1$ gives $Q$.
+:::
+
+<1>2. The distance condition is equivalent to
+$$
+\abs{t}=3\abs{t-1}.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+R(t)-P=t(Q-P),
+$$
+so
+$$
+\operatorname{dist}(R(t),P)=\abs{t}\norm{Q-P}.
+$$
+Also
+$$
+R(t)-Q=(t-1)(Q-P),
+$$
+so
+$$
+\operatorname{dist}(R(t),Q)=\abs{t-1}\norm{Q-P}.
+$$
+Since $P\ne Q$, the common factor $\norm{Q-P}$ is nonzero and cancels from the required relation
+$\operatorname{dist}(R,P)=3\operatorname{dist}(R,Q)$.
+:::
+
+<1>3. The solutions of the distance equation are
+$$
+t=\frac34
+\qquad\text{and}\qquad
+t=\frac32.
+$$
+
+::: {.proof}
+Squaring the equation in step <1>2 gives
+$$
+t^2=9(t-1)^2,
+$$
+equivalently
+$$
+t=3(t-1)
+\quad\text{or}\quad
+t=-3(t-1).
+$$
+These equations yield $t=3/2$ and $t=3/4$, respectively.
+:::
+
+<1>4. The condition that $R$ is not between $P$ and $Q$ forces
+$$
+t=\frac32.
+$$
+
+::: {.proof}
+Points strictly between $P$ and $Q$ in the parametrization of step <1>1 are exactly those with $0<t<1$. Thus $t=3/4$ is excluded, while $t=3/2>1$ is admissible.
+:::
+
+<1>5. Therefore
+$$
+\boxed{R=(-5,5,4)},
+$$
+so the answer is (B).
+
+::: {.proof}
+Substituting $t=3/2$ from step <1>4 into step <1>1 gives
+$$
+R
+=(1,-1,1)+\frac32(-4,4,2)
+=(-5,5,4).
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the requested point and corresponding choice.
+:::
+:::

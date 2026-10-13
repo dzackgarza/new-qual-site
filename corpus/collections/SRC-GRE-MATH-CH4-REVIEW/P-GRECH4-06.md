@@ -31,3 +31,70 @@ that passes through the point $(1, 1)$ must also pass through which of the follo
 (D) $(-1, -1)$
 (E) $(0, 1)$
 :::
+
+::: {.solution}
+Let $G$ be an antiderivative of $g$.
+
+<1>1. The differential equation is exact, with potential
+$$
+F(x,y)=xy+G(x)-G(y).
+$$
+
+::: {.proof}
+Set
+$$
+M(x,y)=y+g(x),
+\qquad
+N(x,y)=x-g(y).
+$$
+Then
+$$
+M_y=1=N_x,
+$$
+so the form is exact. Moreover,
+$$
+F_x=y+G'(x)=y+g(x)=M
+$$
+and
+$$
+F_y=x-G'(y)=x-g(y)=N.
+$$
+Thus $dF=M\,dx+N\,dy$.
+:::
+
+<1>2. The integral curve through $(1,1)$ is contained in the level set
+$$
+F(x,y)=1.
+$$
+
+::: {.proof}
+Along an integral curve, the differential equation gives $dF=0$ by step <1>1, so $F$ is constant. At the specified point,
+$$
+F(1,1)
+=1\cdot1+G(1)-G(1)
+=1.
+$$
+:::
+
+<1>3. The point that must also lie on this level set is
+$$
+\boxed{(-1,-1)},
+$$
+so the answer is (D).
+
+::: {.proof}
+By the definition of $F$,
+$$
+F(-1,-1)
+=(-1)(-1)+G(-1)-G(-1)
+=1.
+$$
+Thus step <1>2 shows that $(-1,-1)$ lies on the same integral curve level set, independently of the particular function $g$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required point and corresponding choice.
+:::
+:::

@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: PR-TORSMAFF
 kind: proposition
-title: Smooth affine toric varieties and why toric varieties are normal
-slogan: 'Smooth cones give affine space times a torus, simplicial cones give finite quotient singularities, and saturated semigroups make toric varieties normal.'
+title: Smooth affine toric varieties and normality
+slogan: 'Smooth cones give affine space times a torus, simplicial cones are finite diagonalizable quotients, and saturated semigroups make toric varieties normal.'
 classification:
   areas:
   - algebraic-geometry
@@ -23,22 +23,40 @@ prompts:
 
 ::: {.proposition title="Classification"}
 If $\sigma$ is a smooth cone of dimension $k$ inside $N \cong \ZZ^n$, then
-\[
+$$
 U_\sigma \cong \AA^k \times \GG_m^{n-k} .
-\]
+$$
 Every smooth affine toric variety is of this form.
 :::
 
 ::: {.proof}
-Extend the minimal generators of $\sigma$ to a $\ZZ$-basis of $N$, which is possible exactly because $\sigma$ is smooth.
-In the dual basis $\dualof{\sigma}$ is the cone spanned by $e_1, \ldots, e_k$ and $\pm e_{k+1}, \ldots, \pm e_n$, so
-\[
-S_\sigma = \NN^k \oplus \ZZ^{n-k}, \qquad k[S_\sigma] = k[x_1, \ldots, x_k, x_{k+1}^{\pm 1}, \ldots, x_n^{\pm 1}] .
-\]
+Let $v_1,\ldots,v_k$ be the primitive ray generators of $\sigma$. Since $\sigma$ is smooth, they extend to a $\ZZ$-basis $v_1,\ldots,v_n$ of $N$.
+For the dual basis $m_1,\ldots,m_n$ of $M$,
+$$
+S_\sigma=\sigma^\vee\cap M
+=\NN m_1\oplus\cdots\oplus\NN m_k
+\oplus\ZZ m_{k+1}\oplus\cdots\oplus\ZZ m_n.
+$$
+Hence
+$$
+k[S_\sigma]\cong k[x_1,\ldots,x_k,x_{k+1}^{\pm1},\ldots,x_n^{\pm1}].
+$$
 :::
 
 ::: {.proposition title="Simplicial cones"}
-If $\sigma$ is simplicial of dimension $k$ inside $N \cong \ZZ^n$, then $U_\sigma$ is the quotient of $\AA^k \times \GG_m^{n-k}$ by a finite abelian group, so a toric variety whose fan is simplicial has at worst finite quotient singularities.
+Let $\sigma$ be simplicial of dimension $k$ in a lattice $N\cong\ZZ^n$, with primitive ray generators $v_1,\ldots,v_k$. Choose $v_{k+1},\ldots,v_n\in N$ so that
+$$
+N'\coloneqq\ZZ v_1+\cdots+\ZZ v_n\subseteq N
+$$
+has finite index, and put $M'\coloneqq\Hom(N',\ZZ)$. The same cone in the lattice $N'$ is smooth, so its affine toric variety is $\AA^k\times\GG_m^{n-k}$. The finite diagonalizable group
+$$
+G\coloneqq\Hom(M'/M,\GG_m)
+$$
+acts on this smooth affine toric variety, and
+$$
+U_\sigma\cong(\AA^k\times\GG_m^{n-k})/G.
+$$
+Thus a toric variety with simplicial fan has finite diagonalizable quotient singularities.
 [@Ful93]
 :::
 
@@ -47,9 +65,8 @@ $X_\Sigma$ is normal.
 :::
 
 ::: {.remark}
-The reason is that $S_\sigma$ is a *saturated* semigroup: if $\ell m \in S_\sigma$ for some $\ell > 0$ then $m \in S_\sigma$, since the defining inequalities $\inner{m}{u} \geq 0$ are homogeneous.
-Concretely, $k[S_\sigma]$ is the intersection of the rings $k[S_\tau]$ over the rays $\tau \leq \sigma$, each of which is a Laurent polynomial ring $k[x_1, x_2^{\pm 1}, \ldots, x_n^{\pm 1}]$ and so integrally closed, and an intersection of integrally closed domains with the same fraction field is integrally closed.
+For every cone $\sigma$, the semigroup $S_\sigma=\sigma^\vee\cap M$ is saturated: if $\ell m\in S_\sigma$ for an integer $\ell>0$, then $m\in S_\sigma$ because $\inner{\ell m}{u}\geq0$ implies $\inner{m}{u}\geq0$ for every $u\in\sigma$.
+The semigroup algebra of a saturated affine semigroup is normal, so every affine chart $U_\sigma=\Spec k[S_\sigma]$ is normal and therefore $X_\Sigma$ is normal.
 
-This is the standing caveat on the whole dictionary: fans produce *normal* toric varieties only.
-The nodal cubic has a torus acting with a dense orbit and is not on the list.
+The nodal cubic has a dense $\GG_m$-orbit but is not normal, so it is not a toric variety under the normal definition used here.
 :::

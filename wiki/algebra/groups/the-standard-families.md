@@ -41,15 +41,11 @@ By the structure theorem, every finite abelian group is a direct product of cycl
 
 [[D-BZ3KD]]
 
-[[FD-PIVQZ]]
-
 [[FD-GHDF2]]
 
 [[FF-6MNV6]]
 
 [[D-TMME3]]
-
-[[FD-X4DBP]]
 
 [[PR-JY4PV]]
 

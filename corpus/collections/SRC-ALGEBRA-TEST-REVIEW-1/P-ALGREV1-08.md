@@ -22,13 +22,12 @@ audit:
   date: 2026-09-11
   note: "Classified the assertion as sometimes true, with trivial H as the positive case and H={0,2} in Z4 as a counterexample."
 ---
-
 ::: {.problem}
 Classify the following assertion as true, sometimes true, or false: in a factor group $G/H$, if $aH=bH$, then $|a|=|b|$.
 :::
 
 ::: {.solution}
-The assertion is sometimes true.
+The assertion is **sometimes true**.
 
 ::: pf
 
@@ -73,13 +72,25 @@ Thus equal cosets need not have representatives of equal order.
 
 :::
 
-::: pf-qed
+::: {.pf-step #s3}
+
+Conclude the classification.
+
+::: pf-proof
 
 Step [](#s1){.pf-ref} gives cases in which the assertion holds, while step [](#s2){.pf-ref} gives a
 case in which it fails. Therefore the correct classification is
 $$
 \boxed{\text{sometimes true}.}
 $$
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested classification.
 
 :::
 

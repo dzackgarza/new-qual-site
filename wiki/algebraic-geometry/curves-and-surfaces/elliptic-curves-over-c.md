@@ -33,8 +33,13 @@ In particular $E[n]\cong\tfrac{1}{n}\Lambda/\Lambda\cong(\ZZ/n)^2$.
 
 [[T-CRVMODJ]]
 
-Under $\Lambda\mapsto\alpha\Lambda$, both $g_2^3$ and $\Delta$ scale by $\alpha^{-12}$, so $J$ depends only on the homothety class of $\Lambda$.
-The group is $\SL_2(\ZZ)$ because $\Im\qty{\tfrac{a\tau+b}{c\tau+d}}=(ad-bc)\Im\tau/\abs{c\tau+d}^2$: a matrix of determinant $-1$ sends $\HH$ to the lower half plane.
+The normalisation must be fixed because conventions for $J$ and $j$ differ by the factor $1728$.
+The invariance is a weight count --- $g_2^3$ and $\Delta$ both scale by $\alpha^{-12}$ --- and the restriction to $\SL_2(\ZZ)$ rather than $\GL_2(\ZZ)$ follows from
+$$
+\Im\qty{\frac{a\tau+b}{c\tau+d}}
+= \frac{(ad-bc)\Im\tau}{\abs{c\tau+d}^2},
+$$
+so determinant $1$ preserves the upper half-plane while determinant $-1$ exchanges it with the lower half-plane.
 
 Since each $\SL_2(\ZZ)$-orbit meets the fundamental region once, $J$ is a bijection from isomorphism classes of elliptic curves over $\CC$ onto $\CC$.
 The points of the fundamental region with nontrivial stabilizer in $\PSL_2(\ZZ)$ are $\tau=i$, of order $2$, and $\tau=\rho$, of order $3$; these are the curves with $j=1728$ and $j=0$, the only ones with automorphism group larger than $\{\pm1\}$.

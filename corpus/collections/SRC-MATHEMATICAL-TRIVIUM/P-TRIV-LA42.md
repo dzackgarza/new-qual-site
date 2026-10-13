@@ -18,3 +18,95 @@ audit:
 ::: {.problem}
 Check if the following points belong to the same plane: (6, 1, 2), (2, 3, 1), (3, 4, 1), (6, 2, 2).
 :::
+
+::: {.solution}
+Let
+$$
+p_1=(6,1,2),
+\quad
+p_2=(2,3,1),
+\quad
+p_3=(3,4,1),
+\quad
+p_4=(6,2,2).
+$$
+
+<1>1. Form the displacement vectors from $p_1$:
+$$
+v_2=p_2-p_1=(-4,2,-1),
+$$
+$$
+v_3=p_3-p_1=(-3,3,-1),
+$$
+and
+$$
+v_4=p_4-p_1=(0,1,0).
+$$
+
+::: {.proof}
+These are obtained by coordinate-wise subtraction.
+:::
+
+<1>2. One has
+$$
+v_3\times v_4=(1,0,-3).
+$$
+
+::: {.proof}
+Compute
+$$
+(-3,3,-1)\times(0,1,0)
+=
+\bigl(3\cdot0-(-1)\cdot1,
+-((-3)\cdot0-(-1)\cdot0),
+(-3)\cdot1-3\cdot0\bigr),
+$$
+which equals $(1,0,-3)$.
+:::
+
+<1>3. The scalar triple product is
+$$
+v_2\cdot(v_3\times v_4)=-1.
+$$
+
+::: {.proof}
+Using step <1>2,
+$$
+(-4,2,-1)\cdot(1,0,-3)
+=
+-4+0+3
+=
+-1.
+$$
+:::
+
+<1>4. The three displacement vectors are linearly independent.
+
+::: {.proof}
+Their scalar triple product is nonzero by step <1>3. Equivalently, the
+$3\times3$ matrix with these vectors as columns has nonzero determinant.
+:::
+
+<1>5. Therefore the four points do not lie in one plane.
+
+::: {.proof}
+Four points in $\mathbb R^3$ are coplanar exactly when the three displacement
+vectors from one of the points are linearly dependent. Step <1>4 shows that
+they are linearly independent.
+:::
+
+<1>6. Hence
+$$
+\boxed{\text{the four points are not coplanar}.}
+$$
+
+::: {.proof}
+This is step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::

@@ -26,14 +26,13 @@ audit:
   date: 2026-09-10
   note: "Verified the chain independence, projection formula, commutation identity, induction, and zero-operator case."
 ---
-
 ::: {.problem}
 A square matrix $N$ over the complex numbers is nilpotent just in case $N^a=0$ for some positive integer $a$.
 Show that every nilpotent $N$ is similar to a matrix of the form $$\begin{bmatrix}N_1&&&\\&N_2&&\\&&\ddots&\\&&&N_s\end{bmatrix}$$ where each $N_i$ is a square matrix of the form $$\begin{bmatrix}0&&&&\\1&0&&&\\&1&\ddots&&\\&&\ddots&0&\\&&&1&0\end{bmatrix}.$$
 :::
 
 ::: {.solution}
-Let $T$ be the operator represented by $N$ on $V=\mathbb C^n$.
+Let $T$ be the operator represented by $N$ on $V=\CC^n$.
 We prove the assertion by induction on $n$. For $n=0$ the empty direct
 sum is the required form. Suppose $n>0$ and the assertion holds in
 smaller dimensions. Let $r\geq1$ be the least integer with $T^r=0$.
@@ -65,7 +64,7 @@ The subspace $U$ has a $T$-invariant complement.
 ::: pf-proof
 
 Extend the chain in step [](#s1){.pf-ref} to a basis of $V$. Define a linear
-functional $\ell:V\to\mathbb C$ to be $1$ on $T^{r-1}v$ and $0$
+functional $\ell:V\to\CC$ to be $1$ on $T^{r-1}v$ and $0$
 on every other vector of this basis. Define
 $$
 \pi(w)=\sum_{j=0}^{r-1}\ell\bigl(T^{r-1-j}w\bigr)T^jv.
@@ -93,7 +92,7 @@ Indeed, the second term lies in $\ker\pi$ and $U\cap\ker\pi=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Combining bases of $U$ and $W$ produces the asserted blocks.
 
@@ -112,6 +111,20 @@ exactly that block diagonal matrix.
 
 :::
 
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives a basis in which $N$ is block diagonal with every block
+of the required nilpotent Jordan form.
+
 :::
 
+:::
+
+:::
+
+::: {.remark}
+An arbitrary equality $N^a=0$ only implies that the minimal polynomial
+divides $x^a$. It does not imply equality: for a nonempty zero matrix,
+$N^2=0$ but the minimal polynomial is $x$. Also,
+$x^b\mid x^c$ means $b\leq c$, not integer divisibility $b\mid c$.
 :::

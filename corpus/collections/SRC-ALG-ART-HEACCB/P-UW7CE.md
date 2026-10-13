@@ -23,7 +23,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Let $A\in M_n(\CC)$ with $A^2 = A$.
 Show that $A$ is similar to a diagonal matrix, and exhibit an explicit diagonal matrix similar to $A$.
@@ -37,7 +36,7 @@ Show that $A$ is similar to a diagonal matrix, and exhibit an explicit diagonal 
 
 The vector space decomposes as
 \[
-\mathbb C^n=\operatorname{im}A\oplus\ker A.
+\CC^n=\operatorname{im}A\oplus\ker A.
 \]
 
 ::: pf-proof
@@ -78,7 +77,7 @@ If $w\in\ker A$, then $Aw=0$ by definition.
 
 ::: {.pf-step #s3}
 
-Let $r=\operatorname{rank}A$. Choose a basis $u_1,\dots,u_r$ of $\operatorname{im}A$ and a basis $v_1,\dots,v_{n-r}$ of $\ker A$. Their union is a basis of $\mathbb C^n$.
+Let $r=\operatorname{rank}A$. Choose a basis $u_1,\dots,u_r$ of $\operatorname{im}A$ and a basis $v_1,\dots,v_{n-r}$ of $\ker A$. Their union is a basis of $\CC^n$.
 
 ::: pf-proof
 
@@ -88,7 +87,7 @@ This follows from the direct-sum decomposition in step [](#s1){.pf-ref}. The dim
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 In the basis from step [](#s3){.pf-ref}, the matrix of $A$ is
 \[
@@ -96,7 +95,7 @@ In the basis from step [](#s3){.pf-ref}, the matrix of $A$ is
 \]
 Hence
 \[
-A\sim\operatorname{diag}(\underbrace{1,\dots,1}_{r},\underbrace{0,\dots,0}_{n-r}).
+\boxed{A\sim\operatorname{diag}(\underbrace{1,\dots,1}_{r},\underbrace{0,\dots,0}_{n-r})}.
 \]
 
 ::: pf-proof
@@ -107,15 +106,21 @@ By step [](#s2){.pf-ref}, each $u_i$ is an eigenvector with eigenvalue $1$ and e
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 Equivalently, the minimal polynomial of $A$ divides $x(x-1)$, which has distinct roots, so $A$ is diagonalizable.
 
 ::: pf-proof
 
-The equation $A^2=A$ gives $A(A-I)=0$, hence $m_A(x)\mid x(x-1)$. A matrix whose minimal polynomial splits into distinct linear factors is diagonalizable.
+The equation $A^2=A$ gives $A(A-I)=0$, hence $m_A(x)\mid x(x-1)$. A matrix whose minimal polynomial splits into distinct linear factors is diagonalizable, consistent with the explicit basis above.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested explicit diagonal matrix similar to $A$; step [](#s5){.pf-ref} gives the equivalent minimal-polynomial criterion.
 
 :::
 

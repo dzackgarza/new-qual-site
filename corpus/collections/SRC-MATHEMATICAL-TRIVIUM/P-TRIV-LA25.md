@@ -24,3 +24,281 @@ A linear transformation A writes in some basis in $\mathbb { R } ^ { n }$ as fol
 
 (c) Determine the invariant subspaces of A.
 :::
+
+::: {.solution}
+Let
+$$
+A=
+\begin{pmatrix}
+0&2&1\\
+2&8&2\\
+1&2&0
+\end{pmatrix}.
+$$
+
+<1>1. The vector
+$$
+v_{-1}=
+\begin{pmatrix}
+1\\0\\-1
+\end{pmatrix}
+$$
+is an eigenvector with eigenvalue $-1$.
+
+::: {.proof}
+Direct multiplication gives
+$$
+Av_{-1}
+=
+\begin{pmatrix}
+-1\\0\\1
+\end{pmatrix}
+=
+-v_{-1}.
+$$
+:::
+
+<1>2. The plane
+$$
+S=\{(a,b,a):a,b\in\mathbb R\}
+$$
+is invariant under $A$.
+
+::: {.proof}
+For
+$$
+v=(a,b,a)^T,
+$$
+one has
+$$
+Av
+=
+\begin{pmatrix}
+a+2b\\
+4a+8b\\
+a+2b
+\end{pmatrix},
+$$
+whose first and third coordinates are equal.
+:::
+
+<1>3. In coordinates $(a,b)$ on $S$, the restriction of $A$ is represented by
+$$
+\begin{pmatrix}
+1&2\\
+4&8
+\end{pmatrix},
+$$
+whose eigenvalues are $0$ and $9$.
+
+::: {.proof}
+By step <1>2,
+$$
+(a,b)\longmapsto(a+2b,4a+8b).
+$$
+The characteristic polynomial is
+$$
+\det
+\begin{pmatrix}
+1-\lambda&2\\
+4&8-\lambda
+\end{pmatrix}
+=
+(1-\lambda)(8-\lambda)-8
+=
+\lambda(\lambda-9).
+$$
+:::
+
+<1>4. Eigenvectors for the remaining eigenvalues may be chosen as
+$$
+v_0=
+\begin{pmatrix}
+-2\\1\\-2
+\end{pmatrix}
+$$
+and
+$$
+v_9=
+\begin{pmatrix}
+1\\4\\1
+\end{pmatrix}.
+$$
+
+::: {.proof}
+For eigenvalue $0$, the equation
+$$
+a+2b=0
+$$
+gives $a=-2b$, so choose $(a,b)=(-2,1)$.
+
+For eigenvalue $9$, the equation
+$$
+a+2b=9a
+$$
+gives $b=4a$, so choose $(a,b)=(1,4)$.
+:::
+
+<1>5. The three eigenvectors are mutually orthogonal and therefore form a
+basis of $\mathbb R^3$.
+
+::: {.proof}
+Their pairwise inner products are
+$$
+v_{-1}\cdot v_0=-2+2=0,
+$$
+$$
+v_{-1}\cdot v_9=1-1=0,
+$$
+and
+$$
+v_0\cdot v_9=-2+4-2=0.
+$$
+All three vectors are nonzero, so they are linearly independent.
+:::
+
+<1>6. A transition matrix whose columns are eigenvectors is
+$$
+\boxed{
+P=
+\begin{pmatrix}
+1&-2&1\\
+0&1&4\\
+-1&-2&1
+\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+The columns are respectively $v_{-1},v_0,v_9$. By step <1>5 they form a
+basis, so $P$ is invertible.
+:::
+
+<1>7. Part (a) follows.
+
+::: {.proof}
+Step <1>6 gives the requested change-of-basis matrix. If the convention is
+that coordinates transform from the original basis to the eigenbasis, the
+coordinate-change matrix is $P^{-1}$.
+:::
+
+<1>8. In the eigenbasis,
+$$
+\boxed{
+P^{-1}AP
+=
+\begin{pmatrix}
+-1&0&0\\
+0&0&0\\
+0&0&9
+\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+Each column of $P$ is an eigenvector, so
+$$
+AP
+=
+P
+\operatorname{diag}(-1,0,9).
+$$
+Multiply on the left by $P^{-1}$.
+:::
+
+<1>9. Part (b) follows.
+
+::: {.proof}
+This is step <1>8.
+:::
+
+<1>10. Each span of a subset of
+$$
+\{v_{-1},v_0,v_9\}
+$$
+is invariant under $A$.
+
+::: {.proof}
+Each $v_\lambda$ is an eigenvector. Therefore $A$ maps every selected
+eigendirection to itself, and hence maps any sum of selected eigendirections
+to itself.
+:::
+
+<1>11. Conversely, every invariant subspace of $A$ is the span of a subset of
+the three eigendirections.
+
+::: {.proof}
+Let $W\subseteq\mathbb R^3$ be $A$-invariant. Since $W$ is invariant under
+$A$, it is invariant under every polynomial in $A$.
+
+Because the eigenvalues $-1,0,9$ are distinct, define the spectral projection
+polynomials
+$$
+p_{-1}(t)
+=
+\frac{t(t-9)}{(-1)(-10)},
+$$
+$$
+p_0(t)
+=
+\frac{(t+1)(t-9)}{(1)(-9)},
+$$
+and
+$$
+p_9(t)
+=
+\frac{(t+1)t}{(10)(9)}.
+$$
+Each $p_\lambda(A)$ is the projection onto the $\lambda$-eigenspace.
+
+If
+$$
+w
+=
+c_{-1}v_{-1}+c_0v_0+c_9v_9
+\in W,
+$$
+then invariance under these polynomial projections gives
+$$
+c_\lambda v_\lambda
+=
+p_\lambda(A)w
+\in W
+$$
+for each eigenvalue $\lambda$. Thus $W$ is the direct sum of those
+eigendirections that occur in it.
+:::
+
+<1>12. Hence the invariant subspaces are exactly
+$$
+\boxed{
+\begin{gathered}
+\{0\},\\
+\operatorname{span}(v_{-1}),\quad
+\operatorname{span}(v_0),\quad
+\operatorname{span}(v_9),\\
+\operatorname{span}(v_{-1},v_0),\quad
+\operatorname{span}(v_{-1},v_9),\quad
+\operatorname{span}(v_0,v_9),\\
+\mathbb R^3.
+\end{gathered}
+}
+$$
+
+::: {.proof}
+Step <1>10 shows that every displayed subspace is invariant, and step <1>11
+shows that no others occur.
+:::
+
+<1>13. Part (c) follows.
+
+::: {.proof}
+This is step <1>12.
+:::
+
+<1>14. Q.E.D.
+
+::: {.proof}
+Steps <1>7, <1>9, and <1>13 establish parts (a), (b), and (c), respectively.
+:::
+:::

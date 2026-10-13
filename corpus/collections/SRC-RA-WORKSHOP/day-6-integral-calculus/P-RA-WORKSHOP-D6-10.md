@@ -18,46 +18,89 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 (Essentially June 2013 #7) Prove Theorem 5.3.
 :::
 
-:::: {.solution}
+::: {.solution}
+Use the hypotheses of [[T-RA-WORKSHOP-D6-5-3|Theorem 5.3]], and choose $M\geq0$ with $|f|\leq M$. For a tagged partition $(P,\tau)$, write $S_\alpha(f;P,\tau)$ for its Stieltjes sum and $S(f\alpha';P,\tau)$ for its ordinary Riemann sum.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Set up: $\alpha$ increasing, $\alpha' \in \mathcal{R}$ on $[a,b]$, $f$ bounded.
-Proof: since $\alpha' \in \mathcal{R}$, $\alpha'$ is bounded, so $\alpha$ is Lipschitz (by the fundamental theorem of calculus for Riemann integrals, $\alpha(x) = \alpha(a) + \int_a^x \alpha'(t)\,dt$). In particular $\alpha$ is continuous and of bounded variation.
-We prove the two implications.
+For every tagged partition $(P,\tau)$,
+\[
+|S_\alpha(f;P,\tau)-S(f\alpha';P,\tau)|
+\leq M\bigl(U(\alpha',P)-L(\alpha',P)\bigr).
+\]
+
+::: pf-proof
+
+Since $\alpha'$ is Riemann integrable, it is bounded. The mean value theorem applied to $\alpha$ on each subinterval $I_i=[x_{i-1},x_i]$ gives $\Delta\alpha_i=\alpha'(\xi_i)\Delta x_i$ for some $\xi_i\in(x_{i-1},x_i)$. Thus
+\[
+|\Delta\alpha_i-\alpha'(\tau_i)\Delta x_i|
+\leq\operatorname{osc}_{I_i}(\alpha')\Delta x_i.
+\]
+Multiply by $|f(\tau_i)|\leq M$, sum, and use the definitions of the upper and lower Darboux sums.
+
+:::
 
 :::
 
 ::: {.pf-step #s2}
 
-(⟹) If $f \in \mathcal{R}(\alpha)$ then $f\alpha' \in \mathcal{R}$ and $\int f\,d\alpha = \int f\alpha'$.
-Proof: let $M = \sup|f|$.
-For any partition $P = \{x_0 < \cdots < x_n\}$ and any choice of tags $t_i \in [x_{i-1}, x_i]$, write $m_i' = \inf_{[x_{i-1},x_i]}\alpha'$ and $M_i' = \sup_{[x_{i-1},x_i]}\alpha'$.
-Since $\Delta\alpha_i = \int_{x_{i-1}}^{x_i}\alpha'$ (fundamental theorem for monotone functions) and $\int_{x_{i-1}}^{x_i}\alpha' \in [m_i'\Delta x_i,\ M_i'\Delta x_i]$, we have $|\Delta\alpha_i - \alpha'(t_i)\Delta x_i| \le (M_i' - m_i')\Delta x_i$.
-Hence the Stieltjes sum and the Riemann sum of $f\alpha'$ with the same tags differ by \[\left|\sum_i f(t_i)\Delta\alpha_i - \sum_i f(t_i)\alpha'(t_i)\Delta x_i\right| \le M\sum_i (M_i' - m_i')\Delta x_i = M\big(U(\alpha',P) - L(\alpha',P)\big).\] Since $f \in \mathcal{R}(\alpha)$, Stieltjes sums converge to $\int f\,d\alpha$ along partitions with mesh $\to 0$; since $\alpha' \in \mathcal{R}$, $U(\alpha',P) - L(\alpha',P) \to 0$ along the same refinement.
-So the Riemann sums $\sum f(t_i)\alpha'(t_i)\Delta x_i$ also converge, to $\int f\,d\alpha$.
-Riemann sums converging to a common limit along partitions with mesh $\to 0$ is exactly Riemann integrability, so $f\alpha' \in \mathcal{R}$ and $\int f\alpha' = \int f\,d\alpha$.
+For every $\varepsilon>0$ there is $\delta>0$ such that every partition $P$ with mesh less than $\delta$ satisfies
+\[
+U(\alpha',P)-L(\alpha',P)<\varepsilon.
+\]
+
+::: pf-proof
+
+By Riemann integrability choose a partition $Q$ with $U(\alpha',Q)-L(\alpha',Q)<\varepsilon/2$. Let $B=\sup|\alpha'|$ and let $r$ be the number of interior division points of $Q$. For any partition $P$, insert the points of $Q$ to obtain the common refinement $R$. The oscillation sum on $R$ is at most that on $Q$. At most $r$ intervals of $P$ contain an interior point of $Q$; on all other intervals refinement changes no oscillation contribution. Consequently
+\[
+U(\alpha',P)-L(\alpha',P)
+\leq U(\alpha',Q)-L(\alpha',Q)+2Br\,\operatorname{mesh}(P).
+\]
+Choose $\delta$ so that $2Br\delta<\varepsilon/2$ when $Br>0$; otherwise any positive $\delta$ works.
 
 :::
 
-::: pf-step
+:::
 
-(⟸) If $f\alpha' \in \mathcal{R}$ then $f \in \mathcal{R}(\alpha)$ with the same value.
-Proof: the same inequality of step [](#s2){.pf-ref} shows that along any partition sequence with mesh $\to 0$, the Stieltjes sums $\sum f(t_i)\Delta\alpha_i$ are within $M\big(U(\alpha',P) - L(\alpha',P)\big) \to 0$ of the convergent Riemann sums of $f\alpha'$; hence the Stieltjes sums converge, to $\int_a^b f\alpha'$.
-So $f \in \mathcal{R}(\alpha)$ and $\int f\,d\alpha = \int_a^b f\alpha'$.
+::: {.pf-step #s3}
+
+The tagged Stieltjes sums of $f$ and ordinary Riemann sums of $f\alpha'$ have the same limit whenever either family has a limit as the mesh tends to zero.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} imply that the difference between the two sums tends uniformly to zero over all choices of tags as the mesh tends to zero. Hence convergence of either family to a number $I$, uniformly over tagged partitions of sufficiently small mesh, is equivalent to convergence of the other family to the same $I$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+One has
+\[
+\boxed{f\in\mathcal R(\alpha)\iff f\alpha'\in\mathcal R},
+\qquad
+\boxed{\int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx}
+\]
+whenever either integrability condition holds.
+
+::: pf-proof
+
+The tagged-sum characterization of Riemann integrability applies to $f\alpha'$. The corresponding tagged-sum characterization of Riemann–Stieltjes integrability applies because $\alpha$ is continuous and increasing; continuity follows from differentiability, and boundedness of $\alpha'$ also makes $\alpha$ Lipschitz by the mean value theorem. Step [](#s3){.pf-ref} identifies both integrability conditions and their integral values.
+
+:::
 
 :::
 
 ::: pf-qed
 
-Proof: both directions established: $f \in \mathcal{R}(\alpha)$ iff $f\alpha' \in \mathcal{R}$, and in that case the integrals agree.
+Step [](#s4){.pf-ref} proves both assertions of Theorem 5.3.
 
 :::
 

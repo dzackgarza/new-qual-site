@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked the exhaustive quadratic-factor obstruction, both divisibilities into x^16-x, splitting over the given quotient field, and the degree-three subfield obstruction."
 ---
-
 ::: {.problem}
 a. Prove that $K = (\mathbb{Z}/2\mathbb{Z})[y]/(y^4 + y^3 + y^2 + y + 1)$ is a field.
 
@@ -40,7 +39,7 @@ All polynomial computations below are in characteristic two.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The polynomial $h(y)=y^4+y^3+y^2+y+1$ is irreducible
 over $\mathbb F_2$, so $K$ is a field with $16$ elements.
@@ -89,7 +88,7 @@ leading coefficients.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Both polynomials in part (b) divide $x^{16}-x$, and
 therefore split completely over $K$.
@@ -114,13 +113,14 @@ This proves the other divisibility. Both remain valid in
 $K[x]$. By step [](#s2){.pf-ref}, every irreducible factor of a divisor
 of $x^{16}-x$ in $K[x]$ is linear: unique factorization in
 the Euclidean domain $K[x]$ applies [@DF04]. Thus each
-polynomial in part (b) factors completely over $K$.
+polynomial in part (b) factors completely over the specified
+field $K$, not merely over some extension of it.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The polynomial $g(x)=x^3+x+1$ is irreducible over $K$.
 
@@ -142,6 +142,13 @@ Hence $g$ has no root in $K$. Since its degree is three,
 it is irreducible over $K$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b), and
+step [](#s4){.pf-ref} proves part (c).
 
 :::
 

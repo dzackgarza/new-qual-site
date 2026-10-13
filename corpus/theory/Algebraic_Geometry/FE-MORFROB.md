@@ -30,6 +30,12 @@ This example separates smoothness from flatness and from the topology of the und
 $F$ is finite flat of degree $p^n$ and bijective on points, so no condition on fibres as sets or on flatness detects the failure; only the differentials do.
 It is the sharpest illustration that smoothness is not a topological or even a flat-family condition.
 
-It also shows that "étale equals flat plus finite fibres" is false: $F$ is flat with one point in every fibre and is not étale, because the fibres are the non-reduced $\Spec k[x]/(x^p)$ rather than reduced points.
+It also shows that "étale equals flat plus finite fibres" is false: $F$ is flat with one point in every fibre and is not étale, because the fibres are nonreduced rather than reduced points.
+On an affine chart around a geometric point, the fibre is
+$$
+\Spec
+k[t_1,\ldots,t_n]/(t_1^p,\ldots,t_n^p),
+$$
+a one-point scheme of length $p^n$.
 The separability clause in the definition of unramified is precisely what rules this out.
 :::

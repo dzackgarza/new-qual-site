@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked nonnormality as an obstruction to being any splitting field, and explicitly recovered both radicals from their sum to identify the second splitting field."
 ---
-
 ::: {.problem}
 Decide whether or not each of the following fields is a splitting field over $\mathbb{Q}$.
 
@@ -38,7 +37,7 @@ b. $\mathbb{Q}(\sqrt{2} + \sqrt{5})$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The field $\mathbb Q(\sqrt[3]{2})$ is not a splitting
 field over $\mathbb Q$.
@@ -56,13 +55,13 @@ in this field without splitting there, so the extension
 is not normal. Every splitting field over a field is
 a normal extension [@DF04]. Consequently $\mathbb Q(a)$
 cannot be the splitting field of any polynomial over
-$\mathbb Q$.
+$\mathbb Q$, not just of $T^3-2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The field $\mathbb Q(\sqrt2+\sqrt5)$ is the splitting
 field of $(T^2-2)(T^2-5)$ over $\mathbb Q$.
@@ -92,6 +91,12 @@ $\mathbb Q(\sqrt2,\sqrt5)=\mathbb Q(s)$.
 This proves that it is the asserted splitting field.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s2){.pf-ref} answers part (b).
 
 :::
 

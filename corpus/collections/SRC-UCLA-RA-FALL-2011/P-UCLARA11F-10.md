@@ -21,3 +21,234 @@ Let $\Omega\subsetneq\mathbb C$ be a simply connected domain and let $f:\Omega\t
 Suppose there are distinct points $z_1,z_2\in\Omega$ with $f(z_1)=z_1$ and $f(z_2)=z_2$.
 Show that $f$ is the identity on $\Omega$.
 :::
+
+::: {.solution}
+Since
+\[
+\Omega\subsetneq\mathbb C
+\]
+is simply connected, the Riemann mapping theorem gives a biholomorphism
+\[
+\phi:\Omega\to\mathbb D.
+\]
+
+Define
+\[
+F=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D.
+\]
+
+<1>1. The points
+\[
+w_1=\phi(z_1),
+\qquad
+w_2=\phi(z_2)
+\]
+are distinct fixed points of \(F\).
+
+::: {.proof}
+Since \(f(z_j)=z_j\),
+\[
+F(w_j)
+=
+\phi(f(\phi^{-1}(w_j)))
+=
+\phi(f(z_j))
+=
+\phi(z_j)
+=
+w_j.
+\]
+The points are distinct because \(\phi\) is injective.
+:::
+
+<1>2. Let
+\[
+\psi(\zeta)
+=
+\frac{\zeta-w_1}{1-\overline{w_1}\zeta}.
+\]
+Then \(\psi\) is an automorphism of \(\mathbb D\) satisfying
+\[
+\boxed{\psi(w_1)=0}.
+\]
+
+::: {.proof}
+This is the standard disk automorphism carrying \(w_1\) to \(0\).
+:::
+
+Define
+\[
+G
+=
+\psi\circ F\circ\psi^{-1}:\mathbb D\to\mathbb D.
+\]
+
+<1>3. One has
+\[
+\boxed{G(0)=0}.
+\]
+
+::: {.proof}
+Since
+\[
+\psi^{-1}(0)=w_1
+\]
+and \(F(w_1)=w_1\),
+\[
+G(0)
+=
+\psi(F(w_1))
+=
+\psi(w_1)
+=
+0.
+\]
+:::
+
+<1>4. Let
+\[
+a=\psi(w_2).
+\]
+Then
+\[
+\boxed{a\ne0}.
+\]
+
+::: {.proof}
+The automorphism \(\psi\) is injective and
+\[
+w_2\ne w_1.
+\]
+Since \(\psi(w_1)=0\), one must have \(\psi(w_2)\ne0\).
+:::
+
+<1>5. The point \(a\) is also fixed by \(G\):
+\[
+\boxed{G(a)=a}.
+\]
+
+::: {.proof}
+\[
+\begin{aligned}
+G(a)
+&=
+\psi(F(\psi^{-1}(a)))\\
+&=
+\psi(F(w_2))\\
+&=
+\psi(w_2)\\
+&=
+a.
+\end{aligned}
+\]
+:::
+
+<1>6. By Schwarz's lemma,
+\[
+|G(\zeta)|
+\le
+|\zeta|
+\]
+for every \(\zeta\in\mathbb D\).
+
+::: {.proof}
+The map \(G:\mathbb D\to\mathbb D\) is holomorphic and fixes \(0\) by step <1>3.
+:::
+
+<1>7. At the nonzero point \(a\),
+\[
+|G(a)|=|a|.
+\]
+
+::: {.proof}
+By step <1>5,
+\[
+G(a)=a.
+\]
+:::
+
+<1>8. Equality in Schwarz's lemma at the nonzero point \(a\) implies
+\[
+\boxed{
+G(\zeta)=e^{i\theta}\zeta}
+\]
+for some real \(\theta\).
+
+::: {.proof}
+The equality case of Schwarz's lemma says that if
+\[
+|G(a)|=|a|
+\]
+at some nonzero \(a\in\mathbb D\), then \(G\) is a rotation.
+:::
+
+<1>9. Since \(G(a)=a\) and \(a\ne0\),
+\[
+\boxed{e^{i\theta}=1}.
+\]
+
+::: {.proof}
+From step <1>8,
+\[
+a=G(a)=e^{i\theta}a.
+\]
+Divide by \(a\ne0\).
+:::
+
+<1>10. Hence
+\[
+\boxed{
+G=\operatorname{id}_{\mathbb D}}.
+\]
+
+::: {.proof}
+Step <1>8 becomes
+\[
+G(\zeta)=\zeta
+\]
+after step <1>9.
+:::
+
+<1>11. Therefore
+\[
+F
+=
+\psi^{-1}\circ G\circ\psi
+=
+\operatorname{id}_{\mathbb D}.
+\]
+
+::: {.proof}
+Conjugating the identity map by \(\psi\) gives the identity map.
+:::
+
+<1>12. Finally,
+\[
+f
+=
+\phi^{-1}\circ F\circ\phi
+=
+\operatorname{id}_{\Omega}.
+\]
+
+::: {.proof}
+Use step <1>11 and the definition of \(F\).
+:::
+
+<1>13. Thus
+\[
+\boxed{
+f(z)=z
+\qquad\text{for every }z\in\Omega}.
+\]
+
+::: {.proof}
+This is step <1>12.
+:::
+
+<1>14. Q.E.D.
+
+::: {.proof}
+Step <1>13 is the required conclusion.
+:::
+:::

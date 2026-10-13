@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-MODPIC
 kind: definition
-title: The Picard group
+title: The Picard group and relative Picard functor
 classification:
   areas:
   - algebraic-geometry
@@ -18,6 +18,7 @@ relations:
 review: draft
 prompts:
 - What is the Picard group?
+- What is the relative Picard functor?
 - Why is the inverse of an invertible sheaf its dual?
 - What is $\Pic$ of an affine scheme, of $\PP^n$, of a curve?
 ---
@@ -27,8 +28,31 @@ Let $(X,\OO_X)$ be a ringed space with commutative structure sheaf.
 Its \dfn{Picard group} $\Pic(X)$ is the group of isomorphism classes of invertible $\OO_X$-modules under tensor product, with identity $[\OO_X]$ and inverse $[\dualof{\mcl}]$, where $\dualof{\mcl}=\sheafhom_{\OO_X}(\mcl,\OO_X)$ [@Har10a, Chapter II, §6].
 :::
 
+::: {.definition title="Relative Picard functor"}
+Let $f\colon X\to S$ be a morphism of schemes. For an $S$-scheme $T\to S$, put
+$$
+X_T\coloneqq X\times_ST.
+$$
+The presheaf
+$$
+T\longmapsto \Pic(X_T)/\operatorname{im}\bigl(\Pic(T)\to\Pic(X_T)\bigr)
+$$
+has fppf sheafification denoted
+$$
+\underline{\Pic}_{X/S},
+$$
+the \dfn{relative Picard functor}.
+
+If $X/k$ is a smooth projective geometrically connected curve, degree on geometric fibres gives open-and-closed subfunctors
+$$
+\underline{\Pic}^{\,d}_{X/k}\subseteq\underline{\Pic}_{X/k},
+$$
+and $\underline{\Pic}^{\,0}_{X/k}$ is the degree-zero subfunctor.
+:::
+
 ::: {.proposition}
-For $\mcl$ invertible, the evaluation map $\mcl\otimes_{\OO_X}\dualof{\mcl}\to\OO_X$ is an isomorphism: on every trivializing open it is the multiplication isomorphism $\OO_X\otimes\OO_X\cong\OO_X$.
+For $\mcl$ invertible, the evaluation map $\mcl\tensor_{\OO_X}\mcl\dual\to\OO_X$ is an isomorphism: on every trivializing open it is the multiplication isomorphism
+$\OO_X\tensor_{\OO_X}\OO_X\cong\OO_X$.
 There is a natural group isomorphism $\Pic(X)\cong H^1(X,\OO_X^\times)$, obtained by sending local frames to their transition-unit cocycle, as proved in [[P-AGH345PICH1]].
 :::
 

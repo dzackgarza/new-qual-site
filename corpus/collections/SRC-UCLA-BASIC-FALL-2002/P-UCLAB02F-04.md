@@ -26,3 +26,148 @@ prove that
 \]
 Justify carefully every step, especially taking the limit as $x\to1$ from below.
 :::
+
+::: {.solution}
+<1>1. For every integer $N\ge0$ and every real $t$,
+\[
+\frac1{1+t^2}
+=
+\sum_{k=0}^{N}(-1)^k t^{2k}
++
+(-1)^{N+1}\frac{t^{2N+2}}{1+t^2}.
+\]
+
+::: {.proof}
+Apply the finite geometric-series identity
+\[
+\frac1{1-r}
+=
+\sum_{k=0}^{N}r^k
++
+\frac{r^{N+1}}{1-r}
+\]
+with $r=-t^2$.
+:::
+
+<1>2. For $0\le x\le1$,
+\[
+\arctan x
+=
+\sum_{k=0}^{N}(-1)^k\frac{x^{2k+1}}{2k+1}
++
+R_N(x),
+\]
+where
+\[
+R_N(x)
+=
+(-1)^{N+1}
+\int_0^x\frac{t^{2N+2}}{1+t^2}\,dt.
+\]
+
+::: {.proof}
+Integrate the finite identity from step <1>1 term by term on $[0,x]$. This is legitimate because only finitely many terms are involved. Since
+\[
+\int_0^x\frac{dt}{1+t^2}=\arctan x
+\]
+and
+\[
+\int_0^x t^{2k}\,dt=\frac{x^{2k+1}}{2k+1},
+\]
+the displayed formula follows.
+:::
+
+<1>3. For $0\le x\le1$,
+\[
+|R_N(x)|
+\le
+\frac{x^{2N+3}}{2N+3}.
+\]
+
+::: {.proof}
+Because $1+t^2\ge1$ on $[0,1]$,
+\[
+|R_N(x)|
+\le
+\int_0^x t^{2N+2}\,dt
+=
+\frac{x^{2N+3}}{2N+3}.
+\]
+:::
+
+<1>4. For every $0\le x<1$,
+\[
+\arctan x
+=
+\sum_{k=0}^{\infty}(-1)^k\frac{x^{2k+1}}{2k+1}.
+\]
+
+::: {.proof}
+Fix $x<1$. By step <1>3,
+\[
+|R_N(x)|
+\le
+\frac{x^{2N+3}}{2N+3}
+\longrightarrow0.
+\]
+Letting $N\to\infty$ in the finite identity of step <1>2 gives the stated series.
+:::
+
+<1>5. For every $N\ge0$,
+\[
+\left|
+\frac\pi4
+-
+\sum_{k=0}^{N}(-1)^k\frac1{2k+1}
+\right|
+\le
+\frac1{2N+3}.
+\]
+
+::: {.proof}
+Keep $N$ fixed in step <1>2 and let $x\to1^-$.
+Continuity of $\arctan$ gives
+\[
+\arctan x\to\arctan1=\frac\pi4,
+\]
+and each of the finitely many polynomial terms satisfies
+\[
+\frac{x^{2k+1}}{2k+1}\to\frac1{2k+1}.
+\]
+Also, by step <1>3,
+\[
+|R_N(x)|\le\frac{x^{2N+3}}{2N+3}\le\frac1{2N+3}.
+\]
+Therefore the limiting difference between $\pi/4$ and the $N$th partial sum has absolute value at most $1/(2N+3)$.
+:::
+
+<1>6. One has
+\[
+\boxed{
+\frac\pi4
+=
+1-\frac13+\frac15-\frac17+\frac19-\cdots
+}.
+\]
+
+::: {.proof}
+Let
+\[
+S_N=\sum_{k=0}^{N}(-1)^k\frac1{2k+1}.
+\]
+By step <1>5,
+\[
+\left|\frac\pi4-S_N\right|
+\le
+\frac1{2N+3}
+\longrightarrow0.
+\]
+Hence $S_N\to\pi/4$, which is exactly the displayed series identity.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 proves the claimed Leibniz series, and step <1>5 supplies the required justification of the limit as $x\to1^-$ without interchanging an infinite sum with that limit.
+:::
+:::

@@ -31,3 +31,156 @@ Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ suc
 
 Show that $\lVert f_n-f\rVert_1\to0$.
 :::
+
+::: {.solution}
+Define
+\[
+g_n(x)
+=
+|f_n(x)|-|f_n(x)-f(x)|.
+\]
+
+<1>1. For almost every \(x\in X\),
+\[
+\boxed{
+g_n(x)\to |f(x)|}.
+\]
+
+::: {.proof}
+By hypothesis,
+\[
+f_n(x)\to f(x)
+\]
+for almost every \(x\). Hence
+\[
+|f_n(x)|\to|f(x)|
+\]
+and
+\[
+|f_n(x)-f(x)|\to0.
+\]
+Subtract.
+:::
+
+<1>2. For every \(n\) and almost every \(x\),
+\[
+\boxed{
+|g_n(x)|
+\le
+|f(x)|}.
+\]
+
+::: {.proof}
+Apply the reverse triangle inequality to the pair
+\[
+f_n(x)
+\qquad\text{and}\qquad
+f_n(x)-f(x):
+\]
+\[
+\left|
+|f_n(x)|
+-
+|f_n(x)-f(x)|
+\right|
+\le
+|f(x)|.
+\]
+The left-hand side is \(|g_n(x)|\).
+:::
+
+<1>3. Since
+\[
+f\in L^1(\mu),
+\]
+the function \(|f|\) is integrable.
+
+::: {.proof}
+This is exactly the definition of membership in \(L^1(\mu)\).
+:::
+
+<1>4. Therefore, by the dominated convergence theorem,
+\[
+\boxed{
+\int g_n\,d\mu
+\longrightarrow
+\int |f|\,d\mu}.
+\]
+
+::: {.proof}
+Use pointwise almost-everywhere convergence from step <1>1 and domination by the integrable function \(|f|\) from steps <1>2--<1>3.
+:::
+
+<1>5. For every \(n\),
+\[
+\int g_n\,d\mu
+=
+\|f_n\|_1-\|f_n-f\|_1.
+\]
+
+::: {.proof}
+By definition,
+\[
+g_n
+=
+|f_n|-|f_n-f|.
+\]
+Both terms are integrable because
+\[
+f_n,f\in L^1
+\]
+implies
+\[
+f_n-f\in L^1.
+\]
+Integrate term by term.
+:::
+
+<1>6. Hence
+\[
+\boxed{
+\|f_n\|_1-\|f_n-f\|_1
+\longrightarrow
+\|f\|_1}.
+\]
+
+::: {.proof}
+Combine steps <1>4--<1>5.
+:::
+
+<1>7. By hypothesis,
+\[
+\boxed{
+\|f_n\|_1\to\|f\|_1}.
+\]
+
+::: {.proof}
+This is assumption (ii).
+:::
+
+<1>8. Therefore
+\[
+\boxed{
+\|f_n-f\|_1\to0}.
+\]
+
+::: {.proof}
+From step <1>6,
+\[
+\|f_n-f\|_1
+=
+\|f_n\|_1
+-
+\left(
+\|f_n\|_1-\|f_n-f\|_1
+\right).
+\]
+The first term tends to \(\|f\|_1\) by step <1>7, and the parenthesized term tends to \(\|f\|_1\) by step <1>6. Their difference tends to \(0\).
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required \(L^1\)-convergence.
+:::
+:::

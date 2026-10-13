@@ -27,6 +27,6 @@ A \dfn{left $R$-module} is an abelian group $(M,+)$ together with a map $R\times
 Let $R$ be a commutative ring.
 An \dfn{$R$-algebra} structure on an $R$-module $M$ is an $R$-bilinear multiplication $M\times M\to M$, equivalently an $R$-linear map $m\colon M\otimes_R M\to M$; bilinearity means
 $$
-r\, m(a\otimes b) = m(ra \otimes b) = m(a\otimes rb) \qquad \text{for all } r\in R \text{ and } a,b \in M.
+r\, m(a\otimes_R b) = m(ra \otimes_R b) = m(a\otimes_R rb) \qquad \text{for all } r\in R \text{ and } a,b \in M.
 $$
 :::

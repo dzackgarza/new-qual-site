@@ -25,19 +25,22 @@ prompts:
 ::: {.theorem title="Stein factorisation"}
 Let $f : X \to Y$ be a proper morphism of Noetherian schemes.
 Then $f$ factors as
-\[
-X \mapsvia{g} Y' \definedas \Spec_Y f_* \OO_X \mapsvia{h} Y
-\]
+$$
+X \mapsvia{g} Y' \coloneqq \Spec_Y f_* \OO_X \mapsvia{h} Y
+$$
 with $g$ proper with connected fibres and $g_* \OO_X = \OO_{Y'}$, and $h$ finite.
 :::
 
 ::: {.remark}
-The factorisation separates the two ways a proper morphism can fail to be an isomorphism: $g$ contracts connected fibres, while $h$ is finite.
-Thus a proper morphism factors into a contraction followed by a finite cover.
+The factorization isolates a connected-fibre morphism followed by a finite morphism.
 
-$f_* \OO_X$ is a coherent sheaf of $\OO_Y$-algebras because $f$ is proper, and it is finite because coherent, which is where properness enters; this is why there is no Stein factorisation for a general morphism.
+$f_* \OO_X$ is a coherent $\OO_Y$-module because $f$ is proper and $Y$ is Noetherian. Hence it is a finite $\OO_Y$-algebra, so $Y'\to Y$ is finite. These hypotheses guarantee the stated finite Stein factorization; analogous factorizations require additional hypotheses outside this setting.
 Since $g$ is surjective with connected fibres, the connected components of the fibre $X_y$ are the fibres of $g$ over the points of the finite set $h^{-1}(y)$, so they correspond bijectively to the points of $h^{-1}(y)$.
-This count is at most the degree of $h$ over $y$, the length $\dim_{\kappa(y)} (f_* \OO_X \otimes \kappa(y))$, and can be smaller: for $f = h \colon \AA^1_\CC \to \AA^1_\CC$, $t \mapsto t^2$, which is finite with $g = \id$, the fibre over $0$ is the single point $\Spec \CC[t]/(t^2)$ of length $2$.
+The number of connected components is therefore at most the scheme-theoretic length
+$$
+\dim_{\kappa(y)}\bigl(f_*\OO_X\tensor_{\OO_Y}\kappa(y)\bigr)
+$$
+of the finite fibre of $h$. It can be strictly smaller: for $f=h\colon\AA^1_\CC\to\AA^1_\CC$, $t\mapsto t^2$, the fibre over $0$ is the single point $\Spec\CC[t]/(t^2)$ of length $2$.
 
 The immediate corollary is the connectedness statement in Zariski's main theorem: if $f_* \OO_X = \OO_Y$ then $Y' = Y$, so $h$ is the identity and the fibres of $f$ are connected.
 In the other direction, for a proper morphism of varieties with $Y$ normal and $f$ birational, the Stein factorisation is what proves the fibres connected without a separate argument.

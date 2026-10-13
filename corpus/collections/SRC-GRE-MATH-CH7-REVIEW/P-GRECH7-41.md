@@ -30,3 +30,70 @@ III. $\neg A\to\neg B$
 (D) I and II only
 (E) II and III only
 :::
+
+::: {.solution}
+<1>1. The hypotheses imply
+$$
+C\to A
+$$
+and
+$$
+D\to C.
+$$
+
+::: {.proof}
+The contrapositive of $\neg A\to\neg C$ is $C\to A$. The contrapositive of $\neg C\to\neg D$ is $D\to C$.
+:::
+
+<1>2. Statement II must be true.
+
+::: {.proof}
+One hypothesis is $A\to C$, while step <1>1 gives $C\to A$. Thus
+$$
+A\leftrightarrow C,
+$$
+so $A$ and $C$ are logically equivalent.
+:::
+
+<1>3. Statement III must be true.
+
+::: {.proof}
+Using the hypothesis $B\to D$ and step <1>1 gives the implication chain
+$$
+B\to D\to C\to A.
+$$
+Hence $B\to A$. Taking its contrapositive yields
+$$
+\neg A\to\neg B,
+$$
+which is statement III.
+:::
+
+<1>4. Statement I need not be true.
+
+::: {.proof}
+Assign the truth values
+$$
+A=C=\text{true},
+\qquad
+B=D=\text{false}.
+$$
+Then all four hypotheses hold: $A\to C$ is true; $B\to D$ is true because $B$ is false; and both $\neg C\to\neg D$ and $\neg A\to\neg C$ are true because their antecedents are false. But $A\to D$ is false. Thus statement I is not forced.
+:::
+
+<1>5. Therefore the statements that must be true are
+$$
+\boxed{\text{II and III only}},
+$$
+so the answer is (E).
+
+::: {.proof}
+Steps <1>2 and <1>3 prove II and III, while step <1>4 gives a counterexample to I.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the required choice.
+:::
+:::

@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the quartic and cubic irreducibility tests and the resolvent identities, the degree-six obstruction, and the exact finite-field subfield condition."
 ---
-
 ::: {.problem}
 Indicate whether each of the following if-then statements is true, and give a brief explanation to support your answer.
 If the statement is false, and there is a reasonable addition to the hypotheses that would make it true, please indicate that as well.
@@ -41,176 +40,288 @@ e. If $E$ and $F$ are finite fields and $|F|$ divides $|E|$ then $E$ has a subfi
 :::
 
 ::: {.solution}
-The answers are false, false, true, true, false.
-We use the quadratic-tower criterion for straightedge-and-compass
-constructibility [@DF04]. In particular, a constructible algebraic number
-lies in a finite tower of quadratic extensions of $\mathbf Q$, and its
-degree divides $2^m$ for some $m$. Finitely many constructible numbers lie
-in a common such tower: adjoin their quadratic generators successively,
-noting that each new extension has degree at most $2$. Their sums and
-products are therefore constructible as well.
+The answers are, in order, false, false, true, true, false. For
+constructibility, use the standard quadratic-tower criterion: if an
+algebraic number over $\QQ$ is constructible, then its degree over $\QQ$
+divides a power of $2$ [@DF04].
 
 ::: pf
 
-::: pf-step
-Part (a) is false. An explicit counterexample is
+::: {.pf-step #s1}
+
+Part (a) is false. One counterexample is
 $$
-f(x)=x^4-4x^2+x+1.
+\boxed{f(x)=x^4-4x^2+x+1}.
 $$
+A sufficient additional hypothesis is that the quartic is biquadratic.
 
 ::: pf-proof
 
-::: pf-step
-Modulo $2$, this polynomial becomes $x^4+x+1$. It has no root in
-$\mathbf F_2$. The only monic irreducible quadratic over $\mathbf F_2$ is
-$x^2+x+1$, and modulo that quadratic one has $x^3=1$, so
-$x^4+x+1\equiv1$. Thus the quartic has neither a linear nor a quadratic
-factor over $\mathbf F_2$, proving irreducibility there and hence over
-$\mathbf Q$ by Gauss's lemma [@DF04]. It also has four real roots:
-its values at $-3,-2,0,1,2$ are respectively $43,-1,1,-1,3$, giving a
-root in each of the four intervening intervals.
+::: {.pf-step #s1-1}
+
+The polynomial $f$ is irreducible over $\QQ$.
+
+::: pf-proof
+
+Modulo $2$,
+$$
+f(x)\equiv x^4+x+1.
+$$
+This polynomial has no root in $\FF_2$. The only monic irreducible
+quadratic over $\FF_2$ is $x^2+x+1$, and modulo this quadratic one has
+$x^3=1$, hence
+$$
+x^4+x+1\equiv1.
+$$
+Thus $x^4+x+1$ has neither a linear nor a quadratic factor over $\FF_2$,
+so it is irreducible. Gauss's lemma therefore implies that $f$ is
+irreducible over $\QQ$ [@DF04].
+
 :::
 
-::: pf-step
-Write its roots as $\alpha_1,\ldots,\alpha_4$ and put
-$$
-\beta_1=\alpha_1\alpha_2+\alpha_3\alpha_4,\quad
-\beta_2=\alpha_1\alpha_3+\alpha_2\alpha_4,\quad
-\beta_3=\alpha_1\alpha_4+\alpha_2\alpha_3.
-$$
-If $e_i$ are the elementary symmetric functions of the $\alpha_j$,
-Vieta's identities give $(e_1,e_2,e_3,e_4)=(0,-4,-1,1)$. Expanding the
-three displayed expressions gives
+:::
+
+::: {.pf-step #s1-2}
+
+Not all roots of $f$ are constructible.
+
+::: pf-proof
+
+Let the roots be $\alpha_1,\ldots,\alpha_4$, and define
 $$
 \begin{aligned}
-\sum_i\beta_i&=e_2=-4,\\
-\sum_{i<j}\beta_i\beta_j&=e_1e_3-4e_4=-4,\\
-\beta_1\beta_2\beta_3&=e_3^2+e_1^2e_4-4e_2e_4=17.
+\beta_1&=\alpha_1\alpha_2+\alpha_3\alpha_4,\\
+\beta_2&=\alpha_1\alpha_3+\alpha_2\alpha_4,\\
+\beta_3&=\alpha_1\alpha_4+\alpha_2\alpha_3.
 \end{aligned}
 $$
-Consequently each $\beta_i$ is a root of
+For the elementary symmetric functions of the roots, Vieta's formulas give
+$$
+(e_1,e_2,e_3,e_4)=(0,-4,-1,1).
+$$
+Direct expansion gives
+$$
+\sum_i\beta_i=-4,
+\qquad
+\sum_{i<j}\beta_i\beta_j=-4,
+\qquad
+\beta_1\beta_2\beta_3=17.
+$$
+Hence every $\beta_i$ is a root of
 $$
 h(y)=y^3+4y^2-4y-17.
 $$
-Modulo $3$ this is $y^3+y^2+2y+1$, whose values at $0,1,2$ are
-$1,2,2$. A cubic without a root over its coefficient field is
-irreducible. Hence $h$ is irreducible over $\mathbf Q$, and each
-$\beta_i$ has degree $3$.
+Modulo $3$, this becomes $y^3+y^2+2y+1$, whose values at
+$0,1,2$ are $1,2,2$. Thus it has no root in $\FF_3$, so the cubic is
+irreducible over $\FF_3$ and therefore $h$ is irreducible over $\QQ$.
+Consequently each $\beta_i$ has degree $3$ over $\QQ$.
+
+If all four $\alpha_i$ were constructible, then they would lie in a common
+finite tower of quadratic extensions, so their products and sums, in
+particular the $\beta_i$, would also be constructible. But a constructible
+algebraic number has degree dividing a power of $2$, whereas
+$[\QQ(\beta_i):\QQ]=3$. This is a contradiction.
+
 :::
 
-::: pf-step
-If all four $\alpha_i$ were constructible, their products and sums
-would make the $\beta_i$ constructible. Their degree $3$ contradicts
-the quadratic-tower criterion. Thus an irreducible quartic need not have
-constructible roots, even when all its roots are real.
+:::
 
-A sufficient additional hypothesis is that the quartic is biquadratic:
-$f(x)=a x^4+b x^2+c$ with $a,b,c\in\mathbf Q$ and $a\ne0$.
-Then every root is obtained by the two successive square-root operations
+::: {.pf-step #s1-3}
+
+The added hypothesis that
 $$
-x=\pm\sqrt{\frac{-b\pm\sqrt{b^2-4ac}}{2a}},
+f(x)=ax^4+bx^2+c
+\qquad(a,b,c\in\QQ,\ a\ne0)
 $$
-so all roots are constructible (with complex numbers interpreted as
-points in the plane).
-:::
-
-:::
-
-:::
-
-::: pf-step
-Part (b) is false, and in fact no root of an irreducible sextic
-over $\mathbf Q$ is constructible.
+is sufficient to make the conclusion true.
 
 ::: pf-proof
-For every root $\alpha$, irreducibility gives
-$[\mathbf Q(\alpha):\mathbf Q]=6$. If $\alpha$ lay in a quadratic tower
-of total degree $2^m$, the tower law would give $6\mid2^m$, which is
-impossible. Thus no additional hypothesis compatible with irreducibility
-and degree $6$ makes this assertion true.
+
+Writing $u=x^2$, the quadratic formula gives
+$$
+u=\frac{-b\pm\sqrt{b^2-4ac}}{2a},
+$$
+and then
+$$
+x=\pm\sqrt{\frac{-b\pm\sqrt{b^2-4ac}}{2a}}.
+$$
+Thus every root is obtained from rational numbers by field operations and
+successive square roots, hence is constructible.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give an irreducible quartic whose roots are not all
+constructible, and step [](#s1-3){.pf-ref} gives a reasonable sufficient additional
+hypothesis.
+
+:::
+
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
+
+Part (b) is false; in fact, no root of an irreducible degree-$6$
+polynomial over $\QQ$ is constructible.
+
+::: pf-proof
+
+If $g\in\QQ[x]$ is irreducible of degree $6$ and $\alpha$ is a root,
+then
+$$
+[\QQ(\alpha):\QQ]=6.
+$$
+If $\alpha$ were constructible, its degree would divide a power of $2$,
+contradicting the factor $3$ in $6$. Thus no additional hypothesis
+compatible with both irreducibility and degree $6$ can make the stated
+conclusion true.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
 Part (c) is true.
 
 ::: pf-proof
-Let $|F|=q$ and $[E:F]=d$, so $|E|=q^d$. Every element of $E$ satisfies
-$x^{q^d}=x$: for nonzero elements this follows from the order $q^d-1$
-of the multiplicative group, and it also holds at zero. Hence $E$ is
-the splitting field over $F$ of $x^{q^d}-x$. The derivative of this
-polynomial is $-1$, so its roots are distinct. Thus the extension is
-normal, and the minimal polynomial of every element divides a
-separable polynomial and is itself separable. Therefore $E/F$ is Galois.
-:::
+
+Let $\lvert F\rvert=q$ and $[E:F]=d$, so
+$\lvert E\rvert=q^d$. Every element of $E$ is a root of
+$$
+X^{q^d}-X.
+$$
+Indeed, this is immediate for $0$, while for $a\in E^\times$ it follows
+from $a^{q^d-1}=1$. Thus $E$ is the splitting field over $F$ of
+$X^{q^d}-X$. Its derivative is $-1$, so it has no repeated roots.
+Therefore $E/F$ is normal and separable, hence Galois.
 
 :::
 
-::: pf-step
-Part (d) is true, with $E$ and $K$ viewed in a common algebraic
-closure $\overline F$.
+:::
+
+::: {.pf-step #s4}
+
+Part (d) is true, where $E$ and $K$ are viewed in a common algebraic
+closure of $F$.
 
 ::: pf-proof
-The compositum $EK$ is algebraic and separable over $F$. Indeed, each of
-its elements belongs to a field generated by finitely many separable
-elements of $E\cup K$, and a finite extension generated by separable
-elements is separable [@DF04].
-Every $F$-embedding $\sigma:EK\to\overline F$ restricts to embeddings
-of $E$ and $K$. Their normality gives $\sigma(E)=E$ and $\sigma(K)=K$,
-so
+
+Because $E/F$ and $K/F$ are Galois, they are algebraic, normal, and
+separable. The compositum $EK/F$ is algebraic and separable: every element
+of $EK$ lies in an extension generated by finitely many separable elements
+from $E\cup K$ [@DF04].
+
+Let $\sigma:EK\to\overline F$ be an $F$-embedding. Its restrictions to
+$E$ and $K$ are $F$-embeddings. Normality gives
+$$
+\sigma(E)=E,
+\qquad
+\sigma(K)=K.
+$$
+Hence
 $$
 \sigma(EK)=\sigma(E)\sigma(K)=EK.
 $$
-Thus $EK/F$ is normal and separable, hence Galois. The same argument
-applies when $E/F$ and $K/F$ have infinite degree.
-:::
+Thus $EK/F$ is normal as well as separable, so it is Galois.
 
 :::
 
-::: pf-step
-Part (e) is false. For $|F|=p^a$ and
-$|E|=p^b$, the field $E$ has a subfield isomorphic to $F$ if and only
-if $a\mid b$.
+:::
+
+::: {.pf-step #s5}
+
+Part (e) is false. For
+$$
+\lvert F\rvert=p^a,
+\qquad
+\lvert E\rvert=p^b,
+$$
+the correct condition for $E$ to contain a subfield isomorphic to $F$ is
+$$
+\boxed{a\mid b}.
+$$
 
 ::: pf-proof
 
-::: pf-step
-Take $F=\mathbf F_4$ and $E=\mathbf F_8$. For explicit models use
-$\mathbf F_2[x]/(x^2+x+1)$ and $\mathbf F_2[y]/(y^3+y+1)$; the
-polynomials have no root in $\mathbf F_2$ and are therefore irreducible
-in degrees $2$ and $3$. Although $4\mid8$, a field embedding $F\to E$
-would embed the multiplicative group of order $3$ into one of order
-$7$, contradicting Lagrange's theorem.
-:::
+::: {.pf-step #s5-1}
 
-::: pf-step
-More generally, an embedding of $F$ into $E$ identifies their prime
-fields. The tower law then gives
+Divisibility of field orders is not sufficient.
+
+::: pf-proof
+
+Take $F=\FF_4$ and $E=\FF_8$. Then $4\mid8$. If $F$ embedded in $E$,
+the induced embedding
 $$
-b=[E:\mathbf F_p]=[E:F]\,[F:\mathbf F_p]=[E:F]a,
+F^\times\hookrightarrow E^\times
 $$
-so $a\mid b$ is necessary.
+would embed a group of order $3$ into a group of order $7$, impossible by
+Lagrange's theorem. Hence $E$ has no subfield isomorphic to $F$.
 
-Conversely, suppose $b=ar$. In characteristic $p$ the identity
+:::
+
+:::
+
+::: {.pf-step #s5-2}
+
+The condition $a\mid b$ is necessary.
+
+::: pf-proof
+
+If a copy of $F$ is a subfield of $E$, then both fields have prime field
+$\FF_p$, and the tower law gives
 $$
-X^{p^{ar}}-X=\sum_{j=0}^{r-1}(X^{p^a}-X)^{p^{aj}}
+b=[E:\FF_p]=[E:F][F:\FF_p]=[E:F]a.
 $$
-shows that $X^{p^a}-X$ divides $X^{p^b}-X$. The latter splits into
-distinct linear factors over $E$, so the former has exactly $p^a$
-distinct roots in $E$. Its root set is closed under addition,
-subtraction, multiplication, and inverses of nonzero elements, since
-it is the fixed set of the $p^a$-power Frobenius map. It is therefore
-a subfield of order $p^a$. It is isomorphic to $F$: both are splitting
-fields of $X^{p^a}-X$ over $\mathbf F_p$, and splitting fields are
-unique up to an isomorphism fixing the coefficient field [@DF04].
-Thus the additional exponent-divisibility hypothesis is both necessary
-and sufficient.
+Thus $a\mid b$.
+
 :::
+
+:::
+
+::: {.pf-step #s5-3}
+
+The condition $a\mid b$ is sufficient.
+
+::: pf-proof
+
+Write $b=ar$. In characteristic $p$,
+$$
+X^{p^{ar}}-X
+=\sum_{j=0}^{r-1}(X^{p^a}-X)^{p^{aj}},
+$$
+so $X^{p^a}-X$ divides $X^{p^b}-X$. The latter splits over $E$ into its
+$p^b$ distinct roots, so all $p^a$ roots of $X^{p^a}-X$ lie in $E$.
+These roots are the fixed points of the $p^a$-power Frobenius map and form
+a subfield of $E$ with $p^a$ elements. Any two finite fields with $p^a$
+elements are isomorphic, so this subfield is isomorphic to $F$ [@DF04].
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s5-1){.pf-ref}, [](#s5-2){.pf-ref} and [](#s5-3){.pf-ref} show that order divisibility alone is insufficient and
+establish the exact exponent-divisibility condition.
 
 :::
 
 :::
 
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} answer parts (a)--(e), respectively.
+
+:::
+
+:::
+
 :::

@@ -30,3 +30,166 @@ $$
 ::: {.remark}
 The source adds "Also cf. Stein et al, 1.4.7, 3.8.17", a pointer to exercises in Stein and Shakarchi, *Complex Analysis*; the statement does not depend on them.
 :::
+
+::: {.solution}
+<1>1. The function $f$ has only finitely many zeros in $\DD$, counted with multiplicity.
+
+::: {.proof}
+Since $\abs{f(z)}=1$ on $\abs{z}=1$, the function $f$ has no zeros on the unit circle. It is holomorphic on an open neighborhood $U$ of the closed disk. If $f$ had infinitely many zeros in $\DD$, compactness of the closed unit disk would give an accumulation point of those zeros in $\overline{\DD}\subset U$. By the identity theorem, $f$ would then vanish identically on the connected component of $U$ containing the closed disk, contradicting $\abs{f}=1$ on the boundary. Hence there are only finitely many zeros.
+:::
+
+<1>2. Let
+$$
+z_1,\ldots,z_n\in\DD
+$$
+be the zeros of $f$, repeated according to multiplicity, and define
+$$
+B(z)
+\coloneqq
+\prod_{k=1}^{n}
+\frac{z-z_k}{1-\overline{z_k}z}.
+$$
+Then $B$ is holomorphic on a neighborhood of $\overline{\DD}$ and
+$$
+\abs{B(z)}=1
+$$
+for every $\abs{z}=1$.
+
+::: {.proof}
+For each $k$ and $\abs{z}\le1$,
+$$
+\abs{\overline{z_k}z}
+\le
+\abs{z_k}
+<1,
+$$
+so $1-\overline{z_k}z\ne0$ on a neighborhood of the closed disk. Thus each factor and hence $B$ is holomorphic there.
+
+If $\abs{z}=1$, then
+$$
+\begin{aligned}
+\abs{z-z_k}^2
+&=
+(z-z_k)(\overline z-\overline{z_k})\\
+&=
+1-z\overline{z_k}-z_k\overline z+\abs{z_k}^2,
+\end{aligned}
+$$
+whereas
+$$
+\begin{aligned}
+\abs{1-\overline{z_k}z}^2
+&=
+(1-\overline{z_k}z)(1-z_k\overline z)\\
+&=
+1-z\overline{z_k}-z_k\overline z+\abs{z_k}^2.
+\end{aligned}
+$$
+Hence
+$$
+\abs{\frac{z-z_k}{1-\overline{z_k}z}}=1
+$$
+on the unit circle. Multiplying over $k$ gives $\abs{B(z)}=1$.
+:::
+
+<1>3. The quotient
+$$
+h(z)\coloneqq\frac{f(z)}{B(z)}
+$$
+extends to a holomorphic nowhere-zero function on a neighborhood of $\overline{\DD}$.
+
+::: {.proof}
+By construction, the zeros of $B$ in $\DD$ are exactly $z_1,\ldots,z_n$ with the same multiplicities as the zeros of $f$. Thus at each common zero, the quotient $f/B$ has a removable singularity and extends holomorphically with a nonzero value. Away from those zeros, $B$ is nonzero. Hence the extended function $h$ is holomorphic and nowhere zero on a neighborhood of the closed disk.
+:::
+
+<1>4. On the unit circle,
+$$
+\abs{h(z)}=1.
+$$
+
+::: {.proof}
+For $\abs{z}=1$, the hypotheses and step <1>2 give
+$$
+\abs{h(z)}
+=
+\frac{\abs{f(z)}}{\abs{B(z)}}
+=
+\frac11
+=1.
+$$
+:::
+
+<1>5. Throughout the unit disk,
+$$
+\abs{h(z)}=1.
+$$
+
+::: {.proof}
+By step <1>3, both $h$ and $1/h$ are holomorphic on a neighborhood of the closed disk. Step <1>4 and the maximum modulus principle give
+$$
+\abs{h(z)}\le1
+$$
+for $z\in\DD$. Applying the same argument to $1/h$ gives
+$$
+\abs{\frac1{h(z)}}\le1,
+$$
+equivalently
+$$
+\abs{h(z)}\ge1.
+$$
+Hence $\abs{h(z)}=1$ throughout $\DD$.
+:::
+
+<1>6. The function $h$ is a unimodular constant.
+
+::: {.proof}
+If $h$ were nonconstant, the open mapping theorem would imply that $h(\DD)$ is open in $\CC$. But step <1>5 gives
+$$
+h(\DD)\subset\{w\in\CC:\abs{w}=1\},
+$$
+which has empty interior. Therefore $h$ is constant:
+$$
+h(z)\equiv c.
+$$
+Step <1>5 gives $\abs{c}=1$, so
+$$
+c=e^{i\theta}
+$$
+for some $\theta\in\RR$.
+:::
+
+<1>7. If $f$ has at least one zero in $\DD$, then
+$$
+\boxed{
+f(z)
+=
+e^{i\theta}
+\prod_{k=1}^{n}
+\frac{z-z_k}{1-\overline{z_k}z}.
+}
+$$
+
+::: {.proof}
+By step <1>3,
+$$
+f=hB.
+$$
+Substitute the constant value of $h$ from step <1>6 and the definition of $B$ from step <1>2.
+:::
+
+<1>8. If $f$ has no zeros in $\DD$, then
+$$
+\boxed{f(z)=e^{i\theta}}
+$$
+for some $\theta\in\RR$.
+
+::: {.proof}
+In the zero-free case, take the empty product $B\equiv1$. Steps <1>3--<1>6 then apply directly to $h=f$, showing that $f$ is a unimodular constant.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Steps <1>7 and <1>8 give exactly the two alternatives in the statement.
+:::
+:::

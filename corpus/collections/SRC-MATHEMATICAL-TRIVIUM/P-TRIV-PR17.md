@@ -30,3 +30,56 @@ $$
 P ( | \xi | \geqslant x ) \leqslant x ^ { - m } \mathbf { E } | \xi | ^ { m } , x > 0 , m > 0 .\tag{46}
 $$
 :::
+
+::: {.solution}
+<1>1. For $\lambda>0$, the event $\{\xi\geq x\}$ equals
+\[
+\{e^{\lambda\xi}\geq e^{\lambda x}\}.
+\]
+
+::: {.proof}
+The exponential function $u\mapsto e^{\lambda u}$ is strictly increasing when $\lambda>0$.
+:::
+
+<1>2. Markov's inequality applied to the nonnegative random variable $e^{\lambda\xi}$ gives
+\[
+\boxed{
+P(\xi\geq x)
+\leq e^{-\lambda x}\mathbf E e^{\lambda\xi}}.
+\]
+
+::: {.proof}
+For any nonnegative random variable $Y$ and $a>0$,
+\[
+\mathbf EY\geq\mathbf E[Y\mathbf1_{Y\geq a}]
+\geq aP(Y\geq a),
+\]
+so $P(Y\geq a)\leq\mathbf EY/a$. Take $Y=e^{\lambda\xi}$ and $a=e^{\lambda x}$, using step <1>1. Finiteness of the stated exponential moment makes the bound finite.
+:::
+
+<1>3. For $m>0$ and $x>0$, the event $\{|\xi|\geq x\}$ equals
+\[
+\{|\xi|^m\geq x^m\}.
+\]
+
+::: {.proof}
+The function $u\mapsto u^m$ is increasing on $[0,\infty)$ for every $m>0$.
+:::
+
+<1>4. Markov's inequality applied to $|\xi|^m$ gives
+\[
+\boxed{
+P(|\xi|\geq x)
+\leq x^{-m}\mathbf E|\xi|^m}.
+\]
+
+::: {.proof}
+Apply the Markov inequality proved in step <1>2 to the nonnegative random variable $Y=|\xi|^m$ with threshold $a=x^m$, and use step <1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves part (a), and step <1>4 proves part (b). Neither argument requires $\xi$ to have a continuous distribution.
+:::
+:::

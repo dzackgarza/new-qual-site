@@ -13,32 +13,51 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 What is the maximum number of ramification points that a mapping of finite degree from one smooth projective curve over $\CC$ of genus 1 to another smooth projective curve of genus 1 can have?
 Give an explanation for your answer.
 :::
 
 ::: {.solution}
-Let $f\colon X\to Y$ be a finite morphism of degree $d$ between smooth irreducible projective curves over $\CC$ of genus $1$, and let $e_p\geq 1$ be the ramification index of $f$ at $p\in X$.
 
 ::: pf
 
-::: {.pf-step #riemann-hurwitz-sum-zero}
-$\sum_{p\in X}(e_p-1)=0$.
+::: {.pf-step #s1}
+
+The total ramification of the map is zero.
 
 ::: pf-proof
-The Riemann--Hurwitz formula gives
+
+Let $f:C\to D$ have finite degree $d$, with $g(C)=g(D)=1$. The Riemann--Hurwitz formula gives
 $$
-2g(X)-2 = d\,\bigl(2g(Y)-2\bigr) + \sum_{p\in X}(e_p-1).
+2g(C)-2=d\bigl(2g(D)-2\bigr)+\sum_{p\in C}(e_p-1),
 $$
-With $g(X)=g(Y)=1$ both sides of $2g-2$ vanish, so the sum is $0$.
+where $e_p\ge1$ is the ramification index at $p$. Since both genera are $1$,
+$$
+0=\sum_{p\in C}(e_p-1).
+$$
+Each summand is nonnegative, so every summand is zero.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The maximum number of ramification points is $\boxed{0}$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $e_p=1$ for every $p\in C$. Thus $f$ is unramified and has no ramification points.
+
 :::
 
 :::
 
 ::: pf-qed
-Each term $e_p-1$ is nonnegative, so step [](#riemann-hurwitz-sum-zero){.pf-ref} forces $e_p=1$ for every $p$. The maximum number of ramification points is $\boxed{0}$: every such map is unramified.
+
+Step [](#s2){.pf-ref} gives the requested maximum and its justification.
+
 :::
 
 :::

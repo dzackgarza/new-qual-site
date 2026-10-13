@@ -36,3 +36,285 @@ Theorem 3.13 (Giroux et al.) assumes that $\partial F$ is a union of leaves and 
 
 Show that the hypotheses of Theorem 3.13 hold for generic a generic foliation of $F$.
 :::
+
+::: {.solution}
+The relevant genericity statement is the Kupka--Smale/Peixoto theorem for
+flows on compact surfaces, applied to a vector field defining the oriented
+singular foliation.
+
+<1>1. Choose a smooth vector field
+\[
+v
+\]
+on $F$ whose oriented trajectories are the leaves of
+\[
+\mathcal F
+\]
+and whose zero set is the singular set of $\mathcal F$.
+
+::: {.proof}
+An oriented singular foliation on a surface is locally the kernel of a
+nonzero $1$-form away from its singular points. After fixing a positive area
+form $\omega$, write
+\[
+\iota_v\omega=\alpha,
+\]
+where $\ker\alpha=T\mathcal F$.
+Then $v$ is tangent to the oriented leaves and vanishes exactly at the
+singular points.
+:::
+
+<1>2. After an arbitrarily small $C^\infty$ perturbation, every singular
+point of $v$ is nondegenerate and satisfies
+\[
+\operatorname{div}_\omega v\ne0.
+\]
+
+::: {.proof}
+Nondegeneracy of a zero means
+\[
+\det Dv(p)\ne0.
+\]
+By the standard transversality theorem, this is generic for zeros of vector
+fields.
+
+At such a zero,
+\[
+\operatorname{div}_\omega v(p)
+\]
+is the trace of the linearization in oriented local coordinates. The
+additional condition
+\[
+\operatorname{tr}Dv(p)=0
+\]
+is one further scalar equation on the $1$-jet of $v$, hence is avoided by a
+generic perturbation as well.
+
+Thus a generic singularity is isolated and has nonzero divergence.
+:::
+
+<1>3. A generic closed leaf is hyperbolic:
+\[
+\phi'(0)\ne1.
+\]
+Hence every closed leaf is either attractive or repellant.
+
+::: {.proof}
+For a closed orbit, choose a small transverse interval and its Poincaré return
+map
+\[
+\phi:I\to I.
+\]
+The equation
+\[
+\phi'(0)=1
+\]
+is the degeneracy condition for the periodic orbit. The Kupka--Smale theorem
+states that, for a residual set of vector fields, all periodic orbits are
+hyperbolic, hence
+\[
+\phi'(0)\ne1.
+\]
+If
+\[
+|\phi'(0)|<1
+\]
+the orbit is attractive; if
+\[
+|\phi'(0)|>1
+\]
+it is repellant. In the oriented surface convention of the source, the
+monodromy preserves transverse orientation, so
+\[
+\phi'(0)>0,
+\]
+and these conditions reduce to the source's inequalities
+\[
+\phi'(0)<1
+\quad\text{or}\quad
+\phi'(0)>1.
+\]
+:::
+
+<1>4. For a generic foliation on compact $F$, the nonwandering set consists
+of finitely many singular points and hyperbolic closed leaves.
+
+::: {.proof}
+Peixoto's structural-stability theorem for flows on compact surfaces says
+that Morse--Smale vector fields form an open dense set: their nonwandering
+sets consist of finitely many hyperbolic equilibria and hyperbolic periodic
+orbits, and all invariant manifolds meet transversely.
+
+The same conclusion applies here after the generic perturbation in
+steps <1>2--<1>3.
+:::
+
+<1>5. Every nonsingular nonclosed leaf has
+\[
+\alpha\text{-limit}
+\quad\text{and}\quad
+\omega\text{-limit}
+\]
+equal to a singular point or a closed leaf.
+
+::: {.proof}
+Let $\gamma$ be a leaf that is neither singular nor periodic.
+Its forward and backward limit sets are nonempty compact invariant subsets
+of the nonwandering set.
+
+By step <1>4, the nonwandering set is a finite union of isolated singular
+points and periodic orbits. A connected limit set contained in such a finite
+union must be one of those individual basic pieces.
+
+Therefore
+\[
+\lim_{t\to+\infty}\gamma(t)
+\]
+and
+\[
+\lim_{t\to-\infty}\gamma(t)
+\]
+are each a singular point or a closed leaf, in the sense of convergence to
+that invariant set.
+:::
+
+<1>6. Thus hypothesis (1) of Theorem 3.13 holds generically.
+
+::: {.proof}
+This is exactly step <1>5, together with the trivial cases of singular and
+closed leaves themselves.
+:::
+
+<1>7. Hypothesis (2) of Theorem 3.13 holds generically.
+
+::: {.proof}
+Step <1>2 gives nonzero divergence at every singular point, and step <1>3
+gives
+\[
+\phi'(0)\ne1
+\]
+for every closed leaf.
+:::
+
+<1>8. A generic characteristic foliation has no leaf running from
+\[
+K_-
+\quad\text{to}\quad
+K_+.
+\]
+
+::: {.proof}
+There are two possibilities.
+
+First, an attractive closed leaf cannot be the backward limit of a distinct
+leaf, and a repellant closed leaf cannot be the forward limit of a distinct
+leaf. Thus no oriented trajectory can run from an attractive closed leaf in
+$K_-$ to a repellant closed leaf in $K_+$.
+
+For singular endpoints, recall the contact-sign convention from the previous
+section of the source:
+for a positive contact structure,
+\[
+\operatorname{sign}
+\bigl(
+\operatorname{div}_\omega v(p)
+\bigr)
+=
+\operatorname{sign}(p).
+\]
+Thus positive elliptic singularities are sources and negative elliptic
+singularities are sinks, so the forbidden direction is dynamically
+impossible in the elliptic cases.
+
+If a trajectory from a negative singular point to a positive singular point
+involves saddle branches, it is a saddle connection. Stable and unstable
+manifolds of hyperbolic singularities are $1$-dimensional. A connecting orbit
+forces them to coincide along that orbit, hence their intersection is not
+transverse. Kupka--Smale transversality excludes such saddle connections
+generically.
+
+Therefore no generic leaf runs from $K_-$ to $K_+$.
+:::
+
+<1>9. The singular set of a generic foliation has finitely many connected
+components.
+
+::: {.proof}
+By step <1>2, every singular point is isolated. A closed discrete subset of
+the compact surface $F$ is finite. Hence the singular set consists of
+finitely many singleton connected components.
+:::
+
+<1>10. Define a directed graph whose vertices are the singular points of one
+fixed sign and whose directed edges are leaves joining two such singular
+points in the direction of the flow. Generically this graph is finite and
+acyclic.
+
+::: {.proof}
+Finiteness follows from step <1>9.
+
+A directed cycle would consist of a finite cyclic chain of separatrices
+between hyperbolic singularities of the same sign. Each edge is a saddle
+connection. As in step <1>8, such a connection is a nontransverse
+intersection of a stable and an unstable $1$-manifold, forbidden by the
+Kupka--Smale condition.
+
+Hence the directed graph has no directed cycle.
+:::
+
+<1>11. Every finite acyclic directed graph admits a linear order of its
+vertices in which every directed edge points forward.
+
+::: {.proof}
+This is the standard topological-sorting theorem for finite directed acyclic
+graphs.
+
+Inductively, an acyclic finite directed graph has a vertex with no incoming
+edge. Place it first, delete it and all outgoing edges, and repeat.
+:::
+
+<1>12. Hypothesis (4) of Theorem 3.13 holds generically.
+
+::: {.proof}
+By step <1>9 there are finitely many singular components.
+
+Apply step <1>11 separately to the directed connection graphs of the positive
+and negative singular points. The resulting order has the property that every
+leaf joining two singular points of the same sign preserves the chosen order.
+This is exactly hypothesis (4).
+:::
+
+<1>13. The boundary condition in Theorem 3.13 is also generic relative to a
+fixed boundary model.
+
+::: {.proof}
+If $F$ is closed, there is nothing to prove.
+
+If $F$ has boundary and the perturbation is required to preserve a boundary
+model, perform the Kupka--Smale/Peixoto perturbation in the interior, relative
+to a collar of $\partial F$. The source assumes that collar has already been
+chosen so that
+\[
+\partial F
+\]
+is a union of leaves and singular points. A relative transversality
+perturbation leaves this boundary condition unchanged.
+:::
+
+<1>14. Therefore all hypotheses of Theorem 3.13 hold for a generic
+characteristic foliation of $F$.
+
+::: {.proof}
+Hypothesis (1) is step <1>6.
+Hypothesis (2) is step <1>7.
+Hypothesis (3) is step <1>8.
+Hypothesis (4) is step <1>12.
+The boundary condition is step <1>13.
+:::
+
+<1>15. Q.E.D.
+
+::: {.proof}
+Step <1>14 is precisely Exercise 3.15.
+:::
+:::

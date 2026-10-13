@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Proved necessity on eigenvectors and sufficiency blockwise from the binomial formula for powers of Jordan blocks."
 ---
-
 ::: {.problem}
 Let $T$ be an $n\times n$ complex matrix. Show that
 \[
@@ -35,10 +34,12 @@ if and only if every eigenvalue of $T$ has absolute value less than $1$.
 
 ::: pf
 
-::: {.pf-step #eigenvalue-bound-necessary}
+::: {.pf-step #s1}
+
 If $T^k\to0$, then every eigenvalue has absolute value less than $1$.
 
 ::: pf-proof
+
 Let $\lambda$ be an eigenvalue of $T$, and choose a nonzero eigenvector
 $v$ with
 $$
@@ -64,14 +65,17 @@ which is possible only when
 $$
 \boxed{|\lambda|<1.}
 $$
-:::
 
 :::
 
-::: pf-step
-If $T=SJS^{-1}$ with $J$ in Jordan form, then $T^k\to0$ as soon as $J_\lambda^k\to0$ for every Jordan block $J_\lambda$ of $J$.
+:::
+
+::: {.pf-step #s2}
+
+Reduce the converse to one Jordan block.
 
 ::: pf-proof
+
 Assume every eigenvalue of $T$ has absolute value less than $1$. Over
 $\mathbb C$, write
 $$
@@ -83,14 +87,17 @@ T^k=SJ^kS^{-1}.
 $$
 Thus it is enough to prove that every Jordan block occurring in $J$ has
 powers tending to zero.
-:::
 
 :::
 
-::: {.pf-step #jordan-block-powers-vanish}
+:::
+
+::: {.pf-step #s3}
+
 Powers of a Jordan block with $|\lambda|<1$ tend to zero.
 
 ::: pf-proof
+
 Let
 $$
 J_\lambda=\lambda I+N
@@ -134,15 +141,18 @@ terms,
 $$
 J_\lambda^k\longrightarrow0.
 $$
-:::
 
 :::
 
-::: pf-step
-If every eigenvalue of $T$ has absolute value less than $1$, then $T^k\to0$.
+:::
+
+::: {.pf-step #s4}
+
+Conclude for $T$.
 
 ::: pf-proof
-Every Jordan block of $J$ has powers tending to zero by step [](#jordan-block-powers-vanish){.pf-ref}, so
+
+Every Jordan block of $J$ has powers tending to zero by step [](#s3){.pf-ref}, so
 $$
 J^k\to0.
 $$
@@ -150,16 +160,24 @@ Therefore
 $$
 T^k=SJ^kS^{-1}\to0.
 $$
-Combining this with step [](#eigenvalue-bound-necessary){.pf-ref} proves
+Combining this with step [](#s1){.pf-ref} proves
 $$
 \boxed{
 T^k\to0
 \iff
 \text{every eigenvalue $\lambda$ of $T$ satisfies $|\lambda|<1$.}}
 $$
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves necessity, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove sufficiency.
+
+:::
+
+:::
+
 :::

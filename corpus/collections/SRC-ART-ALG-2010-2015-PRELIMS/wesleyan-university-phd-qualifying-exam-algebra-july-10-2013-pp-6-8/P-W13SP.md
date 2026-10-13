@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the coset kernel, the cancellation from p[H:K] dividing p!, and the prime-divisor obstruction, including p=2."
 ---
-
 ::: {.problem}
 Let $p$ be the smallest prime dividing the order of the finite group $G$.
 Show that any subgroup of $G$ of index $p$ is normal in $G$.
@@ -60,7 +59,7 @@ Lagrange's theorem therefore gives $[G:K]\mid p!$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The subgroup $K$ equals $H$.
 
@@ -81,6 +80,12 @@ contradiction. Hence $m=1$ and $H=K$. By step [](#s1){.pf-ref},
 $H$ is normal in $G$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the required normality.
 
 :::
 

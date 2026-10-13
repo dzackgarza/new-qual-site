@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the complex constructibility convention, the index-two subgroup chain, and the explicit Galois enclosure of a quadratic tower before using the degree obstruction."
 ---
-
 ::: {.problem}
 a. Suppose that $K$ is a Galois extension of $\mathbb{Q}$ of dimension $2^n$ for some positive integer $n$.
 Prove that every element of $K$ is constructible.
@@ -107,9 +106,9 @@ Append $C\supset\{1\}$ to obtain the required chain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
-In part (a), every element of $K$ is constructible.
+Part (a) follows from the Galois correspondence.
 
 ::: pf-proof
 
@@ -174,7 +173,7 @@ $N_r$ is the required extension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 The root in part (b) is not constructible.
 
@@ -193,6 +192,12 @@ which is impossible since $3\mid24$ but $3\nmid2^m$.
 Thus $\alpha$ is not constructible.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 

@@ -29,79 +29,34 @@ Show that $G$ contains a nonzero abelian normal subgroup of order divisible by $
 \envlist
 
 - $p$ groups have nontrivial centers.
-
 - Definition of maximality and $p\dash$groups
-
 - Sylows are conjugate
-
 - $Z(G) \ch G$ always.
-
 - Transitivity of characteristic: $A \ch B$ and $B\normal C$ implies $A \normal C$.
 :::
 
 ::: {.strategy}
-Just use maximality for (a). For (b), centers are always abelian, so $Z(H)$ is good to consider, just need to ensure it's normal in $G$.
+Just use maximality for (a).
+For (b), centers are always abelian, so $Z(H)$ is good to consider, just need to ensure it's normal in $G$.
 Use transitivity of characteristic.
 :::
 
 ::: {.solution}
-\envlist
+<1>1. Every Sylow $p$-subgroup $S$ of $G$ contains $H$.
 
-::: {.proof title="of a"}
-\envlist
-
-- By definition, $S\in \Syl_p(G) \iff S$ is a *maximal* $p\dash$subgroup: $S<G$ is a $p\dash$group, so $\size S = p^k$ for some $k$, $S$ is a proper subgroup, and $S$ is maximal in the sense that there are no proper $p\dash$subgroups $S'$ with $S \subseteq S' \subseteq G$.
-
-- Since $\size H = p^i$, $H$ is a $p\dash$subgroup of $G$.
-
-- If $H$ is maximal, then by definition $H\in \Syl_p(G)$
-
-- Otherwise, if $H$ is not maximal, there exists an $H' \supseteq H$ with $H'\leq G$ a $p\dash$subgroup properly containing $H$.
-
-  - In this apply the same argument to $H'$: this yields a proper superset containment at every stage, and since $G$ is finite, there is no infinite ascending chain of proper supersets.
-
-  - So this terminates in some maximal $p\dash$subgroup $S$, i.e. a Sylow $p\dash$subgroup.
-
-- So $H \subseteq S$ for some $S\in \Syl_p(G)$.
-
-- All Sylows are conjugate, so for any $S' \in \Syl_p(G)$ we can write $S' = gS\inverseof{g}$ for some $g$.
-
-- Then using that $H$ is normal, $H \subseteq S \implies H = gH\inverseof{g} \subseteq gS\inverseof{g} \definedas S'$.
-  So $H$ is contained in every Sylow $p\dash$subgroup.
-
+::: {.proof}
+Since $H$ is a $p$-subgroup, Sylow's containment theorem places it in some Sylow $p$-subgroup $S_0$. For any other Sylow $p$-subgroup $S$, conjugacy gives $S=gS_0g^{-1}$ for some $g\in G$. Normality of $H$ implies $H=gHg^{-1}\subseteq gS_0g^{-1}=S$.
 :::
 
-::: {.proof title="of b"}
-\envlist
+<1>2. The center $Z(H)$ is a nontrivial abelian normal subgroup of $G$, of order divisible by $p$.
 
-- Claim: $Z(H) \leq H$ works.
-
-  - It is nontrivial since $H$ is a $p\dash$group and $p\dash$groups have nontrivial centers
-
-  - It is abelian since $Z(Z(H)) = Z(H)$.
-
-  - $\size Z(H) = p^\ell$ for some $\ell \leq i$ by Lagrange
-
-- It thus remains to show that $Z(H) \normal G$.
-
-- Use that $Z(H) \ch H$ and use transitivity of characteristic to conclude $Z(H) \normal H$.
-
-- That $Z(H) \ch H$: let $\psi \in \Aut(H)$ and $x=\psi(y)\in \psi(Z(H))$ so $y\in Z(H)$, then for arbitrary $h\in H$,
- \[
- \psi(y)h 
- &= \psi(y) (\psi \circ \inverseof{\psi})(h) \\
- &= \psi( y \cdot \inverseof{\psi}(h) ) \\
- &= \psi( \inverseof{\psi}(h) \cdot y ) && \text{since } \inverseof{\psi}(h)\in H, \, y\in Z(H) \\
- &= h\psi(y)
- .\]
-
-- That $A \ch B \normal C \implies A\normal C$:
-
-  - $A\ch B$ iff $A$ is fixed by every $\psi\in \Aut(B)$., WTS $cA\inverseof{c} = A$ for all $c\in C$.
-
-  - Since $B\normal C$, the automorphism $\psi(\wait) \definedas c(\wait)\inverseof{c}$ descends to an element of $\Aut(B)$.
-
-  - Then $\psi(A) = A$ since $A\ch B$, so $cA\inverseof{c} = A$ and $A\normal C$.
+::: {.proof}
+Since $H$ is a nontrivial finite $p$-group, its class equation implies $|Z(H)|$ is a positive multiple of $p$. By definition $Z(H)$ is abelian. It is characteristic in $H$, since every automorphism of $H$ preserves the condition of commuting with all members of $H$. Conjugation by an element of $G$ restricts to an automorphism of $H$ because $H\trianglelefteq G$, so it preserves $Z(H)$. Thus $Z(H)\trianglelefteq G$.
 :::
 
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
 :::

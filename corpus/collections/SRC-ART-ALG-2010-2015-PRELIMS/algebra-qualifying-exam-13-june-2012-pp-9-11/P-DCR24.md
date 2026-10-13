@@ -17,7 +17,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-29
 ---
-
 ::: {.problem}
 a. Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2, 3, 5$ dividing the order of $A_5$.
 (It suffices to find generators of each of these groups.)
@@ -28,21 +27,31 @@ c. For each of the divisors $d = 6, 10, 15$ of 60, either find a subgroup of $A_
 :::
 
 ::: {.solution}
-Since $\abs{A_5}=5!/2=60=2^2\cdot3\cdot5$, Sylow $2$-, $3$-, and $5$-subgroups of $A_5$ have orders $4$, $3$, and $5$.
+Since $|A_5|=5!/2=60=2^2\cdot3\cdot5$, Sylow subgroups have
+orders $4$, $3$, and $5$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For part (a), take
+For part (a), one may take
 $$
-P_2=\langle(1\,2)(3\,4),(1\,3)(2\,4)\rangle,\qquad P_3=\langle(1\,2\,3)\rangle,\qquad P_5=\langle(1\,2\,3\,4\,5)\rangle.
+\begin{aligned}
+P_2&=\langle(12)(34),(13)(24)\rangle,\\
+P_3&=\langle(123)\rangle,\\
+P_5&=\langle(12345)\rangle.
+\end{aligned}
 $$
 
 ::: pf-proof
 
-The double transpositions $(1\,2)(3\,4)$, $(1\,3)(2\,4)$, $(1\,4)(2\,3)$ are even, commute, and together with $1$ form the Klein four-group $V_4$ of order $4$.
-A $3$-cycle and a $5$-cycle are even and generate cyclic subgroups of orders $3$ and $5$.
+The first subgroup is
+$$
+\{1,(12)(34),(13)(24),(14)(23)\},
+$$
+so it has order $4$. The other two displayed generators have orders $3$
+and $5$, respectively. These are the full powers of $2$, $3$, and $5$
+dividing $|A_5|$, so the three subgroups are Sylow subgroups.
 
 :::
 
@@ -50,18 +59,28 @@ A $3$-cycle and a $5$-cycle are even and generate cyclic subgroups of orders $3$
 
 ::: {.pf-step #s2}
 
-For part (b),
+The normalizer of $P_2$ is
 $$
-N_{A_5}(P_2)=A_4,\qquad N_{A_5}(P_3)=\langle(1\,2\,3),(1\,2)(4\,5)\rangle\cong S_3,\qquad N_{A_5}(P_5)=\langle(1\,2\,3\,4\,5),(2\,5)(3\,4)\rangle\cong D_{10},
+N_{A_5}(P_2)
+=\{g\in A_5:g(5)=5\}
+\cong A_4,
 $$
-where $A_4$ is the alternating group on $\{1,2,3,4\}$ and $D_{10}$ is dihedral of order $10$.
+and has order $12$.
 
 ::: pf-proof
 
-The index of the normalizer of a Sylow subgroup is the number of Sylow subgroups for that prime [@DF04], so it suffices to count Sylow subgroups and exhibit a subgroup of the right order inside each normalizer.
-The $15$ double transpositions of $A_5$ lie three to a Klein four-group, so $n_2=5$ and $\abs{N_{A_5}(P_2)}=12$; since $V_4\lhd A_4$, the normalizer is $A_4$.
-The $3$-cycles in $A_5$ number $20$, so $n_3=10$ and $\abs{N_{A_5}(P_3)}=6$; conjugation by $(1\,2)(4\,5)$ sends $(1\,2\,3)$ to $(2\,1\,3)=(1\,2\,3)^{-1}$, so the displayed group of order $6$ normalizes $P_3$, and it is nonabelian, hence $\cong S_3$.
-The $5$-cycles number $24$, so $n_5=6$ and $\abs{N_{A_5}(P_5)}=10$; conjugation by $(2\,5)(3\,4)$ sends $(1\,2\,3\,4\,5)$ to $(1\,5\,4\,3\,2)=(1\,2\,3\,4\,5)^{-1}$, so the displayed dihedral group of order $10$ is the normalizer.
+The three nonidentity elements of $P_2$ are precisely the double
+transpositions fixing $5$. Their common fixed-point set is therefore
+$\{5\}$. If $g$ normalizes $P_2$, conjugation by $g$ permutes these three
+elements, so it preserves their common fixed-point set; hence $g(5)=5$.
+Thus
+$$
+N_{A_5}(P_2)\subseteq\{g\in A_5:g(5)=5\}.
+$$
+
+Conversely, the even permutations fixing $5$ identify with $A_4$ acting on
+$\{1,2,3,4\}$, and the Klein four subgroup of double transpositions is
+normal in this $A_4$. Hence every such permutation normalizes $P_2$.
 
 :::
 
@@ -69,13 +88,103 @@ The $5$-cycles number $24$, so $n_5=6$ and $\abs{N_{A_5}(P_5)}=10$; conjugation 
 
 ::: {.pf-step #s3}
 
-For part (c), $A_5$ has subgroups of orders $6$ and $10$ and none of order $15$.
+The normalizer of $P_3$ is
+$$
+N_{A_5}(P_3)
+=\langle(123),(12)(45)\rangle
+\cong S_3,
+$$
+and has order $6$.
 
 ::: pf-proof
 
-The normalizers of $P_3$ and $P_5$ in step [](#s2){.pf-ref} have orders $6$ and $10$.
-A group of order $15$ is cyclic, because its Sylow $3$- and $5$-subgroups are both unique and hence normal, so it is their direct product $\ZZ/3\times\ZZ/5\cong\ZZ/15$.
-The elements of $A_5$ have cycle types $1^5$, $2^21$, $31^2$, $5$, hence orders $1,2,3,5$; none has order $15$.
+If $g$ normalizes $P_3=\langle(123)\rangle$, then
+$g(123)g^{-1}$ is either $(123)$ or $(132)$. Hence $g$ preserves the
+support $\{1,2,3\}$ and therefore also $\{4,5\}$. There are
+$3!\,2!/2=6$ even permutations preserving this partition.
+
+The displayed subgroup lies in $A_5$, preserves that partition, and has
+six elements because $(123)$ has order $3$, $(12)(45)$ has order $2$, and
+conjugation by $(12)(45)$ inverts $(123)$. Thus it is the full normalizer
+and is isomorphic to $S_3$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The normalizer of $P_5$ is
+$$
+N_{A_5}(P_5)
+=\langle(12345),(25)(34)\rangle
+\cong D_{10},
+$$
+the dihedral group of order $10$.
+
+::: pf-proof
+
+There are $(5-1)!=24$ five-cycles in $S_5$, all of which are even.
+Each Sylow $5$-subgroup contains four nonidentity five-cycles, so
+$$
+n_5=24/4=6.
+$$
+Orbit-stabilizer for conjugation gives
+$$
+|N_{A_5}(P_5)|=|A_5|/n_5=60/6=10.
+$$
+
+Let $r=(12345)$ and $s=(25)(34)$. Then $s$ is even,
+$s^2=1$, and direct conjugation gives
+$$
+srs=r^{-1}.
+$$
+Hence $\langle r,s\rangle$ is a dihedral subgroup of order $10$ that
+normalizes $P_5=\langle r\rangle$. By the preceding order calculation it
+is the whole normalizer.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+For part (c), $A_5$ has subgroups of orders $6$ and $10$, namely
+$N_{A_5}(P_3)$ and $N_{A_5}(P_5)$.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that these normalizers have the required orders.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+The group $A_5$ has no subgroup of order $15$.
+
+::: pf-proof
+
+Suppose $H\leq A_5$ had order $15$. Sylow's theorems inside $H$ give
+$$
+n_5\mid3,qquad n_5\equiv1\pmod5,
+$$
+so $n_5=1$, and
+$$
+n_3\mid5,qquad n_3\equiv1\pmod3,
+$$
+so $n_3=1$. Thus both Sylow subgroups are normal. Their intersection is
+trivial, and normal subgroups of coprime orders commute elementwise.
+Therefore
+$$
+H\cong C_3\times C_5\cong C_{15}.
+$$
+In particular $A_5$ would contain an element of order $15$.
+
+But the possible cycle types in $A_5$ are the identity, a double
+transposition, a $3$-cycle, and a $5$-cycle, with orders
+$1,2,3,5$. Hence no element of order $15$ exists, a contradiction.
 
 :::
 
@@ -83,7 +192,8 @@ The elements of $A_5$ have cycle types $1^5$, $2^21$, $31^2$, $5$, hence orders 
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} answer parts (a), (b), and (c).
+Step [](#s1){.pf-ref} answers part (a), steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} answer part (b), and
+steps [](#s5){.pf-ref} and [](#s6){.pf-ref} answer part (c).
 
 :::
 

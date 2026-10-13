@@ -15,3 +15,313 @@ audit:
 2. Give CW-complex structures on $\mathbb{RP}^2$ and $\mathbb{CP}^4$.
 3. Using the CW structure from part 2, compute the homology of $\mathbb{CP}^4$.
 :::
+
+::: {.solution}
+<1>1. A **CW complex** is a Hausdorff space
+\[
+X
+\]
+built inductively from skeleta
+\[
+X^0
+\subseteq
+X^1
+\subseteq
+X^2
+\subseteq
+\cdots
+\]
+as follows.
+
+::: {.proof}
+The $0$-skeleton
+\[
+X^0
+\]
+is a discrete set of points.
+
+For each
+\[
+n\ge1,
+\]
+the $n$-skeleton is obtained from
+\[
+X^{n-1}
+\]
+by attaching a collection of $n$-disks
+\[
+D^n_\alpha
+\]
+along continuous attaching maps
+\[
+\varphi_\alpha:
+S^{n-1}
+\to
+X^{n-1}.
+\]
+Thus
+\[
+X^n
+\cong
+X^{n-1}
+\cup_{\{\varphi_\alpha\}}
+\bigsqcup_\alpha D^n_\alpha.
+\]
+
+The space satisfies:
+
+- **closure-finiteness**: the closure of each cell meets only finitely many
+  cells;
+- **weak topology**: a subset
+  \[
+  A\subseteq X
+  \]
+  is closed iff its intersection with the closure of every cell is closed.
+
+The open cells are the images of the interiors of the attached disks.
+:::
+
+<1>2. The projective plane
+\[
+\mathbb{RP}^2
+\]
+has a CW structure with exactly one cell in each dimension
+\[
+0,1,2.
+\]
+
+::: {.proof}
+Use the filtration
+\[
+\mathbb{RP}^0
+\subset
+\mathbb{RP}^1
+\subset
+\mathbb{RP}^2.
+\]
+
+The space
+\[
+\mathbb{RP}^0
+\]
+is a point, giving one $0$-cell.
+
+The difference
+\[
+\mathbb{RP}^1
+\setminus
+\mathbb{RP}^0
+\]
+is an open $1$-cell, so one $1$-cell is attached.
+Indeed,
+\[
+\mathbb{RP}^1
+\cong
+S^1.
+\]
+
+Finally,
+\[
+\mathbb{RP}^2
+\setminus
+\mathbb{RP}^1
+\]
+is an open $2$-cell.
+Equivalently,
+\[
+\mathbb{RP}^2
+\]
+is obtained from a closed disk
+\[
+D^2
+\]
+by identifying antipodal boundary points.
+Thus the $2$-cell is attached to
+\[
+\mathbb{RP}^1\cong S^1
+\]
+by the double covering
+\[
+S^1\to S^1,
+\qquad
+z\mapsto z^2,
+\]
+which has degree $2$.
+:::
+
+<1>3. The complex projective space
+\[
+\mathbb{CP}^4
+\]
+has one cell in each even dimension
+\[
+0,2,4,6,8
+\]
+and no odd-dimensional cells.
+
+::: {.proof}
+Use the standard filtration
+\[
+\mathbb{CP}^0
+\subset
+\mathbb{CP}^1
+\subset
+\mathbb{CP}^2
+\subset
+\mathbb{CP}^3
+\subset
+\mathbb{CP}^4.
+\]
+
+For each
+\[
+k=0,1,2,3,4,
+\]
+the difference
+\[
+\mathbb{CP}^k
+\setminus
+\mathbb{CP}^{k-1}
+\]
+is homeomorphic to
+\[
+\mathbb C^k
+\cong
+\mathbb R^{2k}.
+\]
+Indeed, on the chart where the last homogeneous coordinate is nonzero,
+normalize it to $1$:
+\[
+[z_0:\cdots:z_{k-1}:1]
+\longleftrightarrow
+(z_0,\dots,z_{k-1})
+\in
+\mathbb C^k.
+\]
+Thus exactly one new open cell of real dimension
+\[
+2k
+\]
+appears at each stage.
+:::
+
+<1>4. Therefore the cellular chain groups of
+\[
+\mathbb{CP}^4
+\]
+are
+\[
+C_n^{\mathrm{cell}}
+(\mathbb{CP}^4)
+\cong
+\begin{cases}
+\mathbb Z,
+&n=0,2,4,6,8,\\
+0,
+&\text{otherwise}.
+\end{cases}
+\]
+
+::: {.proof}
+The cellular chain group in degree $n$ is free abelian on the $n$-cells.
+Step <1>3 gives exactly one cell in each listed even degree and none in the
+odd degrees.
+:::
+
+<1>5. Every cellular boundary map for
+\[
+\mathbb{CP}^4
+\]
+is zero.
+
+::: {.proof}
+The cellular differential has degree $-1$:
+\[
+d_n:
+C_n^{\mathrm{cell}}
+\to
+C_{n-1}^{\mathrm{cell}}.
+\]
+
+If
+\[
+n
+\]
+is even, then
+\[
+C_{n-1}^{\mathrm{cell}}=0.
+\]
+If
+\[
+n
+\]
+is odd, then
+\[
+C_n^{\mathrm{cell}}=0.
+\]
+Thus in every degree the source or target is zero, so
+\[
+d_n=0.
+\]
+:::
+
+<1>6. Hence the cellular homology is
+\[
+H_n(\mathbb{CP}^4;\mathbb Z)
+\cong
+C_n^{\mathrm{cell}}(\mathbb{CP}^4).
+\]
+
+::: {.proof}
+Because every differential is zero,
+\[
+\ker d_n
+=
+C_n^{\mathrm{cell}}
+\]
+and
+\[
+\operatorname{im}d_{n+1}
+=
+0.
+\]
+Therefore
+\[
+H_n
+=
+\ker d_n/
+\operatorname{im}d_{n+1}
+\cong
+C_n^{\mathrm{cell}}.
+\]
+:::
+
+<1>7. Thus
+\[
+\boxed{
+H_n(\mathbb{CP}^4;\mathbb Z)
+\cong
+\begin{cases}
+\mathbb Z,
+&n=0,2,4,6,8,\\
+0,
+&\text{otherwise}.
+\end{cases}
+}
+\]
+
+::: {.proof}
+Combine steps <1>4--<1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 defines a CW complex.
+Steps <1>2--<1>3 give the requested CW structures.
+Step <1>7 computes the homology of
+\[
+\mathbb{CP}^4.
+\]
+:::
+:::

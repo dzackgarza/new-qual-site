@@ -18,7 +18,6 @@ audit:
   by: Gemini 3.7 Flash
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Let $R$ be a PID with field of fractions $F$.
 Let $V$ be an $n$-dimensional vector space over $F$.
@@ -36,12 +35,17 @@ Use this to show that there exists an $R$-basis $\{e_1, \dots, e_n\}$ of $M$ and
 
 ::: {.pf-step #s1}
 
-An $R$-linearly independent subset of $V$ is $F$-linearly independent.
+Every finitely generated $R$-submodule $M\subseteq V$ is
+torsion-free.
 
 ::: pf-proof
 
-Let $m_1,\ldots,m_k\in V$ be $R$-linearly independent and suppose $\sum_i c_im_i=0$ with $c_i\in F$.
-Choose $d\in R\setminus\{0\}$ with $dc_i\in R$ for all $i$. Then $\sum_i(dc_i)m_i=0$, so $dc_i=0$ and hence $c_i=0$ for all $i$.
+If $0\ne r\in R$ and $v\in M$ satisfy $rv=0$, then $r$ is invertible
+in the fraction field $F$. Since $V$ is an $F$-vector space,
+$$
+v=r^{-1}(rv)=0.
+$$
+Thus $M$ has no nonzero torsion.
 
 :::
 
@@ -49,15 +53,27 @@ Choose $d\in R\setminus\{0\}$ with $dc_i\in R$ for all $i$. Then $\sum_i(dc_i)m_
 
 ::: {.pf-step #s2}
 
-In part (a), every finitely generated $R$-submodule $M\subseteq V$ is free of rank at most $n$.
+The module $M$ is free of rank at most $n$.
 
 ::: pf-proof
 
-If $r\in R\setminus\{0\}$ and $v\in M$ satisfy $rv=0$, then $v=r^{-1}(rv)=0$ in the $F$-vector space $V$; so $M$ is torsion-free.
-By the structure theorem for finitely generated modules over a PID, $M\cong R^k$ for some $k\ge0$ [@DF04].
-An $R$-basis of $M$ is $F$-linearly independent by step [](#s1){.pf-ref}, so $k\le\dim_FV=n$.
-
-For part (b), let $u_1,\ldots,u_n$ be an $R$-basis of $M$ and $w_1,\ldots,w_n$ an $R$-basis of $N$.
+By the structure theorem for finitely generated modules over the PID
+$R$, a finitely generated torsion-free module is free. Write
+$$
+M\cong R^k.
+$$
+Let $m_1,\ldots,m_k$ be an $R$-basis. If
+$$
+\sum_{i=1}^k c_i m_i=0
+$$
+with $c_i\in F$, choose $0\ne d\in R$ clearing all denominators, so
+$dc_i\in R$ for every $i$. Then
+$$
+\sum_{i=1}^k (dc_i)m_i=0.
+$$
+The $R$-linear independence of the $m_i$ gives $dc_i=0$, hence $c_i=0$.
+Therefore the same family is $F$-linearly independent in the
+$n$-dimensional vector space $V$, so $k\le n$.
 
 :::
 
@@ -65,13 +81,31 @@ For part (b), let $u_1,\ldots,u_n$ be an $R$-basis of $M$ and $w_1,\ldots,w_n$ a
 
 ::: {.pf-step #s3}
 
-There is $\alpha\in R\setminus\{0\}$ with $\alpha M\subseteq N$.
+If $M$ and $N$ are free of rank $n$ in $V$, then there is
+$0\ne\alpha\in R$ such that
+$$
+\alpha M\subseteq N.
+$$
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, $w_1,\ldots,w_n$ are $n$ linearly independent vectors in the $n$-dimensional space $V$, so they form an $F$-basis.
-Write $u_i=\sum_j(a_{ij}/b_{ij})w_j$ with $a_{ij},b_{ij}\in R$ and $b_{ij}\ne0$, and put $\alpha=\prod_{i,j}b_{ij}\ne0$.
-Then each $\alpha u_i=\sum_j(\alpha a_{ij}/b_{ij})w_j$ has coefficients in $R$, so $\alpha u_i\in N$; since the $u_i$ generate $M$, $\alpha M\subseteq N$.
+Choose $R$-bases $u_1,\ldots,u_n$ of $M$ and
+$w_1,\ldots,w_n$ of $N$. By step [](#s2){.pf-ref} applied to $N$, the vectors
+$w_1,\ldots,w_n$ are $F$-linearly independent. Since there are $n$ of
+them, they form an $F$-basis of $V$.
+
+Write
+$$
+u_i=\sum_{j=1}^n c_{ij}w_j,
+\qquad c_{ij}\in F.
+$$
+Choose one nonzero $\alpha\in R$ clearing all finitely many denominators
+of the $c_{ij}$. Then $\alpha c_{ij}\in R$ for every $i,j$, so
+$$
+\alpha u_i
+=\sum_{j=1}^n (\alpha c_{ij})w_j\in N.
+$$
+Since the $u_i$ generate $M$, this gives $\alpha M\subseteq N$.
 
 :::
 
@@ -79,13 +113,39 @@ Then each $\alpha u_i=\sum_j(\alpha a_{ij}/b_{ij})w_j$ has coefficients in $R$, 
 
 ::: {.pf-step #s4}
 
-There are an $R$-basis $e_1,\ldots,e_n$ of $M$ and $\beta_1,\ldots,\beta_n\in F^\times$ such that $\beta_1e_1,\ldots,\beta_ne_n$ is an $R$-basis of $N$.
+There exist an $R$-basis $e_1,\ldots,e_n$ of $M$ and nonzero
+$\beta_1,\ldots,\beta_n\in F$ such that
+$$
+\beta_1e_1,\ldots,\beta_ne_n
+$$
+is an $R$-basis of $N$.
 
 ::: pf-proof
 
-Multiplication by $\alpha$ is an injective $R$-linear map $M\to\alpha M$, so $\alpha M$ is a free submodule of rank $n$ of the free module $N$ of rank $n$, by step [](#s3){.pf-ref}.
-By the stacked-bases theorem for submodules of free modules over a PID [@DF04], there are an $R$-basis $w_1',\ldots,w_n'$ of $N$ and $d_1,\ldots,d_n\in R\setminus\{0\}$ such that $d_1w_1',\ldots,d_nw_n'$ is an $R$-basis of $\alpha M$.
-Then $e_i\coloneqq(d_i/\alpha)w_i'$ form an $R$-basis of $M=\alpha^{-1}(\alpha M)$, and with $\beta_i\coloneqq\alpha/d_i\in F^\times$ we get $\beta_ie_i=w_i'$, an $R$-basis of $N$.
+By step [](#s3){.pf-ref}, choose $0\ne\alpha\in R$ with
+$\alpha M\subseteq N$. Both $\alpha M$ and $N$ are free of rank $n$.
+The invariant-factor theorem for a full-rank submodule of a free module
+over a PID gives an $R$-basis
+$w_1',\ldots,w_n'$ of $N$ and nonzero elements
+$d_1,\ldots,d_n\in R$ such that
+$$
+d_1w_1',\ldots,d_nw_n'
+$$
+is an $R$-basis of $\alpha M$.
+
+Set
+$$
+e_i=\frac{d_i}{\alpha}w_i',
+\qquad
+\beta_i=\frac{\alpha}{d_i}.
+$$
+Because multiplication by $1/\alpha$ carries the basis of
+$\alpha M$ to a basis of $M$, the $e_i$ form an $R$-basis of $M$.
+Moreover,
+$$
+\beta_i e_i=w_i',
+$$
+so $\beta_1e_1,\ldots,\beta_ne_n$ is the chosen $R$-basis of $N$.
 
 :::
 
@@ -93,7 +153,7 @@ Then $e_i\coloneqq(d_i/\alpha)w_i'$ form an $R$-basis of $M=\alpha^{-1}(\alpha M
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} answers part (a), and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} answer part (b).
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (b).
 
 :::
 

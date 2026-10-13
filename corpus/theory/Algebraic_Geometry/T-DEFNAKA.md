@@ -52,7 +52,20 @@ $$
 \dim_{k(\mathfrak p)}\bigl(M\otimes_A k(\mathfrak p)\bigr)=r
 $$
 for every prime $\mathfrak p\subseteq A$, then $M\cong A^r$.
-This is the local case of the [finite locally free criterion](https://stacks.math.columbia.edu/tag/0FWG); the noetherian sheaf formulation is proved in [[P-AGH258SEMICONT]].
+The noetherian sheaf formulation is proved in [[P-AGH258SEMICONT]].
+:::
+
+::: {.proof title="Constant fibre dimension"}
+By the local form of Nakayama, choose $r$ elements of $M$ lifting a basis of $M/\mm M$. They give a surjection
+$$
+A^r\twoheadrightarrow M
+$$
+with kernel $K$.
+For any prime $\mathfrak p$, tensoring with $k(\mathfrak p)$ gives a surjection
+$$
+k(\mathfrak p)^r\twoheadrightarrow M\otimes_Ak(\mathfrak p)
+$$
+between vector spaces of the same dimension, hence an isomorphism. Therefore every vector in $K$ maps into $\mathfrak pA_{\mathfrak p}^r$ after localization at $\mathfrak p$. Each coordinate of every element of $K$ consequently lies in every prime ideal of $A$, hence in the nilradical. Since $A$ is reduced, all those coordinates vanish. Thus $K=0$ and $M\cong A^r$.
 :::
 
 ::: {.example title="Constant fiber dimension over a nonreduced local ring"}

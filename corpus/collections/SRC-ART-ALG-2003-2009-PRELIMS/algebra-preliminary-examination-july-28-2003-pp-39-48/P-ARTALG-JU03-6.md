@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Enumerated every subgroup of all five candidate groups, kept the two isomorphic order-six descriptions, and verified realizability over Q for both surviving isomorphism types."
 ---
-
 ::: {.problem}
 Let $E$ be a splitting field of $g(x) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
 Suppose its intermediate-field lattice consists of $\mathbb Q$, $E$, and exactly four distinct proper intermediate fields $F_1,F_2,F_3,F_4$. Each satisfies $\mathbb Q\subsetneq F_j\subsetneq E$, and no $F_j$ contains another $F_k$ for $j\ne k$. No degrees are specified.
@@ -42,7 +41,7 @@ Justify your answers.
 :::
 
 ::: {.solution}
-The possible answers are (c), (d), and (e). Parts (c) and (d)
+The possible answers are **(c), (d), and (e)**. Parts (c) and (d)
 describe the same isomorphism type. The unlabeled lattice does not
 distinguish that type from $C_3\times C_3$.
 
@@ -68,7 +67,7 @@ specified intermediate-field lattice.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Neither (a) nor (b) has the required subgroup lattice.
 
@@ -87,7 +86,7 @@ subgroups, of orders $2$ and $3$. This rules out (b).
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Both (c) and (d) have the required subgroup lattice and
 are realized over $\mathbb Q$.
@@ -119,7 +118,7 @@ the required field lattice. This realizes both descriptions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The group in (e) also has the required subgroup lattice
 and is realized over $\mathbb Q$.
@@ -133,7 +132,7 @@ partitioned among $8/2=4$ such subgroups. Lagrange's theorem
 rules out any other nontrivial proper subgroup. Distinct subgroups
 of order $3$ are incomparable, giving exactly the required lattice.
 
-For realization over $\mathbb Q$, let $L$ be
+To verify realization over the specified base field, let $L$ be
 the cyclotomic field $\mathbb Q(\zeta_{91})$. The cyclotomic
 Galois theorem and the Chinese remainder theorem give
 $$
@@ -156,8 +155,8 @@ $$
 \cong(C_6\times C_{12})/(C_2\times C_4)
 \cong C_3\times C_3.
 $$
-The field $E$ is the splitting field of a polynomial over $\mathbb Q$.
-Indeed, choose a finite basis
+This $E$ is a splitting field of a polynomial over $\mathbb Q$,
+as required in the question. Indeed, choose a finite basis
 $e_1,\ldots,e_d$ of $E$ over $\mathbb Q$ and let $g$ be the
 product of their minimal polynomials. Normality of $E/\mathbb Q$
 implies that all those polynomials split in $E$, and their roots
@@ -166,6 +165,12 @@ Thus the splitting field of $g$ inside $E$ is exactly $E$.
 Step [](#s1){.pf-ref} then gives the prescribed six-element lattice.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} rules out (a) and (b), step [](#s3){.pf-ref} proves that (c) and (d) work, and step [](#s4){.pf-ref} proves that (e) works.
 
 :::
 

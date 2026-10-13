@@ -24,3 +24,118 @@ Does there exist a holomorphic function $f:\mathbb D\to\mathbb C$ such that
 for every sequence $(z_n)\subset\mathbb D$ with $|z_n|\to1$?
 Justify your answer.
 :::
+
+::: {.solution}
+No such holomorphic function exists.
+
+<1>1. Suppose, for contradiction, that $f:\mathbb D\to\mathbb C$ is holomorphic and satisfies the stated property.
+
+::: {.proof}
+This assumes the negation of the desired answer.
+:::
+
+<1>2. The stated sequential property implies that for every $M>0$ there exists $0<r<1$ such that
+\[
+|z|>r
+\quad\Longrightarrow\quad
+|f(z)|>M.
+\]
+
+::: {.proof}
+If this failed for some $M>0$, then for every integer $n$ one could choose $z_n\in\mathbb D$ with
+\[
+|z_n|>1-1/n
+\qquad\text{and}\qquad
+|f(z_n)|\leq M.
+\]
+Then $|z_n|\to1$ but $|f(z_n)|$ would not tend to infinity, contradicting the hypothesis.
+:::
+
+<1>3. Taking $M=1$, there exists $r<1$ such that $f$ has no zeros in the annulus
+\[
+r<|z|<1.
+\]
+
+::: {.proof}
+By step <1>2, $|f(z)|>1$ throughout this annulus, so $f(z)\ne0$ there.
+:::
+
+<1>4. The zeros of $f$ in the closed disk $\{|z|\leq r\}$ are finite in number, counted without multiplicity.
+
+::: {.proof}
+The zero set of a nonzero holomorphic function is discrete. The function is not identically zero because step <1>3 gives $|f|>1$ near the boundary. A discrete subset of the compact disk $\{|z|\leq r\}$ is finite.
+:::
+
+<1>5. Let $a_1,\ldots,a_s$ be these zeros, repeated according to multiplicity, and define
+\[
+p(z)=\prod_{j=1}^s(z-a_j),
+\qquad
+g(z)=\frac{p(z)}{f(z)}.
+\]
+Then $g$ extends to a holomorphic function on all of $\mathbb D$.
+
+::: {.proof}
+By step <1>3 there are no zeros outside the compact disk, so $a_1,\ldots,a_s$ list every zero of $f$ in $\mathbb D$. At each zero, $p$ has exactly the same multiplicity as $f$, so the apparent singularity of $p/f$ is removable. Removing all of them yields a holomorphic function on $\mathbb D$.
+:::
+
+<1>6. One has
+\[
+g(z)\longrightarrow0
+\qquad\text{whenever }|z|\to1.
+\]
+
+::: {.proof}
+The polynomial $p$ is bounded on the unit disk: there is $C<\infty$ with $|p(z)|\leq C$ for $|z|<1$. By the assumed property, $|f(z)|\to\infty$ uniformly toward the boundary in the sense of step <1>2. Hence
+\[
+|g(z)|=\frac{|p(z)|}{|f(z)|}\leq\frac C{|f(z)|}\to0.
+\]
+:::
+
+<1>7. For every $0<\rho<1$, the maximum modulus principle gives
+\[
+\max_{|z|\leq\rho}|g(z)|
+=\max_{|z|=\rho}|g(z)|.
+\]
+
+::: {.proof}
+The function $g$ is holomorphic on the unit disk by step <1>5, hence on a neighborhood of the closed disk of radius $\rho$. The maximum modulus principle applies.
+:::
+
+<1>8. Letting $\rho\uparrow1$ in step <1>7 and using step <1>6 gives
+\[
+g\equiv0.
+\]
+
+::: {.proof}
+Fix $z\in\mathbb D$. For every $\rho$ with $|z|<\rho<1$,
+\[
+|g(z)|\leq\max_{|w|=\rho}|g(w)|.
+\]
+Step <1>6, in its uniform form from step <1>2, says the right side tends to zero as $\rho\uparrow1$. Thus $g(z)=0$. Since $z$ was arbitrary, $g\equiv0$.
+:::
+
+<1>9. This is impossible because $p$ is a nonzero polynomial and $g=p/f$ away from the zeros of $f$.
+
+::: {.proof}
+Choose a point $z$ that is not one of the finitely many zeros $a_j$. Then $p(z)\ne0$ and $f(z)\ne0$, so
+\[
+g(z)=p(z)/f(z)\ne0,
+\]
+contradicting step <1>8.
+:::
+
+<1>10. Therefore
+\[
+\boxed{\text{no such holomorphic function exists}.}
+\]
+
+::: {.proof}
+The existence assumption in step <1>1 led to the contradiction in step <1>9.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 answers the question and proves the assertion.
+:::
+:::

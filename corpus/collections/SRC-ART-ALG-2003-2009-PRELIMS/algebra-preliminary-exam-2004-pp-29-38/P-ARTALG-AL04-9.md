@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the faithful variable-permutation action, minimal-support linear-dependence argument, embedding bound, and separability and normality via distinct orbit polynomials."
 ---
-
 ::: {.problem}
 Given a finite group $G$, show that there are fields $K$ and $F$ such that $K$ is Galois over $F$, and $G$ is isomorphic to the Galois group of $K$ over $F$.
 :::
@@ -95,7 +94,7 @@ finiteness of the extension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The extension is Galois and its full Galois group is the
 displayed copy of $G$.
@@ -132,6 +131,12 @@ For the trivial group the construction has $F=K$, so that case
 is included as well.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} constructs fields $F\subseteq K$ with $K/F$ Galois and $\operatorname{Gal}(K/F)\cong G$.
 
 :::
 

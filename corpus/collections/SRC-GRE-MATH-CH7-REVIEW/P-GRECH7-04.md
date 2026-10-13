@@ -34,3 +34,48 @@ III. the graph is a forest
 ::: {.remark}
 The source shows the undirected graph in a figure that is not reproduced here.
 :::
+
+::: {.solution}
+<1>1. After deleting the edge $DE$, the remaining edge set is
+$$
+\{AB,BC,BD,BE\}.
+$$
+
+::: {.proof}
+The source figure has the five edges $AB$, $BC$, $BD$, $BE$, and $DE$. Deleting $DE$ leaves exactly the four displayed edges.
+:::
+
+<1>2. Statement I is false: vertex $D$ is odd.
+
+::: {.proof}
+By step <1>1, the only remaining edge incident to $D$ is $BD$. Thus $\deg(D)=1$, which is odd.
+:::
+
+<1>3. Statement II is true: the resulting graph is a spanning tree of the original graph.
+
+::: {.proof}
+The deletion removes no vertices, so the resulting graph contains all five original vertices. By step <1>1, every vertex $A,C,D,E$ is joined directly to $B$, so the graph is connected. It has five vertices and four edges; a connected graph on $n$ vertices with $n-1$ edges is a tree. Hence it is a tree containing every original vertex, that is, a spanning tree of the original graph.
+:::
+
+<1>4. Statement III is true: the resulting graph is a forest.
+
+::: {.proof}
+Every tree is acyclic, and every acyclic graph is a forest. Step <1>3 shows that the resulting graph is a tree.
+:::
+
+<1>5. Therefore the true statements are
+$$
+\boxed{\text{II and III only}},
+$$
+so the answer is (D).
+
+::: {.proof}
+Step <1>2 rules out I, while steps <1>3 and <1>4 establish II and III.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the required choice.
+:::
+:::

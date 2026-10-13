@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the hypotheses, inverse maps, degree formulas, and the distinction between K/E being Galois and E/F requiring a normal subgroup."
 ---
-
 ::: {.problem}
 Let $K$ and $F$ be fields, with $K$ a finite-dimensional algebraic extension of $F$.
 
@@ -33,7 +32,14 @@ Let $K$ and $F$ be fields, with $K$ a finite-dimensional algebraic extension of 
 :::
 
 ::: {.solution}
-(a) The finite extension $K/F$ is \dfn{Galois} if it is both normal and
+
+::: pf
+
+::: {.pf-step #s1}
+
+Definition for part (a).
+
+The finite extension $K/F$ is **Galois** if it is both normal and
 separable. Normality means that every irreducible polynomial in
 $F[x]$ with a root in $K$ splits into linear factors in $K[x]$.
 Separability means that the minimal polynomial over $F$ of every
@@ -46,11 +52,21 @@ $$
 $$
 with composition as the group operation.
 
-(b) Let $K/F$ be a finite Galois extension with
+:::
+
+::: {.pf-step #s2}
+
+The fundamental theorem for part (b).
+
+Assume now that $K/F$ is finite Galois, and set
 $G=\operatorname{Gal}(K/F)$. Then the following statements hold
 [@DF04].
 
-(i) There is an inclusion-reversing bijection between intermediate
+::: pf-proof
+
+::: pf-step
+
+There is an inclusion-reversing bijection between intermediate
 fields $F\subseteq E\subseteq K$ and subgroups $H\leq G$, given by
 $$
 E\longmapsto\operatorname{Gal}(K/E),\qquad
@@ -70,15 +86,23 @@ E_1\subseteq E_2
 \operatorname{Gal}(K/E_2)\subseteq\operatorname{Gal}(K/E_1).
 $$
 
-(ii) For every intermediate field $E$, the extension $K/E$ is
-Galois. With $H=\operatorname{Gal}(K/E)$,
+:::
+
+::: pf-step
+
+For every intermediate field $E$, the extension $K/E$ is
+Galois. With $H=\operatorname{Gal}(K/E)$, the degree formulas are
 $$
 [K:E]=|H|,\qquad [E:F]=[G:H],\qquad [K:F]=|G|.
 $$
 
-(iii) The extension $E/F$ is Galois if and only if
+:::
+
+::: pf-step
+
+The extension $E/F$ is Galois if and only if
 $H=\operatorname{Gal}(K/E)$ is normal in $G$.
-In that case restriction to $E$ is a
+When these equivalent conditions hold, restriction to $E$ is a
 surjective homomorphism
 $$
 G\longrightarrow\operatorname{Gal}(E/F)
@@ -87,4 +111,19 @@ with kernel $H$, and therefore induces an isomorphism
 $$
 G/H\cong\operatorname{Gal}(E/F).
 $$
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the definition requested in part (a), and step [](#s2){.pf-ref} states the Fundamental Theorem of Galois Theory requested in part (b).
+
+:::
+
+:::
+
 :::

@@ -49,3 +49,893 @@ H_0(D)=\mathbb Z/8,\qquad H_1(D)=\mathbb Z\oplus\mathbb Z/6,\qquad H_2(D)=\mathb
 with all other homology groups zero, determine the homology groups of $\underline{\operatorname{Hom}}(C_*,D_*)$.
 Use the same circle of ideas used in proving the Künneth theorem.
 :::
+
+::: {.solution}
+Use the standard homological grading on the internal Hom complex:
+\[
+\underline{\operatorname{Hom}}_n(C,D)
+\coloneqq
+\prod_i
+\operatorname{Hom}(C_i,D_{i+n}),
+\]
+with differential
+\[
+\partial\phi
+\coloneqq
+d_D\phi-(-1)^n\phi d_C
+\]
+for homogeneous
+\[
+\phi
+\in
+\underline{\operatorname{Hom}}_n(C,D).
+\]
+
+The numerical part of the source requires the usual additional hypothesis
+that $C_*$ is a bounded-below complex of free abelian groups, or equivalently
+that the total Hom is being computed from a free model of $C_*$. Without
+this hypothesis, the listed homology groups do not determine the answer.
+
+<1>1. The numerical assertion is not determined by homology for arbitrary
+bounded-below chain complexes.
+
+::: {.proof}
+Consider the bounded acyclic complex
+\[
+A:
+0
+\longrightarrow
+\mathbb Z
+\xrightarrow{\times2}
+\mathbb Z
+\xrightarrow{\bmod 2}
+\mathbb Z/2
+\longrightarrow
+0,
+\]
+concentrated in degrees
+\[
+2,1,0.
+\]
+It is exact:
+\[
+\ker(\mathbb Z\to\mathbb Z/2)
+=
+2\mathbb Z
+=
+\operatorname{im}(\times2),
+\]
+the first map is injective, and the last map is surjective.
+Thus
+\[
+H_*(A)=0.
+\]
+
+Let
+\[
+E
+\]
+be the chain complex
+\[
+\mathbb Z
+\]
+concentrated in degree $0$.
+Then
+\[
+\underline{\operatorname{Hom}}(A,E)
+\]
+has nonzero terms
+\[
+\mathbb Z
+\xrightarrow{\times2}
+\mathbb Z
+\]
+in degrees
+\[
+-1\to-2.
+\]
+Therefore
+\[
+H_{-2}
+\underline{\operatorname{Hom}}(A,E)
+\cong
+\mathbb Z/2.
+\]
+
+So adding the acyclic summand $A$ to a complex does not change its homology
+but can change the homology of raw total Hom.
+Hence the second half of the source needs a free/projective model
+hypothesis.
+:::
+
+<1>2. Let
+\[
+f,g:C_*\to C'_*
+\]
+be chain maps that are chain-homotopic.
+Choose a chain homotopy
+\[
+h_i:C_i\to C'_{i+1}
+\]
+such that
+\[
+f-g
+=
+d_{C'}h+hd_C.
+\]
+
+::: {.proof}
+This is the definition of a chain homotopy between the chain maps $f$ and
+$g$.
+:::
+
+<1>3. Precomposition gives chain maps
+\[
+f^*,g^*:
+\underline{\operatorname{Hom}}(C'_*,D_*)
+\longrightarrow
+\underline{\operatorname{Hom}}(C_*,D_*),
+\]
+defined by
+\[
+f^*(\phi)=\phi f,
+\qquad
+g^*(\phi)=\phi g.
+\]
+
+::: {.proof}
+If
+\[
+\phi:C'_i\to D_{i+n}
+\]
+has degree $n$, then
+\[
+\phi f:C_i\to D_{i+n}
+\]
+has the same degree.
+
+Since $f$ and $g$ commute with the chain differentials, the internal-Hom
+differential satisfies
+\[
+\partial(\phi f)
+=
+(\partial\phi)f,
+\]
+and similarly for $g$.
+Thus both precomposition maps are chain maps.
+:::
+
+<1>4. Define
+\[
+K:
+\underline{\operatorname{Hom}}_n(C'_*,D_*)
+\longrightarrow
+\underline{\operatorname{Hom}}_{n+1}(C_*,D_*)
+\]
+by
+\[
+\boxed{
+K(\phi)
+=
+(-1)^n\phi h.
+}
+\]
+
+::: {.proof}
+The homotopy
+\[
+h:C_i\to C'_{i+1}
+\]
+raises the $C'$-index by $1$.
+Thus if
+\[
+\phi:C'_{i+1}\to D_{i+1+n},
+\]
+then
+\[
+\phi h:C_i\to D_{i+(n+1)},
+\]
+so $K$ has degree $+1$ as required for a chain homotopy.
+:::
+
+<1>5. One has
+\[
+\boxed{
+\partial K+K\partial
+=
+f^*-g^*.
+}
+\]
+
+::: {.proof}
+Let
+\[
+\phi
+\]
+have degree $n$.
+Then
+\[
+K(\phi)=(-1)^n\phi h.
+\]
+Using the internal-Hom differential,
+\[
+\begin{aligned}
+\partial K(\phi)
+&=
+(-1)^n d_D\phi h
+-
+(-1)^{n+1}(-1)^n\phi h d_C\\
+&=
+(-1)^n d_D\phi h
++
+\phi h d_C.
+\end{aligned}
+\]
+
+Also
+\[
+\partial\phi
+=
+d_D\phi-(-1)^n\phi d_{C'}
+\]
+has degree $n-1$, so
+\[
+\begin{aligned}
+K\partial(\phi)
+&=
+(-1)^{n-1}
+\left(
+d_D\phi-(-1)^n\phi d_{C'}
+\right)h\\
+&=
+-(-1)^n d_D\phi h
++
+\phi d_{C'}h.
+\end{aligned}
+\]
+Adding gives
+\[
+\begin{aligned}
+(\partial K+K\partial)(\phi)
+&=
+\phi
+\bigl(
+h d_C+d_{C'}h
+\bigr)\\
+&=
+\phi(f-g)\\
+&=
+f^*(\phi)-g^*(\phi).
+\end{aligned}
+\]
+:::
+
+<1>6. Therefore the functor
+\[
+C_*
+\longmapsto
+\underline{\operatorname{Hom}}(C_*,D_*)
+\]
+sends chain-homotopic maps to chain-homotopic maps.
+
+::: {.proof}
+Step <1>5 explicitly constructs the required chain homotopy.
+This proves assertion (2) from the source.
+:::
+
+<1>7. Assume henceforth that $C_*$ is degreewise free.
+Then, noncanonically,
+\[
+H_n
+\underline{\operatorname{Hom}}(C_*,D_*)
+\cong
+\bigoplus_{j-i=n}
+\operatorname{Hom}
+\bigl(
+H_i(C),H_j(D)
+\bigr)
+\oplus
+\bigoplus_{j-i-1=n}
+\operatorname{Ext}^1
+\bigl(
+H_i(C),H_j(D)
+\bigr).
+\]
+
+::: {.proof}
+Over
+\[
+\mathbb Z,
+\]
+subgroups of free abelian groups are free.
+Thus a bounded-below free chain complex decomposes, up to chain homotopy,
+into elementary summands representing its homology:
+
+- a free summand
+  \[
+  \mathbb Z[i]
+  \]
+  for each free homology generator in degree $i$;
+- a two-term free resolution
+  \[
+  0\to\mathbb Z
+  \xrightarrow{\times m}
+  \mathbb Z\to0
+  \]
+  in degrees
+  \[
+  i+1\to i
+  \]
+  for each
+  \[
+  \mathbb Z/m
+  \]
+  homology summand in degree $i$.
+
+Step <1>6 allows replacement of $C_*$ by this chain-homotopy equivalent
+model.
+Fact (1) from the source then allows replacement of $D_*$ by a convenient
+quasi-isomorphic free model.
+
+For a free homology generator in degree $i$, total Hom contributes
+\[
+\operatorname{Hom}(H_i(C),H_j(D))
+\]
+in degree
+\[
+j-i.
+\]
+
+For a torsion generator, its two-term resolution contributes
+\[
+\operatorname{Hom}(H_i(C),H_j(D))
+\]
+in degree
+\[
+j-i
+\]
+and
+\[
+\operatorname{Ext}^1(H_i(C),H_j(D))
+\]
+one degree lower, namely
+\[
+j-i-1.
+\]
+
+Taking the direct sum over all homological degrees gives the displayed
+decomposition.
+This is the Hom analogue of the elementary-complex proof of the Künneth
+theorem.
+:::
+
+<1>8. The required elementary abelian-group calculations are
+\[
+\operatorname{Hom}(\mathbb Z,B)
+\cong
+B,
+\qquad
+\operatorname{Ext}^1(\mathbb Z,B)=0,
+\]
+and
+\[
+\operatorname{Hom}(\mathbb Z/m,\mathbb Z)=0,
+\qquad
+\operatorname{Ext}^1(\mathbb Z/m,\mathbb Z)
+\cong
+\mathbb Z/m,
+\]
+while
+\[
+\operatorname{Hom}
+(\mathbb Z/m,\mathbb Z/n)
+\cong
+\mathbb Z/\gcd(m,n)
+\]
+and
+\[
+\operatorname{Ext}^1
+(\mathbb Z/m,\mathbb Z/n)
+\cong
+\mathbb Z/\gcd(m,n).
+\]
+
+::: {.proof}
+The Hom formulas are immediate.
+
+For Ext, resolve
+\[
+\mathbb Z/m
+\]
+by
+\[
+0
+\to
+\mathbb Z
+\xrightarrow{\times m}
+\mathbb Z
+\to
+\mathbb Z/m
+\to
+0.
+\]
+Applying
+\[
+\operatorname{Hom}(-,B)
+\]
+shows
+\[
+\operatorname{Ext}^1(\mathbb Z/m,B)
+\cong
+B/mB.
+\]
+For
+\[
+B=\mathbb Z
+\]
+this is
+\[
+\mathbb Z/m,
+\]
+and for
+\[
+B=\mathbb Z/n
+\]
+it is
+\[
+\mathbb Z/\gcd(m,n).
+\]
+:::
+
+<1>9. In degree
+\[
+n=2,
+\]
+\[
+\boxed{
+H_2
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\mathbb Z/2.
+}
+\]
+
+::: {.proof}
+The only pair with
+\[
+j-i=2
+\]
+is
+\[
+i=0,
+\qquad
+j=2.
+\]
+Thus the Hom term is
+\[
+\operatorname{Hom}
+(\mathbb Z,\mathbb Z/2)
+\cong
+\mathbb Z/2.
+\]
+There is no Ext contribution with
+\[
+j-i-1=2.
+\]
+:::
+
+<1>10. In degree
+\[
+n=1,
+\]
+\[
+\boxed{
+H_1
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\mathbb Z
+\oplus
+\mathbb Z/6
+\oplus
+\mathbb Z/2.
+}
+\]
+
+::: {.proof}
+The Hom contributions with
+\[
+j-i=1
+\]
+are
+\[
+\operatorname{Hom}
+(H_0(C),H_1(D))
+\cong
+\mathbb Z\oplus\mathbb Z/6
+\]
+and
+\[
+\operatorname{Hom}
+(H_1(C),H_2(D)).
+\]
+Now
+\[
+H_1(C)
+=
+\mathbb Z/3\oplus\mathbb Z,
+\]
+so
+\[
+\operatorname{Hom}
+(H_1(C),\mathbb Z/2)
+\cong
+0\oplus\mathbb Z/2.
+\]
+There is no Ext contribution.
+:::
+
+<1>11. In degree
+\[
+n=0,
+\]
+\[
+\boxed{
+H_0
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\mathbb Z
+\oplus
+\mathbb Z/8
+\oplus
+\mathbb Z/6
+\oplus
+\mathbb Z/3
+\oplus
+\mathbb Z/2.
+}
+\]
+
+::: {.proof}
+The Hom terms with
+\[
+j=i
+\]
+are:
+\[
+\operatorname{Hom}
+(\mathbb Z,\mathbb Z/8)
+\cong
+\mathbb Z/8,
+\]
+\[
+\operatorname{Hom}
+(\mathbb Z/3\oplus\mathbb Z,
+\mathbb Z\oplus\mathbb Z/6)
+\cong
+\mathbb Z/3
+\oplus
+\mathbb Z
+\oplus
+\mathbb Z/6,
+\]
+and
+\[
+\operatorname{Hom}
+(\mathbb Z/4,\mathbb Z/2)
+\cong
+\mathbb Z/2.
+\]
+
+The potential Ext terms require
+\[
+j=i+1.
+\]
+The only torsion source that could contribute is
+\[
+\mathbb Z/3
+\subset H_1(C)
+\]
+against
+\[
+H_2(D)=\mathbb Z/2,
+\]
+but
+\[
+\operatorname{Ext}^1
+(\mathbb Z/3,\mathbb Z/2)
+=
+0.
+\]
+Thus there is no Ext contribution.
+:::
+
+<1>12. In degree
+\[
+n=-1,
+\]
+\[
+\boxed{
+H_{-1}
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\mathbb Z/8
+\oplus
+(\mathbb Z/2)^3
+\oplus
+(\mathbb Z/3)^2.
+}
+\]
+
+::: {.proof}
+The Hom terms with
+\[
+j-i=-1
+\]
+are
+\[
+\operatorname{Hom}
+(H_1(C),H_0(D))
+\cong
+\mathbb Z/8,
+\]
+\[
+\operatorname{Hom}
+(H_2(C),H_1(D))
+\cong
+\mathbb Z/2,
+\]
+and
+\[
+\operatorname{Hom}
+(H_3(C),H_2(D))
+\cong
+\mathbb Z/2.
+\]
+
+The Ext terms satisfy
+\[
+j=i.
+\]
+They are
+\[
+\operatorname{Ext}^1
+(\mathbb Z/3,
+\mathbb Z)
+\cong
+\mathbb Z/3,
+\]
+\[
+\operatorname{Ext}^1
+(\mathbb Z/3,
+\mathbb Z/6)
+\cong
+\mathbb Z/3,
+\]
+and
+\[
+\operatorname{Ext}^1
+(\mathbb Z/4,
+\mathbb Z/2)
+\cong
+\mathbb Z/2.
+\]
+Adding these summands gives the displayed group.
+:::
+
+<1>13. In degree
+\[
+n=-2,
+\]
+\[
+\boxed{
+H_{-2}
+\underline{\operatorname{Hom}}(C,D)
+\cong
+(\mathbb Z/4)^2
+\oplus
+(\mathbb Z/2)^3.
+}
+\]
+
+::: {.proof}
+The Hom terms with
+\[
+j-i=-2
+\]
+are
+\[
+\operatorname{Hom}
+(\mathbb Z/4,\mathbb Z/8)
+\cong
+\mathbb Z/4
+\]
+and
+\[
+\operatorname{Hom}
+(\mathbb Z/2,\mathbb Z/6)
+\cong
+\mathbb Z/2.
+\]
+
+The Ext terms require
+\[
+j=i-1.
+\]
+They are
+\[
+\operatorname{Ext}^1
+(\mathbb Z/4,\mathbb Z)
+\cong
+\mathbb Z/4,
+\]
+\[
+\operatorname{Ext}^1
+(\mathbb Z/4,\mathbb Z/6)
+\cong
+\mathbb Z/2,
+\]
+and
+\[
+\operatorname{Ext}^1
+(\mathbb Z/2,\mathbb Z/2)
+\cong
+\mathbb Z/2.
+\]
+:::
+
+<1>14. In degree
+\[
+n=-3,
+\]
+\[
+\boxed{
+H_{-3}
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\mathbb Z/4
+\oplus
+(\mathbb Z/2)^3.
+}
+\]
+
+::: {.proof}
+The Hom contribution is
+\[
+\operatorname{Hom}
+(\mathbb Z/2,\mathbb Z/8)
+\cong
+\mathbb Z/2.
+\]
+
+The Ext contributions are
+\[
+\operatorname{Ext}^1
+(\mathbb Z/4,\mathbb Z/8)
+\cong
+\mathbb Z/4,
+\]
+\[
+\operatorname{Ext}^1
+(\mathbb Z/2,\mathbb Z)
+\cong
+\mathbb Z/2,
+\]
+and
+\[
+\operatorname{Ext}^1
+(\mathbb Z/2,\mathbb Z/6)
+\cong
+\mathbb Z/2.
+\]
+:::
+
+<1>15. In degree
+\[
+n=-4,
+\]
+\[
+\boxed{
+H_{-4}
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\mathbb Z/2.
+}
+\]
+
+::: {.proof}
+There is no Hom contribution.
+The only Ext contribution has
+\[
+i=3,
+\qquad
+j=0,
+\]
+and equals
+\[
+\operatorname{Ext}^1
+(\mathbb Z/2,\mathbb Z/8)
+\cong
+\mathbb Z/2.
+\]
+:::
+
+<1>16. All remaining homology groups vanish.
+
+::: {.proof}
+The only nonzero homology degrees of $C$ are
+\[
+0,1,2,3,
+\]
+and those of $D$ are
+\[
+0,1,2.
+\]
+Hence the differences
+\[
+j-i
+\]
+range only from
+\[
+-3
+\]
+to
+\[
+2,
+\]
+while the Ext shift
+\[
+j-i-1
+\]
+ranges only from
+\[
+-4
+\]
+to
+\[
+1.
+\]
+Steps <1>9--<1>15 have exhausted all nonzero Hom and Ext contributions.
+:::
+
+<1>17. Under the intended free-source hypothesis, the complete answer is
+\[
+\boxed{
+H_n
+\underline{\operatorname{Hom}}(C,D)
+\cong
+\begin{cases}
+\mathbb Z/2,
+&n=2,\\
+\mathbb Z\oplus\mathbb Z/6\oplus\mathbb Z/2,
+&n=1,\\
+\mathbb Z\oplus\mathbb Z/8\oplus\mathbb Z/6
+\oplus\mathbb Z/3\oplus\mathbb Z/2,
+&n=0,\\
+\mathbb Z/8\oplus(\mathbb Z/2)^3\oplus(\mathbb Z/3)^2,
+&n=-1,\\
+(\mathbb Z/4)^2\oplus(\mathbb Z/2)^3,
+&n=-2,\\
+\mathbb Z/4\oplus(\mathbb Z/2)^3,
+&n=-3,\\
+\mathbb Z/2,
+&n=-4,\\
+0,
+&\text{otherwise}.
+\end{cases}
+}
+\]
+
+::: {.proof}
+Collect steps <1>9--<1>16.
+:::
+
+<1>18. Q.E.D.
+
+::: {.proof}
+Steps <1>2--<1>6 prove the chain-homotopy preservation assertion.
+Step <1>1 records why the numerical half needs the missing free/projective
+hypothesis.
+Under that intended hypothesis, steps <1>7--<1>17 compute all homology
+groups of the total Hom complex.
+:::
+:::

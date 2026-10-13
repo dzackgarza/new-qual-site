@@ -23,3 +23,157 @@ f(x,y,z)=9x^2+6y^2+6z^2+12xy-10xz-2yz.
 \]
 Does there exist a point $(x,y,z)$ such that $f(x,y,z)<0$?
 :::
+
+::: {.solution}
+No.
+
+<1>1. Complete the square in the variable $x$:
+\[
+\begin{aligned}
+f(x,y,z)
+&=
+9
+\left(
+x+\frac23y-\frac59z
+\right)^2\\
+&\quad+
+2y^2
++
+\frac{14}{3}yz
++
+\frac{29}{9}z^2.
+\end{aligned}
+\]
+
+::: {.proof}
+Expand the square:
+\[
+\begin{aligned}
+9
+\left(
+x+\frac23y-\frac59z
+\right)^2
+&=
+9x^2+12xy-10xz\\
+&\quad+
+4y^2
+-
+\frac{20}{3}yz
++
+\frac{25}{9}z^2.
+\end{aligned}
+\]
+Subtracting this from the original quadratic form leaves
+\[
+2y^2+\frac{14}{3}yz+\frac{29}{9}z^2.
+\]
+:::
+
+<1>2. Complete the square in the remaining variables:
+\[
+2y^2
++
+\frac{14}{3}yz
++
+\frac{29}{9}z^2
+=
+2
+\left(
+y+\frac76z
+\right)^2
++
+\frac12z^2.
+\]
+
+::: {.proof}
+Expand:
+\[
+2
+\left(
+y+\frac76z
+\right)^2
+=
+2y^2
++
+\frac{14}{3}yz
++
+\frac{49}{18}z^2.
+\]
+Adding
+\[
+\frac12z^2
+=
+\frac9{18}z^2
+\]
+gives
+\[
+2y^2
++
+\frac{14}{3}yz
++
+\frac{58}{18}z^2
+=
+2y^2
++
+\frac{14}{3}yz
++
+\frac{29}{9}z^2.
+\]
+:::
+
+<1>3. Therefore
+\[
+\boxed{
+f(x,y,z)
+=
+9
+\left(
+x+\frac23y-\frac59z
+\right)^2
++
+2
+\left(
+y+\frac76z
+\right)^2
++
+\frac12z^2.
+}
+\]
+
+::: {.proof}
+Combine steps <1>1--<1>2.
+:::
+
+<1>4. One has
+\[
+f(x,y,z)\ge0
+\]
+for every
+\[
+(x,y,z)\in\mathbb R^3.
+\]
+
+::: {.proof}
+Every term on the right side of step <1>3 is a nonnegative scalar multiple of a square.
+Thus their sum is nonnegative.
+:::
+
+<1>5. Hence there is no point with
+\[
+f(x,y,z)<0.
+\]
+
+::: {.proof}
+Step <1>4 rules out strict negativity everywhere.
+Thus the answer is
+\[
+\boxed{\text{No}.}
+\]
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::

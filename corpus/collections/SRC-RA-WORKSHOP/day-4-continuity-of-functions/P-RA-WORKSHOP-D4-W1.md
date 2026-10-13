@@ -16,39 +16,64 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 State the definition of uniform continuity.
 Give an example of a function $f:(0,1)\to\mathbb R$ which is continuous but not uniformly continuous.
 :::
 
-:::: {.solution}
+::: {.solution}
+
 ::: pf
 
-::: pf-step
-Definition of uniform continuity.
-Proof: $f : D \subseteq \mathbb{R} \to \mathbb{R}$ is uniformly continuous on $D$ if for every $\epsilon > 0$ there is $\delta > 0$ such that for all $x, y \in D$, $|x - y| < \delta \implies |f(x) - f(y)| < \epsilon$.
-(The difference from plain continuity: the same $\delta$ must work for all pairs $x, y$, independent of where they sit.)
-:::
+::: {.pf-step #s1}
 
-::: pf-step
-Example: $f(x) = 1/x$ on $(0,1)$ is continuous but not uniformly continuous.
+A function $f:D\to\mathbb R$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that, for every $x,y\in D$,
+\[
+|x-y|<\delta\quad\Longrightarrow\quad |f(x)-f(y)|<\varepsilon.
+\]
 
 ::: pf-proof
 
-::: pf-step
-Continuous: $f$ is a quotient of continuous functions with nonzero denominator on $(0,1)$, hence continuous at every point of $(0,1)$.
-:::
-
-::: pf-step
-Not uniformly continuous: take $x_n = 1/n$ and $y_n = 1/(2n)$.
-Then $x_n, y_n \in (0,1)$ and $|x_n - y_n| = 1/(2n) \to 0$, but $|f(x_n) - f(y_n)| = |n - 2n| = n \to \infty$.
-Hence no $\delta > 0$ can control pairs $(x_n, y_n)$ with $|x_n - y_n| \to 0$, so the uniform-continuity definition fails (with any $\epsilon$, say $\epsilon = 1$).
-:::
+This is the definition of uniform continuity. The same $\delta$ depends only on $\varepsilon$, not on the points $x,y$.
 
 :::
 
 :::
 
+::: {.pf-step #s2}
+
+The function $f:(0,1)\to\mathbb R$ defined by $f(x)=1/x$ is continuous.
+
+::: pf-proof
+
+The reciprocal function is continuous at every nonzero real number, so its restriction to $(0,1)$ is continuous.
+
 :::
-::::
+
+:::
+
+::: {.pf-step #s3}
+
+The function in step [](#s2){.pf-ref} is not uniformly continuous.
+
+::: pf-proof
+
+Suppose it were uniformly continuous. Apply step [](#s1){.pf-ref} with $\varepsilon=1$ to obtain $\delta>0$. Choose an integer $n\geq2$ with $1/(2n)<\delta$, and put $x=1/n$ and $y=1/(2n)$. Then $x,y\in(0,1)$ and $|x-y|=1/(2n)<\delta$, while
+\[
+|f(x)-f(y)|=|n-2n|=n\geq2,
+\]
+contradicting the required inequality $|f(x)-f(y)|<1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} states the definition, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} establish the requested example.
+
+:::
+
+:::
+
+:::

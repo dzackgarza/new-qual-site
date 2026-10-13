@@ -23,7 +23,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Consider the $\ZZ\dash$submodule $N$ of $\ZZ^3$ spanned by
 \[
@@ -39,73 +38,94 @@ Find a basis for $N$ and describe $\ZZ^3/N$.
 
 ::: pf
 
-::: {.pf-step #e1-in-n}
+::: {.pf-step #s1}
+
 The standard basis vector $e_1=(1,0,0)$ belongs to $N$ because
 \[
 e_1=2f_1+6f_2+7f_3-3f_4.
 \]
 
 ::: pf-proof
+
 Direct substitution gives
 \[
 2(-1,0,1)+6(2,-3,1)+7(0,3,1)-3(3,1,5)=(1,0,0).
 \]
-:::
 
 :::
 
-::: {.pf-step #e2-in-n}
+:::
+
+::: {.pf-step #s2}
+
 The standard basis vector $e_2=(0,1,0)$ belongs to $N$ because
 \[
 e_2=-f_1-2f_2-2f_3+f_4.
 \]
 
 ::: pf-proof
+
 Direct substitution gives
 \[
 -(-1,0,1)-2(2,-3,1)-2(0,3,1)+(3,1,5)=(0,1,0).
 \]
-:::
 
 :::
 
-::: {.pf-step #e3-in-n}
+:::
+
+::: {.pf-step #s3}
+
 The standard basis vector $e_3=(0,0,1)$ belongs to $N$ because
 \[
 e_3=3f_1+6f_2+7f_3-3f_4.
 \]
 
 ::: pf-proof
+
 Direct substitution gives
 \[
 3(-1,0,1)+6(2,-3,1)+7(0,3,1)-3(3,1,5)=(0,0,1).
 \]
-:::
 
 :::
 
-::: {.pf-step #n-equals-z3}
-Hence $N=\mathbb Z^3$.
+:::
+
+::: {.pf-step #s4}
+
+Hence $N=\ZZ^3$.
 
 ::: pf-proof
-By steps [](#e1-in-n){.pf-ref}, [](#e2-in-n){.pf-ref} and [](#e3-in-n){.pf-ref}, the standard basis of $\mathbb Z^3$ is contained in $N$, so $\mathbb Z^3\subseteq N$. The reverse inclusion is part of the definition of $N$.
-:::
+
+By step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s3){.pf-ref}, the standard basis of $\ZZ^3$ is contained in $N$, so $\ZZ^3\subseteq N$. The reverse inclusion is part of the definition of $N$.
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s5}
+
 Therefore one basis for $N$ is
 \[
-\{e_1,e_2,e_3\},
+\boxed{\{e_1,e_2,e_3\}},
 \]
 and
 \[
-\mathbb Z^3/N=0.
+\boxed{\ZZ^3/N=0}.
 \]
 
 ::: pf-proof
-This follows immediately from step [](#n-equals-z3){.pf-ref}.
+
+This follows immediately from step [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives both the requested basis and the quotient.
 
 :::
 

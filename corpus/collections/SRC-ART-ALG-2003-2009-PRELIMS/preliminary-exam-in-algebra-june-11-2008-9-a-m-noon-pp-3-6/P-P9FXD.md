@@ -25,7 +25,6 @@ audit:
   by: OpenAI
   date: 2026-09-10
 ---
-
 ::: {.problem}
 Let $p$ be prime, $G$ be a group of order $p^n > 1$, and $X$ be a finite $G$-set whose size is not divisible by $p$.
 Prove that $G$ has a fixed point in $X$: i.e., an $x \in X$ such that $gx = x$ for all $g \in G$.
@@ -56,7 +55,7 @@ $gx=x$ for every $g\in G$. Every other orbit has size divisible by $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The global fixed-point set $X^G$ is nonempty.
 
@@ -72,6 +71,12 @@ The left side is nonzero modulo $p$ by hypothesis, so $|X^G|$ cannot
 be zero. Any $x\in X^G$ is fixed by every element of $G$, as required.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives a point of $X$ fixed by every element of $G$.
 
 :::
 

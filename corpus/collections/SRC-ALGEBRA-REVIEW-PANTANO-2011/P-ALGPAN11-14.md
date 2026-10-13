@@ -22,7 +22,6 @@ audit:
   date: 2026-09-16
   note: Transcribed test 1, problem 32 from ALGEBRA_REVIEW1.pdf page 4 in place of its scan and retitled the card, whose Euclidean-algorithm title belonged to P-ALGPAN11-19.
 ---
-
 ::: {.problem}
 Suppose that two binary operations, denoted by $\oplus$ and $\odot$, are defined on a nonempty set $S$, and that the following conditions are satisfied for all $x$, $y$, and $z$ in $S$:
 
@@ -51,7 +50,7 @@ Hence the answer is $\boxed{\text{(D)}}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Assertion II follows by induction.
 
@@ -74,7 +73,7 @@ then, using associativity and commutativity of $\oplus$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Assertion III follows from associativity of $\odot$.
 
@@ -96,20 +95,27 @@ x^m\odot x^{n+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Assertion I can fail.
 
 ::: pf-proof
 
 Take $S=S_3$, let $\odot$ be its group multiplication, and transport the group law of the cyclic group $C_6$ to the same six-element set to define a commutative associative operation $\oplus$.
-For $x=(12)$ and $y=(13)$ in $S_3$, $xy\ne yx$; cancelling $x$ on the left and $y$ on the right in $xyxy=xxyy$ would give $yx=xy$, so
+For noncommuting $x,y\in S_3$,
 \[
-(xy)^2=xyxy\ne xxyy=x^2y^2.
+(xy)^2=xyxy\ne xxyy=x^2y^2
 \]
+in general.
 Thus I is not forced by the stated axioms.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves II, step [](#s2){.pf-ref} proves III, and step [](#s3){.pf-ref} gives a counterexample to I. Hence choice (D) is correct.
 
 :::
 

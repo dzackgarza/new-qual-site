@@ -9,12 +9,15 @@ topics:
 
 # Fibres and images
 
+Three theorems state what a morphism can do to dimension and to connectedness.
+Their hypotheses determine the direction of the dimension inequalities and the connectedness conclusions.
+
 ## Dimension
 
 [[T-MORFIBDIM]]
 
-For the blowup $\Bl_0\AA^2\to\AA^2$, the fibre over $0$ is $\PP^1$ and every other fibre is a point.
-For a dominant morphism $f\colon X\to Y$ of varieties, $\dim X=\dim Y+\dim X_y$ for $y$ in a dense open subset of $Y$.
+Fibres can jump up over special points and never down; the blowup of a point in $\AA^2$ exhibits the jump from a zero-dimensional generic fibre to a one-dimensional exceptional fibre.
+The generic equality computes dimensions by adding the dimension of the generic fibre to the dimension of the base.
 
 [[T-MORMIRACLE]]
 

@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Enumerated the full D4 subgroup lattice and checked each fixed-field generator; verified Frobenius bijectivity and the explicit p-th root formula.
 ---
-
 ::: {.problem}
 (a) Let $\alpha$ be the positive real fourth root of $2$ and let $i=\sqrt{-1}$.
 Find all intermediate fields in the extension $\mathbb Q(\alpha,i)/\mathbb Q$.
@@ -31,9 +30,9 @@ Show that every element of $K$ has a unique $p$th root in $K$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The extension \(L=\mathbb Q(\alpha,i)\) of \(\mathbb Q\) has exactly ten intermediate fields, listed in the box at the end of this step.
+Determine all intermediate fields of \(L=\mathbb Q(\alpha,i)\) over \(\mathbb Q\).
 
 ::: pf-proof
 
@@ -145,7 +144,7 @@ Together with the fixed fields of the whole group and the trivial subgroup, the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Every element of a finite field \(K\) of order \(p^n\) has a unique \(p\)-th root in \(K\).
 
@@ -178,6 +177,12 @@ because every \(a\in K\) satisfies \(a^{p^n}=a\), and hence
 Uniqueness follows from injectivity of Frobenius.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives all intermediate fields in part (a), and step [](#s2){.pf-ref} proves the unique $p$-th-root statement in part (b).
 
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-11
 kind: problem
-title: $x\mapsto axa^{-2}$ is a homomorphism only for $a=e$
+title: When x maps to a x a^{-2} is a homomorphism
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 For a fixed element $a$ of a group $G$, determine when the map $x\mapsto axa^{-2}$ from $G$ to itself is a homomorphism.
 
@@ -34,7 +33,7 @@ is a homomorphism if and only if $\boxed{a=e}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 A homomorphism forces $a=e$.
 
@@ -51,15 +50,21 @@ Hence $a^{-1}=e$, so $a=e$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-If $a=e$, then $\varphi$ is a homomorphism.
+The condition is sufficient.
 
 ::: pf-proof
 
 If $a=e$, then $\varphi(x)=x$ for all $x$, so $\varphi$ is the identity homomorphism.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves necessity and step [](#s2){.pf-ref} proves sufficiency, so $\varphi$ is a homomorphism exactly when $a=e$.
 
 :::
 

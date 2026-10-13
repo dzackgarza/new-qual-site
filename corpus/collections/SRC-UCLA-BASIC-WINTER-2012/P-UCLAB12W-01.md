@@ -23,3 +23,149 @@ Let $\Omega$ be the set of all nonempty closed subsets of $[0,1]$ and define
 \]
 Show that $(\Omega,\rho)$ is a metric space.
 :::
+
+::: {.solution}
+For a nonempty closed set $B\subseteq[0,1]$ and $x\in[0,1]$, write
+$$
+d(x,B)=\inf_{y\in B}\abs{x-y},
+$$
+and for $A,B\in\Omega$ write
+$$
+h(A,B)=\sup_{x\in A}d(x,B).
+$$
+Then
+$$
+\rho(A,B)=\max\{h(A,B),h(B,A)\}.
+$$
+
+<1>1. The number $\rho(A,B)$ is well defined and belongs to $[0,1]$ for every $A,B\in\Omega$.
+
+::: {.proof}
+Since $B$ is nonempty, the set
+$$
+\{\abs{x-y}:y\in B\}
+$$
+is nonempty and bounded below by $0$, so $d(x,B)$ exists. Moreover, because $x,y\in[0,1]$,
+$$
+0\le d(x,B)\le1.
+$$
+Thus $\{d(x,B):x\in A\}$ is nonempty and bounded above by $1$, so $h(A,B)$ exists and lies in $[0,1]$. The same holds for $h(B,A)$, hence so does their maximum.
+:::
+
+<1>2. For all $A,B\in\Omega$,
+$$
+\rho(A,B)\ge0
+\qquad\text{and}\qquad
+\rho(A,B)=\rho(B,A).
+$$
+
+::: {.proof}
+Every distance $\abs{x-y}$ is nonnegative, so both directed distances $h(A,B)$ and $h(B,A)$ are nonnegative. Symmetry follows directly from
+$$
+\rho(A,B)=\max\{h(A,B),h(B,A)\}.
+$$
+:::
+
+<1>3. If $\rho(A,B)=0$, then $A\subseteq B$.
+
+::: {.proof}
+If $\rho(A,B)=0$, then $h(A,B)=0$. Hence for every $x\in A$,
+$$
+d(x,B)=0.
+$$
+Thus for every $n\ge1$ there exists $y_n\in B$ with
+$$
+\abs{x-y_n}<\frac1n.
+$$
+Therefore $y_n\to x$. Since $B$ is closed in $[0,1]$, it contains the limit $x$. Thus every $x\in A$ belongs to $B$.
+:::
+
+<1>4. One has
+$$
+\rho(A,B)=0
+\quad\Longleftrightarrow\quad
+A=B.
+$$
+
+::: {.proof}
+If $\rho(A,B)=0$, step <1>3 gives $A\subseteq B$. By symmetry, applying step <1>3 with $A$ and $B$ interchanged gives $B\subseteq A$. Hence $A=B$.
+
+Conversely, if $A=B$, then for every $x\in A$ one may choose $y=x\in B$, so $d(x,B)=0$. Hence $h(A,B)=h(B,A)=0$ and therefore $\rho(A,B)=0$.
+:::
+
+<1>5. For any nonempty $B,C\subseteq[0,1]$, any $x\in[0,1]$, and any $y\in B$,
+$$
+d(x,C)\le\abs{x-y}+d(y,C).
+$$
+
+::: {.proof}
+For every $z\in C$, the triangle inequality gives
+$$
+\abs{x-z}\le\abs{x-y}+\abs{y-z}.
+$$
+Taking the infimum over $z\in C$ yields
+$$
+d(x,C)\le\abs{x-y}+d(y,C).
+$$
+:::
+
+<1>6. For all $A,B,C\in\Omega$,
+$$
+h(A,C)\le h(A,B)+h(B,C).
+$$
+
+::: {.proof}
+Fix $x\in A$. By step <1>5, for every $y\in B$,
+$$
+d(x,C)
+\le
+\abs{x-y}+d(y,C)
+\le
+\abs{x-y}+h(B,C).
+$$
+Taking the infimum over $y\in B$ gives
+$$
+d(x,C)
+\le
+d(x,B)+h(B,C)
+\le h(A,B)+h(B,C).
+$$
+Now take the supremum over $x\in A$.
+:::
+
+<1>7. The triangle inequality
+$$
+\rho(A,C)\le\rho(A,B)+\rho(B,C)
+$$
+holds for all $A,B,C\in\Omega$.
+
+::: {.proof}
+By step <1>6,
+$$
+h(A,C)
+\le
+h(A,B)+h(B,C)
+\le
+\rho(A,B)+\rho(B,C).
+$$
+Applying step <1>6 with the order reversed gives
+$$
+h(C,A)
+\le
+h(C,B)+h(B,A)
+\le
+\rho(B,C)+\rho(A,B).
+$$
+Both entries in
+$$
+\rho(A,C)=\max\{h(A,C),h(C,A)\}
+$$
+are therefore bounded above by $\rho(A,B)+\rho(B,C)$.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves well-definedness, step <1>2 gives nonnegativity and symmetry, step <1>4 gives definiteness, and step <1>7 proves the triangle inequality. Thus $\rho$ is a metric on $\Omega$.
+:::
+:::

@@ -23,3 +23,83 @@ audit:
 Let $E$ be a field extension of $F$ of degree $n$.
 Show that $E(X_1, \ldots, X_d)$ is a field extension of $F(X_1, \ldots, X_d)$ of degree $n$.
 :::
+
+::: {.solution}
+<1>1. The assertion holds for $d=1$.
+
+::: {.proof}
+This is exactly Problem 4.4(iii): if $[E:F]=n$, then
+$$
+[E(X_1):F(X_1)]=n.
+$$
+:::
+
+<1>2. Assume for some $d\ge2$ that
+$$
+[E(X_1,\ldots,X_{d-1}):F(X_1,\ldots,X_{d-1})]=n.
+$$
+Set
+$$
+E_{d-1}=E(X_1,\ldots,X_{d-1}),
+\qquad
+F_{d-1}=F(X_1,\ldots,X_{d-1}).
+$$
+
+::: {.proof}
+This is the induction hypothesis together with notation for the intermediate fields.
+:::
+
+<1>3. Applying Problem 4.4 to the finite extension
+$$
+E_{d-1}/F_{d-1}
+$$
+and the new indeterminate $X_d$ gives
+$$
+[E_{d-1}(X_d):F_{d-1}(X_d)]=n.
+$$
+
+::: {.proof}
+By step <1>2, the extension $E_{d-1}/F_{d-1}$ has degree $n$. Problem 4.4 states that adjoining one transcendental indeterminate to both fields preserves the degree of a finite extension. Therefore the displayed equality follows.
+:::
+
+<1>4. One has
+$$
+E_{d-1}(X_d)=E(X_1,\ldots,X_d)
+$$
+and
+$$
+F_{d-1}(X_d)=F(X_1,\ldots,X_d).
+$$
+
+::: {.proof}
+Both equalities are immediate from the definitions of the rational function fields and of $E_{d-1},F_{d-1}$.
+:::
+
+<1>5. Hence
+$$
+[E(X_1,\ldots,X_d):F(X_1,\ldots,X_d)]=n.
+$$
+
+::: {.proof}
+Substitute the identifications from step <1>4 into the degree equality of step <1>3.
+:::
+
+<1>6. Therefore, for every $d\ge1$,
+$$
+\boxed{
+[E(X_1,\ldots,X_d):F(X_1,\ldots,X_d)]
+=[E:F]
+=n.
+}
+$$
+
+::: {.proof}
+Step <1>1 is the base case, and steps <1>2--<1>5 establish the induction step.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required statement.
+:::
+:::

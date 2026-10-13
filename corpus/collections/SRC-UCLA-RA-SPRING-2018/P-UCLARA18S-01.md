@@ -23,3 +23,160 @@ Problem 1. Suppose $f\in L^1(\mathbb R)$ satisfies
 \]
 Show that $f=0$ almost everywhere.
 :::
+
+::: {.solution}
+Define
+\[
+F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
+\]
+
+<1>1. For every $x\in\mathbb R$ and every $h\ne0$,
+\[
+\left|
+\frac{F(x+h)-F(x)}{h}
+\right|
+\le
+\int_{\mathbb R}
+\left|
+\frac{f(t+h)-f(t)}{h}
+\right|\,dt.
+\]
+
+::: {.proof}
+First suppose $h>0$. By the change of variables $s=t+h$,
+\[
+F(x+h)
+=
+\int_{-\infty}^{x+h}|f(s)|\,ds
+=
+\int_{-\infty}^{x}|f(t+h)|\,dt.
+\]
+Hence
+\[
+\begin{aligned}
+\left|
+\frac{F(x+h)-F(x)}{h}
+\right|
+&=
+\left|
+\frac1h
+\int_{-\infty}^{x}
+\bigl(|f(t+h)|-|f(t)|\bigr)\,dt
+\right|\\
+&\le
+\int_{-\infty}^{x}
+\frac{
+\bigl||f(t+h)|-|f(t)|\bigr|
+}{h}\,dt\\
+&\le
+\int_{\mathbb R}
+\frac{|f(t+h)-f(t)|}{h}\,dt.
+\end{aligned}
+\]
+For $h<0$, the same computation with $|h|$ in the denominator gives the
+identical final bound, namely
+\[
+\int_{\mathbb R}
+\left|
+\frac{f(t+h)-f(t)}{h}
+\right|\,dt.
+\]
+:::
+
+<1>2. The hypothesis implies
+\[
+\lim_{h\to0}
+\int_{\mathbb R}
+\left|
+\frac{f(t+h)-f(t)}{h}
+\right|\,dt
+=0.
+\]
+
+::: {.proof}
+The integrals are nonnegative. A nonnegative function of $h$ whose
+$\limsup$ at $0$ is $0$ has limit $0$.
+:::
+
+<1>3. The function $F$ is differentiable at every $x$ and
+\[
+\boxed{F'(x)=0}.
+\]
+
+::: {.proof}
+Fix $x\in\mathbb R$. By step <1>1,
+\[
+\left|
+\frac{F(x+h)-F(x)}{h}
+\right|
+\]
+is bounded above by a quantity independent of $x$ that tends to $0$ by
+step <1>2. Therefore
+\[
+\lim_{h\to0}
+\frac{F(x+h)-F(x)}{h}
+=0.
+\]
+:::
+
+<1>4. The function $F$ is constant on $\mathbb R$.
+
+::: {.proof}
+By step <1>3, $F$ is differentiable everywhere with derivative identically
+zero. The ordinary mean value theorem therefore gives
+\[
+F(y)-F(x)=0
+\]
+for every $x<y$.
+:::
+
+<1>5. In fact,
+\[
+\boxed{F\equiv0}.
+\]
+
+::: {.proof}
+Since $|f|\in L^1(\mathbb R)$,
+\[
+\int_{-\infty}^{x}|f(t)|\,dt
+\longrightarrow0
+\qquad(x\to-\infty).
+\]
+Thus the constant value from step <1>4 must be $0$.
+:::
+
+<1>6. Therefore
+\[
+\int_{\mathbb R}|f(t)|\,dt=0.
+\]
+
+::: {.proof}
+By monotone convergence,
+\[
+\int_{\mathbb R}|f(t)|\,dt
+=
+\lim_{x\to\infty}
+\int_{-\infty}^{x}|f(t)|\,dt
+=
+\lim_{x\to\infty}F(x)
+=0
+\]
+by step <1>5.
+:::
+
+<1>7. Hence
+\[
+\boxed{f=0\quad\text{almost everywhere}}.
+\]
+
+::: {.proof}
+A nonnegative integrable function with integral zero vanishes almost
+everywhere. Apply this to $|f|$ using step <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required conclusion.
+:::
+:::

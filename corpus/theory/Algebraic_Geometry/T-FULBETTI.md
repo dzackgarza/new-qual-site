@@ -23,32 +23,45 @@ prompts:
 ---
 
 ::: {.theorem title="Betti numbers"}
-Let $X_\Sigma$ be smooth and complete of dimension $n$, and write $\Sigma(k)$ for the set of $k$-dimensional cones.
+Let $\Sigma$ be a smooth complete fan of dimension $n$, let $X_\Sigma$ be its toric variety over $\CC$, and write $\Sigma(k)$ for the set of $k$-dimensional cones.
+Let
+$$
+\beta_j\coloneqq\operatorname{rank}_{\ZZ}H^j(X_\Sigma(\CC),\ZZ).
+$$
 Then the odd Betti numbers vanish and
-\[
+$$
 \beta_{2k} = \sum_{i=k}^{n} (-1)^{i-k} \binom{i}{k} \size \Sigma(n-i) .
-\]
+$$
 :::
 
 ::: {.theorem title="Two special cases"}
-\[
-\beta_0 = \beta_{2n} = 1, \qquad \chi(X_\Sigma) = \size \Sigma(n) ,
-\]
-and when every maximal cone has dimension $n$,
-\[
-H^2(X_\Sigma; \ZZ) \cong \Pic(X_\Sigma), \qquad \beta_2 = \size \Sigma(1) - n .
-\]
+$$
+\beta_0 = \beta_{2n} = 1,
+\qquad
+\chi\bigl(X_\Sigma(\CC)\bigr) = \size \Sigma(n),
+$$
+and the first Chern class gives
+$$
+\Pic(X_\Sigma)\xrightarrow{\sim}H^2(X_\Sigma(\CC),\ZZ),
+\qquad
+\beta_2=\size\Sigma(1)-n.
+$$
 :::
 
 ::: {.remark title="Where the formula comes from"}
 Cohomology of an affine piece is exterior algebra on the lattice orthogonal to the cone,
-\[
-H^i(U_\sigma; \ZZ) \cong \Wedgepower^i M(\sigma), \qquad M(\sigma) \definedas \sigma^\perp \intersect M ,
-\]
+$$
+H^i(U_\sigma(\CC); \ZZ) \cong \Wedgepower^i M(\sigma),
+\qquad
+M(\sigma) \coloneqq \sigma^\perp \intersect M ,
+$$
 so the Mayer--Vietoris spectral sequence for the cover by the $U_\sigma$ over maximal cones has
-\[
-E_1^{p,q} = \bigoplus_{i_0 < \cdots < i_p} \Wedgepower^q M(\sigma_{i_0} \intersect \cdots \intersect \sigma_{i_p}) \abuts H^{p+q}(X_\Sigma; \ZZ) .
-\]
+$$
+E_1^{p,q}
+=\bigoplus_{i_0 < \cdots < i_p}
+\Wedgepower^q M(\sigma_{i_0} \intersect \cdots \intersect \sigma_{i_p})
+\abuts H^{p+q}(X_\Sigma(\CC); \ZZ) .
+$$
 The alternating sum over $q$ of $\rank \Wedgepower^q M(\tau)$ is $0$ unless $\dim \tau = n$, where it is $1$, and only the maximal cones survive.
 That is the Euler characteristic statement, and tracking the individual ranks gives the binomial formula.
 :::
@@ -56,6 +69,4 @@ That is the Euler characteristic statement, and tracking the individual ranks gi
 ::: {.remark title="Check it on the two standard surfaces"}
 For $\PP^2$: $\size \Sigma(2) = 3$, $\size \Sigma(1) = 3$, $\size \Sigma(0) = 1$, giving $\beta_0 = 1$, $\beta_2 = 1$, $\beta_4 = 1$ and $\chi = 3$.
 For $\FF_a$: $\size \Sigma(2) = 4$, $\size \Sigma(1) = 4$, giving $\beta_2 = 2 = \rank \Pic(\FF_a)$ and $\chi = 4$.
-
-The formula turns cohomology into cone counts, while the torus-orbit cell decomposition explains structurally why the odd cohomology vanishes.
 :::

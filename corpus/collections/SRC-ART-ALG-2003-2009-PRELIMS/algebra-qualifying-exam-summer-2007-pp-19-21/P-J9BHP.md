@@ -16,23 +16,55 @@ audit:
   by: muse-spark-1.2
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Show that the characteristic of an integral domain must be either zero or a prime.
 :::
 
 ::: {.solution}
-Let $R$ be an integral domain, so $1_R\ne0_R$ and $R$ has no zero divisors, and let $n=\operatorname{char}(R)$: either $n=0$, or $n$ is the least positive integer with $n\cdot1_R=0_R$.
+Let $R$ be an integral domain with identity $1_R\ne0$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-If $n>0$, then $n\ge2$.
+If $\operatorname{char}(R)>0$, then $\operatorname{char}(R)$ is prime.
 
 ::: pf-proof
 
-$1\cdot1_R=1_R\ne0_R$.
+Write
+$$
+n=\operatorname{char}(R)>0.
+$$
+By definition, $n$ is the least positive integer such that
+$$
+n\cdot1_R=0.
+$$
+Since $1_R\ne0$, one has $n\ge2$.
+
+Suppose, for contradiction, that $n$ is composite. Then
+$$
+n=ab
+$$
+for integers $a,b$ with
+$$
+1<a<n,
+\qquad
+1<b<n.
+$$
+In $R$,
+$$
+(a\cdot1_R)(b\cdot1_R)
+=(ab)\cdot1_R
+=n\cdot1_R
+=0.
+$$
+Because $R$ is an integral domain, it has no zero divisors. Hence
+$$
+a\cdot1_R=0
+\qquad\text{or}\qquad
+b\cdot1_R=0.
+$$
+Either alternative contradicts the minimality of $n$. Thus $n$ is prime.
 
 :::
 
@@ -40,14 +72,14 @@ $1\cdot1_R=1_R\ne0_R$.
 
 ::: {.pf-step #s2}
 
-If $n>0$, then $n$ is prime.
+Therefore
+$$
+\boxed{\operatorname{char}(R)=0\text{ or }\operatorname{char}(R)\text{ is prime}}.
+$$
 
 ::: pf-proof
 
-Suppose $n=ab$ with integers $1<a,b<n$.
-Then $(a\cdot1_R)(b\cdot1_R)=(ab)\cdot1_R=n\cdot1_R=0_R$, so $a\cdot1_R=0_R$ or $b\cdot1_R=0_R$ because $R$ has no zero divisors.
-Either equality contradicts the minimality of $n$.
-Hence $n$, which is at least $2$ by step [](#s1){.pf-ref}, has no factorization into smaller integers greater than $1$, so $n$ is prime.
+If the characteristic is zero, this is one of the two stated alternatives. If it is positive, step [](#s1){.pf-ref} shows that it is prime.
 
 :::
 
@@ -55,7 +87,7 @@ Hence $n$, which is at least $2$ by step [](#s1){.pf-ref}, has no factorization 
 
 ::: pf-qed
 
-Either $n=0$, or $n>0$ and $n$ is prime by step [](#s2){.pf-ref}.
+Step [](#s2){.pf-ref} is the required conclusion.
 
 :::
 

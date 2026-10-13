@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $k$ be a field and $A \in \Mat_{n\times n}(k)$, and suppose that the [[D-QFYAC|characteristic polynomial]] factors as $\chi_A(x) = \pm\prod_{i=1}^r (x-\lambda_i)^{m_i}$ with $\lambda_1, \ldots, \lambda_r \in k$ distinct.
+Let $k$ be a field and $A \in \Mat_{n\times n}(k)$, and suppose that the [[D-QFYAC|characteristic polynomial]] factors as $\chi_A(x) = \prod_{i=1}^r (x-\lambda_i)^{m_i}$ with $\lambda_1, \ldots, \lambda_r \in k$ distinct.
 For each $i$, put $N_i \coloneqq A - \lambda_i I$.
 The following procedure produces $P \in \GL_n(k)$ such that $\inverseof{P} A P = \JCF(A)$ is a Jordan canonical form of $A$.
 

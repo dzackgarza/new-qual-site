@@ -16,12 +16,119 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be the real matrix displayed in Problem 4 of the UGA Mathematics Preliminary Examination, Fall 2008.
+Let
+$$
+A=\begin{pmatrix}
+-1&0&0\\
+-2&3&-2\\
+-2&3&-2
+\end{pmatrix}.
+$$
 
 Prove that $A$ is diagonalizable and use this fact to compute
 \[
 A^{19}.
 \]
+:::
 
-The retained extraction does not preserve the full displayed matrix $A$ reliably, so the matrix entries are left unrecovered rather than reconstructed heuristically.
+::: {.solution}
+<1>1. One has
+$$
+\det(A-\lambda I)=-(\lambda+1)\lambda(\lambda-1),
+$$
+so the eigenvalues are $-1,0,1$.
+
+::: {.proof}
+Because the first row of $A-\lambda I$ is $(-1-\lambda,0,0)$,
+$$
+\begin{aligned}
+\det(A-\lambda I)
+&=(-1-\lambda)
+\det\begin{pmatrix}3-\lambda&-2\\3&-2-\lambda\end{pmatrix}\\
+&=(-1-\lambda)\bigl((3-\lambda)(-2-\lambda)+6\bigr)\\
+&=(-1-\lambda)\lambda(\lambda-1).
+\end{aligned}
+$$
+Thus the roots are $-1,0,1$.
+:::
+
+<1>2. Corresponding eigenvectors are
+$$
+v_{-1}=\begin{pmatrix}1\\1\\1\end{pmatrix},
+\qquad
+v_0=\begin{pmatrix}0\\2\\3\end{pmatrix},
+\qquad
+v_1=\begin{pmatrix}0\\1\\1\end{pmatrix}.
+$$
+
+::: {.proof}
+Direct multiplication gives
+$$
+Av_{-1}=-v_{-1},
+\qquad
+Av_0=0,
+\qquad
+Av_1=v_1.
+$$
+:::
+
+<1>3. The matrix $A$ is diagonalizable. In fact, with
+$$
+P=\begin{pmatrix}
+1&0&0\\
+1&2&1\\
+1&3&1
+\end{pmatrix},
+\qquad
+D=\begin{pmatrix}
+-1&0&0\\
+0&0&0\\
+0&0&1
+\end{pmatrix},
+$$
+one has
+$$
+A=PDP^{-1}.
+$$
+
+::: {.proof}
+The columns of $P$ are the eigenvectors from step <1>2. Moreover,
+$$
+\det P=2-3=-1\ne0,
+$$
+so they form a basis of $\RR^3$. Therefore $P^{-1}AP=D$, equivalently $A=PDP^{-1}$.
+:::
+
+<1>4. One has
+$$
+\boxed{
+A^{19}=A=
+\begin{pmatrix}
+-1&0&0\\
+-2&3&-2\\
+-2&3&-2
+\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+By step <1>3,
+$$
+A^{19}=PD^{19}P^{-1}.
+$$
+Since the diagonal entries of $D$ are $-1,0,1$ and $19$ is odd,
+$$
+D^{19}=D.
+$$
+Hence
+$$
+A^{19}=PDP^{-1}=A.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves diagonalizability, and step <1>4 computes $A^{19}$.
+:::
 :::

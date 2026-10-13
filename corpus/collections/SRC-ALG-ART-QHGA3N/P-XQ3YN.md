@@ -21,7 +21,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Show that a field $k$ of characteristic $p\neq 0$ is perfect $\iff$ for every $x\in k$ there exists a $y\in k$ such that $y^p=x$.
 :::
@@ -104,26 +103,32 @@ Therefore, if \(k\) is perfect, every element of \(k\) is a \(p\)-th power.
 
 ::: pf-proof
 
-If some \(a\in k\) were not a \(p\)-th power, then by steps [](#s3){.pf-ref} and [](#s4){.pf-ref} there would be an irreducible inseparable polynomial over \(k\), contradicting perfectness.
+If some \(a\in k\) were not a \(p\)-th power, then by step [](#s3){.pf-ref} and step [](#s4){.pf-ref} there would be an irreducible inseparable polynomial over \(k\), contradicting perfectness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s6}
 
 Hence
 \[
-k\text{ is perfect}
+\boxed{k\text{ is perfect}
 \iff
-\forall x\in k\ \exists y\in k\text{ with }y^p=x.
+\forall x\in k\ \exists y\in k\text{ with }y^p=x}.
 \]
 
 ::: pf-proof
 
-Steps [](#s2){.pf-ref} and [](#s5){.pf-ref} give the two implications.
+Combine step [](#s2){.pf-ref} and step [](#s5){.pf-ref}.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required equivalence.
 
 :::
 

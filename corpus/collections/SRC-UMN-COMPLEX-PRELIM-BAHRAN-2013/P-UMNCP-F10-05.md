@@ -24,3 +24,137 @@ Prove that
 \]
 for every \(z\) in the unit disk.
 :::
+
+::: {.solution}
+Fix
+$$
+z_0\in\mathbb D.
+$$
+
+<1>1. If
+$$
+0<r<1-|z_0|,
+$$
+then the closed disk
+$$
+\overline{D(z_0,r)}
+$$
+lies inside the unit disk.
+
+::: {.proof}
+If
+$$
+|\zeta-z_0|\le r,
+$$
+then
+$$
+|\zeta|
+\le
+|\zeta-z_0|+|z_0|
+\le
+r+|z_0|
+<
+1.
+$$
+Thus every point of the closed disk lies in $\mathbb D$.
+:::
+
+<1>2. For every such $r$, Cauchy's integral formula gives
+$$
+f'(z_0)
+=
+\frac1{2\pi i}
+\int_{|\zeta-z_0|=r}
+\frac{f(\zeta)}
+{(\zeta-z_0)^2}
+\,d\zeta.
+$$
+
+::: {.proof}
+By step <1>1, $f$ is holomorphic on an open neighborhood of the closed disk centered at $z_0$ of radius $r$. The derivative form of Cauchy's integral formula therefore applies.
+:::
+
+<1>3. For every
+$$
+0<r<1-|z_0|,
+$$
+one has
+$$
+\boxed{
+|f'(z_0)|
+\le
+\frac Mr}.
+$$
+
+::: {.proof}
+Using step <1>2 and the ML estimate,
+$$
+\begin{aligned}
+|f'(z_0)|
+&\le
+\frac1{2\pi}
+\left(
+2\pi r
+\right)
+\frac{M}{r^2}\\
+&=
+\frac Mr.
+\end{aligned}
+$$
+Here
+$$
+|f(\zeta)|\le M
+$$
+by hypothesis and
+$$
+|\zeta-z_0|=r
+$$
+on the contour.
+:::
+
+<1>4. Letting
+$$
+r\uparrow1-|z_0|
+$$
+gives
+$$
+\boxed{
+|f'(z_0)|
+\le
+\frac{M}{1-|z_0|}}.
+$$
+
+::: {.proof}
+Step <1>3 holds for every
+$$
+r<1-|z_0|.
+$$
+Choose any increasing sequence
+$$
+r_j\to1-|z_0|.
+$$
+Then
+$$
+|f'(z_0)|
+\le
+\frac{M}{r_j}
+$$
+for every $j$. Passing to the limit gives the displayed estimate.
+:::
+
+<1>5. The estimate holds for every point of the unit disk.
+
+::: {.proof}
+The point
+$$
+z_0\in\mathbb D
+$$
+was arbitrary.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>4--<1>5 prove the required bound.
+:::
+:::

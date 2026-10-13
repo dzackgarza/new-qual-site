@@ -27,42 +27,32 @@ b. Give all of the possible Jordan canonical forms of $T$.
 :::
 
 ::: {.solution}
-Since
-\[
-f(T)=(T+I)^2=0,
-\]
-write $N=T+I$. Then $N^2=0$ and $T=-I+N$.
+Set $N=T+I$. Then $N^2=0$ and $T=-I+N$.
 
-For (a), suppose $v\ne0$ and $Tv=v$. Then
-\[
-Nv=(T+I)v=2v.
-\]
-Applying $N$ again gives
-\[
-0=N^2v=2Nv=4v,
-\]
-which is impossible over $\mathbb C$. Hence no nonzero vector satisfies $Tv=v$.
+<1>1. There is no nonzero $v$ such that $Tv=v$.
 
-Because $N^2=0$, we have $\operatorname{im}N\subseteq\ker N$. In particular $\ker N\ne0$: if $N=0$ this is clear, while if $N\ne0$, its nonzero image lies in the kernel. Choose $0\ne w\in\ker N$. Then $Tw=-w$, so
+::: {.proof}
+If $Tv=v$, then $Nv=2v$. Consequently $0=N^2v=2Nv=4v$, forcing $v=0$ over $\mathbb C$.
+:::
+
+<1>2. There exists a nonzero $w$ such that $T^2w=w$.
+
+::: {.proof}
+Since $N^2=0$, the operator $N$ has nonzero kernel on the five-dimensional space $V$: if it were injective, $N^2=0$ would imply $V=0$. Choose $0\neq w\in\ker N$. Then $Tw=-w$ and $T^2w=w$.
+:::
+
+<1>3. All possible Jordan forms are
 \[
-T^2w=w.
+\boxed{[-1]^{\oplus5},\quad J_2(-1)\oplus[-1]^{\oplus3},\quad J_2(-1)^{\oplus2}\oplus[-1]}.
 \]
 
-For (b), the relation $(T+I)^2=0$ says that the only eigenvalue is $-1$ and every Jordan block has size at most $2$. Since $\dim V=5$, the possible partitions of $5$ into parts of size at most $2$ are
-\[
-1+1+1+1+1,
-\qquad
-2+1+1+1,
-\qquad
-2+2+1.
-\]
-Hence the possible Jordan forms are
-\[
-[-1]^{\oplus5},
-\qquad
-J_2(-1)\oplus[-1]^{\oplus3},
-\qquad
-J_2(-1)\oplus J_2(-1)\oplus[-1].
-\]
-All three occur and are annihilated by $(x+1)^2$.
+::: {.proof}
+The relation $(T+I)^2=0$ forces the sole eigenvalue to be $-1$ and all Jordan blocks to have size at most two. The partitions of five into parts of size at most two are $1+1+1+1+1$, $2+1+1+1$, and $2+2+1$, which give precisely these forms. Conversely, the square of $T+I$ vanishes on every listed block, so all three forms occur.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 prove part (a), and step <1>3 proves part (b).
+:::
 :::

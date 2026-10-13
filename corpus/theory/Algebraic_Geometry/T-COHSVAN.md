@@ -30,8 +30,13 @@ $$
 :::
 
 ::: {.remark title="Dependence of the bound on the sheaf"}
-For a field $k$ and an integer $m\ge0$, the sheaf $\OO_{\PP_k^1}(-m)$ has vanishing positive-degree cohomology after twisting by every $n\ge m$.
-At $n=m-2$, its first cohomology has dimension one [@Har10a, Theorem III.5.1]. Thus this family on $\PP_k^1$ has no common twist bound as $m$ varies; [[T-MODSERRE]] gives the explicit cohomology and global-generation bounds.
+For a field $k$ and an integer $m\ge0$,
+$$
+H^1\bigl(\PP_k^1,\OO(n-m)\bigr)=0
+\quad\Longleftrightarrow\quad
+n\ge m-1.
+$$
+At $n=m-2$, this first cohomology group is one-dimensional [@Har10a, Theorem III.5.1]. Thus the family $\OO_{\PP_k^1}(-m)$ has no common Serre-vanishing bound as $m$ varies; [[T-MODSERRE]] gives the explicit cohomology and global-generation bounds.
 :::
 
 ::: {.remark title="Euler characteristics over a field"}

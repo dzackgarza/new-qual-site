@@ -34,8 +34,8 @@ Integrality is not stable under base change: $\Spec\CC$ is integral over $\RR$, 
 
 [[PR-SCHFOP]]
 
-The functor $h_X=\Hom(-,X)$ sends fibre products to fibre products: $h_{X\times_SY}(T)=h_X(T)\times_{h_S(T)}h_Y(T)$.
-For a $k$-scheme $X$, $\Hom_k(\Spec K,X)$ is the set of $K$-points, and $\Hom_k(\Spec k[\varepsilon]/(\varepsilon^2),X)$ is the set of pairs of a $k$-point $x$ and a tangent vector in $(\mathfrak m_x/\mathfrak m_x^2)^\vee$.
+The universal property in the definition of the fibre product is a statement about $\Hom(T, -)$ for all $T$, which is to say it is a statement about the functor of points.
+Maps $\Spec K\to X$ are $K$-points, while maps from the dual numbers lifting a $K$-point encode tangent vectors; moduli problems use the same functorial dependence on a test scheme $T$.
 
 ## Fibres of families
 

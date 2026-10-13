@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: PR-TGFTL
 kind: proposition
-title: The trace pairing identifies $\Hom(V,W)$ with $\dualof{\Hom(W,V)}$
-slogan: 'Trace of composition gives a perfect pairing between opposite Hom spaces.'
+title: Matrix-unit duality for the trace pairing
+slogan: 'Opposite matrix units are dual under trace of composition.'
 classification:
   areas:
   - algebra
@@ -12,26 +12,30 @@ classification:
   - Trace
   - Linear Algebra
 relations:
-- kind: variant-of
+- kind: related-to
   target: PR-GXII2
 review: draft
 ---
 
 ::: {.proposition}
 Let $k$ be a field and let $V$ and $W$ be finite-dimensional $k$-vector spaces.
-The map
+Choose bases $e_1,\ldots,e_n$ of $V$ and $f_1,\ldots,f_m$ of $W$.
+For $1\leq a\leq m$ and $1\leq i\leq n$, let $E_{ai}\colon V\to W$ send $e_i$ to $f_a$ and every other $e_j$ to $0$.
+For $1\leq j\leq n$ and $1\leq b\leq m$, let $F_{jb}\colon W\to V$ send $f_b$ to $e_j$ and every other $f_c$ to $0$.
+Then
 $$
-\begin{aligned}
-\Hom_k(V, W) &\to \dualof{\Hom_k(W, V)},\\
-T &\mapsto \big(S\mapsto\Tr(T \circ S)\big),
-\end{aligned}
+\Tr(E_{ai}\circ F_{jb})=\delta_{ij}\delta_{ab}.
 $$
-is an isomorphism of $k$-vector spaces, where $T\circ S\colon W\to W$.
+Thus the matrix-unit bases of $\Hom_k(V,W)$ and $\Hom_k(W,V)$ are dual under the trace pairing.
 :::
 
 ::: {.proof}
-The map is $k$-linear because the trace is, and both sides have dimension $\dim_k V\cdot\dim_k W$.
-Choose bases, so that $T$ is an $m\times n$ matrix and $S$ an $n\times m$ matrix; then $\Tr(TS)=\sum_{a,b}T_{ab}S_{ba}$.
-If $\Tr(TS)=0$ for all $S$, taking $S$ to be the matrix unit $E_{ba}$ gives $T_{ab}=0$ for all $a,b$, so $T=0$.
-Thus the map is injective, hence an isomorphism.
+The composite $E_{ai}\circ F_{jb}\colon W\to W$ vanishes on every basis vector except possibly $f_b$, and
+$$
+(E_{ai}\circ F_{jb})(f_b)
+=E_{ai}(e_j)
+=\delta_{ij}f_a.
+$$
+Its matrix therefore has a single possible nonzero entry, equal to $\delta_{ij}$ in row $a$, column $b$.
+Its trace is $\delta_{ij}$ when $a=b$ and $0$ otherwise, namely $\delta_{ij}\delta_{ab}$.
 :::

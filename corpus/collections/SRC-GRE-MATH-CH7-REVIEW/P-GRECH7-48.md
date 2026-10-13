@@ -24,3 +24,54 @@ Let $f(z)$ be a complex analytic function such that $f(z) = (5x - 3y) + i v(x, y
 (D) $9$
 (E) $14$
 :::
+
+::: {.solution}
+<1>1. The Cauchy--Riemann equations give
+$$
+v_y=5
+\qquad\text{and}\qquad
+v_x=3.
+$$
+
+::: {.proof}
+Write $f=u+iv$ with $u(x,y)=5x-3y$. Since $f$ is analytic, the Cauchy--Riemann equations are $u_x=v_y$ and $u_y=-v_x$. Here $u_x=5$ and $u_y=-3$, so $v_y=5$ and $v_x=3$.
+:::
+
+<1>2. There is a real constant $C$ such that
+$$
+v(x,y)=3x+5y+C.
+$$
+
+::: {.proof}
+By step <1>1, integrating $v_y=5$ with respect to $y$ gives $v(x,y)=5y+h(x)$ for some differentiable function $h$. Differentiating with respect to $x$ and using $v_x=3$ from step <1>1 gives $h'(x)=3$, hence $h(x)=3x+C$ for a constant $C$.
+:::
+
+<1>3. The initial value $v(4,1)=7$ gives $C=-10$.
+
+::: {.proof}
+Substituting $(x,y)=(4,1)$ into the formula from step <1>2 gives
+$$
+7=3(4)+5(1)+C=17+C,
+$$
+so $C=-10$.
+:::
+
+<1>4. Therefore
+$$
+v(3,2)=\boxed{9},
+$$
+so the answer is (D).
+
+::: {.proof}
+By steps <1>2 and <1>3,
+$$
+v(3,2)=3(3)+5(2)-10=9.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested value.
+:::
+:::

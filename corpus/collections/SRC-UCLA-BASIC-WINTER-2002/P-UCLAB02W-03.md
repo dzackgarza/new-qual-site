@@ -24,3 +24,80 @@ is connected.
 
 You may assume that intervals in $\mathbb R$ are connected, but should not simply quote more general connectedness results.
 :::
+
+::: {.solution}
+Let
+$$
+D=\{z\in\RR^2:\norm z<1\}.
+$$
+
+<1>1. For every $p\in D$, the radial segment
+$$
+S_p=\{tp:0\le t\le1\}
+$$
+is contained in $D$.
+
+::: {.proof}
+If $0\le t\le1$, then
+$$
+\norm{tp}=t\norm p\le\norm p<1.
+$$
+Hence $tp\in D$ for every $t\in[0,1]$.
+:::
+
+<1>2. Suppose, for contradiction, that $D$ is disconnected. Then there are disjoint nonempty subsets $U,V\subset D$, both open in the subspace topology of $D$, such that
+$$
+D=U\cup V.
+$$
+After interchanging $U$ and $V$ if necessary, assume $0\in U$.
+
+::: {.proof}
+This is the definition of disconnectedness by a separation into two nonempty relatively open sets. Since $0\in D$, it lies in exactly one of the two sets; rename them if necessary.
+:::
+
+<1>3. No point of $D$ can lie in $V$.
+
+::: {.proof}
+Assume instead that $p\in V$. Define
+$$
+\gamma:[0,1]\to D,
+\qquad
+\gamma(t)=tp.
+$$
+Step <1>1 shows that the map indeed takes values in $D$, and it is continuous.
+
+Set
+$$
+A=\gamma^{-1}(U),
+\qquad
+B=\gamma^{-1}(V).
+$$
+Because $U$ and $V$ are open in $D$ and $\gamma$ is continuous, $A$ and $B$ are open in the subspace topology of $[0,1]$. They are disjoint and satisfy
+$$
+[0,1]=A\cup B.
+$$
+Moreover,
+$$
+0\in A
+$$
+because $\gamma(0)=0\in U$, while
+$$
+1\in B
+$$
+because $\gamma(1)=p\in V$. Thus $A$ and $B$ are both nonempty.
+
+This separates the interval $[0,1]$ into two disjoint nonempty open subsets, contradicting the assumed connectedness of intervals in $\RR$.
+:::
+
+<1>4. Therefore $D$ is connected.
+
+::: {.proof}
+If $V$ were nonempty, it would contain some $p\in D$, contradicting step <1>3. Hence the separation assumed in step <1>2 cannot exist.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is precisely the required conclusion for the open unit disk.
+:::
+:::

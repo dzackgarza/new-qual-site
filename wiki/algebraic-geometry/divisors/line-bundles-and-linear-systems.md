@@ -9,6 +9,8 @@ topics:
 
 # Line bundles and linear systems
 
+Divisors, invertible sheaves, and maps to projective space are three linked descriptions of the same linear-system data.
+
 [[D-DIVOD]]
 
 [[PR-DIVLB]]

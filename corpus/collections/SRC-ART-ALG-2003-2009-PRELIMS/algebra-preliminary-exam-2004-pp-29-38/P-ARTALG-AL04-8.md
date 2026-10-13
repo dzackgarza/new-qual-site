@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Verified existence of the automorphisms, exhaustiveness of the ten subgroups, invariance and degrees of all fixed-field generators, and every normality decision."
 ---
-
 ::: {.problem}
 This question asks you to describe the splitting field $K$ of the polynomial $x^4 - 5$ over $\mathbb{Q}$.
 
@@ -43,7 +42,7 @@ Use generators
 $$
 r(a)=ia,\quad r(i)=i,\qquad s(a)=a,\quad s(i)=-i.
 $$
-The subgroups of $G$ and their fixed fields are:
+The complete subgroup and fixed-field list is as follows.
 
 | Subgroup $H$ | Order | Fixed field $K^H$ | Degree over $\mathbb Q$ | Galois over $\mathbb Q$? |
 | --- | --- | --- | --- | --- |
@@ -60,7 +59,7 @@ The subgroups of $G$ and their fixed fields are:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The field degree and group presentation are as stated.
 
@@ -97,7 +96,7 @@ dihedral group of order $8$.
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 The table contains every subgroup, exactly once.
 
@@ -125,7 +124,7 @@ give precisely the ten subgroups in the table.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Every field in the table is the indicated fixed field.
 
@@ -159,15 +158,15 @@ $\mathbb Q(b)$ lies in the fixed field of the indicated subgroup
 of order $2$, which has degree $4$. Equality follows, proving
 every remaining quartic row.
 
-Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. By step [](#s2){.pf-ref} and the Galois
-correspondence, the table lists every intermediate field of $K/\mathbb Q$;
+Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. The exhaustive
+subgroup enumeration proves that no intermediate field is missing;
 inclusions between fields reverse the inclusions of their subgroups.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Exactly the six fields marked Yes are Galois over $\mathbb Q$.
 
@@ -191,6 +190,12 @@ $$
 $$
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves parts (a) and (b), step [](#s3){.pf-ref} proves part (c), and step [](#s4){.pf-ref} proves part (d).
 
 :::
 

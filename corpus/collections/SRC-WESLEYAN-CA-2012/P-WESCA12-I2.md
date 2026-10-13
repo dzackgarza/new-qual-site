@@ -18,3 +18,94 @@ audit:
 ::: {.problem}
 State a theorem expressing the $m$th derivative of an analytic function as a contour integral.
 :::
+
+::: {.solution}
+<1>1. **Cauchy's integral formula for derivatives.**
+
+Let
+\[
+f:D\to\mathbb C
+\]
+be holomorphic, let
+\[
+z_0\in D,
+\]
+and choose
+\[
+r>0
+\]
+such that
+\[
+\overline{B(z_0,r)}
+\subset D.
+\]
+Then for every integer
+\[
+m\ge0,
+\]
+\[
+\boxed{
+f^{(m)}(z_0)
+=
+\frac{m!}{2\pi i}
+\int_{|\zeta-z_0|=r}
+\frac{f(\zeta)}
+{(\zeta-z_0)^{m+1}}
+\,d\zeta.
+}
+\]
+The circle is positively oriented.
+
+::: {.proof}
+For
+\[
+m=0,
+\]
+this is the ordinary Cauchy integral formula.
+
+Differentiating
+\[
+f(z)
+=
+\frac1{2\pi i}
+\int_{|\zeta-z_0|=r}
+\frac{f(\zeta)}{\zeta-z}
+\,d\zeta
+\]
+with respect to $z$, and repeating $m$ times, gives
+\[
+\frac{d^m}{dz^m}
+\frac1{\zeta-z}
+=
+\frac{m!}{(\zeta-z)^{m+1}}.
+\]
+Evaluation at
+\[
+z=z_0
+\]
+gives the displayed formula.
+:::
+
+<1>2. More generally, if $\gamma$ is a positively oriented simple closed
+contour in $D$ whose interior lies in $D$ and contains $z_0$, then
+\[
+f^{(m)}(z_0)
+=
+\frac{m!}{2\pi i}
+\int_\gamma
+\frac{f(\zeta)}
+{(\zeta-z_0)^{m+1}}
+\,d\zeta.
+\]
+
+::: {.proof}
+Apply the Cauchy integral formula on the region bounded by $\gamma$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 is the requested theorem, with step <1>2 recording the standard
+contour-generalized form.
+:::
+:::

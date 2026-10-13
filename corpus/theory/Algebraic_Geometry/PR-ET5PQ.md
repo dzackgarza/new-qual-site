@@ -23,22 +23,40 @@ prompts:
 ---
 
 ::: {.proposition}
-$\Pic(X) \cong H^1(X, \OO_X^*)$, and for $\OO_X$-modules $\mcf, \mcg$ the extensions
-\[
+$\Pic(X) \cong H^1(X, \OO_X^\times)$.
+For $\OO_X$-modules $\mcf$ and $\mcg$, equivalence classes of extensions
+$$
 0 \to \mcf \to \mce \to \mcg \to 0
-\]
-up to equivalence are classified by $\Ext^1(\mcg,\mcf)$, which is $H^1(X, \mcf \tensor \dualof{\mcg})$ when $\mcg$ is locally free.
+$$
+are classified by $\Ext^1_{\OO_X}(\mcg,\mcf)$. If $\mcg$ is finite locally free, then
+$$
+\Ext^1_{\OO_X}(\mcg,\mcf)
+\cong
+H^1\bigl(X,\mcf\tensor_{\OO_X}\mcg^\vee\bigr).
+$$
 :::
 
 ::: {.remark}
-The isomorphism is the Čech description read backwards: a line bundle is trivial on some cover, the transition functions $g_{ij} \in \OO^*(U_i \intersect U_j)$ satisfy the cocycle condition, and changing the trivialisations changes them by a coboundary.
-So $H^1$ of the units is the group of line bundles, with tensor product as the group law.
+A line bundle is trivial on an open cover, with transition functions
+$$
+g_{ij}\in\OO_X^\times(U_i\cap U_j)
+$$
+satisfying the Čech cocycle condition. Changing the local frames changes the cocycle by a coboundary, so tensor product of line bundles corresponds to multiplication of cocycles. This gives the canonical isomorphism $\Pic(X)\cong H^1(X,\OO_X^\times)$.
 
-This is the same phenomenon as the failure of right exactness on sections in [stalks and exactness](wiki/algebraic-geometry/sheaves/stalks-and-exactness.html), and it is worth saying so: in both cases $H^1$ measures the failure of local data to be global, once as sections that do not glue and once as trivialisations that do not agree.
+For extensions, finite local freeness gives
+$$
+\mathcal Hom_{\OO_X}(\mcg,\mcf)
+\cong
+\mcf\tensor_{\OO_X}\mcg^\vee,
+$$
+and the local higher $\mathcal Ext$ sheaves vanish. The local-to-global Ext spectral sequence therefore identifies the Yoneda extension group with the displayed $H^1$.
 
 On a complex manifold the exponential sequence makes it explicit,
-\[
-H^1(X,\OO) \to H^1(X,\OO^*) \to H^2(X,\ZZ) ,
-\]
-where the second map is the first Chern class: the topological type of a line bundle, with $H^1(X,\OO)$ measuring how many holomorphic structures carry it.
+$$
+H^1(X,\ZZ)\to H^1(X,\OO_X)\to\Pic(X)\xrightarrow{c_1}H^2(X,\ZZ)\to H^2(X,\OO_X).
+$$
+Thus $c_1$ records the integral cohomology class of a holomorphic line bundle, and
+$$
+\ker(c_1)\cong H^1(X,\OO_X)/\operatorname{im}H^1(X,\ZZ).
+$$
 :::

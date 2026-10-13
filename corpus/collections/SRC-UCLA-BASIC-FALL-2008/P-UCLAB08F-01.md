@@ -24,3 +24,99 @@ f(t)=t^a
 is uniformly continuous on $[0,\infty)$.
 Prove each assertion.
 :::
+
+::: {.solution}
+<1>1. For $a=0$, the function
+\[
+f(t)=1
+\]
+is uniformly continuous on $[0,\infty)$.
+
+::: {.proof}
+For all $s,t\ge0$,
+\[
+|f(t)-f(s)|=0.
+\]
+Thus for every $\varepsilon>0$, any $\delta>0$ satisfies the definition of uniform continuity.
+:::
+
+<1>2. For $a=1$, the function
+\[
+f(t)=t
+\]
+is uniformly continuous on $[0,\infty)$.
+
+::: {.proof}
+For all $s,t\ge0$,
+\[
+|f(t)-f(s)|=|t-s|.
+\]
+Given $\varepsilon>0$, choose
+\[
+\delta=\varepsilon.
+\]
+Then
+\[
+|t-s|<\delta
+\]
+implies
+\[
+|f(t)-f(s)|<\varepsilon.
+\]
+:::
+
+<1>3. For $a=2$, the function
+\[
+f(t)=t^2
+\]
+is not uniformly continuous on $[0,\infty)$.
+
+::: {.proof}
+For each positive integer $n$, set
+\[
+x_n=n,
+\qquad
+y_n=n+\frac1n.
+\]
+Then
+\[
+|x_n-y_n|=\frac1n\longrightarrow0,
+\]
+but
+\[
+\begin{aligned}
+|f(y_n)-f(x_n)|
+&=
+\left(n+\frac1n\right)^2-n^2\\
+&=
+2+\frac1{n^2}
+>
+1.
+\end{aligned}
+\]
+If $f$ were uniformly continuous, taking $\varepsilon=1$ would give some $\delta>0$ such that
+\[
+|s-t|<\delta
+\]
+implies
+\[
+|f(s)-f(t)|<1.
+\]
+For sufficiently large $n$, one has $1/n<\delta$, contradicting the displayed inequality above.
+:::
+
+<1>4. Therefore the uniformly continuous cases are exactly
+\[
+\boxed{a=0\text{ and }a=1}.
+\]
+
+::: {.proof}
+Steps <1>1--<1>2 prove uniform continuity for $a=0,1$, and step <1>3 rules it out for $a=2$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the complete classification.
+:::
+:::

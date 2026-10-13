@@ -17,98 +17,84 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-29
 ---
-
 ::: {.problem}
 Let $k$ be a field and let the group $G = \GL(m, k) \cross \GL(n, k)$ acts on the set of $m\times n$ matrices $M_{m, n}(k)$ as follows:
 \[
-(A, B) \cdot X = AX\inverseof{B}
+(A, B) \cdot X = AXB\inv
 \]
 where $(A, B) \in G$ and $X\in M_{m, n}(k)$.
 
 a. State what it means for a group to act on a set.
-   Prove that the above definition yields a group action.
+Prove that the above definition yields a group action.
 
 b. Exhibit with justification a subset $S$ of $M_{m, n}(k)$ which contains precisely one element of each orbit under this action.
 :::
 
 ::: {.solution}
-**Part (a).**
 
 ::: pf
 
-::: {.pf-step #group-action-definition}
-A group $G$ acts on a set $X$ if there is a map $G \times X \to X$, $(g, x) \mapsto g \cdot x$, such that $e \cdot x = x$ and $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$, $x \in X$.
+::: {.pf-step #s1}
 
-::: pf-proof
-definition of a group action.
-:::
-
-:::
-
-::: {.pf-step #formula-satisfies-axioms}
-The given formula defines a group action.
+A group action of $G$ on a set $X$ is a map $G\times X\to X$ satisfying $e\cdot x=x$ and $(gh)\cdot x=g\cdot(h\cdot x)$.
 
 ::: pf-proof
 
-::: pf-step
-Identity: $(I_m, I_n) \cdot X = I_m X I_n^{-1} = X$.
+These are the identity and associativity axioms defining a left group action.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The formula $(A,B)\cdot X=AXB^{-1}$ defines an action of $\mathrm{GL}(m,k)\times\mathrm{GL}(n,k)$ on $M_{m,n}(k)$.
 
 ::: pf-proof
-the identity matrices act trivially.
-:::
+
+The identity pair acts by $I_mXI_n=X$. For two pairs $(A_1,B_1)$ and $(A_2,B_2)$, the iterated action is
+\[
+A_1(A_2XB_2^{-1})B_1^{-1}
+=(A_1A_2)X(B_1B_2)^{-1},
+\]
+which equals their product acting on $X$. Thus the axioms in step [](#s1){.pf-ref} hold.
 
 :::
 
-::: pf-step
-Compatibility: $(A_1, B_1) \cdot ((A_2, B_2) \cdot X) = (A_1, B_1) \cdot (A_2 X B_2^{-1}) = A_1 A_2 X B_2^{-1} B_1^{-1} = (A_1 A_2) X (B_1 B_2)^{-1} = (A_1 A_2, B_1 B_2) \cdot X$.
+:::
+
+::: {.pf-step #s3}
+
+Two matrices belong to the same orbit if and only if they have equal rank.
 
 ::: pf-proof
-direct computation, using $(B_1 B_2)^{-1} = B_2^{-1} B_1^{-1}$.
-:::
+
+Multiplication on either side by an invertible matrix preserves rank. Conversely, elementary row and column operations reduce any matrix of rank $r$ to the matrix $D_r$ with an $r\times r$ identity block in its top-left corner and all other entries zero. Such operations are realized by left multiplication by a member of $\mathrm{GL}(m,k)$ and right multiplication by a member of $\mathrm{GL}(n,k)$, hence by the stated action. Therefore all matrices of rank $r$ lie in one orbit.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #s4}
 
-::: {.pf-step #part-a-conclusion}
-Hence this is a group action.
+A complete set of orbit representatives is
+\[
+\boxed{S=\{D_r:0\leq r\leq\min(m,n)\}},
+\]
+where $D_r$ has ones in the first $r$ diagonal positions and zeros elsewhere.
 
 ::: pf-proof
-Step [](#group-action-definition){.pf-ref} and step [](#formula-satisfies-axioms){.pf-ref}.
-:::
 
-:::
+Every possible rank $r$ has representative $D_r$ by step [](#s3){.pf-ref}. Distinct values of $r$ give distinct ranks, hence distinct orbits. Thus $S$ contains exactly one representative of each orbit.
 
-:::
-
-**Part (b).**
-
-::: pf
-
-::: {.pf-step #same-orbit-iff-same-rank}
-Two matrices $X, Y \in M_{m,n}(k)$ are in the same orbit iff they have the same rank.
-
-::: pf-proof
-$AXB^{-1}$ has the same rank as $X$ (since $A$ and $B^{-1}$ are invertible); conversely, two matrices of the same rank $r$ are related by $X = A Y B^{-1}$ for suitable invertible $A, B$ (row and column operations reduce any rank-$r$ matrix to the same canonical form).
-:::
-
-:::
-
-::: {.pf-step #orbit-representatives-set}
-Hence a set $S$ containing exactly one element of each orbit is
-$$S = \{ D_r : 0 \le r \le \min(m, n) \},$$
-where $D_r$ is the $m \times n$ matrix with $1$'s in the first $r$ diagonal positions and $0$'s elsewhere.
-
-::: pf-proof
-$D_r$ has rank $r$, and by step [](#same-orbit-iff-same-rank){.pf-ref} the orbits are exactly the rank classes, so the $D_r$ (one per possible rank) form a complete set of orbit representatives.
 :::
 
 :::
 
 ::: pf-qed
-Step [](#part-a-conclusion){.pf-ref} (a) and step [](#orbit-representatives-set){.pf-ref} (b).
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} establish part (a), and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} establish part (b).
+
 :::
 
 :::

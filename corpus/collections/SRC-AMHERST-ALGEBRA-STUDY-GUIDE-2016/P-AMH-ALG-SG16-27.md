@@ -29,17 +29,104 @@ It is a fact, which you may assume, that $I$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-Proof.
-(a) Given g,h∈R, we have I +g =I +h if and only if g−h∈I, by the coset relation.
-But the deﬁnition of I implies that g−h∈I if and only if g−h is a multiple of f. (b) Given g∈R: (Existence) The division algorithm yields q,h∈ F[x] such that g =qf +h with deg h< degf = 2009. Thusg−h =qf∈I, so by part (a), I +g =I +h, proving existence.
-(Uniqueness) Suppose we are givenh,h′∈R withI+g =I+h′ =I+h′, and with degh, degh′ < 2009. Then I +h =I +h′, so by part (a), h−h′ is a multiple of f. That is, h−h′ =kf for some k∈R. If k⁄= 0, then deg(h−h′) = deg(kf ) = degk + degf≥ degf = 2009. However, the fact that deg h, degh′ < 2009 implies that deg(h−h′)< 2009 also, a contradiction.
-Thus, we must have k = 0, and hence h−h′ = 0. That is, h =h′, proving uniqueness.
-QED Every Ideal in k[x] is Principal.
-Recall that a principal ideal in a commutative ring consists of all multiples of a ﬁxed element.
-Problem 27 features principal ideals in k[x]. This is no accident, since every ideal in k[x] is of the form ⟨f⟩ ={gf|g∈k[x]}. Furthermore,f is unique up to multiplication by a nonzero constant ofk.
-Since the units of k[x] are precisely the nonzero constants, we can equivalently say that f is unique up to multiplication by a unit.
-Irreducible Polynomials and Maximal Ideals in k[x]. Know the following: • The deﬁnition of reducible and irreducible polynomial in k[x]. • The irreducibility criterion for polynomials f∈k[x] of degree 2 or 3: such a polynomial is irreducible if and only if it has no roots in the ﬁeld k. (See problem 28 below for a proof of this fact for cubic polynomials; can you do the proof for quadratic polynomials?)
-• An ideal I⊆k[x] is maximal if and only if I =⟨f⟩, where f∈k[x] irreducible.
-That is: f is irreducible ⇐⇒ ⟨f⟩⊆ k[x] is maximal ⇐⇒ k[x]/⟨f⟩ is a ﬁeld.
-Here some problems about these concepts.
+<1>1. For $g,h\in R$,
+$$
+I+g=I+h
+\iff
+g-h\in I.
+$$
+
+::: {.proof}
+This is the standard equality criterion for cosets of the additive subgroup
+$I$: two cosets are equal exactly when the difference of their representatives
+lies in $I$.
+:::
+
+<1>2. For $g,h\in R$,
+$$
+I+g=I+h
+\iff
+f\mid(g-h).
+$$
+
+::: {.proof}
+By definition,
+$$
+I=\{qf:q\in R\}.
+$$
+Hence $g-h\in I$ exactly when $g-h=qf$ for some $q\in R$, which is exactly
+the condition that $f$ divide $g-h$.  Combine this with step <1>1.
+:::
+
+<1>3. Part (a) follows.
+
+::: {.proof}
+Step <1>2 is precisely the assertion of part (a).
+:::
+
+<1>4. For every $g\in R$, there exists $h\in R$ with
+$$
+\deg h<2009
+$$
+and
+$$
+I+g=I+h.
+$$
+
+::: {.proof}
+By the division algorithm in $F[x]$, there are unique polynomials $q,h\in R$
+such that
+$$
+g=qf+h
+$$
+with either $h=0$ or $\deg h<\deg f=2009$.  Then
+$$
+g-h=qf\in I,
+$$
+so step <1>1 gives $I+g=I+h$.
+:::
+
+<1>5. The polynomial $h$ in step <1>4 is unique among polynomials of degree
+less than $2009$ representing the coset $I+g$.
+
+::: {.proof}
+Suppose $h,h'\in R$ satisfy
+$$
+\deg h<2009,
+\qquad
+\deg h'<2009,
+$$
+and
+$$
+I+g=I+h=I+h'.
+$$
+Then $I+h=I+h'$, so by step <1>2 there exists $k\in R$ such that
+$$
+h-h'=kf.
+$$
+If $k\neq0$, then
+$$
+\deg(h-h')
+=\deg(kf)
+=\deg k+\deg f
+\geq2009.
+$$
+But either $h-h'=0$ or
+$$
+\deg(h-h')\leq\max\{\deg h,\deg h'\}<2009,
+$$
+a contradiction.  Hence $k=0$, so $h-h'=0$ and therefore $h=h'$.
+:::
+
+<1>6. Part (b) follows.
+
+::: {.proof}
+Step <1>4 proves existence and step <1>5 proves uniqueness.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>6 establish parts (a) and (b), respectively.
+:::
 :::

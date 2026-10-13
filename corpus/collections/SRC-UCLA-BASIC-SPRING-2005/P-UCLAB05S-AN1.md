@@ -27,3 +27,59 @@ p(x)=0\text{ for some }p\in\mathcal F.
 
 (b) Show that the set $\mathbb R\setminus\mathbb Q$ of irrational numbers is not algebraic.
 :::
+
+::: {.solution}
+<1>1. The set $\QQ$ is algebraic.
+
+::: {.proof}
+For each rational number $q\in\QQ$, the polynomial
+$$
+p_q(x)\coloneqq x-q
+$$
+has rational coefficients and has the single real zero $q$. Therefore, with
+$$
+\mathcal F\coloneqq\{p_q:q\in\QQ\},
+$$
+one has
+$$
+x\in\QQ
+\iff
+p_q(x)=0\text{ for some }q\in\QQ.
+$$
+Hence $\QQ$ is algebraic.
+:::
+
+<1>2. The set $\QQ[x]$ of rational-coefficient polynomials is countable.
+
+::: {.proof}
+For each $d\ge0$, the polynomials of degree at most $d$ are parametrized by the coefficient tuples
+$$
+(a_0,\ldots,a_d)\in\QQ^{d+1}.
+$$
+Since $\QQ$ is countable, each finite Cartesian power $\QQ^{d+1}$ is countable. Thus
+$$
+\QQ[x]=\bigcup_{d=0}^{\infty}\{p:\deg p\le d\}
+$$
+is a countable union of countable sets, hence countable.
+:::
+
+<1>3. If $X\subseteq\RR$ is algebraic, then either $X=\RR$ or $X$ is countable.
+
+::: {.proof}
+Let $\mathcal F\subseteq\QQ[x]$ define $X$. If the zero polynomial belongs to $\mathcal F$, then every real number is a zero of a polynomial in $\mathcal F$, so $X=\RR$.
+
+Otherwise every polynomial in $\mathcal F$ is nonzero and therefore has only finitely many real zeros. By step <1>2, the family $\mathcal F$ is countable. Hence $X$ is a countable union of finite sets and is therefore countable.
+:::
+
+<1>4. The set $\RR\setminus\QQ$ is not algebraic.
+
+::: {.proof}
+The rationals are countable and the reals are uncountable, so $\RR\setminus\QQ$ is uncountable. It is also a proper subset of $\RR$. Step <1>3 shows that no algebraic set can have both properties. Therefore $\RR\setminus\QQ$ is not algebraic.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and step <1>4 proves part (b).
+:::
+:::

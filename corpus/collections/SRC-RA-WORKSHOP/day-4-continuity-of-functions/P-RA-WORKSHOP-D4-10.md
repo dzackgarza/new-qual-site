@@ -16,54 +16,54 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 ([KRD10, 5.6.H]) Show that a continuous function $f:\mathbb R\to\mathbb R$ cannot take on every real value exactly twice.
 :::
 
-:::: {.solution}
+::: {.solution}
+Suppose for contradiction that a continuous $f:\mathbb R\to\mathbb R$ takes every real value exactly twice. Choose $a<b$ with $f(a)=f(b)=c$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Suppose, toward a contradiction, that every real value is taken exactly twice.
+There exists $t\in(a,b)$ with $f(t)\ne c$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-Pick two preimages of one value.
-Proof: fix any $x_0$; let $a < b$ be the two points with $f(a) = f(b) = f(x_0)$ (exactly two exist by assumption).
+Otherwise $f$ is constant with value $c$ on $[a,b]$, giving more than two preimages of $c$.
 
 :::
 
-::: pf-step
+:::
 
-On $[a,b]$, $f$ attains a maximum $M$ at some $x^* \in [a,b]$ and a minimum $m$ at $x_* \in [a,b]$ (extreme value theorem).
+::: {.pf-step #s2}
+
+If $f(t)>c$ for some $t\in(a,b)$, then $f$ is bounded above on $\mathbb R$.
+
+::: pf-proof
+
+Choose $y$ with $c<y<f(t)$. By the intermediate value theorem on $[a,t]$ and $[t,b]$, the equation $f(x)=y$ has one solution in $(a,t)$ and another in $(t,b)$. By the assumption of exactly two preimages, it has no solution in $(-\infty,a]$ or $[b,\infty)$. Since $f(a)=f(b)=c<y$, continuity and the intermediate value theorem imply $f(x)<y$ throughout those two exterior rays: a value greater than $y$ would force another preimage of $y$. On the compact interval $[a,b]$, the continuous function $f$ is bounded above. Combining the interval bound with $f(x)<y$ on the exterior rays bounds $f$ above on all of $\mathbb R$.
 
 :::
 
-::: {.pf-step #s4}
+:::
 
-$M$ is attained only at $a$ and $b$ (or $f \equiv f(a)$, impossible).
-Proof: if $x^* \in (a,b)$ and $M > f(a)$, then for every $y \in (f(a), M)$, the intermediate value theorem gives a preimage of $y$ in $(a, x^*)$ and another in $(x^*, b)$ — at least two preimages of $y$ inside $(a,b)$, so exactly two, both in $(a,b)$, for uncountably many $y$.
-Now consider $y = f(a)$: by IVT on $[x^*, b]$ (since $f(x^*) = M > f(a) = f(b)$), there is $z \in (x^*, b)$ with $f(z) = f(a)$, giving three preimages $a, z, b$ of $f(a)$ — contradiction.
-Hence either $M = f(a)$ or $x^* \in \{a, b\}$; in either case $f \le f(a)$ on $[a,b]$, with $f(a)$ attained at $a, b$ and nowhere in $(a,b)$ (else a third preimage).
+::: {.pf-step #s3}
+
+If $f(t)<c$ for some $t\in(a,b)$, then $f$ is bounded below on $\mathbb R$.
+
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} to the continuous function $-f$. It also takes every real value exactly twice, and $(-f)(t)>-c$. Thus $-f$ is bounded above, equivalently $f$ is bounded below.
 
 :::
 
-::: {.pf-step #s5}
-
-By symmetry, the minimum is $m = f(a)$ as well.
-Proof: applying step [](#s4){.pf-ref} to $-f$ (or repeating the argument with min), $f \ge f(a)$ on $[a,b]$.
-
 :::
 
-::: pf-step
+::: pf-qed
 
-Contradiction.
-Proof: step [](#s4){.pf-ref} gives $f \le f(a)$ on $[a,b]$ and step [](#s5){.pf-ref} gives $f \ge f(a)$ on $[a,b]$; hence $f \equiv f(a)$ on $[a,b]$, so the value $f(a)$ is taken uncountably many times — contradicting "exactly twice".
+By step [](#s1){.pf-ref}, one of steps [](#s2){.pf-ref} and [](#s3){.pf-ref} applies. Thus $f$ is bounded either above or below, contradicting the assumption that it attains every real value. Hence such a continuous function cannot exist.
 
 :::
 

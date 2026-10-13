@@ -20,3 +20,89 @@ Let $V$ be a complex vector space and let $T:V\to V$ be linear.
 Suppose $v_1,\ldots,v_n$ are nonzero eigenvectors of $T$, each corresponding to a different eigenvalue.
 Prove that $v_1,\ldots,v_n$ are linearly independent.
 :::
+
+::: {.solution}
+Let
+\[
+Tv_i=\lambda_i v_i,
+\qquad
+i=1,\ldots,n,
+\]
+where the scalars $\lambda_1,\ldots,\lambda_n$ are pairwise distinct.
+
+<1>1. Suppose
+\[
+\sum_{i=1}^n c_i v_i=0.
+\]
+
+::: {.proof}
+To prove linear independence, it is enough to show that every linear relation among the $v_i$ has all coefficients equal to zero.
+:::
+
+<1>2. Fix $j\in\{1,\ldots,n\}$ and define
+\[
+p_j(t)=\prod_{\substack{1\le i\le n\\ i\ne j}}(t-\lambda_i).
+\]
+Then
+\[
+p_j(T)v_i=0
+\]
+for every $i\ne j$.
+
+::: {.proof}
+If $i\ne j$, the product defining $p_j(T)$ contains the factor
+\[
+T-\lambda_i I.
+\]
+Since
+\[
+(T-\lambda_i I)v_i=0,
+\]
+the entire product annihilates $v_i$.
+:::
+
+<1>3. One has
+\[
+p_j(T)v_j
+=
+\left(\prod_{i\ne j}(\lambda_j-\lambda_i)\right)v_j.
+\]
+
+::: {.proof}
+For every scalar polynomial $p$ and every eigenvector $v_j$ of $T$ with eigenvalue $\lambda_j$,
+\[
+p(T)v_j=p(\lambda_j)v_j.
+\]
+Apply this to $p_j$.
+:::
+
+<1>4. The coefficient $c_j$ in step <1>1 is zero.
+
+::: {.proof}
+Apply $p_j(T)$ to the relation in step <1>1. By steps <1>2--<1>3,
+\[
+0
+=
+p_j(T)\left(\sum_{i=1}^n c_i v_i\right)
+=
+c_j\left(\prod_{i\ne j}(\lambda_j-\lambda_i)\right)v_j.
+\]
+The eigenvalues are pairwise distinct, so
+\[
+\prod_{i\ne j}(\lambda_j-\lambda_i)\ne0,
+\]
+and $v_j\ne0$ by hypothesis. Therefore $c_j=0$.
+:::
+
+<1>5. The vectors $v_1,\ldots,v_n$ are linearly independent.
+
+::: {.proof}
+The index $j$ in step <1>4 was arbitrary. Hence every coefficient in the relation from step <1>1 is zero, which is exactly linear independence.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::

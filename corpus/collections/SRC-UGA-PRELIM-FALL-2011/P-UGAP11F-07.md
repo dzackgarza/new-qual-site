@@ -20,3 +20,115 @@ Let $f:X\to Y$ be a map of sets and let $S\subseteq Y$. Give, with proof, necess
 f\bigl(f^{-1}(S)\bigr)=S.
 \]
 :::
+
+::: {.solution}
+<1>1. For every map $f:X\to Y$ and every subset $S\subseteq Y$,
+$$
+\boxed{
+f\bigl(f^{-1}(S)\bigr)
+=
+S\cap f(X)}.
+$$
+
+::: {.proof}
+First suppose
+$$
+y\in f(f^{-1}(S)).
+$$
+Then
+$$
+y=f(x)
+$$
+for some
+$$
+x\in f^{-1}(S).
+$$
+The latter condition means
+$$
+f(x)\in S.
+$$
+Thus
+$$
+y\in S
+$$
+and also
+$$
+y\in f(X),
+$$
+so
+$$
+y\in S\cap f(X).
+$$
+
+Conversely, suppose
+$$
+y\in S\cap f(X).
+$$
+Since
+$$
+y\in f(X),
+$$
+there is some $x\in X$ with
+$$
+f(x)=y.
+$$
+Because $y\in S$, this $x$ belongs to
+$$
+f^{-1}(S).
+$$
+Therefore
+$$
+y=f(x)\in f(f^{-1}(S)).
+$$
+This proves the equality.
+:::
+
+<1>2. One has
+$$
+f(f^{-1}(S))=S
+$$
+if and only if
+$$
+\boxed{S\subseteq f(X)}.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+f(f^{-1}(S))
+=
+S\cap f(X).
+$$
+Thus
+$$
+f(f^{-1}(S))=S
+$$
+if and only if
+$$
+S\cap f(X)=S.
+$$
+The latter equality holds exactly when every element of $S$ lies in $f(X)$, i.e.
+$$
+S\subseteq f(X).
+$$
+:::
+
+<1>3. Equivalently, the necessary and sufficient condition is that every point of $S$ have at least one preimage under $f$.
+
+::: {.proof}
+The condition
+$$
+S\subseteq f(X)
+$$
+means precisely that for every $y\in S$ there exists some $x\in X$ such that
+$$
+f(x)=y.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>2--<1>3 give the requested necessary and sufficient condition.
+:::
+:::

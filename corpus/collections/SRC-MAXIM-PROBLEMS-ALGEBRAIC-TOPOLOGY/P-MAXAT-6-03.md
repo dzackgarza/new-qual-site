@@ -18,3 +18,147 @@ audit:
 ::: {.problem}
 Study possible immersions (embeddings) of $\mathbb { R P } ^ { n }$ into $\mathbb { R } ^ { n + k }$ . (Hint: use S-W classes)
 :::
+
+::: {.solution}
+The Stiefel--Whitney classes give a necessary lower bound on the codimension $k$. Let
+\[
+a\in H^1(\mathbb{RP}^n;\mathbb F_2)
+\]
+be the standard generator.
+
+<1>1. The tangent bundle satisfies
+\[
+w(T\mathbb{RP}^n)=(1+a)^{n+1}.
+\]
+
+::: {.proof}
+The standard stable isomorphism
+\[
+T\mathbb{RP}^n\oplus\varepsilon^1
+\cong(n+1)\gamma^1
+\]
+and $w(\gamma^1)=1+a$ give the formula by the Whitney product theorem.
+:::
+
+<1>2. If
+\[
+f:\mathbb{RP}^n\looparrowright\mathbb R^{n+k}
+\]
+is a smooth immersion with normal bundle $\nu$ of rank $k$, then
+\[
+T\mathbb{RP}^n\oplus\nu\cong\varepsilon^{n+k}.
+\]
+
+::: {.proof}
+The derivative identifies $T\mathbb{RP}^n$ with a rank-$n$ subbundle of the pulled-back tangent bundle
+\[
+f^*T\mathbb R^{n+k}\cong\varepsilon^{n+k}.
+\]
+Choosing the orthogonal complement gives the rank-$k$ normal bundle $\nu$ and the displayed splitting.
+:::
+
+<1>3. Consequently the total Stiefel--Whitney class of the normal bundle is
+\[
+w(\nu)=(1+a)^{-(n+1)}
+=\sum_{j\geq0}\binom{n+j}{j}a^j
+\quad\text{in }\mathbb F_2[a]/(a^{n+1}).
+\]
+
+::: {.proof}
+Whitney multiplicativity applied to step <1>2 gives
+\[
+w(T\mathbb{RP}^n)w(\nu)=1.
+\]
+Use step <1>1 and the formal binomial expansion
+\[
+(1+a)^{-m}=\sum_{j\geq0}(-1)^j\binom{m+j-1}{j}a^j.
+\]
+Over $\mathbb F_2$ the signs disappear, and setting $m=n+1$ yields the stated coefficients.
+:::
+
+<1>4. Since $\nu$ has rank $k$,
+\[
+w_j(\nu)=0
+\qquad(j>k).
+\]
+Therefore an immersion can exist only if
+\[
+\binom{n+j}{j}\equiv0\pmod2
+\qquad\text{for every }k<j\leq n.
+\]
+
+::: {.proof}
+Stiefel--Whitney classes above the rank of a vector bundle vanish. By step <1>3,
+\[
+w_j(\nu)=\binom{n+j}{j}a^j.
+\]
+For $j\leq n$, the class $a^j$ is nonzero in $H^j(\mathbb{RP}^n;\mathbb F_2)$. Hence vanishing is equivalent to evenness of the binomial coefficient.
+:::
+
+<1>5. Let $2^s$ be the least power of two strictly larger than $n$. Then
+\[
+w_{,2^s-n-1}(\nu)=a^{,2^s-n-1}\ne0.
+\]
+
+::: {.proof}
+Put
+\[
+j=2^s-n-1.
+\]
+Then $1\leq j\leq n$ whenever $2^{s-1}\leq n<2^s$ and $n\ne2^s-1$; in the endpoint case $j=0$ gives no obstruction. The coefficient in step <1>3 is
+\[
+\binom{n+j}{j}
+=\binom{2^s-1}{j}.
+\]
+Every binomial coefficient in row $2^s-1$ is odd: modulo $2$,
+\[
+(1+t)^{2^s-1}=1+t+t^2+\cdots+t^{2^s-1}.
+\]
+Thus the coefficient is $1$ mod $2$, proving the claim.
+:::
+
+<1>6. Hence, whenever $n\ne2^s-1$, every immersion
+\[
+\mathbb{RP}^n\looparrowright\mathbb R^{n+k}
+\]
+must satisfy
+\[
+\boxed{k\geq2^s-n-1.}
+\]
+
+::: {.proof}
+The nonzero class in step <1>5 is a Stiefel--Whitney class of the rank-$k$ normal bundle. Its degree cannot exceed $k$, giving the inequality.
+:::
+
+<1>7. More sharply, the complete Stiefel--Whitney obstruction is
+\[
+\boxed{
+k\geq
+\max\{j\leq n:\binom{n+j}{j}\text{ is odd}\}.}
+\]
+
+::: {.proof}
+Step <1>4 says every nonzero inverse Stiefel--Whitney class must occur in degree at most the normal rank. Taking the largest degree with odd coefficient gives exactly this necessary bound. Lucas's theorem can be used to read the odd coefficients directly from the binary expansion of $n$.
+:::
+
+<1>8. The same bound applies to embeddings
+\[
+\mathbb{RP}^n\hookrightarrow\mathbb R^{n+k}.
+\]
+
+::: {.proof}
+Every smooth embedding is in particular a smooth immersion, and its geometric normal bundle satisfies the same stable tangent-normal identity of step <1>2. Hence every Stiefel--Whitney obstruction derived above remains necessary.
+:::
+
+<1>9. These characteristic classes provide obstructions, not a general sufficiency theorem.
+
+::: {.proof}
+Vanishing of the inverse Stiefel--Whitney classes above degree $k$ is necessary for a rank-$k$ stable normal bundle, but Stiefel--Whitney classes do not classify normal bundles or remove all immersion/embedding obstructions. Thus the conclusions above are precisely the restrictions supplied by the hint, rather than an unsupported claim that every remaining codimension occurs.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>3--<1>8 give the requested Stiefel--Whitney analysis of possible immersion and embedding codimensions.
+:::
+:::

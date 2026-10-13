@@ -23,21 +23,21 @@ prompts:
 
 ::: {.proposition}
 A sequence of sheaves $\mcf \to \mcg \to \mch$ is exact exactly when
-\[
+$$
 \mcf_p \to \mcg_p \to \mch_p
-\]
+$$
 is exact for every $p \in X$.
 For $0 \to \mcf \to \mcg \to \mch \to 0$ exact, the sequence of global sections
-\[
+$$
 0 \to \mcf(X) \to \mcg(X) \to \mch(X)
-\]
+$$
 is exact, but the last map need not be surjective.
 :::
 
 ::: {.remark}
-Surjectivity of $\mcg \to \mch$ means every germ lifts, which is a statement about some neighbourhood of each point.
-A global section of $\mch$ therefore lifts over each member of some cover, and the lifts need not agree on overlaps.
-The obstruction to correcting them is a Čech $1$-cocycle, and it is $H^1(X, \mcf)$ that measures whether it can be corrected.
-
-The failure occurs on overlaps: local lifts differ by a Čech $1$-cocycle in the kernel, and its class in $H^1(X,\mcf)$ is the obstruction to gluing them to a global lift.
+The associated long exact cohomology sequence begins
+$$
+0\to H^0(X,\mcf)\to H^0(X,\mcg)\to H^0(X,\mch)\xrightarrow{\delta}H^1(X,\mcf).
+$$
+A section $s\in H^0(X,\mch)$ lifts to a global section of $\mcg$ exactly when $\delta(s)=0$. In Čech cohomology, local lifts of $s$ differ on overlaps by a $1$-cocycle in $\mcf$ representing $\delta(s)$.
 :::

@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Verified that the cubic splitting field has no real quadratic subfield, proved the product Galois group by restriction and degree, and checked Sylow conjugation and every fixed-field degree."
 ---
-
 ::: {.problem}
 Let $K$ be the splitting field of $(x^3-2)(x^2-3)$ over $\mathbb{Q}$ and $G$ be the Galois group of $K/\mathbb{Q}$.
 
@@ -141,7 +140,7 @@ $0\leq i<3$ and $j,k\in\{0,1\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 For part (a), the Sylow $3$-subgroup is normal and the
 Sylow $2$-subgroups are not normal.
@@ -164,7 +163,7 @@ and both have now been decided.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 For part (b), take $G_1=\langle r,t\rangle$ and
 $G_2=\langle r\rangle$. The subgroup and fixed-field data are
@@ -210,6 +209,12 @@ $\sqrt{-3}=2\zeta+1=ib$, so the middle biquadratic field
 may also be written $\mathbb Q(i,\sqrt3)$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (a), and step [](#s5){.pf-ref} proves part (b), including the corresponding fixed fields.
 
 :::
 

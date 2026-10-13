@@ -1,9 +1,9 @@
 ---
-title: Real Analysis
+title: Real analysis
 order: 20
 ---
 
-# Real Analysis
+# Real analysis
 
 ## Recurring questions
 

@@ -14,7 +14,6 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ is called **maximal** if $N \ne M$ and there is no $R$-submodule $P$ satisfying $N \subsetneq P \subsetneq M$.
 
@@ -26,138 +25,184 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 :::
 
 ::: {.solution}
-**Goal:** Characterize maximal submodules via simplicity of quotients in (a), deduce prime-order quotients for abelian groups in (b), and prove that the divisible group of roots of unity has no maximal submodules in (c).
 
 ::: pf
 
-::: pf-step
-Part (a): $N \subset M$ is maximal if and only if $M/N$ is simple.
+::: {.pf-step #s1}
+
+The submodule $N$ is maximal in $M$ if and only if the quotient $M/N$ is simple.
 
 ::: pf-proof
 
 ::: pf-step
+
 By the Submodule Correspondence Theorem (Lattice Isomorphism Theorem for modules), the canonical quotient projection $\pi: M \to M/N$ induces an inclusion-preserving bijection between the set of submodules of $M$ containing $N$ and the set of submodules of $M/N$:
-$$P \longleftrightarrow P/N = \pi(P).$$
+    $$P \longleftrightarrow P/N = \pi(P).$$
+
 :::
 
 ::: pf-step
+
 Under this correspondence, proper intermediate submodules $N \subsetneq P \subsetneq M$ correspond bijectively to non-zero proper submodules $\{0\} \subsetneq P/N \subsetneq M/N$.
+
 :::
 
 ::: pf-step
+
 $N$ is maximal if and only if $N \ne M$ and no such intermediate submodule $P$ exists.
+
 :::
 
 ::: pf-step
+
 This occurs if and only if $M/N \ne \{0\}$ and $M/N$ contains no submodules other than $\{0\}$ and $M/N$, which is the definition of $M/N$ being a simple $R$-module.
-:::
 
 :::
 
 :::
 
-::: pf-step
-Part (b): A $\mathbb{Z}$-submodule $N \subseteq M$ is maximal if and only if $|M/N| = p$ is prime.
+:::
+
+::: {.pf-step #s2}
+
+For abelian groups, $N$ is maximal if and only if $M/N$ has prime order.
 
 ::: pf-proof
 
 ::: pf-step
+
 A $\mathbb{Z}$-module is an abelian group, and $\mathbb{Z}$-submodules are subgroups.
+
 :::
 
 ::: pf-step
+
 By Part (a), $N$ is maximal if and only if $A = M/N$ is a simple abelian group.
+
 :::
 
 ::: pf-step
+
 ($\impliedby$): If $|A| = p$ is prime, then by Lagrange's Theorem the only subgroups of $A$ are $\{0\}$ and $A$. Since $p \ge 2$, $A \ne \{0\}$, so $A$ is simple.
+
 :::
 
 ::: pf-step
+
 ($\implies$): Suppose $A$ is a simple abelian group. Since $A \ne \{0\}$, choose a non-zero element $x \in A \setminus \{0\}$.
+
 :::
 
 ::: pf-step
+
 The cyclic subgroup $\langle x \rangle \le A$ is a non-zero submodule of $A$. By simplicity, $\langle x \rangle = A$, so $A$ is cyclic.
+
 :::
 
 ::: pf-step
+
 If $A \cong \mathbb{Z}$, then the subgroup $\langle 2x \rangle \cong 2\mathbb{Z}$ is a non-zero proper subgroup of $A$, contradicting simplicity. Thus $A$ must be finite.
+
 :::
 
 ::: pf-step
+
 Since $A$ is finite cyclic, $A \cong \mathbb{Z}/n\mathbb{Z}$ for some integer $n \ge 2$.
+
 :::
 
 ::: pf-step
+
 If $n$ is composite, let $p$ be a prime divisor of $n$ with $1 < p < n$. The subgroup $\langle (n/p) x \rangle$ has order $p$, so $\{0\} \subsetneq \langle (n/p) x \rangle \subsetneq A$, contradicting simplicity.
+
 :::
 
 ::: pf-step
+
 Therefore $n = p$ must be prime, so $|M/N| = |A| = p$.
-:::
 
 :::
 
 :::
 
-::: pf-step
-Part (c): $M = \mu_\infty$ has no maximal $\mathbb{Z}$-submodules.
+:::
+
+::: {.pf-step #s3}
+
+The group $\mu_\infty$ of all complex roots of unity has no maximal $\mathbb Z$-submodule.
 
 ::: pf-proof
 
 ::: pf-step
+
 Suppose for contradiction that $N \subset M$ is a maximal $\mathbb{Z}$-submodule (subgroup).
+
 :::
 
 ::: pf-step
+
 By Part (b), the quotient group $M/N$ has prime order $|M/N| = p$.
+
 :::
 
 ::: {.pf-step #s3-3}
+
 In any finite group of order $p$, every element raised to the power $p$ is the identity: for all $x \in M$, $(x N)^p = x^p N = N$, which implies $x^p \in N$.
+
 :::
 
 ::: pf-step
+
 We show that $M$ is $p$-divisible: let $x \in M$. By definition of $\mu_\infty$, $x^m = 1$ for some integer $m \ge 1$.
+
 :::
 
 ::: pf-step
+
 In $\mathbb{C}$, the polynomial $z^p - x = 0$ has $p$ solutions. Let $y \in \mathbb{C}^\times$ be any solution, so $y^p = x$.
+
 :::
 
 ::: pf-step
+
 Then $y^{p m} = (y^p)^m = x^m = 1$, which proves that $y \in \mu_\infty = M$.
+
 :::
 
 ::: pf-step
+
 Thus every element $x \in M$ can be written as $x = y^p$ for some $y \in M$.
+
 :::
 
 ::: pf-step
+
 Applying step [](#s3-3){.pf-ref} to $y \in M$, we have $x = y^p \in N$.
+
 :::
 
 ::: pf-step
+
 This implies $M \subseteq N$, so $N = M$, which contradicts the definition of a maximal submodule ($N \subsetneq M$).
+
 :::
 
 ::: pf-step
+
 Thus no maximal $\mathbb{Z}$-submodule of $M$ exists.
-:::
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-
-::: pf-proof
-Maximal submodules correspond to simple quotients, simple abelian groups are cyclic of prime order, and the divisible group of roots of unity possesses no maximal submodules.
 :::
 
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a), (b), and (c), respectively.
+
 :::
 
 :::
+
 :::

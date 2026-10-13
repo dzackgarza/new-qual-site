@@ -12,7 +12,7 @@ topics:
 
 Quasicoherence, coherence, twisting sheaves, and line bundles.
 
-For $X$ projective over a noetherian ring and $\mcf$ coherent on $X$, there is a surjection $\bigoplus_{i=1}^r\OO_X(-d_i)\to\mcf$, so long exact sequences reduce statements about $H^j(X,\mcf)$ to the cohomology of the sheaves $\OO(d)$ on projective space.
+Natural sheaves such as the sheaf of differentials are tested for quasicoherence on affine charts, while resolutions by twists reduce many coherent-sheaf cohomology computations on projective space to $H^*(\PP^n,\OO(d))$.
 
 ## Syllabus
 

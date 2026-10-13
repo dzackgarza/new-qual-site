@@ -18,3 +18,69 @@ audit:
 ::: {.problem}
 The Euler characteristic of a closed manifold of odd dimension is zero.
 :::
+
+::: {.solution}
+Let $M$ be a closed $n$-manifold with $n$ odd. Work with coefficients in $\mathbb F_2$, so orientability is irrelevant.
+
+<1>1. Poincaré duality gives
+\[
+H_i(M;\mathbb F_2)
+\cong H^{n-i}(M;\mathbb F_2)
+\]
+for every $i$.
+
+::: {.proof}
+Every manifold is orientable over $\mathbb F_2$. Since $M$ is closed, mod-$2$ Poincaré duality identifies homology in degree $i$ with cohomology in complementary degree $n-i$.
+:::
+
+<1>2. Therefore the Betti numbers satisfy
+\[
+b_i=b_{n-i}.
+\]
+
+::: {.proof}
+Over the field $\mathbb F_2$, the universal coefficient theorem gives
+\[
+\dim H^{n-i}(M;\mathbb F_2)
+=\dim H_{n-i}(M;\mathbb F_2).
+\]
+Take dimensions in the duality isomorphism from step <1>1.
+:::
+
+<1>3. The Euler characteristic is
+\[
+\chi(M)=\sum_{i=0}^{n}(-1)^ib_i.
+\]
+
+::: {.proof}
+For a finite CW model of the compact manifold $M$, Euler characteristic equals the alternating sum of homology dimensions over any field.
+:::
+
+<1>4. Pairing the $i$th and $(n-i)$th terms gives zero.
+
+::: {.proof}
+Because $n$ is odd, $i\ne n-i$ for every integer $i$, and
+\[
+(-1)^{n-i}=-(-1)^i.
+\]
+By step <1>2, $b_{n-i}=b_i$. Hence
+\[
+(-1)^ib_i+(-1)^{n-i}b_{n-i}=0.
+\]
+:::
+
+<1>5. Consequently
+\[
+\boxed{\chi(M)=0}.
+\]
+
+::: {.proof}
+The finite sum in step <1>3 decomposes into the cancelling pairs from step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves the claim for every closed odd-dimensional manifold, orientable or not.
+:::
+:::

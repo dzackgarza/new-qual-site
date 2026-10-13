@@ -28,12 +28,21 @@ A \dfn{sheaf of ideals} is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
 :::
 
 ::: {.remark}
-The presheaf $U \mapsto \mcf(U) \tensor_{\OO_X(U)} \mcg(U)$ need not be a sheaf: on $X=\PP^1_k$, its value on $X$ for $\mcf=\OO(1)$ and $\mcg=\OO(-1)$ is $H^0(\OO(1))\tensor_kH^0(\OO(-1))=0$, while $\OO(1)\tensor\OO(-1)\cong\OO_X$ has the global section $1$.
-Morphisms of sheaves defined on the members of an open cover and agreeing on overlaps glue uniquely, so $U\mapsto\Hom_{\restrictionof{\OO_X}{U}}(\restrictionof{\mcf}{U}, \restrictionof{\mcg}{U})$ is already a sheaf.
-
-The functor $\wait\tensor_{\OO_X}\mcg$ is right exact, and $\sheafhom_{\OO_X}(\mcf,\wait)$ is left exact.
-For every $x\in X$, $(\mcf \tensor \mcg)_x \cong \mcf_x \tensor_{\OO_{X,x}} \mcg_x$.
-If $X$ is Noetherian and $\mcf$ is coherent, then $\sheafhom(\mcf,\mcg)_x \cong \Hom_{\OO_{X,x}}(\mcf_x, \mcg_x)$ [@Har10a, Proposition III.6.8].
+Tensor product and sheaf Hom differ in how locality enters their construction.
+Tensor needs sheafifying because a tensor product of sections is not determined locally; sheaf hom does not, because a morphism of sheaves is already a local object and the assignment is a sheaf on the nose.
+So $\tensor_{\OO_X}$ is right exact and $\sheafhom_{\OO_X}$ is left exact, and the stalk formula
+$$
+(\mcf\tensor_{\OO_X}\mcg)_x
+\cong
+\mcf_x\tensor_{\OO_{X,x}}\mcg_x
+$$
+holds, while
+$$
+\sheafhom_{\OO_X}(\mcf,\mcg)_x
+\longrightarrow
+\Hom_{\OO_{X,x}}(\mcf_x,\mcg_x)
+$$
+need not be an isomorphism without a finite-presentation hypothesis on $\mcf$.
 
 $\mods{\OO_X}$ has enough injectives [@Har10a, Proposition III.2.2], but it need not have enough projectives.
 On $\PP_k^1$ over an infinite field, no projective object surjects onto $\OO_X$, as proved in [[P-AGH362NOPROJECTIVES]].

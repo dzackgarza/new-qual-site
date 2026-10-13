@@ -19,13 +19,9 @@ A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coef
 
 [[D-BVMTZ]]
 
-[[FD-KPW3H]] [[FD-GHY34]]
-
 [[D-4VC6X]]
 
 [[T-JEZZY]]
-
-[[FT-OXN3Y]]
 
 ::: {.corollary}
 A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x]$ if and only if it is irreducible in $\QQ[x]$.
@@ -44,7 +40,7 @@ A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x
 The [[D-JNCUB|characteristic]] of a field is $0$ or a prime $p$, and its [[D-EOCCU|prime subfield]] is $\QQ$ or $\FF_p$ respectively.
 In characteristic $p$, $(a+b)^p = a^p+b^p$, so $a\mapsto a^p$ is a field homomorphism.
 For a group $G$ of automorphisms of a field $L$, the [[D-5FG7E|fixed field]] $L^G$ is the subfield of elements fixed by every element of $G$.
-A field $k$ is [[D-KQFIV|perfect]] if every irreducible polynomial over $k$ is separable; equivalently, $k$ has characteristic $0$, or characteristic $p$ and $a\mapsto a^p$ is surjective on $k$.
+[[D-KQFIV|Perfect fields]] are characterized by [[PR-IK6AM|the Frobenius criterion]].
 
 [[D-JNCUB]]
 
@@ -61,8 +57,6 @@ A field $k$ is [[D-KQFIV|perfect]] if every irreducible polynomial over $k$ is s
 [[D-KGF4K]]
 
 [[D-KQFIV]]
-
-[[FD-YYLYR]]
 
 [[FD-3GZPO]]
 

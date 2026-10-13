@@ -22,7 +22,6 @@ audit:
   date: 2026-09-16
   note: Replaced the misattached scan of test 1, problem 46 with a transcription of test 1, problem 49 from ALGEBRA_REVIEW1.pdf page 5.
 ---
-
 ::: {.problem}
 Up to isomorphism, how many additive abelian groups $G$ of order $16$ have the property that $x + x + x + x = 0$ for each $x$ in $G$?
 
@@ -34,9 +33,9 @@ There are $\boxed{3}$ such groups, so the answer is $\boxed{\text{(D)}}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The abelian groups of order $16$ with $4x=0$ for all $x$ are $C_4\times C_4$, $C_4\times C_2\times C_2$, and $C_2^4$.
+Use the classification of finite abelian $2$-groups.
 
 ::: pf-proof
 
@@ -57,6 +56,12 @@ C_4\times C_4,
 These are pairwise nonisomorphic and exhaust the possibilities.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives exactly three isomorphism types, so choice (D) is correct.
 
 :::
 

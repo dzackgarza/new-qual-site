@@ -19,11 +19,15 @@ prompts:
 ---
 
 ::: {.theorem title="Lefschetz hyperplane theorem"}
-Let $X \subseteq \PP^N$ be a projective variety of dimension $n$ over $\CC$, and let $Y = X \cap H$ be a hyperplane section such that $X \setminus Y$ is smooth.
+Let $X \subseteq \PP^N_\CC$ be a smooth projective variety of dimension $n$, and let
+$$
+Y=X\cap H
+$$
+be a smooth hyperplane section.
 Then the restriction maps
-\[
+$$
 H^i(X, \ZZ) \to H^i(Y, \ZZ)
-\]
+$$
 are isomorphisms for $i < n - 1$ and injective for $i = n - 1$, and the maps $\pi_i(Y) \to \pi_i(X)$ are isomorphisms for $i < n - 1$ and surjective for $i = n - 1$.
 :::
 
@@ -34,6 +38,7 @@ A smooth plane curve of degree $d \geq 3$ is a hyperplane section of dimension $
 :::
 
 ::: {.remark}
-Every hypersurface section is a hyperplane section after a Veronese embedding, so the theorem applies to $Y = X \cap V(F)$ for any homogeneous $F$ with $X \setminus Y$ smooth.
-The proof uses that $X \setminus Y$ is an affine variety of dimension $n$, which has the homotopy type of a CW complex of dimension at most $n$.
+If $D=X\cap V(F)$ is a smooth hypersurface section cut out by a homogeneous polynomial of degree $d$, then after the $d$-uple Veronese embedding it becomes a smooth hyperplane section, so the theorem applies to $D\hookrightarrow X$.
+
+The topological proof studies the pair $(X,Y)$ by Morse theory on the affine complement $X\sm Y$. The resulting relative homotopy groups vanish below degree $n$, which gives the stated connectivity range.
 :::

@@ -29,23 +29,23 @@ Prove that $\gal(E/F)$ is nonabelian.
 :::
 
 ::: {.solution}
-Let $G=\operatorname{Gal}(E/F)$, so $|G|=14$.
+Let $G=\operatorname{Gal}(E/F)$, with $|G|=14$.
 
-For (a), an intermediate field $K$ with $[K:F]=2$ corresponds under the Galois correspondence to a subgroup $H=\operatorname{Gal}(E/K)$ of order
-\[
-|H|=[E:K]=\frac{14}{2}=7.
-\]
-The number $n_7$ of Sylow $7$-subgroups of $G$ satisfies
-\[
-n_7\equiv1\pmod7,
-\qquad
-n_7\mid2,
-\]
-so $n_7=1$. Thus there is a unique subgroup of order $7$, hence a unique such intermediate field $K$.
+<1>1. There exists exactly one intermediate field of degree two over $F$.
 
-For (b), an intermediate field $L_i$ with $[L_i:F]=7$ corresponds to a subgroup
-\[
-H_i=\operatorname{Gal}(E/L_i)
-\]
-of order $2$. Distinct fields correspond to distinct subgroups, so the hypotheses give two distinct subgroups of order $2$ in $G$. If $G$ were abelian, every Sylow $2$-subgroup would be fixed by conjugation; since Sylow subgroups are all conjugate, there could be only one Sylow $2$-subgroup. This contradicts $H_1\ne H_2$. Therefore $G$ is nonabelian.
+::: {.proof}
+By the Galois correspondence, a field $K$ with $[K:F]=2$ corresponds to a subgroup $\operatorname{Gal}(E/K)$ of order $[E:K]=7$. The Sylow number $n_7$ satisfies $n_7\mid2$ and $n_7\equiv1\pmod7$, forcing $n_7=1$. Thus there is exactly one subgroup of order seven and exactly one corresponding quadratic intermediate field.
+:::
+
+<1>2. If there exist two distinct intermediate fields of degree seven over $F$, then $G$ is nonabelian.
+
+::: {.proof}
+The two fields correspond to distinct subgroups $H_1,H_2\leq G$ of order two by the Galois correspondence. Both are Sylow $2$-subgroups. If $G$ were abelian, all subgroups would be normal, and Sylow conjugacy would force all Sylow $2$-subgroups to coincide, contrary to $H_1\neq H_2$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 prove parts (a) and (b), respectively.
+:::
 :::

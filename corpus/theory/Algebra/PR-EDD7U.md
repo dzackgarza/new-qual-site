@@ -42,13 +42,3 @@ The $1\times 1$ minors sum to $\trace M = 0 + 5 + 10 + 15 = 30$, and the $2\time
 Every row of $M$ is a linear combination of $(1,1,1,1)$ and $(0,1,2,3)$, so $\rank M = 2$ and every $3\times 3$ and $4\times 4$ minor vanishes.
 Therefore $\chi_M(t) = t^4 - 30t^3 - 80t^2$.
 :::
-
-::: {.proposition}
-Let $f(t) = a_n t^n + \cdots + a_1 t + a_0 \in \ZZ[t]$ with $a_n \neq 0$.
-If $p/q \in \QQ$ is a root of $f$ with $p, q \in \ZZ$ coprime, then $p \divides a_0$ and $q \divides a_n$.
-In particular, if $f$ is monic, every rational root of $f$ is an integer dividing $a_0$.
-:::
-
-::: {.remark}
-If $r$ is a root of $f$, polynomial long division gives $f(t) = (t - r)\,g(t)$ with $\deg g = \deg f - 1$, and the remaining roots of $f$ are the roots of $g$.
-:::

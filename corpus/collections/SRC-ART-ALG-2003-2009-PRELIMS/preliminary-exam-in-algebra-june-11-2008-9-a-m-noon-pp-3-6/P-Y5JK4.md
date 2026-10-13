@@ -13,7 +13,6 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 a. Show that every Euclidean domain is a principal ideal domain.
 
@@ -31,15 +30,33 @@ c. Show that $\mathbf{Z}[i]/I$ is finite.
 
 ::: {.pf-step #s1}
 
-In part (a), every ideal of a Euclidean domain $R$ with Euclidean function $N$ is principal.
+For part (a), every nonzero ideal of a Euclidean domain is
+principal.
 
 ::: pf-proof
 
-Let $I$ be an ideal of $R$. If $I=0$, then $I=(0)$.
-Otherwise choose $d\in I\setminus\{0\}$ with $N(d)$ minimal; then $(d)\subseteq I$.
-For $a\in I$, division gives $q,r\in R$ with $a=qd+r$ and either $r=0$ or $N(r)<N(d)$.
-Since $r=a-qd\in I$, minimality of $N(d)$ excludes $r\ne0$, so $a=qd\in(d)$.
-Hence $I=(d)$, and $R$ is a principal ideal domain.
+Let $R$ be a Euclidean domain with Euclidean function $N$, and let
+$0\ne I\triangleleft R$. Choose
+$$
+0\ne d\in I
+$$
+with $N(d)$ minimal among the values $N(a)$ for nonzero $a\in I$.
+Since $d\in I$,
+$$
+(d)\subseteq I.
+$$
+
+Conversely, let $a\in I$. Euclidean division by $d$ gives
+$$
+a=qd+r
+$$
+with either $r=0$ or $N(r)<N(d)$. Because $a,d\in I$, one has
+$$
+r=a-qd\in I.
+$$
+The minimality of $N(d)$ excludes a nonzero remainder with
+$N(r)<N(d)$, so $r=0$. Hence $a\in(d)$. Thus $I\subseteq(d)$ and
+therefore $I=(d)$.
 
 :::
 
@@ -47,13 +64,22 @@ Hence $I=(d)$, and $R$ is a principal ideal domain.
 
 ::: {.pf-step #s2}
 
-In part (b), every coset of $I=(\alpha)$ contains an element of norm less than $N(\alpha)$.
+The zero ideal is principal, so every Euclidean domain is a
+principal ideal domain.
 
 ::: pf-proof
 
-A coset has the form $\beta+I$ with $\beta\in\ZZ[i]$.
-Division by $\alpha\ne0$ gives $q,r\in\ZZ[i]$ with $\beta=q\alpha+r$ and either $r=0$ or $N(r)<N(\alpha)$.
-Then $r=\beta-q\alpha\in\beta+I$, and in both cases $N(r)<N(\alpha)$, because $N(0)=0<N(\alpha)$.
+The zero ideal is $(0)$, while step [](#s1){.pf-ref} proves that every nonzero ideal is
+principal.
+
+For parts (b) and (c), write
+$$
+R=\ZZ[i],
+\qquad
+N(a+bi)=a^2+b^2,
+\qquad
+I=(\alpha)\ne0.
+$$
 
 :::
 
@@ -61,12 +87,52 @@ Then $r=\beta-q\alpha\in\beta+I$, and in both cases $N(r)<N(\alpha)$, because $N
 
 ::: {.pf-step #s3}
 
-In part (c), $\ZZ[i]/I$ is finite.
+Every coset of $I$ in $R$ contains an element $r$ satisfying
+$$
+\boxed{N(r)<N(\alpha)}.
+$$
 
 ::: pf-proof
 
-Let $n=N(\alpha)$. The Gaussian integers $a+bi$ with $a^2+b^2<n$ satisfy $\abs{a},\abs{b}<\sqrt n$, so there are finitely many of them.
-By step [](#s2){.pf-ref} every coset of $I$ contains one of them, so there are finitely many cosets.
+Let $z+I$ be any coset. Since $\alpha\ne0$, Euclidean division gives
+$$
+z=q\alpha+r
+$$
+for some $q,r\in R$, with either $r=0$ or $N(r)<N(\alpha)$. In either
+case,
+$$
+r=z-q\alpha\in z+I.
+$$
+Moreover, $N(0)=0<N(\alpha)$ because $\alpha\ne0$. Hence every coset
+contains a representative of norm strictly smaller than $N(\alpha)$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The quotient $R/I$ is finite.
+
+::: pf-proof
+
+Set
+$$
+n=N(\alpha)>0.
+$$
+By step [](#s3){.pf-ref}, every coset has a representative in
+$$
+S=\{a+bi\in\ZZ[i]:a^2+b^2<n\}.
+$$
+If $a+bi\in S$, then
+$$
+|a|<\sqrt n,
+\qquad
+|b|<\sqrt n.
+$$
+Thus only finitely many pairs $(a,b)\in\ZZ^2$ occur, so $S$ is finite.
+The quotient map $S\to R/I$ is surjective by step [](#s3){.pf-ref}. Therefore
+$R/I$ is finite.
 
 :::
 
@@ -74,7 +140,8 @@ By step [](#s2){.pf-ref} every coset of $I$ contains one of them, so there are f
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} answer parts (a), (b), and (c).
+Step [](#s2){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), and step [](#s4){.pf-ref} proves
+part (c).
 
 :::
 

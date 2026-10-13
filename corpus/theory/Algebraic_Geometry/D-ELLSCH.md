@@ -24,9 +24,9 @@ An \dfn{elliptic curve over a scheme} $S$ is a proper smooth morphism $p \colon 
 
 ::: {.proposition}
 Locally on $S$, an elliptic curve is a Weierstrass cubic: every point of $S$ has an affine neighbourhood $\Spec A$ over which $E$ is the closed subscheme of $\PP^2_A$ cut out by
-\[
+$$
 y^2 z + a_1 xyz + a_3 y z^2 = x^3 + a_2 x^2 z + a_4 x z^2 + a_6 z^3
-\]
+$$
 with discriminant $\Delta \in A^\times$, and $e$ is the point $[0:1:0]$.
 The fibres are elliptic curves over the residue fields, and the group laws on the fibres come from a morphism $E \times_S E \to E$ making $E$ a commutative group scheme over $S$.
 :::

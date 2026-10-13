@@ -20,19 +20,36 @@ prompts:
 ---
 
 ::: {.definition title="Blowup"}
-The \dfn{blowup} of $\AA^n$ at the origin is
+The blowup of $\AA^n$ at the origin is
 $$
-\Bl_0 \AA^n \definedas \theset{ (x, \ell) \in \AA^n \times \PP^{n-1} \st x \in \ell } ,
+\Bl_0 \AA^n \coloneqq \theset{ (x, \ell) \in \AA^n \times \PP^{n-1} \st x \in \ell } ,
 $$
 with $\pi$ the first projection.
-For $X\subseteq\AA^n$ a closed subvariety through $p=0$, $\Bl_p X$ is the closure of $\inverseof{\pi}(X \sm \theset{p})$ inside $\Bl_0 \AA^n$; for a variety $X$ and $p\in X$, it is defined through an affine neighbourhood of $p$ embedded in some $\AA^n$.
-The \dfn{exceptional divisor} is $E \definedas \inverseof{\pi}(p)\cap\Bl_pX$, and the \dfn{proper transform} of a subvariety $C \subseteq X$ is the closure of $\inverseof{\pi}(C \sm \theset{p})$.
+For a variety $X$ and a closed point $p\in X$ with ideal sheaf $\mci_p$, the intrinsic definition is
+$$
+\Bl_pX
+\coloneqq
+\Proj_X\bigoplus_{d\ge0}\mci_p^d,
+$$
+as in [[D-SCHBLOWUP]].
+The \dfn{exceptional divisor} is $E\coloneqq\pi^{-1}(p)$, and its fibre over $p$ is
+$$
+E
+\cong
+\Proj\operatorname{gr}_{\mfm_p}\OO_{X,p},
+$$
+the projectivized tangent cone.
+The \dfn{proper transform} of a subvariety $C\subseteq X$ is the closure of $\pi^{-1}(C\sm\theset{p})$.
 :::
 
 ::: {.proposition}
 $\pi$ is an isomorphism away from $E$, hence birational, and $\Bl_p X$ is again a variety, projective over $X$.
-The exceptional divisor $E\subseteq\PP^{n-1}$ is the projectivization of the tangent cone of $X$ at $p$.
-If $p$ is a smooth point of $X$ and $\dim X=d$, then $E\cong\PP^{d-1}$ is the space of tangent directions at $p$; for $X=\AA^n$, $E\cong\PP^{n-1}$.
+If $X$ is smooth of dimension $n$ at $p$, then
+$$
+E\cong\PP^{n-1}_{\kappa(p)},
+$$
+the projective space of one-dimensional quotients of the tangent space at $p$.
+In particular, for a smooth surface $E\cong\PP^1_{\kappa(p)}$.
 :::
 
 ::: {.remark}

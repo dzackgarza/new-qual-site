@@ -17,25 +17,21 @@ For $X$ of finite type over a field $k$ and equidimensional of dimension $n$, $X
 ## The two sequences
 
 The relative sequence, for $X \to Y \to S$:
-\[
+$$
 f^*\Omega_{Y/S} \to \Omega_{X/S} \to \Omega_{X/Y} \to 0 .
-\]
+$$
 The conormal sequence, for a closed immersion $Z \subseteq X$ with ideal $\mci$:
-\[
+$$
 \mci/\mci^2 \to \Omega_{X/S}\restrictionof{}{Z} \to \Omega_{Z/S} \to 0 .
-\]
+$$
 
-Neither sequence is left exact in general.
-For the Frobenius $F\colon\AA^1_k\to\AA^1_k$ in characteristic $p$, the map $F^*\Omega_{\AA^1}\to\Omega_{\AA^1}$ is zero.
-For $Z=V(x^2)\subset\AA^1_k$ with $\operatorname{char}k\neq3$, the class of $x^3$ in $\mci/\mci^2=(x^2)/(x^4)$ is nonzero and maps to $3x^2\,dx=0$ in $\Omega_{\AA^1}|_Z$.
-
-The relative sequence is exact on the left when $X\to Y$ is smooth.
-For a finite separable morphism $f\colon X\to Y$ of smooth curves, $0\to f^*\Omega_Y\to\Omega_X\to\Omega_{X/Y}\to0$ is exact, $\Omega_{X/Y}$ is a torsion sheaf whose lengths give the ramification divisor $R$, and $\Omega_X\cong f^*\Omega_Y(R)$.
-The conormal sequence is exact on the left when $X$ and $Z$ are smooth over a field, and taking determinants then gives adjunction,
-\[
-\omega_Z = \left( \omega_X \tensor \dualof{\det(\mci/\mci^2)} \right)\restrictionof{}{Z} .
-\]
-For a smooth curve $C$ on a smooth surface $X$, $\det(\mci/\mci^2)^\vee=\OO_X(C)|_C$, so $\omega_C=(\omega_X\otimes\OO_X(C))|_C$; see [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
+Neither sequence is left exact in general; injectivity of the leftmost map requires additional hypotheses.
+The first becomes short exact on the left for a smooth morphism, and its failure for a nonconstant map of curves is what Riemann--Hurwitz measures: the cokernel of $f^*\Omega_Y \to \Omega_X$ is the ramification divisor.
+The second becomes short exact on the left when $Z$ is smooth, and taking determinants then gives adjunction,
+$$
+\omega_Z = \left( \omega_X \tensor \det(\mci/\mci^2)\dual \right)\restrictionof{}{Z} ,
+$$
+which is the computation behind every genus formula in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 
 [[D-MODCONORM]]
 

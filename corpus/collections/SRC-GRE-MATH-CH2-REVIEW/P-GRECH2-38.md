@@ -30,3 +30,55 @@ converges. Determine the value of the integral.
 (D) $\frac{\log n}{n+1}$
 (E) $\frac{\log n}{n-1}$
 :::
+
+::: {.solution}
+<1>1. For every $b>e$, the substitution $u=\log x$ gives
+$$
+\int_e^b \frac{dx}{x(\log x)^n}
+=\int_1^{\log b}u^{-n}\,du.
+$$
+
+::: {.proof}
+Since $u=\log x$, one has $du=dx/x$. The lower endpoint $x=e$ becomes $u=1$, and the upper endpoint $x=b$ becomes $u=\log b$, which proves the displayed identity.
+:::
+
+<1>2. The improper integral converges if and only if $n>1$.
+
+::: {.proof}
+By step <1>1, if $n\ne1$, then
+$$
+\int_e^b \frac{dx}{x(\log x)^n}
+=\frac{(\log b)^{1-n}-1}{1-n}.
+$$
+If $n<1$, then $1-n>0$ and $(\log b)^{1-n}\to\infty$, so the integral diverges. If $n=1$, then step <1>1 gives
+$$
+\int_1^{\log b}\frac{du}{u}
+=\log(\log b),
+$$
+which also diverges as $b\to\infty$. If $n>1$, then $1-n<0$, so $(\log b)^{1-n}\to0$ and the limit is finite. Thus convergence is equivalent to $n>1$.
+:::
+
+<1>3. For the admissible values of $n$,
+$$
+\boxed{\int_e^\infty \frac{dx}{x(\log x)^n}=\frac1{n-1}},
+$$
+so the answer is (C).
+
+::: {.proof}
+By step <1>2, convergence implies $n>1$. Therefore the formula in step <1>2 yields
+$$
+\begin{aligned}
+\int_e^\infty \frac{dx}{x(\log x)^n}
+&=\lim_{b\to\infty}\frac{(\log b)^{1-n}-1}{1-n}\\
+&=\frac{0-1}{1-n}\\
+&=\frac1{n-1}.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value and corresponding choice.
+:::
+:::

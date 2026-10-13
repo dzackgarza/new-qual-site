@@ -28,9 +28,9 @@ prompts:
 ::: {.example title="The setup"}
 Let $X = V(f) \subseteq \PP^2_{/\ZZ}$ with $f \in \ZZ[x,y,z]$ a cubic whose base change to $\CC$ is smooth.
 For all but finitely many primes the reduction $X_{(p)} \subseteq \PP^2_{/\FF_p}$ is again smooth, and one can ask for
-\[
+$$
 B \definedas \theset{ p \st X_{(p)} \text{ is smooth over } \bar\FF_p \text{ and has Hasse invariant } 0 } .
-\]
+$$
 The answer depends entirely on whether $X_{/\CC}$ has complex multiplication:
 
 - **With CM** by an order in $K$: for $p$ of good reduction, $p \in B$ exactly when $p$ does not split in $K$, that is when $p$ is inert or ramified.
@@ -53,26 +53,26 @@ The $\sqrt x/\log x$ growth is a conjecture and should be labelled as one.
 ::: {.example title="$y^2 = x^3 - x$, worked out"}
 Here $\lambda = -1$, $j = 1728$, and the curve has CM by $\ZZ[i]$.
 Apply the criterion directly: with $m = \tfrac{p-1}{2}$ and $g(x) = x(x^2-1)$,
-\[
+$$
 g(x)^m = x^m (x^2-1)^m ,
-\]
+$$
 so the coefficient of $x^{p-1} = x^{2m}$ is the coefficient of $x^m$ in $(x^2-1)^m$.
 Only even powers appear there, so that coefficient is $0$ when $m$ is odd, and $(-1)^{m/2}\binom{m}{m/2}$ when $m$ is even --- which is prime to $p$, since $m < p$.
 Hence
-\[
+$$
 X_{(p)} \text{ supersingular}
 \iff m = \tfrac{p-1}{2} \text{ is odd}
 \iff p \equiv 3 \bmod 4 .
-\]
+$$
 And $p \equiv 3 \bmod 4$ is exactly the condition that $p$ stays prime in $\ZZ[i]$, matching the general statement.
 By Dirichlet these have density $\tfrac{1}{2}$ and there are infinitely many.
 :::
 
 ::: {.example title="$y^2 = x(x-1)(x-3)$, the contrast"}
 Here $\lambda = 3$ and
-\[
+$$
 j = 2^8 \cdot \frac{(9-3+1)^3}{9 \cdot 4} = \frac{2^6 \cdot 7^3}{3^2} \notin \ZZ .
-\]
+$$
 Computing $h_p(3) \bmod p$ for the primes of good reduction, the only supersingular prime below $120$ is $p = 23$.
 The density-zero statement follows from the non-CM theorem above, and $j\notin\overline{\ZZ}$ rules out complex multiplication entirely.
 :::

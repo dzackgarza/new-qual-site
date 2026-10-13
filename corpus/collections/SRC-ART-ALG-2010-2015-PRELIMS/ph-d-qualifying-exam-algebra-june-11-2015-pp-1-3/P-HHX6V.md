@@ -25,25 +25,25 @@ audit:
   date: 2026-09-10
   note: "Checked the projection argument, equality of annihilator ideals over the arbitrary ring, and a well-defined section on each cyclic quotient summand, including the zero quotient."
 ---
-
 ::: {.problem}
 Let $D$ be a commutative ring with unit.
 A submodule $N$ of the $D$-module $M$ is said to be pure in $M$ just in case for every $y \in N$ and $a \in D$, $ax = y$ is solvable in $N$ if solvable in $M$.
 
-(a) Show that if $N$ is a direct summand of $M$ then $N$ is pure in $M$.
+a. Show that if $N$ is a direct summand of $M$ then $N$ is pure in $M$.
 
-(b) Show that if $N$ is pure in $M$, $z \in M$, and $\mathrm{ann}(z+N) = (d)$, then there is $w \in M$ with $z+N = w+N$ and $\mathrm{ann}(w) = (d)$.
+b. Show that if $N$ is pure in $M$, $z \in M$, and $\mathrm{ann}(z+N) = (d)$, then there is $w \in M$ with $z+N = w+N$ and $\mathrm{ann}(w) = (d)$.
 
-(c) Show that if $N$ is pure in $M$, $M$ is a finitely generated torsion module, and $D$ is a p.i.d., then $N$ is a direct summand of $M$.
+c. Show that if $N$ is pure in $M$, $M$ is a finitely generated torsion module, and $D$ is a p.i.d., then $N$ is a direct summand of $M$.
 :::
 
 ::: {.solution}
 For an element $v$ of a $D$-module, write
 $\operatorname{ann}_D(v)=\{a\in D:av=0\}$.
+We use exactly the single-equation definition of purity in the question.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 A direct summand is pure, proving part (a).
 
@@ -86,7 +86,7 @@ No assumption that $d$ is nonzero or a nonunit is needed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Under the hypotheses in part (c), the quotient map
 $q:M\to M/N$ admits a $D$-linear section.
@@ -124,7 +124,7 @@ the required section.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The section yields the direct summand in part (c).
 
@@ -140,6 +140,13 @@ $u=q(s(u))=0$, and hence $s(u)=0$.
 Therefore $N\cap s(Q)=0$ and $M=N\oplus s(Q)$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), and
+steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (c).
 
 :::
 

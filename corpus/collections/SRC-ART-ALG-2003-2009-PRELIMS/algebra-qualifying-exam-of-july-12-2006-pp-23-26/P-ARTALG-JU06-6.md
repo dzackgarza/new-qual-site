@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked existence of both automorphisms, all three subgroup-intersection cases, and the degrees and invariance of every fixed-field generator."
 ---
-
 ::: {.problem}
 Let $K$ be the splitting field of $x^4 - 2$ over $\mathbb{Q}$.
 What is $[K:\mathbb{Q}]$?
@@ -56,7 +55,7 @@ All subgroups and their fixed fields are as follows.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The degree and group presentation are as asserted.
 
@@ -129,7 +128,7 @@ The three cases give exactly the ten distinct subgroups in the table.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Each field in the table is the fixed field of the indicated subgroup.
 
@@ -172,6 +171,12 @@ has been omitted. Field inclusions are obtained by reversing
 the inclusions among the listed subgroups.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} determines the degree and Galois group, while steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give all subgroups and corresponding fixed fields.
 
 :::
 

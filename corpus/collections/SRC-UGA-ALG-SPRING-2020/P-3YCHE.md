@@ -30,8 +30,15 @@ Explain.
 :::
 
 ::: {.solution}
-A finite extension $E/F$ is Galois if it is both normal and separable over $F$; equivalently, if $E$ is the splitting field over $F$ of a separable polynomial.
+<1>1. A finite extension is Galois precisely when it is normal and separable.
 
+::: {.proof}
+A finite extension $E/F$ is Galois if it is both normal and separable over $F$; equivalently, if $E$ is the splitting field over $F$ of a separable polynomial.
+:::
+
+<1>2. The splitting field $E$ of $x^4-2$ has degree eight over $\mathbb Q$ and Galois group isomorphic to the dihedral group $D_8$.
+
+::: {.proof}
 Let $\alpha=2^{1/4}$. The roots of $x^4-2$ are
 \[
 \alpha,-\alpha,i\alpha,-i\alpha,
@@ -61,10 +68,21 @@ These generate $8$ distinct automorphisms, so
 \operatorname{Gal}(E/\mathbb Q)\cong D_8,
 \]
 the dihedral group of order $8$.
+:::
 
+<1>3. The intermediate field $K=\mathbb Q(\alpha)$ is not Galois over $\mathbb Q$.
+
+::: {.proof}
 Take
 \[
 K=\mathbb Q(\alpha).
 \]
 This is an intermediate field of degree $4$, but it is not normal over $\mathbb Q$: the irreducible polynomial $x^4-2$ has the root $\alpha\in K$ but the conjugate root $i\alpha\notin K$ because $K\subset\mathbb R$. Hence $K/\mathbb Q$ is not Galois.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
+:::
 :::

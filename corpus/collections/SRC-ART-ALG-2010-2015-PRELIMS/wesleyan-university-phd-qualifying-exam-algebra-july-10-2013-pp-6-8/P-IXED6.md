@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the least-ideal property, both divisibility conditions defining the gcd, and the signs in the explicit simultaneous-congruence solution."
 ---
-
 ::: {.problem}
 Suppose that $R$ is a principal-ideal domain and $a, b, c, d \in R$ with $a, b \neq 0$.
 For ideals $J,L$ of $R$, let $J\vee L$ denote the least ideal
@@ -88,7 +87,7 @@ Hence any choice of gcd is a generator of the join.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The simultaneous congruences are solvable exactly when
 $c-d\in(a)\vee(b)$.
@@ -107,9 +106,17 @@ $$
 Then $x-c=-ua\in(a)$ and $x-d=vb\in(b)$, proving both
 congruences. In terms of step [](#s2){.pf-ref}, write $c-d=kg$ and
 $g=ra+sb$; the explicit solution becomes
-$x=c-kra=d+ksb$.
+$x=c-kra=d+ksb$. No assumption that $a$ and $b$ are
+coprime was used.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} answer part (a), and step [](#s3){.pf-ref} proves the equivalence
+in part (b).
 
 :::
 

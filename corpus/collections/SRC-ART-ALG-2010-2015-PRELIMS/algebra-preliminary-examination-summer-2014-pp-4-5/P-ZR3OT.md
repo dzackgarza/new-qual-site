@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the degree tower, existence of both automorphisms, all six root permutations, and the split restriction sequence with its nontrivial conjugation action."
 ---
-
 ::: {.problem}
 Let $K$ be the splitting field of $x^3 + 2$ over $\mathbb{Q}$.
 
@@ -49,7 +48,7 @@ $a_j=\zeta^ja$, with indices in $\mathbb Z/3\mathbb Z$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The splitting field is $K=\mathbb Q(a,\zeta)$, and
 $[K:\mathbb Q]=6$.
@@ -71,7 +70,7 @@ extension [@DF04].
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The full Galois group is $S_3$ acting on the three roots,
 with generators
@@ -107,7 +106,7 @@ $r^3=s^2=1$ and $srs=r^{-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The other two groups are $C_3$ and $C_2$, linked to the
 full group by a split exact sequence.
@@ -144,6 +143,13 @@ inversion, as the relation $srs=r^{-1}$ explicitly shows.
 This is not a direct product, since $r\ne r^{-1}$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), and step [](#s3){.pf-ref}
+proves parts (c)--(d).
 
 :::
 

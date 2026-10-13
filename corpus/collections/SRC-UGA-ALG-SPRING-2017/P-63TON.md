@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-63TON
 kind: problem
-title: A monic in $R[x]$ factoring into nonconstant monics in $F[x]$ with a factor
-  outside $R[x]$ implies $R$ is not a UFD; $\ZZ[2\sqrt{2}]$ is not a UFD
+title: A monic in $R[x]$ factoring into nonconstant monics in $F[x]$ with a factor outside $R[x]$ implies $R$ is not a UFD; $\ZZ[2\sqrt{2}]$ is not a UFD
 classification:
   areas:
   - algebra
@@ -14,7 +13,6 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 (a) Let $R$ be an integral domain with fraction field $F$. Suppose that $p(x), a(x), b(x) \in F[x]$ are non-constant monic polynomials such that $p(x) = a(x) b(x)$ with $p(x) \in R[x]$ and $a(x) \notin R[x]$. Prove that $R$ is not a unique factorization domain (UFD). (You may assume Gauss's Lemma.)
 
@@ -22,113 +20,55 @@ review: draft
 :::
 
 ::: {.solution}
-**Goal:** Prove that integral domains admitting non-integral monic factorizations in their fraction field are not UFDs via Gauss's Lemma, and apply this to $x^2 - 2$ over $\mathbb{Z}[2\sqrt{2}]$.
 
 ::: pf
 
-::: pf-step
-Part (a): $R$ is not a UFD.
+::: {.pf-step #s1}
+
+If $R$ is a UFD and a monic polynomial $p\in R[x]$ factors as $p=ab$ with monic $a,b\in F[x]$, then $a,b\in R[x]$.
 
 ::: pf-proof
 
-::: pf-step
-Suppose for contradiction that $R$ is a UFD.
-:::
-
-::: pf-step
-Gauss's Lemma for UFDs states that if a monic polynomial $p(x) \in R[x]$ factors as $p(x) = a(x) b(x)$ for non-constant monic polynomials $a(x), b(x) \in F[x]$, then there exist elements $c, d \in F^\times$ such that
-$$c a(x) \in R[x], \quad d b(x) \in R[x], \quad \text{and} \quad c d = 1.$$
-:::
-
-::: pf-step
-Because $a(x)$ is monic, the leading coefficient of the polynomial $c a(x)$ is $c \cdot 1 = c$.
-:::
-
-::: pf-step
-Since $c a(x) \in R[x]$, its leading coefficient must lie in $R$, so $c \in R$.
-:::
-
-::: pf-step
-Similarly, because $b(x)$ is monic, the leading coefficient of $d b(x)$ is $d$. Since $d b(x) \in R[x]$, $d \in R$.
-:::
-
-::: pf-step
-Since $c, d \in R$ and $c d = 1$, $c$ is an invertible element of $R$ ($c \in R^\times$).
-:::
-
-::: pf-step
-Because $c \in R^\times$, its inverse $c^{-1} = d \in R$.
-:::
-
-::: pf-step
-Multiply $c a(x) \in R[x]$ by $c^{-1} \in R$:
-$$a(x) = c^{-1} (c a(x)) \in R[x].$$
-:::
-
-::: pf-step
-This contradicts the hypothesis that $a(x) \notin R[x]$.
-:::
-
-::: pf-step
-Therefore, $R$ is not a UFD.
-:::
+By Gauss's lemma, there are nonzero scalars $c,d\in F$ such that $ca,db\in R[x]$ and $cd=1$. Because $a,b$ are monic, the leading coefficients of $ca$ and $db$ are $c$ and $d$, respectively; hence $c,d\in R$. The identity $cd=1$ makes both scalars units of $R$. Multiplying by these units' inverses gives $a,b\in R[x]$.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): $\mathbb{Z}[2\sqrt{2}]$ is not a UFD.
+::: {.pf-step #s2}
+
+Under the hypotheses of part (a), $R$ is not a UFD.
 
 ::: pf-proof
 
-::: pf-step
-Set $R = \mathbb{Z}[2\sqrt{2}] = \{u + 2v\sqrt{2} \mid u, v \in \mathbb{Z}\}$.
-:::
-
-::: pf-step
-The fraction field of $R$ is $F = \mathbb{Q}(\sqrt{2})$.
-:::
-
-::: pf-step
-Define $p(x) = x^2 - 2$. Since $-2 \in R$, $p(x) \in R[x]$, and $p(x)$ is monic.
-:::
-
-::: pf-step
-In $F[x] = \mathbb{Q}(\sqrt{2})[x]$, $p(x)$ factors into monic linear polynomials:
-$$p(x) = (x - \sqrt{2})(x + \sqrt{2}) =: a(x) b(x),$$
-where $a(x) = x - \sqrt{2}$ and $b(x) = x + \sqrt{2}$.
-:::
-
-::: pf-step
-Check whether $a(x) \in R[x]$:
-
-- The constant term of $a(x)$ is $-\sqrt{2}$.
-- If $-\sqrt{2} \in R$, then $-\sqrt{2} = u + 2v\sqrt{2}$ for some $u, v \in \mathbb{Z}$.
-- Equating rational and irrational parts gives $u = 0$ and $2v = -1 \implies v = -1/2 \notin \mathbb{Z}$, a contradiction.
-- Thus $-\sqrt{2} \notin R$, which implies $a(x) \notin R[x]$.
-:::
-
-::: pf-step
-All hypotheses of Part (a) hold for $p(x) = x^2 - 2 \in R[x]$ and $a(x) = x - \sqrt{2} \in F[x] \setminus R[x]$.
-:::
-
-::: pf-step
-Therefore, by Part (a), $\mathbb{Z}[2\sqrt{2}]$ is not a UFD.
-:::
+If $R$ were a UFD, step [](#s1){.pf-ref} applied to the stated monic factorization would give $a\in R[x]$, contradicting the hypothesis $a\notin R[x]$.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
+::: {.pf-step #s3}
+
+The ring $\mathbb Z[2\sqrt2]$ is not a UFD.
 
 ::: pf-proof
-Monics factoring in $F[x]$ with non-integral factors contradict Gauss's Lemma for UFDs, so $\mathbb{Z}[2\sqrt{2}]$ is not a UFD via $x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})$.
-:::
+
+Put $R=\mathbb Z[2\sqrt2]=\{u+2v\sqrt2:u,v\in\mathbb Z\}$ and $F=\mathbb Q(\sqrt2)$, its fraction field. In $R[x]$ the monic polynomial $p=x^2-2$ satisfies
+\[
+p=(x-\sqrt2)(x+\sqrt2)
+\]
+in $F[x]$. Both factors are nonconstant and monic. The element $\sqrt2$ is not in $R$: an equality $\sqrt2=u+2v\sqrt2$ with integers $u,v$ would imply $u=0$ and $2v=1$, which is impossible. Thus $x-\sqrt2\notin R[x]$. Step [](#s2){.pf-ref} applies and shows that $R$ is not a UFD.
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and step [](#s3){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

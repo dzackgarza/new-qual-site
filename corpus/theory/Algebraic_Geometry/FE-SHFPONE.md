@@ -16,7 +16,7 @@ relations:
 review: draft
 prompts:
 - On $\PP^1$, show that $0 \to \OO(-1) \to \OO \to k_{[1:0]} \to 0$ is exact.
-- Show that $\OO(d_1) \otimes \OO(d_2) \cong \OO(d_1 + d_2)$ and $\OO(d)^\vee \cong \OO(-d)$.
+- Show that $\OO(d_1) \tensor_{\OO_X} \OO(d_2) \cong \OO(d_1 + d_2)$ and $\OO(d)^\vee \cong \OO(-d)$.
 ---
 
 ::: {.example title="A skyscraper sequence"}
@@ -32,6 +32,13 @@ Multiplication by $x_1$ gives $\OO(-1) \to \OO$, with image the ideal sheaf $\ma
 
 ::: {.example title="Tensor products and duals of twists"}
 On each chart $D_+(x_i)$ the sheaf $\OO(d)$ is free with generator $x_i^d$, and on overlaps the generators differ by the transition functions $(x_i/x_j)^d$.
-Multiplication $\OO(d_1) \otimes \OO(d_2) \to \OO(d_1 + d_2)$, $s \otimes s' \mapsto s s'$, sends the local generator $x_i^{d_1} \otimes x_i^{d_2}$ to the local generator $x_i^{d_1 + d_2}$, so it is an isomorphism.
-Taking $d_2 = -d_1$ gives $\OO(d) \otimes \OO(-d) \cong \OO$, and a perfect pairing of invertible sheaves identifies $\OO(-d) \cong \sheafhom(\OO(d), \OO) = \OO(d)^\vee$.
+Multiplication
+$\OO(d_1) \tensor_{\OO_X} \OO(d_2) \to \OO(d_1 + d_2)$,
+$s \tensor_{\OO_X} s' \mapsto s s'$,
+sends the local generator
+$x_i^{d_1} \tensor_{\OO_X} x_i^{d_2}$
+to the local generator $x_i^{d_1 + d_2}$, so it is an isomorphism.
+Taking $d_2 = -d_1$ gives
+$\OO(d) \tensor_{\OO_X} \OO(-d) \cong \OO$, and a perfect pairing of invertible sheaves identifies
+$\OO(-d) \cong \sheafhom_{\OO_X}(\OO(d), \OO) = \OO(d)^\vee$.
 :::

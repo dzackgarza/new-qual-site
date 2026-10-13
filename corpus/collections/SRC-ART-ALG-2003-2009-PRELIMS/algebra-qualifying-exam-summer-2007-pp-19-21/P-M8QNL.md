@@ -16,24 +16,22 @@ audit:
   by: muse-spark-1.2
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Let $G$ be a group with center $Z(G)$.
 Show that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 :::
 
 ::: {.solution}
-Suppose $G/Z(G)=\langle gZ(G)\rangle$ for some $g\in G$.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-Every $x\in G$ can be written $x=g^iz$ with $i\in\ZZ$ and $z\in Z(G)$.
+Suppose $G/Z(G)=\langle gZ(G)\rangle$ is cyclic.
 
 ::: pf-proof
 
-The coset $xZ(G)$ lies in $\langle gZ(G)\rangle$, so $xZ(G)=g^iZ(G)$ for some $i\in\ZZ$, and then $z=g^{-i}x\in Z(G)$.
+Choose $g\in G$ whose coset generates the cyclic quotient $G/Z(G)$.
 
 :::
 
@@ -41,15 +39,67 @@ The coset $xZ(G)$ lies in $\langle gZ(G)\rangle$, so $xZ(G)=g^iZ(G)$ for some $i
 
 ::: {.pf-step #s2}
 
-Any $x,y\in G$ commute.
+Any $x\in G$ can be written $x=g^i z$ for some $i\in\ZZ$, $z\in Z(G)$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, write $x=g^iz_1$ and $y=g^jz_2$ with $z_1,z_2\in Z(G)$.
-Since $z_1,z_2$ are central and powers of $g$ commute with each other,
+Because $gZ(G)$ generates $G/Z(G)$, there is an integer $i$ such that
 $$
-xy=g^iz_1g^jz_2=g^{i+j}z_1z_2=g^jz_2g^iz_1=yx.
+xZ(G)=g^iZ(G).
 $$
+Hence
+$$
+g^{-i}x\in Z(G).
+$$
+Writing $z=g^{-i}x$ gives
+$$
+x=g^iz
+$$
+with $z\in Z(G)$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Any two elements of $G$ commute.
+
+::: pf-proof
+
+Let
+$$
+x=g^iz_1,
+\qquad
+y=g^jz_2
+$$
+as in step [](#s2){.pf-ref}, with $z_1,z_2\in Z(G)$. Then
+$$
+\begin{aligned}
+xy
+&=g^iz_1g^jz_2\\
+&=g^{i+j}z_1z_2\\
+&=g^{j+i}z_2z_1\\
+&=g^jz_2g^iz_1\\
+&=yx.
+\end{aligned}
+$$
+The middle equalities use that powers of $g$ commute and that $z_1,z_2$ are central.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Therefore
+$$
+\boxed{G\text{ is abelian}}.
+$$
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that every pair of elements of $G$ commutes.
 
 :::
 
@@ -57,7 +107,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} shows that $G$ is abelian.
+Step [](#s4){.pf-ref} is the required conclusion.
 
 :::
 

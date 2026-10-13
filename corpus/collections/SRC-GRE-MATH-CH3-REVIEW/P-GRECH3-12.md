@@ -29,3 +29,62 @@ in a curve, $C$. Find the slope of the tangent line to $C$ at the point where $x
 (D) $\frac{1}{3}$
 (E) $\frac{1}{2}$
 :::
+
+::: {.solution}
+<1>1. On the slice $y=1$, the curve $C$ is the graph
+$$
+z=\arctan\frac{x+1}{1-x}.
+$$
+
+::: {.proof}
+Substituting $y=1$ into the given surface equation gives the displayed one-variable relation between $x$ and $z$.
+:::
+
+<1>2. Along $C$,
+$$
+\frac{dz}{dx}=\frac{1}{1+x^2}.
+$$
+
+::: {.proof}
+Set
+$$
+u(x)=\frac{x+1}{1-x}.
+$$
+Then, for $x\ne1$,
+$$
+u'(x)
+=\frac{(1-x)+(x+1)}{(1-x)^2}
+=\frac{2}{(1-x)^2}.
+$$
+By step <1>1 and the derivative of $\arctan$,
+$$
+\frac{dz}{dx}
+=\frac{u'(x)}{1+u(x)^2}
+=\frac{\frac{2}{(1-x)^2}}
+{1+\frac{(x+1)^2}{(1-x)^2}}
+=\frac{2}{(1-x)^2+(x+1)^2}
+=\frac{1}{1+x^2}.
+$$
+:::
+
+<1>3. At $x=2$, the tangent slope is
+$$
+\boxed{\frac15},
+$$
+so the answer is (C).
+
+::: {.proof}
+Substituting $x=2$ into the derivative from step <1>2 gives
+$$
+\left.\frac{dz}{dx}\right|_{x=2}
+=\frac{1}{1+2^2}
+=\frac15.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested tangent slope and corresponding choice.
+:::
+:::

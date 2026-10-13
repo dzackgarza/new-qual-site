@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Verified the quotient and ideal calculations, the infinite-rank free-module obstruction, and the explicit non-finitely-generated ideal."
 ---
-
 ::: {.problem}
 Give an example of each of the following.
 (You don't need to justify your answers.)
@@ -63,7 +62,7 @@ so the ideal is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For part (b), take $R=\mathbb Z$ and $I=(0)$.
 
@@ -81,7 +80,7 @@ because $1$ is not even.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 For part (c), take $R=\mathbb Z$ and $M=\mathbb Q$.
 
@@ -102,7 +101,7 @@ well as finite free rank.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 For part (d), take $\mathbb Z[x]$.
 
@@ -122,7 +121,7 @@ $(d)$ the whole ring, contradicting its properness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 For part (e), take $R=\mathbb Q[x_1,x_2,\ldots]$.
 
@@ -141,6 +140,12 @@ polynomial $t$. This contradicts $I=(f_1,\ldots,f_s)$. Thus $R$ has
 an ideal that is not finitely generated and is not Noetherian.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} give the requested examples for parts (a)--(e), respectively.
 
 :::
 

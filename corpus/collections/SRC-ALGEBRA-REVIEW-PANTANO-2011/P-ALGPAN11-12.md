@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-12
 kind: problem
-title: 'Subrings of $\RR$ among $\QQ(\sqrt2)$, $\ZZ[1/3]$, and $\{a+b\sqrt5: a^2+b^2\le1\}$'
+title: Which listed subsets of the reals are subrings
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 Which of the following subsets are subrings of the ring of real numbers?
 
@@ -36,7 +35,7 @@ Exactly I and II are subrings of $\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 I is a subring.
 
@@ -52,7 +51,7 @@ is closed under addition, additive inverses, and multiplication, and contains $1
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 II is a subring.
 
@@ -73,7 +72,7 @@ so it is closed under multiplication and contains $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 III is not a subring.
 
@@ -87,6 +86,24 @@ does not, since its coefficients satisfy $2^2+0^2=4>1$.
 Thus III is not closed under addition.
 
 :::
+
+:::
+
+::: {.pf-step #s4}
+
+Therefore exactly I and II are subrings of $\RR$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} and step [](#s2){.pf-ref} prove that I and II are subrings, while step [](#s3){.pf-ref} rules out III.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested classification.
 
 :::
 

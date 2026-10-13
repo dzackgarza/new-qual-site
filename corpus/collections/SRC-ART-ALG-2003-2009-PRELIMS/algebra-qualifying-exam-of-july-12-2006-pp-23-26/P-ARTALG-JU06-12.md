@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Verified the characteristic polynomial, determinant of the cyclic-basis matrix, and the complete exact matrix identity AP=PC."
 ---
-
 ::: {.problem}
 Find the rational canonical form over $\mathbb{Q}$ of the following matrix:
 
@@ -71,7 +70,7 @@ Thus these three vectors form a basis of $\mathbb Q^3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 In that basis, $A$ has the displayed companion matrix $C$.
 
@@ -94,6 +93,12 @@ relation has the single invariant factor $f$, and its rational
 canonical form is the companion matrix $C$ [@DF04].
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the rational canonical form of the given matrix.
 
 :::
 

@@ -23,28 +23,30 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $\sigma \subseteq N_\RR$ be a full-dimensional convex polyhedral cone, $\dim N_\RR = n$.
+Let $N$ be a lattice of rank $n$, put $M\coloneqq\Hom(N,\ZZ)$, and let $\sigma\subseteq N_\RR$ be a full-dimensional strongly convex rational polyhedral cone.
 The assignment
-\[
-\tau \longmapsto \tau^\star \definedas \dualof{\sigma} \intersect \tau^\perp
-\]
-is an inclusion-reversing bijection from the faces of $\sigma$ to the faces of $\dualof{\sigma}$, with inverse of the same shape, and
-\[
+$$
+\tau \longmapsto \tau^\star\coloneqq\sigma\dual\intersect\tau^\perp
+$$
+is an inclusion-reversing bijection from the faces of $\sigma$ to the faces of $\sigma\dual\subseteq M_\RR$. Its inverse sends a face $\gamma\leq\sigma\dual$ to
+$$
+\gamma^\star\coloneqq\sigma\intersect\gamma^\perp.
+$$
+For every face $\tau\leq\sigma$,
+$$
 \dim \tau + \dim \tau^\star = n .
-\]
+$$
 :::
 
-::: {.remark title="The two ends, and what they pin down"}
-The bijection sends $\sigma$ itself to $\theset{0}$ and $\theset{0}$ to $\dualof{\sigma}$, and in between it exchanges the two extremes of the face lattice:
+::: {.remark title="Rays and facets"}
+The bijection sends $\sigma$ to $\theset{0}$ and $\theset{0}$ to $\sigma\dual$. It exchanges rays and facets:
 
 | face of $\sigma$ | image in $\dualof{\sigma}$ |
 | --- | --- |
-| facet $\tau$, $\dim = n-1$ | ray spanned by the facet normal $u_\tau$ |
-| ray $\rho$, $\dim = 1$ | facet of $\dualof{\sigma}$, $\dim = n-1$ |
+| facet $\tau$, $\dim = n-1$ | ray $\sigma\dual\cap\tau^\perp$ spanned by a primitive facet normal in $M$ |
+| ray $\rho$, $\dim = 1$ | facet of $\sigma\dual$, $\dim = n-1$ |
 
-So the rays of $\dualof{\sigma}$ are the facet normals of $\sigma$ and vice versa, which is exactly what makes the plane computation work: in $N_\RR = \RR^2$ facets and rays coincide, so dualising a two-dimensional cone is rotating its two generators a quarter turn.
+Thus the primitive ray generators of $\sigma\dual$ are the primitive inward facet normals of $\sigma$, and conversely.
 
-Strong convexity is visible here too.
-$\sigma$ contains no line exactly when $\theset{0}$ is a face of $\sigma$, which under the bijection says $\dualof{\sigma}$ is full-dimensional, that is $\dim \dualof{\sigma} = n$.
-That is the condition needed for $S_\sigma$ to generate $M$ and for $U_\sigma$ to have the right dimension.
+For an arbitrary polyhedral cone $C\subseteq N_\RR$, strong convexity is equivalent to $\theset{0}$ being a face of $C$, and by face duality this is equivalent to $C^\vee$ being full-dimensional. For the strongly convex $\sigma$ above, $S_\sigma=\sigma^\vee\cap M$ therefore generates $M$ as a group.
 :::

@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the characteristic and tower-degree restriction, existence via divisibility of Frobenius polynomials, field closure of each root set, and uniqueness as an actual subfield rather than merely up to isomorphism."
 ---
-
 ::: {.problem}
 (a) Let $F$ be a field of order $5^{20}$. List the orders of all the subfields of $F$.
 
@@ -107,7 +106,7 @@ is a subfield, with the cardinality already established.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 A subfield of a given listed order is unique.
 
@@ -126,6 +125,12 @@ $$
 is the unique subfield of order $25$, answering part (b).
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the only possible subfield orders, step [](#s2){.pf-ref} realizes each one, and step [](#s3){.pf-ref} proves uniqueness, including the order-$25$ case.
 
 :::
 

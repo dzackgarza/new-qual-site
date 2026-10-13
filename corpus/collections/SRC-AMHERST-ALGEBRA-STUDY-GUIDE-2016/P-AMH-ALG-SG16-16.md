@@ -22,7 +22,6 @@ audit:
   date: 2026-09-13
   note: Checked against the vendored Amherst College Study Guide for Algebra (September 2016).
 ---
-
 ::: {.problem}
 (January 2016) Define what it means for a subset $I\subseteq R$ to be an ideal of $R$.
 Note: If you use other technical terms like "closed," "subring," "subgroup," etc., you must fully define those terms as well.
@@ -62,65 +61,114 @@ You should definitely think of the concepts like "subgroup under $+$" and "close
 So by all means think "closed," but write "for all $x,y\in I$, we have $x-y\in I$."
 :::
 
-:::::: {.solution}
-A subset $I\subseteq R$ is a two-sided ideal precisely when the following three explicit conditions hold:
-
-1. $I\ne\varnothing$.
-
-2. For every $x,y\in I$, one has $x-y\in I$.
-
-3. For every $x\in I$ and $r\in R$, one has both $rx\in I$ and $xr\in I$.
+::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Conditions 1 and 2 give exactly the required additive structure.
+A subset $I\subseteq R$ is a two-sided ideal if and only if all three
+conditions hold:
+
+(a) $I\neq\varnothing$.
+
+(b) For all $x,y\in I$, one has $x-y\in I$.
+
+(c) For all $x\in I$ and $r\in R$, one has $rx\in I$ and $xr\in I$.
 
 ::: pf-proof
 
-Choose $a\in I$, possible by condition 1. Then condition 2 gives
-\[
+These conditions are explicit and contain no undefined auxiliary term such as
+“subgroup” or “closed under subtraction.”  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} verify that they
+are exactly the usual two-sided ideal axioms.
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Conditions (a) and (b) imply that $0\in I$ and that $I$ is closed under
+additive inverses.
+
+::: pf-proof
+
+Choose $a\in I$, which is possible by (a).  Then (b) gives
+$$
 0=a-a\in I.
-\]
-For $x\in I$,
-\[
+$$
+If $x\in I$, then $0,x\in I$, so another application of (b) gives
+$$
 -x=0-x\in I.
-\]
-For $x,y\in I$, since $-y\in I$,
-\[
-x+y=x-(-y)\in I.
-\]
-Thus $I$ contains $0$ and is closed under addition and additive inverses.
-Conversely, any subset with those additive properties is nonempty and is closed under subtraction, because
-\[
-x-y=x+(-y).
-\]
+$$
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
-Condition 3 is exactly two-sided absorption by ring elements.
+Conditions (a) and (b) imply that $I$ is closed under addition.
 
 ::: pf-proof
 
-The definition of a two-sided ideal requires that multiplying an element of $I$ by an arbitrary element of $R$ on either side remains in $I$.
-Condition 3 states precisely
-\[
-rI\subseteq I
+Let $x,y\in I$.  By step [](#s2){.pf-ref}, $-y\in I$.  Applying (b) to $x$ and $-y$
+gives
+$$
+x+y=x-(-y)\in I.
+$$
+Thus $I$ is an additive subgroup of the underlying additive group of $R$,
+with the subgroup property written out explicitly.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Condition (c) is exactly the required two-sided absorption condition.
+
+::: pf-proof
+
+For every $r\in R$ and $x\in I$, condition (c) asserts both
+$$
+rx\in I
 \qquad\text{and}\qquad
-Ir\subseteq I
-\]
-for every $r\in R$.
+xr\in I.
+$$
+Thus multiplication by an arbitrary ring element on either side preserves
+$I$.
 
 :::
 
 :::
 
+::: {.pf-step #s5}
+
+Conversely, every two-sided ideal satisfies conditions (a)--(c).
+
+::: pf-proof
+
+A two-sided ideal is an additive subgroup of $R$, so it contains $0$ and is
+therefore nonempty.  If $x,y\in I$, then $-y\in I$ and hence
+$$
+x-y=x+(-y)\in I,
+$$
+which proves (b).  The two-sided ideal absorption axiom is precisely (c).
+
 :::
 
-Hence the three displayed conditions are a complete definition of a two-sided ideal and use no further technical term that needs expansion.
+:::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} show that conditions (a)--(c) imply the usual two-sided ideal
+axioms, and step [](#s5){.pf-ref} proves the converse.  Therefore the three explicit
+conditions in step [](#s1){.pf-ref} give the requested definition without invoking any
+further technical term.
+
+:::
+
+:::
+
 :::

@@ -16,51 +16,68 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 If the series $\sum_{n=0}^\infty a_n$ converges conditionally, show that the radius of convergence of the power series $\sum_{n=0}^\infty a_nx^n$ is 1.
 :::
 
 ::: {.solution}
+
 ::: pf
 
-::: pf-step
-$a_n \to 0$.
+::: {.pf-step #s1}
+
+The coefficient sequence $(a_n)$ is bounded.
 
 ::: pf-proof
-$\sum_{n\ge 0} a_n$ converges, so its terms tend to $0$.
 
-Hence $(a_n)$ is bounded: $|a_n| \le C$ for all $n$.
+Since $\sum_{n=0}^{\infty}a_n$ converges, the difference of consecutive partial sums gives $a_n\to0$. Every convergent sequence is bounded, so some $C>0$ satisfies $|a_n|\leq C$ for all $n$.
+
 :::
 
 :::
 
 ::: {.pf-step #s2}
-$R \ge 1$.
+
+The radius of convergence $R$ satisfies $R\geq1$.
 
 ::: pf-proof
-for $|x| < 1$, $|a_n x^n| \le C|x|^n$, and $\sum_n C|x|^n$ is a convergent geometric series; so $\sum_n a_n x^n$ converges absolutely for every $|x| < 1$.
+
+For every $|x|<1$, step [](#s1){.pf-ref} gives $|a_nx^n|\leq C|x|^n$. The geometric comparison series converges. Thus the power series converges absolutely throughout $|x|<1$, proving $R\geq1$.
+
 :::
 
 :::
 
 ::: {.pf-step #s3}
-$R \le 1$.
+
+The radius satisfies $R\leq1$.
 
 ::: pf-proof
-if $R > 1$, the power series converges absolutely for every $|x| < R$, in particular at $x = 1$, so $\sum_n |a_n| < \infty$, contradicting conditional convergence.
-:::
+
+If $R>1$, then $x=1$ lies strictly inside the disk of convergence. A power series converges absolutely at every point strictly inside its radius; hence $\sum_n|a_n1^n|=\sum_n|a_n|$ converges. This contradicts the assumption that $\sum_n a_n$ converges only conditionally.
 
 :::
 
-::: pf-step
-$R = 1$.
+:::
+
+::: {.pf-step #s4}
+
+The radius of convergence is $\boxed{R=1}$.
 
 ::: pf-proof
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-:::
+
+The inequalities of steps [](#s2){.pf-ref} and [](#s3){.pf-ref} imply $1\leq R\leq1$.
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} establishes the required radius.
+
+:::
+
+:::
+
 :::

@@ -25,41 +25,75 @@ $$\frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta},\q
 :::
 
 ::: {.solution}
-Since $f(z)$ is complex differentiable at $z$, the Cartesian Cauchy-Riemann equations hold:
+<1>1. At the point $z=re^{i\theta}$, the Cartesian Cauchy--Riemann
+equations are
 $$
-\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}.
-$$
-
-The polar coordinates $(r, \theta)$ are related to $(x, y)$ by:
-$$
-x = r \cos \theta, \qquad y = r \sin \theta.
-$$
-By the multivariable chain rule:
-$$
-\frac{\partial u}{\partial r} = \frac{\partial u}{\partial x} \frac{\partial x}{\partial r} + \frac{\partial u}{\partial y} \frac{\partial y}{\partial r} = \frac{\partial u}{\partial x} \cos \theta + \frac{\partial u}{\partial y} \sin \theta,
-$$
-$$
-\frac{\partial u}{\partial \theta} = \frac{\partial u}{\partial x} \frac{\partial x}{\partial \theta} + \frac{\partial u}{\partial y} \frac{\partial y}{\partial \theta} = -\frac{\partial u}{\partial x} r \sin \theta + \frac{\partial u}{\partial y} r \cos \theta.
-$$
-Similarly, for $v$:
-$$
-\frac{\partial v}{\partial r} = \frac{\partial v}{\partial x} \cos \theta + \frac{\partial v}{\partial y} \sin \theta,
-$$
-$$
-\frac{\partial v}{\partial \theta} = -\frac{\partial v}{\partial x} r \sin \theta + \frac{\partial v}{\partial y} r \cos \theta.
+u_x=v_y,
+\qquad
+u_y=-v_x.
 $$
 
-Now substitute the Cartesian Cauchy-Riemann equations ($\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ and $\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$) into the expression for $\frac{1}{r}\frac{\partial v}{\partial \theta}$:
+::: {.proof}
+The function is complex differentiable at $z$ and has continuous real
+partial derivatives there, so the Cauchy--Riemann equations hold at that
+point.
+:::
+
+<1>2. The polar derivatives satisfy
 $$
-\frac{1}{r}\frac{\partial v}{\partial \theta} = -\frac{\partial v}{\partial x} \sin \theta + \frac{\partial v}{\partial y} \cos \theta = \frac{\partial u}{\partial y} \sin \theta + \frac{\partial u}{\partial x} \cos \theta = \frac{\partial u}{\partial r}.
-$$
-Similarly, substitute into $-\frac{1}{r}\frac{\partial u}{\partial \theta}$:
-$$
--\frac{1}{r}\frac{\partial u}{\partial \theta} = \frac{\partial u}{\partial x} \sin \theta - \frac{\partial u}{\partial y} \cos \theta = \frac{\partial v}{\partial y} \sin \theta - \left(-\frac{\partial v}{\partial x}\right) \cos \theta = \frac{\partial v}{\partial x} \cos \theta + \frac{\partial v}{\partial y} \sin \theta = \frac{\partial v}{\partial r}.
+\begin{aligned}
+u_r&=u_x\cos\theta+u_y\sin\theta,\\
+u_\theta&=-r u_x\sin\theta+r u_y\cos\theta,\\
+v_r&=v_x\cos\theta+v_y\sin\theta,\\
+v_\theta&=-r v_x\sin\theta+r v_y\cos\theta.
+\end{aligned}
 $$
 
-Thus, the polar Cauchy-Riemann equations hold:
+::: {.proof}
+Since
 $$
-\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}, \qquad \frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}.
+x=r\cos\theta,
+\qquad
+y=r\sin\theta,
 $$
+the chain rule gives the four displayed formulas.
+:::
+
+<1>3. One has
+$$
+\boxed{u_r=\frac1r v_\theta}.
+$$
+
+::: {.proof}
+By step <1>2 and then step <1>1,
+$$
+\frac1r v_\theta
+=-v_x\sin\theta+v_y\cos\theta
+=u_y\sin\theta+u_x\cos\theta
+=u_r.
+$$
+The division by $r$ is valid because $r\ne0$.
+:::
+
+<1>4. One has
+$$
+\boxed{v_r=-\frac1r u_\theta}.
+$$
+
+::: {.proof}
+Again using steps <1>2 and <1>1,
+$$
+-\frac1r u_\theta
+=u_x\sin\theta-u_y\cos\theta
+=v_y\sin\theta+v_x\cos\theta
+=v_r.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>4 are exactly the two polar Cauchy--Riemann equations
+required in the problem.
+:::
 :::

@@ -19,3 +19,28 @@ audit:
 ::: {.problem}
 Let $r > 0$ and let $P : \CC \to \CC$ be a polynomial. What is $\oint_{\{\abs{z} = r\}} P(z)\,dz$?
 :::
+
+::: {.solution}
+<1>1. The polynomial $P$ is holomorphic on all of $\mathbb C$.
+
+::: {.proof}
+Every complex polynomial is entire.
+:::
+
+<1>2. Therefore
+\[
+\boxed{\oint_{|z|=r}P(z)\,dz=0}.
+\]
+
+::: {.proof}
+The circle $|z|=r$ is a closed contour whose interior lies in the domain
+$\mathbb C$ on which $P$ is holomorphic. Cauchy's integral theorem therefore
+gives zero.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 is the requested value.
+:::
+:::

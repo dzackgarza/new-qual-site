@@ -14,7 +14,6 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 Let $V$ be a vector space over a field $F$, and let $(\cdot, \cdot): V \times V \to F$ be a non-degenerate symmetric bilinear form on $V$. For any subspace $W \subseteq V$, define its orthogonal complement by
 $$
@@ -31,161 +30,61 @@ and prove that $\psi$ is an isomorphism if $\dim_F V < \infty$.
 :::
 
 ::: {.solution}
-**Goal:** Prove anti-monotonicity of orthogonal complements in (a), construct an injective evaluation map on quotient spaces in (b), and prove it is an isomorphism in finite dimensions by dimension counting.
 
 ::: pf
 
-::: pf-step
-Part (a): $Y \subseteq X \implies X^\perp \subseteq Y^\perp$.
+::: {.pf-step #s1}
+
+If $Y\subseteq X$, then $X^\perp\subseteq Y^\perp$.
 
 ::: pf-proof
 
-::: pf-step
-Let $v \in X^\perp$.
-:::
-
-::: pf-step
-By definition of $X^\perp$, $(v, x) = 0$ for every $x \in X$.
-:::
-
-::: pf-step
-Since $Y \subseteq X$, every element $y \in Y$ satisfies $y \in X$.
-:::
-
-::: pf-step
-Thus $(v, y) = 0$ for all $y \in Y$.
-:::
-
-::: pf-step
-By definition of $Y^\perp$, $v \in Y^\perp$.
-:::
-
-::: pf-step
-Therefore $X^\perp \subseteq Y^\perp$.
-:::
+For $v\in X^\perp$, the functional $(v,-)$ vanishes on $X$ and therefore vanishes on its subspace $Y$. Hence $v\in Y^\perp$.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): Construction and well-definedness of $\psi$.
+::: {.pf-step #s2}
+
+The rule
+\[
+\boxed{\psi:Y^\perp/X^\perp\longrightarrow (X/Y)^*,\qquad
+\psi(v+X^\perp)(x+Y)=(v,x)}
+\]
+defines an injective $F$-linear map.
 
 ::: pf-proof
 
-::: pf-step
-For each $u \in Y^\perp$, consider the linear functional $f_u: X \to F$ defined by $f_u(x) = (u, x)$.
-:::
-
-::: pf-step
-Since $u \in Y^\perp$, $(u, y) = 0$ for all $y \in Y$, so $Y \subseteq \ker(f_u)$.
-:::
-
-::: pf-step
-By the universal property of quotient vector spaces, $f_u$ induces a unique linear functional $\bar{f}_u \in (X/Y)^*$ given by
-$$\bar{f}_u(x + Y) = (u, x) \quad \text{for all } x \in X.$$
-:::
-
-::: pf-step
-Define the map $\psi: Y^\perp / X^\perp \to (X/Y)^*$ by
-$$\psi(u + X^\perp) = \bar{f}_u.$$
-:::
-
-::: pf-step
-Well-definedness:
-
-- If $u + X^\perp = u' + X^\perp$, then $u - u' \in X^\perp$.
-- For any $x \in X$, $\bar{f}_u(x + Y) - \bar{f}_{u'}(x + Y) = (u - u', x) = 0$.
-- Thus $\bar{f}_u = \bar{f}_{u'}$, showing that $\psi$ is well-defined.
-:::
-
-::: pf-step
-Linearity:
-
-- By bilinearity of $(\cdot, \cdot)$, $\bar{f}_{a u_1 + b u_2}(x + Y) = (a u_1 + b u_2, x) = a (u_1, x) + b (u_2, x) = a \bar{f}_{u_1}(x + Y) + b \bar{f}_{u_2}(x + Y)$.
-- Thus $\psi$ is an $F$-linear transformation.
-:::
+For $v\in Y^\perp$, the functional $(v,-)|_X$ annihilates $Y$ and thus factors uniquely through $X/Y$. If $v$ is replaced by $v+w$ with $w\in X^\perp$, its restriction to $X$ is unchanged. The displayed assignment is therefore well defined on both quotients and linear by bilinearity. If $\psi(v+X^\perp)=0$, then $(v,x)=0$ for every $x\in X$, so $v\in X^\perp$ and its quotient class is zero. Thus $\psi$ is injective.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): Injectivity of $\psi$.
+::: {.pf-step #s3}
+
+If $\dim_FV<\infty$, then $\psi$ is an isomorphism.
 
 ::: pf-proof
 
-::: pf-step
-Suppose $u + X^\perp \in \ker(\psi)$.
-:::
-
-::: pf-step
-Then $\psi(u + X^\perp) = 0$, so $\bar{f}_u(x + Y) = (u, x) = 0$ for all $x \in X$.
-:::
-
-::: pf-step
-This means $(u, x) = 0$ for all $x \in X$, which implies $u \in X^\perp$.
-:::
-
-::: pf-step
-Therefore $u + X^\perp = 0 + X^\perp$ in $Y^\perp / X^\perp$.
-:::
-
-::: pf-step
-Thus $\ker(\psi) = \{0\}$, so $\psi$ is injective.
-:::
+In finite dimension, nondegeneracy makes the linear map $V\to V^*$, $v\mapsto(v,-)$, an isomorphism. For any subspace $W$, the annihilator of $W$ in $V^*$ has dimension $\dim V-\dim W$, hence $\dim W^\perp=\dim V-\dim W$. It follows that
+\[
+\dim(Y^\perp/X^\perp)=\dim X-\dim Y
+=\dim(X/Y)^*.
+\]
+The injective linear map from step [](#s2){.pf-ref} between these finite-dimensional spaces of equal dimension is surjective as well.
 
 :::
 
 :::
 
-::: pf-step
-Part (b): Isomorphism when $\dim_F V < \infty$.
+::: pf-qed
 
-::: pf-proof
-
-::: pf-step
-Assume $\dim_F V = n < \infty$.
-:::
-
-::: pf-step
-Since $(\cdot, \cdot)$ is non-degenerate, the map $v \mapsto (v, \cdot)$ is an isomorphism $V \cong V^*$.
-:::
-
-::: pf-step
-For any subspace $W \subseteq V$, $\dim_F W^\perp = \dim_F V - \dim_F W$.
-:::
-
-::: pf-step
-Compute the dimension of the domain:
-$$\dim_F(Y^\perp / X^\perp) = \dim_F Y^\perp - \dim_F X^\perp = (n - \dim_F Y) - (n - \dim_F X) = \dim_F X - \dim_F Y.$$
-:::
-
-::: pf-step
-Compute the dimension of the codomain:
-$$\dim_F((X/Y)^*) = \dim_F(X/Y) = \dim_F X - \dim_F Y.$$
-:::
-
-::: pf-step
-An injective linear map between finite-dimensional vector spaces of the same dimension is an isomorphism.
-:::
-
-::: pf-step
-Thus $\psi: Y^\perp / X^\perp \to (X/Y)^*$ is an isomorphism.
-:::
+Step [](#s1){.pf-ref} proves (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (b).
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-
-::: pf-proof
-$Y \subseteq X \implies X^\perp \subseteq Y^\perp$, and $\psi(u + X^\perp)(x + Y) = (u, x)$ defines an injective map which is an isomorphism in finite dimensions.
-:::
-
-:::
-
-:::
 :::

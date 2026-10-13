@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked necessity by the tower law and constructed each subfield as an exact Frobenius root set, including splitting, cardinality, closure, and uniqueness."
 ---
-
 ::: {.problem}
 Let $F$ be a field of order 1024.
 
@@ -42,7 +41,7 @@ with exactly one subfield of each order.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The characteristic is $2$ and $[F:\mathbb F_2]=10$.
 
@@ -61,7 +60,7 @@ elements, so $[F:\mathbb F_2]=10$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Any subfield has one of the four displayed orders.
 
@@ -76,7 +75,7 @@ $d\in\{1,2,5,10\}$, and $|K|=2^d$ belongs to the displayed list.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Each possible order occurs.
 
@@ -111,7 +110,7 @@ and the root count gives $|K_d|=q=2^d$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 There is no second subfield of any listed order.
 
@@ -123,6 +122,12 @@ and the equation holds at zero as well. Hence $K\subseteq K_d$.
 Both fields have $2^d$ elements, so they are equal.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), while steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all possible subfield orders in part (b), realize each one, and prove uniqueness.
 
 :::
 

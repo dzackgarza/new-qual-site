@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Verified properness of (2,x) and excluded every possible generator using the constant polynomial 2 and the coefficient of x."
 ---
-
 ::: {.problem}
 (a) State the definition of a principal ideal domain.
 
@@ -36,7 +35,7 @@ Either prove that it is, or present an example showing that it is not.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 A principal ideal domain is a commutative ring $R$ with
 identity $1\ne0$, no zero divisors, and every ideal of the form
@@ -59,7 +58,7 @@ so $1\notin I$ and $I\ne\mathbb Z[x]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The ideal $I$ is not principal, so $\mathbb Z[x]$ is not a
 principal ideal domain.
@@ -79,9 +78,16 @@ is even, whereas the coefficient of $x$ in $x\in I$ is $1$.
 Thus no generator exists.
 
 The same leading-coefficient argument shows that $\mathbb Z[x]$
-is an integral domain.
+is an integral domain. Its failure here is precisely the existence
+of the nonprincipal ideal $I$, not the domain condition.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that $\ZZ[x]$ is not a PID in part (b).
 
 :::
 

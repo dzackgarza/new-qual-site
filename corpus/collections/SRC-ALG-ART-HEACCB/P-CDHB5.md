@@ -22,48 +22,94 @@ audit:
   date: 2026-09-10
 review: draft
 ---
-
 ::: {.problem}
 Let $A$ be an abelian group, and show $A$ is a $\ZZ\dash$module in a unique way.
 :::
 
 ::: {.solution}
-For $n\in\mathbb Z$ and $a\in A$ put
-\[
-n\cdot a=
-\begin{cases}
-\underbrace{a+\cdots+a}_{n\text{ times}},&n>0,\\
-0,&n=0,\\
--(\underbrace{a+\cdots+a}_{(-n)\text{ times}}),&n<0.
-\end{cases}
-\]
 
 ::: pf
 
-::: {.pf-step #rule-is-module-structure}
-This rule is a $\mathbb Z$-module structure on $A$.
+::: {.pf-step #s1}
+
+There is a $\ZZ$-action on $A$ defined by repeated addition.
 
 ::: pf-proof
-Since $A$ is abelian, expanding sums gives $n\cdot(a+b)=n\cdot a+n\cdot b$ and $(m+n)\cdot a=m\cdot a+n\cdot a$, and regrouping repeated addition gives $(mn)\cdot a=m\cdot(n\cdot a)$. By definition $1\cdot a=a$.
+
+For $a\in A$, define
+$$
+n\cdot a=
+\begin{cases}
+\underbrace{a+\cdots+a}_{n\text{ terms}},&n>0,\\
+0,&n=0,\\
+-\underbrace{(a+\cdots+a)}_{-n\text{ terms}},&n<0.
+\end{cases}
+$$
+
 :::
 
 :::
 
-::: {.pf-step #uniqueness-of-structure}
-Every $\mathbb Z$-module structure on $A$ agrees with the rule of step [](#rule-is-module-structure){.pf-ref}.
+::: {.pf-step #s2}
+
+This action makes $A$ a $\ZZ$-module.
 
 ::: pf-proof
-Let $A$ carry a $\mathbb Z$-module structure. The module axioms give $1\cdot a=a$ and, by distributivity over $1+\cdots+1$,
-\[
-n\cdot a=\underbrace{(1\cdot a)+\cdots+(1\cdot a)}_{n\text{ times}}
-\]
-for $n>0$. Also $0\cdot a=(0+0)\cdot a=0\cdot a+0\cdot a$, so $0\cdot a=0$, and $n\cdot a+(-n)\cdot a=0\cdot a=0$, so $(-n)\cdot a=-(n\cdot a)$.
+
+For $m,n\in\ZZ$ and $a,b\in A$, repeated addition and the abelian group law give
+$$
+n\cdot(a+b)=n\cdot a+n\cdot b,
+$$
+$$
+(m+n)\cdot a=m\cdot a+n\cdot a,
+$$
+and
+$$
+(mn)\cdot a=m\cdot(n\cdot a).
+$$
+Also $1\cdot a=a$. Hence all module axioms hold.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+This $\ZZ$-module structure is unique.
+
+::: pf-proof
+
+Let $A$ carry any $\ZZ$-module structure. The module axiom gives $1\cdot a=a$. For $n>0$,
+$$
+n\cdot a=(\underbrace{1+\cdots+1}_{n\text{ terms}})\cdot a
+=\underbrace{a+\cdots+a}_{n\text{ terms}},
+$$
+and
+$$
+(-n)\cdot a=-(n\cdot a).
+$$
+Thus the scalar action is forced to be exactly the action constructed in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Therefore every abelian group admits $\boxed{\text{a unique }\ZZ\text{-module structure}}$.
+
+::: pf-proof
+
+Existence is step [](#s2){.pf-ref} and uniqueness is step [](#s3){.pf-ref}.
+
 :::
 
 :::
 
 ::: pf-qed
-Step [](#rule-is-module-structure){.pf-ref} gives existence and step [](#uniqueness-of-structure){.pf-ref} gives uniqueness of the $\mathbb Z$-module structure on $A$.
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
 :::
 
 :::

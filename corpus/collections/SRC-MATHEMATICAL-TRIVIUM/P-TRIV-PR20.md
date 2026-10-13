@@ -32,3 +32,112 @@ Show that
 
 (d) $\mathbf{D}(S_\tau | \tau) = \tau \mathbf{D}\xi_1$.
 :::
+
+::: {.solution}
+Put
+\[
+\mu=\mathbf E\xi_1,
+\qquad
+\sigma^2=\mathbf D\xi_1.
+\]
+Assume these moments are finite.
+
+<1>1. Conditional on $\tau=k$,
+\[
+S_\tau=\xi_1+\cdots+\xi_k.
+\]
+
+::: {.proof}
+This is the definition of the random sum $S_\tau$. Independence of $\tau$ from the $\xi_i$ means that conditioning on $\tau=k$ does not change the joint distribution of $\xi_1,\ldots,\xi_k$.
+:::
+
+<1>2. Therefore
+\[
+\boxed{\mathbf E(S_\tau\mid\tau)=\tau\mu}.
+\]
+
+::: {.proof}
+On the event $\{\tau=k\}$, step <1>1 and linearity of expectation give
+\[
+\mathbf E(S_\tau\mid\tau=k)
+=\sum_{i=1}^k\mathbf E\xi_i=k\mu.
+\]
+Thus the conditional expectation as a function of $\tau$ is $\tau\mu$.
+:::
+
+<1>3. Taking expectations in step <1>2 gives
+\[
+\boxed{\mathbf ES_\tau=\mathbf E\tau\cdot\mathbf E\xi_1}.
+\]
+
+::: {.proof}
+By the tower property,
+\[
+\mathbf ES_\tau
+=\mathbf E\bigl[\mathbf E(S_\tau\mid\tau)\bigr]
+=\mathbf E(\tau\mu)
+=\mu\mathbf E\tau.
+\]
+:::
+
+<1>4. Conditional on $\tau=k$,
+\[
+\mathbf D(S_\tau\mid\tau=k)=k\sigma^2.
+\]
+
+::: {.proof}
+By step <1>1, $S_\tau$ is then a sum of $k$ independent identically distributed variables. Variances of independent sums add, so
+\[
+\mathbf D(\xi_1+\cdots+\xi_k)
+=\sum_{i=1}^k\mathbf D\xi_i=k\sigma^2.
+\]
+:::
+
+<1>5. Hence
+\[
+\boxed{\mathbf D(S_\tau\mid\tau)=\tau\mathbf D\xi_1}.
+\]
+
+::: {.proof}
+Step <1>4 identifies the conditional variance on each event $\{\tau=k\}$, so as a random variable measurable with respect to $\tau$ it equals $\tau\sigma^2$.
+:::
+
+<1>6. The law of total variance gives
+\[
+\mathbf D S_\tau
+=\mathbf E\bigl[\mathbf D(S_\tau\mid\tau)\bigr]
++\mathbf D\bigl(\mathbf E(S_\tau\mid\tau)\bigr).
+\]
+
+::: {.proof}
+Write
+\[
+S_\tau-\mathbf ES_\tau
+=\bigl(S_\tau-\mathbf E(S_\tau\mid\tau)\bigr)
++\bigl(\mathbf E(S_\tau\mid\tau)-\mathbf ES_\tau\bigr).
+\]
+After squaring and taking expectations, the cross term vanishes because its conditional expectation given $\tau$ is zero. The two remaining terms are exactly the two terms displayed.
+:::
+
+<1>7. Consequently
+\[
+\boxed{
+\mathbf D S_\tau
+=\mathbf E\tau\cdot\mathbf D\xi_1
++\mathbf D\tau\cdot(\mathbf E\xi_1)^2}.
+\]
+
+::: {.proof}
+Substitute steps <1>2 and <1>5 into step <1>6:
+\[
+\mathbf E(\tau\sigma^2)+\mathbf D(\tau\mu)
+=\sigma^2\mathbf E\tau+\mu^2\mathbf D\tau.
+\]
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>3, <1>2, <1>7, and <1>5 prove parts (a), (b), (c), and (d), respectively.
+:::
+:::

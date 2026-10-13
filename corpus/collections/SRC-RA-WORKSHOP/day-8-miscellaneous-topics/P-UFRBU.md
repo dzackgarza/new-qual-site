@@ -16,44 +16,68 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Let $\{a_n\}_{n=1}^\infty \subseteq \mathbb{R}$ and a strictly increasing sequence $\{x_n\}_{n=1}^\infty \subseteq (0,1)$ be given.
 Assume that $\sum_{n=1}^\infty a_n$ is absolutely convergent, and define $\alpha \colon [0,1] \to \mathbb{R}$ by $$\alpha(x):= \begin{cases} a_n &  x=x_n \\ 0 & \text{otherwise} \end{cases}.$$ Prove or disprove: $\alpha$ has bounded variation on $[0,1]$.
 :::
 ::: {.solution}
+
 ::: pf
 
-::: pf-step
-$\alpha$ is bounded: $|\alpha(x)| \le \sum_n |a_n| < \infty$ for all $x$.
+::: {.pf-step #s1}
+
+Every partition $P=(0=t_0<\cdots<t_m=1)$ satisfies
+\[
+\sum_{j=1}^m|\alpha(t_j)-\alpha(t_{j-1})|\leq2\sum_{n=1}^\infty|a_n|.
+\]
 
 ::: pf-proof
-$\alpha(x) = a_n$ if $x = x_n$ and $0$ otherwise, so $|\alpha(x)| \le \sup_n |a_n| \le \sum_n |a_n|$, and $\sum_n |a_n|$ converges absolutely.
+
+The triangle inequality bounds the partition sum by
+\[
+|\alpha(t_0)|+2\sum_{j=1}^{m-1}|\alpha(t_j)|+|\alpha(t_m)|.
+\]
+Both endpoint values vanish because $x_n\in(0,1)$. Each interior partition point with nonzero value is a distinct $x_n$, so the interior sum is at most $\sum_{n\geq1}|a_n|$.
+
 :::
 
 :::
 
 ::: {.pf-step #s2}
-Estimate the variation against a partition.
+
+For every $N\geq1$, a partition has variation sum at least $2\sum_{n=1}^N|a_n|$.
 
 ::: pf-proof
-let $0 = t_0 < t_1 < \cdots < t_m = 1$ be any partition.
 
-The value $\alpha$ takes on $\{t_0, \ldots, t_m\}$ differs from $0$ only at those $t_j$ that coincide with some $x_n$, where $\alpha(t_j) = a_n$; each $x_n$ can occur at most twice as a partition point adjacent pair boundary — precisely, the contribution of the single spike at $x_n$ to $\sum_j |\alpha(t_j) - \alpha(t_{j-1})|$ is at most $2|a_n|$ (the two differences involving the interval containing $x_n$, or the two differences at $t_j = x_n$). Hence \[ \sum_{j=1}^m |\alpha(t_j) - \alpha(t_{j-1})| \le 2\sum_n |a_n| . \]
+Choose $y_0\in(0,x_1)$, $y_j\in(x_j,x_{j+1})$ for $1\leq j<N$, and $y_N\in(x_N,1)$, all distinct from every $x_n$. This is possible because the sequence is strictly increasing and its range is countable. The partition
+\[
+0<y_0<x_1<y_1<\cdots<y_{N-1}<x_N<y_N<1
+\]
+has $\alpha(y_j)=0$ and $\alpha(x_j)=a_j$. The two increments adjacent to each $x_j$ contribute $2|a_j|$, while the remaining increments are nonnegative.
+
 :::
 
 :::
 
-::: pf-step
-$\alpha$ has bounded variation.
+::: {.pf-step #s3}
+
+The total variation satisfies
+\[
+\boxed{V_{[0,1]}(\alpha)=2\sum_{n=1}^\infty|a_n|<\infty}.
+\]
 
 ::: pf-proof
-by step [](#s2){.pf-ref}, every partition has variation $\le 2\sum_n |a_n| < \infty$; taking the supremum, $V(\alpha) \le 2\sum_n|a_n| < \infty$.
 
-(In fact $V(\alpha) = 2\sum_n|a_n|$: a partition through all $x_1, \ldots, x_N$ with midpoints between consecutive spikes has variation $2\sum_{n\le N}|a_n|$.)
-:::
+Step [](#s1){.pf-ref} gives the upper bound after taking the supremum over partitions. Step [](#s2){.pf-ref} gives $V(\alpha)\geq2\sum_{n=1}^N|a_n|$ for every $N$. Letting $N\to\infty$ gives the reverse bound. Absolute convergence makes the common value finite.
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves bounded variation and the exact variation formula.
+
+:::
+
 :::

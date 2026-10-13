@@ -22,7 +22,6 @@ audit:
   date: 2026-09-16
   note: Statement transcribed from the retained scan problem-13.png (source question 21) in place of the embedded image.
 ---
-
 ::: {.problem}
 Let $P_1$ be the set of all primes, $\{2,3,5,7,\ldots\}$, and for each integer $n$, let $P_n$ be the set of all prime multiples of $n$, $\{2n,3n,5n,7n,\ldots\}$.
 Which of the following intersections is nonempty?
@@ -35,9 +34,9 @@ The nonempty intersection is $\boxed{\text{(C)}\;P_{12}\cap P_{20}}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$60\in P_{12}\cap P_{20}$.
+Exhibit an element of choice (C).
 
 ::: pf-proof
 
@@ -52,13 +51,13 @@ we have $60\in P_{12}\cap P_{20}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The other intersections are empty.
 
 ::: pf-proof
 
-In each case, $p$ and $q$ denote primes.
+An equality $ap=bq$ with $p,q$ prime forces the prime factors of $a,b$ to match appropriately.
 
 - $p=23q$ cannot hold with both $p,q$ prime, so $P_1\cap P_{23}=\varnothing$.
 
@@ -71,6 +70,12 @@ In each case, $p$ and $q$ denote primes.
 Thus only (C) is nonempty.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves that choice (C) has nonempty intersection, and step [](#s2){.pf-ref} rules out every other choice.
 
 :::
 

@@ -20,40 +20,38 @@ Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.
 :::
 
 ::: {.solution}
-Let $K$ be the splitting field of $f$ over $\QQ$, and let
-$G=\operatorname{Gal}(K/\QQ)$. The group $G$ acts faithfully on the five roots
-of $f$, so we regard $G$ as a subgroup of $S_5$.
+Let $K$ be the splitting field of $f$ over $\mathbb Q$ and $G=\operatorname{Gal}(K/\mathbb Q)$, acting on its five roots.
 
-Because $f$ is irreducible, this action is transitive. Hence, by
-orbit-stabilizer, $5$ divides $|G|$. Cauchy's theorem therefore gives an
-element of order $5$ in $G$, and any element of order $5$ in $S_5$ is a
-$5$-cycle.
+<1>1. The subgroup $G\leq S_5$ contains a $5$-cycle.
 
-By hypothesis exactly three roots of $f$ are real and the remaining two are a
-nonreal conjugate pair. Complex conjugation preserves the splitting field,
-fixes the three real roots, and interchanges the two nonreal roots. Thus $G$
-contains a transposition.
+::: {.proof}
+Because $f$ is irreducible in characteristic zero, its five roots are distinct and its Galois group acts transitively on them. The action is faithful since the roots generate $K$. By orbit–stabilizer, $5$ divides $|G|$, and Cauchy's theorem gives an element of order five. Every such element of $S_5$ is a $5$-cycle.
+:::
 
-It remains to show that a subgroup of $S_5$ containing a $5$-cycle and a
-transposition is all of $S_5$. Let
+<1>2. The group $G$ contains a transposition.
+
+::: {.proof}
+Exactly three roots of $f$ are real; the remaining two form a nonreal conjugate pair because $f$ has rational coefficients. Complex conjugation restricts to an automorphism of the splitting field $K$, fixes the three real roots, and swaps the nonreal pair. Its action on the roots is a transposition.
+:::
+
+<1>3. A subgroup of $S_5$ containing a $5$-cycle and a transposition is $S_5$.
+
+::: {.proof}
+Label the roots by $\mathbb Z/5\mathbb Z$ so that the $5$-cycle is $\sigma:i\mapsto i+1$. Let the transposition interchange $a$ and $b$, with $a\neq b$. Its conjugates by powers of $\sigma$ interchange $a+k$ and $b+k$ for $k\in\mathbb Z/5\mathbb Z$. These pairs form the edges of a connected graph: the difference $b-a$ generates the additive group of order five. Edge transpositions of a connected graph generate its full symmetric group, as follows by expressing any transposition along a path by conjugation. Hence the subgroup contains $S_5$.
+:::
+
+<1>4. The Galois group is
 \[
-\sigma=(0\ 1\ 2\ 3\ 4)
+\boxed{\operatorname{Gal}(K/\mathbb Q)\cong S_5}.
 \]
-be a $5$-cycle in $G$, after relabeling the roots, and let
-$\tau=(i\ j)$ be a transposition in $G$. The conjugates
-\[
-\sigma^k\tau\sigma^{-k}
-\qquad (k=0,1,2,3,4)
-\]
-are transpositions joining the pairs
-\[
-\{i+k,j+k\}\pmod5.
-\]
-These five edges form a connected graph on the five vertices, since
-$j-i\not\equiv0\pmod5$. Transpositions corresponding to the edges of a
-connected graph generate the full symmetric group on its vertices. Hence
-$S_5\le G$. Since already $G\le S_5$, we obtain
-\[
-\boxed{\operatorname{Gal}(f/\QQ)\cong S_5}.
-\]
+
+::: {.proof}
+Steps <1>1 and <1>2 supply a $5$-cycle and a transposition in $G$. By step <1>3, $G=S_5$ in its faithful root action.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 identifies the requested Galois group.
+:::
 :::

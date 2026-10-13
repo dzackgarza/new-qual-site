@@ -24,3 +24,65 @@ $X$ is a finite set with the following property: The number of subsets of $X$ th
 (D) $32$
 (E) $35$
 :::
+
+::: {.solution}
+<1>1. If $n=|X|$, then
+$$
+\binom n3-\binom n2=14.
+$$
+
+::: {.proof}
+An $n$-element set has $\binom nk$ subsets containing exactly $k$ elements.
+The stated difference between the numbers of three-element and two-element
+subsets is therefore exactly the displayed equation.
+:::
+
+<1>2. The equation in step <1>1 is equivalent to
+$$
+n(n-1)(n-5)=84.
+$$
+
+::: {.proof}
+Using the binomial-coefficient formulas gives
+$$
+\begin{aligned}
+14
+&=\frac{n(n-1)(n-2)}6-\frac{n(n-1)}2\\
+&=\frac{n(n-1)(n-5)}6.
+\end{aligned}
+$$
+Multiplying by $6$ gives the claim.
+:::
+
+<1>3. The only possible cardinality is
+$$
+n=7.
+$$
+
+::: {.proof}
+The left side of step <1>2 is positive, so $n\ge6$. For $n=6$ it equals
+$6\cdot5\cdot1=30$, while for $n=7$ it equals
+$7\cdot6\cdot2=84$. For every $n\ge8$, all three positive factors are at
+least their values at $n=8$, so the product is at least
+$8\cdot7\cdot3=168>84$. Hence only $n=7$ works.
+:::
+
+<1>4. Therefore the number of four-element subsets is
+$$
+\binom74=\boxed{35},
+$$
+so the answer is (E).
+
+::: {.proof}
+By step <1>3, $X$ has seven elements, and
+$$
+\binom74=\frac{7\cdot6\cdot5}{3\cdot2\cdot1}=35.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested number of subsets.
+:::
+:::

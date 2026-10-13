@@ -24,3 +24,66 @@ If $\int_0^b \tan x \, dx = 2$, then $b$ could equal
 (D) $\operatorname{arcsec}^2 e$
 (E) $\operatorname{arcsec}(e^2)$
 :::
+
+::: {.solution}
+<1>1. On every interval containing $0$ on which $\tan x$ is continuous,
+$$
+\int_0^b\tan x\,dx=-\log(\cos b).
+$$
+
+::: {.proof}
+Since
+$$
+\tan x=\frac{\sin x}{\cos x},
+$$
+the substitution $u=\cos x$, $du=-\sin x\,dx$, gives
+$$
+\int\tan x\,dx=-\log|\cos x|+C.
+$$
+If the definite integral from $0$ to $b$ is proper, the interval between
+$0$ and $b$ contains no zero of $\cos x$, so it lies in
+$(-\pi/2,\pi/2)$ and $\cos x>0$ there. Hence
+$$
+\int_0^b\tan x\,dx
+=\left[-\log(\cos x)\right]_0^b
+=-\log(\cos b).
+$$
+:::
+
+<1>2. If $b=\operatorname{arcsec}(e^2)$, then
+$$
+\int_0^b\tan x\,dx=2.
+$$
+
+::: {.proof}
+For the principal inverse secant,
+$b=\operatorname{arcsec}(e^2)$ lies in $(0,\pi/2)$ and satisfies
+$$
+\sec b=e^2,
+\qquad\text{so}\qquad
+\cos b=e^{-2}.
+$$
+Applying step <1>1 gives
+$$
+\int_0^b\tan x\,dx
+=-\log(e^{-2})=2.
+$$
+:::
+
+<1>3. Therefore
+$$
+b=\boxed{\operatorname{arcsec}(e^2)}
+$$
+is a possible value, so the answer is (E).
+
+::: {.proof}
+Step <1>2 verifies directly that this choice satisfies the required integral
+equation.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested choice.
+:::
+:::

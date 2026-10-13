@@ -27,3 +27,121 @@ M=\begin{pmatrix}
 \end{pmatrix}.
 \]
 :::
+
+::: {.solution}
+<1>1. The inverse of $M$ is
+\[
+\boxed{
+M^{-1}
+=
+\begin{pmatrix}
+2&-1&0&0\\
+-1&2&-1&0\\
+0&-2&1&1\\
+0&0&1&-2
+\end{pmatrix}
+}.
+\]
+
+::: {.proof}
+Let
+\[
+N=
+\begin{pmatrix}
+2&-1&0&0\\
+-1&2&-1&0\\
+0&-2&1&1\\
+0&0&1&-2
+\end{pmatrix}.
+\]
+Direct matrix multiplication gives
+\[
+MN
+=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix}.
+\]
+Hence
+\[
+N=M^{-1}.
+\]
+:::
+
+<1>2. One has
+\[
+M^{-2}
+=
+(M^{-1})^2.
+\]
+
+::: {.proof}
+By definition,
+\[
+M^{-2}
+=(M^2)^{-1}.
+\]
+Since $M$ is invertible,
+\[
+(M^2)^{-1}
+=
+M^{-1}M^{-1}
+=(M^{-1})^2.
+\]
+:::
+
+<1>3. Squaring the matrix in step <1>1 gives
+\[
+\boxed{
+M^{-2}
+=
+\begin{pmatrix}
+5&-4&1&0\\
+-4&7&-3&-1\\
+2&-6&4&-1\\
+0&-2&-1&5
+\end{pmatrix}
+}.
+\]
+
+::: {.proof}
+Multiply
+\[
+\begin{pmatrix}
+2&-1&0&0\\
+-1&2&-1&0\\
+0&-2&1&1\\
+0&0&1&-2
+\end{pmatrix}
+\]
+by itself.
+For example, the first row becomes
+\[
+(2,-1,0,0)
+\begin{pmatrix}
+2&-1&0&0\\
+-1&2&-1&0\\
+0&-2&1&1\\
+0&0&1&-2
+\end{pmatrix}
+=(5,-4,1,0),
+\]
+and the remaining rows similarly give
+\[
+(-4,7,-3,-1),
+\quad
+(2,-6,4,-1),
+\quad
+(0,-2,-1,5).
+\]
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the requested value of $M^{-2}$.
+:::
+:::

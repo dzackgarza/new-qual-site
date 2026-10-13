@@ -18,67 +18,47 @@ relations:
   target: T-CRVJINV
 review: draft
 prompts:
-- What does it mean for $(E, p_0)$ to be defined over a subfield?
 - Why is the set of rational points a subgroup?
 - State Mordell's theorem and say what its two summands are.
 - Give a curve with rank $0$ and nontrivial torsion, and one with rank $1$ and no torsion.
 ---
 
-::: {.definition title="Defined over a subfield"}
-Let $k = \bar k$, let $(E, p_0)$ be elliptic, and embed $E \embeds \PP^2_{/k}$ by $\abs{3p_0}$, so $E = V(f)$ for a cubic $f$.
-Say $(E, p_0)$ is \dfn{defined over} a subfield $k_0 \subseteq k$ when $f$ can be taken with coefficients in $k_0$ and $p_0 \in E(k_0)$.
-Then $E(k_0) \leq E(k)$ is a subgroup.
-:::
-
 ::: {.theorem title="Mordell"}
-If $(E,p_0)$ is defined over $\QQ$, then $E(\QQ)$ is a finitely generated abelian group:
-\[
-E(\QQ) \iso \ZZ^r \oplus E(\QQ)_{\mathrm{tors}} ,
-\]
-with $r$ the **rank** and the torsion subgroup finite.
+Let $E/\QQ$ be an elliptic curve. Then $E(\QQ)$ is a finitely generated abelian group, so
+$$
+E(\QQ)\cong\ZZ^r\oplus E(\QQ)_{\mathrm{tors}}
+$$
+for a uniquely determined integer $r\geq0$, and $E(\QQ)_{\mathrm{tors}}$ is finite. The integer $r$ is the rank of $E(\QQ)$.
 :::
 
 ::: {.example}
 **Rank $0$, torsion $C_3$.** The Fermat cubic $x^3 + y^3 = z^3$ has
-\[
-E(\QQ) = \theset{ \thevector{1:-1:0},\ \thevector{1:0:1},\ \thevector{0:1:1} } \iso C_3 ,
-\]
-these being its three rational inflection points.
-That the list stops there is Fermat's last theorem for $n=3$, so this example is a restatement of a genuine theorem and not a computation.
+$$
+E(\QQ) = \theset{ \thevector{1:-1:0},\ \thevector{1:0:1},\ \thevector{0:1:1} } \cong C_3 ,
+$$
+with $\thevector{1:-1:0}$ chosen as the identity. These are the three rational inflection points. The assertion that there are no further rational points is equivalent, after clearing denominators, to Fermat's last theorem for exponent $3$.
 
 **Rank $1$, no torsion.** For $y^2 + y = x^3 - x$ with $p_0 = \thevector{0:1:0}$,
-\[
-E(\QQ) = \generators{P} \iso \ZZ, \qquad P = (0,0) \text{ in affine coordinates} .
-\]
-That $P$ has infinite order is visible after a few doublings, and the denominators are the thing to watch:
-\[
+$$
+E(\QQ) = \generators{P} \cong \ZZ, \qquad P = (0,0) .
+$$
+A descent and height computation proves that $P$ generates and that the torsion subgroup is trivial. Its first multiples include
+$$
 2P = (1, 0), \quad
 3P = (-1,-1), \quad
 4P = (2,-3), \quad
 5P = \qty{ \tfrac{1}{4}, -\tfrac{5}{8} }, \quad
 6P = (6, 14), \quad
 7P = \qty{ -\tfrac{5}{9}, \tfrac{8}{27} } .
-\]
-The denominators appear as $d^2$ and $d^3$ in the two coordinates, which is exactly the shape a height function measures.
+$$
 :::
 
 ::: {.remark}
-Two points require explanation: why $E(\QQ)$ is closed under the group law, and why that subgroup is finitely generated.
-
-The subgroup claim is not automatic and is the reason the definition insists that $p_0$ be rational.
-Addition is defined by "three collinear points sum to zero", and a line through two rational points of a rational cubic meets it in a third point whose coordinates are rational, because substituting the line into the cubic gives a cubic in one variable with rational coefficients and two rational roots, so the third root is rational too.
-Inversion is reflection, also rational.
-If $p_0\notin E(\QQ)$, then the identity is not rational, so $E(\QQ)$ is not a subgroup of $E(\bar\QQ)$ with respect to that chosen group law.
-
-That subgroup is where the geometry turns into arithmetic.
-Writing a rational point in lowest terms and clearing denominators converts $E(\QQ)$ into the integral solutions of a homogeneous cubic in three variables, so the chord-and-tangent construction becomes an operation that manufactures new integer solutions from old ones --- the classical secant method, predating any of this language.
-Reading it the other way, a Diophantine question about a cubic acquires a group acting on its own solution set, and Mordell's theorem says that group is small enough to describe: finitely many generators account for every solution there is.
-This exchange is the entire reason elliptic curves sit in number theory rather than only in geometry.
+The multiplication, inverse, and identity maps of the elliptic-curve group scheme are morphisms over $\QQ$. Therefore they preserve $\QQ$-points, so $E(\QQ)$ is a subgroup of $E(\overline{\QQ})$.
 
 Finite generation is proved by combining descent with a height argument.
-It is a descent: the weak Mordell theorem gives $E(\QQ)/2E(\QQ)$ finite, and a height function measuring the arithmetic size of a point turns that finiteness into generation by a bounded set.
-Neither half is formal, and neither is visible from the geometry over $\bar\QQ$, where $E$ is divisible and nothing is finitely generated.
+The weak Mordell theorem gives $E(\QQ)/2E(\QQ)$ finite. Choose finitely many representatives for these cosets. After subtracting a representative, every point is twice another rational point; the canonical height decreases under this descent except on a bounded set, and there are only finitely many rational points of bounded height. This yields a finite generating set. Over $\overline{\QQ}$, multiplication by every nonzero integer is surjective, so this finite-generation phenomenon is arithmetic rather than geometric over the algebraic closure.
 
 What the theorem does not give is the rank.
-Torsion is completely understood --- by Mazur's theorem, $E(\QQ)_{\mathrm{tors}}$ is one of fifteen groups --- while no algorithm is known to compute the rank $r$ in general, and no proven uniform bound for it is known.
+Mazur's theorem classifies $E(\QQ)_{\mathrm{tors}}$ into fifteen possible groups. No unconditional algorithm is known that is proved to terminate with the rank for every elliptic curve over $\QQ$, and no uniform upper bound for ranks over $\QQ$ is known.
 :::

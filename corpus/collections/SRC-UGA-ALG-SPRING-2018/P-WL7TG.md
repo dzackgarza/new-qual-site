@@ -47,11 +47,11 @@ M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
 
 - Writing $cu$:
 
-  - Use that $b\in \unitsof{R}$, left-multiply (1) by $\inverseof{b}$ to get $\inverseof{b} a x = y$
+  - Use that $b\in \units{R}$, left-multiply (1) by $\inverseof{b}$ to get $\inverseof{b} a x = y$
 
   - Substitute $y$ into (2) to get $cx = d(\inverseof{b} a x)$.
 
-  - Since $x\in \unitsof{R}$, right-multiply by $\inverseof{x}$ to get $c = d\inverseof{b} a$ and thus $cu = d\inverseof{b} a u$.
+  - Since $x\in \units{R}$, right-multiply by $\inverseof{x}$ to get $c = d\inverseof{b} a$ and thus $cu = d\inverseof{b} a u$.
 
   - Summary:
   \[

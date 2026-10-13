@@ -35,7 +35,8 @@ $$
 \check{H}^p(\mcu, \mcf) \to H^p(X, \mcf),
 $$
 the \dfn{Leray map}, induced by comparing the Čech resolution of $\mcf$ by the sheaves $\prod j_* \mcf|_{U_{i_0 \cdots i_p}}$ with an injective resolution.
-It is always an isomorphism in degree $0$ and injective in degree $1$, and it is an isomorphism in all degrees when $H^q(U_{i_0} \cap \cdots \cap U_{i_p}, \mcf) = 0$ for all $q > 0$ and all finite intersections; see the [Čech comparison theorems](https://stacks.math.columbia.edu/tag/01EO).
+It is always an isomorphism in degree $0$ and injective in degree $1$, and it is an isomorphism in all degrees when $H^q(U_{i_0} \cap \cdots \cap U_{i_p}, \mcf) = 0$ for all $q > 0$ and all finite intersections.
+The degree-one comparison and its independence of refinement are proved explicitly in [[P-AGH344REFINEMENTH1]].
 :::
 
 ::: {.theorem title="Leray"}
@@ -70,6 +71,10 @@ For the cover $\mcu = \{\PP_k^1\}$ of the projective line over a field $k$ by it
 The affine-cover comparison is a statement in the Zariski topology about quasi-coherent sheaves.
 On an irreducible topological space, a constant abelian sheaf is flasque: every nonempty open is connected, so its restriction maps are identities or surjections onto zero.
 Its positive-degree sheaf cohomology therefore vanishes [@Har10a, Proposition III.2.5].
-For a complex variety $X$, singular cohomology is sheaf cohomology of the constant sheaf in the analytic topology, $H^i_{\operatorname{sing}}(X(\CC),\ZZ)\cong H^i(X^{\operatorname{an}},\underline{\ZZ})$, since $X^{\operatorname{an}}$ is locally contractible.
-For $X=\PP^1_\CC$, the Zariski group $H^2(X,\underline{\ZZ})$ is $0$, while $H^2(X^{\operatorname{an}},\underline{\ZZ})\cong H^2(S^2,\ZZ)\cong\ZZ$.
+This differs from singular cohomology of the associated analytic space. For example,
+$$
+H^2_{\mathrm{Zar}}(\PP^1_\CC,\underline{\ZZ})=0,
+\qquad
+H^2_{\mathrm{sing}}(\PP^1(\CC),\ZZ)\cong\ZZ.
+$$
 :::

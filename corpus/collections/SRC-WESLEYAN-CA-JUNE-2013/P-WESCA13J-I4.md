@@ -18,3 +18,114 @@ audit:
 ::: {.problem}
 Define an essential singularity of an analytic function.
 :::
+
+::: {.solution}
+<1>1. Let
+$$
+f
+$$
+be holomorphic on a punctured neighborhood
+$$
+0<|z-a|<r.
+$$
+Then
+$$
+a
+$$
+is an isolated singularity of
+$$
+f.
+$$
+
+::: {.proof}
+This is the standard ambient situation in which removable singularities, poles, and essential singularities are defined.
+:::
+
+<1>2. The point
+$$
+a
+$$
+is called an essential singularity of
+$$
+f
+$$
+if it is neither a removable singularity nor a pole.
+
+::: {.proof}
+Equivalently:
+
+1. there is no holomorphic extension of
+$$
+f
+$$
+to
+$$
+a;
+$$
+2. there is no positive integer
+$$
+m
+$$
+such that
+$$
+(z-a)^m f(z)
+$$
+extends holomorphically to
+$$
+a
+$$
+with nonzero value there.
+
+These two exclusions distinguish an essential singularity from the other two possible types of isolated singularity.
+:::
+
+<1>3. In terms of the Laurent expansion
+$$
+f(z)
+=
+\sum_{n=-\infty}^{\infty}
+c_n(z-a)^n,
+$$
+the singularity at
+$$
+a
+$$
+is essential if and only if infinitely many negative-power coefficients
+$$
+c_{-1},c_{-2},\ldots
+$$
+are nonzero.
+
+::: {.proof}
+If every negative-power coefficient vanishes, the Laurent series is a Taylor series and the singularity is removable.
+
+If only finitely many negative-power coefficients are nonzero, then the principal part has a highest negative power
+$$
+c_{-m}(z-a)^{-m},
+\qquad
+c_{-m}\ne0,
+$$
+so
+$$
+a
+$$
+is a pole of order
+$$
+m.
+$$
+
+Thus the remaining case, namely infinitely many nonzero negative-power terms, is exactly the essential case.
+:::
+
+<1>4. Therefore the requested definition is
+$$
+\boxed{
+a\text{ is essential for }f
+\iff
+a\text{ is an isolated singularity that is neither removable nor a pole}.}
+$$
+
+::: {.proof}
+Step <1>2 gives the definition, and step <1>3 gives the standard equivalent Laurent-series criterion.
+:::
+:::

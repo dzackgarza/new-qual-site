@@ -29,3 +29,197 @@ Write the components of this field
 
 (c) in spherical coordinates $(r, \theta, \phi)$.
 :::
+
+::: {.remark}
+The source uses $r$ both for the Euclidean distance
+$\sqrt{x^2+y^2+z^2}$ and for the cylindrical radial coordinate. In the
+solution, write
+$$
+R=\sqrt{x^2+y^2+z^2}
+$$
+for the Euclidean distance and $\rho$ for the cylindrical radius.
+:::
+
+::: {.solution}
+<1>1. Since
+$$
+\log\frac1R=-\log R,
+$$
+one has
+$$
+\nabla\log\frac1R
+=
+-\frac1R\nabla R.
+$$
+
+::: {.proof}
+Apply the chain rule to $-\log R$.
+:::
+
+<1>2. In Cartesian coordinates,
+$$
+\nabla R
+=
+\left(
+\frac{x}{R},
+\frac{y}{R},
+\frac{z}{R}
+\right).
+$$
+
+::: {.proof}
+Differentiate
+$$
+R=(x^2+y^2+z^2)^{1/2}
+$$
+with respect to $x,y,z$.
+:::
+
+<1>3. Therefore the Cartesian components are
+$$
+\boxed{
+\vec A
+=
+\left(
+-\frac{x}{R^2},
+-\frac{y}{R^2},
+-\frac{z}{R^2}
+\right).
+}
+$$
+
+::: {.proof}
+Substitute step <1>2 into step <1>1.
+:::
+
+<1>4. Part (a) follows.
+
+::: {.proof}
+This is step <1>3.
+:::
+
+<1>5. In cylindrical coordinates,
+$$
+x=\rho\cos\phi,
+\qquad
+y=\rho\sin\phi,
+\qquad
+R=\sqrt{\rho^2+z^2}.
+$$
+
+::: {.proof}
+These are the standard cylindrical-coordinate relations.
+:::
+
+<1>6. The function $\log(1/R)$ is independent of $\phi$, and
+$$
+\frac{\partial}{\partial\rho}
+\log\frac1R
+=
+-\frac{\rho}{\rho^2+z^2},
+$$
+$$
+\frac{\partial}{\partial z}
+\log\frac1R
+=
+-\frac{z}{\rho^2+z^2}.
+$$
+
+::: {.proof}
+Since
+$$
+\log\frac1R
+=
+-\frac12\log(\rho^2+z^2),
+$$
+differentiate with respect to $\rho$ and $z$.
+:::
+
+<1>7. Hence the cylindrical components are
+$$
+\boxed{
+(A_\rho,A_\phi,A_z)
+=
+\left(
+-\frac{\rho}{\rho^2+z^2},
+0,
+-\frac{z}{\rho^2+z^2}
+\right).
+}
+$$
+
+::: {.proof}
+For a scalar function $f(\rho,\phi,z)$,
+$$
+\nabla f
+=
+e_\rho\frac{\partial f}{\partial\rho}
++
+e_\phi\frac1\rho\frac{\partial f}{\partial\phi}
++
+e_z\frac{\partial f}{\partial z}.
+$$
+Use step <1>6 and $\partial f/\partial\phi=0$.
+:::
+
+<1>8. Part (b) follows.
+
+::: {.proof}
+This is step <1>7.
+:::
+
+<1>9. In spherical coordinates, the scalar function depends only on the radial
+coordinate:
+$$
+\log\frac1R=-\log R.
+$$
+
+::: {.proof}
+The Euclidean distance from the origin is precisely the spherical radial
+coordinate.
+:::
+
+<1>10. Therefore
+$$
+\frac{\partial}{\partial R}
+\log\frac1R
+=
+-\frac1R,
+$$
+while both angular derivatives vanish.
+
+::: {.proof}
+Differentiate $-\log R$ and note that there is no dependence on
+$\theta$ or $\phi$.
+:::
+
+<1>11. Hence the spherical components are
+$$
+\boxed{
+(A_R,A_\theta,A_\phi)
+=
+\left(
+-\frac1R,
+0,
+0
+\right).
+}
+$$
+
+::: {.proof}
+Use the standard spherical-coordinate gradient formula and step <1>10.
+:::
+
+<1>12. Part (c) follows.
+
+::: {.proof}
+This is step <1>11.
+:::
+
+<1>13. Q.E.D.
+
+::: {.proof}
+Steps <1>4, <1>8, and <1>12 give the components in Cartesian, cylindrical,
+and spherical coordinates.
+:::
+:::

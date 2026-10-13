@@ -17,7 +17,7 @@ Every finite extension is algebraic, and by the primitive element theorem every 
 
 [[D-PUOGJ]]
 
-[[FD-J3HIA]] [[FD-QPNDA]]
+[[FD-J3HIA]]
 
 [[FD-3V3ZW]]
 

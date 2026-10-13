@@ -18,3 +18,97 @@ audit:
 ::: {.problem}
 Compute the Laurent series of $f ( z ) = \frac { e ^ { z } } { ( z - 1 ) ^ { 2 } }$ around $z _ { 0 } = 1$ give the region of convergence.
 :::
+
+::: {.solution}
+<1>1. Write
+$$
+e^z
+=
+e\,e^{z-1}.
+$$
+
+::: {.proof}
+Since
+$$
+z=1+(z-1),
+$$
+one has
+$$
+e^z
+=
+e^{1+(z-1)}
+=
+e\,e^{z-1}.
+$$
+:::
+
+<1>2. The Taylor series of $e^{z-1}$ is
+$$
+e^{z-1}
+=
+\sum_{n=0}^{\infty}
+\frac{(z-1)^n}{n!},
+$$
+with infinite radius of convergence.
+
+::: {.proof}
+This is the standard exponential power series centered at $0$, applied to
+$z-1$.
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\frac{e^z}{(z-1)^2}
+=
+e
+\sum_{n=0}^{\infty}
+\frac{(z-1)^{n-2}}{n!}.
+}
+$$
+
+::: {.proof}
+Substitute step <1>2 into step <1>1 and divide termwise by $(z-1)^2$.
+:::
+
+<1>4. In expanded form,
+$$
+\boxed{
+\frac{e^z}{(z-1)^2}
+=
+\frac{e}{(z-1)^2}
++
+\frac{e}{z-1}
++
+\frac e{2!}
++
+\frac e{3!}(z-1)
++
+\frac e{4!}(z-1)^2
++\cdots.
+}
+$$
+
+::: {.proof}
+Write out the first terms of the series in step <1>3.
+:::
+
+<1>5. The region of convergence is
+$$
+\boxed{
+0<|z-1|<\infty.
+}
+$$
+
+::: {.proof}
+The exponential series has infinite radius of convergence, so the shifted
+series in step <1>3 converges for every finite $z$. The only excluded point is
+$z=1$, where the original function has a pole of order $2$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>4 and <1>5 give the Laurent series and its region of convergence.
+:::
+:::

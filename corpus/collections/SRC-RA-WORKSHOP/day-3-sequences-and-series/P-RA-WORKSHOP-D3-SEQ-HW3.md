@@ -16,7 +16,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 (January 2003 #1) Let $\{a_k\}$ be a sequence of real numbers such that the series $\sum_{k=1}^{\infty}a_k$ converges and $\sum_{k=1}^{\infty}a_k^2$ diverges.
 Prove that $\sum_{k=1}^{\infty}a_k$ does not converge absolutely.
@@ -24,33 +23,37 @@ Prove that $\sum_{k=1}^{\infty}a_k$ does not converge absolutely.
 Compare this to June 2009 #3a and January 2005 #1b.)
 :::
 
-:::: {.solution}
+::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-Suppose, toward a contradiction, that $\sum |a_k|$ converges.
+If $\sum_{k=1}^{\infty}|a_k|$ converges, then there is $N$ such that $0\leq a_k^2\leq |a_k|$ for all $k\geq N$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-Then $|a_k| \le 1$ eventually.
-Proof: convergence of $\sum |a_k|$ forces $|a_k| \to 0$, so for all large $k$, $|a_k| \le 1$, hence $a_k^2 \le |a_k|$.
+Convergence of the nonnegative series implies $|a_k|\to0$. Choose $N$ so that $|a_k|\leq1$ for $k\geq N$. Then $a_k^2=|a_k|^2\leq|a_k|$.
 
 :::
 
-::: pf-step
+:::
 
-$\sum a_k^2$ converges, contradiction.
-Proof: for all large $k$, $0 \le a_k^2 \le |a_k|$; by comparison with the convergent series $\sum |a_k|$, the series $\sum a_k^2$ converges — contradicting the hypothesis that it diverges.
+::: {.pf-step #s2}
+
+The series $\sum_{k=1}^{\infty}|a_k|$ cannot converge.
+
+::: pf-proof
+
+Suppose it converges. By step [](#s1){.pf-ref} and comparison of nonnegative series, the tail $\sum_{k=N}^{\infty}a_k^2$ converges. Adding the finite initial sum would make $\sum_{k=1}^{\infty}a_k^2$ convergent, contrary to the hypothesis.
+
+:::
 
 :::
 
 ::: pf-qed
 
-Proof: hence $\sum a_k$ does not converge absolutely.
+Step [](#s2){.pf-ref} proves that the given convergent series is not absolutely convergent.
 
 :::
 

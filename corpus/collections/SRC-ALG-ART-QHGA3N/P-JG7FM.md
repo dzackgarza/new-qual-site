@@ -17,30 +17,28 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
-Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity.
-Show that $[\QQ(\zeta_n + \inverseof{\zeta_n}): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
+Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(\zeta_n + \zeta_n\inv): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
 :::
 
 ::: {.solution}
 Let
 \[
-K=\mathbb Q(\zeta_n),
+K=\QQ(\zeta_n),
 \qquad
 \alpha=\zeta_n+\zeta_n^{-1}.
 \]
 Then
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong (\mathbb Z/n\mathbb Z)^\times,
+\operatorname{Gal}(K/\QQ)\cong (\ZZ/n\ZZ)^\times,
 \]
-where \(a\in(\mathbb Z/n\mathbb Z)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^a\).
+where \(a\in(\ZZ/n\ZZ)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^a\).
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-For \(a\in(\mathbb Z/n\mathbb Z)^\times\),
+For \(a\in(\ZZ/n\ZZ)^\times\),
 \[
 \sigma_a(\alpha)=\zeta_n^a+\zeta_n^{-a}.
 \]
@@ -55,14 +53,14 @@ This follows directly from the definition of \(\sigma_a\).
 
 ::: {.pf-step #s2}
 
-The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\mathbb Q)\) is exactly
+The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\QQ)\) is exactly
 \[
 \{\sigma_1,\sigma_{-1}\}.
 \]
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(\sigma_1(\alpha)=\alpha\) and \(\sigma_{-1}(\alpha)=\alpha\). Conversely, suppose
+Certainly \(\sigma_1(\alpha)=\alpha\) and \(\sigma_{-1}(\alpha)=\alpha\). Conversely, suppose
 \[
 \zeta_n^a+\zeta_n^{-a}=\zeta_n+\zeta_n^{-1}.
 \]
@@ -96,7 +94,7 @@ The Galois orbit of \(\alpha\) has size
 The Galois group has order \(\varphi(n)\). By orbit-stabilizer and step [](#s2){.pf-ref},
 \[
 |\operatorname{Orb}(\alpha)|
-=\frac{|\operatorname{Gal}(K/\mathbb Q)|}{|\operatorname{Stab}(\alpha)|}
+=\frac{|\operatorname{Gal}(K/\QQ)|}{|\operatorname{Stab}(\alpha)|}
 =\frac{\varphi(n)}2.
 \]
 
@@ -104,23 +102,29 @@ The Galois group has order \(\varphi(n)\). By orbit-stabilizer and step [](#s2){
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Therefore
 \[
-[\mathbb Q(\zeta_n+\zeta_n^{-1}):\mathbb Q]
-=\frac{\varphi(n)}2.
+\boxed{[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]
+=\frac{\varphi(n)}2}.
 \]
 
 ::: pf-proof
 
-Because \(K/\mathbb Q\) is Galois, the distinct \(\mathbb Q\)-conjugates of \(\alpha\) inside \(K\) are exactly its Galois orbit. The degree of the minimal polynomial of \(\alpha\) over \(\mathbb Q\) is therefore the orbit size from step [](#s3){.pf-ref}. Since
+Because \(K/\QQ\) is Galois, the distinct \(\QQ\)-conjugates of \(\alpha\) inside \(K\) are exactly its Galois orbit. The degree of the minimal polynomial of \(\alpha\) over \(\QQ\) is therefore the orbit size from step [](#s3){.pf-ref}. Since
 \[
-[\mathbb Q(\alpha):\mathbb Q]=\deg m_\alpha,
+[\QQ(\alpha):\QQ]=\deg m_\alpha,
 \]
 the claimed formula follows.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required degree formula.
 
 :::
 

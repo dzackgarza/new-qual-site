@@ -15,7 +15,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Two $n \times n$ matrices $A$ and $B$ over a field $F$ are said to be similar if there exists an $n \times n$ invertible matrix $T$ over $F$ such that $TAT^{-1} = B$.
 Exhibit three $3 \times 3$ matrices over $\mathbb{Q}$ no two of which are similar such that $-2$ is the only rational eigenvalue of each of the matrices.
@@ -26,36 +25,22 @@ For each, determine its elementary divisors, minimal polynomial and characterist
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
-Let
-$$A_1 = \begin{pmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
-A_2 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
-A_3 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 1 \\ 0 & 0 & -2 \end{pmatrix}.$$
-Each has characteristic polynomial $(x+2)^3$, and $-2$ is its only eigenvalue.
-
-::: pf-proof
-
-Each $A_j$ is upper triangular with every diagonal entry $-2$, so $\det(xI-A_j)=(x+2)^3$.
-The eigenvalues are the roots of the characteristic polynomial, so $-2$ is the only one.
-
-:::
+We need three $3 \times 3$ matrices over $\QQ$ with $-2$ as the only rational eigenvalue, pairwise non-similar.
 
 :::
 
 ::: {.pf-step #s2}
 
-The elementary divisors and minimal polynomials are:
-
-- $A_1$: elementary divisors $x+2,\ x+2,\ x+2$; minimal polynomial $x+2$.
-- $A_2$: elementary divisors $(x+2)^2,\ x+2$; minimal polynomial $(x+2)^2$.
-- $A_3$: elementary divisor $(x+2)^3$; minimal polynomial $(x+2)^3$.
+Take
+$$A_1 = \begin{pmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
+A_2 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
+A_3 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 1 \\ 0 & 0 & -2 \end{pmatrix}.$$
 
 ::: pf-proof
 
-The matrices are in Jordan form with eigenvalue $-2$ and Jordan blocks of sizes $(1,1,1)$, $(2,1)$, and $(3)$.
-A Jordan block of size $k$ with eigenvalue $-2$ contributes the elementary divisor $(x+2)^k$.
-The characteristic polynomial is the product of the elementary divisors, and the minimal polynomial is their least common multiple, here $(x+2)^m$ for the largest block size $m$ [@DF04].
+These are the three Jordan forms with sole eigenvalue $-2$ and Jordan-block partitions $(1,1,1)$, $(2,1)$, and $(3)$, respectively.
 
 :::
 
@@ -63,12 +48,38 @@ The characteristic polynomial is the product of the elementary divisors, and the
 
 ::: {.pf-step #s3}
 
-No two of $A_1,A_2,A_3$ are similar.
+Each has characteristic polynomial $(x + 2)^3$.
 
 ::: pf-proof
 
-Similar matrices have the same elementary divisors [@DF04].
-The three lists in step [](#s2){.pf-ref} are distinct.
+Each matrix is upper triangular with diagonal entries $-2,-2,-2$. Therefore each characteristic polynomial is $(x+2)^3$, and $-2$ is the only eigenvalue.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The minimal polynomials are:
+- $A_1$: $x + 2$ (elementary divisors $x+2, x+2, x+2$);
+- $A_2$: $(x+2)^2$ (elementary divisors $(x+2)^2, x+2$);
+- $A_3$: $(x+2)^3$ (elementary divisor $(x+2)^3$).
+
+::: pf-proof
+
+For a Jordan block $J_k(-2)$, the corresponding elementary divisor is $(x+2)^k$. Thus the elementary divisors are exactly those listed above. The minimal polynomial is the least common multiple of the elementary divisors, equivalently $(x+2)^m$ where $m$ is the largest Jordan-block size. Hence the three displayed minimal polynomials follow.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+The three matrices are pairwise non-similar.
+
+::: pf-proof
+
+Similar matrices have the same minimal polynomial. The three minimal polynomials in step [](#s4){.pf-ref} are distinct, so no two of $A_1,A_2,A_3$ are similar.
 
 :::
 
@@ -76,7 +87,7 @@ The three lists in step [](#s2){.pf-ref} are distinct.
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s3){.pf-ref} show that $A_1,A_2,A_3$ are pairwise nonsimilar $3\times3$ matrices over $\QQ$ whose only rational eigenvalue is $-2$, and steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give their characteristic polynomials, elementary divisors, and minimal polynomials.
+Step [](#s2){.pf-ref} gives the matrices, step [](#s3){.pf-ref} gives their characteristic polynomials and verifies the eigenvalue condition, step [](#s4){.pf-ref} gives their elementary divisors and minimal polynomials, and step [](#s5){.pf-ref} proves pairwise nonsimilarity.
 
 :::
 

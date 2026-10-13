@@ -26,3 +26,120 @@ in the annulus
 1<|z|<2.
 \]
 :::
+
+::: {.solution}
+Let
+$$
+p(z)=z^4+5z+3.
+$$
+
+<1>1. The polynomial $p$ has exactly four zeros in
+$$
+|z|<2,
+$$
+counted with multiplicity.
+
+::: {.proof}
+On the circle
+$$
+|z|=2,
+$$
+one has
+$$
+|z^4|=16,
+$$
+while
+$$
+|5z+3|
+\le
+5|z|+3
+=
+13.
+$$
+Thus
+$$
+|5z+3|<|z^4|
+$$
+on $|z|=2$. By Rouché's theorem,
+$$
+p(z)=z^4+(5z+3)
+$$
+and
+$$
+z^4
+$$
+have the same number of zeros in $|z|<2$. The function $z^4$ has four zeros there, counted with multiplicity.
+:::
+
+<1>2. The polynomial $p$ has exactly one zero in
+$$
+|z|<1,
+$$
+counted with multiplicity.
+
+::: {.proof}
+On the circle
+$$
+|z|=1,
+$$
+one has
+$$
+|5z|=5,
+$$
+while
+$$
+|z^4+3|
+\le
+|z|^4+3
+=
+4.
+$$
+Thus
+$$
+|z^4+3|<|5z|
+$$
+on $|z|=1$. By Rouché's theorem,
+$$
+p(z)=5z+(z^4+3)
+$$
+and
+$$
+5z
+$$
+have the same number of zeros in $|z|<1$. The function $5z$ has exactly one zero there.
+:::
+
+<1>3. The polynomial $p$ has no zeros on either boundary circle
+$$
+|z|=1
+\quad\text{or}\quad
+|z|=2.
+$$
+
+::: {.proof}
+The strict Rouché inequalities in steps <1>1 and <1>2 imply that $p$ cannot vanish on either contour: if $p(z)=0$, then the two compared terms would have equal modulus, contradicting the strict inequality.
+:::
+
+<1>4. Hence the number of zeros in
+$$
+1<|z|<2
+$$
+is
+$$
+\boxed{3}.
+$$
+
+::: {.proof}
+By step <1>1 there are four zeros in $|z|<2$, while by step <1>2 there is one zero in $|z|<1$. Step <1>3 ensures that no zero lies on either boundary. Therefore the annulus contains
+$$
+4-1=3
+$$
+zeros, counted with multiplicity.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required zero count.
+:::
+:::

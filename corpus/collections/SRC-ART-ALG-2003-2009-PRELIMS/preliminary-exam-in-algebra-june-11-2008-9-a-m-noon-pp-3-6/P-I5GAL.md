@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked faithfulness, fixed coefficients, finite separability, and both group-order inequalities; no realization over a prescribed base field is assumed."
 ---
-
 ::: {.problem}
 Recall that every finite group $G$ is isomorphic to a subgroup of $S_n$ for some $n > 0$.
 Show that there are fields $E \supseteq F$ such that the Galois group of $E$ over $F$ is isomorphic to $G$.
@@ -32,12 +31,12 @@ Show that there are fields $E \supseteq F$ such that the Galois group of $E$ ove
 
 ::: {.solution}
 Let $m=|G|$, let $\{x_g:g\in G\}$ be algebraically independent
-indeterminates over $\mathbb Q$, and set
+indeterminates over $\QQ$, and set
 $$
-E=\mathbb Q(x_g:g\in G).
+E=\QQ(x_g:g\in G).
 $$
 For $h\in G$, define $\sigma_h$ on these generators by
-$\sigma_h(x_g)=x_{hg}$, fixing $\mathbb Q$. Set
+$\sigma_h(x_g)=x_{hg}$, fixing $\QQ$. Set
 $$
 F=\{a\in E:\sigma_h(a)=a\text{ for every }h\in G\}.
 $$
@@ -61,7 +60,7 @@ $$
 so this is a group homomorphism. It is injective, since
 $\sigma_h(x_1)=x_h$, and distinct indeterminates are distinct elements
 of $E$. Fixed elements are closed under the field operations, so $F$
-is a subfield of $E$ containing $\mathbb Q$. By its definition every
+is a subfield of $E$ containing $\QQ$. By its definition every
 $\sigma_h$ fixes $F$.
 
 :::
@@ -81,7 +80,7 @@ p(T)=\prod_{g\in G}(T-x_g)
 $$
 has coefficients in $F$, because each $\sigma_h$ permutes its factors.
 Thus every $x_g$ is algebraic over $F$. There are finitely many of
-them, and $F(x_g:g\in G)=E$, since $\mathbb Q\subseteq F\subseteq E$.
+them, and $F(x_g:g\in G)=E$, since $\QQ\subseteq F\subseteq E$.
 Successively adjoining these algebraic elements therefore makes
 $E/F$ finite. The displayed roots are distinct by algebraic
 independence. Their minimal polynomials over $F$ divide the separable
@@ -92,10 +91,13 @@ the splitting field of the separable polynomial $p$ over $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The displayed $m$ automorphisms are all the automorphisms of
-$E/F$.
+$E/F$, and
+$$
+\boxed{\Gal(E/F)\cong G}.
+$$
 
 ::: pf-proof
 
@@ -120,11 +122,19 @@ m\leq |\operatorname{Aut}_F(E)|\leq\deg\mu_u\leq m.
 $$
 All inequalities are equalities. Thus every $F$-automorphism is one of
 the $\sigma_h$, and the faithful homomorphism in step [](#s1){.pf-ref} is an
-isomorphism $G\cong\operatorname{Gal}(E/F)$. Step [](#s2){.pf-ref} also shows
+isomorphism $G\cong\Gal(E/F)$. Step [](#s2){.pf-ref} also shows
 that the constructed extension is Galois in the finite, normal,
 separable sense.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct fields $F\subseteq E$ for which $E/F$ is
+Galois and its Galois group is isomorphic to the prescribed finite group
+$G$.
 
 :::
 

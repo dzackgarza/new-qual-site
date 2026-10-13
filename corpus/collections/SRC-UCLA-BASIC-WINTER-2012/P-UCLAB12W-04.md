@@ -24,3 +24,110 @@ Suppose $s_n$ tends to $s\in\mathbb R$ in the Cesàro sense:
 \]
 Show that $\sum_{k=1}^\infty a_k$ converges and equals $s$.
 :::
+
+::: {.solution}
+Let
+$$
+A_n=\frac1n\sum_{j=1}^n s_j.
+$$
+By hypothesis, $A_n\to s$.
+
+<1>1. The sequence $(s_n)$ is nonnegative and nondecreasing.
+
+::: {.proof}
+Since every $a_k\ge0$,
+$$
+s_{n+1}-s_n=a_{n+1}\ge0,
+$$
+and each partial sum $s_n$ is nonnegative.
+:::
+
+<1>2. The sequence $(s_n)$ is bounded above.
+
+::: {.proof}
+Suppose instead that $(s_n)$ is unbounded. Since it is nondecreasing by step <1>1, it then tends to $+\infty$.
+
+Let $M>0$. Choose $N$ such that
+$$
+s_N>2M.
+$$
+For every $n\ge2N$ and every $j\ge N$, monotonicity gives $s_j\ge s_N$. Hence
+$$
+A_n
+=\frac1n\sum_{j=1}^n s_j
+\ge
+\frac1n\sum_{j=N}^n s_j
+\ge
+\frac{n-N+1}{n}s_N
+\ge
+\frac12s_N
+>M.
+$$
+Since $M$ is arbitrary, this would force $A_n\to+\infty$, contradicting the finite limit $A_n\to s$.
+:::
+
+<1>3. There exists $L\in\RR$ such that
+$$
+s_n\longrightarrow L.
+$$
+
+::: {.proof}
+By steps <1>1--<1>2, $(s_n)$ is nondecreasing and bounded above. Therefore it converges to its supremum
+$$
+L=\sup_n s_n.
+$$
+:::
+
+<1>4. The Cesàro means $A_n$ converge to the same limit $L$.
+
+::: {.proof}
+Let $\varepsilon>0$. Choose $N$ such that
+$$
+\abs{s_j-L}<\frac\varepsilon2
+$$
+for every $j\ge N$. For $n\ge N$,
+$$
+\begin{aligned}
+\abs{A_n-L}
+&=\abs{\frac1n\sum_{j=1}^n(s_j-L)}\\
+&\le
+\frac1n\sum_{j=1}^{N-1}\abs{s_j-L}
++
+\frac1n\sum_{j=N}^n\abs{s_j-L}\\
+&\le
+\frac1n\sum_{j=1}^{N-1}\abs{s_j-L}
++
+\frac\varepsilon2.
+\end{aligned}
+$$
+The finite first sum divided by $n$ tends to $0$, so for sufficiently large $n$ it is less than $\varepsilon/2$. Thus $\abs{A_n-L}<\varepsilon$.
+:::
+
+<1>5. One has
+$$
+L=s.
+$$
+
+::: {.proof}
+By hypothesis $A_n\to s$, while step <1>4 gives $A_n\to L$. Limits in $\RR$ are unique, so $L=s$.
+:::
+
+<1>6. Therefore
+$$
+\boxed{\sum_{k=1}^{\infty}a_k=s}.
+$$
+
+::: {.proof}
+The partial sums of the series are exactly $s_n$. By steps <1>3 and <1>5,
+$$
+s_n\to s.
+$$
+This is precisely convergence of the series to $s$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::

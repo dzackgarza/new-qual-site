@@ -29,3 +29,100 @@ Given that the following differential equation has an integrating factor of the 
 (D) $x^5y^3(\frac{1}{2}xy - 1) = c$
 (E) $x^5y^3(2xy - 1) = c$
 :::
+
+::: {.solution}
+<1>1. Exactness after multiplication by $\mu=x^my^n$ requires
+$$
+3(n+2)=2(m+2),
+\qquad
+5(n+1)=3(m+1).
+$$
+
+::: {.proof}
+After multiplication, the differential form has coefficients
+$$
+\overline M
+=3x^{m+1}y^{n+2}-5x^my^{n+1}
+$$
+and
+$$
+\overline N
+=2x^{m+2}y^{n+1}-3x^{m+1}y^n.
+$$
+Hence
+$$
+\overline M_y
+=3(n+2)x^{m+1}y^{n+1}
+-5(n+1)x^my^n
+$$
+and
+$$
+\overline N_x
+=2(m+2)x^{m+1}y^{n+1}
+-3(m+1)x^my^n.
+$$
+Equating the coefficients of the two monomials gives the displayed system.
+:::
+
+<1>2. The integrating factor exponents are
+$$
+m=4,\qquad n=2.
+$$
+
+::: {.proof}
+The equations in step <1>1 are
+$$
+2m-3n=2,
+\qquad
+3m-5n=2.
+$$
+Subtracting suitable multiples gives $n=2$, and then $m=4$.
+:::
+
+<1>3. A potential for the resulting exact differential form is
+$$
+F(x,y)=\frac12x^6y^4-x^5y^3.
+$$
+
+::: {.proof}
+With the exponents from step <1>2,
+$$
+\overline M=3x^5y^4-5x^4y^3.
+$$
+Integrating with respect to $x$ gives
+$$
+F(x,y)
+=\frac12x^6y^4-x^5y^3+h(y).
+$$
+Its $y$-derivative is
+$$
+F_y
+=2x^6y^3-3x^5y^2+h'(y).
+$$
+But
+$$
+\overline N=2x^6y^3-3x^5y^2,
+$$
+so $h'(y)=0$, and a constant may be absorbed into the final level constant.
+:::
+
+<1>4. The general integral is
+$$
+\boxed{x^5y^3\left(\frac12xy-1\right)=c},
+$$
+so the answer is (D).
+
+::: {.proof}
+Integral curves of the exact equation satisfy $F(x,y)=c$. Factoring the potential from step <1>3 gives
+$$
+F(x,y)
+=x^5y^3\left(\frac12xy-1\right).
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested general solution and corresponding choice.
+:::
+:::

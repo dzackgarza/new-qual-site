@@ -13,3 +13,156 @@ audit:
 ::: {.problem}
 Suppose $X$ is Hausdorff and has a basis consisting of sets that are both open and closed. Show that $X$ is totally disconnected; that is, every connected subset of $X$ consists of one point.
 :::
+
+::: {.solution}
+Let
+\[
+C\subseteq X
+\]
+be connected.
+
+<1>1. Suppose, toward a contradiction, that $C$ contains two distinct
+points
+\[
+x\ne y.
+\]
+
+::: {.proof}
+To prove total disconnectedness it suffices to show that no connected subset
+can contain two distinct points.
+:::
+
+<1>2. There exists an open set
+\[
+U\subseteq X
+\]
+such that
+\[
+x\in U
+\qquad\text{and}\qquad
+y\notin U.
+\]
+
+::: {.proof}
+Since $X$ is Hausdorff, the singleton
+\[
+\{y\}
+\]
+is closed.
+Hence
+\[
+X\setminus\{y\}
+\]
+is an open neighborhood of $x$ not containing $y$.
+Take
+\[
+U=X\setminus\{y\}.
+\]
+:::
+
+<1>3. Because the topology has a clopen basis, there exists a basis element
+\[
+B
+\]
+such that
+\[
+x\in B\subseteq U.
+\]
+In particular,
+\[
+y\notin B.
+\]
+
+::: {.proof}
+Since
+\[
+x\in U
+\]
+and $U$ is open, the basis property gives a basis element $B$ with
+\[
+x\in B\subseteq U.
+\]
+By hypothesis every basis element is both open and closed.
+Since
+\[
+y\notin U,
+\]
+one also has
+\[
+y\notin B.
+\]
+:::
+
+<1>4. The two subsets
+\[
+C\cap B
+\qquad\text{and}\qquad
+C\cap(X\setminus B)
+\]
+are disjoint nonempty open subsets of $C$ whose union is $C$.
+
+::: {.proof}
+They are disjoint and their union is
+\[
+C\cap
+\bigl(
+B\cup(X\setminus B)
+\bigr)
+=
+C.
+\]
+
+Because $B$ is open, $C\cap B$ is open in the subspace topology on $C$.
+Because $B$ is closed,
+\[
+X\setminus B
+\]
+is open, so
+\[
+C\cap(X\setminus B)
+\]
+is also open in $C$.
+
+Finally,
+\[
+x\in C\cap B
+\]
+and
+\[
+y\in C\cap(X\setminus B),
+\]
+so both sets are nonempty.
+:::
+
+<1>5. This contradicts connectedness of $C$.
+
+::: {.proof}
+Step <1>4 writes $C$ as the union of two disjoint nonempty open subsets.
+That is a separation of $C$, impossible because $C$ is connected.
+:::
+
+<1>6. Therefore every connected subset of $X$ has at most one point.
+
+::: {.proof}
+The assumption that a connected subset contains two distinct points leads to
+the contradiction in step <1>5.
+:::
+
+<1>7. Hence
+\[
+\boxed{
+X\text{ is totally disconnected}.
+}
+\]
+
+::: {.proof}
+Every singleton is connected, and step <1>6 says these are the only nonempty
+connected subsets.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the desired conclusion.
+:::
+:::

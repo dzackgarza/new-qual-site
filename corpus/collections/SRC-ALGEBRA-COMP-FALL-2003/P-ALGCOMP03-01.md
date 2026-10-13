@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Verified the finite-index divisibility argument in part (a) and the strict conjugate-union counting bound in part (b).
 ---
-
 ::: {.problem}
 (a) If $A$ and $B$ are subgroups of finite index in a group $G$, and $[G:A]$ and $[G:B]$ are relatively prime, prove that $G=AB$.
 
@@ -32,7 +31,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If \([G:A]\) and \([G:B]\) are coprime, then \(G=AB\).
 
@@ -92,7 +91,7 @@ for some \(a\in A\), so \(g\in aB\subseteq AB\). Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 A finite group is not the union of the conjugates of a proper subgroup.
 
@@ -136,6 +135,12 @@ Consequently
 \]
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b).
 
 :::
 

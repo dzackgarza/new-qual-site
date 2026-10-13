@@ -31,9 +31,9 @@ Instead $\Pic^0(E) \cong E$ by $p \mapsto [p - O]$, so $\Pic(E) \cong E \oplus \
 :::
 
 ::: {.remark}
-The contrast is the whole content: $\Pic^0$ measures how far the curve is from being rational, and it vanishes exactly for $\PP^1$.
+For a smooth projective curve over an algebraically closed field, $\Pic^0$ is the Jacobian and has dimension equal to the genus; it vanishes exactly in genus $0$, hence exactly for $\PP^1$.
 A curve is rational precisely when it admits two distinct linearly equivalent points, which is the same as admitting a degree-one map to $\PP^1$.
 
-The degree argument is the one to reproduce: a principal divisor $p - q$ gives a rational function with one simple zero and one simple pole, so the induced map to $\PP^1$ has degree one.
+A principal divisor $p-q$ gives a rational function with one simple zero and one simple pole, so the induced map to $\PP^1$ has degree one.
 For a non-rational example, $y^2 = x^3 - x$ homogenised to $y^2 z = x^3 - xz^2$ is the standard witness, and the group law on it is exactly the isomorphism $E \cong \Pic^0(E)$.
 :::

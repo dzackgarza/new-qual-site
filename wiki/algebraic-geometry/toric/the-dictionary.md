@@ -19,8 +19,8 @@ topics:
 
 [[PR-FULFACEDUAL]]
 
-A polyhedral cone $\sigma$ is both finitely generated and an intersection of finitely many closed half-spaces, $\sigma^{\vee\vee}=\sigma$, and $\tau\mapsto\sigma^\vee\cap\tau^\perp$ is an inclusion-reversing bijection from the faces of $\sigma$ to the faces of $\sigma^\vee$.
-The orbit-cone correspondence uses this bijection.
+Together these say that a cone may be presented by generators or by inequalities, that either presentation recovers the other through duality, and that duality reverses the face poset.
+The dual-cone computation uses separation and facet descriptions, while the orbit-cone correspondence uses the order-reversing correspondence of faces.
 
 ## How the affine charts glue
 

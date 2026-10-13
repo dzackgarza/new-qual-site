@@ -26,3 +26,155 @@ then
 \int_X|f_n-f|\,d\mu\to0.
 \]
 :::
+
+::: {.solution}
+Define
+$$
+g_n=|f_n|+|f|-|f_n-f|.
+$$
+
+<1>1. Each $g_n$ is measurable, integrable, and nonnegative.
+
+::: {.proof}
+Measurability follows from measurability of $f_n$ and $f$. By the triangle inequality,
+$$
+|f_n-f|\le |f_n|+|f|,
+$$
+so $g_n\ge0$. Also
+$$
+0\le g_n\le |f_n|+|f|,
+$$
+and the right-hand side is integrable because both $f_n$ and $f$ are integrable. Hence $g_n$ is integrable.
+:::
+
+<1>2. One has
+$$
+g_n\longrightarrow 2|f|
+$$
+almost everywhere.
+
+::: {.proof}
+At every point where $f_n\to f$,
+$$
+|f_n|\to|f|
+$$
+and
+$$
+|f_n-f|\to0.
+$$
+Therefore
+$$
+g_n=|f_n|+|f|-|f_n-f|\to2|f|.
+$$
+The assumed convergence holds almost everywhere.
+:::
+
+<1>3. Fatou's lemma gives
+$$
+2\int_X|f|\,d\mu
+\le
+\liminf_{n\to\infty}\int_X g_n\,d\mu.
+$$
+
+::: {.proof}
+By step <1>1, the functions $g_n$ are nonnegative. By step <1>2,
+$$
+\liminf_{n\to\infty}g_n=2|f|
+$$
+almost everywhere. Fatou's lemma therefore yields
+$$
+\int_X2|f|\,d\mu
+\le
+\liminf_{n\to\infty}\int_Xg_n\,d\mu.
+$$
+:::
+
+<1>4. Suppose, for contradiction, that
+$$
+\int_X|f_n-f|\,d\mu
+$$
+does not tend to $0$. Then there are $\varepsilon>0$ and a subsequence $(n_k)$ such that
+$$
+\int_X|f_{n_k}-f|\,d\mu\ge\varepsilon
+$$
+for every $k$.
+
+::: {.proof}
+The integrals are nonnegative. Failure to converge to $0$ therefore yields a positive $\varepsilon$ and infinitely many indices for which the integral is at least $\varepsilon$; enumerate those indices increasingly.
+:::
+
+<1>5. Along the subsequence from step <1>4,
+$$
+\limsup_{k\to\infty}\int_Xg_{n_k}\,d\mu
+\le
+2\int_X|f|\,d\mu-\varepsilon.
+$$
+
+::: {.proof}
+By the definition of $g_n$,
+$$
+\int_Xg_{n_k}\,d\mu
+=
+\int_X|f_{n_k}|\,d\mu
++
+\int_X|f|\,d\mu
+-
+\int_X|f_{n_k}-f|\,d\mu.
+$$
+Using step <1>4,
+$$
+\int_Xg_{n_k}\,d\mu
+\le
+\int_X|f_{n_k}|\,d\mu
++
+\int_X|f|\,d\mu
+-\varepsilon.
+$$
+The hypothesis
+$$
+\int_X|f_n|\,d\mu\to\int_X|f|\,d\mu
+$$
+then gives the asserted limit-superior bound.
+:::
+
+<1>6. Step <1>5 contradicts Fatou's lemma applied to the subsequence $(g_{n_k})$.
+
+::: {.proof}
+The subsequence still satisfies
+$$
+g_{n_k}\to2|f|
+$$
+almost everywhere and remains nonnegative. Therefore Fatou's lemma gives
+$$
+2\int_X|f|\,d\mu
+\le
+\liminf_{k\to\infty}\int_Xg_{n_k}\,d\mu.
+$$
+But step <1>5 gives
+$$
+\liminf_{k\to\infty}\int_Xg_{n_k}\,d\mu
+\le
+\limsup_{k\to\infty}\int_Xg_{n_k}\,d\mu
+\le
+2\int_X|f|\,d\mu-\varepsilon,
+$$
+a contradiction.
+:::
+
+<1>7. Therefore
+$$
+\boxed{
+\int_X|f_n-f|\,d\mu\longrightarrow0
+}.
+$$
+
+::: {.proof}
+The contradiction in step <1>6 shows that the negation assumed in step <1>4 is impossible. Since the integrals are nonnegative, they must converge to $0$.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is exactly the required $L^1$ convergence.
+:::
+:::

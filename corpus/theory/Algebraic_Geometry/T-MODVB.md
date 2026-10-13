@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: T-MODVB
-kind: theorem
+kind: definition
 title: Locally free sheaves are vector bundles
 slogan: 'Vector bundles and locally free sheaves are the same gluing data: transition functions in $\GL_n$, viewed geometrically or as sheaves of sections.'
 classification:
@@ -25,9 +25,9 @@ prompts:
 
 ::: {.definition title="Locally free"}
 $\mcf$ is \dfn{free} if $\mcf \cong \bigoplus_{i \in I} \OO_X$ for some index set $I$, whose cardinality is its rank; it is free of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$.
-$\mcf$ is **locally free** if $X$ has an open cover $\theset{U_j}$ with each $\restrictionof{\mcf}{U_j}$ free, and locally free of rank $n$ if each $\restrictionof{\mcf}{U_j}$ is free of rank $n$.
+$\mcf$ is \dfn{locally free} if $X$ has an open cover $\theset{U_j}$ with each $\restrictionof{\mcf}{U_j}$ free, and locally free of rank $n$ if each $\restrictionof{\mcf}{U_j}$ is free of rank $n$.
 The rank of a locally free sheaf is constant on each connected component of $X$.
-An **invertible sheaf** is a locally free sheaf of rank $1$.
+An \dfn{invertible sheaf} is a locally free sheaf of rank $1$.
 :::
 
 ::: {.theorem title="Bundles and sheaves"}
@@ -36,8 +36,11 @@ Taking a rank-$n$ vector bundle $\pi: E \to X$ to its sheaf of sections $U \maps
 
 ::: {.remark}
 Both objects are glued from trivialisations on a cover and transition functions in $\GL_n(\OO_X(U_{ij}))$ satisfying the cocycle condition; the equivalence identifies these two constructions.
-The sheaf side is the one to compute with, because it lives in an abelian category where kernels, cokernels and cohomology exist; the bundle side is the one that makes geometric statements about fibres legible.
 
 A locally free sheaf is quasicoherent, and on a locally Noetherian scheme it is coherent when the rank is finite; local freeness additionally requires the transition maps to lie in $\GL_n$ on a trivializing cover.
-The fibre $\mcf \tensor \kappa(x)$ recovers the bundle's fibre, and a coherent sheaf on a reduced locally Noetherian scheme is locally free exactly when the fibre dimension $x \mapsto \dim_{\kappa(x)} \mcf \tensor \kappa(x)$ is locally constant.
+The fibre $\mcf \tensor \kappa(x)$ recovers the bundle's fibre. A coherent sheaf on a reduced locally Noetherian scheme is locally free exactly when the function
+$$
+x\longmapsto\dim_{\kappa(x)}\bigl(\mcf\tensor_{\OO_X}\kappa(x)\bigr)
+$$
+is locally constant; the local algebra input is the reduced-local criterion in [[T-DEFNAKA]].
 :::

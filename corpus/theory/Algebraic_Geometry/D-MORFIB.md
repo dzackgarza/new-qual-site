@@ -24,7 +24,7 @@ prompts:
 ::: {.definition title="Fibre"}
 For $f : X \to Y$ and $y \in Y$ with residue field $\kappa(y) = \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
 $$
-X_y \definedas \fiberprod{X}{Y}{\Spec \kappa(y)} .
+X_y \coloneqq \fiberprod{X}{Y}{\Spec \kappa(y)} .
 $$
 :::
 
@@ -44,6 +44,6 @@ The fibre $X_y$ is a scheme over $\kappa(y)$; for $f$ proper and $\mcf$ coherent
 Base change to $\Spec\OO_{Y,y}$ instead retains the part of the family over the generalisations of $y$.
 
 The underlying space of $X_y$ is homeomorphic to $f^{-1}(y)$, while the scheme structure records multiplicity and residue-field information.
-For $\Spec \ZZ[i] \to \Spec \ZZ$, the fibre over $(p)$ is $\Spec\FF_p[x]/(x^2+1)$: two points, one point with residue field $\FF_{p^2}$, or one nonreduced point, according as $p$ splits, is inert, or ramifies.
-Since $\ZZ[i]$ is a free $\ZZ$-module of rank $2$, each fibre has dimension $2$ over $\FF_p$, as does the generic fibre $\Spec\QQ(i)$ over $\QQ$; for a finite flat morphism $f$ of Noetherian schemes, $y\mapsto\dim_{\kappa(y)}\Gamma(X_y,\OO_{X_y})$ is locally constant on $Y$.
+For $\Spec \ZZ[i] \to \Spec \ZZ$, the fibres are two points, one point, or a fat point according as $p$ splits, is inert, or ramifies, and the length is $2$ in every case.
+Indeed $\ZZ[i]$ is a free $\ZZ$-module of rank $2$. More generally, if $f\colon X\to Y$ is finite locally free of constant rank $r$, then every fibre is a finite $\kappa(y)$-scheme of length $r$.
 :::

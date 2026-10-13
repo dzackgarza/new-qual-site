@@ -21,7 +21,6 @@ audit:
   date: 2026-09-13
   note: Verified the local parameters at the three branch points and at infinity and computed the orders of y and dx directly.
 ---
-
 ::: {.problem}
 Assume $\operatorname{char}k=0$.
 Let
@@ -45,7 +44,6 @@ and hence
 In particular, $dx/y$ is a regular nowhere-vanishing differential on $\overline C$.
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -55,10 +53,12 @@ Because the \(e_j\) are pairwise distinct and \(\operatorname{char}k=0\), the pr
 
 ::: pf
 
-::: {.pf-step #orders-at-branch-points}
+::: {.pf-step #s1}
+
 At each \(P_j\), \(y\) has order \(1\) and \(dx\) has order \(1\).
 
 ::: pf-proof
+
 Fix \(j\), and write
 \[
 g(x)=(x-e_j)g_j(x),
@@ -95,14 +95,17 @@ The factor in parentheses is a unit at \(P_j\), while \(y\) has order \(1\) and 
 \[
 \operatorname{ord}_{P_j}(dx)=1.
 \]
-:::
 
 :::
 
-::: {.pf-step #orders-at-infinity}
+:::
+
+::: {.pf-step #s2}
+
 At \(P_\infty\), \(y\) and \(dx\) both have order \(-3\).
 
 ::: pf-proof
+
 The projective closure is
 \[
 Y^2Z=(X-e_1Z)(X-e_2Z)(X-e_3Z),
@@ -154,18 +157,38 @@ Because \(\operatorname{char}k=0\), the leading coefficient is nonzero, so
 \[
 \operatorname{ord}_{P_\infty}(dx)=-3.
 \]
-:::
 
 :::
 
-::: pf-qed
+:::
+
+::: {.pf-step #s3}
+
+The divisors are
+\[
+\boxed{\operatorname{div}(dx)=[P_1]+[P_2]+[P_3]-3[P_\infty]},
+\]
+\[
+\boxed{\operatorname{div}(y)=[P_1]+[P_2]+[P_3]-3[P_\infty]},
+\]
+and
+\[
+\boxed{\operatorname{div}\!\left(\frac{dx}{y}\right)=0}.
+\]
+
+::: pf-proof
+
 The only zeros of \(y\) are \(P_1,P_2,P_3\), each of order \(1\), and its only pole is \(P_\infty\), of order \(3\). Thus
 \[
 \operatorname{div}(y)
 =[P_1]+[P_2]+[P_3]-3[P_\infty].
 \]
 
-By step [](#orders-at-branch-points){.pf-ref}, \(dx\) has a simple zero at each \(P_j\), and by step [](#orders-at-infinity){.pf-ref} it has a pole of order \(3\) at \(P_\infty\). These account for degree \(0\), the degree of a canonical divisor on this genus-one curve, so there are no further zeros or poles. Hence
+By step [](#s1){.pf-ref}, \(dx\) has a simple zero at each \(P_j\), and by step [](#s2){.pf-ref} it has a pole of order \(3\) at \(P_\infty\). At any other affine point \(Q=(a,b)\), one has \(b\ne0\), so
+\[
+\frac{\partial}{\partial y}\bigl(y^2-g(x)\bigr)(Q)=2b\ne0.
+\]
+Thus \(x-a\) is a local parameter at \(Q\), and therefore \(dx=d(x-a)\) has order \(0\) at \(Q\). Hence there are no further zeros or poles of \(dx\), so
 \[
 \operatorname{div}(dx)
 =[P_1]+[P_2]+[P_3]-3[P_\infty].
@@ -176,6 +199,15 @@ Therefore
 =\operatorname{div}(dx)-\operatorname{div}(y)=0.
 \]
 Thus \(dx/y\) has neither zeros nor poles, so it is a regular nowhere-vanishing differential on \(\overline C\).
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives all three requested divisors and the regular nowhere-vanishing conclusion for $dx/y$.
+
 :::
 
 :::

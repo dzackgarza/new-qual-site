@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Proved the underdetermined homogeneous-system result by elementary elimination and induction, then used it to compare the sizes of maximal independent subsets without invoking rank-nullity."
 ---
-
 ::: {.problem}
 (a) Using only the axioms for a field $F$, prove that a system of $m$ homogeneous linear equations in $n$ unknowns with $m<n$ and coefficients in $F$ has a nonzero solution.
 
@@ -33,10 +32,12 @@ audit:
 
 ::: pf
 
-::: pf-step
-Part (a): if $m<n$, every system of $m$ homogeneous linear equations in $n$ unknowns over $F$ has a nonzero solution.
+::: {.pf-step #s1}
+
+Prove part (a) by induction on the number of equations.
 
 ::: pf-proof
+
 We prove the following statement for every $m\ge0$: if
 $$
 m<n,
@@ -83,14 +84,17 @@ formula. Then all $m$ original equations hold, and the resulting vector is
 nonzero because its last $n-1$ coordinates are not all zero.
 
 Thus every such homogeneous system has a nonzero solution.
-:::
 
 :::
 
-::: {.pf-step #independent-subset-is-finite}
+:::
+
+::: {.pf-step #s2}
+
 Any linearly independent subset of a finitely spanned space is finite.
 
 ::: pf-proof
+
 Suppose
 $$
 V=\operatorname{span}\{v_1,\ldots,v_N\}.
@@ -116,15 +120,18 @@ There are $N$ equations in $N+1$ unknowns, so part (a) gives a nonzero
 solution $(c_1,\ldots,c_{N+1})$. Hence every $N+1$ vectors in $V$ are
 linearly dependent. Therefore a linearly independent subset of $V$ has at
 most $N$ elements.
-:::
 
 :::
 
-::: {.pf-step #maximal-set-spans}
+:::
+
+::: {.pf-step #s3}
+
 Every maximal linearly independent subset spans $V$.
 
 ::: pf-proof
-Let $B$ be maximal linearly independent. By step [](#independent-subset-is-finite){.pf-ref} it is finite. If
+
+Let $B$ be maximal linearly independent. By step [](#s2){.pf-ref} it is finite. If
 $$
 \operatorname{span}B\ne V,
 $$
@@ -134,21 +141,24 @@ v\in V\setminus\operatorname{span}B.
 $$
 Then $B\cup\{v\}$ is linearly independent, contradicting maximality. Thus
 $B$ spans $V$ and is a basis.
-:::
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s4}
+
 Any two maximal linearly independent subsets have the same cardinality.
 
 ::: pf-proof
+
 Let
 $$
 B=\{b_1,\ldots,b_r\},
 \qquad
 C=\{c_1,\ldots,c_s\}
 $$
-be maximal linearly independent subsets. By step [](#maximal-set-spans){.pf-ref} both are bases.
+be maximal linearly independent subsets. By step [](#s3){.pf-ref} both are bases.
 
 Suppose, for contradiction, that $r>s$. Since $C$ spans $V$, write
 $$
@@ -176,9 +186,17 @@ $$
 $$
 So every maximal linearly independent subset of $V$ has the same number of
 elements.
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

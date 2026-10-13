@@ -21,7 +21,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 For each of the following, either give an example or indicate that none exists.
 You do not need to supply proofs.
@@ -37,7 +36,7 @@ f. A ring whose center is not an ideal.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For part (a), take
 \[
@@ -60,7 +59,7 @@ because multiplication by \(2\) is an automorphism of \(\mathbb Z/3\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For part (b), no such nonzero \(\mathbb Q\)-modules exist.
 
@@ -76,7 +75,7 @@ sends \(v\otimes w\) to \(1\), so \(V\otimes_{\mathbb Q}W\ne0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 For part (c), take \(R=\mathbb Z\) and \(M=\mathbb Q\).
 
@@ -88,24 +87,29 @@ The \(\mathbb Z\)-module \(\mathbb Q\) is torsion-free. It is not free: \(\mathb
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
-For part (d), no example exists in a ring with identity; without identity, take
+For part (d), take
 \[
-R=2\mathbb Z,
+R=M_2(\mathbb Q),
 \qquad
-I=4\mathbb Z.
+I=0.
 \]
+Then \(I\) is maximal but not prime under the criterion that \(R/I\) be an integral domain.
 
 ::: pf-proof
 
-In a ring with identity, a maximal two-sided ideal \(I\) is prime: if \(a,b\notin I\) and \(aRb\subseteq I\), then \(R=I+RaR\) and \(R=I+RbR\), so \(R=R\cdot R\subseteq I+RaR\,RbR\subseteq I+R(aRb)R\subseteq I\), a contradiction. In \(R=2\mathbb Z\), the ideal \(4\mathbb Z\) has index \(2\), so no ideal lies strictly between it and \(R\), and it is maximal. It is not prime, since \(2\cdot2=4\in I\) while \(2\notin I\).
+The ring \(M_2(\mathbb Q)\) is simple, so its only two-sided ideals are \(0\) and \(R\); hence \(0\) is maximal. But \(R\) has nonzero zero divisors, for example
+\[
+E_{11}E_{22}=0,
+\]
+so \(R/I\cong R\) is not an integral domain.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 For part (e), take
 \[
@@ -125,7 +129,7 @@ does not stabilize, so \(R\) is not Noetherian.
 
 :::
 
-::: pf-step
+::: {.pf-step #s6}
 
 For part (f), again take \(R=M_2(\mathbb Q)\).
 
@@ -138,6 +142,12 @@ Z(R)=\{aI_2:a\in\mathbb Q\}.
 This is a proper subset of \(R\) but contains the identity matrix. Any two-sided ideal containing \(1\) is all of \(R\), so \(Z(R)\) is not an ideal.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} answer parts (a)--(f), respectively.
 
 :::
 

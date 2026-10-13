@@ -23,3 +23,110 @@ Prove that
 (W_1\cap W_2)^\perp=W_1^\perp+W_2^\perp.
 \]
 :::
+
+::: {.solution}
+<1>1. For any subspaces $U_1,U_2\subseteq V$,
+\[
+(U_1+U_2)^\perp
+=
+U_1^\perp\cap U_2^\perp.
+\]
+
+::: {.proof}
+Let $v\in V$. Then
+\[
+v\in(U_1+U_2)^\perp
+\]
+if and only if
+\[
+\langle v,u_1+u_2\rangle=0
+\]
+for every $u_1\in U_1$ and $u_2\in U_2$.
+
+Taking $u_2=0$ shows that this implies $v\in U_1^\perp$, and taking $u_1=0$ shows that it implies $v\in U_2^\perp$. Conversely, if $v$ belongs to both orthogonal complements, then
+\[
+\langle v,u_1+u_2\rangle
+=
+\langle v,u_1\rangle+\langle v,u_2\rangle
+=0.
+\]
+Thus the two subspaces are equal.
+:::
+
+<1>2. In a finite-dimensional inner-product space,
+\[
+(U^\perp)^\perp=U
+\]
+for every subspace $U\subseteq V$.
+
+::: {.proof}
+One always has
+\[
+U\subseteq(U^\perp)^\perp.
+\]
+Also
+\[
+\dim U+\dim U^\perp=\dim V,
+\]
+so
+\[
+\dim(U^\perp)^\perp
+=
+\dim V-\dim U^\perp
+=
+\dim U.
+\]
+Thus the inclusion is between subspaces of equal dimension and is therefore equality.
+:::
+
+<1>3. Applying step <1>1 to $W_1^\perp$ and $W_2^\perp$ gives
+\[
+(W_1^\perp+W_2^\perp)^\perp
+=
+W_1\cap W_2.
+\]
+
+::: {.proof}
+Step <1>1 yields
+\[
+(W_1^\perp+W_2^\perp)^\perp
+=
+(W_1^\perp)^\perp
+\cap
+(W_2^\perp)^\perp.
+\]
+By step <1>2,
+\[
+(W_i^\perp)^\perp=W_i
+\]
+for $i=1,2$, giving the stated equality.
+:::
+
+<1>4. Therefore
+\[
+\boxed{
+(W_1\cap W_2)^\perp
+=
+W_1^\perp+W_2^\perp
+}.
+\]
+
+::: {.proof}
+Take orthogonal complements of both sides of step <1>3. By step <1>2,
+\[
+\bigl((W_1^\perp+W_2^\perp)^\perp\bigr)^\perp
+=
+W_1^\perp+W_2^\perp,
+\]
+while the orthogonal complement of the right side of step <1>3 is
+\[
+(W_1\cap W_2)^\perp.
+\]
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required identity.
+:::
+:::

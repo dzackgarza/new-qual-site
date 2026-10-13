@@ -34,8 +34,8 @@ For a two-dimensional cone with primitive ray generators $u_1,u_2$, $\abs{\det(u
 
 [[D-FULSAT]]
 
-For a finitely generated semigroup $S\subseteq M$, $k[S]$ is normal exactly when $S$ is saturated, and the saturation of $S$ gives the normalization of $\Spec k[S]$.
-The semigroup $\langle2,3\rangle\subseteq\ZZ$ gives the cusp $\Spec k[t^2,t^3]$; its saturation is $\NN$, giving the normalization $\AA^1$.
+A finitely generated affine semigroup need not contain every lattice point in the cone it spans.
+Saturation tests whether it already equals the lattice points of that cone in its group completion; passing to the saturation gives the normalization of the semigroup ring.
 
 ## The quadric cone
 

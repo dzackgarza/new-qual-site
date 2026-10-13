@@ -24,3 +24,52 @@ At how many points does the graph of the curve $y = x^5 + x^3 + x - 2000$ cross 
 (D) $4$
 (E) $5$
 :::
+
+::: {.solution}
+<1>1. The polynomial
+$$
+p(x)=x^5+x^3+x-2000
+$$
+has at least one real zero.
+
+::: {.proof}
+The function $p$ is continuous. Moreover,
+$$
+p(4)=4^5+4^3+4-2000=-908<0
+$$
+and
+$$
+p(5)=5^5+5^3+5-2000=1255>0.
+$$
+By the intermediate value theorem, $p(c)=0$ for some $c\in(4,5)$.
+:::
+
+<1>2. The polynomial $p$ is strictly increasing on $\mathbb R$.
+
+::: {.proof}
+Its derivative is
+$$
+p'(x)=5x^4+3x^2+1.
+$$
+Every term except the final $1$ is nonnegative, so $p'(x)>0$ for every real
+$x$. Hence $p$ is strictly increasing on $\mathbb R$.
+:::
+
+<1>3. Therefore the graph crosses the $x$-axis at exactly
+$$
+\boxed{1}
+$$
+point, so the answer is (A).
+
+::: {.proof}
+Step <1>1 gives at least one real zero. By step <1>2, a strictly increasing
+function cannot take the value $0$ at two distinct real numbers. Thus the zero
+from step <1>1 is unique.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested number of crossings.
+:::
+:::

@@ -28,3 +28,54 @@ Let $[x]$ denote the greatest integer $\le x$. If $n$ is a positive integer, the
 (D) $2n - 1$
 (E) $2n$
 :::
+
+::: {.solution}
+<1>1. The left-hand limit at $-n$ is $2n+1$.
+
+::: {.proof}
+For $x<-n$ sufficiently close to $-n$, one has
+$$
+-n-1<x<-n,
+$$
+so $[x]=-n-1$. Also $|x|=-x$ near the negative point $-n$. Therefore
+$$
+\lim_{x\to -n^-}(|x|-[x])
+=n-(-n-1)
+=2n+1.
+$$
+:::
+
+<1>2. The left-hand limit at $n$ is $1$.
+
+::: {.proof}
+For $x<n$ sufficiently close to the positive integer $n$,
+$$
+n-1<x<n,
+$$
+so $[x]=n-1$, while $|x|=x$. Hence
+$$
+\lim_{x\to n^-}(|x|-[x])
+=n-(n-1)
+=1.
+$$
+:::
+
+<1>3. The requested difference is
+$$
+\boxed{2n},
+$$
+so the answer is (E).
+
+::: {.proof}
+Subtract the limits from steps <1>1 and <1>2:
+$$
+(2n+1)-1=2n.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value and corresponding choice.
+:::
+:::

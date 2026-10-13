@@ -16,7 +16,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-29
 ---
-
 ::: {.problem}
 Let $F$ be a field of characteristic zero and $\overline{F}$ be an algebraic closure of $F$.
 Suppose that $K$ and $L$ are fields, with $F \subseteq K \subseteq L \subseteq \overline{F}$, such that $[K : F] = 2$ and $L/K$ is a finite Galois extension.
@@ -27,37 +26,55 @@ Prove that there are at most two fields $M \subseteq \overline{F}$ conjugate to 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The $F$-conjugates of $L$ are the images $\sigma(L)$ for $\sigma \in \operatorname{Aut}_F(\overline F)$.
-
-::: pf-proof
-
-an $F$-isomorphism $L \to M$ extends to an automorphism of $\overline F$ fixing $F$, so $M = \sigma(L)$ for some $\sigma$.
-
-:::
-
-:::
-
-::: pf-step
-
-$K/F$ is Galois (degree $2$ in characteristic $0$).
+The quadratic extension $K/F$ is Galois, and
+$|\Aut_F(K)|=2$.
 
 ::: pf-proof
 
-any degree-$2$ extension in characteristic $0$ is Galois (it is the splitting field of a quadratic).
+Because $\operatorname{char}F=0$, every algebraic extension of $F$ is
+separable. A separable extension of degree $2$ is normal: if
+$K=F(\alpha)$ and the minimal polynomial of $\alpha$ has roots
+$\alpha$ and $\alpha'$, then
+$\alpha'=-b-\alpha\in K$ for a quadratic
+$X^2+bX+c\in F[X]$. Hence $K/F$ is Galois. Therefore
+$$
+|\Aut_F(K)|=[K:F]=2.
+$$
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-Hence $\sigma(K) = K$ for all $\sigma \in \operatorname{Aut}_F(\overline F)$.
+Every field $M\subseteq\overline F$ conjugate to $L$ over $F$ has
+the form $M=\sigma(L)$ for some
+$\sigma\in\Aut_F(\overline F)$.
 
 ::: pf-proof
 
-$K/F$ is Galois, so it is stable under every $F$-automorphism of $\overline F$.
+An $F$-isomorphism $L\to M$ is an embedding of the finite separable
+extension $L/F$ into the algebraic closure $\overline F$. By the extension
+theorem for embeddings of algebraic extensions, it extends to an
+$F$-automorphism $\sigma$ of $\overline F$. Its image of $L$ is exactly
+$M$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+For every $\sigma\in\Aut_F(\overline F)$, one has
+$\sigma(K)=K$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $K/F$ is normal. Hence every $F$-embedding of $K$ into
+$\overline F$ has image $K$. Restricting $\sigma$ to $K$ gives such an
+embedding.
 
 :::
 
@@ -65,45 +82,21 @@ $K/F$ is Galois, so it is stable under every $F$-automorphism of $\overline F$.
 
 ::: {.pf-step #s4}
 
-$L/K$ is Galois, so $\sigma(L)$ depends only on $\sigma|_K$.
+If $\sigma,\tau\in\Aut_F(\overline F)$ have
+$\sigma|_K=\tau|_K$, then
+$$
+\sigma(L)=\tau(L).
+$$
 
 ::: pf-proof
 
-::: pf-step
-
-For $\sigma \in \operatorname{Aut}_F(\overline F)$, $\sigma(L)$ is a $K$-conjugate of $L$ (since $\sigma(K) = K$).
-
-::: pf-proof
-
-$\sigma|_K$ is an automorphism of $K$, and $\sigma(L)$ is a $K$-conjugate of $L$.
-
-:::
-
-:::
-
-::: pf-step
-
-Since $L/K$ is Galois, $\sigma(L) = L$ for all $\sigma$ fixing $K$.
-
-::: pf-proof
-
-a Galois extension is stable under all $K$-automorphisms of $\overline F$.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $\sigma(L)$ depends only on $\sigma|_K$.
-
-::: pf-proof
-
-if $\sigma|_K = \tau|_K$, then $\sigma^{-1}\tau$ fixes $K$, so $\sigma^{-1}\tau(L) = L$, i.e. $\sigma(L) = \tau(L)$.
-
-:::
-
-:::
+By step [](#s3){.pf-ref}, both $\sigma$ and $\tau$ stabilize $K$. Therefore
+$\sigma^{-1}\tau$ fixes $K$ pointwise. Since $L/K$ is Galois, hence
+normal, every $K$-automorphism of $\overline F$ stabilizes $L$. Thus
+$$
+(\sigma^{-1}\tau)(L)=L.
+$$
+Applying $\sigma$ gives $\tau(L)=\sigma(L)$.
 
 :::
 
@@ -111,45 +104,15 @@ if $\sigma|_K = \tau|_K$, then $\sigma^{-1}\tau$ fixes $K$, so $\sigma^{-1}\tau(
 
 ::: {.pf-step #s5}
 
-There are at most two choices for $\sigma|_K$.
+There are at most two fields conjugate to $L$ over $F$.
 
 ::: pf-proof
 
-::: pf-step
-
-$\operatorname{Aut}_F(K)$ has order $2$ (since $[K:F] = 2$ and $K/F$ is Galois).
-
-::: pf-proof
-
-$|\operatorname{Aut}_F(K)| = [K:F] = 2$.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $\sigma|_K$ is one of at most two automorphisms.
-
-::: pf-proof
-
-$\sigma|_K \in \operatorname{Aut}_F(K)$, which has two elements.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s6}
-
-Hence there are at most two $F$-conjugates of $L$.
-
-::: pf-proof
-
-By step [](#s4){.pf-ref}, $\sigma(L)$ is determined by $\sigma|_K$, and by step [](#s5){.pf-ref} there are at most two such restrictions.
+By step [](#s2){.pf-ref}, every such field is $\sigma(L)$ for some
+$\sigma\in\Aut_F(\overline F)$. By step [](#s4){.pf-ref}, this image depends only
+on the restriction $\sigma|_K$. Step [](#s1){.pf-ref} gives only two possible
+restrictions, namely the two elements of $\Aut_F(K)$. Hence at most two
+distinct images $\sigma(L)$ can occur.
 
 :::
 
@@ -157,7 +120,7 @@ By step [](#s4){.pf-ref}, $\sigma(L)$ is determined by $\sigma|_K$, and by step 
 
 ::: pf-qed
 
-Step [](#s6){.pf-ref} is the claim.
+Step [](#s5){.pf-ref} is the required bound.
 
 :::
 

@@ -19,3 +19,96 @@ audit:
 ::: {.problem}
 If $f(z) = (2x + 3y) + i\,g(x, y)$ is analytic and $g(2, 3) = 1$, what is $g(x, y)$?
 :::
+
+::: {.solution}
+Let
+\[
+u(x,y)=2x+3y,
+\qquad
+v(x,y)=g(x,y).
+\]
+
+<1>1. The Cauchy--Riemann equations give
+\[
+g_y=2
+\qquad\text{and}\qquad
+g_x=-3.
+\]
+
+::: {.proof}
+Since $f=u+iv$ is analytic,
+\[
+u_x=v_y
+\qquad\text{and}\qquad
+u_y=-v_x.
+\]
+Here
+\[
+u_x=2,
+\qquad
+u_y=3,
+\]
+so
+\[
+g_y=v_y=2
+\]
+and
+\[
+g_x=v_x=-3.
+\]
+:::
+
+<1>2. There is a real constant $C$ such that
+\[
+g(x,y)=-3x+2y+C.
+\]
+
+::: {.proof}
+Integrating
+\[
+g_x=-3
+\]
+with respect to $x$ gives
+\[
+g(x,y)=-3x+h(y)
+\]
+for some function $h$. Differentiating with respect to $y$ and using
+$g_y=2$ yields
+\[
+h'(y)=2,
+\]
+so
+\[
+h(y)=2y+C.
+\]
+:::
+
+<1>3. The condition $g(2,3)=1$ gives
+\[
+C=1.
+\]
+
+::: {.proof}
+By step <1>2,
+\[
+1=g(2,3)
+=-3(2)+2(3)+C
+=C.
+\]
+:::
+
+<1>4. Therefore
+\[
+\boxed{g(x,y)=-3x+2y+1}.
+\]
+
+::: {.proof}
+Substitute the value of $C$ from step <1>3 into the formula from step <1>2.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the required harmonic conjugate.
+:::
+:::

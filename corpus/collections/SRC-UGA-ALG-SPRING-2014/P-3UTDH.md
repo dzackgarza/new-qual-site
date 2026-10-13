@@ -34,60 +34,50 @@ Prove that the minimal polynomial of $11^{1/3} + 2^{1/2}$ over $\QQ$ has degree 
 :::
 
 ::: {.solution}
-Let $a=11^{1/3}$ and let $\omega$ be a primitive cube root of unity. Then
+Let $a=\sqrt[3]{11}$ and let $\omega$ be a primitive cube root of unity.
+
+<1>1. The splitting field $E=\mathbb Q(a,\omega)$ has degree six and Galois group $S_3$.
+
+::: {.proof}
+Eisenstein's criterion at $11$ gives $[\mathbb Q(a):\mathbb Q]=3$. This cubic field is real, whereas $\omega$ is nonreal and has quadratic minimal polynomial $x^2+x+1$. Thus $[E:\mathbb Q]=6$. The irreducible cubic has three distinct roots, and its Galois group is a transitive subgroup of $S_3$ of order six, hence equals $S_3$.
+:::
+
+<1>2. No square root $\sqrt n$ with squarefree positive $n>1$ belongs to $E$.
+
+::: {.proof}
+The group $S_3$ has exactly one subgroup of index two, namely $A_3$. The Galois correspondence therefore gives exactly one quadratic field inside $E$. Since $\mathbb Q(\omega)=\mathbb Q(\sqrt{-3})$ is quadratic, it is that unique field. If $\sqrt n\in E$, the real quadratic field $\mathbb Q(\sqrt n)$ would coincide with the nonreal field $\mathbb Q(\sqrt{-3})$, a contradiction.
+:::
+
+<1>3. The splitting field of $(x^3-11)(x^2-2)$ has Galois group
 \[
-E=\mathbb Q(a,\omega).
-\]
-The polynomial $x^3-11$ is Eisenstein at $11$, so $[\mathbb Q(a):\mathbb Q]=3$. Since $\mathbb Q(a)\subset\mathbb R$ while $\omega\notin\mathbb R$, adjoining $\omega$ doubles the degree. Hence
-\[
-[E:\mathbb Q]=6,
-\qquad
-\operatorname{Gal}(E/\mathbb Q)\cong S_3.
-\]
-The unique subgroup of index $2$ in $S_3$ is $A_3$, so $E$ has a unique quadratic subfield. It is
-\[
-\mathbb Q(\omega)=\mathbb Q(\sqrt{-3}).
+\boxed{S_3\times C_2}.
 \]
 
-For (a), let $n>1$ be squarefree and positive. Then $\mathbb Q(\sqrt n)$ is a real quadratic field, so it cannot equal the unique quadratic subfield $\mathbb Q(\sqrt{-3})$. Therefore $\sqrt n\notin E$.
-
-For (b), the splitting field of
-\[
-(x^3-11)(x^2-2)
-\]
-is $E(\sqrt2)$. By part (a), $\sqrt2\notin E$, so
-\[
-[E(\sqrt2):E]=2
-\]
-and the total degree is $12$. Moreover
-\[
-E\cap\mathbb Q(\sqrt2)=\mathbb Q,
-\]
-because the intersection is either $\mathbb Q$ or the quadratic field $\mathbb Q(\sqrt2)$, and the latter is not contained in $E$. Both extensions are Galois, so restriction gives
+::: {.proof}
+Its splitting field is $E(\sqrt2)$. By step <1>2, $\mathbb Q(\sqrt2)$ is not contained in $E$, so their intersection is $\mathbb Q$. Both are finite Galois extensions of $\mathbb Q$, and the restriction isomorphism for their compositum gives
 \[
 \operatorname{Gal}(E(\sqrt2)/\mathbb Q)
-\cong S_3\times C_2.
+\cong\operatorname{Gal}(E/\mathbb Q)\times
+\operatorname{Gal}(\mathbb Q(\sqrt2)/\mathbb Q)\cong S_3\times C_2.
+\]
+:::
+
+<1>4. The minimal polynomial of $\theta=\sqrt[3]{11}+\sqrt2$ has degree
+\[
+\boxed{[\mathbb Q(\theta):\mathbb Q]=6}.
 \]
 
-For (c), put
+::: {.proof}
+The cubic field $\mathbb Q(a)$ cannot contain a quadratic extension of $\mathbb Q$, by the tower law. Thus $[\mathbb Q(a,\sqrt2):\mathbb Q]=6$. Expanding $(\theta-\sqrt2)^3=11$ yields
 \[
-\theta=a+\sqrt2.
+(3\theta^2+2)\sqrt2=\theta^3+6\theta-11.
 \]
-Since $[\mathbb Q(a):\mathbb Q]=3$, the field $\mathbb Q(a)$ cannot contain the quadratic field $\mathbb Q(\sqrt2)$; hence
-\[
-[\mathbb Q(a,\sqrt2):\mathbb Q]=6.
-\]
-It remains to show that $\theta$ generates this compositum. From $(\theta-\sqrt2)^3=11$ we obtain
-\[
-\theta^3-3\theta^2\sqrt2+6\theta-2\sqrt2=11,
-\]
-so
-\[
-\sqrt2=\frac{\theta^3+6\theta-11}{3\theta^2+2}.
-\]
-The denominator is nonzero because $\theta$ is real. Thus $\sqrt2\in\mathbb Q(\theta)$, and then $a=\theta-\sqrt2\in\mathbb Q(\theta)$. Therefore
-\[
-\mathbb Q(\theta)=\mathbb Q(a,\sqrt2)
-\]
-and the minimal polynomial of $\theta$ over $\mathbb Q$ has degree $6$.
+As $\theta$ is real, the factor $3\theta^2+2$ is nonzero. Therefore $\sqrt2=(\theta^3+6\theta-11)/(3\theta^2+2)\in\mathbb Q(\theta)$ and $a=\theta-\sqrt2\in\mathbb Q(\theta)$. Consequently $\mathbb Q(\theta)=\mathbb Q(a,\sqrt2)$ and has degree six.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>2, <1>3, and <1>4 establish parts (a), (b), and (c), respectively.
+:::
 :::

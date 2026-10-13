@@ -20,31 +20,36 @@ Show that there is a nonzero $a\in \ZZ/n\ZZ$ with $af(x) = 0$.
 :::
 
 ::: {.solution}
-\envlist
+Write $R=\mathbb Z/n\mathbb Z$. Choose a nonzero polynomial $g=\sum_{j=0}^m b_jx^j\in R[x]$ of least degree among all nonzero polynomials satisfying $fg=0$, with $b_m\neq0$, and write $f=\sum_{i=0}^d a_ix^i$.
 
-- Write $f(x) = \sum_{k=0}^n a_k x^k$, and supposing it's a zero divisor choose $g(x) = \sum_{k=0}^m b_k x^k$ of minimal degree so that $g\neq 0, b_m\neq 0$, and $f(x)g(x) = 0$.
-- The claim is that the top coefficient $b_m$ will suffice.
-- Write the product:
+<1>1. For every $0\leq i\leq d$, multiplication by $a_i$ annihilates $g$.
+
+::: {.proof}
+Proceed by descending induction on $i$. The coefficient of $x^{d+m}$ in $fg=0$ gives $a_db_m=0$. Thus $a_dg$ has degree less than $m$ if it is nonzero. But $f(a_dg)=a_d(fg)=0$, so minimality of $m$ forces $a_dg=0$.
+
+Suppose $a_jg=0$ for all $j>i$. The coefficient of $x^{i+m}$ in $fg$ is
 \[
-0 = f(x)g(x) 
-= (a_0 + \cdots + a_{n-1}x^{n-1} + a_n x^n)
-(b_0 + \cdots + b_{m-1}x^{m-1} + b_m x^m)
-.\]
-- Equating coefficients, the coefficient for $x^{m+n}$ must be zero, so (**importantly**) $a_n b_m = 0$.
-  - Since $a_n b_m=0$, consider $a_ng(x)$.
-    This has degree $d_1 \leq m-1$ but satisfies $a_ng(x)f(x) = a_n(g(x)f(x)) = 0$, so by minimality $a_ng(x) = 0$.
-  - This forces $a_n b_0 = \cdots = a_n b_{m-1} = 0$, so $a_n$ annihilates all of the $b_k$.
-- Now consider the coefficient of $x^{m+n-1}$, given by $a_{n-1}b_m + a_{n}b_{m-1}$.
-  - The second term $a_n b_{m-1}=0$ since $a_n$ annihilates all $b_k$, so (**importantly**) $a_{n-1} b_m = 0$.
-  - Considering now $a_{n-1}g(x)$:
-    - The same argument shows this has degree $d_2 \leq m-1$ but $a_{n-1}g(x)f(x) = 0$, so $a_{n-1}g(x) = 0$.
-    - So $a_{n-1}$ annihilates all $b_k$, and allowing this process to continue inductively.
-- For good measure, the coefficient of $x^{m+n-2}$ is $a_{n-2}b_m + a_{n-1}b_{m-1} + a_{n}b_{m-2}$.
-  - Note that $a_n, a_{n-1}$ annihilate all $b_k$, so (**importantly**) $a_{n-2} b_m=0$, and so on.
+a_ib_m+\sum_{j=i+1}^d a_jb_{i+m-j}=0,
+\]
+with terms involving out-of-range indices interpreted as zero. Every summand in the sum vanishes by the induction hypothesis, so $a_ib_m=0$. Again $a_ig$ is annihilated by $f$ and has degree less than $m$ if nonzero. Minimality implies $a_ig=0$, completing the induction.
+:::
 
-- Thus $a_k b_m = 0$ for all $0\leq k \leq n$, and by linearity and commutativity, we have
+<1>2. The nonzero scalar $b_m\in R$ annihilates $f$:
 \[
-b_m f(x) = b_m \sum_{k=0}^n a_k x^k = \sum_{k=0}^n (b_m a_k) x^k = 0
-.\]
+\boxed{b_m f(x)=0}.
+\]
 
+::: {.proof}
+Step <1>1 gives $a_ig=0$ for every $i$, so its leading coefficient is $a_ib_m=0$. Since $R$ is commutative,
+\[
+b_mf=\sum_{i=0}^d b_ma_ix^i=0.
+\]
+The choice of $g$ guarantees $b_m\neq0$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 supplies the required nonzero scalar annihilator.
+:::
 :::

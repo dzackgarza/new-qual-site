@@ -53,7 +53,9 @@ For every quasicoherent $\OO_S$-module $\mathcal{M}$, the functor $(f \colon U \
 ::: {.example}
 Let $n \geq 1$ be invertible on $S$.
 On $S_{\mathrm{et}}$, the multiplicative group $\GG_m \colon U \mapsto \Gamma(U, \OO_U)^\times$ and its subgroup $\mu_n$ of $n$-th roots of unity fit into the \dfn{Kummer sequence}
-$$1 \to \mu_n \to \GG_m \xrightarrow{\, u \mapsto u^n \,} \GG_m \to 1,$$
+$$
+1 \to \mu_n \to \GG_m \xrightarrow{\, u \mapsto u^n \,} \GG_m \to 1,
+$$
 which is exact on $S_{\mathrm{et}}$: every unit $u$ acquires an $n$-th root $z$ on the étale covering $\Spec_U \OO_U[z]/(z^n - u) \to U$.
 The sequence is not exact for the Zariski topology.
 For $S = U = \Spec \CC[t, t^{-1}]$ and $n = 2$, the unit $t$ is not a square on any nonempty Zariski open subset of $U$.

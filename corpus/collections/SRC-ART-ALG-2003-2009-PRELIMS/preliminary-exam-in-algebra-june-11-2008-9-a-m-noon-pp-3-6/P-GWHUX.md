@@ -13,31 +13,47 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 a. Determine the elementary divisors and invariant factors of the Abelian group $\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$ of order 2700.
 b. Determine the number of nonisomorphic Abelian groups of order 2700.
 :::
 
 ::: {.solution}
-Let $G=\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$.
+Let
+$$
+G=\ZZ/15\ZZ\times\ZZ/20\ZZ\times\ZZ/9\ZZ.
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The elementary divisors of $G$ are $2^2,3,3^2,5,5$, and its invariant factors are $15\mid180$.
+The elementary divisors of $G$ are
+$$
+\boxed{4,\ 3,\ 9,\ 5,\ 5}.
+$$
 
 ::: pf-proof
 
-If $\gcd(a,b)=1$, then $\mathbf{Z}_a\times\mathbf{Z}_b\cong\mathbf{Z}_{ab}$.
-Hence $\mathbf{Z}_{15}\cong\mathbf{Z}_3\times\mathbf{Z}_5$, $\mathbf{Z}_{20}\cong\mathbf{Z}_{2^2}\times\mathbf{Z}_5$, and
+Using the Chinese remainder theorem,
 $$
-G\cong\mathbf{Z}_{2^2}\times\mathbf{Z}_3\times\mathbf{Z}_{3^2}\times\mathbf{Z}_5\times\mathbf{Z}_5,
+\ZZ/15\ZZ\cong\ZZ/3\ZZ\times\ZZ/5\ZZ
 $$
-which lists the elementary divisors.
-Grouping the largest prime powers gives $\mathbf{Z}_{2^2}\times\mathbf{Z}_{3^2}\times\mathbf{Z}_5\cong\mathbf{Z}_{180}$, and the rest gives $\mathbf{Z}_3\times\mathbf{Z}_5\cong\mathbf{Z}_{15}$.
-Thus $G\cong\mathbf{Z}_{15}\times\mathbf{Z}_{180}$ with $15\mid180$, and by uniqueness of invariant factors [@DF04] these are the invariant factors of $G$.
+and
+$$
+\ZZ/20\ZZ\cong\ZZ/4\ZZ\times\ZZ/5\ZZ.
+$$
+Therefore
+$$
+G\cong
+\ZZ/4\ZZ
+\times\ZZ/3\ZZ
+\times\ZZ/9\ZZ
+\times\ZZ/5\ZZ
+\times\ZZ/5\ZZ.
+$$
+Each displayed cyclic factor has prime-power order, so these orders are
+the elementary divisors.
 
 :::
 
@@ -45,13 +61,86 @@ Thus $G\cong\mathbf{Z}_{15}\times\mathbf{Z}_{180}$ with $15\mid180$, and by uniq
 
 ::: {.pf-step #s2}
 
-There are $\boxed{12}$ nonisomorphic abelian groups of order $2700$.
+The invariant factors of $G$ are
+$$
+\boxed{15,\ 180}.
+$$
 
 ::: pf-proof
 
-Since $2700=2^2\cdot3^3\cdot5^2$, an abelian group of order $2700$ is determined up to isomorphism by one partition of each exponent, the parts giving the orders of its cyclic primary factors [@DF04].
-The exponent $2$ has the $2$ partitions $(2),(1,1)$, and the exponent $3$ has the $3$ partitions $(3),(2,1),(1,1,1)$.
-The number of groups is therefore $2\cdot3\cdot2=12$.
+Group the elementary-divisor decomposition by primes:
+$$
+G_{(2)}\cong\ZZ/4\ZZ,
+\qquad
+G_{(3)}\cong\ZZ/3\ZZ\times\ZZ/9\ZZ,
+\qquad
+G_{(5)}\cong\ZZ/5\ZZ\times\ZZ/5\ZZ.
+$$
+Pad the $2$-primary list by a trivial factor and align factors in
+nondecreasing divisibility order:
+$$
+(1,4),\qquad(3,9),\qquad(5,5).
+$$
+Multiplying componentwise gives
+$$
+(1\cdot3\cdot5,\ 4\cdot9\cdot5)=(15,180).
+$$
+Since $15\mid180$, this is the invariant-factor decomposition
+$$
+G\cong\ZZ/15\ZZ\times\ZZ/180\ZZ.
+$$
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+There are
+$$
+\boxed{12}
+$$
+isomorphism classes of abelian groups of order $2700$.
+
+::: pf-proof
+
+The prime factorization is
+$$
+2700=2^2\,3^3\,5^2.
+$$
+By the structure theorem for finite abelian groups [@DF04], the
+isomorphism type is determined independently by the partitions of the
+exponents $2,3,2$. There are
+$$
+p(2)=2,
+\qquad
+p(3)=3,
+\qquad
+p(2)=2
+$$
+choices, corresponding explicitly to
+$$
+\ZZ/4\ZZ
+\quad\text{or}\quad
+(\ZZ/2\ZZ)^2,
+$$
+$$
+\ZZ/27\ZZ,
+\quad
+\ZZ/9\ZZ\times\ZZ/3\ZZ,
+\quad
+(\ZZ/3\ZZ)^3,
+$$
+and
+$$
+\ZZ/25\ZZ
+\quad\text{or}\quad
+(\ZZ/5\ZZ)^2.
+$$
+The choices for the three primes are independent, so the total number is
+$$
+2\cdot3\cdot2=12.
+$$
 
 :::
 
@@ -59,7 +148,7 @@ The number of groups is therefore $2\cdot3\cdot2=12$.
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} answers part (a) and step [](#s2){.pf-ref} answers part (b).
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} answer part (a), and step [](#s3){.pf-ref} answers part (b).
 
 :::
 

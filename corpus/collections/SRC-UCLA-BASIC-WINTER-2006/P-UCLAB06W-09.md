@@ -25,18 +25,54 @@ Prove that $A$ has $1$ as an eigenvalue.
 :::
 
 ::: {.solution}
-The assertion is false as printed.
-For example,
-\[
-A=\begin{pmatrix}
+<1>1. Consider the diagonal matrix
+$$
+A=
+\begin{pmatrix}
 2&0&0\\
 0&2&0\\
 0&0&1/4
-\end{pmatrix}
-\]
-is real, symmetric, and invertible, and
-\[
-\det A=2\cdot2\cdot\frac14=1.
-\]
-Its eigenvalues are $2,2,1/4$, so $1$ is not an eigenvalue.
+\end{pmatrix}.
+$$
+Then $A$ satisfies all hypotheses of the problem.
+
+::: {.proof}
+The matrix is real and diagonal, hence
+$$
+A^t=A.
+$$
+Its diagonal entries are all nonzero, so it is invertible. Moreover,
+$$
+\det A
+=2\cdot2\cdot\frac14
+=1.
+$$
+Thus every stated hypothesis is satisfied.
+:::
+
+<1>2. The matrix $A$ does not have $1$ as an eigenvalue.
+
+::: {.proof}
+For a diagonal matrix, the eigenvalues are its diagonal entries. Hence the eigenvalues of $A$ are
+$$
+2,
+\qquad
+2,
+\qquad
+\frac14.
+$$
+None is equal to $1$.
+:::
+
+<1>3. Therefore the assertion in the problem is false as printed.
+
+::: {.proof}
+Step <1>1 gives a matrix satisfying all hypotheses, while step <1>2 shows that it fails the claimed conclusion. This is a counterexample.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 completely resolves the printed claim by disproving it.
+:::
 :::

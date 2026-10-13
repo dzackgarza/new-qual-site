@@ -37,10 +37,20 @@ The following are equivalent:
 :::
 
 ::: {.remark title="Scope of the hypotheses"}
-*Weakening Noetherian.* The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideals rather than coherent ones.
-Noetherian is used only to have coherent ideals available and to extract finite subcovers, and both can be arranged directly.
+For a quasicompact quasi-separated scheme $X$, affineness is equivalent to
+$$
+H^p(X,\mcf)=0
+$$
+for every quasicoherent $\mcf$ and every $p>0$. In the ideal-sheaf form, coherent ideals in the Noetherian theorem are replaced by quasicoherent ideals.
 
-*Without quasicompactness.* The conclusion fails.
-An infinite disjoint union of affine schemes has vanishing higher cohomology for every quasicoherent sheaf, being a disjoint union of affines, but it is not affine: its ring of global sections is an infinite product, and the comparison map is not an isomorphism.
-The finite subcover in the proof is where quasicompactness enters, and without it the $f_i$ need not be finite in number.
+Quasicompactness cannot be omitted. Let
+$$
+X=\coprod_{i\in I}\Spec k
+$$
+for an infinite set $I$. For every quasicoherent sheaf $\mcf$, cohomology is computed componentwise and
+$$
+H^p(X,\mcf)=0\qquad(p>0).
+$$
+However $X$ is not affine. Indeed
+the open cover by its components has no finite subcover, so $X$ is not quasicompact, whereas every affine scheme is quasicompact by [[PR-SCHUNITCOVER]].
 :::

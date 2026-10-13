@@ -22,3 +22,124 @@ Let $f$ be entire.
 
 (b) Prove that $f$ has a pole at infinity of order $m$ if and only if $f$ is a polynomial of degree $m$.
 :::
+
+::: {.solution}
+For $w\ne0$, set
+\[
+g(w)=f(1/w).
+\]
+
+<1>1. The function $f$ has a removable singularity at infinity if and only if
+$f$ is constant.
+
+<2>1. If $f$ has a removable singularity at infinity, then $f$ is constant.
+
+::: {.proof}
+By definition, $g$ extends holomorphically across $w=0$. Hence $g$ is bounded
+on some disk $|w|<\delta$. Therefore $f(z)=g(1/z)$ is bounded for
+$|z|>1/\delta$. Since $f$ is continuous on the compact disk
+$|z|\le1/\delta$, it is bounded there as well. Thus $f$ is bounded on all of
+$\mathbb C$, so Liouville's theorem implies that $f$ is constant.
+:::
+
+<2>2. If $f$ is constant, then $f$ has a removable singularity at infinity.
+
+::: {.proof}
+If $f\equiv c$, then $g(w)=c$ for $w\ne0$, and defining $g(0)=c$ gives a
+holomorphic extension across $0$. Thus the singularity at infinity is
+removable.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Steps <2>1 and <2>2 prove both implications in part (a).
+:::
+
+<1>2. If $f$ has a pole at infinity of order $m$, then $f$ is a polynomial of
+degree $m$.
+
+<2>1. There are constants $C>0$ and $R>0$ such that
+\[
+|f(z)|\le C|z|^m
+\qquad(|z|\ge R).
+\]
+
+::: {.proof}
+Since $g$ has a pole of order $m$ at $0$, the function
+\[
+h(w)=w^m g(w)
+\]
+extends holomorphically across $0$ with $h(0)\ne0$. In particular, $h$ is
+bounded on some disk $|w|<\delta$: say $|h(w)|\le C$. For
+$|z|>1/\delta$, put $w=1/z$. Then
+\[
+|f(z)|
+=|g(1/z)|
+=|z|^m|h(1/z)|
+\le C|z|^m.
+\]
+Taking $R=1/\delta$ gives the claim.
+:::
+
+<2>2. For every integer $n>m$,
+\[
+f^{(n)}(0)=0.
+\]
+
+::: {.proof}
+Fix $n>m$. For every $r\ge R$, Cauchy's estimate on the circle $|z|=r$
+and step <2>1 give
+\[
+|f^{(n)}(0)|
+\le \frac{n!}{r^n}\max_{|z|=r}|f(z)|
+\le n!C r^{m-n}.
+\]
+Because $m-n<0$, letting $r\to\infty$ yields $f^{(n)}(0)=0$.
+:::
+
+<2>3. The Taylor series of $f$ is a polynomial of degree exactly $m$.
+
+::: {.proof}
+Step <2>2 shows that all Taylor coefficients of degrees greater than $m$
+vanish, so $f$ is a polynomial of degree at most $m$. If its degree were
+$d<m$, then
+\[
+g(w)=f(1/w)
+\]
+would have a pole of order $d$ at $0$, contradicting the assumption that the
+pole order is $m$. Hence $\deg f=m$.
+:::
+
+<2>4. Q.E.D.
+
+::: {.proof}
+Step <2>3 proves this implication of part (b).
+:::
+
+<1>3. If $f$ is a polynomial of degree $m$, then $f$ has a pole at infinity
+of order $m$.
+
+::: {.proof}
+Write
+\[
+f(z)=a_m z^m+a_{m-1}z^{m-1}+\cdots+a_0,
+\qquad a_m\ne0.
+\]
+Then
+\[
+g(w)=f(1/w)
+=w^{-m}\bigl(a_m+a_{m-1}w+\cdots+a_0w^m\bigr).
+\]
+The factor in parentheses is holomorphic and nonzero at $w=0$. Therefore
+$g$ has a pole of order exactly $m$ at $0$, so $f$ has a pole of order $m$ at
+infinity.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), while steps <1>2 and <1>3 prove both directions of
+part (b).
+:::
+:::

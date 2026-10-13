@@ -27,3 +27,228 @@ e^{-1/z^4},&z\ne0,\\
 The source states that $f$ satisfies the Cauchy–Riemann equations at every point of $\mathbb C$ but is not analytic.
 Explain how this is possible.
 :::
+
+::: {.solution}
+Write
+\[
+f=u+iv.
+\]
+
+<1>1. At every point
+\[
+z\ne0,
+\]
+the function $f$ is holomorphic and therefore satisfies the
+Cauchy--Riemann equations.
+
+::: {.proof}
+On
+\[
+\mathbb C\setminus\{0\},
+\]
+the function
+\[
+z\longmapsto -\frac1{z^4}
+\]
+is holomorphic, and the exponential function is entire. Their composition
+\[
+e^{-1/z^4}
+\]
+is therefore holomorphic there.
+
+Every holomorphic function satisfies the Cauchy--Riemann equations.
+:::
+
+<1>2. Along the real axis,
+\[
+f(x)=e^{-1/x^4}
+\qquad
+(x\ne0),
+\]
+and
+\[
+\lim_{x\to0}
+\frac{f(x)-f(0)}{x}
+=
+0.
+\]
+
+::: {.proof}
+For $x\ne0$,
+\[
+\left|
+\frac{f(x)}x
+\right|
+=
+\frac{e^{-1/x^4}}{|x|}.
+\]
+Set
+\[
+t=\frac1{x^4}.
+\]
+Then $t\to\infty$ as $x\to0$, and
+\[
+\frac{e^{-1/x^4}}{|x|}
+=
+t^{1/4}e^{-t}
+\longrightarrow
+0.
+\]
+Exponential decay dominates every power, proving the limit.
+:::
+
+<1>3. Along the imaginary axis,
+\[
+f(iy)=e^{-1/y^4}
+\qquad
+(y\ne0),
+\]
+and
+\[
+\lim_{y\to0}
+\frac{f(iy)-f(0)}{y}
+=
+0.
+\]
+
+::: {.proof}
+Since
+\[
+(iy)^4=y^4,
+\]
+one has
+\[
+f(iy)=e^{-1/y^4},
+\]
+which is real.
+
+Exactly as in step <1>2,
+\[
+\frac{e^{-1/y^4}}{|y|}
+\longrightarrow0.
+\]
+:::
+
+<1>4. All four first partial derivatives of $u$ and $v$ exist at the
+origin and satisfy
+\[
+u_x(0,0)
+=
+u_y(0,0)
+=
+v_x(0,0)
+=
+v_y(0,0)
+=
+0.
+\]
+
+::: {.proof}
+Along the real axis,
+\[
+v(x,0)=0
+\]
+because $f(x)$ is real. Step <1>2 therefore gives
+\[
+u_x(0,0)=0,
+\qquad
+v_x(0,0)=0.
+\]
+
+Along the imaginary axis,
+\[
+v(0,y)=0
+\]
+because $f(iy)$ is real. Step <1>3 therefore gives
+\[
+u_y(0,0)=0,
+\qquad
+v_y(0,0)=0.
+\]
+:::
+
+<1>5. Hence the Cauchy--Riemann equations hold at the origin:
+\[
+u_x(0,0)=v_y(0,0),
+\qquad
+u_y(0,0)=-v_x(0,0).
+\]
+
+::: {.proof}
+By step <1>4, both sides of both equations are zero.
+:::
+
+<1>6. Nevertheless, $f$ is not continuous at the origin.
+
+::: {.proof}
+Approach the origin along the ray
+\[
+z
+=
+r e^{i\pi/4},
+\qquad
+r>0.
+\]
+Then
+\[
+z^4
+=
+r^4e^{i\pi}
+=
+-r^4.
+\]
+Therefore
+\[
+-\frac1{z^4}
+=
+\frac1{r^4},
+\]
+and hence
+\[
+f\left(re^{i\pi/4}\right)
+=
+e^{1/r^4}
+\longrightarrow
++\infty
+\qquad
+(r\downarrow0).
+\]
+But
+\[
+f(0)=0.
+\]
+Thus $f$ is not continuous at $0$.
+:::
+
+<1>7. Consequently $f$ is not complex differentiable at the origin and
+is not analytic on $\mathbb C$.
+
+::: {.proof}
+Complex differentiability at a point implies continuity at that point.
+Step <1>6 shows that $f$ is not continuous at $0$, so it cannot be complex
+differentiable there.
+
+Hence $f$ is not holomorphic on any neighborhood of $0$ and therefore is
+not analytic on all of $\mathbb C$.
+:::
+
+<1>8. The example is possible because the Cauchy--Riemann equations at a
+point, by themselves, do not imply complex differentiability there.
+
+::: {.proof}
+Steps <1>1 and <1>5 show that the Cauchy--Riemann equations hold at every
+point. Step <1>7 shows that complex differentiability nevertheless fails at
+$0$.
+
+The usual converse theorem requires additional regularity, for example
+continuity of the first partial derivatives in a neighborhood. Those
+hypotheses fail here dramatically because the function itself is not
+continuous at the origin.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 explains exactly why there is no contradiction.
+:::
+:::

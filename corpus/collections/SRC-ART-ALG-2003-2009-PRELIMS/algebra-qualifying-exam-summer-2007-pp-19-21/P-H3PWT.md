@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the finite-dimensional span is a field without separability assumptions, both degree divisibilities, and the distinct cubic fields giving intersection Q and compositum degree six."
 ---
-
 ::: {.problem}
 a. Let $F$ be a field, and let $K, L$ be finite dimensional extensions of $F$ inside a common overfield.
 Suppose $[K : F]$ and $[L : F]$ are relatively prime.
@@ -71,7 +70,7 @@ $[KL:F]=[KL:K]m\leq mn$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Coprimeness forces equality, proving part (a).
 
@@ -86,7 +85,7 @@ inequality is step [](#s1){.pf-ref}. Thus $[KL:F]=mn$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 For part (b), take two different cubic subfields of the
 splitting field of $x^3-2$.
@@ -121,6 +120,12 @@ $$
 This verifies both conditions in part (b).
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and step [](#s3){.pf-ref} provides the counterexample required in part (b).
 
 :::
 

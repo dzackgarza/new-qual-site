@@ -23,3 +23,197 @@ f(z)=x^2+i y^2,
 \]
 Show that $f$ is differentiable at every point on the line $y=x$ but is nowhere analytic.
 :::
+
+::: {.solution}
+Write
+\[
+f=u+iv,
+\qquad
+u(x,y)=x^2,
+\qquad
+v(x,y)=y^2.
+\]
+
+<1>1. The first partial derivatives are
+\[
+u_x=2x,
+\qquad
+u_y=0,
+\qquad
+v_x=0,
+\qquad
+v_y=2y.
+\]
+
+::: {.proof}
+Differentiate the polynomial functions
+\[
+u(x,y)=x^2
+\]
+and
+\[
+v(x,y)=y^2.
+\]
+All partial derivatives are continuous everywhere.
+:::
+
+<1>2. The Cauchy--Riemann equations are
+\[
+u_x=v_y
+\qquad\text{and}\qquad
+u_y=-v_x.
+\]
+For this function they reduce to
+\[
+2x=2y
+\qquad\text{and}\qquad
+0=0.
+\]
+
+::: {.proof}
+Substitute the derivatives from step <1>1 into the Cauchy--Riemann
+equations.
+:::
+
+<1>3. Hence the Cauchy--Riemann equations hold exactly at the points
+\[
+(x,y)
+\]
+with
+\[
+y=x.
+\]
+
+::: {.proof}
+The second equation is automatic.
+The first is equivalent to
+\[
+x=y.
+\]
+:::
+
+<1>4. The function $f$ is complex differentiable at every point on the line
+\[
+y=x.
+\]
+
+::: {.proof}
+The partial derivatives of $u$ and $v$ are continuous everywhere by
+step <1>1.
+Therefore the standard Cauchy--Riemann differentiability theorem applies:
+at every point where the Cauchy--Riemann equations hold, $f$ is complex
+differentiable.
+
+By step <1>3, this includes every point of the line
+\[
+y=x.
+\]
+:::
+
+<1>5. At a point
+\[
+z=x+ix
+\]
+on that line,
+\[
+\boxed{
+f'(z)=2x.
+}
+\]
+
+::: {.proof}
+At a complex-differentiability point,
+\[
+f'
+=
+u_x+i v_x.
+\]
+Using step <1>1,
+\[
+f'(z)
+=
+2x+i\cdot0
+=
+2x.
+\]
+:::
+
+<1>6. The function is not complex differentiable at any point off the line
+\[
+y=x.
+\]
+
+::: {.proof}
+If
+\[
+x\ne y,
+\]
+then step <1>2 gives
+\[
+u_x
+=
+2x
+\ne
+2y
+=
+v_y.
+\]
+The Cauchy--Riemann equations are necessary for complex differentiability,
+so $f$ cannot be complex differentiable there.
+:::
+
+<1>7. The line
+\[
+L
+=
+\{x+iy:y=x\}
+\]
+has empty interior in
+\[
+\mathbb C.
+\]
+
+::: {.proof}
+Every open disk centered at a point of $L$ contains points with
+\[
+y\ne x.
+\]
+Hence no nonempty open disk is contained in $L$.
+:::
+
+<1>8. The function $f$ is nowhere analytic.
+
+::: {.proof}
+Suppose $f$ were analytic at some point
+\[
+z_0.
+\]
+Then there would be an open neighborhood
+\[
+U\ni z_0
+\]
+on which $f$ is holomorphic, hence complex differentiable at every point of
+$U$.
+
+By step <1>6, every complex-differentiability point lies on
+\[
+L.
+\]
+Thus
+\[
+U\subseteq L,
+\]
+contradicting step <1>7 because $U$ is nonempty and open.
+Therefore no point has a neighborhood on which $f$ is analytic.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves differentiability along
+\[
+y=x,
+\]
+and step <1>8 proves that $f$ is nowhere analytic.
+:::
+:::

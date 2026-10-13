@@ -18,7 +18,6 @@ audit:
   by: muse-spark-1.2
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Let $G$ be a finite group.
 For any $x \in G$ $$Z_G(x) = \{g \in G : gxg^{-1} = x\}$$ is the centralizer of $x$ in $G$ and $$x^G = \{gxg^{-1} : g \in G\}$$ is the conjugacy class of $x$ in $G$.
@@ -36,15 +35,29 @@ c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $|x^H
 
 ::: {.pf-step #s1}
 
-In part (a), $|x^G|=[G:Z_G(x)]$.
+For part (a),
+$$
+\boxed{\lvert x^G\rvert=[G:Z_G(x)]}.
+$$
 
 ::: pf-proof
 
-The map $\Phi\colon G/Z_G(x)\to x^G$, $gZ_G(x)\mapsto gxg^{-1}$, is well defined and injective, because
+Let $G$ act on itself by conjugation:
 $$
-g_1Z_G(x)=g_2Z_G(x)\iff g_2^{-1}g_1\in Z_G(x)\iff (g_2^{-1}g_1)x(g_2^{-1}g_1)^{-1}=x\iff g_1xg_1^{-1}=g_2xg_2^{-1}.
+g\cdot y=gyg^{-1}.
 $$
-It is surjective by the definition of $x^G$. Hence $|x^G|=\abs{G/Z_G(x)}=[G:Z_G(x)]$.
+The orbit of $x$ is exactly $x^G$, and its stabilizer is exactly
+$Z_G(x)$. The orbit-stabilizer theorem therefore gives
+$$
+\lvert x^G\rvert=[G:Z_G(x)].
+$$
+Equivalently, the map
+$$
+G/Z_G(x)\longrightarrow x^G,
+\qquad
+gZ_G(x)\longmapsto gxg^{-1},
+$$
+is a bijection.
 
 :::
 
@@ -52,13 +65,21 @@ It is surjective by the definition of $x^G$. Hence $|x^G|=\abs{G/Z_G(x)}=[G:Z_G(
 
 ::: {.pf-step #s2}
 
-In part (b), $Z_H(x)=H\cap Z_G(x)$.
+For part (b),
+$$
+\boxed{Z_H(x)=H\cap Z_G(x)}.
+$$
 
 ::: pf-proof
 
-$Z_H(x)=\{h\in H: hxh^{-1}=x\}=\{g\in G: g\in H\text{ and }gxg^{-1}=x\}=H\cap Z_G(x)$.
-
-Assume for part (c) that $[G:H]=2$ and $x\in H$.
+For $h\in H$,
+$$
+h\in Z_H(x)
+\iff hxh^{-1}=x
+\iff h\in Z_G(x).
+$$
+Thus the elements of $Z_H(x)$ are precisely those elements of $H$ that
+also lie in $Z_G(x)$.
 
 :::
 
@@ -66,16 +87,33 @@ Assume for part (c) that $[G:H]=2$ and $x\in H$.
 
 ::: {.pf-step #s3}
 
-$2\,|x^H|=|x^G|\,[Z_G(x):Z_H(x)]$.
+Under the hypotheses of part (c),
+$$
+2\lvert x^H\rvert
+=\lvert x^G\rvert[Z_G(x):Z_H(x)].
+$$
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref} applied in $G$ and in $H$, $|x^G|=[G:Z_G(x)]$ and $|x^H|=[H:Z_H(x)]$.
-Since $Z_H(x)\le H\le G$ and $Z_H(x)\le Z_G(x)\le G$ by step [](#s2){.pf-ref}, multiplicativity of indices gives
+By step [](#s1){.pf-ref}, applied in $G$ and in $H$,
 $$
-[G:Z_H(x)]=[G:H]\,[H:Z_H(x)]=2\,|x^H|,\qquad
-[G:Z_H(x)]=[G:Z_G(x)]\,[Z_G(x):Z_H(x)]=|x^G|\,[Z_G(x):Z_H(x)].
+\lvert x^G\rvert=[G:Z_G(x)],
+\qquad
+\lvert x^H\rvert=[H:Z_H(x)].
 $$
+Because $Z_H(x)\le H\le G$ and $[G:H]=2$,
+$$
+[G:Z_H(x)]
+=2[H:Z_H(x)]
+=2\lvert x^H\rvert.
+$$
+By step [](#s2){.pf-ref}, $Z_H(x)\le Z_G(x)\le G$, so also
+$$
+[G:Z_H(x)]
+=[G:Z_G(x)][Z_G(x):Z_H(x)]
+=\lvert x^G\rvert[Z_G(x):Z_H(x)].
+$$
+Equating the two expressions proves the claim.
 
 :::
 
@@ -83,12 +121,47 @@ $$
 
 ::: {.pf-step #s4}
 
-$[Z_G(x):Z_H(x)]\in\{1,2\}$.
+One has
+$$
+[Z_G(x):Z_H(x)]\in\{1,2\}.
+$$
 
 ::: pf-proof
 
-A subgroup of index $2$ is normal, so $HZ_G(x)$ is a subgroup of $G$ containing $H$.
-By step [](#s2){.pf-ref} and the second isomorphism theorem, $[Z_G(x):Z_H(x)]=[Z_G(x):H\cap Z_G(x)]=[HZ_G(x):H]$, which divides $[G:H]=2$.
+Since $[G:H]=2$, the subgroup $H$ is normal in $G$. By step [](#s2){.pf-ref} and the
+second isomorphism theorem,
+$$
+[Z_G(x):Z_H(x)]
+=[Z_G(x):Z_G(x)\cap H]
+=[HZ_G(x):H].
+$$
+The subgroup $HZ_G(x)$ lies between $H$ and $G$. Hence
+$$
+[HZ_G(x):H]\mid[G:H]=2,
+$$
+so the index is either $1$ or $2$.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+Therefore either
+$$
+\boxed{\lvert x^H\rvert=\lvert x^G\rvert}
+$$
+or
+$$
+\boxed{\lvert x^H\rvert=\frac12\lvert x^G\rvert}.
+$$
+
+::: pf-proof
+
+Insert the two possibilities from step [](#s4){.pf-ref} into the identity of step
+step [](#s3){.pf-ref}. If the centralizer index is $2$, then
+$2\lvert x^H\rvert=2\lvert x^G\rvert$. If it is $1$, then
+$2\lvert x^H\rvert=\lvert x^G\rvert$.
 
 :::
 
@@ -96,7 +169,7 @@ By step [](#s2){.pf-ref} and the second isomorphism theorem, $[Z_G(x):Z_H(x)]=[Z
 
 ::: pf-qed
 
-By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, if $[Z_G(x):Z_H(x)]=2$ then $|x^H|=|x^G|$, and if $[Z_G(x):Z_H(x)]=1$ then $|x^H|=\tfrac12|x^G|$. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} answer parts (a) and (b).
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s5){.pf-ref} prove parts (a), (b), and (c), respectively.
 
 :::
 

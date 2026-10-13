@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked every Sylow-count possibility and proved both nontriviality and properness of the action kernel."
 ---
-
 ::: {.problem}
 Let $G$ be a group of order $p^k m$, where $p$ is a prime not dividing $m$.
 
@@ -38,7 +37,7 @@ Let $G$ be a group of order $p^k m$, where $p$ is a prime not dividing $m$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 A Sylow $p$-subgroup is a subgroup of order $p^k$.
 Sylow's theorems assert that such subgroups exist, that every
@@ -53,7 +52,7 @@ preserves its order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 A group of order $132=2^2\cdot3\cdot11$ has a nontrivial
 proper normal subgroup.
@@ -90,6 +89,12 @@ Every case has produced a nontrivial proper normal subgroup,
 so no group of order $132$ is simple.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers parts (a) and (b), and step [](#s2){.pf-ref} proves part (c).
 
 :::
 

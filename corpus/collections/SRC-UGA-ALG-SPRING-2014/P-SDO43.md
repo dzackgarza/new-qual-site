@@ -28,29 +28,21 @@ b. Show that an injective $R\dash$linear endomorphism of $R^n$ need not be surje
 :::
 
 ::: {.solution}
-For (a), let $A\in M_n(R)$ be the matrix of $T$ in the standard basis. Because $T$ is surjective, for each standard basis vector $e_i$ choose $v_i\in R^n$ with $T(v_i)=e_i$. Let $B$ be the matrix whose $i$th column is $v_i$. Then
-\[
-AB=I.
-\]
-Taking determinants in the commutative ring $R$ gives
-\[
-\det(A)\det(B)=1,
-\]
-so $\det(A)$ is a unit. The adjugate identity
-\[
-A\operatorname{adj}(A)=\det(A)I
-\]
-therefore shows that
-\[
-A^{-1}=\det(A)^{-1}\operatorname{adj}(A).
-\]
-Thus $T$ is invertible, in particular injective.
+<1>1. Every surjective $R$-linear endomorphism $T:R^n\to R^n$ is injective.
 
-For (b), take $R=\mathbb Z$, $n=1$, and
-\[
-T:\mathbb Z\to\mathbb Z,
-\qquad
-T(m)=2m.
-\]
-This map is injective, but it is not surjective because $1$ is not in its image.
+::: {.proof}
+Let $A\in M_n(R)$ represent $T$. For each standard basis vector $e_i$, surjectivity supplies a vector $v_i$ such that $Av_i=e_i$. Form the matrix $B$ with columns $v_i$. Then $AB=I_n$. Taking determinants in the commutative ring $R$ gives $\det(A)\det(B)=1$, so $\det(A)$ is a unit. The adjugate identity $A\operatorname{adj}(A)=\det(A)I_n$ then supplies an inverse $\det(A)^{-1}\operatorname{adj}(A)$ for $A$. Thus $T$ is an isomorphism, in particular injective.
+:::
+
+<1>2. An injective endomorphism of a finite-rank free module need not be surjective.
+
+::: {.proof}
+Take $R=\mathbb Z$ and $n=1$. Multiplication by $2$ defines an injective endomorphism $T:\mathbb Z\to\mathbb Z$ because $2m=0$ implies $m=0$. It is not surjective because $1\notin 2\mathbb Z$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 establish parts (a) and (b), respectively.
+:::
 :::

@@ -30,3 +30,56 @@ is continuous everywhere, what is the value of $k$?
 (D) $-\frac{1}{3}$
 (E) $-1$
 :::
+
+::: {.solution}
+<1>1. For $x\ne2$,
+$$
+f(x)=\frac{x-4}{x^2+2}.
+$$
+
+::: {.proof}
+Factor numerator and denominator:
+$$
+x^2-6x+8=(x-2)(x-4)
+$$
+and
+$$
+x^3-2x^2+2x-4
+=x^2(x-2)+2(x-2)
+=(x-2)(x^2+2).
+$$
+Cancelling the nonzero factor $x-2$ gives the displayed formula.
+:::
+
+<1>2. Continuity at $x=2$ forces
+$$
+k=-\frac13.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\lim_{x\to2}f(x)
+=\lim_{x\to2}\frac{x-4}{x^2+2}
+=\frac{-2}{6}
+=-\frac13.
+$$
+For continuity at $2$, the value $f(2)=k$ must equal this limit.
+:::
+
+<1>3. Therefore
+$$
+\boxed{k=-\frac13},
+$$
+so the answer is (D).
+
+::: {.proof}
+This is exactly the value forced by step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the unique value making the function continuous everywhere.
+:::
+:::

@@ -13,7 +13,7 @@ topics:
 
 ## Definitions
 
-A bilinear form $b$ on a finite-dimensional vector space $V$ has a [[D-RG5FO|Gram matrix]] $G=(b(e_i,e_j))_{i,j}$ in each basis $(e_i)$ of $V$, and $b$ is [[D-5BR4D|nondegenerate]] if and only if $G$ is invertible; for a nondegenerate symmetric form and a subspace $W\subseteq V$, $\dim W+\dim W^\perp=\dim V$.
+A bilinear form $b$ on a finite-dimensional vector space $V$ has a [[D-H4TDM|Gram matrix]] $G=(b(e_i,e_j))_{i,j}$ in each basis $(e_i)$ of $V$, and $b$ is [[D-5BR4D|nondegenerate]] if and only if $G$ is invertible; for a nondegenerate symmetric form and a subspace $W\subseteq V$, $\dim W+\dim W^\perp=\dim V$.
 A complex matrix is [[D-BSUV4|normal]] if it commutes with its conjugate transpose, and normal matrices are exactly the unitarily diagonalizable ones.
 Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley decomposition $T=T_s+T_n$ with $T_s$ [[D-B4VTH|semisimple]], $T_n$ [[D-HGMOW|nilpotent]], and $T_sT_n=T_nT_s$; for invertible $T$, the multiplicative form is $T=T_sT_u$ with $T_u=I+\inverseof{T_s} T_n$ [[D-23FX7|unipotent]].
 

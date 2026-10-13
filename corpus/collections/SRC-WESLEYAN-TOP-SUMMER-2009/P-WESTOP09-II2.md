@@ -18,3 +18,129 @@ Compute the fundamental group of each space:
 3. $L(p,q)\vee K$, where $K$ is the Klein bottle;
 4. the $1$-skeleton of the standard $3$-simplex $\Delta^3$.
 :::
+
+::: {.solution}
+<1>1. For the Möbius-band product,
+\[
+\boxed{\pi_1(M\times\mathbb{RP}^{\infty})
+\cong \mathbb Z\times\mathbb Z/2}.
+\]
+
+::: {.proof}
+The Möbius band deformation retracts onto its core circle, so
+\[
+\pi_1(M)\cong\pi_1(S^1)\cong\mathbb Z.
+\]
+The universal cover
+\[
+S^\infty\longrightarrow\mathbb{RP}^{\infty}
+\]
+has deck group $\mathbb Z/2$, and $S^\infty$ is contractible, so
+\[
+\pi_1(\mathbb{RP}^{\infty})\cong\mathbb Z/2.
+\]
+The fundamental group of a product of path-connected spaces is the direct
+product of their fundamental groups. Therefore
+\[
+\pi_1(M\times\mathbb{RP}^{\infty})
+\cong\mathbb Z\times\mathbb Z/2.
+\]
+:::
+
+<1>2. For the product with $\mathbb{CP}^2$,
+\[
+\boxed{
+\pi_1(\Sigma_2\times\mathbb{CP}^2)
+\cong
+\left\langle
+a_1,b_1,a_2,b_2
+\ \middle|\
+[a_1,b_1][a_2,b_2]=1
+\right\rangle }.
+\]
+
+::: {.proof}
+The standard CW decomposition of $\mathbb{CP}^2$ has one cell in dimensions
+$0$, $2$, and $4$. Its $2$-skeleton is $S^2$, and attaching a $4$-cell does
+not change the fundamental group. Hence
+\[
+\pi_1(\mathbb{CP}^2)=\{1\}.
+\]
+The product theorem gives
+\[
+\pi_1(\Sigma_2\times\mathbb{CP}^2)
+\cong
+\pi_1(\Sigma_2)\times \{1\}
+\cong
+\pi_1(\Sigma_2).
+\]
+The usual polygonal presentation of the closed orientable genus-$2$ surface
+gives
+\[
+\pi_1(\Sigma_2)
+\cong
+\left\langle
+a_1,b_1,a_2,b_2
+\ \middle|\
+[a_1,b_1][a_2,b_2]=1
+\right\rangle.
+\]
+:::
+
+<1>3. For the wedge of the lens space and Klein bottle,
+\[
+\boxed{
+\pi_1(L(p,q)\vee K)
+\cong
+\mathbb Z/p *
+\left\langle a,b\mid aba^{-1}=b^{-1}\right\rangle }.
+\]
+
+::: {.proof}
+The universal cover of the lens space $L(p,q)$ is $S^3$, with cyclic deck
+group of order $p$, so
+\[
+\pi_1(L(p,q))\cong\mathbb Z/p.
+\]
+The Klein bottle has the standard presentation
+\[
+\pi_1(K)\cong
+\left\langle a,b\mid aba^{-1}=b^{-1}\right\rangle.
+\]
+The wedge point has a contractible neighborhood in each CW complex, so the
+Seifert--van Kampen theorem gives the free product
+\[
+\pi_1(L(p,q)\vee K)
+\cong
+\pi_1(L(p,q))*\pi_1(K),
+\]
+which is the displayed group.
+:::
+
+<1>4. If $G$ is the $1$-skeleton of $\Delta^3$, then
+\[
+\boxed{\pi_1(G)\cong F_3},
+\]
+the free group on three generators.
+
+::: {.proof}
+The graph $G$ is the complete graph on the four vertices of the tetrahedron.
+Thus it has
+\[
+V=4,\qquad E=6.
+\]
+Choose a spanning tree. It contains $V-1=3$ edges. Collapsing the tree to a
+point is a homotopy equivalence of the graph and leaves
+\[
+E-(V-1)=6-3=3
+\]
+independent loop edges. Hence $G$ is homotopy equivalent to a wedge of three
+circles, whose fundamental group is $F_3$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 through <1>4 compute the four requested fundamental groups.
+:::
+:::

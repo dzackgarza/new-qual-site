@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Verified closure under subtraction and multiplication directly from commutation with every ring element."
 ---
-
 ::: {.problem}
 Prove that the center of a ring is a subring.
 :::
@@ -82,7 +81,7 @@ Hence $ab\in Z(R)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Therefore $Z(R)$ is a subring of $R$.
 
@@ -97,6 +96,12 @@ If $R$ has an identity and subrings are required to share it, then
 $1r=r=r1$ for every $r$, so $1\in Z(R)$ as well.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

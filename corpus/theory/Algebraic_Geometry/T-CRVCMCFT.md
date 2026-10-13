@@ -25,22 +25,26 @@ prompts:
 ---
 
 ::: {.theorem title="Complex multiplication and class field theory"}
-Let $E/\CC$ have complex multiplication by the order $R$ of discriminant $D$ in the imaginary quadratic field $K$, and let $h(R) \definedas \abs{\Pic(R)}$ be the class number of that order.
+Let $E/\CC$ have complex multiplication by the order $R$ of discriminant $D$ in the imaginary quadratic field $K$, and let
+$$
+h(R)\coloneqq\abs{\Pic(R)}
+$$
+be the class number of that order.
 Then:
 
 - $j(E)$ is an algebraic integer;
 
 - $[K(j(E)) : K] = h(R)$, and $K(j(E))/K$ is abelian, with
-  \[
-  \Gal\big( K(j(E)) / K \big) \iso \Pic(R) ;
-  \]
+  $$
+  \Gal\bigl(K(j(E))/K\bigr)\cong\Pic(R);
+  $$
 
 - $j(E) \in \ZZ$ if and only if $h(R) = 1$.
 
 There are exactly thirteen orders with $h(R) = 1$, so exactly thirteen values of $j$ arise this way, namely those of discriminant
-\[
+$$
 D \in \theset{ -3,\ -4,\ -7,\ -8,\ -11,\ -12,\ -16,\ -19,\ -27,\ -28,\ -43,\ -67,\ -163 } .
-\]
+$$
 :::
 
 ::: {.remark title="Thirteen orders, nine fields"}
@@ -51,12 +55,12 @@ That is the Baker--Heegner--Stark theorem, and it is a statement about maximal o
 
 **Thirteen** is the number of imaginary quadratic *orders* of class number one, and an order need not be maximal.
 Beyond the nine maximal ones there are four more, each a non-maximal order of conductor $f$ inside a field already on the list:
-\[
+$$
 D = -12 \ (f=2 \text{ in } \QQ(\sqrt{-3})), \quad
 -16 \ (f=2 \text{ in } \QQ(i)), \quad
 -27 \ (f=3 \text{ in } \QQ(\sqrt{-3})), \quad
 -28 \ (f=2 \text{ in } \QQ(\sqrt{-7})) .
-\]
+$$
 Endomorphism rings of elliptic curves range over all orders, not just maximal ones, so the relevant count for CM $j$-invariants is thirteen.
 The $\tau = 2i$ curve is exactly the $D = -16$ entry, and its $j$-invariant is the rational integer $66^3 = 287496$.
 For example, $D=-4$ gives $j=1728$, $D=-3$ gives $j=0$, and $D=-163$ gives $j=-640320^3$, which explains the near-integrality of $e^{\pi\sqrt{163}}$.
@@ -65,11 +69,19 @@ For example, $D=-4$ gives $j=1728$, $D=-3$ gives $j=0$, and $D=-163$ gives $j=-6
 ::: {.remark}
 What the theorem buys is a bridge in the direction that was blocked.
 CM is immediate from an imaginary-quadratic lattice parameter $\tau$, while recovering such a parameter from an algebraic equation is transcendental.
-The class field theory statement replaces that passage by an arithmetic test on $j$ itself: a transcendental or non-integral $j$ rules out CM by a class-number-one order immediately.
-For $y^2=x(x-1)(x-2)$, the value $j=\tfrac{2^6\cdot7^3}{3^2}$ is not an algebraic integer, hence cannot be a CM $j$-invariant.
+The class field theory statement replaces that passage by an arithmetic test on $j$ itself: every CM $j$-invariant is an algebraic integer, so a transcendental or non-integral value of $j$ rules out complex multiplication.
+For the Legendre curve
+$$
+y^2=x(x-1)(x-3),
+$$
+one has
+$$
+j=\frac{2^6\cdot7^3}{3^2},
+$$
+which is not an algebraic integer; hence this elliptic curve does not have complex multiplication.
 
 The Galois statement is the reason the subject is called complex multiplication and not just "curves with extra endomorphisms": $K(j)$ is the ring class field of $R$, and for $R = \OO_K$ it is the Hilbert class field, the maximal unramified abelian extension of $K$.
-So the $j$-invariants of CM curves generate the abelian extensions of an imaginary quadratic field, which is Kronecker's *Jugendtraum* for that case: the values of a transcendental function at special points play the role that roots of unity play for $\QQ$.
+Thus singular moduli generate the ring class fields of imaginary quadratic orders. Obtaining arbitrary abelian extensions of $K$ requires additional special values, for example Weber-function values at torsion points; the $j$-invariant alone does not generate every abelian extension of $K$.
 The isomorphism $\Gal \iso \Pic(R)$ is induced by the action of the class group on lattices --- a class $[\mathfrak{a}]$ sends $\CC/\Lambda$ to $\CC/\mathfrak{a}^{-1}\Lambda$, which is another curve with the same $R$, and this action is simply transitive on the isomorphism classes.
 That is also why $j$ has exactly $h(R)$ conjugates: they are the $j$-invariants of the $h(R)$ curves in one orbit.
 :::

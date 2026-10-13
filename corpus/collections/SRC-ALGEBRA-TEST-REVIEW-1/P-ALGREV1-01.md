@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Distinguished the groups by cardinality: Q* is countable while R* is uncountable."
 ---
-
 ::: {.problem}
 Prove or disprove that $\mathbb{Q}^*$ under multiplication is isomorphic to $\mathbb{R}^*$ under multiplication.
 :::
@@ -59,7 +58,7 @@ countable, a contradiction. Thus $\mathbb R^*$ is uncountable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Therefore no group isomorphism can exist.
 
@@ -73,6 +72,12 @@ $$
 $$
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

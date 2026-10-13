@@ -22,16 +22,20 @@ prompts:
 ::: {.theorem title="Hard Lefschetz"}
 Let $X$ be a smooth projective complex variety of dimension $n$, and let $\omega \in H^2(X, \QQ)$ be the class of a hyperplane section.
 For every $0 \leq k \leq n$, cup product with $\omega^k$ is an isomorphism
-\[
+$$
 L^k \colon H^{n-k}(X, \QQ) \xrightarrow{\ \sim\ } H^{n+k}(X, \QQ) .
-\]
+$$
 :::
 
 ::: {.corollary}
-The Betti numbers satisfy $b_{i-2} \leq b_i$ for $i \leq n$, and $H^\bullet(X, \QQ)$ has the \dfn{Lefschetz decomposition} into primitive classes $P^{n-k} = \ker\big(L^{k+1} \colon H^{n-k} \to H^{n+k+2}\big)$:
-\[
+The Betti numbers satisfy $b_{i-2} \leq b_i$ for $i \leq n$. If
+$$
+P^{n-k}\coloneqq\ker\bigl(L^{k+1}\colon H^{n-k}(X,\QQ)\to H^{n+k+2}(X,\QQ)\bigr),
+$$
+then the Lefschetz decomposition is
+$$
 H^m(X, \QQ) = \bigoplus_{j \geq 0} L^j P^{m-2j} .
-\]
+$$
 :::
 
 ::: {.remark}

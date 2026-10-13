@@ -31,5 +31,5 @@ For a multiplicative subset $T\subseteq A$, the map $A\to \inverseof{T} A$ is in
 When $A$ is a domain, $S = A \smz$ and $\inverseof{S} A$ is the fraction field.
 
 For $X$ integral with function field $K(X)$, $\mck_X$ is the constant sheaf $K(X)$.
-A Cartier divisor on $X$ is a global section of $\unitsof{\mck_X}/\unitsof{\OO_X}$ ([[D-5PQ5W]]).
+A Cartier divisor on $X$ is a global section of $\units{\mck_X}/\units{\OO_X}$ ([[D-5PQ5W]]).
 :::

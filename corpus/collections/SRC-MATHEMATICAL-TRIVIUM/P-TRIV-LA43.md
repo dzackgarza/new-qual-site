@@ -28,3 +28,178 @@ Find out if these lines are
 
 (b) crossing each other at some point.
 :::
+
+::: {.solution}
+<1>1. A direction vector for $l_1$ is the cross product of the normals of its
+two defining planes:
+$$
+d_1
+=
+(3,2,5)\times(-1,2,3)
+=
+(-4,-14,8).
+$$
+
+::: {.proof}
+The direction of the intersection line is perpendicular to both plane normals.
+Computing the cross product gives the displayed vector.
+:::
+
+<1>2. A direction vector for $l_2$ is
+$$
+d_2
+=
+(4,-6,7)\times(5,3,-8)
+=
+(27,67,42).
+$$
+
+::: {.proof}
+As in step <1>1, take the cross product of the two plane normals.
+:::
+
+<1>3. The lines are not parallel.
+
+::: {.proof}
+The direction vectors from steps <1>1--<1>2 are not scalar multiples. For
+example,
+$$
+\frac{27}{-4}
+\neq
+\frac{67}{-14}.
+$$
+Hence the directions are distinct.
+:::
+
+<1>4. A parametrization of $l_1$ is
+$$
+\boxed{
+l_1(t)
+=
+\left(
+-\frac t2,
+\frac12-\frac{7t}{4},
+t
+\right),
+\qquad
+t\in\mathbb R.
+}
+$$
+
+::: {.proof}
+Set $z=t$. The two equations for $l_1$ are
+$$
+3x+2y+5t=1,
+$$
+$$
+-x+2y+3t=1.
+$$
+Subtracting gives
+$$
+4x+2t=0,
+$$
+so $x=-t/2$. Substituting back gives
+$$
+y=\frac12-\frac{7t}{4}.
+$$
+:::
+
+<1>5. A parametrization of $l_2$ is
+$$
+\boxed{
+l_2(u)
+=
+\left(
+\frac{9u}{14}+\frac27,
+\frac{67u}{42}+\frac{11}{21},
+u
+\right),
+\qquad
+u\in\mathbb R.
+}
+$$
+
+::: {.proof}
+Set $z=u$ and solve
+$$
+4x-6y+7u=-2,
+$$
+$$
+5x+3y-8u=3.
+$$
+Elimination gives the displayed formulas for $x$ and $y$.
+:::
+
+<1>6. If the two lines intersect, then their parameters must satisfy
+$$
+t=u.
+$$
+
+::: {.proof}
+The third coordinate of $l_1(t)$ is $t$, while that of $l_2(u)$ is $u$.
+Equality of the two points therefore forces $t=u$.
+:::
+
+<1>7. Equality of the first coordinates then forces
+$$
+t=-\frac14.
+$$
+
+::: {.proof}
+Using step <1>6, solve
+$$
+-\frac t2
+=
+\frac{9t}{14}+\frac27.
+$$
+Multiplying by $14$ gives
+$$
+-7t=9t+4,
+$$
+so
+$$
+t=-\frac14.
+$$
+:::
+
+<1>8. At $t=u=-1/4$, the two $y$-coordinates are different:
+$$
+\frac12-\frac{7(-1/4)}4
+=
+\frac{15}{16},
+$$
+while
+$$
+\frac{67(-1/4)}{42}+\frac{11}{21}
+=
+\frac18.
+$$
+
+::: {.proof}
+Direct substitution gives the two values.
+:::
+
+<1>9. Therefore the two lines do not intersect.
+
+::: {.proof}
+Any intersection point would have to satisfy steps <1>6--<1>7, but step
+<1>8 shows the resulting points are distinct.
+:::
+
+<1>10. Hence
+$$
+\boxed{
+\text{$l_1$ and $l_2$ are neither parallel nor intersecting; they are skew.}
+}
+$$
+
+::: {.proof}
+Step <1>3 rules out parallelism and step <1>9 rules out intersection.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 answers parts (a) and (b).
+:::
+:::

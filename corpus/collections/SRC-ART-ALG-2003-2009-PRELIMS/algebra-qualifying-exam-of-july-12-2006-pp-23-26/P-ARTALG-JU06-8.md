@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked that any field isomorphism fixes the prime field and excluded both possible coefficient cases by parity of prime exponents."
 ---
-
 ::: {.problem}
 Show that $\mathbb{Q}(\sqrt{2})$ and $\mathbb{Q}(\sqrt{3})$ are not isomorphic.
 :::
@@ -41,7 +40,8 @@ Every field isomorphism between these fields fixes $\mathbb Q$.
 A field isomorphism sends $1$ to $1$, hence fixes every integer.
 It preserves inverses, so it also fixes every quotient of integers
 with nonzero denominator. Thus it fixes the prime subfield
-$\mathbb Q$ pointwise.
+$\mathbb Q$ pointwise, even though this was not separately required
+in the question.
 
 :::
 
@@ -75,7 +75,7 @@ is no such element.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The fields are not isomorphic.
 
@@ -86,6 +86,12 @@ existed, step [](#s1){.pf-ref} would give
 $\sigma(\sqrt2)^2=\sigma(2)=2$. This contradicts step [](#s2){.pf-ref}.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

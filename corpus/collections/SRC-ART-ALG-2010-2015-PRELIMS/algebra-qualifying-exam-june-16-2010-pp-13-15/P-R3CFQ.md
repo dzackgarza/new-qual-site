@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the cyclic basis and its determinant, AP=PC by exact matrix arithmetic, the characteristic and minimal polynomial, and the rank obstruction to similarity of the second matrix."
 ---
-
 ::: {.problem}
 Let $A$ be the following matrix (over $\mathbb{Q}$) $$\begin{pmatrix} -2 & 1 & 1 \\ -4 & 3 & 1 \\ -6 & 6 & -1 \end{pmatrix}.$$ Find the rational canonical form for $A$.
 Give a $3 \times 3$ matrix $B$ which has the same characteristic polynomial as $A$, but which is not similar to $A$.
@@ -44,7 +43,7 @@ $$
 ::: {.pf-step #s1}
 
 The vector $v=(1,0,0)^{\mathsf T}$ is cyclic for $A$,
-and $P^{-1}AP=C$ for $P=(v\ Av\ A^2v)$.
+and $P^{-1}AP=C$ for the matrix $P$ below.
 
 ::: pf-proof
 
@@ -70,7 +69,7 @@ so $P^{-1}AP=C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The matrix $C$ is the rational canonical form, with
 single invariant factor
@@ -91,7 +90,7 @@ $v,Av,A^2v$. Here $f(A)v=0$ is the displayed identity
 for $A^3v$. Thus the kernel is exactly $(f)$, establishing
 the single invariant factor and the asserted rational form.
 
-Expanding the determinant of $tI-C$
+For completeness, expanding the determinant of $tI-C$
 gives $t(t^2-3)-2=t^3-3t-2$. Similarity therefore gives
 $\chi_A=f$. The cyclic-basis argument also proves that
 the minimal polynomial has degree three and equals $f$.
@@ -100,7 +99,7 @@ the minimal polynomial has degree three and equals $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The matrix $B$ has the same characteristic polynomial
 as $A$ but is not similar to $A$.
@@ -120,8 +119,17 @@ $(-1)(1)-(1)(-4)=3\ne0$.
 But $B+I=\operatorname{diag}(3,0,0)$ has rank one.
 If $A$ and $B$ were similar, adding the identity would
 preserve that similarity and hence their ranks, a contradiction.
+This proves the required failure of similarity.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the rational canonical form of $A$, and step
+[](#s3){.pf-ref} gives a matrix with the same characteristic polynomial that is not
+similar to $A$.
 
 :::
 

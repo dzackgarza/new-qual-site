@@ -32,8 +32,7 @@ In genus $3$, smooth plane quartics, an open subset of $\PP^{14}$, modulo $\PGL_
 
 [[PR-CRVAUT]]
 
-For $g\ge2$, $\Aut C$ is finite, so the $\PGL_3$-orbits of smooth plane quartics have dimension $8$.
-Every hyperelliptic curve has the hyperelliptic involution, so for every $g\ge2$ some curve of genus $g$ has a nontrivial automorphism, and $M_g$ is not a fine moduli space.
+Finiteness of $\Aut C$ is what makes the orbits in the quartic count $8$-dimensional, so the dimension comes out; nontriviality of $\Aut C$ on the hyperelliptic locus is what keeps any genus from having a fine moduli space.
 
 ## Smoothness and properness of the moduli stacks
 

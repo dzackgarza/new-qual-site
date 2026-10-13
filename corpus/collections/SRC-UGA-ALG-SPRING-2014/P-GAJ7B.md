@@ -31,49 +31,42 @@ d. Without appealing to the previous parts of the problem, show that $G$ contain
 :::
 
 ::: {.solution}
-The $3$-part of $9!$ is
-\[
-3^{\lfloor9/3\rfloor+\lfloor9/9\rfloor}=3^4,
-\]
-so a Sylow $3$-subgroup of $S_9$ has order $81$. Since all Sylow $3$-subgroups are conjugate, after relabeling the letters we may work with the standard one below.
+Write $a=(123)$, $b=(456)$, $c=(789)$, and $d=(147)(258)(369)$. By Sylow conjugacy it suffices to construct the asserted structure in the subgroup they generate.
 
-Set
-\[
-a=(123),\qquad b=(456),\qquad c=(789).
-\]
-These cycles are disjoint, so they commute and each has order $3$. Hence
-\[
-H=\langle a,b,c\rangle\cong C_3^3
-\]
-has order $27$.
+<1>1. The subgroup $H=\langle a,b,c\rangle$ is isomorphic to $C_3^3$.
 
-Let
-\[
-d=(147)(258)(369).
-\]
-Then $d$ has order $3$ and conjugation cyclically permutes the three generators:
-\[
-dad^{-1}=b,\qquad dbd^{-1}=c,\qquad dcd^{-1}=a.
-\]
-Thus $d$ normalizes $H$. Since $d\notin H$,
-\[
-G_0=\langle H,d\rangle=H\rtimes\langle d\rangle
-\]
-has order $27\cdot3=81$, so it is a Sylow $3$-subgroup. Any given Sylow $3$-subgroup $G$ is conjugate to $G_0$, and the conjugate of $H$ supplies the subgroup requested in (a). Also $H\triangleleft G_0$; equivalently, in any Sylow $G$, the corresponding subgroup has index $3$, hence is normal in the $3$-group $G$.
+::: {.proof}
+The three displayed $3$-cycles have disjoint supports, hence commute, have order three, and have independent powers. Therefore $H$ is their internal direct product, of order $27$.
+:::
 
-An abstract presentation is
+<1>2. The subgroup $H$ is normal in the Sylow $3$-subgroup $G_0=\langle a,b,c,d\rangle$.
+
+::: {.proof}
+Conjugation by $d$ cyclically permutes $a,b,c$: $dad^{-1}=b$, $dbd^{-1}=c$, and $dcd^{-1}=a$. Thus $d$ normalizes $H$, and so do the elements of $H$. Since $d$ has order three and $d\notin H$, the semidirect product $G_0=H\rtimes\langle d\rangle$ has order $81$. Legendre's formula gives $v_3(9!)=\lfloor9/3\rfloor+\lfloor9/9\rfloor=4$, so $G_0$ is Sylow. All other Sylow $3$-subgroups are conjugate to $G_0$, carrying $H$ to a normal subgroup with the same structure.
+:::
+
+<1>3. The group $G$ has a presentation, with all generators of order three,
 \[
-\begin{aligned}
-G\cong\langle a,b,c,d\mid {}&a^3=b^3=c^3=d^3=1,\\
+\boxed{\begin{aligned}
+\langle a,b,c,d\mid\;&a^3=b^3=c^3=d^3=1,\\
 &[a,b]=[a,c]=[b,c]=1,\\
 &dad^{-1}=b,\ dbd^{-1}=c,\ dcd^{-1}=a\rangle.
-\end{aligned}
+\end{aligned}}
 \]
-All generators have order $3$, and the displayed cycles realize them in $S_9$.
 
-For (d), independently of the preceding construction, the $9$-cycle
-\[
-z=(1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9)
-\]
-has order $9$. Its cyclic subgroup is a $3$-subgroup of $S_9$, hence lies in some Sylow $3$-subgroup $P$. Since all Sylow $3$-subgroups are conjugate, for the given $G$ there is $g\in S_9$ with $gPg^{-1}=G$. Then $gzg^{-1}\in G$ has order $9$.
+::: {.proof}
+The permutations $a,b,c,d$ satisfy the displayed relations. Conversely, these relations move every word into $a^ib^jc^kd^\ell$ with $0\leq i,j,k,\ell<3$, so the presented group has at most $3^4=81$ elements. The corresponding subgroup $G_0$ has exactly $81$ elements by step <1>2, so the presentation describes $G_0$ and therefore any Sylow $3$-subgroup up to isomorphism.
+:::
+
+<1>4. The Sylow $3$-subgroup $G$ contains an element of order nine, independently of steps <1>1--<1>3.
+
+::: {.proof}
+The cycle $(1\,2\,3\,4\,5\,6\,7\,8\,9)$ has order nine, so its cyclic subgroup is contained in a Sylow $3$-subgroup $P$ of $S_9$. By Sylow conjugacy, $P$ is conjugate to $G$. The conjugate of this $9$-cycle belongs to $G$ and retains order nine.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 establish parts (a)--(d), respectively.
+:::
 :::

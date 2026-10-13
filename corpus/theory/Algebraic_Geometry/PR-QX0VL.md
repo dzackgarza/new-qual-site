@@ -21,16 +21,32 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $f : X \to Y$ be separated, let $Z$ be a **reduced** scheme over $Y$, and let $g, h : Z \to X$ be $Y$-morphisms agreeing on a dense open $U \subseteq Z$.
+Let $f\colon X\to Y$ be separated, let $Z$ be a reduced $Y$-scheme, and let $g,h\colon Z\to X$ be $Y$-morphisms whose restrictions to a dense open subset $U\subseteq Z$ are equal.
 Then $g = h$.
 :::
 
-::: {.remark}
-This is the good property to name, and the proof shows why both hypotheses are there.
-The pair $(g,h)$ gives $Z \to \fiberprod{X}{Y}{X}$, and the locus where $g$ and $h$ agree is the preimage of the diagonal.
-Separatedness makes that preimage **closed**; it contains the dense $U$, so it is all of $Z$ topologically.
-Reducedness upgrades the topological statement to an equality of morphisms, because a closed subscheme of a reduced scheme with the whole space as support is the whole scheme.
+::: {.proof}
+The pair $(g,h)$ defines
+$$
+(g,h)\colon Z\longrightarrow X\times_YX.
+$$
+Let
+$$
+E\coloneqq Z\times_{X\times_YX,\,(g,h)}X,
+$$
+where $X\to X\times_YX$ is the diagonal of $f$. Since $f$ is separated, this diagonal is a closed immersion, so $E\hookrightarrow Z$ is a closed immersion. It is the equalizer of $g$ and $h$.
 
-So the analogue for quasi-separated is weaker in exactly the way the diagonal is: quasicompactness of the diagonal gives a retrocompact agreement locus, not a closed one, and the conclusion fails.
-Quasi-separatedness is what one assumes to make cohomology and direct images behave, not to make morphisms equal.
+Because $g|_U=h|_U$, the closed subset $\abs E$ contains the dense open subset $U$. Hence $\abs E=\abs Z$. If $\mathcal I\subseteq\OO_Z$ is the ideal sheaf defining $E$, then $V(\mathcal I)=Z$, so $\sqrt{\mathcal I}$ is the nilradical of $\OO_Z$. Since $Z$ is reduced, $\sqrt{\mathcal I}=0$, and therefore $\mathcal I=0$. Thus $E=Z$, so $g=h$.
+:::
+
+::: {.remark}
+Reducedness is necessary. Let
+$$
+Z=\Spec k[x,\varepsilon]/(\varepsilon^2,x\varepsilon).
+$$
+On the dense open subset $U=D(x)$ one has $\varepsilon=0$. Hence the two morphisms
+$$
+Z\rightrightarrows\AA^1_k
+$$
+induced by $t\mapsto0$ and $t\mapsto\varepsilon$ agree on $U$ but are distinct on $Z$.
 :::

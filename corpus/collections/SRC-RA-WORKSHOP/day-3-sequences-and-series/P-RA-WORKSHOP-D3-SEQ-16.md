@@ -16,7 +16,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 (January 2006 #5) Let $a_{m,n}\ge0$ for $m,n\in\mathbb N$ and assume that the partial sums
 $$
@@ -32,38 +31,75 @@ $$
 exist and are equal.
 :::
 
-:::: {.solution}
+::: {.solution}
+Set $S_{M,N}=\sum_{m=1}^{M}\sum_{n=1}^{N}a_{m,n}$ and $B=\sup_{M,N\geq1}S_{M,N}<\infty$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The doubly-indexed partial sums are bounded, by assumption; call $B = \sup_{M,N}\sum_{m=1}^M\sum_{n=1}^N a_{m,n} < \infty$.
+The inner series $A_m=\sum_{n=1}^{\infty}a_{m,n}$ and $C_n=\sum_{m=1}^{\infty}a_{m,n}$ exist as finite real numbers.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-The inner series exist and the iterated sums exist in $[0,\infty]$.
-Proof: for each fixed $m$, the partial sums $\sum_{n=1}^N a_{m,n}$ are increasing in $N$ and bounded by $B$, so $A_m := \sum_{n=1}^\infty a_{m,n}$ converges with $A_m \le B$.
-Then $\sum_{m=1}^M A_m$ is increasing in $M$ and bounded by $B$ (as $\sum_{m=1}^M A_m = \sup_N\sum_{m=1}^M\sum_{n=1}^N a_{m,n} \le B$), so $\sum_{m=1}^\infty A_m$ converges and equals $\sup_M\sum_{m=1}^M A_m \le B$.
-Symmetrically $\sum_{n=1}^\infty\big(\sum_{m=1}^\infty a_{m,n}\big)$ converges.
+For fixed $m$, the partial sums $\sum_{n=1}^{N}a_{m,n}$ are nondecreasing and bounded above by $S_{m,N}\leq B$. They therefore converge to a finite $A_m$. Exchanging the two indices proves existence and finiteness of every $C_n$.
 
 :::
 
-::: pf-step
+:::
 
-Both iterated sums equal $\sup_{M,N} S_{M,N}$.
-Proof: for every $M, N$, $S_{M,N} := \sum_{m=1}^M\sum_{n=1}^N a_{m,n} \le \sum_{m=1}^M A_m \le \sup_M\sum_{m=1}^M A_m$, so $\sup_{M,N}S_{M,N} \le \sum_{m=1}^\infty A_m$.
-Conversely, for fixed $M$, $S_{M,N} \nearrow \sum_{m=1}^M A_m$ as $N \to \infty$ (monotone convergence), so $\sum_{m=1}^M A_m = \sup_N S_{M,N} \le \sup_{M,N}S_{M,N}$; taking the sup over $M$ gives $\sum_{m=1}^\infty A_m \le \sup_{M,N}S_{M,N}$.
-Hence equality: $\sum_{m=1}^\infty\big(\sum_{n=1}^\infty a_{m,n}\big) = \sup_{M,N}S_{M,N}$.
-The same argument with the roles of $m$ and $n$ exchanged gives $\sum_{n=1}^\infty\big(\sum_{m=1}^\infty a_{m,n}\big) = \sup_{M,N}S_{M,N}$.
+::: {.pf-step #s2}
+
+For each $M,N\geq1$,
+\[
+\sum_{m=1}^{M}A_m=\sup_{N'\geq1}S_{M,N'},
+\qquad
+\sum_{n=1}^{N}C_n=\sup_{M'\geq1}S_{M',N}.
+\]
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, each of the finitely many series defining $A_1,\ldots,A_M$ converges. Passing the limit through this finite sum gives
+\[
+\sum_{m=1}^{M}A_m
+=\lim_{N'\to\infty}\sum_{m=1}^{M}\sum_{n=1}^{N'}a_{m,n}
+=\sup_{N'\geq1}S_{M,N'},
+\]
+where the last equality follows from nonnegativity. The other identity follows by interchanging $m$ and $n$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Both iterated series converge and have the same sum:
+\[
+\boxed{
+\sum_{m=1}^{\infty}\left(\sum_{n=1}^{\infty}a_{m,n}\right)
+=\sum_{n=1}^{\infty}\left(\sum_{m=1}^{\infty}a_{m,n}\right)
+=B}.
+\]
+
+::: pf-proof
+
+The identities in step [](#s2){.pf-ref} imply that the partial sums of both iterated series are bounded above by $B$. They are nondecreasing because all their terms are nonnegative, hence each converges. Moreover,
+\[
+\sum_{m=1}^{\infty}A_m
+=\sup_M\sup_N S_{M,N}
+=B
+=\sup_N\sup_M S_{M,N}
+=\sum_{n=1}^{\infty}C_n.
+\]
+Here iterated suprema agree because both range over the same set of rectangular partial sums.
+
+:::
 
 :::
 
 ::: pf-qed
 
-Proof: both iterated sums exist and equal the same finite number $\sup_{M,N}S_{M,N}$.
+Step [](#s1){.pf-ref} proves existence of the inner sums, and step [](#s3){.pf-ref} proves existence and equality of the finite iterated sums.
 
 :::
 

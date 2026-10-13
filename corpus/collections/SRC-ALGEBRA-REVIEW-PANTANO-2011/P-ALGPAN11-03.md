@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-03
 kind: problem
-title: Cyclicity of direct products of cyclic groups
+title: Which direct product of cyclic groups is not cyclic
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 Let $G_n$ denote the cyclic group of order $n$.
 Which of the listed direct products is not cyclic?
@@ -33,7 +32,7 @@ A finite direct product of cyclic groups is cyclic exactly when the factor order
 
 ::: {.pf-step #s1}
 
-Among the five choices, only (D), $G_{22}\times G_{33}$, is not cyclic.
+Apply the criterion to the five choices.
 
 ::: pf-proof
 
@@ -57,9 +56,21 @@ so $G_{22}\times G_{33}$ is not cyclic.
 
 :::
 
+::: pf-step
+
+Hence the answer is $\boxed{\text{(D)}}$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that (A), (B), (C), and (E) are cyclic and that (D) is not.
+
+:::
+
+:::
+
 ::: pf-qed
 
-By step [](#s1){.pf-ref}, the answer is $\boxed{\text{(D)}}$.
+The preceding conclusion identifies the unique noncyclic choice.
 
 :::
 

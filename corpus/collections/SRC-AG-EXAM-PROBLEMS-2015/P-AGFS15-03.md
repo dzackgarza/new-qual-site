@@ -21,12 +21,10 @@ audit:
   date: 2026-09-13
   note: Verified the projective-closure argument, the finite-hyperplane avoidance step, and affineness of the resulting principal projective open.
 ---
-
 ::: {.problem}
 Let $S$ be a finite set of points of a quasi-projective variety $X$.
 Show that $S$ is contained in an affine open subset of $X$.
 :::
-
 
 ::: {.solution}
 Embed \(X\) as a locally closed subvariety of some projective space and let
@@ -45,15 +43,17 @@ is the required affine open subset.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
+
 There is a homogeneous polynomial \(F\) vanishing on \(Z\) and on no point of \(S\).
 
 ::: pf-proof
+
 Write
 \[
 S=\{p_1,\dots,p_r\}.
 \]
-For every \(i\), the point \(p_i\) does not lie in \(Z\). Hence the homogeneous ideal \(I(Z)\) is not contained in the homogeneous maximal ideal of \(p_i\). Therefore there is a homogeneous polynomial
+For every \(i\), the point \(p_i\) does not lie in \(Z\). Hence the homogeneous ideal \(I(Z)\) is not contained in the homogeneous prime ideal \(I(p_i)\) of the point \(p_i\). Therefore there is a homogeneous polynomial
 \[
 f_i\in I(Z)
 \]
@@ -74,14 +74,17 @@ Because \(k\) is algebraically closed, it is infinite. A finite union of proper 
 F\in I(Z)_d
 \]
 outside all these evaluation kernels. Then \(F|_Z=0\) and \(F(p_i)\ne0\) for every \(i\).
-:::
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s2}
+
 The principal open \(U=\overline X\cap D_+(F)\) is affine, lies in \(X\), and contains \(S\).
 
 ::: pf-proof
+
 Let \(A\) be the homogeneous coordinate ring of \(\overline X\), so that
 \[
 \overline X=\operatorname{Proj}A.
@@ -101,7 +104,14 @@ On the other hand, \(F(p_i)\ne0\) for every \(p_i\in S\), so
 S\subseteq U.
 \]
 Thus \(U\) is an affine open subset of \(X\) containing \(S\).
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} constructs a homogeneous polynomial whose principal open avoids $Z$ and contains $S$, and step [](#s2){.pf-ref} proves that this principal open is affine and lies in $X$.
 
 :::
 

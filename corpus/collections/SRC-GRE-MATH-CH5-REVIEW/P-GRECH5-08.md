@@ -35,3 +35,67 @@ then
 (D) $2d$
 (E) $8d$
 :::
+
+::: {.solution}
+Let
+$$
+M=
+\begin{pmatrix}
+a&b&c\\
+k&l&m\\
+p&q&r
+\end{pmatrix},
+\qquad \det M=d.
+$$
+
+<1>1. Transposing $M$ and then interchanging its first two columns produces a matrix of determinant $-d$.
+
+::: {.proof}
+Transposition preserves determinant, so $\det(M^{\mathsf T})=d$. Interchanging two columns multiplies the determinant by $-1$.
+:::
+
+<1>2. Starting from the matrix in step <1>1, add its first column to its third column, multiply its second column by $2$, and then subtract twice its first column from its second column. The resulting matrix is
+$$
+\begin{pmatrix}
+k&2(a-k)&p+k\\
+l&2(b-l)&q+l\\
+m&2(c-m)&r+m
+\end{pmatrix}.
+$$
+
+::: {.proof}
+The columns of $M^{\mathsf T}$ are
+$$
+\begin{pmatrix}a\\ b\\ c\end{pmatrix},
+\quad
+\begin{pmatrix}k\\ l\\ m\end{pmatrix},
+\quad
+\begin{pmatrix}p\\ q\\ r\end{pmatrix}.
+$$
+After the interchange in step <1>1, they are ordered as the second, first, and third of these columns. The three stated operations therefore transform them respectively into
+$$
+\begin{pmatrix}k\\ l\\ m\end{pmatrix},
+\quad
+2\begin{pmatrix}a-k\\ b-l\\ c-m\end{pmatrix},
+\quad
+\begin{pmatrix}p+k\\ q+l\\ r+m\end{pmatrix},
+$$
+which are precisely the columns of the displayed matrix.
+:::
+
+<1>3. The determinant in the question is
+$$
+\boxed{-2d},
+$$
+so the answer is (C).
+
+::: {.proof}
+Adding a multiple of one column to another does not change the determinant. Thus, among the operations in step <1>2, only multiplying the second column by $2$ changes the determinant, multiplying it by $2$. By step <1>1, the determinant before those operations is $-d$, so the final determinant is $2(-d)=-2d$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested determinant.
+:::
+:::

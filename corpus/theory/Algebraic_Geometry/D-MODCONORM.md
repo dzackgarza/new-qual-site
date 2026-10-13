@@ -40,9 +40,17 @@ For a smooth variety $X$ over a field $k$, the canonical invertible sheaf is $\o
 Let $X$ be a scheme and let $0\to\mcf_1\to\cdots\to\mcf_n\to0$ be an exact sequence of locally free sheaves of finite rank.
 With exponent $-1$ denoting the dual of an invertible sheaf, there is a canonical isomorphism
 $$
-\bigotimes_{i=1}^n(\det\mcf_i)^{\otimes(-1)^{i+1}}\cong\OO_X.
+(\det\mcf_1)
+\tensor_{\OO_X}
+(\det\mcf_2)^{-1}
+\tensor_{\OO_X}
+\cdots
+\tensor_{\OO_X}
+(\det\mcf_n)^{(-1)^{n+1}}
+\cong\OO_X.
 $$
-For $n=3$ it is $\det\mcf_2\cong\det\mcf_1\otimes\det\mcf_3$.
+For $n=3$ it is
+$\det\mcf_2\cong\det\mcf_1\tensor_{\OO_X}\det\mcf_3$.
 The short-exact-sequence map is proved in [[P-AGH2516TENSOROPS]], part (d); applying it to the successive image sheaves gives the displayed cancellation for a longer exact sequence [@Har10a, Exercise II.5.16].
 :::
 

@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a commutative ring.
-The \dfn{max spectrum} of $R$ is the set of [[D-7XH2R|maximal ideals]] of $R$:
+The \dfn{maximal spectrum} of $R$ is the set of [[D-7XH2R|maximal ideals]] of $R$:
 $$
 \mspec(R) \coloneqq \theset{\mfm \subseteq R \suchthat \mfm \text{ is a maximal ideal}}.
 $$

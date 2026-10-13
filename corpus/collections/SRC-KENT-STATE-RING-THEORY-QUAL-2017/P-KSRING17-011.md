@@ -18,3 +18,120 @@ audit:
 ::: {.problem}
 Show that a non-zero ring R in which $x ^ { 2 } = x$ for all $x \in R$ is of characteristic 2 and is commutative.
 :::
+
+::: {.solution}
+<1>1. For every $x\in R$,
+$$
+x=-x.
+$$
+
+::: {.proof}
+The hypothesis applied to $x$ gives
+$$
+x^2=x.
+$$
+Applied to $-x$, it gives
+$$
+(-x)^2=-x.
+$$
+But
+$$
+(-x)^2=x^2=x.
+$$
+Therefore
+$$
+x=-x.
+$$
+:::
+
+<1>2. For every $x\in R$,
+$$
+2x=0.
+$$
+
+::: {.proof}
+Step <1>1 gives
+$$
+x=-x.
+$$
+Adding $x$ to both sides yields
+$$
+x+x=0.
+$$
+Thus
+$$
+2x=0
+$$
+for every $x\in R$.
+:::
+
+<1>3. The ring $R$ has characteristic $2$.
+
+::: {.proof}
+Step <1>2 shows that
+$$
+2\cdot1_R=0.
+$$
+Hence the characteristic divides $2$. Since $R$ is nonzero,
+$$
+1_R\ne0,
+$$
+so the characteristic is not $1$. Therefore
+$$
+\boxed{\operatorname{char}R=2.}
+$$
+:::
+
+<1>4. For all $x,y\in R$,
+$$
+xy+yx=0.
+$$
+
+::: {.proof}
+Apply the hypothesis to $x+y$:
+$$
+(x+y)^2=x+y.
+$$
+Expanding,
+$$
+x^2+xy+yx+y^2=x+y.
+$$
+Since
+$$
+x^2=x
+\qquad\text{and}\qquad
+y^2=y,
+$$
+subtraction gives
+$$
+xy+yx=0.
+$$
+:::
+
+<1>5. The ring $R$ is commutative.
+
+::: {.proof}
+By step <1>4,
+$$
+xy=-yx.
+$$
+But by step <1>3 the ring has characteristic $2$, so
+$$
+-yx=yx.
+$$
+Therefore
+$$
+xy=yx
+$$
+for all $x,y\in R$. Hence
+$$
+\boxed{R\text{ is commutative}.}
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the characteristic assertion, and step <1>5 proves commutativity.
+:::
+:::

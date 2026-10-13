@@ -19,3 +19,141 @@ audit:
 ::: {.problem}
 For each field $F=\mathbb R$, $\mathbb C$, and $\mathbb F_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
 :::
+
+::: {.solution}
+<1>1. Over
+\[
+F=\mathbb R,
+\]
+every symmetric $2\times2$ matrix is diagonalizable.
+
+::: {.proof}
+The real spectral theorem states that every real symmetric matrix is orthogonally diagonalizable.
+Hence every symmetric matrix in
+\[
+M_2(\mathbb R)
+\]
+is diagonalizable over $\mathbb R$.
+:::
+
+<1>2. Over
+\[
+F=\mathbb C,
+\]
+the assertion is false.
+
+::: {.proof}
+Consider
+\[
+A=
+\begin{pmatrix}
+i&1\\
+1&-i
+\end{pmatrix}.
+\]
+This matrix is symmetric:
+\[
+A^T=A.
+\]
+Direct multiplication gives
+\[
+A^2
+=
+\begin{pmatrix}
+i^2+1&i-i\\
+i-i&1+(-i)^2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0&0\\
+0&0
+\end{pmatrix}.
+\]
+Thus $A$ is nilpotent and nonzero.
+
+If $A$ were diagonalizable, it would be similar to a diagonal matrix whose diagonal entries are its eigenvalues.
+Since $A^2=0$, every eigenvalue satisfies
+\[
+\lambda^2=0,
+\]
+so every eigenvalue is $0$.
+The only diagonal matrix with both diagonal entries zero is the zero matrix.
+Thus a diagonalizable nilpotent matrix must be zero, contradicting
+\[
+A\ne0.
+\]
+Hence $A$ is not diagonalizable.
+:::
+
+<1>3. Over
+\[
+F=\mathbb F_3,
+\]
+the assertion is also false.
+
+::: {.proof}
+Consider
+\[
+A=
+\begin{pmatrix}
+0&1\\
+1&1
+\end{pmatrix}
+\in M_2(\mathbb F_3).
+\]
+It is symmetric.
+Its characteristic polynomial is
+\[
+\begin{aligned}
+\chi_A(\lambda)
+&=
+\det
+\begin{pmatrix}
+\lambda&-1\\
+-1&\lambda-1
+\end{pmatrix}\\
+&=
+\lambda(\lambda-1)-1\\
+&=
+\lambda^2-\lambda-1.
+\end{aligned}
+\]
+In $\mathbb F_3$, this polynomial takes the values
+\[
+\chi_A(0)=-1=2,
+\]
+\[
+\chi_A(1)=1-1-1=-1=2,
+\]
+\[
+\chi_A(2)=4-2-1=1.
+\]
+Thus it has no root in $\mathbb F_3$.
+Therefore $A$ has no eigenvalue in $\mathbb F_3$, so it cannot be diagonalizable over $\mathbb F_3$.
+:::
+
+<1>4. Therefore the complete answer is
+\[
+\boxed{
+\begin{array}{c|c}
+F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
+\hline
+\mathbb R&\text{yes}\\
+\mathbb C&\text{no}\\
+\mathbb F_3&\text{no}
+\end{array}
+}
+\]
+
+::: {.proof}
+Step <1>1 proves the positive real case.
+Step <1>2 gives a complex counterexample.
+Step <1>3 gives a counterexample over $\mathbb F_3$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 records the required classification.
+:::
+:::

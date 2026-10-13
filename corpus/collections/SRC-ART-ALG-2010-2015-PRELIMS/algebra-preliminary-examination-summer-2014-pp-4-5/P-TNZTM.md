@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the constant-coefficient unit argument, every possible order-15 cycle type, divisibility of the nonfree module, and irreducibility of the inseparable quadratic."
 ---
-
 ::: {.problem}
 Prove or disprove each of the following:
 
@@ -43,7 +42,7 @@ The assertions are respectively true, true, false, and false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If $R[x]$ is a principal ideal domain, then $R$ is a field.
 
@@ -66,7 +65,7 @@ gives $1=au(0)$. Every nonzero $a\in R$ is therefore invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 All cyclic subgroups of order $15$ in $S_8$ are conjugate.
 
@@ -91,7 +90,7 @@ that such subgroups exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The $\mathbb Z$-module $\mathbb Q$ is torsion-free but not free.
 
@@ -111,7 +110,7 @@ $e$ in itself is $1$. This contradicts $2\mathbb Q=\mathbb Q$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 In characteristic $2$ a quadratic extension need not be Galois.
 
@@ -133,6 +132,12 @@ Thus the minimal polynomial has a repeated root, and $K/F$ is
 not separable. In particular it is not Galois [@DF04].
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (a)--(d), respectively.
 
 :::
 

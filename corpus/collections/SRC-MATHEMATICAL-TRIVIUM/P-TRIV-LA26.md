@@ -24,3 +24,289 @@ Describe the linear transformations whose invariant subspaces are
 
 (c) n-dimensional hyperboloid $x _ { 1 } ^ { 2 } + . . . + x _ { p } ^ { 2 } - x _ { p + 1 } ^ { 2 } - . . . - x _ { n } ^ { 2 } = R ^ { 2 }$ in $\mathbb { R } ^ { n }$
 :::
+
+::: {.remark}
+The sets in the problem are quadratic surfaces rather than linear subspaces.
+The solution interprets “invariant” as setwise preservation by an invertible
+linear transformation. For the null cone, setwise preservation is slightly
+larger than exact preservation of the quadratic form: positive scalar
+dilations also preserve the cone.
+:::
+
+::: {.solution}
+<1>1. Let
+$$
+q_E(x)=x^Tx
+$$
+on $\mathbb R^3$. An invertible linear map $A$ preserves the sphere
+$$
+q_E(x)=R^2,
+\qquad R>0,
+$$
+if and only if
+$$
+A^TA=I.
+$$
+
+::: {.proof}
+If $A^TA=I$, then
+$$
+q_E(Ax)
+=
+x^TA^TAx
+=
+x^Tx
+=
+q_E(x),
+$$
+so every sphere centered at the origin is preserved.
+
+Conversely, suppose the radius-$R$ sphere is preserved setwise. For every
+unit vector $u$, the point $Ru$ lies on the sphere, so
+$$
+\|ARu\|=R.
+$$
+Thus
+$$
+u^TA^TAu=1
+$$
+for every unit vector $u$, and by homogeneity
+$$
+x^TA^TAx=x^Tx
+$$
+for every $x$. Hence the symmetric matrix $A^TA-I$ has zero quadratic form
+on every vector, so
+$$
+A^TA=I.
+$$
+:::
+
+<1>2. Therefore the transformations in part (a) are exactly
+$$
+\boxed{O(3)}.
+$$
+
+::: {.proof}
+This is the definition of the real orthogonal group.
+:::
+
+<1>3. For the cone in part (b), put
+$$
+J=
+\operatorname{diag}(1,-1,-1,-1)
+$$
+and
+$$
+q(x)=x^TJx.
+$$
+
+::: {.proof}
+Then the cone equation is exactly
+$$
+q(x)=0.
+$$
+:::
+
+<1>4. Every matrix satisfying
+$$
+A^TJA=J
+$$
+preserves the cone.
+
+::: {.proof}
+For such $A$,
+$$
+q(Ax)
+=
+x^TA^TJAx
+=
+x^TJx
+=
+q(x).
+$$
+Hence $q(x)=0$ if and only if $q(Ax)=0$.
+:::
+
+<1>5. More generally, every matrix satisfying
+$$
+A^TJA=cJ
+$$
+with $c>0$ preserves the cone setwise.
+
+::: {.proof}
+Then
+$$
+q(Ax)=c,q(x),
+$$
+so the zero set of $q$ is unchanged. Such a matrix can be written
+$$
+A=\sqrt c,L
+$$
+with
+$$
+L^TJL=J.
+$$
+:::
+
+<1>6. Conversely, if an invertible $A$ preserves the cone setwise, then
+$$
+A^TJA=cJ
+$$
+for some $c>0$.
+
+::: {.proof}
+Define the quadratic form
+$$
+r(x)=q(Ax)=x^TA^TJAx.
+$$
+Setwise cone preservation says
+$$
+r(x)=0
+\iff
+q(x)=0.
+$$
+For nondegenerate indefinite quadratic forms in dimension at least $3$, two
+real quadratic forms with the same null cone are proportional. Hence
+$$
+r=cq,
+$$
+equivalently
+$$
+A^TJA=cJ.
+$$
+Because congruent real symmetric matrices have the same inertia,
+$A^TJA$ has signature $(1,3)$. The form $cJ$ has that same signature only
+when $c>0$.
+:::
+
+<1>7. Thus the exact form-preserving transformations in part (b) are
+$$
+\boxed{O(1,3)},
+$$
+while all invertible setwise cone-preserving transformations form
+$$
+\boxed{\mathbb R_{>0}\cdot O(1,3)}.
+$$
+
+::: {.proof}
+Steps <1>4--<1>6 give the two characterizations.
+:::
+
+<1>8. For part (c), let
+$$
+J_{p,n-p}
+=
+\operatorname{diag}(
+\underbrace{1,\ldots,1}_{p},
+\underbrace{-1,\ldots,-1}_{n-p}
+)
+$$
+and
+$$
+q(x)=x^TJ_{p,n-p}x.
+$$
+
+::: {.proof}
+Then the hyperboloid in the problem is the level set
+$$
+q(x)=R^2.
+$$
+:::
+
+<1>9. Every matrix satisfying
+$$
+A^TJ_{p,n-p}A=J_{p,n-p}
+$$
+preserves the hyperboloid.
+
+::: {.proof}
+For every $x$,
+$$
+q(Ax)
+=
+x^TA^TJ_{p,n-p}Ax
+=
+x^TJ_{p,n-p}x
+=
+q(x).
+$$
+Hence the level set $q=R^2$ is preserved.
+:::
+
+<1>10. Conversely, if an invertible $A$ preserves the hyperboloid
+$$
+q(x)=R^2
+$$
+setwise, then
+$$
+q(Ax)=q(x)
+$$
+for every $x$ with $q(x)>0$.
+
+::: {.proof}
+Let $x$ satisfy $q(x)>0$. Set
+$$
+t=\frac{R}{\sqrt{q(x)}}.
+$$
+Then
+$$
+q(tx)=t^2q(x)=R^2,
+$$
+so by preservation of the hyperboloid,
+$$
+q(A(tx))=R^2.
+$$
+By linearity of $A$ and homogeneity of $q$,
+$$
+t^2q(Ax)=R^2=t^2q(x).
+$$
+Since $t\neq0$,
+$$
+q(Ax)=q(x).
+$$
+:::
+
+<1>11. The equality
+$$
+q(Ax)=q(x)
+$$
+holds for every $x\in\mathbb R^n$.
+
+::: {.proof}
+The difference
+$$
+p(x)=q(Ax)-q(x)
+$$
+is a polynomial in the coordinates of $x$. By step <1>10, it vanishes on the
+open set
+$$
+\{x:q(x)>0\}.
+$$
+A real polynomial that vanishes on a nonempty open set is identically zero.
+Hence $p(x)=0$ for all $x$.
+:::
+
+<1>12. Therefore the transformations in part (c) are exactly
+$$
+\boxed{O(p,n-p)}.
+$$
+
+::: {.proof}
+By step <1>11,
+$$
+x^T(A^TJ_{p,n-p}A-J_{p,n-p})x=0
+$$
+for every $x$. The matrix in parentheses is symmetric, so it must be zero:
+$$
+A^TJ_{p,n-p}A=J_{p,n-p}.
+$$
+This is the defining relation for $O(p,n-p)$. Step <1>9 proves the converse.
+:::
+
+<1>13. Q.E.D.
+
+::: {.proof}
+Step <1>2 solves part (a), step <1>7 solves part (b), and step <1>12 solves
+part (c).
+:::
+:::

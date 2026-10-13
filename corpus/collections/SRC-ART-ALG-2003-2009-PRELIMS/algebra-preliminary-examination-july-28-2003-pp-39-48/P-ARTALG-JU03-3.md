@@ -15,7 +15,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-30
 ---
-
 ::: {.problem}
 (a) Let $R$ be the ring of all polynomials in $\mathbb{Q}[x]$ having no $x$-term.
 Show that $x^5$ and $x^6$ have no GCD in $R$.
@@ -25,21 +24,24 @@ Justify your answer.
 :::
 
 ::: {.solution}
-Let $R=\{f\in\QQ[x]: \text{the coefficient of } x \text{ in } f \text{ is } 0\}$.
-It is a subring of $\QQ[x]$: for $f=\sum f_ix^i$ and $g=\sum g_ix^i$, the coefficient of $x$ in $fg$ is $f_0g_1+f_1g_0=0$.
-Its units are the nonzero constants, since these are the units of $\QQ[x]$ and they lie in $R$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For $n\ge0$, an element $d\in R$ divides $x^n$ in $R$ if and only if $d=cx^k$ with $c\in\QQ^\times$, $0\le k\le n$, $k\ne1$, and $n-k\ne1$.
+The ring $R$ is exactly
+$$
+\QQ[x^2,x^3].
+$$
 
 ::: pf-proof
 
-If $de=x^n$ with $d,e\in R$, unique factorization in $\QQ[x]$ gives $d=cx^k$ and $e=c^{-1}x^{n-k}$ with $c\in\QQ^\times$ and $0\le k\le n$.
-A monomial $x^j$ lies in $R$ exactly when $j\ne1$, so $d,e\in R$ forces $k\ne1$ and $n-k\ne1$.
-Conversely, under these conditions $e=c^{-1}x^{n-k}\in R$ and $de=x^n$.
+A polynomial in $\QQ[x^2,x^3]$ is a $\QQ$-linear combination of monomials
+$$
+x^{2a+3b},
+\qquad a,b\ge0.
+$$
+The attainable exponents are $0$ and every integer at least $2$, so such a polynomial has no $x$-term. Conversely, every monomial $x^n$ with $n\ge2$ lies in $\QQ[x^2,x^3]$: if $n$ is even, $x^n=(x^2)^{n/2}$; if $n\ge3$ is odd, $x^n=x^3(x^2)^{(n-3)/2}$. Hence every polynomial with zero $x$-coefficient lies in $\QQ[x^2,x^3]$.
 
 :::
 
@@ -47,12 +49,19 @@ Conversely, under these conditions $e=c^{-1}x^{n-k}\in R$ and $de=x^n$.
 
 ::: {.pf-step #s2}
 
-The common divisors of $x^5$ and $x^6$ in $R$ are the elements $cx^k$ with $c\in\QQ^\times$ and $k\in\{0,2,3\}$.
+Both $x^2$ and $x^3$ are common divisors of $x^5$ and $x^6$ in $R$.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, the divisors of $x^5$ are the $cx^k$ with $k\in\{0,2,3,5\}$, and the divisors of $x^6$ are the $cx^k$ with $k\in\{0,2,3,4,6\}$.
-The common exponents are $0,2,3$.
+One has
+$$
+x^5=x^2x^3=x^3x^2,
+$$
+and
+$$
+x^6=x^2x^4=x^3x^3.
+$$
+All quotients $x^2,x^3,x^4$ belong to $R$ by step [](#s1){.pf-ref}. Thus both $x^2$ and $x^3$ divide both $x^5$ and $x^6$ in $R$.
 
 :::
 
@@ -60,14 +69,23 @@ The common exponents are $0,2,3$.
 
 ::: {.pf-step #s3}
 
-For part (a), $x^5$ and $x^6$ have no greatest common divisor in $R$.
+No common divisor of $x^5$ and $x^6$ in $R$ can be divisible by both $x^2$ and $x^3$.
 
 ::: pf-proof
 
-A greatest common divisor $g$ would be a common divisor divisible in $R$ by every common divisor, in particular by $x^2$ and by $x^3$.
-By step [](#s2){.pf-ref}, $g=cx^k$ with $k\in\{0,2,3\}$, and $x^3\mid g$ forces $k=3$.
-Then $x^2\mid cx^3$ in $R$ would give $cx^3=x^2e$ with $e\in R$, so $e=cx\notin R$.
-This contradiction shows that no such $g$ exists.
+Suppose $d\in R$ is a common divisor and
+$$
+x^2\mid d,
+\qquad
+x^3\mid d.
+$$
+Since $d\mid x^5$ in $R$, there is $u\in R$ with
+$$
+x^5=du.
+$$
+In the UFD $\QQ[x]$, every divisor of $x^5$ is an associate of $x^k$ for some $0\le k\le5$. Because $x^3\mid d$, one has $k\ge3$.
+
+If $k=3$, then $x^2\mid d$ in $R$ would require the quotient $x$, which is not in $R$. If $k=4$, then $d\mid x^5$ in $R$ would require the quotient $x$, again impossible. If $k=5$, then $d\mid x^6$ in $R$ would require the quotient $x$, impossible. Thus no such $d$ exists.
 
 :::
 
@@ -75,14 +93,33 @@ This contradiction shows that no such $g$ exists.
 
 ::: {.pf-step #s4}
 
-For part (b), the answer is no: $T=R$ is a subring of the Euclidean domain $S=\QQ[x]$ that is not a Euclidean domain.
+Therefore $x^5$ and $x^6$ have no gcd in $R$.
 
 ::: pf-proof
 
-The ring $\QQ[x]$ is Euclidean with the degree function.
-A Euclidean domain is a principal ideal domain [@DF04].
-In a principal ideal domain, a generator $d$ of the ideal $(a,b)$ is a greatest common divisor of $a$ and $b$: it divides $a$ and $b$, and writing $d=ua+vb$ shows that every common divisor of $a$ and $b$ divides $d$.
-By step [](#s3){.pf-ref}, $x^5$ and $x^6$ have no greatest common divisor in $R$, so $R$ is not a principal ideal domain and hence not Euclidean.
+A greatest common divisor would be a common divisor divisible by every other common divisor. By step [](#s2){.pf-ref} it would therefore have to be divisible by both $x^2$ and $x^3$, contradicting step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+A subring of a Euclidean domain need not be Euclidean.
+
+::: pf-proof
+
+Take
+$$
+S=\QQ[x]
+$$
+and
+$$
+T=\QQ[x^2,x^3]=R.
+$$
+The polynomial ring $\QQ[x]$ is Euclidean with the degree function. By step [](#s4){.pf-ref}, the elements $x^5,x^6\in T$ have no greatest common divisor in $T$.
+
+Every Euclidean domain is a PID, and in a PID any two elements have a gcd: a generator of the ideal $(a,b)$ is a gcd of $a$ and $b$. Hence $T$ cannot be Euclidean.
 
 :::
 
@@ -90,7 +127,7 @@ By step [](#s3){.pf-ref}, $x^5$ and $x^6$ have no greatest common divisor in $R$
 
 ::: pf-qed
 
-Step [](#s3){.pf-ref} answers part (a) and step [](#s4){.pf-ref} answers part (b).
+Step [](#s4){.pf-ref} proves part (a), and step [](#s5){.pf-ref} provides the required counterexample for part (b).
 
 :::
 

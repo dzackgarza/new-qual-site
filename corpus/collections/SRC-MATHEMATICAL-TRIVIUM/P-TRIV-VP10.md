@@ -47,3 +47,252 @@ $$
 Erratum: the boundary condition in (16) is printed in the source as "$F_{f_x} n_x + F_{f_y} n_y + = g(s)$, $x \in \partial D$", with a dangling plus sign.
 The condition that makes part (a) true, and that (18) reduces to for $h = 0$, is $F_{f_x} n_x + F_{f_y} n_y = g(s)$ on $\partial D$, where $(n_x, n_y)$ is the outward unit normal and $s$ is arc length along $\partial D$.
 :::
+
+::: {.solution}
+<1>1. Let
+$$
+f_\varepsilon=f+\varepsilon\eta,
+$$
+where $\eta$ is an arbitrary $C^1$ variation on $\bar D$.
+
+::: {.proof}
+No boundary value of $f$ is prescribed in this problem, so the variation need
+not vanish on $\partial D$.
+:::
+
+<1>2. The first variation of
+$$
+J[f]
+=
+\iint_D F(f,f_x,f_y;x,y)
+\,dx\,dy
+-
+\int_{\partial D}fg
+\,ds
+$$
+is
+$$
+\delta J
+=
+\iint_D
+\left(
+F_f\eta
++
+F_{f_x}\eta_x
++
+F_{f_y}\eta_y
+\right)dA
+-
+\int_{\partial D}g\eta\,ds.
+$$
+
+::: {.proof}
+Differentiate $J[f_\varepsilon]$ with respect to $\varepsilon$ at
+$\varepsilon=0$ and apply the chain rule to the interior integrand.
+:::
+
+<1>3. Green's formula gives
+$$
+\iint_D
+\left(
+F_{f_x}\eta_x
++
+F_{f_y}\eta_y
+\right)dA
+=
+-
+\iint_D
+\left(
+\partial_xF_{f_x}
++
+\partial_yF_{f_y}
+\right)
+\eta\,dA
++
+\int_{\partial D}
+\left(
+F_{f_x}n_x
++
+F_{f_y}n_y
+\right)
+\eta\,ds.
+$$
+
+::: {.proof}
+Apply the divergence theorem to the vector field
+$$
+\eta(F_{f_x},F_{f_y}).
+$$
+Its divergence is
+$$
+F_{f_x}\eta_x
++
+F_{f_y}\eta_y
++
+\eta
+\left(
+\partial_xF_{f_x}
++
+\partial_yF_{f_y}
+\right).
+$$
+Rearrange.
+:::
+
+<1>4. Therefore
+$$
+\begin{aligned}
+\delta J
+&=
+\iint_D
+\left[
+F_f
+-
+\partial_xF_{f_x}
+-
+\partial_yF_{f_y}
+\right]
+\eta\,dA\\
+&\quad
++
+\int_{\partial D}
+\left[
+F_{f_x}n_x
++
+F_{f_y}n_y
+-
+g
+\right]
+\eta\,ds.
+\end{aligned}
+$$
+
+::: {.proof}
+Substitute step <1>3 into step <1>2 and collect the interior and boundary
+terms.
+:::
+
+<1>5. At an extremum, the interior Euler--Lagrange equation is
+$$
+\boxed{
+F_f
+-
+\partial_xF_{f_x}
+-
+\partial_yF_{f_y}
+=0
+}
+$$
+in $D$.
+
+::: {.proof}
+Choose variations supported compactly inside $D$. Then the boundary term in
+step <1>4 vanishes, and the fundamental lemma of the calculus of variations
+forces the interior coefficient of $\eta$ to vanish.
+:::
+
+<1>6. Once step <1>5 holds, stationarity for arbitrary boundary values of
+$\eta$ gives the natural boundary condition
+$$
+\boxed{
+F_{f_x}n_x
++
+F_{f_y}n_y
+=
+g(s)
+}
+$$
+on $\partial D$.
+
+::: {.proof}
+With the interior term zero, step <1>4 reduces to the boundary integral. Since
+$\eta|_{\partial D}$ is arbitrary, the boundary coefficient must vanish.
+:::
+
+<1>7. Thus the extrema of $J$ satisfy precisely the corrected system in
+part (a).
+
+::: {.proof}
+Combine steps <1>5--<1>6.
+:::
+
+<1>8. For part (b), define
+$$
+\boxed{
+J_h[f]
+=
+\iint_D F\,dA
++
+\int_{\partial D}
+\left(
+\frac12h(s)f^2
+-
+f g(s)
+\right)ds.
+}
+$$
+
+::: {.proof}
+The added boundary term $\frac12hf^2$ is chosen because its first variation
+is $hf\eta$.
+:::
+
+<1>9. The first variation of the new boundary contribution is
+$$
+\int_{\partial D}
+\left(
+h f-g
+\right)
+\eta\,ds.
+$$
+
+::: {.proof}
+Differentiate
+$$
+\frac12h(f+\varepsilon\eta)^2
+-
+(f+\varepsilon\eta)g
+$$
+with respect to $\varepsilon$ at $0$.
+:::
+
+<1>10. Therefore $J_h$ has the same interior Euler--Lagrange equation as in
+step <1>5 and the boundary condition
+$$
+\boxed{
+F_{f_x}n_x
++
+F_{f_y}n_y
++
+h(s)f
+=
+g(s).
+}
+$$
+
+::: {.proof}
+The integration-by-parts boundary contribution from the interior functional
+is still
+$$
+(F_{f_x}n_x+F_{f_y}n_y)\eta.
+$$
+Adding step <1>9 gives the total boundary coefficient
+$$
+F_{f_x}n_x
++
+F_{f_y}n_y
++
+hf
+-
+g.
+$$
+Stationarity for arbitrary boundary variations forces it to vanish.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>7 proves part (a), and steps <1>8--<1>10 give the required modified
+functional for part (b).
+:::
+:::

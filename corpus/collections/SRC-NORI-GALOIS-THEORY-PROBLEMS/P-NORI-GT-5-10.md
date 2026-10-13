@@ -28,3 +28,125 @@ Assume that (i) $\operatorname{Gal}(L/F)$ is Abelian, and (ii) $F$ contains a pr
 Assume furthermore that $p$ does not divide the order of $\operatorname{Gal}(K/F)$.
 Show hat there is some $b \in F$ such that $L = K(b^{1/p})$.
 :::
+
+::: {.solution}
+Let
+$$
+m=\abs{G}=[K:F].
+$$
+By hypothesis, $p\nmid m$.
+
+<1>1. One has
+$$
+L=K(a^{1/p}).
+$$
+
+::: {.proof}
+By Problem 5.9, for every $\sigma\in G$ there exists $c_\sigma\in K^\times$ such that
+$$
+\sigma(a)=a c_\sigma^p.
+$$
+Choose $\alpha$ with $\alpha^p=a$. Since $K$ contains all $p$-th roots of unity, every $p$-th root of $\sigma(a)$ has the form
+$$
+\zeta^j c_\sigma\alpha
+$$
+for some $p$-th root of unity $\zeta^j\in K$. Hence every $p$-th root adjoined in the definition of $L$ already lies in $K(\alpha)$, so
+$$
+L\subseteq K(\alpha).
+$$
+For the identity element of $G$, the field $L$ contains a $p$-th root of $a$, so $K(\alpha)\subseteq L$. Therefore
+$$
+L=K(\alpha)=K(a^{1/p}).
+$$
+:::
+
+<1>2. Define
+$$
+b=N_{K/F}(a)=\prod_{\sigma\in G}\sigma(a).
+$$
+Then $b\in F^\times$ and there exists $c\in K^\times$ such that
+$$
+b=a^m c^p.
+$$
+
+::: {.proof}
+The norm $b=N_{K/F}(a)$ belongs to $F^\times$. By Problem 5.9, write
+$$
+\sigma(a)=a c_\sigma^p
+$$
+for each $\sigma\in G$. Multiplying over all $\sigma$ gives
+$$
+b
+=\prod_{\sigma\in G}\sigma(a)
+=\prod_{\sigma\in G}a c_\sigma^p
+=a^m\left(\prod_{\sigma\in G}c_\sigma\right)^p.
+$$
+Taking
+$$
+c=\prod_{\sigma\in G}c_\sigma\in K^\times
+$$
+gives the claim.
+:::
+
+<1>3. One has
+$$
+K(b^{1/p})\subseteq K(a^{1/p}).
+$$
+
+::: {.proof}
+Let $\alpha^p=a$. By step <1>2,
+$$
+b=a^m c^p=(c\alpha^m)^p.
+$$
+Thus $c\alpha^m$ is a $p$-th root of $b$ lying in $K(\alpha)$. Since $K$ contains all $p$-th roots of unity, adjoining any chosen $p$-th root of $b$ gives the same field. Hence
+$$
+K(b^{1/p})\subseteq K(\alpha)=K(a^{1/p}).
+$$
+:::
+
+<1>4. One has
+$$
+K(a^{1/p})\subseteq K(b^{1/p}).
+$$
+
+::: {.proof}
+Since $p\nmid m$, choose integers $r,s$ such that
+$$
+rm+sp=1.
+$$
+Let $\beta=c\alpha^m$, so by step <1>3 one has $\beta^p=b$ and $\beta\in K(b^{1/p})$. Then
+$$
+\frac{\beta^r a^s}{c^r}
+=\frac{(c\alpha^m)^r(\alpha^p)^s}{c^r}
+=\alpha^{rm+ps}
+=\alpha.
+$$
+Here $a,c\in K$, so the left-hand side belongs to $K(\beta)=K(b^{1/p})$. Therefore
+$$
+\alpha\in K(b^{1/p}),
+$$
+and hence $K(a^{1/p})\subseteq K(b^{1/p})$.
+:::
+
+<1>5. There exists $b\in F^\times$ such that
+$$
+\boxed{L=K(b^{1/p})}.
+$$
+
+::: {.proof}
+Take $b=N_{K/F}(a)$ from step <1>2. By steps <1>3 and <1>4,
+$$
+K(a^{1/p})=K(b^{1/p}).
+$$
+Combining this with step <1>1 gives
+$$
+L=K(b^{1/p}).
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves the required statement.
+:::
+:::

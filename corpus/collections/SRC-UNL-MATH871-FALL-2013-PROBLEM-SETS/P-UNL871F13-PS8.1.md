@@ -27,3 +27,537 @@ Consider:
 
 - the subspace $[0,1]\subset\mathbb R_\ell$.
 :::
+
+::: {.solution}
+Use the standard hierarchy
+\[
+T_0,T_1,T_2,T_3,T_4,
+\]
+where
+\[
+T_2=\text{Hausdorff},
+\quad
+T_3=\text{regular }T_1,
+\quad
+T_4=\text{normal }T_1.
+\]
+
+<1>1. The excluded-point real line is compact.
+
+::: {.proof}
+Let
+\[
+0
+\]
+be the excluded point.
+In the excluded-point topology, the only open set containing
+\[
+0
+\]
+is the whole space
+\[
+\mathbb R.
+\]
+
+Every open cover of
+\[
+\mathbb R
+\]
+must contain some open set covering $0$.
+That member must be
+\[
+\mathbb R
+\]
+itself.
+Hence the one-element family
+\[
+\{\mathbb R\}
+\]
+is already a finite subcover.
+:::
+
+<1>2. The excluded-point real line is
+\[
+T_0
+\]
+but not
+\[
+T_1.
+\]
+
+::: {.proof}
+Let
+\[
+x\ne y.
+\]
+If neither point is $0$, the singleton
+\[
+\{x\}
+\]
+is open and contains $x$ but not $y$.
+If one point is $0$, say
+\[
+x=0,
+\quad
+y\ne0,
+\]
+then
+\[
+\{y\}
+\]
+is open and contains $y$ but not $x$.
+Thus the space is $T_0$.
+
+It is not $T_1$ because no proper open set contains $0$.
+In particular there is no open set containing $0$ but excluding a fixed
+nonzero point.
+Equivalently, a nonzero singleton is not closed:
+its complement contains $0$ but is not all of $\mathbb R$, hence is not
+open.
+:::
+
+<1>3. Therefore, for the excluded-point topology,
+\[
+\boxed{
+\text{compact: yes},
+\qquad
+\text{largest }T_i:T_0.
+}
+\]
+
+::: {.proof}
+Combine steps <1>1--<1>2.
+:::
+
+<1>4. The included-point real line is not compact.
+
+::: {.proof}
+Let
+\[
+0
+\]
+be the included point.
+For each
+\[
+x\in\mathbb R\setminus\{0\},
+\]
+set
+\[
+U_x=\{0,x\}.
+\]
+Every $U_x$ is open because it contains the included point.
+The family
+\[
+\{U_x:x\ne0\}
+\]
+covers $\mathbb R$.
+
+Any finite subfamily covers only
+\[
+0
+\]
+and finitely many nonzero points.
+Thus no finite subfamily covers all of $\mathbb R$.
+Hence the space is not compact.
+:::
+
+<1>5. The included-point real line is
+\[
+T_0
+\]
+but not
+\[
+T_1.
+\]
+
+::: {.proof}
+For distinct nonzero points
+\[
+x,y,
+\]
+the open set
+\[
+\{0,x\}
+\]
+contains $x$ but not $y$.
+For the pair
+\[
+0,y,
+\qquad
+y\ne0,
+\]
+the open singleton
+\[
+\{0\}
+\]
+contains $0$ but not $y$.
+Thus the space is $T_0$.
+
+It is not $T_1$ because every nonempty open set containing a nonzero point
+also contains $0$.
+Hence one cannot find an open neighborhood of a nonzero point excluding
+$0$.
+:::
+
+<1>6. Therefore, for the included-point topology,
+\[
+\boxed{
+\text{compact: no},
+\qquad
+\text{largest }T_i:T_0.
+}
+\]
+
+::: {.proof}
+Combine steps <1>4--<1>5.
+:::
+
+<1>7. The lower-limit line
+\[
+\mathbb R_\ell
+\]
+is Hausdorff.
+
+::: {.proof}
+Its standard basis consists of intervals
+\[
+[a,b).
+\]
+Let
+\[
+x<y.
+\]
+Then
+\[
+\left[x,\frac{x+y}{2}\right)
+\]
+and
+\[
+[y,y+1)
+\]
+are disjoint open neighborhoods of $x$ and $y$.
+Thus
+\[
+\mathbb R_\ell
+\]
+is Hausdorff, hence $T_1$.
+:::
+
+<1>8. The lower-limit line is normal.
+
+::: {.proof}
+Let
+\[
+A,B\subseteq\mathbb R_\ell
+\]
+be disjoint closed sets.
+
+For each
+\[
+a\in A,
+\]
+the open set
+\[
+\mathbb R_\ell\setminus B
+\]
+contains $a$.
+Choose
+\[
+r_a>a
+\]
+such that
+\[
+[a,r_a)
+\subseteq
+\mathbb R_\ell\setminus B.
+\]
+Similarly, for each
+\[
+b\in B,
+\]
+choose
+\[
+s_b>b
+\]
+such that
+\[
+[b,s_b)
+\subseteq
+\mathbb R_\ell\setminus A.
+\]
+
+Define
+\[
+U
+=
+\bigcup_{a\in A}[a,r_a),
+\qquad
+V
+=
+\bigcup_{b\in B}[b,s_b).
+\]
+Then $U,V$ are open,
+\[
+A\subseteq U,
+\qquad
+B\subseteq V.
+\]
+
+Suppose
+\[
+x\in U\cap V.
+\]
+Then for some
+\[
+a\in A,
+\qquad
+b\in B,
+\]
+\[
+x\in[a,r_a)\cap[b,s_b).
+\]
+Assume
+\[
+a\le b.
+\]
+Since
+\[
+b\le x<r_a,
+\]
+one has
+\[
+b\in[a,r_a),
+\]
+contradicting the choice
+\[
+[a,r_a)\cap B=\varnothing.
+\]
+The case
+\[
+b\le a
+\]
+is symmetric.
+Thus
+\[
+U\cap V=\varnothing.
+\]
+Hence
+\[
+\mathbb R_\ell
+\]
+is normal.
+:::
+
+<1>9. Therefore
+\[
+\mathbb R_\ell
+\]
+is
+\[
+T_4.
+\]
+
+::: {.proof}
+By step <1>7 it is $T_1$, and by step <1>8 it is normal.
+Thus it is $T_4$.
+In fact, the Sorgenfrey line is perfectly normal, but $T_4$ is the highest
+level requested in the standard finite hierarchy.
+:::
+
+<1>10. The lower-limit line is not compact.
+
+::: {.proof}
+The family
+\[
+\mathcal U
+=
+\{[n,n+2):n\in\mathbb Z\}
+\]
+is an open cover of
+\[
+\mathbb R_\ell.
+\]
+Indeed, every real number belongs to one of these intervals.
+
+Any finite subfamily is bounded above and below, so it cannot cover all of
+\[
+\mathbb R.
+\]
+Thus no finite subcover exists.
+:::
+
+<1>11. Therefore, for the lower-limit line,
+\[
+\boxed{
+\text{compact: no},
+\qquad
+\text{largest }T_i:T_4.
+}
+\]
+
+::: {.proof}
+Combine steps <1>9--<1>10.
+:::
+
+<1>12. The subspace
+\[
+[0,1]\subset\mathbb R_\ell
+\]
+is
+\[
+T_4.
+\]
+
+::: {.proof}
+The interval
+\[
+[0,1]
+\]
+is closed in
+\[
+\mathbb R_\ell.
+\]
+Indeed,
+\[
+(-\infty,0)
+\]
+and
+\[
+(1,\infty)
+\]
+are open in the lower-limit topology, so the complement is open.
+
+A closed subspace of a normal space is normal.
+Also the $T_1$ property is hereditary to subspaces.
+By steps <1>7--<1>8,
+\[
+\mathbb R_\ell
+\]
+is normal and $T_1$.
+Hence
+\[
+[0,1]
+\]
+is $T_4$.
+:::
+
+<1>13. The subspace
+\[
+[0,1]\subset\mathbb R_\ell
+\]
+is not compact.
+
+::: {.proof}
+For
+\[
+n\ge2,
+\]
+let
+\[
+U_n
+=
+\left[
+0,
+1-\frac1n
+\right).
+\]
+Each $U_n$ is open in the subspace topology.
+Also
+\[
+\{1\}
+=
+[1,2)\cap[0,1]
+\]
+is open in the subspace.
+
+The family
+\[
+\{U_n:n\ge2\}
+\cup
+\{\{1\}\}
+\]
+covers $[0,1]$ because
+\[
+\bigcup_{n\ge2}U_n
+=
+[0,1).
+\]
+
+Take any finite subfamily.
+Among the chosen $U_n$, let
+\[
+N
+\]
+be the largest index.
+Their union is contained in
+\[
+\left[
+0,
+1-\frac1N
+\right).
+\]
+Even after adding
+\[
+\{1\},
+\]
+the interval
+\[
+\left[
+1-\frac1N,
+1
+\right)
+\]
+remains uncovered.
+Thus there is no finite subcover.
+:::
+
+<1>14. Therefore, for
+\[
+[0,1]\subset\mathbb R_\ell,
+\]
+\[
+\boxed{
+\text{compact: no},
+\qquad
+\text{largest }T_i:T_4.
+}
+\]
+
+::: {.proof}
+Combine steps <1>12--<1>13.
+:::
+
+<1>15. The complete table is
+\[
+\boxed{
+\begin{array}{c|cc}
+\text{space}
+&\text{compact?}
+&\text{largest }T_i\\
+\hline
+\text{excluded-point }\mathbb R
+&\mathrm{yes}
+&T_0\\
+\text{included-point }\mathbb R
+&\mathrm{no}
+&T_0\\
+\mathbb R_\ell
+&\mathrm{no}
+&T_4\\
+[0,1]\subset\mathbb R_\ell
+&\mathrm{no}
+&T_4
+\end{array}
+}
+\]
+
+::: {.proof}
+Collect steps <1>3, <1>6, <1>11, and <1>14.
+:::
+
+<1>16. Q.E.D.
+
+::: {.proof}
+Step <1>15 gives all requested classifications.
+:::
+:::

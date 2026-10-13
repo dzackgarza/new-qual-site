@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked every partition of the 2-primary and 3-primary exponents, all six orders, and the pairwise distinct group exponents."
 ---
-
 ::: {.problem}
 (a) State the structure theorem for finite Abelian groups.
 
@@ -85,7 +84,7 @@ possibility is realized.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The six listed groups are pairwise nonisomorphic.
 
@@ -104,6 +103,12 @@ rows are isomorphic. Combined with step [](#s2){.pf-ref}, this proves both
 exhaustiveness and absence of repetitions.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), while steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the complete classification required in part (b).
 
 :::
 

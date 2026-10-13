@@ -31,3 +31,83 @@ such that $f(0) = 1$, $f'(0) = 0$, and $f''(0) = a^2$. How many positive values 
 (D) $3$
 (E) more than $3$
 :::
+
+::: {.solution}
+<1>1. The general real solution of the differential equation is
+$$
+y=c_1e^{ax}+c_2\cos(ax)+c_3\sin(ax).
+$$
+
+::: {.proof}
+The characteristic polynomial factors as
+$$
+r^3-ar^2+a^2r-a^3
+=(r-a)(r^2+a^2).
+$$
+Its roots are $a,ia,-ia$, so the displayed expression is the general real solution.
+:::
+
+<1>2. The initial conditions give
+$$
+c_1=1,\qquad c_2=0,\qquad c_3=-1.
+$$
+
+::: {.proof}
+From step <1>1,
+$$
+y(0)=c_1+c_2=1.
+$$
+Differentiating gives
+$$
+y'
+=ac_1e^{ax}-ac_2\sin(ax)+ac_3\cos(ax),
+$$
+so
+$$
+y'(0)=a(c_1+c_3)=0.
+$$
+Also,
+$$
+y''
+=a^2c_1e^{ax}-a^2c_2\cos(ax)-a^2c_3\sin(ax),
+$$
+so
+$$
+y''(0)=a^2(c_1-c_2)=a^2.
+$$
+Because $a>0$, these equations reduce to
+$$
+c_1+c_2=1,\qquad c_1+c_3=0,\qquad c_1-c_2=1,
+$$
+whose solution is the displayed triple.
+:::
+
+<1>3. Thus
+$$
+f(x)=e^{ax}-\sin(ax).
+$$
+
+::: {.proof}
+Substitute the constants from step <1>2 into the general solution in step <1>1.
+:::
+
+<1>4. There are
+$$
+\boxed{0}
+$$
+positive values of $x$ satisfying $f(x)=0$, so the answer is (A).
+
+::: {.proof}
+If $x>0$, then $a>0$ implies $e^{ax}>1$. On the other hand, $\sin(ax)\le1$. Hence step <1>3 gives
+$$
+f(x)=e^{ax}-\sin(ax)>0
+$$
+for every positive $x$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested number of positive zeros and corresponding choice.
+:::
+:::

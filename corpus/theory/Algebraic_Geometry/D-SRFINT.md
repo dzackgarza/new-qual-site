@@ -21,13 +21,13 @@ prompts:
 ---
 
 ::: {.definition}
-Let $X$ be a smooth projective surface.
+Let $X$ be a smooth projective surface over an algebraically closed field.
 There is a unique symmetric bilinear pairing
 $$
 \Div(X) \times \Div(X) \to \ZZ , \qquad (C,D) \mapsto C \cdot D ,
 $$
-which counts points for transverse smooth curves and depends only on linear equivalence classes.
-$C^2 = C \cdot C$ is the \dfn{self-intersection}. Fixing a very ample $H$, the \dfn{degree} of a curve $C$ in the embedding determined by $H$ is $C \cdot H$.
+which, for transverse smooth curves, counts their intersection points with multiplicity one and depends only on linear equivalence classes.
+$C^2 = C \cdot C$ is the \dfn{self-intersection}. Fixing a very ample divisor $H$, the **degree** of a curve $C$ in the embedding defined by $H$ is $C \cdot H$.
 :::
 
 ::: {.remark}

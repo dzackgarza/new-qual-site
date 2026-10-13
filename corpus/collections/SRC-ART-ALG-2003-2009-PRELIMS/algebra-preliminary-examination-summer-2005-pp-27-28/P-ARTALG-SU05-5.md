@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked characteristic 3, the distinction between root counts and multiplicities, and splitting of x^8-1 as a divisor of x^80-1."
 ---
-
 ::: {.problem}
 Let $F$ be a field of 81 elements.
 For each of the following polynomials, determine the number of roots that lie in $F$: $x^{80}-1$, $x^{81}-1$, $x^{88}-1$.
@@ -72,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The polynomial $x^{81}-1$ has exactly one root in $F$.
 
@@ -83,13 +82,15 @@ $(u-v)^3=u^3-v^3$. Iterating four times yields
 $$
 x^{81}-1=(x-1)^{81}.
 $$
-Hence the only root is $1$, with multiplicity $81$.
+Hence the only root is $1$, with multiplicity $81$. Counting
+multiplicity would not give the number of distinct elements of
+$F$ requested here.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The polynomial $x^{88}-1$ has exactly $8$ roots in $F$.
 
@@ -110,6 +111,12 @@ distinct linear factors in $F[x]$ [@DF04]. Its degree is $8$,
 so it has exactly $8$ distinct roots in $F$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the three requested root counts.
 
 :::
 

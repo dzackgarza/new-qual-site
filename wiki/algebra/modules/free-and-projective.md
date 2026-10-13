@@ -22,7 +22,7 @@ An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomo
 
 [[FF-CY5EA]]
 
-[[FD-BPUNZ]] [[FD-U6KUJ]]
+[[FD-BPUNZ]]
 
 [[FD-SK4ON]]
 
@@ -35,8 +35,6 @@ Every free module is projective, and every short exact sequence $0\to A\to B\to 
 Over a PID, a finitely generated torsion-free module is free, so finitely generated projective and free modules coincide.
 
 [[D-RHJMK]]
-
-[[FD-6XJ7D]]
 
 [[PR-RPL4Q]]
 

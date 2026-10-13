@@ -23,3 +23,148 @@ a_{ij}=\frac1{i+j-1}.
 \]
 Prove that $A$ is positive definite.
 :::
+
+::: {.solution}
+<1>1. For every $1\le i,j\le n$,
+\[
+a_{ij}
+=
+\int_0^1 x^{i+j-2}\,dx.
+\]
+
+::: {.proof}
+Since
+\[
+i+j-2\ge0,
+\]
+one has
+\[
+\int_0^1x^{i+j-2}\,dx
+=
+\left[
+\frac{x^{i+j-1}}{i+j-1}
+\right]_0^1
+=
+\frac1{i+j-1}.
+\]
+:::
+
+<1>2. Let
+\[
+c=
+\begin{pmatrix}
+c_1\\
+\vdots\\
+c_n
+\end{pmatrix}
+\in\mathbb R^n.
+\]
+Then
+\[
+c^tAc
+=
+\int_0^1
+\left(
+\sum_{i=1}^n c_i x^{i-1}
+\right)^2
+\,dx.
+\]
+
+::: {.proof}
+Using step <1>1,
+\[
+\begin{aligned}
+c^tAc
+&=
+\sum_{i,j=1}^n c_i a_{ij}c_j\\
+&=
+\sum_{i,j=1}^n
+c_ic_j
+\int_0^1x^{i+j-2}\,dx\\
+&=
+\int_0^1
+\sum_{i,j=1}^n
+c_ic_jx^{i-1}x^{j-1}
+\,dx\\
+&=
+\int_0^1
+\left(
+\sum_{i=1}^n c_ix^{i-1}
+\right)^2
+\,dx.
+\end{aligned}
+\]
+The interchange of finite sums and the integral is immediate.
+:::
+
+<1>3. If $c\ne0$, then the polynomial
+\[
+p_c(x)=\sum_{i=1}^n c_i x^{i-1}
+\]
+is not identically zero.
+
+::: {.proof}
+If $p_c$ were the zero polynomial, all of its coefficients
+\[
+c_1,\ldots,c_n
+\]
+would vanish.
+That would imply $c=0$, contrary to hypothesis.
+:::
+
+<1>4. If $c\ne0$, then
+\[
+\int_0^1 p_c(x)^2\,dx>0.
+\]
+
+::: {.proof}
+By step <1>3, the polynomial $p_c$ is nonzero.
+A nonzero polynomial has only finitely many roots.
+Hence there is some
+\[
+x_0\in[0,1]
+\]
+with
+\[
+p_c(x_0)\ne0.
+\]
+By continuity, there is a nontrivial interval around $x_0$ on which
+\[
+|p_c(x)|\ge\eta>0
+\]
+for some $\eta$.
+Therefore
+\[
+\int_0^1p_c(x)^2\,dx>0.
+\]
+:::
+
+<1>5. For every nonzero $c\in\mathbb R^n$,
+\[
+\boxed{c^tAc>0}.
+\]
+
+::: {.proof}
+Combine steps <1>2 and <1>4.
+:::
+
+<1>6. Therefore
+\[
+\boxed{A\text{ is positive definite}}.
+\]
+
+::: {.proof}
+The defining condition for positive definiteness of a real symmetric matrix is that
+\[
+c^tAc>0
+\]
+for every nonzero vector $c$.
+Step <1>5 verifies this condition.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::

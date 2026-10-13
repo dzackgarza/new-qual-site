@@ -17,46 +17,58 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Prove Theorem 3.4.
 :::
 
-:::: {.solution}
+::: {.solution}
+Let $a<b$, let $f:[a,b]\to\mathbb R$ be continuous with $f(a)<f(b)$, and fix $y\in(f(a),f(b))$, as in [[T-RA-WORKSHOP-D4-3-4|Theorem 3.4]].
 
 ::: pf
 
 ::: pf-step
 
-Set up a sup.
-Proof: assume $f(a) < f(b)$ and fix $x$ with $f(a) < x < f(b)$.
-Let $E = \{t \in [a,b] : f(t) \le x\}$; then $a \in E$ (so $E \ne \varnothing$) and $E$ is bounded above by $b$.
-Let $c = \sup E$.
+The set $E:=\{t\in[a,b]:f(t)\leq y\}$ has a supremum $c\in[a,b]$.
+
+::: pf-proof
+
+Since $f(a)<y$, the point $a$ belongs to $E$. Every element of $E$ is at most $b$. Thus $E$ is nonempty and bounded above, so completeness of $\mathbb R$ gives $c:=\sup E\in[a,b]$.
 
 :::
 
-::: pf-step
+:::
 
-$c \in (a,b)$.
-Proof: by continuity at $a$, since $f(a) < x$, there is $\delta > 0$ with $f < x$ on $[a, a+\delta)$, so $c \ge a + \delta > a$.
-By continuity at $b$, since $f(b) > x$, there is $\delta' > 0$ with $f > x$ on $(b-\delta', b]$, so $E \subseteq [a, b-\delta']$ and $c \le b - \delta' < b$.
+::: {.pf-step #s2}
+
+The supremum satisfies $a<c<b$.
+
+::: pf-proof
+
+Continuity at $a$ and $f(a)<y$ give some $\eta>0$ such that $f(t)<y$ whenever $t\in[a,b]$ and $|t-a|<\eta$. Choosing $t\in(a,\min\{b,a+\eta\})$ shows $t\in E$, hence $c\geq t>a$.
+
+Continuity at $b$ and $f(b)>y$ give some $\theta>0$ such that $f(t)>y$ whenever $t\in[a,b]$ and $|t-b|<\theta$. Therefore every element of $E$ is at most $b-\min\{\theta/2,(b-a)/2\}$, so $c<b$.
 
 :::
 
-::: pf-step
+:::
 
-$f(c) = x$.
-Proof: suppose $f(c) < x$.
-By continuity at $c$ there is $\delta > 0$ with $f(t) < x$ for $t \in (c - \delta, c + \delta)$; then $c + \delta/2 \in E$, contradicting $c = \sup E$.
-Suppose $f(c) > x$.
-By continuity at $c$ there is $\delta > 0$ with $f(t) > x$ on $(c - \delta, c + \delta)$, so no point of $(c - \delta, c]$ lies in $E$, making $c - \delta$ an upper bound of $E$ smaller than $c$ — contradiction.
-Hence $f(c) = x$.
+::: {.pf-step #s3}
+
+The point $c$ satisfies $f(c)=y$.
+
+::: pf-proof
+
+Suppose $f(c)<y$. By continuity at $c$, there is $\delta>0$ such that $f(t)<y$ for $t\in[a,b]$ with $|t-c|<\delta$. By step [](#s2){.pf-ref}, one may choose $t\in(c,\min\{b,c+\delta\})$. Then $t\in E$ and $t>c$, contradicting that $c$ is an upper bound of $E$.
+
+Suppose instead $f(c)>y$. Continuity at $c$ gives $\delta>0$ such that $f(t)>y$ whenever $t\in[a,b]$ and $|t-c|<\delta$. By the defining property of the supremum, there is $t\in E$ with $c-\min\{\delta/2,(c-a)/2\}<t\leq c$. This contradicts $f(t)>y$. Both strict inequalities are impossible, hence $f(c)=y$.
+
+:::
 
 :::
 
 ::: pf-qed
 
-Proof: $c \in (a,b)$ with $f(c) = x$; the case $f(a) > f(b)$ follows by applying this to $-f$, and $f(a) = f(b)$ cannot occur with $f(a) < x < f(b)$.
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} provide $c\in(a,b)$ with $f(c)=y$, as required.
 
 :::
 

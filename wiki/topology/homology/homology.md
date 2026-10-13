@@ -40,15 +40,16 @@ $$
 :::
 
 ::: {.remark}
-Homology does not commute with products: $H_2(S^1\cross S^1)\cong\ZZ$, while $H_2(S^1)\cross H_2(S^1)=0$.
-For a finite product, the Künneth theorem computes $H_k$.
-If the homology groups of $A$ are free, then
+In general $H_{k} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{k} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_k$.
+If the integral homology groups of $A$ are free, then
 $$
-H_{k} (A\cross B) \cong \bigoplus_{i+j=k} H_{i}(A) \tensor H_{j}(B)
+H_{k} (A\cross B) \cong \bigoplus_{i+j=k} H_{i}(A) \tensor_\ZZ H_{j}(B)
 $$
-and if the homology groups of $X_1,\ldots,X_{k-1}$ are free, iterating gives
+and if the integral homology groups of $X_1,\ldots,X_{k-1}$ are free, iterating gives
 $$
-H_{n}\qty{\prod_{j=1}^k X_{j}} \cong \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bigotimes_{i=1}^{k} H_{x_{i}}(X_{i}),
+H_{n}\qty{\prod_{j=1}^k X_{j}} \cong
+\bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)}
+H_{x_1}(X_1) \tensor_\ZZ \cdots \tensor_\ZZ H_{x_k}(X_k),
 $$
 where $\mathcal P(n,k)$ is the set of $k$-tuples $\mathbf x=(x_1,\ldots,x_k)$ of nonnegative integers with $x_1+\cdots+x_k=n$.
 

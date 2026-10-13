@@ -58,9 +58,29 @@ Let $P$ be a full-dimensional lattice polytope.
 
 1. $X_P$ is the toric variety of the normal fan $\Sigma_P$.
 
-2. If $0$ lies in the interior of $P$, then $\Sigma_P$ is the fan of cones over the proper faces of the polar dual $P^\circ$.
+2. If $0\in\operatorname{int}P$, define
+   $$
+   P^\circ
+   \coloneqq
+   \theset{
+   u\in N_\RR
+   \st
+   \inner{m}{u}\geq-1
+   \text{ for every }m\in P
+   }.
+   $$
+   Then $P^\circ$ is a rational polytope and $\Sigma_P$ is the fan of cones over its proper faces.
 
-3. For a vertex $m$ of $P$, the maximal cone $\sigma_m$ of $\Sigma_P$ has dual cone $\dualof{\sigma_m}=\Cone(P \intersect M - m)$, the cone of directions out of $m$, and $X_P = \Union_{m \text{ a vertex}} \Spec k[\Cone(P \intersect M - m) \intersect M]$.
+3. A direct affine cover indexed by the vertices:
+   $$
+   X_P
+   =
+   \Union_{v\in\operatorname{Vert}(P)}
+   \Spec k[\Cone(P-v)\intersect M].
+   $$
+   Here $\Cone(P-v)\subseteq M_\RR$ is the cone of directions out of the vertex $v$, dual to the maximal normal cone $\sigma_v\subseteq N_\RR$.
+
+The direct gluing description realizes explicitly what the normal-fan and polar-dual descriptions encode combinatorially.
 :::
 
 ::: {.remark}

@@ -21,7 +21,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Let $|G|=pq$ where $p$ and $q$ are prime, $p<q$.
 a. Show that $G$ is not a simple group.
@@ -52,7 +51,7 @@ Thus \(n_q\in\{1,p\}\). Since \(p<q\), the value \(p\) cannot be congruent to \(
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Consequently, \(G\) is not simple.
 
@@ -82,7 +81,7 @@ Hence \(n_p\in\{1,q\}\). If \(n_p=q\), then \(q\equiv1\pmod p\), i.e. \(p\mid(q-
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Under the hypothesis of step [](#s3){.pf-ref}, one has
 \[
@@ -98,7 +97,7 @@ Let \(P\) and \(Q\) be the unique Sylow \(p\)- and \(q\)-subgroups. They are nor
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 If \(p\mid(q-1)\), then up to isomorphism the possibilities are
 \[
@@ -117,6 +116,12 @@ The cyclic group \(C_{pq}\) always occurs. Since
 the divisibility \(p\mid(q-1)\) gives a subgroup of order \(p\) in \(\operatorname{Aut}(C_q)\), hence a nontrivial homomorphism \(C_p\to\operatorname{Aut}(C_q)\) and therefore a nonabelian semidirect product \(C_q\rtimes C_p\). Because \(\operatorname{Aut}(C_q)\) is cyclic, it has a unique subgroup of order \(p\); all nontrivial actions have the same image and yield isomorphic semidirect products. Thus these are exactly the two isomorphism types.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), step [](#s4){.pf-ref} proves part (b), and step [](#s5){.pf-ref} answers part (c).
 
 :::
 

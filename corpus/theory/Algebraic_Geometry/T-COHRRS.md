@@ -1,9 +1,9 @@
 ---
 schema: qual/card@1
 id: T-COHRRS
-kind: theorem
-title: Riemann--Roch for surfaces
-slogan: 'On a surface, Riemann--Roch replaces degree by $\frac12D\cdot(D-K)$; with Serre duality, positivity turns Euler characteristic into sections.'
+kind: proposition
+title: An effectivity criterion from surface Riemann--Roch
+slogan: 'Surface Riemann--Roch plus Serre duality forces effectivity once the Euler characteristic is positive and $K-D$ has no sections.'
 classification:
   areas:
   - algebraic-geometry
@@ -15,40 +15,48 @@ relations:
 - kind: uses
   target: T-COHSD
 - kind: uses
+  target: T-SRFRR
+- kind: uses
   target: D-COHEULER
+- kind: related-to
+  target: T-MWDVL
 review: draft
 prompts:
-- State Riemann--Roch for a surface.
 - How do you show a divisor on a surface is effective?
 ---
 
-::: {.theorem title="Riemann--Roch for curves"}
-Let $C$ be a smooth projective curve of genus $g$ and $D$ a divisor of degree $d$ on $C$.
-Then
-\[
-h^0\qty{\OO_C(D)} - h^0\qty{\OO_C(K_C - D)} = d - g + 1 ,
-\]
-equivalently $\chi\qty{\OO_C(D)} = d - g + 1$.
-In particular $h^0(D) - h^0(K_C - D) = \deg D - g + 1$.
+::: {.proposition}
+Let $X$ be a smooth projective surface with canonical divisor $K_X$, and let $D$ be a divisor. If
+$$
+H^0(X,\OO_X(K_X-D))=0
+$$
+and
+$$
+\chi(\OO_X)+\frac12D\cdot(D-K_X)>0,
+$$
+then $H^0(X,\OO_X(D))\ne0$, so $D$ is linearly equivalent to an effective divisor.
 :::
 
-::: {.theorem title="Riemann--Roch for surfaces"}
-Let $X$ be a smooth projective surface with canonical divisor $K$, and $D$ any divisor.
-Then
-\[
-\chi\qty{\OO_X(D)} = \chi\qty{\OO_X} + \frac{1}{2} D \cdot (D - K) .
-\]
+::: {.proof}
+By [[T-SRFRR]],
+$$
+\chi(\OO_X(D))
+=\chi(\OO_X)+\frac12D\cdot(D-K_X).
+$$
+Serre duality gives
+$$
+h^2(X,\OO_X(D))=h^0(X,\OO_X(K_X-D))=0.
+$$
+Therefore
+$$
+h^0(D)=\chi(\OO_X(D))+h^1(D)>0.
+$$
 :::
 
 ::: {.remark}
-The curve case is the same statement with $\deg$ in place of the intersection pairing, and the surface case is the first one where the correction term is quadratic rather than linear.
-$\chi(\OO_X) = 1 - q + p_g$ is the constant, with $q = h^1(\OO_X)$ the irregularity.
-
-What it is used for is existence, not counting.
-Serre duality turns $h^2(D)$ into $h^0(K-D)$, so
-\[
-h^0(D) \geq \chi(\OO_X) + \tfrac{1}{2} D\cdot(D-K) - h^0(K - D) ,
-\]
-and once $D$ is positive enough that $K - D$ has no sections, a large right-hand side forces $h^0(D) > 0$ and hence $D$ effective.
-That inequality gives a standard sufficient criterion for nonemptiness of a linear system.
+For example, if $H$ is ample and $(K_X-D)\cdot H<0$, then $K_X-D$ cannot be effective, so the first hypothesis holds. The constant term may be written
+$$
+\chi(\OO_X)=1-q(X)+p_g(X)
+$$
+using the invariants in [[D-COHEULER]]. The curve analogue is [[T-MWDVL]].
 :::

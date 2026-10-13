@@ -23,3 +23,295 @@ f(x+1)=f(x)\qquad\text{and}\qquad f(2x)=f(x)
 \]
 for almost every $x\in\mathbb R$. Show that there exists a constant $c\in\mathbb R$ such that $f(x)=c$ for almost every $x\in\mathbb R$.
 :::
+
+::: {.solution}
+Since \(f\) is bounded and measurable, its restriction to \([0,1]\) lies in
+\[
+L^2([0,1]).
+\]
+
+For each \(n\in\mathbb Z\), define the Fourier coefficient
+\[
+\boxed{
+\widehat f(n)
+=
+\int_0^1
+f(x)e^{-2\pi i n x}\,dx}.
+\]
+
+<1>1. For every \(n\in\mathbb Z\),
+\[
+\widehat f(n)
+=
+\int_0^1
+f(2x)e^{-2\pi i n x}\,dx.
+\]
+
+::: {.proof}
+The relation
+\[
+f(2x)=f(x)
+\]
+holds for almost every \(x\), so replacing \(f(x)\) by \(f(2x)\) does not change the integral.
+:::
+
+<1>2. Split the integral at \(1/2\):
+\[
+\widehat f(n)
+=
+\int_0^{1/2}
+f(2x)e^{-2\pi i n x}\,dx
++
+\int_{1/2}^{1}
+f(2x)e^{-2\pi i n x}\,dx.
+\]
+
+::: {.proof}
+This is additivity of the Lebesgue integral.
+:::
+
+<1>3. In the first integral, the substitution
+\[
+u=2x
+\]
+gives
+\[
+\boxed{
+\int_0^{1/2}
+f(2x)e^{-2\pi i n x}\,dx
+=
+\frac12
+\int_0^1
+f(u)e^{-\pi i n u}\,du}.
+\]
+
+::: {.proof}
+One has
+\[
+dx=\frac12\,du
+\]
+and
+\[
+e^{-2\pi i n x}
+=
+e^{-\pi i n u}.
+\]
+:::
+
+<1>4. In the second integral, set
+\[
+u=2x-1.
+\]
+Then
+\[
+\boxed{
+\int_{1/2}^{1}
+f(2x)e^{-2\pi i n x}\,dx
+=
+\frac{(-1)^n}{2}
+\int_0^1
+f(u)e^{-\pi i n u}\,du}.
+\]
+
+::: {.proof}
+Here
+\[
+2x=u+1,
+\qquad
+dx=\frac12\,du.
+\]
+By the almost-everywhere periodicity,
+\[
+f(u+1)=f(u)
+\]
+for almost every \(u\). Also,
+\[
+e^{-2\pi i n x}
+=
+e^{-\pi i n(u+1)}
+=
+(-1)^n e^{-\pi i n u}.
+\]
+Substitute these identities.
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+\widehat f(n)
+=
+\frac{1+(-1)^n}{2}
+\int_0^1
+f(u)e^{-\pi i n u}\,du}.
+\]
+
+::: {.proof}
+Combine steps <1>2--<1>4.
+:::
+
+<1>6. If \(n\) is odd, then
+\[
+\boxed{
+\widehat f(n)=0}.
+\]
+
+::: {.proof}
+For odd \(n\),
+\[
+1+(-1)^n=0.
+\]
+Apply step <1>5.
+:::
+
+<1>7. If \(n=2m\) is even, then
+\[
+\boxed{
+\widehat f(2m)=\widehat f(m)}.
+\]
+
+::: {.proof}
+For \(n=2m\),
+\[
+\frac{1+(-1)^n}{2}=1,
+\]
+and
+\[
+e^{-\pi i n u}
+=
+e^{-2\pi i m u}.
+\]
+Thus step <1>5 becomes
+\[
+\widehat f(2m)
+=
+\int_0^1
+f(u)e^{-2\pi i m u}\,du
+=
+\widehat f(m).
+\]
+:::
+
+Now let
+\[
+n\ne0.
+\]
+
+<1>8. Write
+\[
+\boxed{
+n=2^k q}
+\]
+where \(k\ge0\) and \(q\) is odd.
+
+::: {.proof}
+Factor out the highest power of \(2\) dividing the nonzero integer \(n\).
+:::
+
+<1>9. Iterating step <1>7 gives
+\[
+\boxed{
+\widehat f(n)=\widehat f(q)}.
+\]
+
+::: {.proof}
+Apply
+\[
+\widehat f(2m)=\widehat f(m)
+\]
+successively \(k\) times.
+:::
+
+<1>10. Since \(q\) is odd,
+\[
+\boxed{
+\widehat f(q)=0}.
+\]
+
+::: {.proof}
+Apply step <1>6.
+:::
+
+<1>11. Hence
+\[
+\boxed{
+\widehat f(n)=0}
+\]
+for every
+\[
+n\ne0.
+\]
+
+::: {.proof}
+Combine steps <1>9--<1>10.
+:::
+
+Set
+\[
+c=\widehat f(0)
+=
+\int_0^1f(x)\,dx.
+\]
+
+<1>12. The function
+\[
+g=f-c
+\]
+has all Fourier coefficients equal to \(0\).
+
+::: {.proof}
+For \(n\ne0\), use step <1>11. For \(n=0\),
+\[
+\widehat g(0)
+=
+\widehat f(0)-c
+=
+0.
+\]
+:::
+
+<1>13. Therefore
+\[
+\boxed{
+g=0}
+\]
+almost everywhere on \([0,1]\).
+
+::: {.proof}
+The trigonometric system
+\[
+\{e^{2\pi i n x}:n\in\mathbb Z\}
+\]
+is complete in \(L^2([0,1])\). A function orthogonal to every basis vector must be \(0\) in \(L^2\), hence almost everywhere.
+:::
+
+<1>14. Thus
+\[
+\boxed{
+f(x)=c}
+\]
+for almost every \(x\in[0,1]\).
+
+::: {.proof}
+This is step <1>13 with \(g=f-c\).
+:::
+
+<1>15. The same equality holds for almost every \(x\in\mathbb R\).
+
+::: {.proof}
+For each integer \(m\), the relation
+\[
+f(x+m)=f(x)
+\]
+holds almost everywhere by iterating the given period-\(1\) relation. Translating the null exceptional set from \([0,1]\) to each interval \([m,m+1]\) preserves nullity. Taking the countable union over \(m\in\mathbb Z\) still gives a null set. Hence
+\[
+f=c
+\]
+almost everywhere on \(\mathbb R\).
+:::
+
+<1>16. Q.E.D.
+
+::: {.proof}
+Step <1>15 is the required conclusion.
+:::
+:::

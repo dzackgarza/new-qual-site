@@ -22,61 +22,139 @@ Define
 G \definedas \theset{z\in \CC\suchthat \Re(z) > 0, \, \abs{z-1} > 1}
 .\]
 
-Find all of the injective conformal maps $G\to \DD$.
+Find all injective conformal maps of $G$ onto $\DD$.
 These may be expressed as compositions of maps, but explain why this list is complete.
 :::
 
 ::: {.solution}
-Interpreting a conformal map $G\to\mathbb D$ here as a biholomorphism onto
-$\mathbb D$, first construct one such map. Put
-\[
-T(z)=\frac1z.
-\]
-Since
-\[
-\operatorname{Re}\frac1z=\frac{\operatorname{Re}z}{|z|^2},
-\]
-the condition $\operatorname{Re}z>0$ becomes $\operatorname{Re}T(z)>0$.
-Moreover
-\[
+<1>1. The inversion
+$$
+T(z)=\frac1z
+$$
+maps $G$ biholomorphically onto the strip
+$$
+S=\left\{w:0<\Re w<\frac12\right\}.
+$$
+
+::: {.proof}
+Because $\Re z>0$, the point $z=0$ does not lie in $G$, so $T$ is
+holomorphic there. Also
+$$
+\Re\frac1z=\frac{\Re z}{|z|^2}>0.
+$$
+The second defining inequality for $G$ is
+$$
 |z-1|>1
-\iff |z|^2>2\operatorname{Re}z
-\iff \operatorname{Re}\frac1z<\frac12.
-\]
-Thus $T$ maps $G$ biholomorphically onto the vertical strip
-\[
-S=\{w:0<\operatorname{Re}w<1/2\}.
-\]
-Next
-\[
+\iff
+|z|^2-2\Re z>0
+\iff
+\frac{\Re z}{|z|^2}<\frac12
+\iff
+\Re\frac1z<\frac12.
+$$
+Thus $T(G)=S$. Since inversion is its own inverse, it is a
+biholomorphism between these domains.
+:::
+
+<1>2. The exponential map
+$$
 E(w)=e^{2\pi i w}
-\]
-maps $S$ biholomorphically onto the upper half-plane, and the Cayley map
-\[
+$$
+maps $S$ biholomorphically onto the upper half-plane $\HH$.
+
+::: {.proof}
+Write $w=x+iy$. Then
+$$
+E(w)=e^{-2\pi y}e^{2\pi i x}.
+$$
+For $0<x<1/2$, its argument lies in $(0,\pi)$, so $E(S)\subseteq\HH$.
+Conversely, every $\zeta\in\HH$ has a unique polar representation
+$$
+\zeta=\rho e^{i\theta},
+\qquad
+\rho>0,
+\quad
+0<\theta<\pi.
+$$
+Taking
+$$
+w=\frac{\theta}{2\pi}-\frac{i}{2\pi}\log\rho
+$$
+gives $w\in S$ and $E(w)=\zeta$, proving surjectivity.
+
+If $E(w_1)=E(w_2)$, then $w_1-w_2\in\ZZ$. But both real parts lie in
+$(0,1/2)$, so their difference has real part in $(-1/2,1/2)$; the only
+possible integer is $0$. Thus $w_1=w_2$. Since
+$E'(w)=2\pi iE(w)\ne0$, the map is biholomorphic.
+:::
+
+<1>3. The Cayley map
+$$
 C(\zeta)=\frac{\zeta-i}{\zeta+i}
-\]
-maps the upper half-plane biholomorphically onto $\mathbb D$. Hence
-\[
-\Phi(z)=C(E(T(z)))
+$$
+maps $\HH$ biholomorphically onto $\DD$.
+
+::: {.proof}
+This is the standard Cayley transform. Directly, if $\Im\zeta>0$, then
+$$
+|\zeta-i|^2
+=|\zeta|^2+1-2\Im\zeta
+<|\zeta|^2+1+2\Im\zeta
+=|\zeta+i|^2,
+$$
+so $|C(\zeta)|<1$. Its inverse is
+$$
+C^{-1}(w)=i\frac{1+w}{1-w},
+$$
+which maps $\DD$ into $\HH$ and is holomorphic there.
+:::
+
+<1>4. Hence
+$$
+\Phi(z)
+=C(E(T(z)))
 =\frac{e^{2\pi i/z}-i}{e^{2\pi i/z}+i}
-\]
-is one biholomorphism $G\to\mathbb D$.
+$$
+is a biholomorphism $G\to\DD$.
 
-Every disk automorphism has the form
-\[
-A_{a,\theta}(w)=e^{i\theta}\frac{w-a}{1-\bar a w},
-\qquad a\in\mathbb D,\quad \theta\in\mathbb R.
-\]
-Therefore all conformal bijections $G\to\mathbb D$ are
-\[
-\boxed{A_{a,\theta}\circ\Phi}.
-\]
-Indeed, if $F:G\to\mathbb D$ is any other biholomorphism, then
-$F\circ\Phi^{-1}$ is an automorphism of $\mathbb D$, so it is one of the
-$A_{a,\theta}$ above. This also proves completeness of the list.
+::: {.proof}
+This is the composition of the three biholomorphisms in steps
+<1>1--<1>3.
+:::
 
-If ``injective conformal map into $\mathbb D$'' is read without the usual
-onto requirement, the displayed family is not exhaustive (for example
-$r\Phi$, $0<r<1$, is injective but not onto); the classification above is the
-standard conformal-equivalence interpretation of the question.
+<1>5. Every biholomorphism $F:G\to\DD$ has the form
+$$
+\boxed{
+F=A_{a,\theta}\circ\Phi,
+\qquad
+A_{a,\theta}(w)
+=e^{i\theta}\frac{w-a}{1-\bar a w}}
+$$
+for some $a\in\DD$ and $\theta\in\RR$.
+
+::: {.proof}
+Let $F:G\to\DD$ be any biholomorphism. Since $\Phi$ is a
+biholomorphism by step <1>4,
+$$
+A=F\circ\Phi^{-1}
+$$
+is an automorphism of the unit disk. Every automorphism of $\DD$ has the
+form
+$$
+A_{a,\theta}(w)
+=e^{i\theta}\frac{w-a}{1-\bar a w},
+$$
+with $a\in\DD$ and $\theta\in\RR$. Hence
+$F=A_{a,\theta}\circ\Phi$.
+
+Conversely, each $A_{a,\theta}$ is a disk automorphism, so every displayed
+composition is again a biholomorphism from $G$ onto $\DD$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the complete list of injective conformal maps of $G$ onto
+$\DD$ and proves its completeness.
+:::
 :::

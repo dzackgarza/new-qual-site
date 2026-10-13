@@ -28,3 +28,47 @@ on the set $S=\{1,2,3,4,5,6\}$?
 (D) $4$
 (E) $6$
 :::
+
+::: {.solution}
+<1>1. In disjoint-cycle notation,
+$$
+\sigma=(1\ 5)(2\ 6\ 4\ 3).
+$$
+
+::: {.proof}
+From the two-line notation,
+$$
+1\mapsto5\mapsto1,
+$$
+which gives the cycle $(1\ 5)$. Starting at $2$ gives
+$$
+2\mapsto6\mapsto4\mapsto3\mapsto2,
+$$
+which gives $(2\ 6\ 4\ 3)$. These cycles contain all six elements and are disjoint.
+:::
+
+<1>2. The order of $\sigma$ is
+$$
+\operatorname{lcm}(2,4)=4.
+$$
+
+::: {.proof}
+For a permutation written as a product of disjoint cycles, a positive power is the identity exactly when its exponent is divisible by every cycle length. Thus the least positive exponent giving the identity is the least common multiple of the cycle lengths from step <1>1.
+:::
+
+<1>3. Therefore
+$$
+\boxed{\operatorname{ord}(\sigma)=4},
+$$
+so the answer is (D).
+
+::: {.proof}
+This is the value computed in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested order.
+:::
+:::

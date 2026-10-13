@@ -23,3 +23,123 @@ Prove, without merely quoting the rank-nullity theorem, that
 \dim\ker T+\dim\operatorname{range}T=n.
 \]
 :::
+
+::: {.solution}
+<1>1. Let
+\[
+v_1,\ldots,v_k
+\]
+be a basis of $\ker T$.
+
+::: {.proof}
+The kernel is a subspace of the finite-dimensional vector space $V$, so it has a finite basis. Write
+\[
+k=\dim\ker T.
+\]
+:::
+
+<1>2. Extend the basis in step <1>1 to a basis
+\[
+v_1,\ldots,v_k,v_{k+1},\ldots,v_n
+\]
+of $V$.
+
+::: {.proof}
+Every linearly independent set in a finite-dimensional vector space extends to a basis.
+:::
+
+<1>3. The vectors
+\[
+Tv_{k+1},\ldots,Tv_n
+\]
+span $\operatorname{range}T$.
+
+::: {.proof}
+Let $w\in\operatorname{range}T$. Then
+\[
+w=Tv
+\]
+for some
+\[
+v=\sum_{i=1}^n a_iv_i.
+\]
+Since $v_i\in\ker T$ for $i\le k$,
+\[
+w
+=
+Tv
+=
+\sum_{i=k+1}^n a_iTv_i.
+\]
+Hence the displayed vectors span the range.
+:::
+
+<1>4. The vectors
+\[
+Tv_{k+1},\ldots,Tv_n
+\]
+are linearly independent.
+
+::: {.proof}
+Suppose
+\[
+\sum_{i=k+1}^n a_iTv_i=0.
+\]
+Then
+\[
+T\left(\sum_{i=k+1}^n a_iv_i\right)=0,
+\]
+so
+\[
+\sum_{i=k+1}^n a_iv_i\in\ker T
+=
+\operatorname{span}\{v_1,\ldots,v_k\}.
+\]
+But it also lies in
+\[
+\operatorname{span}\{v_{k+1},\ldots,v_n\}.
+\]
+Since the full list in step <1>2 is a basis, these two spans intersect only in $0$. Therefore
+\[
+a_{k+1}=\cdots=a_n=0.
+\]
+:::
+
+<1>5. One has
+\[
+\dim\operatorname{range}T=n-k.
+\]
+
+::: {.proof}
+By steps <1>3--<1>4, the $n-k$ vectors
+\[
+Tv_{k+1},\ldots,Tv_n
+\]
+form a basis of $\operatorname{range}T$.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\dim\ker T+\dim\operatorname{range}T=n
+}.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+\dim\ker T=k,
+\]
+and by step <1>5,
+\[
+\dim\operatorname{range}T=n-k.
+\]
+Adding gives $n$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 proves the desired formula without invoking rank-nullity as a black box.
+:::
+:::

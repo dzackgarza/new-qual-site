@@ -19,7 +19,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Show that there exist no simple groups of order 148.
 :::
@@ -61,15 +60,24 @@ The positive divisors of \(4\) are \(1,2,4\). Among these, only \(1\) is congrue
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
-Therefore \(G\) is not simple.
+Therefore
+$$
+\boxed{G\text{ is not simple}}.
+$$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, the Sylow \(37\)-subgroup is unique, hence normal. Its order is \(37\), so it is nontrivial and proper in \(G\). Thus \(G\) has a nontrivial proper normal subgroup and cannot be simple.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

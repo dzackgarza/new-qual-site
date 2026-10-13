@@ -20,9 +20,9 @@ prompts:
 
 ::: {.example}
 On $X = \CC^*$ take the exponential sequence
-\[
+$$
 0 \to \underline{\ZZ} \xrightarrow{\ 2\pi i\ } \OO_X \xrightarrow{\ \exp\ } \OO_X^* \to 0 .
-\]
+$$
 It is exact as a sequence of sheaves, because it is exact on stalks: near any point a nonvanishing holomorphic function has a logarithm.
 
 It is not exact as a sequence of presheaves.
@@ -34,9 +34,9 @@ So the image presheaf fails the gluing axiom, and sheafifying it is exactly what
 
 ::: {.remark}
 The same sequence, taken in cohomology, is where the Picard group comes from:
-\[
+$$
 H^1(X, \OO) \to H^1(X, \OO^*) \to H^2(X, \ZZ) ,
-\]
+$$
 with $H^1(X,\OO^*) = \Pic(X)$ and the right-hand map the first Chern class.
 The failure to glue here and the failure of surjectivity on global sections in [[PR-C9ZEK]] are the same phenomenon counted twice.
 :::

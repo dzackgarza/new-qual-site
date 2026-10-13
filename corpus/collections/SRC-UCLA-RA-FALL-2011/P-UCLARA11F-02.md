@@ -30,3 +30,369 @@ f\longmapsto \int_{S^2}\int_{S^2} f(x+y)\,d\sigma(x)\,d\sigma(y)
 \]
 extends uniquely from $C_c^\infty(\mathbb R^3)$ to a bounded linear functional on $L^2(\mathbb R^3)$.
 :::
+
+::: {.solution}
+Use the Fourier-transform convention
+\[
+\widehat \mu(\xi)
+=
+\int_{\mathbb R^3}e^{ix\cdot\xi}\,d\mu(x)
+\]
+for finite measures.
+
+## Part (a)
+
+Fix
+\[
+\xi\in\mathbb R^3,
+\qquad
+\rho=|\xi|.
+\]
+
+<1>1. By rotational invariance of surface measure, the integral depends only on \(\rho\).
+
+::: {.proof}
+If \(R\in SO(3)\), then
+\[
+d\sigma(Rx)=d\sigma(x)
+\]
+and
+\[
+(Rx)\cdot(R\xi)=x\cdot\xi.
+\]
+Thus rotating \(\xi\) does not change the integral.
+:::
+
+<1>2. We may therefore assume
+\[
+\boxed{\xi=(0,0,\rho)}.
+\]
+
+::: {.proof}
+Choose a rotation sending \(\xi/|\xi|\) to the north-pole direction when \(\xi\ne0\). The case \(\xi=0\) is immediate.
+:::
+
+<1>3. Parametrize
+\[
+S^2
+\]
+by spherical coordinates
+\[
+x=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta),
+\]
+with
+\[
+0\le\theta\le\pi,
+\qquad
+0\le\phi<2\pi.
+\]
+
+::: {.proof}
+This is the standard spherical-coordinate parametrization.
+:::
+
+<1>4. In these coordinates,
+\[
+x\cdot\xi
+=
+\rho\cos\theta
+\]
+and
+\[
+d\sigma
+=
+\sin\theta\,d\theta\,d\phi.
+\]
+
+::: {.proof}
+The dot product uses only the third coordinate, and the standard surface-area element on \(S^2\) is \(\sin\theta\,d\theta\,d\phi\).
+:::
+
+<1>5. Hence
+\[
+\int_{S^2}e^{ix\cdot\xi}\,d\sigma(x)
+=
+2\pi
+\int_0^\pi
+e^{i\rho\cos\theta}\sin\theta\,d\theta.
+\]
+
+::: {.proof}
+Integrate first in \(\phi\), which contributes the factor \(2\pi\).
+:::
+
+<1>6. With
+\[
+u=\cos\theta,
+\]
+one obtains
+\[
+2\pi
+\int_{-1}^{1}
+e^{i\rho u}\,du.
+\]
+
+::: {.proof}
+Since
+\[
+du=-\sin\theta\,d\theta,
+\]
+the bounds \(\theta=0,\pi\) become \(u=1,-1\), and reversing them removes the minus sign.
+:::
+
+<1>7. If \(\rho>0\),
+\[
+\int_{-1}^{1}e^{i\rho u}\,du
+=
+\frac{e^{i\rho}-e^{-i\rho}}{i\rho}
+=
+\frac{2\sin\rho}{\rho}.
+\]
+
+::: {.proof}
+Integrate the exponential explicitly.
+:::
+
+<1>8. Therefore, for \(\xi\ne0\),
+\[
+\boxed{
+\int_{S^2}e^{ix\cdot\xi}\,d\sigma(x)
+=
+4\pi\frac{\sin|\xi|}{|\xi|}}.
+\]
+
+::: {.proof}
+Combine steps <1>5--<1>7.
+:::
+
+<1>9. At \(\xi=0\),
+\[
+\boxed{
+\int_{S^2}1\,d\sigma=4\pi}.
+\]
+
+::: {.proof}
+This is the normalization of surface measure given in the problem.
+:::
+
+<1>10. Thus, with the continuous value at the origin,
+\[
+\boxed{
+\widehat\sigma(\xi)
+=
+4\pi
+\frac{\sin|\xi|}{|\xi|}}.
+\]
+
+::: {.proof}
+Since
+\[
+\frac{\sin r}{r}\to1
+\]
+as \(r\to0\), the formula from step <1>8 extends continuously to the value \(4\pi\) in step <1>9.
+:::
+
+## Part (b)
+
+Let
+\[
+\nu=\sigma*\sigma.
+\]
+
+<1>11. For every
+\[
+f\in C_c^\infty(\mathbb R^3),
+\]
+the functional in the problem equals
+\[
+\boxed{
+\int_{\mathbb R^3}f(z)\,d\nu(z)}.
+\]
+
+::: {.proof}
+By the definition of convolution of finite measures,
+\[
+\int f(z)\,d(\sigma*\sigma)(z)
+=
+\int_{S^2}\int_{S^2}
+f(x+y)\,d\sigma(x)\,d\sigma(y).
+\]
+:::
+
+<1>12. The Fourier transform of \(\nu\) is
+\[
+\boxed{
+\widehat\nu(\xi)
+=
+\widehat\sigma(\xi)^2}.
+\]
+
+::: {.proof}
+Fourier transform converts convolution of finite measures into pointwise multiplication:
+\[
+\widehat{\sigma*\sigma}
+=
+\widehat\sigma\,\widehat\sigma.
+\]
+:::
+
+<1>13. By part (a),
+\[
+|\widehat\nu(\xi)|^2
+=
+(4\pi)^4
+\frac{\sin^4|\xi|}{|\xi|^4}.
+\]
+
+::: {.proof}
+Square
+\[
+\widehat\nu
+=
+\widehat\sigma^2
+\]
+and use step <1>10.
+:::
+
+<1>14. In polar coordinates on \(\mathbb R^3\),
+\[
+\int_{\mathbb R^3}
+|\widehat\nu(\xi)|^2\,d\xi
+=
+C
+\int_0^\infty
+\frac{\sin^4 r}{r^2}\,dr
+\]
+for a positive constant \(C\).
+
+::: {.proof}
+The Euclidean volume element is
+\[
+d\xi=4\pi r^2\,dr
+\]
+after integrating over the unit sphere. Combine this with the factor \(r^{-4}\) from step <1>13.
+:::
+
+<1>15. The integral
+\[
+\int_0^1
+\frac{\sin^4 r}{r^2}\,dr
+\]
+converges.
+
+::: {.proof}
+For \(0<r\le1\),
+\[
+|\sin r|\le r,
+\]
+so
+\[
+0\le
+\frac{\sin^4 r}{r^2}
+\le
+r^2,
+\]
+and \(\int_0^1r^2\,dr<\infty\).
+:::
+
+<1>16. The integral
+\[
+\int_1^\infty
+\frac{\sin^4 r}{r^2}\,dr
+\]
+also converges.
+
+::: {.proof}
+Since
+\[
+|\sin r|\le1,
+\]
+\[
+0\le
+\frac{\sin^4 r}{r^2}
+\le
+\frac1{r^2},
+\]
+and \(\int_1^\infty r^{-2}\,dr<\infty\).
+:::
+
+<1>17. Hence
+\[
+\boxed{
+\widehat\nu\in L^2(\mathbb R^3)}.
+\]
+
+::: {.proof}
+Combine steps <1>14--<1>16.
+:::
+
+<1>18. By Plancherel, there exists
+\[
+g\in L^2(\mathbb R^3)
+\]
+whose Fourier transform is \(\widehat\nu\).
+
+::: {.proof}
+The Fourier transform is an isomorphism of \(L^2(\mathbb R^3)\) onto itself up to the usual normalization constant.
+:::
+
+<1>19. As tempered distributions,
+\[
+\boxed{\nu=g\,dx}.
+\]
+
+::: {.proof}
+The finite measure \(\nu\) defines a tempered distribution whose Fourier transform is \(\widehat\nu\). The \(L^2\) function \(g\) defines a tempered distribution with the same Fourier transform by step <1>18. Fourier transform is injective on tempered distributions, so the two distributions are equal.
+:::
+
+<1>20. Therefore, for
+\[
+f\in C_c^\infty(\mathbb R^3),
+\]
+the functional is
+\[
+\boxed{
+\Lambda(f)
+=
+\int_{\mathbb R^3}f(z)g(z)\,dz}.
+\]
+
+::: {.proof}
+Combine steps <1>11 and <1>19.
+:::
+
+<1>21. By Cauchy--Schwarz,
+\[
+\boxed{
+|\Lambda(f)|
+\le
+\|g\|_{L^2}\,
+\|f\|_{L^2}}.
+\]
+
+::: {.proof}
+Apply the \(L^2\) Cauchy--Schwarz inequality to step <1>20.
+:::
+
+<1>22. Hence \(\Lambda\) is bounded with respect to the \(L^2\)-norm on \(C_c^\infty(\mathbb R^3)\).
+
+::: {.proof}
+Step <1>21 gives a uniform linear bound.
+:::
+
+<1>23. Since
+\[
+C_c^\infty(\mathbb R^3)
+\]
+is dense in \(L^2(\mathbb R^3)\), \(\Lambda\) extends uniquely to a bounded linear functional on \(L^2(\mathbb R^3)\).
+
+::: {.proof}
+Every bounded linear functional on a dense subspace extends uniquely and continuously to the completion.
+:::
+
+<1>24. Q.E.D.
+
+::: {.proof}
+Step <1>10 proves part (a), and step <1>23 proves part (b).
+:::
+:::

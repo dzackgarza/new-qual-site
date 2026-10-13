@@ -23,7 +23,57 @@ If $|G|=144$ and $|H|=25$, prove that any homomorphism $\varphi:G\to H$ is trivi
 :::
 
 ::: {.solution}
-Proof.
-Giveng∈G. By Lagrange’s Theorem for G, we have g144 =eG Since φ is a homomorphism, we have (φ(g))144 =φ(g144) =φ(eG) =eH. Thus, φ(g), which is an element of H, has ﬁnite order m = o(φ(g)) that divides 144. On the other hand, by Lagrange’s Theorem forH, we also havem|25, since|H| = 25. Thus, m is a common divisor of 144 = 2432 and 25 = 52. Since gcd(144, 25) = gcd(2432, 52) = 1, we must have o ( φ(g) ) = 1. Thus, φ(g) =eH, as desired.
-QED
+<1>1. For every $g\in G$, the order of $\varphi(g)$ divides $144$.
+::: {.proof}
+By Lagrange's theorem in $G$,
+$$
+g^{144}=e_G.
+$$
+Applying the homomorphism $\varphi$ gives
+$$
+\varphi(g)^{144}
+=\varphi(g^{144})
+=\varphi(e_G)
+=e_H.
+$$
+Hence
+$$
+\operatorname{ord}(\varphi(g))\mid144.
+$$
+:::
+
+<1>2. For every $g\in G$, the order of $\varphi(g)$ also divides $25$.
+::: {.proof}
+The element $\varphi(g)$ lies in the finite group $H$ of order $25$. Therefore Lagrange's theorem gives
+$$
+\operatorname{ord}(\varphi(g))\mid25.
+$$
+:::
+
+<1>3. Therefore $\varphi(g)=e_H$ for every $g\in G$.
+::: {.proof}
+By step <1>1 and step <1>2,
+$$
+\operatorname{ord}(\varphi(g))
+\mid\gcd(144,25)=1.
+$$
+Thus
+$$
+\operatorname{ord}(\varphi(g))=1,
+$$
+so $\varphi(g)=e_H$.
+:::
+
+<1>4. Hence
+$$
+\boxed{\varphi\text{ is trivial}}.
+$$
+::: {.proof}
+Step <1>3 holds for arbitrary $g\in G$.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::

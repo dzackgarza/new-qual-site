@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked all stated Sylow-count consequences and the faithful coset action, including why a proper subgroup makes the kernel proper and why infinite simple groups are also excluded."
 ---
-
 ::: {.problem}
 a. Let $G$ be a finite group of order $p^k m$ where $p$ is prime and $(p,m) = 1$.
 Let $n_p$ be the number of subgroups of $G$ of order $p^k$.
@@ -35,11 +34,17 @@ b. Show that a non-abelian simple group $G$ has no proper subgroup of index $\le
 (You may assume without proof that the alternating group $A_5$ is the smallest non-abelian simple group.)
 :::
 
+::: {.remark}
+The proper-subgroup qualification in part (b) is necessary:
+every group is a subgroup of itself of index $1$. Thus
+the nontrivial assertion excludes indices $2,3,4$.
+:::
+
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For part (a), the Sylow count satisfies
 $$
@@ -77,7 +82,7 @@ $p+1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 A nonabelian simple group has no proper subgroup
 of index at most $4$.
@@ -97,11 +102,20 @@ coset $H$ to the different coset $gH$. Simplicity
 therefore makes the kernel trivial.
 
 Thus $G$ embeds in $S_n$, so it is finite and
-$|G|\leq n!\leq24$. Since $A_5$ is the smallest
-nonabelian simple group, $|G|\geq|A_5|=5!/2=60$,
-a contradiction.
+$|G|\leq n!\leq24$. The permitted fact that $A_5$
+is the smallest nonabelian simple group gives instead
+$|G|\geq|A_5|=5!/2=60$, a contradiction. The argument
+does not assume beforehand that the simple group is
+finite; finiteness follows from the faithful action.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} records the requested Sylow-count facts in part (a), and
+step [](#s2){.pf-ref} proves part (b).
 
 :::
 

@@ -24,3 +24,271 @@ Find all matrices that $P$ could be.
 
 Hint: it is a very small finite set.
 :::
+
+::: {.solution}
+<1>1. For an idempotent map $P$,
+\[
+V=\operatorname{im}P\oplus\ker P.
+\]
+
+::: {.proof}
+For every $v\in V$,
+\[
+v
+=
+Pv+(v-Pv).
+\]
+The first term belongs to $\operatorname{im}P$, while
+\[
+P(v-Pv)
+=
+Pv-P^2v
+=0,
+\]
+so the second term belongs to $\ker P$.
+
+If
+\[
+w\in\operatorname{im}P\cap\ker P,
+\]
+then $w=Pu$ for some $u$, so
+\[
+Pw=P^2u=Pu=w,
+\]
+while $Pw=0$ because $w\in\ker P$.
+Thus $w=0$.
+:::
+
+<1>2. Under the orthogonality hypothesis
+\[
+\operatorname{im}P=(\ker P)^\perp,
+\]
+the map $P$ is the orthogonal projection onto $\operatorname{im}P$ and is represented by a symmetric matrix.
+
+::: {.proof}
+By step <1>1, every $v$ decomposes uniquely as
+\[
+v=u+k,
+\qquad
+u\in\operatorname{im}P,
+\quad
+k\in\ker P.
+\]
+Since
+\[
+\operatorname{im}P=(\ker P)^\perp,
+\]
+the two summands are orthogonal.
+Moreover
+\[
+Pv=u.
+\]
+Thus $P$ is the usual orthogonal projection onto $\operatorname{im}P$, hence self-adjoint.
+In the standard orthonormal basis of $\mathbb R^3$, its matrix is symmetric.
+:::
+
+<1>3. The rank of $P$ is $2$.
+
+::: {.proof}
+Since
+\[
+P^2=P,
+\]
+the only eigenvalues of $P$ are $0$ and $1$.
+Hence
+\[
+\operatorname{rank}P
+=
+\operatorname{trace}P.
+\]
+The prescribed diagonal entries give
+\[
+\operatorname{trace}P
+=
+\frac23+\frac12+\frac56
+=
+\frac{4+3+5}{6}
+=2.
+\]
+Therefore
+\[
+\operatorname{rank}P=2.
+\]
+:::
+
+<1>4. The kernel of $P$ is one-dimensional.
+
+::: {.proof}
+By rank-nullity in $\mathbb R^3$ and step <1>3,
+\[
+\dim\ker P
+=
+3-2
+=1.
+\]
+:::
+
+<1>5. Let $u=(u_1,u_2,u_3)^t$ be a unit vector spanning $\ker P$.
+Then
+\[
+\boxed{P=I-uu^t}.
+\]
+
+::: {.proof}
+By step <1>2, $P$ is the orthogonal projection onto
+\[
+(\ker P)^\perp=u^\perp.
+\]
+For any $v\in\mathbb R^3$,
+\[
+v=(v-(u\cdot v)u)+(u\cdot v)u,
+\]
+with the first term in $u^\perp$ and the second in $\operatorname{span}\{u\}$.
+Thus
+\[
+Pv=v-(u\cdot v)u
+=(I-uu^t)v.
+\]
+:::
+
+<1>6. The diagonal conditions imply
+\[
+u_1^2=\frac13,
+\qquad
+u_2^2=\frac12,
+\qquad
+u_3^2=\frac16.
+\]
+
+::: {.proof}
+By step <1>5,
+\[
+p_{ii}=1-u_i^2.
+\]
+Therefore
+\[
+u_1^2
+=
+1-\frac23
+=
+\frac13,
+\]
+\[
+u_2^2
+=
+1-\frac12
+=
+\frac12,
+\]
+and
+\[
+u_3^2
+=
+1-\frac56
+=
+\frac16.
+\]
+Their sum is $1$, consistent with $\|u\|=1$.
+:::
+
+<1>7. Replacing $u$ by $-u$ does not change $P$, so every possible projection is obtained by taking
+\[
+u_{\varepsilon,\delta}
+=
+\begin{pmatrix}
+\frac1{\sqrt3}\\[1mm]
+\frac{\varepsilon}{\sqrt2}\\[1mm]
+\frac{\delta}{\sqrt6}
+\end{pmatrix},
+\qquad
+\varepsilon,\delta\in\{\pm1\}.
+\]
+
+::: {.proof}
+Step <1>6 determines the absolute value of every coordinate of $u$.
+There are $2^3$ sign choices, but
+\[
+uu^t=(-u)(-u)^t,
+\]
+so opposite vectors define the same projection.
+Fixing the first sign to be positive leaves exactly four distinct possibilities, parameterized by $\varepsilon,\delta$.
+:::
+
+<1>8. The four possible matrices are
+\[
+\boxed{
+P_{\varepsilon,\delta}
+=
+\begin{pmatrix}
+\frac23&
+-\frac{\varepsilon}{\sqrt6}&
+-\frac{\delta}{3\sqrt2}\\[2mm]
+-\frac{\varepsilon}{\sqrt6}&
+\frac12&
+-\frac{\varepsilon\delta}{2\sqrt3}\\[2mm]
+-\frac{\delta}{3\sqrt2}&
+-\frac{\varepsilon\delta}{2\sqrt3}&
+\frac56
+\end{pmatrix},
+\qquad
+\varepsilon,\delta\in\{\pm1\}.
+}
+\]
+
+::: {.proof}
+Substitute the vector from step <1>7 into
+\[
+P=I-uu^t.
+\]
+The diagonal entries are the prescribed ones by step <1>6.
+The off-diagonal entries are
+\[
+-u_1u_2
+=
+-\frac{\varepsilon}{\sqrt6},
+\]
+\[
+-u_1u_3
+=
+-\frac{\delta}{\sqrt{18}}
+=
+-\frac{\delta}{3\sqrt2},
+\]
+and
+\[
+-u_2u_3
+=
+-\frac{\varepsilon\delta}{\sqrt{12}}
+=
+-\frac{\varepsilon\delta}{2\sqrt3}.
+\]
+:::
+
+<1>9. These four matrices are all valid orthogonal projections.
+
+::: {.proof}
+For every choice of $\varepsilon,\delta$, the vector $u_{\varepsilon,\delta}$ has norm $1$.
+Hence
+\[
+P_{\varepsilon,\delta}=I-u_{\varepsilon,\delta}u_{\varepsilon,\delta}^t
+\]
+is the orthogonal projection onto
+\[
+u_{\varepsilon,\delta}^\perp.
+\]
+Thus it satisfies
+\[
+P^2=P
+\]
+and
+\[
+\operatorname{im}P=(\ker P)^\perp.
+\]
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>7--<1>9 show that the displayed four matrices are exactly all possibilities.
+:::
+:::

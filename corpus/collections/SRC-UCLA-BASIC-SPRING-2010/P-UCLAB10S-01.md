@@ -23,3 +23,190 @@ Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\mathbb R^n$, and le
 \]
 Prove that $u_1+y_1,\ldots,u_n+y_n$ are linearly independent.
 :::
+
+::: {.solution}
+<1>1. Suppose
+\[
+\sum_{i=1}^n a_i(u_i+y_i)=0
+\]
+for some scalars
+\[
+a_1,\ldots,a_n\in\mathbb R.
+\]
+
+::: {.proof}
+To prove linear independence, it suffices to show that every such linear relation has all coefficients zero.
+:::
+
+<1>2. The relation in step <1>1 implies
+\[
+\sum_{i=1}^n a_i u_i
+=
+-\sum_{i=1}^n a_i y_i.
+\]
+
+::: {.proof}
+Move the perturbation sum to the right-hand side.
+:::
+
+<1>3. Since $u_1,\ldots,u_n$ is orthonormal,
+\[
+\left\|
+\sum_{i=1}^n a_i u_i
+\right\|^2
+=
+\sum_{i=1}^n a_i^2.
+\]
+
+::: {.proof}
+Expand the squared norm:
+\[
+\left\|
+\sum_i a_i u_i
+\right\|^2
+=
+\sum_{i,j}a_ia_j\langle u_i,u_j\rangle.
+\]
+Orthonormality gives
+\[
+\langle u_i,u_j\rangle=\delta_{ij},
+\]
+so only the diagonal terms remain.
+:::
+
+<1>4. By Cauchy--Schwarz,
+\[
+\left\|
+\sum_{i=1}^n a_i y_i
+\right\|
+\le
+\left(
+\sum_{i=1}^n a_i^2
+\right)^{1/2}
+\left(
+\sum_{i=1}^n\|y_i\|^2
+\right)^{1/2}.
+\]
+
+::: {.proof}
+Using the triangle inequality,
+\[
+\left\|
+\sum_i a_i y_i
+\right\|
+\le
+\sum_i|a_i|\,\|y_i\|.
+\]
+Apply the scalar Cauchy--Schwarz inequality to the sequences
+\[
+(|a_i|)
+\quad\text{and}\quad
+(\|y_i\|).
+\]
+:::
+
+<1>5. Let
+\[
+A=
+\left(
+\sum_{i=1}^n a_i^2
+\right)^{1/2}
+\]
+and
+\[
+\eta=
+\left(
+\sum_{i=1}^n\|y_i\|^2
+\right)^{1/2}.
+\]
+Then
+\[
+A\le A\eta.
+\]
+
+::: {.proof}
+By steps <1>2--<1>4,
+\[
+A
+=
+\left\|
+\sum_i a_i u_i
+\right\|
+=
+\left\|
+\sum_i a_i y_i
+\right\|
+\le
+A\eta.
+\]
+:::
+
+<1>6. One has
+\[
+\eta<1.
+\]
+
+::: {.proof}
+The hypothesis gives
+\[
+\sum_i\|y_i\|^2<1.
+\]
+Taking square roots yields
+\[
+\eta<1.
+\]
+:::
+
+<1>7. Therefore
+\[
+A=0.
+\]
+
+::: {.proof}
+If
+\[
+A>0,
+\]
+then step <1>5 allows division by $A$, giving
+\[
+1\le\eta,
+\]
+contradicting step <1>6.
+Hence
+\[
+A=0.
+\]
+:::
+
+<1>8. Thus
+\[
+a_1=\cdots=a_n=0.
+\]
+
+::: {.proof}
+By definition,
+\[
+A^2=\sum_{i=1}^n a_i^2.
+\]
+Step <1>7 gives
+\[
+\sum_i a_i^2=0.
+\]
+Each term is nonnegative, so every coefficient vanishes.
+:::
+
+<1>9. Therefore
+\[
+\boxed{u_1+y_1,\ldots,u_n+y_n\text{ are linearly independent}.}
+\]
+
+::: {.proof}
+Step <1>8 shows that the only linear relation among these vectors is the trivial one.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>9 is the required conclusion.
+:::
+:::

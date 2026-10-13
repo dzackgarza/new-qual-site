@@ -29,3 +29,323 @@ together with some diagonal entries equal to $1$ or $-1$.
 
 (b) Use part (a) to show that if $n$ is odd, then there is a nonzero vector $v$ such that $A^2v=v$.
 :::
+
+::: {.solution}
+Regard the real matrix $A$ as a complex matrix acting on $\mathbb C^n$.
+
+<1>1. Every complex eigenvalue $\lambda$ of $A$ satisfies
+\[
+|\lambda|=1.
+\]
+
+::: {.proof}
+Let
+\[
+Az=\lambda z
+\]
+with
+\[
+z\ne0.
+\]
+Since $A$ is real orthogonal,
+\[
+A^*A=A^TA=I.
+\]
+Thus $A$ preserves the Hermitian norm on $\mathbb C^n$:
+\[
+\|Az\|=\|z\|.
+\]
+But
+\[
+\|Az\|
+=
+\|\lambda z\|
+=
+|\lambda|\,\|z\|.
+\]
+Since
+\[
+\|z\|>0,
+\]
+one gets
+\[
+|\lambda|=1.
+\]
+:::
+
+<1>2. The complex operator $A$ is normal and therefore has an orthonormal basis of complex eigenvectors.
+
+::: {.proof}
+From
+\[
+A^*A=I
+\]
+one also has
+\[
+AA^*=I.
+\]
+Hence
+\[
+A^*A=AA^*,
+\]
+so $A$ is normal.
+The complex spectral theorem then gives an orthonormal eigenbasis.
+:::
+
+<1>3. Every real eigenvalue of $A$ is either
+\[
+\boxed{1}
+\qquad\text{or}\qquad
+\boxed{-1}.
+\]
+
+::: {.proof}
+By step <1>1, every eigenvalue has absolute value $1$.
+The only real numbers of absolute value $1$ are $\pm1$.
+:::
+
+<1>4. If
+\[
+\lambda=e^{i\theta}
+\]
+is a nonreal eigenvalue, then
+\[
+\overline{\lambda}=e^{-i\theta}
+\]
+is also an eigenvalue.
+
+::: {.proof}
+Because $A$ has real entries, complex conjugation commutes with $A$.
+If
+\[
+Az=\lambda z,
+\]
+then
+\[
+A\overline z
+=
+\overline{Az}
+=
+\overline{\lambda}\,\overline z.
+\]
+Thus conjugate eigenvalues occur in pairs.
+:::
+
+<1>5. Let
+\[
+z=u+iv
+\]
+be an eigenvector for a nonreal eigenvalue
+\[
+\lambda=e^{i\theta}
+=
+\cos\theta+i\sin\theta.
+\]
+Then the real plane
+\[
+P=\operatorname{span}_{\mathbb R}\{u,v\}
+\]
+is $A$-invariant.
+
+::: {.proof}
+The eigenvalue equation
+\[
+A(u+iv)
+=
+(\cos\theta+i\sin\theta)(u+iv)
+\]
+gives, by comparing real and imaginary parts,
+\[
+Au
+=
+\cos\theta\,u
+-
+\sin\theta\,v,
+\]
+and
+\[
+Av
+=
+\sin\theta\,u
++
+\cos\theta\,v.
+\]
+Thus both $Au$ and $Av$ lie in the real span of $u,v$.
+Since $\lambda$ is nonreal,
+\[
+\sin\theta\ne0,
+\]
+and $u,v$ are linearly independent; otherwise $z$ would be a complex scalar multiple of a real vector and would yield a real eigenvector with nonreal eigenvalue.
+Hence $P$ is a two-dimensional invariant plane.
+:::
+
+<1>6. The restriction
+\[
+A|_P
+\]
+is an orthogonal transformation of the real inner-product plane $P$ with determinant $1$.
+
+::: {.proof}
+Since $A$ is orthogonal on $\mathbb R^n$, its restriction to any invariant real subspace preserves the inner product.
+Thus
+\[
+A|_P
+\]
+is orthogonal.
+
+Its complex eigenvalues are
+\[
+e^{i\theta}
+\quad\text{and}\quad
+e^{-i\theta},
+\]
+so its determinant is their product:
+\[
+e^{i\theta}e^{-i\theta}=1.
+\]
+:::
+
+<1>7. There is an orthonormal basis of $P$ in which the matrix of $A|_P$ is
+\[
+\boxed{
+\begin{pmatrix}
+\cos\theta&\sin\theta\\
+-\sin\theta&\cos\theta
+\end{pmatrix}.
+}
+\]
+
+::: {.proof}
+Choose any unit vector
+\[
+e_1\in P.
+\]
+Because $A|_P$ is orientation-preserving and orthogonal by step <1>6, it is a rotation of the Euclidean plane.
+Choose the unit vector $e_2$ so that $(e_1,e_2)$ is positively oriented.
+Then for some angle $\theta$,
+\[
+Ae_1
+=
+\cos\theta\,e_1
+-
+\sin\theta\,e_2,
+\]
+and orientation preservation forces
+\[
+Ae_2
+=
+\sin\theta\,e_1
++
+\cos\theta\,e_2.
+\]
+The corresponding matrix has the displayed form.
+The eigenvalues determine the same angle modulo sign and $2\pi$.
+:::
+
+<1>8. The real space $\mathbb R^n$ decomposes orthogonally into real eigenspaces for $\pm1$ and two-dimensional invariant planes associated to nonreal conjugate pairs.
+
+::: {.proof}
+By step <1>2, $\mathbb C^n$ is an orthogonal direct sum of eigenspaces of $A$.
+The eigenspaces for the real eigenvalues $\pm1$ are invariant under conjugation and have real orthonormal bases.
+
+For every nonreal eigenvalue $\lambda$, pair its eigenspace with the conjugate eigenspace for $\overline\lambda$.
+Taking real and imaginary parts of paired complex eigenvectors produces real two-dimensional invariant planes as in step <1>5.
+Different spectral subspaces are orthogonal because $A$ is normal.
+Collecting these real pieces gives an orthogonal direct-sum decomposition of $\mathbb R^n$.
+:::
+
+<1>9. Therefore $A$ is orthogonally similar to a block-diagonal matrix whose blocks are
+\[
+\boxed{
+\begin{pmatrix}
+\cos\theta&\sin\theta\\
+-\sin\theta&\cos\theta
+\end{pmatrix}
+}
+\]
+together with $1\times1$ blocks
+\[
+\boxed{[1]}
+\qquad\text{and}\qquad
+\boxed{[-1]}.
+\]
+
+::: {.proof}
+Choose orthonormal bases in each summand of the decomposition from step <1>8.
+On each two-dimensional plane, use the basis from step <1>7.
+On the real eigenspaces, use orthonormal eigenvectors.
+The union is an orthonormal basis of $\mathbb R^n$, and the matrix of $A$ in this basis is block diagonal with exactly the stated blocks.
+This proves part (a).
+:::
+
+<1>10. Suppose now that
+\[
+n
+\]
+is odd.
+Then the block decomposition in step <1>9 contains at least one $1\times1$ block.
+
+::: {.proof}
+Every rotation block has dimension $2$.
+If all blocks had size $2$, their total dimension would be even.
+Since
+\[
+n
+\]
+is odd, at least one block must have size $1$.
+Such a block is either $[1]$ or $[-1]$.
+:::
+
+<1>11. There exists a nonzero real vector
+\[
+v
+\]
+such that
+\[
+Av=\pm v.
+\]
+
+::: {.proof}
+Take a basis vector belonging to one of the $1\times1$ blocks from step <1>10.
+If that block is $[1]$, then
+\[
+Av=v.
+\]
+If it is $[-1]$, then
+\[
+Av=-v.
+\]
+:::
+
+<1>12. Hence
+\[
+\boxed{A^2v=v}.
+\]
+
+::: {.proof}
+From step <1>11,
+\[
+Av=\pm v.
+\]
+Applying $A$ once more gives
+\[
+A^2v
+=
+A(\pm v)
+=
+\pm Av
+=
+\pm(\pm v)
+=
+v.
+\]
+Since $v$ is a basis vector, it is nonzero.
+This proves part (b).
+:::
+
+<1>13. Q.E.D.
+
+::: {.proof}
+Step <1>9 proves part (a), and step <1>12 proves part (b).
+:::
+:::

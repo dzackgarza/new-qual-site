@@ -22,10 +22,13 @@ prompts:
 ---
 
 ::: {.definition}
-For $f: X \to Y$, the functor $f_*$ is left exact; set $R^i f_* \mcf \definedas R^i(f_*)(\mcf)$.
+For $f\colon X \to Y$, the functor $f_*$ is left exact. The \dfn{$i$-th higher direct image} of a sheaf $\mcf$ is
+$$
+R^i f_*\mcf\coloneqq R^i(f_*)(\mcf).
+$$
 Equivalently, $R^i f_* \mcf$ is the sheafification of
 $$
-V \mapsto H^i\qty{\inverseof{f}(V), \restrictionof{\mcf}{\inverseof{f}(V)}} .
+V \mapsto H^i\qty{f\inv(V), \restrictionof{\mcf}{f\inv(V)}} .
 $$
 :::
 
@@ -38,9 +41,13 @@ Let $f \colon X \to Y$ be a morphism of schemes.
 :::
 
 ::: {.remark}
-If $X$ is Noetherian, $Y = \Spec A$ is affine, and $\mcf$ is quasicoherent, then $R^i f_* \mcf \cong \widetilde{H^i(X,\mcf)}$ [@Har10a, Proposition III.8.5].
-If $f$ is an affine morphism and $\mcf$ is quasicoherent, then $R^{i} f_* \mcf = 0$ for $i>0$ and $H^i(X,\mcf) \cong H^i(Y, f_*\mcf)$.
-For a closed subscheme $i\colon X\hookrightarrow\PP^n$ and a quasicoherent sheaf $\mcf$ on $X$, this gives $H^i(X,\mcf)\cong H^i(\PP^n,i_*\mcf)$.
+If $Y = \Spec A$ is affine, $f$ is quasicompact and separated, and $\mcf$ is quasicoherent, then each $R^qf_*\mcf$ is quasicoherent; affine vanishing in the Leray spectral sequence gives
+$$
+R^i f_* \mcf \cong \widetilde{H^i(X,\mcf)}
+$$
+for every $i$.
+For an arbitrary sheaf, affineness of $Y$ alone does not determine $R^i f_*\mcf$ from its global sections.
+If $f$ is an affine morphism and $\mcf$ is quasicoherent, then $R^{i>0} f_* \mcf = 0$ and $H^i(X,\mcf) \cong H^i(Y, f_*\mcf)$; a closed immersion is the case used constantly, which is why cohomology can be computed after pushing a sheaf forward from a projective subscheme to the ambient $\PP^n$.
 
-If $Y$ is Noetherian, $f$ is projective, and $\mcf$ is coherent, then $R^i f_* \mcf$ is coherent [@Har10a, Theorem III.8.8]; for $Y=\Spec k$ this is the finite-dimensionality of $H^i(X,\mcf)$ [@Har10a, Theorem III.5.2].
+For $f$ projective and $\mcf$ coherent, $R^i f_* \mcf$ is coherent, which is the relative form of Serre finiteness.
 :::

@@ -30,3 +30,117 @@ $$
 \operatorname { r a n k } ( B ) \leq \operatorname* { l i m } _ { n \to \infty } \operatorname { i n f } \operatorname { r a n k } ( A _ { n } ) .
 $$
 :::
+
+::: {.solution}
+Let
+\[
+r=\operatorname{rank}(B).
+\]
+
+<1>1. If $r=0$, then the desired inequality is immediate.
+
+::: {.proof}
+Every matrix rank is nonnegative, so
+\[
+0
+\le
+\liminf_{n\to\infty}\operatorname{rank}(A_n).
+\]
+Since $r=0$, this is exactly the desired inequality.
+:::
+
+<1>2. Assume $r>0$.
+Then $B$ has an $r\times r$ minor whose determinant is nonzero.
+
+::: {.proof}
+By the definition of matrix rank, $r$ is the largest size of a square minor with nonzero determinant.
+Hence some $r\times r$ minor of $B$ has nonzero determinant.
+:::
+
+<1>3. Fix the row and column indices of such a minor, and let
+\[
+D_n
+\]
+be the determinant of the corresponding $r\times r$ minor of $A_n$.
+Then
+\[
+D_n\to D,
+\]
+where
+\[
+D\ne0
+\]
+is the determinant of the chosen minor of $B$.
+
+::: {.proof}
+The determinant is a polynomial in the entries.
+Since the entries of $A_n$ converge to those of $B$, the selected minor converges entrywise to the chosen minor of $B$.
+Continuity of the determinant therefore gives
+\[
+D_n\to D.
+\]
+By construction, $D\ne0$.
+:::
+
+<1>4. There exists $N$ such that
+\[
+D_n\ne0
+\]
+for every $n\ge N$.
+
+::: {.proof}
+Since
+\[
+D_n\to D\ne0,
+\]
+choose $N$ so that
+\[
+|D_n-D|<\frac{|D|}{2}
+\]
+for $n\ge N$.
+Then
+\[
+|D_n|
+\ge
+|D|-|D_n-D|
+>
+\frac{|D|}{2}
+>
+0.
+\]
+:::
+
+<1>5. For every $n\ge N$,
+\[
+\operatorname{rank}(A_n)\ge r.
+\]
+
+::: {.proof}
+By step <1>4, $A_n$ has a nonzero $r\times r$ minor for every sufficiently large $n$.
+Hence its rank is at least $r$.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\operatorname{rank}(B)
+\le
+\liminf_{n\to\infty}\operatorname{rank}(A_n)
+}.
+\]
+
+::: {.proof}
+If $r=0$, use step <1>1.
+If $r>0$, step <1>5 shows that the ranks are eventually bounded below by
+\[
+r=\operatorname{rank}(B).
+\]
+Hence their lower limit is at least $r$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required inequality.
+:::
+:::

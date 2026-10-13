@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked strictness and both Galois steps of the radical tower, nonnormality of the total extension, and irreducibility and inseparability of the characteristic-two example."
 ---
-
 ::: {.problem}
 Give an example of each of the following:
 
@@ -38,7 +37,7 @@ b. A pair of fields $F \subset K$ such that $K$ is finite dimensional over $F$ b
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For part (a), take
 $$
@@ -70,7 +69,7 @@ $L/F$ is not normal and hence is not Galois.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For part (b), take
 $$
@@ -96,6 +95,13 @@ repeated root and is not separable. Hence $K/F$ is a
 finite-dimensional, nonseparable extension, as required.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} supplies the example for part (a), and step [](#s2){.pf-ref} supplies the
+example for part (b).
 
 :::
 

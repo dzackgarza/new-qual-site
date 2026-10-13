@@ -15,3 +15,380 @@ audit:
 2. Prove that the Sorgenfrey line $\mathbb R_\ell$ is separable but not second countable.
 3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\mathbb R$, where $\mathfrak c=|\mathbb R|$.
 :::
+
+::: {.solution}
+<1>1. Every second-countable space is separable.
+
+::: {.proof}
+Let
+$$
+\mathcal B
+=
+\{B_1,B_2,\ldots\}
+$$
+be a countable base for
+$$
+X.
+$$
+For every nonempty
+$$
+B_n,
+$$
+choose one point
+$$
+x_n\in B_n.
+$$
+Let
+$$
+D
+\coloneqq
+\{x_n:
+B_n\ne\varnothing\}.
+$$
+Then
+$$
+D
+$$
+is countable.
+
+To show that
+$$
+D
+$$
+is dense, let
+$$
+U\subseteq X
+$$
+be a nonempty open set. Choose
+$$
+x\in U.
+$$
+Since
+$$
+\mathcal B
+$$
+is a base, some
+$$
+B_n
+$$
+satisfies
+$$
+x\in B_n\subseteq U.
+$$
+Then
+$$
+x_n\in B_n\subseteq U,
+$$
+so every nonempty open set meets
+$$
+D.
+$$
+Hence
+$$
+\overline D=X.
+$$
+:::
+
+<1>2. The Sorgenfrey line
+$$
+\mathbb R_\ell
+$$
+is separable.
+
+::: {.proof}
+Recall that a basis for
+$$
+\mathbb R_\ell
+$$
+consists of the half-open intervals
+$$
+[a,b),
+\qquad
+a<b.
+$$
+Every such interval contains a rational number. Therefore
+$$
+\mathbb Q
+$$
+meets every nonempty basic open set, hence is dense in
+$$
+\mathbb R_\ell.
+$$
+Thus the Sorgenfrey line is separable.
+:::
+
+<1>3. The Sorgenfrey line is not second countable.
+
+::: {.proof}
+Suppose
+$$
+\mathcal B
+=
+\{B_1,B_2,\ldots\}
+$$
+were a countable base.
+
+For each
+$$
+x\in\mathbb R,
+$$
+the set
+$$
+[x,x+1)
+$$
+is an open neighborhood of
+$$
+x.
+$$
+Let
+$$
+n(x)
+$$
+be the least positive integer
+$$
+n
+$$
+such that
+$$
+x\in B_n\subseteq[x,x+1).
+$$
+Such an integer exists by the base property.
+
+The map
+$$
+x\longmapsto n(x)
+$$
+is injective. Indeed, suppose
+$$
+x<y
+$$
+and
+$$
+n(x)=n(y)=n.
+$$
+Then
+$$
+y\in B_n
+$$
+and
+$$
+B_n\subseteq[x,x+1),
+$$
+while also
+$$
+x\in B_n
+$$
+and
+$$
+B_n\subseteq[y,y+1).
+$$
+But
+$$
+x<y
+$$
+implies
+$$
+x\notin[y,y+1),
+$$
+a contradiction.
+
+Thus there would be an injection
+$$
+\mathbb R\hookrightarrow\mathbb N,
+$$
+which is impossible. Hence
+$$
+\mathbb R_\ell
+$$
+is not second countable.
+:::
+
+<1>4. Let
+$$
+X
+$$
+be separable and choose a countable dense set
+$$
+D\subseteq X.
+$$
+Two continuous maps
+$$
+f,g:X\to\mathbb R
+$$
+that agree on
+$$
+D
+$$
+agree on all of
+$$
+X.
+$$
+
+::: {.proof}
+Consider the map
+$$
+(f,g):X\to\mathbb R^2.
+$$
+The diagonal
+$$
+\Delta
+=
+\{
+(r,r):
+r\in\mathbb R
+\}
+$$
+is closed in
+$$
+\mathbb R^2.
+$$
+Hence the equalizer
+$$
+E
+\coloneqq
+\{
+x\in X:
+f(x)=g(x)
+\}
+=
+(f,g)^{-1}(\Delta)
+$$
+is closed in
+$$
+X.
+$$
+If
+$$
+f|_D=g|_D,
+$$
+then
+$$
+D\subseteq E.
+$$
+Since
+$$
+D
+$$
+is dense and
+$$
+E
+$$
+is closed,
+$$
+E=X.
+$$
+Thus
+$$
+f=g.
+$$
+:::
+
+<1>5. Restriction to
+$$
+D
+$$
+defines an injection
+$$
+\boxed{
+C(X,\mathbb R)
+\hookrightarrow
+\mathbb R^D}.
+$$
+
+::: {.proof}
+Define
+$$
+R:
+C(X,\mathbb R)
+\to
+\mathbb R^D
+$$
+by
+$$
+R(f)=f|_D.
+$$
+Step <1>4 says that
+$$
+R(f)=R(g)
+$$
+implies
+$$
+f=g.
+$$
+Hence
+$$
+R
+$$
+is injective.
+:::
+
+<1>6. One has
+$$
+|\mathbb R^D|
+\le
+\mathfrak c.
+$$
+
+::: {.proof}
+If
+$$
+D
+$$
+is finite, then
+$$
+|\mathbb R^D|
+=
+\mathfrak c.
+$$
+If
+$$
+D
+$$
+is countably infinite, then
+$$
+|\mathbb R^D|
+=
+\mathfrak c^{\aleph_0}.
+$$
+Since
+$$
+\mathfrak c
+=
+2^{\aleph_0},
+$$
+cardinal arithmetic gives
+$$
+\mathfrak c^{\aleph_0}
+=
+(2^{\aleph_0})^{\aleph_0}
+=
+2^{\aleph_0\cdot\aleph_0}
+=
+2^{\aleph_0}
+=
+\mathfrak c.
+$$
+:::
+
+<1>7. Therefore
+$$
+\boxed{
+|C(X,\mathbb R)|
+\le
+\mathfrak c}
+$$
+for every separable space
+$$
+X.
+$$
+
+::: {.proof}
+Combine the injection from step <1>5 with the cardinal bound from step <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (1), steps <1>2--<1>3 prove part (2), and steps <1>4--<1>7 prove part (3).
+:::
+:::

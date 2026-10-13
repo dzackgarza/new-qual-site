@@ -60,8 +60,9 @@ The same holds for the skyscraper sheaf at the origin of $\AA^1_k = \Spec k[x]$ 
 If $\mcf$ is quasicoherent, then $\mcf|_U\cong\widetilde{\mcf(U)}$ for every affine open $U\subseteq X$, not only for the members of one cover [@Har10a, Proposition II.5.4].
 Quasicoherent sheaves on an affine scheme have vanishing higher cohomology.
 
-An $\OO_X$-module $\mcf$ is quasicoherent if and only if every point has an open neighbourhood $U$ on which $\mcf$ has a presentation
+The practical test is local and needs no module in hand: $\mcf$ is quasicoherent exactly when every point has an affine neighbourhood on which $\mcf$ has a presentation
 $$
-\OO_U^{(I)} \to \OO_U^{(J)} \to \mcf|_U \to 0 .
+\OO_X^{(I)} \to \OO_X^{(J)} \to \mcf \to 0 .
 $$
+This presentation criterion is often easier to verify for naturally occurring sheaves than constructing an explicit module on each affine chart.
 :::

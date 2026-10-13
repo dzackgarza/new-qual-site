@@ -22,3 +22,132 @@ $$
 A = { \left[ \begin{array} { l l l l l l } { 0 } & { 0 } & { 0 } & { \dots } & { 0 } & { 1 } \\ { 1 } & { 0 } & { 0 } & { \dots } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 0 } & { \dots } & { 0 } & { 0 } \\ { \vdots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } & { \vdots } \\ { 0 } & { 0 } & { 0 } & { \dots } & { 1 } & { 0 } \end{array} \right] } ~ .\tag{3}
 $$
 :::
+
+::: {.solution}
+For
+$$
+v=
+\begin{pmatrix}
+x_1\\
+x_2\\
+\vdots\\
+x_n
+\end{pmatrix},
+$$
+one has
+$$
+Av=
+\begin{pmatrix}
+x_n\\
+x_1\\
+x_2\\
+\vdots\\
+x_{n-1}
+\end{pmatrix}.
+$$
+
+<1>1. If $Av=\lambda v$ with $v\neq0$, then
+$$
+\lambda^n=1.
+$$
+
+::: {.proof}
+The eigenvalue equation gives
+$$
+x_n=\lambda x_1
+$$
+and
+$$
+x_{j-1}=\lambda x_j,
+\qquad
+j=2,\ldots,n.
+$$
+Thus
+$$
+x_j=\lambda^{-(j-1)}x_1.
+$$
+Substituting $j=n$ into the first equation gives
+$$
+\lambda^{-(n-1)}x_1
+=
+\lambda x_1.
+$$
+An eigenvalue of the invertible shift matrix cannot be zero, and a nonzero
+eigenvector must have $x_1\neq0$ by the recurrence. Hence
+$$
+\lambda^n=1.
+$$
+:::
+
+<1>2. The eigenvalues are
+$$
+\boxed{
+\lambda_k
+=
+e^{2\pi i k/n},
+\qquad
+k=0,1,\ldots,n-1.
+}
+$$
+
+::: {.proof}
+Step <1>1 shows that every eigenvalue is an $n$th root of unity. Conversely,
+for every $n$th root of unity the vector constructed in step <1>3 is a
+nonzero eigenvector, so every such root occurs.
+:::
+
+<1>3. For an eigenvalue $\lambda$ with $\lambda^n=1$, an eigenvector is
+$$
+\boxed{
+v_\lambda
+=
+\begin{pmatrix}
+1\\
+\lambda^{-1}\\
+\lambda^{-2}\\
+\vdots\\
+\lambda^{-(n-1)}
+\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+Applying $A$ gives
+$$
+Av_\lambda
+=
+\begin{pmatrix}
+\lambda^{-(n-1)}\\
+1\\
+\lambda^{-1}\\
+\vdots\\
+\lambda^{-(n-2)}
+\end{pmatrix}.
+$$
+Since $\lambda^n=1$,
+$$
+\lambda^{-(n-1)}=\lambda.
+$$
+Therefore
+$$
+Av_\lambda
+=
+\lambda v_\lambda.
+$$
+:::
+
+<1>4. For $\lambda_k=e^{2\pi i k/n}$, the corresponding eigenspace is
+one-dimensional and is spanned by $v_{\lambda_k}$.
+
+::: {.proof}
+The recurrence in step <1>1 determines every coordinate of an eigenvector from
+$x_1$. Hence every eigenvector for a fixed $\lambda_k$ is a scalar multiple of
+$v_{\lambda_k}$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>2--<1>4 give all eigenvalues and eigenvectors.
+:::
+:::

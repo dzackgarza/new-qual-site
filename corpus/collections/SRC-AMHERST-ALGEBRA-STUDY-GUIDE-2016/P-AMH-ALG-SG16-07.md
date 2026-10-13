@@ -26,10 +26,74 @@ Prove that $NH$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
-Proof.
-(Nonempty): Since N and H are both nonempty, we may choose x∈ N and h∈ H. Then xh∈NH , so NH⁄= ∅. (Closed under ∗): Given x,y ∈ NH , write x = n1h1 and y = n2h2, for some n1,n 2 ∈ N and h1,h 2∈H. Since N is a normal subgroup of G, we have h1N =Nh 1. Thus, there is some n3∈N such that h1n2 =n3h1. So xy = (n1h1)(n2h2) =n1(h1n2)h2 =n1(n3h1)h2 = (n1n3)(h1h2)∈NH, as desired, since n1n3∈N and h1h2∈H. (Closed under inverses): Given x∈NH , write x =nh with n∈N and h∈H. Since N is a normal subgroup of G, we have hN =Nh.
-Thus, there is some n1∈N such that nh =hn1. So x−1 = (nh)−1 = (hn1)−1 =n−1 1 h−1∈NH, as desired, since n−1 1 ∈N and h−1∈H. QED Alternate Proof.
-(Nonempty): Since N andH are both nonempty, we may choose x∈N andh∈H. Then xh∈NH , so NH⁄= ∅. (Closed under ∗): Given x,y ∈ NH , write x = n1h1 and y = n2h2, for some n1,n 2 ∈ N and h1,h 2∈H. Then xy = (n1h1)(n2h2) =n1(h1n2)(h−1 1 h1)h2 = ( n1(h1n2h−1 1 ) ) (h1h2). Nown1,n 2∈N, and hence h1n2h−1 1 ∈N since N is normal, and therefore n1(h1n2h−1 1 )∈N. Since h1h2∈H, then the above equation shows xy∈NH , as desired.
-(Closed under inverses): Given x∈NH , write x =nh with n∈N and h∈H. Then x−1 = (nh)−1 =h−1n−1 = (h−1n−1h)h−1. Nowh−1n−1h∈N since N is normal in G, and h−1∈H, so the above equation shows x−1∈NH , as desired.
-QED
+<1>1. The set $NH$ is nonempty.
+::: {.proof}
+Since $e\in N$ and $e\in H$,
+$$
+e=ee\in NH.
+$$
+:::
+
+<1>2. The set $NH$ is closed under products.
+::: {.proof}
+Take
+$$
+x=n_1h_1,
+\qquad
+y=n_2h_2
+$$
+in $NH$, with $n_1,n_2\in N$ and $h_1,h_2\in H$. Then
+$$
+\begin{aligned}
+xy
+&=n_1h_1n_2h_2\\
+&=n_1(h_1n_2h_1^{-1})h_1h_2.
+\end{aligned}
+$$
+Because $N\trianglelefteq G$,
+$$
+h_1n_2h_1^{-1}\in N.
+$$
+Hence
+$$
+n_1(h_1n_2h_1^{-1})\in N
+$$
+and
+$$
+h_1h_2\in H,
+$$
+so $xy\in NH$.
+:::
+
+<1>3. The set $NH$ is closed under inverses.
+::: {.proof}
+Let
+$$
+x=nh\in NH
+$$
+with $n\in N$ and $h\in H$. Then
+$$
+x^{-1}
+=h^{-1}n^{-1}
+=(h^{-1}n^{-1}h)h^{-1}.
+$$
+Normality of $N$ gives
+$$
+h^{-1}n^{-1}h\in N,
+$$
+and $h^{-1}\in H$. Hence $x^{-1}\in NH$.
+:::
+
+<1>4. Therefore
+$$
+\boxed{NH\le G}.
+$$
+::: {.proof}
+Step <1>1 gives nonemptiness, step <1>2 gives closure under products, and step <1>3 gives closure under inverses. Hence $NH$ is a subgroup of $G$.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::

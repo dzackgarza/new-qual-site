@@ -15,34 +15,53 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Give an $\epsilon$-$\delta$ proof that $f(x)=x^{1/3}$ is continuous on $[0,1]$.
 :::
 
-:::: {.solution}
+::: {.solution}
+
 ::: pf
 
-::: pf-step
-Use the factorization $u^3 - v^3 = (u-v)(u^2 + uv + v^2)$.
-Proof: for $x, a \in [0,1]$ with $u = x^{1/3}$, $v = a^{1/3}$: \[|x^{1/3} - a^{1/3}| = \frac{|x - a|}{x^{2/3} + x^{1/3}a^{1/3} + a^{2/3}}.\]
+::: {.pf-step #s1}
+
+The function $f(x)=x^{1/3}$ is continuous at $0$.
+
+::: pf-proof
+
+Given $\varepsilon>0$, choose $\delta=\varepsilon^3$. For $x\in[0,1]$ with $|x-0|<\delta$, one has
+\[
+|f(x)-f(0)|=x^{1/3}<\delta^{1/3}=\varepsilon.
+\]
+
 :::
 
-::: pf-step
-Case $a = 0$: continuous at $0$.
-Proof: the denominator collapses: $|x^{1/3} - 0| = x^{1/3}$.
-Given $\epsilon > 0$, choose $\delta = \epsilon^3$; then $|x - 0| < \delta$ gives $x^{1/3} < \epsilon$.
 :::
 
-::: pf-step
-Case $a > 0$: continuous at $a$.
-Proof: the denominator satisfies $x^{2/3} + x^{1/3}a^{1/3} + a^{2/3} \ge a^{2/3} > 0$, so \[|x^{1/3} - a^{1/3}| \le \frac{|x - a|}{a^{2/3}}.\] Given $\epsilon > 0$, choose $\delta = \epsilon\,a^{2/3}$; then $|x - a| < \delta$ gives $|x^{1/3} - a^{1/3}| < \epsilon$.
+::: {.pf-step #s2}
+
+The function $f$ is continuous at each $a\in(0,1]$.
+
+::: pf-proof
+
+Fix $a>0$ and $\varepsilon>0$, and take $\delta=\varepsilon a^{2/3}$. For $x\in[0,1]$, factorization of $x-a$ as a difference of cubes gives
+\[
+|f(x)-f(a)|
+=\frac{|x-a|}{x^{2/3}+x^{1/3}a^{1/3}+a^{2/3}}
+\leq\frac{|x-a|}{a^{2/3}}.
+\]
+The denominator is positive because $a>0$. Whenever $|x-a|<\delta$, the displayed bound is strictly less than $\varepsilon$.
+
+:::
+
 :::
 
 ::: pf-qed
-Proof: $f$ is continuous at every $a \in [0,1]$, so continuous on $[0,1]$.
-(The same factorization shows $x \mapsto \sqrt{x}$ is continuous on $[0,\infty)$: for $a > 0$ the denominator $\sqrt{x} + \sqrt{a} \ge \sqrt{a}$; at $0$ take $\delta = \epsilon^2$.)
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} establish the $\varepsilon$-$\delta$ criterion at every point of $[0,1]$, so $f$ is continuous on the entire interval.
+
 :::
 
 :::
-::::
+
+:::

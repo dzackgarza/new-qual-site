@@ -23,3 +23,73 @@ m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 \le \sum_{i=1}^\infty m^*(A_i).
 \]
 :::
+
+::: {.solution}
+For an interval \(I\subset\mathbb R\), write \(|I|\) for its length.
+
+<1>1. For every \(A\subseteq\mathbb R\), its Lebesgue outer measure is
+\[
+\boxed{
+m^*(A)
+=\inf\left\{
+\sum_{j=1}^\infty |I_j|:
+A\subseteq\bigcup_{j=1}^\infty I_j,
+\ I_j\text{ open intervals}
+\right\}}.
+\]
+
+<1>2. If \(\sum_{i=1}^\infty m^*(A_i)=\infty\), then the required inequality holds.
+
+::: {.proof}
+The left side is nonnegative and takes values in \([0,\infty]\), so it is automatically at most \(\infty\).
+:::
+
+<1>3. Suppose \(\sum_{i=1}^\infty m^*(A_i)<\infty\). For every \(\varepsilon>0\) and every \(i\ge1\), there is a countable family of open intervals \((I_{i,j})_{j\ge1}\) such that
+\[
+A_i\subseteq\bigcup_{j=1}^\infty I_{i,j}
+\]
+and
+\[
+\sum_{j=1}^\infty |I_{i,j}|
+<m^*(A_i)+\frac{\varepsilon}{2^i}.
+\]
+
+::: {.proof}
+Under the present assumption every \(m^*(A_i)\) is finite. The assertion follows directly from the infimum in the definition in step <1>1.
+:::
+
+<1>4. One has
+\[
+m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
+\le \sum_{i=1}^\infty m^*(A_i)+\varepsilon.
+\]
+
+::: {.proof}
+By step <1>3, the countable family \((I_{i,j})_{i,j\ge1}\) covers \(\bigcup_i A_i\). Hence step <1>1 gives
+\[
+\begin{aligned}
+m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
+&\le \sum_{i=1}^\infty\sum_{j=1}^\infty |I_{i,j}|\\
+&<\sum_{i=1}^\infty\left(m^*(A_i)+\frac{\varepsilon}{2^i}\right)\\
+&=\sum_{i=1}^\infty m^*(A_i)+\varepsilon.
+\end{aligned}
+\]
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
+\le \sum_{i=1}^\infty m^*(A_i)}.
+\]
+
+::: {.proof}
+If the right side is infinite, step <1>2 applies. Otherwise step <1>4 holds for every \(\varepsilon>0\), so letting \(\varepsilon\downarrow0\) gives the displayed inequality.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the requested definition, and step <1>5 proves countable subadditivity.
+:::
+:::

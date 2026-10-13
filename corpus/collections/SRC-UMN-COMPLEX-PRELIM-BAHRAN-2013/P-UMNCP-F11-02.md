@@ -23,3 +23,167 @@ Prove that there exists an entire function \(g\) such that
 e^g=h.
 \]
 :::
+
+::: {.solution}
+<1>1. The logarithmic derivative
+$$
+\frac{h'}h
+$$
+is entire.
+
+::: {.proof}
+The functions
+$$
+h'
+\quad\text{and}\quad
+h
+$$
+are entire, and by hypothesis
+$$
+h(z)\ne0
+$$
+for every
+$$
+z\in\CC.
+$$
+Therefore the quotient is entire.
+:::
+
+<1>2. There exists an entire function $G$ such that
+$$
+\boxed{
+G'(z)
+=
+\frac{h'(z)}{h(z)}}.
+$$
+
+::: {.proof}
+Every entire function has an entire primitive because
+$$
+\CC
+$$
+is simply connected. Apply this to the entire function from step <1>1.
+:::
+
+<1>3. The entire function
+$$
+H(z)
+\coloneqq
+h(z)e^{-G(z)}
+$$
+has derivative identically zero.
+
+::: {.proof}
+Differentiate:
+$$
+\begin{aligned}
+H'(z)
+&=
+h'(z)e^{-G(z)}
+-h(z)G'(z)e^{-G(z)}\\
+&=
+e^{-G(z)}
+\left(
+h'(z)-h(z)G'(z)
+\right).
+\end{aligned}
+$$
+Using step <1>2,
+$$
+h(z)G'(z)
+=
+h(z)\frac{h'(z)}{h(z)}
+=
+h'(z).
+$$
+Hence
+$$
+H'(z)=0
+$$
+for every $z$.
+:::
+
+<1>4. There is a nonzero constant
+$$
+c\in\CC^*
+$$
+such that
+$$
+\boxed{
+h(z)=ce^{G(z)}}.
+$$
+
+::: {.proof}
+By step <1>3,
+$$
+H
+$$
+is constant on the connected plane:
+$$
+H(z)\equiv c.
+$$
+Since both
+$$
+h(z)
+$$
+and
+$$
+e^{-G(z)}
+$$
+are nowhere zero, one has
+$$
+c\ne0.
+$$
+Rearranging
+$$
+h(z)e^{-G(z)}=c
+$$
+gives the displayed formula.
+:::
+
+<1>5. Choose
+$$
+\lambda\in\CC
+$$
+such that
+$$
+e^\lambda=c.
+$$
+Then
+$$
+g
+\coloneqq
+G+\lambda
+$$
+is entire and satisfies
+$$
+\boxed{e^g=h}.
+$$
+
+::: {.proof}
+Every nonzero complex number has a complex logarithm, so such a
+$$
+\lambda
+$$
+exists. The function
+$$
+g=G+\lambda
+$$
+is entire. By step <1>4,
+$$
+e^{g(z)}
+=
+e^{G(z)}e^\lambda
+=
+ce^{G(z)}
+=
+h(z).
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 constructs the required entire logarithm.
+:::
+:::

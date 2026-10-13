@@ -24,3 +24,194 @@ Prove or disprove each assertion:
 
 2. $AB+BA$ is positive definite.
 :::
+
+::: {.solution}
+<1>1. Assertion 1 is true.
+
+::: {.proof}
+Let
+\[
+x\in\mathbb R^2
+\]
+be nonzero.
+Since $A$ and $B$ are positive definite,
+\[
+x^TAx>0
+\qquad\text{and}\qquad
+x^TBx>0.
+\]
+Therefore
+\[
+\begin{aligned}
+x^T(A+B)x
+&=
+x^TAx+x^TBx\\
+&>
+0.
+\end{aligned}
+\]
+Also $A+B$ is symmetric because both $A$ and $B$ are symmetric.
+Hence
+\[
+\boxed{A+B\text{ is positive definite}.}
+\]
+:::
+
+<1>2. Assertion 2 is false.
+
+::: {.proof}
+Consider
+\[
+A=
+\begin{pmatrix}
+4&0\\
+0&1
+\end{pmatrix},
+\qquad
+B=
+\begin{pmatrix}
+1&\frac45\\
+\frac45&1
+\end{pmatrix}.
+\]
+The following steps verify that $A$ and $B$ are positive definite while $AB+BA$ is not.
+:::
+
+<1>3. The matrix $A$ is positive definite.
+
+::: {.proof}
+For
+\[
+x=
+\begin{pmatrix}
+u\\v
+\end{pmatrix}
+\ne0,
+\]
+one has
+\[
+x^TAx
+=
+4u^2+v^2
+>
+0.
+\]
+:::
+
+<1>4. The matrix $B$ is positive definite.
+
+::: {.proof}
+The matrix is symmetric.
+Its leading principal minors are
+\[
+1>0
+\]
+and
+\[
+\det B
+=
+1-\frac{16}{25}
+=
+\frac9{25}
+>
+0.
+\]
+By Sylvester's criterion, $B$ is positive definite.
+:::
+
+<1>5. One has
+\[
+\boxed{
+AB+BA
+=
+\begin{pmatrix}
+8&4\\
+4&2
+\end{pmatrix}.
+}
+\]
+
+::: {.proof}
+Direct multiplication gives
+\[
+AB
+=
+\begin{pmatrix}
+4&\frac{16}{5}\\
+\frac45&1
+\end{pmatrix}
+\]
+and
+\[
+BA
+=
+\begin{pmatrix}
+4&\frac45\\
+\frac{16}{5}&1
+\end{pmatrix}.
+\]
+Adding yields the displayed matrix.
+:::
+
+<1>6. The nonzero vector
+\[
+v=
+\begin{pmatrix}
+1\\
+-2
+\end{pmatrix}
+\]
+satisfies
+\[
+(AB+BA)v=0.
+\]
+
+::: {.proof}
+Using step <1>5,
+\[
+\begin{pmatrix}
+8&4\\
+4&2
+\end{pmatrix}
+\begin{pmatrix}
+1\\
+-2
+\end{pmatrix}
+=
+\begin{pmatrix}
+8-8\\
+4-4
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}.
+\]
+:::
+
+<1>7. Therefore $AB+BA$ is not positive definite.
+
+::: {.proof}
+Positive definiteness would require
+\[
+v^T(AB+BA)v>0
+\]
+for every nonzero $v$.
+But step <1>6 gives
+\[
+v^T(AB+BA)v=0
+\]
+for a nonzero vector.
+Thus
+\[
+\boxed{AB+BA\text{ need not be positive definite}.}
+\]
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves assertion 1, and steps <1>2--<1>7 disprove assertion 2.
+:::
+:::

@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition title="Twisting sheaves"}
 $\OO_{\PP^n}(-1)$ is the \dfn{tautological} bundle: its fibre over $p \in \PP^n$ is the line in $\AA^{n+1}$ that $p$ is.
-Its dual is $\OO(1)$, and $\OO(n) = \OO(1)^{\tensor n}$; on $\Proj S$ these are the sheaves $\widetilde{S(n)}$ associated to the shifted graded modules.
+Its dual is $\OO(1)$. For $n\geq0$, $\OO(n)$ is the $n$-fold tensor product of $\OO(1)$ with itself over $\OO_{\PP^n}$, and $\OO(-n)=\OO(n)\dual$; on $\Proj S$ these are the sheaves $\widetilde{S(n)}$ associated to the shifted graded modules.
 :::
 
 ::: {.proposition}
@@ -37,6 +37,5 @@ of dimension $\binom{n+d}{n}$ for $d \geq 0$ and zero for $d < 0$.
 For $n \geq 1$, $\OO(-1)$ has no nonzero global sections, whereas the global sections of $\OO(1)$ are the linear forms.
 
 By Serre's theorem, every coherent sheaf on $\PP^n_k$ is a quotient of a finite sum of twists $\OO(-d_i)$.
-On a smooth projective curve, line bundles correspond to [[D-5PQ5W|divisors]] modulo linear equivalence.
-On a curve of positive genus, two line bundles of the same degree can be non-isomorphic: on an elliptic curve $E$ with origin $O$ and a point $P\ne O$, $\OO_E(P-O)$ has degree $0$ and is not isomorphic to $\OO_E$.
+On a smooth projective curve, line bundles correspond to [divisors](wiki/algebraic-geometry/divisors/index.html) modulo linear equivalence; their degree need not determine their isomorphism class.
 :::

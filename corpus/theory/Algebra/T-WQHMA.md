@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-WQHMA
 kind: theorem
 title: Spectral theorem for Hermitian and real symmetric matrices
-slogan: 'Hermitian matrices have unitary real diagonalizations; real symmetric matrices have orthogonal diagonalizations.'
+slogan: 'Hermitian matrices are unitarily diagonalizable with real eigenvalues; real symmetric matrices are orthogonally diagonalizable.'
 classification:
   areas:
   - algebra

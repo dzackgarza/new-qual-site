@@ -26,3 +26,356 @@ For connected spaces $X,Y$, give an example satisfying each statement below or s
 11. $H_2(X)\cong H_2(Y)$ but $\pi_1(X)\not\cong\pi_1(Y)$.
 12. $\pi_1(X)\cong\pi_1(Y)$ but $H_2(X)\not\cong H_2(Y)$.
 :::
+
+::: {.solution}
+<1>1. Statement (1) is possible:
+\[
+X=\{*\},
+\qquad
+Y=[0,1].
+\]
+
+::: {.proof}
+Both spaces are contractible, so
+\[
+X\simeq Y.
+\]
+They are not homeomorphic because $X$ has one point and $Y$ has more than
+one point.
+:::
+
+<1>2. Statement (2) is possible as literally stated.
+
+Take two disjoint copies of the same connected space, for example
+\[
+X=S^1\times\{0\},
+\qquad
+Y=S^1\times\{1\}
+\]
+inside
+\[
+S^1\times\mathbb R.
+\]
+
+::: {.proof}
+The two spaces are homeomorphic, hence homotopy equivalent.
+
+However, a deformation retract relation
+\[
+X\subseteq Y
+\]
+or
+\[
+Y\subseteq X
+\]
+requires literal inclusion.
+Here the two copies are disjoint, so neither is a deformation retract of the
+other.
+
+Thus the statement is possible.
+This also records that “is a deformation retract of” depends on a chosen
+inclusion, unlike homotopy equivalence.
+:::
+
+<1>3. Statement (3) is impossible.
+
+::: {.proof}
+If $X$ is a deformation retract of $Y$, then there is a retraction
+\[
+r:Y\to X
+\]
+and a homotopy
+\[
+\operatorname{id}_Y
+\simeq
+i\circ r
+\]
+fixing $X$, where
+\[
+i:X\hookrightarrow Y
+\]
+is the inclusion.
+Also
+\[
+r\circ i
+=
+\operatorname{id}_X.
+\]
+Hence
+\[
+i
+\]
+and
+\[
+r
+\]
+are homotopy inverses, so
+\[
+X\simeq Y.
+\]
+:::
+
+<1>4. Statement (4) is impossible.
+
+::: {.proof}
+Homotopy-equivalent connected spaces have isomorphic fundamental groups.
+Indeed, homotopy inverse maps induce mutually inverse homomorphisms on
+\[
+\pi_1.
+\]
+:::
+
+<1>5. Statement (5) is possible:
+\[
+X=\{*\},
+\qquad
+Y=S^2.
+\]
+
+::: {.proof}
+Both fundamental groups are trivial:
+\[
+\pi_1(X)=0
+=
+\pi_1(S^2).
+\]
+But
+\[
+H_2(X)=0,
+\qquad
+H_2(S^2)\cong\mathbb Z.
+\]
+Homotopy-equivalent spaces have isomorphic homology groups, so
+\[
+X\not\simeq Y.
+\]
+:::
+
+<1>6. Statement (6) is possible:
+\[
+X=S^1,
+\qquad
+Y=S^1\vee S^2,
+\]
+with $X$ the $S^1$ wedge summand.
+
+::: {.proof}
+Define
+\[
+r:S^1\vee S^2\to S^1
+\]
+to be the identity on the $S^1$ summand and to collapse the whole $S^2$
+summand to the wedge point.
+Then
+\[
+r|_{S^1}
+=
+\operatorname{id}_{S^1},
+\]
+so $X$ is a retract of $Y$.
+
+If $X$ were a deformation retract of $Y$, then step <1>3 would give
+\[
+X\simeq Y.
+\]
+But
+\[
+H_2(X)=0
+\]
+while
+\[
+H_2(Y)
+\cong
+H_2(S^1\vee S^2)
+\cong
+\mathbb Z.
+\]
+Thus they are not homotopy equivalent, so the retraction is not a
+deformation retraction.
+:::
+
+<1>7. Statement (7) is impossible.
+
+::: {.proof}
+A deformation retraction is, by definition, a retraction together with an
+additional homotopy.
+Thus every deformation retract is automatically a retract.
+:::
+
+<1>8. Statement (8) is impossible.
+
+::: {.proof}
+If $X$ is a deformation retract of $Y$, then
+\[
+X\simeq Y
+\]
+by step <1>3.
+Hence
+\[
+\pi_1(X)
+\cong
+\pi_1(Y)
+\]
+by homotopy invariance of the fundamental group.
+:::
+
+<1>9. Statement (9) is possible:
+\[
+X=S^1\vee S^1,
+\qquad
+Y=T^2=S^1\times S^1.
+\]
+
+::: {.proof}
+For the wedge,
+\[
+\pi_1(X)
+\cong
+F_2,
+\]
+the free group on two generators.
+For the torus,
+\[
+\pi_1(Y)
+\cong
+\mathbb Z^2.
+\]
+These groups are not isomorphic because
+\[
+F_2
+\]
+is nonabelian while
+\[
+\mathbb Z^2
+\]
+is abelian.
+
+However,
+\[
+H_1(X)
+\cong
+F_2^{\mathrm{ab}}
+\cong
+\mathbb Z^2,
+\]
+and
+\[
+H_1(Y)
+\cong
+\mathbb Z^2.
+\]
+Thus the first homology groups are isomorphic while the fundamental groups
+are not.
+:::
+
+<1>10. Statement (10) is impossible.
+
+::: {.proof}
+For every path-connected space $Z$,
+\[
+H_1(Z;\mathbb Z)
+\cong
+\pi_1(Z)^{\mathrm{ab}}.
+\]
+Therefore an isomorphism
+\[
+\pi_1(X)
+\cong
+\pi_1(Y)
+\]
+induces an isomorphism of abelianizations, hence
+\[
+H_1(X)
+\cong
+H_1(Y).
+\]
+:::
+
+<1>11. Statement (11) is possible:
+\[
+X=S^1,
+\qquad
+Y=\{*\}.
+\]
+
+::: {.proof}
+Both second homology groups vanish:
+\[
+H_2(S^1)=0
+=
+H_2(\{*\}).
+\]
+But
+\[
+\pi_1(S^1)
+\cong
+\mathbb Z,
+\qquad
+\pi_1(\{*\})=0.
+\]
+Thus the fundamental groups are not isomorphic.
+:::
+
+<1>12. Statement (12) is possible:
+\[
+X=\{*\},
+\qquad
+Y=S^2.
+\]
+
+::: {.proof}
+As in step <1>5,
+\[
+\pi_1(X)
+=
+0
+=
+\pi_1(Y),
+\]
+while
+\[
+H_2(X)=0
+\]
+and
+\[
+H_2(Y)
+\cong
+\mathbb Z.
+\]
+:::
+
+<1>13. The complete classification is therefore
+\[
+\boxed{
+\begin{array}{c|cccccccccccc}
+\text{statement}
+&1&2&3&4&5&6&7&8&9&10&11&12\\
+\hline
+\text{possible?}
+&\mathrm{yes}
+&\mathrm{yes}
+&\mathrm{no}
+&\mathrm{no}
+&\mathrm{yes}
+&\mathrm{yes}
+&\mathrm{no}
+&\mathrm{no}
+&\mathrm{yes}
+&\mathrm{no}
+&\mathrm{yes}
+&\mathrm{yes}
+\end{array}
+}
+\]
+
+::: {.proof}
+This table collects steps <1>1--<1>12.
+:::
+
+<1>14. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>12 give either an explicit example or an impossibility proof
+for every requested statement.
+:::
+:::

@@ -26,12 +26,4 @@ Let $f \in \QQ[x]$ be a monic irreducible quartic with [[D-W3DSO|discriminant]] 
 
 ::: {.remark}
 The groups $D_4$ and $C_4$ can also be distinguished by cycle types: the copy of $D_4$ in $S_4$ contains transpositions, whereas $C_4$ contains only $4$-cycles, the identity, and one product of two transpositions.
-
-The cases are summarized in the following table:
-
-![](../../assets/figures/2021-08-09_14-48-55.png)
-
-and in the following flow chart:
-
-![](../../assets/figures/2021-07-20_22-06-48.png)
 :::

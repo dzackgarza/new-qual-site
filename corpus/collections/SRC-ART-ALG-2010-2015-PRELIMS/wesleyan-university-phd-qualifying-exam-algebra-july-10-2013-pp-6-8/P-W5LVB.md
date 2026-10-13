@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked both abelian groups, irreducibility of all four polynomial factors, the canonical idempotent decomposition, and the exhaustive enumeration of ten multiplicity tuples."
 ---
-
 ::: {.problem}
 a. List all abelian groups of order 60.
 
@@ -38,7 +37,7 @@ All classifications below are up to isomorphism.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The abelian groups of order $60$ are
 $C_{60}$ and $C_{30}\times C_2$, where $C_n=\mathbb Z/n\mathbb Z$.
@@ -143,7 +142,7 @@ give isomorphic direct sums, proving uniqueness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 There are exactly ten modules in part (b), namely
 
@@ -172,6 +171,13 @@ These cases are exhaustive and disjoint, and uniqueness
 in step [](#s2){.pf-ref} shows that no two rows are isomorphic.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} classify all modules
+required in part (b).
 
 :::
 

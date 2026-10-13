@@ -18,3 +18,146 @@ audit:
 ::: {.problem}
 Show that $\int _ { 0 } ^ { \pi } \log ( 1 - 2 a \cos x + a ^ { 2 } ) d x = 0 { \mathrm { ~ f o r ~ } } | a | < 1$
 :::
+
+::: {.solution}
+Assume $a\in\mathbb R$ and $|a|<1$.
+
+<1>1. For every real $x$,
+$$
+1-2a\cos x+a^2
+=
+(1-ae^{ix})(1-ae^{-ix}).
+$$
+
+::: {.proof}
+Expand the right-hand side:
+$$
+1-a(e^{ix}+e^{-ix})+a^2
+=
+1-2a\cos x+a^2.
+$$
+:::
+
+<1>2. Since $|a|<1$, one has
+$$
+\log(1-ae^{ix})
+=
+-\sum_{n=1}^{\infty}
+\frac{a^n e^{inx}}n,
+$$
+and similarly
+$$
+\log(1-ae^{-ix})
+=
+-\sum_{n=1}^{\infty}
+\frac{a^n e^{-inx}}n.
+$$
+
+::: {.proof}
+The power series
+$$
+\log(1-z)
+=
+-\sum_{n=1}^{\infty}\frac{z^n}{n}
+$$
+converges absolutely for $|z|<1$. Substitute $z=ae^{\pm ix}$.
+:::
+
+<1>3. Therefore
+$$
+\log(1-2a\cos x+a^2)
+=
+-2
+\sum_{n=1}^{\infty}
+\frac{a^n}{n}
+\cos(nx).
+$$
+
+::: {.proof}
+By step <1>1, the positive real number
+$$
+1-2a\cos x+a^2
+=
+|1-ae^{ix}|^2
+$$
+is the product of the two conjugate factors. Adding the conjugate logarithm
+series from step <1>2 gives
+$$
+-\sum_{n=1}^{\infty}
+\frac{a^n}{n}
+(e^{inx}+e^{-inx}),
+$$
+which is the displayed cosine series.
+:::
+
+<1>4. The series in step <1>3 converges uniformly in $x\in[0,\pi]$.
+
+::: {.proof}
+For every $x$,
+$$
+\left|
+\frac{a^n}{n}\cos(nx)
+\right|
+\leq
+\frac{|a|^n}{n}.
+$$
+The numerical series
+$$
+\sum_{n=1}^{\infty}\frac{|a|^n}{n}
+$$
+converges, so the Weierstrass $M$-test applies.
+:::
+
+<1>5. Hence termwise integration gives
+$$
+\int_0^\pi
+\log(1-2a\cos x+a^2)
+\,dx
+=
+-2
+\sum_{n=1}^{\infty}
+\frac{a^n}{n}
+\int_0^\pi\cos(nx)\,dx.
+$$
+
+::: {.proof}
+Uniform convergence from step <1>4 justifies exchanging the sum and integral.
+:::
+
+<1>6. For every integer $n\geq1$,
+$$
+\int_0^\pi\cos(nx)\,dx=0.
+$$
+
+::: {.proof}
+One has
+$$
+\int_0^\pi\cos(nx)\,dx
+=
+\left[
+\frac{\sin(nx)}n
+\right]_0^\pi
+=0.
+$$
+:::
+
+<1>7. Therefore
+$$
+\boxed{
+\int_0^\pi
+\log(1-2a\cos x+a^2)
+\,dx
+=0.
+}
+$$
+
+::: {.proof}
+Every term on the right-hand side of step <1>5 vanishes by step <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required identity.
+:::
+:::

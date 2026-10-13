@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Verified associativity and both inverse products, then tested the stated identity map on cross-factor products rather than an arbitrary abstract isomorphism."
 ---
-
 ::: {.problem}
 Suppose $J$ and $L$ are groups, and $\varphi: L \to \mathrm{Aut}(J)$ is a group homomorphism.
 
@@ -80,7 +79,7 @@ Both second coordinates are $1_L$. This verifies all group axioms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The identity function on $J\times L$ is a group isomorphism
 from this semidirect product to the direct product if and only if
@@ -105,6 +104,13 @@ $\varphi_\ell(j)=j$ for every $j,\ell$. Thus every
 $\varphi_\ell$ is the identity automorphism, proving the converse.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the requested definition, and step [](#s2){.pf-ref} proves the
+equivalence in part (b).
 
 :::
 

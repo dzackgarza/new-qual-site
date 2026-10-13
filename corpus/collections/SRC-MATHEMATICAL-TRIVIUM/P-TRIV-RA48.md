@@ -20,3 +20,151 @@ audit:
 
 (b) The functions f (x) and $g ( x )$ are related by $f ( x ) = g ( x - x _ { 0 } )$ . How are their Fourier images related?
 :::
+
+::: {.remark}
+Use the Fourier convention from Problems 45--47:
+$$
+\widetilde h(k)
+=
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+h(x)e^{-ikx}
+\,dx.
+$$
+In part (a), assume $a\neq0$.
+:::
+
+::: {.solution}
+<1>1. Suppose
+$$
+f(x)=g(ax),
+\qquad
+a\neq0.
+$$
+Then
+$$
+\widetilde f(k)
+=
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+g(ax)e^{-ikx}
+\,dx.
+$$
+
+::: {.proof}
+This is the definition of the Fourier transform applied to $f$.
+:::
+
+<1>2. With
+$$
+u=ax,
+$$
+one obtains
+$$
+\boxed{
+\widetilde f(k)
+=
+\frac1{|a|}
+\widetilde g\left(\frac{k}{a}\right).
+}
+$$
+
+::: {.proof}
+If $a>0$, then
+$$
+dx=\frac{du}{a}
+$$
+and the endpoints retain their order, giving
+$$
+\widetilde f(k)
+=
+\frac1a
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+g(u)e^{-i(k/a)u}
+\,du
+=
+\frac1a\widetilde g(k/a).
+$$
+
+If $a<0$, the substitution reverses the endpoints, contributing an additional
+minus sign that changes $1/a$ to $1/|a|$. The argument remains $k/a$.
+:::
+
+<1>3. Part (a) follows.
+
+::: {.proof}
+This is step <1>2.
+:::
+
+<1>4. Suppose
+$$
+f(x)=g(x-x_0).
+$$
+Then
+$$
+\widetilde f(k)
+=
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+g(x-x_0)e^{-ikx}
+\,dx.
+$$
+
+::: {.proof}
+Again this is the Fourier-transform definition.
+:::
+
+<1>5. Set
+$$
+u=x-x_0.
+$$
+Then
+$$
+\boxed{
+\widetilde f(k)
+=
+e^{-ikx_0}\widetilde g(k).
+}
+$$
+
+::: {.proof}
+The substitution gives
+$$
+x=u+x_0,
+\qquad
+dx=du.
+$$
+Therefore
+$$
+\begin{aligned}
+\widetilde f(k)
+&=
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+g(u)e^{-ik(u+x_0)}
+\,du\\
+&=
+e^{-ikx_0}
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+g(u)e^{-iku}
+\,du\\
+&=
+e^{-ikx_0}\widetilde g(k).
+\end{aligned}
+$$
+:::
+
+<1>6. Part (b) follows.
+
+::: {.proof}
+This is step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>6 establish parts (a) and (b), respectively.
+:::
+:::

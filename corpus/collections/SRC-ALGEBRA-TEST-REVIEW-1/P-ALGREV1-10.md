@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Proved a finite product tuple is a unit exactly when each coordinate is a unit, with inverse taken coordinatewise."
 ---
-
 ::: {.problem}
 Let $R_1,\dots,R_n$ be commutative rings with unity. Classify the following assertion as true, sometimes true, or false:
 \[
@@ -31,7 +30,7 @@ U(R_1\oplus\cdots\oplus R_n)=U(R_1)\oplus\cdots\oplus U(R_n).
 :::
 
 ::: {.solution}
-The assertion is true.
+The assertion is **true**.
 
 ::: pf
 
@@ -75,7 +74,7 @@ is the inverse of $(r_1,\ldots,r_n)$. Therefore the tuple is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Hence the unit group is the product of the unit groups.
 
@@ -92,6 +91,12 @@ For finitely many rings, the direct sum and direct product are the same
 underlying ring.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the asserted equality, so the statement is true.
 
 :::
 

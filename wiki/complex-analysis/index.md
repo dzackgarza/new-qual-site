@@ -1,9 +1,9 @@
 ---
-title: Complex Analysis
+title: Complex analysis
 order: 30
 ---
 
-# Complex Analysis
+# Complex analysis
 
 ## Problem types
 

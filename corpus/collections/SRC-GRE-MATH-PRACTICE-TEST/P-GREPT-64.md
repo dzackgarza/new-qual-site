@@ -24,3 +24,63 @@ If $A$ is the $2$ by $2$ matrix whose $(i, j)$ entry is equal to $i + j$, and $B
 (D) $2$
 (E) $5$
 :::
+
+::: {.solution}
+<1>1. $\det A=-1$.
+
+::: {.proof}
+By the definition of the entries,
+\[
+A=
+\begin{pmatrix}
+2&3\\
+3&4
+\end{pmatrix},
+\]
+so
+\[
+\det A=2\cdot4-3\cdot3=-1.
+\]
+:::
+
+<1>2. $\det B=0$.
+
+::: {.proof}
+The matrix is
+\[
+B=
+\begin{pmatrix}
+2&3&4\\
+3&4&5\\
+4&5&6
+\end{pmatrix}.
+\]
+First replace the third row by the third row minus the second, and then
+replace the second row by the second row minus the first. Neither operation
+changes the determinant, and the result is
+\[
+\begin{pmatrix}
+2&3&4\\
+1&1&1\\
+1&1&1
+\end{pmatrix}.
+\]
+This matrix has two equal rows, so its determinant is $0$.
+:::
+
+<1>3. $\det A+\det B=\boxed{-1}$.
+
+::: {.proof}
+By steps <1>1 and <1>2,
+\[
+\det A+\det B=-1+0=-1.
+\]
+Thus the correct choice is (B).
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value.
+:::
+:::

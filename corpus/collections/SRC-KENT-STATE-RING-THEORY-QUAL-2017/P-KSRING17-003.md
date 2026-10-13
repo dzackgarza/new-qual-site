@@ -19,3 +19,93 @@ audit:
 [NEW] How many ideals does the ring $\mathbb Z/90\mathbb Z$ have?
 Explain your answer.
 :::
+
+::: {.solution}
+<1>1. Ideals of $\ZZ/90\ZZ$ are in bijection with positive divisors of $90$.
+
+::: {.proof}
+Let
+$$
+\pi:\ZZ\to\ZZ/90\ZZ
+$$
+be the quotient map. By the correspondence theorem, ideals of the quotient are in bijection with ideals
+$$
+J\subseteq\ZZ
+$$
+containing
+$$
+(90).
+$$
+Every ideal of $\ZZ$ is principal, say
+$$
+J=(d)
+$$
+with $d\ge0$. The inclusion
+$$
+(90)\subseteq(d)
+$$
+holds exactly when
+$$
+d\mid90.
+$$
+Under the quotient map, $(d)$ corresponds to the ideal
+$$
+(\overline d)
+\subseteq
+\ZZ/90\ZZ.
+$$
+Thus the ideals of $\ZZ/90\ZZ$ are parametrized by the positive divisors of $90$.
+:::
+
+<1>2. The integer $90$ has exactly
+$$
+12
+$$
+positive divisors.
+
+::: {.proof}
+The prime factorization is
+$$
+90
+=
+2^1\cdot3^2\cdot5^1.
+$$
+Every positive divisor therefore has the form
+$$
+2^a3^b5^c
+$$
+where
+$$
+0\le a\le1,
+\qquad
+0\le b\le2,
+\qquad
+0\le c\le1.
+$$
+There are
+$$
+(1+1)(2+1)(1+1)
+=
+12
+$$
+choices.
+:::
+
+<1>3. Hence
+$$
+\boxed{
+\ZZ/90\ZZ
+\text{ has exactly }12\text{ ideals.}
+}
+$$
+
+::: {.proof}
+Combine steps <1>1 and <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 answers the problem.
+:::
+:::

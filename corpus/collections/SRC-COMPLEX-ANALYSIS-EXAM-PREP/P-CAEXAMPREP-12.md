@@ -20,3 +20,59 @@ A=\{x+iy:xy>1,\ x>0,\ y>0\}.
 \]
 What is the image of $A$ under the map $f(z)=z^2$?
 :::
+
+::: {.solution}
+<1>1. If \(z=x+iy\in A\), then
+\[
+\operatorname{Im}(z^2)>2.
+\]
+
+::: {.proof}
+For \(z=x+iy\),
+\[
+z^2=(x^2-y^2)+2ixy.
+\]
+Since \(z\in A\) means \(xy>1\), it follows that
+\[
+\operatorname{Im}(z^2)=2xy>2.
+\]
+Thus
+\[
+f(A)\subseteq\{w:\operatorname{Im}w>2\}.
+\]
+:::
+
+<1>2. Every \(w\) with \(\operatorname{Im}w>2\) is equal to \(z^2\) for some \(z\in A\).
+
+::: {.proof}
+Let \(w\) satisfy \(\operatorname{Im}w>2\). Then \(w\ne0\) and its argument may be chosen as \(\theta\in(0,\pi)\). Write
+\[
+w=re^{i\theta},
+\qquad r>0,
+\]
+and take
+\[
+z=\sqrt r\,e^{i\theta/2}=x+iy.
+\]
+Because \(0<\theta/2<\pi/2\), one has \(x>0\) and \(y>0\). Moreover \(z^2=w\), so
+\[
+2xy=\operatorname{Im}(z^2)=\operatorname{Im}w>2,
+\]
+hence \(xy>1\). Therefore \(z\in A\).
+:::
+
+<1>3. The image is
+\[
+\boxed{f(A)=\{w\in\mathbb C:\operatorname{Im}w>2\}}.
+\]
+
+::: {.proof}
+Step <1>1 gives one inclusion and step <1>2 gives the reverse inclusion.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 determines the requested image.
+:::
+:::

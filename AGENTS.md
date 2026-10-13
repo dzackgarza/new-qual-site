@@ -69,7 +69,7 @@ or distribution status.
 
 Preserve license files and notices that are part of retained source bytes. They
 are source content, not project requirements. Continue to follow the repository's
-separate citation and provenance rules.
+separate citation rules.
 
 Intake and migration needed tools. Getting the content out of five source
 repositories and into this one was a transport problem, and transport is what a
@@ -307,46 +307,25 @@ with an instruction rather than a question.
 Selecting the next item is your work, not the steward's. A Queue E entry recorded as blocked on
 MinerU Flash is not ready work; take the next ready item instead.
 
-## A disposition is not a unit of work
+## Sources and gaps
 
-Deciding that a source is reference-only, ticking a queue entry, closing a defect record,
-normalising whitespace across a collection: none of this is authored content, and none of it is
-a unit of work. The unit of work in this repository is a card, a solution, a source properly
-carded, a statement corrected against its source, or a page or card's copy rewritten to the
-[CONTRIBUTING.md](CONTRIBUTING.md) policies. A session whose output is dispositions has produced a tidier queue and no mathematics.
+Where something came from is not tracked. There are no ledgers, dispositions, migration or import
+records, provenance blocks, audit or event logs, `variant-of` relations, or queues of sources to
+process. To find what is missing, open the old source, compare it with the corpus, and add or
+correct what the corpus lacks, in an ordinary commit of the cards themselves.
 
-This matters here more than elsewhere because the queue is long and dispositioning is easy. It
-is always possible to spend a session deciding about sources rather than carding them, and the
-queue counts will move the whole time. On 2026-09-12 a worker described folding a queue
-disposition into a commit as its next unit of work, and separately produced commits titled
-"bank" that moved the dirty count by one file.
-
-So: fold the queue disposition into the commit carrying the cards it describes, never commit it
-alone, and never let a turn end with dispositions as its only product. If a source genuinely
-needs no cards, say so in the commit that finishes the source before it, and move to one that
-does.
-
-## Your queues are a product, and a wrong one costs cards
-
-The files under `queues/` and the output of `just unsolved` are what say which source is next
-and which card is still unsolved. They are instruments, not notes: a queue whose counts are
-wrong sends the next worker to the wrong source, and an unsolved-card list that cannot tell a
-solved card from an unsolved one means nobody can see what the corpus still owes.
-
-They are also routinely wrong in a specific way — OCR-derived problem counts. A queue entry
-saying a PDF holds four problems when it holds fourteen is not a small error; it decides how
-many cards get authored. Count from the source document, never from the inventory, and when
-they disagree, correct the queue in the commit that cards the source.
-
-Treat a queue defect as work, not as noise to steer around. If the regeneration is wrong, fix
-the regenerator; if an entry is unreadable, resolve it rather than skipping past it; if the
-list disagrees with the corpus, find out which is lying before authoring against either.
+The same goes for duplicates: one notion has one card. Two cards that state the same mathematics
+are folded into one, keeping every distinct hypothesis, example and review prompt on the survivor
+and pointing every link at it. Two cards that look alike but state different mathematics are
+both kept, with no relation asserting otherwise. A problem that several collections list is one
+card listed by each of them, as described under
+[Problems may appear in multiple collections](#problems-may-appear-in-multiple-collections).
 
 ## Review your own session for drift
 
 Before starting a new source, look back at the one you just finished and ask what it produced:
 
-- **Authored content, or dispositions and normalisations?** Cards, solutions, corrected
+- **Authored content, or paperwork and normalisations?** Cards, solutions, corrected
   statements and rewritten copy are the product. A session whose output is decisions about
   sources has left the corpus unchanged.
 - **Did authored content change?** If commits landed but no card, statement, solution or page
@@ -356,7 +335,7 @@ Before starting a new source, look back at the one you just finished and ask wha
   to trust. That is an obstruction, and working around it silently is how it survives to cost
   the next worker the same.
 
-Fix the obstruction where it lives, with its regression, and note it in the queue.
+Fix the obstruction where it lives, with its regression.
 
 ## Repair the tooling that wastes your turns
 
@@ -369,7 +348,7 @@ for days.
 
 The same applies to an OCR count that is routinely wrong, an extraction path that silently
 truncates, a check that cannot distinguish a solved card from an unsolved one. Fix it where it
-lives, commit the fix with its regression, and note it in the queue. A workaround you carry in
+lives, and commit the fix with its regression. A workaround you carry in
 your head is a defect the next worker meets fresh.
 
 ## Public audience and remarks
@@ -423,8 +402,7 @@ until the exam is identified, the image may be the only copy of the label.
 Snapshots of repositories that fed the migration are historical transport
 material. Git history preserves them; they do not remain as a second live source
 tree and they must not be kept under `assets/` merely because an importer once
-read them there. Migration ledgers may name the paths those files had during the
-migration; those are historical evidence, not current asset links.
+read them there.
 
 `assets/` is for material the built corpus actually uses as an asset: source
 documents such as exam PDFs under `assets/attachments/`, figures used by cards or
@@ -745,23 +723,11 @@ Within data issues, in order of urgency:
 Missing solutions, empty solution fields, and unsolved cards are authoring
 concerns, not data integrity problems.
 
-# Work queues
+# Finding work
 
-Outstanding work is recorded so no agent has to rediscover it. `TODO.md`
-holds the authored dispositions. `BACKLOG.md` holds the current
-measurements, generated from the named measurement tools; nothing else
-writes it. Generation is automatic — `just test-push` regenerates
-`BACKLOG.md` before the suite runs, so a push never ships a stale queue.
-When a generation changes the file, commit the diff in the next commit.
-The queues are candidates to read — a measurement that disappears is not a
-disposition, so record the reason in `TODO.md`.
-
-## Reconcile queues before claiming
-
-Every stream solves on `main`, and the queues are regenerated at push, so a queue can be stale
-the moment a sibling commits. Before claiming a card from `queues/C-unsolved-cards.md` or a
-sibling queue, read the card itself: a listed card may already carry a solution. Never author
-the same card as a sibling; batch-committing cards authored off-queue is prohibited.
+`TODO.md` holds the task DAG. Unsolved problems are the problem cards with no `solution`
+section; `just unsolved` lists them. Before taking a card, read it: a sibling may have solved it
+since the list was produced. Never author the same card as a sibling.
 
 # One checkout, one branch
 
@@ -908,59 +874,9 @@ no `solves` relation: the solution is content of the problem it answers. There
 is no `solved` field; a solutions commit writes
 the body and the status follows from it.
 
-Missing solutions are authored mathematical content, not corpus defects, so
-they do not appear in `BACKLOG.md`. The generated measurement and the authored
-workflow are deliberately separate:
-
-- `queues/C-unsolved-cards.md` — the measurement. It lists every problem card
-  with no `solution` section.
-  Regenerated by `just unsolved` and at push; between pushes it can lag the
-  corpus, so read the candidate card before selecting it. A card leaves the list only by gaining
-  a solution; the boxes are a measurement, not a ledger.
-- `TODO.md` §7, "Author solutions", together with issue #2 — the authored
-  repeating loop, which begins after the `audited-deployment` milestone in `TODO.md`. Select one unsolved card, read the problem and its source,
-  independently verify any retained source solution, write a complete
-  Lamport-style structured proof in a `solution` section on that same problem
-  card in the layout `STYLE-08` fixes, and commit it before selecting the next
-  card, verified by reading as [Running checks](#running-checks) describes.
-
-`just sample-unsolved COLLECTION [n] [section]` samples up to n distinct
-unsolved card IDs (default 5) from one collection's authored appearances and
-lists them in source order. The solution
-authoring workflow is recorded in `TODO.md` under
-[issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), and the
-solution-sheet routing ledgers live in
-`sources/qual-review-and-solutions-ledgers/`.
-
-## Audit history
-
-A problem card may carry `audit:`, a list of dated events recording who did
-what to it. Four events exist:
-
-- `solution-written` — someone wrote the solution on the card.
-- `source-checked` — someone compared the statement against the original source.
-- `source-corrected` — that comparison required a correction to the authored
-  mathematical statement; the note records what changed.
-- `solution-reviewed` — someone checked the solution for correctness.
-
-```yaml
-audit:
-- event: solution-written
-  by: dzackgarza
-  date: 2026-08-16
-- event: solution-reviewed
-  by: neil
-  date: 2026-08-27
-  note: optional free text
-```
-
-`by` is a handle or a name, whatever identifies the person; there is no registry.
-`date` is an ISO calendar date. The field is `date` and not `on` because YAML
-reads a bare `on` as the boolean `true`. `note` is optional. The entries stay in
-the order they were written, and repeated rounds of one event are normal: a
-solution reviewed twice records two `solution-reviewed` entries.
-
-This list is a record, not a status. Nothing is derived from it, and it does not
-replace the rule above: a card is solved because it carries a solution, not
-because someone wrote it down here. Record only events you can substantiate.
-Backfilling the list for cards whose history nobody knows is fabricating content.
+To write solutions, follow `TODO.md` §7, "Author solutions" ([issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)):
+select one unsolved card, read the problem and its source, independently verify any source
+solution, write a complete Lamport-style structured proof in a `solution` section on that problem
+card in the layout `STYLE-08` fixes, and commit it before selecting the next card.
+`just sample-unsolved COLLECTION [n] [section]` samples unsolved card IDs from one collection in
+source order.

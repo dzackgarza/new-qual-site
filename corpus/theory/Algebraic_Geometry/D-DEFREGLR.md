@@ -18,6 +18,7 @@ relations:
 review: draft
 prompts:
 - When is a Noetherian local ring regular?
+- What is a regular ring?
 - Characterise discrete valuation rings among Noetherian local rings.
 - Is a regular local ring a domain? Is it integrally closed?
 - Show that $R$ is a discrete valuation ring if and only if $R$ is a local PID that is not a field, and define a uniformizer.

@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the Bezout recovery of both generators, coprimality in the degree calculation, existence of every automorphism, distinct conjugate complements, and the exact Sylow fixed field."
 ---
-
 ::: {.problem}
 Let $p < q$ be two distinct odd primes such that $p \nmid q - 1$.
 Let $n = pq$ and $\zeta_n$ be a primitive $n$-th root of unity in $\mathbb{C}$.
@@ -50,7 +49,7 @@ $L=\mathbb Q(\zeta)$. Write $m=(p-1)(q-1)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The splitting field is $E=\mathbb Q(\zeta,\alpha)$.
 
@@ -76,7 +75,7 @@ This proves equality of the two fields.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The degree is
 $$
@@ -134,7 +133,7 @@ Define $\sigma_b$ by applying $\gamma_b$ to each coefficient.
 This preserves addition. It preserves multiplication because
 products are reduced using $\alpha^n=2$, whose right side
 is fixed by $\gamma_b$. Its inverse is $\sigma_{b^{-1}}$.
-Thus these are field automorphisms with the asserted
+Thus these are genuine field automorphisms with the asserted
 values, and $\sigma_b\sigma_c=\sigma_{bc}$.
 
 The conjugation identity follows by evaluating both sides
@@ -149,7 +148,7 @@ automorphisms exhaust its Galois group [@DF04].
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Two distinct subgroups of order $m$ are
 $$
@@ -177,7 +176,7 @@ proving that these two subgroups are distinct.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 The unique Sylow $p$-subgroup and its fixed field are
 $$
@@ -216,6 +215,13 @@ so equality holds throughout and $[E^P:M]=1$.
 Therefore $E^P=M$, as claimed.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), step [](#s4){.pf-ref} proves
+part (c), and step [](#s5){.pf-ref} proves part (d).
 
 :::
 

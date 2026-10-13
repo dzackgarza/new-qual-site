@@ -21,18 +21,25 @@ prompts:
 ---
 
 ::: {.theorem}
-Let $X$ be a smooth projective surface and $H$ an ample divisor.
+Let $X$ be a smooth projective surface over an algebraically closed field, and let $H$ be an ample divisor.
 If $D \cdot H = 0$ and $D \not\equiv 0$, then $D^2 < 0$.
 Equivalently, the intersection form on $\NS(X) \otimes \RR$ has signature $(1, \rho - 1)$.
 :::
 
 ::: {.remark}
-One plus direction, everything else negative: the ample cone supplies the single positive direction, and the orthogonal complement of an ample class is negative definite.
-That is the whole content, and it is why $\NS$ of a surface is a hyperbolic lattice.
+Since $H^2>0$, the line $\RR H$ is a positive direction and
+$$
+H^\perp\subseteq\NS(X)_\RR
+$$
+is negative definite. Thus the numerical Néron--Severi space is a real quadratic space of signature $(1,\rho-1)$.
 
-Two consequences follow from the signature statement.
-If $D^2 > 0$ then $D \cdot H \neq 0$ for every ample $H$, so $D$ or $-D$ is on the positive side — combined with Riemann--Roch this is how one proves a divisor with $D^2 > 0$ and $D \cdot H > 0$ is effective for large multiples.
-And the inequality $(D \cdot E)^2 \geq D^2 E^2$ for $D$ with $D^2 > 0$ is a signature statement, the reverse Cauchy--Schwarz that holds in a hyperbolic lattice.
+If $D^2>0$, then $D\cdot H\ne0$ for every ample $H$. After replacing $D$ by $-D$, one may therefore assume $D\cdot H>0$. Riemann--Roch then shows that $nD$ is effective for all sufficiently large $n$: the quadratic term in $\chi(\OO_X(nD))$ is positive, while $K_X-nD$ has negative intersection with $H$ and hence no effective representative for $n\gg0$.
+
+For any $D,E\in\NS(X)_\RR$ with $D^2>0$,
+$$
+(D\cdot E)^2\geq D^2E^2,
+$$
+with equality exactly when $E$ is numerically proportional to $D$.
 
 Over $\CC$ this is the Hodge--Riemann bilinear relation on $H^{1,1}$ specialised to the algebraic classes, which is where the name comes from.
 :::

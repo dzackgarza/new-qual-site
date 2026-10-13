@@ -22,7 +22,6 @@ audit:
   date: 2026-09-16
   note: Replaced the misattached pentagram scan (test 1, problem 60, owned by P-ALGPAN11-18) with a transcription of test 1, problem 33, the Euclidean-algorithm question its solution answers, from ALGEBRA_REVIEW1.pdf page 4.
 ---
-
 ::: {.problem}
 The Euclidean algorithm is used to find the greatest common divisor (gcd) of two positive integers `a` and `b`.
 
@@ -61,9 +60,9 @@ so the answer is $\boxed{\text{(D)}}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-For $a=273$ and $b=110$, the algorithm computes $r=53,4,1,0$.
+Execute the Euclidean algorithm.
 
 ::: pf-proof
 
@@ -87,6 +86,12 @@ and finally
 Thus the algorithm computes $r=53,4,1,0$ in order.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} yields the remainder sequence $53,4,1,0$, so choice (D) is correct.
 
 :::
 

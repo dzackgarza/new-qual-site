@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked the coset-action well-definedness, exact intersection formula for its kernel, and divisibility rather than only an upper bound; included index one."
 ---
-
 ::: {.problem}
 Let $G$ be a finite group and $H$ be a subgroup of $G$ of index $n$.
 Show that $H$ has a subgroup $K$ such that $K$ is normal in $G$ and $[G : K]$ divides $n!$.
@@ -40,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Left multiplication defines an action of $G$ on the
 set $X=\{xH:x\in G\}$ of its $n$ left cosets.
@@ -59,7 +58,7 @@ homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Its kernel is precisely $K$, which is normal in $G$
 and contained in $H$.
@@ -77,7 +76,7 @@ intersection shows $K\subseteq H$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The index $[G:K]$ divides $n!$.
 
@@ -94,6 +93,13 @@ If $n=1$, the action is trivial and the construction gives
 $K=H=G$, with index $1=1!$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct the required subgroup $K$, prove that it is
+normal in $G$ and contained in $H$, and establish $[G:K]\mid n!$.
 
 :::
 

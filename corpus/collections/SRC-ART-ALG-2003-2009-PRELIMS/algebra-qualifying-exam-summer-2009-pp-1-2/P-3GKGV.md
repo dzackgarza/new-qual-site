@@ -19,7 +19,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 A ring is called left (resp.
 right) Artinian if every descending chain of left (resp.
@@ -93,7 +92,7 @@ Thus every nonzero element of \(A\) is a unit, so \(A\) is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Every prime ideal in a commutative Artinian ring is maximal.
 
@@ -106,6 +105,12 @@ A\twoheadrightarrow A/\mathfrak p,
 the quotient is Artinian. By step [](#s2){.pf-ref} it is therefore a field. Hence \(\mathfrak p\) is maximal.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a)--(c), respectively.
 
 :::
 

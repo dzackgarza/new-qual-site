@@ -29,3 +29,158 @@ Prove that $f_n\in L^1$ for all $n$, that $f\in L^1$, and that
 \]
 Also show that neither assumption 2 nor assumption 3 can be omitted while making these deductions.
 :::
+
+::: {.solution}
+<1>1. Every \(f_n\) lies in \(L^1(\mathbb R)\), and
+\[
+\|f_n\|_{L^1}\le 10\sqrt2+100
+\qquad(n\ge1).
+\]
+
+::: {.proof}
+Split the integral into \(|x|\le1\) and \(|x|>1\). By Cauchy--Schwarz and assumption 3,
+\[
+\int_{|x|\le1}|f_n(x)|\,dx
+\le \sqrt2\left(\int_{|x|\le1}|f_n(x)|^2\,dx\right)^{1/2}
+\le10\sqrt2.
+\]
+On \(|x|>1\), assumption 2 gives
+\[
+\int_{|x|>1}|f_n(x)|\,dx
+\le\int_{|x|>1}|x|\,|f_n(x)|\,dx
+\le100.
+\]
+Adding the two estimates proves the claim.
+:::
+
+<1>2. The limit \(f\) satisfies
+\[
+\boxed{f\in L^1(\mathbb R)},
+\qquad
+\int_{\mathbb R}|f|^2\,dx\le100,
+\qquad
+\int_{\mathbb R}|x|\,|f(x)|\,dx\le100.
+\]
+
+::: {.proof}
+By assumption 1, the nonnegative functions \(|f_n|\), \(|f_n|^2\), and \(|x|\,|f_n|\) converge almost everywhere to \(|f|\), \(|f|^2\), and \(|x|\,|f|\), respectively. Applying [[FT-P5UNP|Fatou's lemma]] and using step <1>1 and assumptions 2--3 gives
+\[
+\int|f|\le\liminf_n\int|f_n|\le10\sqrt2+100,
+\]
+\[
+\int|f|^2\le\liminf_n\int|f_n|^2\le100,
+\qquad
+\int|x|\,|f|\le\liminf_n\int|x|\,|f_n|\le100.
+\]
+:::
+
+<1>3. For every \(R>0\) and every \(n\),
+\[
+\int_{|x|>R}|f_n-f|\,dx\le\frac{200}{R}.
+\]
+
+::: {.proof}
+By assumption 2 and step <1>2,
+\[
+\begin{aligned}
+\int_{|x|>R}|f_n-f|\,dx
+&\le\int_{|x|>R}|f_n|\,dx+\int_{|x|>R}|f|\,dx\\
+&\le\frac1R\int |x|\,|f_n(x)|\,dx
+ +\frac1R\int |x|\,|f(x)|\,dx\\
+&\le\frac{200}{R}.
+\end{aligned}
+\]
+:::
+
+<1>4. Fix \(R>0\). For every \(\delta>0\) there is a measurable set \(E\subseteq[-R,R]\) with \(m(E)<\delta\) such that \(f_n\to f\) uniformly on \([-R,R]\setminus E\), and for every \(n\),
+\[
+\int_E|f_n-f|\,dx\le20\sqrt\delta.
+\]
+
+::: {.proof}
+By [[FT-OGS76|Egorov's theorem]], such an \(E\) may be chosen because \([-R,R]\) has finite measure and \(f_n\to f\) almost everywhere there. By Cauchy--Schwarz, assumption 3, and step <1>2,
+\[
+\begin{aligned}
+\int_E|f_n-f|\,dx
+&\le m(E)^{1/2}\|f_n-f\|_{L^2}\\
+&\le\sqrt\delta\bigl(\|f_n\|_{L^2}+\|f\|_{L^2}\bigr)\\
+&\le20\sqrt\delta.
+\end{aligned}
+\]
+:::
+
+<1>5. One has
+\[
+\boxed{\|f_n-f\|_{L^1}\longrightarrow0}.
+\]
+
+::: {.proof}
+Let \(\varepsilon>0\). Choose \(R\) so large that \(200/R<\varepsilon/3\), and then choose \(\delta>0\) so small that \(20\sqrt\delta<\varepsilon/3\). Take \(E\) from step <1>4. Uniform convergence on \([-R,R]\setminus E\) gives an \(N\) such that, for \(n\ge N\),
+\[
+\sup_{[-R,R]\setminus E}|f_n-f|<\frac{\varepsilon}{6R}.
+\]
+Hence, by steps <1>3 and <1>4,
+\[
+\begin{aligned}
+\|f_n-f\|_{L^1}
+&\le \int_{|x|>R}|f_n-f|
+ +\int_E|f_n-f|
+ +\int_{[-R,R]\setminus E}|f_n-f|\\
+&<\frac\varepsilon3+\frac\varepsilon3
+ +(2R)\frac{\varepsilon}{6R}
+=\varepsilon.
+\end{aligned}
+\]
+:::
+
+<1>6. Assumption 2 cannot be omitted.
+
+::: {.proof}
+Set
+\[
+f_n(x)=f(x)=\frac{1}{1+|x|}
+\qquad(n\ge1).
+\]
+Then \(f_n\to f\) everywhere and
+\[
+\int_{\mathbb R}|f_n(x)|^2\,dx
+=2\int_0^\infty\frac{dx}{(1+x)^2}=2\le100,
+\]
+so assumptions 1 and 3 hold. However,
+\[
+\int_{\mathbb R}|f_n(x)|\,dx
+=2\int_0^\infty\frac{dx}{1+x}=\infty.
+\]
+Thus even the conclusion \(f_n\in L^1\) can fail without assumption 2.
+:::
+
+<1>7. Assumption 3 cannot be omitted.
+
+::: {.proof}
+Define, for every \(n\),
+\[
+f_n(x)=f(x)=
+\begin{cases}
+|x|^{-1},&0<|x|<1,\\
+0,&\text{otherwise}.
+\end{cases}
+\]
+Then \(f_n\to f\) everywhere and
+\[
+\int_{\mathbb R}|x|\,|f_n(x)|\,dx
+=\int_{-1}^1 1\,dx=2\le100,
+\]
+so assumptions 1 and 2 hold. But
+\[
+\int_{\mathbb R}|f_n(x)|\,dx
+=2\int_0^1\frac{dx}{x}=\infty.
+\]
+Thus even the conclusion \(f_n\in L^1\) can fail without assumption 3.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 establish all asserted conclusions, while steps <1>6 and <1>7 show that each of assumptions 2 and 3 is indispensable.
+:::
+:::

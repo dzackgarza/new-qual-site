@@ -15,54 +15,68 @@ relations:
   target: T-CRVJINV
 review: draft
 prompts:
-- What conditions define a coarse moduli space?
+- What are the two conditions defining a coarse moduli space?
 - What does a fine moduli space have that a coarse one does not?
 - What obstructs the existence of a fine moduli space of curves?
 - Exhibit a nonconstant family all of whose fibres are isomorphic.
 ---
 
 ::: {.definition title="Coarse moduli space"}
-Let $k$ be an algebraically closed field.
-A variety $M_g$ over $k$ is a \dfn{coarse moduli space} for curves of genus $g$ when:
+Let $\mathcal F_g(T)$ be the set of isomorphism classes of flat families of smooth projective curves of genus $g$ over $T$.
+A variety $M_g$ is a \dfn{coarse moduli space} for $\mathcal F_g$ if there is a natural transformation
+$$
+\eta\colon \mathcal F_g \longrightarrow h_{M_g},
+\qquad
+h_{M_g}(T)=\Hom(T,M_g),
+$$
+such that:
 
-1. the closed points of $M_g$ are in bijection with isomorphism classes of smooth projective curves of genus $g$ over $k$;
+1. for every algebraically closed field extension $K$, the map
+$$
+\eta_K\colon \mathcal F_g(\Spec K)\longrightarrow M_g(K)
+$$
+is a bijection, and
 
-2. every flat family $\mathcal{X} \to T$ whose fibres are such curves induces a morphism $h\colon T \to M_g$ with $h(t)$ the class of the fibre $\mathcal{X}_t$, compatibly with pullback of families along morphisms $T'\to T$; and
-
-3. for every scheme $N$ with an assignment of morphisms $T\to N$ to families as in (2), compatible with pullback, there is a unique morphism $M_g\to N$ through which that assignment factors.
+2. for every scheme $N$ and every natural transformation $\phi\colon\mathcal F_g\to h_N$, there is a unique morphism $u\colon M_g\to N$ such that $\phi=h_u\circ\eta$.
 :::
 
 ::: {.definition title="Fine moduli space"}
-$M_g$ is a \dfn{fine moduli space} when it represents the functor sending $T$ to the set of flat families over $T$ up to isomorphism: the classifying maps of (2) give a bijection
+$M_g$ is a \dfn{fine moduli space} when it represents $\mathcal F_g$: there is a natural bijection
 $$
 \operatorname{Hom}(T, M_g) \longleftrightarrow \theset{\text{families over } T}/{\cong}
 $$
 natural in $T$.
-Equivalently $M_g$ carries a \dfn{universal family} $\mathcal{U} \to M_g$ such that every family $\mathcal{X}\to T$ is isomorphic to the pullback of $\mathcal{U}$ along a unique morphism $T\to M_g$.
-:::
-
-::: {.proposition title="Automorphisms and fine moduli"}
-Let $C$ be a smooth projective curve of genus $g$ over $k$, and let $T$ be a connected scheme over $k$.
-Families over $T$ that become isomorphic to $C\times T$ étale-locally on $T$ are classified up to isomorphism by $H^1_{\mathrm{et}}(T,\Aut C)$.
-The classifying map of each such family is the constant map to the point $[C]$.
-Hence, if some such family is not isomorphic to $C\times T$, then two non-isomorphic families have the same classifying map, and no fine moduli space exists.
-:::
-
-::: {.example title="A quadratic twist"}
-Let $\operatorname{char}k\ne2,3$, and let $E\colon v^2=u^3+au+b$ be an elliptic curve with origin $p_0$ at infinity.
-Over $T = \AA^1 \smz$ with coordinate $t$, put
-$$
-\mathcal{E}_t : y^2 = x^3 + a t^2 x + b t^3 .
-$$
-Over a square root $s$ of $t$, the substitution $x = s^2 u$, $y = s^3 v$ identifies $\mathcal E_t$ with $E$, so every fibre is isomorphic to $E$ and the classifying map is constant.
-The family is the twist of $E\times T$ by the $\mu_2$-torsor $s\mapsto s^2=t$ over $\GG_m$, acting through $-1\in\Aut(E,p_0)$.
-That torsor is nontrivial, since $t$ has no square root in $k[t,t^{-1}]$, so $\mathcal E\to T$ is not isomorphic to $E\times T$.
+Equivalently $M_g$ carries a \dfn{universal family} $\mathcal{U}\to M_g$ whose pullback along each classifying morphism recovers the corresponding family, compatibly with base change.
 :::
 
 ::: {.remark}
-Every genus $g \geq 2$ has hyperelliptic curves, and each carries the hyperelliptic involution $\iota$.
-For $\operatorname{char}k\ne2$, the twist of $C\times\GG_m$ by the squaring $\mu_2$-torsor acting through $\iota$ is not isomorphic to $C\times\GG_m$.
-So there is no fine moduli space of curves of genus $g\ge2$, although a general curve of genus $g \geq 3$ has trivial automorphism group.
+For a coarse moduli space, families induce classifying maps; for a fine moduli space, this correspondence is bijective and natural in the base.
+Condition (2) alone does not imply that every map to $M_g$ comes from a family or that two families with the same classifying map are isomorphic.
+Representability requires the natural transformation to be an isomorphism of functors, not merely universal among maps from the moduli functor to representable functors.
 
-The moduli stack $\mathcal{M}_g$ ([[D-ALGSTACK]], [[T-MGSMOOTH]]) has as objects over $T$ the families over $T$ and as morphisms the isomorphisms of families; the automorphism group of the point $[C]$ of $\mathcal M_g$ is $\Aut C$, and $M_g$ is the coarse moduli space of $\mathcal{M}_g$.
+Nontrivial automorphisms produce an obstruction by twisting.
+If $C/k$ has finite constant automorphism group $G$ and a family over $T$ is étale-locally isomorphic to $C\times T$, its forms are classified by the pointed set
+$$
+H^1_{\acute{e}tale}(T,G).
+$$
+A nontrivial class gives an isotrivial but nonconstant family whose coarse classifying map is the constant map to $[C]$. Such a family cannot be obtained by pulling a single universal family back along that constant map.
+
+For a concrete witness, let $k$ be algebraically closed of characteristic different from $2$, fix an elliptic curve
+$$
+E\colon v^2=u^3+au+b,
+$$
+and put $T=\GG_{m,k}$ with coordinate $t$. Define
+$$
+\mathcal{E}_t : y^2 = x^3 + a t^2 x + b t^3 .
+$$
+After the étale cover $T'\to T$ given by $s^2=t$, the substitution
+$$
+x=s^2u,\qquad y=s^3v
+$$
+identifies $\mathcal E_{T'}$ with $E\times T'$. Thus every geometric fibre is isomorphic to $E$, while the family over $T$ is the nontrivial quadratic twist corresponding to the class of the cover $s^2=t$ in $H^1_{\acute{e}tale}(T,\mu_2)$.
+The $\mu_2$ here is $\pm 1 \subseteq \Aut(E, p_0)$, so the example is powered by exactly the automorphism that the moduli problem forgets.
+
+The same failure persists for every $g \geq 2$ even though a general curve of genus $g \geq 3$ has no nontrivial automorphisms: the hyperelliptic locus is nonempty in every genus and every curve on it carries the hyperelliptic involution.
+It is enough that *some* curve has an automorphism, since the twisted family over that one point's worth of moduli already breaks representability.
+The repair is not a better variety but a different kind of object — the stack quotient that remembers $\Aut C$ at the point $[C]$ — and $M_g$ is its coarse space.
 :::

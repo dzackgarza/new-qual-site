@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the degree tower, existence of the root automorphisms, exhaustive subgroup list of S3, identification of each fixed field, and every normality decision."
 ---
-
 ::: {.problem}
 Let $K$ be the splitting field of $f(x)=x^3 - 5$ over $\mathbb{Q}$.
 
@@ -46,7 +45,7 @@ write $a_j=\zeta^ja$ for $j\in\mathbb Z/3\mathbb Z$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 One has $K=\mathbb Q(a,\zeta)$ and $[K:\mathbb Q]=6$.
 
@@ -67,7 +66,7 @@ is a finite Galois extension [@DF04].
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The Galois group is $S_3$, acting as all permutations
 of $a_0,a_1,a_2$.
@@ -143,7 +142,7 @@ subfields lie outside this correspondence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$
 are Galois over $\mathbb Q$.
@@ -161,6 +160,13 @@ exhaustive list in step [](#s3){.pf-ref} proves that these decisions
 cover every subfield.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), step [](#s3){.pf-ref} proves
+part (c), and step [](#s4){.pf-ref} proves part (d).
 
 :::
 

@@ -27,7 +27,6 @@ audit:
   date: 2026-09-10
   note: "Checked the explicit extension-direction correction, the unrestricted algebraic Galois argument in (b), and every existence or impossibility claim; replaced the unsupported solvability assertion by an explicit radical tower."
 ---
-
 ::: {.problem}
 Give an example of each of the following or explain why no such examples exist.
 One or two sentence answers will suffice; you don't need to give formal proofs.
@@ -45,11 +44,20 @@ e. A field extension $K/F$ which is finite dimensional but not separable.
 f. An irreducible fifth degree polynomial over $\mathbb{Q}$ which is solvable by radicals.
 :::
 
+::: {.remark}
+With the prescribed inclusions $F\subset E\subset K$,
+the expressions $F/E$ and $E/K$ reverse the field-extension
+directions and do not define extensions via these inclusions.
+Parts (a) and (b) use the meaningful directions $E/F$ and
+$K/E$, respectively. No finiteness assumption on $K/F$
+is needed in part (b).
+:::
+
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 In part (a), take $F=\mathbb Q$,
 $E=\mathbb Q(a)$, and $K=\mathbb Q(a,\zeta)$, where
@@ -71,7 +79,7 @@ polynomial $T^3-2$, so $E/F$ is not normal and is not Galois.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 No example exists in part (b): $K/E$ is always Galois.
 
@@ -88,13 +96,14 @@ Its divisor $q_a$ therefore does the same.
 Thus every element of $K$ is separable over $E$, and
 every irreducible polynomial over $E$ with a root in
 $K$ splits over $K$. This proves that $K/E$ is algebraic,
-normal, and separable, hence Galois.
+normal, and separable, hence Galois, without assuming
+that its degree is finite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 In part (c), take $\mathbb F_2[T]/(T^3+T+1)$.
 
@@ -111,7 +120,7 @@ so it has exactly $2^3=8$ elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 No example exists in part (d).
 
@@ -134,7 +143,7 @@ of $120$. Since $7\nmid120$, degree seven is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 In part (e), take $F=\mathbb F_2(t)$ and $K=F(u)$
 with $u^2=t$, where $t$ is transcendental.
@@ -152,7 +161,7 @@ of $u$ has a repeated root. Hence $K/F$ is not separable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s6}
 
 In part (f), take $f(T)=T^5-2$.
 
@@ -177,12 +186,12 @@ extension, which is exactly solvability by radicals.
 
 :::
 
-:::
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} answer parts (a)--(f), respectively.
 
 :::
 
-::: {.remark}
-The source writes the extensions in parts (a) and (b) as $F/E$
-and $E/K$. With $F\subset E\subset K$ these are the extensions
-$E/F$ and $K/E$, as stated here.
+:::
+
 :::

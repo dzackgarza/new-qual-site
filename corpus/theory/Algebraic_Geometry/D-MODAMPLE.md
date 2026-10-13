@@ -29,12 +29,16 @@ It is \dfn{very ample} over $Y$ if there is a $Y$-immersion $\iota:X\to\PP_Y^n$,
 
 ::: {.definition title="Ample"}
 Let $X$ be a noetherian scheme and let $\mcl$ be an invertible sheaf on $X$.
-It is \dfn{ample} if for every coherent $\mcf$ there is an integer $N_0$ such that $\mcf\tensor\mcl^{\otimes n}$ is [[D-MODGG|globally generated]] for every $n\ge N_0$ [@Har10a, Chapter II, §7].
+It is \dfn{ample} if for every coherent $\mcf$ there is an integer $N_0$ such that
+$\mcf\tensor_{\OO_X}(\mcl\tensorpower{\OO_X}{n})$
+is [[D-MODGG|globally generated]] for every $n\ge N_0$ [@Har10a, Chapter II, §7].
 :::
 
 ::: {.theorem}
 Let $X$ be of finite type over a noetherian ring $A$ and let $\mcl$ be invertible.
-Then $\mcl$ is ample if and only if $\mcl^{\otimes m}$ is very ample over $\Spec A$ for some $m>0$ [@Har10a, Theorem II.7.6].
+Then $\mcl$ is ample if and only if
+$\mcl\tensorpower{\OO_X}{m}$
+is very ample over $\Spec A$ for some $m>0$ [@Har10a, Theorem II.7.6].
 :::
 
 ::: {.remark}

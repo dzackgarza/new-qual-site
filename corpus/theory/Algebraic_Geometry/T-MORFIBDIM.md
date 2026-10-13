@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-MORFIBDIM
 kind: theorem
 title: Fibre dimension and upper semicontinuity
-slogan: 'Fibre dimensions can jump only up on special loci: the general fibre has dimension $\dim X-\dim Y$, and larger-fibre loci are closed.'
+slogan: 'Local fibre dimension is upper semicontinuous on the source; for a dominant map the general fibre has dimension $\dim X-\dim Y$.'
 classification:
   areas:
   - algebraic-geometry
@@ -43,12 +43,28 @@ Then every irreducible component of every nonempty fibre $X_y$ has dimension at 
 :::
 
 ::: {.theorem title="Semicontinuity"}
-The function $x \mapsto \dim_x X_{f(x)}$ is **upper** semicontinuous on $X$: the locus where the fibre dimension is at least $n$ is closed.
-If $f$ is flat then $\dim_x X_{f(x)} = \dim_x X - \dim_{f(x)} Y$ at every point, so the fibre dimension is locally constant.
+Let $f\colon X\to Y$ be a morphism of finite type between schemes locally of finite type over a field.
+The function
+$$
+x\longmapsto \dim_x X_{f(x)}
+$$
+is upper semicontinuous on $X$: for every integer $r$, the locus
+$$
+\theset{x\in X\st \dim_xX_{f(x)}\geq r}
+$$
+is closed.
+
+If $f$ is flat, then
+$$
+\dim_x X_{f(x)}=\dim_xX-\dim_{f(x)}Y,
+$$
+and the local fibre-dimension function is locally constant on $X$.
+
+If $f$ is proper, then the function $y\mapsto\dim X_y$ is upper semicontinuous on $Y$: the locus $\theset{y\st\dim X_y\geq r}$ is the proper image of the corresponding closed locus in $X$.
 :::
 
 ::: {.remark}
-Upper semicontinuity means fibre dimension can jump **up** on special loci, never down.
+Upper semicontinuity on the source means local fibre dimension can jump up on closed special loci.
 The blowup is the model: fibre dimension $0$ generically, $1$ over the origin, and the jump locus $\theset{0}$ is closed.
 It cannot go the other way, because a component of a fibre is cut out by $\dim Y$ equations locally and Krull's height theorem bounds the drop.
 
@@ -56,5 +72,5 @@ The two halves are used differently.
 The lower bound proves positive-dimensional fibres in dimension-comparison arguments.
 The generic equality gives the dimension formula $\dim X = \dim Y + \dim(\text{general fibre})$.
 
-Flatness removes this jumping by forcing the expected local fibre dimension everywhere.
+For a flat finite-type morphism, the relative local dimension is locally constant, so this source-side jumping disappears.
 :::

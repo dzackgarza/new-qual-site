@@ -23,3 +23,314 @@ The source lists five familiar principles equivalent to the Axiom of Choice: Zor
    P\Longrightarrow\mathrm{AC}.
    \]
 :::
+
+::: {.solution}
+<1>1. The Axiom of Choice states:
+
+For every family
+$$
+\mathcal A
+$$
+of nonempty sets, there exists a function
+$$
+c:\mathcal A\to\bigcup\mathcal A
+$$
+such that
+$$
+c(A)\in A
+$$
+for every
+$$
+A\in\mathcal A.
+$$
+
+::: {.proof}
+Such a function is called a choice function for
+$$
+\mathcal A.
+$$
+This is the standard formulation of the Axiom of Choice.
+:::
+
+<1>2. Zorn's Lemma states:
+
+If
+$$
+(P,\le)
+$$
+is a partially ordered set such that every chain in
+$$
+P
+$$
+has an upper bound in
+$$
+P,
+$$
+then
+$$
+P
+$$
+has a maximal element.
+
+::: {.proof}
+This is the standard statement of Zorn's Lemma.
+:::
+
+<1>3. The well-ordering principle states:
+
+$$
+\boxed{
+\text{Every set admits a well-ordering.}}
+$$
+
+::: {.proof}
+A well-ordering is a total order under which every nonempty subset has a least element. The assertion that every set can be so ordered is the well-ordering principle.
+:::
+
+<1>4. Assume Zorn's Lemma. Let
+$$
+\mathcal A
+$$
+be an arbitrary family of nonempty sets.
+
+::: {.proof}
+To prove the Axiom of Choice from Zorn's Lemma, it is enough to construct a choice function for this arbitrary family.
+:::
+
+<1>5. Let
+$$
+P
+$$
+be the set of all partial choice functions on
+$$
+\mathcal A.
+$$
+Thus an element of
+$$
+P
+$$
+is a function
+$$
+f:\mathcal D_f\to\bigcup\mathcal A,
+$$
+where
+$$
+\mathcal D_f\subseteq\mathcal A
+$$
+and
+$$
+f(A)\in A
+$$
+for every
+$$
+A\in\mathcal D_f.
+$$
+Order
+$$
+P
+$$
+by extension:
+$$
+f\le g
+\iff
+g|_{\mathcal D_f}=f.
+$$
+
+::: {.proof}
+The empty function belongs to
+$$
+P,
+$$
+so
+$$
+P
+$$
+is nonempty. The extension relation is reflexive, antisymmetric, and transitive, hence a partial order.
+:::
+
+<1>6. Every chain in
+$$
+P
+$$
+has an upper bound in
+$$
+P.
+$$
+
+::: {.proof}
+Let
+$$
+\mathcal C\subseteq P
+$$
+be a chain. Define
+$$
+f
+\coloneqq
+\bigcup_{g\in\mathcal C}g.
+$$
+Because
+$$
+\mathcal C
+$$
+is linearly ordered by extension, any two functions in the chain agree wherever both are defined. Hence their union is a function.
+
+Its domain is
+$$
+\mathcal D_f
+=
+\bigcup_{g\in\mathcal C}\mathcal D_g
+\subseteq
+\mathcal A.
+$$
+If
+$$
+A\in\mathcal D_f,
+$$
+then
+$$
+A\in\mathcal D_g
+$$
+for some
+$$
+g\in\mathcal C,
+$$
+and therefore
+$$
+f(A)
+=
+g(A)
+\in
+A.
+$$
+Thus
+$$
+f\in P.
+$$
+By construction every
+$$
+g\in\mathcal C
+$$
+is extended by
+$$
+f,
+$$
+so
+$$
+f
+$$
+is an upper bound.
+:::
+
+<1>7. By Zorn's Lemma,
+$$
+P
+$$
+has a maximal element
+$$
+f_{\max}.
+$$
+
+::: {.proof}
+Step <1>6 verifies the hypothesis of Zorn's Lemma for the partially ordered set
+$$
+P.
+$$
+:::
+
+<1>8. The domain of
+$$
+f_{\max}
+$$
+is all of
+$$
+\mathcal A.
+$$
+
+::: {.proof}
+Suppose instead that there is some
+$$
+A_0
+\in
+\mathcal A\setminus\mathcal D_{f_{\max}}.
+$$
+The set
+$$
+A_0
+$$
+is nonempty, so choose one element
+$$
+a_0\in A_0.
+$$
+Define
+$$
+g
+=
+f_{\max}
+\cup
+\{
+(A_0,a_0)
+\}.
+$$
+Since
+$$
+A_0
+$$
+was not already in the domain, this is a function. It is a partial choice function and strictly extends
+$$
+f_{\max},
+$$
+contradicting maximality.
+:::
+
+<1>9. Therefore
+$$
+f_{\max}
+$$
+is a choice function for
+$$
+\mathcal A.
+$$
+
+::: {.proof}
+By step <1>8,
+$$
+\mathcal D_{f_{\max}}
+=
+\mathcal A.
+$$
+By the definition of
+$$
+P,
+$$
+one has
+$$
+f_{\max}(A)\in A
+$$
+for every
+$$
+A\in\mathcal A.
+$$
+:::
+
+<1>10. Hence
+$$
+\boxed{
+\text{Zorn's Lemma}
+\Longrightarrow
+\mathrm{AC}.}
+$$
+
+::: {.proof}
+The family
+$$
+\mathcal A
+$$
+was arbitrary. Step <1>9 constructs a choice function for every family of nonempty sets, which is exactly the Axiom of Choice.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 state AC and two of the listed equivalent principles, and steps <1>4--<1>10 prove one required implication.
+:::
+:::

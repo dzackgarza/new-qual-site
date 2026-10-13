@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the coset stabilizer, both image-order divisibilities, and equality of the subgroup with the action kernel, including p=2."
 ---
-
 ::: {.problem}
 Let $G$ be a finite group of order $n$ and let $p$ be the smallest prime dividing $n$.
 Show that any subgroup of $G$ of index $p$ is normal in $G$.
@@ -53,7 +52,7 @@ $g\in H$. In particular, $\ker\rho\subseteq H$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The subgroup $H$ is the kernel of $\rho$, and is therefore normal.
 
@@ -73,6 +72,12 @@ Consequently $H\subseteq\ker\rho$, and step [](#s1){.pf-ref} gives the reverse
 containment. Therefore $H=\ker\rho\lhd G$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} is the required conclusion.
 
 :::
 

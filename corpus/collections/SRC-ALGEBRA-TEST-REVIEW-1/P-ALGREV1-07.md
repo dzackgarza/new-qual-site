@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGREV1-07
 kind: problem
-title: Abelian groups of order $200$
+title: Classify abelian groups of order 200
 classification:
   areas:
   - algebra
@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Applied the finite abelian group classification to the 2-primary and 5-primary parts and obtained six pairwise nonisomorphic groups."
 ---
-
 ::: {.problem}
 Find all abelian groups of order $200$, up to isomorphism.
 :::
@@ -32,14 +31,14 @@ Since
 $$
 200=2^3\cdot5^2,
 $$
-every finite abelian group of order $200$ is the direct product of its
-$2$-primary part, of order $2^3$, and its $5$-primary part, of order $5^2$.
+the classification theorem for finite abelian groups separates the problem
+into the $2$-primary and $5$-primary parts.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The abelian groups of order $2^3$ are $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, and $\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.
+Classify the abelian groups of order $2^3$.
 
 ::: pf-proof
 
@@ -62,7 +61,7 @@ $$
 
 ::: {.pf-step #s2}
 
-The abelian groups of order $5^2$ are $\mathbb Z_{25}$ and $\mathbb Z_5\times\mathbb Z_5$.
+Classify the abelian groups of order $5^2$.
 
 ::: pf-proof
 
@@ -81,9 +80,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
-There are exactly $6$ abelian groups of order $200$ up to isomorphism.
+Combine the independent primary components.
 
 ::: pf-proof
 
@@ -105,6 +104,12 @@ The primary decomposition theorem also shows that no two groups in this list
 are isomorphic.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the complete classification up to isomorphism.
 
 :::
 

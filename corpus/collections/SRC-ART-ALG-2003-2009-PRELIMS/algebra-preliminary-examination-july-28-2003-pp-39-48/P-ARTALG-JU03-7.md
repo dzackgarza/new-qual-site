@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked equality of the generated root fields, repeated roots, inseparable polynomials, and the constant quotient when the original polynomial is linear."
 ---
-
 ::: {.problem}
 Prove that if $F$ is a field and $g(x) \in F[x]$ has a root $\alpha \in F$, then its Galois group is the same as the Galois group of $g(x)/(x - \alpha)$.
 :::
@@ -51,7 +50,7 @@ $\deg h=\deg g-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The two splitting fields inside $\overline F$ are equal.
 
@@ -78,16 +77,25 @@ are $F$; the same equality covers that case.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The Galois groups coincide.
 
 ::: pf-proof
 
-Writing the common splitting field as $L$, both groups equal
-$\operatorname{Aut}_F(L)$, with the same composition law.
+Writing the common splitting field as $L$, both groups are
+literally $\operatorname{Aut}_F(L)$, with the same composition
+law. No separability assumption was used. A repeated root
+$\alpha$ may still belong to $R_h$, but the root-set union and
+the field equality in step [](#s2){.pf-ref} remain valid.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
 
 :::
 

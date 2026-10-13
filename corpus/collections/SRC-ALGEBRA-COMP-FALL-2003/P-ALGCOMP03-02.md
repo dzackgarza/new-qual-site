@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Verified all Sylow-number congruence/divisibility cases and the counting contradiction for a hypothetical simple group of order 56.
 ---
-
 ::: {.problem}
 (a) List the Sylow subgroups of non-abelian groups of orders $21$ and $39$.
 
@@ -29,9 +28,9 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-A nonabelian group of order \(21\) has one Sylow \(7\)-subgroup and seven Sylow \(3\)-subgroups; a nonabelian group of order \(39\) has one Sylow \(13\)-subgroup and thirteen Sylow \(3\)-subgroups.
+Determine the Sylow subgroups for the nonabelian groups of orders \(21\) and \(39\).
 
 ::: pf-proof
 
@@ -92,7 +91,7 @@ As above, \(n_3=1\) would make both Sylow subgroups normal and force \(G\cong C_
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 No group of order \(56\) is simple.
 
@@ -136,6 +135,12 @@ Therefore
 \]
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b).
 
 :::
 

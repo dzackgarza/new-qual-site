@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARTALG-AL04-5
 kind: problem
-title: A Euclidean domain, a UFD that is not a PID, and a domain that is not a UFD
+title: Euclidean domains and failures of the converse factorization implications
 classification:
   areas:
   - algebra
@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked Euclidean division, the nonprincipal ideal (2,x), multiplicativity of the quadratic norm, and irreducibility and nonassociation of every factor of 6."
 ---
-
 ::: {.problem}
 Give an example of each of the following:
 
@@ -40,7 +39,7 @@ $\mathbb Z[\sqrt{-5}]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The ring $\mathbb Z$ is Euclidean.
 
@@ -54,7 +53,7 @@ $0\leq r<|b|$. Thus $r=0$ or $d(r)<d(b)$, as required.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The ring $\mathbb Z[x]$ is a unique factorization domain
 but not a principal ideal domain.
@@ -78,7 +77,7 @@ $x$ because its coefficient of $x$ is odd. No generator is possible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The integral domain $R=\mathbb Z[\sqrt{-5}]$ is not a
 unique factorization domain.
@@ -116,6 +115,12 @@ and multiplication by units can identify the two irreducible
 factorizations. This disproves unique factorization in $R$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the Euclidean-domain example, step [](#s2){.pf-ref} gives a UFD that is not a PID, and step [](#s3){.pf-ref} gives an integral domain that is not a UFD.
 
 :::
 

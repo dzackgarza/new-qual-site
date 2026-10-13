@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked the integral-coordinate argument, multiplicativity and positivity of the absolute norm, and the uniform three-quarter remainder bound."
 ---
-
 ::: {.problem}
 Let $O$ be the ring of integers of $\mathbf{Q}(\sqrt2)$.
 Show that $O$ is a Euclidean domain with respect to the absolute field norm
@@ -100,7 +99,7 @@ $\delta(\alpha)$ is a positive integer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Euclidean division holds for $\delta$.
 
@@ -132,6 +131,19 @@ multiplicativity and $\delta(\beta)\geq1$.
 
 :::
 
+::: pf-qed
+
+Step [](#s1){.pf-ref} identifies the ring of integers, step [](#s2){.pf-ref} establishes the Euclidean function, and step [](#s3){.pf-ref} proves Euclidean division.
+
 :::
 
+:::
+
+:::
+
+::: {.remark}
+The signed field norm is $N(a+b\sqrt2)=a^2-2b^2$; the Euclidean
+function is its absolute value. The signed values
+$N(n\sqrt2)=-2n^2$ are unbounded below and cannot serve as the
+nonnegative integer size in the Euclidean algorithm.
 :::

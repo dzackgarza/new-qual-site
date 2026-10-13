@@ -16,29 +16,53 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Assume that Theorem 2.4 (the root test) is true and prove the ratio test (Theorem 2.5).
 :::
 
-:::: {.solution}
+::: {.solution}
+Let $(a_n)$ be a sequence of nonzero real or complex numbers and put $c_n=|a_n|>0$.
+
 ::: pf
 
-::: pf-step
-Recall the root test (Theorem 2.4). Proof: if $\limsup_{n\to\infty}|a_n|^{1/n} < 1$ then $\sum a_n$ converges absolutely; if $\limsup |a_n|^{1/n} > 1$ then $\sum a_n$ diverges.
+::: {.pf-step #s1}
+
+If $\limsup_{n\to\infty}c_{n+1}/c_n<1$, then $\sum_n a_n$ converges absolutely.
+
+::: pf-proof
+
+Choose $q$ strictly between $\limsup c_{n+1}/c_n$ and $1$. For some $N$, $c_{n+1}\leq q c_n$ whenever $n\geq N$, and hence $c_n\leq c_Nq^{n-N}$ for every $n\geq N$. Taking $n$-th roots yields
+\[
+\limsup_{n\to\infty}c_n^{1/n}\leq q<1.
+\]
+The convergent case of the root test now proves absolute convergence.
+
+:::
+
 :::
 
 ::: {.pf-step #s2}
-Relate the root-test quantity to the ratio-test quantity.
-Proof: for a sequence of positive numbers $c_n$, \[\liminf_{n\to\infty}\frac{c_{n+1}}{c_n} \le \liminf_{n\to\infty} c_n^{1/n} \le \limsup_{n\to\infty} c_n^{1/n} \le \limsup_{n\to\infty}\frac{c_{n+1}}{c_n}.\] The upper bound: write $q = \limsup c_{n+1}/c_n$; for $\epsilon > 0$ there is $N$ with $c_{n+1} \le (q+\epsilon)c_n$ for $n \ge N$, hence $c_n \le C(q+\epsilon)^n$, so $c_n^{1/n} \le C^{1/n}(q+\epsilon) \to q+\epsilon$.
-The lower bound is analogous (or apply the upper bound to $1/c_n$).
+
+If $\liminf_{n\to\infty}c_{n+1}/c_n>1$, then $\sum_n a_n$ diverges.
+
+::: pf-proof
+
+Choose $q$ strictly between $1$ and $\liminf c_{n+1}/c_n$. For some $N$, $c_{n+1}\geq q c_n$ whenever $n\geq N$, so $c_n\geq c_Nq^{n-N}$. Consequently
+\[
+\liminf_{n\to\infty}c_n^{1/n}\geq q>1.
+\]
+The divergent case of the root test applies, since $\limsup c_n^{1/n}>1$.
+
 :::
 
-::: pf-step
-Apply to $c_n = |a_n|$ and invoke the root test.
-Proof: if $\limsup |a_{n+1}|/|a_n| = r < 1$, then by step [](#s2){.pf-ref}, $\limsup |a_n|^{1/n} \le r < 1$, so the root test gives absolute convergence.
-If $\liminf |a_{n+1}|/|a_n| > 1$ (the ratio test's divergence hypothesis), then $\liminf |a_n|^{1/n} > 1$, so in particular $\limsup |a_n|^{1/n} > 1$ and the root test gives divergence.
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} establish the convergence and divergence assertions of the ratio test; when the ratio limit exists, the conclusions apply according as it is less than or greater than $1$.
+
 :::
 
 :::
-::::
+
+:::

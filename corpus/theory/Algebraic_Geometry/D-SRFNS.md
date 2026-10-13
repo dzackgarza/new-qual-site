@@ -22,20 +22,56 @@ prompts:
 ---
 
 ::: {.definition}
-Divisors $D$ and $D'$ on a surface $X$ are \dfn{numerically equivalent}, $D \equiv D'$, if $D \cdot E = D' \cdot E$ for every divisor $E$.
-The \dfn{Néron--Severi group} is $\NS(X) = \Div(X)/\equiv$.
-Its rank $\rho(X)$ is the \dfn{Picard number}.
+Let $X$ be a smooth projective surface over an algebraically closed field.
+The \dfn{Néron--Severi group} is
+$$
+\NS(X)
+\coloneqq
+\Pic(X)/\Pic^0(X)
+\cong
+\Div(X)/{\sim_{\mathrm{alg}}}.
+$$
+
+Divisors $D$ and $D'$ are \dfn{numerically equivalent}, $D\equiv D'$, if
+$$
+D\cdot E=D'\cdot E
+\qquad
+\text{for every divisor }E.
+$$
+The \dfn{numerical divisor group} is
+$$
+N^1(X)
+\coloneqq
+\Div(X)/\equiv.
+$$
 :::
 
 ::: {.theorem title="Theorem of the base"}
 $\NS(X)$ is a finitely generated abelian group.
+The natural map
+$$
+\NS(X)\longrightarrow N^1(X)
+$$
+is surjective with torsion kernel, so
+$$
+N^1(X)\cong\NS(X)/\NS(X)_{\mathrm{tors}}.
+$$
+Their common rank $\rho(X)$ is the **Picard number**.
 :::
 
 ::: {.remark}
-For a smooth projective surface $X$ over $\CC$, the connected component $\Pic^0(X)$ of $\Pic(X)$ is an abelian variety of dimension $q = h^1(\OO_X)$, and $\NS(X)$ as defined here is $\Pic(X)/\Pic^0(X)$ modulo its torsion subgroup.
-For $D\in\Pic^0(X)$ and every divisor $E$, $D\cdot E=0$, so the intersection pairing is defined on $\NS(X)$, where it is a nondegenerate symmetric bilinear form on a free abelian group of finite rank.
-By the Hodge index theorem, its extension to $\NS(X)\otimes\RR$ has signature $(1,\rho(X)-1)$.
+The point of passing to $\NS$ is that $\Pic$ is usually not discrete: the connected component $\Pic^0$ is an abelian variety of dimension $q = h^1(\OO_X)$, and $\NS=\Pic/\Pic^0$ is the discrete component group.
+Intersection numbers cannot see $\Pic^0$ or torsion in $\NS$, so the intersection pairing descends to $N^1(X)$.
+After tensoring with $\RR$ it is a nondegenerate symmetric bilinear form on
+$$
+N^1(X)_\RR
+\coloneqq
+N^1(X)\tensor_\ZZ\RR,
+$$
+and the Hodge index theorem gives signature $(1,\rho(X)-1)$.
 
-Examples are $\rho(\PP^2)=1$ and $\rho(\PP^1\times\PP^1)=2$, where $\NS=\Pic$ because $q=0$; a K3 surface has $q=0$ and $1\le\rho\le20$; an abelian surface has $q=2$, so $\Pic^0$ is two-dimensional and $\NS$ is a genuine quotient.
+Examples are $\rho(\PP^2)=1$ and $\rho(\PP^1\times\PP^1)=2$, where $\NS=\Pic$ because $\Pic^0=0$.
+For a complex projective K3 surface, $\Pic^0=0$ and $1\le\rho\le20$; in positive characteristic the Picard number of a K3 surface can be as large as $22$.
+For an abelian surface, $\Pic^0$ has dimension $2$, so $\NS$ is a genuine quotient of $\Pic$.
 Blowing up a point adds one to $\rho$, adjoining the class of the exceptional curve.
 :::

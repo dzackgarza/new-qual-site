@@ -20,9 +20,183 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}\,\mathrm{d}x$ with $|a| < 1$;
+Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with $|a| < 1$.
 :::
 
 ::: {.remark}
 Erratum: the trailing $\mathrm{d}x$ is printed in the source after $d\theta$ and is a typo; the integral is $\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with integration variable $\theta$ and no $x$ in the integrand.
+:::
+
+::: {.solution}
+<1>1. If $a=0$, then
+$$
+\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
+=
+2\pi.
+$$
+
+::: {.proof}
+For $a=0$ the integrand is identically $1$.
+:::
+
+<1>2. Assume
+$$
+0<|a|<1
+$$
+and set
+$$
+z=e^{i\theta}.
+$$
+Then
+$$
+d\theta=\frac{dz}{iz}
+$$
+and
+$$
+\cos\theta
+=
+\frac12\left(z+\frac1z\right).
+$$
+
+::: {.proof}
+Differentiate $z=e^{i\theta}$ to get
+$$
+dz=iz\,d\theta.
+$$
+Euler's formula gives the standard expression for cosine.
+:::
+
+<1>3. The integral becomes
+$$
+\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
+=
+\oint_{|z|=1}
+\frac{2}{i(az^2+2z+a)}\,dz.
+$$
+
+::: {.proof}
+Substituting step <1>2,
+$$
+1+a\cos\theta
+=
+1+\frac a2\left(z+\frac1z\right)
+=
+\frac{az^2+2z+a}{2z}.
+$$
+Multiplying its reciprocal by $dz/(iz)$ gives the displayed contour
+integrand.
+:::
+
+<1>4. The roots of
+$$
+az^2+2z+a
+$$
+are
+$$
+z_\pm
+=
+\frac{-1\pm\sqrt{1-a^2}}{a}.
+$$
+
+::: {.proof}
+Apply the quadratic formula.
+:::
+
+<1>5. Exactly one of the roots in step <1>4 lies inside the unit circle,
+namely
+$$
+z_+
+=
+\frac{-1+\sqrt{1-a^2}}{a}
+=
+-\frac{a}{1+\sqrt{1-a^2}}.
+$$
+
+::: {.proof}
+Rationalizing the first expression gives the second. Hence
+$$
+|z_+|
+=
+\frac{|a|}
+{1+\sqrt{1-a^2}}
+<1.
+$$
+The product of the two roots is
+$$
+z_+z_-=1,
+$$
+so
+$$
+|z_-|>1.
+$$
+:::
+
+<1>6. The residue of
+$$
+\frac{2}{i(az^2+2z+a)}
+$$
+at $z=z_+$ is
+$$
+\frac1{i\sqrt{1-a^2}}.
+$$
+
+::: {.proof}
+The derivative of the quadratic denominator is
+$$
+2az+2.
+$$
+At $z=z_+$,
+$$
+az_++1
+=
+\sqrt{1-a^2}.
+$$
+Thus the residue is
+$$
+\frac2{i(2az_++2)}
+=
+\frac1{i\sqrt{1-a^2}}.
+$$
+:::
+
+<1>7. Therefore, for $0<|a|<1$,
+$$
+\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
+=
+\frac{2\pi}{\sqrt{1-a^2}}.
+$$
+
+::: {.proof}
+The unit circle encloses only the pole $z_+$. By the residue theorem and
+step <1>6,
+$$
+\oint_{|z|=1}
+\frac{2}{i(az^2+2z+a)}\,dz
+=
+2\pi i
+\frac1{i\sqrt{1-a^2}}
+=
+\frac{2\pi}{\sqrt{1-a^2}}.
+$$
+:::
+
+<1>8. For every real $a$ with $|a|<1$,
+$$
+\boxed{
+\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
+=
+\frac{2\pi}{\sqrt{1-a^2}}.
+}
+$$
+
+::: {.proof}
+Step <1>1 handles $a=0$, and step <1>7 handles $0<|a|<1$. The same formula
+gives $2\pi$ at $a=0$.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the requested value.
+:::
 :::

@@ -22,12 +22,17 @@ prompts:
 ---
 
 ::: {.theorem}
-Let $C$ be a smooth curve on a smooth projective surface $X$.
+Let $C$ be a smooth integral curve on a smooth projective surface $X$.
 Then
-\[
-\omega_C = (\omega_X \otimes \OO_X(C))\vert_C , \qquad 2g(C) - 2 = C \cdot (C + K_X) .
-\]
-The same numerical formula computes the arithmetic genus of any curve on $X$.
+$$
+\omega_C \cong (\omega_X \otimes \OO_X(C))\vert_C,
+\qquad
+2g(C)-2=C\cdot(C+K_X).
+$$
+More generally, for any effective Cartier divisor $C$ on $X$,
+$$
+2p_a(C)-2=C\cdot(C+K_X).
+$$
 :::
 
 ::: {.remark}
@@ -35,11 +40,14 @@ Adjunction converts genus calculations on surfaces into intersection-number calc
 
 On $\PP^2$ it gives the degree-genus formula.
 On $\PP^2$ one has $K = -3H$ and $H^2 = 1$, so $K^2 = 9$; for $C$ of degree $d$,
-\[
+$$
 2g-2 = C \cdot (C - 3H) = d^2 - 3d ,
-\]
+$$
 giving $g = \tfrac{1}{2}(d-1)(d-2)$.
 On $\PP^1 \times \PP^1$, $K = (-2,-2)$ and the same computation gives $g = (a-1)(b-1)$ for a curve of type $(a,b)$.
 
-In any dimension, for a smooth divisor $D$ on a smooth $X$, the sheaf-level form is $K_D = (K_X + D)\vert_D$.
+In any dimension, for a smooth effective Cartier divisor $D$ on a smooth variety $X$,
+$$
+\omega_D\cong(\omega_X\otimes\OO_X(D))|_D.
+$$
 :::

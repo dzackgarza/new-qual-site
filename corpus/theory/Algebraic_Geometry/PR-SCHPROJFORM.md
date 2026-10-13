@@ -14,6 +14,8 @@ classification:
 relations:
 - kind: uses
   target: D-MODPULL
+- kind: related-to
+  target: D-DEFTALG
 review: draft
 prompts:
 - What is Serre's projection formula?
@@ -22,13 +24,47 @@ prompts:
 ::: {.proposition title="Projection formula"}
 Let $f \colon X \to Y$ be a morphism of ringed spaces, $\mathcal{F}$ an $\OO_X$-module, and $\mathcal{E}$ a locally free $\OO_Y$-module of finite rank.
 Then there are natural isomorphisms
-\[
+$$
 R^i f_* (\mathcal{F} \otimes_{\OO_X} f^* \mathcal{E}) \cong R^i f_* \mathcal{F} \otimes_{\OO_Y} \mathcal{E}
-\]
+$$
 for all $i \geq 0$.
 [@Har10a, Exercise III.8.3]
 :::
 
+::: {.proof}
+The statement is local on $Y$. Let $U\subseteq Y$ be an open set on which
+$$
+\mathcal E|_U\cong\OO_U^{\oplus r}.
+$$
+Write $f_U\colon f^{-1}(U)\to U$ and $\mathcal F_U=\mathcal F|_{f^{-1}(U)}$. Then
+$$
+\mathcal F_U\otimes_{\OO_{f^{-1}(U)}}f_U^*(\mathcal E|_U)
+\cong
+\mathcal F_U^{\oplus r}.
+$$
+Since the right derived functors of the additive functor $f_*$ commute with finite direct sums,
+$$
+\bigl(R^if_*(\mathcal F\otimes f^*\mathcal E)\bigr)|_U
+\cong
+R^i(f_U)_*(\mathcal F_U^{\oplus r})
+\cong
+\bigl(R^i(f_U)_*\mathcal F_U\bigr)^{\oplus r}
+\cong
+\bigl(R^if_*\mathcal F\otimes_{\OO_Y}\mathcal E\bigr)|_U.
+$$
+These local isomorphisms are the restrictions of the natural projection-formula morphism, so they glue to the stated global isomorphism.
+:::
+
 ::: {.example}
-For $\pi \colon \PP(\mathcal{V}) \to Y$ a projective bundle and $\mathcal{L}$ a line bundle on $Y$, $\pi_*(\OO(m) \otimes \pi^* \mathcal{L}) \cong \Sym^m \mathcal{V} \otimes \mathcal{L}$ for $m \geq 0$.
+Let $\mathcal V$ be finite locally free on $Y$ and use the quotient convention
+$$
+\PP(\mathcal V)=\operatorname{Proj}_Y\Sym^\bullet\mathcal V
+$$
+from [[D-DEFTALG]]. For $\pi\colon\PP(\mathcal V)\to Y$, a line bundle $\mathcal L$ on $Y$, and $m\geq0$,
+$$
+\pi_*\bigl(\OO_{\PP(\mathcal V)}(m)\otimes\pi^*\mathcal L\bigr)
+\cong
+\Sym^m\mathcal V\otimes\mathcal L.
+$$
+This is the degree-zero projection formula together with $\pi_*\OO_{\PP(\mathcal V)}(m)\cong\Sym^m\mathcal V$.
 :::

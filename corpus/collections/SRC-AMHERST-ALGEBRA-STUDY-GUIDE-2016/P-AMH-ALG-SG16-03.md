@@ -25,8 +25,58 @@ Prove that $K$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
-Proof.
-We prove thatK is a subgroup of G as follows.
-(1) Let e be the identity element of G. Then He =H =eH, so e∈K. (2) Given a,b∈K, we have H(ab) = (Ha)b = (aH)b =a(Hb) =a(bH) = (ab)H. So ab∈K. (3) Given a∈K, we have Ha =aH. Multiplying by a−1 on the left and the right gives a−1(Ha)a−1 =a−1(aH)a−1 =⇒ a−1H(aa−1) = (a−1a)Ha−1, which implies a−1H =Ha−1. Thus a−1∈K, proving that K is a subgroup.
-QED
+<1>1. The identity lies in $K$.
+::: {.proof}
+Since
+$$
+He=H=eH,
+$$
+one has $e\in K$.
+:::
+
+<1>2. The set $K$ is closed under products.
+::: {.proof}
+Let $a,b\in K$. Then
+$$
+Ha=aH
+\qquad\text{and}\qquad
+Hb=bH.
+$$
+Therefore
+$$
+H(ab)
+=(Ha)b
+=(aH)b
+=a(Hb)
+=a(bH)
+=(ab)H.
+$$
+Hence $ab\in K$.
+:::
+
+<1>3. The set $K$ is closed under inverses.
+::: {.proof}
+Let $a\in K$, so
+$$
+Ha=aH.
+$$
+Multiplying this equality on the left and right by $a^{-1}$ gives
+$$
+a^{-1}H=Ha^{-1}.
+$$
+Thus $a^{-1}\in K$.
+:::
+
+<1>4. Therefore
+$$
+\boxed{K\le G}.
+$$
+::: {.proof}
+By step <1>1, $K$ is nonempty; step <1>2 gives closure under products, and step <1>3 gives closure under inverses. Hence $K$ is a subgroup of $G$.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::

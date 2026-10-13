@@ -17,21 +17,21 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Prove that if $f'$ exists and is bounded on $(a,b]$, then $\lim_{x\to a^+}f(x)$ exists.
 :::
 ::: {.solution}
+Let $M\geq0$ satisfy $|f'(t)|\leq M$ for all $t\in(a,b]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$f$ is continuous on $(a, b]$ and differentiable on $(a, b)$.
+For all $a<x<y\leq b$, one has $|f(y)-f(x)|\leq M(y-x)$.
 
 ::: pf-proof
 
-differentiability on $(a,b]$ implies continuity at every point of $(a,b]$, including $b$.
+Differentiability implies continuity on $[x,y]$ and differentiability on $(x,y)$. The mean value theorem gives $\xi\in(x,y)$ such that $f(y)-f(x)=f'(\xi)(y-x)$. The bound on $f'$ yields the claimed inequality.
 
 :::
 
@@ -39,11 +39,15 @@ differentiability on $(a,b]$ implies continuity at every point of $(a,b]$, inclu
 
 ::: {.pf-step #s2}
 
-$f$ is Lipschitz on $(a, b]$ with constant $M = \sup_{(a,b]}|f'| < \infty$: for $a < x < y \le b$, $|f(x) - f(y)| \le M|x - y|$.
+The sequence $f(a+(b-a)/n)$, for positive integers $n$, converges to some $L\in\mathbb R$.
 
 ::: pf-proof
 
-the Mean Value Theorem applied to $f$ on $[x, y] \subset (a, b]$ gives $f(x) - f(y) = f'(\xi)(x - y)$ for some $\xi \in (x, y)$, and $|f'(\xi)| \le M$.
+Put $x_n=a+(b-a)/n$. By step [](#s1){.pf-ref}, for all positive integers $m,n$,
+\[
+|f(x_n)-f(x_m)|\leq M|x_n-x_m|.
+\]
+Since $(x_n)$ converges to $a$, it is Cauchy, so $(f(x_n))$ is Cauchy. Completeness of $\mathbb R$ gives its limit $L$.
 
 :::
 
@@ -51,25 +55,23 @@ the Mean Value Theorem applied to $f$ on $[x, y] \subset (a, b]$ gives $f(x) - f
 
 ::: {.pf-step #s3}
 
-$f$ satisfies the Cauchy criterion at $a^+$: for every $\eps > 0$ there is $\delta > 0$ such that $a < x, y < a + \delta$ implies $|f(x) - f(y)| < \eps$.
+The right-hand limit is $\boxed{\lim_{x\to a^+}f(x)=L}$.
 
 ::: pf-proof
 
-by step [](#s2){.pf-ref}, $|f(x) - f(y)| \le M|x - y| < M\delta$; choose $\delta = \eps/M$.
+For $x\in(a,b]$, step [](#s1){.pf-ref} and the triangle inequality give
+\[
+|f(x)-L|\leq M|x-x_n|+|f(x_n)-L|.
+\]
+Letting $n\to\infty$ and using step [](#s2){.pf-ref} yields $|f(x)-L|\leq M(x-a)$. Given $\varepsilon>0$, choose $\delta=\min\{b-a,\varepsilon/(M+1)\}>0$. If $a<x<a+\delta$, then $|f(x)-L|\leq M(x-a)<\varepsilon$.
 
 :::
 
 :::
 
-::: pf-step
+::: pf-qed
 
-$\lim_{x \to a^+} f(x)$ exists.
-
-::: pf-proof
-
-the Cauchy criterion step [](#s3){.pf-ref} is equivalent to the existence of the limit (pick a sequence $x_n \to a^+$; step [](#s3){.pf-ref} makes $(f(x_n))$ Cauchy in the complete space $\RR$, so it converges, and the limit is independent of the sequence by step [](#s3){.pf-ref} again).
-
-:::
+Step [](#s3){.pf-ref} establishes the required finite right-hand limit.
 
 :::
 

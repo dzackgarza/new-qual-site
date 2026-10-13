@@ -18,3 +18,62 @@ audit:
 ::: {.problem}
 Find the expectation value of the area of the projection of a 3-dimensional randomly oriented cube with edge of length 1 onto a given plane.
 :::
+
+::: {.solution}
+Let $n$ be a unit normal to the fixed projection plane, and let $u_1,u_2,u_3$ be the orthonormal directions normal to the three pairs of opposite cube faces.
+
+<1>1. For a fixed orientation of the cube, the area of its orthogonal projection is
+\[
+A=|n\cdot u_1|+|n\cdot u_2|+|n\cdot u_3|.
+\]
+
+::: {.proof}
+For a convex polyhedron, the projected area equals the sum over the faces visible from direction $n$ of the area of each face times the absolute cosine of the angle between its normal and $n$. For each pair of opposite unit-area cube faces, exactly one face is visible except on a measure-zero edge-on orientation, and its contribution is $|n\cdot u_i|$. Summing the three pairs gives the formula.
+:::
+
+<1>2. Under a uniformly random orientation, each $u_i$ is uniformly distributed on the unit sphere $S^2$.
+
+::: {.proof}
+Haar-uniform rotation of any fixed unit vector has the rotation-invariant probability distribution on $S^2$, which is the uniform surface-area distribution.
+:::
+
+<1>3. If $U$ is uniform on $S^2$, then
+\[
+\mathbf E|n\cdot U|=\frac12.
+\]
+
+::: {.proof}
+By rotational invariance take $n$ as the north-pole direction. Writing $n\cdot U=\cos\theta$, the normalized surface measure is
+\[
+\frac1{4\pi}\sin\theta\,d\theta\,d\phi.
+\]
+Hence
+\[
+\mathbf E|n\cdot U|
+=\frac1{4\pi}\int_0^{2\pi}\int_0^\pi
+|\cos\theta|\sin\theta\,d\theta\,d\phi
+=\frac12.
+\]
+:::
+
+<1>4. Therefore
+\[
+\boxed{\mathbf EA=\frac32}.
+\]
+
+::: {.proof}
+By linearity of expectation, independence of the three $u_i$ is unnecessary. Apply step <1>3 separately to each term in step <1>1:
+\[
+\mathbf EA
+=\sum_{i=1}^3\mathbf E|n\cdot u_i|
+=3\cdot\frac12
+=\frac32.
+\]
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the expected projected area of the randomly oriented unit cube.
+:::
+:::

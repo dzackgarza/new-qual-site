@@ -26,3 +26,100 @@ Let $f _ { A } \in F [ X ]$ be the product of $( X - a )$ , taken over all $a \i
 
 Hint: Let $C = F [ Y ]$ and let $h ( X ) = - f _ { A } ( X + Y ) + f _ { A } ( X ) + f _ { A } ( Y ) \in C [ X ]$ . Use (i) to find more $c \in C$ such that $h ( c ) = 0$ than the degree of $h \in C [ X ]$
 :::
+
+::: {.solution}
+Let
+$$
+q=\abs{A},
+\qquad
+f_A(X)=\prod_{b\in A}(X-b).
+$$
+
+<1>1. For every $a\in A$,
+$$
+\boxed{f_A(X+a)=f_A(X)}.
+$$
+
+::: {.proof}
+Fix $a\in A$. Since $A$ is an additive subgroup, translation by $a$ permutes $A$. Therefore
+$$
+\begin{aligned}
+f_A(X+a)
+&=\prod_{b\in A}(X+a-b)\\
+&=\prod_{c\in A}(X-c)\\
+&=f_A(X),
+\end{aligned}
+$$
+where in the second product we reindex by $c=b-a$. This proves part (i).
+:::
+
+<1>2. Define
+$$
+h(X)=-f_A(X+Y)+f_A(X)+f_A(Y)
+\in F[Y][X].
+$$
+Then
+$$
+\deg_X h\leq q-1.
+$$
+
+::: {.proof}
+The polynomial $f_A$ is monic of degree $q$. Hence both $f_A(X+Y)$ and $f_A(X)$ have leading $X$-term $X^q$. These leading terms cancel in
+$$
+-f_A(X+Y)+f_A(X),
+$$
+while $f_A(Y)$ has $X$-degree $0$. Therefore $\deg_X h\leq q-1$.
+:::
+
+<1>3. Every element $a\in A$ is a root of $h(X)$.
+
+::: {.proof}
+Because $0\in A$, one has
+$$
+f_A(a)=0
+$$
+for every $a\in A$. By step <1>1, applied with the indeterminate $Y$ in place of $X$,
+$$
+f_A(Y+a)=f_A(Y).
+$$
+Thus
+$$
+\begin{aligned}
+h(a)
+&=-f_A(a+Y)+f_A(a)+f_A(Y)\\
+&=-f_A(Y)+0+f_A(Y)\\
+&=0.
+\end{aligned}
+$$
+:::
+
+<1>4. One has
+$$
+h(X)=0
+$$
+in $F[Y][X]$.
+
+::: {.proof}
+The coefficient ring $F[Y]$ is an integral domain. A nonzero polynomial of degree at most $q-1$ over an integral domain has at most $q-1$ distinct roots in that domain. By step <1>3, the polynomial $h$ has the $q$ distinct roots given by the elements of $A\subseteq F\subseteq F[Y]$. Together with the degree bound in step <1>2, this forces $h=0$.
+:::
+
+<1>5. Therefore
+$$
+\boxed{f_A(X+Y)=f_A(X)+f_A(Y)}
+$$
+in $F[X,Y]$.
+
+::: {.proof}
+Step <1>4 says precisely that
+$$
+-f_A(X+Y)+f_A(X)+f_A(Y)=0.
+$$
+Rearranging gives the asserted identity, proving part (ii).
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (i), and step <1>5 proves part (ii).
+:::
+:::

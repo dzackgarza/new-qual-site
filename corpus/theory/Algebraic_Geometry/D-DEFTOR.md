@@ -24,7 +24,8 @@ prompts:
 ---
 
 ::: {.definition title="Tor"}
-For an $A$-module $M$, the functors $\Tor^A_i(M,\wait)$, $i \geq 0$, are the left derived functors of the right exact functor $M \tensor_A \wait$.
+Let $A$ be a commutative ring and let $M$ be an $A$-module.
+The functors $\Tor^A_i(M,\wait)$, $i \geq 0$, are the left derived functors of the right exact functor $M \tensor_A \wait$.
 A short exact sequence $0 \to N' \to N \to N'' \to 0$ induces a long exact sequence
 $$
 \cdots \to \Tor^A_{i+1}(M, N'') \to \Tor^A_i(M,N') \to \Tor^A_i(M,N) \to \Tor^A_i(M,N'') \to \Tor^A_{i-1}(M,N') \to \cdots

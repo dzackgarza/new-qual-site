@@ -32,7 +32,7 @@ Write $\chi(\mcf)$ when the scheme is fixed.
 :::
 
 ::: {.definition title="Hilbert polynomial"}
-Choose a very ample invertible sheaf $L$ on the projective $k$-scheme $X$ and put $\mcf(n)=\mcf\otimes L^{\otimes n}$, using the dual of $L$ for negative powers.
+Choose a very ample invertible sheaf $L$ on the projective $k$-scheme $X$ and put $\mcf(n)=\mcf\tensor_{\OO_X}L\tensorpower{\OO_X}{n}$, using the dual of $L$ for negative powers.
 The \dfn{Hilbert polynomial} of $\mcf$ with respect to $L$ is the unique $P_{\mcf,L}\in\QQ[z]$ satisfying
 $$
 P_{\mcf,L}(n)=\chi(X,\mcf(n))\qquad(n\in\ZZ)
@@ -41,9 +41,17 @@ $$
 It depends on the chosen twisting sheaf; its value at zero is the intrinsic Euler characteristic $\chi(X,\mcf)$.
 :::
 
-::: {.definition title="Arithmetic and geometric genus"}
+::: {.definition title="Arithmetic genus, geometric genus, irregularity, and plurigenera"}
 For a nonempty projective scheme $X$ over a field of dimension $n$, the \dfn{arithmetic genus} is $p_a(X)\coloneqq(-1)^n(\chi(\OO_X)-1)$, so $p_a(X)=1-\chi(\OO_X)$ for a curve.
 For a nonsingular projective integral variety $X$ of dimension $n$ over an algebraically closed field, the \dfn{geometric genus} is $p_g(X)\coloneqq h^0(X,\omega_X)$, and Serre duality gives $p_g(X)=h^n(X,\OO_X)$.
+Its \dfn{irregularity} is
+$$
+q(X)\coloneqq h^1(X,\OO_X).
+$$
+For every integer $m\geq1$, its \dfn{$m$-th plurigenus} is
+$$
+P_m(X)\coloneqq h^0(X,\omega_X^{\otimes m}).
+$$
 [@Har10a, §II.8, Exercise III.5.3]
 :::
 
@@ -60,6 +68,6 @@ This follows by taking the alternating sum of the dimensions in the finite long 
 :::
 
 ::: {.remark}
-For sufficiently large $n$, Serre vanishing gives $H^i(X,\mcf(n))=0$ for all $i>0$, so $P_{\mcf,L}(n)=h^0(X,\mcf(n))$ [@Har10a, Theorem III.5.2].
-For small $n$ this can fail: on $X=\PP^1$ with $L=\OO(1)$, $P_{\OO_X,L}(n)=n+1$, so $P_{\OO_X,L}(-2)=-1$, while $h^0(\PP^1,\OO(-2))=0$.
+For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\tensor_{\OO_X}L\tensorpower{\OO_X}{n})$ [@Har10a, Theorem III.5.2].
+The Euler-characteristic identity holds for every integer $n$; equality with the dimension of global sections is the eventual assertion.
 :::

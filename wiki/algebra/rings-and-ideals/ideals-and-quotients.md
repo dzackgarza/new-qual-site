@@ -46,15 +46,11 @@ The [[D-CXXCG|prime spectrum]] $\Spec R$ is the set of prime ideals of $R$, and 
 
 [[D-5BM46]]
 
-[[FD-OSSYR]]
-
 [[PR-LX7GH]]
 
 [[D-CXXCG]]
 
 [[D-7XH2R]]
-
-[[FD-CD2FE]]
 
 [[D-NX4KW]]
 

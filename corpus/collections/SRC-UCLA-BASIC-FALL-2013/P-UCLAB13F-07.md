@@ -28,3 +28,184 @@ P^{(k)}(z_j)=c_{j,k}
 \]
 for all $j,k$.
 :::
+
+::: {.solution}
+Let
+\[
+\mathcal P_N
+=
+\{P\in\mathbb C[z]:\deg P\le N\}.
+\]
+Then
+\[
+\dim_{\mathbb C}\mathcal P_N=N+1.
+\]
+
+<1>1. Define the linear map
+\[
+\Phi:\mathcal P_N
+\longrightarrow
+\mathbb C^{N+1}
+\]
+by
+\[
+\Phi(P)
+=
+\bigl(P^{(k)}(z_j)\bigr)_
+{\substack{1\le j\le n\\0\le k\le m_j}}.
+\]
+
+::: {.proof}
+The total number of coordinates is
+\[
+\sum_{j=1}^n(m_j+1)
+=
+N+1
+\]
+by hypothesis.
+Each coordinate map
+\[
+P\mapsto P^{(k)}(z_j)
+\]
+is linear, so $\Phi$ is linear.
+:::
+
+<1>2. If
+\[
+P^{(k)}(z_j)=0
+\]
+for
+\[
+0\le k\le m_j,
+\]
+then
+\[
+(z-z_j)^{m_j+1}
+\]
+divides $P(z)$.
+
+::: {.proof}
+Expand $P$ in powers of $z-z_j$:
+\[
+P(z)
+=
+\sum_{\ell=0}^N a_\ell(z-z_j)^\ell.
+\]
+Then
+\[
+P^{(k)}(z_j)
+=
+k!\,a_k.
+\]
+If all these derivatives vanish for $0\le k\le m_j$, then
+\[
+a_0=a_1=\cdots=a_{m_j}=0.
+\]
+Hence every surviving term is divisible by
+\[
+(z-z_j)^{m_j+1}.
+\]
+:::
+
+<1>3. If
+\[
+\Phi(P)=0,
+\]
+then
+\[
+\prod_{j=1}^n
+(z-z_j)^{m_j+1}
+\]
+divides $P(z)$.
+
+::: {.proof}
+By step <1>2, for each $j$,
+\[
+(z-z_j)^{m_j+1}
+\]
+divides $P$.
+The numbers $z_1,\ldots,z_n$ are distinct, so the corresponding linear factors are pairwise relatively prime.
+Therefore the product of these powers divides $P$.
+:::
+
+<1>4. The polynomial
+\[
+Q(z)
+=
+\prod_{j=1}^n
+(z-z_j)^{m_j+1}
+\]
+has degree
+\[
+N+1.
+\]
+
+::: {.proof}
+By the definition of $N$,
+\[
+\deg Q
+=
+\sum_{j=1}^n(m_j+1)
+=
+N+1.
+\]
+:::
+
+<1>5. The map $\Phi$ is injective.
+
+::: {.proof}
+Suppose
+\[
+\Phi(P)=0.
+\]
+By step <1>3, $Q$ divides $P$, while step <1>4 gives
+\[
+\deg Q=N+1.
+\]
+But
+\[
+\deg P\le N.
+\]
+The only polynomial of degree at most $N$ divisible by a nonzero polynomial of degree $N+1$ is the zero polynomial.
+Thus
+\[
+P=0.
+\]
+Hence $\ker\Phi=\{0\}$.
+:::
+
+<1>6. The map $\Phi$ is bijective.
+
+::: {.proof}
+The domain has dimension
+\[
+\dim\mathcal P_N=N+1.
+\]
+The codomain $\mathbb C^{N+1}$ also has dimension $N+1$.
+By step <1>5, $\Phi$ is injective.
+A linear map between finite-dimensional vector spaces of equal dimension is injective if and only if it is surjective.
+Therefore $\Phi$ is bijective.
+:::
+
+<1>7. For every prescribed array
+\[
+(c_{j,k}),
+\]
+there exists a unique polynomial $P$ of degree at most $N$ such that
+\[
+P^{(k)}(z_j)=c_{j,k}
+\]
+for all $j,k$.
+
+::: {.proof}
+The array $(c_{j,k})$ is an arbitrary element of the codomain of $\Phi$.
+Surjectivity from step <1>6 gives existence of a preimage $P$.
+Injectivity gives uniqueness.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is exactly the Hermite interpolation statement required.
+:::
+:::

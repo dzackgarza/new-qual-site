@@ -26,7 +26,6 @@ audit:
   date: 2026-09-10
   note: "Checked faithfulness and composition of the variable-permutation action, the exact Frobenius order and automorphism bound, and existence of finite fields realizing every cyclic order."
 ---
-
 ::: {.problem}
 a. What finite groups $G$ can occur as collections of automorphisms of some field $F$?
 More precisely, for which $G$ does there exist a field $F$ such that $G$ is a subgroup of the automorphism group of $F$?
@@ -42,7 +41,7 @@ the finite cyclic groups occur, including the trivial group.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Every finite group embeds in the automorphism group of
 a field.
@@ -115,7 +114,7 @@ $\langle\varphi\rangle\cong C_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Exactly the finite cyclic groups are realized in part (b).
 
@@ -139,6 +138,12 @@ $\operatorname{Aut}(F_n)\cong C_n$, realizing the prescribed
 cyclic group. For $n=1$ the group is trivial.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 

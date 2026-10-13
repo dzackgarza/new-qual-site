@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-MIRACLEFLAT
 kind: proposition
-title: Finite morphisms of smooth varieties of equal dimension are flat
+title: Miracle flatness for finite morphisms
 slogan: 'Finite plus Cohen--Macaulay source, smooth target, and equal dimension forces flatness.'
 classification:
   areas:
@@ -22,14 +22,48 @@ prompts:
 ---
 
 ::: {.proposition title="Miracle flatness"}
-Let $f \colon X \to Y$ be a finite morphism of varieties over a field with $X$ Cohen--Macaulay, $Y$ smooth, and $\dim X = \dim Y$ at every point of $X$.
+Let $f\colon X\to Y$ be a finite morphism of locally Noetherian schemes. Assume that for every $x\in X$, with $y=f(x)$,
+
+- $\OO_{X,x}$ is Cohen--Macaulay;
+- $\OO_{Y,y}$ is regular; and
+- $\dim\OO_{X,x}=\dim\OO_{Y,y}$.
+
 Then $f$ is flat.
-In particular a finite surjective morphism between smooth varieties of the same dimension is flat.
+In particular, a finite surjective morphism between smooth varieties of the same dimension over a field is flat.
 [@Har10a, Exercise III.10.9]
+:::
+
+::: {.proof}
+Fix $x\in X$ and put
+$$
+A=\OO_{Y,y},\qquad B=\OO_{X,x},\qquad d=\dim A=\dim B.
+$$
+The ring $B$ is a finite $A$-module. Since $A\to B$ is local and finite, $\sqrt{\mfm_A B}=\mfm_B$, so depth computed with respect to $\mfm_A$ agrees with depth computed with respect to $\mfm_B$. Hence
+$$
+\operatorname{depth}_A B
+=\operatorname{depth}_B B
+=d,
+$$
+because $B$ is Cohen--Macaulay.
+
+The regular local ring $A$ has finite global dimension $d$, so the finite $A$-module $B$ has finite projective dimension. Auslander--Buchsbaum gives
+$$
+\operatorname{pd}_A B+\operatorname{depth}_A B
+=\operatorname{depth}A=d.
+$$
+Thus $\operatorname{pd}_A B=0$, so $B$ is finite projective over the local ring $A$, hence free. Therefore $B$ is flat over $A$. This holds at every $x$, so $f$ is flat.
 :::
 
 ::: {.example}
 The hypotheses cannot be dropped.
 The inclusion of the origin $\Spec k \to \AA^1_k$ is finite and both schemes are smooth, but it is not flat, since $k = k[t]/(t)$ is a torsion $k[t]$-module; here the dimensions differ.
-The normalization $\AA^1 \to V(y^2 - x^3)$, $t \mapsto (t^2, t^3)$, is finite between varieties of the same dimension with smooth source, but the target is not smooth, and the map is not flat: it is birational of degree one and not an isomorphism.
+The normalization
+$$
+\AA^1_k\longrightarrow V(y^2-x^3),\qquad t\longmapsto(t^2,t^3),
+$$
+is finite between one-dimensional varieties with smooth source, but the target is not regular at the cusp. It is not flat: its generic rank is $1$, while over the cusp the fibre ring is
+$$
+k[t]\tensor_{k[t^2,t^3]}k\cong k[t]/(t^2),
+$$
+which has $k$-dimension $2$. A finite flat module over the connected cusp has locally constant rank, so these fibre dimensions cannot occur for a flat morphism.
 :::

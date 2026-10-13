@@ -24,12 +24,14 @@ The presheaf quotient of all real functions by the bounded ones fails the identi
 
 [[D-A7LCT]]
 
-The map $\mcf\to\mcf^+$ induces an isomorphism on every stalk.
-For a morphism $\varphi\colon\mcf\to\mcg$ of sheaves, the presheaf kernel $U\mapsto\ker\varphi_U$ is a sheaf; the presheaf cokernel $U\mapsto\mcg(U)/\varphi(\mcf(U))$ need not be, and the sheaf cokernel is its sheafification.
+Sheafification changes no stalk.
+Consequently a sequence of sheaves is exact exactly when the corresponding sequence of stalks is exact.
+Kernels are computed sectionwise, while the sectionwise presheaf image and cokernel need not be sheaves and are sheafified to obtain the image and cokernel in the sheaf category; their stalks are still the image and cokernel of the stalk maps.
 
 ## Sheafification as a space over $X$
 
-The espace étalé of $\mcf$ is $\coprod_{x\in X}\mcf_x$ with the topology for which the projection to $X$ is a local homeomorphism and each $s\in\mcf(U)$ gives an open section $x\mapsto s_x$; $\mcf^+(U)$ is the set of its continuous sections over $U$.
+The compatible-families formula gives the sheafification explicitly.
+The espace étalé gives a geometric realization: a sheaf is a space over $X$ whose projection is a local homeomorphism, and the sections of $\mcf^+$ are its continuous sections.
 
 [[D-VJFAP]]
 

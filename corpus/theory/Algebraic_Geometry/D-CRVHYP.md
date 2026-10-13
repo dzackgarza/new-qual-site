@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-CRVHYP
 kind: definition
-title: Hyperelliptic curves and their canonical maps
+title: Hyperelliptic curves, and what the canonical map does to them
 classification:
   areas:
   - algebraic-geometry
@@ -23,7 +23,8 @@ prompts:
 ---
 
 ::: {.definition}
-A curve $C$ of genus $g \geq 2$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1$ of degree $2$, that is, a $g^1_2$.
+Let $C$ be a smooth projective curve of genus $g\geq2$ over an algebraically closed field $k$.
+The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$, equivalently a $g^1_2$.
 :::
 
 ::: {.proposition}
@@ -37,10 +38,19 @@ Equivalently $\abs{K} = (g-1)\, g^1_2$.
 :::
 
 ::: {.remark}
-Base-point freeness of $\abs{K}$ follows from Riemann--Roch: $\ell(K)=g$, and $\ell(K-p)=g-1$ because $\ell(p)=1$ for a non-rational curve.
-By Riemann--Roch, $\ell(K - p - q) = \ell(K) - 2$ for points $p,q$ unless $\ell(p+q) = 2$, that is, unless $p+q$ is a divisor of a $g^1_2$.
-Hence $\abs{K}$ is very ample if and only if $C$ is not hyperelliptic [@Har10a, Proposition IV.5.2].
+For a hyperelliptic curve, the canonical map is two-to-one onto a rational normal curve instead of an embedding.
 
-Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$.
-Hyperelliptic curves of genus $g$ are the double covers of $\PP^1$ branched at $2g+2$ points, so they form a locus of dimension $2g-1$ in $\mathcal{M}_g$, which has dimension $3g-3$; the two agree only for $g=2$.
+For every $p\in C$, one has $\ell(p)=1$: otherwise a nonconstant function with polar divisor bounded by $p$ would define a degree-one morphism $C\to\PP^1$, forcing $C\cong\PP^1$. Riemann--Roch therefore gives $\ell(K-p)=g-1$, so $\abs K$ is base-point free.
+Similarly, Riemann--Roch gives
+$$
+\ell(K-p-q)=g-3+\ell(p+q).
+$$
+Thus the canonical system fails to separate some pair of points or tangent direction exactly when $\ell(p+q)=2$, equivalently when $p+q$ belongs to a $g^1_2$.
+
+Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright.
+If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz. Hence the hyperelliptic locus has dimension
+$$
+(2g+2)-\dim\PGL_2=2g-1;
+$$
+it is all of $\mathcal M_2$ and is a proper locus in $\mathcal M_g$ for $g\geq3$.
 :::

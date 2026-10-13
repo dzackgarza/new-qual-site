@@ -29,75 +29,101 @@ prompts:
 - Construct the Jacobian without using $\CC$.
 ---
 
-::: {.definition title="Families of degree-zero line bundles"}
-Let $X/k$ be a smooth projective curve of genus $g$ with a point $p_0$, and let $T \in \Sch^{\mathrm{ft}}_{/k}$ with second projection $p \colon X \times T \to T$.
-Put
-\[
-\Pic^0(X \times T) \definedas \theset{ \mcf \in \Pic(X \times T) \st \deg \restrictionof{\mcf}{X_t} = 0 \ \forall t \in T },
-\qquad
-\Pic^0(X/T) \definedas \Pic^0(X \times T) \, / \, p^* \Pic(T) ,
-\]
-the families of degree-zero line bundles on $X$ parameterised by $T$.
-:::
-
 ::: {.theorem title="Representability"}
-There is a $k$-scheme $\Jac(X)$ of finite type together with a universal $\mcl \in \Pic^0\big(X / \Jac(X)\big)$ such that for every $T$ and every $\mcm \in \Pic^0(X/T)$ there is a unique $f \colon T \to \Jac(X)$ with $f^* \mcl = \mcm$.
-That is, $\Jac(X)$ represents $\Pic^0(X/{-})$.
+Let $X/k$ be a smooth projective geometrically connected curve of genus $g$, and assume $p_0\in X(k)$.
+The degree-zero relative Picard functor $\underline{\Pic}^{\,0}_{X/k}$ from [[D-MODPIC]] is represented by a smooth proper connected group scheme
+$$
+\Jac(X)\longrightarrow\Spec k
+$$
+of dimension $g$.
+
+Equivalently, for every $k$-scheme $T$ there is a natural group isomorphism
+$$
+\Hom_k(T,\Jac(X))
+\xrightarrow{\sim}
+\underline{\Pic}^{\,0}_{X/k}(T).
+$$
+The point $p_0$ determines a normalized Poincaré line bundle $\mathcal P$ on $X\times_k\Jac(X)$, characterized by
+$$
+\mathcal P|_{\theset{p_0}\times\Jac(X)}\cong\OO_{\Jac(X)},
+$$
+whose pullback along $\operatorname{id}_X\times f$ represents the class corresponding to $f\colon T\to\Jac(X)$.
+
 Moreover:
 
-- On $k$-points, $\Jac(X)(k) = \Pic^0(X)$.
+- On $k$-points, the chosen rational point identifies $\Jac(X)(k)$ with the degree-zero line-bundle classes on $X$.
 
-- $\Jac(X)$ is a group scheme over $k$: the identity is the class of $\OO_X$, inversion is $\mcl \mapsto \mcl^{-1}$, and addition is $p_1^*\mcl \tensor p_2^*\mcl$.
+- The group law is induced by tensor product in $\underline{\Pic}^{\,0}_{X/k}$; the identity is $[\OO_X]$ and inversion sends $[L]$ to $[L^\vee]$.
 
-- $\T_0 \Jac(X) \iso H^1(X; \OO_X)$, so $\Jac(X)$ is smooth of dimension $g$.
+- The tangent space at the identity is
+  $$
+  T_0\Jac(X)\cong H^1(X,\OO_X).
+  $$
 
-- $\Jac(X)$ is proper over $k$, hence an abelian variety.
+- Thus $\Jac(X)$ is an abelian variety of dimension $g$.
 
-For $X = E$ elliptic, $E \iso \Jac(E)$.
+For an elliptic curve $(E,p_0)$, the Abel map $p\mapsto\OO_E(p-p_0)$ is an isomorphism $E\xrightarrow{\sim}\Jac(E)$, as in [[PR-CRVGRP]].
 :::
 
 ::: {.theorem title="The symmetric product"}
-For each $n$ the assignment
-\[
-\phi^n \colon X^{\times n} \to \Jac(X),
-\qquad
-(p_1, \ldots, p_n) \mapsto \mcl\big( \textstyle\sum p_i - n p_0 \big)
-\]
-is a morphism, symmetric in its arguments, so it factors through $\Sym^n X$.
-It is surjective for $n \geq g$, and the fibre of $\Sym^n X \to \Jac(X)$ over the class of $D$ is the complete linear system $\abs{D} \iso \PP^{\ell(D)-1}$.
+For each $n\geq0$, the assignment
+$$
+(p_1,\ldots,p_n)
+\longmapsto
+\OO_X\!\left(\sum_i p_i-np_0\right)
+$$
+is symmetric and induces the Abel morphism
+$$
+a_n\colon\Sym^nX\longrightarrow\Jac(X).
+$$
+For a degree-zero line bundle $L$ on $X$, the fibre is the complete linear system
+$$
+a_n^{-1}([L])
+\cong
+\abs{L(np_0)}
+\cong
+\PP H^0\bigl(X,L(np_0)\bigr).
+$$
+Riemann--Roch gives $h^0(X,L(np_0))\geq n+1-g$, so $a_n$ is surjective for $n\geq g$.
+For $n\geq2g-1$, $H^1(X,L(np_0))=0$ for every $L\in\Pic^0(X)$, and $a_n$ is a projective bundle with fibres $\PP^{n-g}$.
 :::
 
 ::: {.remark title="Representability and rigidification"}
 Two features of the functor control representability.
 
-The quotient by $p^*\Pic(T)$ is not a technicality: without it the functor is not representable, because a line bundle on $X \times T$ can be twisted by one pulled back from the base without changing any fibre, so the assignment $T \mapsto \Pic^0(X\times T)$ has automorphisms and cannot have a universal object.
-Quotienting kills exactly that ambiguity.
-The same issue reappears as the reason a universal family needs a rigidification, and it is why $\Jac$ is a fine moduli space while $\AA^1$ for elliptic curves is only coarse.
+The quotient by line bundles pulled back from $T$ in [[D-MODPIC]] identifies families that determine the same fibrewise line-bundle class. The section $p_0\times T\subseteq X\times T$ chooses a normalized representative: for a line bundle $L$ on $X\times T$, replace it by
+$$
+L\tensor p^*\bigl((p_0\times\operatorname{id}_T)^*L\bigr)^\vee.
+$$
+Its restriction to $p_0\times T$ is canonically trivial. This normalization is what permits the universal Poincaré line bundle above.
 
-That $k$-points give $\Pic^0(X)$ is then formal: a $k$-point is a map $\Spec k \to \Jac(X)$, which by the universal property is an element of $\Pic^0(X/k) = \Pic^0(X)$.
-Thus $\Jac(X)$ upgrades the set $\Pic^0(X)$ of degree-zero line-bundle classes to a smooth proper group scheme representing families of such classes.
+Thus $\Jac(X)$ upgrades degree-zero line-bundle classes to a group scheme representing their families.
 :::
 
 ::: {.remark title="Smooth, of dimension $g$, and proper"}
-Dual numbers identify the tangent space directly.
-A tangent vector at $0$ is a map $T = \Spec k[\eps]/\eps^2 \to \Jac(X)$ sending the closed point to $0$, hence a class in $\Pic^0(X/T)$ restricting to $0$ over $\Spec k$.
-The exponential sequence for dual numbers gives
-\[
-0 \to H^1(X; \OO_X) \to \Pic\big(X[\eps]\big) \to \Pic(X) \to 0 ,
-\]
-so those classes are exactly $H^1(X;\OO_X)$, of dimension $g$.
-Translation by group elements propagates smoothness from the identity to every point.
+For $X_\varepsilon=X\times_k\Spec k[\varepsilon]/(\varepsilon^2)$, the exact sequence
+$$
+1\to1+\varepsilon\OO_X\to\OO_{X_\varepsilon}^\times\to\OO_X^\times\to1
+$$
+identifies the kernel of $\Pic(X_\varepsilon)\to\Pic(X)$ with $H^1(X,\OO_X)$, since $1+\varepsilon\OO_X\cong\OO_X$ additively. This gives the displayed tangent-space isomorphism.
 
-Properness is the valuative criterion applied to a DVR $R$ with fraction field $K$: one must extend a line bundle on $X \times \Spec K$ over $X \times \Spec R$.
-But $X \times \Spec R$ is regular, so a Weil divisor extends and is automatically Cartier, and the extension is unique.
-Irreducibility comes from the other direction, via $\phi^n$: for $n \geq g$ Riemann--Roch makes every degree-$n$ class effective, so $\phi^n$ is surjective from an irreducible variety, and the generic fibre is finite because a general divisor of degree $g$ is nonspecial with $\ell(D) = 1$.
-Hence $\dim \Jac(X) = g$ by a second, independent route.
+Infinitesimal deformations of a line bundle across a square-zero thickening have obstruction in $H^2(X,\OO_X)$, which vanishes for a curve. Hence the Picard functor is formally smooth; finite type representability makes $\Jac(X)$ smooth. Its dimension is therefore
+$$
+\dim T_0\Jac(X)=h^1(X,\OO_X)=g.
+$$
+
+The morphism $a_g\colon\Sym^gX\to\Jac(X)$ is surjective by Riemann--Roch. Since $\Sym^gX$ is projective and geometrically connected, its surjective image $\Jac(X)$ is proper and connected. Together with smoothness and the group law, this makes $\Jac(X)$ an abelian variety.
+The properness implication uses separatedness of the Picard scheme: after any base change $T\to\Spec k$, the projection $\Sym^gX_T\to T$ is closed, and surjectivity of $a_{g,T}$ implies that the projection $\Jac(X)_T\to T$ carries closed subsets to closed subsets. Thus $\Jac(X)\to\Spec k$ is universally closed; finite type and separatedness then give properness.
 :::
 
 ::: {.remark title="Comparison with the analytic construction"}
-Over $\CC$ one can write $\Jac(X) = \dualof{H^0(\Omega^1)} / H_1(X,\ZZ)$ and prove Abel and Jacobi inversion by integration; that construction produces a complex torus and needs GAGA to become algebraic.
+Over $\CC$ one can write
+$$
+\Jac(X)(\CC)=H^0(X,\Omega_X^1)^\vee/H_1(X,\ZZ),
+$$
+where the homology lattice is embedded by integration. This analytic construction produces a complex torus; GAGA identifies it with the algebraic Jacobian above.
 The functorial construction above needs no ground-field hypothesis and therefore applies in characteristic $p$ and to families, where the analytic construction is unavailable.
-The two agree over $\CC$, and the agreement is Abel's theorem.
+The divisor-class description and the analytic torus are identified by the Abel--Jacobi theorem.
 
-In genus $1$ the two theories coincide: $\phi^1 \colon X \to \Jac(X)$ is an isomorphism, so an elliptic curve carries its group law directly and statements about $\Pic^0$ become statements about points of the curve.
+In genus $1$ with the chosen point $p_0$, the Abel morphism $a_1\colon X\to\Jac(X)$ is an isomorphism.
 :::

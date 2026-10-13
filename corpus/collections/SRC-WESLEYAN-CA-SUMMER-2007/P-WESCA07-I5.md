@@ -26,3 +26,81 @@ Show that
 \le \frac{\pi^2}{2}+\frac{\pi^3}{3}.
 \]
 :::
+
+::: {.solution}
+<1>1. The derivative of the path is
+$$
+\gamma'(t)=e^{it}(1+it).
+$$
+
+::: {.proof}
+Differentiate
+$$
+\gamma(t)=te^{it}
+$$
+using the product rule.
+:::
+
+<1>2. For $0\le t\le\pi$,
+$$
+|\gamma(t)|=t
+\qquad\text{and}\qquad
+|\gamma'(t)|\le1+t.
+$$
+
+::: {.proof}
+Since $|e^{it}|=1$,
+$$
+|\gamma(t)|=t.
+$$
+Also
+$$
+|\gamma'(t)|=|1+it|=\sqrt{1+t^2}\le1+t.
+$$
+:::
+
+<1>3. One has
+$$
+\left|\int_\gamma z\,dz\right|
+\le
+\int_0^\pi t(1+t)\,dt.
+$$
+
+::: {.proof}
+By the definition of a contour integral,
+$$
+\int_\gamma z\,dz
+=\int_0^\pi \gamma(t)\gamma'(t)\,dt.
+$$
+Therefore, by the triangle inequality and step <1>2,
+$$
+\left|\int_\gamma z\,dz\right|
+\le
+\int_0^\pi |\gamma(t)|\,|\gamma'(t)|\,dt
+\le
+\int_0^\pi t(1+t)\,dt.
+$$
+:::
+
+<1>4. Hence
+$$
+\boxed{
+\left|\int_\gamma z\,dz\right|
+\le \frac{\pi^2}{2}+\frac{\pi^3}{3}.}
+$$
+
+::: {.proof}
+Evaluate the elementary integral from step <1>3:
+$$
+\int_0^\pi t(1+t)\,dt
+=\int_0^\pi t\,dt+\int_0^\pi t^2\,dt
+=\frac{\pi^2}{2}+\frac{\pi^3}{3}.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required estimate.
+:::
+:::

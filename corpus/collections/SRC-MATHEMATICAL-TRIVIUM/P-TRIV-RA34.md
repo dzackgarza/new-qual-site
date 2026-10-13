@@ -25,3 +25,149 @@ Write the equation of this spiral in a polar coordinate system in the form $r = 
 Draw it schematically.
 Investigate the limit of $x$, $y$ and $r$ as $\theta \to 0$.
 :::
+
+::: {.solution}
+<1>1. In polar coordinates,
+$$
+x=r\cos\theta,
+\qquad
+y=r\sin\theta.
+$$
+
+::: {.proof}
+This is the definition of polar coordinates.
+:::
+
+<1>2. Comparing the given parametrization with step <1>1 gives
+$$
+\theta=t
+$$
+and
+$$
+r=\frac{\alpha}{t}.
+$$
+
+::: {.proof}
+The factors multiplying cosine and sine in the parametrization are equal, so
+the radial coordinate is
+$$
+r=\sqrt{x^2+y^2}
+=
+\frac{\alpha}{t}.
+$$
+The angular variable is the same parameter appearing in $\cos t$ and $\sin t$.
+For a spiral, the polar angle is understood as the unwrapped angle rather than
+modulo $2\pi$.
+:::
+
+<1>3. Therefore the polar equation is
+$$
+\boxed{r(\theta)=\frac{\alpha}{\theta}},
+\qquad
+\theta>0.
+$$
+
+::: {.proof}
+Eliminate $t$ from the two identities in step <1>2.
+:::
+
+<1>4. As $\theta$ increases, the radius decreases monotonically from
+$+\infty$ to $0$.
+
+::: {.proof}
+From step <1>3,
+$$
+r'(\theta)
+=
+-\frac{\alpha}{\theta^2}<0.
+$$
+Also,
+$$
+\lim_{\theta\to0^+}r(\theta)=\infty
+$$
+and
+$$
+\lim_{\theta\to\infty}r(\theta)=0.
+$$
+:::
+
+<1>5. Thus the schematic shape is an inward-winding counterclockwise spiral:
+it begins arbitrarily far from the origin for small positive $\theta$, crosses
+each ray infinitely many times as the unwrapped angle grows, and approaches
+the origin as $\theta\to\infty$.
+
+::: {.proof}
+The angle equals $\theta$, so increasing $\theta$ rotates counterclockwise,
+while step <1>4 shows that the radius decreases continuously to $0$.
+:::
+
+<1>6. As $\theta\to0^+$,
+$$
+\boxed{r\to\infty}.
+$$
+
+::: {.proof}
+This is immediate from
+$$
+r=\frac{\alpha}{\theta}
+$$
+with $\alpha>0$.
+:::
+
+<1>7. As $\theta\to0^+$,
+$$
+\boxed{x\to+\infty}.
+$$
+
+::: {.proof}
+Using step <1>3,
+$$
+x
+=
+r\cos\theta
+=
+\frac{\alpha\cos\theta}{\theta}.
+$$
+Since
+$$
+\cos\theta\to1
+$$
+and $\theta\to0^+$, the quotient tends to $+\infty$.
+:::
+
+<1>8. As $\theta\to0^+$,
+$$
+\boxed{y\to\alpha}.
+$$
+
+::: {.proof}
+One has
+$$
+y
+=
+\frac{\alpha\sin\theta}{\theta}.
+$$
+Using
+$$
+\lim_{\theta\to0}\frac{\sin\theta}{\theta}=1,
+$$
+the limit is $\alpha$.
+:::
+
+<1>9. Consequently the spiral has the horizontal asymptote
+$$
+\boxed{y=\alpha}
+$$
+at its far-away end $x\to+\infty$.
+
+::: {.proof}
+Steps <1>7--<1>8 show that $x\to+\infty$ while $y\to\alpha$.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>3, <1>5, and <1>6--<1>9 give the polar equation, schematic behavior,
+and requested limits.
+:::
+:::

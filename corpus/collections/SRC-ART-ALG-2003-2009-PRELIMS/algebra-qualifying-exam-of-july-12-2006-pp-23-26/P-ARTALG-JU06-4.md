@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked the central order-p subgroup, the induction boundary, and normality and order of each inverse image."
 ---
-
 ::: {.problem}
 If $p$ is a prime, $k$ is a positive integer and $G$ is a group of order $p^k$, show that for each positive integer $i \leq k$, $G$ has a normal subgroup of order $p^i$.
 :::
@@ -51,13 +50,13 @@ and is therefore normal in $G$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-For each integer $1\leq i\leq k$, a group $G$ of order $p^k$ has a normal subgroup of order $p^i$.
+Induction on $k$ gives the asserted normal subgroups.
 
 ::: pf-proof
 
-We induct on $k$. When $k=1$, the only order is $p$, and $G$ itself is a
+When $k=1$, the only requested order is $p$, and $G$ itself is a
 normal subgroup of that order.
 
 Let $k\geq2$ and assume the assertion for groups of order $p^{k-1}$.
@@ -77,6 +76,12 @@ hence $|N|=p|M|=p^i$. This constructs the required subgroup for
 every $i$ and completes the induction.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the required existence for every $1\le i\le k$.
 
 :::
 

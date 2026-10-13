@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Expanded the polynomial identity behind the hint and checked the distinct roots and the generator's three-cycle action."
 ---
-
 ::: {.problem}
 Find the Galois groups, over $\mathbb{Q}$, of the following polynomials.
 
@@ -35,40 +34,62 @@ Hint: show that if $r$ is a root, then $r^2 - 2$ also is a root.
 :::
 
 ::: {.solution}
+
 ::: pf
 
-::: pf-step
-The Galois group of $x^4+4$ over $\mathbf Q$ is $C_2$.
+::: {.pf-step #s1}
+
+The Galois group of $x^4+4$ over $\QQ$ is
+$$
+\boxed{C_2}.
+$$
 
 ::: pf-proof
+
 The factorization
 $$
 x^4+4=(x^2-2x+2)(x^2+2x+2)
 $$
 gives roots $1+i$, $1-i$, $-1+i$, and $-1-i$.
-They all lie in $\mathbf Q(i)$, and a field containing the roots contains
-$i=(1+i)-1$. Hence the splitting field is exactly $\mathbf Q(i)$.
+They all lie in $\QQ(i)$, and a field containing the roots contains
+$i=(1+i)-1$. Hence the splitting field is exactly $\QQ(i)$.
 The polynomial $x^2+1$ has no rational root, so this field has degree
-$2$ over $\mathbf Q$. Its automorphisms are the identity and complex
+$2$ over $\QQ$. Its automorphisms are the identity and complex
 conjugation, giving $C_2$.
-:::
 
 :::
 
-::: pf-step
-The Galois group of $h(x)=x^3+x^2-2x-1$ over $\mathbf Q$ is
-$C_3$, acting cyclically on its roots.
+:::
+
+::: {.pf-step #s2}
+
+The polynomial
+$$
+h(x)=x^3+x^2-2x-1
+$$
+is irreducible over $\QQ$.
 
 ::: pf-proof
 
-::: pf-step
 The only possible rational roots are $\pm1$, but
 $h(1)=-1$ and $h(-1)=1$. A reducible cubic has a linear factor, so
-$h$ is irreducible. If $\alpha$ is any root, then
-$[\mathbf Q(\alpha):\mathbf Q]=3$.
+$h$ is irreducible.
+
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s3}
+
+If $\alpha$ is a root of $h$, then all three roots of $h$ lie in
+$\QQ(\alpha)$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
+$$
+[\QQ(\alpha):\QQ]=3.
+$$
 Direct multiplication gives
 $$
 \begin{aligned}
@@ -76,28 +97,48 @@ h(x^2-2)&=x^6-5x^4+6x^2-1\\
 &=h(x)(x^3-x^2-2x+1).
 \end{aligned}
 $$
-Thus $\beta=\alpha^2-2$ is another root in $\mathbf Q(\alpha)$.
+Thus
+$$
+\beta=\alpha^2-2
+$$
+is another root in $\QQ(\alpha)$.
 It is distinct from $\alpha$: otherwise $\alpha$ would satisfy
 $x^2-x-2=0$, contrary to its degree $3$. Dividing $h$ by
-$(x-\alpha)(x-\beta)$ over $\mathbf Q(\alpha)$ gives a linear factor.
+$(x-\alpha)(x-\beta)$ over $\QQ(\alpha)$ gives a linear factor.
 Its root is
 $$
 \gamma=-1-\alpha-\beta=1-\alpha-\alpha^2,
 $$
 by the coefficient of $x^2$ in $h$. All three roots are distinct,
 since an irreducible polynomial over a characteristic-zero field is
-separable. Therefore the splitting field is exactly
-$L=\mathbf Q(\alpha)$, of degree $3$ over $\mathbf Q$.
+separable. Hence all three roots lie in $\QQ(\alpha)$.
+
 :::
 
-::: pf-step
-A splitting field in characteristic zero is Galois and its
+:::
+
+::: {.pf-step #s4}
+
+The Galois group of $x^3+x^2-2x-1$ over $\QQ$ is
+$$
+\boxed{C_3},
+$$
+acting cyclically on the three roots.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the splitting field is
+$$
+L=\QQ(\alpha),
+$$
+and by step [](#s2){.pf-ref} it has degree $3$ over $\QQ$. A splitting field in
+characteristic zero is Galois and its
 automorphism group has order equal to its degree [@DF04]. Hence
-$\operatorname{Gal}(L/\mathbf Q)$ has order $3$ and is cyclic.
+$\Gal(L/\QQ)$ has order $3$ and is cyclic.
 More explicitly, the isomorphism
-$\mathbf Q(\alpha)\to\mathbf Q(\beta)$ determined by
+$\QQ(\alpha)\to\QQ(\beta)$ determined by
 $\alpha\mapsto\beta$ is an automorphism of $L$, since
-$\mathbf Q(\beta)\subseteq L$ also has degree $3$ over $\mathbf Q$.
+$\QQ(\beta)\subseteq L$ also has degree $3$ over $\QQ$.
 The relation $h(\alpha)=0$ gives
 $\alpha^4=3\alpha^2-\alpha-1$, and consequently
 $$
@@ -107,11 +148,17 @@ $$
 Thus this automorphism sends $\alpha$ to $\beta$ and $\beta$ to
 $\gamma$; being a permutation of the three roots, it sends $\gamma$
 back to $\alpha$. It is the required generator of $C_3$.
-:::
 
 :::
 
 :::
 
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s4){.pf-ref} answers part (b).
+
 :::
+
+:::
+
 :::

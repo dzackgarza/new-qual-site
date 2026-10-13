@@ -22,3 +22,57 @@ Find the winding number of
 \]
 about the point $10+10i$.
 :::
+
+::: {.solution}
+<1>1. The curve $\gamma$ is the positively oriented circle of radius $4$ centered at $2i$.
+
+::: {.proof}
+The parametrization
+$$
+\gamma(t)=2i+4e^{it},
+\qquad 0\le t\le2\pi,
+$$
+is the standard counterclockwise parametrization of that circle.
+:::
+
+<1>2. The point $w=10+10i$ lies outside this circle.
+
+::: {.proof}
+Its distance from the center $2i$ is
+$$
+|w-2i|
+=|10+8i|
+=\sqrt{10^2+8^2}
+=\sqrt{164}
+>4.
+$$
+:::
+
+<1>3. The winding number is
+$$
+\boxed{\operatorname{Ind}(\gamma,10+10i)=0}.
+$$
+
+::: {.proof}
+The function
+$$
+z\longmapsto\frac1{z-w}
+$$
+is holomorphic on and inside the circle because $w$ lies outside it by step <1>2. By Cauchy's theorem,
+$$
+\int_\gamma\frac{dz}{z-w}=0.
+$$
+Hence
+$$
+\operatorname{Ind}(\gamma,w)
+=\frac1{2\pi i}\int_\gamma\frac{dz}{z-w}
+=0.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required winding number.
+:::
+:::

@@ -24,3 +24,226 @@ OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z +
 
 (d) $0 < | z + 1 | < 1 .$
 :::
+
+::: {.solution}
+<1>1. The partial-fraction decomposition is
+$$
+f(z)
+=
+\frac1{z+1}
+-
+\frac1{z+2}.
+$$
+
+::: {.proof}
+One has
+$$
+\frac1{z+1}
+-
+\frac1{z+2}
+=
+\frac{(z+2)-(z+1)}{(z+1)(z+2)}
+=
+\frac1{(z+1)(z+2)}.
+$$
+:::
+
+<1>2. For $|z|<1$,
+$$
+\frac1{z+1}
+=
+\sum_{n=0}^{\infty}(-1)^n z^n
+$$
+and
+$$
+\frac1{z+2}
+=
+\sum_{n=0}^{\infty}
+\frac{(-1)^n}{2^{n+1}}z^n.
+$$
+
+::: {.proof}
+Use
+$$
+\frac1{1+z}
+=
+\sum_{n=0}^{\infty}(-z)^n,
+$$
+valid for $|z|<1$, and
+$$
+\frac1{z+2}
+=
+\frac12\frac1{1+z/2}
+=
+\frac12
+\sum_{n=0}^{\infty}
+\left(-\frac z2\right)^n,
+$$
+valid for $|z|<2$.
+:::
+
+<1>3. Therefore, for $|z|<1$,
+$$
+\boxed{
+f(z)
+=
+\sum_{n=0}^{\infty}
+(-1)^n
+\left(
+1-\frac1{2^{n+1}}
+\right)z^n.
+}
+$$
+
+::: {.proof}
+Subtract the two series in step <1>2 using step <1>1.
+:::
+
+<1>4. For $1<|z|<2$,
+$$
+\frac1{z+1}
+=
+\sum_{n=0}^{\infty}
+(-1)^n z^{-n-1},
+$$
+while
+$$
+\frac1{z+2}
+=
+\sum_{n=0}^{\infty}
+\frac{(-1)^n}{2^{n+1}}z^n.
+$$
+
+::: {.proof}
+For the first term,
+$$
+\frac1{z+1}
+=
+\frac1z\frac1{1+1/z}
+=
+\frac1z
+\sum_{n=0}^{\infty}
+\left(-\frac1z\right)^n,
+$$
+which converges when $|z|>1$.
+
+The second expansion is the one from step <1>2 and converges when $|z|<2$.
+Thus both are valid simultaneously on $1<|z|<2$.
+:::
+
+<1>5. Hence, for $1<|z|<2$,
+$$
+\boxed{
+f(z)
+=
+\sum_{n=0}^{\infty}
+(-1)^n z^{-n-1}
+-
+\sum_{n=0}^{\infty}
+\frac{(-1)^n}{2^{n+1}}z^n.
+}
+$$
+
+::: {.proof}
+Substitute step <1>4 into the partial fractions from step <1>1.
+:::
+
+<1>6. For $|z|>2$,
+$$
+\frac1{z+1}
+=
+\sum_{n=0}^{\infty}
+(-1)^n z^{-n-1},
+$$
+and
+$$
+\frac1{z+2}
+=
+\sum_{n=0}^{\infty}
+(-2)^n z^{-n-1}.
+$$
+
+::: {.proof}
+The first series is from step <1>4. For the second,
+$$
+\frac1{z+2}
+=
+\frac1z\frac1{1+2/z}
+=
+\frac1z
+\sum_{n=0}^{\infty}
+\left(-\frac2z\right)^n,
+$$
+which converges for $|z|>2$.
+:::
+
+<1>7. Therefore, for $|z|>2$,
+$$
+\boxed{
+f(z)
+=
+\sum_{n=0}^{\infty}
+\bigl((-1)^n-(-2)^n\bigr)
+z^{-n-1}.
+}
+$$
+
+::: {.proof}
+Subtract the two negative-power series in step <1>6.
+:::
+
+<1>8. For part (d), set
+$$
+w=z+1.
+$$
+Then
+$$
+f(z)
+=
+\frac1{w(w+1)}.
+$$
+
+::: {.proof}
+Since
+$$
+z+1=w
+\qquad\text{and}\qquad
+z+2=w+1,
+$$
+the displayed identity follows.
+:::
+
+<1>9. For $0<|z+1|<1$,
+$$
+\boxed{
+f(z)
+=
+\sum_{n=0}^{\infty}
+(-1)^n(z+1)^{n-1}.
+}
+$$
+
+::: {.proof}
+By step <1>8,
+$$
+f(z)
+=
+\frac1w\frac1{1+w}.
+$$
+For $|w|<1$,
+$$
+\frac1{1+w}
+=
+\sum_{n=0}^{\infty}(-1)^n w^n.
+$$
+Multiplying by $w^{-1}$ gives the stated Laurent series. The point $w=0$
+must be excluded because it is a pole.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>3, <1>5, <1>7, and <1>9 give the requested Laurent series on all
+four regions.
+:::
+:::

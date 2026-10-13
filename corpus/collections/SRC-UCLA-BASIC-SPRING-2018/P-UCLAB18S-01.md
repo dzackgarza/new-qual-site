@@ -23,3 +23,121 @@ e^t,e^{2t},\ldots,e^{nt}
 \]
 are linearly independent in the space of continuous functions on $[1,2]$.
 :::
+
+::: {.solution}
+<1>1. Suppose
+\[
+c_1e^t+c_2e^{2t}+\cdots+c_ne^{nt}=0
+\]
+for every
+\[
+t\in[1,2],
+\]
+where
+\[
+c_1,\ldots,c_n\in\mathbb R.
+\]
+
+::: {.proof}
+To prove linear independence, it suffices to show that every linear relation of this form has all coefficients equal to zero.
+:::
+
+<1>2. Define the polynomial
+\[
+p(s)
+=
+c_1s+c_2s^2+\cdots+c_ns^n.
+\]
+Then
+\[
+p(e^t)=0
+\]
+for every
+\[
+t\in[1,2].
+\]
+
+::: {.proof}
+Since
+\[
+e^{kt}=(e^t)^k,
+\]
+the relation in step <1>1 is exactly
+\[
+p(e^t)=0.
+\]
+:::
+
+<1>3. The polynomial $p$ vanishes at every point of the interval
+\[
+[e,e^2].
+\]
+
+::: {.proof}
+The exponential map is continuous and strictly increasing, and maps
+\[
+[1,2]
+\]
+onto
+\[
+[e,e^2].
+\]
+Thus for every
+\[
+s\in[e,e^2],
+\]
+there exists
+\[
+t\in[1,2]
+\]
+with
+\[
+s=e^t.
+\]
+Step <1>2 then gives
+\[
+p(s)=0.
+\]
+:::
+
+<1>4. Therefore
+\[
+p
+\]
+is the zero polynomial.
+
+::: {.proof}
+A nonzero real polynomial of degree at most $n$ has at most $n$ real roots.
+Step <1>3 gives infinitely many roots, indeed an entire interval.
+Hence $p$ must be identically zero.
+:::
+
+<1>5. Thus
+\[
+\boxed{
+c_1=c_2=\cdots=c_n=0.
+}
+\]
+
+::: {.proof}
+The coefficients of the zero polynomial all vanish.
+:::
+
+<1>6. Hence
+\[
+\boxed{
+e^t,e^{2t},\ldots,e^{nt}
+\text{ are linearly independent in }C([1,2]).
+}
+\]
+
+::: {.proof}
+Step <1>5 shows that the only linear relation among the functions is the trivial one.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::

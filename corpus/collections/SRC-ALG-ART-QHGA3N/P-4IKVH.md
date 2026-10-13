@@ -17,7 +17,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontrivial normal subgroup.
 :::
@@ -47,6 +46,21 @@ These are exactly the Sylow congruence and divisibility conditions for a group o
 
 ::: {.pf-step #s2}
 
+If $p=q$, then $G$ has a nontrivial normal subgroup.
+
+::: pf-proof
+
+In this case $|G|=p^3$, so $G$ is a finite $p$-group. The center of every nontrivial finite $p$-group is nontrivial. Hence
+$$
+1\ne Z(G)\trianglelefteq G.
+$$
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
 If \(p>q\), then the Sylow \(p\)-subgroup is unique and hence normal.
 
 ::: pf-proof
@@ -69,7 +83,7 @@ Because \(n_q\mid p^2\), the possibilities are \(1,p,p^2\). Since \(p<q\), the v
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #s5}
 
 In the case \(n_q=p^2\), the union of all Sylow \(q\)-subgroups contains exactly
 \[
@@ -85,13 +99,13 @@ Two distinct subgroups of order \(q\) intersect only in the identity, because th
 
 :::
 
-::: {.pf-step #s5}
+::: {.pf-step #s6}
 
 The Sylow \(p\)-subgroup is then unique and hence normal.
 
 ::: pf-proof
 
-By step [](#s4){.pf-ref}, the number of elements of \(G\) lying outside the union of the Sylow \(q\)-subgroups is
+By step [](#s5){.pf-ref}, the number of elements of \(G\) lying outside the union of the Sylow \(q\)-subgroups is
 \[
 p^2q-\bigl(1+p^2(q-1)\bigr)=p^2-1.
 \]
@@ -101,27 +115,24 @@ Let \(P\) be any Sylow \(p\)-subgroup. Every nonidentity element of \(P\) lies o
 
 :::
 
-::: {.pf-step #s6}
+::: {.pf-step #s7}
 
-If \(p=q\), then \(G\) has a normal subgroup of order \(p\).
-
-::: pf-proof
-
-Then \(|G|=p^3\), so the center \(Z(G)\) is nontrivial. By Cauchy's theorem \(Z(G)\) contains an element \(z\) of order \(p\), and \(\langle z\rangle\) is normal in \(G\) because it is central. Its order \(p\) is strictly between \(1\) and \(p^3\).
-
-:::
-
-:::
-
-::: pf-step
-
-In all cases, \(G\) has a nontrivial normal subgroup.
+In all cases,
+$$
+\boxed{G\text{ has a nontrivial normal subgroup}}.
+$$
 
 ::: pf-proof
 
-If \(p=q\), step [](#s6){.pf-ref} applies. If \(p>q\), step [](#s2){.pf-ref} applies. If \(p<q\), either \(n_q=1\) or step [](#s5){.pf-ref} applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
+If $p=q$, use step [](#s2){.pf-ref}. If \(p>q\), use step [](#s3){.pf-ref}. If \(p<q\), either \(n_q=1\) or step [](#s6){.pf-ref} applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
 
 :::
 

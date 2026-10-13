@@ -15,9 +15,8 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
-The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits.
-Its completed prerequisites include `unsolved-contribution` and `slogans`; the remaining route is `copy-policy-repair`, then the audit rounds.
-[Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
+**Owner decision, 2026-10-02: the current work is [Author solutions](#7-author-solutions).** Solutions no longer wait behind `copy-policy-repair` or `audited-deployment`; both are suspended, and no pass may delete, merge or consolidate owner-written cards.
+The copy pass run on 2026-10-01/02 deleted 46 owner-written corpus cards and merged others; restoring them precedes new solutions.
 
 #### Steward checkpoint — 2026-09-26
 
@@ -109,6 +108,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
   A solution still written with typed `<n>m.` steps is converted under [`lamport-conversion`](#lamport-conversion).
   Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence.
   **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
+  **Reopened 2026-10-02** (closure `e2ef4ef04` reverted): the pass repaired 249 of 323 `corpus/theory/Algebraic_Geometry` cards but touched 15 of 410 `corpus/theory/Algebra`, none of `corpus/theory/Complex_Analysis` (241), `corpus/theory/Real_Analysis` (312), `corpus/theory/Topology` (278) or `corpus/problems` (1641), and 40 of 322 `wiki` pages. At the observed violation density those areas were not read; an earlier handoff's "read algebra, analysis, topology" referred to wiki pages, not the corpus cards. The remaining population is those areas.
 
 - **`audited-deployment`**. **Needs:** `unsolved-contribution`, `slogans`, `copy-policy-repair`. Push so `pages.yml` deploys, then audit the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds.
   Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies and checks their mathematics for incorrect facts, statements, and solutions; it is a reading of the site, not a lint or crawl count.
@@ -118,7 +118,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
 
 ### Solutions after the milestone
 
-The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `audited-deployment`. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
+The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs nothing. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
 
 This is a finite DAG for each selected collection's authored card population.
 Returning to selection creates an instance for a different card, not a back-edge from commit to the same select node.
@@ -205,17 +205,13 @@ The recorded owner decisions were resolved; current owner decisions belong to th
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** `audited-deployment`. Select one unsolved card.
-
-- [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
-
-- [ ] **`prove`**. **Needs:** `read`, `source-review`. Write a complete Lamport-style structured proof.
-
-- [ ] **`attach`**. **Needs:** `prove`. Add a `solution` section to the card.
-
-- [ ] **`source-review`**. **Needs:** `read`. Integrate a source solution only after independent mathematical review.
-
-- [ ] **`commit`**. **Needs:** `attach`. Review the complete authored proof and commit the completed solution before selecting another card.
+Closed 2026-10-06.
+Every current `kind: problem` card in `corpus/collections` has an authored
+`solution` section. The programme was completed card-by-card under the
+`select -> read/source-review -> prove -> attach -> commit` DAG above; its
+per-card proof and commit evidence remains in Git history. A later newly added
+problem without a solution is new authoring work, not a reason to reopen this
+completed finite programme.
 
 ## 8. Close the roadmap
 

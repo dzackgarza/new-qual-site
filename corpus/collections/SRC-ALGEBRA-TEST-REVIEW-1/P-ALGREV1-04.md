@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGREV1-04
 kind: problem
-title: A homomorphism $\ZZ_8\to\ZZ_{20}$ with $\phi(3)=15$
+title: A homomorphism from Z8 to Z20
 classification:
   areas:
   - algebra
@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Solved for phi(1)=5, then computed image, kernel, and the two-element fiber over 5."
 ---
-
 ::: {.problem}
 Suppose that $\phi:\mathbb{Z}_8\to\mathbb{Z}_{20}$ is a group homomorphism with $\phi(3)=15$.
 
@@ -36,9 +35,9 @@ All groups are written additively.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$\phi(x)=5x$ for all $x\in\mathbb Z_8$.
+Determine the homomorphism.
 
 ::: pf-proof
 
@@ -71,9 +70,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-$\operatorname{im}\phi=\{0,5,10,15\}$ and $\ker\phi=\{0,4\}$.
+Compute the image and kernel.
 
 ::: pf-proof
 
@@ -101,9 +100,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
-$\phi^{-1}(5)=\{1,5\}$.
+Compute the fiber over $5$.
 
 ::: pf-proof
 
@@ -119,6 +118,12 @@ $$
 $$
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} determines $\phi$, step [](#s2){.pf-ref} gives its image and kernel, and step [](#s3){.pf-ref} gives the requested fiber.
 
 :::
 

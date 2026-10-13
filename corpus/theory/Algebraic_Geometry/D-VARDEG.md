@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition title="Degree"}
-Let $X \subseteq \PP^N$ be projective of dimension $n$.
+Let $X \subseteq \PP^N_k$ be a projective variety of dimension $n$ over an algebraically closed field $k$.
 The \dfn{degree} of $X$ is the number of points of
 $$
 X \intersect H_1 \intersect \cdots \intersect H_n

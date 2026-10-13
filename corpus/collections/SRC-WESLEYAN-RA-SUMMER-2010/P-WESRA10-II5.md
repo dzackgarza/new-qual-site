@@ -23,3 +23,80 @@ L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu).
 
 (b) Give a measure space and a function $f$ such that $f\in L^4$ but $f\notin L^3$.
 :::
+
+::: {.solution}
+<1>1. If $\mu(X)<\infty$ and $f\in L^4(X)$, then
+\[
+\int_X |f|^3\,d\mu
+\le
+\left(\int_X|f|^4\,d\mu\right)^{3/4}
+\mu(X)^{1/4}.
+\]
+
+::: {.proof}
+Apply Hölder's inequality with conjugate exponents
+\[
+\frac43
+\qquad\text{and}\qquad
+4
+\]
+to the functions $|f|^3$ and $1$:
+\[
+\int_X |f|^3\,d\mu
+\le
+\left(\int_X(|f|^3)^{4/3}\,d\mu\right)^{3/4}
+\left(\int_X1^4\,d\mu\right)^{1/4}.
+\]
+This is exactly the displayed inequality.
+:::
+
+<1>2. Therefore, when $\mu(X)<\infty$,
+\[
+\boxed{L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu)}.
+\]
+
+::: {.proof}
+If $f\in L^4$, the first factor in step <1>1 is finite, and the second is
+finite because $\mu(X)<\infty$. Hence
+\[
+\int_X|f|^3\,d\mu<\infty,
+\]
+so $f\in L^3$.
+:::
+
+<1>3. On the infinite-measure space
+\[
+X=(1,\infty)
+\]
+with Lebesgue measure, the function
+\[
+f(x)=x^{-1/3}
+\]
+satisfies
+\[
+\boxed{f\in L^4(X)\setminus L^3(X)}.
+\]
+
+::: {.proof}
+For the fourth power,
+\[
+\int_1^\infty |f(x)|^4\,dx
+=\int_1^\infty x^{-4/3}\,dx
+<\infty.
+\]
+For the third power,
+\[
+\int_1^\infty |f(x)|^3\,dx
+=\int_1^\infty x^{-1}\,dx
+=\infty.
+\]
+Thus $f\in L^4$ but $f\notin L^3$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves part (a), and step <1>3 gives the counterexample required in
+part (b).
+:::
+:::

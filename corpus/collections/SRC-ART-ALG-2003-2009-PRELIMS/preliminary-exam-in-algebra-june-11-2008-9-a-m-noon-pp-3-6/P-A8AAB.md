@@ -24,7 +24,6 @@ audit:
   by: OpenAI
   date: 2026-09-10
 ---
-
 ::: {.problem}
 Let $R$ be a principal ideal domain and $A$ and $B$ be finitely generated $R$-modules.
 Show that if $A \oplus A \cong B \oplus B$ then $A \cong B$.
@@ -59,7 +58,7 @@ elements and the displayed torsion sum is empty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The assumed isomorphism implies equality of all invariants of
 $A$ and $B$, and hence $A\cong B$.
@@ -80,6 +79,12 @@ the same summands with the same multiplicities. Matching those
 summands gives an $R$-module isomorphism $A\cong B$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the required isomorphism $A\cong B$.
 
 :::
 

@@ -13,46 +13,67 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 Is every smooth projective curve of genus 0 defined over the field of complex numbers isomorphic to a conic in the projective plane?
 Give an explanation for your answer.
 :::
 
 ::: {.solution}
-Let $C$ be a smooth projective curve of genus $0$ over $\CC$ and fix $p\in C$.
+Let $C$ be a smooth projective curve over $\CC$ with $g(C)=0$.
 
 ::: pf
 
-::: {.pf-step #meromorphic-function-simple-pole}
-There is a nonconstant meromorphic function $f$ on $C$ whose only pole is a simple pole at $p$.
+::: {.pf-step #s1}
+
+$C\cong\PP^1$.
 
 ::: pf-proof
-By the Riemann--Roch theorem, $\ell([p]) - \ell(K_C-[p]) = 1 + 1 - 0 = 2$, so $\ell([p])\geq 2$. The space $L([p])$ therefore contains a function $f$ that is not constant; its only possible pole is a simple pole at $p$, and it has one because it is nonconstant.
-:::
+
+Fix a point $p\in C$. By Riemann--Roch,
+$$
+\ell(p)-\ell(K_C-p)=\deg(p)+1-g(C)=2.
+$$
+Since
+$$
+\deg(K_C-p)=2g(C)-2-1=-3<0,
+$$
+one has $\ell(K_C-p)=0$, so $\ell(p)=2$. Hence there exists a nonconstant meromorphic function $f\in L(p)$. Its only possible pole is at $p$, and that pole has order at most $1$.
+
+Because $f$ is nonconstant, it has a pole, so its pole divisor is exactly $[p]$. Therefore the induced morphism
+$$
+f:C\longrightarrow\PP^1
+$$
+has degree $1$. A finite morphism of degree $1$ between smooth projective curves is an isomorphism. Thus $C\cong\PP^1$.
 
 :::
 
-::: {.pf-step #f-is-isomorphism}
-$f\colon C\to\PP^1$ is an isomorphism.
+:::
+
+::: {.pf-step #s2}
+
+$C$ is isomorphic to the plane conic
+$$
+\boxed{V(z_0z_2-z_1^2)\subset\PP^2}.
+$$
 
 ::: pf-proof
-The degree of $f$ equals the number of poles counted with multiplicity, which is $1$ by step [](#meromorphic-function-simple-pole){.pf-ref}. A morphism of degree $1$ between smooth projective curves is an isomorphism.
-:::
 
-:::
+By step [](#s1){.pf-ref}, it suffices to embed $\PP^1$ as a conic. The quadratic Veronese map
+$$
+\nu_2:\PP^1\longrightarrow\PP^2,
+\qquad
+[t_0:t_1]\longmapsto[t_0^2:t_0t_1:t_1^2]
+$$
+is a closed immersion. Its image satisfies $z_0z_2=z_1^2$. Conversely, every point of the smooth conic $V(z_0z_2-z_1^2)$ lies in this image, so $\nu_2$ identifies $\PP^1$ with that conic. Composing the isomorphism from step [](#s1){.pf-ref} with $\nu_2$ gives the required isomorphism from $C$ to a plane conic.
 
-::: {.pf-step #p1-isomorphic-to-conic}
-$\PP^1$ is isomorphic to the conic $z_0 z_2=z_1^2$ in $\PP^2$.
-
-::: pf-proof
-In projective coordinates $t_0, t_1$ on $\PP^1$, the map $[t_0:t_1]\mapsto[z_0:z_1:z_2]=[t_0^2:t_0 t_1:t_1^2]$ is an isomorphism onto the conic $z_0 z_2=z_1^2$. Equivalently, it is the map given by the complete linear system of the anticanonical divisor, which has degree $2$.
 :::
 
 :::
 
 ::: pf-qed
-Steps [](#f-is-isomorphism){.pf-ref} and [](#p1-isomorphic-to-conic){.pf-ref} give $C\cong\PP^1\cong V(z_0z_2-z_1^2)$, so the answer is $\boxed{\text{yes}}$.
+
+Step [](#s2){.pf-ref} proves that every smooth projective genus-zero curve over $\CC$ is isomorphic to a conic in $\PP^2$.
+
 :::
 
 :::

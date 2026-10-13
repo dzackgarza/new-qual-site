@@ -25,3 +25,72 @@ What's the area of the triangle whose vertices are $(0,0,1)$, $(0,2,0)$, and $(3
 (D) $6$
 (E) $7$
 :::
+
+::: {.solution}
+Let
+$$
+A=(0,0,1),\qquad B=(0,2,0),\qquad C=(3,0,0).
+$$
+
+<1>1. Two side vectors issuing from $C$ are
+$$
+\overrightarrow{CB}=(-3,2,0),
+\qquad
+\overrightarrow{CA}=(-3,0,1).
+$$
+
+::: {.proof}
+Subtracting the coordinates of $C$ from those of $B$ and $A$ gives
+$$
+B-C=(0,2,0)-(3,0,0)=(-3,2,0)
+$$
+and
+$$
+A-C=(0,0,1)-(3,0,0)=(-3,0,1).
+$$
+:::
+
+<1>2. Their cross product is
+$$
+\overrightarrow{CB}\times\overrightarrow{CA}
+=(2,3,6).
+$$
+
+::: {.proof}
+Using step <1>1,
+$$
+\begin{aligned}
+(-3,2,0)\times(-3,0,1)
+&=(2\cdot1-0\cdot0,\,
+0\cdot(-3)-(-3)\cdot1,\,
+(-3)\cdot0-2\cdot(-3))\\
+&=(2,3,6).
+\end{aligned}
+$$
+:::
+
+<1>3. The triangle has area
+$$
+\boxed{\frac72},
+$$
+so the answer is (B).
+
+::: {.proof}
+The area is one half the area of the parallelogram spanned by the two side vectors. By step <1>2,
+$$
+\begin{aligned}
+\operatorname{Area}(\triangle ABC)
+&=\frac12\norm{(2,3,6)}\\
+&=\frac12\sqrt{2^2+3^2+6^2}\\
+&=\frac12\sqrt{49}
+=\frac72.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested area and corresponding choice.
+:::
+:::

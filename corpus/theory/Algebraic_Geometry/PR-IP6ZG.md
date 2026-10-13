@@ -1,9 +1,9 @@
 ---
 schema: qual/card@1
 id: PR-IP6ZG
-kind: proposition
-title: Direct limits of sheaves, and the Noetherian hypothesis that removes the sheafification
-slogan: 'Noetherian means finite gluing: filtered colimits already satisfy the sheaf axioms and commute with global sections.'
+kind: definition
+title: Filtered colimits of sheaves on a Noetherian space
+slogan: 'On a Noetherian space, sectionwise filtered colimits are already sheaves and commute with sections and sheaf cohomology.'
 classification:
   areas:
   - algebraic-geometry
@@ -24,38 +24,40 @@ prompts:
 ---
 
 ::: {.definition}
-For a direct system $\theset{\mcf_i}$ of sheaves on $X$ over a directed index set, $\colim_i \mcf_i$ is the sheafification of
-\[
+Let $\theset{\mcf_i}_{i\in I}$ be a directed system of sheaves of abelian groups on a topological space $X$. Its colimit in the category of sheaves is the sheafification of the presheaf
+$$
 U \longmapsto \colim_i \mcf_i(U) .
-\]
-Inverse limits are defined the same way, and there the presheaf $U \mapsto \lim_i \mcf_i(U)$ is already a sheaf.
+$$
+For an inverse system of sheaves, the sectionwise presheaf $U\mapsto\lim_i\mcf_i(U)$ is already a sheaf, so inverse limits are computed sectionwise.
 :::
 
 ::: {.proposition}
 If $X$ is a Noetherian topological space, the presheaf $U \mapsto \colim_i \mcf_i(U)$ is already a sheaf, and
-\[
-\Gamma\qty{X ; \colim_i \mcf_i} = \colim_i \Gamma(X ; \mcf_i) .
-\]
+$$
+\Gamma\qty{X ; \colim_i \mcf_i} \cong \colim_i \Gamma(X ; \mcf_i) .
+$$
+More generally, for every $q\geq0$,
+$$
+H^q\qty{X;\colim_i\mcf_i}
+\cong
+\colim_i H^q(X;\mcf_i)
+$$
+[@Har10a, Proposition III.2.9].
 :::
 
 ::: {.proof}
 On a Noetherian space every open set is quasicompact, so it suffices to verify the sheaf axioms against *finite* covers.
 Both axioms together say that
-\[
+$$
 \mcf(U) \to \prod_{i=1}^n \mcf(U_i) \rightrightarrows \prod_{i,j} \mcf(U_i \intersect U_j)
-\]
+$$
 is an equalizer, and for a finite cover these are finite products, so the whole diagram is a finite limit.
 Filtered colimits of abelian groups are exact and commute with finite limits, so the colimit of the equalizer diagrams is again an equalizer.
-The displayed identity is that statement for the cover consisting of $X$ itself, once the presheaf colimit is known to be the sheaf colimit.
+Thus the sectionwise colimit is a sheaf. Evaluating it on $X$ gives the displayed formula for global sections; the same argument works on every open subset. A complete proof of this sectionwise statement is given in [[P-AGH326COLIMINJECTIVE]], step <1>4.
 :::
 
 ::: {.remark}
-Both the hypothesis and its absence are the point.
-$\Gamma$ is only left exact in general, and a colimit is a right-exact operation, so there is no reason for them to commute; the Noetherian condition supplies quasicompactness, which converts the sheaf axioms into a finite limit, and filtered colimits commute with those.
+The finiteness used above is the quasicompactness of every open subset of a Noetherian space. Without such a finiteness condition, local representatives of a section of the sheafified colimit can require unbounded indices over an infinite cover, so the sectionwise presheaf need not satisfy the sheaf axiom.
 
-Dropping the hypothesis breaks the conclusion.
-A section of the colimit is locally a section of some $\mcf_i$, but the index $i$ may depend on the open set, and with infinitely many opens in an irreducible cover there need be no single $i$ working everywhere — so the glued section lives in the sheafification and in no $\mcf_i$.
-Quasicompactness is exactly what bounds the number of indices to be reconciled.
-
-The same argument, run on Čech complexes, gives the cohomological version: on a Noetherian space $H^k(X ; \wait)$ commutes with filtered direct limits of sheaves.
+The cohomology statement is stronger than the finite-cover argument for sections. One proof uses that filtered colimits are exact and that a filtered colimit of injective abelian sheaves on a Noetherian space is injective; the latter is proved in [[P-AGH326COLIMINJECTIVE]]. The resulting derived-functor comparison is the theorem used in [[P-AGH348COHDIM]], step <1>1.
 :::

@@ -21,7 +21,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 a. State the class equation.
 
@@ -33,7 +32,7 @@ Show that $H$ contains a non-identity element of the center $Z(G)$ of $G$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If \(x_1,\dots,x_r\) represent the noncentral conjugacy classes of a finite group \(G\), then the class equation is
 \[
@@ -95,7 +94,7 @@ where the \(\mathcal O_j\) are the nontrivial orbits. Because \(H\) is a nontriv
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 Hence \(H\) contains a nonidentity element of \(Z(G)\).
 
@@ -104,6 +103,12 @@ Hence \(H\) contains a nonidentity element of \(Z(G)\).
 The intersection \(H\cap Z(G)\) contains the identity, so it is nonempty. By step [](#s4){.pf-ref} its cardinality is a positive multiple of \(p\), hence at least \(p\ge2\). Therefore it contains an element other than the identity.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 

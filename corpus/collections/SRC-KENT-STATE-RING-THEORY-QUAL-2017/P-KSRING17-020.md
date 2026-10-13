@@ -18,3 +18,203 @@ audit:
 ::: {.problem}
 Let R be a commutative ring with 1 and let I and J be ideals of R such that $I + J = R$ Show that $R / ( I \cap J ) \cong R / I \oplus R / J$ .
 :::
+
+::: {.solution}
+Define
+$$
+\varphi:R\to R/I\oplus R/J
+$$
+by
+$$
+\varphi(r)
+\coloneqq
+(r+I,r+J).
+$$
+
+<1>1. The map $\varphi$ is a ring homomorphism.
+
+::: {.proof}
+For
+$$
+r,s\in R,
+$$
+coordinatewise operations give
+$$
+\begin{aligned}
+\varphi(r+s)
+&=
+(r+s+I,r+s+J)\\
+&=
+\varphi(r)+\varphi(s),
+\end{aligned}
+$$
+and
+$$
+\begin{aligned}
+\varphi(rs)
+&=
+(rs+I,rs+J)\\
+&=
+\varphi(r)\varphi(s).
+\end{aligned}
+$$
+Also
+$$
+\varphi(1_R)
+=
+(1_R+I,1_R+J),
+$$
+the identity of the product ring.
+:::
+
+<1>2. The kernel of $\varphi$ is
+$$
+I\cap J.
+$$
+
+::: {.proof}
+One has
+$$
+\varphi(r)=(0+I,0+J)
+$$
+if and only if
+$$
+r\in I
+\qquad\text{and}\qquad
+r\in J.
+$$
+Thus
+$$
+\ker\varphi
+=
+I\cap J.
+$$
+:::
+
+<1>3. Because
+$$
+I+J=R,
+$$
+there exist
+$$
+i\in I,
+\qquad
+j\in J
+$$
+such that
+$$
+i+j=1.
+$$
+
+::: {.proof}
+The equality
+$$
+I+J=R
+$$
+means in particular that
+$$
+1\in I+J.
+$$
+Hence
+$$
+1=i+j
+$$
+for suitable
+$$
+i\in I,
+\qquad
+j\in J.
+$$
+:::
+
+<1>4. The map $\varphi$ is surjective.
+
+::: {.proof}
+Let
+$$
+(a+I,b+J)
+\in
+R/I\oplus R/J
+$$
+be arbitrary. Choose $i,j$ as in step <1>3 and set
+$$
+r
+\coloneqq
+aj+bi.
+$$
+
+Modulo $I$,
+$$
+i\equiv0
+\pmod I
+$$
+and
+$$
+j=1-i\equiv1\pmod I,
+$$
+so
+$$
+r
+\equiv
+a
+\pmod I.
+$$
+Thus
+$$
+r+I=a+I.
+$$
+
+Similarly, modulo $J$,
+$$
+j\equiv0
+\pmod J
+$$
+and
+$$
+i=1-j\equiv1\pmod J,
+$$
+so
+$$
+r+J=b+J.
+$$
+Therefore
+$$
+\varphi(r)
+=
+(a+I,b+J),
+$$
+and $\varphi$ is surjective.
+:::
+
+<1>5. Therefore
+$$
+\boxed{
+R/(I\cap J)
+\cong
+R/I\oplus R/J.
+}
+$$
+
+::: {.proof}
+By steps <1>1--<1>4, $\varphi$ is a surjective ring homomorphism with kernel
+$$
+I\cap J.
+$$
+The first isomorphism theorem gives
+$$
+R/\ker\varphi
+\cong
+R/I\oplus R/J.
+$$
+Substitute
+$$
+\ker\varphi=I\cap J.
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the desired ring isomorphism.
+:::
+:::

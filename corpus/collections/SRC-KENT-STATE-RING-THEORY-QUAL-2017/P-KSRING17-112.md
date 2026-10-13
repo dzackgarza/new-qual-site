@@ -18,3 +18,245 @@ audit:
 ::: {.problem}
 [CORRECTED] Show that if R is a commutative ring with 1 that is not a field, then $R [ x ]$ is not a principal ideal domain.
 :::
+
+::: {.solution}
+We prove the contrapositive.
+Assume
+$$
+R[x]
+$$
+is a principal ideal domain.
+
+<1>1. The ring $R[x]$ is an integral domain.
+
+::: {.proof}
+Being an integral domain is part of the definition of a principal ideal domain.
+:::
+
+<1>2. The coefficient ring $R$ is an integral domain.
+
+::: {.proof}
+The ring $R$ embeds in
+$$
+R[x]
+$$
+as the constant polynomials.
+If
+$$
+ab=0
+$$
+in $R$, the same equality holds in
+$$
+R[x].
+$$
+Since
+$$
+R[x]
+$$
+is an integral domain by step <1>1,
+$$
+a=0
+\quad\text{or}\quad
+b=0.
+$$
+Thus $R$ has no zero divisors.
+Also
+$$
+1_R\ne0
+$$
+because
+$$
+R[x]
+$$
+is nonzero.
+Hence $R$ is an integral domain.
+:::
+
+<1>3. Suppose, for contradiction, that $R$ is not a field.
+Then there exists a nonzero nonunit
+$$
+c\in R.
+$$
+
+::: {.proof}
+In a nonzero commutative ring with identity, being a field is equivalent to every nonzero element being a unit.
+Since $R$ is not a field and is nonzero by step <1>2, some nonzero element is not invertible.
+:::
+
+<1>4. The ideal
+$$
+(x,c)
+\subseteq
+R[x]
+$$
+is proper.
+
+::: {.proof}
+Suppose
+$$
+1\in(x,c).
+$$
+Then
+$$
+1
+=
+xg(x)+ch(x)
+$$
+for some
+$$
+g,h\in R[x].
+$$
+Evaluating at
+$$
+x=0
+$$
+gives
+$$
+1
+=
+c\,h(0).
+$$
+Thus $c$ is a unit of $R$, contradicting step <1>3.
+Hence
+$$
+(x,c)\subsetneq R[x].
+$$
+:::
+
+<1>5. If
+$$
+(x,c)
+$$
+were principal, say
+$$
+(x,c)=(f),
+$$
+then $f$ would be constant.
+
+::: {.proof}
+Since
+$$
+c\in(f),
+$$
+there exists
+$$
+g\in R[x]
+$$
+such that
+$$
+c=fg.
+$$
+The polynomial
+$$
+c
+$$
+is nonzero and has degree $0$.
+Because $R$ is an integral domain by step <1>2,
+$$
+\deg(fg)
+=
+\deg f+\deg g.
+$$
+Therefore
+$$
+\deg f=0.
+$$
+Thus
+$$
+f=d
+$$
+for some nonzero
+$$
+d\in R.
+$$
+:::
+
+<1>6. The constant $d$ from step <1>5 is a unit of $R$.
+
+::: {.proof}
+Since
+$$
+x\in(x,c)=(d),
+$$
+there exists
+$$
+h(x)\in R[x]
+$$
+such that
+$$
+x=d\,h(x).
+$$
+Comparing the coefficient of $x$ gives
+$$
+1=d h_1
+$$
+for the coefficient $h_1$ of $x$ in $h$.
+Hence
+$$
+d
+$$
+is a unit.
+:::
+
+<1>7. The ideal $(x,c)$ is not principal.
+
+::: {.proof}
+If it were principal, steps <1>5--<1>6 would give
+$$
+(x,c)=(d)=R[x],
+$$
+because a unit generates the whole ring.
+This contradicts properness from step <1>4.
+Thus
+$$
+\boxed{
+(x,c)
+\text{ is not principal}.
+}
+$$
+:::
+
+<1>8. The assumption that $R$ is not a field contradicts the hypothesis that $R[x]$ is a PID.
+
+::: {.proof}
+A principal ideal domain has every ideal principal.
+Step <1>7 gives a nonprincipal ideal of
+$$
+R[x].
+$$
+This contradiction shows that the assumption in step <1>3 is impossible.
+:::
+
+<1>9. Therefore, if
+$$
+R[x]
+$$
+is a PID, then
+$$
+R
+$$
+is a field.
+
+::: {.proof}
+This is the conclusion of step <1>8.
+:::
+
+<1>10. Equivalently,
+$$
+\boxed{
+R\text{ not a field}
+\implies
+R[x]\text{ not a PID}.
+}
+$$
+
+::: {.proof}
+This is the contrapositive of step <1>9.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required conclusion.
+:::
+:::

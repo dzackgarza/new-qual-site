@@ -29,3 +29,76 @@ Let $f(x,y)$ be a function that is differentiable everywhere. At a certain point
 ::: {.remark}
 The source prints choice (C) as the digits $4$ and $3$ followed by $\sqrt{2}$, with no fraction bar.
 :::
+
+::: {.solution}
+<1>1. The given directional derivatives imply
+$$
+f_x(P)-f_y(P)=2
+\qquad\text{and}\qquad
+f_x(P)+f_y(P)=6.
+$$
+
+::: {.proof}
+The unit vectors in the stated directions are
+$$
+\mathbf{u}=\frac{(1,-1)}{\sqrt2},
+\qquad
+\mathbf{v}=\frac{(1,1)}{\sqrt2}.
+$$
+For a differentiable function,
+$$
+D_{\mathbf{u}}f(P)=\nabla f(P)\cdot\mathbf{u}
+=\frac{f_x(P)-f_y(P)}{\sqrt2}.
+$$
+Since this equals $\sqrt2$, multiplication by $\sqrt2$ gives
+$$
+f_x(P)-f_y(P)=2.
+$$
+Similarly,
+$$
+D_{\mathbf{v}}f(P)
+=\frac{f_x(P)+f_y(P)}{\sqrt2}
+=3\sqrt2
+$$
+gives
+$$
+f_x(P)+f_y(P)=6.
+$$
+:::
+
+<1>2. The gradient at $P$ is
+$$
+\nabla f(P)=(4,2).
+$$
+
+::: {.proof}
+Adding the two equations in step <1>1 gives $2f_x(P)=8$, hence $f_x(P)=4$. Subtracting them gives $2f_y(P)=4$, hence $f_y(P)=2$.
+:::
+
+<1>3. The maximum directional derivative of $f$ at $P$ is
+$$
+\boxed{2\sqrt5},
+$$
+so the answer is (B).
+
+::: {.proof}
+For any unit vector $\mathbf{w}$,
+$$
+D_{\mathbf{w}}f(P)=\nabla f(P)\cdot\mathbf{w}
+\le \|\nabla f(P)\|
+$$
+by the Cauchy--Schwarz inequality, with equality when $\mathbf{w}$ points in the direction of the gradient. By step <1>2,
+$$
+\|\nabla f(P)\|
+=\sqrt{4^2+2^2}
+=\sqrt{20}
+=2\sqrt5.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested maximum directional derivative and corresponding choice.
+:::
+:::

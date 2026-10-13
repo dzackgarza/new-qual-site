@@ -24,3 +24,59 @@ Let $a$ be the smallest positive value of $x$ at which the function $f(x) = (\co
 (D) $1$
 (E) $\sqrt{2}$
 :::
+
+::: {.solution}
+<1>1. The function can be written as
+$$
+f(x)=\frac12\sin(2x^2),
+$$
+and therefore
+$$
+f'(x)=2x\cos(2x^2).
+$$
+
+::: {.proof}
+The identity $2\sin\theta\cos\theta=\sin(2\theta)$ with
+$\theta=x^2$ gives the first formula. Differentiating by the chain rule gives
+$$
+f'(x)=\frac12\cos(2x^2)\cdot4x=2x\cos(2x^2).
+$$
+:::
+
+<1>2. The smallest positive critical point satisfies
+$$
+a^2=\frac\pi4.
+$$
+
+::: {.proof}
+By step <1>1, a positive critical point must satisfy
+$\cos(2x^2)=0$. Thus
+$$
+2x^2=\frac\pi2+k\pi
+$$
+for an integer $k$ for which the right-hand side is positive. The smallest
+positive value occurs for $k=0$, giving $2a^2=\pi/2$ and hence
+$a^2=\pi/4$.
+:::
+
+<1>3. At this point,
+$$
+f(a)=\boxed{\frac12},
+$$
+so the answer is (B).
+
+::: {.proof}
+Using step <1>1 and $2a^2=\pi/2$ from step <1>2,
+$$
+f(a)=\frac12\sin(2a^2)
+=\frac12\sin\frac\pi2
+=\frac12.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value.
+:::
+:::

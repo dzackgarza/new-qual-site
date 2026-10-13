@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Verified harmonicity directly and integrated the Cauchy--Riemann equations to obtain the harmonic conjugate."
 ---
-
 ::: {.problem}
 Let $u:\mathbb R^2\to\mathbb R$ be defined by
 \[
@@ -39,10 +38,12 @@ is analytic.
 
 ::: pf
 
-::: pf-step
-$u$ is harmonic.
+::: {.pf-step #s1}
+
+Verify that $u$ is harmonic.
 
 ::: pf-proof
+
 We have
 $$
 u_x=3x^2-3y^2,
@@ -60,14 +61,17 @@ $$
 u_{xx}+u_{yy}=0
 $$
 everywhere on $\mathbb R^2$, so $u$ is harmonic.
-:::
 
 :::
 
-::: pf-step
-The harmonic conjugates of $u$ are $v(x,y)=3x^2y-y^3+C$ with $C\in\mathbb R$.
+:::
+
+::: {.pf-step #s2}
+
+Solve the Cauchy--Riemann equations for $v$.
 
 ::: pf-proof
+
 For
 $$
 f=u+iv
@@ -96,14 +100,17 @@ Thus $\phi$ is constant, and all harmonic conjugates are
 $$
 \boxed{v(x,y)=3x^2y-y^3+C.}
 $$
-:::
 
 :::
 
-::: pf-step
-The analytic function is $f(z)=z^3+iC$.
+:::
+
+::: {.pf-step #s3}
+
+Identify the analytic function.
 
 ::: pf-proof
+
 Since
 $$
 (x+iy)^3
@@ -113,9 +120,18 @@ the resulting analytic function is
 $$
 \boxed{f(z)=z^3+iC,\qquad C\in\mathbb R.}
 $$
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves harmonicity, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give all harmonic
+conjugates and the resulting analytic functions.
+
+:::
+
+:::
+
 :::

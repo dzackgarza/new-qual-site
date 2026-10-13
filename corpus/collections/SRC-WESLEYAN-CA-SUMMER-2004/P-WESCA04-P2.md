@@ -25,3 +25,217 @@ D_1\cup D_2
 \]
 are simply connected.
 :::
+
+::: {.solution}
+We use the standard planar-domain characterization:
+
+> A domain
+> \[
+> \Omega\subseteq\mathbb C
+> \]
+> is simply connected if and only if
+> \[
+> \widehat{\mathbb C}\setminus\Omega
+> \]
+> is connected.
+
+This is the classical complement criterion for plane domains; see, for
+example, Conway, *Functions of One Complex Variable I*, the chapter on
+simply connected regions.
+
+<1>1. The intersection
+\[
+D_1\cap D_2
+\]
+is a domain.
+
+::: {.proof}
+It is open because it is the intersection of two open sets.
+It is nonempty and connected by hypothesis.
+Thus it is a domain.
+:::
+
+<1>2. For
+\[
+j=1,2,
+\]
+the set
+\[
+K_j
+\coloneqq
+\widehat{\mathbb C}\setminus D_j
+\]
+is connected.
+
+::: {.proof}
+Each
+\[
+D_j
+\]
+is a simply connected plane domain.
+Apply the planar-domain complement criterion.
+:::
+
+<1>3. Both sets
+\[
+K_1
+\quad\text{and}\quad
+K_2
+\]
+contain the point at infinity
+\[
+\infty.
+\]
+
+::: {.proof}
+Each
+\[
+D_j
+\]
+is contained in
+\[
+\mathbb C
+\subset
+\widehat{\mathbb C},
+\]
+so
+\[
+\infty\notin D_j.
+\]
+Hence
+\[
+\infty\in K_j.
+\]
+:::
+
+<1>4. The union
+\[
+K_1\cup K_2
+\]
+is connected.
+
+::: {.proof}
+By step <1>2, both $K_1$ and $K_2$ are connected.
+By step <1>3,
+\[
+K_1\cap K_2
+\]
+contains
+\[
+\infty,
+\]
+so the two connected sets meet.
+The union of two connected subsets with nonempty intersection is connected.
+:::
+
+<1>5. One has
+\[
+\widehat{\mathbb C}
+\setminus
+(D_1\cap D_2)
+=
+K_1\cup K_2.
+\]
+
+::: {.proof}
+This is De Morgan's law:
+\[
+\widehat{\mathbb C}
+\setminus
+(D_1\cap D_2)
+=
+(\widehat{\mathbb C}\setminus D_1)
+\cup
+(\widehat{\mathbb C}\setminus D_2).
+\]
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+D_1\cap D_2
+\text{ is simply connected}.
+}
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+D_1\cap D_2
+\]
+is a domain.
+By steps <1>4--<1>5, its complement in the Riemann sphere is connected.
+Apply the planar-domain complement criterion.
+:::
+
+<1>7. The intersection
+\[
+D_1\cap D_2
+\]
+is path-connected.
+
+::: {.proof}
+Every open connected subset of
+\[
+\mathbb R^2\cong\mathbb C
+\]
+is path-connected.
+Indeed, fixing a point $z_0$ in an open connected set $U$, the set of points
+that can be joined to $z_0$ by a polygonal path in $U$ is both open and
+closed in $U$, hence equals $U$.
+Apply this to
+\[
+U=D_1\cap D_2.
+\]
+:::
+
+<1>8. The union
+\[
+D_1\cup D_2
+\]
+is simply connected.
+
+::: {.proof}
+The sets
+\[
+D_1
+\quad\text{and}\quad
+D_2
+\]
+are open and simply connected.
+Their intersection is nonempty and path-connected by step <1>7.
+
+Choose
+\[
+z_0\in D_1\cap D_2.
+\]
+The Seifert--van Kampen theorem gives
+\[
+\pi_1(D_1\cup D_2,z_0)
+\cong
+\pi_1(D_1,z_0)
+*_{\pi_1(D_1\cap D_2,z_0)}
+\pi_1(D_2,z_0).
+\]
+Since
+\[
+\pi_1(D_1)=\pi_1(D_2)=0,
+\]
+the pushout group is trivial.
+
+The union is path-connected because it is the union of two path-connected
+sets with nonempty intersection.
+Hence
+\[
+D_1\cup D_2
+\]
+is simply connected.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>6 proves the assertion for the intersection, and step <1>8 proves
+the assertion for the union.
+:::
+:::

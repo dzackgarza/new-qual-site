@@ -21,7 +21,6 @@ audit:
   date: 2026-09-13
   note: Verified both coordinate-ring implications and the affine-line and affine-plane automorphism claims by explicit algebra and counterexamples.
 ---
-
 ::: {.problem}
 Let $f:X\to Y$ be a morphism of affine varieties and let $f^\sharp:A(Y)\to A(X)$ be the induced homomorphism of coordinate rings.
 Determine whether each statement is true or false.
@@ -35,19 +34,16 @@ Determine whether each statement is true or false.
 4. If $f:\mathbb A^2\to\mathbb A^2$ is an isomorphism, then $f$ is affine linear: $f(x)=Ax+b$ for some $A\in\operatorname{Mat}_{2,2}(k)$ and $b\in k^2$.
 :::
 
-
 ::: {.solution}
-The truth values are
-\[
-\boxed{\text{False},\ \text{False},\ \text{True},\ \text{False}}.
-\]
 
 ::: pf
 
-::: pf-step
-Statement 1 is false.
+::: {.pf-step #s1}
+
+Statement 1 is \(\boxed{\text{false}}\).
 
 ::: pf-proof
+
 If \(f:X\to Y\) is surjective and \(g\in A(Y)\) satisfies \(f^\sharp(g)=g\circ f=0\), then \(g\) vanishes at every point of \(Y\), hence \(g=0\). Thus surjectivity of \(f\) does imply injectivity of \(f^\sharp\).
 
 The converse fails. Take the open immersion
@@ -59,14 +55,17 @@ On coordinate rings,
 j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 \]
 is the natural inclusion, so it is injective, but \(j\) is not surjective because \(0\notin\mathbb G_m\).
-:::
 
 :::
 
-::: pf-step
-Statement 2 is false.
+:::
+
+::: {.pf-step #s2}
+
+Statement 2 is \(\boxed{\text{false}}\).
 
 ::: pf-proof
+
 If \(f^\sharp:A(Y)\to A(X)\) is surjective, then \(f\) is a closed immersion onto the closed subvariety cut out by \(\ker f^\sharp\); in particular, \(f\) is injective.
 
 Again the converse fails for
@@ -78,14 +77,17 @@ The map \(j\) is injective, but
 j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 \]
 is not surjective because \(t^{-1}\) is not in its image.
-:::
 
 :::
 
-::: pf-step
-Statement 3 is true.
+:::
+
+::: {.pf-step #s3}
+
+Statement 3 is \(\boxed{\text{true}}\).
 
 ::: pf-proof
+
 An isomorphism \(f:\mathbb A^1\to\mathbb A^1\) induces a \(k\)-algebra automorphism
 \[
 f^\sharp:k[t]\longrightarrow k[t].
@@ -103,14 +105,17 @@ so \(\deg p=1\). Hence
 p(t)=at+b
 \]
 with \(a\ne0\), and therefore \(f(x)=ax+b\).
-:::
 
 :::
 
-::: pf-step
-Statement 4 is false.
+:::
+
+::: {.pf-step #s4}
+
+Statement 4 is \(\boxed{\text{false}}\).
 
 ::: pf-proof
+
 Consider
 \[
 F:\mathbb A^2\longrightarrow\mathbb A^2,
@@ -122,7 +127,14 @@ It has polynomial inverse
 F^{-1}(u,v)=(u,v-u^2),
 \]
 so \(F\) is an isomorphism. But \(F\) is not affine linear because its second coordinate contains the quadratic term \(x^2\).
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, step [](#s3){.pf-ref}, and step [](#s4){.pf-ref} determine all four truth values and justify each one.
 
 :::
 

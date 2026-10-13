@@ -22,9 +22,8 @@ audit:
   date: 2026-09-16
   note: Replaced the misattached scan of test 1, problem 49 with a transcription of test 1, problem 60 from ALGEBRA_REVIEW1.pdf page 5, describing its pentagram figure.
 ---
-
 ::: {.problem}
-The figure is a regular pentagram: the five-pointed star drawn by joining each vertex of a regular pentagon to the two vertices not adjacent to it.
+The source shows a regular pentagram: a five-pointed star drawn by joining each vertex of a regular pentagon to the two vertices not adjacent to it.
 
 The group of symmetries of the regular pentagram shown above is isomorphic to the
 
@@ -44,9 +43,9 @@ The symmetry group is the dihedral group of order $10$, so the answer is $\boxed
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-The symmetry group of the regular pentagram is the dihedral group $D_5$ of order $10$.
+Determine the symmetries.
 
 ::: pf-proof
 
@@ -61,6 +60,12 @@ r^5=s^2=e,
 Thus the group has the presentation of $D_5$ and has order $10$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} identifies the symmetry group as the dihedral group of order $10$, so choice (E) is correct.
 
 :::
 

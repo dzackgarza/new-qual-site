@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked uniqueness in cyclic groups by the least positive exponent, construction of distinct order-p subgroups from two primary factors, coprime generator orders, and the trivial-group case."
 ---
-
 ::: {.problem}
 Let $A$ be a finite abelian group of order $n$.
 Prove that $A$ is cyclic if and only if $A$ has a unique subgroup of each order $k$ such that $k$ divides $n$.
@@ -35,7 +34,7 @@ Prove that $A$ is cyclic if and only if $A$ has a unique subgroup of each order 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 A cyclic group of order $n$ has exactly one subgroup
 of order $k$ for every positive divisor $k$ of $n$.
@@ -88,7 +87,7 @@ assumed uniqueness for the divisor $k=p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The group $A$ is cyclic.
 
@@ -108,6 +107,13 @@ and its unique subgroup is itself. This also satisfies both
 directions of the assertion.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the forward implication, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the
+converse.
 
 :::
 

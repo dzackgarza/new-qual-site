@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Verified the nilpotence-index argument, characteristic-polynomial conclusion, and the converse trace criterion via Newton identities.
 ---
-
 ::: {.problem}
 Recall that a square matrix is nilpotent if $A^p=0$ for some $p>0$.
 
@@ -37,7 +36,7 @@ Prove that $A$ is nilpotent if and only if
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If \(A\) is nilpotent, then \(A^n=0\).
 
@@ -103,7 +102,7 @@ Thus every eigenvalue of \(A\) is \(0\). Over \(\mathbb C\), the characteristic 
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 \(A\) is nilpotent if and only if \(\operatorname{tr}(A^p)=0\) for \(1\le p\le n\).
 
@@ -157,6 +156,12 @@ Thus
 \]
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), and step [](#s3){.pf-ref} proves part (c).
 
 :::
 

@@ -19,3 +19,63 @@ audit:
 ::: {.problem}
 Let f be a non-constant analytic function on D with $f ( \mathbb { D } ) \subseteq \mathbb { D } . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { | f ( 0 ) | - | z | } { 1 + | f ( 0 ) | | z | } } \leq | f ( z ) | \leq { \frac { | f ( 0 ) | + | z | } { 1 - | f ( 0 ) | | z | } } ,$
 :::
+
+::: {.solution}
+Set $a\coloneqq f(0)$ and $\phi_a(w)\coloneqq(a-w)/(1-\overline a w)$.
+
+<1>1. The function $g\coloneqq\phi_a\circ f$ is a holomorphic self-map of $\DD$ satisfying $g(0)=0$.
+
+::: {.proof}
+Since $\abs a<1$, the map $\phi_a$ is a holomorphic automorphism of $\DD$. Because $f(\DD)\subseteq\DD$, the composition maps $\DD$ into itself, and $g(0)=\phi_a(a)=0$.
+:::
+
+<1>2. For every $z\in\DD$,
+$$
+\abs{\frac{a-f(z)}{1-\overline a f(z)}}\le\abs z.
+$$
+
+::: {.proof}
+This is Schwarz's lemma applied to $g$ from step <1>1.
+:::
+
+<1>3. Put $A\coloneqq\abs a$, $r\coloneqq\abs z$, and $s\coloneqq\abs{f(z)}$. Then
+$$
+\abs{a-f(z)}\le r(1+As).
+$$
+
+::: {.proof}
+Step <1>2 gives $\abs{a-f(z)}\le r\abs{1-\overline a f(z)}$, while the triangle inequality gives $\abs{1-\overline a f(z)}\le1+As$.
+:::
+
+<1>4. One has
+$$
+\boxed{\abs{f(z)}\le\frac{\abs{f(0)}+\abs z}{1-\abs{f(0)}\abs z}}.
+$$
+
+::: {.proof}
+By the reverse triangle inequality and step <1>3,
+$$
+s-A\le\abs{f(z)-a}\le r(1+As).
+$$
+Thus $s(1-Ar)\le A+r$. Since $1-Ar>0$, division gives $s\le(A+r)/(1-Ar)$.
+:::
+
+<1>5. One has
+$$
+\boxed{\frac{\abs{f(0)}-\abs z}{1+\abs{f(0)}\abs z}\le\abs{f(z)}}.
+$$
+
+::: {.proof}
+Again by the reverse triangle inequality and step <1>3,
+$$
+A-s\le\abs{a-f(z)}\le r(1+As).
+$$
+Hence $A-r\le s(1+Ar)$, so $s\ge(A-r)/(1+Ar)$. When $A<r$, the right-hand side is negative and the same inequality is automatic from $s\ge0$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>4 and <1>5 are the two requested inequalities.
+:::
+:::

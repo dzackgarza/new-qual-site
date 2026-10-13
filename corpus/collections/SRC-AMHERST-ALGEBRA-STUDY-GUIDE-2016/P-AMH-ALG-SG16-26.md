@@ -25,9 +25,58 @@ Prove that $I$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-Proof.
-(Nonempty) Note that 0∈ R gives the constant polynomial 0 ∈R. Since 0(2) = 0(5) = 0, we have 0∈I. (Closed under−) Given f,g ∈I, we have f(2) =f(5) =g(2) =g(5) = 0. So (f−g)(2) =f(2)−g(2) = 0− 0 = 0, and (f−g)(5) =f(5)−g(5) = 0− 0 = 0, and hence f−g∈I. (Sticky) Given f∈I and g∈R, we have f(2) =f(5) = 0. So (gf )(2) =g(2)f(2) =g(2)· 0 = 0, and (gf )(5) =g(5)f(5) =g(5)· 0 = 0. Thus, gf∈I. Since R is commutative, we also have fg =gf∈I. QED
+<1>1. The set $I$ is nonempty.
 
-The Division Algorithm.
-Know the statement of the division algorithm in k[x]. Here is a problem that uses the division algorithm.
+::: {.proof}
+The zero polynomial satisfies
+$$
+0(2)=0(5)=0,
+$$
+so $0\in I$.
+:::
+
+<1>2. The set $I$ is closed under subtraction.
+
+::: {.proof}
+Let $f,g\in I$.  Then
+$$
+f(2)=f(5)=g(2)=g(5)=0.
+$$
+Hence
+$$
+(f-g)(2)=f(2)-g(2)=0
+$$
+and
+$$
+(f-g)(5)=f(5)-g(5)=0.
+$$
+Therefore $f-g\in I$.
+:::
+
+<1>3. The set $I$ absorbs multiplication by arbitrary elements of $R$.
+
+::: {.proof}
+Let $f\in I$ and $h\in R$.  Since $f(2)=f(5)=0$,
+$$
+(hf)(2)=h(2)f(2)=0
+$$
+and
+$$
+(hf)(5)=h(5)f(5)=0.
+$$
+Thus $hf\in I$.  Since $R=\RR[x]$ is commutative, $fh=hf\in I$ as well.
+:::
+
+<1>4. Therefore $I$ is an ideal of $R$.
+
+::: {.proof}
+Steps <1>1 and <1>2 show that $I$ is an additive subgroup by the subtraction
+criterion, and step <1>3 gives the absorption property.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::

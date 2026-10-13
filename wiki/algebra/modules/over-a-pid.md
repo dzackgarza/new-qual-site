@@ -31,13 +31,9 @@ Over $\ZZ$, the module $\ZZ$ is indecomposable and not simple, and $\ZZ/4$ is cy
 
 [[D-4HEUB]]
 
-[[FD-2EUYX]]
-
 [[FD-GNRTS]]
 
 [[D-HY7UU]]
-
-[[FD-S2W5E]]
 
 ## The structure theorem
 

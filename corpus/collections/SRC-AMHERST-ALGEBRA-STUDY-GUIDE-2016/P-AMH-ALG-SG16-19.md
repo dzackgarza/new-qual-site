@@ -26,6 +26,52 @@ Prove that $\operatorname{Ann}(S)$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-Proof.
-(Nonempty) We have 0∈ Ann(S), since 0s = 0∀s∈S. So Ann(S)⁄= ∅. (Closed under−) Given a,b ∈ Ann(S) and s∈ S, we have (a−b)s = as−bs = 0− 0 = 0, so that a−b∈ Ann(S). (Sticky) Given r∈ R and x∈ Ann(S), and given any s∈ S, we have ( rx)s = r(xs) = r(0) = 0. Thus,rx∈ Ann(S). Since R is commutative, xr =rx∈ Ann(S). QED
+<1>1. The set $\operatorname{Ann}(S)$ is nonempty.
+
+::: {.proof}
+For every $s\in S$,
+$$
+0\cdot s=0.
+$$
+Hence $0\in\operatorname{Ann}(S)$.
+:::
+
+<1>2. The set $\operatorname{Ann}(S)$ is closed under subtraction.
+
+::: {.proof}
+Let $a,b\in\operatorname{Ann}(S)$.  For every $s\in S$,
+$$
+(a-b)s=as-bs=0-0=0.
+$$
+Therefore $a-b\in\operatorname{Ann}(S)$.
+:::
+
+<1>3. The set $\operatorname{Ann}(S)$ absorbs multiplication by arbitrary
+elements of $R$.
+
+::: {.proof}
+Let $r\in R$ and $x\in\operatorname{Ann}(S)$.  For every $s\in S$,
+$$
+(rx)s=r(xs)=r\cdot0=0.
+$$
+Thus $rx\in\operatorname{Ann}(S)$.  Since $R$ is commutative,
+$$
+xr=rx\in\operatorname{Ann}(S)
+$$
+as well.
+:::
+
+<1>4. Therefore $\operatorname{Ann}(S)$ is an ideal of $R$.
+
+::: {.proof}
+Steps <1>1 and <1>2 show, by the subtraction criterion, that
+$\operatorname{Ann}(S)$ is an additive subgroup of $R$.  Step <1>3 gives the
+ideal absorption property.  Hence $\operatorname{Ann}(S)$ is an ideal.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::

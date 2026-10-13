@@ -17,7 +17,6 @@ audit:
   by: muse-spark-1.2
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Let $R$ be a ring (with unit).
 
@@ -36,60 +35,52 @@ If $K$ is any ideal of $R$ that is contained in both $I$ and $J$, must $K$ be co
 
 ::: {.pf-step #s1}
 
-An ideal of $R$ is a subset $I \subseteq R$ such that $(I,+)$ is a subgroup of $(R,+)$, that is, $0\in I$ and $x-y\in I$ for all $x,y\in I$, and such that $rx\in I$ and $xr\in I$ for all $r \in R$ and $x \in I$.
-This answers part (a).
+An ideal of $R$ is an additive subgroup $I\le (R,+)$ such that
+$$
+rI\subseteq I
+\qquad\text{and}\qquad
+Ir\subseteq I
+$$
+for every $r\in R$.
+
+::: pf-proof
+
+Equivalently, a subset $I\subseteq R$ is a two-sided ideal when
+$0\in I$, $x-y\in I$ for all $x,y\in I$, and
+$rx,xr\in I$ for all $r\in R$ and $x\in I$. This is the definition
+required in part (a).
+
+:::
 
 :::
 
 ::: {.pf-step #s2}
 
-The sum $I + J = \{x + y : x \in I, y \in J\}$ is the least ideal containing both $I$ and $J$, so $I\vee J=I+J$.
+For ideals $I,J\subseteq R$, the join exists and is
+$$
+I\vee J=I+J
+=\{x+y:x\in I, y\in J\}.
+$$
 
 ::: pf-proof
 
-::: {.pf-step #s2-1}
+First, $I+J$ is an additive subgroup: $0=0+0$ lies in it, and
+$$
+(x_1+y_1)-(x_2+y_2)
+=(x_1-x_2)+(y_1-y_2)\in I+J.
+$$
+For $r\in R$,
+$$
+r(x+y)=rx+ry\in I+J,
+\qquad
+(x+y)r=xr+yr\in I+J,
+$$
+so $I+J$ is an ideal.
 
-$I + J$ is an ideal of $R$.
-
-::: pf-proof
-
-We have $0 = 0 + 0 \in I+J$.
-For $x_1+y_1, x_2+y_2 \in I+J$, $(x_1+y_1) - (x_2+y_2) = (x_1-x_2) + (y_1-y_2) \in I+J$.
-For any $r \in R$, $r(x+y) = rx + ry \in I+J$ and $(x+y)r = xr + yr \in I+J$, because $I$ and $J$ are ideals.
-
-:::
-
-:::
-
-::: {.pf-step #s2-2}
-
-$I \subseteq I + J$ and $J \subseteq I + J$.
-
-::: pf-proof
-
-For $x \in I$, $x = x + 0 \in I+J$ since $0 \in J$; similarly, for $y \in J$, $y = 0 + y \in I+J$.
-
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-
-If $M$ is an ideal of $R$ containing both $I$ and $J$, then $I + J \subseteq M$.
-
-::: pf-proof
-
-For $x \in I \subseteq M$ and $y \in J \subseteq M$, closure of $M$ under addition gives $x + y \in M$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2-1){.pf-ref}, [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}.
-
-:::
+Moreover, $x=x+0\in I+J$ for every $x\in I$, and similarly
+$J\subseteq I+J$. If $M$ is any ideal containing both $I$ and $J$, then
+$x+y\in M$ whenever $x\in I$ and $y\in J$, so $I+J\subseteq M$.
+Thus $I+J$ is the least ideal containing both $I$ and $J$.
 
 :::
 
@@ -97,51 +88,41 @@ Steps [](#s2-1){.pf-ref}, [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref}.
 
 ::: {.pf-step #s3}
 
-$IJ$ is an ideal of $R$ and $IJ\subseteq I\cap J$.
+The set
+$$
+IJ=
+\left\{
+\sum_{i=1}^n x_i y_i:
+n>0, x_i\in I, y_i\in J
+\right\}
+$$
+is an ideal of $R$.
 
 ::: pf-proof
 
-::: {.pf-step #s3-1}
+The zero element lies in $IJ$, for example as $0\cdot0$. If
+$$
+u=\sum_{i=1}^m x_i y_i,
+\qquad
+v=\sum_{j=1}^n x'_j y'_j,
+$$
+then
+$$
+u-v
+=\sum_{i=1}^m x_i y_i
++\sum_{j=1}^n (-x'_j)y'_j\in IJ,
+$$
+because $-x'_j\in I$. Hence $IJ$ is an additive subgroup.
 
-$IJ$ is an additive subgroup of $R$.
-
-::: pf-proof
-
-Taking $n=1$ and $x_1=y_1=0$ gives $0\in IJ$. The difference $\sum_i x_i y_i - \sum_j x'_j y'_j=\sum_i x_iy_i+\sum_j(-x'_j)y'_j$ is again a finite sum of products with first factors in $I$ and second factors in $J$.
-
-:::
-
-:::
-
-::: {.pf-step #s3-2}
-
-For $r \in R$ and $x = \sum_{i=1}^n x_i y_i \in IJ$, both $rx$ and $xr$ lie in $IJ$.
-
-::: pf-proof
-
-We have $rx = \sum_{i=1}^n (rx_i) y_i$ with $rx_i \in I$, and $xr = \sum_{i=1}^n x_i (y_i r)$ with $y_i r \in J$, because $I$ and $J$ are two-sided ideals.
-
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-
-Every element of $IJ$ lies in $I \cap J$.
-
-::: pf-proof
-
-Each product $x_iy_i$ lies in $I$ because $x_i\in I$ and $I$ absorbs right multiplication, and lies in $J$ because $y_i\in J$ and $J$ absorbs left multiplication. The ideal $I\cap J$ is closed under addition, so it contains $\sum_i x_iy_i$.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref} show that $IJ$ is an ideal, and step [](#s3-3){.pf-ref} gives $IJ\subseteq I\cap J$.
-
-:::
+For $r\in R$,
+$$
+ru=\sum_{i=1}^m (rx_i)y_i\in IJ
+$$
+because $rx_i\in I$, and
+$$
+ur=\sum_{i=1}^m x_i(y_ir)\in IJ
+$$
+because $y_ir\in J$. Therefore $IJ$ is a two-sided ideal.
 
 :::
 
@@ -149,11 +130,48 @@ Steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref} show that $IJ$ is an ideal, and 
 
 ::: {.pf-step #s4}
 
-An ideal $K$ contained in both $I$ and $J$ need not be contained in $IJ$.
+One has
+$$
+IJ\subseteq I\cap J.
+$$
 
 ::: pf-proof
 
-In $R=\ZZ$, let $I=J=K=2\ZZ$. Then $IJ$ is the set of finite sums of products $(2a)(2b)=4ab$, which is $4\ZZ$. The ideal $K$ is contained in $I$ and $J$, but $2\in K$ and $2\notin4\ZZ=IJ$.
+For each product $x_iy_i$ with $x_i\in I$ and $y_i\in J$, ideal
+absorption gives
+$$
+x_iy_i\in I
+\qquad\text{and}\qquad
+x_iy_i\in J.
+$$
+Both $I$ and $J$ are additively closed, so every finite sum defining an
+element of $IJ$ lies in both ideals.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+It is false in general that every ideal
+$K\subseteq I\cap J$ must satisfy $K\subseteq IJ$.
+
+::: pf-proof
+
+Take
+$$
+R=\ZZ,
+\qquad
+I=J=2\ZZ,
+\qquad
+K=2\ZZ.
+$$
+Then $K\subseteq I$ and $K\subseteq J$, while
+$$
+IJ=(2\ZZ)(2\ZZ)=4\ZZ.
+$$
+Since $2\in K$ but $2\notin4\ZZ$, one has
+$K\nsubseteq IJ$.
 
 :::
 
@@ -161,7 +179,8 @@ In $R=\ZZ$, let $I=J=K=2\ZZ$. Then $IJ$ is the set of finite sums of products $(
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} answers part (a), step [](#s2){.pf-ref} proves part (b), and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} answer part (c).
+Step [](#s1){.pf-ref} answers part (a), step [](#s2){.pf-ref} proves part (b), and
+steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove all assertions in part (c).
 
 :::
 

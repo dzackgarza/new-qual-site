@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked all divisors in the Sylow 7-count and proved the normalizer index and both centralizer containments."
 ---
-
 ::: {.problem}
 Let $G$ be a group of order 84 with 28 Sylow 3-subgroups.
 
@@ -38,7 +37,7 @@ Show that $N_G(Q) = Z_G(Q) = Q$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 There is exactly one Sylow $7$-subgroup.
 
@@ -82,14 +81,14 @@ is therefore equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The centralizer is also $Q$.
 
 ::: pf-proof
 
 Here $Z_G(Q)$ denotes the set of elements commuting with every
-element of $Q$. The group
+element of $Q$, not merely with one chosen element. The group
 $Q$ has prime order $3$ and is cyclic, hence abelian. Thus
 $Q\subseteq Z_G(Q)$. Every element centralizing $Q$ fixes each
 of its elements under conjugation and therefore normalizes $Q$.
@@ -100,6 +99,12 @@ $$
 All three subgroups coincide, as required.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 

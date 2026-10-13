@@ -24,3 +24,46 @@ A fair die is tossed twice. About how many times would you expect to roll 3 or g
 (D) $\frac{1}{2}$
 (E) $0$
 :::
+
+::: {.solution}
+<1>1. On each toss, the probability of rolling $3$ or greater is
+$$
+\frac{4}{6}=\frac23.
+$$
+
+::: {.proof}
+The favorable outcomes are $3,4,5,6$, four of the six equally likely faces.
+:::
+
+<1>2. If $X$ is the number of the two tosses that are at least $3$, then
+$$
+E[X]=\frac43.
+$$
+
+::: {.proof}
+Let $I_1,I_2$ be the indicator variables for the events that the first and second tosses, respectively, are at least $3$. Then $X=I_1+I_2$, and by step <1>1,
+$$
+E[I_1]=E[I_2]=\frac23.
+$$
+Linearity of expectation gives
+$$
+E[X]=E[I_1]+E[I_2]=\frac23+\frac23=\frac43.
+$$
+:::
+
+<1>3. Among the listed choices, the closest value to $4/3$ is
+$$
+\boxed{\frac32},
+$$
+so the answer is (B).
+
+::: {.proof}
+The distance from $4/3$ to $3/2$ is $1/6$, while its distance to $1$ is $1/3$, and all other listed choices are still farther away.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested approximate expected number.
+:::
+:::

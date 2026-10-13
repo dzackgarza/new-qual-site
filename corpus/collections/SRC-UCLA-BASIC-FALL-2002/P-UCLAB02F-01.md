@@ -23,3 +23,84 @@ Prove that
 0<\inf\{d(x,y):x\in K,\ y\in F\}.
 \]
 :::
+
+::: {.solution}
+If $K=\varnothing$ or $F=\varnothing$, the set of distances is empty; with the extended-real convention $\inf\varnothing=+\infty$, the conclusion is immediate. If the infimum is understood only for nonempty subsets of $\mathbb R$, then nonemptiness of $K$ and $F$ is implicit. Consider therefore the substantive case $K,F\ne\varnothing$.
+
+<1>1. For every $x\in K$, there exists $r_x>0$ such that
+\[
+B(x,r_x)\cap F=\varnothing.
+\]
+
+::: {.proof}
+Since $K\cap F=\varnothing$, every $x\in K$ lies in the complement $X\setminus F$. The set $F$ is closed, so $X\setminus F$ is open. Hence there is $r_x>0$ with
+\[
+B(x,r_x)\subseteq X\setminus F.
+\]
+:::
+
+<1>2. There are points $x_1,\ldots,x_m\in K$ such that
+\[
+K\subseteq\bigcup_{i=1}^m B\left(x_i,\frac{r_{x_i}}2\right).
+\]
+
+::: {.proof}
+The balls
+\[
+\left\{B\left(x,\frac{r_x}{2}\right):x\in K\right\}
+\]
+form an open cover of $K$. Since $K$ is compact, a finite subcover exists.
+:::
+
+<1>3. Let
+\[
+\delta=\min_{1\le i\le m}\frac{r_{x_i}}2.
+\]
+Then $\delta>0$ and
+\[
+d(x,y)\ge\delta
+\]
+for every $x\in K$ and $y\in F$.
+
+::: {.proof}
+The minimum is positive because it is the minimum of finitely many positive numbers.
+
+Fix $x\in K$ and $y\in F$. By step <1>2, choose $i$ such that
+\[
+d(x,x_i)<\frac{r_{x_i}}2.
+\]
+By step <1>1, $y\notin B(x_i,r_{x_i})$, so
+\[
+d(x_i,y)\ge r_{x_i}.
+\]
+The triangle inequality gives
+\[
+d(x,y)
+\ge
+d(x_i,y)-d(x,x_i)
+>
+r_{x_i}-\frac{r_{x_i}}2
+=
+\frac{r_{x_i}}2
+\ge\delta.
+\]
+:::
+
+<1>4. One has
+\[
+\boxed{
+0<
+\inf\{d(x,y):x\in K,\ y\in F\}.
+}
+\]
+
+::: {.proof}
+Step <1>3 shows that every element of the distance set is at least the positive number $\delta$. Hence its infimum is at least $\delta>0$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion in the nonempty case, and the opening observation covers the empty-set convention.
+:::
+:::

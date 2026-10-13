@@ -53,6 +53,8 @@ Hence the number of $g\in G$ with $g^p=e$ is congruent to $\size X\equiv 0 \pmod
 
 ## Actions
 
+[[D-WYC7C]]
+
 [[D-3T6O2]]
 
 ::: {.remark}
@@ -69,10 +71,6 @@ $$
 :::
 
 [[D-KGGWK]]
-
-[[FD-KSKDG]]
-
-[[FD-IGEOR]]
 
 ## The orbit-stabilizer theorem
 

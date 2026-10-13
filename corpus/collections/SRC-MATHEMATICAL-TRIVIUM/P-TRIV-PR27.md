@@ -25,3 +25,84 @@ $$
 There is a suspicion that the data about the third field is incorrect.
 Check if it should be dropped with 5% significance level.
 :::
+
+::: {.solution}
+Assume the eight field yields are an independent sample from a normal population and test the single suspected high observation $35.9$ using Grubbs' statistic
+\[
+G=\frac{|x_{\mathrm{sus}}-\bar x|}{s},
+\]
+where $s$ is the sample standard deviation.
+
+<1>1. The sample mean is
+\[
+\bar x=28.925.
+\]
+
+::: {.proof}
+The eight observations sum to $231.4$, so
+\[
+\bar x=\frac{231.4}{8}=28.925.
+\]
+:::
+
+<1>2. The sample standard deviation is
+\[
+s=\sqrt{\frac1{7}\sum_{i=1}^8(x_i-\bar x)^2}
+\approx3.7465.
+\]
+
+::: {.proof}
+Using the mean from step <1>1, the sum of squared deviations is approximately $98.2549$. Dividing by $8-1=7$ and taking the square root gives $s\approx3.7465$.
+:::
+
+<1>3. For the suspected observation $35.9$,
+\[
+G_{\mathrm{obs}}
+=\frac{35.9-28.925}{3.7465}
+\approx1.862.
+\]
+
+::: {.proof}
+The suspected value is the sample maximum, so its absolute deviation from the mean is $6.975$. Divide by the sample standard deviation from step <1>2.
+:::
+
+<1>4. At significance level $0.05$ with $n=8$, the two-sided Grubbs critical value is
+\[
+G_{0.05,8}\approx2.1266.
+\]
+
+::: {.proof}
+For a single suspected outlier under normal sampling, the two-sided Grubbs critical value is
+\[
+G_{\alpha,n}
+=\frac{n-1}{\sqrt n}
+\sqrt{\frac{t^2}{n-2+t^2}},
+\]
+where $t$ is the upper $\alpha/(2n)$ quantile of Student's $t$ distribution with $n-2$ degrees of freedom. Substitution of $n=8$ and $\alpha=0.05$ gives $G_{0.05,8}\approx2.1266$.
+:::
+
+<1>5. Since
+\[
+G_{\mathrm{obs}}\approx1.862<2.1266\approx G_{0.05,8},
+\]
+the observation $35.9$ is not rejected as an outlier at the 5% significance level.
+
+::: {.proof}
+Grubbs' test rejects the suspected observation exactly when the observed statistic exceeds the critical value. The strict inequality is in the opposite direction.
+:::
+
+<1>6. Therefore
+\[
+\boxed{\text{the third-field observation should not be dropped at the 5% level}.}
+\]
+
+::: {.proof}
+Step <1>5 shows that the data do not provide sufficient evidence, at the specified significance level, to classify $35.9$ as a single normal-sample outlier.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 answers the requested decision.
+:::
+:::

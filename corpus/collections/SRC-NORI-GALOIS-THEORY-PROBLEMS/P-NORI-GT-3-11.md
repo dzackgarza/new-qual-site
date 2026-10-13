@@ -64,3 +64,245 @@ Thus case 2 does not occur.
 ::: {.remark}
 The source defines $R = \{\frac{m}{2^n} : m \geq 0, n \in \mathbb{Z}\}$, which is not closed under negation; the hint uses $R$ as the ring $\mathbb{Z}[\frac{1}{2}] = \{\frac{m}{2^n} : m \in \mathbb{Z}, n \geq 0\}$ (for instance $f = X^4 - 2X^3 + X^2 - 2 = (X^2 - X)^2 - 2 \cdot 1^2$ is irreducible with $\mathbb{Q}(\sqrt{2}) \subset \mathbb{Q}(\theta)$, and every admissible $Q = X^2 + uX + v$ has $2u = -2$, so $u = -1$ is not in $R$ as printed).
 :::
+
+::: {.solution}
+The source hint uses
+$$
+R=\ZZ\left[\frac12\right]
+=\left\{\frac{m}{2^n}:m\in\ZZ,\ n\ge0\right\}.
+$$
+This is the intended meaning of $R$; the literal set with $m\ge0$ printed in the source is not a ring and cannot contain negative coefficients.
+
+Let
+$$
+\QQ\subset K\subset E=\QQ(\theta)
+$$
+be the given quadratic subfield.
+
+<1>1. There is a squarefree integer $c$ such that
+$$
+K=\QQ(\sqrt c).
+$$
+
+::: {.proof}
+Since $[K:\QQ]=2$ and the characteristic is not $2$, write
+$$
+K=\QQ(\sqrt d)
+$$
+for some nonsquare $d\in\QQ^*$. Every nonzero rational number has, modulo multiplication by a rational square, a unique squarefree integer representative up to the usual sign convention: write each prime exponent in the factorization of $d$ modulo $2$. Thus
+$$
+d=c r^2
+$$
+for some squarefree integer $c$ and $r\in\QQ^*$. Then
+$$
+\QQ(\sqrt d)=\QQ(r\sqrt c)=\QQ(\sqrt c).
+$$
+:::
+
+<1>2. Let
+$$
+h(X)=X^2+aX+b\in K[X]
+$$
+be the monic minimal polynomial of $\theta$ over $K$. Then the minimal polynomial $f$ of $\theta$ over $\QQ$ is
+$$
+f=h\,\sigma(h),
+$$
+where $\sigma$ is the nontrivial automorphism of $K/\QQ$.
+
+::: {.proof}
+By the tower law,
+$$
+[E:K]=2,
+$$
+so $h$ has degree $2$. The product $h\sigma(h)$ is fixed coefficientwise by $\sigma$, hence belongs to $\QQ[X]$. It is monic of degree $4$ and vanishes at $\theta$ because $h(\theta)=0$. The monic minimal polynomial $f$ also has degree $4$, since $[E:\QQ]=4$. Therefore
+$$
+f=h\sigma(h).
+$$
+:::
+
+<1>3. The coefficients $a,b\in K$ are algebraic integers.
+
+::: {.proof}
+The element $\theta$ is an algebraic integer because its minimal polynomial
+$$
+f\in\ZZ[X]
+$$
+is monic. Let $\theta'$ be the second root of the quadratic $h$. Since
+$$
+f=h\sigma(h),
+$$
+the element $\theta'$ is also a root of the monic integral polynomial $f$, hence is an algebraic integer. From
+$$
+h(X)=(X-\theta)(X-\theta')
+$$
+one gets
+$$
+a=-(\theta+\theta'),
+\qquad
+b=\theta\theta'.
+$$
+Sums and products of algebraic integers are algebraic integers.
+:::
+
+<1>4. If
+$$
+\alpha=r+s\sqrt c\in K
+$$
+is an algebraic integer, then
+$$
+r\in R.
+$$
+
+::: {.proof}
+The conjugate
+$$
+\sigma(\alpha)=r-s\sqrt c
+$$
+is also an algebraic integer. Hence the trace
+$$
+\alpha+\sigma(\alpha)=2r
+$$
+is both a rational number and an algebraic integer. The only rational algebraic integers are the integers, so
+$$
+2r\in\ZZ.
+$$
+Therefore $r\in\frac12\ZZ\subset R$.
+:::
+
+<1>5. Under the hypotheses of step <1>4,
+$$
+s\in R.
+$$
+
+::: {.proof}
+The norm
+$$
+\alpha\sigma(\alpha)=r^2-cs^2
+$$
+is likewise a rational algebraic integer, hence an integer. Together with $2r\in\ZZ$, this gives
+$$
+4cs^2
+=(2r)^2-4(r^2-cs^2)
+\in\ZZ.
+$$
+Write $s=A/B$ in lowest terms with $A,B\in\ZZ$ and $B>0$. Suppose an odd prime $\ell$ divides $B$. Then
+$$
+v_\ell(s)<0.
+$$
+Because $c$ is squarefree,
+$$
+v_\ell(c)\in\{0,1\},
+$$
+and because $\ell$ is odd,
+$$
+v_\ell(4)=0.
+$$
+Thus
+$$
+v_\ell(4cs^2)
+=v_\ell(c)+2v_\ell(s)
+<0,
+$$
+contradicting $4cs^2\in\ZZ$. Hence no odd prime divides $B$, so $B$ is a power of $2$ and $s\in R$.
+:::
+
+<1>6. Consequently every algebraic integer in $K$ belongs to
+$$
+R+R\sqrt c.
+$$
+In particular there exist $a_0,a_1,b_0,b_1\in R$ such that
+$$
+a=a_0+a_1\sqrt c,
+\qquad
+b=b_0+b_1\sqrt c.
+$$
+
+::: {.proof}
+Apply steps <1>4--<1>5 first to an arbitrary algebraic integer of $K$, and then specifically to $a$ and $b$, which are algebraic integers by step <1>3.
+:::
+
+<1>7. Define
+$$
+Q(X)=X^2+a_0X+b_0,
+\qquad
+P(X)=a_1X+b_1.
+$$
+Then
+$$
+Q,P\in R[X],
+\qquad
+Q\text{ is monic of degree }2,
+\qquad
+\deg P<2,
+$$
+and
+$$
+h=Q+\sqrt c\,P.
+$$
+
+::: {.proof}
+This follows immediately from the decompositions in step <1>6.
+:::
+
+<1>8. The integral polynomial $f$ has the representation
+$$
+\boxed{f=Q^2-cP^2}
+$$
+with $c$ squarefree and $P,Q\in R[X]$ as required.
+
+::: {.proof}
+The nontrivial automorphism of $K/\QQ$ sends
+$$
+\sqrt c\longmapsto-\sqrt c.
+$$
+Thus step <1>2 and step <1>7 give
+$$
+\begin{aligned}
+f
+&=h\sigma(h)\\
+&=(Q+\sqrt c\,P)(Q-\sqrt c\,P)\\
+&=Q^2-cP^2.
+\end{aligned}
+$$
+Step <1>1 makes $c$ squarefree, and step <1>7 gives the dyadic coefficient condition.
+:::
+
+<1>9. Let $p$ be an odd prime. Reduction modulo $p$ defines a ring homomorphism
+$$
+R=\ZZ[1/2]\longrightarrow\FF_p.
+$$
+
+::: {.proof}
+Since $p\ne2$, the class of $2$ is invertible in $\FF_p$. Therefore every fraction whose denominator is a power of $2$ has a well-defined reduction modulo $p$.
+:::
+
+<1>10. Reducing step <1>8 modulo $p$ gives
+$$
+\overline f
+=\overline Q^2-\overline c\,\overline P^2
+$$
+in $\FF_p[X]$, where $\overline Q$ remains monic of degree $2$ and
+$$
+\deg\overline P<2.
+$$
+
+::: {.proof}
+Apply the homomorphism from step <1>9 coefficientwise. The leading coefficient of $Q$ is $1$, so it remains $1$ after reduction and the degree remains $2$. Reduction cannot increase the degree of $P$.
+:::
+
+<1>11. The polynomial $\overline f$ has no irreducible factor of degree $3$.
+
+::: {.proof}
+Suppose an irreducible monic cubic $g\in\FF_p[X]$ divided $\overline f$. The first assertion of Problem 3.9 applies to the representation in step <1>10 and says that every irreducible monic divisor of degree at least $3$ must equal the entire quartic. Thus
+$$
+g=\overline f.
+$$
+But $\deg g=3$ while $\overline f$ is monic of degree $4$, a contradiction.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>8 prove conditions (i)--(ii), interpreted with the intended ring $R=\ZZ[1/2]$, and steps <1>9--<1>11 prove the asserted absence of cubic irreducible factors modulo every odd prime.
+:::
+:::

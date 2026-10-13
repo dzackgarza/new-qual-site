@@ -155,18 +155,19 @@ The arguments above use only the sheaf axioms on the open sets involved, so they
 
 The exponential $z\mapsto e^{2\pi i z}$ gives the exact sequence of groups
 \[
-0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\unitsof{\CC}) \to 0 \in \Grp
+0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\units{\CC}) \to 0 \in \Grp
 ,\]
-and, on $X\definedas \unitsof{\CC}$, the exact sequence of sheaves
+and, on $X\definedas \units{\CC}$, the exact sequence of sheaves
 \[
-0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \unitsof{\Hol_X({-})} \to 0 \in \Sh(X, \Grp)
+0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \units{\Hol_X({-})} \to 0 \in \Sh(X, \Grp)
 .\]
-Here $\unitsof{\Hol_X({-})}$ denotes the multiplicatively invertible functions, i.e. the nonvanishing functions.
+Here $\units{\Hol_X({-})}$ denotes the multiplicatively invertible functions, i.e. the nonvanishing functions.
+The kernel of the exponential consists of locally constant integer-valued holomorphic functions. Every nonvanishing holomorphic function has a local holomorphic logarithm, so the sequence is exact on stalks.
 
 Applying $\Gamma(X; {-})$ gives
 \[
-0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \unitsof{\Hol_X(X)} \to 0
+0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \units{\Hol_X(X)} \to 0
 .\]
-If $\exp\colon\Hol_X(X)\to\unitsof{\Hol_X(X)}$ were surjective, every nonvanishing holomorphic function on $\unitsof{\CC}$ would have a logarithm on all of $\unitsof{\CC}$.
+If $\exp\colon\Hol_X(X)\to\units{\Hol_X(X)}$ were surjective, every nonvanishing holomorphic function on $\units{\CC}$ would have a logarithm on all of $\units{\CC}$.
 The identity function $z\mapsto z$ has none, since $\oint_{\abs{z}=1} dz/z = 2\pi i \neq 0$.
 :::

@@ -18,3 +18,115 @@ audit:
 ::: {.problem}
 Give three equivalent characterizations of analyticity of a complex-valued function $f$ on a domain $D\subset\mathbb C$.
 :::
+
+::: {.solution}
+Let
+\[
+f:D\to\mathbb C.
+\]
+The following are equivalent.
+
+<1>1. **Complex differentiability at every point.**
+
+For every
+\[
+z_0\in D,
+\]
+the limit
+\[
+f'(z_0)
+=
+\lim_{z\to z_0}
+\frac{f(z)-f(z_0)}{z-z_0}
+\]
+exists.
+
+::: {.proof}
+This is the usual definition that $f$ is holomorphic on $D$.
+In one complex variable, “holomorphic” and “analytic” are equivalent.
+:::
+
+<1>2. **Local power-series representation.**
+
+For every
+\[
+z_0\in D,
+\]
+there is
+\[
+r>0
+\]
+with
+\[
+B(z_0,r)\subseteq D
+\]
+and coefficients
+\[
+a_0,a_1,a_2,\dots\in\mathbb C
+\]
+such that
+\[
+f(z)
+=
+\sum_{n=0}^{\infty}
+a_n(z-z_0)^n
+\qquad
+(|z-z_0|<r).
+\]
+
+::: {.proof}
+If $f$ is holomorphic, Cauchy's integral formula gives
+\[
+a_n
+=
+\frac{f^{(n)}(z_0)}{n!},
+\]
+and the Taylor series converges to $f$ on every sufficiently small disk.
+
+Conversely, a convergent power series may be differentiated term-by-term
+inside its radius of convergence, so it defines a holomorphic function.
+:::
+
+<1>3. **Morera's criterion.**
+
+The function $f$ is continuous on $D$ and
+\[
+\oint_{\partial T}
+f(z)\,dz
+=
+0
+\]
+for every closed triangle
+\[
+T\subset D.
+\]
+
+::: {.proof}
+If $f$ is holomorphic, Cauchy's theorem gives vanishing of the integral
+around every triangle.
+
+Conversely, Morera's theorem says that a continuous function whose integral
+around every triangle vanishes is holomorphic.
+:::
+
+<1>4. Therefore each of the three statements
+\[
+\boxed{
+\begin{array}{c}
+f\text{ is complex differentiable at every point of }D,\\
+f\text{ is locally represented by a convergent power series},\\
+f\text{ is continuous and has zero integral around every triangle}
+\end{array}}
+\]
+is equivalent to analyticity on $D$.
+
+::: {.proof}
+Steps <1>1--<1>3 give the three standard equivalent characterizations.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 answers the prompt.
+:::
+:::

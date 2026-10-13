@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked that the induction works over arbitrary fields, including inseparable polynomials and repeated roots, using only adjoining a root and the tower law."
 ---
-
 ::: {.problem}
 Let $F$ be a field and $g(x) \in F[x]$ have degree $n > 0$.
 
@@ -38,7 +37,7 @@ b. Prove, without using the Fundamental Theorem of Galois Theory, that if $E$ is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 A splitting field of $g$ over $F$ is an extension $E/F$ such that
 $$
@@ -46,11 +45,18 @@ g(x)=a\prod_{i=1}^{n}(x-\alpha_i)
 \quad\text{with }a\in F^\times,\ \alpha_i\in E,
 \qquad E=F(\alpha_1,\ldots,\alpha_n).
 $$
-The roots may repeat.
+The roots may repeat. The generation condition is essential: merely
+containing all the roots does not make an extension a splitting field.
+
+::: pf-proof
+
+This is the definition of the splitting field of $g$ over $F$.
 
 :::
 
-::: pf-step
+:::
+
+::: {.pf-step #s2}
 
 Every degree-$n$ polynomial over any field has a splitting field
 of degree at most $n!$ over that field; in particular the given $E$
@@ -83,8 +89,17 @@ hypothesis gives $[E:F_1]\leq(n-1)!$. Applying the tower law yields
 $$
 [E:F]=[E:F_1][F_1:F]\leq(n-1)!\,n=n!.
 $$
+The argument uses neither separability nor an identification of the
+extension degree with the order of an automorphism group.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s2){.pf-ref} proves part (b) without invoking
+the Fundamental Theorem of Galois Theory.
 
 :::
 

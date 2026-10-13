@@ -15,7 +15,8 @@ Every scheme is glued from affine open subschemes along open subschemes of their
 
 [[D-SCHGLUE]]
 
-Gluing two copies of $\AA^1_k=\Spec k[t]$ along $\AA^1_k\sm\theset{0}$ by $t\mapsto t^{-1}$ gives $\PP^1_k$; gluing them by the identity gives the line with doubled origin, which is not separated.
+The geometry depends on the chosen overlap isomorphism.
+Two copies of $\AA^1$ along $\AA^1 \sm \theset{0}$ give either $\PP^1$ or a pathology, according to the chosen isomorphism on the overlap.
 
 [[FE-SCHLINE]]
 

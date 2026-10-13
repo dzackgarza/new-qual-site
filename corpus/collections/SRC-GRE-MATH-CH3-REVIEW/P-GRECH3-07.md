@@ -25,3 +25,60 @@ If $L$ is the line through the point $A=(3,2,1)$ and parallel to the vector $\ma
 (D) $x+5y-z=12$
 (E) $2x+10y-19z=7$
 :::
+
+::: {.solution}
+<1>1. The plane contains the two independent direction vectors
+$$
+\mathbf{v}=(-2,1,3)
+\qquad\text{and}\qquad
+\overrightarrow{AB}=(-5,1,0).
+$$
+
+::: {.proof}
+The line $L$ passes through $A$ with direction vector $\mathbf{v}$, so every plane containing $L$ contains $\mathbf{v}$ as a direction vector. Since the plane also contains $A$ and $B$,
+$$
+\overrightarrow{AB}=B-A=(-2,3,1)-(3,2,1)=(-5,1,0)
+$$
+is another direction vector in the plane. These vectors are independent because they are not scalar multiples of one another.
+:::
+
+<1>2. A normal vector to the plane is
+$$
+\mathbf{n}=(1,5,-1).
+$$
+
+::: {.proof}
+By step <1>1, a normal vector is obtained from the cross product
+$$
+\overrightarrow{AB}\times\mathbf{v}
+=(-5,1,0)\times(-2,1,3)
+=(3,15,-3)
+=3(1,5,-1).
+$$
+Thus $\mathbf{n}=(1,5,-1)$ is normal to the plane.
+:::
+
+<1>3. The plane has equation
+$$
+\boxed{x+5y-z=12},
+$$
+so the answer is (D).
+
+::: {.proof}
+Using the normal vector from step <1>2 and the point $A=(3,2,1)$, the plane equation is
+$$
+(1,5,-1)\cdot\bigl((x,y,z)-(3,2,1)\bigr)=0.
+$$
+Expanding gives
+$$
+x-3+5(y-2)-(z-1)=0,
+$$
+which simplifies to $x+5y-z=12$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required plane equation and corresponding choice.
+:::
+:::

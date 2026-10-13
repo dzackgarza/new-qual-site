@@ -25,3 +25,63 @@ Choose a nonzero vector $\mathbf{v} = (a, b, c)^T$ in $\RR^3$ and define a linea
 (D) $\begin{pmatrix} 1 & c & -b \\ -c & 1 & a \\ b & -a & 1 \end{pmatrix}$
 (E) $\begin{pmatrix} 0 & a & b \\ a & 1 & c \\ b & c & 0 \end{pmatrix}$
 :::
+
+::: {.solution}
+Write $\mathbf x=(x,y,z)^T$.
+
+<1>1. The cross product is
+$$
+\mathbf v\times\mathbf x
+=
+\begin{pmatrix}
+bz-cy\\
+cx-az\\
+ay-bx
+\end{pmatrix}.
+$$
+
+::: {.proof}
+Expanding the defining determinant for the cross product gives
+$$
+\mathbf v\times\mathbf x
+=
+\begin{vmatrix}
+\mathbf e_1&\mathbf e_2&\mathbf e_3\\
+a&b&c\\
+x&y&z
+\end{vmatrix}
+=(bz-cy)\mathbf e_1-(az-cx)\mathbf e_2+(ay-bx)\mathbf e_3,
+$$
+which is the displayed vector.
+:::
+
+<1>2. Therefore the matrix of $T$ in the standard basis is
+$$
+\boxed{
+A=
+\begin{pmatrix}
+0&-c&b\\
+c&0&-a\\
+-b&a&0
+\end{pmatrix}},
+$$
+so the answer is (A).
+
+::: {.proof}
+Multiplying the displayed matrix by $(x,y,z)^T$ yields
+$$
+\begin{pmatrix}
+-cy+bz\\
+cx-az\\
+-bx+ay
+\end{pmatrix},
+$$
+which equals $\mathbf v\times\mathbf x$ by step <1>1 for every $\mathbf x\in\RR^3$. Thus it is the required matrix representative.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the required matrix.
+:::
+:::

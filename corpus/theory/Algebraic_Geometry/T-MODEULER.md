@@ -26,9 +26,9 @@ prompts:
 
 ::: {.theorem title="Euler sequence"}
 For $X = \PP^n_A$ there is a short exact sequence of $\OO_X$-modules
-\[
+$$
 0 \to \Omega_{X/A} \to \OO_X(-1)\sumpower{n+1} \to \OO_X \to 0 .
-\]
+$$
 :::
 
 ::: {.remark}
@@ -37,12 +37,31 @@ Dually, $0 \to \OO_X \to \OO_X(1)\sumpower{n+1} \to T_X \to 0$, and the $\OO_X$ 
 
 Its determinant computes the canonical bundle.
 Taking top exterior powers in a short exact sequence multiplies them, so
-\[
-\omega_{\PP^n} = \Wedgepower^n \Omega = \Wedgepower^{n+1}\qty{\OO(-1)\sumpower{n+1}} \tensor \dualof{\OO} = \OO(-n-1) ,
-\]
-which is the one computation that the genus formulas, the Fano property of $\PP^n$, and every application of adjunction in projective space come out of.
+$$
+\omega_{\PP^n_A/A}
+=\Wedgepower^n\Omega_{\PP^n_A/A}
+\cong\OO_{\PP^n_A}(-n-1).
+$$
 
-The sequence does not split for $n \geq 1$, and for $n \geq 2$ the sheaf $\Omega_{\PP^n}$ is locally free but not a direct sum of line bundles: the Euler sequence is the standard witness that locally free does not mean split.
+Over a field, $\Omega_{\PP^n}$ is not a direct sum of line bundles for $n\geq2$. If
+$$
+\Omega_{\PP^n}\cong\bigoplus_{i=1}^n\OO(a_i),
+$$
+then the Euler sequence gives
+$$
+c(\Omega_{\PP^n})=(1-H)^{n+1}.
+$$
+Comparing $c_1$ and $c_2$ yields
+$$
+\sum_i a_i=-(n+1),
+\qquad
+\sum_{i<j}a_ia_j=\binom{n+1}{2}.
+$$
+Hence $\sum_i a_i^2=n+1$. But Cauchy--Schwarz gives
+$$
+\sum_i a_i^2\geq\frac{(n+1)^2}{n}>n+1,
+$$
+a contradiction.
 :::
 
 ::: {.example}

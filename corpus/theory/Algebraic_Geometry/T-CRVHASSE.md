@@ -27,20 +27,21 @@ prompts:
 ---
 
 ::: {.theorem title="The coefficient criterion"}
-Let $\operatorname{ch} k = p > 0$ and let $E = V(f) \subseteq \PP^2$ be a smooth cubic, $f$ homogeneous of degree $3$.
+Let $k$ be a field of characteristic $p>0$ and let $E = V(f) \subseteq \PP^2_k$ be a smooth cubic, with $f$ homogeneous of degree $3$.
 Then $E$ has Hasse invariant zero, that is $E$ is supersingular, if and only if
-\[
+$$
 \text{the coefficient of } (xyz)^{p-1} \text{ in } f^{p-1} \text{ is } 0 .
-\]
+$$
 :::
 
 ::: {.theorem title="The Legendre family"}
-For $p \neq 2$ and $E \colon y^2 = x(x-1)(x-\lambda)$ with $\lambda \neq 0,1$, put $m \definedas \tfrac{p-1}{2}$ and
-\[
-h_p(\lambda) \definedas \sum_{i=0}^{m} \binom{m}{i}^2 \lambda^i .
-\]
+For $p \neq 2$ and $E \colon y^2 = x(x-1)(x-\lambda)$ with $\lambda \neq 0,1$, put
+$$
+m\coloneqq\frac{p-1}{2},
+\qquad
+h_p(\lambda)\coloneqq\sum_{i=0}^{m}\binom{m}{i}^2\lambda^i.
+$$
 Then $E$ is supersingular exactly when $h_p(\lambda) = 0$.
-Consequently, for each $p$ there are at most $\left\lfloor p/12 \right\rfloor + 2$ supersingular elliptic curves over $\bar k$ up to isomorphism.
 :::
 
 ::: {.remark title="Where the criterion comes from"}
@@ -56,9 +57,9 @@ So the line whose endomorphism is being tested has a canonical monomial basis, a
 
 Frobenius on $\PP^2$ sends $\tfrac{1}{xyz} \mapsto \tfrac{1}{(xyz)^p}$.
 Transporting along the diagram that compares $E = V(f)$ with $V(f^p)$ multiplies by $f^{p-1}$, so the image is the class of
-\[
+$$
 \frac{f^{p-1}}{(xyz)^{p}} .
-\]
+$$
 In $H^2(\PP^2; \OO(-3))$ every monomial with a non-negative exponent is zero, so only the term of $f^{p-1}$ equal to $(xyz)^{p-1}$ survives, and it contributes that coefficient times $\tfrac{1}{xyz}$.
 The criterion is then the definition read off: $F^* = 0$ exactly when that coefficient vanishes.
 
@@ -75,6 +76,16 @@ Two low-characteristic checks are:
 
 - $p = 5$: $m = 2$, $h_5(\lambda) = \lambda^2 + 4\lambda + 1$, whose roots lie in $\FF_{25}$ and satisfy $\lambda^2 - \lambda + 1 = -5\lambda = 0$, again giving $j = 0$.
 
-The count follows because $h_p$ has degree $m = \tfrac{p-1}{2}$ and the map $\lambda \mapsto j$ is generically six-to-one, so the supersingular $j$-values number about $p/12$; the exact count is $\left\lfloor p/12 \right\rfloor$ adjusted by $0, 1, 1, 2$ according to $p \equiv 1, 5, 7, 11 \bmod 12$, which the stated bound covers.
-Supersingular curves therefore exist for every $p$ and are always finite in number; $h_p$ has simple roots, so no value of $\lambda$ is counted twice.
+For $p>3$, the exact number of supersingular $j$-invariants over $\overline{\FF}_p$ is
+$$
+\left\lfloor\frac p{12}\right\rfloor+\varepsilon_p,
+\qquad
+\varepsilon_p=
+\begin{cases}
+0,&p\equiv1\pmod{12},\\
+1,&p\equiv5,7\pmod{12},\\
+2,&p\equiv11\pmod{12}.
+\end{cases}
+$$
+For $p=2$ and $p=3$ there is one supersingular $j$-invariant. In particular the supersingular locus is nonempty and finite in every characteristic. The Deuring polynomial $h_p$ has simple roots for odd $p$, and its roots parametrize the supersingular members of the Legendre family before quotienting by the usual six transformations of $\lambda$ that preserve the $j$-invariant.
 :::

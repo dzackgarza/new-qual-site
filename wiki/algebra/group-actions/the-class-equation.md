@@ -13,8 +13,6 @@ For a finite group $G$, each element $g$ either lies in the [[D-NK7G7|center]] $
 
 [[C-O7CP3]]
 
-[[FD-L2TEC]]
-
 ::: {.remark title="Derivation from orbit-stabilizer"}
 For the conjugation action $\phi$ of $G$ on itself, the fixed points are the elements of $Z(G)$ and the orbit of $g$ is $[g]$, with $\size{[g]} = [G : C_G(g)]$.
 If $g_1,\ldots,g_r$ represent the conjugacy classes of size greater than $1$, then
@@ -54,8 +52,6 @@ Consequences for a group $G$ of order $p^k$:
 [[C-HE5SL]]
 
 [[FD-XRRNZ]]
-
-[[FF-OL75S]]
 
 ::: {.proof title="of Burnside's lemma"}
 Let $A \definedas \theset{ (g,x) \in G\cross X \st g\actson x = x }$, and write $\Stab(x) = \theset{g\in G \st gx=x}$ and $\Fix(g) = \theset{x\in X\st gx = x}$.

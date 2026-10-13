@@ -19,3 +19,101 @@ audit:
 ::: {.problem}
 Evaluate the integral $\oint_{\{\abs{z} = 3\}} \frac{e^{\frac{1}{1 - z}}}{z}\,dz$.
 :::
+
+::: {.solution}
+Let
+\[
+F(z)=\frac{e^{1/(1-z)}}{z}.
+\]
+
+<1>1. The finite singularities of $F$ are
+\[
+z=0
+\qquad\text{and}\qquad
+z=1,
+\]
+and both lie inside $|z|=3$.
+
+::: {.proof}
+The factor $1/z$ gives a simple pole at $0$. The exponent
+\[
+\frac1{1-z}
+\]
+has a pole at $1$, so its exponential has an essential singularity there.
+There are no other finite singularities.
+:::
+
+<1>2. As $z\to\infty$,
+\[
+F(z)=\frac1z+O\!\left(\frac1{z^2}\right).
+\]
+
+::: {.proof}
+One has
+\[
+\frac1{1-z}
+=
+-\frac1z\frac1{1-1/z}
+=
+-\frac1z+O\!\left(\frac1{z^2}\right).
+\]
+Therefore
+\[
+e^{1/(1-z)}
+=
+1+O\!\left(\frac1z\right),
+\]
+and division by $z$ gives the stated expansion.
+:::
+
+<1>3. The residue of $F$ at infinity is
+\[
+\operatorname{Res}_\infty F=-1.
+\]
+
+::: {.proof}
+The residue at infinity is the negative of the coefficient of $z^{-1}$ in
+the Laurent expansion at infinity. By step <1>2, that coefficient is $1$.
+:::
+
+<1>4. The sum of the residues at the two finite singularities is
+\[
+1.
+\]
+
+::: {.proof}
+For a function holomorphic on the Riemann sphere away from isolated
+singularities, the sum of all residues, including the residue at infinity,
+is zero. Hence by step <1>3,
+\[
+\operatorname{Res}(F,0)+\operatorname{Res}(F,1)
+=
+-\operatorname{Res}_\infty F
+=1.
+\]
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+\oint_{|z|=3}\frac{e^{1/(1-z)}}{z}\,dz
+=2\pi i }.
+\]
+
+::: {.proof}
+The positively oriented circle encloses exactly the two singularities in
+step <1>1. By the residue theorem and step <1>4,
+\[
+\oint_{|z|=3}F(z)\,dz
+=
+2\pi i\cdot1
+=2\pi i.
+\]
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the requested value.
+:::
+:::

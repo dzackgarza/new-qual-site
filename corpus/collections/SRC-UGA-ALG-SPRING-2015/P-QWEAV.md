@@ -14,7 +14,6 @@ classification:
 relations: []
 review: draft
 ---
-
 ::: {.problem}
 Let $N$ be a positive integer, and let $G$ be a finite group of order $N$.
 
@@ -33,137 +32,181 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove Cayley's embedding in (a), determine the parity of left translation permutations in (b), and construct an index-2 normal subgroup via the sign homomorphism to prove nonsimplicity in (c).
 
 ::: pf
 
-::: pf-step
-Part (a): Cayley map is an injective group homomorphism.
+::: {.pf-step #s1}
+
+The Cayley map $C:G\to\operatorname{Sym}(G)$ is an injective group homomorphism.
 
 ::: pf-proof
 
 ::: pf-step
-Homomorphism property:
 
-- For any $g, h \in G$ and all $x \in G$:
-$$C(g h)(x) = (g h) x = g (h x) = C(g)(h x) = C(g)(C(h)(x)) = (C(g) \circ C(h))(x).$$
-- Thus $C(g h) = C(g) \circ C(h)$, so $C$ is a group homomorphism.
+Homomorphism property:
+        - For any $g, h \in G$ and all $x \in G$:
+        $$C(g h)(x) = (g h) x = g (h x) = C(g)(h x) = C(g)(C(h)(x)) = (C(g) \circ C(h))(x).$$
+        - Thus $C(g h) = C(g) \circ C(h)$, so $C$ is a group homomorphism.
+
 :::
 
 ::: pf-step
+
 Injectivity:
+
+:::
 
 - Suppose $g \in \ker(C)$.
 - Then $C(g) = \operatorname{id}_G$, so $C(g)(x) = x$ for all $x \in G$.
 - Evaluating at $x = e$ gives $g e = e \implies g = e$.
 - Thus $\ker(C) = \{e\}$, so $C$ is injective.
-:::
 
 :::
 
 :::
 
-::: pf-step
-Part (b): $\varepsilon(a) = -1 \iff d$ is even and $N/d$ is odd.
+::: {.pf-step #s2}
+
+For $a$ of order $d$, one has
+\[
+\boxed{\varepsilon(a)=(-1)^{(N/d)(d-1)}}.
+\]
+In particular, $\varepsilon(a)=-1$ if and only if $d$ is even and $N/d$ is odd.
 
 ::: pf-proof
 
 ::: pf-step
+
 Let $a \in G$ have order $d = \operatorname{ord}(a)$.
+
 :::
 
 ::: pf-step
+
 The cyclic group $\langle a \rangle \le G$ has order $d$.
+
 :::
 
 ::: pf-step
+
 The action of $\langle a \rangle$ on $G$ by left translation partitions $G$ into $m = [G : \langle a \rangle] = N/d$ orbits, each of which is a right coset $\langle a \rangle x = \{a^j x \mid 0 \le j < d\}$.
+
 :::
 
 ::: pf-step
+
 Since each orbit has cardinality $d$, the permutation $C(a)$ is a product of $m = N/d$ disjoint cycles of length $d$.
+
 :::
 
 ::: pf-step
+
 The sign of a single cycle of length $d$ is $(-1)^{d - 1}$.
+
 :::
 
 ::: pf-step
+
 Since the sign homomorphism $\operatorname{sgn}: S_N \to \{\pm 1\}$ is multiplicative on disjoint cycles and $\Phi$ is an isomorphism:
-$$\varepsilon(a) = \left( (-1)^{d - 1} \right)^{N/d} = (-1)^{\frac{N}{d}(d - 1)}.$$
+    $$\varepsilon(a) = \left( (-1)^{d - 1} \right)^{N/d} = (-1)^{\frac{N}{d}(d - 1)}.$$
+
 :::
 
 ::: pf-step
+
 Thus $\varepsilon(a) = -1$ if and only if the exponent $\frac{N}{d}(d - 1)$ is an odd integer.
+
 :::
 
 ::: pf-step
+
 The product $\frac{N}{d}(d - 1)$ is odd if and only if both factors are odd:
+
+:::
+
 $$\frac{N}{d} \text{ is odd} \quad \text{and} \quad d - 1 \text{ is odd} \iff \frac{N}{d} \text{ is odd} \quad \text{and} \quad d \text{ is even}.$$
-:::
 
 :::
 
 :::
 
-::: pf-step
-Part (c): $G$ is not simple when $N > 2$ and $N \equiv 2 \pmod 4$.
+::: {.pf-step #s3}
+
+If $N>2$ and $N\equiv2\pmod4$, then $G$ is not simple.
 
 ::: pf-proof
 
 ::: pf-step
+
 Since $N \equiv 2 \pmod 4$, $2 \mid N$ and $N/2$ is an odd integer.
+
 :::
 
 ::: pf-step
+
 By Cauchy's Theorem for finite groups, since $2 \mid |G| = N$, $G$ contains an element $g \in G$ of order $d = 2$.
+
 :::
 
 ::: pf-step
+
 For this element $g$, the order $d = 2$ is even and $N/d = N/2$ is odd.
+
 :::
 
 ::: pf-step
+
 By Part (b), $\varepsilon(g) = -1$.
+
 :::
 
 ::: pf-step
+
 The map $\varepsilon = \operatorname{sgn} \circ \Phi \circ C: G \to \{\pm 1\}$ is a group homomorphism since it is a composition of homomorphisms.
+
 :::
 
 ::: pf-step
+
 Since $\varepsilon(e) = 1$ and $\varepsilon(g) = -1$, the homomorphism $\varepsilon$ is surjective onto the group $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$.
+
 :::
 
 ::: pf-step
+
 By the First Isomorphism Theorem, the kernel $H = \ker(\varepsilon)$ is a normal subgroup of $G$ of index:
-$$[G : H] = |\{\pm 1\}| = 2.$$
+    $$[G : H] = |\{\pm 1\}| = 2.$$
+
 :::
 
 ::: pf-step
+
 The order of $H$ is $|H| = |G|/2 = N/2$.
+
 :::
 
 ::: pf-step
+
 Since $N > 2$, $1 < |H| = N/2 < N$, so $H$ is a non-trivial, proper normal subgroup of $G$.
+
 :::
 
 ::: pf-step
+
 Therefore $G$ is not simple.
-:::
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-
-::: pf-proof
-$C$ is injective, $\varepsilon(a) = (-1)^{\frac{N}{d}(d-1)}$, and the kernel of $\varepsilon$ provides an index 2 normal subgroup when $N \equiv 2 \pmod 4$ and $N > 2$.
 :::
 
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} establish parts (a), (b), and (c), respectively.
+
 :::
 
 :::
+
 :::

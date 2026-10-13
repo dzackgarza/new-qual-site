@@ -28,10 +28,11 @@ A surjection of sheaves need not be surjective on global sections.
 Lifting a global section of $\mch$ is possible over each member of some open cover, by the definition of surjectivity.
 The lifts differ on overlaps by sections of $\mcf$, and those differences form a Čech $1$-cocycle.
 The section lifts globally exactly when that cocycle is a coboundary, so the obstruction lives in $H^1(X, \mcf)$ and the long exact sequence
-\[
+$$
 0 \to \mcf(X) \to \mcg(X) \to \mch(X) \to H^1(X, \mcf) \to \cdots
-\]
-records it; see [[algebraic-geometry/cohomology/index|cohomology]].
+$$
+is the bookkeeping for it.
+Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream of this paragraph.
 
 ## Locally constant and constructible sheaves
 

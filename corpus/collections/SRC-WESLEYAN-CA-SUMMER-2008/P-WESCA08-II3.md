@@ -22,3 +22,108 @@ Let $f$ be analytic on a domain $D$, and suppose there is $z_0\in D$ such that
 \]
 Show that $f$ is constant on $D$.
 :::
+
+::: {.solution}
+<1>1. The function \(f\) has no zeros in \(D\).
+
+::: {.proof}
+For every \(z\in D\),
+\[
+|f(z)|
+\ge
+|f(z_0)|
+>
+0.
+\]
+Hence
+\[
+f(z)\ne0.
+\]
+:::
+
+<1>2. Therefore
+\[
+g(z)=\frac1{f(z)}
+\]
+is analytic on \(D\).
+
+::: {.proof}
+The reciprocal of a nonvanishing analytic function is analytic.
+Explicitly,
+\[
+g'(z)
+=
+-\frac{f'(z)}{f(z)^2}.
+\]
+Step <1>1 guarantees that the denominator never vanishes.
+:::
+
+<1>3. For every \(z\in D\),
+\[
+\boxed{
+|g(z)|
+\le
+|g(z_0)|}.
+\]
+
+::: {.proof}
+The hypothesis gives
+\[
+|f(z)|
+\ge
+|f(z_0)|
+>
+0.
+\]
+Taking reciprocals reverses the inequality:
+\[
+\frac1{|f(z)|}
+\le
+\frac1{|f(z_0)|}.
+\]
+These are exactly \(|g(z)|\) and \(|g(z_0)|\).
+:::
+
+<1>4. Thus \(|g|\) attains its maximum on \(D\) at the interior point
+\(z_0\).
+
+::: {.proof}
+Step <1>3 shows that no value of \(|g|\) exceeds \(|g(z_0)|\), and
+\(z_0\in D\).
+:::
+
+<1>5. The maximum modulus principle implies that
+\[
+\boxed{g\text{ is constant on }D}.
+\]
+
+::: {.proof}
+The domain \(D\) is connected, \(g\) is analytic by step <1>2, and
+\(|g|\) attains a maximum at an interior point by step <1>4. The strong
+maximum modulus principle therefore forces \(g\) to be constant.
+:::
+
+<1>6. Hence \(f\) is constant on \(D\).
+
+::: {.proof}
+If
+\[
+g(z)=c
+\]
+for all \(z\in D\), then \(c\ne0\) because
+\[
+g=\frac1f.
+\]
+Therefore
+\[
+f(z)=\frac1c
+\]
+for all \(z\in D\).
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::

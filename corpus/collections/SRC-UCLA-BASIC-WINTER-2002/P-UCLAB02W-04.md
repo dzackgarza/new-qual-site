@@ -18,3 +18,71 @@ audit:
 ::: {.problem}
 Prove that the set of irrational numbers in $\mathbb R$ is not a countable union of closed subsets of $\mathbb R$.
 :::
+
+::: {.solution}
+Let $P=\RR\setminus\QQ$ denote the set of irrational numbers.
+
+<1>1. Every closed subset $F\subseteq P$ has empty interior in $\RR$.
+
+::: {.proof}
+Suppose instead that $F$ contained a nonempty open interval $I$. Every nonempty open interval in $\RR$ contains a rational number, so there would be some
+$$
+q\in I\cap\QQ.
+$$
+But $I\subseteq F\subseteq P$ contains no rational numbers, a contradiction. Hence $F$ has empty interior.
+:::
+
+<1>2. Every closed subset $F\subseteq P$ is nowhere dense in $\RR$.
+
+::: {.proof}
+Because $F$ is closed,
+$$
+\overline F=F.
+$$
+By step <1>1, the interior of $F$ is empty. Therefore
+$$
+\operatorname{int}(\overline F)=\varnothing,
+$$
+which is exactly the definition that $F$ is nowhere dense.
+:::
+
+<1>3. The rational numbers form a countable union of nowhere-dense subsets of $\RR$.
+
+::: {.proof}
+Enumerate
+$$
+\QQ=\{q_1,q_2,\ldots\}.
+$$
+Each singleton $\{q_n\}$ is closed and has empty interior, hence is nowhere dense. Thus
+$$
+\QQ=\bigcup_{n=1}^{\infty}\{q_n\}
+$$
+is a countable union of nowhere-dense sets.
+:::
+
+<1>4. The irrational numbers cannot be a countable union of closed subsets of $\RR$.
+
+::: {.proof}
+Assume for contradiction that
+$$
+P=\bigcup_{n=1}^{\infty}F_n,
+$$
+where every $F_n$ is closed in $\RR$. Since each $F_n\subseteq P$, step <1>2 shows that every $F_n$ is nowhere dense. By step <1>3,
+$$
+\RR
+=P\cup\QQ
+=\left(\bigcup_{n=1}^{\infty}F_n\right)
+\cup
+\left(\bigcup_{n=1}^{\infty}\{q_n\}\right)
+$$
+would be a countable union of nowhere-dense subsets of $\RR$.
+
+This contradicts the Baire category theorem, because $\RR$ is a complete metric space and therefore is not a countable union of nowhere-dense subsets of itself.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves the required assertion.
+:::
+:::

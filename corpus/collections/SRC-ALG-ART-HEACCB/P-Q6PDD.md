@@ -23,9 +23,8 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
-Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PD\inverseof{P}$ where $P$ is an invertible matrix with orthogonal columns.
+Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PDP\inv$ where $P$ is an invertible matrix with orthogonal columns.
 :::
 
 ::: {.solution}
@@ -38,15 +37,14 @@ Every eigenvalue of a Hermitian matrix is real.
 
 ::: pf-proof
 
-Let $Av=\lambda v$ with $v\ne0$.
-Since $A=A^*$,
+Let $Av=\lambda v$ with $v\ne0$. Since $A=A^*$,
 \[
 \lambda\langle v,v\rangle
 =\langle Av,v\rangle
 =\langle v,Av\rangle
 =\overline\lambda\langle v,v\rangle.
 \]
-Because $\langle v,v\rangle>0$, one has $\lambda=\overline\lambda$, so $\lambda\in\mathbb R$.
+Because $\langle v,v\rangle>0$, one has $\lambda=\overline\lambda$, so $\lambda\in\RR$.
 
 :::
 
@@ -78,15 +76,15 @@ Every Hermitian matrix admits an orthonormal basis of eigenvectors.
 
 ::: pf-proof
 
-We argue by induction on the dimension. The result is trivial in dimension $1$. Over $\mathbb C$, the characteristic polynomial has a root, so $A$ has an eigenvector $v$; normalize it to have norm $1$. By step [](#s1){.pf-ref} its eigenvalue is real. By step [](#s2){.pf-ref}, the orthogonal complement $v^\perp$ is $A$-invariant, and the restriction of $A$ to $v^\perp$ is again Hermitian. By induction, $v^\perp$ has an orthonormal basis of eigenvectors. Together with $v$, this gives an orthonormal eigenbasis of the whole space.
+We argue by induction on the dimension. The result is trivial in dimension $1$. Over $\CC$, the characteristic polynomial has a root, so $A$ has an eigenvector $v$; normalize it to have norm $1$. By step [](#s1){.pf-ref} its eigenvalue is real. By step [](#s2){.pf-ref}, the orthogonal complement $v^\perp$ is $A$-invariant, and the restriction of $A$ to $v^\perp$ is again Hermitian. By induction, $v^\perp$ has an orthonormal basis of eigenvectors. Together with $v$, this gives an orthonormal eigenbasis of the whole space.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
-Let $v_1,\dots,v_n$ be such an orthonormal eigenbasis with eigenvalues $\lambda_1,\dots,\lambda_n\in\mathbb R$. Put
+Let $v_1,\dots,v_n$ be such an orthonormal eigenbasis with eigenvalues $\lambda_1,\dots,\lambda_n\in\RR$. Put
 \[
 P=[v_1\ \cdots\ v_n],
 \qquad
@@ -94,7 +92,7 @@ D=\operatorname{diag}(\lambda_1,\dots,\lambda_n).
 \]
 Then $P$ is invertible with orthogonal columns and
 \[
-A=PDP^{-1}.
+\boxed{A=PDP^{-1}}.
 \]
 
 ::: pf-proof
@@ -106,6 +104,12 @@ AP=PD,
 which is equivalent to $A=PDP^{-1}$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves that all eigenvalues are real, and step [](#s4){.pf-ref} gives the required diagonalization with orthogonal columns.
 
 :::
 

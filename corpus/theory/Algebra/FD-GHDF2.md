@@ -11,7 +11,9 @@ classification:
   - algebra
   topics:
   - Permutations
-relations: []
+relations:
+- kind: uses
+  target: D-BZ3KD
 review: draft
 ---
 

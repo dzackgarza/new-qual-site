@@ -17,7 +17,6 @@ audit:
   by: Gemini 3.7 Flash
   date: 2026-08-30
 ---
-
 ::: {.problem}
 Let $R$ be a ring with the following commutative diagram of $R$-modules, where each row represents a short exact sequence of $R$-modules:
 
@@ -30,152 +29,51 @@ Prove that if $\alpha$ and $\gamma$ are **isomorphisms**, then $\beta$ is an **i
 :::
 
 ::: {.solution}
-**Goal:** Prove that $\beta$ is both injective and surjective by standard diagram chasing using exactness at all nodes and commutativity of squares.
 
 ::: pf
 
-::: pf-step
-Setting and Hypotheses:
+::: {.pf-step #s1}
+
+The map $\beta:B\to B'$ is injective.
 
 ::: pf-proof
 
-::: pf-step
-We are given two short exact sequences of $R$-modules:
-
-- Top row exactness: $\ker(f) = 0$ ($f$ injective), $\operatorname{im}(f) = \ker(g)$, $\operatorname{im}(g) = C$ ($g$ surjective).
-- Bottom row exactness: $\ker(f') = 0$ ($f'$ injective), $\operatorname{im}(f') = \ker(g')$, $\operatorname{im}(g') = C'$ ($g'$ surjective).
-:::
-
-::: pf-step
-Diagram commutativity:
-$$\beta \circ f = f' \circ \alpha, \qquad \gamma \circ g = g' \circ \beta.$$
-:::
-
-::: pf-step
-$\alpha: A \to A'$ and $\gamma: C \to C'$ are given to be $R$-module isomorphisms (bijective).
-:::
+Let $b\in B$ satisfy $\beta(b)=0$. Commutativity gives $\gamma(g(b))=g'(\beta(b))=0$. Since $\gamma$ is injective, $g(b)=0$, hence exactness yields $b=f(a)$ for some $a\in A$. Then $f'(\alpha(a))=\beta(f(a))=0$. Injectivity of $f'$ and $\alpha$ implies $a=0$, so $b=0$.
 
 :::
 
 :::
 
-::: pf-step
-Proof that $\beta$ is Injective ($\ker(\beta) = \{0\}$):
+::: {.pf-step #s2}
+
+The map $\beta$ is surjective.
 
 ::: pf-proof
 
-::: pf-step
-Let $b \in B$ with $\beta(b) = 0 \in B'$.
-:::
-
-::: pf-step
-By commutativity of the right square:
-$$\gamma(g(b)) = g'(\beta(b)) = g'(0) = 0.$$
-:::
-
-::: pf-step
-Since $\gamma$ is an isomorphism (in particular, injective), $\ker(\gamma) = 0$, so:
-$$g(b) = 0 \implies b \in \ker(g).$$
-:::
-
-::: pf-step
-By exactness of the top row at $B$, $\ker(g) = \operatorname{im}(f)$, so there exists $a \in A$ such that:
-$$f(a) = b.$$
-:::
-
-::: pf-step
-Applying $\beta$ and using commutativity of the left square:
-$$f'(\alpha(a)) = \beta(f(a)) = \beta(b) = 0.$$
-:::
-
-::: pf-step
-By exactness of the bottom row at $A'$, $f'$ is injective ($\ker(f') = 0$), which implies:
-$$\alpha(a) = 0.$$
-:::
-
-::: pf-step
-Since $\alpha$ is an isomorphism (in particular, injective), $\ker(\alpha) = 0$, so:
-$$a = 0.$$
-:::
-
-::: pf-step
-Therefore:
-$$b = f(a) = f(0) = 0.$$
-:::
-
-::: pf-step
-This proves $\ker(\beta) = \{0\}$, so $\beta$ is **injective**.
-:::
+Let $b'\in B'$. Since $\gamma$ is surjective, choose $c\in C$ with $\gamma(c)=g'(b')$. Since $g$ is surjective, choose $b\in B$ with $g(b)=c$. Then $g'(b'-\beta(b))=g'(b')-\gamma(g(b))=0$. Exactness gives an $a'\in A'$ with $f'(a')=b'-\beta(b)$. Because $\alpha$ is surjective, choose $a\in A$ with $\alpha(a)=a'$. Commutativity then yields $b'-\beta(b)=f'(\alpha(a))=\beta(f(a))$, hence $b'=\beta(b+f(a))$.
 
 :::
 
 :::
 
-::: pf-step
-Proof that $\beta$ is Surjective ($\operatorname{im}(\beta) = B'$):
+::: {.pf-step #s3}
+
+The map $\beta$ is an isomorphism.
 
 ::: pf-proof
 
-::: pf-step
-Let $b' \in B'$ be any element.
-:::
-
-::: pf-step
-Consider $g'(b') \in C'$. Since $\gamma: C \to C'$ is an isomorphism (in particular, surjective), there exists $c \in C$ such that:
-$$\gamma(c) = g'(b').$$
-:::
-
-::: pf-step
-Since the top row is exact at $C$, $g: B \to C$ is surjective, so there exists $b_1 \in B$ such that:
-$$g(b_1) = c.$$
-:::
-
-::: pf-step
-Consider the element $\beta(b_1) \in B'$. By commutativity of the right square:
-$$g'(\beta(b_1)) = \gamma(g(b_1)) = \gamma(c) = g'(b').$$
-:::
-
-::: pf-step
-Therefore:
-$$g'(b' - \beta(b_1)) = g'(b') - g'(\beta(b_1)) = 0 \implies b' - \beta(b_1) \in \ker(g').$$
-:::
-
-::: pf-step
-By exactness of the bottom row at $B'$, $\ker(g') = \operatorname{im}(f')$, so there exists $a' \in A'$ such that:
-$$f'(a') = b' - \beta(b_1).$$
-:::
-
-::: pf-step
-Since $\alpha: A \to A'$ is an isomorphism (in particular, surjective), there exists $a \in A$ such that:
-$$\alpha(a) = a'.$$
-:::
-
-::: pf-step
-Applying $f'$ and using commutativity of the left square:
-$$\beta(f(a)) = f'(\alpha(a)) = f'(a') = b' - \beta(b_1).$$
-:::
-
-::: pf-step
-Rearranging:
-$$b' = \beta(b_1) + \beta(f(a)) = \beta(b_1 + f(a)).$$
-:::
-
-::: pf-step
-Since $b_1 + f(a) \in B$, this shows that $b' \in \operatorname{im}(\beta)$.
-:::
-
-::: pf-step
-Thus $\beta$ is **surjective**.
-:::
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $\beta$ is bijective. Its inverse is $R$-linear because $\beta$ is linear, so it is an isomorphism of modules.
 
 :::
 
 :::
 
-::: pf-step
-Conclusion:
-Since $\beta$ is an injective and surjective $R$-module homomorphism, $\beta$ is an $R$-module isomorphism.
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the short five lemma.
+
 :::
 
 :::
+
 :::

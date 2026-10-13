@@ -22,3 +22,92 @@ a_n=\left(1+\frac1n\right)^n
 \]
 converges as $n\to\infty$.
 :::
+
+::: {.solution}
+<1>1. For every positive integer $n$,
+\[
+a_n
+=
+\sum_{k=0}^{n}
+\frac1{k!}
+\prod_{j=0}^{k-1}\left(1-\frac{j}{n}\right),
+\]
+where the empty product for $k=0$ is $1$.
+
+::: {.proof}
+By the binomial theorem,
+\[
+\left(1+\frac1n\right)^n
+=
+\sum_{k=0}^{n}\binom nk\frac1{n^k}.
+\]
+For $k\le n$,
+\[
+\binom nk\frac1{n^k}
+=
+\frac{n(n-1)\cdots(n-k+1)}{k!\,n^k}
+=
+\frac1{k!}
+\prod_{j=0}^{k-1}\left(1-\frac{j}{n}\right).
+\]
+Substituting gives the formula.
+:::
+
+<1>2. The sequence $(a_n)$ is increasing.
+
+::: {.proof}
+Fix $n$. For each $k\le n$ and each $j\in\{0,\ldots,k-1\}$,
+\[
+1-\frac{j}{n+1}
+\ge
+1-\frac{j}{n}.
+\]
+All these factors are nonnegative. Hence the $k$th summand in the expansion from step <1>1 for $a_{n+1}$ is at least the corresponding $k$th summand for $a_n$. In addition, $a_{n+1}$ contains the positive term with $k=n+1$. Therefore
+\[
+a_{n+1}\ge a_n.
+\]
+:::
+
+<1>3. For every $n$,
+\[
+a_n\le3.
+\]
+
+::: {.proof}
+Every factor in the product from step <1>1 lies in $[0,1]$. Therefore
+\[
+a_n
+\le
+\sum_{k=0}^{n}\frac1{k!}.
+\]
+For $k\ge1$,
+\[
+k!=1\cdot2\cdot3\cdots k\ge2^{k-1},
+\]
+so
+\[
+\frac1{k!}\le\frac1{2^{k-1}}.
+\]
+Thus
+\[
+a_n
+\le
+1+\sum_{k=1}^{n}\frac1{2^{k-1}}
+<
+1+\sum_{m=0}^{\infty}\frac1{2^m}
+=3.
+\]
+:::
+
+<1>4. The sequence $(a_n)$ converges.
+
+::: {.proof}
+By step <1>2, $(a_n)$ is increasing, and by step <1>3 it is bounded above. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges to its supremum.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves the required convergence.
+:::
+:::

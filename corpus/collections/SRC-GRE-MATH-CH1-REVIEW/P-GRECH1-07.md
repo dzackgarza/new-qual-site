@@ -25,3 +25,45 @@ What's the equation of all points in the $xy$-plane that are equidistant from th
 (D) $y = x^2 - 4x + 1$
 (E) $(x - 2)^2 + (y - 1)^2 = 18$
 :::
+
+::: {.solution}
+<1>1. A point $(x,y)$ is equidistant from $(-1,4)$ and $(5,-2)$ exactly when
+$$
+(x+1)^2+(y-4)^2=(x-5)^2+(y+2)^2.
+$$
+
+::: {.proof}
+The two squared Euclidean distances are respectively
+$$
+(x+1)^2+(y-4)^2
+\quad\text{and}\quad
+(x-5)^2+(y+2)^2.
+$$
+The distances are nonnegative, so they are equal exactly when their squares are equal.
+:::
+
+<1>2. The locus is
+$$
+\boxed{x-y=1},
+$$
+so the answer is (B).
+
+::: {.proof}
+Expanding the equation in step <1>1 gives
+$$
+x^2+2x+1+y^2-8y+16
+=x^2-10x+25+y^2+4y+4.
+$$
+After cancellation this becomes
+$$
+12x-12y=12,
+$$
+equivalently $x-y=1$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the complete equidistance locus and identifies the corresponding choice.
+:::
+:::

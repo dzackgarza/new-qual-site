@@ -16,7 +16,6 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 Define $f \colon [0,1] \to [-1,1]$ by $$f(x):= \begin{cases} x\sin\big({\frac{1}{x}}\big) & 0 < x \leq 1 \\ 0 & x = 0 \end{cases}$$ Determine, with justification, whether $f$ is if bounded variation on the interval $[0,1]$.
 :::
@@ -24,37 +23,51 @@ Define $f \colon [0,1] \to [-1,1]$ by $$f(x):= \begin{cases} x\sin\big({\frac{1}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$f$ is NOT of bounded variation on $[0,1]$.
-
-::: pf-proof
-
-show the total variation is infinite by evaluating at a sequence of points with large accumulated oscillation.
-
-:::
-
-:::
-
-::: pf-step
-
-Consider the points $t_k = \frac{2}{(2k+1)\pi} \in (0, 1]$, $k = 0, 1, 2, \ldots$ (the critical points where $\sin(1/t_k) = \pm 1$).
+For each $k\geq0$, define $t_k=2/((2k+1)\pi)$. Then $0<t_{k+1}<t_k\leq1$, $t_k\to0$, and $f(t_k)=(-1)^kt_k$.
 
 ::: pf-proof
 
-$1/t_k = (2k+1)\pi/2$, so $\sin(1/t_k) = \pm 1$ alternating with $k$; and $t_k \downarrow 0$.
+The numbers $t_k$ decrease to zero because their denominators increase without bound. Moreover $1/t_k=(2k+1)\pi/2$, so $\sin(1/t_k)=(-1)^k$ and the asserted values follow.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-At these points $|f(t_k)| = t_k$ (since $|\sin(1/t_k)| = 1$), and $f$ alternates sign: $f(t_k) = (-1)^k t_k$.
+For every integer $K\geq1$, the finite sequence
+\[
+P_K:\quad0<t_K<t_{K-1}<\cdots<t_0<1
+\]
+is part of a partition of $[0,1]$, and its variation sum is at least $\sum_{k=0}^{K-1}(t_k+t_{k+1})$.
 
 ::: pf-proof
 
-$f(t_k) = t_k \sin((2k+1)\pi/2) = t_k \cdot (-1)^k$.
+Adjoin both endpoints $0,1$ to the displayed sequence. By step [](#s1){.pf-ref}, consecutive values $f(t_{k+1})$ and $f(t_k)$ have opposite signs, so
+\[
+|f(t_k)-f(t_{k+1})|=t_k+t_{k+1}.
+\]
+All other increments in the partition variation sum are nonnegative; in particular the initial increment from $0$ to $t_K$ is $|f(t_K)-f(0)|=t_K$ and has not been identified with any $t_k$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The variation sums of these partitions are unbounded as $K\to\infty$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the sum is at least
+\[
+\sum_{k=0}^{K-1}(t_k+t_{k+1})
+=t_0+2\sum_{k=1}^{K-1}t_k+t_K
+\geq\frac4\pi\sum_{k=1}^{K-1}\frac1{2k+1}.
+\]
+For $k\geq1$, $2k+1\leq3k$, so the right-hand side is at least $\frac4{3\pi}\sum_{k=1}^{K-1}1/k$, which diverges.
 
 :::
 
@@ -62,23 +75,11 @@ $f(t_k) = t_k \sin((2k+1)\pi/2) = t_k \cdot (-1)^k$.
 
 ::: {.pf-step #s4}
 
-For the partition $0 = t_{K} < t_{K-1} < \cdots < t_1 < t_0 = 2/\pi$ (with $f(0) = 0$), the variation sum is $\sum_{k=0}^{K-1}|f(t_{k+1}) - f(t_k)| = \sum_{k=0}^{K-1}(t_k + t_{k+1})$.
+The function $f$ is not of bounded variation on $[0,1]$.
 
 ::: pf-proof
 
-$f(t_k) = (-1)^k t_k$ and $f(t_{k+1}) = (-1)^{k+1} t_{k+1}$ have opposite signs (and $f(0) = 0$), so $|f(t_k) - f(t_{k+1})| = t_k + t_{k+1}$ exactly; write $t_K = 0$.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-$V(f) \ge \sum_{k=0}^{K-1}(t_k + t_{k+1}) = t_0 + 2\sum_{k=1}^{K-1} t_k + t_K \ge 2\sum_{k=1}^{K-1} t_k$; and $\sum_{k=1}^{K-1} t_k = \frac{2}{\pi}\sum_{k=1}^{K-1}\frac{1}{2k+1} \to \infty$.
-
-::: pf-proof
-
-the harmonic tail $\sum \frac{1}{2k+1}$ diverges.
+Total variation is the supremum of all finite partition variation sums. By step [](#s3){.pf-ref}, those sums are unbounded, so $V_{[0,1]}(f)=\infty$.
 
 :::
 
@@ -86,9 +87,7 @@ the harmonic tail $\sum \frac{1}{2k+1}$ diverges.
 
 ::: pf-qed
 
-: $V_{[0,1]}(f) = \infty$, so $f \notin \text{BV}[0,1]$.
-
-Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give arbitrarily large finite-variation lower bounds; $f$ is continuous (including at $0$) but has unbounded variation.
+Step [](#s4){.pf-ref} proves $f\notin\mathrm{BV}[0,1]$.
 
 :::
 

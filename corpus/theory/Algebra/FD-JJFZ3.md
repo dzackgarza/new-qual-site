@@ -1,10 +1,10 @@
 ---
 schema: qual/card@1
 id: FD-JJFZ3
-kind: definition
-title: Normal field extension
+kind: corollary
+title: Irreducible-polynomial dichotomy in a normal extension
+slogan: 'Over a normal extension, an irreducible polynomial either splits completely or has no root.'
 prompts:
-- What does it mean for a field extension $L/K$ to be normal?
 - What does an irreducible $p(x) \in K[x]$ do in a normal extension $L/K$?
 classification:
   areas:
@@ -16,6 +16,12 @@ relations: []
 review: draft
 ---
 
-::: {.definition}
-An algebraic field extension $L/K$ is \dfn{normal} if every irreducible polynomial $p \in K[x]$ either has no roots in $L$ or splits into linear factors in $L[x]$.
+::: {.corollary}
+Let $L/K$ be a [[D-LZTAK|normal]] algebraic field extension and let $p\in K[x]$ be irreducible.
+Then either $p$ has no root in $L$, or $p$ splits into linear factors in $L[x]$.
+:::
+
+::: {.proof}
+If $p$ has a root in $L$, normality of $L/K$ says that $p$ splits into linear factors in $L[x]$.
+Thus failure to split forces $p$ to have no root in $L$.
 :::

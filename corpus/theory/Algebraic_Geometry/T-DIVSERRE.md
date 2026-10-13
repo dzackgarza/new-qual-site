@@ -16,13 +16,13 @@ relations:
   target: D-DIVAMPLE
 review: draft
 prompts:
-- State a criterion for a sheaf to be ample.
+- State Serre's global-generation criterion for an invertible sheaf to be ample.
 - What is the cohomological characterisation of ampleness?
 ---
 
 ::: {.theorem}
 Let $X$ be a scheme of finite type over a Noetherian ring $A$ and $\mcl$ invertible.
-The following agree:
+The following are equivalent:
 
 - $\mcl$ is ample;
 
@@ -33,8 +33,8 @@ If $X$ is proper over $A$, both are equivalent to: for every coherent $\mcf$ the
 
 ::: {.remark}
 This criterion expresses ampleness as eventual global generation and, in the proper case, eventual vanishing of higher cohomology.
-Every argument that starts "twist by $\OO(n)$ for $n \gg 0$" is an appeal to it.
 
-On a projective scheme $\OO(1)$ is ample, and the criterion is then Serre vanishing.
-The proper case is where the equivalence has content — it is how ampleness gets checked without exhibiting an embedding, and it is why ampleness is detectable from numerical data such as intersection numbers.
+If $X\hookrightarrow\PP_A^N$ is a projective embedding, then the associated twisting sheaf $\OO_X(1)$ is very ample and hence ample; the cohomological implication for its powers is Serre vanishing.
+
+Numerical criteria for ampleness, such as the Nakai--Moishezon criterion in its appropriate hypotheses, are separate results; the theorem above is the sheaf-theoretic criterion.
 :::

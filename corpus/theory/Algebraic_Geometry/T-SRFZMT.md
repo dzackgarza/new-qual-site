@@ -14,14 +14,18 @@ classification:
 relations:
 - kind: uses
   target: T-SRFCAST
+- kind: uses
+  target: T-MORSTEIN
+- kind: related-to
+  target: T-MORZMT
 review: draft
 prompts:
 - What is Zariski's main theorem?
 - How is a birational map of surfaces factored?
 ---
 
-::: {.theorem title="Zariski's main theorem"}
-Let $f \colon X \to Y$ be a birational projective morphism of Noetherian integral schemes with $Y$ normal.
+::: {.theorem title="Connected fibres of a proper birational morphism"}
+Let $f \colon X \to Y$ be a proper birational morphism of Noetherian integral schemes with $Y$ normal.
 Then every fibre $f^{-1}(y)$ is connected.
 :::
 
@@ -45,11 +49,12 @@ Consequently every birational map of smooth projective surfaces is a finite sequ
 :::
 
 ::: {.remark}
-The connectedness theorem supplies the fibre structure used in the surface factorization statement.
-A birational morphism of smooth surfaces is an isomorphism away from finitely many points, and at each such point the fibre is connected of dimension one — so it is a curve that gets contracted, and contraction of a curve to a smooth point is a blowup.
+The connectedness theorem follows from [[T-MORSTEIN]]: in the Stein factorization of a proper birational map to normal $Y$, the finite birational factor is an isomorphism, so the original morphism has connected fibres.
+
+For a birational morphism of smooth projective surfaces, the exceptional locus is a finite union of curves and its image is a finite set of points. A fibre over such a point can contain several irreducible curves. Surface factorization proceeds one $(-1)$-curve at a time: Castelnuovo's criterion [[T-SRFCAST]] contracts one such curve to a smooth point, and induction factors the whole morphism into point blowups.
 
 Fundamental points are the points where the inverse map fails to be defined: the map is a morphism on a largest open $U$, and $X \setminus U$ is that finite set.
-The total transform of such a point is what Zariski's theorem says is connected and positive-dimensional.
+The total transform of a fundamental point is connected by the preceding theorem and is positive-dimensional whenever the inverse is undefined there.
 
 The factorization statement is the reason surfaces are classified up to birational equivalence rather than isomorphism, and why the invariants that matter — $p_g$, $q$, the plurigenera, $\kappa$ — are exactly those unchanged by blowup.
 :::

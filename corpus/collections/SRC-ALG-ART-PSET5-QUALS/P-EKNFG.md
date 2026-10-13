@@ -23,7 +23,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 
 Let $E/F$ be a finite Galois extension, and let $K$ be an intermediate field.
@@ -115,20 +114,26 @@ Therefore every \(F\)-embedding of \(K\) into \(\overline F\) preserves \(K\), w
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 Hence
 \[
-K/F\text{ is normal}
+\boxed{K/F\text{ is normal}
 \quad\Longleftrightarrow\quad
-\operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F).
+\operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F)}.
 \]
 
 ::: pf-proof
 
-Steps [](#s2){.pf-ref} and [](#s4){.pf-ref} give the two implications.
+Combine step [](#s2){.pf-ref} and step [](#s4){.pf-ref}.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required equivalence.
 
 :::
 

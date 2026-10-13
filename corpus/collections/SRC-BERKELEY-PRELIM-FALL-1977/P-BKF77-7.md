@@ -22,7 +22,6 @@ audit:
   date: 2026-09-11
   note: "Evaluated the positive-half integral on a sector of angle pi/n with one enclosed pole and doubled by evenness."
 ---
-
 ::: {.problem}
 Evaluate
 \[
@@ -41,9 +40,11 @@ Since the integrand is even, the required integral is $2I_n$.
 ::: pf
 
 ::: pf-step
-In the sector $0<\arg z<\pi/n$, the function $F(z)=1/(1+z^{2n})$ has the single simple pole $\zeta=e^{i\pi/(2n)}$, with residue $-\zeta/(2n)$.
+
+Integrate over a sector of angle $\pi/n$.
 
 ::: pf-proof
+
 Let
 $$
 F(z)=\frac1{1+z^{2n}},
@@ -74,14 +75,17 @@ $$
 \operatorname{Res}(F;\zeta)
 =-\frac{\zeta}{2n}.
 $$
+
 :::
 
 :::
 
 ::: pf-step
-With $I_n(R)=\int_0^R(1+x^{2n})^{-1}\,dx$, the two radii of the sector contribute $\left(1-e^{i\pi/n}\right)I_n(R)$, and the arc contribution tends to $0$ as $R\to\infty$.
+
+Compute the two radial contributions and show the arc vanishes.
 
 ::: pf-proof
+
 The integral along the positive real radius is
 $$
 I_n(R)=\int_0^R\frac{dx}{1+x^{2n}}.
@@ -109,14 +113,17 @@ $$
 \frac{\pi R/n}{R^{2n}-1},
 $$
 which tends to $0$ as $R\to\infty$.
-:::
 
 :::
 
-::: pf-step
-$\int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}=\frac\pi n\csc\left(\frac\pi{2n}\right)$.
+:::
+
+::: {.pf-step #s3}
+
+Apply the residue theorem.
 
 ::: pf-proof
+
 Letting $R\to\infty$ in the sector integral gives
 $$
 \left(1-e^{i\pi/n}\right)I_n
@@ -147,9 +154,17 @@ $$
 \int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}
 =\frac\pi n\csc\left(\frac\pi{2n}\right).}
 $$
-:::
 
 :::
 
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the value of the required integral.
+
+:::
+
+:::
+
 :::

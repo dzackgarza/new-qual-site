@@ -31,3 +31,85 @@ then $n =$
 (D) $6$
 (E) $7$
 :::
+
+::: {.solution}
+Set
+$$
+N=
+\begin{pmatrix}
+0&1\\
+0&0
+\end{pmatrix},
+\qquad
+M=
+\begin{pmatrix}
+0&0\\
+1&0
+\end{pmatrix}.
+$$
+
+<1>1. For every integer $n$,
+$$
+(I+N)^n=I+nN,
+\qquad
+(I+M)^n=I+nM.
+$$
+
+::: {.proof}
+One has $N^2=M^2=0$. For $n\ge0$, the binomial theorem therefore gives
+$$
+(I+N)^n=I+nN
+$$
+and similarly for $M$. Also
+$$
+(I+N)^{-1}=I-N,
+\qquad
+(I+M)^{-1}=I-M,
+$$
+so the same formulas hold for negative integers by applying the nonnegative case to the inverses.
+:::
+
+<1>2. The matrix difference in the problem is
+$$
+\begin{pmatrix}
+0&n\\
+-n&0
+\end{pmatrix}.
+$$
+
+::: {.proof}
+The two matrices in the statement are $I+N$ and $I+M$. By step <1>1,
+$$
+(I+N)^n-(I+M)^n
+=n(N-M)
+=
+\begin{pmatrix}
+0&n\\
+-n&0
+\end{pmatrix}.
+$$
+:::
+
+<1>3. Hence
+$$
+\boxed{n=6},
+$$
+so the answer is (D).
+
+::: {.proof}
+Comparing the $(1,2)$ entry in step <1>2 with the given matrix
+$$
+\begin{pmatrix}
+0&6\\
+-6&0
+\end{pmatrix}
+$$
+gives $n=6$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value and corresponding choice.
+:::
+:::

@@ -16,34 +16,62 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
-
 ::: {.problem}
 ([KRD10, Exercise 6.2.B]) If $f:(a,b)\to\mathbb R$ is continuously differentiable and $f'(x_0)\ne0$ for some $x_0\in(a,b)$, then $f$ is injective on some interval $(c,d)$ containing $x_0$.
 :::
 
-:::: {.solution}
+::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-$f'$ keeps the sign of $f'(x_0)$ in a neighborhood.
-Proof: assume $f'(x_0) > 0$ (the case $< 0$ is symmetric).
-Since $f'$ is continuous at $x_0$, there is $\delta > 0$ with $f'(x) > f'(x_0)/2 > 0$ for all $x \in (c, d) := (x_0 - \delta, x_0 + \delta) \subseteq (a,b)$.
+There exist $a<c<x_0<d<b$ such that $f'$ has constant strict sign on $(c,d)$.
+
+::: pf-proof
+
+Since $f'(x_0)\ne0$ and $f'$ is continuous at $x_0$, there is $\delta>0$ with $[x_0-\delta,x_0+\delta]\subset(a,b)$ and
+\[
+|f'(x)-f'(x_0)|<\tfrac12|f'(x_0)|
+\quad\text{whenever }|x-x_0|<\delta.
+\]
+Set $c=x_0-\delta$ and $d=x_0+\delta$. If $f'(x_0)>0$, then $f'(x)>f'(x_0)/2>0$ throughout $(c,d)$. If $f'(x_0)<0$, then $f'(x)<f'(x_0)/2<0$ throughout $(c,d)$.
 
 :::
 
-::: pf-step
+:::
 
-$f$ is strictly increasing on $(c,d)$.
-Proof: for $c < u < v < d$, by MVT there is $\xi \in (u,v)$ with $f(v) - f(u) = f'(\xi)(v - u) > 0$ (as $f'(\xi) > 0$ and $v - u > 0$). Hence $f(u) < f(v)$.
+::: {.pf-step #s2}
+
+The restriction $f|_{(c,d)}$ is strictly monotone.
+
+::: pf-proof
+
+For any $c<u<v<d$, the mean value theorem gives $\xi\in(u,v)$ such that
+\[
+f(v)-f(u)=f'(\xi)(v-u).
+\]
+By step [](#s1){.pf-ref}, the right-hand side has the same nonzero sign for every such pair $u<v$. Hence $f$ is strictly increasing when $f'(x_0)>0$ and strictly decreasing when $f'(x_0)<0$.
 
 :::
 
-::: pf-step
+:::
 
-$f$ is injective on $(c,d)$.
-Proof: a strictly increasing function is injective: if $f(u) = f(v)$ with $u \ne v$, say $u < v$, then $f(u) < f(v)$, contradiction.
+::: {.pf-step #s3}
+
+The function $f$ is injective on $(c,d)$.
+
+::: pf-proof
+
+If $u,v\in(c,d)$ are distinct, order them so that $u<v$. Strict monotonicity from step [](#s2){.pf-ref} gives $f(u)\ne f(v)$.
+
+:::
+
+:::
+
+::: pf-qed
+
+The interval supplied by step [](#s1){.pf-ref} contains $x_0$, and step [](#s3){.pf-ref} establishes injectivity on it.
 
 :::
 

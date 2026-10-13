@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked normality at the conjugated-subgroup step, conjugacy by an element of K, and the order of factors in the resulting decomposition g=kn."
 ---
-
 ::: {.problem}
 (Frattini) Let $K$ be a normal subgroup of a finite group $G$, and let $P$ be a Sylow $p$-subgroup of $K$.
 Recall $N_G(P)$ denotes the normalizer of $P$ in $G$.
@@ -49,13 +48,13 @@ order $|P|$, the largest power of $p$ dividing $|K|$.
 It is therefore a Sylow $p$-subgroup of $K$.
 Sylow conjugacy, applied inside the finite group $K$,
 gives an element $k\in K$ with the asserted equality
-[@DF04].
+[@DF04]. The conjugating element is in $K$, not merely in $G$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Every $g\in G$ belongs to $KN_G(P)$.
 
@@ -73,6 +72,12 @@ because both factors are subsets of the group $G$ and
 their products lie in $G$. Hence $G=KN_G(P)$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the required equality.
 
 :::
 

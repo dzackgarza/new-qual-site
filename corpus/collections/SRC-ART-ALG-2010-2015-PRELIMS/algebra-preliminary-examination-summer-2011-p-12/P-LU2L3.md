@@ -24,7 +24,6 @@ audit:
   date: 2026-09-10
   note: "Checked irreducibility and squarefreeness of the four factors, uniqueness of the module multiplicities, the exact fourth-power obstruction, and existence and inequivalence of all listed representatives."
 ---
-
 ::: {.problem}
 For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A \in M_n(\mathbb{Q})$ such that $A^8 = I$ but $A^4 \neq I$.
 :::
@@ -101,7 +100,7 @@ at least one such summand occurs.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The dimensions $3,4,5$ yield exactly the stated counts.
 
@@ -135,6 +134,13 @@ $(x^4+1)(x+1)$. Step [](#s1){.pf-ref} proves that there are no
 additional classes.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required numbers of similarity classes for
+$n=3,4,5$.
 
 :::
 

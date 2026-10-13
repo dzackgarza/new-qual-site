@@ -18,3 +18,148 @@ audit:
 ::: {.problem}
 Find $\int _ { { \sqrt { 2 } } } ^ { \infty } { \frac { d x } { x + x ^ { \sqrt { 2 } } } } .$
 :::
+
+::: {.solution}
+<1>1. Factor the denominator:
+$$
+x+x^{\sqrt2}
+=
+x\left(1+x^{\sqrt2-1}\right).
+$$
+
+::: {.proof}
+Factor out the common factor $x$.
+:::
+
+<1>2. Set
+$$
+a=\sqrt2-1>0
+$$
+and
+$$
+u=x^a.
+$$
+Then
+$$
+\frac{dx}{x}
+=
+\frac{du}{a u}.
+$$
+
+::: {.proof}
+Differentiate $u=x^a$:
+$$
+du=a x^{a-1}\,dx
+=
+a u\frac{dx}{x}.
+$$
+:::
+
+<1>3. Therefore
+$$
+\int_{\sqrt2}^{\infty}
+\frac{dx}{x+x^{\sqrt2}}
+=
+\frac1a
+\int_{(\sqrt2)^a}^{\infty}
+\frac{du}{u(1+u)}.
+$$
+
+::: {.proof}
+Use step <1>1 and then substitute step <1>2.
+:::
+
+<1>4. One has
+$$
+\frac1{u(1+u)}
+=
+\frac1u
+-
+\frac1{1+u}.
+$$
+
+::: {.proof}
+Combine the right-hand side over the common denominator $u(1+u)$.
+:::
+
+<1>5. Hence
+$$
+\int
+\frac{du}{u(1+u)}
+=
+\log u-\log(1+u)+C.
+$$
+
+::: {.proof}
+Integrate the decomposition from step <1>4.
+:::
+
+<1>6. The upper endpoint contributes $0$:
+$$
+\lim_{u\to\infty}
+\left(
+\log u-\log(1+u)
+\right)
+=0.
+$$
+
+::: {.proof}
+Rewrite the difference as
+$$
+\log\frac{u}{1+u},
+$$
+and note that the quotient tends to $1$.
+:::
+
+<1>7. Therefore
+$$
+\int_{\sqrt2}^{\infty}
+\frac{dx}{x+x^{\sqrt2}}
+=
+\frac1a
+\log\left(
+1+(\sqrt2)^{-a}
+\right).
+$$
+
+::: {.proof}
+Evaluate the antiderivative in step <1>5 between
+$$
+u_0=(\sqrt2)^a
+$$
+and $\infty$, using step <1>6:
+$$
+\frac1a
+\left[
+0-log\frac{u_0}{1+u_0}
+\right]
+=
+\frac1a
+\log\left(1+\frac1{u_0}\right).
+$$
+:::
+
+<1>8. Since
+$$
+\frac1{\sqrt2-1}=\sqrt2+1,
+$$
+the value is
+$$
+\boxed{
+(\sqrt2+1)
+\log\left(
+1+(\sqrt2)^{1-\sqrt2}
+\right).
+}
+$$
+
+::: {.proof}
+Substitute $a=\sqrt2-1$ into step <1>7.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required value.
+:::
+:::

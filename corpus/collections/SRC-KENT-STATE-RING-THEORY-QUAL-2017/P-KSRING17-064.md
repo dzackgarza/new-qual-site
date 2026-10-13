@@ -19,3 +19,211 @@ audit:
 Let R be a commutative ring with identity.
 Show that R is an integral domain if and only if R is a subring of a field.
 :::
+
+::: {.solution}
+<1>1. Assume first that $R$ is an integral domain.
+Define
+$$
+F
+\coloneqq
+\operatorname{Frac}(R),
+$$
+the set of equivalence classes of pairs
+$$
+(a,b)
+\in
+R\times(R\setminus\{0\}),
+$$
+where
+$$
+(a,b)\sim(c,d)
+\quad\Longleftrightarrow\quad
+ad=bc.
+$$
+
+::: {.proof}
+Because $R$ is an integral domain, the usual fraction relation is an equivalence relation, and the operations
+$$
+\frac ab+\frac cd
+\coloneqq
+\frac{ad+bc}{bd},
+$$
+and
+$$
+\frac ab\frac cd
+\coloneqq
+\frac{ac}{bd}
+$$
+are well-defined.
+The denominator
+$$
+bd
+$$
+is nonzero because $R$ has no zero divisors.
+This gives the usual fraction ring of $R$.
+:::
+
+<1>2. The ring $F$ is a field.
+
+::: {.proof}
+The fraction
+$$
+\frac10
+$$
+is not permitted, so the zero element is represented by
+$$
+\frac01.
+$$
+Let
+$$
+\frac ab
+\ne
+0
+$$
+in $F$.
+Then
+$$
+a\ne0.
+$$
+Hence
+$$
+\frac ba
+$$
+is a valid fraction and
+$$
+\frac ab\frac ba
+=
+\frac{ab}{ba}
+=
+1.
+$$
+Thus every nonzero element of $F$ is invertible.
+Since $F$ is commutative with identity, it is a field.
+:::
+
+<1>3. The map
+$$
+\iota:R\to F,
+\qquad
+\iota(r)
+\coloneqq
+\frac r1
+$$
+is an injective ring homomorphism.
+
+::: {.proof}
+For
+$$
+r,s\in R,
+$$
+one has
+$$
+\iota(r+s)
+=
+\frac{r+s}{1}
+=
+\frac r1+\frac s1
+$$
+and
+$$
+\iota(rs)
+=
+\frac{rs}{1}
+=
+\frac r1\frac s1.
+$$
+Also
+$$
+\iota(1_R)=1_F.
+$$
+
+If
+$$
+\iota(r)=\iota(s),
+$$
+then
+$$
+\frac r1
+=
+\frac s1,
+$$
+so
+$$
+r\cdot1=s\cdot1,
+$$
+hence
+$$
+r=s.
+$$
+Thus $\iota$ is injective.
+:::
+
+<1>4. Therefore every integral domain is isomorphic to a subring of a field.
+
+::: {.proof}
+By step <1>2,
+$$
+F=\operatorname{Frac}(R)
+$$
+is a field, and by step <1>3,
+$$
+\iota:R\hookrightarrow F
+$$
+is an injective ring homomorphism.
+Thus $R$ identifies with the subring
+$$
+\iota(R)\subseteq F.
+$$
+:::
+
+<1>5. Conversely, suppose $R$ is a subring of a field $K$.
+Then $R$ has no nonzero zero divisors.
+
+::: {.proof}
+Let
+$$
+a,b\in R
+$$
+and suppose
+$$
+ab=0
+$$
+in $R$.
+The same equality holds in the field $K$.
+Since a field has no nonzero zero divisors,
+$$
+a=0
+\quad\text{or}\quad
+b=0.
+$$
+Thus $R$ has no nonzero zero divisors.
+:::
+
+<1>6. Hence a nonzero subring of a field is an integral domain.
+
+::: {.proof}
+A subring of a field is commutative.
+Under the standard unital-subring convention, it contains the same identity and is nonzero.
+By step <1>5 it has no nonzero zero divisors.
+Therefore it is an integral domain.
+:::
+
+<1>7. Consequently,
+$$
+\boxed{
+R\text{ is an integral domain}
+\iff
+R\text{ is isomorphic to a subring of a field}.
+}
+$$
+
+::: {.proof}
+The forward implication is step <1>4, and the converse is step <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required equivalence.
+:::
+:::

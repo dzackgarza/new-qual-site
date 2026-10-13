@@ -24,3 +24,71 @@ Let $\hat{\mathbf{i}} = (1, 0, 0)$, $\hat{\mathbf{j}} = (0, 1, 0)$, and $\hat{\m
 (D) $\mathbf{a} = 2\hat{\mathbf{i}} - \hat{\mathbf{j}} + \hat{\mathbf{k}}$
 (E) $\mathbf{a} = \hat{\mathbf{i}} + 2\hat{\mathbf{j}} - 2\hat{\mathbf{k}}$
 :::
+
+::: {.solution}
+<1>1. The equation
+$$
+\mathbf a\cdot[(\mathbf a+\mathbf c)\times\mathbf b]=12
+$$
+is equivalent to
+$$
+\mathbf a\cdot(\mathbf c\times\mathbf b)=12.
+$$
+
+::: {.proof}
+By bilinearity of the cross product and linearity of the dot product,
+$$
+\mathbf a\cdot[(\mathbf a+\mathbf c)\times\mathbf b]
+=\mathbf a\cdot(\mathbf a\times\mathbf b)
++\mathbf a\cdot(\mathbf c\times\mathbf b).
+$$
+The vector $\mathbf a\times\mathbf b$ is perpendicular to $\mathbf a$, so
+the first dot product is $0$.
+:::
+
+<1>2. Writing
+$$
+\mathbf a=a_1\hat{\mathbf i}+a_2\hat{\mathbf j}+a_3\hat{\mathbf k},
+$$
+the equation from step <1>1 becomes
+$$
+-8a_2-4a_3=12.
+$$
+
+::: {.proof}
+Since
+$$
+\mathbf b\times\mathbf c=8\hat{\mathbf j}+4\hat{\mathbf k},
+$$
+antisymmetry of the cross product gives
+$$
+\mathbf c\times\mathbf b=-8\hat{\mathbf j}-4\hat{\mathbf k}.
+$$
+Taking the dot product with $\mathbf a$ yields
+$\mathbf a\cdot(\mathbf c\times\mathbf b)=-8a_2-4a_3$.
+:::
+
+<1>3. Among the five choices, only
+$$
+\boxed{\mathbf a=\hat{\mathbf i}-2\hat{\mathbf j}+\hat{\mathbf k}}
+$$
+satisfies the equation, so the answer is (C).
+
+::: {.proof}
+For choices (A)--(E), the pairs $(a_2,a_3)$ are respectively
+$$
+(1,-2),\ (-1,2),\ (-2,1),\ (-1,1),\ (2,-2).
+$$
+The corresponding values of $-8a_2-4a_3$ are
+$$
+0,\ 0,\ 12,\ 4,\ -8.
+$$
+Thus only choice (C) satisfies step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required vector.
+:::
+:::

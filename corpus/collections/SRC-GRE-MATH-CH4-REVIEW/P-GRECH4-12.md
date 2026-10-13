@@ -29,3 +29,69 @@ Find the general solution of the differential equation:
 (D) $e^{x/y} = cy$
 (E) $e^{-x/y} = cx$
 :::
+
+::: {.solution}
+<1>1. With the substitution
+$$
+v=\frac{y}{x},
+\qquad
+y=xv,
+$$
+the differential equation becomes
+$$
+x\frac{dv}{dx}=1.
+$$
+
+::: {.proof}
+On any interval where the equation is defined, $x\ne0$. Since
+$$
+y=xv,
+$$
+differentiation gives
+$$
+\frac{dy}{dx}=v+x\frac{dv}{dx}.
+$$
+The right-hand side of the given equation is
+$$
+\frac{x+y}{x}=1+\frac{y}{x}=1+v.
+$$
+Equating these expressions and cancelling $v$ gives the displayed equation.
+:::
+
+<1>2. Therefore
+$$
+\frac{y}{x}=\log|x|+C.
+$$
+
+::: {.proof}
+Step <1>1 gives
+$$
+\frac{dv}{dx}=\frac1x.
+$$
+Integrating on an interval not containing $0$ yields
+$$
+v=\log|x|+C.
+$$
+Substitute $v=y/x$.
+:::
+
+<1>3. The general solution may be written
+$$
+\boxed{e^{y/x}=cx},
+$$
+so the answer is (A).
+
+::: {.proof}
+Exponentiating step <1>2 gives
+$$
+e^{y/x}=e^C|x|.
+$$
+On any connected solution interval, the sign of $x$ is fixed. Absorbing that fixed sign together with $e^C$ into a nonzero constant $c$ gives $e^{y/x}=cx$; necessarily $cx>0$ on that interval.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested general solution and corresponding choice.
+:::
+:::

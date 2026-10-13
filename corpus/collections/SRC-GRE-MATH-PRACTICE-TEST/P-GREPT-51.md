@@ -28,3 +28,74 @@ What is the expectation (mean) of $X$?
 (D) $4$
 (E) $6$
 :::
+
+::: {.solution}
+<1>1. The expectation is
+$$
+\mathbb E[X]
+=\int_1^\infty t\,\frac12e^{-(t-1)/2}\,dt.
+$$
+
+::: {.proof}
+For a continuous random variable with density $f$, the expectation is
+$\int_{-\infty}^{\infty}tf(t)\,dt$. The given density vanishes outside
+$(1,\infty)$, giving the displayed integral.
+:::
+
+<1>2. With
+$$
+s=\frac{t-1}{2},
+$$
+the integral in step <1>1 becomes
+$$
+\int_0^\infty(2s+1)e^{-s}\,ds.
+$$
+
+::: {.proof}
+The substitution gives $t=2s+1$ and $dt=2\,ds$, so
+$$
+t\frac12e^{-(t-1)/2}\,dt
+=(2s+1)e^{-s}\,ds.
+$$
+The lower endpoint $t=1$ becomes $s=0$, and $t\to\infty$ becomes
+$s\to\infty$.
+:::
+
+<1>3. One has
+$$
+\int_0^\infty e^{-s}\,ds=1
+\qquad\text{and}\qquad
+\int_0^\infty se^{-s}\,ds=1.
+$$
+
+::: {.proof}
+The first integral is
+$[-e^{-s}]_0^\infty=1$. For the second, integration by parts gives
+$$
+\int_0^R se^{-s}\,ds
+=\left[-se^{-s}\right]_0^R+\int_0^R e^{-s}\,ds.
+$$
+Letting $R\to\infty$ gives $1$, since $Re^{-R}\to0$.
+:::
+
+<1>4. Therefore
+$$
+\mathbb E[X]=\boxed{3},
+$$
+so the answer is (C).
+
+::: {.proof}
+By steps <1>2--<1>3,
+$$
+\mathbb E[X]
+=2\int_0^\infty se^{-s}\,ds+\int_0^\infty e^{-s}\,ds
+=2+1=3.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested mean.
+:::
+:::

@@ -27,7 +27,6 @@ audit:
   date: 2026-09-10
   note: "Checked every possible proper subgroup order in Q8, the center argument for order p squared, the induction for every divisor of an abelian group order, and the exact subgroup types in the order-eight example."
 ---
-
 ::: {.problem}
 For each of the following, either give an example or explain why no such example exists.
 One or two sentence answers will suffice; you don't need to give formal proofs.
@@ -50,7 +49,7 @@ Write $C_r=\mathbb Z/r\mathbb Z$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 In part (a), the quaternion group $Q_8$ is an example.
 
@@ -73,7 +72,7 @@ both its complement. This covers all proper subgroup orders.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 No example exists in part (b).
 
@@ -87,7 +86,7 @@ every $g$, so every subgroup is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 No example exists in part (c): every group of order
 $p^2$ is abelian.
@@ -113,7 +112,7 @@ Thus $G$ is abelian in this case as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 No example exists in part (d).
 
@@ -138,7 +137,7 @@ of size $p$. Its order is $d$, as required.
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 In part (e), take $\bigoplus_{n\geq1}C_2$.
 
@@ -156,7 +155,7 @@ or $2$, and in particular finite order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s6}
 
 In part (f), take $p=2$, $k=2$, $m=1$, and
 $G=C_4\times C_2$.
@@ -176,6 +175,12 @@ $H_1\cong C_4$ are not isomorphic, since an isomorphism
 preserves element orders.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} answer parts (a)--(f), respectively.
 
 :::
 

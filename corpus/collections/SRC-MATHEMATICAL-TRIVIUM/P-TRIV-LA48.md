@@ -33,3 +33,323 @@ The pitch by $\psi$ turns $x$ and $y$ by the angle $\psi$ to $x'$ and $y'$, keep
 Fig. 2 (positions of the stars), left panel: the three stars lie on the display at distances $r_1, r_2, r_3$ from $O$, at angles $\varphi_1 < \varphi_2 < \varphi_3$ measured from a horizontal line through $O$, all in the upper half of the display.
 Right panel: the target configuration is an equilateral triangle with side $d$ centered at $O$, with a horizontal lower side and the third vertex above $O$.
 :::
+
+::: {.remark}
+The retained source does not specify the map from a star's spatial direction to
+its display coordinates, nor the law by which a boost changes those display
+coordinates. Those data are necessary to determine the requested command
+sequence. For example, a relativistic solution would require an explicit
+aberration law together with a chosen projection of the celestial sphere onto
+the display (such as stereographic projection), and the relation between the
+command time $T$ and rapidity. Without such a rule, different physically
+reasonable display models produce different transformations of the points
+$(r_i,\varphi_i)$, so the problem is underdetermined as retained.
+:::
+
+::: {.solution}
+The requested command sequence is not determined by the data in the problem
+statement.
+
+<1>1. The displayed initial positions determine only three planar points
+$$
+p_i
+=
+r_i
+(\cos\varphi_i,\sin\varphi_i),
+\qquad
+i=1,2,3.
+$$
+
+::: {.proof}
+The source specifies for each star only its distance
+$$
+r_i
+$$
+from the center
+$$
+O
+$$
+of the display and its planar polar angle
+$$
+\varphi_i.
+$$
+Those are exactly the polar coordinates of the displayed point.
+No third spatial coordinate or direction vector is specified.
+:::
+
+<1>2. An equilateral triangle of side
+$$
+d
+$$
+centered at
+$$
+O
+$$
+has circumradius
+$$
+\boxed{R=\frac d{\sqrt3}}.
+$$
+
+::: {.proof}
+The centroid of an equilateral triangle is two thirds of the way from a
+vertex along an altitude.
+The altitude has length
+$$
+\frac{\sqrt3}{2}d,
+$$
+so the distance from the centroid to a vertex is
+$$
+\frac23\cdot
+\frac{\sqrt3}{2}d
+=
+\frac d{\sqrt3}.
+$$
+:::
+
+<1>3. With the orientation shown in the source, one possible ordered target
+triple is
+$$
+\boxed{
+q_1=
+\left(
+-\frac d2,
+-\frac d{2\sqrt3}
+\right),
+\quad
+q_2=
+\left(
+\frac d2,
+-\frac d{2\sqrt3}
+\right),
+\quad
+q_3=
+\left(
+0,
+\frac d{\sqrt3}
+\right).}
+$$
+
+::: {.proof}
+The lower side is horizontal and has length
+$$
+d.
+$$
+The displayed three points have centroid
+$$
+(0,0),
+$$
+and their pairwise Euclidean distances are all
+$$
+d.
+$$
+Thus they are precisely the target configuration described in the problem.
+:::
+
+<1>4. To determine commands, the problem must specify, for every command
+sequence
+$$
+C=(\psi_1,\theta_1,\phi_1,T_1,\ldots),
+$$
+a transformation
+$$
+\boxed{
+F_C:
+\text{display positions}
+\longrightarrow
+\text{display positions}.}
+$$
+
+::: {.proof}
+A command sequence solves the problem only if the resulting displayed star
+positions satisfy
+$$
+F_C(p_i)=q_{\sigma(i)}
+$$
+for some permutation
+$$
+\sigma\in S_3.
+$$
+Therefore the equations that determine
+$$
+C
+$$
+cannot even be written until the action
+$$
+F_C
+$$
+on displayed positions is defined.
+:::
+
+<1>5. The source does not determine the spatial direction of a star from its
+displayed radius
+$$
+r.
+$$
+
+::: {.proof}
+Let
+$$
+\alpha
+$$
+be the angle between a star's spatial direction and the longitudinal axis.
+Two standard central projections give different relations between
+$$
+r
+$$
+and
+$$
+\alpha.
+$$
+
+For a gnomonic projection onto a display plane one may have
+$$
+r=\tan\alpha.
+$$
+For a stereographic projection one may instead have
+$$
+r=2\tan\frac\alpha2.
+$$
+Thus the same displayed radius
+$$
+r
+$$
+corresponds respectively to
+$$
+\alpha
+=
+\arctan r
+$$
+and
+$$
+\alpha
+=
+2\arctan\frac r2,
+$$
+which are unequal for generic
+$$
+r.
+$$
+
+The source specifies neither projection.
+Hence the displayed data
+$$
+(r_i,\varphi_i)
+$$
+do not determine the three spatial directions on which the stated
+three-dimensional pitch, yaw, and roll rotations act.
+:::
+
+<1>6. Consequently, even the effect of a pure rotation on the displayed
+points is not uniquely determined.
+
+::: {.proof}
+Take a star with displayed radius
+$$
+r>0.
+$$
+By step <1>5, two projection conventions compatible with the source assign
+different spatial polar angles to that same point.
+
+Apply the same nontrivial pitch or yaw rotation in
+$$
+\mathbb R^3.
+$$
+The two resulting rotated spatial directions are different because they
+started from different directions.
+Projecting them back with their respective display maps therefore gives, in
+general, different new displayed positions.
+
+Thus the numerical command
+$$
+(\psi,\theta,\phi)
+$$
+does not induce a uniquely determined transformation of the given
+$$
+(r_i,\varphi_i)
+$$
+from the information in the source.
+:::
+
+<1>7. The effect of the boost command is even less determined by the source.
+
+::: {.proof}
+The statement gives only a proper-time or clock-time duration
+$$
+T
+$$
+and an acceleration magnitude
+$$
+g.
+$$
+It supplies no law relating a change of observer velocity to the apparent
+directions of incoming light.
+
+For example, a relativistic interpretation requires the aberration formula
+relating the old and new celestial directions and a convention relating the
+specified acceleration and time to the resulting rapidity.
+A nonrelativistic display model would use a different rule.
+Neither rule appears in the problem.
+
+Hence there is no defined map
+$$
+F_T
+$$
+on displayed star positions associated to the command
+$$
+\text{boost time }T.
+$$
+:::
+
+<1>8. Therefore the equations
+$$
+F_C(p_i)=q_{\sigma(i)}
+$$
+that would determine a successful command sequence have no specified
+left-hand side.
+
+::: {.proof}
+Step <1>6 shows that the rotational part of
+$$
+F_C
+$$
+depends on an unspecified projection convention.
+Step <1>7 shows that the boost part is also unspecified.
+Thus the source does not define the transformation
+$$
+F_C
+$$
+needed in step <1>4.
+:::
+
+<1>9. Hence no unique series of pitch, yaw, roll, and boost commands can be
+deduced from
+$$
+r_1,r_2,r_3,
+\varphi_1,\varphi_2,\varphi_3,
+d,
+g
+$$
+as the problem is written.
+
+::: {.proof}
+The target coordinates are completely determined by
+$$
+d
+$$
+up to a permutation and overall orientation, as steps <1>2--<1>3 show.
+But steps <1>4--<1>8 prove that the transformation from the initial displayed
+points to the displayed points after a command sequence is absent from the
+mathematical data.
+
+Adding a particular projection and boost/aberration law would define a new,
+well-posed problem, but different such additions give different command
+equations.
+Therefore the original source does not determine the requested sequence.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>9 is the complete resolution of the problem as retained.
+:::
+:::

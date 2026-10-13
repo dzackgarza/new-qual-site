@@ -17,7 +17,6 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
-
 ::: {.problem}
 Let $G$ be a finite group and let $P$ be a sylow $p\dash$subgroup for $p$ prime.
 Show that $N(N(P)) = N(P)$ where $N$ is the normalizer in $G$.
@@ -74,11 +73,11 @@ Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserve
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Therefore
 \[
-N_G(N_G(P))=N_G(P).
+\boxed{N_G(N_G(P))=N_G(P)}.
 \]
 
 ::: pf-proof
@@ -87,9 +86,15 @@ By step [](#s3){.pf-ref}, every element of \(N_G(N_G(P))\) normalizes \(P\), so
 \[
 N_G(N_G(P))\subseteq N_G(P).
 \]
-Step [](#s2){.pf-ref} gives the reverse inclusion.
+Combine this with step [](#s2){.pf-ref}.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required equality.
 
 :::
 

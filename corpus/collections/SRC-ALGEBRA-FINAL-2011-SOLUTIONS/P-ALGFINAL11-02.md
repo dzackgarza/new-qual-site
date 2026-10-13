@@ -40,6 +40,7 @@ For an integer $m > 0$ there results an isomorphism $\mathbb Z/m \times \mathbb 
 
 (c) If $N(x) = \abs{R/xR}$ (by (b)) is prime, so that $R/xR$ has no nontrivial proper subgroup, then the ideal $xR$ is maximal, hence prime, i.e., $x$ is prime in $R$.
 
-(d) By (c), if $p = a^2 + nb^2 = x\bar x$ with $x \coloneqq a + b\sqrt{-n}$ is a prime of $\mathbb Z$, then $p = x\bar x$ is a factorization of $p$ into primes of $R$.
-By (b), any unit $u + v\sqrt{-n}$ of $R$ has norm $1$, i.e., $u^2 + nv^2 = 1$, whence $u = \pm 1$ and $v = 0$. Since factorization into primes in an integral domain is unique up to multiplying by units and permuting the factors, it follows that if $p = a^2 + nb^2 = c^2 + nd^2$ with $a$, $b$, $c$ and $d$ all positive then $a = c$ and $b = d$.
+(d) Suppose $p=a^2+nb^2=c^2+nd^2$ with $a,b,c,d>0$. Put $x=a+b\sqrt{-n}$ and $y=c+d\sqrt{-n}$. By (c), $x$ is prime in $R$, and $x\mid y\bar y=p$. Thus $x\mid y$ or $x\mid\bar y$.
+
+In the first case, write $y=xu$. Taking norms gives $p=pN(u)$, so $N(u)=1$. If $u=r+s\sqrt{-n}$, then $r^2+ns^2=1$; since $n>1$, this forces $u=\pm1$. Positivity gives $y=x$, hence $a=c$ and $b=d$. In the second case the same norm argument gives $\bar y=\pm x$, which is impossible because $\bar y=c-d\sqrt{-n}$ and $a,b,c,d>0$. Therefore the representation is unique.
 :::

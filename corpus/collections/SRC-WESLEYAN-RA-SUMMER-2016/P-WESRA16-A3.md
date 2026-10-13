@@ -29,3 +29,66 @@ Let $f:\mathbb R^d\to[0,\infty)$ be measurable and define
 \]
 exists, identifying the limit.
 :::
+
+::: {.solution}
+<1>1. One has $\mu(\varnothing)=0$.
+
+::: {.proof}
+Since $\mathbf1_{\varnothing}=0$,
+$$
+\mu(\varnothing)=\int_{\mathbb R^d} f\mathbf1_{\varnothing}=0.
+$$
+:::
+
+<1>2. If $(A_j)_{j\geq1}$ is pairwise disjoint and $A=\bigcup_{j=1}^\infty A_j$, then
+$$
+\mu(A)=\sum_{j=1}^\infty\mu(A_j).
+$$
+
+::: {.proof}
+Set $s_N=\sum_{j=1}^N\mathbf1_{A_j}$. Pairwise disjointness gives
+$$
+s_N=\mathbf1_{\bigcup_{j=1}^N A_j},
+$$
+and $s_N$ increases pointwise to $\mathbf1_A$. Since $f\geq0$, the functions $fs_N$ increase pointwise to $f\mathbf1_A$. By the Monotone Convergence Theorem,
+$$
+\begin{aligned}
+\mu(A)
+&=\int f\mathbf1_A\\
+&=\lim_{N\to\infty}\int fs_N\\
+&=\lim_{N\to\infty}\sum_{j=1}^N\int f\mathbf1_{A_j}\\
+&=\sum_{j=1}^\infty\mu(A_j).
+\end{aligned}
+$$
+These equalities are in $[0,\infty]$.
+:::
+
+<1>3. The function $\mu$ is a countably additive measure on the Lebesgue measurable subsets of $\mathbb R^d$.
+
+::: {.proof}
+For every measurable $A$, the function $f\mathbf1_A$ is nonnegative and measurable, so $\mu(A)\in[0,\infty]$ is defined. Step <1>1 gives the empty-set axiom and step <1>2 gives countable additivity. This proves part (a).
+:::
+
+<1>4. If $M_0\subseteq M_1\subseteq\cdots$ and $M=\bigcup_{n=0}^\infty M_n$, then $f\mathbf1_{M_n}$ increases pointwise to $f\mathbf1_M$.
+
+::: {.proof}
+The inclusions imply $\mathbf1_{M_n}\leq\mathbf1_{M_{n+1}}$. If $x\notin M$, all these indicators vanish. If $x\in M$, then $x\in M_N$ for some $N$, and therefore $\mathbf1_{M_n}(x)=1$ for every $n\geq N$. Thus $\mathbf1_{M_n}\to\mathbf1_M$ pointwise. Multiplication by the nonnegative function $f$ preserves the monotonicity and the pointwise limit.
+:::
+
+<1>5. One has
+$$
+\boxed{\lim_{n\to\infty}\int_{\mathbb R^d} f\mathbf1_{M_n}
+=\int_{\mathbb R^d} f\mathbf1_M
+=\mu(M)}.
+$$
+
+::: {.proof}
+Apply the Monotone Convergence Theorem to the increasing sequence in step <1>4. The limit therefore exists in $[0,\infty]$ and equals the integral of the pointwise limit. This proves part (b).
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves part (a), and step <1>5 proves part (b).
+:::
+:::

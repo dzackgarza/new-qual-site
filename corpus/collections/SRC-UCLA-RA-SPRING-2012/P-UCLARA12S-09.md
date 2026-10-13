@@ -23,3 +23,84 @@ Prove Jordan's lemma: if $f:\mathbb C\to\mathbb C$ is meromorphic, $R>0$, and $k
 \]
 where $\Gamma$ is the quarter-circle $z=Re^{i\theta}$, $0\le\theta\le\pi/2$.
 :::
+
+::: {.solution}
+Set
+$$
+M\coloneqq\sup_{z\in\Gamma}\abs{f(z)}.
+$$
+If $M<\infty$, then $f$ has no pole on the compact arc $\Gamma$, so the line integral is well defined.
+
+<1>1. Parametrizing $\Gamma$ by $z(\theta)=Re^{i\theta}$ gives
+$$
+\abs{f(z(\theta))e^{ikz(\theta)}z'(\theta)}
+\le
+RM e^{-kR\sin\theta}.
+$$
+
+::: {.proof}
+Since
+$$
+z'(\theta)=iRe^{i\theta},
+$$
+we have $\abs{z'(\theta)}=R$. Also
+$$
+\abs{e^{ikRe^{i\theta}}}
+=
+\abs{e^{ikR\cos\theta-kR\sin\theta}}
+=
+e^{-kR\sin\theta}.
+$$
+Combining these estimates with $\abs{f(z(\theta))}\le M$ proves the claim.
+:::
+
+<1>2. The integral satisfies the sharper estimate
+$$
+\abs{\int_\Gamma f(z)e^{ikz}\,dz}
+\le
+\boxed{\frac{\pi}{2k}M}.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\abs{\int_\Gamma f(z)e^{ikz}\,dz}
+\le
+RM\int_0^{\pi/2}e^{-kR\sin\theta}\,d\theta.
+$$
+The concavity of $\sin\theta$ on $[0,\pi/2]$ gives the chord bound
+$$
+\sin\theta\ge\frac{2}{\pi}\theta.
+$$
+Hence
+$$
+\begin{aligned}
+\abs{\int_\Gamma f(z)e^{ikz}\,dz}
+&\le
+RM\int_0^{\pi/2}e^{-(2kR/\pi)\theta}\,d\theta\\
+&\le
+RM\int_0^\infty e^{-(2kR/\pi)\theta}\,d\theta\\
+&=
+\frac{\pi}{2k}M.
+\end{aligned}
+$$
+:::
+
+<1>3. The required Jordan-lemma bound holds:
+$$
+\boxed{
+\abs{\int_\Gamma f(z)e^{ikz}\,dz}
+\le
+\frac{100}{k}\sup_{z\in\Gamma}\abs{f(z)} }.
+$$
+
+::: {.proof}
+Step <1>2 gives the same inequality with constant $\pi/2$, and $\pi/2<100$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required estimate.
+:::
+:::

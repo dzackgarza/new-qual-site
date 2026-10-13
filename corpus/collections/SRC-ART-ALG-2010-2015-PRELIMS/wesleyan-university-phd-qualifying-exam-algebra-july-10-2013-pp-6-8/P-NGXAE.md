@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the degree tower, existence and root actions of both generators, an exhaustive subgroup classification using intersection with the rotations, and normality of each subgroup type."
 ---
-
 ::: {.problem}
 Let $K$ be the splitting field of $x^4 - 6$ over $\mathbb{Q}$.
 
@@ -66,7 +65,7 @@ is Galois [@DF04].
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The Galois group $G$ is the dihedral group of order $8$,
 with generators
@@ -153,7 +152,7 @@ proving completeness of the list.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The subfield counts, including $\mathbb Q$ and $K$,
 are as follows.
@@ -192,6 +191,13 @@ subgroups apart from $\langle r^2\rangle$, so exactly
 one quartic subfield is Galois. This proves the last column.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), and steps
+[](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (c)--(d).
 
 :::
 

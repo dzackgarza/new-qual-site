@@ -13,3 +13,128 @@ audit:
 ::: {.problem}
 Describe the universal covering space of the Klein bottle.
 :::
+
+::: {.solution}
+<1>1. Realize the Klein bottle $K$ as the quotient of the unit square by the identifications
+\[
+(0,y)\sim(1,y),
+\qquad
+(x,0)\sim(1-x,1).
+\]
+
+::: {.proof}
+This is the standard polygonal model of the Klein bottle: one pair of opposite sides is glued preserving orientation and the other pair reversing orientation.
+:::
+
+<1>2. Define homeomorphisms of $\mathbb R^2$ by
+\[
+a(x,y)=(x+1,y),
+\qquad
+b(x,y)=(-x,y+1).
+\]
+Let $G=\langle a,b\rangle$.
+
+::: {.proof}
+Both maps are Euclidean isometries and hence homeomorphisms. Their action reproduces the two edge identifications of the square: $a$ identifies the vertical sides, while $b$ identifies the horizontal sides with reversal in the $x$-coordinate.
+:::
+
+<1>3. The generators satisfy
+\[
+bab^{-1}=a^{-1}.
+\]
+
+::: {.proof}
+Since
+\[
+b^{-1}(x,y)=(-x,y-1),
+\]
+one computes
+\[
+bab^{-1}(x,y)
+=ba(-x,y-1)
+=b(-x+1,y-1)
+=(x-1,y)
+=a^{-1}(x,y).
+\]
+:::
+
+<1>4. Every element of $G$ has the form
+\[
+a^m b^n,
+\qquad m,n\in\mathbb Z,
+\]
+and acts by
+\[
+a^m b^n(x,y)
+=\bigl(m+(-1)^n x,\,y+n\bigr).
+\]
+
+::: {.proof}
+The relation in step <1>3 allows every word to be rearranged into $a^mb^n$. Since
+\[
+b^n(x,y)=((-1)^nx,y+n),
+\]
+applying $a^m$ gives the formula.
+:::
+
+<1>5. The action of $G$ on $\mathbb R^2$ is free.
+
+::: {.proof}
+Suppose $a^mb^n(x,y)=(x,y)$. Comparing second coordinates in step <1>4 gives $n=0$. Then the first coordinate gives $x+m=x$, so $m=0$. Thus only the identity fixes a point.
+:::
+
+<1>6. The action is properly discontinuous.
+
+::: {.proof}
+Let $C\subset\mathbb R^2$ be compact. Its $x$- and $y$-coordinates are bounded. If
+\[
+a^mb^n(C)\cap C\ne\varnothing,
+\]
+then the formula in step <1>4 forces $n$ to lie in a bounded set of integers by comparing $y$-coordinates; for each such $n$, comparison of $x$-coordinates forces $m$ into a bounded set of integers. Hence only finitely many group elements move $C$ to meet itself, which is proper discontinuity for this discrete action.
+:::
+
+<1>7. The quotient
+\[
+\mathbb R^2/G
+\]
+is homeomorphic to the Klein bottle $K$.
+
+::: {.proof}
+The square $[0,1]\times[0,1]$ is a fundamental polygon for the action. The transformation $a$ identifies its two vertical sides as in step <1>1, and $b$ identifies its horizontal sides with the reversal $x\mapsto1-x$ after composing with an integral horizontal translation if necessary. Thus the orbit equivalence relation on the fundamental square is exactly the Klein-bottle edge relation.
+:::
+
+<1>8. Therefore the quotient map
+\[
+p:\mathbb R^2\to K\cong\mathbb R^2/G
+\]
+is a covering map.
+
+::: {.proof}
+A free properly discontinuous action by homeomorphisms has quotient projection a covering map. Steps <1>5--<1>7 verify these hypotheses and identify the quotient.
+:::
+
+<1>9. Since $\mathbb R^2$ is simply connected, this covering is universal.
+
+::: {.proof}
+The plane is contractible via
+\[
+H((x,y),t)=((1-t)x,(1-t)y),
+\]
+so it is simply connected. A connected simply connected covering space is a universal covering space.
+:::
+
+<1>10. Hence the universal covering space of the Klein bottle is
+\[
+\boxed{\mathbb R^2.}
+\]
+
+::: {.proof}
+Steps <1>8--<1>9 exhibit $\mathbb R^2$ as a simply connected covering of the Klein bottle.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the requested description.
+:::
+:::

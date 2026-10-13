@@ -23,7 +23,6 @@ audit:
   date: 2026-09-10
   note: "Checked all partitions of the primary exponents, the orders of all four products, and their distinct group exponents."
 ---
-
 ::: {.problem}
 (a) State the structure theorem for finitely generated Abelian groups.
 
@@ -54,7 +53,7 @@ finitely generated abelian groups [@DF04]. Empty sums are allowed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The four groups of order $300$ are the following.
 
@@ -86,6 +85,12 @@ are isomorphic. The primary-decomposition argument proves that
 every abelian group of order $300$ appears on the list.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s2){.pf-ref} gives the complete classification required in part (b).
 
 :::
 

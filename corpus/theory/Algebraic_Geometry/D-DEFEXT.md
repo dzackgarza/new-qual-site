@@ -21,6 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Ext"}
+Let $A$ be a ring.
 There are two definitions of the $\Ext$ functors, which are seen to agree by a spectral sequence argument.
 Fixing an $A$-module $M$, define $\Ext^i_A(M, N)$ to be the right derived functors of the left exact functor $\Hom_A(M, \wait)$; this gives the usual long exact sequence in the second variable.
 

@@ -31,3 +31,303 @@ If $f$ has continuous derivatives up to order three, prove that
 \]
 where $C$ does not depend on $f$.
 :::
+
+::: {.solution}
+Set
+\[
+m=\frac{a+b}{2},
+\qquad
+h=\frac{b-a}{2},
+\]
+so that
+\[
+[a,b]=[m-h,m+h].
+\]
+Also set
+\[
+M=\max_{x\in[a,b]}|f^{(3)}(x)|.
+\]
+
+<1>1. For every $t\in[-h,h]$, Taylor's theorem at $m$ gives
+\[
+f(m+t)
+=
+p(t)+R(t),
+\]
+where
+\[
+p(t)
+=
+f(m)+f'(m)t+\frac12f''(m)t^2
+\]
+and
+\[
+\boxed{|R(t)|\le\frac{M}{6}|t|^3}.
+\]
+
+::: {.proof}
+Since $f$ has continuous derivatives through order $3$, Taylor's theorem with Lagrange remainder gives
+\[
+f(m+t)
+=
+f(m)+f'(m)t+\frac12f''(m)t^2
++
+\frac16f^{(3)}(\xi_t)t^3
+\]
+for some $\xi_t$ between $m$ and $m+t$.
+Therefore
+\[
+|R(t)|
+\le
+\frac16M|t|^3.
+\]
+:::
+
+<1>2. Simpson's rule is exact for the quadratic polynomial $p$:
+\[
+\int_{-h}^{h}p(t)\,dt
+=
+2h
+\left[
+\frac23p(0)
++
+\frac16\bigl(p(-h)+p(h)\bigr)
+\right].
+\]
+
+::: {.proof}
+Write
+\[
+p(t)=\alpha+\beta t+\gamma t^2.
+\]
+Then
+\[
+\int_{-h}^{h}p(t)\,dt
+=
+2h\alpha+\frac{2}{3}\gamma h^3.
+\]
+Also,
+\[
+p(0)=\alpha
+\]
+and
+\[
+p(-h)+p(h)
+=
+2\alpha+2\gamma h^2.
+\]
+Hence
+\[
+\begin{aligned}
+2h
+\left[
+\frac23p(0)
++
+\frac16\bigl(p(-h)+p(h)\bigr)
+\right]
+&=
+2h
+\left[
+\frac23\alpha
++
+\frac13\alpha
++
+\frac13\gamma h^2
+\right]\\
+&=
+2h\alpha+\frac23\gamma h^3.
+\end{aligned}
+\]
+This agrees with the integral.
+:::
+
+<1>3. The quadrature error for $f$ equals the quadrature error for the remainder $R$:
+\[
+\begin{aligned}
+\int_a^b f(x)\,dx-S_{[a,b]}f
+&=
+\int_{-h}^{h}R(t)\,dt\\
+&\quad-
+2h
+\left[
+\frac23R(0)
++
+\frac16\bigl(R(-h)+R(h)\bigr)
+\right].
+\end{aligned}
+\]
+
+::: {.proof}
+After the change of variables
+\[
+x=m+t,
+\]
+the integral over $[a,b]$ becomes an integral over $[-h,h]$.
+Both integration and Simpson's rule are linear.
+By step <1>2, they agree exactly on the polynomial part $p$.
+Subtracting therefore leaves only the remainder contribution.
+Since
+\[
+R(0)=0
+\]
+by step <1>1, this term will vanish in the estimate below.
+:::
+
+<1>4. The integral remainder satisfies
+\[
+\left|
+\int_{-h}^{h}R(t)\,dt
+\right|
+\le
+\frac{M}{12}h^4.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+\begin{aligned}
+\left|
+\int_{-h}^{h}R(t)\,dt
+\right|
+&\le
+\int_{-h}^{h}|R(t)|\,dt\\
+&\le
+\frac{M}{6}
+\int_{-h}^{h}|t|^3\,dt.
+\end{aligned}
+\]
+Now
+\[
+\int_{-h}^{h}|t|^3\,dt
+=
+2\int_0^h t^3\,dt
+=
+\frac{h^4}{2}.
+\]
+Thus
+\[
+\left|
+\int_{-h}^{h}R(t)\,dt
+\right|
+\le
+\frac{M}{12}h^4.
+\]
+:::
+
+<1>5. The Simpson remainder satisfies
+\[
+\left|
+2h
+\left[
+\frac16\bigl(R(-h)+R(h)\bigr)
+\right]
+\right|
+\le
+\frac{M}{9}h^4.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+|R(\pm h)|
+\le
+\frac{M}{6}h^3.
+\]
+Therefore
+\[
+\begin{aligned}
+\left|
+\frac{h}{3}
+\bigl(R(-h)+R(h)\bigr)
+\right|
+&\le
+\frac{h}{3}
+\left(
+\frac{M}{6}h^3
++
+\frac{M}{6}h^3
+\right)\\
+&=
+\frac{M}{9}h^4.
+\end{aligned}
+\]
+Since
+\[
+2h\cdot\frac16=\frac h3,
+\]
+this is the displayed bound.
+:::
+
+<1>6. Hence
+\[
+\left|
+\int_a^b f(x)\,dx-S_{[a,b]}f
+\right|
+\le
+\frac7{36}Mh^4.
+\]
+
+::: {.proof}
+Apply the triangle inequality to the error identity in step <1>3.
+Use the estimates from steps <1>4--<1>5:
+\[
+\frac{M}{12}h^4
++
+\frac{M}{9}h^4
+=
+\left(
+\frac3{36}
++
+\frac4{36}
+\right)
+Mh^4
+=
+\frac7{36}Mh^4.
+\]
+:::
+
+<1>7. Since
+\[
+h=\frac{b-a}{2},
+\]
+one obtains
+\[
+\boxed{
+\left|
+\int_a^b f(x)\,dx-S_{[a,b]}f
+\right|
+\le
+\frac7{576}
+(b-a)^4
+\max_{[a,b]}|f^{(3)}|.
+}
+\]
+
+::: {.proof}
+Substitute
+\[
+h^4
+=
+\frac{(b-a)^4}{16}
+\]
+into step <1>6:
+\[
+\frac7{36}Mh^4
+=
+\frac7{36}\cdot\frac1{16}
+(b-a)^4M
+=
+\frac7{576}(b-a)^4M.
+\]
+Thus the estimate holds with the universal constant
+\[
+\boxed{C=\frac7{576}}.
+\]
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required Simpson-rule error bound.
+:::
+:::

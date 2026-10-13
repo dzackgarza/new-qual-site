@@ -25,3 +25,63 @@ Two distinct solutions, $\mathbf{x}_1$ and $\mathbf{x}_2$, can be found to the l
 (D) $\mathbf{x}_1 = -\mathbf{x}_2$.
 (E) There exists a solution $\mathbf{x}$ such that $\mathbf{x} \neq \mathbf{x}_1$ and $\mathbf{x} \neq \mathbf{x}_2$.
 :::
+
+::: {.solution}
+<1>1. The nonzero vector
+$$
+\mathbf{v}=\mathbf{x}_2-\mathbf{x}_1
+$$
+lies in the nullspace of $A$.
+
+::: {.proof}
+Since both vectors solve the system,
+$$
+A\mathbf{x}_1=\mathbf{b}
+\qquad\text{and}\qquad
+A\mathbf{x}_2=\mathbf{b}.
+$$
+Subtracting gives
+$$
+A(\mathbf{x}_2-\mathbf{x}_1)=\mathbf{0}.
+$$
+The solutions are distinct, so $\mathbf v\ne\mathbf0$.
+:::
+
+<1>2. For every real number $t$,
+$$
+\mathbf{x}_1+t\mathbf{v}
+$$
+is also a solution.
+
+::: {.proof}
+By step <1>1 and linearity,
+$$
+A(\mathbf{x}_1+t\mathbf v)
+=A\mathbf{x}_1+tA\mathbf v
+=\mathbf b.
+$$
+:::
+
+<1>3. There is a solution distinct from both $\mathbf{x}_1$ and $\mathbf{x}_2$, so the answer is
+$$
+\boxed{\text{(E)}}.
+$$
+
+::: {.proof}
+Take $t=2$ in step <1>2 and set
+$$
+\mathbf{x}=\mathbf{x}_1+2\mathbf v.
+$$
+Since $\mathbf v\ne0$, this vector differs from $\mathbf{x}_1$. Also
+$$
+\mathbf{x}_2=\mathbf{x}_1+\mathbf v,
+$$
+so $\mathbf x-\mathbf x_2=\mathbf v\ne0$. Thus $\mathbf x$ is a third distinct solution.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the necessarily true statement among the choices.
+:::
+:::

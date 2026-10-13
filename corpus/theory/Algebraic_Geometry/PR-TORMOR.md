@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
 id: PR-TORMOR
-kind: proposition
-title: Toric morphisms, completeness, and invariants read off the fan
+kind: definition
+title: Toric morphisms, completeness, and topological invariants
 slogan: 'A toric variety is complete exactly when its fan fills the lattice space; toric properness is the same support condition after pullback.'
 classification:
   areas:
@@ -31,22 +31,28 @@ $X_\Sigma$ is complete iff $\abs{\Sigma} = N_\RR$.
 More generally $\phi$ is proper iff $\inverseof{\phi_\RR}(\abs{\Sigma_2}) = \abs{\Sigma_1}$.
 :::
 
-::: {.remark title="Why, in one picture"}
+::: {.remark title="One-parameter subgroups"}
 Each $u \in N$ gives a one-parameter subgroup $\lambda^u : \GG_m \to T$, and the valuative criterion asks whether $\lim_{t \to 0} \lambda^u(t)$ exists in $X_\Sigma$.
 It does exactly when $u$ lies in some cone of $\Sigma$, and the limit is the distinguished point $x_\sigma$ of the smallest cone containing $u$.
-So full support means every one-parameter subgroup converges, which is completeness.
+Thus $\abs\Sigma=N_\RR$ exactly when every one-parameter subgroup extends across $0$.
 
 For $\PP^2$ with $T = \theset{(1 : s : t)}$ and $\lambda^u(t) = (1 : t^{u_1} : t^{u_2})$, the three maximal cones of the fan are precisely the three regions of $u$ sending the limit to each of the three coordinate points.
 :::
 
-::: {.remark title="Two cheap invariants"}
-\[
-\pi_1(X_\Sigma) \cong N / N', \qquad N' = \generators{ \sigma \intersect N \st \sigma \in \Sigma } ,
-\]
-so a fan whose rays generate $N$ gives a simply connected variety.
-For $X_\Sigma$ smooth and complete, the topological Euler characteristic is the number of maximal cones,
-\[
-\chi(X_\Sigma) = \size \Sigma(n) ,
-\]
-because the torus orbits give a cell decomposition and only the fixed points contribute.
+::: {.remark title="Topology over $\CC$"}
+Assume $k=\CC$ and give $X_\Sigma(\CC)$ its classical topology. Let
+$$
+N_\Sigma\coloneqq\generators{\sigma\cap N\st\sigma\in\Sigma}\subseteq N.
+$$
+Then
+$$
+\pi_1\bigl(X_\Sigma(\CC)\bigr)\cong N/N_\Sigma
+$$
+[@Ful93, §3.2]. In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
+
+If $X_\Sigma$ is complete of dimension $n$, additivity of the topological Euler characteristic across the torus-orbit decomposition gives
+$$
+\chi\bigl(X_\Sigma(\CC)\bigr)=\size{\Sigma(n)},
+$$
+because an orbit of positive dimension is isomorphic to $(\CC^\times)^r$ for some $r>0$ and has Euler characteristic $0$, while each zero-dimensional orbit contributes $1$ [@Ful93, §3.2].
 :::

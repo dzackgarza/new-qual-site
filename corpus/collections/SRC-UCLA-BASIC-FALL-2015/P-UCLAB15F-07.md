@@ -25,3 +25,190 @@ a $5\times5$ matrix.
 Find all possible values of $\operatorname{rank}C$.
 For each possible rank, give explicit matrices realizing it, and prove that all other values are impossible.
 :::
+
+::: {.solution}
+Regard
+\[
+B:\mathbb R^5\to\mathbb R^4
+\]
+and
+\[
+A^T:\mathbb R^4\to\mathbb R^5.
+\]
+
+<1>1. One has
+\[
+\dim\ker(A^T)=1.
+\]
+
+::: {.proof}
+Since
+\[
+\operatorname{rank}A=3,
+\]
+one has
+\[
+\operatorname{rank}A^T=3.
+\]
+The domain of $A^T$ has dimension $4$, so rank-nullity gives
+\[
+\dim\ker(A^T)
+=
+4-3
+=1.
+\]
+:::
+
+<1>2. The rank of $C=A^TB$ is
+\[
+\operatorname{rank}C
+=
+\operatorname{rank}B
+-
+\dim\bigl(\operatorname{im}B\cap\ker A^T\bigr).
+\]
+
+::: {.proof}
+Restrict $A^T$ to the three-dimensional subspace
+\[
+\operatorname{im}B\subseteq\mathbb R^4.
+\]
+Then
+\[
+\operatorname{im}(A^TB)
+=
+A^T(\operatorname{im}B).
+\]
+The kernel of the restricted map
+\[
+A^T|_{\operatorname{im}B}
+\]
+is exactly
+\[
+\operatorname{im}B\cap\ker A^T.
+\]
+Rank-nullity on $\operatorname{im}B$ gives
+\[
+\dim A^T(\operatorname{im}B)
+=
+\dim\operatorname{im}B
+-
+\dim(\operatorname{im}B\cap\ker A^T).
+\]
+Since
+\[
+\dim\operatorname{im}B=\operatorname{rank}B=3,
+\]
+this is the displayed formula.
+:::
+
+<1>3. Therefore
+\[
+\operatorname{rank}C\in\{2,3\}.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+\ker A^T
+\]
+is one-dimensional.
+Hence
+\[
+\dim(\operatorname{im}B\cap\ker A^T)
+\]
+is either $0$ or $1$.
+Step <1>2 then gives
+\[
+\operatorname{rank}C
+=
+3
+\quad\text{or}\quad
+2.
+\]
+Thus no other rank is possible.
+:::
+
+<1>4. Rank $3$ occurs.
+
+::: {.proof}
+Take
+\[
+A=B=
+\begin{pmatrix}
+1&0&0&0&0\\
+0&1&0&0&0\\
+0&0&1&0&0\\
+0&0&0&0&0
+\end{pmatrix}.
+\]
+Both matrices have rank $3$.
+Then
+\[
+A^TB
+=
+\begin{pmatrix}
+1&0&0&0&0\\
+0&1&0&0&0\\
+0&0&1&0&0\\
+0&0&0&0&0\\
+0&0&0&0&0
+\end{pmatrix},
+\]
+which has rank $3$.
+:::
+
+<1>5. Rank $2$ occurs.
+
+::: {.proof}
+Take
+\[
+A=
+\begin{pmatrix}
+1&0&0&0&0\\
+0&1&0&0&0\\
+0&0&1&0&0\\
+0&0&0&0&0
+\end{pmatrix}
+\]
+and
+\[
+B=
+\begin{pmatrix}
+0&0&0&0&0\\
+1&0&0&0&0\\
+0&1&0&0&0\\
+0&0&1&0&0
+\end{pmatrix}.
+\]
+Again both have rank $3$.
+Now
+\[
+A^TB
+=
+\begin{pmatrix}
+0&0&0&0&0\\
+1&0&0&0&0\\
+0&1&0&0&0\\
+0&0&0&0&0\\
+0&0&0&0&0
+\end{pmatrix},
+\]
+which has rank $2$.
+:::
+
+<1>6. Hence the complete list of possible values is
+\[
+\boxed{\operatorname{rank}(A^TB)\in\{2,3\}}.
+\]
+
+::: {.proof}
+Step <1>3 rules out every other value, while steps <1>4--<1>5 realize both listed values.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required classification.
+:::
+:::

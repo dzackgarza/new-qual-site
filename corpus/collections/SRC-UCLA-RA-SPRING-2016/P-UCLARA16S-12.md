@@ -28,3 +28,228 @@ audit:
 \]
 for all $\theta\in(0,2\pi)$. Show that $u(z)\le0$. The function in part (a) is useful here.
 :::
+
+::: {.solution}
+<1>1. For part (a), define
+\[
+\boxed{
+v(z)
+=
+-\log\left|\frac{1-z}{2}\right|
+}.
+\]
+Then $v$ is harmonic and strictly positive on $\mathbb D$, and
+\[
+v(z)\longrightarrow\infty
+\qquad
+(z\to1).
+\]
+
+::: {.proof}
+For $z\in\mathbb D$ one has
+\[
+\operatorname{Re}(1-z)>0,
+\]
+so the principal logarithm is holomorphic at $(1-z)/2$. Thus
+\[
+F(z)
+\coloneqq
+-\Log\left(\frac{1-z}{2}\right)
+\]
+is holomorphic on $\mathbb D$, and
+\[
+v=\operatorname{Re}F
+\]
+is harmonic.
+
+Moreover, for $z\in\mathbb D$,
+\[
+|1-z|<2,
+\]
+so
+\[
+0<
+-\log\left|\frac{1-z}{2}\right|
+=v(z).
+\]
+Finally, as $z\to1$,
+\[
+\left|\frac{1-z}{2}\right|\to0,
+\]
+and therefore $v(z)\to\infty$.
+:::
+
+<1>2. Fix $\varepsilon>0$ and set
+\[
+w_\varepsilon
+\coloneqq
+u-\varepsilon v.
+\]
+Then $w_\varepsilon$ is harmonic on $\mathbb D$, bounded above, and for every $\zeta\in\partial\mathbb D$,
+\[
+\limsup_{r\to1}
+w_\varepsilon(r\zeta)
+\le0.
+\]
+
+<2>1. If $\zeta=e^{i\theta}\ne1$, then
+\[
+\limsup_{r\to1}w_\varepsilon(re^{i\theta})\le0.
+\]
+
+::: {.proof}
+The function $v$ extends continuously to every boundary point except $1$, with finite nonnegative value there. By the hypothesis on $u$,
+\[
+\limsup_{r\to1}
+u(re^{i\theta})
+\le0.
+\]
+Hence
+\[
+\limsup_{r\to1}
+w_\varepsilon(re^{i\theta})
+\le
+-\varepsilon v(e^{i\theta})
+\le0.
+\]
+:::
+
+<2>2. At the exceptional point $\zeta=1$,
+\[
+w_\varepsilon(r)\longrightarrow-\infty
+\qquad
+(r\to1).
+\]
+
+::: {.proof}
+The hypothesis gives $u(z)\le M$ throughout $\mathbb D$, while step <1>1 gives $v(r)\to\infty$ as $r\to1$. Therefore
+\[
+w_\varepsilon(r)
+=
+u(r)-\varepsilon v(r)
+\le
+M-\varepsilon v(r)
+\longrightarrow
+-\infty.
+\]
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+The function $w_\varepsilon$ is harmonic as a linear combination of harmonic functions and satisfies
+\[
+w_\varepsilon\le u\le M
+\]
+because $v>0$. Steps <2>1 and <2>2 give the boundary limsup assertion.
+:::
+
+<1>3. If a harmonic function $w$ on $\mathbb D$ is bounded above and satisfies
+\[
+\limsup_{r\to1}w(re^{i\theta})\le0
+\qquad
+(0\le\theta<2\pi),
+\]
+then
+\[
+w\le0
+\qquad
+\text{on }\mathbb D.
+\]
+
+::: {.proof}
+Fix
+\[
+z=\rho e^{i\varphi}\in\mathbb D.
+\]
+For every $R$ with $\rho<R<1$, the Poisson formula on the disk of radius $R$ gives
+\[
+w(z)
+=
+\frac1{2\pi}
+\int_0^{2\pi}
+P_{\rho/R}(\varphi-\theta)
+w(Re^{i\theta})\,d\theta,
+\]
+where
+\[
+P_s(\alpha)
+=
+\frac{1-s^2}{1-2s\cos\alpha+s^2}.
+\]
+
+Choose any sequence $R_n\uparrow1$. Since $w$ is bounded above, say $w\le A$, and since
+\[
+\frac{\rho}{R_n}
+\longrightarrow
+\rho<1,
+\]
+the kernels $P_{\rho/R_n}$ are uniformly bounded for all sufficiently large $n$. Hence the integrands
+\[
+P_{\rho/R_n}(\varphi-\theta)
+w(R_ne^{i\theta})
+\]
+have a common integrable upper bound. The reverse Fatou lemma therefore gives
+\[
+\begin{aligned}
+w(z)
+&=
+\limsup_{n\to\infty}
+\frac1{2\pi}
+\int_0^{2\pi}
+P_{\rho/R_n}(\varphi-\theta)
+w(R_ne^{i\theta})\,d\theta\\
+&\le
+\frac1{2\pi}
+\int_0^{2\pi}
+\limsup_{n\to\infty}
+\left[
+P_{\rho/R_n}(\varphi-\theta)
+w(R_ne^{i\theta})
+\right]d\theta\\
+&\le0.
+\end{aligned}
+\]
+For the last inequality, use
+\[
+P_{\rho/R_n}(\varphi-\theta)
+\longrightarrow
+P_\rho(\varphi-\theta)>0
+\]
+together with the assumed radial limsup inequality for $w$.
+:::
+
+<1>4. For every $\varepsilon>0$ and every $z\in\mathbb D$,
+\[
+u(z)\le\varepsilon v(z).
+\]
+
+::: {.proof}
+Apply step <1>3 to $w_\varepsilon$ from step <1>2. Then
+\[
+u(z)-\varepsilon v(z)
+=
+w_\varepsilon(z)
+\le0.
+\]
+:::
+
+<1>5. For every $z\in\mathbb D$,
+\[
+\boxed{u(z)\le0}.
+\]
+
+::: {.proof}
+Fix $z\in\mathbb D$. The number $v(z)$ is finite. By step <1>4,
+\[
+u(z)\le\varepsilon v(z)
+\]
+for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives $u(z)\le0$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 solves part (a), and step <1>5 proves part (b).
+:::
+:::

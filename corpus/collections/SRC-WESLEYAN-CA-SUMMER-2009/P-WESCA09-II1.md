@@ -27,3 +27,46 @@ f(z)=Ae^{\alpha z}
 \]
 for some $A\in\mathbb C$.
 :::
+
+::: {.solution}
+<1>1. The function
+\[
+g(z)=f(z)e^{-\alpha z}
+\]
+is entire and bounded by $m$ on $\mathbb C$.
+
+::: {.proof}
+Both $f$ and $z\mapsto e^{-\alpha z}$ are entire, so $g$ is entire. If
+$z=x+iy$, then
+\[
+|e^{-\alpha z}|=e^{-\alpha x}.
+\]
+Therefore the assumed estimate gives
+\[
+|g(z)|
+=|f(z)|e^{-\alpha x}
+\le m e^{\alpha x}e^{-\alpha x}
+=m.
+\]
+:::
+
+<1>2. There is a constant $A\in\mathbb C$ such that
+\[
+\boxed{f(z)=Ae^{\alpha z}\qquad(z\in\mathbb C)}.
+\]
+
+::: {.proof}
+By step <1>1, $g$ is a bounded entire function. Liouville's theorem therefore
+implies that $g$ is constant, say $g(z)=A$. Thus
+\[
+f(z)e^{-\alpha z}=A,
+\]
+and multiplication by $e^{\alpha z}$ gives the stated formula.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
+:::

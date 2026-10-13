@@ -23,26 +23,29 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $f : X \to Y$ be a finite separable morphism of curves.
+Let $k$ be an algebraically closed field and let $f\colon X\to Y$ be a finite nonconstant separable morphism of smooth projective curves over $k$. Let $R$ be its ramification divisor as in [[D-IV2RAM]].
 Then $\deg R$ is even.
 :::
 
 ::: {.proof}
-$R \sim K_X - f^* K_Y$, so
-\[
+Riemann--Hurwitz gives
+$$
 \deg R = (2 g_X - 2) - \deg(f)(2 g_Y - 2) ,
-\]
+$$
 a difference of two even integers.
 :::
 
 ::: {.remark title="Parity consequences"}
-The proof is Riemann--Hurwitz with the terms moved, and the resulting parity constraint gives a consistency check on any ramification count.
-A branching pattern with odd $\deg R$ is impossible, so parity gives an immediate consistency check on ramification counts.
+Suppose the ramification is tame and simple, with exactly one point of ramification index $2$ above each branch point. Then every ramification point contributes $1$ to $R$, so $\deg R$ equals the number of branch points and is therefore even.
 
-Used forward with tame simple ramification, where every $e_p = 2$ and $\deg R$ counts the branch points, it says such a cover has an even number of branch points.
-This is the reason a degree-$2$ cover of $\PP^1$ is branched at $2g+2$ points rather than an arbitrary number, and the reason the Legendre normal form of an elliptic curve has exactly four branch points and not three.
-It also rules out possibilities directly: no simply branched cover of $\PP^1$ has an odd branch count, whatever its degree.
+For a degree-$2$ morphism $X\to\PP^1$, Riemann--Hurwitz gives
+$$
+\deg R=2g_X+2.
+$$
+For a degree-$3$ morphism $X\to\PP^1$ with tame simple ramification, the number $b$ of branch points is
+$$
+b=\deg R=2g_X+4.
+$$
 
-The hypothesis that bites is separability, since the whole statement descends from $K_X \sim f^* K_Y + R$, which needs the cotangent sequence to be short exact.
-In characteristic $p$ there is no parity statement about an inseparable morphism because there is no $R$; see [[PR-IV2INSEP]].
+Separability is required because it makes $f^*\Omega_Y\to\Omega_X$ injective and $\Omega_{X/Y}$ a torsion sheaf, so its stalk lengths define the divisor $R$ used by [[T-LKT0U]]. For an inseparable morphism this exact-sequence argument does not apply; see [[PR-IV2INSEP]].
 :::

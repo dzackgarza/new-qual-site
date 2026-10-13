@@ -25,3 +25,78 @@ A vertical fence is constructed whose base is the curve $y=x\sqrt{x}$, from $(0,
 (D) $13\sqrt{13}-8$
 (E) $27$
 :::
+
+::: {.solution}
+<1>1. A parametrization of the base curve is
+$$
+x=t^2,\qquad y=t^3,\qquad 0\le t\le1,
+$$
+and along this curve the fence height is constantly $27$.
+
+::: {.proof}
+For $0\le t\le1$,
+$$
+y=t^3=(t^2)\sqrt{t^2}=x\sqrt{x},
+$$
+so the parametrization runs from $(0,0)$ to $(1,1)$ along the base curve. Along it,
+$$
+x^3-y^2+27
+=(t^2)^3-(t^3)^2+27
+=27.
+$$
+:::
+
+<1>2. The arc-length element of the base curve is
+$$
+ds=t\sqrt{4+9t^2}\,dt.
+$$
+
+::: {.proof}
+From step <1>1,
+$$
+\frac{dx}{dt}=2t,\qquad
+\frac{dy}{dt}=3t^2.
+$$
+Since $t\ge0$,
+$$
+ds
+=\sqrt{\left(\frac{dx}{dt}\right)^2+
+\left(\frac{dy}{dt}\right)^2}\,dt
+=\sqrt{4t^2+9t^4}\,dt
+=t\sqrt{4+9t^2}\,dt.
+$$
+:::
+
+<1>3. The fence area is
+$$
+\boxed{13\sqrt{13}-8},
+$$
+so the answer is (D).
+
+::: {.proof}
+The area of a vertical fence of height $H$ over a base curve $C$ is
+$$
+\int_C H\,ds.
+$$
+Using steps <1>1 and <1>2,
+$$
+A
+=27\int_0^1 t\sqrt{4+9t^2}\,dt.
+$$
+With $u=4+9t^2$, so $du=18t\,dt$,
+$$
+A
+=\frac{27}{18}\int_4^{13}u^{1/2}\,du
+=\frac32\cdot\frac23
+\left[u^{3/2}\right]_4^{13}
+=13^{3/2}-4^{3/2}
+=13\sqrt{13}-8.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested area and corresponding choice.
+:::
+:::

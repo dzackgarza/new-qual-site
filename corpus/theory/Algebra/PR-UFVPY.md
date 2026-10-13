@@ -18,7 +18,7 @@ review: draft
 Let $k$ be a field, $A\in M_n(k)$, $m_A$ the [[D-GK5SF|minimal polynomial]] of $A$, and $\chi_A$ its [[D-QFYAC|characteristic polynomial]].
 
 (a) $m_A\divides\chi_A$, and $m_A$ and $\chi_A$ have the same monic irreducible factors in $k[x]$.
-Hence, if $\chi_A=\pm\prod_{j} f_j^{a_j}$ with distinct monic irreducible $f_j$, then $m_A=\prod_j f_j^{b_j}$ for some $1\leq b_j\leq a_j$, and $m_A$ is the product of this form of least degree that annihilates $A$.
+Hence, if $\chi_A=\prod_{j} f_j^{a_j}$ with distinct monic irreducible $f_j$, then $m_A=\prod_j f_j^{b_j}$ for some $1\leq b_j\leq a_j$, and $m_A$ is the product of this form of least degree that annihilates $A$.
 
 (b) For $v\in k^n$, let $p_v$ be the monic polynomial of least degree with $p_v(A)v=0$; it is found from the first linear dependence among $v, Av, A^2v,\ldots$.
 Then $p_v\divides m_A$, and if $e_1,\ldots,e_n$ is a basis of $k^n$, then $m_A=\lcm(p_{e_1},\ldots,p_{e_n})$.

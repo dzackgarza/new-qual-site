@@ -20,19 +20,23 @@ prompts:
 - Which hypersurfaces in $\PP^n$ are Fano, and which are Calabi--Yau?
 ---
 
-::: {.example title="One computation, three answers"}
-$K_{\PP^n} = -(n+1)H$, so $-K_{\PP^n} = \OO(n+1)$ is very ample and $\PP^n$ is Fano.
-For $D \subseteq \PP^n$ a smooth hypersurface of degree $d$, adjunction gives
-\[
-K_D = \restrictionof{ (K_{\PP^n} + D) }{D} = \restrictionof{ \qty{ -(n+1)H + dH } }{D} = (d - n - 1) \restrictionof{H}{D} .
-\]
-So $D$ is Fano for $d < n+1$, Calabi--Yau for $d = n+1$, and of general type for $d > n+1$.
+::: {.example title="Hypersurface canonical classes"}
+Let $H$ be the hyperplane class on $\PP^n$. Since $K_{\PP^n}\sim-(n+1)H$, the anticanonical class is $(n+1)H$ and is ample; hence $\PP^n$ is Fano.
+
+Let $n\geq2$ and let $D\subseteq\PP^n$ be a smooth hypersurface of degree $d$. Adjunction gives
+$$
+K_D\sim\restrictionof{(K_{\PP^n}+D)}{D}\sim(d-n-1)\restrictionof{H}{D}.
+$$
+Consequently, $D$ is Fano for $d<n+1$, is Calabi--Yau in the weak $K$-trivial convention for $d=n+1$, and is of general type for $d>n+1$.
 :::
 
 ::: {.remark}
-This computation supplies examples in either class on request, and a single adjunction line covers both.
-The quadric surface in $\PP^3$ is $d = 2 < 4$, hence del Pezzo, and indeed $\PP^1 \times \PP^1$; the quartic surface in $\PP^3$ is $d = 4 = n+1$, the K3 surface; the quintic threefold in $\PP^4$ is the Calabi--Yau of mirror symmetry.
+The smooth quadric surface in $\PP^3$ is del Pezzo and is isomorphic to $\PP^1\times\PP^1$. A smooth quartic surface in $\PP^3$ is a K3 surface, and a smooth quintic threefold in $\PP^4$ has trivial canonical bundle.
 For $n = 2$ the same computation is the plane-curve genus formula $g = \binom{d-1}{2}$, with $d \leq 2$ rational, $d = 3$ elliptic, $d \geq 4$ general type.
 
-The vanishing $h^j(\OO_D) = 0$ demanded by the strict Calabi--Yau convention is not part of the adjunction computation; it comes from Lefschetz, which says the middle-dimension cohomology is the only new one.
+When $d=n+1$, the exact sequence
+$$
+0\to\OO_{\PP^n}(-n-1)\to\OO_{\PP^n}\to\OO_D\to0
+$$
+and the cohomology of line bundles on $\PP^n$ give $H^j(D,\OO_D)=0$ for $1\leq j\leq n-2$. Together with $\omega_D\cong\OO_D$ from adjunction, this also satisfies the stricter Calabi--Yau convention on [[D-VARFANO]].
 :::

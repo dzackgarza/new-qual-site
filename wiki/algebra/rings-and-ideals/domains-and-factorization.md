@@ -23,11 +23,7 @@ A nonzero nonunit $p$ is [[D-TO3IY|irreducible]] if $p=ab$ implies that $a$ or $
 
 [[D-TO3IY]]
 
-[[FD-6LLJF]] [[FD-R4K7Z]]
-
 [[D-AWSKI]]
-
-[[FD-S52W7]]
 
 [[D-R4H6F]]
 
@@ -46,11 +42,7 @@ It is a [[D-UI6CU|field]] if every nonzero element is a unit.
 
 [[D-4I3SL]]
 
-[[FD-S62UB]]
-
 [[D-QJ3QL]]
-
-[[FD-2A5XH]]
 
 [[D-UI6CU]]
 
@@ -75,11 +67,7 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 [[D-INULL]]
 
-[[FD-25SUQ]]
-
 [[D-NKRGN]]
-
-[[FD-GXXBV]]
 
 ### Other classes of rings
 
@@ -98,8 +86,6 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 [[D-TZXBO]]
 
 [[D-PQHHJ]]
-
-[[FF-U4FHF]]
 
 [[D-TGB4R]]
 

@@ -20,3 +20,162 @@ audit:
 
 (ii) For $n _ { i }$ as in (i), assume that in addition $\operatorname* { l i m } _ { m \to \infty } \operatorname* { l i m } _ { i \to \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\begin{array} { r } { \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m ) } \end{array}$
 :::
+
+::: {.solution}
+<1>1. There is an infinite set
+\[
+N_1\subseteq\mathbb N
+\]
+such that the sequence
+\[
+(f_n(1))_{n\in N_1}
+\]
+converges.
+
+::: {.proof}
+The values satisfy
+\[
+|f_n(1)|\le1.
+\]
+Thus the sequence is bounded in $\mathbb R$.
+By Bolzano--Weierstrass, it has a convergent subsequence.
+Let $N_1$ be its infinite index set.
+:::
+
+<1>2. Inductively, for every $m\ge1$, there is an infinite set
+\[
+N_{m+1}\subseteq N_m
+\]
+such that
+\[
+(f_n(m+1))_{n\in N_{m+1}}
+\]
+converges.
+
+::: {.proof}
+Suppose $N_m$ has been chosen.
+The sequence
+\[
+(f_n(m+1))_{n\in N_m}
+\]
+is bounded by $1$ in absolute value.
+Bolzano--Weierstrass gives an infinite convergent subsequence.
+Take $N_{m+1}$ to be its index set.
+:::
+
+<1>3. There is a strictly increasing sequence of positive integers
+\[
+n_1<n_2<\cdots
+\]
+with
+\[
+n_i\in N_i
+\]
+for every $i$.
+
+::: {.proof}
+Choose any
+\[
+n_1\in N_1.
+\]
+After choosing $n_i$, the set $N_{i+1}$ is infinite, so choose
+\[
+n_{i+1}\in N_{i+1}
+\]
+with
+\[
+n_{i+1}>n_i.
+\]
+:::
+
+<1>4. For every fixed $m\in\mathbb N$,
+\[
+f_{n_i}(m)
+\]
+converges as $i\to\infty$.
+
+::: {.proof}
+If $i\ge m$, then
+\[
+n_i\in N_i\subseteq N_m
+\]
+because the sets are nested.
+Hence the tail
+\[
+(f_{n_i}(m))_{i\ge m}
+\]
+is a subsequence of the convergent sequence
+\[
+(f_n(m))_{n\in N_m}.
+\]
+Therefore it converges.
+:::
+
+<1>5. This proves part (i).
+
+::: {.proof}
+The indices $n_i$ are distinct by step <1>3, and step <1>4 gives convergence for every fixed $m$.
+:::
+
+<1>6. The assertion in part (ii) is false.
+
+::: {.proof}
+Define
+\[
+f_n(m)
+=
+\begin{cases}
+0,&m<n,\\
+1,&m\ge n.
+\end{cases}
+\]
+Then
+\[
+|f_n(m)|\le1.
+\]
+Take
+\[
+n_i=i.
+\]
+
+For fixed $m$, once $i>m$ one has
+\[
+f_i(m)=0.
+\]
+Thus
+\[
+\lim_{i\to\infty}f_i(m)=0
+\]
+for every $m$, and consequently
+\[
+\lim_{m\to\infty}
+\lim_{i\to\infty}
+f_i(m)
+=0.
+\]
+
+On the other hand, for fixed $i$, one has
+\[
+f_i(m)=1
+\]
+for all $m\ge i$.
+Hence
+\[
+\lim_{m\to\infty}f_i(m)=1,
+\]
+so
+\[
+\lim_{i\to\infty}
+\lim_{m\to\infty}
+f_i(m)
+=1.
+\]
+Thus the reverse iterated limit exists but is not equal to $0$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves part (i), and step <1>6 disproves the assertion in part (ii).
+:::
+:::

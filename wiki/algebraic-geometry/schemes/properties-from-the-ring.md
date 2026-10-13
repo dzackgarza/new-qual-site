@@ -13,8 +13,8 @@ A scheme is reduced, or locally noetherian, exactly when the rings of one affine
 
 [[PR-6TCSJ]]
 
-A scheme is integral exactly when it is reduced and irreducible: on an affine open $\Spec A$, a reduced ring whose nilradical is prime has $(0)$ prime.
-"Noetherian" for a scheme means a finite cover by spectra of Noetherian rings, which is strictly stronger than the topological Noetherian condition of [[algebraic-geometry/varieties/the-dictionary|the dictionary]]: $\Spec k[x_1,x_2,\ldots]/(x_1,x_2,\ldots)^2$ is a one-point space, and its ring is not noetherian.
+"Integral" is reduced plus irreducible, and the proof is one line in the table: no nilpotents and a prime nilradical say that $(0)$ is prime.
+"Noetherian" for a scheme means a finite cover by spectra of Noetherian rings, which is strictly stronger than the topological Noetherian condition of [[algebraic-geometry/varieties/the-dictionary|the dictionary]] — a topologically Noetherian scheme need not have Noetherian rings of functions, and this is the gap the weakening question in Serre's criterion probes.
 
 ## Generic points
 

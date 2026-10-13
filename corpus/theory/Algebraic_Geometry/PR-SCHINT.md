@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: PR-SCHINT
 kind: proposition
-title: Scheme-theoretic intersection as a fibre product
-slogan: 'Scheme-theoretic intersection is fibre product; on affines, intersecting subschemes means adding their ideals.'
+title: Affine computation of scheme-theoretic intersections
+slogan: 'For closed subschemes of an affine scheme, scheme-theoretic intersection is computed by adding defining ideals.'
 classification:
   areas:
   - algebraic-geometry
@@ -13,28 +13,60 @@ classification:
   - Intersection Theory
 relations:
 - kind: uses
-  target: D-SCHFPR
+  target: D-SCHFIBRES
 - kind: uses
   target: D-SCHSUB
 review: draft
 prompts:
-- What is the scheme-theoretic intersection of two closed subschemes?
+- How do you compute a scheme-theoretic intersection inside an affine scheme?
 ---
 
 ::: {.proposition}
-For closed subschemes $X_1, X_2 \subseteq Y$, their **intersection** is $\fiberprod{X_1}{Y}{X_2}$, again a closed subscheme of $Y$.
-For $Y = \Spec R$ with $X_i = \Spec(R/J_i)$ this is
-\[
-\Spec\qty{ R/J_1 \tensor_R R/J_2 } \cong \Spec R/(J_1 + J_2) ,
-\]
-so intersecting subschemes adds ideals.
+Let $Y=\Spec R$ and let
+$$
+X_i=\Spec(R/J_i)\hookrightarrow Y
+$$
+be closed subschemes. Their scheme-theoretic intersection from [[D-SCHFIBRES]] has coordinate ring
+$$
+(R/J_1)\tensor_R(R/J_2)
+\cong
+R/(J_1+J_2).
+$$
+Hence
+$$
+X_1\times_YX_2\cong\Spec R/(J_1+J_2).
+$$
 :::
 
-::: {.remark}
-On affine schemes, scheme-theoretic intersection is computed by adding the defining ideals.
+::: {.proof}
+Tensor the exact sequence
+$$
+J_1\longrightarrow R\longrightarrow R/J_1\longrightarrow0
+$$
+with $R/J_2$. Right exactness gives
+$$
+J_1\tensor_RR/J_2
+\longrightarrow
+R/J_2
+\longrightarrow
+(R/J_1)\tensor_R(R/J_2)
+\longrightarrow0.
+$$
+The image of the first map is $(J_1+J_2)/J_2$, so the cokernel is $R/(J_1+J_2)$.
+:::
 
-Intersecting $y = x^2$ with $y = 0$ in $\AA^2$ gives $k[x,y]/(y - x^2, y) \cong k[x]/(x^2)$, the double point: tangency shows up as a length, and Bézout's theorem counts lengths rather than points.
-Intersecting $y = x^2$ with $y = 1$ gives $k[x]/(x^2-1)$, two reduced points, and the total length is $2$ either way.
-
-Note that the ideal sum need not be radical even when both $J_i$ are, which is exactly why the reduced induced structure of the intersection is the wrong object for counting.
+::: {.example title="Contact of order $m$"}
+In $\AA_k^2=\Spec k[x,y]$, let
+$$
+C=V(y-x^m),\qquad L=V(y),\qquad m\geq2.
+$$
+Both defining ideals are prime, but
+$$
+C\cap L
+\cong
+\Spec k[x,y]/(y-x^m,y)
+\cong
+\Spec k[x]/(x^m),
+$$
+a single point of length $m$. Thus the sum of two radical ideals need not be radical, and the nonreduced intersection records the order of tangency.
 :::

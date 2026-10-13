@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-08
 kind: problem
-title: A group with $(ab)^2=a^2b^2$ for all $a,b$ is abelian
+title: Consequence of the identity (ab)^2 = a^2 b^2
 classification:
   areas:
   - algebra
@@ -18,7 +18,6 @@ audit:
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
-
 ::: {.problem}
 ![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-08.png)
 :::
@@ -28,9 +27,9 @@ The group must be abelian, so the answer is $\boxed{\text{(D)}}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
-For all $a,b\in G$, $ab=ba$.
+Cancel in the given identity.
 
 ::: pf-proof
 
@@ -53,6 +52,12 @@ ba=ab.
 Thus every pair of elements commutes and $G$ is abelian.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves that $G$ is abelian, so choice (D) is correct.
 
 :::
 

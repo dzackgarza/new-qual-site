@@ -23,7 +23,7 @@ Throughout, $G$ is a group, $H\le G$ is a subgroup, $g,h,x\in G$, and $X$ is a s
 
 ## Group actions
 
-For a [[D-3T6O2|group action]] of $G$ on $X$, given by a homomorphism $\phi\colon G\to\Aut_\Sets(X)$, and for $x\in X$:
+For a [[D-WYC7C|group action]] of $G$ on $X$, equivalently [[D-3T6O2|a homomorphism]] $\phi\colon G\to\Aut_\Sets(X)$, and for $x\in X$:
 
 | Notation | Name | Definition |
 | --- | --- | --- |

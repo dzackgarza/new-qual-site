@@ -157,7 +157,7 @@ Generating sets for $S_n$ and $A_n$: [Keith Conrad, Generating sets](https://kco
 
 - For positive integers $a\neq b$, $\QQ(\zeta_a) = \QQ(\zeta_b)$ if and only if one of $a,b$ is odd and the other is twice it.
 
-- If $f = a_nx^n + \cdots + a_0\in\ZZ[x]$ and $p/q$ is a rational root in lowest terms, then $p \divides a_0$ and $q\divides a_n$.
+- [[PR-RRTST|Rational root theorem]].
 
 Subgroup lattices of small groups: [Groups of small order](https://hobbes.la.asu.edu/groups/groups.html).
 :::

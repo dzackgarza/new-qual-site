@@ -18,3 +18,26 @@ audit:
 ::: {.problem}
 State Liouville's Theorem.
 :::
+
+::: {.solution}
+<1>1. Liouville's theorem states:
+\[
+\boxed{\text{Every bounded entire function }f:\mathbb C\to\mathbb C\text{ is constant}.}
+\]
+
+::: {.proof}
+Equivalently, if \(f\) is analytic on all of \(\mathbb C\) and there is \(M<\infty\) such that
+\[
+|f(z)|\le M
+\qquad
+\text{for every }z\in\mathbb C,
+\]
+then there is \(c\in\mathbb C\) with \(f(z)=c\) for every \(z\in\mathbb C\). This is the statement of Liouville's theorem.
+:::
+
+<1>2. Q.E.D.
+
+::: {.proof}
+Step <1>1 is the requested theorem statement.
+:::
+:::

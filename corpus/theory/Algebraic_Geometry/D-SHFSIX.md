@@ -29,7 +29,13 @@ Its stalks are $(j_! \mathcal{F})_x = \mathcal{F}_x$ for $x \in U$ and $0$ for $
 ::: {.definition title="Six operations"}
 For a continuous map $f \colon X \to Y$ of locally compact Hausdorff spaces, the \dfn{six operations} on bounded-below derived categories of sheaves of abelian groups are
 $$
-f^{-1} \dashv Rf_*, \qquad Rf_! \dashv f^!, \qquad \otimes^L \dashv R\mathcal{H}om .
+f^{-1}\dashv Rf_*,
+\qquad
+Rf_!\dashv f^!,
+\qquad
+-\tensor^L_{\underline{\ZZ}_X}\mathcal F
+\dashv
+R\mathcal Hom_{\underline{\ZZ}_X}(\mathcal F,-).
 $$
 Here $f_!$ is direct image with proper supports: $(f_! \mathcal{F})(V)$ consists of the sections $s \in \mathcal{F}(f^{-1}V)$ whose support is proper over $V$.
 The \dfn{exceptional inverse image} $f^!$ is the right adjoint of $Rf_!$; it exists on derived categories when $f_!$ has finite cohomological dimension, and is not the derived functor of a functor on sheaves.
@@ -40,7 +46,12 @@ The \dfn{exceptional inverse image} $f^!$ is the right adjoint of $Rf_!$; it exi
 
 2. Base change: for a Cartesian square with $g \colon Y' \to Y$ and $f' \colon X' \to Y'$, $g^{-1} Rf_! \cong Rf'_! g'^{-1}$.
 
-3. Projection formula: $Rf_!(\mathcal{F} \otimes^L f^{-1} \mathcal{G}) \cong Rf_! \mathcal{F} \otimes^L \mathcal{G}$.
+3. Projection formula:
+   $$
+   Rf_!\qty{\mathcal F\tensor^L_{\underline{\ZZ}_X}f^{-1}\mathcal G}
+   \cong
+   Rf_!\mathcal F\tensor^L_{\underline{\ZZ}_Y}\mathcal G.
+   $$
 
 4. Verdier duality: for $a \colon X \to \mathrm{pt}$, the \dfn{dualizing complex} is $\omega_X = a^! \ZZ$, and for a topological manifold of dimension $n$ it is the orientation sheaf placed in degree $-n$.
    For a closed inclusion $i \colon Z \hookrightarrow X$, $i^! \mathcal{F}$ is the derived functor of sections of $\mathcal{F}$ supported in $Z$, restricted to $Z$.

@@ -1,25 +1,19 @@
 ---
 schema: qual/card@1
 id: FD-6WSIA
-kind: definition
-title: Separable field extension
-prompts:
-- What does it mean for a field extension $L/K$ to be separable?
-- What does it mean for a field extension $L/K$ to be separable, in terms of minimal polynomials?
+kind: proposition
+title: Irreducible separability criterion
 classification:
   areas:
   - algebra
   topics:
   - Separability
   - Field Extensions
-relations: []
+relations:
+- kind: related-to
+  target: D-JGYLA
 review: draft
 ---
-
-::: {.definition}
-Let $L/K$ be an algebraic field extension.
-$L/K$ is \dfn{separable} if for every $\alpha \in L$ the minimal polynomial $m_\alpha\in K[x]$ of $\alpha$ over $K$ is [[D-ZT46D|separable]].
-:::
 
 ::: {.proposition}
 Let $K$ be a field and $f\in K[x]$ irreducible.

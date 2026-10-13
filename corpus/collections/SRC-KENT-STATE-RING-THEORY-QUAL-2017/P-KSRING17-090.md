@@ -34,3 +34,212 @@ Let $D$ be a principal ideal domain and let $a, b \in D$.
 
   ii. if $a \mid e$ and $b \mid e$ then $m \mid e$.
 :::
+
+::: {.solution}
+<1>1. Since $D$ is a principal ideal domain, the ideal
+$$
+(a)+(b)
+$$
+is principal.
+Choose
+$$
+d\in D
+$$
+such that
+$$
+(a)+(b)=(d).
+$$
+
+::: {.proof}
+The sum
+$$
+(a)+(b)
+$$
+is an ideal of $D$.
+Every ideal in a PID is principal, so such a generator $d$ exists.
+:::
+
+<1>2. One has
+$$
+d\mid a
+\qquad\text{and}\qquad
+d\mid b.
+$$
+
+::: {.proof}
+Since
+$$
+a\in(a)
+\subseteq
+(a)+(b)
+=(d),
+$$
+there exists
+$$
+r\in D
+$$
+such that
+$$
+a=rd.
+$$
+Thus
+$$
+d\mid a.
+$$
+
+Similarly,
+$$
+b\in(b)
+\subseteq
+(d),
+$$
+so
+$$
+d\mid b.
+$$
+:::
+
+<1>3. If
+$$
+e\mid a
+\qquad\text{and}\qquad
+e\mid b,
+$$
+then
+$$
+e\mid d.
+$$
+
+::: {.proof}
+Write
+$$
+a=er,
+\qquad
+b=es
+$$
+for some
+$$
+r,s\in D.
+$$
+Because
+$$
+d\in(d)
+=(a)+(b),
+$$
+there exist
+$$
+u,v\in D
+$$
+such that
+$$
+d=ua+vb.
+$$
+Substituting the expressions for $a$ and $b$ gives
+$$
+d
+=
+u(er)+v(es)
+=
+e(ur+vs).
+$$
+Hence
+$$
+e\mid d.
+$$
+:::
+
+<1>4. Thus the element $d$ from step <1>1 satisfies the two properties in part (a).
+
+::: {.proof}
+Step <1>2 proves property (i), and step <1>3 proves property (ii).
+:::
+
+<1>5. The ideal
+$$
+(a)\cap(b)
+$$
+is principal.
+Choose
+$$
+m\in D
+$$
+such that
+$$
+(a)\cap(b)=(m).
+$$
+
+::: {.proof}
+The intersection of two ideals is an ideal.
+Since $D$ is a PID, it is principal.
+:::
+
+<1>6. One has
+$$
+a\mid m
+\qquad\text{and}\qquad
+b\mid m.
+$$
+
+::: {.proof}
+Since
+$$
+m\in(m)
+=(a)\cap(b),
+$$
+one has
+$$
+m\in(a)
+$$
+and
+$$
+m\in(b).
+$$
+Thus
+$$
+a\mid m
+\qquad\text{and}\qquad
+b\mid m.
+$$
+:::
+
+<1>7. If
+$$
+a\mid e
+\qquad\text{and}\qquad
+b\mid e,
+$$
+then
+$$
+m\mid e.
+$$
+
+::: {.proof}
+The divisibility assumptions mean
+$$
+e\in(a)
+\qquad\text{and}\qquad
+e\in(b).
+$$
+Hence
+$$
+e\in(a)\cap(b)
+=(m).
+$$
+Therefore
+$$
+m\mid e.
+$$
+:::
+
+<1>8. Thus the element $m$ from step <1>5 satisfies the two properties in part (b).
+
+::: {.proof}
+Step <1>6 proves property (i), and step <1>7 proves property (ii).
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves part (a), and step <1>8 proves part (b).
+:::
+:::

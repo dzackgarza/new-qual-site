@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked both ideal inclusions, the explicit lift of arbitrary residues, and the well-defined inverse on quotient classes, including an ideal equal to R."
 ---
-
 ::: {.problem}
 Suppose that $R$ is a commutative ring with identity and $I$ and $J$ are ideals of $R$.
 Suppose that $I + J = R$.
@@ -85,7 +84,7 @@ Consequently $\phi(r)=(a+I,b+J)$, proving surjectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The required isomorphism and its inverse are
 $$
@@ -109,9 +108,16 @@ $\overline\phi\psi(a+I,b+J)=(a+I,b+J)$.
 In the other direction,
 $\psi\overline\phi(r+IJ)=r(v+u)+IJ=r+IJ$.
 Therefore $\overline\phi$ is a bijective ring homomorphism
-and hence a ring isomorphism.
+and hence the desired ring isomorphism. The argument does
+not require $I$ or $J$ to be proper.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 

@@ -25,3 +25,48 @@ Find the volume of the solid in the first octant of $xyz$-space, bounded below b
 (D) $4$
 (E) $8$
 :::
+
+::: {.solution}
+<1>1. The base of the solid is the quarter unit disk
+$$
+R=\{(r,\theta):0\le r\le1,\ 0\le\theta\le\pi/2\}.
+$$
+
+::: {.proof}
+The solid lies in the first octant, so its projection to the $xy$-plane has $x\ge0$ and $y\ge0$. It is bounded laterally by the coordinate axes and the unit circle $x^2+y^2=1$, which is exactly the displayed region in polar coordinates.
+:::
+
+<1>2. The volume is
+$$
+\boxed{1},
+$$
+so the answer is (B).
+
+::: {.proof}
+The height above $(x,y)\in R$ is $z=8xy$. With
+$$
+x=r\cos\theta,\qquad y=r\sin\theta,\qquad dA=r\,dr\,d\theta,
+$$
+step <1>1 gives
+$$
+V
+=\iint_R8xy\,dA
+=8\int_0^{\pi/2}\int_0^1
+r^3\cos\theta\sin\theta\,dr\,d\theta.
+$$
+Therefore
+$$
+V
+=8\left[\frac{r^4}{4}\right]_0^1
+\left[\frac{\sin^2\theta}{2}\right]_0^{\pi/2}
+=8\cdot\frac14\cdot\frac12
+=1.
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the requested volume and corresponding choice.
+:::
+:::

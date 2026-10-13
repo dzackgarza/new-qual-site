@@ -25,7 +25,6 @@ audit:
   date: 2026-09-10
   note: "Checked the splitting-field degree, the complete subgroup enumeration, distinctness of the three cubic fields, and the normality decisions."
 ---
-
 ::: {.problem}
 Let $K$ be the splitting field of $x^3 - 7$ over $\mathbb{Q}$.
 
@@ -113,7 +112,7 @@ of degree $6$. The subgroup count proves exhaustiveness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$ are Galois
 over $\mathbb Q$.
@@ -132,6 +131,12 @@ the polynomial does not split there. Thus the extension is not
 normal and cannot be Galois. This covers all the remaining fields.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), step [](#s2){.pf-ref} answers part (b), and step [](#s3){.pf-ref} answers part (c).
 
 :::
 

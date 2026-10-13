@@ -27,7 +27,6 @@ audit:
   date: 2026-09-10
   note: "Checked irreducibility and failure of normality for the real cubic, both image-order divisibilities in S3, equality of the action kernel with the index-three subgroup, and the final Galois correspondence."
 ---
-
 ::: {.problem}
 (a) Give an example of an extension of degree 3 over $\mathbb{Q}$ which is not Galois over $\mathbb{Q}$.
 
@@ -39,7 +38,7 @@ Show that $L$ is Galois over $\mathbb{Q}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For part (a), $\mathbb Q(\sqrt[3]{2})$ is a non-Galois
 extension of degree $3$.
@@ -78,13 +77,14 @@ It is therefore $1$ or $3$. Transitivity on three points
 excludes order $1$, so $|\rho(G)|=3$ and $|\ker\rho|=35$.
 Every element of the kernel fixes the coset $H$, so belongs to
 $H$. Since both subgroups have order $35$, $H=\ker\rho$.
-Kernels are normal, so $H\lhd G$.
+Kernels are normal, proving the claim without any assumption
+that a subgroup of index three is always normal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The field $L$ in part (b) is Galois over $\mathbb Q$.
 
@@ -95,6 +95,12 @@ over the base exactly when its corresponding subgroup is normal
 [@DF04]. Apply this criterion to the subgroup in step [](#s2){.pf-ref}.
 
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b).
 
 :::
 
