@@ -37,6 +37,38 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### UCLA Spring 2016 Problem 11 omits normalization in the logarithmic determinant limit
+
+- **Object and need:** P-UCLAB16S-11 in SRC-UCLA-BASIC-SPRING-2016. The source asks to prove that log det(M_n) has a limit as n tends to infinity and to compute it.
+- **Observed evidence:** the retained scan states the unnormalized logarithm. For a=b=1, the determinant recurrence is D_n=D_{n-1}+D_{n-2} with positive initial values, so D_n grows exponentially and log D_n tends to positive infinity rather than a finite real limit.
+- **Impact and owner:** the literal finite-limit claim is false in general. The natural asymptotic statement is for (1/n) log det(M_n), whose limit is log((a+sqrt(a^2+4b^2))/2).
+- **Uncertainty:** none about the counterexample or source wording. The missing 1/n normalization is inferred from the standard Toeplitz-determinant asymptotic.
+- **Repair:** TODO.md section 7 / issue #2. P-UCLAB16S-11 should preserve the literal source, compute det(M_n), classify the literal extended-real behavior, and record the normalized finite limit.
+
+### UCLA Spring 2016 Problem 3 has an extra factor of n and is false as printed
+
+- **Object and need:** P-UCLAB16S-03 in SRC-UCLA-BASIC-SPRING-2016. The source asks for the limit of n times the quantity sum_{k=0}^n f(k/n) minus n times the integral.
+- **Observed evidence:** the retained scan was inspected directly and contains the outer factor n. For the constant C^1 function f=1, the inner quantity is (n+1)-n=1, so the displayed expression equals n and diverges.
+- **Impact and owner:** the literal problem has no finite answer in general. Removing the outer factor n gives the standard first-order Riemann-sum correction, whose limit is (f(0)+f(1))/2.
+- **Uncertainty:** none about the literal counterexample or the retained source wording. The intended correction is inferred from the standard Euler--Maclaurin/Riemann-sum statement.
+- **Repair:** TODO.md section 7 / issue #2. P-UCLAB16S-03 should preserve the source statement, refute it, and may record the natural corrected statement separately.
+
+### UCLA Spring 2014 Problem 1(b) is false over the real numbers
+
+- **Object and need:** P-UCLAB14S-01 in SRC-UCLA-BASIC-SPRING-2014. Part (a) asks for a real matrix with minimal polynomial t^4+1; part (b) then asks to prove that its usual real linear map has no nontrivial invariant subspace.
+- **Observed evidence:** the retained scan states part (b) literally. Over R, t^4+1 factors as (t^2+sqrt(2)t+1)(t^2-sqrt(2)t+1) into coprime nonconstant factors. For any operator with minimal polynomial t^4+1, the image of one quadratic factor evaluated at A is a nonzero proper invariant subspace annihilated by the other factor.
+- **Impact and owner:** part (b) cannot receive a correct proof as stated. A solution should answer part (a), then refute part (b) and exhibit the invariant subspace forced by the factorization.
+- **Uncertainty:** none about the mathematical defect; the retained source image was inspected directly and contains the false assertion.
+- **Repair:** TODO.md section 7 / issue #2. P-UCLAB14S-01 should preserve the source statement and give the correct counterargument in its solution.
+
+### UCLA Spring 2011 Problem 4 overstates LU existence and uniqueness
+
+- **Object and need:** P-UCLAB11S-04 in SRC-UCLA-BASIC-SPRING-2011. The source asks for a necessary-and-sufficient condition for an LU factorization of an arbitrary real square matrix and then says that normalizing the diagonal of L to 1 makes every existing factorization unique.
+- **Observed evidence:** the retained scan states the problem with no nonsingularity or nonzero-pivot hypothesis. Literal uniqueness is false: for the zero 2 by 2 matrix, A=L0 for every unit lower-triangular L. Likewise, nonvanishing leading principal minors is sufficient for the usual no-pivot elimination factorization but is not necessary for a bare triangular factorization, for example diag(0,1)=I diag(0,1).
+- **Impact and owner:** a correct solution must distinguish the general existence criterion from the stronger nonzero-pivot criterion under which normalized LU is unique; the source's part 2 cannot be proved literally without an additional hypothesis.
+- **Uncertainty:** none about the counterexamples. The only ambiguity is which standard convention for “LU decomposition” the exam intended.
+- **Repair:** TODO.md section 7 / issue #2. P-UCLAB11S-04 should record the literal defect and give the correct general criterion together with the intended nonzero-pivot uniqueness statement.
+
 ### Wesleyan 2006 topology A5 is false for finite compact zero-dimensional spaces
 
 - **Object and need:** `P-WESTOP06-A5` in `SRC-WESLEYAN-TOP-2006`. Part 2 asks to prove that every compact Hausdorff zero-dimensional space satisfies \(wX=|\operatorname{clop}(X)|\).
@@ -52,6 +84,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Impact and owner:** parts 2 and 3 cannot be proved literally as a single correct theorem. The solution must distinguish the retained definition from the intended vanishing ideal and refute the false converse while proving the maximal-ideal classification independently.
 - **Uncertainty:** none about either mathematical defect in the retained statement. The original scan would be needed to determine whether the first defect is transcription/OCR corruption and whether part 3 omitted a qualifier such as closed ideal.
 - **Repair:** issue #2 / TODO.md section 7. `P-WESTOP06-A6` now records the literal and intended readings, gives the counterexample to part 3, and proves that the maximal ideals are the point-evaluation kernels.
+
+### January 2005 Problems 8--10 are truncated or absent in the retained topology packet
+
+- **Object and need:** P-MH07-JAN05-08, P-MH07-JAN05-09, and P-MH07-JAN05-10 in SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007. These cards require complete source statements before solution authoring.
+- **Observed evidence:** the final lines of assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md retain Problem 8 only through “Let f:R^n->R be a smooth function. Show that for almost every a in R^n the function”, with the function formula and conclusion missing; Problems 9 and 10 appear only as the bare numbers “9.” and “10.” with no statement text. The three cards preserve these gaps explicitly.
+- **Impact and owner:** TODO.md section 7 cannot complete source-review/prove for these cards without inventing the missing mathematics. The source/card owner must recover the original statements before solutions can be authored.
+- **Uncertainty:** Problem 8 resembles several standard Sard/transversality perturbation exercises, but the omitted formula determines the actual theorem; Problems 9 and 10 have no recoverable mathematical content at all. Reconstruction from topic proximity would be speculative.
+- **Repair:** issue #2 / TODO.md section 7. Recover January 2005 Problems 8--10 from an independent source or source images, update the three cards to verified statements, then resume their ordinary read/source-review/prove/attach/commit chains.
 
 ### January 2005 Problem 3 is truncated after the induced-map symbol
 
@@ -3299,6 +3339,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-WESRA13A-II5` restores the missing target and supplies
   counterexamples to both implications in a complete structured proof.
 
+### Wesleyan 2016 Complex Analysis Problem 8 is false for the zero function
+
+- **Object and need:** P-WESCA16-8 in SRC-WESLEYAN-CA-2016. The source
+  assumes only that a holomorphic function satisfies
+  \(f(0)=f'(0)=f''(0)=0\), then asks to prove that every sufficiently small
+  value has at least three preimages counted with multiplicity.
+- **Observed evidence:** the retained source states no nonconstancy
+  hypothesis. The function \(f\equiv0\) satisfies all three displayed
+  derivative conditions, but for every nonzero \(w\) the equation
+  \(f(z)=w\) has no solutions.
+- **Impact and owner:** the literal claim cannot be proved. If \(f\) is
+  assumed nonconstant, the intended conclusion follows from the isolated zero
+  at \(0\) and Rouché's theorem: on a sufficiently small circle, \(f\) and
+  \(f-w\) have the same number of zeros, namely the order of the zero of
+  \(f\) at \(0\), which is at least three.
+- **Expected result:** preserve the source statement, refute it with
+  \(f\equiv0\), and prove the corrected nonconstant version.
+- **Uncertainty:** none about the literal counterexample or the retained
+  source wording; the missing nonconstancy hypothesis is the minimal natural
+  correction.
+- **Repair:** TODO.md section 7 / issue #2. P-WESCA16-8 should record the
+  counterexample and prove the corrected theorem under \(f\not\equiv0\).
+
 ### Week 5 Practice Problem 4 gives a non-homomorphism in its supplied solution
 
 - **Object and need:** `P-PRACT20-W5-04` in
@@ -3356,3 +3419,376 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `X -> graph(h)`.
 - **Repair:** TODO.md section 7 / issue #2. `P-UGA8210F18-HW1-06` supplies
   the counterexample and proves the corrected smooth-map version.
+
+### UCLA Spring 2014 Analysis Problem 10 has the wrong density hypothesis
+
+- **Object and need:** `P-UCLARA14S-10` in
+  `SRC-UCLA-RA-SPRING-2014`. The source assumes
+  `alpha in [0,1] \ Q` and uses the boundary points `exp(i alpha n)`,
+  then asks to prove that the resulting analytic function has the unit circle
+  as a natural boundary.
+- **Observed evidence:** the retained `assets/attachments/UCLA_Solutions.pdf`
+  uses exactly `e^{i alpha n}` and then asserts that irrationality of
+  `alpha` makes these points dense in the unit circle. This is false:
+  `alpha=pi/5` lies in `[0,1] \ Q`, but
+  `e^{i alpha n}=e^{2 pi i n/10}` takes only ten values.
+- **Impact and owner:** the literal problem is false. For
+  `alpha=pi/5`, the pole locations form a finite set, so after grouping
+  equal denominators the series is meromorphic across all other boundary
+  points and cannot have the whole unit circle as a natural boundary.
+- **Expected result:** preserve the literal source statement and counterexample,
+  then prove the intended theorem under the minimal corrected hypothesis
+  `alpha/(2 pi) notin Q` (equivalently, replace `e^{i alpha n}` by
+  `e^{2 pi i alpha n}` while retaining `alpha notin Q`).
+- **Uncertainty:** none about the counterexample or source wording. The intended
+  normalization is ambiguous between correcting the exponent and correcting
+  the hypothesis; both give the same density mechanism.
+- **Repair:** TODO.md section 7 / issue #2. `P-UCLARA14S-10` records the
+  false literal case and proves the corrected natural-boundary statement under
+  `alpha/(2 pi) notin Q`.
+
+### UCLA Spring 2013 Analysis Problem 11 has an incorrect residue formula
+
+- **Object and need:** `P-UCLARA13S-11` in
+  `SRC-UCLA-RA-SPRING-2013`. The problem asks for the poles and residues of
+  `f(z)=-pi z cot(pi z)`.
+- **Observed evidence:** the retained `assets/attachments/UCLA_Solutions.pdf`
+  gives the residue at a nonzero integer `m` as `(-1)^(m+1)m`. But
+  `sin(pi z)` has derivative `pi cos(pi m)=pi(-1)^m` at `m`, while the
+  numerator is `-pi m cos(pi m)=-pi m(-1)^m`; their quotient is exactly
+  `-m`.
+- **Impact and owner:** the source answer in part (a) is wrong. The poles are
+  the nonzero integers and every residue is `-m` at `z=m`; the apparent
+  singularity at `0` is removable.
+- **Expected result:** the authored solution should give residue `-m` at
+  every nonzero integer and independently verify the Taylor-coefficient formula
+  in part (b).
+- **Uncertainty:** none; the residue follows directly from the quotient formula
+  for a simple zero of `sin(pi z)`.
+- **Repair:** TODO.md section 7 / issue #2. `P-UCLARA13S-11` supplies the
+  corrected residue computation and the coefficient proof.
+
+### UCLA Spring 2011 Analysis Problem 10 card and retained solution use different domains
+
+- **Object and need:** `P-UCLARA11S-10` in
+  `SRC-UCLA-RA-SPRING-2011`. The current card asks for
+  `sup Re f'(i/2)` over holomorphic maps from the upper half of the unit
+  disk to the unit disk.
+- **Observed evidence:** the retained
+  `assets/attachments/UCLA_Solutions.pdf` instead states and solves the
+  problem for holomorphic maps `H -> D`, where `H` is the upper
+  half-plane. Its conformal map and its value `1` are specific to that
+  domain.
+- **Impact and owner:** the two extremal problems have different answers.
+  For the current half-disk card, the biholomorphism
+  `Phi(z)=((1+z)/(1-z))^2` maps the domain to the upper half-plane and
+  Schwarz--Pick gives the sharp value `5/3` at `z=i/2`. Thus the retained
+  source solution cannot be attached to the current statement.
+- **Expected result:** solve the literal current card with value `5/3`.
+  Separately, source reconciliation should determine whether the card statement
+  or the retained solution transcription reflects the intended exam problem.
+- **Uncertainty:** the mathematical distinction is certain; the intended source
+  version is not resolved by the retained compendium alone.
+- **Repair:** TODO.md section 7 / issue #2. `P-UCLARA11S-10` supplies the
+  complete proof for its literal half-disk statement.
+
+### Maxim algebraic topology 4.12 lost the middle mapping arrow during extraction
+
+- **Object and need:** `P-MAXAT-4-12` in
+  `SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY`.
+- **Observed evidence:** the retained Markdown extraction renders the middle
+  mapping-space problem as `S^{\bar 1} S^2`, while its neighboring clauses
+  are `S^1 -> S^3` and `S^1 -> CP^n`. The corresponding free-loop-space
+  exercise is the standard `S^1 -> S^2` case.
+- **Impact and owner:** the malformed card statement is not mathematically
+  parseable and obscures one of the three spaces whose cohomology is requested.
+- **Expected result:** normalize the middle clause to `S^1 -> S^2` and solve
+  the three free-loop-space calculations.
+- **Uncertainty:** none about the missing arrow; the source context fixes the
+  intended middle target as `S^2`.
+- **Repair:** TODO.md section 7 / issue #2. `P-MAXAT-4-12` now carries the
+  corrected statement and complete integral cohomology calculation.
+
+### Maxim algebraic topology 6.6 has the parity of the projective space reversed
+
+- **Object and need:** `P-MAXAT-6-06` in
+  `SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY`.
+- **Observed evidence:** both the card and the retained source extraction state
+  that `RP^{2k+1}` cannot be a boundary. This is false: multiplication by
+  `i` on `S^{2k+1} \subset C^{k+1}` descends to a fixed-point-free
+  involution of `RP^{2k+1}`, and the standard quotient
+  `(M x [-1,1])/(x,t)~(T(x),-t)` gives a manifold bounded by `M`.
+- **Impact and owner:** the literal source problem asks for a proof of a false
+  statement. In fact every odd-dimensional real projective space is
+  null-bordant as an unoriented manifold.
+- **Expected result:** refute the literal statement and prove the standard
+  corrected assertion `RP^{2k}` cannot be a boundary, using
+  `chi(RP^{2k})=1` and the fact that every closed boundary has even Euler
+  characteristic.
+- **Uncertainty:** none about the mathematical defect; the intended corrected
+  exponent is inferred from the standard characteristic-class/bordism result.
+- **Repair:** TODO.md section 7 / issue #2. `P-MAXAT-6-06` records the
+  counterexample/construction and proves the corrected even-dimensional
+  statement.
+
+### Maxim algebraic topology 6.8 asks for an exact embedding dimension not known in general
+
+- **Object and need:** `P-MAXAT-6-08` in
+  `SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY`.
+- **Observed evidence:** the retained source literally asks for the smallest
+  `k` for which `CP^n` smoothly embeds in `R^{2n+k}`, with arbitrary
+  `n`. Determining this minimum is the Euclidean embedding-dimension problem
+  for complex projective spaces, treated in specialized work of
+  Atiyah--Hirzebruch/Feder--Segal, Mukherjee, Davis--Mahowald, and others.
+  Published bounds do not coincide for all `n`; for example the literature
+  leaves `CP^7` with embedding dimension in `{23,24}`.
+- **Impact and owner:** there is no single currently established formula that
+  can serve as the requested answer for arbitrary `n`. Treating a general
+  upper or lower bound as “the smallest k” would state an unproved result.
+- **Expected result:** record the invariant
+  `N(n)=min{N: CP^n embeds smoothly in R^N}`, give rigorous classical lower
+  and upper bounds, and identify the families in which they coincide.
+- **Uncertainty:** the exact value is known in many special cases but not
+  uniformly; the source gives no restriction on `n` that would make the
+  problem determinate.
+- **Repair:** TODO.md section 7 / issue #2. `P-MAXAT-6-08` states the correct
+  research-status answer and the exact values forced by the classical bounds
+  in the standard low-binary-weight families.
+
+### MTH 674 Problem I is only an unrecovered cross-reference to homework
+
+- **Object and need:** `P-MTH674-01` in
+  `SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE`.
+- **Observed evidence:** the retained source extraction reads only
+  “Problem I. Homework assignments I and II.” No statement from either
+  homework assignment is included in the retained source bytes or in the card.
+- **Impact and owner:** this card is not a self-contained mathematical problem,
+  so a proof cannot be authored without inventing missing source content.
+- **Expected result:** recover the referenced Homework I and II source material,
+  replace the placeholder by the actual posed mathematics, and only then author
+  a solution.
+- **Uncertainty:** the titles/content of the referenced homework assignments
+  are not recoverable from the current source packet.
+- **Repair:** blocked on source recovery; section 7 proceeds to the next
+  self-contained card rather than fabricating a solution.
+
+### Series Assignment 2 Problem 2 omits the finite-limsup hypothesis used by its own proof
+
+- **Object and need:** `P-SERIES-A2-02` in
+  `SRC-SEQUENCES-SERIES-ASSIGNMENT-2`.
+- **Observed evidence:** the retained source states for an arbitrary real
+  sequence that `limsup a_n = sup S`, where `S` is the set of finite
+  subsequential limits. Its supplied proof immediately treats
+  `L=limsup a_n` as a finite real number and constructs a subsequence
+  converging to `L`.
+- **Impact and owner:** the literal statement is false for unbounded sequences.
+  For example `a_n=n` has no finite convergent subsequence, so `S=empty`,
+  while `limsup a_n=+infinity`.
+- **Expected result:** state and prove the theorem when `limsup a_n` is
+  finite (equivalently in the usual bounded-sequence setting), and analogously
+  for finite `liminf`; explicitly record the counterexample to the literal
+  unrestricted formulation.
+- **Uncertainty:** none; the source proof itself makes the missing finiteness
+  assumption.
+- **Repair:** TODO.md section 7 / issue #2. `P-SERIES-A2-02` records the
+  counterexample and proves the corrected finite-extreme-subsequential-limit
+  statements.
+
+### Contact Topology Exercise 2.24 has incompatible coefficients and requested foliation
+
+- **Object and need:** `P-UTCT-2-24` in
+  `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017`.
+- **Observed evidence:** the retained source itself prints
+  `alpha = dz + a dx + b dy` with constant `a,b`, but then asks to compute
+  the contact sign/divergence and to check that the characteristic foliation
+  is `x^b y^a = c`.
+- **Impact and owner:** for the printed form, `d alpha=0`, hence
+  `alpha wedge d alpha=0`; it is not a contact form. On the `xy`-plane the
+  characteristic line field is `ker(a dx+b dy)`, whose leaves are
+  `a x+b y=c`, not `x^b y^a=c`.
+- **Expected result:** solve the literal printed problem and state that the
+  advertised monomial foliation does not follow. The natural corrected form
+  `alpha = dz + b y dx + a x dy` has characteristic vector field
+  `a x partial_x-b y partial_y`, leaves `x^b y^a=c` on sign-compatible
+  quadrants, and divergence/contact sign determined by `a-b`.
+- **Uncertainty:** the retained source does not specify which coefficients
+  were intended; the corrected form above is the minimal one reproducing the
+  displayed first integral and the intended divergence discussion.
+- **Repair:** TODO.md section 7 / issue #2. `P-UTCT-2-24` records the literal
+  calculation and the natural corrected calculation separately.
+
+### Hatcher qual-review Problem 1 omits the cocycle hypothesis in the Kronecker pairing
+
+- **Object and need:** `P-QUAL-REVIEW-HATCHER-01` in
+  `SRC-QUAL-REVIEW-HATCHER`.
+- **Observed evidence:** the retained source says that if `z-z'` is a
+  boundary then `<z,alpha>=<z',alpha>` for arbitrary
+  `alpha in C^k(X;R)`. This is false unless `alpha` is a cocycle.
+- **Impact and owner:** the first claimed invariance does not descend from
+  chains to homology for arbitrary cochains. For example in degree zero on an
+  interval, `[1]-[0]` is a boundary, but an arbitrary zero-cochain can take
+  different values on the endpoints.
+- **Expected result:** require `delta alpha=0` in the first assertion; then
+  `<partial w,alpha>=<w,delta alpha>=0`. Together with the corresponding
+  coboundary calculation, this yields the well-defined Kronecker pairing on
+  `H_k x H^k`.
+- **Uncertainty:** none; the correction is the standard chain/cochain pairing
+  identity.
+- **Repair:** TODO.md section 7 / issue #2. `P-QUAL-REVIEW-HATCHER-01`
+  records the literal counterexample and proves the corrected statement.
+
+### Hatcher qual-review Problem 2 omits the projective/free hypothesis needed for its numerical Hom calculation
+
+- **Object and need:** `P-QUAL-REVIEW-HATCHER-02` in
+  `SRC-QUAL-REVIEW-HATCHER`.
+- **Observed evidence:** the retained source asks for
+  `H_*(underline Hom(C_*,D_*))` from the homology groups of `C_*` and
+  `D_*` alone, after stating only that `C_*,D_*` are bounded below.
+  Its preceding fact (i) itself says quasi-isomorphism invariance in the
+  second variable only when the first complex is free.
+- **Impact and owner:** raw total Hom is not determined by the two homology
+  groups without a projective/free model hypothesis. The acyclic bounded
+  complex `0 -> Z --2--> Z -> Z/2 -> 0` is not contractible, and
+  `underline Hom(-,Z)` has a nonzero `Z/2` homology class on it. Thus
+  adding this acyclic summand changes total-Hom homology without changing
+  `H_*(C)`.
+- **Expected result:** prove the chain-homotopy invariance assertion exactly as
+  stated. For the numerical computation, state the intended hypothesis that
+  `C_*` is a bounded-below complex of free abelian groups (equivalently,
+  compute the derived Hom represented by a free model), then use the
+  Hom/Ext Künneth-style decomposition.
+- **Uncertainty:** none about the missing hypothesis; the source's reference to
+  the Künneth proof strongly indicates the intended free-chain setting.
+- **Repair:** TODO.md section 7 / issue #2. `P-QUAL-REVIEW-HATCHER-02`
+  records the counterexample, proves homotopy invariance, and gives the
+  corrected free-source numerical answer.
+
+### Wesleyan Complex Analysis 2006 Problem 3 omits boundary regularity
+
+- **Object and need:** `P-WESCA06-II3` in
+  `SRC-WESLEYAN-CA-SUMMER-2006`.
+- **Observed evidence:** the retained source says only that `f,g` are
+  analytic in a bounded domain `D` with compact closure, then asks to show
+  `|f|+|g|` attains its maximum on `∂D`.
+- **Impact and owner:** the literal statement is not well-defined in general,
+  because functions holomorphic only on `D` need not extend to the boundary.
+  For instance `f(z)=1/(1-z)` on the unit disk has no finite boundary value
+  at `z=1`.
+- **Expected result:** assume `f,g` are continuous on `\overline D` and
+  holomorphic on `D` (or holomorphic on a neighborhood of `\overline D`),
+  then prove the boundary-maximum claim by the source's phase-alignment hint
+  and the maximum modulus principle.
+- **Uncertainty:** none about the missing regularity; the standard corrected
+  hypothesis is uniquely determined by the requested boundary maximum.
+- **Repair:** TODO.md section 7 / issue #2. `P-WESCA06-II3` records the
+  literal counterexample and proves the corrected statement.
+
+### Wesleyan Topology 2010 Part II Problem 1(c) has a likely lost negation
+
+- **Object and need:** `P-WESTOP10-II1` in
+  `SRC-WESLEYAN-TOP-SUMMER-2010`.
+- **Observed evidence:** the retained source reads “Describe two connected
+  spaces `X,Y` such that `H_i(X) ≅ H_i(Y)` for all `i`, but
+  `π_1(X) ≅ π_1(Y)`.” The contrastive “but” makes the second isomorphism
+  vacuous rather than contrasting with the homology condition.
+- **Impact and owner:** the printed problem is trivially solved by taking
+  `X=Y`; it almost certainly intended `π_1(X) not≅ π_1(Y)`, but the
+  retained source does not preserve a negation symbol.
+- **Expected result:** preserve and answer the literal extracted statement,
+  while separately giving the natural intended example
+  `T^2` and `S^1 vee S^1 vee S^2`, which have identical integral homology
+  in every degree but fundamental groups `Z^2` and `F_2`.
+- **Uncertainty:** the missing negation is strongly indicated by wording but
+  cannot be asserted as recovered source text.
+- **Repair:** TODO.md section 7 / issue #2. `P-WESTOP10-II1` now answers
+  both the literal reading and the likely intended contrastive reading,
+  explicitly distinguished.
+
+### Wesleyan Topology 2010 Part II Problem 2(b) repeats its compactness hypothesis
+
+- **Object and need:** `P-WESTOP10-II2` in
+  `SRC-WESLEYAN-TOP-SUMMER-2010`.
+- **Observed evidence:** the retained source says: if `X` is compact and
+  every fiber `p^{-1}(x)` is finite, show that `X` is compact.
+- **Impact and owner:** the literal conclusion is identical to an assumption,
+  so the second half contains no mathematical task. The standard covering-space
+  theorem in this context is that the total space `\widetilde X` is compact
+  when the base is compact and every fiber is finite.
+- **Expected result:** preserve the literal statement and identify it as
+  immediate, then prove the standard intended finite-sheeted compactness
+  theorem for `\widetilde X` without silently replacing the source.
+- **Uncertainty:** the intended replacement is strongly supported by the
+  canonical covering-space exercise, but the retained Wesleyan source itself
+  does not preserve the corrected symbol.
+- **Repair:** TODO.md section 7 / issue #2. `P-WESTOP10-II2` records the
+  source defect, proves the Hausdorff assertion, and proves the standard
+  intended total-space compactness result separately.
+
+### Wesleyan Complex Analysis August 2013 Problem II.1 has an unrecovered nonholomorphic third formula
+
+- **Object and need:** `P-WESCA13A-II1` in
+  `SRC-WESLEYAN-CA-AUGUST-2013`.
+- **Observed evidence:** the retained deterministic extraction renders the
+  third function as `sqrt(conj(z))/(z-1)`, while the problem asks to
+  classify isolated singularities of holomorphic functions and compute pole
+  orders/residues where applicable.
+- **Impact and owner:** the extracted third expression is not holomorphic on
+  any punctured neighborhood, so the requested isolated-singularity
+  classification is not mathematically applicable to it. The first two
+  subparts are unambiguous.
+- **Expected result:** solve the first two functions exactly and leave the
+  third explicitly blocked until an independent source recovers the intended
+  formula.
+- **Uncertainty:** the intended third function is not recoverable from the
+  retained extraction without guessing.
+- **Repair:** TODO.md section 7 / issue #2. `P-WESCA13A-II1` contains the
+  complete first-two classifications and records the exact obstruction for the
+  third.
+
+### Hatcher qual-review Problem 2 asks for raw total-Hom homology from insufficient data
+
+- **Object and need:** `P-QUAL-REVIEW-HATCHER-02` in
+  `SRC-QUAL-REVIEW-HATCHER`.
+- **Observed evidence:** the retained source assumes only that `C_*` and
+  `D_*` are bounded below, then gives only their homology groups and asks
+  for the homology of the raw total complex
+  `underline Hom(C_*,D_*)`. It separately states the needed invariance fact
+  only under the hypothesis that `C_*` is free.
+- **Impact and owner:** without a projective/K-projective hypothesis on the
+  first variable, raw Hom does not preserve quasi-isomorphisms, so its
+  homology is not determined by `H_*(C)` and `H_*(D)`. For example the
+  bounded exact complex `0 -> Z -> Q -> Q/Z -> 0` is acyclic but its raw
+  Hom into `Z[0]` has nonzero homology.
+- **Expected result:** prove the chain-homotopy preservation statement
+  literally, then perform the numerical calculation under the intended
+  hypothesis that `C_*` is a bounded-below complex of free abelian groups,
+  or equivalently for `RHom(C,D)` after a free replacement.
+- **Uncertainty:** none about the logical gap; the intended projective
+  convention is inferred from fact (1) and the instruction to imitate the
+  Künneth proof.
+- **Repair:** TODO.md section 7 / issue #2. `P-QUAL-REVIEW-HATCHER-02`
+  states the defect, proves the sign-correct homotopy formula, and gives the
+  complete derived/free-model homology table.
+
+### UCLA Spring 2013 Analysis Problem 11 has an incorrect residue formula
+
+- **Object and need:** `P-UCLARA13S-11` in
+  `SRC-UCLA-RA-SPRING-2013`. Part (a) asks for the poles and residues of
+  `f(z)=-pi z cot(pi z)`.
+- **Observed evidence:** the retained `assets/attachments/UCLA_Solutions.pdf`
+  gives the residue at a nonzero integer `m` as
+  `(-1)^(m+1) m`. But `cot(pi z)` has residue `1/pi` at every integer:
+  both the numerator `cos(pi m)` and the derivative of the denominator
+  `pi cos(pi m)` carry the same factor `(-1)^m`. Therefore
+  `Res_{z=m}[-pi z cot(pi z)]=-m`.
+- **Impact and owner:** the source answer for part (a) has the wrong sign for
+  every even nonzero integer. The pole locations are otherwise correct; the
+  apparent singularity at `0` is removable.
+- **Expected result:** the authored solution should give simple poles at every
+  nonzero integer with residue `-m`, and then derive the requested Taylor
+  coefficients independently from the standard cotangent partial fraction
+  expansion.
+- **Uncertainty:** none; the residue follows directly from the quotient formula
+  for a simple zero of `sin(pi z)`.
+- **Repair:** TODO.md section 7 / issue #2. `P-UCLARA13S-11` supplies the
+  corrected residues and coefficient calculation.

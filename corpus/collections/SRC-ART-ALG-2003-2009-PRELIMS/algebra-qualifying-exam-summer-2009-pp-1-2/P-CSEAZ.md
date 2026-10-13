@@ -447,4 +447,9 @@ size and minimal polynomial. Distinct triples were proved nonisomorphic
 in step <1>8, and therefore give distinct similarity classes. Every
 matrix in question yields one of those modules, proving completeness.
 :::
+
+<1>10. Q.E.D.
+::: {.proof}
+Steps <1>5--<1>7 give the complete classification required in part (a), step <1>8 gives all modules in part (b), and step <1>9 gives all rational canonical forms in part (c).
+:::
 :::
