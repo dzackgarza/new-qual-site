@@ -108,7 +108,7 @@ Use continuity of translations in $L^1$.
 
 ::: pf-proof
 
-It is standard that
+By [[T-BFOJT|continuity of translation in $L^1$]],
 \[
 \|\tau_hf-f\|_1\longrightarrow0
 \qquad(h\to0).

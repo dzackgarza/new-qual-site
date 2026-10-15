@@ -32,6 +32,6 @@ By the stalkwise criterion for exactness, this holds if and only if
 is exact for every $P$, that is, if and only if every $\phi_P$ is an isomorphism of abelian groups.
 
 It remains to see that a morphism of sheaves which is an isomorphism on all stalks is an isomorphism.
-This is standard: injectivity on stalks makes $\phi$ injective on sections, and surjectivity on stalks lets one lift any section of $\mcg$ locally and then glue the lifts, which are unique by the injectivity just established.
+Injectivity on stalks makes $\phi$ injective on sections, and surjectivity on stalks lets one lift any section of $\mcg$ locally and then glue the lifts, which are unique by the injectivity just established.
 The resulting inverse maps on sections are compatible with restriction and define an inverse morphism $\inverseof{\phi}$.
 :::
