@@ -3,7 +3,6 @@ schema: qual/card@1
 id: PR-IP6ZG
 kind: definition
 title: Filtered colimits of sheaves on a Noetherian space
-slogan: 'On a Noetherian space, sectionwise filtered colimits are already sheaves and commute with sections and sheaf cohomology.'
 classification:
   areas:
   - algebraic-geometry
@@ -22,6 +21,8 @@ prompts:
 - On a Noetherian space, why is the presheaf colimit already a sheaf?
 - When does $\Gamma$ commute with a direct limit of sheaves?
 ---
+
+On a Noetherian space, sectionwise filtered colimits are already sheaves and commute with sections and sheaf cohomology.
 
 ::: {.definition}
 Let $\theset{\mcf_i}_{i\in I}$ be a directed system of sheaves of abelian groups on a topological space $X$. Its colimit in the category of sheaves is the sheafification of the presheaf

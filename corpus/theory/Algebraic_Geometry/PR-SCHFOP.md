@@ -3,7 +3,6 @@ schema: qual/card@1
 id: PR-SCHFOP
 kind: definition
 title: The functor of points, and what small test schemes detect
-slogan: 'Fields detect points with residue-field embeddings; dual numbers detect tangent vectors.'
 classification:
   areas:
   - algebraic-geometry
@@ -22,6 +21,8 @@ prompts:
 - Characterise morphisms $\Spec L \to X$ for $L$ a field.
 - Characterise morphisms $\Spec k[\eps]/\eps^2 \to X$.
 ---
+
+Fields detect points with residue-field embeddings; dual numbers detect tangent vectors.
 
 ::: {.definition}
 For $X \in \Sch\slice S$ and $T \in \Sch\slice S$, a \dfn{$T$-valued point} of $X$ is a morphism $T \to X$ over $S$.

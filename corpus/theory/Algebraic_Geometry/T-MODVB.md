@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-MODVB
 kind: definition
 title: Locally free sheaves are vector bundles
-slogan: 'Vector bundles and locally free sheaves are the same gluing data: transition functions in $\GL_n$, viewed geometrically or as sheaves of sections.'
 classification:
   areas:
   - algebraic-geometry
@@ -22,6 +21,8 @@ prompts:
 - What is the correspondence between locally free sheaves and vector bundles?
 - Which direction of the correspondence is the sheaf of sections?
 ---
+
+Vector bundles and locally free sheaves are the same gluing data: transition functions in $\GL_n$, viewed geometrically or as sheaves of sections.
 
 ::: {.definition title="Locally free"}
 $\mcf$ is \dfn{free} if $\mcf \cong \bigoplus_{i \in I} \OO_X$ for some index set $I$, whose cardinality is its rank; it is free of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$.

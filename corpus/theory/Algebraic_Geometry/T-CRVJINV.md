@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-CRVJINV
 kind: definition
 title: The $j$-invariant classifies elliptic curves
-slogan: 'The $j$-invariant is the coarse coordinate on elliptic curves: equal $j$ means isomorphic, and the special $j$-values are where automorphisms jump.'
 classification:
   areas:
   - algebraic-geometry
@@ -25,6 +24,8 @@ prompts:
 - How many automorphisms does an elliptic curve have?
 - What changes in characteristic $2$ and $3$?
 ---
+
+The $j$-invariant is the coarse coordinate on elliptic curves: equal $j$ means isomorphic, and the special $j$-values are where automorphisms jump.
 
 ::: {.definition title="$j$-invariant"}
 Let an elliptic curve be given by a Weierstrass equation

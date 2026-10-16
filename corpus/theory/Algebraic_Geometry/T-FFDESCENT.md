@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-FFDESCENT
 kind: definition
 title: Faithfully flat descent and the Amitsur complex
-slogan: 'Faithful flatness makes base change reversible: the Amitsur complex is exact, and $A$-modules are exactly $B$-modules with descent data.'
 classification:
   areas:
   - algebraic-geometry
@@ -21,6 +20,8 @@ prompts:
 - What is the Amitsur complex, and why is it exact for a faithfully flat ring map?
 - What is faithfully flat descent?
 ---
+
+Faithful flatness makes base change reversible: the Amitsur complex is exact, and $A$-modules are exactly $B$-modules with descent data.
 
 Let $\varphi \colon A \to B$ be a ring map, and write $B^{\otimes n} = B \otimes_A \cdots \otimes_A B$ with $n$ factors.
 

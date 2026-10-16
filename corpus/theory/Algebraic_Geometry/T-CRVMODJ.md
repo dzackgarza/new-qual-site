@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-CRVMODJ
 kind: definition
 title: The modular function $J(\tau) = g_2^3/\Delta$ and the $\SL_2(\ZZ)$-action on $\HH$
-slogan: '$J$ is the analytic moduli coordinate: two points of $\HH$ give the same elliptic curve exactly when they lie in one $\SL_2(\ZZ)$-orbit.'
 classification:
   areas:
   - algebraic-geometry
@@ -25,6 +24,8 @@ prompts:
 - When do two values of $\tau$ give isomorphic curves?
 - What is the fundamental domain, and what does uniqueness in it say about moduli?
 ---
+
+$J$ is the analytic moduli coordinate: two points of $\HH$ give the same elliptic curve exactly when they lie in one $\SL_2(\ZZ)$-orbit.
 
 ::: {.definition title="The modular function"}
 For $\tau\in\HH$, put

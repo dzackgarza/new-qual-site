@@ -113,10 +113,7 @@ def test_committed_projection_ignores_malformed_history_and_dirty_cards(tmp_path
     changed.write_text(problem("P-INCR-OLD", "Old identity", solved=False))
     removed.write_text(problem("P-INCR-REMOVE", "Deleted card", solved=False))
     renamed.write_text(problem("P-INCR-RENAME", "Renamed card $Format:%H$", solved=False))
-    (repo / ".gitattributes").write_text(
-        "corpus/collections/SRC-INCR/unrelated-filename.md export-ignore\n"
-        "corpus/collections/SRC-INCR/after.md export-subst\n"
-    )
+    (repo / ".gitattributes").write_text("corpus/collections/SRC-INCR/unrelated-filename.md export-ignore\ncorpus/collections/SRC-INCR/after.md export-subst\n")
     (repo / "queues").mkdir()
     assert run_queue(repo).returncode == 0
     changed.write_text(changed.read_text().replace("review: draft", "review: draft\naudit:\n- note: Source states: the complete claim"))

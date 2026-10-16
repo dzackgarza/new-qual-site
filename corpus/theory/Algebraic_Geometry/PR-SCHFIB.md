@@ -3,7 +3,6 @@ schema: qual/card@1
 id: PR-SCHFIB
 kind: example
 title: Scheme-theoretic fibres retain multiplicity and residue fields
-slogan: 'The fibre over $y$ is base change to $\Spec\kappa(y)$, retaining multiplicities and residue-field extensions that the set-theoretic fibre forgets.'
 classification:
   areas:
   - algebraic-geometry
@@ -19,6 +18,8 @@ prompts:
 - How does a scheme-theoretic fibre retain multiplicity and residue-field information that the set-theoretic preimage forgets?
 - For $K = \QQ(\sqrt 3)$, describe the fibres of $\Spec \OO_K \to \Spec \ZZ$ over each prime, and which primes split, are inert or ramify.
 ---
+
+The fibre over $y$ is base change to $\Spec\kappa(y)$, retaining multiplicities and residue-field extensions that the set-theoretic fibre forgets.
 
 ::: {.example}
 For the finite morphism

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-TORDIV
 kind: definition
 title: Divisors, class group and Picard group from the rays
-slogan: 'Toric divisor theory is linear algebra on the rays: characters give the relations, the cokernel is the class group, and $K_X=-\sum_\rho D_\rho$.'
 classification:
   areas:
   - algebraic-geometry
@@ -26,6 +25,8 @@ prompts:
 - How is a toric variety a GIT quotient, and when is that quotient geometric?
 - What is a primitive collection?
 ---
+
+Toric divisor theory is linear algebra on the rays: characters give the relations, the cokernel is the class group, and $K_X=-\sum_\rho D_\rho$.
 
 ::: {.theorem title="The two sequences"}
 Let $\Sigma$ have rays $\Sigma(1)$ with primitive generators $u_\rho$.

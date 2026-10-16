@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-U5QSY
 kind: definition
 title: The Jacobian, Abel's theorem, and the Abel--Jacobi map
-slogan: 'The Jacobian geometrizes degree-zero divisors: Abel kills exactly the principal ones, and Jacobi inversion reaches every divisor class.'
 classification:
   areas:
   - algebraic-geometry
@@ -24,6 +23,8 @@ prompts:
 - What is the significance of the Jacobian?
 - What kind of map is the Abel--Jacobi map, and what is it in genus $1$?
 ---
+
+The Jacobian geometrizes degree-zero divisors: Abel kills exactly the principal ones, and Jacobi inversion reaches every divisor class.
 
 ::: {.definition}
 Let $X$ be a smooth projective connected curve over $\CC$. Under the analytic identification from [[T-CRVJACFUN]],
