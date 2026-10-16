@@ -79,15 +79,9 @@ Since $\FF_q^\times$ is cyclic of order $q-1$, there are exactly $q-1$ such char
 
 Simplicity of the projective special linear group.
 
-:::
+::: pf-proof
 
-:::
-
-The classical theorem is
-\[
-\PSL_2(\FF_q)\text{ is simple for }q\ge4,
-\]
-with the small exceptions
+$\PSL_2(\FF_q)$ is simple for $q\ge4$, with the small exceptions
 \[
 \PSL_2(\FF_2)\cong S_3,
 \qquad
@@ -98,4 +92,8 @@ For example,
 \PSL_2(\FF_4)\cong A_5
 \]
 is simple.
+
+:::
+
+:::
 :::
