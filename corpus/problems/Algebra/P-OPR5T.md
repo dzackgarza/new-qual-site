@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OPR5T
 kind: problem
-title: Given a skew-symmetric/skew-Hermitian matrix S, show that
+title: The Cayley transform of a skew-symmetric or skew-Hermitian matrix is orthogonal or unitary
 classification:
   areas:
   - algebra
