@@ -24,58 +24,57 @@ We want to show that $F = E[\beta_1, \cdots \beta_m]$ where each $\beta_i$ satis
 :::
 
 ::: {.solution}
-**Theorem.**  
-Let $F=K(\alpha_1,\dots,\alpha_n)$ be radical over $K$, and let
-$K\subseteq E\subseteq F$.
-Then there exist $\beta_1,\dots,\beta_m\in F$ such that
+Let $F=K(\alpha_1,\dots,\alpha_n)$ be radical over $K$, and let $K\subseteq E\subseteq F$. We show there exist $\beta_1,\dots,\beta_m\in F$ such that
 $$
 F=E(\beta_1,\dots,\beta_m),\qquad \beta_r^{N_r}\in E(\beta_1,\dots,\beta_{r-1})\text{ for some }N_r>0.
 $$
 
-**Proof.**
-1. Define
-$$
-S:=\{\alpha_i:\alpha_i\notin E\}.
-$$
-Then $F=E(S)$ since $K\subseteq E$ and adjoining exactly the generators outside $E$
-produces $F$.
+::: pf
 
-2. List $S$ in increasing index order:
-$$
-\alpha_{i_1},\alpha_{i_2},\dots,\alpha_{i_m},\qquad i_1<\cdots<i_m.
-$$
-Then
-$$
-F=E(\alpha_{i_1},\dots,\alpha_{i_m}).
-$$
+::: pf-step
 
-3. Let
-$$
-E_0:=E,\qquad E_r:=E_{r-1}(\alpha_{i_r}),\ r=1,\dots,m.
-$$
-   3.1 For each $r$, there is $n_{i_r}>0$ with
-   $$
-   \alpha_{i_r}^{n_{i_r}}\in K[\alpha_1,\dots,\alpha_{i_r-1}]
-   $$
-   by the radical hypothesis.
-   Each factor on the right has index $<i_r$, hence is in $E_{r-1}$.
-   So
-   $$
-   \alpha_{i_r}^{n_{i_r}}\in E_{r-1}.
-   $$
-   Set $N_r:=n_{i_r}$.
+$F=E(S)$, where $S\definedas\{\alpha_i:\alpha_i\notin E\}$.
 
-4. By definition,
+::: pf-proof
+
+Since $K\subseteq E$, adjoining to $E$ exactly the generators $\alpha_i$ that lie outside $E$ still produces $F$.
+
+:::
+
+:::
+
+::: pf-step
+
+Listing $S=\{\alpha_{i_1},\alpha_{i_2},\dots,\alpha_{i_m}\}$ in increasing index order $i_1<\cdots<i_m$, the tower $E_0\definedas E$, $E_r\definedas E_{r-1}(\alpha_{i_r})$ satisfies $\alpha_{i_r}^{N_r}\in E_{r-1}$ for some $N_r>0$.
+
+::: pf-proof
+
+By the radical hypothesis there is $n_{i_r}>0$ with
 $$
-E_m=E(\alpha_{i_1},\dots,\alpha_{i_m})=E(S)=F.
+\alpha_{i_r}^{n_{i_r}}\in K[\alpha_1,\dots,\alpha_{i_r-1}].
 $$
-Thus taking $\beta_r:=\alpha_{i_r}$ gives
+Each factor on the right has index $<i_r$, hence is in $E_{r-1}$. So $\alpha_{i_r}^{n_{i_r}}\in E_{r-1}$; set $N_r\definedas n_{i_r}$.
+
+:::
+
+:::
+
+::: pf-step
+
+$E_m=F$, so $\beta_r\definedas\alpha_{i_r}$ gives the required radical tower over $E$.
+
+::: pf-proof
+
+By definition,
 $$
-F=E(\beta_1,\dots,\beta_m),
+E_m=E(\alpha_{i_1},\dots,\alpha_{i_m})=E(S)=F,
 $$
-and each step satisfies
-$$
-\beta_r^{N_r}\in E_{r-1}.
-$$
-Hence the tower is radical over $E$. ∎
+so $F=E(\beta_1,\dots,\beta_m)$, and each step satisfies $\beta_r^{N_r}\in E_{r-1}=E(\beta_1,\dots,\beta_{r-1})$. Hence the tower is radical over $E$.
+
+:::
+
+:::
+
+:::
+
 :::
