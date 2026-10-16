@@ -2,155 +2,43 @@
 schema: qual/card@1
 id: P-XTPAP
 kind: problem
-title: Homotopy types of the letters of the alphabet
+title: Homotopy and homeomorphism types of the letters of the alphabet
 classification:
   areas:
   - topology
   topics:
   - Homotopy
-  - Classification
+  - Homeomorphism
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-7. **Main Idea**: Nothing to it.
-   Homotopy:
-
-8. $A \homotopic \Delta \homotopic S^1$
-
-9. $a \homotopic d \homotopic o \homotopic S^1$
-
-10. $B \homotopic 8 \homotopic S^1 \vee S^1$
-
-11. $b \homotopic o \homotopic S^1$
-
-12. $C \homotopic *$
-
-13. $c \homotopic l \homotopic *$
-
-14. $D \homotopic S^1$
-
-15. $d \homotopic o \homotopic S^1$
-
-16. $E \homotopic *$
-
-17. $e \homotopic d \homotopic S^1$
-
-18. $F \homotopic *$
-
-19. $f \homotopic *$
-
-20. $G \homotopic *$
-
-21. $g \homotopic 8 \homotopic S^1 \vee S^1$
-
-22. $H \homotopic *$
-
-23. $h \homotopic l \homotopic *$
-
-24. $I \homotopic *$
-
-25. $i \homotopic \theset{*_1, *_2}$
-
-26. $J \homotopic *$
-
-27. $j \homotopic i \homotopic \theset{*_1, *_2}$
-
-28. $K \homotopic *$
-
-    1. $k \homotopic K \homotopic *$
-
-29. $L \homotopic *$
-
-    1. $l \homotopic *$
-
-30. $M \homotopic *$
-
-    1. $m \homotopic *$
-
-31. $N \homotopic *$
-
-    1. $n \homotopic *$
-
-32. $O \homotopic S^1$
-
-    1. $o \homotopic S^1$
-
-33. $P \homotopic D \homotopic S^1$
-
-    1. $p \homotopic P \homotopic S^1$
-
-34. $Q \homotopic O \homotopic S^1$
-
-    1. $q \homotopic p \homotopic o \homotopic S^1$
-
-35. $R \homotopic D \homotopic S^1$.
-
-    1. $r \homotopic l \homotopic S^1$
-
-36. $S \homotopic *$
-
-    1. $s \homotopic S \homotopic *$
-
-37. $T \homotopic *$
-
-    1. $t \homotopic l \homotopic *$
-
-38. $U \homotopic *$
-
-    1. $u \homotopic U \homotopic *$
-
-39. $V \homotopic *$
-
-    1. $v \homotopic V \homotopic *$
-
-40. $W \homotopic *$
-
-    1. $w \homotopic W \homotopic *$
-
-41. $X \homotopic *$
-
-    1. $x \homotopic X \homotopic *$
-
-42. $Y \homotopic *$
-
-    1. $y \homotopic v \homotopic *$
-
-43. $Z \homotopic *$
-
-    1. $z \homotopic Z \homotopic *$
-
-This results in a partition of the alphabet into the following homotopy types:
-
-- $\theset{A, D, O, P, Q, R, S^1}$ $\union \theset{a,b,d,e,g,o,p,q}$
-
-- $\theset{C, E, F, G, H, I, J, K, L, M, N, S, T, U, V, W, X ,Y, Z, *}$ $\union \theset{c,f,h,k,l,m,n,r,s,t,u,v,w,x,y,z}$
-
-- $\theset{B, S^1 \vee S^1}$
-
-- $\theset{i, j, \theset{*, *}}$
-
-Homeomorphisms: ignore ligatures!!
-
-1. $\theset{A, R}$ Can remove a point to obtain two components homeomorphic to $\theset{I, F}$ respectively.
-
-2. $\theset{D, O, S^1}$ These all have no single point that can be removed to disconnect the space.
-
-3. $\theset{B,S^1 \vee S^1}$ Remove point at junction
-
-4. $\theset{C, G, I, J, L, M, N, S, U, V, W, Z, [0,1]}$ These all have a point that can be removed to yield **two** components, but no points that yield **three**. (Intuitively, all can be obtained by twisting a straight wire.)
-
-5. $\theset{E, F, T, Y, \bigvee_{i=1}^3 [0,1]}$ These all have a point that can be removed to yield 3 connected components homeomorphic to $I$.
-   This is the "pasting" point in the vee.
-
-6. $\theset{H, K, \bigvee_{i=1}^5 [0,1]}$ Can remove **two** points to disconnect each into **five** components.
-
-7. $\theset{P, Q, S^1 \vee [0,1]}$ Both contain a nontrivial loop.
-
-8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$ Can remove **one** point to separate into **four** components.
+Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
+:::
+
+::: {.hint}
+Invariants that separate letters: the number of connected components after removing one or two points, and the presence of a nontrivial loop.
 :::
 
 ::: {.solution}
-The classifications depend on the chosen font or drawing; for example, a lowercase letter can have one or two components.
+Up to homotopy (ignoring font-dependent ligatures), each capital letter deformation-retracts onto one of: a point, $S^1$, $S^1\vee S^1$, or a two-point space.
+
+- $\{A, D, O, P, Q, R\}$ and the lowercase letters $\{a, b, d, e, g, o, p, q\}$ are homotopy equivalent to $S^1$: each carries exactly one loop.
+- $\{B\}$ is homotopy equivalent to $S^1\vee S^1$: two loops joined at a junction.
+- The letters $\{i, j\}$, drawn with detached dots, are homotopy equivalent to a two-point discrete space $\{*_1, *_2\}$.
+- Every remaining letter — $\{C, E, F, G, H, I, J, K, L, M, N, S, T, U, V, W, X, Y, Z\}$ and the dotless lowercase forms — is contractible.
+
+Up to homeomorphism, more invariants survive, since homotopy equivalence collapses the wire graphs:
+
+1. $\{A, R\}$: removing the junction point yields two components homeomorphic to $I$ and $F$ respectively.
+2. $\{D, O\}$: no single point removal disconnects the space; each is homeomorphic to $S^1$.
+3. $\{B\}$: removing the junction point of $S^1\vee S^1$ yields two arcs.
+4. $\{C, G, I, J, L, M, N, S, U, V, W, Z\}$: each has a point whose removal yields exactly two components and none yielding three — each is a straight wire up to twisting, homeomorphic to $[0,1]$.
+5. $\{E, F, T, Y\}$: each has a point (the pasting point of the vee) whose removal yields three components homeomorphic to $I$; these are homeomorphic to $\bigvee_{i=1}^3[0,1]$.
+6. $\{H, K\}$: removing two points disconnects into five components; homeomorphic to $\bigvee_{i=1}^5[0,1]$.
+7. $\{P, Q\}$: each contains a nontrivial loop with an attached arc; homeomorphic to $S^1\vee[0,1]$.
+8. $\{X\}$: removing one point yields four components; homeomorphic to $\bigvee_{i=1}^4[0,1]$.
+
+The classifications depend on the chosen font: a lowercase letter may have one or two components depending on whether its dot is detached.
 :::
