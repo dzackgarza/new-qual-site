@@ -24,7 +24,8 @@ prompts:
 At a toric fixed point, Hilbert-basis monomials form a basis of the cotangent space; smoothness forces exactly $n$ of them.
 
 ::: {.definition title="Hilbert basis"}
-Let $k$ be a field, let $N$ be a lattice of rank $n$, put $M\coloneqq\Hom(N,\ZZ)$, and let $\sigma\subseteq N_\RR$ be a full-dimensional strongly convex rational polyhedral cone. Then $\sigma^\perp=0$, and the distinguished orbit of $U_\sigma$ is a torus-fixed $k$-point $x_\sigma$.
+Let $k$ be a field, let $N$ be a lattice of rank $n$, put $M\coloneqq\Hom(N,\ZZ)$, and let $\sigma\subseteq N_\RR$ be a full-dimensional strongly convex rational polyhedral cone.
+Then $\sigma^\perp=0$, and the distinguished orbit of $U_\sigma$ is a torus-fixed $k$-point $x_\sigma$.
 The \dfn{Hilbert basis} of the pointed affine semigroup $S_\sigma=\sigma^\vee\cap M$ is
 $$
 \operatorname{Hilb}(S_\sigma)

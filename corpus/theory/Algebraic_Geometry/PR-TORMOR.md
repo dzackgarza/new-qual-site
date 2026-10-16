@@ -41,7 +41,8 @@ For $\PP^2$ with $T = \theset{(1 : s : t)}$ and $\lambda^u(t) = (1 : t^{u_1} : t
 :::
 
 ::: {.remark title="Topology over $\CC$"}
-Assume $k=\CC$ and give $X_\Sigma(\CC)$ its classical topology. Let
+Assume $k=\CC$ and give $X_\Sigma(\CC)$ its classical topology.
+Let
 $$
 N_\Sigma\coloneqq\generators{\sigma\cap N\st\sigma\in\Sigma}\subseteq N.
 $$
@@ -49,7 +50,8 @@ Then
 $$
 \pi_1\bigl(X_\Sigma(\CC)\bigr)\cong N/N_\Sigma
 $$
-[@Ful93, §3.2]. In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
+[@Ful93, §3.2].
+In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
 
 If $X_\Sigma$ is complete of dimension $n$, additivity of the topological Euler characteristic across the torus-orbit decomposition gives
 $$

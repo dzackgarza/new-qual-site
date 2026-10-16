@@ -39,7 +39,8 @@ Taking a rank-$n$ vector bundle $\pi: E \to X$ to its sheaf of sections $U \maps
 Both objects are glued from trivialisations on a cover and transition functions in $\GL_n(\OO_X(U_{ij}))$ satisfying the cocycle condition; the equivalence identifies these two constructions.
 
 A locally free sheaf is quasicoherent, and on a locally Noetherian scheme it is coherent when the rank is finite; local freeness additionally requires the transition maps to lie in $\GL_n$ on a trivializing cover.
-The fibre $\mcf \tensor \kappa(x)$ recovers the bundle's fibre. A coherent sheaf on a reduced locally Noetherian scheme is locally free exactly when the function
+The fibre $\mcf \tensor \kappa(x)$ recovers the bundle's fibre.
+A coherent sheaf on a reduced locally Noetherian scheme is locally free exactly when the function
 $$
 x\longmapsto\dim_{\kappa(x)}\bigl(\mcf\tensor_{\OO_X}\kappa(x)\bigr)
 $$

@@ -68,7 +68,8 @@ J(\rho) = 0, \quad j(\rho) = 0 ,
 $$
 The first holds because multiplication by $i$ preserves $\generators{1,i}$, so $g_3 = \sum \omega^{-6} \cdot 140 = i^{-6} g_3 = -g_3$ forces $g_3 = 0$ and $\Delta = g_2^3$.
 The second holds because multiplication by $\rho$ preserves $\generators{1,\rho}$, so $g_2 = \rho^{-4} g_2$ forces $g_2 = 0$.
-Many sources write $j=1728g_2^3/\Delta$ without introducing $J$. This is the same normalization used in [[T-CRVJINV]].
+Many sources write $j=1728g_2^3/\Delta$ without introducing $J$.
+This is the same normalization used in [[T-CRVJINV]].
 :::
 
 ::: {.remark}

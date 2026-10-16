@@ -27,7 +27,8 @@ prompts:
 The Jacobian geometrizes degree-zero divisors: Abel kills exactly the principal ones, and Jacobi inversion reaches every divisor class.
 
 ::: {.definition}
-Let $X$ be a smooth projective connected curve over $\CC$. Under the analytic identification from [[T-CRVJACFUN]],
+Let $X$ be a smooth projective connected curve over $\CC$.
+Under the analytic identification from [[T-CRVJACFUN]],
 $$
 \Jac(X)(\CC)
 \cong
@@ -57,11 +58,13 @@ $$
 :::
 
 ::: {.theorem title="Jacobi inversion"}
-The Abel--Jacobi map is surjective. Equivalently, every point of $\Jac(X)(\CC)$ is represented by a degree-zero divisor class on $X$.
+The Abel--Jacobi map is surjective.
+Equivalently, every point of $\Jac(X)(\CC)$ is represented by a degree-zero divisor class on $X$.
 :::
 
 ::: {.remark}
-Abel's theorem identifies the kernel of the integration map with principal divisors, and Jacobi inversion identifies its image with the whole Jacobian. Thus the analytic quotient and the algebraic group of degree-zero line bundles agree.
+Abel's theorem identifies the kernel of the integration map with principal divisors, and Jacobi inversion identifies its image with the whole Jacobian.
+Thus the analytic quotient and the algebraic group of degree-zero line bundles agree.
 
 Fixing a base point $p_0$ gives $X \to \Jac(X)$, $p \mapsto [p - p_0]$, which is an embedding for $g \geq 1$.
 In genus $1$ it is an isomorphism: an elliptic curve is its own Jacobian, and the group law on $E$ is the statement that $[p]+[q]=[r]+[0]$ exactly when $p+q=r$.

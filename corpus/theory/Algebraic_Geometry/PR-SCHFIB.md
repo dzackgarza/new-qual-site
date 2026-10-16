@@ -32,7 +32,8 @@ the fibre over the $k$-rational point $a$ is
 $$
 \Spec k[t]/(t^2-a).
 $$
-If $a\ne0$ and $\operatorname{char}k\ne2$, this is two reduced $k$-points when $a$ is a square in $k$, and one closed point with residue field $k(\sqrt a)$ when $a$ is not a square. The fibre over $0$ is
+If $a\ne0$ and $\operatorname{char}k\ne2$, this is two reduced $k$-points when $a$ is a square in $k$, and one closed point with residue field $k(\sqrt a)$ when $a$ is not a square.
+The fibre over $0$ is
 $$
 \Spec k[t]/(t^2),
 $$
@@ -40,7 +41,8 @@ a single nonreduced point of length $2$.
 :::
 
 ::: {.example title="$\QQ(\sqrt3)$ over $\QQ$"}
-Let $K=\QQ(\sqrt3)$. Since $\OO_K=\ZZ[\sqrt3]$, the fibre of
+Let $K=\QQ(\sqrt3)$.
+Since $\OO_K=\ZZ[\sqrt3]$, the fibre of
 $$
 \Spec\OO_K\longrightarrow\Spec\ZZ
 $$
@@ -50,10 +52,13 @@ $$
 $$
 
 - For $p=2$ or $p=3$, the polynomial has a double root, so $p$ ramifies and the fibre is one nonreduced point of length $2$.
+
 - For odd $p\ne3$ with $p\equiv1,11\pmod{12}$, the element $3$ is a quadratic residue modulo $p$, so the polynomial has two distinct roots and $p$ splits.
+
 - For odd $p\ne3$ with $p\equiv5,7\pmod{12}$, the polynomial is irreducible and $p$ is inert; the fibre is one reduced point with residue field $\FF_{p^2}$.
 :::
 
 ::: {.remark}
-These examples exhibit the information retained by the fibre scheme from [[D-MORFIB]]: nilpotents record ramification multiplicity, while residue fields record nonsplit points. In both examples the morphism is finite locally free of rank $2$, so every fibre has scheme-theoretic length $2$ even though the number of underlying points varies.
+These examples exhibit the information retained by the fibre scheme from [[D-MORFIB]]: nilpotents record ramification multiplicity, while residue fields record nonsplit points.
+In both examples the morphism is finite locally free of rank $2$, so every fibre has scheme-theoretic length $2$ even though the number of underlying points varies.
 :::
