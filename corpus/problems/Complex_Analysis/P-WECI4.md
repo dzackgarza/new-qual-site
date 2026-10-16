@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WECI4
 kind: problem
-title: Arbitrary Rouché, $R\mathbb{D}$
+title: A monic polynomial with coefficient bounds has $d$ zeros in $\abs{z}<R$
 classification:
   areas:
   - complex-analysis
@@ -24,8 +24,11 @@ $\abs{a_k}< {R^k \over d}$ for every $k$ (noting the strict inequality).
 
 :::
 
+::: {.hint}
+Compare $p$ with $z^d$ on $\abs{z}=R$ and apply Rouché's theorem; the hypothesis on the coefficients makes the remaining terms small.
+:::
+
 ::: {.solution}
-Strategy: bound the difference.
 Find the big and small term:
 
 - Big: $F(z) = z^d$, so $\abs{F(z)} = R^d$ on $\abs{z} = R$.
