@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SQ4GJ
 kind: problem
-title: Expansion for a reciprocal
+title: Laurent expansion of $1/(e^z-1)$ at the origin
 classification:
   areas:
   - complex-analysis
@@ -22,8 +22,11 @@ f(z) = {1\over e^z-1}
 
 :::
 
+::: {.hint}
+Divide $1$ by the power series for $e^z - 1$, or rewrite the reciprocal as a geometric series in that expansion.
+:::
+
 ::: {.solution}
-One way: polynomial long division.
 \[
 {1\over e^z-1}
 &= {1\over z + {1\over 2}z^2 + {1\over 6}z^2 + \cdots } \\
