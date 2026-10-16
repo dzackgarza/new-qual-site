@@ -84,7 +84,8 @@ In particular $S^2$ and $S^3$ are not homeomorphic.
 ::: pf-proof
 
 Removing two points from a sphere preserves homeomorphism type under any hypothetical homeomorphism. But
-$$S^2\setminus\{p,q\}\simeq S^1,\qquad S^3\setminus\{p',q'\}\simeq S^2.$$
+$$S^2\setminus\{p,q\}\simeq S^1,\qquad S^3\setminus\{p',q'\}\simeq S^2,$$
+where the first equivalence is the deformation retraction of [[P-6DZST]].
 Their fundamental groups are $\mathbb Z$ and $0$, so the punctured spaces are not homotopy equivalent, hence cannot be homeomorphic.
 
 :::
