@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B4WQK
 kind: problem
-title: A function continuous on $\mathbb{C}$ and holomorphic off $\mathbb{R}$ is entire
+title: Continuous on $\CC$ and holomorphic off $\RR$ implies entire
 classification:
   areas:
   - complex-analysis
@@ -18,13 +18,13 @@ review: draft
 Suppose that $f: \CC\to\CC$ is continuous everywhere and analytic on $\CC\setminus \RR$ and prove that $f$ is entire.
 :::
 
-::: {.solution}
-::: {.concept}
+::: {.hint}
+Take a disc $D$ centered at a point of $\RR$ and show $f$ is holomorphic in $D$ by Morera's theorem.
 :::
 
-- Note $f$ is continuous on $\CC$ since analytic implies continuous ($f$ equals its power series, where the partials sums uniformly converge to it, and uniform limit of continuous is continuous).
+::: {.solution}
 
-- Strategy: take $D$ a disc centered at a point $x\in \RR$, show $f$ is holomorphic in $D$ by Morera's theorem.
+- Note $f$ is continuous on $\CC$ since analytic implies continuous ($f$ equals its power series, where the partials sums uniformly converge to it, and uniform limit of continuous is continuous).
 
 - Let $\Delta \subset D$ be a triangle in $D$.
 
@@ -56,4 +56,8 @@ Suppose that $f: \CC\to\CC$ is continuous everywhere and analytic on $\CC\setmin
 - Case 3: $\Delta$ intersects both $\HH^+$ and $\HH^-$.
 
   - Break into smaller triangles, each of which falls into one of the previous two cases.
+:::
+
+::: {.remark}
+The proof of holomorphicity across the line is the same argument that proves the Schwarz reflection theorem.
 :::
