@@ -18,7 +18,6 @@ source:
   - id: E-23SLE
   - id: E-2JG2B
   - id: E-2KJEL
-  - id: E-2ZO7O
   - id: E-44SHD
   - id: E-47X7Y
   - id: E-4TDW7
@@ -105,7 +104,6 @@ source:
   - id: E-AMD-KDSJ3FW4
   - id: E-AMD-KGEXBKIW
   - id: E-AMD-KJ3EIH6T
-  - id: E-AMD-KJNCPPCB
   - id: E-AMD-KRMOU3CI
   - id: E-AMD-LDJWILVY
   - id: E-AMD-LJNBDMIP
@@ -246,7 +244,6 @@ source:
   - id: P-36P3M
   - id: P-3B2V4
   - id: P-3BNEC
-  - id: P-3EZG5
   - id: P-3HAZ4
   - id: P-3IRB7
   - id: P-3JNFF
@@ -761,7 +758,6 @@ source:
   - id: P-VN6VF
   - id: P-VPB55
   - id: P-VSGSG
-  - id: P-VTB5V
   - id: P-VTQYH
   - id: P-VXX34
   - id: P-VYWQS
