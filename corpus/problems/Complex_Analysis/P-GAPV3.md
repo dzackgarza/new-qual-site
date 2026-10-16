@@ -21,8 +21,10 @@ For $s>0$, the **gamma function** is defined by $\displaystyle{\Gamma(s)=\int_0^
 - Show that the gamma function is analytic in the half-plane $\Re (s)>0$, and is still given there by the integral formula above.
 
 - Apply the formula in the previous question to show that $$\Gamma(s)\Gamma(1-s)=\frac{\pi}{\sin \pi s}.$$
+:::
 
-> Hint: You may need $\displaystyle{\Gamma(1-s)=t \int_0^{\infty}e^{-vt}(vt)^{-s} dv}$ for $t>0$.
+::: {.hint}
+The change of variables $u=vt$ gives $\displaystyle{\Gamma(1-s)=t \int_0^{\infty}e^{-vt}(vt)^{-s} dv}$ for $t>0$.
 :::
 
 ::: {.solution}
