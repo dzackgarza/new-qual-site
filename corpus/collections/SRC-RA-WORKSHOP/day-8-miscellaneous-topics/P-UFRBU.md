@@ -81,3 +81,5 @@ Step [](#s3){.pf-ref} proves bounded variation and the exact variation formula.
 :::
 
 :::
+
+:::

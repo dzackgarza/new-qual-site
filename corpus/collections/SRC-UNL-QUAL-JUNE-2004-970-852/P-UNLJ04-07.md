@@ -376,21 +376,21 @@ $$
 Exactly two edges leave it:
 
 1. the unique edge from
-$$
-A
-$$
-to
-$$
-u;
-$$
+   $$
+   A
+   $$
+   to
+   $$
+   u;
+   $$
 2. the unique edge from
-$$
-v
-$$
-to
-$$
-B.
-$$
+   $$
+   v
+   $$
+   to
+   $$
+   B.
+   $$
 
 Deleting these two edges disconnects the graph, contradicting $3$-edge-connectivity.
 

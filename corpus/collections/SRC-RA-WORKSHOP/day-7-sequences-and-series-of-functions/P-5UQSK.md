@@ -87,7 +87,5 @@ Step [](#s2){.pf-ref} proves equicontinuity on $[a,b]$.
 
 :::
 
-:::
-
 For every $f\in\mathcal F$, the same Lipschitz estimate also gives the uniform bound $|f(x)|\le M+M(b-a)$, using $|f(a)|\le M$.
 :::
