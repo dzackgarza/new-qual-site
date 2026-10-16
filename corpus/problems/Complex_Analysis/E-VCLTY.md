@@ -22,8 +22,11 @@ f(z) \definedas {z+1 \over z(z-1)}
 
 :::
 
+::: {.hint}
+Expand $f$ in powers of $(z - z_0)$ about each point.
+:::
+
 ::: {.solution}
-Note: once you see that everything is in terms of powers of $(z-z_0)$, you're essentially done.
 For $z=0$:
 \[
 {z+1 \over z(z-1)}
