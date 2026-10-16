@@ -10,8 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SCRIPT = ROOT / "tools" / "unsolved_queue.py"
 
 
-def problem(card_id: str, title: str, *, solved: bool, solution_fence: str = ":::") -> str:
-    solution = f"\n{solution_fence} {{.solution}}\nDone.\n{solution_fence}\n" if solved else ""
+def unsolved_problem(card_id: str, title: str) -> str:
     return f"""---
 schema: qual/card@1
 id: {card_id}
@@ -27,7 +26,11 @@ review: draft
 ::: {{.problem}}
 Prove the claim.
 :::
-{solution}"""
+"""
+
+
+def solved_problem(card_id: str, title: str, *, solution_fence: str = ":::") -> str:
+    return unsolved_problem(card_id, title) + f"\n{solution_fence} {{.solution}}\nDone.\n{solution_fence}\n"
 
 
 def run_queue(repo: Path, *args: str) -> subprocess.CompletedProcess[str]:
@@ -45,8 +48,8 @@ def test_incremental_range_matches_full_rebuild_over_committed_changes(tmp_path:
     repo = fixture_repo(tmp_path)
     collection = repo / "corpus" / "collections" / "SRC-INCR"
     collection.mkdir(parents=True)
-    (collection / "P-INCR-GAIN.md").write_text(problem("P-INCR-GAIN", "Gains a solution", solved=False))
-    (collection / "P-INCR-LOSE.md").write_text(problem("P-INCR-LOSE", "Loses a solution", solved=True))
+    (collection / "P-INCR-GAIN.md").write_text(unsolved_problem("P-INCR-GAIN", "Gains a solution"))
+    (collection / "P-INCR-LOSE.md").write_text(solved_problem("P-INCR-LOSE", "Loses a solution"))
     (repo / "queues").mkdir()
     assert run_queue(repo).returncode == 0
 
@@ -57,9 +60,9 @@ def test_incremental_range_matches_full_rebuild_over_committed_changes(tmp_path:
     subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "baseline"], cwd=repo, check=True)
     base = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo, check=True, capture_output=True, text=True).stdout.strip()
 
-    (collection / "P-INCR-GAIN.md").write_text(problem("P-INCR-GAIN", "Gains a solution", solved=True))
-    (collection / "P-INCR-LOSE.md").write_text(problem("P-INCR-LOSE", "Loses a solution", solved=False))
-    (collection / "P-INCR-NEW.md").write_text(problem("P-INCR-NEW", "Arrives unsolved", solved=False))
+    (collection / "P-INCR-GAIN.md").write_text(solved_problem("P-INCR-GAIN", "Gains a solution"))
+    (collection / "P-INCR-LOSE.md").write_text(unsolved_problem("P-INCR-LOSE", "Loses a solution"))
+    (collection / "P-INCR-NEW.md").write_text(unsolved_problem("P-INCR-NEW", "Arrives unsolved"))
     subprocess.run(["git", "add", "corpus"], cwd=repo, check=True)
     subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "content"], cwd=repo, check=True)
 
@@ -77,7 +80,7 @@ def test_incremental_range_recognizes_nested_solution_fences(tmp_path: Path) -> 
     repo = fixture_repo(tmp_path)
     collection = repo / "corpus" / "collections" / "SRC-INCR"
     collection.mkdir(parents=True)
-    (collection / "P-INCR.md").write_text(problem("P-INCR", "Nested solution", solved=False))
+    (collection / "P-INCR.md").write_text(unsolved_problem("P-INCR", "Nested solution"))
     (repo / "queues").mkdir()
     assert run_queue(repo).returncode == 0
 
@@ -88,7 +91,7 @@ def test_incremental_range_recognizes_nested_solution_fences(tmp_path: Path) -> 
     subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "baseline"], cwd=repo, check=True)
     base = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo, check=True, capture_output=True, text=True).stdout.strip()
 
-    (collection / "P-INCR.md").write_text(problem("P-INCR", "Nested solution", solved=True, solution_fence=":::::"))
+    (collection / "P-INCR.md").write_text(solved_problem("P-INCR", "Nested solution", solution_fence=":::::"))
     subprocess.run(["git", "add", "corpus"], cwd=repo, check=True)
     subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "solution"], cwd=repo, check=True)
 
@@ -110,9 +113,9 @@ def test_committed_projection_ignores_malformed_history_and_dirty_cards(tmp_path
     changed = collection / "unrelated-filename.md"
     removed = collection / "removed.md"
     renamed = collection / "before.md"
-    changed.write_text(problem("P-INCR-OLD", "Old identity", solved=False))
-    removed.write_text(problem("P-INCR-REMOVE", "Deleted card", solved=False))
-    renamed.write_text(problem("P-INCR-RENAME", "Renamed card $Format:%H$", solved=False))
+    changed.write_text(unsolved_problem("P-INCR-OLD", "Old identity"))
+    removed.write_text(unsolved_problem("P-INCR-REMOVE", "Deleted card"))
+    renamed.write_text(unsolved_problem("P-INCR-RENAME", "Renamed card $Format:%H$"))
     (repo / ".gitattributes").write_text("corpus/collections/SRC-INCR/unrelated-filename.md export-ignore\ncorpus/collections/SRC-INCR/after.md export-subst\n")
     (repo / "queues").mkdir()
     assert run_queue(repo).returncode == 0
@@ -124,7 +127,7 @@ def test_committed_projection_ignores_malformed_history_and_dirty_cards(tmp_path
     subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "malformed historical audit"], cwd=repo, check=True)
     base = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo, check=True, capture_output=True, text=True).stdout.strip()
 
-    changed.write_text(problem("P-INCR-NEW-ID", "Current identity", solved=False))
+    changed.write_text(unsolved_problem("P-INCR-NEW-ID", "Current identity"))
     removed.unlink()
     renamed.rename(collection / "after.md")
     subprocess.run(["git", "add", "corpus"], cwd=repo, check=True)
@@ -133,11 +136,11 @@ def test_committed_projection_ignores_malformed_history_and_dirty_cards(tmp_path
     assert full.returncode == 0, full.stdout + full.stderr
     expected = (repo / "queues" / "C-unsolved-cards.md").read_bytes()
 
-    changed.write_text(problem("P-STAGED", "Staged identity", solved=False))
+    changed.write_text(unsolved_problem("P-STAGED", "Staged identity"))
     subprocess.run(["git", "add", str(changed.relative_to(repo))], cwd=repo, check=True)
-    changed.write_text(problem("P-DIRTY", "Uncommitted identity", solved=True))
+    changed.write_text(solved_problem("P-DIRTY", "Uncommitted identity"))
     (collection / "after.md").write_text("---\nmalformed: audit: text\n---\n")
-    (collection / "untracked.md").write_text(problem("P-UNTRACKED", "Untracked card", solved=False))
+    (collection / "untracked.md").write_text(unsolved_problem("P-UNTRACKED", "Untracked card"))
     result = run_queue(repo, "--incremental-range", base)
     assert result.returncode == 0, result.stdout + result.stderr
     actual = (repo / "queues" / "C-unsolved-cards.md").read_bytes()
@@ -160,7 +163,7 @@ def test_committed_projection_ignores_malformed_history_and_dirty_cards(tmp_path
     assert rejected.returncode != 0
     assert (repo / "queues" / "C-unsolved-cards.md").read_bytes() == expected
 
-    changed.write_text(problem("P-INCR-RENAME", "Duplicate solved identity", solved=True))
+    changed.write_text(solved_problem("P-INCR-RENAME", "Duplicate solved identity"))
     subprocess.run(["git", "add", str(changed.relative_to(repo))], cwd=repo, check=True)
     subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "duplicate current identity"], cwd=repo, check=True)
     duplicate = run_queue(repo, "--incremental-range", base)
