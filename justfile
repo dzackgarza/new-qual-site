@@ -84,6 +84,9 @@ complete *args:
 
 # Regenerate BACKLOG.md unless already current for HEAD (runs before every push)
 backlog:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    source "$HOME/ai-review-ci/tool-artifacts/scripts/heavy-gate-lock.sh"
     uv run python tools/backlog.py
 
 # Sample up to n unsolved card IDs and show their appearances in source order
