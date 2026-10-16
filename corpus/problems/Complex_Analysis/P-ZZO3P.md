@@ -19,14 +19,14 @@ review: draft
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 :::
 
-::: {.solution}
-::: {.concept}
-
+::: {.hint}
+Argue by contradiction: if a nonconstant polynomial had no roots, $1/p$ would be a bounded entire function, and Liouville's theorem applies.
 :::
-- Strategy: By contradiction with Liouville's Theorem
+
+::: {.solution}
 - Suppose $p$ is non-constant and has no roots.
 - Claim: $1/p(z)$ is a bounded holomorphic function on $\CC$.
-  - Holomorphic: clear? Since $p$ has no roots.
+  - Holomorphic: since $p$ has no roots.
   - Bounded: for $z\neq 0$, write
     \begin{align*}
     \frac{P(z)}{z^{n}}=a_{n}+\left(\frac{a_{n-1}}{z}+\cdots+\frac{a_{0}}{z^{n}}\right)
