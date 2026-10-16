@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-USHMH
 kind: problem
-title: Product of sines $\sin(k\pi/n)$ via roots of unity
+title: Complex analysis review sheet, from products of sines to series of univalent images
 classification:
   areas:
   - complex-analysis

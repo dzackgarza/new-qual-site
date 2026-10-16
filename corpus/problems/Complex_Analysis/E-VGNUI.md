@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-VGNUI
 kind: problem
-title: Equality of different integrals
+title: $\int_\gamma \frac{f'(z)}{z-a}\,dz = \int_\gamma \frac{f(z)}{(z-a)^2}\,dz$ for holomorphic $f$
 classification:
   areas:
   - complex-analysis

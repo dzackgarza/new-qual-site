@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-Z23VB
 kind: problem
-title: Conformal maps to arbitrary points
+title: A Möbius transformation sending $1\mapsto 3$, $i\mapsto 0$, $2\mapsto -1$
 classification:
   areas:
   - complex-analysis
