@@ -18,6 +18,7 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
+
 ::: {.problem}
 Let $f_n \colon [0,1) \to \mathbb{R}$ be the function defined by $$f_n(x):= \sum_{k=1}^n \frac{x^k}{1+x^k}.$$
 
@@ -54,7 +55,8 @@ For every $0<a<1$, the sequence $f_n=\sum_{k=1}^n g_k$ converges uniformly to $f
 
 ::: pf-proof
 
-For all $x\in[0,a]$, $|g_k(x)|\le a^k$. Since $\sum_{k\ge1}a^k$ converges, the Weierstrass M-test gives uniform convergence of the series on $[0,a]$.
+For all $x\in[0,a]$, $|g_k(x)|\le a^k$.
+Since $\sum_{k\ge1}a^k$ converges, the Weierstrass M-test gives uniform convergence of the series on $[0,a]$.
 
 :::
 
@@ -70,7 +72,9 @@ The quotient rule gives
 \[
 g_k'(x)=\frac{kx^{k-1}}{(1+x^k)^2}.
 \]
-For $0\le x\le a$, the denominator is at least $1$, hence $|g_k'(x)|\le ka^{k-1}$. The numerical series $\sum_{k\ge1}ka^{k-1}$ converges, for instance by the ratio test since the ratio of consecutive terms tends to $a<1$. The M-test proves uniform convergence of the derivative series.
+For $0\le x\le a$, the denominator is at least $1$, hence $|g_k'(x)|\le ka^{k-1}$.
+The numerical series $\sum_{k\ge1}ka^{k-1}$ converges, for instance by the ratio test since the ratio of consecutive terms tends to $a<1$.
+The M-test proves uniform convergence of the derivative series.
 
 :::
 
@@ -85,7 +89,10 @@ The limit $f$ is differentiable on $(0,1)$, with
 
 ::: pf-proof
 
-Fix $x\in(0,1)$ and choose $a$ with $x<a<1$. By step [](#s2){.pf-ref}, the partial sums converge at $0$ (indeed $f_n(0)=0$), and by step [](#s3){.pf-ref} their derivatives converge uniformly on $[0,a]$. The term-by-term differentiation theorem therefore gives differentiability of $f$ on $(0,a)$ and the displayed formula at $x$. Since $x$ was arbitrary, the result holds throughout $(0,1)$.
+Fix $x\in(0,1)$ and choose $a$ with $x<a<1$.
+By step [](#s2){.pf-ref}, the partial sums converge at $0$ (indeed $f_n(0)=0$), and by step [](#s3){.pf-ref} their derivatives converge uniformly on $[0,a]$.
+The term-by-term differentiation theorem therefore gives differentiability of $f$ on $(0,a)$ and the displayed formula at $x$.
+Since $x$ was arbitrary, the result holds throughout $(0,1)$.
 
 :::
 

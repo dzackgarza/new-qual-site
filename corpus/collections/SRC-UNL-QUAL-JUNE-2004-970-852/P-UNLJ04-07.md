@@ -19,8 +19,8 @@ audit:
 a. Prove that every cubic 3 edge-connected graph is 3-connected.
 
 b. Let us define a snarl as a graph that can be obtained from $K _ { 4 }$ by repeated applications of the operation of subdividing two edges and joining the two new vertices.
-Show that every snarl is 3-connected.
-(In fact it is true that every 3-connected cubic graph is a snarl.)
+   Show that every snarl is 3-connected.
+   (In fact it is true that every 3-connected cubic graph is a snarl.)
 :::
 
 ::: {.solution}
@@ -28,7 +28,8 @@ Show that every snarl is 3-connected.
 $$
 G
 $$
-be cubic and $3$-edge-connected. Then
+be cubic and $3$-edge-connected.
+Then
 $$
 G
 $$
@@ -39,7 +40,8 @@ Suppose
 $$
 v
 $$
-were a cut vertex. Then
+were a cut vertex.
+Then
 $$
 G-v
 $$
@@ -49,7 +51,8 @@ The three edges incident to
 $$
 v
 $$
-are distributed among these components. Hence some component
+are distributed among these components.
+Hence some component
 $$
 C
 $$
@@ -131,7 +134,8 @@ Those are all edges from
 $$
 C
 $$
-to its complement. Deleting them disconnects
+to its complement.
+Deleting them disconnects
 $$
 G,
 $$
@@ -165,7 +169,8 @@ For either component, the set of edges joining it to
 $$
 \{u,v\}
 $$
-is exactly the edge boundary of that component. If this boundary has size at most
+is exactly the edge boundary of that component.
+If this boundary has size at most
 $$
 2,
 $$
@@ -215,7 +220,8 @@ and
 $$
 v
 $$
-have only six incident edge slots in total. Thus both boundaries have size exactly
+have only six incident edge slots in total.
+Thus both boundaries have size exactly
 $$
 3.
 $$
@@ -383,6 +389,7 @@ Exactly two edges leave it:
    $$
    u;
    $$
+
 2. the unique edge from
    $$
    v
@@ -449,7 +456,8 @@ or
 $$
 K_2,
 $$
-both connected. Hence
+both connected.
+Hence
 $$
 K_4
 $$
@@ -460,7 +468,8 @@ is $3$-connected.
 $$
 G
 $$
-be a cubic $3$-connected graph. Form
+be a cubic $3$-connected graph.
+Form
 $$
 G'
 $$
@@ -511,7 +520,8 @@ and
 $$
 b
 $$
-do not change. Likewise the degrees of
+do not change.
+Likewise the degrees of
 $$
 c
 $$
@@ -625,7 +635,8 @@ then
 $$
 G'-S
 $$
-is connected. The same holds with
+is connected.
+The same holds with
 $$
 x
 $$
@@ -644,7 +655,8 @@ is $3$-connected,
 $$
 G-z
 $$
-is $2$-connected whenever it has at least three vertices. In particular it has no bridge.
+is $2$-connected whenever it has at least three vertices.
+In particular it has no bridge.
 
 Deleting
 $$
@@ -820,7 +832,8 @@ K_4
 $$
 is cubic and $3$-connected by step <1>8.
 
-Assume the current graph is cubic and $3$-connected. Applying one snarl operation produces a cubic graph by step <1>9 and a $3$-connected graph by step <1>13.
+Assume the current graph is cubic and $3$-connected.
+Applying one snarl operation produces a cubic graph by step <1>9 and a $3$-connected graph by step <1>13.
 
 Therefore every graph obtained from
 $$
