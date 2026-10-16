@@ -10,11 +10,12 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Direct inspection of page 3 of assets/attachments/topology_2005-2003.pdf confirms that the printed cyclic word is abaca^{-1}c^{-1}. Thus the source itself is inconsistent with its instruction to identify the six edges in pairs: a occurs three times, b once, and c twice.
+  note: "Direct inspection of page 3 of assets/attachments/topology_2005-2003.pdf confirms that the printed cyclic word is abaca^{-1}c^{-1}. Thus the source itself is inconsistent with its instruction to identify the six edges in pairs: a occurs three times, b once, and c twice."
 ---
 
 ::: {.problem}
 1. List the compact connected surfaces up to homeomorphism.
+
 2. Form a surface from a hexagon by identifying its boundary edges in pairs according to the cyclic word recovered as
    \[
    abac a^{-1}c^{-1},
@@ -45,16 +46,12 @@ $$
 real projective planes.
 :::
 
-<1>2. A hexagon whose six boundary edges are to be identified in pairs must
-have each edge-pair label occur exactly twice in the boundary word.
+<1>2. A hexagon whose six boundary edges are to be identified in pairs must have each edge-pair label occur exactly twice in the boundary word.
 
 ::: {.proof}
-Pairwise edge identification partitions the six boundary edges into three
-two-element subsets.
+Pairwise edge identification partitions the six boundary edges into three two-element subsets.
 
-If the usual polygon-word notation labels the two members of one pair by
-the same letter, with an inverse exponent recording reversal of orientation,
-then every label necessarily appears exactly twice.
+If the usual polygon-word notation labels the two members of one pair by the same letter, with an inverse exponent recording reversal of orientation, then every label necessarily appears exactly twice.
 :::
 
 <1>3. In the printed source word
@@ -91,12 +88,10 @@ $$
 The inverse signs affect orientation, not which label occurs.
 :::
 
-<1>4. Therefore the printed data do not specify a pairing of the six
-boundary edges.
+<1>4. Therefore the printed data do not specify a pairing of the six boundary edges.
 
 ::: {.proof}
-By step <1>2, every label in a valid pair-identification word must occur
-exactly twice.
+By step <1>2, every label in a valid pair-identification word must occur exactly twice.
 Step <1>3 violates this condition for both
 $$
 a
@@ -117,19 +112,14 @@ $$
 -edge has no partner.
 :::
 
-<1>5. Consequently, no quotient surface is determined by the problem as
-printed.
+<1>5. Consequently, no quotient surface is determined by the problem as printed.
 
 ::: {.proof}
-The requested quotient depends on an equivalence relation pairing boundary
-edges.
-Step <1>4 shows that the printed labeling does not define such an
-equivalence relation.
+The requested quotient depends on an equivalence relation pairing boundary edges.
+Step <1>4 shows that the printed labeling does not define such an equivalence relation.
 
-Different corrections of the apparent typo can lead to different polygon
-words and hence to different quotient surfaces.
-Therefore a particular compact connected surface cannot be inferred
-uniquely from the retained source.
+Different corrections of the apparent typo can lead to different polygon words and hence to different quotient surfaces.
+Therefore a particular compact connected surface cannot be inferred uniquely from the retained source.
 :::
 
 <1>6. Hence the complete answer to the printed problem is:
@@ -141,10 +131,7 @@ $$
 
 ::: {.proof}
 Step <1>1 answers the classification request.
-Steps <1>2--<1>5 prove that the source's boundary word cannot encode the
-claimed pairwise edge identification, so there is no mathematically
-determined surface to classify without an external correction to the
-source.
+Steps <1>2--<1>5 prove that the source's boundary word cannot encode the claimed pairwise edge identification, so there is no mathematically determined surface to classify without an external correction to the source.
 :::
 
 <1>7. Q.E.D.
