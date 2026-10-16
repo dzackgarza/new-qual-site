@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X1WOB
 kind: problem
-title: -- What does it mean for a series to converge? How can you check this?
+title: Convergence of series: small tails and the standard convergence tests
 classification:
   areas:
   - real-analysis
