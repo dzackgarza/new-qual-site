@@ -18,10 +18,13 @@ Show that if $f$ and $\bar{f}$ are both holomorphic on a domain $\Omega$, then $
 
 :::
 
+::: {.hint}
+Show that $f'=0$ on $\Omega$, and conclude by connectedness.
+:::
+
 ::: {.solution}
 \envlist
 
-- Strategy: show $f'=0$.
 - Write $f = u + iv$. 
   Since $f$ is analytic, it satisfies CR, so 
   \[
