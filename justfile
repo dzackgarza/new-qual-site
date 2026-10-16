@@ -121,9 +121,10 @@ _macros-push:
     uv run python tools/sync_macros.py --check
 
 # Update Queue C over the commits being pushed. Content commits run no gate, so the queue is
-# regenerated here from the upstream queue and the pushed card diff; `just unsolved` remains
-# the independent full rebuild. A queue that moved is committed and this push is refused, so
-# the next push carries the regenerated queue with the cards that changed it.
+# regenerated here from exact committed HEAD card blobs, without historical YAML or dirty
+# corpus files; `just unsolved` remains the independent full rebuild. A queue that moved
+# is committed and this push is refused, so the next push carries the regenerated queue
+# with the cards that changed it.
 [private]
 _unsolved-push:
     #!/usr/bin/env bash

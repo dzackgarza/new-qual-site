@@ -100,3 +100,72 @@ def test_incremental_range_recognizes_nested_solution_fences(tmp_path: Path) -> 
     assert full.returncode == 0, full.stdout + full.stderr
     assert incremental_bytes == (repo / "queues" / "C-unsolved-cards.md").read_bytes()
     assert "P-INCR" not in incremental_bytes.decode()
+
+
+def test_committed_projection_ignores_malformed_history_and_dirty_cards(tmp_path: Path) -> None:
+    """The pushed snapshot determines membership even when its history cannot parse."""
+    repo = fixture_repo(tmp_path)
+    collection = repo / "corpus" / "collections" / "SRC-INCR"
+    collection.mkdir(parents=True)
+    changed = collection / "unrelated-filename.md"
+    removed = collection / "removed.md"
+    renamed = collection / "before.md"
+    changed.write_text(problem("P-INCR-OLD", "Old identity", solved=False))
+    removed.write_text(problem("P-INCR-REMOVE", "Deleted card", solved=False))
+    renamed.write_text(problem("P-INCR-RENAME", "Renamed card $Format:%H$", solved=False))
+    (repo / ".gitattributes").write_text(
+        "corpus/collections/SRC-INCR/unrelated-filename.md export-ignore\n"
+        "corpus/collections/SRC-INCR/after.md export-subst\n"
+    )
+    (repo / "queues").mkdir()
+    assert run_queue(repo).returncode == 0
+    changed.write_text(changed.read_text().replace("review: draft", "review: draft\naudit:\n- note: Source states: the complete claim"))
+    subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+    subprocess.run(["git", "config", "user.name", "Test"], cwd=repo, check=True)
+    subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=repo, check=True)
+    subprocess.run(["git", "add", "."], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "malformed historical audit"], cwd=repo, check=True)
+    base = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo, check=True, capture_output=True, text=True).stdout.strip()
+
+    changed.write_text(problem("P-INCR-NEW-ID", "Current identity", solved=False))
+    removed.unlink()
+    renamed.rename(collection / "after.md")
+    subprocess.run(["git", "add", "corpus"], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "repair and rename cards"], cwd=repo, check=True)
+    full = run_queue(repo)
+    assert full.returncode == 0, full.stdout + full.stderr
+    expected = (repo / "queues" / "C-unsolved-cards.md").read_bytes()
+
+    changed.write_text(problem("P-STAGED", "Staged identity", solved=False))
+    subprocess.run(["git", "add", str(changed.relative_to(repo))], cwd=repo, check=True)
+    changed.write_text(problem("P-DIRTY", "Uncommitted identity", solved=True))
+    (collection / "after.md").write_text("---\nmalformed: audit: text\n---\n")
+    (collection / "untracked.md").write_text(problem("P-UNTRACKED", "Untracked card", solved=False))
+    result = run_queue(repo, "--incremental-range", base)
+    assert result.returncode == 0, result.stdout + result.stderr
+    actual = (repo / "queues" / "C-unsolved-cards.md").read_bytes()
+    assert actual == expected
+    assert 'P-INCR-NEW-ID — "Current identity"'.encode() in actual
+    assert 'P-INCR-RENAME — "Renamed card $Format:%H$"'.encode() in actual
+    assert b"P-INCR-OLD" not in actual
+    assert b"P-INCR-REMOVE" not in actual
+    assert b"P-DIRTY" not in actual
+    assert b"P-UNTRACKED" not in actual
+
+    assert b"P-STAGED" not in actual
+
+    # A malformed current committed card still rejects queue generation, even
+    # though historical malformed YAML no longer participates in the projection.
+    changed.write_text(changed.read_text().replace("review: draft", "review: draft\naudit:\n- note: Current states: an invalid mapping"))
+    subprocess.run(["git", "add", str(changed.relative_to(repo))], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "malformed current audit"], cwd=repo, check=True)
+    rejected = run_queue(repo, "--incremental-range", base)
+    assert rejected.returncode != 0
+    assert (repo / "queues" / "C-unsolved-cards.md").read_bytes() == expected
+
+    changed.write_text(problem("P-INCR-RENAME", "Duplicate solved identity", solved=True))
+    subprocess.run(["git", "add", str(changed.relative_to(repo))], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "core.hooksPath=/dev/null", "commit", "-qm", "duplicate current identity"], cwd=repo, check=True)
+    duplicate = run_queue(repo, "--incremental-range", base)
+    assert duplicate.returncode != 0
+    assert (repo / "queues" / "C-unsolved-cards.md").read_bytes() == expected
