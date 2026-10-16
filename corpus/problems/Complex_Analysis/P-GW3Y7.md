@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GW3Y7
 kind: problem
-title: Explicit Rouché, half-plane
+title: One solution of $-2e^z=z+3$ in the closed left half-plane by Rouché's theorem
 classification:
   areas:
   - complex-analysis
@@ -18,9 +18,10 @@ Find the number of solutions in $\theset{\Re(z) \leq 0}$ of
 \[
 -2e^z = z+3
 .\]
+:::
 
-> Hint: show $h(z) = z + 3 + 2e^z$ has one root in $\theset{ \Re(z) \leq 0}$.
-
+::: {.hint}
+Show $h(z) = z + 3 + 2e^z$ has one root in $\theset{ \Re(z) \leq 0}$.
 :::
 
 ::: {.solution}
