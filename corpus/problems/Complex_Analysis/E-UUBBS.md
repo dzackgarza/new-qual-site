@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UUBBS
 kind: problem
-title: Lune between circles
+title: Conformal map from the lune $\abs{z-i}<\sqrt2\cap\abs{z+i}<\sqrt2$ to $\DD$
 classification:
   areas:
   - complex-analysis

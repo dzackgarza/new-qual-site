@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-VS4XE
 kind: problem
-title: Lune with only one intersection point
+title: Conformal map from $\DD\setminus\theset{\abs{z-\frac12}=\frac12}$ to $\DD$
 classification:
   areas:
   - complex-analysis

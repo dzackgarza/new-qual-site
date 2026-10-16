@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WYJ7K
 kind: problem
-title: Lune, one intersection
+title: Conformal map from the lune between the tangent circles $\abs{z-i}=1$ and $\abs{z-i/2}=1/2$ to $\DD$
 classification:
   areas:
   - complex-analysis
