@@ -2651,6 +2651,15 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   their common first-quadrant region in text; its solution derives the source
   answer from those data.
 
+### UCSD covering-spaces subgroup matching card holds no recoverable posed task
+
+- **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
+- **Observed evidence:** the card body lists five subgroups of $\langle a,b\rangle$ and five images of covering diagrams, but no posed question. The retained source page (`Topology Problems (Solutions).md` in the UCSD quals compilation) reads only "Generators of the subgroups:" followed by the same list and the same images; the task the exam set is not stated in any retained bytes.
+- **Searched:** the notes compilation, `UCSD_290_F14_sheet*` extractions, `UCSD_Topology_Qual_Problems_2020-05-29`, `UCSD_290_Qualifying_Exams`, and the `qual-wiki` UCSD finals. **Found:** the subgroup list and images only. **Conclusion:** the posed task (presumably matching each subgroup with the corresponding cover of $S^1\vee S^1$) is not recoverable from available sources. **Confidence:** high for absence from retained bytes. **Gaps:** the UCSD 290 covering-spaces problem sheet itself is not vendored in this repository.
+- **Impact and owner:** the card is not a self-contained problem; a solution cannot be authored without inventing the task. The five covering diagrams in `assets/Topology/650_UCSD_Qual_Questions/Quals/assets/` are the only record of the covers.
+- **Uncertainty:** the intended task is a plausible reconstruction, not a reading of any source.
+- **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
