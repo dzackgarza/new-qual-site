@@ -46,7 +46,7 @@ The comparison series converges, since
 $$
 \frac1{n(n+1)}
 =
-\frac1n-rac1{n+1}
+\frac1n-\frac1{n+1}
 $$
 telescopes.
 :::
@@ -62,8 +62,7 @@ The term magnitudes are
 $$
 \frac{|x|^{n-1}}{n(n+1)}.
 $$
-Exponential growth dominates the quadratic denominator, so these terms do not
-tend to $0$.
+Exponential growth dominates the quadratic denominator, so these terms do not tend to $0$.
 :::
 
 <1>3. Therefore the complete convergence set is
@@ -79,12 +78,11 @@ Combine steps <1>1--<1>2.
 $$
 \frac1{n(n+1)}
 =
-\frac1n-rac1{n+1}.
+\frac1n-\frac1{n+1}.
 $$
 
 ::: {.proof}
-Combine the two fractions on the right over the common denominator
-$n(n+1)$.
+Combine the two fractions on the right over the common denominator $n(n+1)$.
 :::
 
 <1>5. For $|x|<1$ and $x\neq0$,
@@ -99,7 +97,8 @@ S(x)
 $$
 
 ::: {.proof}
-Use step <1>4 term by term. Absolute convergence permits splitting the series.
+Use step <1>4 term by term.
+Absolute convergence permits splitting the series.
 :::
 
 <1>6. The first sum in step <1>5 is
@@ -156,8 +155,7 @@ S(x)
 $$
 
 ::: {.proof}
-Substitute steps <1>6--<1>7 into step <1>5 and combine over the denominator
-$x^2$.
+Substitute steps <1>6--<1>7 into step <1>5 and combine over the denominator $x^2$.
 :::
 
 <1>9. At $x=0$,
@@ -166,8 +164,8 @@ $$
 $$
 
 ::: {.proof}
-In the original series, every term with $n\geq2$ contains a positive power of
-$x$ and vanishes at $x=0$. The $n=1$ term is
+In the original series, every term with $n\geq2$ contains a positive power of $x$ and vanishes at $x=0$.
+The $n=1$ term is
 $$
 \frac1{1\cdot2}.
 $$
@@ -187,7 +185,7 @@ $$
 =
 \sum_{n=1}^{\infty}
 \left(
-\frac1n-rac1{n+1}
+\frac1n-\frac1{n+1}
 \right),
 $$
 which telescopes to $1$.
@@ -199,8 +197,7 @@ $$
 $$
 
 ::: {.proof}
-Because the series converges absolutely at $x=-1$, its value equals the
-continuous boundary limit of the power-series expression in step <1>8. Thus
+Because the series converges absolutely at $x=-1$, its value equals the continuous boundary limit of the power-series expression in step <1>8. Thus
 $$
 S(-1)
 =
@@ -211,7 +208,6 @@ $$
 <1>12. Q.E.D.
 
 ::: {.proof}
-Step <1>3 gives the full convergence set, and steps <1>8--<1>11 give the sum
-at every point of that set.
+Step <1>3 gives the full convergence set, and steps <1>8--<1>11 give the sum at every point of that set.
 :::
 :::

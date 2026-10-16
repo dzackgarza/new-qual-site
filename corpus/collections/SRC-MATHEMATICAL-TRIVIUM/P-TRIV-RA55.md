@@ -35,8 +35,7 @@ $$
 because $a>0$.
 
 ::: {.proof}
-The exponential of a negative positive number lies strictly between $0$ and
-$1$.
+The exponential of a negative positive number lies strictly between $0$ and $1$.
 :::
 
 <1>2. The geometric series gives
@@ -58,8 +57,7 @@ $$
 $$
 
 ::: {.proof}
-The geometric series converges uniformly on every closed disk $|q|\leq r<1$,
-so termwise differentiation is valid there.
+The geometric series converges uniformly on every closed disk $|q|\leq r<1$, so termwise differentiation is valid there.
 :::
 
 <1>4. Multiplying by $q$ gives
@@ -70,8 +68,7 @@ $$
 $$
 
 ::: {.proof}
-The $n=0$ term is zero, so multiplying step <1>3 by $q$ gives the stated
-series.
+The $n=0$ term is zero, so multiplying step <1>3 by $q$ gives the stated series.
 :::
 
 <1>5. Hence
@@ -209,7 +206,7 @@ Then
 $$
 \frac1{1+u}
 =
-1-rac{a^2}{12}+O(a^4).
+1-\frac{a^2}{12}+O(a^4).
 $$
 Multiplying by $a^{-2}$ gives the result.
 :::

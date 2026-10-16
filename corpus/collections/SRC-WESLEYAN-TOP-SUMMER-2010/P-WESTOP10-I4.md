@@ -14,8 +14,11 @@ audit:
 Give an infinite space satisfying each requested combination of properties:
 
 1. connected, but neither path-connected nor metrizable;
+
 2. normal, Hausdorff, and first countable, but neither metrizable nor connected;
+
 3. metrizable, first countable, and second countable;
+
 4. completely regular, but neither compact, connected, nor first countable.
 :::
 
@@ -46,9 +49,7 @@ It is not path-connected because the final point
 \[
 \Omega
 \]
-cannot be joined by a path to any point below it:
-a path image is separable, while any connected subset containing both a
-point
+cannot be joined by a path to any point below it: a path image is separable, while any connected subset containing both a point
 \[
 x<\Omega
 \]
@@ -77,8 +78,7 @@ S_\Omega
 is Hausdorff, normal, and first countable.
 
 ::: {.proof}
-It is a linearly ordered topological space, hence Hausdorff and hereditarily
-normal.
+It is a linearly ordered topological space, hence Hausdorff and hereditarily normal.
 
 Every point of
 \[
@@ -109,8 +109,7 @@ let
 \[
 U_\alpha
 \]
-be the initial open segment consisting of points whose ordinal coordinate
-is less than
+be the initial open segment consisting of points whose ordinal coordinate is less than
 \[
 \alpha+1.
 \]
@@ -118,8 +117,7 @@ These sets form an open cover of
 \[
 S_\Omega.
 \]
-Any finite subfamily has a largest ordinal index and therefore covers only
-a bounded initial segment of the long ray.
+Any finite subfamily has a largest ordinal index and therefore covers only a bounded initial segment of the long ray.
 Thus there is no finite subcover.
 :::
 
@@ -135,8 +133,7 @@ Let
 (x_n)
 \]
 be a sequence in the long ray.
-The set of ordinal coordinates appearing among the $x_n$ is countable, so
-its supremum is some countable ordinal
+The set of ordinal coordinates appearing among the $x_n$ is countable, so its supremum is some countable ordinal
 \[
 \beta<\omega_1.
 \]
@@ -145,10 +142,9 @@ Hence the whole sequence lies in a closed bounded interval
 [0,b]
 \subset S_\Omega
 \]
-for a point $b$ above the $eta$th stage.
+for a point $b$ above the $\beta$th stage.
 
-Such a closed order interval is compact and metrizable because it involves
-only countably many ordinal stages.
+Such a closed order interval is compact and metrizable because it involves only countably many ordinal stages.
 Therefore
 \[
 (x_n)
@@ -166,8 +162,7 @@ S_\Omega
 were metrizable.
 By step <1>4 it would be sequentially compact.
 For metric spaces, sequential compactness implies compactness.
-This contradicts step <1>3.
-Thus the long ray is not metrizable.
+This contradicts step <1>3. Thus the long ray is not metrizable.
 :::
 
 <1>6. For item (2), take the topological disjoint union
@@ -182,13 +177,9 @@ S_\Omega.
 \]
 
 ::: {.proof}
-Each summand is Hausdorff, normal, and first countable by step <1>2.
-Topological disjoint unions preserve these three properties:
-each component is open and closed, so neighborhoods and separation can be
-constructed componentwise.
+Each summand is Hausdorff, normal, and first countable by step <1>2. Topological disjoint unions preserve these three properties: each component is open and closed, so neighborhoods and separation can be constructed componentwise.
 
-The space $X_2$ is disconnected because it is the union of two nonempty
-disjoint clopen summands.
+The space $X_2$ is disconnected because it is the union of two nonempty disjoint clopen summands.
 
 If $X_2$ were metrizable, each clopen subspace
 \[
@@ -197,8 +188,7 @@ S_\Omega
 would be metrizable.
 This contradicts step <1>5.
 
-Hence $X_2$ is normal, Hausdorff, first countable, neither metrizable nor
-connected.
+Hence $X_2$ is normal, Hausdorff, first countable, neither metrizable nor connected.
 :::
 
 <1>7. For item (3), take
@@ -249,12 +239,8 @@ where
 has the discrete topology.
 
 ::: {.proof}
-The closed long ray is completely regular, and every discrete space is
-completely regular.
-Topological sums of completely regular spaces are completely regular:
-a point and a disjoint closed set can be separated inside the component
-containing the point, and the separating function can be defined
-componentwise on the other clopen components.
+The closed long ray is completely regular, and every discrete space is completely regular.
+Topological sums of completely regular spaces are completely regular: a point and a disjoint closed set can be separated inside the component containing the point, and the separating function can be defined componentwise on the other clopen components.
 Hence $X_4$ is completely regular.
 
 It is disconnected because the two summands are nonempty clopen subsets.
@@ -264,8 +250,7 @@ It is not first countable because the point
 \Omega
 \]
 in the closed-long-ray summand has no countable local base.
-A local base in the topological sum would restrict to one in that clopen
-summand.
+A local base in the topological sum would restrict to one in that clopen summand.
 
 Finally, $X_4$ is not compact.
 The family
@@ -294,8 +279,7 @@ is an open cover of $X_4$ with no finite subcover.
 \]
 
 ::: {.proof}
-Steps <1>1, <1>6, <1>7, and <1>8 verify all requested property
-combinations.
+Steps <1>1, <1>6, <1>7, and <1>8 verify all requested property combinations.
 :::
 
 <1>10. Q.E.D.

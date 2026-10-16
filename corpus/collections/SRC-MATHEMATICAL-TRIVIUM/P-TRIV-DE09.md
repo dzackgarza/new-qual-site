@@ -97,7 +97,7 @@ $$
 =
 \int
 \left(
-1-rac2{u^2+1}
+1-\frac2{u^2+1}
 \right)du.
 $$
 :::
@@ -173,7 +173,8 @@ Under step <1>6,
 $$
 e^{2x}C_1e^{-x}=C_1e^x,
 $$
-whose antiderivative is $C_1e^x$, yielding $C_1e^{-x}$ after multiplication by $e^{-2x}$. The final integration constant becomes $C_2e^{-2x}$.
+whose antiderivative is $C_1e^x$, yielding $C_1e^{-x}$ after multiplication by $e^{-2x}$.
+The final integration constant becomes $C_2e^{-2x}$.
 :::
 
 <1>9. Therefore the general solution is

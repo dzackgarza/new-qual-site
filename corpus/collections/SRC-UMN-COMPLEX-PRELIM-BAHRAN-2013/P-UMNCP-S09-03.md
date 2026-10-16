@@ -129,12 +129,13 @@ S
 =
 \left\{
 w:
--1<\operatorname{Im}w<-rac12
+-1<\operatorname{Im}w<-\frac12
 \right\}}.
 $$
 
 ::: {.proof}
-The reciprocal map is a Möbius transformation, hence biholomorphic away from $0$. By step <1>2, it sends the two boundary circles to the two boundary lines of $S$.
+The reciprocal map is a Möbius transformation, hence biholomorphic away from $0$.
+By step <1>2, it sends the two boundary circles to the two boundary lines of $S$.
 
 To determine which component is the image, take
 $$
@@ -148,13 +149,15 @@ and
 $$
 \left|z-\frac i2\right|=1>\frac12,
 $$
-so $z\in\Omega$. Its reciprocal is
+so $z\in\Omega$.
+Its reciprocal is
 $$
 \frac1z
 =
 -\frac{2i}{3},
 $$
-whose imaginary part lies strictly between $-1$ and $-1/2$. Hence the image component is exactly $S$.
+whose imaginary part lies strictly between $-1$ and $-1/2$.
+Hence the image component is exactly $S$.
 :::
 
 <1>4. The exponential map
@@ -173,7 +176,7 @@ Write
 $$
 w=u+iv,
 \qquad
--1<v<-rac12.
+-1<v<-\frac12.
 $$
 Then
 $$
@@ -259,7 +262,8 @@ $$
 <
 -\frac12,
 $$
-so $w\in S$. Moreover,
+so $w\in S$.
+Moreover,
 $$
 e^{2\pi w}
 =
@@ -285,11 +289,13 @@ By step <1>3,
 $$
 z\mapsto1/z
 $$
-is a biholomorphism from $\Omega$ to $S$. By steps <1>4--<1>6,
+is a biholomorphism from $\Omega$ to $S$.
+By steps <1>4--<1>6,
 $$
 w\mapsto e^{2\pi w}
 $$
-is a biholomorphism from $S$ to $\mathbb H$. Their composition is the displayed map.
+is a biholomorphism from $S$ to $\mathbb H$.
+Their composition is the displayed map.
 :::
 
 <1>8. Q.E.D.

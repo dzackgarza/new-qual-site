@@ -46,22 +46,26 @@ U'(1)=0.
 ::: {.proof}
 Since $u'(x)=U'(t)/x$, one has $xu'(x)=U'(t)$ and therefore
 \[
-(xu')'=rac1xU''(t).
+(xu')'=\frac1xU''(t).
 \]
-Multiplying the given equation by $x$ gives $U''=-\lambda U$. Also, $u(1)=U(0)$, while $u'(e)=U'(1)/e$, so the second boundary condition is $U'(1)=0$.
+Multiplying the given equation by $x$ gives $U''=-\lambda U$.
+Also, $u(1)=U(0)$, while $u'(e)=U'(1)/e$, so the second boundary condition is $U'(1)=0$.
 :::
 
 <1>2. There is no nonzero solution for $\lambda\leq0$.
 
 ::: {.proof}
-If $\lambda=0$, then $U=A+Bt$. The condition $U(0)=0$ gives $A=0$, and $U'(1)=0$ gives $B=0$. If $\lambda=-\mu^2<0$, then
+If $\lambda=0$, then $U=A+Bt$.
+The condition $U(0)=0$ gives $A=0$, and $U'(1)=0$ gives $B=0$.
+If $\lambda=-\mu^2<0$, then
 \[
 U=A\cosh(\mu t)+B\sinh(\mu t).
 \]
 The first condition gives $A=0$, and the second gives $B\mu\cosh\mu=0$, hence $B=0$.
 :::
 
-<1>3. For $\lambda>0$, write $\lambda=\mu^2$. A nonzero solution exists exactly when
+<1>3. For $\lambda>0$, write $\lambda=\mu^2$.
+A nonzero solution exists exactly when
 \[
 \cos\mu=0,
 \]
@@ -76,7 +80,8 @@ The general solution is
 \[
 U=A\cos(\mu t)+B\sin(\mu t).
 \]
-The condition $U(0)=0$ gives $A=0$. Then
+The condition $U(0)=0$ gives $A=0$.
+Then
 \[
 U'(1)=B\mu\cos\mu,
 \]
@@ -93,7 +98,9 @@ u_n(x)=C\sin\left(\left(n+\frac12\right)\pi\log x\right),
 \]
 
 ::: {.proof}
-By step <1>3, $U_n(t)=C\sin((n+1/2)\pi t)$. Substitute $t=\log x$. Step <1>2 shows there are no additional eigenvalues.
+By step <1>3, $U_n(t)=C\sin((n+1/2)\pi t)$.
+Substitute $t=\log x$.
+Step <1>2 shows there are no additional eigenvalues.
 :::
 
 <1>5. Q.E.D.

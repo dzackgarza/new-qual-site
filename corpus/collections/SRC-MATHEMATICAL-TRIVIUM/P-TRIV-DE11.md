@@ -99,13 +99,14 @@ $$
 =
 \exp\int\frac{N_x-M_y}{M},dy
 $$
-is an integrating factor. Apply step <1>2.
+is an integrating factor.
+Apply step <1>2.
 :::
 
 <1>4. Multiplying by $y^{-2}$ gives
 $$
 \left(
-x-rac1y
+x-\frac1y
 \right)dx
 +
 \frac{x}{y^2},dy
@@ -123,7 +124,7 @@ One has
 $$
 \frac{\partial}{\partial y}
 \left(
-x-rac1y
+x-\frac1y
 \right)
 =
 \frac1{y^2},
@@ -153,7 +154,7 @@ Integrate the $dx$-coefficient from step <1>4 with respect to $x$:
 $$
 \int
 \left(
-x-rac1y
+x-\frac1y
 \right)dx
 =
 \frac{x^2}{2}
