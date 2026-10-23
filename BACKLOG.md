@@ -29,127 +29,127 @@ Authored dispositions live in `TODO.md`.
 
 - SRC-TEXT-DF04: https://www.wiley.com/en-us/Abstract+Algebra%2C+3rd+Edition-p-9780471433347 -> 403
 
-- SRC-UCSD-ALG-FALL-2007: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA07_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-TEXT-MUN00: https://search.worldcat.org/isbn/9780131816299 -> 429
 
-- SRC-UCSD-ALG-FALL-2010: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA10_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-FALL-2006: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA06_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-ALG-FALL-2008: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA08_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-ALG-FALL-2013: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA13_Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-ALG-FALL-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA18_Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-ALG-FALL-2019: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/MATH-200-Exam-Fall-2019.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-FALL-2014: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA14_Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-ALG-FALL-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA24_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-ALG-SPRING-2005: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP05_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-SPRING-2009: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP09_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-ALG-SPRING-2015: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP15_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-SPRING-2013: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP13_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-ALG-SPRING-2016: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/200Quals16v2.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-SPRING-2014: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/S14_Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-ALG-SPRING-2017: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/ALGEBRA-EXAM.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-ALG-SPRING-2019: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/Algebra-Qual-Spring-2019.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
+- SRC-UCSD-ALG-SPRING-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/200-Qual-SP21.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
 - SRC-UCSD-ALG-SPRING-2022: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP22-200ABC-Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-ALG-SPRING-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/second-version-alg-qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-SPRING-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP24%20math%20200%20exam.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-ALG-SPRING-2026: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP26_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-ALG-SPRING-2025: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP25_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-APALG-FALL-2007: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/FA07_202_Applied_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-APALG-FALL-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Applied-Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-APALG-FALL-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra-Qual-Fall-2018.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-APALG-FALL-2020: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/202-Qual-FA20.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-APALG-FALL-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/202BQualF23.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-APALG-FALL-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/PartCFall2023.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-APALG-FALL-2025: https://math.ucsd.edu/sites/math.ucsd.edu/files/FA25%20-%20Applied%20Algebra%20Qualifying%20Exam.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-APALG-FALL-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/FA24_202_Applied_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-APALG-SPRING-2005: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP05_202_Applied_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-APALG-SPRING-2006: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP06_202_Applied_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-APALG-SPRING-2008: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra-Qual-Spring-2008.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-APALG-SPRING-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra-Qual-SP-2018.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-APALG-SPRING-2013: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP13_202_Applied_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-APALG-SPRING-2019: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra-Qual-Spring-2019.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-APALG-SPRING-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/202-Qual-SP21.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-APALG-SPRING-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied%20Algebra%20Part%20A%20SP23.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-APALG-SPRING-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied%20Algebra%20Part%20B%20SP23.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
 - SRC-UCSD-APALG-SPRING-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP24%20math%20202%20exam%20.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-CA-FALL-2006: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA06_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-CA-FALL-2007: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA07_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-CA-FALL-2005: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA05_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-CA-FALL-2009: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA09_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-CA-FALL-2015: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Qual-F15.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-CA-FALL-2011: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA11_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-CA-FALL-2013: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Qual-Exam-Fall-13.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-CA-FALL-2019: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/MATH-220-EXAM-Fall-2019.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-CA-FALL-2020: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/220-Qual-FA20-1.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-CA-FALL-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA24_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-CA-FALL-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Complex.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-CA-FALL-2022: https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_COMPLEX_220ABC.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-CA-SPRING-2006: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP06_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
+- SRC-UCSD-CA-SPRING-2007: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP07_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
 - SRC-UCSD-CA-SPRING-2009: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP09_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-CA-SPRING-2011: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP11_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-CA-SPRING-2013: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP13_220_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-CA-SPRING-2015: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/complex-15.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-CA-SPRING-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Analysis-Qual-SP18.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-CA-SPRING-2022: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP22-220ABC-Complex.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-CA-SPRING-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/220-Qual-SP21.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-CA-SPRING-2026: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP26_240_Complex_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-FALL-2004: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/FA04_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-RA-FALL-2007: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/FA07_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-RA-FALL-2016: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/FA16_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-RA-FALL-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/Real-Analysis-Qual-Fall-2018.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-FALL-2009: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/FA09_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-RA-FALL-2020: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240-Exam-FA20.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-RA-FALL-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Real-Analysis.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-FALL-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/qual-2-23-V2.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-RA-FALL-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/FA24_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-SPRING-2008: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP08_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-RA-SPRING-2007: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP07_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-SPRING-2011: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP11_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-RA-SPRING-2009: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP09_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-SPRING-2021: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240-Qual-SP21.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-RA-SPRING-2015: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240_ni_s15-without-solution.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-RA-SPRING-2016: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP16_240_Real_Analysis_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-RA-SPRING-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/Real%20Analysis%20SP23.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-RA-SPRING-2022: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP22-240ABC-RealAnalysis.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-RA-SPRING-2025: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/SP25%20240%20Real%20Analysis%20Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-TOP-FALL-2002: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/FA02_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
 - SRC-UCSD-TOP-FALL-2006: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology-Qual-Fall-2006.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-TOP-FALL-2010: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/FA10_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-TOP-FALL-2009: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/FA09_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-TOP-FALL-2022: https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_TOPOLOGY_290ABC.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-TOP-FALL-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology-Qual-Fall-2018.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+
+- SRC-UCSD-TOP-FALL-2020: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology_qualifying_exam_Fall_2020.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-TOP-FALL-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/FA24_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-TOP-SPRING-2000: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP00_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-TOP-SPRING-2005: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP05_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-TOP-SPRING-2008: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP08_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-TOP-SPRING-2011: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP11_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
-
-- SRC-UCSD-TOP-SPRING-2017: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/TOPOLOGY-EXAM.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-TOP-SPRING-2010: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP10_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-TOP-SPRING-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology-Qual-SP18.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
-- SRC-UCSD-TOP-SPRING-2020: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology-Qual-SP20.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+- SRC-UCSD-TOP-SPRING-2022: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP22-290ABC-Topology.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
 - SRC-UCSD-TOP-SPRING-2026: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP26_290_Topology_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
 
