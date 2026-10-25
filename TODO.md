@@ -49,7 +49,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
   invalid staged blob. The local push path must cover content commits made through the
   sanctioned hook-free authoring route.
 
-- [ ] **QC-02 — Repair `P-X1WOB` through the local validator.**
+- [x] **QC-02 — Repair `P-X1WOB` through the local validator.**
   **Local repair complete:** the title is a quoted scalar and the staged card passes
   the validator. Hosted report generation must still be rechecked on the repair.
   **Owner:** `corpus/problems/Real_Analysis/P-X1WOB.md`.
@@ -60,6 +60,11 @@ on hosted checks. Every item is open until its acceptance condition is met.
   edit. Resolve any additional basic validation errors reported on that card.
   **Acceptance:** the actual card passes QC-01 locally before a push; hosted report
   generation gets beyond this parse error. A full local build is not required.
+  **Closed 2026-10-25.** Local side landed in `aca190cc7` (title quoted as a YAML scalar);
+  tree pushed to `main` as `b85684aee`. The next hosted `pages.yml` run,
+  [40195017965](https://github.com/dzackgarza/new-qual-site/actions/runs/40195017965),
+  gets past the named card's parse error: its `Generate corpus reports` failure is now
+  `corpus/problems/Algebra/P-WVWEP.md: unclosed fenced div`, with no `P-X1WOB` diagnostic.
 
 - [x] **QC-03 — Land the shared normalization fix at its owner.**
   **Delivered:** PR #483 is merged. The additional direct-hook integration is merged in
