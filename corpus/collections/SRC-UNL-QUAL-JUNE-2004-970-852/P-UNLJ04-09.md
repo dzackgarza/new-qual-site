@@ -436,18 +436,14 @@ $$
 \qquad
 |V(G/e)|=n-1.
 $$
-Evaluate the chromatic recurrence of step <1>1 at
-$$
-k=-1:
+Evaluate the chromatic recurrence of step <1>1 at $k=-1$:
 $$
 \chi(G;-1)
 =
 \chi(G-e;-1)
 -\chi(G/e;-1).
 $$
-Multiply by
-$$
-(-1)^n:
+Multiply by $(-1)^n$:
 $$
 \begin{aligned}
 b(G)

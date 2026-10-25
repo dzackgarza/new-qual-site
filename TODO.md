@@ -132,9 +132,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
   tier, with a real comparison base for diff checks and explicit failure propagation.
   Any workflow-policy decision still requiring owner choice is stated before changing it.
 
-- [ ] **QC-07 — Separate advisory report generation from test and deployment status.**
-  **Implementation ready:** reports have an independent CI job and carry their source
-  revision. Verify the next hosted run before closing this item.
+- [x] **QC-07 — Separate advisory report generation from test and deployment status.**
   **Owner:** `.github/workflows/pages.yml` and `_reports-ci`.
   Report generation currently shares the test job, so a report failure marks that job
   failed and prevents the build from starting. Give reports an independently visible job
@@ -144,6 +142,15 @@ on hosted checks. Every item is open until its acceptance condition is met.
   **Acceptance:** a report execution failure has its own failed job and useful diagnostics;
   test results remain distinct. Deployment still requires successful mandatory validation,
   acceptance, build, and link checks.
+  **Closed 2026-10-26.** `reports` runs with no `needs`, so it neither gates nor is gated by
+  `test`; `deploy` still needs `build`, which needs `test`. Both directions are observed:
+  [run 40200941296](https://github.com/dzackgarza/new-qual-site/actions/runs/40200941296)
+  passed `test` while `reports` failed at `Generate corpus reports` with the corpus diagnostic
+  (`P-557LL.md: unmatched fenced-div closer on line 187`) and `build` failed separately at
+  `Build catalog and static site`;
+  [run 40220688228](https://github.com/dzackgarza/new-qual-site/actions/runs/40220688228)
+  passed `test` and `reports` after that card was repaired, with `build` failing on its own
+  diagnostics. Neither run shows report output affecting the test result.
 
 - [ ] **QC-08 — Resolve the previously observed undefined macros.**
   **Owner:** the authored macro uses, `vocabularies/macros.json`, and the preamble owner.
@@ -168,7 +175,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
   **Acceptance:** the local command runs the intended fast cases, CI runs the full suite,
   and a changed input is validated regardless of whether parser regression tests pass.
 
-- [ ] **QC-10 — Verify report delivery and consumption.**
+- [x] **QC-10 — Verify report delivery and consumption.**
   **Owner:** the report job, `BACKLOG.md`, Queue C, and their usage instructions.
   Check that `corpus-reports` contains both generated files for the workflow revision and
   that a reader can retrieve the correct run's artifact. Reconcile instructions that read
@@ -176,6 +183,12 @@ on hosted checks. Every item is open until its acceptance condition is met.
   must not silently stand in for a current generated report.
   **Acceptance:** both reports are downloadable from a successful run, their source
   revision is identifiable, and the documented reading path reaches those outputs.
+  **Closed 2026-10-26.** `gh run download 40220688228 -n corpus-reports` returns
+  `BACKLOG.md`, `queues/C-unsolved-cards.md`, and `corpus-reports-revision.txt` whose contents
+  are `4003e20a72a81e24920b7b3e12f046a00ebefb75`, the run's `headSha`. The reading path is
+  already stated where it is used: `AGENTS.md` names the artifact, the download command, and
+  the revision check, and `CONTRIBUTING.md`'s `QUAL-06` row says the reports carry their
+  source revision. No instruction still presents the checked-in `BACKLOG.md` as current.
 
 - [ ] **QC-11 — Exercise the final installed local workflow.**
   **Owner:** the shared installation and this repository's Git/authoring boundaries.

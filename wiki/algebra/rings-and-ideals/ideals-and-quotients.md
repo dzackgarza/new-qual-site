@@ -82,7 +82,7 @@ The [[D-2IO6Q|Jacobson radical]] $J(R)$ is the intersection of the maximal ideal
 
 [[E-JAPBK]]
 
-[[E-2ZO7O]]
+[[P-AMD-QBEEJKCX]]
 
 [[D-2IO6Q]]
 
@@ -105,6 +105,6 @@ An element that is nilpotent modulo the nilradical is nilpotent, the nilradical 
 
 [[E-AMD-E3N4BHJH]]
 
-[[E-AMD-MCTH4JE3]]
+[[P-AMD-FEHSX2WH]]
 
 [[E-AMD-UEHZOJ3K]]

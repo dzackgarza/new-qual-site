@@ -147,8 +147,7 @@ Since $f\ge0$, one must have
 \[
 f(x)=0
 \]
-for every $x\in[a,b].
-\]
+for every $x\in[a,b]$.
 :::
 
 <1>6. Q.E.D.
