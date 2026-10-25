@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-TORCOHOM
 kind: definition
 title: The Stanley--Reisner presentation of the cohomology of a smooth toric variety
-slogan: 'For a smooth complete toric variety, fan combinatorics presents cohomology: non-cones give monomial relations and characters give linear relations.'
 classification:
   areas:
   - algebraic-geometry
@@ -24,8 +23,11 @@ prompts:
 - What are the Betti numbers of a smooth complete toric variety?
 ---
 
+For a smooth complete toric variety, fan combinatorics presents cohomology: non-cones give monomial relations and characters give linear relations.
+
 ::: {.definition title="Stanley--Reisner ideal"}
-Let $\Sigma$ have rays $\rho_1,\ldots,\rho_r$. The \dfn{Stanley--Reisner ideal} is
+Let $\Sigma$ have rays $\rho_1,\ldots,\rho_r$.
+The \dfn{Stanley--Reisner ideal} is
 $$
 I_\Sigma
 \coloneqq
@@ -61,7 +63,8 @@ Under the cycle-class map,
 $$
 A^k(X_\Sigma)\xrightarrow{\sim}H^{2k}(X_\Sigma(\CC),\ZZ),
 $$
-and $x_i$ maps to the class of $D_i$. The odd singular cohomology groups vanish.
+and $x_i$ maps to the class of $D_i$.
+The odd singular cohomology groups vanish.
 :::
 
 ::: {.remark}

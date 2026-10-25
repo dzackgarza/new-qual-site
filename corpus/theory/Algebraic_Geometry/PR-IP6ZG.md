@@ -3,7 +3,6 @@ schema: qual/card@1
 id: PR-IP6ZG
 kind: definition
 title: Filtered colimits of sheaves on a Noetherian space
-slogan: 'On a Noetherian space, sectionwise filtered colimits are already sheaves and commute with sections and sheaf cohomology.'
 classification:
   areas:
   - algebraic-geometry
@@ -23,8 +22,11 @@ prompts:
 - When does $\Gamma$ commute with a direct limit of sheaves?
 ---
 
+On a Noetherian space, sectionwise filtered colimits are already sheaves and commute with sections and sheaf cohomology.
+
 ::: {.definition}
-Let $\theset{\mcf_i}_{i\in I}$ be a directed system of sheaves of abelian groups on a topological space $X$. Its colimit in the category of sheaves is the sheafification of the presheaf
+Let $\theset{\mcf_i}_{i\in I}$ be a directed system of sheaves of abelian groups on a topological space $X$.
+Its colimit in the category of sheaves is the sheafification of the presheaf
 $$
 U \longmapsto \colim_i \mcf_i(U) .
 $$
@@ -53,11 +55,15 @@ $$
 $$
 is an equalizer, and for a finite cover these are finite products, so the whole diagram is a finite limit.
 Filtered colimits of abelian groups are exact and commute with finite limits, so the colimit of the equalizer diagrams is again an equalizer.
-Thus the sectionwise colimit is a sheaf. Evaluating it on $X$ gives the displayed formula for global sections; the same argument works on every open subset. A complete proof of this sectionwise statement is given in [[P-AGH326COLIMINJECTIVE]], step <1>4.
+Thus the sectionwise colimit is a sheaf.
+Evaluating it on $X$ gives the displayed formula for global sections; the same argument works on every open subset.
+A complete proof of this sectionwise statement is given in [[P-AGH326COLIMINJECTIVE]], step <1>4.
 :::
 
 ::: {.remark}
-The finiteness used above is the quasicompactness of every open subset of a Noetherian space. Without such a finiteness condition, local representatives of a section of the sheafified colimit can require unbounded indices over an infinite cover, so the sectionwise presheaf need not satisfy the sheaf axiom.
+The finiteness used above is the quasicompactness of every open subset of a Noetherian space.
+Without such a finiteness condition, local representatives of a section of the sheafified colimit can require unbounded indices over an infinite cover, so the sectionwise presheaf need not satisfy the sheaf axiom.
 
-The cohomology statement is stronger than the finite-cover argument for sections. One proof uses that filtered colimits are exact and that a filtered colimit of injective abelian sheaves on a Noetherian space is injective; the latter is proved in [[P-AGH326COLIMINJECTIVE]]. The resulting derived-functor comparison is the theorem used in [[P-AGH348COHDIM]], step <1>1.
+The cohomology statement is stronger than the finite-cover argument for sections.
+One proof uses that filtered colimits are exact and that a filtered colimit of injective abelian sheaves on a Noetherian space is injective; the latter is proved in [[P-AGH326COLIMINJECTIVE]]. The resulting derived-functor comparison is the theorem used in [[P-AGH348COHDIM]], step <1>1.
 :::

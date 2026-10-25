@@ -18,6 +18,7 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-25
 ---
+
 ::: {.problem}
 Prove that if $f \in \mathcal{R}$ on $[a,b]$ and $\alpha \in C^1[a,b]$, then the Riemann integral $\int_a^b f(x)\alpha'(x)dx$ exists and $$\int_a^b f(x) d\alpha(x)= \int_a^b f(x)\alpha'(x)dx.$$
 :::
@@ -31,7 +32,8 @@ The product $f\alpha'$ is Riemann integrable on $[a,b]$.
 
 ::: pf-proof
 
-The derivative $\alpha'$ is continuous on compact $[a,b]$, hence bounded and Riemann integrable. Since $f$ is Riemann integrable, the product theorem for Riemann-integrable functions gives $f\alpha'\in\mathcal R[a,b]$.
+The derivative $\alpha'$ is continuous on compact $[a,b]$, hence bounded and Riemann integrable.
+Since $f$ is Riemann integrable, the product theorem for Riemann-integrable functions gives $f\alpha'\in\mathcal R[a,b]$.
 
 :::
 
@@ -68,7 +70,8 @@ The difference in step [](#s2){.pf-ref} tends uniformly to zero over all tagged 
 
 ::: pf-proof
 
-Uniform continuity of $\alpha'$ on $[a,b]$ gives $\omega_{\alpha'}(\delta)\to0$ as $\delta\downarrow0$. The bound in step [](#s2){.pf-ref} is independent of the choice of partition tags, so the convergence is uniform.
+Uniform continuity of $\alpha'$ on $[a,b]$ gives $\omega_{\alpha'}(\delta)\to0$ as $\delta\downarrow0$.
+The bound in step [](#s2){.pf-ref} is independent of the choice of partition tags, so the convergence is uniform.
 
 :::
 
@@ -83,7 +86,9 @@ The Riemann–Stieltjes integral exists and satisfies
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, the tagged Riemann sums $S(f\alpha';P,\xi)$ converge to $I=\int_a^b f(x)\alpha'(x)\,dx$ as the mesh tends to zero, uniformly over all choices of tags. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the corresponding tagged Stieltjes sums converge to the same $I$. This is the tagged-sum criterion for Riemann–Stieltjes integrability and identifies the integral.
+By step [](#s1){.pf-ref}, the tagged Riemann sums $S(f\alpha';P,\xi)$ converge to $I=\int_a^b f(x)\alpha'(x)\,dx$ as the mesh tends to zero, uniformly over all choices of tags.
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the corresponding tagged Stieltjes sums converge to the same $I$.
+This is the tagged-sum criterion for Riemann–Stieltjes integrability and identifies the integral.
 
 :::
 
@@ -92,6 +97,8 @@ By step [](#s1){.pf-ref}, the tagged Riemann sums $S(f\alpha';P,\xi)$ converge t
 ::: pf-qed
 
 Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} establish both requested assertions.
+
+:::
 
 :::
 

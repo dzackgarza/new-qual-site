@@ -11,12 +11,12 @@ hand-edited. Issue #2 is what empties it.
 from __future__ import annotations
 
 import argparse
+import io
 import re
 import subprocess
 from collections.abc import ItemsView
 from pathlib import Path
 
-import yaml
 from pydantic import TypeAdapter
 from qualc import index
 from qualc.model import Card, ParsedCard, discover, parse_cards_with, split_front_matter
@@ -24,92 +24,70 @@ from qualc.pandoc_batch import PandocServer
 
 REPO = Path(__file__).resolve().parent.parent
 
-QUEUE_LINE = re.compile(r'^- \[ \] (?P<id>\S+) — "(?P<title>.*)"$')
 SOLUTION_OPEN = re.compile(r"^:{3,}\s*(?:solution|\{[^}\n]*\.solution(?:\s+[^}]*)?\})\s*$", re.M)
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 
 
-def queue_entries(text: str) -> dict[str, str]:
-    """Parse the generated queue into ``{card id: title}``."""
-    out: dict[str, str] = {}
-    for line in text.splitlines():
-        match = QUEUE_LINE.match(line)
-        if match:
-            out[match.group("id")] = match.group("title")
-    return out
-
-
-def queue_entry_from_text(text: str, path: Path) -> tuple[str, str] | None:
+def queue_entry_from_text(text: str, path: Path, card_paths: dict[str, Path]) -> tuple[str, str] | None:
     """Return one unsolved queue entry from a card's text, without starting Pandoc."""
     meta, body = split_front_matter(text, path)
     card = CARD_ADAPTER.validate_python(meta)
+    if card.id in card_paths:
+        raise SystemExit(f"duplicate id {card.id}: {path} and {card_paths[card.id]}")
+    card_paths[card.id] = path
     if card.kind != "problem" or SOLUTION_OPEN.search(body):
         return None
     return card.id, card.title
 
 
-def _git(root: Path, *args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(["git", *args], cwd=root, text=True, capture_output=True, check=check)
-
-
-def _git_text(root: Path, spec: str) -> str | None:
-    result = _git(root, "show", spec, check=False)
-    return result.stdout if result.returncode == 0 else None
-
-
-def changed_cards(root: Path, base: str) -> list[tuple[Path | None, Path | None]]:
-    """Return ``(old_path, new_path)`` pairs for card changes between ``base`` and HEAD."""
-    result = _git(root, "diff", "--name-status", "--find-renames", base, "HEAD", "--", "corpus")
-    changes: list[tuple[Path | None, Path | None]] = []
-    for line in result.stdout.splitlines():
-        parts = line.split("\t")
-        status = parts[0][0]
-        old_path: Path | None
-        new_path: Path | None
-        if status == "R":
-            old_path, new_path = Path(parts[1]), Path(parts[2])
-        elif status == "D":
-            old_path, new_path = Path(parts[1]), None
-        else:
-            old_path, new_path = (Path(parts[1]) if status != "A" else None), Path(parts[1])
-        if (old_path and old_path.suffix == ".md") or (new_path and new_path.suffix == ".md"):
-            changes.append((old_path, new_path))
-    return changes
-
-
 def incremental_from_range(root: Path, base: str) -> str:
-    """Update Queue C over the commits since ``base``, starting from ``base``'s generated queue."""
-    baseline = _git_text(root, f"{base}:queues/C-unsolved-cards.md")
-    if baseline is None:
-        raise SystemExit(f"{base} has no queues/C-unsolved-cards.md; run a full rebuild")
-    entries = queue_entries(baseline)
-    for old_path, new_path in changed_cards(root, base):
-        if old_path is not None:
-            old_text = _git_text(root, f"{base}:{old_path.as_posix()}")
-            if old_text is not None:
-                old_id = _card_id(old_text)
-                if old_id is not None:
-                    entries.pop(old_id, None)
-        if new_path is not None:
-            new_text = _git_text(root, f"HEAD:{new_path.as_posix()}")
-            if new_text is None:
-                raise SystemExit(f"cannot read pushed card: {new_path}")
-            new_entry = queue_entry_from_text(new_text, new_path)
-            if new_entry is not None:
-                entries[new_entry[0]] = new_entry[1]
-    return render_entries(entries.items())
+    """Project Queue C from committed HEAD, without parsing historical card YAML.
 
-
-def _card_id(text: str) -> str | None:
-    """The id of a card as it stood at the base, read only to retire its queue line.
-
-    The base was accepted under earlier rules, so it is read with the plain safe loader:
-    a base card that repeats a key must still leave the queue when it changes.
+    The push gate uses the range to detect corpus changes. Once triggered, every
+    current committed card determines the queue; deleted paths and retired IDs
+    disappear without interpreting an older schema or invalid historical YAML.
+    Neither staged nor unstaged corpus content participates.
     """
-    if not text.startswith("---\n"):
-        return None
-    meta = yaml.safe_load(text.split("---\n", 2)[1])
-    return str(meta["id"]) if isinstance(meta, dict) and "id" in meta else None
+    subprocess.run(
+        ["git", "rev-parse", "--verify", f"{base}^{{commit}}"],
+        cwd=root,
+        check=True,
+        capture_output=True,
+    )
+    tree = subprocess.run(
+        ["git", "ls-tree", "-rz", "HEAD", "--", "corpus"],
+        cwd=root,
+        check=True,
+        capture_output=True,
+    )
+    cards: list[tuple[bytes, Path]] = []
+    for record in tree.stdout.split(b"\0"):
+        if not record:
+            continue
+        metadata, name = record.split(b"\t", 1)
+        _mode, kind, object_id = metadata.split()
+        path = Path(name.decode("utf-8"))
+        if kind == b"blob" and path.suffix == ".md":
+            cards.append((object_id, path))
+    snapshot = subprocess.run(
+        ["git", "cat-file", "--batch"],
+        input=b"".join(object_id + b"\n" for object_id, _path in cards),
+        cwd=root,
+        check=True,
+        capture_output=True,
+    )
+    entries: dict[str, str] = {}
+    card_paths: dict[str, Path] = {}
+    blobs = io.BytesIO(snapshot.stdout)
+    for object_id, path in cards:
+        actual_id, kind, size = blobs.readline().split()
+        assert (actual_id, kind) == (object_id, b"blob"), ("Unexpected Git blob response", path, actual_id, kind)
+        text = blobs.read(int(size)).decode("utf-8")
+        assert blobs.read(1) == b"\n", ("Missing Git blob separator", path)
+        entry = queue_entry_from_text(text, path, card_paths)
+        if entry is not None:
+            entries[entry[0]] = entry[1]
+    return render_entries(entries.items())
 
 
 def unsolved(parsed: list[ParsedCard]) -> list[ParsedCard]:
@@ -167,7 +145,7 @@ def load_cards(root: Path) -> list[ParsedCard]:
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=REPO)
-    parser.add_argument("--incremental-range", metavar="BASE", help="update from the queue at BASE over card changes since BASE")
+    parser.add_argument("--incremental-range", metavar="BASE", help="when corpus changes since BASE are pushed, rebuild from committed HEAD cards")
     args = parser.parse_args(argv)
     root = args.root.resolve()
     out = root / "queues" / "C-unsolved-cards.md"

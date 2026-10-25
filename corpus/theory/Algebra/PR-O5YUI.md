@@ -39,6 +39,7 @@ $$
 then
 $$
 \Phi^{-1}(T)=\sum_{i=1}^n\sum_{j=1}^m T_{ji}\,e_i^*\tensor_k f_j.
+$$
 :::
 
 ::: {.proof}

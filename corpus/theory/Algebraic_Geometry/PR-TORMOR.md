@@ -3,7 +3,6 @@ schema: qual/card@1
 id: PR-TORMOR
 kind: definition
 title: Toric morphisms, completeness, and topological invariants
-slogan: 'A toric variety is complete exactly when its fan fills the lattice space; toric properness is the same support condition after pullback.'
 classification:
   areas:
   - algebraic-geometry
@@ -19,6 +18,8 @@ prompts:
 - What is a toric morphism, on lattices and on varieties?
 - When is a toric variety complete, and why?
 ---
+
+A toric variety is complete exactly when its fan fills the lattice space; toric properness is the same support condition after pullback.
 
 ::: {.definition title="Toric morphism"}
 A lattice map $\phi : N_1 \to N_2$ is \dfn{compatible} with fans $\Sigma_1, \Sigma_2$ if every $\sigma_1 \in \Sigma_1$ has some $\sigma_2 \in \Sigma_2$ with $\phi_\RR(\sigma_1) \subseteq \sigma_2$.
@@ -40,7 +41,8 @@ For $\PP^2$ with $T = \theset{(1 : s : t)}$ and $\lambda^u(t) = (1 : t^{u_1} : t
 :::
 
 ::: {.remark title="Topology over $\CC$"}
-Assume $k=\CC$ and give $X_\Sigma(\CC)$ its classical topology. Let
+Assume $k=\CC$ and give $X_\Sigma(\CC)$ its classical topology.
+Let
 $$
 N_\Sigma\coloneqq\generators{\sigma\cap N\st\sigma\in\Sigma}\subseteq N.
 $$
@@ -48,7 +50,8 @@ Then
 $$
 \pi_1\bigl(X_\Sigma(\CC)\bigr)\cong N/N_\Sigma
 $$
-[@Ful93, §3.2]. In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
+[@Ful93, §3.2].
+In particular, if $N_\Sigma=N$, then $X_\Sigma(\CC)$ is simply connected.
 
 If $X_\Sigma$ is complete of dimension $n$, additivity of the topological Euler characteristic across the torus-orbit decomposition gives
 $$

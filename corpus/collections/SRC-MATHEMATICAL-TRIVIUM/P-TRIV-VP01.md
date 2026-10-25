@@ -44,7 +44,7 @@ $$
 is
 $$
 \boxed{
-f''+rac3x f'+\lambda f^3=0.
+f''+\frac3x f'+\lambda f^3=0.
 }
 $$
 
@@ -138,7 +138,8 @@ Since
 $$
 u(t)=x f(x),
 $$
-boundedness of $f$ near $0$ gives $u\to0$. Also
+boundedness of $f$ near $0$ gives $u\to0$.
+Also
 $$
 u'=xf+x^2f',
 $$
@@ -256,10 +257,9 @@ f(\infty)=f'(\infty)=0.
 $$
 
 ::: {.proof}
-The functions in step <1>8 decay as $x^{-2}$, and their derivatives decay as
-$x^{-3}$, so they satisfy the boundary conditions. Step <1>7 exhausts the
-nonzero zero-energy trajectories compatible with regularity at $x=0$. The
-zero solution is immediate.
+The functions in step <1>8 decay as $x^{-2}$, and their derivatives decay as $x^{-3}$, so they satisfy the boundary conditions.
+Step <1>7 exhausts the nonzero zero-energy trajectories compatible with regularity at $x=0$.
+The zero solution is immediate.
 :::
 
 <1>10. Part (b) follows.
@@ -287,8 +287,7 @@ f'
 $$
 
 ::: {.proof}
-Differentiate the explicit formula from step <1>8. The action depends only on
-$f^2$ and $f^4$, so the sign does not matter.
+Differentiate the explicit formula from step <1>8. The action depends only on $f^2$ and $f^4$, so the sign does not matter.
 :::
 
 <1>12. The action density simplifies to
@@ -330,8 +329,7 @@ S[f]
 $$
 
 ::: {.proof}
-Substitute step <1>12 into the definition of $S[f]$ and multiply by the
-factor $2\pi^2$.
+Substitute step <1>12 into the definition of $S[f]$ and multiply by the factor $2\pi^2$.
 :::
 
 <1>14. With
@@ -346,7 +344,8 @@ $$
 $$
 
 ::: {.proof}
-Substitute $x=\rho t$ and $dx=\rho dt$. All powers of $\rho$ cancel.
+Substitute $x=\rho t$ and $dx=\rho dt$.
+All powers of $\rho$ cancel.
 :::
 
 <1>15. One has

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-SRFCAST
 kind: definition
 title: Castelnuovo's contractibility criterion
-slogan: 'A proper integral curve on a smooth surface contracts to a smooth point exactly when it is $\PP^1$ with self-intersection $-1$.'
 classification:
   areas:
   - algebraic-geometry
@@ -21,6 +20,8 @@ prompts:
 - What is a minimal surface?
 - What is the minimal model program for surfaces?
 ---
+
+A proper integral curve on a smooth surface contracts to a smooth point exactly when it is $\PP^1$ with self-intersection $-1$.
 
 ::: {.definition}
 Let $X$ be a smooth projective surface over a field.

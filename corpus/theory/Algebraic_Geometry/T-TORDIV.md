@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-TORDIV
 kind: definition
 title: Divisors, class group and Picard group from the rays
-slogan: 'Toric divisor theory is linear algebra on the rays: characters give the relations, the cokernel is the class group, and $K_X=-\sum_\rho D_\rho$.'
 classification:
   areas:
   - algebraic-geometry
@@ -26,6 +25,8 @@ prompts:
 - How is a toric variety a GIT quotient, and when is that quotient geometric?
 - What is a primitive collection?
 ---
+
+Toric divisor theory is linear algebra on the rays: characters give the relations, the cokernel is the class group, and $K_X=-\sum_\rho D_\rho$.
 
 ::: {.theorem title="The two sequences"}
 Let $\Sigma$ have rays $\Sigma(1)$ with primitive generators $u_\rho$.
@@ -59,7 +60,8 @@ the inverse limit over the face poset of the groups $\CDiv_T(U_\sigma) \cong M/M
 :::
 
 ::: {.proposition title="The lattice linear algebra"}
-Let $V\colon\ZZ^a\to\ZZ^b$ be an integer matrix. Applying $\Hom_\ZZ(-,\ZZ)$ to
+Let $V\colon\ZZ^a\to\ZZ^b$ be an integer matrix.
+Applying $\Hom_\ZZ(-,\ZZ)$ to
 $$
 \ZZ^a\xrightarrow{V}\ZZ^b\longrightarrow\operatorname{coker}V\longrightarrow0
 $$
@@ -108,7 +110,8 @@ $$
 \qquad
 A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1 \end{bmatrix} ,
 $$
-generated up to sign by the class of any ray divisor $D_\rho$. The Picard group is zero by the affine-toric vector-bundle theorem in [[PR-FULCM]], not merely by affineness.
+generated up to sign by the class of any ray divisor $D_\rho$.
+The Picard group is zero by the affine-toric vector-bundle theorem in [[PR-FULCM]], not merely by affineness.
 :::
 
 ::: {.example}
@@ -131,7 +134,8 @@ $$
 \rank\Cl(X_\Sigma)=\size\Sigma(1)-\dim N_\RR.
 $$
 Its torsion is nonzero exactly when the ray generators span a proper finite-index sublattice of $N$.
-If moreover $\Sigma$ is simplicial, every invariant Weil divisor is $\QQ$-Cartier, so $\Pic(X_\Sigma)$ has finite index in $\Cl(X_\Sigma)$ and the same rank. For $\FF_a$ this rank is $4-2=2$.
+If moreover $\Sigma$ is simplicial, every invariant Weil divisor is $\QQ$-Cartier, so $\Pic(X_\Sigma)$ has finite index in $\Cl(X_\Sigma)$ and the same rank.
+For $\FF_a$ this rank is $4-2=2$.
 
 Cartier divisors are cut out locally: $D = \sum a_\rho D_\rho$ is Cartier iff for every maximal cone $\sigma$ there is $m_\sigma \in M$ with $\inner{m_\sigma}{u_\rho} = -a_\rho$ for all $\rho \leq \sigma$, and then $D|_{U_\sigma} = \operatorname{div}(\chi^{-m_\sigma})$.
 Equivalently $\CDiv_T(U_\sigma) \cong M/M(\sigma)$ where $M(\sigma) = \sigma^\perp \intersect M$.

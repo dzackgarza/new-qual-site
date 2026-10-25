@@ -10,13 +10,17 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Direct inspection of the retained PDF recovers the source diagram: all four square corners are the vertex y; both vertical sides are the edge a oriented upward; both horizontal sides are the edge b oriented rightward; the diagonal c is oriented from lower left to upper right; the upper and lower 2-simplices are U and L.
+  note: "Direct inspection of the retained PDF recovers the source diagram: all four square corners are the vertex y; both vertical sides are the edge a oriented upward; both horizontal sides are the edge b oriented rightward; the diagonal c is oriented from lower left to upper right; the upper and lower 2-simplices are U and L."
 ---
 
 ::: {.problem}
 1. Calculate the simplicial homology groups of $S^1$.
 
-2. Calculate the simplicial homology groups of the torus using the following $\Delta$-complex from the source diagram. Start with a square whose four corners are identified to one vertex $y$. Label both vertical sides by $a$ and orient them upward; label both horizontal sides by $b$ and orient them to the right. Add the diagonal edge $c$, oriented from the lower-left corner to the upper-right corner. Let $U$ be the upper triangle and $L$ the lower triangle.
+2. Calculate the simplicial homology groups of the torus using the following $\Delta$-complex from the source diagram.
+   Start with a square whose four corners are identified to one vertex $y$.
+   Label both vertical sides by $a$ and orient them upward; label both horizontal sides by $b$ and orient them to the right.
+   Add the diagonal edge $c$, oriented from the lower-left corner to the upper-right corner.
+   Let $U$ be the upper triangle and $L$ the lower triangle.
 
 3. Let $T_0^2$ be the torus with the interior of a disk removed. Use the Mayer--Vietoris sequence for
    \[
@@ -28,7 +32,8 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Give $S^1$ the one-vertex $\Delta$-complex structure with one vertex $v$ and one oriented edge $e$ whose two endpoints are both $v$. Its chain complex is
+<1>1. Give $S^1$ the one-vertex $\Delta$-complex structure with one vertex $v$ and one oriented edge $e$ whose two endpoints are both $v$.
+Its chain complex is
 $$
 0\longrightarrow \ZZ\langle e\rangle
 \xrightarrow{\partial_1}
@@ -38,7 +43,8 @@ $$
 with $\partial_1e=0$.
 
 ::: {.proof}
-The boundary of the oriented edge is terminal vertex minus initial vertex. Since both are the same vertex $v$,
+The boundary of the oriented edge is terminal vertex minus initial vertex.
+Since both are the same vertex $v$,
 $$
 \partial_1e=v-v=0.
 $$
@@ -81,10 +87,12 @@ $$
 $$
 
 ::: {.proof}
-The recovered source diagram has one vertex after all four corners of the square are identified, three edge classes $a,b,c$, and two triangles $U,L$. Since both endpoints of each edge are the single vertex $y$, every $1$-simplex has zero boundary.
+The recovered source diagram has one vertex after all four corners of the square are identified, three edge classes $a,b,c$, and two triangles $U,L$.
+Since both endpoints of each edge are the single vertex $y$, every $1$-simplex has zero boundary.
 :::
 
-<1>4. Orient both triangles counterclockwise in the square. Then
+<1>4. Orient both triangles counterclockwise in the square.
+Then
 $$
 \partial_2U=c-b-a,
 \qquad
@@ -92,12 +100,14 @@ $$
 $$
 
 ::: {.proof}
-For the lower triangle $L$, the counterclockwise boundary runs along the bottom edge in the positive $b$ direction, then the right edge in the positive $a$ direction, then back along the diagonal opposite to its positive $c$ direction. Hence
+For the lower triangle $L$, the counterclockwise boundary runs along the bottom edge in the positive $b$ direction, then the right edge in the positive $a$ direction, then back along the diagonal opposite to its positive $c$ direction.
+Hence
 $$
 \partial_2L=b+a-c.
 $$
 
-For the upper triangle $U$, the counterclockwise boundary runs along the diagonal in the positive $c$ direction, then along the top edge opposite to the positive $b$ direction, then down the left edge opposite to the positive $a$ direction. Hence
+For the upper triangle $U$, the counterclockwise boundary runs along the diagonal in the positive $c$ direction, then along the top edge opposite to the positive $b$ direction, then down the left edge opposite to the positive $a$ direction.
+Hence
 $$
 \partial_2U=c-b-a.
 $$
@@ -146,7 +156,8 @@ H_1(T^2)
 {\ZZ\langle a+b-c\rangle}
 \cong\ZZ^2.
 $$
-The relation vector $(1,1,-1)$ is primitive, so the quotient is free of rank $2$. Finally,
+The relation vector $(1,1,-1)$ is primitive, so the quotient is free of rank $2$.
+Finally,
 $$
 H_0(T^2)=\ZZ
 $$
@@ -159,7 +170,8 @@ H_0(T_0^2)\cong\ZZ.
 $$
 
 ::: {.proof}
-Removing the interior of a disk from the connected surface $T^2$ leaves a connected surface with one boundary component. Hence its zeroth homology is $\ZZ$.
+Removing the interior of a disk from the connected surface $T^2$ leaves a connected surface with one boundary component.
+Hence its zeroth homology is $\ZZ$.
 :::
 
 <1>8. In the Mayer--Vietoris sequence for
@@ -175,7 +187,9 @@ $$
 is an isomorphism.
 
 ::: {.proof}
-Both groups are infinite cyclic by steps <1>2 and <1>6. At the chain level, represent the fundamental class of the oriented torus by the sum of a fundamental $2$-chain on $T_0^2$ and the oriented disk that fills its boundary. The Mayer--Vietoris connecting homomorphism sends this class to the common boundary circle of those two chains. That circle represents a generator of
+Both groups are infinite cyclic by steps <1>2 and <1>6. At the chain level, represent the fundamental class of the oriented torus by the sum of a fundamental $2$-chain on $T_0^2$ and the oriented disk that fills its boundary.
+The Mayer--Vietoris connecting homomorphism sends this class to the common boundary circle of those two chains.
+That circle represents a generator of
 $$
 H_1(T_0^2\cap D^2)\cong H_1(S^1)\cong\ZZ.
 $$
@@ -202,7 +216,9 @@ Since $H_2(D^2)=0$, the map
 $$
 H_2(T_0^2)\to H_2(T^2)
 $$
-is injective. By step <1>8, $\ker\delta=0$, so exactness forces its image to be $0$. Hence $H_2(T_0^2)=0$.
+is injective.
+By step <1>8, $\ker\delta=0$, so exactness forces its image to be $0$.
+Hence $H_2(T_0^2)=0$.
 :::
 
 <1>10. One has
@@ -227,7 +243,8 @@ Since $\delta$ is surjective by step <1>8, the map
 $$
 H_1(S^1)\to H_1(T_0^2)
 $$
-is zero. Thus
+is zero.
+Thus
 $$
 H_1(T_0^2)\to H_1(T^2)
 $$
@@ -243,7 +260,9 @@ $$
 \qquad
 1\longmapsto(1,-1),
 $$
-because all three spaces are connected. It is injective. Exactness therefore makes
+because all three spaces are connected.
+It is injective.
+Exactness therefore makes
 $$
 H_1(T^2)\to H_0(S^1)
 $$
@@ -251,7 +270,9 @@ the zero map, so
 $$
 H_1(T_0^2)\to H_1(T^2)
 $$
-is also surjective. Hence it is an isomorphism. Step <1>6 gives
+is also surjective.
+Hence it is an isomorphism.
+Step <1>6 gives
 $$
 H_1(T_0^2)\cong\ZZ^2.
 $$

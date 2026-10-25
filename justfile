@@ -84,6 +84,9 @@ complete *args:
 
 # Regenerate BACKLOG.md unless already current for HEAD (runs before every push)
 backlog:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    source "$HOME/ai-review-ci/tool-artifacts/scripts/heavy-gate-lock.sh"
     uv run python tools/backlog.py
 
 # Sample up to n unsolved card IDs and show their appearances in source order
@@ -121,9 +124,10 @@ _macros-push:
     uv run python tools/sync_macros.py --check
 
 # Update Queue C over the commits being pushed. Content commits run no gate, so the queue is
-# regenerated here from the upstream queue and the pushed card diff; `just unsolved` remains
-# the independent full rebuild. A queue that moved is committed and this push is refused, so
-# the next push carries the regenerated queue with the cards that changed it.
+# regenerated here from exact committed HEAD card blobs, without historical YAML or dirty
+# corpus files; `just unsolved` remains the independent full rebuild. A queue that moved
+# is committed and this push is refused, so the next push carries the regenerated queue
+# with the cards that changed it.
 [private]
 _unsolved-push:
     #!/usr/bin/env bash
@@ -203,3 +207,7 @@ test-push: _extraction-detector-push _unsolved-push _macros-push backlog
 # Run the CI acceptance gate
 test-ci:
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-ci
+
+# Run the scheduled whole-tree audit (semgrep and debt scans) through the central implementation.
+ambient:
+    @just -f ~/ai-review-ci/justfiles/python.just -d . ambient

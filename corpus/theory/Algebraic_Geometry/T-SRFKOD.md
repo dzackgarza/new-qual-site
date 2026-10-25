@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-SRFKOD
 kind: definition
 title: Kodaira dimension and the Enriques classification of surfaces
-slogan: 'Kodaira dimension measures how much the pluricanonical system sees: nothing, a point, a curve, or the whole surface for $\kappa=-\infty,0,1,2$.'
 classification:
   areas:
   - algebraic-geometry
@@ -22,6 +21,8 @@ prompts:
 - What is the Kodaira dimension?
 - Which surfaces have Kodaira dimension zero?
 ---
+
+Kodaira dimension measures how much the pluricanonical system sees: nothing, a point, a curve, or the whole surface for $\kappa=-\infty,0,1,2$.
 
 ::: {.definition}
 The \dfn{Kodaira dimension} of a smooth projective variety $X$ is

@@ -20,9 +20,12 @@ audit:
 Let $B$ be an integral domain with field of fractions $K$, let $A = B[X]$, and let $P$ be a prime ideal of $A$; then $P \cap B$ is a prime ideal in $B$.
 By [[P-TATE85-PI-03]]:
 
-(3a) If $P \cap B = (0)$, then (i) $PK = P(K[X])$ is a prime ideal in $AK = K[X]$; (ii) $P = PK \cap A$; (iii) if $B$ is a u.f.d., then either $P = (0)$, or $P = f(X)A$, where $f(X)$ is a polynomial with coefficients in $B$, these coefficients having "no" common divisor (i.e., none except units in $B$), and $f(X)$ being irreducible in $K[X]$. Moreover $f$ is determined by $P$ up to a unit (invertible element) of $B$.
+(3a) If $P \cap B = (0)$, then (i) $PK = P(K[X])$ is a prime ideal in $AK = K[X]$; (ii) $P = PK \cap A$; (iii) if $B$ is a u.f.d., then either $P = (0)$, or $P = f(X)A$, where $f(X)$ is a polynomial with coefficients in $B$, these coefficients having "no" common divisor (i.e., none except units in $B$), and $f(X)$ being irreducible in $K[X]$.
+Moreover $f$ is determined by $P$ up to a unit (invertible element) of $B$.
 
-(3b) If $P \cap B = M$, a maximal ideal of $B$, then, making the identification $A/MA = B[X]/MB[X] \approx (B/M)[X] = k[X]$, where $k = B/M$, we see that $P/MA$ is a prime ideal in $k[X]$. Hence: either $P = MA$, or $P = MA + g(x)A$, where $g(X)$ is a polynomial with coefficients in $B$ such that the polynomial $\overline{g}(X)$ which we obtain by reducing the coefficients of $g$ (mod $M$) is an irreducible polynomial in $k[X]$. Moreover $g$ is determined by $P$ up to multiplication by an element of $B$ not in $M$ and addition of a polynomial whose coefficients are in $M$.
+(3b) If $P \cap B = M$, a maximal ideal of $B$, then, making the identification $A/MA = B[X]/MB[X] \approx (B/M)[X] = k[X]$, where $k = B/M$, we see that $P/MA$ is a prime ideal in $k[X]$.
+Hence: either $P = MA$, or $P = MA + g(x)A$, where $g(X)$ is a polynomial with coefficients in $B$ such that the polynomial $\overline{g}(X)$ which we obtain by reducing the coefficients of $g$ (mod $M$) is an irreducible polynomial in $k[X]$.
+Moreover $g$ is determined by $P$ up to multiplication by an element of $B$ not in $M$ and addition of a polynomial whose coefficients are in $M$.
 
 Apply (3) to the case where $B$ is a p.i.d., and show that the prime ideals $P$ of $A$ are of the following distinct types:
 
@@ -60,7 +63,8 @@ or
 $$
 P=f(X)A,
 $$
-where $f$ is primitive in $B[X]$ and irreducible in $K[X]$. These are types I and II.
+where $f$ is primitive in $B[X]$ and irreducible in $K[X]$.
+These are types I and II.
 
 If $P\cap B=\pi B$, then $\pi B$ is maximal, and Problem 3(b) gives either
 $$
@@ -70,17 +74,21 @@ or
 $$
 P=\pi A+g(X)A,
 $$
-where $ar g$ is irreducible in $(B/\pi B)[X]$. These are types III and IV.
+where $\bar g$ is irreducible in $(B/\pi B)[X]$.
+These are types III and IV.
 :::
 
 <1>2. The four types are distinct.
 
 ::: {.proof}
-Types I and II have contraction $(0)$ to $B$, whereas types III and IV have nonzero contraction $\pi B$. Type I is zero and type II is nonzero. In the nonzero-contraction case, type III has image zero in
+Types I and II have contraction $(0)$ to $B$, whereas types III and IV have nonzero contraction $\pi B$.
+Type I is zero and type II is nonzero.
+In the nonzero-contraction case, type III has image zero in
 $$
 A/\pi A\cong(B/\pi B)[X],
 $$
-whereas type IV has nonzero image $(ar g)$. Hence no two of the four types coincide.
+whereas type IV has nonzero image $(\bar g)$.
+Hence no two of the four types coincide.
 :::
 
 <1>3. Every type-IV ideal
@@ -94,9 +102,10 @@ Reduction modulo $\pi$ gives
 $$
 A/Q
 \cong
-(B/\pi B)[X]/(ar g).
+(B/\pi B)[X]/(\bar g).
 $$
-The ring $B/\pi B$ is a field and $ar g$ is irreducible, so the quotient is a field. Hence $Q$ is maximal.
+The ring $B/\pi B$ is a field and $\bar g$ is irreducible, so the quotient is a field.
+Hence $Q$ is maximal.
 :::
 
 <1>4. No type-IV ideal is principal.
@@ -106,9 +115,13 @@ Because $B$ is a PID, it is a UFD, and therefore $A=B[X]$ is a UFD. Suppose
 $$
 Q=\pi A+gA=(h)
 $$
-were principal. Then $h$ divides $\pi$ in $A$. Since $\pi$ is irreducible in $A$, either $h$ is a unit or $h$ is associated to $\pi$.
+were principal.
+Then $h$ divides $\pi$ in $A$.
+Since $\pi$ is irreducible in $A$, either $h$ is a unit or $h$ is associated to $\pi$.
 
-The first case would give $Q=A$, impossible. In the second case $Q=\pi A$, which would force $g\in\pi A$. But then $ar g=0$ in $(B/\pi B)[X]$, contradicting the irreducibility required in type IV. Thus $Q$ is not principal.
+The first case would give $Q=A$, impossible.
+In the second case $Q=\pi A$, which would force $g\in\pi A$.
+But then $\bar g=0$ in $(B/\pi B)[X]$, contradicting the irreducibility required in type IV. Thus $Q$ is not principal.
 :::
 
 <1>5. A type-IV ideal
@@ -122,7 +135,8 @@ If $\pi A\subseteq Q$, then
 $$
 \pi\in Q\cap B=\pi^*B.
 $$
-Thus $\pi^*$ divides $\pi$ in the PID $B$. Since both are prime elements, they are associated.
+Thus $\pi^*$ divides $\pi$ in the PID $B$.
+Since both are prime elements, they are associated.
 
 Conversely, if $\pi^*B=\pi B$, then $\pi A= \pi^*A\subseteq Q$.
 :::
@@ -137,23 +151,31 @@ $$
 $$
 
 ::: {.proof}
-One has $P\subseteq Q$ if and only if $f\in Q$. Reducing modulo $\pi A$ identifies this condition with
+One has $P\subseteq Q$ if and only if $f\in Q$.
+Reducing modulo $\pi A$ identifies this condition with
 $$
-\bar f\in(ar g)
+\bar f\in(\bar g)
 $$
-inside the PID $(B/\pi B)[X]$. This is equivalent to $ar g$ dividing $ar f$.
+inside the PID $(B/\pi B)[X]$.
+This is equivalent to $\bar g$ dividing $\bar f$.
 :::
 
 <1>7. If $B$ has infinitely many maximal ideals, then no type-II ideal is maximal.
 
 ::: {.proof}
-Let $P=fA$ be of type II. The polynomial $f$ is nonconstant. Only finitely many prime elements of $B$ divide its leading coefficient. Since $B$ has infinitely many maximal ideals, choose a prime element $\pi$ whose ideal is maximal and which does not divide that leading coefficient.
+Let $P=fA$ be of type II. The polynomial $f$ is nonconstant.
+Only finitely many prime elements of $B$ divide its leading coefficient.
+Since $B$ has infinitely many maximal ideals, choose a prime element $\pi$ whose ideal is maximal and which does not divide that leading coefficient.
 
-Then $ar f$ is a nonconstant polynomial in $(B/\pi B)[X]$. It has an irreducible factor $ar g$. Lift $ar g$ to $g\in B[X]$. By step <1>6,
+Then $\bar f$ is a nonconstant polynomial in $(B/\pi B)[X]$.
+It has an irreducible factor $\bar g$.
+Lift $\bar g$ to $g\in B[X]$.
+By step <1>6,
 $$
 fA\subseteq \pi A+gA.
 $$
-The ideal on the right is type IV and hence maximal by step <1>3. Its contraction to $B$ is $\pi B$, while $fA\cap B=(0)$, so the containment is strict. Therefore $fA$ is not maximal.
+The ideal on the right is type IV and hence maximal by step <1>3. Its contraction to $B$ is $\pi B$, while $fA\cap B=(0)$, so the containment is strict.
+Therefore $fA$ is not maximal.
 :::
 
 <1>8. Suppose instead that the maximal ideals of $B$ are exactly
@@ -172,7 +194,8 @@ For every $i$,
 $$
 \bar f=1
 $$
-in $(B/\pi_iB)[X]$. Hence $fA$ is contained in no type-III ideal $\pi_iA$ and, by step <1>6, in no type-IV ideal lying over $\pi_iB$.
+in $(B/\pi_iB)[X]$.
+Hence $fA$ is contained in no type-III ideal $\pi_iA$ and, by step <1>6, in no type-IV ideal lying over $\pi_iB$.
 
 It is also contained in no strictly larger type-II prime: if
 $$
@@ -184,12 +207,15 @@ $$
 $$
 Since both $f$ and $f_1$ are irreducible in the PID $K[X]$, they are associates, and contraction back to $A$ gives equality.
 
-Thus no prime ideal properly contains $fA$. If $fA$ were not maximal, it would be contained in some maximal ideal, which is prime, contradicting the preceding paragraph. Hence $fA$ is maximal.
+Thus no prime ideal properly contains $fA$.
+If $fA$ were not maximal, it would be contained in some maximal ideal, which is prime, contradicting the preceding paragraph.
+Hence $fA$ is maximal.
 :::
 
 <1>9. Q.E.D.
 
 ::: {.proof}
-Steps <1>1 and <1>2 give the classification. Steps <1>3--<1>6 establish the assertions about type IV and containment, while steps <1>7 and <1>8 prove the final maximality statements.
+Steps <1>1 and <1>2 give the classification.
+Steps <1>3--<1>6 establish the assertions about type IV and containment, while steps <1>7 and <1>8 prove the final maximality statements.
 :::
 :::
