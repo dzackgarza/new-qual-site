@@ -139,7 +139,8 @@ finding triggers an edit, and a run with no candidates is not evidence that the 
 is clean.
 
 `just backlog` (and `uv run python tools/backlog.py`) regenerates `BACKLOG.md`;
-`just test-push` runs it before every push. Never run it manually — it is redundant.
+CI runs it and `just unsolved`, and publishes both reports as the
+`corpus-reports` workflow artifact.
 
 ## This corpus is authored content
 
@@ -812,7 +813,7 @@ dependency; do not retain a completed snapshot merely as insurance.
 **Commit content with `git commit --no-verify`.** This is the repository owner's sanctioned commit
 route for prose-only, documentation-only, and authored-content commits (copy, prose, mathematics,
 solutions, statement corrections, new cards): it is the documented workflow, not an evasion of any
-gate. Those commits are verified by reading the diff, and every gate runs at push. `just
+gate. Those commits are verified by reading the diff. `just
 commit-card` takes the same route. Code, renderer, schema, and executable-configuration commits use
 normal hooks.
 
@@ -821,9 +822,11 @@ prose, mathematics, solutions, statement corrections, and new cards or ingested 
 verified by reading its diff and reviewing the mathematics, and is committed as soon as the item is
 done. Do not run or wait on builds, test suites, renders, screenshots, broad formatters, or queue
 regeneration for content work: repairs to copy, prose, mathematics, and solutions are checked by
-eye until they are pushed. The content-specific gates — the extraction detector, which rejects
-untranscribed extractor output in a problem block, and the regeneration of
-`queues/C-unsolved-cards.md` — run at push, together with the test suite. The site is never
+eye until they are pushed. Push runs the extraction detector on changed cards, the macro
+mirror check, shared immediate QC, and the selected front-matter and extraction-detector
+tests in `justfile`. The full test suite and report generation run in CI. Download the
+`corpus-reports` workflow artifact for current `BACKLOG.md` and
+`queues/C-unsolved-cards.md` measurements. The site is never
 built locally: `.github/workflows/pages.yml` builds, crawls and deploys it on every push to
 `main`, and `gh run download <run-id> -n github-pages` fetches a built site.
 

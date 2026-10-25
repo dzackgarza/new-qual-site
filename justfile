@@ -82,11 +82,8 @@ vale *args:
 complete *args:
     uv run python -m qualc.card_completeness {{ args }}
 
-# Regenerate BACKLOG.md unless already current for HEAD (runs before every push)
+# Regenerate corpus measurements in CI
 backlog:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    source "$HOME/ai-review-ci/tool-artifacts/scripts/heavy-gate-lock.sh"
     uv run python tools/backlog.py
 
 # Sample up to n unsolved card IDs and show their appearances in source order
@@ -123,27 +120,9 @@ _extraction-detector-push:
 _macros-push:
     uv run python tools/sync_macros.py --check
 
-# Update Queue C over the commits being pushed. Content commits run no gate, so the queue is
-# regenerated here from exact committed HEAD card blobs, without historical YAML or dirty
-# corpus files; `just unsolved` remains the independent full rebuild. A queue that moved
-# is committed and this push is refused, so the next push carries the regenerated queue
-# with the cards that changed it.
+# Generate downloadable measurements from the CI checkout
 [private]
-_unsolved-push:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    base=$(git merge-base HEAD @{upstream})
-    if git diff --quiet "$base" HEAD -- corpus; then
-        echo "queues/C-unsolved-cards.md: no pushed corpus change"
-        exit 0
-    fi
-    uv run python tools/unsolved_queue.py --incremental-range "$base"
-    if git diff --quiet HEAD -- queues/C-unsolved-cards.md; then
-        exit 0
-    fi
-    git commit --only --no-verify -m "queue: regenerate unsolved cards for pushed corpus changes" -- queues/C-unsolved-cards.md
-    echo "Queue C was regenerated and committed; push again to include it." >&2
-    exit 1
+_reports-ci: backlog unsolved
 
 # Fail if any worktree exists (QUAL-09: one checkout, one branch)
 #
@@ -200,13 +179,15 @@ _no-bare-disposition:
 test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
-# Run the full project suite before pushing (refreshes BACKLOG.md first)
-test-push: _extraction-detector-push _unsolved-push _macros-push backlog
-    @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
+# Explicit files keep site builds and corpus scans in CI. One worker avoids
+# starting a process per CPU for this small test selection.
+# Run immediate checks and small parser tests before pushing
+test-push: _extraction-detector-push _macros-push
+    @PYTEST_ADDOPTS="-n 0 tests/test_front_matter_keys.py tests/test_extraction_detector.py" just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate
 test-ci:
-    @just -f ~/ai-review-ci/justfiles/python.just -d . test-ci
+    @PYTEST_ADDOPTS="" just -f ~/ai-review-ci/justfiles/python.just -d . test-ci
 
 # Run the scheduled whole-tree audit (semgrep and debt scans) through the central implementation.
 ambient:
