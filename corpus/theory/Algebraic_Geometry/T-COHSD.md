@@ -35,7 +35,7 @@ H^i(X, \mcl) \tensor H^{n-i}\qty{X, \omega_X \tensor \dualof{\mcl}}
 $$
 is perfect, so
 $$
-H^i(X,\mcl) \cong H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}\dual.
+H^i(X,\mcl) \cong \dualof{H^{n-i}\qty{X, \omega_X \tensor \dualof{\mcl}}}.
 $$
 The trace $t_X$ corresponds under $H^n(X,\omega_X)\cong H^0(X,\OO_X)^\vee$ to evaluation on the constant section $1$.
 It is an isomorphism exactly when $H^0(X,\OO_X)=k$.

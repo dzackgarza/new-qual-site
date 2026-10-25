@@ -32,7 +32,7 @@ where $\ell(D) \coloneqq \dim_k H^0(X, \OO_X(D))$ and $K$ is a canonical divisor
 :::
 
 ::: {.theorem title="Serre duality"}
-$H^1(X, \OO_X(D)) \cong H^0(X, \OO_X(K-D))\dual$, so $\ell(K-D) = h^1(X,\OO_X(D))$ and Riemann--Roch gives
+$H^1(X, \OO_X(D)) \cong \dualof{H^0(X, \OO_X(K-D))}$, so $\ell(K-D) = h^1(X,\OO_X(D))$ and Riemann--Roch gives
 $$
 \chi(\OO_X(D)) = \deg D + 1 - g .
 $$

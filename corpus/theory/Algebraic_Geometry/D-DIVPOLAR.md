@@ -46,7 +46,7 @@ $(\PP^n, \OO(1))$ is polarized of degree $1$, and a hypersurface of degree $d$ w
 A K3 surface with an ample numerical class $h$ has a numerical polarization of degree $h^2 = 2g - 2$, and a quartic surface in $\PP^3$ has degree $4$ with respect to $\OO(1)$.
 For an abelian variety $A$, an ample invertible sheaf $\mcl$ determines the polarization isogeny
 $$
-\lambda_{\mcl}\colon A\to A\dual,
+\lambda_{\mcl}\colon A\to \dualof{A},
 \qquad
 x\mapsto t_x^*\mcl\tensor_{\OO_A}\mcl^{-1}.
 $$

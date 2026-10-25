@@ -20,7 +20,7 @@ audit:
 ::: {.problem}
 Let $k$ be a field and let the group $G = \GL(m, k) \cross \GL(n, k)$ acts on the set of $m\times n$ matrices $M_{m, n}(k)$ as follows:
 \[
-(A, B) \cdot X = AXB\inv
+(A, B) \cdot X = AX\inverseof{B}
 \]
 where $(A, B) \in G$ and $X\in M_{m, n}(k)$.
 

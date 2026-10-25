@@ -49,7 +49,7 @@ The toric variety $X_\Sigma$ is obtained by identifying these two copies of $U_\
 
 Face inclusion is contravariant on affine charts:
 $$
-\tau \leq \sigma \implies \sigma\dual \subseteq \tau\dual \implies U_\tau \subseteq U_\sigma .
+\tau \leq \sigma \implies \dualof{\sigma} \subseteq \dualof{\tau} \implies U_\tau \subseteq U_\sigma .
 $$
 For the zero cone, $S_{\theset{0}}=M$ and $U_{\theset{0}}=\Spec k[M]=T_N$. This is a nonempty open subset of every irreducible affine chart $U_\sigma$, hence is dense in every chart and in $X_\Sigma$.
 :::
@@ -60,5 +60,5 @@ Then $S_{\sigma_1} = \NN^2$ and
 $$
 S_\tau = \NN^2 + \NN \cdot (0,-1) = \NN \oplus \ZZ , \qquad U_\tau = \Spec k[x, y^{\pm 1}] = D(y) \subseteq \AA^2 .
 $$
-For $\PP^1$, the two maximal cones $\RR_{\geq 0}$ and $\RR_{\leq 0}$ share the face $\theset{0}$, whose chart is $\Spec k[x^{\pm 1}] = \GG_m$. It is obtained by localizing $k[x]$ at $x$ on one side and $k[x\inv]$ at $x\inv$ on the other, and the transition map sends $x\mapsto x\inv$.
+For $\PP^1$, the two maximal cones $\RR_{\geq 0}$ and $\RR_{\leq 0}$ share the face $\theset{0}$, whose chart is $\Spec k[x^{\pm 1}] = \GG_m$. It is obtained by localizing $k[x]$ at $x$ on one side and $k[\inverseof{x}]$ at $\inverseof{x}$ on the other, and the transition map sends $x\mapsto \inverseof{x}$.
 :::

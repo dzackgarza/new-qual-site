@@ -34,7 +34,7 @@ Then
 $$
 (D_+(f), \restrictionof{\OO_{\Proj S}}{D_+(f)}) \cong \Spec S_{(f)} ,
 $$
-where $S_{(f)}$ is the degree-zero part of $S[f\inv]$.
+where $S_{(f)}$ is the degree-zero part of $S[\inverseof{f}]$.
 The $D_+(f)$ for homogeneous $f\in S_+$ cover $\Proj S$, so $\Proj S$ is a scheme.
 :::
 

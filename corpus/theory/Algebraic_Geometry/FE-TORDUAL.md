@@ -28,17 +28,17 @@ $$
 For $v_1 = (2,1)$ and $v_2 = (1,4)$ this gives $R v_1 = (-1,2)$ and $R v_2 = (-4,1)$.
 The second normal points out of the cone, so replacing it by $(4,-1)$ gives
 $$
-\sigma\dual = \Cone\big( (4,-1),\ (-1,2) \big) .
+\dualof{\sigma} = \Cone\big( (4,-1),\ (-1,2) \big) .
 $$
 The pairings $\inner{(4,-1)}{(1,4)} = 4 - 4 = 0$ and $\inner{(-1,2)}{(2,1)} = -2 + 2 = 0$ show that these vectors are the inward normals to the two walls.
 :::
 
 ::: {.example title="The semigroup and its equations"}
-The Hilbert basis of $S_\sigma = \sigma\dual \intersect M$ is
+The Hilbert basis of $S_\sigma = \dualof{\sigma} \intersect M$ is
 $$
 (4,-1), \quad (1,0), \quad (0,1), \quad (-1,2) ,
 $$
-Write $u = x^4 y\inv$, $v = x$, $w = y$, $t = x\inv y^2$ for the corresponding characters.
+Write $u = x^4 \inverseof{y}$, $v = x$, $w = y$, $t = \inverseof{x} y^2$ for the corresponding characters.
 
 The exponent vectors satisfy
 $$
@@ -47,7 +47,7 @@ $$
 so $uw = v^4$, $vt = w^2$, and $ut = v^3 w$.
 Hence
 $$
-X_\sigma = \Spec k[x^4 y\inv, x, y, x\inv y^2] = \Spec \frac{k[u,v,w,t]}{(uw - v^4,\ vt - w^2,\ ut - v^3 w)} ,
+X_\sigma = \Spec k[x^4 \inverseof{y}, x, y, \inverseof{x} y^2] = \Spec \frac{k[u,v,w,t]}{(uw - v^4,\ vt - w^2,\ ut - v^3 w)} ,
 $$
 a surface in $\AA^4$.
 The three equations are the $2 \times 2$ minors of

@@ -28,7 +28,7 @@ R^i f_*\mcf\coloneqq R^i(f_*)(\mcf).
 $$
 Equivalently, $R^i f_* \mcf$ is the sheafification of
 $$
-V \mapsto H^i\qty{f\inv(V), \restrictionof{\mcf}{f\inv(V)}} .
+V \mapsto H^i\qty{\inverseof{f}(V), \restrictionof{\mcf}{\inverseof{f}(V)}} .
 $$
 :::
 

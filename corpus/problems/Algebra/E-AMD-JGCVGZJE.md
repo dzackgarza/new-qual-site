@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-JGCVGZJE
 kind: problem
-title: $\unitsof{R}$ need not be closed under addition
+title: $\units{R}$ need not be closed under addition
 classification:
   areas:
   - algebra

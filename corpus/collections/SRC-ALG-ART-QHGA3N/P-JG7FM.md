@@ -18,7 +18,7 @@ audit:
   date: 2026-09-09
 ---
 ::: {.problem}
-Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(\zeta_n + \zeta_n\inv): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
+Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(\zeta_n + \inverseof{\zeta_n}): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
 :::
 
 ::: {.solution}

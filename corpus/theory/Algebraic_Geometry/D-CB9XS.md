@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition title="Twisting sheaves"}
 $\OO_{\PP^n}(-1)$ is the \dfn{tautological} bundle: its fibre over $p \in \PP^n$ is the line in $\AA^{n+1}$ that $p$ is.
-Its dual is $\OO(1)$. For $n\geq0$, $\OO(n)$ is the $n$-fold tensor product of $\OO(1)$ with itself over $\OO_{\PP^n}$, and $\OO(-n)=\OO(n)\dual$; on $\Proj S$ these are the sheaves $\widetilde{S(n)}$ associated to the shifted graded modules.
+Its dual is $\OO(1)$. For $n\geq0$, $\OO(n)$ is the $n$-fold tensor product of $\OO(1)$ with itself over $\OO_{\PP^n}$, and $\OO(-n)=\dualof{\OO(n)}$; on $\Proj S$ these are the sheaves $\widetilde{S(n)}$ associated to the shifted graded modules.
 :::
 
 ::: {.proposition}

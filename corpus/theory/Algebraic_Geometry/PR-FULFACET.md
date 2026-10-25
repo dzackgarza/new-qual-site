@@ -24,9 +24,9 @@ prompts:
 Let $N$ be a lattice, put $M\coloneqq\Hom(N,\ZZ)$, let $\sigma\subseteq N_\RR$ be a full-dimensional rational polyhedral cone, and let $\tau\leq\sigma$ be a facet.
 Then the ray
 $$
-\sigma\dual\intersect\tau^\perp\subseteq M_\RR
+\dualof{\sigma}\intersect\tau^\perp\subseteq M_\RR
 $$
-has a unique primitive generator $u_\tau\in M\cap\sigma\dual$. It satisfies
+has a unique primitive generator $u_\tau\in M\cap\dualof{\sigma}$. It satisfies
 $$
 \tau = \sigma \intersect u_\tau^\perp .
 $$
@@ -39,7 +39,7 @@ $$
 \sigma = \Intersect_{\tau \text{ a facet of } \sigma} H_\tau^+ , \qquad
 H_\tau^+ \coloneqq \theset{ v \in N_\RR \st \inner{u_\tau}{v} \geq 0 } .
 $$
-Equivalently, if $u_1, \ldots, u_t$ generate $\sigma\dual$, then
+Equivalently, if $u_1, \ldots, u_t$ generate $\dualof{\sigma}$, then
 $$
 \sigma = \theset{ v \in N_\RR \st \inner{u_1}{v} \geq 0, \ \ldots, \ \inner{u_t}{v} \geq 0 } .
 $$

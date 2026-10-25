@@ -51,7 +51,7 @@ and $\underline{\Pic}^{\,0}_{X/k}$ is the degree-zero subfunctor.
 :::
 
 ::: {.proposition}
-For $\mcl$ invertible, the evaluation map $\mcl\tensor_{\OO_X}\mcl\dual\to\OO_X$ is an isomorphism: on every trivializing open it is the multiplication isomorphism
+For $\mcl$ invertible, the evaluation map $\mcl\tensor_{\OO_X}\dualof{\mcl}\to\OO_X$ is an isomorphism: on every trivializing open it is the multiplication isomorphism
 $\OO_X\tensor_{\OO_X}\OO_X\cong\OO_X$.
 There is a natural group isomorphism $\Pic(X)\cong H^1(X,\OO_X^\times)$, obtained by sending local frames to their transition-unit cocycle, as proved in [[P-AGH345PICH1]].
 :::

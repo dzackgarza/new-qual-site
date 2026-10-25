@@ -26,9 +26,9 @@ prompts:
 Let $N$ be a lattice of rank $n$, put $M\coloneqq\Hom(N,\ZZ)$, and let $\sigma\subseteq N_\RR$ be a full-dimensional strongly convex rational polyhedral cone.
 The assignment
 $$
-\tau \longmapsto \tau^\star\coloneqq\sigma\dual\intersect\tau^\perp
+\tau \longmapsto \tau^\star\coloneqq\dualof{\sigma}\intersect\tau^\perp
 $$
-is an inclusion-reversing bijection from the faces of $\sigma$ to the faces of $\sigma\dual\subseteq M_\RR$. Its inverse sends a face $\gamma\leq\sigma\dual$ to
+is an inclusion-reversing bijection from the faces of $\sigma$ to the faces of $\dualof{\sigma}\subseteq M_\RR$. Its inverse sends a face $\gamma\leq\dualof{\sigma}$ to
 $$
 \gamma^\star\coloneqq\sigma\intersect\gamma^\perp.
 $$
@@ -39,14 +39,14 @@ $$
 :::
 
 ::: {.remark title="Rays and facets"}
-The bijection sends $\sigma$ to $\theset{0}$ and $\theset{0}$ to $\sigma\dual$. It exchanges rays and facets:
+The bijection sends $\sigma$ to $\theset{0}$ and $\theset{0}$ to $\dualof{\sigma}$. It exchanges rays and facets:
 
 | face of $\sigma$ | image in $\dualof{\sigma}$ |
 | --- | --- |
-| facet $\tau$, $\dim = n-1$ | ray $\sigma\dual\cap\tau^\perp$ spanned by a primitive facet normal in $M$ |
-| ray $\rho$, $\dim = 1$ | facet of $\sigma\dual$, $\dim = n-1$ |
+| facet $\tau$, $\dim = n-1$ | ray $\dualof{\sigma}\cap\tau^\perp$ spanned by a primitive facet normal in $M$ |
+| ray $\rho$, $\dim = 1$ | facet of $\dualof{\sigma}$, $\dim = n-1$ |
 
-Thus the primitive ray generators of $\sigma\dual$ are the primitive inward facet normals of $\sigma$, and conversely.
+Thus the primitive ray generators of $\dualof{\sigma}$ are the primitive inward facet normals of $\sigma$, and conversely.
 
 For an arbitrary polyhedral cone $C\subseteq N_\RR$, strong convexity is equivalent to $\theset{0}$ being a face of $C$, and by face duality this is equivalent to $C^\vee$ being full-dimensional. For the strongly convex $\sigma$ above, $S_\sigma=\sigma^\vee\cap M$ therefore generates $M$ as a group.
 :::

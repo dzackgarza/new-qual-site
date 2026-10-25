@@ -23,14 +23,14 @@ audit:
 
 ::: {.exercise}
 Assume throughout that $R$ is a commutative ring with identity.
-Let $N(R)$ be the set of nilpotent elements, $ZD(R)$ the set of zero divisors, and $\unitsof{R}$ the group of units.
+Let $N(R)$ be the set of nilpotent elements, $ZD(R)$ the set of zero divisors, and $\units{R}$ the group of units.
 
 - Show that every nilpotent element is either zero or a zero divisor.
 
 - Show that if $n\in N(R)$, then $1+n$ is a unit.
-  Deduce that $N(R)+\unitsof{R}=\unitsof{R}$.
+  Deduce that $N(R)+\units{R}=\units{R}$.
 
-- For $f(x)=\sum_{k=0}^d a_kx^k\in R[x]$, show that $f\in \unitsof{R[x]}$ iff $a_0\in \unitsof{R}$ and $a_k\in N(R)$ for every $k\ge1$.
+- For $f(x)=\sum_{k=0}^d a_kx^k\in R[x]$, show that $f\in \units{R[x]}$ iff $a_0\in \units{R}$ and $a_k\in N(R)$ for every $k\ge1$.
 
 - Show that $f(x)\in N(R[x])$ iff $a_k\in N(R)$ for every $k$.
 
@@ -58,7 +58,7 @@ with both factors nonzero, so $a$ is a zero divisor.
 :::
 
 ::: {.pf-step #one-plus-n-unit}
-If $n\in N(R)$, then $1+n$ is a unit; consequently $N(R)+\unitsof{R}=\unitsof{R}$.
+If $n\in N(R)$, then $1+n$ is a unit; consequently $N(R)+\units{R}=\units{R}$.
 
 ::: pf-proof
 Choose $N$ with $n^N=0$.
@@ -68,11 +68,11 @@ Then
 \]
 so $1+n$ is a unit.
 
-Now let $u\in \unitsof{R}$ and $n\in N(R)$. Since $R$ is commutative, $u^{-1}n$ is nilpotent, and
+Now let $u\in \units{R}$ and $n\in N(R)$. Since $R$ is commutative, $u^{-1}n$ is nilpotent, and
 \[
 u+n=u(1+u^{-1}n)
 \]
-is a product of units. Thus $N(R)+\unitsof{R}\subseteq \unitsof{R}$. The reverse inclusion follows from $0\in N(R)$.
+is a product of units. Thus $N(R)+\units{R}\subseteq \units{R}$. The reverse inclusion follows from $0\in N(R)$.
 :::
 
 :::
@@ -81,7 +81,7 @@ is a product of units. Thus $N(R)+\unitsof{R}\subseteq \unitsof{R}$. The reverse
 A polynomial $f(x)=\sum_{k=0}^d a_kx^k$ is a unit in $R[x]$ if and only if $a_0$ is a unit and every $a_k$ for $k\ge1$ is nilpotent.
 
 ::: pf-proof
-Suppose first that $a_0\in \unitsof{R}$ and every $a_k$ for $k\ge1$ is nilpotent.
+Suppose first that $a_0\in \units{R}$ and every $a_k$ for $k\ge1$ is nilpotent.
 Put
 \[
 h(x)=\sum_{k=1}^d a_kx^k.

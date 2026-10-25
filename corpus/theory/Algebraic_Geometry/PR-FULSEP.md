@@ -22,7 +22,7 @@ prompts:
 
 ::: {.proposition title="Separation"}
 Let $N_\RR$ be a finite-dimensional real vector space, let $M_\RR=N_\RR^\vee$, let $\sigma\subseteq N_\RR$ be a convex polyhedral cone, and let $v\in N_\RR\sm\sigma$.
-Then there is a linear functional $u\in\sigma\dual\subseteq M_\RR$ such that
+Then there is a linear functional $u\in\dualof{\sigma}\subseteq M_\RR$ such that
 $$
 \inner{u}{v} < 0 .
 $$
@@ -49,7 +49,7 @@ The functional $u=\langle p-v,\wait\rangle\in M_\RR$ therefore has the required 
 
 ::: {.proposition title="Double duality"}
 $$
-(\sigma\dual)\dual = \sigma .
+\dualof{\dualof{\sigma}} = \sigma .
 $$
 :::
 

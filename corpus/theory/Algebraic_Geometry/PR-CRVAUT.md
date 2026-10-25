@@ -38,9 +38,9 @@ In characteristic zero, a general curve of genus $g \geq 3$ has trivial automorp
 :::
 
 ::: {.remark}
-The line bundle $3K_C$ is very ample for $g\geq2$, so the automorphism group scheme of $C$ is a closed subgroup scheme of the projective linear group preserving the $3K_C$-embedding. Its tangent space at the identity is $H^0(C,T_C)$. Since $T_C\cong\omega_C\dual$ has degree $2-2g<0$, one has $H^0(C,T_C)=0$. Thus the automorphism group scheme is zero-dimensional, affine, and of finite type over $k$, hence finite over $k$.
+The line bundle $3K_C$ is very ample for $g\geq2$, so the automorphism group scheme of $C$ is a closed subgroup scheme of the projective linear group preserving the $3K_C$-embedding. Its tangent space at the identity is $H^0(C,T_C)$. Since $T_C\cong\dualof{\omega_C}$ has degree $2-2g<0$, one has $H^0(C,T_C)=0$. Thus the automorphism group scheme is zero-dimensional, affine, and of finite type over $k$, hence finite over $k$.
 
-If $C$ is non-hyperelliptic, the canonical system already gives an embedding $C\hookrightarrow\PP(H^0(C,\omega_C)\dual)$. For $g=3$, the image is a smooth plane quartic, and $\Aut_k(C)$ is the subgroup of $\PGL_3(k)$ stabilizing that quartic.
+If $C$ is non-hyperelliptic, the canonical system already gives an embedding $C\hookrightarrow\PP(\dualof{H^0(C,\omega_C)})$. For $g=3$, the image is a smooth plane quartic, and $\Aut_k(C)$ is the subgroup of $\PGL_3(k)$ stabilizing that quartic.
 
 Assume now that $\operatorname{char}k=0$. The bound follows from Riemann--Hurwitz applied to the quotient $C \to C/G$ with $G = \Aut_k(C)$ of order $n$.
 Writing $g'$ for the genus of the quotient and $e_1,\ldots,e_r$ for the ramification indices of the branch points,

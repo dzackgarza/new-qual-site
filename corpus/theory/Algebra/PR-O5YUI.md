@@ -23,7 +23,7 @@ Choose a basis $e_1,\ldots,e_n$ of $V$ with dual basis $e_1^*,\ldots,e_n^*$, and
 Under the canonical isomorphism [[PR-LPJLD]]
 $$
 \begin{aligned}
-\Phi\colon V\dual\tensor_k W &\to \Hom_k(V,W),\\
+\Phi\colon \dualof{V}\tensor_k W &\to \Hom_k(V,W),\\
 \tilde v\tensor_k w &\mapsto \big(v\mapsto \tilde v(v)\,w\big),
 \end{aligned}
 $$

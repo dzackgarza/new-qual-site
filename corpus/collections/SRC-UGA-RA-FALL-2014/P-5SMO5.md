@@ -38,7 +38,7 @@ Prove that
 ::: {.concept}
 \envlist
 
-- Polar decomposition: $f = \sign(f) \cdot \abs{f}$.
+- Polar decomposition: $f = \sgn(f) \cdot \abs{f}$.
 - $L^\infty[0, 1] \subseteq L^1[0, 1]$.
 
 :::

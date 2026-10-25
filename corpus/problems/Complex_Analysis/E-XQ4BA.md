@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that $\Aut(\CC) = \theset{ z \mapsto az+b\st a\in \unitsof{\CC}, b\in \CC }$.
+Show that $\Aut(\CC) = \theset{ z \mapsto az+b\st a\in \units{\CC}, b\in \CC }$.
 
 :::
 

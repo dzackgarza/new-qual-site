@@ -26,7 +26,7 @@ a. Give (with proof) the decomposition of the additive group $(\FF, +)$ into a d
 b. The *exponent* of a finite group is the least common multiple of the orders of its elements.
    Prove that a finite abelian group has an element of order equal to its exponent.
 
-c. Prove that the multiplicative group $(\unitsof{\FF}, \cdot)$ is cyclic.
+c. Prove that the multiplicative group $(\units{\FF}, \cdot)$ is cyclic.
 :::
 
 ::: {.solution}
