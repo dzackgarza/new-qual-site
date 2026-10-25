@@ -16,7 +16,7 @@ import yaml
 from pydantic import TypeAdapter
 
 from .emit import _collection_source_links
-from .model import Card, CollectionCard, CompilationSource, TextbookSource, discover, parse_card, parse_cards, split_front_matter
+from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSource, discover, parse_card, parse_cards, split_front_matter
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
@@ -31,7 +31,30 @@ def card_header(text: str, path: Path) -> Card:
         raise ValueError(f"{path}: {exc}") from exc
 
 
-def check_git_cards(revision: str, diff_args: tuple[str, ...]) -> int:
+class GitChange(Strict):
+    path: Path
+    version: str
+
+
+def check_git_changes(changes: list[GitChange]) -> int:
+    """Validate card blobs selected by the shared hook or a manual range check."""
+    cards = [change for change in changes if change.path.is_relative_to("corpus") and change.path.suffix == ".md"]
+    errors: list[str] = []
+    for change in cards:
+        revision = "" if change.version == "index" else change.version
+        source = subprocess.run(["git", "show", f"{revision}:{change.path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
+        try:
+            card_header(source, change.path)
+        except ValueError as exc:
+            errors.append(str(exc))
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+    print(f"Card YAML and schema: {len(cards)} changed file(s) checked")
+    return 0
+
+
+def check_git_cards(version: str, diff_args: tuple[str, ...]) -> int:
     """Validate Git blobs selected by diff, including Git's temporary commit index.
 
     Git's diff --name-only -z and show :path / revision:path interfaces own
@@ -43,19 +66,7 @@ def check_git_cards(revision: str, diff_args: tuple[str, ...]) -> int:
         stdout=subprocess.PIPE,
         text=True,
     ).stdout
-    paths = [Path(name) for name in names.split("\0") if name.endswith(".md")]
-    errors: list[str] = []
-    for path in paths:
-        text = subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
-        try:
-            card_header(text, path)
-        except ValueError as exc:
-            errors.append(str(exc))
-    if errors:
-        print("\n".join(errors), file=sys.stderr)
-        return 1
-    print(f"Card YAML and schema: {len(paths)} changed file(s) checked")
-    return 0
+    return check_git_changes([GitChange(path=Path(name), version=version) for name in names.split("\0") if name])
 
 
 @dataclass(frozen=True)
@@ -202,12 +213,14 @@ def _refuse_secondary_worktrees() -> None:
         raise ValueError(f"QUAL-09: {extra} worktree(s) exist. Streams work directly on main in this clone; land the work on main, then remove the worktree.")
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("check-staged", help="validate changed card YAML and schema from the Git index")
     range_check = commands.add_parser("check-range", help="validate changed card YAML and schema from committed HEAD")
     range_check.add_argument("base", help="base commit of the outgoing range")
+    selected_check = commands.add_parser("check-changes", help="validate exact Git blobs selected by the shared local hook")
+    selected_check.add_argument("--mode", choices=("staged", "push"), required=True)
     for name in ("path", "read", "diff", "check", "commit"):
         command = commands.add_parser(name)
         command.add_argument("card", help="card ID or corpus Markdown path")
@@ -219,13 +232,18 @@ def main() -> int:
         if name == "sample":
             command.add_argument("count", type=int)
         command.add_argument("section", nargs="?", default="", help="exact authored section name; omitted means all")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     corpus = Corpus(Path.cwd())
     try:
         if args.command == "check-staged":
-            return check_git_cards("", ("--cached",))
+            return check_git_cards("index", ("--cached",))
         if args.command == "check-range":
             return check_git_cards("HEAD", (args.base, "HEAD"))
+        if args.command == "check-changes":
+            changes = [GitChange.model_validate_json(line) for line in sys.stdin]
+            if any((change.version == "index") != (args.mode == "staged") for change in changes):
+                raise ValueError("Git blob versions must match the requested validation mode")
+            return check_git_changes(changes)
         if args.command in ("list", "unsolved", "sample"):
             if args.command == "sample" and args.count <= 0:
                 raise ValueError("sample count must be positive")

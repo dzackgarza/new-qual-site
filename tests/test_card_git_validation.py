@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import shlex
 import subprocess
 import sys
@@ -141,3 +142,28 @@ def test_pathspec_commit_validates_its_temporary_index(repo: Path) -> None:
     assert "corpus/one card.md" in result.stderr
     assert git(repo, "rev-parse", "HEAD") == head
     assert git(repo, "diff", "--cached") == staged_before
+
+
+def test_shared_push_payload_validates_each_exact_candidate_commit(repo: Path) -> None:
+    valid = git(repo, "rev-parse", "HEAD").strip()
+    card = repo / "corpus/one card.md"
+    card.write_text(CARD.replace("title:", "title: Series: ", 1))
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "invalid candidate")
+    invalid = git(repo, "rev-parse", "HEAD").strip()
+    card.write_text(CARD)
+    git(repo, "add", "corpus/one card.md")
+    git(repo, "commit", "-qm", "valid HEAD")
+    payload = "\n".join(json.dumps({"path": "corpus/one card.md", "version": commit}) for commit in (valid, invalid))
+
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/local-validate.py"), "--mode", "push"],
+        cwd=repo,
+        input=payload,
+        capture_output=True,
+        text=True,
+    )
+
+    assert result.returncode == 1
+    assert "corpus/one card.md" in result.stderr
+    assert "mapping values are not allowed" in result.stderr
