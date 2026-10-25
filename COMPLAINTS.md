@@ -2155,20 +2155,49 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
 - **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
-- **Observed evidence:** the card body lists five subgroups of $\langle a,b\rangle$ and five images of covering diagrams, but no posed question. The card was intaken from the vendored compilation `assets/Topology/650_UCSD_Qual_Questions/Quals/Topology Problems (Solutions).pdf` (with its checked-in extraction), whose "Covering Spaces" section reads only "Generators of the subgroups:" followed by the same list and the same images: those bytes are the author's answer material, recorded without the question, because the compilation assumes the reader has the original course sheet.
-- **Searched:** the vendored compilation and its extraction, `UCSD_290_F14_sheet*` extractions, `UCSD_Topology_Qual_Problems_2020-05-29`, `UCSD_290_Qualifying_Exams`, and the `qual-wiki` UCSD finals. **Found:** the subgroup list and images only. **Conclusion:** the posed task is not recoverable from any retained source. **Confidence:** high for absence from retained bytes. **Gaps:** the original UCSD 290 covering-spaces homework sheet that posed the question is not in this repository or the sibling clones; the vendored compilation is owner-authored notes and so is also not a valid `provenance:` oracle, which is why the collection's provenance list stays empty.
-- **Impact and owner:** the card is not a self-contained problem; a solution cannot be authored without inventing the task. The five covering diagrams in `assets/Topology/650_UCSD_Qual_Questions/Quals/assets/` are the only record of the covers.
+
+- **Observed evidence:** the card body lists five subgroups of $\langle a,b\rangle$ and five images of covering diagrams, but no posed question.
+  The card was intaken from the vendored compilation `assets/Topology/650_UCSD_Qual_Questions/Quals/Topology Problems (Solutions).pdf` (with its checked-in extraction), whose "Covering Spaces" section reads only "Generators of the subgroups:" followed by the same list and the same images: those bytes are the author's answer material, recorded without the question, because the compilation assumes the reader has the original course sheet.
+
+- **Searched:** the vendored compilation and its extraction, `UCSD_290_F14_sheet*` extractions, `UCSD_Topology_Qual_Problems_2020-05-29`, `UCSD_290_Qualifying_Exams`, and the `qual-wiki` UCSD finals.
+  **Found:** the subgroup list and images only.
+  **Conclusion:** the posed task is not recoverable from any retained source.
+  **Confidence:** high for absence from retained bytes.
+  **Gaps:** the original UCSD 290 covering-spaces homework sheet that posed the question is not in this repository or the sibling clones; the vendored compilation is owner-authored notes and so is also not a valid `provenance:` oracle, which is why the collection's provenance list stays empty.
+
+- **Impact and owner:** the card is not a self-contained problem; a solution cannot be authored without inventing the task.
+  The five covering diagrams in `assets/Topology/650_UCSD_Qual_Questions/Quals/assets/` are the only record of the covers.
+
 - **Uncertainty:** the intended task (presumably matching each subgroup with the corresponding cover of $S^1\vee S^1$) is a plausible reconstruction, not a reading of any source.
+
 - **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
 
 ## Workflow and rendering papercuts
 
+### Pages build rejects undefined authored macros
+
+- **Object and need:** the full-corpus Pages build at `d612c977e`.
+
+- **Observed evidence:** [run 40188235893](https://github.com/dzackgarza/new-qual-site/actions/runs/40188235893) passed its test job but failed `Build catalog and static site` on 2026-10-25.
+  Diagnostics include undefined `\inv` in `FE-TORDUAL`, `\dual` in `PR-CRVAUT`, `\isom` in `PR-DIVLB`, and `\unitsof` in `wiki/algebra/resources/syllabus.md`.
+
+- **Impact and owner:** deployment is blocked by the authored macro vocabulary and its preamble mirror.
+
+- **Uncertainty:** the failed build log establishes the rejected commands; the intended definitions and full diagnostic population need source review.
+
+- **Repair:** reconcile these uses with the owning preamble and macro mirror, then verify through Pages CI.
+
 ### Shared QC installation lacks its PR workflow and branch protection
 
 - **Object and need:** the shared QC installation declared in `justfile`.
+
 - **Observed evidence:** `ai-review-ci doctor --target . --json` on 2026-10-25 accepted the local recipe delegation but reported missing `.github/workflows/review-pr.yml` and an unprotected `main` branch.
-- **Impact and owner:** Pages CI runs the project suite and build; the shared required PR acceptance contexts are not installed. The installation belongs to ai-review-ci.
+
+- **Impact and owner:** Pages CI runs the project suite and build; the shared required PR acceptance contexts are not installed.
+  The installation belongs to ai-review-ci.
+
 - **Uncertainty:** this is the doctor's current installation result, not a failure of the Pages tests or build.
+
 - **Repair:** reconcile the shared PR installation with `QUAL-09`'s direct-to-main workflow before changing branch protection.
 
 ### Overlapping workstream owners edited the same Author-solutions card
