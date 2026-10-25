@@ -120,6 +120,22 @@ def test_card_commit_skips_hooks_when_the_problem_statement_changes(tmp_path: Pa
     assert run(tmp_path, "git", "log", "-1", "--format=%s").stdout.strip() == "statement edit"
 
 
+def test_card_commit_rejects_invalid_front_matter_before_committing(tmp_path: Path) -> None:
+    _, target = authoring_repo(tmp_path)
+    target.write_text(target.read_text().replace("title:", "title: Series: ", 1))
+    before = run(tmp_path, "git", "rev-parse", "HEAD").stdout
+
+    result = subprocess.run(
+        ("just", "--justfile", str(ROOT / "justfile"), "--working-directory", str(tmp_path), "commit-card", "E-CENTER", "invalid title"),
+        text=True,
+        capture_output=True,
+    )
+
+    assert result.returncode != 0, result.stdout
+    assert "mapping values are not allowed" in result.stderr
+    assert run(tmp_path, "git", "rev-parse", "HEAD").stdout == before
+
+
 def test_card_commit_refuses_to_run_from_a_secondary_worktree(tmp_path: Path) -> None:
     """QUAL-09: a stream that opened a worktree learns it at its next card commit."""
     _, target = authoring_repo(tmp_path)
