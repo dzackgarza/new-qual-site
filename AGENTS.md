@@ -831,13 +831,18 @@ parser and Git-boundary tests. It is the explicit project diagnostic command; th
 Git hooks own the automatic syntax and card-data checks.
 The full test suite and report generation run in CI. Download the
 `corpus-reports` workflow artifact for current `BACKLOG.md` and
-`queues/C-unsolved-cards.md` measurements. The site is never
+`queues/C-unsolved-cards.md` measurements. Select the run for the revision under review:
+`gh run view <run-id> --json headSha,status,conclusion`, then download its reports with
+`gh run download <run-id> -n corpus-reports -D /tmp/qual-reports-<run-id>`.
+Check `corpus-reports-revision.txt` against that run's `headSha` before reading the reports.
+Checked-in reports describe their last regeneration; use the selected run's artifact for
+that revision's measurements. The site is never
 built locally: `.github/workflows/pages.yml` builds, crawls and deploys it on every push to
 `main`, and `gh run download <run-id> -n github-pages` fetches a built site.
 
 Code, renderer, schema, executable configuration, and mixed code/content changes use the normal
-commit and push gates. Use focused checks while investigating a specific defect; let those gates
-run the broader checks.
+commit and push gates. Use focused checks while investigating a specific defect; CI runs
+the full acceptance checks.
 
 ## A red gate is the current task
 
