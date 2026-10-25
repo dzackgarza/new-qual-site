@@ -1,5 +1,172 @@
 # Outstanding work
 
+## Fast local checks and complete CI acceptance
+
+Deliver a short local feedback loop that rejects basic defects in the actual changes,
+while CI owns full test suites, corpus-wide validation, builds, rendering, and broad audits.
+Local parser tests supplement validation of changed content; they do not replace it.
+This list is the focused QC workstream. The mathematical authoring DAG below remains separate.
+
+### Priority and dependencies
+
+Take ready items in the order below. A dependency requires the stated result, not merely
+an open PR or a passing unrelated check. Independent items may proceed while another waits
+on hosted checks. Every item is open until its acceptance condition is met.
+
+| Priority | ID | Task | Immediate dependencies |
+| --- | --- | --- | --- |
+| P0 | QC-01 | Validate changed card data locally | none |
+| P0 | QC-02 | Repair the card rejected by the latest CI run | QC-01 |
+| P0 | QC-03 | Complete the shared normalization repair | none |
+| P1 | QC-04 | Preserve cheap checks at every applicable local entry point | QC-01 |
+| P1 | QC-05 | Remove heavy-job queueing from genuinely small local checks | QC-03 |
+| P1 | QC-06 | Run the complete shared acceptance tier in hosted CI | none |
+| P1 | QC-07 | Give corpus reports their own CI job | none |
+| P1 | QC-08 | Repair the known full-build macro failure | QC-02 |
+| P2 | QC-09 | Make the local test selection an explicit maintained contract | QC-04, QC-06 |
+| P2 | QC-10 | Make generated reports usable and revision-specific | QC-07 |
+| P2 | QC-11 | Verify the deployed shared hook behavior | QC-03, QC-04, QC-05, QC-09 |
+| P2 | QC-12 | Close the workstream against a complete hosted run | QC-02, QC-06, QC-08, QC-10, QC-11 |
+
+### P0: prevent basic defects from reaching CI
+
+- [ ] **QC-01 — Parse and validate the actual changed card data locally.**
+  **Owner:** `tools/qualc/model.py`, the authoring command boundary, and `justfile`.
+  Use the existing front-matter parser and card schema to reject invalid YAML, duplicate
+  keys, missing required fields, invalid field types, and unknown fields on changed cards.
+  Keep this path independent of Pandoc, site emission, and whole-corpus loading.
+  Validate staged blobs at an ordinary commit boundary and committed blobs in the outgoing
+  push range. Include added, modified, and renamed cards; a deleted card has no remaining
+  body to parse. Pathspec commits and partially staged files must validate the content
+  actually being committed, not a different working-tree version.
+  **Acceptance:** real temporary-repository cases show that malformed changed card YAML
+  blocks the local boundary with a path and location, valid changed cards pass, and
+  unrelated corpus files are not scanned. A valid working-tree edit must not conceal an
+  invalid staged blob. The local push path must cover content commits made through the
+  sanctioned hook-free authoring route.
+
+- [ ] **QC-02 — Repair `P-X1WOB` through the local validator.**
+  **Owner:** `corpus/problems/Real_Analysis/P-X1WOB.md`.
+  [CI run 40188997972](https://github.com/dzackgarza/new-qual-site/actions/runs/40188997972)
+  failed in `Generate corpus reports`: its unquoted title contains a colon followed by
+  a space, which is invalid in that YAML scalar. Read the complete card, preserve the
+  title's text and mathematics, and correct its YAML representation with a structured
+  edit. Resolve any additional basic validation errors reported on that card.
+  **Acceptance:** the actual card passes QC-01 locally before a push; hosted report
+  generation gets beyond this parse error. A full local build is not required.
+
+- [ ] **QC-03 — Land the shared normalization fix at its owner.**
+  **Owner:** [ai-review-ci issue #482](https://github.com/dzackgarza/ai-review-ci/issues/482)
+  and [PR #483](https://github.com/dzackgarza/ai-review-ci/pull/483).
+  At the latest inspection, the PR is open and ready for review, but GitHub reports a
+  merge conflict. Reconcile it with current upstream without losing either side's work.
+  Preserve staged-file Semgrep autofix, the empty-index early return, and the rule that
+  mypy selects its targets before acquiring a heavy-job lock. Check review feedback and
+  the required check set on the reconciled revision; CodeQL success alone does not prove
+  these hook behaviors.
+  **Acceptance:** the reviewed repair is merged, targeted real-boundary tests pass, and
+  the installed shared hook resolves to the accepted implementation rather than depending
+  on an unmerged feature checkout.
+
+### P1: finish the local/CI boundary
+
+- [ ] **QC-04 — Route cheap validation through the real authoring and push paths.**
+  **Owner:** `justfile`, `tools/qualc/authoring.py`, `AGENTS.md`, and `QUAL-06`.
+  Trace ordinary commits, `commit-card`, explicit content commits, and pushes. Make the
+  changed-card validation obligation explicit at each applicable boundary. Retain syntax,
+  type, dependency, extraction-residue, and other cheap direct-error checks at their proper
+  local tier. Classify each check by its actual input and cost, not by whether its subject
+  is code or authored content. Update the content-commit instructions to match executable
+  behavior, while keeping mathematical review a reading obligation.
+  **Acceptance:** each supported route has a verified path to rejecting malformed outgoing
+  content before upload. Documentation and recipes agree on that path.
+
+- [ ] **QC-05 — Keep local checks out of the heavy-work queue.**
+  **Owner:** ai-review-ci's Python profile and shared lock usage.
+  The selected local pytest run still enters `_pytest`, which acquires the machine-wide
+  heavy-job lock. Establish which local operations genuinely need that resource constraint.
+  Remove unnecessary contention at the shared owner, while retaining resource control for
+  full suites and heavy analyses. Include changed-Python commits in the investigation;
+  an empty Python change set is not evidence that type-checking latency is acceptable.
+  **Acceptance:** a small local validation run can complete while an unrelated heavy gate
+  holds its slot; it does not achieve this by disabling mandatory checks or changing the
+  machine-wide lock limit. Measure any remaining type-checking cost on real changed input.
+
+- [ ] **QC-06 — Wire the hosted acceptance tier for this repository's workflow.**
+  **Owner:** ai-review-ci's supported workflow integration and `.github/workflows/`.
+  Pages currently invokes `just test`; the inspected workflows do not invoke this
+  repository's `test-ci` recipe. The full doctor also reports a missing PR workflow and
+  branch protection. Determine the supported integration for the repository's
+  direct-to-main policy before changing repository protection or requiring PRs.
+  Ensure full acceptance has the Python, Pandoc, LaTeX, and filter dependencies it needs,
+  and that CI cannot inherit the local pytest file selection. Avoid running the complete
+  suite twice merely to compose the project and shared tiers.
+  **Acceptance:** a hosted run demonstrates execution of the complete intended acceptance
+  tier, with a real comparison base for diff checks and explicit failure propagation.
+  Any workflow-policy decision still requiring owner choice is stated before changing it.
+
+- [ ] **QC-07 — Separate advisory report generation from test and deployment status.**
+  **Owner:** `.github/workflows/pages.yml` and `_reports-ci`.
+  Report generation currently shares the test job, so a report failure marks that job
+  failed and prevents the build from starting. Give reports an independently visible job
+  and artifact. Keep report execution errors visible and failing at that job; measured
+  corpus candidates remain advisory. Mandatory data validation belongs in the acceptance
+  path, independent of whether a reporting tool can produce its output.
+  **Acceptance:** a report execution failure has its own failed job and useful diagnostics;
+  test results remain distinct. Deployment still requires successful mandatory validation,
+  acceptance, build, and link checks.
+
+- [ ] **QC-08 — Resolve the previously observed undefined macros.**
+  **Owner:** the authored macro uses, `vocabularies/macros.json`, and the preamble owner.
+  Start with the evidence in [COMPLAINTS.md](COMPLAINTS.md#pages-build-rejects-undefined-authored-macros).
+  Read each rejected use and its intended source definition. Determine whether each defect
+  belongs to the authored spelling, the upstream definition, or macro transport. Repair
+  the actual owner one item at a time and preserve mathematical meaning.
+  The recent mirror refresh changed delimiter sizing; it does not establish that the
+  rejected commands are now defined.
+  **Acceptance:** hosted full-corpus build and link crawl succeed on the repaired revision;
+  inspect the affected rendered expressions using that CI artifact.
+
+### P2: verify coverage and close the remaining gaps
+
+- [ ] **QC-09 — Maintain local test coverage without confusing it with input validation.**
+  **Owner:** the project test selection and the shared Python invocation contract.
+  Review the current explicit front-matter and extraction-detector test selection against
+  the local behaviors it must protect. Keep focused tests for the changed-input validator
+  and authoring boundary in the fast tier. Place site-building fixtures and full-corpus
+  cases in CI. Establish one explicit selection mechanism supported by the shared owner;
+  first check whether the current mechanism already meets that requirement.
+  **Acceptance:** the local command runs the intended fast cases, CI runs the full suite,
+  and a changed input is validated regardless of whether parser regression tests pass.
+
+- [ ] **QC-10 — Verify report delivery and consumption.**
+  **Owner:** the report job, `BACKLOG.md`, Queue C, and their usage instructions.
+  Check that `corpus-reports` contains both generated files for the workflow revision and
+  that a reader can retrieve the correct run's artifact. Reconcile instructions that read
+  checked-in reports with the new artifact delivery path; a historical checked-in queue
+  must not silently stand in for a current generated report.
+  **Acceptance:** both reports are downloadable from a successful run, their source
+  revision is identifiable, and the documented reading path reaches those outputs.
+
+- [ ] **QC-11 — Exercise the final installed local workflow.**
+  **Owner:** the shared installation and this repository's Git/authoring boundaries.
+  Use real bounded fixtures for valid and invalid content, partial staging, a pathspec
+  commit, changed Python, and a push range containing hook-free content commits. Check
+  behavior with a warm tool cache and record cold provisioning separately. Observe both
+  elapsed time and commands executed: a fast run that omits required checks is a failure.
+  **Acceptance:** local boundaries reject basic defects, retain formatter output, preserve
+  unrelated work, and run no full suite, corpus-wide parse, site build, or broad audit.
+  Evidence comes from the merged installed implementation.
+
+- [ ] **QC-12 — Close against the full completion condition.**
+  **Owner:** this workstream and its linked upstream issue.
+  Verify a single current revision through hosted acceptance, report publication, site
+  build, crawl, and deployment. Confirm the deployed revision stamp. Reconcile resolved
+  complaint entries and this checklist with the actual delivered state.
+  **Acceptance:** cheap errors are caught locally; expensive checks run in CI; generated
+  reports are usable; the shared fix is delivered; remaining failures are explicitly
+  owned. Successful local hooks alone do not close this workstream.
+
 ## Execution DAG
 
 A prerequisite `A` on task `B` means `A -> B`. `none` denotes a ready root.
