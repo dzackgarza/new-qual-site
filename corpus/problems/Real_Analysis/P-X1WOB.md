@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X1WOB
 kind: problem
-title: Convergence of series: small tails and the standard convergence tests
+title: "Convergence of series: small tails and the standard convergence tests"
 classification:
   areas:
   - real-analysis
