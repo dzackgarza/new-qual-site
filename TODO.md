@@ -82,7 +82,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
 
 ### P1: finish the local/CI boundary
 
-- [ ] **QC-04 — Route cheap validation through the real authoring and push paths.**
+- [x] **QC-04 — Route cheap validation through the real authoring and push paths.**
   **Owner:** `justfile`, `tools/qualc/authoring.py`, `AGENTS.md`, and `QUAL-06`.
   Trace ordinary commits, `commit-card`, explicit content commits, and pushes. Make the
   changed-card validation obligation explicit at each applicable boundary. Retain syntax,
@@ -92,6 +92,16 @@ on hosted checks. Every item is open until its acceptance condition is met.
   behavior, while keeping mathematical review a reading obligation.
   **Acceptance:** each supported route has a verified path to rejecting malformed outgoing
   content before upload. Documentation and recipes agree on that path.
+  **Closed 2026-10-25.** The four supported content routes now state the same
+  changed-card YAML/schema + shared-syntax obligation: ordinary staged commits are
+  validated by the commit hook on the staged blobs; `just commit-card` validates the
+  selected card before its hook-free `--only` commit; explicit `git commit
+  --no-verify` remains the sanctioned authored-content route and is still covered by the
+  push hook on committed blobs; and push validates the outgoing committed card blobs via
+  `scripts/local-validate.py`. `just test-push` is documented as the explicit local
+  diagnostic command, not a normal commit path. Cheap validation stays on staged or
+  committed blobs and independent of Pandoc, site emission, and broad audits.
+  Landed in `14a2e0d10` on `AGENTS.md` and `justfile`; pushed to `main`.
 
 - [x] **QC-05 — Keep local checks out of the heavy-work queue.**
   **Delivered:** the shared public push gate no longer invokes `_pytest`; project-focused
