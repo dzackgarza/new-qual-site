@@ -823,9 +823,12 @@ prose, mathematics, solutions, statement corrections, and new cards or ingested 
 verified by reading its diff and reviewing the mathematics, and is committed as soon as the item is
 done. Do not run or wait on builds, test suites, renders, screenshots, broad formatters, or queue
 regeneration for content work. Cheap YAML and schema validation runs locally on the actual
-changed content. Push validates committed card blobs in the outgoing range, including cards
-committed without hooks, before running the extraction detector, macro mirror check, shared
-syntax checks, and focused parser and Git-boundary tests in `justfile`.
+changed content. Push hooks validate committed card blobs selected for every outgoing ref,
+including cards committed without hooks, and run the shared syntax checks. The shared hooks
+call `scripts/local-validate.py` with the exact Git blob identities.
+`just test-push` additionally runs the extraction detector, macro mirror check, and focused
+parser and Git-boundary tests. It is the explicit project diagnostic command; the shared
+Git hooks own the automatic syntax and card-data checks.
 The full test suite and report generation run in CI. Download the
 `corpus-reports` workflow artifact for current `BACKLOG.md` and
 `queues/C-unsolved-cards.md` measurements. The site is never

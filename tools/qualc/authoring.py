@@ -240,6 +240,8 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "check-range":
             return check_git_cards("HEAD", (args.base, "HEAD"))
         if args.command == "check-changes":
+            if args.mode == "staged":
+                _refuse_secondary_worktrees()
             changes = [GitChange.model_validate_json(line) for line in sys.stdin]
             if any((change.version == "index") != (args.mode == "staged") for change in changes):
                 raise ValueError("Git blob versions must match the requested validation mode")

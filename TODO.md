@@ -30,7 +30,11 @@ on hosted checks. Every item is open until its acceptance condition is met.
 
 ### P0: prevent basic defects from reaching CI
 
-- [ ] **QC-01 — Parse and validate the actual changed card data locally.**
+- [x] **QC-01 — Parse and validate the actual changed card data locally.**
+  **Delivered:** the shared hooks pass exact index/commit identities to
+  `scripts/local-validate.py`; the project parser validates those blobs. Real Git tests
+  cover staging, pathspec commits, repairs, and multiple candidate versions. The installed
+  pre-push hook rejects the historical invalid `P-X1WOB` blob before upload.
   **Owner:** `tools/qualc/model.py`, the authoring command boundary, and `justfile`.
   Use the existing front-matter parser and card schema to reject invalid YAML, duplicate
   keys, missing required fields, invalid field types, and unknown fields on changed cards.
@@ -46,6 +50,8 @@ on hosted checks. Every item is open until its acceptance condition is met.
   sanctioned hook-free authoring route.
 
 - [ ] **QC-02 — Repair `P-X1WOB` through the local validator.**
+  **Local repair complete:** the title is a quoted scalar and the staged card passes
+  the validator. Hosted report generation must still be rechecked on the repair.
   **Owner:** `corpus/problems/Real_Analysis/P-X1WOB.md`.
   [CI run 40188997972](https://github.com/dzackgarza/new-qual-site/actions/runs/40188997972)
   failed in `Generate corpus reports`: its unquoted title contains a colon followed by
@@ -55,15 +61,16 @@ on hosted checks. Every item is open until its acceptance condition is met.
   **Acceptance:** the actual card passes QC-01 locally before a push; hosted report
   generation gets beyond this parse error. A full local build is not required.
 
-- [ ] **QC-03 — Land the shared normalization fix at its owner.**
+- [x] **QC-03 — Land the shared normalization fix at its owner.**
+  **Delivered:** PR #483 is merged. The additional direct-hook integration is merged in
+  [PR #485](https://github.com/dzackgarza/ai-review-ci/pull/485). The installed checkout is
+  clean on `main` at `4867297`; public local gates run syntax and project input validation.
   **Owner:** [ai-review-ci issue #482](https://github.com/dzackgarza/ai-review-ci/issues/482)
   and [PR #483](https://github.com/dzackgarza/ai-review-ci/pull/483).
-  At the latest inspection, the PR is open and ready for review, but GitHub reports a
-  merge conflict. Reconcile it with current upstream without losing either side's work.
-  Preserve staged-file Semgrep autofix, the empty-index early return, and the rule that
-  mypy selects its targets before acquiring a heavy-job lock. Check review feedback and
-  the required check set on the reconciled revision; CodeQL success alone does not prove
-  these hook behaviors.
+  Preserve staged-file Semgrep autofix and the empty-index early return at their shared
+  owner, and the rule that mypy selects its targets before acquiring a heavy-job lock.
+  Public hook behavior follows the shared syntax-only development tier; normalization
+  and broad diagnostics run in CI.
   **Acceptance:** the reviewed repair is merged, targeted real-boundary tests pass, and
   the installed shared hook resolves to the accepted implementation rather than depending
   on an unmerged feature checkout.
@@ -81,18 +88,23 @@ on hosted checks. Every item is open until its acceptance condition is met.
   **Acceptance:** each supported route has a verified path to rejecting malformed outgoing
   content before upload. Documentation and recipes agree on that path.
 
-- [ ] **QC-05 — Keep local checks out of the heavy-work queue.**
+- [x] **QC-05 — Keep local checks out of the heavy-work queue.**
+  **Delivered:** the shared public push gate no longer invokes `_pytest`; project-focused
+  tests in `just test-push` run directly. The shared real-hook test proves that a
+  changed-Python commit completes while a heavy-job slot is held.
   **Owner:** ai-review-ci's Python profile and shared lock usage.
-  The selected local pytest run still enters `_pytest`, which acquires the machine-wide
-  heavy-job lock. Establish which local operations genuinely need that resource constraint.
-  Remove unnecessary contention at the shared owner, while retaining resource control for
-  full suites and heavy analyses. Include changed-Python commits in the investigation;
+  Keep resource control for full suites and heavy analyses in their hosted tier.
+  Include changed-Python commits in verification;
   an empty Python change set is not evidence that type-checking latency is acceptable.
   **Acceptance:** a small local validation run can complete while an unrelated heavy gate
   holds its slot; it does not achieve this by disabling mandatory checks or changing the
   machine-wide lock limit. Measure any remaining type-checking cost on real changed input.
 
 - [ ] **QC-06 — Wire the hosted acceptance tier for this repository's workflow.**
+  **Open contract:** the shared reusable workflow runs all diagnostics and can either
+  report their failures or enforce all of them. It has no supported result that enforces
+  only the test suite. Retain Pages' blocking test job until that shared contract is
+  resolved; adding the complete shared diagnostic job would currently duplicate the suite.
   **Owner:** ai-review-ci's supported workflow integration and `.github/workflows/`.
   Pages currently invokes `just test`; the inspected workflows do not invoke this
   repository's `test-ci` recipe. The full doctor also reports a missing PR workflow and
@@ -106,6 +118,8 @@ on hosted checks. Every item is open until its acceptance condition is met.
   Any workflow-policy decision still requiring owner choice is stated before changing it.
 
 - [ ] **QC-07 — Separate advisory report generation from test and deployment status.**
+  **Implementation ready:** reports have an independent CI job and carry their source
+  revision. Verify the next hosted run before closing this item.
   **Owner:** `.github/workflows/pages.yml` and `_reports-ci`.
   Report generation currently shares the test job, so a report failure marks that job
   failed and prevents the build from starting. Give reports an independently visible job
