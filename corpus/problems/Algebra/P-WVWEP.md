@@ -25,6 +25,8 @@ Let $G=\GL_2(\FF_q)$.
 
 ::: {.solution}
 
+:::
+
 ::: pf
 
 ::: pf-step
