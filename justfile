@@ -39,7 +39,9 @@ read-card card:
 diff-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
 
-# Validate and commit one reviewed card; preserve other staged work
+# Validate one reviewed card's YAML and schema, then commit it with the sanctioned
+# hook-free route. Other staged work is preserved; only this card is committed.
+# Mathematical review of the card is a reading obligation, not a parser output.
 commit-card card message:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
 

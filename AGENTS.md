@@ -810,25 +810,47 @@ dependency; do not retain a completed snapshot merely as insurance.
 
 # Running checks
 
-**Commit content with `git commit --no-verify`.** This is the repository owner's sanctioned commit
-route for prose-only, documentation-only, and authored-content commits (copy, prose, mathematics,
-solutions, statement corrections, new cards): it is the documented workflow, not an evasion of any
-gate. Mathematical content is verified by reading the diff. `just commit-card` first validates
-the selected card's YAML and schema, then takes that commit route. Normal commit hooks validate
-changed card blobs in Git's index. Code, renderer, schema, and executable-configuration commits
-also use the shared syntax checks.
+The same changed-card validation obligation holds at each supported content route:
+
+- **Ordinary commit with staged card edits.** Commit hooks validate the staged card blobs in Git's
+  index and run the shared syntax checks. A valid working-tree edit must not conceal an invalid staged
+  blob; what commits is what is staged.
+
+- **`just commit-card` on one reviewed card.** This is the sanctioned card-authoring route. It first
+  validates the selected card's YAML and schema from the working tree, then commits that single card
+  with `git commit --only --no-verify`. Use it when you are committing exactly one card and want the
+  card validated before the hook-free content commit.
+
+- **Explicit `git commit --no-verify` for authored content.** This is the repository owner's sanctioned
+  commit route for prose-only, documentation-only, and authored-content commits (copy, prose,
+  mathematics, solutions, statement corrections, new cards): it is the documented workflow, not an
+  evasion of any gate. Mathematical content is verified by reading the diff. Cards committed through
+  this route are still validated by the push hook below, because that hook validates committed blobs,
+  not how they were committed.
+
+- **Push.** The push hook validates the committed card blobs in the outgoing range, including cards
+  committed without hooks, and runs the shared syntax checks. It calls `scripts/local-validate.py` with
+  the exact blob identities, so content commits made through the hook-free authoring route are still
+  checked before upload.
+
+- **Local diagnosis before a push.** `just test-push` is the explicit project diagnostic command: it
+  runs the shared tier and then adds the extraction-residue check, the macro-mirror check, and the focused
+  parser and Git-boundary tests. It is not how cards are normally committed; it is the command to run when
+  you want the fast local checks plus their focused tests in one place.
 
 Checks follow `QUAL-06` in [CONTRIBUTING.md](CONTRIBUTING.md#named-policies). Content work — copy,
 prose, mathematics, solutions, statement corrections, and new cards or ingested collections — is
 verified by reading its diff and reviewing the mathematics, and is committed as soon as the item is
 done. Do not run or wait on builds, test suites, renders, screenshots, broad formatters, or queue
-regeneration for content work. Cheap YAML and schema validation runs locally on the actual
-changed content. Push hooks validate committed card blobs selected for every outgoing ref,
-including cards committed without hooks, and run the shared syntax checks. The shared hooks
-call `scripts/local-validate.py` with the exact Git blob identities.
-`just test-push` additionally runs the extraction detector, macro mirror check, and focused
-parser and Git-boundary tests. It is the explicit project diagnostic command; the shared
-Git hooks own the automatic syntax and card-data checks.
+regeneration for content work. The cheap validation that guards outgoing content is the changed-card
+YAML and schema check plus the shared syntax checks; it runs on staged or committed blobs, not on a
+whole-corpus load, and it is independent of Pandoc, site emission, and broad audits.
+
+Push hooks validate committed card blobs selected for every outgoing ref, including cards committed
+without hooks, and run the shared syntax checks. The shared hooks call `scripts/local-validate.py`
+with the exact Git blob identities. `just test-push` additionally runs the extraction detector, macro
+mirror check, and focused parser and Git-boundary tests. It is the explicit project diagnostic command;
+the shared Git hooks own the automatic syntax and card-data checks.
 The full test suite and report generation run in CI. Download the
 `corpus-reports` workflow artifact for current `BACKLOG.md` and
 `queues/C-unsolved-cards.md` measurements. Select the run for the revision under review:
