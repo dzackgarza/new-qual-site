@@ -813,18 +813,20 @@ dependency; do not retain a completed snapshot merely as insurance.
 **Commit content with `git commit --no-verify`.** This is the repository owner's sanctioned commit
 route for prose-only, documentation-only, and authored-content commits (copy, prose, mathematics,
 solutions, statement corrections, new cards): it is the documented workflow, not an evasion of any
-gate. Those commits are verified by reading the diff. `just
-commit-card` takes the same route. Code, renderer, schema, and executable-configuration commits use
-normal hooks.
+gate. Mathematical content is verified by reading the diff. `just commit-card` first validates
+the selected card's YAML and schema, then takes that commit route. Normal commit hooks validate
+changed card blobs in Git's index. Code, renderer, schema, and executable-configuration commits
+also use the shared syntax checks.
 
 Checks follow `QUAL-06` in [CONTRIBUTING.md](CONTRIBUTING.md#named-policies). Content work — copy,
 prose, mathematics, solutions, statement corrections, and new cards or ingested collections — is
 verified by reading its diff and reviewing the mathematics, and is committed as soon as the item is
 done. Do not run or wait on builds, test suites, renders, screenshots, broad formatters, or queue
-regeneration for content work: repairs to copy, prose, mathematics, and solutions are checked by
-eye until they are pushed. Push runs the extraction detector on changed cards, the macro
-mirror check, shared immediate QC, and the selected front-matter and extraction-detector
-tests in `justfile`. The full test suite and report generation run in CI. Download the
+regeneration for content work. Cheap YAML and schema validation runs locally on the actual
+changed content. Push validates committed card blobs in the outgoing range, including cards
+committed without hooks, before running the extraction detector, macro mirror check, shared
+syntax checks, and focused parser and Git-boundary tests in `justfile`.
+The full test suite and report generation run in CI. Download the
 `corpus-reports` workflow artifact for current `BACKLOG.md` and
 `queues/C-unsolved-cards.md` measurements. The site is never
 built locally: `.github/workflows/pages.yml` builds, crawls and deploys it on every push to

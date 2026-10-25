@@ -39,7 +39,7 @@ read-card card:
 diff-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
 
-# Commit one reviewed card without hooks (content is gated at push); preserve other staged work
+# Validate and commit one reviewed card; preserve other staged work
 commit-card card message:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
 
@@ -115,6 +115,16 @@ extraction-detector:
 _extraction-detector-push:
     uv run python tools/extraction_detector.py --range-gate "$(git merge-base HEAD @{upstream})"
 
+# Validate actual staged card blobs before any other commit checks
+[private]
+_cards-commit:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check-staged
+
+# Validate actual outgoing card blobs, including hook-free content commits
+[private]
+_cards-push:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check-range "$(git merge-base HEAD @{upstream})"
+
 # The committed macro mirror matches a fresh read of pandoc-config.
 [private]
 _macros-push:
@@ -176,14 +186,15 @@ _no-bare-disposition:
     exit 1
 
 # Run immediate commit-tier quality checks
-test-commit: _no-worktrees _no-bare-disposition
+test-commit: _cards-commit _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Explicit files keep site builds and corpus scans in CI. One worker avoids
 # starting a process per CPU for this small test selection.
 # Run immediate checks and small parser tests before pushing
-test-push: _extraction-detector-push _macros-push
-    @PYTEST_ADDOPTS="-n 0 tests/test_front_matter_keys.py tests/test_extraction_detector.py" just -f ~/ai-review-ci/justfiles/python.just -d . test-push
+test-push: _cards-push _extraction-detector-push _macros-push
+    @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
+    @uv run --group dev pytest -q -n 0 tests/test_front_matter_keys.py tests/test_extraction_detector.py tests/test_card_git_validation.py
 
 # Run the CI acceptance gate
 test-ci:

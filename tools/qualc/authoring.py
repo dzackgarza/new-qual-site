@@ -22,6 +22,42 @@ CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
 
 
+def card_header(text: str, path: Path) -> Card:
+    """Validate one authored header without parsing Markdown or reading other cards."""
+    try:
+        meta, _ = split_front_matter(text, path)
+        return CARD_ADAPTER.validate_python(meta)
+    except (ValueError, TypeError, yaml.YAMLError) as exc:
+        raise ValueError(f"{path}: {exc}") from exc
+
+
+def check_git_cards(revision: str, diff_args: tuple[str, ...]) -> int:
+    """Validate Git blobs selected by diff, including Git's temporary commit index.
+
+    Git's diff --name-only -z and show :path / revision:path interfaces own
+    selection and blob transport (git-diff and gitrevisions manuals).
+    """
+    names = subprocess.run(
+        ["git", "diff", "--name-only", "--no-renames", "--diff-filter=ACM", "-z", *diff_args, "--", "corpus/"],
+        check=True,
+        stdout=subprocess.PIPE,
+        text=True,
+    ).stdout
+    paths = [Path(name) for name in names.split("\0") if name.endswith(".md")]
+    errors: list[str] = []
+    for path in paths:
+        text = subprocess.run(["git", "show", f"{revision}:{path.as_posix()}"], check=True, stdout=subprocess.PIPE, text=True).stdout
+        try:
+            card_header(text, path)
+        except ValueError as exc:
+            errors.append(str(exc))
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+    print(f"Card YAML and schema: {len(paths)} changed file(s) checked")
+    return 0
+
+
 @dataclass(frozen=True)
 class Location:
     collection: CollectionCard
@@ -95,8 +131,7 @@ class Corpus:
 
     @cache
     def header(self, path: Path) -> Card:
-        meta, _ = split_front_matter(path.read_text(), path)
-        return CARD_ADAPTER.validate_python(meta)
+        return card_header(path.read_text(), path)
 
     def collection(self, reference: str) -> CollectionCard:
         card = self.header(self.resolve(reference))
@@ -170,6 +205,9 @@ def _refuse_secondary_worktrees() -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
+    commands.add_parser("check-staged", help="validate changed card YAML and schema from the Git index")
+    range_check = commands.add_parser("check-range", help="validate changed card YAML and schema from committed HEAD")
+    range_check.add_argument("base", help="base commit of the outgoing range")
     for name in ("path", "read", "diff", "check", "commit"):
         command = commands.add_parser(name)
         command.add_argument("card", help="card ID or corpus Markdown path")
@@ -184,6 +222,10 @@ def main() -> int:
     args = parser.parse_args()
     corpus = Corpus(Path.cwd())
     try:
+        if args.command == "check-staged":
+            return check_git_cards("", ("--cached",))
+        if args.command == "check-range":
+            return check_git_cards("HEAD", (args.base, "HEAD"))
         if args.command in ("list", "unsolved", "sample"):
             if args.command == "sample" and args.count <= 0:
                 raise ValueError("sample count must be positive")
@@ -231,8 +273,9 @@ def main() -> int:
         elif args.command == "commit":
             _refuse_secondary_worktrees()
             subprocess.run(["git", "--literal-pathspecs", "ls-files", "--error-unmatch", "--", relative], check=True, stdout=subprocess.DEVNULL)
-            # Content commits run no gate. The extraction detector and the Queue C
-            # regeneration run over the pushed range in `just test-push` instead.
+            # --only commits this working-tree path, preserving other staged work.
+            # Validate that same source before taking the content-only commit route.
+            corpus.header(path)
             subprocess.run(["git", "--literal-pathspecs", "commit", "--only", "--no-verify", "-m", args.message, "--", relative], check=True)
     except (ValueError, TypeError, OSError, yaml.YAMLError) as exc:
         parser.exit(1, f"{exc}\n")
