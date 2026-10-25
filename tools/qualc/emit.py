@@ -915,6 +915,57 @@ def _transclusion_head(card: sqlite3.Row) -> dict:
     }
 
 
+def _namespace_pf_labels(body: list[object], card_id: str) -> None:
+    """Scope one transcluded card's step labels to that card.
+
+    An authored step label is unique *in its card*, which is the only page the
+    card was written to appear on. A wiki page inlines several cards, so two of
+    them both write `#s2`, and the page then holds two `id="s2"` anchors: the
+    lamport filter rejects the duplicate label outright, which fails the whole
+    build after `qualc check` -- reading each document separately -- has passed.
+    Prefixing with the card id keeps the label inside the card's own page
+    intact, makes it unique on a shared page, and leaves `[](#s2){.pf-ref}`
+    resolving to its own step because the target is rewritten with it.
+    """
+    renamed: dict[str, str] = {}
+
+    # First pass: the labels the card itself owns.
+    def collect(node: object) -> None:
+        if isinstance(node, list):
+            for child in node:
+                collect(child)
+            return
+        if not isinstance(node, dict):
+            return
+        if node.get("t") == "Div":
+            attrs = node["c"][0]
+            if "pf-step" in attrs[1] and attrs[0]:
+                renamed.setdefault(attrs[0], f"{card_id}--{attrs[0]}")
+                attrs[0] = renamed[attrs[0]]
+        for child in node["c"] if isinstance(node.get("c"), list) else ():
+            if isinstance(child, (list, dict)):
+                collect(child)
+
+    # Second pass: every reference to one, wherever it sits in the card.
+    def retarget(node: object) -> None:
+        if isinstance(node, list):
+            for child in node:
+                retarget(child)
+            return
+        if not isinstance(node, dict):
+            return
+        if node.get("t") == "Link":
+            target = node["c"][2][0]
+            if target.startswith("#") and target[1:] in renamed:
+                node["c"][2][0] = "#" + renamed[target[1:]]
+        for child in node["c"] if isinstance(node.get("c"), list) else ():
+            if isinstance(child, (list, dict)):
+                retarget(child)
+
+    collect(body)
+    retarget(body)
+
+
 def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
     """The card as one labelled section: kind and number, name, tag, body.
 
@@ -936,6 +987,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
         kind, body = card["kind"], blocks
     counts[kind] += 1
     _rename_json(body)
+    _namespace_pf_labels(body, card["id"])
     document["blocks"] = [
         {
             "t": "Div",

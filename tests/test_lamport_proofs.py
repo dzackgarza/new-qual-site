@@ -76,6 +76,81 @@ def test_steps_are_numbered_and_references_resolved_by_the_filter(site: Path) ->
     assert 'class="pf-ref">1</a>' in page
 
 
+PAIR_CARD = """---
+schema: qual/card@1
+id: __ID__
+kind: problem
+title: __TITLE__
+classification:
+  areas: [algebra]
+  topics: [groups]
+relations: []
+review: draft
+---
+
+::: problem
+State the __TITLE__ step of the argument.
+:::
+
+::: solution
+::: pf
+
+::: {.pf-step #s2}
+The labelled step, the one a later step cites.
+
+::: pf-proof
+A label is unique in its own card.
+:::
+
+:::
+
+::: pf-step
+Its successor, cited as [](#s2){.pf-ref}.
+
+::: pf-proof
+Because of [](#s2){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Done.
+:::
+
+:::
+:::
+"""
+
+
+def test_two_transcluded_cards_may_reuse_a_step_label(tmp_path_factory: pytest.TempPathFactory) -> None:
+    """A step label is unique in its card, not on the page that inlines several.
+
+    Two cards both write `#s2`. Read on their own -- what `qualc check` does --
+    both are valid; inlined onto one wiki page the lamport filter saw two
+    `id="s2"` steps and rejected the page with "duplicate step label: s2",
+    failing the build after check had passed.
+    """
+    work = fixture_repo(tmp_path_factory.mktemp("lamport-pairs"))
+    cards = {
+        "P-PFA.md": PAIR_CARD.replace("__ID__", "P-PFA").replace("__TITLE__", "First"),
+        "P-PFB.md": PAIR_CARD.replace("__ID__", "P-PFB").replace("__TITLE__", "Second"),
+    }
+    for name, text in cards.items():
+        (work / "corpus" / name).write_text(text)
+    page = work / "wiki" / "proof-pairs.md"
+    page.write_text("---\ntitle: Proof pairs\norder: 1\n---\n\n[[P-PFA]]\n\n[[P-PFB]]\n")
+    assert diagnostic_codes(work) == [], "each card is valid read on its own"
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    html = (work / "build" / "quarto" / "_site" / "wiki" / "proof-pairs.html").read_text()
+    # Each card's label kept its own step and its own references.
+    for card in cards:
+        label = f"{card.removesuffix('.md')}--s2"
+        assert f'id="{label}"' in html, label
+        assert f'href="#{label}"' in html, label
+    assert 'id="s2"' not in html, "no card left its label shared on the page"
+
+
 def test_a_malformed_proof_fails_the_check(tmp_path: Path) -> None:
     """Two steps with one label cannot both be the target of a reference."""
     card = CARD.replace("::: pf-step\nTheir sum", "::: {.pf-step #forms}\nTheir sum", 1)
