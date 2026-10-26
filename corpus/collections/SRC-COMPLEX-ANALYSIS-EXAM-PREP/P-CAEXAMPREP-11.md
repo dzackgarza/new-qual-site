@@ -17,6 +17,8 @@ audit:
 Find a bijective conformal map that takes a bounded region of $\mathbb C$ to an unbounded region.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathbb D=\{z:|z|<1\},
@@ -100,6 +102,8 @@ on \(\mathbb D\), so \(F\) is conformal. The unit disc is bounded, whereas the r
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} supplies the requested example.
+
+:::
 
 :::
 
