@@ -26,12 +26,16 @@ Compute the dot product \(u\cdot v\) and the length of each vector.
 :::
 
 ::: {.solution}
-<1>1. The dot product is
+
+::: pf
+
+::: pf-step
+The dot product is
 \[
 \boxed{u\cdot v=-5}.
 \]
 
-::: {.proof}
+::: pf-proof
 By the definition of the Euclidean dot product,
 \[
 u\cdot v
@@ -41,12 +45,15 @@ u\cdot v
 \]
 :::
 
-<1>2. The length of \(u\) is
+:::
+
+::: pf-step
+The length of \(u\) is
 \[
 \boxed{\|u\|=\sqrt{26}}.
 \]
 
-::: {.proof}
+::: pf-proof
 Using \(\|u\|=\sqrt{u\cdot u}\),
 \[
 \|u\|
@@ -56,12 +63,15 @@ Using \(\|u\|=\sqrt{u\cdot u}\),
 \]
 :::
 
-<1>3. The length of \(v\) is
+:::
+
+::: pf-step
+The length of \(v\) is
 \[
 \boxed{\|v\|=\sqrt5}.
 \]
 
-::: {.proof}
+::: pf-proof
 Similarly,
 \[
 \|v\|
@@ -71,9 +81,8 @@ Similarly,
 \]
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>3 give all three requested quantities.
 :::
+
+:::
+
 :::
