@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p1-s1-1}
 
 Assume
 $$
@@ -100,7 +100,7 @@ must be a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-2}
 
 Assume now that
 $$
@@ -175,7 +175,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-3}
 
 Therefore
 $$
@@ -190,7 +190,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 proves the forward implication, and step <1>2 proves the converse.
+Step [](#p1-s1-1){.pf-ref} proves the forward implication, and step [](#p1-s1-2){.pf-ref} proves the converse.
 
 :::
 
@@ -198,7 +198,7 @@ Step <1>1 proves the forward implication, and step <1>2 proves the converse.
 
 ::: pf-qed
 
-Step <1>3 is the required equivalence.
+Step [](#p1-s1-3){.pf-ref} is the required equivalence.
 
 :::
 
@@ -206,7 +206,7 @@ Step <1>3 is the required equivalence.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p2-s1-1}
 
 Assume
 $$
@@ -263,7 +263,7 @@ contradicting the fact that a maximal ideal is proper. Thus $1-xy$ must be a uni
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-2}
 
 Assume
 $$
@@ -326,7 +326,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-3}
 
 Therefore
 $$
@@ -341,7 +341,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 proves the forward implication, and step <1>2 proves the reverse implication.
+Step [](#p2-s1-1){.pf-ref} proves the forward implication, and step [](#p2-s1-2){.pf-ref} proves the reverse implication.
 
 :::
 
@@ -349,7 +349,7 @@ Step <1>1 proves the forward implication, and step <1>2 proves the reverse impli
 
 ::: pf-qed
 
-Step <1>3 is the required characterization.
+Step [](#p2-s1-3){.pf-ref} is the required characterization.
 
 :::
 

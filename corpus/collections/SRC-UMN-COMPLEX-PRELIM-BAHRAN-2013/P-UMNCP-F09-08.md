@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p1-s1-1}
 
 The map
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-2}
 
 The nonzero point
 $$
@@ -129,7 +129,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives a holomorphic self-map of the unit disk fixing the origin. Schwarz's lemma applies.
+Step [](#p1-s1-1){.pf-ref} gives a holomorphic self-map of the unit disk fixing the origin. Schwarz's lemma applies.
 
 :::
 
@@ -145,7 +145,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#p1-s1-2){.pf-ref},
 $$
 g(a)=a.
 $$
@@ -155,7 +155,7 @@ Taking absolute values gives the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-5}
 
 Therefore there is a real number $\theta$ such that
 $$
@@ -180,7 +180,7 @@ then $g$ is a rotation.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-6}
 
 In fact,
 $$
@@ -191,7 +191,7 @@ for every $z\in\mathbb D$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#p1-s1-2){.pf-ref},
 $$
 g(a)=a
 $$
@@ -199,7 +199,7 @@ with
 $$
 a\ne0.
 $$
-Substituting the formula from step <1>5 gives
+Substituting the formula from step [](#p1-s1-5){.pf-ref} gives
 $$
 e^{i\theta}a=a.
 $$
@@ -213,7 +213,7 @@ so $g$ is the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-7}
 
 Therefore
 $$
@@ -230,7 +230,7 @@ g
 =
 \phi_p\circ f\circ\phi_p^{-1}.
 $$
-Step <1>6 says $g=\operatorname{id}_{\mathbb D}$. Conjugating by $\phi_p^{-1}$ gives
+Step [](#p1-s1-6){.pf-ref} says $g=\operatorname{id}_{\mathbb D}$. Conjugating by $\phi_p^{-1}$ gives
 $$
 f
 =
@@ -245,7 +245,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#p1-s1-7){.pf-ref} is the required conclusion.
 
 :::
 
@@ -266,7 +266,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p2-s1-1}
 
 The map
 $$
@@ -300,7 +300,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-2}
 
 The nonzero point
 $$
@@ -353,7 +353,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives a holomorphic self-map of the disk fixing the origin.
+Step [](#p2-s1-1){.pf-ref} gives a holomorphic self-map of the disk fixing the origin.
 
 :::
 
@@ -369,7 +369,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#p2-s1-2){.pf-ref},
 $$
 g(w_0)=w_0.
 $$
@@ -379,7 +379,7 @@ Taking absolute values gives the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-5}
 
 Hence
 $$
@@ -400,7 +400,7 @@ occurs at some nonzero point of the disk, then $g$ is a rotation.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-6}
 
 In fact
 $$
@@ -411,7 +411,7 @@ for every $w\in\mathbb D$.
 
 ::: pf-proof
 
-By steps <1>2 and <1>5,
+By steps [](#p2-s1-2){.pf-ref} and [](#p2-s1-5){.pf-ref},
 $$
 w_0
 =
@@ -429,7 +429,7 @@ Thus $g$ is the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-7}
 
 Therefore
 $$
@@ -446,7 +446,7 @@ g
 =
 \phi_p\circ f\circ\phi_p^{-1}
 $$
-and $g$ is the identity by step <1>6,
+and $g$ is the identity by step [](#p2-s1-6){.pf-ref},
 $$
 f
 =
@@ -461,7 +461,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#p2-s1-7){.pf-ref} is the required conclusion.
 
 :::
 

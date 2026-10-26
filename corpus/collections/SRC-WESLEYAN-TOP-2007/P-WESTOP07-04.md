@@ -27,7 +27,7 @@ bc^{-1}a,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p1-s1-1}
 
 The closed connected surfaces are classified as follows:
 
@@ -78,7 +78,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-2}
 
 The edge labels determine
 $$
@@ -102,7 +102,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-3}
 
 The first two triangular faces contribute exactly two vertex classes to the quotient.
 
@@ -174,7 +174,7 @@ forms the second class.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-4}
 
 All vertices in the remaining four polygonal faces lie in one vertex class.
 
@@ -243,7 +243,7 @@ Thus every vertex occurring in faces three through six belongs to one quotient v
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-5}
 
 Therefore the quotient has
 $$
@@ -254,13 +254,13 @@ vertices.
 
 ::: pf-proof
 
-Steps <1>3--<1>4 produce two vertex classes from the first two faces and one vertex class from the remaining four faces. No label occurs in both groups except through no edge at all, so these three classes remain distinct.
+Steps [](#p1-s1-3){.pf-ref} through [](#p1-s1-4){.pf-ref} produce two vertex classes from the first two faces and one vertex class from the remaining four faces. No label occurs in both groups except through no edge at all, so these three classes remain distinct.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-6}
 
 The quotient has Euler characteristic
 $$
@@ -274,11 +274,11 @@ There are
 $$
 F=6
 $$
-polygonal faces, step <1>2 gives
+polygonal faces, step [](#p1-s1-2){.pf-ref} gives
 $$
 E=11,
 $$
-and step <1>5 gives
+and step [](#p1-s1-5){.pf-ref} gives
 $$
 V=3.
 $$
@@ -297,7 +297,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-7}
 
 The surface $X$ is nonorientable.
 
@@ -334,7 +334,7 @@ is nonorientable.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-8}
 
 The nonorientable genus of $X$ is
 $$
@@ -352,7 +352,7 @@ has Euler characteristic
 $$
 2-k.
 $$
-Step <1>6 gives
+Step [](#p1-s1-6){.pf-ref} gives
 $$
 2-k=-2,
 $$
@@ -365,7 +365,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-9}
 
 Therefore
 $$
@@ -381,7 +381,7 @@ $$
 
 ::: pf-proof
 
-Step <1>7 shows that $X$ is nonorientable, and step <1>8 determines its nonorientable genus to be $4$. The classification theorem then gives the displayed homeomorphism type.
+Step [](#p1-s1-7){.pf-ref} shows that $X$ is nonorientable, and step [](#p1-s1-8){.pf-ref} determines its nonorientable genus to be $4$. The classification theorem then gives the displayed homeomorphism type.
 
 :::
 
@@ -389,7 +389,7 @@ Step <1>7 shows that $X$ is nonorientable, and step <1>8 determines its nonorien
 
 ::: pf-qed
 
-Step <1>1 gives the classification list, and steps <1>2--<1>9 identify the given quotient within that classification.
+Step [](#p1-s1-1){.pf-ref} gives the classification list, and steps [](#p1-s1-2){.pf-ref} through [](#p1-s1-9){.pf-ref} identify the given quotient within that classification.
 
 :::
 
@@ -397,7 +397,7 @@ Step <1>1 gives the classification list, and steps <1>2--<1>9 identify the given
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p2-s1-1}
 
 The classification theorem for compact connected surfaces says that every compact connected surface is homeomorphic to exactly one of:
 
@@ -456,7 +456,7 @@ The classification theorem states that orientability and Euler characteristic de
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-2}
 
 The quotient
 $$
@@ -517,7 +517,7 @@ Hence there are exactly two connected components.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-3}
 
 Let
 $$
@@ -580,7 +580,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-4}
 
 The Euler characteristic of
 $$
@@ -594,7 +594,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#p2-s1-3){.pf-ref},
 $$
 \chi(X_1)
 =
@@ -608,7 +608,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-5}
 
 The component
 $$
@@ -657,7 +657,7 @@ is nonorientable.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-6}
 
 Therefore
 $$
@@ -668,7 +668,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>4--<1>5,
+By steps [](#p2-s1-4){.pf-ref} through [](#p2-s1-5){.pf-ref},
 $$
 X_1
 $$
@@ -700,7 +700,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-7}
 
 Let
 $$
@@ -751,7 +751,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-8}
 
 The Euler characteristic of
 $$
@@ -765,7 +765,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#p2-s1-7){.pf-ref},
 $$
 \chi(X_2)
 =
@@ -780,7 +780,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-9}
 
 The component
 $$
@@ -817,7 +817,7 @@ is nonorientable.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-10}
 
 Therefore
 $$
@@ -832,7 +832,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>8--<1>9,
+By steps [](#p2-s1-8){.pf-ref} through [](#p2-s1-9){.pf-ref},
 $$
 X_2
 $$
@@ -860,7 +860,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-11}
 
 The complete quotient is
 $$
@@ -877,7 +877,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives exactly two components. Steps <1>6 and <1>10 identify them.
+Step [](#p2-s1-2){.pf-ref} gives exactly two components. Steps [](#p2-s1-6){.pf-ref} and [](#p2-s1-10){.pf-ref} identify them.
 
 :::
 
@@ -885,7 +885,7 @@ Step <1>2 gives exactly two components. Steps <1>6 and <1>10 identify them.
 
 ::: pf-qed
 
-Step <1>1 lists the compact connected surfaces, and step <1>11 identifies the quotient in that classification.
+Step [](#p2-s1-1){.pf-ref} lists the compact connected surfaces, and step [](#p2-s1-11){.pf-ref} identifies the quotient in that classification.
 
 :::
 

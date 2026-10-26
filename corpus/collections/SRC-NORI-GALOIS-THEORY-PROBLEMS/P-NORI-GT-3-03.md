@@ -34,7 +34,7 @@ with $m$ odd; this is exactly the hypothesis that $p\equiv1\pmod{2^k}$ but not m
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p1-s1-1}
 
 For every $n\geq0$, one has
 \[
@@ -53,7 +53,7 @@ u_n^{2^n}=u_{n-1}^{2^{n-1}}=\cdots=u_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-2}
 
 If all extensions through $E_n$ have degree $2$, then
 \[
@@ -73,7 +73,7 @@ Every finite extension of $\mathbb F_p$ of degree $2^n$ is isomorphic to the uni
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-3}
 
 In a finite field $K$ of odd order $Q$, an element $a\in K^\times$ is a square if and only if
 \[
@@ -89,7 +89,7 @@ The cyclic group $K^\times$ has order $Q-1$. Its subgroup of squares has index $
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-4}
 
 The initial element $u_0$ satisfies
 \[
@@ -99,13 +99,13 @@ u_0^{(p-1)/2}=-1.
 
 ::: pf-proof
 
-By hypothesis $u_0$ is not a square in $\mathbb F_p$. Euler's criterion, equivalently step <1>3 with $Q=p$, gives the value $-1$ rather than $1$.
+By hypothesis $u_0$ is not a square in $\mathbb F_p$. Euler's criterion, equivalently step [](#p1-s1-3){.pf-ref} with $Q=p$, gives the value $-1$ rather than $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-5}
 
 The first extension has degree
 \[
@@ -121,7 +121,7 @@ The polynomial $X^2-u_0$ has no root in $E_0$ because $u_0$ is not a square ther
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-6}
 
 Assume inductively that
 \[
@@ -135,11 +135,11 @@ u_n^{(p^{2^n}-1)/2}=-1.
 
 ::: pf-proof
 
-The field identification is step <1>2. Factor
+The field identification is step [](#p1-s1-2){.pf-ref}. Factor
 \[
 p^{2^n}-1=(p-1)(1+p+\cdots+p^{2^n-1}).
 \]
-By step <1>1,
+By step [](#p1-s1-1){.pf-ref},
 \[
 u_n^{(p^{2^n}-1)/2}
 =\left(u_n^{2^n}\right)^A
@@ -158,7 +158,7 @@ because $p\equiv1\pmod4$ implies $v_2(p+1)=1$. Thus $A$ is an integer. Moreover
 A=\frac{p-1}{2}\cdot
 \frac{1+p+\cdots+p^{2^n-1}}{2^n}.
 \]
-The second factor is odd: each $p^j\equiv1\pmod{2^k}$, and the standard valuation just computed shows the sum has exactly $2$-adic valuation $n$. Hence $A$ is an odd multiple of $(p-1)/2$. Step <1>4 therefore gives
+The second factor is odd: each $p^j\equiv1\pmod{2^k}$, and the standard valuation just computed shows the sum has exactly $2$-adic valuation $n$. Hence $A$ is an odd multiple of $(p-1)/2$. Step [](#p1-s1-4){.pf-ref} therefore gives
 \[
 u_0^A
 =\left(u_0^{(p-1)/2}\right)^{\text{odd}}
@@ -169,24 +169,24 @@ u_0^A
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-7}
 
 Hence $u_n$ is not a square in $E_n$.
 
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#p1-s1-6){.pf-ref},
 \[
 u_n^{(|E_n|-1)/2}=-1.
 \]
-The square criterion in step <1>3 therefore says that $u_n$ is a nonsquare.
+The square criterion in step [](#p1-s1-3){.pf-ref} therefore says that $u_n$ is a nonsquare.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-8}
 
 Consequently
 \[
@@ -202,7 +202,7 @@ Since $u_n$ is not a square in $E_n$, the polynomial $X^2-u_n$ is irreducible ov
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-9}
 
 By induction,
 \[
@@ -212,7 +212,7 @@ By induction,
 
 ::: pf-proof
 
-Step <1>5 is the base case. Steps <1>6--<1>8 show that if all stages through $n$ are quadratic, then the next stage is quadratic. Induction proves the assertion for every $n$.
+Step [](#p1-s1-5){.pf-ref} is the base case. Steps [](#p1-s1-6){.pf-ref} through [](#p1-s1-8){.pf-ref} show that if all stages through $n$ are quadratic, then the next stage is quadratic. Induction proves the assertion for every $n$.
 
 :::
 
@@ -220,7 +220,7 @@ Step <1>5 is the base case. Steps <1>6--<1>8 show that if all stages through $n$
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#p1-s1-9){.pf-ref} is the required conclusion.
 
 :::
 
@@ -235,7 +235,7 @@ which is possible by the hypothesis that $2^k$ is the exact power of $2$ dividin
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p2-s1-1}
 
 For every $n\geq0$ one has
 \[
@@ -254,7 +254,7 @@ u_n^{2^n}=u_{n-1}^{2^{n-1}}=\cdots=u_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-2}
 
 It suffices to prove inductively that
 \[
@@ -275,7 +275,7 @@ Since a degree-two extension of the finite field $\mathbb F_{p^{2^n}}$ is the un
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-3}
 
 The assertion holds at $n=0$: $E_0=\mathbb F_p$ and $u_0$ is not a square in $E_0$.
 
@@ -288,7 +288,7 @@ This is exactly the initial condition in the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-4}
 
 Assume
 \[
@@ -316,7 +316,7 @@ elements, so it is the finite field $\mathbb F_{p^{2^{n+1}}}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-5}
 
 In a finite field $K=\mathbb F_Q$ of odd order, an element $a\in K^\times$ is a square if and only if
 \[
@@ -336,7 +336,7 @@ so this equals $1$ exactly when $r$ is even.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-6}
 
 Since $u_0$ is a nonsquare in $\mathbb F_p$, one has
 \[
@@ -346,13 +346,13 @@ u_0^{(p-1)/2}=-1.
 
 ::: pf-proof
 
-Apply step <1>5 with $Q=p$. The value has square $1$ by Fermat's theorem, and it is not $1$ because $u_0$ is a nonsquare; in odd characteristic it must therefore be $-1$.
+Apply step [](#p2-s1-5){.pf-ref} with $Q=p$. The value has square $1$ by Fermat's theorem, and it is not $1$ because $u_0$ is a nonsquare; in odd characteristic it must therefore be $-1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-7}
 
 Let
 \[
@@ -367,11 +367,11 @@ u_{n+1}^{(Q_{n+1}-1)/2}
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#p2-s1-1){.pf-ref},
 \[
 u_{n+1}^{2^{n+1}}=u_0.
 \]
-The exponent $(Q_{n+1}-1)/2$ is divisible by $2^{n+1}$ because $p\equiv1\pmod{2^k}$ with $k\ge2$, and the factorization in step <1>8 below makes the divisibility explicit. Hence
+The exponent $(Q_{n+1}-1)/2$ is divisible by $2^{n+1}$ because $p\equiv1\pmod{2^k}$ with $k\ge2$, and the factorization in step [](#p2-s1-8){.pf-ref} below makes the divisibility explicit. Hence
 \[
 u_{n+1}^{(Q_{n+1}-1)/2}
 =\left(u_{n+1}^{2^{n+1}}\right)^{(Q_{n+1}-1)/2^{n+2}}
@@ -382,7 +382,7 @@ u_{n+1}^{(Q_{n+1}-1)/2}
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-8}
 
 The integer
 \[
@@ -417,7 +417,7 @@ for an odd integer $M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-9}
 
 Therefore
 \[
@@ -427,31 +427,31 @@ u_{n+1}^{(Q_{n+1}-1)/2}=-1.
 
 ::: pf-proof
 
-By steps <1>7--<1>8,
+By steps [](#p2-s1-7){.pf-ref} through [](#p2-s1-8){.pf-ref},
 \[
 u_{n+1}^{(Q_{n+1}-1)/2}
 =\left(u_0^{(p-1)/2}\right)^M
 \]
-with $M$ odd. Step <1>6 gives $u_0^{(p-1)/2}=-1$, so the result is $(-1)^M=-1$.
+with $M$ odd. Step [](#p2-s1-6){.pf-ref} gives $u_0^{(p-1)/2}=-1$, so the result is $(-1)^M=-1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-10}
 
 Hence $u_{n+1}$ is not a square in $E_{n+1}$.
 
 
 ::: pf-proof
 
-Apply the square criterion in step <1>5 to $K=E_{n+1}$, whose order is $Q_{n+1}$ by step <1>4. Step <1>9 gives the value $-1$, not $1$.
+Apply the square criterion in step [](#p2-s1-5){.pf-ref} to $K=E_{n+1}$, whose order is $Q_{n+1}$ by step [](#p2-s1-4){.pf-ref}. Step [](#p2-s1-9){.pf-ref} gives the value $-1$, not $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-11}
 
 By induction, $u_n$ is a nonsquare in $E_n$ for every $n\ge0$, and therefore
 \[
@@ -461,7 +461,7 @@ By induction, $u_n$ is a nonsquare in $E_n$ for every $n\ge0$, and therefore
 
 ::: pf-proof
 
-Step <1>3 is the base case. Steps <1>4 and <1>10 propagate both the finite-field identification and the nonsquare property. Then step <1>2 gives the desired degree at every stage.
+Step [](#p2-s1-3){.pf-ref} is the base case. Steps [](#p2-s1-4){.pf-ref} and [](#p2-s1-10){.pf-ref} propagate both the finite-field identification and the nonsquare property. Then step [](#p2-s1-2){.pf-ref} gives the desired degree at every stage.
 
 :::
 
@@ -469,7 +469,7 @@ Step <1>3 is the base case. Steps <1>4 and <1>10 propagate both the finite-field
 
 ::: pf-qed
 
-Step <1>11 is exactly the assertion of the problem.
+Step [](#p2-s1-11){.pf-ref} is exactly the assertion of the problem.
 
 :::
 

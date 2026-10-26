@@ -70,7 +70,7 @@ Hence the infimum is a finite real number.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-2}
 
 For all $x,z\in B$,
 \[
@@ -105,14 +105,14 @@ f(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-3}
 
 The function $f$ is $1$-Lipschitz on $B$.
 
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#p1-s1-2){.pf-ref} gives
 \[
 f(x)-f(z)\le |x-z|.
 \]
@@ -129,7 +129,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-4}
 
 For every $x\in\partial B$,
 \[
@@ -159,7 +159,7 @@ Thus equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-5}
 
 In particular,
 \[
@@ -169,7 +169,7 @@ M(g)\ne\varnothing.
 
 ::: pf-proof
 
-By step <1>3, $f$ is $1$-Lipschitz on $B$, and by step <1>4 it restricts to $g$ on $\partial B$.
+By step [](#p1-s1-3){.pf-ref}, $f$ is $1$-Lipschitz on $B$, and by step [](#p1-s1-4){.pf-ref} it restricts to $g$ on $\partial B$.
 Therefore
 \[
 f\in M(g).
@@ -179,7 +179,7 @@ f\in M(g).
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-6}
 
 The family $M(g)$ is equicontinuous.
 
@@ -203,7 +203,7 @@ with the same modulus of continuity for every $h$.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-7}
 
 The family $M(g)$ is uniformly bounded.
 
@@ -232,7 +232,7 @@ Thus a single bound works for all $h\in M(g)$ and all $x\in B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-8}
 
 The set $M(g)$ is closed in $C(B)$ with the supremum norm.
 
@@ -282,7 +282,7 @@ so $M(g)$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-9}
 
 The closure of $M(g)$ in $C(B)$ is compact.
 
@@ -294,7 +294,7 @@ The ball
 B=\{x\in\mathbb R^n:|x|\le1\}
 \]
 is compact.
-By steps <1>6--<1>7, the family $M(g)$ is equicontinuous and uniformly bounded.
+By steps [](#p1-s1-6){.pf-ref} through [](#p1-s1-7){.pf-ref}, the family $M(g)$ is equicontinuous and uniformly bounded.
 The Arzelà--Ascoli theorem therefore implies that its closure in
 \[
 C(B)
@@ -305,7 +305,7 @@ with the supremum norm is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #p1-s1-10}
 
 Therefore
 \[
@@ -315,8 +315,8 @@ Therefore
 
 ::: pf-proof
 
-By step <1>8, $M(g)$ is already closed, so it equals its closure.
-Step <1>9 therefore implies compactness.
+By step [](#p1-s1-8){.pf-ref}, $M(g)$ is already closed, so it equals its closure.
+Step [](#p1-s1-9){.pf-ref} therefore implies compactness.
 
 :::
 
@@ -324,7 +324,7 @@ Step <1>9 therefore implies compactness.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and steps <1>4--<1>10 prove part (b).
+Step [](#p1-s1-3){.pf-ref} proves part (a), and steps [](#p1-s1-4){.pf-ref} through [](#p1-s1-10){.pf-ref} prove part (b).
 
 :::
 
@@ -332,7 +332,7 @@ Step <1>3 proves part (a), and steps <1>4--<1>10 prove part (b).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #p2-s1-1}
 
 For every $x,x'\in B$ and every $y\in\partial B$,
 \[
@@ -356,9 +356,9 @@ Add $g(y)$ to both sides.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-2}
 
-Taking the infimum over $y\in\partial B$ in step <1>1 gives
+Taking the infimum over $y\in\partial B$ in step [](#p2-s1-1){.pf-ref} gives
 \[
 f(x)\le f(x')+|x-x'|.
 \]
@@ -385,7 +385,7 @@ f(x')+|x-x'|.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-3}
 
 Therefore
 \[
@@ -396,7 +396,7 @@ for all $x,x'\in B$.
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#p2-s1-2){.pf-ref} gives
 \[
 f(x)-f(x')\le|x-x'|.
 \]
@@ -411,7 +411,7 @@ Thus $f$ is $1$-Lipschitz.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-4}
 
 For every $x\in\partial B$,
 \[
@@ -438,7 +438,7 @@ g(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-5}
 
 For every $x,y\in\partial B$,
 \[
@@ -460,7 +460,7 @@ Rearranging gives the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-6}
 
 For every $x\in\partial B$,
 \[
@@ -470,7 +470,7 @@ f(x)\ge g(x).
 
 ::: pf-proof
 
-Step <1>5 holds for every
+Step [](#p2-s1-5){.pf-ref} holds for every
 \[
 y\in\partial B.
 \]
@@ -488,7 +488,7 @@ g(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-7}
 
 Thus
 \[
@@ -502,8 +502,8 @@ f\in M(g).
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 give equality on the boundary.
-Step <1>3 gives the $1$-Lipschitz property.
+Steps [](#p2-s1-4){.pf-ref} and [](#p2-s1-6){.pf-ref} give equality on the boundary.
+Step [](#p2-s1-3){.pf-ref} gives the $1$-Lipschitz property.
 Thus $f$ belongs to the set $M(g)$.
 In particular, $M(g)$ is nonempty.
 
@@ -511,7 +511,7 @@ In particular, $M(g)$ is nonempty.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-8}
 
 The family $M(g)$ is equicontinuous.
 
@@ -539,7 +539,7 @@ simultaneously for every $h\in M(g)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-9}
 
 The family $M(g)$ is uniformly bounded.
 
@@ -585,7 +585,7 @@ for every $h\in M(g)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-10}
 
 The set $M(g)$ is closed in $C(B)$ for the supremum norm.
 
@@ -635,7 +635,7 @@ Hence $M(g)$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-11}
 
 The ball $B$ is compact.
 
@@ -649,22 +649,22 @@ Thus the Heine--Borel theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-12}
 
 The closure of $M(g)$ in $C(B)$ is compact.
 
 
 ::: pf-proof
 
-By steps <1>8--<1>9, the family is equicontinuous and uniformly bounded.
-By step <1>11, the domain $B$ is compact.
+By steps [](#p2-s1-8){.pf-ref} through [](#p2-s1-9){.pf-ref}, the family is equicontinuous and uniformly bounded.
+By step [](#p2-s1-11){.pf-ref}, the domain $B$ is compact.
 The Arzelà--Ascoli theorem therefore says that the closure of $M(g)$ in the supremum norm is compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-s1-13}
 
 Therefore
 \[
@@ -674,9 +674,9 @@ Therefore
 
 ::: pf-proof
 
-By step <1>10, the set $M(g)$ is already closed.
+By step [](#p2-s1-10){.pf-ref}, the set $M(g)$ is already closed.
 Thus its closure is itself.
-Step <1>12 then implies compactness.
+Step [](#p2-s1-12){.pf-ref} then implies compactness.
 
 :::
 
@@ -684,7 +684,7 @@ Step <1>12 then implies compactness.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 prove part (a), and steps <1>8--<1>13 prove part (b).
+Steps [](#p2-s1-1){.pf-ref} through [](#p2-s1-7){.pf-ref} prove part (a), and steps [](#p2-s1-8){.pf-ref} through [](#p2-s1-13){.pf-ref} prove part (b).
 
 :::
 
