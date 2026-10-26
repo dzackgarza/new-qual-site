@@ -29,6 +29,8 @@ Determine the image under $f$ of each of the following:
 4. the imaginary axis.
 :::
 
+::: {.solution}
+
 Regard \(f\) as the Möbius transformation of the Riemann sphere \(\mathbb C^*=\mathbb C\cup\{\infty\}\), so that \(f(-1)=\infty\) and \(f(\infty)=1\). For \(w\ne1\), solving \(w=f(z)\) gives
 \[
 z=\frac{1+w}{1-w}.
@@ -144,6 +146,8 @@ Thus its real part is zero, so its preimage lies on the imaginary axis. The rema
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} determine all four requested images.
+
+:::
 
 :::
 
