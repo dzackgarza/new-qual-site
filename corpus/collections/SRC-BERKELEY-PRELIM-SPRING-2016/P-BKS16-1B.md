@@ -31,6 +31,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required identity.
+
+:::
 
 :::
 
