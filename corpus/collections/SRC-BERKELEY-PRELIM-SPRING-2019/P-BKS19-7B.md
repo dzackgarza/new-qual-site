@@ -31,6 +31,8 @@ audit:
 Is it true that elements of the group $\GL_2^+(\RR)$ of real $2\times2$ matrices with positive determinant are conjugate in $\GL_2^+(\RR)$ if and only if the matrices are similar (conjugate in $\GL_2(\RR)$)? Either prove this or give a counterexample.
 :::
 
+::: {.solution}
+
 Define
 $$
 J\coloneqq
@@ -43,7 +45,7 @@ Then $J$ is rotation through $\pi/2$ and $-J$ is rotation through $-\pi/2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Both $J$ and $-J$ lie in $GL_2^+(\mathbb R)$.
 
@@ -167,6 +169,8 @@ Similarity is step [](#s1-2){.pf-ref}. If they were conjugate in $GL_2^+(\mathbb
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} disproves the proposed equivalence.
+
+:::
 
 :::
 
