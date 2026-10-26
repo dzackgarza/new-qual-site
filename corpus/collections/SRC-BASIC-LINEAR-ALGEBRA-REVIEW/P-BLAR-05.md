@@ -30,12 +30,15 @@ Decide which of the following sets are vector spaces. It is valid to show a set 
 ::: {.solution}
 Take all vectors and matrix entries over \(\mathbb R\). Let \(E_{ij}\) denote the \(3\times3\) matrix with a \(1\) in position \((i,j)\) and zeros elsewhere.
 
-<1>1. The \(3\times3\) diagonal matrices form a vector subspace of \(M_3(\mathbb R)\), with basis
+::: pf
+
+::: pf-step
+The \(3\times3\) diagonal matrices form a vector subspace of \(M_3(\mathbb R)\), with basis
 \[
 \boxed{\{E_{11},E_{22},E_{33}\}}.
 \]
 
-::: {.proof}
+::: pf-proof
 The zero matrix is diagonal, and sums and scalar multiples of diagonal matrices are diagonal, so the set is a subspace of \(M_3(\mathbb R)\). Every diagonal matrix has the unique form
 \[
 \operatorname{diag}(a,b,c)=aE_{11}+bE_{22}+cE_{33},
@@ -43,12 +46,15 @@ The zero matrix is diagonal, and sums and scalar multiples of diagonal matrices 
 so the displayed matrices span the subspace and are linearly independent.
 :::
 
-<1>2. The vectors of the form \((a,b,0)\) form a vector subspace of \(\mathbb R^3\), with basis
+:::
+
+::: pf-step
+The vectors of the form \((a,b,0)\) form a vector subspace of \(\mathbb R^3\), with basis
 \[
 \boxed{\{(1,0,0),(0,1,0)\}}.
 \]
 
-::: {.proof}
+::: pf-proof
 The set contains the zero vector and is closed under vector addition and scalar multiplication. Moreover,
 \[
 (a,b,0)=a(1,0,0)+b(0,1,0)
@@ -56,18 +62,24 @@ The set contains the zero vector and is closed under vector addition and scalar 
 uniquely, proving both spanning and linear independence of the displayed pair.
 :::
 
-<1>3. The vectors of the form \((a,6)\) are \(\boxed{\text{not a vector space}}\) under the usual operations inherited from \(\mathbb R^2\).
+:::
 
-::: {.proof}
+::: pf-step
+The vectors of the form \((a,6)\) are \(\boxed{\text{not a vector space}}\) under the usual operations inherited from \(\mathbb R^2\).
+
+::: pf-proof
 The zero vector \((0,0)\) is not of the form \((a,6)\). Hence this subset of \(\mathbb R^2\) fails a necessary vector-space axiom.
 :::
 
-<1>4. The \(3\times3\) symmetric matrices form a vector subspace of \(M_3(\mathbb R)\), with basis
+:::
+
+::: pf-step
+The \(3\times3\) symmetric matrices form a vector subspace of \(M_3(\mathbb R)\), with basis
 \[
 \boxed{\{E_{11},E_{22},E_{33},E_{12}+E_{21},E_{13}+E_{31},E_{23}+E_{32}\}}.
 \]
 
-::: {.proof}
+::: pf-proof
 The zero matrix is symmetric, and if \(A^T=A\) and \(B^T=B\), then
 \[
 (A+B)^T=A+B,\qquad (\lambda A)^T=\lambda A,
@@ -80,9 +92,8 @@ aE_{11}+bE_{22}+cE_{33}
 which proves that the six displayed matrices form a basis.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 decide all four cases and provide bases exactly in the cases that are vector spaces.
 :::
+
+:::
+
 :::
