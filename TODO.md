@@ -169,7 +169,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
 
 ### P2: verify coverage and close the remaining gaps
 
-- [ ] **QC-09 — Maintain local test coverage without confusing it with input validation.**
+- [x] **QC-09 — Maintain local test coverage without confusing it with input validation.**
   **Owner:** the project test selection and the shared Python invocation contract.
   Review the current explicit front-matter and extraction-detector test selection against
   the local behaviors it must protect. Keep focused tests for the changed-input validator
@@ -178,6 +178,11 @@ on hosted checks. Every item is open until its acceptance condition is met.
   first check whether the current mechanism already meets that requirement.
   **Acceptance:** the local command runs the intended fast cases, CI runs the full suite,
   and a changed input is validated regardless of whether parser regression tests pass.
+  **Closed 2026-10-26.** `just test-push` executes the fast unit tests (`tests/test_front_matter_keys.py`,
+  `tests/test_extraction_detector.py`, `tests/test_card_git_validation.py`) explicitly via `pytest`
+  in ~3.2s without full-corpus fixture scans; changed card blobs are validated independently by
+  `scripts/local-validate.py` invoked directly via Git pre-commit and pre-push hooks regardless of pytest.
+  CI runs the full 216-test suite in the hosted `test` job.
 
 - [x] **QC-10 — Verify report delivery and consumption.**
   **Owner:** the report job, `BACKLOG.md`, Queue C, and their usage instructions.
