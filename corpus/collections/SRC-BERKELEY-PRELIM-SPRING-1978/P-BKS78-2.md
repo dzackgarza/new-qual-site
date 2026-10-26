@@ -24,7 +24,10 @@ $$
 $$
 denote the graph of $g$.
 
-<1>1. If $g$ is continuous and
+::: pf
+
+::: {.pf-step #limits-in-graph}
+If $g$ is continuous and
 $$
 (x_m,g(x_m))\longrightarrow(x,y)
 $$
@@ -33,7 +36,7 @@ $$
 y=g(x).
 $$
 
-::: {.proof}
+::: pf-proof
 Convergence in the product is coordinatewise, so
 $$
 x_m\longrightarrow x
@@ -49,15 +52,21 @@ $$
 Limits in $\mathbb R^n$ are unique, hence $y=g(x)$.
 :::
 
-<1>2. If $g$ is continuous, then $\Gamma_g$ is closed.
-
-::: {.proof}
-Step <1>1 shows that every convergent sequence of points of $\Gamma_g$ has its limit again in $\Gamma_g$. Since $\mathbb R^n\times\mathbb R^n$ is a metric space, sequentially closed subsets are closed.
 :::
 
-<1>3. The converse is false already for $n=1$.
+::: {.pf-step #continuous-closed-graph}
+If $g$ is continuous, then $\Gamma_g$ is closed.
 
-::: {.proof}
+::: pf-proof
+[](#limits-in-graph){.pf-ref} shows that every convergent sequence of points of $\Gamma_g$ has its limit again in $\Gamma_g$. Since $\mathbb R^n\times\mathbb R^n$ is a metric space, sequentially closed subsets are closed.
+:::
+
+:::
+
+::: {.pf-step #counterexample}
+The converse is false already for $n=1$.
+
+::: pf-proof
 Define
 $$
 h:\mathbb R\longrightarrow\mathbb R,
@@ -75,9 +84,12 @@ $$
 does not tend to $h(0)=0$.
 :::
 
-<1>4. The graph of the function $h$ from step <1>3 is closed in $\mathbb R^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #counterexample-closed-graph}
+The graph of the function $h$ from [](#counterexample){.pf-ref} is closed in $\mathbb R^2$.
+
+::: pf-proof
 Suppose
 $$
 (x_m,h(x_m))\longrightarrow(x,y)
@@ -101,18 +113,20 @@ $$
 Thus every convergent sequence in the graph has its limit in the graph, which is therefore closed.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{\text{continuity implies closed graph, but closed graph does not imply continuity}.}
 $$
 
-::: {.proof}
-Step <1>2 proves the implication, while steps <1>3--<1>4 give a counterexample to the converse.
+::: pf-proof
+[](#continuous-closed-graph){.pf-ref} proves the implication, while [](#counterexample){.pf-ref} and [](#counterexample-closed-graph){.pf-ref} give a counterexample to the converse.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers both parts.
 :::
+
+:::
+
 :::
