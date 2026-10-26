@@ -34,6 +34,8 @@ I=\int_0^{\pi/2}\frac{\sin x\cos x}{\sin^4x+\cos^4x}\,dx.
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
