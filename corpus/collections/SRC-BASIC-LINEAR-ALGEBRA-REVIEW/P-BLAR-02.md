@@ -34,7 +34,11 @@ Find the inverse of each matrix, or explain why it does not exist:
 :::
 
 ::: {.solution}
-<1>1. For
+
+::: pf
+
+::: pf-step
+For
 \[
 A=\begin{bmatrix}3&2\\1&3\end{bmatrix},
 \]
@@ -45,7 +49,7 @@ A^{-1}=\frac17
 \begin{bmatrix}3&-2\\-1&3\end{bmatrix}}.
 \]
 
-::: {.proof}
+::: pf-proof
 The determinant is
 \[
 \det A=3\cdot3-2\cdot1=7\neq0.
@@ -53,17 +57,23 @@ The determinant is
 The \(2\times2\) inverse formula therefore gives the displayed matrix.
 :::
 
-<1>2. The matrix
+:::
+
+::: pf-step
+The matrix
 \[
 B=\begin{bmatrix}1&2&4\\-1&2&0\end{bmatrix}
 \]
 has no inverse.
 
-::: {.proof}
+::: pf-proof
 An inverse \(B^{-1}\) in the usual matrix sense can exist only for a square matrix: if an \(m\times n\) matrix had both a left and a right inverse, then its rank would be both \(m\) and \(n\), forcing \(m=n\). Here \(B\) is \(2\times3\), so it is not invertible.
 :::
 
-<1>3. For
+:::
+
+::: pf-step
+For
 \[
 C=\begin{bmatrix}
 1&3&3\\
@@ -82,7 +92,7 @@ C^{-1}=
 \end{bmatrix}}.
 \]
 
-::: {.proof}
+::: pf-proof
 Let
 \[
 D=
@@ -105,7 +115,10 @@ CD=
 Since \(C\) and \(D\) are square, a right inverse is also the inverse; hence \(D=C^{-1}\).
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+For
 \[
 P=\begin{bmatrix}
 0&1&0\\
@@ -124,7 +137,7 @@ P^{-1}=
 \end{bmatrix}}.
 \]
 
-::: {.proof}
+::: pf-proof
 The columns of \(P\) are a permutation of the standard basis, so \(P\) is a permutation matrix. Hence
 \[
 P^{-1}=P^T,
@@ -132,9 +145,8 @@ P^{-1}=P^T,
 which is exactly the displayed matrix. Equivalently, direct multiplication gives \(PP^T=P^TP=I_3\).
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 determine the inverse, or nonexistence of an inverse, in every case.
 :::
+
+:::
+
 :::
