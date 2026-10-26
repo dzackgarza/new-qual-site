@@ -31,9 +31,11 @@ $$
 into a product of irreducible polynomials in the ring $\QQ[x]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial factors as
 $$
@@ -123,6 +125,8 @@ The factor $x-1$ is irreducible because it has degree $1$, and step [](#s1-3){.p
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested irreducible factorization.
+
+:::
 
 :::
 
