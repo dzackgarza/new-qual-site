@@ -24,8 +24,11 @@ The source lists five familiar principles equivalent to the Axiom of Choice: Zor
    \]
 :::
 
-::: {.solution}
-<1>1. The Axiom of Choice states:
+::: pf
+
+::: pf-step
+
+The Axiom of Choice states:
 
 For every family
 $$
@@ -44,15 +47,22 @@ $$
 A\in\mathcal A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Such a function is called a choice function for
 $$
 \mathcal A.
 $$
 This is the standard formulation of the Axiom of Choice.
+
 :::
 
-<1>2. Zorn's Lemma states:
+:::
+
+::: pf-step
+
+Zorn's Lemma states:
 
 If
 $$
@@ -72,32 +82,53 @@ P
 $$
 has a maximal element.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard statement of Zorn's Lemma.
+
 :::
 
-<1>3. The well-ordering principle states:
+:::
+
+::: pf-step
+
+The well-ordering principle states:
 
 $$
 \boxed{
 \text{Every set admits a well-ordering.}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A well-ordering is a total order under which every nonempty subset has a least element. The assertion that every set can be so ordered is the well-ordering principle.
+
 :::
 
-<1>4. Assume Zorn's Lemma. Let
+:::
+
+::: pf-step
+
+Assume Zorn's Lemma. Let
 $$
 \mathcal A
 $$
 be an arbitrary family of nonempty sets.
 
-::: {.proof}
+
+::: pf-proof
+
 To prove the Axiom of Choice from Zorn's Lemma, it is enough to construct a choice function for this arbitrary family.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 P
 $$
@@ -136,7 +167,9 @@ f\le g
 g|_{\mathcal D_f}=f.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The empty function belongs to
 $$
 P,
@@ -146,9 +179,14 @@ $$
 P
 $$
 is nonempty. The extension relation is reflexive, antisymmetric, and transitive, hence a partial order.
+
 :::
 
-<1>6. Every chain in
+:::
+
+::: pf-step
+
+Every chain in
 $$
 P
 $$
@@ -157,7 +195,9 @@ $$
 P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal C\subseteq P
@@ -219,9 +259,14 @@ $$
 f
 $$
 is an upper bound.
+
 :::
 
-<1>7. By Zorn's Lemma,
+:::
+
+::: pf-step
+
+By Zorn's Lemma,
 $$
 P
 $$
@@ -230,14 +275,21 @@ $$
 f_{\max}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 verifies the hypothesis of Zorn's Lemma for the partially ordered set
 $$
 P.
 $$
+
 :::
 
-<1>8. The domain of
+:::
+
+::: pf-step
+
+The domain of
 $$
 f_{\max}
 $$
@@ -246,7 +298,9 @@ $$
 \mathcal A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that there is some
 $$
 A_0
@@ -280,9 +334,14 @@ $$
 f_{\max},
 $$
 contradicting maximality.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 f_{\max}
 $$
@@ -291,7 +350,9 @@ $$
 \mathcal A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 $$
 \mathcal D_{f_{\max}}
@@ -310,9 +371,14 @@ for every
 $$
 A\in\mathcal A.
 $$
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \text{Zorn's Lemma}
@@ -320,17 +386,23 @@ $$
 \mathrm{AC}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The family
 $$
 \mathcal A
 $$
 was arbitrary. Step <1>9 constructs a choice function for every family of nonempty sets, which is exactly the Axiom of Choice.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 state AC and two of the listed equivalent principles, and steps <1>4--<1>10 prove one required implication.
+
 :::
+
 :::

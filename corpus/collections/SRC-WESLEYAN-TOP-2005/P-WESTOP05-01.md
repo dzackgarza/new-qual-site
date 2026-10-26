@@ -28,7 +28,6 @@ and
 Here $\mathcal P$ denotes power set.
 :::
 
-::: {.solution}
 Let
 \[
 \mathfrak c
@@ -39,7 +38,11 @@ Let
 \]
 denote the cardinality of the continuum.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{
 |\mathcal P(\mathbb N)|
@@ -49,7 +52,9 @@ denote the cardinality of the continuum.
 \mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 2^{\aleph_0}
@@ -68,25 +73,39 @@ Thus
 \mathcal P(\mathbb N)
 \]
 is in bijection with \(\{0,1\}^{\mathbb N}\).
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 |\{0,1\}|=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set has exactly two elements.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 |[0,1]|=\mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The interval \([0,1]\) is a nondegenerate interval in \(\mathbb R\), and
 every nondegenerate real interval has the same cardinality as \(\mathbb R\).
 For example, the map
@@ -105,15 +124,22 @@ the Cantor--Bernstein theorem gives
 \[
 |[0,1]|=|\mathbb R|=\mathfrak c.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 |(0,1)|=\mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The explicit map
 \[
 x\longmapsto
@@ -124,9 +150,14 @@ is a bijection
 \mathbb R\to(0,1).
 \]
 Hence the cardinalities are equal.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 \[
 S
 =
@@ -139,7 +170,9 @@ Then
 \boxed{|S|\ge\mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every \(x\in[0,1]\) determines the constant sequence
 \[
 f_x(n)=x.
@@ -152,9 +185,14 @@ is injective. By step <1>3,
 \[
 |[0,1]|=\mathfrak c.
 \]
+
 :::
 
-<1>6. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |[0,1]|=\mathfrak c=2^{\aleph_0},
 \]
@@ -165,15 +203,22 @@ one has
 \mathfrak c^{\aleph_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set of all functions from a set of cardinality \(\aleph_0\) into a set
 of cardinality \(\mathfrak c\) has cardinality
 \[
 \mathfrak c^{\aleph_0}.
 \]
+
 :::
 
-<1>7. Cardinal exponentiation gives
+:::
+
+::: pf-step
+
+Cardinal exponentiation gives
 \[
 \boxed{
 \mathfrak c^{\aleph_0}
@@ -187,7 +232,9 @@ of cardinality \(\mathfrak c\) has cardinality
 \mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 (\kappa^\lambda)^\mu
@@ -198,9 +245,14 @@ for cardinals, together with
 \[
 \aleph_0\cdot\aleph_0=\aleph_0.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \left|
@@ -210,11 +262,18 @@ for cardinals, together with
 \mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6--<1>7.
+
 :::
 
-<1>9. Collecting the results,
+:::
+
+::: pf-step
+
+Collecting the results,
 \[
 \boxed{
 |\mathcal P(\mathbb N)|
@@ -235,13 +294,19 @@ and
 |\{0,1\}|=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>1--<1>4 and <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 gives all requested cardinalities.
+
 :::
+
 :::

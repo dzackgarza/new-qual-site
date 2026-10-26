@@ -20,8 +20,11 @@ Let $A\subset X$.
    \]
 :::
 
-::: {.solution}
-<1>1. A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a retraction \(r:X\to A\) and a homotopy
+::: pf
+
+::: pf-step
+
+A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a retraction \(r:X\to A\) and a homotopy
 \[
 H:X\times I\to X
 \]
@@ -31,26 +34,40 @@ H(a,t)=a
 \]
 for every \(a\in A\) and \(t\in I\).
 
-::: {.proof}
+
+::: pf-proof
+
 The condition \(r|_A=\operatorname{id}_A\) says that \(r\) is a retraction. The additional condition on \(H\) says that the homotopy from \(X\) onto \(A\) fixes \(A\) pointwise throughout.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \boxed{r:\mathbb R^n\setminus\{0\}\to S^{n-1},\qquad
 r(x)=\frac{x}{\|x\|}}
 \]
 is a retraction.
 
-::: {.proof}
+
+::: pf-proof
+
 For \(x\ne0\), one has \(\|x/\|x\|\|=1\), so \(r(x)\in S^{n-1}\). The map is continuous because the norm is continuous and \(\|x\|>0\) on the domain. If \(x\in S^{n-1}\), then \(\|x\|=1\), hence
 \[
 r(x)=x.
 \]
 Thus \(r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}\).
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 H:(\mathbb R^n\setminus\{0\})\times I\to\mathbb R^n\setminus\{0\}
 \]
@@ -60,7 +77,9 @@ by
 \]
 Then \(H\) is a homotopy from \(\operatorname{id}\) to \(i\circ r\).
 
-::: {.proof}
+
+::: pf-proof
+
 The scalar
 \[
 (1-t)+\frac{t}{\|x\|}
@@ -76,27 +95,45 @@ while at \(t=1\),
 H(x,1)=\frac{x}{\|x\|}=r(x)=i(r(x)).
 \]
 Therefore \(H\) is a homotopy from \(\operatorname{id}\) to \(i\circ r\).
+
 :::
 
-<1>4. The homotopy \(H\) fixes \(S^{n-1}\) pointwise.
+:::
 
-::: {.proof}
+::: pf-step
+
+The homotopy \(H\) fixes \(S^{n-1}\) pointwise.
+
+
+::: pf-proof
+
 If \(x\in S^{n-1}\), then \(\|x\|=1\), so for every \(t\in I\),
 \[
 H(x,t)=((1-t)+t)x=x.
 \]
 Thus every point of the sphere remains fixed during the homotopy.
+
 :::
 
-<1>5. \(S^{n-1}\) is a deformation retract of \(\mathbb R^n\setminus\{0\}\).
+:::
 
-::: {.proof}
+::: pf-step
+
+\(S^{n-1}\) is a deformation retract of \(\mathbb R^n\setminus\{0\}\).
+
+
+::: pf-proof
+
 Step <1>2 gives a retraction onto \(S^{n-1}\), step <1>3 gives a homotopy from the identity to that retraction followed by inclusion, and step <1>4 shows that this homotopy fixes \(S^{n-1}\) pointwise. These are exactly the conditions in step <1>1.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition, and step <1>5 gives the requested explicit deformation retraction.
+
 :::
+
 :::

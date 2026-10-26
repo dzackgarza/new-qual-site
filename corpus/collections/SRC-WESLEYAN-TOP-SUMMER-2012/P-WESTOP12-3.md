@@ -17,10 +17,15 @@ Prove or disprove each statement:
 2. The image of a connected space under a continuous map is connected.
 :::
 
-::: {.solution}
-<1>1. Statement (1) is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement (1) is false.
+
+
+::: pf-proof
+
 Let
 \[
 X=\{0,1\}
@@ -61,11 +66,18 @@ f(X)=Y,
 \]
 which is not Hausdorff.
 Thus a continuous image of a Hausdorff space need not be Hausdorff.
+
 :::
 
-<1>2. Statement (2) is true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (2) is true.
+
+
+::: pf-proof
+
 Let
 \[
 f:X\to Y
@@ -114,9 +126,14 @@ f(X)
 \text{ is connected}.
 }
 \]
+
 :::
 
-<1>3. The final answers are:
+:::
+
+::: pf-step
+
+The final answers are:
 \[
 \boxed{
 \begin{array}{c|cc}
@@ -127,14 +144,20 @@ f(X)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a counterexample to statement (1), and step <1>2 proves
 statement (2).
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 records both conclusions.
+
 :::
+
 :::

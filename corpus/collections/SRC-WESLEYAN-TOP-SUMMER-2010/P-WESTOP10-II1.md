@@ -33,8 +33,11 @@ audit:
    This relation is retained exactly as extracted; any missing negation remains unrecovered.
 :::
 
-::: {.solution}
-<1>1. For part (1), let
+::: pf
+
+::: pf-step
+
+For part (1), let
 \[
 X_1
 \coloneqq
@@ -53,7 +56,9 @@ z^2
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard CW structures:
 
 - the torus has one $0$-cell, two $1$-cells $x,y$, and one $2$-cell
@@ -81,16 +86,23 @@ By van Kampen,
 [x,y],z^2
 \rangle.
 \]
+
 :::
 
-<1>2. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 \[
 \pi_1(X_1)
 \cong
 \mathbb Z^2*\mathbb Z/2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The relation
 \[
 [x,y]=1
@@ -108,9 +120,14 @@ resulting group is the free product
 \[
 \mathbb Z^2*\mathbb Z/2.
 \]
+
 :::
 
-<1>3. For part (2), let $X_2$ be the presentation complex with one
+:::
+
+::: pf-step
+
+For part (2), let $X_2$ be the presentation complex with one
 $0$-cell, two $1$-cells $x,y$, and three $2$-cells attached along
 \[
 x^2,
@@ -131,7 +148,9 @@ x^2,y^2,xyx^{-1}y^{-1}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $1$-skeleton is
 \[
 S^1\vee S^1
@@ -144,9 +163,14 @@ Attaching a $2$-cell along a loop adds that loop as a relator in the
 fundamental group.
 Thus the three attaching maps impose precisely the three displayed
 relations.
+
 :::
 
-<1>4. The group in part (2) is the Klein four group:
+:::
+
+::: pf-step
+
+The group in part (2) is the Klein four group:
 \[
 \boxed{
 \pi_1(X_2)
@@ -155,7 +179,9 @@ relations.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The relations
 \[
 x^2=1,
@@ -184,9 +210,14 @@ and the multiplication is that of
 \[
 \mathbb Z/2\times\mathbb Z/2.
 \]
+
 :::
 
-<1>5. The literal printed statement in part (3) is satisfied, for example,
+:::
+
+::: pf-step
+
+The literal printed statement in part (3) is satisfied, for example,
 by taking
 \[
 \boxed{
@@ -194,7 +225,9 @@ X=Y=S^1.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Then trivially
 \[
 H_i(X)
@@ -210,9 +243,14 @@ for every $i$, and
 \mathbb Z.
 \]
 Thus the literal extracted condition is satisfied.
+
 :::
 
-<1>6. The contrastive word “but” strongly suggests that part (3) intended
+:::
+
+::: pf-step
+
+The contrastive word “but” strongly suggests that part (3) intended
 \[
 \pi_1(X)
 \not\cong
@@ -227,7 +265,9 @@ Y=S^1\vee S^1\vee S^2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the torus,
 \[
 H_0(T^2)\cong\mathbb Z,
@@ -290,9 +330,14 @@ is abelian, while
 F_2
 \]
 is nonabelian, so they are not isomorphic.
+
 :::
 
-<1>7. Therefore the complete response is:
+:::
+
+::: pf-step
+
+Therefore the complete response is:
 
 - part (1):
   \[
@@ -318,15 +363,21 @@ is nonabelian, so they are not isomorphic.
   Y=S^1\vee S^1\vee S^2.
   \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the collection of steps <1>1--<1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 solve the two presentation-realization problems.
 Steps <1>5--<1>6 answer both the literal and likely intended readings of
 the ambiguous third subproblem.
+
 :::
+
 :::

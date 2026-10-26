@@ -17,8 +17,11 @@ State the definition of a path-connected space. Let $X$ be path-connected and le
 \]
 :::
 
-::: {.solution}
-<1>1. A topological space $X$ is path-connected if for every pair of points
+::: pf
+
+::: pf-step
+
+A topological space $X$ is path-connected if for every pair of points
 \[
 x,y\in X,
 \]
@@ -33,11 +36,18 @@ such that
 \eta(1)=y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of path-connectedness.
+
 :::
 
-<1>2. Since $X$ is path-connected, choose a path
+:::
+
+::: pf-step
+
+Since $X$ is path-connected, choose a path
 \[
 \eta:[0,1]\to X
 \]
@@ -55,7 +65,9 @@ Let
 \]
 be the reverse path.
 
-::: {.proof}
+
+::: pf-proof
+
 Existence of $\eta$ follows from path-connectedness.
 The reverse path runs from
 \[
@@ -65,9 +77,14 @@ back to
 \[
 x_1.
 \]
+
 :::
 
-<1>3. For a loop
+:::
+
+::: pf-step
+
+For a loop
 \[
 \gamma
 \]
@@ -80,7 +97,9 @@ based at $x_0$, define
 \pi_1(X,x_1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The concatenation starts at
 \[
 x_1,
@@ -88,15 +107,22 @@ x_1,
 follows $\eta$ to $x_0$, traverses the loop $\gamma$, and then follows
 $\bar\eta$ back to $x_1$.
 Hence it is a loop based at $x_1$.
+
 :::
 
-<1>4. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \Phi
 \]
 is well defined on homotopy classes.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 \gamma_0
@@ -127,11 +153,18 @@ Thus the output class depends only on
 \[
 [\gamma].
 \]
+
 :::
 
-<1>5. The map $\Phi$ is a group homomorphism.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is a group homomorphism.
+
+
+::: pf-proof
+
 Let
 \[
 [\gamma_1],[\gamma_2]
@@ -177,9 +210,14 @@ Hence
 =
 \Phi([\gamma_1])\Phi([\gamma_2]).
 \]
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \Psi:
 \pi_1(X,x_1)
@@ -193,18 +231,27 @@ by
 [\bar\eta*\lambda*\eta].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the same construction using the path
 \[
 \bar\eta:x_0\to x_1.
 \]
 By the same argument as steps <1>3--<1>5, it is a well-defined group
 homomorphism.
+
 :::
 
-<1>7. The maps $\Phi$ and $\Psi$ are inverse to each other.
+:::
 
-::: {.proof}
+::: pf-step
+
+The maps $\Phi$ and $\Psi$ are inverse to each other.
+
+
+::: pf-proof
+
 For
 \[
 [\gamma]\in\pi_1(X,x_0),
@@ -252,9 +299,14 @@ Thus
 =
 \operatorname{id}.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \Phi:
@@ -265,15 +317,24 @@ Thus
 \]
 is an isomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives that $\Phi$ is a homomorphism, and step <1>7 gives its
 two-sided inverse.
+
 :::
 
-<1>9. The isomorphism depends on the chosen path $\eta$, but only up to an
+:::
+
+::: pf-step
+
+The isomorphism depends on the chosen path $\eta$, but only up to an
 inner automorphism of the target fundamental group.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 \eta'
@@ -287,12 +348,16 @@ The two basepoint-change maps differ by conjugation by its homotopy class.
 Thus there is no canonical basepoint-independent isomorphism in general,
 although the fundamental groups are always isomorphic for path-connected
 $X$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition, and steps <1>2--<1>8 construct
 the isomorphism in full detail.
+
 :::
+
 :::

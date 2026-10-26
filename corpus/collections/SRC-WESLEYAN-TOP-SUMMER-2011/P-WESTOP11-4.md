@@ -31,7 +31,6 @@ I(S)=\{f\in C(X):S\subseteq Z(f)\}.
    for some $p\in X$.
 :::
 
-::: {.solution}
 For
 \[
 S\subseteq X,
@@ -43,9 +42,15 @@ I(S)
 \{f\in C(X):f|_S=0\}.
 \]
 
-<1>1. The set $I(S)$ is an ideal of $C(X)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $I(S)$ is an ideal of $C(X)$.
+
+
+::: pf-proof
+
 The zero function belongs to $I(S)$.
 
 If
@@ -93,16 +98,23 @@ Thus
 hf\in I(S).
 \]
 Therefore $I(S)$ is an ideal.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 I(S)=I(\overline S).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 S\subseteq\overline S,
@@ -142,9 +154,14 @@ Thus $f$ vanishes on $\overline S$, so
 \[
 f\in I(\overline S).
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 S_1\subseteq S_2,
 \]
@@ -155,7 +172,9 @@ I(S_2)\subseteq I(S_1).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 f\in I(S_2),
@@ -165,9 +184,14 @@ subset $S_1$. Thus
 \[
 f\in I(S_1).
 \]
+
 :::
 
-<1>4. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 p\in X.
 \]
@@ -179,7 +203,9 @@ The evaluation map
 \]
 is a surjective ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 f,g\in C(X),
@@ -215,14 +241,21 @@ lies in $C(X)$ and satisfies
 \operatorname{ev}_p(c_r)=r.
 \]
 Hence evaluation is surjective.
+
 :::
 
-<1>5. The kernel of $\operatorname{ev}_p$ is
+:::
+
+::: pf-step
+
+The kernel of $\operatorname{ev}_p$ is
 \[
 I(\{p\}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 f\in\ker\operatorname{ev}_p
@@ -233,9 +266,14 @@ This is exactly the condition
 \[
 f\in I(\{p\}).
 \]
+
 :::
 
-<1>6. For every topological space $X$ and every $p\in X$,
+:::
+
+::: pf-step
+
+For every topological space $X$ and every $p\in X$,
 \[
 \boxed{
 I(\{p\})
@@ -243,7 +281,9 @@ I(\{p\})
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5 and the first isomorphism theorem,
 \[
 C(X)/I(\{p\})
@@ -259,9 +299,14 @@ is maximal.
 In particular this proves the requested assertion when $X$ is completely
 regular. The complete-regularity hypothesis is stronger than needed for this
 part.
+
 :::
 
-<1>7. Now assume $X$ is compact Hausdorff, and let
+:::
+
+::: pf-step
+
+Now assume $X$ is compact Hausdorff, and let
 \[
 I\subset C(X)
 \]
@@ -280,7 +325,9 @@ f\in I,
 \]
 cover $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 The displayed empty intersection means that for every
 \[
 x\in X
@@ -298,9 +345,14 @@ Equivalently,
 x\in X\setminus Z(f).
 \]
 Since each zero set $Z(f)$ is closed, its complement is open.
+
 :::
 
-<1>8. There exist finitely many functions
+:::
+
+::: pf-step
+
+There exist finitely many functions
 \[
 f_1,\dots,f_m\in I
 \]
@@ -311,7 +363,9 @@ such that
 \varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7, the open family
 \[
 \{X\setminus Z(f):f\in I\}
@@ -331,9 +385,14 @@ Taking complements gives
 =
 \varnothing.
 \]
+
 :::
 
-<1>9. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g
 \coloneqq
@@ -350,7 +409,9 @@ g(x)>0
 (x\in X).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f_j\in I
@@ -380,11 +441,18 @@ g(x)
 >
 0.
 \]
+
 :::
 
-<1>10. The function $g$ from step <1>9 is a unit in $C(X)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ from step <1>9 is a unit in $C(X)$.
+
+
+::: pf-proof
+
 Since
 \[
 g(x)>0
@@ -405,11 +473,18 @@ and
 gh=1.
 \]
 Thus $g$ is invertible.
+
 :::
 
-<1>11. The assumption in step <1>7 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumption in step <1>7 is impossible.
+
+
+::: pf-proof
+
 By step <1>9,
 \[
 g\in I.
@@ -431,9 +506,14 @@ Then
 I=C(X),
 \]
 contradicting that a maximal ideal is proper.
+
 :::
 
-<1>12. Therefore there exists
+:::
+
+::: pf-step
+
+Therefore there exists
 \[
 p\in X
 \]
@@ -448,7 +528,9 @@ Equivalently,
 I\subseteq I(\{p\}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>11 shows
 \[
 \bigcap_{f\in I}Z(f)
@@ -460,16 +542,23 @@ Choose
 p
 \]
 in this intersection. Then every $f\in I$ vanishes at $p$.
+
 :::
 
-<1>13. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 I=I(\{p\}).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>12,
 \[
 I\subseteq I(\{p\}).
@@ -480,9 +569,14 @@ I(\{p\})
 \]
 is a maximal ideal. Since $I$ is also maximal and both are proper ideals,
 the inclusion forces equality.
+
 :::
 
-<1>14. Thus, for compact Hausdorff $X$, the maximal ideals of $C(X)$ are
+:::
+
+::: pf-step
+
+Thus, for compact Hausdorff $X$, the maximal ideals of $C(X)$ are
 exactly the point-evaluation ideals
 \[
 \boxed{
@@ -494,15 +588,21 @@ p\in X.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 shows every point-evaluation ideal is maximal, and step <1>13
 shows every maximal ideal is of this form.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (1), steps <1>4--<1>6 prove part (2), and
 steps <1>7--<1>14 prove part (3).
+
 :::
+
 :::

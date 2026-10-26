@@ -31,7 +31,6 @@ whose disk is tangent to the $x$-axis at $(p,0)$.
 4. State the Tietze Extension Theorem and use it to prove that $X$ is not normal.
 :::
 
-::: {.solution}
 For
 $$
 p\in\mathbb R,
@@ -55,9 +54,15 @@ $$
 (p,0).
 $$
 
-<1>1. Every point of $X$ belongs to at least one of the stated basic sets.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every point of $X$ belongs to at least one of the stated basic sets.
+
+
+::: pf-proof
+
 If
 $$
 (p,q)\in X
@@ -88,9 +93,14 @@ for every
 $$
 r>0.
 $$
+
 :::
 
-<1>2. If an interior point
+:::
+
+::: pf-step
+
+If an interior point
 $$
 x=(a,b),
 \qquad
@@ -102,7 +112,9 @@ B(x;\delta)
 $$
 contained in that intersection.
 
-::: {.proof}
+
+::: pf-proof
+
 Every stated basic set is Euclidean open at each of its points of positive height.
 
 For an ordinary disk this is immediate.
@@ -133,9 +145,14 @@ $$
 \delta<b
 $$
 gives an allowed ordinary basic disk contained in their intersection.
+
 :::
 
-<1>3. If a boundary point
+:::
+
+::: pf-step
+
+If a boundary point
 $$
 (p,0)
 $$
@@ -145,7 +162,9 @@ U(p,r)
 $$
 is contained in their intersection.
 
-::: {.proof}
+
+::: pf-proof
+
 An ordinary basic disk contains no point of the $x$-axis. Hence both basic sets containing
 $$
 (p,0)
@@ -196,19 +215,31 @@ U(p,r)
 \subseteq
 U(p,r_1)\cap U(p,r_2).
 $$
+
 :::
 
-<1>4. The stated family is a basis for a topology on $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The stated family is a basis for a topology on $X$.
+
+
+::: pf-proof
+
 Step <1>1 gives the first basis axiom: every point lies in some basis element.
 
 Steps <1>2--<1>3 give the second basis axiom: whenever a point lies in the intersection of two basis elements, there is a third basis element containing that point and contained in the intersection.
 
 Therefore the stated family is a basis.
+
 :::
 
-<1>5. The set
+:::
+
+::: pf-step
+
+The set
 $$
 C
 \coloneqq
@@ -216,7 +247,9 @@ C
 $$
 meets every nonempty basic open set.
 
-::: {.proof}
+
+::: pf-proof
+
 An ordinary basic disk lies entirely in the open upper half-plane and is a nonempty Euclidean-open subset of
 $$
 \mathbb R^2.
@@ -251,11 +284,18 @@ $$
 C
 $$
 inside that disk.
+
 :::
 
-<1>6. The set $C$ is dense in $X$, so $X$ is separable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $C$ is dense in $X$, so $X$ is separable.
+
+
+::: pf-proof
+
 By step <1>5 every nonempty basic open set meets
 $$
 C.
@@ -277,9 +317,14 @@ $$
 \mathbb Q^2
 $$
 is countable.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 $$
 A
 \coloneqq
@@ -287,7 +332,9 @@ A
 $$
 Then $A$ is closed in $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 Its complement is
 $$
 X\setminus A
@@ -311,11 +358,18 @@ $$
 X\setminus A.
 $$
 Thus the complement is open.
+
 :::
 
-<1>8. The subspace topology on $A$ is discrete.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subspace topology on $A$ is discrete.
+
+
+::: pf-proof
+
 For every
 $$
 p\in\mathbb R
@@ -335,9 +389,14 @@ $$
 A
 $$
 is open in the subspace topology.
+
 :::
 
-<1>9. The Tietze Extension Theorem states: if $Y$ is normal, $F\subseteq Y$ is closed, and
+:::
+
+::: pf-step
+
+The Tietze Extension Theorem states: if $Y$ is normal, $F\subseteq Y$ is closed, and
 $$
 u:F\to[-1,1]
 $$
@@ -350,11 +409,18 @@ $$
 U|_F=u.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the bounded real-valued form of the Tietze Extension Theorem, sufficient for the present application.
+
 :::
 
-<1>10. There are
+:::
+
+::: pf-step
+
+There are
 $$
 2^{\mathfrak c}
 $$
@@ -367,7 +433,9 @@ $$
 \mathfrak c=|\mathbb R|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 $$
 A
@@ -388,9 +456,14 @@ $$
 =
 2^{\mathfrak c}.
 $$
+
 :::
 
-<1>11. There are at most
+:::
+
+::: pf-step
+
+There are at most
 $$
 \mathfrak c
 $$
@@ -399,7 +472,9 @@ $$
 X\to\mathbb R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, choose a countable dense subset
 $$
 D\subseteq X.
@@ -442,11 +517,18 @@ $$
 \le
 \mathfrak c.
 $$
+
 :::
 
-<1>12. The space $X$ is not normal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X$ is not normal.
+
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 $$
 X
@@ -501,11 +583,15 @@ $$
 \mathfrak c,
 $$
 a contradiction.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (1), step <1>6 proves part (2), steps <1>7--<1>8 prove part (3), and steps <1>9--<1>12 prove part (4).
+
 :::
+
 :::

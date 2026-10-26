@@ -39,7 +39,6 @@ audit:
 3. Prove that $\mu'$ is associative.
 :::
 
-::: {.solution}
 ## Part 1: the based lifting criterion
 
 Let
@@ -52,7 +51,11 @@ f:(X,x_0)\to(B,b_0)
 \]
 a based map, with \(X\) path connected and locally path connected.
 
-<1>1. A based lift
+::: pf
+
+::: pf-step
+
+A based lift
 \[
 \widetilde f:(X,x_0)\to(E,e_0)
 \]
@@ -64,7 +67,9 @@ f_*\pi_1(X,x_0)
 p_*\pi_1(E,e_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 p\circ\widetilde f=f,
@@ -80,9 +85,14 @@ Hence every element of
 f_*\pi_1(X,x_0)
 \]
 lies in the image of \(p_*\).
+
 :::
 
-<1>2. Conversely, if
+:::
+
+::: pf-step
+
+Conversely, if
 \[
 f_*\pi_1(X,x_0)
 \subseteq
@@ -90,7 +100,9 @@ p_*\pi_1(E,e_0),
 \]
 then a based lift exists.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the covering-space lifting criterion. The subgroup condition says
 precisely that the endpoint of the lift of \(f\circ\gamma\), starting at
 \(e_0\), depends only on the endpoint of a path \(\gamma\) in \(X\), not on
@@ -99,9 +111,14 @@ the chosen path from \(x_0\). Thus one defines
 \widetilde f(x)
 \]
 as that lifted endpoint. Local path connectedness gives continuity.
+
 :::
 
-<1>3. Therefore the necessary and sufficient condition is
+:::
+
+::: pf-step
+
+Therefore the necessary and sufficient condition is
 \[
 \boxed{
 f_*\pi_1(X,x_0)
@@ -109,13 +126,22 @@ f_*\pi_1(X,x_0)
 p_*\pi_1(E,e_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1--<1>2.
+
 :::
 
-<1>4. If a based lift exists, it is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+If a based lift exists, it is unique.
+
+
+::: pf-proof
+
 Suppose
 \[
 \widetilde f_1,\widetilde f_2:X\to E
@@ -153,42 +179,54 @@ Evaluating at \(1\) yields
 \widetilde f_1(x)=\widetilde f_2(x).
 \]
 Since \(x\) was arbitrary, the lifts are equal.
+
 :::
 
-<1>5. Hence the number of based lifts is
+:::
+
+::: pf-step
+
+Hence the number of based lifts is
 \[
 \boxed{
 0\text{ or }1},
 \]
 and it is \(1\) exactly when the subgroup condition in step <1>3 holds.
 
-::: {.proof}
+
+::: pf-proof
+
 Existence is step <1>3 and uniqueness is step <1>4.
+
 :::
 
-## Part 2: lifting the multiplication
+:::
 
-Let \(G\) be a path-connected locally path-connected topological group with
-identity \(e\), and let
-\[
-p:(H,e')\to(G,e)
-\]
-be its universal cover.
+::: pf-step
 
-<1>6. The space \(H\) is simply connected.
+The space \(H\) is simply connected.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining property of a universal covering space.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 H\times H
 \text{ is simply connected}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The product is path connected, and
 \[
 \pi_1(H\times H,(e',e'))
@@ -197,9 +235,14 @@ The product is path connected, and
 =
 0.
 \]
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 F
 =
@@ -207,7 +250,9 @@ F
 H\times H\to G.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The product map
 \[
 p\times p:H\times H\to G\times G
@@ -216,15 +261,22 @@ is continuous, and so is the multiplication
 \[
 \mu:G\times G\to G.
 \]
+
 :::
 
-<1>9. The map \(F\) is based:
+:::
+
+::: pf-step
+
+The map \(F\) is based:
 \[
 \boxed{
 F(e',e')=e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 p(e')=e,
@@ -237,33 +289,52 @@ F(e',e')
 =
 e.
 \]
+
 :::
 
-<1>10. The induced subgroup
+:::
+
+::: pf-step
+
+The induced subgroup
 \[
 F_*\pi_1(H\times H,(e',e'))
 \]
 is trivial.
 
-::: {.proof}
+
+::: pf-proof
+
 The domain is simply connected by step <1>7.
+
 :::
 
-<1>11. The image
+:::
+
+::: pf-step
+
+The image
 \[
 p_*\pi_1(H,e')
 \]
 is also trivial.
 
-::: {.proof}
+
+::: pf-proof
+
 Again,
 \[
 \pi_1(H,e')=0
 \]
 by step <1>6.
+
 :::
 
-<1>12. Hence the lifting criterion gives a unique based lift
+:::
+
+::: pf-step
+
+Hence the lifting criterion gives a unique based lift
 \[
 \boxed{
 \mu':(H\times H,(e',e'))
@@ -277,7 +348,9 @@ p\circ\mu'
 \mu\circ(p\times p)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>10--<1>11,
 \[
 F_*\pi_1(H\times H)
@@ -289,42 +362,31 @@ F_*\pi_1(H\times H)
 p_*\pi_1(H).
 \]
 Apply the criterion from step <1>3 and uniqueness from step <1>4.
+
 :::
 
-<1>13. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 \mu'(e',e')=e'}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The lift in step <1>12 is based.
+
 :::
 
-## Part 3: associativity
+:::
 
-Define
-\[
-A:H^3\to H
-\]
-by
-\[
-A(h_1,h_2,h_3)
-=
-\mu'(\mu'(h_1,h_2),h_3),
-\]
-and define
-\[
-B:H^3\to H
-\]
-by
-\[
-B(h_1,h_2,h_3)
-=
-\mu'(h_1,\mu'(h_2,h_3)).
-\]
+::: pf-step
 
-<1>14. For every \((h_1,h_2,h_3)\in H^3\),
+For every \((h_1,h_2,h_3)\in H^3\),
 \[
 p(A(h_1,h_2,h_3))
 =
@@ -333,7 +395,9 @@ p(A(h_1,h_2,h_3))
 p(h_3)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>12 twice,
 \[
 \begin{aligned}
@@ -350,9 +414,14 @@ p(h_3))\\
 p(h_3)).
 \end{aligned}
 \]
+
 :::
 
-<1>15. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 \[
 p(B(h_1,h_2,h_3))
 =
@@ -361,11 +430,18 @@ p(h_1),
 \mu(p(h_2),p(h_3))).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>12 twice in the other parenthesization.
+
 :::
 
-<1>16. Since multiplication in \(G\) is associative,
+:::
+
+::: pf-step
+
+Since multiplication in \(G\) is associative,
 \[
 \boxed{
 p\circ A
@@ -373,7 +449,9 @@ p\circ A
 p\circ B}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For all \(g_1,g_2,g_3\in G\),
 \[
 \mu(\mu(g_1,g_2),g_3)
@@ -385,15 +463,22 @@ Apply this to
 g_i=p(h_i)
 \]
 and compare steps <1>14--<1>15.
+
 :::
 
-<1>17. Both \(A\) and \(B\) send
+:::
+
+::: pf-step
+
+Both \(A\) and \(B\) send
 \[
 (e',e',e')
 \]
 to \(e'\).
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>13,
 \[
 A(e',e',e')
@@ -408,21 +493,35 @@ and similarly
 \[
 B(e',e',e')=e'.
 \]
+
 :::
 
-<1>18. The space \(H^3\) is path connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space \(H^3\) is path connected.
+
+
+::: pf-proof
+
 The universal cover \(H\) is path connected, and a finite product of
 path-connected spaces is path connected.
+
 :::
 
-<1>19. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{A=B}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>16, \(A\) and \(B\) are lifts through \(p\) of the same map
 \[
 H^3\to G.
@@ -432,9 +531,14 @@ connected by step <1>18, uniqueness of lifting gives
 \[
 A=B.
 \]
+
 :::
 
-<1>20. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \mu'(\mu'(h_1,h_2),h_3)
@@ -443,21 +547,34 @@ A=B.
 \]
 for all \(h_1,h_2,h_3\in H\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the pointwise meaning of step <1>19.
+
 :::
 
-<1>21. Thus the lifted multiplication \(\mu'\) is associative.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus the lifted multiplication \(\mu'\) is associative.
+
+
+::: pf-proof
+
 Step <1>20 is exactly associativity.
+
 :::
 
-<1>22. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>5 answer part \(1\), step <1>12 constructs the lifted
 multiplication in part \(2\), and step <1>21 proves associativity in part
 \(3\).
+
 :::
+
 :::

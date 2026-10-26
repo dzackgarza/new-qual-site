@@ -28,10 +28,15 @@ then
 \]
 :::
 
-::: {.solution}
-<1>1. Each $f_n$ and $g$ is integrable on $\mathbb R^d$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Each $f_n$ and $g$ is integrable on $\mathbb R^d$.
+
+
+::: pf-proof
+
 Convergence in $L^\infty$ takes place in the normed space $L^\infty$, so $g$ and every $f_n$ have finite essential supremum. Since all supports are contained in $X$ and $\lambda(X)<\infty$,
 $$
 \int_{\mathbb R^d}\abs{f_n}
@@ -39,16 +44,23 @@ $$
 \leq\lambda(X)\norm{f_n}_{L^\infty}<\infty,
 $$
 and similarly for $g$.
+
 :::
 
-<1>2. For every $n$,
+:::
+
+::: pf-step
+
+For every $n$,
 $$
 \left|\int_{\mathbb R^d}f_n-\int_{\mathbb R^d}g\right|
 \leq
 \lambda(X)\norm{f_n-g}_{L^\infty}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f_n-g$ vanishes almost everywhere outside $X$. Therefore
 $$
 \begin{aligned}
@@ -58,24 +70,35 @@ $$
 &\leq\lambda(X)\norm{f_n-g}_{L^\infty}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{\int_{\mathbb R^d}f_n\longrightarrow\int_{\mathbb R^d}g}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 $$
 \norm{f_n-g}_{L^\infty}\longrightarrow0.
 $$
 Multiplying by the finite constant $\lambda(X)$ and applying the estimate from step <1>2 gives the desired convergence.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

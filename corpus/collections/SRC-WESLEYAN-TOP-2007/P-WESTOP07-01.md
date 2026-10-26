@@ -15,8 +15,11 @@ audit:
 2. Prove that $\mathbb R^2$ is not homeomorphic to $\mathbb R^n$ for any $n>2$.
 :::
 
-::: {.solution}
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 $$
 n>1,
 $$
@@ -26,7 +29,9 @@ $$
 $$
 is path-connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 x,y\in\mathbb R^n\setminus\{0\}.
@@ -74,15 +79,22 @@ $$
 y
 $$
 inside the punctured space.
+
 :::
 
-<1>2. The space
+:::
+
+::: pf-step
+
+The space
 $$
 \mathbb R\setminus\{0\}
 $$
 is disconnected.
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \mathbb R\setminus\{0\}
@@ -92,9 +104,14 @@ $$
 (0,\infty),
 $$
 a union of two nonempty disjoint open subsets in the subspace topology.
+
 :::
 
-<1>3. For
+:::
+
+::: pf-step
+
+For
 $$
 n>1,
 $$
@@ -106,7 +123,9 @@ $$
 \mathbb R^n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 h:\mathbb R\to\mathbb R^n
@@ -134,9 +153,14 @@ $$
 \mathbb R^n\setminus\{0\}.
 $$
 But step <1>2 says the first punctured space is disconnected, while step <1>1 says the second is path-connected. Contradiction.
+
 :::
 
-<1>4. For every
+:::
+
+::: pf-step
+
+For every
 $$
 m\ge2,
 $$
@@ -149,7 +173,9 @@ $$
 S^{m-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 $$
 H:
@@ -196,16 +222,23 @@ $$
 t.
 $$
 The scalar factor is always positive, so the homotopy never passes through the origin. Thus this is a strong deformation retraction.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \pi_1(\mathbb R^2\setminus\{0\})
 \cong
 \mathbb Z.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 \mathbb R^2\setminus\{0\}
@@ -216,9 +249,14 @@ Homotopy equivalent spaces have isomorphic fundamental groups, and
 $$
 \pi_1(S^1)\cong\mathbb Z.
 $$
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 $$
 n>2,
 $$
@@ -228,7 +266,9 @@ $$
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 \mathbb R^n\setminus\{0\}
@@ -244,9 +284,14 @@ $$
 S^{n-1}
 $$
 is simply connected. Therefore the punctured Euclidean space has trivial fundamental group.
+
 :::
 
-<1>7. For every
+:::
+
+::: pf-step
+
+For every
 $$
 n>2,
 $$
@@ -258,7 +303,9 @@ $$
 \mathbb R^n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 h:\mathbb R^2\to\mathbb R^n
@@ -287,11 +334,15 @@ $$
 \not\cong
 0.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (1), and step <1>7 proves part (2).
+
 :::
+
 :::

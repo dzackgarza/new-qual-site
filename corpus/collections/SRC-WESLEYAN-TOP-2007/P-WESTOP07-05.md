@@ -18,8 +18,11 @@ Give an intrinsic condition on a topological space $X$ characterizing each of th
 3. $X$ is homeomorphic to an arbitrary subspace of a simply connected space, where simply connected means path-connected with trivial fundamental group.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \boxed{
 X\text{ is homeomorphic to an open subspace of a compact Hausdorff space}
@@ -27,7 +30,9 @@ X\text{ is homeomorphic to an open subspace of a compact Hausdorff space}
 X\text{ is locally compact Hausdorff}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose first that
 $$
 X
@@ -113,11 +118,18 @@ $$
 X
 $$
 is homeomorphic to an open subspace of a compact Hausdorff space.
+
 :::
 
-<1>2. A space is called Tychonoff if it is completely regular and Hausdorff.
+:::
 
-::: {.proof}
+::: pf-step
+
+A space is called Tychonoff if it is completely regular and Hausdorff.
+
+
+::: pf-proof
+
 Complete regularity means that whenever
 $$
 F\subseteq X
@@ -139,9 +151,14 @@ $$
 f(F)=\{1\}.
 $$
 This, together with the Hausdorff condition, is the standard intrinsic definition of a Tychonoff space.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 X\text{ is homeomorphic to a subspace of a compact Hausdorff space}
@@ -149,7 +166,9 @@ X\text{ is homeomorphic to a subspace of a compact Hausdorff space}
 X\text{ is Tychonoff}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every compact Hausdorff space is Tychonoff, and the Tychonoff property is hereditary to subspaces. Hence every subspace of a compact Hausdorff space is Tychonoff.
 
 Conversely, let
@@ -201,11 +220,18 @@ $$
 X
 $$
 embeds as a subspace of a compact Hausdorff space.
+
 :::
 
-<1>4. Every topological space is homeomorphic to a subspace of a contractible space.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every topological space is homeomorphic to a subspace of a contractible space.
+
+
+::: pf-proof
+
 For a nonempty space
 $$
 X,
@@ -287,11 +313,18 @@ $$
 s=1
 $$
 every point is sent to the apex. The formula is well-defined on the collapsed top.
+
 :::
 
-<1>5. Every topological space is homeomorphic to a subspace of a simply connected space.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every topological space is homeomorphic to a subspace of a simply connected space.
+
+
+::: pf-proof
+
 If
 $$
 X
@@ -307,9 +340,14 @@ $$
 X=\varnothing,
 $$
 it embeds as the empty subspace of any simply connected space, for example a point.
+
 :::
 
-<1>6. Thus the three intrinsic characterizations are
+:::
+
+::: pf-step
+
+Thus the three intrinsic characterizations are
 $$
 \boxed{
 \begin{array}{c|c}
@@ -332,13 +370,19 @@ $$
 \end{array}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are steps <1>1, <1>3, and <1>5, respectively.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the requested intrinsic characterizations.
+
 :::
+
 :::

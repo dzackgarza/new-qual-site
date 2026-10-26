@@ -24,10 +24,13 @@ Prove
 \]
 :::
 
-::: {.solution}
 Assume $f$ and $g$ are measurable and positive.
 
-<1>1. If either
+::: pf
+
+::: pf-step
+
+If either
 \[
 \int_\Omega f\,d\mu
 \]
@@ -37,7 +40,9 @@ or
 \]
 is infinite, then the desired inequality is immediate.
 
-::: {.proof}
+
+::: pf-proof
+
 The other integral is nonnegative, so the product is
 \[
 +\infty
@@ -49,18 +54,30 @@ it vanishes almost everywhere, which is impossible here because
 fg\ge1.
 \]
 Thus the product is infinite and hence at least $1$.
+
 :::
 
-<1>2. Hence it suffices to consider the case
+:::
+
+::: pf-step
+
+Hence it suffices to consider the case
 \[
 f,g\in L^1(\mu).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the complementary case to step <1>1.
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 \[
 fg\ge1,
 \]
@@ -69,14 +86,21 @@ one has
 \sqrt{fg}\ge1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The square-root function is increasing on
 \[
 [0,\infty).
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_\Omega \sqrt{fg}\,d\mu
 \ge
@@ -87,14 +111,21 @@ The square-root function is increasing on
 1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the pointwise inequality from step <1>3 and use
 \[
 \mu(\Omega)=1.
 \]
+
 :::
 
-<1>5. By the Cauchy--Schwarz inequality,
+:::
+
+::: pf-step
+
+By the Cauchy--Schwarz inequality,
 \[
 \left(
 \int_\Omega \sqrt{fg}\,d\mu
@@ -108,7 +139,9 @@ Integrate the pointwise inequality from step <1>3 and use
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Cauchy--Schwarz to the functions
 \[
 \sqrt f
@@ -142,9 +175,14 @@ Thus
 \int_\Omega g\,d\mu
 \right).
 \]
+
 :::
 
-<1>6. Combining steps <1>4--<1>5 gives
+:::
+
+::: pf-step
+
+Combining steps <1>4--<1>5 gives
 \[
 \boxed{
 \left(
@@ -158,7 +196,9 @@ Thus
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives
 \[
 1
@@ -166,11 +206,15 @@ Step <1>4 gives
 \int_\Omega\sqrt{fg}\,d\mu.
 \]
 Squaring and applying step <1>5 yields the conclusion.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required inequality.
+
 :::
+
 :::

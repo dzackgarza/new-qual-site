@@ -21,10 +21,15 @@ Prove or disprove each statement:
    is surjective.
 :::
 
-::: {.solution}
-<1>1. Statement (1) is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement (1) is false.
+
+
+::: pf-proof
+
 Take
 \[
 X=D^2
@@ -47,11 +52,18 @@ Thus
 A\subset X,
 \]
 with $X$ simply connected, while $A$ is not simply connected.
+
 :::
 
-<1>2. Statement (2) is true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (2) is true.
+
+
+::: pf-proof
+
 Let
 \[
 r:X\to A
@@ -107,9 +119,14 @@ Therefore
 r_*:\pi_1(X,a_0)\twoheadrightarrow\pi_1(A,a_0).
 }
 \]
+
 :::
 
-<1>3. The final answers are
+:::
+
+::: pf-step
+
+The final answers are
 \[
 \boxed{
 \begin{array}{c|cc}
@@ -120,14 +137,20 @@ r_*:\pi_1(X,a_0)\twoheadrightarrow\pi_1(A,a_0).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a counterexample to statement (1), and step <1>2 proves
 statement (2).
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 records the complete answer.
+
 :::
+
 :::

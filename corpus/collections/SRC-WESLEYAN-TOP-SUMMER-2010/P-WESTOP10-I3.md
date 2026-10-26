@@ -15,8 +15,11 @@ audit:
 2. Prove that the continuous image of a compact metric space in a Hausdorff space is metrizable.
 :::
 
-::: {.solution}
-<1>1. **Urysohn Metrization Theorem.**
+::: pf
+
+::: pf-step
+
+**Urysohn Metrization Theorem.**
 
 Every
 \[
@@ -24,13 +27,20 @@ T_1
 \]
 regular second-countable space is metrizable.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, under the common convention that “regular” already includes
 the $T_1$ condition, every regular second-countable space is metrizable.
 This is the theorem statement.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 X
 \]
@@ -53,7 +63,9 @@ Y.
 \]
 Then $K$ is compact and Hausdorff.
 
-::: {.proof}
+
+::: pf-proof
+
 The continuous image of a compact space is compact, so
 \[
 K
@@ -62,15 +74,22 @@ is compact.
 
 Since $Y$ is Hausdorff, every subspace of $Y$ is Hausdorff.
 Therefore $K$ is Hausdorff.
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 \[
 f:X\to K
 \]
 is a closed surjection.
 
-::: {.proof}
+
+::: pf-proof
+
 It is surjective by definition of
 \[
 K=f(X).
@@ -89,16 +108,23 @@ f(C)
 is compact in $K$.
 Since $K$ is Hausdorff, compact subsets are closed.
 Hence $f$ is closed.
+
 :::
 
-<1>4. The compact metric space $X$ has a countable basis
+:::
+
+::: pf-step
+
+The compact metric space $X$ has a countable basis
 \[
 \mathcal B
 =
 \{B_1,B_2,\dots\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every compact metric space is separable.
 Choose a countable dense set
 \[
@@ -106,9 +132,14 @@ Choose a countable dense set
 \]
 and take all open balls with centers among the $x_j$ and rational radii.
 These form a countable basis.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \mathcal U
 \]
@@ -122,7 +153,9 @@ Then
 \]
 is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 The set of finite subsets of a countable set is countable.
 Each finite subset of
 \[
@@ -134,9 +167,14 @@ Thus
 \mathcal U
 \]
 is countable.
+
 :::
 
-<1>6. For
+:::
+
+::: pf-step
+
+For
 \[
 U\in\mathcal U,
 \]
@@ -152,7 +190,9 @@ V_U
 \]
 is open in $K$.
 
-::: {.proof}
+
+::: pf-proof
+
 The set
 \[
 X\setminus U
@@ -168,9 +208,14 @@ Therefore its complement
 V_U
 \]
 is open.
+
 :::
 
-<1>7. A point
+:::
+
+::: pf-step
+
+A point
 \[
 y\in K
 \]
@@ -181,7 +226,9 @@ f^{-1}(y)
 U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 y\in V_U
@@ -203,15 +250,22 @@ Equivalently, every point of the fiber
 f^{-1}(y)
 \]
 lies in $U$.
+
 :::
 
-<1>8. The family
+:::
+
+::: pf-step
+
+The family
 \[
 \{V_U:U\in\mathcal U\}
 \]
 is a basis for the topology of $K$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 O\subseteq K
@@ -295,11 +349,18 @@ Thus
 y\in V_U\subseteq O.
 \]
 Hence the family is a basis.
+
 :::
 
-<1>9. The space $K$ is second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $K$ is second countable.
+
+
+::: pf-proof
+
 By step <1>5,
 \[
 \mathcal U
@@ -310,17 +371,29 @@ Therefore the basis
 \{V_U:U\in\mathcal U\}
 \]
 from step <1>8 is countable.
+
 :::
 
-<1>10. The space $K$ is regular.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $K$ is regular.
+
+
+::: pf-proof
+
 Every compact Hausdorff space is normal.
 In particular it is regular.
 By step <1>2, $K$ is compact Hausdorff.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 K=f(X)
@@ -328,18 +401,24 @@ K=f(X)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $K$ is Hausdorff, hence $T_1$.
 By step <1>10, it is regular.
 By step <1>9, it is second countable.
 Apply the Urysohn Metrization Theorem from step <1>1.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states the requested theorem, and steps <1>2--<1>11 prove that
 the continuous image of a compact metric space in a Hausdorff space is
 metrizable.
+
 :::
+
 :::

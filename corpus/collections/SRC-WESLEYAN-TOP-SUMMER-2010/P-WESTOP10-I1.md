@@ -18,7 +18,6 @@ Let $I=[0,1]$. Compare the following three topologies on $I\times I$:
 3. the topology inherited by $I\times I$ as a subspace of $\mathbb R\times\mathbb R$ equipped with the dictionary-order topology.
 :::
 
-::: {.solution}
 Write
 \[
 \tau_{mathrm{prod}}
@@ -53,14 +52,20 @@ x=x'
 y<y'.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \tau_{mathrm{ord}}
 \subseteq
 \tau_{mathrm{sub}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A basis for the intrinsic order topology consists of open order intervals
 \[
 (a,b)_{I\times I}
@@ -113,9 +118,14 @@ is obtained by intersecting with an ambient interval ending at
 (1,2).
 \]
 Hence every intrinsic-order basis set is subspace-open.
+
 :::
 
-<1>2. The inclusion in step <1>1 is strict:
+:::
+
+::: pf-step
+
+The inclusion in step <1>1 is strict:
 \[
 \boxed{
 \tau_{mathrm{ord}}
@@ -124,7 +134,9 @@ Hence every intrinsic-order basis set is subspace-open.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x_0\in(0,1)
@@ -164,16 +176,23 @@ Hence every intrinsic-order neighborhood of $p$ contains points with first
 coordinate strictly less than $x_0$.
 Such points are not in $U$.
 Therefore $p$ has no intrinsic-order neighborhood contained in $U$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \tau_{mathrm{prod}}
 \subseteq
 \tau_{mathrm{sub}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 O
@@ -239,9 +258,14 @@ Hence
 \[
 O\in\tau_{mathrm{sub}}.
 \]
+
 :::
 
-<1>4. The inclusion in step <1>3 is strict:
+:::
+
+::: pf-step
+
+The inclusion in step <1>3 is strict:
 \[
 \boxed{
 \tau_{mathrm{prod}}
@@ -250,7 +274,9 @@ O\in\tau_{mathrm{sub}}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set
 \[
 U
@@ -272,12 +298,19 @@ Indeed, any product neighborhood of
 \]
 contains points whose first coordinate differs from $x_0$, while $U$
 contains only points with first coordinate exactly $x_0$.
+
 :::
 
-<1>5. The intrinsic lexicographic order topology is not contained in the
+:::
+
+::: pf-step
+
+The intrinsic lexicographic order topology is not contained in the
 product topology.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x_0\in(0,1)
@@ -315,12 +348,19 @@ Hence
 \[
 V\notin\tau_{mathrm{prod}}.
 \]
+
 :::
 
-<1>6. The product topology is not contained in the intrinsic order
+:::
+
+::: pf-step
+
+The product topology is not contained in the intrinsic order
 topology.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x_0\in(0,1)
@@ -389,9 +429,14 @@ W\in\tau_{mathrm{prod}}
 \setminus
 \tau_{mathrm{ord}}.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \tau_{mathrm{prod}}
 \quad\text{and}\quad
@@ -399,12 +444,19 @@ W\in\tau_{mathrm{prod}}
 \]
 are incomparable.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives an intrinsic-order-open set that is not product-open.
 Step <1>6 gives a product-open set that is not intrinsic-order-open.
+
 :::
 
-<1>8. The complete comparison is
+:::
+
+::: pf-step
+
+The complete comparison is
 \[
 \boxed{
 \tau_{mathrm{prod}}
@@ -426,13 +478,19 @@ while
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2, <1>4, and <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives the complete relation among the three topologies.
+
 :::
+
 :::

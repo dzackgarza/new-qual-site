@@ -17,10 +17,15 @@ Prove or disprove each statement:
 2. The product of two metrizable Lindelöf spaces is Lindelöf.
 :::
 
-::: {.solution}
-<1>1. Statement (1) is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement (1) is false.
+
+
+::: pf-proof
+
 Use the Sorgenfrey line
 $$
 \mathbb S,
@@ -41,15 +46,22 @@ $$
 \mathbb S\times\mathbb S
 $$
 is not.
+
 :::
 
-<1>2. The Sorgenfrey line
+:::
+
+::: pf-step
+
+The Sorgenfrey line
 $$
 \mathbb S
 $$
 is Lindelöf.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal U
@@ -168,9 +180,14 @@ that contained it gives a countable subcover of
 $$
 \mathcal U.
 $$
+
 :::
 
-<1>3. The anti-diagonal
+:::
+
+::: pf-step
+
+The anti-diagonal
 $$
 A
 \coloneqq
@@ -184,7 +201,9 @@ $$
 \mathbb S\times\mathbb S.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For discreteness, fix
 $$
 x\in\mathbb R.
@@ -252,15 +271,22 @@ $$
 A
 $$
 is open.
+
 :::
 
-<1>4. The product
+:::
+
+::: pf-step
+
+The product
 $$
 \mathbb S\times\mathbb S
 $$
 is not Lindelöf.
 
-::: {.proof}
+
+::: pf-proof
+
 The closed subspace
 $$
 A
@@ -303,11 +329,18 @@ $$
 \mathbb S\times\mathbb S
 $$
 cannot be Lindelöf.
+
 :::
 
-<1>5. Every metrizable Lindelöf space is second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every metrizable Lindelöf space is second countable.
+
+
+::: pf-proof
+
 Let
 $$
 (X,d)
@@ -402,11 +435,18 @@ $$
 \mathcal B
 $$
 is a countable base.
+
 :::
 
-<1>6. The product of two second-countable spaces is second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The product of two second-countable spaces is second countable.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal B_X
@@ -435,11 +475,18 @@ is a countable base for the product topology on
 $$
 X\times Y.
 $$
+
 :::
 
-<1>7. Every second-countable space is Lindelöf.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every second-countable space is Lindelöf.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal B
@@ -495,9 +542,14 @@ $$
 x.
 $$
 Thus the chosen family is a countable subcover.
+
 :::
 
-<1>8. Statement (2) is true:
+:::
+
+::: pf-step
+
+Statement (2) is true:
 $$
 \boxed{
 X,Y\text{ metrizable and Lindelöf}
@@ -505,7 +557,9 @@ X,Y\text{ metrizable and Lindelöf}
 X\times Y\text{ Lindelöf}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 X
@@ -519,11 +573,15 @@ $$
 X\times Y
 $$
 second countable, and step <1>7 makes it Lindelöf.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 disprove statement (1), and steps <1>5--<1>8 prove statement (2).
+
 :::
+
 :::

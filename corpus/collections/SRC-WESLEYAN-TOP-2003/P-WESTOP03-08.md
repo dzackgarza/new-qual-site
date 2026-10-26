@@ -18,10 +18,13 @@ X\to S^1
 is homotopic to a constant map.
 :::
 
-::: {.solution}
 The assertion is true under the standard meaning of simply connected: $X$ is path connected and $\pi_1(X)=0$.
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 p:\mathbb R\to S^1,
 \qquad
@@ -29,20 +32,34 @@ p(t)=e^{2\pi it},
 \]
 be the universal covering map, and let $f:X\to S^1$ be continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 The exponential map displayed above is the standard universal cover of the circle.
+
 :::
 
-<1>2. Fix $x_0\in X$ and choose $t_0\in\mathbb R$ such that
+:::
+
+::: pf-step
+
+Fix $x_0\in X$ and choose $t_0\in\mathbb R$ such that
 \[
 p(t_0)=f(x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The covering map $p$ is surjective, so such a lift of the basepoint value exists.
+
 :::
 
-<1>3. The map $f$ admits a lift
+:::
+
+::: pf-step
+
+The map $f$ admits a lift
 \[
 \widetilde f:X\to\mathbb R
 \]
@@ -53,7 +70,9 @@ with
 p\circ\widetilde f=f.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The lifting criterion for the covering $p:\mathbb R\to S^1$ says that a based map $f:(X,x_0)\to(S^1,f(x_0))$ lifts precisely when
 \[
 f_*\pi_1(X,x_0)
@@ -65,26 +84,40 @@ Since $X$ is simply connected,
 \pi_1(X,x_0)=0.
 \]
 Also $\mathbb R$ is simply connected, so the right side is zero. Thus the inclusion holds and the lift exists.
+
 :::
 
-<1>4. Since $\mathbb R$ is contractible, $\widetilde f$ is homotopic to the constant map with value $t_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Since $\mathbb R$ is contractible, $\widetilde f$ is homotopic to the constant map with value $t_0$.
+
+
+::: pf-proof
+
 An explicit homotopy is
 \[
 \widetilde H(x,s)=(1-s)\widetilde f(x)+st_0,
 \qquad 0\leq s\leq1.
 \]
 At $s=0$ this is $\widetilde f$, and at $s=1$ it is the constant map $t_0$.
+
 :::
 
-<1>5. Composing this homotopy with $p$ gives a homotopy
+:::
+
+::: pf-step
+
+Composing this homotopy with $p$ gives a homotopy
 \[
 H=p\circ\widetilde H:X\times I\to S^1
 \]
 from $f$ to the constant map with value $f(x_0)$.
 
-::: {.proof}
+
+::: pf-proof
+
 At $s=0$,
 \[
 H(x,0)=p(\widetilde f(x))=f(x).
@@ -94,20 +127,31 @@ At $s=1$,
 H(x,1)=p(t_0)=f(x_0),
 \]
 independent of $x$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\text{every continuous map }X\to S^1\text{ is nullhomotopic}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 explicitly constructs a homotopy from an arbitrary $f$ to a constant map.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves the assertion.
+
 :::
+
 :::

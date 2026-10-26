@@ -21,7 +21,6 @@ Let $e_{x_0}$ be the constant path at $x_0=f(0)$. Construct an explicit path hom
 \]
 :::
 
-::: {.solution}
 Write
 \[
 g=f*\overline f.
@@ -36,7 +35,11 @@ f(2-2s),&\frac12\le s\le1.
 \end{cases}
 \]
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 H:I\times I\to X
 \]
@@ -54,7 +57,9 @@ f\bigl(2(1-t)(1-s)\bigr),
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At homotopy time $t$, the number
 \[
 1-t
@@ -69,14 +74,21 @@ to
 f(1-t),
 \]
 and the second half runs back along the same segment.
+
 :::
 
-<1>2. The two formulas in step <1>1 agree along
+:::
+
+::: pf-step
+
+The two formulas in step <1>1 agree along
 \[
 s=\frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the first formula,
 \[
 H\left(\frac12,t\right)
@@ -101,11 +113,18 @@ f\left(
 f(1-t).
 \]
 Thus the two definitions coincide on the overlap.
+
 :::
 
-<1>3. The map $H$ is continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $H$ is continuous.
+
+
+::: pf-proof
+
 Let
 \[
 A
@@ -156,9 +175,14 @@ The pasting lemma therefore gives continuity of $H$ on all of
 \[
 I\times I.
 \]
+
 :::
 
-<1>4. At
+:::
+
+::: pf-step
+
+At
 \[
 t=0,
 \]
@@ -169,7 +193,9 @@ H(s,0)
 (f*\overline f)(s).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 0\le s\le\frac12,
@@ -197,9 +223,14 @@ These are exactly the two defining pieces of
 \[
 f*\overline f.
 \]
+
 :::
 
-<1>5. At
+:::
+
+::: pf-step
+
+At
 \[
 t=1,
 \]
@@ -208,7 +239,9 @@ the homotopy is the constant loop at
 x_0=f(0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $s\in I$,
 \[
 1-t=0
@@ -225,9 +258,14 @@ Thus
 \[
 H(-,1)=e_{x_0}.
 \]
+
 :::
 
-<1>6. The endpoints remain fixed throughout the homotopy:
+:::
+
+::: pf-step
+
+The endpoints remain fixed throughout the homotopy:
 \[
 H(0,t)
 =
@@ -238,7 +276,9 @@ x_0
 (t\in I).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At $s=0$,
 \[
 H(0,t)
@@ -256,9 +296,14 @@ f(0)
 x_0.
 \]
 Therefore $H$ is a path homotopy relative to the endpoints.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 f*\overline f
 \simeq
@@ -266,7 +311,9 @@ e_{x_0}
 \]
 rel endpoints.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>6 show that $H$ is a continuous homotopy from
 \[
 f*\overline f
@@ -276,9 +323,14 @@ to
 e_{x_0}
 \]
 that fixes both endpoints for all homotopy times.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 [f]*[\overline f]
@@ -289,7 +341,9 @@ that fixes both endpoints for all homotopy times.
 in the fundamental groupoid, and in particular in the fundamental group
 when $f$ is regarded as a path from $x_0$ to its endpoint and then retraced.
 
-::: {.proof}
+
+::: pf-proof
+
 Path-homotopic paths rel endpoints define the same homotopy class.
 Also,
 \[
@@ -298,11 +352,15 @@ Also,
 [f*\overline f].
 \]
 Apply step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the desired identity.
+
 :::
+
 :::

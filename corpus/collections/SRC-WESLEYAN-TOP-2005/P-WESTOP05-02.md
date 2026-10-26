@@ -18,20 +18,30 @@ Prove or disprove each statement:
 3. The product of an arbitrary family of second-countable spaces is second countable.
 :::
 
-::: {.solution}
 ## Statement 1
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \mathcal B=\{B_1,B_2,\dots\}
 \]
 be a countable basis for \(X\).
 
-::: {.proof}
+
+::: pf-proof
+
 Such a basis exists because \(X\) is second countable.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 \mathcal B_Y
@@ -39,14 +49,23 @@ Such a basis exists because \(X\) is second countable.
 \{B_n\cap Y:n\in\mathbb N\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a countable family because it is indexed by \(\mathbb N\).
+
 :::
 
-<1>3. The family \(\mathcal B_Y\) is a basis for the subspace topology on
+:::
+
+::: pf-step
+
+The family \(\mathcal B_Y\) is a basis for the subspace topology on
 \(Y\).
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(U\subseteq Y\) be open in the subspace topology and let \(y\in U\).
 Then
 \[
@@ -61,39 +80,34 @@ Hence
 \[
 y\in B_n\cap Y\subseteq V\cap Y=U.
 \]
+
 :::
 
-<1>4. Therefore statement \(1\) is
+:::
+
+::: pf-step
+
+Therefore statement \(1\) is
 \[
 \boxed{\text{true}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>3 give a countable basis for \(Y\).
+
 :::
 
-## Statement 2
+:::
 
-We construct a counterexample.
+::: pf-step
 
-Let
-\[
-Y
-=
-(\mathbb N\times\mathbb N)\cup\{\infty\}.
-\]
-Declare every point of \(\mathbb N\times\mathbb N\) isolated, and declare
-that a set \(U\) containing \(\infty\) is open if and only if for every
-\(m\in\mathbb N\), there exists \(N_m\) such that
-\[
-(m,n)\in U
-\qquad
-(n\ge N_m).
-\]
+This defines a topology on \(Y\).
 
-<1>5. This defines a topology on \(Y\).
 
-::: {.proof}
+::: pf-proof
+
 The empty set is open, and \(Y\) satisfies the neighborhood condition.
 
 Arbitrary unions of open sets are open. If the union contains \(\infty\),
@@ -107,11 +121,18 @@ tail beginning at
 \max(N_m^U,N_m^V).
 \]
 All points away from \(\infty\) are isolated.
+
 :::
 
-<1>6. The space \(Y\) is not first countable at \(\infty\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The space \(Y\) is not first countable at \(\infty\).
+
+
+::: pf-proof
+
 Suppose
 \[
 U_1,U_2,\dots
@@ -142,76 +163,107 @@ U_k\nsubseteq V
 \]
 for every \(k\). This contradicts the assumption that the \(U_k\) form a
 local base at \(\infty\).
+
 :::
 
-<1>7. Consequently, \(Y\) is not second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Consequently, \(Y\) is not second countable.
+
+
+::: pf-proof
+
 Every second-countable space is first countable: at a point \(y\), the basis
 elements containing \(y\) form a countable local base. Step <1>6 shows that
 this fails at \(\infty\).
+
 :::
 
-<1>8. Let
+:::
+
+::: pf-step
+
+Let
 \[
 X
 \]
 be the same underlying set as \(Y\), but with the discrete topology.
 
-::: {.proof}
+
+::: pf-proof
+
 The set \(Y\) is countable, so its discrete topology has the countable basis
 of all singletons.
+
 :::
 
-<1>9. Thus \(X\) is second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus \(X\) is second countable.
+
+
+::: pf-proof
+
 The family
 \[
 \{\{x\}:x\in X\}
 \]
 is a countable basis.
+
 :::
 
-<1>10. The identity map
+:::
+
+::: pf-step
+
+The identity map
 \[
 f:X\to Y
 \]
 is continuous and onto.
 
-::: {.proof}
+
+::: pf-proof
+
 It is onto because it is the identity on the underlying set. For every open
 set \(U\subseteq Y\),
 \[
 f^{-1}(U)=U,
 \]
 which is open in the discrete space \(X\).
+
 :::
 
-<1>11. Therefore statement \(2\) is
+:::
+
+::: pf-step
+
+Therefore statement \(2\) is
 \[
 \boxed{\text{false}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>9--<1>10 give a continuous surjection from a second-countable space
 onto \(Y\), while step <1>7 says \(Y\) is not second countable.
+
 :::
 
-## Statement 3
+:::
 
-Let \(I\) be an uncountable set, and for each \(i\in I\) let
-\[
-X_i=\{0,1\}
-\]
-with the discrete topology. Set
-\[
-X=\prod_{i\in I}X_i.
-\]
+::: pf-step
 
-<1>12. Each factor \(X_i\) is second countable.
+Each factor \(X_i\) is second countable.
 
-::: {.proof}
+
+::: pf-proof
+
 The two singletons
 \[
 \{0\},
@@ -219,9 +271,14 @@ The two singletons
 \{1\}
 \]
 form a finite basis.
+
 :::
 
-<1>13. Fix a point
+:::
+
+::: pf-step
+
+Fix a point
 \[
 x=(x_i)_{i\in I}\in X.
 \]
@@ -231,11 +288,18 @@ B_1,B_2,\dots
 \]
 were a countable local base at \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 We will derive a contradiction.
+
 :::
 
-<1>14. For each \(n\), choose a basic product neighborhood
+:::
+
+::: pf-step
+
+For each \(n\), choose a basic product neighborhood
 \[
 C_n
 \]
@@ -244,41 +308,69 @@ such that
 x\in C_n\subseteq B_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Basic product neighborhoods form a basis for the product topology.
+
 :::
 
-<1>15. Each \(C_n\) restricts only finitely many coordinates; let
+:::
+
+::: pf-step
+
+Each \(C_n\) restricts only finitely many coordinates; let
 \[
 F_n\subseteq I
 \]
 be that finite set.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of the product topology, a basic open set differs from the
 whole factor in only finitely many coordinates.
+
 :::
 
-<1>16. The set
+:::
+
+::: pf-step
+
+The set
 \[
 F=\bigcup_{n=1}^{\infty}F_n
 \]
 is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 It is a countable union of finite sets.
+
 :::
 
-<1>17. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 j\in I-F.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The index set \(I\) is uncountable, while \(F\) is countable.
+
 :::
 
-<1>18. Define the open neighborhood
+:::
+
+::: pf-step
+
+Define the open neighborhood
 \[
 \boxed{
 U
@@ -287,17 +379,26 @@ U
 \]
 of \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the inverse image of the open singleton \(\{x_j\}\subseteq X_j\)
 under the coordinate projection
 \[
 \pi_j:X\to X_j.
 \]
+
 :::
 
-<1>19. No \(C_n\) is contained in \(U\).
+:::
 
-::: {.proof}
+::: pf-step
+
+No \(C_n\) is contained in \(U\).
+
+
+::: pf-proof
+
 Since
 \[
 j\notin F_n,
@@ -309,11 +410,18 @@ coordinates restricted by \(C_n\) but satisfying
 y_j\ne x_j.
 \]
 Such a point lies in \(C_n-U\).
+
 :::
 
-<1>20. No \(B_n\) is contained in \(U\).
+:::
 
-::: {.proof}
+::: pf-step
+
+No \(B_n\) is contained in \(U\).
+
+
+::: pf-proof
+
 If
 \[
 B_n\subseteq U,
@@ -323,42 +431,67 @@ then
 C_n\subseteq B_n\subseteq U,
 \]
 contradicting step <1>19.
+
 :::
 
-<1>21. This contradicts the assumption that \((B_n)\) is a local base at
+:::
+
+::: pf-step
+
+This contradicts the assumption that \((B_n)\) is a local base at
 \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(U\) is a neighborhood of \(x\), some local-base element \(B_n\)
 would have to satisfy
 \[
 x\in B_n\subseteq U.
 \]
 Step <1>20 says none does.
+
 :::
 
-<1>22. Hence \(X\) is not first countable, and therefore is not second
+:::
+
+::: pf-step
+
+Hence \(X\) is not first countable, and therefore is not second
 countable.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>13--<1>21 show there is no countable local base at \(x\). A
 second-countable space is first countable.
+
 :::
 
-<1>23. Therefore statement \(3\) is
+:::
+
+::: pf-step
+
+Therefore statement \(3\) is
 \[
 \boxed{\text{false}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The family \((X_i)_{i\in I}\) consists entirely of second-countable spaces
 by step <1>12, but their product is not second countable by step <1>22.
+
 :::
 
-<1>24. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Statement \(1\) is proved true in step <1>4, while statements \(2\) and
 \(3\) are disproved in steps <1>11 and <1>23.
+
 :::
+
 :::

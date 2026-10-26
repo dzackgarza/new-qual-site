@@ -17,7 +17,6 @@ Let $X$ be the Klein bottle.
 2. Using that structure, compute the simplicial cohomology groups of $X$ with coefficients in $\mathbb Z/2\mathbb Z$.
 :::
 
-::: {.solution}
 Write
 \[
 \mathbb F_2
@@ -25,7 +24,11 @@ Write
 \mathbb Z/2\mathbb Z.
 \]
 
-<1>1. Present the Klein bottle as a square with edge word
+::: pf
+
+::: pf-step
+
+Present the Klein bottle as a square with edge word
 \[
 aba^{-1}b.
 \]
@@ -48,7 +51,9 @@ Then the quotient has:
   \sigma_1,\sigma_2.
   \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take the square with vertices
 \[
 v_0,v_1,v_2,v_3
@@ -78,9 +83,14 @@ This gives the desired
 \Delta\text{-complex}
 \]
 structure.
+
 :::
 
-<1>2. With coefficients in
+:::
+
+::: pf-step
+
+With coefficients in
 \[
 \mathbb F_2,
 \]
@@ -99,20 +109,29 @@ C_0
 \mathbb F_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are exactly two $2$-simplices, three $1$-simplices, and one vertex.
 The simplicial chain group over a field is the free vector space on the
 simplices in that degree.
+
 :::
 
-<1>3. The boundary
+:::
+
+::: pf-step
+
+The boundary
 \[
 \partial_1:
 C_1\to C_0
 \]
 is zero.
 
-::: {.proof}
+
+::: pf-proof
+
 Every edge begins and ends at the same quotient vertex $v$.
 Thus for an oriented edge $e$,
 \[
@@ -127,9 +146,14 @@ Over
 \mathbb F_2
 \]
 the same conclusion holds.
+
 :::
 
-<1>4. Over
+:::
+
+::: pf-step
+
+Over
 \[
 \mathbb F_2,
 \]
@@ -146,7 +170,9 @@ a+b+c.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each triangle has three sides:
 one copy of the diagonal $c$, one side identified with $a$, and one side
 identified with $b$.
@@ -162,9 +188,14 @@ Thus each boundary is the sum
 \[
 a+b+c.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \operatorname{rank}_{\mathbb F_2}
 \partial_2
@@ -172,7 +203,9 @@ a+b+c.
 1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The image of $\partial_2$ is the one-dimensional subspace of
 \[
 \mathbb F_2^3
@@ -182,9 +215,14 @@ spanned by
 a+b+c.
 \]
 This vector is nonzero.
+
 :::
 
-<1>6. The simplicial cochain groups are
+:::
+
+::: pf-step
+
+The simplicial cochain groups are
 \[
 C^0
 \cong
@@ -199,7 +237,9 @@ C^2
 \mathbb F_2^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Over a field,
 \[
 C^n
@@ -209,16 +249,23 @@ C^n
 \]
 so the cochain groups have the same dimensions as the corresponding chain
 groups.
+
 :::
 
-<1>7. The coboundary
+:::
+
+::: pf-step
+
+The coboundary
 \[
 \delta^0:
 C^0\to C^1
 \]
 is zero.
 
-::: {.proof}
+
+::: pf-proof
+
 The cochain differential is dual to the chain differential:
 \[
 \delta^0
@@ -229,9 +276,14 @@ Step <1>3 gives
 \[
 \partial_1=0.
 \]
+
 :::
 
-<1>8. In the dual bases,
+:::
+
+::: pf-step
+
+In the dual bases,
 \[
 \delta^1:
 \mathbb F_2^3
@@ -247,7 +299,9 @@ is
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a $1$-cochain
 \[
 \phi
@@ -282,9 +336,14 @@ for both
 \[
 j=1,2.
 \]
+
 :::
 
-<1>9. The zeroth cohomology group is
+:::
+
+::: pf-step
+
+The zeroth cohomology group is
 \[
 \boxed{
 H^0(X;\mathbb F_2)
@@ -293,7 +352,9 @@ H^0(X;\mathbb F_2)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \delta^0=0,
@@ -307,9 +368,14 @@ C^0
 \cong
 \mathbb F_2.
 \]
+
 :::
 
-<1>10. The first cohomology group is
+:::
+
+::: pf-step
+
+The first cohomology group is
 \[
 \boxed{
 H^1(X;\mathbb F_2)
@@ -318,7 +384,9 @@ H^1(X;\mathbb F_2)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 \[
 \ker\delta^1
@@ -345,9 +413,14 @@ H^1
 \cong
 \mathbb F_2^2.
 \]
+
 :::
 
-<1>11. The second cohomology group is
+:::
+
+::: pf-step
+
+The second cohomology group is
 \[
 \boxed{
 H^2(X;\mathbb F_2)
@@ -356,7 +429,9 @@ H^2(X;\mathbb F_2)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are no $3$-simplices, so
 \[
 \delta^2=0.
@@ -392,11 +467,18 @@ H^2
 \cong
 \mathbb F_2.
 \]
+
 :::
 
-<1>12. All higher cohomology groups vanish.
+:::
 
-::: {.proof}
+::: pf-step
+
+All higher cohomology groups vanish.
+
+
+::: pf-proof
+
 The chosen
 \[
 \Delta\text{-complex}
@@ -410,9 +492,14 @@ for
 \[
 n>2.
 \]
+
 :::
 
-<1>13. The complete answer is
+:::
+
+::: pf-step
+
+The complete answer is
 \[
 \boxed{
 H^n(X;\mathbb Z/2)
@@ -428,13 +515,17 @@ H^n(X;\mathbb Z/2)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>9--<1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the
 \[
 \Delta\text{-complex}
@@ -444,5 +535,7 @@ structure, and step <1>13 gives its simplicial cohomology with
 \mathbb Z/2
 \]
 coefficients.
+
 :::
+
 :::

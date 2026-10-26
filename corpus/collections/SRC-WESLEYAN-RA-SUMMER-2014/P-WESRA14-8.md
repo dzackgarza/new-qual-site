@@ -19,7 +19,6 @@ audit:
 Assuming the Radon–Nikodym theorem for finite measure spaces, prove it for $\sigma$-finite measure spaces.
 :::
 
-::: {.solution}
 Let
 \[
 (X,\mathcal M)
@@ -41,7 +40,11 @@ positive measures with
 \]
 Assume the Radon--Nikodym theorem is known whenever both measures are finite.
 
-<1>1. Choose measurable sets
+::: pf
+
+::: pf-step
+
+Choose measurable sets
 \[
 A_1,A_2,\dots
 \]
@@ -66,7 +69,9 @@ and
 \nu(B_j)<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from
 \[
 \sigma\text{-finiteness}
@@ -80,15 +85,22 @@ and
 \nu,
 \]
 respectively.
+
 :::
 
-<1>2. The countable family
+:::
+
+::: pf-step
+
+The countable family
 \[
 \{A_i\cap B_j:i,j\ge1\}
 \]
 covers $X$, and on each member both measures are finite.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x\in X,
@@ -130,9 +142,14 @@ and
 <
 \infty.
 \]
+
 :::
 
-<1>3. Enumerate the intersections from step <1>2 as
+:::
+
+::: pf-step
+
+Enumerate the intersections from step <1>2 as
 \[
 C_1,C_2,\dots
 \]
@@ -162,7 +179,9 @@ and
 \nu(E_n)<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The disjointification procedure preserves the union.
 Each
 \[
@@ -171,9 +190,14 @@ E_n
 C_n,
 \]
 so finiteness of both restricted measures follows from step <1>2.
+
 :::
 
-<1>4. For each
+:::
+
+::: pf-step
+
+For each
 \[
 n,
 \]
@@ -202,7 +226,9 @@ Then
 \nu_n\ll\mu_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both measures are finite by step <1>3.
 If
 \[
@@ -224,9 +250,14 @@ so
 \[
 \nu_n(F)=0.
 \]
+
 :::
 
-<1>5. By the finite-measure Radon--Nikodym theorem, for every $n$ there is
+:::
+
+::: pf-step
+
+By the finite-measure Radon--Nikodym theorem, for every $n$ there is
 a measurable function
 \[
 f_n:E_n\to[0,\infty]
@@ -242,14 +273,21 @@ for every measurable
 F\subseteq E_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the assumed finite Radon--Nikodym theorem to
 \[
 \nu_n\ll\mu_n.
 \]
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 f:X\to[0,\infty]
 \]
@@ -261,7 +299,9 @@ f(x)=f_n(x)
 \]
 Then $f$ is measurable.
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 E_n
@@ -277,9 +317,14 @@ f_n\mathbf 1_{E_n},
 where each summand is measurable after extending $f_n$ by zero outside
 $E_n$.
 Thus $f$ is measurable.
+
 :::
 
-<1>7. For every measurable
+:::
+
+::: pf-step
+
+For every measurable
 \[
 A\subseteq X,
 \]
@@ -290,16 +335,23 @@ A\subseteq X,
 \nu(A\cap E_n).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 A\cap E_n
 \]
 are pairwise disjoint and their union is $A$.
 Apply countable additivity of $\nu$.
+
 :::
 
-<1>8. For every measurable
+:::
+
+::: pf-step
+
+For every measurable
 \[
 A\subseteq X,
 \]
@@ -311,7 +363,9 @@ A\subseteq X,
 f_n\,d\mu.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the local Radon--Nikodym formula from step <1>5 to each measurable
 subset
 \[
@@ -320,9 +374,14 @@ A\cap E_n
 E_n,
 \]
 then substitute into step <1>7.
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \sum_{n=1}^{\infty}
 \int_{A\cap E_n}
@@ -331,7 +390,9 @@ f_n\,d\mu
 \int_A f\,d\mu.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 g_N
@@ -367,9 +428,14 @@ By the Monotone Convergence Theorem,
 f_n\,d\mu.
 \end{aligned}
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \nu(A)
@@ -382,17 +448,26 @@ for every
 A\in\mathcal M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>8--<1>9.
 Thus $f$ is a Radon--Nikodym derivative of $\nu$ with respect to $\mu$.
+
 :::
 
-<1>11. The derivative is unique
+:::
+
+::: pf-step
+
+The derivative is unique
 \[
 \mu\text{-almost everywhere}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 g
@@ -439,25 +514,36 @@ cover $X$,
 f=g
 \]
 almost everywhere on $X$.
+
 :::
 
-<1>12. Hence the finite-measure Radon--Nikodym theorem implies the
+:::
+
+::: pf-step
+
+Hence the finite-measure Radon--Nikodym theorem implies the
 $\sigma$-finite version.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 proves existence of the density, and step <1>11 proves its
 almost-everywhere uniqueness.
 These are the conclusions of the Radon--Nikodym theorem for
 $\sigma$-finite measures.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 is the desired extension from finite to
 \[
 \sigma\text{-finite}
 \]
 measure spaces.
+
 :::
+
 :::

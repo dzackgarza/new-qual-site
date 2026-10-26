@@ -26,12 +26,15 @@ Then state:
 4. the Tietze Extension Theorem.
 :::
 
-::: {.solution}
 Throughout, the separation axioms below do **not** build the $T_1$ condition
 into the words “regular” or “normal”; whenever $T_1$ is needed, it is stated
 separately.
 
-<1>1. The product topology on
+::: pf
+
+::: pf-step
+
+The product topology on
 \[
 X=\prod_{i\in I}X_i
 \]
@@ -51,7 +54,9 @@ is open and
 \]
 is the coordinate projection.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, a basis consists of the products
 \[
 \prod_{i\in I}U_i
@@ -61,16 +66,23 @@ such that every $U_i$ is open in $X_i$ and
 U_i=X_i
 \]
 for all but finitely many indices.
+
 :::
 
-<1>2. A topological space $X$ is normal if every pair of disjoint closed
+:::
+
+::: pf-step
+
+A topological space $X$ is normal if every pair of disjoint closed
 sets
 \[
 A,B\subseteq X
 \]
 can be separated by disjoint open neighborhoods.
 
-::: {.proof}
+
+::: pf-proof
+
 Explicitly, normality means that whenever
 \[
 A\cap B=\varnothing
@@ -87,12 +99,19 @@ B\subseteq V,
 \qquad
 U\cap V=\varnothing.
 \]
+
 :::
 
-<1>3. A topological space $X$ is regular if every point and disjoint closed
+:::
+
+::: pf-step
+
+A topological space $X$ is regular if every point and disjoint closed
 set can be separated by disjoint open neighborhoods.
 
-::: {.proof}
+
+::: pf-proof
+
 Explicitly, if
 \[
 x\in X,
@@ -113,12 +132,19 @@ x\in U,
 \qquad
 F\subseteq V.
 \]
+
 :::
 
-<1>4. A topological space $X$ is second countable if its topology has a
+:::
+
+::: pf-step
+
+A topological space $X$ is second countable if its topology has a
 countable basis.
 
-::: {.proof}
+
+::: pf-proof
+
 Thus there is a countable family
 \[
 \mathcal B=\{B_1,B_2,\dots\}
@@ -135,9 +161,14 @@ with
 \[
 x\in B_n\subseteq U.
 \]
+
 :::
 
-<1>5. **Tychonoff Product Theorem.**
+:::
+
+::: pf-step
+
+**Tychonoff Product Theorem.**
 
 If each
 \[
@@ -149,12 +180,19 @@ is compact, then
 \]
 is compact in the product topology.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the theorem statement. For arbitrary index sets, this form of
 Tychonoff's theorem is equivalent to the Axiom of Choice.
+
 :::
 
-<1>6. **Urysohn's Lemma.**
+:::
+
+::: pf-step
+
+**Urysohn's Lemma.**
 
 Let $X$ be normal, and let
 \[
@@ -171,13 +209,20 @@ f|_A=0,
 f|_B=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard normal-space separation theorem. Under conventions in
 which “normal” means “normal and $T_1$,” the $T_1$ assumption is already
 implicit; it is not needed for the displayed separation conclusion itself.
+
 :::
 
-<1>7. **Urysohn Metrization Theorem.**
+:::
+
+::: pf-step
+
+**Urysohn Metrization Theorem.**
 
 Every
 \[
@@ -185,12 +230,19 @@ T_1
 \]
 regular second-countable space is metrizable.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, under the convention that “regular” already includes $T_1$,
 every regular second-countable space is metrizable.
+
 :::
 
-<1>8. **Tietze Extension Theorem.**
+:::
+
+::: pf-step
+
+**Tietze Extension Theorem.**
 
 Let $X$ be normal, let
 \[
@@ -218,7 +270,9 @@ the extension may be chosen with
 |F|\le M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard real-valued Tietze extension theorem. The bounded form
 is the version often proved first; the unbounded version follows from it by
 composing with a homeomorphism
@@ -226,12 +280,16 @@ composing with a homeomorphism
 \mathbb R\cong(-1,1)
 \]
 and then undoing that homeomorphism.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 give the four requested definitions, and
 steps <1>5--<1>8 state the four requested theorems.
+
 :::
+
 :::

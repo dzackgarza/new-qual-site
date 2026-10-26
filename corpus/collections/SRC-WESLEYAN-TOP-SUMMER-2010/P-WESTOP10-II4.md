@@ -36,14 +36,17 @@ For each source space:
 4. if it is a compact connected surface, identify it in the classification as $S^2$, a connected sum of tori, or a connected sum of real projective planes.
 :::
 
-::: {.solution}
 Write the quotient spaces as
 $$
 X_1,qquad X_2,qquad X_3
 $$
 in the order shown in the source.
 
-<1>1. In $X_1$, the six boundary vertices collapse to two quotient vertices
+::: pf
+
+::: pf-step
+
+In $X_1$, the six boundary vertices collapse to two quotient vertices
 $$
 P=\{v_0,v_2,v_4\},
 \qquad
@@ -56,13 +59,20 @@ a:P\to Q,
 b:Q\to P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 All three $a$-edges are identified respecting their arrows, so all their
 arrow-starts are identified and all their arrow-ends are identified.
 The three $b$-edges give the same two alternating classes.
+
 :::
 
-<1>2. The cellular chain complex of $X_1$ is
+:::
+
+::: pf-step
+
+The cellular chain complex of $X_1$ is
 $$
 0\to\mathbb Z
 \xrightarrow{\partial_2}
@@ -80,7 +90,9 @@ $$
 \boxed{\partial_2(1)=(1,1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The formula for
 $$
 \partial_1
@@ -103,9 +115,14 @@ so the cellular boundary of the $2$-cell is
 $$
 (1,1).
 $$
+
 :::
 
-<1>3. The homology of $X_1$ is
+:::
+
+::: pf-step
+
+The homology of $X_1$ is
 $$
 \boxed{
 H_0(X_1;\mathbb Z)\cong\mathbb Z,
@@ -113,7 +130,9 @@ H_0(X_1;\mathbb Z)\cong\mathbb Z,
 H_k(X_1;\mathbb Z)=0\quad(k\ge1).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \ker\partial_1
@@ -139,14 +158,21 @@ $$
 H_0(X_1)\cong\mathbb Z.
 $$
 There are no higher-dimensional cells.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{\pi_1(X_1)=1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Collapse the edge
 $$
 a
@@ -172,11 +198,18 @@ $$
 \langle b\mid b\rangle
 =1.
 $$
+
 :::
 
-<1>5. The space $X_1$ is not a manifold.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X_1$ is not a manifold.
+
+
+::: pf-proof
+
 At an interior point of the quotient edge
 $$
 a,
@@ -189,9 +222,14 @@ Hence the point has no neighborhood homeomorphic to
 $$
 \mathbb R^2.
 $$
+
 :::
 
-<1>6. In $X_2$, the quotient has two vertices
+:::
+
+::: pf-step
+
+In $X_2$, the quotient has two vertices
 $$
 P=\{v_0,v_2,v_4\},
 \qquad
@@ -204,7 +242,9 @@ a,c:P\to Q,
 b:Q\to P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Read the endpoint identifications from
 $$
 w_2=abca^{-1}cb.
@@ -212,9 +252,14 @@ $$
 The two $a$-occurrences have opposite boundary signs, whereas the two
 $b$-occurrences and the two $c$-occurrences have the same signs.
 The resulting equivalence classes are the alternating vertex sets displayed.
+
 :::
 
-<1>7. The cellular boundary maps for $X_2$ satisfy
+:::
+
+::: pf-step
+
+The cellular boundary maps for $X_2$ satisfy
 $$
 \partial_1(x,y,z)
 =(x-y+z)(Q-P)
@@ -228,7 +273,9 @@ $$
 (a,b,c).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first formula follows from step <1>6.
 The exponent sums of
 $$
@@ -243,9 +290,14 @@ $$
 0,2,2,
 $$
 respectively.
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 H_0(X_2;\mathbb Z)\cong\mathbb Z,
@@ -255,7 +307,9 @@ H_1(X_2;\mathbb Z)\cong\mathbb Z\oplus\mathbb Z/2,
 H_k(X_2;\mathbb Z)=0\ (k\ge2).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A basis of
 $$
 \ker\partial_1
@@ -290,9 +344,14 @@ Connectedness gives the stated
 $$
 H_0.
 $$
+
 :::
 
-<1>9. The fundamental group of $X_2$ is
+:::
+
+::: pf-step
+
+The fundamental group of $X_2$ is
 $$
 \boxed{
 \pi_1(X_2)
@@ -300,7 +359,9 @@ $$
 \langle u,v\mid u^2v^2\rangle.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Collapse the tree edge
 $$
 a.
@@ -318,11 +379,18 @@ $$
 \langle b,c\mid c^2b^2\rangle,
 $$
 and renaming the generators gives the displayed presentation.
+
 :::
 
-<1>10. The space $X_2$ is the Klein bottle.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X_2$ is the Klein bottle.
+
+
+::: pf-proof
+
 Every boundary edge is paired with exactly one other edge.
 The quotient edge neighborhoods are disks, and each quotient vertex has
 circular link, so
@@ -349,20 +417,32 @@ $$
 2,
 $$
 namely the Klein bottle.
+
 :::
 
-<1>11. In $X_3$, all six boundary vertices are identified to one point.
+:::
 
-::: {.proof}
+::: pf-step
+
+In $X_3$, all six boundary vertices are identified to one point.
+
+
+::: pf-proof
+
 The boundary word is
 $$
 w_3=abcab^{-1}c^{-1}.
 $$
 Aligning the arrows of the paired $a$-, $b$-, and $c$-edges and taking the
 transitive closure of the endpoint identifications joins all six vertices.
+
 :::
 
-<1>12. Thus $X_3$ has one $0$-cell, three $1$-cells
+:::
+
+::: pf-step
+
+Thus $X_3$ has one $0$-cell, three $1$-cells
 $$
 a,b,c,
 $$
@@ -371,13 +451,20 @@ $$
 abcab^{-1}c^{-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>11 gives the single quotient vertex.
 Each edge label gives one quotient $1$-cell, and the polygon interior gives
 the unique $2$-cell.
+
 :::
 
-<1>13. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \pi_1(X_3)
@@ -385,12 +472,19 @@ $$
 \langle a,b,c\mid abcab^{-1}c^{-1}\rangle.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $1$-skeleton is a wedge of three circles.
 Van Kampen imposes the single relation given by the $2$-cell attaching map.
+
 :::
 
-<1>14. The cellular boundary of the $2$-cell is
+:::
+
+::: pf-step
+
+The cellular boundary of the $2$-cell is
 $$
 \boxed{\partial_2(1)=(2,0,0)}
 $$
@@ -403,7 +497,9 @@ $$
 \partial_1=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There is only one $0$-cell, hence
 $$
 \partial_1=0.
@@ -420,9 +516,14 @@ are
 $$
 2,0,0.
 $$
+
 :::
 
-<1>15. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 H_0(X_3;\mathbb Z)\cong\mathbb Z,
@@ -432,7 +533,9 @@ H_1(X_3;\mathbb Z)\cong\mathbb Z^2\oplus\mathbb Z/2,
 H_k(X_3;\mathbb Z)=0\ (k\ge2).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 $$
 \partial_2:\mathbb Z\to\mathbb Z^3
@@ -453,9 +556,14 @@ Connectedness gives the stated
 $$
 H_0.
 $$
+
 :::
 
-<1>16. The space $X_3$ is the connected sum of three projective planes:
+:::
+
+::: pf-step
+
+The space $X_3$ is the connected sum of three projective planes:
 $$
 \boxed{
 X_3
@@ -465,7 +573,9 @@ X_3
 \#\mathbb{RP}^2.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 All boundary edges are paired exactly twice, so the quotient is a closed
 surface.
 Its Euler characteristic is
@@ -486,9 +596,14 @@ hence
 $$
 k=3.
 $$
+
 :::
 
-<1>17. Summarizing,
+:::
+
+::: pf-step
+
+Summarizing,
 $$
 \boxed{
 \begin{array}{c|c|c|c}
@@ -508,13 +623,19 @@ $$
 for all three and all unlisted positive-dimensional homology groups equal to
 zero.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the content of steps <1>3--<1>16.
+
 :::
 
-<1>18. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>17 answers parts (a)--(d).
+
 :::
+
 :::

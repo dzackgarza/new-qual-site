@@ -23,7 +23,6 @@ Then explain:
 2. why every completely regular Hausdorff space is homeomorphic to a subspace of a compact Hausdorff space.
 :::
 
-::: {.solution}
 ## The Sorgenfrey line
 
 Let
@@ -36,20 +35,33 @@ intervals
 [a,b).
 \]
 
-<1>1. The Sorgenfrey line is separable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The Sorgenfrey line is separable.
+
+
+::: pf-proof
+
 The rationals \(\mathbb Q\) are countable. Every nonempty basic open set
 \[
 [a,b)
 \]
 with \(a<b\) contains a rational number. Hence \(\mathbb Q\) is dense in
 \(\mathbb S\).
+
 :::
 
-<1>2. The Sorgenfrey line is not second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Sorgenfrey line is not second countable.
+
+
+::: pf-proof
+
 Suppose
 \[
 \mathcal B
@@ -83,11 +95,18 @@ x\longmapsto B_x
 \]
 is injective from the uncountable set \(\mathbb R\) into \(\mathcal B\),
 contradicting countability.
+
 :::
 
-<1>3. Every separable metric space is second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every separable metric space is second countable.
+
+
+::: pf-proof
+
 Let \(D\) be a countable dense subset of a metric space \((X,d)\). The
 family
 \[
@@ -116,26 +135,32 @@ Then
 x\in B(q,r)\subseteq B(x,\varepsilon)\subseteq U.
 \]
 Hence the displayed family is a countable basis.
+
 :::
 
-<1>4. Therefore the Sorgenfrey line is not metrizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the Sorgenfrey line is not metrizable.
+
+
+::: pf-proof
+
 If it were metrizable, step <1>1 and step <1>3 would make it second
 countable, contradicting step <1>2.
+
 :::
 
-## The one-point compactification of an uncountable discrete space
+:::
 
-Let \(D\) be an uncountable discrete space, and let
-\[
-D^*=D\cup\{\infty\}
-\]
-be its one-point compactification.
+::: pf-step
 
-<1>5. Every compact subset of \(D\) is finite.
+Every compact subset of \(D\) is finite.
 
-::: {.proof}
+
+::: pf-proof
+
 An infinite subset \(K\subseteq D\) has the open cover by its singleton
 sets
 \[
@@ -143,24 +168,38 @@ sets
 \]
 which has no finite subcover. Hence an infinite subset cannot be compact.
 Finite subsets are compact.
+
 :::
 
-<1>6. The neighborhoods of \(\infty\) are exactly the sets containing
+:::
+
+::: pf-step
+
+The neighborhoods of \(\infty\) are exactly the sets containing
 \[
 \boxed{
 \{\infty\}\cup(D-F)}
 \]
 for some finite \(F\subseteq D\).
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of the one-point compactification, a basic neighborhood of
 \(\infty\) is the complement of a compact subset of \(D\). Apply step
 <1>5.
+
 :::
 
-<1>7. The space \(D^*\) is not first countable at \(\infty\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The space \(D^*\) is not first countable at \(\infty\).
+
+
+::: pf-proof
+
 Suppose
 \[
 U_1,U_2,\dots
@@ -199,38 +238,49 @@ for every \(n\). Hence
 U_n\nsubseteq V
 \]
 for every \(n\), contradicting the local-base property.
+
 :::
 
-<1>8. Therefore \(D^*\) is not metrizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(D^*\) is not metrizable.
+
+
+::: pf-proof
+
 Every metric space is first countable: the balls
 \[
 B(x,1/n)
 \]
 form a countable local base at each point. Step <1>7 shows this fails at
 \(\infty\).
+
 :::
 
-## An uncountable product of copies of \(\mathbb N\)
+:::
 
-Let \(I\) be uncountable and set
-\[
-X=\prod_{i\in I}\mathbb N_i,
-\]
-where each factor has the discrete topology.
+::: pf-step
 
-<1>9. Fix \(x\in X\). Suppose
+Fix \(x\in X\). Suppose
 \[
 B_1,B_2,\dots
 \]
 were a countable local base at \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 We will derive a contradiction.
+
 :::
 
-<1>10. For every \(n\), choose a basic product neighborhood
+:::
+
+::: pf-step
+
+For every \(n\), choose a basic product neighborhood
 \[
 C_n
 \]
@@ -239,48 +289,78 @@ with
 x\in C_n\subseteq B_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Basic product neighborhoods form a basis for the product topology.
+
 :::
 
-<1>11. Let \(F_n\subseteq I\) be the finite set of coordinates restricted by
+:::
+
+::: pf-step
+
+Let \(F_n\subseteq I\) be the finite set of coordinates restricted by
 \(C_n\). Then
 \[
 F=\bigcup_{n=1}^{\infty}F_n
 \]
 is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 Each \(F_n\) is finite by the definition of the product topology, and a
 countable union of finite sets is countable.
+
 :::
 
-<1>12. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 j\in I-F.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The index set \(I\) is uncountable while \(F\) is countable.
+
 :::
 
-<1>13. The set
+:::
+
+::: pf-step
+
+The set
 \[
 U=\{y\in X:y_j=x_j\}
 \]
 is an open neighborhood of \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 It is the inverse image of the open singleton
 \[
 \{x_j\}\subseteq\mathbb N_j
 \]
 under the coordinate projection.
+
 :::
 
-<1>14. No \(C_n\) is contained in \(U\).
+:::
 
-::: {.proof}
+::: pf-step
+
+No \(C_n\) is contained in \(U\).
+
+
+::: pf-proof
+
 Since
 \[
 j\notin F_n,
@@ -294,11 +374,18 @@ so
 \[
 y\in C_n-U.
 \]
+
 :::
 
-<1>15. Therefore no \(B_n\) is contained in \(U\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore no \(B_n\) is contained in \(U\).
+
+
+::: pf-proof
+
 If
 \[
 B_n\subseteq U,
@@ -308,26 +395,45 @@ then
 C_n\subseteq B_n\subseteq U,
 \]
 contradicting step <1>14.
+
 :::
 
-<1>16. Hence \(X\) is not first countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence \(X\) is not first countable.
+
+
+::: pf-proof
+
 The neighborhood \(U\) of \(x\) contains no local-base element \(B_n\),
 contradicting the assumption in step <1>9.
+
 :::
 
-<1>17. Therefore \(X\) is not metrizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(X\) is not metrizable.
+
+
+::: pf-proof
+
 Metric spaces are first countable, while \(X\) is not by step <1>16.
+
 :::
 
-## Compact Hausdorff implies completely regular
+:::
 
-<1>18. Every compact Hausdorff space is normal.
+::: pf-step
 
-::: {.proof}
+Every compact Hausdorff space is normal.
+
+
+::: pf-proof
+
 Let \(A,B\) be disjoint closed subsets of a compact Hausdorff space \(X\).
 They are compact.
 
@@ -337,11 +443,18 @@ neighborhood \(U_a\) of \(a\) whose closure misses \(B\); compactness of
 \(A\) then gives finitely many such \(U_a\). Their union is an open
 neighborhood of \(A\) whose closure misses \(B\), yielding disjoint open
 neighborhoods of \(A\) and \(B\).
+
 :::
 
-<1>19. Every compact Hausdorff space is completely regular.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every compact Hausdorff space is completely regular.
+
+
+::: pf-proof
+
 Let \(X\) be compact Hausdorff, let \(x\in X\), and let \(F\subseteq X\) be
 closed with
 \[
@@ -363,17 +476,14 @@ and
 f|_F=1.
 \]
 This is exactly complete regularity.
+
 :::
 
-## Completely regular Hausdorff spaces embed in compact Hausdorff spaces
+:::
 
-Let \(X\) be completely regular and Hausdorff. Let
-\[
-\mathcal C=C(X,[0,1])
-\]
-be the set of all continuous functions \(X\to[0,1]\).
+::: pf-step
 
-<1>20. Define the evaluation map
+Define the evaluation map
 \[
 e:X\to[0,1]^{\mathcal C}
 \]
@@ -383,14 +493,23 @@ by
 e(x)=(f(x))_{f\in\mathcal C}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each \(x\), the tuple of values \(f(x)\) is an element of the product
 cube.
+
 :::
 
-<1>21. The map \(e\) is continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map \(e\) is continuous.
+
+
+::: pf-proof
+
 For every coordinate projection
 \[
 \pi_f:[0,1]^{\mathcal C}\to[0,1],
@@ -401,11 +520,18 @@ one has
 \]
 which is continuous. The product topology is the coarsest topology making all
 coordinate projections continuous, so \(e\) is continuous.
+
 :::
 
-<1>22. The map \(e\) is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map \(e\) is injective.
+
+
+::: pf-proof
+
 Let
 \[
 x\ne y.
@@ -427,12 +553,19 @@ Thus the \(f\)-coordinates of \(e(x)\) and \(e(y)\) differ, so
 \[
 e(x)\ne e(y).
 \]
+
 :::
 
-<1>23. The topology on \(X\) is the topology induced from the cube via
+:::
+
+::: pf-step
+
+The topology on \(X\) is the topology induced from the cube via
 \(e\).
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(U\subseteq X\) be open and let \(x\in U\). The set
 \[
 F=X-U
@@ -469,36 +602,54 @@ e^{-1}(W)
 Thus every open neighborhood in \(X\) contains the inverse image of a cube
 neighborhood. Together with continuity of \(e\), this proves that \(e\) is a
 topological embedding.
+
 :::
 
-<1>24. The cube
+:::
+
+::: pf-step
+
+The cube
 \[
 [0,1]^{\mathcal C}
 \]
 is compact Hausdorff.
 
-::: {.proof}
+
+::: pf-proof
+
 Each factor \([0,1]\) is compact Hausdorff. Tychonoff's theorem gives
 compactness of the product, and an arbitrary product of Hausdorff spaces is
 Hausdorff.
+
 :::
 
-<1>25. Therefore every completely regular Hausdorff space is homeomorphic to
+:::
+
+::: pf-step
+
+Therefore every completely regular Hausdorff space is homeomorphic to
 a subspace of a compact Hausdorff space.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>20--<1>23, \(e\) is a homeomorphism from \(X\) onto the subspace
 \[
 e(X)\subseteq[0,1]^{\mathcal C}.
 \]
 By step <1>24, the ambient cube is compact Hausdorff.
+
 :::
 
-<1>26. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4, <1>8, and <1>17 prove the three nonmetrizability assertions;
 step <1>19 proves compact Hausdorff spaces are completely regular; and step
 <1>25 proves the compact Hausdorff embedding statement.
+
 :::
+
 :::

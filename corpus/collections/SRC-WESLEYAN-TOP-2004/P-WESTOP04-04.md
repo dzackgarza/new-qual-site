@@ -29,8 +29,11 @@ p\circ\widetilde f=f.
 \]
 :::
 
-::: {.solution}
-<1>1. A covering map is a continuous map
+::: pf
+
+::: pf-step
+
+A covering map is a continuous map
 $$
 p:E\to X
 $$
@@ -54,15 +57,22 @@ p|_{V_\alpha}:V_\alpha\longrightarrow U
 $$
 is a homeomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of a covering space
 $$
 (E,p)
 $$
 over $X$. Such a neighborhood $U$ is called evenly covered.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \widetilde f_0,\widetilde f_1:(Y,y_0)\to(E,e_0)
 $$
@@ -83,11 +93,18 @@ e_0
 \widetilde f_1(y_0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are arbitrary two candidate based lifts. It is enough to prove that they agree at every point of $Y$.
+
 :::
 
-<1>3. Fix
+:::
+
+::: pf-step
+
+Fix
 $$
 y\in Y.
 $$
@@ -102,11 +119,18 @@ $$
 \gamma(1)=y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of path-connectedness.
+
 :::
 
-<1>4. The paths
+:::
+
+::: pf-step
+
+The paths
 $$
 \widetilde f_0\circ\gamma
 \quad\text{and}\quad
@@ -118,7 +142,9 @@ f\circ\gamma
 $$
 through $p$ and have the same initial point $e_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $j=0,1$,
 $$
 p\circ(\widetilde f_j\circ\gamma)
@@ -135,27 +161,41 @@ $$
 =
 e_0.
 $$
+
 :::
 
-<1>5. By uniqueness of path lifting,
+:::
+
+::: pf-step
+
+By uniqueness of path lifting,
 $$
 \widetilde f_0\circ\gamma
 =
 \widetilde f_1\circ\gamma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a covering map, a path in the base has at most one lift with a prescribed starting point. Step <1>4 gives two lifts with the same starting point, so they coincide.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \widetilde f_0(y)
 =
 \widetilde f_1(y).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the equality from step <1>5 at
 $$
 t=1.
@@ -170,9 +210,14 @@ $$
 \quad\text{and}\quad
 \widetilde f_1(y).
 $$
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \widetilde f_0
@@ -180,17 +225,23 @@ $$
 \widetilde f_1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The point
 $$
 y\in Y
 $$
 was arbitrary. Step <1>6 therefore proves equality at every point of $Y$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition, and step <1>7 proves uniqueness of a based lift.
+
 :::
+
 :::

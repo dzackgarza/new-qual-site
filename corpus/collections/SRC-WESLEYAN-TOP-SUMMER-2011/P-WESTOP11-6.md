@@ -19,15 +19,20 @@ audit:
 2. State precisely the full Seifert--van Kampen theorem.
 :::
 
-::: {.solution}
 Choose a basepoint
 \[
 x_0\in U\cap V.
 \]
 
-<1>1. The space $X$ is path-connected.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The space $X$ is path-connected.
+
+
+::: pf-proof
+
 Because $U$ and $V$ are simply connected, they are path-connected.
 Since
 \[
@@ -38,9 +43,14 @@ the union
 X=U\cup V
 \]
 is path-connected.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \gamma:[0,1]\to X
 \]
@@ -57,7 +67,9 @@ such that each subpath
 \]
 lies entirely in $U$ or entirely in $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 \gamma^{-1}(U),
@@ -71,9 +83,14 @@ closed subinterval
 [t_{i-1},t_i]
 \]
 maps into one member of the cover.
+
 :::
 
-<1>3. The subdivision in step <1>2 may be chosen so that consecutive
+:::
+
+::: pf-step
+
+The subdivision in step <1>2 may be chosen so that consecutive
 subpaths alternate between $U$ and $V$, except where one of them can simply
 be merged with the next.
 For every genuine transition point
@@ -85,14 +102,21 @@ one has
 p_i\in U\cap V.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If two consecutive subpaths both lie in $U$, replace them by their
 concatenation; similarly for $V$.
 After all such mergers, whenever one subpath lies in $U$ and the next in
 $V$, their common endpoint belongs to both sets.
+
 :::
 
-<1>4. For every transition point $p_i$, choose a path
+:::
+
+::: pf-step
+
+For every transition point $p_i$, choose a path
 \[
 \eta_i
 \]
@@ -103,15 +127,22 @@ Take
 \]
 to be the constant path at $x_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The intersection
 \[
 U\cap V
 \]
 is path-connected by hypothesis.
+
 :::
 
-<1>5. For each $i$, the concatenation
+:::
+
+::: pf-step
+
+For each $i$, the concatenation
 \[
 \lambda_i
 \coloneqq
@@ -123,7 +154,9 @@ is path-connected by hypothesis.
 \]
 is a loop at $x_0$ contained entirely in either $U$ or $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 The path
 \[
 \gamma_i
@@ -141,15 +174,22 @@ U\cap V,
 \]
 hence in whichever of $U,V$ contains $\gamma_i$.
 Thus the whole loop lies in that set.
+
 :::
 
-<1>6. Every loop
+:::
+
+::: pf-step
+
+Every loop
 \[
 \lambda_i
 \]
 is null-homotopic in $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 \lambda_i\subseteq U,
@@ -161,9 +201,14 @@ If
 \]
 the same conclusion follows from simple connectedness of $V$.
 In either case the null-homotopy is also a null-homotopy in $X$.
+
 :::
 
-<1>7. In
+:::
+
+::: pf-step
+
+In
 \[
 \pi_1(X,x_0),
 \]
@@ -176,7 +221,9 @@ one has
 [\lambda_m].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the product gives
 \[
 \eta_0*\gamma_1*\eta_1^{-1}
@@ -203,14 +250,21 @@ are constant at $x_0$, the product reduces to
 \gamma_1*\cdots*\gamma_m,
 \]
 which is exactly $\gamma$ up to reparametrization.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \pi_1(X,x_0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 [\lambda_i]=1
@@ -223,9 +277,14 @@ Step <1>7 gives
 Since $\gamma$ was arbitrary, every based loop is null-homotopic.
 Together with path-connectedness from step <1>1, this says $X$ is simply
 connected.
+
 :::
 
-<1>9. **Seifert--van Kampen Theorem.**
+:::
+
+::: pf-step
+
+**Seifert--van Kampen Theorem.**
 
 Let
 \[
@@ -265,7 +324,9 @@ Equivalently,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In concrete group-presentation form,
 \[
 \pi_1(X,x_0)
@@ -300,12 +361,16 @@ agree, there is a unique homomorphism
 \Phi:\pi_1(X,x_0)\to G
 \]
 extending both.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>8 prove the simply connected special case, and step <1>9
 states the full theorem.
+
 :::
+
 :::

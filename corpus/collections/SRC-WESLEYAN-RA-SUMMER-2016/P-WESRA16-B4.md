@@ -35,32 +35,44 @@ exists in $[0,\infty]$, prove that there are $\alpha,\beta,\gamma\in[0,\infty]$ 
 Determine the relevant contributions using monotone and dominated convergence.
 :::
 
-::: {.solution}
 Because $\operatorname{supp}f\subseteq[0,1]$ and $X,Y,Z$ partition $[0,1]$,
 $$
 \int_{\mathbb R}f^n
 =\int_Xf^n+\int_Yf^n+\int_Zf^n.
 $$
 
-<1>1. On $Y$,
+::: pf
+
+::: pf-step
+
+On $Y$,
 $$
 \int_Y f^n=\lambda(Y)
 $$
 for every $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, $f(x)=1$ for every $x\in Y$. Hence $f^n=1$ on $Y$, so
 $$
 \int_Yf^n=\int_Y1=\lambda(Y).
 $$
+
 :::
 
-<1>2. On $Z$,
+:::
+
+::: pf-step
+
+On $Z$,
 $$
 \lim_{n\to\infty}\int_Zf^n=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in Z$, one has $0\leq f(x)<1$, hence
 $$
 f(x)^n\longrightarrow0.
@@ -75,9 +87,14 @@ $$
 =\int_Z\lim_{n\to\infty}f^n
 =0.
 $$
+
 :::
 
-<1>3. On $X$, the functions $f^n\mathbf1_X$ increase pointwise to the extended-valued function
+:::
+
+::: pf-step
+
+On $X$, the functions $f^n\mathbf1_X$ increase pointwise to the extended-valued function
 $$
 h(x)=
 \begin{cases}
@@ -86,11 +103,18 @@ h(x)=
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $x\in X$, then $f(x)>1$, so the sequence $f(x)^n$ is increasing and tends to $\infty$. If $x\notin X$, multiplication by $\mathbf1_X(x)$ makes every term zero. This proves the asserted monotone pointwise convergence.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \lim_{n\to\infty}\int_Xf^n
 =
@@ -100,7 +124,9 @@ $$
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3 and the Monotone Convergence Theorem,
 $$
 \lim_{n\to\infty}\int_Xf^n
@@ -115,9 +141,14 @@ $$
 \int h\geq M\lambda(X).
 $$
 Since $M$ is arbitrary, $\int h=\infty$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \lim_{n\to\infty}\int_{\mathbb R}f^n
 =
@@ -127,17 +158,26 @@ $$
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the decomposition before step <1>1. The $Y$-term equals $\lambda(Y)$ by step <1>1, the $Z$-term tends to $0$ by step <1>2, and the $X$-term has the limit computed in step <1>4. Adding these three limits gives the displayed formula.
+
 :::
 
-<1>6. There exist $\alpha,\beta,\gamma\in[0,\infty]$ such that
+:::
+
+::: pf-step
+
+There exist $\alpha,\beta,\gamma\in[0,\infty]$ such that
 $$
 \boxed{\lim_{n\to\infty}\int_{\mathbb R}f^n
 =\alpha\lambda(X)+\beta\lambda(Y)+\gamma\lambda(Z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 \beta=1,
@@ -153,11 +193,15 @@ $$
 \end{cases}
 $$
 If $\lambda(X)=0$, the right-hand side is $\lambda(Y)$; if $\lambda(X)>0$, it is $\infty$. Step <1>5 shows that these are exactly the two possible values of the limit.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>4 give the requested dominated- and monotone-convergence contributions, and step <1>6 gives the required constants.
+
 :::
+
 :::

@@ -31,10 +31,13 @@ audit:
    \]
 :::
 
-::: {.solution}
 All homology and cohomology groups below have integral coefficients.
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 A
 \coloneqq
@@ -51,7 +54,9 @@ S^1\times D^2
 S^1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The embedding
 \[
 K:S^1\times D^2\to S^3
@@ -68,9 +73,14 @@ S^1\times D^2
 \simeq
 S^1.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \widetilde H^j(A)
 \cong
@@ -80,7 +90,9 @@ S^1.
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 A\simeq S^1.
@@ -92,16 +104,23 @@ The reduced cohomology of the circle is
 \mathbb Z
 \]
 and vanishes in all other degrees.
+
 :::
 
-<1>3. Alexander duality gives
+:::
+
+::: pf-step
+
+Alexander duality gives
 \[
 \widetilde H_i(S^3\setminus A)
 \cong
 \widetilde H^{,2-i}(A).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a compact locally contractible subset
 \[
 A\subset S^n,
@@ -118,9 +137,14 @@ n=3.
 \]
 The set $A$ is a compact manifold with boundary, hence locally
 contractible, so the theorem applies.
+
 :::
 
-<1>4. The complement of every thickened knot has homology
+:::
+
+::: pf-step
+
+The complement of every thickened knot has homology
 \[
 \boxed{
 H_i(S^3\setminus\operatorname{im}(K))
@@ -132,7 +156,9 @@ H_i(S^3\setminus\operatorname{im}(K))
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 \[
 \widetilde H_i(S^3\setminus A)
@@ -169,9 +195,14 @@ so the complement is connected and
 H_0\cong\mathbb Z.
 \]
 All higher reduced homology groups vanish.
+
 :::
 
-<1>5. Now let
+:::
+
+::: pf-step
+
+Now let
 \[
 B
 \coloneqq
@@ -192,7 +223,9 @@ B\cap\partial B^4
 S^1\times D^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \Delta:D^2\times D^2\to B^4
@@ -213,9 +246,14 @@ Hence the displayed pair is homeomorphic to
 \[
 (D^2\times D^2,S^1\times D^2).
 \]
+
 :::
 
-<1>6. The pair
+:::
+
+::: pf-step
+
+The pair
 \[
 (B,B\cap\partial B^4)
 \]
@@ -224,7 +262,9 @@ is homotopy equivalent as a pair to
 (D^2,S^1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The second disk factor
 \[
 D^2
@@ -236,9 +276,14 @@ Projection onto the first factor gives a homotopy equivalence of pairs
 \simeq
 (D^2,S^1).
 \]
+
 :::
 
-<1>7. Its relative cohomology is
+:::
+
+::: pf-step
+
+Its relative cohomology is
 \[
 H^j(B,B\cap\partial B^4)
 \cong
@@ -248,7 +293,9 @@ H^j(B,B\cap\partial B^4)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6 it suffices to compute
 \[
 H^*(D^2,S^1).
@@ -272,9 +319,14 @@ which is
 \mathbb Z
 \]
 in degree $2$ and zero otherwise.
+
 :::
 
-<1>8. Relative Alexander duality for a compact locally contractible
+:::
+
+::: pf-step
+
+Relative Alexander duality for a compact locally contractible
 subset of the ball gives
 \[
 \widetilde H_i(B^4\setminus B)
@@ -282,7 +334,9 @@ subset of the ball gives
 H^{,3-i}(B,B\cap\partial B^4).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The ball version of Alexander duality states that for a compact locally
 contractible
 \[
@@ -306,9 +360,14 @@ and
 \[
 A=B.
 \]
+
 :::
 
-<1>9. Therefore the slice-disk complement has homology
+:::
+
+::: pf-step
+
+Therefore the slice-disk complement has homology
 \[
 \boxed{
 H_i(B^4\setminus\operatorname{im}(\Delta))
@@ -320,7 +379,9 @@ H_i(B^4\setminus\operatorname{im}(\Delta))
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>7--<1>8, reduced homology is nonzero only when
 \[
 3-i=2,
@@ -351,9 +412,14 @@ so the complement is connected and
 H_0\cong\mathbb Z.
 \]
 All higher groups vanish.
+
 :::
 
-<1>10. Thus both complements have the homology of a circle:
+:::
+
+::: pf-step
+
+Thus both complements have the homology of a circle:
 \[
 \boxed{
 H_*(S^3\setminus\operatorname{im}(K))
@@ -364,13 +430,19 @@ H_*(S^1).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compare steps <1>4 and <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 solves part (1), and step <1>9 solves part (2).
+
 :::
+
 :::

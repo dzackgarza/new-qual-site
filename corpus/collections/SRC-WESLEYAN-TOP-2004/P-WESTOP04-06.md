@@ -19,10 +19,13 @@ audit:
 3. For each chosen invariant, prove or disprove the same assertion under the additional hypothesis that $X$ is metrizable.
 :::
 
-::: {.solution}
 Use the following three cardinal invariants.
 
-<1>1. Define the weight, density, and cellularity of a topological space $X$ by
+::: pf
+
+::: pf-step
+
+Define the weight, density, and cellularity of a topological space $X$ by
 $$
 w(X)
 \coloneqq
@@ -50,11 +53,18 @@ c(X)
 \}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are standard cardinal invariants: respectively the smallest size of a base, the smallest size of a dense subset, and the supremal size of a disjoint family of nonempty open sets.
+
 :::
 
-<1>2. For every subspace
+:::
+
+::: pf-step
+
+For every subspace
 $$
 F\subseteq X,
 $$
@@ -63,7 +73,9 @@ $$
 \boxed{w(F)\le w(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal B
@@ -91,15 +103,22 @@ $$
 w(F)\le w(X).
 $$
 Closedness and metrizability are not needed.
+
 :::
 
-<1>3. Density need not satisfy
+:::
+
+::: pf-step
+
+Density need not satisfy
 $$
 d(F)\le d(X)
 $$
 for closed subspaces.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathbb S
@@ -189,15 +208,22 @@ d(F)
 d(X).
 $$
 Thus the closed-subspace inequality fails in general.
+
 :::
 
-<1>4. Cellularity likewise need not satisfy
+:::
+
+::: pf-step
+
+Cellularity likewise need not satisfy
 $$
 c(F)\le c(X)
 $$
 for closed subspaces.
 
-::: {.proof}
+
+::: pf-proof
+
 Use the same
 $$
 X=\mathbb S\times\mathbb S
@@ -237,9 +263,14 @@ c(F)
 =
 c(X).
 $$
+
 :::
 
-<1>5. If $X$ is metrizable, then every subspace
+:::
+
+::: pf-step
+
+If $X$ is metrizable, then every subspace
 $$
 F\subseteq X
 $$
@@ -248,7 +279,9 @@ $$
 \boxed{d(F)\le d(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 D\subseteq X
@@ -339,9 +372,14 @@ Hence $E$ is dense in $F$, proving
 $$
 d(F)\le d(X).
 $$
+
 :::
 
-<1>6. If $X$ is metrizable, then every subspace
+:::
+
+::: pf-step
+
+If $X$ is metrizable, then every subspace
 $$
 F\subseteq X
 $$
@@ -350,7 +388,9 @@ $$
 \boxed{c(F)\le c(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal U
@@ -460,9 +500,14 @@ If $X$ is finite, every subspace has at most as many nonempty pairwise-disjoint 
 $$
 c(F)\le c(X).
 $$
+
 :::
 
-<1>7. For the three chosen invariants, the closed-subspace conclusions are:
+:::
+
+::: pf-step
+
+For the three chosen invariants, the closed-subspace conclusions are:
 $$
 \boxed{
 \begin{array}{c|c|c}
@@ -493,13 +538,19 @@ c(F)\le c(X)
 \end{array}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The weight assertions are step <1>2; the general counterexamples for density and cellularity are steps <1>3--<1>4; the metrizable assertions are steps <1>5--<1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 define three standard cardinal invariants and completely determine the requested closed-subspace inequalities in the general and metrizable cases.
+
 :::
+
 :::

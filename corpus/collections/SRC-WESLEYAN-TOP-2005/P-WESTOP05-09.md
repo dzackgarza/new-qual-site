@@ -17,7 +17,6 @@ For a space $X$, define its suspension $\Sigma X$ as the quotient of $X\times I$
 \]
 :::
 
-::: {.solution}
 Let
 \[
 q:X\times I\to\Sigma X
@@ -29,7 +28,11 @@ S=q(X\times\{0\}),
 N=q(X\times\{1\}).
 \]
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 U=q\bigl(X\times[0,2/3)\bigr)
 \]
@@ -38,15 +41,24 @@ and
 V=q\bigl(X\times(1/3,1]\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are saturated subsets for the quotient relation because the entire
 collapsed end \(X\times\{0\}\) lies in the first set and the entire collapsed
 end \(X\times\{1\}\) lies in the second.
+
 :::
 
-<1>2. The sets \(U\) and \(V\) are open in \(\Sigma X\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The sets \(U\) and \(V\) are open in \(\Sigma X\).
+
+
+::: pf-proof
+
 The subsets
 \[
 X\times[0,2/3)
@@ -57,15 +69,22 @@ X\times(1/3,1]
 \]
 are open in the product \(X\times I\), using the subspace topology on
 \(I=[0,1]\). Since they are saturated, their quotient images are open.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \Sigma X=U\cup V}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The intervals
 \[
 [0,2/3)
@@ -73,11 +92,18 @@ The intervals
 (1/3,1]
 \]
 cover \(I\).
+
 :::
 
-<1>4. The space \(U\) is contractible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space \(U\) is contractible.
+
+
+::: pf-proof
+
 It is a truncated cone on \(X\) with cone point \(S\). Define
 \[
 H_U(q(x,t),s)
@@ -86,11 +112,18 @@ q(x,(1-s)t).
 \]
 This is well defined because all points with \(t=0\) are already identified.
 At \(s=1\), every point is sent to \(S\).
+
 :::
 
-<1>5. The space \(V\) is contractible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space \(V\) is contractible.
+
+
+::: pf-proof
+
 It is a truncated cone on \(X\) with cone point \(N\). Define
 \[
 H_V(q(x,t),s)
@@ -98,9 +131,14 @@ H_V(q(x,t),s)
 q(x,t+s(1-t)).
 \]
 At \(s=1\), every point is sent to \(N\).
+
 :::
 
-<1>6. The intersection is
+:::
+
+::: pf-step
+
+The intersection is
 \[
 \boxed{
 U\cap V
@@ -108,12 +146,19 @@ U\cap V
 q\bigl(X\times(1/3,2/3)\bigr)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the overlap of the two interval factors from step <1>1.
 No quotient identifications occur in the open middle interval.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 U\cap V
@@ -121,47 +166,75 @@ U\cap V
 X\times(1/3,2/3)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient map is injective on
 \[
 X\times(1/3,2/3),
 \]
 since only the two endpoint slices of \(X\times I\) are collapsed.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 U\cap V\simeq X}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The interval
 \[
 (1/3,2/3)
 \]
 is contractible, so projection onto \(X\) is a homotopy equivalence.
+
 :::
 
-<1>9. Since \(X\) is path connected,
+:::
+
+::: pf-step
+
+Since \(X\) is path connected,
 \[
 \boxed{
 U\cap V
 \text{ is path connected}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A product of path-connected spaces is path connected. Use step <1>7 and the
 fact that the interval is path connected.
+
 :::
 
-<1>10. The spaces \(U\) and \(V\) are path connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The spaces \(U\) and \(V\) are path connected.
+
+
+::: pf-proof
+
 Each is contractible by steps <1>4--<1>5, hence path connected.
+
 :::
 
-<1>11. The Seifert--van Kampen theorem gives
+:::
+
+::: pf-step
+
+The Seifert--van Kampen theorem gives
 \[
 \pi_1(\Sigma X)
 \cong
@@ -170,16 +243,23 @@ Each is contractible by steps <1>4--<1>5, hence path connected.
 \pi_1(V).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cover
 \[
 \Sigma X=U\cup V
 \]
 is by open path-connected sets with path-connected intersection by steps
 <1>2, <1>9, and <1>10.
+
 :::
 
-<1>12. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \pi_1(U)=0}
@@ -190,33 +270,53 @@ and
 \pi_1(V)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both spaces are contractible by steps <1>4--<1>5.
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \pi_1(\Sigma X)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The amalgamated free product of the two trivial groups is trivial,
 regardless of the maps from \(\pi_1(U\cap V)\). Apply step <1>11 and step
 <1>12.
+
 :::
 
-<1>14. Thus the suspension of every path-connected space is simply
+:::
+
+::: pf-step
+
+Thus the suspension of every path-connected space is simply
 connected.
 
-::: {.proof}
+
+::: pf-proof
+
 The suspension is path connected because \(U\) and \(V\) are path connected
 and intersect nontrivially, and step <1>13 gives trivial fundamental group.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 is the requested computation.
+
 :::
+
 :::

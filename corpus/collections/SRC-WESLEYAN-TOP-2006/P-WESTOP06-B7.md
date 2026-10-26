@@ -27,10 +27,15 @@ audit:
    for rational $r\in[0,1]$. Show that $X$ deformation retracts to every point of $[0,1]\times\{0\}$, but to no other point.
 :::
 
-::: {.solution}
-<1>1. If \(X\) deformation retracts to \(x\), then for every neighborhood \(U\) of \(x\) there is a neighborhood \(V\subseteq U\) of \(x\) such that the inclusion \(V\hookrightarrow U\) is null-homotopic.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If \(X\) deformation retracts to \(x\), then for every neighborhood \(U\) of \(x\) there is a neighborhood \(V\subseteq U\) of \(x\) such that the inclusion \(V\hookrightarrow U\) is null-homotopic.
+
+
+::: pf-proof
+
 Let
 \[
 H:X\times I\to X
@@ -52,11 +57,18 @@ Set \(V=V_0\cap U_0\). Then \(V\) is a neighborhood of \(x\) with \(V\subseteq U
 H|_{V\times I}:V\times I\to U_0\subseteq U
 \]
 is a homotopy from the inclusion \(V\hookrightarrow U\) to the constant map with value \(x\). Hence the inclusion is null-homotopic.
+
 :::
 
-<1>2. For every \(a\in[0,1]\), the space \(X\) deformation retracts to the point \((a,0)\).
+:::
 
-::: {.proof}
+::: pf-step
+
+For every \(a\in[0,1]\), the space \(X\) deformation retracts to the point \((a,0)\).
+
+
+::: pf-proof
+
 Define
 \[
 H_a:X\times I\to X
@@ -78,11 +90,18 @@ H_a((r,y),0)=(r,y),
 H_a((r,y),1)=(a,0).
 \]
 If \((r,y)=(a,0)\), both formulas give \((a,0)\) for every \(t\). Hence \(H_a\) is a deformation retraction of \(X\) to \((a,0)\).
+
 :::
 
-<1>3. Let \(p=(r_0,y_0)\in X\) with \(y_0>0\). There is a neighborhood \(U\) of \(p\) such that every path in \(U\) has constant first coordinate.
+:::
 
-::: {.proof}
+::: pf-step
+
+Let \(p=(r_0,y_0)\in X\) with \(y_0>0\). There is a neighborhood \(U\) of \(p\) such that every path in \(U\) has constant first coordinate.
+
+
+::: pf-proof
+
 Choose
 \[
 0<\varepsilon<\frac{y_0}{2}
@@ -98,11 +117,18 @@ Then every point of \(U\) has positive second coordinate, so every point of \(U\
 has image contained in \(\mathbb Q\cap[0,1]\).
 
 If \(\gamma:I\to U\) is a path, then \(\pi_1\circ\gamma:I\to\mathbb Q\) has connected image. The only connected subsets of \(\mathbb Q\) are singletons. Hence \(\pi_1\circ\gamma\) is constant, so \(\gamma\) has constant first coordinate.
+
 :::
 
-<1>4. Every neighborhood \(V\subseteq U\) of \(p\) contains a point \(q\) that cannot be joined to \(p\) by a path in \(U\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Every neighborhood \(V\subseteq U\) of \(p\) contains a point \(q\) that cannot be joined to \(p\) by a path in \(U\).
+
+
+::: pf-proof
+
 Because \(V\) is a neighborhood of \(p\) in the subspace \(X\), there is \(\delta>0\) such that
 \[
 X\cap B_\delta(p)\subseteq V,
@@ -123,11 +149,18 @@ q=(r,y_0)\in X\cap B_\delta(p)\subseteq V.
 If \(y_0=1-r_0\), choose instead a rational \(r<r_0\) with \(|r-r_0|<\delta\). Then \(1-r>1-r_0=y_0\), so again \(q=(r,y_0)\in V\).
 
 In either case, \(q\) and \(p\) have different first coordinates. By step <1>3, no path in \(U\) can join them.
+
 :::
 
-<1>5. No point \(p=(r_0,y_0)\in X\) with \(y_0>0\) can be a deformation-retraction point of \(X\).
+:::
 
-::: {.proof}
+::: pf-step
+
+No point \(p=(r_0,y_0)\in X\) with \(y_0>0\) can be a deformation-retraction point of \(X\).
+
+
+::: pf-proof
+
 Assume that \(X\) deformation retracts to such a point \(p\), and choose the neighborhood \(U\) from step <1>3. By step <1>1, there must be a neighborhood \(V\subseteq U\) of \(p\) for which the inclusion
 \[
 i:V\hookrightarrow U
@@ -139,20 +172,31 @@ K:V\times I\to U
 be a homotopy from \(i\) to a constant map with value \(c\in U\). For every \(v\in V\), the path \(t\mapsto K(v,t)\) joins \(v\) to \(c\) in \(U\). Hence every two points of \(V\) lie in the same path component of \(U\).
 
 This contradicts step <1>4, which gives a point \(q\in V\) not path-connected to \(p\) in \(U\). Therefore \(X\) cannot deformation retract to \(p\).
+
 :::
 
-<1>6. The deformation-retraction points of \(X\) are exactly
+:::
+
+::: pf-step
+
+The deformation-retraction points of \(X\) are exactly
 \[
 \boxed{[0,1]\times\{0\}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that every point on the horizontal segment is a deformation-retraction point. Every point of \(X\) outside that segment has positive second coordinate, so step <1>5 excludes all remaining points.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part \(1\), and step <1>6 proves part \(2\).
+
 :::
+
 :::

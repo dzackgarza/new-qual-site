@@ -19,7 +19,6 @@ For the short exact sequence of chain complexes of abelian groups shown in the s
 The labels in the source diagram are unrecovered from the retained Markdown extraction.
 :::
 
-::: {.solution}
 Write the unrecovered short exact sequence abstractly as
 \[
 0
@@ -46,7 +45,11 @@ C_n
 \]
 is exact, and $i,p$ are chain maps.
 
-<1>1. The induced long exact sequence is
+::: pf
+
+::: pf-step
+
+The induced long exact sequence is
 \[
 \boxed{
 \cdots
@@ -65,13 +68,20 @@ H_{n-1}(B)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard long exact homology sequence associated to a short
 exact sequence of chain complexes.
 The remaining steps define its maps.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 i_*:
 H_n(A)
@@ -85,7 +95,9 @@ i_*([a])
 [i_n(a)].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 a\in Z_n(A),
@@ -121,9 +133,14 @@ d_B(i_{n+1}u),
 \]
 so the two images differ by a boundary.
 Hence the map is well defined on homology classes.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 p_*:
 H_n(B)
@@ -137,7 +154,9 @@ p_*([b])
 [p_n(b)].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The proof is identical to step <1>2.
 If
 \[
@@ -164,9 +183,14 @@ p_n(b)-p_n(b')
 d_C(p_{n+1}v).
 \]
 Thus $p_*$ is well defined.
+
 :::
 
-<1>4. To define the connecting homomorphism, let
+:::
+
+::: pf-step
+
+To define the connecting homomorphism, let
 \[
 [c]
 \in
@@ -189,21 +213,30 @@ with
 p_n(b)=c.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Surjectivity of $p_n$ follows from exactness of
 \[
 0\to A_n\to B_n\to C_n\to0.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 d_Bb
 \in
 \ker p_{n-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $p$ is a chain map,
 \[
 p_{n-1}(d_Bb)
@@ -223,9 +256,14 @@ Hence
 \[
 p_{n-1}(d_Bb)=0.
 \]
+
 :::
 
-<1>6. Exactness gives a unique element
+:::
+
+::: pf-step
+
+Exactness gives a unique element
 \[
 a\in A_{n-1}
 \]
@@ -236,7 +274,9 @@ i_{n-1}(a)
 d_Bb.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives
 \[
 d_Bb
@@ -256,9 +296,14 @@ It is unique because
 i_{n-1}
 \]
 is injective.
+
 :::
 
-<1>7. The element
+:::
+
+::: pf-step
+
+The element
 \[
 a
 \]
@@ -267,7 +312,9 @@ from step <1>6 is a cycle:
 d_Aa=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply $d_B$ to
 \[
 i_{n-1}(a)
@@ -296,9 +343,14 @@ gives
 \[
 d_Aa=0.
 \]
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 \delta_n([c])
@@ -309,12 +361,19 @@ H_{n-1}(A).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 shows that $a$ is a cycle.
 The next steps verify independence of all choices.
+
 :::
 
-<1>9. The class
+:::
+
+::: pf-step
+
+The class
 \[
 [a]
 \]
@@ -323,7 +382,9 @@ is independent of the chosen lift
 b.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 b'
@@ -377,9 +438,14 @@ Thus
 \[
 [a']=[a].
 \]
+
 :::
 
-<1>10. The class
+:::
+
+::: pf-step
+
+The class
 \[
 [a]
 \]
@@ -388,7 +454,9 @@ is independent of the chosen cycle representative of
 [c].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 c'
@@ -443,15 +511,22 @@ A_{n-1}
 \]
 is exactly the same $a$.
 Hence the homology class is independent of the representative.
+
 :::
 
-<1>11. The connecting map
+:::
+
+::: pf-step
+
+The connecting map
 \[
 \delta_n
 \]
 is a group homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 [c_1],[c_2]
@@ -498,9 +573,14 @@ Thus
 =
 [a_1]+[a_2].
 \]
+
 :::
 
-<1>12. Hence every map in the long exact sequence
+:::
+
+::: pf-step
+
+Hence every map in the long exact sequence
 \[
 \cdots
 \to
@@ -516,15 +596,21 @@ H_{n-1}(A)
 \]
 is explicitly defined and well defined.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>3 define and verify the induced maps.
 Steps <1>4--<1>11 define and verify the connecting homomorphism.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states the requested long exact sequence, and step <1>12 supplies
 all map definitions and well-definedness checks requested by the problem.
+
 :::
+
 :::

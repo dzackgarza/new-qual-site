@@ -26,27 +26,44 @@ This problem proves the metrizability part of the Hahn--Mazurkiewicz theorem.
 3. Prove that $X$ is metrizable.
 :::
 
-::: {.solution}
-<1>1. The map $f:I\to X$ is closed.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $f:I\to X$ is closed.
+
+
+::: pf-proof
+
 Let $F\subseteq I$ be closed. Since $I$ is compact, $F$ is compact. Its
 continuous image $f(F)$ is compact, and compact subsets of the Hausdorff space
 $X$ are closed. Hence $f$ sends closed sets to closed sets.
+
 :::
 
-<1>2. Let $\mathcal B$ be a countable basis for $I$, and let $\mathcal C$ be
+:::
+
+::: pf-step
+
+Let $\mathcal B$ be a countable basis for $I$, and let $\mathcal C$ be
 the collection of all finite unions of elements of $\mathcal B$. Then
 $\mathcal C$ is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 For each $n\ge1$, the set of unions of exactly $n$ members of the countable
 set $\mathcal B$ is countable. The collection $\mathcal C$ is the countable
 union of these countable sets, together with the empty union, so it is
 countable.
+
 :::
 
-<1>3. For $U\in\mathcal C$, define
+:::
+
+::: pf-step
+
+For $U\in\mathcal C$, define
 \[
 V_U=X\setminus f(I\setminus U).
 \]
@@ -57,7 +74,9 @@ y\in V_U
 f^{-1}(y)\subseteq U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $U$ is open in $I$, the set $I\setminus U$ is closed. Step <1>1 implies
 that $f(I\setminus U)$ is closed, so $V_U$ is open.
 
@@ -67,15 +86,22 @@ y\notin f(I\setminus U)
 \]
 means precisely that no point of the fiber $f^{-1}(y)$ lies outside $U$,
 which is equivalent to $f^{-1}(y)\subseteq U$.
+
 :::
 
-<1>4. The countable family
+:::
+
+::: pf-step
+
+The countable family
 \[
 \mathcal V=\{V_U:U\in\mathcal C\}
 \]
 is a basis for $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $O\subseteq X$ be open and let $x\in O$. The fiber
 \[
 K=f^{-1}(x)
@@ -109,11 +135,18 @@ $t\in f^{-1}(O)$ and therefore $y=f(t)\in O$. Thus
 x\in V_U\subseteq O.
 \]
 Hence $\mathcal V$ is a basis. It is countable by step <1>2.
+
 :::
 
-<1>5. The space $X$ is metrizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X$ is metrizable.
+
+
+::: pf-proof
+
 The space $I$ is compact, so its continuous image
 \[
 X=f(I)
@@ -124,11 +157,15 @@ metrization theorem therefore implies that
 \[
 \boxed{X\text{ is metrizable}}.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part 1, step <1>4 proves part 2, and step <1>5 proves part 3.
+
 :::
+
 :::

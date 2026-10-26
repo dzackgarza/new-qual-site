@@ -19,7 +19,6 @@ Consider the commutative diagram in the source, whose two rows are exact. The ve
 The objects and horizontal-map labels in the diagram are unrecovered from the retained Markdown extraction.
 :::
 
-::: {.solution}
 Write the two exact rows abstractly as
 \[
 A\xrightarrow{f}B\xrightarrow{g}C\xrightarrow{h}D
@@ -47,7 +46,11 @@ Commutativity means
 \delta h=h'\gamma.
 \]
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 c\in C
 \]
@@ -60,7 +63,9 @@ Then
 h(c)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By commutativity of the right square,
 \[
 \delta(h(c))
@@ -79,9 +84,14 @@ is injective,
 \[
 h(c)=0.
 \]
+
 :::
 
-<1>2. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 b\in B
 \]
@@ -90,7 +100,9 @@ such that
 g(b)=c.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Exactness of the top row at $C$ gives
 \[
 \ker h
@@ -106,14 +118,21 @@ so
 c=g(b)
 \]
 for some $b\in B$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \beta(b)\in\ker g'.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2 and commutativity of the middle square,
 \[
 g'(\beta(b))
@@ -128,9 +147,14 @@ Thus
 \[
 \beta(b)\in\ker g'.
 \]
+
 :::
 
-<1>4. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 a'\in A'
 \]
@@ -139,7 +163,9 @@ such that
 f'(a')=\beta(b).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Exactness of the bottom row at $B'$ gives
 \[
 \ker g'
@@ -147,9 +173,14 @@ Exactness of the bottom row at $B'$ gives
 \operatorname{im}f'.
 \]
 Apply this to step <1>3.
+
 :::
 
-<1>5. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 a\in A
 \]
@@ -158,20 +189,29 @@ such that
 \alpha(a)=a'.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \alpha:A\to A'
 \]
 is surjective by hypothesis.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \beta\bigl(b-f(a)\bigr)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 \beta(b)
@@ -204,27 +244,41 @@ Subtracting,
 \[
 \beta\bigl(b-f(a)\bigr)=0.
 \]
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 b=f(a).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \beta:B\to B'
 \]
 is injective. Apply injectivity to step <1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 c=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 c=g(b).
@@ -253,9 +307,14 @@ Thus
 \[
 c=0.
 \]
+
 :::
 
-<1>9. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \boxed{
 \gamma:C\to C'
@@ -263,7 +322,9 @@ c=0.
 \]
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>8 show that
 \[
 \gamma(c)=0
@@ -274,11 +335,15 @@ Thus
 \[
 \ker\gamma=0.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is exactly the desired injectivity.
+
 :::
+
 :::

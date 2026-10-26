@@ -20,7 +20,6 @@ A\hookrightarrow X
 on the fundamental group and on homology. Use these maps to prove that $A$ is not a retract of $X$.
 :::
 
-::: {.solution}
 Choose a basepoint
 \[
 x_0\in A
@@ -31,9 +30,15 @@ i:A\hookrightarrow X
 \]
 be the inclusion.
 
-<1>1. The surface $X$ deformation retracts onto a wedge of four circles.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The surface $X$ deformation retracts onto a wedge of four circles.
+
+
+::: pf-proof
+
 A compact connected orientable surface of genus $2$ with one boundary
 component has a spine consisting of the standard four curves
 \[
@@ -44,9 +49,14 @@ Collapsing the complementary disk onto this spine gives
 X\simeq
 S^1\vee S^1\vee S^1\vee S^1.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \pi_1(X,x_0)
 \cong
@@ -54,13 +64,20 @@ F(a_1,b_1,a_2,b_2),
 \]
 the free group on four generators.
 
-::: {.proof}
+
+::: pf-proof
+
 The fundamental group of a wedge of four circles is the free group on the
 four circle generators, and deformation retraction preserves fundamental
 groups.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \pi_1(A,x_0)
 \cong
@@ -80,7 +97,9 @@ i_*(c)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The standard polygonal presentation of the closed genus-$2$ surface has
 attaching word
 \[
@@ -90,9 +109,14 @@ For the closed surface this word is killed by the $2$-cell.
 Removing the interior of a disk removes that relation and turns the attaching
 circle into the boundary component.
 Thus the boundary generator is represented by the product of commutators.
+
 :::
 
-<1>4. The induced homomorphism
+:::
+
+::: pf-step
+
+The induced homomorphism
 \[
 i_*:
 \pi_1(A,x_0)
@@ -101,7 +125,9 @@ i_*:
 \]
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the generator of
 \[
 \pi_1(A)\cong\mathbb Z
@@ -128,9 +154,14 @@ Hence the homomorphism
 n\mapsto w^n,
 \]
 is injective.
+
 :::
 
-<1>5. The homology groups are
+:::
+
+::: pf-step
+
+The homology groups are
 \[
 H_0(A)\cong\mathbb Z,
 \qquad
@@ -147,7 +178,9 @@ H_1(X)\cong\mathbb Z^4,
 H_j(X)=0\quad(j\ge2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The groups for
 \[
 A\cong S^1
@@ -159,9 +192,14 @@ X\simeq\bigvee^4S^1,
 \]
 whose cellular homology has one copy of $\mathbb Z$ in degree $0$, four
 copies in degree $1$, and zero in higher degrees.
+
 :::
 
-<1>6. On degree-$0$ homology,
+:::
+
+::: pf-step
+
+On degree-$0$ homology,
 \[
 i_*:
 H_0(A)
@@ -170,7 +208,9 @@ H_0(X)
 \]
 is an isomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Both spaces are path-connected, and inclusion sends the unique path
 component of $A$ into the unique path component of $X$.
 Thus the induced map on
@@ -178,9 +218,14 @@ Thus the induced map on
 H_0\cong\mathbb Z
 \]
 is the identity under the standard identifications.
+
 :::
 
-<1>7. On degree-$1$ homology,
+:::
+
+::: pf-step
+
+On degree-$1$ homology,
 \[
 \boxed{
 i_*:
@@ -191,7 +236,9 @@ H_1(X)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a path-connected space,
 \[
 H_1(Y;\mathbb Z)
@@ -214,9 +261,14 @@ Thus the generator of
 H_1(A)\cong\mathbb Z
 \]
 maps to zero.
+
 :::
 
-<1>8. In every degree
+:::
+
+::: pf-step
+
+In every degree
 \[
 j\ge2,
 \]
@@ -226,13 +278,22 @@ i_*:H_j(A)\to H_j(X)
 \]
 is the zero map between zero groups.
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from step <1>5.
+
 :::
 
-<1>9. The boundary circle $A$ is not a retract of $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The boundary circle $A$ is not a retract of $X$.
+
+
+::: pf-proof
+
 Suppose there were a retraction
 \[
 r:X\to A.
@@ -264,11 +325,18 @@ Since
 H_1(A)\cong\mathbb Z\ne0,
 \]
 its identity map is nonzero, a contradiction.
+
 :::
 
-<1>10. The same obstruction is visible directly on fundamental groups.
+:::
 
-::: {.proof}
+::: pf-step
+
+The same obstruction is visible directly on fundamental groups.
+
+
+::: pf-proof
+
 If a retraction existed, then
 \[
 r_*\circ i_*
@@ -297,13 +365,17 @@ whereas the identity on
 \mathbb Z
 \]
 would send $c$ to the nonzero generator $c$.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>4 compute the map on fundamental groups,
 steps <1>5--<1>8 compute the maps on homology,
 and steps <1>9--<1>10 prove that $A$ is not a retract of $X$.
+
 :::
+
 :::

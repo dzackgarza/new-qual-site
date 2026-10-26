@@ -18,13 +18,18 @@ Let $I=[0,1]$, let $C(X,I)$ be the set of continuous functions from $X$ to $I$, 
 3. Prove that $|C(I,I)|=\mathfrak c$. The source hints that continuity allows a function on $I$ to be determined by its values on a smaller subset.
 :::
 
-::: {.solution}
-<1>1. If $X\ne\varnothing$, then
+::: pf
+
+::: pf-step
+
+If $X\ne\varnothing$, then
 \[
 \boxed{|C(X,I)|\ge\mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $t\in I$, let
 \[
 c_t:X\to I,
@@ -37,12 +42,19 @@ $c_t\ne c_s$. Thus
 t\longmapsto c_t
 \]
 is an injection from $I$ into $C(X,I)$, proving the inequality.
+
 :::
 
-<1>2. The set of all functions $I\to I$ has cardinality strictly larger than
+:::
+
+::: pf-step
+
+The set of all functions $I\to I$ has cardinality strictly larger than
 $\mathfrak c$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every function
 \[
 \chi:I\to\{0,1\}
@@ -59,15 +71,22 @@ Therefore
 \[
 \boxed{|I^I|>\mathfrak c}.
 \]
+
 :::
 
-<1>3. A continuous function $f:I\to I$ is uniquely determined by its
+:::
+
+::: pf-step
+
+A continuous function $f:I\to I$ is uniquely determined by its
 restriction to
 \[
 Q=\mathbb Q\cap I.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set $Q$ is dense in $I$. If $f,g\in C(I,I)$ agree on $Q$, then for any
 $x\in I$ choose a sequence $(q_n)$ in $Q$ with $q_n\to x$. Continuity gives
 \[
@@ -76,14 +95,21 @@ f(x)=\lim_{n\to\infty}f(q_n)
 =g(x).
 \]
 Thus $f=g$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 |C(I,I)|\le\mathfrak c.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, restriction defines an injection
 \[
 C(I,I)\hookrightarrow I^Q.
@@ -98,21 +124,32 @@ Since $Q$ is countable,
 =\mathfrak c.
 \]
 Hence $|C(I,I)|\le\mathfrak c$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{|C(I,I)|=\mathfrak c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Applying step <1>1 with $X=I$ gives
 $|C(I,I)|\ge\mathfrak c$, while step <1>4 gives the reverse inequality.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1, <1>2, and <1>5 prove the three requested assertions.
+
 :::
+
 :::

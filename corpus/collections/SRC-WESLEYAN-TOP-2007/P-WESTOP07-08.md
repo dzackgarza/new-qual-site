@@ -14,7 +14,6 @@ audit:
 Explain the covering-space proof of the fundamental group of the circle $S^1$, formulating the proof as generally as possible without asserting more generality than the argument supports.
 :::
 
-::: {.solution}
 Use the covering map
 $$
 p:\mathbb R\to S^1,
@@ -30,7 +29,11 @@ $$
 1\in S^1.
 $$
 
-<1>1. Every based loop
+::: pf
+
+::: pf-step
+
+Every based loop
 $$
 \gamma:(I,\partial I)\to(S^1,1)
 $$
@@ -43,20 +46,29 @@ $$
 \widetilde\gamma(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the path-lifting theorem for covering spaces, with the initial point in the fiber over
 $$
 1.
 $$
+
 :::
 
-<1>2. The endpoint of such a lift is an integer:
+:::
+
+::: pf-step
+
+The endpoint of such a lift is an integer:
 $$
 \boxed{
 \widetilde\gamma(1)\in\mathbb Z}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \gamma(1)=1,
@@ -77,15 +89,22 @@ p^{-1}(1)
 =
 \mathbb Z.
 $$
+
 :::
 
-<1>3. If two based loops are based-homotopic, then their lifts beginning at
+:::
+
+::: pf-step
+
+If two based loops are based-homotopic, then their lifts beginning at
 $$
 0
 $$
 have the same endpoint.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 H:I\times I\to S^1
@@ -152,9 +171,14 @@ $$
 s=1
 $$
 agree.
+
 :::
 
-<1>4. Hence the lift endpoint defines a map
+:::
+
+::: pf-step
+
+Hence the lift endpoint defines a map
 $$
 \Phi:
 \pi_1(S^1,1)
@@ -166,7 +190,9 @@ $$
 \widetilde\gamma(1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that the endpoint depends only on the based homotopy class
 $$
 [\gamma].
@@ -176,15 +202,22 @@ $$
 \Phi
 $$
 is well defined.
+
 :::
 
-<1>5. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \Phi
 $$
 is a homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \gamma,\eta
@@ -273,15 +306,22 @@ m+n
 \Phi([\gamma])
 +\Phi([\eta]).
 $$
+
 :::
 
-<1>6. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \Phi
 $$
 is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 $$
 n\in\mathbb Z,
@@ -308,15 +348,22 @@ Thus
 $$
 \Phi([\gamma_n])=n.
 $$
+
 :::
 
-<1>7. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \Phi
 $$
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \Phi([\gamma])=0.
@@ -362,9 +409,14 @@ in
 $$
 \pi_1(S^1,1).
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \pi_1(S^1,1)
@@ -372,17 +424,26 @@ $$
 \mathbb Z}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>5--<1>7 show that
 $$
 \Phi
 $$
 is a bijective homomorphism.
+
 :::
 
-<1>9. The general part of the argument is the following endpoint-of-lifts statement.
+:::
 
-::: {.proof}
+::: pf-step
+
+The general part of the argument is the following endpoint-of-lifts statement.
+
+
+::: pf-proof
+
 Let
 $$
 p:(\widetilde X,\widetilde x_0)
@@ -456,11 +517,15 @@ $$
 \mathbb Z,
 $$
 and translation invariance of the covering makes concatenation correspond to addition, as shown in step <1>5.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 computes the fundamental group of the circle, and step <1>9 states exactly the general covering-space mechanism used in the proof without claiming more structure on a general fiber than the argument supplies.
+
 :::
+
 :::

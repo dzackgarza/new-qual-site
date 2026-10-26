@@ -14,14 +14,19 @@ audit:
 Let $T_n$ denote the closed orientable surface of genus $n$, for $n\ge1$. Prove that if $p$ and $q$ are distinct positive integers, then $T_p$ and $T_q$ are not homeomorphic.
 :::
 
-::: {.solution}
-<1>1. The closed orientable surface
+::: pf
+
+::: pf-step
+
+The closed orientable surface
 $$
 T_n
 $$
 admits a CW decomposition with one $0$-cell, $2n$ $1$-cells, and one $2$-cell.
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard polygonal presentation
 $$
 a_1b_1a_1^{-1}b_1^{-1}
@@ -39,14 +44,21 @@ $$
 a_1,b_1,\ldots,a_n,b_n.
 $$
 The polygon interior gives one $2$-cell.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\chi(T_n)=2-2n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \chi(T_n)
@@ -55,11 +67,18 @@ $$
 =
 2-2n.
 $$
+
 :::
 
-<1>3. Euler characteristic is invariant under homeomorphism.
+:::
 
-::: {.proof}
+::: pf-step
+
+Euler characteristic is invariant under homeomorphism.
+
+
+::: pf-proof
+
 Homeomorphic finite CW complexes have the same singular homology groups, hence the same Euler characteristic
 $$
 \chi
@@ -67,9 +86,14 @@ $$
 \sum_k(-1)^k\operatorname{rank}H_k(-;\mathbb Z).
 $$
 Thus homeomorphic closed surfaces have equal Euler characteristic.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 T_p\cong T_q,
 $$
@@ -78,7 +102,9 @@ $$
 p=q.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \chi(T_p)=\chi(T_q).
@@ -93,9 +119,14 @@ Hence
 $$
 p=q.
 $$
+
 :::
 
-<1>5. Consequently, if
+:::
+
+::: pf-step
+
+Consequently, if
 $$
 p\ne q,
 $$
@@ -104,13 +135,19 @@ $$
 \boxed{T_p\not\cong T_q}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the contrapositive of step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

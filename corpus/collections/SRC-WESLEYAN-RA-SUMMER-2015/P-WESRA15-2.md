@@ -24,29 +24,41 @@ Let $\mu,\nu$ be finite measures such that
 Prove that $\mu(A)=\nu(A)$ for every $A\in\mathcal A$.
 :::
 
-::: {.solution}
 Let
 $$
 \mathcal D=\{A\in\mathcal A:\mu(A)=\nu(A)\}.
 $$
 The useful closure property here is that $\mathcal D$ is a Dynkin system; it need not be a $\sigma$-algebra merely from its definition.
 
-<1>1. One has $X\in\mathcal D$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+One has $X\in\mathcal D$.
+
+
+::: pf-proof
+
 Because $\mathcal C$ is an algebra, $X\in\mathcal C$. The hypothesis therefore gives
 $$
 \mu(X)=\nu(X),
 $$
 so $X\in\mathcal D$.
+
 :::
 
-<1>2. If $A,B\in\mathcal D$ and $A\subseteq B$, then
+:::
+
+::: pf-step
+
+If $A,B\in\mathcal D$ and $A\subseteq B$, then
 $$
 B\setminus A\in\mathcal D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The measures are finite, so
 $$
 \mu(B\setminus A)=\mu(B)-\mu(A)
@@ -56,14 +68,21 @@ $$
 \mu(B)-\mu(A)=\nu(B)-\nu(A).
 $$
 Hence $B\setminus A\in\mathcal D$.
+
 :::
 
-<1>3. If $A_1,A_2,\ldots\in\mathcal D$ are pairwise disjoint, then
+:::
+
+::: pf-step
+
+If $A_1,A_2,\ldots\in\mathcal D$ are pairwise disjoint, then
 $$
 \bigcup_{n=1}^{\infty}A_n\in\mathcal D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Countable additivity gives
 $$
 \mu\left(\bigcup_{n=1}^{\infty}A_n\right)
@@ -71,17 +90,31 @@ $$
 =\sum_{n=1}^{\infty}\nu(A_n)
 =\nu\left(\bigcup_{n=1}^{\infty}A_n\right).
 $$
+
 :::
 
-<1>4. Thus $\mathcal D$ is a Dynkin system containing $\mathcal C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus $\mathcal D$ is a Dynkin system containing $\mathcal C$.
+
+
+::: pf-proof
+
 Steps <1>1--<1>3 are the Dynkin-system axioms. The inclusion $\mathcal C\subseteq\mathcal D$ is exactly the hypothesis that $\mu$ and $\nu$ agree on every member of $\mathcal C$.
+
 :::
 
-<1>5. If a Dynkin system $\mathcal L$ contains an algebra $\mathcal C$, then $\mathcal L$ contains $\sigma(\mathcal C)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If a Dynkin system $\mathcal L$ contains an algebra $\mathcal C$, then $\mathcal L$ contains $\sigma(\mathcal C)$.
+
+
+::: pf-proof
+
 It suffices to prove this for the smallest Dynkin system $\lambda(\mathcal C)$ containing $\mathcal C$.
 
 First fix $C\in\mathcal C$ and define
@@ -123,33 +156,51 @@ $$
 \lambda(\mathcal C)=\sigma(\mathcal C).
 $$
 Consequently every Dynkin system containing $\mathcal C$ contains $\sigma(\mathcal C)$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \mathcal A\subseteq\mathcal D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $\mathcal D$ is a Dynkin system containing the algebra $\mathcal C$. Step <1>5 therefore gives
 $$
 \sigma(\mathcal C)\subseteq\mathcal D.
 $$
 Since $\mathcal A=\sigma(\mathcal C)$, the claim follows.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\mu(A)=\nu(A)\quad\text{for every }A\in\mathcal A}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, every $A\in\mathcal A$ belongs to $\mathcal D$, whose defining property is equality of the two measures.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

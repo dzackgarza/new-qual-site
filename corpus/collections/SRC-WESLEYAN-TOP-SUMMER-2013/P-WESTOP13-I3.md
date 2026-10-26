@@ -21,7 +21,6 @@ Let $C_r$ denote the circle of radius $r$ centered at the origin in $\mathbb R^2
    \]
 :::
 
-::: {.solution}
 Let
 $$
 \rho:\RR^2\to[0,\infty),
@@ -29,7 +28,11 @@ $$
 \rho(x)=\|x\|.
 $$
 
-<1>1. The connected components and path-connected components of $S$ are
+::: pf
+
+::: pf-step
+
+The connected components and path-connected components of $S$ are
 $$
 \boxed{
 C_{1/n}\ (n\ge1),
@@ -39,7 +42,9 @@ C_{1/n}\ (n\ge1),
 \{(1,1)\}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The radial image of $S$ is
 $$
 \rho(S)=\{0\}\cup\{1/n:n\ge1\}\cup\{\sqrt2\}.
@@ -47,11 +52,18 @@ $$
 This subspace of $\RR$ is totally disconnected. If $A\subseteq S$ is connected, then the continuous image $\rho(A)$ is connected, hence is a singleton. Therefore every connected subset of $S$ lies in one radial fiber.
 
 For radius $1/n$, the fiber is the whole circle $C_{1/n}$, which is path-connected. The fibers at radii $0$ and $\sqrt2$ are respectively the singletons $\{(0,0)\}$ and $\{(1,1)\}$. Thus these fibers are exactly the connected components. Since each is path-connected, they are also exactly the path-connected components.
+
 :::
 
-<1>2. The quasi-components of $S$ are the same sets as in step <1>1.
+:::
 
-::: {.proof}
+::: pf-step
+
+The quasi-components of $S$ are the same sets as in step <1>1.
+
+
+::: pf-proof
+
 The space
 $$
 \bigcup_{n\ge1}C_{1/n}\cup\{(0,0)\}
@@ -63,9 +75,14 @@ $$
 S\cap\rho^{-1}([0,a))
 $$
 with $a>0$ chosen between successive radii shrink to $(0,0)$.
+
 :::
 
-<1>3. The connected components and path-connected components of $T$ are
+:::
+
+::: pf-step
+
+The connected components and path-connected components of $T$ are
 $$
 \boxed{
 C_r\quad(r\in\QQ,\ 0<r<1),
@@ -77,7 +94,9 @@ C_r\quad(r\in\QQ,\ 0<r<1),
 \{(-1,0)\}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The radial image is
 $$
 \rho(T)=\bigl(\QQ\cap(0,1)\bigr)\cup\{0,1\},
@@ -89,11 +108,18 @@ $$
 \{(-1,0),(1,0)\},
 $$
 whose two points form separate connected components because they have disjoint relative neighborhoods in $T$. Thus the listed sets are the connected components, and each is path-connected, so they are also the path-connected components.
+
 :::
 
-<1>4. For every rational $r\in(0,1)$, the quasi-component of a point of $C_r$ is exactly $C_r$, and the quasi-component of $(0,0)$ is $\{(0,0)\}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every rational $r\in(0,1)$, the quasi-component of a point of $C_r$ is exactly $C_r$, and the quasi-component of $(0,0)$ is $\{(0,0)\}$.
+
+
+::: pf-proof
+
 Each connected component is contained in the corresponding quasi-component, so $C_r$ lies in the quasi-component of each of its points.
 
 If $r\ne s$ are two values in
@@ -105,11 +131,18 @@ $$
 T\cap\rho^{-1}([0,a))
 $$
 is clopen in $T$: its complement is $T\cap\rho^{-1}((a,\infty))$, and no point of $T$ has radius $a$. Hence points with distinct radii lie in distinct quasi-components. This isolates every $C_r$ from all other radial fibers and, by taking arbitrarily small irrational $a>0$, isolates $(0,0)$ from every other point.
+
 :::
 
-<1>5. The two points $(1,0)$ and $(-1,0)$ belong to the same quasi-component of $T$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two points $(1,0)$ and $(-1,0)$ belong to the same quasi-component of $T$.
+
+
+::: pf-proof
+
 Let $U\subseteq T$ be clopen and suppose $(1,0)\in U$. Since $U$ is open in $T$, there is $\varepsilon>0$ such that
 $$
 B((1,0),\varepsilon)\cap T\subseteq U.
@@ -126,14 +159,21 @@ $$
 For every rational $r<1$ sufficiently close to $1$, the same circle $C_r$ also meets this ball. Choosing $r$ close enough to $1$ to satisfy both requirements gives a circle $C_r$ contained in $U$ but also meeting $T\setminus U$, a contradiction.
 
 Thus every clopen neighborhood of $(1,0)$ contains $(-1,0)$. By symmetry, every clopen neighborhood of $(-1,0)$ contains $(1,0)$. Hence the two points lie in the same quasi-component.
+
 :::
 
-<1>6. No point of radius less than $1$ lies in the quasi-component from step <1>5. Therefore that quasi-component is exactly
+:::
+
+::: pf-step
+
+No point of radius less than $1$ lies in the quasi-component from step <1>5. Therefore that quasi-component is exactly
 $$
 \boxed{\{(-1,0),(1,0)\}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $x\in T$ have radius $r<1$. Choose an irrational $a$ with
 $$
 r<a<1.
@@ -143,9 +183,14 @@ $$
 T\cap\rho^{-1}((a,\infty))
 $$
 is a clopen subset of $T$ containing both radius-$1$ points but not $x$. Thus $x$ is not in their quasi-component. Combine this with step <1>5.
+
 :::
 
-<1>7. Hence the quasi-components of $T$ are
+:::
+
+::: pf-step
+
+Hence the quasi-components of $T$ are
 $$
 \boxed{
 C_r\quad(r\in\QQ,\ 0<r<1),
@@ -155,13 +200,19 @@ C_r\quad(r\in\QQ,\ 0<r<1),
 \{(-1,0),(1,0)\}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4--<1>6 give all quasi-components.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 determine all three kinds of components for $S$, and steps <1>3--<1>7 do so for $T$.
+
 :::
+
 :::

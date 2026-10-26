@@ -26,8 +26,11 @@ If $Y$ is connected and the two lifts agree at one point of $Y$, prove that
 on all of $Y$.
 :::
 
-::: {.solution}
-<1>1. A map
+::: pf
+
+::: pf-step
+
+A map
 \[
 p:\widetilde X\to X
 \]
@@ -56,12 +59,19 @@ p|_{V_\lambda}:V_\lambda\to U
 \]
 is a homeomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of a covering space.
 Such a neighborhood $U$ is called evenly covered.
+
 :::
 
-<1>2. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \widetilde f_1
 \quad\text{and}\quad
@@ -76,11 +86,18 @@ f
 p\circ\widetilde f_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of being a lift of $f$ through $p$.
+
 :::
 
-<1>3. Define the coincidence set
+:::
+
+::: pf-step
+
+Define the coincidence set
 \[
 E
 \coloneqq
@@ -92,13 +109,22 @@ By hypothesis,
 E\ne\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two lifts agree at at least one point of $Y$.
+
 :::
 
-<1>4. The set $E$ is open in $Y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $E$ is open in $Y$.
+
+
+::: pf-proof
+
 Take
 \[
 y_0\in E.
@@ -183,15 +209,22 @@ Hence
 W\subseteq E,
 \]
 so $E$ is open.
+
 :::
 
-<1>5. The complement
+:::
+
+::: pf-step
+
+The complement
 \[
 Y\setminus E
 \]
 is open in $Y$.
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 y_0\notin E.
@@ -249,16 +282,28 @@ Thus
 W\subseteq Y\setminus E,
 \]
 so the complement is open.
+
 :::
 
-<1>6. Therefore $E$ is both open and closed in $Y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $E$ is both open and closed in $Y$.
+
+
+::: pf-proof
+
 Step <1>4 gives openness of $E$, while step <1>5 says its complement is
 open, equivalently $E$ is closed.
+
 :::
 
-<1>7. Since $Y$ is connected and
+:::
+
+::: pf-step
+
+Since $Y$ is connected and
 \[
 E\ne\varnothing,
 \]
@@ -267,16 +312,23 @@ one has
 E=Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A connected space has no nontrivial subset that is both open and closed.
 By step <1>3, $E$ is nonempty.
 Hence the only possibility is
 \[
 E=Y.
 \]
+
 :::
 
-<1>8. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \widetilde f_1
@@ -286,19 +338,25 @@ E=Y.
 \]
 on all of $Y$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7, every point
 \[
 y\in Y
 \]
 lies in the coincidence set $E$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states the definition of a covering space, and steps <1>2--<1>8
 prove uniqueness of lifts from a connected domain once they agree at one
 point.
+
 :::
+
 :::

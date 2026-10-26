@@ -27,15 +27,20 @@ with the subspace topology. For the product space $U^\omega$, determine which of
 8. normal.
 :::
 
-::: {.solution}
 Write a point of $U^\omega$ as
 $$
 x=(x_1,x_2,\ldots).
 $$
 
-<1>1. The space $U^\omega$ is not connected.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The space $U^\omega$ is not connected.
+
+
+::: pf-proof
+
 The subset
 $$
 [-2,0)
@@ -45,17 +50,31 @@ $$
 C=\{x\in U^\omega:x_1\in[-2,0)\}
 $$
 is a nonempty proper clopen subset of $U^\omega$, being the inverse image of $[-2,0)$ under the first-coordinate projection. Hence $U^\omega$ is disconnected.
+
 :::
 
-<1>2. The space $U^\omega$ is not path-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $U^\omega$ is not path-connected.
+
+
+::: pf-proof
+
 Every path-connected space is connected. Step <1>1 shows that $U^\omega$ is not connected, so it cannot be path-connected.
+
 :::
 
-<1>3. The space $U^\omega$ is not compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $U^\omega$ is not compact.
+
+
+::: pf-proof
+
 The coordinate projection
 $$
 \pi_1:U^\omega\to U
@@ -67,9 +86,14 @@ $$
 -\frac1n\in[-2,0)\subset U
 $$
 has no convergent subsequence in $U$: its only possible limit in $\RR$ is $0$, and $0\notin U$. Since $U$ is metrizable, sequential compactness is equivalent to compactness, so $U$ is not compact. Therefore $U^\omega$ cannot be compact.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 $$
 d(x,y)
 \coloneqq
@@ -78,7 +102,9 @@ d(x,y)
 $$
 Then $d$ is a metric on $U^\omega$ that induces the product topology.
 
-::: {.proof}
+
+::: pf-proof
+
 Each summand is nonnegative and bounded by $2^{-n}$, so the series converges. The triangle inequality follows termwise from the metric
 $$
 (s,t)\longmapsto\min\{1,|s-t|\}
@@ -115,15 +141,27 @@ $$
 \prod_{n=1}^N B_U(x_n,\eta)\times\prod_{n>N}U
 $$
 is contained in $B_d(x,\varepsilon)$. Thus the metric and product topologies coincide.
+
 :::
 
-<1>5. The space $U^\omega$ is Hausdorff, first countable, metrizable, completely regular, and normal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $U^\omega$ is Hausdorff, first countable, metrizable, completely regular, and normal.
+
+
+::: pf-proof
+
 Metrizability follows from step <1>4. Every metric space is Hausdorff and first countable; metric balls of radii $1/m$ give a countable neighborhood basis at each point. Every metric space is also completely regular and normal by the standard metric-space separation theorems.
+
 :::
 
-<1>6. Therefore the answers are
+:::
+
+::: pf-step
+
+Therefore the answers are
 $$
 \boxed{
 \begin{array}{c|c}
@@ -139,13 +177,19 @@ $$
 \end{array}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the combination of steps <1>1--<1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives all eight requested determinations.
+
 :::
+
 :::

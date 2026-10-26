@@ -27,24 +27,34 @@ For connected spaces $X,Y$, give an example satisfying each statement below or s
 12. $\pi_1(X)\cong\pi_1(Y)$ but $H_2(X)\not\cong H_2(Y)$.
 :::
 
-::: {.solution}
-<1>1. Statement (1) is possible:
+::: pf
+
+::: pf-step
+
+Statement (1) is possible:
 \[
 X=\{*\},
 \qquad
 Y=[0,1].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both spaces are contractible, so
 \[
 X\simeq Y.
 \]
 They are not homeomorphic because $X$ has one point and $Y$ has more than
 one point.
+
 :::
 
-<1>2. Statement (2) is possible as literally stated.
+:::
+
+::: pf-step
+
+Statement (2) is possible as literally stated.
 
 Take two disjoint copies of the same connected space, for example
 \[
@@ -57,7 +67,9 @@ inside
 S^1\times\mathbb R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two spaces are homeomorphic, hence homotopy equivalent.
 
 However, a deformation retract relation
@@ -75,11 +87,18 @@ other.
 Thus the statement is possible.
 This also records that “is a deformation retract of” depends on a chosen
 inclusion, unlike homotopy equivalence.
+
 :::
 
-<1>3. Statement (3) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (3) is impossible.
+
+
+::: pf-proof
+
 If $X$ is a deformation retract of $Y$, then there is a retraction
 \[
 r:Y\to X
@@ -113,26 +132,40 @@ are homotopy inverses, so
 \[
 X\simeq Y.
 \]
+
 :::
 
-<1>4. Statement (4) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (4) is impossible.
+
+
+::: pf-proof
+
 Homotopy-equivalent connected spaces have isomorphic fundamental groups.
 Indeed, homotopy inverse maps induce mutually inverse homomorphisms on
 \[
 \pi_1.
 \]
+
 :::
 
-<1>5. Statement (5) is possible:
+:::
+
+::: pf-step
+
+Statement (5) is possible:
 \[
 X=\{*\},
 \qquad
 Y=S^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both fundamental groups are trivial:
 \[
 \pi_1(X)=0
@@ -149,9 +182,14 @@ Homotopy-equivalent spaces have isomorphic homology groups, so
 \[
 X\not\simeq Y.
 \]
+
 :::
 
-<1>6. Statement (6) is possible:
+:::
+
+::: pf-step
+
+Statement (6) is possible:
 \[
 X=S^1,
 \qquad
@@ -159,7 +197,9 @@ Y=S^1\vee S^2,
 \]
 with $X$ the $S^1$ wedge summand.
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 r:S^1\vee S^2\to S^1
@@ -192,19 +232,33 @@ H_2(S^1\vee S^2)
 \]
 Thus they are not homotopy equivalent, so the retraction is not a
 deformation retraction.
+
 :::
 
-<1>7. Statement (7) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (7) is impossible.
+
+
+::: pf-proof
+
 A deformation retraction is, by definition, a retraction together with an
 additional homotopy.
 Thus every deformation retract is automatically a retract.
+
 :::
 
-<1>8. Statement (8) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (8) is impossible.
+
+
+::: pf-proof
+
 If $X$ is a deformation retract of $Y$, then
 \[
 X\simeq Y
@@ -217,16 +271,23 @@ Hence
 \pi_1(Y)
 \]
 by homotopy invariance of the fundamental group.
+
 :::
 
-<1>9. Statement (9) is possible:
+:::
+
+::: pf-step
+
+Statement (9) is possible:
 \[
 X=S^1\vee S^1,
 \qquad
 Y=T^2=S^1\times S^1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the wedge,
 \[
 \pi_1(X)
@@ -266,11 +327,18 @@ H_1(Y)
 \]
 Thus the first homology groups are isomorphic while the fundamental groups
 are not.
+
 :::
 
-<1>10. Statement (10) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (10) is impossible.
+
+
+::: pf-proof
+
 For every path-connected space $Z$,
 \[
 H_1(Z;\mathbb Z)
@@ -289,16 +357,23 @@ H_1(X)
 \cong
 H_1(Y).
 \]
+
 :::
 
-<1>11. Statement (11) is possible:
+:::
+
+::: pf-step
+
+Statement (11) is possible:
 \[
 X=S^1,
 \qquad
 Y=\{*\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both second homology groups vanish:
 \[
 H_2(S^1)=0
@@ -314,16 +389,23 @@ But
 \pi_1(\{*\})=0.
 \]
 Thus the fundamental groups are not isomorphic.
+
 :::
 
-<1>12. Statement (12) is possible:
+:::
+
+::: pf-step
+
+Statement (12) is possible:
 \[
 X=\{*\},
 \qquad
 Y=S^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 As in step <1>5,
 \[
 \pi_1(X)
@@ -342,9 +424,14 @@ H_2(Y)
 \cong
 \mathbb Z.
 \]
+
 :::
 
-<1>13. The complete classification is therefore
+:::
+
+::: pf-step
+
+The complete classification is therefore
 \[
 \boxed{
 \begin{array}{c|cccccccccccc}
@@ -368,14 +455,20 @@ H_2(Y)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This table collects steps <1>1--<1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>12 give either an explicit example or an impossibility proof
 for every requested statement.
+
 :::
+
 :::

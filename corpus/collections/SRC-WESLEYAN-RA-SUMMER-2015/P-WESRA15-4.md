@@ -23,8 +23,11 @@ E=[0,1]\setminus\mathbb Q.
 Construct a closed set $F\subset E$ whose Lebesgue measure exceeds $3/4$.
 :::
 
-::: {.solution}
-<1>1. Enumerate the rational numbers in $[0,1]$ as
+::: pf
+
+::: pf-step
+
+Enumerate the rational numbers in $[0,1]$ as
 $$
 \QQ\cap[0,1]=\{q_1,q_2,\ldots\}.
 $$
@@ -37,14 +40,21 @@ q_n+2^{-n-4}
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The rationals are countable, so the displayed enumeration exists. Each $I_n$ is an open interval containing $q_n$ and has length
 $$
 \abs{I_n}=2^{-n-3}.
 $$
+
 :::
 
-<1>2. The open set
+:::
+
+::: pf-step
+
+The open set
 $$
 U=\bigcup_{n=1}^{\infty}I_n
 $$
@@ -53,7 +63,9 @@ $$
 m(U)\le\frac18.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every $q_n$ belongs to $I_n$, so
 $$
 \QQ\cap[0,1]\subseteq U.
@@ -69,9 +81,14 @@ m(U)
 &=\frac18.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 F=[0,1]\setminus U.
 $$
@@ -80,20 +97,29 @@ $$
 F\subseteq E=[0,1]\setminus\QQ.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set $U$ is open, so $U^c$ is closed. Hence
 $$
 F=[0,1]\cap U^c
 $$
 is closed in $\RR$. By step <1>2, every rational point of $[0,1]$ lies in $U$, so no rational point belongs to $F$. Thus $F\subseteq E$.
+
 :::
 
-<1>4. The set $F$ satisfies
+:::
+
+::: pf-step
+
+The set $F$ satisfies
 $$
 \boxed{m(F)>\frac34}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $F$ and $U\cap[0,1]$ partition $[0,1]$,
 $$
 m(F)
@@ -105,11 +131,15 @@ Step <1>2 therefore gives
 $$
 m(F)\ge1-\frac18=\frac78>\frac34.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>4 give a closed set $F\subset E$ with the required measure.
+
 :::
+
 :::

@@ -19,17 +19,22 @@ Let $X=S^1\vee S^1$.
 4. Describe the universal abelian cover of $X$, corresponding to the commutator subgroup of $\pi_1(X)$.
 :::
 
-::: {.solution}
 Fix the wedge point as basepoint and write
 \[
 \pi_1(X)=F(a,b),
 \]
 where $a$ and $b$ are the two circle generators.
 
-<1>1. Up to covering equivalence, there are exactly three connected
+::: pf
+
+::: pf-step
+
+Up to covering equivalence, there are exactly three connected
 $2$-sheeted covers of $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 Connected $2$-sheeted covers correspond to transitive actions of $F(a,b)$ on
 a two-element fiber, equivalently to homomorphisms
 \[
@@ -46,9 +51,14 @@ Geometrically, in the first cover the $a$-loop interchanges the two sheets
 and the $b$-loop fixes them; in the second the roles are reversed; in the
 third both loops interchange the sheets. These monodromies are distinct over
 the labeled base $X$, so the three covers are inequivalent.
+
 :::
 
-<1>2. For the cover with
+:::
+
+::: pf-step
+
+For the cover with
 \[
 \rho(a)=1,\qquad \rho(b)=0,
 \]
@@ -61,7 +71,9 @@ H_a=\ker\rho
 \operatorname{Deck}\cong\mathbb Z/2 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The kernel consists exactly of words whose total exponent sum in $a$ is even.
 Using Schreier representatives $\{1,a\}$ for the two cosets gives the
 generators
@@ -72,9 +84,14 @@ Because $H_a$ has index $2$, it is normal. Hence the deck group is
 \[
 F(a,b)/H_a\cong\mathbb Z/2.
 \]
+
 :::
 
-<1>3. For the cover with
+:::
+
+::: pf-step
+
+For the cover with
 \[
 \rho(a)=0,\qquad \rho(b)=1,
 \]
@@ -87,13 +104,20 @@ H_b=\ker\rho
 \operatorname{Deck}\cong\mathbb Z/2 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Here the kernel consists of words whose total exponent sum in $b$ is even.
 Schreier representatives $\{1,b\}$ give the displayed generators. Again the
 subgroup has index $2$, hence is normal, and the quotient is $\mathbb Z/2$.
+
 :::
 
-<1>4. For the cover with
+:::
+
+::: pf-step
+
+For the cover with
 \[
 \rho(a)=1,\qquad \rho(b)=1,
 \]
@@ -106,7 +130,9 @@ H_{a+b}=\ker\rho
 \operatorname{Deck}\cong\mathbb Z/2 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The kernel consists of words for which the sum of the exponent sums of $a$
 and $b$ is even. Using the Schreier representatives $\{1,a\}$ gives
 \[
@@ -114,11 +140,18 @@ a^2,\qquad ab,\qquad ba^{-1}
 \]
 as generators. This is again an index-$2$ normal subgroup, so its deck group
 is $\mathbb Z/2$.
+
 :::
 
-<1>5. There exists a connected covering of $X$ that is not regular.
+:::
 
-::: {.proof}
+::: pf-step
+
+There exists a connected covering of $X$ that is not regular.
+
+
+::: pf-proof
+
 Define a monodromy homomorphism
 \[
 \rho:F(a,b)\to S_3
@@ -138,11 +171,18 @@ H=\rho^{-1}(\operatorname{Stab}_{S_3}(1)).
 The stabilizer of $1$ is not normal in $S_3$. Since $\rho$ is surjective,
 $H$ is not normal in $F(a,b)$. A connected covering is regular exactly when
 its associated subgroup is normal, so this covering is not regular.
+
 :::
 
-<1>6. The universal cover of $X$ is the $4$-regular tree.
+:::
 
-::: {.proof}
+::: pf-step
+
+The universal cover of $X$ is the $4$-regular tree.
+
+
+::: pf-proof
+
 Take the Cayley graph of the free group $F(a,b)$ with respect to
 $a^{\pm1},b^{\pm1}$. Its vertices are the elements $g\in F(a,b)$, with an
 $a$-edge from $g$ to $ga$ and a $b$-edge from $g$ to $gb$. Map every vertex
@@ -154,12 +194,19 @@ not the identity, so the Cayley graph contains no nontrivial reduced cycles;
 hence it is a tree. It is therefore simply connected and is the universal
 cover. Each vertex has one incident edge in each of the four directions
 $a,a^{-1},b,b^{-1}$, so the tree is $4$-regular.
+
 :::
 
-<1>7. The universal abelian cover is the square grid with vertex set
+:::
+
+::: pf-step
+
+The universal abelian cover is the square grid with vertex set
 $\mathbb Z^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The abelianization map is
 \[
 F(a,b)\longrightarrow F(a,b)^{\mathrm{ab}}\cong\mathbb Z^2,
@@ -182,13 +229,17 @@ the two circles. Its deck group is
 \[
 \mathbb Z^2.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 through <1>4 classify the connected two-sheeted covers and compute
 their subgroups and deck groups; step <1>5 gives a nonregular cover; steps
 <1>6 and <1>7 describe the universal and universal-abelian covers.
+
 :::
+
 :::

@@ -31,24 +31,43 @@ For each property $P$ determine, with explanation:
    \]
 :::
 
-::: {.solution}
 Write \(\kappa=|A|\), and interpret “countable” as “at most countable.”
 
-<1>1. For the property “finite,” both products and sums preserve the property for every family indexed by \(A\) exactly when \(\kappa\) is finite.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For the property “finite,” both products and sums preserve the property for every family indexed by \(A\) exactly when \(\kappa\) is finite.
+
+
+::: pf-proof
+
 If \(A\) is finite, a finite product and a finite disjoint union of finite sets are finite. If \(A\) is infinite, take every \(X_a=\{0,1\}\) for products: then \(\prod_{a\in A}X_a\) contains at least one point for every subset of \(A\), so it is infinite. For sums, take every \(X_a\) to be a singleton; then \(\sum_{a\in A}X_a\) has cardinality \(\kappa\), hence is infinite.
+
 :::
 
-<1>2. For the property “countable,” products preserve the property exactly when \(\kappa\) is finite, while sums preserve it exactly when \(\kappa\le\aleph_0\).
+:::
 
-::: {.proof}
+::: pf-step
+
+For the property “countable,” products preserve the property exactly when \(\kappa\) is finite, while sums preserve it exactly when \(\kappa\le\aleph_0\).
+
+
+::: pf-proof
+
 A finite product of countable sets is countable. If \(A\) is infinite, taking every \(X_a=\{0,1\}\) gives \(\prod_{a\in A}X_a=\{0,1\}^A\), whose cardinality is \(2^\kappa>\kappa\ge\aleph_0\), so the product is uncountable. A disjoint union of countably many countable sets is countable, whereas for uncountable \(A\), the disjoint union of one singleton for each \(a\in A\) has cardinality \(\kappa\) and is uncountable.
+
 :::
 
-<1>3. For the property “connected,” products preserve the property for every cardinality \(\kappa\), while sums preserve it exactly when \(\kappa\le 1\).
+:::
 
-::: {.proof}
+::: pf-step
+
+For the property “connected,” products preserve the property for every cardinality \(\kappa\), while sums preserve it exactly when \(\kappa\le 1\).
+
+
+::: pf-proof
+
 Arbitrary products of connected spaces are connected. If some factor is empty, then the product is empty and hence connected. Otherwise fix \(p=(p_a)_{a\in A}\) in the product. For each finite \(F\subseteq A\), let
 \[
 Y_F=\prod_{a\in F}X_a\times\prod_{a\notin F}\{p_a\}.
@@ -56,21 +75,35 @@ Y_F=\prod_{a\in F}X_a\times\prod_{a\notin F}\{p_a\}.
 Each \(Y_F\) is connected because it is homeomorphic to a finite product of connected spaces, all \(Y_F\) contain \(p\), and their union is dense because every basic open set restricts only finitely many coordinates. Hence the closure of \(\bigcup_FY_F\), namely the full product, is connected.
 
 For sums, the empty sum and a one-summand sum are connected whenever the summands are connected. If \(\kappa\ge2\), choose every \(X_a\) to be a singleton. Any two distinct summands are disjoint nonempty open-and-closed subsets of the sum, so the sum is disconnected.
+
 :::
 
-<1>4. For the property “locally connected,” products preserve the property exactly when \(\kappa\) is finite, while sums preserve it for every cardinality \(\kappa\).
+:::
 
-::: {.proof}
+::: pf-step
+
+For the property “locally connected,” products preserve the property exactly when \(\kappa\) is finite, while sums preserve it for every cardinality \(\kappa\).
+
+
+::: pf-proof
+
 Finite products of locally connected spaces are locally connected: given a point and a basic open neighborhood, choose a connected open neighborhood in each factor and take their product.
 
 If \(A\) is infinite, let every \(X_a=\{0,1\}\) with the discrete topology. Each factor is locally connected. Any connected subset of \(\{0,1\}^A\) is a singleton, since its projection to every factor must be connected and therefore constant. No singleton is open when \(A\) is infinite, so no point has a connected open neighborhood. Thus the product is not locally connected.
 
 For sums, each summand is open in the topological sum. A connected open neighborhood of a point inside its summand is therefore also a connected open neighborhood in the whole sum. Hence arbitrary sums of locally connected spaces are locally connected.
+
 :::
 
-<1>5. For the property “metrizable,” products preserve the property exactly when \(\kappa\le\aleph_0\), while sums preserve it for every cardinality \(\kappa\).
+:::
 
-::: {.proof}
+::: pf-step
+
+For the property “metrizable,” products preserve the property exactly when \(\kappa\le\aleph_0\), while sums preserve it for every cardinality \(\kappa\).
+
+
+::: pf-proof
+
 Finite products are metrizable. For a countable product, choose metrics \(d_n\) on the factors and replace them by \(\min\{1,d_n\}\). Then
 \[
 D(x,y)=\sum_{n=1}^\infty 2^{-n}\min\{1,d_n(x_n,y_n)\}
@@ -88,11 +121,18 @@ D(x,y)=
 \end{cases}
 \]
 This is a metric, and its open balls of radius less than \(1\) give exactly the original topology on each open summand. Thus every such sum is metrizable.
+
 :::
 
-<1>6. For the property “normal,” products preserve the property exactly when \(\kappa\le1\), while sums preserve it for every cardinality \(\kappa\).
+:::
 
-::: {.proof}
+::: pf-step
+
+For the property “normal,” products preserve the property exactly when \(\kappa\le1\), while sums preserve it for every cardinality \(\kappa\).
+
+
+::: pf-proof
+
 For \(\kappa=0\), the product is a one-point space, and for \(\kappa=1\) it is just the single normal factor. For \(\kappa\ge2\), let \(\mathbb S\) be the Sorgenfrey line. It is normal: its basic intervals \([a,b)\) are clopen, so it is regular, it is Lindelöf, and every regular Lindelöf space is normal.
 
 The Sorgenfrey plane \(\mathbb S^2\) is not normal. The countable set \(\mathbb Q^2\) is dense in \(\mathbb S^2\), while
@@ -108,9 +148,14 @@ If \(\mathbb S^2\) were normal, then for every subset \(E\subseteq D\), Urysohn'
 such functions, whereas \(D\) has \(2^{2^{\aleph_0}}\) subsets. This contradicts Cantor's theorem. Hence \(\mathbb S^2\) is not normal. Taking two factors equal to \(\mathbb S\) and every remaining factor to be a singleton gives a product homeomorphic to \(\mathbb S^2\), so normality is not always preserved.
 
 For sums, let \(E,F\) be disjoint closed subsets of \(\sum_{a\in A}X_a\). Then \(E\cap X_a\) and \(F\cap X_a\) are disjoint closed subsets of the normal space \(X_a\), so there are disjoint open sets \(U_a,V_a\subseteq X_a\) containing them. The unions \(\bigcup_aU_a\) and \(\bigcup_aV_a\) are disjoint open subsets of the topological sum containing \(E\) and \(F\), respectively. Hence arbitrary sums of normal spaces are normal.
+
 :::
 
-<1>7. The complete classification is
+:::
+
+::: pf-step
+
+The complete classification is
 \[
 \boxed{
 \begin{array}{c|c|c}
@@ -125,13 +170,19 @@ P & \prod_{a\in A}X_a & \sum_{a\in A}X_a\\
 \end{array}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 through <1>6 establish every entry in the table and show that every excluded cardinality has a counterexample.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the requested classification for all six properties, for both products and sums.
+
 :::
+
 :::

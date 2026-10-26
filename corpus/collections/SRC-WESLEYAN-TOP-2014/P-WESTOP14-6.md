@@ -35,7 +35,6 @@ For each quotient space:
 3. Determine which of the spaces are manifolds.
 :::
 
-::: {.solution}
 Denote the three quotient spaces by
 $$
 X_1,
@@ -45,10 +44,16 @@ X_2,
 X_3.
 $$
 
-<1>1. In the first diagram all six polygon vertices are identified to one
+::: pf
+
+::: pf-step
+
+In the first diagram all six polygon vertices are identified to one
 vertex.
 
-::: {.proof}
+
+::: pf-proof
+
 Number the boundary vertices
 $$
 v_0,v_1,\ldots,v_5
@@ -76,22 +81,34 @@ Taking the transitive closure gives
 $$
 v_0\sim v_1\sim\cdots\sim v_5.
 $$
+
 :::
 
-<1>2. Thus $X_1$ has a CW structure with one $0$-cell, three $1$-cells
+:::
+
+::: pf-step
+
+Thus $X_1$ has a CW structure with one $0$-cell, three $1$-cells
 $a,b,c$, and one $2$-cell attached by
 $$
 w_1=abacb^{-1}c^{-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the single vertex.
 Each pair of identified polygon edges gives one $1$-cell, and the polygon
 interior gives one $2$-cell.
 The attaching map is read directly from the boundary word.
+
 :::
 
-<1>3. The fundamental group of $X_1$ is
+:::
+
+::: pf-step
+
+The fundamental group of $X_1$ is
 $$
 \boxed{
 \pi_1(X_1)
@@ -103,16 +120,23 @@ abacb^{-1}c^{-1}
 \right\rangle.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $1$-skeleton is a wedge of the three loops
 $$
 a,b,c.
 $$
 Van Kampen's theorem says that attaching the $2$-cell imposes exactly the
 relation represented by its attaching word.
+
 :::
 
-<1>4. The cellular chain complex of $X_1$ is
+:::
+
+::: pf-step
+
+The cellular chain complex of $X_1$ is
 $$
 0
 \longrightarrow
@@ -134,7 +158,9 @@ $$
 (a,b,c).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a one-vertex presentation complex, the cellular boundary of the
 $2$-cell is given by the exponent sums of the oriented $1$-cells in the
 attaching word.
@@ -163,9 +189,14 @@ are
 $$
 0.
 $$
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 H_0(X_1;\mathbb Z)\cong\mathbb Z,
@@ -178,7 +209,9 @@ H_k(X_1;\mathbb Z)=0
 \text{ for }k\ge2.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 $$
 \partial_2:\mathbb Z\to\mathbb Z^3
@@ -204,12 +237,19 @@ There are no cells above dimension
 $$
 2.
 $$
+
 :::
 
-<1>6. The space $X_1$ is a closed $2$-manifold; in fact it is the
+:::
+
+::: pf-step
+
+The space $X_1$ is a closed $2$-manifold; in fact it is the
 nonorientable surface of genus $3$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every boundary edge is paired with exactly one other boundary edge.
 The edge pairings give ordinary disk neighborhoods at interior points of
 edges, and the link of the single quotient vertex is a connected
@@ -245,9 +285,14 @@ so
 $$
 k=3.
 $$
+
 :::
 
-<1>7. In the second diagram the six vertices form exactly two quotient
+:::
+
+::: pf-step
+
+In the second diagram the six vertices form exactly two quotient
 vertices:
 $$
 \boxed{
@@ -256,7 +301,9 @@ $$
 \{v_1,v_3,v_5\}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Read the endpoint identifications from the arrows in
 $$
 w_2=abca^{-1}cb.
@@ -265,9 +312,14 @@ The two $a$-edges have opposite boundary signs, while the two $b$-edges and
 the two $c$-edges have the same signs.
 The generated equivalence relation groups the alternating polygon vertices
 as displayed.
+
 :::
 
-<1>8. Orient the quotient edges so that
+:::
+
+::: pf-step
+
+Orient the quotient edges so that
 $$
 a,c:P\to Q,
 \qquad
@@ -291,7 +343,9 @@ $$
 \partial_2(1)=(0,2,2)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The formula for
 $$
 \partial_1
@@ -337,9 +391,14 @@ is visible as
 $$
 0-2+2=0.
 $$
+
 :::
 
-<1>9. The homology of $X_2$ is
+:::
+
+::: pf-step
+
+The homology of $X_2$ is
 $$
 \boxed{
 H_0(X_2;\mathbb Z)\cong\mathbb Z,
@@ -352,7 +411,9 @@ H_k(X_2;\mathbb Z)=0
 \text{ for }k\ge2.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 $$
 \partial_1
@@ -404,9 +465,14 @@ The quotient is connected, giving
 $$
 H_0(X_2)\cong\mathbb Z.
 $$
+
 :::
 
-<1>10. Collapsing the edge $a$ in the $1$-skeleton gives
+:::
+
+::: pf-step
+
+Collapsing the edge $a$ in the $1$-skeleton gives
 $$
 \boxed{
 \pi_1(X_2)
@@ -424,7 +490,9 @@ u^2v^2
 \right\rangle.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The edge
 $$
 a
@@ -451,12 +519,19 @@ c^2b^2,
 $$
 which gives the standard nonorientable-genus-$2$ presentation after
 renaming generators.
+
 :::
 
-<1>11. The space $X_2$ is a closed $2$-manifold; in fact it is the Klein
+:::
+
+::: pf-step
+
+The space $X_2$ is a closed $2$-manifold; in fact it is the Klein
 bottle.
 
-::: {.proof}
+
+::: pf-proof
+
 Again every boundary edge is paired exactly twice, so the quotient has
 surface neighborhoods along edges and at the two quotient vertices.
 
@@ -482,9 +557,14 @@ $$
 2,
 $$
 namely the Klein bottle.
+
 :::
 
-<1>12. In the third diagram the six vertices again form two quotient
+:::
+
+::: pf-step
+
+In the third diagram the six vertices again form two quotient
 vertices
 $$
 P=\{v_0,v_2,v_4\},
@@ -498,16 +578,23 @@ a:P\to Q,
 b:Q\to P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 All three $a$-edges are identified respecting their arrows, so all their
 arrow-start vertices are identified and all their arrow-end vertices are
 identified.
 The same is true for the three $b$-edges.
 Reading the arrows in the recovered diagram gives exactly the two alternating
 vertex classes displayed.
+
 :::
 
-<1>13. The cellular chain complex for $X_3$ has
+:::
+
+::: pf-step
+
+The cellular chain complex for $X_3$ has
 $$
 C_2\cong\mathbb Z,
 \qquad
@@ -527,7 +614,9 @@ $$
 \partial_2(1)=(1,1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $a$-edge goes from
 $$
 P
@@ -573,9 +662,14 @@ Thus
 $$
 \partial_2(1)=(1,1).
 $$
+
 :::
 
-<1>14. The homology of $X_3$ is
+:::
+
+::: pf-step
+
+The homology of $X_3$ is
 $$
 \boxed{
 H_0(X_3;\mathbb Z)\cong\mathbb Z,
@@ -584,7 +678,9 @@ H_k(X_3;\mathbb Z)=0
 \text{ for every }k\ge1.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \ker\partial_1
@@ -609,11 +705,18 @@ The $1$-skeleton is connected, so
 $$
 H_0(X_3)\cong\mathbb Z.
 $$
+
 :::
 
-<1>15. The fundamental group of $X_3$ is trivial.
+:::
 
-::: {.proof}
+::: pf-step
+
+The fundamental group of $X_3$ is trivial.
+
+
+::: pf-proof
+
 Collapse the edge
 $$
 a
@@ -640,11 +743,18 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>16. The space $X_3$ is not a $2$-manifold.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X_3$ is not a $2$-manifold.
+
+
+::: pf-proof
+
 Take a point in the interior of the quotient edge
 $$
 a.
@@ -665,9 +775,14 @@ $$
 X_3
 $$
 is not locally Euclidean there.
+
 :::
 
-<1>17. Therefore the complete answers are
+:::
+
+::: pf-step
+
+Therefore the complete answers are
 $$
 \boxed{
 \begin{array}{c|c|c|c}
@@ -700,14 +815,20 @@ H_1
 $$
 groups.
 
-::: {.proof}
+
+::: pf-proof
+
 This summarizes steps <1>3--<1>16.
+
 :::
 
-<1>18. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>17 answers all three requested questions for all three quotient
 spaces.
+
 :::
+
 :::

@@ -23,29 +23,46 @@ Let $(X,\mathcal M,\mu)$ be a measure space and let $f_n:X\to\mathbb R$ be measu
 (b) Prove that $L^1$ convergence to $0$ implies convergence in measure to $0$.
 :::
 
-::: {.solution}
-<1>1. The statement $f_n\to0$ in $L^1$ means that each $f_n$ is integrable and
+::: pf
+
+::: pf-step
+
+The statement $f_n\to0$ in $L^1$ means that each $f_n$ is integrable and
 $$
 \norm{f_n}_{L^1}
 =\int_X\abs{f_n}\,d\mu
 \longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of convergence to zero in the $L^1$ norm. This gives the first definition requested in part (a).
+
 :::
 
-<1>2. The statement $f_n\to0$ in measure means that for every $\varepsilon>0$,
+:::
+
+::: pf-step
+
+The statement $f_n\to0$ in measure means that for every $\varepsilon>0$,
 $$
 \mu\bigl(\{x:\abs{f_n(x)}\geq\varepsilon\}\bigr)
 \longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of convergence in measure to zero. Replacing $\geq\varepsilon$ by $>\varepsilon$ gives an equivalent definition. This completes part (a).
+
 :::
 
-<1>3. For every $\varepsilon>0$ and every $n$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$ and every $n$,
 $$
 \varepsilon\,
 \mu\bigl(\{x:\abs{f_n(x)}\geq\varepsilon\}\bigr)
@@ -53,7 +70,9 @@ $$
 \norm{f_n}_{L^1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 E_{n,\varepsilon}=\{x:\abs{f_n(x)}\geq\varepsilon\}.
@@ -69,14 +88,21 @@ $$
 \leq\int_X\abs{f_n}\,d\mu
 =\norm{f_n}_{L^1}.
 $$
+
 :::
 
-<1>4. If $f_n\to0$ in $L^1$, then
+:::
+
+::: pf-step
+
+If $f_n\to0$ in $L^1$, then
 $$
 \boxed{f_n\to0\text{ in measure}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. By step <1>3,
 $$
 0\leq
@@ -85,11 +111,15 @@ $$
 \frac{\norm{f_n}_{L^1}}{\varepsilon}.
 $$
 If $f_n\to0$ in $L^1$, then the right-hand side tends to zero. Hence the measure of the exceptional set tends to zero. By step <1>2, this is convergence in measure. This proves part (b).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 give the requested definitions, and step <1>4 proves the implication.
+
 :::
+
 :::

@@ -15,8 +15,11 @@ audit:
 2. Use Zorn's Lemma to prove that every commutative ring with identity $1\ne0$ has a maximal ideal.
 :::
 
-::: {.solution}
-<1>1. **Zorn's Lemma.**
+::: pf
+
+::: pf-step
+
+**Zorn's Lemma.**
 
 Let
 \[
@@ -28,7 +31,9 @@ C\subseteq P
 \]
 has an upper bound in $P$, then $P$ contains a maximal element.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the statement of Zorn's Lemma. Here a chain means a totally ordered
 subset of $P$, and an element $m\in P$ is maximal if
 \[
@@ -36,9 +41,14 @@ m\le x
 \quad\Longrightarrow\quad
 x=m.
 \]
+
 :::
 
-<1>2. Let $R$ be a commutative ring with identity
+:::
+
+::: pf-step
+
+Let $R$ be a commutative ring with identity
 \[
 1\ne0.
 \]
@@ -54,7 +64,9 @@ Then
 \mathcal P\ne\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The zero ideal
 \[
 (0)
@@ -67,9 +79,14 @@ Hence
 \[
 (0)\in\mathcal P.
 \]
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \mathcal C\subseteq\mathcal P
 \]
@@ -81,7 +98,9 @@ J
 \]
 Then $J$ is an ideal of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 x,y\in J.
@@ -138,11 +157,18 @@ Since $I$ is an ideal,
 rx\in I\subseteq J.
 \]
 Thus $J$ is an ideal.
+
 :::
 
-<1>4. The ideal $J$ from step <1>3 is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $J$ from step <1>3 is proper.
+
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 J=R.
@@ -171,12 +197,19 @@ Therefore
 \[
 J\ne R.
 \]
+
 :::
 
-<1>5. Hence every chain in $\mathcal P$ has an upper bound in
+:::
+
+::: pf-step
+
+Hence every chain in $\mathcal P$ has an upper bound in
 $\mathcal P$.
 
-::: {.proof}
+
+::: pf-proof
+
 For a chain
 \[
 \mathcal C\subseteq\mathcal P,
@@ -196,25 +229,39 @@ I\subseteq J
 (I\in\mathcal C),
 \]
 so $J$ is an upper bound for the chain.
+
 :::
 
-<1>6. By Zorn's Lemma, $\mathcal P$ contains a maximal element
+:::
+
+::: pf-step
+
+By Zorn's Lemma, $\mathcal P$ contains a maximal element
 \[
 \mathfrak m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that $\mathcal P$ is nonempty, and step <1>5 verifies the
 chain-upper-bound hypothesis of Zorn's Lemma. Apply step <1>1.
+
 :::
 
-<1>7. The ideal
+:::
+
+::: pf-step
+
+The ideal
 \[
 \mathfrak m
 \]
 is a maximal ideal of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 By construction,
 \[
 \mathfrak m\ne R.
@@ -246,22 +293,33 @@ and
 R.
 \]
 This is exactly the definition of a maximal ideal.
+
 :::
 
-<1>8. Therefore every commutative ring with identity
+:::
+
+::: pf-step
+
+Therefore every commutative ring with identity
 \[
 1\ne0
 \]
 has a maximal ideal.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 constructs one.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states Zorn's Lemma, and steps <1>2--<1>8 apply it to prove the
 maximal-ideal theorem.
+
 :::
+
 :::

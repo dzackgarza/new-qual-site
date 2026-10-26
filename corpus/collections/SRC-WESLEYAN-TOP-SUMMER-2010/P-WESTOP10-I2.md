@@ -22,7 +22,6 @@ For each of the spaces $\mathbb R^n$ and $\overline{S_\Omega}$, determine which 
 7. metrizable.
 :::
 
-::: {.solution}
 Assume
 \[
 n\ge1.
@@ -42,13 +41,19 @@ with lexicographic order by adjoining its final endpoint
 \Omega.
 \]
 
-<1>1. The Euclidean space
+::: pf
+
+::: pf-step
+
+The Euclidean space
 \[
 \mathbb R^n
 \]
 is path-connected, hence connected.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 x,y\in\mathbb R^n,
@@ -68,15 +73,22 @@ Thus
 \]
 is path-connected.
 Every path-connected space is connected.
+
 :::
 
-<1>2. The space
+:::
+
+::: pf-step
+
+The space
 \[
 \mathbb R^n
 \]
 is not compact.
 
-::: {.proof}
+
+::: pf-proof
+
 It is unbounded.
 By the Heine--Borel theorem, a subset of Euclidean space is compact if and
 only if it is closed and bounded.
@@ -91,15 +103,22 @@ Equivalently, the open cover
 \{B(0,m):m\in\mathbb N\}
 \]
 has no finite subcover.
+
 :::
 
-<1>3. The space
+:::
+
+::: pf-step
+
+The space
 \[
 \mathbb R^n
 \]
 is Hausdorff, completely regular, normal, and metrizable.
 
-::: {.proof}
+
+::: pf-proof
+
 The Euclidean metric
 \[
 d(x,y)
@@ -112,9 +131,14 @@ d(x,y)
 induces the usual topology.
 Every metric space is Hausdorff, completely regular, and normal.
 Thus all four properties hold.
+
 :::
 
-<1>4. Therefore, for
+:::
+
+::: pf-step
+
+Therefore, for
 \[
 n\ge1,
 \]
@@ -146,18 +170,27 @@ is
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>1--<1>3.
+
 :::
 
-<1>5. The closed long ray
+:::
+
+::: pf-step
+
+The closed long ray
 \[
 \overline{S_\Omega}
 \]
 is a linearly ordered topological space whose order is order-complete and
 densely ordered between distinct nonconsecutive points.
 
-::: {.proof}
+
+::: pf-proof
+
 The lexicographic order on
 \[
 \omega_1\times[0,1)
@@ -184,11 +217,18 @@ within one fiber this is just density of
 [0,1)
 \]
 in its usual order.
+
 :::
 
-<1>6. The closed long ray is connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closed long ray is connected.
+
+
+::: pf-proof
+
 A linearly ordered set with the order topology is connected whenever it is a
 linear continuum: it has the least-upper-bound property and no gaps.
 Step <1>5 gives precisely these properties.
@@ -199,11 +239,18 @@ Hence
 \text{ is connected}.
 }
 \]
+
 :::
 
-<1>7. The closed long ray is not path-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closed long ray is not path-connected.
+
+
+::: pf-proof
+
 Suppose there were a path
 \[
 \gamma:[0,1]\to\overline{S_\Omega}
@@ -267,11 +314,18 @@ Therefore
 \text{ is not path-connected}.
 }
 \]
+
 :::
 
-<1>8. The closed long ray is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closed long ray is compact.
+
+
+::: pf-proof
+
 A complete linear order with both endpoints is compact in its order
 topology.
 By step <1>5,
@@ -289,11 +343,18 @@ Therefore
 \text{ is compact}.
 }
 \]
+
 :::
 
-<1>9. The closed long ray is Hausdorff and normal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closed long ray is Hausdorff and normal.
+
+
+::: pf-proof
+
 Every linearly ordered topological space is Hausdorff.
 Moreover, every linearly ordered topological space is hereditarily normal
 (indeed, monotonically normal).
@@ -302,11 +363,18 @@ Therefore
 \overline{S_\Omega}
 \]
 is both Hausdorff and normal.
+
 :::
 
-<1>10. The closed long ray is completely regular.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closed long ray is completely regular.
+
+
+::: pf-proof
+
 A normal $T_1$ space is completely regular by Urysohn's lemma:
 given a point
 \[
@@ -329,15 +397,22 @@ u:X\to[0,1].
 
 By step <1>9, the closed long ray is Hausdorff, hence $T_1$, and normal.
 Thus it is completely regular.
+
 :::
 
-<1>11. The endpoint
+:::
+
+::: pf-step
+
+The endpoint
 \[
 \Omega
 \]
 has no countable local base.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 U_1,U_2,\dots
@@ -391,11 +466,18 @@ contains points at or below $b$ and therefore is not contained in
 (b,\Omega].
 \]
 Contradiction.
+
 :::
 
-<1>12. The closed long ray is not metrizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closed long ray is not metrizable.
+
+
+::: pf-proof
+
 Every metric space is first countable.
 Step <1>11 shows that
 \[
@@ -403,9 +485,14 @@ Step <1>11 shows that
 \]
 is not first countable at its endpoint.
 Hence it cannot be metrizable.
+
 :::
 
-<1>13. Therefore the classification of the closed long ray is
+:::
+
+::: pf-step
+
+Therefore the classification of the closed long ray is
 \[
 \boxed{
 \begin{array}{c|ccccccc}
@@ -429,13 +516,19 @@ Hence it cannot be metrizable.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6--<1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>13 give all requested properties of the two spaces.
+
 :::
+
 :::

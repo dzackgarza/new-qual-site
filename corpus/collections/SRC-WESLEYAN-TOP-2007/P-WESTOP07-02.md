@@ -32,14 +32,17 @@ Compute, with proof,
 \]
 :::
 
-::: {.solution}
 The space
 $$
 X
 $$
 is a finite connected graph.
 
-<1>1. The three triangles
+::: pf
+
+::: pf-step
+
+The three triangles
 $$
 T_1,T_2,T_3
 $$
@@ -56,7 +59,9 @@ T_1
 T_3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the listed coordinates, the triangles lie in disjoint regions of the plane. The segment
 $$
 P
@@ -102,9 +107,14 @@ $$
 X
 $$
 is connected.
+
 :::
 
-<1>2. Choose from each triangle
+:::
+
+::: pf-step
+
+Choose from each triangle
 $$
 T_i
 $$
@@ -133,7 +143,9 @@ $$
 X.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Within each
 $$
 T_i,
@@ -169,9 +181,14 @@ $$
 K
 $$
 is maximal.
+
 :::
 
-<1>3. Collapsing
+:::
+
+::: pf-step
+
+Collapsing
 $$
 K
 $$
@@ -183,7 +200,9 @@ X/K
 S^1\vee S^1\vee S^1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 All vertices and all tree edges lie in
 $$
 K,
@@ -193,30 +212,44 @@ $$
 K
 $$
 to a point, each of the three omitted triangle edges becomes a loop based at that single point. There are exactly three such edges and no further cells. Thus the quotient is a bouquet of three circles.
+
 :::
 
-<1>4. The quotient map
+:::
+
+::: pf-step
+
+The quotient map
 $$
 X\to X/K
 $$
 is a homotopy equivalence.
 
-::: {.proof}
+
+::: pf-proof
+
 A tree is contractible. In a finite graph, collapsing a contractible subtree to a point preserves the homotopy type. Equivalently, one may successively collapse leaf edges of
 $$
 K
 $$
 until the entire tree is reduced to one vertex; each elementary edge collapse is a deformation retraction.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \pi_1(X,(0,0))
 \cong
 \pi_1(S^1\vee S^1\vee S^1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 X
@@ -226,9 +259,14 @@ $$
 X/K.
 $$
 Step <1>3 identifies the latter with a wedge of three circles. Homotopy equivalences induce isomorphisms on fundamental groups.
+
 :::
 
-<1>6. The fundamental group is the free group on three generators:
+:::
+
+::: pf-step
+
+The fundamental group is the free group on three generators:
 $$
 \boxed{
 \pi_1(X,(0,0))
@@ -238,7 +276,9 @@ F_3
 \langle a,b,c\mid\ \rangle.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The fundamental group of a wedge of
 $$
 r
@@ -252,11 +292,15 @@ $$
 r=3
 $$
 to step <1>5 gives the result.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required computation.
+
 :::
+
 :::

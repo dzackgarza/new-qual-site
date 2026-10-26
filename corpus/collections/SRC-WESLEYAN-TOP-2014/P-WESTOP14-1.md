@@ -15,12 +15,17 @@ audit:
 2. Prove that the image of a compact space under a continuous map is compact.
 :::
 
-::: {.solution}
 Let $f:X\to Y$ be continuous.
 
-<1>1. If $X$ is connected, then $f(X)$ is connected.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $X$ is connected, then $f(X)$ is connected.
+
+
+::: pf-proof
+
 Suppose for contradiction that $f(X)$ is disconnected. Then there are disjoint nonempty sets $U,V\subseteq f(X)$ that are open in the subspace topology and satisfy
 $$
 f(X)=U\cup V.
@@ -32,17 +37,31 @@ f^{-1}(U),
 f^{-1}(V)
 $$
 are open in $X$. They are disjoint and their union is $X$. They are both nonempty because $U$ and $V$ are nonempty subsets of the image. Thus they form a separation of $X$, contradicting connectedness.
+
 :::
 
-<1>2. Therefore continuous images preserve connectedness.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore continuous images preserve connectedness.
+
+
+::: pf-proof
+
 Step <1>1 proves that whenever $X$ is connected, its image $f(X)$ is connected.
+
 :::
 
-<1>3. If $X$ is compact, then $f(X)$ is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $X$ is compact, then $f(X)$ is compact.
+
+
+::: pf-proof
+
 Let $\{U_\alpha\}_{\alpha\in A}$ be an open cover of $f(X)$ in the subspace topology. For each $\alpha$, the set
 $$
 f^{-1}(U_\alpha)
@@ -62,17 +81,28 @@ f(X)
 U_{\alpha_1}\cup\cdots\cup U_{\alpha_m}.
 $$
 Hence the original cover has a finite subcover of $f(X)$, so $f(X)$ is compact.
+
 :::
 
-<1>4. Therefore continuous images preserve compactness.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore continuous images preserve compactness.
+
+
+::: pf-proof
+
 Step <1>3 proves that whenever $X$ is compact, its image $f(X)$ is compact.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>4 prove the two requested statements.
+
 :::
+
 :::

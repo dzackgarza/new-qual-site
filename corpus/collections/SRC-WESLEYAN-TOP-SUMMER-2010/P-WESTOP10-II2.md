@@ -20,8 +20,11 @@ Let $(\widetilde X,p)$ be a covering space of $X$.
 2. The retained source states: if $X$ is compact and $p^{-1}(x)$ is finite for every $x\in X$, then show that $X$ is compact. This repeats the hypothesis and is therefore recorded as a source-sensitive conclusion rather than silently changed.
 :::
 
-::: {.solution}
-<1>1. Assume
+::: pf
+
+::: pf-step
+
+Assume
 \[
 X
 \]
@@ -35,16 +38,23 @@ Let
 \]
 be distinct.
 
-::: {.proof}
+
+::: pf-proof
+
 To prove that
 \[
 \widetilde X
 \]
 is Hausdorff, it suffices to separate arbitrary distinct points by disjoint
 open neighborhoods.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 p(\widetilde x_1)
 \ne
@@ -63,7 +73,9 @@ have disjoint open neighborhoods in
 \widetilde X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $X$ is Hausdorff, choose disjoint open sets
 \[
 U_1,U_2\subseteq X
@@ -89,9 +101,14 @@ containing
 \widetilde x_2,
 \]
 respectively.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 p(\widetilde x_1)
 =
@@ -109,7 +126,9 @@ and
 \]
 also have disjoint open neighborhoods.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose an evenly covered neighborhood
 \[
 U\ni x.
@@ -139,9 +158,14 @@ V_{\lambda_1}
 V_{\lambda_2}.
 \]
 These are disjoint open neighborhoods.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 X\text{ Hausdorff}
@@ -150,16 +174,25 @@ X\text{ Hausdorff}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>3 cover the two possible cases for two distinct points of
 \[
 \widetilde X.
 \]
+
 :::
 
-<1>5. The literal second statement in the source is tautological.
+:::
 
-::: {.proof}
+::: pf-step
+
+The literal second statement in the source is tautological.
+
+
+::: pf-proof
+
 Its hypotheses already include
 \[
 X\text{ is compact}.
@@ -169,9 +202,14 @@ Its conclusion is again
 X\text{ is compact}.
 \]
 Thus no proof beyond repeating the hypothesis is needed.
+
 :::
 
-<1>6. The standard intended theorem is:
+:::
+
+::: pf-step
+
+The standard intended theorem is:
 
 if
 \[
@@ -189,11 +227,18 @@ is finite, then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 We prove this in steps <1>7--<1>12.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \mathcal O
 \]
@@ -210,11 +255,18 @@ and choose an evenly covered neighborhood
 U\ni x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Such a neighborhood exists by the definition of a covering map.
+
 :::
 
-<1>8. Because
+:::
+
+::: pf-step
+
+Because
 \[
 p^{-1}(x)
 \]
@@ -224,7 +276,9 @@ p^{-1}(U)
 \]
 has only finitely many sheets.
 
-::: {.proof}
+
+::: pf-proof
+
 Every sheet
 \[
 V_\lambda
@@ -237,9 +291,14 @@ Thus the set of sheets is in bijection with
 p^{-1}(x),
 \]
 which is finite.
+
 :::
 
-<1>9. Enumerate the sheets as
+:::
+
+::: pf-step
+
+Enumerate the sheets as
 \[
 V_1,\dots,V_m,
 \]
@@ -260,7 +319,9 @@ with
 \widetilde x_j\in O_j.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cover
 \[
 \mathcal O
@@ -270,9 +331,14 @@ covers every point of
 \widetilde X,
 \]
 in particular each fiber point.
+
 :::
 
-<1>10. For each $j$, there is an open neighborhood
+:::
+
+::: pf-step
+
+For each $j$, there is an open neighborhood
 \[
 W_j\subseteq U
 \]
@@ -283,7 +349,9 @@ of $x$ such that
 O_j.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set
 \[
 O_j\cap V_j
@@ -314,9 +382,14 @@ O_j\cap V_j
 \subseteq
 O_j.
 \]
+
 :::
 
-<1>11. Define
+:::
+
+::: pf-step
+
+Define
 \[
 W_x
 \coloneqq
@@ -335,7 +408,9 @@ is covered by the finite family
 O_1,\dots,O_m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The intersection is finite, so $W_x$ is open and contains $x$.
 
 For every sheet $V_j$,
@@ -362,9 +437,14 @@ is contained in
 \[
 O_1\cup\cdots\cup O_m.
 \]
+
 :::
 
-<1>12. Compactness of $X$ gives a finite subcover of
+:::
+
+::: pf-step
+
+Compactness of $X$ gives a finite subcover of
 \[
 \widetilde X
 \]
@@ -373,7 +453,9 @@ from
 \mathcal O.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The neighborhoods
 \[
 \{W_x:x\in X\}
@@ -416,9 +498,14 @@ Thus every open cover of
 \widetilde X
 \]
 has a finite subcover.
+
 :::
 
-<1>13. Hence, under the standard intended reading,
+:::
+
+::: pf-step
+
+Hence, under the standard intended reading,
 \[
 \boxed{
 X\text{ compact and all fibers finite}
@@ -427,16 +514,22 @@ X\text{ compact and all fibers finite}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>12 proves compactness of the total space.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 prove the Hausdorff assertion.
 Step <1>5 answers the literal repeated compactness statement.
 Steps <1>6--<1>13 prove the standard intended finite-sheeted compactness
 theorem.
+
 :::
+
 :::

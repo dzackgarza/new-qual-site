@@ -26,13 +26,18 @@ Prove or disprove each statement:
    is an isomorphism.
 :::
 
-::: {.solution}
-<1>1. Statement 1 is
+::: pf
+
+::: pf-step
+
+Statement 1 is
 \[
 \boxed{\mathrm{False}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 X=D^2
@@ -45,14 +50,21 @@ The disk $D^2$ is contractible and therefore simply connected, whereas
 \]
 is nontrivial. Thus a subspace of a simply connected space need not be simply
 connected.
+
 :::
 
-<1>2. Statement 2 is
+:::
+
+::: pf-step
+
+Statement 2 is
 \[
 \boxed{\mathrm{True}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $i:A\hookrightarrow X$ be the inclusion and choose a basepoint
 $a_0\in A$. Since $r$ is a retraction,
 \[
@@ -70,14 +82,21 @@ Thus every element $\alpha\in\pi_1(A,a_0)$ satisfies
 \alpha=r_*(i_*(\alpha)),
 \]
 so $r_*$ is surjective.
+
 :::
 
-<1>3. Statement 3 is
+:::
+
+::: pf-step
+
+Statement 3 is
 \[
 \boxed{\mathrm{True}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $r:X\to A$ be the deformation retraction and let $i:A\hookrightarrow X$
 be inclusion. Then
 \[
@@ -100,11 +119,15 @@ Hence $i_*$ and $r_*$ are inverse isomorphisms. In particular,
 \[
 \boxed{i_*:\pi_1(A,a_0)\xrightarrow{\sim}\pi_1(X,a_0)}.
 \]
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 through <1>3 settle the three statements.
+
 :::
+
 :::

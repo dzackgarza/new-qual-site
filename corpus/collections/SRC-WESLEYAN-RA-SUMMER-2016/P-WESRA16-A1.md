@@ -27,18 +27,23 @@ Prove that either
 2. $\lambda(W_n)>0$ for some $n$.
 :::
 
-::: {.solution}
 Let
 $$
 M=\{x\in\mathbb R^d:0<f(x)<1\}.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 M=\bigcup_{n=1}^\infty W_n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $x\in W_n$, then
 $$
 2^{-n}\leq f(x)\leq1-2^{-n},
@@ -54,14 +59,21 @@ $$
 2^{-n}\leq f(x)\leq1-2^{-n},
 $$
 so $x\in W_n$.
+
 :::
 
-<1>2. If $\lambda(W_n)=0$ for every $n$, then
+:::
+
+::: pf-step
+
+If $\lambda(W_n)=0$ for every $n$, then
 $$
 \lambda(M)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and countable subadditivity,
 $$
 \lambda(M)
@@ -69,15 +81,22 @@ $$
 \leq\sum_{n=1}^\infty\lambda(W_n)
 =0.
 $$
+
 :::
 
-<1>3. If $\lambda(W_n)=0$ for every $n$, then there is a measurable set $X\subseteq\mathbb R^d$ such that
+:::
+
+::: pf-step
+
+If $\lambda(W_n)=0$ for every $n$, then there is a measurable set $X\subseteq\mathbb R^d$ such that
 $$
 f=\mathbf1_X
 $$
 almost everywhere.
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 X=\{x:f(x)=1\}.
@@ -93,17 +112,28 @@ $$
 f(x)=\mathbf1_X(x).
 $$
 Thus $f=\mathbf1_X$ almost everywhere.
+
 :::
 
-<1>4. One of the two alternatives in the problem always holds.
+:::
 
-::: {.proof}
+::: pf-step
+
+One of the two alternatives in the problem always holds.
+
+
+::: pf-proof
+
 If $\lambda(W_n)>0$ for some $n$, then alternative (2) holds. Otherwise $\lambda(W_n)=0$ for every $n$, and step <1>3 gives alternative (1).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required dichotomy.
+
 :::
+
 :::

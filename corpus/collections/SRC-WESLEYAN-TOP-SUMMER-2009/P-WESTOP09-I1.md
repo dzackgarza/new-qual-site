@@ -19,8 +19,11 @@ audit:
    - quotient spaces.
 :::
 
-::: {.solution}
-<1>1. A metric on a set $X$ is a function
+::: pf
+
+::: pf-step
+
+A metric on a set $X$ is a function
 \[
 d:X\times X\to[0,\infty)
 \]
@@ -33,17 +36,26 @@ d(x,z)\le d(x,y)+d(y,z).
 A topological space $X$ is metrizable if its topology is the topology induced
 by some metric on $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 These are the defining properties of a metric and of metrizability.
+
 :::
 
-<1>2. If $I$ is uncountable, the product
+:::
+
+::: pf-step
+
+If $I$ is uncountable, the product
 \[
 X=\{0,1\}^I
 \]
 of two-point discrete spaces, with the product topology, is not metrizable.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $0\in X$ denote the point all of whose coordinates are $0$. Suppose that
 $X$ were first countable at $0$, with countable local base
 \[
@@ -64,24 +76,38 @@ $U_n\subseteq V$, hence $B_n\subseteq V$. But $j\notin F_n$, so $B_n$ does not
 restrict the $j$-th coordinate and therefore contains a point with $x_j=1$,
 a contradiction. Thus $X$ is not first countable. Every metric space is first
 countable, so $X$ is not metrizable.
+
 :::
 
-<1>3. The class of metrizable spaces is
+:::
+
+::: pf-step
+
+The class of metrizable spaces is
 \[
 \boxed{\text{not closed under arbitrary products}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives an uncountable product of metrizable spaces whose product
 topology is not metrizable.
+
 :::
 
-<1>4. The class of metrizable spaces is
+:::
+
+::: pf-step
+
+The class of metrizable spaces is
 \[
 \boxed{\text{closed under subspaces}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $(X,d)$ be a metric space and let $A\subseteq X$. The restriction
 \[
 d|_{A\times A}:A\times A\to[0,\infty)
@@ -91,14 +117,21 @@ is a metric on $A$. Its open balls are exactly
 B_A(a,r)=A\cap B_X(a,r),
 \]
 so the induced metric topology is precisely the subspace topology on $A$.
+
 :::
 
-<1>5. The class of metrizable spaces is
+:::
+
+::: pf-step
+
+The class of metrizable spaces is
 \[
 \boxed{\text{not closed under quotient spaces}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the metrizable space $\mathbb R$, identify all nonzero points with one
 another and leave $0$ in its own equivalence class. The quotient has two
 points, say
@@ -110,12 +143,16 @@ $\mathbb R\setminus\{0\}$ is open. The singleton $\{p\}$ is not open because
 its preimage $\{0\}$ is not open. Thus the quotient is not Hausdorff: the two
 points cannot have disjoint open neighborhoods. Every metric space is
 Hausdorff, so this quotient is not metrizable.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definitions, step <1>2 gives a nonmetrizable
 example, and steps <1>3 through <1>5 settle the three closure questions.
+
 :::
+
 :::

@@ -27,12 +27,15 @@ for every $n\ge N$ and every $x\notin B$.
 (b) If $\mu(X)<\infty$ and $f_n\to f$ almost everywhere, prove convergence in the displayed source sense.
 :::
 
-::: {.solution}
 The displayed source definition is the usual notion of **almost uniform
 convergence**, not the standard definition of convergence in measure.
 The proof below follows the source's displayed definition literally.
 
-<1>1. Assume the displayed source convergence.
+::: pf
+
+::: pf-step
+
+Assume the displayed source convergence.
 For each
 \[
 k\ge1,
@@ -64,14 +67,21 @@ and every
 x\notin B_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the source definition with
 \[
 \varepsilon=2^{-k}.
 \]
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 m\ge1,
 \]
@@ -88,7 +98,9 @@ Then
 2^{1-m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By countable subadditivity,
 \[
 \begin{aligned}
@@ -103,9 +115,14 @@ By countable subadditivity,
 2^{1-m}.
 \end{aligned}
 \]
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 E
 \coloneqq
@@ -116,7 +133,9 @@ Then
 \mu(E)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 E_1\supseteq E_2\supseteq\cdots
@@ -147,9 +166,14 @@ Therefore
 \[
 \mu(E)=0.
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 x\notin E,
 \]
@@ -166,7 +190,9 @@ for every
 k\ge m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 x\notin
@@ -194,9 +220,14 @@ for all
 \[
 k\ge m.
 \]
+
 :::
 
-<1>5. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\notin E,
 \]
@@ -205,7 +236,9 @@ the full sequence satisfies
 f_n(x)\to f(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x\notin E
@@ -244,13 +277,20 @@ This is exactly
 \[
 f_n(x)\to f(x).
 \]
+
 :::
 
-<1>6. Therefore the source convergence implies almost-everywhere
+:::
+
+::: pf-step
+
+Therefore the source convergence implies almost-everywhere
 convergence of the full sequence, and in particular some subsequence
 converges almost everywhere.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \mu(E)=0.
@@ -265,9 +305,14 @@ x\in X\setminus E.
 \]
 Thus the whole sequence converges almost everywhere.
 Any subsequence therefore also converges almost everywhere.
+
 :::
 
-<1>7. Now assume
+:::
+
+::: pf-step
+
+Now assume
 \[
 \mu(X)<\infty
 \]
@@ -284,11 +329,18 @@ Fix
 \varepsilon>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the hypotheses of Egorov's theorem.
+
 :::
 
-<1>8. By Egorov's theorem, there exists a measurable set
+:::
+
+::: pf-step
+
+By Egorov's theorem, there exists a measurable set
 \[
 B\subseteq X
 \]
@@ -305,16 +357,23 @@ uniformly on
 X\setminus B.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Egorov's theorem states that on a finite-measure space, almost-everywhere
 convergence of measurable functions is almost uniform.
 Apply it with exceptional-set measure bound
 \[
 \varepsilon.
 \]
+
 :::
 
-<1>9. Uniform convergence on
+:::
+
+::: pf-step
+
+Uniform convergence on
 \[
 X\setminus B
 \]
@@ -337,20 +396,29 @@ and every
 x\in X\setminus B.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of uniform convergence, using the tolerance
 \[
 \varepsilon.
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 f_n
 \]
 converges to $f$ in the displayed source sense.
 
-::: {.proof}
+
+::: pf-proof
+
 For the given
 \[
 \varepsilon>0,
@@ -373,13 +441,17 @@ n\ge N
 \]
 outside $B$.
 This is exactly the source's displayed definition.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves part (a), in the stronger form of convergence of the full
 sequence almost everywhere.
 Steps <1>7--<1>10 prove part (b) by Egorov's theorem.
+
 :::
+
 :::

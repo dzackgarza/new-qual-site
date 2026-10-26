@@ -23,26 +23,36 @@ Let $X$ be completely regular Hausdorff and consider its Čech--Stone compactifi
 2. The source next asks for the cardinalities of several expressions involving $\beta$, but their arguments are unrecovered in the retained extraction. This subproblem is left explicit rather than reconstructed.
 :::
 
-::: {.solution}
 Let
 \[
 i:X\hookrightarrow\beta X
 \]
 denote the canonical embedding.
 
-<1>1. The space $\beta X$ is compact Hausdorff, and
+::: pf
+
+::: pf-step
+
+The space $\beta X$ is compact Hausdorff, and
 \[
 i(X)
 \]
 is dense in $\beta X$.
 
-::: {.proof}
+
+::: pf-proof
+
 These are the first defining properties of a compactification of the
 completely regular Hausdorff space $X$: the map $i$ is a homeomorphism of
 $X$ onto a dense subspace of the compact Hausdorff space $\beta X$.
+
 :::
 
-<1>2. The Čech--Stone compactification is characterized by the following
+:::
+
+::: pf-step
+
+The Čech--Stone compactification is characterized by the following
 universal extension property:
 
 for every compact Hausdorff space $K$ and every continuous map
@@ -58,7 +68,9 @@ such that
 \bar f\circ i=f.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining universal property of the Čech--Stone compactification.
 Existence says that every map from $X$ to a compact Hausdorff target extends
 across the compactification.
@@ -77,9 +89,14 @@ Thus
 \[
 F=G.
 \]
+
 :::
 
-<1>3. Equivalently, every bounded continuous real-valued function
+:::
+
+::: pf-step
+
+Equivalently, every bounded continuous real-valued function
 \[
 f\in C_b(X)
 \]
@@ -88,7 +105,9 @@ extends uniquely to a continuous function
 \bar f\in C(\beta X).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 f:X\to\mathbb R
@@ -108,15 +127,22 @@ of every compact Hausdorff space into a product of compact intervals by its
 continuous real-valued functions. Coordinatewise extension gives the desired
 map into the product, and density forces its image into the embedded copy of
 $K$.
+
 :::
 
-<1>4. The pair
+:::
+
+::: pf-step
+
+The pair
 \[
 (\beta X,i)
 \]
 is unique up to a unique homeomorphism fixing $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 (Y,j)
@@ -166,9 +192,14 @@ F\circ G=\operatorname{id}_Y.
 \]
 Thus $F$ is the unique homeomorphism carrying $i(x)$ to $j(x)$ for every
 $x\in X$.
+
 :::
 
-<1>5. Therefore the characteristic description requested in part (1) is:
+:::
+
+::: pf-step
+
+Therefore the characteristic description requested in part (1) is:
 \[
 \boxed{
 \begin{gathered}
@@ -180,13 +211,22 @@ X\text{ embeds densely in }\beta X,\\
 \end{gathered}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the combined content of steps <1>1--<1>4.
+
 :::
 
-<1>6. Part (2) cannot be answered from the retained source.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (2) cannot be answered from the retained source.
+
+
+::: pf-proof
+
 The retained extraction does not preserve the spaces or sets whose
 cardinalities are requested. Cardinalities of Čech--Stone compactifications
 depend essentially on the underlying spaces; for example,
@@ -197,13 +237,17 @@ cannot be determined from the symbol $\beta$ alone.
 
 Thus supplying numerical or cardinal answers would require reconstructing
 missing source data not present in the repository.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 completely answers the recoverable characteristic-property
 subproblem, and step <1>6 records the exact source obstruction for the
 unrecoverable cardinality subproblem.
+
 :::
+
 :::

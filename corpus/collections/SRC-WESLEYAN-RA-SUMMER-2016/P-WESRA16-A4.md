@@ -30,7 +30,6 @@ f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}.
 \]
 :::
 
-::: {.solution}
 For $n\geq0$, define
 $$
 \varphi_n
@@ -39,13 +38,24 @@ $$
 $$
 where the first sum is empty when $n=0$.
 
-<1>1. Each $\varphi_n$ is a nonnegative measurable simple function, and $\varphi_0=0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Each $\varphi_n$ is a nonnegative measurable simple function, and $\varphi_0=0$.
+
+
+::: pf-proof
+
 Each set $W_{n,k}$ is measurable because $f$ is measurable, and $\{f\geq n\}$ is measurable for the same reason. The displayed sum has only finitely many terms, so $\varphi_n$ is measurable and has finite range. For $n=0$, the first sum is empty and the second term is identically zero, hence $\varphi_0=0$.
+
 :::
 
-<1>2. For every $n\geq0$ and $x\in\mathbb R^d$,
+:::
+
+::: pf-step
+
+For every $n\geq0$ and $x\in\mathbb R^d$,
 $$
 \varphi_n(x)=
 \begin{cases}
@@ -58,7 +68,9 @@ $$
 0\leq\varphi_n(x)\leq f(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $f(x)<n$, there is a unique integer $k$ with
 $$
 0\leq k<n2^n,
@@ -66,14 +78,21 @@ $$
 k2^{-n}\leq f(x)<(k+1)2^{-n}.
 $$
 Thus $x\in W_{n,k}$ and the sum defining $\varphi_n$ takes the value $k2^{-n}=2^{-n}\lfloor2^nf(x)\rfloor$. If $f(x)\geq n$, none of the sets $W_{n,k}$ occurring in the finite sum contains $x$, while the final indicator contributes $n$. Both formulas are nonnegative and at most $f(x)$.
+
 :::
 
-<1>3. For every $n\geq0$ and $x\in\mathbb R^d$,
+:::
+
+::: pf-step
+
+For every $n\geq0$ and $x\in\mathbb R^d$,
 $$
 \varphi_n(x)\leq\varphi_{n+1}(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x$ and write $t=f(x)$. If $t\geq n+1$, then
 $$
 \varphi_n(x)=n\leq n+1=\varphi_{n+1}(x).
@@ -95,14 +114,21 @@ $$
 \geq2^{-n}q
 =\varphi_n(x).
 $$
+
 :::
 
-<1>4. For every $x\in\mathbb R^d$,
+:::
+
+::: pf-step
+
+For every $x\in\mathbb R^d$,
 $$
 \varphi_n(x)\longrightarrow f(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x$ and set $t=f(x)<\infty$. For every integer $n>t$, step <1>2 gives
 $$
 \varphi_n(x)=2^{-n}\lfloor2^nt\rfloor.
@@ -112,9 +138,14 @@ $$
 0\leq t-\varphi_n(x)<2^{-n}.
 $$
 The right-hand side tends to zero, so $\varphi_n(x)\to t=f(x)$.
+
 :::
 
-<1>5. The sequence $(\varphi_n)$ satisfies all requirements of part (a):
+:::
+
+::: pf-step
+
+The sequence $(\varphi_n)$ satisfies all requirements of part (a):
 $$
 \boxed{\varphi_0=0,\qquad
 \varphi_n\leq\varphi_{n+1}\leq f,
@@ -122,39 +153,62 @@ $$
 \varphi_n\to f\text{ pointwise}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 through <1>4.
+
 :::
 
-<1>6. For every $n\geq0$, the function
+:::
+
+::: pf-step
+
+For every $n\geq0$, the function
 $$
 \psi_n=\varphi_{n+1}-\varphi_n
 $$
 is a nonnegative measurable simple function.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $\psi_n\geq0$. It is measurable as a difference of measurable functions. Since $\varphi_n$ and $\varphi_{n+1}$ each have finite range, their difference also has finite range, so $\psi_n$ is simple.
+
 :::
 
-<1>7. For each $n$, there are finitely many nonnegative numbers $d_{n,1},\ldots,d_{n,r_n}$ and measurable sets $E_{n,1},\ldots,E_{n,r_n}$ such that
+:::
+
+::: pf-step
+
+For each $n$, there are finitely many nonnegative numbers $d_{n,1},\ldots,d_{n,r_n}$ and measurable sets $E_{n,1},\ldots,E_{n,r_n}$ such that
 $$
 \psi_n=\sum_{j=1}^{r_n}d_{n,j}\mathbf1_{E_{n,j}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, $\psi_n$ is a nonnegative simple function. Let $d_{n,1},\ldots,d_{n,r_n}$ be its distinct nonzero values and set
 $$
 E_{n,j}=\{x:\psi_n(x)=d_{n,j}\}.
 $$
 These level sets are measurable and give the displayed finite representation. If $\psi_n=0$, take $r_n=0$.
+
 :::
 
-<1>8. There are nonnegative numbers $(c_p)_{p\geq0}$ and measurable sets $(M_p)_{p\geq0}$ such that
+:::
+
+::: pf-step
+
+There are nonnegative numbers $(c_p)_{p\geq0}$ and measurable sets $(M_p)_{p\geq0}$ such that
 $$
 \boxed{f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set of pairs
 $$
 \{(n,j):n\geq0,\ 1\leq j\leq r_n\}
@@ -177,11 +231,15 @@ $$
 f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}.
 $$
 All terms are nonnegative, so this rearrangement of the countable family of summands is pointwise unambiguous. This proves part (b).
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>8 proves part (b).
+
 :::
+
 :::

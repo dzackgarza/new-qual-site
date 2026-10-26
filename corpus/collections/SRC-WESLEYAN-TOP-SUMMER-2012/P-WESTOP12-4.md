@@ -16,8 +16,11 @@ audit:
 3. Using the CW structure from part 2, compute the homology of $\mathbb{CP}^4$.
 :::
 
-::: {.solution}
-<1>1. A **CW complex** is a Hausdorff space
+::: pf
+
+::: pf-step
+
+A **CW complex** is a Hausdorff space
 \[
 X
 \]
@@ -33,7 +36,9 @@ X^2
 \]
 as follows.
 
-::: {.proof}
+
+::: pf-proof
+
 The $0$-skeleton
 \[
 X^0
@@ -79,9 +84,14 @@ The space satisfies:
   is closed iff its intersection with the closure of every cell is closed.
 
 The open cells are the images of the interiors of the attached disks.
+
 :::
 
-<1>2. The projective plane
+:::
+
+::: pf-step
+
+The projective plane
 \[
 \mathbb{RP}^2
 \]
@@ -90,7 +100,9 @@ has a CW structure with exactly one cell in each dimension
 0,1,2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the filtration
 \[
 \mathbb{RP}^0
@@ -147,9 +159,14 @@ S^1\to S^1,
 z\mapsto z^2,
 \]
 which has degree $2$.
+
 :::
 
-<1>3. The complex projective space
+:::
+
+::: pf-step
+
+The complex projective space
 \[
 \mathbb{CP}^4
 \]
@@ -159,7 +176,9 @@ has one cell in each even dimension
 \]
 and no odd-dimensional cells.
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard filtration
 \[
 \mathbb{CP}^0
@@ -203,9 +222,14 @@ Thus exactly one new open cell of real dimension
 2k
 \]
 appears at each stage.
+
 :::
 
-<1>4. Therefore the cellular chain groups of
+:::
+
+::: pf-step
+
+Therefore the cellular chain groups of
 \[
 \mathbb{CP}^4
 \]
@@ -222,19 +246,28 @@ C_n^{\mathrm{cell}}
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cellular chain group in degree $n$ is free abelian on the $n$-cells.
 Step <1>3 gives exactly one cell in each listed even degree and none in the
 odd degrees.
+
 :::
 
-<1>5. Every cellular boundary map for
+:::
+
+::: pf-step
+
+Every cellular boundary map for
 \[
 \mathbb{CP}^4
 \]
 is zero.
 
-::: {.proof}
+
+::: pf-proof
+
 The cellular differential has degree $-1$:
 \[
 d_n:
@@ -263,16 +296,23 @@ Thus in every degree the source or target is zero, so
 \[
 d_n=0.
 \]
+
 :::
 
-<1>6. Hence the cellular homology is
+:::
+
+::: pf-step
+
+Hence the cellular homology is
 \[
 H_n(\mathbb{CP}^4;\mathbb Z)
 \cong
 C_n^{\mathrm{cell}}(\mathbb{CP}^4).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because every differential is zero,
 \[
 \ker d_n
@@ -294,9 +334,14 @@ H_n
 \cong
 C_n^{\mathrm{cell}}.
 \]
+
 :::
 
-<1>7. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 H_n(\mathbb{CP}^4;\mathbb Z)
@@ -310,18 +355,24 @@ H_n(\mathbb{CP}^4;\mathbb Z)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 defines a CW complex.
 Steps <1>2--<1>3 give the requested CW structures.
 Step <1>7 computes the homology of
 \[
 \mathbb{CP}^4.
 \]
+
 :::
+
 :::

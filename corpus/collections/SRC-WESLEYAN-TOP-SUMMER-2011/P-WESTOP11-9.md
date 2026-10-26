@@ -14,7 +14,6 @@ audit:
 Let $X$ be the space obtained by adjoining to $S^2$ the straight-line segment from the north pole to the south pole. Find a simply connected covering space of $X$ and use it to compute $\pi_1(X)$.
 :::
 
-::: {.solution}
 Let
 \[
 N,S\in S^2
@@ -26,7 +25,11 @@ e
 be the additional closed interval whose endpoints are attached to $N$ and
 $S$.
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 n\in\mathbb Z,
 \]
@@ -55,7 +58,9 @@ Call the resulting space
 \widetilde X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Thus $\widetilde X$ is a bi-infinite chain of copies of $S^2$:
 \[
 \cdots
@@ -68,9 +73,14 @@ S_{n+1}^2
 \]
 where each connecting edge runs from the north pole of one sphere to the
 south pole of the next.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 p:\widetilde X\to X
 \]
@@ -90,7 +100,9 @@ e_n
 \]
 homeomorphically onto the added segment $e$.
 
-::: {.proof}
+
+::: pf-proof
+
 The endpoint assignments are compatible:
 the initial point $N_n$ of $e_n$ maps to the initial endpoint $N$ of $e$,
 and the terminal point $S_{n+1}$ maps to the terminal endpoint $S$.
@@ -98,15 +110,22 @@ Thus the maps on the cells glue to a continuous map
 \[
 p:\widetilde X\to X.
 \]
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 \[
 p:\widetilde X\to X
 \]
 is a covering map.
 
-::: {.proof}
+
+::: pf-proof
+
 Away from
 \[
 N,S,
@@ -133,17 +152,29 @@ to the disjoint union of neighborhoods of the points $S_n$, each using the
 terminal half of $e_{n-1}$.
 
 Thus every point has an evenly covered neighborhood.
+
 :::
 
-<1>4. The space $\widetilde X$ is path-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $\widetilde X$ is path-connected.
+
+
+::: pf-proof
+
 Each sphere $S_n^2$ is path-connected.
 The interval $e_n$ joins $S_n^2$ to $S_{n+1}^2$.
 Thus all sphere copies lie in one path component.
+
 :::
 
-<1>5. Every finite subchain
+:::
+
+::: pf-step
+
+Every finite subchain
 \[
 Y_{m,n}
 \coloneqq
@@ -156,7 +187,9 @@ e_{n-1}
 \]
 is simply connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction on
 \[
 n-m.
@@ -189,15 +222,22 @@ after collapsing the connecting interval to a point.
 By van Kampen, the wedge of two simply connected spaces is simply
 connected.
 Thus the induction closes.
+
 :::
 
-<1>6. The whole space
+:::
+
+::: pf-step
+
+The whole space
 \[
 \widetilde X
 \]
 is simply connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \gamma:S^1\to\widetilde X
@@ -217,21 +257,33 @@ By step <1>5, the loop is null-homotopic there, hence also in
 \[
 \widetilde X.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 p:\widetilde X\to X
 \]
 is the universal covering space.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4, $p$ is a connected covering.
 By step <1>6, the total space is simply connected.
 A connected simply connected covering is universal.
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 T:\widetilde X\to\widetilde X
 \]
@@ -243,7 +295,9 @@ T(e_n)=e_{n+1}.
 \]
 Then $T$ is a deck transformation.
 
-::: {.proof}
+
+::: pf-proof
+
 By construction,
 \[
 p\circ T=p,
@@ -255,11 +309,18 @@ The shift is a homeomorphism, with inverse the shift
 n\mapsto n-1.
 \]
 Thus it is a deck transformation.
+
 :::
 
-<1>9. Every deck transformation is a power of $T$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every deck transformation is a power of $T$.
+
+
+::: pf-proof
+
 Fix a point
 \[
 x
@@ -298,16 +359,23 @@ Hence
 \cong
 \mathbb Z.
 \]
+
 :::
 
-<1>10. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \pi_1(X)\cong\mathbb Z.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space $X$ is path-connected, locally path-connected, and semilocally
 simply connected, since it is a finite CW complex.
 For a universal covering of such a space, the deck-transformation group is
@@ -318,15 +386,19 @@ canonically isomorphic to the fundamental group:
 \operatorname{Deck}(\widetilde X/X).
 \]
 Apply step <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 construct the requested simply connected covering space,
 and steps <1>8--<1>10 compute its deck group and hence
 \[
 \pi_1(X).
 \]
+
 :::
+
 :::

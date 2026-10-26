@@ -29,20 +29,25 @@ for $\eta<\xi$.
 Prove both assertions.
 :::
 
-::: {.solution}
 Write
 $$
 \operatorname{cf}(\xi)
 $$
 for the cofinality of the ordinal $\xi$.
 
-<1>1. For every ordinal $\alpha$, the closed ordinal interval
+::: pf
+
+::: pf-step
+
+For every ordinal $\alpha$, the closed ordinal interval
 $$
 [0,\alpha]
 $$
 with the order topology is compact.
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by transfinite induction on $\alpha$.
 
 If
@@ -110,9 +115,14 @@ $$
 [0,\alpha]
 $$
 is compact.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 \xi=\alpha+1
 $$
@@ -121,7 +131,9 @@ $$
 \boxed{W(\xi)\text{ is compact}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 W(\alpha+1)
@@ -134,9 +146,14 @@ W(\alpha+1)
 [0,\alpha].
 $$
 Step <1>1 shows this space is compact.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 \xi
 $$
@@ -146,7 +163,9 @@ W(\xi)
 $$
 is not compact.
 
-::: {.proof}
+
+::: pf-proof
+
 Consider the family
 $$
 \mathcal U
@@ -219,9 +238,14 @@ $$
 W(\xi)
 $$
 is not compact.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 W(\xi)\text{ is compact}
@@ -231,15 +255,22 @@ W(\xi)\text{ is compact}
 \xi\text{ is a successor ordinal}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The empty space
 $$
 W(0)=\varnothing
 $$
 is compact. Step <1>2 proves compactness for successors, and step <1>3 excludes every nonzero limit ordinal.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 \operatorname{cf}(\xi)=\omega,
 $$
@@ -249,7 +280,9 @@ W(\xi)
 $$
 is not countably compact.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a strictly increasing cofinal sequence
 $$
 \eta_0<\eta_1<\eta_2<\cdots<\xi
@@ -299,9 +332,14 @@ $$
 \eta_N<\xi.
 $$
 Hence there is a countable open cover with no finite subcover.
+
 :::
 
-<1>6. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 \operatorname{cf}(\xi)>\omega.
 $$
@@ -311,7 +349,9 @@ W(\xi)
 $$
 has a finite subcover.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal U
@@ -420,9 +460,14 @@ $$
 U_0\cup\cdots\cup U_N.
 $$
 This is a contradiction.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 \xi=0
 $$
@@ -436,15 +481,22 @@ W(\xi)
 $$
 is countably compact.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 W(\xi)
 $$
 is compact in these cases. Every compact space is countably compact.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 W(\xi)\text{ is countably compact}
@@ -452,7 +504,9 @@ W(\xi)\text{ is countably compact}
 \operatorname{cf}(\xi)\ne\omega.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 \operatorname{cf}(\xi)=\omega,
@@ -474,11 +528,15 @@ $$
 \omega
 $$
 and which are countably compact by step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the complete compactness classification, and step <1>8 gives the complete countable-compactness classification.
+
 :::
+
 :::

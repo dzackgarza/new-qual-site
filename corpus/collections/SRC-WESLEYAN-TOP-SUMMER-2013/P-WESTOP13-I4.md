@@ -15,35 +15,59 @@ audit:
 2. Describe in detail a metric space that does not satisfy the hypotheses of the Urysohn Metrization Theorem.
 :::
 
-::: {.solution}
-<1>1. **Urysohn Metrization Theorem.** Every regular second-countable space is metrizable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+**Urysohn Metrization Theorem.** Every regular second-countable space is metrizable.
+
+
+::: pf-proof
+
 Here regular includes the $T_1$ separation axiom: points and disjoint closed sets can be separated by disjoint open neighborhoods. The theorem asserts that under regularity and a countable basis there exists a metric whose induced topology is the given topology.
+
 :::
 
-<1>2. The Euclidean space $\RR^n$ illustrates the theorem.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Euclidean space $\RR^n$ illustrates the theorem.
+
+
+::: pf-proof
+
 The space $\RR^n$ is regular because it is a metric space. It is second countable: the collection of open balls with rational centers and positive rational radii is a countable basis. Hence the Urysohn Metrization Theorem applies. In this case the resulting metrizability is already realized by the Euclidean metric.
+
 :::
 
-<1>3. The countable product
+:::
+
+::: pf-step
+
+The countable product
 $$
 X=[0,1]^{\NN}
 $$
 with the product topology also illustrates the theorem.
 
-::: {.proof}
+
+::: pf-proof
+
 Each factor $[0,1]$ is regular. A product of regular Hausdorff spaces is regular. The product is second countable: if $\mathcal B$ is a countable basis of $[0,1]$, then the basic product sets in which only finitely many coordinates are restricted to members of $\mathcal B$ form a countable basis, because the set of finite subsets of $\NN$ and all finite tuples from a countable set are countable.
 
 Thus Urysohn's theorem gives a metric inducing the product topology. One explicit such metric is
 $$
 d(x,y)=\sum_{n=1}^{\infty}2^{-n}|x_n-y_n|.
 $$
+
 :::
 
-<1>4. Let $X$ be any uncountable set and give it the discrete metric
+:::
+
+::: pf-step
+
+Let $X$ be any uncountable set and give it the discrete metric
 $$
 d(x,y)=
 \begin{cases}
@@ -53,7 +77,9 @@ d(x,y)=
 $$
 Then $X$ is metrizable but is not second countable.
 
-::: {.proof}
+
+::: pf-proof
+
 The displayed function is a metric. Its open ball of radius $1/2$ about $x$ is the singleton $\{x\}$, so the induced topology is the discrete topology.
 
 Suppose $\mathcal C$ were a basis for this topology. For each $x\in X$, since $\{x\}$ is open, there must be some $C_x\in\mathcal C$ such that
@@ -65,17 +91,28 @@ $$
 |\mathcal C|\ge |X|.
 $$
 Because $X$ is uncountable, no basis can be countable. Therefore $X$ is not second countable.
+
 :::
 
-<1>5. The example in step <1>4 does satisfy the regularity hypothesis, but fails the second-countability hypothesis; nevertheless it is metrizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The example in step <1>4 does satisfy the regularity hypothesis, but fails the second-countability hypothesis; nevertheless it is metrizable.
+
+
+::: pf-proof
+
 Every discrete space is regular: a point and a closed set not containing it are separated by the disjoint open sets consisting of the point and the complement of that point. Step <1>4 proves failure of second countability, while the discrete metric already supplies metrizability. Thus Urysohn's hypotheses are sufficient but not necessary.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states the theorem, steps <1>2--<1>3 give two illustrations, and steps <1>4--<1>5 give the requested metrizable space that fails one of the hypotheses.
+
 :::
+
 :::

@@ -18,10 +18,13 @@ H_n(S^2,A)
 for all $n\ge0$.
 :::
 
-::: {.solution}
 All homology groups have integer coefficients.
 
-<1>1. Since $A$ consists of $r$ discrete points,
+::: pf
+
+::: pf-step
+
+Since $A$ consists of $r$ discrete points,
 \[
 H_n(A)
 \cong
@@ -31,15 +34,22 @@ H_n(A)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each point contributes one path component, so
 \[
 H_0(A)\cong\mathbb Z^r.
 \]
 Every higher homology group of a discrete space vanishes.
+
 :::
 
-<1>2. The homology of the sphere is
+:::
+
+::: pf-step
+
+The homology of the sphere is
 \[
 H_n(S^2)
 \cong
@@ -49,11 +59,18 @@ H_n(S^2)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard homology computation for $S^2$.
+
 :::
 
-<1>3. For
+:::
+
+::: pf-step
+
+For
 \[
 n\ge3,
 \]
@@ -62,7 +79,9 @@ one has
 H_n(S^2,A)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The long exact sequence of the pair contains
 \[
 H_n(A)
@@ -83,9 +102,14 @@ Hence exactness forces
 \[
 H_n(S^2,A)=0.
 \]
+
 :::
 
-<1>4. In degree $2$,
+:::
+
+::: pf-step
+
+In degree $2$,
 \[
 \boxed{
 H_2(S^2,A)
@@ -94,7 +118,9 @@ H_2(S^2,A)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The relevant part of the long exact sequence is
 \[
 H_2(A)
@@ -129,9 +155,14 @@ H_2(S^2,A)
 \cong
 \mathbb Z.
 \]
+
 :::
 
-<1>5. The degree-$1$ and degree-$0$ part of the long exact sequence is
+:::
+
+::: pf-step
+
+The degree-$1$ and degree-$0$ part of the long exact sequence is
 \[
 0
 \longrightarrow
@@ -146,7 +177,9 @@ H_0(S^2,A)
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert
 \[
 H_1(S^2)=0,
@@ -156,9 +189,14 @@ H_0(A)=\mathbb Z^r,
 H_0(S^2)=\mathbb Z
 \]
 into the long exact sequence of the pair.
+
 :::
 
-<1>6. The map
+:::
+
+::: pf-step
+
+The map
 \[
 i_*:
 H_0(A)
@@ -174,7 +212,9 @@ n_1+\cdots+n_r.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each generator of
 \[
 H_0(A)
@@ -189,16 +229,23 @@ H_0(S^2)\cong\mathbb Z.
 \]
 Therefore each standard basis vector maps to $1$, giving the augmentation
 map.
+
 :::
 
-<1>7. The map $i_*$ is surjective and
+:::
+
+::: pf-step
+
+The map $i_*$ is surjective and
 \[
 \ker i_*
 \cong
 \mathbb Z^{r-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Surjectivity is immediate because
 \[
 (1,0,\dots,0)
@@ -225,9 +272,14 @@ e_1-e_r,
 \dots,
 e_{r-1}-e_r.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 H_1(S^2,A)
@@ -236,7 +288,9 @@ H_1(S^2,A)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By exactness of the sequence in step <1>5,
 \[
 \operatorname{im}\partial
@@ -257,16 +311,23 @@ H_1(S^2,A)
 \mathbb Z^{r-1}
 \]
 by step <1>7.
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 H_0(S^2,A)=0.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>5, the map
 \[
 i_*:\mathbb Z^r\to\mathbb Z
@@ -277,9 +338,14 @@ Exactness gives
 \[
 H_0(S^2,A)=0.
 \]
+
 :::
 
-<1>10. The complete answer is
+:::
+
+::: pf-step
+
+The complete answer is
 \[
 \boxed{
 H_n(S^2,A)
@@ -295,13 +361,19 @@ H_n(S^2,A)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>3--<1>4 and <1>8--<1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 gives all relative homology groups.
+
 :::
+
 :::

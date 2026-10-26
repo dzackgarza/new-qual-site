@@ -15,8 +15,11 @@ audit:
 2. Show that every compact subspace of a Hausdorff space is closed.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 X
 \]
@@ -27,7 +30,9 @@ F\subseteq X
 be closed.
 Then $F$ is compact.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \{U_\alpha\}_{\alpha\in A}
@@ -81,9 +86,14 @@ U_{\alpha_m}.
 \]
 Thus the original cover of $F$ has a finite subcover.
 Hence $F$ is compact.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 X
 \]
@@ -107,7 +117,9 @@ U_y\ni x,
 V_y\ni y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $X$ is Hausdorff and
 \[
 x\ne y,
@@ -116,9 +128,14 @@ such disjoint neighborhoods exist for every
 \[
 y\in K.
 \]
+
 :::
 
-<1>3. The family
+:::
+
+::: pf-step
+
+The family
 \[
 \{V_y:y\in K\}
 \]
@@ -136,13 +153,20 @@ V_{y_1}
 V_{y_m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every point $y\in K$ lies in its own neighborhood $V_y$, so the family
 covers $K$.
 Compactness gives a finite subcover.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 U
 \coloneqq
@@ -156,7 +180,9 @@ U
 \]
 is an open neighborhood of $x$ disjoint from $K$.
 
-::: {.proof}
+
+::: pf-proof
+
 Finite intersections of open sets are open, and each $U_{y_j}$ contains
 $x$, so
 \[
@@ -193,15 +219,22 @@ Thus
 \[
 U\cap K=\varnothing.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 X\setminus K
 \]
 is open, so $K$ is closed.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows that every
 \[
 x\in X\setminus K
@@ -211,9 +244,14 @@ has an open neighborhood contained in
 X\setminus K.
 \]
 Therefore the complement is open.
+
 :::
 
-<1>6. Thus:
+:::
+
+::: pf-step
+
+Thus:
 \[
 \boxed{
 \begin{aligned}
@@ -226,13 +264,19 @@ K\text{ closed}.
 \end{aligned}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first implication is step <1>1 and the second is step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 records both requested results.
+
 :::
+
 :::

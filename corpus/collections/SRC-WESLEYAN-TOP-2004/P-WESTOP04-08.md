@@ -23,7 +23,6 @@ where $\{0,1\}$ is discrete and $\kappa$ is a cardinal. A space is zero-dimensio
 Outline a proof that a space is zero-dimensional if and only if it is homeomorphic to a subspace of a generalized Cantor space.
 :::
 
-::: {.solution}
 As stated with “zero-dimensional” meaning only “has a basis of clopen sets,” the converse requires a separation hypothesis. The precise statement is:
 
 $$
@@ -34,9 +33,15 @@ X\text{ embeds in }\{0,1\}^{\kappa}
 \text{ for some cardinal }\kappa.}
 $$
 
-<1>1. The statement without the $T_0$ hypothesis is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The statement without the $T_0$ hypothesis is false.
+
+
+::: pf-proof
+
 Let
 $$
 X=\{a,b\}
@@ -56,11 +61,18 @@ $$
 \{0,1\}^{\kappa}
 $$
 is Hausdorff, and every subspace of a Hausdorff space is Hausdorff. The indiscrete two-point space is not even $T_0$, hence cannot be homeomorphic to a subspace of such a product.
+
 :::
 
-<1>2. Every subspace of a generalized Cantor space has a basis of clopen sets.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every subspace of a generalized Cantor space has a basis of clopen sets.
+
+
+::: pf-proof
+
 Let
 $$
 Y\subseteq\{0,1\}^{\kappa}.
@@ -103,9 +115,14 @@ Y\cap C(F,s)
 \}
 $$
 is a basis of clopen subsets for the subspace topology on $Y$.
+
 :::
 
-<1>3. Let $X$ be $T_0$ and let
+:::
+
+::: pf-step
+
+Let $X$ be $T_0$ and let
 $$
 \mathcal B
 $$
@@ -115,7 +132,9 @@ $$
 $$
 separate distinct points.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 x\ne y.
@@ -147,9 +166,14 @@ $$
 y\notin B.
 $$
 Thus a clopen basis element separates the two points.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 $$
 e:X\longrightarrow\{0,1\}^{\mathcal B}
 $$
@@ -168,7 +192,9 @@ $$
 B\in\mathcal B.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For each point
 $$
 x\in X,
@@ -189,11 +215,18 @@ is an element of the product
 $$
 \{0,1\}^{\mathcal B}.
 $$
+
 :::
 
-<1>5. The map $e$ is continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $e$ is continuous.
+
+
+::: pf-proof
+
 For each coordinate
 $$
 B\in\mathcal B,
@@ -230,11 +263,18 @@ $$
 e
 $$
 is continuous.
+
 :::
 
-<1>6. The map $e$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $e$ is injective.
+
+
+::: pf-proof
+
 If
 $$
 x\ne y,
@@ -261,15 +301,22 @@ Hence
 $$
 e(x)\ne e(y).
 $$
+
 :::
 
-<1>7. The map
+:::
+
+::: pf-step
+
+The map
 $$
 e:X\to e(X)
 $$
 is a homeomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 It remains to prove that the inverse
 $$
 e^{-1}:e(X)\to X
@@ -332,9 +379,14 @@ $$
 e:X\to e(X)
 $$
 is an open bijection. Its inverse is therefore continuous.
+
 :::
 
-<1>8. Taking
+:::
+
+::: pf-step
+
+Taking
 $$
 \kappa=|\mathcal B|,
 $$
@@ -343,7 +395,9 @@ $$
 \{0,1\}^{\kappa}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 embeds
 $$
 X
@@ -362,11 +416,15 @@ gives a canonically homeomorphic product, so this is a generalized Cantor cube o
 $$
 \kappa=|\mathcal B|.
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 records the defect in the literal statement. Step <1>2 proves the forward implication, and steps <1>3--<1>8 prove the converse under the necessary $T_0$ hypothesis.
+
 :::
+
 :::

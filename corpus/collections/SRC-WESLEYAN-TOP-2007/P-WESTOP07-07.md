@@ -16,10 +16,15 @@ audit:
 3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\mathbb R$, where $\mathfrak c=|\mathbb R|$.
 :::
 
-::: {.solution}
-<1>1. Every second-countable space is separable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every second-countable space is separable.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal B
@@ -87,15 +92,22 @@ Hence
 $$
 \overline D=X.
 $$
+
 :::
 
-<1>2. The Sorgenfrey line
+:::
+
+::: pf-step
+
+The Sorgenfrey line
 $$
 \mathbb R_\ell
 $$
 is separable.
 
-::: {.proof}
+
+::: pf-proof
+
 Recall that a basis for
 $$
 \mathbb R_\ell
@@ -115,11 +127,18 @@ $$
 \mathbb R_\ell.
 $$
 Thus the Sorgenfrey line is separable.
+
 :::
 
-<1>3. The Sorgenfrey line is not second countable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Sorgenfrey line is not second countable.
+
+
+::: pf-proof
+
 Suppose
 $$
 \mathcal B
@@ -201,9 +220,14 @@ $$
 \mathbb R_\ell
 $$
 is not second countable.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 X
 $$
@@ -224,7 +248,9 @@ $$
 X.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Consider the map
 $$
 (f,g):X\to\mathbb R^2.
@@ -281,9 +307,14 @@ Thus
 $$
 f=g.
 $$
+
 :::
 
-<1>5. Restriction to
+:::
+
+::: pf-step
+
+Restriction to
 $$
 D
 $$
@@ -295,7 +326,9 @@ C(X,\mathbb R)
 \mathbb R^D}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 $$
 R:
@@ -320,16 +353,23 @@ $$
 R
 $$
 is injective.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 |\mathbb R^D|
 \le
 \mathfrak c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 D
@@ -368,9 +408,14 @@ $$
 =
 \mathfrak c.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 |C(X,\mathbb R)|
@@ -382,13 +427,19 @@ $$
 X.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the injection from step <1>5 with the cardinal bound from step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (1), steps <1>2--<1>3 prove part (2), and steps <1>4--<1>7 prove part (3).
+
 :::
+
 :::

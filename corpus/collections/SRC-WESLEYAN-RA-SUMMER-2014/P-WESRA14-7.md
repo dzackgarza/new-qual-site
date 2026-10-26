@@ -23,14 +23,17 @@ Construct a Borel set $E\subset\mathbb R$ such that
 for every finite nonempty nondegenerate interval $I$.
 :::
 
-::: {.solution}
 Let
 \[
 \{J_1,J_2,\dots\}
 \]
 be an enumeration of all bounded open intervals with rational endpoints.
 
-<1>1. Every nonempty nondegenerate interval
+::: pf
+
+::: pf-step
+
+Every nonempty nondegenerate interval
 \[
 I\subset\mathbb R
 \]
@@ -39,7 +42,9 @@ contains some
 J_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose two rational numbers
 \[
 a<b
@@ -52,15 +57,22 @@ Then
 I,
 \]
 and this interval occurs somewhere in the enumeration.
+
 :::
 
-<1>2. Every nonempty open interval
+:::
+
+::: pf-step
+
+Every nonempty open interval
 \[
 U
 \]
 contains a compact nowhere-dense set of strictly positive Lebesgue measure.
 
-::: {.proof}
+
+::: pf-proof
+
 Take the Smith--Volterra--Cantor set
 \[
 S\subset[0,1],
@@ -84,9 +96,14 @@ is compact and nowhere dense and has measure
 >
 0.
 \]
+
 :::
 
-<1>3. We construct recursively pairs of compact nowhere-dense sets
+:::
+
+::: pf-step
+
+We construct recursively pairs of compact nowhere-dense sets
 \[
 K_n,L_n
 \subseteq
@@ -104,7 +121,9 @@ K_1,L_1,K_2,L_2,dots
 \]
 are pairwise disjoint.
 
-::: {.proof}
+
+::: pf-proof
+
 Assume
 \[
 K_1,L_1,dots,K_{n-1},L_{n-1}
@@ -138,9 +157,14 @@ L_n\subseteq V_n.
 \]
 They are disjoint from each other and from every earlier set.
 This completes the induction.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 E
@@ -150,7 +174,9 @@ E
 \]
 Then $E$ is Borel.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 \[
 K_n
@@ -161,9 +187,14 @@ Therefore $E$ is an
 F_\sigma
 \]
 set, hence Borel.
+
 :::
 
-<1>5. For every
+:::
+
+::: pf-step
+
+For every
 \[
 n,
 \]
@@ -176,7 +207,9 @@ and
 L_n\subseteq\mathbb R\setminus E.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first inclusion is immediate from the definition of $E$.
 
 By step <1>3, every $L_n$ is disjoint from every $K_m$, including those
@@ -189,9 +222,14 @@ E
 =
 \varnothing.
 \]
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 \[
 I
 \]
@@ -206,7 +244,9 @@ Then
 m(E\cap I)>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 K_n
@@ -233,14 +273,21 @@ m(K_n)
 >
 0.
 \]
+
 :::
 
-<1>7. For the same interval $I$,
+:::
+
+::: pf-step
+
+For the same interval $I$,
 \[
 m(I\setminus E)>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 L_n
@@ -269,16 +316,23 @@ m(L_n)
 >
 0.
 \]
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 m(E\cap I)
 <
 m(I).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The disjoint decomposition
 \[
 I
@@ -302,9 +356,14 @@ m(E\cap I)
 <
 m(I).
 \]
+
 :::
 
-<1>9. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 0
@@ -316,14 +375,20 @@ m(I)
 \]
 for every finite nonempty nondegenerate interval $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 The left inequality is step <1>6 and the right inequality is step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 constructs a Borel set $E$, and step <1>9 proves it has the
 required measure-theoretic thickness in every interval.
+
 :::
+
 :::

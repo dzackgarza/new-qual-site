@@ -30,7 +30,6 @@ Prove that the diagram
 commutes, where $\widehat\alpha$ is the change-of-basepoint map induced by the path $\alpha$.
 :::
 
-::: {.solution}
 For \(t\in I\), write
 \[
 F_t:X\to Y,\qquad F_t(x)=F(x,t),
@@ -42,7 +41,11 @@ and let \(\overline\alpha(t)=\alpha(1-t)\). Use the change-of-basepoint conventi
 \widehat\alpha([\delta])=[\alpha*\delta*\overline\alpha].
 \]
 
-<1>1. Let \(\gamma:I\to X\) be any loop based at \(x_0\), and set
+::: pf
+
+::: pf-step
+
+Let \(\gamma:I\to X\) be any loop based at \(x_0\), and set
 \[
 \gamma_0=F_0\circ\gamma,
 \qquad
@@ -55,11 +58,18 @@ Then
 \gamma_1(0)=\gamma_1(1)=F(x_0,1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because \(\gamma(0)=\gamma(1)=x_0\), evaluating \(F_0\) and \(F_1\) at the two endpoints gives the displayed equalities.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 G:I\times I\to Y,
 \qquad
@@ -75,19 +85,28 @@ G(1,v)&=&\alpha(v).
 \end{array}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first two identities are the definitions of \(\gamma_0\) and \(\gamma_1\). For the vertical sides, \(\gamma(0)=\gamma(1)=x_0\), so
 \[
 G(0,v)=F(x_0,v)=\alpha(v)=G(1,v).
 \]
+
 :::
 
-<1>3. The loop \(\gamma_0\) is path-homotopic relative to its endpoints to
+:::
+
+::: pf-step
+
+The loop \(\gamma_0\) is path-homotopic relative to its endpoints to
 \[
 \alpha*\gamma_1*\overline\alpha.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(r\in I\), consider the path in the parameter square that starts at \((0,0)\), goes vertically to \((0,r)\), horizontally to \((1,r)\), and then vertically down to \((1,0)\). As \(r\) increases continuously from \(0\) to \(1\), these three-sided paths vary continuously and keep the endpoints \((0,0)\) and \((1,0)\) fixed.
 
 Composing this deformation with the continuous map \(G\) from step <1>2 gives a path homotopy in \(Y\). At \(r=0\), the two vertical pieces are constant and the horizontal piece is \(\gamma_0\), so the resulting path represents \([\gamma_0]\). At \(r=1\), step <1>2 identifies the three pieces as
@@ -99,16 +118,23 @@ in that order. Thus
 [\gamma_0]=[\alpha*\gamma_1*\overline\alpha].
 \]
 The harmless constant pieces at \(r=0\) may be removed by the standard endpoint-fixing reparametrization homotopy.
+
 :::
 
-<1>4. For every \([\gamma]\in\pi_1(X,x_0)\),
+:::
+
+::: pf-step
+
+For every \([\gamma]\in\pi_1(X,x_0)\),
 \[
 F_{0*}([\gamma])
 =
 \widehat\alpha\bigl(F_{1*}([\gamma])\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 F_{0*}([\gamma])=[\gamma_0],
@@ -122,21 +148,32 @@ Step <1>3 gives
 =\widehat\alpha([\gamma_1]),
 \]
 which is the displayed identity.
+
 :::
 
-<1>5. The diagram in the problem commutes.
+:::
 
-::: {.proof}
+::: pf-step
+
+The diagram in the problem commutes.
+
+
+::: pf-proof
+
 Step <1>4 proves equality of the two composites from \(\pi_1(X,x_0)\) to \(\pi_1(Y,F(x_0,0))\):
 \[
 \boxed{F_{0*}=\widehat\alpha\circ F_{1*}.}
 \]
 This is exactly commutativity of the displayed diagram.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

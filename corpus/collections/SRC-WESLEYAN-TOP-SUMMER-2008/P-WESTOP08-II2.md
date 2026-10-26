@@ -28,17 +28,22 @@ audit:
    - $\mathbb{RP}^2$.
 :::
 
-::: {.solution}
 All homology groups below have integral coefficients.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \pi_1(S^1)\cong\mathbb Z.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The exponential covering
 \[
 p:\mathbb R\to S^1,
@@ -55,9 +60,14 @@ Hence
 \[
 \pi_1(S^1)\cong\mathbb Z.
 \]
+
 :::
 
-<1>2. For the torus
+:::
+
+::: pf-step
+
+For the torus
 \[
 T^2=S^1\times S^1,
 \]
@@ -67,7 +77,9 @@ T^2=S^1\times S^1,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The fundamental group preserves products:
 \[
 \pi_1(S^1\times S^1)
@@ -76,9 +88,14 @@ The fundamental group preserves products:
 \cong
 \mathbb Z\times\mathbb Z.
 \]
+
 :::
 
-<1>3. For the infinite cylinder
+:::
+
+::: pf-step
+
+For the infinite cylinder
 \[
 S^1\times\mathbb R,
 \]
@@ -90,7 +107,9 @@ S^1\times\mathbb R,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The factor
 \[
 \mathbb R
@@ -103,9 +122,14 @@ S^1\times\mathbb R
 S^1.
 \]
 Apply step <1>1.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 X
 \coloneqq
@@ -121,7 +145,9 @@ Then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $x$-axis meets the unit circle at
 \[
 (-1,0)
@@ -160,16 +186,23 @@ Hence
 \[
 \pi_1(X)\cong F_2.
 \]
+
 :::
 
-<1>5. The space
+:::
+
+::: pf-step
+
+The space
 \[
 \mathbb R^2\setminus(\mathbb R\times\{0\})
 \]
 has two path components, and the fundamental group of either component is
 trivial.
 
-::: {.proof}
+
+::: pf-proof
+
 The complement of the $x$-axis is
 \[
 \{(x,y):y>0\}
@@ -185,39 +218,58 @@ Therefore, for a basepoint chosen in either component,
 \]
 The whole space is disconnected, so there is no single basepoint-independent
 fundamental group for the union.
+
 :::
 
-<1>6. A universal covering of $S^1$ is
+:::
+
+::: pf-step
+
+A universal covering of $S^1$ is
 \[
 \boxed{
 \mathbb R\xrightarrow{,t\mapsto e^{2\pi i t},}S^1.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map is a covering and
 \[
 \mathbb R
 \]
 is simply connected.
+
 :::
 
-<1>7. A universal covering of $S^2$ is the identity covering
+:::
+
+::: pf-step
+
+A universal covering of $S^2$ is the identity covering
 \[
 \boxed{
 S^2\xrightarrow{\operatorname{id}}S^2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sphere
 \[
 S^2
 \]
 is simply connected, so it is already its own universal covering space.
+
 :::
 
-<1>8. A universal covering of
+:::
+
+::: pf-step
+
+A universal covering of
 \[
 \mathbb{RP}^2
 \]
@@ -230,7 +282,9 @@ x\longmapsto[x].
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient identifies antipodal points
 \[
 x\sim -x.
@@ -241,9 +295,14 @@ Since
 S^2
 \]
 is simply connected, the covering is universal.
+
 :::
 
-<1>9. A universal covering of the torus is
+:::
+
+::: pf-step
+
+A universal covering of the torus is
 \[
 \boxed{
 \mathbb R^2
@@ -259,7 +318,9 @@ e^{2\pi i t}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the product of the universal covering
 \[
 \mathbb R\to S^1
@@ -270,9 +331,14 @@ The space
 \mathbb R^2
 \]
 is simply connected.
+
 :::
 
-<1>10. The simplicial homology of the circle is
+:::
+
+::: pf-step
+
+The simplicial homology of the circle is
 \[
 \boxed{
 H_k(S^1)
@@ -284,7 +350,9 @@ H_k(S^1)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using a simplicial triangulation of $S^1$, its simplicial homology agrees
 with its cellular homology.
 The standard CW model has one $0$-cell and one $1$-cell with zero boundary,
@@ -299,9 +367,14 @@ so the chain complex is
 0.
 \]
 The displayed groups follow.
+
 :::
 
-<1>11. The simplicial homology of the sphere is
+:::
+
+::: pf-step
+
+The simplicial homology of the sphere is
 \[
 \boxed{
 H_k(S^2)
@@ -313,7 +386,9 @@ H_k(S^2)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Any triangulation of $S^2$ computes the same homology as the standard CW
 structure with one $0$-cell and one $2$-cell.
 The cellular differential is zero, giving one copy of
@@ -321,9 +396,14 @@ The cellular differential is zero, giving one copy of
 \mathbb Z
 \]
 in degrees $0$ and $2$ and zero elsewhere.
+
 :::
 
-<1>12. The simplicial homology of the projective plane is
+:::
+
+::: pf-step
+
+The simplicial homology of the projective plane is
 \[
 \boxed{
 H_k(\mathbb{RP}^2)
@@ -336,7 +416,9 @@ H_k(\mathbb{RP}^2)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The standard CW structure on
 \[
 \mathbb{RP}^2
@@ -375,13 +457,17 @@ H_0
 
 Since simplicial and cellular homology agree with singular homology for
 triangulable spaces, these are also the simplicial homology groups.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 compute the requested fundamental groups,
 steps <1>6--<1>9 identify the universal covers, and
 steps <1>10--<1>12 compute the simplicial homology groups.
+
 :::
+
 :::

@@ -23,7 +23,6 @@ with $\{0,1\}$ discrete, extends uniquely to a continuous map
 \]
 :::
 
-::: {.solution}
 Let
 \[
 \mathcal B=\operatorname{clop}(X)
@@ -32,7 +31,11 @@ Let
 \]
 with \(2\) discrete. For \(U\in\mathcal B\), write \(\chi_U:X\to2\) for its characteristic function.
 
-<1>1. The evaluation map
+::: pf
+
+::: pf-step
+
+The evaluation map
 \[
 e:X\longrightarrow 2^{\mathcal B},
 \qquad
@@ -40,7 +43,9 @@ e(x)(U)=\chi_U(x),
 \]
 is a topological embedding.
 
-::: {.proof}
+
+::: pf-proof
+
 Every coordinate \(\chi_U\) is continuous because \(U\) is clopen, so \(e\) is continuous.
 
 To prove injectivity, let \(x\ne y\). Since \(X\) is Hausdorff, there is an open neighborhood \(O\) of \(x\) with \(y\notin O\). Because the clopen subsets form a basis, there is \(U\in\mathcal B\) with
@@ -54,27 +59,48 @@ Finally, the subspace topology induced by \(e\) is the original topology of \(X\
 U=e^{-1}\bigl(\{p\in2^{\mathcal B}:p(U)=1\}\bigr),
 \]
 and the set on the right is a basic clopen cylinder in the product. Thus every member of the clopen basis of \(X\) is the inverse image of an open set in \(e(X)\). Since \(e\) is already continuous, \(e:X\to e(X)\) is a homeomorphism.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{zX=\overline{e(X)}^{\,2^{\mathcal B}}.}
 \]
 Then \(zX\) is compact Hausdorff and contains \(X\) densely, after identifying \(X\) with \(e(X)\).
 
-::: {.proof}
+
+::: pf-proof
+
 The discrete two-point space \(2\) is compact Hausdorff. By Tychonoff's theorem, \(2^{\mathcal B}\) is compact Hausdorff. Hence its closed subspace \(zX\) is compact Hausdorff. By step <1>1, \(e(X)\) is a copy of \(X\), and it is dense in \(zX\) by the definition of \(zX\) as its closure.
+
 :::
 
-<1>3. The space \(zX\) is zero-dimensional.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space \(zX\) is zero-dimensional.
+
+
+::: pf-proof
+
 The product \(2^{\mathcal B}\) has a basis of clopen cylinder sets: a basic cylinder prescribes values in only finitely many coordinates, and each prescribed coordinate condition is clopen because \(2\) is discrete. Intersecting these cylinders with the subspace \(zX\) gives a clopen basis for \(zX\). Hence \(zX\) is zero-dimensional.
+
 :::
 
-<1>4. Every continuous \(f:X\to2\) has a continuous extension \(\overline f:zX\to2\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Every continuous \(f:X\to2\) has a continuous extension \(\overline f:zX\to2\).
+
+
+::: pf-proof
+
 Since \(2\) is discrete, the set
 \[
 U=f^{-1}(\{1\})
@@ -96,21 +122,32 @@ This map is continuous. For every \(x\in X\),
 =f(x),
 \]
 so \(\overline f\) extends \(f\).
+
 :::
 
-<1>5. The extension in step <1>4 is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The extension in step <1>4 is unique.
+
+
+::: pf-proof
+
 Suppose \(g,h:zX\to2\) are continuous and agree on the dense subspace \(e(X)\). Because \(2\) is Hausdorff, the equalizer
 \[
 \{z\in zX:g(z)=h(z)\}
 \]
 is closed in \(zX\). It contains the dense subset \(e(X)\), so it is all of \(zX\). Hence \(g=h\).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>3 give a compact zero-dimensional Hausdorff space \(zX\) containing \(X\) densely, and steps <1>4 and <1>5 give the required unique extension of every continuous map \(X\to\{0,1\}\).
+
 :::
+
 :::

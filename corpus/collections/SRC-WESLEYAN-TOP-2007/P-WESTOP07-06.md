@@ -17,7 +17,6 @@ Let $f:X\to Y$ be a homotopy equivalence.
 2. Prove that $f$ restricts to a homotopy equivalence from each path component of $X$ to its corresponding path component of $Y$.
 :::
 
-::: {.solution}
 Choose a homotopy inverse
 $$
 g:Y\to X
@@ -39,9 +38,15 @@ K(-,0)=f\circ g,
 K(-,1)=\operatorname{id}_Y.
 $$
 
-<1>1. The map $f$ sends each path component of $X$ into a single path component of $Y$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $f$ sends each path component of $X$ into a single path component of $Y$.
+
+
+::: pf-proof
+
 Let
 $$
 x_0,x_1\in X
@@ -83,9 +88,14 @@ $$
 f(x_1)
 $$
 belong to the same path component.
+
 :::
 
-<1>2. Therefore $f$ induces a map
+:::
+
+::: pf-step
+
+Therefore $f$ induces a map
 $$
 \pi_0(f):
 \pi_0(X)
@@ -94,7 +104,9 @@ $$
 $$
 on the sets of path components.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that the path component containing
 $$
 f(x)
@@ -104,9 +116,14 @@ $$
 x.
 $$
 Hence the induced map is well defined.
+
 :::
 
-<1>3. The homotopy
+:::
+
+::: pf-step
+
+The homotopy
 $$
 H:g\circ f\simeq\operatorname{id}_X
 $$
@@ -117,7 +134,9 @@ $$
 \operatorname{id}_{\pi_0(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 $$
 x\in X,
@@ -148,16 +167,23 @@ in
 $$
 \pi_0(X).
 $$
+
 :::
 
-<1>4. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 $$
 \pi_0(f)\circ\pi_0(g)
 =
 \operatorname{id}_{\pi_0(Y)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 $$
 y\in Y,
@@ -178,9 +204,14 @@ Hence these points lie in the same path component of
 $$
 Y.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \pi_0(f):
@@ -190,7 +221,9 @@ $$
 $$
 is a bijection.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>4 show that
 $$
 \pi_0(g)
@@ -199,9 +232,14 @@ is both a left and right inverse of
 $$
 \pi_0(f).
 $$
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 $$
 C\subseteq X
 $$
@@ -218,20 +256,29 @@ $$
 f(C)\subseteq D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly how
 $$
 D
 $$
 was defined in step <1>5.
+
 :::
 
-<1>7. One also has
+:::
+
+::: pf-step
+
+One also has
 $$
 g(D)\subseteq C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 x_0\in C.
@@ -296,9 +343,14 @@ namely
 $$
 C.
 $$
+
 :::
 
-<1>8. The restrictions
+:::
+
+::: pf-step
+
+The restrictions
 $$
 f_C
 \coloneqq
@@ -312,11 +364,18 @@ g|_D:D\to C
 $$
 are well defined.
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from steps <1>6--<1>7.
+
 :::
 
-<1>9. The homotopy
+:::
+
+::: pf-step
+
+The homotopy
 $$
 H
 $$
@@ -327,7 +386,9 @@ g_D\circ f_C
 \operatorname{id}_C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 x\in C,
@@ -357,9 +418,14 @@ $$
 C
 $$
 and gives the desired restricted homotopy.
+
 :::
 
-<1>10. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 $$
 K
 $$
@@ -370,7 +436,9 @@ f_C\circ g_D
 \operatorname{id}_D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 y\in D,
@@ -392,16 +460,23 @@ $$
 K|_{D\times I}
 $$
 is the required homotopy.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 f_C:C\to D
 \text{ is a homotopy equivalence}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>9--<1>10 show that
 $$
 g_D
@@ -410,11 +485,15 @@ is a homotopy inverse for
 $$
 f_C.
 $$
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (1), and step <1>11 proves part (2).
+
 :::
+
 :::

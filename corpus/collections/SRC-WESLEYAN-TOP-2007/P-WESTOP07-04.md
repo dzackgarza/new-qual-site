@@ -25,8 +25,11 @@ bc^{-1}a,
 2. Identify $X$, with justification, in terms of that classification.
 :::
 
-::: {.solution}
-<1>1. The closed connected surfaces are classified as follows:
+::: pf
+
+::: pf-step
+
+The closed connected surfaces are classified as follows:
 
 $$
 \boxed{
@@ -37,7 +40,9 @@ S^2,
 \#^k\mathbb{RP}^2\ (k\ge1).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The classification theorem for closed connected surfaces states that every such surface is homeomorphic to exactly one of:
 
 1. the sphere;
@@ -68,15 +73,22 @@ and
 $$
 \chi(\#^k\mathbb{RP}^2)=2-k.
 $$
+
 :::
 
-<1>2. The edge labels determine
+:::
+
+::: pf-step
+
+The edge labels determine
 $$
 \boxed{11}
 $$
 edge classes in the quotient.
 
-::: {.proof}
+
+::: pf-proof
+
 The distinct labels are
 $$
 a,b,c,d,e,f,g,h,i,j,k.
@@ -85,11 +97,18 @@ Each label occurs exactly twice among the six boundary words, so each pair becom
 $$
 E=11.
 $$
+
 :::
 
-<1>3. The first two triangular faces contribute exactly two vertex classes to the quotient.
+:::
 
-::: {.proof}
+::: pf-step
+
+The first two triangular faces contribute exactly two vertex classes to the quotient.
+
+
+::: pf-proof
+
 Let the vertices of the first triangle
 $$
 bc^{-1}a
@@ -150,11 +169,18 @@ $$
 u_0\sim v_1
 $$
 forms the second class.
+
 :::
 
-<1>4. All vertices in the remaining four polygonal faces lie in one vertex class.
+:::
 
-::: {.proof}
+::: pf-step
+
+All vertices in the remaining four polygonal faces lie in one vertex class.
+
+
+::: pf-proof
+
 Write the third face as
 $$
 ded^{-1}ef.
@@ -212,24 +238,38 @@ $$
 edges identify the remaining vertices there.
 
 Thus every vertex occurring in faces three through six belongs to one quotient vertex class.
+
 :::
 
-<1>5. Therefore the quotient has
+:::
+
+::: pf-step
+
+Therefore the quotient has
 $$
 \boxed{V=3}
 $$
 vertices.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>4 produce two vertex classes from the first two faces and one vertex class from the remaining four faces. No label occurs in both groups except through no edge at all, so these three classes remain distinct.
+
 :::
 
-<1>6. The quotient has Euler characteristic
+:::
+
+::: pf-step
+
+The quotient has Euler characteristic
 $$
 \boxed{\chi(X)=-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There are
 $$
 F=6
@@ -252,11 +292,18 @@ V-E+F
 =
 -2.
 $$
+
 :::
 
-<1>7. The surface $X$ is nonorientable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The surface $X$ is nonorientable.
+
+
+::: pf-proof
+
 For an orientable polygonal presentation, after orienting all faces consistently, each paired edge must occur once in each direction: the two boundary orientations induced on the glued edge are opposite.
 
 Here the label
@@ -282,14 +329,21 @@ $$
 X
 $$
 is nonorientable.
+
 :::
 
-<1>8. The nonorientable genus of $X$ is
+:::
+
+::: pf-step
+
+The nonorientable genus of $X$ is
 $$
 \boxed{4}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the classification theorem, a closed connected nonorientable surface of genus
 $$
 k
@@ -306,9 +360,14 @@ so
 $$
 k=4.
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 X
@@ -319,19 +378,28 @@ X
 \#\mathbb{RP}^2.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 shows that $X$ is nonorientable, and step <1>8 determines its nonorientable genus to be $4$. The classification theorem then gives the displayed homeomorphism type.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the classification list, and steps <1>2--<1>9 identify the given quotient within that classification.
-:::
+
 :::
 
-::: {.solution}
-<1>1. The classification theorem for compact connected surfaces says that every compact connected surface is homeomorphic to exactly one of:
+:::
+
+::: pf
+
+::: pf-step
+
+The classification theorem for compact connected surfaces says that every compact connected surface is homeomorphic to exactly one of:
 
 $$
 \boxed{
@@ -355,7 +423,9 @@ N_k
 k\ge1.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The surfaces
 $$
 \Sigma_g
@@ -381,15 +451,22 @@ $$
 \chi(N_k)=2-k.
 $$
 The classification theorem states that orientability and Euler characteristic determine the homeomorphism type within this list.
+
 :::
 
-<1>2. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 X
 $$
 has two connected components.
 
-::: {.proof}
+
+::: pf-proof
+
 The first two polygons have boundary words
 $$
 bc^{-1}a
@@ -435,9 +512,14 @@ $$
 i,k.
 $$
 Hence there are exactly two connected components.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 X_1
 $$
@@ -450,7 +532,9 @@ E_1=3,
 V_1=2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There are two polygonal faces.
 
 The labels
@@ -491,9 +575,14 @@ Thus
 $$
 V_1=2.
 $$
+
 :::
 
-<1>4. The Euler characteristic of
+:::
+
+::: pf-step
+
+The Euler characteristic of
 $$
 X_1
 $$
@@ -502,7 +591,9 @@ $$
 \boxed{\chi(X_1)=1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \chi(X_1)
@@ -512,15 +603,22 @@ V_1-E_1+F_1
 2-3+2
 =1.
 $$
+
 :::
 
-<1>5. The component
+:::
+
+::: pf-step
+
+The component
 $$
 X_1
 $$
 is nonorientable.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose the two triangular faces could be oriented compatibly.
 
 For the
@@ -554,15 +652,22 @@ $$
 X_1
 $$
 is nonorientable.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 X_1\cong\mathbb{RP}^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5,
 $$
 X_1
@@ -590,9 +695,14 @@ Hence
 $$
 X_1\cong N_1=\mathbb{RP}^2.
 $$
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 $$
 X_2
 $$
@@ -605,7 +715,9 @@ E_2=8,
 V_2=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There are four polygonal faces.
 
 The labels
@@ -634,9 +746,14 @@ pairings bring in the fourth. Hence
 $$
 V_2=1.
 $$
+
 :::
 
-<1>8. The Euler characteristic of
+:::
+
+::: pf-step
+
+The Euler characteristic of
 $$
 X_2
 $$
@@ -645,7 +762,9 @@ $$
 \boxed{\chi(X_2)=-3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 \chi(X_2)
@@ -656,15 +775,22 @@ V_2-E_2+F_2
 =
 -3.
 $$
+
 :::
 
-<1>9. The component
+:::
+
+::: pf-step
+
+The component
 $$
 X_2
 $$
 is nonorientable.
 
-::: {.proof}
+
+::: pf-proof
+
 In the polygon with boundary word
 $$
 ded^{-1}ef,
@@ -686,9 +812,14 @@ $$
 X_2
 $$
 is nonorientable.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 X_2
@@ -698,7 +829,9 @@ N_5
 \#^5\mathbb{RP}^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>8--<1>9,
 $$
 X_2
@@ -722,9 +855,14 @@ so
 $$
 k=5.
 $$
+
 :::
 
-<1>11. The complete quotient is
+:::
+
+::: pf-step
+
+The complete quotient is
 $$
 \boxed{
 X
@@ -736,13 +874,19 @@ X
 \right)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives exactly two components. Steps <1>6 and <1>10 identify them.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 lists the compact connected surfaces, and step <1>11 identifies the quotient in that classification.
+
 :::
+
 :::

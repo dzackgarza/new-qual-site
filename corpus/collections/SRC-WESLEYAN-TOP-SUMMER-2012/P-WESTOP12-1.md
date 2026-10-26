@@ -29,8 +29,11 @@ For path-connected spaces $X$ and $Y$, give an explicit example satisfying each 
 14. $\pi_1(X)\cong\pi_1(Y)$ but $H_2(X)\not\cong H_2(Y)$.
 :::
 
-::: {.solution}
-<1>1. Statement (1) is possible.
+::: pf
+
+::: pf-step
+
+Statement (1) is possible.
 Take
 \[
 X=\{*\},
@@ -38,16 +41,23 @@ X=\{*\},
 Y=[0,1].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both spaces are contractible, so
 \[
 X\simeq Y.
 \]
 They are not homeomorphic because one has one point and the other has
 infinitely many.
+
 :::
 
-<1>2. Statement (2) is possible as literally stated.
+:::
+
+::: pf-step
+
+Statement (2) is possible as literally stated.
 Take two disjoint copies of the circle:
 \[
 X=S^1\times\{0\},
@@ -55,15 +65,24 @@ X=S^1\times\{0\},
 Y=S^1\times\{1\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 They are homeomorphic, hence homotopy equivalent.
 Neither is a subset of the other, so neither can be a deformation retract
 of the other.
+
 :::
 
-<1>3. Statement (3) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (3) is impossible.
+
+
+::: pf-proof
+
 If $X$ is a deformation retract of $Y$, the inclusion
 \[
 i:X\hookrightarrow Y
@@ -84,9 +103,14 @@ Thus $i$ and $r$ are homotopy inverses, so
 \[
 X\simeq Y.
 \]
+
 :::
 
-<1>4. Statement (4) is possible.
+:::
+
+::: pf-step
+
+Statement (4) is possible.
 Take
 \[
 X=S^1
@@ -96,7 +120,9 @@ as the circle summand of
 Y=S^1\vee S^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collapse the $S^2$ summand to the wedge point.
 This gives a retraction
 \[
@@ -116,28 +142,47 @@ while
 H_2(Y)\cong\mathbb Z.
 \]
 Hence the retraction is not a deformation retraction.
+
 :::
 
-<1>5. Statement (5) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (5) is impossible.
+
+
+::: pf-proof
+
 A deformation retraction is, by definition, a retraction together with a
 homotopy fixing the retract.
 Thus every deformation retract is a retract.
+
 :::
 
-<1>6. Statement (6) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (6) is impossible.
+
+
+::: pf-proof
+
 Homotopy equivalent path-connected spaces have isomorphic fundamental
 groups.
 Homotopy inverse maps induce mutually inverse homomorphisms on
 \[
 \pi_1.
 \]
+
 :::
 
-<1>7. Statement (7) is possible.
+:::
+
+::: pf-step
+
+Statement (7) is possible.
 Take
 \[
 X=\{*\},
@@ -145,7 +190,9 @@ X=\{*\},
 Y=S^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both fundamental groups are trivial:
 \[
 \pi_1(X)=0=\pi_1(Y).
@@ -157,19 +204,33 @@ H_2(X)=0,
 H_2(Y)\cong\mathbb Z.
 \]
 Therefore $X$ and $Y$ cannot be homotopy equivalent.
+
 :::
 
-<1>8. Statement (8) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (8) is impossible.
+
+
+::: pf-proof
+
 By step <1>3, a deformation retract is a homotopy equivalence.
 By step <1>6, homotopy-equivalent spaces have isomorphic fundamental
 groups.
+
 :::
 
-<1>9. Statement (9) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (9) is impossible.
+
+
+::: pf-proof
+
 If $X$ is contractible, then
 \[
 X\simeq\{*\}.
@@ -178,15 +239,22 @@ Homotopy invariance of the fundamental group gives
 \[
 \pi_1(X)\cong0.
 \]
+
 :::
 
-<1>10. Statement (10) is possible.
+:::
+
+::: pf-step
+
+Statement (10) is possible.
 Take
 \[
 X=S^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sphere is simply connected:
 \[
 \pi_1(S^2)=0.
@@ -195,9 +263,14 @@ It is not contractible because
 \[
 H_2(S^2)\cong\mathbb Z\ne0.
 \]
+
 :::
 
-<1>11. Statement (11) is possible.
+:::
+
+::: pf-step
+
+Statement (11) is possible.
 Take
 \[
 X=S^1\vee S^1,
@@ -205,7 +278,9 @@ X=S^1\vee S^1,
 Y=T^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the wedge,
 \[
 \pi_1(X)\cong F_2,
@@ -227,11 +302,18 @@ F_2^{\mathrm{ab}}
 \cong
 H_1(Y).
 \]
+
 :::
 
-<1>12. Statement (12) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (12) is impossible.
+
+
+::: pf-proof
+
 For every path-connected space $Z$,
 \[
 H_1(Z;\mathbb Z)
@@ -246,9 +328,14 @@ induces an isomorphism of abelianizations and therefore
 \[
 H_1(X)\cong H_1(Y).
 \]
+
 :::
 
-<1>13. Statement (13) is possible.
+:::
+
+::: pf-step
+
+Statement (13) is possible.
 Take
 \[
 X=S^1,
@@ -256,7 +343,9 @@ X=S^1,
 Y=\{*\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both second homology groups vanish:
 \[
 H_2(S^1)=0=H_2(\{*\}).
@@ -269,9 +358,14 @@ and
 \[
 \pi_1(\{*\})=0.
 \]
+
 :::
 
-<1>14. Statement (14) is possible.
+:::
+
+::: pf-step
+
+Statement (14) is possible.
 Take
 \[
 X=\{*\},
@@ -279,7 +373,9 @@ X=\{*\},
 Y=S^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both fundamental groups are trivial, while
 \[
 H_2(X)=0
@@ -288,9 +384,14 @@ and
 \[
 H_2(Y)\cong\mathbb Z.
 \]
+
 :::
 
-<1>15. The complete classification is
+:::
+
+::: pf-step
+
+The complete classification is
 \[
 \boxed{
 \begin{array}{c|cccccccccccccc}
@@ -303,14 +404,20 @@ H_2(Y)\cong\mathbb Z.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This table collects steps <1>1--<1>14.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Each possible statement has an explicit example and each impossible
 statement has a proof of impossibility above.
+
 :::
+
 :::

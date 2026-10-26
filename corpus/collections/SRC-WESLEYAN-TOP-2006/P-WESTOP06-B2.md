@@ -18,21 +18,33 @@ Let $g:X\to Y$ and $h:Y\to X$.
 3. Prove that the three spaces pictured in the source are homotopy equivalent: a figure-eight, two circles joined by an interval, and a circle together with a diameter.
 :::
 
-::: {.solution}
-<1>1. The maps \(g:X\to Y\) and \(h:Y\to X\) are homotopy equivalences, inverse to one another up to homotopy, if
+::: pf
+
+::: pf-step
+
+The maps \(g:X\to Y\) and \(h:Y\to X\) are homotopy equivalences, inverse to one another up to homotopy, if
 \[
 h\circ g\simeq\operatorname{id}_X
 \qquad\text{and}\qquad
 g\circ h\simeq\operatorname{id}_Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of a homotopy equivalence and a homotopy inverse.
+
 :::
 
-<1>2. If \(g':X\to Y\) is homotopic to a homotopy equivalence \(g:X\to Y\), then \(g'\) is also a homotopy equivalence.
+:::
 
-::: {.proof}
+::: pf-step
+
+If \(g':X\to Y\) is homotopic to a homotopy equivalence \(g:X\to Y\), then \(g'\) is also a homotopy equivalence.
+
+
+::: pf-proof
+
 Let \(h:Y\to X\) be a homotopy inverse for \(g\). Thus
 \[
 h\circ g\simeq\operatorname{id}_X,
@@ -48,11 +60,18 @@ and
 g'\circ h\simeq g\circ h\simeq\operatorname{id}_Y.
 \]
 Therefore \(h\) is also a homotopy inverse for \(g'\), and \(g'\) is a homotopy equivalence.
+
 :::
 
-<1>3. Collapsing a contractible tree subcomplex of a graph to a point is a homotopy equivalence.
+:::
 
-::: {.proof}
+::: pf-step
+
+Collapsing a contractible tree subcomplex of a graph to a point is a homotopy equivalence.
+
+
+::: pf-proof
+
 Let \(G\) be a graph regarded as a CW complex and let \(T\subseteq G\) be a contractible tree subcomplex. Choose a contraction
 \[
 C:T\times I\to T
@@ -87,21 +106,35 @@ K_0=\operatorname{id}_{G/T},
 K_1=q\circ s.
 \]
 Therefore \(q\circ s\simeq\operatorname{id}_{G/T}\). Hence \(q\) and \(s\) are homotopy inverses, so collapsing \(T\) is a homotopy equivalence.
+
 :::
 
-<1>4. The space consisting of two circles joined by an interval is homotopy equivalent to the figure-eight \(S^1\vee S^1\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The space consisting of two circles joined by an interval is homotopy equivalent to the figure-eight \(S^1\vee S^1\).
+
+
+::: pf-proof
+
 Regard the joining interval as a tree subcomplex \(T\). Collapsing \(T\) identifies its two endpoints and leaves the two circles otherwise unchanged. The quotient is therefore exactly a figure-eight:
 \[
 G/T\cong S^1\vee S^1.
 \]
 By step <1>3, the quotient map is a homotopy equivalence.
+
 :::
 
-<1>5. The space consisting of a circle together with a diameter is homotopy equivalent to the figure-eight \(S^1\vee S^1\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The space consisting of a circle together with a diameter is homotopy equivalent to the figure-eight \(S^1\vee S^1\).
+
+
+::: pf-proof
+
 The two endpoints of the diameter divide the circle into two semicircular edges. Thus the pictured space is a theta graph with two vertices and three edges: the two semicircles and the diameter.
 
 Take the diameter as the tree subcomplex \(T\). Collapsing \(T\) identifies its endpoints. Each semicircle then becomes a loop based at the collapsed point, so
@@ -109,20 +142,31 @@ Take the diameter as the tree subcomplex \(T\). Collapsing \(T\) identifies its 
 G/T\cong S^1\vee S^1.
 \]
 Step <1>3 again shows that this quotient map is a homotopy equivalence.
+
 :::
 
-<1>6. The three pictured spaces are homotopy equivalent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The three pictured spaces are homotopy equivalent.
+
+
+::: pf-proof
+
 The first pictured space is already the figure-eight \(S^1\vee S^1\). Step <1>4 shows that the second is homotopy equivalent to it, and step <1>5 shows the same for the third. Hence all three spaces have the same homotopy type:
 \[
 \boxed{S^1\vee S^1.}
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part \(1\), step <1>2 answers part \(2\), and step <1>6 answers part \(3\).
+
 :::
+
 :::
