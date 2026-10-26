@@ -28,8 +28,13 @@ That is, prove that the order of $H_2$ divides the order of $G_1$.
 :::
 
 ::: {.solution}
-<1>1. The order of $\varphi(G_1)$ divides $|G_1|$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1-1}
+The order of $\varphi(G_1)$ divides $|G_1|$.
+
+::: pf-proof
 Let
 $$
 K=\ker\varphi.
@@ -50,8 +55,12 @@ $$
 $$
 :::
 
-<1>2. The order of $H_2$ divides $|\varphi(G_1)|$.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-2}
+The order of $H_2$ divides $|\varphi(G_1)|$.
+
+::: pf-proof
 By definition,
 $$
 H_2=\varphi(H_1).
@@ -66,24 +75,28 @@ $$
 $$
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{|H_2|\mid |G_1|}.
 $$
-::: {.proof}
-By step <1>2,
+
+::: pf-proof
+By step [](#s1-2){.pf-ref},
 $$
 |H_2|\mid |\varphi(G_1)|,
 $$
-and by step <1>1,
+and by step [](#s1-1){.pf-ref},
 $$
 |\varphi(G_1)|\mid |G_1|.
 $$
 Divisibility is transitive.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+:::
+
 :::
