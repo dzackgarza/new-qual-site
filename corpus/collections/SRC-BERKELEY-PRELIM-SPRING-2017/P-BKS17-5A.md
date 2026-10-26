@@ -43,6 +43,8 @@ $$
 Find the radius of convergence of the series and the function to which it converges in its disc of convergence.
 :::
 
+::: {.solution}
+
 Write
 $$
 F(z)\coloneqq\sum_{n=0}^{\infty}a_nz^n.
@@ -188,6 +190,8 @@ so the denominator is nonzero for $|z|<R=\sqrt7-2$. Dividing the identity in ste
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the requested radius and sum.
+
+:::
 
 :::
 
