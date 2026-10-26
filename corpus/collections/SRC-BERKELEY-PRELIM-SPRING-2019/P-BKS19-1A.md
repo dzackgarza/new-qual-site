@@ -39,6 +39,8 @@ y(0)+y'(0)+y''(0)=0.
 $$
 :::
 
+::: {.solution}
+
 Let
 $$
 \omega\coloneqq\frac{-1+i\sqrt3}{2},
@@ -124,6 +126,8 @@ Both $\omega$ and $\overline\omega$ are roots of $r^2+r+1$, so both parenthesize
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required identity.
+
+:::
 
 :::
 
