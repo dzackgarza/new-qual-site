@@ -24,6 +24,8 @@ $$
 Either exhibit one or prove none exists.
 :::
 
+::: {.solution}
+
 Let
 $$
 S\coloneqq \mathbb Z[t]/(t^2-t+1),
@@ -138,6 +140,8 @@ The universal property of the quotient ring therefore gives a unique induced uni
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} explicitly exhibits the required homomorphism.
+
+:::
 
 :::
 
