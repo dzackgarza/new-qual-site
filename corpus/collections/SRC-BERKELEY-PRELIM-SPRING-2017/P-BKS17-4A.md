@@ -37,6 +37,8 @@ The Weierstrass zeta function $\zeta$ is a meromorphic function satisfying
 Here $\omega_1, \omega_2, \eta_1, \eta_2$ are complex constants with $\omega_2 / \omega_1$ not real. Use Cauchy's residue theorem to prove Legendre's relation $\omega_2 \eta_1 - \omega_1 \eta_2 = \pm 2\pi i$ and express the sign in terms of $\omega_1$ and $\omega_2$.
 :::
 
+::: {.solution}
+
 Put
 $$
 s\coloneqq\operatorname{sgn}\!\left(\Im\frac{\omega_2}{\omega_1}\right)\in\{\pm1\}.
@@ -167,6 +169,8 @@ Step [](#s1-2){.pf-ref} identifies the left side with $\omega_2\eta_1-\omega_1\e
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required relation with its sign expressed in terms of $\omega_1$ and $\omega_2$.
+
+:::
 
 :::
 
