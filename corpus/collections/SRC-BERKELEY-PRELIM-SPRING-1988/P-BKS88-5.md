@@ -21,15 +21,21 @@ Let $D$ be a group of order $2n$, where $n$ is odd, with a subgroup $H$ of order
 :::
 
 ::: {.solution}
-<1>1. $H$ is a normal subgroup of $D$ of index $2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #normal-index-two}
+$H$ is a normal subgroup of $D$ of index $2$.
+
+::: pf-proof
 Since $|D|=2n$ and $|H|=n$, the index $[D:H]$ is $2$. Every subgroup of index $2$ is normal, so $H\triangleleft D$.
 :::
 
-<1>2. $H$ is commutative.
+:::
 
-::: {.proof}
+::: pf-step
+$H$ is commutative.
+
+::: pf-proof
 Choose $x\in D\setminus H$. For arbitrary $h_1,h_2\in H$, the hypothesis applied to $h_1$, $h_2$, and $h_1h_2$ gives
 \[
 x h_1x^{-1}=h_1^{-1},
@@ -53,19 +59,21 @@ h_1^{-1}h_2^{-1}
 Taking inverses yields $h_1h_2=h_2h_1$. Thus $H$ is commutative.
 :::
 
-<1>3. Every $x\in D\setminus H$ satisfies $x^2=e$.
+:::
 
-::: {.proof}
-By step <1>1, the quotient $D/H$ has order $2$. Thus the nontrivial coset $xH$ has square $H$, so $x^2\in H$. Applying the hypothesis to $h=x^2$ gives
+::: pf-step
+Every $x\in D\setminus H$ satisfies $x^2=e$.
+
+::: pf-proof
+By [](#normal-index-two){.pf-ref}, the quotient $D/H$ has order $2$. Thus the nontrivial coset $xH$ has square $H$, so $x^2\in H$. Applying the hypothesis to $h=x^2$ gives
 \[
 x x^2 x^{-1}=(x^2)^{-1}.
 \]
 The left-hand side is $x^2$, hence $(x^2)^2=e$. Therefore the order of $x^2$ divides $2$. But $x^2\in H$ and $|H|=n$ is odd, so Lagrange's theorem forces $x^2=e$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves that $H$ is commutative, and step <1>3 proves that every element of $D\setminus H$ has order $2$.
 :::
+
+:::
+
 :::
