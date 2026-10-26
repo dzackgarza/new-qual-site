@@ -23,19 +23,25 @@ True or false: A function $f ( z )$ analytic on $| z - a | < r$ and continuous o
 ::: {.solution}
 It suffices to take $a=0$ and $r=1$.
 
-<1>1. The function
+::: pf
+
+::: {.pf-step #counterexample-function}
+The function
 \[
 f(z):=\sqrt{1-z},\qquad |z|<1,
 \]
 with the principal square root, is analytic on $|z|<1$ and extends continuously to $|z|\leq 1$.
 
-::: {.proof}
+::: pf-proof
 If $|z|<1$, then $\operatorname{Re}(1-z)>0$. Hence $1-z$ lies in the right half-plane, on which the principal square root is analytic, so $f$ is analytic on the open unit disc. If $|z|\leq 1$, then $\operatorname{Re}(1-z)\geq 0$, and the principal square root is continuous on this closed right half-plane, including at $0$. Thus the same formula defines a continuous function on the closed unit disc.
 :::
 
-<1>2. The function in step <1>1 has no analytic extension to any disc $|z|<1+\delta$ with $\delta>0$.
+:::
 
-::: {.proof}
+::: {.pf-step #no-extension}
+The function in [](#counterexample-function){.pf-ref} has no analytic extension to any disc $|z|<1+\delta$ with $\delta>0$.
+
+::: pf-proof
 Suppose that such an extension $F$ exists. On $|z|<1$ one has
 \[
 F(z)^2=f(z)^2=1-z.
@@ -51,9 +57,12 @@ throughout that disc. Evaluating at $z=1$ gives $F(1)=0$. Differentiating the id
 whose left-hand side is $0$, a contradiction.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 give a counterexample, so the proposed statement is false.
 :::
+
+::: pf-qed
+[](#counterexample-function){.pf-ref} and [](#no-extension){.pf-ref} give a counterexample, so the proposed statement is false.
+:::
+
+:::
+
 :::
