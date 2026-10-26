@@ -32,6 +32,8 @@ Let $R$ be a ring, possibly noncommutative and possibly without an identity, in 
 Show that $R$ has characteristic $2$ (that is, $2a=0$ for all $a$) and is commutative.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -126,6 +128,8 @@ This combines steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives both required conclusions.
+
+:::
 
 :::
 
