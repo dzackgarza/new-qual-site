@@ -22,16 +22,25 @@ Prove the following standard theorem about subgroups: that $H\cap K$ is a subgro
 :::
 
 ::: {.solution}
-<1>1. The intersection $H\cap K$ is nonempty.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1-1}
+The intersection $H\cap K$ is nonempty.
+
+::: pf-proof
 Since $H$ and $K$ are subgroups of $G$, both contain the identity $e$. Hence
 $$
 e\in H\cap K.
 $$
 :::
 
-<1>2. The intersection is closed under the subgroup test.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-2}
+The intersection is closed under the subgroup test.
+
+::: pf-proof
 Let
 $$
 a,b\in H\cap K.
@@ -48,16 +57,20 @@ ab^{-1}\in H\cap K.
 $$
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{H\cap K\le G}.
 $$
-::: {.proof}
-By step <1>1, $H\cap K$ is nonempty, and by step <1>2 it is closed under $ab^{-1}$. The subgroup test therefore shows that $H\cap K$ is a subgroup of $G$.
+
+::: pf-proof
+By step [](#s1-1){.pf-ref}, $H\cap K$ is nonempty, and by step [](#s1-2){.pf-ref} it is closed under $ab^{-1}$. The subgroup test therefore shows that $H\cap K$ is a subgroup of $G$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+:::
+
 :::
