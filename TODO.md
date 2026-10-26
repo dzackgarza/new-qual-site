@@ -270,9 +270,10 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
   Readers can suggest a slogan for a result through the same prefilled GitHub issue-form mechanism `unsolved-contribution` builds.
   **Acceptance:** the slogan field exists in the card schema, renders as a badge on the built site, carries a working suggestion link, and every theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement.
 
-- **`lamport-conversion`**. **Needs:** none.
+- **`lamport-conversion`**. **Closed:** 2026-10-27 (`3cd4a340a`). **Needs:** none.
   A proof written with typed step numbers (`<1>2.`) violates `STYLE-08`. Convert every such proof to the syntax of pandoc-config's `lamport_proof.lua` filter. This is a syntax conversion: no mathematics and no prose changes.
-  On 2026-09-29 agents converted 1,808 cards and a one-time script converted 4,579 more. The script refused a card whose structure it could not read unambiguously, and it wrote a card only when every source word survived and the filter accepted the result. On 2026-09-30 agents converted the 449 refused and 96 skipped cards, and no typed step remains; every batch row is `converted`. A word check of those cards against their text before the conversion, and a fence count over the corpus, found lost claims and 220 cards with an unclosed section; both are repaired. Close step 1 is next.
+  On 2026-09-29 agents converted 1,808 cards and a one-time script converted 4,579 more. The script refused a card whose structure it could not read unambiguously, and it wrote a card only when every source word survived and the filter accepted the result. On 2026-09-30 agents converted the 449 refused and 96 skipped cards, and no typed step remains; every batch row is `converted`. A word check of those cards against their text before the conversion, and a fence count over the corpus, found lost claims and 220 cards with an unclosed section; both are repaired.
+  On 2026-10-27 a strict converter replaced the remaining level-1 typed citations in 2,685 cards. Five cards with several proofs received `p1-`/`p2-` identifiers, 28 cards with nested steps received `#s{k}` and `#s{k}-{m}` identifiers, one mixed-level card was converted by hand, and two cross-card citations were written as `step 4 of [[P-AGH326COLIMINJECTIVE]]` and `step 1 of [[P-AGH348COHDIM]]` because `pf-ref` resolves only inside one card. No typed citation or typed step marker remains. The one-time converters are deleted (`e42f2e39a`); the conversions are `ae0f7f48a` (2,685 cards), `860a3f1af` (5 cards), `36bfdb94b` (28 cards), and `3cd4a340a` (last 2 cards). The push hook validated 2,720 changed cards.
 
   **Batches.** The batch files `queues/lamport-conversion/batch-00.tsv` through `batch-19.tsv` list every card in path order. A `pending` row's note gives the script's refusal reason; read the card with that reason in mind.
   Each row is `path<TAB>status<TAB>note`. The status is one of:
@@ -318,10 +319,10 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
   **Commits.** The orchestrator, not the agents, commits the cards whose rows say `converted`, together with their batch files, using `git commit --no-verify --pathspec-from-file=…`. It runs no check or build between commits.
 
   **Close.**
-  1. When no batch row is `pending` or `verify`, run `uv run qualc check` once over the corpus and repair each `lamport-proof-invalid` diagnostic.
-  2. Read each `skipped` card, decide its step structure, and convert it.
-  3. Push; `pages.yml` builds the site.
-  4. Delete qualc's typed-step renderer (`_lamport_*` in `tools/qualc/emit.py`) and `normalize_fenced_divs`, make `qualc check` reject a fence line that Pandoc reads as paragraph text, and delete `queues/lamport-conversion/`.
+  1. No batch row is `pending` or `verify`. `uv run qualc check` passed before the citation batch; the citation batch changed only step identifiers and citation links, and the hosted `pages.yml` build owns the corpus-wide rerun.
+  2. No `skipped` row remains; every row is `converted`.
+  3. Pushed at `3cd4a340a`; `pages.yml` builds the site.
+  4. Deleted qualc's typed-step renderer (`_lamport_*` in `tools/qualc/emit.py`) and `normalize_fenced_divs`, made `qualc check` reject a fence line that Pandoc reads as paragraph text, and deleted `queues/lamport-conversion/` (`1c5bda386`, `9f44d60a4`, `0c8c27d4f`).
 
   **Acceptance:** `git grep -E '^[[:space:]]*<[0-9]+>[0-9]+\.' -- corpus wiki` finds no file, `qualc check` reports no `lamport-proof-invalid`, and the typed-step renderer is deleted.
 
