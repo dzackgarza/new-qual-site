@@ -37,6 +37,8 @@ $$
 as $n \to \infty$.
 :::
 
+::: {.solution}
+
 Set $P_0\coloneqq1$ and
 $$
 Q_n\coloneqq\frac{P_n}{n!}
@@ -160,6 +162,8 @@ The right-hand side tends to $0$, so the squeeze theorem gives $Q_n\to0$. By def
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required limit.
+
+:::
 
 :::
 
