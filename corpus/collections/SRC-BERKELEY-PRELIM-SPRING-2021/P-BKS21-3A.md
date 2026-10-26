@@ -35,6 +35,8 @@ $$
 converges uniformly on every bounded interval in $\RR$.
 :::
 
+::: {.solution}
+
 Let $I\subset\mathbb R$ be a bounded interval and set
 $$
 B\coloneqq\sup_{x\in I}|x|<\infty.
@@ -106,6 +108,8 @@ Step [](#s1-1){.pf-ref} supplies the uniform majorants $B/n^2$, and step [](#s1-
 ::: pf-qed
 
 Since $I$ was an arbitrary bounded interval, step [](#s1-3){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
