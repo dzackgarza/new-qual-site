@@ -35,6 +35,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -135,6 +137,8 @@ Therefore the left side of the identity in step [](#s1-2){.pf-ref} has a limit a
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves both existence and equality.
+
+:::
 
 :::
 
