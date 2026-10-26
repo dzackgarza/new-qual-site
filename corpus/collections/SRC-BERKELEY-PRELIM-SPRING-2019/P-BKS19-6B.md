@@ -43,7 +43,6 @@ $$
 where $(a_1,\ldots,a_n)$ runs over all nonzero elements of $\ZZ_2^n$.
 :::
 
-::: {.solution}
 Let
 $$
 D(x_1,\ldots,x_n)
@@ -60,14 +59,20 @@ $$
 L_a\coloneqq a_1x_1+\cdots+a_nx_n.
 $$
 
-<1>1. For every $k\geq0$ and every $a\in\mathbb Z_2^n$,
+::: pf
+
+::: pf-step
+
+For every $k\geq0$ and every $a\in\mathbb Z_2^n$,
 $$
 L_a^{\,2^k}
 =
 \sum_{j=1}^n a_jx_j^{2^k}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $2$, Frobenius is a ring homomorphism:
 $$
 (u+v)^2=u^2+v^2.
@@ -79,11 +84,18 @@ $$
 \sum_j a_j^{2^k}x_j^{2^k}.
 $$
 Since each $a_j\in\mathbb Z_2$ satisfies $a_j^{2^k}=a_j$, the displayed identity follows.
+
 :::
 
-<1>2. For every nonzero $a\in\mathbb Z_2^n$, the linear polynomial $L_a$ divides $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every nonzero $a\in\mathbb Z_2^n$, the linear polynomial $L_a$ divides $D$.
+
+
+::: pf-proof
+
 Choose $i$ with $a_i=1$. Replace the $i$-th column of the determinant by the sum
 $$
 \sum_{j=1}^n a_j\,(\text{$j$-th column}).
@@ -98,28 +110,42 @@ L_a^{2^{n-1}}
 \end{pmatrix}.
 $$
 Every entry in that column is divisible by $L_a$, hence the determinant is divisible by $L_a$.
+
 :::
 
-<1>3. The product
+:::
+
+::: pf-step
+
+The product
 $$
 P\coloneqq\prod_{a\in\mathbb Z_2^n\setminus\{0\}}L_a
 $$
 divides $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each $L_a$ is a nonzero linear polynomial, hence irreducible in the polynomial UFD
 $$
 \mathbb Z_2[x_1,\ldots,x_n].
 $$
 If $a\neq b$, then $L_a\neq L_b$. Since the only nonzero unit of $\mathbb Z_2$ is $1$, distinct $L_a$ are nonassociate. Step <1>2 shows that every one of these pairwise nonassociate irreducibles divides $D$, so their product divides $D$.
+
 :::
 
-<1>4. The determinant $D$ is nonzero and homogeneous of degree
+:::
+
+::: pf-step
+
+The determinant $D$ is nonzero and homogeneous of degree
 $$
 1+2+\cdots+2^{n-1}=2^n-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every term in the determinant expansion chooses one entry from each row, so every term has total degree
 $$
 \sum_{k=0}^{n-1}2^k=2^n-1.
@@ -133,15 +159,27 @@ $$
 1,2,2^2,\ldots,2^{n-1}
 $$
 are pairwise distinct and therefore determine which variable was chosen in each row. Hence this monomial cannot cancel, so $D\neq0$ and has the stated degree.
+
 :::
 
-<1>5. The product $P$ is homogeneous of degree $2^n-1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The product $P$ is homogeneous of degree $2^n-1$.
+
+
+::: pf-proof
+
 There are exactly $2^n-1$ nonzero vectors in $\mathbb Z_2^n$, and every factor $L_a$ has degree $1$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D
@@ -151,17 +189,23 @@ D
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, write $D=PQ$. Steps <1>4--<1>5 show
 $$
 \deg D=\deg P=2^n-1.
 $$
 Since $D$ and $P$ are nonzero, $Q$ has degree $0$, hence is a nonzero constant. The only nonzero constant unit in $\mathbb Z_2$ is $1$, so $Q=1$ and $D=P$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required identity.
+
 :::
+
 :::

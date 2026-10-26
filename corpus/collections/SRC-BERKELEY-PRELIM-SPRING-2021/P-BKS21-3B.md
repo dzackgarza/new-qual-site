@@ -24,16 +24,21 @@ $$
 exists.
 :::
 
-::: {.solution}
 Define
 $$
 a_n\coloneqq
 \sum_{k=1}^n\frac1k-\log n.
 $$
 
-<1>1. The sequence $(a_n)$ is decreasing.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ is decreasing.
+
+
+::: pf-proof
+
 For $n\geq1$,
 $$
 \begin{aligned}
@@ -57,11 +62,18 @@ $$
 \frac1{n+1}.
 $$
 Therefore $a_{n+1}-a_n<0$.
+
 :::
 
-<1>2. The sequence $(a_n)$ is bounded below by $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ is bounded below by $0$.
+
+
+::: pf-proof
+
 For each $k=1,\ldots,n$ and $x\in[k,k+1]$,
 $$
 \frac1x\leq\frac1k.
@@ -83,15 +95,27 @@ a_n
 \log\left(1+\frac1n\right)
 >0.
 $$
+
 :::
 
-<1>3. The sequence $(a_n)$ converges to a finite real number.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ converges to a finite real number.
+
+
+::: pf-proof
+
 By step <1>1, $(a_n)$ is monotone decreasing, and by step <1>2 it is bounded below. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \lim_{n\to\infty}
@@ -102,13 +126,19 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The expression inside the limit is exactly $a_n$, whose convergence is step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

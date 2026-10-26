@@ -39,7 +39,6 @@ y(0)+y'(0)+y''(0)=0.
 $$
 :::
 
-::: {.solution}
 Let
 $$
 \omega\coloneqq\frac{-1+i\sqrt3}{2},
@@ -47,23 +46,36 @@ $$
 \overline\omega\coloneqq\frac{-1-i\sqrt3}{2}.
 $$
 
-<1>1. Every solution has the form
+::: pf
+
+::: pf-step
+
+Every solution has the form
 $$
 y(t)=c_0e^t+c_1e^{\omega t}+c_2e^{\overline\omega t}
 $$
 for constants $c_0,c_1,c_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 $$
 r^3-1=(r-1)(r^2+r+1),
 $$
 whose three distinct roots are $1$, $\omega$, and $\overline\omega$. The standard solution formula for a constant-coefficient linear differential equation with distinct characteristic roots gives the displayed expression.
+
 :::
 
-<1>2. The condition $y(t)\to0$ as $t\to\infty$ forces $c_0=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The condition $y(t)\to0$ as $t\to\infty$ forces $c_0=0$.
+
+
+::: pf-proof
+
 Since
 $$
 \operatorname{Re}(\omega)=\operatorname{Re}(\overline\omega)=-\frac12,
@@ -76,14 +88,21 @@ y(t)-c_1e^{\omega t}-c_2e^{\overline\omega t}
 \longrightarrow0.
 $$
 If $c_0\neq0$, then $|c_0e^t|=|c_0|e^t\to\infty$, a contradiction. Thus $c_0=0$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 y(0)+y'(0)+y''(0)=\boxed{0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 y(t)=c_1e^{\omega t}+c_2e^{\overline\omega t}.
@@ -97,11 +116,15 @@ y(0)+y'(0)+y''(0)
 \end{aligned}
 $$
 Both $\omega$ and $\overline\omega$ are roots of $r^2+r+1$, so both parenthesized expressions vanish.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the required identity.
+
 :::
+
 :::

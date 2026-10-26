@@ -36,10 +36,15 @@ $$
 also defines a holomorphic function on a neighborhood of $D$.
 :::
 
-::: {.solution}
-<1>1. There exists a number $\rho>1$ such that both power series for $f$ and $g$ converge on the disk $|z|<\rho$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+There exists a number $\rho>1$ such that both power series for $f$ and $g$ converge on the disk $|z|<\rho$.
+
+
+::: pf-proof
+
 By hypothesis, both functions are holomorphic on an open neighborhood of the compact set
 $$
 D=\{z:|z|\leq1\}.
@@ -48,16 +53,23 @@ Hence there is some $R>1$ such that the closed disk $|z|\leq R$ is still contain
 $$
 1<\rho<R.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 f_n\rho^n\longrightarrow0,
 \qquad
 g_n\rho^n\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the series
 $$
 \sum_{n=0}^\infty f_n\rho^n
@@ -65,15 +77,22 @@ $$
 \sum_{n=0}^\infty g_n\rho^n
 $$
 converge. Therefore their terms tend to $0$.
+
 :::
 
-<1>3. The series
+:::
+
+::: pf-step
+
+The series
 $$
 \sum_{n=0}^\infty f_ng_nz^n
 $$
 converges absolutely for every $|z|<\rho^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the sequences $(f_n\rho^n)$ and $(g_n\rho^n)$ are bounded. Choose $M,N>0$ such that
 $$
 |f_n|\rho^n\leq M,
@@ -87,17 +106,28 @@ $$
 MN\left(\frac{|z|}{\rho^2}\right)^n.
 $$
 The geometric series on the right converges, so the comparison test gives absolute convergence.
+
 :::
 
-<1>4. The function $h$ is holomorphic on a neighborhood of $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h$ is holomorphic on a neighborhood of $D$.
+
+
+::: pf-proof
+
 By step <1>3, the power series for $h$ has radius of convergence at least $\rho^2$. Since $\rho^2>1$, the disk $|z|<\rho^2$ is an open neighborhood of $D$, and every power series is holomorphic on the interior of its disk of convergence.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

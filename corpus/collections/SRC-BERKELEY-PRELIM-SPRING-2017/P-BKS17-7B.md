@@ -42,13 +42,16 @@ $$
 and show that your solution is unique. Hint: Multiply by $R^{-1T}$ and $R^{-1}$.
 :::
 
-::: {.solution}
 Set
 $$
 C\coloneqq R^{-T}AR^{-1}.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 X\coloneqq ER^{-1},
 $$
@@ -57,7 +60,9 @@ $$
 X^T+X=C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $R$ is invertible upper triangular, both $R^{-1}$ and $R$ are upper triangular. Thus multiplication by $R^{-1}$ gives a bijection from upper triangular matrices $E$ to upper triangular matrices $X$, with inverse $E=XR$.
 
 Multiplying
@@ -73,9 +78,14 @@ $$
 R^{-T}E^T=(ER^{-1})^T=X^T,
 $$
 this is precisely $X^T+X=C$.
+
 :::
 
-<1>2. The matrix $C$ is symmetric, and there is a unique upper triangular matrix $X$ satisfying $X^T+X=C$; its entries are
+:::
+
+::: pf-step
+
+The matrix $C$ is symmetric, and there is a unique upper triangular matrix $X$ satisfying $X^T+X=C$; its entries are
 $$
 X_{ij}
 =
@@ -86,7 +96,9 @@ C_{ij}, & i<j,\\
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $A^T=A$,
 $$
 C^T
@@ -95,9 +107,14 @@ C^T
 =C.
 $$
 Now let $X$ be upper triangular. If $i<j$, then $X_{ji}=0$, so the $(i,j)$ entry of $X^T+X=C$ forces $X_{ij}=C_{ij}$. If $i=j$, it forces $2X_{ii}=C_{ii}$. If $i>j$, upper triangularity already forces $X_{ij}=0$. Thus every entry of $X$ is forced by the displayed formula. Conversely, because $C$ is symmetric, that formula gives an upper triangular $X$ whose transpose plus itself is exactly $C$. Hence existence and uniqueness both hold.
+
 :::
 
-<1>3. The unique required matrix is $E=XR$, where $X$ is given in step <1>2. Equivalently, its entries are
+:::
+
+::: pf-step
+
+The unique required matrix is $E=XR$, where $X$ is given in step <1>2. Equivalently, its entries are
 $$
 \boxed{
 E_{ij}
@@ -113,7 +130,9 @@ C=R^{-T}AR^{-1}
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $E=XR$ and both factors are upper triangular, $E_{ij}=0$ for $i>j$. For $i\leq j$,
 $$
 E_{ij}
@@ -124,11 +143,15 @@ E_{ij}
 +\sum_{k=i+1}^{j}C_{ik}R_{kj},
 $$
 using step <1>2. Step <1>1 shows that this $E$ satisfies the original equation. Uniqueness of $X$ in step <1>2 and the bijection $E\leftrightarrow ER^{-1}$ in step <1>1 imply uniqueness of $E$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the explicit entries and proves existence and uniqueness.
+
 :::
+
 :::

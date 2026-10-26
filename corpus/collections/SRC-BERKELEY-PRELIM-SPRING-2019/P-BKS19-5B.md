@@ -42,18 +42,23 @@ $$
 $$
 :::
 
-::: {.solution}
 Fix an integer $n\geq1$ and set
 $$
 r\coloneqq\frac{n}{n+1}.
 $$
 
-<1>1. On the circle $|z|=r$,
+::: pf
+
+::: pf-step
+
+On the circle $|z|=r$,
 $$
 |f(z)|<n+1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis gives
 $$
 |f(z)|<\frac1{1-|z|}
@@ -61,16 +66,23 @@ $$
 \frac1{1-r}
 =n+1.
 $$
+
 :::
 
-<1>2. Cauchy's coefficient estimate gives
+:::
+
+::: pf-step
+
+Cauchy's coefficient estimate gives
 $$
 \left|\frac{f^{(n)}(0)}{n!}\right|
 \leq
 (n+1)\left(1+\frac1n\right)^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Writing
 $$
 f(z)=\sum_{k=0}^\infty a_kz^k,
@@ -94,14 +106,21 @@ $$
 (n+1)\left(1+\frac1n\right)^n.
 $$
 The asserted weak inequality follows a fortiori.
+
 :::
 
-<1>3. For every integer $n\geq1$,
+:::
+
+::: pf-step
+
+For every integer $n\geq1$,
 $$
 \left(1+\frac1n\right)^n<e.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $x>0$, let
 $$
 h(x)=\log(1+x)-x.
@@ -115,9 +134,14 @@ $$
 \log\left(1+\frac1n\right)<\frac1n.
 $$
 Multiplying by $n$ and exponentiating yields the claim.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \left|\frac{f^{(n)}(0)}{n!}\right|
@@ -128,13 +152,19 @@ e(n+1)
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required estimate.
+
 :::
+
 :::

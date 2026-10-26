@@ -32,22 +32,34 @@ Let $A$ be a complex $n\times n$ matrix satisfying $A^{37}=I$.
 Show that $A$ is diagonalizable.
 :::
 
-::: {.solution}
 Let $m_A(x)$ denote the minimal polynomial of $A$.
 
-<1>1. The polynomial $m_A(x)$ divides $x^{37}-1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $m_A(x)$ divides $x^{37}-1$.
+
+
+::: pf-proof
+
 The hypothesis gives
 $$
 (A^{37}-I)=0,
 $$
 so the polynomial $p(x)=x^{37}-1$ annihilates $A$. By the defining divisibility property of the minimal polynomial, $m_A\mid p$.
+
 :::
 
-<1>2. The polynomial $x^{37}-1$ has no repeated root in $\mathbb C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The polynomial $x^{37}-1$ has no repeated root in $\mathbb C$.
+
+
+::: pf-proof
+
 Its derivative is
 $$
 37x^{36}.
@@ -57,17 +69,28 @@ $$
 \gcd(x^{37}-1,37x^{36})=1,
 $$
 so $x^{37}-1$ is squarefree. Since the field is $\mathbb C$, it therefore factors as a product of distinct linear factors.
+
 :::
 
-<1>3. The matrix $A$ is diagonalizable over $\mathbb C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ is diagonalizable over $\mathbb C$.
+
+
+::: pf-proof
+
 By steps <1>1--<1>2, the minimal polynomial $m_A$ is a product of distinct linear factors. A complex matrix is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Therefore $A$ is diagonalizable.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the assertion.
+
 :::
+
 :::

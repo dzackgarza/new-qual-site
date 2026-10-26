@@ -37,36 +37,48 @@ $$
 as $n \to \infty$.
 :::
 
-::: {.solution}
 Set $P_0\coloneqq1$ and
 $$
 Q_n\coloneqq\frac{P_n}{n!}
 \qquad(n\geq0).
 $$
 
-<1>1. For every $n\geq1$,
+::: pf
+
+::: pf-step
+
+For every $n\geq1$,
 $$
 P_n
 =
 \sum_{k=1}^n \binom{n-1}{k-1}P_{n-k}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Consider the block containing the element $1$. If this block has cardinality $k$, its other $k-1$ elements can be chosen in
 $$
 \binom{n-1}{k-1}
 $$
 ways. The remaining $n-k$ elements can then be partitioned in $P_{n-k}$ ways. Summing over the possible values $1\leq k\leq n$ counts every set partition exactly once.
+
 :::
 
-<1>2. For every $n\geq0$,
+:::
+
+::: pf-step
+
+For every $n\geq0$,
 $$
 Q_{n+1}
 =
 \frac{1}{n+1}\sum_{k=0}^n\frac{Q_{n-k}}{k!}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Applying step <1>1 with $n+1$ in place of $n$ gives
 $$
 P_{n+1}
@@ -82,15 +94,22 @@ Q_{n+1}
 &=\frac{1}{n+1}\sum_{k=0}^n\frac{Q_{n-k}}{k!}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 M_n\coloneqq\max_{0\leq j\leq n}Q_j,
 $$
 then $M_n=1$ for every $n\geq2$.
 
-::: {.proof}
+
+::: pf-proof
+
 All $Q_j$ are nonnegative. By step <1>2,
 $$
 Q_{n+1}
@@ -113,24 +132,35 @@ Q_1=1,
 Q_2=\frac{2}{2!}=1,
 $$
 so $M_2=1$. Induction gives $M_n=1$ for all $n\geq2$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{\displaystyle \lim_{n\to\infty}\frac{P_n}{n!}=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combining steps <1>2 and <1>3, for every $n\geq2$,
 $$
 0\leq Q_{n+1}\leq\frac{e}{n+1}M_n=\frac{e}{n+1}.
 $$
 The right-hand side tends to $0$, so the squeeze theorem gives $Q_n\to0$. By definition of $Q_n$, this is exactly the asserted limit.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required limit.
+
 :::
+
 :::

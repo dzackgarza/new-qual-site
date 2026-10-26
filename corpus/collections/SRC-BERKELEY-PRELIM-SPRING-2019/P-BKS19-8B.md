@@ -32,13 +32,18 @@ Let $R$ be a ring, possibly noncommutative and possibly without an identity, in 
 Show that $R$ has characteristic $2$ (that is, $2a=0$ for all $a$) and is commutative.
 :::
 
-::: {.solution}
-<1>1. For every $a\in R$,
+::: pf
+
+::: pf-step
+
+For every $a\in R$,
 $$
 2a=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The element $a+a$ is idempotent, so
 $$
 (a+a)^2=a+a=2a.
@@ -52,14 +57,21 @@ $$
 \end{aligned}
 $$
 Hence $4a=2a$. Cancelling $2a$ in the additive abelian group of the ring gives $2a=0$.
+
 :::
 
-<1>2. For every $a,b\in R$,
+:::
+
+::: pf-step
+
+For every $a,b\in R$,
 $$
 ab+ba=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The element $a+b$ is idempotent. Thus
 $$
 (a+b)^2=a+b.
@@ -69,11 +81,18 @@ $$
 a+ab+ba+b=a+b.
 $$
 Cancelling $a+b$ in the additive group yields $ab+ba=0$.
+
 :::
 
-<1>3. The ring $R$ is commutative.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ is commutative.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 ab=-ba.
@@ -83,20 +102,31 @@ $$
 ba+ba=0,
 $$
 so $-ba=ba$. Therefore $ab=ba$ for all $a,b\in R$.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{2a=0\ \text{and}\ ab=ba\quad\text{for all }a,b\in R}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This combines steps <1>1 and <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives both required conclusions.
+
 :::
+
 :::

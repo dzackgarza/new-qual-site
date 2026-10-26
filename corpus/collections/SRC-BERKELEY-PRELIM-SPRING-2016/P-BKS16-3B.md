@@ -32,26 +32,38 @@ converges pointwise to a Lipschitz function $f(x)$.
 Is the convergence uniform on $\RR$?
 :::
 
-::: {.solution}
 For $u\geq0$, write
 $$
 F(u)\coloneqq\sum_{k=1}^\infty\frac{(-1)^k}{k+u}.
 $$
 Then the function in the problem is $f(x)=F(|x|)$.
 
-<1>1. The series defining $F(u)$ converges for every $u\geq0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The series defining $F(u)$ converges for every $u\geq0$.
+
+
+::: pf-proof
+
 For fixed $u\geq0$, the sequence
 $$
 \frac1{k+u}
 $$
 is positive, decreases in $k$, and tends to $0$. The alternating-series test therefore gives convergence.
+
 :::
 
-<1>2. The function $F$ is $1$-Lipschitz on $[0,\infty)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $F$ is $1$-Lipschitz on $[0,\infty)$.
+
+
+::: pf-proof
+
 Let $0\leq u<v$ and put $\varepsilon=v-u$. Subtracting the convergent series gives
 $$
 F(u)-F(v)
@@ -71,11 +83,18 @@ $$
 \leq v-u.
 $$
 Interchanging $u$ and $v$ gives the same estimate for arbitrary $u,v\geq0$.
+
 :::
 
-<1>3. The pointwise limit $f$ is $1$-Lipschitz on $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The pointwise limit $f$ is $1$-Lipschitz on $\RR$.
+
+
+::: pf-proof
+
 By step <1>2 and the reverse triangle inequality,
 $$
 \begin{aligned}
@@ -86,11 +105,18 @@ $$
 \end{aligned}
 $$
 Thus $f$ is Lipschitz with constant $1$.
+
 :::
 
-<1>4. The series converges uniformly on $\RR$; the answer to the second question is $\boxed{\text{yes}}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The series converges uniformly on $\RR$; the answer to the second question is $\boxed{\text{yes}}$.
+
+
+::: pf-proof
+
 Let
 $$
 S_N(x)\coloneqq\sum_{k=1}^N\frac{(-1)^k}{k+|x|}.
@@ -107,11 +133,15 @@ The last bound is independent of $x$ and tends to $0$, so
 $$
 \sup_{x\in\RR}|f(x)-S_N(x)|\longrightarrow0.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>3 prove the pointwise convergence to a Lipschitz function, and step <1>4 proves uniform convergence.
+
 :::
+
 :::

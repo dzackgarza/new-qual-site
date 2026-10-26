@@ -31,7 +31,6 @@ audit:
 Is it true that elements of the group $\GL_2^+(\RR)$ of real $2\times2$ matrices with positive determinant are conjugate in $\GL_2^+(\RR)$ if and only if the matrices are similar (conjugate in $\GL_2(\RR)$)? Either prove this or give a counterexample.
 :::
 
-::: {.solution}
 Define
 $$
 J\coloneqq
@@ -42,20 +41,33 @@ J\coloneqq
 $$
 Then $J$ is rotation through $\pi/2$ and $-J$ is rotation through $-\pi/2$.
 
-<1>1. Both $J$ and $-J$ lie in $GL_2^+(\mathbb R)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Both $J$ and $-J$ lie in $GL_2^+(\mathbb R)$.
+
+
+::: pf-proof
+
 One has
 $$
 \det J=1
 \qquad\text{and}\qquad
 \det(-J)=(-1)^2\det J=1.
 $$
+
 :::
 
-<1>2. The matrices $J$ and $-J$ are similar in $GL_2(\mathbb R)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrices $J$ and $-J$ are similar in $GL_2(\mathbb R)$.
+
+
+::: pf-proof
+
 Let
 $$
 S\coloneqq
@@ -69,15 +81,22 @@ $$
 SJS^{-1}=-J.
 $$
 Thus $J$ and $-J$ are conjugate in $GL_2(\mathbb R)$. Notice that $\det S=-1$.
+
 :::
 
-<1>3. Every $P\in GL_2(\mathbb R)$ satisfying
+:::
+
+::: pf-step
+
+Every $P\in GL_2(\mathbb R)$ satisfying
 $$
 PJP^{-1}=-J
 $$
 has negative determinant.
 
-::: {.proof}
+
+::: pf-proof
+
 The conjugacy equation is equivalent to
 $$
 PJ=-JP.
@@ -123,21 +142,32 @@ $$
 \det P=-a^2-b^2.
 $$
 Since $P$ is invertible, $(a,b)\neq(0,0)$, and therefore $\det P<0$.
+
 :::
 
-<1>4. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{J\ \text{and}\ -J}
 $$
 form a counterexample: they are similar in $GL_2(\mathbb R)$ but are not conjugate in $GL_2^+(\mathbb R)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Similarity is step <1>2. If they were conjugate in $GL_2^+(\mathbb R)$, there would be a conjugator $P$ of positive determinant, contradicting step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 disproves the proposed equivalence.
+
 :::
+
 :::

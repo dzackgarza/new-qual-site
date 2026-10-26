@@ -35,14 +35,19 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. The improper integral
+::: pf
+
+::: pf-step
+
+The improper integral
 $$
 J\coloneqq\int_{-\infty}^{\infty}\frac{\sin^2x}{x^2}\,dx
 $$
 exists absolutely.
 
-::: {.proof}
+
+::: pf-proof
+
 Near $0$,
 $$
 \frac{\sin^2x}{x^2}\longrightarrow1,
@@ -52,9 +57,14 @@ $$
 0\leq\frac{\sin^2x}{x^2}\leq\frac1{x^2},
 $$
 and $1/x^2$ is integrable on both tails. Hence the integral exists absolutely.
+
 :::
 
-<1>2. For every $L,R>0$,
+:::
+
+::: pf-step
+
+For every $L,R>0$,
 $$
 \int_{-2L}^{2R}\frac{\sin x}{x}\,dx
 =
@@ -63,7 +73,9 @@ $$
 \int_{-L}^{R}\frac{\sin^2t}{t^2}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 With the substitution $x=2t$,
 $$
 \int_{-2L}^{2R}\frac{\sin x}{x}\,dx
@@ -85,9 +97,14 @@ $$
 \int_{-L}^{R}\frac{\sin^2t}{t^2}\,dt.
 $$
 To justify the integration by parts across $t=0$, split the integral at $\pm\varepsilon$ and let $\varepsilon\downarrow0$; the boundary terms $\sin^2(\pm\varepsilon)/(\pm\varepsilon)$ tend to $0$.
+
 :::
 
-<1>3. Both improper integrals in the problem exist and
+:::
+
+::: pf-step
+
+Both improper integrals in the problem exist and
 $$
 \boxed{
 \int_{-\infty}^{\infty}\frac{\sin x}{x}\,dx
@@ -96,7 +113,9 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $L,R\to\infty$ independently in step <1>2. Since $|\sin t|\leq1$,
 $$
 \frac{\sin^2R}{R}\longrightarrow0,
@@ -108,11 +127,15 @@ $$
 \int_{-L}^{R}\frac{\sin^2t}{t^2}\,dt\longrightarrow J.
 $$
 Therefore the left side of the identity in step <1>2 has a limit as $L,R\to\infty$, which proves existence of the improper integral of $\sin x/x$, and that limit equals $J$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves both existence and equality.
+
 :::
+
 :::

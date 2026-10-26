@@ -34,36 +34,48 @@ $$
 $$
 :::
 
-::: {.solution}
 Set
 $$
 h(z)\coloneqq\frac{1}{z^4+1}.
 $$
 
-<1>1. The poles of $h$ in the open upper half-plane are
+::: pf
+
+::: pf-step
+
+The poles of $h$ in the open upper half-plane are
 $$
 z_1=e^{i\pi/4}=\frac{1+i}{\sqrt2},
 \qquad
 z_2=e^{3i\pi/4}=\frac{-1+i}{\sqrt2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The roots of $z^4+1=0$ are the fourth roots of $-1=e^{i(\pi+2\pi m)}$, namely
 $$
 e^{i(\pi/4+k\pi/2)}
 \qquad(k=0,1,2,3).
 $$
 Exactly the roots with $k=0,1$ have positive imaginary part.
+
 :::
 
-<1>2. The sum of the residues of $h$ at the poles in step <1>1 is
+:::
+
+::: pf-step
+
+The sum of the residues of $h$ at the poles in step <1>1 is
 $$
 \operatorname{Res}_{z=z_1}h+\operatorname{Res}_{z=z_2}h
 =
 -\frac{i}{2\sqrt2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The roots of $z^4+1$ are simple, so
 $$
 \operatorname{Res}_{z=z_j}h
@@ -89,16 +101,23 @@ $$
 \frac{1-i}{4\sqrt2}.
 $$
 Adding gives the claimed value.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_{-\infty}^{\infty}\frac{dx}{x^4+1}
 =
 \frac{\pi}{\sqrt2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate $h$ over the positively oriented contour consisting of $[-R,R]$ and the upper semicircle $\Gamma_R$, with $R>1$. By the residue theorem and step <1>2,
 $$
 \int_{-R}^{R}\frac{dx}{x^4+1}
@@ -125,9 +144,14 @@ $$
 \longrightarrow0.
 $$
 Letting $R\to\infty$ gives the displayed integral.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\displaystyle
 \int_0^{\infty}\frac{dx}{x^4+1}
@@ -136,7 +160,9 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is even, so
 $$
 \int_{-\infty}^{\infty}\frac{dx}{x^4+1}
@@ -144,11 +170,15 @@ $$
 2\int_0^\infty\frac{dx}{x^4+1}.
 $$
 Apply step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value.
+
 :::
+
 :::

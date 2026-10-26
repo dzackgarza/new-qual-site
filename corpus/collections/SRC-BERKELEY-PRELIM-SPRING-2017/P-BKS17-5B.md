@@ -31,15 +31,20 @@ audit:
 Write all values of $i^i$ in the form $a + bi$.
 :::
 
-::: {.solution}
 For $k\in\mathbb Z$, set
 $$
 L_k\coloneqq i\left(\frac{\pi}{2}+2\pi k\right).
 $$
 
-<1>1. The numbers $L_k$, $k\in\mathbb Z$, are exactly the complex logarithms of $i$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The numbers $L_k$, $k\in\mathbb Z$, are exactly the complex logarithms of $i$.
+
+
+::: pf-proof
+
 For every $k\in\mathbb Z$,
 $$
 e^{L_k}
@@ -52,9 +57,14 @@ $$
 y=\frac{\pi}{2}+2\pi k
 $$
 for some $k\in\mathbb Z$. Hence $L=L_k$.
+
 :::
 
-<1>2. The complete set of values of $i^i$ is
+:::
+
+::: pf-step
+
+The complete set of values of $i^i$ is
 $$
 \boxed{
 \left\{
@@ -65,7 +75,9 @@ k\in\mathbb Z
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the multivalued power $i^i$ consists of the values
 $$
 e^{iL}
@@ -79,11 +91,15 @@ e^{i\cdot i(\pi/2+2\pi k)}
 e^{-(\pi/2+2\pi k)}.
 $$
 Each value is a positive real number, giving the displayed form $a+bi$ with $b=0$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 lists every value and no others.
+
 :::
+
 :::

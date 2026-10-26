@@ -37,13 +37,18 @@ $$
 Prove that $f = 0$.
 :::
 
-::: {.solution}
-<1>1. For every complex polynomial $P$,
+::: pf
+
+::: pf-step
+
+For every complex polynomial $P$,
 $$
 \int_{-1}^1 f(x)P(x)\,dx=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 P(x)=\sum_{j=0}^m a_jx^j
@@ -55,14 +60,21 @@ $$
 \sum_{j=0}^m a_j\int_{-1}^1 x^jf(x)\,dx
 =0.
 $$
+
 :::
 
-<1>2. For every $\varepsilon>0$, there is a complex polynomial $P$ such that
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$, there is a complex polynomial $P$ such that
 $$
 \sup_{x\in[-1,1]}|\overline{f(x)}-P(x)|<\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write $f=u+iv$ with real-valued continuous functions $u,v$. By the Weierstrass approximation theorem, there are real polynomials $A$ and $B$ satisfying
 $$
 \|u-A\|_\infty<\frac{\varepsilon}{2},
@@ -79,14 +91,21 @@ $$
 <\varepsilon
 $$
 uniformly on $[-1,1]$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_{-1}^1|f(x)|^2\,dx=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varepsilon>0$ and choose $P$ as in step <1>2. By step <1>1,
 $$
 \begin{aligned}
@@ -103,20 +122,31 @@ $$
 \varepsilon\int_{-1}^1|f(x)|\,dx.
 $$
 The last integral is finite because $f$ is continuous on the compact interval $[-1,1]$. Since the inequality holds for every $\varepsilon>0$, the integral of $|f|^2$ must be zero.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $|f|^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_0\in[-1,1]$, continuity would give a nontrivial interval relative to $[-1,1]$ on which $|f|^2$ is bounded below by a positive constant. Its integral would then be positive, contradicting step <1>3. Thus $f(x)=0$ for every $x\in[-1,1]$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the assertion.
+
 :::
+
 :::

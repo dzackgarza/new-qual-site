@@ -34,13 +34,18 @@ I=\int_0^{\pi/2}\frac{\sin x\cos x}{\sin^4x+\cos^4x}\,dx.
 $$
 :::
 
-::: {.solution}
-<1>1. With the substitution $t=\tan x$,
+::: pf
+
+::: pf-step
+
+With the substitution $t=\tan x$,
 $$
 I=\int_0^\infty\frac{t}{1+t^4}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0\leq x<\pi/2$, divide numerator and denominator by $\cos^4x$:
 $$
 \frac{\sin x\cos x}{\sin^4x+\cos^4x}
@@ -48,28 +53,42 @@ $$
 \frac{\tan x\,\sec^2x}{1+\tan^4x}.
 $$
 Since $dt=\sec^2x\,dx$, while $\tan0=0$ and $\tan x\to\infty$ as $x\to(\pi/2)^-$, the improper-integral substitution gives the displayed formula.
+
 :::
 
-<1>2. With $y=t^2$,
+:::
+
+::: pf-step
+
+With $y=t^2$,
 $$
 I=\frac12\int_0^\infty\frac{dy}{1+y^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $dy=2t\,dt$, step <1>1 becomes
 $$
 \int_0^\infty\frac{t}{1+t^4}\,dt
 =
 \frac12\int_0^\infty\frac{dy}{1+y^2}.
 $$
+
 :::
 
-<1>3. The value of the integral is
+:::
+
+::: pf-step
+
+The value of the integral is
 $$
 \boxed{I=\frac{\pi}{4}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 I
@@ -80,11 +99,15 @@ I
 =
 \frac{\pi}{4}.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

@@ -37,23 +37,35 @@ $$
 for all $x \in \RR$ and all $h \neq 0$. (Hint: multiply both sides by $2h$.)
 :::
 
-::: {.solution}
-<1>1. Every differentiable function satisfying the stated identity is twice differentiable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every differentiable function satisfying the stated identity is twice differentiable.
+
+
+::: pf-proof
+
 Fix any $h_0\neq0$. The identity gives
 $$
 f'(x)=\frac{f(x+h_0)-f(x-h_0)}{2h_0}.
 $$
 Since $f$ is differentiable, the right-hand side is differentiable as a function of $x$. Hence $f'$ is differentiable, so $f''$ exists everywhere.
+
 :::
 
-<1>2. For every $x\in\mathbb R$ and every $h\neq0$,
+:::
+
+::: pf-step
+
+For every $x\in\mathbb R$ and every $h\neq0$,
 $$
 f''(x+h)=f''(x-h).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying the given identity by $2h$ yields
 $$
 2hf'(x)=f(x+h)-f(x-h).
@@ -67,11 +79,18 @@ $$
 0=f''(x+h)-f''(x-h),
 $$
 which is the asserted identity.
+
 :::
 
-<1>3. The second derivative $f''$ is constant on $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The second derivative $f''$ is constant on $\mathbb R$.
+
+
+::: pf-proof
+
 Let $a,b\in\mathbb R$ with $a\neq b$. Set
 $$
 x\coloneqq\frac{a+b}{2},
@@ -79,21 +98,35 @@ x\coloneqq\frac{a+b}{2},
 h\coloneqq\frac{a-b}{2}.
 $$
 Then $h\neq0$, $x+h=a$, and $x-h=b$. Step <1>2 therefore gives $f''(a)=f''(b)$. Thus $f''$ has the same value at every pair of distinct points, and hence is constant.
+
 :::
 
-<1>4. Every solution has the form
+:::
+
+::: pf-step
+
+Every solution has the form
 $$
 \boxed{f(x)=ax^2+bx+c}
 $$
 for some $a,b,c\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, write $f''(x)=2a$ for a constant $a\in\mathbb R$. Integrating once gives $f'(x)=2ax+b$ for some $b\in\mathbb R$, and integrating again gives $f(x)=ax^2+bx+c$ for some $c\in\mathbb R$.
+
 :::
 
-<1>5. Conversely, every function $f(x)=ax^2+bx+c$ satisfies the required identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+Conversely, every function $f(x)=ax^2+bx+c$ satisfies the required identity.
+
+
+::: pf-proof
+
 For $h\neq0$,
 $$
 \begin{aligned}
@@ -104,11 +137,15 @@ $$
 &=f'(x).
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 shows that every solution is quadratic, and step <1>5 shows that every quadratic polynomial has the required property.
+
 :::
+
 :::

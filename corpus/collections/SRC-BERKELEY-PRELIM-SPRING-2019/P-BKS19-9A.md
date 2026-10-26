@@ -40,14 +40,17 @@ $$
 converges to a real number that is not in $S$.
 :::
 
-::: {.solution}
 Take $\mathbb N=\{1,2,\ldots\}$. If $S=\varnothing$, the choice $g_n(m)=2m$ already suffices, so assume $S\neq\varnothing$. Choose a sequence
 $$
 s_1,s_2,\ldots
 $$
 whose range is $S$; if $S$ is finite, repeat its elements as necessary.
 
-<1>1. Suppose $g_1,\ldots,g_{n-1}$ have been defined and satisfy
+::: pf
+
+::: pf-step
+
+Suppose $g_1,\ldots,g_{n-1}$ have been defined and satisfy
 $$
 g_j(m)>2m
 $$
@@ -63,15 +66,22 @@ a_{j+1}>g_j(a_j)\quad(1\leq j<n).
 $$
 Then $P_{n,m}$ is finite.
 
-::: {.proof}
+
+::: pf-proof
+
 For every such sequence, the inequalities $g_j(a_j)>2a_j$ imply
 $$
 a_1<a_2<\cdots<a_n=m.
 $$
 Thus each of $a_1,\ldots,a_{n-1}$ belongs to the finite set $\{1,\ldots,m-1\}$. Only finitely many length-$n$ sequences can therefore occur, so only finitely many corresponding prefix sums occur.
+
 :::
 
-<1>2. The functions $g_n:\mathbb N\to\mathbb N$ can be defined recursively so that, for every $m$,
+:::
+
+::: pf-step
+
+The functions $g_n:\mathbb N\to\mathbb N$ can be defined recursively so that, for every $m$,
 $$
 g_n(m)>2m,
 $$
@@ -84,11 +94,18 @@ $$
 g_n(m)>\frac{2}{\min D_{n,m}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $n,m$, step <1>1 shows that $P_{n,m}$ is finite, hence so is $D_{n,m}$. If $D_{n,m}$ is nonempty, all of its elements are positive, so $\min D_{n,m}>0$. There is therefore an integer larger than both $2m$ and $2/\min D_{n,m}$. Choose $g_n(m)$ to be such an integer. If $D_{n,m}$ is empty, choose any integer larger than $2m$. Starting with $n=1$, where $P_{1,m}=\{1/m\}$, this defines the functions successively for all $n$.
+
 :::
 
-<1>3. For any $f:\mathbb N\to\mathbb N$ satisfying
+:::
+
+::: pf-step
+
+For any $f:\mathbb N\to\mathbb N$ satisfying
 $$
 f(n+1)>g_n(f(n))
 $$
@@ -98,7 +115,9 @@ A=\sum_{n=1}^\infty\frac1{f(n)}
 $$
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 f(n+1)>g_n(f(n))>2f(n).
@@ -116,9 +135,14 @@ $$
 \frac2{f(1)},
 $$
 so the series converges.
+
 :::
 
-<1>4. For every $n$, if
+:::
+
+::: pf-step
+
+For every $n$, if
 $$
 p_n\coloneqq\sum_{j=1}^n\frac1{f(j)},
 \qquad
@@ -129,7 +153,9 @@ $$
 0<T_n<\frac{2}{g_n(f(n))}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Put $m=f(n)$. The defining inequality gives $f(n+1)>g_n(m)$. Thereafter step <1>2 gives
 $$
 f(n+k)\geq2^{k-1}f(n+1)
@@ -146,11 +172,18 @@ T_n
 \frac2{g_n(m)}.
 $$
 Positivity is immediate because every summand is positive.
+
 :::
 
-<1>5. For every $n$, one has $A\neq s_n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $n$, one has $A\neq s_n$.
+
+
+::: pf-proof
+
 Fix $n$ and set $m=f(n)$. The actual first $n$ values $f(1),\ldots,f(n)$ satisfy the defining conditions for $P_{n,m}$, so $p_n\in P_{n,m}$.
 
 If $p_n=s_n$, then step <1>4 gives $A=p_n+T_n>s_n$.
@@ -172,20 +205,31 @@ A=p_n+T_n
 =s_n.
 $$
 Thus in every case $A\neq s_n$.
+
 :::
 
-<1>6. The constructed functions satisfy the required conclusion:
+:::
+
+::: pf-step
+
+The constructed functions satisfy the required conclusion:
 $$
 \boxed{A\in\mathbb R\setminus S}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that $A$ converges to a real number. Since the sequence $(s_n)$ has range $S$, step <1>5 shows that $A$ is unequal to every element of $S$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is exactly the desired conclusion.
+
 :::
+
 :::

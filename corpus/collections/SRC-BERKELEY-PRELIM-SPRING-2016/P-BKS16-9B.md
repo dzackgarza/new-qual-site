@@ -31,13 +31,18 @@ audit:
 Let $p$ be a prime number. Prove that every group $G$ of order $p^2$ is commutative.
 :::
 
-::: {.solution}
-<1>1. The center $Z(G)$ has order divisible by $p$, and therefore
+::: pf
+
+::: pf-step
+
+The center $Z(G)$ has order divisible by $p$, and therefore
 $$
 |Z(G)|\in\{p,p^2\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $G$ act on itself by conjugation. The class equation is
 $$
 |G|
@@ -55,11 +60,18 @@ $$
 |Z(G)|\equiv0\pmod p.
 $$
 The center contains the identity, so it is nonempty; its order divides $p^2$. Hence its order is $p$ or $p^2$.
+
 :::
 
-<1>2. If $|Z(G)|=p^2$, then $G$ is abelian. If $|Z(G)|=p$, then $G/Z(G)$ is cyclic.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $|Z(G)|=p^2$, then $G$ is abelian. If $|Z(G)|=p$, then $G/Z(G)$ is cyclic.
+
+
+::: pf-proof
+
 If $|Z(G)|=p^2=|G|$, then $Z(G)=G$, which is precisely the assertion that $G$ is abelian.
 
 If $|Z(G)|=p$, then
@@ -67,11 +79,18 @@ $$
 |G/Z(G)|=p.
 $$
 Every group of prime order is cyclic, so $G/Z(G)$ is cyclic.
+
 :::
 
-<1>3. If $G/Z(G)$ is cyclic, then $G$ is abelian.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $G/Z(G)$ is cyclic, then $G$ is abelian.
+
+
+::: pf-proof
+
 Suppose
 $$
 G/Z(G)=\langle gZ(G)\rangle.
@@ -87,17 +106,28 @@ $$
 xy=g^{a+b}z_1z_2=g^{a+b}z_2z_1=yx.
 $$
 Thus every pair of elements commutes.
+
 :::
 
-<1>4. The group $G$ is abelian.
+:::
 
-::: {.proof}
+::: pf-step
+
+The group $G$ is abelian.
+
+
+::: pf-proof
+
 By step <1>1, the center has order $p$ or $p^2$. The case $p^2$ is abelian by step <1>2. In the case $p$, step <1>2 gives that $G/Z(G)$ is cyclic, and step <1>3 then gives that $G$ is abelian.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the assertion.
+
 :::
+
 :::

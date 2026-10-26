@@ -39,19 +39,29 @@ $$
 (b) Find all possibilities for $f$.
 :::
 
-::: {.solution}
-<1>1. For every $u,v\in(0,\pi)$,
+::: pf
+
+::: pf-step
+
+For every $u,v\in(0,\pi)$,
 $$
 \int_u^v\frac{dt}{f(t)^2}
 =
 \frac{\sin(v-u)}{f(u)f(v)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the given identity divided by the positive number $f(u)f(v)$.
+
 :::
 
-<1>2. For every $x,y,z\in(0,\pi)$,
+:::
+
+::: pf-step
+
+For every $x,y,z\in(0,\pi)$,
 $$
 \sin(z-x)f(y)
 =
@@ -60,7 +70,9 @@ $$
 \sin(z-y)f(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By additivity of the integral and step <1>1,
 $$
 \begin{aligned}
@@ -78,15 +90,22 @@ $$
 \end{aligned}
 $$
 Multiplying by the positive product $f(x)f(y)f(z)$ gives the displayed identity.
+
 :::
 
-<1>3. There exist constants $A,B\in\RR$ such that
+:::
+
+::: pf-step
+
+There exist constants $A,B\in\RR$ such that
 $$
 f(y)=A\sin y+B\cos y
 $$
 for every $y\in(0,\pi)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose distinct $x,z\in(0,\pi)$. Since $0<|z-x|<\pi$,
 $$
 \sin(z-x)\ne0.
@@ -104,16 +123,23 @@ f(y)
 \end{aligned}
 $$
 The two coefficients are constants independent of $y$; call them $A$ and $B$.
+
 :::
 
-<1>4. Positivity of $f$ forces
+:::
+
+::: pf-step
+
+Positivity of $f$ forces
 $$
 B=0
 \qquad\text{and}\qquad
 A>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The formula in step <1>3 extends continuously to the endpoints. Since $f(y)>0$ for every $0<y<\pi$,
 $$
 \lim_{y\downarrow0}f(y)=B\geq0.
@@ -127,16 +153,23 @@ $$
 f(y)=A\sin y.
 $$
 Since $\sin y>0$ on $(0,\pi)$ and $f$ is positive there, one must have $A>0$.
+
 :::
 
-<1>5. Every function
+:::
+
+::: pf-step
+
+Every function
 $$
 f(y)=a\sin y,
 \qquad a>0,
 $$
 satisfies the given integral identity.
 
-::: {.proof}
+
+::: pf-proof
+
 For $x,y\in(0,\pi)$,
 $$
 \begin{aligned}
@@ -152,20 +185,31 @@ $$
 \end{aligned}
 $$
 The constant $a$ cancels from the quotient.
+
 :::
 
-<1>6. The complete set of possibilities is
+:::
+
+::: pf-step
+
+The complete set of possibilities is
 $$
 \boxed{f(y)=a\sin y\quad(a>0)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3 and <1>4 show that every solution has this form, and step <1>5 shows that every such function is a solution.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

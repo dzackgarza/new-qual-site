@@ -37,7 +37,6 @@ $$
 for $1 \leq j \leq n$.
 :::
 
-::: {.solution}
 For $1\leq j\leq n$, define
 $$
 L_j(z)
@@ -46,23 +45,36 @@ L_j(z)
 \frac{z-z_k}{z_j-z_k}.
 $$
 
-<1>1. Each $L_j$ has degree at most $n-1$ and satisfies
+::: pf
+
+::: pf-step
+
+Each $L_j$ has degree at most $n-1$ and satisfies
 $$
 L_j(z_k)=\delta_{jk}
 \qquad(1\leq k\leq n).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every denominator $z_j-z_k$ is nonzero because the nodes are distinct. The defining product has $n-1$ linear factors, so $\deg L_j\leq n-1$. If $k\neq j$, the factor with index $k$ vanishes at $z=z_k$, hence $L_j(z_k)=0$. If $k=j$, every factor equals $1$, hence $L_j(z_j)=1$.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 \boxed{P(z)=\sum_{j=1}^n f_jL_j(z)}
 $$
 has degree at most $n-1$ and satisfies $P(z_k)=f_k$ for every $1\leq k\leq n$.
 
-::: {.proof}
+
+::: pf-proof
+
 The degree bound follows from step <1>1. For each $k$,
 $$
 P(z_k)
@@ -73,21 +85,32 @@ P(z_k)
 =f_k.
 $$
 Thus the required polynomial exists.
+
 :::
 
-<1>3. The polynomial in step <1>2 is unique among polynomials of degree at most $n-1$ with the prescribed values.
+:::
 
-::: {.proof}
+::: pf-step
+
+The polynomial in step <1>2 is unique among polynomials of degree at most $n-1$ with the prescribed values.
+
+
+::: pf-proof
+
 Suppose $P$ and $Q$ both have degree at most $n-1$ and satisfy
 $$
 P(z_j)=Q(z_j)=f_j
 $$
 for every $j$. Then $R\coloneqq P-Q$ has degree at most $n-1$ and has the $n$ distinct roots $z_1,\ldots,z_n$. A nonzero polynomial of degree at most $n-1$ has at most $n-1$ distinct roots. Hence $R=0$, so $P=Q$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves existence and step <1>3 proves uniqueness.
+
 :::
+
 :::

@@ -35,10 +35,15 @@ YX=aXY.
 $$
 :::
 
-::: {.solution}
-<1>1. If invertible $n\times n$ matrices $X,Y$ satisfy $YX=aXY$, then $a^n=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If invertible $n\times n$ matrices $X,Y$ satisfy $YX=aXY$, then $a^n=1$.
+
+
+::: pf-proof
+
 Taking determinants gives
 $$
 \det(Y)\det(X)
@@ -50,9 +55,14 @@ $$
 a^n\det(X)\det(Y).
 $$
 Since $X$ and $Y$ are invertible, $\det(X)\det(Y)\neq0$. Cancelling this product yields $a^n=1$.
+
 :::
 
-<1>2. Suppose $a^n=1$. On the standard basis $e_0,\ldots,e_{n-1}$ of $\mathbb C^n$, with the convention $e_n=e_0$, define
+:::
+
+::: pf-step
+
+Suppose $a^n=1$. On the standard basis $e_0,\ldots,e_{n-1}$ of $\mathbb C^n$, with the convention $e_n=e_0$, define
 $$
 Xe_m=e_{m+1},
 \qquad
@@ -61,17 +71,26 @@ Ye_m=a^m e_m
 $$
 Then $X$ and $Y$ are invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $X$ cyclically permutes the basis, hence is invertible. Since $a^n=1$, one has $a\neq0$, so every diagonal entry
 $$
 1,a,a^2,\ldots,a^{n-1}
 $$
 of $Y$ is nonzero. Thus $Y$ is invertible.
+
 :::
 
-<1>3. The matrices from step <1>2 satisfy $YX=aXY$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrices from step <1>2 satisfy $YX=aXY$.
+
+
+::: pf-proof
+
 For $0\leq m\leq n-2$,
 $$
 YXe_m
@@ -96,9 +115,14 @@ a^n e_0
 =e_0.
 $$
 Thus $YX$ and $aXY$ agree on a basis and hence are equal.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 a^n=1
@@ -107,13 +131,19 @@ a^n=1
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves the reverse implication, and steps <1>2--<1>3 prove the forward implication.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is exactly the asserted equivalence.
+
 :::
+
 :::

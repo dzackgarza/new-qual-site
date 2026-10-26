@@ -36,34 +36,53 @@ $$
 and find an example where equality holds.
 :::
 
-::: {.solution}
 Set
 $$
 M\coloneqq\max_{x\in[0,1]}|f''(x)|.
 $$
 
-<1>1. If $f$ is not identically zero, there is a point $\alpha\in(0,1)$ with
+::: pf
+
+::: pf-step
+
+If $f$ is not identically zero, there is a point $\alpha\in(0,1)$ with
 $$
 |f(\alpha)|=\max_{x\in[0,1]}|f(x)|
 $$
 and $f'(\alpha)=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Continuity gives a point where $|f|$ attains its maximum. Since $f(0)=f(1)=0$ and $f$ is not identically zero, the maximum is positive and cannot occur only at an endpoint; hence it is attained at some $\alpha\in(0,1)$. At such a point either $f$ has a local maximum or a local minimum, so Fermat's theorem gives $f'(\alpha)=0$.
+
 :::
 
-<1>2. After replacing $f(x)$ by $f(1-x)$ if necessary, the point in step <1>1 may be chosen with $0<\alpha\leq\frac12$.
+:::
 
-::: {.proof}
+::: pf-step
+
+After replacing $f(x)$ by $f(1-x)$ if necessary, the point in step <1>1 may be chosen with $0<\alpha\leq\frac12$.
+
+
+::: pf-proof
+
 If $\alpha\leq\frac12$, there is nothing to prove. If $\alpha>\frac12$, define $g(x)=f(1-x)$. Then $g(0)=g(1)=0$, $\max|g|=\max|f|$, and $\max|g''|=\max|f''|$, while $|g(1-\alpha)|=|f(\alpha)|$ and $1-\alpha<\frac12$. Thus the desired estimate for $g$ is equivalent to that for $f$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \max_{x\in[0,1]}|f(x)|\leq\frac18M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $f\equiv0$, the inequality is immediate. Otherwise take $\alpha$ as in steps <1>1--<1>2. Since $f(0)=0$,
 $$
 f(\alpha)=\int_0^\alpha f'(x)\,dx.
@@ -88,14 +107,21 @@ M\int_0^\alpha x\,dx
 \frac{M}{8},
 $$
 using $\alpha\leq1/2$.
+
 :::
 
-<1>4. Equality is attained by
+:::
+
+::: pf-step
+
+Equality is attained by
 $$
 \boxed{f(x)=\frac{x(x-1)}2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This function satisfies $f(0)=f(1)=0$ and $f''(x)=1$, so
 $$
 \max_{[0,1]}|f''|=1.
@@ -105,11 +131,15 @@ $$
 f\left(\frac12\right)=-\frac18.
 $$
 Hence $\max|f|=1/8=(1/8)\max|f''|$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the inequality, and step <1>4 supplies an equality example.
+
 :::
+
 :::

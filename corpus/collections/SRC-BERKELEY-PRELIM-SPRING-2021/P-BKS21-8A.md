@@ -20,7 +20,6 @@ audit:
 Find an irreducible polynomial over $\ZZ$ having $2\cos(2\pi/7)$ as a root, and use it to show that this number is not contained in any extension of $\QQ$ whose degree is a power of $2$.
 :::
 
-::: {.solution}
 Set
 $$
 \zeta\coloneqq e^{2\pi i/7},
@@ -28,12 +27,18 @@ $$
 x\coloneqq \zeta+\zeta^{-1}=2\cos\frac{2\pi}{7}.
 $$
 
-<1>1. The number $x$ satisfies
+::: pf
+
+::: pf-step
+
+The number $x$ satisfies
 $$
 \boxed{x^3+x^2-2x-1=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\zeta^7=1$ and $\zeta\neq1$,
 $$
 1+\zeta+\zeta^2+\cdots+\zeta^6=0.
@@ -64,15 +69,22 @@ x^3+x^2-2x-1
 \end{aligned}
 $$
 where $\zeta^{-k}=\zeta^{7-k}$.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 p(t)=t^3+t^2-2t-1
 $$
 is irreducible over $\mathbb Z$.
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial is primitive. Modulo $2$ it becomes
 $$
 \overline p(t)=t^3+t^2+1\in\mathbb F_2[t].
@@ -84,20 +96,34 @@ $$
 \overline p(1)=1+1+1=1
 $$
 in $\mathbb F_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma therefore implies that $p$ is irreducible over $\mathbb Z$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 [\mathbb Q(x):\mathbb Q]=3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that $x$ is algebraic and annihilated by $p$. Step <1>2 shows that $p$ is irreducible of degree $3$, so it is the minimal polynomial of $x$ over $\mathbb Q$.
+
 :::
 
-<1>4. The number $x$ is not contained in any finite extension $K/\mathbb Q$ whose degree is a power of $2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The number $x$ is not contained in any finite extension $K/\mathbb Q$ whose degree is a power of $2$.
+
+
+::: pf-proof
+
 Suppose $x\in K$ and
 $$
 [K:\mathbb Q]=2^m.
@@ -113,11 +139,15 @@ $$
 =3[K:\mathbb Q(x)].
 $$
 Thus $3$ divides $2^m$, which is impossible.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 give the required irreducible polynomial, and step <1>4 gives the field-degree obstruction.
+
 :::
+
 :::

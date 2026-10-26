@@ -28,10 +28,15 @@ For each statement, give a proof or counterexample.
 (d) Every complex symmetric matrix is diagonalizable over $\CC$.
 :::
 
-::: {.solution}
-<1>1. Statement (a) is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement (a) is false.
+
+
+::: pf-proof
+
 Consider
 $$
 A=
@@ -45,21 +50,35 @@ $$
 A^2=0.
 $$
 Thus its only eigenvalue is $0$. If $A$ were diagonalizable over $\mathbb R$, it would be similar to a diagonal matrix all of whose diagonal entries are $0$, hence to the zero matrix. Similarity to the zero matrix would force $A=0$, a contradiction.
+
 :::
 
-<1>2. Statement (b) is true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (b) is true.
+
+
+::: pf-proof
+
 The real spectral theorem states that every real symmetric matrix is orthogonally diagonalizable. Thus if $A^T=A$, there exists an orthogonal real matrix $Q$ such that
 $$
 Q^{-1}AQ=Q^TAQ
 $$
 is diagonal.
+
 :::
 
-<1>3. Statement (c) is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (c) is false.
+
+
+::: pf-proof
+
 The same matrix
 $$
 A=
@@ -69,11 +88,18 @@ A=
 \end{pmatrix}
 $$
 is a complex matrix. The argument in step <1>1 is field-independent: $A$ is nonzero, $A^2=0$, and its only eigenvalue is $0$, so it cannot be diagonalizable over $\mathbb C$.
+
 :::
 
-<1>4. Statement (d) is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (d) is false.
+
+
+::: pf-proof
+
 Consider the complex symmetric matrix
 $$
 B=
@@ -96,20 +122,31 @@ i-i&i^2+1
 =0.
 $$
 Hence the only eigenvalue of $B$ is $0$. If $B$ were diagonalizable over $\mathbb C$, it would be similar to the zero diagonal matrix and therefore would itself be zero, contradiction.
+
 :::
 
-<1>5. Therefore the four answers are
+:::
+
+::: pf-step
+
+Therefore the four answers are
 $$
 \boxed{\text{(a) false,\quad (b) true,\quad (c) false,\quad (d) false}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>4 establish the four assertions individually.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested classification with proofs and counterexamples.
+
 :::
+
 :::

@@ -43,7 +43,6 @@ $$
 for $1 \leq i, j \leq n$.
 :::
 
-::: {.solution}
 For $k\geq0$, set
 $$
 a_k\coloneqq\frac{f^{(k)}(0)}{k!},
@@ -53,7 +52,11 @@ u_k\coloneqq(t_1^k,\ldots,t_n^k)^T,
 v_k\coloneqq(s_1^k,\ldots,s_n^k)^T.
 $$
 
-<1>1. Define the matrix $B$ by
+::: pf
+
+::: pf-step
+
+Define the matrix $B$ by
 $$
 \boxed{
 B_{ij}
@@ -66,13 +69,22 @@ $$
 B=\sum_{k=0}^{r-1}a_k u_kv_k^T.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $(i,j)$ entry of $u_kv_k^T$ is $t_i^ks_j^k=(t_is_j)^k$, so the two displayed definitions agree.
+
 :::
 
-<1>2. The matrix $B$ has rank at most $r$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $B$ has rank at most $r$.
+
+
+::: pf-proof
+
 Each outer product $u_kv_k^T$ has rank at most $1$. Therefore
 $$
 \operatorname{rank}(B)
@@ -80,16 +92,23 @@ $$
 \sum_{k=0}^{r-1}\operatorname{rank}(a_ku_kv_k^T)
 \leq r.
 $$
+
 :::
 
-<1>3. For every $1\leq i,j\leq n$,
+:::
+
+::: pf-step
+
+For every $1\leq i,j\leq n$,
 $$
 |A_{ij}-B_{ij}|
 \leq
 M\sum_{k=r}^{\infty}\frac1{k!}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $|t_i|<1$ and $|s_j|<1$, one has $|t_is_j|<1$. The Taylor series of $f$ at $0$ therefore converges to $f(t_is_j)$:
 $$
 A_{ij}
@@ -108,14 +127,21 @@ $$
 M\sum_{k=r}^{\infty}\frac1{k!}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. For every integer $r\geq1$,
+:::
+
+::: pf-step
+
+For every integer $r\geq1$,
 $$
 \sum_{k=r}^{\infty}\frac1{k!}\leq\frac2{r!}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Writing $k=r+m$,
 $$
 \sum_{k=r}^{\infty}\frac1{k!}
@@ -135,9 +161,14 @@ Hence the parenthesized expression is at most
 $$
 1+\sum_{m=1}^{\infty}2^{-m}=2.
 $$
+
 :::
 
-<1>5. The matrix $B$ from step <1>1 satisfies
+:::
+
+::: pf-step
+
+The matrix $B$ from step <1>1 satisfies
 $$
 \boxed{
 \operatorname{rank}(B)\leq r,
@@ -146,13 +177,19 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The rank bound is step <1>2. Combining steps <1>3 and <1>4 gives the entrywise error bound.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required matrix and both requested estimates.
+
 :::
+
 :::

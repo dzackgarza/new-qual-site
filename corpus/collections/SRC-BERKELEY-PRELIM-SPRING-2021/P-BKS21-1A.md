@@ -34,15 +34,20 @@ x^2+z^2\le1,\qquad y^2+z^2\le1.
 $$
 :::
 
-::: {.solution}
-<1>1. For a fixed $z\in[-1,1]$, the cross-section of the solid by the plane of that $z$ is the square
+::: pf
+
+::: pf-step
+
+For a fixed $z\in[-1,1]$, the cross-section of the solid by the plane of that $z$ is the square
 $$
 |x|\leq\sqrt{1-z^2},
 \qquad
 |y|\leq\sqrt{1-z^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The two defining inequalities are equivalent, for fixed $z$, to
 $$
 x^2\leq1-z^2,
@@ -50,14 +55,21 @@ x^2\leq1-z^2,
 y^2\leq1-z^2.
 $$
 Such points exist exactly when $1-z^2\geq0$, namely for $-1\leq z\leq1$, and then the displayed bounds follow.
+
 :::
 
-<1>2. The area of the cross-section in step <1>1 is
+:::
+
+::: pf-step
+
+The area of the cross-section in step <1>1 is
 $$
 A(z)=4(1-z^2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each side of the square has length
 $$
 2\sqrt{1-z^2},
@@ -66,14 +78,21 @@ so its area is
 $$
 \left(2\sqrt{1-z^2}\right)^2=4(1-z^2).
 $$
+
 :::
 
-<1>3. The volume is
+:::
+
+::: pf-step
+
+The volume is
 $$
 \boxed{V=\frac{16}{3}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By slicing perpendicular to the $z$-axis and using step <1>2,
 $$
 \begin{aligned}
@@ -84,11 +103,15 @@ V
 &=\frac{16}{3}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested volume.
+
 :::
+
 :::

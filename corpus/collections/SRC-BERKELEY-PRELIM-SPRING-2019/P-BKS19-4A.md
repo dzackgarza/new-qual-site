@@ -34,13 +34,18 @@ I=\int_{-\infty}^{\infty}\frac{x\sin x}{(1+x^2)^2}\,dx.
 $$
 :::
 
-::: {.solution}
-<1>1. The integral satisfies
+::: pf
+
+::: pf-step
+
+The integral satisfies
 $$
 I=\frac12\int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both improper integrals are absolutely convergent. Since
 $$
 \frac{x}{(1+x^2)^2}
@@ -55,14 +60,21 @@ $$
 +\frac12\int_{-R}^{R}\frac{\cos x}{1+x^2}\,dx.
 $$
 The boundary term tends to $0$ as $R\to\infty$, which yields the claimed identity.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_{-\infty}^{\infty}\frac{e^{ix}}{1+x^2}\,dx=\frac{\pi}{e}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 g(z)\coloneqq\frac{e^{iz}}{1+z^2}
@@ -94,29 +106,47 @@ $$
 \longrightarrow0.
 $$
 Letting $R\to\infty$ proves the displayed integral.
+
 :::
 
-<1>3. The cosine integral is
+:::
+
+::: pf-step
+
+The cosine integral is
 $$
 \int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx=\frac{\pi}{e}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take real parts in step <1>2. The integral is absolutely convergent, so taking the real part commutes with integration.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{I=\frac{\pi}{2e}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into the reduction from step <1>1.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value.
+
 :::
+
 :::

@@ -35,15 +35,20 @@ $$
 with $|z|<1$ that have positive imaginary part.
 :::
 
-::: {.solution}
 Set
 $$
 F(z)\coloneqq e^z-3z^6.
 $$
 
-<1>1. The function $F$ has six zeros in $|z|<1$, counted with multiplicity.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $F$ has six zeros in $|z|<1$, counted with multiplicity.
+
+
+::: pf-proof
+
 On $|z|=1$,
 $$
 |e^z|=e^{\operatorname{Re}z}\leq e<3=|3z^6|.
@@ -53,11 +58,18 @@ $$
 3z^6-e^z=-F(z)
 $$
 has the same number of zeros in the unit disk as $3z^6$, namely six, counted with multiplicity.
+
 :::
 
-<1>2. Exactly one real zero of $F$ lies in $(-1,0)$ and exactly one lies in $(0,1)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Exactly one real zero of $F$ lies in $(-1,0)$ and exactly one lies in $(0,1)$.
+
+
+::: pf-proof
+
 For real $x\neq0$, the equation $F(x)=0$ is equivalent to
 $$
 \Phi(x)\coloneqq x-\log3-6\log|x|=0.
@@ -81,11 +93,18 @@ $$
 \Phi(1)=1-\log3<0,
 $$
 because $3>e$. Hence there is exactly one zero in $(0,1)$.
+
 :::
 
-<1>3. Every zero of $F$ in the unit disk is simple.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every zero of $F$ in the unit disk is simple.
+
+
+::: pf-proof
+
 If $z$ were a multiple zero, then $F(z)=F'(z)=0$. Since
 $$
 F'(z)=e^z-18z^5,
@@ -95,30 +114,48 @@ $$
 3z^6=e^z=18z^5.
 $$
 The number $z$ cannot be $0$, so division by $3z^5$ gives $z=6$, which is outside the unit disk. Thus no zero in the disk is multiple.
+
 :::
 
-<1>4. Exactly four zeros in the unit disk are nonreal, and exactly two of them have positive imaginary part.
+:::
 
-::: {.proof}
+::: pf-step
+
+Exactly four zeros in the unit disk are nonreal, and exactly two of them have positive imaginary part.
+
+
+::: pf-proof
+
 By steps <1>1 and <1>3 there are six distinct zeros in the disk. Step <1>2 accounts for exactly two real zeros, leaving four nonreal zeros. Since
 $$
 F(\overline z)=\overline{F(z)},
 $$
 nonreal zeros occur in conjugate pairs. In each conjugate pair exactly one zero has positive imaginary part. Therefore exactly two of the four nonreal zeros lie in the upper half-plane.
+
 :::
 
-<1>5. The requested number is
+:::
+
+::: pf-step
+
+The requested number is
 $$
 \boxed{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the conclusion of step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested count.
+
 :::
+
 :::

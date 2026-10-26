@@ -37,16 +37,21 @@ $$
 where $C$ is the circle centered at the origin with radius 2, oriented counterclockwise.
 :::
 
-::: {.solution}
 Put
 $$
 P(z)\coloneqq z^6+z+1.
 $$
 Then $P'(z)=6z^5+1$.
 
-<1>1. The polynomial $P$ has exactly six zeros inside $C$ and no zeros on $C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $P$ has exactly six zeros inside $C$ and no zeros on $C$.
+
+
+::: pf-proof
+
 On $C$, one has $|z|=2$, so
 $$
 |z+1|\leq |z|+1=3<64=|z^6|.
@@ -56,14 +61,21 @@ $$
 P(z)=z^6+(z+1)
 $$
 have the same number of zeros inside $C$, counted with multiplicity. Since $z^6$ has six zeros there, so does $P$. The strict inequality also implies that $P$ has no zero on $C$.
+
 :::
 
-<1>2. The integral equals
+:::
+
+::: pf-step
+
+The integral equals
 $$
 \boxed{12\pi i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the argument principle applies to $P$ on $C$. Since $P$ is a polynomial and has six zeros inside $C$, counted with multiplicity,
 $$
 \int_C\frac{P'(z)}{P(z)}\,dz
@@ -73,11 +85,15 @@ $$
 12\pi i.
 $$
 Substituting $P'(z)=6z^5+1$ gives the integral in the problem.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested value.
+
 :::
+
 :::

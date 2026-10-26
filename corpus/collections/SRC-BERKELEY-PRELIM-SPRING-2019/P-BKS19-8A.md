@@ -35,8 +35,11 @@ $$
 is surjective but not injective.
 :::
 
-::: {.solution}
-<1>1. For every $u,v,w\in\mathbb C$,
+::: pf
+
+::: pf-step
+
+For every $u,v,w\in\mathbb C$,
 $$
 (z-u)(z-v)(z-w)
 =
@@ -44,7 +47,9 @@ z^3+F_1(u,v,w)z^2+F_2(u,v,w)z+F_3(u,v,w),
 $$
 where $F=(F_1,F_2,F_3)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding gives
 $$
 (z-u)(z-v)(z-w)
@@ -52,11 +57,18 @@ $$
 z^3-(u+v+w)z^2+(uv+uw+vw)z-uvw,
 $$
 which is exactly the asserted coefficient vector.
+
 :::
 
-<1>2. The map $F$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $F$ is surjective.
+
+
+::: pf-proof
+
 Let $(a,b,c)\in\mathbb C^3$. By the fundamental theorem of algebra, the monic cubic
 $$
 p(z)=z^3+az^2+bz+c
@@ -70,21 +82,32 @@ $$
 F(u,v,w)=(a,b,c).
 $$
 Thus every point of $\mathbb C^3$ has a preimage.
+
 :::
 
-<1>3. The map $F$ is not injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $F$ is not injective.
+
+
+::: pf-proof
+
 The formula for $F$ is symmetric in $u,v,w$. In particular,
 $$
 F(0,1,2)=F(1,0,2),
 $$
 while $(0,1,2)\neq(1,0,2)$. Hence $F$ is not injective.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves surjectivity and step <1>3 proves failure of injectivity.
+
 :::
+
 :::

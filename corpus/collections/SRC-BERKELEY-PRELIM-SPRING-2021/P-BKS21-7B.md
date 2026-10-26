@@ -27,12 +27,17 @@ a_{ij}=\begin{cases}
 $$
 :::
 
-::: {.solution}
 Let $A=(a_{ij})$, and let $T$ be the real symmetric tridiagonal matrix with $1$ on both the superdiagonal and subdiagonal and $0$ elsewhere.
 
-<1>1. The matrix $A$ is similar over $\mathbb C$ to $iT$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ is similar over $\mathbb C$ to $iT$.
+
+
+::: pf-proof
+
 Set
 $$
 D\coloneqq
@@ -56,9 +61,14 @@ All other entries remain $0$. Hence
 $$
 D^{-1}AD=iT.
 $$
+
 :::
 
-<1>2. For each $m=1,\ldots,n$, set
+:::
+
+::: pf-step
+
+For each $m=1,\ldots,n$, set
 $$
 \theta_m\coloneqq\frac{m\pi}{n+1}
 $$
@@ -75,7 +85,9 @@ Tv^{(m)}
 2\cos(\theta_m)\,v^{(m)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Extend the notation by
 $$
 v^{(m)}_0=0,
@@ -106,9 +118,14 @@ $$
 2\cos(\theta_m)v^{(m)}_j.
 $$
 The vector $v^{(m)}$ is nonzero because its first coordinate is $\sin\theta_m\neq0$.
+
 :::
 
-<1>3. The $n$ numbers
+:::
+
+::: pf-step
+
+The $n$ numbers
 $$
 2\cos\frac{m\pi}{n+1},
 \qquad
@@ -116,7 +133,9 @@ m=1,\ldots,n,
 $$
 are all the eigenvalues of $T$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives all of them as eigenvalues. The angles
 $$
 \frac{\pi}{n+1},
@@ -125,9 +144,14 @@ $$
 \frac{n\pi}{n+1}
 $$
 are distinct and lie in $(0,\pi)$, where $\cos$ is strictly decreasing. Hence the displayed eigenvalues are distinct. An $n\times n$ matrix has at most $n$ distinct eigenvalues, so these are all of them.
+
 :::
 
-<1>4. The eigenvalues of $A$ are
+:::
+
+::: pf-step
+
+The eigenvalues of $A$ are
 $$
 \boxed{
 \lambda_m
@@ -138,13 +162,19 @@ m=1,\ldots,n
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $A$ and $iT$ are similar and therefore have the same eigenvalues. Multiplying a matrix by $i$ multiplies each eigenvalue by $i$. Apply step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the complete list of eigenvalues.
+
 :::
+
 :::

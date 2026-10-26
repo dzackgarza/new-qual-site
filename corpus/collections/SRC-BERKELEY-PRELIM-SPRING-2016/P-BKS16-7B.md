@@ -36,14 +36,19 @@ for all $x\in\RR^n$, where $\norm{\cdot}$ denotes the Euclidean norm.
 Prove or give a counterexample.
 :::
 
-::: {.solution}
-<1>1. If $A$ is symmetric, then
+::: pf
+
+::: pf-step
+
+If $A$ is symmetric, then
 $$
 \lVert Ax\rVert\leq\rho\lVert x\rVert
 $$
 for every $x\in\RR^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the spectral theorem, there is an orthonormal basis $u_1,\ldots,u_n$ of $\RR^n$ consisting of eigenvectors of $A$, with corresponding real eigenvalues $\lambda_1,\ldots,\lambda_n$. Write
 $$
 x=\sum_{i=1}^n c_i u_i.
@@ -63,11 +68,18 @@ $$
 \rho^2\lVert x\rVert^2,
 $$
 because $|\lambda_i|\leq\rho$ for every $i$. Taking square roots gives the claimed inequality.
+
 :::
 
-<1>2. For a nonsymmetric matrix, the assertion is $\boxed{\text{false}}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For a nonsymmetric matrix, the assertion is $\boxed{\text{false}}$.
+
+
+::: pf-proof
+
 Consider
 $$
 A=
@@ -84,11 +96,15 @@ so
 $$
 \lVert Ae_2\rVert=1>0=\rho\lVert e_2\rVert.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (1), and step <1>2 supplies the counterexample required in part (2).
+
 :::
+
 :::

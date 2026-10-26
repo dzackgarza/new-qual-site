@@ -31,15 +31,20 @@ audit:
 Let $A$ be a real $n\times n$ matrix such that every off-diagonal entry is positive and the sum of the entries in each row is negative. Show that $\det A\ne0$.
 :::
 
-::: {.solution}
 Write $A=(a_{ij})$.
 
-<1>1. For every row index $i$,
+::: pf
+
+::: pf-step
+
+For every row index $i$,
 $$
 |a_{ii}|>\sum_{j\neq i}|a_{ij}|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 All off-diagonal entries are positive, so
 $$
 \sum_{j\neq i}a_{ij}>0.
@@ -59,11 +64,18 @@ $$
 =
 \sum_{j\neq i}|a_{ij}|.
 $$
+
 :::
 
-<1>2. The kernel of $A$ is trivial.
+:::
 
-::: {.proof}
+::: pf-step
+
+The kernel of $A$ is trivial.
+
+
+::: pf-proof
+
 Suppose, for contradiction, that $Ax=0$ for some nonzero
 $$
 x=(x_1,\ldots,x_n)^T.
@@ -93,20 +105,31 @@ $$
 \sum_{j\neq k}|a_{kj}|,
 $$
 contradicting step <1>1.
+
 :::
 
-<1>3. Consequently
+:::
+
+::: pf-step
+
+Consequently
 $$
 \boxed{\det A\neq0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that the linear map defined by the square matrix $A$ is injective. A linear endomorphism of the finite-dimensional space $\mathbb R^n$ is injective if and only if it is invertible, and a square matrix is invertible if and only if its determinant is nonzero.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

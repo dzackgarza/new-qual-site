@@ -35,23 +35,35 @@ Let $S_9$ denote the group of permutations of $9$ objects.
 (b) Prove that no element of $S_9$ has order $18$.
 :::
 
-::: {.solution}
-<1>1. For part (a), the permutation
+::: pf
+
+::: pf-step
+
+For part (a), the permutation
 $$
 \boxed{\sigma=(1\ 2\ 3\ 4)(5\ 6\ 7\ 8\ 9)}
 $$
 has order $20$.
 
-::: {.proof}
+
+::: pf-proof
+
 The two displayed cycles are disjoint and have lengths $4$ and $5$. The order of a permutation written as a product of disjoint cycles is the least common multiple of their lengths. Therefore
 $$
 \operatorname{ord}(\sigma)=\operatorname{lcm}(4,5)=20.
 $$
+
 :::
 
-<1>2. No element of $S_9$ has order $18$.
+:::
 
-::: {.proof}
+::: pf-step
+
+No element of $S_9$ has order $18$.
+
+
+::: pf-proof
+
 Suppose, for contradiction, that $\tau\in S_9$ has order $18$. Let
 $$
 n_1,\ldots,n_r>1
@@ -65,11 +77,15 @@ $$
 n_1+\cdots+n_r\leq9.
 $$
 Since $9$ divides the least common multiple, at least one $n_i$ must be divisible by $9$: otherwise every $n_i$ would have $3$-adic valuation at most $1$, and so would their least common multiple. Because every cycle length is at most $9$, this forces $n_i=9$. That single cycle already uses all nine letters, so there can be no other nontrivial cycle. The order of $\tau$ would then be $9$, contradicting the assumption that its order is $18$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and step <1>2 proves part (b).
+
 :::
+
 :::

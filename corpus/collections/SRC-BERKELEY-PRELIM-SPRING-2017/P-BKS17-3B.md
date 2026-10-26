@@ -37,10 +37,15 @@ $$
 Suppose that $E_p(f) = 0$ whenever $f$ is a polynomial of degree $\leq q$. Show that $q \leq 2p + 1$ and if $q \geq 2p$ then $w_j > 0$ for all $j$.
 :::
 
-::: {.solution}
-<1>1. One has $q\leq 2p+1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+One has $q\leq 2p+1$.
+
+
+::: pf-proof
+
 Define
 $$
 F(x)\coloneqq\prod_{k=0}^p(x-x_k)^2.
@@ -61,9 +66,14 @@ E_p(F)
 >0.
 $$
 If $q\geq2p+2$, exactness would instead give $E_p(F)=0$, a contradiction. Thus $q\leq2p+1$.
+
 :::
 
-<1>2. Assume $q\geq2p$, fix $j\in\{0,\ldots,p\}$, and define
+:::
+
+::: pf-step
+
+Assume $q\geq2p$, fix $j\in\{0,\ldots,p\}$, and define
 $$
 F_j(x)\coloneqq\prod_{\substack{0\leq k\leq p\\k\neq j}}(x-x_k)^2.
 $$
@@ -72,11 +82,18 @@ $$
 F_j(x_j)=\prod_{k\neq j}(x_j-x_k)^2>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There are exactly $p$ factors in the defining product, each of degree $2$, so $\deg F_j=2p$. If $k\neq j$, the factor indexed by that same $k$ vanishes at $x=x_k$. At $x=x_j$, every factor is strictly positive because the nodes are distinct.
+
 :::
 
-<1>3. Under the hypothesis $q\geq2p$, every weight is positive; more precisely,
+:::
+
+::: pf-step
+
+Under the hypothesis $q\geq2p$, every weight is positive; more precisely,
 $$
 \boxed{
 w_j
@@ -87,7 +104,9 @@ w_j
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\deg F_j=2p\leq q$, exactness and step <1>2 give
 $$
 \begin{aligned}
@@ -97,11 +116,15 @@ $$
 \end{aligned}
 $$
 The denominator $F_j(x_j)$ is positive by step <1>2. Also $F_j$ is continuous, nonnegative, and not identically zero on $[a,b]$, so its integral is positive. Dividing yields the displayed formula and $w_j>0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the degree bound, and steps <1>2--<1>3 prove positivity of every weight when $q\geq2p$.
+
 :::
+
 :::

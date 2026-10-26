@@ -35,24 +35,36 @@ Suppose $f$ is a function from the reals to the reals satisfying $2f(x) = f(2x)$
 (b) Give an example of such a function $f$ that is continuous but not linear.
 :::
 
-::: {.solution}
-<1>1. One has $f(0)=0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+One has $f(0)=0$.
+
+
+::: pf-proof
+
 Substitute $x=0$ into
 $$
 2f(x)=f(2x).
 $$
 This gives $2f(0)=f(0)$, hence $f(0)=0$.
+
 :::
 
-<1>2. If $f$ is differentiable at $0$ with derivative $c$, then
+:::
+
+::: pf-step
+
+If $f$ is differentiable at $0$ with derivative $c$, then
 $$
 f(x)=cx
 $$
 for every $x\in\RR$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\ne0$. Iterating the functional equation gives
 $$
 f\!\left(\frac{x}{2^n}\right)=\frac{f(x)}{2^n}
@@ -68,9 +80,14 @@ $$
 c=f'(0)=\frac{f(x)}{x}.
 $$
 Thus $f(x)=cx$ for every nonzero $x$, and step <1>1 gives the same formula at $x=0$.
+
 :::
 
-<1>3. A continuous non-linear example is
+:::
+
+::: pf-step
+
+A continuous non-linear example is
 $$
 f(x)
 =
@@ -80,7 +97,9 @@ x\sin\!\bigl(2\pi\log_2|x|\bigr),&x\ne0,\\
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\ne0$,
 $$
 \begin{aligned}
@@ -104,13 +123,17 @@ f(2^{1/4})
 =
 2^{1/4}\ne0.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>3 supplies the example required in part (b).
+
 :::
+
 :::
 
 ::: {.remark}

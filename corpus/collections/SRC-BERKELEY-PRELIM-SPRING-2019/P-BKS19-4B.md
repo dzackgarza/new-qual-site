@@ -39,18 +39,23 @@ $$
 $$
 :::
 
-::: {.solution}
 Set
 $$
 R\coloneqq1+\sum_{k=0}^{n-1}|c_k|.
 $$
 
-<1>1. If $|z|\geq R$, then
+::: pf
+
+::: pf-step
+
+If $|z|\geq R$, then
 $$
 \sum_{k=0}^{n-1}|c_k||z|^k<|z|^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $R\geq1$, the hypothesis $|z|\geq R$ gives $|z|\geq1$. Hence, for $0\leq k\leq n-1$,
 $$
 |z|^k\leq|z|^{n-1}.
@@ -71,15 +76,22 @@ $$
 |z|^n.
 $$
 This proves the claim.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 p(z)=z^n+c_{n-1}z^{n-1}+\cdots+c_1z+c_0
 $$
 has no zero with $|z|\geq R$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $|z|\geq R$, step <1>1 and the reverse triangle inequality give
 $$
 \begin{aligned}
@@ -90,21 +102,32 @@ $$
 \end{aligned}
 $$
 Thus $p(z)\neq0$.
+
 :::
 
-<1>3. Every zero $\zeta$ of $p$ satisfies
+:::
+
+::: pf-step
+
+Every zero $\zeta$ of $p$ satisfies
 $$
 |\zeta|<
 1+|c_{n-1}|+\cdots+|c_1|+|c_0|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the contrapositive of step <1>2 together with the definition of $R$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the asserted open-disc bound.
+
 :::
+
 :::

@@ -31,18 +31,28 @@ audit:
 Given two vectors $x$ and $y$ in $\RR^n$ with $\norm{x}_2 = \norm{y}_2$, construct an orthogonal matrix $Q$ such that $Qx = y$. Can there be such a matrix if $\norm{x}_2 \neq \norm{y}_2$?
 :::
 
-::: {.solution}
-<1>1. If $\|x\|_2=\|y\|_2$ and $x=y$, then the choice
+::: pf
+
+::: pf-step
+
+If $\|x\|_2=\|y\|_2$ and $x=y$, then the choice
 $$
 \boxed{Q=I}
 $$
 is orthogonal and satisfies $Qx=y$.
 
-::: {.proof}
+
+::: pf-proof
+
 The identity matrix satisfies $I^TI=I$, and $Ix=x=y$.
+
 :::
 
-<1>2. Suppose $\|x\|_2=\|y\|_2$ and $x\neq y$, and define
+:::
+
+::: pf-step
+
+Suppose $\|x\|_2=\|y\|_2$ and $x\neq y$, and define
 $$
 u\coloneqq\frac{x-y}{\|x-y\|_2},
 \qquad
@@ -50,7 +60,9 @@ u\coloneqq\frac{x-y}{\|x-y\|_2},
 $$
 Then $u^Tu=1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x\neq y$, the denominator is nonzero. Hence
 $$
 u^Tu
@@ -58,11 +70,18 @@ u^Tu
 \frac{(x-y)^T(x-y)}{\|x-y\|_2^2}
 =1.
 $$
+
 :::
 
-<1>3. The matrix $Q$ from step <1>2 is orthogonal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $Q$ from step <1>2 is orthogonal.
+
+
+::: pf-proof
+
 Since $uu^T$ is symmetric and $u^Tu=1$ by step <1>2,
 $$
 \begin{aligned}
@@ -73,14 +92,21 @@ Q^TQ
 \end{aligned}
 $$
 Thus $Q$ is orthogonal.
+
 :::
 
-<1>4. Under the hypotheses of step <1>2,
+:::
+
+::: pf-step
+
+Under the hypotheses of step <1>2,
 $$
 2uu^Tx=x-y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\|x\|_2=\|y\|_2$,
 $$
 \begin{aligned}
@@ -104,20 +130,34 @@ $$
 \end{aligned}
 $$
 The cancelled scalar is nonzero because, by the displayed norm identity, it equals $\|x-y\|_2^2/2>0$.
+
 :::
 
-<1>5. The matrix $Q$ from step <1>2 satisfies $Qx=y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $Q$ from step <1>2 satisfies $Qx=y$.
+
+
+::: pf-proof
+
 By step <1>4,
 $$
 Qx=(I-2uu^T)x=x-(x-y)=y.
 $$
+
 :::
 
-<1>6. If $\|x\|_2\neq\|y\|_2$, there is no orthogonal matrix $Q$ satisfying $Qx=y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $\|x\|_2\neq\|y\|_2$, there is no orthogonal matrix $Q$ satisfying $Qx=y$.
+
+
+::: pf-proof
+
 If $Q$ were orthogonal and $Qx=y$, then
 $$
 \|y\|_2^2
@@ -131,11 +171,15 @@ x^Tx
 \|x\|_2^2,
 $$
 contrary to the hypothesis.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2--<1>5 construct the required orthogonal matrix when the norms are equal, and step <1>6 proves impossibility when the norms are unequal.
+
 :::
+
 :::

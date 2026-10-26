@@ -31,15 +31,20 @@ $$
 into a product of irreducible polynomials in the ring $\QQ[x]$.
 :::
 
-::: {.solution}
-<1>1. The polynomial factors as
+::: pf
+
+::: pf-step
+
+The polynomial factors as
 $$
 f(x)=(x-1)g(x),
 \qquad
 g(x)=6x^4+9x^3+15x+2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 f(1)=6+3-9+15-13-2=0,
@@ -48,21 +53,35 @@ the factor theorem gives a factor $x-1$. Synthetic division by $x-1$ gives the q
 $$
 6x^4+9x^3+0x^2+15x+2.
 $$
+
 :::
 
-<1>2. The reciprocal polynomial
+:::
+
+::: pf-step
+
+The reciprocal polynomial
 $$
 h(x)\coloneqq x^4g(x^{-1})=2x^4+15x^3+9x+6
 $$
 is irreducible in $\QQ[x]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Eisenstein's criterion applies to $h$ with the prime $3$: the leading coefficient $2$ is not divisible by $3$, every other coefficient is divisible by $3$, and the constant coefficient $6$ is not divisible by $9$. Hence $h$ is irreducible over $\QQ$.
+
 :::
 
-<1>3. The quartic $g$ is irreducible in $\QQ[x]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The quartic $g$ is irreducible in $\QQ[x]$.
+
+
+::: pf-proof
+
 Suppose instead that
 $$
 g(x)=u(x)v(x)
@@ -80,20 +99,31 @@ h(x)
 =\widetilde u(x)\widetilde v(x),
 $$
 contradicting step <1>2.
+
 :::
 
-<1>4. The factorization into irreducibles is
+:::
+
+::: pf-step
+
+The factorization into irreducibles is
 $$
 \boxed{f(x)=(x-1)(6x^4+9x^3+15x+2)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The factor $x-1$ is irreducible because it has degree $1$, and step <1>3 proves that the quartic factor is irreducible.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the requested irreducible factorization.
+
 :::
+
 :::

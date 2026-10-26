@@ -23,7 +23,6 @@ G\ne\bigcup_{g\in G}gHg^{-1}.
 $$
 :::
 
-::: {.solution}
 Let
 $$
 N\coloneqq N_G(H)
@@ -36,21 +35,34 @@ $$
 $$
 be the set of distinct conjugates of $H$.
 
-<1>1. The number of distinct conjugates of $H$ is
+::: pf
+
+::: pf-step
+
+The number of distinct conjugates of $H$ is
 $$
 |\mathcal C|=[G:N].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The group $G$ acts on its subgroups by conjugation. The stabilizer of $H$ for this action is exactly $N_G(H)=N$. By the orbit-stabilizer theorem, the orbit of $H$, namely $\mathcal C$, has cardinality $[G:N]$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 |\mathcal C|\leq [G:H].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since every element of $H$ normalizes $H$,
 $$
 H\subseteq N.
@@ -60,9 +72,14 @@ $$
 [G:N]\leq [G:H].
 $$
 Apply step <1>1.
+
 :::
 
-<1>3. The union of all conjugates satisfies
+:::
+
+::: pf-step
+
+The union of all conjugates satisfies
 $$
 \left|
 \bigcup_{K\in\mathcal C}K
@@ -71,13 +88,22 @@ $$
 1+|\mathcal C|(|H|-1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every $K\in\mathcal C$ is conjugate to $H$, so $|K|=|H|$. Also every subgroup $K$ contains the identity element $e$. Thus, after counting $e$ once, each of the $|\mathcal C|$ conjugates can contribute at most $|H|-1$ further elements. This gives the stated bound.
+
 :::
 
-<1>4. The union of the conjugates has strictly fewer than $|G|$ elements.
+:::
 
-::: {.proof}
+::: pf-step
+
+The union of the conjugates has strictly fewer than $|G|$ elements.
+
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 $$
 \begin{aligned}
@@ -96,22 +122,33 @@ Since $H$ is proper, $[G:H]\geq2$. Therefore
 $$
 |G|-[G:H]+1\leq |G|-1<|G|.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 G\ne\bigcup_{g\in G}gHg^{-1}
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If the union were all of $G$, its cardinality would be $|G|$, contradicting step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

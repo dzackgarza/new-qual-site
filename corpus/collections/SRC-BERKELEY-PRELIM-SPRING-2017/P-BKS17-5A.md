@@ -43,13 +43,16 @@ $$
 Find the radius of convergence of the series and the function to which it converges in its disc of convergence.
 :::
 
-::: {.solution}
 Write
 $$
 F(z)\coloneqq\sum_{n=0}^{\infty}a_nz^n.
 $$
 
-<1>1. The characteristic roots of the recurrence are
+::: pf
+
+::: pf-step
+
+The characteristic roots of the recurrence are
 $$
 r_+=\frac{-2+\sqrt7}{3},
 \qquad
@@ -64,7 +67,9 @@ a_n
 \frac{\sqrt7+1}{2\sqrt7}\,r_-^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The recurrence is equivalent to
 $$
 3a_n+4a_{n-1}-a_{n-2}=0,
@@ -89,14 +94,21 @@ A=\frac{\sqrt7-1}{2\sqrt7},
 \qquad
 B=\frac{\sqrt7+1}{2\sqrt7}.
 $$
+
 :::
 
-<1>2. The radius of convergence is
+:::
+
+::: pf-step
+
+The radius of convergence is
 $$
 \boxed{R=\sqrt7-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 |r_-|=\frac{2+\sqrt7}{3}>|r_+|
@@ -113,14 +125,21 @@ R=\frac{1}{|r_-|}
 =
 \sqrt7-2.
 $$
+
 :::
 
-<1>3. For $|z|<R$,
+:::
+
+::: pf-step
+
+For $|z|<R$,
 $$
 (3+4z-z^2)F(z)=3+z.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Inside the disk of convergence, termwise algebra is valid. One has
 $$
 \begin{aligned}
@@ -139,14 +158,21 @@ $$
 3a_1+4a_0=-3+4=1.
 $$
 Thus the product equals $3+z$.
+
 :::
 
-<1>4. In its disk of convergence, the series converges to
+:::
+
+::: pf-step
+
+In its disk of convergence, the series converges to
 $$
 \boxed{F(z)=\frac{3+z}{3+4z-z^2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The zeros of the denominator are $2\pm\sqrt7$. Their moduli are
 $$
 \sqrt7-2
@@ -154,11 +180,15 @@ $$
 \sqrt7+2,
 $$
 so the denominator is nonzero for $|z|<R=\sqrt7-2$. Dividing the identity in step <1>3 gives the stated formula throughout the disk of convergence.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>4 give the requested radius and sum.
+
 :::
+
 :::
