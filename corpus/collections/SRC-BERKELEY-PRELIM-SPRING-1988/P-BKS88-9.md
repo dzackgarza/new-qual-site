@@ -27,13 +27,16 @@ converge.
 :::
 
 ::: {.solution}
-<1>1. For $0<A<B$,
+::: pf
+
+::: {.pf-step #tail-bound}
+For $0<A<B$,
 \[
 \left|\int_A^B e^{ix^2}\,dx\right|
 \leq \frac1A+\frac1{2B}.
 \]
 
-::: {.proof}
+::: pf-proof
 Since
 \[
 d(e^{ix^2})=2ix e^{ix^2}\,dx,
@@ -53,10 +56,13 @@ Taking absolute values and using $|e^{ix^2}|=1$ yields
 \]
 :::
 
-<1>2. The improper integral $\int_0^\infty e^{ix^2}\,dx$ converges.
+:::
 
-::: {.proof}
-The integral over every finite interval exists because $e^{ix^2}$ is continuous. By step <1>1, for $B>A>0$,
+::: {.pf-step #complex-integral}
+The improper integral $\int_0^\infty e^{ix^2}\,dx$ converges.
+
+::: pf-proof
+The integral over every finite interval exists because $e^{ix^2}$ is continuous. By [](#tail-bound){.pf-ref}, for $B>A>0$,
 \[
 \left|\int_A^B e^{ix^2}\,dx\right|
 \leq \frac1A+\frac1{2B}
@@ -65,21 +71,23 @@ The integral over every finite interval exists because $e^{ix^2}$ is continuous.
 The right-hand side tends to $0$ as $A\to\infty$, uniformly in $B>A$. Thus the Cauchy criterion for improper integrals shows that $\int_0^\infty e^{ix^2}\,dx$ converges.
 :::
 
-<1>3. Both $\int_0^\infty\cos x^2\,dx$ and $\int_0^\infty\sin x^2\,dx$ converge.
+:::
 
-::: {.proof}
+::: pf-step
+Both $\int_0^\infty\cos x^2\,dx$ and $\int_0^\infty\sin x^2\,dx$ converge.
+
+::: pf-proof
 For every $R>0$,
 \[
 \int_0^R e^{ix^2}\,dx
 =\int_0^R\cos x^2\,dx
 +i\int_0^R\sin x^2\,dx.
 \]
-By step <1>2, the left-hand side has a finite limit as $R\to\infty$. Its real and imaginary parts therefore have finite limits, which are precisely the two stated improper integrals.
+By [](#complex-integral){.pf-ref}, the left-hand side has a finite limit as $R\to\infty$. Its real and imaginary parts therefore have finite limits, which are precisely the two stated improper integrals.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves convergence of both Fresnel integrals.
 :::
+
+:::
+
 :::
