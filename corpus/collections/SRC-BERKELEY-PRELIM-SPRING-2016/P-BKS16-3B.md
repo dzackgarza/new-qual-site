@@ -32,6 +32,8 @@ converges pointwise to a Lipschitz function $f(x)$.
 Is the convergence uniform on $\RR$?
 :::
 
+::: {.solution}
+
 For $u\geq0$, write
 $$
 F(u)\coloneqq\sum_{k=1}^\infty\frac{(-1)^k}{k+u}.
@@ -141,6 +143,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} prove the pointwise convergence to a Lipschitz function, and step [](#s1-4){.pf-ref} proves uniform convergence.
+
+:::
 
 :::
 
