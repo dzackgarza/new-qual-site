@@ -23,9 +23,12 @@ $$
 q(x)\coloneqq x^2+x+1.
 $$
 
-<1>1. If $\mathbb Z_n[x]/(q)$ is a field, then $n$ is prime.
+::: pf
 
-::: {.proof}
+::: {.pf-step #prime-necessary}
+If $\mathbb Z_n[x]/(q)$ is a field, then $n$ is prime.
+
+::: pf-proof
 Because $q$ is monic of degree $2$, no nonzero constant polynomial belongs to the ideal $(q)$. Indeed, if
 $$
 c=q(x)h(x)
@@ -43,28 +46,37 @@ is injective.
 If the quotient is a field, its subring $\mathbb Z_n$ has no zero divisors. Thus $\mathbb Z_n$ is an integral domain, which for $n\geq2$ occurs exactly when $n$ is prime. For $n=1$ the quotient is the zero ring, not a field.
 :::
 
-<1>2. For a prime $p$, the quotient
+:::
+
+::: {.pf-step #quadratic-criterion}
+For a prime $p$, the quotient
 $$
 \mathbb F_p[x]/(q)
 $$
 is a field exactly when $q$ has no root in $\mathbb F_p$.
 
-::: {.proof}
+::: pf-proof
 Over the field $\mathbb F_p$, the quotient by $(q)$ is a field exactly when $q$ is irreducible. Since $q$ has degree $2$, it is reducible exactly when it has a linear factor, equivalently a root in $\mathbb F_p$.
 :::
 
-<1>3. For $1\leq n\leq10$, the only possible values from step <1>1 are
+:::
+
+::: {.pf-step #prime-candidates}
+For $1\leq n\leq10$, the only possible values from [](#prime-necessary){.pf-ref} are
 $$
 n=2,3,5,7.
 $$
 
-::: {.proof}
+::: pf-proof
 These are precisely the primes between $1$ and $10$.
 :::
 
-<1>4. The polynomial $q$ is irreducible over $\mathbb F_2$ and over $\mathbb F_5$.
+:::
 
-::: {.proof}
+::: {.pf-step #irreducible-cases}
+The polynomial $q$ is irreducible over $\mathbb F_2$ and over $\mathbb F_5$.
+
+::: pf-proof
 Over $\mathbb F_2$,
 $$
 q(0)=1,
@@ -81,12 +93,15 @@ a&0&1&2&3&4\\
 q(a)&1&3&2&3&1
 \end{array}
 $$
-in $\mathbb F_5$, so again there is no root. Step <1>2 gives irreducibility in both cases.
+in $\mathbb F_5$, so again there is no root. [](#quadratic-criterion){.pf-ref} gives irreducibility in both cases.
 :::
 
-<1>5. The polynomial $q$ is reducible over $\mathbb F_3$ and over $\mathbb F_7$.
+:::
 
-::: {.proof}
+::: {.pf-step #reducible-cases}
+The polynomial $q$ is reducible over $\mathbb F_3$ and over $\mathbb F_7$.
+
+::: pf-proof
 In $\mathbb F_3$,
 $$
 q(1)=1+1+1=0.
@@ -95,21 +110,27 @@ In $\mathbb F_7$,
 $$
 q(2)=4+2+1=0.
 $$
-Thus $q$ has a root in each field and is reducible by step <1>2.
+Thus $q$ has a root in each field and is reducible by [](#quadratic-criterion){.pf-ref}.
 :::
 
-<1>6. Therefore, for $1\leq n\leq10$,
+:::
+
+::: pf-step
+Therefore, for $1\leq n\leq10$,
 $$
 \boxed{
 \mathbb Z_n[x]/(x^2+x+1)\text{ is a field exactly for }n=2,5.
 }
 $$
 
-::: {.proof}
-Steps <1>3--<1>5 exhaust the prime candidates, and step <1>1 rules out all composite values and $n=1$.
+::: pf-proof
+[](#prime-candidates){.pf-ref}, [](#irreducible-cases){.pf-ref}, and [](#reducible-cases){.pf-ref} exhaust the prime candidates, and [](#prime-necessary){.pf-ref} rules out all composite values and $n=1$.
 :::
 
-<1>7. In the case $n=2$, let
+:::
+
+::: {.pf-step #defining-relation}
+In the case $n=2$, let
 $$
 \alpha\coloneqq[x]\in\mathbb F_2[x]/(q).
 $$
@@ -118,7 +139,7 @@ $$
 \alpha^2=\alpha+1.
 $$
 
-::: {.proof}
+::: pf-proof
 The defining relation is
 $$
 \alpha^2+\alpha+1=0.
@@ -129,7 +150,10 @@ $$
 $$
 :::
 
-<1>8. The four elements of the quotient for $n=2$ are
+:::
+
+::: pf-step
+The four elements of the quotient for $n=2$ are
 $$
 0,\quad1,\quad\alpha,\quad\alpha+1,
 $$
@@ -147,8 +171,8 @@ $$
 }.
 $$
 
-::: {.proof}
-Every residue class has a unique representative of degree at most $1$, so the four listed classes are all elements. Step <1>7 gives
+::: pf-proof
+Every residue class has a unique representative of degree at most $1$, so the four listed classes are all elements. [](#defining-relation){.pf-ref} gives
 $$
 \alpha^2=\alpha+1.
 $$
@@ -171,9 +195,8 @@ $$
 Together with multiplication by $0$ and $1$, these identities give the table.
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>6 answers part 1, and step <1>8 answers part 2.
 :::
+
+:::
+
 :::
