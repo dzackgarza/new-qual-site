@@ -21,6 +21,8 @@ A=\{x+iy:xy>1,\ x>0,\ y>0\}.
 What is the image of $A$ under the map $f(z)=z^2$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ Step [](#s1-1){.pf-ref} gives one inclusion and step [](#s1-2){.pf-ref} gives th
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} determines the requested image.
+
+:::
 
 :::
 
