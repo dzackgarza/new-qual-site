@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: deepseek-v4.1-flash-free
   date: 2026-10-27
   note: >-
