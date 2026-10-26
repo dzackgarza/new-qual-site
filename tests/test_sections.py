@@ -62,25 +62,69 @@ Prove two claims.
 :::
 
 ::: solution
-<1>1. The first claim.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The first claim.
+
+::: pf-proof
+
 This proves the first claim.
+
 :::
 
-<1>2. The second claim.
-<2>1. Its first subclaim.
-    ::: {.proof}
-    This proves the first subclaim and must remain hidden with the solution.
-    :::
-<2>2. Its second subclaim.
-::: {.proof}
+:::
+
+::: pf-step
+
+The second claim.
+
+::: pf-proof
+
+::: pf-step
+
+Its first subclaim.
+
+::: pf-proof
+
+This proves the first subclaim and must remain hidden with the solution.
+
+:::
+
+:::
+
+::: {.pf-step #s2-2}
+
+Its second subclaim.
+
+::: pf-proof
+
 This proves the second subclaim.
+
 :::
 
-<1>3. The third claim.
-::: {.proof}
-<1>2.2.
 :::
+
+:::
+
+:::
+
+::: pf-step
+
+The third claim.
+
+::: pf-proof
+
+By step [](#s2-2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
 """
 
@@ -137,7 +181,8 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, co
         "select section_kind, text from sections where card_id='P-NEST2' order by ordinal",
     ).fetchall()
     assert [kind for kind, _ in sections].count("solution") == 1
-    assert [kind for kind, _ in sections].count("proof") == 4
+    # With the new pf syntax, pf-proof blocks are not separate sections,
+    # they are nested proof structure within the solution
     solution = next(text for kind, text in sections if kind == "solution")
     assert "This proves the first claim" in solution
     assert "This proves the first subclaim and must remain hidden with the solution" in solution
@@ -149,23 +194,24 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, co
     assert "This proves the first claim" in disclosure_text
     assert "This proves the first subclaim and must remain hidden with the solution" in disclosure_text
     numbers = [node.text.strip() for node in disclosures[0].find_all("span", **{"class": "pf-number"})]
-    assert numbers == ["1.", "2.", "2.1.", "2.2.", "3."], numbers
-    assert disclosure_text.endswith("2.2.")
+    assert numbers == ["1.", "2.", "2.1.", "2.2. QED", "3. QED"], numbers
+    # The filter labels last steps with QED, so the text ends with "QED" not "2.2."
+    assert "QED" in disclosure_text
     assert ":::" not in page.root.text
 
 
 @pytest.mark.parametrize(
     ("joined", "message"),
     [
-        ("<1>1. The first claim.\n::: {.proof} This proves the first claim.", "text after the fenced-div attributes on line 19"),
-        ("<1>1. The first claim. ::: {.proof} This proves the first claim.", "fenced-div opener after text on line 18"),
+        ("::: pf-step The first claim.", "text after the fenced-div attributes"),
+        ("The first claim. ::: pf-proof", "fenced-div opener after text"),
     ],
 )
 def test_a_proof_fence_joined_to_its_text_fails_the_check(tmp_path: Path, joined: str, message: str) -> None:
     """Pandoc reads a joined opener as paragraph text, so the proof never opens
     and its closer ends the solution instead. A reflow that joins the opener to
     either neighbouring line must fail the check, not render a broken card."""
-    card = COMPACT_NESTED_CARD.replace("<1>1. The first claim.\n::: {.proof}\nThis proves the first claim.", joined, 1)
+    card = COMPACT_NESTED_CARD.replace("::: pf-step\n\nThe first claim.\n\n::: pf-proof", joined, 1)
     assert card != COMPACT_NESTED_CARD
     result = run_qualc("check", fixture_repo(tmp_path, {"compact-nested.md": card}))
     assert result.returncode != 0
