@@ -31,12 +31,15 @@ Let $f:[0,1]\to\mathbb R$ be continuously differentiable with $f(0)=0$. Prove th
 :::
 
 ::: {.solution}
-<1>1. For every $x\in[0,1]$,
+::: pf
+
+::: {.pf-step #fundamental-theorem}
+For every $x\in[0,1]$,
 $$
 f(x)=\int_0^x f'(t)\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
 The function $f$ is continuously differentiable and $f(0)=0$, so the
 fundamental theorem of calculus gives
 $$
@@ -44,7 +47,10 @@ f(x)-f(0)=\int_0^x f'(t)\,dt.
 $$
 :::
 
-<1>2. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #cauchy-schwarz-bound}
+For every $x\in[0,1]$,
 $$
 |f(x)|
 \le
@@ -52,8 +58,8 @@ $$
 \left(\int_0^x(f'(t))^2\,dt\right)^{1/2}.
 $$
 
-::: {.proof}
-By step <1>1 and Cauchy--Schwarz,
+::: pf-proof
+By [](#fundamental-theorem){.pf-ref} and Cauchy--Schwarz,
 $$
 \begin{aligned}
 |f(x)|
@@ -68,14 +74,17 @@ $$
 $$
 :::
 
-<1>3. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #uniform-bound}
+For every $x\in[0,1]$,
 $$
 |f(x)|
 \le
 \left(\int_0^1(f'(t))^2\,dt\right)^{1/2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $0\le x\le1$, one has $\sqrt{x}\le1$. Also
 $(f'(t))^2\ge0$, so
 $$
@@ -83,10 +92,13 @@ $$
 \le
 \int_0^1(f'(t))^2\,dt.
 $$
-Substitute these two bounds into step <1>2.
+Substitute these two bounds into [](#cauchy-schwarz-bound){.pf-ref}.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{
 \sup_{0\le x\le1}|f(x)|
@@ -94,14 +106,13 @@ $$
 \sqrt{\int_0^1(f'(x))^2\,dx}}.
 $$
 
-::: {.proof}
-The right-hand side in step <1>3 is independent of $x$. Taking the
+::: pf-proof
+The right-hand side in [](#uniform-bound){.pf-ref} is independent of $x$. Taking the
 supremum over all $x\in[0,1]$ gives the displayed inequality.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required estimate.
 :::
+
+:::
+
 :::
