@@ -27,6 +27,8 @@ d. Exhibit three nonisomorphic groups of order 30 and prove that they are not is
 You are not required to use your answer to (c).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -88,6 +90,8 @@ All three groups have order $30$. Their respective numbers of elements of order 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish parts (a)--(d), respectively.
+
+:::
 
 :::
 
