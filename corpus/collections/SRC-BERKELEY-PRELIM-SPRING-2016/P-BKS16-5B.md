@@ -36,6 +36,8 @@ $$
 also defines a holomorphic function on a neighborhood of $D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ By step [](#s1-3){.pf-ref}, the power series for $h$ has radius of convergence a
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
