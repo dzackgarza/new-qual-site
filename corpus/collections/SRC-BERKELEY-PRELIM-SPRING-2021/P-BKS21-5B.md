@@ -20,6 +20,8 @@ audit:
 If $a,b$ lie in the open unit disk, show that there is a biholomorphic self-map of the disk carrying $a$ to $b$.
 :::
 
+::: {.solution}
+
 For $c$ in the open unit disk, define
 $$
 \phi_c(z)\coloneqq\frac{z-c}{1-\overline c\,z}.
@@ -130,6 +132,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} constructs the required map.
+
+:::
 
 :::
 
