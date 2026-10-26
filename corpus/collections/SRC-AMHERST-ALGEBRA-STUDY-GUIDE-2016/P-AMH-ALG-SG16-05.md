@@ -22,8 +22,13 @@ Prove that $H$ is a normal subgroup of $G$.
 :::
 
 ::: {.solution}
-<1>1. Conjugates of elements of $H$ remain in $H$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1-1}
+Conjugates of elements of $H$ remain in $H$.
+
+::: pf-proof
 Let
 $$
 g\in G,
@@ -41,12 +46,16 @@ $$
 Thus every conjugate of every element of $H$ lies in $H$.
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{H\trianglelefteq G}.
 $$
-::: {.proof}
-Step <1>1 shows that
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} shows that
 $$
 gHg^{-1}\subseteq H
 $$
@@ -57,8 +66,8 @@ $$
 for every $g\in G$.
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>2 is the required conclusion.
 :::
+
+:::
+
 :::
