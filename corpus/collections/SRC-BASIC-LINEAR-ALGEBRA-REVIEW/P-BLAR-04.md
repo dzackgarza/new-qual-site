@@ -48,12 +48,16 @@ Find the solution or solutions, if they exist, for each system \(Ax=b\):
 :::
 
 ::: {.solution}
-<1>1. In part (a), the unique solution is
+
+::: pf
+
+::: pf-step
+In part (a), the unique solution is
 \[
 \boxed{(x_1,x_2,x_3)=(1,-2,1)}.
 \]
 
-::: {.proof}
+::: pf-proof
 Subtracting the first equation from the second gives
 \[
 2x_2+5x_3=1.
@@ -65,18 +69,24 @@ Multiplying the third equation by \(3\) and the first by \(5\), then subtracting
 Subtracting six times the first of these two equations from the second gives \(x_3=1\). Hence \(x_2=-2\), and the original first equation then gives \(x_1=1\). Each elimination step is reversible, so this is the unique solution.
 :::
 
-<1>2. In part (b), the solution set is \(\boxed{\varnothing}\).
+:::
 
-::: {.proof}
+::: pf-step
+In part (b), the solution set is \(\boxed{\varnothing}\).
+
+::: pf-proof
 The left side of the second equation is twice the left side of the first, whereas its right side is \(2\) rather than \(2\cdot5=10\). Thus the two equations are inconsistent.
 :::
 
-<1>3. In part (c), the solution set is
+:::
+
+::: pf-step
+In part (c), the solution set is
 \[
 \boxed{\left\{s(1,-3,0)+t(0,-2,1):s,t\in\mathbb R\right\}}.
 \]
 
-::: {.proof}
+::: pf-proof
 The second equation is twice the first, so the system is equivalent to
 \[
 3x_1+x_2+2x_3=0.
@@ -84,9 +94,8 @@ The second equation is twice the first, so the system is equivalent to
 Taking \(x_1=s\) and \(x_3=t\) gives \(x_2=-3s-2t\), and every pair \((s,t)\in\mathbb R^2\) produces a solution. This is exactly the displayed set.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>3 determine the solution set in each case.
 :::
+
+:::
+
 :::
