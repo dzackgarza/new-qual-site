@@ -24,14 +24,17 @@ n\geq1,
 a_n\neq0.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #growth-at-infinity}
+One has
 $$
 |p(z)|\longrightarrow\infty
 \qquad
 \text{as }|z|\longrightarrow\infty.
 $$
 
-::: {.proof}
+::: pf-proof
 Factor out the leading term:
 $$
 p(z)
@@ -52,20 +55,26 @@ $$
 $$
 :::
 
-<1>2. If $p$ had no zero in $\mathbb C$, then
+:::
+
+::: {.pf-step #entire-reciprocal}
+If $p$ had no zero in $\mathbb C$, then
 $$
 f(z)\coloneqq\frac1{p(z)}
 $$
 would be an entire function.
 
-::: {.proof}
+::: pf-proof
 Under the stated assumption, the denominator $p(z)$ is nonzero for every $z\in\mathbb C$. Since $p$ is entire, its reciprocal is holomorphic on all of $\mathbb C$.
 :::
 
-<1>3. Under the assumption of step <1>2, the entire function $f=1/p$ is bounded.
+:::
 
-::: {.proof}
-By step <1>1 there is $R>0$ such that
+::: {.pf-step #bounded-reciprocal}
+Under the assumption of [](#entire-reciprocal){.pf-ref}, the entire function $f=1/p$ is bounded.
+
+::: pf-proof
+By [](#growth-at-infinity){.pf-ref} there is $R>0$ such that
 $$
 |p(z)|\geq1
 $$
@@ -86,21 +95,26 @@ $$
 for all $z\in\mathbb C$.
 :::
 
-<1>4. The assumption that $p$ has no complex zero is impossible.
-
-::: {.proof}
-By steps <1>2--<1>3, $f=1/p$ is a bounded entire function. Liouville's theorem therefore implies that $f$ is constant. Hence $p=1/f$ is constant, contradicting $n\geq1$.
 :::
 
-<1>5. Therefore every nonconstant complex polynomial has a complex root.
+::: {.pf-step #contradiction}
+The assumption that $p$ has no complex zero is impossible.
 
-::: {.proof}
-Step <1>4 shows that the contrary assumption leads to a contradiction.
+::: pf-proof
+By [](#entire-reciprocal){.pf-ref} and [](#bounded-reciprocal){.pf-ref}, $f=1/p$ is a bounded entire function. Liouville's theorem therefore implies that $f$ is constant. Hence $p=1/f$ is constant, contradicting $n\geq1$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the Fundamental Theorem of Algebra.
 :::
+
+::: pf-step
+Therefore every nonconstant complex polynomial has a complex root.
+
+::: pf-proof
+[](#contradiction){.pf-ref} shows that the contrary assumption leads to a contradiction.
+:::
+
+:::
+
+:::
+
 :::
