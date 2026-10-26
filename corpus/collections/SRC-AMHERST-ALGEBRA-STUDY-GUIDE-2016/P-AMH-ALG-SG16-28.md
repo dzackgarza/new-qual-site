@@ -21,9 +21,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If the cubic polynomial $f$ is reducible, then $f$ has a root in $k$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1-1}
+If the cubic polynomial $f$ is reducible, then $f$ has a root in $k$.
+
+::: pf-proof
 Since $f$ is reducible, there exist nonconstant polynomials $g,h\in k[x]$ such
 that
 $$
@@ -55,9 +59,12 @@ $$
 Thus $c$ is a root of $f$ in $k$.
 :::
 
-<1>2. If $f$ has a root in $k$, then $f$ is reducible.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+If $f$ has a root in $k$, then $f$ is reducible.
+
+::: pf-proof
 Let $c\in k$ satisfy $f(c)=0$.  Divide $f(x)$ by $x-c$.  The division
 algorithm gives polynomials $q,r\in k[x]$ such that
 $$
@@ -80,18 +87,24 @@ Thus $f$ factors as a product of two nonconstant polynomials of smaller degree,
 so $f$ is reducible.
 :::
 
-<1>3. A cubic polynomial is reducible if and only if it has a root in $k$.
+:::
 
-::: {.proof}
-Step <1>1 proves the forward implication and step <1>2 proves the reverse
+::: {.pf-step #s1-3}
+A cubic polynomial is reducible if and only if it has a root in $k$.
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} proves the forward implication and step [](#s1-2){.pf-ref} proves the reverse
 implication.
 :::
 
-<1>4. Therefore a cubic polynomial $f\in k[x]$ is irreducible if and only if
+:::
+
+::: pf-step
+Therefore a cubic polynomial $f\in k[x]$ is irreducible if and only if
 it has no roots in $k$.
 
-::: {.proof}
-Negating both equivalent conditions in step <1>3 gives
+::: pf-proof
+Negating both equivalent conditions in step [](#s1-3){.pf-ref} gives
 $$
 f\text{ irreducible}
 \iff
@@ -99,9 +112,8 @@ f\text{ has no root in }k.
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required equivalence.
 :::
+
+:::
+
 :::
