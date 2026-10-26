@@ -23,8 +23,13 @@ You may assume without proof that $H\cap K$ is a subgroup.
 :::
 
 ::: {.solution}
-<1>1. The intersection $H\cap K$ is invariant under conjugation by every element of $G$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1-1}
+The intersection $H\cap K$ is invariant under conjugation by every element of $G$.
+
+::: pf-proof
 Let
 $$
 a\in H\cap K
@@ -43,16 +48,20 @@ gag^{-1}\in H\cap K.
 $$
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{H\cap K\trianglelefteq G}.
 $$
-::: {.proof}
-By hypothesis, $H\cap K$ is already a subgroup of $G$. Step <1>1 shows it is invariant under conjugation by every element of $G$, which is exactly normality.
+
+::: pf-proof
+By hypothesis, $H\cap K$ is already a subgroup of $G$. Step [](#s1-1){.pf-ref} shows it is invariant under conjugation by every element of $G$, which is exactly normality.
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>2 is the required conclusion.
 :::
+
+:::
+
 :::
