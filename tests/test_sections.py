@@ -133,7 +133,10 @@ By step [](#s2-2){.pf-ref}.
 def site(tmp_path_factory: pytest.TempPathFactory) -> Path:
     """The claims under test are about the two nested cards, so they are the only
     cards added to the fixtures; one build serves every test in this module."""
-    work = fixture_repo(tmp_path_factory.mktemp("sections"), {"nested.md": NESTED_CARD, "compact-nested.md": COMPACT_NESTED_CARD})
+    work = fixture_repo(
+        tmp_path_factory.mktemp("sections"),
+        {"nested.md": NESTED_CARD, "compact-nested.md": COMPACT_NESTED_CARD},
+    )
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     return work
@@ -145,7 +148,12 @@ def con(site: Path) -> sqlite3.Connection:
 
 
 def test_nested_section_is_indexed(con: sqlite3.Connection) -> None:
-    kinds = [k for (k,) in con.execute("select section_kind from sections where card_id = 'P-NEST1'")]
+    kinds = [
+        k
+        for (k,) in con.execute(
+            "select section_kind from sections where card_id = 'P-NEST1'"
+        )
+    ]
     assert "solution" in kinds, "the enclosing solution should be indexed"
     assert "proof" in kinds, "the proof nested inside it should be indexed too"
 
@@ -159,24 +167,24 @@ def test_nested_section_is_searchable_as_its_own_kind(con: sqlite3.Connection) -
     so that assertion passes while the bug is present. The discriminating question
     is whether the proof reaches the index as a proof.
     """
-    hits = con.execute("select section_kind from search where search match 'Sylow' and card_id = 'P-NEST1'").fetchall()
+    hits = con.execute(
+        "select section_kind from search where search match 'Sylow' and card_id = 'P-NEST1'"
+    ).fetchall()
     assert ("proof",) in hits, "the nested proof must be searchable as a proof"
 
 
 def test_enclosing_section_still_carries_its_own_text(con: sqlite3.Connection) -> None:
     """Recursing must not move the nested text out of its parent, only add a row."""
-    (solution_text,) = con.execute("select text from sections where card_id = 'P-NEST1' and section_kind = 'solution'").fetchone()
+    (solution_text,) = con.execute(
+        "select text from sections where card_id = 'P-NEST1' and section_kind = 'solution'"
+    ).fetchone()
     assert "follows from Sylow" in solution_text
 
 
-def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, con: sqlite3.Connection) -> None:
-    """The corpus's compact proof spelling is normalized before Pandoc reads it.
-
-    A generated proof opener often follows its Lamport step with no intervening
-    blank line, and deeper proof openers are indented by four or eight spaces.
-    Pandoc otherwise reads those as paragraph/code text and the first bare
-    `:::` closes the surrounding solution, exposing everything after it.
-    """
+def test_nested_proof_fences_stay_inside_the_solution(
+    site: Path, con: sqlite3.Connection
+) -> None:
+    """A canonical pf tree renders inside the solution, not beside it."""
     sections = con.execute(
         "select section_kind, text from sections where card_id='P-NEST2' order by ordinal",
     ).fetchall()
@@ -185,15 +193,24 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, co
     # they are nested proof structure within the solution
     solution = next(text for kind, text in sections if kind == "solution")
     assert "This proves the first claim" in solution
-    assert "This proves the first subclaim and must remain hidden with the solution" in solution
+    assert (
+        "This proves the first subclaim and must remain hidden with the solution"
+        in solution
+    )
 
     page = read_html(site / "build" / "quarto" / "_site" / "tag" / "P-NEST2.html")
     disclosures = page.root.find_all("details", **{"class": "reveal qual-solution"})
     assert len(disclosures) == 1
     disclosure_text = " ".join(disclosures[0].text.split())
     assert "This proves the first claim" in disclosure_text
-    assert "This proves the first subclaim and must remain hidden with the solution" in disclosure_text
-    numbers = [node.text.strip() for node in disclosures[0].find_all("span", **{"class": "pf-number"})]
+    assert (
+        "This proves the first subclaim and must remain hidden with the solution"
+        in disclosure_text
+    )
+    numbers = [
+        node.text.strip()
+        for node in disclosures[0].find_all("span", **{"class": "pf-number"})
+    ]
     assert numbers == ["1.", "2.", "2.1.", "2.2. QED", "3. QED"], numbers
     # The filter labels last steps with QED, so the text ends with "QED" not "2.2."
     assert "QED" in disclosure_text
@@ -207,11 +224,15 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, co
         ("The first claim. ::: pf-proof", "fenced-div opener after text"),
     ],
 )
-def test_a_proof_fence_joined_to_its_text_fails_the_check(tmp_path: Path, joined: str, message: str) -> None:
+def test_a_proof_fence_joined_to_its_text_fails_the_check(
+    tmp_path: Path, joined: str, message: str
+) -> None:
     """Pandoc reads a joined opener as paragraph text, so the proof never opens
     and its closer ends the solution instead. A reflow that joins the opener to
     either neighbouring line must fail the check, not render a broken card."""
-    card = COMPACT_NESTED_CARD.replace("::: pf-step\n\nThe first claim.\n\n::: pf-proof", joined, 1)
+    card = COMPACT_NESTED_CARD.replace(
+        "::: pf-step\n\nThe first claim.\n\n::: pf-proof", joined, 1
+    )
     assert card != COMPACT_NESTED_CARD
     result = run_qualc("check", fixture_repo(tmp_path, {"compact-nested.md": card}))
     assert result.returncode != 0

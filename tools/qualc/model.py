@@ -31,7 +31,13 @@ from pydantic import (
 
 from .diagnostics import Diagnostic, DiagnosticCode
 from .lamport import LAMPORT_CLASSES
-from .pandoc_batch import PARALLEL_WORKERS, PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
+from .pandoc_batch import (
+    PARALLEL_WORKERS,
+    PandocBatchError,
+    PandocFailure,
+    PandocServer,
+    read_markdown_parallel,
+)
 from .tex import mark_definienda
 
 
@@ -271,7 +277,12 @@ class CompilationSource(Strict):
 
     def listed_problem_ids(self) -> list[str]:
         if self.sections:
-            return [e.id for section in self.sections for e in section.problems if PROBLEM_ID_RE.match(e.id)]
+            return [
+                e.id
+                for section in self.sections
+                for e in section.problems
+                if PROBLEM_ID_RE.match(e.id)
+            ]
         return [e.id for e in self.problems]
 
 
@@ -502,22 +513,16 @@ NON_SEMANTIC_CLASSES = {"foldopen"}
 KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES | LAMPORT_CLASSES
 
 
-# A large mechanical proof-label conversion in the corpus inserted fenced-div
-# openers immediately after Lamport step lines, without the blank line Markdown
-# needs to start a block.  Pandoc consequently reads `::: {.proof}` as literal
-# paragraph text; the following bare `:::` then closes the surrounding solution,
-# which exposes the rest of that solution and destroys its proof structure.  A
-# second spelling of the same defect indents proof fences to four or eight
-# spaces to show Lamport depth, which makes them Markdown code blocks instead of
-# divs.
-#
-# Canonicalize those two spellings before the Markdown reader sees them.  This
-# is syntax only: the existing opener / closer order determines the same tree,
-# and no prose or mathematical content is moved or inferred.
+# A fence line that Pandoc does not read as a div silently changes the tree:
+# an opener joined to preceding text is paragraph text, and the next bare `:::`
+# closes the enclosing div instead.  An opener indented four or more spaces is
+# a code block for the same reason.  Both spellings are rejected rather than
+# rewritten: the authored source owns its fence lines.
 _FENCED_DIV_LINE = re.compile(r"^(?P<indent>[ \t]*)(?P<fence>:{3,})(?P<rest>.*)$")
-_LAMPORT_INDENTED_MARKER = re.compile(r"^[ \t]+<[123]>")
-# An opener after text on the same line, as in `<1>6. Claim. ::: {.proof} Let`.
-_JOINED_FENCED_DIV = re.compile(r"\S[ \t]+:{3,}[ \t]*\{")
+_MIDLINE_FENCE = re.compile(r":{3,}")
+# A fence may sit inside a block quote or a list item; the container marker is
+# not prose before the fence.
+_CONTAINER_PREFIX = re.compile(r"^(?:[ \t]*(?:>[ \t]?|[-*+][ \t]+|\d+[.)][ \t]+))+")
 
 
 @dataclass
@@ -566,82 +571,59 @@ def _fenced_div_opening(line: str, number: int) -> tuple[int, int, str] | None:
     if not rest:
         return None
     if rest[_attributes_end(rest) :].strip().strip(":").strip():
-        raise ValueError(f"text after the fenced-div attributes on line {number}; start the text on the next line")
+        raise ValueError(
+            f"text after the fenced-div attributes on line {number}; start the text on the next line"
+        )
 
     indent = len(match.group("indent").expandtabs(4))
     return indent, len(match.group("fence")), rest
 
 
-def normalize_fenced_divs(markdown: str, first_line: int) -> str:
-    """Canonicalize the corpus's nested fenced-div spelling for Pandoc.
+def validate_fenced_divs(markdown: str, first_line: int) -> None:
+    """Reject fence lines Pandoc does not read as divs.
 
-    The source order is authoritative.  An opener pushes and a bare colon line
-    pops, so balancing can be checked without interpreting any mathematics.
-    Once paired, proof fences are separated from the preceding paragraph,
-    indented fence bodies are moved out of Markdown's code-block column, and
-    indented Lamport markers are likewise restored as ordinary proof steps.
-    Unbalanced source is rejected rather than guessed at. Errors name file
-    lines: `first_line` is the file line on which `markdown` starts.
+    An opener must start at column 0, and it must stand on its own line. A
+    mid-line `:::` outside a code span, an opener indented four or more spaces,
+    and an opener followed by text are errors: Pandoc reads each as paragraph
+    or code text, so the next bare `:::` closes the enclosing div instead.
+    Balancing uses only opener/closer order; no mathematics is interpreted.
+    Errors name file lines: `first_line` is the file line on which `markdown`
+    starts.
     """
-    lines = markdown.splitlines()
     stack: list[_FencedDivNode] = []
-    starts: dict[int, _FencedDivNode] = {}
-    ends: dict[int, _FencedDivNode] = {}
 
-    for index, line in enumerate(lines):
-        if _JOINED_FENCED_DIV.search(line):
-            raise ValueError(f"fenced-div opener after text on line {index + first_line}; put the opener on its own line")
-        opening = _fenced_div_opening(line, index + first_line)
-        if opening is not None:
-            indent, width, rest = opening
-            node = _FencedDivNode(index, indent, width, rest)
-            starts[index] = node
-            stack.append(node)
+    for index, line in enumerate(markdown.splitlines()):
+        number = index + first_line
+        prefix = _CONTAINER_PREFIX.match(line)
+        content = line[prefix.end() :] if prefix else line
+        match = _FENCED_DIV_LINE.match(content)
+        if match is not None:
+            indent = len(match.group("indent").expandtabs(4))
+            if indent > 3:
+                raise ValueError(
+                    f"indented fenced div on line {number}; a fence must start at column 0"
+                )
+            opening = _fenced_div_opening(content, number)
+            if opening is not None:
+                _, width, rest = opening
+                stack.append(_FencedDivNode(index, indent, width, rest))
+                continue
+            if not stack:
+                raise ValueError(f"unmatched fenced-div closer on line {number}")
+            stack.pop()
             continue
 
-        match = _FENCED_DIV_LINE.match(line)
-        if match is not None and not match.group("rest").strip():
-            if not stack:
-                raise ValueError(f"unmatched fenced-div closer on line {index + first_line}")
-            node = stack.pop()
-            node.end = index
-            ends[index] = node
+        for fence in _MIDLINE_FENCE.finditer(content):
+            if content[: fence.start()].count("`") % 2 == 0:
+                raise ValueError(
+                    f"fenced-div opener after text on line {number}; put the opener on its own line"
+                )
 
     if stack:
         node = stack[-1]
-        raise ValueError(f"unclosed fenced div `{node.rest}` opened on line {node.start + first_line}")
-
-    output: list[str] = []
-    active: list[_FencedDivNode] = []
-    for index, source_line in enumerate(lines):
-        if index in starts:
-            node = starts[index]
-            if output and output[-1]:
-                output.append("")
-            output.append(":" * node.width + " " + node.rest)
-            active.append(node)
-            continue
-
-        if index in ends:
-            node = ends[index]
-            output.append(":" * node.width)
-            if not active or active[-1] is not node:
-                raise ValueError(f"internal fenced-div pairing error on line {index + first_line}")
-            active.pop()
-            continue
-
-        line = source_line
-        if active and active[-1].indent:
-            expanded = line.expandtabs(4)
-            indent = active[-1].indent
-            if expanded.startswith(" " * indent):
-                line = expanded[indent:]
-        if active and _LAMPORT_INDENTED_MARKER.match(line):
-            line = line.lstrip()
-        output.append(line)
-
-    suffix = "\n" if markdown.endswith("\n") else ""
-    return "\n".join(output) + suffix
+        raise ValueError(
+            f"unclosed fenced div `{node.rest}` opened on line {node.start + first_line}"
+        )
 
 
 class ParsedCard(Strict):
@@ -729,13 +711,16 @@ def to_ast(markdown: str) -> str:
     the generated LaTeX holds a duplicate definition. I called it benign without
     reading it.
     """
-    normalized = mark_definienda(normalize_fenced_divs(markdown, 1))
+    validate_fenced_divs(markdown, 1)
+    normalized = mark_definienda(markdown)
     with PandocServer() as pandoc:
         result = pandoc.read_markdown([normalized], MARKDOWN)[0]
     match result:
         case PandocFailure(error=error):
             raise PandocBatchError(error)
-    warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
+    warnings = [
+        message.message for message in result.messages if message.verbosity == "WARNING"
+    ]
     if warnings:
         raise ValueError("\n".join(warnings))
     return result.output
@@ -805,7 +790,10 @@ def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     caption = pf.stringify(element.caption).strip()
     if not caption:
         return element
-    repeats_target = any(caption == PurePosixPath(url).stem or caption == url for url in _figure_targets(element))
+    repeats_target = any(
+        caption == PurePosixPath(url).stem or caption == url
+        for url in _figure_targets(element)
+    )
     if FILE_CAPTION.search(caption) or repeats_target:
         element.caption = pf.Caption()
     return element
@@ -820,17 +808,23 @@ class _UniqueKeyLoader(yaml.SafeLoader):
     """
 
 
-def _construct_unique_map(loader: yaml.SafeLoader, node: yaml.MappingNode) -> Iterator[dict]:
+def _construct_unique_map(
+    loader: yaml.SafeLoader, node: yaml.MappingNode
+) -> Iterator[dict]:
     seen: set[object] = set()
     for key_node, _ in node.value:
         key = loader.construct_object(key_node)
         if key in seen:
-            raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
+            raise yaml.constructor.ConstructorError(
+                None, None, f"duplicate key {key!r}", key_node.start_mark
+            )
         seen.add(key)
     yield from yaml.constructor.SafeConstructor.construct_yaml_map(loader, node)
 
 
-_UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_unique_map)
+_UniqueKeyLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_unique_map
+)
 
 
 def load_front_matter(text: str) -> object:
@@ -839,7 +833,9 @@ def load_front_matter(text: str) -> object:
 
 
 # Pandoc's YAML metadata block: both delimiters stand on lines of their own.
-FRONT_MATTER = re.compile(r"\A---\n(?P<front>.*?)^---\n(?P<body>.*)\Z", re.DOTALL | re.MULTILINE)
+FRONT_MATTER = re.compile(
+    r"\A---\n(?P<front>.*?)^---\n(?P<body>.*)\Z", re.DOTALL | re.MULTILINE
+)
 # Extractor output that is never authored text. An extractor writes NUL where a
 # PDF glyph failed to map, so a statement renders with its sigma missing; and it
 # writes `w<sub>j</sub>` where the PDF set a subscript, which the page shows as
@@ -862,7 +858,9 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     reject_extraction_residue(text, path)
     match = FRONT_MATTER.match(text)
     if match is None:
-        raise ValueError(f"{path}: card must start with a YAML front matter block closed by a --- line")
+        raise ValueError(
+            f"{path}: card must start with a YAML front matter block closed by a --- line"
+        )
     meta = load_front_matter(match["front"])
     body = match["body"]
     if not isinstance(meta, dict):
@@ -908,11 +906,8 @@ def _prepare_card_source(path: Path) -> PreparedCardSource | CardSourceDiagnosti
     try:
         source = path.read_text()
         meta, body = split_front_matter(source, path)
-        return PreparedCardSource(
-            path=path,
-            metadata=meta,
-            body=mark_definienda(normalize_fenced_divs(body, source[: len(source) - len(body)].count("\n") + 1)),
-        )
+        validate_fenced_divs(body, source[: len(source) - len(body)].count("\n") + 1)
+        return PreparedCardSource(path=path, metadata=meta, body=mark_definienda(body))
     except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
         return CardSourceDiagnostic(path=path, message=str(exc))
 
@@ -977,29 +972,51 @@ def parse_cards_with(
     errors: list[Diagnostic] = []
     if len(paths) >= 1_000:
         with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
-            source_results = list(executor.map(_prepare_card_source, paths, chunksize=64))
+            source_results = list(
+                executor.map(_prepare_card_source, paths, chunksize=64)
+            )
     else:
         source_results = [_prepare_card_source(path) for path in paths]
     for source in source_results:
         if isinstance(source, CardSourceDiagnostic):
-            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), source.message))
+            errors.append(
+                Diagnostic(
+                    DiagnosticCode.CARD_UNREADABLE, str(source.path), source.message
+                )
+            )
             continue
         try:
             card: Card = adapter.validate_python(source.metadata)
             prepared.append((source.path, card, source.body))
         except (TypeError, ValueError) as exc:
-            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), str(exc)))
+            errors.append(
+                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), str(exc))
+            )
 
     bodies = [body for _, _, body in prepared]
-    results = read_markdown_parallel(bodies, MARKDOWN) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN)
+    results = (
+        read_markdown_parallel(bodies, MARKDOWN)
+        if len(bodies) >= 1_000
+        else pandoc.read_markdown(bodies, MARKDOWN)
+    )
     processable: list[tuple[Path, Card, str]] = []
     for (path, card, _), result in zip(prepared, results, strict=True):
         if isinstance(result, PandocFailure):
-            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))
+            errors.append(
+                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error)
+            )
             continue
-        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
+        warnings = [
+            message.message
+            for message in result.messages
+            if message.verbosity == "WARNING"
+        ]
         if warnings:
-            errors.append(Diagnostic(DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)))
+            errors.append(
+                Diagnostic(
+                    DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)
+                )
+            )
             continue
         padded = unread_math(result.output, path)
         if padded:
