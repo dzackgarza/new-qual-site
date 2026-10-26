@@ -42,6 +42,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Fix an integer $n\geq1$ and set
 $$
 r\coloneqq\frac{n}{n+1}.
@@ -164,6 +166,8 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
