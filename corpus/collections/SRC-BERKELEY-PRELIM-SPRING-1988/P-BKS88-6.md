@@ -27,9 +27,12 @@ if and only if $n$ is even.
 :::
 
 ::: {.solution}
-<1>1. If a real $n\times n$ matrix $A$ satisfies $A^2+2A+5I=0$, then $n$ is even.
+::: pf
 
-::: {.proof}
+::: pf-step
+If a real $n\times n$ matrix $A$ satisfies $A^2+2A+5I=0$, then $n$ is even.
+
+::: pf-proof
 The equation is equivalent to
 \[
 (A+I)^2=-4I.
@@ -41,9 +44,12 @@ Taking determinants gives
 The left-hand side is the square of a real number and is nonzero because the right-hand side is nonzero. Hence it is positive. Therefore $(-4)^n>0$, which is possible only when $n$ is even.
 :::
 
-<1>2. For every even $n$, there is a real $n\times n$ matrix satisfying $A^2+2A+5I=0$.
+:::
 
-::: {.proof}
+::: pf-step
+For every even $n$, there is a real $n\times n$ matrix satisfying $A^2+2A+5I=0$.
+
+::: pf-proof
 Write $n=2m$ and let
 \[
 J_0:=
@@ -68,9 +74,8 @@ A^2+2A+5I_n=0.
 \]
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves necessity and step <1>2 proves sufficiency.
 :::
+
+:::
+
 :::
