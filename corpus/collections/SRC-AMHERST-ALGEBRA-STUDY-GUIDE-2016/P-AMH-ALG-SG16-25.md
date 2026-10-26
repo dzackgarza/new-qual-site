@@ -24,9 +24,13 @@ If $I\subsetneq J$, prove that $1\in J$.
 :::
 
 ::: {.solution}
-<1>1. There exists $r\in J$ such that the coset $I+r$ is nonzero in $R/I$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1-1}
+There exists $r\in J$ such that the coset $I+r$ is nonzero in $R/I$.
+
+::: pf-proof
 Because $I\subsetneq J$, choose
 $$
 r\in J\setminus I.
@@ -38,13 +42,16 @@ $$
 so $I+r$ is nonzero.
 :::
 
-<1>2. There exists $s\in R$ such that
+:::
+
+::: {.pf-step #s1-2}
+There exists $s\in R$ such that
 $$
 I+rs=I+1.
 $$
 
-::: {.proof}
-By hypothesis, $R/I$ is a field.  The nonzero element $I+r$ from step <1>1
+::: pf-proof
+By hypothesis, $R/I$ is a field.  The nonzero element $I+r$ from step [](#s1-1){.pf-ref}
 therefore has a multiplicative inverse.  Write that inverse as $I+s$ for some
 $s\in R$.  Then
 $$
@@ -56,42 +63,50 @@ I+rs=I+1.
 $$
 :::
 
-<1>3. One has $1-rs\in J$.
+:::
 
-::: {.proof}
-The coset equality in step <1>2 is equivalent to
+::: {.pf-step #s1-3}
+One has $1-rs\in J$.
+
+::: pf-proof
+The coset equality in step [](#s1-2){.pf-ref} is equivalent to
 $$
 1-rs\in I.
 $$
 Since $I\subseteq J$, it follows that $1-rs\in J$.
 :::
 
-<1>4. One has $rs\in J$.
+:::
 
-::: {.proof}
-By step <1>1, $r\in J$.  Since $J$ is an ideal and $s\in R$, the absorption
+::: {.pf-step #s1-4}
+One has $rs\in J$.
+
+::: pf-proof
+By step [](#s1-1){.pf-ref}, $r\in J$.  Since $J$ is an ideal and $s\in R$, the absorption
 property gives
 $$
 rs\in J.
 $$
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{1\in J}.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4, both $1-rs$ and $rs$ belong to $J$.  Since $J$ is
+::: pf-proof
+By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, both $1-rs$ and $rs$ belong to $J$.  Since $J$ is
 closed under addition,
 $$
 1=(1-rs)+rs\in J.
 $$
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+:::
+
 :::
