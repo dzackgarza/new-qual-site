@@ -23,8 +23,13 @@ Prove that $x^{42}\in N$ for every $x\in G$.
 :::
 
 ::: {.solution}
-<1>1. The quotient group $G/N$ has order $42$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The quotient group $G/N$ has order $42$.
+
+::: pf-proof
 Since $N\trianglelefteq G$ and
 $$
 [G:N]=42,
@@ -35,12 +40,16 @@ $$
 $$
 :::
 
-<1>2. For every $x\in G$,
+:::
+
+::: {.pf-step #s1-2}
+For every $x\in G$,
 $$
 (xN)^{42}=N
 $$
 in $G/N$.
-::: {.proof}
+
+::: pf-proof
 By Lagrange's theorem, the order of the element $xN\in G/N$ divides
 $$
 |G/N|=42.
@@ -48,25 +57,29 @@ $$
 Hence its $42$-nd power is the identity coset $N$.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{x^{42}\in N}
 $$
 for every $x\in G$.
-::: {.proof}
+
+::: pf-proof
 By the quotient-group multiplication law,
 $$
 (xN)^{42}=x^{42}N.
 $$
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 x^{42}N=N,
 $$
 which is equivalent to $x^{42}\in N$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+:::
+
 :::
