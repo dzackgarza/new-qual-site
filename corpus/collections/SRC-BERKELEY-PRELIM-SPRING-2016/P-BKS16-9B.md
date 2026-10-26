@@ -31,6 +31,8 @@ audit:
 Let $p$ be a prime number. Prove that every group $G$ of order $p^2$ is commutative.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ By step [](#s1-1){.pf-ref}, the center has order $p$ or $p^2$. The case $p^2$ is
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
