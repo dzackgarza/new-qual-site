@@ -24,6 +24,8 @@ $$
 Your final answer should not involve complex numbers.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -111,6 +113,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required real-valued expression.
+
+:::
 
 :::
 
