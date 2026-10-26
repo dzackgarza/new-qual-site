@@ -35,6 +35,8 @@ Let $L$ be a linear operator on a nonzero vector space $V$ over a field $K$, and
 (b) If $P$ splits completely over $K$, show that some root of $P$ is an eigenvalue of $L$.
 :::
 
+::: {.solution}
+
 Write
 $$
 P(x)=\sum_{i=0}^{d}a_i x^i
@@ -161,6 +163,8 @@ Thus $\lambda_{k+1}$ is an eigenvalue. It is also a root of $P$ by the factoriza
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
