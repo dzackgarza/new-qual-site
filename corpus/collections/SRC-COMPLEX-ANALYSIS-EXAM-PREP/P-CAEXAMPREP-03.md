@@ -20,6 +20,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 f(z)=\frac{z^2}{1+z^4}.
@@ -134,6 +136,8 @@ Let \(R\to\infty\). Step [](#s1-1){.pf-ref} identifies the limit of the real-axi
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required evaluation.
+
+:::
 
 :::
 
