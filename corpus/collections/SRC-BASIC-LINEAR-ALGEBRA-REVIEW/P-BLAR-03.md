@@ -36,27 +36,36 @@ Find the determinant of each matrix:
 ::: {.solution}
 For the matrices in parts (a)--(d), write \(A,B,C,D\), respectively.
 
-<1>1. \(\det A=\boxed{-1}\).
+::: pf
 
-::: {.proof}
+::: pf-step
+\(\det A=\boxed{-1}\).
+
+::: pf-proof
 By the \(2\times2\) determinant formula,
 \[
 \det A=5\cdot1-2\cdot3=-1.
 \]
 :::
 
-<1>2. \(\det B=\boxed{-54}\).
+:::
 
-::: {.proof}
+::: pf-step
+\(\det B=\boxed{-54}\).
+
+::: pf-proof
 The matrix \(B\) is upper triangular, so its determinant is the product of its diagonal entries:
 \[
 \det B=6\cdot3\cdot(-3)=-54.
 \]
 :::
 
-<1>3. \(\det C=\boxed{0}\).
+:::
 
-::: {.proof}
+::: pf-step
+\(\det C=\boxed{0}\).
+
+::: pf-proof
 Expanding along the first row gives
 \[
 \begin{aligned}
@@ -69,9 +78,12 @@ Expanding along the first row gives
 \]
 :::
 
-<1>4. \(\det D=\boxed{2}\).
+:::
 
-::: {.proof}
+::: pf-step
+\(\det D=\boxed{2}\).
+
+::: pf-proof
 Expanding along the second row gives
 \[
 \begin{aligned}
@@ -84,9 +96,8 @@ Expanding along the second row gives
 \]
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 give the determinant in each of the four cases.
 :::
+
+:::
+
 :::
