@@ -35,6 +35,8 @@ $$
 is surjective but not injective.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ while $(0,1,2)\neq(1,0,2)$. Hence $F$ is not injective.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves surjectivity and step [](#s1-3){.pf-ref} proves failure of injectivity.
+
+:::
 
 :::
 
