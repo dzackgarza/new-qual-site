@@ -34,6 +34,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Define
 $$
 g(z)=
@@ -45,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $g$ is analytic on the unit disk.
 
@@ -115,6 +117,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
