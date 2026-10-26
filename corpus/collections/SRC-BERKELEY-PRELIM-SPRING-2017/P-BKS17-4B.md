@@ -37,6 +37,8 @@ $$
 for $1 \leq j \leq n$.
 :::
 
+::: {.solution}
+
 For $1\leq j\leq n$, define
 $$
 L_j(z)
@@ -110,6 +112,8 @@ for every $j$. Then $R\coloneqq P-Q$ has degree at most $n-1$ and has the $n$ di
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves existence and step [](#s1-3){.pf-ref} proves uniqueness.
+
+:::
 
 :::
 
