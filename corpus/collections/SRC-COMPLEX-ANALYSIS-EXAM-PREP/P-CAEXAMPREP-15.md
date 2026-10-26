@@ -21,6 +21,8 @@ A=\{z:\operatorname{Im}z>0,\ |z|>1\}.
 Find the flow around the upper half of the unit circle when the velocity is parallel to the $x$-axis and is $\alpha$ at infinity.
 :::
 
+::: {.solution}
+
 Write $z=re^{i\theta}$ with $r>1$ and $0<\theta<\pi$, and let
 $$
 J(z)=z+\frac1z.
@@ -138,6 +140,8 @@ the real and imaginary parts of the potential in step [](#s1-2){.pf-ref} are exa
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required flow.
+
+:::
 
 :::
 
