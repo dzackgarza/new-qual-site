@@ -24,6 +24,8 @@ $$
 is irreducible over $\QQ$.
 :::
 
+::: {.solution}
+
 Let
 $$
 f(x)\coloneqq x^4+x+2021\in\mathbb Z[x].
@@ -31,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Modulo $2$,
 $$
@@ -163,6 +165,8 @@ The polynomial $f$ is primitive. Since its reduction modulo $2$ is irreducible b
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
