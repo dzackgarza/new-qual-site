@@ -35,6 +35,8 @@ YX=aXY.
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -143,6 +145,8 @@ Step [](#s1-1){.pf-ref} proves the reverse implication, and steps [](#s1-2){.pf-
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is exactly the asserted equivalence.
+
+:::
 
 :::
 
