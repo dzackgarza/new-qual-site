@@ -31,6 +31,8 @@ audit:
 Write all values of $i^i$ in the form $a + bi$.
 :::
 
+::: {.solution}
+
 For $k\in\mathbb Z$, set
 $$
 L_k\coloneqq i\left(\frac{\pi}{2}+2\pi k\right).
@@ -99,6 +101,8 @@ Each value is a positive real number, giving the displayed form $a+bi$ with $b=0
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} lists every value and no others.
+
+:::
 
 :::
 
