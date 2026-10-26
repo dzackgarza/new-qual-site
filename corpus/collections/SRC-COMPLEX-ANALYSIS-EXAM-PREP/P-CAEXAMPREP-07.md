@@ -22,6 +22,8 @@ z+e^{-z}=2.
 Hint: use a contour in the right half-plane bounded by a large semicircle and a vertical line $\operatorname{Re}z=\varepsilon$, with $R>3$ and $\varepsilon>0$ small, so in particular the ball of radius $1$ centered at $2$ lies inside the contour.
 :::
 
+::: {.solution}
+
 Set
 \[
 f(z)=z+e^{-z}-2,
@@ -131,6 +133,8 @@ Such a point exists by step [](#s1-3){.pf-ref} and is unique by step [](#s1-4){.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
