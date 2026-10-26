@@ -26,7 +26,10 @@ V=\begin{pmatrix}
 :::
 
 ::: {.solution}
-<1>1. If
+::: pf
+
+::: {.pf-step #kernel-polynomial}
+If
 $$
 Vc=0,
 \qquad
@@ -43,7 +46,7 @@ p(a_i)=0
 $$
 for every $i=0,\ldots,n$.
 
-::: {.proof}
+::: pf-proof
 The $i$-th row of the equation $Vc=0$ is
 $$
 c_0+c_1a_i+c_2a_i^2+\cdots+c_na_i^n=0,
@@ -51,13 +54,16 @@ $$
 which is exactly $p(a_i)=0$.
 :::
 
-<1>2. If the numbers $a_0,\ldots,a_n$ are distinct, then
+:::
+
+::: {.pf-step #trivial-kernel}
+If the numbers $a_0,\ldots,a_n$ are distinct, then
 $$
 \ker V=\{0\}.
 $$
 
-::: {.proof}
-Let $c\in\ker V$ and define $p$ as in step <1>1. Then $p$ has the $n+1$ distinct roots
+::: pf-proof
+Let $c\in\ker V$ and define $p$ as in [](#kernel-polynomial){.pf-ref}. Then $p$ has the $n+1$ distinct roots
 $$
 a_0,\ldots,a_n.
 $$
@@ -67,16 +73,22 @@ c_0=\cdots=c_n=0.
 $$
 :::
 
-<1>3. Under the distinctness hypothesis,
+:::
+
+::: {.pf-step #vandermonde-invertible}
+Under the distinctness hypothesis,
 $$
 \boxed{V\text{ is invertible}}.
 $$
 
-::: {.proof}
-The matrix $V$ is square of size $n+1$. Step <1>2 shows that the associated linear map has trivial kernel, hence is injective. A linear endomorphism of a finite-dimensional vector space is injective if and only if it is invertible.
+::: pf-proof
+The matrix $V$ is square of size $n+1$. [](#trivial-kernel){.pf-ref} shows that the associated linear map has trivial kernel, hence is injective. A linear endomorphism of a finite-dimensional vector space is injective if and only if it is invertible.
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #evaluation-map}
+Let
 $$
 \mathcal P_n
 \coloneqq
@@ -94,7 +106,7 @@ $$
 $$
 of $\mathcal P_n$.
 
-::: {.proof}
+::: pf-proof
 If
 $$
 f(x)=c_0+c_1x+\cdots+c_nx^n,
@@ -114,7 +126,10 @@ $$
 This is exactly the matrix representation of $E$ in the stated bases.
 :::
 
-<1>5. For every
+:::
+
+::: pf-step
+For every
 $$
 (b_0,\ldots,b_n)\in\mathbb C^{n+1},
 $$
@@ -125,17 +140,16 @@ f(a_i)=b_i
 (0\leq i\leq n).
 $$
 
-::: {.proof}
-By step <1>3, the matrix $V$ is invertible, so the linear map $E$ in step <1>4 is bijective. Hence the vector
+::: pf-proof
+By [](#vandermonde-invertible){.pf-ref}, the matrix $V$ is invertible, so the linear map $E$ in [](#evaluation-map){.pf-ref} is bijective. Hence the vector
 $$
 (b_0,\ldots,b_n)
 $$
 has exactly one preimage $f\in\mathcal P_n$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part 1, and step <1>5 proves part 2.
 :::
+
+:::
+
 :::
