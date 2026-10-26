@@ -26,9 +26,12 @@ L_c\coloneqq\lim_{x\to c}f(x),
 $$
 where at an endpoint the limit is taken relative to $[a,b]$.
 
-<1>1. The function $f$ is bounded on $[a,b]$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #boundedness}
+The function $f$ is bounded on $[a,b]$.
+
+::: pf-proof
 For every $c\in[a,b]$, choose $\delta_c>0$ such that
 $$
 0<|x-c|<\delta_c
@@ -56,7 +59,10 @@ $$
 for all $x\in[a,b]$.
 :::
 
-<1>2. Let $\eta>0$. If $a<b$, there is a finite open cover
+:::
+
+::: {.pf-step #finite-cover}
+Let $\eta>0$. If $a<b$, there is a finite open cover
 $$
 U_1,\ldots,U_m
 $$
@@ -68,7 +74,7 @@ x,y\in U_i\setminus\{c_i\}
 \frac{\eta}{2(b-a)}.
 $$
 
-::: {.proof}
+::: pf-proof
 For each $c\in[a,b]$, choose $\delta_c>0$ so that
 $$
 0<|x-c|<\delta_c
@@ -92,13 +98,16 @@ $$
 Compactness supplies a finite subcover; rename its members $U_1,\ldots,U_m$ and their centers $c_1,\ldots,c_m$.
 :::
 
-<1>3. There is a partition $P$ of $[a,b]$ for which the total length of all subintervals of $P$ containing at least one of the points $c_1,\ldots,c_m$ is less than
+:::
+
+::: {.pf-step #partition}
+There is a partition $P$ of $[a,b]$ for which the total length of all subintervals of $P$ containing at least one of the points $c_1,\ldots,c_m$ is less than
 $$
 \frac{\eta}{4M}.
 $$
 
-::: {.proof}
-Let $\lambda>0$ be a Lebesgue number for the finite cover from step <1>2. Choose a partition $P$ whose mesh $h$ satisfies
+::: pf-proof
+Let $\lambda>0$ be a Lebesgue number for the finite cover from [](#finite-cover){.pf-ref}. Choose a partition $P$ whose mesh $h$ satisfies
 $$
 h<\lambda
 \qquad\text{and}\qquad
@@ -112,15 +121,18 @@ $$
 $$
 :::
 
-<1>4. For the partition $P$ from step <1>3,
+:::
+
+::: {.pf-step #darboux-gap}
+For the partition $P$ from [](#partition){.pf-ref},
 $$
 U(f,P)-L(f,P)<\eta.
 $$
 
-::: {.proof}
+::: pf-proof
 Call a subinterval of $P$ bad if it contains one of the distinguished points $c_i$, and good otherwise.
 
-On any bad interval, step <1>1 gives oscillation at most $2M$. By step <1>3, the total contribution of all bad intervals to
+On any bad interval, [](#boundedness){.pf-ref} gives oscillation at most $2M$. By [](#partition){.pf-ref}, the total contribution of all bad intervals to
 $$
 U(f,P)-L(f,P)
 $$
@@ -131,26 +143,28 @@ $$
 \frac{\eta}{2}.
 $$
 
-Now let $J$ be a good interval. Its length is less than the Lebesgue number $\lambda$, so $J\subseteq U_i$ for some $i$. Since $J$ contains no distinguished point, in particular $c_i\notin J$. Step <1>2 therefore shows that the oscillation of $f$ on $J$ is less than
+Now let $J$ be a good interval. Its length is less than the Lebesgue number $\lambda$, so $J\subseteq U_i$ for some $i$. Since $J$ contains no distinguished point, in particular $c_i\notin J$. [](#finite-cover){.pf-ref} therefore shows that the oscillation of $f$ on $J$ is less than
 $$
 \frac{\eta}{2(b-a)}.
 $$
 The total length of all good intervals is at most $b-a$, so their total contribution is less than $\eta/2$. Adding the two contributions gives the claim.
 :::
 
-<1>5. The function $f$ is Riemann integrable on $[a,b]$.
+:::
 
-::: {.proof}
-If $a=b$, the assertion is immediate. Assume $a<b$. Step <1>1 gives boundedness, and step <1>4 shows that for every $\eta>0$ there is a partition $P$ with
+::: pf-step
+The function $f$ is Riemann integrable on $[a,b]$.
+
+::: pf-proof
+If $a=b$, the assertion is immediate. Assume $a<b$. [](#boundedness){.pf-ref} gives boundedness, and [](#darboux-gap){.pf-ref} shows that for every $\eta>0$ there is a partition $P$ with
 $$
 U(f,P)-L(f,P)<\eta.
 $$
 By the Darboux criterion, $f$ is Riemann integrable.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the assertion.
 :::
+
+:::
+
 :::
