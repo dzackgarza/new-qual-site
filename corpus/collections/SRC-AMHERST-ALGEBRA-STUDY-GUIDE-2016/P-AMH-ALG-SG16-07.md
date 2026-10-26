@@ -26,16 +26,25 @@ Prove that $NH$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
-<1>1. The set $NH$ is nonempty.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1-1}
+The set $NH$ is nonempty.
+
+::: pf-proof
 Since $e\in N$ and $e\in H$,
 $$
 e=ee\in NH.
 $$
 :::
 
-<1>2. The set $NH$ is closed under products.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-2}
+The set $NH$ is closed under products.
+
+::: pf-proof
 Take
 $$
 x=n_1h_1,
@@ -65,8 +74,12 @@ $$
 so $xy\in NH$.
 :::
 
-<1>3. The set $NH$ is closed under inverses.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-3}
+The set $NH$ is closed under inverses.
+
+::: pf-proof
 Let
 $$
 x=nh\in NH
@@ -84,16 +97,20 @@ $$
 and $h^{-1}\in H$. Hence $x^{-1}\in NH$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{NH\le G}.
 $$
-::: {.proof}
-Step <1>1 gives nonemptiness, step <1>2 gives closure under products, and step <1>3 gives closure under inverses. Hence $NH$ is a subgroup of $G$.
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} gives nonemptiness, step [](#s1-2){.pf-ref} gives closure under products, and step [](#s1-3){.pf-ref} gives closure under inverses. Hence $NH$ is a subgroup of $G$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+:::
+
 :::
