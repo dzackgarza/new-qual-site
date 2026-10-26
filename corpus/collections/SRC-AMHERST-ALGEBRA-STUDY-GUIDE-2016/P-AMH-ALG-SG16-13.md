@@ -26,11 +26,15 @@ audit:
 ::: {.solution}
 Use the convention that the rightmost cycle acts first.
 
-<1>1. The disjoint-cycle decomposition is
+::: pf
+
+::: {.pf-step #s1-1}
+The disjoint-cycle decomposition is
 $$
 \boxed{\sigma=(1\ 3)(2\ 6\ 4)}.
 $$
-::: {.proof}
+
+::: pf-proof
 Compute the images under
 $$
 \sigma=(4\ 2\ 1)(6\ 1\ 3\ 2).
@@ -51,12 +55,16 @@ $$
 $$
 :::
 
-<1>2. The order of $\sigma$ is
+:::
+
+::: pf-step
+The order of $\sigma$ is
 $$
 \boxed{6}.
 $$
-::: {.proof}
-Disjoint cycles commute, and the order of a product of disjoint cycles is the least common multiple of their lengths. By step <1>1,
+
+::: pf-proof
+Disjoint cycles commute, and the order of a product of disjoint cycles is the least common multiple of their lengths. By step [](#s1-1){.pf-ref},
 $$
 \operatorname{ord}(\sigma)
 =\operatorname{lcm}(2,3)
@@ -64,13 +72,17 @@ $$
 $$
 :::
 
-<1>3. The permutation $\sigma$ is odd.
-::: {.proof}
-A $2$-cycle is odd, while a $3$-cycle is even because it is a product of two transpositions. By step <1>1, $\sigma$ is the product of one odd permutation and one even permutation, hence is odd.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+::: pf-step
+The permutation $\sigma$ is odd.
+
+::: pf-proof
+A $2$-cycle is odd, while a $3$-cycle is even because it is a product of two transpositions. By step [](#s1-1){.pf-ref}, $\sigma$ is the product of one odd permutation and one even permutation, hence is odd.
 :::
+
+:::
+
+:::
+
 :::
