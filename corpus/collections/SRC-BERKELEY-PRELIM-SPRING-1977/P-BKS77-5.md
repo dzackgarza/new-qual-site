@@ -16,18 +16,24 @@ Show that $a+b$ is algebraic over $F$.
 :::
 
 ::: {.solution}
-<1>1. The extension $F(a)/F$ is finite.
+::: pf
 
-::: {.proof}
+::: {.pf-step #first-finite-extension}
+The extension $F(a)/F$ is finite.
+
+::: pf-proof
 Since $a$ is algebraic over $F$, its minimal polynomial over $F$ has finite degree. Therefore
 $$
 [F(a):F]<\infty.
 $$
 :::
 
-<1>2. The element $b$ is algebraic over $F(a)$.
+:::
 
-::: {.proof}
+::: {.pf-step #algebraic-over-intermediate-field}
+The element $b$ is algebraic over $F(a)$.
+
+::: pf-proof
 Because $b$ is algebraic over $F$, there is a nonzero polynomial
 $$
 p(x)\in F[x]
@@ -39,14 +45,17 @@ $$
 the same polynomial shows that $b$ is algebraic over $F(a)$.
 :::
 
-<1>3. The extension $F(a,b)/F$ is finite.
+:::
 
-::: {.proof}
-By step <1>2,
+::: {.pf-step #composite-finite-extension}
+The extension $F(a,b)/F$ is finite.
+
+::: pf-proof
+By [](#algebraic-over-intermediate-field){.pf-ref},
 $$
 [F(a,b):F(a)]<\infty.
 $$
-Together with step <1>1, the tower law gives
+Together with [](#first-finite-extension){.pf-ref}, the tower law gives
 $$
 [F(a,b):F]
 =
@@ -55,9 +64,12 @@ $$
 $$
 :::
 
-<1>4. Every element of $F(a,b)$ is algebraic over $F$.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-implies-algebraic}
+Every element of $F(a,b)$ is algebraic over $F$.
+
+::: pf-proof
 Let $L/F$ be any finite extension and let $x\in L$. The vectors
 $$
 1,x,x^2,\ldots,x^{[L:F]}
@@ -70,22 +82,24 @@ such that
 $$
 c_0+c_1x+\cdots+c_mx^m=0.
 $$
-Hence $x$ is algebraic over $F$. Apply this with $L=F(a,b)$, which is finite by step <1>3.
+Hence $x$ is algebraic over $F$. Apply this with $L=F(a,b)$, which is finite by [](#composite-finite-extension){.pf-ref}.
 :::
 
-<1>5. The element $a+b$ is algebraic over $F$.
+:::
 
-::: {.proof}
+::: pf-step
+The element $a+b$ is algebraic over $F$.
+
+::: pf-proof
 One has
 $$
 a+b\in F(a,b).
 $$
-Apply step <1>4.
+Apply [](#finite-implies-algebraic){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+:::
+
 :::
