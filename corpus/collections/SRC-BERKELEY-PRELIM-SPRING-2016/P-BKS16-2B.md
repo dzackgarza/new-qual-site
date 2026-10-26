@@ -33,6 +33,8 @@ for all $x\in\RR$.
 Show that $g''\ge 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -117,6 +119,8 @@ and the limit of the nonnegative quantities on the right is nonnegative.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required inequality at every real $z$.
+
+:::
 
 :::
 
