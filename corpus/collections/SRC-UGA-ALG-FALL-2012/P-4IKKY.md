@@ -13,6 +13,14 @@ classification:
   - Direct Products
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: deepseek-v4.1-flash-free
+  date: 2026-10-27
+  note: >-
+    The uniqueness assertion is false without the hypothesis that the summands
+    are f-invariant; step 3 of the solution gives a counterexample. The problem
+    now asks for that counterexample and for the invariant version.
 ---
 
 ::: {.problem}
@@ -24,9 +32,11 @@ Prove that $U$ can be written as a direct sum $U \cong V\oplus W$ such that
 
 2. $W$ is finite-dimensional.
 
-Moreover, prove that for any other decomposition $U \cong V' \oplus W'$, one has $W' \cong W$.
+Moreover, show that the uniqueness assertion $W'\cong W$ for every other decomposition $U\cong V'\oplus W'$ fails without the hypothesis that the summands are $f$-invariant, and prove it under that hypothesis.
+
 :::
 
+::: {.solution}
 
 Equip $U$ with its $k[t]$-module structure given by $t\cdot u=f(u)$.
 
@@ -98,6 +108,8 @@ An $f$-invariant subspace is a $k[t]$-submodule. Every element of a finite-dimen
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the existence assertion, step [](#s1-3){.pf-ref} gives a counterexample to uniqueness as stated, and step [](#s1-4){.pf-ref} proves the invariant-summand version.
+
+:::
 
 :::
 
