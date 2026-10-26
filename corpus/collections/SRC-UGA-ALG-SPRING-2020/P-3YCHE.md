@@ -29,6 +29,8 @@ c. Exhibit a subfield $K$ in $(b)$ such that $\QQ \leq K \leq E$ with $K$ not a 
 Explain.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ This is an intermediate field of degree $4$, but it is not normal over $\mathbb 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
