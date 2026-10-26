@@ -17,6 +17,8 @@ audit:
 If $p(z)$ is a polynomial of degree at least $2$, show that the sum of the residues of $1/p(z)$ at all zeros of $p$ is $0$.
 :::
 
+::: {.solution}
+
 Write
 \[
 p(z)=a_mz^m+a_{m-1}z^{m-1}+\cdots+a_0,
@@ -128,6 +130,8 @@ Letting \(R\to\infty\) and applying step [](#s1-3){.pf-ref} yields \(2\pi iS=0\)
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required residue sum.
+
+:::
 
 :::
 
