@@ -21,6 +21,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 Put \(b=|a|>0\). Since \(\cos(ax)=\cos(bx)\), it is enough to evaluate the integral with \(b>0\).
 
 ::: pf
@@ -131,6 +133,8 @@ Since \(b=|a|\) and \(\cos(ax)=\cos(bx)\), this is exactly the claimed formula.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required evaluation.
+
+:::
 
 :::
 
