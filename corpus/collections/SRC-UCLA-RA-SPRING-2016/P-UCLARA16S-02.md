@@ -35,7 +35,7 @@ G(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For every integer $M$,
 \[
@@ -46,7 +46,7 @@ For every integer $M$,
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Tonelli's theorem gives
 \[
@@ -81,7 +81,7 @@ gives the stated formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each integer $k\ge1$, the integers $n$ satisfying
 \[
@@ -124,7 +124,7 @@ The contribution of all indices with
 \[
 k\le\sqrt n<k+1
 \]
-to the sum in step <2>1 is at most
+to the sum in step [](#s1-1){.pf-ref} is at most
 \[
 3
 \int_{M-k-1}^{M+1-k}|f(y)|\,dy.
@@ -133,7 +133,7 @@ to the sum in step <2>1 is at most
 
 ::: pf-proof
 
-By step <2>2, the group contains at most $2k+1$ terms, each with coefficient at most $1/k$, and every integration interval is contained in
+By step [](#s1-2){.pf-ref}, the group contains at most $2k+1$ terms, each with coefficient at most $1/k$, and every integration interval is contained in
 \[
 [M-k-1,M+1-k].
 \]
@@ -155,7 +155,7 @@ the claim follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -198,14 +198,14 @@ Adding the two estimates gives the result.
 
 ::: pf-qed
 
-Combining steps <2>1 through <2>4,
+Combining steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 \int_M^{M+1}G(x)\,dx
 \le
 6\|f\|_1
 <\infty.
 \]
-This proves step <1>1.
+This proves step [](#s1){.pf-ref}.
 
 :::
 
@@ -213,7 +213,7 @@ This proves step <1>1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For every integer $M$,
 \[
@@ -224,13 +224,13 @@ for almost every $x\in[M,M+1]$.
 
 ::: pf-proof
 
-The function $G$ is nonnegative and measurable. By step <1>1 it is integrable on $[M,M+1]$. A nonnegative integrable function is finite almost everywhere.
+The function $G$ is nonnegative and measurable. By step [](#s1){.pf-ref} it is integrable on $[M,M+1]$. A nonnegative integrable function is finite almost everywhere.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 One has
 \[
@@ -247,13 +247,13 @@ The real line is the countable union
 =
 \bigcup_{M\in\mathbb Z}[M,M+1].
 \]
-By step <1>2, the exceptional set in each interval has measure zero. A countable union of null sets is null.
+By step [](#s2){.pf-ref}, the exceptional set in each interval has measure zero. A countable union of null sets is null.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Therefore
 \[
@@ -277,7 +277,7 @@ G(x)
 f(x-\sqrt n)
 \right|.
 \]
-Step <1>3 says this sum is finite for almost every $x$, which is exactly absolute convergence of the original series.
+Step [](#s3){.pf-ref} says this sum is finite for almost every $x$, which is exactly absolute convergence of the original series.
 
 :::
 
@@ -285,7 +285,7 @@ Step <1>3 says this sum is finite for almost every $x$, which is exactly absolut
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s4){.pf-ref} is the required conclusion.
 
 :::
 

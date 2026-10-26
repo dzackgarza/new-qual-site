@@ -40,7 +40,7 @@ Use the Fourier transform convention
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The integral in the problem is
 \[
@@ -67,7 +67,7 @@ Since $h\in L^1(\mathbb R)$, the convolution is absolutely convergent for almost
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For every $\xi\in\mathbb R$,
 \[
@@ -79,7 +79,7 @@ For every $\xi\in\mathbb R$,
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s2-1}
 
 If $\xi>0$, then
 \[
@@ -180,7 +180,7 @@ The positively oriented residue theorem gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 If $\xi=0$, then
 \[
@@ -208,7 +208,7 @@ Directly,
 
 ::: pf-qed
 
-Steps <2>1 through <2>3 combine to give
+Steps [](#s2-1){.pf-ref} through [](#s2-3){.pf-ref} combine to give
 \[
 \widehat h(\xi)
 =
@@ -222,7 +222,7 @@ for all real $\xi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The Fourier transform of the convolution is
 \[
@@ -240,13 +240,13 @@ Since $h\in L^1(\mathbb R)$, Fubini's theorem applies to the convolution-transfo
 =
 \widehat h\,\widehat h.
 \]
-Apply step <1>2.
+Apply step [](#s2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 For every $x\in\mathbb R$,
 \[
@@ -261,7 +261,7 @@ e^{ix\xi}\,d\xi.
 
 ::: pf-proof
 
-The function $h*h$ belongs to $L^1(\mathbb R)$ because $h\in L^1$, and step <1>3 gives
+The function $h*h$ belongs to $L^1(\mathbb R)$ because $h\in L^1$, and step [](#s3){.pf-ref} gives
 \[
 \widehat{h*h}(\xi)
 =
@@ -275,7 +275,7 @@ Fourier inversion therefore gives the displayed formula at every point of contin
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 One has
 \[
@@ -315,7 +315,7 @@ The integral is absolutely convergent because $e^{-2|\xi|}\in L^1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s6}
 
 Therefore
 \[
@@ -333,7 +333,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>1, <1>4, and <1>5,
+By steps [](#s1){.pf-ref} and [](#s4){.pf-ref}, and [](#s5){.pf-ref},
 \[
 \begin{aligned}
 (h*h)(x)
@@ -351,7 +351,7 @@ By steps <1>1, <1>4, and <1>5,
 
 ::: pf-qed
 
-Step <1>6 gives the requested value for every real $x$, and the preceding steps justify the contour, Fubini, convolution, and Fourier inversion manipulations.
+Step [](#s6){.pf-ref} gives the requested value for every real $x$, and the preceding steps justify the contour, Fubini, convolution, and Fourier inversion manipulations.
 
 :::
 

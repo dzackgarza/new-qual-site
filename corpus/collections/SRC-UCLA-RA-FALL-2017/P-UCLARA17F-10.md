@@ -31,7 +31,7 @@ g_N(z)\coloneqq\sum_{n=1}^N|f_n(z)|^2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Each $g_N$ is continuous and subharmonic on $\mathbb D$, and
 \[
@@ -52,7 +52,7 @@ so $|f|^2$ is subharmonic. Finite sums of subharmonic functions are subharmonic,
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 The sequence $(g_N)$ is uniformly Cauchy on every compact subset of $\mathbb D$.
 
@@ -82,7 +82,7 @@ Choose $0<\rho<d/2$. The balls $B(w,\rho)$ with $w\in K$ cover $K$, so compactne
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 If $M>N$ and $z\in B(w_j,\rho)$, then
 \[
@@ -121,7 +121,7 @@ Also $0\le v_{N,M}\le F-g_N$. Substituting these two bounds yields the stated es
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 For each $j$,
 \[
@@ -134,7 +134,7 @@ For each $j$,
 
 ::: pf-proof
 
-By step <1>1, $F-g_N\downarrow0$ pointwise and
+By step [](#s1){.pf-ref}, $F-g_N\downarrow0$ pointwise and
 \[
 0\le F-g_N\le1.
 \]
@@ -144,20 +144,20 @@ The constant function $1$ is integrable on $[0,2\pi]$, so dominated convergence 
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-4}
 
 The sequence $(g_N)$ is uniformly Cauchy on $K$.
 
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. Since there are only finitely many centers $w_j$, step <2>3 gives an index $N_0$ such that for every $N\ge N_0$ and every $j$,
+Fix $\varepsilon>0$. Since there are only finitely many centers $w_j$, step [](#s2-3){.pf-ref} gives an index $N_0$ such that for every $N\ge N_0$ and every $j$,
 \[
 \frac1{2\pi}\int_0^{2\pi}
 \bigl(F-g_N\bigr)(w_j+2\rho e^{i\theta})\,d\theta
 <\frac{\varepsilon}{3}.
 \]
-If $M>N\ge N_0$ and $z\in K$, choose $j$ with $z\in B(w_j,\rho)$. Step <2>2 then gives
+If $M>N\ge N_0$ and $z\in K$, choose $j$ with $z\in B(w_j,\rho)$. Step [](#s2-2){.pf-ref} then gives
 \[
 0\le g_M(z)-g_N(z)<\varepsilon.
 \]
@@ -169,7 +169,7 @@ This bound is independent of $z\in K$.
 
 ::: pf-qed
 
-Step <2>4 proves the claim of step <1>2 for an arbitrary compact set $K\subset\mathbb D$.
+Step [](#s2-4){.pf-ref} proves the claim of step [](#s2){.pf-ref} for an arbitrary compact set $K\subset\mathbb D$.
 
 :::
 
@@ -177,7 +177,7 @@ Step <2>4 proves the claim of step <1>2 for an arbitrary compact set $K\subset\m
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The series
 \[
@@ -188,26 +188,26 @@ converges uniformly on every compact subset of $\mathbb D$ to $F$.
 
 ::: pf-proof
 
-By step <1>2, the partial sums $(g_N)$ are uniformly Cauchy on each compact set $K$. Since the pointwise limit is $F$ by step <1>1, the uniform limit on $K$ is necessarily $F$.
+By step [](#s2){.pf-ref}, the partial sums $(g_N)$ are uniformly Cauchy on each compact set $K$. Since the pointwise limit is $F$ by step [](#s1){.pf-ref}, the uniform limit on $K$ is necessarily $F$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The function $F$ is subharmonic on $\mathbb D$.
 
 
 ::: pf-proof
 
-By step <1>3, $F$ is a locally uniform limit of the continuous functions $g_N$, so $F$ is continuous. Let $\overline{B(z_0,r)}\subset\mathbb D$. Since $g_N$ is subharmonic,
+By step [](#s3){.pf-ref}, $F$ is a locally uniform limit of the continuous functions $g_N$, so $F$ is continuous. Let $\overline{B(z_0,r)}\subset\mathbb D$. Since $g_N$ is subharmonic,
 \[
 g_N(z_0)
 \le
 \frac1{2\pi}\int_0^{2\pi}g_N(z_0+re^{i\theta})\,d\theta.
 \]
-The circle $\{z_0+re^{i\theta}:0\le\theta\le2\pi\}$ is compact, so step <1>3 gives uniform convergence of $g_N$ to $F$ on that circle. Passing to the limit yields
+The circle $\{z_0+re^{i\theta}:0\le\theta\le2\pi\}$ is compact, so step [](#s3){.pf-ref} gives uniform convergence of $g_N$ to $F$ on that circle. Passing to the limit yields
 \[
 F(z_0)
 \le
@@ -221,7 +221,7 @@ Thus the continuous function $F$ satisfies the sub-mean-value inequality on ever
 
 ::: pf-qed
 
-Step <1>3 proves compact-uniform convergence of the series, and step <1>4 proves that its sum $F$ is subharmonic.
+Step [](#s3){.pf-ref} proves compact-uniform convergence of the series, and step [](#s4){.pf-ref} proves that its sum $F$ is subharmonic.
 
 :::
 

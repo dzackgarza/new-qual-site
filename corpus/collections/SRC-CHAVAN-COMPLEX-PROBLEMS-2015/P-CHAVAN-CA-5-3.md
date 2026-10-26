@@ -32,14 +32,14 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The function $|f|$ cannot have a local maximum at any point of $\Omega$.
 
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $|f|$ has a local maximum at
 $a\in\Omega$. Then there is an $r>0$ such that
@@ -61,7 +61,7 @@ ball $B(a,r)$ contained in $\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $w=f(a)$, then $f(B(a,r))$ is an open neighborhood of $w$ contained in
 $$
@@ -73,13 +73,13 @@ $$
 
 The set $B(a,r)$ is open in $\Omega$, so the hypothesis that $f$ is an open
 mapping makes $f(B(a,r))$ open in $\CC$. It contains $w=f(a)$. The containment
-in the closed disc follows from the inequality in step <2>1.
+in the closed disc follows from the inequality in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No open neighborhood of $w$ is contained in
 $\{\zeta\in\CC:\abs{\zeta}\leq\abs{w}\}$.
@@ -104,9 +104,9 @@ outside the closed disc.
 
 ::: pf-qed
 
-Because $f(B(a,r))$ is an open neighborhood of $w$, step <2>2 gives some
+Because $f(B(a,r))$ is an open neighborhood of $w$, step [](#s1-2){.pf-ref} gives some
 $\varepsilon>0$ with $B(w,\varepsilon)\subseteq f(B(a,r))$. This contradicts
-step <2>3. Hence the assumed local maximum cannot exist.
+step [](#s1-3){.pf-ref}. Hence the assumed local maximum cannot exist.
 
 :::
 
@@ -114,7 +114,7 @@ step <2>3. Hence the assumed local maximum cannot exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Under the hypotheses of part (2), $|f|$ attains a maximum at some
 $b\in\overline\Omega$.
@@ -134,15 +134,15 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Every such maximizing point $b$ belongs to $\partial\Omega$.
 
 
 ::: pf-proof
 
-If $b\in\Omega$, then the inequality in step <1>2 shows that $|f|$ has a local
-maximum at $b$, contradicting step <1>1. Since $\Omega$ is open,
+If $b\in\Omega$, then the inequality in step [](#s2){.pf-ref} shows that $|f|$ has a local
+maximum at $b$, contradicting step [](#s1){.pf-ref}. Since $\Omega$ is open,
 $$
 \overline\Omega\setminus\Omega=\partial\Omega,
 $$
@@ -152,14 +152,14 @@ so $b\in\partial\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Therefore $|f|$ attains its maximum on $\partial\Omega$.
 
 
 ::: pf-proof
 
-Step <1>2 produces a maximizing point $b\in\overline\Omega$, and step <1>3
+Step [](#s2){.pf-ref} produces a maximizing point $b\in\overline\Omega$, and step [](#s3){.pf-ref}
 places that point on $\partial\Omega$.
 
 :::
@@ -168,7 +168,7 @@ places that point on $\partial\Omega$.
 
 ::: pf-qed
 
-Step <1>1 proves part (1), and step <1>4 proves part (2).
+Step [](#s1){.pf-ref} proves part (1), and step [](#s4){.pf-ref} proves part (2).
 
 :::
 

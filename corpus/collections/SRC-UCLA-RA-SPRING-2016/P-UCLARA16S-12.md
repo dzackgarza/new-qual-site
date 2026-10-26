@@ -31,7 +31,7 @@ for all $\theta\in(0,2\pi)$. Show that $u(z)\le0$. The function in part (a) is u
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For part (a), define
 \[
@@ -87,7 +87,7 @@ and therefore $v(z)\to\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Fix $\varepsilon>0$ and set
 \[
@@ -105,7 +105,7 @@ w_\varepsilon(r\zeta)
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s2-1}
 
 If $\zeta=e^{i\theta}\ne1$, then
 \[
@@ -134,7 +134,7 @@ w_\varepsilon(re^{i\theta})
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 At the exceptional point $\zeta=1$,
 \[
@@ -146,7 +146,7 @@ w_\varepsilon(r)\longrightarrow-\infty
 
 ::: pf-proof
 
-The hypothesis gives $u(z)\le M$ throughout $\mathbb D$, while step <1>1 gives $v(r)\to\infty$ as $r\to1$. Therefore
+The hypothesis gives $u(z)\le M$ throughout $\mathbb D$, while step [](#s1){.pf-ref} gives $v(r)\to\infty$ as $r\to1$. Therefore
 \[
 w_\varepsilon(r)
 =
@@ -167,7 +167,7 @@ The function $w_\varepsilon$ is harmonic as a linear combination of harmonic fun
 \[
 w_\varepsilon\le u\le M
 \]
-because $v>0$. Steps <2>1 and <2>2 give the boundary limsup assertion.
+because $v>0$. Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref} give the boundary limsup assertion.
 
 :::
 
@@ -175,7 +175,7 @@ because $v>0$. Steps <2>1 and <2>2 give the boundary limsup assertion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 If a harmonic function $w$ on $\mathbb D$ is bounded above and satisfies
 \[
@@ -257,7 +257,7 @@ together with the assumed radial limsup inequality for $w$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 For every $\varepsilon>0$ and every $z\in\mathbb D$,
 \[
@@ -267,7 +267,7 @@ u(z)\le\varepsilon v(z).
 
 ::: pf-proof
 
-Apply step <1>3 to $w_\varepsilon$ from step <1>2. Then
+Apply step [](#s3){.pf-ref} to $w_\varepsilon$ from step [](#s2){.pf-ref}. Then
 \[
 u(z)-\varepsilon v(z)
 =
@@ -279,7 +279,7 @@ w_\varepsilon(z)
 
 :::
 
-::: pf-step
+::: {.pf-step #s5}
 
 For every $z\in\mathbb D$,
 \[
@@ -289,7 +289,7 @@ For every $z\in\mathbb D$,
 
 ::: pf-proof
 
-Fix $z\in\mathbb D$. The number $v(z)$ is finite. By step <1>4,
+Fix $z\in\mathbb D$. The number $v(z)$ is finite. By step [](#s4){.pf-ref},
 \[
 u(z)\le\varepsilon v(z)
 \]
@@ -301,7 +301,7 @@ for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives $u(z)\le0$.
 
 ::: pf-qed
 
-Step <1>1 solves part (a), and step <1>5 proves part (b).
+Step [](#s1){.pf-ref} solves part (a), and step [](#s5){.pf-ref} proves part (b).
 
 :::
 

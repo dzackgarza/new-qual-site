@@ -36,7 +36,7 @@ P(z,\zeta)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If $u$ is uniformly continuous on $\mathbb D$, then $u$ has a unique continuous extension $f:\overline{\mathbb D}\to\mathbb R$.
 
@@ -59,9 +59,9 @@ Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
-Under the hypothesis of step <1>1,
+Under the hypothesis of step [](#s1){.pf-ref},
 \[
 u(z)=\frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})f(e^{i\theta})\,d\theta
 \qquad (z\in\mathbb D).
@@ -94,7 +94,7 @@ uniformly in $\theta$. Passing to the limit in the integral yields the claimed r
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Conversely, suppose that $f:\partial\mathbb D\to\mathbb R$ is continuous and that
 \[
@@ -108,7 +108,7 @@ Then for every $\zeta_0\in\partial\mathbb D$,
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s3-1}
 
 For every $z\in\mathbb D$,
 \[
@@ -141,7 +141,7 @@ This is continuity of $f$ at $\zeta_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3-3}
 
 If $J=\partial\mathbb D\setminus I$, then
 \[
@@ -174,7 +174,7 @@ and the right-hand side tends to $0$ as $z\to\zeta_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3-4}
 
 $u(z)\to f(\zeta_0)$ as $z\to\zeta_0$ within $\mathbb D$.
 
@@ -185,7 +185,7 @@ Let
 \[
 M\coloneqq\max_{\zeta\in\partial\mathbb D}|f(\zeta)-f(\zeta_0)|.
 \]
-Using step <2>1 and splitting the boundary integral over $I$ and $J$,
+Using step [](#s3-1){.pf-ref} and splitting the boundary integral over $I$ and $J$,
 \[
 \begin{aligned}
 |u(z)-f(\zeta_0)|
@@ -200,7 +200,7 @@ P(z,\zeta)|f(\zeta)-f(\zeta_0)|\,|d\zeta| \\
 M\sup_{\zeta\in J}P(z,\zeta).
 \end{aligned}
 \]
-By step <2>3 the second term tends to $0$. Hence
+By step [](#s3-3){.pf-ref} the second term tends to $0$. Hence
 \[
 \limsup_{z\to\zeta_0}|u(z)-f(\zeta_0)|\le\varepsilon.
 \]
@@ -212,7 +212,7 @@ Since $\varepsilon>0$ was arbitrary, the limit is $0$.
 
 ::: pf-qed
 
-Step <2>4 proves the claim of step <1>3.
+Step [](#s3-4){.pf-ref} proves the claim of step [](#s3){.pf-ref}.
 
 :::
 
@@ -220,14 +220,14 @@ Step <2>4 proves the claim of step <1>3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
-Under the hypothesis of step <1>3, $u$ is uniformly continuous on $\mathbb D$.
+Under the hypothesis of step [](#s3){.pf-ref}, $u$ is uniformly continuous on $\mathbb D$.
 
 
 ::: pf-proof
 
-Define $\widetilde u$ on $\overline{\mathbb D}$ by $\widetilde u=u$ on $\mathbb D$ and $\widetilde u=f$ on $\partial\mathbb D$. The function $u$ is continuous in $\mathbb D$, and step <1>3 shows that $\widetilde u$ is continuous at every boundary point. Thus $\widetilde u$ is continuous on the compact set $\overline{\mathbb D}$, hence uniformly continuous there. Its restriction $u$ to $\mathbb D$ is therefore uniformly continuous.
+Define $\widetilde u$ on $\overline{\mathbb D}$ by $\widetilde u=u$ on $\mathbb D$ and $\widetilde u=f$ on $\partial\mathbb D$. The function $u$ is continuous in $\mathbb D$, and step [](#s3){.pf-ref} shows that $\widetilde u$ is continuous at every boundary point. Thus $\widetilde u$ is continuous on the compact set $\overline{\mathbb D}$, hence uniformly continuous there. Its restriction $u$ to $\mathbb D$ is therefore uniformly continuous.
 
 :::
 
@@ -235,7 +235,7 @@ Define $\widetilde u$ on $\overline{\mathbb D}$ by $\widetilde u=u$ on $\mathbb 
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove the forward implication, and steps <1>3 and <1>4 prove the converse.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the forward implication, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the converse.
 
 :::
 

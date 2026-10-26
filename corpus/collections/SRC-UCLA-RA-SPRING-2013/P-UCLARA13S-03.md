@@ -37,7 +37,7 @@ for almost every $(x,y)\in K$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 Let $S\subset\mathbb R^2$ be bounded and open. Then for every $t>0$,
 \[
@@ -75,7 +75,7 @@ Then $f_k$ is continuous, vanishes outside $S$, has compact support contained in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $k$ and $t>0$,
 \[
@@ -111,7 +111,7 @@ Take $C_0=C^3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -153,13 +153,13 @@ Letting $s\uparrow M\chi_S(x)$ proves the equality.
 
 ::: pf-qed
 
-By step <2>3,
+By step [](#s1-3){.pf-ref},
 \[
 \{M\chi_S>t\}
 =
 \bigcup_{k=1}^{\infty}\{Mf_k>t\}.
 \]
-The sets on the right increase with $k$, so continuity from below and step <2>2 give
+The sets on the right increase with $k$, so continuity from below and step [](#s1-2){.pf-ref} give
 \[
 m(\{M\chi_S>t\})
 =
@@ -167,7 +167,7 @@ m(\{M\chi_S>t\})
 \le
 C_0t^{-3}m(S).
 \]
-This proves step <1>1.
+This proves step [](#s1){.pf-ref}.
 
 :::
 
@@ -175,7 +175,7 @@ This proves step <1>1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Fix $n\ge1$ and define
 \[
@@ -197,7 +197,7 @@ m^*(E_n)=0.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s2-1}
 
 For every $\varepsilon>0$, there is a bounded open set $U\supset K$ such that
 \[
@@ -224,7 +224,7 @@ m(U)-m(K)
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 For every $x\in K$,
 \[
@@ -269,7 +269,7 @@ Taking the limsup proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 For every $\varepsilon>0$,
 \[
@@ -281,7 +281,7 @@ C_0n^3\varepsilon.
 
 ::: pf-proof
 
-By step <2>2,
+By step [](#s2-2){.pf-ref},
 \[
 E_n
 \subset
@@ -290,7 +290,7 @@ x:
 M\chi_{U\setminus K}(x)>\frac1n
 \right\}.
 \]
-The set $U\setminus K$ is open, bounded, and has measure less than $\varepsilon$ by step <2>1. Applying step <1>1 with $t=1/n$ gives
+The set $U\setminus K$ is open, bounded, and has measure less than $\varepsilon$ by step [](#s2-1){.pf-ref}. Applying step [](#s1){.pf-ref} with $t=1/n$ gives
 \[
 m^*(E_n)
 \le
@@ -305,7 +305,7 @@ C_0n^3\varepsilon.
 
 ::: pf-qed
 
-The estimate in step <2>3 holds for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives
+The estimate in step [](#s2-3){.pf-ref} holds for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives
 \[
 m^*(E_n)=0.
 \]
@@ -316,7 +316,7 @@ m^*(E_n)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 For almost every $x\in K$,
 \[
@@ -329,7 +329,7 @@ A_r\chi_K(x)
 
 ::: pf-proof
 
-By step <1>2, every $E_n$ has outer measure zero. Hence
+By step [](#s2){.pf-ref}, every $E_n$ has outer measure zero. Hence
 \[
 E
 \coloneqq
@@ -361,7 +361,7 @@ A_r\chi_K(x)\to1.
 
 ::: pf-qed
 
-Step <1>3 is exactly the desired almost-everywhere circular differentiation statement on $K$.
+Step [](#s3){.pf-ref} is exactly the desired almost-everywhere circular differentiation statement on $K$.
 
 :::
 

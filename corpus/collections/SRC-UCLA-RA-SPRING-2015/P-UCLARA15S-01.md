@@ -36,7 +36,7 @@ S_n(h)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 For all $f,g\in L^1(\mathbb R)$,
 \[
@@ -81,7 +81,7 @@ Summing over $-n^2\le k\le n^2$ yields
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 If $g\in C_c(\mathbb R)$, then
 \[
@@ -93,7 +93,7 @@ S_n(g)
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s2-1}
 
 Let $\operatorname{supp}(g)\subset[-R,R]$ and let
 \[
@@ -117,7 +117,7 @@ A continuous compactly supported function is uniformly continuous on $\mathbb R$
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 For every mesh interval $I=I_{k,n}$,
 \[
@@ -165,7 +165,7 @@ and combining the two estimates gives the upper bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 For all sufficiently large $n$,
 \[
@@ -195,7 +195,7 @@ Only mesh intervals meeting $[-R,R]$ contribute. Their number is at most
 \[
 2Rn+3.
 \]
-Applying step <2>2 on those intervals,
+Applying step [](#s2-2){.pf-ref} on those intervals,
 \[
 0
 \le
@@ -211,12 +211,12 @@ For $n\ge1$ the coefficient is bounded by a constant $C_R$, giving the claim.
 
 ::: pf-qed
 
-Step <2>3 and step <2>1 give
+Step [](#s2-3){.pf-ref} and step [](#s2-1){.pf-ref} give
 \[
 |S_n(g)-\|g\|_1|
 \longrightarrow0.
 \]
-This proves step <1>2.
+This proves step [](#s2){.pf-ref}.
 
 :::
 
@@ -224,7 +224,7 @@ This proves step <1>2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 For every $f\in L^1(\mathbb R)$,
 \[
@@ -240,13 +240,13 @@ Fix $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$, choose
 \[
 \|f-g\|_1<\frac{\varepsilon}{3}.
 \]
-By step <1>2, for all sufficiently large $n$,
+By step [](#s2){.pf-ref}, for all sufficiently large $n$,
 \[
 |S_n(g)-\|g\|_1|
 <
 \frac{\varepsilon}{3}.
 \]
-Using step <1>1 and
+Using step [](#s1){.pf-ref} and
 \[
 |\|f\|_1-\|g\|_1|
 \le
@@ -271,7 +271,7 @@ one obtains
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 Therefore
 \[
@@ -289,7 +289,7 @@ Therefore
 
 ::: pf-proof
 
-This is step <1>3 written out using the definition of $S_n$.
+This is step [](#s3){.pf-ref} written out using the definition of $S_n$.
 
 :::
 
@@ -297,7 +297,7 @@ This is step <1>3 written out using the definition of $S_n$.
 
 ::: pf-qed
 
-Step <1>4 is the required limit.
+Step [](#s4){.pf-ref} is the required limit.
 
 :::
 

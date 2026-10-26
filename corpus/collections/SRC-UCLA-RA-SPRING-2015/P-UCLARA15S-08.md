@@ -39,7 +39,7 @@ Choose $M\ge0$ such that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 If $M=0$, then $f\equiv0$.
 
@@ -52,7 +52,7 @@ If $M=0$, then $f(x)=0$ for every real $x$. The real axis has accumulation point
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 Assume $M>0$. In the first quadrant
 \[
@@ -96,7 +96,7 @@ has argument in $(-\pi/4,\pi/4)$, so it avoids the negative real axis. The princ
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 There is a constant
 \[
@@ -148,7 +148,7 @@ Taking absolute values in the definition of $g_\varepsilon$ gives the estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 There exists $R_\varepsilon>0$ such that
 \[
@@ -159,7 +159,7 @@ whenever $z\in\overline Q$ and $|z|\ge R_\varepsilon$.
 
 ::: pf-proof
 
-By step <2>2,
+By step [](#s2-2){.pf-ref},
 \[
 |g_\varepsilon(z)|
 \le
@@ -173,7 +173,7 @@ The exponent tends to $-\infty$ as $R\to\infty$, so the right-hand side tends to
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-4}
 
 On the two boundary rays of $Q$,
 \[
@@ -195,7 +195,7 @@ so the exponential multiplier in $g_\varepsilon$ has modulus at most $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-5}
 
 One has
 \[
@@ -211,13 +211,13 @@ Choose $R\ge R_\varepsilon$ and apply the maximum-modulus principle to the bound
 \[
 Q\cap\{|z|<R\}.
 \]
-Step <2>4 bounds $|g_\varepsilon|$ by $M$ on the two radial sides, and step <2>3 bounds it by $M$ on the circular side. Hence the same bound holds throughout that quarter-disk. Letting $R\to\infty$ proves the claim on all of $Q$.
+Step [](#s2-4){.pf-ref} bounds $|g_\varepsilon|$ by $M$ on the two radial sides, and step [](#s2-3){.pf-ref} bounds it by $M$ on the circular side. Hence the same bound holds throughout that quarter-disk. Letting $R\to\infty$ proves the claim on all of $Q$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-6}
 
 For every $z\in Q$,
 \[
@@ -227,7 +227,7 @@ For every $z\in Q$,
 
 ::: pf-proof
 
-Step <2>5 gives
+Step [](#s2-5){.pf-ref} gives
 \[
 |f(z)|
 \le
@@ -249,7 +249,7 @@ For fixed $z$, the real number in the exponent is finite. Letting $\varepsilon\d
 
 ::: pf-qed
 
-Step <2>6 proves the claim of step <1>2.
+Step [](#s2-6){.pf-ref} proves the claim of step [](#s2){.pf-ref}.
 
 :::
 
@@ -257,7 +257,7 @@ Step <2>6 proves the claim of step <1>2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 The bound
 \[
@@ -268,20 +268,20 @@ holds for every $z\in\mathbb C$.
 
 ::: pf-proof
 
-The argument of step <1>2 depends only on a quadrant being bounded by two rays on which $|f|\le M$. Rotate the construction by $\pi/2$, $\pi$, and $3\pi/2$ to treat the other three quadrants. The real and imaginary axes themselves already satisfy the bound by definition of $M$.
+The argument of step [](#s2){.pf-ref} depends only on a quadrant being bounded by two rays on which $|f|\le M$. Rotate the construction by $\pi/2$, $\pi$, and $3\pi/2$ to treat the other three quadrants. The real and imaginary axes themselves already satisfy the bound by definition of $M$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 
 The function $f$ is constant.
 
 
 ::: pf-proof
 
-By step <1>3, $f$ is a bounded entire function. Liouville's theorem therefore implies that $f$ is constant.
+By step [](#s3){.pf-ref}, $f$ is a bounded entire function. Liouville's theorem therefore implies that $f$ is constant.
 
 :::
 
@@ -289,7 +289,7 @@ By step <1>3, $f$ is a bounded entire function. Liouville's theorem therefore im
 
 ::: pf-qed
 
-Step <1>1 handles the case $M=0$, and step <1>4 handles the case $M>0$.
+Step [](#s1){.pf-ref} handles the case $M=0$, and step [](#s4){.pf-ref} handles the case $M>0$.
 
 :::
 

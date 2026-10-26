@@ -30,7 +30,7 @@ g(w)=f(1/w).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The function $f$ has a removable singularity at infinity if and only if
 $f$ is constant.
@@ -38,7 +38,7 @@ $f$ is constant.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ has a removable singularity at infinity, then $f$ is constant.
 
@@ -55,7 +55,7 @@ $\mathbb C$, so Liouville's theorem implies that $f$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f$ is constant, then $f$ has a removable singularity at infinity.
 
@@ -72,7 +72,7 @@ removable.
 
 ::: pf-qed
 
-Steps <2>1 and <2>2 prove both implications in part (a).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove both implications in part (a).
 
 :::
 
@@ -80,7 +80,7 @@ Steps <2>1 and <2>2 prove both implications in part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 If $f$ has a pole at infinity of order $m$, then $f$ is a polynomial of
 degree $m$.
@@ -88,7 +88,7 @@ degree $m$.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s2-1}
 
 There are constants $C>0$ and $R>0$ such that
 \[
@@ -118,7 +118,7 @@ Taking $R=1/\delta$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 For every integer $n>m$,
 \[
@@ -129,7 +129,7 @@ f^{(n)}(0)=0.
 ::: pf-proof
 
 Fix $n>m$. For every $r\ge R$, Cauchy's estimate on the circle $|z|=r$
-and step <2>1 give
+and step [](#s2-1){.pf-ref} give
 \[
 |f^{(n)}(0)|
 \le \frac{n!}{r^n}\max_{|z|=r}|f(z)|
@@ -141,14 +141,14 @@ Because $m-n<0$, letting $r\to\infty$ yields $f^{(n)}(0)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 The Taylor series of $f$ is a polynomial of degree exactly $m$.
 
 
 ::: pf-proof
 
-Step <2>2 shows that all Taylor coefficients of degrees greater than $m$
+Step [](#s2-2){.pf-ref} shows that all Taylor coefficients of degrees greater than $m$
 vanish, so $f$ is a polynomial of degree at most $m$. If its degree were
 $d<m$, then
 \[
@@ -163,7 +163,7 @@ pole order is $m$. Hence $\deg f=m$.
 
 ::: pf-qed
 
-Step <2>3 proves this implication of part (b).
+Step [](#s2-3){.pf-ref} proves this implication of part (b).
 
 :::
 
@@ -171,7 +171,7 @@ Step <2>3 proves this implication of part (b).
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 If $f$ is a polynomial of degree $m$, then $f$ has a pole at infinity
 of order $m$.
@@ -199,7 +199,7 @@ infinity.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), while steps <1>2 and <1>3 prove both directions of
+Step [](#s1){.pf-ref} proves part (a), while steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove both directions of
 part (b).
 
 :::
