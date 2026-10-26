@@ -31,6 +31,8 @@ audit:
 Given two vectors $x$ and $y$ in $\RR^n$ with $\norm{x}_2 = \norm{y}_2$, construct an orthogonal matrix $Q$ such that $Qx = y$. Can there be such a matrix if $\norm{x}_2 \neq \norm{y}_2$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -179,6 +181,8 @@ contrary to the hypothesis.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} construct the required orthogonal matrix when the norms are equal, and step [](#s1-6){.pf-ref} proves impossibility when the norms are unequal.
+
+:::
 
 :::
 
