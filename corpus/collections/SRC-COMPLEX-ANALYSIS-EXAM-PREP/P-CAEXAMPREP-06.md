@@ -23,6 +23,8 @@ have in the annulus $1<|z|<2$?
 The source emphasizes that the inner inequality is strict.
 :::
 
+::: {.solution}
+
 Let
 \[
 f(z)=z^4-5z+1.
@@ -83,6 +85,8 @@ By step [](#s1-1){.pf-ref} there are four zeros with \(|z|<2\), and by step [](#
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required count.
+
+:::
 
 :::
 
