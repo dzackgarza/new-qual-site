@@ -34,6 +34,8 @@ I=\int_{-\infty}^{\infty}\frac{x\sin x}{(1+x^2)^2}\,dx.
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -146,6 +148,8 @@ Substitute step [](#s1-3){.pf-ref} into the reduction from step [](#s1-1){.pf-re
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
