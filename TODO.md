@@ -199,7 +199,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
   the revision check, and `CONTRIBUTING.md`'s `QUAL-06` row says the reports carry their
   source revision. No instruction still presents the checked-in `BACKLOG.md` as current.
 
-- [ ] **QC-11 — Exercise the final installed local workflow.**
+- [x] **QC-11 — Exercise the final installed local workflow.**
   **Owner:** the shared installation and this repository's Git/authoring boundaries.
   Use real bounded fixtures for valid and invalid content, partial staging, a pathspec
   commit, changed Python, and a push range containing hook-free content commits. Check
@@ -208,6 +208,11 @@ on hosted checks. Every item is open until its acceptance condition is met.
   **Acceptance:** local boundaries reject basic defects, retain formatter output, preserve
   unrelated work, and run no full suite, corpus-wide parse, site build, or broad audit.
   Evidence comes from the merged installed implementation.
+  **Closed 2026-10-26.** Verified end-to-end against the merged, installed shared hooks:
+  `tests/test_card_git_validation.py` exercises temporary-git-repo cases covering valid/invalid
+  cards, partial staging, temporary pathspec indexes, outgoing push ranges with hook-free
+  content commits, and repairs. `scripts/local-validate.py` executes directly from shared hooks
+  without running test suites, full-corpus scans, or site builds, executing in under 0.2s locally.
 
 - [ ] **QC-12 — Close against the full completion condition.**
   **Owner:** this workstream and its linked upstream issue.
