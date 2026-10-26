@@ -39,6 +39,8 @@ $$
 (b) Find all possibilities for $f$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -209,6 +211,8 @@ Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} show that every solution has thi
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
