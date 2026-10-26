@@ -44,7 +44,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $P$ be the parallelogram with initial vertex
 $$
@@ -67,7 +67,7 @@ A lattice point $m\omega_1+n\omega_2$ can lie in $P$ only when the integers $m,n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\partial P$ is traversed in the order determined by the edges $\omega_1,\omega_2$, then
 $$
@@ -118,7 +118,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The winding number of the ordered boundary $\partial P$ about $0$ is $s$.
 
@@ -131,13 +131,13 @@ $$
 =
 |\omega_1|^2\Im\!\left(\frac{\omega_2}{\omega_1}\right).
 $$
-Thus the traversal in step <1>2 is counterclockwise exactly when $s=1$ and clockwise exactly when $s=-1$. Since $0$ lies in the interior by step <1>1, its winding number is therefore $s$.
+Thus the traversal in step [](#s1-2){.pf-ref} is counterclockwise exactly when $s=1$ and clockwise exactly when $s=-1$. Since $0$ lies in the interior by step [](#s1-1){.pf-ref}, its winding number is therefore $s$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Legendre's relation is
 $$
@@ -152,13 +152,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $\zeta$ has exactly one pole inside $P$, namely $0$, and its residue there is $1$. Cauchy's residue theorem for a contour of winding number $s$ gives
+By step [](#s1-1){.pf-ref}, $\zeta$ has exactly one pole inside $P$, namely $0$, and its residue there is $1$. Cauchy's residue theorem for a contour of winding number $s$ gives
 $$
 \int_{\partial P}\zeta(z)\,dz
 =
 2\pi i\,s.
 $$
-Step <1>2 identifies the left side with $\omega_2\eta_1-\omega_1\eta_2$, and step <1>3 identifies $s$ with the displayed sign.
+Step [](#s1-2){.pf-ref} identifies the left side with $\omega_2\eta_1-\omega_1\eta_2$, and step [](#s1-3){.pf-ref} identifies $s$ with the displayed sign.
 
 :::
 
@@ -166,7 +166,7 @@ Step <1>2 identifies the left side with $\omega_2\eta_1-\omega_1\eta_2$, and ste
 
 ::: pf-qed
 
-Step <1>4 is the required relation with its sign expressed in terms of $\omega_1$ and $\omega_2$.
+Step [](#s1-4){.pf-ref} is the required relation with its sign expressed in terms of $\omega_1$ and $\omega_2$.
 
 :::
 

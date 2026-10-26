@@ -36,7 +36,7 @@ P(x)=a+bx+cx^2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The conditions at $x=0$ force
 \[
@@ -77,7 +77,7 @@ b=\beta.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The condition
 \[
@@ -91,7 +91,7 @@ then forces
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 P(1)
 =
@@ -106,9 +106,9 @@ c=\gamma-\alpha-\beta.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-For the polynomial determined by steps <1>1--<1>2,
+For the polynomial determined by steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 P'(1)
 =
@@ -124,7 +124,7 @@ P'(x)
 =
 \beta+2cx,
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 \begin{aligned}
 P'(1)
@@ -141,7 +141,7 @@ P'(1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A necessary condition for all four constraints to be satisfied is
 \[
@@ -155,8 +155,8 @@ A necessary condition for all four constraints to be satisfied is
 
 ::: pf-proof
 
-Any polynomial satisfying the first three conditions must have the coefficients determined in steps <1>1--<1>2.
-For that polynomial, step <1>3 computes
+Any polynomial satisfying the first three conditions must have the coefficients determined in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
+For that polynomial, step [](#s1-3){.pf-ref} computes
 \[
 P'(1)=2\gamma-2\alpha-\beta.
 \]
@@ -170,9 +170,9 @@ therefore requires the displayed equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The condition in step <1>4 is also sufficient.
+The condition in step [](#s1-4){.pf-ref} is also sufficient.
 
 
 ::: pf-proof
@@ -214,7 +214,7 @@ P(1)
 \gamma.
 \end{aligned}
 \]
-Finally, step <1>3 gives
+Finally, step [](#s1-3){.pf-ref} gives
 \[
 P'(1)
 =
@@ -228,7 +228,7 @@ Thus all four constraints hold.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Whenever the constraints are compatible, the polynomial is unique.
 
@@ -248,14 +248,14 @@ The third then forces the quadratic coefficient
 c=\gamma-\alpha-\beta.
 \]
 Thus there is at most one quadratic polynomial satisfying the first three constraints, and therefore at most one satisfying all four.
-Step <1>5 constructs one when the compatibility condition holds.
+Step [](#s1-5){.pf-ref} constructs one when the compatibility condition holds.
 Hence it is unique.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the complete answer is:
 \[
@@ -276,7 +276,7 @@ is the unique solution.
 
 ::: pf-proof
 
-Necessity is step <1>4, sufficiency is step <1>5, and uniqueness is step <1>6.
+Necessity is step [](#s1-4){.pf-ref}, sufficiency is step [](#s1-5){.pf-ref}, and uniqueness is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -284,7 +284,7 @@ Necessity is step <1>4, sufficiency is step <1>5, and uniqueness is step <1>6.
 
 ::: pf-qed
 
-Step <1>7 answers parts (a) and (b).
+Step [](#s1-7){.pf-ref} answers parts (a) and (b).
 
 :::
 

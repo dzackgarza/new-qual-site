@@ -26,7 +26,7 @@ Hint: You may assume the double integral in (a) equals the iterated integral $\t
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the hypotheses of part (a), one has
 \[
@@ -71,7 +71,7 @@ Since the point was arbitrary, $F\equiv0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -94,7 +94,7 @@ Both mixed partial derivatives appearing in the definition are continuous by hyp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -139,7 +139,7 @@ This is the displayed expression.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For the same square $S$,
 \[
@@ -174,13 +174,13 @@ Using the other order of integration,
 \bigl(f(a,d)-f(a,c)\bigr),
 \end{aligned}
 \]
-which simplifies to the same quantity as in step <1>3.
+which simplifies to the same quantity as in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every square $S$ with sides parallel to the axes,
 \[
@@ -190,13 +190,13 @@ For every square $S$ with sides parallel to the axes,
 
 ::: pf-proof
 
-Subtract the equal values in steps <1>3 and <1>4.
+Subtract the equal values in steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -213,7 +213,7 @@ everywhere in the plane.
 
 ::: pf-proof
 
-The function $G$ is continuous by step <1>2 and has integral zero over every axis-parallel square by step <1>5. Part (a), proved in step <1>1, therefore gives
+The function $G$ is continuous by step [](#s1-2){.pf-ref} and has integral zero over every axis-parallel square by step [](#s1-5){.pf-ref}. Part (a), proved in step [](#s1-1){.pf-ref}, therefore gives
 \[
 G\equiv0.
 \]
@@ -225,7 +225,7 @@ This is exactly the stated equality of mixed partial derivatives.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and steps <1>2--<1>6 prove part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove part (b).
 
 :::
 

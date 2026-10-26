@@ -27,7 +27,7 @@ The smallest positive integer $x$ for which the power series $\sum_{n=1}^{\infty
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -56,20 +56,20 @@ $4\abs{x}/27$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The series converges absolutely for $\abs{x}<27/4$ and diverges for $\abs{x}>27/4$.
 
 
 ::: pf-proof
 
-This is the ratio test applied to the limit in step <1>1. At $x=0$ the series is identically zero, so it also converges.
+This is the ratio test applied to the limit in step [](#s1-1){.pf-ref}. At $x=0$ the series is identically zero, so it also converges.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The smallest positive integer for which the series does not converge is
 $$
@@ -80,11 +80,11 @@ so the answer is (C).
 
 ::: pf-proof
 
-The positive integers $1,\ldots,6$ all satisfy $x<27/4$, so step <1>2 gives convergence. Since
+The positive integers $1,\ldots,6$ all satisfy $x<27/4$, so step [](#s1-2){.pf-ref} gives convergence. Since
 $$
 7>\frac{27}{4},
 $$
-step <1>2 gives divergence at $x=7$. Thus $7$ is the first positive integer outside the convergence interval.
+step [](#s1-2){.pf-ref} gives divergence at $x=7$. Thus $7$ is the first positive integer outside the convergence interval.
 
 :::
 
@@ -92,7 +92,7 @@ step <1>2 gives divergence at $x=7$. Thus $7$ is the first positive integer outs
 
 ::: pf-qed
 
-Step <1>3 gives the requested integer and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested integer and corresponding choice.
 
 :::
 

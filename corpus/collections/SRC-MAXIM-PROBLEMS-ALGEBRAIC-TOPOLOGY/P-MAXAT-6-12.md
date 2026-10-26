@@ -27,7 +27,7 @@ as oriented manifolds, where $W^{4m+1}$ is compact and oriented.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Along the boundary there is a stable tangent-bundle isomorphism
 \[
@@ -43,7 +43,7 @@ Choose an outward-pointing normal vector field along $\partial W$. It spans a tr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence, for the inclusion
 \[
@@ -58,7 +58,7 @@ p_j(TM)=i^*p_j(TW)
 
 ::: pf-proof
 
-Pontryagin classes are natural and stable. By step <1>1,
+Pontryagin classes are natural and stable. By step [](#s1-1){.pf-ref},
 \[
 p(TM)=p(TM\oplus\varepsilon^1)
 =p(TW|_M)
@@ -70,7 +70,7 @@ Comparing homogeneous components gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -93,7 +93,7 @@ The degree of $P$ is
 \[
 4(i_1+\cdots+i_r)=4m=\dim M,
 \]
-so it can be evaluated on the fundamental class. Multiplicativity of pullback and step <1>2 give
+so it can be evaluated on the fundamental class. Multiplicativity of pullback and step [](#s1-2){.pf-ref} give
 \[
 P(TM)=i^*P(TW).
 \]
@@ -102,7 +102,7 @@ P(TM)=i^*P(TW).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The boundary fundamental class satisfies
 \[
@@ -127,7 +127,7 @@ it maps to the fundamental class of the oriented boundary, with the boundary ori
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $u\in H^{4m}(W;\mathbb Z)$ is any absolute cohomology class, then
 \[
@@ -137,7 +137,7 @@ If $u\in H^{4m}(W;\mathbb Z)$ is any absolute cohomology class, then
 
 ::: pf-proof
 
-Use step <1>4 and compatibility of the Kronecker pairing with the boundary and coboundary maps:
+Use step [](#s1-4){.pf-ref} and compatibility of the Kronecker pairing with the boundary and coboundary maps:
 \[
 \langle i^*u,\partial[W,M]\rangle
 =\langle\delta(i^*u),[W,M]\rangle.
@@ -152,9 +152,9 @@ Hence the right-hand side is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Applying step <1>5 to
+Applying step [](#s1-5){.pf-ref} to
 \[
 u=P(TW)
 \]
@@ -166,17 +166,17 @@ gives
 
 ::: pf-proof
 
-Step <1>3 writes the Pontryagin number as
+Step [](#s1-3){.pf-ref} writes the Pontryagin number as
 \[
 \langle i^*P(TW),[M]\rangle,
 \]
-which vanishes by step <1>5.
+which vanishes by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every Pontryagin number of $M$ is zero:
 \[
@@ -188,7 +188,7 @@ Therefore every Pontryagin number of $M$ is zero:
 
 ::: pf-proof
 
-The monomial $P$ in step <1>3 was arbitrary among all Pontryagin monomials of total degree $4m$, and step <1>6 proves its characteristic number vanishes.
+The monomial $P$ in step [](#s1-3){.pf-ref} was arbitrary among all Pontryagin monomials of total degree $4m$, and step [](#s1-6){.pf-ref} proves its characteristic number vanishes.
 
 :::
 
@@ -196,7 +196,7 @@ The monomial $P$ in step <1>3 was arbitrary among all Pontryagin monomials of to
 
 ::: pf-qed
 
-Step <1>7 is the required assertion.
+Step [](#s1-7){.pf-ref} is the required assertion.
 
 :::
 

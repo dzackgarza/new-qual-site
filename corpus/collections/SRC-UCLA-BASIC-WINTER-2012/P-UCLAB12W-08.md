@@ -48,7 +48,7 @@ for some $(n-1)\times(n-1)$ matrix $C$. By the induction hypothesis, after chang
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every positive integer $i$, one can choose pairwise distinct complex numbers
 $$
@@ -69,7 +69,7 @@ For fixed $i$, choose the numbers successively. The open disk of radius $1/i$ ab
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $T_i$ be the upper-triangular matrix obtained from $T$ by replacing its diagonal entries $T_{jj}$ with $\lambda_{i,j}$ and leaving all off-diagonal entries unchanged. Then
 $$
@@ -80,7 +80,7 @@ entrywise.
 
 ::: pf-proof
 
-Every off-diagonal entry of $T_i-T$ is zero. By step <1>2, the $j$-th diagonal entry satisfies
+Every off-diagonal entry of $T_i-T$ is zero. By step [](#s1-2){.pf-ref}, the $j$-th diagonal entry satisfies
 $$
 \abs{(T_i)_{jj}-T_{jj}}<\frac1i.
 $$
@@ -90,7 +90,7 @@ Thus every matrix entry converges to the corresponding entry of $T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Each $T_i$ has $n$ distinct eigenvalues, namely
 $$
@@ -106,13 +106,13 @@ $$
 =
 \prod_{j=1}^n(z-\lambda_{i,j}).
 $$
-By step <1>2, the diagonal entries are pairwise distinct, so these are $n$ distinct eigenvalues.
+By step [](#s1-2){.pf-ref}, the diagonal entries are pairwise distinct, so these are $n$ distinct eigenvalues.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Each $T_i$ is diagonalizable. Thus there are an invertible matrix $C_i$ and a diagonal matrix $L_i$ with distinct diagonal entries such that
 $$
@@ -122,17 +122,17 @@ $$
 
 ::: pf-proof
 
-Choose a nonzero eigenvector for each of the $n$ distinct eigenvalues from step <1>4. Eigenvectors belonging to distinct eigenvalues are linearly independent, so these $n$ vectors form a basis of $\CC^n$. Let $C_i$ have these eigenvectors as columns and let $L_i$ be the diagonal matrix of their eigenvalues. Then
+Choose a nonzero eigenvector for each of the $n$ distinct eigenvalues from step [](#s1-4){.pf-ref}. Eigenvectors belonging to distinct eigenvalues are linearly independent, so these $n$ vectors form a basis of $\CC^n$. Let $C_i$ have these eigenvectors as columns and let $L_i$ be the diagonal matrix of their eigenvalues. Then
 $$
 T_iC_i=C_iL_i,
 $$
-which is equivalent to the displayed identity. The diagonal entries of $L_i$ are distinct by step <1>4.
+which is equivalent to the displayed identity. The diagonal entries of $L_i$ are distinct by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 $$
@@ -146,7 +146,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>5,
+Using step [](#s1-5){.pf-ref},
 $$
 B_iL_iB_i^{-1}
 =SC_iL_iC_i^{-1}S^{-1}
@@ -157,7 +157,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -168,7 +168,7 @@ entrywise.
 
 ::: pf-proof
 
-By step <1>3, $T_i\to T$ entrywise. Since $S$ and $S^{-1}$ are fixed, every entry of
+By step [](#s1-3){.pf-ref}, $T_i\to T$ entrywise. Since $S$ and $S^{-1}$ are fixed, every entry of
 $$
 ST_iS^{-1}
 $$
@@ -176,7 +176,7 @@ is a fixed finite linear combination of entries of $T_i$, so
 $$
 ST_iS^{-1}\longrightarrow STS^{-1}=A
 $$
-entrywise. Apply step <1>6.
+entrywise. Apply step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -184,7 +184,7 @@ entrywise. Apply step <1>6.
 
 ::: pf-qed
 
-Steps <1>5--<1>7 construct the required matrices $B_i$ and diagonal matrices $L_i$ with distinct eigenvalues and prove the required convergence.
+Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} construct the required matrices $B_i$ and diagonal matrices $L_i$ with distinct eigenvalues and prove the required convergence.
 
 :::
 

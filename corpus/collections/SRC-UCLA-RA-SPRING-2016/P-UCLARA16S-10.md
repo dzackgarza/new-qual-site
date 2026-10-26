@@ -51,7 +51,7 @@ Hence every zero lies in $|z|\le r$. The function is not identically zero becaus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $a_1,\dots,a_N$ be those zeros, listed with multiplicity, and set
 \[
@@ -109,7 +109,7 @@ h(\zeta)=0
 
 ::: pf-proof
 
-Since $g$ is holomorphic and nonvanishing on $\mathbb D$, the function $h=1/g$ is holomorphic there. Step <1>2 gives
+Since $g$ is holomorphic and nonvanishing on $\mathbb D$, the function $h=1/g$ is holomorphic there. Step [](#s1-2){.pf-ref} gives
 \[
 |h(z)|
 =
@@ -124,7 +124,7 @@ Thus defining $h=0$ on the unit circle gives a continuous extension to the close
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Such an $h$ cannot exist.
 
@@ -139,7 +139,7 @@ But $h=1/g$ on $\mathbb D$, so $h$ cannot vanish anywhere there. This is a contr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -149,7 +149,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption of existence leads to the contradiction in step <1>4.
+The assumption of existence leads to the contradiction in step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -157,7 +157,7 @@ The assumption of existence leads to the contradiction in step <1>4.
 
 ::: pf-qed
 
-Step <1>5 answers the problem.
+Step [](#s1-5){.pf-ref} answers the problem.
 
 :::
 

@@ -32,7 +32,7 @@ Assume first that $K$ and $F$ are nonempty.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -56,7 +56,7 @@ would be one of the distances occurring in the infimum. Hence the infimum would 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 \[
@@ -80,7 +80,7 @@ is open and contains $x$. Hence some metric ball $B(x,r_x)$ is contained in the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There are points $x_1,\ldots,x_m\in K$ such that
 \[
@@ -103,7 +103,7 @@ form an open cover of the compact set $K$. Hence a finite subcover exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 With
 \[
@@ -120,11 +120,11 @@ for every $x\in K$ and $y\in F$.
 ::: pf-proof
 
 The number $\delta$ is positive.
-Fix $x\in K$ and $y\in F$. Choose $i$ as in step <1>3, so
+Fix $x\in K$ and $y\in F$. Choose $i$ as in step [](#s1-3){.pf-ref}, so
 \[
 \rho(x,x_i)<\frac{r_{x_i}}2.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \rho(x_i,y)\ge r_{x_i}.
 \]
@@ -147,7 +147,7 @@ r_{x_i}-\frac{r_{x_i}}2\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $K$ is compact, then
 \[
@@ -161,13 +161,13 @@ K\cap F=\varnothing
 
 ::: pf-proof
 
-The forward implication follows from step <1>4, and the reverse implication is step <1>1.
+The forward implication follows from step [](#s1-4){.pf-ref}, and the reverse implication is step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (a) is false if $K$ is assumed only closed.
 
@@ -218,7 +218,7 @@ Thus
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>6 gives the counterexample required in part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} gives the counterexample required in part (b).
 
 :::
 

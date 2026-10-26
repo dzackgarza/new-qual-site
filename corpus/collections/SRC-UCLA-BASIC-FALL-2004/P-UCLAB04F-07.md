@@ -38,7 +38,7 @@ S=G^{-1}(0).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -63,7 +63,7 @@ Thus $(1,1,1)\in S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The partial derivative of $G$ with respect to $z$ is
 \[
@@ -88,7 +88,7 @@ Differentiate the polynomial $G$ with respect to $z$. Evaluating at $(1,1,1)$ gi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There are open neighborhoods
 \[
@@ -117,17 +117,17 @@ for every $(x,y)\in W$.
 
 ::: pf-proof
 
-The map $G:\mathbb R^3\to\mathbb R$ is continuously differentiable because it is a polynomial. By step <1>1,
+The map $G:\mathbb R^3\to\mathbb R$ is continuously differentiable because it is a polynomial. By step [](#s1-1){.pf-ref},
 \[
 G(1,1,1)=0,
 \]
-and by step <1>2 the derivative with respect to the variable $z$ is nonzero at that point. The Implicit Function Theorem therefore applies with $(x,y)$ as the free variables and $z$ as the dependent variable, giving the stated neighborhoods and function.
+and by step [](#s1-2){.pf-ref} the derivative with respect to the variable $z$ is nonzero at that point. The Implicit Function Theorem therefore applies with $(x,y)$ as the free variables and $z$ as the dependent variable, giving the stated neighborhoods and function.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $(x,y)\in W$,
 \[
@@ -137,7 +137,7 @@ For every $(x,y)\in W$,
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 G(x,y,f(x,y))=0.
 \]
@@ -152,7 +152,7 @@ Since $S=G^{-1}(0)$, this is exactly the statement that
 
 ::: pf-qed
 
-Step <1>4 gives the required differentiable local graph of $S$ over an open neighborhood of $(1,1)$.
+Step [](#s1-4){.pf-ref} gives the required differentiable local graph of $S$ over an open neighborhood of $(1,1)$.
 
 :::
 

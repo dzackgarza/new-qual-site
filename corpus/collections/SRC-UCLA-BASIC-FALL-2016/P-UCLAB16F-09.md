@@ -32,7 +32,7 @@ x\in[0,1].
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that
 \[
@@ -50,7 +50,7 @@ A uniform limit of continuous functions on a metric space is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under uniform convergence, the family
 \[
@@ -68,7 +68,7 @@ Choose $N$ such that
 \]
 for every $n\ge N$.
 
-By step <1>1, $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
+By step [](#s1-1){.pf-ref}, $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
 Choose $\delta_0>0$ such that
 \[
 |x-y|<\delta_0
@@ -124,7 +124,7 @@ Thus one $\delta$ works for every $n$, proving equicontinuity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Conversely, suppose the family $\{f_n\}$ is equicontinuous.
 Then the pointwise limit $f$ is continuous.
@@ -165,7 +165,7 @@ Thus $f$ is uniformly continuous, in particular continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix $\varepsilon>0$.
 There exists $\delta>0$ such that
@@ -185,13 +185,13 @@ for every $n$ and
 ::: pf-proof
 
 Use equicontinuity of the family for tolerance $\varepsilon/3$.
-The same $\delta$ works for $f$ by the limiting argument in step <1>3.
+The same $\delta$ works for $f$ by the limiting argument in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exist finitely many points
 \[
@@ -219,7 +219,7 @@ Choose a finite subcover and let its centers be $x_1,\ldots,x_m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exists $N$ such that for every $n\ge N$ and every
 \[
@@ -243,7 +243,7 @@ N=\max_jN_j.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $n\ge N$ and every $x\in[0,1]$,
 \[
@@ -257,8 +257,8 @@ Choose $x_j$ with
 \[
 |x-x_j|<\delta
 \]
-as in step <1>5.
-Then steps <1>4 and <1>6 give
+as in step [](#s1-5){.pf-ref}.
+Then steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} give
 \[
 \begin{aligned}
 |f_n(x)-f(x)|
@@ -283,20 +283,20 @@ Then steps <1>4 and <1>6 give
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus equicontinuity plus pointwise convergence implies uniform convergence.
 
 
 ::: pf-proof
 
-Step <1>7 is exactly the definition of uniform convergence.
+Step [](#s1-7){.pf-ref} is exactly the definition of uniform convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -310,7 +310,7 @@ f_n\to f\text{ uniformly}
 
 ::: pf-proof
 
-Step <1>2 proves the forward implication, and step <1>8 proves the reverse implication.
+Step [](#s1-2){.pf-ref} proves the forward implication, and step [](#s1-8){.pf-ref} proves the reverse implication.
 
 :::
 
@@ -318,7 +318,7 @@ Step <1>2 proves the forward implication, and step <1>8 proves the reverse impli
 
 ::: pf-qed
 
-Step <1>9 is the required equivalence.
+Step [](#s1-9){.pf-ref} is the required equivalence.
 
 :::
 

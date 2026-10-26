@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The functions in $M$ have a common zero in $[0,1]$.
 
@@ -153,7 +153,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -169,13 +169,13 @@ $$
 
 ::: pf-proof
 
-This is exactly the conclusion of step <1>1.
+This is exactly the conclusion of step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The evaluation map
 $$
@@ -231,7 +231,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal
 $$
@@ -242,7 +242,7 @@ is maximal.
 
 ::: pf-proof
 
-By step <1>3 and the first isomorphism theorem,
+By step [](#s1-3){.pf-ref} and the first isomorphism theorem,
 $$
 R/I_{x_0}
 \cong
@@ -262,7 +262,7 @@ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -272,11 +272,11 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 M\subseteq I_{x_0}.
 $$
-Both ideals are maximal by hypothesis and step <1>4.
+Both ideals are maximal by hypothesis and step [](#s1-4){.pf-ref}.
 Since a maximal ideal cannot be properly contained in another proper ideal,
 $$
 M=I_{x_0}.
@@ -286,7 +286,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -304,7 +304,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>5.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -312,7 +312,7 @@ Combine steps <1>1 and <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required classification.
+Step [](#s1-6){.pf-ref} is the required classification.
 
 :::
 

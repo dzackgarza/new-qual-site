@@ -50,7 +50,7 @@ Thus $y''<0$ for $x<1$ and $y''>0$ for $x>1$. The concavity changes at $x=1$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The inflection point is $(1,2)$ and the tangent slope there is $1$.
 
@@ -70,7 +70,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The tangent line is
 $$
@@ -81,7 +81,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Using the point and slope from step <1>2, the point-slope equation is
+Using the point and slope from step [](#s1-2){.pf-ref}, the point-slope equation is
 $$
 y-2=1(x-1),
 $$
@@ -93,7 +93,7 @@ which simplifies to $y=x+1$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested tangent line and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested tangent line and corresponding choice.
 
 :::
 

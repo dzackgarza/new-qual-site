@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The group $G$ acts on $L$ by $F$-automorphisms via
 $$
@@ -60,9 +60,9 @@ so this is a group action.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The action in step <1>1 is faithful.
+The action in step [](#s1-1){.pf-ref} is faithful.
 
 
 ::: pf-proof
@@ -77,7 +77,7 @@ Thus no nonidentity element acts trivially.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -103,20 +103,20 @@ and
 $$
 \operatorname{Gal}(L/K)=G.
 $$
-The hypotheses are verified by steps <1>1--<1>2.
+The hypotheses are verified by steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore every finite group is realizable as the Galois group of a finite Galois extension.
 
 
 ::: pf-proof
 
-For the arbitrary finite group $G$, step <1>3 explicitly constructs such an extension $L/L^G$.
+For the arbitrary finite group $G$, step [](#s1-3){.pf-ref} explicitly constructs such an extension $L/L^G$.
 
 :::
 
@@ -124,7 +124,7 @@ For the arbitrary finite group $G$, step <1>3 explicitly constructs such an exte
 
 ::: pf-qed
 
-Step <1>4 is exactly the required assertion.
+Step [](#s1-4){.pf-ref} is exactly the required assertion.
 
 :::
 

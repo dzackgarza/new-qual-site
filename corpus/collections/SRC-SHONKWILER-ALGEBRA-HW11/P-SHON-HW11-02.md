@@ -47,7 +47,7 @@ i^2=-1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ordered field \(R\) has characteristic \(0\).
 
@@ -68,7 +68,7 @@ is positive, so it cannot equal \(0\). Thus no positive characteristic is possib
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -85,7 +85,7 @@ This is an arbitrary odd-degree polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists \(M>0\) in \(R\) such that for every \(x>M\),
 \[
@@ -127,14 +127,14 @@ Using the stronger choice with the sum of the coefficient ratios gives the state
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently, for sufficiently large positive \(x\), \(f(x)\) has the sign of \(a_{2m+1}\), while for sufficiently large negative \(x\), \(f(x)\) has the opposite sign.
 
 
 ::: pf-proof
 
-By step <1>3, the leading term dominates the sum of all lower-degree terms. Since the degree \(2m+1\) is odd,
+By step [](#s1-3){.pf-ref}, the leading term dominates the sum of all lower-degree terms. Since the degree \(2m+1\) is odd,
 \[
 (-x)^{2m+1}=-x^{2m+1}.
 \]
@@ -143,14 +143,14 @@ By step <1>3, the leading term dominates the sum of all lower-degree terms. Sinc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore every odd-degree polynomial in \(R[x]\) has a root in \(R\).
 
 
 ::: pf-proof
 
-Choose \(u<v\) so that \(f(u)\) and \(f(v)\) have opposite signs as in step <1>4. The assumed intermediate value theorem gives \(c\in[u,v]\) with
+Choose \(u<v\) so that \(f(u)\) and \(f(v)\) have opposite signs as in step [](#s1-4){.pf-ref}. The assumed intermediate value theorem gives \(c\in[u,v]\) with
 \[
 f(c)=0.
 \]
@@ -159,7 +159,7 @@ f(c)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every nontrivial finite Galois extension \(L/R\) has even degree.
 
@@ -174,13 +174,13 @@ Let \(m_\alpha\) be the minimal polynomial. Then
 \[
 [L:R]=\deg m_\alpha.
 \]
-If this degree were odd and \(>1\), step <1>5 would give a root of \(m_\alpha\) in \(R\), contradicting irreducibility. Hence every nontrivial finite Galois degree is even.
+If this degree were odd and \(>1\), step [](#s1-5){.pf-ref} would give a root of \(m_\alpha\) in \(R\), contradicting irreducibility. Hence every nontrivial finite Galois degree is even.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The polynomial
 \[
@@ -205,7 +205,7 @@ Thus no root exists, and a quadratic without a root is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -222,7 +222,7 @@ The quotient of a polynomial ring over a field by an irreducible polynomial is a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every element of \(C\) has a unique form
 \[
@@ -240,7 +240,7 @@ Modulo \(x^2+1\), every polynomial reduces uniquely to degree \(<2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For \(a,b\in R\), the element
 \[
@@ -264,7 +264,7 @@ By hypothesis, the nonnegative elements of \(R\) are exactly the squares.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If \(b=0\) and \(a\ge0\), then \(a+bi\) is a square in \(C\).
 
@@ -284,7 +284,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If \(b=0\) and \(a<0\), then \(a+bi\) is a square in \(C\).
 
@@ -304,7 +304,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Assume \(b\ne0\). Then
 \[
@@ -324,7 +324,7 @@ and \(r,|a|\ge0\), one has \(r>|a|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -339,7 +339,7 @@ u^2=\frac{r+a}{2}}.
 
 ::: pf-proof
 
-By step <1>13,
+By step [](#s1-13){.pf-ref},
 \[
 r+a\ge r-|a|>0.
 \]
@@ -349,7 +349,7 @@ Again use the hypothesis that every nonnegative element is a square.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Define
 \[
@@ -360,13 +360,13 @@ v=\frac{b}{2u}}.
 
 ::: pf-proof
 
-Step <1>14 gives \(u\ne0\), so this is well-defined.
+Step [](#s1-14){.pf-ref} gives \(u\ne0\), so this is well-defined.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 One has
 \[
@@ -382,7 +382,7 @@ This is immediate from the definition of \(v\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 One has
 \[
@@ -392,7 +392,7 @@ u^2-v^2=a.
 
 ::: pf-proof
 
-From step <1>15,
+From step [](#s1-15){.pf-ref},
 \[
 v^2=\frac{b^2}{4u^2}
 =
@@ -418,7 +418,7 @@ a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Thus
 \[
@@ -434,26 +434,26 @@ Thus
 =
 u^2-v^2+2uvi,
 \]
-and steps <1>16--<1>17 identify the two coefficients.
+and steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} identify the two coefficients.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Every element of \(C\) is a square.
 
 
 ::: pf-proof
 
-The cases \(b=0\) are steps <1>11--<1>12, and the case \(b\ne0\) is step <1>18.
+The cases \(b=0\) are steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref}, and the case \(b\ne0\) is step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 The field \(C\) has no extension of degree \(2\).
 
@@ -476,7 +476,7 @@ then
 \[
 \beta^2=u^2-4v\in C.
 \]
-By step <1>19, choose \(\gamma\in C\) with
+By step [](#s1-19){.pf-ref}, choose \(\gamma\in C\) with
 \[
 \gamma^2=u^2-4v.
 \]
@@ -494,7 +494,7 @@ Since \(E\) is a field, \(\beta=\pm\gamma\in C\), hence \(\alpha\in C\), contrad
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Write
 \[
@@ -511,7 +511,7 @@ Every positive integer has a unique factorization into a power of \(2\) times an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Let \(P\le G\) be a Sylow \(2\)-subgroup, so
 \[
@@ -527,7 +527,7 @@ This is Sylow's first theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Let
 \[
@@ -559,20 +559,20 @@ the tower law gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 If \(m>1\), then \(K/R\) is a nontrivial finite extension of odd degree.
 
 
 ::: pf-proof
 
-Step <1>23 gives the odd degree \(m\).
+Step [](#s1-23){.pf-ref} gives the odd degree \(m\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 Such an extension cannot exist.
 
@@ -587,13 +587,13 @@ for some \(\alpha\), and
 \[
 [K:R]
 \]
-is the degree of its irreducible minimal polynomial. If this degree were odd and \(>1\), step <1>5 would force that polynomial to have a root in \(R\), contradiction.
+is the degree of its irreducible minimal polynomial. If this degree were odd and \(>1\), step [](#s1-5){.pf-ref} would force that polynomial to have a root in \(R\), contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Therefore
 \[
@@ -607,13 +607,13 @@ so
 
 ::: pf-proof
 
-Steps <1>24--<1>25 rule out \(m>1\).
+Steps [](#s1-24){.pf-ref} through [](#s1-25){.pf-ref} rule out \(m>1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 Since
 \[
@@ -638,7 +638,7 @@ Apply the tower law.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 The extension \(L/C\) is Galois.
 
@@ -651,7 +651,7 @@ Since \(L/R\) is Galois and \(C\) is an intermediate field, \(L/C\) is separable
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-29}
 
 If \(r\ge2\), then
 \[
@@ -666,13 +666,13 @@ Its order is
 \[
 [L:C]=2^{r-1}\ge2
 \]
-by step <1>27.
+by step [](#s1-27){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-30}
 
 Every nontrivial finite \(2\)-group has a subgroup of index \(2\).
 
@@ -685,7 +685,7 @@ A finite \(p\)-group has a normal subgroup of index \(p\); equivalently, choose 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-31}
 
 If \(r\ge2\), there would therefore be an intermediate field
 \[
@@ -699,7 +699,7 @@ with
 
 ::: pf-proof
 
-By step <1>30, choose
+By step [](#s1-30){.pf-ref}, choose
 \[
 H\le\operatorname{Gal}(L/C)
 \]
@@ -716,20 +716,20 @@ of index \(2\). Its fixed field \(E=L^H\) satisfies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-32}
 
-This contradicts step <1>20.
+This contradicts step [](#s1-20){.pf-ref}.
 
 
 ::: pf-proof
 
-Step <1>20 says \(C\) has no degree-two extension.
+Step [](#s1-20){.pf-ref} says \(C\) has no degree-two extension.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-33}
 
 Therefore
 \[
@@ -743,7 +743,7 @@ and hence
 
 ::: pf-proof
 
-If \(r=1\), then step <1>27 gives
+If \(r=1\), then step [](#s1-27){.pf-ref} gives
 \[
 [L:C]=1.
 \]
@@ -752,7 +752,7 @@ If \(r=1\), then step <1>27 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-34}
 
 Suppose, toward a contradiction, that \(C\) is not algebraically closed.
 
@@ -765,7 +765,7 @@ Then there is a nonconstant irreducible polynomial over \(C\) of degree \(>1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-35}
 
 Choose a root \(\alpha\) of such a polynomial in an algebraic closure and set
 \[
@@ -786,7 +786,7 @@ The degree equals the degree of the irreducible polynomial of \(\alpha\) over \(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-36}
 
 Since
 \[
@@ -806,7 +806,7 @@ The tower law gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-37}
 
 Because \(\operatorname{char}R=0\), \(E/R\) is separable.
 
@@ -819,7 +819,7 @@ Every algebraic extension in characteristic \(0\) is separable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-38}
 
 Let \(L\) be the Galois closure of \(E/R\). Then
 \[
@@ -836,7 +836,7 @@ The Galois closure of a finite separable extension is finite Galois and contains
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-39}
 
 By part 4,
 \[
@@ -852,7 +852,7 @@ The tower \(R\subset C\subset L\) satisfies the hypotheses of part 4.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-40}
 
 This is impossible because
 \[
@@ -862,13 +862,13 @@ C\subsetneq E\subset L.
 
 ::: pf-proof
 
-Step <1>35 gives \(E\ne C\), while step <1>39 gives \(L=C\).
+Step [](#s1-35){.pf-ref} gives \(E\ne C\), while step [](#s1-39){.pf-ref} gives \(L=C\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-41}
 
 Therefore
 \[
@@ -878,13 +878,13 @@ Therefore
 
 ::: pf-proof
 
-The assumption in step <1>34 led to a contradiction.
+The assumption in step [](#s1-34){.pf-ref} led to a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-42}
 
 The usual real field \(\mathbb R\) is ordered, its nonnegative elements are exactly its squares, and real polynomials satisfy the intermediate value theorem.
 
@@ -897,7 +897,7 @@ These are the standard order and completeness properties of \(\mathbb R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-43}
 
 The quotient
 \[
@@ -914,7 +914,7 @@ Send the class of \(x\) to \(i\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-44}
 
 Therefore
 \[
@@ -924,7 +924,7 @@ Therefore
 
 ::: pf-proof
 
-Apply step <1>41 to \(R=\mathbb R\), then use step <1>43.
+Apply step [](#s1-41){.pf-ref} to \(R=\mathbb R\), then use step [](#s1-43){.pf-ref}.
 
 :::
 
@@ -932,7 +932,7 @@ Apply step <1>41 to \(R=\mathbb R\), then use step <1>43.
 
 ::: pf-qed
 
-Steps <1>1--<1>6 prove part 1, steps <1>7--<1>20 prove part 2, steps <1>21--<1>26 prove part 3, steps <1>27--<1>33 prove part 4, steps <1>34--<1>41 prove part 5, and steps <1>42--<1>44 prove part 6.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove part 1, steps [](#s1-7){.pf-ref} through [](#s1-20){.pf-ref} prove part 2, steps [](#s1-21){.pf-ref} through [](#s1-26){.pf-ref} prove part 3, steps [](#s1-27){.pf-ref} through [](#s1-33){.pf-ref} prove part 4, steps [](#s1-34){.pf-ref} through [](#s1-41){.pf-ref} prove part 5, and steps [](#s1-42){.pf-ref} through [](#s1-44){.pf-ref} prove part 6.
 
 :::
 

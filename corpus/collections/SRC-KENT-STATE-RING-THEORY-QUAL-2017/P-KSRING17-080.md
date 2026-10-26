@@ -40,7 +40,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The norm is multiplicative:
 $$
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -114,7 +114,7 @@ for some
 $$
 v\in R,
 $$
-then by step <1>1,
+then by step [](#s1-1){.pf-ref},
 $$
 N(u)N(v)
 =
@@ -131,7 +131,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The integer $b$ is odd and
 $$
@@ -173,7 +173,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is no element
 $$
@@ -225,7 +225,7 @@ is odd, then
 $$
 c^2\equiv1\pmod8.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 p\equiv5\pmod8.
 $$
@@ -259,7 +259,7 @@ Therefore no element of $R$ has norm $\pm2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The element
 $$
@@ -292,7 +292,7 @@ nor
 $$
 \beta
 $$
-is a unit, then by step <1>2 neither norm is $\pm1$.
+is a unit, then by step [](#s1-2){.pf-ref} neither norm is $\pm1$.
 Since
 $$
 \alpha,\beta\ne0
@@ -312,7 +312,7 @@ $$
 =
 2.
 $$
-This contradicts step <1>4.
+This contradicts step [](#s1-4){.pf-ref}.
 
 Hence every factorization
 $$
@@ -328,7 +328,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -357,7 +357,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The element
 $$
@@ -371,7 +371,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 (b+\sqrt p)(b-\sqrt p)
 =
@@ -390,7 +390,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The element
 $$
@@ -464,7 +464,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -475,15 +475,15 @@ is irreducible but not prime in $R$.
 
 ::: pf-proof
 
-Irreducibility is step <1>5.
-Steps <1>7--<1>8 show that $2$ divides a product without dividing either factor.
+Irreducibility is step [](#s1-5){.pf-ref}.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $2$ divides a product without dividing either factor.
 Thus $2$ is not prime.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -497,7 +497,7 @@ $$
 ::: pf-proof
 
 In a UFD, every irreducible element is prime.
-Step <1>9 exhibits an irreducible element of $R$ that is not prime.
+Step [](#s1-9){.pf-ref} exhibits an irreducible element of $R$ that is not prime.
 Therefore $R$ cannot be a UFD.
 
 :::
@@ -506,7 +506,7 @@ Therefore $R$ cannot be a UFD.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

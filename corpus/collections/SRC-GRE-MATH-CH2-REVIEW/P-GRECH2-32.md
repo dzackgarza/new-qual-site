@@ -33,7 +33,7 @@ bound a common region in the first quadrant. Which of the following expressions 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two circle boundaries meet away from the origin at
 $$
@@ -57,7 +57,7 @@ whose solution in $(0,\pi/2)$ is $\theta=\pi/3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $0\leq\theta\leq\pi/3$, the common region extends radially to $r=\sqrt3\sin\theta$; for $\pi/3\leq\theta\leq\pi/2$, it extends radially to $r=3\cos\theta$.
 
@@ -68,7 +68,7 @@ The common region on a ray is bounded by the smaller of the two nonnegative radi
 $$
 \sqrt3\sin\theta=0<3=3\cos\theta,
 $$
-and the two functions first become equal at $\theta=\pi/3$ by step <1>1. At $\theta=\pi/2$, one has
+and the two functions first become equal at $\theta=\pi/3$ by step [](#s1-1){.pf-ref}. At $\theta=\pi/2$, one has
 $$
 3\cos\theta=0<\sqrt3=\sqrt3\sin\theta.
 $$
@@ -78,7 +78,7 @@ Thus the smaller radial boundary is the first circle before the intersection ang
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The area is
 $$
@@ -92,7 +92,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-For a polar region whose radial boundary is $r=R(\theta)$, the area element integrated along rays is $\frac12R(\theta)^2\,d\theta$. Applying this formula to the two angular ranges from step <1>2 gives the displayed expression.
+For a polar region whose radial boundary is $r=R(\theta)$, the area element integrated along rays is $\frac12R(\theta)^2\,d\theta$. Applying this formula to the two angular ranges from step [](#s1-2){.pf-ref} gives the displayed expression.
 
 :::
 
@@ -100,7 +100,7 @@ For a polar region whose radial boundary is $r=R(\theta)$, the area element inte
 
 ::: pf-qed
 
-Step <1>3 gives the requested area expression and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested area expression and corresponding choice.
 
 :::
 

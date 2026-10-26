@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the disk $|z-2|<3$, the Laurent series centered at $2$ is the Taylor series
 $$
@@ -55,7 +55,7 @@ Only nonnegative powers of $w=z-2$ occur, so the coefficient of $(z-2)^{-1}$ is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the exterior annulus $|z-2|>3$, the Laurent series centered at $2$ is
 $$
@@ -82,14 +82,14 @@ The power $w^{-1}$ occurs exactly for $n=0$, with coefficient $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the question, as written without an annulus of convergence, does not determine a unique coefficient; under the exterior-Laurent interpretation represented by the answer choices, the answer is (E).
 
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 give two distinct Laurent expansions centered at $2$, on the two maximal annuli separated by the singularity $z=5$, and their $(z-2)^{-1}$ coefficients are respectively $0$ and $1$. Thus the annulus is mathematically necessary. Choice (E) is the value from the exterior expansion in step <1>2.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give two distinct Laurent expansions centered at $2$, on the two maximal annuli separated by the singularity $z=5$, and their $(z-2)^{-1}$ coefficients are respectively $0$ and $1$. Thus the annulus is mathematically necessary. Choice (E) is the value from the exterior expansion in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -97,7 +97,7 @@ Steps <1>1 and <1>2 give two distinct Laurent expansions centered at $2$, on the
 
 ::: pf-qed
 
-Step <1>3 records both the mathematical ambiguity and the answer corresponding to the intended exterior expansion.
+Step [](#s1-3){.pf-ref} records both the mathematical ambiguity and the answer corresponding to the intended exterior expansion.
 
 :::
 

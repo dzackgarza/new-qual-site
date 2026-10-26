@@ -24,7 +24,7 @@ d=\dim V.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $d=0$, the assertion is trivial.
 
@@ -45,7 +45,7 @@ Its degree is $0\le d$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $d>0$ and choose a nonzero vector $v\in V$.
 There is a least integer
@@ -73,7 +73,7 @@ Since $v\ne0$, one has $r\ge1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The vectors
 \[
@@ -103,7 +103,7 @@ The dependence at stage $r$ therefore expresses $A^rv$ uniquely as a linear comb
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -118,7 +118,7 @@ and $W$ is $A$-invariant.
 
 ::: pf-proof
 
-The dimension statement follows from step <1>3.
+The dimension statement follows from step [](#s1-3){.pf-ref}.
 For invariance, note that
 \[
 A(A^jv)=A^{j+1}v\in W
@@ -131,7 +131,7 @@ For the last basis vector,
 \[
 A(A^{r-1}v)=A^rv\in W
 \]
-by the relation in step <1>3.
+by the relation in step [](#s1-3){.pf-ref}.
 Hence
 \[
 A(W)\subseteq W.
@@ -141,7 +141,7 @@ A(W)\subseteq W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The polynomial
 \[
@@ -182,7 +182,7 @@ span $W$, so $p(A)$ vanishes on all of $W$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since $W$ is $A$-invariant, $A$ induces an endomorphism
 \[
@@ -207,7 +207,7 @@ Thus the definition is independent of the chosen representative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By the induction hypothesis, there exists
 \[
@@ -240,7 +240,7 @@ Hence the induction hypothesis applies to the endomorphism $\overline A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The relation
 \[
@@ -273,7 +273,7 @@ q(A)V\subseteq W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The polynomial
 \[
@@ -287,11 +287,11 @@ annihilates $A$:
 
 ::: pf-proof
 
-For every $u\in V$, step <1>8 gives
+For every $u\in V$, step [](#s1-8){.pf-ref} gives
 \[
 q(A)u\in W.
 \]
-Step <1>5 says that $p(A)$ annihilates every vector in $W$.
+Step [](#s1-5){.pf-ref} says that $p(A)$ annihilates every vector in $W$.
 Therefore
 \[
 P(A)u
@@ -308,7 +308,7 @@ P(A)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The polynomial $P$ has degree at most $d$.
 
@@ -319,7 +319,7 @@ By construction,
 \[
 \deg p=r,
 \]
-and by step <1>7,
+and by step [](#s1-7){.pf-ref},
 \[
 \deg q\le d-r.
 \]
@@ -339,7 +339,7 @@ r+(d-r)
 
 ::: pf-qed
 
-Steps <1>1--<1>10 prove by induction that every endomorphism of a $d$-dimensional vector space satisfies a polynomial of degree at most $d$, without using Jordan form or Cayley--Hamilton.
+Steps [](#s1-1){.pf-ref} through [](#s1-10){.pf-ref} prove by induction that every endomorphism of a $d$-dimensional vector space satisfies a polynomial of degree at most $d$, without using Jordan form or Cayley--Hamilton.
 
 :::
 

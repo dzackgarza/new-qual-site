@@ -85,7 +85,7 @@ All three functions are continuously differentiable near the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiating
 \[
@@ -119,7 +119,7 @@ Evaluating at $(y,z)=(0,0)$ gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -134,14 +134,14 @@ at the origin.
 
 ::: pf-proof
 
-Solve the identity in step <1>2 for $x_y$.
+Solve the identity in step [](#s1-2){.pf-ref} for $x_y$.
 The denominator is nonzero by hypothesis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Differentiating
 \[
@@ -170,7 +170,7 @@ Since $F_y\ne0$, solve for $y_z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Differentiating
 \[
@@ -199,7 +199,7 @@ Since $F_z\ne0$, solve for $z_x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Multiplying the three identities gives
 \[
@@ -215,7 +215,7 @@ Multiplying the three identities gives
 
 ::: pf-proof
 
-By steps <1>3--<1>5,
+By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 \begin{aligned}
 x_y\,y_z\,z_x
@@ -235,7 +235,7 @@ All factors cancel because each of $F_x,F_y,F_z$ is nonzero.
 
 ::: pf-qed
 
-Step <1>6 is the required cyclic derivative identity.
+Step [](#s1-6){.pf-ref} is the required cyclic derivative identity.
 
 :::
 

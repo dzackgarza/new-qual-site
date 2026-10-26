@@ -27,7 +27,7 @@ It is enough to prove the corresponding statement for the tangent bundle.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choose local frames of $TM$ on a trivializing cover $\{U_i\}$, with transition functions
 \[
@@ -56,7 +56,7 @@ which is precisely the Cech cocycle condition for the constant coefficient group
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The cohomology class of this cocycle is
 \[
@@ -70,13 +70,13 @@ The determinant-sign homomorphism
 \[
 GL_n(\mathbb R)\to\{\pm1\}
 \]
-defines the orientation double cover of the frame bundle. The characteristic class classifying this double cover is, by definition, the first Stiefel--Whitney class. In transition-function terms it is represented exactly by the sign cocycle $\{\epsilon_{ij}\}$ from step <1>1.
+defines the orientation double cover of the frame bundle. The characteristic class classifying this double cover is, by definition, the first Stiefel--Whitney class. In transition-function terms it is represented exactly by the sign cocycle $\{\epsilon_{ij}\}$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $M$ is orientable, then
 \[
@@ -96,7 +96,7 @@ on every overlap. Thus the cocycle representing $w_1(TM)$ is trivial, so its coh
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Conversely, suppose
 \[
@@ -114,13 +114,13 @@ such that
 
 ::: pf-proof
 
-By step <1>2, the Cech class of $\{\epsilon_{ij}\}$ is $w_1(TM)$. Vanishing of this class means exactly that the cocycle is a Cech coboundary, which has the displayed form.
+By step [](#s1-2){.pf-ref}, the Cech class of $\{\epsilon_{ij}\}$ is $w_1(TM)$. Vanishing of this class means exactly that the cocycle is a Cech coboundary, which has the displayed form.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Reverse the first vector of the local frame on $U_i$ whenever $\delta_i=-1$. The new transition functions all have positive determinant.
 
@@ -131,7 +131,7 @@ Changing one vector in a frame multiplies its orientation sign by $-1$. Thus mod
 \[
 \delta_i^{-1}\epsilon_{ij}\delta_j.
 \]
-Using step <1>4 gives
+Using step [](#s1-4){.pf-ref} gives
 \[
 \delta_i^{-1}(\delta_i\delta_j^{-1})\delta_j=1.
 \]
@@ -141,14 +141,14 @@ Hence every modified transition function lies in $GL_n^+(\mathbb R)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 These modified local frames define an orientation of $M$.
 
 
 ::: pf-proof
 
-On overlaps, step <1>5 shows that the two local frames differ by an orientation-preserving matrix. Therefore their induced local orientations agree and glue to a global orientation.
+On overlaps, step [](#s1-5){.pf-ref} shows that the two local frames differ by an orientation-preserving matrix. Therefore their induced local orientations agree and glue to a global orientation.
 
 :::
 
@@ -168,13 +168,13 @@ Transporting a local orientation around a loop either preserves or reverses it, 
 \[
 H^1(M;\mathbb Z/2)\cong\operatorname{Hom}(\pi_1(M),\mathbb Z/2)
 \]
-on each path component, this homomorphism represents the same determinant-sign class of step <1>2. Its vanishing says precisely that the orientation local system is trivial.
+on each path component, this homomorphism represents the same determinant-sign class of step [](#s1-2){.pf-ref}. Its vanishing says precisely that the orientation local system is trivial.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -184,7 +184,7 @@ Therefore
 
 ::: pf-proof
 
-The forward implication is step <1>3; the reverse implication is steps <1>4--<1>6.
+The forward implication is step [](#s1-3){.pf-ref}; the reverse implication is steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -192,7 +192,7 @@ The forward implication is step <1>3; the reverse implication is steps <1>4--<1>
 
 ::: pf-qed
 
-Step <1>8 is the desired equivalence.
+Step [](#s1-8){.pf-ref} is the desired equivalence.
 
 :::
 

@@ -36,7 +36,7 @@ J_\nu(x)=\sum_{k=0}^{\infty}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -64,7 +64,7 @@ x^\nu\sum_{k=0}^{\infty}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -92,9 +92,9 @@ Set $j=k-1$. Since $k!=k j!$, this becomes
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Expanding step <1>1 by the product rule gives
+Expanding step [](#s1-1){.pf-ref} by the product rule gives
 \[
 J_\nu'(x)+\frac\nu xJ_\nu(x)=J_{\nu-1}(x).
 \]
@@ -102,15 +102,15 @@ J_\nu'(x)+\frac\nu xJ_\nu(x)=J_{\nu-1}(x).
 
 ::: pf-proof
 
-Divide the identity in step <1>1 by $x^\nu$ after applying the product rule to its left side.
+Divide the identity in step [](#s1-1){.pf-ref} by $x^\nu$ after applying the product rule to its left side.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Expanding step <1>2 by the product rule gives
+Expanding step [](#s1-2){.pf-ref} by the product rule gives
 \[
 J_\nu'(x)-\frac\nu xJ_\nu(x)=-J_{\nu+1}(x).
 \]
@@ -118,15 +118,15 @@ J_\nu'(x)-\frac\nu xJ_\nu(x)=-J_{\nu+1}(x).
 
 ::: pf-proof
 
-Divide the identity in step <1>2 by $x^{-\nu}$ after applying the product rule.
+Divide the identity in step [](#s1-2){.pf-ref} by $x^{-\nu}$ after applying the product rule.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Subtracting step <1>4 from step <1>3 gives
+Subtracting step [](#s1-4){.pf-ref} from step [](#s1-3){.pf-ref} gives
 \[
 \boxed{J_{\nu-1}(x)+J_{\nu+1}(x)=\frac{2\nu}{x}J_\nu(x)}.
 \]
@@ -140,9 +140,9 @@ The $J_\nu'$ terms cancel, leaving $2\nu J_\nu/x$ on one side and $J_{\nu-1}+J_{
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Adding steps <1>3 and <1>4 gives
+Adding steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} gives
 \[
 \boxed{J_\nu'(x)=\frac12\left(J_{\nu-1}(x)-J_{\nu+1}(x)\right)}.
 \]
@@ -158,7 +158,7 @@ The terms $\nu J_\nu/x$ cancel. Dividing the resulting identity by $2$ gives the
 
 ::: pf-qed
 
-Steps <1>1--<1>2 prove parts (a)--(b), step <1>6 proves part (c), and step <1>5 proves part (d).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove parts (a)--(b), step [](#s1-6){.pf-ref} proves part (c), and step [](#s1-5){.pf-ref} proves part (d).
 
 :::
 

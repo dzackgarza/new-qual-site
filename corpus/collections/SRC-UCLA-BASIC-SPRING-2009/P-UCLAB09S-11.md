@@ -26,7 +26,7 @@ How can it be determined from a matrix in Jordan normal form?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Jordan normal form theorem applies to matrices
 \[
@@ -45,7 +45,7 @@ Thus the standard Jordan normal form theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A Jordan block of size $r$ with eigenvalue $\lambda$ is the matrix
 \[
@@ -76,7 +76,7 @@ where $N_r$ has ones on the superdiagonal and zeros elsewhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A matrix is in *Jordan normal form* if it is block diagonal and every diagonal block is a Jordan block.
 
@@ -100,7 +100,7 @@ r_1+\cdots+r_s=n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 To say that $A$ can be *brought to Jordan normal form* means that there exists an invertible matrix
 \[
@@ -122,7 +122,7 @@ Equivalently, $J$ is the matrix of the same linear operator in a suitable basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Jordan normal form is *essentially unique* in the following precise sense:
 for each eigenvalue $\lambda$, the multiset of sizes of the Jordan blocks with eigenvalue $\lambda$ is uniquely determined by $A$.
@@ -138,7 +138,7 @@ This is the uniqueness assertion in the Jordan normal form theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The complete statement of the Jordan normal form theorem is therefore:
 for every
@@ -154,14 +154,14 @@ is block diagonal with Jordan blocks, and the resulting collection of Jordan blo
 
 ::: pf-proof
 
-This combines the definitions from steps <1>2--<1>5 with the existence and uniqueness assertions of the Jordan normal form theorem.
+This combines the definitions from steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} with the existence and uniqueness assertions of the Jordan normal form theorem.
 No proof of the theorem is required by the problem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The *minimal polynomial* of $A$ is the unique monic polynomial
 \[
@@ -188,7 +188,7 @@ Equivalently, it is the monic annihilating polynomial of least degree.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For a Jordan block
 \[
@@ -224,7 +224,7 @@ and no lower positive power vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Suppose the Jordan form of $A$ has, for each eigenvalue $\lambda$, largest block size
 \[
@@ -244,7 +244,7 @@ Then
 ::: pf-proof
 
 A polynomial annihilates a block diagonal matrix exactly when it annihilates every Jordan block.
-By step <1>8, to annihilate every block with eigenvalue $\lambda$, the polynomial must contain
+By step [](#s1-8){.pf-ref}, to annihilate every block with eigenvalue $\lambda$, the polynomial must contain
 \[
 (t-\lambda)^{m_\lambda},
 \]
@@ -259,7 +259,7 @@ Similarity preserves polynomial identities, so this is also the minimal polynomi
 
 ::: pf-qed
 
-Steps <1>1--<1>6 answer part (a), and steps <1>7--<1>9 answer part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} answer part (a), and steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} answer part (b).
 
 :::
 

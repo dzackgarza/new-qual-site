@@ -99,7 +99,7 @@ Here \(k=1\) and \(b=2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Gluing along a boundary circle does not change the sum of Euler characteristics.
 
@@ -121,7 +121,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -136,13 +136,13 @@ Therefore
 
 ::: pf-proof
 
-There are three torus pieces and two projective-plane pieces. Perform the five cyclic boundary-circle gluings and use step <1>5.
+There are three torus pieces and two projective-plane pieces. Perform the five cyclic boundary-circle gluings and use step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The surface \(Y\) is nonorientable.
 
@@ -162,13 +162,13 @@ By the classification theorem, \(Y\) is homeomorphic to a connected sum of \(k\)
 
 ::: pf-proof
 
-The surface is closed, connected, and nonorientable by construction and step <1>7.
+The surface is closed, connected, and nonorientable by construction and step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 A closed nonorientable surface of genus \(k\) has
 \[
@@ -197,13 +197,13 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>6 and <1>9.
+Combine steps [](#s1-6){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -222,7 +222,7 @@ Solve
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Thus
 \[
@@ -235,7 +235,7 @@ Y
 
 ::: pf-proof
 
-Apply the classification theorem using steps <1>7 and <1>11.
+Apply the classification theorem using steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref}.
 
 :::
 
@@ -243,7 +243,7 @@ Apply the classification theorem using steps <1>7 and <1>11.
 
 ::: pf-qed
 
-Step <1>12 identifies the required surface.
+Step [](#s1-12){.pf-ref} identifies the required surface.
 
 :::
 

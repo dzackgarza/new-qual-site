@@ -39,7 +39,7 @@ f(x)e^{-inx}\,dx.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(y\in\mathbb R\),
 \[
@@ -86,7 +86,7 @@ Divide by \(2\pi\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -99,7 +99,7 @@ for every \(y\in\mathbb R\).
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 |a_n|
@@ -134,7 +134,7 @@ Ce^{\alpha|y|}e^{ny}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -155,7 +155,7 @@ When \(y<0\),
 \[
 |y|=-y.
 \]
-Hence step <1>2 becomes
+Hence step [](#s1-2){.pf-ref} becomes
 \[
 |a_n|
 \le
@@ -168,7 +168,7 @@ C e^{(n-\alpha)y}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since
 \[
@@ -195,13 +195,13 @@ Thus
 \[
 e^{(n-\alpha)y}\to0
 \]
-as \(y\to-\infty\). Step <1>3 then forces \(|a_n|=0\).
+as \(y\to-\infty\). Step [](#s1-3){.pf-ref} then forces \(|a_n|=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -222,7 +222,7 @@ When \(y>0\),
 \[
 |y|=y.
 \]
-Thus step <1>2 gives
+Thus step [](#s1-2){.pf-ref} gives
 \[
 |a_n|
 \le
@@ -235,7 +235,7 @@ Ce^{(n+\alpha)y}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since
 \[
@@ -258,13 +258,13 @@ Because \(n\le-1\) and \(\alpha<1\),
 \[
 n+\alpha\le-1+\alpha<0.
 \]
-Hence the right-hand side of step <1>5 tends to zero as \(y\to+\infty\).
+Hence the right-hand side of step [](#s1-5){.pf-ref} tends to zero as \(y\to+\infty\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the only possibly nonzero Fourier coefficient is
 \[
@@ -274,7 +274,7 @@ Therefore the only possibly nonzero Fourier coefficient is
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 kill every coefficient with \(n\ne0\).
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} kill every coefficient with \(n\ne0\).
 
 :::
 
@@ -287,7 +287,7 @@ Every Fourier coefficient of the continuous \(2\pi\)-periodic function \(h\) is 
 
 ::: pf-proof
 
-For \(n\ne0\), this follows from step <1>7. For \(n=0\),
+For \(n\ne0\), this follows from step [](#s1-7){.pf-ref}. For \(n=0\),
 \[
 \frac1{2\pi}\int_0^{2\pi}h(x)\,dx
 =
@@ -300,7 +300,7 @@ a_0-a_0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -329,13 +329,13 @@ for every real \(x\).
 
 ::: pf-proof
 
-This is the definition of \(h\) and step <1>9.
+This is the definition of \(h\) and step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Since \(f-a_0\) is entire and vanishes on the real line, it vanishes identically on \(\mathbb C\).
 
@@ -351,7 +351,7 @@ f-a_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -361,7 +361,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>11 gives
+Step [](#s1-11){.pf-ref} gives
 \[
 f\equiv a_0.
 \]
@@ -372,7 +372,7 @@ f\equiv a_0.
 
 ::: pf-qed
 
-Step <1>12 is the required conclusion.
+Step [](#s1-12){.pf-ref} is the required conclusion.
 
 :::
 

@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sine function maps $S$ into the upper half-plane $\HH$.
 
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The derivative of $\sin$ does not vanish on $S$.
 
@@ -101,7 +101,7 @@ for every $w\in S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 $$
@@ -156,7 +156,7 @@ so it cannot equal any odd multiple of $\pi$. Thus the second case is impossible
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z\in\HH$, the equation
 $$
@@ -236,7 +236,7 @@ $$
 \sin w=z.
 $$
 
-Since $z\in\HH$, step <1>1's formula gives
+Since $z\in\HH$, step [](#s1-1){.pf-ref}'s formula gives
 $$
 0
 <
@@ -265,7 +265,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map
 $$
@@ -276,13 +276,13 @@ is a conformal bijection.
 
 ::: pf-proof
 
-Step <1>1 shows that the image lies in $\HH$, step <1>2 gives local conformality, step <1>3 gives injectivity, and step <1>4 gives surjectivity.
+Step [](#s1-1){.pf-ref} shows that the image lies in $\HH$, step [](#s1-2){.pf-ref} gives local conformality, step [](#s1-3){.pf-ref} gives injectivity, and step [](#s1-4){.pf-ref} gives surjectivity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the required conformal map is the inverse branch
 $$
@@ -307,7 +307,7 @@ for $z\in\HH$.
 
 ::: pf-proof
 
-By step <1>5, $\sin:S\to\HH$ is a conformal bijection. Its inverse is therefore a conformal bijection
+By step [](#s1-5){.pf-ref}, $\sin:S\to\HH$ is a conformal bijection. Its inverse is therefore a conformal bijection
 $$
 F:\HH\to S.
 $$
@@ -319,7 +319,7 @@ This inverse is precisely the indicated branch of the inverse sine.
 
 ::: pf-qed
 
-Step <1>6 gives the requested conformal map.
+Step [](#s1-6){.pf-ref} gives the requested conformal map.
 
 :::
 

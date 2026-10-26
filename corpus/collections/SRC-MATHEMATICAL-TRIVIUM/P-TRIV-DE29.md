@@ -27,7 +27,7 @@ with $y ^ { \prime } ( 0 ) = y ^ { \prime } ( \pi ) = 0 ;$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is no nonzero solution when $\lambda<0$.
 
@@ -48,7 +48,7 @@ The condition $y'(0)=0$ gives $B=0$, and then $y'(\pi)=\mu A\sinh(\mu\pi)=0$ giv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 When $\lambda=0$, the nonzero solutions are the constant functions
 \[
@@ -64,7 +64,7 @@ The equation is $y''=0$, so $y=A+Bx$. Both boundary conditions reduce to $B=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\lambda>0$, write $\lambda=\mu^2$. A nonzero solution exists exactly when
 \[
@@ -94,7 +94,7 @@ For a nonzero solution $A\ne0$, so $\sin(\mu\pi)=0$, equivalently $\mu=n\in\math
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus all eigenvalues and corresponding nonzero solutions are
 \[
@@ -104,7 +104,7 @@ Thus all eigenvalues and corresponding nonzero solutions are
 
 ::: pf-proof
 
-Step <1>1 excludes negative eigenvalues, step <1>2 supplies $n=0$, and step <1>3 supplies every positive integer $n$.
+Step [](#s1-1){.pf-ref} excludes negative eigenvalues, step [](#s1-2){.pf-ref} supplies $n=0$, and step [](#s1-3){.pf-ref} supplies every positive integer $n$.
 
 :::
 
@@ -112,7 +112,7 @@ Step <1>1 excludes negative eigenvalues, step <1>2 supplies $n=0$, and step <1>3
 
 ::: pf-qed
 
-Step <1>4 lists every nonzero solution satisfying both Neumann boundary conditions.
+Step [](#s1-4){.pf-ref} lists every nonzero solution satisfying both Neumann boundary conditions.
 
 :::
 

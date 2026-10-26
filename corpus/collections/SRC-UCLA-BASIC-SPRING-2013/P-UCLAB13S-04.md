@@ -34,7 +34,7 @@ a_n=h_n-\ln n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\ge1$,
 \[
@@ -81,7 +81,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(a_n)$ is strictly decreasing.
 
@@ -110,7 +110,7 @@ h_n-\ln n
 \ln\left(1+\frac1n\right).
 \end{aligned}
 \]
-By step <1>1, this quantity is negative.
+By step [](#s1-1){.pf-ref}, this quantity is negative.
 Thus
 \[
 a_{n+1}<a_n.
@@ -120,7 +120,7 @@ a_{n+1}<a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n\ge1$,
 \[
@@ -166,14 +166,14 @@ h_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence $(a_n)$ is bounded below.
 
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 h_n
 \ge
@@ -203,22 +203,22 @@ for every $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sequence $(a_n)$ converges.
 
 
 ::: pf-proof
 
-By step <1>2, $(a_n)$ is decreasing.
-By step <1>4, it is bounded below.
+By step [](#s1-2){.pf-ref}, $(a_n)$ is decreasing.
+By step [](#s1-4){.pf-ref}, it is bounded below.
 The monotone convergence theorem for real sequences therefore gives the existence of a finite limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently,
 \[
@@ -233,7 +233,7 @@ exists.
 
 ::: pf-proof
 
-This is the limit of the convergent sequence $a_n$ from step <1>5.
+This is the limit of the convergent sequence $a_n$ from step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -241,7 +241,7 @@ This is the limit of the convergent sequence $a_n$ from step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

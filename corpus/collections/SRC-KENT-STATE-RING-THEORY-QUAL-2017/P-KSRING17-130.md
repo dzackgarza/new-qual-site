@@ -58,7 +58,7 @@ belong to $\mathcal S$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The union of a chain of prime ideals is an ideal.
 
@@ -140,7 +140,7 @@ U
 =
 \bigcup_{P\in\mathcal C}P.
 $$
-By step <1>1, $U$ is an ideal.
+By step [](#s1-1){.pf-ref}, $U$ is an ideal.
 It is proper: if
 $$
 1\in U,
@@ -185,7 +185,7 @@ Thus $U$ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The poset
 $$
@@ -313,7 +313,7 @@ Hence $I$ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Order $\mathcal S$ by reverse inclusion:
 $$
@@ -359,14 +359,14 @@ Again, the empty chain has an upper bound because $\mathcal S$ is nonempty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The family $\mathcal S$ has a minimal element under ordinary inclusion.
 
 
 ::: pf-proof
 
-Apply Zorn's lemma to the reverse-inclusion order from step <1>6.
+Apply Zorn's lemma to the reverse-inclusion order from step [](#s1-6){.pf-ref}.
 There is a maximal element with respect to
 $$
 \preceq.
@@ -377,7 +377,7 @@ Maximality in reverse inclusion is exactly minimality in ordinary inclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the corrected statement holds:
 $$
@@ -390,7 +390,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives a maximal element, and step <1>7 gives a minimal element.
+Step [](#s1-3){.pf-ref} gives a maximal element, and step [](#s1-7){.pf-ref} gives a minimal element.
 
 :::
 
@@ -398,7 +398,7 @@ Step <1>3 gives a maximal element, and step <1>7 gives a minimal element.
 
 ::: pf-qed
 
-The original source statement is false; step <1>8 proves the corrected version stated in the remark.
+The original source statement is false; step [](#s1-8){.pf-ref} proves the corrected version stated in the remark.
 
 :::
 

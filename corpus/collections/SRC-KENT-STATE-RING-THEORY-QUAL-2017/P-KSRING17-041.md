@@ -23,7 +23,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -52,7 +52,7 @@ is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every field is an integral domain.
 
@@ -85,14 +85,14 @@ Thus a field has no zero divisors and is therefore an integral domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore every maximal ideal of $R$ is prime.
 
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 R/M
 $$
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), take
 $$
@@ -129,7 +129,7 @@ is nonzero because it contains the nonzero polynomial $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal
 $$
@@ -160,7 +160,7 @@ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal
 $$
@@ -193,7 +193,7 @@ is therefore not maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -206,7 +206,7 @@ is a nonzero prime ideal that is not maximal.
 
 ::: pf-proof
 
-Combine steps <1>4--<1>6.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -214,7 +214,7 @@ Combine steps <1>4--<1>6.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>7 gives the required example for part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} gives the required example for part (b).
 
 :::
 

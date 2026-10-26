@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $p\in D$, the radial segment
 $$
@@ -53,7 +53,7 @@ Hence $tp\in D$ for every $t\in[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose, for contradiction, that $D$ is disconnected. Then there are disjoint nonempty subsets $U,V\subset D$, both open in the subspace topology of $D$, such that
 $$
@@ -70,7 +70,7 @@ This is the definition of disconnectedness by a separation into two nonempty rel
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No point of $D$ can lie in $V$.
 
@@ -83,7 +83,7 @@ $$
 \qquad
 \gamma(t)=tp.
 $$
-Step <1>1 shows that the map indeed takes values in $D$, and it is continuous.
+Step [](#s1-1){.pf-ref} shows that the map indeed takes values in $D$, and it is continuous.
 
 Set
 $$
@@ -111,14 +111,14 @@ This separates the interval $[0,1]$ into two disjoint nonempty open subsets, con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $D$ is connected.
 
 
 ::: pf-proof
 
-If $V$ were nonempty, it would contain some $p\in D$, contradicting step <1>3. Hence the separation assumed in step <1>2 cannot exist.
+If $V$ were nonempty, it would contain some $p\in D$, contradicting step [](#s1-3){.pf-ref}. Hence the separation assumed in step [](#s1-2){.pf-ref} cannot exist.
 
 :::
 
@@ -126,7 +126,7 @@ If $V$ were nonempty, it would contain some $p\in D$, contradicting step <1>3. H
 
 ::: pf-qed
 
-Step <1>4 is precisely the required conclusion for the open unit disk.
+Step [](#s1-4){.pf-ref} is precisely the required conclusion for the open unit disk.
 
 :::
 

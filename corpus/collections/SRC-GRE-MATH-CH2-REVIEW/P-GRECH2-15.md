@@ -35,7 +35,7 @@ The $y$-intercept occurs at $x=0$, so the required slope is $f'(0)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Writing
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The tangent slope is
 $$
@@ -80,7 +80,7 @@ Substitute
 $$
 e^0=1,\qquad \arccos0=\frac\pi2,\qquad \sec0=1,\qquad \tan0=0
 $$
-into step <1>1. This gives
+into step [](#s1-1){.pf-ref}. This gives
 $$
 f'(0)=\frac\pi2-1+0.
 $$
@@ -91,7 +91,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the slope at the $y$-intercept and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the slope at the $y$-intercept and corresponding choice.
 
 :::
 

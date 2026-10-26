@@ -43,7 +43,7 @@ X_n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each \(X_n\) is path connected.
 
@@ -76,7 +76,7 @@ is path connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence is decreasing:
 \[
@@ -97,7 +97,7 @@ The two vertical rays are independent of \(n\), and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every point on either vertical ray belongs to every \(X_n\).
 
@@ -116,7 +116,7 @@ are included explicitly in the definition of every \(X_n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No point \((x,y)\) with \(-1<x<1\) belongs to every \(X_n\).
 
@@ -149,13 +149,13 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 gives inclusion of the two rays in the intersection, and step <1>4 excludes all points between them.
+Step [](#s1-3){.pf-ref} gives inclusion of the two rays in the intersection, and step [](#s1-4){.pf-ref} excludes all points between them.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The two rays are disjoint, nonempty, and open in their union.
 
@@ -180,7 +180,7 @@ where the two half-planes are open in \(\mathbb R^2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -190,7 +190,7 @@ Hence
 
 ::: pf-proof
 
-Step <1>6 gives a separation into two disjoint nonempty open subsets.
+Step [](#s1-6){.pf-ref} gives a separation into two disjoint nonempty open subsets.
 
 :::
 
@@ -198,7 +198,7 @@ Step <1>6 gives a separation into two disjoint nonempty open subsets.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 verify the hypotheses, while step <1>7 disproves the proposed conclusion.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} verify the hypotheses, while step [](#s1-7){.pf-ref} disproves the proposed conclusion.
 
 :::
 

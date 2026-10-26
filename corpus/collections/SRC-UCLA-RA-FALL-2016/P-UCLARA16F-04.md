@@ -35,7 +35,7 @@ f\in L^2([0,1]):
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -54,7 +54,7 @@ If \(f\in L^2\), then \(\|f\|_2<\infty\), so choose an integer \(n\ge\|f\|_2\). 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -75,7 +75,7 @@ This is the setup for proving that \(A_n\) is closed in the \(L^1\)-topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists a subsequence
 \[
@@ -124,7 +124,7 @@ f_{j_k}(x)-f(x)\to0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fatou's lemma gives
 \[
@@ -137,7 +137,7 @@ Fatou's lemma gives
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 |f_{j_k}(x)|^2\to|f(x)|^2
 \]
@@ -147,7 +147,7 @@ almost everywhere, and the integrands are nonnegative. Apply Fatou's lemma.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since each \(f_{j_k}\in A_n\),
 \[
@@ -168,7 +168,7 @@ This is equivalent to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -181,13 +181,13 @@ n^2}.
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -198,7 +198,7 @@ f\in A_n}.
 
 ::: pf-proof
 
-Step <1>6 shows \(f\in L^2\) and
+Step [](#s1-6){.pf-ref} shows \(f\in L^2\) and
 \[
 \|f\|_2\le n.
 \]
@@ -214,7 +214,7 @@ Thus \(A_n\) is closed in \(L^1([0,1])\).
 
 ::: pf-proof
 
-Every \(L^1\)-limit of a sequence in \(A_n\) remains in \(A_n\) by steps <1>2--<1>7.
+Every \(L^1\)-limit of a sequence in \(A_n\) remains in \(A_n\) by steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -238,7 +238,7 @@ This is a measurable function on \((0,1]\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 One has
 \[
@@ -261,7 +261,7 @@ h\in L^1([0,1])}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 One has
 \[
@@ -284,7 +284,7 @@ h\notin L^2([0,1])}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Choose
 \[
@@ -299,7 +299,7 @@ so small that
 
 ::: pf-proof
 
-The number \(\|h\|_1=2\) is finite by step <1>10, so any
+The number \(\|h\|_1=2\) is finite by step [](#s1-10){.pf-ref}, so any
 \[
 0<\lambda<\varepsilon/2
 \]
@@ -309,7 +309,7 @@ works.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Define
 \[
@@ -330,7 +330,7 @@ and \(h\in L^1\), the sum \(g\) belongs to \(L^1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 One has
 \[
@@ -349,13 +349,13 @@ By definition,
 \[
 g-f=\lambda h.
 \]
-Use step <1>12.
+Use step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The function \(g\) does not belong to \(L^2([0,1])\).
 
@@ -368,13 +368,13 @@ g-f
 =
 \lambda h
 \]
-would also lie in \(L^2\), because \(L^2\) is a vector space. Since \(\lambda\ne0\), this would imply \(h\in L^2\), contradicting step <1>11.
+would also lie in \(L^2\), because \(L^2\) is a vector space. Since \(\lambda\ne0\), this would imply \(h\in L^2\), contradicting step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence
 \[
@@ -385,20 +385,20 @@ g\notin A_n}.
 
 ::: pf-proof
 
-The set \(A_n\) is contained in \(L^2\), while step <1>15 gives \(g\notin L^2\).
+The set \(A_n\) is contained in \(L^2\), while step [](#s1-15){.pf-ref} gives \(g\notin L^2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore every \(L^1\)-ball around every \(f\in A_n\) contains a point outside \(A_n\).
 
 
 ::: pf-proof
 
-Given arbitrary \(\varepsilon>0\), steps <1>13--<1>16 construct \(g\) with
+Given arbitrary \(\varepsilon>0\), steps [](#s1-13){.pf-ref} through [](#s1-16){.pf-ref} construct \(g\) with
 \[
 \|g-f\|_1<\varepsilon
 \]
@@ -411,7 +411,7 @@ g\notin A_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Thus
 \[
@@ -422,13 +422,13 @@ Thus
 
 ::: pf-proof
 
-Step <1>17 is exactly the assertion that \(A_n\) has empty interior.
+Step [](#s1-17){.pf-ref} is exactly the assertion that \(A_n\) has empty interior.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Since \(A_n\) is closed and has empty interior, it is nowhere dense in \(L^1\).
 
@@ -445,7 +445,7 @@ Thus
 =
 \varnothing
 \]
-by step <1>18.
+by step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -465,13 +465,13 @@ is a countable union of nowhere-dense subsets of \(L^1([0,1])\).
 
 ::: pf-proof
 
-Use steps <1>1 and <1>19.
+Use steps [](#s1-1){.pf-ref} and [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore
 \[
@@ -491,7 +491,7 @@ This is the definition of a meager set.
 
 ::: pf-qed
 
-Step <1>21 is the required conclusion.
+Step [](#s1-21){.pf-ref} is the required conclusion.
 
 :::
 

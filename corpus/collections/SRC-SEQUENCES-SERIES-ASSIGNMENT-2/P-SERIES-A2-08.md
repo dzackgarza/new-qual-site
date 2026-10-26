@@ -37,7 +37,7 @@ a_n=p^n n^p.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The \(n\)th root is
 \[
@@ -60,7 +60,7 @@ p\,n^{p/n}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -87,7 +87,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -98,13 +98,13 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -115,14 +115,14 @@ the series converges absolutely.
 
 ::: pf-proof
 
-The root-test limit in step <1>3 is \(<1\). The terms are nonnegative, so
+The root-test limit in step [](#s1-3){.pf-ref} is \(<1\). The terms are nonnegative, so
 convergence is automatically absolute.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -139,7 +139,7 @@ The root-test limit is \(>1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -160,7 +160,7 @@ The terms do not tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus Series 1 converges exactly for
 \[
@@ -174,7 +174,7 @@ and diverges for
 
 ::: pf-proof
 
-Combine steps <1>4--<1>6.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -204,7 +204,7 @@ n^p(\sqrt{n+1}+\sqrt n)}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Factoring \(\sqrt n\),
 \[
@@ -233,7 +233,7 @@ n^{-(p+1/2)}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -260,7 +260,7 @@ tends to \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -274,7 +274,7 @@ converges exactly when
 
 ::: pf-proof
 
-By step <1>10, \(\sum b_n\) is limit-comparable to the \(p\)-series
+By step [](#s1-10){.pf-ref}, \(\sum b_n\) is limit-comparable to the \(p\)-series
 \[
 \sum n^{-(p+1/2)}.
 \]
@@ -287,7 +287,7 @@ p+\frac12>1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The terms \(b_n\) tend to zero exactly when
 \[
@@ -297,7 +297,7 @@ The terms \(b_n\) tend to zero exactly when
 
 ::: pf-proof
 
-From step <1>9:
+From step [](#s1-9){.pf-ref}:
 - if \(p+\tfrac12>0\), then \(n^{-(p+1/2)}\to0\);
 - if \(p+\tfrac12=0\), then \(b_n\to1/2\);
 - if \(p+\tfrac12<0\), then \(b_n\to+\infty\).
@@ -306,7 +306,7 @@ From step <1>9:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Assume
 \[
@@ -351,7 +351,7 @@ eventually increasing and \(b_n=1/D(n)\) is eventually decreasing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore the alternating series
 \[
@@ -365,7 +365,7 @@ converges whenever
 
 ::: pf-proof
 
-By step <1>12, \(b_n\to0\), and by step <1>13, \(b_n\) is eventually
+By step [](#s1-12){.pf-ref}, \(b_n\to0\), and by step [](#s1-13){.pf-ref}, \(b_n\) is eventually
 decreasing. The alternating-series test applies after discarding finitely
 many initial terms.
 
@@ -373,7 +373,7 @@ many initial terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 If
 \[
@@ -384,7 +384,7 @@ the alternating series diverges.
 
 ::: pf-proof
 
-By step <1>12, \(b_n\not\to0\). Therefore the terms
+By step [](#s1-12){.pf-ref}, \(b_n\not\to0\). Therefore the terms
 \[
 (-1)^n b_n
 \]
@@ -394,7 +394,7 @@ do not tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence Series 2 is
 \[
@@ -411,8 +411,8 @@ and
 
 ::: pf-proof
 
-Absolute convergence is step <1>11. Ordinary convergence is steps
-<1>14--<1>15. The conditional range is the difference between the ordinary
+Absolute convergence is step [](#s1-11){.pf-ref}. Ordinary convergence is steps
+[](#s1-14){.pf-ref} through [](#s1-15){.pf-ref}. The conditional range is the difference between the ordinary
 and absolute convergence ranges.
 
 :::
@@ -439,7 +439,7 @@ Factor \(p^n\) from the denominator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Since
 \[
@@ -459,7 +459,7 @@ This is a geometric sequence with ratio in \((0,1)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Therefore
 \[
@@ -477,7 +477,7 @@ Therefore
 
 ::: pf-proof
 
-Use step <1>18.
+Use step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -493,13 +493,13 @@ Hence Series 3 has the same convergence behavior as
 
 ::: pf-proof
 
-Apply the limit-comparison test using step <1>19.
+Apply the limit-comparison test using step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Thus Series 3 converges exactly when
 \[
@@ -586,7 +586,7 @@ Use the standard limit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 Therefore Series 4
 \[
@@ -625,7 +625,7 @@ The terms are nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 One has
 \[
@@ -661,13 +661,13 @@ a_n^{1/n}\to0}.
 
 ::: pf-proof
 
-Subtract \(1\) from the limit in step <1>26.
+Subtract \(1\) from the limit in step [](#s1-26){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 Therefore Series 5
 \[
@@ -686,7 +686,7 @@ The root-test limit is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-29}
 
 If
 \[
@@ -715,7 +715,7 @@ at \(x=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-30}
 
 Hence the series diverges when
 \[
@@ -731,7 +731,7 @@ The terms do not tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-31}
 
 If
 \[
@@ -752,7 +752,7 @@ then every term equals \(1/2\), so the series diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-32}
 
 If
 \[
@@ -776,7 +776,7 @@ For odd \(n\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-33}
 
 Assume
 \[
@@ -799,7 +799,7 @@ Divide numerator and denominator by \(r^n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-34}
 
 Since
 \[
@@ -830,7 +830,7 @@ Then the reverse triangle inequality gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-35}
 
 For \(n\ge N\),
 \[
@@ -844,13 +844,13 @@ For \(n\ge N\),
 
 ::: pf-proof
 
-Use step <1>33 and the denominator bound in step <1>34.
+Use step [](#s1-33){.pf-ref} and the denominator bound in step [](#s1-34){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-36}
 
 Therefore Series 6 converges absolutely for
 \[
@@ -868,13 +868,13 @@ converges because
 \[
 |r|^{-1}<1.
 \]
-Apply the comparison test using step <1>35.
+Apply the comparison test using step [](#s1-35){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-37}
 
 Thus, for real \(r\), Series 6 is
 \[
@@ -892,13 +892,13 @@ does not define a series.
 
 ::: pf-proof
 
-Combine steps <1>29--<1>36.
+Combine steps [](#s1-29){.pf-ref} through [](#s1-36){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-38}
 
 Collecting the six classifications:
 \[
@@ -918,7 +918,7 @@ Collecting the six classifications:
 
 ::: pf-proof
 
-Use steps <1>7, <1>16, <1>21, <1>24, <1>28, and <1>37.
+Use steps [](#s1-7){.pf-ref}, [](#s1-16){.pf-ref}, [](#s1-21){.pf-ref}, [](#s1-24){.pf-ref}, and [](#s1-28){.pf-ref}, and [](#s1-37){.pf-ref}.
 
 :::
 
@@ -926,7 +926,7 @@ Use steps <1>7, <1>16, <1>21, <1>24, <1>28, and <1>37.
 
 ::: pf-qed
 
-Step <1>38 gives the complete convergence classification.
+Step [](#s1-38){.pf-ref} gives the complete convergence classification.
 
 :::
 

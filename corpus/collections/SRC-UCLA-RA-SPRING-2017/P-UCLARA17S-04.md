@@ -30,7 +30,7 @@ Show that no subsequence of $L_n$ converges in the weak-* topology on $M([0,1))^
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If a subsequence $(L_{n_k})$ converges weak-* in $M([0,1))^*$, then for every $x\in[0,1)$ the scalar sequence $(a_{n_k}(x))_k$ converges.
 
@@ -49,7 +49,7 @@ Thus weak-* convergence would force $(a_{n_k}(x))_k$ to converge for every $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Given any strictly increasing sequence of indices
 $$
@@ -93,18 +93,18 @@ for every $n$, giving the asserted values along the chosen indices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No subsequence of $(L_n)$ converges weak-*.
 
 
 ::: pf-proof
 
-Suppose $(L_{n_k})$ were weak-* convergent. Choose the point $x$ from step <1>2. Then
+Suppose $(L_{n_k})$ were weak-* convergent. Choose the point $x$ from step [](#s1-2){.pf-ref}. Then
 $$
 a_{n_k}(x)=0,1,0,1,\ldots
 $$
-does not converge, contradicting step <1>1.
+does not converge, contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -112,7 +112,7 @@ does not converge, contradicting step <1>1.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

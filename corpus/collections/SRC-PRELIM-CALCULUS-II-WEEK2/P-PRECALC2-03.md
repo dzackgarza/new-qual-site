@@ -24,7 +24,7 @@ I_n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The base case is
 \[
@@ -50,7 +50,7 @@ I_0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer \(n\ge1\),
 \[
@@ -83,7 +83,7 @@ x^ne^{-x}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For \(n\ge1\), integration by parts gives
 \[
@@ -116,9 +116,9 @@ over \([0,R]\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The boundary term in step <1>3 is zero:
+The boundary term in step [](#s1-3){.pf-ref} is zero:
 \[
 \boxed{
 \left[-x^ne^{-x}\right]_0^\infty=0}.
@@ -127,7 +127,7 @@ The boundary term in step <1>3 is zero:
 
 ::: pf-proof
 
-At \(x=\infty\), step <1>2 gives
+At \(x=\infty\), step [](#s1-2){.pf-ref} gives
 \[
 x^ne^{-x}\to0.
 \]
@@ -140,7 +140,7 @@ x^ne^{-x}=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -151,13 +151,13 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Iterating the recurrence gives
 \[
@@ -169,7 +169,7 @@ n(n-1)\cdots2\cdot1\,I_0.
 
 ::: pf-proof
 
-Repeatedly apply step <1>5:
+Repeatedly apply step [](#s1-5){.pf-ref}:
 \[
 I_n=nI_{n-1}
 =n(n-1)I_{n-2}
@@ -181,7 +181,7 @@ I_n=nI_{n-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -194,7 +194,7 @@ n!}.
 
 ::: pf-proof
 
-By step <1>6 and the base value \(I_0=1\) from step <1>1,
+By step [](#s1-6){.pf-ref} and the base value \(I_0=1\) from step [](#s1-1){.pf-ref},
 \[
 I_n=n!.
 \]
@@ -205,7 +205,7 @@ I_n=n!.
 
 ::: pf-qed
 
-Step <1>7 is the requested value.
+Step [](#s1-7){.pf-ref} is the requested value.
 
 :::
 

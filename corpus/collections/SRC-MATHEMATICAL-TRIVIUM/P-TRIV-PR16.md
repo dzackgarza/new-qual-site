@@ -29,7 +29,7 @@ Let $S=\xi_1+\xi_2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\xi_i\sim N(a_i,\sigma_i^2)$, then its characteristic function is
 \[
@@ -45,7 +45,7 @@ This is obtained by completing the square in the Fourier transform of the normal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Independence gives
 \[
@@ -62,13 +62,13 @@ Since $\xi_1$ and $\xi_2$ are independent,
 \mathbf E e^{it(\xi_1+\xi_2)}
 =\mathbf E e^{it\xi_1}\,\mathbf E e^{it\xi_2}.
 \]
-Substitute step <1>1 and combine exponents.
+Substitute step [](#s1-1){.pf-ref} and combine exponents.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -79,13 +79,13 @@ N(a_1+a_2,\sigma_1^2+\sigma_2^2)}.
 
 ::: pf-proof
 
-The characteristic function in step <1>2 is exactly that of the displayed normal distribution, and characteristic functions determine probability distributions uniquely.
+The characteristic function in step [](#s1-2){.pf-ref} is exactly that of the displayed normal distribution, and characteristic functions determine probability distributions uniquely.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If instead $\xi_i\sim\operatorname{Poisson}(\lambda_i)$, then for every integer $n\geq0$,
 \[
@@ -103,9 +103,9 @@ The disjoint possibilities for $S=n$ are $\xi_1=k$ and $\xi_2=n-k$ for $k=0,\ldo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The sum in step <1>4 simplifies to
+The sum in step [](#s1-4){.pf-ref} simplifies to
 \[
 P(S=n)=e^{-(\lambda_1+\lambda_2)}
 \frac{(\lambda_1+\lambda_2)^n}{n!}.
@@ -130,7 +130,7 @@ by the binomial theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -141,7 +141,7 @@ Hence
 
 ::: pf-proof
 
-Step <1>5 is the Poisson mass function with parameter $\lambda_1+\lambda_2$.
+Step [](#s1-5){.pf-ref} is the Poisson mass function with parameter $\lambda_1+\lambda_2$.
 
 :::
 
@@ -149,7 +149,7 @@ Step <1>5 is the Poisson mass function with parameter $\lambda_1+\lambda_2$.
 
 ::: pf-qed
 
-Steps <1>3 and <1>6 give the two requested sum distributions.
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give the two requested sum distributions.
 
 :::
 

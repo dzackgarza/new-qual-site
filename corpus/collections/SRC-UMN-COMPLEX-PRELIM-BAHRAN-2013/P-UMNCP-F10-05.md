@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -67,7 +67,7 @@ Thus every point of the closed disk lies in $\mathbb D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every such $r$, Cauchy's integral formula gives
 $$
@@ -83,13 +83,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $f$ is holomorphic on an open neighborhood of the closed disk centered at $z_0$ of radius $r$. The derivative form of Cauchy's integral formula therefore applies.
+By step [](#s1-1){.pf-ref}, $f$ is holomorphic on an open neighborhood of the closed disk centered at $z_0$ of radius $r$. The derivative form of Cauchy's integral formula therefore applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 $$
@@ -106,7 +106,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>2 and the ML estimate,
+Using step [](#s1-2){.pf-ref} and the ML estimate,
 $$
 \begin{aligned}
 |f'(z_0)|
@@ -134,7 +134,7 @@ on the contour.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Letting
 $$
@@ -151,7 +151,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 holds for every
+Step [](#s1-3){.pf-ref} holds for every
 $$
 r<1-|z_0|.
 $$
@@ -171,7 +171,7 @@ for every $j$. Passing to the limit gives the displayed estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The estimate holds for every point of the unit disk.
 
@@ -190,7 +190,7 @@ was arbitrary.
 
 ::: pf-qed
 
-Steps <1>4--<1>5 prove the required bound.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove the required bound.
 
 :::
 

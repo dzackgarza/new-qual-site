@@ -22,7 +22,7 @@ For \(0<x<1\), one has
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Therefore
 \[
@@ -47,9 +47,9 @@ from \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Since all quantities in step <1>1 are nonnegative,
+Since all quantities in step [](#s1-1){.pf-ref} are nonnegative,
 \[
 \boxed{
 \sqrt{1-x^4}
@@ -68,7 +68,7 @@ The square-root function is strictly increasing on \([0,\infty)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Also,
 \[
@@ -88,7 +88,7 @@ x^4>0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -100,15 +100,15 @@ Hence
 
 ::: pf-proof
 
-Apply the strictly increasing square-root function to step <1>3.
+Apply the strictly increasing square-root function to step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Combining steps <1>2 and <1>4,
+Combining steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref},
 \[
 \boxed{
 \sqrt{1-x^4}
@@ -130,9 +130,9 @@ This is exactly the conjunction of the two preceding comparisons.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Integrating the first inequality in step <1>5 over \([0,1]\),
+Integrating the first inequality in step [](#s1-5){.pf-ref} over \([0,1]\),
 \[
 \boxed{J<L}.
 \]
@@ -148,7 +148,7 @@ the difference is strictly positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Integrating the second comparison,
 \[
@@ -158,7 +158,7 @@ Integrating the second comparison,
 
 ::: pf-proof
 
-From step <1>5,
+From step [](#s1-5){.pf-ref},
 \[
 \sqrt{1-x^8}<1
 \]
@@ -177,7 +177,7 @@ L
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Integrating the final comparison,
 \[
@@ -187,7 +187,7 @@ Integrating the final comparison,
 
 ::: pf-proof
 
-From step <1>5,
+From step [](#s1-5){.pf-ref},
 \[
 1<\sqrt{1+x^4}
 \]
@@ -206,7 +206,7 @@ K.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the increasing order is
 \[
@@ -217,7 +217,7 @@ J<L<1<K}.
 
 ::: pf-proof
 
-Combine steps <1>6--<1>8.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref}.
 
 :::
 
@@ -225,7 +225,7 @@ Combine steps <1>6--<1>8.
 
 ::: pf-qed
 
-Step <1>9 is the requested ordering.
+Step [](#s1-9){.pf-ref} is the requested ordering.
 
 :::
 

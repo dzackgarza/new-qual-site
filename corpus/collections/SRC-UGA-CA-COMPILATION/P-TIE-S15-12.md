@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix $w\in\CC$. If there were no sequence $z_n\to a$ with $f(z_n)\to w$, then there would exist $\varepsilon>0$ and $\delta>0$ such that
 $$
@@ -63,9 +63,9 @@ Then $z_n\to a$ and $f(z_n)\to w$, contrary to the assumption. Hence such $\vare
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the assumption of step <1>1, the function
+Under the assumption of step [](#s1-1){.pf-ref}, the function
 $$
 g(z)\coloneqq\frac1{f(z)-w}
 $$
@@ -107,7 +107,7 @@ extends holomorphically across $a_n$ and has a zero there of order $m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The extended function $g$ is bounded on the punctured disk
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-At non-pole points, step <1>1 gives
+At non-pole points, step [](#s1-1){.pf-ref} gives
 $$
 \abs{g(z)}
 =
@@ -125,20 +125,20 @@ $$
 \le
 \frac1\varepsilon.
 $$
-At each filled-in pole $a_n$, step <1>2 gives $g(a_n)=0$, so the same bound holds. Thus $g$ is bounded throughout the punctured disk after the removable extensions at the poles.
+At each filled-in pole $a_n$, step [](#s1-2){.pf-ref} gives $g(a_n)=0$, so the same bound holds. Thus $g$ is bounded throughout the punctured disk after the removable extensions at the poles.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The point $a$ is a removable singularity of $g$.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>3, $g$ is holomorphic and bounded on
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $g$ is holomorphic and bounded on
 $$
 0<\abs{z-a}<\delta.
 $$
@@ -151,14 +151,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The assumption in step <1>1 is impossible.
+The assumption in step [](#s1-1){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-There are infinitely many poles $a_n\to a$. By step <1>2, the holomorphic extension of $g$ from step <1>4 satisfies
+There are infinitely many poles $a_n\to a$. By step [](#s1-2){.pf-ref}, the holomorphic extension of $g$ from step [](#s1-4){.pf-ref} satisfies
 $$
 g(a_n)=0
 $$
@@ -172,13 +172,13 @@ This is impossible: away from the poles,
 $$
 g(z)=\frac1{f(z)-w},
 $$
-which is never zero. Hence the assumption of step <1>1 cannot hold.
+which is never zero. Hence the assumption of step [](#s1-1){.pf-ref} cannot hold.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $w\in\CC$, there exists a sequence $z_n\in\Omega$ such that
 $$
@@ -192,7 +192,7 @@ $$
 
 ::: pf-proof
 
-By step <1>5, for every positive integer $n$ there is a non-pole point $z_n$ satisfying
+By step [](#s1-5){.pf-ref}, for every positive integer $n$ there is a non-pole point $z_n$ satisfying
 $$
 0<\abs{z_n-a}<\frac1n
 $$
@@ -206,7 +206,7 @@ These inequalities give the two asserted limits.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The conclusion is analogous to the Casorati--Weierstrass theorem because every finite complex number is a cluster value of $f$ at $a$.
 
@@ -217,13 +217,13 @@ Casorati--Weierstrass says that if $a$ is an isolated essential singularity of a
 $$
 f(z_n)\to w.
 $$
-Step <1>6 gives exactly this cluster-value conclusion in the present setting.
+Step [](#s1-6){.pf-ref} gives exactly this cluster-value conclusion in the present setting.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The difference is that here $a$ is not an isolated singularity of $f$.
 
@@ -244,7 +244,7 @@ Moreover, the poles themselves show that $\infty$ is also a spherical cluster va
 
 ::: pf-qed
 
-Step <1>6 proves part (1) in the stronger form $z_n\to a$, and steps <1>7--<1>8 give the requested comparison with Casorati--Weierstrass.
+Step [](#s1-6){.pf-ref} proves part (1) in the stronger form $z_n\to a$, and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the requested comparison with Casorati--Weierstrass.
 
 :::
 

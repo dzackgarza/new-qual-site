@@ -37,7 +37,7 @@ f(x)=\sum_{n=1}^\infty f_n(x).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The series
 \[
@@ -66,7 +66,7 @@ In particular, it converges for every real $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The limit function
 \[
@@ -82,14 +82,14 @@ Each function
 f_n(x)=\frac{\sin(nx)}{n^{5/2}}
 \]
 is continuous.
-By step <1>1, the series converges uniformly.
+By step [](#s1-1){.pf-ref}, the series converges uniformly.
 A uniform limit of continuous functions is continuous.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each $f_n$ is continuously differentiable and
 \[
@@ -121,7 +121,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The derivative series
 \[
@@ -152,7 +152,7 @@ Thus the Weierstrass $M$-test gives uniform convergence of the derivative series
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sum $f$ is differentiable and
 \[
@@ -182,7 +182,7 @@ converges at one point $x_0$, then
 \]
 converges to a differentiable function whose derivative is the sum of the derivative series.
 
-Here step <1>4 gives uniform convergence of the derivative series on every interval, indeed on all of $\mathbb R$.
+Here step [](#s1-4){.pf-ref} gives uniform convergence of the derivative series on every interval, indeed on all of $\mathbb R$.
 Also at
 \[
 x_0=0,
@@ -202,7 +202,7 @@ Therefore the theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The derivative $f'$ is continuous on $\mathbb R$.
 
@@ -215,7 +215,7 @@ x\longmapsto
 \frac{\cos(nx)}{n^{3/2}}
 \]
 is continuous.
-By step <1>4, their series converges uniformly.
+By step [](#s1-4){.pf-ref}, their series converges uniformly.
 Therefore its sum
 \[
 f'
@@ -226,7 +226,7 @@ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -236,8 +236,8 @@ Hence
 
 ::: pf-proof
 
-Step <1>2 gives continuity of $f$.
-Step <1>5 gives differentiability, and step <1>6 gives continuity of the derivative.
+Step [](#s1-2){.pf-ref} gives continuity of $f$.
+Step [](#s1-5){.pf-ref} gives differentiability, and step [](#s1-6){.pf-ref} gives continuity of the derivative.
 
 :::
 
@@ -245,7 +245,7 @@ Step <1>5 gives differentiability, and step <1>6 gives continuity of the derivat
 
 ::: pf-qed
 
-Steps <1>1--<1>7 prove every assertion in the problem.
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove every assertion in the problem.
 The facts used are the Weierstrass $M$-test, uniform limits of continuous functions are continuous, and the standard theorem permitting termwise differentiation under uniform convergence of the derivative series.
 
 :::

@@ -55,7 +55,7 @@ end
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Initially,
 \[
@@ -87,7 +87,7 @@ and prints \(53\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The next remainder is
 \[
@@ -113,7 +113,7 @@ and prints \(4\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The next remainder is
 \[
@@ -139,7 +139,7 @@ and prints \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The final remainder is
 \[
@@ -176,13 +176,13 @@ Its condition is
 \[
 b>0.
 \]
-After step <1>4, \(b=0\).
+After step [](#s1-4){.pf-ref}, \(b=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the output of (A) is
 \[
@@ -193,7 +193,7 @@ Hence the output of (A) is
 
 ::: pf-proof
 
-These are the values printed in steps <1>1--<1>4.
+These are the values printed in steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -216,7 +216,7 @@ This is the first command inside the outer loop.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the values of \(i\) used by the inner loop are
 \[
@@ -260,7 +260,7 @@ k=k-1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 During that inner loop, the equality
 \[
@@ -281,7 +281,7 @@ once each before being decremented to \(i-1\), which terminates the loop.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence the inner loop prints the current value of \(i\) exactly once.
 
@@ -292,13 +292,13 @@ The print command is executed precisely when
 \[
 i=k,
 \]
-which occurs exactly once by step <1>10.
+which occurs exactly once by step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore the output of (B) is
 \[
@@ -309,13 +309,13 @@ Therefore the output of (B) is
 
 ::: pf-proof
 
-Apply step <1>11 to the successive outer-loop values listed in step <1>8.
+Apply step [](#s1-11){.pf-ref} to the successive outer-loop values listed in step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Initially,
 \[
@@ -346,7 +346,7 @@ The algorithm prints \(56\), then replaces \(n\) by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 With
 \[
@@ -377,7 +377,7 @@ The algorithm prints \(34\), then replaces \(n\) by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 With
 \[
@@ -419,13 +419,13 @@ Its condition is
 \[
 n>0,
 \]
-and step <1>15 leaves \(n=0\).
+and step [](#s1-15){.pf-ref} leaves \(n=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence the output of (C) is
 \[
@@ -436,7 +436,7 @@ Hence the output of (C) is
 
 ::: pf-proof
 
-These are the printed values from steps <1>13--<1>15.
+These are the printed values from steps [](#s1-13){.pf-ref} through [](#s1-15){.pf-ref}.
 
 :::
 
@@ -444,7 +444,7 @@ These are the printed values from steps <1>13--<1>15.
 
 ::: pf-qed
 
-Steps <1>6, <1>12, and <1>17 give the outputs of (A), (B), and (C),
+Steps [](#s1-6){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-17){.pf-ref} give the outputs of (A), (B), and (C),
 respectively.
 
 :::

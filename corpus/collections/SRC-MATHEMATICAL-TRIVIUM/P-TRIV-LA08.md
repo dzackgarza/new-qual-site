@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $D$ is nondegenerate, the block matrix
 $$
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Multiplying $M$ on the left by $L$ gives
 $$
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -123,7 +123,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \det(LM)
 =
@@ -131,7 +131,7 @@ $$
 =
 \det M.
 $$
-By step <1>2, $LM$ is block lower triangular, so
+By step [](#s1-2){.pf-ref}, $LM$ is block lower triangular, so
 $$
 \det(LM)
 =
@@ -142,9 +142,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The right-hand side in step <1>3 equals
+The right-hand side in step [](#s1-3){.pf-ref} equals
 $$
 \det\left(AD-BD^{-1}CD\right).
 $$
@@ -169,7 +169,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -187,7 +187,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -195,7 +195,7 @@ Combine steps <1>3 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required identity.
+Step [](#s1-5){.pf-ref} is the required identity.
 
 :::
 

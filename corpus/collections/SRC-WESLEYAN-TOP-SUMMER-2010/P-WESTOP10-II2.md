@@ -22,7 +22,7 @@ Let $(\widetilde X,p)$ be a covering space of $X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume
 \[
@@ -52,7 +52,7 @@ open neighborhoods.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -106,7 +106,7 @@ respectively.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -163,7 +163,7 @@ These are disjoint open neighborhoods.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -177,7 +177,7 @@ X\text{ Hausdorff}
 
 ::: pf-proof
 
-Steps <1>2--<1>3 cover the two possible cases for two distinct points of
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} cover the two possible cases for two distinct points of
 \[
 \widetilde X.
 \]
@@ -186,7 +186,7 @@ Steps <1>2--<1>3 cover the two possible cases for two distinct points of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The literal second statement in the source is tautological.
 
@@ -207,7 +207,7 @@ Thus no proof beyond repeating the hypothesis is needed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The standard intended theorem is:
 
@@ -230,13 +230,13 @@ is finite, then
 
 ::: pf-proof
 
-We prove this in steps <1>7--<1>12.
+We prove this in steps [](#s1-7){.pf-ref} through [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -264,7 +264,7 @@ Such a neighborhood exists by the definition of a covering map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Because
 \[
@@ -296,7 +296,7 @@ which is finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Enumerate the sheets as
 \[
@@ -336,7 +336,7 @@ in particular each fiber point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For each $j$, there is an open neighborhood
 \[
@@ -387,7 +387,7 @@ O_j.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Define
 \[
@@ -442,7 +442,7 @@ O_1\cup\cdots\cup O_m.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Compactness of $X$ gives a finite subcover of
 \[
@@ -474,7 +474,7 @@ W_{x_1}
 W_{x_r}.
 \]
 
-For each $k$, step <1>11 gives finitely many members of
+For each $k$, step [](#s1-11){.pf-ref} gives finitely many members of
 \[
 \mathcal O
 \]
@@ -503,7 +503,7 @@ has a finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence, under the standard intended reading,
 \[
@@ -517,7 +517,7 @@ X\text{ compact and all fibers finite}
 
 ::: pf-proof
 
-Step <1>12 proves compactness of the total space.
+Step [](#s1-12){.pf-ref} proves compactness of the total space.
 
 :::
 
@@ -525,9 +525,9 @@ Step <1>12 proves compactness of the total space.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 prove the Hausdorff assertion.
-Step <1>5 answers the literal repeated compactness statement.
-Steps <1>6--<1>13 prove the standard intended finite-sheeted compactness
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove the Hausdorff assertion.
+Step [](#s1-5){.pf-ref} answers the literal repeated compactness statement.
+Steps [](#s1-6){.pf-ref} through [](#s1-13){.pf-ref} prove the standard intended finite-sheeted compactness
 theorem.
 
 :::

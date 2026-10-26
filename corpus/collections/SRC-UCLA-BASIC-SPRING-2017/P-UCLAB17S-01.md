@@ -22,7 +22,7 @@ Let $M$ be a real $n\times n$ matrix. Prove that $M$ and $MM^T$ have the same ra
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -51,7 +51,7 @@ which lies in the range of $M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -104,7 +104,7 @@ Thus the reverse inclusion also holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The two matrices have the same rank:
 \[
@@ -118,7 +118,7 @@ The two matrices have the same rank:
 
 ::: pf-proof
 
-By rank-nullity and step <1>2,
+By rank-nullity and step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \operatorname{rank}(MM^T)
@@ -141,7 +141,7 @@ The row rank equals the column rank, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -155,8 +155,8 @@ Therefore
 
 ::: pf-proof
 
-Step <1>1 gives an inclusion of finite-dimensional subspaces.
-Step <1>3 shows that the two subspaces have the same dimension.
+Step [](#s1-1){.pf-ref} gives an inclusion of finite-dimensional subspaces.
+Step [](#s1-3){.pf-ref} shows that the two subspaces have the same dimension.
 Hence the inclusion is equality.
 
 :::
@@ -165,7 +165,7 @@ Hence the inclusion is equality.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

@@ -27,7 +27,7 @@ Let $f(x, y) = x^y$, for $x > 0$. Then $\left.\frac{\partial f}{\partial x}\righ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x>0$,
 $$
@@ -50,7 +50,7 @@ and differentiate with respect to $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $P=(e,y_0)$, equality of the two partial derivatives is equivalent
 to
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-Substituting $x=e$ into the formulas of step <1>1 gives
+Substituting $x=e$ into the formulas of step [](#s1-1){.pf-ref} gives
 $$
 y_0e^{y_0-1}=e^{y_0}\log e=e^{y_0}.
 $$
@@ -71,7 +71,7 @@ Since $e^{y_0-1}>0$, dividing by it gives $y_0=e$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -82,7 +82,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>2 determines the unique value for which the two partial derivatives
+Step [](#s1-2){.pf-ref} determines the unique value for which the two partial derivatives
 agree at the prescribed point.
 
 :::
@@ -91,7 +91,7 @@ agree at the prescribed point.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

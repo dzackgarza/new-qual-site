@@ -35,7 +35,7 @@ for every $n$ and every $x\in[0,1]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $f_n\not\to f$ uniformly. Then there exist $\varepsilon>0$, a strictly increasing sequence of indices $(n_k)$, and points $x_k\in[0,1]$ such that
 $$
@@ -56,7 +56,7 @@ Because $f_n(x)\ge f(x)$, the absolute value may be removed. Choosing successive
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After passing to a subsequence, there is $x\in[0,1]$ such that
 $$
@@ -72,7 +72,7 @@ The interval $[0,1]$ is sequentially compact, so the sequence $(x_k)$ has a conv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every fixed $m\ge1$,
 $$
@@ -86,7 +86,7 @@ Fix $m$. Since $n_k\to\infty$, one has $n_k\ge m$ for all sufficiently large $k$
 $$
 f_m(x_k)\ge f_{n_k}(x_k).
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 f_m(x_k)
 \ge
@@ -94,7 +94,7 @@ f_{n_k}(x_k)
 \ge
 f(x_k)+\varepsilon.
 $$
-Let $k\to\infty$. Both $f_m$ and $f$ are continuous, and step <1>2 gives $x_k\to x$, so
+Let $k\to\infty$. Both $f_m$ and $f$ are continuous, and step [](#s1-2){.pf-ref} gives $x_k\to x$, so
 $$
 f_m(x)\ge f(x)+\varepsilon.
 $$
@@ -103,14 +103,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Step <1>3 contradicts pointwise convergence $f_m(x)\to f(x)$.
+Step [](#s1-3){.pf-ref} contradicts pointwise convergence $f_m(x)\to f(x)$.
 
 
 ::: pf-proof
 
-The inequality from step <1>3 holds for every $m$:
+The inequality from step [](#s1-3){.pf-ref} holds for every $m$:
 $$
 f_m(x)-f(x)\ge\varepsilon.
 $$
@@ -126,7 +126,7 @@ as $m\to\infty$. This is impossible for a fixed $\varepsilon>0$.
 
 ::: pf-qed
 
-The contradiction in step <1>4 shows that the assumption in step <1>1 was false. Therefore $f_n\to f$ uniformly on $[0,1]$.
+The contradiction in step [](#s1-4){.pf-ref} shows that the assumption in step [](#s1-1){.pf-ref} was false. Therefore $f_n\to f$ uniformly on $[0,1]$.
 
 :::
 

@@ -47,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Write
 $$
@@ -75,7 +75,7 @@ Thus one may choose a lowest-terms representation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Substituting
 $$
@@ -113,9 +113,9 @@ This is obtained by clearing denominators in the monic polynomial relation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The relation in step <1>2 implies
+The relation in step [](#s1-2){.pf-ref} implies
 $$
 b\mid a^n.
 $$
@@ -148,7 +148,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose $b$ is not a unit.
 Then some irreducible element
@@ -167,9 +167,9 @@ Thus a nonunit denominator has at least one irreducible divisor.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The irreducible element $\pi$ from step <1>4 is prime.
+The irreducible element $\pi$ from step [](#s1-4){.pf-ref} is prime.
 
 
 ::: pf-proof
@@ -180,7 +180,7 @@ In a UFD, every irreducible element is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -190,11 +190,11 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \pi\mid b.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 b\mid a^n.
 $$
@@ -202,7 +202,7 @@ Hence
 $$
 \pi\mid a^n.
 $$
-Since $\pi$ is prime by step <1>5, repeated application of the prime-divisibility property to
+Since $\pi$ is prime by step [](#s1-5){.pf-ref}, repeated application of the prime-divisibility property to
 $$
 a^n=a\cdots a
 $$
@@ -222,13 +222,13 @@ The assumption that $b$ is a nonunit contradicts the lowest-terms choice of $a/b
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 show that the irreducible element $\pi$ divides both
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} show that the irreducible element $\pi$ divides both
 $$
 a
 \qquad\text{and}\qquad
 b.
 $$
-This contradicts step <1>1.
+This contradicts step [](#s1-1){.pf-ref}.
 Therefore
 $$
 b
@@ -239,7 +239,7 @@ must be a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -276,7 +276,7 @@ $$
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

@@ -40,7 +40,7 @@ Ae_i=\lambda_i e_i,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -89,7 +89,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The minimum over the unit sphere in $U_0$ is exactly
 \[
@@ -99,7 +99,7 @@ The minimum over the unit sphere in $U_0$ is exactly
 
 ::: pf-proof
 
-Step <1>1 gives the lower bound
+Step [](#s1-1){.pf-ref} gives the lower bound
 \[
 \langle Ax,x\rangle\ge\lambda_k
 \]
@@ -121,7 +121,7 @@ Hence the minimum is attained and equals $\lambda_k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently,
 \[
@@ -137,7 +137,7 @@ Consequently,
 
 The maximum is taken over all $k$-dimensional subspaces.
 In particular, it is at least the value obtained for the specific subspace $U_0$.
-By step <1>2, that value is $\lambda_k$.
+By step [](#s1-2){.pf-ref}, that value is $\lambda_k$.
 
 :::
 
@@ -199,7 +199,7 @@ Thus the intersection contains a nonzero vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Choose a unit vector
 \[
@@ -247,7 +247,7 @@ for every $i\ge k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $k$-dimensional subspace $U$,
 \[
@@ -260,7 +260,7 @@ For every $k$-dimensional subspace $U$,
 
 ::: pf-proof
 
-Step <1>5 produces a unit vector
+Step [](#s1-5){.pf-ref} produces a unit vector
 \[
 x\in U
 \]
@@ -271,7 +271,7 @@ The minimum over all unit vectors in $U$ cannot exceed that particular value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -285,14 +285,14 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 gives the upper bound $\lambda_k$ for the inner minimum for every admissible subspace $U$.
+Step [](#s1-6){.pf-ref} gives the upper bound $\lambda_k$ for the inner minimum for every admissible subspace $U$.
 Taking the maximum over all such $U$ preserves that upper bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Combining the two inequalities gives
 \[
@@ -307,7 +307,7 @@ Combining the two inequalities gives
 
 ::: pf-proof
 
-Step <1>3 gives the lower bound by $\lambda_k$, and step <1>7 gives the upper bound by $\lambda_k$.
+Step [](#s1-3){.pf-ref} gives the lower bound by $\lambda_k$, and step [](#s1-7){.pf-ref} gives the upper bound by $\lambda_k$.
 Hence equality holds.
 
 :::
@@ -316,7 +316,7 @@ Hence equality holds.
 
 ::: pf-qed
 
-Step <1>8 is the required Courant--Fischer formula.
+Step [](#s1-8){.pf-ref} is the required Courant--Fischer formula.
 
 :::
 

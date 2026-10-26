@@ -27,7 +27,7 @@ A fair die is tossed twice. About how many times would you expect to roll 3 or g
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On each toss, the probability of rolling $3$ or greater is
 $$
@@ -53,7 +53,7 @@ $$
 
 ::: pf-proof
 
-Let $I_1,I_2$ be the indicator variables for the events that the first and second tosses, respectively, are at least $3$. Then $X=I_1+I_2$, and by step <1>1,
+Let $I_1,I_2$ be the indicator variables for the events that the first and second tosses, respectively, are at least $3$. Then $X=I_1+I_2$, and by step [](#s1-1){.pf-ref},
 $$
 E[I_1]=E[I_2]=\frac23.
 $$
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Among the listed choices, the closest value to $4/3$ is
 $$
@@ -85,7 +85,7 @@ The distance from $4/3$ to $3/2$ is $1/6$, while its distance to $1$ is $1/3$, a
 
 ::: pf-qed
 
-Step <1>3 gives the requested approximate expected number.
+Step [](#s1-3){.pf-ref} gives the requested approximate expected number.
 
 :::
 

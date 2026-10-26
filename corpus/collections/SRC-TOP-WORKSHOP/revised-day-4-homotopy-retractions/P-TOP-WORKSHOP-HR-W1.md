@@ -32,7 +32,7 @@ be the inclusion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Both $i$ and $r$ preserve the basepoint $a_0$, and
 \[
@@ -68,7 +68,7 @@ Thus $r\circ i=\operatorname{id}_A$ as based maps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The induced homomorphisms on fundamental groups satisfy
 \[
@@ -86,7 +86,7 @@ Functoriality of the fundamental group gives
 =
 r_*\circ i_*.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 r\circ i
 =
@@ -105,7 +105,7 @@ r_*\circ i_*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The homomorphism
 \[
@@ -123,7 +123,7 @@ Let
 \[
 [\gamma]\in\pi_1(A,a_0).
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 [\gamma]
 =
@@ -139,7 +139,7 @@ Thus every element of $\pi_1(A,a_0)$ lies in the image of $r_*$.
 
 ::: pf-qed
 
-Step <1>3 is the required surjectivity.
+Step [](#s1-3){.pf-ref} is the required surjectivity.
 
 :::
 

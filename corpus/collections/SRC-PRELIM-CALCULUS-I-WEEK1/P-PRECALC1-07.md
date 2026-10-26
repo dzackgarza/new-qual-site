@@ -32,7 +32,7 @@ multiplicity greater than \(1\) has multiplicity exactly \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -54,7 +54,7 @@ A quadratic with a double root at \(2\) is a scalar multiple of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Comparing leading coefficients gives
 \[
@@ -89,13 +89,13 @@ f(x)=3(x-2)^2}.
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2.
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Evaluating at \(x=5\),
 \[
@@ -120,7 +120,7 @@ f(5)=3(5-2)^2=27}.
 
 ::: pf-qed
 
-Step <1>5 is the requested value.
+Step [](#s1-5){.pf-ref} is the requested value.
 
 :::
 

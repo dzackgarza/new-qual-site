@@ -20,7 +20,7 @@ where $\mathcal P(X)$ is the power set of $X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that there is a surjection
 \[
@@ -36,7 +36,7 @@ This assumes the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define the diagonal subset
 \[
@@ -56,7 +56,7 @@ The defining condition selects some elements of $X$, so $D$ is a subset of $X$. 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $f$ is surjective, there exists $d\in X$ such that
 \[
@@ -66,30 +66,30 @@ f(d)=D.
 
 ::: pf-proof
 
-Apply surjectivity of $f$ to the element $D\in\mathcal P(X)$ from step <1>2.
+Apply surjectivity of $f$ to the element $D\in\mathcal P(X)$ from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $d\in D$, then $d\notin D$.
 
 
 ::: pf-proof
 
-By the definition of $D$ in step <1>2,
+By the definition of $D$ in step [](#s1-2){.pf-ref},
 \[
 d\in D\quad\Longrightarrow\quad d\notin f(d).
 \]
-Using $f(d)=D$ from step <1>3 gives $d\notin D$.
+Using $f(d)=D$ from step [](#s1-3){.pf-ref} gives $d\notin D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $d\notin D$, then $d\in D$.
 
@@ -100,26 +100,26 @@ Again by the definition of $D$,
 \[
 d\notin D\quad\Longrightarrow\quad d\in f(d).
 \]
-Step <1>3 identifies $f(d)$ with $D$, so $d\in D$.
+Step [](#s1-3){.pf-ref} identifies $f(d)$ with $D$, so $d\in D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Both possibilities for membership of $d$ in $D$ are contradictory.
 
 
 ::: pf-proof
 
-The law of excluded middle gives either $d\in D$ or $d\notin D$. Step <1>4 contradicts the first alternative and step <1>5 contradicts the second.
+The law of excluded middle gives either $d\in D$ or $d\notin D$. Step [](#s1-4){.pf-ref} contradicts the first alternative and step [](#s1-5){.pf-ref} contradicts the second.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore no surjection
 \[
@@ -130,7 +130,7 @@ exists.
 
 ::: pf-proof
 
-The assumed surjection in step <1>1 led to the contradiction in step <1>6.
+The assumed surjection in step [](#s1-1){.pf-ref} led to the contradiction in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -138,7 +138,7 @@ The assumed surjection in step <1>1 led to the contradiction in step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is Cantor's theorem in the required form.
+Step [](#s1-7){.pf-ref} is Cantor's theorem in the required form.
 
 :::
 

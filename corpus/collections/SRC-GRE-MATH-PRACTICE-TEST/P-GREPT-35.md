@@ -43,7 +43,7 @@ How many of the students surveyed are enrolled in all three of these courses?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Exactly $90$ of the surveyed students are enrolled in at least one of
 the three courses.
@@ -59,7 +59,7 @@ $100-10=90$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $n$ is the number enrolled in all three courses, then
 $$
@@ -87,7 +87,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -98,7 +98,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Equating the union size from step <1>1 with the expression in step <1>2 gives
+Equating the union size from step [](#s1-1){.pf-ref} with the expression in step [](#s1-2){.pf-ref} gives
 $$
 90=89+n,
 $$
@@ -110,7 +110,7 @@ hence $n=1$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested number of students.
+Step [](#s1-3){.pf-ref} gives the requested number of students.
 
 :::
 

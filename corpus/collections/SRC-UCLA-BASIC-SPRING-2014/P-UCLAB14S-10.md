@@ -50,7 +50,7 @@ The rational numbers are countable, and $\mathbb Q\cap[0,1]$ is dense in $[0,1]$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a subsequence $(f_{n_j})$ such that, for every $m\geq1$, the scalar sequence
 \[
@@ -71,7 +71,7 @@ for all $n$, so Bolzano--Weierstrass gives a subsequence converging at $q_1$. Fr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix $\varepsilon>0$. By equicontinuity, choose $\delta>0$ such that for every $f\in F$,
 \[
@@ -89,7 +89,7 @@ Apply hypothesis (ii) with $\varepsilon/3$ in place of $\varepsilon$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose finitely many rational points
 \[
@@ -111,7 +111,7 @@ form an open cover of the compact interval $[0,1]$. Compactness gives a finite s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $J$ such that whenever $j,k\geq J$,
 \[
@@ -122,7 +122,7 @@ There exists $J$ such that whenever $j,k\geq J$,
 
 ::: pf-proof
 
-For each of the finitely many points $q_{m_i}$, step <1>2 says the scalar sequence $f_{n_j}(q_{m_i})$ converges and hence is Cauchy. Choose a Cauchy threshold $J_i$ for error $\varepsilon/3$, and take
+For each of the finitely many points $q_{m_i}$, step [](#s1-2){.pf-ref} says the scalar sequence $f_{n_j}(q_{m_i})$ converges and hence is Cauchy. Choose a Cauchy threshold $J_i$ for error $\varepsilon/3$, and take
 \[
 J=\max_iJ_i.
 \]
@@ -131,7 +131,7 @@ J=\max_iJ_i.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $j,k\geq J$ and every $x\in[0,1]$,
 \[
@@ -141,7 +141,7 @@ For every $j,k\geq J$ and every $x\in[0,1]$,
 
 ::: pf-proof
 
-Choose $q_{m_i}$ with $|x-q_{m_i}|<\delta$ using step <1>4. Then
+Choose $q_{m_i}$ with $|x-q_{m_i}|<\delta$ using step [](#s1-4){.pf-ref}. Then
 \[
 \begin{aligned}
 |f_{n_j}(x)-f_{n_k}(x)|
@@ -150,20 +150,20 @@ Choose $q_{m_i}$ with $|x-q_{m_i}|<\delta$ using step <1>4. Then
 &\quad+|f_{n_k}(q_{m_i})-f_{n_k}(x)|.
 \end{aligned}
 \]
-The first and third terms are $<\varepsilon/3$ by step <1>3, and the middle term is $<\varepsilon/3$ by step <1>5. Their sum is $<\varepsilon$.
+The first and third terms are $<\varepsilon/3$ by step [](#s1-3){.pf-ref}, and the middle term is $<\varepsilon/3$ by step [](#s1-5){.pf-ref}. Their sum is $<\varepsilon$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus $(f_{n_j})$ is Cauchy in the supremum norm on $C([0,1])$.
 
 
 ::: pf-proof
 
-Step <1>6 says precisely that for every $\varepsilon>0$ there is $J$ such that
+Step [](#s1-6){.pf-ref} says precisely that for every $\varepsilon>0$ there is $J$ such that
 \[
 \|f_{n_j}-f_{n_k}\|_\infty<\varepsilon
 \]
@@ -173,7 +173,7 @@ whenever $j,k\geq J$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since $C([0,1])$ is complete in the supremum norm, there is a continuous function $f$ such that
 \[
@@ -183,20 +183,20 @@ Since $C([0,1])$ is complete in the supremum norm, there is a continuous functio
 
 ::: pf-proof
 
-The space $C([0,1])$ with the supremum norm is a Banach space. Therefore the Cauchy sequence from step <1>7 converges in that norm to some element $f\in C([0,1])$. Convergence in the supremum norm is exactly uniform convergence.
+The space $C([0,1])$ with the supremum norm is a Banach space. Therefore the Cauchy sequence from step [](#s1-7){.pf-ref} converges in that norm to some element $f\in C([0,1])$. Convergence in the supremum norm is exactly uniform convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence every sequence in $F$ has a uniformly convergent subsequence.
 
 
 ::: pf-proof
 
-The original sequence $(f_n)$ was arbitrary, and steps <1>2--<1>8 construct the required subsequence.
+The original sequence $(f_n)$ was arbitrary, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} construct the required subsequence.
 
 :::
 
@@ -204,7 +204,7 @@ The original sequence $(f_n)$ was arbitrary, and steps <1>2--<1>8 construct the 
 
 ::: pf-qed
 
-Step <1>9 is the desired Arzela--Ascoli conclusion.
+Step [](#s1-9){.pf-ref} is the desired Arzela--Ascoli conclusion.
 
 :::
 

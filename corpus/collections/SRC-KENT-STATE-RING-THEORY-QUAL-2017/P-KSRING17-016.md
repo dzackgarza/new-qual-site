@@ -28,7 +28,7 @@ denote the standard matrix unit with $1_R$ in position $(i,j)$ and $0$ elsewhere
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -81,7 +81,7 @@ Thus $M_n(I)$ is a two-sided ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -156,7 +156,7 @@ Thus $I\trianglelefteq R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -199,7 +199,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -213,7 +213,7 @@ Let
 $$
 A=(a_{ij})\in J.
 $$
-By step <1>3, every entry $a_{ij}$ lies in $I$. Therefore
+By step [](#s1-3){.pf-ref}, every entry $a_{ij}$ lies in $I$. Therefore
 $$
 A\in M_n(I).
 $$
@@ -222,7 +222,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -258,7 +258,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -283,7 +283,7 @@ Each
 $$
 a_{k\ell}\in I,
 $$
-so step <1>5 gives
+so step [](#s1-5){.pf-ref} gives
 $$
 a_{k\ell}E_{k\ell}\in J.
 $$
@@ -300,7 +300,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence every ideal of $M_n(R)$ is of the form $M_n(I)$ for a unique ideal $I$ of $R$:
 $$
@@ -312,7 +312,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 prove the two inclusions.
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} prove the two inclusions.
 
 Uniqueness follows because if
 $$
@@ -339,7 +339,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 proves the first assertion, and steps <1>2--<1>7 prove the classification of all ideals of $M_n(R)$.
+Step [](#s1-1){.pf-ref} proves the first assertion, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the classification of all ideals of $M_n(R)$.
 
 :::
 

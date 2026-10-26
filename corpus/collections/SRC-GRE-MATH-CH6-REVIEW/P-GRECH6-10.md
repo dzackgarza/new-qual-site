@@ -28,7 +28,7 @@ If $S = \{a \in \RR^+ : a \neq 1\}$, with the binary operation $\bullet$ defined
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The identity element of $(S,\bullet)$ is $e$.
 
@@ -49,7 +49,7 @@ Thus $e$ is a two-sided identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $b$ is the inverse of $a$, then
 $$
@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, an inverse must satisfy $a\bullet b=e$. Taking natural logarithms in
+By step [](#s1-1){.pf-ref}, an inverse must satisfy $a\bullet b=e$. Taking natural logarithms in
 $$
 a^{\log b}=e
 $$
@@ -73,7 +73,7 @@ Because $a\ne1$, one has $\log a\ne0$, so division by $\log a$ yields the displa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The inverse of $a$ is
 $$
@@ -84,7 +84,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Step <1>2 gives $b=e^{1/\log a}$. Since $1/\log a\ne0$, this number is positive and not equal to $1$, so $b\in S$. Moreover,
+Step [](#s1-2){.pf-ref} gives $b=e^{1/\log a}$. Since $1/\log a\ne0$, this number is positive and not equal to $1$, so $b\in S$. Moreover,
 $$
 a\bullet b
 =\exp\bigl((\log a)(\log b)\bigr)
@@ -98,7 +98,7 @@ and the same symmetric expression gives $b\bullet a=e$. Hence $b$ is the inverse
 
 ::: pf-qed
 
-Step <1>3 gives and verifies the required inverse.
+Step [](#s1-3){.pf-ref} gives and verifies the required inverse.
 
 :::
 

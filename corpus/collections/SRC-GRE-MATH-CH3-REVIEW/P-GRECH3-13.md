@@ -31,7 +31,7 @@ If the variables $P$, $V$, and $T$ are related by the equation $PV=nRT$, where $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Holding $P$ fixed,
 $$
@@ -51,7 +51,7 @@ Differentiating with respect to $T$ while $P$ is fixed gives the displayed deriv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Holding $V$ fixed,
 $$
@@ -71,7 +71,7 @@ Differentiating with respect to $P$ while $V$ is fixed gives the displayed deriv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Holding $T$ fixed,
 $$
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The cyclic product is
 $$
@@ -106,7 +106,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Multiplying the derivatives from steps <1>1--<1>3 gives
+Multiplying the derivatives from steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} gives
 $$
 \frac{nR}{P}\cdot\frac{V}{nR}\cdot
 \left(-\frac{nRT}{V^2}\right)
@@ -120,7 +120,7 @@ The defining relation $PV=nRT$ therefore reduces this expression to $-1$.
 
 ::: pf-qed
 
-Step <1>4 gives the simplified value and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the simplified value and corresponding choice.
 
 :::
 

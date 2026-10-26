@@ -22,7 +22,7 @@ Up to isomorphism, how many abelian groups $G$ have order $16$ and satisfy $x + 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Up to isomorphism, the abelian groups of order $16=2^4$ are
 \[
@@ -51,7 +51,7 @@ These give exactly the five displayed groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The condition
 \[
@@ -72,9 +72,9 @@ $4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Of the five groups in step <1>1, exactly
+Of the five groups in step [](#s1-1){.pf-ref}, exactly
 \[
 \mathbb Z_4\times\mathbb Z_4,\qquad
 \mathbb Z_4\times\mathbb Z_2\times\mathbb Z_2,\qquad
@@ -87,7 +87,7 @@ satisfy the required condition.
 
 The groups $\mathbb Z_{16}$ and
 $\mathbb Z_8\times\mathbb Z_2$ contain elements of order $16$ and $8$,
-respectively, so they fail the condition in step <1>2.
+respectively, so they fail the condition in step [](#s1-2){.pf-ref}.
 
 Every element in each of the remaining three groups has every coordinate of
 order dividing $4$, so its order divides $4$. Hence those three groups
@@ -97,7 +97,7 @@ satisfy the condition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the number of isomorphism classes is
 \[
@@ -107,7 +107,7 @@ Therefore the number of isomorphism classes is
 
 ::: pf-proof
 
-Step <1>3 gives exactly three qualifying groups.
+Step [](#s1-3){.pf-ref} gives exactly three qualifying groups.
 
 :::
 
@@ -115,7 +115,7 @@ Step <1>3 gives exactly three qualifying groups.
 
 ::: pf-qed
 
-Step <1>4 is the requested count.
+Step [](#s1-4){.pf-ref} is the requested count.
 
 :::
 

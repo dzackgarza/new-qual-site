@@ -36,7 +36,7 @@ Let $m_A(x)$ denote the minimal polynomial of $A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $m_A(x)$ divides $x^{37}-1$.
 
@@ -53,7 +53,7 @@ so the polynomial $p(x)=x^{37}-1$ annihilates $A$. By the defining divisibility 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $x^{37}-1$ has no repeated root in $\mathbb C$.
 
@@ -74,14 +74,14 @@ so $x^{37}-1$ is squarefree. Since the field is $\mathbb C$, it therefore factor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix $A$ is diagonalizable over $\mathbb C$.
 
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the minimal polynomial $m_A$ is a product of distinct linear factors. A complex matrix is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Therefore $A$ is diagonalizable.
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the minimal polynomial $m_A$ is a product of distinct linear factors. A complex matrix is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Therefore $A$ is diagonalizable.
 
 :::
 
@@ -89,7 +89,7 @@ By steps <1>1--<1>2, the minimal polynomial $m_A$ is a product of distinct linea
 
 ::: pf-qed
 
-Step <1>3 proves the assertion.
+Step [](#s1-3){.pf-ref} proves the assertion.
 
 :::
 

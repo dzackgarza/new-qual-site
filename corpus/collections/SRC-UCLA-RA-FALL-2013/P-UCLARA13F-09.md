@@ -37,7 +37,7 @@ For each $y\in Y$, regard $B(\,·\,,y)$ as a bounded linear functional on the Ba
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each $y\in Y$, define
 \[
@@ -60,7 +60,7 @@ so $T_y$ is bounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consider the family
 \[
@@ -88,7 +88,7 @@ and taking the supremum gives a finite bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By the Uniform Boundedness Principle, there exists $C\geq0$ such that
 \[
@@ -99,7 +99,7 @@ By the Uniform Boundedness Principle, there exists $C\geq0$ such that
 
 ::: pf-proof
 
-The domain $X$ is Banach by hypothesis, every $T_y$ in the family is a bounded linear map by step <1>1, and the family is pointwise bounded by step <1>2. The Uniform Boundedness Principle therefore gives
+The domain $X$ is Banach by hypothesis, every $T_y$ in the family is a bounded linear map by step [](#s1-1){.pf-ref}, and the family is pointwise bounded by step [](#s1-2){.pf-ref}. The Uniform Boundedness Principle therefore gives
 \[
 \sup_{\|y\|\leq1}\|T_y\|<\infty.
 \]
@@ -109,7 +109,7 @@ Call this supremum $C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\|y\|\leq1$, then for every $x\in X$,
 \[
@@ -123,13 +123,13 @@ By definition of operator norm,
 \[
 |B(x,y)|=|T_y(x)|\leq\|T_y\|\,\|x\|,
 \]
-and step <1>3 bounds $\|T_y\|$ by $C$.
+and step [](#s1-3){.pf-ref} bounds $\|T_y\|$ by $C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For arbitrary $y\ne0$, bilinearity gives
 \[
@@ -145,7 +145,7 @@ Since $y=\|y\|(y/\|y\|)$, linearity in the second argument gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for all $x\in X$ and $y\in Y$,
 \[
@@ -155,7 +155,7 @@ Therefore, for all $x\in X$ and $y\in Y$,
 
 ::: pf-proof
 
-If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply step <1>4 to the unit vector $y/\|y\|$ and use step <1>5:
+If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply step [](#s1-4){.pf-ref} to the unit vector $y/\|y\|$ and use step [](#s1-5){.pf-ref}:
 \[
 |B(x,y)|
 =\|y\|\left|B\left(x,\frac y{\|y\|}\right)\right|
@@ -168,7 +168,7 @@ If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply 
 
 ::: pf-qed
 
-Step <1>6 is the required joint boundedness estimate.
+Step [](#s1-6){.pf-ref} is the required joint boundedness estimate.
 
 :::
 

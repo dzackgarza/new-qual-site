@@ -28,7 +28,7 @@ As stated, the assertion requires the implicit hypothesis $K\ne\varnothing$: if 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The image $f(K)$ is a nonempty compact subset of $\mathbb R$.
 
@@ -41,14 +41,14 @@ Because $K\ne\varnothing$, the image $f(K)$ is nonempty. Since $K$ is compact an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $f(K)$ has a largest element.
 
 
 ::: pf-proof
 
-By step <1>1, $f(K)$ is a nonempty compact subset of $\mathbb R$. Hence it is bounded above. Let
+By step [](#s1-1){.pf-ref}, $f(K)$ is a nonempty compact subset of $\mathbb R$. Hence it is bounded above. Let
 \[
 M=\sup f(K).
 \]
@@ -56,13 +56,13 @@ For each positive integer $n$, the definition of supremum gives a point $y_n\in 
 \[
 M-\frac1n<y_n\le M.
 \]
-Thus $y_n\to M$. Compact subsets of $\mathbb R$ are closed, so step <1>1 implies $M\in f(K)$. Therefore $M$ is the largest element of $f(K)$.
+Thus $y_n\to M$. Compact subsets of $\mathbb R$ are closed, so step [](#s1-1){.pf-ref} implies $M\in f(K)$. Therefore $M$ is the largest element of $f(K)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $x_0\in K$ such that
 \[
@@ -73,7 +73,7 @@ for every $x\in K$.
 
 ::: pf-proof
 
-By step <1>2, the maximum value $M$ belongs to $f(K)$. Hence there is $x_0\in K$ with
+By step [](#s1-2){.pf-ref}, the maximum value $M$ belongs to $f(K)$. Hence there is $x_0\in K$ with
 \[
 f(x_0)=M.
 \]
@@ -88,7 +88,7 @@ f(x)\le M=f(x_0).
 
 ::: pf-qed
 
-Step <1>3 proves the required conclusion for every nonempty compact $K$, while the opening observation identifies the empty-set exception in the statement as printed.
+Step [](#s1-3){.pf-ref} proves the required conclusion for every nonempty compact $K$, while the opening observation identifies the empty-set exception in the statement as printed.
 
 :::
 

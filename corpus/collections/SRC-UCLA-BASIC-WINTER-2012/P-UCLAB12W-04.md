@@ -33,7 +33,7 @@ By hypothesis, $A_n\to s$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence $(s_n)$ is nonnegative and nondecreasing.
 
@@ -50,14 +50,14 @@ and each partial sum $s_n$ is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(s_n)$ is bounded above.
 
 
 ::: pf-proof
 
-Suppose instead that $(s_n)$ is unbounded. Since it is nondecreasing by step <1>1, it then tends to $+\infty$.
+Suppose instead that $(s_n)$ is unbounded. Since it is nondecreasing by step [](#s1-1){.pf-ref}, it then tends to $+\infty$.
 
 Let $M>0$. Choose $N$ such that
 $$
@@ -81,7 +81,7 @@ Since $M$ is arbitrary, this would force $A_n\to+\infty$, contradicting the fini
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $L\in\RR$ such that
 $$
@@ -91,7 +91,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>2, $(s_n)$ is nondecreasing and bounded above. Therefore it converges to its supremum
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, $(s_n)$ is nondecreasing and bounded above. Therefore it converges to its supremum
 $$
 L=\sup_n s_n.
 $$
@@ -100,7 +100,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Cesàro means $A_n$ converge to the same limit $L$.
 
@@ -132,7 +132,7 @@ The finite first sum divided by $n$ tends to $0$, so for sufficiently large $n$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -142,13 +142,13 @@ $$
 
 ::: pf-proof
 
-By hypothesis $A_n\to s$, while step <1>4 gives $A_n\to L$. Limits in $\RR$ are unique, so $L=s$.
+By hypothesis $A_n\to s$, while step [](#s1-4){.pf-ref} gives $A_n\to L$. Limits in $\RR$ are unique, so $L=s$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -158,7 +158,7 @@ $$
 
 ::: pf-proof
 
-The partial sums of the series are exactly $s_n$. By steps <1>3 and <1>5,
+The partial sums of the series are exactly $s_n$. By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref},
 $$
 s_n\to s.
 $$
@@ -170,7 +170,7 @@ This is precisely convergence of the series to $s$.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

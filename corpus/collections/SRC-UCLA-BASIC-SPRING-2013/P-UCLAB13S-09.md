@@ -34,7 +34,7 @@ Regard the real matrix $A$ as a complex matrix acting on $\mathbb C^n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every complex eigenvalue $\lambda$ of $A$ satisfies
 \[
@@ -81,7 +81,7 @@ one gets
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The complex operator $A$ is normal and therefore has an orthonormal basis of complex eigenvectors.
 
@@ -119,7 +119,7 @@ Every real eigenvalue of $A$ is either
 
 ::: pf-proof
 
-By step <1>1, every eigenvalue has absolute value $1$.
+By step [](#s1-1){.pf-ref}, every eigenvalue has absolute value $1$.
 The only real numbers of absolute value $1$ are $\pm1$.
 
 :::
@@ -160,7 +160,7 @@ Thus conjugate eigenvalues occur in pairs.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -215,7 +215,7 @@ Hence $P$ is a two-dimensional invariant plane.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The restriction
 \[
@@ -248,7 +248,7 @@ e^{i\theta}e^{-i\theta}=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There is an orthonormal basis of $P$ in which the matrix of $A|_P$ is
 \[
@@ -267,7 +267,7 @@ Choose any unit vector
 \[
 e_1\in P.
 \]
-Because $A|_P$ is orientation-preserving and orthogonal by step <1>6, it is a rotation of the Euclidean plane.
+Because $A|_P$ is orientation-preserving and orthogonal by step [](#s1-6){.pf-ref}, it is a rotation of the Euclidean plane.
 Choose the unit vector $e_2$ so that $(e_1,e_2)$ is positively oriented.
 Then for some angle $\theta$,
 \[
@@ -292,18 +292,18 @@ The eigenvalues determine the same angle modulo sign and $2\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The real space $\mathbb R^n$ decomposes orthogonally into real eigenspaces for $\pm1$ and two-dimensional invariant planes associated to nonreal conjugate pairs.
 
 
 ::: pf-proof
 
-By step <1>2, $\mathbb C^n$ is an orthogonal direct sum of eigenspaces of $A$.
+By step [](#s1-2){.pf-ref}, $\mathbb C^n$ is an orthogonal direct sum of eigenspaces of $A$.
 The eigenspaces for the real eigenvalues $\pm1$ are invariant under conjugation and have real orthonormal bases.
 
 For every nonreal eigenvalue $\lambda$, pair its eigenspace with the conjugate eigenspace for $\overline\lambda$.
-Taking real and imaginary parts of paired complex eigenvectors produces real two-dimensional invariant planes as in step <1>5.
+Taking real and imaginary parts of paired complex eigenvectors produces real two-dimensional invariant planes as in step [](#s1-5){.pf-ref}.
 Different spectral subspaces are orthogonal because $A$ is normal.
 Collecting these real pieces gives an orthogonal direct-sum decomposition of $\mathbb R^n$.
 
@@ -311,7 +311,7 @@ Collecting these real pieces gives an orthogonal direct-sum decomposition of $\m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore $A$ is orthogonally similar to a block-diagonal matrix whose blocks are
 \[
@@ -332,8 +332,8 @@ together with $1\times1$ blocks
 
 ::: pf-proof
 
-Choose orthonormal bases in each summand of the decomposition from step <1>8.
-On each two-dimensional plane, use the basis from step <1>7.
+Choose orthonormal bases in each summand of the decomposition from step [](#s1-8){.pf-ref}.
+On each two-dimensional plane, use the basis from step [](#s1-7){.pf-ref}.
 On the real eigenspaces, use orthonormal eigenvectors.
 The union is an orthonormal basis of $\mathbb R^n$, and the matrix of $A$ in this basis is block diagonal with exactly the stated blocks.
 This proves part (a).
@@ -342,14 +342,14 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Suppose now that
 \[
 n
 \]
 is odd.
-Then the block decomposition in step <1>9 contains at least one $1\times1$ block.
+Then the block decomposition in step [](#s1-9){.pf-ref} contains at least one $1\times1$ block.
 
 
 ::: pf-proof
@@ -367,7 +367,7 @@ Such a block is either $[1]$ or $[-1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 There exists a nonzero real vector
 \[
@@ -381,7 +381,7 @@ Av=\pm v.
 
 ::: pf-proof
 
-Take a basis vector belonging to one of the $1\times1$ blocks from step <1>10.
+Take a basis vector belonging to one of the $1\times1$ blocks from step [](#s1-10){.pf-ref}.
 If that block is $[1]$, then
 \[
 Av=v.
@@ -395,7 +395,7 @@ Av=-v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -405,7 +405,7 @@ Hence
 
 ::: pf-proof
 
-From step <1>11,
+From step [](#s1-11){.pf-ref},
 \[
 Av=\pm v.
 \]
@@ -430,7 +430,7 @@ This proves part (b).
 
 ::: pf-qed
 
-Step <1>9 proves part (a), and step <1>12 proves part (b).
+Step [](#s1-9){.pf-ref} proves part (a), and step [](#s1-12){.pf-ref} proves part (b).
 
 :::
 

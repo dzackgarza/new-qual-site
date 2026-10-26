@@ -27,7 +27,7 @@ be a prime ideal of $R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The quotient
 $$
@@ -50,7 +50,7 @@ is an integral domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every element
 $$
@@ -102,7 +102,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonzero element of $D$ is invertible.
 
@@ -113,7 +113,7 @@ Let
 $$
 0\ne y\in D.
 $$
-By step <1>2, choose
+By step [](#s1-2){.pf-ref}, choose
 $$
 n>1
 $$
@@ -147,7 +147,7 @@ is a multiplicative inverse of $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -157,13 +157,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $D$ is a nonzero commutative ring with identity. By step <1>3, every nonzero element of $D$ is invertible. Hence $D$ is a field.
+By step [](#s1-1){.pf-ref}, $D$ is a nonzero commutative ring with identity. By step [](#s1-3){.pf-ref}, every nonzero element of $D$ is invertible. Hence $D$ is a field.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently
 $$
@@ -173,7 +173,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 R/P
 $$
@@ -185,7 +185,7 @@ is a field. The maximal-ideal quotient criterion therefore implies that $P$ is m
 
 ::: pf-qed
 
-Since $P$ was an arbitrary prime ideal, step <1>5 proves that every prime ideal of $R$ is maximal.
+Since $P$ was an arbitrary prime ideal, step [](#s1-5){.pf-ref} proves that every prime ideal of $R$ is maximal.
 
 :::
 

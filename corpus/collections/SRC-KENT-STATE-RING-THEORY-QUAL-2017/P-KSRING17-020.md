@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $\varphi$ is a ring homomorphism.
 
@@ -75,7 +75,7 @@ the identity of the product ring.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The kernel of $\varphi$ is
 $$
@@ -106,7 +106,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Because
 $$
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map $\varphi$ is surjective.
 
@@ -162,7 +162,7 @@ $$
 \in
 R/I\oplus R/J
 $$
-be arbitrary. Choose $i,j$ as in step <1>3 and set
+be arbitrary. Choose $i,j$ as in step [](#s1-3){.pf-ref} and set
 $$
 r
 \coloneqq
@@ -215,7 +215,7 @@ and $\varphi$ is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -229,7 +229,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>4, $\varphi$ is a surjective ring homomorphism with kernel
+By steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}, $\varphi$ is a surjective ring homomorphism with kernel
 $$
 I\cap J.
 $$
@@ -250,7 +250,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the desired ring isomorphism.
+Step [](#s1-5){.pf-ref} is the desired ring isomorphism.
 
 :::
 

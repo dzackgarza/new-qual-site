@@ -77,7 +77,7 @@ strictly increasing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore \(p\) has at most one real root.
 
@@ -91,7 +91,7 @@ value \(0\), at two distinct points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -108,7 +108,7 @@ Substitute \(x=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -131,7 +131,7 @@ p(1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By the intermediate value theorem, \(p\) has a real root in
 \[
@@ -141,14 +141,14 @@ By the intermediate value theorem, \(p\) has a real root in
 
 ::: pf-proof
 
-The polynomial \(p\) is continuous, and steps <1>5--<1>6 show a sign
+The polynomial \(p\) is continuous, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} show a sign
 change between \(0\) and \(1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Combining existence and uniqueness,
 \[
@@ -160,7 +160,7 @@ p(x)=2x^5+8x-7
 
 ::: pf-proof
 
-Existence is step <1>7 and uniqueness is step <1>4.
+Existence is step [](#s1-7){.pf-ref} and uniqueness is step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -168,7 +168,7 @@ Existence is step <1>7 and uniqueness is step <1>4.
 
 ::: pf-qed
 
-Step <1>8 gives the requested number of real roots.
+Step [](#s1-8){.pf-ref} gives the requested number of real roots.
 
 :::
 

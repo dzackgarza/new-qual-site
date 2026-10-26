@@ -39,7 +39,7 @@ Conclude that a nonconstant polynomial cannot attain its maximum modulus in the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $0<r<1-|z_0|$,
 $$
@@ -81,7 +81,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $0<r<1-|z_0|$,
 $$
@@ -110,14 +110,14 @@ by $2\pi$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $p$ attains its maximum modulus at a point $z_0$ with $|z_0|<1$, then $p$ is constant.
 
 
 ::: pf-proof
 
-Combining steps <1>1 and <1>2 yields
+Combining steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} yields
 $$
 |b_0|^2+\sum_{k=1}^n|b_k|^2r^{2k}\le |b_0|^2.
 $$
@@ -135,7 +135,7 @@ Hence $p(z)=b_0$ for all $z$, so $p$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A nonconstant polynomial cannot attain its maximum modulus in the open unit disk.
 
@@ -143,13 +143,13 @@ A nonconstant polynomial cannot attain its maximum modulus in the open unit disk
 ::: pf-proof
 
 If a nonconstant polynomial attained its maximum modulus at an interior
-point $z_0$, step <1>3 would force it to be constant, a contradiction.
+point $z_0$, step [](#s1-3){.pf-ref} would force it to be constant, a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -160,7 +160,7 @@ $$
 ::: pf-proof
 
 The polynomial $p$ is continuous, so $|p|$ attains a maximum on the
-compact closed unit disk. If $p$ is nonconstant, step <1>4 shows that
+compact closed unit disk. If $p$ is nonconstant, step [](#s1-4){.pf-ref} shows that
 no maximizing point lies in the open unit disk, hence some maximizing
 point lies on the unit circle. If $p$ is constant, the equality is
 immediate. Thus in all cases the two maxima are equal.
@@ -171,8 +171,8 @@ immediate. Thus in all cases the two maxima are equal.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 establish the requested integral identities, step
-<1>4 gives the nonconstant case, and step <1>5 gives the final
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} establish the requested integral identities, step
+[](#s1-4){.pf-ref} gives the nonconstant case, and step [](#s1-5){.pf-ref} gives the final
 maximum-modulus equality.
 
 :::

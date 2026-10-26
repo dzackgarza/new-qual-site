@@ -31,7 +31,7 @@ F(t)=f(t,\cdot)\in L^2([0,1]).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For \(0\le s<t\) and every \(x\in[0,1]\),
 \[
@@ -50,7 +50,7 @@ Apply the fundamental theorem of calculus in the \(t\)-variable, using smoothnes
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 \[
@@ -64,13 +64,13 @@ Hence
 
 ::: pf-proof
 
-Take the \(L^2\)-norm in \(x\) of the integral in step <1>1 and apply Minkowski's integral inequality.
+Take the \(L^2\)-norm in \(x\) of the integral in step [](#s1-1){.pf-ref} and apply Minkowski's integral inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Rewrite the integrand as
 \[
@@ -91,7 +91,7 @@ This is an algebraic identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Cauchy--Schwarz in \(\tau\) gives
 \[
@@ -113,13 +113,13 @@ Cauchy--Schwarz in \(\tau\) gives
 
 ::: pf-proof
 
-Apply Cauchy--Schwarz to the two factors from step <1>3.
+Apply Cauchy--Schwarz to the two factors from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By Fubini,
 \[
@@ -148,7 +148,7 @@ The integrand is nonnegative, so Tonelli's theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -163,13 +163,13 @@ A:=
 
 ::: pf-proof
 
-This is exactly the hypothesis, rewritten using step <1>5.
+This is exactly the hypothesis, rewritten using step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For \(t\ge s\),
 \[
@@ -189,7 +189,7 @@ The integrand is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -214,9 +214,9 @@ An antiderivative is \(\arctan\tau\), and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Combining steps <1>2, <1>4, <1>6, and <1>7,
+Combining steps [](#s1-2){.pf-ref}, [](#s1-4){.pf-ref}, and [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref},
 \[
 \boxed{
 \|F(t)-F(s)\|_2
@@ -232,7 +232,7 @@ for every \(t\ge s\).
 
 ::: pf-proof
 
-The weighted energy integral over \([s,t]\) is at most \(A\), and the second factor is bounded by the tail from step <1>7.
+The weighted energy integral over \([s,t]\) is at most \(A\), and the second factor is bounded by the tail from step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -240,25 +240,25 @@ The weighted energy integral over \([s,t]\) is at most \(A\), and the second fac
 
 ::: pf-step
 
-The right-hand side of step <1>9 tends to \(0\) as \(s\to\infty\), uniformly for all \(t\ge s\).
+The right-hand side of step [](#s1-9){.pf-ref} tends to \(0\) as \(s\to\infty\), uniformly for all \(t\ge s\).
 
 
 ::: pf-proof
 
-The constant \(A^{1/2}\) is finite by step <1>6, and the tail factor tends to \(0\) by step <1>8.
+The constant \(A^{1/2}\) is finite by step [](#s1-6){.pf-ref}, and the tail factor tends to \(0\) by step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence \((F(t))_{t\ge0}\) is Cauchy in \(L^2([0,1])\) as \(t\to\infty\).
 
 
 ::: pf-proof
 
-Given \(\varepsilon>0\), choose \(S\) so large that the right-hand side in step <1>9 is \(<\varepsilon\) whenever \(s\ge S\). Then for any \(t\ge s\ge S\),
+Given \(\varepsilon>0\), choose \(S\) so large that the right-hand side in step [](#s1-9){.pf-ref} is \(<\varepsilon\) whenever \(s\ge S\). Then for any \(t\ge s\ge S\),
 \[
 \|F(t)-F(s)\|_2<\varepsilon.
 \]
@@ -268,7 +268,7 @@ Interchanging \(s,t\) handles the opposite order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since \(L^2([0,1])\) is complete, there exists
 \[
@@ -284,13 +284,13 @@ F(t)\to g
 
 ::: pf-proof
 
-Every Cauchy net, and in particular every Cauchy trajectory indexed by sufficiently large real \(t\), converges in the complete metric space \(L^2([0,1])\). Equivalently, choose any sequence \(t_n\to\infty\); step <1>11 gives a common Cauchy limit independent of the sequence, and the uniform tail estimate upgrades sequential convergence to full \(t\to\infty\) convergence.
+Every Cauchy net, and in particular every Cauchy trajectory indexed by sufficiently large real \(t\), converges in the complete metric space \(L^2([0,1])\). Equivalently, choose any sequence \(t_n\to\infty\); step [](#s1-11){.pf-ref} gives a common Cauchy limit independent of the sequence, and the uniform tail estimate upgrades sequential convergence to full \(t\to\infty\) convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -303,7 +303,7 @@ f(t,\cdot)\to g
 
 ::: pf-proof
 
-This is step <1>12 in the original notation.
+This is step [](#s1-12){.pf-ref} in the original notation.
 
 :::
 
@@ -311,7 +311,7 @@ This is step <1>12 in the original notation.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

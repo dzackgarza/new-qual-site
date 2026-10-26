@@ -40,7 +40,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 $$
@@ -89,7 +89,7 @@ Hence the asserted derivative bound holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Schwarz's lemma gives
 $$
@@ -103,13 +103,13 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives a holomorphic self-map of the disk fixing $0$, so Schwarz's lemma applies.
+Step [](#s1-1){.pf-ref} gives a holomorphic self-map of the disk fixing $0$, so Schwarz's lemma applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -130,7 +130,7 @@ for every $w\in\mathbb D$.
 
 Since $g(0)=0$, the quotient has a removable singularity at $0$, with value $g'(0)$. Thus $h$ is holomorphic.
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 |h(w)|\le1.
 $$
@@ -141,13 +141,13 @@ $$
 |g'(0)|
 <1
 $$
-by step <1>1. Therefore equality never occurs.
+by step [](#s1-1){.pf-ref}. Therefore equality never occurs.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -190,7 +190,7 @@ Thus induction proves the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The orbit satisfies
 $$
@@ -201,7 +201,7 @@ for every $n$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 |w_n|
 =
@@ -215,7 +215,7 @@ Iteration gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $w_0\ne0$, there exists
 $$
@@ -234,7 +234,7 @@ Let
 $$
 r=|w_0|<1.
 $$
-By step <1>3, the continuous function $|h|$ is strictly less than $1$ on the compact disk
+By step [](#s1-3){.pf-ref}, the continuous function $|h|$ is strictly less than $1$ on the compact disk
 $$
 \{|w|\le r\}.
 $$
@@ -245,7 +245,7 @@ q
 \max_{|w|\le r}|h(w)|
 <1.
 $$
-By step <1>5, every $w_n$ lies in this disk. Thus
+By step [](#s1-5){.pf-ref}, every $w_n$ lies in this disk. Thus
 $$
 |w_{n+1}|
 =
@@ -260,7 +260,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -272,7 +272,7 @@ $$
 
 If $w_0=0$, then $w_n=0$ for every $n$ because $g(0)=0$.
 
-If $w_0\ne0$, step <1>6 gives
+If $w_0\ne0$, step [](#s1-6){.pf-ref} gives
 $$
 |w_n|
 \le
@@ -288,7 +288,7 @@ Thus $w_n\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -298,11 +298,11 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 z_n=\phi^{-1}(w_n).
 $$
-Step <1>7 gives $w_n\to0$, and continuity of $\phi^{-1}$ gives
+Step [](#s1-7){.pf-ref} gives $w_n\to0$, and continuity of $\phi^{-1}$ gives
 $$
 z_n
 \longrightarrow
@@ -317,7 +317,7 @@ $$
 
 ::: pf-qed
 
-Step <1>8 is the required convergence.
+Step [](#s1-8){.pf-ref} is the required convergence.
 
 :::
 

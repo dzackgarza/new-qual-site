@@ -21,7 +21,7 @@ Compute the series $\sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $|x|<1$,
 $$
@@ -39,7 +39,7 @@ This is the geometric-series identity with ratio $-x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Integrating term by term from $0$ to $x$, for $0\leq x<1$,
 $$
@@ -52,7 +52,7 @@ $$
 
 ::: pf-proof
 
-On every interval $[0,r]$ with $r<1$, the geometric series in step <1>1
+On every interval $[0,r]$ with $r<1$, the geometric series in step [](#s1-1){.pf-ref}
 converges uniformly, so termwise integration is valid:
 $$
 \int_0^x\frac{dt}{1+t}
@@ -67,7 +67,7 @@ The left side is $\log(1+x)$, and relabeling $n=m+1$ gives the series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 $$
@@ -86,9 +86,9 @@ applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Letting $x\to1^-$ in step <1>2 gives
+Letting $x\to1^-$ in step [](#s1-2){.pf-ref} gives
 $$
 \sum_{n=1}^{\infty}
 \frac{(-1)^{n-1}}n
@@ -101,14 +101,14 @@ $$
 
 By Abel's theorem, if a power series converges at the boundary point $x=1$,
 then its values for $0\leq x<1$ tend to that boundary sum as $x\to1^-$. Step
-<1>3 supplies the boundary convergence. The left side of step <1>2 tends to
+[](#s1-3){.pf-ref} supplies the boundary convergence. The left side of step [](#s1-2){.pf-ref} tends to
 $\log2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -123,7 +123,7 @@ $$
 
 ::: pf-proof
 
-Multiply the identity in step <1>4 by $-1$.
+Multiply the identity in step [](#s1-4){.pf-ref} by $-1$.
 
 :::
 
@@ -131,7 +131,7 @@ Multiply the identity in step <1>4 by $-1$.
 
 ::: pf-qed
 
-Step <1>5 is the required sum.
+Step [](#s1-5){.pf-ref} is the required sum.
 
 :::
 

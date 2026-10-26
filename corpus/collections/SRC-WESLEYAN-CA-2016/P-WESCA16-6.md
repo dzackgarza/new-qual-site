@@ -25,7 +25,7 @@ and prove your claim.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $f:\mathbb D^*\to\mathbb D^*$ be a conformal automorphism. Then
 $f$ extends holomorphically across $0$ to a map
@@ -46,7 +46,7 @@ $f$ is bijective. Hence $|F(0)|<1$, so $F(\mathbb D)\subseteq\mathbb D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The inverse $f^{-1}$ extends to a holomorphic map
 \[
@@ -57,7 +57,7 @@ and $F$ and $G$ are inverse automorphisms of $\mathbb D$.
 
 ::: pf-proof
 
-Apply step <1>1 to $f^{-1}$ to obtain $G$. On $\mathbb D^*$,
+Apply step [](#s1-1){.pf-ref} to $f^{-1}$ to obtain $G$. On $\mathbb D^*$,
 \[
 G(F(z))=z.
 \]
@@ -75,7 +75,7 @@ Thus $F$ is a conformal automorphism of the full unit disk, with inverse $G$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The disk automorphism $F$ fixes $0$.
 
@@ -86,7 +86,7 @@ By hypothesis,
 \[
 F(\mathbb D^*)=f(\mathbb D^*)=\mathbb D^*.
 \]
-By step <1>2, $F$ is a bijection
+By step [](#s1-2){.pf-ref}, $F$ is a bijection
 \[
 F:\mathbb D\to\mathbb D.
 \]
@@ -104,7 +104,7 @@ F(0)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is $\lambda\in\mathbb C$ with $|\lambda|=1$ such that
 \[
@@ -115,7 +115,7 @@ F(z)=\lambda z
 
 ::: pf-proof
 
-By step <1>3, $F:\mathbb D\to\mathbb D$ is holomorphic and fixes $0$.
+By step [](#s1-3){.pf-ref}, $F:\mathbb D\to\mathbb D$ is holomorphic and fixes $0$.
 Schwarz's lemma gives
 \[
 |F(z)|\le|z|.
@@ -144,7 +144,7 @@ F(z)=\lambda z,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently
 \[
@@ -157,7 +157,7 @@ Consequently
 
 ::: pf-proof
 
-Step <1>4 shows that every conformal automorphism has this form. Conversely,
+Step [](#s1-4){.pf-ref} shows that every conformal automorphism has this form. Conversely,
 for every $|\lambda|=1$, the map
 \[
 z\longmapsto\lambda z
@@ -172,7 +172,7 @@ $S^1$.
 
 ::: pf-qed
 
-Step <1>5 determines the automorphism group.
+Step [](#s1-5){.pf-ref} determines the automorphism group.
 
 :::
 

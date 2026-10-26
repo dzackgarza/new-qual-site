@@ -27,7 +27,7 @@ If $m$ is an integer greater than $1$, let $\ZZ_m$ denote the ring of integers m
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $m>1$, the ring $\ZZ_m$ is a field exactly when
 $m$ is prime.
@@ -45,7 +45,7 @@ $[a]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $n=2,3,4,5$, the five integers $n,n+1,\ldots,n+4$ contain at
 least two primes.
@@ -63,20 +63,20 @@ n&\text{primes among }n,\ldots,n+4\\ \hline
 5&5,7.
 \end{array}
 $$
-By step <1>1, each of these intervals therefore gives at least two fields.
+By step [](#s1-1){.pf-ref}, each of these intervals therefore gives at least two fields.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $n=6$, exactly one of $6,7,8,9,10$ is prime, namely $7$.
 
 
 ::: pf-proof
 
-The integers $6,8,9,10$ are composite, while $7$ is prime. By step <1>1,
+The integers $6,8,9,10$ are composite, while $7$ is prime. By step [](#s1-1){.pf-ref},
 among
 $$
 \ZZ_6,\ZZ_7,\ZZ_8,\ZZ_9,\ZZ_{10}
@@ -87,7 +87,7 @@ only $\ZZ_7$ is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the smallest possible value is
 $$
@@ -98,7 +98,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>2 excludes every admissible integer below $6$, and step <1>3 shows
+Step [](#s1-2){.pf-ref} excludes every admissible integer below $6$, and step [](#s1-3){.pf-ref} shows
 that $6$ has the required property.
 
 :::
@@ -107,7 +107,7 @@ that $6$ has the required property.
 
 ::: pf-qed
 
-Step <1>4 gives the required smallest value.
+Step [](#s1-4){.pf-ref} gives the required smallest value.
 
 :::
 

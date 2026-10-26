@@ -25,7 +25,7 @@ Find the presentation complex $X_G$, identify it as a familiar space, and then f
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The presentation complex $X_G$ has one $0$-cell, one $1$-cell, and one $2$-cell.
 
@@ -44,7 +44,7 @@ Here there is one generator $x$ and one relator $x^2$. Thus $X_G$ has one cell i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The $1$-skeleton of $X_G$ is a circle.
 
@@ -61,7 +61,7 @@ The oriented loop represented by that circle is the generator $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The attaching map of the $2$-cell is the degree-$2$ map
 \[
@@ -83,7 +83,7 @@ Traversing the boundary circle of the $2$-cell according to this word means goin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The resulting CW complex is homeomorphic to the real projective plane:
 \[
@@ -107,13 +107,13 @@ which has degree $2$ after identifying
 \[
 \mathbb{RP}^1\cong S^1.
 \]
-Thus its CW attaching data agree exactly with steps <1>1--<1>3, so the presentation complex is homeomorphic to $\mathbb{RP}^2$.
+Thus its CW attaching data agree exactly with steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, so the presentation complex is homeomorphic to $\mathbb{RP}^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The quotient map
 \[
@@ -144,7 +144,7 @@ Hence every point of $\mathbb{RP}^2$ has an evenly covered neighborhood, so $p$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The sphere $S^2$ is simply connected.
 
@@ -161,9 +161,9 @@ Equivalently, every loop on the $2$-sphere is null-homotopic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Therefore the covering in step <1>5 is the universal cover, and
+Therefore the covering in step [](#s1-5){.pf-ref} is the universal cover, and
 \[
 \boxed{
 \widetilde X_G\cong S^2.
@@ -173,15 +173,15 @@ Therefore the covering in step <1>5 is the universal cover, and
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 X_G\cong\mathbb{RP}^2.
 \]
-Step <1>5 gives a covering
+Step [](#s1-5){.pf-ref} gives a covering
 \[
 S^2\to X_G,
 \]
-and step <1>6 says the covering space $S^2$ is simply connected. A connected simply connected covering is universal.
+and step [](#s1-6){.pf-ref} says the covering space $S^2$ is simply connected. A connected simply connected covering is universal.
 
 :::
 
@@ -189,7 +189,7 @@ and step <1>6 says the covering space $S^2$ is simply connected. A connected sim
 
 ::: pf-qed
 
-Step <1>4 identifies the presentation complex and step <1>7 identifies its universal cover.
+Step [](#s1-4){.pf-ref} identifies the presentation complex and step [](#s1-7){.pf-ref} identifies its universal cover.
 
 :::
 

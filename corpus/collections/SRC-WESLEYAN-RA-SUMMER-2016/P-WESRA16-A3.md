@@ -32,7 +32,7 @@ exists, identifying the limit.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has $\mu(\varnothing)=0$.
 
@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $(A_j)_{j\geq1}$ is pairwise disjoint and $A=\bigcup_{j=1}^\infty A_j$, then
 $$
@@ -78,20 +78,20 @@ These equalities are in $[0,\infty]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $\mu$ is a countably additive measure on the Lebesgue measurable subsets of $\mathbb R^d$.
 
 
 ::: pf-proof
 
-For every measurable $A$, the function $f\mathbf1_A$ is nonnegative and measurable, so $\mu(A)\in[0,\infty]$ is defined. Step <1>1 gives the empty-set axiom and step <1>2 gives countable additivity. This proves part (a).
+For every measurable $A$, the function $f\mathbf1_A$ is nonnegative and measurable, so $\mu(A)\in[0,\infty]$ is defined. Step [](#s1-1){.pf-ref} gives the empty-set axiom and step [](#s1-2){.pf-ref} gives countable additivity. This proves part (a).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $M_0\subseteq M_1\subseteq\cdots$ and $M=\bigcup_{n=0}^\infty M_n$, then $f\mathbf1_{M_n}$ increases pointwise to $f\mathbf1_M$.
 
@@ -104,7 +104,7 @@ The inclusions imply $\mathbf1_{M_n}\leq\mathbf1_{M_{n+1}}$. If $x\notin M$, all
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -116,7 +116,7 @@ $$
 
 ::: pf-proof
 
-Apply the Monotone Convergence Theorem to the increasing sequence in step <1>4. The limit therefore exists in $[0,\infty]$ and equals the integral of the pointwise limit. This proves part (b).
+Apply the Monotone Convergence Theorem to the increasing sequence in step [](#s1-4){.pf-ref}. The limit therefore exists in $[0,\infty]$ and equals the integral of the pointwise limit. This proves part (b).
 
 :::
 
@@ -124,7 +124,7 @@ Apply the Monotone Convergence Theorem to the increasing sequence in step <1>4. 
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

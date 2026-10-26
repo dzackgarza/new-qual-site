@@ -22,7 +22,7 @@ Let $A\subset X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a retraction \(r:X\to A\) and a homotopy
 \[
@@ -43,7 +43,7 @@ The condition \(r|_A=\operatorname{id}_A\) says that \(r\) is a retraction. The 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 \[
@@ -65,7 +65,7 @@ Thus \(r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -100,7 +100,7 @@ Therefore \(H\) is a homotopy from \(\operatorname{id}\) to \(i\circ r\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The homotopy \(H\) fixes \(S^{n-1}\) pointwise.
 
@@ -117,14 +117,14 @@ Thus every point of the sphere remains fixed during the homotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 \(S^{n-1}\) is a deformation retract of \(\mathbb R^n\setminus\{0\}\).
 
 
 ::: pf-proof
 
-Step <1>2 gives a retraction onto \(S^{n-1}\), step <1>3 gives a homotopy from the identity to that retraction followed by inclusion, and step <1>4 shows that this homotopy fixes \(S^{n-1}\) pointwise. These are exactly the conditions in step <1>1.
+Step [](#s1-2){.pf-ref} gives a retraction onto \(S^{n-1}\), step [](#s1-3){.pf-ref} gives a homotopy from the identity to that retraction followed by inclusion, and step [](#s1-4){.pf-ref} shows that this homotopy fixes \(S^{n-1}\) pointwise. These are exactly the conditions in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -132,7 +132,7 @@ Step <1>2 gives a retraction onto \(S^{n-1}\), step <1>3 gives a homotopy from t
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition, and step <1>5 gives the requested explicit deformation retraction.
+Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-5){.pf-ref} gives the requested explicit deformation retraction.
 
 :::
 

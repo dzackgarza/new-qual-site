@@ -37,7 +37,7 @@ for the cofinality of the ordinal $\xi$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every ordinal $\alpha$, the closed ordinal interval
 $$
@@ -120,7 +120,7 @@ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -145,13 +145,13 @@ W(\alpha+1)
 =
 [0,\alpha].
 $$
-Step <1>1 shows this space is compact.
+Step [](#s1-1){.pf-ref} shows this space is compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -243,7 +243,7 @@ is not compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -262,13 +262,13 @@ The empty space
 $$
 W(0)=\varnothing
 $$
-is compact. Step <1>2 proves compactness for successors, and step <1>3 excludes every nonzero limit ordinal.
+is compact. Step [](#s1-2){.pf-ref} proves compactness for successors, and step [](#s1-3){.pf-ref} excludes every nonzero limit ordinal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -337,7 +337,7 @@ Hence there is a countable open cover with no finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose
 $$
@@ -419,7 +419,7 @@ restricts to an open cover of
 $$
 [0,\beta].
 $$
-By step <1>1, there are indices
+By step [](#s1-1){.pf-ref}, there are indices
 $$
 i_1,\ldots,i_k
 $$
@@ -465,7 +465,7 @@ This is a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -484,7 +484,7 @@ is countably compact.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 W(\xi)
 $$
@@ -494,7 +494,7 @@ is compact in these cases. Every compact space is countably compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -511,13 +511,13 @@ If
 $$
 \operatorname{cf}(\xi)=\omega,
 $$
-step <1>5 gives failure of countable compactness.
+step [](#s1-5){.pf-ref} gives failure of countable compactness.
 
 If
 $$
 \operatorname{cf}(\xi)>\omega,
 $$
-step <1>6 proves countable compactness.
+step [](#s1-6){.pf-ref} proves countable compactness.
 
 The remaining cases are
 $$
@@ -527,7 +527,7 @@ and successor ordinals, whose cofinality is not
 $$
 \omega
 $$
-and which are countably compact by step <1>7.
+and which are countably compact by step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -535,7 +535,7 @@ and which are countably compact by step <1>7.
 
 ::: pf-qed
 
-Step <1>4 gives the complete compactness classification, and step <1>8 gives the complete countable-compactness classification.
+Step [](#s1-4){.pf-ref} gives the complete compactness classification, and step [](#s1-8){.pf-ref} gives the complete countable-compactness classification.
 
 :::
 

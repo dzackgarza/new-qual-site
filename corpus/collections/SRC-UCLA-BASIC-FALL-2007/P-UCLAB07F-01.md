@@ -35,7 +35,7 @@ Let
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $\delta_y$ is continuous.
 
@@ -60,7 +60,7 @@ Thus $\delta_y$ is $1$-Lipschitz, and therefore continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set
 \[
@@ -71,7 +71,7 @@ is closed in $S$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 E=\delta_y^{-1}([r,\infty)).
 \]
@@ -84,7 +84,7 @@ The interval $[r,\infty)$ is closed in $\mathbb R$, and the inverse image of a c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In general,
 \[
@@ -133,7 +133,7 @@ Thus the answer to part (b) is no in general.
 
 ::: pf-qed
 
-Step <1>2 answers part (a) affirmatively, and step <1>3 gives a counterexample to part (b).
+Step [](#s1-2){.pf-ref} answers part (a) affirmatively, and step [](#s1-3){.pf-ref} gives a counterexample to part (b).
 
 :::
 

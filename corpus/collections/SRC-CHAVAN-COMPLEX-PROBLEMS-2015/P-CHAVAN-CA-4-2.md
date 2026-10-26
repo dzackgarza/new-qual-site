@@ -26,7 +26,7 @@ Show that at least one partial sum has a zero in the disk
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The partial sum through the quadratic term is
 $$
@@ -47,7 +47,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The zeros of $p_1$ are
 $$
@@ -67,9 +67,9 @@ hence to $z^2=2$. Thus its two zeros are $\sqrt2$ and $-\sqrt2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Both zeros from step <1>2 lie in the disk $|z|<\pi/2$.
+Both zeros from step [](#s1-2){.pf-ref} lie in the disk $|z|<\pi/2$.
 
 
 ::: pf-proof
@@ -95,15 +95,15 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At least one partial sum of the cosine series has a zero in $|z|<\pi/2$.
 
 
 ::: pf-proof
 
-The partial sum $p_1$ from step <1>1 has the two zeros identified in
-step <1>2, and step <1>3 places both of them in the required disk.
+The partial sum $p_1$ from step [](#s1-1){.pf-ref} has the two zeros identified in
+step [](#s1-2){.pf-ref}, and step [](#s1-3){.pf-ref} places both of them in the required disk.
 
 :::
 
@@ -111,7 +111,7 @@ step <1>2, and step <1>3 places both of them in the required disk.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

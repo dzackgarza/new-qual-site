@@ -23,7 +23,7 @@ Compute the residue at $s=1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x>0$, define
 \[
@@ -67,7 +67,7 @@ r(x)\longrightarrow-\frac12
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -93,7 +93,7 @@ There is $\sigma>0$ such that
 \qquad
 (s\in K).
 \]
-By step <1>1, $r$ is bounded on $[0,1]$, say
+By step [](#s1-1){.pf-ref}, $r$ is bounded on $[0,1]$, say
 \[
 |r(x)|\le C.
 \]
@@ -120,7 +120,7 @@ which is also integrable on $(0,1)$. Therefore differentiation under the integra
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 \[
@@ -166,7 +166,7 @@ is still integrable. Hence differentiation under the integral sign is valid on e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For real $s>1$,
 \[
@@ -219,7 +219,7 @@ The remaining two terms are $H(s)$ and $J(s)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -242,7 +242,7 @@ Then $F$ is holomorphic on this punctured half-plane and extends the original fu
 
 ::: pf-proof
 
-By step <1>2, $H$ is holomorphic on $\Re s>0$, and by step <1>3, $J$ is entire. The function
+By step [](#s1-2){.pf-ref}, $H$ is holomorphic on $\Re s>0$, and by step [](#s1-3){.pf-ref}, $J$ is entire. The function
 \[
 \frac1{s-1}
 \]
@@ -250,7 +250,7 @@ is holomorphic away from $s=1$. Thus $F$ is holomorphic on
 \[
 \{\Re s>0\}\setminus\{1\}.
 \]
-Step <1>4 shows that
+Step [](#s1-4){.pf-ref} shows that
 \[
 F(s)=f(s)
 \]
@@ -260,7 +260,7 @@ for every real $s>1$, so $F$ is an analytic continuation of $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The point $s=1$ is a simple pole of $F$.
 
@@ -285,7 +285,7 @@ Thus $s=1$ is a simple pole.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The residue at $s=1$ is
 \[
@@ -295,7 +295,7 @@ The residue at $s=1$ is
 
 ::: pf-proof
 
-From the Laurent expansion in step <1>6, the coefficient of $(s-1)^{-1}$ is exactly $1$.
+From the Laurent expansion in step [](#s1-6){.pf-ref}, the coefficient of $(s-1)^{-1}$ is exactly $1$.
 
 :::
 
@@ -303,7 +303,7 @@ From the Laurent expansion in step <1>6, the coefficient of $(s-1)^{-1}$ is exac
 
 ::: pf-qed
 
-Step <1>5 gives the required analytic continuation, and steps <1>6--<1>7 identify the pole and its residue.
+Step [](#s1-5){.pf-ref} gives the required analytic continuation, and steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} identify the pole and its residue.
 
 :::
 

@@ -24,7 +24,7 @@ Use the convention that the inner product is linear in its first argument and co
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Cauchy--Schwarz inequality states that for all $x,y\in V$,
 \[
@@ -40,9 +40,9 @@ This is the assertion to be proved.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-If $y=0$, then the inequality in step <1>1 holds with equality.
+If $y=0$, then the inequality in step [](#s1-1){.pf-ref} holds with equality.
 
 
 ::: pf-proof
@@ -61,7 +61,7 @@ so both sides of the inequality are zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $y\ne0$ and set
 \[
@@ -88,7 +88,7 @@ Since the inner product is linear in the first argument,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $y\ne0$, then
 \[
@@ -102,7 +102,7 @@ If $y\ne0$, then
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 x=(x-\lambda y)+\lambda y
 \]
@@ -129,7 +129,7 @@ Also
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $y\ne0$, then
 \[
@@ -141,7 +141,7 @@ If $y\ne0$, then
 
 ::: pf-proof
 
-The first term on the right side of step <1>4 is nonnegative. Therefore
+The first term on the right side of step [](#s1-4){.pf-ref} is nonnegative. Therefore
 \[
 \|x\|^2
 \ge
@@ -153,7 +153,7 @@ Multiplying by $\|y\|^2>0$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For all $x,y\in V$,
 \[
@@ -165,20 +165,20 @@ For all $x,y\in V$,
 
 ::: pf-proof
 
-Step <1>2 handles $y=0$. If $y\ne0$, step <1>5 gives the squared inequality. Both sides are nonnegative, so taking square roots gives the desired inequality.
+Step [](#s1-2){.pf-ref} handles $y=0$. If $y\ne0$, step [](#s1-5){.pf-ref} gives the squared inequality. Both sides are nonnegative, so taking square roots gives the desired inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Equality holds if and only if $x$ and $y$ are linearly dependent.
 
 
 ::: pf-proof
 
-If $y=0$, the vectors are linearly dependent and equality holds by step <1>2. Suppose $y\ne0$. By step <1>4, equality in Cauchy--Schwarz holds exactly when
+If $y=0$, the vectors are linearly dependent and equality holds by step [](#s1-2){.pf-ref}. Suppose $y\ne0$. By step [](#s1-4){.pf-ref}, equality in Cauchy--Schwarz holds exactly when
 \[
 \|x-\lambda y\|^2=0,
 \]
@@ -194,7 +194,7 @@ Thus equality is equivalent to linear dependence.
 
 ::: pf-qed
 
-Step <1>6 proves the Cauchy--Schwarz inequality, and step <1>7 gives its equality criterion.
+Step [](#s1-6){.pf-ref} proves the Cauchy--Schwarz inequality, and step [](#s1-7){.pf-ref} gives its equality criterion.
 
 :::
 

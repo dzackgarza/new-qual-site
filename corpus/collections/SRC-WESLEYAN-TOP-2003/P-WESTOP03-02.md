@@ -28,7 +28,7 @@ S^0=\{-1,1\},
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A pointed map
 \[
@@ -69,7 +69,7 @@ This is exactly the definition of a homotopy through pointed maps: the basepoint
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Such a pointed homotopy exists if and only if $y$ and $z$ lie in the same path component of $X$.
 
@@ -92,7 +92,7 @@ Because $S^0\times I$ is the disjoint union of two copies of $I$, this $H$ is co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the set of pointed homotopy classes is naturally identified with the set of path components of $X$:
 \[
@@ -102,20 +102,20 @@ Therefore the set of pointed homotopy classes is naturally identified with the s
 
 ::: pf-proof
 
-Step <1>1 identifies pointed maps with points $y\in X$, and step <1>3 identifies precisely those points that represent the same pointed homotopy class. The quotient is the set of path components.
+Step [](#s1-1){.pf-ref} identifies pointed maps with points $y\in X$, and step [](#s1-3){.pf-ref} identifies precisely those points that represent the same pointed homotopy class. The quotient is the set of path components.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under this identification, the constant pointed map represents the path component containing $x$.
 
 
 ::: pf-proof
 
-The constant pointed map has $f(-1)=x$, so step <1>4 sends its class to the path component of $x$.
+The constant pointed map has $f(-1)=x$, so step [](#s1-4){.pf-ref} sends its class to the path component of $x$.
 
 :::
 
@@ -123,7 +123,7 @@ The constant pointed map has $f(-1)=x$, so step <1>4 sends its class to the path
 
 ::: pf-qed
 
-Steps <1>4--<1>5 give the requested description, including its distinguished base class.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the requested description, including its distinguished base class.
 
 :::
 

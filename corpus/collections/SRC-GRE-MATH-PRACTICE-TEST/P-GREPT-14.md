@@ -29,7 +29,7 @@ $$\frac{d^2y}{dx^2} = \left(\frac{dy}{dx}\right)^2$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With
 $$
@@ -50,7 +50,7 @@ equivalent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every constant function
 $$
@@ -69,7 +69,7 @@ of the equation as printed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonconstant real solution on a connected interval has the form
 $$
@@ -83,7 +83,7 @@ where the interval does not contain $-C_1$.
 For a nonconstant solution, $u=y'$ cannot vanish at a point: the initial-value
 problem $u'=u^2$, $u(x_0)=0$ has the unique solution $u\equiv0$, which would
 make $y$ constant. Hence $u$ is nowhere zero. Separating variables in step
-<1>1 gives
+[](#s1-1){.pf-ref} gives
 $$
 \frac{du}{u^2}=dx,
 $$
@@ -102,7 +102,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -113,9 +113,9 @@ for the problem as stated.
 
 ::: pf-proof
 
-Step <1>2 shows that $y\equiv1$, for example, is a nonzero solution. Every
+Step [](#s1-2){.pf-ref} shows that $y\equiv1$, for example, is a nonzero solution. Every
 listed choice (A)--(E) is a nonconstant family and therefore omits this
-solution. Step <1>3 gives the remaining nonconstant solutions.
+solution. Step [](#s1-3){.pf-ref} gives the remaining nonconstant solutions.
 
 :::
 
@@ -123,7 +123,7 @@ solution. Step <1>3 gives the remaining nonconstant solutions.
 
 ::: pf-qed
 
-Steps <1>2--<1>4 classify the literal solutions and prove that no listed
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} classify the literal solutions and prove that no listed
 answer is complete.
 
 :::
@@ -133,6 +133,6 @@ answer is complete.
 ::: {.remark}
 The source selects (E) after explicitly discarding the solution $u=y'\equiv0$.
 If the question is instead read as asking only for nonconstant solutions and
-one works on an interval where $x+C_1>0$, step <1>3 becomes
+one works on an interval where $x+C_1>0$, step [](#s1-3){.pf-ref} becomes
 $y=C_2-\log(x+C_1)$, which is choice (E).
 :::

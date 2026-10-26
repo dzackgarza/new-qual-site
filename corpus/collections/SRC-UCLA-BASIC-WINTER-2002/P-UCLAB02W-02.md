@@ -65,7 +65,7 @@ Choose $n_1$ with $x_{n_1}\in I_1$. Suppose $n_k$ has been chosen. Since $I_{k+1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The subsequence $(x_{n_k})$ is Cauchy.
 
@@ -86,14 +86,14 @@ Thus $(x_{n_k})$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The subsequence $(x_{n_k})$ converges to a point of $[0,1]$.
 
 
 ::: pf-proof
 
-The real numbers are complete, so the Cauchy sequence from step <1>3 converges to some $x\in\RR$. Every term $x_{n_k}$ lies in the closed set $[0,1]$, and a closed subset of $\RR$ contains the limits of its convergent sequences. Hence $x\in[0,1]$.
+The real numbers are complete, so the Cauchy sequence from step [](#s1-3){.pf-ref} converges to some $x\in\RR$. Every term $x_{n_k}$ lies in the closed set $[0,1]$, and a closed subset of $\RR$ contains the limits of its convergent sequences. Hence $x\in[0,1]$.
 
 :::
 
@@ -101,7 +101,7 @@ The real numbers are complete, so the Cauchy sequence from step <1>3 converges t
 
 ::: pf-qed
 
-The original sequence in $[0,1]$ was arbitrary. Step <1>4 constructs a convergent subsequence of it whose limit lies in $[0,1]$. Therefore $[0,1]$ is sequentially compact.
+The original sequence in $[0,1]$ was arbitrary. Step [](#s1-4){.pf-ref} constructs a convergent subsequence of it whose limit lies in $[0,1]$. Therefore $[0,1]$ is sequentially compact.
 
 :::
 

@@ -68,7 +68,7 @@ $v$ onto the rotation axis, and the difference is perpendicular to $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A right-handed rotation by $\theta$ about the axis $n$ sends $v$ to
 $$
@@ -95,13 +95,13 @@ Apply this to $w=v_\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 $$
 n\times v_\parallel=0,
 $$
-step <1>2 becomes Rodrigues' formula
+step [](#s1-2){.pf-ref} becomes Rodrigues' formula
 $$
 Rv
 =
@@ -119,7 +119,7 @@ Substitute
 $$
 v_\perp=v-v_\parallel
 $$
-into step <1>2 and use
+into step [](#s1-2){.pf-ref} and use
 $$
 v_\parallel=(n\cdot v)n.
 $$
@@ -128,7 +128,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -154,7 +154,7 @@ This is the coordinate formula for the cross product.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The rotation matrix is
 $$
@@ -172,7 +172,7 @@ $$
 
 ::: pf-proof
 
-The three terms in step <1>3 are respectively the actions of
+The three terms in step [](#s1-3){.pf-ref} are respectively the actions of
 $$
 cI,
 \qquad
@@ -185,7 +185,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Explicitly,
 $$
@@ -202,7 +202,7 @@ $$
 
 ::: pf-proof
 
-Expand the matrix expression in step <1>5 using
+Expand the matrix expression in step [](#s1-5){.pf-ref} using
 $$
 nn^T
 =
@@ -212,26 +212,26 @@ n_yn_x&n_y^2&n_yn_z\\
 n_zn_x&n_zn_y&n_z^2
 \end{pmatrix}
 $$
-and the matrix from step <1>4.
+and the matrix from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>5--<1>6 give the rotation matrix.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the rotation matrix.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The trace is
 $$
@@ -241,7 +241,7 @@ $$
 
 ::: pf-proof
 
-Take traces in step <1>5:
+Take traces in step [](#s1-5){.pf-ref}:
 $$
 \operatorname{Tr}R
 =
@@ -272,7 +272,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Equivalently,
 $$
@@ -286,20 +286,20 @@ $$
 
 ::: pf-proof
 
-Solve step <1>8 for $\cos\theta$.
+Solve step [](#s1-8){.pf-ref} for $\cos\theta$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>8--<1>9 give the requested relation.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the requested relation.
 
 :::
 
@@ -307,7 +307,7 @@ Steps <1>8--<1>9 give the requested relation.
 
 ::: pf-qed
 
-Steps <1>7 and <1>10 establish parts (a) and (b), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-10){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

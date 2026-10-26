@@ -43,7 +43,7 @@ We first obtain compactness on bounded subsets of \(\mathbb C\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every entire function \(g\) and every \(z_0\in\mathbb C\),
 \[
@@ -64,7 +64,7 @@ The function \(|g|^2\) is subharmonic. The subharmonic mean-value inequality on 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix \(R>0\). If
 \[
@@ -95,7 +95,7 @@ By the triangle inequality,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence, for \(|z_0|\le R\),
 \[
@@ -110,7 +110,7 @@ e^{(R+1)^2}
 
 ::: pf-proof
 
-On the disk from step <1>2,
+On the disk from step [](#s1-2){.pf-ref},
 \[
 e^{|z|^2}
 \le
@@ -130,7 +130,7 @@ Integrate over the disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -144,7 +144,7 @@ for all \(j\) and all \(|z_0|\le R\).
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3 and use the global hypothesis
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} and use the global hypothesis
 \[
 \int_{\mathbb C}|f_j|^2e^{-|z|^2}\,dA\le C.
 \]
@@ -160,13 +160,13 @@ Thus the family \(\{f_j\}\) is locally uniformly bounded on \(\mathbb C\).
 
 ::: pf-proof
 
-For every closed disk \(\{|z|\le R\}\), step <1>4 gives a bound independent of \(j\).
+For every closed disk \(\{|z|\le R\}\), step [](#s1-4){.pf-ref} gives a bound independent of \(j\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By Montel's theorem, there is a subsequence
 \[
@@ -183,7 +183,7 @@ A locally uniformly bounded family of holomorphic functions is normal. Choose a 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular,
 \[
@@ -201,7 +201,7 @@ Pointwise convergence follows from locally uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Fatou's lemma gives
 \[
@@ -214,7 +214,7 @@ Fatou's lemma gives
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 |f_{j_k}(z)|^2e^{-|z|^2}
 \to
@@ -233,7 +233,7 @@ pointwise. These functions are nonnegative, so Fatou yields
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every \(R>0\) and every \(|z|>R\),
 \[
@@ -265,7 +265,7 @@ e^{-R^2}e^{-|z|^2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -280,13 +280,13 @@ for every \(k\).
 
 ::: pf-proof
 
-Use step <1>9 and the original weighted \(L^2\) bound.
+Use step [](#s1-9){.pf-ref} and the original weighted \(L^2\) bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Likewise,
 \[
@@ -300,13 +300,13 @@ Ce^{-R^2}}.
 
 ::: pf-proof
 
-Use step <1>9 and the bound from step <1>8.
+Use step [](#s1-9){.pf-ref} and the bound from step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -323,7 +323,7 @@ Use
 \[
 |a-b|^2\le2|a|^2+2|b|^2,
 \]
-then apply steps <1>10--<1>11:
+then apply steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}:
 \[
 \begin{aligned}
 \int_{|z|>R}|f_{j_k}-f|^2e^{-2|z|^2}
@@ -340,7 +340,7 @@ then apply steps <1>10--<1>11:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Fix \(\varepsilon>0\). Choose \(R>0\) so large that
 \[
@@ -361,7 +361,7 @@ such \(R\) exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 On the closed disk
 \[
@@ -378,13 +378,13 @@ one has
 
 ::: pf-proof
 
-This is local uniform convergence from step <1>6.
+This is local uniform convergence from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -413,13 +413,13 @@ e^{-2|z|^2}\le1,
 \right)^2,
 \end{aligned}
 \]
-and the right-hand side tends to zero by step <1>14.
+and the right-hand side tends to zero by step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence there exists \(K\) such that for all \(k\ge K\),
 \[
@@ -433,13 +433,13 @@ Hence there exists \(K\) such that for all \(k\ge K\),
 
 ::: pf-proof
 
-Apply step <1>15.
+Apply step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 For \(k\ge K\),
 \[
@@ -452,13 +452,13 @@ For \(k\ge K\),
 
 ::: pf-proof
 
-Split the integral into \(|z|\le R\) and \(|z|>R\). The inside contribution is \(<\varepsilon/2\) by step <1>16, while the outside contribution is \(<\varepsilon/2\) by steps <1>12--<1>13.
+Split the integral into \(|z|\le R\) and \(|z|>R\). The inside contribution is \(<\varepsilon/2\) by step [](#s1-16){.pf-ref}, while the outside contribution is \(<\varepsilon/2\) by steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -471,7 +471,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>17 is the \(\varepsilon\)-definition of convergence to zero.
+Step [](#s1-17){.pf-ref} is the \(\varepsilon\)-definition of convergence to zero.
 
 :::
 
@@ -479,7 +479,7 @@ Step <1>17 is the \(\varepsilon\)-definition of convergence to zero.
 
 ::: pf-qed
 
-Step <1>6 gives the subsequence and entire limit, and step <1>18 gives the required weighted \(L^2\) convergence.
+Step [](#s1-6){.pf-ref} gives the subsequence and entire limit, and step [](#s1-18){.pf-ref} gives the required weighted \(L^2\) convergence.
 
 :::
 

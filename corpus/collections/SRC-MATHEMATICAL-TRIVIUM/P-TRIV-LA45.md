@@ -54,7 +54,7 @@ with the diagonal entries read directly from the square terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first leading principal minor is
 $$
@@ -70,7 +70,7 @@ This is the upper-left $1\times1$ determinant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The second leading principal minor is
 $$
@@ -100,7 +100,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The third leading principal minor is
 $$
@@ -144,7 +144,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By Sylvester's criterion, the quadratic form is positive definite.
 
@@ -153,13 +153,13 @@ By Sylvester's criterion, the quadratic form is positive definite.
 
 For a real symmetric matrix, Sylvester's criterion states that the associated
 quadratic form is positive definite exactly when all leading principal minors
-are positive. Steps <1>2--<1>4 verify this condition.
+are positive. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} verify this condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -169,7 +169,7 @@ $$
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -177,7 +177,7 @@ This is step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

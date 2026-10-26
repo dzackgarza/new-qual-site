@@ -26,7 +26,7 @@ in the open upper half-plane.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $f$ has no real zeros.
 
@@ -51,7 +51,7 @@ Thus $f$ has no zeros on the real axis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $z_0$ is a zero of $f$ of multiplicity $m$, then $-z_0$ is also a zero of multiplicity $m$.
 
@@ -74,7 +74,7 @@ Thus zeros occur in pairs $z_0,-z_0$. Replacing $z$ by $-z$ preserves the order 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 \[
@@ -89,13 +89,13 @@ If $\operatorname{Im}z>0$, then
 \[
 \operatorname{Im}(-z)<0,
 \]
-and conversely. Step <1>2 shows that this involution preserves zeros and their multiplicities.
+and conversely. Step [](#s1-2){.pf-ref} shows that this involution preserves zeros and their multiplicities.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The polynomial $f$ has exactly
 \[
@@ -106,7 +106,7 @@ zeros in the open upper half-plane, counted with multiplicity.
 
 ::: pf-proof
 
-Since $f$ has degree $6$, the fundamental theorem of algebra gives exactly six zeros in $\mathbb C$, counted with multiplicity. By step <1>1, none lies on the real axis. By step <1>3, the numbers of zeros in the upper and lower half-planes are equal, counted with multiplicity. Therefore each half-plane contains
+Since $f$ has degree $6$, the fundamental theorem of algebra gives exactly six zeros in $\mathbb C$, counted with multiplicity. By step [](#s1-1){.pf-ref}, none lies on the real axis. By step [](#s1-3){.pf-ref}, the numbers of zeros in the upper and lower half-planes are equal, counted with multiplicity. Therefore each half-plane contains
 \[
 \frac62=3
 \]
@@ -118,7 +118,7 @@ zeros.
 
 ::: pf-qed
 
-Step <1>4 gives the requested count.
+Step [](#s1-4){.pf-ref} gives the requested count.
 
 :::
 

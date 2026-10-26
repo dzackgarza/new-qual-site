@@ -45,7 +45,7 @@ k_{\min}(n)=N(n)-2n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A classical nonembedding theorem gives
 \[
@@ -81,7 +81,7 @@ displayed integer lower bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Mukherjee's embedding theorem gives
 \[
@@ -107,7 +107,7 @@ Bull. London Math. Soc. 13 (1981), 323--324.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence for arbitrary $n$ one has
 \[
@@ -137,14 +137,14 @@ Subtract the real dimension
 \[
 2n
 \]
-of $\mathbb{CP}^n$ from the lower bound in step <1>1 and the upper bounds in
-step <1>2.
+of $\mathbb{CP}^n$ from the lower bound in step [](#s1-1){.pf-ref} and the upper bounds in
+step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -166,13 +166,13 @@ k_{\min}(n)=2n-1.
 
 ::: pf-proof
 
-When $\alpha(n)=1$, step <1>1 gives
+When $\alpha(n)=1$, step [](#s1-1){.pf-ref} gives
 \[
 N(n)
 \ge
 4n-1.
 \]
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 N(n)
 \le
@@ -189,7 +189,7 @@ For $n=1$, this is the familiar embedding
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $n>1$ is odd and
 \[
@@ -207,7 +207,7 @@ k_{\min}(n)=2n-3.
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 N(n)
 >
@@ -217,7 +217,7 @@ so
 \[
 N(n)\ge4n-3.
 \]
-Because $n$ is odd, the improved upper bound in step <1>2 gives
+Because $n$ is odd, the improved upper bound in step [](#s1-2){.pf-ref} gives
 \[
 N(n)
 \le
@@ -231,7 +231,7 @@ Hence equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $n$ is even and
 \[
@@ -260,7 +260,7 @@ In particular it cannot embed there, so
 N(n)\ge4n-2.
 \]
 
-Mukherjee's upper bound from step <1>2 gives
+Mukherjee's upper bound from step [](#s1-2){.pf-ref} gives
 \[
 N(n)
 \le
@@ -274,7 +274,7 @@ Thus equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The bounds do not coincide for all $n$; for example
 \[
@@ -301,7 +301,7 @@ has
 \[
 \alpha(7)=3.
 \]
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 N(7)>4\cdot7-2\cdot3=22,
 \]
@@ -309,7 +309,7 @@ so
 \[
 N(7)\ge23.
 \]
-Since $7$ is odd, step <1>2 gives
+Since $7$ is odd, step [](#s1-2){.pf-ref} gives
 \[
 N(7)
 \le
@@ -338,8 +338,8 @@ arbitrary $n$ has no single presently established formula.
 
 ::: pf-proof
 
-Steps <1>4--<1>6 show that exact values are known in substantial families,
-but step <1>7 exhibits a value of $n$ for which the cited general embedding
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} show that exact values are known in substantial families,
+but step [](#s1-7){.pf-ref} exhibits a value of $n$ for which the cited general embedding
 theorems leave two possibilities. Therefore replacing the bounds by one
 uniform exact expression would assert a theorem stronger than the established
 results used here.
@@ -354,8 +354,8 @@ The mathematically correct answer is therefore the invariant
 \[
 k_{\min}(n)=N(n)-2n
 \]
-with the bounds in step <1>3 and the exact special families in
-steps <1>4--<1>6; the source problem is too strong as a request for a general
+with the bounds in step [](#s1-3){.pf-ref} and the exact special families in
+steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}; the source problem is too strong as a request for a general
 closed formula.
 
 :::

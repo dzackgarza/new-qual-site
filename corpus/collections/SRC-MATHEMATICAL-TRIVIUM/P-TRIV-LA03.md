@@ -32,7 +32,7 @@ whose columns are the three given vectors.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -57,27 +57,27 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix $M$ is invertible.
 
 
 ::: pf-proof
 
-By step <1>1, $\det M\neq0$, so $M$ is invertible.
+By step [](#s1-1){.pf-ref}, $\det M\neq0$, so $M$ is invertible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The three given vectors are linearly independent.
 
 
 ::: pf-proof
 
-The columns of an invertible matrix are linearly independent. Since the given vectors are exactly the columns of $M$, step <1>2 proves the claim.
+The columns of an invertible matrix are linearly independent. Since the given vectors are exactly the columns of $M$, step [](#s1-2){.pf-ref} proves the claim.
 
 :::
 
@@ -85,7 +85,7 @@ The columns of an invertible matrix are linearly independent. Since the given ve
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

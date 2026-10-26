@@ -22,7 +22,7 @@ Using the substitution $z = e^{ix}$ (or otherwise), evaluate $\int_0^{2\pi} \fra
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the substitution
 \[
@@ -62,7 +62,7 @@ The real integral becomes
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 10-8\cos x
 =
@@ -87,7 +87,7 @@ and $1/(-2i)=i/2$, the displayed contour integral follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The only pole inside the unit circle is
 \[
@@ -123,7 +123,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -135,7 +135,7 @@ Therefore
 
 ::: pf-proof
 
-By the residue theorem and step <1>3,
+By the residue theorem and step [](#s1-3){.pf-ref},
 \[
 \oint_{|z|=1}F(z)\,dz
 =
@@ -150,7 +150,7 @@ By the residue theorem and step <1>3,
 
 ::: pf-qed
 
-Step <1>4 is the requested value.
+Step [](#s1-4){.pf-ref} is the requested value.
 
 :::
 

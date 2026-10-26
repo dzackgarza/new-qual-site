@@ -56,7 +56,7 @@ F(z)=\frac{f(z)}{|f(z)|}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For \(z\in S^1\),
 \[
@@ -83,7 +83,7 @@ Divide the factorization of \(f\) by this expression.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The homotopy
 \[
@@ -134,13 +134,13 @@ At \(t=0\),
 \[
 \widetilde H(z,0)=\frac z{|z|}=z
 \]
-because \(z\in S^1\). Step <1>2 guarantees the normalization is defined throughout.
+because \(z\in S^1\). Step [](#s1-2){.pf-ref} guarantees the normalization is defined throughout.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -160,7 +160,7 @@ Degree is invariant under homotopy, and the identity map of \(S^1\) has degree \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The homotopy
 \[
@@ -216,13 +216,13 @@ At \(t=0\),
 =
 \frac{-a}{|a|},
 \]
-independent of \(z\). Step <1>5 guarantees the denominator is never zero.
+independent of \(z\). Step [](#s1-5){.pf-ref} guarantees the denominator is never zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -242,7 +242,7 @@ A constant map \(S^1\to S^1\) has degree \(0\), and degree is homotopy invariant
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 \[
@@ -288,7 +288,7 @@ so its induced map on \(H_1\) multiplies by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The constant factor
 \[
@@ -305,7 +305,7 @@ Every constant map has degree \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -317,13 +317,13 @@ Hence
 
 ::: pf-proof
 
-Apply step <1>8 repeatedly to the product decomposition in step <1>1, and use step <1>9 for the leading constant.
+Apply step [](#s1-8){.pf-ref} repeatedly to the product decomposition in step [](#s1-1){.pf-ref}, and use step [](#s1-9){.pf-ref} for the leading constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Each root with
 \[
@@ -338,13 +338,13 @@ contributes \(0\).
 
 ::: pf-proof
 
-Use steps <1>4 and <1>7.
+Use steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -358,13 +358,13 @@ where roots are counted with multiplicity.
 
 ::: pf-proof
 
-The roots \(a_j\) were listed with multiplicity in the factorization of \(f\), and step <1>10 sums exactly the contributions from step <1>11.
+The roots \(a_j\) were listed with multiplicity in the factorization of \(f\), and step [](#s1-10){.pf-ref} sums exactly the contributions from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus the degree of
 \[
@@ -383,7 +383,7 @@ The displayed composite is exactly
 \[
 z\longmapsto\frac{f(z)}{|f(z)|}=F(z),
 \]
-whose degree was computed in step <1>12.
+whose degree was computed in step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -391,7 +391,7 @@ whose degree was computed in step <1>12.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

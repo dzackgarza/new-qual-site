@@ -27,7 +27,7 @@ is a subspace of $W$ and that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The zero vector of $W$ belongs to $\operatorname{Range}(T)$.
 
@@ -47,7 +47,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The range is closed under linear combinations.
 
@@ -75,7 +75,7 @@ ay_1+by_2\in\operatorname{Range}(T).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -85,13 +85,13 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 verify the subspace criteria.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} verify the subspace criteria.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -127,7 +127,7 @@ Thus every vector in the range lies in the span of the listed images.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -141,7 +141,7 @@ Let
 \[
 n=\dim V.
 \]
-By step <1>4, $\operatorname{Range}(T)$ is spanned by at most $n$ vectors.
+By step [](#s1-4){.pf-ref}, $\operatorname{Range}(T)$ is spanned by at most $n$ vectors.
 Any finite-dimensional vector space spanned by $n$ vectors has dimension at
 most $n$. Hence
 \[
@@ -154,7 +154,7 @@ most $n$. Hence
 
 ::: pf-qed
 
-Step <1>3 proves the subspace assertion and step <1>5 proves the dimension
+Step [](#s1-3){.pf-ref} proves the subspace assertion and step [](#s1-5){.pf-ref} proves the dimension
 bound.
 
 :::

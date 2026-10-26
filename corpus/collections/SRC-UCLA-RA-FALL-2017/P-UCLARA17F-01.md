@@ -37,7 +37,7 @@ We first isolate the values for which the fibers of \(f\) are nontrivial.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(y\in\mathbb R\), the fiber
 \[
@@ -74,7 +74,7 @@ Thus every nonempty fiber is order-convex, hence an interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set \(Y_0\) is countable.
 
@@ -85,7 +85,7 @@ For each \(y\in Y_0\), the fiber
 \[
 I_y=f^{-1}(\{y\})
 \]
-is a nondegenerate interval by step <1>1, so it contains a rational number.
+is a nondegenerate interval by step [](#s1-1){.pf-ref}, so it contains a rational number.
 
 If \(y_1\ne y_2\), then the fibers \(I_{y_1}\) and \(I_{y_2}\) are disjoint. Choose one rational
 \[
@@ -101,7 +101,7 @@ is injective from \(Y_0\) into \(\mathbb Q\). Hence \(Y_0\) is countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each \(y\in Y_0\), the fiber
 \[
@@ -112,26 +112,26 @@ is a Borel subset of \(\mathbb R\).
 
 ::: pf-proof
 
-By step <1>1, the fiber is an interval. Every interval in \(\mathbb R\), with any choice of open or closed endpoints, is Borel.
+By step [](#s1-1){.pf-ref}, the fiber is an interval. Every interval in \(\mathbb R\), with any choice of open or closed endpoints, is Borel.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set \(N\) is Borel.
 
 
 ::: pf-proof
 
-By step <1>2, the index set \(Y_0\) is countable, and by step <1>3 each fiber is Borel. Hence \(N\) is a countable union of Borel sets.
+By step [](#s1-2){.pf-ref}, the index set \(Y_0\) is countable, and by step [](#s1-3){.pf-ref} each fiber is Borel. Hence \(N\) is a countable union of Borel sets.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The restriction
 \[
@@ -172,7 +172,7 @@ Thus \(x_1=x_2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every \(a\in\mathbb R\), the set
 \[
@@ -205,14 +205,14 @@ Thus once the inequality \(f(x)>a\) becomes true, it remains true to the right. 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore \(f\) is Borel measurable.
 
 
 ::: pf-proof
 
-By step <1>6, the inverse image of every ray
+By step [](#s1-6){.pf-ref}, the inverse image of every ray
 \[
 (a,\infty)
 \]
@@ -233,13 +233,13 @@ is Borel.
 
 ::: pf-proof
 
-The set \(A\) is Borel by hypothesis, and \(X_0\) is Borel because \(N\) is Borel by step <1>4.
+The set \(A\) is Borel by hypothesis, and \(X_0\) is Borel because \(N\) is Borel by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 By the Lusin--Souslin theorem,
 \[
@@ -254,7 +254,7 @@ The space \(X_0\), with its inherited Borel structure, is a standard Borel space
 \[
 f|_{X_0}
 \]
-is Borel measurable by step <1>7 and injective by step <1>5.
+is Borel measurable by step [](#s1-7){.pf-ref} and injective by step [](#s1-5){.pf-ref}.
 
 The Lusin--Souslin theorem states that the image of a Borel set under an injective Borel map between standard Borel spaces is Borel. Apply it to the Borel set \(A_0\).
 
@@ -262,7 +262,7 @@ The Lusin--Souslin theorem states that the image of a Borel set under an injecti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The set
 \[
@@ -301,17 +301,17 @@ f(A\cap N)\text{ is countable}.}
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 f(A\cap N)\subseteq Y_0,
 \]
-and \(Y_0\) is countable by step <1>2.
+and \(Y_0\) is countable by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -328,7 +328,7 @@ Every countable subset of \(\mathbb R\) is Borel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 One has
 \[
@@ -355,7 +355,7 @@ apply \(f\) to the union.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -366,7 +366,7 @@ f(A)\text{ is Borel}.}
 
 ::: pf-proof
 
-By step <1>9, \(f(A_0)\) is Borel. By step <1>12, \(f(A\cap N)\) is Borel. Their union is Borel by step <1>13.
+By step [](#s1-9){.pf-ref}, \(f(A_0)\) is Borel. By step [](#s1-12){.pf-ref}, \(f(A\cap N)\) is Borel. Their union is Borel by step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -374,7 +374,7 @@ By step <1>9, \(f(A_0)\) is Borel. By step <1>12, \(f(A\cap N)\) is Borel. Their
 
 ::: pf-qed
 
-Step <1>14 is the required conclusion.
+Step [](#s1-14){.pf-ref} is the required conclusion.
 
 :::
 

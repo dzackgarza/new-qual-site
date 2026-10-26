@@ -41,7 +41,7 @@ This is the definition of the commutator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq0$,
 $$
@@ -65,7 +65,7 @@ There are $\binom nk$ such words. Thus the ordinary binomial theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The product of the two exponential series is
 $$
@@ -96,9 +96,9 @@ formed by the Cauchy product.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Regrouping the double sum in step <1>3 by total degree $n=k+m$ gives
+Regrouping the double sum in step [](#s1-3){.pf-ref} by total degree $n=k+m$ gives
 $$
 e^Ae^B
 =
@@ -125,7 +125,7 @@ Substitute $m=n-k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -135,7 +135,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, the inner sum in step <1>4 is
+By step [](#s1-2){.pf-ref}, the inner sum in step [](#s1-4){.pf-ref} is
 $$
 (A+B)^n.
 $$
@@ -153,7 +153,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One also has
 $$
@@ -163,14 +163,14 @@ $$
 
 ::: pf-proof
 
-The hypothesis $AB=BA$ is symmetric in $A$ and $B$. Apply step <1>5 with the
+The hypothesis $AB=BA$ is symmetric in $A$ and $B$. Apply step [](#s1-5){.pf-ref} with the
 roles of $A$ and $B$ exchanged.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>5 and <1>6.
+Combine steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}.
 
 :::
 
@@ -188,7 +188,7 @@ Combine steps <1>5 and <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required identity.
+Step [](#s1-7){.pf-ref} is the required identity.
 
 :::
 

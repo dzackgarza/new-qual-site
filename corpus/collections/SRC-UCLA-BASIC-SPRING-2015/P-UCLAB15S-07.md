@@ -28,7 +28,7 @@ No.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Complete the square in the variable $x$:
 \[
@@ -77,7 +77,7 @@ Subtracting this from the original quadratic form leaves
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Complete the square in the remaining variables:
 \[
@@ -136,7 +136,7 @@ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -160,13 +160,13 @@ y+\frac76z
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -180,14 +180,14 @@ for every
 
 ::: pf-proof
 
-Every term on the right side of step <1>3 is a nonnegative scalar multiple of a square.
+Every term on the right side of step [](#s1-3){.pf-ref} is a nonnegative scalar multiple of a square.
 Thus their sum is nonnegative.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence there is no point with
 \[
@@ -197,7 +197,7 @@ f(x,y,z)<0.
 
 ::: pf-proof
 
-Step <1>4 rules out strict negativity everywhere.
+Step [](#s1-4){.pf-ref} rules out strict negativity everywhere.
 Thus the answer is
 \[
 \boxed{\text{No}.}
@@ -209,7 +209,7 @@ Thus the answer is
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

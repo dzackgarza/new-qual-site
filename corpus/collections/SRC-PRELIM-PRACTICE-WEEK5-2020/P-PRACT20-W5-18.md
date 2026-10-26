@@ -22,7 +22,7 @@ What is the set of points $z \in \CC$ such that $z^2 = \abs{z}^2$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z=0$, then
 \[
@@ -38,7 +38,7 @@ Both sides are equal to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $z\ne0$ and
 \[
@@ -68,7 +68,7 @@ zero, so $z\in\mathbb R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every real number satisfies the equation.
 
@@ -84,7 +84,7 @@ z^2=x^2=|x|^2=|z|^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the solution set is
 \[
@@ -94,7 +94,7 @@ Therefore the solution set is
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show that every solution is real, while step <1>3 shows
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that every solution is real, while step [](#s1-3){.pf-ref} shows
 that every real number is a solution.
 
 :::
@@ -103,7 +103,7 @@ that every real number is a solution.
 
 ::: pf-qed
 
-Step <1>4 gives the requested set.
+Step [](#s1-4){.pf-ref} gives the requested set.
 
 :::
 

@@ -44,7 +44,7 @@ g_n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -72,7 +72,7 @@ a_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -102,7 +102,7 @@ is an automorphism of $D$ sending $a_n$ to $0$. Therefore $h_n$ is a holomorphic
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $0<r<1$,
 \[
@@ -113,7 +113,7 @@ For every $0<r<1$,
 
 ::: pf-proof
 
-Solving the relation in step <1>2 for $g_n$ gives
+Solving the relation in step [](#s1-2){.pf-ref} for $g_n$ gives
 \[
 g_n(z)
 =
@@ -127,7 +127,7 @@ g_n(z)-a_n
 \frac{(1-|a_n|^2)h_n(z)}
 {1+\overline{a_n}h_n(z)}.
 \]
-For $|z|\le r$, step <1>2 gives $|h_n(z)|\le r$, so
+For $|z|\le r$, step [](#s1-2){.pf-ref} gives $|h_n(z)|\le r$, so
 \[
 |1+\overline{a_n}h_n(z)|
 \ge
@@ -142,13 +142,13 @@ Therefore
 \le
 \frac{r(1-|a_n|^2)}{1-r}.
 \]
-By step <1>1, $|a_n|\to1$, so the right-hand side tends to $0$.
+By step [](#s1-1){.pf-ref}, $|a_n|\to1$, so the right-hand side tends to $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $0<r<1$,
 \[
@@ -167,13 +167,13 @@ By the triangle inequality,
 +
 |a_n+1|.
 \]
-The first term tends to $0$ by step <1>3, and the second tends to $0$ by step <1>1.
+The first term tends to $0$ by step [](#s1-3){.pf-ref}, and the second tends to $0$ by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $0<r<1$,
 \[
@@ -194,7 +194,7 @@ f_n
 =
 i\frac{1+g_n}{1-g_n},
 \]
-step <1>4 gives
+step [](#s1-4){.pf-ref} gives
 \[
 1+g_n\longrightarrow0
 \]
@@ -208,7 +208,7 @@ uniformly there. Hence the quotient tends uniformly to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 $f_n\to0$ uniformly on compact subsets of $D$.
 
@@ -219,7 +219,7 @@ Every compact subset of $D$ is contained in a closed disk
 \[
 \{|z|\le r\}
 \]
-for some $r<1$. Apply step <1>5.
+for some $r<1$. Apply step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -227,7 +227,7 @@ for some $r<1$. Apply step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -21,7 +21,7 @@ Let A be a real matrix with $( \operatorname* { d e t } A ) ^ { 2 } = 1$ . Give 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every real orthogonal matrix satisfies
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The converse is false in dimension at least $2$.
 
@@ -91,7 +91,7 @@ Thus $A$ is not orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the hypothesis implies only
 $$
@@ -112,14 +112,14 @@ $$
 \qquad\text{or}\qquad
 \det A=-1.
 $$
-Step <1>2 shows that this determinant condition alone does not imply
+Step [](#s1-2){.pf-ref} shows that this determinant condition alone does not imply
 orthogonality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In dimension $1$, the condition does imply orthogonality.
 
@@ -138,7 +138,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>4 give the precise relation between the determinant condition
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} give the precise relation between the determinant condition
 and orthogonality.
 
 :::

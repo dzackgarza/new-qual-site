@@ -27,7 +27,7 @@ Assume $x>0$ so that the real logarithm is defined.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Write
 $$
@@ -46,7 +46,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiate the exponent:
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-Apply the chain rule to the representation in step <1>1 and use step <1>2:
+Apply the chain rule to the representation in step [](#s1-1){.pf-ref} and use step [](#s1-2){.pf-ref}:
 $$
 f'(x)
 =
@@ -94,7 +94,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required derivative.
+Step [](#s1-3){.pf-ref} is the required derivative.
 
 :::
 

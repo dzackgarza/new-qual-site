@@ -32,7 +32,7 @@ Prove that for every piecewise smooth closed path $\gamma$ avoiding the poles an
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ has a simple pole at $a$ and $g$ is analytic near $a$, then
 \[
@@ -68,7 +68,7 @@ $(z-a)^{-1}$ is $c_{-1}g(a)$. This is exactly the residue of $fg$ at $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the hypotheses of part (b),
 \[
@@ -89,7 +89,7 @@ null-homologous in $D$ and avoids these points, the residue theorem gives
 =\sum_{k=1}^n
 n(\gamma,a_k)\operatorname{Res}(a_k,fg).
 \]
-Applying step <1>1 at each $a_k$ gives
+Applying step [](#s1-1){.pf-ref} at each $a_k$ gives
 \[
 \operatorname{Res}(a_k,fg)
 =g(a_k)\operatorname{Res}(a_k,f),
@@ -102,7 +102,7 @@ and substitution yields the displayed formula.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>2 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} proves part (b).
 
 :::
 

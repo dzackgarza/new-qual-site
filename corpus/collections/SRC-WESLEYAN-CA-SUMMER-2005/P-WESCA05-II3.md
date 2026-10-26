@@ -28,7 +28,7 @@ S=\{x+iy:0\le x\le2,\ 0\le y\le2\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(z=x+iy\), then
 \[
@@ -56,7 +56,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the square \(S\),
 \[
@@ -83,7 +83,7 @@ x^2-y^2\le4.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Equality
 \[
@@ -97,7 +97,7 @@ z=2.
 
 ::: pf-proof
 
-Equality in step <1>2 requires both
+Equality in step [](#s1-2){.pf-ref} requires both
 \[
 x^2=4
 \qquad\text{and}\qquad
@@ -113,7 +113,7 @@ Conversely, at \((x,y)=(2,0)\) one has \(x^2-y^2=4\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The maximum modulus is
 \[
@@ -127,7 +127,7 @@ and it is attained exactly at
 
 ::: pf-proof
 
-The real exponential function is strictly increasing. By steps <1>1 through <1>3,
+The real exponential function is strictly increasing. By steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 |f(z)|=e^{x^2-y^2}\le e^4,
 \]
@@ -139,7 +139,7 @@ with equality exactly when \(z=2\).
 
 ::: pf-qed
 
-Step <1>4 gives both the requested maximum value and the complete set of maximizers.
+Step [](#s1-4){.pf-ref} gives both the requested maximum value and the complete set of maximizers.
 
 :::
 

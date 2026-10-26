@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -64,7 +64,7 @@ so $x\in W_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\lambda(W_n)=0$ for every $n$, then
 $$
@@ -74,7 +74,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1 and countable subadditivity,
+By step [](#s1-1){.pf-ref} and countable subadditivity,
 $$
 \lambda(M)
 =\lambda\left(\bigcup_{n=1}^\infty W_n\right)
@@ -86,7 +86,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\lambda(W_n)=0$ for every $n$, then there is a measurable set $X\subseteq\mathbb R^d$ such that
 $$
@@ -101,7 +101,7 @@ Set
 $$
 X=\{x:f(x)=1\}.
 $$
-Since $f$ is measurable, $X$ is measurable. Outside the null set $M$ from step <1>2, the value $f(x)$ lies in $[0,1]\setminus(0,1)=\{0,1\}$. Hence for $x\notin M$,
+Since $f$ is measurable, $X$ is measurable. Outside the null set $M$ from step [](#s1-2){.pf-ref}, the value $f(x)$ lies in $[0,1]\setminus(0,1)=\{0,1\}$. Hence for $x\notin M$,
 $$
 f(x)=1
 \quad\Longleftrightarrow\quad
@@ -117,14 +117,14 @@ Thus $f=\mathbf1_X$ almost everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One of the two alternatives in the problem always holds.
 
 
 ::: pf-proof
 
-If $\lambda(W_n)>0$ for some $n$, then alternative (2) holds. Otherwise $\lambda(W_n)=0$ for every $n$, and step <1>3 gives alternative (1).
+If $\lambda(W_n)>0$ for some $n$, then alternative (2) holds. Otherwise $\lambda(W_n)=0$ for every $n$, and step [](#s1-3){.pf-ref} gives alternative (1).
 
 :::
 
@@ -132,7 +132,7 @@ If $\lambda(W_n)>0$ for some $n$, then alternative (2) holds. Otherwise $\lambda
 
 ::: pf-qed
 
-Step <1>4 proves the required dichotomy.
+Step [](#s1-4){.pf-ref} proves the required dichotomy.
 
 :::
 

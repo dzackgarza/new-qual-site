@@ -59,7 +59,7 @@ the corresponding polynomial is the displayed polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenvalues of the matrix are
 \[
@@ -105,7 +105,7 @@ The vectors $v_j$ form a basis because the Fourier matrix is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $z$,
 \[
@@ -138,7 +138,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -160,7 +160,7 @@ Substitute
 \[
 z^5=1
 \]
-into step <1>3:
+into step [](#s1-3){.pf-ref}:
 \[
 (2z-1)p(z)
 =
@@ -181,7 +181,7 @@ is not a fifth root of unity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -194,14 +194,14 @@ Therefore
 
 ::: pf-proof
 
-The determinant is the product of the eigenvalues from step <1>2.
-Apply step <1>4 to each fifth root of unity.
+The determinant is the product of the eigenvalues from step [](#s1-2){.pf-ref}.
+Apply step [](#s1-4){.pf-ref} to each fifth root of unity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -254,7 +254,7 @@ Multiplying each factor by $2$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 \[
@@ -270,7 +270,7 @@ Consequently,
 
 ::: pf-proof
 
-Combine steps <1>5--<1>6:
+Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}:
 \[
 \det M
 =
@@ -293,7 +293,7 @@ and
 
 ::: pf-qed
 
-Step <1>7 is the required determinant.
+Step [](#s1-7){.pf-ref} is the required determinant.
 
 :::
 

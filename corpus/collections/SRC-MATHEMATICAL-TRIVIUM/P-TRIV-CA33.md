@@ -32,7 +32,7 @@ The intended condition is $\operatorname{Re} z > 0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $\operatorname{Re}z>0$, the Gamma function satisfies
 $$
@@ -78,7 +78,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer $n\geq0$,
 $$
@@ -95,7 +95,7 @@ wherever the denominator is nonzero.
 
 ::: pf-proof
 
-Iterate the functional equation from step <1>1:
+Iterate the functional equation from step [](#s1-1){.pf-ref}:
 $$
 \Gamma(z+n+1)
 =
@@ -113,7 +113,7 @@ left half-planes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix $n\in\NN_0$. In a neighborhood of $z=-n$,
 $$
@@ -130,16 +130,16 @@ $$
 
 ::: pf-proof
 
-Separate the factor $z+n$ from the denominator in step <1>2. For $n=0$ the
+Separate the factor $z+n$ from the denominator in step [](#s1-2){.pf-ref}. For $n=0$ the
 product is empty and equals $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The numerator in step <1>3 is holomorphic and nonzero at $z=-n$:
+The numerator in step [](#s1-3){.pf-ref} is holomorphic and nonzero at $z=-n$:
 $$
 \Gamma((-n)+n+1)
 =
@@ -162,9 +162,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The remaining denominator factor in step <1>3 is nonzero at $z=-n$:
+The remaining denominator factor in step [](#s1-3){.pf-ref} is nonzero at $z=-n$:
 $$
 \prod_{k=0}^{n-1}(-n+k)
 =
@@ -185,14 +185,14 @@ product convention.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $z=-n$ is a simple pole of $\Gamma$.
 
 
 ::: pf-proof
 
-By steps <1>3--<1>5, near $z=-n$ the numerator and the product of all
+By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, near $z=-n$ the numerator and the product of all
 denominator factors except $z+n$ are holomorphic and nonzero. Thus the only
 vanishing factor is the first power of $z+n$, giving a pole of order $1$.
 
@@ -200,7 +200,7 @@ vanishing factor is the first power of $z+n$, giving a pole of order $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The residue at $z=-n$ is
 $$
@@ -214,7 +214,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>3,
+Using step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 \operatorname{Res}_{z=-n}\Gamma(z)
@@ -229,7 +229,7 @@ $$
 }.
 \end{aligned}
 $$
-Apply steps <1>4 and <1>5:
+Apply steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}:
 $$
 \operatorname{Res}_{z=-n}\Gamma(z)
 =
@@ -242,7 +242,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence every nonpositive integer is a simple pole of $\Gamma$, with
 residue
@@ -259,7 +259,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>6 and <1>7 give the order and residue for arbitrary $n\in\NN_0$.
+Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the order and residue for arbitrary $n\in\NN_0$.
 
 :::
 
@@ -267,7 +267,7 @@ Steps <1>6 and <1>7 give the order and residue for arbitrary $n\in\NN_0$.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

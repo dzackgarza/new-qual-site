@@ -55,7 +55,7 @@ IV. The conclusion of Step (3) does not imply the result of Step (4).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I is true: Step (1) is not valid.
 
@@ -74,7 +74,7 @@ existence of one $c$ satisfying both equations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II is true: even if the conclusion of Step (1) holds,
 it need not imply Step (2).
@@ -94,7 +94,7 @@ $0/0$, which is undefined. Hence Step (1) does not imply Step (2).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statements III and IV are false.
 
@@ -115,14 +115,14 @@ which is Step (4).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the correct answer is $\boxed{\text{(C) I and II only}}$.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>2 prove I and II, while step <1>3 proves that III and IV
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove I and II, while step [](#s1-3){.pf-ref} proves that III and IV
 are false.
 
 :::
@@ -131,7 +131,7 @@ are false.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

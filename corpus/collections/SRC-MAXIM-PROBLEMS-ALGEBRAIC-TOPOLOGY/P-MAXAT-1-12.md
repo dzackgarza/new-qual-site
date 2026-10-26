@@ -27,7 +27,7 @@ Its image is a closed codimension-one submanifold.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every closed embedded hypersurface in an orientable manifold is orientable if it is two-sided.
 
@@ -40,7 +40,7 @@ Let $M^m\subset N^{m+1}$ be a two-sided embedded hypersurface and choose a nowhe
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The embedded copy of $\mathbb{RP}^{2n}$ in $S^{2n+1}$ is two-sided.
 
@@ -59,20 +59,20 @@ The top mod-$2$ cohomology of the closed connected $2n$-manifold $\mathbb{RP}^{2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the assumed embedding would make $\mathbb{RP}^{2n}$ orientable.
 
 
 ::: pf-proof
 
-The sphere $S^{2n+1}$ is orientable. Apply step <1>1 to the two-sided hypersurface from step <1>2.
+The sphere $S^{2n+1}$ is orientable. Apply step [](#s1-1){.pf-ref} to the two-sided hypersurface from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 But $\mathbb{RP}^{2n}$ is nonorientable.
 
@@ -94,7 +94,7 @@ so it reverses orientation. If the quotient were orientable, its orientation wou
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 This contradiction proves that
 \[
@@ -104,7 +104,7 @@ This contradiction proves that
 
 ::: pf-proof
 
-Step <1>3 says the hypothetical embedding forces orientability, while step <1>4 proves nonorientability.
+Step [](#s1-3){.pf-ref} says the hypothetical embedding forces orientability, while step [](#s1-4){.pf-ref} proves nonorientability.
 
 :::
 
@@ -112,7 +112,7 @@ Step <1>3 says the hypothetical embedding forces orientability, while step <1>4 
 
 ::: pf-qed
 
-Step <1>5 is the required nonembedding statement.
+Step [](#s1-5){.pf-ref} is the required nonembedding statement.
 
 :::
 

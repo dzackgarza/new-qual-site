@@ -25,7 +25,7 @@ Show that $f$ is constant on $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function \(f\) has no zeros in \(D\).
 
@@ -49,7 +49,7 @@ f(z)\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -67,13 +67,13 @@ g'(z)
 =
 -\frac{f'(z)}{f(z)^2}.
 \]
-Step <1>1 guarantees that the denominator never vanishes.
+Step [](#s1-1){.pf-ref} guarantees that the denominator never vanishes.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(z\in D\),
 \[
@@ -106,7 +106,7 @@ These are exactly \(|g(z)|\) and \(|g(z_0)|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus \(|g|\) attains its maximum on \(D\) at the interior point
 \(z_0\).
@@ -114,7 +114,7 @@ Thus \(|g|\) attains its maximum on \(D\) at the interior point
 
 ::: pf-proof
 
-Step <1>3 shows that no value of \(|g|\) exceeds \(|g(z_0)|\), and
+Step [](#s1-3){.pf-ref} shows that no value of \(|g|\) exceeds \(|g(z_0)|\), and
 \(z_0\in D\).
 
 :::
@@ -131,15 +131,15 @@ The maximum modulus principle implies that
 
 ::: pf-proof
 
-The domain \(D\) is connected, \(g\) is analytic by step <1>2, and
-\(|g|\) attains a maximum at an interior point by step <1>4. The strong
+The domain \(D\) is connected, \(g\) is analytic by step [](#s1-2){.pf-ref}, and
+\(|g|\) attains a maximum at an interior point by step [](#s1-4){.pf-ref}. The strong
 maximum modulus principle therefore forces \(g\) to be constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence \(f\) is constant on \(D\).
 
@@ -166,7 +166,7 @@ for all \(z\in D\).
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

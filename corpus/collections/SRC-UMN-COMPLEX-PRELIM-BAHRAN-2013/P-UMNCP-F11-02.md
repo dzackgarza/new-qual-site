@@ -26,7 +26,7 @@ e^g=h.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The logarithmic derivative
 $$
@@ -57,7 +57,7 @@ Therefore the quotient is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists an entire function $G$ such that
 $$
@@ -74,13 +74,13 @@ Every entire function has an entire primitive because
 $$
 \CC
 $$
-is simply connected. Apply this to the entire function from step <1>1.
+is simply connected. Apply this to the entire function from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The entire function
 $$
@@ -107,7 +107,7 @@ h'(z)-h(z)G'(z)
 \right).
 \end{aligned}
 $$
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 h(z)G'(z)
 =
@@ -125,7 +125,7 @@ for every $z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is a nonzero constant
 $$
@@ -140,7 +140,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 H
 $$
@@ -170,7 +170,7 @@ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Choose
 $$
@@ -202,7 +202,7 @@ exists. The function
 $$
 g=G+\lambda
 $$
-is entire. By step <1>4,
+is entire. By step [](#s1-4){.pf-ref},
 $$
 e^{g(z)}
 =
@@ -219,7 +219,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 constructs the required entire logarithm.
+Step [](#s1-5){.pf-ref} constructs the required entire logarithm.
 
 :::
 

@@ -186,7 +186,7 @@ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Collapsing
 $$
@@ -217,7 +217,7 @@ to a point, each of the three omitted triangle edges becomes a loop based at tha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The quotient map
 $$
@@ -238,7 +238,7 @@ until the entire tree is reduced to one vertex; each elementary edge collapse is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -250,7 +250,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 X
 $$
@@ -258,13 +258,13 @@ is homotopy equivalent to
 $$
 X/K.
 $$
-Step <1>3 identifies the latter with a wedge of three circles. Homotopy equivalences induce isomorphisms on fundamental groups.
+Step [](#s1-3){.pf-ref} identifies the latter with a wedge of three circles. Homotopy equivalences induce isomorphisms on fundamental groups.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The fundamental group is the free group on three generators:
 $$
@@ -291,7 +291,7 @@ Applying this with
 $$
 r=3
 $$
-to step <1>5 gives the result.
+to step [](#s1-5){.pf-ref} gives the result.
 
 :::
 
@@ -299,7 +299,7 @@ to step <1>5 gives the result.
 
 ::: pf-qed
 
-Step <1>6 is the required computation.
+Step [](#s1-6){.pf-ref} is the required computation.
 
 :::
 

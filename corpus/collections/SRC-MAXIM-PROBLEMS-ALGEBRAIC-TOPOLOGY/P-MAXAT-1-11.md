@@ -28,7 +28,7 @@ All homology and cohomology groups in the proof have integral coefficients.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The universal coefficient theorem in degree $n$ gives
 \[
@@ -47,7 +47,7 @@ This is the universal coefficient short exact sequence for cohomology applied in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $H_{n-1}(M)$ is finitely generated,
 \[
@@ -74,7 +74,7 @@ Taking direct sums gives precisely the torsion subgroup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $M$ is orientable, then
 \[
@@ -95,7 +95,7 @@ H^n(M)\cong H_0(M)\cong\mathbb Z.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In the orientable case,
 \[
@@ -105,17 +105,17 @@ In the orientable case,
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \operatorname{Hom}(H_n(M),\mathbb Z)\cong\mathbb Z.
 \]
-The right map in step <1>1 is the evaluation map $H^n(M)\to\operatorname{Hom}(H_n(M),\mathbb Z)$; on the cohomological orientation class and fundamental class it takes value $1$, hence is an isomorphism $\mathbb Z\to\mathbb Z$. Its kernel, which is the Ext term by exactness, is therefore zero. Apply step <1>2.
+The right map in step [](#s1-1){.pf-ref} is the evaluation map $H^n(M)\to\operatorname{Hom}(H_n(M),\mathbb Z)$; on the cohomological orientation class and fundamental class it takes value $1$, hence is an isomorphism $\mathbb Z\to\mathbb Z$. Its kernel, which is the Ext term by exactness, is therefore zero. Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $M$ is nonorientable, then
 \[
@@ -131,7 +131,7 @@ For a closed connected manifold, a nonzero integral top-dimensional homology cla
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $M$ is nonorientable, then
 \[
@@ -158,7 +158,7 @@ H_0(M;\mathcal O)\cong\mathbb Z/2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In the nonorientable case,
 \[
@@ -168,22 +168,22 @@ In the nonorientable case,
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \operatorname{Hom}(H_n(M),\mathbb Z)=0.
 \]
-Therefore step <1>1 identifies
+Therefore step [](#s1-1){.pf-ref} identifies
 \[
 \operatorname{Ext}^1(H_{n-1}(M),\mathbb Z)
 \cong H^n(M).
 \]
-Apply steps <1>2 and <1>6.
+Apply steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -199,7 +199,7 @@ Therefore
 
 ::: pf-proof
 
-The two cases are steps <1>4 and <1>7.
+The two cases are steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
@@ -207,7 +207,7 @@ The two cases are steps <1>4 and <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required dichotomy.
+Step [](#s1-8){.pf-ref} is the required dichotomy.
 
 :::
 

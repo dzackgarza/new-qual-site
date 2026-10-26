@@ -23,7 +23,7 @@ The coefficient triple $(a,b,c)$ is uniformly distributed on the unit cube $[0,1
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The quadratic has real roots exactly when
 \[
@@ -39,7 +39,7 @@ Except on the probability-zero set $a=0$, the equation is quadratic. Its roots a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed $(a,c)$, the admissible $b$-interval has length
 \[
@@ -52,7 +52,7 @@ For fixed $(a,c)$, the admissible $b$-interval has length
 
 ::: pf-proof
 
-Since $0\leq b\leq1$, step <1>1 is equivalent to $b\geq2\sqrt{ac}$. Such $b$ exist exactly when $2\sqrt{ac}\leq1$.
+Since $0\leq b\leq1$, step [](#s1-1){.pf-ref} is equivalent to $b\geq2\sqrt{ac}$. Such $b$ exist exactly when $2\sqrt{ac}\leq1$.
 
 :::
 
@@ -68,7 +68,7 @@ P=\iint_{ac\leq1/4}(1-2\sqrt{ac})\,da\,dc.
 
 ::: pf-proof
 
-The unit cube has volume $1$, so probability equals volume. Integrating first in $b$ gives precisely the interval length from step <1>2.
+The unit cube has volume $1$, so probability equals volume. Integrating first in $b$ gives precisely the interval length from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -91,7 +91,7 @@ If $0<a\leq1/4$, then $ac\leq1/4$ for every $0\leq c\leq1$. If $a>1/4$, the cond
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The first integral equals
 \[
@@ -112,7 +112,7 @@ Integrating first in $c$ gives $1-(4/3)\sqrt a$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The second integral equals
 \[
@@ -134,7 +134,7 @@ Integrating from $1/4$ to $1$ gives $(1/12)\log4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -144,7 +144,7 @@ Hence
 
 ::: pf-proof
 
-Add the two contributions from steps <1>5--<1>6.
+Add the two contributions from steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -152,7 +152,7 @@ Add the two contributions from steps <1>5--<1>6.
 
 ::: pf-qed
 
-Step <1>7 gives the required probability.
+Step [](#s1-7){.pf-ref} gives the required probability.
 
 :::
 

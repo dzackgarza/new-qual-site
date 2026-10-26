@@ -24,7 +24,7 @@ Show that $f$ is surjective.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $f$ is not constant.
 
@@ -41,7 +41,7 @@ Properness would make $U$ compact. But a nonempty open subset of $\mathbb C$ is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By the open mapping theorem,
 \[
@@ -52,13 +52,13 @@ is open in $V$.
 
 ::: pf-proof
 
-A nonconstant holomorphic function on a connected open subset of $\mathbb C$ is an open map. Step <1>1 gives nonconstancy, and $f(U)\subset V$ by hypothesis.
+A nonconstant holomorphic function on a connected open subset of $\mathbb C$ is an open map. Step [](#s1-1){.pf-ref} gives nonconstancy, and $f(U)\subset V$ by hypothesis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The image $f(U)$ is closed in $V$.
 
@@ -87,20 +87,20 @@ Thus $y\in f(U)$. Since $V\subset\mathbb C$ is metrizable, sequential closedness
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $f(U)$ is nonempty, open, and closed in the connected space $V$.
 
 
 ::: pf-proof
 
-It is nonempty because $U$ is nonempty; openness is step <1>2 and closedness is step <1>3.
+It is nonempty because $U$ is nonempty; openness is step [](#s1-2){.pf-ref} and closedness is step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -110,13 +110,13 @@ f(U)=V.
 
 ::: pf-proof
 
-The only subsets of a connected space that are both open and closed are the empty set and the whole space. Step <1>4 excludes the empty set.
+The only subsets of a connected space that are both open and closed are the empty set and the whole space. Step [](#s1-4){.pf-ref} excludes the empty set.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -126,7 +126,7 @@ Hence
 
 ::: pf-proof
 
-This is exactly the equality $f(U)=V$ from step <1>5.
+This is exactly the equality $f(U)=V$ from step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -134,7 +134,7 @@ This is exactly the equality $f(U)=V$ from step <1>5.
 
 ::: pf-qed
 
-Step <1>6 proves the claim.
+Step [](#s1-6){.pf-ref} proves the claim.
 
 :::
 

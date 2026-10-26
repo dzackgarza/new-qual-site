@@ -43,7 +43,7 @@ By the intermediate value theorem, there exists $\lambda_0\in\mathbb R$ such tha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists a nonzero real vector $v$ such that
 \[
@@ -72,7 +72,7 @@ Tv=\lambda_0v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The orthogonality relation implies
 \[
@@ -118,12 +118,12 @@ The real eigenvalue $\lambda_0$ satisfies
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 Tv=\lambda_0v
 \]
 for some nonzero $v$.
-Using step <1>3,
+Using step [](#s1-3){.pf-ref},
 \[
 \|v\|_2
 =
@@ -139,7 +139,7 @@ Since $\|v\|_2>0$, division gives $|\lambda_0|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since $\lambda_0$ is real,
 \[
@@ -155,7 +155,7 @@ The only real numbers with absolute value $1$ are $1$ and $-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore there exists a nonzero vector
 \[
@@ -169,7 +169,7 @@ such that
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>5.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -177,7 +177,7 @@ Combine steps <1>2 and <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

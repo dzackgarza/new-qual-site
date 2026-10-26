@@ -49,7 +49,7 @@ and similarly for $g$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n$,
 $$
@@ -75,7 +75,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -89,7 +89,7 @@ By hypothesis,
 $$
 \norm{f_n-g}_{L^\infty}\longrightarrow0.
 $$
-Multiplying by the finite constant $\lambda(X)$ and applying the estimate from step <1>2 gives the desired convergence.
+Multiplying by the finite constant $\lambda(X)$ and applying the estimate from step [](#s1-2){.pf-ref} gives the desired convergence.
 
 :::
 
@@ -97,7 +97,7 @@ Multiplying by the finite constant $\lambda(X)$ and applying the estimate from s
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

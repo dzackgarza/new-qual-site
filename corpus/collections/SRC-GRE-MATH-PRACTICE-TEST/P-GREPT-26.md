@@ -27,7 +27,7 @@ Let $C$ be the circle in the $yz$-plane whose equation is $(y - 3)^2 + z^2 = 1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -50,9 +50,9 @@ circle equation becomes the displayed equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The equation in step <1>1 is equivalent to
+The equation in step [](#s1-1){.pf-ref} is equivalent to
 $$
 x^2+y^2+z^2+8=6\sqrt{x^2+y^2}.
 $$
@@ -60,7 +60,7 @@ $$
 
 ::: pf-proof
 
-Expanding step <1>1 gives
+Expanding step [](#s1-1){.pf-ref} gives
 $$
 \rho^2-6\rho+9+z^2=1,
 $$
@@ -74,7 +74,7 @@ Substitute $\rho^2=x^2+y^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the torus has equation
 $$
@@ -85,10 +85,10 @@ so the answer is (D).
 
 ::: pf-proof
 
-Squaring the equality in step <1>2 gives the displayed polynomial equation.
+Squaring the equality in step [](#s1-2){.pf-ref} gives the displayed polynomial equation.
 Conversely, its left unsquared quantity $x^2+y^2+z^2+8$ is strictly positive
 and $\sqrt{x^2+y^2}\ge0$, so the squared equation forces the positive sign and
-recovers step <1>2. Thus no extraneous branch is introduced.
+recovers step [](#s1-2){.pf-ref}. Thus no extraneous branch is introduced.
 
 :::
 
@@ -96,7 +96,7 @@ recovers step <1>2. Thus no extraneous branch is introduced.
 
 ::: pf-qed
 
-Step <1>3 gives the required equation of the surface.
+Step [](#s1-3){.pf-ref} gives the required equation of the surface.
 
 :::
 

@@ -80,7 +80,7 @@ Thus $\mu_a$ is an $F$-linear transformation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\mu_a$ is injective.
 
@@ -113,7 +113,7 @@ so $\mu_a$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $\mu_a$ is surjective.
 
@@ -130,14 +130,14 @@ F
 $$
 by hypothesis.
 An injective linear endomorphism of a finite-dimensional vector space is surjective.
-Step <1>2 shows that $\mu_a$ is injective.
+Step [](#s1-2){.pf-ref} shows that $\mu_a$ is injective.
 Hence $\mu_a$ is surjective.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists
 $$
@@ -151,7 +151,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \mu_a
 $$
@@ -177,7 +177,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every nonzero element of $R$ is a unit.
 
@@ -189,7 +189,7 @@ $$
 a\in R
 $$
 was arbitrary.
-Step <1>4 constructs
+Step [](#s1-4){.pf-ref} constructs
 $$
 b\in R
 $$
@@ -208,7 +208,7 @@ Hence every nonzero element is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -221,7 +221,7 @@ $$
 ::: pf-proof
 
 The ring $R$ is already a commutative ring with identity and has no zero divisors.
-Step <1>5 shows that every nonzero element has an inverse.
+Step [](#s1-5){.pf-ref} shows that every nonzero element has an inverse.
 This is exactly the definition of a field.
 
 :::
@@ -230,7 +230,7 @@ This is exactly the definition of a field.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

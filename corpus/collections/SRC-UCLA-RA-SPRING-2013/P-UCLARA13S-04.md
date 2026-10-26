@@ -31,7 +31,7 @@ Show that there exists a Borel probability measure $\mu$ on $K$ such that $I(\mu
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -58,7 +58,7 @@ for every probability measure $\mu$ on $K$. Such measures exist because $K$ is n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume henceforth that
 \[
@@ -82,7 +82,7 @@ Since always $I(\mu_n)\ge R_K$, the energies converge to $R_K$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 After passing to a subsequence, there is a bounded linear functional
 \[
@@ -115,7 +115,7 @@ By Banach--Alaoglu, this unit ball is weak-* compact. Since $K$ is compact metri
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The functional $L$ is integration against a Borel probability measure $\mu$ on $K$.
 
@@ -155,7 +155,7 @@ so $\mu$ is a probability measure.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -201,7 +201,7 @@ This is exactly weak-* convergence of the product measures.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For $M>0$, define
 \[
@@ -244,7 +244,7 @@ For fixed $(x,y)$ with $x\ne y$, the sequence $k_M(x,y)$ increases to $|x-y|^{-1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $M>0$,
 \[
@@ -256,7 +256,7 @@ R_K.
 
 ::: pf-proof
 
-By steps <1>5 and <1>6,
+By steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref},
 \[
 \int k_M\,d(\mu\otimes\mu)
 =
@@ -275,7 +275,7 @@ in the extended-real sense,
 \le
 I(\mu_n).
 \]
-Taking the limit and using step <1>2 gives
+Taking the limit and using step [](#s1-2){.pf-ref} gives
 \[
 \int k_M\,d(\mu\otimes\mu)
 \le
@@ -286,7 +286,7 @@ R_K.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The weak-* limit measure satisfies
 \[
@@ -296,20 +296,20 @@ I(\mu)\le R_K.
 
 ::: pf-proof
 
-By step <1>6, the kernels $k_M$ increase pointwise to the Newtonian kernel. The monotone convergence theorem therefore gives
+By step [](#s1-6){.pf-ref}, the kernels $k_M$ increase pointwise to the Newtonian kernel. The monotone convergence theorem therefore gives
 \[
 I(\mu)
 =
 \lim_{M\to\infty}
 \int_{K\times K}k_M\,d(\mu\otimes\mu).
 \]
-Every term on the right is at most $R_K$ by step <1>7, so the limit is at most $R_K$.
+Every term on the right is at most $R_K$ by step [](#s1-7){.pf-ref}, so the limit is at most $R_K$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -319,11 +319,11 @@ One has
 
 ::: pf-proof
 
-Since $\mu$ is a Borel probability measure on $K$ by step <1>4, the definition of $R_K$ gives
+Since $\mu$ is a Borel probability measure on $K$ by step [](#s1-4){.pf-ref}, the definition of $R_K$ gives
 \[
 R_K\le I(\mu).
 \]
-Step <1>8 gives the reverse inequality. Hence equality holds.
+Step [](#s1-8){.pf-ref} gives the reverse inequality. Hence equality holds.
 
 :::
 
@@ -331,7 +331,7 @@ Step <1>8 gives the reverse inequality. Hence equality holds.
 
 ::: pf-qed
 
-Step <1>1 handles the case $R_K=\infty$, while steps <1>2--<1>9 produce a minimizing probability measure when $R_K<\infty$.
+Step [](#s1-1){.pf-ref} handles the case $R_K=\infty$, while steps [](#s1-2){.pf-ref} through [](#s1-9){.pf-ref} produce a minimizing probability measure when $R_K<\infty$.
 
 :::
 

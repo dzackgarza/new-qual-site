@@ -34,7 +34,7 @@ Show that $R$ has characteristic $2$ (that is, $2a=0$ for all $a$) and is commut
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $a\in R$,
 $$
@@ -62,7 +62,7 @@ Hence $4a=2a$. Cancelling $2a$ in the additive abelian group of the ring gives $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $a,b\in R$,
 $$
@@ -86,18 +86,18 @@ Cancelling $a+b$ in the additive group yields $ab+ba=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ring $R$ is commutative.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 ab=-ba.
 $$
-By step <1>1 applied to $ba$,
+By step [](#s1-1){.pf-ref} applied to $ba$,
 $$
 ba+ba=0,
 $$
@@ -107,7 +107,7 @@ so $-ba=ba$. Therefore $ab=ba$ for all $a,b\in R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-This combines steps <1>1 and <1>3.
+This combines steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
@@ -125,7 +125,7 @@ This combines steps <1>1 and <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives both required conclusions.
+Step [](#s1-4){.pf-ref} gives both required conclusions.
 
 :::
 

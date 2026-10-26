@@ -107,7 +107,7 @@ and the definition of \(g\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Rewrite this quotient as
 \[
@@ -141,7 +141,7 @@ since
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 As
 \[
@@ -164,7 +164,7 @@ Again,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since \(f\) is holomorphic,
 \[
@@ -181,14 +181,14 @@ f'(\overline{z_0}).
 
 ::: pf-proof
 
-Step <1>5 says the increment \(\overline h\) tends to \(0\), so this is the
+Step [](#s1-5){.pf-ref} says the increment \(\overline h\) tends to \(0\), so this is the
 ordinary complex derivative of \(f\) at \(\overline{z_0}\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Taking conjugates,
 \[
@@ -201,14 +201,14 @@ g'(z_0)
 
 ::: pf-proof
 
-Apply continuity of complex conjugation to the limit in step <1>6 and use
-the difference quotient identity in step <1>4.
+Apply continuity of complex conjugation to the limit in step [](#s1-6){.pf-ref} and use
+the difference quotient identity in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since \(z_0\in\mathbb D\) was arbitrary,
 \[
@@ -219,7 +219,7 @@ g\text{ is holomorphic on }\mathbb D}.
 
 ::: pf-proof
 
-Step <1>7 proves existence of the complex derivative at every point of the
+Step [](#s1-7){.pf-ref} proves existence of the complex derivative at every point of the
 unit disk.
 
 :::
@@ -228,7 +228,7 @@ unit disk.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

@@ -29,7 +29,7 @@ The proof is by induction on $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $B$ is a normal complex matrix, then
 \[
@@ -54,7 +54,7 @@ If $B$ is normal, then $B^*B=BB^*$, so the squared norms are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $A$ is normal and
 \[
@@ -88,7 +88,7 @@ BB^*
 &=AA^*-\overline{\lambda}A-\lambda A^*+|\lambda|^2I,
 \end{aligned}
 \]
-so $B$ is normal. Since $Bv=0$, step <1>1 gives
+so $B$ is normal. Since $Bv=0$, step [](#s1-1){.pf-ref} gives
 \[
 \|B^*v\|=\|Bv\|=0.
 \]
@@ -102,7 +102,7 @@ which proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix $A$ has a nonzero eigenvector.
 
@@ -122,7 +122,7 @@ Av=\lambda v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $v$ is an eigenvector of $A$, then $v^\perp$ is invariant under both $A$ and $A^*$.
 
@@ -133,7 +133,7 @@ Let
 \[
 Av=\lambda v.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 A^*v=\overline{\lambda}v.
 \]
@@ -155,7 +155,7 @@ so $A^*w\in v^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The restriction
 \[
@@ -166,7 +166,7 @@ is normal.
 
 ::: pf-proof
 
-By step <1>4, both $A$ and $A^*$ preserve $v^\perp$. Hence the adjoint of the restriction of $A$ is the restriction of $A^*$:
+By step [](#s1-4){.pf-ref}, both $A$ and $A^*$ preserve $v^\perp$. Hence the adjoint of the restriction of $A$ is the restriction of $A^*$:
 \[
 (A|_{v^\perp})^*=A^*|_{v^\perp}.
 \]
@@ -185,7 +185,7 @@ Thus the restriction is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every normal operator on $\mathbb C^n$ has an orthonormal basis of eigenvectors.
 
@@ -194,7 +194,7 @@ Every normal operator on $\mathbb C^n$ has an orthonormal basis of eigenvectors.
 
 For $n=1$, every nonzero vector, after normalization, is an orthonormal eigenbasis.
 
-Assume the assertion holds in dimension $n-1$, and let $A$ be normal on $\mathbb C^n$. By step <1>3, choose a nonzero eigenvector $v_1$ and normalize it so that
+Assume the assertion holds in dimension $n-1$, and let $A$ be normal on $\mathbb C^n$. By step [](#s1-3){.pf-ref}, choose a nonzero eigenvector $v_1$ and normalize it so that
 \[
 \|v_1\|=1.
 \]
@@ -202,7 +202,7 @@ Then
 \[
 v_1^\perp
 \]
-has dimension $n-1$. By step <1>5, the restriction of $A$ to this subspace is normal. The induction hypothesis therefore gives an orthonormal basis
+has dimension $n-1$. By step [](#s1-5){.pf-ref}, the restriction of $A$ to this subspace is normal. The induction hypothesis therefore gives an orthonormal basis
 \[
 v_2,\ldots,v_n
 \]
@@ -218,7 +218,7 @@ is an orthonormal basis of $\mathbb C^n$ consisting entirely of eigenvectors of 
 
 ::: pf-qed
 
-Step <1>6 is precisely the required spectral theorem for the normal matrix $A$.
+Step [](#s1-6){.pf-ref} is precisely the required spectral theorem for the normal matrix $A$.
 
 :::
 

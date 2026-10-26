@@ -33,7 +33,7 @@ for $z\notin\ZZ$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The series defining $g$ converges absolutely and locally uniformly on $\CC\setminus\ZZ$.
 
@@ -68,7 +68,7 @@ converges, the Weierstrass $M$-test gives absolute locally uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At every integer $m$, the principal part of $g$ is
 $$
@@ -87,7 +87,7 @@ g(z)
 \sum_{n\ne m}
 \frac1{(z-n)^2}.
 $$
-By step <1>1, the second sum is holomorphic in a neighborhood of $m$. Hence the only negative-power term in the Laurent expansion at $m$ is
+By step [](#s1-1){.pf-ref}, the second sum is holomorphic in a neighborhood of $m$. Hence the only negative-power term in the Laurent expansion at $m$ is
 $$
 (z-m)^{-2}.
 $$
@@ -96,7 +96,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At every integer $m$, the principal part of
 $$
@@ -148,7 +148,7 @@ Thus the principal part is exactly $(z-m)^{-2}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function
 $$
@@ -163,13 +163,13 @@ extends to an entire function on $\CC$.
 
 ::: pf-proof
 
-Away from the integers, both terms are holomorphic. By steps <1>2 and <1>3, their principal parts cancel at every integer. Thus each apparent singularity of $h$ at an integer is removable. Filling in those removable singularities gives an entire function.
+Away from the integers, both terms are holomorphic. By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, their principal parts cancel at every integer. Thus each apparent singularity of $h$ at an integer is removable. Filling in those removable singularities gives an entire function.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $h$ is $1$-periodic.
 
@@ -208,7 +208,7 @@ where $m=n-1$. Hence $h(z+1)=h(z)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On the strip
 $$
@@ -282,7 +282,7 @@ which tends to $0$ as $\abs y\to\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On the same strip,
 $$
@@ -312,14 +312,14 @@ and the right-hand side tends to $0$ as $\abs y\to\infty$, independently of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The entire function $h$ is bounded on $\CC$.
 
 
 ::: pf-proof
 
-By steps <1>6 and <1>7, $h$ is bounded on the parts of the fundamental strip $S$ with sufficiently large $\abs y$. On the remaining compact rectangle
+By steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref}, $h$ is bounded on the parts of the fundamental strip $S$ with sufficiently large $\abs y$. On the remaining compact rectangle
 $$
 \left\{
 -\frac12\le\operatorname{Re}z\le\frac12,
@@ -329,31 +329,31 @@ $$
 $$
 the entire function $h$ is bounded by continuity. Hence $h$ is bounded on all of $S$.
 
-By step <1>5, every point of $\CC$ is congruent modulo an integer translation to a point of $S$, and $h$ is unchanged by such translation. Therefore $h$ is bounded on $\CC$.
+By step [](#s1-5){.pf-ref}, every point of $\CC$ is congruent modulo an integer translation to a point of $S$, and $h$ is unchanged by such translation. Therefore $h$ is bounded on $\CC$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function $h$ is identically zero.
 
 
 ::: pf-proof
 
-By step <1>8 and Liouville's theorem, $h$ is constant. Along the imaginary axis,
+By step [](#s1-8){.pf-ref} and Liouville's theorem, $h$ is constant. Along the imaginary axis,
 $$
 h(iy)
 \longrightarrow0
 $$
-as $\abs y\to\infty$ by steps <1>6 and <1>7. Hence the constant value must be $0$.
+as $\abs y\to\infty$ by steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref}. Hence the constant value must be $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -369,7 +369,7 @@ for every $z\notin\ZZ$.
 
 ::: pf-proof
 
-Step <1>9 says
+Step [](#s1-9){.pf-ref} says
 $$
 h(z)
 =
@@ -386,7 +386,7 @@ Substituting the definition of $g$ gives the identity.
 
 ::: pf-qed
 
-Steps <1>2--<1>3 prove part (1), and steps <1>4--<1>10 prove part (2).
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove part (1), and steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} prove part (2).
 
 :::
 

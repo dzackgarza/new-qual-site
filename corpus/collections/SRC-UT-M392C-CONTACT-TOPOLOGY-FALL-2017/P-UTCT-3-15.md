@@ -72,7 +72,7 @@ singular points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After an arbitrarily small $C^\infty$ perturbation, every singular
 point of $v$ is nondegenerate and satisfies
@@ -108,7 +108,7 @@ Thus a generic singularity is isolated and has nonzero divergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A generic closed leaf is hyperbolic:
 \[
@@ -158,7 +158,7 @@ and these conditions reduce to the source's inequalities
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For a generic foliation on compact $F$, the nonwandering set consists
 of finitely many singular points and hyperbolic closed leaves.
@@ -172,13 +172,13 @@ sets consist of finitely many hyperbolic equilibria and hyperbolic periodic
 orbits, and all invariant manifolds meet transversely.
 
 The same conclusion applies here after the generic perturbation in
-steps <1>2--<1>3.
+steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every nonsingular nonclosed leaf has
 \[
@@ -195,7 +195,7 @@ Let $\gamma$ be a leaf that is neither singular nor periodic.
 Its forward and backward limit sets are nonempty compact invariant subsets
 of the nonwandering set.
 
-By step <1>4, the nonwandering set is a finite union of isolated singular
+By step [](#s1-4){.pf-ref}, the nonwandering set is a finite union of isolated singular
 points and periodic orbits. A connected limit set contained in such a finite
 union must be one of those individual basic pieces.
 
@@ -214,28 +214,28 @@ that invariant set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus hypothesis (1) of Theorem 3.13 holds generically.
 
 
 ::: pf-proof
 
-This is exactly step <1>5, together with the trivial cases of singular and
+This is exactly step [](#s1-5){.pf-ref}, together with the trivial cases of singular and
 closed leaves themselves.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hypothesis (2) of Theorem 3.13 holds generically.
 
 
 ::: pf-proof
 
-Step <1>2 gives nonzero divergence at every singular point, and step <1>3
+Step [](#s1-2){.pf-ref} gives nonzero divergence at every singular point, and step [](#s1-3){.pf-ref}
 gives
 \[
 \phi'(0)\ne1
@@ -246,7 +246,7 @@ for every closed leaf.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 A generic characteristic foliation has no leaf running from
 \[
@@ -293,7 +293,7 @@ Therefore no generic leaf runs from $K_-$ to $K_+$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The singular set of a generic foliation has finitely many connected
 components.
@@ -301,7 +301,7 @@ components.
 
 ::: pf-proof
 
-By step <1>2, every singular point is isolated. A closed discrete subset of
+By step [](#s1-2){.pf-ref}, every singular point is isolated. A closed discrete subset of
 the compact surface $F$ is finite. Hence the singular set consists of
 finitely many singleton connected components.
 
@@ -319,11 +319,11 @@ acyclic.
 
 ::: pf-proof
 
-Finiteness follows from step <1>9.
+Finiteness follows from step [](#s1-9){.pf-ref}.
 
 A directed cycle would consist of a finite cyclic chain of separatrices
 between hyperbolic singularities of the same sign. Each edge is a saddle
-connection. As in step <1>8, such a connection is a nontransverse
+connection. As in step [](#s1-8){.pf-ref}, such a connection is a nontransverse
 intersection of a stable and an unstable $1$-manifold, forbidden by the
 Kupka--Smale condition.
 
@@ -333,7 +333,7 @@ Hence the directed graph has no directed cycle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Every finite acyclic directed graph admits a linear order of its
 vertices in which every directed edge points forward.
@@ -351,16 +351,16 @@ edge. Place it first, delete it and all outgoing edges, and repeat.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hypothesis (4) of Theorem 3.13 holds generically.
 
 
 ::: pf-proof
 
-By step <1>9 there are finitely many singular components.
+By step [](#s1-9){.pf-ref} there are finitely many singular components.
 
-Apply step <1>11 separately to the directed connection graphs of the positive
+Apply step [](#s1-11){.pf-ref} separately to the directed connection graphs of the positive
 and negative singular points. The resulting order has the property that every
 leaf joining two singular points of the same sign preserves the chosen order.
 This is exactly hypothesis (4).
@@ -369,7 +369,7 @@ This is exactly hypothesis (4).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The boundary condition in Theorem 3.13 is also generic relative to a
 fixed boundary model.
@@ -393,7 +393,7 @@ perturbation leaves this boundary condition unchanged.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore all hypotheses of Theorem 3.13 hold for a generic
 characteristic foliation of $F$.
@@ -401,11 +401,11 @@ characteristic foliation of $F$.
 
 ::: pf-proof
 
-Hypothesis (1) is step <1>6.
-Hypothesis (2) is step <1>7.
-Hypothesis (3) is step <1>8.
-Hypothesis (4) is step <1>12.
-The boundary condition is step <1>13.
+Hypothesis (1) is step [](#s1-6){.pf-ref}.
+Hypothesis (2) is step [](#s1-7){.pf-ref}.
+Hypothesis (3) is step [](#s1-8){.pf-ref}.
+Hypothesis (4) is step [](#s1-12){.pf-ref}.
+The boundary condition is step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -413,7 +413,7 @@ The boundary condition is step <1>13.
 
 ::: pf-qed
 
-Step <1>14 is precisely Exercise 3.15.
+Step [](#s1-14){.pf-ref} is precisely Exercise 3.15.
 
 :::
 

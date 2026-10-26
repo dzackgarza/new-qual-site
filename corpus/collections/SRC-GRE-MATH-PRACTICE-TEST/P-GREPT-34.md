@@ -27,7 +27,7 @@ If $f(x) = \sum_{n=0}^{\infty} \frac{(n+1)^{n/2}}{(n!)^2} x^n$, what is true of 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The coefficient of $x^4$ in the power series for $f$ is
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -66,7 +66,7 @@ identity gives
 $$
 a_4=\frac{f^{(4)}(0)}{4!}.
 $$
-Using step <1>1 therefore yields
+Using step [](#s1-1){.pf-ref} therefore yields
 $$
 f^{(4)}(0)=4!\frac{25}{(4!)^2}
 =\frac{25}{4!}
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -88,7 +88,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 gives $f^{(4)}(0)=25/24$, and $25/24>1$.
+Step [](#s1-2){.pf-ref} gives $f^{(4)}(0)=25/24$, and $25/24>1$.
 
 :::
 
@@ -96,7 +96,7 @@ Step <1>2 gives $f^{(4)}(0)=25/24$, and $25/24>1$.
 
 ::: pf-qed
 
-Step <1>3 gives the required comparison.
+Step [](#s1-3){.pf-ref} gives the required comparison.
 
 :::
 

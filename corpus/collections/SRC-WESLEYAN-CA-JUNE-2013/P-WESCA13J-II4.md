@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The limits satisfy
 $$
@@ -84,7 +84,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every
 $$
@@ -122,7 +122,7 @@ Taking absolute values and using
 $$
 |f_n(z)|\le M
 $$
-together with step <1>1 gives
+together with step [](#s1-1){.pf-ref} gives
 $$
 \begin{aligned}
 |f_n g_n-fg|
@@ -139,7 +139,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Taking suprema over
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-proof
 
-The pointwise inequality of step <1>2 holds for every
+The pointwise inequality of step [](#s1-2){.pf-ref} holds for every
 $$
 z\in A.
 $$
@@ -167,9 +167,9 @@ Taking the supremum of the left-hand side and bounding the supremum of the sum b
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The right-hand side in step <1>3 tends to
+The right-hand side in step [](#s1-3){.pf-ref} tends to
 $$
 0.
 $$
@@ -195,7 +195,7 @@ preserves convergence to zero, and so does addition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -207,7 +207,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 \|f_ng_n-fg\|_{\infty}
 \longrightarrow0,
@@ -220,7 +220,7 @@ which is the definition of uniform convergence.
 
 ::: pf-qed
 
-Step <1>5 proves the required conclusion.
+Step [](#s1-5){.pf-ref} proves the required conclusion.
 
 :::
 

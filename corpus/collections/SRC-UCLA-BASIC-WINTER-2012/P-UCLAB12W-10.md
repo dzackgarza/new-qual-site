@@ -55,7 +55,7 @@ By induction, after changing only the remaining $n-1$ basis vectors, the block $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Matrix exponentiation respects similarity:
 $$
@@ -85,7 +85,7 @@ The entrywise convergence assumed in the problem permits multiplication by the f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If the diagonal entries of $T$ are
 $$
@@ -114,7 +114,7 @@ A sum of upper-triangular matrices is upper triangular.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -124,7 +124,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3 and the determinant formula for triangular matrices,
+By step [](#s1-3){.pf-ref} and the determinant formula for triangular matrices,
 $$
 \det(e^T)
 =\prod_{j=1}^n e^{\lambda_j}
@@ -140,7 +140,7 @@ Thus the displayed identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Similarity preserves both determinant and trace, so
 $$
@@ -152,7 +152,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 e^T=S^{-1}e^AS,
 $$
@@ -172,7 +172,7 @@ using $\operatorname{tr}(XY)=\operatorname{tr}(YX)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for every complex square matrix $A$,
 $$
@@ -182,7 +182,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5:
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}:
 $$
 \det(e^A)
 =\det(e^T)
@@ -196,7 +196,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 proves the identity with no hypothesis beyond $A\in\mathbb M_n(\CC)$.
+Step [](#s1-6){.pf-ref} proves the identity with no hypothesis beyond $A\in\mathbb M_n(\CC)$.
 
 :::
 

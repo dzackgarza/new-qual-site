@@ -45,7 +45,7 @@ Let $T$ denote the operator with matrix $A$, and let $x$ act on $V$ by $T$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The elementary divisors of $T$ are $(x-1)^2$, $(x-1)$, $(x-1)$, and $(x-2)$.
 
@@ -63,7 +63,7 @@ For $N=T-I$, the first two coordinates form the nilpotent block
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The invariant factors are
 \[
@@ -73,13 +73,13 @@ The invariant factors are
 
 ::: pf-proof
 
-The elementary divisors from step <1>1 comprise $(x-1)^2$, two copies of $(x-1)$, and $(x-2)$. Aligning the powers of $x-1$ in increasing order and combining the sole $x-2$ factor with the last one yields the displayed monic invariant factors. They satisfy $d_1\mid d_2\mid d_3$ and $d_1d_2d_3=\chi_T$.
+The elementary divisors from step [](#s1-1){.pf-ref} comprise $(x-1)^2$, two copies of $(x-1)$, and $(x-2)$. Aligning the powers of $x-1$ in increasing order and combining the sole $x-2$ factor with the last one yields the displayed monic invariant factors. They satisfy $d_1\mid d_2\mid d_3$ and $d_1d_2d_3=\chi_T$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The decomposition into indecomposable $\mathbb C[x]$-modules is
 \[
@@ -90,13 +90,13 @@ The decomposition into indecomposable $\mathbb C[x]$-modules is
 
 ::: pf-proof
 
-The structure theorem over the PID $\mathbb C[x]$ gives the elementary-divisor decomposition from step <1>1. Each cyclic module killed by a power of an irreducible polynomial is indecomposable: its submodules form a chain, so it cannot split as a direct sum of two nonzero submodules.
+The structure theorem over the PID $\mathbb C[x]$ gives the elementary-divisor decomposition from step [](#s1-1){.pf-ref}. Each cyclic module killed by a power of an irreducible polynomial is indecomposable: its submodules form a chain, so it cannot split as a direct sum of two nonzero submodules.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Jordan canonical form is
 \[
@@ -106,7 +106,7 @@ The Jordan canonical form is
 
 ::: pf-proof
 
-The elementary divisors determined in step <1>1 correspond to Jordan blocks of sizes two, one and one at eigenvalue one, and a single block at eigenvalue two.
+The elementary divisors determined in step [](#s1-1){.pf-ref} correspond to Jordan blocks of sizes two, one and one at eigenvalue one, and a single block at eigenvalue two.
 
 :::
 
@@ -114,7 +114,7 @@ The elementary divisors determined in step <1>1 correspond to Jordan blocks of s
 
 ::: pf-qed
 
-Steps <1>2, <1>3, and <1>4 prove parts (a), (b), and (c), respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} prove parts (a), (b), and (c), respectively.
 
 :::
 

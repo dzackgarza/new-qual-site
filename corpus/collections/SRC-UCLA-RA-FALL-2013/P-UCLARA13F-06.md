@@ -43,7 +43,7 @@ Openness of $U$ at $0$ gives some disk $D(0,R)\subset U$. Choose any $0<r<R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $U$ is bounded, choose $M>0$ such that
 \[
@@ -60,7 +60,7 @@ This is the definition of boundedness of $U\subset\mathbb C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $n\geq1$, the iterate
 \[
@@ -81,7 +81,7 @@ because $f(0)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Cauchy's estimate applied on the circle $|z|=r$ gives
 \[
@@ -92,7 +92,7 @@ Cauchy's estimate applied on the circle $|z|=r$ gives
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 |f^n(z)|\leq M
 \]
@@ -109,7 +109,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The chain rule gives
 \[
@@ -125,7 +125,7 @@ Every intermediate point in the derivative of the composition is $0$ because eve
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence for every $n\geq1$,
 \[
@@ -135,13 +135,13 @@ Hence for every $n\geq1$,
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5 and take absolute values.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} and take absolute values.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -151,7 +151,7 @@ Therefore
 
 ::: pf-proof
 
-If $|f'(0)|>1$, then $|f'(0)|^n\to\infty$ as $n\to\infty$, contradicting the uniform upper bound $M/r$ in step <1>6.
+If $|f'(0)|>1$, then $|f'(0)|^n\to\infty$ as $n\to\infty$, contradicting the uniform upper bound $M/r$ in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -159,7 +159,7 @@ If $|f'(0)|>1$, then $|f'(0)|^n\to\infty$ as $n\to\infty$, contradicting the uni
 
 ::: pf-qed
 
-Step <1>7 is the required derivative bound.
+Step [](#s1-7){.pf-ref} is the required derivative bound.
 
 :::
 

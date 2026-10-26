@@ -72,7 +72,7 @@ Writing $\beta=\sqrt c$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -116,7 +116,7 @@ with $a,b\in K$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 [K(\theta):K]=2.
 $$
@@ -126,7 +126,7 @@ The degree of the minimal polynomial of $\theta$ over $K$ is therefore $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There are unique polynomials $Q,P\in F[X]$ such that
 $$
@@ -170,7 +170,7 @@ Then $Q$ is monic of degree $2$ and $\deg P<2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $\sigma$ be the nontrivial $F$-automorphism of $K$, characterized by
 $$
@@ -184,13 +184,13 @@ $$
 
 ::: pf-proof
 
-The quadratic extension $K/F$ is separable because $\operatorname{char}F\ne2$. Its nontrivial automorphism fixes $F$ and exchanges the two roots of $X^2-c$, hence sends $\sqrt c$ to $-\sqrt c$. Apply it coefficientwise to the expression in step <1>4.
+The quadratic extension $K/F$ is separable because $\operatorname{char}F\ne2$. Its nontrivial automorphism fixes $F$ and exchanges the two roots of $X^2-c$, hence sends $\sqrt c$ to $-\sqrt c$. Apply it coefficientwise to the expression in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The polynomial
 $$
@@ -204,7 +204,7 @@ $$
 
 ::: pf-proof
 
-Using steps <1>4--<1>5,
+Using steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
 \begin{aligned}
 g
@@ -218,7 +218,7 @@ The right-hand side has coefficients in $F$, so $g\in F[X]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The polynomial $g$ is monic of degree $4$ and satisfies
 $$
@@ -237,7 +237,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let $f\in F[X]$ be the monic minimal polynomial of $\theta$ over $F$. Then
 $$
@@ -251,13 +251,13 @@ Because $E=F(\theta)$ has degree $4$ over $F$,
 $$
 \deg f=4.
 $$
-By step <1>7, $g\in F[X]$ is a monic degree-$4$ polynomial vanishing at $\theta$. Therefore the minimal polynomial $f$ divides $g$. Since both are monic of the same degree, they are equal.
+By step [](#s1-7){.pf-ref}, $g\in F[X]$ is a monic degree-$4$ polynomial vanishing at $\theta$. Therefore the minimal polynomial $f$ divides $g$. Since both are monic of the same degree, they are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently the minimal polynomial of $\theta$ has the form
 $$
@@ -270,7 +270,7 @@ where $Q\in F[X]$ is monic of degree $2$ and $\deg P<2$.
 
 ::: pf-proof
 
-Combine steps <1>6 and <1>8, together with the degree properties established in step <1>4.
+Combine steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, together with the degree properties established in step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -278,7 +278,7 @@ Combine steps <1>6 and <1>8, together with the degree properties established in 
 
 ::: pf-qed
 
-Step <1>9 is exactly the converse statement requested in Problem 3.10.
+Step [](#s1-9){.pf-ref} is exactly the converse statement requested in Problem 3.10.
 
 :::
 

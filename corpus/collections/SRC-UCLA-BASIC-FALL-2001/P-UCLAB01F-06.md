@@ -38,7 +38,7 @@ Use the Euclidean norm on $\mathbb R^2$ and the induced operator norm on matrice
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $r>0$ such that
 \[
@@ -62,7 +62,7 @@ Hence $\|DF(x)-I\|\to0$ as $x\to0$. Choose $r>0$ so that the displayed bound hol
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For all $x,z\in\overline B_r$,
 \[
@@ -82,7 +82,7 @@ whose derivative is
 \[
 DH(u)=I-DF(u).
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \|DH(u)\|\le\frac12
 \]
@@ -97,7 +97,7 @@ along the segment. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For any $y\in\mathbb R^2$ with
 \[
@@ -117,7 +117,7 @@ sends $\overline B_r$ into itself and satisfies
 
 ::: pf-proof
 
-Since $F(0)=0$, step <1>2 with $z=0$ gives
+Since $F(0)=0$, step [](#s1-2){.pf-ref} with $z=0$ gives
 \[
 \|x-F(x)\|\le\frac12\|x\|
 \]
@@ -132,7 +132,7 @@ for $x\in\overline B_r$. Thus
 \]
 so $T_y(x)\in\overline B_r$.
 
-Also the constant vector $y$ cancels in differences, so step <1>2 gives
+Also the constant vector $y$ cancels in differences, so step [](#s1-2){.pf-ref} gives
 \[
 \|T_y(x)-T_y(z)\|
 =
@@ -158,7 +158,7 @@ converges to a point $x\in\overline B_r$.
 
 ::: pf-proof
 
-Step <1>3 shows inductively that every $x_n\in\overline B_r$. It also gives
+Step [](#s1-3){.pf-ref} shows inductively that every $x_n\in\overline B_r$. It also gives
 \[
 \|x_{n+1}-x_n\|
 \le
@@ -184,7 +184,7 @@ which tends to $0$ as $n\to\infty$. Thus $(x_n)$ is Cauchy. Since $\mathbb R^2$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The limit $x$ satisfies
 \[
@@ -208,7 +208,7 @@ Hence $F(x)=y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 With
 \[
@@ -227,7 +227,7 @@ The inequality $a^2+b^2<r^2/4$ is exactly
 \[
 \|y\|<r/2.
 \]
-Step <1>5 therefore supplies $x\in\mathbb R^2$ with $F(x)=y=(a,b)$.
+Step [](#s1-5){.pf-ref} therefore supplies $x\in\mathbb R^2$ with $F(x)=y=(a,b)$.
 
 :::
 
@@ -235,7 +235,7 @@ Step <1>5 therefore supplies $x\in\mathbb R^2$ with $F(x)=y=(a,b)$.
 
 ::: pf-qed
 
-Step <1>6 is the required local-surjectivity statement.
+Step [](#s1-6){.pf-ref} is the required local-surjectivity statement.
 
 :::
 

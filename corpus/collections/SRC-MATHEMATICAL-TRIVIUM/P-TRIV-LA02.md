@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The transpose is
 $$
@@ -58,7 +58,7 @@ Transpose exchanges rows and columns.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-Multiply step <1>2 by $A$:
+Multiply step [](#s1-2){.pf-ref} by $A$:
 $$
 \begin{pmatrix}
 11&10\\
@@ -132,7 +132,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The trace and determinant are
 $$
@@ -163,7 +163,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The inverse is
 $$
@@ -196,20 +196,20 @@ Simplifying gives the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>5 compute all requested quantities.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} compute all requested quantities.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The characteristic polynomial is
 $$
@@ -223,7 +223,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 $$
 \chi_A(\lambda)
 =
@@ -240,7 +240,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The eigenvalues are
 $$
@@ -250,13 +250,13 @@ $$
 
 ::: pf-proof
 
-These are the roots of the characteristic polynomial in step <1>7.
+These are the roots of the characteristic polynomial in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For $\lambda=6$, an eigenvector is
 $$
@@ -299,7 +299,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For $\lambda=-1$, an eigenvector is
 $$
@@ -343,20 +343,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>8--<1>10 give both eigenvalues and corresponding eigenvectors.
+Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give both eigenvalues and corresponding eigenvectors.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Define
 $$
@@ -374,7 +374,7 @@ $$
 
 ::: pf-proof
 
-The columns of $P$ are the two eigenvectors from steps <1>9 and <1>10.
+The columns of $P$ are the two eigenvectors from steps [](#s1-9){.pf-ref} and [](#s1-10){.pf-ref}.
 Their determinant is
 $$
 2(-1)-5(1)=-7.
@@ -384,7 +384,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 One has
 $$
@@ -418,7 +418,7 @@ Multiply on the left by $P^{-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The change of coordinates
 $$
@@ -437,20 +437,20 @@ then with $x=Py$,
 $$
 y\longmapsto P^{-1}AP,y.
 $$
-Step <1>13 shows that this matrix is diagonal.
+Step [](#s1-13){.pf-ref} shows that this matrix is diagonal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Steps <1>12--<1>14 give the diagonalizing transformation.
+Steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} give the diagonalizing transformation.
 
 :::
 
@@ -458,7 +458,7 @@ Steps <1>12--<1>14 give the diagonalizing transformation.
 
 ::: pf-qed
 
-Steps <1>6, <1>11, and <1>15 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-15){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

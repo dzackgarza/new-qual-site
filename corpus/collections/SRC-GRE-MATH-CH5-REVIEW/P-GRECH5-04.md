@@ -49,7 +49,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $n$,
 $$
@@ -77,7 +77,7 @@ so the same formulas hold for negative integers by applying the nonnegative case
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix difference in the problem is
 $$
@@ -90,7 +90,7 @@ $$
 
 ::: pf-proof
 
-The two matrices in the statement are $I+N$ and $I+M$. By step <1>1,
+The two matrices in the statement are $I+N$ and $I+M$. By step [](#s1-1){.pf-ref},
 $$
 (I+N)^n-(I+M)^n
 =n(N-M)
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -116,7 +116,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Comparing the $(1,2)$ entry in step <1>2 with the given matrix
+Comparing the $(1,2)$ entry in step [](#s1-2){.pf-ref} with the given matrix
 $$
 \begin{pmatrix}
 0&6\\
@@ -131,7 +131,7 @@ gives $n=6$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

@@ -33,7 +33,7 @@ where the sum is over the distinct zeros of \(p\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist constants \(R_0>0\) and \(c>0\) such that
 \[
@@ -64,7 +64,7 @@ Thus one may take \(c=|a_m|/2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(R\ge R_0\) is larger than the modulus of every zero of \(p\), then
 \[
@@ -80,7 +80,7 @@ All poles of \(1/p\) are precisely the zeros of \(p\), and by the choice of \(R\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -91,7 +91,7 @@ One has
 
 ::: pf-proof
 
-By step <1>1, for every sufficiently large \(R\),
+By step [](#s1-1){.pf-ref}, for every sufficiently large \(R\),
 \[
 \left|\int_{|z|=R}\frac{dz}{p(z)}\right|
 \le
@@ -105,7 +105,7 @@ Since \(m\ge2\), the exponent \(1-m\le-1\), so the right-hand side tends to \(0\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sum of the residues is
 \[
@@ -115,11 +115,11 @@ The sum of the residues is
 
 ::: pf-proof
 
-For every sufficiently large \(R\), step <1>2 gives
+For every sufficiently large \(R\), step [](#s1-2){.pf-ref} gives
 \[
 2\pi i\,S=\int_{|z|=R}\frac{dz}{p(z)}.
 \]
-Letting \(R\to\infty\) and applying step <1>3 yields \(2\pi iS=0\), hence \(S=0\).
+Letting \(R\to\infty\) and applying step [](#s1-3){.pf-ref} yields \(2\pi iS=0\), hence \(S=0\).
 
 :::
 
@@ -127,7 +127,7 @@ Letting \(R\to\infty\) and applying step <1>3 yields \(2\pi iS=0\), hence \(S=0\
 
 ::: pf-qed
 
-Step <1>4 is the required residue sum.
+Step [](#s1-4){.pf-ref} is the required residue sum.
 
 :::
 

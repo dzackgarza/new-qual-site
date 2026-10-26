@@ -76,7 +76,7 @@ A deformation retraction is a homotopy equivalence, and the core \(C\) is a circ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The boundary \(S\) is a single circle.
 
@@ -103,20 +103,20 @@ Thus the two edges form one closed loop.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A generator of \(\pi_1(S)\) traverses the top edge once and then the bottom edge once.
 
 
 ::: pf-proof
 
-The boundary circle is exactly the union of those two edge arcs joined end-to-end as described in step <1>3.
+The boundary circle is exactly the union of those two edge arcs joined end-to-end as described in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the deformation retraction \(M\to C\), the top edge traverses the core circle once.
 
@@ -133,7 +133,7 @@ As \(s\) runs from \(0\) to \(1\), this goes once around the core circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Under the same deformation retraction, the bottom edge also traverses the core circle once in the same direction.
 
@@ -150,7 +150,7 @@ and the retraction sends this bottom traversal to a second traversal of the core
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the induced homomorphism
 \[
@@ -165,7 +165,7 @@ i_*(1)=2}.
 
 ::: pf-proof
 
-By steps <1>4--<1>6, one trip around the boundary becomes two trips around the core after applying the deformation retraction that identifies \(\pi_1(M)\) with \(\mathbb Z\).
+By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, one trip around the boundary becomes two trips around the core after applying the deformation retraction that identifies \(\pi_1(M)\) with \(\mathbb Z\).
 
 :::
 
@@ -188,7 +188,7 @@ A retraction restricts to the identity on the subspace onto which it retracts.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Passing to fundamental groups,
 \[
@@ -232,7 +232,7 @@ Then
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 i_*(1)=2.
 \]
@@ -247,7 +247,7 @@ r_*(2)=2r_*(1)=2m.
 
 ::: pf-step
 
-But step <1>9 requires
+But step [](#s1-9){.pf-ref} requires
 \[
 (r_*\circ i_*)(1)=1.
 \]
@@ -261,7 +261,7 @@ The identity homomorphism on \(\mathbb Z\) sends \(1\) to \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -278,7 +278,7 @@ The left-hand side is even and the right-hand side is odd.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore no retraction
 \[
@@ -290,7 +290,7 @@ exists.
 
 ::: pf-proof
 
-The assumption of a retraction led to the contradiction in step <1>13.
+The assumption of a retraction led to the contradiction in step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -298,7 +298,7 @@ The assumption of a retraction led to the contradiction in step <1>13.
 
 ::: pf-qed
 
-Step <1>14 is the required conclusion.
+Step [](#s1-14){.pf-ref} is the required conclusion.
 
 :::
 

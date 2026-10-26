@@ -30,7 +30,7 @@ Let $(x',y')=(x/2,y)$ denote the image of a point $(x,y)$ on $C$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The resulting curve has equation
 $$
@@ -50,7 +50,7 @@ which is equivalent to the displayed equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The enclosed area is
 $$
@@ -61,7 +61,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>1, the image curve is the circle of radius $2$ centered at the origin. Its enclosed area is therefore
+By step [](#s1-1){.pf-ref}, the image curve is the circle of radius $2$ centered at the origin. Its enclosed area is therefore
 $$
 \pi(2)^2=4\pi.
 $$
@@ -72,7 +72,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested area and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested area and corresponding choice.
 
 :::
 

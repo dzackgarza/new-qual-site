@@ -39,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The quotient
 $$
@@ -75,7 +75,7 @@ is maximal, which is equivalent to $f_a$ being irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $f_a$ has degree $3$, it is irreducible if and only if it has no root in $\FF_3$.
 
@@ -89,7 +89,7 @@ Conversely, a root gives a linear factor by the factor theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -113,7 +113,7 @@ Thus $0$ is never a root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -142,7 +142,7 @@ in characteristic $3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -173,7 +173,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For
 $$
@@ -184,17 +184,17 @@ the polynomial $f_a$ is reducible.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 f_0(1)=0.
 $$
-Thus $1$ is a root, so $f_0$ is reducible by step <1>2.
+Thus $1$ is a root, so $f_0$ is reducible by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For
 $$
@@ -205,7 +205,7 @@ the polynomial $f_a$ is reducible.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 f_1(2)
 =
@@ -220,7 +220,7 @@ Thus $2$ is a root, so $f_1$ is reducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For
 $$
@@ -231,7 +231,7 @@ the polynomial $f_a$ has no root in $\FF_3$.
 
 ::: pf-proof
 
-By steps <1>3--<1>5,
+By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref},
 $$
 f_2(0)=1,
 $$
@@ -255,7 +255,7 @@ None of these values is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -270,7 +270,7 @@ is a field.
 
 ::: pf-proof
 
-Steps <1>6--<1>7 exclude $a=0,1$. Step <1>8 and step <1>2 show that $f_2$ is irreducible, and step <1>1 then implies the corresponding quotient is a field.
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} exclude $a=0,1$. Step [](#s1-8){.pf-ref} and step [](#s1-2){.pf-ref} show that $f_2$ is irreducible, and step [](#s1-1){.pf-ref} then implies the corresponding quotient is a field.
 
 :::
 
@@ -278,7 +278,7 @@ Steps <1>6--<1>7 exclude $a=0,1$. Step <1>8 and step <1>2 show that $f_2$ is irr
 
 ::: pf-qed
 
-Step <1>9 gives the complete list.
+Step [](#s1-9){.pf-ref} gives the complete list.
 
 :::
 

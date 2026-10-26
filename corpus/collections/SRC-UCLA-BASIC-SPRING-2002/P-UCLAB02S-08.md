@@ -99,7 +99,7 @@ v_j^*\in W^0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The functionals
 \[
@@ -147,7 +147,7 @@ Thus the displayed functionals span $W^0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The functionals
 \[
@@ -164,7 +164,7 @@ They are part of the dual basis, so they are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -174,7 +174,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 v_{r+1}^*,\ldots,v_n^*
 \]
@@ -189,7 +189,7 @@ such functionals.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -205,7 +205,7 @@ By definition,
 \qquad\text{and}\qquad
 \dim W=r.
 \]
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 \dim W^0=n-r.
 \]
@@ -225,7 +225,7 @@ r+(n-r)
 
 ::: pf-qed
 
-Step <1>6 is the required dimension formula.
+Step [](#s1-6){.pf-ref} is the required dimension formula.
 
 :::
 

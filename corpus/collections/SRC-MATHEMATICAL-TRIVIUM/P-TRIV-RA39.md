@@ -41,7 +41,7 @@ $0\leq y\leq\arcsin x$ into a disk of radius $\arcsin x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the volume is
 $$
@@ -66,7 +66,7 @@ Integrate this area from $x=0$ to $x=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Set
 $$
@@ -109,13 +109,13 @@ $$
 
 ::: pf-proof
 
-Substitute the relations from step <1>3.
+Substitute the relations from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Integration by parts gives
 $$
@@ -158,7 +158,7 @@ is the value of the integral, and the boundary term equals $\pi^2/4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -183,7 +183,7 @@ Evaluating from $0$ to $\pi/2$ gives $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -197,13 +197,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>5--<1>6.
+Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence the volume is
 $$
@@ -221,7 +221,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>7 into step <1>2.
+Substitute step [](#s1-7){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -229,7 +229,7 @@ Substitute step <1>7 into step <1>2.
 
 ::: pf-qed
 
-Step <1>8 is the required volume.
+Step [](#s1-8){.pf-ref} is the required volume.
 
 :::
 

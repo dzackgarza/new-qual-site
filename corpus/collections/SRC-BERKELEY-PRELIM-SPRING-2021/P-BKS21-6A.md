@@ -35,7 +35,7 @@ Write $A=(a_{ij})$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every row index $i$,
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The kernel of $A$ is trivial.
 
@@ -104,13 +104,13 @@ $$
 \leq
 \sum_{j\neq k}|a_{kj}|,
 $$
-contradicting step <1>1.
+contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently
 $$
@@ -120,7 +120,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 shows that the linear map defined by the square matrix $A$ is injective. A linear endomorphism of the finite-dimensional space $\mathbb R^n$ is injective if and only if it is invertible, and a square matrix is invertible if and only if its determinant is nonzero.
+Step [](#s1-2){.pf-ref} shows that the linear map defined by the square matrix $A$ is injective. A linear endomorphism of the finite-dimensional space $\mathbb R^n$ is injective if and only if it is invertible, and a square matrix is invertible if and only if its determinant is nonzero.
 
 :::
 
@@ -128,7 +128,7 @@ Step <1>2 shows that the linear map defined by the square matrix $A$ is injectiv
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

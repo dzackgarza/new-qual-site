@@ -39,7 +39,7 @@ C=\{(x,y)\in\mathbb R^2:x^4+y^4=2\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $C$ is compact.
 
@@ -75,7 +75,7 @@ By Heine--Borel, $C$ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The distance from $(x,y)$ to the line
 \[
@@ -116,7 +116,7 @@ c=100.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $(x,y)\in C$,
 \[
@@ -126,7 +126,7 @@ y-x+100>0.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |x|,|y|\le2^{1/4}<2.
 \]
@@ -145,7 +145,7 @@ y-x+100
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Minimizing the distance to the line over $C$ is equivalent to maximizing
 \[
@@ -156,7 +156,7 @@ over $C$.
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 d(x,y)
 =
@@ -176,7 +176,7 @@ x-y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A maximizing point exists.
 
@@ -229,7 +229,7 @@ x-y
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Equality
 \[
@@ -308,7 +308,7 @@ Thus it is the unique maximizer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the unique point on $C$ closest to the line is
 \[
@@ -318,14 +318,14 @@ Therefore the unique point on $C$ closest to the line is
 
 ::: pf-proof
 
-By step <1>4, closest points are exactly maximizers of $x-y$.
-Step <1>5 proves existence, and step <1>7 proves that the unique maximizer is $(1,-1)$.
+By step [](#s1-4){.pf-ref}, closest points are exactly maximizers of $x-y$.
+Step [](#s1-5){.pf-ref} proves existence, and step [](#s1-7){.pf-ref} proves that the unique maximizer is $(1,-1)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The minimum distance itself is
 \[
@@ -339,7 +339,7 @@ At
 \[
 (1,-1),
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 d
 =
@@ -356,7 +356,7 @@ d
 
 ::: pf-qed
 
-Step <1>8 gives the unique closest point, with existence and uniqueness justified, and step <1>9 gives the corresponding distance.
+Step [](#s1-8){.pf-ref} gives the unique closest point, with existence and uniqueness justified, and step [](#s1-9){.pf-ref} gives the corresponding distance.
 
 :::
 

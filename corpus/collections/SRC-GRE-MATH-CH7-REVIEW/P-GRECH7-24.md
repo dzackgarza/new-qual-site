@@ -29,7 +29,7 @@ Write $z=x+iy$ with $x,y\in\RR$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Any solution satisfies $x=0$.
 
@@ -50,7 +50,7 @@ Since the real exponential is injective, $2x=0$, hence $x=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The imaginary part satisfies
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the equation becomes
+By step [](#s1-1){.pf-ref}, the equation becomes
 $$
 e^{2iy}=i.
 $$
@@ -76,7 +76,7 @@ so the displayed congruence for $2y$ follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore all solutions are
 $$
@@ -87,11 +87,11 @@ so the answer is (E).
 
 ::: pf-proof
 
-Solving step <1>2 for $y$ gives
+Solving step [](#s1-2){.pf-ref} for $y$ gives
 $$
 y=\frac12\left(\frac\pi2+2n\pi\right).
 $$
-Together with $x=0$ from step <1>1, this yields the displayed formula for $z$. Substitution gives
+Together with $x=0$ from step [](#s1-1){.pf-ref}, this yields the displayed formula for $z$. Substitution gives
 $$
 e^{2z}=e^{i(\pi/2+2n\pi)}=i,
 $$
@@ -103,7 +103,7 @@ so every listed value is indeed a solution.
 
 ::: pf-qed
 
-Step <1>3 gives the complete solution set.
+Step [](#s1-3){.pf-ref} gives the complete solution set.
 
 :::
 

@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ideals satisfy
 $$
@@ -152,7 +152,7 @@ $$
 ::: pf-proof
 
 Because $R$ is Noetherian, it satisfies the ascending chain condition on ideals.
-Apply this to the chain from step <1>2.
+Apply this to the chain from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -186,7 +186,7 @@ The definition of $A_n$ supplies the corresponding polynomials.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -211,7 +211,7 @@ Every generator of $J$ was chosen from $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -264,7 +264,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 $$
@@ -327,7 +327,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every element of $I$ belongs to $J$.
 
@@ -347,7 +347,7 @@ $$
 0\ne f\in I
 $$
 have positive degree.
-Apply step <1>6 or step <1>7 according as
+Apply step [](#s1-6){.pf-ref} or step [](#s1-7){.pf-ref} according as
 $$
 \deg f\le N
 $$
@@ -381,7 +381,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 $$
@@ -391,11 +391,11 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 J\subseteq I,
 $$
-and step <1>8 gives
+and step [](#s1-8){.pf-ref} gives
 $$
 I\subseteq J.
 $$
@@ -404,19 +404,19 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The ideal $I$ is finitely generated.
 
 
 ::: pf-proof
 
-The generating set used to define $J$ in step <1>5 is finite, because
+The generating set used to define $J$ in step [](#s1-5){.pf-ref} is finite, because
 $$
 0\le n\le N
 $$
 and each $A_n$ has finitely many chosen generators.
-Step <1>9 gives
+Step [](#s1-9){.pf-ref} gives
 $$
 I=J.
 $$
@@ -425,7 +425,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore every ideal of $R[x]$ is finitely generated.
 
@@ -437,13 +437,13 @@ $$
 I
 $$
 was arbitrary.
-Apply step <1>10.
+Apply step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 $$
@@ -457,7 +457,7 @@ $$
 ::: pf-proof
 
 A commutative ring is Noetherian exactly when every ideal is finitely generated.
-Step <1>11 verifies this for
+Step [](#s1-11){.pf-ref} verifies this for
 $$
 R[x].
 $$
@@ -468,7 +468,7 @@ $$
 
 ::: pf-qed
 
-Step <1>12 is Hilbert's basis theorem.
+Step [](#s1-12){.pf-ref} is Hilbert's basis theorem.
 
 :::
 

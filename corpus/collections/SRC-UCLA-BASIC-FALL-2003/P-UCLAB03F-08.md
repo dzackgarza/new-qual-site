@@ -59,7 +59,7 @@ Every basis of a subspace of a finite-dimensional vector space extends to a basi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vectors
 \[
@@ -102,7 +102,7 @@ These two spans intersect only in $0$ because the full list is a basis. Thus all
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -112,7 +112,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \dim(\operatorname{im}T)=n-k.
 \]
@@ -122,7 +122,7 @@ Since $n=\dim V$ and $k=\dim\ker T$, the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For a linear map $T:V\to V$ on a finite-dimensional real inner-product space,
 \[
@@ -154,7 +154,7 @@ Thus the two subspaces are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -164,7 +164,7 @@ One has
 
 ::: pf-proof
 
-Take orthogonal complements in step <1>4. In a finite-dimensional inner-product space,
+Take orthogonal complements in step [](#s1-4){.pf-ref}. In a finite-dimensional inner-product space,
 \[
 (Y^\perp)^\perp=Y
 \]
@@ -181,7 +181,7 @@ for every subspace $Y$. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every real $n\times n$ matrix $A$,
 \[
@@ -195,7 +195,7 @@ View $A$ as the matrix of a linear map
 \[
 T:\mathbb R^n\to\mathbb R^n
 \]
-with the standard inner product. Then $T^*$ has matrix $A^t$. By step <1>5,
+with the standard inner product. Then $T^*$ has matrix $A^t$. By step [](#s1-5){.pf-ref},
 \[
 \dim\operatorname{im}T^*
 =
@@ -203,7 +203,7 @@ with the standard inner product. Then $T^*$ has matrix $A^t$. By step <1>5,
 =
 n-\dim\ker T.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 n-\dim\ker T
 =
@@ -224,7 +224,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The row rank of $A$ equals its column rank.
 
@@ -239,7 +239,7 @@ because the columns span the image of the associated linear map. The rows of $A$
 \[
 \operatorname{rank}(A^t).
 \]
-Step <1>6 shows these two ranks are equal.
+Step [](#s1-6){.pf-ref} shows these two ranks are equal.
 
 :::
 
@@ -247,7 +247,7 @@ Step <1>6 shows these two ranks are equal.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), step <1>5 proves part (b), and step <1>7 proves part (c).
+Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-5){.pf-ref} proves part (b), and step [](#s1-7){.pf-ref} proves part (c).
 
 :::
 

@@ -33,7 +33,7 @@ The pointwise limit exists because $(u_n(z))$ is decreasing and bounded below by
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence $(u_n)$ is uniformly Cauchy on every compact subset of $\mathbb D$.
 
@@ -60,20 +60,20 @@ as $m,n\to\infty$. The displayed Harnack bound is uniform for $\abs z\le r$, so 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The convergence $u_n\to u$ is locally uniform, and $u$ is continuous.
 
 
 ::: pf-proof
 
-Step <1>1 gives uniform convergence on each compact subset because $\RR$ is complete. A locally uniform limit of continuous functions is continuous, and each $u_n$ is continuous because it is harmonic.
+Step [](#s1-1){.pf-ref} gives uniform convergence on each compact subset because $\RR$ is complete. A locally uniform limit of continuous functions is continuous, and each $u_n$ is continuous because it is harmonic.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $u$ satisfies the mean-value property on every closed disc contained in $\mathbb D$.
 
@@ -92,7 +92,7 @@ u_n(z_0)
 \int_0^{2\pi}
 u_n(z_0+se^{i\theta})\,d\theta.
 $$
-By step <1>2, $u_n\to u$ uniformly on the compact circle
+By step [](#s1-2){.pf-ref}, $u_n\to u$ uniformly on the compact circle
 $$
 \{z_0+se^{i\theta}:0\le\theta\le2\pi\}.
 $$
@@ -109,14 +109,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $u$ is harmonic on $\mathbb D$.
 
 
 ::: pf-proof
 
-By step <1>2, $u$ is continuous, and by step <1>3 it satisfies the mean-value property on every sufficiently small circle. The converse mean-value theorem therefore implies that $u$ is harmonic.
+By step [](#s1-2){.pf-ref}, $u$ is continuous, and by step [](#s1-3){.pf-ref} it satisfies the mean-value property on every sufficiently small circle. The converse mean-value theorem therefore implies that $u$ is harmonic.
 
 :::
 
@@ -124,7 +124,7 @@ By step <1>2, $u$ is continuous, and by step <1>3 it satisfies the mean-value pr
 
 ::: pf-qed
 
-Step <1>4 proves that $z\mapsto\inf_nu_n(z)$ is harmonic on $\mathbb D$.
+Step [](#s1-4){.pf-ref} proves that $z\mapsto\inf_nu_n(z)$ is harmonic on $\mathbb D$.
 
 :::
 

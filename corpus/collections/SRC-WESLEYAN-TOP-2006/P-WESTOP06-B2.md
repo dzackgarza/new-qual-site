@@ -20,7 +20,7 @@ Let $g:X\to Y$ and $h:Y\to X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The maps \(g:X\to Y\) and \(h:Y\to X\) are homotopy equivalences, inverse to one another up to homotopy, if
 \[
@@ -38,7 +38,7 @@ This is the definition of a homotopy equivalence and a homotopy inverse.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(g':X\to Y\) is homotopic to a homotopy equivalence \(g:X\to Y\), then \(g'\) is also a homotopy equivalence.
 
@@ -65,7 +65,7 @@ Therefore \(h\) is also a homotopy inverse for \(g'\), and \(g'\) is a homotopy 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Collapsing a contractible tree subcomplex of a graph to a point is a homotopy equivalence.
 
@@ -111,7 +111,7 @@ Therefore \(q\circ s\simeq\operatorname{id}_{G/T}\). Hence \(q\) and \(s\) are h
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space consisting of two circles joined by an interval is homotopy equivalent to the figure-eight \(S^1\vee S^1\).
 
@@ -122,13 +122,13 @@ Regard the joining interval as a tree subcomplex \(T\). Collapsing \(T\) identif
 \[
 G/T\cong S^1\vee S^1.
 \]
-By step <1>3, the quotient map is a homotopy equivalence.
+By step [](#s1-3){.pf-ref}, the quotient map is a homotopy equivalence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space consisting of a circle together with a diameter is homotopy equivalent to the figure-eight \(S^1\vee S^1\).
 
@@ -141,20 +141,20 @@ Take the diameter as the tree subcomplex \(T\). Collapsing \(T\) identifies its 
 \[
 G/T\cong S^1\vee S^1.
 \]
-Step <1>3 again shows that this quotient map is a homotopy equivalence.
+Step [](#s1-3){.pf-ref} again shows that this quotient map is a homotopy equivalence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The three pictured spaces are homotopy equivalent.
 
 
 ::: pf-proof
 
-The first pictured space is already the figure-eight \(S^1\vee S^1\). Step <1>4 shows that the second is homotopy equivalent to it, and step <1>5 shows the same for the third. Hence all three spaces have the same homotopy type:
+The first pictured space is already the figure-eight \(S^1\vee S^1\). Step [](#s1-4){.pf-ref} shows that the second is homotopy equivalent to it, and step [](#s1-5){.pf-ref} shows the same for the third. Hence all three spaces have the same homotopy type:
 \[
 \boxed{S^1\vee S^1.}
 \]
@@ -165,7 +165,7 @@ The first pictured space is already the figure-eight \(S^1\vee S^1\). Step <1>4 
 
 ::: pf-qed
 
-Step <1>1 answers part \(1\), step <1>2 answers part \(2\), and step <1>6 answers part \(3\).
+Step [](#s1-1){.pf-ref} answers part \(1\), step [](#s1-2){.pf-ref} answers part \(2\), and step [](#s1-6){.pf-ref} answers part \(3\).
 
 :::
 

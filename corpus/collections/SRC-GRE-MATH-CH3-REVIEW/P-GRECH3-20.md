@@ -32,7 +32,7 @@ The source prints choice (C) as the digits $4$ and $3$ followed by $\sqrt{2}$, w
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The given directional derivatives imply
 $$
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The gradient at $P$ is
 $$
@@ -84,13 +84,13 @@ $$
 
 ::: pf-proof
 
-Adding the two equations in step <1>1 gives $2f_x(P)=8$, hence $f_x(P)=4$. Subtracting them gives $2f_y(P)=4$, hence $f_y(P)=2$.
+Adding the two equations in step [](#s1-1){.pf-ref} gives $2f_x(P)=8$, hence $f_x(P)=4$. Subtracting them gives $2f_y(P)=4$, hence $f_y(P)=2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The maximum directional derivative of $f$ at $P$ is
 $$
@@ -106,7 +106,7 @@ $$
 D_{\mathbf{w}}f(P)=\nabla f(P)\cdot\mathbf{w}
 \le \|\nabla f(P)\|
 $$
-by the Cauchy--Schwarz inequality, with equality when $\mathbf{w}$ points in the direction of the gradient. By step <1>2,
+by the Cauchy--Schwarz inequality, with equality when $\mathbf{w}$ points in the direction of the gradient. By step [](#s1-2){.pf-ref},
 $$
 \|\nabla f(P)\|
 =\sqrt{4^2+2^2}
@@ -120,7 +120,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested maximum directional derivative and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested maximum directional derivative and corresponding choice.
 
 :::
 

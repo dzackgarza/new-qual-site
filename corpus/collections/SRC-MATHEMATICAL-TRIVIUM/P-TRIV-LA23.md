@@ -29,7 +29,7 @@ Find the eigenvectors of these transformations.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If every direction is stretched by the same factor $\lambda$, then the
 matrix is
@@ -51,7 +51,7 @@ $\lambda I_3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For the transformation in part (a), every nonzero vector is an
 eigenvector with eigenvalue $\lambda$.
@@ -59,7 +59,7 @@ eigenvector with eigenvalue $\lambda$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 Sv=\lambda v
 $$
@@ -69,7 +69,7 @@ for every vector $v$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If the three basis directions are stretched by factors
 $$
@@ -102,7 +102,7 @@ The $i$th column of the matrix of $S$ is therefore $\lambda_i e_i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In part (b), each basis vector $e_i$ is an eigenvector with eigenvalue
 $\lambda_i$.
@@ -121,7 +121,7 @@ the full eigenspace for that common eigenvalue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -149,7 +149,7 @@ $n$, and the second lies in $n^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Stretching only the direction $n$ by a factor $\lambda$ while fixing
 all perpendicular directions gives
@@ -171,7 +171,7 @@ $n^\perp$ is unchanged.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the matrix for part (c) is
 $$
@@ -185,7 +185,7 @@ Since
 $$
 nn^Tv=(n\cdot v)n,
 $$
-step <1>6 becomes
+step [](#s1-6){.pf-ref} becomes
 $$
 Sv
 =
@@ -196,7 +196,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Explicitly,
 $$
@@ -213,13 +213,13 @@ $$
 
 ::: pf-proof
 
-Expand the outer product $nn^T$ in step <1>7.
+Expand the outer product $nn^T$ in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 In part (c), $n$ is an eigenvector with eigenvalue $\lambda$.
 
@@ -239,7 +239,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Every nonzero vector in $n^\perp$ is an eigenvector with eigenvalue
 $1$.
@@ -251,7 +251,7 @@ If $n\cdot v=0$, then
 $$
 nn^Tv=0.
 $$
-Hence step <1>7 gives
+Hence step [](#s1-7){.pf-ref} gives
 $$
 Sv=v.
 $$
@@ -262,8 +262,8 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>2 solve part (a), steps <1>3--<1>4 solve part (b), and steps
-<1>5--<1>10 solve part (c) and identify all eigendirections.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} solve part (a), steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} solve part (b), and steps
+[](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} solve part (c) and identify all eigendirections.
 
 :::
 

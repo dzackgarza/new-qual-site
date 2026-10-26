@@ -60,7 +60,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The linear approximation to the change in $y$ is
 $$
@@ -89,7 +89,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested approximation and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested approximation and corresponding choice.
 
 :::
 

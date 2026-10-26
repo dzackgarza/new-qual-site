@@ -25,7 +25,7 @@ a\in A.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -67,7 +67,7 @@ Each point \(b\in B\) belongs to its chosen neighborhood \(V_{a,b}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By compactness of \(B\), choose
 \[
@@ -115,7 +115,7 @@ These are finite intersections and finite unions of open sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set \(U_a\) is open and contains \(a\).
 
@@ -128,20 +128,20 @@ Every \(U_{a,b_j}\) is open and contains \(a\), so their finite intersection is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set \(V_a\) is open and contains \(B\).
 
 
 ::: pf-proof
 
-It is a finite union of open sets, and containment of \(B\) follows from step <1>3.
+It is a finite union of open sets, and containment of \(B\) follows from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -168,13 +168,13 @@ But
 \[
 U_{a,b_j}\cap V_{a,b_j}=\varnothing
 \]
-by step <1>1, contradiction.
+by step [](#s1-1){.pf-ref}, contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The family
 \[
@@ -185,13 +185,13 @@ is an open cover of \(A\).
 
 ::: pf-proof
 
-Each \(a\in A\) lies in its corresponding open set \(U_a\) by step <1>5.
+Each \(a\in A\) lies in its corresponding open set \(U_a\) by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 By compactness of \(A\), choose
 \[
@@ -207,13 +207,13 @@ U_{a_1}\cup\cdots\cup U_{a_r}}.
 
 ::: pf-proof
 
-Apply compactness of \(A\) to the open cover from step <1>8.
+Apply compactness of \(A\) to the open cover from step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Define
 \[
@@ -237,33 +237,33 @@ These are respectively a finite union and a finite intersection of open sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The set \(U\) is open and contains \(A\).
 
 
 ::: pf-proof
 
-Openness follows from the union in step <1>10, and containment follows from step <1>9.
+Openness follows from the union in step [](#s1-10){.pf-ref}, and containment follows from step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The set \(V\) is open and contains \(B\).
 
 
 ::: pf-proof
 
-Every \(V_{a_i}\) is open and contains \(B\) by step <1>6. Therefore their finite intersection is open and still contains \(B\).
+Every \(V_{a_i}\) is open and contains \(B\) by step [](#s1-6){.pf-ref}. Therefore their finite intersection is open and still contains \(B\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The sets \(U\) and \(V\) are disjoint:
 \[
@@ -290,13 +290,13 @@ This contradicts
 \[
 U_{a_i}\cap V_{a_i}=\varnothing
 \]
-from step <1>7.
+from step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore there exist disjoint open sets \(U,V\subseteq X\) such that
 \[
@@ -309,7 +309,7 @@ B\subseteq V}.
 
 ::: pf-proof
 
-Use steps <1>11--<1>13.
+Use steps [](#s1-11){.pf-ref} through [](#s1-13){.pf-ref}.
 
 :::
 
@@ -317,7 +317,7 @@ Use steps <1>11--<1>13.
 
 ::: pf-qed
 
-Step <1>14 is the required conclusion.
+Step [](#s1-14){.pf-ref} is the required conclusion.
 
 :::
 

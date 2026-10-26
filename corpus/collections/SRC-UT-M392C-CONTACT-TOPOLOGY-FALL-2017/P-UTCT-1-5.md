@@ -33,7 +33,7 @@ Assume \(\xi\) is a \(C^k\) hyperplane field.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(p\in M\), there is a neighborhood \(U\) of \(p\) and
 \(C^k\) vector fields
@@ -53,7 +53,7 @@ there is a local \(C^k\) frame for \(\xi\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After shrinking \(U\) if necessary, one can choose a \(C^k\) vector
 field \(Y\) on \(U\) such that
@@ -82,7 +82,7 @@ shrinking \(U\), they remain a frame of \(TM|_U\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -105,7 +105,7 @@ the coefficients of the dual coframe.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -131,7 +131,7 @@ This is the defining property of the dual coframe.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The form \(\alpha\) is nowhere zero on \(U\).
 
@@ -148,7 +148,7 @@ Hence \(\alpha_q\ne0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -158,7 +158,7 @@ One has
 
 ::: pf-proof
 
-By step <1>4, each \(X_i\) lies in \(\ker\alpha\), so
+By step [](#s1-4){.pf-ref}, each \(X_i\) lies in \(\ker\alpha\), so
 \[
 \xi_q
 =
@@ -174,7 +174,7 @@ equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus every \(C^k\) hyperplane field is locally the kernel of a
 nowhere-zero \(C^k\) \(1\)-form.
@@ -182,7 +182,7 @@ nowhere-zero \(C^k\) \(1\)-form.
 
 ::: pf-proof
 
-Steps <1>1--<1>6 construct such a form around an arbitrary point.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} construct such a form around an arbitrary point.
 
 :::
 
@@ -208,7 +208,7 @@ A nonzero linear functional cannot vanish on every vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Extend \(v\) to a local \(C^k\) vector field \(Y\), and shrink \(U\)
 so that
@@ -231,7 +231,7 @@ a sufficiently small neighborhood of \(p\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 After rescaling \(Y\), assume
 \[
@@ -245,7 +245,7 @@ Replace \(Y\) by
 \[
 \frac{Y}{\alpha(Y)}.
 \]
-The denominator is a nowhere-zero \(C^k\) function by step <1>9, so the
+The denominator is a nowhere-zero \(C^k\) function by step [](#s1-9){.pf-ref}, so the
 rescaled field is \(C^k\).
 
 :::
@@ -269,7 +269,7 @@ Extend the nonzero vector field \(Y\) to a local frame of the tangent bundle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Define
 \[
@@ -290,14 +290,14 @@ a \(C^k\) vector field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Each \(X_i\) lies in \(\ker\alpha\).
 
 
 ::: pf-proof
 
-Using step <1>10,
+Using step [](#s1-10){.pf-ref},
 \[
 \begin{aligned}
 \alpha(X_i)
@@ -316,7 +316,7 @@ Using step <1>10,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The vectors
 \[
@@ -331,7 +331,7 @@ Suppose
 \[
 \sum_{i=1}^{n-1}c_iX_i=0.
 \]
-Substituting step <1>12 gives
+Substituting step [](#s1-12){.pf-ref} gives
 \[
 \sum_i c_iE_i
 -
@@ -351,7 +351,7 @@ is a basis, all coefficients \(c_i\) must vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence
 \[
@@ -365,7 +365,7 @@ Hence
 
 ::: pf-proof
 
-By step <1>13, the span lies in \(\ker\alpha\). Step <1>14 shows that the
+By step [](#s1-13){.pf-ref}, the span lies in \(\ker\alpha\). Step [](#s1-14){.pf-ref} shows that the
 span has dimension \(n-1\). Since \(\alpha\) is nonzero, \(\ker\alpha\) also
 has dimension \(n-1\). Therefore the two subspaces are equal.
 
@@ -373,21 +373,21 @@ has dimension \(n-1\). Therefore the two subspaces are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Thus \(\ker\alpha\) is a \(C^k\) hyperplane field.
 
 
 ::: pf-proof
 
-Step <1>15 gives a local \(C^k\) frame for \(\ker\alpha\) around every point.
+Step [](#s1-15){.pf-ref} gives a local \(C^k\) frame for \(\ker\alpha\) around every point.
 Therefore it is a \(C^k\) rank-\((n-1)\) subbundle of \(TM\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Consequently,
 \[
@@ -400,8 +400,8 @@ Consequently,
 
 ::: pf-proof
 
-The forward implication is step <1>7, and the reverse implication is step
-<1>16.
+The forward implication is step [](#s1-7){.pf-ref}, and the reverse implication is step
+[](#s1-16){.pf-ref}.
 
 :::
 
@@ -409,7 +409,7 @@ The forward implication is step <1>7, and the reverse implication is step
 
 ::: pf-qed
 
-Step <1>17 is the required equivalence.
+Step [](#s1-17){.pf-ref} is the required equivalence.
 
 :::
 

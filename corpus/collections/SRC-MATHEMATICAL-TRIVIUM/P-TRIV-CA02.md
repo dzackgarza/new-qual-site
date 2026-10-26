@@ -25,7 +25,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Euler's formula gives
 $$
@@ -47,7 +47,7 @@ for real $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -63,7 +63,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 3e^{i\pi/4}
 =
@@ -87,7 +87,7 @@ the displayed value follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -114,7 +114,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -152,7 +152,7 @@ Multiplying by $2$ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -195,7 +195,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>5 give the Cartesian forms of all five numbers.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give the Cartesian forms of all five numbers.
 
 :::
 

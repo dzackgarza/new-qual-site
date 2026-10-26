@@ -24,7 +24,7 @@ Show that there exist $a , b , c , d \in \mathbb { C }$ with $a d - b c \neq 0 ,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The singularity of $f$ at $z_0$ is not removable.
 
@@ -41,7 +41,7 @@ By hypothesis, $f$ is bounded outside some disk centered at $z_0$. On the remain
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singularity of $f$ at $z_0$ is not essential.
 
@@ -71,13 +71,13 @@ Hence $z_0$ is a pole of $f$.
 
 ::: pf-proof
 
-An isolated singularity is removable, a pole, or essential. Steps <1>1 and <1>2 exclude the first and third possibilities, so $z_0$ is a pole.
+An isolated singularity is removable, a pole, or essential. Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} exclude the first and third possibilities, so $z_0$ is a pole.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The pole at $z_0$ has order exactly $1$.
 
@@ -99,7 +99,7 @@ The local mapping theorem for a pole of order $m$ says that every sufficiently l
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $A\ne0$ such that
 $$
@@ -110,7 +110,7 @@ extends to an entire function.
 
 ::: pf-proof
 
-By step <1>4, the Laurent expansion of $f$ at $z_0$ has principal part
+By step [](#s1-4){.pf-ref}, the Laurent expansion of $f$ at $z_0$ has principal part
 $$
 \frac{A}{z-z_0}
 $$
@@ -126,9 +126,9 @@ extends holomorphically across $z_0$. Away from $z_0$ it is already holomorphic,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The entire function $H$ from step <1>5 is bounded.
+The entire function $H$ from step [](#s1-5){.pf-ref} is bounded.
 
 
 ::: pf-proof
@@ -159,7 +159,7 @@ outside the disk. On the remaining compact disk, the entire function $H$ is boun
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exists $B\in\CC$ such that
 $$
@@ -171,17 +171,17 @@ $$
 
 ::: pf-proof
 
-By step <1>6 and Liouville's theorem, the entire function $H$ is constant:
+By step [](#s1-6){.pf-ref} and Liouville's theorem, the entire function $H$ is constant:
 $$
 H(z)\equiv B.
 $$
-Substituting the definition of $H$ from step <1>5 gives the formula.
+Substituting the definition of $H$ from step [](#s1-5){.pf-ref} gives the formula.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ has the required Möbius form
 $$
@@ -201,7 +201,7 @@ $$
 
 ::: pf-proof
 
-Rewrite step <1>7 as
+Rewrite step [](#s1-7){.pf-ref} as
 $$
 f(z)
 =
@@ -236,7 +236,7 @@ Thus the Möbius representation has nonzero determinant.
 
 ::: pf-qed
 
-Step <1>8 is exactly the required conclusion.
+Step [](#s1-8){.pf-ref} is exactly the required conclusion.
 
 :::
 

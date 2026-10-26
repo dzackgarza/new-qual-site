@@ -26,7 +26,7 @@ Your final answer should not involve complex numbers.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $|re^{i\theta}|=r<1$,
 $$
@@ -48,7 +48,7 @@ with $z=re^{i\theta}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -84,7 +84,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -99,7 +99,7 @@ $$
 
 ::: pf-proof
 
-Taking real parts in step <1>1 and using step <1>2 gives the displayed formula. The denominator is real and positive because
+Taking real parts in step [](#s1-1){.pf-ref} and using step [](#s1-2){.pf-ref} gives the displayed formula. The denominator is real and positive because
 $$
 1-2r\cos\theta+r^2=|1-re^{i\theta}|^2>0.
 $$
@@ -110,7 +110,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required real-valued expression.
+Step [](#s1-3){.pf-ref} gives the required real-valued expression.
 
 :::
 

@@ -30,7 +30,7 @@ Set $\theta=\sin x$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $0<\theta<1$, and hence $\cos\theta>0$.
 
@@ -43,7 +43,7 @@ Since $2<x<3<\pi$, the angle $x$ lies in $(0,\pi)$, so $\sin x>0$. Also $x>2>\pi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $\cos\theta=\frac{\sqrt3}{2}$.
 
@@ -56,7 +56,7 @@ $$
 =1-\frac14
 =\frac34.
 $$
-By the positivity from step <1>1,
+By the positivity from step [](#s1-1){.pf-ref},
 $$
 \cos\theta=\frac{\sqrt3}{2}.
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The requested value is
 $$
@@ -80,7 +80,7 @@ Cosine is even, so
 $$
 \cos(-\sin x)=\cos(\sin x)=\cos\theta.
 $$
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -88,7 +88,7 @@ Apply step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

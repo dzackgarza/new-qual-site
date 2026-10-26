@@ -37,7 +37,7 @@ G=\langle a,b\mid a^2=1,\ b^3=1\rangle.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -68,7 +68,7 @@ product presentation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The nonidentity elements of the two factors are
 \[
@@ -97,7 +97,7 @@ and the second has three elements
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonidentity element of \(G\) has a unique reduced form
 \[
@@ -115,14 +115,14 @@ and consecutive letters never both lie in the same factor.
 
 This is the normal form theorem for free products. Since the only
 nonidentity letters available in the \(\mathbb Z/2\) factor and
-\(\mathbb Z/3\) factor are those listed in step <1>2, the stated description
+\(\mathbb Z/3\) factor are those listed in step [](#s1-2){.pf-ref}, the stated description
 is exactly the reduced-sequence normal form.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Concretely, every reduced word alternates between \(a\) and one of
 \(b,b^2\).
@@ -137,7 +137,7 @@ letter or cancel, contradicting reducedness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The presentation complex \(X\) has one vertex, two \(1\)-cells
 \(a,b\), and two \(2\)-cells attached along
@@ -156,7 +156,7 @@ This is the standard CW complex associated to the presentation of \(G\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -181,7 +181,7 @@ subcomplexes meet only at the unique vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The Cayley complex \(Y\) has vertex set \(G\).
 
@@ -196,7 +196,7 @@ the fiber over the unique vertex is naturally identified with the group
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 From each vertex \(g\in G\), there is an \(a\)-edge
 \[
@@ -216,7 +216,7 @@ These are the lifts of the two oriented \(1\)-cells of \(X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The \(a\)-edges occur in \(2\)-cycles and the \(b\)-edges occur in
 \(3\)-cycles.
@@ -245,7 +245,7 @@ g\to gb\to gb^2\to g.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 At every vertex \(g\), attach one \(a^2\)-cell along the lifted
 \(2\)-edge \(a\)-cycle and one \(b^3\)-cell along the lifted \(3\)-edge
@@ -262,7 +262,7 @@ reading the corresponding relator from that vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 This Cayley complex \(Y\) is simply connected.
 
@@ -275,7 +275,7 @@ It is the universal covering complex of \(X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -301,7 +301,7 @@ so \(H\) has exactly two elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The quotient \(Y/H\) is the Schreier complex with vertex set
 \[
@@ -319,7 +319,7 @@ vertices are the cosets \(Hg\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 From a vertex \(Hg\), the quotient has an \(a\)-edge
 \[
@@ -341,7 +341,7 @@ These are the images of the corresponding Cayley edges in \(Y\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Attach to \(Y/H\), at every vertex \(Hg\), one \(2\)-cell along the
 closed path labeled \(a^2\) and one along the closed path labeled \(b^3\).
@@ -357,7 +357,7 @@ cells. Equivalently, this is the standard Schreier complex for the subgroup
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The distinguished vertex \(H\) has an \(a\)-loop.
 
@@ -375,7 +375,7 @@ vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 All \(b\)-orbits in the quotient graph are \(3\)-cycles.
 
@@ -391,7 +391,7 @@ nonidentity element of \(H\) has order \(2\), while \(b,b^2\) have order
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Except at the vertex \(H\), the \(a\)-orbits occur in pairs joined
 by the two oriented lifts of the \(a\)-edge.
@@ -416,9 +416,9 @@ distinguished one. Thus all remaining \(a\)-orbits have size \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
-Steps <1>13--<1>18 completely describe the quotient \(Y/H\):
+Steps [](#s1-13){.pf-ref} through [](#s1-18){.pf-ref} completely describe the quotient \(Y/H\):
 an infinite Schreier graph of \(b\)-triangles joined by \(a\)-edges, with
 one \(a\)-loop at the distinguished coset, together with the lifted
 \(a^2\)- and \(b^3\)-cells.
@@ -427,13 +427,13 @@ one \(a\)-loop at the distinguished coset, together with the lifted
 ::: pf-proof
 
 The vertex set, all \(1\)-cells, and all \(2\)-cell attaching maps have been
-specified in steps <1>13--<1>18.
+specified in steps [](#s1-13){.pf-ref} through [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 For a reduced word
 \[
@@ -459,7 +459,7 @@ where \(N_a(w)\) is the number of \(a\)-letters.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore
 \[
@@ -478,13 +478,13 @@ c^m=1
 \iff
 m\text{ is even}.
 \]
-Apply step <1>20.
+Apply step [](#s1-20){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 The subgroup \(K\) has index \(2\) and is normal.
 
@@ -500,7 +500,7 @@ G/K\cong\mathbb Z/2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 The quotient \(Y/K\) has exactly two vertices:
 \[
@@ -513,13 +513,13 @@ v_1=Ka}.
 
 ::: pf-proof
 
-Vertices are the \(K\)-cosets. Step <1>22 gives exactly two cosets.
+Vertices are the \(K\)-cosets. Step [](#s1-22){.pf-ref} gives exactly two cosets.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 Each \(b\)-edge is a loop at its vertex.
 
@@ -542,7 +542,7 @@ because \(K\) is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 The two lifted \(a\)-edges run between \(v_0\) and \(v_1\), one in
 each orientation.
@@ -566,7 +566,7 @@ There is one lifted oriented \(a\)-edge beginning at each vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 The quotient \(Y/K\) has two \(a^2\)-cells, one based at each vertex,
 and two \(b^3\)-cells, one attached to each \(b\)-loop by degree \(3\).
@@ -582,7 +582,7 @@ goes three times around the \(b\)-loop at the chosen vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 Choose one of the two \(a\)-edges as a maximal tree and collapse it.
 
@@ -596,7 +596,7 @@ maximal tree.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 After this collapse, let
 \[
@@ -618,7 +618,7 @@ the two \(b\)-edges become three loop generators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-29}
 
 The lifted \(a^2\)-cells impose the relation
 \[
@@ -637,7 +637,7 @@ killed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-30}
 
 The two \(b^3\)-cells impose
 \[
@@ -656,7 +656,7 @@ After collapsing the tree, these are the loops \(u^3\) and \(v^3\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-31}
 
 Hence
 \[
@@ -669,14 +669,14 @@ Hence
 
 ::: pf-proof
 
-The collapsed \(1\)-skeleton has generators \(x,u,v\). Step <1>29 kills
-\(x\), and step <1>30 gives the only remaining relators.
+The collapsed \(1\)-skeleton has generators \(x,u,v\). Step [](#s1-29){.pf-ref} kills
+\(x\), and step [](#s1-30){.pf-ref} gives the only remaining relators.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-32}
 
 Therefore
 \[
@@ -689,14 +689,14 @@ Therefore
 
 ::: pf-proof
 
-The presentation in step <1>31 has two independent cyclic factors of order
+The presentation in step [](#s1-31){.pf-ref} has two independent cyclic factors of order
 \(3\) and no relation mixing them, which is exactly their free product.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-33}
 
 Since \(Y\) is simply connected, this fundamental group is also
 isomorphic to \(K\):
@@ -719,7 +719,7 @@ Because \(Y\) is the universal cover,
 \[
 \pi_1(Y/K)\cong K.
 \]
-Apply step <1>32.
+Apply step [](#s1-32){.pf-ref}.
 
 :::
 
@@ -727,8 +727,8 @@ Apply step <1>32.
 
 ::: pf-qed
 
-Steps <1>1--<1>11 answer part (a), steps <1>12--<1>19 answer part (b), and
-steps <1>20--<1>33 answer part (c).
+Steps [](#s1-1){.pf-ref} through [](#s1-11){.pf-ref} answer part (a), steps [](#s1-12){.pf-ref} through [](#s1-19){.pf-ref} answer part (b), and
+steps [](#s1-20){.pf-ref} through [](#s1-33){.pf-ref} answer part (c).
 
 :::
 

@@ -30,7 +30,7 @@ Let $\mathbb C^*=\mathbb C\cup\{\infty\}$ be the Riemann sphere, let $N<\infty$,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The domain \(\Omega\) is a nondegenerate finitely connected domain of connectivity \(N\).
 
@@ -43,20 +43,20 @@ By hypothesis, \(\partial\Omega\) has exactly \(N<\infty\) connected components,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a conformal map \(h:\Omega\to D\) onto a circle domain \(D\subset\mathbb C^*\) whose boundary has exactly \(N\) nondegenerate round-circle components.
 
 
 ::: pf-proof
 
-Koebe's circle-domain theorem says that every nondegenerate finitely connected domain is conformally equivalent to a nondegenerate circle domain of the same connectivity. Applying it to step <1>1 gives a conformal map \(h:\Omega\to D\), where every component of \(\partial D\) is a round circle and there are exactly \(N\) such components.
+Koebe's circle-domain theorem says that every nondegenerate finitely connected domain is conformally equivalent to a nondegenerate circle domain of the same connectivity. Applying it to step [](#s1-1){.pf-ref} gives a conformal map \(h:\Omega\to D\), where every component of \(\partial D\) is a round circle and there are exactly \(N\) such components.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 After postcomposing \(h\) with a Möbius transformation, every component of the image boundary is an ordinary Euclidean circle contained in \(\mathbb C\).
 
@@ -69,7 +69,7 @@ Choose \(p\in D\). There is a Möbius transformation \(M\) of \(\mathbb C^*\) wi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every boundary component of \(M(D)\) is an analytic Jordan curve in the sense of the problem.
 
@@ -94,14 +94,14 @@ Thus \(C\) is an analytic Jordan curve by the definition in the statement.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map \(M\circ h\) is conformal from \(\Omega\) onto a domain bounded by \(N\) pairwise disjoint analytic Jordan curves.
 
 
 ::: pf-proof
 
-Both \(h\) and \(M\) are conformal and one-to-one, so their composition is conformal and one-to-one. By steps <1>2 and <1>3, the image has exactly \(N\) pairwise disjoint round-circle boundary components, and step <1>4 shows that each of these is an analytic Jordan curve.
+Both \(h\) and \(M\) are conformal and one-to-one, so their composition is conformal and one-to-one. By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, the image has exactly \(N\) pairwise disjoint round-circle boundary components, and step [](#s1-4){.pf-ref} shows that each of these is an analytic Jordan curve.
 
 :::
 
@@ -109,7 +109,7 @@ Both \(h\) and \(M\) are conformal and one-to-one, so their composition is confo
 
 ::: pf-qed
 
-Step <1>5 is the required conformal representation.
+Step [](#s1-5){.pf-ref} is the required conformal representation.
 
 :::
 

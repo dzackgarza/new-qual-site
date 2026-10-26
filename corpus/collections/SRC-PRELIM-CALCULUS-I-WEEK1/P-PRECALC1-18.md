@@ -22,7 +22,7 @@ h(x)=g(g(x)).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -45,7 +45,7 @@ e.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -60,13 +60,13 @@ By definition,
 \[
 h(0)=g(g(0)).
 \]
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The given limit is
 \[
@@ -80,14 +80,14 @@ h'(0)}.
 
 ::: pf-proof
 
-Step <1>2 identifies the numerator as the standard difference quotient for
+Step [](#s1-2){.pf-ref} identifies the numerator as the standard difference quotient for
 \(h\) at \(0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The derivative of \(g\) is
 \[
@@ -107,7 +107,7 @@ g(x)=e^{2x+1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -118,13 +118,13 @@ g'(0)=2e}.
 
 ::: pf-proof
 
-Substitute \(x=0\) into step <1>4.
+Substitute \(x=0\) into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Also,
 \[
@@ -135,13 +135,13 @@ g'(e)=2e^{2e+1}}.
 
 ::: pf-proof
 
-Substitute \(x=e\) into step <1>4.
+Substitute \(x=e\) into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By the chain rule,
 \[
@@ -182,13 +182,13 @@ h'(0)
 
 ::: pf-proof
 
-Use steps <1>1, <1>5, <1>6, and <1>7.
+Use steps [](#s1-1){.pf-ref}, [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Simplifying,
 \[
@@ -213,7 +213,7 @@ h'(0)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -227,7 +227,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>9.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
 
@@ -235,7 +235,7 @@ Combine steps <1>3 and <1>9.
 
 ::: pf-qed
 
-Step <1>10 is the requested limit.
+Step [](#s1-10){.pf-ref} is the requested limit.
 
 :::
 

@@ -50,7 +50,7 @@ Q\operatorname{diag}(e^{z\log\lambda_1},\dots,e^{z\log\lambda_n})Q^T.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every positive-definite real symmetric $C$, the matrix-valued map
 \[
@@ -71,7 +71,7 @@ Therefore every matrix entry is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed $x,y\in\mathbb R^n$, the function
 \[
@@ -88,7 +88,7 @@ for real $z$.
 
 ::: pf-proof
 
-By step <1>1, every entry of $B^z$ and $A^{-z}$ is entire. Matrix multiplication involves only finite sums and products, so every entry of $B^zA^{-z}$ is entire. Multiplication on the left by the fixed row vector $y^T$ and on the right by the fixed column vector $x$ preserves holomorphy.
+By step [](#s1-1){.pf-ref}, every entry of $B^z$ and $A^{-z}$ is entire. Matrix multiplication involves only finite sums and products, so every entry of $B^zA^{-z}$ is entire. Multiplication on the left by the fixed row vector $y^T$ and on the right by the fixed column vector $x$ preserves holomorphy.
 
 For real $z$, all matrices are real, so $y^T B^zA^{-z}x$ is the usual Euclidean inner product.
 
@@ -96,20 +96,20 @@ For real $z$, all matrices are real, so $y^T B^zA^{-z}x$ is the usual Euclidean 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 This proves part (a).
 
 
 ::: pf-proof
 
-Step <1>2 gives an entire function whose restriction to $0<z<1$ is the function in the problem.
+Step [](#s1-2){.pf-ref} gives an entire function whose restriction to $0<z<1$ is the function in the problem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The hypothesis
 \[
@@ -153,7 +153,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every real $t$,
 \[
@@ -177,7 +177,7 @@ all of modulus $1$. Since the diagonalizing matrix is real orthogonal and hence 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -193,7 +193,7 @@ then
 
 ::: pf-proof
 
-Write $z=it$. By Cauchy--Schwarz and step <1>5,
+Write $z=it$. By Cauchy--Schwarz and step [](#s1-5){.pf-ref},
 \[
 \begin{aligned}
 |F_{x,y}(it)|
@@ -211,7 +211,7 @@ Here $y$ is real, so $y^T$ agrees with its Hermitian transpose.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -233,7 +233,7 @@ B^{1+it}A^{-1-it}
 =
 B^{it}(BA^{-1})A^{-it}.
 \]
-By steps <1>4 and <1>5,
+By steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref},
 \[
 \|B^{it}(BA^{-1})A^{-it}\|_{\mathrm{op}}
 \le1.
@@ -249,7 +249,7 @@ Therefore Cauchy--Schwarz gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $F_{x,y}$ is bounded on the closed strip
 \[
@@ -278,7 +278,7 @@ which is bounded because $0\le\operatorname{Re}z\le1$. Hence every matrix entry,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every $0\le\theta\le1$,
 \[
@@ -290,13 +290,13 @@ For every $0\le\theta\le1$,
 
 ::: pf-proof
 
-Steps <1>6 and <1>7 give the bound on both boundary lines of the strip, and step <1>8 supplies the boundedness hypothesis. Hadamard's three-lines theorem therefore gives the same bound throughout the strip, in particular on the real segment $0\le\theta\le1$.
+Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the bound on both boundary lines of the strip, and step [](#s1-8){.pf-ref} supplies the boundedness hypothesis. Hadamard's three-lines theorem therefore gives the same bound throughout the strip, in particular on the real segment $0\le\theta\le1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every $0\le\theta\le1$ and $x\in\mathbb R^n$,
 \[
@@ -321,7 +321,7 @@ is real. Hence
 \sup_{\substack{y\in\mathbb R^n\\\|y\|=1}}
 |\langle y,v\rangle|.
 \]
-By step <1>9, every term in this supremum is at most $\|x\|$. Thus $\|v\|\le\|x\|$.
+By step [](#s1-9){.pf-ref}, every term in this supremum is at most $\|x\|$. Thus $\|v\|\le\|x\|$.
 
 :::
 
@@ -329,7 +329,7 @@ By step <1>9, every term in this supremum is at most $\|x\|$. Thus $\|v\|\le\|x\
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>10 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-10){.pf-ref} proves part (b).
 
 :::
 

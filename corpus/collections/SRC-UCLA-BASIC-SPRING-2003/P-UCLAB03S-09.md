@@ -27,7 +27,7 @@ Prove that the characteristic polynomial of $A$ has $1$ as a root.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -62,7 +62,7 @@ Because determinant is invariant under transpose,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -91,14 +91,14 @@ and the matrices are $3\times3$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix $I-A$ is singular.
 
 
 ::: pf-proof
 
-Combining steps <1>1 and <1>2 gives
+Combining steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} gives
 \[
 \det(I-A)=-\det(I-A).
 \]
@@ -112,7 +112,7 @@ Thus $I-A$ is singular.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The characteristic polynomial of $A$ has $1$ as a root.
 
@@ -123,7 +123,7 @@ If
 \[
 \chi_A(t)=\det(tI-A),
 \]
-then step <1>3 gives
+then step [](#s1-3){.pf-ref} gives
 \[
 \boxed{\chi_A(1)=\det(I-A)=0}.
 \]
@@ -135,7 +135,7 @@ Therefore $1$ is a root of $\chi_A$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

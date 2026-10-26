@@ -28,7 +28,7 @@ There is only one integer, $x$, between $100$ and $200$ such that integer pair $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Euclidean algorithm gives
 $$
@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 All integer solutions of $42x+55y=1$ have the form
 $$
@@ -74,7 +74,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives one solution $(x_0,y_0)=(-17,13)$. If $(x,y)$ is any other solution, subtracting the two equations gives
+Step [](#s1-1){.pf-ref} gives one solution $(x_0,y_0)=(-17,13)$. If $(x,y)$ is any other solution, subtracting the two equations gives
 $$
 42(x+17)+55(y-13)=0.
 $$
@@ -84,7 +84,7 @@ Hence $42(x+17)=-55(y-13)$. Since $\gcd(42,55)=1$, one has $55\mid x+17$, so $x+
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The unique solution with $100<x<200$ has
 $$
@@ -95,7 +95,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 100<-17+55t<200,
 $$
@@ -119,7 +119,7 @@ the only integer possibility is $t=3$. Then $x=-17+3\cdot55=148$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested integer.
+Step [](#s1-3){.pf-ref} gives the requested integer.
 
 :::
 

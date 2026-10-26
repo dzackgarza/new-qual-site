@@ -37,7 +37,7 @@ The correct statement for arbitrary polynomials is $M_R\ge1$, and the inequality
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every polynomial $p$,
 $$
@@ -85,9 +85,9 @@ Hence $p\equiv0$, a contradiction. Therefore $M_R>1$ when $p\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Using step <1>1, every polynomial $p$ satisfies
+Using step [](#s1-1){.pf-ref}, every polynomial $p$ satisfies
 $$
 \sup_{z\in K}\abs{p(z)-z^{-m}}
 \ge
@@ -120,9 +120,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Without using step <1>1, every polynomial $p$ still satisfies
+Without using step [](#s1-1){.pf-ref}, every polynomial $p$ still satisfies
 $$
 \sup_{z\in K}\abs{p(z)-z^{-m}}
 \ge
@@ -173,7 +173,7 @@ Since $C_R\subset K$, the same lower bound holds for the supremum over $K$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus one may take
 $$
@@ -184,7 +184,7 @@ in part (2).
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 each prove
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} each prove
 $$
 \sup_{z\in K}\abs{p(z)-z^{-m}}
 \ge
@@ -198,7 +198,7 @@ for every polynomial $p$, respectively with and without using part (1).
 
 ::: pf-qed
 
-Step <1>1 gives the corrected form of part (1) and identifies the source's strict-inequality exception. Step <1>4 proves part (2) by both requested methods.
+Step [](#s1-1){.pf-ref} gives the corrected form of part (1) and identifies the source's strict-inequality exception. Step [](#s1-4){.pf-ref} proves part (2) by both requested methods.
 
 :::
 

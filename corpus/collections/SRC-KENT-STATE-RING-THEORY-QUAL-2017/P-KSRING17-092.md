@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Write
 $$
@@ -59,7 +59,7 @@ Thus one may choose a representation in lowest terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The equation
 $$
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $d$ is irreducible in a UFD, $d$ is prime.
 
@@ -103,7 +103,7 @@ In a unique factorization domain, every irreducible element is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The relation
 $$
@@ -117,11 +117,11 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 d\mid a^2.
 $$
-By step <1>3, $d$ is prime.
+By step [](#s1-3){.pf-ref}, $d$ is prime.
 Since
 $$
 a^2=a\cdot a,
@@ -135,7 +135,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Write
 $$
@@ -157,7 +157,7 @@ Substitute
 $$
 a=dc
 $$
-into step <1>2:
+into step [](#s1-2){.pf-ref}:
 $$
 d^2c^2
 =
@@ -177,9 +177,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The relation in step <1>5 implies
+The relation in step [](#s1-5){.pf-ref} implies
 $$
 d\mid b.
 $$
@@ -187,11 +187,11 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 d\mid b^2.
 $$
-By step <1>3, $d$ is prime.
+By step [](#s1-3){.pf-ref}, $d$ is prime.
 Thus
 $$
 d\mid b.
@@ -201,14 +201,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 This contradicts the choice of $a/b$ in lowest terms.
 
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 show that the irreducible element
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} show that the irreducible element
 $$
 d
 $$
@@ -220,13 +220,13 @@ and
 $$
 b.
 $$
-This is a common irreducible factor of numerator and denominator, contradicting step <1>1.
+This is a common irreducible factor of numerator and denominator, contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore no such $x\in F$ exists:
 $$
@@ -239,7 +239,7 @@ $$
 
 ::: pf-proof
 
-The assumption that such an $x$ exists leads to the contradiction in step <1>7.
+The assumption that such an $x$ exists leads to the contradiction in step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -247,7 +247,7 @@ The assumption that such an $x$ exists leads to the contradiction in step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

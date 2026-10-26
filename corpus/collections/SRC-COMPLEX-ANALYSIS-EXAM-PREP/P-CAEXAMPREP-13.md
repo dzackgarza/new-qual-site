@@ -33,7 +33,7 @@ so \(\theta=\operatorname{Arg}z\) is the branch of the argument on the upper hal
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -59,7 +59,7 @@ Hence \(\Delta T=0\) throughout \(A\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The prescribed temperatures on the diameter are attained:
 \[
@@ -80,14 +80,14 @@ T\to\frac{10}{\pi}\pi=10.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The circular boundary \(|z|=1\), \(\operatorname{Im}z>0\), is insulated.
 
 
 ::: pf-proof
 
-On the circular arc the outward unit normal is the radial direction. Since \(T_r=0\) by step <1>1,
+On the circular arc the outward unit normal is the radial direction. Since \(T_r=0\) by step [](#s1-1){.pf-ref},
 \[
 \frac{\partial T}{\partial n}=\frac{\partial T}{\partial r}=0
 \]
@@ -97,7 +97,7 @@ there. Thus the normal heat flux vanishes, which is exactly the insulation condi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the temperature is
 \[
@@ -109,7 +109,7 @@ T(z)=\frac{10}{\pi}\operatorname{Arg}z,
 
 ::: pf-proof
 
-Step <1>1 gives a steady-state temperature field, step <1>2 verifies the Dirichlet data on the diameter, and step <1>3 verifies the Neumann condition on the insulated circular arc.
+Step [](#s1-1){.pf-ref} gives a steady-state temperature field, step [](#s1-2){.pf-ref} verifies the Dirichlet data on the diameter, and step [](#s1-3){.pf-ref} verifies the Neumann condition on the insulated circular arc.
 
 :::
 
@@ -117,7 +117,7 @@ Step <1>1 gives a steady-state temperature field, step <1>2 verifies the Dirichl
 
 ::: pf-qed
 
-Step <1>4 is the required temperature field.
+Step [](#s1-4){.pf-ref} is the required temperature field.
 
 :::
 

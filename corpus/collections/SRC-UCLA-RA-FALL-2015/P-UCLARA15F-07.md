@@ -41,7 +41,7 @@ f(1/z),&|z|\ge1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two formulas agree on the unit circle.
 
@@ -65,7 +65,7 @@ Therefore \(F\) is well defined.
 
 ::: pf-proof
 
-The only overlap of the two regions in the definition is \(|z|=1\), and step <1>1 shows equality there.
+The only overlap of the two regions in the definition is \(|z|=1\), and step [](#s1-1){.pf-ref} shows equality there.
 
 :::
 
@@ -90,13 +90,13 @@ z\mapsto f(1/z)
 \]
 is continuous there.
 
-The two continuous pieces agree on their common boundary by step <1>1, so they paste to a continuous function on \(\mathbb C\).
+The two continuous pieces agree on their common boundary by step [](#s1-1){.pf-ref}, so they paste to a continuous function on \(\mathbb C\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(F\) is analytic on
 \[
@@ -116,7 +116,7 @@ and \(f\) is analytic by hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function \(F\) is analytic on
 \[
@@ -136,7 +136,7 @@ The map \(z\mapsto1/z\) is analytic on \(\mathbb C\setminus\{0\}\), and for \(|z
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The continuous function \(F\), analytic on both sides of the unit circle, is analytic across the unit circle.
 
@@ -155,7 +155,7 @@ Morera's theorem then gives analyticity near every point of the circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -165,13 +165,13 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>4--<1>6 cover all points of \(\mathbb C\).
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} cover all points of \(\mathbb C\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since \(f\) is continuous on the compact closed unit disk, there exists \(M>0\) such that
 \[
@@ -188,7 +188,7 @@ A continuous function on a compact set is bounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every \(|z|\le1\),
 \[
@@ -202,13 +202,13 @@ On this region,
 \[
 F(z)=f(z),
 \]
-and apply step <1>8.
+and apply step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every \(|z|\ge1\),
 \[
@@ -226,13 +226,13 @@ and
 \[
 |1/z|\le1.
 \]
-Apply step <1>8.
+Apply step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence
 \[
@@ -243,13 +243,13 @@ for every \(z\in\mathbb C\).
 
 ::: pf-proof
 
-Combine steps <1>9--<1>10.
+Combine steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 By Liouville's theorem,
 \[
@@ -259,13 +259,13 @@ By Liouville's theorem,
 
 ::: pf-proof
 
-Step <1>7 says \(F\) is entire, and step <1>11 says it is bounded.
+Step [](#s1-7){.pf-ref} says \(F\) is entire, and step [](#s1-11){.pf-ref} says it is bounded.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore \(f\) is constant on the unit disk.
 
@@ -276,7 +276,7 @@ For \(|z|<1\),
 \[
 f(z)=F(z),
 \]
-and the right-hand side is constant by step <1>12.
+and the right-hand side is constant by step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -284,7 +284,7 @@ and the right-hand side is constant by step <1>12.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

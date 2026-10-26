@@ -27,7 +27,7 @@ Prove that $f$ is continuously differentiable on $[0,1]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The family of derivatives
 \[
@@ -52,7 +52,7 @@ and every $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The family
 \[
@@ -91,7 +91,7 @@ Hence the family is equicontinuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a subsequence
 \[
@@ -105,7 +105,7 @@ g:[0,1]\to\mathbb R.
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the family of derivatives is uniformly bounded and equicontinuous on the compact interval $[0,1]$.
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the family of derivatives is uniformly bounded and equicontinuous on the compact interval $[0,1]$.
 The Arzelà--Ascoli theorem therefore yields a uniformly convergent subsequence.
 Each $f_{n_j}'$ is continuous, so its uniform limit $g$ is continuous.
 
@@ -113,7 +113,7 @@ Each $f_{n_j}'$ is continuous, so its uniform limit $g$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -141,7 +141,7 @@ and passing to the subsequence gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $j$ and every
 \[
@@ -174,7 +174,7 @@ The fundamental theorem of calculus gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 \[
@@ -190,7 +190,7 @@ one has
 
 ::: pf-proof
 
-Uniform convergence from step <1>3 gives
+Uniform convergence from step [](#s1-3){.pf-ref} gives
 \[
 \|f_{n_j}'-g\|_\infty\to0.
 \]
@@ -219,7 +219,7 @@ x\,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every
 \[
@@ -243,7 +243,7 @@ Take the limit
 \[
 j\to\infty
 \]
-in the identity from step <1>5.
+in the identity from step [](#s1-5){.pf-ref}.
 The left side converges to
 \[
 f(x)
@@ -253,15 +253,15 @@ The first term on the right converges to
 \[
 f(0)
 \]
-by step <1>4.
-The integral term converges by step <1>6.
+by step [](#s1-4){.pf-ref}.
+The integral term converges by step [](#s1-6){.pf-ref}.
 Thus the displayed identity follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ is continuously differentiable and
 \[
@@ -271,8 +271,8 @@ The function $f$ is continuously differentiable and
 
 ::: pf-proof
 
-The function $g$ is continuous by step <1>3.
-By step <1>7,
+The function $g$ is continuous by step [](#s1-3){.pf-ref}.
+By step [](#s1-7){.pf-ref},
 \[
 f(x)
 =
@@ -304,7 +304,7 @@ f\in C^1([0,1]).
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

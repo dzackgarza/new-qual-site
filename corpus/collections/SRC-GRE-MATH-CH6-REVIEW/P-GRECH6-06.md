@@ -28,7 +28,7 @@ How many generators does the group $(\ZZ_{24}, +)$ have?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 An element $\overline{k}\in\ZZ_{24}$ generates $(\ZZ_{24},+)$ exactly when $\gcd(k,24)=1$.
 
@@ -45,7 +45,7 @@ Thus $\overline{k}$ has order $24$, and hence generates the group, exactly when 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue classes relatively prime to $24$ are represented by
 $$
@@ -61,7 +61,7 @@ Since $24=2^3\cdot3$, an integer is relatively prime to $24$ exactly when it is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore $(\ZZ_{24},+)$ has
 $$
@@ -72,7 +72,7 @@ generators, so the answer is (C).
 
 ::: pf-proof
 
-By step <1>1, the generators are exactly the residue classes described in step <1>2, of which there are eight.
+By step [](#s1-1){.pf-ref}, the generators are exactly the residue classes described in step [](#s1-2){.pf-ref}, of which there are eight.
 
 :::
 
@@ -80,7 +80,7 @@ By step <1>1, the generators are exactly the residue classes described in step <
 
 ::: pf-qed
 
-Step <1>3 gives the requested number of generators.
+Step [](#s1-3){.pf-ref} gives the requested number of generators.
 
 :::
 

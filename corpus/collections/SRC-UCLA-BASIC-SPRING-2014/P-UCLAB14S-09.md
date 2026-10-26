@@ -27,7 +27,7 @@ Is the minimizing $C^1$ function unique on $[0,1]$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every admissible $f$,
 \[
@@ -47,7 +47,7 @@ The endpoint conditions make the left side equal to $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Cauchy--Schwarz gives
 \[
@@ -64,13 +64,13 @@ Apply Cauchy--Schwarz to $f'$ and the constant function $1$:
 \left(\int_0^1|f'(x)|^2\,dx\right)
 \left(\int_0^1 1^2\,dx\right).
 \]
-The first factor on the left is $1$ by step <1>1, and the final integral is $1$.
+The first factor on the left is $1$ by step [](#s1-1){.pf-ref}, and the final integral is $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 \[
@@ -90,14 +90,14 @@ The function is $C^1(\mathbb R)$, satisfies $f_0(0)=0$ and $f_0(1)=1$, and has d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the minimum energy is $1$, attained by $f_0(x)=x$.
 
 
 ::: pf-proof
 
-Step <1>2 gives the lower bound $1$ for every admissible function, and step <1>3 exhibits an admissible function attaining it.
+Step [](#s1-2){.pf-ref} gives the lower bound $1$ for every admissible function, and step [](#s1-3){.pf-ref} exhibits an admissible function attaining it.
 
 :::
 
@@ -105,12 +105,12 @@ Step <1>2 gives the lower bound $1$ for every admissible function, and step <1>3
 
 ::: pf-step
 
-If an admissible $f$ is a minimizer, then equality holds in the Cauchy--Schwarz inequality of step <1>2.
+If an admissible $f$ is a minimizer, then equality holds in the Cauchy--Schwarz inequality of step [](#s1-2){.pf-ref}.
 
 
 ::: pf-proof
 
-By step <1>4, a minimizer has energy exactly $1$. Thus the inequality in step <1>2 is an equality.
+By step [](#s1-4){.pf-ref}, a minimizer has energy exactly $1$. Thus the inequality in step [](#s1-2){.pf-ref} is an equality.
 
 :::
 
@@ -129,7 +129,7 @@ Equality in Cauchy--Schwarz for the functions $f'$ and $1$ occurs exactly when t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The endpoint conditions force this constant to be $1$ and hence
 \[
@@ -140,7 +140,7 @@ f(x)=x
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 1=\int_0^1c\,dx=c.
 \]
@@ -150,7 +150,7 @@ Thus $f'=1$ on $[0,1]$. Since $f(0)=0$, integration gives $f(x)=x$ there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently the minimizing function is unique on $[0,1]$:
 \[
@@ -160,7 +160,7 @@ Consequently the minimizing function is unique on $[0,1]$:
 
 ::: pf-proof
 
-Every minimizer must equal $x$ on $[0,1]$ by step <1>7, while step <1>3 shows this function is a minimizer.
+Every minimizer must equal $x$ on $[0,1]$ by step [](#s1-7){.pf-ref}, while step [](#s1-3){.pf-ref} shows this function is a minimizer.
 
 :::
 
@@ -173,7 +173,7 @@ The extension outside $[0,1]$ is not unique.
 
 ::: pf-proof
 
-The functional and endpoint constraints depend only on the restriction to $[0,1]$. Any $C^1$ extension of the function $x$ from $[0,1]$ to all of $\mathbb R$ remains a minimizer. The question asks uniqueness on $[0,1]$, where step <1>8 proves uniqueness.
+The functional and endpoint constraints depend only on the restriction to $[0,1]$. Any $C^1$ extension of the function $x$ from $[0,1]$ to all of $\mathbb R$ remains a minimizer. The question asks uniqueness on $[0,1]$, where step [](#s1-8){.pf-ref} proves uniqueness.
 
 :::
 
@@ -181,7 +181,7 @@ The functional and endpoint constraints depend only on the restriction to $[0,1]
 
 ::: pf-qed
 
-Steps <1>4 and <1>8 give the minimum and the requested uniqueness statement.
+Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} give the minimum and the requested uniqueness statement.
 
 :::
 

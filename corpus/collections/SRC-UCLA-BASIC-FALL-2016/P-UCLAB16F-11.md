@@ -36,7 +36,7 @@ The proof establishes (b) and (d).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The metric satisfies the strong triangle inequality
 \[
@@ -103,7 +103,7 @@ the strong triangle inequality follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every open ball in $(X,\operatorname{dist})$ is also closed.
 
@@ -138,7 +138,7 @@ If $h$ belonged to $U$, then
 \[
 \operatorname{dist}(f,h)<\rho.
 \]
-The strong triangle inequality from step <1>1 would give
+The strong triangle inequality from step [](#s1-1){.pf-ref} would give
 \[
 \operatorname{dist}(f,g)
 \le
@@ -165,7 +165,7 @@ So the complement of $U$ is open, and $U$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space $X$ is not connected.
 
@@ -181,7 +181,7 @@ The ball
 U=B(f_0,1/2)
 \]
 is nonempty because it contains $f_0$.
-It is both open and closed by step <1>2.
+It is both open and closed by step [](#s1-2){.pf-ref}.
 
 It is proper.
 Indeed, define
@@ -217,7 +217,7 @@ This proves (b).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define, for $0<t\le1$,
 \[
@@ -302,7 +302,7 @@ The two formulas agree at
 t=1/n,
 \]
 so $f_n$ is continuous.
-By step <1>4, its values lie in $[0,1]$.
+By step [](#s1-4){.pf-ref}, its values lie in $[0,1]$.
 Also
 \[
 f_n(1)=h(1)=0.
@@ -313,7 +313,7 @@ Thus $f_n\in X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $m\ge n$, then
 \[
@@ -348,7 +348,7 @@ so the defining infimum of the distance is at most $1/n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The sequence $(f_n)$ is Cauchy in $(X,\operatorname{dist})$.
 
@@ -365,7 +365,7 @@ For
 m,n\ge N,
 \]
 assume without loss of generality that $m\ge n$.
-Then step <1>6 gives
+Then step [](#s1-6){.pf-ref} gives
 \[
 \operatorname{dist}(f_m,f_n)
 \le
@@ -380,7 +380,7 @@ Then step <1>6 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $(f_n)$ converged in $X$ to some $f$, then
 \[
@@ -442,7 +442,7 @@ f(t)=h(t).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The Cauchy sequence $(f_n)$ has no limit in $X$.
 
@@ -453,7 +453,7 @@ If it converged to some
 \[
 f\in X,
 \]
-step <1>8 would give
+step [](#s1-8){.pf-ref} would give
 \[
 f(t)=h(t)
 \]
@@ -463,21 +463,21 @@ Since $f$ is continuous on $[0,1]$, the limit
 \lim_{t\downarrow0}f(t)
 \]
 would exist and equal $f(0)$.
-But step <1>4 says $h(t)$ has no limit as $t\downarrow0$.
+But step [](#s1-4){.pf-ref} says $h(t)$ has no limit as $t\downarrow0$.
 This is a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore $(X,\operatorname{dist})$ is not complete.
 
 
 ::: pf-proof
 
-Step <1>7 gives a Cauchy sequence in $X$, and step <1>9 shows that it does not converge to any point of $X$.
+Step [](#s1-7){.pf-ref} gives a Cauchy sequence in $X$, and step [](#s1-9){.pf-ref} shows that it does not converge to any point of $X$.
 This proves (d).
 
 :::
@@ -486,7 +486,7 @@ This proves (d).
 
 ::: pf-qed
 
-Step <1>3 proves (b), and step <1>10 proves (d), as requested.
+Step [](#s1-3){.pf-ref} proves (b), and step [](#s1-10){.pf-ref} proves (d), as requested.
 
 :::
 

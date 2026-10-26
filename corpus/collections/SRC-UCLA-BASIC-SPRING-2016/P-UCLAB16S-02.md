@@ -76,7 +76,7 @@ These are the standard upper and lower Darboux sums.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is Riemann integrable on $[a,b]$ if
 \[
@@ -129,7 +129,7 @@ For example, one may take
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists $N$ such that
 \[
@@ -149,7 +149,7 @@ This is the definition of convergence of the sequence $(x_n)$ to $\ell$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The finitely many points
 \[
@@ -211,12 +211,12 @@ lies in $\mathcal U$, and the total length of these finitely many intervals is l
 
 ::: pf-proof
 
-By step <1>4, every tail point
+By step [](#s1-4){.pf-ref}, every tail point
 \[
 x_n,\quad n\ge N,
 \]
 lies in $J$.
-The earlier points lie in the intervals from step <1>5.
+The earlier points lie in the intervals from step [](#s1-5){.pf-ref}.
 
 The interval $J$ has length at most
 \[
@@ -232,7 +232,7 @@ Thus the total is less than $\varepsilon$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Choose a partition $P$ containing all endpoints of the finitely many intervals occurring in $\mathcal U$.
 Then every partition subinterval that meets
@@ -252,7 +252,7 @@ Thus every cell that contains an exceptional point lies inside the union $\mathc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If a partition subinterval contains no point $x_n$, then
 \[
@@ -276,7 +276,7 @@ Thus $f$ is identically $1$ on any such subinterval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If a partition subinterval contains at least one point $x_n$, then
 \[
@@ -298,9 +298,9 @@ Therefore every oscillation is at most $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-For the partition $P$ from step <1>7,
+For the partition $P$ from step [](#s1-7){.pf-ref},
 \[
 U(f,P)-L(f,P)
 <
@@ -310,12 +310,12 @@ U(f,P)-L(f,P)
 
 ::: pf-proof
 
-By step <1>8, cells containing no exceptional point contribute zero to
+By step [](#s1-8){.pf-ref}, cells containing no exceptional point contribute zero to
 \[
 U-L.
 \]
-By step <1>9, each remaining cell contributes at most its length.
-By step <1>7, all such cells lie in $\mathcal U$.
+By step [](#s1-9){.pf-ref}, each remaining cell contributes at most its length.
+By step [](#s1-7){.pf-ref}, all such cells lie in $\mathcal U$.
 Hence
 \[
 U(f,P)-L(f,P)
@@ -329,7 +329,7 @@ U(f,P)-L(f,P)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore $f$ is Riemann integrable on $[a,b]$.
 
@@ -340,8 +340,8 @@ The function is bounded, since
 \[
 0\le f\le1.
 \]
-For every $\varepsilon>0$, step <1>10 constructs a partition with upper-minus-lower sum less than $\varepsilon$.
-Apply the criterion from step <1>2.
+For every $\varepsilon>0$, step [](#s1-10){.pf-ref} constructs a partition with upper-minus-lower sum less than $\varepsilon$.
+Apply the criterion from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -349,7 +349,7 @@ Apply the criterion from step <1>2.
 
 ::: pf-qed
 
-Step <1>2 gives the definition requested in part 1, and step <1>11 proves part 2.
+Step [](#s1-2){.pf-ref} gives the definition requested in part 1, and step [](#s1-11){.pf-ref} proves part 2.
 
 :::
 

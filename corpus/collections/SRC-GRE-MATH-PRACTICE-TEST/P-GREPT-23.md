@@ -27,7 +27,7 @@ Determine the slope of the curve $y = x^{\pi} - \pi^{x}$ at the point $(\pi, 0)$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative of the curve is
 $$
@@ -51,7 +51,7 @@ Subtracting gives the displayed derivative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $x=\pi$, the slope is
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-Substituting $x=\pi$ into step <1>1 gives
+Substituting $x=\pi$ into step [](#s1-1){.pf-ref} gives
 $$
 y'(\pi)
 =\pi\pi^{\pi-1}-\pi^\pi\log\pi
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the requested slope is
 $$
@@ -84,7 +84,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Step <1>2 evaluates the derivative at the specified point.
+Step [](#s1-2){.pf-ref} evaluates the derivative at the specified point.
 
 :::
 
@@ -92,7 +92,7 @@ Step <1>2 evaluates the derivative at the specified point.
 
 ::: pf-qed
 
-Step <1>3 gives the required slope.
+Step [](#s1-3){.pf-ref} gives the required slope.
 
 :::
 

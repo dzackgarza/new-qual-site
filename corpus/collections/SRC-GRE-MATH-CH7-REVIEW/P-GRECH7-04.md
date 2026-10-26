@@ -37,7 +37,7 @@ The source shows the undirected graph in a figure that is not reproduced here.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 After deleting the edge $DE$, the remaining edge set is
 $$
@@ -53,46 +53,46 @@ The source figure has the five edges $AB$, $BC$, $BD$, $BE$, and $DE$. Deleting 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement I is false: vertex $D$ is odd.
 
 
 ::: pf-proof
 
-By step <1>1, the only remaining edge incident to $D$ is $BD$. Thus $\deg(D)=1$, which is odd.
+By step [](#s1-1){.pf-ref}, the only remaining edge incident to $D$ is $BD$. Thus $\deg(D)=1$, which is odd.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement II is true: the resulting graph is a spanning tree of the original graph.
 
 
 ::: pf-proof
 
-The deletion removes no vertices, so the resulting graph contains all five original vertices. By step <1>1, every vertex $A,C,D,E$ is joined directly to $B$, so the graph is connected. It has five vertices and four edges; a connected graph on $n$ vertices with $n-1$ edges is a tree. Hence it is a tree containing every original vertex, that is, a spanning tree of the original graph.
+The deletion removes no vertices, so the resulting graph contains all five original vertices. By step [](#s1-1){.pf-ref}, every vertex $A,C,D,E$ is joined directly to $B$, so the graph is connected. It has five vertices and four edges; a connected graph on $n$ vertices with $n-1$ edges is a tree. Hence it is a tree containing every original vertex, that is, a spanning tree of the original graph.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement III is true: the resulting graph is a forest.
 
 
 ::: pf-proof
 
-Every tree is acyclic, and every acyclic graph is a forest. Step <1>3 shows that the resulting graph is a tree.
+Every tree is acyclic, and every acyclic graph is a forest. Step [](#s1-3){.pf-ref} shows that the resulting graph is a tree.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the true statements are
 $$
@@ -103,7 +103,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 rules out I, while steps <1>3 and <1>4 establish II and III.
+Step [](#s1-2){.pf-ref} rules out I, while steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} establish II and III.
 
 :::
 
@@ -111,7 +111,7 @@ Step <1>2 rules out I, while steps <1>3 and <1>4 establish II and III.
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

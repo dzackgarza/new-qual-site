@@ -52,7 +52,7 @@ This is the column-wise form of matrix addition and scalar multiplication.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By multilinearity of the determinant,
 $$
@@ -87,7 +87,7 @@ at least two factors of $\epsilon$ and is therefore $O(\epsilon^2)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each $j$,
 $$
@@ -106,7 +106,7 @@ $b_j$, namely $b_{jj}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -120,13 +120,13 @@ $$
 
 ::: pf-proof
 
-Apply step <1>3 and the definition of trace.
+Apply step [](#s1-3){.pf-ref} and the definition of trace.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the first-order expansion is
 $$
@@ -144,7 +144,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>4 into step <1>2.
+Substitute step [](#s1-4){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -152,7 +152,7 @@ Substitute step <1>4 into step <1>2.
 
 ::: pf-qed
 
-Step <1>5 is the required first-order expansion.
+Step [](#s1-5){.pf-ref} is the required first-order expansion.
 
 :::
 

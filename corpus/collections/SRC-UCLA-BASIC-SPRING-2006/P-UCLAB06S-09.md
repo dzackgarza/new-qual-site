@@ -25,7 +25,7 @@ Let $S$ be a real $n\times n$ symmetric matrix, i.e. ${}^tS=S$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -87,7 +87,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every real symmetric matrix has a nonzero real eigenvector.
 
@@ -95,7 +95,7 @@ Every real symmetric matrix has a nonzero real eigenvector.
 ::: pf-proof
 
 The characteristic polynomial of $S$ has a complex root by the fundamental theorem of algebra.
-By step <1>1, every eigenvalue is real.
+By step [](#s1-1){.pf-ref}, every eigenvalue is real.
 Choose
 \[
 \lambda\in\mathbb R
@@ -121,7 +121,7 @@ Thus there is a nonzero real eigenvector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -167,7 +167,7 @@ Sw\in v^\perp.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The restriction
 \[
@@ -178,7 +178,7 @@ is symmetric.
 
 ::: pf-proof
 
-By step <1>3, the restriction is well-defined.
+By step [](#s1-3){.pf-ref}, the restriction is well-defined.
 For
 \[
 w_1,w_2\in v^\perp,
@@ -196,7 +196,7 @@ Thus the restricted operator is symmetric on the inner-product space $v^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Spectral Theorem: every real symmetric matrix has an orthonormal basis of real eigenvectors.
 
@@ -218,7 +218,7 @@ Assume the result in dimension
 n-1
 \]
 and let $S$ be an $n\times n$ real symmetric matrix.
-By step <1>2, choose a nonzero real eigenvector $v_1$ and normalize it so that
+By step [](#s1-2){.pf-ref}, choose a nonzero real eigenvector $v_1$ and normalize it so that
 \[
 \|v_1\|=1.
 \]
@@ -227,7 +227,7 @@ Then
 v_1^\perp
 \]
 has dimension $n-1$.
-By steps <1>3--<1>4, it is invariant under $S$ and the restriction of $S$ to it is symmetric.
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, it is invariant under $S$ and the restriction of $S$ to it is symmetric.
 
 By the induction hypothesis, there is an orthonormal basis
 \[
@@ -244,7 +244,7 @@ is an orthonormal basis of $\mathbb R^n$ consisting of eigenvectors of $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Equivalently, there exists an orthogonal matrix $Q$ and a real diagonal matrix $D$ such that
 \[
@@ -254,7 +254,7 @@ Equivalently, there exists an orthogonal matrix $Q$ and a real diagonal matrix $
 
 ::: pf-proof
 
-Let the columns of $Q$ be the orthonormal eigenbasis from step <1>5.
+Let the columns of $Q$ be the orthonormal eigenbasis from step [](#s1-5){.pf-ref}.
 Then
 \[
 Q^{-1}=Q^T.
@@ -284,8 +284,8 @@ Q^TSQ
 
 ::: pf-qed
 
-Step <1>1 proves part (A).
-Steps <1>2--<1>6 state and prove the spectral theorem requested in part (B).
+Step [](#s1-1){.pf-ref} proves part (A).
+Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} state and prove the spectral theorem requested in part (B).
 
 :::
 

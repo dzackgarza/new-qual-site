@@ -33,7 +33,7 @@ Hint: represent $f(z)$ as a path integral along a convenient path.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative $f'$ maps $D$ into the unit disk and satisfies
 $$
@@ -53,7 +53,7 @@ for $z\in D$, together with $f'(0)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $w\in D$,
 $$
@@ -63,7 +63,7 @@ $$
 
 ::: pf-proof
 
-The function $f'$ is holomorphic on $D$, maps $D$ into itself by step <1>1, and vanishes at $0$. Schwarz's lemma therefore gives
+The function $f'$ is holomorphic on $D$, maps $D$ into itself by step [](#s1-1){.pf-ref}, and vanishes at $0$. Schwarz's lemma therefore gives
 $$
 |f'(w)|\le|w|.
 $$
@@ -72,7 +72,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $z\in D$,
 $$
@@ -98,7 +98,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -109,7 +109,7 @@ for every $z\in D$.
 
 ::: pf-proof
 
-By steps <1>2 and <1>3,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 |f(z)|
@@ -125,7 +125,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required estimate.
+Step [](#s1-4){.pf-ref} is the required estimate.
 
 :::
 

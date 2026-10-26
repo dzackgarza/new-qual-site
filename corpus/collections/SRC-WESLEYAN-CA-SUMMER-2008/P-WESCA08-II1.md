@@ -62,7 +62,7 @@ Factor \(2i\) out of \(w+2i\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For \(|u|<1\),
 \[
@@ -118,7 +118,7 @@ Substitute
 \[
 u=\frac{w}{2i}
 \]
-into step <1>2 and use
+into step [](#s1-2){.pf-ref} and use
 \[
 (2i)^2=-4.
 \]
@@ -127,7 +127,7 @@ into step <1>2 and use
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Multiplying by \(w^{-2}\),
 \[
@@ -152,7 +152,7 @@ f(z)=w^{-2}(w+2i)^{-2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Equivalently,
 \[
@@ -170,13 +170,13 @@ f(z)
 
 ::: pf-proof
 
-Expand the first few terms of the series in step <1>4.
+Expand the first few terms of the series in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 This Laurent series converges exactly on
 \[
@@ -225,7 +225,7 @@ Factor \(w\) out of \(w+2i\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 \[
@@ -244,7 +244,7 @@ then
 
 ::: pf-proof
 
-Apply step <1>2 with
+Apply step [](#s1-2){.pf-ref} with
 \[
 u=\frac{2i}{w}.
 \]
@@ -253,7 +253,7 @@ u=\frac{2i}{w}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -268,7 +268,7 @@ f(z)
 
 ::: pf-proof
 
-Multiply step <1>8 by the additional factor \(w^{-2}\) from
+Multiply step [](#s1-8){.pf-ref} by the additional factor \(w^{-2}\) from
 \[
 f(z)=w^{-2}(w+2i)^{-2}.
 \]
@@ -277,7 +277,7 @@ f(z)=w^{-2}(w+2i)^{-2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The first terms are
 \[
@@ -298,13 +298,13 @@ Use
 \[
 n=0,1,2,3
 \]
-in step <1>9.
+in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The exterior Laurent series converges exactly on
 \[
@@ -332,7 +332,7 @@ the maximal exterior annulus.
 ::: pf-step
 
 Thus the complete Laurent expansions centered at \(i\) are the series
-in steps <1>4 and <1>9 on the two maximal annuli separated by
+in steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} on the two maximal annuli separated by
 \[
 |z-i|=2.
 \]
@@ -355,8 +355,8 @@ exactly the maximal Laurent annuli.
 
 ::: pf-qed
 
-Steps <1>4--<1>6 give the local Laurent expansion and its region, while
-steps <1>9--<1>11 give the exterior expansion and its region.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the local Laurent expansion and its region, while
+steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} give the exterior expansion and its region.
 
 :::
 

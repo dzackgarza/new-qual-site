@@ -29,7 +29,7 @@ Be careful to give a complete proof.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $N\ge0$ and every $x\in[0,1]$,
 \[
@@ -72,9 +72,9 @@ r^{N+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Integrating step <1>1 from $0$ to $1$ gives
+Integrating step [](#s1-1){.pf-ref} from $0$ to $1$ gives
 \[
 \int_0^1\frac{dx}{1+x^2}
 =
@@ -107,7 +107,7 @@ The final term is exactly the stated remainder.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The remainder satisfies
 \[
@@ -152,7 +152,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus
 \[
@@ -162,7 +162,7 @@ R_N\to0.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 0\le|R_N|\le\frac1{2N+3},
 \]
@@ -173,7 +173,7 @@ Apply the squeeze theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -192,14 +192,14 @@ Take the limit
 \[
 N\to\infty
 \]
-in the identity from step <1>2 and use step <1>4.
+in the identity from step [](#s1-2){.pf-ref} and use step [](#s1-4){.pf-ref}.
 This argument uses only finite sums before passing to the limit, so there is no unjustified interchange of an infinite series and an integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By the definition of $\pi$ in the problem,
 \[
@@ -215,7 +215,7 @@ By the definition of $\pi$ in the problem,
 
 ::: pf-proof
 
-Multiply the identity from step <1>5 by $4$.
+Multiply the identity from step [](#s1-5){.pf-ref} by $4$.
 The left side becomes $\pi$ by definition, while the right side is
 \[
 4\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}.
@@ -227,7 +227,7 @@ The left side becomes $\pi$ by definition, while the right side is
 
 ::: pf-qed
 
-Step <1>6 is the required Gregory series for $\pi$.
+Step [](#s1-6){.pf-ref} is the required Gregory series for $\pi$.
 
 :::
 

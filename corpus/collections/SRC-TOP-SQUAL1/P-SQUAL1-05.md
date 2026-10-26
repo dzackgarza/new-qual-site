@@ -93,7 +93,7 @@ X\to\Sigma.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -178,7 +178,7 @@ The single defining relation expresses \(c_3\) uniquely as a word in \(a,b,c_1,c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus
 \[
@@ -199,7 +199,7 @@ After eliminating \(c_3\), the presentation has four generators and no relations
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently,
 \[
@@ -212,7 +212,7 @@ F_4}.
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>8.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
@@ -220,7 +220,7 @@ Combine steps <1>4 and <1>8.
 
 ::: pf-qed
 
-Step <1>9 is the required computation.
+Step [](#s1-9){.pf-ref} is the required computation.
 
 :::
 

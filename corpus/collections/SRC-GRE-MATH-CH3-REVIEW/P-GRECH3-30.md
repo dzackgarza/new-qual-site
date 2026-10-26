@@ -35,7 +35,7 @@ Determine the value of the integral:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The curve $C$ is the positively oriented boundary of the triangle with vertices
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -87,7 +87,7 @@ Their difference is therefore $3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The line integral is
 $$
@@ -98,7 +98,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By Green's theorem and the positive orientation established in step <1>1,
+By Green's theorem and the positive orientation established in step [](#s1-1){.pf-ref},
 $$
 \int_C M\,dx+N\,dy
 =
@@ -109,7 +109,7 @@ $$
 \frac{\partial M}{\partial y}
 \right)dA.
 $$
-Using step <1>2 and the area from step <1>1,
+Using step [](#s1-2){.pf-ref} and the area from step [](#s1-1){.pf-ref},
 $$
 \int_C M\,dx+N\,dy
 =3\,\operatorname{Area}(R)
@@ -123,7 +123,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested integral value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested integral value and corresponding choice.
 
 :::
 

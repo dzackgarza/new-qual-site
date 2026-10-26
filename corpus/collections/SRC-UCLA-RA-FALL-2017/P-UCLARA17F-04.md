@@ -57,7 +57,7 @@ Both integrals are linear in \(f\), so their difference is linear.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(f\in V\),
 \[
@@ -89,7 +89,7 @@ By the triangle inequality,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence \(\Lambda\) is bounded and
 \[
@@ -100,7 +100,7 @@ Hence \(\Lambda\) is bounded and
 
 ::: pf-proof
 
-Step <1>2 is exactly the operator-norm estimate.
+Step [](#s1-2){.pf-ref} is exactly the operator-norm estimate.
 
 :::
 
@@ -130,7 +130,7 @@ for all \(x\). Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -191,7 +191,7 @@ Hence
 
 ::: pf-proof
 
-Step <1>3 gives \(\|\Lambda\|\le2\). Step <1>5 gives values
+Step [](#s1-3){.pf-ref} gives \(\|\Lambda\|\le2\). Step [](#s1-5){.pf-ref} gives values
 \[
 \Lambda(f_\varepsilon)=2-\varepsilon
 \]
@@ -207,7 +207,7 @@ for every \(\varepsilon>0\). Let \(\varepsilon\downarrow0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose \(f\in B\) and
 \[
@@ -265,7 +265,7 @@ f(x)=-1
 
 ::: pf-proof
 
-Equality in the second estimate from step <1>7 gives
+Equality in the second estimate from step [](#s1-7){.pf-ref} gives
 \[
 \int_{-1}^0f(x)\,dx=-1.
 \]
@@ -286,7 +286,7 @@ almost everywhere there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Continuity then forces
 \[
@@ -307,9 +307,9 @@ A continuous function that equals a constant almost everywhere on an interval eq
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Step <1>9 is impossible at \(x=0\).
+Step [](#s1-9){.pf-ref} is impossible at \(x=0\).
 
 
 ::: pf-proof
@@ -325,7 +325,7 @@ f(0)=-1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -336,13 +336,13 @@ Therefore
 
 ::: pf-proof
 
-The assumption that some \(f\in B\) satisfies \(\Lambda(f)=2\) led to the contradiction in step <1>10.
+The assumption that some \(f\in B\) satisfies \(\Lambda(f)=2\) led to the contradiction in step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Likewise,
 \[
@@ -357,13 +357,13 @@ If \(\Lambda(f)=-2\), then
 \[
 \Lambda(-f)=2,
 \]
-and \(-f\in B\), contradicting step <1>11.
+and \(-f\in B\), contradicting step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -374,17 +374,17 @@ Hence
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 |\Lambda(f)|\le2
 \]
-on \(B\), and steps <1>11--<1>12 exclude the endpoints.
+on \(B\), and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} exclude the endpoints.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 There exists \(g\in B\) such that
 \[
@@ -403,13 +403,13 @@ Then take
 \[
 g=f_\varepsilon
 \]
-from step <1>5.
+from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Define
 \[
@@ -431,7 +431,7 @@ the denominator is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 One has
 \[
@@ -453,7 +453,7 @@ Also
 \right|
 <1
 \]
-by step <1>14. Therefore
+by step [](#s1-14){.pf-ref}. Therefore
 \[
 \|h\|_\infty
 <
@@ -464,7 +464,7 @@ by step <1>14. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 One has
 \[
@@ -489,7 +489,7 @@ t.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -500,7 +500,7 @@ Therefore
 
 ::: pf-proof
 
-The number \(t\in(-2,2)\) was arbitrary, and steps <1>14--<1>17 produce \(h\in B\) with image \(t\).
+The number \(t\in(-2,2)\) was arbitrary, and steps [](#s1-14){.pf-ref} through [](#s1-17){.pf-ref} produce \(h\in B\) with image \(t\).
 
 :::
 
@@ -517,13 +517,13 @@ Combining the two inclusions,
 
 ::: pf-proof
 
-Use steps <1>13 and <1>18.
+Use steps [](#s1-13){.pf-ref} and [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Hence \(\Lambda(B)\) is open in \(\mathbb R\).
 
@@ -538,7 +538,7 @@ The interval \((-2,2)\) is open.
 
 ::: pf-qed
 
-Step <1>20 is the required conclusion.
+Step [](#s1-20){.pf-ref} is the required conclusion.
 
 :::
 

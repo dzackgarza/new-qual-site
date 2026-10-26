@@ -22,7 +22,7 @@ Define what it means for $\sigma$ to be homologous to zero in $U$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The cycle $\sigma$ is homologous to zero in $U$ if
 \[
@@ -45,7 +45,7 @@ cycle is homologous to zero in the open set $U$.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition.
+Step [](#s1-1){.pf-ref} gives the requested definition.
 
 :::
 

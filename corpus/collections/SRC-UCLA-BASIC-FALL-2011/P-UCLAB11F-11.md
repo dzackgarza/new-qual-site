@@ -35,7 +35,7 @@ and that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The rank-nullity theorem states that for a linear map
 \[
@@ -100,7 +100,7 @@ Adding gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -128,7 +128,7 @@ Hence $w\in\ker S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $T$ is one-to-one,
 \[
@@ -142,7 +142,7 @@ Injectivity gives
 \[
 \ker T=\{0\}.
 \]
-Applying rank-nullity from step <1>1 to
+Applying rank-nullity from step [](#s1-1){.pf-ref} to
 \[
 T:V\to W
 \]
@@ -157,7 +157,7 @@ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $S$ is onto,
 \[
@@ -171,7 +171,7 @@ Surjectivity gives
 \[
 \operatorname{image}S=U.
 \]
-Applying rank-nullity from step <1>1 to
+Applying rank-nullity from step [](#s1-1){.pf-ref} to
 \[
 S:W\to U
 \]
@@ -187,7 +187,7 @@ Rearranging yields the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For finite-dimensional spaces with
 \[
@@ -213,13 +213,13 @@ E=\ker S,
 \qquad
 F=\operatorname{image}T,
 \]
-using step <1>2.
+using step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -233,7 +233,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>3--<1>5,
+By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 \begin{aligned}
 \dim\bigl(\ker S/\operatorname{image}T\bigr)
@@ -252,7 +252,7 @@ By steps <1>3--<1>5,
 
 ::: pf-qed
 
-Step <1>1 states and proves rank-nullity, step <1>2 proves the inclusion in part (b), and step <1>6 proves the quotient-dimension identity.
+Step [](#s1-1){.pf-ref} states and proves rank-nullity, step [](#s1-2){.pf-ref} proves the inclusion in part (b), and step [](#s1-6){.pf-ref} proves the quotient-dimension identity.
 
 :::
 

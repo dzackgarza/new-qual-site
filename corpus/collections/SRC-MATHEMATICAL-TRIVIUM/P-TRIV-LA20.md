@@ -27,7 +27,7 @@ Let $\sigma _ { i } , i = 1 , 2 , 3$ be the Pauli matrices.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Pauli matrices satisfy
 $$
@@ -44,7 +44,7 @@ matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Their cyclic products satisfy
 $$
@@ -84,7 +84,7 @@ The other two identities follow by the same direct multiplication.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Reversing the order changes the sign:
 $$
@@ -99,13 +99,13 @@ $$
 ::: pf-proof
 
 This follows by direct multiplication, or by taking the adjoint of the
-identities in step <1>2 and using $\sigma_i^\dagger=\sigma_i$.
+identities in step [](#s1-2){.pf-ref} and using $\sigma_i^\dagger=\sigma_i$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, for all $i,j\in\{1,2,3\}$,
 $$
@@ -121,14 +121,14 @@ $$
 
 ::: pf-proof
 
-If $i=j$, step <1>1 gives the identity. If $i\neq j$, steps <1>2--<1>3
+If $i=j$, step [](#s1-1){.pf-ref} gives the identity. If $i\neq j$, steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}
 give the product with the sign determined by the Levi-Civita symbol.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The commutator is
 $$
@@ -142,7 +142,7 @@ $$
 
 ::: pf-proof
 
-Subtract the formula in step <1>4 with $i,j$ interchanged. The Kronecker
+Subtract the formula in step [](#s1-4){.pf-ref} with $i,j$ interchanged. The Kronecker
 delta terms cancel, while
 $$
 \varepsilon_{jik}=-\varepsilon_{ijk}.
@@ -152,20 +152,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The anticommutator is
 $$
@@ -179,27 +179,27 @@ $$
 
 ::: pf-proof
 
-Add the formula in step <1>4 to the same formula with $i,j$ interchanged.
+Add the formula in step [](#s1-4){.pf-ref} to the same formula with $i,j$ interchanged.
 The Levi-Civita terms cancel and the two Kronecker-delta terms add.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Matrix commutators satisfy the Jacobi identity
 $$
@@ -226,7 +226,7 @@ Every monomial cancels with its opposite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -243,7 +243,7 @@ $$
 
 ::: pf-proof
 
-Apply step <1>9 with
+Apply step [](#s1-9){.pf-ref} with
 $$
 X=\sigma_i,
 \qquad
@@ -256,14 +256,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-This is step <1>10.
+This is step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -271,7 +271,7 @@ This is step <1>10.
 
 ::: pf-qed
 
-Steps <1>6, <1>8, and <1>11 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-11){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

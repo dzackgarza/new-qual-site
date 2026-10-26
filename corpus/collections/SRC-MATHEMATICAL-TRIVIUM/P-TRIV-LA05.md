@@ -32,7 +32,7 @@ Write the relations between their determinants, if
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -123,7 +123,7 @@ If $B=cA$ is also nondegenerate, then necessarily $c\neq0$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \det B
 =
@@ -137,7 +137,7 @@ Since both determinants are nonzero, $c^n\neq0$, hence $c\neq0$.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 give the requested determinant relations.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested determinant relations.
 
 :::
 

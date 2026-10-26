@@ -33,7 +33,7 @@ Put $E=\mathbb Q(\sqrt2,\sqrt3,\sqrt5)$ and $\alpha=\sqrt2+\sqrt3+\sqrt5$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The classes $[2],[3],[5]$ are independent in $\mathbb Q^\times/(\mathbb Q^\times)^2$, so $[E:\mathbb Q]=8$.
 
@@ -46,7 +46,7 @@ If $2^{e_1}3^{e_2}5^{e_3}$ with $e_i\in\{0,1\}$ were a rational square, unique f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eight monomials
 \[
@@ -58,13 +58,13 @@ form a $\mathbb Q$-basis of $E$.
 
 ::: pf-proof
 
-They span because powers of each square root reduce using $\sqrt2^2=2$, $\sqrt3^2=3$, and $\sqrt5^2=5$. There are eight spanning elements, and step <1>1 says the dimension is eight, so they form a basis.
+They span because powers of each square root reduce using $\sqrt2^2=2$, $\sqrt3^2=3$, and $\sqrt5^2=5$. There are eight spanning elements, and step [](#s1-1){.pf-ref} says the dimension is eight, so they form a basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $(b_1,b_2,b_3)\in\{\pm1\}^3$, there is a $\mathbb Q$-automorphism $\sigma_b$ of $E$ with
 \[
@@ -78,7 +78,7 @@ For every $(b_1,b_2,b_3)\in\{\pm1\}^3$, there is a $\mathbb Q$-automorphism $\si
 
 ::: pf-proof
 
-On the basis in step <1>2 define
+On the basis in step [](#s1-2){.pf-ref} define
 \[
 \sigma_b\!left((\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3}\right)
 =b_1^{e_1}b_2^{e_2}b_3^{e_3}
@@ -90,7 +90,7 @@ and extend $\mathbb Q$-linearly. This respects multiplication because it preserv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The eight images of $\alpha$ under these automorphisms are
 \[
@@ -102,15 +102,15 @@ and they are pairwise distinct.
 
 ::: pf-proof
 
-The displayed formula follows from step <1>3. If two such sums were equal, subtraction would give a nontrivial $\mathbb Q$-linear relation among $\sqrt2,\sqrt3,\sqrt5$. These are three distinct members of the basis in step <1>2, so no such relation exists.
+The displayed formula follows from step [](#s1-3){.pf-ref}. If two such sums were equal, subtraction would give a nontrivial $\mathbb Q$-linear relation among $\sqrt2,\sqrt3,\sqrt5$. These are three distinct members of the basis in step [](#s1-2){.pf-ref}, so no such relation exists.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Let $m_\alpha(T)\in\mathbb Q[T]$ be the minimal polynomial of $\alpha$. Every number in step <1>4 is a root of $m_\alpha$.
+Let $m_\alpha(T)\in\mathbb Q[T]$ be the minimal polynomial of $\alpha$. Every number in step [](#s1-4){.pf-ref} is a root of $m_\alpha$.
 
 
 ::: pf-proof
@@ -125,7 +125,7 @@ Since $m_\alpha(\alpha)=0$, applying any $\mathbb Q$-automorphism $\sigma_b$ giv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -135,13 +135,13 @@ Hence
 
 ::: pf-proof
 
-By steps <1>4--<1>5, the polynomial $m_\alpha$ has at least eight distinct roots, so its degree is at least eight.
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, the polynomial $m_\alpha$ has at least eight distinct roots, so its degree is at least eight.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since $\mathbb Q(\alpha)\subseteq E$ and $[E:\mathbb Q]=8$, one also has
 \[
@@ -160,7 +160,7 @@ This follows from the tower law applied to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -174,7 +174,7 @@ so
 
 ::: pf-proof
 
-Steps <1>6--<1>7 force equality of the degrees. The tower law then gives
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} force equality of the degrees. The tower law then gives
 \[
 [E:\mathbb Q(\alpha)]=1,
 \]
@@ -186,7 +186,7 @@ hence the two fields are equal.
 
 ::: pf-qed
 
-Step <1>3 proves part (1), and step <1>8 proves part (2).
+Step [](#s1-3){.pf-ref} proves part (1), and step [](#s1-8){.pf-ref} proves part (2).
 
 :::
 

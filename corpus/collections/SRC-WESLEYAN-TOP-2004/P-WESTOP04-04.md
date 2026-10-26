@@ -31,7 +31,7 @@ p\circ\widetilde f=f.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A covering map is a continuous map
 $$
@@ -128,7 +128,7 @@ This is exactly the definition of path-connectedness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The paths
 $$
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By uniqueness of path lifting,
 $$
@@ -178,13 +178,13 @@ $$
 
 ::: pf-proof
 
-For a covering map, a path in the base has at most one lift with a prescribed starting point. Step <1>4 gives two lifts with the same starting point, so they coincide.
+For a covering map, a path in the base has at most one lift with a prescribed starting point. Step [](#s1-4){.pf-ref} gives two lifts with the same starting point, so they coincide.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -196,7 +196,7 @@ $$
 
 ::: pf-proof
 
-Evaluate the equality from step <1>5 at
+Evaluate the equality from step [](#s1-5){.pf-ref} at
 $$
 t=1.
 $$
@@ -215,7 +215,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -232,7 +232,7 @@ The point
 $$
 y\in Y
 $$
-was arbitrary. Step <1>6 therefore proves equality at every point of $Y$.
+was arbitrary. Step [](#s1-6){.pf-ref} therefore proves equality at every point of $Y$.
 
 :::
 
@@ -240,7 +240,7 @@ was arbitrary. Step <1>6 therefore proves equality at every point of $Y$.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition, and step <1>7 proves uniqueness of a based lift.
+Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-7){.pf-ref} proves uniqueness of a based lift.
 
 :::
 

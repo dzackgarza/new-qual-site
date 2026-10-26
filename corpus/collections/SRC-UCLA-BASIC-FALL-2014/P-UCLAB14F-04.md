@@ -22,7 +22,7 @@ Problem 4. Let $f_n:[-2,2]\to[0,1]$ be a sequence of convex functions. Show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ is convex on an interval and
 \[
@@ -68,7 +68,7 @@ The second inequality follows by the same rearrangement, or equivalently by solv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $f:[-2,2]\to[0,1]$ be convex.
 If
@@ -83,7 +83,7 @@ then
 
 ::: pf-proof
 
-Apply step <1>1 to
+Apply step [](#s1-1){.pf-ref} to
 \[
 x<y<2.
 \]
@@ -110,7 +110,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the same hypotheses,
 \[
@@ -120,7 +120,7 @@ Under the same hypotheses,
 
 ::: pf-proof
 
-Apply step <1>1 to
+Apply step [](#s1-1){.pf-ref} to
 \[
 -2<x<y.
 \]
@@ -145,7 +145,7 @@ Therefore the secant slope from $x$ to $y$ is at least $-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every convex function
 \[
@@ -160,7 +160,7 @@ for all $x,y\in[-1,1]$.
 
 ::: pf-proof
 
-For $x<y$, steps <1>2--<1>3 give
+For $x<y$, steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give
 \[
 -1
 \le
@@ -178,7 +178,7 @@ The case $x>y$ follows by symmetry, and $x=y$ is trivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The family
 \[
@@ -195,7 +195,7 @@ Uniform boundedness follows from
 \]
 for all $n$ and $x$.
 
-By step <1>4, every $f_n$ is $1$-Lipschitz on $[-1,1]$.
+By step [](#s1-4){.pf-ref}, every $f_n$ is $1$-Lipschitz on $[-1,1]$.
 Thus for every $\varepsilon>0$, choosing
 \[
 \delta=\varepsilon
@@ -213,7 +213,7 @@ Hence the family is equicontinuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There is a subsequence $(f_{n_j})$ converging uniformly on $[-1,1]$.
 
@@ -221,7 +221,7 @@ There is a subsequence $(f_{n_j})$ converging uniformly on $[-1,1]$.
 ::: pf-proof
 
 The interval $[-1,1]$ is compact.
-By step <1>5, the restrictions of the functions form a uniformly bounded equicontinuous family in
+By step [](#s1-5){.pf-ref}, the restrictions of the functions form a uniformly bounded equicontinuous family in
 \[
 C([-1,1]).
 \]
@@ -233,7 +233,7 @@ The Arzelà--Ascoli theorem therefore gives a uniformly convergent subsequence.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

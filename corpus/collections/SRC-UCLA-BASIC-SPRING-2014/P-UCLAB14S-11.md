@@ -31,7 +31,7 @@ Prove both of the following:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that $F$ is not uniformly bounded. Then for every integer $n\geq1$ there exist
 \[
@@ -52,7 +52,7 @@ This is exactly the negation of the existence of a common finite bound for all v
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(f_n)$ cannot have a uniformly convergent subsequence.
 
@@ -67,7 +67,7 @@ Since the continuous function $f$ is bounded on $[0,1]$, say $\|f\|_\infty=C$, t
 \[
 \|f_{n_j}\|_\infty\leq C+1.
 \]
-But step <1>1 gives
+But step [](#s1-1){.pf-ref} gives
 \[
 \|f_{n_j}\|_\infty\geq|f_{n_j}(x_{n_j})|>n_j\to\infty,
 \]
@@ -77,20 +77,20 @@ a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore $F$ is uniformly bounded.
 
 
 ::: pf-proof
 
-The hypothesis says every sequence in $F$ has a uniformly convergent subsequence. Step <1>2 contradicts that hypothesis under the assumption of step <1>1. Hence the assumption was false.
+The hypothesis says every sequence in $F$ has a uniformly convergent subsequence. Step [](#s1-2){.pf-ref} contradicts that hypothesis under the assumption of step [](#s1-1){.pf-ref}. Hence the assumption was false.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose next that $F$ is not equicontinuous. Then there exist $\varepsilon_0>0$, functions $f_n\in F$, and points $x_n,y_n\in[0,1]$ such that
 \[
@@ -117,13 +117,13 @@ By hypothesis, $(f_n)$ has a subsequence $(f_{n_j})$ converging uniformly to som
 
 ::: pf-proof
 
-This is the assumed sequential compactness property applied to the sequence constructed in step <1>4. A uniform limit of continuous functions is continuous.
+This is the assumed sequential compactness property applied to the sequence constructed in step [](#s1-4){.pf-ref}. A uniform limit of continuous functions is continuous.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since $[0,1]$ is compact, $f$ is uniformly continuous. Hence there exists $\delta>0$ such that
 \[
@@ -141,7 +141,7 @@ This is the Heine--Cantor theorem applied to the continuous function $f$ on the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Choose $j$ sufficiently large that
 \[
@@ -159,7 +159,7 @@ Then
 
 ::: pf-proof
 
-Using step <1>6 and the triangle inequality,
+Using step [](#s1-6){.pf-ref} and the triangle inequality,
 \[
 \begin{aligned}
 |f_{n_j}(x_{n_j})-f_{n_j}(y_{n_j})|
@@ -175,27 +175,27 @@ Using step <1>6 and the triangle inequality,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Step <1>7 contradicts the construction in step <1>4. Therefore $F$ is equicontinuous.
+Step [](#s1-7){.pf-ref} contradicts the construction in step [](#s1-4){.pf-ref}. Therefore $F$ is equicontinuous.
 
 
 ::: pf-proof
 
-Step <1>4 requires the same quantity to be at least $\varepsilon_0$ for every index, including $n_j$, whereas step <1>7 makes it strictly smaller than $\varepsilon_0$.
+Step [](#s1-4){.pf-ref} requires the same quantity to be at least $\varepsilon_0$ for every index, including $n_j$, whereas step [](#s1-7){.pf-ref} makes it strictly smaller than $\varepsilon_0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus $F$ is both uniformly bounded and equicontinuous.
 
 
 ::: pf-proof
 
-Uniform boundedness is step <1>3 and equicontinuity is step <1>8.
+Uniform boundedness is step [](#s1-3){.pf-ref} and equicontinuity is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -203,7 +203,7 @@ Uniform boundedness is step <1>3 and equicontinuity is step <1>8.
 
 ::: pf-qed
 
-Step <1>9 proves both requested conclusions.
+Step [](#s1-9){.pf-ref} proves both requested conclusions.
 
 :::
 

@@ -37,7 +37,7 @@ f(2-2s),&\frac12\le s\le1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -79,9 +79,9 @@ and the second half runs back along the same segment.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The two formulas in step <1>1 agree along
+The two formulas in step [](#s1-1){.pf-ref} agree along
 \[
 s=\frac12.
 \]
@@ -118,7 +118,7 @@ Thus the two definitions coincide on the overlap.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $H$ is continuous.
 
@@ -165,7 +165,7 @@ Similarly, on $B$,
 \]
 is continuous and takes values in $I$, so $H|_B$ is continuous.
 
-By step <1>2, these two continuous maps agree on
+By step [](#s1-2){.pf-ref}, these two continuous maps agree on
 \[
 A\cap B
 =
@@ -180,7 +180,7 @@ I\times I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At
 \[
@@ -228,7 +228,7 @@ f*\overline f.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At
 \[
@@ -263,7 +263,7 @@ H(-,1)=e_{x_0}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The endpoints remain fixed throughout the homotopy:
 \[
@@ -301,7 +301,7 @@ Therefore $H$ is a path homotopy relative to the endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -314,7 +314,7 @@ rel endpoints.
 
 ::: pf-proof
 
-Steps <1>3--<1>6 show that $H$ is a continuous homotopy from
+Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} show that $H$ is a continuous homotopy from
 \[
 f*\overline f
 \]
@@ -328,7 +328,7 @@ that fixes both endpoints for all homotopy times.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -351,7 +351,7 @@ Also,
 =
 [f*\overline f].
 \]
-Apply step <1>7.
+Apply step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -359,7 +359,7 @@ Apply step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the desired identity.
+Step [](#s1-8){.pf-ref} is the desired identity.
 
 :::
 

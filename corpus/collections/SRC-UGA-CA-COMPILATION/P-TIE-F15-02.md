@@ -53,7 +53,7 @@ The source labels the first condition of part (b) "(c)"; it is condition (i) of 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For all $z,w\in\CC$,
 $$
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\abs{z}<1$ and $\abs{w}<1$, then
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-Both factors on the right-hand side of step <1>1 are positive, so
+Both factors on the right-hand side of step [](#s1-1){.pf-ref} are positive, so
 $$
 \abs{1-\overline wz}^2
 >
@@ -123,7 +123,7 @@ Dividing by $\abs{1-\overline wz}^2$ and taking square roots gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If either $\abs{z}=1$ or $\abs{w}=1$, and $\overline zw\ne1$, then
 $$
@@ -135,7 +135,7 @@ $$
 
 ::: pf-proof
 
-If either $\abs{z}=1$ or $\abs{w}=1$, the right-hand side of step <1>1 is $0$. Hence
+If either $\abs{z}=1$ or $\abs{w}=1$, the right-hand side of step [](#s1-1){.pf-ref} is $0$. Hence
 $$
 \abs{1-\overline wz}
 =
@@ -147,7 +147,7 @@ The hypothesis $\overline zw\ne1$ is equivalent, after complex conjugation, to $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix $w\in\DD$ and define
 $$
@@ -166,7 +166,7 @@ $$
 <
 1,
 $$
-so the denominator never vanishes there. Thus $F$ is holomorphic on $\DD$. Step <1>2 gives
+so the denominator never vanishes there. Thus $F$ is holomorphic on $\DD$. Step [](#s1-2){.pf-ref} gives
 $$
 \abs{F(z)}<1
 $$
@@ -176,7 +176,7 @@ for every $z\in\DD$, so $F(\DD)\subset\DD$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $F$ interchanges $0$ and $w$:
 $$
@@ -205,7 +205,7 @@ The denominator in the second expression is nonzero because $\abs{w}<1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\abs{z}=1$, then
 $$
@@ -215,13 +215,13 @@ $$
 
 ::: pf-proof
 
-Since $\abs{w}<1$, one has $\overline zw\ne1$ when $\abs{z}=1$. Step <1>3 therefore applies and gives the claim.
+Since $\abs{w}<1$, one has $\overline zw\ne1$ when $\abs{z}=1$. Step [](#s1-3){.pf-ref} therefore applies and gives the claim.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map $F$ is an involution:
 $$
@@ -274,7 +274,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The map
 $$
@@ -285,7 +285,7 @@ is bijective.
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 F\circ F
 =
@@ -299,7 +299,7 @@ Thus $F$ is its own inverse, so it is both injective and surjective.
 
 ::: pf-qed
 
-Steps <1>2 and <1>3 prove part (a). Steps <1>4--<1>8 establish conditions (i)--(iv) of part (b).
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (a). Steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} establish conditions (i)--(iv) of part (b).
 
 :::
 

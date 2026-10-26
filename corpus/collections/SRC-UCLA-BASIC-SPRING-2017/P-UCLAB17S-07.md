@@ -32,7 +32,7 @@ F(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $F$ is continuously differentiable and satisfies
 \[
@@ -62,7 +62,7 @@ F(0)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral equation is equivalent to
 \[
@@ -84,13 +84,13 @@ Substitute this into the identity
 \[
 F'(x)=xf(x)
 \]
-from step <1>1.
+from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 \[
@@ -125,13 +125,13 @@ F(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since
 \[
 |F(x)|<1,
 \]
-one may divide the differential equation in step <1>2 by
+one may divide the differential equation in step [](#s1-2){.pf-ref} by
 \[
 1-F(x)^2
 \]
@@ -145,7 +145,7 @@ x.
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 0\le F(x)\le\frac12<1.
 \]
@@ -155,7 +155,7 @@ Hence the denominator is strictly positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Integrating from $0$ to $x$ gives
 \[
@@ -179,7 +179,7 @@ is
 \[
 \operatorname{arctanh}u.
 \]
-Thus step <1>4 gives
+Thus step [](#s1-4){.pf-ref} gives
 \[
 \operatorname{arctanh}F(x)
 -
@@ -199,7 +199,7 @@ the initial term vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -217,13 +217,13 @@ Apply the inverse function
 \[
 \tanh
 \]
-to both sides of step <1>5.
+to both sides of step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Any continuous solution must therefore satisfy
 \[
@@ -244,7 +244,7 @@ The integral equation gives
 \[
 f(x)=1-F(x)^2.
 \]
-Substitute step <1>6 and use
+Substitute step [](#s1-6){.pf-ref} and use
 \[
 1-\tanh^2u
 =
@@ -289,7 +289,7 @@ preserves continuity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For
 \[
@@ -331,7 +331,7 @@ F_0(0)=\tanh0=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -345,20 +345,20 @@ F_0(x)
 
 ::: pf-proof
 
-Integrate the differential identity in step <1>9 from $0$ to $x$.
+Integrate the differential identity in step [](#s1-9){.pf-ref} from $0$ to $x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The function $f_0$ satisfies the original integral equation.
 
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 \left(
 \int_0^x t f_0(t)\,dt
@@ -387,7 +387,7 @@ Thus existence holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore there exists exactly one nonnegative continuous solution, namely
 \[
@@ -401,7 +401,7 @@ f(x)
 
 ::: pf-proof
 
-Existence is step <1>11 and uniqueness is step <1>7.
+Existence is step [](#s1-11){.pf-ref} and uniqueness is step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -409,7 +409,7 @@ Existence is step <1>11 and uniqueness is step <1>7.
 
 ::: pf-qed
 
-Step <1>12 is the required existence-and-uniqueness statement.
+Step [](#s1-12){.pf-ref} is the required existence-and-uniqueness statement.
 
 :::
 

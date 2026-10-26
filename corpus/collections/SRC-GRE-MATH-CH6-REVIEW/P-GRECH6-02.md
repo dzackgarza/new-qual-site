@@ -28,7 +28,7 @@ Let $L$ be the least common multiple of $1001$ and $10101$. What's the sum of th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The greatest common divisor of $1001$ and $10101$ is $91$.
 
@@ -50,7 +50,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Their least common multiple is
 $$
@@ -64,7 +64,7 @@ For positive integers $m,n$,
 $$
 \operatorname{lcm}(m,n)\gcd(m,n)=mn.
 $$
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 L
 =\frac{1001\cdot10101}{91}
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sum of the digits of $L$ is
 $$
@@ -87,7 +87,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-By step <1>2, $L$ has six digits, each equal to $1$. Their sum is therefore $1+1+1+1+1+1=6$.
+By step [](#s1-2){.pf-ref}, $L$ has six digits, each equal to $1$. Their sum is therefore $1+1+1+1+1+1=6$.
 
 :::
 
@@ -95,7 +95,7 @@ By step <1>2, $L$ has six digits, each equal to $1$. Their sum is therefore $1+1
 
 ::: pf-qed
 
-Step <1>3 gives the requested digit sum.
+Step [](#s1-3){.pf-ref} gives the requested digit sum.
 
 :::
 

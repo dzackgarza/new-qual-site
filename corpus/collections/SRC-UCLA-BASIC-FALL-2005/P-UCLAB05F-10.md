@@ -47,7 +47,7 @@ N=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the standard basis $e_1,\ldots,e_n$,
 \[
@@ -66,7 +66,7 @@ The $j$th column of $N$ is $e_{j-1}$ for $j\ge2$, while the first column is zero
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -78,7 +78,7 @@ N^{n-1}\ne0.
 
 ::: pf-proof
 
-By repeated application of step <1>1,
+By repeated application of step [](#s1-1){.pf-ref},
 \[
 N^ke_j=
 \begin{cases}
@@ -96,20 +96,20 @@ so $N^{n-1}\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The answer to part (a) is yes for every $n\ge2$.
 
 
 ::: pf-proof
 
-The matrix $N$ from steps <1>1--<1>2 is an explicit example.
+The matrix $N$ from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} is an explicit example.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose an $n\times n$ matrix $A$ satisfies
 \[
@@ -131,9 +131,9 @@ If $A^nv=0$ for every vector $v$, then $A^n$ would be the zero operator. This co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Under the assumptions of step <1>4, the vectors
+Under the assumptions of step [](#s1-4){.pf-ref}, the vectors
 \[
 v,Av,A^2v,\ldots,A^nv
 \]
@@ -158,13 +158,13 @@ whose exponent is at least $n+1$, so it vanishes because $A^{n+1}=0$. Hence
 \[
 c_rA^nv=0.
 \]
-By step <1>4, $A^nv\ne0$, so $c_r=0$, a contradiction. Therefore all coefficients are zero.
+By step [](#s1-4){.pf-ref}, $A^nv\ne0$, so $c_r=0$, a contradiction. Therefore all coefficients are zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 No $n\times n$ matrix can satisfy
 \[
@@ -176,20 +176,20 @@ A^{n+1}=0.
 
 ::: pf-proof
 
-If such a matrix existed, step <1>5 would produce $n+1$ linearly independent vectors in the $n$-dimensional space $\mathbb R^n$, which is impossible.
+If such a matrix existed, step [](#s1-5){.pf-ref} would produce $n+1$ linearly independent vectors in the $n$-dimensional space $\mathbb R^n$, which is impossible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The answer to part (b) is no.
 
 
 ::: pf-proof
 
-Step <1>6 rules out such a matrix even without the additional hypothesis that it be upper triangular.
+Step [](#s1-6){.pf-ref} rules out such a matrix even without the additional hypothesis that it be upper triangular.
 
 :::
 
@@ -197,7 +197,7 @@ Step <1>6 rules out such a matrix even without the additional hypothesis that it
 
 ::: pf-qed
 
-Step <1>3 answers part (a), and step <1>7 answers part (b).
+Step [](#s1-3){.pf-ref} answers part (a), and step [](#s1-7){.pf-ref} answers part (b).
 
 :::
 

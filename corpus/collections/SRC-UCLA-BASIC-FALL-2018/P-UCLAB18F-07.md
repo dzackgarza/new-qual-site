@@ -23,7 +23,7 @@ Show that there is a basis in which the matrix of $T$ is diagonal with entries c
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -91,7 +91,7 @@ Therefore the sum is direct.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The restriction of $T$ to $\operatorname{im}T$ is the identity.
 
@@ -116,7 +116,7 @@ Tw=T^2u=Tu=w.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The restriction of $T$ to $\ker T$ is zero.
 
@@ -134,7 +134,7 @@ Tw=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose a basis
 \[
@@ -154,15 +154,15 @@ is a basis of $\mathbb R^n$.
 
 ::: pf-proof
 
-This follows from the direct-sum decomposition in step <1>1.
+This follows from the direct-sum decomposition in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-In the basis from step <1>4, the matrix of $T$ is
+In the basis from step [](#s1-4){.pf-ref}, the matrix of $T$ is
 \[
 \boxed{
 \operatorname{diag}
@@ -174,12 +174,12 @@ In the basis from step <1>4, the matrix of $T$ is
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 Tu_i=u_i
 \]
 for every $i=1,\ldots,m$.
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 Tv_j=0
 \]
@@ -192,7 +192,7 @@ Thus the coordinate matrix is diagonal with the stated entries.
 
 ::: pf-qed
 
-Step <1>5 is the required normal form.
+Step [](#s1-5){.pf-ref} is the required normal form.
 
 :::
 

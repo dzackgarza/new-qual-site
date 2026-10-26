@@ -53,7 +53,7 @@ recorded on the card.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the \(n\)th term is
 \[
@@ -85,7 +85,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(n\ge1\),
 \[
@@ -114,9 +114,9 @@ Summing from \(k=1\) to \(n\) gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Since \(3>1\), step <1>3 implies
+Since \(3>1\), step [](#s1-3){.pf-ref} implies
 \[
 3^{H_n}
 \ge
@@ -132,7 +132,7 @@ The function \(x\mapsto3^x\) is increasing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -158,7 +158,7 @@ e^{(\log3)(\log(n+1))}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -171,13 +171,13 @@ a_n
 
 ::: pf-proof
 
-Combine steps <1>2, <1>4, and <1>5, then take reciprocals.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}, then take reciprocals.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The exponent satisfies
 \[
@@ -200,7 +200,7 @@ taking logarithms gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -216,13 +216,13 @@ This is a \(p\)-series with
 \[
 p=\log3>1
 \]
-by step <1>7.
+by step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the original series
 \[
@@ -236,8 +236,8 @@ converges.
 
 ::: pf-proof
 
-The terms are nonnegative, and step <1>6 bounds them above by the terms of
-the convergent series in step <1>8. Apply the comparison test.
+The terms are nonnegative, and step [](#s1-6){.pf-ref} bounds them above by the terms of
+the convergent series in step [](#s1-8){.pf-ref}. Apply the comparison test.
 
 :::
 
@@ -245,7 +245,7 @@ the convergent series in step <1>8. Apply the comparison test.
 
 ::: pf-qed
 
-Step <1>9 gives the requested convergence decision.
+Step [](#s1-9){.pf-ref} gives the requested convergence decision.
 
 :::
 

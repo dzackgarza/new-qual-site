@@ -34,7 +34,7 @@ then $w$ could equal
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -57,7 +57,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every differentiable function of $s=3x+2y$ satisfies the PDE.
 
@@ -70,7 +70,7 @@ w_x=H'(s)s_x,
 \qquad
 w_y=H'(s)s_y.
 $$
-Therefore, by step <1>1,
+Therefore, by step [](#s1-1){.pf-ref},
 $$
 2w_x-3w_y
 =H'(s)(2s_x-3s_y)
@@ -81,7 +81,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -96,7 +96,7 @@ This function has the form $H(3x+2y)$ with
 $$
 H(s)=e^{\arctan s}.
 $$
-Hence step <1>2 applies.
+Hence step [](#s1-2){.pf-ref} applies.
 
 :::
 
@@ -104,7 +104,7 @@ Hence step <1>2 applies.
 
 ::: pf-qed
 
-Step <1>3 identifies a listed solution of the given PDE.
+Step [](#s1-3){.pf-ref} identifies a listed solution of the given PDE.
 
 :::
 

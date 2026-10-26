@@ -22,7 +22,7 @@ Problem 10. What is the largest number of $1$'s an invertible $0$-$1$ matrix of 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Any invertible $n\times n$ zero-one matrix must contain at least
 \[
@@ -53,7 +53,7 @@ Hence an invertible zero-one matrix must contain at least $n-1$ zeros.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently an invertible zero-one matrix has at most
 \[
@@ -65,7 +65,7 @@ entries equal to $1$.
 ::: pf-proof
 
 An $n\times n$ matrix has $n^2$ entries.
-By step <1>1, at least $n-1$ of them must be zero.
+By step [](#s1-1){.pf-ref}, at least $n-1$ of them must be zero.
 Therefore the number of ones is at most
 \[
 n^2-(n-1)
@@ -77,7 +77,7 @@ n^2-n+1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $M_n$ be the zero-one matrix obtained from the all-ones matrix by changing the first $n-1$ diagonal entries to zero:
 \[
@@ -110,7 +110,7 @@ entries are one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The matrix $M_n$ is invertible.
 
@@ -156,7 +156,7 @@ so $M_n$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the largest possible number of ones is
 \[
@@ -166,8 +166,8 @@ Hence the largest possible number of ones is
 
 ::: pf-proof
 
-Step <1>2 proves that no invertible zero-one matrix can have more than this many ones.
-Steps <1>3--<1>4 exhibit an invertible zero-one matrix attaining the bound.
+Step [](#s1-2){.pf-ref} proves that no invertible zero-one matrix can have more than this many ones.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} exhibit an invertible zero-one matrix attaining the bound.
 
 :::
 
@@ -175,7 +175,7 @@ Steps <1>3--<1>4 exhibit an invertible zero-one matrix attaining the bound.
 
 ::: pf-qed
 
-Step <1>5 proves both optimality and attainability.
+Step [](#s1-5){.pf-ref} proves both optimality and attainability.
 
 :::
 

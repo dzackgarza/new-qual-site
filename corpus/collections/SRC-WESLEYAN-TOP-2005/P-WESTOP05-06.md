@@ -46,7 +46,7 @@ This is the standard definition of a loop based at \(x_0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Two based loops \(\gamma_0,\gamma_1\) are equivalent if there is a
 homotopy
@@ -89,13 +89,13 @@ The fundamental group is the set
 
 ::: pf-proof
 
-The equivalence relation is based homotopy from step <1>2.
+The equivalence relation is based homotopy from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For based loops \(\alpha,\beta\), define their concatenation
 \[
@@ -126,7 +126,7 @@ based loop.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define multiplication on homotopy classes by
 \[
@@ -139,15 +139,15 @@ Define multiplication on homotopy classes by
 
 ::: pf-proof
 
-Well-definedness is proved in step <1>6.
+Well-definedness is proved in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The multiplication in step <1>5 is well defined.
+The multiplication in step [](#s1-5){.pf-ref} is well defined.
 
 
 ::: pf-proof
@@ -201,7 +201,7 @@ This is a based loop.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every loop \(\alpha\),
 \[
@@ -239,7 +239,7 @@ gives a based homotopy from \(c*\alpha\) to \(\alpha\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Likewise,
 \[
@@ -257,7 +257,7 @@ The same reparametrization argument removes the constant terminal segment of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus
 \[
@@ -268,7 +268,7 @@ is the identity element.
 
 ::: pf-proof
 
-Combine steps <1>8--<1>9.
+Combine steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
@@ -291,7 +291,7 @@ It begins and ends at \(x_0\), so it is a based loop.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -324,7 +324,7 @@ the endpoints remain \(x_0\). Hence this is a based nullhomotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Likewise,
 \[
@@ -335,14 +335,14 @@ Likewise,
 
 ::: pf-proof
 
-Apply step <1>12 to the loop \(\overline\alpha\), whose reverse is
+Apply step [](#s1-12){.pf-ref} to the loop \(\overline\alpha\), whose reverse is
 \(\alpha\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Thus
 \[
@@ -355,7 +355,7 @@ Thus
 
 ::: pf-proof
 
-Steps <1>12--<1>13 show that \([\overline\alpha]\) is a two-sided inverse.
+Steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref} show that \([\overline\alpha]\) is a two-sided inverse.
 
 :::
 
@@ -384,7 +384,7 @@ half to \(\alpha\), one quarter to \(\beta\), and one quarter to \(\gamma\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 These two loops are based-homotopic.
 
@@ -422,7 +422,7 @@ concatenations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore multiplication is associative:
 \[
@@ -435,7 +435,7 @@ Therefore multiplication is associative:
 
 ::: pf-proof
 
-By step <1>16,
+By step [](#s1-16){.pf-ref},
 \[
 [(\alpha*\beta)*\gamma]
 =
@@ -446,7 +446,7 @@ By step <1>16,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Consequently,
 \[
@@ -459,8 +459,8 @@ is a group under concatenation.
 
 ::: pf-proof
 
-Closure and well-definedness are steps <1>4--<1>6, the identity is step
-<1>10, inverses are step <1>14, and associativity is step <1>17.
+Closure and well-definedness are steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, the identity is step
+[](#s1-10){.pf-ref}, inverses are step [](#s1-14){.pf-ref}, and associativity is step [](#s1-17){.pf-ref}.
 
 :::
 
@@ -468,7 +468,7 @@ Closure and well-definedness are steps <1>4--<1>6, the identity is step
 
 ::: pf-qed
 
-Step <1>18 proves that the homotopy classes of based loops form the
+Step [](#s1-18){.pf-ref} proves that the homotopy classes of based loops form the
 fundamental group.
 
 :::

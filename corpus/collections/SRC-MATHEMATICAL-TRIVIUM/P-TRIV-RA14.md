@@ -29,7 +29,7 @@ Do the limits $\lim_{x \to 0}\left(\lim_{y \to 0} f(x,y)\right)$ and $\lim_{y \t
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x\neq0$,
 $$
@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $x=0$, then
 $$
@@ -72,7 +72,7 @@ This is the second branch in the definition of $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -84,21 +84,21 @@ $$
 
 ::: pf-proof
 
-For $x\neq0$, step <1>1 gives
+For $x\neq0$, step [](#s1-1){.pf-ref} gives
 $$
 |f(x,y)|
 \leq
 |x|+|y|
 \longrightarrow0
 $$
-as $(x,y)\to(0,0)$. For $x=0$, step <1>2 gives the value $0$ exactly. Hence
+as $(x,y)\to(0,0)$. For $x=0$, step [](#s1-2){.pf-ref} gives the value $0$ exactly. Hence
 the squeeze theorem gives the two-variable limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For fixed $x\neq0$,
 $$
@@ -118,7 +118,7 @@ tends to $0$ as $y\to0$ with $x$ fixed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At $x=0$,
 $$
@@ -128,14 +128,14 @@ $$
 
 ::: pf-proof
 
-By step <1>2, the function is identically zero as a function of $y$ when
+By step [](#s1-2){.pf-ref}, the function is identically zero as a function of $y$ when
 $x=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus the inner limit in $y$ is the function
 $$
@@ -149,13 +149,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -171,7 +171,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, the outer limit is
+By step [](#s1-6){.pf-ref}, the outer limit is
 $$
 \lim_{x\to0}x=0.
 $$
@@ -180,7 +180,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Fix $y\neq0$. Then
 $$
@@ -231,7 +231,7 @@ Since $y\neq0$, the two subsequential limits differ.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 $$
@@ -247,7 +247,7 @@ $$
 
 ::: pf-proof
 
-By step <1>8, the inner limit in $x$ is undefined for every $y\neq0$, so it is
+By step [](#s1-8){.pf-ref}, the inner limit in $x$ is undefined for every $y\neq0$, so it is
 not defined on any punctured neighborhood of $y=0$. Therefore the stated
 iterated limit does not exist in the standard sense.
 
@@ -257,7 +257,7 @@ iterated limit does not exist in the standard sense.
 
 ::: pf-qed
 
-Steps <1>3, <1>7, and <1>9 give the double limit and both iterated-limit
+Steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-9){.pf-ref} give the double limit and both iterated-limit
 answers.
 
 :::

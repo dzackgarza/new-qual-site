@@ -30,7 +30,7 @@ S=(\mathbb Q\cap(-\infty,0))\cup((\mathbb R\setminus\mathbb Q)\cap(0,\infty)).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $\mathbb Q\cap(-\infty,0)$ is not a countable intersection of open subsets of $(-\infty,0)$.
 
@@ -59,7 +59,7 @@ is nonempty. But the first intersection equals $\mathbb Q\cap(-\infty,0)$, while
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $(\mathbb R\setminus\mathbb Q)\cap(0,\infty)$ is not a countable union of closed subsets of $(0,\infty)$.
 
@@ -88,7 +88,7 @@ would be a countable union of nowhere dense subsets of itself, contradicting the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $S$ is not a countable union of closed subsets of $\mathbb R$.
 
@@ -109,13 +109,13 @@ where each $C_n\cap(0,\infty)$ is closed in $(0,\infty)$. By the definition of $
 \[
 S\cap(0,\infty)=(\mathbb R\setminus\mathbb Q)\cap(0,\infty),
 \]
-contradicting step <1>2.
+contradicting step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $S$ is not a countable intersection of open subsets of $\mathbb R$.
 
@@ -136,13 +136,13 @@ where each $V_n\cap(-\infty,0)$ is open in $(-\infty,0)$. By the definition of $
 \[
 S\cap(-\infty,0)=\mathbb Q\cap(-\infty,0),
 \]
-contradicting step <1>1.
+contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -153,7 +153,7 @@ satisfies both required conditions.
 
 ::: pf-proof
 
-Step <1>3 proves condition (i), and step <1>4 proves condition (ii).
+Step [](#s1-3){.pf-ref} proves condition (i), and step [](#s1-4){.pf-ref} proves condition (ii).
 
 :::
 
@@ -161,7 +161,7 @@ Step <1>3 proves condition (i), and step <1>4 proves condition (ii).
 
 ::: pf-qed
 
-Step <1>5 gives the requested subset.
+Step [](#s1-5){.pf-ref} gives the requested subset.
 
 :::
 

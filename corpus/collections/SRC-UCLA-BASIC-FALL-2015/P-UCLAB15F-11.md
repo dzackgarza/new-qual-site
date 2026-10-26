@@ -29,7 +29,7 @@ Does the answer change if $V\cong\mathbb R^{12}$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -46,7 +46,7 @@ This is the definition of nilpotence: some positive power of $T$ is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -60,7 +60,7 @@ T^6=0.
 
 ::: pf-proof
 
-Since $T$ is nilpotent by step <1>1, every eigenvalue of $T$ is $0$.
+Since $T$ is nilpotent by step [](#s1-1){.pf-ref}, every eigenvalue of $T$ is $0$.
 Hence the characteristic polynomial of $T$ on a six-dimensional space is
 \[
 \chi_T(X)=X^6.
@@ -74,7 +74,7 @@ By the Cayley--Hamilton theorem,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose, for contradiction, that there exists
 \[
@@ -106,7 +106,7 @@ Thus $S$ is nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -120,8 +120,8 @@ S^6=0.
 
 ::: pf-proof
 
-By step <1>3, $S$ is nilpotent.
-As in step <1>2, its characteristic polynomial is
+By step [](#s1-3){.pf-ref}, $S$ is nilpotent.
+As in step [](#s1-2){.pf-ref}, its characteristic polynomial is
 \[
 X^6.
 \]
@@ -134,7 +134,7 @@ S^6=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the hypothesis
 \[
@@ -158,7 +158,7 @@ T^3
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 No such square root $S$ exists when
 \[
@@ -168,7 +168,7 @@ No such square root $S$ exists when
 
 ::: pf-proof
 
-If such $S$ existed, steps <1>4--<1>5 would give
+If such $S$ existed, steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} would give
 \[
 T^3=S^6=0.
 \]
@@ -186,7 +186,7 @@ Therefore no such $S$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In dimension $12$, the answer changes: such examples do exist.
 
@@ -242,7 +242,7 @@ Thus $T$ satisfies the hypotheses and has the square root $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -255,7 +255,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 proves impossibility in dimension $6$, and step <1>7 gives an explicit dimension-$12$ example.
+Step [](#s1-6){.pf-ref} proves impossibility in dimension $6$, and step [](#s1-7){.pf-ref} gives an explicit dimension-$12$ example.
 
 :::
 
@@ -263,7 +263,7 @@ Step <1>6 proves impossibility in dimension $6$, and step <1>7 gives an explicit
 
 ::: pf-qed
 
-Step <1>8 answers both parts.
+Step [](#s1-8){.pf-ref} answers both parts.
 
 :::
 

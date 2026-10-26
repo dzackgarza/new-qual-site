@@ -60,7 +60,7 @@ Thus the roots are $-1,0,1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Corresponding eigenvectors are
 $$
@@ -87,7 +87,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix $A$ is diagonalizable. In fact, with
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-The columns of $P$ are the eigenvectors from step <1>2. Moreover,
+The columns of $P$ are the eigenvectors from step [](#s1-2){.pf-ref}. Moreover,
 $$
 \det P=2-3=-1\ne0,
 $$
@@ -121,7 +121,7 @@ so they form a basis of $\RR^3$. Therefore $P^{-1}AP=D$, equivalently $A=PDP^{-1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 A^{19}=PD^{19}P^{-1}.
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 proves diagonalizability, and step <1>4 computes $A^{19}$.
+Step [](#s1-3){.pf-ref} proves diagonalizability, and step [](#s1-4){.pf-ref} computes $A^{19}$.
 
 :::
 

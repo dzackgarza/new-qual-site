@@ -32,7 +32,7 @@ through $(x_0,y_0,z_0)$ on which $f=0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 \[
@@ -58,7 +58,7 @@ A vector is nonzero exactly when at least one of its coordinates is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After relabeling the coordinate variables if necessary, assume
 \[
@@ -70,7 +70,7 @@ f_z(x_0,y_0,z_0)\ne0.
 
 ::: pf-proof
 
-Step <1>1 gives a nonzero partial derivative.
+Step [](#s1-1){.pf-ref} gives a nonzero partial derivative.
 If the nonzero derivative is $f_x$ or $f_y$ instead, interchange the names of the coordinates so that the corresponding variable is called $z$.
 The argument below is unchanged under such a relabeling.
 
@@ -78,7 +78,7 @@ The argument below is unchanged under such a relabeling.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist neighborhoods
 \[
@@ -131,14 +131,14 @@ $f$ is continuously differentiable, and
 \[
 f_z(x_0,y_0,z_0)\ne0
 \]
-by step <1>2.
+by step [](#s1-2){.pf-ref}.
 Therefore the theorem solves uniquely for $z$ as a $C^1$ function of $(x,y)$ near $(x_0,y_0)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose $\varepsilon>0$ so small that
 \[
@@ -162,7 +162,7 @@ Choose $\varepsilon$ so that the displayed square lies inside that rectangle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -192,7 +192,7 @@ Thus all three component functions are continuously differentiable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The parametrization passes through the prescribed point:
 \[
@@ -205,13 +205,13 @@ The parametrization passes through the prescribed point:
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 x(0,0)=x_0,
 \qquad
 y(0,0)=y_0.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 z(0,0)
 =
@@ -224,7 +224,7 @@ z_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The entire parametrized surface lies in the zero level set of $f$:
 \[
@@ -237,11 +237,11 @@ for all sufficiently small $s,t$.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 (x_0+s,y_0+t)\in U.
 \]
-Using step <1>5 and the identity from step <1>3,
+Using step [](#s1-5){.pf-ref} and the identity from step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 f(x(s,t),y(s,t),z(s,t))
@@ -260,7 +260,7 @@ y_0+t,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The map
 \[
@@ -277,7 +277,7 @@ is a differentiable parametrized surface near $(0,0)$.
 
 ::: pf-proof
 
-By step <1>5, $\Psi$ is $C^1$.
+By step [](#s1-5){.pf-ref}, $\Psi$ is $C^1$.
 Its partial derivatives are
 \[
 \Psi_s
@@ -306,7 +306,7 @@ Thus the parametrization has rank $2$ and defines a regular differentiable surfa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore there exists a differentiable parametrized surface through $(x_0,y_0,z_0)$ on which
 \[
@@ -316,7 +316,7 @@ Therefore there exists a differentiable parametrized surface through $(x_0,y_0,z
 
 ::: pf-proof
 
-Step <1>6 gives passage through the required point, step <1>7 places the image in the level set, and step <1>8 proves regularity of the parametrization.
+Step [](#s1-6){.pf-ref} gives passage through the required point, step [](#s1-7){.pf-ref} places the image in the level set, and step [](#s1-8){.pf-ref} proves regularity of the parametrization.
 
 :::
 
@@ -324,7 +324,7 @@ Step <1>6 gives passage through the required point, step <1>7 places the image i
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

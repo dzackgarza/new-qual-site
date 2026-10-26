@@ -47,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the sector
 $$
@@ -80,7 +80,7 @@ $2\pi/\alpha=2t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue at $\zeta$ is
 $$
@@ -116,7 +116,7 @@ Hence the residue is $-\zeta/\alpha$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $C_{\varepsilon,R}$ be the positively oriented boundary of the
 annular sector
@@ -136,7 +136,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the contour encloses exactly the simple pole $\zeta$.
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the contour encloses exactly the simple pole $\zeta$.
 The residue theorem gives
 $$
 2\pi i
@@ -147,9 +147,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The two circular-arc integrals in step <1>3 tend to $0$ as
+The two circular-arc integrals in step [](#s1-3){.pf-ref} tend to $0$ as
 $R\to\infty$ and $\varepsilon\to0^+$.
 
 
@@ -186,7 +186,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -229,13 +229,13 @@ Thus the limiting upper-ray contribution is
 $$
 -e^{i\theta}J_\alpha.
 $$
-Let $R\to\infty$ and $\varepsilon\to0$ in step <1>3 and use step <1>4.
+Let $R\to\infty$ and $\varepsilon\to0$ in step [](#s1-3){.pf-ref} and use step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -258,7 +258,7 @@ $$
 =
 -2i\zeta\sin t,
 $$
-step <1>5 becomes
+step [](#s1-5){.pf-ref} becomes
 $$
 -2i\zeta\sin t\,J_\alpha
 =
@@ -276,7 +276,7 @@ Substitute $t=\pi/\alpha$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On the sector
 $$
@@ -314,7 +314,7 @@ $$
 =
 \frac{\Log\zeta}{\alpha\zeta^{\alpha-1}}.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \frac1{\alpha\zeta^{\alpha-1}}
 =
@@ -329,7 +329,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The residue theorem gives
 $$
@@ -342,7 +342,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 2\pi i
 \left(
@@ -356,9 +356,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-The two circular-arc integrals in step <1>8 tend to $0$ as
+The two circular-arc integrals in step [](#s1-8){.pf-ref} tend to $0$ as
 $R\to\infty$ and $\varepsilon\to0^+$.
 
 
@@ -370,7 +370,7 @@ $$
 \leq
 \log R+\theta.
 $$
-Using the same denominator bound as in step <1>4, the $ML$ estimate gives
+Using the same denominator bound as in step [](#s1-4){.pf-ref}, the $ML$ estimate gives
 $$
 \left|
 \int_{|z|=R}
@@ -414,7 +414,7 @@ this bound tends to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Let
 $$
@@ -465,14 +465,14 @@ $$
 -
 i\theta e^{i\theta}J_\alpha.
 $$
-Now let $R\to\infty$ and $\varepsilon\to0$ in step <1>8 and use
-step <1>9.
+Now let $R\to\infty$ and $\varepsilon\to0$ in step [](#s1-8){.pf-ref} and use
+step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 One has
 $$
@@ -496,7 +496,7 @@ t=\frac\pi\alpha,
 \qquad
 e^{i\theta}=\zeta^2,
 $$
-and by step <1>6,
+and by step [](#s1-6){.pf-ref},
 $$
 J_\alpha=t\csc t.
 $$
@@ -506,7 +506,7 @@ $$
 =
 -2i\zeta\sin t.
 $$
-Substitute these into step <1>10:
+Substitute these into step [](#s1-10){.pf-ref}:
 $$
 -2i\zeta\sin t\,I_\alpha
 -
@@ -560,7 +560,7 @@ $$
 
 ::: pf-qed
 
-Step <1>11 is the required value of the integral.
+Step [](#s1-11){.pf-ref} is the required value of the integral.
 
 :::
 

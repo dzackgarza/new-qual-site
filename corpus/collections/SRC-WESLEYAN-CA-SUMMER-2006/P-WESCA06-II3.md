@@ -37,7 +37,7 @@ and are holomorphic on $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The literal statement is false without boundary regularity.
 
@@ -74,7 +74,7 @@ Thus the boundary maximum in the literal statement is not defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume henceforth that $f$ and $g$ are continuous on
 \[
@@ -113,7 +113,7 @@ M
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -124,7 +124,7 @@ then the desired conclusion already holds.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 h(z_0)=M.
 \]
@@ -134,7 +134,7 @@ Thus $h$ attains its maximum on the boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose instead that
 \[
@@ -181,7 +181,7 @@ The same construction gives $\beta$ for $g(z_0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -202,7 +202,7 @@ It is a fixed complex linear combination of $f$ and $g$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 \[
@@ -226,7 +226,7 @@ At $z_0$,
 The first inequality is the triangle inequality.
 The second is the definition of $M$.
 
-By the phase choice in step <1>4,
+By the phase choice in step [](#s1-4){.pf-ref},
 \[
 F(z_0)
 =
@@ -244,7 +244,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since $z_0$ is an interior point where $|F|$ attains its global
 maximum, the maximum modulus principle implies that $F$ is constant on $D$.
@@ -253,7 +253,7 @@ maximum, the maximum modulus principle implies that $F$ is constant on $D$.
 ::: pf-proof
 
 The domain $D$ is connected and $F$ is holomorphic.
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 |F(z)|
 \le
@@ -266,7 +266,7 @@ The strong maximum modulus principle therefore makes $F$ constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every boundary point
 \[
@@ -280,7 +280,7 @@ one has
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 F
 \]
@@ -303,7 +303,7 @@ M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every
 \[
@@ -324,7 +324,7 @@ By the triangle inequality,
 =
 h(\zeta).
 \]
-Step <1>8 gives
+Step [](#s1-8){.pf-ref} gives
 \[
 M
 \le
@@ -345,7 +345,7 @@ h(\zeta)=M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently, under the intended boundary-continuity hypothesis,
 \[
@@ -358,9 +358,9 @@ Consequently, under the intended boundary-continuity hypothesis,
 
 ::: pf-proof
 
-If the maximizing point from step <1>2 lies on the boundary, apply
-step <1>3.
-If it lies in the interior, step <1>9 shows that every boundary point also
+If the maximizing point from step [](#s1-2){.pf-ref} lies on the boundary, apply
+step [](#s1-3){.pf-ref}.
+If it lies in the interior, step [](#s1-9){.pf-ref} shows that every boundary point also
 has the same maximal value.
 
 :::
@@ -369,8 +369,8 @@ has the same maximal value.
 
 ::: pf-qed
 
-Step <1>1 records the defect in the literal source statement.
-Steps <1>2--<1>10 prove the corrected theorem using the source's
+Step [](#s1-1){.pf-ref} records the defect in the literal source statement.
+Steps [](#s1-2){.pf-ref} through [](#s1-10){.pf-ref} prove the corrected theorem using the source's
 phase-alignment hint.
 
 :::

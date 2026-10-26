@@ -22,7 +22,7 @@ What is the units digit of $2019^{2019}$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Modulo $10$,
 \[
@@ -38,7 +38,7 @@ The difference $2019-9=2010$ is divisible by $10$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -57,7 +57,7 @@ Indeed,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -71,7 +71,7 @@ Since
 \[
 2019=2\cdot1009+1,
 \]
-steps <1>1 and <1>2 give
+steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give
 \[
 2019^{2019}
 \equiv
@@ -87,7 +87,7 @@ steps <1>1 and <1>2 give
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The units digit is
 \[
@@ -98,7 +98,7 @@ The units digit is
 ::: pf-proof
 
 The units digit of an integer is its residue modulo $10$ in
-$\{0,1,\dots,9\}$, and step <1>3 gives residue $9$.
+$\{0,1,\dots,9\}$, and step [](#s1-3){.pf-ref} gives residue $9$.
 
 :::
 
@@ -106,7 +106,7 @@ $\{0,1,\dots,9\}$, and step <1>3 gives residue $9$.
 
 ::: pf-qed
 
-Step <1>4 gives the requested digit.
+Step [](#s1-4){.pf-ref} gives the requested digit.
 
 :::
 

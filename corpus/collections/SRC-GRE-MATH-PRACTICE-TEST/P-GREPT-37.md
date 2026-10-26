@@ -29,7 +29,7 @@ $$\begin{aligned} kx + y + z &= 1 \\ x + ky + z &= k \\ x + y + kz &= k^2 \end{a
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The determinant of the coefficient matrix is
 $$
@@ -54,14 +54,14 @@ three eigenvalues with multiplicity, is $(k+2)(k-1)^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $k\ne1,-2$, the system has a unique solution.
 
 
 ::: pf-proof
 
-By step <1>1 the coefficient matrix is invertible for these values of $k$.
+By step [](#s1-1){.pf-ref} the coefficient matrix is invertible for these values of $k$.
 An invertible coefficient matrix gives a unique solution for every right-hand
 side, so such $k$ cannot yield an inconsistent system.
 
@@ -69,7 +69,7 @@ side, so such $k$ cannot yield an inconsistent system.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $k=1$, the system is consistent.
 
@@ -87,7 +87,7 @@ infinitely many solutions, not zero solutions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $k=-2$, the system is inconsistent.
 
@@ -105,7 +105,7 @@ Thus the system would require $0=3$, a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore there is exactly
 $$
@@ -116,8 +116,8 @@ value of $k$ for which the system has no solutions, so the answer is (B).
 
 ::: pf-proof
 
-Steps <1>2--<1>4 exhaust the singular and nonsingular cases identified in
-step <1>1. Only $k=-2$ is inconsistent.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} exhaust the singular and nonsingular cases identified in
+step [](#s1-1){.pf-ref}. Only $k=-2$ is inconsistent.
 
 :::
 
@@ -125,7 +125,7 @@ step <1>1. Only $k=-2$ is inconsistent.
 
 ::: pf-qed
 
-Step <1>5 gives the requested count.
+Step [](#s1-5){.pf-ref} gives the requested count.
 
 :::
 

@@ -30,7 +30,7 @@ Set $\alpha=\arctan 2$ and $\beta=\arctan 3$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\alpha+\beta=\frac{3\pi}{4}$.
 
@@ -56,7 +56,7 @@ The unique angle in $(0,\pi)$ with tangent $-1$ is $3\pi/4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The requested sum is
 $$
@@ -67,7 +67,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-The principal value satisfies $\arctan1=\pi/4$. Combining this with step <1>1 gives
+The principal value satisfies $\arctan1=\pi/4$. Combining this with step [](#s1-1){.pf-ref} gives
 $$
 \arctan1+\arctan2+\arctan3
 =\frac\pi4+\frac{3\pi}{4}
@@ -80,7 +80,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested exact value and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested exact value and corresponding choice.
 
 :::
 

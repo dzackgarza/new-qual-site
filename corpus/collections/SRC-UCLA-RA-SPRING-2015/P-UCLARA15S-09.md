@@ -36,7 +36,7 @@ r^2-4r+1=0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The inversion
 \[
@@ -89,7 +89,7 @@ Inversion is holomorphic with nonzero derivative on $\Omega$, so it is conformal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The disk automorphism
 \[
@@ -108,7 +108,7 @@ to $|\zeta|=r$.
 
 Since $r\in(0,1)$, $\phi$ is an automorphism of $\mathbb D$, so it maps the unit circle to itself.
 
-On the inner circle, step <1>1 gives
+On the inner circle, step [](#s1-1){.pf-ref} gives
 \[
 \operatorname{Re}w=-2|w|^2.
 \]
@@ -157,7 +157,7 @@ on the inner boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 \[
@@ -175,7 +175,7 @@ A_r
 
 ::: pf-proof
 
-By step <1>1, inversion maps $\Omega$ conformally onto the doubly connected region $\Omega'$. By step <1>2, $\phi$ is a homeomorphism of the closed unit disk and carries the two boundary components of $\Omega'$ onto the circles $|\zeta|=1$ and $|\zeta|=r$.
+By step [](#s1-1){.pf-ref}, inversion maps $\Omega$ conformally onto the doubly connected region $\Omega'$. By step [](#s1-2){.pf-ref}, $\phi$ is a homeomorphism of the closed unit disk and carries the two boundary components of $\Omega'$ onto the circles $|\zeta|=1$ and $|\zeta|=r$.
 
 The image $\phi(\Omega')$ is connected and lies between those two boundary circles. It contains
 \[
@@ -187,7 +187,7 @@ whose modulus is strictly greater than $r$. Therefore the image is exactly the a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function
 \[
@@ -216,7 +216,7 @@ V(\zeta)=1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -228,7 +228,7 @@ u(z)=V(F(z))
 
 ::: pf-proof
 
-By steps <1>3 and <1>4, the function $V\circ F$ is bounded and harmonic on $\Omega$, with boundary value $1$ on $|z|=1$ and boundary value $0$ on $\operatorname{Re}z=-2$.
+By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the function $V\circ F$ is bounded and harmonic on $\Omega$, with boundary value $1$ on $|z|=1$ and boundary value $0$ on $\operatorname{Re}z=-2$.
 
 To prove uniqueness, compose the difference
 \[
@@ -240,7 +240,7 @@ with $F^{-1}$. This gives a bounded harmonic function on the bounded annulus $A_
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The required value is
 \[
@@ -284,7 +284,7 @@ This number is positive, so
 =
 \frac{1+2r}{2r+r^2}.
 \]
-Substituting into step <1>4 and using step <1>5 gives the boxed value.
+Substituting into step [](#s1-4){.pf-ref} and using step [](#s1-5){.pf-ref} gives the boxed value.
 
 :::
 
@@ -292,7 +292,7 @@ Substituting into step <1>4 and using step <1>5 gives the boxed value.
 
 ::: pf-qed
 
-Step <1>6 determines $u(2)$.
+Step [](#s1-6){.pf-ref} determines $u(2)$.
 
 :::
 

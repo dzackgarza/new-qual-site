@@ -43,7 +43,7 @@ with lexicographic order by adjoining its final endpoint
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Euclidean space
 \[
@@ -78,7 +78,7 @@ Every path-connected space is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The space
 \[
@@ -108,7 +108,7 @@ has no finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space
 \[
@@ -136,7 +136,7 @@ Thus all four properties hold.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, for
 \[
@@ -173,13 +173,13 @@ is
 
 ::: pf-proof
 
-Collect steps <1>1--<1>3.
+Collect steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The closed long ray
 \[
@@ -222,7 +222,7 @@ in its usual order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The closed long ray is connected.
 
@@ -231,7 +231,7 @@ The closed long ray is connected.
 
 A linearly ordered set with the order topology is connected whenever it is a
 linear continuum: it has the least-upper-bound property and no gaps.
-Step <1>5 gives precisely these properties.
+Step [](#s1-5){.pf-ref} gives precisely these properties.
 Hence
 \[
 \boxed{
@@ -244,7 +244,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The closed long ray is not path-connected.
 
@@ -319,7 +319,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The closed long ray is compact.
 
@@ -328,7 +328,7 @@ The closed long ray is compact.
 
 A complete linear order with both endpoints is compact in its order
 topology.
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \overline{S_\Omega}
 \]
@@ -348,7 +348,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The closed long ray is Hausdorff and normal.
 
@@ -368,7 +368,7 @@ is both Hausdorff and normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The closed long ray is completely regular.
 
@@ -395,14 +395,14 @@ by a continuous function
 u:X\to[0,1].
 \]
 
-By step <1>9, the closed long ray is Hausdorff, hence $T_1$, and normal.
+By step [](#s1-9){.pf-ref}, the closed long ray is Hausdorff, hence $T_1$, and normal.
 Thus it is completely regular.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The endpoint
 \[
@@ -471,7 +471,7 @@ Contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The closed long ray is not metrizable.
 
@@ -479,7 +479,7 @@ The closed long ray is not metrizable.
 ::: pf-proof
 
 Every metric space is first countable.
-Step <1>11 shows that
+Step [](#s1-11){.pf-ref} shows that
 \[
 \overline{S_\Omega}
 \]
@@ -490,7 +490,7 @@ Hence it cannot be metrizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore the classification of the closed long ray is
 \[
@@ -519,7 +519,7 @@ Therefore the classification of the closed long ray is
 
 ::: pf-proof
 
-Combine steps <1>6--<1>12.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-12){.pf-ref}.
 
 :::
 
@@ -527,7 +527,7 @@ Combine steps <1>6--<1>12.
 
 ::: pf-qed
 
-Steps <1>4 and <1>13 give all requested properties of the two spaces.
+Steps [](#s1-4){.pf-ref} and [](#s1-13){.pf-ref} give all requested properties of the two spaces.
 
 :::
 

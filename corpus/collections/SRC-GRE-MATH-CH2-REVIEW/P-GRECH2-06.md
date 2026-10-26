@@ -33,7 +33,7 @@ is continuous everywhere, what is the value of $k$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x\ne2$,
 $$
@@ -59,7 +59,7 @@ Cancelling the nonzero factor $x-2$ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Continuity at $x=2$ forces
 $$
@@ -69,7 +69,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \lim_{x\to2}f(x)
 =\lim_{x\to2}\frac{x-4}{x^2+2}
@@ -82,7 +82,7 @@ For continuity at $2$, the value $f(2)=k$ must equal this limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -93,7 +93,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-This is exactly the value forced by step <1>2.
+This is exactly the value forced by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -101,7 +101,7 @@ This is exactly the value forced by step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the unique value making the function continuous everywhere.
+Step [](#s1-3){.pf-ref} gives the unique value making the function continuous everywhere.
 
 :::
 

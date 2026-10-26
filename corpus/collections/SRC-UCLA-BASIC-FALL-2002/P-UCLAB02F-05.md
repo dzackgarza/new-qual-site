@@ -32,7 +32,7 @@ for all $(x,y),(x_1,y_1)\in\mathbb R^2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For all $(x,y),(x_1,y_1)\in\mathbb R^2$,
 \[
@@ -70,7 +70,7 @@ Combining these inequalities proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One may take
 \[
@@ -80,7 +80,7 @@ M=A\sqrt2.
 
 ::: pf-proof
 
-By step <1>1 and the Cauchy--Schwarz inequality,
+By step [](#s1-1){.pf-ref} and the Cauchy--Schwarz inequality,
 \[
 \begin{aligned}
 |f(x,y)-f(x_1,y_1)|
@@ -96,7 +96,7 @@ Thus the required estimate holds with $M=A\sqrt2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No smaller universal value of $M$ can work.
 
@@ -127,13 +127,13 @@ so
 \[
 M\ge A\sqrt2.
 \]
-Together with step <1>2, this proves that $A\sqrt2$ is optimal.
+Together with step [](#s1-2){.pf-ref}, this proves that $A\sqrt2$ is optimal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -168,7 +168,7 @@ Thus equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the smallest possible constant is
 \[
@@ -178,7 +178,7 @@ Therefore the smallest possible constant is
 
 ::: pf-proof
 
-Step <1>2 proves this constant always works, step <1>3 proves no smaller universal constant can work, and step <1>4 supplies an equality example.
+Step [](#s1-2){.pf-ref} proves this constant always works, step [](#s1-3){.pf-ref} proves no smaller universal constant can work, and step [](#s1-4){.pf-ref} supplies an equality example.
 
 :::
 
@@ -186,7 +186,7 @@ Step <1>2 proves this constant always works, step <1>3 proves no smaller univers
 
 ::: pf-qed
 
-Step <1>5 answers parts (a)--(c).
+Step [](#s1-5){.pf-ref} answers parts (a)--(c).
 
 :::
 

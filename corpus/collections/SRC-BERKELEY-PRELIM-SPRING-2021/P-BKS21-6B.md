@@ -30,7 +30,7 @@ For each statement, give a proof or counterexample.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (a) is false.
 
@@ -55,7 +55,7 @@ Thus its only eigenvalue is $0$. If $A$ were diagonalizable over $\mathbb R$, it
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (b) is true.
 
@@ -72,7 +72,7 @@ is diagonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement (c) is false.
 
@@ -87,13 +87,13 @@ A=
 0&0
 \end{pmatrix}
 $$
-is a complex matrix. The argument in step <1>1 is field-independent: $A$ is nonzero, $A^2=0$, and its only eigenvalue is $0$, so it cannot be diagonalizable over $\mathbb C$.
+is a complex matrix. The argument in step [](#s1-1){.pf-ref} is field-independent: $A$ is nonzero, $A^2=0$, and its only eigenvalue is $0$, so it cannot be diagonalizable over $\mathbb C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (d) is false.
 
@@ -127,7 +127,7 @@ Hence the only eigenvalue of $B$ is $0$. If $B$ were diagonalizable over $\mathb
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the four answers are
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>4 establish the four assertions individually.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish the four assertions individually.
 
 :::
 
@@ -145,7 +145,7 @@ Steps <1>1--<1>4 establish the four assertions individually.
 
 ::: pf-qed
 
-Step <1>5 gives the requested classification with proofs and counterexamples.
+Step [](#s1-5){.pf-ref} gives the requested classification with proofs and counterexamples.
 
 :::
 

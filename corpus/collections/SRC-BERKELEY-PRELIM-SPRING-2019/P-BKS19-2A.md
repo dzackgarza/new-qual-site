@@ -40,7 +40,7 @@ Let $I$ be the interval on which the solution $y$ is defined.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $y'(t_0)=0$ for some $t_0\in I$, then $y$ is constant on $I$.
 
@@ -61,7 +61,7 @@ is also a solution of $z'=f(z)$ and satisfies $z(t_0)=y(t_0)$. Since $f$ is cont
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $y'(t)\neq0$ for every $t\in I$, then $y$ is strictly monotone on $I$.
 
@@ -78,14 +78,14 @@ is continuous. If it took both a positive and a negative value on the interval $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every solution of $y'=f(y)$ is monotone.
 
 
 ::: pf-proof
 
-If $y'$ vanishes anywhere, step <1>1 makes $y$ constant. If $y'$ never vanishes, step <1>2 makes $y$ strictly monotone. These cases exhaust all solutions.
+If $y'$ vanishes anywhere, step [](#s1-1){.pf-ref} makes $y$ constant. If $y'$ never vanishes, step [](#s1-2){.pf-ref} makes $y$ strictly monotone. These cases exhaust all solutions.
 
 :::
 
@@ -93,7 +93,7 @@ If $y'$ vanishes anywhere, step <1>1 makes $y$ constant. If $y'$ never vanishes,
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

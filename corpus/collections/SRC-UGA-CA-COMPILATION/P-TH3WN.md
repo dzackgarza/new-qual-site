@@ -26,7 +26,7 @@ $$\frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta},\q
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 At the point $z=re^{i\theta}$, the Cartesian Cauchy--Riemann
 equations are
@@ -47,7 +47,7 @@ point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polar derivatives satisfy
 $$
@@ -74,7 +74,7 @@ the chain rule gives the four displayed formulas.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -84,7 +84,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2 and then step <1>1,
+By step [](#s1-2){.pf-ref} and then step [](#s1-1){.pf-ref},
 $$
 \frac1r v_\theta
 =-v_x\sin\theta+v_y\cos\theta
@@ -97,7 +97,7 @@ The division by $r$ is valid because $r\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-Again using steps <1>2 and <1>1,
+Again using steps [](#s1-2){.pf-ref} and [](#s1-1){.pf-ref},
 $$
 -\frac1r u_\theta
 =u_x\sin\theta-u_y\cos\theta
@@ -121,7 +121,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>3 and <1>4 are exactly the two polar Cauchy--Riemann equations
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} are exactly the two polar Cauchy--Riemann equations
 required in the problem.
 
 :::

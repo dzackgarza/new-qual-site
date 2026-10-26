@@ -27,7 +27,7 @@ Let $f(x, y) = xy(x - y)$, where $x(t, u) = t(t - u)$ and $y(t, u) = u(u - t)$. 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The partial derivatives needed for the chain rule are
 $$
@@ -54,7 +54,7 @@ fixed gives the second pair.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $(t,u)=(1,-1)$ one has
 $$
@@ -81,13 +81,13 @@ x=1(1-(-1))=2,
 y=(-1)(-1-1)=2.
 $$
 The remaining values follow by substituting $(x,y,t,u)=(2,2,1,-1)$ into
-the formulas of step <1>1.
+the formulas of step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -98,7 +98,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By the multivariable chain rule and steps <1>1--<1>2,
+By the multivariable chain rule and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 \frac{\partial f}{\partial t}
 =f_xx_t+f_yy_t
@@ -111,7 +111,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

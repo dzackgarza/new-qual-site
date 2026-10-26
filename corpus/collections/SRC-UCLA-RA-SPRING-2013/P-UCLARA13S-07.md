@@ -23,7 +23,7 @@ Show that $f$ is constant.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ is nonconstant, then there exists $z_0\in\mathbb C$ such that
 \[
@@ -43,7 +43,7 @@ which is equivalent to the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f\not\equiv0$, then
 \[
@@ -74,7 +74,7 @@ the sum of a subharmonic function and a harmonic function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the nonconstancy assumption, for every $r>0$,
 \[
@@ -90,13 +90,13 @@ Under the nonconstancy assumption, for every $r>0$,
 
 ::: pf-proof
 
-Apply the sub-mean-value inequality for the subharmonic function from step <1>2 to the circle centered at $z_0$ of radius $r$. Step <1>1 supplies the final strict inequality.
+Apply the sub-mean-value inequality for the subharmonic function from step [](#s1-2){.pf-ref} to the circle centered at $z_0$ of radius $r$. Step [](#s1-1){.pf-ref} supplies the final strict inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $R>0$,
 \[
@@ -109,7 +109,7 @@ For every $R>0$,
 
 ::: pf-proof
 
-Using polar coordinates about $z_0$ and step <1>3,
+Using polar coordinates about $z_0$ and step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 \int_{B(z_0,R)}
@@ -133,7 +133,7 @@ The local logarithmic singularities at zeros are integrable, so these disk integ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The nonconstancy assumption contradicts absolute integrability of $\log|f|$.
 
@@ -159,7 +159,7 @@ For every $R>0$,
 \le
 C.
 \]
-Step <1>4 gives the incompatible lower bound
+Step [](#s1-4){.pf-ref} gives the incompatible lower bound
 \[
 \pi R^2<C
 \]
@@ -169,7 +169,7 @@ for every $R$. Letting $R\to\infty$ gives a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -179,7 +179,7 @@ Therefore
 
 ::: pf-proof
 
-Assuming that $f$ is nonconstant led to the contradiction in step <1>5.
+Assuming that $f$ is nonconstant led to the contradiction in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -187,7 +187,7 @@ Assuming that $f$ is nonconstant led to the contradiction in step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the desired conclusion.
+Step [](#s1-6){.pf-ref} is the desired conclusion.
 
 :::
 

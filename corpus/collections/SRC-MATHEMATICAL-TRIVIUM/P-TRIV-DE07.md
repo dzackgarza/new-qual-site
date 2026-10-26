@@ -59,7 +59,7 @@ Substitute and divide by the nonzero factor $e^{\lambda x}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The characteristic polynomial factors as
 $$
@@ -95,13 +95,13 @@ Thus the characteristic roots are $1$ with multiplicity $2$ and $-2$ with multip
 
 ::: pf-proof
 
-Read the roots and multiplicities from step <1>3.
+Read the roots and multiplicities from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A basis of solutions is
 $$
@@ -121,7 +121,7 @@ A double root $1$ contributes $e^x$ and $xe^x$, while the simple root $-2$ contr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the general solution is
 $$
@@ -138,7 +138,7 @@ with arbitrary constants $C_1,C_2,C_3\in\mathbb R$.
 
 ::: pf-proof
 
-A third-order homogeneous linear equation has a three-dimensional solution space, and step <1>5 gives three independent solutions.
+A third-order homogeneous linear equation has a three-dimensional solution space, and step [](#s1-5){.pf-ref} gives three independent solutions.
 
 :::
 
@@ -146,7 +146,7 @@ A third-order homogeneous linear equation has a three-dimensional solution space
 
 ::: pf-qed
 
-Step <1>6 is the complete solution family.
+Step [](#s1-6){.pf-ref} is the complete solution family.
 
 :::
 

@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $n$ is squarefree, then
 $$
@@ -65,7 +65,7 @@ is the field $\FF_{p_i}$. Thus the quotient is a finite direct product, equivale
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A direct product of fields has no nonzero nilpotent elements.
 
@@ -103,7 +103,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $n>1$ is not squarefree, then
 $$
@@ -155,7 +155,7 @@ Thus $\overline a$ is a nonzero nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $n>1$ and
 $$
@@ -166,13 +166,13 @@ is a direct sum of fields, then $n$ is squarefree.
 
 ::: pf-proof
 
-If $n$ were not squarefree, step <1>3 would produce a nonzero nilpotent in the quotient. Step <1>2 shows that no direct product of fields can contain such an element. Hence $n$ must be squarefree.
+If $n$ were not squarefree, step [](#s1-3){.pf-ref} would produce a nonzero nilpotent in the quotient. Step [](#s1-2){.pf-ref} shows that no direct product of fields can contain such an element. Hence $n$ must be squarefree.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, for
 $$
@@ -191,13 +191,13 @@ $$
 
 ::: pf-proof
 
-Replace $n$ by $\abs n$ and combine steps <1>1 and <1>4.
+Replace $n$ by $\abs n$ and combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The remaining integer values are exceptional only by convention:
 
@@ -225,7 +225,7 @@ For $n=\pm1$, the quotient is the zero ring. If the empty direct sum of fields i
 
 ::: pf-qed
 
-Step <1>5 gives the substantive classification, with step <1>6 recording the degenerate integer cases.
+Step [](#s1-5){.pf-ref} gives the substantive classification, with step [](#s1-6){.pf-ref} recording the degenerate integer cases.
 
 :::
 

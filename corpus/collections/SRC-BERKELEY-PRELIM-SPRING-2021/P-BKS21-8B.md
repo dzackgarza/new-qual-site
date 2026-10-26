@@ -32,7 +32,7 @@ and let $\alpha$ denote the class of $t$ in $S$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In $S$ one has
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The element
 $$
@@ -70,7 +70,7 @@ in $S$.
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 u^2
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The evaluation map
 $$
@@ -98,7 +98,7 @@ is a unital ring homomorphism whose kernel contains $(x^2+3)$.
 
 ::: pf-proof
 
-There is a unique unital ring homomorphism from the polynomial ring $\mathbb Z[x]$ to $S$ sending $x$ to the prescribed element $u$. By step <1>2,
+There is a unique unital ring homomorphism from the polynomial ring $\mathbb Z[x]$ to $S$ sending $x$ to the prescribed element $u$. By step [](#s1-2){.pf-ref},
 $$
 \psi(x^2+3)=u^2+3=0.
 $$
@@ -108,7 +108,7 @@ Hence every multiple of $x^2+3$ lies in $\ker\psi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $\psi$ descends to a unital homomorphism
 $$
@@ -125,7 +125,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 (x^2+3)\subseteq\ker\psi.
 $$
@@ -137,7 +137,7 @@ The universal property of the quotient ring therefore gives a unique induced uni
 
 ::: pf-qed
 
-Step <1>4 explicitly exhibits the required homomorphism.
+Step [](#s1-4){.pf-ref} explicitly exhibits the required homomorphism.
 
 :::
 

@@ -47,7 +47,7 @@ for all $x\in\mathbb R$, and let $L$ be a Lipschitz constant:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each Euler polygon $x_k$ is $M$-Lipschitz on $[0,1]$.
 
@@ -75,7 +75,7 @@ For arbitrary $s<t$, partition $[s,t]$ at the mesh points it crosses and add the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The family $(x_k)$ is uniformly bounded on $[0,1]$:
 \[
@@ -90,7 +90,7 @@ Since
 \[
 x_k(0)=0,
 \]
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 \[
 |x_k(t)|
 =
@@ -105,20 +105,20 @@ M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a subsequence $(x_{k_j})$ converging uniformly on $[0,1]$ to a continuous function $x$.
 
 
 ::: pf-proof
 
-By step <1>1, the family is equicontinuous, and by step <1>2 it is uniformly bounded. The Arzelà--Ascoli theorem on the compact interval $[0,1]$ therefore gives a uniformly convergent subsequence.
+By step [](#s1-1){.pf-ref}, the family is equicontinuous, and by step [](#s1-2){.pf-ref} it is uniformly bounded. The Arzelà--Ascoli theorem on the compact interval $[0,1]$ therefore gives a uniformly convergent subsequence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For each $k$, define the left-mesh projection
 \[
@@ -139,7 +139,7 @@ By construction, $\tau_k(t)$ is the left endpoint of the mesh interval containin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $k$ and $t\in[0,1]$,
 \[
@@ -167,7 +167,7 @@ Thus the displayed equality follows by integrating the piecewise constant deriva
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -180,7 +180,7 @@ Mh_k.
 
 ::: pf-proof
 
-By step <1>1 and step <1>4,
+By step [](#s1-1){.pf-ref} and step [](#s1-4){.pf-ref},
 \[
 |x_k(\tau_k(s))-x_k(s)|
 \le
@@ -194,9 +194,9 @@ Taking the supremum gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Along the uniformly convergent subsequence from step <1>3,
+Along the uniformly convergent subsequence from step [](#s1-3){.pf-ref},
 \[
 f(x_{k_j}(\tau_{k_j}(s)))
 \longrightarrow
@@ -223,13 +223,13 @@ The first term is at most
 \[
 LMh_{k_j}\to0
 \]
-by step <1>6, and the second tends uniformly to zero by step <1>3. Hence the convergence is uniform.
+by step [](#s1-6){.pf-ref}, and the second tends uniformly to zero by step [](#s1-3){.pf-ref}. Hence the convergence is uniform.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The subsequential limit satisfies
 \[
@@ -240,7 +240,7 @@ for every $t\in[0,1]$.
 
 ::: pf-proof
 
-Take the identity in step <1>5 along the subsequence $k_j$. The left side converges uniformly to $x(t)$ by step <1>3. By step <1>7, the integrands converge uniformly, so
+Take the identity in step [](#s1-5){.pf-ref} along the subsequence $k_j$. The left side converges uniformly to $x(t)$ by step [](#s1-3){.pf-ref}. By step [](#s1-7){.pf-ref}, the integrands converge uniformly, so
 \[
 \int_0^t f(x_{k_j}(\tau_{k_j}(s)))\,ds
 \longrightarrow
@@ -252,7 +252,7 @@ Passing to the limit gives the displayed integral equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function $x$ is continuously differentiable and solves
 \[
@@ -264,15 +264,15 @@ x(0)=0.
 
 ::: pf-proof
 
-The function $x$ is continuous by step <1>3, and $f$ is continuous because it is Lipschitz. Therefore
+The function $x$ is continuous by step [](#s1-3){.pf-ref}, and $f$ is continuous because it is Lipschitz. Therefore
 \[
 s\mapsto f(x(s))
 \]
-is continuous. By step <1>8 and the fundamental theorem of calculus,
+is continuous. By step [](#s1-8){.pf-ref} and the fundamental theorem of calculus,
 \[
 x'(t)=f(x(t)).
 \]
-Also step <1>8 at $t=0$ gives
+Also step [](#s1-8){.pf-ref} at $t=0$ gives
 \[
 x(0)=0.
 \]
@@ -281,7 +281,7 @@ x(0)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The initial-value problem
 \[
@@ -317,9 +317,9 @@ for all $t\in[0,1]$. Thus $x=y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-The full sequence $(x_k)$ converges uniformly to the solution $x$ from step <1>9.
+The full sequence $(x_k)$ converges uniformly to the solution $x$ from step [](#s1-9){.pf-ref}.
 
 
 ::: pf-proof
@@ -330,7 +330,7 @@ Suppose not. Then there would exist $\varepsilon>0$ and a subsequence $(x_{k_j})
 \]
 for every $j$.
 
-By steps <1>1--<1>2, this subsequence is still equicontinuous and uniformly bounded. Arzelà--Ascoli therefore gives a further subsequence converging uniformly to some function $y$. Repeating steps <1>4--<1>9 for that further subsequence shows that $y$ solves the same initial-value problem. By uniqueness from step <1>10,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, this subsequence is still equicontinuous and uniformly bounded. Arzelà--Ascoli therefore gives a further subsequence converging uniformly to some function $y$. Repeating steps [](#s1-4){.pf-ref} through [](#s1-9){.pf-ref} for that further subsequence shows that $y$ solves the same initial-value problem. By uniqueness from step [](#s1-10){.pf-ref},
 \[
 y=x.
 \]
@@ -340,7 +340,7 @@ But then the further subsequence converges uniformly to $x$, contradicting the l
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -354,7 +354,7 @@ where $x$ solves
 
 ::: pf-proof
 
-Step <1>11 gives uniform convergence, and step <1>9 identifies the limit as a solution of the stated ODE and initial condition.
+Step [](#s1-11){.pf-ref} gives uniform convergence, and step [](#s1-9){.pf-ref} identifies the limit as a solution of the stated ODE and initial condition.
 
 :::
 
@@ -362,7 +362,7 @@ Step <1>11 gives uniform convergence, and step <1>9 identifies the limit as a so
 
 ::: pf-qed
 
-Step <1>12 is the required conclusion.
+Step [](#s1-12){.pf-ref} is the required conclusion.
 
 :::
 

@@ -30,7 +30,7 @@ T(U_1)=U_2,\qquad T(W_1)=W_2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choose a basis
 \[
@@ -64,7 +64,7 @@ the chosen intersection basis extends by exactly $d-\ell$ vectors to each $d$-di
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The list
 \[
@@ -145,7 +145,7 @@ U_2+W_2.
 
 ::: pf-proof
 
-Apply the same argument as in steps <1>1--<1>2, using
+Apply the same argument as in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, using
 \[
 \dim(U_2\cap W_2)=\ell.
 \]
@@ -154,7 +154,7 @@ Apply the same argument as in steps <1>1--<1>2, using
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The two sums have equal dimension:
 \[
@@ -181,7 +181,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Extend $\mathcal B_1$ to a basis of $V$ by adding vectors
 \[
@@ -199,7 +199,7 @@ r=n-(2d-\ell).
 
 ::: pf-proof
 
-By step <1>4, the two subspaces have the same dimension.
+By step [](#s1-4){.pf-ref}, the two subspaces have the same dimension.
 Each basis therefore requires the same number
 \[
 r
@@ -210,7 +210,7 @@ of additional vectors to become a basis of the $n$-dimensional space $V$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define $T:V\to V$ on the first basis by
 \[
@@ -240,27 +240,27 @@ then extend linearly.
 ::: pf-proof
 
 A linear map is uniquely determined by its values on a basis.
-Step <1>5 gives a basis of $V$ on which the displayed prescription is defined.
+Step [](#s1-5){.pf-ref} gives a basis of $V$ on which the displayed prescription is defined.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The operator $T$ is invertible.
 
 
 ::: pf-proof
 
-By construction, $T$ sends the basis from step <1>5 bijectively onto the target basis from the same step.
+By construction, $T$ sends the basis from step [](#s1-5){.pf-ref} bijectively onto the target basis from the same step.
 A linear map sending a basis to a basis is an isomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -274,7 +274,7 @@ The subspace $U_1$ has basis
 \[
 c_1,\ldots,c_\ell,u_{\ell+1},\ldots,u_d.
 \]
-Step <1>6 sends these vectors to
+Step [](#s1-6){.pf-ref} sends these vectors to
 \[
 c'_1,\ldots,c'_\ell,u'_{\ell+1},\ldots,u'_d,
 \]
@@ -288,7 +288,7 @@ T(U_1)=U_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One also has
 \[
@@ -302,7 +302,7 @@ The basis
 \[
 c_1,\ldots,c_\ell,w_{\ell+1},\ldots,w_d
 \]
-of $W_1$ is sent by step <1>6 to the basis
+of $W_1$ is sent by step [](#s1-6){.pf-ref} to the basis
 \[
 c'_1,\ldots,c'_\ell,w'_{\ell+1},\ldots,w'_d
 \]
@@ -318,7 +318,7 @@ T(W_1)=W_2.
 
 ::: pf-qed
 
-Steps <1>8--<1>9 give the required operator, and step <1>7 shows it may in fact be chosen invertible.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the required operator, and step [](#s1-7){.pf-ref} shows it may in fact be chosen invertible.
 
 :::
 

@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume first that $f$ is convex.
 Fix
@@ -60,7 +60,7 @@ Since $f$ is differentiable, $g$ is differentiable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every
 \[
@@ -93,7 +93,7 @@ which is exactly the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 \[
@@ -109,7 +109,7 @@ g(1)-g(0).
 
 ::: pf-proof
 
-Subtract $g(0)$ from the inequality in step <1>2:
+Subtract $g(0)$ from the inequality in step [](#s1-2){.pf-ref}:
 \[
 g(t)-g(0)
 \le
@@ -121,9 +121,9 @@ Divide by the positive number $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Letting $t\downarrow0$ in step <1>3 gives
+Letting $t\downarrow0$ in step [](#s1-3){.pf-ref} gives
 \[
 g'(0)
 \le
@@ -140,13 +140,13 @@ g'(0)
 \lim_{t\downarrow0}
 \frac{g(t)-g(0)}{t}.
 \]
-The right-hand side of step <1>3 is independent of $t$, so passing to the limit gives the claim.
+The right-hand side of step [](#s1-3){.pf-ref} is independent of $t$, so passing to the limit gives the claim.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -172,13 +172,13 @@ g(1)-g(0)
 =
 f(y)-f(x).
 \]
-Substitute these into step <1>4 and rearrange.
+Substitute these into step [](#s1-4){.pf-ref} and rearrange.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Conversely, assume
 \[
@@ -207,7 +207,7 @@ This introduces the point at which the convexity inequality is to be proved.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Applying the assumed first-order inequality with base point $z$ gives
 \[
@@ -238,9 +238,9 @@ and then with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Multiply the first inequality in step <1>7 by $t$, the second by $1-t$, and add.
+Multiply the first inequality in step [](#s1-7){.pf-ref} by $t$, the second by $1-t$, and add.
 Then
 \[
 tf(x)+(1-t)f(y)\ge f(z).
@@ -280,7 +280,7 @@ tf(x)+(1-t)f(y)\ge f(z).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since
 \[
@@ -298,14 +298,14 @@ tf(x)+(1-t)f(y)
 
 ::: pf-proof
 
-Substitute the definition of $z$ from step <1>6 into step <1>8.
+Substitute the definition of $z$ from step [](#s1-6){.pf-ref} into step [](#s1-8){.pf-ref}.
 This is exactly the defining inequality for convexity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -320,7 +320,7 @@ f(y)\ge f(x)+(y-x)f'(x)
 
 ::: pf-proof
 
-Steps <1>1--<1>5 prove the forward implication, and steps <1>6--<1>9 prove the reverse implication.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} prove the forward implication, and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} prove the reverse implication.
 
 :::
 
@@ -328,7 +328,7 @@ Steps <1>1--<1>5 prove the forward implication, and steps <1>6--<1>9 prove the r
 
 ::: pf-qed
 
-Step <1>10 is the required equivalence.
+Step [](#s1-10){.pf-ref} is the required equivalence.
 
 :::
 

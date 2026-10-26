@@ -28,7 +28,7 @@ Show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Restrict $S$ to $\operatorname{im}T$:
 \[
@@ -45,7 +45,7 @@ An element of the image is $S(Tv)$ for some $v\in V$, and conversely every $(S\c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The kernel of the restriction is
 \[
@@ -61,7 +61,7 @@ For $y\in\operatorname{im}T$, the equation $S(y)=0$ is equivalent to $y\in\ker S
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Rank--nullity for the restriction gives
 \[
@@ -73,13 +73,13 @@ Rank--nullity for the restriction gives
 
 ::: pf-proof
 
-Apply rank--nullity using steps <1>1 and <1>2.
+Apply rank--nullity using steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -90,13 +90,13 @@ Therefore
 
 ::: pf-proof
 
-The inclusion $\ker S\cap\operatorname{im}T\subseteq\ker S$ bounds the first term on the right side of step <1>3.
+The inclusion $\ker S\cap\operatorname{im}T\subseteq\ker S$ bounds the first term on the right side of step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Rank--nullity for $S:V\to V$ gives
 \[
@@ -112,9 +112,9 @@ Rearrange $\dim V=\dim(\ker S)+\dim(\operatorname{im}S)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Substitution into step <1>4 gives
+Substitution into step [](#s1-4){.pf-ref} gives
 \[
 \dim(\operatorname{im}T)
 \leq\dim V-\dim(\operatorname{im}S)
@@ -124,13 +124,13 @@ Substitution into step <1>4 gives
 
 ::: pf-proof
 
-Substitute the equality from step <1>5.
+Substitute the equality from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -142,7 +142,7 @@ Hence
 
 ::: pf-proof
 
-Add $\dim(\operatorname{im}S)$ to both sides of step <1>6.
+Add $\dim(\operatorname{im}S)$ to both sides of step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -150,7 +150,7 @@ Add $\dim(\operatorname{im}S)$ to both sides of step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required inequality.
+Step [](#s1-7){.pf-ref} is the required inequality.
 
 :::
 

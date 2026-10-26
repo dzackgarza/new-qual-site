@@ -32,7 +32,7 @@ What is the general solution of the differential equation
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The general solution of the associated homogeneous equation is
 $$
@@ -58,7 +58,7 @@ which gives the displayed homogeneous solution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A particular solution of the nonhomogeneous equation is
 $$
@@ -82,7 +82,7 @@ gives $3A=6$, hence $A=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the general solution is
 $$
@@ -93,7 +93,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-For a linear nonhomogeneous differential equation, adding any particular solution to the general homogeneous solution gives the full solution family. Combine steps <1>1 and <1>2.
+For a linear nonhomogeneous differential equation, adding any particular solution to the general homogeneous solution gives the full solution family. Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -101,7 +101,7 @@ For a linear nonhomogeneous differential equation, adding any particular solutio
 
 ::: pf-qed
 
-Step <1>3 gives the requested general solution and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested general solution and corresponding choice.
 
 :::
 

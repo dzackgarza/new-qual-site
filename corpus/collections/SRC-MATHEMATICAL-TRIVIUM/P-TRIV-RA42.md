@@ -78,7 +78,7 @@ and similarly for $y,z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The divergence satisfies
 $$
@@ -99,7 +99,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $r>0$,
 $$
@@ -133,7 +133,7 @@ whose derivative is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -144,13 +144,13 @@ for $r>0$.
 
 ::: pf-proof
 
-Combine steps <1>2--<1>3.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The curl vanishes:
 $$
@@ -173,7 +173,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The vector Laplacian satisfies
 $$
@@ -195,7 +195,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -206,26 +206,26 @@ for $r>0$.
 
 ::: pf-proof
 
-Use step <1>3 in step <1>6.
+Use step [](#s1-3){.pf-ref} in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>4, <1>5, and <1>7 give the divergence, curl, and vector Laplacian.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-7){.pf-ref} give the divergence, curl, and vector Laplacian.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The geometric values of
 $$
@@ -250,7 +250,7 @@ object.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 In particular, their values remain zero in every regular coordinate
 chart on $\mathbb R^3\setminus\{0\}$.
@@ -258,21 +258,21 @@ chart on $\mathbb R^3\setminus\{0\}$.
 
 ::: pf-proof
 
-Steps <1>4 and <1>7 show that the geometric fields are identically zero.
+Steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref} show that the geometric fields are identically zero.
 Changing coordinates cannot change the zero scalar field or zero vector field.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>9--<1>10 give the requested coordinate-independence statement.
+Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} give the requested coordinate-independence statement.
 
 :::
 
@@ -280,7 +280,7 @@ Steps <1>9--<1>10 give the requested coordinate-independence statement.
 
 ::: pf-qed
 
-Steps <1>8 and <1>11 establish parts (a) and (b).
+Steps [](#s1-8){.pf-ref} and [](#s1-11){.pf-ref} establish parts (a) and (b).
 
 :::
 

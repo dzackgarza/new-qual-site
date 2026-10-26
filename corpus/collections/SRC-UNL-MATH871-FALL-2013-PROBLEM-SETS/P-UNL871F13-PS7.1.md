@@ -26,7 +26,7 @@ that induces the topology of $X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $C$ is closed and
 \[
@@ -72,7 +72,7 @@ X\setminus C.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In particular,
 \[
@@ -98,13 +98,13 @@ then
 \[
 c\in B(p,\varepsilon),
 \]
-contradicting step <1>1.
+contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -162,7 +162,7 @@ C\subseteq V.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The open sets $U$ and $V$ are disjoint.
 
@@ -209,7 +209,7 @@ d(p,x)+d(x,c)\\
 \varepsilon.
 \end{aligned}
 \]
-This contradicts step <1>2.
+This contradicts step [](#s1-2){.pf-ref}.
 Therefore
 \[
 U\cap V
@@ -221,7 +221,7 @@ U\cap V
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -238,7 +238,7 @@ with $U$ and $V$ open.
 
 ::: pf-proof
 
-Combine steps <1>3--<1>4.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -246,7 +246,7 @@ Combine steps <1>3--<1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required separation.
+Step [](#s1-5){.pf-ref} is the required separation.
 
 :::
 

@@ -41,7 +41,7 @@ be compact. We prove
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix
 \[
@@ -66,7 +66,7 @@ The space \(C_c(\mathbb R^d)\) is dense in \(L^1(\mathbb R^d)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(x\in\mathbb R^d\) and every \(n\),
 \[
@@ -101,7 +101,7 @@ Since
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -116,13 +116,13 @@ for every \(n\).
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix \(x\in\mathbb R^d\). Then
 \[
@@ -143,7 +143,7 @@ for almost every \(y\), while \(\varphi(x-y)\) is fixed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The integrands satisfy
 \[
@@ -162,7 +162,7 @@ Use \(|g_n(y)|\le1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The dominating function
 \[
@@ -184,7 +184,7 @@ Translation preserves the \(L^1\)-norm:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -196,13 +196,13 @@ for every fixed \(x\in\mathbb R^d\).
 
 ::: pf-proof
 
-Apply the dominated convergence theorem using steps <1>4--<1>6.
+Apply the dominated convergence theorem using steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For \(x,x'\in\mathbb R^d\),
 \[
@@ -226,7 +226,7 @@ Subtract the two convolution integrals and use
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The right-hand side is
 \[
@@ -247,7 +247,7 @@ This is exactly the definition of the displayed \(L^1\)-norm.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 As \(x'\to x\),
 \[
@@ -264,7 +264,7 @@ Translations are continuous in \(L^1\). Since \(\varphi\in C_c\), this can also 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Thus the family
 \[
@@ -275,13 +275,13 @@ is equicontinuous on \(\mathbb R^d\), with a modulus independent of \(n\).
 
 ::: pf-proof
 
-Steps <1>8--<1>10 give a bound on the increment depending only on \(x-x'\), not on \(n\).
+Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give a bound on the increment depending only on \(x-x'\), not on \(n\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 By equicontinuity, choose \(\delta>0\) such that
 \[
@@ -299,7 +299,7 @@ for every \(n\).
 
 ::: pf-proof
 
-Apply step <1>11 with tolerance \(\varepsilon/3\).
+Apply step [](#s1-11){.pf-ref} with tolerance \(\varepsilon/3\).
 
 :::
 
@@ -336,13 +336,13 @@ For each \(j\),
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence there exists \(N\) such that for every \(n\ge N\) and every
 \[
@@ -364,7 +364,7 @@ There are only finitely many points \(x_j\). Choose \(N\) larger than all indivi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Let \(x\in K\) and \(n\ge N\). Choose \(j\) with
 \[
@@ -396,13 +396,13 @@ By the triangle inequality,
 \frac{2\varepsilon}{3},
 \end{aligned}
 \]
-using steps <1>12 and <1>15.
+using steps [](#s1-12){.pf-ref} and [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore
 \[
@@ -416,7 +416,7 @@ for every \(n\ge N\).
 
 ::: pf-proof
 
-The bound in step <1>16 holds for every \(x\in K\).
+The bound in step [](#s1-16){.pf-ref} holds for every \(x\in K\).
 
 :::
 
@@ -447,7 +447,7 @@ f*g_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence, for \(n\ge N\),
 \[
@@ -458,7 +458,7 @@ Hence, for \(n\ge N\),
 
 ::: pf-proof
 
-Use step <1>3 for the first term and step <1>17 for the second:
+Use step [](#s1-3){.pf-ref} for the first term and step [](#s1-17){.pf-ref} for the second:
 \[
 \frac{\varepsilon}{3}
 +
@@ -483,13 +483,13 @@ f*g_n\to0
 
 ::: pf-proof
 
-Step <1>19 is the definition of uniform convergence on the compact set \(K\).
+Step [](#s1-19){.pf-ref} is the definition of uniform convergence on the compact set \(K\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Since \(K\subset\mathbb R^d\) was arbitrary,
 \[
@@ -509,7 +509,7 @@ Local uniform convergence means uniform convergence on every compact subset.
 
 ::: pf-qed
 
-Step <1>21 is the required conclusion.
+Step [](#s1-21){.pf-ref} is the required conclusion.
 
 :::
 

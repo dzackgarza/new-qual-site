@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -72,7 +72,7 @@ This proves the limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x,h\in\RR$,
 $$
@@ -103,19 +103,19 @@ The bound is independent of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $F$ is uniformly continuous on $\RR$.
 
 
 ::: pf-proof
 
-Let $\varepsilon>0$. By step <1>1, choose $\delta>0$ such that
+Let $\varepsilon>0$. By step [](#s1-1){.pf-ref}, choose $\delta>0$ such that
 $$
 |(K+h)\triangle K|
 <\frac{\varepsilon|K|}{M+1}
 $$
-whenever $|h|<\delta$. Then step <1>2 gives, for every $x\in\RR$,
+whenever $|h|<\delta$. Then step [](#s1-2){.pf-ref} gives, for every $x\in\RR$,
 $$
 |F(x+h)-F(x)|
 \le\frac{M}{|K|}|(K+h)\triangle K|
@@ -129,7 +129,7 @@ Since the same $\delta$ works for every $x$, the continuity is uniform.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

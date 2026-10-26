@@ -29,7 +29,7 @@ Write $[k]_r$ for the residue class of an integer $k$ in $\ZZ_r$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If there is a ring homomorphism
 $\phi\colon\ZZ_m\to\ZZ_n$ with $\phi([1]_m)=[1]_n$, then $n\mid m$.
@@ -52,7 +52,7 @@ Thus $m\equiv0\pmod n$, which is exactly $n\mid m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $n\mid m$, then such a homomorphism exists.
 
@@ -73,9 +73,9 @@ required property.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Among the listed pairs, the condition in steps <1>1 and <1>2 holds only for
+Among the listed pairs, the condition in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} holds only for
 $(m,n)=(6,3)$.
 
 
@@ -88,15 +88,15 @@ $3\mid6$ holds: $6\nmid4$, $4\nmid6$, $6\nmid3$, and $4\nmid3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The correct answer is $\boxed{\text{(D) }(\ZZ_6,\ZZ_3)}$.
 
 
 ::: pf-proof
 
-By step <1>3, choice (D) is the unique listed pair satisfying the
-necessary and sufficient condition established in steps <1>1 and <1>2.
+By step [](#s1-3){.pf-ref}, choice (D) is the unique listed pair satisfying the
+necessary and sufficient condition established in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -104,7 +104,7 @@ necessary and sufficient condition established in steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Step <1>4 gives the required pair.
+Step [](#s1-4){.pf-ref} gives the required pair.
 
 :::
 

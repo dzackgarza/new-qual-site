@@ -29,7 +29,7 @@ For connected spaces $X,Y$, give an example satisfying each statement below or s
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (1) is possible:
 \[
@@ -52,7 +52,7 @@ one point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (2) is possible as literally stated.
 
@@ -92,7 +92,7 @@ inclusion, unlike homotopy equivalence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement (3) is impossible.
 
@@ -137,7 +137,7 @@ X\simeq Y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (4) is impossible.
 
@@ -154,7 +154,7 @@ Indeed, homotopy inverse maps induce mutually inverse homomorphisms on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Statement (5) is possible:
 \[
@@ -187,7 +187,7 @@ X\not\simeq Y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Statement (6) is possible:
 \[
@@ -214,7 +214,7 @@ r|_{S^1}
 \]
 so $X$ is a retract of $Y$.
 
-If $X$ were a deformation retract of $Y$, then step <1>3 would give
+If $X$ were a deformation retract of $Y$, then step [](#s1-3){.pf-ref} would give
 \[
 X\simeq Y.
 \]
@@ -237,7 +237,7 @@ deformation retraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Statement (7) is impossible.
 
@@ -252,7 +252,7 @@ Thus every deformation retract is automatically a retract.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Statement (8) is impossible.
 
@@ -263,7 +263,7 @@ If $X$ is a deformation retract of $Y$, then
 \[
 X\simeq Y
 \]
-by step <1>3.
+by step [](#s1-3){.pf-ref}.
 Hence
 \[
 \pi_1(X)
@@ -276,7 +276,7 @@ by homotopy invariance of the fundamental group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Statement (9) is possible:
 \[
@@ -332,7 +332,7 @@ are not.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Statement (10) is impossible.
 
@@ -362,7 +362,7 @@ H_1(Y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Statement (11) is possible:
 \[
@@ -394,7 +394,7 @@ Thus the fundamental groups are not isomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Statement (12) is possible:
 \[
@@ -406,7 +406,7 @@ Y=S^2.
 
 ::: pf-proof
 
-As in step <1>5,
+As in step [](#s1-5){.pf-ref},
 \[
 \pi_1(X)
 =
@@ -458,7 +458,7 @@ The complete classification is therefore
 
 ::: pf-proof
 
-This table collects steps <1>1--<1>12.
+This table collects steps [](#s1-1){.pf-ref} through [](#s1-12){.pf-ref}.
 
 :::
 
@@ -466,7 +466,7 @@ This table collects steps <1>1--<1>12.
 
 ::: pf-qed
 
-Steps <1>1--<1>12 give either an explicit example or an impossibility proof
+Steps [](#s1-1){.pf-ref} through [](#s1-12){.pf-ref} give either an explicit example or an impossibility proof
 for every requested statement.
 
 :::

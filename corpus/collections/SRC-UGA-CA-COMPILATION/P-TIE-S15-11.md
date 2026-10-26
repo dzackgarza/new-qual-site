@@ -39,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z\in D_s(z_0)$, then
 $$
@@ -65,7 +65,7 @@ Thus $w\in D_r(z_0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in D_s(z_0)$ and every $0<t<\rho$,
 $$
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the closed circle
+By step [](#s1-1){.pf-ref}, the closed circle
 $$
 \abs{w-z}=t
 $$
@@ -97,7 +97,7 @@ Taking absolute values yields the estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $z\in D_s(z_0)$,
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-Multiply the inequality in step <1>2 by $2t$ and integrate from $t=0$ to $t=\rho$:
+Multiply the inequality in step [](#s1-2){.pf-ref} by $2t$ and integrate from $t=0$ to $t=\rho$:
 $$
 \abs{f(z)}
 \int_0^\rho 2t\,dt
@@ -136,7 +136,7 @@ division by $\rho^2$ gives the claimed estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z\in D_s(z_0)$,
 $$
@@ -149,11 +149,11 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 D_\rho(z)\subset D_r(z_0).
 $$
-Hence step <1>3 gives
+Hence step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
 \abs{f(z)}
@@ -173,7 +173,7 @@ Since $\rho=r-s$, this is the stated inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -188,7 +188,7 @@ $$
 
 ::: pf-proof
 
-Take the supremum of the pointwise estimate in step <1>4 over all $z\in D_s(z_0)$.
+Take the supremum of the pointwise estimate in step [](#s1-4){.pf-ref} over all $z\in D_s(z_0)$.
 
 :::
 
@@ -196,7 +196,7 @@ Take the supremum of the pointwise estimate in step <1>4 over all $z\in D_s(z_0)
 
 ::: pf-qed
 
-Step <1>5 proves the assertion with
+Step [](#s1-5){.pf-ref} proves the assertion with
 $$
 \boxed{c=\frac1{\pi(r-s)^2}>0}.
 $$

@@ -43,7 +43,7 @@ variation must vanish on $\partial D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first variation is
 $$
@@ -77,7 +77,7 @@ and differentiate at $\varepsilon=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integration by parts gives
 $$
@@ -118,7 +118,7 @@ The boundary term vanishes because $\eta=0$ on $\partial D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence every extremal satisfies
 $$
@@ -131,8 +131,8 @@ in $D$.
 
 ::: pf-proof
 
-At an extremum, the first variation in step <1>2 must vanish for every smooth
-variation $\eta$ with zero boundary values. By step <1>3,
+At an extremum, the first variation in step [](#s1-2){.pf-ref} must vanish for every smooth
+variation $\eta$ with zero boundary values. By step [](#s1-3){.pf-ref},
 $$
 \iint_D
 (f_{xx}+f_{yy})\eta
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the extremal is a harmonic function satisfying
 $$
@@ -164,14 +164,14 @@ $$
 
 ::: pf-proof
 
-Step <1>4 gives the interior equation, and the boundary condition is the one
+Step [](#s1-4){.pf-ref} gives the interior equation, and the boundary condition is the one
 prescribed in the problem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let $f_*$ be such a harmonic solution, and let
 $$
@@ -201,7 +201,7 @@ $$
 +
 |\nabla\eta|^2.
 $$
-The cross term integrates to zero by step <1>3 because
+The cross term integrates to zero by step [](#s1-3){.pf-ref} because
 $$
 \Delta f_*=0
 $$
@@ -211,7 +211,7 @@ and $\eta$ vanishes on the boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every harmonic solution of the Dirichlet problem is a
 minimizer of $J$.
@@ -219,7 +219,7 @@ minimizer of $J$.
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 $$
 J[f]-J[f_*]
 =
@@ -232,14 +232,14 @@ Thus no admissible perturbation decreases the energy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $D$ is connected, the minimizer is unique.
 
 
 ::: pf-proof
 
-Equality in step <1>7 forces
+Equality in step [](#s1-7){.pf-ref} forces
 $$
 \nabla\eta=0
 $$
@@ -252,8 +252,8 @@ $\eta=0$ on the boundary and $D$ is connected, the constant is zero.
 
 ::: pf-qed
 
-Steps <1>4--<1>5 give the required Euler--Lagrange equation, and steps
-<1>6--<1>8 identify its solution as the Dirichlet-energy minimizer.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the required Euler--Lagrange equation, and steps
+[](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} identify its solution as the Dirichlet-energy minimizer.
 
 :::
 

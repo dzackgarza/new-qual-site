@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every row lies in the span of $r_1$ and $u$.
 
@@ -63,14 +63,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the rank is at most $2$.
 
 
 ::: pf-proof
 
-The row space is contained in the span of two vectors by step <1>1.
+The row space is contained in the span of two vectors by step [](#s1-1){.pf-ref}.
 Hence its dimension is at most $2$.
 
 :::
@@ -100,7 +100,7 @@ Thus $r_1$ is not a scalar multiple of $u$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the rank is at least $2$.
 
@@ -117,7 +117,7 @@ Hence its dimension is at least $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently,
 $$
@@ -127,7 +127,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>4.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 This is answer choice $\boxed{\text{(B)}}$.
 
 :::
@@ -136,7 +136,7 @@ This is answer choice $\boxed{\text{(B)}}$.
 
 ::: pf-qed
 
-Step <1>5 is the required rank.
+Step [](#s1-5){.pf-ref} is the required rank.
 
 :::
 

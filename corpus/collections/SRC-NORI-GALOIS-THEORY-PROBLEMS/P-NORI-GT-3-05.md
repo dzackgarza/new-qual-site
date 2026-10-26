@@ -40,7 +40,7 @@ The cyclic group $\mathbb F_{19}^\times$ has order $18$. Hence it contains an el
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose an element
 \[
@@ -81,7 +81,7 @@ This defines a field extension in an algebraic closure. It remains to show induc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $u_n$ is not a cube in $E_n$ and $E_n$ contains the cube roots of unity, then
 \[
@@ -98,7 +98,7 @@ A reducible cubic polynomial over a field has a root in that field. A root of $X
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence, as long as $u_n$ is a noncube,
 \[
@@ -112,13 +112,13 @@ E_{n+1}\cong\mathbb F_{19^{3^{n+1}}}.
 
 ::: pf-proof
 
-Step <1>4 gives irreducibility of the degree-three polynomial defining $u_{n+1}$. Inductively $[E_n:\mathbb F_{19}]=3^n$, so $E_n$ has $19^{3^n}$ elements. A degree-three extension therefore has $19^{3^{n+1}}$ elements and is the unique finite field of that order.
+Step [](#s1-4){.pf-ref} gives irreducibility of the degree-three polynomial defining $u_{n+1}$. Inductively $[E_n:\mathbb F_{19}]=3^n$, so $E_n$ has $19^{3^n}$ elements. A degree-three extension therefore has $19^{3^{n+1}}$ elements and is the unique finite field of that order.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n\ge0$,
 \[
@@ -134,7 +134,7 @@ Iterate the defining relations $u_{j+1}^3=u_j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -160,7 +160,7 @@ because $19-1=18$ has $3$-adic valuation $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In a finite field $K=\mathbb F_Q$ with $3\mid Q-1$, an element $a\in K^\times$ is a cube if and only if
 \[
@@ -176,7 +176,7 @@ The cyclic group $K^\times$ has order $Q-1$. Its subgroup of cubes has index $3$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since $u_0$ is a noncube in $\mathbb F_{19}$,
 \[
@@ -186,13 +186,13 @@ u_0^6\ne1.
 
 ::: pf-proof
 
-Here $(19-1)/3=6$. Apply step <1>8 with $Q=19$.
+Here $(19-1)/3=6$. Apply step [](#s1-8){.pf-ref} with $Q=19$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Assume the construction has reached $E_n$. Then
 \[
@@ -204,7 +204,7 @@ for some integer $M_n$ not divisible by $3$.
 
 ::: pf-proof
 
-By steps <1>6--<1>7,
+By steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref},
 \[
 \frac{Q_n-1}{3^{n+1}}
 \]
@@ -223,20 +223,20 @@ u_n^{(Q_n-1)/3}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-The value in step <1>10 is not $1$, so $u_n$ is not a cube in $E_n$.
+The value in step [](#s1-10){.pf-ref} is not $1$, so $u_n$ is not a cube in $E_n$.
 
 
 ::: pf-proof
 
-The element $u_0^6$ is a nontrivial cube root of unity: its cube is $u_0^{18}=1$, while step <1>9 says it is not $1$. Raising a nontrivial element of order $3$ to an exponent $M_n$ not divisible by $3$ remains nontrivial. Thus step <1>10 is not $1$, and step <1>8 shows $u_n$ is a noncube.
+The element $u_0^6$ is a nontrivial cube root of unity: its cube is $u_0^{18}=1$, while step [](#s1-9){.pf-ref} says it is not $1$. Raising a nontrivial element of order $3$ to an exponent $M_n$ not divisible by $3$ remains nontrivial. Thus step [](#s1-10){.pf-ref} is not $1$, and step [](#s1-8){.pf-ref} shows $u_n$ is a noncube.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore the recursion continues indefinitely and satisfies
 \[
@@ -246,7 +246,7 @@ Therefore the recursion continues indefinitely and satisfies
 
 ::: pf-proof
 
-Step <1>2 starts with a noncube. Steps <1>5 and <1>11 show inductively that adjoining a cube root gives a degree-three extension and that the new chosen cube root remains a noncube at the next stage.
+Step [](#s1-2){.pf-ref} starts with a noncube. Steps [](#s1-5){.pf-ref} and [](#s1-11){.pf-ref} show inductively that adjoining a cube root gives a degree-three extension and that the new chosen cube root remains a noncube at the next stage.
 
 :::
 
@@ -254,7 +254,7 @@ Step <1>2 starts with a noncube. Steps <1>5 and <1>11 show inductively that adjo
 
 ::: pf-qed
 
-Step <1>12 gives the requested sequence of cubic field extensions beginning at $E_0=\mathbb F_{19}$.
+Step [](#s1-12){.pf-ref} gives the requested sequence of cubic field extensions beginning at $E_0=\mathbb F_{19}$.
 
 :::
 

@@ -31,7 +31,7 @@ on the set $S=\{1,2,3,4,5,6\}$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In disjoint-cycle notation,
 $$
@@ -55,7 +55,7 @@ which gives $(2\ 6\ 4\ 3)$. These cycles contain all six elements and are disjoi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The order of $\sigma$ is
 $$
@@ -65,13 +65,13 @@ $$
 
 ::: pf-proof
 
-For a permutation written as a product of disjoint cycles, a positive power is the identity exactly when its exponent is divisible by every cycle length. Thus the least positive exponent giving the identity is the least common multiple of the cycle lengths from step <1>1.
+For a permutation written as a product of disjoint cycles, a positive power is the identity exactly when its exponent is divisible by every cycle length. Thus the least positive exponent giving the identity is the least common multiple of the cycle lengths from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -82,7 +82,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-This is the value computed in step <1>2.
+This is the value computed in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -90,7 +90,7 @@ This is the value computed in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested order.
+Step [](#s1-3){.pf-ref} gives the requested order.
 
 :::
 

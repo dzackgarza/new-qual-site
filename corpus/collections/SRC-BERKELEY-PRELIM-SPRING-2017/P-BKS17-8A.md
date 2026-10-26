@@ -39,7 +39,7 @@ is a polynomial of degree $p + 1$ in the variable $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $p=0$, one has $S_0(n)=n+1$, a polynomial of degree $1$ with leading coefficient $1$.
 
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $p\geq1$, and suppose that for every integer $j$ with $0\leq j<p$, the function $S_j(n)$ is a polynomial of degree $j+1$ with leading coefficient $1/(j+1)$. Then
 $$
@@ -88,14 +88,14 @@ Since $\binom{p+1}{p}=p+1$, isolating the term with $j=p$ gives the claimed iden
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the induction hypothesis in step <1>2, $S_p(n)$ is a polynomial of degree $p+1$ with leading coefficient $1/(p+1)$.
+Under the induction hypothesis in step [](#s1-2){.pf-ref}, $S_p(n)$ is a polynomial of degree $p+1$ with leading coefficient $1/(p+1)$.
 
 
 ::: pf-proof
 
-By step <1>2, $(p+1)S_p(n)$ is a polynomial in $n$. For every $j<p$, the induction hypothesis gives
+By step [](#s1-2){.pf-ref}, $(p+1)S_p(n)$ is a polynomial in $n$. For every $j<p$, the induction hypothesis gives
 $$
 \deg S_j=j+1\leq p.
 $$
@@ -111,7 +111,7 @@ has degree at most $p$. The remaining term $(n+1)^{p+1}$ has degree $p+1$ and le
 
 ::: pf-qed
 
-Step <1>1 is the base case, and steps <1>2--<1>3 establish the induction step. Hence the assertion holds for every integer $p\geq0$.
+Step [](#s1-1){.pf-ref} is the base case, and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} establish the induction step. Hence the assertion holds for every integer $p\geq0$.
 
 :::
 

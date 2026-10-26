@@ -27,7 +27,7 @@ Work with rational coefficients and write $b_i=\dim_{\mathbb Q}H^i(M;\mathbb Q)$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Poincaré duality gives
 \[
@@ -50,7 +50,7 @@ is perfect. Therefore the two vector spaces have equal dimension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Pairing all degrees except the middle one gives
 \[
@@ -64,7 +64,7 @@ The Euler characteristic is
 \[
 \chi(M)=\sum_{i=0}^{d}(-1)^ib_i.
 \]
-For $i\ne d-i$, step <1>1 pairs the $i$th and $(d-i)$th terms. Since $d$ is even, they have the same sign, so each pair contributes
+For $i\ne d-i$, step [](#s1-1){.pf-ref} pairs the $i$th and $(d-i)$th terms. Since $d$ is even, they have the same sign, so each pair contributes
 \[
 2(-1)^ib_i,
 \]
@@ -78,7 +78,7 @@ Thus modulo $2$, only $b_{2n+1}$ remains.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The middle-dimensional cup-product pairing
 \[
@@ -101,7 +101,7 @@ because $2n+1$ is odd. Hence $Q(x,y)=-Q(y,x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A finite-dimensional vector space over $\mathbb Q$ carrying a nondegenerate skew-symmetric bilinear form has even dimension.
 
@@ -118,7 +118,7 @@ The restriction to $U^{\perp}$ is again nondegenerate and skew-symmetric. Induct
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -128,13 +128,13 @@ b_{2n+1}\equiv0\pmod2.
 
 ::: pf-proof
 
-Apply step <1>4 to the middle cohomology vector space and its pairing from step <1>3.
+Apply step [](#s1-4){.pf-ref} to the middle cohomology vector space and its pairing from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -144,7 +144,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>2 gives $\chi(M)\equiv b_{2n+1}\pmod2$, and step <1>5 shows the latter is even.
+Step [](#s1-2){.pf-ref} gives $\chi(M)\equiv b_{2n+1}\pmod2$, and step [](#s1-5){.pf-ref} shows the latter is even.
 
 :::
 
@@ -152,7 +152,7 @@ Step <1>2 gives $\chi(M)\equiv b_{2n+1}\pmod2$, and step <1>5 shows the latter i
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

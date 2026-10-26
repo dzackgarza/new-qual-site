@@ -23,7 +23,7 @@ Prove or disprove each statement:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (1) is false.
 
@@ -57,7 +57,7 @@ with $X$ simply connected, while $A$ is not simply connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (2) is true.
 
@@ -124,7 +124,7 @@ r_*:\pi_1(X,a_0)\twoheadrightarrow\pi_1(A,a_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The final answers are
 \[
@@ -140,7 +140,7 @@ The final answers are
 
 ::: pf-proof
 
-Step <1>1 gives a counterexample to statement (1), and step <1>2 proves
+Step [](#s1-1){.pf-ref} gives a counterexample to statement (1), and step [](#s1-2){.pf-ref} proves
 statement (2).
 
 :::
@@ -149,7 +149,7 @@ statement (2).
 
 ::: pf-qed
 
-Step <1>3 records the complete answer.
+Step [](#s1-3){.pf-ref} records the complete answer.
 
 :::
 

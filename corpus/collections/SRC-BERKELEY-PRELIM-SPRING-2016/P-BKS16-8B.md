@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The reciprocal polynomial
 $$
@@ -75,7 +75,7 @@ Eisenstein's criterion applies to $h$ with the prime $3$: the leading coefficien
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The quartic $g$ is irreducible in $\QQ[x]$.
 
@@ -98,13 +98,13 @@ h(x)
 =x^4g(x^{-1})
 =\widetilde u(x)\widetilde v(x),
 $$
-contradicting step <1>2.
+contradicting step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The factorization into irreducibles is
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-The factor $x-1$ is irreducible because it has degree $1$, and step <1>3 proves that the quartic factor is irreducible.
+The factor $x-1$ is irreducible because it has degree $1$, and step [](#s1-3){.pf-ref} proves that the quartic factor is irreducible.
 
 :::
 
@@ -122,7 +122,7 @@ The factor $x-1$ is irreducible because it has degree $1$, and step <1>3 proves 
 
 ::: pf-qed
 
-Step <1>4 is the requested irreducible factorization.
+Step [](#s1-4){.pf-ref} is the requested irreducible factorization.
 
 :::
 

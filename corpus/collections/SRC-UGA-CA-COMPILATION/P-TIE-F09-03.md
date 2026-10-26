@@ -33,7 +33,7 @@ $\overline\Delta$ be the closed disk bounded by $C$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On $C$,
 $$
@@ -57,7 +57,7 @@ $z\in C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 $$
@@ -68,7 +68,7 @@ has exactly one zero in $\Delta$, counted with multiplicity.
 
 ::: pf-proof
 
-On $C$, step <1>1 gives
+On $C$, step [](#s1-1){.pf-ref} gives
 $$
 |F(z)-(z-a)|
 =
@@ -84,21 +84,21 @@ Therefore $F$ has exactly one zero in $\Delta$, counted with multiplicity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The unique zero $w$ of $F$ in $\overline\Delta$ lies in $\Delta$ and is simple.
 
 
 ::: pf-proof
 
-Step <1>1 implies
+Step [](#s1-1){.pf-ref} implies
 $$
 |F(z)|
 \ge
 |z-a|-|qf(z)|
 >0
 $$
-on $C$, so $F$ has no zero on the boundary. By step <1>2 there is exactly one zero in the
+on $C$, so $F$ has no zero on the boundary. By step [](#s1-2){.pf-ref} there is exactly one zero in the
 interior, counted with multiplicity one. Hence that zero $w$ is simple, so
 $$
 F'(w)\ne0.
@@ -108,7 +108,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $G$ is analytic on a neighborhood of $\overline\Delta$, then
 $$
@@ -122,7 +122,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, the meromorphic function
+By step [](#s1-3){.pf-ref}, the meromorphic function
 $$
 \frac{G(z)}{F(z)}
 $$
@@ -143,7 +143,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists a constant $\lambda<1$ such that
 $$
@@ -162,14 +162,14 @@ $$
 z\longmapsto
 \left|\frac{qf(z)}{z-a}\right|
 $$
-is continuous on the compact circle $C$. By step <1>1 it is strictly less than $1$ at every
+is continuous on the compact circle $C$. By step [](#s1-1){.pf-ref} it is strictly less than $1$ at every
 point. Its maximum $\lambda$ is therefore strictly less than $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $z\in C$,
 $$
@@ -200,7 +200,7 @@ $$
 \frac1{z-a}
 \frac1{1-\frac{qf(z)}{z-a}}.
 $$
-By step <1>5, the ratio in the geometric series has absolute value at most $\lambda<1$
+By step [](#s1-5){.pf-ref}, the ratio in the geometric series has absolute value at most $\lambda<1$
 uniformly on $C$. Hence
 $$
 \frac1{1-\frac{qf(z)}{z-a}}
@@ -218,7 +218,7 @@ uniformly on $C$. Multiplying by $1/(z-a)$ gives the displayed expansion.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (1), step <1>4 proves part (2), and steps <1>5--<1>6 prove
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (1), step [](#s1-4){.pf-ref} proves part (2), and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove
 part (3).
 
 :::

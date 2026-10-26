@@ -33,7 +33,7 @@ M
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\gamma$ is the positively oriented unit circle, then
 \[
@@ -60,7 +60,7 @@ Subtracting gives the asserted value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -72,7 +72,7 @@ One has
 
 ::: pf-proof
 
-Taking absolute values in step <1>1 and applying the ML inequality,
+Taking absolute values in step [](#s1-1){.pf-ref} and applying the ML inequality,
 \[
 \begin{aligned}
 2\pi
@@ -94,7 +94,7 @@ Taking absolute values in step <1>1 and applying the ML inequality,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -107,7 +107,7 @@ Therefore
 
 ::: pf-proof
 
-Divide the inequality in step <1>2 by $2\pi>0$.
+Divide the inequality in step [](#s1-2){.pf-ref} by $2\pi>0$.
 
 :::
 
@@ -115,7 +115,7 @@ Divide the inequality in step <1>2 by $2\pi>0$.
 
 ::: pf-qed
 
-Step <1>3 is the required estimate.
+Step [](#s1-3){.pf-ref} is the required estimate.
 
 :::
 

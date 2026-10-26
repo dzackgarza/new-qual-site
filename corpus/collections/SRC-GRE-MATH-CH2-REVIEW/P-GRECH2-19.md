@@ -28,7 +28,7 @@ What does the Mean-Value theorem say about $f$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $c\in(a,b)$ such that
 $$
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently,
 $$
@@ -60,7 +60,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Since $a\ne b$, one has $b-a\ne0$. Multiplying the equality in step <1>1 by $b-a$ gives the displayed conclusion.
+Since $a\ne b$, one has $b-a\ne0$. Multiplying the equality in step [](#s1-1){.pf-ref} by $b-a$ gives the displayed conclusion.
 
 :::
 
@@ -68,7 +68,7 @@ Since $a\ne b$, one has $b-a\ne0$. Multiplying the equality in step <1>1 by $b-a
 
 ::: pf-qed
 
-Step <1>2 is exactly the conclusion among the listed choices guaranteed by the mean value theorem.
+Step [](#s1-2){.pf-ref} is exactly the conclusion among the listed choices guaranteed by the mean value theorem.
 
 :::
 

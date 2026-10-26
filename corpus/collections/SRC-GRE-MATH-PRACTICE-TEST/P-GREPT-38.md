@@ -33,7 +33,7 @@ III. $\abs{f(x) - f(y)} \leq (x - y)^2$ for every $x$ and $y$ in $[a, b]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Condition I cannot hold for a function on the nondegenerate interval
 $[a,b]$; consequently, as a formal implication it is vacuously sufficient.
@@ -55,7 +55,7 @@ vacuously.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Condition II is not literally well-typed for every $g\in X$, but under
 the intended composable-map reading it forces $f$ to be constant.
@@ -78,7 +78,7 @@ so $f$ itself is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Condition III forces $f$ to be constant.
 
@@ -106,7 +106,7 @@ $x,y\in[a,b]$, so $f$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the multiple-choice question is not well-posed under a
 literal formal reading:
@@ -117,10 +117,10 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that condition I is impossible and hence vacuously sufficient
-when read as an implication. Step <1>2 shows that condition II is not defined
+Step [](#s1-1){.pf-ref} shows that condition I is impossible and hence vacuously sufficient
+when read as an implication. Step [](#s1-2){.pf-ref} shows that condition II is not defined
 under the stated quantifier over all $g\in X$. Thus the literal formulation
-does not determine one of the listed subsets of I--III, although step <1>3
+does not determine one of the listed subsets of I--III, although step [](#s1-3){.pf-ref}
 proves that condition III is genuinely sufficient.
 
 :::
@@ -129,7 +129,7 @@ proves that condition III is genuinely sufficient.
 
 ::: pf-qed
 
-Step <1>4 gives the conclusion supported by the statement as written.
+Step [](#s1-4){.pf-ref} gives the conclusion supported by the statement as written.
 
 :::
 
@@ -138,6 +138,6 @@ Step <1>4 gives the conclusion supported by the statement as written.
 ::: {.remark}
 The source intends answer (D): it discards the impossible condition I, reads
 condition II as ranging over composable maps, and counts II and III as the
-substantive constancy criteria. Under that intended reading, steps <1>2--<1>3
+substantive constancy criteria. Under that intended reading, steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}
 prove exactly II and III.
 :::

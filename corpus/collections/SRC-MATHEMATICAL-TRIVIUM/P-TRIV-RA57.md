@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z\neq1$, then
 $$
@@ -57,14 +57,14 @@ Divide by $1-z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Part (a) follows for $z\neq1$.
 
 
 ::: pf-proof
 
-This is step <1>1.
+This is step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -97,9 +97,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Rationalizing the expression in step <1>1 gives
+Rationalizing the expression in step [](#s1-1){.pf-ref} gives
 $$
 \sum_{k=0}^{n}r^ke^{ik\phi}
 =
@@ -115,7 +115,7 @@ $$
 
 ::: pf-proof
 
-Multiply numerator and denominator in step <1>1 by
+Multiply numerator and denominator in step [](#s1-1){.pf-ref} by
 $$
 1-re^{-i\phi}.
 $$
@@ -126,7 +126,7 @@ expression.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Taking real parts gives
 $$
@@ -154,28 +154,28 @@ $$
 =
 r^k\cos(k\phi).
 $$
-Take real parts of step <1>4 term by term.
+Take real parts of step [](#s1-4){.pf-ref} term by term.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (b) follows for $z\neq1$.
 
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Taking imaginary parts of step <1>4 gives
+Taking imaginary parts of step [](#s1-4){.pf-ref} gives
 $$
 \boxed{
 \sum_{k=0}^{n}r^k\sin(k\phi)
@@ -195,7 +195,7 @@ $$
 
 ::: pf-proof
 
-The imaginary parts in the numerator of step <1>4 are
+The imaginary parts in the numerator of step [](#s1-4){.pf-ref} are
 $$
 r\sin\phi,
 \qquad
@@ -214,20 +214,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (c) follows for $z\neq1$.
 
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If
 $$
@@ -270,7 +270,7 @@ imaginary parts are $n+1$ and $0$.
 
 ::: pf-qed
 
-Steps <1>2, <1>6, <1>8, and <1>9 give all three finite sums in every case.
+Steps [](#s1-2){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} give all three finite sums in every case.
 
 :::
 

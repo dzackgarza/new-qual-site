@@ -28,7 +28,7 @@ Use the Darboux definition of the Riemann integral.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a partition
 \[
@@ -56,7 +56,7 @@ Since $f$ is continuous on the compact interval $[0,1]$, it is bounded. Hence ev
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The upper and lower Riemann integrals are
 \[
@@ -85,7 +85,7 @@ for all $P,Q$. Therefore the set of lower sums is bounded above and the set of u
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ is Riemann integrable on $[0,1]$ exactly when
 \[
@@ -107,7 +107,7 @@ This is the Darboux definition of Riemann integrability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $\varepsilon>0$, there exists $\delta>0$ such that
 \[
@@ -126,7 +126,7 @@ The function $f$ is continuous on the compact interval $[0,1]$, so it is uniform
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $\varepsilon>0$, there exists a partition $P$ such that
 \[
@@ -136,7 +136,7 @@ U(f,P)-L(f,P)<\varepsilon.
 
 ::: pf-proof
 
-Fix $\varepsilon>0$ and choose $\delta>0$ from step <1>4. Choose a partition
+Fix $\varepsilon>0$ and choose $\delta>0$ from step [](#s1-4){.pf-ref}. Choose a partition
 \[
 P:\quad 0=x_0<\cdots<x_n=1
 \]
@@ -163,13 +163,13 @@ U(f,P)-L(f,P)
 &=\varepsilon.
 \end{aligned}
 \]
-If strict inequality is desired, apply step <1>4 with $\varepsilon/2$ instead.
+If strict inequality is desired, apply step [](#s1-4){.pf-ref} with $\varepsilon/2$ instead.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The upper and lower Riemann integrals are equal.
 
@@ -182,7 +182,7 @@ L=\underline{\int_0^1}f,
 \qquad
 U=\overline{\int_0^1}f.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 L\le U.
 \]
@@ -194,7 +194,7 @@ so
 \[
 0\le U-L\le U(f,P)-L(f,P).
 \]
-Given $\varepsilon>0$, choose $P$ from step <1>5 with
+Given $\varepsilon>0$, choose $P$ from step [](#s1-5){.pf-ref} with
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
@@ -208,7 +208,7 @@ Since this holds for every $\varepsilon>0$, one has $U=L$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The Riemann integral
 \[
@@ -219,7 +219,7 @@ exists.
 
 ::: pf-proof
 
-By step <1>6, the upper and lower Riemann integrals coincide. By the definition in step <1>3, $f$ is Riemann integrable and their common value is the displayed integral.
+By step [](#s1-6){.pf-ref}, the upper and lower Riemann integrals coincide. By the definition in step [](#s1-3){.pf-ref}, $f$ is Riemann integrable and their common value is the displayed integral.
 
 :::
 
@@ -227,7 +227,7 @@ By step <1>6, the upper and lower Riemann integrals coincide. By the definition 
 
 ::: pf-qed
 
-Steps <1>1--<1>3 state the definition, and steps <1>4--<1>7 prove existence for continuous $f$.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} state the definition, and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove existence for continuous $f$.
 
 :::
 

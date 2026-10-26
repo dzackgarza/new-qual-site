@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the semicircular part of
 $$
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the imaginary-axis part of
 $$
@@ -135,7 +135,7 @@ Hence the same strict inequality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The functions
 $$
@@ -151,7 +151,7 @@ have the same number of zeros in $D_R$, counted with multiplicity.
 
 ::: pf-proof
 
-Steps <1>1--<1>2 give
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
 |e^{-z}|<|z-\lambda|
 $$
@@ -165,7 +165,7 @@ Both functions are entire. Rouché's theorem therefore applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ has exactly one zero in $D_R$.
 
@@ -188,13 +188,13 @@ and
 $$
 R>\lambda+1,
 $$
-this zero lies in $D_R$. Step <1>3 therefore gives exactly one zero of $f$ in $D_R$.
+this zero lies in $D_R$. Step [](#s1-3){.pf-ref} therefore gives exactly one zero of $f$ in $D_R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The equation
 $$
@@ -213,7 +213,7 @@ as
 $$
 R\to\infty.
 $$
-By step <1>4, every
+By step [](#s1-4){.pf-ref}, every
 $$
 R>\lambda+1
 $$
@@ -227,7 +227,7 @@ be the unique zero in $D_{R_0}$. For every
 $$
 R>R_0,
 $$
-the same point $z_0$ lies in $D_R$, and step <1>4 says $D_R$ contains no other zero. Since every point of the open right half-plane lies in some sufficiently large $D_R$, there is no second zero with positive real part.
+the same point $z_0$ lies in $D_R$, and step [](#s1-4){.pf-ref} says $D_R$ contains no other zero. Since every point of the open right half-plane lies in some sufficiently large $D_R$, there is no second zero with positive real part.
 
 :::
 
@@ -235,7 +235,7 @@ the same point $z_0$ lies in $D_R$, and step <1>4 says $D_R$ contains no other z
 
 ::: pf-qed
 
-Step <1>5 is the required existence-and-uniqueness statement.
+Step [](#s1-5){.pf-ref} is the required existence-and-uniqueness statement.
 
 :::
 

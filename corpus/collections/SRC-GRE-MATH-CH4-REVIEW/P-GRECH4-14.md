@@ -34,7 +34,7 @@ is exact and $g(0, y) = 0$ for all $y \neq 0$. What is $g(x, 1)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Exactness requires
 $$
@@ -61,7 +61,7 @@ the displayed identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $y\ne0$,
 $$
@@ -75,7 +75,7 @@ for some function $h$.
 
 ::: pf-proof
 
-Integrating step <1>1 with respect to $x$, set $u=xy$. Then
+Integrating step [](#s1-1){.pf-ref} with respect to $x$, set $u=xy$. Then
 $$
 \int x\cos(xy)\,dx
 =\frac1{y^2}\int u\cos u\,du.
@@ -95,7 +95,7 @@ and the constant of integration may depend on $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The condition $g(0,y)=0$ forces
 $$
@@ -105,7 +105,7 @@ $$
 
 ::: pf-proof
 
-Putting $x=0$ into step <1>2 gives
+Putting $x=0$ into step [](#s1-2){.pf-ref} gives
 $$
 0=g(0,y)=\frac1{y^2}+h(y)
 $$
@@ -115,7 +115,7 @@ for every nonzero $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -126,7 +126,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Substitute $y=1$ and the function $h$ from step <1>3 into step <1>2.
+Substitute $y=1$ and the function $h$ from step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -134,7 +134,7 @@ Substitute $y=1$ and the function $h$ from step <1>3 into step <1>2.
 
 ::: pf-qed
 
-Step <1>4 gives the requested function and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested function and corresponding choice.
 
 :::
 

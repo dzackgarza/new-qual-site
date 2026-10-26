@@ -24,7 +24,7 @@ Both define metrics on $C[0,1]$. Which metric induces the finer topology?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $f,g\in C[0,1]$,
 $$
@@ -50,14 +50,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The topology induced by $\mu$ is finer than the topology induced by $\rho$.
 
 
 ::: pf-proof
 
-Fix $f\in C[0,1]$ and $\varepsilon>0$. By step <1>1,
+Fix $f\in C[0,1]$ and $\varepsilon>0$. By step [](#s1-1){.pf-ref},
 $$
 B_\mu(f,\varepsilon)
 \subseteq
@@ -69,7 +69,7 @@ Hence every $\rho$-open neighborhood of $f$ contains a $\mu$-open neighborhood o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The inclusion of topologies is strict.
 
@@ -97,7 +97,7 @@ Thus $f_n\to0$ in the metric $\rho$ but not in the metric $\mu$. Therefore the t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 proves fineness, and step <1>3 proves strictness.
+Step [](#s1-2){.pf-ref} proves fineness, and step [](#s1-3){.pf-ref} proves strictness.
 
 :::
 
@@ -115,7 +115,7 @@ Step <1>2 proves fineness, and step <1>3 proves strictness.
 
 ::: pf-qed
 
-Step <1>4 answers the comparison question.
+Step [](#s1-4){.pf-ref} answers the comparison question.
 
 :::
 

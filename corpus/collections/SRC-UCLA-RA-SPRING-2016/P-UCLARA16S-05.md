@@ -38,7 +38,7 @@ Let
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $f\in\mathcal D$, there are constants $c>0$ and $r_0>0$ such that
 \[
@@ -70,7 +70,7 @@ Take $c=|f(0)|/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $f\in\mathcal D$ there is a constant $C_f>0$, independent of $t$, such that
 \[
@@ -107,7 +107,7 @@ C_{\mathrm P}
 \frac{\sin^2(t|\xi|)}{|\xi|^2}
 |f(\xi)|^2\,d\xi.
 \]
-Using step <1>1 and polar coordinates,
+Using step [](#s1-1){.pf-ref} and polar coordinates,
 \[
 \begin{aligned}
 \|u(\cdot,t)\|_{L^2}^2
@@ -131,7 +131,7 @@ Take $C_f=2\pi C_{\mathrm P}c^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -171,7 +171,7 @@ The final series diverges by comparison with the harmonic series. Hence the inte
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $f\in\mathcal D$,
 \[
@@ -184,20 +184,20 @@ For every $f\in\mathcal D$,
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \|u(\cdot,t)\|_{L^2}^2
 \ge
 C_f
 \int_0^{t r_0}\frac{\sin^2 s}{s}\,ds.
 \]
-Since $t r_0\to\infty$ and the integral diverges by step <1>3, the squared norm tends to infinity, hence so does the norm.
+Since $t r_0\to\infty$ and the integral diverges by step [](#s1-3){.pf-ref}, the squared norm tends to infinity, hence so does the norm.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
 
@@ -240,7 +240,7 @@ Thus every $L^2$ function can be approximated arbitrarily closely by elements of
 
 ::: pf-qed
 
-Step <1>4 proves the required divergence for every $f\in\mathcal D$, and step <1>5 proves that $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+Step [](#s1-4){.pf-ref} proves the required divergence for every $f\in\mathcal D$, and step [](#s1-5){.pf-ref} proves that $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
 
 :::
 

@@ -26,7 +26,7 @@ Prove that at least one of $1$ or $-1$ is an eigenvalue of $A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial
 \[
@@ -60,7 +60,7 @@ By the intermediate value theorem, there is $\lambda\in\mathbb R$ with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a nonzero real vector $v$ satisfying
 \[
@@ -70,7 +70,7 @@ Av=\lambda v.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \det(\lambda I-A)=0,
 \]
@@ -83,9 +83,9 @@ so the real matrix $\lambda I-A$ is singular. Hence its kernel contains a nonzer
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The real eigenvalue $\lambda$ from step <1>2 satisfies
+The real eigenvalue $\lambda$ from step [](#s1-2){.pf-ref} satisfies
 \[
 |\lambda|=1.
 \]
@@ -131,18 +131,18 @@ Hence $|\lambda|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One of $1$ or $-1$ is an eigenvalue of $A$.
 
 
 ::: pf-proof
 
-The number $\lambda$ is real by step <1>1 and satisfies $|\lambda|=1$ by step <1>3. Therefore
+The number $\lambda$ is real by step [](#s1-1){.pf-ref} and satisfies $|\lambda|=1$ by step [](#s1-3){.pf-ref}. Therefore
 \[
 \lambda\in\{1,-1\}.
 \]
-By step <1>2, $\lambda$ is an eigenvalue. Hence
+By step [](#s1-2){.pf-ref}, $\lambda$ is an eigenvalue. Hence
 \[
 \boxed{1\text{ or }-1\text{ is an eigenvalue of }A}.
 \]
@@ -153,7 +153,7 @@ By step <1>2, $\lambda$ is an eigenvalue. Hence
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

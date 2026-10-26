@@ -30,7 +30,7 @@ Determine the functions for which equality can hold at some nonzero $z$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $z$ in the unit disk,
 \[
@@ -51,7 +51,7 @@ which is the stated estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z$ in the unit disk,
 \[
@@ -65,7 +65,7 @@ Using $f(0)=0$, integrate along the radial segment from $0$ to $z$:
 \[
 f(z)=\int_0^1 f'(tz)z\,dt.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |f'(tz)|\le t|z|.
 \]
@@ -81,9 +81,9 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-If equality in step <1>2 holds at some $z_0\ne0$, then
+If equality in step [](#s1-2){.pf-ref} holds at some $z_0\ne0$, then
 \[
 f'(z)=\lambda z
 \]
@@ -96,13 +96,13 @@ Assume
 \[
 |f(z_0)|=\frac{|z_0|^2}{2}.
 \]
-The two inequalities in the proof of step <1>2 must then both be equalities.
+The two inequalities in the proof of step [](#s1-2){.pf-ref} must then both be equalities.
 In particular,
 \[
 \int_0^1 |f'(tz_0)|\,|z_0|\,dt
 =\int_0^1 t|z_0|^2\,dt.
 \]
-By step <1>1, the continuous function
+By step [](#s1-1){.pf-ref}, the continuous function
 \[
 t\longmapsto t|z_0|-|f'(tz_0)|
 \]
@@ -122,7 +122,7 @@ throughout the unit disk for some $|\lambda|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Equality can hold at a nonzero point exactly for the functions
 \[
@@ -132,7 +132,7 @@ Equality can hold at a nonzero point exactly for the functions
 
 ::: pf-proof
 
-By step <1>3, equality at a nonzero point implies
+By step [](#s1-3){.pf-ref}, equality at a nonzero point implies
 $f'(z)=\lambda z$ with $|\lambda|=1$. Since $f(0)=0$, integration gives
 \[
 f(z)=\frac{\lambda}{2}z^2.
@@ -155,7 +155,7 @@ for every $z$.
 
 ::: pf-qed
 
-Step <1>2 proves the estimate, and step <1>4 determines precisely its equality
+Step [](#s1-2){.pf-ref} proves the estimate, and step [](#s1-4){.pf-ref} determines precisely its equality
 cases.
 
 :::

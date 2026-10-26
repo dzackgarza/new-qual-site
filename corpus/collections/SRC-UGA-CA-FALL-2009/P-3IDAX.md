@@ -28,7 +28,7 @@ be a nonconstant complex polynomial.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $p$ has no zero in $\CC$, then $1/p$ is entire.
 
@@ -43,7 +43,7 @@ Hence $1/p$ is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exist $R>0$ and $c>0$ such that
 $$
@@ -79,15 +79,15 @@ Thus the claim holds with $c=|a_n|/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the assumption of step <1>1, the function $1/p$ is bounded
+Under the assumption of step [](#s1-1){.pf-ref}, the function $1/p$ is bounded
 on $\CC$.
 
 
 ::: pf-proof
 
-By step <1>2, for $|z|\ge R$,
+By step [](#s1-2){.pf-ref}, for $|z|\ge R$,
 $$
 \left|\frac1{p(z)}\right|
 \le \frac{1}{c|z|^n}
@@ -106,14 +106,14 @@ $1/p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The assumption that $p$ has no zero leads to a contradiction.
 
 
 ::: pf-proof
 
-By steps <1>1 and <1>3, the function $1/p$ is bounded and entire.
+By steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, the function $1/p$ is bounded and entire.
 Liouville's theorem therefore implies that $1/p$ is constant. Hence $p$
 is constant, contradicting the hypothesis that $\deg p=n\ge1$.
 
@@ -121,21 +121,21 @@ is constant, contradicting the hypothesis that $\deg p=n\ge1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every nonconstant polynomial in $\CC[z]$ has a zero in $\CC$.
 
 
 ::: pf-proof
 
-Step <1>4 proves that a nonconstant complex polynomial cannot be
+Step [](#s1-4){.pf-ref} proves that a nonconstant complex polynomial cannot be
 zero-free. Therefore it has at least one complex root.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently every nonconstant polynomial in $\CC[z]$ factors
 completely into linear factors.
@@ -143,7 +143,7 @@ completely into linear factors.
 
 ::: pf-proof
 
-Proceed by induction on the degree. Step <1>5 gives a root $\alpha$, so
+Proceed by induction on the degree. Step [](#s1-5){.pf-ref} gives a root $\alpha$, so
 the factor theorem yields
 $$
 p(z)=(z-\alpha)q(z)
@@ -158,7 +158,7 @@ Algebra.
 
 ::: pf-qed
 
-Steps <1>5--<1>6 prove the Fundamental Theorem of Algebra by complex
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove the Fundamental Theorem of Algebra by complex
 analysis.
 
 :::

@@ -22,7 +22,7 @@ Prove that $\operatorname { G a l } ( L / E _ { 1 } E _ { 2 } )$ equals $H _ { 1
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 An element
 $$
@@ -52,7 +52,7 @@ Conversely, suppose $\sigma$ fixes $E_1$ and $E_2$ pointwise. The compositum $E_
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $i=1,2$,
 $$
@@ -72,7 +72,7 @@ The fundamental theorem of Galois theory for the finite Galois extension $L/F$ s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -84,7 +84,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \operatorname{Gal}(L/E_1E_2)
 =
@@ -92,7 +92,7 @@ $$
 \cap
 \operatorname{Gal}(L/E_2).
 $$
-Substitute the identities from step <1>2.
+Substitute the identities from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -100,7 +100,7 @@ Substitute the identities from step <1>2.
 
 ::: pf-qed
 
-Step <1>3 is exactly the required equality.
+Step [](#s1-3){.pf-ref} is exactly the required equality.
 
 :::
 

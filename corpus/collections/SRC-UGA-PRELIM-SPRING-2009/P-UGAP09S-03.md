@@ -32,7 +32,7 @@ F_k(x)=\int_0^x F_{k-1}(t)\,dt.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each $F_k$ is continuously differentiable and
 \[
@@ -58,7 +58,7 @@ Induction gives the claim for every $k\le n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -73,7 +73,7 @@ f^{(n)}(x)=\frac1{\sqrt{3+x^4}}
 
 ::: pf-proof
 
-Repeatedly applying step <1>1 gives
+Repeatedly applying step [](#s1-1){.pf-ref} gives
 \[
 F_n^{(n)}
 =F_{n-1}^{(n-1)}
@@ -89,7 +89,7 @@ By definition of $F_0$, this is the required derivative.
 
 ::: pf-qed
 
-Step <1>2 constructs the required function for the arbitrary natural number
+Step [](#s1-2){.pf-ref} constructs the required function for the arbitrary natural number
 $n$.
 
 :::

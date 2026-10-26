@@ -28,7 +28,7 @@ Let $(f_n)$ be a Cauchy sequence in $C[0,1]$ with respect to the supremum norm.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy.
 
@@ -53,7 +53,7 @@ Thus $(f_n(x))$ is Cauchy in $\mathbb R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -64,13 +64,13 @@ for each $x\in[0,1]$.
 
 ::: pf-proof
 
-By step <1>1 and completeness of $\mathbb R$, the displayed limit exists for every $x\in[0,1]$.
+By step [](#s1-1){.pf-ref} and completeness of $\mathbb R$, the displayed limit exists for every $x\in[0,1]$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The convergence $f_n\to f$ is uniform on $[0,1]$.
 
@@ -85,7 +85,7 @@ whenever $m,n\ge N$. Fix $n\ge N$ and $x\in[0,1]$. For every $m\ge N$,
 \[
 |f_n(x)-f_m(x)|<\frac{\varepsilon}{2}.
 \]
-Letting $m\to\infty$ and using step <1>2 gives
+Letting $m\to\infty$ and using step [](#s1-2){.pf-ref} gives
 \[
 |f_n(x)-f(x)|
 \le
@@ -103,14 +103,14 @@ for every $n\ge N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is continuous on $[0,1]$.
 
 
 ::: pf-proof
 
-Fix $x_0\in[0,1]$ and $\varepsilon>0$. By step <1>3, choose $N$ such that
+Fix $x_0\in[0,1]$ and $\varepsilon>0$. By step [](#s1-3){.pf-ref}, choose $N$ such that
 \[
 \|f-f_N\|_\infty<\frac{\varepsilon}{3}.
 \]
@@ -138,18 +138,18 @@ Thus $f$ is continuous at every $x_0\in[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Cauchy sequence $(f_n)$ converges in $C[0,1]$.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 f\in C[0,1].
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \|f_n-f\|_\infty\to0.
 \]
@@ -159,7 +159,7 @@ Thus $(f_n)$ converges to an element of the metric space $C[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -169,7 +169,7 @@ Therefore
 
 ::: pf-proof
 
-The Cauchy sequence $(f_n)$ was arbitrary, and step <1>5 proves that every such sequence converges in $C[0,1]$. The argument in step <1>4 also proves the uniform-limit theorem directly, so it covers the stricter Fall 2003 appearance of this problem as well.
+The Cauchy sequence $(f_n)$ was arbitrary, and step [](#s1-5){.pf-ref} proves that every such sequence converges in $C[0,1]$. The argument in step [](#s1-4){.pf-ref} also proves the uniform-limit theorem directly, so it covers the stricter Fall 2003 appearance of this problem as well.
 
 :::
 
@@ -177,7 +177,7 @@ The Cauchy sequence $(f_n)$ was arbitrary, and step <1>5 proves that every such 
 
 ::: pf-qed
 
-Step <1>6 is the required completeness statement.
+Step [](#s1-6){.pf-ref} is the required completeness statement.
 
 :::
 

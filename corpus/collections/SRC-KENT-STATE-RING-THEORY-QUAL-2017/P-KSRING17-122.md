@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The element
 $$
@@ -54,7 +54,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -97,7 +97,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $N$ is an additive subgroup of $R$.
 
@@ -105,18 +105,18 @@ The set $N$ is an additive subgroup of $R$.
 ::: pf-proof
 
 By hypothesis, $N$ is closed under addition.
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 0\in N,
 $$
-and step <1>2 gives closure under additive inverses.
+and step [](#s1-2){.pf-ref} gives closure under additive inverses.
 Thus $N$ is an additive subgroup.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -177,13 +177,13 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives the additive-subgroup condition, and step <1>4 gives absorption under multiplication by arbitrary elements of $R$.
+Step [](#s1-3){.pf-ref} gives the additive-subgroup condition, and step [](#s1-4){.pf-ref} gives absorption under multiplication by arbitrary elements of $R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal $N$ is proper.
 
@@ -208,7 +208,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every nonzero element of
 $$
@@ -265,8 +265,8 @@ is a field, so $N$ is maximal.
 
 ::: pf-proof
 
-By step <1>6, the quotient is nonzero.
-Step <1>7 shows every nonzero element is invertible.
+By step [](#s1-6){.pf-ref}, the quotient is nonzero.
+Step [](#s1-7){.pf-ref} shows every nonzero element is invertible.
 Thus
 $$
 R/N
@@ -282,7 +282,7 @@ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every proper ideal of $R$ is contained in $N$.
 
@@ -320,7 +320,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The ideal $N$ is the unique maximal ideal.
 
@@ -332,11 +332,11 @@ $$
 M
 $$
 be any maximal ideal.
-It is proper, so step <1>9 gives
+It is proper, so step [](#s1-9){.pf-ref} gives
 $$
 M\subseteq N.
 $$
-Since $N$ is proper by step <1>6, maximality of $M$ forces
+Since $N$ is proper by step [](#s1-6){.pf-ref}, maximality of $M$ forces
 $$
 M=N.
 $$
@@ -346,7 +346,7 @@ Thus every maximal ideal is equal to $N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -359,7 +359,7 @@ $$
 
 ::: pf-proof
 
-Step <1>10 shows that $R$ has exactly one maximal ideal.
+Step [](#s1-10){.pf-ref} shows that $R$ has exactly one maximal ideal.
 
 :::
 
@@ -367,7 +367,7 @@ Step <1>10 shows that $R$ has exactly one maximal ideal.
 
 ::: pf-qed
 
-Step <1>11 is the required conclusion.
+Step [](#s1-11){.pf-ref} is the required conclusion.
 
 :::
 

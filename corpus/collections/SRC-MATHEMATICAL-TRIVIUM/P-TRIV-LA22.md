@@ -26,7 +26,7 @@ eigenvectors.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $A$ and $B$ have a basis
 $$
@@ -75,20 +75,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Thus a common eigenbasis is sufficient for the commutator to vanish.
 
 
 ::: pf-proof
 
-This is step <1>1.
+This is step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A common eigenbasis is not necessary for two transformations to
 commute.
@@ -128,7 +128,7 @@ cannot be a basis of common eigenvectors of $A$ and $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the answers are
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 proves sufficiency, and step <1>3 gives a counterexample to
+Step [](#s1-2){.pf-ref} proves sufficiency, and step [](#s1-3){.pf-ref} gives a counterexample to
 necessity.
 
 :::
@@ -147,7 +147,7 @@ necessity.
 
 ::: pf-qed
 
-Step <1>4 answers both questions.
+Step [](#s1-4){.pf-ref} answers both questions.
 
 :::
 

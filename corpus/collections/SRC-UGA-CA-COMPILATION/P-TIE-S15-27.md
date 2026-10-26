@@ -23,7 +23,7 @@ Compute the following integrals.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $0<a<n$,
 $$
@@ -89,7 +89,7 @@ Multiplying by $1/n$ proves the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $0<s<4$, define
 $$
@@ -158,7 +158,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -173,7 +173,7 @@ $$
 
 ::: pf-proof
 
-For $s$ in a small closed interval around $1$, the derivative of the integrand in step <1>2 is
+For $s$ in a small closed interval around $1$, the derivative of the integrand in step [](#s1-2){.pf-ref} is
 $$
 \frac{x^{s-1}\log x}{(1+x^2)^2},
 $$
@@ -184,7 +184,7 @@ J'(1)
 \int_0^\infty
 \frac{\log x}{(1+x^2)^2}\,dx.
 $$
-Differentiate the closed form from step <1>2:
+Differentiate the closed form from step [](#s1-2){.pf-ref}:
 $$
 J(s)
 =
@@ -210,7 +210,7 @@ This is the desired value.
 
 ::: pf-qed
 
-Step <1>1 evaluates part (i), and step <1>3 evaluates part (ii).
+Step [](#s1-1){.pf-ref} evaluates part (i), and step [](#s1-3){.pf-ref} evaluates part (ii).
 
 :::
 

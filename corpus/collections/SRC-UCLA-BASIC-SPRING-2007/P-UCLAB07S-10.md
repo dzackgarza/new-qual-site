@@ -32,7 +32,7 @@ Prove that $f_n\to f$ uniformly on $\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The limit function $f$ is increasing.
 
@@ -57,7 +57,7 @@ f(x)\le f(y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $\varepsilon>0$.
 There exists $M>0$ such that
@@ -94,7 +94,7 @@ Choose $M$ large enough that both inequalities hold.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $N_0$ such that for every $n\ge N_0$,
 \[
@@ -119,7 +119,7 @@ M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n\ge N_0$ and every $x\le -M$,
 \[
@@ -137,7 +137,7 @@ and
 \[
 0\le f(x)\le f(-M).
 \]
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 f_n(-M)
 \le
@@ -164,7 +164,7 @@ f_n(x)+f(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $n\ge N_0$ and every $x\ge M$,
 \[
@@ -198,7 +198,7 @@ and
 \le
 1-f(M).
 \]
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 1-f_n(M)
 \le
@@ -233,7 +233,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The continuous function $f$ is uniformly continuous on the compact interval $[-M,M]$.
 
@@ -263,7 +263,7 @@ for every $j$.
 
 ::: pf-proof
 
-By step <1>6, choose $\delta>0$ such that
+By step [](#s1-6){.pf-ref}, choose $\delta>0$ such that
 \[
 |x-y|<\delta
 \]
@@ -272,7 +272,7 @@ implies
 |f(x)-f(y)|<\frac{\varepsilon}{3}.
 \]
 Take a partition with mesh less than $\delta$.
-Since $f$ is increasing by step <1>1,
+Since $f$ is increasing by step [](#s1-1){.pf-ref},
 \[
 0\le
 f(x_j)-f(x_{j-1})
@@ -303,7 +303,7 @@ There are finitely many partition points, so take the maximum of those indices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every $n\ge N_1$ and every $x\in[-M,M]$,
 \[
@@ -372,7 +372,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every
 \[
@@ -394,24 +394,24 @@ If
 \[
 x\le-M,
 \]
-apply step <1>4.
+apply step [](#s1-4){.pf-ref}.
 If
 \[
 -M\le x\le M,
 \]
-apply step <1>9.
+apply step [](#s1-9){.pf-ref}.
 If
 \[
 x\ge M,
 \]
-apply step <1>5.
+apply step [](#s1-5){.pf-ref}.
 These three regions cover $\mathbb R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -421,7 +421,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>10 is exactly the definition of uniform convergence.
+Step [](#s1-10){.pf-ref} is exactly the definition of uniform convergence.
 
 :::
 
@@ -429,7 +429,7 @@ Step <1>10 is exactly the definition of uniform convergence.
 
 ::: pf-qed
 
-Step <1>11 is the required conclusion.
+Step [](#s1-11){.pf-ref} is the required conclusion.
 
 :::
 

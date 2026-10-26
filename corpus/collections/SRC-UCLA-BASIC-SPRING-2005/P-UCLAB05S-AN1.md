@@ -30,7 +30,7 @@ p(x)=0\text{ for some }p\in\mathcal F.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $\QQ$ is algebraic.
 
@@ -57,7 +57,7 @@ Hence $\QQ$ is algebraic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\QQ[x]$ of rational-coefficient polynomials is countable.
 
@@ -78,7 +78,7 @@ is a countable union of countable sets, hence countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $X\subseteq\RR$ is algebraic, then either $X=\RR$ or $X$ is countable.
 
@@ -87,20 +87,20 @@ If $X\subseteq\RR$ is algebraic, then either $X=\RR$ or $X$ is countable.
 
 Let $\mathcal F\subseteq\QQ[x]$ define $X$. If the zero polynomial belongs to $\mathcal F$, then every real number is a zero of a polynomial in $\mathcal F$, so $X=\RR$.
 
-Otherwise every polynomial in $\mathcal F$ is nonzero and therefore has only finitely many real zeros. By step <1>2, the family $\mathcal F$ is countable. Hence $X$ is a countable union of finite sets and is therefore countable.
+Otherwise every polynomial in $\mathcal F$ is nonzero and therefore has only finitely many real zeros. By step [](#s1-2){.pf-ref}, the family $\mathcal F$ is countable. Hence $X$ is a countable union of finite sets and is therefore countable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $\RR\setminus\QQ$ is not algebraic.
 
 
 ::: pf-proof
 
-The rationals are countable and the reals are uncountable, so $\RR\setminus\QQ$ is uncountable. It is also a proper subset of $\RR$. Step <1>3 shows that no algebraic set can have both properties. Therefore $\RR\setminus\QQ$ is not algebraic.
+The rationals are countable and the reals are uncountable, so $\RR\setminus\QQ$ is uncountable. It is also a proper subset of $\RR$. Step [](#s1-3){.pf-ref} shows that no algebraic set can have both properties. Therefore $\RR\setminus\QQ$ is not algebraic.
 
 :::
 
@@ -108,7 +108,7 @@ The rationals are countable and the reals are uncountable, so $\RR\setminus\QQ$ 
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>4 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
 
 :::
 

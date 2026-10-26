@@ -21,7 +21,7 @@ Let R be a commutative ring with identity and let U be maximal among non-finitel
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ideal $U$ is proper.
 
@@ -41,7 +41,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 $$
@@ -78,7 +78,7 @@ is finitely generated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, choose generators
+By step [](#s1-2){.pf-ref}, choose generators
 $$
 y_1,\ldots,y_r
 $$
@@ -138,7 +138,7 @@ Thus equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define the colon ideal
 $$
@@ -171,7 +171,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If, in addition,
 $$
@@ -197,7 +197,7 @@ If
 $$
 b\notin U,
 $$
-then the containment from step <1>4 is strict.
+then the containment from step [](#s1-4){.pf-ref} is strict.
 
 :::
 
@@ -222,7 +222,7 @@ is finitely generated.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 (U:a)
 $$
@@ -236,7 +236,7 @@ to be finitely generated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Choose generators
 $$
@@ -275,7 +275,7 @@ Conversely, let
 $$
 x\in U.
 $$
-By step <1>3, write
+By step [](#s1-3){.pf-ref}, write
 $$
 x
 =
@@ -323,7 +323,7 @@ so $x$ lies in the displayed finitely generated ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The hypotheses
 $$
@@ -338,13 +338,13 @@ are impossible.
 
 ::: pf-proof
 
-Under those hypotheses, step <1>7 expresses $U$ as a finitely generated ideal, contradicting the assumption that $U$ is not finitely generated.
+Under those hypotheses, step [](#s1-7){.pf-ref} expresses $U$ as a finitely generated ideal, contradicting the assumption that $U$ is not finitely generated.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -354,11 +354,11 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows $U$ is proper. If
+Step [](#s1-1){.pf-ref} shows $U$ is proper. If
 $$
 ab\in U,
 $$
-then step <1>8 says it is impossible for both
+then step [](#s1-8){.pf-ref} says it is impossible for both
 $$
 a\notin U
 $$
@@ -380,7 +380,7 @@ This is exactly the definition of a prime ideal.
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

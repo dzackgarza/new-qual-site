@@ -27,7 +27,7 @@ If one arch of the curve $y = \sin x$ is revolved around the $x$-axis, what's th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Taking the arch on $[0,\pi]$, the volume of revolution is
 $$
@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the volume is
 $$
@@ -84,7 +84,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Substituting step <1>2 into the formula of step <1>1 gives
+Substituting step [](#s1-2){.pf-ref} into the formula of step [](#s1-1){.pf-ref} gives
 $$
 V=\pi\cdot\frac\pi2=\frac{\pi^2}{2}.
 $$
@@ -95,7 +95,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required volume.
+Step [](#s1-3){.pf-ref} gives the required volume.
 
 :::
 

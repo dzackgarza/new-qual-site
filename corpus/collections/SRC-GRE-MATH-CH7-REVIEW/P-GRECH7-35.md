@@ -27,7 +27,7 @@ In how many ways can a company separate its 12 employees into 4 equally-sized co
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If the four committees are distinguished, the number of assignments is
 $$
@@ -45,7 +45,7 @@ Choose the three employees for the first committee, then three of the remaining 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If the four committees are not distinguished, the number of partitions is
 $$
@@ -55,7 +55,7 @@ $$
 
 ::: pf-proof
 
-The construction in step <1>1 orders the four three-person blocks by committee. If the committees have no labels, each partition into four blocks is counted once for each of the $4!$ permutations of its blocks. Dividing the count in step <1>1 by $4!$ gives
+The construction in step [](#s1-1){.pf-ref} orders the four three-person blocks by committee. If the committees have no labels, each partition into four blocks is counted once for each of the $4!$ permutations of its blocks. Dividing the count in step [](#s1-1){.pf-ref} by $4!$ gives
 $$
 \frac{369{,}600}{24}=15{,}400.
 $$
@@ -64,20 +64,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The wording “separate its 12 employees into 4 equally-sized committees” does not specify whether the four committees are distinguished, so the literal statement does not determine a unique count.
 
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 give different counts under the two standard conventions. The problem statement supplies no committee names, tasks, or other labels that choose between them, and $15{,}400$ is not among the answer choices.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give different counts under the two standard conventions. The problem statement supplies no committee names, tasks, or other labels that choose between them, and $15{,}400$ is not among the answer choices.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the convention explicitly used by the source solution, the answer is
 $$
@@ -88,7 +88,7 @@ which is choice (A).
 
 ::: pf-proof
 
-The source solution states that it matters which committee each employee is placed into and uses exactly the distinguished-committee count proved in step <1>1. Thus choice (A) is the intended answer under that convention.
+The source solution states that it matters which committee each employee is placed into and uses exactly the distinguished-committee count proved in step [](#s1-1){.pf-ref}. Thus choice (A) is the intended answer under that convention.
 
 :::
 
@@ -96,7 +96,7 @@ The source solution states that it matters which committee each employee is plac
 
 ::: pf-qed
 
-Steps <1>3 and <1>4 record the ambiguity in the printed statement and the answer under the source's intended convention.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} record the ambiguity in the printed statement and the answer under the source's intended convention.
 
 :::
 

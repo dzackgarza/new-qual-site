@@ -32,7 +32,7 @@ separately.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The product topology on
 \[
@@ -71,7 +71,7 @@ for all but finitely many indices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A topological space $X$ is normal if every pair of disjoint closed
 sets
@@ -104,7 +104,7 @@ U\cap V=\varnothing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A topological space $X$ is regular if every point and disjoint closed
 set can be separated by disjoint open neighborhoods.
@@ -137,7 +137,7 @@ F\subseteq V.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A topological space $X$ is second countable if its topology has a
 countable basis.
@@ -166,7 +166,7 @@ x\in B_n\subseteq U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 **Tychonoff Product Theorem.**
 
@@ -190,7 +190,7 @@ Tychonoff's theorem is equivalent to the Axiom of Choice.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 **Urysohn's Lemma.**
 
@@ -220,7 +220,7 @@ implicit; it is not needed for the displayed separation conclusion itself.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 **Urysohn Metrization Theorem.**
 
@@ -240,7 +240,7 @@ every regular second-countable space is metrizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 **Tietze Extension Theorem.**
 
@@ -287,8 +287,8 @@ and then undoing that homeomorphism.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 give the four requested definitions, and
-steps <1>5--<1>8 state the four requested theorems.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} give the four requested definitions, and
+steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} state the four requested theorems.
 
 :::
 

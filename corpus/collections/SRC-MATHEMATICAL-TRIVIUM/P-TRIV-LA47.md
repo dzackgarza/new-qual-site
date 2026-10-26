@@ -44,7 +44,7 @@ The cross term $2x_1x_2$ corresponds to off-diagonal entries $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The leading principal minors of $F$ are
 $$
@@ -65,34 +65,34 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence $f$ is positive definite.
 
 
 ::: pf-proof
 
-Both leading principal minors in step <1>2 are positive. Sylvester's criterion
+Both leading principal minors in step [](#s1-2){.pf-ref} are positive. Sylvester's criterion
 therefore gives positive definiteness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Step <1>3 shows that at least one form is sign definite.
+Step [](#s1-3){.pf-ref} shows that at least one form is sign definite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Complete the square in $f$:
 $$
@@ -117,7 +117,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 $$
@@ -133,13 +133,13 @@ $$
 
 ::: pf-proof
 
-Substitute the definitions into step <1>5.
+Substitute the definitions into step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In the $y$-coordinates,
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-From step <1>6,
+From step [](#s1-6){.pf-ref},
 $$
 x_2=\frac{y_2}{\sqrt2},
 \qquad
@@ -185,7 +185,7 @@ $$
 
 ::: pf-proof
 
-The coefficient of $y_1y_2$ in step <1>7 is $4\sqrt2$, so the off-diagonal
+The coefficient of $y_1y_2$ in step [](#s1-7){.pf-ref} is $4\sqrt2$, so the off-diagonal
 matrix entries are $2\sqrt2$.
 
 :::
@@ -221,7 +221,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Corresponding orthonormal eigenvectors are
 $$
@@ -258,7 +258,7 @@ Their norms equal $1$, and their inner product is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Define new coordinates $z_1,z_2$ by
 $$
@@ -286,14 +286,14 @@ $$
 
 ::: pf-proof
 
-The columns of $R$ are the orthonormal eigenvectors from step <1>10, so $R$
+The columns of $R$ are the orthonormal eigenvectors from step [](#s1-10){.pf-ref}, so $R$
 is orthogonal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 In the $z$-coordinates,
 $$
@@ -311,7 +311,7 @@ Because $R$ is orthogonal,
 $$
 y_1^2+y_2^2=z_1^2+z_2^2,
 $$
-so the form $f$ from step <1>6 stays diagonal with identity matrix.
+so the form $f$ from step [](#s1-6){.pf-ref} stays diagonal with identity matrix.
 
 Also,
 $$
@@ -321,13 +321,13 @@ R^TG_yR=
 0&-4
 \end{pmatrix}
 $$
-by step <1>10, giving the stated form of $g$.
+by step [](#s1-10){.pf-ref}, giving the stated form of $g$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Explicitly, the simultaneous coordinate change from $x$ to $z$ is
 $$
@@ -345,7 +345,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 \begin{pmatrix}y_1\\y_2\end{pmatrix}
 =
@@ -355,13 +355,13 @@ $$
 \end{pmatrix}
 \begin{pmatrix}x_1\\x_2\end{pmatrix}.
 $$
-Apply $R^T=R$ from step <1>11 and simplify.
+Apply $R^T=R$ from step [](#s1-11){.pf-ref} and simplify.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Equivalently,
 $$
@@ -379,20 +379,20 @@ $$
 
 ::: pf-proof
 
-Solve the two linear equations in step <1>13 for $x_1,x_2$.
+Solve the two linear equations in step [](#s1-13){.pf-ref} for $x_1,x_2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>12--<1>14 give the simultaneous diagonalization and the explicit
+Steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} give the simultaneous diagonalization and the explicit
 change of coordinates.
 
 :::
@@ -401,7 +401,7 @@ change of coordinates.
 
 ::: pf-qed
 
-Steps <1>4 and <1>15 establish parts (a) and (b), respectively.
+Steps [](#s1-4){.pf-ref} and [](#s1-15){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

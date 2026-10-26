@@ -27,7 +27,7 @@ Give an example each of an analytic function having at the origin:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A removable singularity at the origin is given by
 \[
@@ -68,7 +68,7 @@ removable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A pole at the origin is given by
 \[
@@ -96,7 +96,7 @@ of order $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 An essential singularity at the origin is given by
 \[
@@ -132,7 +132,7 @@ finitely many. Therefore the singularity of $e^{1/z}$ at $0$ is essential.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus one valid list is
 \[
@@ -149,7 +149,7 @@ for removable, pole, and essential singularities respectively.
 
 ::: pf-proof
 
-This is exactly the content of steps <1>1--<1>3.
+This is exactly the content of steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -157,7 +157,7 @@ This is exactly the content of steps <1>1--<1>3.
 
 ::: pf-qed
 
-Step <1>4 supplies and classifies all three requested examples.
+Step [](#s1-4){.pf-ref} supplies and classifies all three requested examples.
 
 :::
 

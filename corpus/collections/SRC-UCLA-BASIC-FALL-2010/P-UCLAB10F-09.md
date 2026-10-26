@@ -63,7 +63,7 @@ and
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If the iteration converges to a vector $\vec x$, then
 \[
@@ -90,7 +90,7 @@ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The unique fixed point is
 \[
@@ -106,7 +106,7 @@ The unique fixed point is
 
 ::: pf-proof
 
-The fixed-point equation from step <1>1 is
+The fixed-point equation from step [](#s1-1){.pf-ref} is
 \[
 (I-C)\vec x=\vec d.
 \]
@@ -135,7 +135,7 @@ Thus any convergent iteration must converge to the displayed vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -155,7 +155,7 @@ then
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \vec x_*=C\vec x_*+\vec d.
 \]
@@ -174,7 +174,7 @@ C(\vec x_k-\vec x_*).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The matrix $C$ has eigenvalue
 \[
@@ -212,7 +212,7 @@ Cu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The iteration does not converge for arbitrary initial vectors.
 
@@ -239,7 +239,7 @@ Then
 \end{pmatrix}
 =u.
 \]
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 \vec e_k=C^ku
 =
@@ -257,7 +257,7 @@ so $\vec x_k$ does not converge.
 
 ::: pf-qed
 
-Step <1>2 answers part (a), and step <1>5 answers part (b) negatively.
+Step [](#s1-2){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} answers part (b) negatively.
 
 :::
 

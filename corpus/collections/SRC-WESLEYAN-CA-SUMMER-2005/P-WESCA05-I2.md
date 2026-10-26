@@ -21,7 +21,7 @@ Give the definition of a cycle.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the contour-integration setting, a cycle in an open set \(U\subseteq\mathbb C\) is a finite formal integer linear combination
 \[
@@ -49,7 +49,7 @@ Equivalently, a cycle is an integral \(1\)-chain whose boundary is zero.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition.
+Step [](#s1-1){.pf-ref} gives the requested definition.
 
 :::
 

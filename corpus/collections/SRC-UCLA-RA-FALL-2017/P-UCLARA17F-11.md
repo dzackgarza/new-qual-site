@@ -31,7 +31,7 @@ R\coloneqq\inf\{|w|:w\notin f(\mathbb D)\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The omitted set $\mathbb C\setminus f(\mathbb D)$ is nonempty; moreover, if $R\ge1$, then $\mathbb D\subset f(\mathbb D)$.
 
@@ -50,14 +50,14 @@ contrary to $R\ge1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $R\ge1$, then $f(z)=z$ for every $z\in\mathbb D$.
 
 
 ::: pf-proof
 
-By step <1>1, the inverse of the injective holomorphic map $f$ is defined on $\mathbb D$. Let
+By step [](#s1-1){.pf-ref}, the inverse of the injective holomorphic map $f$ is defined on $\mathbb D$. Let
 \[
 g\coloneqq f^{-1}|_{\mathbb D}:\mathbb D\to\mathbb D.
 \]
@@ -77,7 +77,7 @@ and applying $f$ gives $f(w)=w$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -87,7 +87,7 @@ R\le1.
 
 ::: pf-proof
 
-If $R>1$, then step <1>2 gives $f(z)=z$ on $\mathbb D$. But then $f(\mathbb D)=\mathbb D$, so
+If $R>1$, then step [](#s1-2){.pf-ref} gives $f(z)=z$ on $\mathbb D$. But then $f(\mathbb D)=\mathbb D$, so
 \[
 R
 =
@@ -100,14 +100,14 @@ a contradiction. Hence $R\le1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equality $R=1$ holds if and only if $f(z)=z$ for every $z\in\mathbb D$.
 
 
 ::: pf-proof
 
-If $R=1$, then $R\ge1$, so step <1>2 gives $f(z)=z$. Conversely, if $f(z)=z$, then $f(\mathbb D)=\mathbb D$, and therefore
+If $R=1$, then $R\ge1$, so step [](#s1-2){.pf-ref} gives $f(z)=z$. Conversely, if $f(z)=z$, then $f(\mathbb D)=\mathbb D$, and therefore
 \[
 R
 =
@@ -121,7 +121,7 @@ R
 
 ::: pf-qed
 
-Step <1>3 proves the required inequality, and step <1>4 proves the equality characterization.
+Step [](#s1-3){.pf-ref} proves the required inequality, and step [](#s1-4){.pf-ref} proves the equality characterization.
 
 :::
 

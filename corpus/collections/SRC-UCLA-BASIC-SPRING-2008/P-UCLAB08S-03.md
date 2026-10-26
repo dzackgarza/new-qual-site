@@ -105,7 +105,7 @@ The odd powers acquire minus signs, while
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Adding the two Taylor formulas and subtracting $2f(x)$ gives
 \[
@@ -146,7 +146,7 @@ The fourth-order remainders add as displayed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Dividing by $h^2$ yields
 \[
@@ -167,7 +167,7 @@ f^{(4)}(\xi_-)
 
 ::: pf-proof
 
-Divide the identity from step <1>3 by
+Divide the identity from step [](#s1-3){.pf-ref} by
 \[
 h^2,
 \]
@@ -180,7 +180,7 @@ h\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the approximation error satisfies
 \[
@@ -207,13 +207,13 @@ Subtract
 \[
 f''(x)
 \]
-from the formula in step <1>4.
+from the formula in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since $f^{(4)}$ is continuous, there exists
 \[
@@ -263,7 +263,7 @@ f^{(4)}(\xi)
 f^{(4)}(\xi_+)+f^{(4)}(\xi_-)
 }{2}.
 \]
-Substituting this into step <1>5 gives
+Substituting this into step [](#s1-5){.pf-ref} gives
 \[
 E(h)
 =
@@ -274,7 +274,7 @@ E(h)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular,
 \[
@@ -294,7 +294,7 @@ E(h)=O(h^2).
 
 ::: pf-proof
 
-Apply absolute values to the formula in step <1>6.
+Apply absolute values to the formula in step [](#s1-6){.pf-ref}.
 The maximum exists because $f^{(4)}$ is continuous on the compact interval between $x-h$ and $x+h$.
 
 :::
@@ -303,7 +303,7 @@ The maximum exists because $f^{(4)}$ is continuous on the compact interval betwe
 
 ::: pf-qed
 
-Steps <1>5--<1>7 give the exact remainder formula and the resulting second-order error estimate.
+Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} give the exact remainder formula and the resulting second-order error estimate.
 If the error is defined with the opposite sign,
 \[
 f''(x)-D_hf(x),

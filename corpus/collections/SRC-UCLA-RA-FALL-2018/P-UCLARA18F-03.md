@@ -36,7 +36,7 @@ where $\overline E$ is the closure of $E$ and $E^\circ$ is the interior of $E$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every closed set \(F\subseteq X\),
 \[
@@ -72,7 +72,7 @@ By dominated convergence, \(\int_X\phi_k\,d\mu\to\mu(F)\) as \(k\to\infty\). Let
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every open set \(G\subseteq X\),
 \[
@@ -82,7 +82,7 @@ For every open set \(G\subseteq X\),
 
 ::: pf-proof
 
-The complement \(X\setminus G\) is closed. Since every \(\mu_n\) and \(\mu\) is a probability measure, step <1>1 gives
+The complement \(X\setminus G\) is closed. Since every \(\mu_n\) and \(\mu\) is a probability measure, step [](#s1-1){.pf-ref} gives
 \[
 \begin{aligned}
 \liminf_{n\to\infty}\mu_n(G)
@@ -96,7 +96,7 @@ The complement \(X\setminus G\) is closed. Since every \(\mu_n\) and \(\mu\) is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For the Borel set \(E\) in the problem,
 \[
@@ -109,7 +109,7 @@ For the Borel set \(E\) in the problem,
 
 ::: pf-proof
 
-Since \(E^\circ\subseteq E\subseteq\overline E\), monotonicity and steps <1>1--<1>2 give
+Since \(E^\circ\subseteq E\subseteq\overline E\), monotonicity and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 \[
 \begin{aligned}
 \mu(E^\circ)
@@ -125,7 +125,7 @@ Since \(E^\circ\subseteq E\subseteq\overline E\), monotonicity and steps <1>1--<
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -143,7 +143,7 @@ monotonicity also gives
 \[
 \mu(E^\circ)\le\mu(E)\le\mu(\overline E),
 \]
-so all three quantities are equal. Step <1>3 then forces
+so all three quantities are equal. Step [](#s1-3){.pf-ref} then forces
 \[
 \liminf_n\mu_n(E)=\limsup_n\mu_n(E)=\mu(E),
 \]
@@ -155,7 +155,7 @@ which is exactly the asserted convergence.
 
 ::: pf-qed
 
-Step <1>4 proves the required convergence for every Borel continuity set \(E\).
+Step [](#s1-4){.pf-ref} proves the required convergence for every Borel continuity set \(E\).
 
 :::
 

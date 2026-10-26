@@ -30,7 +30,7 @@ P(z)=z^4-6z+3.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $P$ has exactly one zero in the disk
 \[
@@ -90,7 +90,7 @@ Hence $P$ has exactly one zero in the unit disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $P$ has exactly four zeros in the disk
 \[
@@ -147,7 +147,7 @@ counted with multiplicity. Therefore $P$ has four zeros in the disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial has no zero on either boundary circle
 \[
@@ -159,7 +159,7 @@ The polynomial has no zero on either boundary circle
 
 ::: pf-proof
 
-The strict Rouché inequalities in steps <1>1 and <1>2 imply that on each
+The strict Rouché inequalities in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} imply that on each
 boundary circle the dominant term has strictly larger modulus than the
 remaining terms. Hence their sum cannot vanish there.
 
@@ -167,7 +167,7 @@ remaining terms. Hence their sum cannot vanish there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Exactly
 \[
@@ -178,15 +178,15 @@ roots of $P$ have modulus strictly between $1$ and $2$.
 
 ::: pf-proof
 
-Step <1>2 gives four zeros in
+Step [](#s1-2){.pf-ref} gives four zeros in
 \[
 |z|<2,
 \]
-and step <1>1 gives one zero in
+and step [](#s1-1){.pf-ref} gives one zero in
 \[
 |z|<1.
 \]
-By step <1>3, no zero lies on either boundary circle. Therefore the annulus
+By step [](#s1-3){.pf-ref}, no zero lies on either boundary circle. Therefore the annulus
 \[
 1<|z|<2
 \]
@@ -202,7 +202,7 @@ zeros, counted with multiplicity.
 
 ::: pf-qed
 
-Step <1>4 gives the requested count.
+Step [](#s1-4){.pf-ref} gives the requested count.
 
 :::
 

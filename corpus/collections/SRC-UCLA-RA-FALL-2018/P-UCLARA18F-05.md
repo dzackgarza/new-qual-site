@@ -41,7 +41,7 @@ F_N=F_{N,\varepsilon}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each \(F_N\) is closed in \([0,1]\), the sequence \((F_N)\) is increasing, and
 \[
@@ -63,7 +63,7 @@ For each fixed \(y\in[0,1]\), the scalar sequence \(f_n(y)\) converges and hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set
 \[
@@ -74,7 +74,7 @@ is dense in \([0,1]\).
 
 ::: pf-proof
 
-It is enough to show that \(\bigcup_N\operatorname{Int}(F_N)\) meets every nonempty relatively open subset of \([0,1]\). Let \(U\subseteq[0,1]\) be nonempty and relatively open. Choose a nondegenerate closed interval \(J\subseteq U\). By step <1>1,
+It is enough to show that \(\bigcup_N\operatorname{Int}(F_N)\) meets every nonempty relatively open subset of \([0,1]\). Let \(U\subseteq[0,1]\) be nonempty and relatively open. Choose a nondegenerate closed interval \(J\subseteq U\). By step [](#s1-1){.pf-ref},
 \[
 J=\bigcup_{N=1}^\infty(F_N\cap J),
 \]
@@ -86,7 +86,7 @@ Thus the union of the interiors is dense. Intersecting it with the dense open se
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If \(x\in D_\varepsilon\), then there are an open interval \(I\ni x\) with \(I\subset(0,1)\) and an integer \(N_x\) such that
 \[
@@ -111,20 +111,20 @@ for every \(y\in I\). Taking the supremum over \(I\) proves the assertion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Part (a) follows: for every \(\varepsilon>0\), the dense set \(\boxed{D_\varepsilon}\) from step <1>2 has the required local uniform-tail property.
+Part (a) follows: for every \(\varepsilon>0\), the dense set \(\boxed{D_\varepsilon}\) from step [](#s1-2){.pf-ref} has the required local uniform-tail property.
 
 
 ::: pf-proof
 
-This is exactly step <1>3 for every \(x\in D_\varepsilon\).
+This is exactly step [](#s1-3){.pf-ref} for every \(x\in D_\varepsilon\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 No continuous function \(g\) on a nonempty open interval \(I\subseteq[0,1]\) can satisfy
 \[
@@ -152,18 +152,18 @@ Continuity at \(x\) would imply simultaneously \(g(x)\ge1-c\) and \(g(x)\le c\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The pointwise limit \(f\) cannot equal \(\boxed{\chi_{\mathbb Q\cap[0,1]}}\).
 
 
 ::: pf-proof
 
-Assume otherwise and apply part (a), step <1>4, with \(\varepsilon=1/3\). Choose \(x\in D_{1/3}\), and let \(I\ni x\) and \(N_x\) be supplied by step <1>3. For any \(n>N_x\), the continuous function \(f_n\) satisfies
+Assume otherwise and apply part (a), step [](#s1-4){.pf-ref}, with \(\varepsilon=1/3\). Choose \(x\in D_{1/3}\), and let \(I\ni x\) and \(N_x\) be supplied by step [](#s1-3){.pf-ref}. For any \(n>N_x\), the continuous function \(f_n\) satisfies
 \[
 \sup_{y\in I}|f_n(y)-\chi_{\mathbb Q\cap[0,1]}(y)|\le\frac13<\frac12,
 \]
-contradicting step <1>5.
+contradicting step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -171,7 +171,7 @@ contradicting step <1>5.
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

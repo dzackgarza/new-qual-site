@@ -26,7 +26,7 @@ Prove that $u_1+y_1,\ldots,u_n+y_n$ are linearly independent.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -46,9 +46,9 @@ To prove linear independence, it suffices to show that every such linear relatio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The relation in step <1>1 implies
+The relation in step [](#s1-1){.pf-ref} implies
 \[
 \sum_{i=1}^n a_i u_i
 =
@@ -64,7 +64,7 @@ Move the perturbation sum to the right-hand side.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $u_1,\ldots,u_n$ is orthonormal,
 \[
@@ -96,7 +96,7 @@ so only the diagonal terms remain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By Cauchy--Schwarz,
 \[
@@ -134,7 +134,7 @@ Apply the scalar Cauchy--Schwarz inequality to the sequences
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -158,7 +158,7 @@ A\le A\eta.
 
 ::: pf-proof
 
-By steps <1>2--<1>4,
+By steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 A
 =
@@ -177,7 +177,7 @@ A\eta.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -200,7 +200,7 @@ Taking square roots yields
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -214,11 +214,11 @@ If
 \[
 A>0,
 \]
-then step <1>5 allows division by $A$, giving
+then step [](#s1-5){.pf-ref} allows division by $A$, giving
 \[
 1\le\eta,
 \]
-contradicting step <1>6.
+contradicting step [](#s1-6){.pf-ref}.
 Hence
 \[
 A=0.
@@ -228,7 +228,7 @@ A=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus
 \[
@@ -242,7 +242,7 @@ By definition,
 \[
 A^2=\sum_{i=1}^n a_i^2.
 \]
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 \[
 \sum_i a_i^2=0.
 \]
@@ -252,7 +252,7 @@ Each term is nonnegative, so every coefficient vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -262,7 +262,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>8 shows that the only linear relation among these vectors is the trivial one.
+Step [](#s1-8){.pf-ref} shows that the only linear relation among these vectors is the trivial one.
 
 :::
 
@@ -270,7 +270,7 @@ Step <1>8 shows that the only linear relation among these vectors is the trivial
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

@@ -70,7 +70,7 @@ and the right-hand side is $e^{-t}e^{3t}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integrating gives
 $$
@@ -90,7 +90,7 @@ An antiderivative of $e^{2t}$ is $e^{2t}/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -104,13 +104,13 @@ $$
 
 ::: pf-proof
 
-Multiply step <1>3 by $e^t$.
+Multiply step [](#s1-3){.pf-ref} by $e^t$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The initial condition $y(0)=2$ gives
 $$
@@ -120,7 +120,7 @@ $$
 
 ::: pf-proof
 
-Substitute $t=0$ into step <1>4:
+Substitute $t=0$ into step [](#s1-4){.pf-ref}:
 $$
 2
 =
@@ -133,7 +133,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -149,7 +149,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>5 into step <1>4.
+Substitute step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -157,7 +157,7 @@ Substitute step <1>5 into step <1>4.
 
 ::: pf-qed
 
-Step <1>6 satisfies both the differential equation and the initial condition.
+Step [](#s1-6){.pf-ref} satisfies both the differential equation and the initial condition.
 
 :::
 

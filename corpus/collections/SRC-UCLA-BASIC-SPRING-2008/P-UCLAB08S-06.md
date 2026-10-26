@@ -25,7 +25,7 @@ Assume for contradiction that no singleton in $Y$ is open.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every singleton
 \[
@@ -60,7 +60,7 @@ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the contradiction hypothesis, every singleton
 \[
@@ -92,26 +92,26 @@ This contradicts the standing assumption.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the contradiction hypothesis, every singleton is nowhere dense.
 
 
 ::: pf-proof
 
-By step <1>1, each singleton is closed.
+By step [](#s1-1){.pf-ref}, each singleton is closed.
 Therefore
 \[
 \overline{\{y\}}=\{y\}.
 \]
-By step <1>2, this closure has empty interior.
+By step [](#s1-2){.pf-ref}, this closure has empty interior.
 That is exactly the definition of nowhere dense.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $Y$ is countable, write
 \[
@@ -129,29 +129,29 @@ is a countable union of nowhere dense subsets of $Y$.
 ::: pf-proof
 
 Countability gives an enumeration of $Y$.
-Step <1>3 shows that each singleton in the union is nowhere dense.
+Step [](#s1-3){.pf-ref} shows that each singleton in the union is nowhere dense.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Step <1>4 contradicts the Baire category theorem.
+Step [](#s1-4){.pf-ref} contradicts the Baire category theorem.
 
 
 ::: pf-proof
 
 The Baire category theorem states that a nonempty complete metric space cannot be expressed as a countable union of nowhere dense subsets of itself.
 The space $Y$ is complete by hypothesis.
-Step <1>4 gives exactly such a representation.
+Step [](#s1-4){.pf-ref} gives exactly such a representation.
 Thus the contradiction hypothesis is impossible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore there exists
 \[
@@ -166,7 +166,7 @@ such that
 ::: pf-proof
 
 The negation of the displayed conclusion was the contradiction hypothesis.
-Step <1>5 shows that hypothesis is false.
+Step [](#s1-5){.pf-ref} shows that hypothesis is false.
 
 :::
 
@@ -174,7 +174,7 @@ Step <1>5 shows that hypothesis is false.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

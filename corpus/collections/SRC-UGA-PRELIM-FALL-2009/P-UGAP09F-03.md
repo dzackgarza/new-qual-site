@@ -27,7 +27,7 @@ Fix $x\in\RR$ with $x\ne1$, and let $S_n\coloneqq\sum_{k=1}^n kx^k$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The claimed identity holds for $n=1$.
 
@@ -44,7 +44,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If the claimed identity holds for some $n\ge1$, then it holds for $n+1$.
 
@@ -67,7 +67,7 @@ This is exactly the stated formula with $n$ replaced by $n+1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $n\ge1$,
 $$
@@ -78,7 +78,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 is the base case and step <1>2 is the induction step, so the result follows by mathematical induction.
+Step [](#s1-1){.pf-ref} is the base case and step [](#s1-2){.pf-ref} is the induction step, so the result follows by mathematical induction.
 
 :::
 
@@ -86,7 +86,7 @@ Step <1>1 is the base case and step <1>2 is the induction step, so the result fo
 
 ::: pf-qed
 
-Step <1>3 is the required identity.
+Step [](#s1-3){.pf-ref} is the required identity.
 
 :::
 

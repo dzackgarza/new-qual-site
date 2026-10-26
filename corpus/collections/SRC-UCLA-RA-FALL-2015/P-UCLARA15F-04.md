@@ -60,7 +60,7 @@ Assume
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that \((e_n)\) is not complete.
 
@@ -73,7 +73,7 @@ Then its closed linear span is a proper closed subspace of \(\mathcal H\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists a unit vector
 \[
@@ -98,7 +98,7 @@ and normalize it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since \((f_n)\) is a complete orthonormal system, Parseval's identity gives
 \[
@@ -118,7 +118,7 @@ Apply Parseval to the orthonormal basis \((f_n)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(n\),
 \[
@@ -130,7 +130,7 @@ For every \(n\),
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \langle x,e_n\rangle=0.
 \]
@@ -139,7 +139,7 @@ By step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -154,7 +154,7 @@ Hence
 
 ::: pf-proof
 
-Use step <1>4, Cauchy--Schwarz, and \(\|x\|=1\).
+Use step [](#s1-4){.pf-ref}, Cauchy--Schwarz, and \(\|x\|=1\).
 
 :::
 
@@ -177,13 +177,13 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>3 and <1>5 and the hypothesis.
+Use steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} and the hypothesis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 This contradiction shows that
 \[
@@ -193,7 +193,7 @@ This contradiction shows that
 
 ::: pf-proof
 
-The assumption in step <1>1 is impossible.
+The assumption in step [](#s1-1){.pf-ref} is impossible.
 
 :::
 
@@ -232,7 +232,7 @@ This is exactly the Hilbert--Schmidt condition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence \(K\) is compact.
 
@@ -269,13 +269,13 @@ F^{-1}E-F^{-1}F
 =
 F^{-1}(E-F).
 \]
-The operator \(E-F\) is compact by step <1>9, and composition with the bounded operator \(F^{-1}\) preserves compactness.
+The operator \(E-F\) is compact by step [](#s1-9){.pf-ref}, and composition with the bounded operator \(F^{-1}\) preserves compactness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The operator \(A\) is an isometry.
 
@@ -298,7 +298,7 @@ because \(F^{-1}\) is unitary and \(E\) is an isometry.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -328,7 +328,7 @@ Thus the range is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Since \(A=I+\text{compact}\), \(A\) is Fredholm of index \(0\).
 
@@ -341,7 +341,7 @@ The identity operator is Fredholm with index \(0\), and compact perturbations pr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -355,7 +355,7 @@ Therefore
 
 ::: pf-proof
 
-This is the definition of the Fredholm index, using step <1>13.
+This is the definition of the Fredholm index, using step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -376,13 +376,13 @@ Substitute
 \[
 \dim\ker A=0
 \]
-from step <1>12 into the index formula in step <1>14.
+from step [](#s1-12){.pf-ref} into the index formula in step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Because \(\operatorname{ran}A\) is closed and has codimension \(0\),
 \[
@@ -398,20 +398,20 @@ A closed subspace of codimension \(0\) is the whole Hilbert space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence \(A\) is unitary.
 
 
 ::: pf-proof
 
-By step <1>11, \(A\) is an isometry, and by step <1>16 it is surjective.
+By step [](#s1-11){.pf-ref}, \(A\) is an isometry, and by step [](#s1-16){.pf-ref} it is surjective.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -422,13 +422,13 @@ is surjective onto \(\mathcal H\).
 
 ::: pf-proof
 
-Both \(F\) and \(A\) are surjective by completeness of \((f_n)\) and step <1>17.
+Both \(F\) and \(A\) are surjective by completeness of \((f_n)\) and step [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Thus
 \[
@@ -441,20 +441,20 @@ Thus
 
 ::: pf-proof
 
-The range of the synthesis isometry \(E\) is precisely the closed span of the orthonormal system \((e_n)\). Step <1>18 says this range is all of \(\mathcal H\).
+The range of the synthesis isometry \(E\) is precisely the closed span of the orthonormal system \((e_n)\). Step [](#s1-18){.pf-ref} says this range is all of \(\mathcal H\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore \((e_n)\) is complete.
 
 
 ::: pf-proof
 
-This is exactly step <1>19.
+This is exactly step [](#s1-19){.pf-ref}.
 
 :::
 
@@ -462,7 +462,7 @@ This is exactly step <1>19.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>20 proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-20){.pf-ref} proves part (b).
 
 :::
 

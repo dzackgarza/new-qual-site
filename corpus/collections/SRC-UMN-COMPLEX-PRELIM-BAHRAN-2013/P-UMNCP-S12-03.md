@@ -27,7 +27,7 @@ for every \(z\in\mathbb C\). Prove that \(f\) is a polynomial.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix an integer
 $$
@@ -77,7 +77,7 @@ $$
 \frac{m!}{R^m}
 \max_{|z|=R}|f(z)|.
 $$
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 |f^{(m)}(0)|
 \le
@@ -110,7 +110,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every Taylor coefficient of degree strictly larger than $k$ vanishes.
 
@@ -125,7 +125,7 @@ in the Taylor expansion of $f$ at the origin is
 $$
 \frac{f^{(m)}(0)}{m!}.
 $$
-Step <1>2 shows that this is zero for every integer
+Step [](#s1-2){.pf-ref} shows that this is zero for every integer
 $$
 m>k.
 $$
@@ -134,7 +134,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -155,7 +155,7 @@ f(z)
 \sum_{m=0}^{\infty}
 \frac{f^{(m)}(0)}{m!}z^m.
 $$
-By step <1>3, all terms with
+By step [](#s1-3){.pf-ref}, all terms with
 $$
 m>k
 $$
@@ -171,7 +171,7 @@ Thus the series is finite.
 
 ::: pf-qed
 
-Step <1>4 proves the required polynomiality, with the sharper degree bound.
+Step [](#s1-4){.pf-ref} proves the required polynomiality, with the sharper degree bound.
 
 :::
 

@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Passing to polar coordinates in the first quadrant gives
 $$
@@ -97,7 +97,7 @@ The Jacobian is $r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The radial integral equals
 $$
@@ -129,7 +129,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -143,14 +143,14 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2 and integrate $d\theta$ from $0$ to
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref} and integrate $d\theta$ from $0$ to
 $\pi/2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since $I>0$,
 $$
@@ -162,7 +162,7 @@ $$
 
 ::: pf-proof
 
-Take the positive square root of step <1>4.
+Take the positive square root of step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -170,7 +170,7 @@ Take the positive square root of step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required value.
+Step [](#s1-5){.pf-ref} is the required value.
 
 :::
 

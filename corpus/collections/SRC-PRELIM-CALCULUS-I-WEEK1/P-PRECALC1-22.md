@@ -59,7 +59,7 @@ Substitute \(k=n+j\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Factor \(n\) from each denominator:
 \[
@@ -85,9 +85,9 @@ Factor \(n\) from each denominator:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The expression in step <1>3 is the right-endpoint Riemann sum for
+The expression in step [](#s1-3){.pf-ref} is the right-endpoint Riemann sum for
 \[
 f(x)=\frac1{1+x}
 \]
@@ -116,7 +116,7 @@ is exactly the right-endpoint Riemann sum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since \(f\) is continuous on \([0,1]\),
 \[
@@ -137,7 +137,7 @@ Riemann sums of a continuous function converge to its definite integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Evaluate the integral:
 \[
@@ -157,7 +157,7 @@ An antiderivative of \(1/(1+x)\) is \(\log(1+x)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -180,7 +180,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -194,7 +194,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>3--<1>7.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -202,7 +202,7 @@ Combine steps <1>3--<1>7.
 
 ::: pf-qed
 
-Step <1>8 is the requested limit.
+Step [](#s1-8){.pf-ref} is the requested limit.
 
 :::
 

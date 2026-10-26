@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The relation $\sim$ is reflexive.
 
@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The relation $\sim$ is symmetric.
 
@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The relation $\sim$ is transitive.
 
@@ -149,20 +149,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $\sim$ is an equivalence relation on $S$.
 
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 $$
@@ -178,13 +178,13 @@ $$
 
 ::: pf-proof
 
-Step <1>4 makes the quotient set well-defined.
+Step [](#s1-4){.pf-ref} makes the quotient set well-defined.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define addition on $F$ by
 $$
@@ -216,7 +216,7 @@ so the displayed expression determines an element of $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Addition is independent of the representatives.
 
@@ -277,7 +277,7 @@ Thus the two sums represent the same equivalence class.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define multiplication on $F$ by
 $$
@@ -305,7 +305,7 @@ Thus the displayed fraction is an element of $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Multiplication is independent of the representatives.
 
@@ -358,7 +358,7 @@ Hence multiplication is well-defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The element
 $$
@@ -387,7 +387,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The additive inverse of
 $$
@@ -422,7 +422,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The element
 $$
@@ -449,7 +449,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 A fraction
 $$
@@ -484,7 +484,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 If
 $$
@@ -498,13 +498,13 @@ $$
 
 ::: pf-proof
 
-This is the contrapositive direction of step <1>13.
+This is the contrapositive direction of step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 If
 $$
@@ -519,7 +519,7 @@ is a well-defined element of $F$.
 
 ::: pf-proof
 
-By step <1>14,
+By step [](#s1-14){.pf-ref},
 $$
 a\ne0.
 $$
@@ -537,7 +537,7 @@ defines an element of $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Every nonzero element of $F$ has a multiplicative inverse.
 
@@ -548,7 +548,7 @@ Let
 $$
 \frac ab\ne0.
 $$
-By step <1>15,
+By step [](#s1-15){.pf-ref},
 $$
 \frac ba\in F.
 $$
@@ -577,7 +577,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The operations are associative and commutative and satisfy distributivity.
 
@@ -625,7 +625,7 @@ The multiplicative and distributive checks are similar.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 $$
@@ -638,17 +638,17 @@ $$
 
 ::: pf-proof
 
-Steps <1>6--<1>9 define well-defined binary operations.
-Steps <1>10--<1>12 give additive and multiplicative identities and additive inverses.
-Step <1>16 gives multiplicative inverses for every nonzero element.
-Step <1>17 supplies the remaining ring axioms.
+Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} define well-defined binary operations.
+Steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref} give additive and multiplicative identities and additive inverses.
+Step [](#s1-16){.pf-ref} gives multiplicative inverses for every nonzero element.
+Step [](#s1-17){.pf-ref} supplies the remaining ring axioms.
 Hence $F$ is a field.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 The map
 $$
@@ -699,8 +699,8 @@ Thus $\iota$ is injective.
 
 ::: pf-qed
 
-Steps <1>5--<1>18 construct the field of fractions and verify its operations, identity, and inverses.
-Step <1>19 identifies $R$ with a subring of its fraction field.
+Steps [](#s1-5){.pf-ref} through [](#s1-18){.pf-ref} construct the field of fractions and verify its operations, identity, and inverses.
+Step [](#s1-19){.pf-ref} identifies $R$ with a subring of its fraction field.
 
 :::
 

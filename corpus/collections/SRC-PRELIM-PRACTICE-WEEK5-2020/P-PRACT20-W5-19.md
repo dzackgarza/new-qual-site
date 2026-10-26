@@ -60,7 +60,7 @@ distinct points is their perpendicular bisector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $a\ne b$, the desired region is the open half-plane bounded by
 that perpendicular bisector and containing $a$:
@@ -90,7 +90,7 @@ Equivalently, squaring and expanding gives the linear inequality
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $a=b$, the solution set is empty.
 
@@ -109,7 +109,7 @@ so the strict inequality fails. At $z=b$ the quotient is undefined.
 
 ::: pf-qed
 
-Steps <1>3 and <1>4 describe the set in all cases and determine its sketch.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} describe the set in all cases and determine its sketch.
 
 :::
 

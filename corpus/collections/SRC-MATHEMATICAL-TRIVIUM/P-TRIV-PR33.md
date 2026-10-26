@@ -52,7 +52,7 @@ Choose $x$ uniformly from $[0,1)$. The ambiguity of terminating decimal expansio
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each fixed digit $i\in\{0,\ldots,9\}$, define
 \[
@@ -74,7 +74,7 @@ with each marginal probability $1/10$. Thus the decimal digits are independent a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -88,20 +88,20 @@ P\left(\lim_{n\to\infty}\frac{I_n(i)}n=\frac1{10}\right)=1.
 
 ::: pf-proof
 
-The variables in step <1>1 are iid and integrable with mean $1/10$. The strong law states that their sample averages converge almost surely to their common mean.
+The variables in step [](#s1-1){.pf-ref} are iid and integrable with mean $1/10$. The strong law states that their sample averages converge almost surely to their common mean.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-In fact, with probability one the limit in step <1>2 holds simultaneously for all ten digits.
+In fact, with probability one the limit in step [](#s1-2){.pf-ref} holds simultaneously for all ten digits.
 
 
 ::: pf-proof
 
-For each digit $i$, let $E_i$ be the probability-one event from step <1>2. Since there are only ten digits,
+For each digit $i$, let $E_i$ be the probability-one event from step [](#s1-2){.pf-ref}. Since there are only ten digits,
 \[
 P\left(\bigcap_{i=0}^9E_i\right)
 =1-P\left(\bigcup_{i=0}^9E_i^c\right)
@@ -112,7 +112,7 @@ P\left(\bigcap_{i=0}^9E_i\right)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A rational number has an eventually periodic decimal expansion.
 
@@ -125,7 +125,7 @@ In the long-division algorithm for a rational $a/b$, each successive digit is de
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Rational numbers are not necessarily normal in the digit-frequency sense used in the problem; for example,
 \[
@@ -142,7 +142,7 @@ For $1/3$, the limiting frequency of digit $3$ is $1$, while the limiting freque
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The number in part (c),
 \[
@@ -161,7 +161,7 @@ This is Champernowne's number. To see the required single-digit conclusion direc
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 answer part (b), and step <1>6 answers part (c).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} answer part (b), and step [](#s1-6){.pf-ref} answers part (c).
 
 :::
 

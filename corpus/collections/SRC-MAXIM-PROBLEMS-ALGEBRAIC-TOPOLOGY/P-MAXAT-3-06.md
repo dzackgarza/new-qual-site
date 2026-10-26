@@ -26,7 +26,7 @@ Use integral coefficients and based loop spaces. Write $\Gamma_{mathbb Z}(y)$ fo
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Looping the Hopf fibration
 \[
@@ -51,9 +51,9 @@ Apply this to the Hopf fibration. Since $\Omega S^1$ is discrete and the relevan
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The fibration in step <1>1 splits up to homotopy:
+The fibration in step [](#s1-1){.pf-ref} splits up to homotopy:
 \[
 \Omega\mathbb{CP}^n\simeq S^1\times\Omega S^{2n+1}.
 \]
@@ -71,7 +71,7 @@ A loop representing the corresponding generator gives a homotopy section $S^1\to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The path-loop Serre spectral sequence for
 \[
@@ -100,7 +100,7 @@ H_*(\Omega S^{2n+1};\mathbb Z)\cong\mathbb Z[t_{2n}].
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -113,13 +113,13 @@ H^*(\Omega\mathbb{CP}^n;\mathbb Z)
 
 ::: pf-proof
 
-Apply the Künneth theorem to step <1>2. The cohomology of $S^1$ is $\Lambda(a_1)$, and step <1>3 gives the other factor. Both are torsion-free, so there are no Tor terms.
+Apply the Künneth theorem to step [](#s1-2){.pf-ref}. The cohomology of $S^1$ is $\Lambda(a_1)$, and step [](#s1-3){.pf-ref} gives the other factor. Both are torsion-free, so there are no Tor terms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $n\geq2$, the covering
 \[
@@ -140,7 +140,7 @@ Every null-homotopic based loop lifts uniquely to a based loop in the universal 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, as a graded ring,
 \[
@@ -155,13 +155,13 @@ H^*(\Omega S^n;\mathbb Z),
 
 ::: pf-proof
 
-Step <1>5 gives $\Omega\mathbb{RP}^n$ as the disjoint union of two components, each homotopy equivalent to $\Omega S^n$. Cohomology sends a finite disjoint union to the direct product of the component rings.
+Step [](#s1-5){.pf-ref} gives $\Omega\mathbb{RP}^n$ as the disjoint union of two components, each homotopy equivalent to $\Omega S^n$. Cohomology sends a finite disjoint union to the direct product of the component rings.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $n=2m+1$ is odd, then the component ring has the explicit presentation
 \[
@@ -178,19 +178,19 @@ H^*(\Omega\mathbb{RP}^{2m+1};\mathbb Z)
 
 ::: pf-proof
 
-Apply step <1>3 with $2n+1$ replaced by $2m+1$, then substitute into step <1>6.
+Apply step [](#s1-3){.pf-ref} with $2n+1$ replaced by $2m+1$, then substitute into step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For even $n$, the integral component ring is the graded shuffle algebra dual to the tensor Hopf algebra
 \[
 H_*(\Omega S^n;\mathbb Z)\cong T(t_{n-1});
 \]
-step <1>6 remains the complete reduction of the projective-space calculation to the standard sphere-loop calculation.
+step [](#s1-6){.pf-ref} remains the complete reduction of the projective-space calculation to the standard sphere-loop calculation.
 
 
 ::: pf-proof
@@ -199,7 +199,7 @@ The James--Bott--Samelson calculation gives
 \[
 H_*(\Omega S^n;\mathbb Z)\cong T(\widetilde H_*(S^{n-1};\mathbb Z))=T(t_{n-1}).
 \]
-The cohomology ring is its graded Hopf dual, whose multiplication is the signed shuffle product. When $n$ is even, $|t|=n-1$ is odd, so the Koszul signs are essential and the ring is not the ordinary divided-power algebra of step <1>7.
+The cohomology ring is its graded Hopf dual, whose multiplication is the signed shuffle product. When $n$ is even, $|t|=n-1$ is odd, so the Koszul signs are essential and the ring is not the ordinary divided-power algebra of step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -207,7 +207,7 @@ The cohomology ring is its graded Hopf dual, whose multiplication is the signed 
 
 ::: pf-qed
 
-Step <1>4 gives the ring for $\Omega\mathbb{CP}^n$, and steps <1>5--<1>8 give the ring of $\Omega\mathbb{RP}^n$ componentwise, including the explicit odd-dimensional presentation.
+Step [](#s1-4){.pf-ref} gives the ring for $\Omega\mathbb{CP}^n$, and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the ring of $\Omega\mathbb{RP}^n$ componentwise, including the explicit odd-dimensional presentation.
 
 :::
 

@@ -32,7 +32,7 @@ Equip $U$ with its $k[t]$-module structure given by $t\cdot u=f(u)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The module $U$ is finitely generated over the PID $k[t]$.
 
@@ -45,14 +45,14 @@ The hypothesis says that the iterates $f^d(u_i)$ span $U$ as a $k$-vector space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists a decomposition $U=V\oplus W$ with $V$ possessing the prescribed orbit basis and $W$ finite-dimensional over $k$.
 
 
 ::: pf-proof
 
-By the structure theorem for finitely generated modules over a PID, step <1>1 yields
+By the structure theorem for finitely generated modules over a PID, step [](#s1-1){.pf-ref} yields
 \[
 U\cong k[t]^n\oplus\bigoplus_{j=1}^s k[t]/(p_j(t)),
 \]
@@ -65,7 +65,7 @@ where each $p_j$ is nonzero. Take $V$ to be the image of the free summand and $W
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The asserted uniqueness of $W$ is false without a requirement that the summands be $f$-invariant.
 
@@ -82,7 +82,7 @@ both satisfy the requested orbit-basis and finite-dimensionality conditions: $k[
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If both summands are required to be $f$-invariant, then the finite-dimensional complement is uniquely the torsion submodule of $U$.
 
@@ -97,7 +97,7 @@ An $f$-invariant subspace is a $k[t]$-submodule. Every element of a finite-dimen
 
 ::: pf-qed
 
-Step <1>2 proves the existence assertion, step <1>3 gives a counterexample to uniqueness as stated, and step <1>4 proves the invariant-summand version.
+Step [](#s1-2){.pf-ref} proves the existence assertion, step [](#s1-3){.pf-ref} gives a counterexample to uniqueness as stated, and step [](#s1-4){.pf-ref} proves the invariant-summand version.
 
 :::
 

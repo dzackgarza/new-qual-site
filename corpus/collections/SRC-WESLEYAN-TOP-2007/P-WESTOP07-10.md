@@ -16,7 +16,7 @@ Let $T_n$ denote the closed orientable surface of genus $n$, for $n\ge1$. Prove 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The closed orientable surface
 $$
@@ -49,7 +49,7 @@ The polygon interior gives one $2$-cell.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \chi(T_n)
 =
@@ -72,7 +72,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Euler characteristic is invariant under homeomorphism.
 
@@ -91,7 +91,7 @@ Thus homeomorphic closed surfaces have equal Euler characteristic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -105,11 +105,11 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \chi(T_p)=\chi(T_q).
 $$
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 2-2p
 =
@@ -124,7 +124,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently, if
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-This is the contrapositive of step <1>4.
+This is the contrapositive of step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -146,7 +146,7 @@ This is the contrapositive of step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -22,7 +22,7 @@ If $\lim_{x\to c}f'(x)=d\in\mathbb R$, show that $f$ is differentiable at $c$ an
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\ne c$ sufficiently close to $c$, there exists $\xi_x$ strictly between $x$ and $c$ such that
 \[
@@ -42,7 +42,7 @@ Dividing by $x-c$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 As $x\to c$ with $x\ne c$, one has
 \[
@@ -62,7 +62,7 @@ The right side tends to $0$ as $x\to c$, so the squeeze theorem gives $\xi_x\to 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The difference quotient of $f$ at $c$ satisfies
 \[
@@ -74,11 +74,11 @@ The difference quotient of $f$ at $c$ satisfies
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \frac{f(x)-f(c)}{x-c}=f'(\xi_x).
 \]
-By step <1>2, $\xi_x\to c$, and by hypothesis,
+By step [](#s1-2){.pf-ref}, $\xi_x\to c$, and by hypothesis,
 \[
 \lim_{u\to c}f'(u)=d.
 \]
@@ -92,7 +92,7 @@ which proves the displayed limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is differentiable at $c$ and
 \[
@@ -102,7 +102,7 @@ The function $f$ is differentiable at $c$ and
 
 ::: pf-proof
 
-The limit in step <1>3 is exactly the definition of the derivative of $f$ at $c$.
+The limit in step [](#s1-3){.pf-ref} is exactly the definition of the derivative of $f$ at $c$.
 
 :::
 
@@ -110,7 +110,7 @@ The limit in step <1>3 is exactly the definition of the derivative of $f$ at $c$
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

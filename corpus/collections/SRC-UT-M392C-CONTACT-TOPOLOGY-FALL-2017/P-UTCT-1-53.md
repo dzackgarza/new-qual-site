@@ -49,7 +49,7 @@ x,\ y,\ z+\frac{xy}{2}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The pullbacks of the coordinate functions are
 \[
@@ -77,7 +77,7 @@ x,y,z+\frac{xy}{2}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -107,7 +107,7 @@ and similarly for \(Y\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -120,7 +120,7 @@ dz+\frac12(x\,dy+y\,dx)}.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \phi^*Z
 =
@@ -141,7 +141,7 @@ dz+\frac12(x\,dy+y\,dx).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The cylindrically symmetric contact form is
 \[
@@ -159,7 +159,7 @@ This is the rectangular-coordinate expression stated in the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Pulling back the skew term gives
 \[
@@ -174,7 +174,7 @@ Pulling back the skew term gives
 
 ::: pf-proof
 
-Using steps <1>1--<1>2,
+Using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \phi^*(X\,dY-Y\,dX)
@@ -192,7 +192,7 @@ Multiply by \(1/2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -214,14 +214,14 @@ dz+\frac12(x\,dy+y\,dx)
 
 ::: pf-proof
 
-Apply linearity of pullback to the decomposition in step <1>4, then use
-steps <1>3 and <1>5.
+Apply linearity of pullback to the decomposition in step [](#s1-4){.pf-ref}, then use
+steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The \(y\,dx\)-terms cancel, so
 \[
@@ -236,7 +236,7 @@ dz+x\,dy
 
 ::: pf-proof
 
-In step <1>6,
+In step [](#s1-6){.pf-ref},
 \[
 \frac12y\,dx-\frac12y\,dx=0,
 \]
@@ -285,7 +285,7 @@ structure to the cylindrically symmetric one.
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 \phi^*\alpha'=\alpha,
 \]
@@ -297,7 +297,7 @@ which is stronger than merely preserving the kernel distribution.
 
 ::: pf-qed
 
-Step <1>7 proves the required pullback identity.
+Step [](#s1-7){.pf-ref} proves the required pullback identity.
 
 :::
 

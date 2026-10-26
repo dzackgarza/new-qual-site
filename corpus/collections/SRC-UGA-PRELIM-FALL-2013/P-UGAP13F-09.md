@@ -63,7 +63,7 @@ aT(u)+bT(v).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vector
 \[
@@ -93,7 +93,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -125,7 +125,7 @@ Solving gives the two displayed equations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence every vector in the kernel has the form
 \[
@@ -137,7 +137,7 @@ x(1,2,3).
 
 ::: pf-proof
 
-Substitute the equations from step <1>3:
+Substitute the equations from step [](#s1-3){.pf-ref}:
 \[
 (x,y,z)
 =
@@ -156,7 +156,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus
 \[
@@ -170,7 +170,7 @@ Thus
 
 ::: pf-proof
 
-Combine the two inclusions from steps <1>2 and <1>4.
+Combine the two inclusions from steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -178,7 +178,7 @@ Combine the two inclusions from steps <1>2 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 verifies that the displayed linear map has exactly the prescribed
+Step [](#s1-5){.pf-ref} verifies that the displayed linear map has exactly the prescribed
 kernel.
 
 :::

@@ -30,7 +30,7 @@ where $\conjugate{(\wait)}$ denotes taking the complex conjugate and $\Tr(\wait)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $A$ is diagonalizable with eigenvalues $\lambda_1,\ldots,\lambda_n$ that are roots of unity.
 
@@ -53,7 +53,7 @@ Each satisfies $\lambda_i^m=1$, hence $|\lambda_i|=1$ and therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The trace identity is
 \[
@@ -78,7 +78,7 @@ The eigenvalues of $A^{-1}$ are $\lambda_1^{-1},\ldots,\lambda_n^{-1}$, so
 
 ::: pf-qed
 
-Step <1>2 establishes the requested identity using step <1>1.
+Step [](#s1-2){.pf-ref} establishes the requested identity using step [](#s1-1){.pf-ref}.
 
 :::
 

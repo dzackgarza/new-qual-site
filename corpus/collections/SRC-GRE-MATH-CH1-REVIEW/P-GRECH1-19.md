@@ -36,7 +36,7 @@ Let $y=\sinh^{-1}x$, so that $x=\sinh y$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $e^y$ satisfies
 $$
@@ -60,14 +60,14 @@ which is the claimed quadratic equation in $e^y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $e^y=x+\sqrt{x^2+1}$.
 
 
 ::: pf-proof
 
-Solving the quadratic in step <1>1 gives
+Solving the quadratic in step [](#s1-1){.pf-ref} gives
 $$
 e^y=x\pm\sqrt{x^2+1}.
 $$
@@ -77,7 +77,7 @@ Since $\sqrt{x^2+1}>|x|$, the quantity $x-\sqrt{x^2+1}$ is negative, while $x+\s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -88,11 +88,11 @@ so the answer is (D).
 
 ::: pf-proof
 
-Taking logarithms in step <1>2 gives
+Taking logarithms in step [](#s1-2){.pf-ref} gives
 $$
 y=\log\left(x+\sqrt{x^2+1}\right).
 $$
-The expression inside the logarithm is positive by step <1>2, so this is defined for every real $x$.
+The expression inside the logarithm is positive by step [](#s1-2){.pf-ref}, so this is defined for every real $x$.
 
 :::
 
@@ -100,7 +100,7 @@ The expression inside the logarithm is positive by step <1>2, so this is defined
 
 ::: pf-qed
 
-Step <1>3 gives the requested inverse formula and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested inverse formula and corresponding choice.
 
 :::
 

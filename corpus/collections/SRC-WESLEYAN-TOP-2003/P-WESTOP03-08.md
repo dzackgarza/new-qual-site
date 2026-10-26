@@ -107,7 +107,7 @@ At $s=0$ this is $\widetilde f$, and at $s=1$ it is the constant map $t_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Composing this homotopy with $p$ gives a homotopy
 \[
@@ -132,7 +132,7 @@ independent of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -142,7 +142,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 explicitly constructs a homotopy from an arbitrary $f$ to a constant map.
+Step [](#s1-5){.pf-ref} explicitly constructs a homotopy from an arbitrary $f$ to a constant map.
 
 :::
 
@@ -150,7 +150,7 @@ Step <1>5 explicitly constructs a homotopy from an arbitrary $f$ to a constant m
 
 ::: pf-qed
 
-Step <1>6 proves the assertion.
+Step [](#s1-6){.pf-ref} proves the assertion.
 
 :::
 

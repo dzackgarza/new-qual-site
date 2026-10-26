@@ -27,7 +27,7 @@ Let $X$ be a random variable on $\mathbb{Z}^+$ whose distribution function is $F
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The functions printed in the problem cannot be cumulative distribution functions.
 
@@ -48,7 +48,7 @@ and similarly $F_Y(1)=1/4>1/16=F_Y(2)$. Thus neither printed function is a cumul
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The source solution instead treats the printed quantities as tail probabilities
 $$
@@ -74,9 +74,9 @@ which are exactly the two factors used in the source's computation. Equivalently
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Even after the correction in step <1>2, the requested probability is not determined unless a dependence relation between $X$ and $Y$ is specified.
+Even after the correction in step [](#s1-2){.pf-ref}, the requested probability is not determined unless a dependence relation between $X$ and $Y$ is specified.
 
 
 ::: pf-proof
@@ -85,7 +85,7 @@ Let
 $$
 A=\{X>2\},\qquad B=\{Y>2\}.
 $$
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 \mathbb P(A)=\frac19,
 \qquad
@@ -102,7 +102,7 @@ and the marginal distributions do not determine $\mathbb P(A\cap B)$. For exampl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If one additionally assumes independence, as the source solution does, then
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1 and <1>3 show that the problem is not well-posed as printed; step <1>4 gives the source's intended answer after making both implicit corrections explicit.
+Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} show that the problem is not well-posed as printed; step [](#s1-4){.pf-ref} gives the source's intended answer after making both implicit corrections explicit.
 
 :::
 

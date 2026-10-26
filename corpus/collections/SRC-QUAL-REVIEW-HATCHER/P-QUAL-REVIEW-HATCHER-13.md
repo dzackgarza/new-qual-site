@@ -81,7 +81,7 @@ Fundamental group is functorial with respect to composition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -113,7 +113,7 @@ Thus the kernel is trivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -136,7 +136,7 @@ F_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -162,7 +162,7 @@ For the torus,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every subgroup of \(\mathbb Z^2\) is abelian.
 
@@ -175,7 +175,7 @@ Every subgroup of an abelian group is abelian.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The group \(F_2\) is nonabelian.
 
@@ -197,7 +197,7 @@ ab\ne ba.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore there is no injective homomorphism
 \[
@@ -207,26 +207,26 @@ F_2\hookrightarrow\mathbb Z^2.
 
 ::: pf-proof
 
-The image of such an injection would be a subgroup of \(\mathbb Z^2\), hence abelian by step <1>6. Then \(F_2\) itself would be abelian, contradicting step <1>7.
+The image of such an injection would be a subgroup of \(\mathbb Z^2\), hence abelian by step [](#s1-6){.pf-ref}. Then \(F_2\) itself would be abelian, contradicting step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-This contradicts the injectivity of \(i_*\) from step <1>3.
+This contradicts the injectivity of \(i_*\) from step [](#s1-3){.pf-ref}.
 
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5 with step <1>8.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} with step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -239,7 +239,7 @@ S^1\times S^1}.
 
 ::: pf-proof
 
-The assumption of a retraction led to the contradiction in step <1>9.
+The assumption of a retraction led to the contradiction in step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -247,7 +247,7 @@ The assumption of a retraction led to the contradiction in step <1>9.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

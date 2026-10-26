@@ -21,7 +21,7 @@ Let D be an integral domain and $D [ x ]$ the polynomial ring over D in the inde
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define the evaluation homomorphism
 $$
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -91,13 +91,13 @@ $$
 
 ::: pf-proof
 
-Apply the first isomorphism theorem to the surjective map in step <1>1.
+Apply the first isomorphism theorem to the surjective map in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ideal
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 D[x]/(x)
 \cong
@@ -133,7 +133,7 @@ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal
 $$
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By hypothesis,
 $$
@@ -177,7 +177,7 @@ is maximal.
 
 ::: pf-proof
 
-Steps <1>3--<1>4 show that
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that
 $$
 (x)
 $$
@@ -191,7 +191,7 @@ The hypothesis says every such ideal is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The quotient
 $$
@@ -202,7 +202,7 @@ is a field.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 (x)
 $$
@@ -217,7 +217,7 @@ is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -230,13 +230,13 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 D
 \cong
 D[x]/(x).
 $$
-Step <1>6 shows the quotient is a field.
+Step [](#s1-6){.pf-ref} shows the quotient is a field.
 Being a field is preserved under ring isomorphism.
 Hence $D$ is a field.
 
@@ -246,7 +246,7 @@ Hence $D$ is a field.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

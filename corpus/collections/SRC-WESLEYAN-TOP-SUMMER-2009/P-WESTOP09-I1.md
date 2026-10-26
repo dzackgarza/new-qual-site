@@ -21,7 +21,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A metric on a set $X$ is a function
 \[
@@ -45,7 +45,7 @@ These are the defining properties of a metric and of metrizability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $I$ is uncountable, the product
 \[
@@ -81,7 +81,7 @@ countable, so $X$ is not metrizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The class of metrizable spaces is
 \[
@@ -91,7 +91,7 @@ The class of metrizable spaces is
 
 ::: pf-proof
 
-Step <1>2 gives an uncountable product of metrizable spaces whose product
+Step [](#s1-2){.pf-ref} gives an uncountable product of metrizable spaces whose product
 topology is not metrizable.
 
 :::
@@ -122,7 +122,7 @@ so the induced metric topology is precisely the subspace topology on $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The class of metrizable spaces is
 \[
@@ -150,8 +150,8 @@ Hausdorff, so this quotient is not metrizable.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definitions, step <1>2 gives a nonmetrizable
-example, and steps <1>3 through <1>5 settle the three closure questions.
+Step [](#s1-1){.pf-ref} gives the requested definitions, step [](#s1-2){.pf-ref} gives a nonmetrizable
+example, and steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} settle the three closure questions.
 
 :::
 

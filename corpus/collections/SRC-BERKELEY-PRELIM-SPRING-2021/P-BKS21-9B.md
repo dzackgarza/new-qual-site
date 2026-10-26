@@ -47,7 +47,7 @@ Since $2021\equiv1\pmod2$, reduction of the coefficients modulo $2$ gives the di
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $\overline f$ has no linear factor over $\mathbb F_2$.
 
@@ -66,7 +66,7 @@ in $\mathbb F_2$. Hence $\overline f$ has no root and therefore no linear factor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The only monic irreducible quadratic over $\mathbb F_2$ is
 $$
@@ -95,7 +95,7 @@ so $q$ has no root and is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The polynomial $q$ does not divide $\overline f$.
 
@@ -130,20 +130,20 @@ so the remainder is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The polynomial $\overline f$ is irreducible in $\mathbb F_2[x]$.
 
 
 ::: pf-proof
 
-If a quartic over a field is reducible, then it has either a linear factor or a factorization into two quadratics. Step <1>2 rules out a linear factor. If it factored as two quadratics with no linear factor, both quadratic factors would have to be irreducible; by step <1>3 both would then equal $q$, contradicting step <1>4. Hence $\overline f$ is irreducible.
+If a quartic over a field is reducible, then it has either a linear factor or a factorization into two quadratics. Step [](#s1-2){.pf-ref} rules out a linear factor. If it factored as two quadratics with no linear factor, both quadratic factors would have to be irreducible; by step [](#s1-3){.pf-ref} both would then equal $q$, contradicting step [](#s1-4){.pf-ref}. Hence $\overline f$ is irreducible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The polynomial
 $$
@@ -154,7 +154,7 @@ is irreducible over $\mathbb Q$.
 
 ::: pf-proof
 
-The polynomial $f$ is primitive. Since its reduction modulo $2$ is irreducible by step <1>5, the standard reduction criterion together with Gauss's lemma implies that $f$ is irreducible in $\mathbb Q[x]$.
+The polynomial $f$ is primitive. Since its reduction modulo $2$ is irreducible by step [](#s1-5){.pf-ref}, the standard reduction criterion together with Gauss's lemma implies that $f$ is irreducible in $\mathbb Q[x]$.
 
 :::
 
@@ -162,7 +162,7 @@ The polynomial $f$ is primitive. Since its reduction modulo $2$ is irreducible b
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

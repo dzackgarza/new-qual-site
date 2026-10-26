@@ -28,7 +28,7 @@ Let $P=(1,-1,1)$ and $Q=(-3,3,3)$. Find the point $R$ on the line containing $P$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Parametrize the line through $P$ and $Q$ by
 $$
@@ -49,7 +49,7 @@ which gives the displayed parametrization. Here $t=0$ gives $P$ and $t=1$ gives 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The distance condition is equivalent to
 $$
@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 R(t)-P=t(Q-P),
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-Squaring the equation in step <1>2 gives
+Squaring the equation in step [](#s1-2){.pf-ref} gives
 $$
 t^2=9(t-1)^2,
 $$
@@ -110,7 +110,7 @@ These equations yield $t=3/2$ and $t=3/4$, respectively.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The condition that $R$ is not between $P$ and $Q$ forces
 $$
@@ -120,13 +120,13 @@ $$
 
 ::: pf-proof
 
-Points strictly between $P$ and $Q$ in the parametrization of step <1>1 are exactly those with $0<t<1$. Thus $t=3/4$ is excluded, while $t=3/2>1$ is admissible.
+Points strictly between $P$ and $Q$ in the parametrization of step [](#s1-1){.pf-ref} are exactly those with $0<t<1$. Thus $t=3/4$ is excluded, while $t=3/2>1$ is admissible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -137,7 +137,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Substituting $t=3/2$ from step <1>4 into step <1>1 gives
+Substituting $t=3/2$ from step [](#s1-4){.pf-ref} into step [](#s1-1){.pf-ref} gives
 $$
 R
 =(1,-1,1)+\frac32(-4,4,2)
@@ -150,7 +150,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 gives the requested point and corresponding choice.
+Step [](#s1-5){.pf-ref} gives the requested point and corresponding choice.
 
 :::
 

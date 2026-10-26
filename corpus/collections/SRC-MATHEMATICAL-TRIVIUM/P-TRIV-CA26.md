@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The exponential phase completes to a square:
 $$
@@ -145,7 +145,7 @@ contour shift.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 After the shift
 $$
@@ -164,7 +164,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 z-\frac i2=x
 $$
@@ -205,7 +205,7 @@ Taking the reciprocal gives $4/3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 As $t\to\infty$,
 $$
@@ -258,7 +258,7 @@ the stated asymptotic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -276,20 +276,20 @@ $$
 =
 \sqrt{\frac\pi t}
 $$
-in step <1>6.
+in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The quantity $J(t)$ is real.
 
 
 ::: pf-proof
 
-From step <1>4,
+From step [](#s1-4){.pf-ref},
 $$
 J(t)
 =
@@ -306,7 +306,7 @@ integral is real.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 $$
@@ -326,11 +326,11 @@ By definition,
 $$
 f(t)=\operatorname{Re}J(t).
 $$
-Step <1>8 gives
+Step [](#s1-8){.pf-ref} gives
 $$
 \operatorname{Re}J(t)=J(t),
 $$
-and step <1>7 gives its leading asymptotic.
+and step [](#s1-7){.pf-ref} gives its leading asymptotic.
 
 :::
 
@@ -338,7 +338,7 @@ and step <1>7 gives its leading asymptotic.
 
 ::: pf-qed
 
-Step <1>9 is the saddle-point approximation.
+Step [](#s1-9){.pf-ref} is the saddle-point approximation.
 
 :::
 

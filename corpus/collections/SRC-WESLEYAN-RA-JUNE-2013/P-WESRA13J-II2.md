@@ -26,7 +26,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists a compact set $K\subseteq[0,1]$ with
 $$
@@ -65,14 +65,14 @@ and hence $\ell_n<2^{-n}$. Any interval contained in $K$ would be contained in o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonempty open interval $J\subseteq[0,1]$ contains a compact nowhere-dense subset of positive measure.
 
 
 ::: pf-proof
 
-Choose a closed interval $[a,b]\subset J$ with $a<b$. Let $K$ be the set from step <1>1 and let
+Choose a closed interval $[a,b]\subset J$ with $a<b$. Let $K$ be the set from step [](#s1-1){.pf-ref} and let
 $$
 T(t)=a+(b-a)t.
 $$
@@ -86,7 +86,7 @@ and contains no nonempty open interval. Since it is closed with empty interior, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $(J_n)_{n\geq1}$ enumerate all nonempty open intervals with rational endpoints whose closures lie in $(0,1)$. There exist compact sets
 $$
@@ -109,13 +109,13 @@ is compact and nowhere dense, because it is a finite union of compact nowhere-de
 $$
 J_n\setminus F_{n-1}
 $$
-is a nonempty open set. It contains two disjoint nonempty open intervals $U_n$ and $V_n$. By step <1>2, choose a compact nowhere-dense set $K_n\subset U_n$ of positive measure and a compact nowhere-dense set $L_n\subset V_n$ of positive measure. They are disjoint from each other and from every previously chosen set. This completes the induction.
+is a nonempty open set. It contains two disjoint nonempty open intervals $U_n$ and $V_n$. By step [](#s1-2){.pf-ref}, choose a compact nowhere-dense set $K_n\subset U_n$ of positive measure and a compact nowhere-dense set $L_n\subset V_n$ of positive measure. They are disjoint from each other and from every previously chosen set. This completes the induction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -142,7 +142,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every interval $I\subseteq[0,1]$ of positive length also satisfies
 $$
@@ -152,7 +152,7 @@ $$
 
 ::: pf-proof
 
-Choose $J_n\subseteq I$ as in step <1>4. By step <1>3,
+Choose $J_n\subseteq I$ as in step [](#s1-4){.pf-ref}. By step [](#s1-3){.pf-ref},
 $$
 L_n\subseteq J_n\subseteq I.
 $$
@@ -169,7 +169,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every interval $I\subseteq[0,1]$ of positive measure,
 $$
@@ -179,11 +179,11 @@ $$
 
 ::: pf-proof
 
-The first strict inequality is step <1>4. Since
+The first strict inequality is step [](#s1-4){.pf-ref}. Since
 $$
 m(I)=m(A\cap I)+m(I\setminus A)
 $$
-and step <1>5 gives $m(I\setminus A)>0$, the second strict inequality follows. This proves part (b).
+and step [](#s1-5){.pf-ref} gives $m(I\setminus A)>0$, the second strict inequality follows. This proves part (b).
 
 :::
 
@@ -191,7 +191,7 @@ and step <1>5 gives $m(I\setminus A)>0$, the second strict inequality follows. T
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

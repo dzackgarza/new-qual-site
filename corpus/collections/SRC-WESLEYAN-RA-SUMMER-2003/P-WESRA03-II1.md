@@ -39,7 +39,7 @@ A\in\mathcal B(\mathbb R).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every Borel set \(A\),
 \[
@@ -68,7 +68,7 @@ is nonnegative and measurable. Its Lebesgue integral therefore lies in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -115,7 +115,7 @@ A countable union of Borel sets is Borel, so \(A\in\mathcal B(\mathbb R)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(N\ge1\),
 \[
@@ -136,7 +136,7 @@ is \(1\) exactly when \(x\) belongs to the finite union.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Multiplying by \(f\),
 \[
@@ -149,14 +149,14 @@ Multiplying by \(f\),
 
 ::: pf-proof
 
-Multiply the identity from step <1>4 by the nonnegative measurable function
+Multiply the identity from step [](#s1-4){.pf-ref} by the nonnegative measurable function
 \(f\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The sequence
 \[
@@ -189,7 +189,7 @@ pointwise limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By the monotone convergence theorem,
 \[
@@ -202,7 +202,7 @@ By the monotone convergence theorem,
 
 ::: pf-proof
 
-Step <1>6 gives a monotone increasing sequence of nonnegative measurable
+Step [](#s1-6){.pf-ref} gives a monotone increasing sequence of nonnegative measurable
 functions converging pointwise to \(\mathbf 1_Af\). Apply the monotone
 convergence theorem:
 \[
@@ -215,7 +215,7 @@ convergence theorem:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every \(N\),
 \[
@@ -227,7 +227,7 @@ For every \(N\),
 
 ::: pf-proof
 
-By step <1>5 and finite additivity of the Lebesgue integral,
+By step [](#s1-5){.pf-ref} and finite additivity of the Lebesgue integral,
 \[
 \begin{aligned}
 \int_{\mathbb R}g_N\,dm
@@ -246,7 +246,7 @@ By step <1>5 and finite additivity of the Lebesgue integral,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -261,7 +261,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>7 and <1>8:
+Combine steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref}:
 \[
 \begin{aligned}
 \mu_f(A)
@@ -278,7 +278,7 @@ The equality is valid in \([0,\infty]\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -294,8 +294,8 @@ is a measure on
 
 ::: pf-proof
 
-By step <1>1 the set function is nonnegative, by step <1>2 it vanishes on
-the empty set, and by step <1>9 it is countably additive on pairwise disjoint
+By step [](#s1-1){.pf-ref} the set function is nonnegative, by step [](#s1-2){.pf-ref} it vanishes on
+the empty set, and by step [](#s1-9){.pf-ref} it is countably additive on pairwise disjoint
 Borel sets. These are exactly the defining axioms of a measure.
 
 :::
@@ -304,7 +304,7 @@ Borel sets. These are exactly the defining axioms of a measure.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

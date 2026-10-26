@@ -65,7 +65,7 @@ so the equation is exact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A potential for this differential form is
 $$
@@ -93,7 +93,7 @@ Thus $h'(y)=3y^2+1$, so one may take $h(y)=y^3+y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The curve through $(1,1)$ is
 $$
@@ -111,7 +111,7 @@ C
 =1-1+1+1
 =2.
 $$
-Substituting this value into the potential from step <1>2 gives the displayed curve.
+Substituting this value into the potential from step [](#s1-2){.pf-ref} gives the displayed curve.
 
 :::
 
@@ -119,7 +119,7 @@ Substituting this value into the potential from step <1>2 gives the displayed cu
 
 ::: pf-qed
 
-Step <1>3 gives the required curve and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the required curve and corresponding choice.
 
 :::
 

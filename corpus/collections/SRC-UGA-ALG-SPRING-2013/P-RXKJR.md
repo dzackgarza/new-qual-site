@@ -30,7 +30,7 @@ Set $N=T+I$. Then $N^2=0$ and $T=-I+N$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is no nonzero $v$ such that $Tv=v$.
 
@@ -43,7 +43,7 @@ If $Tv=v$, then $Nv=2v$. Consequently $0=N^2v=2Nv=4v$, forcing $v=0$ over $\math
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists a nonzero $w$ such that $T^2w=w$.
 
@@ -56,7 +56,7 @@ Since $N^2=0$, the operator $N$ has nonzero kernel on the five-dimensional space
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 All possible Jordan forms are
 \[
@@ -74,7 +74,7 @@ The relation $(T+I)^2=0$ forces the sole eigenvalue to be $-1$ and all Jordan bl
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove part (a), and step <1>3 proves part (b).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), and step [](#s1-3){.pf-ref} proves part (b).
 
 :::
 

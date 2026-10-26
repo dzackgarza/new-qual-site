@@ -39,7 +39,7 @@ Such a basis exists because \(X\) is second countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -58,7 +58,7 @@ This is a countable family because it is indexed by \(\mathbb N\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The family \(\mathcal B_Y\) is a basis for the subspace topology on
 \(Y\).
@@ -85,7 +85,7 @@ y\in B_n\cap Y\subseteq V\cap Y=U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore statement \(1\) is
 \[
@@ -95,7 +95,7 @@ Therefore statement \(1\) is
 
 ::: pf-proof
 
-Steps <1>2--<1>3 give a countable basis for \(Y\).
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give a countable basis for \(Y\).
 
 :::
 
@@ -126,7 +126,7 @@ All points away from \(\infty\) are isolated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The space \(Y\) is not first countable at \(\infty\).
 
@@ -168,7 +168,7 @@ local base at \(\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently, \(Y\) is not second countable.
 
@@ -176,7 +176,7 @@ Consequently, \(Y\) is not second countable.
 ::: pf-proof
 
 Every second-countable space is first countable: at a point \(y\), the basis
-elements containing \(y\) form a countable local base. Step <1>6 shows that
+elements containing \(y\) form a countable local base. Step [](#s1-6){.pf-ref} shows that
 this fails at \(\infty\).
 
 :::
@@ -201,7 +201,7 @@ of all singletons.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus \(X\) is second countable.
 
@@ -218,7 +218,7 @@ is a countable basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The identity map
 \[
@@ -240,7 +240,7 @@ which is open in the discrete space \(X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore statement \(2\) is
 \[
@@ -250,14 +250,14 @@ Therefore statement \(2\) is
 
 ::: pf-proof
 
-Steps <1>9--<1>10 give a continuous surjection from a second-countable space
-onto \(Y\), while step <1>7 says \(Y\) is not second countable.
+Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} give a continuous surjection from a second-countable space
+onto \(Y\), while step [](#s1-7){.pf-ref} says \(Y\) is not second countable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Each factor \(X_i\) is second countable.
 
@@ -276,7 +276,7 @@ form a finite basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Fix a point
 \[
@@ -297,7 +297,7 @@ We will derive a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For each \(n\), choose a basic product neighborhood
 \[
@@ -317,7 +317,7 @@ Basic product neighborhoods form a basis for the product topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Each \(C_n\) restricts only finitely many coordinates; let
 \[
@@ -335,7 +335,7 @@ whole factor in only finitely many coordinates.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The set
 \[
@@ -352,7 +352,7 @@ It is a countable union of finite sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Choose
 \[
@@ -368,7 +368,7 @@ The index set \(I\) is uncountable, while \(F\) is countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Define the open neighborhood
 \[
@@ -392,7 +392,7 @@ under the coordinate projection
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 No \(C_n\) is contained in \(U\).
 
@@ -415,7 +415,7 @@ Such a point lies in \(C_n-U\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 No \(B_n\) is contained in \(U\).
 
@@ -430,13 +430,13 @@ then
 \[
 C_n\subseteq B_n\subseteq U,
 \]
-contradicting step <1>19.
+contradicting step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 This contradicts the assumption that \((B_n)\) is a local base at
 \(x\).
@@ -449,13 +449,13 @@ would have to satisfy
 \[
 x\in B_n\subseteq U.
 \]
-Step <1>20 says none does.
+Step [](#s1-20){.pf-ref} says none does.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Hence \(X\) is not first countable, and therefore is not second
 countable.
@@ -463,14 +463,14 @@ countable.
 
 ::: pf-proof
 
-Steps <1>13--<1>21 show there is no countable local base at \(x\). A
+Steps [](#s1-13){.pf-ref} through [](#s1-21){.pf-ref} show there is no countable local base at \(x\). A
 second-countable space is first countable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Therefore statement \(3\) is
 \[
@@ -481,7 +481,7 @@ Therefore statement \(3\) is
 ::: pf-proof
 
 The family \((X_i)_{i\in I}\) consists entirely of second-countable spaces
-by step <1>12, but their product is not second countable by step <1>22.
+by step [](#s1-12){.pf-ref}, but their product is not second countable by step [](#s1-22){.pf-ref}.
 
 :::
 
@@ -489,8 +489,8 @@ by step <1>12, but their product is not second countable by step <1>22.
 
 ::: pf-qed
 
-Statement \(1\) is proved true in step <1>4, while statements \(2\) and
-\(3\) are disproved in steps <1>11 and <1>23.
+Statement \(1\) is proved true in step [](#s1-4){.pf-ref}, while statements \(2\) and
+\(3\) are disproved in steps [](#s1-11){.pf-ref} and [](#s1-23){.pf-ref}.
 
 :::
 

@@ -67,7 +67,7 @@ attains a maximum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every vertex
 $$
@@ -161,7 +161,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every graph,
 $$
@@ -182,7 +182,7 @@ E_{\mathrm{same}}
 $$
 the set of noncrossing edges.
 
-Summing the inequality from step <1>2 over all vertices gives
+Summing the inequality from step [](#s1-2){.pf-ref} over all vertices gives
 $$
 \sum_{v\in V(G)}c(v)
 \ge
@@ -237,7 +237,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Now suppose
 $$
@@ -256,7 +256,7 @@ one has
 $$
 c(v)+s(v)=3.
 $$
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 c(v)\ge s(v).
 $$
@@ -281,7 +281,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For a cubic graph,
 $$
@@ -296,7 +296,7 @@ Sum the inequality
 $$
 c(v)\ge2
 $$
-from step <1>4 over all
+from step [](#s1-4){.pf-ref} over all
 $$
 n(G)
 $$
@@ -327,7 +327,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In a cubic graph,
 $$
@@ -368,7 +368,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, if $G$ is cubic, one can achieve
 $$
@@ -383,7 +383,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>5--<1>6.
+Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -391,7 +391,7 @@ Combine steps <1>5--<1>6.
 
 ::: pf-qed
 
-Step <1>3 proves the general bound, and step <1>7 proves the stronger cubic bound.
+Step [](#s1-3){.pf-ref} proves the general bound, and step [](#s1-7){.pf-ref} proves the stronger cubic bound.
 
 :::
 

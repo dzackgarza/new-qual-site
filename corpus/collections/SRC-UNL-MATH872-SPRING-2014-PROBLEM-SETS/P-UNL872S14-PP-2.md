@@ -33,7 +33,7 @@ cyclic analogues.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The eight cube vertices fall into exactly two equivalence classes:
 \[
@@ -69,7 +69,7 @@ sets, so no vertex of \(A\) is identified with a vertex of \(B\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The twelve open cube edges fall into four equivalence classes.
 
@@ -105,7 +105,7 @@ Every one of the twelve edges occurs exactly once in this list.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The quotient therefore has a CW structure with two \(0\)-cells
 \[
@@ -120,7 +120,7 @@ three \(2\)-cells, and one \(3\)-cell.
 
 ::: pf-proof
 
-Step <1>1 gives the two vertex orbits and step <1>2 gives the four open-edge
+Step [](#s1-1){.pf-ref} gives the two vertex orbits and step [](#s1-2){.pf-ref} gives the four open-edge
 orbits.
 
 The six open faces are paired into three opposite-face pairs, so their
@@ -133,7 +133,7 @@ desired CW structure.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Taking the \(x=0\) face with boundary
 \[
@@ -161,13 +161,13 @@ and
 \[
 001\to000=s.
 \]
-The last two equalities use the orientations recorded in step <1>2.
+The last two equalities use the orientations recorded in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Taking the \(y=0\) face with boundary
 \[
@@ -181,7 +181,7 @@ its attaching word is
 
 ::: pf-proof
 
-Using step <1>2, the successive edges are
+Using step [](#s1-2){.pf-ref}, the successive edges are
 \[
 000\to001=s^{-1},
 \qquad
@@ -197,7 +197,7 @@ Using step <1>2, the successive edges are
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Taking the \(z=0\) face with boundary
 \[
@@ -215,7 +215,7 @@ The four successive edges are
 \[
 p,\qquad r,\qquad s^{-1},\qquad q^{-1},
 \]
-again by the orbit orientations in step <1>2.
+again by the orbit orientations in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -235,7 +235,7 @@ them. Thus \(p\) is a connected tree containing every vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Collapsing this maximal tree gives the presentation
 \[
@@ -253,7 +253,7 @@ qrs,\ s^{-1}rq,\ rs^{-1}q^{-1}
 ::: pf-proof
 
 Collapsing a maximal tree in the \(1\)-skeleton does not change the
-fundamental group. In the three attaching words from steps <1>4--<1>6, set
+fundamental group. In the three attaching words from steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, set
 \[
 p=1.
 \]
@@ -264,7 +264,7 @@ affect the fundamental group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The first relation gives
 \[
@@ -284,7 +284,7 @@ is equivalent to the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Eliminating \(s\), the second relation becomes
 \[
@@ -294,7 +294,7 @@ Eliminating \(s\), the second relation becomes
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 s^{-1}=qr.
 \]
@@ -315,7 +315,7 @@ r^2=q^{-2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Eliminating \(s\), the third relation becomes
 \[
@@ -350,9 +350,9 @@ q^{-1}rq=r^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
-The relations in steps <1>10 and <1>11 imply
+The relations in steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} imply
 \[
 \boxed{r^4=1}
 \qquad\text{and}\qquad
@@ -366,7 +366,7 @@ Conjugate the equality
 \[
 r^2=q^{-2}
 \]
-by \(q^{-1}(-)q\). By step <1>11,
+by \(q^{-1}(-)q\). By step [](#s1-11){.pf-ref},
 \[
 q^{-1}r^2q=r^{-2},
 \]
@@ -403,7 +403,7 @@ q^2=r^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus
 \[
@@ -419,16 +419,16 @@ r^4=1,\ q^2=r^2,\ q^{-1}rq=r^{-1}
 
 ::: pf-proof
 
-Steps <1>9--<1>12 eliminate \(s\) and rewrite the remaining relations in
+Steps [](#s1-9){.pf-ref} through [](#s1-12){.pf-ref} eliminate \(s\) and rewrite the remaining relations in
 the displayed standard form.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
-Every element of the group in step <1>13 can be written in the form
+Every element of the group in step [](#s1-13){.pf-ref} can be written in the form
 \[
 \boxed{r^a q^b}
 \]
@@ -465,9 +465,9 @@ elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-The presentation in step <1>13 maps onto the quaternion group
+The presentation in step [](#s1-13){.pf-ref} maps onto the quaternion group
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\}.
 \]
@@ -498,7 +498,7 @@ Thus the defining relations are satisfied. Since \(i\) and \(j\) generate
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 \[
@@ -508,8 +508,8 @@ Therefore
 
 ::: pf-proof
 
-Step <1>14 shows that the presented group has at most eight elements. Step
-<1>15 gives a surjection onto \(Q_8\), which has exactly eight elements.
+Step [](#s1-14){.pf-ref} shows that the presented group has at most eight elements. Step
+[](#s1-15){.pf-ref} gives a surjection onto \(Q_8\), which has exactly eight elements.
 Hence the presented group has exactly eight elements and the surjection is
 an isomorphism.
 
@@ -519,8 +519,8 @@ an isomorphism.
 
 ::: pf-qed
 
-Step <1>3 gives the requested CW structure, step <1>8 gives a presentation
-directly from the cell attachments, and step <1>16 identifies that
+Step [](#s1-3){.pf-ref} gives the requested CW structure, step [](#s1-8){.pf-ref} gives a presentation
+directly from the cell attachments, and step [](#s1-16){.pf-ref} identifies that
 presentation with the quaternion group.
 
 :::

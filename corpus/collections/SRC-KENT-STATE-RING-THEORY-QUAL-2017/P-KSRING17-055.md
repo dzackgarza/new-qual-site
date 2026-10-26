@@ -94,7 +94,7 @@ Hence $U$ is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ideal $U$ is proper.
 
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ideal $U$ is prime.
 
@@ -158,7 +158,7 @@ a\in U
 \quad\text{or}\quad
 b\in U.
 $$
-Together with step <1>2, this proves that
+Together with step [](#s1-2){.pf-ref}, this proves that
 $$
 \boxed{U\text{ is prime}.}
 $$
@@ -211,7 +211,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal $I$ is proper.
 
@@ -242,7 +242,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose
 $$
@@ -290,9 +290,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The assumptions in step <1>6 lead to a contradiction.
+The assumptions in step [](#s1-6){.pf-ref} lead to a contradiction.
 
 
 ::: pf-proof
@@ -354,14 +354,14 @@ contradicting primality of $Q$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $I$ is prime.
 
 
 ::: pf-proof
 
-By step <1>7, if
+By step [](#s1-7){.pf-ref}, if
 $$
 ab\in I,
 $$
@@ -371,7 +371,7 @@ a\in I
 \quad\text{or}\quad
 b\in I.
 $$
-Together with step <1>5, this gives
+Together with step [](#s1-5){.pf-ref}, this gives
 $$
 \boxed{I\text{ is prime}.}
 $$
@@ -382,7 +382,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 proves that the union of the chain is prime, and step <1>8 proves that the intersection is prime.
+Step [](#s1-3){.pf-ref} proves that the union of the chain is prime, and step [](#s1-8){.pf-ref} proves that the intersection is prime.
 
 :::
 

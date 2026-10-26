@@ -28,7 +28,7 @@ Let $p$ and $q$ be distinct primes. How many (mutually nonisomorphic) Abelian gr
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are exactly two isomorphism types of Abelian groups of order $p^2$.
 
@@ -47,7 +47,7 @@ giving $\ZZ_{p^2}$ and $\ZZ_p\oplus\ZZ_p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There are exactly five isomorphism types of Abelian groups of order $q^4$.
 
@@ -72,7 +72,7 @@ By the same classification theorem, these give exactly five Abelian $q$-groups o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The choices of the $p$-primary and $q$-primary factors are independent, so there are $2\cdot5=10$ isomorphism types of Abelian groups of order $p^2q^4$.
 
@@ -83,13 +83,13 @@ For an Abelian group $G$ of order $p^2q^4$, primary decomposition gives
 $$
 G\cong G_{(p)}\oplus G_{(q)},
 $$
-where $|G_{(p)}|=p^2$ and $|G_{(q)}|=q^4$. These primary subgroups are determined intrinsically as the elements of prime-power order for the respective primes, so two such direct sums are isomorphic exactly when their $p$-primary factors are isomorphic and their $q$-primary factors are isomorphic. Steps <1>1 and <1>2 therefore give $2\cdot5=10$ possibilities.
+where $|G_{(p)}|=p^2$ and $|G_{(q)}|=q^4$. These primary subgroups are determined intrinsically as the elements of prime-power order for the respective primes, so two such direct sums are isomorphic exactly when their $p$-primary factors are isomorphic and their $q$-primary factors are isomorphic. Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} therefore give $2\cdot5=10$ possibilities.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the number of mutually nonisomorphic Abelian groups is
 $$
@@ -100,7 +100,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-This is the count established in step <1>3.
+This is the count established in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -108,7 +108,7 @@ This is the count established in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested number.
+Step [](#s1-4){.pf-ref} gives the requested number.
 
 :::
 

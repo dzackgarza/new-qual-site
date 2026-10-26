@@ -48,7 +48,7 @@ defined on all of $\RR$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The domain of $f$ is
 $$
@@ -77,7 +77,7 @@ $\RR\setminus\{0\}$, so $f^{-1}(-2)$ is well-defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the true statement is
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives the stated domain in choice (E), and step <1>3 gives its
+Step [](#s1-2){.pf-ref} gives the stated domain in choice (E), and step [](#s1-3){.pf-ref} gives its
 stated value of $f^{-1}(-2)$.
 
 :::
@@ -123,7 +123,7 @@ stated value of $f^{-1}(-2)$.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

@@ -78,7 +78,7 @@ is linear, so $\Phi$ is linear.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -122,7 +122,7 @@ Hence every surviving term is divisible by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -138,7 +138,7 @@ divides $P(z)$.
 
 ::: pf-proof
 
-By step <1>2, for each $j$,
+By step [](#s1-2){.pf-ref}, for each $j$,
 \[
 (z-z_j)^{m_j+1}
 \]
@@ -150,7 +150,7 @@ Therefore the product of these powers divides $P$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The polynomial
 \[
@@ -180,7 +180,7 @@ N+1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $\Phi$ is injective.
 
@@ -191,7 +191,7 @@ Suppose
 \[
 \Phi(P)=0.
 \]
-By step <1>3, $Q$ divides $P$, while step <1>4 gives
+By step [](#s1-3){.pf-ref}, $Q$ divides $P$, while step [](#s1-4){.pf-ref} gives
 \[
 \deg Q=N+1.
 \]
@@ -210,7 +210,7 @@ Hence $\ker\Phi=\{0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is bijective.
 
@@ -222,7 +222,7 @@ The domain has dimension
 \dim\mathcal P_N=N+1.
 \]
 The codomain $\mathbb C^{N+1}$ also has dimension $N+1$.
-By step <1>5, $\Phi$ is injective.
+By step [](#s1-5){.pf-ref}, $\Phi$ is injective.
 A linear map between finite-dimensional vector spaces of equal dimension is injective if and only if it is surjective.
 Therefore $\Phi$ is bijective.
 
@@ -230,7 +230,7 @@ Therefore $\Phi$ is bijective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every prescribed array
 \[
@@ -246,7 +246,7 @@ for all $j,k$.
 ::: pf-proof
 
 The array $(c_{j,k})$ is an arbitrary element of the codomain of $\Phi$.
-Surjectivity from step <1>6 gives existence of a preimage $P$.
+Surjectivity from step [](#s1-6){.pf-ref} gives existence of a preimage $P$.
 Injectivity gives uniqueness.
 
 :::
@@ -255,7 +255,7 @@ Injectivity gives uniqueness.
 
 ::: pf-qed
 
-Step <1>7 is exactly the Hermite interpolation statement required.
+Step [](#s1-7){.pf-ref} is exactly the Hermite interpolation statement required.
 
 :::
 

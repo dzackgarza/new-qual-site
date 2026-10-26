@@ -30,7 +30,7 @@ Define $q(x)=p(x)-5$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $q$ is the zero polynomial.
 
@@ -43,14 +43,14 @@ The polynomial $q$ has degree at most $4$ unless it is identically zero. Every s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $p$ is identically equal to $5$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 p(x)-5=q(x)=0
 $$
@@ -60,7 +60,7 @@ for every $x$, so $p(x)=5$ identically.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The requested value is
 $$
@@ -71,7 +71,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Evaluate the identity from step <1>2 at $x=5$.
+Evaluate the identity from step [](#s1-2){.pf-ref} at $x=5$.
 
 :::
 
@@ -79,7 +79,7 @@ Evaluate the identity from step <1>2 at $x=5$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and choice.
+Step [](#s1-3){.pf-ref} gives the requested value and choice.
 
 :::
 

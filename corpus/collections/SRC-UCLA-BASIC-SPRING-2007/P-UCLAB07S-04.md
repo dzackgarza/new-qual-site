@@ -35,7 +35,7 @@ E_j=\ker(A-\lambda_jI).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $A$ is real symmetric,
 \[
@@ -55,7 +55,7 @@ Grouping basis vectors with the same eigenvalue yields the stated orthogonal dir
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every
 \[
@@ -80,7 +80,7 @@ x^TA^{2k}x
 
 ::: pf-proof
 
-The decomposition is given by step <1>1.
+The decomposition is given by step [](#s1-1){.pf-ref}.
 Since
 \[
 Ax_j=\lambda_jx_j,
@@ -117,7 +117,7 @@ x^TA^{2k}x
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 \[
@@ -145,7 +145,7 @@ M(x).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 x^TA^{2k}x
 =
@@ -199,7 +199,7 @@ Hence the squeeze theorem gives the stated limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -226,7 +226,7 @@ x^TA^{2k}x
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -236,14 +236,14 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 proves existence of the limit for every nonzero $x$, and step <1>4 handles $x=0$.
+Step [](#s1-3){.pf-ref} proves existence of the limit for every nonzero $x$, and step [](#s1-4){.pf-ref} handles $x=0$.
 Thus every vector belongs to $X$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every nonzero limit value is one of the numbers
 \[
@@ -253,7 +253,7 @@ Every nonzero limit value is one of the numbers
 
 ::: pf-proof
 
-For $x\ne0$, step <1>3 says that the limit equals
+For $x\ne0$, step [](#s1-3){.pf-ref} says that the limit equals
 \[
 \max\left\{
 |\lambda_j|^2:x_j\ne0
@@ -269,7 +269,7 @@ The maximum of a finite nonempty subset of the numbers $\lambda_j^2$ is one of t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every number
 \[
@@ -311,7 +311,7 @@ v^TA^{2k}v
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -327,9 +327,9 @@ L
 
 ::: pf-proof
 
-The value $0$ occurs at $x=0$ by step <1>4.
-Step <1>6 shows that no other values can occur.
-Step <1>7 shows that every listed square does occur.
+The value $0$ occurs at $x=0$ by step [](#s1-4){.pf-ref}.
+Step [](#s1-6){.pf-ref} shows that no other values can occur.
+Step [](#s1-7){.pf-ref} shows that every listed square does occur.
 Repeated squares, such as those coming from eigenvalues $\lambda$ and $-\lambda$, appear only once because $L$ is a set.
 
 :::
@@ -338,7 +338,7 @@ Repeated squares, such as those coming from eigenvalues $\lambda$ and $-\lambda$
 
 ::: pf-qed
 
-Step <1>5 determines $X$, and step <1>8 determines $L$.
+Step [](#s1-5){.pf-ref} determines $X$, and step [](#s1-8){.pf-ref} determines $L$.
 
 :::
 

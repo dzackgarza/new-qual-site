@@ -50,7 +50,7 @@ for every $x\in A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The hypothesis
 \[
@@ -70,7 +70,7 @@ Evaluate the two equal functions at the chosen point $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $f$ is injective,
 \[
@@ -92,13 +92,13 @@ a=g(x),
 \qquad
 b=h(x),
 \]
-using step <1>2.
+using step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -110,7 +110,7 @@ g=h.
 
 ::: pf-proof
 
-The point $x\in A$ was arbitrary, so step <1>3 holds for every $x$.
+The point $x\in A$ was arbitrary, so step [](#s1-3){.pf-ref} holds for every $x$.
 Thus the two functions agree pointwise.
 
 :::
@@ -119,7 +119,7 @@ Thus the two functions agree pointwise.
 
 ::: pf-qed
 
-Step <1>4 is the desired conclusion.
+Step [](#s1-4){.pf-ref} is the desired conclusion.
 
 :::
 

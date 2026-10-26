@@ -35,7 +35,7 @@ This is the classical angle-bisector construction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore every angle can be divided into
 \[
@@ -65,7 +65,7 @@ Write the prime factorization of \(n\). If every prime divisor were \(2\), then 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If every angle could be divided into \(n\) equal parts, then every angle could be divided into \(p\) equal parts.
 
@@ -105,7 +105,7 @@ A regular triangle is constructible, so its central angle \(2\pi/3\) is construc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If every angle were \(p\)-sectable, then
 \[
@@ -122,7 +122,7 @@ Apply the hypothetical \(p\)-section construction to the constructible angle \(2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Constructibility of the angle
 \[
@@ -139,7 +139,7 @@ From a constructible central angle \(2\pi/(3p)\), one can mark successive points
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 But a regular \(3p\)-gon is not constructible when \(p\) is an odd prime that is not a Fermat prime.
 
@@ -152,14 +152,14 @@ By Gauss--Wantzel, every odd prime divisor of a constructible polygon size must 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence no non-Fermat odd prime \(p\) universally \(p\)-sects angles.
 
 
 ::: pf-proof
 
-Steps <1>6--<1>8 give a contradiction.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give a contradiction.
 
 :::
 
@@ -178,7 +178,7 @@ This is exactly one of the Gauss--Wantzel allowed odd prime factors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore the angle
 \[
@@ -195,7 +195,7 @@ It is the central angle between adjacent vertices of the constructible regular \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If every angle were \(p\)-sectable, then
 \[
@@ -206,13 +206,13 @@ would be constructible.
 
 ::: pf-proof
 
-Apply the hypothetical \(p\)-section construction to the angle from step <1>11.
+Apply the hypothetical \(p\)-section construction to the angle from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Constructibility of
 \[
@@ -223,13 +223,13 @@ would imply constructibility of a regular \(p^2\)-gon.
 
 ::: pf-proof
 
-As in step <1>7, successively laying off the constructible central angle produces the regular polygon.
+As in step [](#s1-7){.pf-ref}, successively laying off the constructible central angle produces the regular polygon.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 But a regular \(p^2\)-gon is not constructible.
 
@@ -246,27 +246,27 @@ contains the odd Fermat prime \(p\) with exponent \(2\), so it is not of the req
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence no Fermat odd prime \(p\) universally \(p\)-sects angles.
 
 
 ::: pf-proof
 
-Steps <1>12--<1>14 give a contradiction.
+Steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} give a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore no odd prime \(p\) has the property that every angle can be divided into \(p\) equal parts.
 
 
 ::: pf-proof
 
-Every odd prime is either a Fermat prime or not. Apply steps <1>9 and <1>15.
+Every odd prime is either a Fermat prime or not. Apply steps [](#s1-9){.pf-ref} and [](#s1-15){.pf-ref}.
 
 :::
 
@@ -279,13 +279,13 @@ Consequently, if every angle can be divided into \(n\) equal parts, then \(n\) h
 
 ::: pf-proof
 
-If \(n\) had an odd prime divisor \(p\), step <1>4 would imply universal \(p\)-section, contradicting step <1>16.
+If \(n\) had an odd prime divisor \(p\), step [](#s1-4){.pf-ref} would imply universal \(p\)-section, contradicting step [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Hence
 \[
@@ -302,7 +302,7 @@ A positive integer with no odd prime divisor is a power of \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Combining necessity and sufficiency,
 \[
@@ -315,7 +315,7 @@ n=2^r\text{ for some }r\ge0.}
 
 ::: pf-proof
 
-Sufficiency is step <1>2, and necessity is step <1>18.
+Sufficiency is step [](#s1-2){.pf-ref}, and necessity is step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -323,7 +323,7 @@ Sufficiency is step <1>2, and necessity is step <1>18.
 
 ::: pf-qed
 
-Step <1>19 is the required classification.
+Step [](#s1-19){.pf-ref} is the required classification.
 
 :::
 

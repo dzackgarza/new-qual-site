@@ -30,7 +30,7 @@ All cohomology groups below have integral coefficients.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $S^3$ is a topological group, there is a homeomorphism
 \[
@@ -69,7 +69,7 @@ These maps are continuous and inverse to one another.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The based loop space has
 \[
@@ -124,7 +124,7 @@ with multiplication
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -149,14 +149,14 @@ H^q(LS^3;\mathbb Z)
 
 ::: pf-proof
 
-By step <1>1, apply the integral Künneth theorem. The cohomology of $S^3$
+By step [](#s1-1){.pf-ref}, apply the integral Künneth theorem. The cohomology of $S^3$
 is
 \[
 H^*(S^3;\mathbb Z)
 \cong
 \Lambda_{\mathbb Z}(z_3),
 \]
-and step <1>2 gives the other factor. Both factors are torsion-free, so no
+and step [](#s1-2){.pf-ref} gives the other factor. Both factors are torsion-free, so no
 Tor term occurs.
 
 The divided-power factor has one copy of $\mathbb Z$ in every nonnegative
@@ -167,7 +167,7 @@ least $3$, proving the additive statement.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $n\ge1$, Cohen--Jones--Yan compute the shifted loop homology
 algebra
@@ -213,7 +213,7 @@ The grading displayed here is the string-topology grading shifted downward by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 As an ordinary homology group,
 \[
@@ -234,7 +234,7 @@ H_q(L\mathbb{CP}^n;\mathbb Z)
 
 ::: pf-proof
 
-Use the monomial basis of the algebra in step <1>4.
+Use the monomial basis of the algebra in step [](#s1-4){.pf-ref}.
 
 First consider monomials without $x$:
 \[
@@ -298,7 +298,7 @@ groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The integral cohomology groups of the free loop space of
 $\mathbb{CP}^n$ are therefore
@@ -342,7 +342,7 @@ H_q(L\mathbb{CP}^n),\mathbb Z
 \to0.
 \]
 
-By step <1>5, every odd homology group is free cyclic, while every even
+By step [](#s1-5){.pf-ref}, every odd homology group is free cyclic, while every even
 homology group has one free cyclic summand and, precisely in degrees
 \[
 2nr,
@@ -372,13 +372,13 @@ so the group is the displayed direct sum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
 \mathbb{CP}^1\cong S^2,
 \]
-step <1>6 with $n=1$ gives
+step [](#s1-6){.pf-ref} with $n=1$ gives
 \[
 \boxed{
 H^q(LS^2;\mathbb Z)
@@ -394,7 +394,7 @@ H^q(LS^2;\mathbb Z)
 
 ::: pf-proof
 
-Substitute $n=1$ into step <1>6. The exceptional odd degrees are
+Substitute $n=1$ into step [](#s1-6){.pf-ref}. The exceptional odd degrees are
 \[
 2r+1,
 \qquad
@@ -408,15 +408,15 @@ which are exactly the odd degrees at least $3$.
 
 ::: pf-qed
 
-Step <1>3 computes the cohomology of
+Step [](#s1-3){.pf-ref} computes the cohomology of
 \[
 \operatorname{Map}(S^1,S^3).
 \]
-Step <1>7 computes the cohomology of
+Step [](#s1-7){.pf-ref} computes the cohomology of
 \[
 \operatorname{Map}(S^1,S^2),
 \]
-and step <1>6 computes the cohomology of
+and step [](#s1-6){.pf-ref} computes the cohomology of
 \[
 \operatorname{Map}(S^1,\mathbb{CP}^n).
 \]

@@ -39,7 +39,7 @@ and every composition factor has order \(2\), hence is isomorphic to \(C_2\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The unique subgroup of order \(2\) in \(Q_8\) is
 \[
@@ -55,7 +55,7 @@ The element \(-1\) has order \(2\). The six elements \(\pm i,\pm j,\pm k\) all h
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The subgroups of order \(4\) in \(Q_8\) are exactly
 \[
@@ -73,7 +73,7 @@ Every subgroup of order \(4\) contains an element of order \(4\), and each such 
 
 ::: pf-step
 
-Each subgroup in step <1>2 contains \(Z\).
+Each subgroup in step [](#s1-2){.pf-ref} contains \(Z\).
 
 
 ::: pf-proof
@@ -92,7 +92,7 @@ contains \(Z\). The same argument applies to \(j\) and \(k\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the three composition series of \(Q_8\) are
 \[
@@ -118,20 +118,20 @@ The subgroup orders are \(1,2,4,8\). Every subgroup of index \(2\) is normal, an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There are no other composition series for \(Q_8\).
 
 
 ::: pf-proof
 
-Any composition series must have an order-\(2\) subgroup, which by step <1>1 must be \(Z\), and then an order-\(4\) subgroup containing \(Z\), which by step <1>2 is one of the three displayed groups.
+Any composition series must have an order-\(2\) subgroup, which by step [](#s1-1){.pf-ref} must be \(Z\), and then an order-\(4\) subgroup containing \(Z\), which by step [](#s1-2){.pf-ref} is one of the three displayed groups.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In every \(Q_8\) composition series, the composition factors are
 \[
@@ -172,7 +172,7 @@ to either \(r^a\) or \(sr^a\), with \(0\le a<4\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The subgroups of order \(4\) are exactly
 \[
@@ -208,9 +208,9 @@ For even \(a\), this is \(V_0\); for odd \(a\), this is \(V_1\). Thus there are 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Each subgroup in step <1>8 is normal in \(D_8\).
+Each subgroup in step [](#s1-8){.pf-ref} is normal in \(D_8\).
 
 
 ::: pf-proof
@@ -221,7 +221,7 @@ Each has index \(2\), and every index-\(2\) subgroup is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The cyclic group
 \[
@@ -241,7 +241,7 @@ A cyclic group of order \(4\) has exactly one subgroup of order \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore the unique composition series passing through \(R\) is
 \[
@@ -252,13 +252,13 @@ Therefore the unique composition series passing through \(R\) is
 
 ::: pf-proof
 
-Use steps <1>9--<1>10. All quotient orders are \(2\).
+Use steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref}. All quotient orders are \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The group
 \[
@@ -281,7 +281,7 @@ The three nonidentity elements \(r^2,s,sr^2\) all have order \(2\), and in a Kle
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus the three composition series through \(V_0\) are
 \[
@@ -301,13 +301,13 @@ and
 
 ::: pf-proof
 
-Every subgroup of \(V_0\) is normal because \(V_0\) is abelian, and \(V_0\triangleleft D_8\) by step <1>9. The quotient orders are all \(2\).
+Every subgroup of \(V_0\) is normal because \(V_0\) is abelian, and \(V_0\triangleleft D_8\) by step [](#s1-9){.pf-ref}. The quotient orders are all \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The group
 \[
@@ -330,7 +330,7 @@ The three nonidentity elements \(r^2,sr,sr^3\) all have order \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Thus the three composition series through \(V_1\) are
 \[
@@ -350,13 +350,13 @@ and
 
 ::: pf-proof
 
-As in step <1>13, every order-\(2\) subgroup is normal in the abelian group \(V_1\), and \(V_1\triangleleft D_8\).
+As in step [](#s1-13){.pf-ref}, every order-\(2\) subgroup is normal in the abelian group \(V_1\), and \(V_1\triangleleft D_8\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Altogether, \(D_8\) has exactly
 \[
@@ -367,13 +367,13 @@ composition series.
 
 ::: pf-proof
 
-Every composition series must pass through an order-\(4\) subgroup. Step <1>8 lists all three such subgroups. Steps <1>11, <1>13, and <1>15 enumerate all choices of order-\(2\) subgroup inside each.
+Every composition series must pass through an order-\(4\) subgroup. Step [](#s1-8){.pf-ref} lists all three such subgroups. Steps [](#s1-11){.pf-ref} and [](#s1-13){.pf-ref}, and [](#s1-15){.pf-ref} enumerate all choices of order-\(2\) subgroup inside each.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 In every \(D_8\) composition series, the composition factors are
 \[
@@ -391,7 +391,7 @@ Every successive quotient has order \(2\).
 
 ::: pf-qed
 
-Steps <1>4--<1>6 give all three composition series of \(Q_8\), while steps <1>11--<1>17 give all seven composition series of \(D_8\) and their factors.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give all three composition series of \(Q_8\), while steps [](#s1-11){.pf-ref} through [](#s1-17){.pf-ref} give all seven composition series of \(D_8\) and their factors.
 
 :::
 

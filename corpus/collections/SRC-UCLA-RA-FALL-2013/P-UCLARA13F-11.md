@@ -36,7 +36,7 @@ Argue by contradiction using an orthonormal sequence in the $L^2$ inner product.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose that $S$ is infinite-dimensional.
 
@@ -49,7 +49,7 @@ This is the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists an infinite sequence $(f_n)$ in $S$ that is orthonormal for the $L^2$ inner product:
 \[
@@ -69,7 +69,7 @@ No nonzero continuous function has $L^2$ norm zero, so this is an inner product 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each $N\geq1$, define
 \[
@@ -94,7 +94,7 @@ Each $f_n$ has $L^2$ norm $1$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence there exists $x_N\in[0,1]$ such that
 \[
@@ -104,7 +104,7 @@ F_N(x_N)\geq N.
 
 ::: pf-proof
 
-If $F_N(x)<N$ for every $x$, continuity on the compact interval would give $\int_0^1F_N<N$, contradicting step <1>3. Equivalently, the maximum of a nonnegative function is at least its average.
+If $F_N(x)<N$ for every $x$, continuity on the compact interval would give $\int_0^1F_N<N$, contradicting step [](#s1-3){.pf-ref}. Equivalently, the maximum of a nonnegative function is at least its average.
 
 :::
 
@@ -131,7 +131,7 @@ This is a finite linear combination of elements of the subspace $S$, so $g_N\in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -149,7 +149,7 @@ By the definition of the coefficients,
 \[
 g_N(x_N)=\sum_{n=1}^Nf_n(x_N)^2=F_N(x_N).
 \]
-By orthonormality from step <1>2,
+By orthonormality from step [](#s1-2){.pf-ref},
 \[
 \|g_N\|_2^2
 =\sum_{n=1}^N|c_n|^2
@@ -160,7 +160,7 @@ By orthonormality from step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The assumed norm inequality applied to $g_N$ gives
 \[
@@ -171,7 +171,7 @@ F_N(x_N)
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 \[
 F_N(x_N)=|g_N(x_N)|\leq\|g_N\|_\infty
 \leq K\|g_N\|_2
@@ -182,7 +182,7 @@ F_N(x_N)=|g_N(x_N)|\leq\|g_N\|_\infty
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -192,15 +192,15 @@ F_N(x_N)\leq K^2.
 
 ::: pf-proof
 
-By step <1>4, $F_N(x_N)\geq N>0$, so divide the inequality in step <1>7 by its positive square root and square the result.
+By step [](#s1-4){.pf-ref}, $F_N(x_N)\geq N>0$, so divide the inequality in step [](#s1-7){.pf-ref} by its positive square root and square the result.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Steps <1>4 and <1>8 imply
+Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} imply
 \[
 N\leq K^2
 \]
@@ -209,13 +209,13 @@ for every positive integer $N$, a contradiction.
 
 ::: pf-proof
 
-Step <1>4 gives $N\leq F_N(x_N)$, and step <1>8 gives $F_N(x_N)\leq K^2$. Taking an integer $N>K^2$ is impossible.
+Step [](#s1-4){.pf-ref} gives $N\leq F_N(x_N)$, and step [](#s1-8){.pf-ref} gives $F_N(x_N)\leq K^2$. Taking an integer $N>K^2$ is impossible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -225,7 +225,7 @@ Hence
 
 ::: pf-proof
 
-The assumption of infinite dimension in step <1>1 led to the contradiction in step <1>9.
+The assumption of infinite dimension in step [](#s1-1){.pf-ref} led to the contradiction in step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -233,7 +233,7 @@ The assumption of infinite dimension in step <1>1 led to the contradiction in st
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

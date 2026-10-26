@@ -30,7 +30,7 @@ B(x;D;L_1,\dots,L_k)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The declared open sets form a topology on $\mathbb R^2$.
 
@@ -63,7 +63,7 @@ Hence finite intersections are open, proving the topology axioms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The slotted-plane topology is strictly finer than the usual topology.
 
@@ -87,14 +87,14 @@ $o$ is contained in $W$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The slotted plane is Hausdorff.
 
 
 ::: pf-proof
 
-By step <1>2, the slotted topology is finer than the usual Euclidean topology.
+By step [](#s1-2){.pf-ref}, the slotted topology is finer than the usual Euclidean topology.
 Distinct points have disjoint Euclidean open neighborhoods, and those
 neighborhoods remain open in the finer topology.
 
@@ -102,7 +102,7 @@ neighborhoods remain open in the finer topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -130,7 +130,7 @@ Therefore $\mathbb R^2\setminus F$ is slotted-open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $U$ is any slotted-open neighborhood of $o$, then
 \[
@@ -167,14 +167,14 @@ $p_n\in F$, the claim follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The slotted plane is not regular.
 
 
 ::: pf-proof
 
-By step <1>3 the space is Hausdorff, hence $T_1$. In a regular $T_1$ space,
+By step [](#s1-3){.pf-ref} the space is Hausdorff, hence $T_1$. In a regular $T_1$ space,
 given a closed set $F$ and a point $o\notin F$, there is an open neighborhood
 $U$ of $o$ such that
 \[
@@ -183,14 +183,14 @@ $U$ of $o$ such that
 indeed, separate $o$ and $F$ by disjoint open sets $U$ and $V$; then
 $\overline U\subseteq X\setminus V$.
 
-For the closed set $F$ in step <1>4, step <1>5 shows that no neighborhood of
+For the closed set $F$ in step [](#s1-4){.pf-ref}, step [](#s1-5){.pf-ref} shows that no neighborhood of
 $o$ has closure disjoint from $F$. Hence the slotted plane is not regular.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The slotted plane is separable.
 
@@ -214,7 +214,7 @@ $\mathbb Q^2$. Hence every nonempty slotted-open set meets $\mathbb Q^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The slotted plane is not first countable.
 
@@ -255,8 +255,8 @@ countable local base exists at $x$.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove part 1, steps <1>3 through <1>6 prove part 2, and
-steps <1>7 and <1>8 prove part 3.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part 1, steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove part 2, and
+steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} prove part 3.
 
 :::
 

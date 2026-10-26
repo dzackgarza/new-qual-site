@@ -21,7 +21,7 @@ Define the arc length of a path $\gamma:[a,b]\to\mathbb C$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The **arc length** of a continuous path $\gamma:[a,b]\to\CC$ is
 $$
@@ -46,7 +46,7 @@ This is the definition of the length, or total variation, of the path. If the su
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\gamma$ is piecewise $C^1$, then
 $$
@@ -56,7 +56,7 @@ $$
 
 ::: pf-proof
 
-For a piecewise $C^1$ path, the standard arc-length theorem identifies the partition-supremum definition in step <1>1 with the integral of the speed.
+For a piecewise $C^1$ path, the standard arc-length theorem identifies the partition-supremum definition in step [](#s1-1){.pf-ref} with the integral of the speed.
 
 :::
 
@@ -64,7 +64,7 @@ For a piecewise $C^1$ path, the standard arc-length theorem identifies the parti
 
 ::: pf-qed
 
-Step <1>1 is the requested definition; step <1>2 gives the usual formula for the paths used in contour integration.
+Step [](#s1-1){.pf-ref} is the requested definition; step [](#s1-2){.pf-ref} gives the usual formula for the paths used in contour integration.
 
 :::
 

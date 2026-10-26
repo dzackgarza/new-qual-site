@@ -46,7 +46,7 @@ coordinate changes sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the matrix for part (a) is
 $$
@@ -69,7 +69,7 @@ Multiplying a vector by this diagonal matrix negates all three coordinates.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Reflection across the $z$-axis sends
 $$
@@ -88,7 +88,7 @@ component in the $xy$-plane changes sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the matrix for part (b) is
 $$
@@ -105,13 +105,13 @@ $$
 
 ::: pf-proof
 
-This matrix implements exactly the coordinate transformation in step <1>3.
+This matrix implements exactly the coordinate transformation in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Reflection across the $xy$-plane sends
 $$
@@ -130,7 +130,7 @@ $z$ changes sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the matrix for part (c) is
 $$
@@ -147,7 +147,7 @@ $$
 
 ::: pf-proof
 
-This matrix implements the transformation in step <1>5.
+This matrix implements the transformation in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -155,7 +155,7 @@ This matrix implements the transformation in step <1>5.
 
 ::: pf-qed
 
-Steps <1>2, <1>4, and <1>6 give the three requested reflection matrices.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-6){.pf-ref} give the three requested reflection matrices.
 
 :::
 

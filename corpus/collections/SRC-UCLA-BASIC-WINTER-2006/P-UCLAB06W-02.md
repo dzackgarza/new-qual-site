@@ -36,7 +36,7 @@ Under this condition, define $f$ on $[0,1]$ by the displayed series.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in[0,1)$, the series
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If the series is well defined at $x=1$, then necessarily $a_n\to0$.
 
@@ -85,7 +85,7 @@ which is equivalent to $a_n\to0$ because $a_n>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $a_n\to0$, then the series converges at $x=1$.
 
@@ -102,7 +102,7 @@ Thus $f(1)$ is well defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Assume $a_n\to0$. For every $x\in[0,1]$ and every $N\ge1$, the tail satisfies
 $$
@@ -137,7 +137,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $a_n\to0$, the partial sums
 $$
@@ -148,7 +148,7 @@ converge uniformly to $f$ on $[0,1]$.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \sup_{x\in[0,1]}\abs{f(x)-f_N(x)}
 \le a_{N+1}.
@@ -159,14 +159,14 @@ Since $a_{N+1}\to0$, the convergence is uniform.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $a_n\to0$, then $f$ is continuous on $[0,1]$, in particular left-continuous at $x=1$.
 
 
 ::: pf-proof
 
-Each $f_N$ is a polynomial and hence continuous on $[0,1]$. By step <1>5, $f_N\to f$ uniformly on $[0,1]$. A uniform limit of continuous functions is continuous. Therefore
+Each $f_N$ is a polynomial and hence continuous on $[0,1]$. By step [](#s1-5){.pf-ref}, $f_N\to f$ uniformly on $[0,1]$. A uniform limit of continuous functions is continuous. Therefore
 $$
 \lim_{x\to1^-}f(x)=f(1).
 $$
@@ -177,7 +177,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 proves necessity of $a_n\to0$. Steps <1>1 and <1>3 show that this condition makes the series well defined on $[0,1]$, and step <1>6 proves left-continuity at $1$.
+Step [](#s1-2){.pf-ref} proves necessity of $a_n\to0$. Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} show that this condition makes the series well defined on $[0,1]$, and step [](#s1-6){.pf-ref} proves left-continuity at $1$.
 
 :::
 

@@ -32,7 +32,7 @@ vanishes at $\rho=1$, and is required to remain bounded and decay as $z\to\infty
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Separated harmonic modes with angular frequency $m$ have the form
 \[
@@ -58,7 +58,7 @@ Separating $u=R(\rho)\Theta(\theta)Z(z)$ gives periodic angular modes of integer
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $j_{m,n}$ be the $n$th positive zero of $J_m$. For part (a), the solution has the form
 \[
@@ -69,13 +69,13 @@ J_0(j_{0,n}\rho)e^{-j_{0,n}z}.
 
 ::: pf-proof
 
-The boundary value $u_0$ at $z=0$ is independent of $\theta$, so only the $m=0$ angular mode occurs. Step <1>1 then gives precisely the displayed radial and axial factors.
+The boundary value $u_0$ at $z=0$ is independent of $\theta$, so only the $m=0$ angular mode occurs. Step [](#s1-1){.pf-ref} then gives precisely the displayed radial and axial factors.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficients in part (a) are
 \[
@@ -100,7 +100,7 @@ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence part (a) is
 \[
@@ -113,13 +113,13 @@ e^{-j_{0,n}z}.}
 
 ::: pf-proof
 
-Insert step <1>3 into step <1>2. The Fourier--Bessel expansion recovers the constant flat-face temperature for $0\leq\rho<1$; the mismatch at the rim is the unavoidable corner incompatibility with the curved surface being held at zero.
+Insert step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}. The Fourier--Bessel expansion recovers the constant flat-face temperature for $0\leq\rho<1$; the mismatch at the rim is the unavoidable corner incompatibility with the curved surface being held at zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (b), only the $m=1$ sine mode occurs, so
 \[
@@ -130,13 +130,13 @@ u(\rho,\theta,z)=\sin\theta
 
 ::: pf-proof
 
-The flat-face datum $u_0\rho\sin\theta$ has angular dependence $\sin\theta$, corresponding to $m=1$. Step <1>1 gives the remaining factors.
+The flat-face datum $u_0\rho\sin\theta$ has angular dependence $\sin\theta$, corresponding to $m=1$. Step [](#s1-1){.pf-ref} gives the remaining factors.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The coefficients in part (b) are
 \[
@@ -166,7 +166,7 @@ and the result follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence part (b) is
 \[
@@ -180,7 +180,7 @@ e^{-j_{1,n}z}.}
 
 ::: pf-proof
 
-Insert step <1>6 into step <1>5. The resulting harmonic function vanishes at $\rho=1$, decays as $z\to\infty$, and its Fourier--Bessel expansion at $z=0$ equals $u_0\rho\sin\theta$.
+Insert step [](#s1-6){.pf-ref} into step [](#s1-5){.pf-ref}. The resulting harmonic function vanishes at $\rho=1$, decays as $z\to\infty$, and its Fourier--Bessel expansion at $z=0$ equals $u_0\rho\sin\theta$.
 
 :::
 
@@ -188,7 +188,7 @@ Insert step <1>6 into step <1>5. The resulting harmonic function vanishes at $\r
 
 ::: pf-qed
 
-Steps <1>4 and <1>7 give the stationary temperature distributions for parts (a) and (b).
+Steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref} give the stationary temperature distributions for parts (a) and (b).
 
 :::
 

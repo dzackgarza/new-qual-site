@@ -21,7 +21,7 @@ Let R be a subring of a field F such that for each x in F either $x \in R { \mat
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that neither
 $$
@@ -67,7 +67,7 @@ both $a$ and $b$ are nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The element
 $$
@@ -102,9 +102,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The first alternative in step <1>2 is impossible.
+The first alternative in step [](#s1-2){.pf-ref} is impossible.
 
 
 ::: pf-proof
@@ -133,9 +133,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The second alternative in step <1>2 is impossible.
+The second alternative in step [](#s1-2){.pf-ref} is impossible.
 
 
 ::: pf-proof
@@ -164,7 +164,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -178,7 +178,7 @@ $$
 
 ::: pf-proof
 
-If the two ideals were incomparable, step <1>1 would produce $a,b$, while step <1>2 says one of the two alternatives in steps <1>3--<1>4 must hold. Both alternatives are impossible. Hence the ideals are comparable.
+If the two ideals were incomparable, step [](#s1-1){.pf-ref} would produce $a,b$, while step [](#s1-2){.pf-ref} says one of the two alternatives in steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} must hold. Both alternatives are impossible. Hence the ideals are comparable.
 
 :::
 
@@ -186,7 +186,7 @@ If the two ideals were incomparable, step <1>1 would produce $a,b$, while step <
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

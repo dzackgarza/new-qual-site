@@ -32,7 +32,7 @@ statement is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Then there exists
 \[
@@ -61,7 +61,7 @@ This is exactly the negation of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each \(n\ge1\), choose
 \[
@@ -81,7 +81,7 @@ and
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 \[
 \delta=2^{-n}.
 \]
@@ -90,7 +90,7 @@ Apply step <1>1 with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -107,7 +107,7 @@ This is a countable union of measurable sets, hence measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence \((B_n)\) is decreasing:
 \[
@@ -138,15 +138,15 @@ By countable subadditivity,
 ::: pf-proof
 
 Apply countable subadditivity of the measure \(\mu\) to the union in step
-<1>3.
+[](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 \mu(B_n)
 <
@@ -171,7 +171,7 @@ The geometric tail satisfies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -182,7 +182,7 @@ Hence
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 \[
 0\le\mu(B_n)<2^{1-n}\to0.
 \]
@@ -192,7 +192,7 @@ Apply the squeeze theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let
 \[
@@ -215,13 +215,13 @@ for every \(n\),
 \[
 0\le\mu(B)\le\mu(B_n).
 \]
-Use step <1>7.
+Use step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 By the assumed absolute continuity,
 \[
@@ -237,13 +237,13 @@ The hypothesis says
 \Rightarrow
 \nu(A)=0
 \]
-for every measurable \(A\). Apply it to \(A=B\) using step <1>8.
+for every measurable \(A\). Apply it to \(A=B\) using step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every \(n\),
 \[
@@ -259,7 +259,7 @@ The union defining \(B_n\) includes the term \(A_n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -270,17 +270,17 @@ Therefore
 
 ::: pf-proof
 
-Measures are monotone, so step <1>10 gives
+Measures are monotone, so step [](#s1-10){.pf-ref} gives
 \[
 \nu(B_n)\ge\nu(A_n).
 \]
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since \(\nu\) is finite,
 \[
@@ -299,7 +299,7 @@ The measure \(\nu\) is finite on the whole space \(X\), so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 By continuity from above,
 \[
@@ -310,8 +310,8 @@ By continuity from above,
 
 ::: pf-proof
 
-The sets \(B_n\) decrease by step <1>4, and the first one has finite
-\(\nu\)-measure by step <1>12. The continuity-from-above theorem for measures
+The sets \(B_n\) decrease by step [](#s1-4){.pf-ref}, and the first one has finite
+\(\nu\)-measure by step [](#s1-12){.pf-ref}. The continuity-from-above theorem for measures
 therefore gives
 \[
 \nu\left(\bigcap_{n=1}^{\infty}B_n\right)
@@ -324,9 +324,9 @@ The intersection is \(B\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
-Steps <1>11 and <1>13 imply
+Steps [](#s1-11){.pf-ref} and [](#s1-13){.pf-ref} imply
 \[
 \boxed{
 \nu(B)\ge\varepsilon_0}.
@@ -342,18 +342,18 @@ its limit is also at least \(\varepsilon_0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-Steps <1>9 and <1>14 contradict one another.
+Steps [](#s1-9){.pf-ref} and [](#s1-14){.pf-ref} contradict one another.
 
 
 ::: pf-proof
 
-Step <1>9 gives
+Step [](#s1-9){.pf-ref} gives
 \[
 \nu(B)=0,
 \]
-while step <1>14 gives
+while step [](#s1-14){.pf-ref} gives
 \[
 \nu(B)\ge\varepsilon_0>0.
 \]
@@ -364,18 +364,18 @@ while step <1>14 gives
 
 ::: pf-step
 
-Therefore the negation in step <1>1 is impossible.
+Therefore the negation in step [](#s1-1){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-It leads to the contradiction in step <1>15.
+It leads to the contradiction in step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence for every \(\varepsilon>0\), there exists \(\delta>0\) such
 that
@@ -390,7 +390,7 @@ for every measurable \(A\).
 
 ::: pf-proof
 
-This is the logical negation of the impossible statement in step <1>1.
+This is the logical negation of the impossible statement in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -398,7 +398,7 @@ This is the logical negation of the impossible statement in step <1>1.
 
 ::: pf-qed
 
-Step <1>17 is the required conclusion.
+Step [](#s1-17){.pf-ref} is the required conclusion.
 
 :::
 

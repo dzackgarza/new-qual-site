@@ -30,7 +30,7 @@ Show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Put
 $$
@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -90,7 +90,7 @@ Choose $N$ also large enough that $C/N<\varepsilon/2$. Then the displayed absolu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -101,13 +101,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the difference between the Cesàro mean and $A$ is the quantity in step <1>2, which tends to $0$.
+By step [](#s1-1){.pf-ref}, the difference between the Cesàro mean and $A$ is the quantity in step [](#s1-2){.pf-ref}, which tends to $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The converse is false. For example, let
 $$
@@ -138,7 +138,7 @@ Thus the Cesàro means converge although the original sequence does not.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>4 gives the counterexample required in part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} gives the counterexample required in part (b).
 
 :::
 

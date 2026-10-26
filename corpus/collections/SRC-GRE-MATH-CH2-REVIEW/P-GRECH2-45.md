@@ -27,7 +27,7 @@ If $-1 < x < 1$, then $\sum_{n=1}^{\infty} n x^{2n} =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $\abs{t}<1$,
 $$
@@ -51,7 +51,7 @@ Multiplying by $t$ yields the stated identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $-1<x<1$,
 $$
@@ -62,13 +62,13 @@ $$
 
 ::: pf-proof
 
-Since $\abs{x}<1$, one has $\abs{x^2}<1$. Substitute $t=x^2$ into the identity from step <1>1.
+Since $\abs{x}<1$, one has $\abs{x^2}<1$. Substitute $t=x^2$ into the identity from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the answer is
 $$
@@ -78,7 +78,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 is exactly the series in the problem.
+Step [](#s1-2){.pf-ref} is exactly the series in the problem.
 
 :::
 
@@ -86,7 +86,7 @@ Step <1>2 is exactly the series in the problem.
 
 ::: pf-qed
 
-Step <1>3 gives the requested expression and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested expression and corresponding choice.
 
 :::
 

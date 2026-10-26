@@ -28,7 +28,7 @@ Consider the family $F$ of circles in the $xy$-plane, $(x - c)^2 + y^2 = c^2$, t
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Away from the origin, the parameter $c$ on a circle of the family is
 $$
@@ -50,7 +50,7 @@ At a non-origin point of one of these circles, $x\ne0$, so solving for $c$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The slope of a circle in the family at a regular point is
 $$
@@ -73,7 +73,7 @@ hence
 $$
 y'=\frac{c-x}{y}.
 $$
-Substituting the expression for $c$ from step <1>1 gives
+Substituting the expression for $c$ from step [](#s1-1){.pf-ref} gives
 $$
 y'
 =
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The differential equation for the orthogonal trajectories is
 $$
@@ -96,7 +96,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-At a regular intersection, orthogonal curves have slopes whose product is $-1$. Thus the orthogonal slope is the negative reciprocal of the slope in step <1>2:
+At a regular intersection, orthogonal curves have slopes whose product is $-1$. Thus the orthogonal slope is the negative reciprocal of the slope in step [](#s1-2){.pf-ref}:
 $$
 -\frac{1}{(y^2-x^2)/(2xy)}
 =\frac{2xy}{x^2-y^2}.
@@ -108,7 +108,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested differential equation and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested differential equation and corresponding choice.
 
 :::
 

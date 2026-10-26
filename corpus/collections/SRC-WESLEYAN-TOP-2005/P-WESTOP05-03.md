@@ -37,7 +37,7 @@ intervals
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Sorgenfrey line is separable.
 
@@ -55,7 +55,7 @@ with \(a<b\) contains a rational number. Hence \(\mathbb Q\) is dense in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Sorgenfrey line is not second countable.
 
@@ -100,7 +100,7 @@ contradicting countability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every separable metric space is second countable.
 
@@ -140,21 +140,21 @@ Hence the displayed family is a countable basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the Sorgenfrey line is not metrizable.
 
 
 ::: pf-proof
 
-If it were metrizable, step <1>1 and step <1>3 would make it second
-countable, contradicting step <1>2.
+If it were metrizable, step [](#s1-1){.pf-ref} and step [](#s1-3){.pf-ref} would make it second
+countable, contradicting step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every compact subset of \(D\) is finite.
 
@@ -187,13 +187,13 @@ for some finite \(F\subseteq D\).
 
 By definition of the one-point compactification, a basic neighborhood of
 \(\infty\) is the complement of a compact subset of \(D\). Apply step
-<1>5.
+[](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The space \(D^*\) is not first countable at \(\infty\).
 
@@ -243,7 +243,7 @@ for every \(n\), contradicting the local-base property.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore \(D^*\) is not metrizable.
 
@@ -254,14 +254,14 @@ Every metric space is first countable: the balls
 \[
 B(x,1/n)
 \]
-form a countable local base at each point. Step <1>7 shows this fails at
+form a countable local base at each point. Step [](#s1-7){.pf-ref} shows this fails at
 \(\infty\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Fix \(x\in X\). Suppose
 \[
@@ -354,7 +354,7 @@ under the coordinate projection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 No \(C_n\) is contained in \(U\).
 
@@ -394,13 +394,13 @@ then
 \[
 C_n\subseteq B_n\subseteq U,
 \]
-contradicting step <1>14.
+contradicting step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence \(X\) is not first countable.
 
@@ -408,26 +408,26 @@ Hence \(X\) is not first countable.
 ::: pf-proof
 
 The neighborhood \(U\) of \(x\) contains no local-base element \(B_n\),
-contradicting the assumption in step <1>9.
+contradicting the assumption in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore \(X\) is not metrizable.
 
 
 ::: pf-proof
 
-Metric spaces are first countable, while \(X\) is not by step <1>16.
+Metric spaces are first countable, while \(X\) is not by step [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Every compact Hausdorff space is normal.
 
@@ -448,7 +448,7 @@ neighborhoods of \(A\) and \(B\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Every compact Hausdorff space is completely regular.
 
@@ -460,7 +460,7 @@ closed with
 \[
 x\notin F.
 \]
-By step <1>18, \(X\) is normal. Since Hausdorff spaces are \(T_1\), the
+By step [](#s1-18){.pf-ref}, \(X\) is normal. Since Hausdorff spaces are \(T_1\), the
 singleton \(\{x\}\) is closed.
 
 Urysohn's lemma gives a continuous function
@@ -481,7 +481,7 @@ This is exactly complete regularity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Define the evaluation map
 \[
@@ -503,7 +503,7 @@ cube.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 The map \(e\) is continuous.
 
@@ -525,7 +525,7 @@ coordinate projections continuous, so \(e\) is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 The map \(e\) is injective.
 
@@ -558,7 +558,7 @@ e(x)\ne e(y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 The topology on \(X\) is the topology induced from the cube via
 \(e\).
@@ -607,7 +607,7 @@ topological embedding.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 The cube
 \[
@@ -626,7 +626,7 @@ Hausdorff.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 Therefore every completely regular Hausdorff space is homeomorphic to
 a subspace of a compact Hausdorff space.
@@ -634,11 +634,11 @@ a subspace of a compact Hausdorff space.
 
 ::: pf-proof
 
-By steps <1>20--<1>23, \(e\) is a homeomorphism from \(X\) onto the subspace
+By steps [](#s1-20){.pf-ref} through [](#s1-23){.pf-ref}, \(e\) is a homeomorphism from \(X\) onto the subspace
 \[
 e(X)\subseteq[0,1]^{\mathcal C}.
 \]
-By step <1>24, the ambient cube is compact Hausdorff.
+By step [](#s1-24){.pf-ref}, the ambient cube is compact Hausdorff.
 
 :::
 
@@ -646,9 +646,9 @@ By step <1>24, the ambient cube is compact Hausdorff.
 
 ::: pf-qed
 
-Steps <1>4, <1>8, and <1>17 prove the three nonmetrizability assertions;
-step <1>19 proves compact Hausdorff spaces are completely regular; and step
-<1>25 proves the compact Hausdorff embedding statement.
+Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-17){.pf-ref} prove the three nonmetrizability assertions;
+step [](#s1-19){.pf-ref} proves compact Hausdorff spaces are completely regular; and step
+[](#s1-25){.pf-ref} proves the compact Hausdorff embedding statement.
 
 :::
 

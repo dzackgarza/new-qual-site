@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The logarithm satisfies
 $$
@@ -56,7 +56,7 @@ Since $\cot^2x=1/\tan^2x$, this is the displayed quotient.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -66,7 +66,7 @@ $$
 
 ::: pf-proof
 
-The quotient in step <1>1 has the form $0/0$. By L'Hôpital's rule,
+The quotient in step [](#s1-1){.pf-ref} has the form $0/0$. By L'Hôpital's rule,
 $$
 \begin{aligned}
 \lim_{x\to0}\frac{\log(\cos x)}{\tan^2x}
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -91,7 +91,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>2 and continuity of the exponential function,
+By step [](#s1-2){.pf-ref} and continuity of the exponential function,
 $$
 \lim_{x\to0}y(x)
 =\exp\left(-\frac12\right)
@@ -104,7 +104,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested limit and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
 
 :::
 

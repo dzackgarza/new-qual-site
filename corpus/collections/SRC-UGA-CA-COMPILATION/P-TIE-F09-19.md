@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The second derivative with respect to $x$ is
 $$
@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The second derivative with respect to $y$ is
 $$
@@ -100,7 +100,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $u_n$ satisfies the Laplace equation on $D$:
 $$
@@ -115,13 +115,13 @@ $$
 
 ::: pf-proof
 
-The expressions in steps <1>1 and <1>2 cancel.
+The expressions in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} cancel.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On $y=0$, the Cauchy data are
 $$
@@ -142,7 +142,7 @@ u_n(x,0)
 \frac{1-1}{2n^2}\sin(nx)
 =0.
 $$
-Using the first $y$-derivative from step <1>2 gives
+Using the first $y$-derivative from step [](#s1-2){.pf-ref} gives
 $$
 \frac{\partial u_n}{\partial y}(x,0)
 =
@@ -155,7 +155,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The point
 $$
@@ -179,7 +179,7 @@ Indeed, this inequality is equivalent to $\pi^2<27$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Along the subsequence
 $$
@@ -208,9 +208,9 @@ whose sine is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-At the point from step <1>5,
+At the point from step [](#s1-5){.pf-ref},
 $$
 \limsup_{n\to\infty}|u_n(x,y)|=\boxed{\infty}.
 $$
@@ -218,7 +218,7 @@ $$
 
 ::: pf-proof
 
-Along the subsequence from step <1>6,
+Along the subsequence from step [](#s1-6){.pf-ref},
 $$
 \begin{aligned}
 \left|
@@ -242,7 +242,7 @@ $n^2$. Hence the limsup over all $n$ is infinite.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 prove part (1), and steps <1>5--<1>7 prove part (2).
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part (1), and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} prove part (2).
 
 :::
 

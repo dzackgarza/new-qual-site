@@ -24,7 +24,7 @@ Prove that $f$ is constant.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is constant on a neighborhood of each point of $U$.
 
@@ -59,7 +59,7 @@ for every $k$. Chaining these equalities gives $f(y)=f(x)$. Since $y\in Q$ was a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For any $c\in\RR$, the level set
 $$
@@ -70,24 +70,24 @@ is open in $U$.
 
 ::: pf-proof
 
-If $x\in E_c$, step <1>1 gives an open neighborhood $Q\subset U$ of $x$ on which $f$ is constant with value $f(x)=c$. Hence $Q\subset E_c$, so $E_c$ is open in the subspace topology of $U$.
+If $x\in E_c$, step [](#s1-1){.pf-ref} gives an open neighborhood $Q\subset U$ of $x$ on which $f$ is constant with value $f(x)=c$. Hence $Q\subset E_c$, so $E_c$ is open in the subspace topology of $U$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix $x_0\in U$ and put $c=f(x_0)$. Then $E_c=U$.
 
 
 ::: pf-proof
 
-The set $E_c$ is nonempty because $x_0\in E_c$, and it is open by step <1>2. Its complement is
+The set $E_c$ is nonempty because $x_0\in E_c$, and it is open by step [](#s1-2){.pf-ref}. Its complement is
 $$
 U\setminus E_c=\bigcup_{d\ne c}E_d,
 $$
-which is open by step <1>2. Thus $E_c$ is both open and closed in the connected space $U$. Since it is nonempty, connectedness forces $E_c=U$.
+which is open by step [](#s1-2){.pf-ref}. Thus $E_c$ is both open and closed in the connected space $U$. Since it is nonempty, connectedness forces $E_c=U$.
 
 :::
 
@@ -95,7 +95,7 @@ which is open by step <1>2. Thus $E_c$ is both open and closed in the connected 
 
 ::: pf-qed
 
-By step <1>3, every $x\in U$ satisfies $f(x)=f(x_0)$, so $f$ is constant on $U$.
+By step [](#s1-3){.pf-ref}, every $x\in U$ satisfies $f(x)=f(x_0)$, so $f$ is constant on $U$.
 
 :::
 

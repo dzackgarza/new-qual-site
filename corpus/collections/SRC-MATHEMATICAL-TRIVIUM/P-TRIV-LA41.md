@@ -25,7 +25,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Subtract twice the first equation from the second. The result is
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Subtract three times the first equation from the third. The result is
 again
@@ -83,7 +83,7 @@ Hence
 $$
 -2y-4z=18,
 $$
-which reduces to the same equation as in step <1>1.
+which reduces to the same equation as in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -96,7 +96,7 @@ The system is consistent and has one free parameter.
 
 ::: pf-proof
 
-Steps <1>1--<1>2 show that the second and third equations impose the same
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that the second and third equations impose the same
 condition after eliminating $x$. Thus no contradictory equation arises, and
 the rank is $2<3$.
 
@@ -104,7 +104,7 @@ the rank is $2<3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -118,13 +118,13 @@ $$
 
 ::: pf-proof
 
-Solve the equation from step <1>1 for $y$.
+Solve the equation from step [](#s1-1){.pf-ref} for $y$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Substituting into the first equation gives
 $$
@@ -151,7 +151,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the complete solution set is
 $$
@@ -167,7 +167,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>4--<1>5 give every solution. Conversely, direct substitution shows
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give every solution. Conversely, direct substitution shows
 that every displayed triple satisfies all three original equations.
 
 :::
@@ -176,7 +176,7 @@ that every displayed triple satisfies all three original equations.
 
 ::: pf-qed
 
-Step <1>6 gives the full solution family.
+Step [](#s1-6){.pf-ref} gives the full solution family.
 
 :::
 

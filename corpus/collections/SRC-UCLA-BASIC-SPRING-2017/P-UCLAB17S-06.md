@@ -26,7 +26,7 @@ defines an inner product on $V$. For $n=2$, find an orthonormal basis.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -62,14 +62,14 @@ Summing over $j$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The form is bilinear.
 
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \langle A,B\rangle
 =
@@ -82,7 +82,7 @@ Thus the form is bilinear.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The form is symmetric:
 \[
@@ -94,7 +94,7 @@ The form is symmetric:
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \langle A,B\rangle
 =
@@ -109,7 +109,7 @@ By step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -123,7 +123,7 @@ One has
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 \[
 B=A.
 \]
@@ -133,7 +133,7 @@ The result is a sum of squares.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Equality
 \[
@@ -147,7 +147,7 @@ A=0.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \langle A,A\rangle
 =
@@ -159,7 +159,7 @@ This sum vanishes exactly when every entry $a_{ij}$ is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -177,13 +177,13 @@ M_n(\mathbb R).
 
 ::: pf-proof
 
-Steps <1>2--<1>5 establish bilinearity, symmetry, and positive definiteness.
+Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} establish bilinearity, symmetry, and positive definiteness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For
 \[
@@ -230,14 +230,14 @@ These are the standard matrix units.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-The four matrices in step <1>7 are orthonormal.
+The four matrices in step [](#s1-7){.pf-ref} are orthonormal.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \langle E_{ij},E_{kl}\rangle
 =
@@ -264,7 +264,7 @@ otherwise.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The four matrices form a basis of
 \[
@@ -297,7 +297,7 @@ Thus the four matrix units span and are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence an orthonormal basis for
 \[
@@ -313,7 +313,7 @@ is
 
 ::: pf-proof
 
-Combine steps <1>8--<1>9.
+Combine steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
@@ -321,7 +321,7 @@ Combine steps <1>8--<1>9.
 
 ::: pf-qed
 
-Step <1>6 proves the inner-product assertion, and step <1>10 gives the requested orthonormal basis for $n=2$.
+Step [](#s1-6){.pf-ref} proves the inner-product assertion, and step [](#s1-10){.pf-ref} gives the requested orthonormal basis for $n=2$.
 
 :::
 

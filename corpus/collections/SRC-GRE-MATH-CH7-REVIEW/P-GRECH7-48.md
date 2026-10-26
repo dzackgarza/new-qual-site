@@ -27,7 +27,7 @@ Let $f(z)$ be a complex analytic function such that $f(z) = (5x - 3y) + i v(x, y
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Cauchy--Riemann equations give
 $$
@@ -45,7 +45,7 @@ Write $f=u+iv$ with $u(x,y)=5x-3y$. Since $f$ is analytic, the Cauchy--Riemann e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a real constant $C$ such that
 $$
@@ -55,20 +55,20 @@ $$
 
 ::: pf-proof
 
-By step <1>1, integrating $v_y=5$ with respect to $y$ gives $v(x,y)=5y+h(x)$ for some differentiable function $h$. Differentiating with respect to $x$ and using $v_x=3$ from step <1>1 gives $h'(x)=3$, hence $h(x)=3x+C$ for a constant $C$.
+By step [](#s1-1){.pf-ref}, integrating $v_y=5$ with respect to $y$ gives $v(x,y)=5y+h(x)$ for some differentiable function $h$. Differentiating with respect to $x$ and using $v_x=3$ from step [](#s1-1){.pf-ref} gives $h'(x)=3$, hence $h(x)=3x+C$ for a constant $C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The initial value $v(4,1)=7$ gives $C=-10$.
 
 
 ::: pf-proof
 
-Substituting $(x,y)=(4,1)$ into the formula from step <1>2 gives
+Substituting $(x,y)=(4,1)$ into the formula from step [](#s1-2){.pf-ref} gives
 $$
 7=3(4)+5(1)+C=17+C,
 $$
@@ -78,7 +78,7 @@ so $C=-10$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -89,7 +89,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By steps <1>2 and <1>3,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 $$
 v(3,2)=3(3)+5(2)-10=9.
 $$
@@ -100,7 +100,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

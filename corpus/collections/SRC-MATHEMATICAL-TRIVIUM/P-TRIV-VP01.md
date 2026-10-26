@@ -28,7 +28,7 @@ Consider the functional $S [ f ] = 2 \pi ^ { 2 } \int _ { 0 } ^ { \infty } d x x
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Euler--Lagrange equation for
 $$
@@ -86,20 +86,20 @@ Divide by $x^3$ for $x>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>1.
+This is step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Set
 $$
@@ -107,7 +107,7 @@ x=e^t,
 \qquad
 f(x)=e^{-t}u(t).
 $$
-Then the equation in step <1>1 becomes
+Then the equation in step [](#s1-1){.pf-ref} becomes
 $$
 u''-u+\lambda u^3=0.
 $$
@@ -145,7 +145,7 @@ Substitution and multiplication by $e^{3t}$ give the autonomous equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Regularity of $f$ at $x=0$ implies
 $$
@@ -175,9 +175,9 @@ which tends to $0$ because $f$ and $f'$ remain finite at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The autonomous equation in step <1>3 has first integral
+The autonomous equation in step [](#s1-3){.pf-ref} has first integral
 $$
 \frac12(u')^2
 -
@@ -200,9 +200,9 @@ by $u'$ and integrate with respect to $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-For every regular solution arising from step <1>4,
+For every regular solution arising from step [](#s1-4){.pf-ref},
 $$
 C=0.
 $$
@@ -210,7 +210,7 @@ $$
 
 ::: pf-proof
 
-Let $t\to-\infty$ in the first integral from step <1>5. Step <1>4 gives
+Let $t\to-\infty$ in the first integral from step [](#s1-5){.pf-ref}. Step [](#s1-4){.pf-ref} gives
 $$
 u,u'\to0,
 $$
@@ -220,7 +220,7 @@ so every term tends to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every nonzero zero-energy solution satisfies
 $$
@@ -234,7 +234,7 @@ for some $t_0\in\mathbb R$.
 
 ::: pf-proof
 
-From steps <1>5--<1>6,
+From steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref},
 $$
 (u')^2
 =
@@ -265,7 +265,7 @@ autonomous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Returning to $x$, let
 $$
@@ -304,13 +304,13 @@ Multiply by $\sqrt{2/\lambda}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Together with
 $$
 \boxed{f\equiv0},
 $$
-the functions in step <1>8 are exactly the regular solutions satisfying
+the functions in step [](#s1-8){.pf-ref} are exactly the regular solutions satisfying
 $$
 f(\infty)=f'(\infty)=0.
 $$
@@ -318,22 +318,22 @@ $$
 
 ::: pf-proof
 
-The functions in step <1>8 decay as $x^{-2}$, and their derivatives decay as $x^{-3}$, so they satisfy the boundary conditions.
-Step <1>7 exhausts the nonzero zero-energy trajectories compatible with regularity at $x=0$.
+The functions in step [](#s1-8){.pf-ref} decay as $x^{-2}$, and their derivatives decay as $x^{-3}$, so they satisfy the boundary conditions.
+Step [](#s1-7){.pf-ref} exhausts the nonzero zero-energy trajectories compatible with regularity at $x=0$.
 The zero solution is immediate.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>9.
+This is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -341,7 +341,7 @@ This is step <1>9.
 
 ::: pf-step
 
-For a nonzero solution from step <1>8, write
+For a nonzero solution from step [](#s1-8){.pf-ref}, write
 $$
 A=\sqrt{\frac8\lambda}.
 $$
@@ -362,13 +362,13 @@ $$
 
 ::: pf-proof
 
-Differentiate the explicit formula from step <1>8. The action depends only on $f^2$ and $f^4$, so the sign does not matter.
+Differentiate the explicit formula from step [](#s1-8){.pf-ref}. The action depends only on $f^2$ and $f^4$, so the sign does not matter.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The action density simplifies to
 $$
@@ -403,7 +403,7 @@ Subtract the numerators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 $$
@@ -418,19 +418,19 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>12 into the definition of $S[f]$ and multiply by the factor $2\pi^2$.
+Substitute step [](#s1-12){.pf-ref} into the definition of $S[f]$ and multiply by the factor $2\pi^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 With
 $$
 x=\rho t,
 $$
-the integral in step <1>13 becomes
+the integral in step [](#s1-13){.pf-ref} becomes
 $$
 \int_0^\infty
 \frac{t^3(t^2-1)}{(1+t^2)^4}
@@ -447,7 +447,7 @@ All powers of $\rho$ cancel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 One has
 $$
@@ -520,7 +520,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence every nonzero solution has action
 $$
@@ -534,7 +534,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>13--<1>15:
+Combine steps [](#s1-13){.pf-ref} through [](#s1-15){.pf-ref}:
 $$
 S[f]
 =
@@ -549,7 +549,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The zero solution has action
 $$
@@ -565,14 +565,14 @@ Substitute $f=0$ into the functional.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Steps <1>16--<1>17 give the action on all solutions from part (b).
+Steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give the action on all solutions from part (b).
 
 :::
 
@@ -580,7 +580,7 @@ Steps <1>16--<1>17 give the action on all solutions from part (b).
 
 ::: pf-qed
 
-Steps <1>2, <1>10, and <1>18 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

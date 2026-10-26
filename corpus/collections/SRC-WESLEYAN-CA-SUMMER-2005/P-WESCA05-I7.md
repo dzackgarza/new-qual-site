@@ -21,7 +21,7 @@ State Liouville's Theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Liouville's theorem states:
 \[
@@ -45,7 +45,7 @@ then there is \(c\in\mathbb C\) with \(f(z)=c\) for every \(z\in\mathbb C\). Thi
 
 ::: pf-qed
 
-Step <1>1 is the requested theorem statement.
+Step [](#s1-1){.pf-ref} is the requested theorem statement.
 
 :::
 

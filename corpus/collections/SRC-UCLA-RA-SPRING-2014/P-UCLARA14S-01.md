@@ -27,7 +27,7 @@ Prove that for measurable $f,g:X\to\mathbb R$,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in X$,
 \[
@@ -71,7 +71,7 @@ The case $g(x)<f(x)$ is identical with the roles reversed, giving $f(x)-g(x)$. T
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -98,7 +98,7 @@ is measurable. Hence $(x,t)\mapsto e_t(f(x))$ is measurable. The same holds for 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -113,7 +113,7 @@ One has
 
 ::: pf-proof
 
-By step <1>2, the integrand is nonnegative and measurable. Since $(X,\mathcal A,\mu)$ is $\sigma$-finite and Lebesgue measure on $\mathbb R$ is $\sigma$-finite, Tonelli's theorem applies:
+By step [](#s1-2){.pf-ref}, the integrand is nonnegative and measurable. Since $(X,\mathcal A,\mu)$ is $\sigma$-finite and Lebesgue measure on $\mathbb R$ is $\sigma$-finite, Tonelli's theorem applies:
 \[
 \begin{aligned}
 \int_{\mathbb R}
@@ -134,7 +134,7 @@ The equality is valid in $[0,\infty]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -149,7 +149,7 @@ Therefore
 
 ::: pf-proof
 
-Apply step <1>1 inside the iterated integral from step <1>3:
+Apply step [](#s1-1){.pf-ref} inside the iterated integral from step [](#s1-3){.pf-ref}:
 \[
 \begin{aligned}
 \int_{\mathbb R}
@@ -167,7 +167,7 @@ Apply step <1>1 inside the iterated integral from step <1>3:
 
 ::: pf-qed
 
-Step <1>4 is the required identity.
+Step [](#s1-4){.pf-ref} is the required identity.
 
 :::
 

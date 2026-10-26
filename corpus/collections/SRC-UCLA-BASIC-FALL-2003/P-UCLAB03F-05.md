@@ -42,7 +42,7 @@ f(0,0)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist $r>0$ and $B>0$ such that every third-order partial derivative of $f$ has absolute value at most $B$ on
 \[
@@ -58,7 +58,7 @@ There are finitely many third-order partial derivatives. Each is continuous by h
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $(x,y)$ with
 \[
@@ -107,7 +107,7 @@ Evaluating at $t=0$ gives the stated formulas.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0\le t\le1$,
 \[
@@ -122,13 +122,13 @@ f_{xxx}(tx,ty)x^3
 
 ::: pf-proof
 
-Differentiate the expression for $g''(t)$ from step <1>2. Equality of mixed partial derivatives follows from the continuity of the third-order partials, so the three terms of type $x^2y$ combine into $3f_{xxy}x^2y$, and similarly for the terms of type $xy^2$.
+Differentiate the expression for $g''(t)$ from step [](#s1-2){.pf-ref}. Equality of mixed partial derivatives follows from the continuity of the third-order partials, so the three terms of type $x^2y$ combine into $3f_{xxy}x^2y$, and similarly for the terms of type $xy^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $0\le t\le1$,
 \[
@@ -142,7 +142,7 @@ B(|x|+|y|)^3
 
 ::: pf-proof
 
-By step <1>1 and the formula in step <1>3,
+By step [](#s1-1){.pf-ref} and the formula in step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 |g'''(t)|
@@ -166,7 +166,7 @@ Cubing gives the second inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $\xi\in(0,1)$ such that
 \[
@@ -182,13 +182,13 @@ g(1)
 =
 g(0)+g'(0)+\frac12g''(0)+\frac16g'''(\xi)
 \]
-for some $\xi\in(0,1)$. By step <1>2, the first three terms on the right are exactly $P(x,y)$, while $g(1)=f(x,y)$.
+for some $\xi\in(0,1)$. By step [](#s1-2){.pf-ref}, the first three terms on the right are exactly $P(x,y)$, while $g(1)=f(x,y)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $(x,y)$ with $x^2+y^2\le r^2$,
 \[
@@ -202,7 +202,7 @@ For every $(x,y)$ with $x^2+y^2\le r^2$,
 
 ::: pf-proof
 
-By step <1>5 and then step <1>4,
+By step [](#s1-5){.pf-ref} and then step [](#s1-4){.pf-ref},
 \[
 |f(x,y)-P(x,y)|
 \le
@@ -218,7 +218,7 @@ This is the displayed estimate.
 
 ::: pf-qed
 
-Step <1>6 proves the required estimate with
+Step [](#s1-6){.pf-ref} proves the required estimate with
 \[
 C=\frac{\sqrt2\,B}{3}.
 \]

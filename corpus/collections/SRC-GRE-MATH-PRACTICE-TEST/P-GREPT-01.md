@@ -27,7 +27,7 @@ If $x^2 + x = 3$, then $x^4 + x =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The given equation implies
 $$
@@ -43,7 +43,7 @@ Subtracting $x$ from both sides of $x^2+x=3$ gives the stated identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -53,7 +53,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 x^4=(x^2)^2=(3-x)^2=9-6x+x^2.
 $$
@@ -63,7 +63,7 @@ Substituting $x^2=3-x$ again gives $x^4=9-6x+3-x=12-7x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -74,7 +74,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 x^4+x=(12-7x)+x=12-6x=6(2-x).
 $$
@@ -85,7 +85,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required expression.
+Step [](#s1-3){.pf-ref} gives the required expression.
 
 :::
 

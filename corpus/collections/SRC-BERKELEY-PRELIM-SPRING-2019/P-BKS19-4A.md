@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral satisfies
 $$
@@ -65,7 +65,7 @@ The boundary term tends to $0$ as $R\to\infty$, which yields the claimed identit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -111,7 +111,7 @@ Letting $R\to\infty$ proves the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The cosine integral is
 $$
@@ -121,13 +121,13 @@ $$
 
 ::: pf-proof
 
-Take real parts in step <1>2. The integral is absolutely convergent, so taking the real part commutes with integration.
+Take real parts in step [](#s1-2){.pf-ref}. The integral is absolutely convergent, so taking the real part commutes with integration.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into the reduction from step <1>1.
+Substitute step [](#s1-3){.pf-ref} into the reduction from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -145,7 +145,7 @@ Substitute step <1>3 into the reduction from step <1>1.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

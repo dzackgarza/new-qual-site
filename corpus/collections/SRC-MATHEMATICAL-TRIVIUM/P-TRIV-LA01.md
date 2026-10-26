@@ -21,7 +21,7 @@ Describe the figures that can be obtained as intersection of the cone $z ^ { 2 }
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the plane
 $$
@@ -41,9 +41,9 @@ This is an algebraic rearrangement of the plane equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Substituting step <1>1 into the cone equation gives
+Substituting step [](#s1-1){.pf-ref} into the cone equation gives
 $$
 (1-a^2)x^2-2ax+y^2=1.
 $$
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -83,7 +83,7 @@ Since
 $$
 1-a^2>0,
 $$
-complete the square in step <1>2:
+complete the square in step [](#s1-2){.pf-ref}:
 $$
 (1-a^2)
 \left(
@@ -117,7 +117,7 @@ cutting plane.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -128,7 +128,7 @@ the intersection is a parabola.
 
 ::: pf-proof
 
-Step <1>2 becomes
+Step [](#s1-2){.pf-ref} becomes
 $$
 -2x+y^2=1,
 $$
@@ -142,7 +142,7 @@ This is a parabola.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -157,7 +157,7 @@ Put
 $$
 b=a^2-1>0.
 $$
-Then step <1>2 reads
+Then step [](#s1-2){.pf-ref} reads
 $$
 -bx^2-2ax+y^2=1.
 $$
@@ -194,7 +194,7 @@ The quadratic terms have opposite signs, so the section is a hyperbola.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the possible sections are
 $$
@@ -210,7 +210,7 @@ $$
 
 ::: pf-proof
 
-This is exactly the classification in steps <1>3--<1>5.
+This is exactly the classification in steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -218,7 +218,7 @@ This is exactly the classification in steps <1>3--<1>5.
 
 ::: pf-qed
 
-Step <1>6 gives all possibilities for $0<a<\infty$.
+Step [](#s1-6){.pf-ref} gives all possibilities for $0<a<\infty$.
 
 :::
 

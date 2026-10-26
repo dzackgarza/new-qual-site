@@ -24,7 +24,7 @@ What is the probability that nobody gets his own present?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are $5!=120$ equally likely assignments of the five presents to the five people.
 
@@ -37,7 +37,7 @@ An assignment is a permutation of the five distinct presents among the five reci
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By inclusion--exclusion, the number of assignments with no fixed point is
 \[
@@ -58,7 +58,7 @@ For each person $i$, let $A_i$ be the event that person $i$ receives their own p
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Evaluating the sum gives
 \[
@@ -68,13 +68,13 @@ Evaluating the sum gives
 
 ::: pf-proof
 
-Substitute $k=0,1,\ldots,5$ into the inclusion--exclusion sum in step <1>2.
+Substitute $k=0,1,\ldots,5$ into the inclusion--exclusion sum in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the required probability is
 \[
@@ -84,7 +84,7 @@ Hence the required probability is
 
 ::: pf-proof
 
-Divide the $44$ favorable derangements from step <1>3 by the $120$ equally likely assignments from step <1>1.
+Divide the $44$ favorable derangements from step [](#s1-3){.pf-ref} by the $120$ equally likely assignments from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -92,7 +92,7 @@ Divide the $44$ favorable derangements from step <1>3 by the $120$ equally likel
 
 ::: pf-qed
 
-Step <1>4 gives the requested probability.
+Step [](#s1-4){.pf-ref} gives the requested probability.
 
 :::
 

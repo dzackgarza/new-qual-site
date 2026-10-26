@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Condition (i) implies condition (ii).
 
@@ -63,7 +63,7 @@ Thus condition (ii) holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume condition (ii). Let $0<\rho<r<1$. Then
 $$
@@ -107,7 +107,7 @@ The right-hand side is independent of $z$, so taking the supremum over $\abs{z}\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Condition (ii) implies uniform convergence on every closed disk $\abs{z}\le\rho<1$.
 
@@ -124,7 +124,7 @@ $$
 \abs{h_n(\zeta)}\,\abs{d\zeta}
 \longrightarrow0.
 $$
-Step <1>2 therefore gives
+Step [](#s1-2){.pf-ref} therefore gives
 $$
 \sup_{\abs{z}\le\rho}\abs{h_n(z)}
 \longrightarrow0.
@@ -135,7 +135,7 @@ Since $h_n=f_n-f$, this is uniform convergence of $f_n$ to $f$ on the closed dis
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Condition (ii) implies condition (i).
 
@@ -150,20 +150,20 @@ Thus
 $$
 K\subset\{z:\abs{z}\le\rho\}.
 $$
-Step <1>3 gives uniform convergence on that closed disk, hence on $K$. Therefore condition (i) holds.
+Step [](#s1-3){.pf-ref} gives uniform convergence on that closed disk, hence on $K$. Therefore condition (i) holds.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The two conditions are equivalent.
 
 
 ::: pf-proof
 
-Step <1>1 proves (i)$\Rightarrow$(ii), and step <1>4 proves (ii)$\Rightarrow$(i).
+Step [](#s1-1){.pf-ref} proves (i)$\Rightarrow$(ii), and step [](#s1-4){.pf-ref} proves (ii)$\Rightarrow$(i).
 
 :::
 
@@ -171,7 +171,7 @@ Step <1>1 proves (i)$\Rightarrow$(ii), and step <1>4 proves (ii)$\Rightarrow$(i)
 
 ::: pf-qed
 
-Step <1>5 is the required equivalence.
+Step [](#s1-5){.pf-ref} is the required equivalence.
 
 :::
 

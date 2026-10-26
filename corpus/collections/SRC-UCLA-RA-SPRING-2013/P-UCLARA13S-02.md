@@ -33,7 +33,7 @@ the Borel $\sigma$-algebra for the norm topology.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -51,7 +51,7 @@ The weak topology is coarser than the norm topology because every continuous lin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every fixed $x\in\ell^2(\mathbb Z)$, the map
 \[
@@ -97,7 +97,7 @@ A pointwise limit of measurable functions is measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every norm-open ball in $\ell^2(\mathbb Z)$ belongs to $\mathcal B_{\mathrm w}$.
 
@@ -110,7 +110,7 @@ B(x,r)
 =
 \{y:\|y-x\|_2^2<r^2\}.
 \]
-By step <1>2, the squared-distance function is weak-Borel measurable, so
+By step [](#s1-2){.pf-ref}, the squared-distance function is weak-Borel measurable, so
 \[
 B(x,r)
 =
@@ -122,7 +122,7 @@ belongs to $\mathcal B_{\mathrm w}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every norm-open subset of $\ell^2(\mathbb Z)$ belongs to $\mathcal B_{\mathrm w}$.
 
@@ -131,13 +131,13 @@ Every norm-open subset of $\ell^2(\mathbb Z)$ belongs to $\mathcal B_{\mathrm w}
 
 The norm topology on $\ell^2(\mathbb Z)$ is separable. For example, finitely supported sequences with rational real and imaginary parts form a countable dense subset.
 
-Every open subset of a separable metric space is a countable union of open balls: choose a countable base consisting of balls with centers in a fixed countable dense set and rational radii. By step <1>3, each such ball belongs to $\mathcal B_{\mathrm w}$, and therefore so does every countable union of them.
+Every open subset of a separable metric space is a countable union of open balls: choose a countable base consisting of balls with centers in a fixed countable dense set and rational radii. By step [](#s1-3){.pf-ref}, each such ball belongs to $\mathcal B_{\mathrm w}$, and therefore so does every countable union of them.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -151,13 +151,13 @@ Therefore
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 \mathcal B_{\mathrm w}
 \subset
 \mathcal B_{\|\cdot\|},
 \]
-while step <1>4 gives the reverse inclusion.
+while step [](#s1-4){.pf-ref} gives the reverse inclusion.
 
 :::
 
@@ -165,7 +165,7 @@ while step <1>4 gives the reverse inclusion.
 
 ::: pf-qed
 
-Step <1>5 is the desired equality of Borel $\sigma$-algebras.
+Step [](#s1-5){.pf-ref} is the desired equality of Borel $\sigma$-algebras.
 
 :::
 

@@ -44,7 +44,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z\in D_R$ and
 $$
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, if
 $$
@@ -131,7 +131,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -145,14 +145,14 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives containment in the displayed half-infinite horizontal strip,
-and step <1>2 gives the reverse containment.
+Step [](#s1-1){.pf-ref} gives containment in the displayed half-infinite horizontal strip,
+and step [](#s1-2){.pf-ref} gives the reverse containment.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The origin is not mapped to any finite complex number.
 
@@ -170,7 +170,7 @@ Thus $0$ is not an element of the domain of the chosen logarithm branch.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 As $z\to0$ within the slit disk,
 $$
@@ -193,7 +193,7 @@ as $r\to0^+$, with $r=|z|$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the geometric meaning of the branch point $0$ under the logarithm
 is the left end at infinity of the strip, not an ordinary image point.
@@ -201,7 +201,7 @@ is the left end at infinity of the strip, not an ordinary image point.
 
 ::: pf-proof
 
-Step <1>4 shows that $0$ has no finite image, while step <1>5 describes the
+Step [](#s1-4){.pf-ref} shows that $0$ has no finite image, while step [](#s1-5){.pf-ref} describes the
 limiting behavior of its nearby points.
 
 :::
@@ -210,7 +210,7 @@ limiting behavior of its nearby points.
 
 ::: pf-qed
 
-Steps <1>3 and <1>6 give respectively the image of the slit disk and the
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give respectively the image of the slit disk and the
 status of the origin.
 
 :::

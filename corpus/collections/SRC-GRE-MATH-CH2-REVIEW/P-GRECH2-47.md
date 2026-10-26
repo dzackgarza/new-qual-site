@@ -27,7 +27,7 @@ In the Taylor series expansion (in powers of $x$) of the function $f(x) = e^{x^2
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Up to terms of degree greater than $3$,
 $$
@@ -47,7 +47,7 @@ These are the Taylor expansions of the exponential function after substituting $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The coefficient of $x^3$ in $e^{x^2-x}$ is
 $$
@@ -61,7 +61,7 @@ Since
 $$
 e^{x^2-x}=e^{x^2}e^{-x},
 $$
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 $$
 \begin{aligned}
 e^{x^2-x}
@@ -79,14 +79,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the answer is (C).
 
 
 ::: pf-proof
 
-Step <1>2 gives exactly the coefficient requested in the problem.
+Step [](#s1-2){.pf-ref} gives exactly the coefficient requested in the problem.
 
 :::
 
@@ -94,7 +94,7 @@ Step <1>2 gives exactly the coefficient requested in the problem.
 
 ::: pf-qed
 
-Step <1>3 identifies the corresponding choice.
+Step [](#s1-3){.pf-ref} identifies the corresponding choice.
 
 :::
 

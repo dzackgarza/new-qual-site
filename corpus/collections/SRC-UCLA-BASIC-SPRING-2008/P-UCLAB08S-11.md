@@ -23,7 +23,7 @@ Prove that $A$ is diagonalizable.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $A$ is annihilated by the polynomial
 \[
@@ -50,7 +50,7 @@ p(A)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial
 \[
@@ -86,7 +86,7 @@ Hence all roots are simple.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The minimal polynomial
 \[
@@ -115,26 +115,26 @@ Minimality forces
 \[
 r=0.
 \]
-Thus $\mu_A$ divides every annihilating polynomial, in particular the polynomial from step <1>1.
+Thus $\mu_A$ divides every annihilating polynomial, in particular the polynomial from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The minimal polynomial $\mu_A$ splits into distinct linear factors.
 
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \mu_A
 \mid
 t^m-1.
 \]
-By step <1>2, the polynomial $t^m-1$ is a product of distinct linear factors over $\mathbb C$.
+By step [](#s1-2){.pf-ref}, the polynomial $t^m-1$ is a product of distinct linear factors over $\mathbb C$.
 Any divisor of such a polynomial also has no repeated factor.
 Thus
 \[
@@ -148,7 +148,7 @@ with pairwise distinct complex numbers $\lambda_j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A complex matrix whose minimal polynomial splits into distinct linear factors is diagonalizable.
 
@@ -214,7 +214,7 @@ Therefore $A$ is diagonalizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -224,8 +224,8 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 shows that the minimal polynomial of $A$ splits into distinct linear factors.
-Step <1>5 then gives diagonalizability.
+Step [](#s1-4){.pf-ref} shows that the minimal polynomial of $A$ splits into distinct linear factors.
+Step [](#s1-5){.pf-ref} then gives diagonalizability.
 
 :::
 
@@ -233,7 +233,7 @@ Step <1>5 then gives diagonalizability.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

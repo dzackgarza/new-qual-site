@@ -64,7 +64,7 @@ Substitute $h=10^{-m}/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the total error has
 \[
@@ -93,7 +93,7 @@ Take the positive square root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For large $10^N$, the central limit theorem gives the approximation
 \[
@@ -132,7 +132,7 @@ Setting this equal to $0.99$ gives $\Phi(z)=0.995$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the central-limit estimate for the required tolerance is
 \[
@@ -145,12 +145,12 @@ Thus the central-limit estimate for the required tolerance is
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 P(|\delta|<\epsilon)
 \approx P\left(|Z|<\frac{\epsilon}{\sigma_\delta}\right).
 \]
-Choose $\epsilon=z_{0.995}\sigma_\delta$ and substitute step <1>2. To obtain a strict numerical inequality $>0.99$ within the normal approximation, take any value slightly larger than this threshold.
+Choose $\epsilon=z_{0.995}\sigma_\delta$ and substitute step [](#s1-2){.pf-ref}. To obtain a strict numerical inequality $>0.99$ within the normal approximation, take any value slightly larger than this threshold.
 
 :::
 
@@ -158,7 +158,7 @@ Choose $\epsilon=z_{0.995}\sigma_\delta$ and substitute step <1>2. To obtain a s
 
 ::: pf-qed
 
-Step <1>5 gives the requested central-limit estimate as a function of $N$ and $m$.
+Step [](#s1-5){.pf-ref} gives the requested central-limit estimate as a function of $N$ and $m$.
 
 :::
 

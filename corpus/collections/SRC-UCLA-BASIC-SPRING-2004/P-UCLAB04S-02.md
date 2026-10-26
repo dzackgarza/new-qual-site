@@ -28,7 +28,7 @@ Yes.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For all $x,y\ge0$,
 \[
@@ -80,7 +80,7 @@ Both sides are nonnegative, so taking square roots gives the desired inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $\varepsilon>0$ and choose
 \[
@@ -98,7 +98,7 @@ then
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |\sqrt{x}-\sqrt{y}|
 \le
@@ -113,7 +113,7 @@ By step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -127,8 +127,8 @@ The number
 \[
 \delta=\varepsilon^2
 \]
-in step <1>2 depends only on $\varepsilon$, not on the points $x,y$.
-Thus step <1>2 is exactly the definition of uniform continuity.
+in step [](#s1-2){.pf-ref} depends only on $\varepsilon$, not on the points $x,y$.
+Thus step [](#s1-2){.pf-ref} is exactly the definition of uniform continuity.
 
 :::
 
@@ -136,7 +136,7 @@ Thus step <1>2 is exactly the definition of uniform continuity.
 
 ::: pf-qed
 
-Step <1>3 is the required assertion.
+Step [](#s1-3){.pf-ref} is the required assertion.
 
 :::
 

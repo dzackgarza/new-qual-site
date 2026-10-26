@@ -30,7 +30,7 @@ U(s,t)=u(x,y).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The differential operator becomes
 \[
@@ -56,7 +56,7 @@ Thus $\partial_x+\partial_y=2\partial_s$, and the given operator is its square.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The general solution of the PDE is
 \[
@@ -70,13 +70,13 @@ u(x,y)=(x+y)A(x-y)+B(x-y).
 
 ::: pf-proof
 
-For each fixed $t$, step <1>1 is the ordinary equation $U_{ss}=0$. Integrating twice in $s$ gives an affine function of $s$, whose two coefficients may be arbitrary functions of $t$.
+For each fixed $t$, step [](#s1-1){.pf-ref} is the ordinary equation $U_{ss}=0$. Integrating twice in $s$ gives an affine function of $s$, whose two coefficients may be arbitrary functions of $t$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The boundary condition $u(x,0)=\sin x$ gives
 \[
@@ -86,13 +86,13 @@ xA(x)+B(x)=\sin x.
 
 ::: pf-proof
 
-Set $y=0$ in step <1>2, so $s=t=x$.
+Set $y=0$ in step [](#s1-2){.pf-ref}, so $s=t=x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The boundary condition $u(0,y)=y^2$ gives
 \[
@@ -112,9 +112,9 @@ Set $x=0$, so $s=y$ and $t=-y$, and then rename $t=-y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Solving steps <1>3--<1>4 gives, for $t\ne0$,
+Solving steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} gives, for $t\ne0$,
 \[
 A(t)=\frac{\sin t-t^2}{2t},
 \qquad
@@ -124,7 +124,7 @@ B(t)=\frac{\sin t+t^2}{2}.
 
 ::: pf-proof
 
-Subtract the equation in step <1>4 from that in step <1>3:
+Subtract the equation in step [](#s1-4){.pf-ref} from that in step [](#s1-3){.pf-ref}:
 \[
 2tA(t)=\sin t-t^2.
 \]
@@ -134,7 +134,7 @@ Adding them gives $2B(t)=\sin t+t^2$. Both expressions extend continuously to $t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the solution is
 \[
@@ -148,7 +148,7 @@ with the quotient interpreted by its continuous value $1/2$ when $x=y$.
 
 ::: pf-proof
 
-Substitute the functions from step <1>5 into step <1>2. Steps <1>3--<1>4 show that the two boundary conditions hold, while step <1>2 ensures the PDE holds.
+Substitute the functions from step [](#s1-5){.pf-ref} into step [](#s1-2){.pf-ref}. Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that the two boundary conditions hold, while step [](#s1-2){.pf-ref} ensures the PDE holds.
 
 :::
 
@@ -156,7 +156,7 @@ Substitute the functions from step <1>5 into step <1>2. Steps <1>3--<1>4 show th
 
 ::: pf-qed
 
-Step <1>6 gives the required solution, including its continuous extension across $x=y$.
+Step [](#s1-6){.pf-ref} gives the required solution, including its continuous extension across $x=y$.
 
 :::
 

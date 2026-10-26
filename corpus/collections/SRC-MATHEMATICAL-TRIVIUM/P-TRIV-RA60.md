@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choose a smooth cutoff function
 $$
@@ -55,7 +55,7 @@ supported in $(-2,2)$ and equal to $1$ on $[-1,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -77,7 +77,7 @@ Because $\chi$ has compact support, so does $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the interval
 $$
@@ -91,13 +91,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $\chi(x)=1$ on this interval. Substitute into step <1>2.
+By step [](#s1-1){.pf-ref}, $\chi(x)=1$ on this interval. Substitute into step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -107,14 +107,14 @@ $$
 
 ::: pf-proof
 
-By step <1>3, $f$ agrees with $x^n/n!$ on a neighborhood of $0$. The $n$th
+By step [](#s1-3){.pf-ref}, $f$ agrees with $x^n/n!$ on a neighborhood of $0$. The $n$th
 derivative of this polynomial is identically $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every integer
 $$
@@ -130,7 +130,7 @@ $$
 
 ::: pf-proof
 
-Again use step <1>3. If $i<n$, then the $i$th derivative of $x^n/n!$ still
+Again use step [](#s1-3){.pf-ref}. If $i<n$, then the $i$th derivative of $x^n/n!$ still
 contains the factor $x^{n-i}$ and vanishes at $0$. If $i>n$, the $i$th
 derivative of the degree-$n$ polynomial is identically zero.
 
@@ -138,7 +138,7 @@ derivative of the degree-$n$ polynomial is identically zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function is absolutely integrable on $[0,\infty)$:
 $$
@@ -150,7 +150,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $f$ has compact support. A continuous compactly supported
+By step [](#s1-2){.pf-ref}, $f$ has compact support. A continuous compactly supported
 function is bounded and vanishes outside a finite interval, hence has finite
 absolute integral.
 
@@ -158,14 +158,14 @@ absolute integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Thus the function in step <1>2 satisfies all three required properties.
+Thus the function in step [](#s1-2){.pf-ref} satisfies all three required properties.
 
 
 ::: pf-proof
 
-Step <1>4 gives property (1), step <1>5 gives property (2), and step <1>6
+Step [](#s1-4){.pf-ref} gives property (1), step [](#s1-5){.pf-ref} gives property (2), and step [](#s1-6){.pf-ref}
 gives property (3).
 
 :::
@@ -174,7 +174,7 @@ gives property (3).
 
 ::: pf-qed
 
-Step <1>7 verifies the construction.
+Step [](#s1-7){.pf-ref} verifies the construction.
 
 :::
 

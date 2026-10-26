@@ -26,7 +26,7 @@ Prove that there is no bijection from $\mathbb N=\{1,2,\ldots\}$ onto $S$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that there is a surjection
 \[
@@ -59,7 +59,7 @@ This merely records the coordinates of the binary sequence $\phi(n)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define a sequence $y=(y_1,y_2,\ldots)$ by
 \[
@@ -80,7 +80,7 @@ For every $n$, the value $y_n$ is either $0$ or $1$. Hence $y$ is a binary seque
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n\in\mathbb N$,
 \[
@@ -100,27 +100,27 @@ Thus $y$ and $\phi(n)$ differ in their $n$th coordinate, so they are distinct se
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 No surjection from $\mathbb N$ onto $S$ exists.
 
 
 ::: pf-proof
 
-Step <1>3 gives $y\in S$, while step <1>4 shows that $y$ is not equal to $\phi(n)$ for any $n\in\mathbb N$. Hence $y$ is not in the image of $\phi$, contradicting the surjectivity assumed in step <1>1.
+Step [](#s1-3){.pf-ref} gives $y\in S$, while step [](#s1-4){.pf-ref} shows that $y$ is not equal to $\phi(n)$ for any $n\in\mathbb N$. Hence $y$ is not in the image of $\phi$, contradicting the surjectivity assumed in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore there is no bijection from $\mathbb N$ onto $S$.
 
 
 ::: pf-proof
 
-Every bijection is surjective, and step <1>5 rules out every surjection.
+Every bijection is surjective, and step [](#s1-5){.pf-ref} rules out every surjection.
 
 :::
 
@@ -128,7 +128,7 @@ Every bijection is surjective, and step <1>5 rules out every surjection.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -27,7 +27,7 @@ If $A$ is the $2$ by $2$ matrix whose $(i, j)$ entry is equal to $i + j$, and $B
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\det A=-1$.
 
@@ -51,7 +51,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $\det B=0$.
 
@@ -83,14 +83,14 @@ This matrix has two equal rows, so its determinant is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 $\det A+\det B=\boxed{-1}$.
 
 
 ::: pf-proof
 
-By steps <1>1 and <1>2,
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
 \[
 \det A+\det B=-1+0=-1.
 \]
@@ -102,7 +102,7 @@ Thus the correct choice is (B).
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

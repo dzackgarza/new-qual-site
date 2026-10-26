@@ -31,7 +31,7 @@ Find the positive value of $a$ that satisfies the equation:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $a>0$,
 $$
@@ -56,7 +56,7 @@ Taking $b\to a^-$ gives the claimed value $\arcsin(1)=\pi/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $a>0$,
 $$
@@ -80,7 +80,7 @@ because $a>0$. Letting $b\to a^-$ gives the value $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required positive value is
 $$
@@ -91,7 +91,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By steps <1>1 and <1>2, the displayed equation in the problem is equivalent to
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, the displayed equation in the problem is equivalent to
 $$
 \frac{\pi}{2}=a.
 $$
@@ -103,7 +103,7 @@ The resulting value is positive and therefore satisfies the stated requirement.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

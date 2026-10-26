@@ -28,7 +28,7 @@ x_k=(a_k,b_k)\in S\subseteq\mathbb R^2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The real sequence $(a_k)$ is bounded.
 
@@ -60,13 +60,13 @@ converging to some $a\in\mathbb R$.
 
 ::: pf-proof
 
-By step <1>1, $(a_k)$ is bounded. Apply the one-dimensional Bolzano--Weierstrass theorem to obtain a convergent subsequence.
+By step [](#s1-1){.pf-ref}, $(a_k)$ is bounded. Apply the one-dimensional Bolzano--Weierstrass theorem to obtain a convergent subsequence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The real sequence
 \[
@@ -90,7 +90,7 @@ b_{k_{j_\ell}}\to b.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The subsequence
 \[
@@ -108,7 +108,7 @@ Because $(a_{k_j})\to a$, every subsequence also converges to $a$, so
 \[
 a_{k_{j_\ell}}\to a.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 b_{k_{j_\ell}}\to b.
 \]
@@ -127,7 +127,7 @@ Thus $x_{k_{j_\ell}}\to(a,b)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The limit $(a,b)$ belongs to $S$.
 
@@ -143,14 +143,14 @@ Every term $x_{k_{j_\ell}}$ lies in $S$, and $S$ is closed. A closed subset of $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The Bolzano--Weierstrass theorem holds in $\mathbb R^2$.
 
 
 ::: pf-proof
 
-Steps <1>4--<1>5 produce a subsequence of the arbitrary sequence $(x_k)$ converging to a point of $S$.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} produce a subsequence of the arbitrary sequence $(x_k)$ converging to a point of $S$.
 
 :::
 
@@ -158,7 +158,7 @@ Steps <1>4--<1>5 produce a subsequence of the arbitrary sequence $(x_k)$ converg
 
 ::: pf-qed
 
-Step <1>6 is exactly the desired $n=2$ case.
+Step [](#s1-6){.pf-ref} is exactly the desired $n=2$ case.
 
 :::
 

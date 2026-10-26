@@ -34,7 +34,7 @@ given that every root of this equation has the form $1 + bi$ (where $b$ is real)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The cubic factors as
 $$
@@ -54,7 +54,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The three roots are
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives the real root $x=1$. For the quadratic factor,
+Step [](#s1-1){.pf-ref} gives the real root $x=1$. For the quadratic factor,
 $$
 x=\frac{2\pm\sqrt{4-16}}2
 =\frac{2\pm\sqrt{-12}}2
@@ -75,7 +75,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The largest real $b$ for which $1+bi$ is a root is
 $$
@@ -86,7 +86,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By step <1>2, the three corresponding values of $b$ are $0$, $\sqrt3$, and $-\sqrt3$. Their largest value is $\sqrt3$.
+By step [](#s1-2){.pf-ref}, the three corresponding values of $b$ are $0$, $\sqrt3$, and $-\sqrt3$. Their largest value is $\sqrt3$.
 
 :::
 
@@ -94,7 +94,7 @@ By step <1>2, the three corresponding values of $b$ are $0$, $\sqrt3$, and $-\sq
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

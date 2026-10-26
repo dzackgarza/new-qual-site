@@ -28,7 +28,7 @@ Prove or disprove each statement:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement 1 is
 \[
@@ -87,7 +87,7 @@ so $r_*$ is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement 3 is
 \[
@@ -126,7 +126,7 @@ Hence $i_*$ and $r_*$ are inverse isomorphisms. In particular,
 
 ::: pf-qed
 
-Steps <1>1 through <1>3 settle the three statements.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} settle the three statements.
 
 :::
 

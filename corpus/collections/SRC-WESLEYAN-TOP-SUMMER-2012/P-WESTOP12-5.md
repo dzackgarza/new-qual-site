@@ -17,7 +17,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -164,7 +164,7 @@ Compactness gives a finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -224,7 +224,7 @@ U\cap K=\varnothing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -235,7 +235,7 @@ is open, so $K$ is closed.
 
 ::: pf-proof
 
-Step <1>4 shows that every
+Step [](#s1-4){.pf-ref} shows that every
 \[
 x\in X\setminus K
 \]
@@ -249,7 +249,7 @@ Therefore the complement is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus:
 \[
@@ -267,7 +267,7 @@ K\text{ closed}.
 
 ::: pf-proof
 
-The first implication is step <1>1 and the second is step <1>5.
+The first implication is step [](#s1-1){.pf-ref} and the second is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -275,7 +275,7 @@ The first implication is step <1>1 and the second is step <1>5.
 
 ::: pf-qed
 
-Step <1>6 records both requested results.
+Step [](#s1-6){.pf-ref} records both requested results.
 
 :::
 

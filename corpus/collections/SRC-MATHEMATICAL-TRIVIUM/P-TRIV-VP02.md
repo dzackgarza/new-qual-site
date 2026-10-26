@@ -21,7 +21,7 @@ Find an extremum of the functional $J [ f ] = \int _ { 0 } ^ { \pi / 2 } d x ( f
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Euler--Lagrange equation is
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The general solution is
 $$
@@ -68,13 +68,13 @@ $$
 
 ::: pf-proof
 
-This is the general solution of the linear ODE from step <1>1.
+This is the general solution of the linear ODE from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The boundary condition
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-proof
 
-Substitute $x=0$ into step <1>2:
+Substitute $x=0$ into step [](#s1-2){.pf-ref}:
 $$
 f(0)=B.
 $$
@@ -97,7 +97,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The boundary condition
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the unique stationary function is
 $$
@@ -130,7 +130,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2--<1>4.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -168,7 +168,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 $$
@@ -208,14 +208,14 @@ $$
 2\int_0^{\pi/2}(f_*''+f_*)\eta\,dx.
 $$
 The boundary term vanishes because $\eta$ vanishes at both endpoints, and the
-integral vanishes by step <1>1. The remaining quadratic term is the displayed
+integral vanishes by step [](#s1-1){.pf-ref}. The remaining quadratic term is the displayed
 expression.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every nonzero admissible variation satisfies
 $$
@@ -243,7 +243,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore, for every nonzero admissible variation,
 $$
@@ -257,7 +257,7 @@ $$
 
 ::: pf-proof
 
-Apply step <1>8 to the expression in step <1>7:
+Apply step [](#s1-8){.pf-ref} to the expression in step [](#s1-7){.pf-ref}:
 $$
 \int
 \bigl((\eta')^2-\eta^2\bigr)
@@ -270,7 +270,7 @@ The last integral is positive for nonzero $\eta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -284,7 +284,7 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives the only stationary function, and step <1>9 shows every other
+Step [](#s1-5){.pf-ref} gives the only stationary function, and step [](#s1-9){.pf-ref} shows every other
 admissible function has strictly larger functional value.
 
 :::
@@ -293,7 +293,7 @@ admissible function has strictly larger functional value.
 
 ::: pf-qed
 
-Step <1>10 gives the required extremum and its value.
+Step [](#s1-10){.pf-ref} gives the required extremum and its value.
 
 :::
 

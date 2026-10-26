@@ -67,7 +67,7 @@ Because \(\gamma(0)=\gamma(1)=x_0\), evaluating \(F_0\) and \(F_1\) at the two e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 \[
@@ -97,7 +97,7 @@ G(0,v)=F(x_0,v)=\alpha(v)=G(1,v).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The loop \(\gamma_0\) is path-homotopic relative to its endpoints to
 \[
@@ -109,7 +109,7 @@ The loop \(\gamma_0\) is path-homotopic relative to its endpoints to
 
 For \(r\in I\), consider the path in the parameter square that starts at \((0,0)\), goes vertically to \((0,r)\), horizontally to \((1,r)\), and then vertically down to \((1,0)\). As \(r\) increases continuously from \(0\) to \(1\), these three-sided paths vary continuously and keep the endpoints \((0,0)\) and \((1,0)\) fixed.
 
-Composing this deformation with the continuous map \(G\) from step <1>2 gives a path homotopy in \(Y\). At \(r=0\), the two vertical pieces are constant and the horizontal piece is \(\gamma_0\), so the resulting path represents \([\gamma_0]\). At \(r=1\), step <1>2 identifies the three pieces as
+Composing this deformation with the continuous map \(G\) from step [](#s1-2){.pf-ref} gives a path homotopy in \(Y\). At \(r=0\), the two vertical pieces are constant and the horizontal piece is \(\gamma_0\), so the resulting path represents \([\gamma_0]\). At \(r=1\), step [](#s1-2){.pf-ref} identifies the three pieces as
 \[
 \alpha,\qquad \gamma_1,\qquad \overline\alpha,
 \]
@@ -123,7 +123,7 @@ The harmless constant pieces at \(r=0\) may be removed by the standard endpoint-
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \([\gamma]\in\pi_1(X,x_0)\),
 \[
@@ -141,7 +141,7 @@ F_{0*}([\gamma])=[\gamma_0],
 \qquad
 F_{1*}([\gamma])=[\gamma_1].
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 [\gamma_0]
 =[\alpha*\gamma_1*\overline\alpha]
@@ -153,14 +153,14 @@ which is the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The diagram in the problem commutes.
 
 
 ::: pf-proof
 
-Step <1>4 proves equality of the two composites from \(\pi_1(X,x_0)\) to \(\pi_1(Y,F(x_0,0))\):
+Step [](#s1-4){.pf-ref} proves equality of the two composites from \(\pi_1(X,x_0)\) to \(\pi_1(Y,F(x_0,0))\):
 \[
 \boxed{F_{0*}=\widehat\alpha\circ F_{1*}.}
 \]
@@ -172,7 +172,7 @@ This is exactly commutativity of the displayed diagram.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

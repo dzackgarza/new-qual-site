@@ -26,7 +26,7 @@ Let I be the set of functions f in S such that $f ( t ) \to 0 { \mathrm { ~ a s 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $I$ is nonempty and closed under subtraction.
 
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -130,13 +130,13 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that $I$ is an additive subgroup of $S$, and step <1>2 shows that it absorbs multiplication by arbitrary elements of $S$. Since $S$ is commutative, this is exactly the ideal condition.
+Step [](#s1-1){.pf-ref} shows that $I$ is an additive subgroup of $S$, and step [](#s1-2){.pf-ref} shows that it absorbs multiplication by arbitrary elements of $S$. Since $S$ is commutative, this is exactly the ideal condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose
 $$
@@ -185,7 +185,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every
 $$
@@ -219,7 +219,7 @@ $$
 =
 0.
 $$
-But step <1>4 gives
+But step [](#s1-4){.pf-ref} gives
 $$
 \abs{i(t)}<\frac12,
 $$
@@ -240,7 +240,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -253,7 +253,7 @@ $$
 
 ::: pf-proof
 
-Take the constant $T$ from step <1>4 and apply step <1>5.
+Take the constant $T$ from step [](#s1-4){.pf-ref} and apply step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -261,7 +261,7 @@ Take the constant $T$ from step <1>4 and apply step <1>5.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

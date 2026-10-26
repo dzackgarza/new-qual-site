@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $a=0$, then $p$ has the root
 $$
@@ -52,7 +52,7 @@ Its unique root is $-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $a\ne0$ and, toward a contradiction, suppose every root
 $$
@@ -93,7 +93,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the circle
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 |az^n|
 =
@@ -131,7 +131,7 @@ on the whole circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The polynomial $p$ has exactly one zero in
 $$
@@ -147,30 +147,30 @@ $$
 p(z)
 =(z+1)+az^n.
 $$
-By step <1>3, Rouché's theorem shows that $p$ and $z+1$ have the same number of zeros in $|z|<2$. The function $z+1$ has exactly one such zero, namely $-1$.
+By step [](#s1-3){.pf-ref}, Rouché's theorem shows that $p$ and $z+1$ have the same number of zeros in $|z|<2$. The function $z+1$ has exactly one such zero, namely $-1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The assumption in step <1>2 is impossible.
+The assumption in step [](#s1-2){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-Step <1>2 assumed that every root of $p$ satisfies
+Step [](#s1-2){.pf-ref} assumed that every root of $p$ satisfies
 $$
 |r_j|>2,
 $$
-so $p$ would have no root in $|z|<2$. Step <1>4 gives one root there, a contradiction.
+so $p$ would have no root in $|z|<2$. Step [](#s1-4){.pf-ref} gives one root there, a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $p$ has at least one root in
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 handles $a=0$, and steps <1>2--<1>5 handle $a\ne0$.
+Step [](#s1-1){.pf-ref} handles $a=0$, and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} handle $a\ne0$.
 
 :::
 
@@ -188,7 +188,7 @@ Step <1>1 handles $a=0$, and steps <1>2--<1>5 handle $a\ne0$.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

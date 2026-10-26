@@ -38,7 +38,7 @@ and
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -58,7 +58,7 @@ Since $Tv\in\operatorname{im}T$ and $f$ vanishes on $\operatorname{im}T$, this v
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -78,7 +78,7 @@ for every $v\in V$. Every vector in $\operatorname{im}T$ has the form $Tv$, so $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -88,13 +88,13 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 prove the two inclusions.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove the two inclusions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $Y$ is a subspace of a finite-dimensional real vector space $W$, then
 \[
@@ -133,7 +133,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The nullity of $T^t$ is
 \[
@@ -143,17 +143,17 @@ The nullity of $T^t$ is
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \ker(T^t)=(\operatorname{im}T)^0.
 \]
-Apply step <1>4 with $Y=\operatorname{im}T\subseteq W$.
+Apply step [](#s1-4){.pf-ref} with $Y=\operatorname{im}T\subseteq W$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ranks of $T$ and $T^t$ are equal:
 \[
@@ -167,7 +167,7 @@ Apply rank-nullity to
 \[
 T^t:W^*\to V^*.
 \]
-Since $\dim W^*=\dim W$, step <1>5 gives
+Since $\dim W^*=\dim W$, step [](#s1-5){.pf-ref} gives
 \[
 \begin{aligned}
 \dim\operatorname{im}T^t
@@ -183,7 +183,7 @@ Since $\dim W^*=\dim W$, step <1>5 gives
 
 ::: pf-qed
 
-Step <1>3 proves the first assertion, and step <1>6 proves the second.
+Step [](#s1-3){.pf-ref} proves the first assertion, and step [](#s1-6){.pf-ref} proves the second.
 
 :::
 

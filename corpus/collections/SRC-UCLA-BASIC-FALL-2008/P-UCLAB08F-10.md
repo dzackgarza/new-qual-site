@@ -39,7 +39,7 @@ I=\int_a^b f(t)\,dt\in\mathbb R^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $I=0$, then the desired inequality holds.
 
@@ -52,7 +52,7 @@ The left side is $0$, while the right side is nonnegative because $\|f(t)\|\ge0$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $I\ne0$ and define
 \[
@@ -89,7 +89,7 @@ u\mathbin{\cdot}I
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -126,7 +126,7 @@ u_j\int_a^b f_j(t)\,dt\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $t\in[a,b]$,
 \[
@@ -146,13 +146,13 @@ u\mathbin{\cdot}f(t)
 =
 \|f(t)\|,
 \]
-using step <1>2.
+using step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -166,7 +166,7 @@ One has
 
 ::: pf-proof
 
-If $I=0$, apply step <1>1. If $I\ne0$, steps <1>2--<1>4 give
+If $I=0$, apply step [](#s1-1){.pf-ref}. If $I\ne0$, steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give
 \[
 \begin{aligned}
 \|I\|
@@ -185,7 +185,7 @@ u\mathbin{\cdot}I\\
 
 ::: pf-qed
 
-Step <1>5 is the required inequality.
+Step [](#s1-5){.pf-ref} is the required inequality.
 
 :::
 

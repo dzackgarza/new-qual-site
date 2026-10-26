@@ -39,7 +39,7 @@ for all $x,y\in\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -75,7 +75,7 @@ Multiplying by $n$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every fixed $x\in\mathbb R$,
 \[
@@ -91,7 +91,7 @@ This is exactly the hypothesis of the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix real numbers
 \[
@@ -106,7 +106,7 @@ Then
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 g_n(x)\to0
 \]
@@ -127,7 +127,7 @@ Therefore the dominated convergence theorem gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -178,7 +178,7 @@ Subtracting the integral over $[a,b]$ leaves exactly the two boundary pieces in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -219,7 +219,7 @@ The function is continuous because every Lipschitz function is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Likewise,
 \[
@@ -231,13 +231,13 @@ f(a).
 
 ::: pf-proof
 
-Apply the same argument as in step <1>5 at the point $a$.
+Apply the same argument as in step [](#s1-5){.pf-ref} at the point $a$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -249,13 +249,13 @@ f(b)-f(a).
 
 ::: pf-proof
 
-Use the identity in step <1>4 and the limits in steps <1>5--<1>6.
+Use the identity in step [](#s1-4){.pf-ref} and the limits in steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -265,11 +265,11 @@ One has
 
 ::: pf-proof
 
-Step <1>3 says
+Step [](#s1-3){.pf-ref} says
 \[
 \int_a^b g_n(x)\,dx\to0,
 \]
-while step <1>7 says the same sequence of integrals converges to
+while step [](#s1-7){.pf-ref} says the same sequence of integrals converges to
 \[
 f(b)-f(a).
 \]
@@ -294,13 +294,13 @@ The points
 a<b
 \]
 were arbitrary.
-Step <1>8 therefore shows that every two real points have the same $f$-value.
+Step [](#s1-8){.pf-ref} therefore shows that every two real points have the same $f$-value.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently $f$ is differentiable everywhere, with
 \[
@@ -319,7 +319,7 @@ Every constant function is differentiable at every point, with derivative zero.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

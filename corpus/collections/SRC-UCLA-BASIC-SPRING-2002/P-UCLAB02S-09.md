@@ -84,7 +84,7 @@ x_1+x_2+x_3=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An orthonormal basis of $P$ is
 \[
@@ -118,7 +118,7 @@ Since $P$ has dimension $2$, they form an orthonormal basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 An orthonormal basis of
 \[
@@ -150,7 +150,7 @@ They are orthonormal because $u_3$ has fourth coordinate zero and $u_4$ has only
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ordered list
 \[
@@ -161,7 +161,7 @@ is an orthonormal basis of $\mathbb R^4$.
 
 ::: pf-proof
 
-By steps <1>2--<1>3, the first two vectors form an orthonormal basis of
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, the first two vectors form an orthonormal basis of
 \[
 \operatorname{span}\{a,b\}^{\perp},
 \]
@@ -175,9 +175,9 @@ The two subspaces are orthogonal complements, so the full list is an orthonormal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-In the basis from step <1>4, one rotation through angle $\theta$ in the perpendicular plane, fixing
+In the basis from step [](#s1-4){.pf-ref}, one rotation through angle $\theta$ in the perpendicular plane, fixing
 \[
 \operatorname{span}\{a,b\}
 \]
@@ -207,7 +207,7 @@ The opposite choice of orientation replaces $\theta$ by $-\theta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -250,7 +250,7 @@ Q^{-1}=Q^T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In the standard basis, the required rotation matrix is
 \[
@@ -269,7 +269,7 @@ The matrix $Q$ changes coordinates from the basis
 u_1,u_2,u_3,u_4
 \]
 to the standard basis.
-Therefore conjugating the matrix $R$ from step <1>5 by $Q$ gives the standard-basis matrix:
+Therefore conjugating the matrix $R$ from step [](#s1-5){.pf-ref} by $Q$ gives the standard-basis matrix:
 \[
 [T]_{\mathrm{std}}
 =
@@ -277,7 +277,7 @@ QRQ^{-1}
 =
 QRQ^T.
 \]
-All inverses appearing in this expression were computed explicitly in step <1>6.
+All inverses appearing in this expression were computed explicitly in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -285,7 +285,7 @@ All inverses appearing in this expression were computed explicitly in step <1>6.
 
 ::: pf-qed
 
-Step <1>7 gives the requested matrix in the standard basis.
+Step [](#s1-7){.pf-ref} gives the requested matrix in the standard basis.
 
 :::
 

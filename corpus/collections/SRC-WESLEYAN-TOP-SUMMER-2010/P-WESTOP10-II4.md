@@ -44,7 +44,7 @@ in the order shown in the source.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In $X_1$, the six boundary vertices collapse to two quotient vertices
 $$
@@ -97,7 +97,7 @@ The formula for
 $$
 \partial_1
 $$
-comes from the edge orientations in step <1>1.
+comes from the edge orientations in step [](#s1-1){.pf-ref}.
 
 The attaching word is
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The homology of $X_1$ is
 $$
@@ -163,7 +163,7 @@ There are no higher-dimensional cells.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -203,7 +203,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $X_1$ is not a manifold.
 
@@ -227,7 +227,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In $X_2$, the quotient has two vertices
 $$
@@ -257,7 +257,7 @@ The resulting equivalence classes are the alternating vertex sets displayed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The cellular boundary maps for $X_2$ satisfy
 $$
@@ -276,7 +276,7 @@ $$
 
 ::: pf-proof
 
-The first formula follows from step <1>6.
+The first formula follows from step [](#s1-6){.pf-ref}.
 The exponent sums of
 $$
 a,b,c
@@ -295,7 +295,7 @@ respectively.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -349,7 +349,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The fundamental group of $X_2$ is
 $$
@@ -384,7 +384,7 @@ and renaming the generators gives the displayed presentation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The space $X_2$ is the Klein bottle.
 
@@ -422,7 +422,7 @@ namely the Klein bottle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 In $X_3$, all six boundary vertices are identified to one point.
 
@@ -440,7 +440,7 @@ transitive closure of the endpoint identifications joins all six vertices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Thus $X_3$ has one $0$-cell, three $1$-cells
 $$
@@ -454,7 +454,7 @@ $$
 
 ::: pf-proof
 
-Step <1>11 gives the single quotient vertex.
+Step [](#s1-11){.pf-ref} gives the single quotient vertex.
 Each edge label gives one quotient $1$-cell, and the polygon interior gives
 the unique $2$-cell.
 
@@ -462,7 +462,7 @@ the unique $2$-cell.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 One has
 $$
@@ -482,7 +482,7 @@ Van Kampen imposes the single relation given by the $2$-cell attaching map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The cellular boundary of the $2$-cell is
 $$
@@ -521,7 +521,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 $$
@@ -561,7 +561,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The space $X_3$ is the connected sum of three projective planes:
 $$
@@ -601,7 +601,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Summarizing,
 $$
@@ -626,7 +626,7 @@ zero.
 
 ::: pf-proof
 
-This is exactly the content of steps <1>3--<1>16.
+This is exactly the content of steps [](#s1-3){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
@@ -634,7 +634,7 @@ This is exactly the content of steps <1>3--<1>16.
 
 ::: pf-qed
 
-Step <1>17 answers parts (a)--(d).
+Step [](#s1-17){.pf-ref} answers parts (a)--(d).
 
 :::
 

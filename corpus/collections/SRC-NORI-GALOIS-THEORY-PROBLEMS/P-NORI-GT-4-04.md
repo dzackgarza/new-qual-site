@@ -35,7 +35,7 @@ be an $F$-basis of $E$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every polynomial $f\in E[X]$ can be written uniquely in the form
 $$
@@ -73,7 +73,7 @@ then comparison of each power of $X$ gives an $F$-linear relation among $w_1,\ld
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently
 $$
@@ -84,13 +84,13 @@ with basis $w_1,\ldots,w_n$.
 
 ::: pf-proof
 
-Step <1>1 is exactly the assertion that these elements form an $F[X]$-basis.
+Step [](#s1-1){.pf-ref} is exactly the assertion that these elements form an $F[X]$-basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $0\ne f\in E[X]$. There exists $g\in E[X]$ such that
 $$
@@ -105,7 +105,7 @@ Apply Problem 4.3 to the ring extension
 $$
 F[X]\subset E[X].
 $$
-By step <1>2, $E[X]$ is free of rank $n$ over $F[X]$. Problem 4.3 gives $g\in E[X]$ with
+By step [](#s1-2){.pf-ref}, $E[X]$ is free of rank $n$ over $F[X]$. Problem 4.3 gives $g\in E[X]$ with
 $$
 gf=\operatorname{Norm}_{F[X]}^{E[X]}(f)=:h\in F[X].
 $$
@@ -118,7 +118,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every element of $E(X)$ is an $F(X)$-linear combination of $w_1,\ldots,w_n$.
 
@@ -131,7 +131,7 @@ $$
 \qquad
 r,s\in E[X],\ s\ne0.
 $$
-By step <1>3, choose $g\in E[X]$ and $0\ne h\in F[X]$ with
+By step [](#s1-3){.pf-ref}, choose $g\in E[X]$ and $0\ne h\in F[X]$ with
 $$
 gs=h.
 $$
@@ -139,7 +139,7 @@ Then
 $$
 \frac rs=\frac{rg}{h}.
 $$
-By step <1>1, write
+By step [](#s1-1){.pf-ref}, write
 $$
 rg=\sum_{i=1}^n w_i p_i(X)
 $$
@@ -154,7 +154,7 @@ and each coefficient belongs to $F(X)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The elements $w_1,\ldots,w_n$ are linearly independent over $F(X)$.
 
@@ -173,13 +173,13 @@ for every $i$. Multiplying the relation by $d(X)$ gives
 $$
 \sum_{i=1}^n p_i(X)w_i=0
 $$
-in $E[X]$. By the $F[X]$-linear independence from step <1>2, every $p_i=0$, hence every $q_i=0$.
+in $E[X]$. By the $F[X]$-linear independence from step [](#s1-2){.pf-ref}, every $p_i=0$, hence every $q_i=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -190,7 +190,7 @@ and $w_1,\ldots,w_n$ is an $F(X)$-basis of $E(X)$.
 
 ::: pf-proof
 
-The inclusion $F(X)\subset E(X)$ is induced from $F\subset E$. Step <1>4 gives spanning over $F(X)$ and step <1>5 gives linear independence. Thus these $n$ elements form a basis.
+The inclusion $F(X)\subset E(X)$ is induced from $F\subset E$. Step [](#s1-4){.pf-ref} gives spanning over $F(X)$ and step [](#s1-5){.pf-ref} gives linear independence. Thus these $n$ elements form a basis.
 
 :::
 
@@ -198,7 +198,7 @@ The inclusion $F(X)\subset E(X)$ is induced from $F\subset E$. Step <1>4 gives s
 
 ::: pf-qed
 
-Step <1>2 proves part (i), step <1>3 proves part (ii), and step <1>6 proves part (iii).
+Step [](#s1-2){.pf-ref} proves part (i), step [](#s1-3){.pf-ref} proves part (ii), and step [](#s1-6){.pf-ref} proves part (iii).
 
 :::
 

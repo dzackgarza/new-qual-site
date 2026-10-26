@@ -17,7 +17,7 @@ Suppose that f is differentiable at $x = x _ { 0 }$ . What is $\operatorname* { 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Add and subtract \(f(x_0)\) in the numerator:
 \[
@@ -39,7 +39,7 @@ The two added terms \(+f(x_0)\) and \(-f(x_0)\) cancel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -54,7 +54,7 @@ Therefore
 
 ::: pf-proof
 
-Divide step <1>1 by \(h\), and rewrite
+Divide step [](#s1-1){.pf-ref} by \(h\), and rewrite
 \[
 \frac{f(x_0)-f(x_0-h)}{h}
 =
@@ -65,7 +65,7 @@ Divide step <1>1 by \(h\), and rewrite
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since \(f\) is differentiable at \(x_0\),
 \[
@@ -85,7 +85,7 @@ This is the definition of the derivative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Also,
 \[
@@ -113,7 +113,7 @@ Apply differentiability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -127,7 +127,7 @@ Hence
 
 ::: pf-proof
 
-Take limits in step <1>2 and use steps <1>3--<1>4.
+Take limits in step [](#s1-2){.pf-ref} and use steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -135,7 +135,7 @@ Take limits in step <1>2 and use steps <1>3--<1>4.
 
 ::: pf-qed
 
-Step <1>5 is the requested limit.
+Step [](#s1-5){.pf-ref} is the requested limit.
 
 :::
 

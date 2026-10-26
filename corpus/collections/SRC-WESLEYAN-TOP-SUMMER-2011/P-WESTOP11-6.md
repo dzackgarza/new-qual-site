@@ -26,7 +26,7 @@ x_0\in U\cap V.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The space $X$ is path-connected.
 
@@ -48,7 +48,7 @@ is path-connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -88,9 +88,9 @@ maps into one member of the cover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The subdivision in step <1>2 may be chosen so that consecutive
+The subdivision in step [](#s1-2){.pf-ref} may be chosen so that consecutive
 subpaths alternate between $U$ and $V$, except where one of them can simply
 be merged with the next.
 For every genuine transition point
@@ -114,7 +114,7 @@ $V$, their common endpoint belongs to both sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every transition point $p_i$, choose a path
 \[
@@ -140,7 +140,7 @@ is path-connected by hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each $i$, the concatenation
 \[
@@ -161,7 +161,7 @@ The path
 \[
 \gamma_i
 \]
-lies in one of $U,V$ by step <1>2.
+lies in one of $U,V$ by step [](#s1-2){.pf-ref}.
 Both
 \[
 \eta_{i-1}
@@ -179,7 +179,7 @@ Thus the whole loop lies in that set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every loop
 \[
@@ -206,7 +206,7 @@ In either case the null-homotopy is also a null-homotopy in $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In
 \[
@@ -255,7 +255,7 @@ which is exactly $\gamma$ up to reparametrization.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -265,24 +265,24 @@ Therefore
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 [\lambda_i]=1
 \]
 for every $i$.
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 \[
 [\gamma]=1.
 \]
 Since $\gamma$ was arbitrary, every based loop is null-homotopic.
-Together with path-connectedness from step <1>1, this says $X$ is simply
+Together with path-connectedness from step [](#s1-1){.pf-ref}, this says $X$ is simply
 connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 **Seifert--van Kampen Theorem.**
 
@@ -368,7 +368,7 @@ extending both.
 
 ::: pf-qed
 
-Steps <1>1--<1>8 prove the simply connected special case, and step <1>9
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} prove the simply connected special case, and step [](#s1-9){.pf-ref}
 states the full theorem.
 
 :::

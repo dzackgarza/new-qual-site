@@ -26,7 +26,7 @@ y(x)=\int_1^\infty\frac{e^{-xt}}{\sqrt{t^2-1}}\,dt.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Differentiation under the integral sign gives
 \[
@@ -44,7 +44,7 @@ For $x$ in any compact subinterval of $(0,\infty)$, the integrands obtained afte
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -55,7 +55,7 @@ y''(x)-y(x)
 
 ::: pf-proof
 
-Subtract the defining integral for $y$ from the expression for $y''$ in step <1>1:
+Subtract the defining integral for $y$ from the expression for $y''$ in step [](#s1-1){.pf-ref}:
 \[
 y''-y
 =\int_1^\infty
@@ -67,7 +67,7 @@ which simplifies to the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integration by parts gives
 \[
@@ -88,13 +88,13 @@ integration by parts with $u=\sqrt{t^2-1}$ and $dv=e^{-xt}dt$ yields
 =\left[-\frac1x e^{-xt}\sqrt{t^2-1}\right]_1^\infty
 +\frac1x\int_1^\infty\frac{t e^{-xt}}{\sqrt{t^2-1}}\,dt.
 \]
-The boundary term vanishes at both endpoints, and step <1>1 identifies the remaining integral as $-y'(x)$.
+The boundary term vanishes at both endpoints, and step [](#s1-1){.pf-ref} identifies the remaining integral as $-y'(x)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -104,7 +104,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3 to obtain $y''-y=-y'/x$, and rearrange.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} to obtain $y''-y=-y'/x$, and rearrange.
 
 :::
 
@@ -112,7 +112,7 @@ Combine steps <1>2 and <1>3 to obtain $y''-y=-y'/x$, and rearrange.
 
 ::: pf-qed
 
-Step <1>4 verifies the required differential equation for every $x>0$.
+Step [](#s1-4){.pf-ref} verifies the required differential equation for every $x>0$.
 
 :::
 

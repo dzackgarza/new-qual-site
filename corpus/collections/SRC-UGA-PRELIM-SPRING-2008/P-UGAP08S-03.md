@@ -20,7 +20,7 @@ State both parts of the Fundamental Theorem of Calculus and outline a proof of o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Fundamental Theorem of Calculus, Part I.**
 
@@ -49,13 +49,13 @@ F'(x)=f(x).
 ::: pf-proof
 
 This is the first standard form of the theorem.
-The proof is given in steps <1>3--<1>6.
+The proof is given in steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 **Fundamental Theorem of Calculus, Part II.**
 
@@ -94,7 +94,7 @@ antiderivative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 To prove Part I, fix
 \[
@@ -131,7 +131,7 @@ Divide by $h$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Subtracting $f(x)$ gives
 \[
@@ -161,7 +161,7 @@ subtract the two averages.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -178,7 +178,7 @@ f(x)
 
 ::: pf-proof
 
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 \[
 \begin{aligned}
 \left|
@@ -202,7 +202,7 @@ Using step <1>4,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Letting
 \[
@@ -223,7 +223,7 @@ Continuity of $f$ at $x$ implies
 0
 \]
 uniformly for $t$ confined to a sufficiently small interval around $x$.
-Thus the supremum in step <1>5 tends to $0$ as $h\to0$.
+Thus the supremum in step [](#s1-5){.pf-ref} tends to $0$ as $h\to0$.
 Hence
 \[
 \lim_{h\to0}
@@ -292,7 +292,7 @@ G(b)-G(a).
 
 ::: pf-qed
 
-Steps <1>1--<1>2 state both parts, and steps <1>3--<1>6 prove Part I.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} state both parts, and steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove Part I.
 
 :::
 

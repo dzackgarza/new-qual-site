@@ -36,7 +36,7 @@ q_k=-\frac1{2k-1}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -76,13 +76,13 @@ Construct a rearrangement by taking unused positive terms in order until the par
 
 ::: pf-proof
 
-Step <1>1 guarantees that each positive block and each negative block terminates after finitely many terms. Within each sign, terms are used in their original order and never repeated.
+Step [](#s1-1){.pf-ref} guarantees that each positive block and each negative block terminates after finitely many terms. Within each sign, terms are used in their original order and never repeated.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every original term appears exactly once in the rearrangement.
 
@@ -111,7 +111,7 @@ At the end of a positive block, if the last term added is $p_k$, then the preced
 \[
 0<S-\pi\le p_k.
 \]
-As the blocks proceed, the indices $k$ tend to infinity by step <1>3, and therefore $p_k\to0$.
+As the blocks proceed, the indices $k$ tend to infinity by step [](#s1-3){.pf-ref}, and therefore $p_k\to0$.
 
 Similarly, if a negative block ends with $q_k$, then
 \[
@@ -123,7 +123,7 @@ and $q_k\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The rearranged series converges to
 \[
@@ -139,7 +139,7 @@ p_k<\varepsilon
 \qquad\text{and}\qquad
 -q_k<\varepsilon
 \]
-for all $k\ge K$. By step <1>3, eventually every newly used term has index at least $K$ within its positive or negative subsequence.
+for all $k\ge K$. By step [](#s1-3){.pf-ref}, eventually every newly used term has index at least $K$ within its positive or negative subsequence.
 
 From that point onward, every endpoint of a positive block lies in
 \[
@@ -161,7 +161,7 @@ Thus the rearranged series converges to $\pi$.
 
 ::: pf-qed
 
-Step <1>3 gives a rearrangement, and step <1>5 proves that its sum is $\pi$.
+Step [](#s1-3){.pf-ref} gives a rearrangement, and step [](#s1-5){.pf-ref} proves that its sum is $\pi$.
 
 :::
 

@@ -48,7 +48,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral
 $$
@@ -98,7 +98,7 @@ which is integrable because $v>-1/2$. Hence the full integral converges absolute
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $F$ satisfies
 $$
@@ -131,7 +131,7 @@ Dividing gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The only pole of $F$ in the strip
 $$
@@ -194,7 +194,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $\Gamma_R$ be the positively oriented rectangle with vertices
 $$
@@ -252,7 +252,7 @@ the quotient tends uniformly to $0$ on each unit-length vertical edge. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The bottom and top edges satisfy
 $$
@@ -274,7 +274,7 @@ $$
 \int_{-R}^{R}
 F(x)\,dx.
 $$
-The top edge is traversed from $R+i$ to $-R+i$, so by step <1>2 its contribution is
+The top edge is traversed from $R+i$ to $-R+i$, so by step [](#s1-2){.pf-ref} its contribution is
 $$
 \begin{aligned}
 \int_R^{-R}
@@ -288,13 +288,13 @@ e^{2\pi\xi}
 F(x)\,dx.
 \end{aligned}
 $$
-By step <1>4, the vertical contributions vanish as $R\to\infty$, and by step <1>1 the horizontal integrals converge to $I(\xi)$. This gives the displayed limit.
+By step [](#s1-4){.pf-ref}, the vertical contributions vanish as $R\to\infty$, and by step [](#s1-1){.pf-ref} the horizontal integrals converge to $I(\xi)$. This gives the displayed limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The residue theorem gives
 $$
@@ -309,7 +309,7 @@ $$
 
 ::: pf-proof
 
-For sufficiently large $R$, step <1>3 shows that $\Gamma_R$ encloses exactly the one pole $i/2$. Hence
+For sufficiently large $R$, step [](#s1-3){.pf-ref} shows that $\Gamma_R$ encloses exactly the one pole $i/2$. Hence
 $$
 \int_{\partial\Gamma_R}
 F(z)\,dz
@@ -319,13 +319,13 @@ F(z)\,dz
 =
 2e^{\pi\xi}.
 $$
-Letting $R\to\infty$ and applying step <1>5 yields the identity.
+Letting $R\to\infty$ and applying step [](#s1-5){.pf-ref} yields the identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -345,7 +345,7 @@ $$
 =
 2e^{\pi\xi}\cosh\pi\xi,
 $$
-step <1>6 gives
+step [](#s1-6){.pf-ref} gives
 $$
 I(\xi)
 =
@@ -365,7 +365,7 @@ In particular, this holds for every real $\xi$, which is the Fourier-transform c
 
 ::: pf-qed
 
-Step <1>7 is the required evaluation.
+Step [](#s1-7){.pf-ref} is the required evaluation.
 
 :::
 

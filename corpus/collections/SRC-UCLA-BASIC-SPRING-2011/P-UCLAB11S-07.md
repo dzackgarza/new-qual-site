@@ -27,7 +27,7 @@ p(x)=x^5-3x+1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $p$ is continuous on $\mathbb R$.
 
@@ -40,7 +40,7 @@ The function $p$ is a polynomial, and every polynomial is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -62,7 +62,7 @@ p(0)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -85,7 +85,7 @@ p(1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists
 \[
@@ -99,7 +99,7 @@ such that
 
 ::: pf-proof
 
-By steps <1>1--<1>3, the continuous function $p$ takes opposite signs at $0$ and $1$.
+By steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, the continuous function $p$ takes opposite signs at $0$ and $1$.
 The intermediate value theorem therefore gives
 \[
 c\in(0,1)
@@ -115,7 +115,7 @@ p(c)=0.
 
 ::: pf-qed
 
-Step <1>4 is the required existence statement.
+Step [](#s1-4){.pf-ref} is the required existence statement.
 
 :::
 

@@ -35,7 +35,7 @@ g(z)=\sum_{n=-\infty}^{\infty}b_n(z-z_0)^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The residues are
 \[
@@ -61,7 +61,7 @@ in the Laurent expansion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Laurent expansion of \(f+g\) is
 \[
@@ -81,7 +81,7 @@ Laurent series may be added term by term on a common annulus of convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -96,17 +96,17 @@ Therefore
 
 ::: pf-proof
 
-By step <1>2, the coefficient of \((z-z_0)^{-1}\) in \(f+g\) is
+By step [](#s1-2){.pf-ref}, the coefficient of \((z-z_0)^{-1}\) in \(f+g\) is
 \[
 a_{-1}+b_{-1}.
 \]
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the answer to part \(1\) is
 \[
@@ -116,13 +116,13 @@ Hence the answer to part \(1\) is
 
 ::: pf-proof
 
-This is exactly step <1>3.
+This is exactly step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For products, the coefficient of \((z-z_0)^{-1}\) is generally
 \[
@@ -161,7 +161,7 @@ In particular, multiplication of residues cannot hold in general.
 
 ::: pf-proof
 
-Step <1>5 shows that the residue of a product receives contributions from all
+Step [](#s1-5){.pf-ref} shows that the residue of a product receives contributions from all
 pairs of Laurent coefficients whose exponents sum to \(-1\), whereas the
 product of the residues only uses the pair \((-1,-1)\), whose exponents sum
 to \(-2\).
@@ -194,7 +194,7 @@ is actually entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Their residues satisfy
 \[
@@ -224,7 +224,7 @@ Read off the \(z^{-1}\)-coefficients.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 But
 \[
@@ -245,7 +245,7 @@ The product is again \(z^{-1}\), whose residue is \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus
 \[
@@ -262,13 +262,13 @@ Thus
 
 ::: pf-proof
 
-Use steps <1>8--<1>9.
+Use steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence the answer to part \(2\) is
 \[
@@ -278,7 +278,7 @@ Hence the answer to part \(2\) is
 
 ::: pf-proof
 
-Step <1>10 provides a counterexample.
+Step [](#s1-10){.pf-ref} provides a counterexample.
 
 :::
 
@@ -286,7 +286,7 @@ Step <1>10 provides a counterexample.
 
 ::: pf-qed
 
-Step <1>4 answers part \(1\), and step <1>11 answers part \(2\).
+Step [](#s1-4){.pf-ref} answers part \(1\), and step [](#s1-11){.pf-ref} answers part \(2\).
 
 :::
 

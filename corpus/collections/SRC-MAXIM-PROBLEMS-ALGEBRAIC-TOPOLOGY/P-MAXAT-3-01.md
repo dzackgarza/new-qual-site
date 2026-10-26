@@ -23,7 +23,7 @@ The coefficient ring matters. The standard clean presentations are over $\mathbb
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For finite real projective space,
 \[
@@ -46,7 +46,7 @@ The standard CW decomposition has one cell in each dimension $0,\ldots,m$, and a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In particular,
 \[
@@ -58,13 +58,13 @@ H^*(\mathbb{RP}^{\infty};\mathbb F_2)
 
 ::: pf-proof
 
-Take the direct limit of the presentations in step <1>1 under the standard inclusions $\mathbb{RP}^m\subset\mathbb{RP}^{m+1}$. No finite power of $x$ vanishes in the limit.
+Take the direct limit of the presentations in step [](#s1-1){.pf-ref} under the standard inclusions $\mathbb{RP}^m\subset\mathbb{RP}^{m+1}$. No finite power of $x$ vanishes in the limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For finite complex projective space,
 \[
@@ -83,7 +83,7 @@ Let $u=c_1((\gamma^1_{\mathbb C})^*)$ be the positive generator of $H^2$. The st
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus
 \[
@@ -95,13 +95,13 @@ H^*(\mathbb{CP}^{\infty};\mathbb Z)
 
 ::: pf-proof
 
-As in step <1>2, pass to the direct limit under $\mathbb{CP}^m\subset\mathbb{CP}^{m+1}$.
+As in step [](#s1-2){.pf-ref}, pass to the direct limit under $\mathbb{CP}^m\subset\mathbb{CP}^{m+1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -141,7 +141,7 @@ with $|a|=1$ and $|b|=2$. Restriction to the $(2n-1)$-skeleton preserves all cla
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 With integral coefficients, the additive cohomology groups of the same lens space are
 \[
@@ -163,7 +163,7 @@ From the one-cell-per-dimension cellular structure, the integral cellular bounda
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the standard ring presentations are
 \[
@@ -181,7 +181,7 @@ and, for odd prime $p$,
 
 ::: pf-proof
 
-These are precisely steps <1>1, <1>3, and <1>5.
+These are precisely steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -189,7 +189,7 @@ These are precisely steps <1>1, <1>3, and <1>5.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 compute the requested cohomology rings with their standard coefficient choices and record the integral additive groups for lens spaces.
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} compute the requested cohomology rings with their standard coefficient choices and record the integral additive groups for lens spaces.
 
 :::
 

@@ -26,7 +26,7 @@ for every $z\in\mathbb C$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $h$ is bounded on $\CC$.
 
@@ -75,20 +75,20 @@ By continuity, $h$ is bounded on the compact fundamental square
 $$
 Q=\{x+iy:0\le x\le1,\ 0\le y\le1\}.
 $$
-Every $z\in\CC$ can be translated by integer multiples of $1$ and $i$ into $Q$. By the two periodicity relations from step <1>1, $h$ has the same value at $z$ as at the corresponding point of $Q$. Hence the bound on $Q$ is a global bound.
+Every $z\in\CC$ can be translated by integer multiples of $1$ and $i$ into $Q$. By the two periodicity relations from step [](#s1-1){.pf-ref}, $h$ has the same value at $z$ as at the corresponding point of $Q$. Hence the bound on $Q$ is a global bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $h$ is constant.
 
 
 ::: pf-proof
 
-By step <1>2, $h$ is bounded and entire. Liouville's theorem therefore gives
+By step [](#s1-2){.pf-ref}, $h$ is bounded and entire. Liouville's theorem therefore gives
 $$
 h(z)\equiv C
 $$
@@ -98,7 +98,7 @@ for some constant $C\in\CC$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every solution has the form
 $$
@@ -109,7 +109,7 @@ for some $C\in\CC$.
 
 ::: pf-proof
 
-From step <1>3 and the definition of $h$,
+From step [](#s1-3){.pf-ref} and the definition of $h$,
 $$
 e^{2\pi iz}f(z)=C,
 $$
@@ -122,7 +122,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every function of the form $f(z)=Ce^{-2\pi iz}$ satisfies the two required functional equations.
 
@@ -148,7 +148,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>4 and <1>5 give exactly all solutions.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give exactly all solutions.
 
 :::
 

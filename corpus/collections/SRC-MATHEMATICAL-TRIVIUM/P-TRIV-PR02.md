@@ -23,7 +23,7 @@ Assume 365 equally likely birthdays and ignore leap day.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $n\leq365$, the probability that all $n$ birthdays are distinct is
 \[
@@ -39,7 +39,7 @@ The first student may have any birthday. Conditional on the first $k$ birthdays 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence the probability of at least one shared birthday is
 \[
@@ -55,7 +55,7 @@ The event that at least two students share a birthday is the complement of the e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $n=22$,
 \[
@@ -67,13 +67,13 @@ p_{22}\approx0.475695<\frac12.
 
 ::: pf-proof
 
-Evaluate the finite product in step <1>1 through $k=21$ and use step <1>2.
+Evaluate the finite product in step [](#s1-1){.pf-ref} through $k=21$ and use step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $n=23$,
 \[
@@ -85,17 +85,17 @@ p_{23}\approx0.507297>\frac12.
 
 ::: pf-proof
 
-From step <1>3,
+From step [](#s1-3){.pf-ref},
 \[
 q_{23}=q_{22}\frac{343}{365}\approx0.492703,
 \]
-and step <1>2 gives $p_{23}\approx0.507297$.
+and step [](#s1-2){.pf-ref} gives $p_{23}\approx0.507297$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the least number of students is
 \[
@@ -105,7 +105,7 @@ Therefore the least number of students is
 
 ::: pf-proof
 
-The sequence $q_n$ is decreasing, hence $p_n=1-q_n$ is increasing. Step <1>3 shows that 22 students are insufficient, while step <1>4 shows that 23 suffice.
+The sequence $q_n$ is decreasing, hence $p_n=1-q_n$ is increasing. Step [](#s1-3){.pf-ref} shows that 22 students are insufficient, while step [](#s1-4){.pf-ref} shows that 23 suffice.
 
 :::
 
@@ -113,7 +113,7 @@ The sequence $q_n$ is decreasing, hence $p_n=1-q_n$ is increasing. Step <1>3 sho
 
 ::: pf-qed
 
-Step <1>5 establishes the required minimum.
+Step [](#s1-5){.pf-ref} establishes the required minimum.
 
 :::
 

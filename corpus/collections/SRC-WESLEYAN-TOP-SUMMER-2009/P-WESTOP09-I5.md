@@ -28,7 +28,7 @@ This problem proves the metrizability part of the Hahn--Mazurkiewicz theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $f:I\to X$ is closed.
 
@@ -43,7 +43,7 @@ $X$ are closed. Hence $f$ sends closed sets to closed sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $\mathcal B$ be a countable basis for $I$, and let $\mathcal C$ be
 the collection of all finite unions of elements of $\mathcal B$. Then
@@ -61,7 +61,7 @@ countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $U\in\mathcal C$, define
 \[
@@ -77,7 +77,7 @@ f^{-1}(y)\subseteq U.
 
 ::: pf-proof
 
-Since $U$ is open in $I$, the set $I\setminus U$ is closed. Step <1>1 implies
+Since $U$ is open in $I$, the set $I\setminus U$ is closed. Step [](#s1-1){.pf-ref} implies
 that $f(I\setminus U)$ is closed, so $V_U$ is open.
 
 Moreover,
@@ -91,7 +91,7 @@ which is equivalent to $f^{-1}(y)\subseteq U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The countable family
 \[
@@ -127,20 +127,20 @@ Then
 \[
 f^{-1}(x)\subseteq U\subseteq f^{-1}(O).
 \]
-By step <1>3, $x\in V_U$. If $y\in V_U$, then
+By step [](#s1-3){.pf-ref}, $x\in V_U$. If $y\in V_U$, then
 $f^{-1}(y)\subseteq U\subseteq f^{-1}(O)$. Since $f$ is surjective,
 $f^{-1}(y)$ is nonempty, so choosing $t\in f^{-1}(y)$ gives
 $t\in f^{-1}(O)$ and therefore $y=f(t)\in O$. Thus
 \[
 x\in V_U\subseteq O.
 \]
-Hence $\mathcal V$ is a basis. It is countable by step <1>2.
+Hence $\mathcal V$ is a basis. It is countable by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $X$ is metrizable.
 
@@ -152,7 +152,7 @@ The space $I$ is compact, so its continuous image
 X=f(I)
 \]
 is compact. By hypothesis $X$ is Hausdorff. Every compact Hausdorff space is
-regular, and step <1>4 shows that $X$ is second countable. The Urysohn
+regular, and step [](#s1-4){.pf-ref} shows that $X$ is second countable. The Urysohn
 metrization theorem therefore implies that
 \[
 \boxed{X\text{ is metrizable}}.
@@ -164,7 +164,7 @@ metrization theorem therefore implies that
 
 ::: pf-qed
 
-Step <1>1 proves part 1, step <1>4 proves part 2, and step <1>5 proves part 3.
+Step [](#s1-1){.pf-ref} proves part 1, step [](#s1-4){.pf-ref} proves part 2, and step [](#s1-5){.pf-ref} proves part 3.
 
 :::
 

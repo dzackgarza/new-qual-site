@@ -24,7 +24,7 @@ Let $u=u(r)$ with $r=|x|$ in $\mathbb R^d$, where $d\geq3$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $r>0$, the radial Laplacian is
 \[
@@ -44,7 +44,7 @@ For a radial function, $\partial_{x_i}u=u'(r)x_i/r$. Differentiating once more a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The harmonicity equation is equivalent to
 \[
@@ -54,7 +54,7 @@ The harmonicity equation is equivalent to
 
 ::: pf-proof
 
-Multiply the equation in step <1>1 by $r^{d-1}$:
+Multiply the equation in step [](#s1-1){.pf-ref} by $r^{d-1}$:
 \[
 r^{d-1}u''+(d-1)r^{d-2}u'=0.
 \]
@@ -74,7 +74,7 @@ u(r)=C_0+C_1r^{2-d}.
 
 ::: pf-proof
 
-Step <1>2 gives $r^{d-1}u'=C$, so $u'=Cr^{1-d}$. Since $d\ne2$,
+Step [](#s1-2){.pf-ref} gives $r^{d-1}u'=C$, so $u'=Cr^{1-d}$. Since $d\ne2$,
 \[
 u=C_0+\frac{C}{2-d}r^{2-d}.
 \]
@@ -84,7 +84,7 @@ Rename the second constant as $C_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Vanishing at infinity forces $C_0=0$, so
 \[
@@ -104,7 +104,7 @@ Because $d\geq3$, $r^{2-d}\to0$ as $r\to\infty$, whereas the constant term tends
 
 ::: pf-qed
 
-Step <1>4 gives every radial harmonic potential on $r>0$ that vanishes at infinity.
+Step [](#s1-4){.pf-ref} gives every radial harmonic potential on $r>0$ that vanishes at infinity.
 
 :::
 

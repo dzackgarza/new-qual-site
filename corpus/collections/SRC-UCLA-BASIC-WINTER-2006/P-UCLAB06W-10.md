@@ -24,7 +24,7 @@ You may not use canonical-form theorems without proof.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every linear operator on a nonzero finite-dimensional complex vector space has an eigenvector.
 
@@ -45,7 +45,7 @@ and therefore $\ker(\lambda I-R)\ne0$. Any nonzero vector in this kernel is an e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The assertion holds in dimensions $0$ and $1$.
 
@@ -58,7 +58,7 @@ In dimension $0$ there is nothing to prove. In dimension $1$, every unit vector 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Assume the assertion holds in dimension $n-1$, and let $\dim V=n\ge2$. Choose a unit eigenvector $e_1$ of $T$, with
 $$
@@ -76,13 +76,13 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives a nonzero eigenvector of $T$; rescale it to norm $1$. The orthogonal complement $W$ has dimension $n-1$. Orthogonal projection onto $W$ exists in finite-dimensional inner-product spaces, so the displayed formula defines a linear operator $R$ on $W$.
+Step [](#s1-1){.pf-ref} gives a nonzero eigenvector of $T$; rescale it to norm $1$. The orthogonal complement $W$ has dimension $n-1$. Orthogonal projection onto $W$ exists in finite-dimensional inner-product spaces, so the displayed formula defines a linear operator $R$ on $W$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is an ordered orthonormal basis
 $$
@@ -99,7 +99,7 @@ The space $W$ has dimension $n-1$. Apply the induction hypothesis to the linear 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ordered list
 $$
@@ -116,9 +116,9 @@ The vector $e_1$ is unit, and $e_2,\ldots,e_n$ is an orthonormal basis of $e_1^\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-In the basis from step <1>5, the matrix $A=(a_{ij})$ of $T$ satisfies
+In the basis from step [](#s1-5){.pf-ref}, the matrix $A=(a_{ij})$ of $T$ satisfies
 $$
 a_{ij}=0
 \qquad\text{whenever }j<i.
@@ -147,7 +147,7 @@ Applying $P_W$ gives
 $$
 w_j=P_WT(e_j)=R(e_j).
 $$
-By step <1>4, the matrix of $R$ in the basis $e_2,\ldots,e_n$ is upper triangular. Therefore the coefficient of $e_i$ in $R(e_j)$ is zero whenever
+By step [](#s1-4){.pf-ref}, the matrix of $R$ in the basis $e_2,\ldots,e_n$ is upper triangular. Therefore the coefficient of $e_i$ in $R(e_j)$ is zero whenever
 $$
 2\le j<i\le n.
 $$
@@ -163,7 +163,7 @@ whenever $j<i$.
 
 ::: pf-qed
 
-Step <1>2 gives the base cases, and steps <1>3--<1>6 prove the induction step. Thus every finite-dimensional complex linear operator has an ordered orthonormal basis in which its matrix is upper triangular, without invoking a canonical-form theorem.
+Step [](#s1-2){.pf-ref} gives the base cases, and steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove the induction step. Thus every finite-dimensional complex linear operator has an ordered orthonormal basis in which its matrix is upper triangular, without invoking a canonical-form theorem.
 
 :::
 

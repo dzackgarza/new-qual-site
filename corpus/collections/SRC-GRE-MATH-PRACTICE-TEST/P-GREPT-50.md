@@ -27,7 +27,7 @@ How many structurally distinct Abelian groups have order $72$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 $$
@@ -50,7 +50,7 @@ Sylow primary components, and their direct product is the whole group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There are exactly three Abelian groups of order $2^3$ up to
 isomorphism:
@@ -80,7 +80,7 @@ give exactly the three displayed groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There are exactly two Abelian groups of order $3^2$ up to isomorphism:
 $$
@@ -99,7 +99,7 @@ gives exactly the two displayed groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the number of Abelian groups of order $72$ up to isomorphism
 is
@@ -111,9 +111,9 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>1, an isomorphism type is determined uniquely by choosing one of
-the three $2$-primary types from step <1>2 and one of the two $3$-primary
-types from step <1>3. Hence there are $3\cdot2=6$ choices.
+By step [](#s1-1){.pf-ref}, an isomorphism type is determined uniquely by choosing one of
+the three $2$-primary types from step [](#s1-2){.pf-ref} and one of the two $3$-primary
+types from step [](#s1-3){.pf-ref}. Hence there are $3\cdot2=6$ choices.
 
 :::
 
@@ -121,7 +121,7 @@ types from step <1>3. Hence there are $3\cdot2=6$ choices.
 
 ::: pf-qed
 
-Step <1>4 gives the requested number of isomorphism classes.
+Step [](#s1-4){.pf-ref} gives the requested number of isomorphism classes.
 
 :::
 

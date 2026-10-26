@@ -21,7 +21,7 @@ Find Stirling's approximation: consider $\begin{array} { r } { n ! = \Gamma ( n 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With the substitution
 $$
@@ -58,7 +58,7 @@ the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The phase
 $$
@@ -90,7 +90,7 @@ for every $y>0$. Thus $y=1$ is the unique maximum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At the saddle,
 $$
@@ -108,7 +108,7 @@ Direct substitution gives the two values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Near $y=1$,
 $$
@@ -124,7 +124,7 @@ $$
 
 ::: pf-proof
 
-This is the Taylor expansion at $y=1$, using step <1>3 and
+This is the Taylor expansion at $y=1$, using step [](#s1-3){.pf-ref} and
 $$
 \phi'(1)=0.
 $$
@@ -133,9 +133,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The integral in step <1>1 satisfies
+The integral in step [](#s1-1){.pf-ref} satisfies
 $$
 \int_0^\infty
 e^{n\phi(y)}
@@ -148,13 +148,13 @@ $$
 
 ::: pf-proof
 
-The unique maximum in step <1>2 is nondegenerate. Put
+The unique maximum in step [](#s1-2){.pf-ref} is nondegenerate. Put
 $$
 y
 =
 1+\frac{u}{\sqrt n}.
 $$
-Then step <1>4 gives
+Then step [](#s1-4){.pf-ref} gives
 $$
 n\phi(y)
 =
@@ -182,7 +182,7 @@ The Gaussian integral equals $\sqrt{2\pi}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -196,13 +196,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>5 into step <1>1.
+Substitute step [](#s1-5){.pf-ref} into step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence Stirling's approximation is
 $$
@@ -218,7 +218,7 @@ as $n\to\infty$.
 
 ::: pf-proof
 
-Simplify the expression in step <1>6:
+Simplify the expression in step [](#s1-6){.pf-ref}:
 $$
 n^{n+1}e^{-n}
 \sqrt{\frac{2\pi}{n}}
@@ -233,7 +233,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is Stirling's formula.
+Step [](#s1-7){.pf-ref} is Stirling's formula.
 
 :::
 

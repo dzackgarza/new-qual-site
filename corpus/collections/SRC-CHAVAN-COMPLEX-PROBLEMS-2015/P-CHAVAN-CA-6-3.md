@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $c\in\DD$, the map $\psi_c$ is holomorphic on $\DD$.
 
@@ -46,7 +46,7 @@ throughout $\DD$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $c,z\in\DD$, one has $\psi_c(z)\in\DD$.
 
@@ -70,7 +70,7 @@ $\abs{\psi_c(z)}<1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each $\psi_c$ is an involution of $\DD$, hence a biholomorphism
 $\DD\to\DD$.
@@ -92,14 +92,14 @@ Therefore
 $$
 \psi_c(\psi_c(z))=\frac{c-w}{1-\overline c w}=z.
 $$
-By steps <1>1 and <1>2, $\psi_c$ is a holomorphic self-map of $\DD$, and the
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, $\psi_c$ is a holomorphic self-map of $\DD$, and the
 identity above shows that its inverse is the same holomorphic map.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $a,b\in\DD$, the biholomorphism
 $$
@@ -110,7 +110,7 @@ satisfies $f(a)=b$.
 
 ::: pf-proof
 
-Step <1>3 shows that both factors are automorphisms of $\DD$, so their
+Step [](#s1-3){.pf-ref} shows that both factors are automorphisms of $\DD$, so their
 composition is an automorphism. Moreover,
 $$
 \psi_a(a)=0,
@@ -125,7 +125,7 @@ and hence $f(a)=b$.
 
 ::: pf-qed
 
-Step <1>4 gives an automorphism carrying an arbitrary $a\in\DD$ to an arbitrary
+Step [](#s1-4){.pf-ref} gives an automorphism carrying an arbitrary $a\in\DD$ to an arbitrary
 $b\in\DD$, which is exactly transitivity.
 
 :::

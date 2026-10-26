@@ -24,7 +24,7 @@ A=\begin{pmatrix}1&3\\4&2\end{pmatrix}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial of
 $$
@@ -53,9 +53,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The polynomial from step <1>1 annihilates $A$:
+The polynomial from step [](#s1-1){.pf-ref} annihilates $A$:
 $$
 \boxed{P(A)=A^2-3A-10I=0}.
 $$
@@ -88,7 +88,7 @@ Hence $A^2=3A+10I$, which is equivalent to $P(A)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No nonzero polynomial of degree at most $1$ annihilates $A$.
 
@@ -113,7 +113,7 @@ so $A$ would be a scalar matrix. But $A$ has nonzero off-diagonal entries $3$ an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every degree-$2$ polynomial $Q$ satisfying $Q(A)=0$ is a nonzero scalar multiple of $P$.
 
@@ -129,11 +129,11 @@ and suppose $Q(A)=0$. Since $P$ is monic of degree $2$, the polynomial
 $$
 R(x)=Q(x)-cP(x)
 $$
-has degree at most $1$. By step <1>2,
+has degree at most $1$. By step [](#s1-2){.pf-ref},
 $$
 R(A)=Q(A)-cP(A)=0.
 $$
-Step <1>3 therefore gives $R=0$. Hence
+Step [](#s1-3){.pf-ref} therefore gives $R=0$. Hence
 $$
 Q=cP.
 $$
@@ -144,7 +144,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 answers part (a), and step <1>4 proves the uniqueness up to multiplication by a nonzero constant required in part (b).
+Step [](#s1-2){.pf-ref} answers part (a), and step [](#s1-4){.pf-ref} proves the uniqueness up to multiplication by a nonzero constant required in part (b).
 
 :::
 

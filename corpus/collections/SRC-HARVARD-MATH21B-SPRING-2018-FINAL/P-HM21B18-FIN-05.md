@@ -25,7 +25,7 @@ best fits the data
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The four observations give the least-squares system
 \[
@@ -54,7 +54,7 @@ $1,2,-1,0$, respectively, which gives the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The normal equations are
 \[
@@ -70,7 +70,7 @@ The normal equations are
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 \[
 M^TM=
 \begin{pmatrix}
@@ -100,7 +100,7 @@ M^T
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The unique least-squares parameters are
 \[
@@ -110,7 +110,7 @@ The unique least-squares parameters are
 
 ::: pf-proof
 
-Substitution into the normal equations of step <1>2 gives
+Substitution into the normal equations of step [](#s1-2){.pf-ref} gives
 \[
 \begin{pmatrix}
 6&-2\\
@@ -130,7 +130,7 @@ $M(0,-2)^T=(2,2,2,2)^T$, so the residual is zero.
 
 ::: pf-qed
 
-Step <1>3 gives the required least-squares fit.
+Step [](#s1-3){.pf-ref} gives the required least-squares fit.
 
 :::
 

@@ -27,7 +27,7 @@ then $f$ is uniformly bounded throughout $[0,\infty)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The pointwise inequality is equivalent to
 \[
@@ -56,7 +56,7 @@ f(t)^2-10f(t)+10.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The quadratic polynomial
 \[
@@ -87,7 +87,7 @@ y
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -101,14 +101,14 @@ exactly when
 
 ::: pf-proof
 
-The polynomial $q$ is monic and has the two distinct real roots $\alpha<\beta$ from step <1>2.
+The polynomial $q$ is monic and has the two distinct real roots $\alpha<\beta$ from step [](#s1-2){.pf-ref}.
 Therefore it is negative strictly between its roots and nonnegative outside that interval.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence for every
 \[
@@ -126,19 +126,19 @@ f(t)\ge\beta.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 q(f(t))\ge0.
 \]
-Apply the sign description from step <1>3.
+Apply the sign description from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The second alternative in step <1>4 never occurs.
+The second alternative in step [](#s1-4){.pf-ref} never occurs.
 
 
 ::: pf-proof
@@ -177,14 +177,14 @@ But
 \[
 \alpha<5<\beta,
 \]
-contradicting step <1>4.
+contradicting step [](#s1-4){.pf-ref}.
 Therefore no such $t_0$ exists.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -208,12 +208,12 @@ so
 \[
 f(t)\ge0.
 \]
-By step <1>5, the alternative
+By step [](#s1-5){.pf-ref}, the alternative
 \[
 f(t)\ge\beta
 \]
 is impossible.
-Hence step <1>4 forces
+Hence step [](#s1-4){.pf-ref} forces
 \[
 f(t)\le\alpha=5-\sqrt{15}
 \]
@@ -223,14 +223,14 @@ for every $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus $f$ is uniformly bounded on $[0,\infty)$.
 
 
 ::: pf-proof
 
-Step <1>6 provides the global bound
+Step [](#s1-6){.pf-ref} provides the global bound
 \[
 \boxed{
 \sup_{t\ge0}f(t)\le5-\sqrt{15}<\infty.
@@ -243,7 +243,7 @@ Step <1>6 provides the global bound
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

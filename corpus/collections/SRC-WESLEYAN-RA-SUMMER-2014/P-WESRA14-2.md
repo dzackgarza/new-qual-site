@@ -34,7 +34,7 @@ Choose items (1), (2), and (3).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Monotone Convergence Theorem.**
 
@@ -79,7 +79,7 @@ formulation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A standard use of monotone convergence is to justify interchange of
 an infinite sum and an integral for nonnegative measurable functions.
@@ -117,7 +117,7 @@ This is Tonelli's theorem for a countable sum in its simplest form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 **Radon--Nikodym Theorem.**
 
@@ -184,7 +184,7 @@ There is an analogous version for finite signed or complex measures.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A standard use of Radon--Nikodym is to represent absolutely
 continuous measures by densities.
@@ -226,7 +226,7 @@ This is the measure-theoretic foundation of probability density functions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 **Hahn Decomposition Theorem.**
 
@@ -280,7 +280,7 @@ sets in the standard sense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A standard use of Hahn decomposition is the Jordan decomposition of
 a signed measure.
@@ -325,9 +325,9 @@ This is the Jordan decomposition of $\nu$.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 give one theorem and a use,
-steps <1>3--<1>4 give a second theorem and a use,
-and steps <1>5--<1>6 give a third theorem and a use.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give one theorem and a use,
+steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give a second theorem and a use,
+and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give a third theorem and a use.
 
 :::
 

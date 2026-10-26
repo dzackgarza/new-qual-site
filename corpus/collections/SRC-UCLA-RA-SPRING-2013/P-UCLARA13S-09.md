@@ -39,7 +39,7 @@ where the zeros $a_j$ are listed with multiplicity. By hypothesis,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z_0$ satisfies
 \[
@@ -61,7 +61,7 @@ The condition $P(z_0)=0$ means that $z_0=a_j$ for some zero $a_j$ of $P$. Every 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z$ with $P(z)\ne0$,
 \[
@@ -86,7 +86,7 @@ Division by the nonzero number $P(z)$ gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -123,7 +123,7 @@ the numerator is strictly positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $P(z)\ne0$ and
 \[
@@ -137,7 +137,7 @@ P'(z)\ne0.
 
 ::: pf-proof
 
-By steps <1>2 and <1>3,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 \operatorname{Re}\frac{P'(z)}{P(z)}
 =
@@ -152,7 +152,7 @@ Hence $P'(z)/P(z)$ cannot be zero, so $P'(z)\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every zero $z_0$ of $P'$ satisfies
 \[
@@ -164,7 +164,7 @@ Every zero $z_0$ of $P'$ satisfies
 
 ::: pf-proof
 
-If $P(z_0)=0$, apply step <1>1. If $P(z_0)\ne0$, step <1>4 rules out
+If $P(z_0)=0$, apply step [](#s1-1){.pf-ref}. If $P(z_0)\ne0$, step [](#s1-4){.pf-ref} rules out
 \[
 \operatorname{Re}z_0\ge\sigma.
 \]
@@ -176,7 +176,7 @@ Thus in all cases $\operatorname{Re}z_0<\sigma$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

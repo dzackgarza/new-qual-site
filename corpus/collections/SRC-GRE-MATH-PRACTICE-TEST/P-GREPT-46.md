@@ -27,7 +27,7 @@ $X$ is a finite set with the following property: The number of subsets of $X$ th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $n=|X|$, then
 $$
@@ -45,9 +45,9 @@ subsets is therefore exactly the displayed equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The equation in step <1>1 is equivalent to
+The equation in step [](#s1-1){.pf-ref} is equivalent to
 $$
 n(n-1)(n-5)=84.
 $$
@@ -69,7 +69,7 @@ Multiplying by $6$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The only possible cardinality is
 $$
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-The left side of step <1>2 is positive, so $n\ge6$. For $n=6$ it equals
+The left side of step [](#s1-2){.pf-ref} is positive, so $n\ge6$. For $n=6$ it equals
 $6\cdot5\cdot1=30$, while for $n=7$ it equals
 $7\cdot6\cdot2=84$. For every $n\ge8$, all three positive factors are at
 least their values at $n=8$, so the product is at least
@@ -89,7 +89,7 @@ $8\cdot7\cdot3=168>84$. Hence only $n=7$ works.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the number of four-element subsets is
 $$
@@ -100,7 +100,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By step <1>3, $X$ has seven elements, and
+By step [](#s1-3){.pf-ref}, $X$ has seven elements, and
 $$
 \binom74=\frac{7\cdot6\cdot5}{3\cdot2\cdot1}=35.
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested number of subsets.
+Step [](#s1-4){.pf-ref} gives the requested number of subsets.
 
 :::
 

@@ -28,7 +28,7 @@ differ from one equation to another.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The general solution of $f'(t)=1/(t+1)$ is
 \[
@@ -140,7 +140,7 @@ solution gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The general solution of
 $f''-f=e^{-3t}$ is
@@ -162,7 +162,7 @@ Hence $A=1/8$, proving the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Collecting the six answers,
 \[
@@ -180,7 +180,7 @@ Collecting the six answers,
 
 ::: pf-proof
 
-These are exactly the solutions established in steps <1>1 through <1>6.
+These are exactly the solutions established in steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -188,7 +188,7 @@ These are exactly the solutions established in steps <1>1 through <1>6.
 
 ::: pf-qed
 
-Step <1>7 records the general solution of every requested equation.
+Step [](#s1-7){.pf-ref} records the general solution of every requested equation.
 
 :::
 

@@ -49,7 +49,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 $$
@@ -114,7 +114,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -151,7 +151,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -165,7 +165,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, write simply
+By step [](#s1-1){.pf-ref}, write simply
 $$
 c_n
 $$
@@ -173,7 +173,7 @@ for the common value of $c_n(y)$. For
 $$
 y<0,
 $$
-steps <1>1--<1>2 give
+steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
 \begin{aligned}
 |c_n|
@@ -212,7 +212,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -230,7 +230,7 @@ For
 $$
 y>0,
 $$
-steps <1>1--<1>2 give
+steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
 \begin{aligned}
 |c_n|
@@ -262,7 +262,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each fixed real $y$, the ordinary Fourier coefficients of the continuous $1$-periodic function
 $$
@@ -288,7 +288,7 @@ c_n
 e^{2\pi ny}
 \widehat f_y(n).
 $$
-Steps <1>3--<1>4 give
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
 $$
 c_n=0
 $$
@@ -306,7 +306,7 @@ for every nonzero integer $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every fixed $y$, the function
 $$
@@ -317,15 +317,15 @@ is constant in $x$.
 
 ::: pf-proof
 
-By step <1>5, all nonconstant Fourier coefficients of this continuous $1$-periodic function vanish. Uniqueness of Fourier coefficients for continuous periodic functions therefore implies that the function equals its constant Fourier mode.
+By step [](#s1-5){.pf-ref}, all nonconstant Fourier coefficients of this continuous $1$-periodic function vanish. Uniqueness of Fourier coefficients for continuous periodic functions therefore implies that the function equals its constant Fourier mode.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The constant from step <1>6 is independent of $y$.
+The constant from step [](#s1-6){.pf-ref} is independent of $y$.
 
 
 ::: pf-proof
@@ -340,7 +340,7 @@ f(x+iy)
 =
 c_0(y).
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 c_0(y)
 $$
@@ -350,7 +350,7 @@ is independent of $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -360,7 +360,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 says that $f$ is constant along every horizontal line, and step <1>7 says that these constants are all the same.
+Step [](#s1-6){.pf-ref} says that $f$ is constant along every horizontal line, and step [](#s1-7){.pf-ref} says that these constants are all the same.
 
 :::
 
@@ -368,7 +368,7 @@ Step <1>6 says that $f$ is constant along every horizontal line, and step <1>7 s
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

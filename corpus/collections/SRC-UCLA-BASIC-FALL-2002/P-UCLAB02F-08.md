@@ -55,7 +55,7 @@ so $u_1\times u_2=u_3$. Thus the basis is positively oriented.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In the basis $(u_1,u_2,u_3)$, the matrix of $T$ is
 \[
@@ -76,7 +76,7 @@ The vector $u_3$ spans the rotation axis, so $T(u_3)=u_3$. The vectors $u_1,u_2$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -105,13 +105,13 @@ and
 
 ::: pf-proof
 
-The columns of $Q$ are the orthonormal vectors $u_1,u_2,u_3$. Hence $Q$ is orthogonal and $Q^{-1}=Q^t$. Conjugating the matrix of $T$ from step <1>2 by the change-of-basis matrix $Q$ gives the standard-basis matrix.
+The columns of $Q$ are the orthonormal vectors $u_1,u_2,u_3$. Hence $Q$ is orthogonal and $Q^{-1}=Q^t$. Conjugating the matrix of $T$ from step [](#s1-2){.pf-ref} by the change-of-basis matrix $Q$ gives the standard-basis matrix.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Over $\mathbb R$, the only eigenvalue of $T$ is
 \[
@@ -143,7 +143,7 @@ The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. Th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Over $\mathbb C$, the eigenvalues are
 \[
@@ -157,13 +157,13 @@ Over $\mathbb C$, the eigenvalues are
 
 ::: pf-proof
 
-These are the three roots of the characteristic polynomial computed in step <1>4.
+These are the three roots of the characteristic polynomial computed in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Over $\mathbb C$, the corresponding eigenspaces are
 \[
@@ -179,7 +179,7 @@ E_{\lambda_-}=\operatorname{span}_{\mathbb C}\{u_1+i u_2\}
 
 ::: pf-proof
 
-The vector $u_3$ is fixed by $T$. On the complexification of $\operatorname{span}(u_1,u_2)$, step <1>2 gives
+The vector $u_3$ is fixed by $T$. On the complexification of $\operatorname{span}(u_1,u_2)$, step [](#s1-2){.pf-ref} gives
 \[
 T(u_1-i u_2)
 =
@@ -191,7 +191,7 @@ T(u_1+i u_2)
 =
 \left(\frac12-\frac{\sqrt3}{2}i\right)(u_1+i u_2).
 \]
-The three eigenvalues in step <1>5 are distinct, so each eigenspace is one-dimensional and the displayed spans are the complete eigenspaces.
+The three eigenvalues in step [](#s1-5){.pf-ref} are distinct, so each eigenspace is one-dimensional and the displayed spans are the complete eigenspaces.
 
 :::
 
@@ -199,7 +199,7 @@ The three eigenvalues in step <1>5 are distinct, so each eigenspace is one-dimen
 
 ::: pf-qed
 
-Step <1>3 gives the requested standard-basis matrix and inverse, step <1>4 gives all real eigenvalues and eigenspaces, and steps <1>5--<1>6 give the complex eigenvalues and eigenspaces.
+Step [](#s1-3){.pf-ref} gives the requested standard-basis matrix and inverse, step [](#s1-4){.pf-ref} gives all real eigenvalues and eigenspaces, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the complex eigenvalues and eigenspaces.
 
 :::
 

@@ -59,7 +59,7 @@ Apply logarithm rules to the product and powers in the denominator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiate both sides:
 \[
@@ -92,7 +92,7 @@ together with the chain rule:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -112,13 +112,13 @@ f(x)
 
 ::: pf-proof
 
-Multiply the identity in step <1>2 by \(f(x)\).
+Multiply the identity in step [](#s1-2){.pf-ref} by \(f(x)\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Substituting the original formula for \(f\),
 \[
@@ -139,7 +139,7 @@ f'(x)
 
 ::: pf-proof
 
-Replace \(f(x)\) in step <1>3 by its explicit expression.
+Replace \(f(x)\) in step [](#s1-3){.pf-ref} by its explicit expression.
 
 :::
 
@@ -147,7 +147,7 @@ Replace \(f(x)\) in step <1>3 by its explicit expression.
 
 ::: pf-qed
 
-Step <1>4 is the requested derivative.
+Step [](#s1-4){.pf-ref} is the requested derivative.
 
 :::
 

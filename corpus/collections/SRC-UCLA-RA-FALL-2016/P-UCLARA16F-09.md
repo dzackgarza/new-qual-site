@@ -43,7 +43,7 @@ m_k
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -66,7 +66,7 @@ Integrating against the probability measure \(\mu\) gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed \(z\in\mathbb C\),
 \[
@@ -101,7 +101,7 @@ Apply the Weierstrass \(M\)-test.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -115,7 +115,7 @@ f(z)
 
 ::: pf-proof
 
-Integrate the uniformly convergent series from step <1>2 term by term:
+Integrate the uniformly convergent series from step [](#s1-2){.pf-ref} term by term:
 \[
 \begin{aligned}
 f(z)
@@ -136,12 +136,12 @@ f(z)
 
 ::: pf-step
 
-The series in step <1>3 has infinite radius of convergence.
+The series in step [](#s1-3){.pf-ref} has infinite radius of convergence.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \left|
 \frac{i^k m_k}{k!}z^k
@@ -155,7 +155,7 @@ and the exponential series converges for every \(z\in\mathbb C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -166,13 +166,13 @@ f\text{ is entire}.}
 
 ::: pf-proof
 
-Step <1>3 represents \(f\) by a power series with infinite radius of convergence.
+Step [](#s1-3){.pf-ref} represents \(f\) by a power series with infinite radius of convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exist constants \(C>0\) and \(R_0>0\) such that
 \[
@@ -192,7 +192,7 @@ This is the definition of finiteness of the stated limsup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There is a constant \(C_1>0\) such that for every \(R\ge1\),
 \[
@@ -205,13 +205,13 @@ C_1R^n}.
 
 ::: pf-proof
 
-For \(R\ge R_0\), use step <1>6. For \(1\le R\le R_0\), continuity of \(f\) on the compact disk \(|z|\le R_0\) gives a finite maximum; enlarge \(C_1\) to absorb this bounded range.
+For \(R\ge R_0\), use step [](#s1-6){.pf-ref}. For \(1\le R\le R_0\), continuity of \(f\) on the compact disk \(|z|\le R_0\) gives a finite maximum; enlarge \(C_1\) to absorb this bounded range.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every integer \(m>n\), Cauchy's estimate gives
 \[
@@ -230,7 +230,7 @@ Apply Cauchy's estimate to the entire function \(f\) on the circle \(|z|=R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -243,13 +243,13 @@ for every \(R\ge1\).
 
 ::: pf-proof
 
-Substitute step <1>7 into step <1>8.
+Substitute step [](#s1-7){.pf-ref} into step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Letting \(R\to\infty\),
 \[
@@ -265,7 +265,7 @@ Since \(m>n\),
 \[
 R^{n-m}\to0.
 \]
-The left-hand side of step <1>9 is independent of \(R\), so it must vanish.
+The left-hand side of step [](#s1-9){.pf-ref} is independent of \(R\), so it must vanish.
 
 :::
 
@@ -278,13 +278,13 @@ Hence \(f\) is a polynomial of degree at most \(n\).
 
 ::: pf-proof
 
-All Taylor coefficients of degree \(>n\) vanish by step <1>10, and \(f\) is entire.
+All Taylor coefficients of degree \(>n\) vanish by step [](#s1-10){.pf-ref}, and \(f\) is entire.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For every real \(x\),
 \[
@@ -315,20 +315,20 @@ Since \(|e^{ixt}|=1\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore \(f\) is constant.
 
 
 ::: pf-proof
 
-A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step <1>12 says \(f\) is bounded on \(\mathbb R\).
+A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step [](#s1-12){.pf-ref} says \(f\) is bounded on \(\mathbb R\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Since
 \[
@@ -351,13 +351,13 @@ f(0)
 =
 1.
 \]
-Combine with step <1>13.
+Combine with step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Differentiating the power series at \(0\),
 \[
@@ -370,7 +370,7 @@ i\int_{[0,1]}t\,d\mu(t)}.
 
 ::: pf-proof
 
-From step <1>3, the coefficient of \(z\) is
+From step [](#s1-3){.pf-ref}, the coefficient of \(z\) is
 \[
 im_1
 =
@@ -392,17 +392,17 @@ Since \(f\equiv1\),
 
 ::: pf-proof
 
-Step <1>14 gives
+Step [](#s1-14){.pf-ref} gives
 \[
 f'(0)=0.
 \]
-Use step <1>15 and divide by \(i\).
+Use step [](#s1-15){.pf-ref} and divide by \(i\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 For every \(\varepsilon>0\),
 \[
@@ -429,7 +429,7 @@ Thus the measure must vanish there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -447,7 +447,7 @@ Since
 \bigcup_{m=1}^{\infty}
 [1/m,1],
 \]
-and each set in the union has measure zero by step <1>17, countable subadditivity gives zero measure to the union.
+and each set in the union has measure zero by step [](#s1-17){.pf-ref}, countable subadditivity gives zero measure to the union.
 
 :::
 
@@ -464,13 +464,13 @@ Since \(\mu([0,1])=1\),
 
 ::: pf-proof
 
-The complement of \(\{0\}\) in \([0,1]\) is \((0,1]\), which has measure zero by step <1>18.
+The complement of \(\{0\}\) in \([0,1]\) is \((0,1]\), which has measure zero by step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Hence
 \[
@@ -489,7 +489,7 @@ A probability measure concentrated entirely at \(0\) is the Dirac measure at \(0
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>20 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-20){.pf-ref} proves part (b).
 
 :::
 

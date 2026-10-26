@@ -27,7 +27,7 @@ Show that $u-v\in\ker L$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -49,7 +49,7 @@ By definition, $D(u)=\|L(u)-b\|=\|y\|$ and $D(v)=\|L(v)-b\|=\|z\|$. Both equal t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The midpoint
 \[
@@ -75,7 +75,7 @@ L(w)-b
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $u$ is a minimizer,
 \[
@@ -85,13 +85,13 @@ m\leq D(w)=\left\|\frac{y+z}{2}\right\|.
 
 ::: pf-proof
 
-The minimum value of $D$ is $m$ by step <1>1, so $D(x)\geq m$ for every $x\in V$, in particular for $x=w$. Step <1>2 gives the displayed expression.
+The minimum value of $D$ is $m$ by step [](#s1-1){.pf-ref}, so $D(x)\geq m$ for every $x\in V$, in particular for $x=w$. Step [](#s1-2){.pf-ref} gives the displayed expression.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The triangle inequality gives the reverse bound
 \[
@@ -102,13 +102,13 @@ The triangle inequality gives the reverse bound
 
 ::: pf-proof
 
-Apply homogeneity and the triangle inequality, then use $\|y\|=\|z\|=m$ from step <1>1.
+Apply homogeneity and the triangle inequality, then use $\|y\|=\|z\|=m$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -118,13 +118,13 @@ Hence
 
 ::: pf-proof
 
-Combine the lower bound in step <1>3 with the upper bound in step <1>4.
+Combine the lower bound in step [](#s1-3){.pf-ref} with the upper bound in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The parallelogram identity implies
 \[
@@ -139,7 +139,7 @@ The parallelogram identity is
 \|y+z\|^2+\|y-z\|^2
 =2\|y\|^2+2\|z\|^2.
 \]
-By step <1>5, $\|y+z\|=2m$, while step <1>1 gives $\|y\|=\|z\|=m$. Therefore
+By step [](#s1-5){.pf-ref}, $\|y+z\|=2m$, while step [](#s1-1){.pf-ref} gives $\|y\|=\|z\|=m$. Therefore
 \[
 4m^2+\|y-z\|^2=4m^2,
 \]
@@ -149,7 +149,7 @@ so $\|y-z\|^2=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus
 \[
@@ -163,7 +163,7 @@ L(u-v)=0.
 
 ::: pf-proof
 
-Step <1>6 gives $y-z=0$. By the definitions in step <1>1,
+Step [](#s1-6){.pf-ref} gives $y-z=0$. By the definitions in step [](#s1-1){.pf-ref},
 \[
 y-z=(L(u)-b)-(L(v)-b)=L(u)-L(v)=L(u-v).
 \]
@@ -172,7 +172,7 @@ y-z=(L(u)-b)-(L(v)-b)=L(u)-L(v)=L(u-v).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -182,7 +182,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly the statement $L(u-v)=0$ from step <1>7.
+This is exactly the statement $L(u-v)=0$ from step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -190,7 +190,7 @@ This is exactly the statement $L(u-v)=0$ from step <1>7.
 
 ::: pf-qed
 
-Step <1>8 proves the claim.
+Step [](#s1-8){.pf-ref} proves the claim.
 
 :::
 

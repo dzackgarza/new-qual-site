@@ -37,7 +37,7 @@ is closed in $L^2(\mathbb R)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $f\in L^2(\mathbb R)$ and $h>0$,
 \[
@@ -97,7 +97,7 @@ The two expressions are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 \[
@@ -107,14 +107,14 @@ Hence
 
 ::: pf-proof
 
-The right-hand side in step <1>1 is a nonnegative squared norm divided by
+The right-hand side in step [](#s1-1){.pf-ref} is a nonnegative squared norm divided by
 $h^2>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $\widehat f$ denote the unitary Fourier transform of $f$. Then
 \[
@@ -135,7 +135,7 @@ Translation satisfies
 =
 e^{ih\xi}\widehat f(\xi).
 \]
-By Plancherel and step <1>1,
+By Plancherel and step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 Q(f,h)
@@ -159,7 +159,7 @@ Q(f,h)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $\xi\in\mathbb R$,
 \[
@@ -193,7 +193,7 @@ The bound follows from
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $f\in L^2(\mathbb R)$,
 \[
@@ -212,10 +212,10 @@ If
 \[
 \int_{\mathbb R}\xi^2|\widehat f(\xi)|^2\,d\xi<\infty,
 \]
-then steps <1>3 and <1>4 allow the dominated convergence theorem, yielding
+then steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} allow the dominated convergence theorem, yielding
 the equality.
 
-If the weighted integral is infinite, Fatou's lemma applied to step <1>3
+If the weighted integral is infinite, Fatou's lemma applied to step [](#s1-3){.pf-ref}
 gives
 \[
 \begin{aligned}
@@ -237,7 +237,7 @@ Thus $Q(f,h)\to\infty$ in this case.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently,
 \[
@@ -255,7 +255,7 @@ f\in L^2(\mathbb R):
 
 ::: pf-proof
 
-By step <1>5, the limit of $Q(f,h)$ exists in $[0,\infty]$. Therefore
+By step [](#s1-5){.pf-ref}, the limit of $Q(f,h)$ exists in $[0,\infty]$. Therefore
 \[
 \limsup_{h\to0}Q(f,h)
 \le1
@@ -266,7 +266,7 @@ is equivalent to the displayed weighted Fourier integral being at most $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose
 \[
@@ -290,7 +290,7 @@ $L^2(\mathbb R)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There is a subsequence
 \[
@@ -302,13 +302,13 @@ converging to $\widehat f$ almost everywhere.
 ::: pf-proof
 
 Every $L^2$-convergent sequence has a subsequence converging pointwise almost
-everywhere. Apply this to the convergence in step <1>7.
+everywhere. Apply this to the convergence in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -320,7 +320,7 @@ One has
 
 ::: pf-proof
 
-By step <1>8 and Fatou's lemma,
+By step [](#s1-8){.pf-ref} and Fatou's lemma,
 \[
 \begin{aligned}
 \int_{\mathbb R}
@@ -331,7 +331,7 @@ By step <1>8 and Fatou's lemma,
 \xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi.
 \end{aligned}
 \]
-Since every $f_{n_j}\in E$, step <1>6 gives
+Since every $f_{n_j}\in E$, step [](#s1-6){.pf-ref} gives
 \[
 \int_{\mathbb R}
 \xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi
@@ -343,7 +343,7 @@ Hence the liminf is at most $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -353,21 +353,21 @@ Therefore
 
 ::: pf-proof
 
-Apply the characterization in step <1>6 to the estimate in step <1>9.
+Apply the characterization in step [](#s1-6){.pf-ref} to the estimate in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Thus $E$ is closed in $L^2(\mathbb R)$.
 
 
 ::: pf-proof
 
-Every $L^2$ limit of a sequence in $E$ belongs to $E$ by steps <1>7 through
-<1>10.
+Every $L^2$ limit of a sequence in $E$ belongs to $E$ by steps [](#s1-7){.pf-ref} through
+[](#s1-10){.pf-ref}.
 
 :::
 
@@ -375,7 +375,7 @@ Every $L^2$ limit of a sequence in $E$ belongs to $E$ by steps <1>7 through
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>11 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-11){.pf-ref} proves part (b).
 
 :::
 

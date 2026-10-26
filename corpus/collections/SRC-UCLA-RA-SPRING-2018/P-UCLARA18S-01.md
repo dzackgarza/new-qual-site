@@ -31,7 +31,7 @@ F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in\mathbb R$ and every $h\ne0$,
 \[
@@ -91,7 +91,7 @@ identical final bound, namely
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The hypothesis implies
 \[
@@ -113,7 +113,7 @@ $\limsup$ at $0$ is $0$ has limit $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $F$ is differentiable at every $x$ and
 \[
@@ -123,14 +123,14 @@ The function $F$ is differentiable at every $x$ and
 
 ::: pf-proof
 
-Fix $x\in\mathbb R$. By step <1>1,
+Fix $x\in\mathbb R$. By step [](#s1-1){.pf-ref},
 \[
 \left|
 \frac{F(x+h)-F(x)}{h}
 \right|
 \]
 is bounded above by a quantity independent of $x$ that tends to $0$ by
-step <1>2. Therefore
+step [](#s1-2){.pf-ref}. Therefore
 \[
 \lim_{h\to0}
 \frac{F(x+h)-F(x)}{h}
@@ -141,14 +141,14 @@ step <1>2. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $F$ is constant on $\mathbb R$.
 
 
 ::: pf-proof
 
-By step <1>3, $F$ is differentiable everywhere with derivative identically
+By step [](#s1-3){.pf-ref}, $F$ is differentiable everywhere with derivative identically
 zero. The ordinary mean value theorem therefore gives
 \[
 F(y)-F(x)=0
@@ -159,7 +159,7 @@ for every $x<y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In fact,
 \[
@@ -175,13 +175,13 @@ Since $|f|\in L^1(\mathbb R)$,
 \longrightarrow0
 \qquad(x\to-\infty).
 \]
-Thus the constant value from step <1>4 must be $0$.
+Thus the constant value from step [](#s1-4){.pf-ref} must be $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -201,13 +201,13 @@ By monotone convergence,
 \lim_{x\to\infty}F(x)
 =0
 \]
-by step <1>5.
+by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -218,7 +218,7 @@ Hence
 ::: pf-proof
 
 A nonnegative integrable function with integral zero vanishes almost
-everywhere. Apply this to $|f|$ using step <1>6.
+everywhere. Apply this to $|f|$ using step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -226,7 +226,7 @@ everywhere. Apply this to $|f|$ using step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

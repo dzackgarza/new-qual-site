@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The numbers $L_k$, $k\in\mathbb Z$, are exactly the complex logarithms of $i$.
 
@@ -62,7 +62,7 @@ for some $k\in\mathbb Z$. Hence $L=L_k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The complete set of values of $i^i$ is
 $$
@@ -82,7 +82,7 @@ By definition, the multivalued power $i^i$ consists of the values
 $$
 e^{iL}
 $$
-as $L$ ranges over all logarithms of $i$. By step <1>1 these logarithms are precisely the $L_k$, so
+as $L$ ranges over all logarithms of $i$. By step [](#s1-1){.pf-ref} these logarithms are precisely the $L_k$, so
 $$
 e^{iL_k}
 =
@@ -98,7 +98,7 @@ Each value is a positive real number, giving the displayed form $a+bi$ with $b=0
 
 ::: pf-qed
 
-Step <1>2 lists every value and no others.
+Step [](#s1-2){.pf-ref} lists every value and no others.
 
 :::
 

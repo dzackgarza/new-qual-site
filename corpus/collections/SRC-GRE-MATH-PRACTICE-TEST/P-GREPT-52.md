@@ -33,7 +33,7 @@ III. If $A$ and $C$ are Hausdorff, then $B$ is Hausdorff.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I is false.
 
@@ -59,7 +59,7 @@ is a separation into two nonempty relatively open subsets of $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II is false.
 
@@ -82,7 +82,7 @@ closed in $\RR$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III is true.
 
@@ -99,7 +99,7 @@ Hausdorff.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore exactly statement III is true, so the answer is
 $$
@@ -109,7 +109,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>3 show respectively that I is false, II is false, and III is
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show respectively that I is false, II is false, and III is
 true.
 
 :::
@@ -118,7 +118,7 @@ true.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

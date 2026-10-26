@@ -41,7 +41,7 @@ Associativity gives $B(AB)B^{-1}=(BA)(BB^{-1})=BA$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence, for invertible $B$,
 \[
@@ -61,7 +61,7 @@ and determinants are invariant under similarity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For fixed $A$ and $t$, the functions
 \[
@@ -80,7 +80,7 @@ Matrix multiplication and determinant are polynomial operations in matrix entrie
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Invertible matrices are dense in $M_n(\mathbb C)$.
 
@@ -93,7 +93,7 @@ For arbitrary $B$, the matrix $B+sI$ is singular only when $-s$ is an eigenvalue
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -104,7 +104,7 @@ for every $B$ and every $t$.
 
 ::: pf-proof
 
-Choose invertible $B_j\to B$ using step <1>4. Step <1>2 gives $F_t(B_j)=G_t(B_j)$, and continuity from step <1>3 gives
+Choose invertible $B_j\to B$ using step [](#s1-4){.pf-ref}. Step [](#s1-2){.pf-ref} gives $F_t(B_j)=G_t(B_j)$, and continuity from step [](#s1-3){.pf-ref} gives
 \[
 F_t(B)=\lim_jF_t(B_j)=\lim_jG_t(B_j)=G_t(B).
 \]
@@ -113,7 +113,7 @@ F_t(B)=\lim_jF_t(B_j)=\lim_jG_t(B_j)=G_t(B).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently
 \[
@@ -123,7 +123,7 @@ Consequently
 
 ::: pf-proof
 
-Step <1>5 states that $\det(tI-AB)=\det(tI-BA)$ for every $t$, which is equality of the two characteristic polynomials.
+Step [](#s1-5){.pf-ref} states that $\det(tI-AB)=\det(tI-BA)$ for every $t$, which is equality of the two characteristic polynomials.
 
 :::
 
@@ -131,7 +131,7 @@ Step <1>5 states that $\det(tI-AB)=\det(tI-BA)$ for every $t$, which is equality
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

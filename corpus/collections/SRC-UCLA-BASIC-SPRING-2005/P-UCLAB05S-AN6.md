@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The family $\mathcal F$ is equicontinuous.
 
@@ -55,7 +55,7 @@ simultaneously for every $f\in\mathcal F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The family $\mathcal F$ is uniformly bounded; in fact, for every $f\in\mathcal F$ and every $x\in[0,1]$,
 $$
@@ -82,20 +82,20 @@ Hence $\|f\|_\infty\le3/2$ for every $f\in\mathcal F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The closure of $\mathcal F$ in $C([0,1])$ is compact.
 
 
 ::: pf-proof
 
-By steps <1>1 and <1>2, the family is equicontinuous and uniformly bounded on the compact interval $[0,1]$. The Arzelà--Ascoli theorem therefore implies that $\mathcal F$ is relatively compact in the uniform topology; equivalently, its closure is compact.
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, the family is equicontinuous and uniformly bounded on the compact interval $[0,1]$. The Arzelà--Ascoli theorem therefore implies that $\mathcal F$ is relatively compact in the uniform topology; equivalently, its closure is compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The family $\mathcal F$ is closed in $C([0,1])$.
 
@@ -120,14 +120,14 @@ Thus $\int_0^1f=1$, so $f\in\mathcal F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set $\mathcal F$ is compact in $C([0,1])$.
 
 
 ::: pf-proof
 
-By step <1>3, the closure of $\mathcal F$ is compact, and by step <1>4 the family equals its closure. Hence $\mathcal F$ itself is compact.
+By step [](#s1-3){.pf-ref}, the closure of $\mathcal F$ is compact, and by step [](#s1-4){.pf-ref} the family equals its closure. Hence $\mathcal F$ itself is compact.
 
 :::
 
@@ -135,7 +135,7 @@ By step <1>3, the closure of $\mathcal F$ is compact, and by step <1>4 the famil
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

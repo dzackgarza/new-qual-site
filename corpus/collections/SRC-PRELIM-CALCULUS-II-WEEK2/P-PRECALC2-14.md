@@ -27,7 +27,7 @@ a_n=\frac{n!}{2^{n^2}}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ratio of successive terms is
 \[
@@ -58,7 +58,7 @@ The ratio of successive terms is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -88,7 +88,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -101,7 +101,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the ratio-test limit is
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the ratio-test limit is
 \[
 0<1.
 \]
@@ -111,7 +111,7 @@ Hence the series converges absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The \(n\)th root is
 \[
@@ -162,7 +162,7 @@ x^a=e^{a\log x}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The exponent satisfies
 \[
@@ -193,7 +193,7 @@ Hence the same holds along integers.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -204,7 +204,7 @@ n^{1/\sqrt n}\to1}.
 
 ::: pf-proof
 
-Apply the exponential function to step <1>6 and use continuity:
+Apply the exponential function to step [](#s1-6){.pf-ref} and use continuity:
 \[
 \exp\left(\frac{\log n}{\sqrt n}\right)
 \to
@@ -217,7 +217,7 @@ e^0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -230,13 +230,13 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>7.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -249,7 +249,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>8, the root-test limit is
+By step [](#s1-8){.pf-ref}, the root-test limit is
 \[
 \frac12<1.
 \]
@@ -261,7 +261,7 @@ Hence the series converges absolutely.
 
 ::: pf-qed
 
-Steps <1>3 and <1>9 show that both requested series converge.
+Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref} show that both requested series converge.
 
 :::
 

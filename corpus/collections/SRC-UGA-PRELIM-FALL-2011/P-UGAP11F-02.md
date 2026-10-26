@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An eigenvector for the eigenvalue $2$ is
 $$
@@ -133,7 +133,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -155,7 +155,7 @@ Then $A$ is invertible.
 
 ::: pf-proof
 
-The columns of $A$ are the two eigenvectors from step <1>2. Moreover,
+The columns of $A$ are the two eigenvectors from step [](#s1-2){.pf-ref}. Moreover,
 $$
 \det A
 =
@@ -168,7 +168,7 @@ Thus $A$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -193,7 +193,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>3--<1>4 provide the requested matrices and verify the similarity relation.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} provide the requested matrices and verify the similarity relation.
 
 :::
 

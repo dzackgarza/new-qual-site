@@ -51,7 +51,7 @@ Write $A=B[X]$, and use the conclusions of Problem 3 proved in [[P-TATE85-PI-03]
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every prime ideal $P\subseteq A$ has one of the four stated forms.
 
@@ -86,7 +86,7 @@ These are types III and IV.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The four types are distinct.
 
@@ -106,7 +106,7 @@ Hence no two of the four types coincide.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every type-IV ideal
 $$
@@ -130,7 +130,7 @@ Hence $Q$ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No type-IV ideal is principal.
 
@@ -153,7 +153,7 @@ But then $\bar g=0$ in $(B/\pi B)[X]$, contradicting the irreducibility required
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A type-IV ideal
 $$
@@ -177,7 +177,7 @@ Conversely, if $\pi^*B=\pi B$, then $\pi A= \pi^*A\subseteq Q$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let $P=fA$ be of type II, and let
 $$
@@ -203,7 +203,7 @@ This is equivalent to $\bar g$ dividing $\bar f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $B$ has infinitely many maximal ideals, then no type-II ideal is maximal.
 
@@ -217,18 +217,18 @@ Since $B$ has infinitely many maximal ideals, choose a prime element $\pi$ whose
 Then $\bar f$ is a nonconstant polynomial in $(B/\pi B)[X]$.
 It has an irreducible factor $\bar g$.
 Lift $\bar g$ to $g\in B[X]$.
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 fA\subseteq \pi A+gA.
 $$
-The ideal on the right is type IV and hence maximal by step <1>3. Its contraction to $B$ is $\pi B$, while $fA\cap B=(0)$, so the containment is strict.
+The ideal on the right is type IV and hence maximal by step [](#s1-3){.pf-ref}. Its contraction to $B$ is $\pi B$, while $fA\cap B=(0)$, so the containment is strict.
 Therefore $fA$ is not maximal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Suppose instead that the maximal ideals of $B$ are exactly
 $$
@@ -249,7 +249,7 @@ $$
 \bar f=1
 $$
 in $(B/\pi_iB)[X]$.
-Hence $fA$ is contained in no type-III ideal $\pi_iA$ and, by step <1>6, in no type-IV ideal lying over $\pi_iB$.
+Hence $fA$ is contained in no type-III ideal $\pi_iA$ and, by step [](#s1-6){.pf-ref}, in no type-IV ideal lying over $\pi_iB$.
 
 It is also contained in no strictly larger type-II prime: if
 $$
@@ -271,8 +271,8 @@ Hence $fA$ is maximal.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the classification.
-Steps <1>3--<1>6 establish the assertions about type IV and containment, while steps <1>7 and <1>8 prove the final maximality statements.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the classification.
+Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} establish the assertions about type IV and containment, while steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} prove the final maximality statements.
 
 :::
 

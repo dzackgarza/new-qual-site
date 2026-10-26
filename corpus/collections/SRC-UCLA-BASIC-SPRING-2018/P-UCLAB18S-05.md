@@ -27,7 +27,7 @@ Prove or disprove each assertion:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assertion 1 is true.
 
@@ -65,7 +65,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assertion 2 is false.
 
@@ -92,7 +92,7 @@ The following steps verify that $A$ and $B$ are positive definite while $AB+BA$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix $A$ is positive definite.
 
@@ -120,7 +120,7 @@ x^TAx
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The matrix $B$ is positive definite.
 
@@ -148,7 +148,7 @@ By Sylvester's criterion, $B$ is positive definite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -189,7 +189,7 @@ Adding yields the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The nonzero vector
 \[
@@ -207,7 +207,7 @@ satisfies
 
 ::: pf-proof
 
-Using step <1>5,
+Using step [](#s1-5){.pf-ref},
 \[
 \begin{pmatrix}
 8&4\\
@@ -233,7 +233,7 @@ Using step <1>5,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore $AB+BA$ is not positive definite.
 
@@ -245,7 +245,7 @@ Positive definiteness would require
 v^T(AB+BA)v>0
 \]
 for every nonzero $v$.
-But step <1>6 gives
+But step [](#s1-6){.pf-ref} gives
 \[
 v^T(AB+BA)v=0
 \]
@@ -261,7 +261,7 @@ Thus
 
 ::: pf-qed
 
-Step <1>1 proves assertion 1, and steps <1>2--<1>7 disprove assertion 2.
+Step [](#s1-1){.pf-ref} proves assertion 1, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} disprove assertion 2.
 
 :::
 

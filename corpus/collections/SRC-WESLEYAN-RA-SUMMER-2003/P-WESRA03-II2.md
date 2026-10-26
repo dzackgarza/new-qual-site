@@ -38,7 +38,7 @@ g_n(x)=|f(x)|\,\mathbf 1_{E_n}(x).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(x\in E_n\),
 \[
@@ -54,7 +54,7 @@ This is the definition of \(E_n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -68,7 +68,7 @@ for every \(x\in\mathbb R\).
 
 ::: pf-proof
 
-If \(x\in E_n\), this is step <1>1. If \(x\notin E_n\), both sides are zero
+If \(x\in E_n\), this is step [](#s1-1){.pf-ref}. If \(x\notin E_n\), both sides are zero
 except possibly the factor \(|f(x)|\), which is multiplied by
 \(\mathbf 1_{E_n}(x)=0\).
 
@@ -78,7 +78,7 @@ except possibly the factor \(|f(x)|\), which is multiplied by
 
 ::: pf-step
 
-Integrating step <1>2,
+Integrating step [](#s1-2){.pf-ref},
 \[
 \boxed{
 n\,m(E_n)
@@ -131,7 +131,7 @@ contradicting integrability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For almost every \(x\),
 \[
@@ -156,7 +156,7 @@ Thus \(\mathbf 1_{E_n}(x)=0\) eventually.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -171,13 +171,13 @@ for almost every \(x\).
 
 ::: pf-proof
 
-Combine the definition of \(g_n\) with step <1>5.
+Combine the definition of \(g_n\) with step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every \(n\),
 \[
@@ -198,7 +198,7 @@ Multiply by \(|f(x)|\ge0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 By the dominated convergence theorem,
 \[
@@ -210,7 +210,7 @@ By the dominated convergence theorem,
 
 ::: pf-proof
 
-By step <1>6, \(g_n\to0\) almost everywhere. By step <1>7, the functions are
+By step [](#s1-6){.pf-ref}, \(g_n\to0\) almost everywhere. By step [](#s1-7){.pf-ref}, the functions are
 dominated by the integrable function \(|f|\). Therefore
 \[
 \int g_n\,dm
@@ -224,7 +224,7 @@ dominated by the integrable function \(|f|\). Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Equivalently,
 \[
@@ -244,13 +244,13 @@ By definition,
 =
 \int_{E_n}|f|\,dm.
 \]
-Apply step <1>8.
+Apply step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
@@ -267,7 +267,7 @@ n\,m(E_n)\longrightarrow0}.
 
 ::: pf-proof
 
-The upper bound tends to \(0\) by step <1>9. Apply the squeeze theorem.
+The upper bound tends to \(0\) by step [](#s1-9){.pf-ref}. Apply the squeeze theorem.
 
 :::
 
@@ -275,7 +275,7 @@ The upper bound tends to \(0\) by step <1>9. Apply the squeeze theorem.
 
 ::: pf-qed
 
-Step <1>10 is the required limit.
+Step [](#s1-10){.pf-ref} is the required limit.
 
 :::
 

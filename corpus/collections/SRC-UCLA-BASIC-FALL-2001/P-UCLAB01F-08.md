@@ -34,7 +34,7 @@ The ordered basis $(u_1,u_2,u_3)$ is positively oriented, so the given normal ve
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors $u_1,u_2,u_3$ form a positively oriented orthonormal basis of $\mathbb R^3$.
 
@@ -55,7 +55,7 @@ which is a positive multiple of $(1,1,1)$. Hence $(u_1,u_2,u_3)$ is positively o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In the basis $(u_1,u_2,u_3)$, the matrix of $T$ is
 \[
@@ -76,7 +76,7 @@ The vectors $u_1,u_2$ form an oriented orthonormal basis of the plane perpendicu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -105,7 +105,7 @@ and the standard-basis matrix of $T$ is
 
 ::: pf-proof
 
-The columns of $Q$ are $u_1,u_2,u_3$. By step <1>1, $Q$ is orthogonal, so $Q^{-1}=Q^t$. Conjugating the matrix from step <1>2 by the change-of-basis matrix gives
+The columns of $Q$ are $u_1,u_2,u_3$. By step [](#s1-1){.pf-ref}, $Q$ is orthogonal, so $Q^{-1}=Q^t$. Conjugating the matrix from step [](#s1-2){.pf-ref} by the change-of-basis matrix gives
 \[
 [T]=QRQ^{-1}=QRQ^t.
 \]
@@ -114,7 +114,7 @@ The columns of $Q$ are $u_1,u_2,u_3$. By step <1>1, $Q$ is orthogonal, so $Q^{-1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The standard-basis matrix of the reflection $S$ is
 \[
@@ -156,7 +156,7 @@ which is the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The matrix of $S\circ T$ in the standard basis is
 \[
@@ -177,7 +177,7 @@ Q
 Q^t
 },
 \]
-where $Q$ and $Q^t=Q^{-1}$ are the explicit matrices in step <1>3.
+where $Q$ and $Q^t=Q^{-1}$ are the explicit matrices in step [](#s1-3){.pf-ref}.
 
 
 ::: pf-proof
@@ -186,7 +186,7 @@ Matrix multiplication represents composition in the order
 \[
 [S\circ T]=[S][T].
 \]
-Substitute step <1>3 for $[T]$ and step <1>4 for $[S]$.
+Substitute step [](#s1-3){.pf-ref} for $[T]$ and step [](#s1-4){.pf-ref} for $[S]$.
 
 :::
 
@@ -194,7 +194,7 @@ Substitute step <1>3 for $[T]$ and step <1>4 for $[S]$.
 
 ::: pf-qed
 
-Step <1>5 gives the requested standard-basis matrix and step <1>3 explicitly determines the inverse arising from the change of basis.
+Step [](#s1-5){.pf-ref} gives the requested standard-basis matrix and step [](#s1-3){.pf-ref} explicitly determines the inverse arising from the change of basis.
 
 :::
 

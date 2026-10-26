@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For any radial function $F(r)$,
 $$
@@ -81,7 +81,7 @@ gives the stated radial formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For the present function,
 $$
@@ -111,7 +111,7 @@ by $r$ and use $\mu=2/a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -129,14 +129,14 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>2 into the radial transform formula of step <1>1 and split
+Substitute step [](#s1-2){.pf-ref} into the radial transform formula of step [](#s1-1){.pf-ref} and split
 the integral linearly.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The first integral equals
 $$
@@ -166,7 +166,7 @@ The integral converges because $\mu>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The second integral equals
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the identity in step <1>4 with respect to $\mu$:
+Differentiate the identity in step [](#s1-4){.pf-ref} with respect to $\mu$:
 $$
 \frac{\partial}{\partial\mu}
 \int_0^\infty
@@ -191,7 +191,7 @@ e^{-\mu r}\sin(kr)
 r e^{-\mu r}\sin(kr)
 \,dr.
 $$
-On the right-hand side of step <1>4,
+On the right-hand side of step [](#s1-4){.pf-ref},
 $$
 \frac{\partial}{\partial\mu}
 \frac{k}{\mu^2+k^2}
@@ -204,9 +204,9 @@ Negating gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Substituting steps <1>4--<1>5 into step <1>3 gives
+Substituting steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} into step [](#s1-3){.pf-ref} gives
 $$
 \widetilde f(\vec k)
 =
@@ -221,13 +221,13 @@ $$
 
 ::: pf-proof
 
-Both integrals contain a factor $k$, which cancels the $1/k$ in step <1>3.
+Both integrals contain a factor $k$, which cancels the $1/k$ in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 $$
@@ -255,7 +255,7 @@ Substitute $\mu=2/a$ directly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -271,7 +271,7 @@ $$
 
 ::: pf-proof
 
-Use step <1>7 in step <1>6 and combine the two fractions:
+Use step [](#s1-7){.pf-ref} in step [](#s1-6){.pf-ref} and combine the two fractions:
 $$
 \frac1D+\frac{4/a^2}{D^2}
 =
@@ -285,14 +285,14 @@ Thus the numerator becomes $k^2+8/a^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The same formula holds at $k=0$ by continuity.
 
 
 ::: pf-proof
 
-The right-hand side of step <1>8 is continuous at $k=0$. Direct substitution
+The right-hand side of step [](#s1-8){.pf-ref} is continuous at $k=0$. Direct substitution
 there gives
 $$
 \widetilde f(0)
@@ -307,7 +307,7 @@ which also equals the normalized spatial integral of $f$.
 
 ::: pf-qed
 
-Steps <1>8--<1>9 give the Fourier image for every $\vec k$.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the Fourier image for every $\vec k$.
 
 :::
 

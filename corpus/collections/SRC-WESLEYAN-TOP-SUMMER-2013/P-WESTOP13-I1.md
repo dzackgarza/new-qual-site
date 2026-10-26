@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The space $U^\omega$ is not connected.
 
@@ -55,20 +55,20 @@ is a nonempty proper clopen subset of $U^\omega$, being the inverse image of $[-
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The space $U^\omega$ is not path-connected.
 
 
 ::: pf-proof
 
-Every path-connected space is connected. Step <1>1 shows that $U^\omega$ is not connected, so it cannot be path-connected.
+Every path-connected space is connected. Step [](#s1-1){.pf-ref} shows that $U^\omega$ is not connected, so it cannot be path-connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space $U^\omega$ is not compact.
 
@@ -91,7 +91,7 @@ has no convergent subsequence in $U$: its only possible limit in $\RR$ is $0$, a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -146,20 +146,20 @@ is contained in $B_d(x,\varepsilon)$. Thus the metric and product topologies coi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $U^\omega$ is Hausdorff, first countable, metrizable, completely regular, and normal.
 
 
 ::: pf-proof
 
-Metrizability follows from step <1>4. Every metric space is Hausdorff and first countable; metric balls of radii $1/m$ give a countable neighborhood basis at each point. Every metric space is also completely regular and normal by the standard metric-space separation theorems.
+Metrizability follows from step [](#s1-4){.pf-ref}. Every metric space is Hausdorff and first countable; metric balls of radii $1/m$ give a countable neighborhood basis at each point. Every metric space is also completely regular and normal by the standard metric-space separation theorems.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the answers are
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-This is the combination of steps <1>1--<1>5.
+This is the combination of steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -188,7 +188,7 @@ This is the combination of steps <1>1--<1>5.
 
 ::: pf-qed
 
-Step <1>6 gives all eight requested determinations.
+Step [](#s1-6){.pf-ref} gives all eight requested determinations.
 
 :::
 

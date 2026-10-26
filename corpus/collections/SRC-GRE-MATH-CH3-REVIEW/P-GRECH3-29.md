@@ -31,7 +31,7 @@ If $a$ is a positive number, what's the value of the following double integral?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The region of integration is the left half of the disk
 $$
@@ -59,7 +59,7 @@ Because the $x$-coordinate runs from this negative boundary value to $0$, while 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In polar coordinates the region is
 $$
@@ -71,7 +71,7 @@ $$
 
 ::: pf-proof
 
-Using $x=r\cos\theta$ and $y=r\sin\theta$, the boundary equation from step <1>1 becomes
+Using $x=r\cos\theta$ and $y=r\sin\theta$, the boundary equation from step [](#s1-1){.pf-ref} becomes
 $$
 r^2-2ar\sin\theta=0,
 $$
@@ -85,7 +85,7 @@ The left half-plane condition is $x\le0$, while the disk lies in $y\ge0$; hence 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The value of the double integral is
 $$
@@ -102,7 +102,7 @@ $$
 \qquad\text{and}\qquad
 dA=r\,dr\,d\theta.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 I
@@ -128,7 +128,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested integral value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested integral value and corresponding choice.
 
 :::
 

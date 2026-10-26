@@ -57,7 +57,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The scaling family satisfies
 $$
@@ -75,7 +75,7 @@ This is the definition of the one-parameter family in the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $\phi_0$ is an extremum of $E$, one has
 $$
@@ -89,26 +89,26 @@ $$
 
 ::: pf-proof
 
-An extremum has zero derivative along every differentiable admissible curve through it. Apply this to the curve $\lambda\mapsto\phi_\lambda$ from step <1>1.
+An extremum has zero derivative along every differentiable admissible curve through it. Apply this to the curve $\lambda\mapsto\phi_\lambda$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>2.
+This is step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the change of variables
 $$
@@ -147,7 +147,7 @@ Apply the chain rule to $\phi_0^a(\lambda x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the gradient contribution to $E(\lambda)$ is
 $$
@@ -157,13 +157,13 @@ $$
 
 ::: pf-proof
 
-The two derivatives in the quadratic gradient term contribute $\lambda^2$, while step <1>4 contributes $\lambda^{-d}$. After changing variables, the remaining integral is exactly $\Gamma$.
+The two derivatives in the quadratic gradient term contribute $\lambda^2$, while step [](#s1-4){.pf-ref} contributes $\lambda^{-d}$. After changing variables, the remaining integral is exactly $\Gamma$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The potential contribution to $E(\lambda)$ is
 $$
@@ -173,13 +173,13 @@ $$
 
 ::: pf-proof
 
-The potential contains no derivatives, so only the measure factor $\lambda^{-d}$ from step <1>4 appears.
+The potential contains no derivatives, so only the measure factor $\lambda^{-d}$ from step [](#s1-4){.pf-ref} appears.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -195,13 +195,13 @@ $$
 
 ::: pf-proof
 
-Add the contributions from steps <1>6--<1>7.
+Add the contributions from steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Differentiating and setting $\lambda=1$ gives
 $$
@@ -213,15 +213,15 @@ $$
 
 ::: pf-proof
 
-Differentiate the two powers of $\lambda$ in step <1>8 and evaluate at $1$.
+Differentiate the two powers of $\lambda$ in step [](#s1-8){.pf-ref} and evaluate at $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Combining steps <1>2 and <1>9 gives
+Combining steps [](#s1-2){.pf-ref} and [](#s1-9){.pf-ref} gives
 $$
 \boxed{
 (2-d)\Gamma-d\Pi=0.
@@ -231,26 +231,26 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives $E'(1)=0$, while step <1>9 computes that derivative explicitly.
+Step [](#s1-2){.pf-ref} gives $E'(1)=0$, while step [](#s1-9){.pf-ref} computes that derivative explicitly.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>10.
+This is step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 $$
@@ -268,7 +268,7 @@ The positive-definiteness hypothesis makes the gradient integrand defining $\Gam
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 If $d>2$, no nonzero extremum can exist.
 
@@ -279,7 +279,7 @@ For $d>2$, both coefficients in
 $$
 (2-d)\Gamma-d\Pi=0
 $$
-are strictly negative. By step <1>12, the identity can hold only if
+are strictly negative. By step [](#s1-12){.pf-ref}, the identity can hold only if
 $$
 \Gamma=\Pi=0.
 $$
@@ -289,14 +289,14 @@ The hypotheses on the kinetic and potential terms then force the trivial configu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 If $d=2$, no nonzero extremum can exist.
 
 
 ::: pf-proof
 
-Step <1>10 becomes
+Step [](#s1-10){.pf-ref} becomes
 $$
 -2\Pi=0,
 $$
@@ -306,7 +306,7 @@ so $\Pi=0$. Since $V\geq0$ and $V(\phi)=0$ only for $\phi=0$, continuity forces 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 If $d=1$, the Derrick condition is
 $$
@@ -316,13 +316,13 @@ $$
 
 ::: pf-proof
 
-Set $d=1$ in step <1>10.
+Set $d=1$ in step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore the scaling argument does not exclude nonzero extrema in one spatial dimension.
 
@@ -335,7 +335,7 @@ The equality $\Gamma=\Pi$ is compatible with positive values of both terms, so n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The dimension-by-dimension conclusion is
 $$
@@ -351,20 +351,20 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>13--<1>16.
+Combine steps [](#s1-13){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-This is step <1>17.
+This is step [](#s1-17){.pf-ref}.
 
 :::
 
@@ -372,7 +372,7 @@ This is step <1>17.
 
 ::: pf-qed
 
-Steps <1>3, <1>11, and <1>18 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

@@ -21,7 +21,7 @@ Find $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin x } { x } }$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $0<x<\pi/2$,
 $$
@@ -42,7 +42,7 @@ Multiplying by $2$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence, for $0<x<\pi/2$,
 $$
@@ -52,7 +52,7 @@ $$
 
 ::: pf-proof
 
-The first inequality in step <1>1 gives $\sin x/x<1$. The second gives
+The first inequality in step [](#s1-1){.pf-ref} gives $\sin x/x<1$. The second gives
 $$
 x<\frac{\sin x}{\cos x},
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -75,13 +75,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 and $\cos x\to1$ give the result by the squeeze theorem.
+Step [](#s1-2){.pf-ref} and $\cos x\to1$ give the result by the squeeze theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function
 $$
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, the left-hand limit equals the right-hand limit from step <1>3.
+By step [](#s1-4){.pf-ref}, the left-hand limit equals the right-hand limit from step [](#s1-3){.pf-ref}.
 Thus the two-sided limit exists and equals $1$.
 
 :::
@@ -126,7 +126,7 @@ Thus the two-sided limit exists and equals $1$.
 
 ::: pf-qed
 
-Step <1>5 is the required limit.
+Step [](#s1-5){.pf-ref} is the required limit.
 
 :::
 

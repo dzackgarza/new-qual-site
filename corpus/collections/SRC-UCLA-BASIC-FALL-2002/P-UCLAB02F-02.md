@@ -23,7 +23,7 @@ Let $(a_n)$ be a Cauchy sequence of real numbers.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence $(a_n)$ is bounded.
 
@@ -58,13 +58,13 @@ s_n=\sup A_n.
 
 ::: pf-proof
 
-Each tail $A_n$ is nonempty, and step <1>1 shows that it is bounded above. The least-upper-bound property therefore gives $s_n$.
+Each tail $A_n$ is nonempty, and step [](#s1-1){.pf-ref} shows that it is bounded above. The least-upper-bound property therefore gives $s_n$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(s_n)$ is decreasing and bounded below.
 
@@ -79,7 +79,7 @@ one has
 \[
 s_{n+1}=\sup A_{n+1}\le \sup A_n=s_n.
 \]
-Also step <1>1 gives a lower bound $M$ for every $a_k$, hence for every nonempty tail $A_n$. Therefore $s_n\ge M$ for every $n$.
+Also step [](#s1-1){.pf-ref} gives a lower bound $M$ for every $a_k$, hence for every nonempty tail $A_n$. Therefore $s_n\ge M$ for every $n$.
 
 :::
 
@@ -96,7 +96,7 @@ has a least upper bound, say $-L$.
 
 ::: pf-proof
 
-By step <1>3, the sequence $(-s_n)$ is increasing. Since $(s_n)$ is bounded below, $(-s_n)$ is bounded above. Its set of values is nonempty, so the least-upper-bound property gives a real number
+By step [](#s1-3){.pf-ref}, the sequence $(-s_n)$ is increasing. Since $(s_n)$ is bounded below, $(-s_n)$ is bounded above. Its set of values is nonempty, so the least-upper-bound property gives a real number
 \[
 -L=\sup\{-s_n:n\in\mathbb N\}.
 \]
@@ -109,7 +109,7 @@ L=\inf\{s_n:n\in\mathbb N\}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $\varepsilon>0$, there exists $N$ such that for all $n\ge N$,
 \[
@@ -137,7 +137,7 @@ Also $a_m\in A_m$ and $|a_m-a_n|<\varepsilon$, so
 \[
 s_m\ge a_m>a_n-\varepsilon.
 \]
-If $m<n$, then monotonicity from step <1>3 gives
+If $m<n$, then monotonicity from step [](#s1-3){.pf-ref} gives
 \[
 s_m\ge s_n\ge a_n>a_n-\varepsilon.
 \]
@@ -155,14 +155,14 @@ This proves the displayed inequalities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The sequence $(a_n)$ converges to $L$.
 
 
 ::: pf-proof
 
-Let $\varepsilon>0$. Apply step <1>5 with tolerance $\varepsilon/2$. For all sufficiently large $n$,
+Let $\varepsilon>0$. Apply step [](#s1-5){.pf-ref} with tolerance $\varepsilon/2$. For all sufficiently large $n$,
 \[
 a_n-\frac{\varepsilon}{2}<L\le a_n+\frac{\varepsilon}{2}.
 \]
@@ -181,7 +181,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>6 proves that every Cauchy sequence of real numbers converges, using only the least-upper-bound property.
+Step [](#s1-6){.pf-ref} proves that every Cauchy sequence of real numbers converges, using only the least-upper-bound property.
 
 :::
 

@@ -39,7 +39,7 @@ Suppose that $E_p(f) = 0$ whenever $f$ is a polynomial of degree $\leq q$. Show 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has $q\leq 2p+1$.
 
@@ -71,7 +71,7 @@ If $q\geq2p+2$, exactness would instead give $E_p(F)=0$, a contradiction. Thus $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $q\geq2p$, fix $j\in\{0,\ldots,p\}$, and define
 $$
@@ -91,7 +91,7 @@ There are exactly $p$ factors in the defining product, each of degree $2$, so $\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the hypothesis $q\geq2p$, every weight is positive; more precisely,
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-Since $\deg F_j=2p\leq q$, exactness and step <1>2 give
+Since $\deg F_j=2p\leq q$, exactness and step [](#s1-2){.pf-ref} give
 $$
 \begin{aligned}
 \int_a^b F_j(x)\,dx
@@ -115,7 +115,7 @@ $$
 &=w_jF_j(x_j).
 \end{aligned}
 $$
-The denominator $F_j(x_j)$ is positive by step <1>2. Also $F_j$ is continuous, nonnegative, and not identically zero on $[a,b]$, so its integral is positive. Dividing yields the displayed formula and $w_j>0$.
+The denominator $F_j(x_j)$ is positive by step [](#s1-2){.pf-ref}. Also $F_j$ is continuous, nonnegative, and not identically zero on $[a,b]$, so its integral is positive. Dividing yields the displayed formula and $w_j>0$.
 
 :::
 
@@ -123,7 +123,7 @@ The denominator $F_j(x_j)$ is positive by step <1>2. Also $F_j$ is continuous, n
 
 ::: pf-qed
 
-Step <1>1 proves the degree bound, and steps <1>2--<1>3 prove positivity of every weight when $q\geq2p$.
+Step [](#s1-1){.pf-ref} proves the degree bound, and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove positivity of every weight when $q\geq2p$.
 
 :::
 

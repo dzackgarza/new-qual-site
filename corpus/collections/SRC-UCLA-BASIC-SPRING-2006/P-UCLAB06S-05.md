@@ -23,7 +23,7 @@ B Prove that if $0 < \alpha < 1$ , then $F ( x ) = x ^ { \alpha }$ is uniformly 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function
 \[
@@ -48,7 +48,7 @@ The same $\delta$ must work for all pairs $x,y\in X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -130,7 +130,7 @@ The case $t=0$ is immediate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For all $x,y\ge0$,
 \[
@@ -152,7 +152,7 @@ Then
 \[
 x=y+(x-y).
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 x^\alpha
 \le
@@ -172,7 +172,7 @@ This is the stated inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Given
 \[
@@ -194,7 +194,7 @@ implies
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 |x^\alpha-y^\alpha|
 \le
@@ -209,7 +209,7 @@ By step <1>3,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -226,8 +226,8 @@ for every
 
 ::: pf-proof
 
-Step <1>4 gives, for each $\varepsilon>0$, a $\delta>0$ depending only on $\varepsilon$ and $\alpha$, not on $x$ or $y$.
-This is exactly the definition in step <1>1.
+Step [](#s1-4){.pf-ref} gives, for each $\varepsilon>0$, a $\delta>0$ depending only on $\varepsilon$ and $\alpha$, not on $x$ or $y$.
+This is exactly the definition in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -235,7 +235,7 @@ This is exactly the definition in step <1>1.
 
 ::: pf-qed
 
-Step <1>1 answers part (A), and step <1>5 proves part (B).
+Step [](#s1-1){.pf-ref} answers part (A), and step [](#s1-5){.pf-ref} proves part (B).
 
 :::
 

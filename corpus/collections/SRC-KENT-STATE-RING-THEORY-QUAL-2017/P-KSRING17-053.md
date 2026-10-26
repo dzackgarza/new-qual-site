@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $S$ is multiplicatively closed and does not contain $0$.
 
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -93,7 +93,7 @@ Then $\mathcal P$ is nonempty.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 (0)\cap S=\varnothing.
 $$
@@ -106,7 +106,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 
@@ -177,7 +177,7 @@ and clearly every member of $\mathcal C$ is contained in $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists an ideal
 $$
@@ -188,7 +188,7 @@ that is maximal with respect to inclusion.
 
 ::: pf-proof
 
-By step <1>2, the poset $\mathcal P$ is nonempty. By step <1>3, every chain has an upper bound in $\mathcal P$. Zorn's lemma therefore yields a maximal element
+By step [](#s1-2){.pf-ref}, the poset $\mathcal P$ is nonempty. By step [](#s1-3){.pf-ref}, every chain has an upper bound in $\mathcal P$. Zorn's lemma therefore yields a maximal element
 $$
 P\in\mathcal P.
 $$
@@ -197,7 +197,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal $P$ is prime.
 
@@ -299,7 +299,7 @@ Hence $P$ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The prime ideal $P$ does not contain $x$.
 
@@ -323,7 +323,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore there exists a prime ideal $P$ such that
 $$
@@ -333,7 +333,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>4--<1>6 construct such a prime ideal.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} construct such a prime ideal.
 
 :::
 
@@ -341,7 +341,7 @@ Steps <1>4--<1>6 construct such a prime ideal.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

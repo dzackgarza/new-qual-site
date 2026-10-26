@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The unit ideal $R$ is good.
 
@@ -106,7 +106,7 @@ This is exactly the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The poset $\mathcal B$, ordered by inclusion, has a maximal element.
 
@@ -140,14 +140,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal $I$ is proper.
 
 
 ::: pf-proof
 
-Step <1>1 shows that
+Step [](#s1-1){.pf-ref} shows that
 $$
 R
 $$
@@ -165,7 +165,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal $I$ is not prime.
 
@@ -191,7 +191,7 @@ Therefore $I$ is not prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exist
 $$
@@ -205,7 +205,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>4--<1>5, the ideal $I$ is proper but not prime.
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, the ideal $I$ is proper but not prime.
 The negation of the prime-ideal condition therefore gives such elements $a$ and $b$.
 
 :::
@@ -246,7 +246,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Each of the ideals
 $$
@@ -259,7 +259,7 @@ is good.
 
 ::: pf-proof
 
-Both ideals strictly contain the maximal counterexample $I$ from step <1>3.
+Both ideals strictly contain the maximal counterexample $I$ from step [](#s1-3){.pf-ref}.
 They are also nonzero because they contain the nonzero ideal $I$.
 
 If either were not good, it would belong to $\mathcal B$ and properly contain $I$, contradicting maximality.
@@ -269,7 +269,7 @@ Therefore both are good.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Choose nonzero prime ideals
 $$
@@ -295,13 +295,13 @@ $$
 
 ::: pf-proof
 
-This is exactly the meaning of step <1>8.
+This is exactly the meaning of step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 One has
 $$
@@ -327,7 +327,7 @@ Ib\subseteq I,
 \qquad
 Ia\subseteq I.
 $$
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 ab\in I,
 $$
@@ -341,7 +341,7 @@ Hence the entire product ideal is contained in $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The product
 $$
@@ -352,7 +352,7 @@ is contained in $I$.
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 $$
 P_1\cdots P_r
 \subseteq
@@ -370,7 +370,7 @@ P_1\cdots P_rQ_1\cdots Q_s
 \subseteq
 (I+(a))(I+(b)).
 $$
-Apply step <1>10.
+Apply step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -416,14 +416,14 @@ Hence the product ideal is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The ideal $I$ is good.
 
 
 ::: pf-proof
 
-By step <1>11,
+By step [](#s1-11){.pf-ref},
 $$
 I
 $$
@@ -438,7 +438,7 @@ Thus, by definition, $I$ is good.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 This contradicts the choice
 $$
@@ -452,13 +452,13 @@ Membership in
 $$
 \mathcal B
 $$
-means that $I$ is not good, whereas step <1>13 shows that it is good.
+means that $I$ is not good, whereas step [](#s1-13){.pf-ref} shows that it is good.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore every nonzero ideal of a non-field Noetherian domain contains a product of nonzero prime ideals.
 
@@ -469,7 +469,7 @@ The assumption that
 $$
 \mathcal B\ne\varnothing
 $$
-leads to the contradiction in step <1>14.
+leads to the contradiction in step [](#s1-14){.pf-ref}.
 Hence
 $$
 \mathcal B=\varnothing.
@@ -488,7 +488,7 @@ $$
 
 ::: pf-qed
 
-Step <1>15 proves the intended statement under the necessary non-field qualification recorded in the remark.
+Step [](#s1-15){.pf-ref} proves the intended statement under the necessary non-field qualification recorded in the remark.
 
 :::
 

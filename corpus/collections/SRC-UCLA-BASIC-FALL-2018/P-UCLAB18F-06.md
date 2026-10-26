@@ -26,7 +26,7 @@ Show that $F:(0,\infty)\to(0,\infty)$ is well-defined, bijective, of class $C^1$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x>0$, the improper integral
 \[
@@ -86,7 +86,7 @@ Thus the integral converges absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $x>0$, the substitution
 \[
@@ -119,13 +119,13 @@ t^{-3/2}dt
 =
 x^{1/2}u^{-3/2}\,du.
 \]
-Substitute into the convergent improper integral from step <1>1.
+Substitute into the convergent improper integral from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -207,7 +207,7 @@ the final integral equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently
 \[
@@ -218,7 +218,7 @@ for every $x>0$.
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3:
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}:
 \[
 F(x)
 =
@@ -231,7 +231,7 @@ F(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map
 \[
@@ -242,7 +242,7 @@ is bijective.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 F(x)=2\sqrt{\pi}\sqrt{x}.
 \]
@@ -263,7 +263,7 @@ Thus it is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $F$ is of class $C^1$ on $(0,\infty)$, with
 \[
@@ -277,7 +277,7 @@ F'(x)
 
 ::: pf-proof
 
-Differentiate the explicit formula from step <1>4:
+Differentiate the explicit formula from step [](#s1-4){.pf-ref}:
 \[
 F(x)
 =
@@ -297,7 +297,7 @@ This derivative is continuous for $x>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The inverse of $F$ is
 \[
@@ -330,14 +330,14 @@ x=\frac{y^2}{4\pi}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The inverse is of class $C^1$ on $(0,\infty)$.
 
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 (F^{-1})'(y)
 =
@@ -351,7 +351,7 @@ which is continuous on $(0,\infty)$.
 
 ::: pf-qed
 
-Step <1>1 proves well-definedness, step <1>5 proves bijectivity, step <1>6 proves that $F$ is $C^1$, and steps <1>7--<1>8 prove that its inverse is $C^1$.
+Step [](#s1-1){.pf-ref} proves well-definedness, step [](#s1-5){.pf-ref} proves bijectivity, step [](#s1-6){.pf-ref} proves that $F$ is $C^1$, and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} prove that its inverse is $C^1$.
 
 :::
 

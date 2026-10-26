@@ -31,7 +31,7 @@ What is the expectation (mean) of $X$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The expectation is
 $$
@@ -50,13 +50,13 @@ $(1,\infty)$, giving the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With
 $$
 s=\frac{t-1}{2},
 $$
-the integral in step <1>1 becomes
+the integral in step [](#s1-1){.pf-ref} becomes
 $$
 \int_0^\infty(2s+1)e^{-s}\,ds.
 $$
@@ -76,7 +76,7 @@ $s\to\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -100,7 +100,7 @@ Letting $R\to\infty$ gives $1$, since $Re^{-R}\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -111,7 +111,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 \mathbb E[X]
 =2\int_0^\infty se^{-s}\,ds+\int_0^\infty e^{-s}\,ds
@@ -124,7 +124,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested mean.
+Step [](#s1-4){.pf-ref} gives the requested mean.
 
 :::
 

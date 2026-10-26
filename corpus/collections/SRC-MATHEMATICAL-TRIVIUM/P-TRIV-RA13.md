@@ -59,7 +59,7 @@ These are the standard Maclaurin expansions through degree $7$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Composing the first two series gives
 $$
@@ -85,7 +85,7 @@ series. All omitted terms contribute $O(x^9)$ because the functions are odd.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -97,7 +97,7 @@ $$
 
 ::: pf-proof
 
-Subtract the two expressions in step <1>2. The terms of degrees $1$, $3$, and
+Subtract the two expressions in step [](#s1-2){.pf-ref}. The terms of degrees $1$, $3$, and
 $5$ cancel, while
 $$
 -\frac{55}{1008}
@@ -115,7 +115,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Composing the inverse-function series gives
 $$
@@ -141,7 +141,7 @@ again retaining terms through degree $7$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -153,7 +153,7 @@ $$
 
 ::: pf-proof
 
-Subtract the expansions in step <1>4:
+Subtract the expansions in step [](#s1-4){.pf-ref}:
 $$
 -\frac{341}{5040}
 +
@@ -168,7 +168,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -183,7 +183,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>3 and <1>5,
+By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref},
 $$
 \frac{-x^7/30+O(x^9)}{-x^7/30+O(x^9)}
 =
@@ -197,7 +197,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 is the required limit.
+Step [](#s1-6){.pf-ref} is the required limit.
 
 :::
 

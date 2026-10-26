@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -58,7 +58,7 @@ Let $v\in S$. Then $v$ is a finite linear combination of elements of $W$. Every 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $v\notin S$, then there is a functional $\phi\in W^\perp$ such that $\phi(v)\ne0$.
 
@@ -81,7 +81,7 @@ and assign value $0$ to the remaining basis vectors. Then $\phi$ vanishes on $S$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every subset $W\subseteq V$,
 $$
@@ -91,13 +91,13 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives one inclusion. If $v\notin S$, step <1>2 produces $\phi\in W^\perp$ with $\phi(v)\ne0$, so $v\notin{}^\perp(W^\perp)$. Thus ${}^\perp(W^\perp)\subseteq S$ as well.
+Step [](#s1-1){.pf-ref} gives one inclusion. If $v\notin S$, step [](#s1-2){.pf-ref} produces $\phi\in W^\perp$ with $\phi(v)\ne0$, so $v\notin{}^\perp(W^\perp)$. Thus ${}^\perp(W^\perp)\subseteq S$ as well.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $W\le V$ and let
 $$
@@ -123,7 +123,7 @@ Hence $\lambda\circ\pi\in W^\perp$. The map $\Phi$ is linear because composition
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $\Phi$ is injective.
 
@@ -140,7 +140,7 @@ for every $v\in V$. Thus $\lambda=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is surjective.
 
@@ -167,7 +167,7 @@ for every $v\in V$. Thus $\Phi(\lambda)=\phi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -178,7 +178,7 @@ via $\lambda\mapsto\lambda\circ\pi$.
 
 ::: pf-proof
 
-By steps <1>4--<1>6, $\Phi$ is a linear bijection.
+By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, $\Phi$ is a linear bijection.
 
 :::
 
@@ -186,7 +186,7 @@ By steps <1>4--<1>6, $\Phi$ is a linear bijection.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>7 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
 
 :::
 

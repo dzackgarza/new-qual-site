@@ -30,7 +30,7 @@ be the Taylor expansion of $f$ at $z_0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ is not locally constant near $z_0$, the **multiplicity of
 $f$ at $z_0$** is the least positive integer
@@ -76,7 +76,7 @@ f^{(m)}(z_0)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently, $m$ is the order of the zero of
 \[
@@ -117,7 +117,7 @@ Thus the zero has order $m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -135,7 +135,7 @@ f(z)-f(z_0)
 =
 f(z),
 \]
-so step <1>2 becomes the usual zero-order definition.
+so step [](#s1-2){.pf-ref} becomes the usual zero-order definition.
 
 :::
 
@@ -143,7 +143,7 @@ so step <1>2 becomes the usual zero-order definition.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 give the requested definition and its standard equivalent
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definition and its standard equivalent
 formulations.
 
 :::

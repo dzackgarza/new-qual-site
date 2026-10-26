@@ -23,7 +23,7 @@ Assume $n>0$. If $\mathbb{RP}^n$ is parallelizable, its tangent bundle is trivia
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\mathbb{RP}^n$ is parallelizable, then its double cover $S^n$ is parallelizable.
 
@@ -44,7 +44,7 @@ The pullback of a trivial bundle is trivial, so parallelizability of $T\mathbb{R
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By the theorem on parallelizable spheres,
 \[
@@ -66,7 +66,7 @@ for positive-dimensional spheres. This is the classical theorem that the only pa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, if $\mathbb{RP}^n$ is parallelizable and $n>0$, then
 \[
@@ -76,13 +76,13 @@ n\in\{1,3,7\}.
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The spaces $\mathbb{RP}^1$, $\mathbb{RP}^3$, and $\mathbb{RP}^7$ are in fact parallelizable.
 
@@ -108,7 +108,7 @@ are tangent and pointwise linearly independent because multiplication by a nonze
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 These framings descend through the antipodal quotient
 \[
@@ -133,7 +133,7 @@ Thus each vector field is equivariant for the deck transformation and descends t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -144,13 +144,13 @@ are parallelizable.
 
 ::: pf-proof
 
-Step <1>4 constructs global frames upstairs and step <1>5 descends them to the three projective spaces.
+Step [](#s1-4){.pf-ref} constructs global frames upstairs and step [](#s1-5){.pf-ref} descends them to the three projective spaces.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -162,7 +162,7 @@ Therefore
 
 ::: pf-proof
 
-Necessity is step <1>3 and sufficiency is step <1>6.
+Necessity is step [](#s1-3){.pf-ref} and sufficiency is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -170,7 +170,7 @@ Necessity is step <1>3 and sufficiency is step <1>6.
 
 ::: pf-qed
 
-Step <1>7 proves the assertion in the problem.
+Step [](#s1-7){.pf-ref} proves the assertion in the problem.
 
 :::
 

@@ -28,7 +28,7 @@ be a nonconstant entire function.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that
 $$
@@ -45,7 +45,7 @@ This is the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exist
 $$
@@ -81,7 +81,7 @@ lies entirely in that complement.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -94,7 +94,7 @@ is entire and bounded.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 f(z)\ne a
 $$
@@ -122,13 +122,13 @@ The function $g$ is constant.
 
 ::: pf-proof
 
-Step <1>3 gives a bounded entire function. Liouville's theorem implies that it is constant.
+Step [](#s1-3){.pf-ref} gives a bounded entire function. Liouville's theorem implies that it is constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is constant.
 
@@ -168,13 +168,13 @@ This contradicts the hypothesis that $f$ is nonconstant.
 
 ::: pf-proof
 
-Step <1>5 contradicts the standing assumption on $f$.
+Step [](#s1-5){.pf-ref} contradicts the standing assumption on $f$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -187,7 +187,7 @@ $$
 
 ::: pf-proof
 
-The assumption in step <1>1 led to a contradiction, so the image must be dense.
+The assumption in step [](#s1-1){.pf-ref} led to a contradiction, so the image must be dense.
 
 :::
 
@@ -195,7 +195,7 @@ The assumption in step <1>1 led to a contradiction, so the image must be dense.
 
 ::: pf-qed
 
-Step <1>7 is exactly the required conclusion.
+Step [](#s1-7){.pf-ref} is exactly the required conclusion.
 
 :::
 

@@ -43,7 +43,7 @@ and a local branch of $\varphi$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Jacobian matrix of the spherical-to-Cartesian map is
 $$
@@ -68,7 +68,7 @@ $r,\theta,\varphi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its determinant is
 $$
@@ -98,7 +98,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the spherical coordinate change is locally regular exactly where
 $$
@@ -111,14 +111,14 @@ $$
 ::: pf-proof
 
 By the inverse function theorem, local regularity is equivalent to nonzero
-Jacobian determinant. Step <1>2 vanishes precisely at $r=0$ or
+Jacobian determinant. Step [](#s1-2){.pf-ref} vanishes precisely at $r=0$ or
 $\theta=0,\pi$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In Cartesian language, the singular set for spherical coordinates is
 the $z$-axis.
@@ -134,7 +134,7 @@ branch of the azimuthal angle $\varphi$ may be chosen smoothly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The inverse Jacobian matrix, from Cartesian to spherical coordinates, is
 $$
@@ -152,14 +152,14 @@ $$
 
 ::: pf-proof
 
-This matrix is the inverse of the matrix in step <1>1. Equivalently, its rows
+This matrix is the inverse of the matrix in step [](#s1-1){.pf-ref}. Equivalently, its rows
 are the gradients of $r$, $\theta$, and $\varphi$ in Cartesian coordinates.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Its determinant is
 $$
@@ -170,13 +170,13 @@ $$
 ::: pf-proof
 
 The determinant of an inverse matrix is the reciprocal of the original
-determinant from step <1>2.
+determinant from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For cylindrical coordinates, use
 $$
@@ -197,7 +197,7 @@ These are the standard cylindrical coordinate formulas.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The cylindrical-to-Cartesian Jacobian matrix is
 $$
@@ -215,13 +215,13 @@ $$
 
 ::: pf-proof
 
-Differentiate the coordinate formulas from step <1>7.
+Differentiate the coordinate formulas from step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Its determinant is
 $$
@@ -243,7 +243,7 @@ and the last diagonal entry is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence cylindrical coordinates are locally regular exactly where
 $$
@@ -254,13 +254,13 @@ that is, away from the $z$-axis.
 
 ::: pf-proof
 
-Apply the inverse function theorem to the determinant in step <1>9.
+Apply the inverse function theorem to the determinant in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The inverse Cartesian-to-cylindrical Jacobian matrix is
 $$
@@ -282,13 +282,13 @@ $$
 
 ::: pf-proof
 
-Invert the matrix from step <1>8, or differentiate
+Invert the matrix from step [](#s1-8){.pf-ref}, or differentiate
 $$
 \rho=\sqrt{x^2+y^2},
 \qquad
 \varphi=\operatorname{atan2}(y,x).
 $$
-The determinant is the reciprocal of step <1>9.
+The determinant is the reciprocal of step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -296,7 +296,7 @@ The determinant is the reciprocal of step <1>9.
 
 ::: pf-qed
 
-Steps <1>1--<1>6 solve the spherical case, and steps <1>7--<1>11 solve the
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} solve the spherical case, and steps [](#s1-7){.pf-ref} through [](#s1-11){.pf-ref} solve the
 cylindrical case and identify the regular regions.
 
 :::

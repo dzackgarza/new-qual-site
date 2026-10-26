@@ -39,7 +39,7 @@ on $\mathbb D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the open set
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $g$ is not identically zero near $a$ and
 $$
@@ -145,7 +145,7 @@ Equality of the functions forces equality of the orders.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At every zero $a$ of $g$ that is not contained in a neighborhood on which $g\equiv0$,
 $$
@@ -156,7 +156,7 @@ has a removable singularity and its holomorphic extension vanishes at $a$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 n=\frac32m.
 $$
@@ -202,7 +202,7 @@ the right-hand side extends holomorphically across $a$ with value $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $g$ vanishes identically on a nonempty open set, then $f$ vanishes there and is analytic there.
 
@@ -223,7 +223,7 @@ there. The zero function is analytic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $f$ is analytic on all of $\mathbb D$.
 
@@ -234,17 +234,17 @@ On the open set
 $$
 U=\{g\ne0\},
 $$
-step <1>1 writes
+step [](#s1-1){.pf-ref} writes
 $$
 f=h/g,
 $$
 so $f$ is analytic there.
 
-At each isolated zero of $g$, step <1>4 gives a holomorphic extension of
+At each isolated zero of $g$, step [](#s1-4){.pf-ref} gives a holomorphic extension of
 $$
 h/g
 $$
-with value $0$. By step <1>2, this value equals
+with value $0$. By step [](#s1-2){.pf-ref}, this value equals
 $$
 f(a).
 $$
@@ -253,7 +253,7 @@ On any open region where
 $$
 g\equiv0,
 $$
-step <1>5 gives
+step [](#s1-5){.pf-ref} gives
 $$
 f\equiv0.
 $$
@@ -265,7 +265,7 @@ Thus every point of the disk has a neighborhood on which $f$ is analytic.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

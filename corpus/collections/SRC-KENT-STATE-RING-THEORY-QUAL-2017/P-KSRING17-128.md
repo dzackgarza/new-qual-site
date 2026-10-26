@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -93,7 +93,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -126,7 +126,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -145,13 +145,13 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>2 prove the two inclusions.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove the two inclusions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element
 $$
@@ -178,7 +178,7 @@ $$
 =
 0.
 $$
-Thus step <1>3 gives
+Thus step [](#s1-3){.pf-ref} gives
 $$
 0\in I.
 $$
@@ -187,7 +187,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -201,7 +201,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \frac a1,\frac b1
 \in
@@ -215,7 +215,7 @@ $$
 \in
 J.
 $$
-Applying step <1>3 again gives
+Applying step [](#s1-3){.pf-ref} again gives
 $$
 a-b\in I.
 $$
@@ -224,7 +224,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -242,7 +242,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \frac a1
 \in
@@ -262,7 +262,7 @@ $$
 \in
 J.
 $$
-Step <1>3 then gives
+Step [](#s1-3){.pf-ref} then gives
 $$
 ra\in I.
 $$
@@ -271,7 +271,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -285,7 +285,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 gives nonemptiness, step <1>5 gives closure under subtraction, and step <1>6 gives absorption under multiplication by arbitrary elements of $R$.
+Step [](#s1-4){.pf-ref} gives nonemptiness, step [](#s1-5){.pf-ref} gives closure under subtraction, and step [](#s1-6){.pf-ref} gives absorption under multiplication by arbitrary elements of $R$.
 Thus $I$ is an ideal.
 
 :::
@@ -294,7 +294,7 @@ Thus $I$ is an ideal.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors in choices (A), (B), (C), and (E) are orthogonal to $\mathbf v$.
 
@@ -55,7 +55,7 @@ Thus each of these four vectors is orthogonal to $\mathbf v$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vector in choice (D) is not orthogonal to $\mathbf v$.
 
@@ -74,7 +74,7 @@ Hence this vector is not orthogonal to $\mathbf v$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the answer is
 $$
@@ -84,7 +84,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show that (D) is the unique listed vector whose dot product with $\mathbf v$ is nonzero.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that (D) is the unique listed vector whose dot product with $\mathbf v$ is nonzero.
 
 :::
 
@@ -92,7 +92,7 @@ Steps <1>1 and <1>2 show that (D) is the unique listed vector whose dot product 
 
 ::: pf-qed
 
-Step <1>3 gives the requested vector and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested vector and corresponding choice.
 
 :::
 

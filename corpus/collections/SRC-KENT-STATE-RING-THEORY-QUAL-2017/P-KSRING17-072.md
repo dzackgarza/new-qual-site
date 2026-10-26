@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The element
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -88,7 +88,7 @@ is not invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -136,7 +136,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose
 $$
@@ -219,25 +219,25 @@ cannot be a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set $N$ is an additive subgroup of $R$.
 
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 0\in N.
 $$
-Step <1>2 gives closure under additive inverses, and step <1>4 gives closure under addition.
+Step [](#s1-2){.pf-ref} gives closure under additive inverses, and step [](#s1-4){.pf-ref} gives closure under addition.
 Hence $N$ is an additive subgroup.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -250,8 +250,8 @@ $$
 
 ::: pf-proof
 
-By step <1>5, $N$ is an additive subgroup of $R$.
-By step <1>3, it is closed under multiplication by arbitrary elements of $R$.
+By step [](#s1-5){.pf-ref}, $N$ is an additive subgroup of $R$.
+By step [](#s1-3){.pf-ref}, it is closed under multiplication by arbitrary elements of $R$.
 Thus
 $$
 N\trianglelefteq R.
@@ -263,7 +263,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

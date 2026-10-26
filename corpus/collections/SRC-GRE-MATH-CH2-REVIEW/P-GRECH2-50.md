@@ -31,7 +31,7 @@ is finite and nonzero. What is this value of $k$, and what is the limit, $L$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 As $x\to0$,
 $$
@@ -61,7 +61,7 @@ Subtracting the indicated lower-order terms gives the two displayed expansions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The numerator has leading term $-x^6/4$:
 $$
@@ -72,7 +72,7 @@ $$
 
 ::: pf-proof
 
-Multiplying the expansions in step <1>1 gives
+Multiplying the expansions in step [](#s1-1){.pf-ref} gives
 $$
 \left(\frac{x^4}{2}+O(x^6)\right)
 \left(-\frac{x^2}{2}+O(x^4)\right)
@@ -83,7 +83,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The unique exponent producing a finite nonzero limit is
 $$
@@ -97,7 +97,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \frac{(e^{x^2}-x^2-1)(\cos x-1)}{x^k}
 =x^{6-k}\left(-\frac14+O(x^2)\right).
@@ -111,14 +111,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the answer is (D).
 
 
 ::: pf-proof
 
-Step <1>3 gives exactly the pair listed in choice (D).
+Step [](#s1-3){.pf-ref} gives exactly the pair listed in choice (D).
 
 :::
 
@@ -126,7 +126,7 @@ Step <1>3 gives exactly the pair listed in choice (D).
 
 ::: pf-qed
 
-Step <1>4 identifies the requested choice.
+Step [](#s1-4){.pf-ref} identifies the requested choice.
 
 :::
 

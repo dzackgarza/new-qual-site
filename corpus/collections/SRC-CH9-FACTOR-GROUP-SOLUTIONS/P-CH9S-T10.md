@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subgroup $H$ is not normal in $A_4$.
 
@@ -66,7 +66,7 @@ $H\not\trianglelefteq A_4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The stated pairs of left cosets are equal:
 $$
@@ -99,7 +99,7 @@ computations therefore give the required equalities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The products of the chosen representatives determine different left cosets:
 $$
@@ -136,14 +136,14 @@ Thus the two product cosets are different.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Coset multiplication is not well-defined on the set of left cosets of $H$.
 
 
 ::: pf-proof
 
-By step <1>2, the first factors $\alpha_6H$ and $\alpha_7H$ represent
+By step [](#s1-2){.pf-ref}, the first factors $\alpha_6H$ and $\alpha_7H$ represent
 the same left coset, and the second factors $\alpha_9H$ and
 $\alpha_{11}H$ also represent the same left coset. If the rule
 $$
@@ -151,13 +151,13 @@ $$
 $$
 were well-defined, replacing either representative by another
 representative of the same coset could not change the product coset.
-Step <1>3 shows that it does change. Hence the rule is not well-defined.
+Step [](#s1-3){.pf-ref} shows that it does change. Hence the rule is not well-defined.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The left cosets of $H$ do not form a group under coset multiplication.
 
@@ -165,7 +165,7 @@ The left cosets of $H$ do not form a group under coset multiplication.
 ::: pf-proof
 
 A group operation must first be a well-defined binary operation on the
-underlying set. Step <1>4 shows that the proposed coset multiplication
+underlying set. Step [](#s1-4){.pf-ref} shows that the proposed coset multiplication
 is not well-defined, so it cannot make the set of left cosets into a
 group.
 
@@ -175,7 +175,7 @@ group.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and steps <1>2--<1>5 prove part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove part (b).
 
 :::
 

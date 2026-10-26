@@ -53,7 +53,7 @@ satisfies $x>y>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Squaring maps $S$ bijectively onto the open first quadrant
 $$
@@ -99,7 +99,7 @@ square root has argument differing by $\pi$ and does not lie in $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $w=u+iv\in Q$, then
 $$
@@ -123,7 +123,7 @@ Since $u>0$, one has $e^u>1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every complex number $\zeta$ with
 $$
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the image of $S$ under $z\mapsto e^{z^2}$ is
 $$
@@ -179,8 +179,8 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $z^2$ ranges over all of $Q$. Step <1>3 shows that exponentiating
-$Q$ produces only points outside the closed unit disk, while step <1>4 shows
+By step [](#s1-2){.pf-ref}, $z^2$ ranges over all of $Q$. Step [](#s1-3){.pf-ref} shows that exponentiating
+$Q$ produces only points outside the closed unit disk, while step [](#s1-4){.pf-ref} shows
 that every such point occurs.
 
 :::
@@ -189,7 +189,7 @@ that every such point occurs.
 
 ::: pf-qed
 
-Step <1>5 is the required image.
+Step [](#s1-5){.pf-ref} is the required image.
 
 :::
 

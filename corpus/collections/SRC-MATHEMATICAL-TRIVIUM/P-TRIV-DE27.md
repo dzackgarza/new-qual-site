@@ -33,7 +33,7 @@ seek a nonzero multiplier $f$ for which the multiplied equation satisfies $(fp_0
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The multiplier must satisfy
 \[
@@ -53,7 +53,7 @@ Expanding the derivative gives $f'p_0+fp_0'=fp_1$. Dividing by $fp_0$ gives the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For Laguerre's equation, one may take
 \[
@@ -63,7 +63,7 @@ For Laguerre's equation, one may take
 
 ::: pf-proof
 
-Here $p_0=x$ and $p_1=1-x$, so step <1>1 gives
+Here $p_0=x$ and $p_1=1-x$, so step [](#s1-1){.pf-ref} gives
 \[
 \frac{f'}f=\frac{(1-x)-1}{x}=-1.
 \]
@@ -76,7 +76,7 @@ xe^{-x}y''+(1-x)e^{-x}y'=(xe^{-x}y')'.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For Hermite's equation, one may take
 \[
@@ -86,7 +86,7 @@ For Hermite's equation, one may take
 
 ::: pf-proof
 
-Here $p_0=1$ and $p_1=-2x$, so step <1>1 gives $f'/f=-2x$. Hence $f=Ce^{-x^2}$, and
+Here $p_0=1$ and $p_1=-2x$, so step [](#s1-1){.pf-ref} gives $f'/f=-2x$. Hence $f=Ce^{-x^2}$, and
 \[
 e^{-x^2}y''-2xe^{-x^2}y'=(e^{-x^2}y')'.
 \]
@@ -95,7 +95,7 @@ e^{-x^2}y''-2xe^{-x^2}y'=(e^{-x^2}y')'.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For Chebyshev's equation, one may take
 \[
@@ -127,7 +127,7 @@ fp_0=\sqrt{1-x^2},
 
 ::: pf-qed
 
-Steps <1>2--<1>4 give multipliers satisfying the self-adjointness condition in all three cases.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give multipliers satisfying the self-adjointness condition in all three cases.
 
 :::
 

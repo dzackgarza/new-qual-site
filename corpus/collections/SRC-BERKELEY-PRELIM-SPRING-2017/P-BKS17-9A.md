@@ -45,7 +45,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\geq1$,
 $$
@@ -67,7 +67,7 @@ ways. The remaining $n-k$ elements can then be partitioned in $P_{n-k}$ ways. Su
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq0$,
 $$
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-Applying step <1>1 with $n+1$ in place of $n$ gives
+Applying step [](#s1-1){.pf-ref} with $n+1$ in place of $n$ gives
 $$
 P_{n+1}
 =
@@ -99,7 +99,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -110,7 +110,7 @@ then $M_n=1$ for every $n\geq2$.
 
 ::: pf-proof
 
-All $Q_j$ are nonnegative. By step <1>2,
+All $Q_j$ are nonnegative. By step [](#s1-2){.pf-ref},
 $$
 Q_{n+1}
 \leq
@@ -137,7 +137,7 @@ so $M_2=1$. Induction gives $M_n=1$ for all $n\geq2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -147,7 +147,7 @@ $$
 
 ::: pf-proof
 
-Combining steps <1>2 and <1>3, for every $n\geq2$,
+Combining steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, for every $n\geq2$,
 $$
 0\leq Q_{n+1}\leq\frac{e}{n+1}M_n=\frac{e}{n+1}.
 $$
@@ -159,7 +159,7 @@ The right-hand side tends to $0$, so the squeeze theorem gives $Q_n\to0$. By def
 
 ::: pf-qed
 
-Step <1>4 proves the required limit.
+Step [](#s1-4){.pf-ref} proves the required limit.
 
 :::
 

@@ -23,7 +23,7 @@ Assume $n\geq2$ and use integral coefficients. Put $d=n-1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The James--Bott--Samelson theorem gives
 \[
@@ -46,7 +46,7 @@ is free on one class of degree $d$, Bott--Samelson identifies the Pontryagin alg
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since there is only one generator, additively
 \[
@@ -71,7 +71,7 @@ with $|t^j|=jd$. Thus it has rank one exactly in the displayed degrees.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The cohomology ring is the graded Hopf dual of the homology Hopf algebra. If $x_j\in H^{jd}(\Omega S^n;\mathbb Z)$ is dual to $t^j$, then
 \[
@@ -90,7 +90,7 @@ Cup product in cohomology is dual to the coproduct in homology. Under the James 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $n$ is odd, then $d$ is even and all shuffle signs are $+1$. Hence
 \[
@@ -100,13 +100,13 @@ x_i x_j=\binom{i+j}{i}x_{i+j}.
 
 ::: pf-proof
 
-When $d$ is even, interchanging two degree-$d$ factors contributes sign $(-1)^{d^2}=1$. There are exactly $\binom{i+j}{i}$ $(i,j)$-shuffles, so step <1>3 reduces to the displayed formula.
+When $d$ is even, interchanging two degree-$d$ factors contributes sign $(-1)^{d^2}=1$. There are exactly $\binom{i+j}{i}$ $(i,j)$-shuffles, so step [](#s1-3){.pf-ref} reduces to the displayed formula.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus, for $n=2m+1$,
 \[
@@ -124,13 +124,13 @@ The defining multiplication in the divided-power algebra is
 \gamma_i(x)\gamma_j(x)
 =\binom{i+j}{i}\gamma_{i+j}(x).
 \]
-Identify $x_j$ from step <1>4 with $\gamma_j(x_{2m})$.
+Identify $x_j$ from step [](#s1-4){.pf-ref} with $\gamma_j(x_{2m})$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $n$ is even, then $d$ is odd. The signed shuffle sum is zero when both $i$ and $j$ are odd and otherwise equals the corresponding unsigned binomial coefficient after pairing adjacent odd letters. Equivalently,
 \[
@@ -144,13 +144,13 @@ where $b$ corresponds to the dual of $t^2$.
 
 ::: pf-proof
 
-For odd $d$, the basic degree-$d$ class $a=x_1$ satisfies $a^2=0$ by graded commutativity and torsion-freeness. The even tensor powers $t^{2j}$ define classes $\gamma_j(b)=x_{2j}$ of degree $2jd$, and their shuffle coefficients are the ordinary divided-power coefficients after grouping the odd generators in pairs. The odd-index classes are $a\gamma_j(b)=x_{2j+1}$. Thus the graded group from step <1>2 and the signed shuffle multiplication of step <1>3 are exactly the tensor product $\Lambda(a)\otimes\Gamma(b)$, with $|a|=d=2m-1$ and $|b|=2d=4m-2$.
+For odd $d$, the basic degree-$d$ class $a=x_1$ satisfies $a^2=0$ by graded commutativity and torsion-freeness. The even tensor powers $t^{2j}$ define classes $\gamma_j(b)=x_{2j}$ of degree $2jd$, and their shuffle coefficients are the ordinary divided-power coefficients after grouping the odd generators in pairs. The odd-index classes are $a\gamma_j(b)=x_{2j+1}$. Thus the graded group from step [](#s1-2){.pf-ref} and the signed shuffle multiplication of step [](#s1-3){.pf-ref} are exactly the tensor product $\Lambda(a)\otimes\Gamma(b)$, with $|a|=d=2m-1$ and $|b|=2d=4m-2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -170,7 +170,7 @@ H^*(\Omega S^n;\mathbb Z)
 
 ::: pf-proof
 
-The homology statement is step <1>1. The two cohomology cases are steps <1>5 and <1>6.
+The homology statement is step [](#s1-1){.pf-ref}. The two cohomology cases are steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}.
 
 :::
 
@@ -178,7 +178,7 @@ The homology statement is step <1>1. The two cohomology cases are steps <1>5 and
 
 ::: pf-qed
 
-Step <1>7 gives both the requested homology and the full integral cohomology-ring structure.
+Step [](#s1-7){.pf-ref} gives both the requested homology and the full integral cohomology-ring structure.
 
 :::
 

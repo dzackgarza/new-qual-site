@@ -24,7 +24,7 @@ The use of the adjoint implicitly equips $V$ and $W$ with inner products.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -49,7 +49,7 @@ T:V\to W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The orthogonal complement of $\operatorname{Range}T$ is
 \[
@@ -85,7 +85,7 @@ Hence the two subspaces are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -97,7 +97,7 @@ One has
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \operatorname{Null}T^*
 =
@@ -116,7 +116,7 @@ Y=\operatorname{Range}T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -132,7 +132,7 @@ Therefore
 
 ::: pf-proof
 
-Add $\dim(\operatorname{Range}T)$ to both sides of the equality in step <1>3.
+Add $\dim(\operatorname{Range}T)$ to both sides of the equality in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -140,7 +140,7 @@ Add $\dim(\operatorname{Range}T)$ to both sides of the equality in step <1>3.
 
 ::: pf-qed
 
-Step <1>1 gives the first requested quantity, and step <1>4 gives the second.
+Step [](#s1-1){.pf-ref} gives the first requested quantity, and step [](#s1-4){.pf-ref} gives the second.
 
 :::
 

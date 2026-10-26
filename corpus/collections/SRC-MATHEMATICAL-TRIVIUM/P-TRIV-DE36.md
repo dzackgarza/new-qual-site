@@ -45,7 +45,7 @@ Its characteristic polynomial $(r-1)(r-2)$ has roots $1$ and $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The conditions $y(0)=0$ and $y(1)=1$ determine the left branch uniquely as
 \[
@@ -65,7 +65,7 @@ Solving yields $B=(e^2-e)^{-1}$ and $A=-B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The delta forcing imposes the jump condition
 \[
@@ -81,7 +81,7 @@ Integrate the differential equation from $1-\epsilon$ to $1+\epsilon$. The $y''$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The conditions at $x=1$ determine the right branch as
 \[
@@ -93,11 +93,11 @@ y_+(x)=-\frac{e}{e-1}e^{x-1}
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 y_-'(1)=\frac{2e^2-e}{e^2-e}=\frac{2e-1}{e-1}.
 \]
-Hence step <1>3 gives
+Hence step [](#s1-3){.pf-ref} gives
 \[
 y_+'(1)=\frac{3e-2}{e-1}.
 \]
@@ -113,7 +113,7 @@ Thus $Q=(2e-1)/(e-1)$ and $P=-e/(e-1)$, which is the displayed expression after 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the distributional solution is
 \[
@@ -128,7 +128,7 @@ y(x)=
 
 ::: pf-proof
 
-Steps <1>2 and <1>4 give the two homogeneous branches. They both equal $1$ at $x=1$, and step <1>3 gives the unit derivative jump required to produce exactly $\delta(x-1)$ and no $\delta'(x-1)$ term.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the two homogeneous branches. They both equal $1$ at $x=1$, and step [](#s1-3){.pf-ref} gives the unit derivative jump required to produce exactly $\delta(x-1)$ and no $\delta'(x-1)$ term.
 
 :::
 
@@ -136,7 +136,7 @@ Steps <1>2 and <1>4 give the two homogeneous branches. They both equal $1$ at $x
 
 ::: pf-qed
 
-Step <1>5 satisfies the differential equation distributionally and both prescribed values.
+Step [](#s1-5){.pf-ref} satisfies the differential equation distributionally and both prescribed values.
 
 :::
 

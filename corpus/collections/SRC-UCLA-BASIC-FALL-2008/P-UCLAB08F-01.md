@@ -27,7 +27,7 @@ Prove each assertion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $a=0$, the function
 \[
@@ -48,7 +48,7 @@ Thus for every $\varepsilon>0$, any $\delta>0$ satisfies the definition of unifo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $a=1$, the function
 \[
@@ -80,7 +80,7 @@ implies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $a=2$, the function
 \[
@@ -127,7 +127,7 @@ For sufficiently large $n$, one has $1/n<\delta$, contradicting the displayed in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the uniformly continuous cases are exactly
 \[
@@ -137,7 +137,7 @@ Therefore the uniformly continuous cases are exactly
 
 ::: pf-proof
 
-Steps <1>1--<1>2 prove uniform continuity for $a=0,1$, and step <1>3 rules it out for $a=2$.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove uniform continuity for $a=0,1$, and step [](#s1-3){.pf-ref} rules it out for $a=2$.
 
 :::
 
@@ -145,7 +145,7 @@ Steps <1>1--<1>2 prove uniform continuity for $a=0,1$, and step <1>3 rules it ou
 
 ::: pf-qed
 
-Step <1>4 gives the complete classification.
+Step [](#s1-4){.pf-ref} gives the complete classification.
 
 :::
 

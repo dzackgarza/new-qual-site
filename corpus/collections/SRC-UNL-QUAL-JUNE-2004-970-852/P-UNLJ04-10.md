@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Turán's theorem states:
 $$
@@ -135,7 +135,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -323,7 +323,7 @@ is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -372,7 +372,7 @@ t_q(m)+1
 $$
 edges remains.
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 H_0
 $$
@@ -416,7 +416,7 @@ the claim follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -457,7 +457,7 @@ $$
 
 ::: pf-proof
 
-Apply step <1>4 repeatedly, reducing the number of vertices one at a time.
+Apply step [](#s1-4){.pf-ref} repeatedly, reducing the number of vertices one at a time.
 
 At each stage
 $$
@@ -467,7 +467,7 @@ so
 $$
 m\ge q+2,
 $$
-which is exactly the range required by step <1>4.
+which is exactly the range required by step [](#s1-4){.pf-ref}.
 
 Stop when
 $$
@@ -483,7 +483,7 @@ with the asserted number of vertices and edges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -527,7 +527,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Turán's theorem follows from part (b).
 
@@ -554,7 +554,7 @@ e(G)
 \ge
 t_{r-1}(n)+1.
 $$
-By step <1>5 with
+By step [](#s1-5){.pf-ref} with
 $$
 n'=r,
 $$
@@ -572,7 +572,7 @@ t_{r-1}(r)+1
 $$
 edges.
 
-Using step <1>6,
+Using step [](#s1-6){.pf-ref},
 $$
 e(H)
 \ge
@@ -604,7 +604,7 @@ which is the asserted extremal bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Assume
 $$
@@ -652,7 +652,7 @@ the only missing edges are the one internal edge in each of the two two-vertex p
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For
 $$
@@ -683,7 +683,7 @@ vertices.
 
 ::: pf-proof
 
-Apply step <1>5 with
+Apply step [](#s1-5){.pf-ref} with
 $$
 n'=r+1.
 $$
@@ -701,7 +701,7 @@ e(H)
 \ge
 t_{r-1}(r+1)+1.
 $$
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 e(H)
 \ge
@@ -761,7 +761,7 @@ vertices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The stronger assertion in part (c) requires
 $$
@@ -793,7 +793,7 @@ Thus the printed stronger statement is false for
 $$
 r=2;
 $$
-step <1>9 proves the intended assertion for
+step [](#s1-9){.pf-ref} proves the intended assertion for
 $$
 r\ge3.
 $$
@@ -804,7 +804,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 states Turán's theorem, step <1>5 proves part (b), step <1>7 deduces Turán's theorem from part (b), and steps <1>8--<1>10 prove the stronger conclusion in its correct range.
+Step [](#s1-1){.pf-ref} states Turán's theorem, step [](#s1-5){.pf-ref} proves part (b), step [](#s1-7){.pf-ref} deduces Turán's theorem from part (b), and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} prove the stronger conclusion in its correct range.
 
 :::
 

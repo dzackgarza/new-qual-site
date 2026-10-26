@@ -48,7 +48,7 @@ many of the sets $A_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -83,7 +83,7 @@ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (b), take Lebesgue measure on $\mathbb R$ and
 \[
@@ -107,7 +107,7 @@ so the sum is the harmonic series and diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For the same example,
 \[
@@ -131,7 +131,7 @@ $A_n$, and the limsup is empty.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), while steps <1>3 and <1>4 give the requested
+Step [](#s1-2){.pf-ref} proves part (a), while steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the requested
 counterexample in part (b).
 
 :::

@@ -29,7 +29,7 @@ both exist and are equal.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $f$ and $g$ both have zeros of order $7$ at $0$, there are
 analytic functions
@@ -64,7 +64,7 @@ leaves analytic functions that are nonzero at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $z\ne0$ sufficiently near $0$,
 \[
@@ -76,7 +76,7 @@ For $z\ne0$ sufficiently near $0$,
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \frac{f(z)}{g(z)}
 =
@@ -94,7 +94,7 @@ continuity implies that $G$ is nonzero on some neighborhood of $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -114,13 +114,13 @@ The quotient
 \frac{F}{G}
 \]
 is analytic, hence continuous, near $0$.
-Apply step <1>2 and take the limit.
+Apply step [](#s1-2){.pf-ref} and take the limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Differentiating the factorizations gives
 \[
@@ -157,7 +157,7 @@ g(z)=z^7G(z).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function
 \[
@@ -176,14 +176,14 @@ its value is
 \[
 7G(0),
 \]
-which is nonzero by step <1>1.
+which is nonzero by step [](#s1-1){.pf-ref}.
 Continuity therefore gives a neighborhood on which it does not vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For $z\ne0$ sufficiently near $0$,
 \[
@@ -203,14 +203,14 @@ Cancel the common factor
 \[
 z^6
 \]
-from the formulas in step <1>4.
-Step <1>5 guarantees the remaining denominator is nonzero near $0$.
+from the formulas in step [](#s1-4){.pf-ref}.
+Step [](#s1-5){.pf-ref} guarantees the remaining denominator is nonzero near $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -225,7 +225,7 @@ Therefore
 
 ::: pf-proof
 
-Take the limit in step <1>6:
+Take the limit in step [](#s1-6){.pf-ref}:
 \[
 7F(z)+zF'(z)
 \longrightarrow
@@ -251,7 +251,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The two limits exist and are equal:
 \[
@@ -269,7 +269,7 @@ The two limits exist and are equal:
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>7.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
@@ -277,7 +277,7 @@ Combine steps <1>3 and <1>7.
 
 ::: pf-qed
 
-Step <1>8 is exactly the desired conclusion.
+Step [](#s1-8){.pf-ref} is exactly the desired conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ When expressed in its usual decimal notation, the number $100!$ (that is, $100$ 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The number of trailing zeros of $100!$ is the exponent of $5$ in its prime factorization.
 
@@ -41,7 +41,7 @@ Each trailing zero contributes a factor of $10=2\cdot5$. In $100!$, every factor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The exponent of $5$ in $100!$ is
 $$
@@ -59,7 +59,7 @@ Each multiple of $5$ among $1,\dots,100$ contributes at least one factor of $5$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore $100!$ ends in
 $$
@@ -70,7 +70,7 @@ consecutive zeros, so the answer is (B).
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -78,7 +78,7 @@ Combine steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested number of trailing zeros.
+Step [](#s1-3){.pf-ref} gives the requested number of trailing zeros.
 
 :::
 

@@ -17,7 +17,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Urysohn Metrization Theorem.**
 
@@ -38,7 +38,7 @@ This is the theorem statement.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -79,7 +79,7 @@ Therefore $K$ is Hausdorff.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 \[
@@ -113,7 +113,7 @@ Hence $f$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The compact metric space $X$ has a countable basis
 \[
@@ -137,7 +137,7 @@ These form a countable basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -172,7 +172,7 @@ is countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For
 \[
@@ -198,7 +198,7 @@ The set
 X\setminus U
 \]
 is closed in $X$.
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 f(X\setminus U)
 \]
@@ -213,7 +213,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A point
 \[
@@ -255,7 +255,7 @@ lies in $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The family
 \[
@@ -323,7 +323,7 @@ F\subseteq U
 f^{-1}(O).
 \]
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 y\in V_U.
 \]
@@ -354,14 +354,14 @@ Hence the family is a basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The space $K$ is second countable.
 
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \mathcal U
 \]
@@ -370,13 +370,13 @@ Therefore the basis
 \[
 \{V_U:U\in\mathcal U\}
 \]
-from step <1>8 is countable.
+from step [](#s1-8){.pf-ref} is countable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The space $K$ is regular.
 
@@ -385,13 +385,13 @@ The space $K$ is regular.
 
 Every compact Hausdorff space is normal.
 In particular it is regular.
-By step <1>2, $K$ is compact Hausdorff.
+By step [](#s1-2){.pf-ref}, $K$ is compact Hausdorff.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -404,10 +404,10 @@ K=f(X)
 
 ::: pf-proof
 
-By step <1>2, $K$ is Hausdorff, hence $T_1$.
-By step <1>10, it is regular.
-By step <1>9, it is second countable.
-Apply the Urysohn Metrization Theorem from step <1>1.
+By step [](#s1-2){.pf-ref}, $K$ is Hausdorff, hence $T_1$.
+By step [](#s1-10){.pf-ref}, it is regular.
+By step [](#s1-9){.pf-ref}, it is second countable.
+Apply the Urysohn Metrization Theorem from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -415,7 +415,7 @@ Apply the Urysohn Metrization Theorem from step <1>1.
 
 ::: pf-qed
 
-Step <1>1 states the requested theorem, and steps <1>2--<1>11 prove that
+Step [](#s1-1){.pf-ref} states the requested theorem, and steps [](#s1-2){.pf-ref} through [](#s1-11){.pf-ref} prove that
 the continuous image of a compact metric space in a Hausdorff space is
 metrizable.
 

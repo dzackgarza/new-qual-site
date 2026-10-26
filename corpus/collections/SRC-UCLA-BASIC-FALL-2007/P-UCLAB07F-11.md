@@ -22,7 +22,7 @@ Show that $f$ is Riemann integrable if and only if $f^3$ is Riemann integrable.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $h:[0,1]\to\mathbb R$ be bounded and Riemann integrable, and let $\phi$ be continuous on a closed interval containing the range of $h$. Then $\phi\circ h$ is Riemann integrable.
 
@@ -104,14 +104,14 @@ By the Darboux criterion, $\phi\circ h$ is Riemann integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f$ is Riemann integrable, then $f^3$ is Riemann integrable.
 
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 \[
 h=f
 \]
@@ -125,14 +125,14 @@ The function $\phi$ is continuous on every bounded interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $f^3$ is Riemann integrable, then $f$ is Riemann integrable.
 
 
 ::: pf-proof
 
-Since $f$ is bounded, so is $f^3$. Apply step <1>1 with
+Since $f$ is bounded, so is $f^3$. Apply step [](#s1-1){.pf-ref} with
 \[
 h=f^3
 \]
@@ -154,7 +154,7 @@ Thus $f$ is Riemann integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -168,7 +168,7 @@ f^3\text{ is Riemann integrable}
 
 ::: pf-proof
 
-Step <1>2 proves the forward implication, and step <1>3 proves the reverse implication.
+Step [](#s1-2){.pf-ref} proves the forward implication, and step [](#s1-3){.pf-ref} proves the reverse implication.
 
 :::
 
@@ -176,7 +176,7 @@ Step <1>2 proves the forward implication, and step <1>3 proves the reverse impli
 
 ::: pf-qed
 
-Step <1>4 is the required equivalence.
+Step [](#s1-4){.pf-ref} is the required equivalence.
 
 :::
 

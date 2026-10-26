@@ -32,7 +32,7 @@ Show that if $M$ is $\generators{p}\dash$primary, then $S$ is pure if and only i
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $m\in M$ and $t\notin(p)$, then there is $a\in R$ with $atm=m$.
 
@@ -45,20 +45,20 @@ Choose $k>0$ such that $p^km=0$. In the PID $R$, the prime $p$ does not divide $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $(p)$-primary $R$-module $L$ and $t\notin(p)$, multiplication by $t$ is surjective on $L$.
 
 
 ::: pf-proof
 
-Given $\ell\in L$, the argument of step <1>1 applies verbatim to the $(p)$-primary module $L$ and produces an $a\in R$ such that $\ell=t(a\ell)$. Thus $tL=L$.
+Given $\ell\in L$, the argument of step [](#s1-1){.pf-ref} applies verbatim to the $(p)$-primary module $L$ and produces an $a\in R$ such that $\ell=t(a\ell)$. Thus $tL=L$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $S$ is pure in $M$, then $S\cap p^kM=p^kS$ for all $k\geq0$.
 
@@ -71,14 +71,14 @@ The defining identity of purity holds for every $r\in R$. In particular, it hold
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $S\cap p^kM=p^kS$ for all $k\geq0$, then $S$ is pure in $M$.
 
 
 ::: pf-proof
 
-Fix $r\in R$. If $r=0$, the required equality $S\cap rM=rS$ is immediate. Otherwise, unique factorization in the PID gives $r=up^kt$ for a unit $u\in R^\times$, an integer $k\geq0$, and $t\notin(p)$. The submodule $S$ of the $(p)$-primary module $M$ is itself $(p)$-primary. By step <1>2 applied to $M$ and to $S$, the equalities $tM=M$ and $tS=S$ hold. Multiplication by a unit also preserves both modules, so $rM=p^kM$ and $rS=p^kS$. The hypothesis therefore gives
+Fix $r\in R$. If $r=0$, the required equality $S\cap rM=rS$ is immediate. Otherwise, unique factorization in the PID gives $r=up^kt$ for a unit $u\in R^\times$, an integer $k\geq0$, and $t\notin(p)$. The submodule $S$ of the $(p)$-primary module $M$ is itself $(p)$-primary. By step [](#s1-2){.pf-ref} applied to $M$ and to $S$, the equalities $tM=M$ and $tS=S$ hold. Multiplication by a unit also preserves both modules, so $rM=p^kM$ and $rS=p^kS$. The hypothesis therefore gives
 \[
 S\cap rM=S\cap p^kM=p^kS=rS.
 \]
@@ -90,7 +90,7 @@ Since $r$ was arbitrary, $S$ is pure.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and steps <1>3 and <1>4 prove the two implications of part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove the two implications of part (b).
 
 :::
 

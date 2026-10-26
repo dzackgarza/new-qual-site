@@ -33,7 +33,7 @@ Give definitions of each of the following:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A Dynkin system on \(\Omega\) is a collection \(\mathcal D\subseteq\mathcal P(\Omega)\) such that \(\Omega\in\mathcal D\), whenever \(A,B\in\mathcal D\) with \(A\subseteq B\) one has \(B\setminus A\in\mathcal D\), and whenever \((A_n)_{n\ge1}\subseteq\mathcal D\) are pairwise disjoint one has \(\bigcup_{n=1}^\infty A_n\in\mathcal D\).
 
@@ -83,7 +83,7 @@ for every measurable set \(E\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A normed vector space is a vector space \(V\) over \(\mathbb R\) or \(\mathbb C\) together with a function \(\|\cdot\|:V\to[0,\infty)\) such that, for all \(x,y\in V\) and scalars \(\lambda\),
 \[
@@ -98,7 +98,7 @@ A normed vector space is a vector space \(V\) over \(\mathbb R\) or \(\mathbb C\
 
 ::: pf-qed
 
-Steps <1>1 through <1>6 give the six requested definitions.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} give the six requested definitions.
 
 :::
 

@@ -22,7 +22,7 @@ Problem 3. Let $f_n:[0,1]\to\mathbb R$ be monotonically increasing continuous fu
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The pointwise limit $f$ is nondecreasing.
 
@@ -74,7 +74,7 @@ implies
 |f(x)-f(y)|<\frac{\varepsilon}{3}.
 \]
 Choose a partition whose mesh is smaller than $\delta$.
-Since $f$ is nondecreasing by step <1>1,
+Since $f$ is nondecreasing by step [](#s1-1){.pf-ref},
 \[
 0\le f(x_j)-f(x_{j-1})<\frac{\varepsilon}{3}.
 \]
@@ -106,7 +106,7 @@ N=\max_j N_j.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $n\ge N$ and
 \[
@@ -149,7 +149,7 @@ f_n(x_j)-f(x_{j-1})\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the same hypotheses,
 \[
@@ -188,7 +188,7 @@ f(x_j)-f_n(x_{j-1})\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n\ge N$ and every $x\in[0,1]$,
 \[
@@ -199,7 +199,7 @@ For every $n\ge N$ and every $x\in[0,1]$,
 ::: pf-proof
 
 Choose the partition interval containing $x$.
-Steps <1>4 and <1>5 give
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give
 \[
 -\frac{2\varepsilon}{3}
 <
@@ -220,7 +220,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -230,7 +230,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 is exactly the definition of uniform convergence.
+Step [](#s1-6){.pf-ref} is exactly the definition of uniform convergence.
 
 :::
 
@@ -238,7 +238,7 @@ Step <1>6 is exactly the definition of uniform convergence.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

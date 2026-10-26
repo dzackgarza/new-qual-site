@@ -22,7 +22,7 @@ Let $z = e^{2\pi i/5}$. Evaluate $1 + z + z^2 + z^3 + 5z^4 + 4z^5 + 4z^6 + 4z^7 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 \[
@@ -45,7 +45,7 @@ z^5=e^{2\pi i}=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The given expression simplifies to
 \[
@@ -55,7 +55,7 @@ The given expression simplifies to
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 z^5=1,\qquad
 z^6=z,\qquad
@@ -72,7 +72,7 @@ Substitution and collection of like powers gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -93,7 +93,7 @@ Since $z\ne1$ and $z^5=1$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the value of the expression is
 \[
@@ -103,7 +103,7 @@ Therefore the value of the expression is
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 5+5z+5z^2+5z^3+10z^4
@@ -112,7 +112,7 @@ By step <1>2,
 &=5z^4
 \end{aligned}
 \]
-by step <1>3. Finally,
+by step [](#s1-3){.pf-ref}. Finally,
 \[
 z^4=e^{8\pi i/5}.
 \]
@@ -123,7 +123,7 @@ z^4=e^{8\pi i/5}.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

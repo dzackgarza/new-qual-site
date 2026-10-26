@@ -38,7 +38,7 @@ S_j
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The exponential maps
 \[
@@ -73,7 +73,7 @@ group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The biholomorphism
 \[
@@ -111,7 +111,7 @@ holomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is an integer \(k\) such that
 \[
@@ -129,7 +129,7 @@ Since
 \[
 e^{w+2\pi i}=e^w,
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 e^{\widetilde F(w+2\pi i)}
 =
@@ -152,7 +152,7 @@ discrete. Since \(S_1\) is connected, the integer is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In fact,
 \[
@@ -176,7 +176,7 @@ fundamental groups is an isomorphism. The only automorphisms of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Write
 \[
@@ -206,13 +206,13 @@ v(x+iy)+2\pi k.
 
 The image of \(\widetilde F\) lies in \(S_2\), so its real part lies between
 \(0\) and \(L_2\). The two periodicity identities are the real and imaginary
-parts of step <1>3.
+parts of step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define the vertical average
 \[
@@ -257,13 +257,13 @@ v(x+2\pi i)-v(x)
 k
 \end{aligned}
 \]
-by step <1>5.
+by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -273,11 +273,11 @@ One has
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 0<m(x)<L_2
 \]
-for every \(x\in(0,L_1)\). By steps <1>4 and <1>6,
+for every \(x\in(0,L_1)\). By steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref},
 \[
 |m(x_2)-m(x_1)|
 =
@@ -302,7 +302,7 @@ L_1\le L_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Applying the same argument to
 \[
@@ -317,14 +317,14 @@ gives
 ::: pf-proof
 
 The inverse of a biholomorphic map is biholomorphic. Interchanging the roles
-of the two annuli in steps <1>1 through <1>7 therefore yields the reverse
+of the two annuli in steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} therefore yields the reverse
 inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -334,13 +334,13 @@ L_1=L_2.
 
 ::: pf-proof
 
-Combine steps <1>7 and <1>8.
+Combine steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -354,7 +354,7 @@ By definition,
 \[
 L_j=\log R_j.
 \]
-Step <1>9 gives
+Step [](#s1-9){.pf-ref} gives
 \[
 \log R_1=\log R_2.
 \]
@@ -366,7 +366,7 @@ The logarithm is injective on \((0,\infty)\), so \(R_1=R_2\).
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

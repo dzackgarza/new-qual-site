@@ -33,7 +33,7 @@ Let $A$ be an $n \times n$ matrix over the complex numbers. Let $e^A = 1 + A + A
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The series
 $$
@@ -62,7 +62,7 @@ converges, so comparison proves absolute convergence of the matrix series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $S$ is invertible, then
 $$
@@ -76,7 +76,7 @@ For every $m\geq0$,
 $$
 (S^{-1}AS)^m=S^{-1}A^mS.
 $$
-By step <1>1 the exponential series converges absolutely, so termwise conjugation is valid:
+By step [](#s1-1){.pf-ref} the exponential series converges absolutely, so termwise conjugation is valid:
 $$
 \begin{aligned}
 e^{S^{-1}AS}
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is an invertible matrix $S$ such that
 $$
@@ -107,7 +107,7 @@ Over $\CC$, every matrix is triangularizable; for example, this is Schur's trian
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If the diagonal entries of $T$ are $\lambda_1,\ldots,\lambda_n$, then $e^T$ is upper triangular with diagonal entries
 $$
@@ -130,7 +130,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -140,11 +140,11 @@ $$
 
 ::: pf-proof
 
-By steps <1>2 and <1>3,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 $$
 e^T=S^{-1}e^AS,
 $$
-so $e^T$ and $e^A$ have the same determinant. By step <1>4,
+so $e^T$ and $e^A$ have the same determinant. By step [](#s1-4){.pf-ref},
 $$
 \det(e^A)
 =
@@ -166,7 +166,7 @@ Substitution gives the claimed identity.
 
 ::: pf-qed
 
-Step <1>1 proves convergence, and step <1>5 proves the determinant formula.
+Step [](#s1-1){.pf-ref} proves convergence, and step [](#s1-5){.pf-ref} proves the determinant formula.
 
 :::
 

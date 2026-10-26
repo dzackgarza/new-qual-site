@@ -62,7 +62,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -114,7 +114,7 @@ Hence $K$ is a right ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 $$
@@ -145,7 +145,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -179,7 +179,7 @@ one has
 $$
 \pi(x)=0.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 0
 =
@@ -204,7 +204,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -235,7 +235,7 @@ such that
 $$
 \pi(j)=\theta(r).
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \theta(r)=\pi(yr).
 $$
@@ -287,11 +287,11 @@ as right $R$-modules.
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 $$
 I\cap K=(0),
 $$
-and step <1>5 gives
+and step [](#s1-5){.pf-ref} gives
 $$
 I+K=J.
 $$
@@ -303,7 +303,7 @@ These are exactly the conditions for the internal direct sum.
 
 ::: pf-qed
 
-The right ideal $K=yR$ from step <1>2 satisfies both required properties by steps <1>4--<1>5.
+The right ideal $K=yR$ from step [](#s1-2){.pf-ref} satisfies both required properties by steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 

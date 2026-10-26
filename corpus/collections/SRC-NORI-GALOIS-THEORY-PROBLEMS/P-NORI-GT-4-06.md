@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The variable-permutation action defines an injective homomorphism
 $$
@@ -78,7 +78,7 @@ The set of elements fixed by every automorphism in a group is closed under addit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Artin's theorem on fixed fields gives
 $$
@@ -102,13 +102,13 @@ Apply the theorem with
 $$
 G=S_d
 $$
-and the faithful action from step <1>1.
+and the faithful action from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -126,7 +126,7 @@ $$
 
 ::: pf-proof
 
-This is the conclusion of step <1>3 written for the present fields.
+This is the conclusion of step [](#s1-3){.pf-ref} written for the present fields.
 
 :::
 
@@ -134,7 +134,7 @@ This is the conclusion of step <1>3 written for the present fields.
 
 ::: pf-qed
 
-Step <1>4 supplies the requested finite Galois extension realizing $S_d$ as a Galois group.
+Step [](#s1-4){.pf-ref} supplies the requested finite Galois extension realizing $S_d$ as a Galois group.
 
 :::
 

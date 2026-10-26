@@ -26,7 +26,7 @@ Show that $f$ is constant on $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $f=u+iv$ is analytic, the Cauchy--Riemann equations give
 \[
@@ -45,7 +45,7 @@ differentiable and satisfy the Cauchy--Riemann equations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -71,9 +71,9 @@ with respect to $x$ and $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Combining steps <1>1 and <1>2 gives
+Combining steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} gives
 \[
 u_x=2u,u_y
 \]
@@ -106,7 +106,7 @@ u_y=-v_x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -117,7 +117,7 @@ throughout $D$.
 
 ::: pf-proof
 
-Substitute the second equation of step <1>3 into the first:
+Substitute the second equation of step [](#s1-3){.pf-ref} into the first:
 \[
 u_x
 =
@@ -153,13 +153,13 @@ throughout $D$.
 
 ::: pf-proof
 
-Use the second equation of step <1>3:
+Use the second equation of step [](#s1-3){.pf-ref}:
 \[
 u_y
 =
 -2u,u_x.
 \]
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 \[
 u_x=0,
 \]
@@ -172,7 +172,7 @@ u_y=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $u$ is constant on $D$.
 
@@ -194,7 +194,7 @@ along every path in $D$ and therefore constant on $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The function $v$ is constant on $D$.
 
@@ -205,13 +205,13 @@ By hypothesis,
 \[
 v=u^2.
 \]
-Since $u$ is constant by step <1>6, so is $v$.
+Since $u$ is constant by step [](#s1-6){.pf-ref}, so is $v$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -224,7 +224,7 @@ f=u+iv
 
 ::: pf-proof
 
-Both its real and imaginary parts are constant by steps <1>6--<1>7.
+Both its real and imaginary parts are constant by steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -232,7 +232,7 @@ Both its real and imaginary parts are constant by steps <1>6--<1>7.
 
 ::: pf-qed
 
-Step <1>8 is the desired conclusion.
+Step [](#s1-8){.pf-ref} is the desired conclusion.
 
 :::
 

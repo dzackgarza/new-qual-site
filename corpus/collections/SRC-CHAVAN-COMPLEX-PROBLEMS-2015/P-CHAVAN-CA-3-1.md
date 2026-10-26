@@ -23,7 +23,7 @@ Show that $\arg$ is not continuous, and determine its set of discontinuities.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $\arg$ is discontinuous at every positive real number.
 
@@ -49,7 +49,7 @@ so $\arg$ is not continuous at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $\arg$ is continuous at every point
 $$
@@ -110,7 +110,7 @@ particular at $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set of discontinuities of $\arg$ is
 $$
@@ -120,8 +120,8 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that every positive real number is a discontinuity.
-Step <1>2 shows that every other point of the domain $\mathbb C^*$ is
+Step [](#s1-1){.pf-ref} shows that every positive real number is a discontinuity.
+Step [](#s1-2){.pf-ref} shows that every other point of the domain $\mathbb C^*$ is
 a continuity point. Since $0\notin\mathbb C^*$, these exhaust the
 domain.
 
@@ -131,7 +131,7 @@ domain.
 
 ::: pf-qed
 
-Step <1>3 gives the complete discontinuity set and, in particular,
+Step [](#s1-3){.pf-ref} gives the complete discontinuity set and, in particular,
 shows that $\arg$ is not continuous on $\mathbb C^*$.
 
 :::

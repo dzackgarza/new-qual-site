@@ -32,7 +32,7 @@ Also show that neither assumption 2 nor assumption 3 can be omitted while making
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every \(f_n\) lies in \(L^1(\mathbb R)\), and
 \[
@@ -61,7 +61,7 @@ Adding the two estimates proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The limit \(f\) satisfies
 \[
@@ -75,7 +75,7 @@ The limit \(f\) satisfies
 
 ::: pf-proof
 
-By assumption 1, the nonnegative functions \(|f_n|\), \(|f_n|^2\), and \(|x|\,|f_n|\) converge almost everywhere to \(|f|\), \(|f|^2\), and \(|x|\,|f|\), respectively. Applying [[FT-P5UNP|Fatou's lemma]] and using step <1>1 and assumptions 2--3 gives
+By assumption 1, the nonnegative functions \(|f_n|\), \(|f_n|^2\), and \(|x|\,|f_n|\) converge almost everywhere to \(|f|\), \(|f|^2\), and \(|x|\,|f|\), respectively. Applying [[FT-P5UNP|Fatou's lemma]] and using step [](#s1-1){.pf-ref} and assumptions 2--3 gives
 \[
 \int|f|\le\liminf_n\int|f_n|\le10\sqrt2+100,
 \]
@@ -89,7 +89,7 @@ By assumption 1, the nonnegative functions \(|f_n|\), \(|f_n|^2\), and \(|x|\,|f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(R>0\) and every \(n\),
 \[
@@ -99,7 +99,7 @@ For every \(R>0\) and every \(n\),
 
 ::: pf-proof
 
-By assumption 2 and step <1>2,
+By assumption 2 and step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \int_{|x|>R}|f_n-f|\,dx
@@ -114,7 +114,7 @@ By assumption 2 and step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix \(R>0\). For every \(\delta>0\) there is a measurable set \(E\subseteq[-R,R]\) with \(m(E)<\delta\) such that \(f_n\to f\) uniformly on \([-R,R]\setminus E\), and for every \(n\),
 \[
@@ -124,7 +124,7 @@ Fix \(R>0\). For every \(\delta>0\) there is a measurable set \(E\subseteq[-R,R]
 
 ::: pf-proof
 
-By [[FT-OGS76|Egorov's theorem]], such an \(E\) may be chosen because \([-R,R]\) has finite measure and \(f_n\to f\) almost everywhere there. By Cauchy--Schwarz, assumption 3, and step <1>2,
+By [[FT-OGS76|Egorov's theorem]], such an \(E\) may be chosen because \([-R,R]\) has finite measure and \(f_n\to f\) almost everywhere there. By Cauchy--Schwarz, assumption 3, and step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \int_E|f_n-f|\,dx
@@ -138,7 +138,7 @@ By [[FT-OGS76|Egorov's theorem]], such an \(E\) may be chosen because \([-R,R]\)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -148,11 +148,11 @@ One has
 
 ::: pf-proof
 
-Let \(\varepsilon>0\). Choose \(R\) so large that \(200/R<\varepsilon/3\), and then choose \(\delta>0\) so small that \(20\sqrt\delta<\varepsilon/3\). Take \(E\) from step <1>4. Uniform convergence on \([-R,R]\setminus E\) gives an \(N\) such that, for \(n\ge N\),
+Let \(\varepsilon>0\). Choose \(R\) so large that \(200/R<\varepsilon/3\), and then choose \(\delta>0\) so small that \(20\sqrt\delta<\varepsilon/3\). Take \(E\) from step [](#s1-4){.pf-ref}. Uniform convergence on \([-R,R]\setminus E\) gives an \(N\) such that, for \(n\ge N\),
 \[
 \sup_{[-R,R]\setminus E}|f_n-f|<\frac{\varepsilon}{6R}.
 \]
-Hence, by steps <1>3 and <1>4,
+Hence, by steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref},
 \[
 \begin{aligned}
 \|f_n-f\|_{L^1}
@@ -169,7 +169,7 @@ Hence, by steps <1>3 and <1>4,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Assumption 2 cannot be omitted.
 
@@ -197,7 +197,7 @@ Thus even the conclusion \(f_n\in L^1\) can fail without assumption 2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Assumption 3 cannot be omitted.
 
@@ -230,7 +230,7 @@ Thus even the conclusion \(f_n\in L^1\) can fail without assumption 3.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 establish all asserted conclusions, while steps <1>6 and <1>7 show that each of assumptions 2 and 3 is indispensable.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} establish all asserted conclusions, while steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} show that each of assumptions 2 and 3 is indispensable.
 
 :::
 

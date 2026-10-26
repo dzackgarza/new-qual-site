@@ -27,7 +27,7 @@ Compute:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral in part (a) is
 \[
@@ -50,7 +50,7 @@ is entire. The contour $\gamma$ is closed, so Cauchy's integral theorem gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Laurent expansion of the integrand in part (b) is
 \[
@@ -71,7 +71,7 @@ Expand the cube:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The integral in part (b) is
 \[
@@ -83,7 +83,7 @@ The integral in part (b) is
 
 ::: pf-proof
 
-The only singularity inside the circle is $z=0$. By step <1>2, the coefficient
+The only singularity inside the circle is $z=0$. By step [](#s1-2){.pf-ref}, the coefficient
 of $z^{-1}$ in the Laurent expansion is $0$, so the residue at $0$ is $0$.
 The residue theorem therefore gives the stated value.
 
@@ -91,7 +91,7 @@ The residue theorem therefore gives the stated value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The odd part of the integrand in part (c) integrates to zero:
 \[
@@ -113,7 +113,7 @@ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -142,7 +142,7 @@ $\theta$ ranges from $-\pi/2$ to $\pi/2$. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The integral in part (c) is
 \[
@@ -155,7 +155,7 @@ The integral in part (c) is
 ::: pf-proof
 
 Split the integral into the sum of its $x$ numerator term and its constant
-numerator term. Step <1>4 evaluates the first as $0$, and step <1>5 evaluates
+numerator term. Step [](#s1-4){.pf-ref} evaluates the first as $0$, and step [](#s1-5){.pf-ref} evaluates
 the second as $\pi/2$.
 
 :::
@@ -164,7 +164,7 @@ the second as $\pi/2$.
 
 ::: pf-qed
 
-Steps <1>1, <1>3, and <1>6 give the three requested values.
+Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-6){.pf-ref} give the three requested values.
 
 :::
 

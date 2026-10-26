@@ -27,7 +27,7 @@ If $f(x) = 2|x - 1| + (x - 1)^2$, what is the value of $f'(0)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In a neighborhood of $x=0$,
 $$
@@ -47,7 +47,7 @@ In particular this identity holds throughout a neighborhood of $0$, so substitut
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In that neighborhood,
 $$
@@ -57,7 +57,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the expression from step <1>1:
+Differentiate the expression from step [](#s1-1){.pf-ref}:
 $$
 f'(x)=-2+2(x-1)=2x-4.
 $$
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -77,7 +77,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Substituting $x=0$ into the derivative from step <1>2 gives $f'(0)=-4$.
+Substituting $x=0$ into the derivative from step [](#s1-2){.pf-ref} gives $f'(0)=-4$.
 
 :::
 
@@ -85,7 +85,7 @@ Substituting $x=0$ into the derivative from step <1>2 gives $f'(0)=-4$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested derivative value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested derivative value and corresponding choice.
 
 :::
 

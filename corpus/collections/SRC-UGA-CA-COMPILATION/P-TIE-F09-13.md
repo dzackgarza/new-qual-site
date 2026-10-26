@@ -39,7 +39,7 @@ The source prints this problem three times, as Fall 2009, question 13, and Fall 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist $a\in\CC$ and $r>0$ such that
 $$
@@ -56,7 +56,7 @@ that the disk $B(a,r)$ is contained in $\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in\CC$,
 $$
@@ -70,14 +70,14 @@ By hypothesis,
 $$
 f(\CC)\subseteq\CC\setminus\Omega.
 $$
-Since $B(a,r)\subseteq\Omega$ by step <1>1, no value $f(z)$ lies in $B(a,r)$. Thus its distance
+Since $B(a,r)\subseteq\Omega$ by step [](#s1-1){.pf-ref}, no value $f(z)$ lies in $B(a,r)$. Thus its distance
 from $a$ is at least $r$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -88,7 +88,7 @@ is entire and bounded.
 
 ::: pf-proof
 
-Step <1>2 shows that $f(z)-a$ never vanishes, so $g$ is entire. The same estimate gives
+Step [](#s1-2){.pf-ref} shows that $f(z)-a$ never vanishes, so $g$ is entire. The same estimate gives
 $$
 |g(z)|
 \le
@@ -100,14 +100,14 @@ for all $z\in\CC$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is constant.
 
 
 ::: pf-proof
 
-By Liouville's theorem, the bounded entire function $g$ from step <1>3 is constant. Since
+By Liouville's theorem, the bounded entire function $g$ from step [](#s1-3){.pf-ref} is constant. Since
 $g$ never vanishes,
 $$
 f(z)=a+\frac1{g(z)}
@@ -120,7 +120,7 @@ is constant as well.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

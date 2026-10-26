@@ -35,7 +35,7 @@ Let $\lambda$ be the eigenvalue such that $A\mathbf v=\lambda\mathbf v$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\lambda\neq 0$.
 
@@ -50,7 +50,7 @@ eigenvector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement I is true.
 
@@ -67,7 +67,7 @@ Since $\mathbf v\neq 0$, it is an eigenvector of $2A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement II is true.
 
@@ -85,7 +85,7 @@ Thus $\mathbf v$ is an eigenvector of $A^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement III is true.
 
@@ -96,7 +96,7 @@ Multiplying $A\mathbf v=\lambda\mathbf v$ by $A^{-1}$ gives
 \[
 \mathbf v=\lambda A^{-1}\mathbf v.
 \]
-By step <1>1, $\lambda$ is nonzero, so
+By step [](#s1-1){.pf-ref}, $\lambda$ is nonzero, so
 $A^{-1}\mathbf v=\lambda^{-1}\mathbf v$. Hence $\mathbf v$ is an
 eigenvector of $A^{-1}$.
 
@@ -104,14 +104,14 @@ eigenvector of $A^{-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the correct answer is $\boxed{\text{(E) I, II, and III}}$.
 
 
 ::: pf-proof
 
-Steps <1>2, <1>3, and <1>4 prove statements I, II, and III, respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} prove statements I, II, and III, respectively.
 
 :::
 
@@ -119,7 +119,7 @@ Steps <1>2, <1>3, and <1>4 prove statements I, II, and III, respectively.
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

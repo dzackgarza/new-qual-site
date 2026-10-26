@@ -30,7 +30,7 @@ Fix $0<r<R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On $|z|=r$, the series
 $$
@@ -65,7 +65,7 @@ The Weierstrass $M$-test therefore gives absolute uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -80,7 +80,7 @@ and the double series may be integrated term by term on $[0,2\pi]$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \sum_{n=0}^{\infty}|c_n|r^n<\infty.
 $$
@@ -100,7 +100,7 @@ convergent, so termwise integration is valid.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For integers $n,m\ge0$,
 $$
@@ -129,7 +129,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Parseval's identity in the problem holds:
 $$
@@ -143,7 +143,7 @@ $$
 
 ::: pf-proof
 
-Integrate the expansion from step <1>2 term by term. By step <1>3, every term with
+Integrate the expansion from step [](#s1-2){.pf-ref} term by term. By step [](#s1-3){.pf-ref}, every term with
 $n\ne m$ integrates to zero, while the term with $n=m$ contributes
 $|c_n|^2r^{2n}$.
 
@@ -151,7 +151,7 @@ $|c_n|^2r^{2n}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $f$ is entire and bounded, then every coefficient $c_n$ with $n\ge1$ vanishes.
 
@@ -164,7 +164,7 @@ $$
 \qquad
 \text{for all }z\in\CC.
 $$
-Since an entire function has radius of convergence $R=\infty$, step <1>4 applies for every
+Since an entire function has radius of convergence $R=\infty$, step [](#s1-4){.pf-ref} applies for every
 $r>0$ and gives
 $$
 \sum_{k=0}^{\infty}|c_k|^2r^{2k}
@@ -188,14 +188,14 @@ Letting $r\to\infty$ yields $c_n=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every bounded entire function is constant.
 
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 f(z)=c_0.
 $$
@@ -207,7 +207,7 @@ This is Liouville's theorem.
 
 ::: pf-qed
 
-Step <1>4 proves part (1), and step <1>6 proves part (2).
+Step [](#s1-4){.pf-ref} proves part (1), and step [](#s1-6){.pf-ref} proves part (2).
 
 :::
 

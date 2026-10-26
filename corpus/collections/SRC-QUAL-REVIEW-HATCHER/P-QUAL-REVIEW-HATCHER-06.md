@@ -83,7 +83,7 @@ Here \(g=1\) and \(b=2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Gluing two surfaces along a boundary circle does not change the sum of their Euler characteristics.
 
@@ -106,7 +106,7 @@ the Euler characteristics simply add.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the cyclic gluing of the five pieces has
 \[
@@ -117,13 +117,13 @@ Therefore the cyclic gluing of the five pieces has
 
 ::: pf-proof
 
-Start with the disjoint union of the five pieces, whose total Euler characteristic is \(-10\). Perform the five boundary-circle gluings. By step <1>4, each gluing leaves the total Euler characteristic unchanged.
+Start with the disjoint union of the five pieces, whose total Euler characteristic is \(-10\). Perform the five boundary-circle gluings. By step [](#s1-4){.pf-ref}, each gluing leaves the total Euler characteristic unchanged.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If \(X\cong T_g\), then
 \[
@@ -149,13 +149,13 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>5--<1>6.
+Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Solving,
 \[
@@ -177,7 +177,7 @@ g=6.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -188,7 +188,7 @@ X\cong T_6}.
 
 ::: pf-proof
 
-By the classification theorem for closed connected orientable surfaces, the genus is determined by the Euler characteristic. Step <1>8 gives genus \(6\).
+By the classification theorem for closed connected orientable surfaces, the genus is determined by the Euler characteristic. Step [](#s1-8){.pf-ref} gives genus \(6\).
 
 :::
 
@@ -196,7 +196,7 @@ By the classification theorem for closed connected orientable surfaces, the genu
 
 ::: pf-qed
 
-Step <1>9 identifies the surface in the classification list.
+Step [](#s1-9){.pf-ref} identifies the surface in the classification list.
 
 :::
 

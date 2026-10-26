@@ -52,7 +52,7 @@ of $z^6=-1$. Exactly the three listed roots have positive imaginary part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\zeta^6=-1$, then
 $$
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sum of the residues in the upper half-plane is
 $$
@@ -89,7 +89,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \sum_{j=1}^{3}
 \operatorname{Res}_{z=\zeta_j}F(z)
@@ -109,7 +109,7 @@ the expression in parentheses is $2i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $C_R$ be the positively oriented contour consisting of
 $[-R,R]$ and the upper semicircle of radius $R$, with $R>1$. Then
@@ -122,7 +122,7 @@ $$
 
 ::: pf-proof
 
-By the residue theorem and step <1>3,
+By the residue theorem and step [](#s1-3){.pf-ref},
 $$
 \int_{C_R}F(z)\,dz
 =
@@ -136,7 +136,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The integral over the upper semicircle tends to zero as
 $R\to\infty$.
@@ -164,7 +164,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -179,7 +179,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 $$
 \int_{-R}^{R}\frac{dx}{1+x^6}
 +
@@ -187,7 +187,7 @@ $$
 =
 \frac{2\pi}{3}.
 $$
-Let $R\to\infty$ and use step <1>5.
+Let $R\to\infty$ and use step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -195,7 +195,7 @@ Let $R\to\infty$ and use step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required value.
+Step [](#s1-6){.pf-ref} is the required value.
 
 :::
 

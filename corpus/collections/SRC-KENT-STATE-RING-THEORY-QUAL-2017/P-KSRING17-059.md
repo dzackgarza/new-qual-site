@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The element $p$ is irreducible.
 
@@ -131,7 +131,7 @@ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The inclusion
 $$
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Either
 $$
@@ -181,11 +181,11 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 p=ar.
 $$
-Since $p$ is irreducible by step <1>1, either
+Since $p$ is irreducible by step [](#s1-1){.pf-ref}, either
 $$
 a
 $$
@@ -221,7 +221,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -231,7 +231,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 shows that there is no proper ideal strictly between
+Step [](#s1-4){.pf-ref} shows that there is no proper ideal strictly between
 $$
 P=(p)
 $$
@@ -247,7 +247,7 @@ Since $P$ is prime, it is proper. Hence it is maximal.
 
 ::: pf-qed
 
-Since $P$ was an arbitrary nonzero prime ideal, step <1>5 proves the theorem.
+Since $P$ was an arbitrary nonzero prime ideal, step [](#s1-5){.pf-ref} proves the theorem.
 
 :::
 

@@ -49,7 +49,7 @@ The hypothesis should be $a \in \mathbb{R}$, $a \ne 0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $n=1$,
 $$
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer $n>1$,
 $$
@@ -158,7 +158,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $a>0$,
 $$
@@ -232,7 +232,7 @@ which gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every real $a\ne0$,
 $$
@@ -248,13 +248,13 @@ $$
 
 ::: pf-proof
 
-The integrand depends on $a$ only through $a^2$. Thus replacing $a$ by $\abs{a}>0$ in step <1>3 gives the formula for every nonzero real $a$. The case $a=0$ diverges, as recorded in the erratum.
+The integrand depends on $a$ only through $a^2$. Thus replacing $a$ by $\abs{a}>0$ in step [](#s1-3){.pf-ref} gives the formula for every nonzero real $a$. The case $a=0$ diverges, as recorded in the erratum.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $a>1$,
 $$
@@ -323,7 +323,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For $a>0$,
 $$
@@ -377,7 +377,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -426,7 +426,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For $0<a<1$ and $\xi\ne0$,
 $$
@@ -540,7 +540,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 At $\xi=0$,
 $$
@@ -561,7 +561,7 @@ $$
 \frac{\sin\pi a}
 {\cosh\pi x+\cos\pi a}
 $$
-is integrable on $\RR$, because it decays exponentially as $\abs{x}\to\infty$. Hence the Fourier integral in step <1>8 is continuous at $\xi=0$ by dominated convergence. Therefore
+is integrable on $\RR$, because it decays exponentially as $\abs{x}\to\infty$. Hence the Fourier integral in step [](#s1-8){.pf-ref} is continuous at $\xi=0$ by dominated convergence. Therefore
 $$
 I(0)
 =
@@ -575,7 +575,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Finally,
 $$
@@ -614,7 +614,7 @@ The residue theorem therefore gives the stated contour integral.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 evaluate part (i), steps <1>3--<1>4 evaluate part (ii) with the corrected hypothesis $a\ne0$, and steps <1>5--<1>10 evaluate parts (iii)--(vii).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} evaluate part (i), steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} evaluate part (ii) with the corrected hypothesis $a\ne0$, and steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} evaluate parts (iii)--(vii).
 
 :::
 

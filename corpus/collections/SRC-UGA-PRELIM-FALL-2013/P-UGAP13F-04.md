@@ -23,7 +23,7 @@ Use the definition of a limit to show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -67,7 +67,7 @@ Take absolute values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -125,7 +125,7 @@ Since this quantity is positive,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the same restriction,
 \[
@@ -141,7 +141,7 @@ Under the same restriction,
 
 ::: pf-proof
 
-Insert the bounds from step <1>2 into step <1>1:
+Insert the bounds from step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}:
 \[
 \begin{aligned}
 \left|
@@ -204,7 +204,7 @@ This choice ensures both:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -228,7 +228,7 @@ Since
 \[
 \delta\le\frac12,
 \]
-step <1>3 applies:
+step [](#s1-3){.pf-ref} applies:
 \[
 \left|
 \frac1{x^2-1}
@@ -257,7 +257,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -272,7 +272,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 is exactly the
+Step [](#s1-5){.pf-ref} is exactly the
 \[
 \varepsilon\text{--}\delta
 \]
@@ -284,7 +284,7 @@ definition of the limit.
 
 ::: pf-qed
 
-Step <1>6 is the desired conclusion.
+Step [](#s1-6){.pf-ref} is the desired conclusion.
 
 :::
 

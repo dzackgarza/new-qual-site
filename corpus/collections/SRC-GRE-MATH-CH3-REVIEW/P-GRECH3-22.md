@@ -28,7 +28,7 @@ The function $f(x,y)=x^3+y^3-3xy$ has a local minimum at exactly one point, $P$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The only critical points of $f$ are
 $$
@@ -61,7 +61,7 @@ Thus $x=0$ or $x=1$, and then $y=x^2$ gives the two displayed points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The point $(0,0)$ is a saddle point, while $(1,1)$ is a strict local minimum.
 
@@ -90,13 +90,13 @@ $$
 \qquad\text{and}\qquad
 f_{xx}(1,1)=6>0,
 $$
-so the second-derivative test gives a strict local minimum there. By step <1>1 there are no other critical points, hence no other local minima.
+so the second-derivative test gives a strict local minimum there. By step [](#s1-1){.pf-ref} there are no other critical points, hence no other local minima.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At the unique local minimum,
 $$
@@ -107,7 +107,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>2, the minimum point is $P=(1,1)$. Therefore
+By step [](#s1-2){.pf-ref}, the minimum point is $P=(1,1)$. Therefore
 $$
 f(P)=1^3+1^3-3(1)(1)=-1.
 $$
@@ -118,7 +118,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

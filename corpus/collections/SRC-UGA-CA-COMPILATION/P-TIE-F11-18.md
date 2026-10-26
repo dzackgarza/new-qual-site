@@ -65,7 +65,7 @@ as $z\to z_0$. Hence $h$ is complex differentiable at $z_0$ and $h'(z_0)=0$. Thu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ extends analytically across $z_0$.
 
@@ -102,7 +102,7 @@ Then $\widetilde f$ is analytic on all of $\Omega$ and agrees with $f$ away from
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every triangle $\Delta$ whose closed interior lies in $\Omega$,
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $\widetilde f$ is analytic on $\Omega$. Cauchy--Goursat therefore gives
+By step [](#s1-2){.pf-ref}, $\widetilde f$ is analytic on $\Omega$. Cauchy--Goursat therefore gives
 $$
 \int_{\partial\Delta}\widetilde f(z)\,dz=0.
 $$
@@ -132,7 +132,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 proves the required vanishing for every triangle in $\Omega$.
+Step [](#s1-3){.pf-ref} proves the required vanishing for every triangle in $\Omega$.
 
 :::
 

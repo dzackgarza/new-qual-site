@@ -21,7 +21,7 @@ $\mathrm { C a l c u l a t e } \int \frac { x ^ { 5 } + 2 } { x ^ { 2 } - 1 } d 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Polynomial division gives
 $$
@@ -47,7 +47,7 @@ Subtracting from $x^5+2$ leaves the remainder $x+2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The proper rational term decomposes as
 $$
@@ -94,7 +94,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -110,13 +110,13 @@ $$
 
 ::: pf-proof
 
-Substitute steps <1>1--<1>2 into the integral and use linearity.
+Substitute steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} into the integral and use linearity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-Integrate each term in step <1>3.
+Integrate each term in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -146,7 +146,7 @@ Integrate each term in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required antiderivative on each interval avoiding
+Step [](#s1-4){.pf-ref} is the required antiderivative on each interval avoiding
 $x=\pm1$.
 
 :::

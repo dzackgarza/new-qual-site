@@ -34,7 +34,7 @@ Set $y=\log x$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $y=0$ or $y=2$.
 
@@ -55,7 +55,7 @@ Thus $y=0$ or $y=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The roots are
 $$
@@ -66,7 +66,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Since the logarithm is defined only for $x>0$, exponentiating the alternatives from step <1>1 gives
+Since the logarithm is defined only for $x>0$, exponentiating the alternatives from step [](#s1-1){.pf-ref} gives
 $$
 x=e^0=1
 \quad\text{or}\quad
@@ -80,7 +80,7 @@ Both values are positive and therefore lie in the domain of the original equatio
 
 ::: pf-qed
 
-Step <1>2 gives all solutions of the transformed equation within the logarithm's domain.
+Step [](#s1-2){.pf-ref} gives all solutions of the transformed equation within the logarithm's domain.
 
 :::
 

@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial of $T$ is
 \[
@@ -47,7 +47,7 @@ The matrix $T$ is upper triangular, so its characteristic polynomial is the prod
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose first that
 \[
@@ -115,7 +115,7 @@ and therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -126,8 +126,8 @@ then $T$ is not diagonalizable.
 
 ::: pf-proof
 
-By step <1>1, the eigenvalue $1$ has algebraic multiplicity $2$.
-By step <1>2, its eigenspace has dimension $1$.
+By step [](#s1-1){.pf-ref}, the eigenvalue $1$ has algebraic multiplicity $2$.
+By step [](#s1-2){.pf-ref}, its eigenspace has dimension $1$.
 A diagonalizable matrix must have, for each eigenvalue, geometric multiplicity equal to algebraic multiplicity.
 Therefore $T$ is not diagonalizable.
 
@@ -135,7 +135,7 @@ Therefore $T$ is not diagonalizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose now that
 \[
@@ -146,7 +146,7 @@ Then the only eigenvalue of $T$ is $1$.
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 \chi_T(t)=(t-1)^3.
 \]
@@ -155,7 +155,7 @@ Step <1>1 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -214,7 +214,7 @@ Thus the eigenspace is one-dimensional.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -225,15 +225,15 @@ then $T$ is not diagonalizable.
 
 ::: pf-proof
 
-The only eigenvalue is $1$ by step <1>4, so if $T$ were diagonalizable, there would have to be a basis of three eigenvectors for eigenvalue $1$.
-But step <1>5 shows that the eigenspace has dimension only $1$.
+The only eigenvalue is $1$ by step [](#s1-4){.pf-ref}, so if $T$ were diagonalizable, there would have to be a basis of three eigenvectors for eigenvalue $1$.
+But step [](#s1-5){.pf-ref} shows that the eigenspace has dimension only $1$.
 Hence $T$ is not diagonalizable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore for every
 \[
@@ -248,11 +248,11 @@ the matrix $T$ is not diagonalizable.
 
 ::: pf-proof
 
-Step <1>3 covers the case
+Step [](#s1-3){.pf-ref} covers the case
 \[
 \lambda\ne1,
 \]
-and step <1>6 covers the case
+and step [](#s1-6){.pf-ref} covers the case
 \[
 \lambda=1.
 \]
@@ -264,7 +264,7 @@ These cases exhaust all possibilities.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

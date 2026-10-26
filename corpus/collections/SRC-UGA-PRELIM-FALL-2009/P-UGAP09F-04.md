@@ -27,7 +27,7 @@ Then use the definition to show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A finite limit $\lim_{x\to x_0}f(x)$ exists if there is an $L\in\RR$ such that for every $\varepsilon>0$ there is a $\delta>0$ for which
 $$
@@ -46,7 +46,7 @@ This is the $\varepsilon$-$\delta$ definition of the assertion that $f(x)$ tends
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x\ge0$,
 $$
@@ -68,7 +68,7 @@ Since $x\ge0$, one has $\sqrt{x}+\frac12\ge\frac12$, and the claimed inequality 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -82,14 +82,14 @@ Let $\varepsilon>0$ and choose
 $$
 \delta\coloneqq\frac{\varepsilon}{2}.
 $$
-If $x\ge0$ and $0<|x-1/4|<\delta$, then step <1>2 gives
+If $x\ge0$ and $0<|x-1/4|<\delta$, then step [](#s1-2){.pf-ref} gives
 $$
 \left|\sqrt{x}-\frac12\right|
 \le2\left|x-\frac14\right|
 <2\delta
 =\varepsilon.
 $$
-By the definition in step <1>1, the stated limit follows.
+By the definition in step [](#s1-1){.pf-ref}, the stated limit follows.
 
 :::
 
@@ -97,7 +97,7 @@ By the definition in step <1>1, the stated limit follows.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition and step <1>3 proves the requested limit.
+Step [](#s1-1){.pf-ref} gives the requested definition and step [](#s1-3){.pf-ref} proves the requested limit.
 
 :::
 

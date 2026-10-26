@@ -113,7 +113,7 @@ The displayed matrix is the standard rotation matrix on the first two coordinate
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -150,7 +150,7 @@ Q^T=Q.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In the standard basis,
 \[
@@ -171,13 +171,13 @@ QRQ^{-1}
 =
 QRQ^T.
 \]
-Step <1>3 computes the inverse explicitly.
+Step [](#s1-3){.pf-ref} computes the inverse explicitly.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Over $\mathbb R$, the only eigenvalue of $A$ is
 \[
@@ -207,7 +207,7 @@ The final diagonal entry of $R$ is $1$, so $1$ is the only real eigenvalue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Over $\mathbb C$, the eigenvalues are
 \[
@@ -242,7 +242,7 @@ Together with the fixed-axis eigenvalue $1$, these are all three complex eigenva
 
 ::: pf-qed
 
-Step <1>4 answers part (a), step <1>5 answers part (b), and step <1>6 answers part (c).
+Step [](#s1-4){.pf-ref} answers part (a), step [](#s1-5){.pf-ref} answers part (b), and step [](#s1-6){.pf-ref} answers part (c).
 
 :::
 

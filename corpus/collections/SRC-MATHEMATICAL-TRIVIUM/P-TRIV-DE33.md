@@ -23,7 +23,7 @@ Assume throughout that the zeros $x_i$ of $f$ are simple, so $f'(x_i)\ne0$. The 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every test function $\phi$,
 \[
@@ -46,7 +46,7 @@ Using $u=\alpha x$ and reversing the integration limits when $\alpha<0$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the correct scaling identity is
 \[
@@ -56,7 +56,7 @@ Therefore the correct scaling identity is
 
 ::: pf-proof
 
-Step <1>1 agrees with the action of $|\alpha|^{-1}\delta$ on every test function. If the source implicitly assumes $\alpha>0$, this reduces to its stated formula $\delta(\alpha x)=\alpha^{-1}\delta(x)$.
+Step [](#s1-1){.pf-ref} agrees with the action of $|\alpha|^{-1}\delta$ on every test function. If the source implicitly assumes $\alpha>0$, this reduces to its stated formula $\delta(\alpha x)=\alpha^{-1}\delta(x)$.
 
 :::
 
@@ -75,7 +75,7 @@ Since $f'(x_i)\ne0$, the inverse function theorem supplies such an interval. The
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every test function $\phi$ supported in the union of these intervals,
 \[
@@ -99,7 +99,7 @@ Summing over the disjoint neighborhoods gives the identity. Regions containing n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence, distributionally,
 \[
@@ -110,7 +110,7 @@ Hence, distributionally,
 
 ::: pf-proof
 
-The right side acts on a test function as the expression obtained in step <1>4. A partition of unity reduces an arbitrary compactly supported test function to neighborhoods of the zeros and a region disjoint from them.
+The right side acts on a test function as the expression obtained in step [](#s1-4){.pf-ref}. A partition of unity reduces an arbitrary compactly supported test function to neighborhoods of the zeros and a region disjoint from them.
 
 :::
 
@@ -118,7 +118,7 @@ The right side acts on a test function as the expression obtained in step <1>4. 
 
 ::: pf-qed
 
-Step <1>2 proves the scaling law, with the necessary absolute value for arbitrary real $\alpha$, and step <1>5 proves the general simple-zero formula.
+Step [](#s1-2){.pf-ref} proves the scaling law, with the necessary absolute value for arbitrary real $\alpha$, and step [](#s1-5){.pf-ref} proves the general simple-zero formula.
 
 :::
 

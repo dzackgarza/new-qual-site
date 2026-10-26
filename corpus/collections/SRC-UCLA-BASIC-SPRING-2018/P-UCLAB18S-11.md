@@ -25,7 +25,7 @@ Hint: assume $x\notin f(X)$ and follow the iterates of $f$ on $x$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $f$ is not surjective. Then there is $x_0\in X\setminus f(X)$ and a number $\delta>0$ such that
 $$
@@ -42,7 +42,7 @@ If $f$ is not surjective, choose $x_0\notin f(X)$. The map $f$ is an isometry an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define $x_n=f^n(x_0)$ for $n\ge0$. If $m>n$, then
 $$
@@ -62,20 +62,20 @@ Since $m-n\ge1$, one has
 $$
 x_{m-n}=f(x_{m-n-1})\in f(X).
 $$
-The definition of $\delta$ in step <1>1 therefore gives $\rho(x_{m-n},x_0)\ge\delta$.
+The definition of $\delta$ in step [](#s1-1){.pf-ref} therefore gives $\rho(x_{m-n},x_0)\ge\delta$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(x_n)_{n\ge0}$ has no convergent subsequence.
 
 
 ::: pf-proof
 
-By step <1>2, any two distinct terms of the sequence are at distance at least $\delta$. Every convergent sequence is Cauchy, whereas no subsequence of $(x_n)$ can be Cauchy: for two distinct terms in any subsequence, their distance is at least $\delta$. Hence no subsequence converges.
+By step [](#s1-2){.pf-ref}, any two distinct terms of the sequence are at distance at least $\delta$. Every convergent sequence is Cauchy, whereas no subsequence of $(x_n)$ can be Cauchy: for two distinct terms in any subsequence, their distance is at least $\delta$. Hence no subsequence converges.
 
 :::
 
@@ -83,7 +83,7 @@ By step <1>2, any two distinct terms of the sequence are at distance at least $\
 
 ::: pf-qed
 
-Compact metric spaces are sequentially compact, so every sequence in $X$ has a convergent subsequence. Step <1>3 contradicts this for the sequence $(x_n)$. Therefore the assumption in step <1>1 was false, and $f$ is surjective.
+Compact metric spaces are sequentially compact, so every sequence in $X$ has a convergent subsequence. Step [](#s1-3){.pf-ref} contradicts this for the sequence $(x_n)$. Therefore the assumption in step [](#s1-1){.pf-ref} was false, and $f$ is surjective.
 
 :::
 

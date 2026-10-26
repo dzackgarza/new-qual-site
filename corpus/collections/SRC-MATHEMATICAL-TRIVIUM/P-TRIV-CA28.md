@@ -80,7 +80,7 @@ the upper saddle $i$ rather than the lower saddle $-i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At the saddle,
 $$
@@ -118,7 +118,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A local steepest-descent coordinate at $i$ is
 $$
@@ -163,7 +163,7 @@ which is real and negative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Along this local coordinate,
 $$
@@ -191,13 +191,13 @@ $$
 +
 O(\delta^3).
 $$
-Use steps <1>3--<1>4 and multiply by $x$.
+Use steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} and multiply by $x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The amplitude satisfies
 $$
@@ -230,7 +230,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 With the contour orientation inherited from the original integral, the
 local steepest-descent parameter $u$ runs from $+\infty$ to $-\infty$.
@@ -263,7 +263,7 @@ oriented local integral runs from $+\infty$ to $-\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The leading saddle contribution is
 $$
@@ -280,7 +280,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>5--<1>7,
+By steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref},
 $$
 \begin{aligned}
 H_\nu^{(1)}(x)
@@ -308,7 +308,7 @@ The Gaussian integral equals $\sqrt{2\pi}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -338,7 +338,7 @@ i^{-\nu-1}
 =
 e^{-i\pi(\nu+1)/2}
 $$
-in step <1>8. Also
+in step [](#s1-8){.pf-ref}. Also
 $$
 -\frac1i=i.
 $$
@@ -361,7 +361,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 More generally, the full large-$x$ expansion has the form
 $$
@@ -422,7 +422,7 @@ i
 }
 a_k.
 $$
-Step <1>9 fixes
+Step [](#s1-9){.pf-ref} fixes
 $$
 a_0
 =
@@ -461,7 +461,7 @@ $$
 
 ::: pf-proof
 
-Expand the first terms of the series in step <1>10.
+Expand the first terms of the series in step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -469,7 +469,7 @@ Expand the first terms of the series in step <1>10.
 
 ::: pf-qed
 
-Step <1>9 gives the leading asymptotic behavior, and step <1>10 gives the full
+Step [](#s1-9){.pf-ref} gives the leading asymptotic behavior, and step [](#s1-10){.pf-ref} gives the full
 asymptotic expansion.
 
 :::

@@ -30,7 +30,7 @@ then $0$ belongs to the closed convex hull of $\{a_n:n\ge1\}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each $N\ge1$, let
 \[
@@ -53,7 +53,7 @@ That would make $H$ finite dimensional, contrary to the assumption. Thus every $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $(a_n)$ spans $H$ linearly, then
 \[
@@ -71,7 +71,7 @@ Every vector in the algebraic span of the sequence is a finite linear combinatio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $(a_n)$ spans $H$ linearly, then
 \[
@@ -81,7 +81,7 @@ If $(a_n)$ spans $H$ linearly, then
 
 ::: pf-proof
 
-Suppose $H$ were infinite dimensional. By step <1>1, each $S_N$ would be nowhere dense, while step <1>2 would write the complete metric space $H$ as a countable union of nowhere dense sets. This contradicts the Baire category theorem.
+Suppose $H$ were infinite dimensional. By step [](#s1-1){.pf-ref}, each $S_N$ would be nowhere dense, while step [](#s1-2){.pf-ref} would write the complete metric space $H$ as a countable union of nowhere dense sets. This contradicts the Baire category theorem.
 
 :::
 
@@ -139,7 +139,7 @@ for every $j\le k$. Continue until $r$ indices have been selected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The convex combination
 \[
@@ -194,7 +194,7 @@ Hence $\|c\|<\varepsilon$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -208,7 +208,7 @@ One has
 
 ::: pf-proof
 
-For every $\varepsilon>0$, step <1>5 produces a convex combination of the $a_n$ lying in the open ball $B(0,\varepsilon)$. Thus every neighborhood of $0$ meets the convex hull, which is exactly the assertion that $0$ belongs to its closure.
+For every $\varepsilon>0$, step [](#s1-5){.pf-ref} produces a convex combination of the $a_n$ lying in the open ball $B(0,\varepsilon)$. Thus every neighborhood of $0$ meets the convex hull, which is exactly the assertion that $0$ belongs to its closure.
 
 :::
 
@@ -216,7 +216,7 @@ For every $\varepsilon>0$, step <1>5 produces a convex combination of the $a_n$ 
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

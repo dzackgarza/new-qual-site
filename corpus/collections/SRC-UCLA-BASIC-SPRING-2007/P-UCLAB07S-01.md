@@ -65,7 +65,7 @@ Thus $A^TA$ is positive definite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently
 \[
@@ -103,7 +103,7 @@ Since it is a square matrix, it is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The normal equations
 \[
@@ -120,13 +120,13 @@ x^*
 
 ::: pf-proof
 
-This follows immediately from invertibility in step <1>2.
+This follows immediately from invertibility in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -160,7 +160,7 @@ A^Tr=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The residual $r$ is orthogonal to the column space of $A$.
 
@@ -187,7 +187,7 @@ r^TAy\\
 0
 \end{aligned}
 \]
-by step <1>4.
+by step [](#s1-4){.pf-ref}.
 Thus
 \[
 r\perp\operatorname{im}A.
@@ -197,7 +197,7 @@ r\perp\operatorname{im}A.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 \[
@@ -236,7 +236,7 @@ Ax-b.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The two vectors
 \[
@@ -255,13 +255,13 @@ The first lies in
 \[
 \operatorname{im}A.
 \]
-The second is orthogonal to $\operatorname{im}A$ by step <1>5.
+The second is orthogonal to $\operatorname{im}A$ by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every
 \[
@@ -281,13 +281,13 @@ g(x)
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 Ax-b
 =
 A(x-x^*)-r.
 \]
-By step <1>7, the summands are orthogonal.
+By step [](#s1-7){.pf-ref}, the summands are orthogonal.
 The Pythagorean theorem therefore gives
 \[
 \|Ax-b\|_2^2
@@ -306,14 +306,14 @@ the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The vector $x^*$ is the unique minimizer of $g$.
 
 
 ::: pf-proof
 
-Step <1>8 shows
+Step [](#s1-8){.pf-ref} shows
 \[
 g(x)
 \ge
@@ -340,7 +340,7 @@ Hence $x^*$ is the unique minimizer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the vector minimizing
 \[
@@ -354,7 +354,7 @@ is exactly the unique solution of
 
 ::: pf-proof
 
-Step <1>3 gives the unique solution of the normal equations, and step <1>9 proves that this vector is exactly the unique minimizer.
+Step [](#s1-3){.pf-ref} gives the unique solution of the normal equations, and step [](#s1-9){.pf-ref} proves that this vector is exactly the unique minimizer.
 
 :::
 
@@ -362,7 +362,7 @@ Step <1>3 gives the unique solution of the normal equations, and step <1>9 prove
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

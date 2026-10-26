@@ -21,7 +21,7 @@ Determine whether $f$ is continuous, and prove your answer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the included-point topology on $Y$, the singleton
 \[
@@ -48,7 +48,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The preimage of this open set is
 \[
@@ -73,7 +73,7 @@ t=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set
 \[
@@ -95,7 +95,7 @@ Thus no open interval about $1$ is contained in the singleton.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -109,7 +109,7 @@ f\text{ is not continuous}.
 
 Continuity would require the preimage of every open subset of $Y$ to be
 open in $X$.
-Steps <1>1--<1>3 give an open set
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give an open set
 \[
 \{0\}\subseteq Y
 \]
@@ -125,7 +125,7 @@ is not open in $X$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

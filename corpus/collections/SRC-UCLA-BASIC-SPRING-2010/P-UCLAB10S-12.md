@@ -35,7 +35,7 @@ Both assertions are false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), define
 \[
@@ -83,14 +83,14 @@ Therefore no constant $B$ can bound all the functions simultaneously.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently assertion (a) is false.
 
 
 ::: pf-proof
 
-The sequence $(g_n)$ from step <1>1 consists of continuous nonnegative functions with integrals tending to $0$, but
+The sequence $(g_n)$ from step [](#s1-1){.pf-ref} consists of continuous nonnegative functions with integrals tending to $0$, but
 \[
 \sup_{n,x}g_n(x)=\infty.
 \]
@@ -100,7 +100,7 @@ Hence the asserted uniform bound need not exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (b), for each positive integer $m$ and each
 \[
@@ -150,9 +150,9 @@ This gives a continuous function with values in $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Each function in step <1>3 satisfies
+Each function in step [](#s1-3){.pf-ref} satisfies
 \[
 \int_0^1h_{m,j}(x)\,dx
 \le
@@ -172,7 +172,7 @@ Therefore its integral is at most the support length.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Enumerate the functions block by block:
 first all functions with $m=1$, then all with $m=2$, then all with $m=3$, and so on.
@@ -188,7 +188,7 @@ Then
 
 ::: pf-proof
 
-If $f_n$ belongs to the block indexed by $m$, step <1>4 gives
+If $f_n$ belongs to the block indexed by $m$, step [](#s1-4){.pf-ref} gives
 \[
 \int_0^1f_n(x)\,dx
 \le
@@ -208,7 +208,7 @@ and the squeeze theorem gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Fix
 \[
@@ -243,7 +243,7 @@ cover $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $x\in[0,1]$, there are infinitely many indices $n$ for which
 \[
@@ -254,8 +254,8 @@ f_n(x)=1.
 ::: pf-proof
 
 Fix $x$.
-For each block $m$, choose a cell containing $x$ as in step <1>6.
-The corresponding function $h_{m,j}$ equals $1$ on that entire cell by step <1>3.
+For each block $m$, choose a cell containing $x$ as in step [](#s1-6){.pf-ref}.
+The corresponding function $h_{m,j}$ equals $1$ on that entire cell by step [](#s1-3){.pf-ref}.
 Thus each block contributes at least one term of the enumerated sequence with value $1$ at $x$.
 Since there are infinitely many blocks, this happens infinitely often.
 
@@ -263,7 +263,7 @@ Since there are infinitely many blocks, this happens infinitely often.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There is no point
 \[
@@ -277,7 +277,7 @@ f_n(x_0)\to0.
 
 ::: pf-proof
 
-For every fixed $x_0$, step <1>7 gives infinitely many indices $n$ with
+For every fixed $x_0$, step [](#s1-7){.pf-ref} gives infinitely many indices $n$ with
 \[
 f_n(x_0)=1.
 \]
@@ -288,14 +288,14 @@ Thus no such $x_0$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently assertion (b) is false.
 
 
 ::: pf-proof
 
-The sequence from step <1>5 consists of nonnegative continuous functions whose integrals tend to $0$, while step <1>8 shows that no point has pointwise limit $0$ along the full sequence.
+The sequence from step [](#s1-5){.pf-ref} consists of nonnegative continuous functions whose integrals tend to $0$, while step [](#s1-8){.pf-ref} shows that no point has pointwise limit $0$ along the full sequence.
 
 :::
 
@@ -303,7 +303,7 @@ The sequence from step <1>5 consists of nonnegative continuous functions whose i
 
 ::: pf-qed
 
-Step <1>2 disproves assertion (a), and step <1>9 disproves assertion (b).
+Step [](#s1-2){.pf-ref} disproves assertion (a), and step [](#s1-9){.pf-ref} disproves assertion (b).
 
 :::
 

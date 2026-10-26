@@ -81,7 +81,7 @@ Differentiate each polynomial entry and then substitute $x=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By multilinearity of the determinant,
 \[
@@ -106,7 +106,7 @@ Evaluate at $x=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -126,7 +126,7 @@ so the determinant vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -151,7 +151,7 @@ Thus the matrix has two equal rows and determinant zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -182,7 +182,7 @@ Each determinant therefore has two equal rows and vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -210,7 +210,7 @@ Hence both vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -267,7 +267,7 @@ D_5=-1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -277,13 +277,13 @@ Therefore
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 F'(0)
 =
 D_1+D_2+D_3+D_4+D_5.
 \]
-Steps <1>4--<1>8 give
+Steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} give
 \[
 F'(0)=0+0+0+0-1=-1.
 \]
@@ -294,7 +294,7 @@ F'(0)=0+0+0+0-1=-1.
 
 ::: pf-qed
 
-Step <1>9 is the required value.
+Step [](#s1-9){.pf-ref} is the required value.
 
 :::
 

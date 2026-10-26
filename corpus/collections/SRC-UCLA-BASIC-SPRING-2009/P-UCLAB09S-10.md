@@ -32,7 +32,7 @@ Problem 10. (a) Rigorously justify
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $N\ge0$ and every $x\in[0,1]$,
 \[
@@ -76,9 +76,9 @@ r^{N+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Integrating step <1>1 over $[0,1]$ gives
+Integrating step [](#s1-1){.pf-ref} over $[0,1]$ gives
 \[
 \int_0^1\frac{dx}{1+x^2}
 =
@@ -112,7 +112,7 @@ The last term is exactly the stated remainder.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The remainder satisfies
 \[
@@ -157,7 +157,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently
 \[
@@ -167,7 +167,7 @@ R_N\to0.
 
 ::: pf-proof
 
-The upper bound from step <1>3 satisfies
+The upper bound from step [](#s1-3){.pf-ref} satisfies
 \[
 \frac1{2N+3}\to0.
 \]
@@ -177,7 +177,7 @@ Apply the squeeze theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -197,14 +197,14 @@ Take
 \[
 N\to\infty
 \]
-in the identity from step <1>2 and use step <1>4.
+in the identity from step [](#s1-2){.pf-ref} and use step [](#s1-4){.pf-ref}.
 This rigorously justifies part (a) without interchanging an infinite sum and an integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -233,7 +233,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -251,7 +251,7 @@ The partial sums of the displayed alternating series are exactly
 \[
 \sum_{n=0}^N\frac{(-1)^n}{2n+1}.
 \]
-By step <1>5 their limit is the integral from step <1>6.
+By step [](#s1-5){.pf-ref} their limit is the integral from step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -259,7 +259,7 @@ By step <1>5 their limit is the integral from step <1>6.
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>7 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
 
 :::
 

@@ -21,7 +21,7 @@ Where does the $7\text{-torsion}$ appear first in the homotopy groups of $S ^ { 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Serre's first-$p$-torsion theorem states that for every prime $p$
 and every $n\ge3$,
@@ -66,7 +66,7 @@ for every $n\ge3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $p=7$,
 \[
@@ -87,7 +87,7 @@ Direct calculation gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, for every $n\ge3$, the first $7$-torsion in the
 homotopy groups of $S^n$ occurs in
@@ -106,7 +106,7 @@ and its $7$-primary subgroup there is
 
 ::: pf-proof
 
-Substitute $p=7$ into step <1>1 and use step <1>2. There is no
+Substitute $p=7$ into step [](#s1-1){.pf-ref} and use step [](#s1-2){.pf-ref}. There is no
 $7$-torsion in
 \[
 \pi_{n+k}(S^n)
@@ -126,7 +126,7 @@ contains a unique first $7$-primary subgroup isomorphic to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $S^2$, the first $7$-torsion occurs instead in
 \[
@@ -172,7 +172,7 @@ and is $\mathbb Z/7$. The same is therefore true for $S^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $S^1$, no homotopy group contains $7$-torsion.
 
@@ -197,11 +197,11 @@ All these groups are $7$-torsion-free.
 
 ::: pf-qed
 
-For the usual range $n\ge3$, step <1>3 gives the answer
+For the usual range $n\ge3$, step [](#s1-3){.pf-ref} gives the answer
 \[
 \pi_{n+11}(S^n)
 \]
-with first $7$-primary subgroup $\mathbb Z/7$. Steps <1>4--<1>5 record
+with first $7$-primary subgroup $\mathbb Z/7$. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} record
 the low-dimensional exceptions.
 
 :::

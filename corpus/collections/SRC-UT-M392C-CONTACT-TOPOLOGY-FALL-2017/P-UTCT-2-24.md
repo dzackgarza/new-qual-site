@@ -43,7 +43,7 @@ on the $xy$-plane.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the printed form
 \[
@@ -78,7 +78,7 @@ d\alpha=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently
 \[
@@ -93,7 +93,7 @@ is not a contact structure.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \alpha\wedge d\alpha
 =
@@ -113,7 +113,7 @@ displayed $3$-form has value zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the $xy$-plane,
 \[
@@ -175,7 +175,7 @@ Q=-a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The divergence of the printed characteristic field is
 \[
@@ -225,7 +225,7 @@ d(\alpha|_F)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The leaves of the printed characteristic foliation are
 \[
@@ -278,7 +278,7 @@ so these are exactly the leaves.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the source claim
 \[
@@ -289,7 +289,7 @@ does not follow from the printed $1$-form.
 
 ::: pf-proof
 
-Step <1>5 gives the actual first integral of the printed characteristic line
+Step [](#s1-5){.pf-ref} gives the actual first integral of the printed characteristic line
 field. Except in degenerate special cases, its leaves are affine lines, not
 the monomial curves requested by the source.
 
@@ -297,7 +297,7 @@ the monomial curves requested by the source.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A natural corrected form producing the advertised monomial leaves is
 \[
@@ -339,7 +339,7 @@ Thus its kernel is exactly tangent to the advertised level curves.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For the corrected form, the characteristic vector field is
 \[
@@ -355,7 +355,7 @@ b y\frac{\partial}{\partial y}.
 
 ::: pf-proof
 
-As in step <1>3,
+As in step [](#s1-3){.pf-ref},
 \[
 \iota_{P\partial_x+Q\partial_y}
 (dx\wedge dy)
@@ -381,7 +381,7 @@ Q=-b y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The corrected divergence is
 \[
@@ -395,7 +395,7 @@ a-b.
 
 ::: pf-proof
 
-Differentiate the components from step <1>8:
+Differentiate the components from step [](#s1-8){.pf-ref}:
 \[
 \operatorname{div}_\omega\widetilde v
 =
@@ -410,7 +410,7 @@ a-b.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The corrected contact sign is governed by the same quantity:
 \[
@@ -482,7 +482,7 @@ Thus the sign is the sign of $a-b$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For the corrected problem, the sign of the divergence is visible in
 the phase portrait:
@@ -501,7 +501,7 @@ By definition,
 =
 (\operatorname{div}_\omega\widetilde v)\omega.
 \]
-Using step <1>9,
+Using step [](#s1-9){.pf-ref},
 \[
 \mathcal L_{\widetilde v}\omega
 =
@@ -516,8 +516,8 @@ local contraction, and zero means infinitesimal area preservation.
 
 ::: pf-qed
 
-Steps <1>1--<1>6 give the exact answer for the $1$-form printed in the
-source. Steps <1>7--<1>11 give the natural corrected calculation that
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} give the exact answer for the $1$-form printed in the
+source. Steps [](#s1-7){.pf-ref} through [](#s1-11){.pf-ref} give the natural corrected calculation that
 produces the advertised leaves
 \[
 x^b y^a=c

@@ -29,7 +29,7 @@ be the set of all infinite binary sequences.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is no surjection
 \[
@@ -57,7 +57,7 @@ Then $t$ differs from $s^{(n)}$ in its $n$th coordinate for every $n$. Hence $t$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 \[
@@ -105,20 +105,20 @@ Thus $\Phi(s)\ne\Phi(t)$, so $\Phi$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The interval $[0,1]$ is uncountable.
 
 
 ::: pf-proof
 
-If $[0,1]$ were countable, then composing an enumeration of $[0,1]$ with the inverse relation supplied by the injection in step <1>2 would imply that $\Sigma$ is countable. More directly, every subset of a countable set is countable, while step <1>2 identifies $\Sigma$ with the subset $\Phi(\Sigma)\subseteq[0,1]$. This contradicts step <1>1.
+If $[0,1]$ were countable, then composing an enumeration of $[0,1]$ with the inverse relation supplied by the injection in step [](#s1-2){.pf-ref} would imply that $\Sigma$ is countable. More directly, every subset of a countable set is countable, while step [](#s1-2){.pf-ref} identifies $\Sigma$ with the subset $\Phi(\Sigma)\subseteq[0,1]$. This contradicts step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The real numbers are uncountable.
 
@@ -129,7 +129,7 @@ Since
 \[
 [0,1]\subseteq\mathbb R,
 \]
-countability of $\mathbb R$ would imply countability of $[0,1]$, contradicting step <1>3. Therefore
+countability of $\mathbb R$ would imply countability of $[0,1]$, contradicting step [](#s1-3){.pf-ref}. Therefore
 \[
 \boxed{\mathbb R\text{ is uncountable}.}
 \]
@@ -140,7 +140,7 @@ countability of $\mathbb R$ would imply countability of $[0,1]$, contradicting s
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion and does not use the Baire category theorem.
+Step [](#s1-4){.pf-ref} is the required conclusion and does not use the Baire category theorem.
 
 :::
 

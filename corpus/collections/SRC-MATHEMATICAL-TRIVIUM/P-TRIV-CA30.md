@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -51,9 +51,9 @@ This is the definition of the central binomial coefficient.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Applying Stirling's formula to step <1>1 gives
+Applying Stirling's formula to step [](#s1-1){.pf-ref} gives
 $$
 \binom{2N}{N}
 \sim
@@ -75,7 +75,7 @@ Apply Stirling's formula to $(2N)!$ and to each factor $N!$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -89,7 +89,7 @@ $$
 
 ::: pf-proof
 
-In step <1>2,
+In step [](#s1-2){.pf-ref},
 $$
 \left(
 \frac{2N}{N}
@@ -110,20 +110,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>3.
+This is step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Assume
 $$
@@ -176,9 +176,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Taking logarithms in step <1>5 gives
+Taking logarithms in step [](#s1-5){.pf-ref} gives
 $$
 \boxed{
 \begin{aligned}
@@ -204,14 +204,14 @@ $$
 
 ::: pf-proof
 
-Take the logarithm of the asymptotic formula in step <1>5. Since the quotient
+Take the logarithm of the asymptotic formula in step [](#s1-5){.pf-ref}. Since the quotient
 of the two sides tends to $1$, the logarithm of that quotient is $o(1)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -251,7 +251,7 @@ m=pN,
 \qquad
 N-m=(1-p)N
 $$
-into step <1>6. The coefficients of $\log N$ in the leading terms cancel:
+into step [](#s1-6){.pf-ref}. The coefficients of $\log N$ in the leading terms cancel:
 $$
 N-pN-(1-p)N=0.
 $$
@@ -273,7 +273,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The leading extensive behavior in the fixed-density regime is
 $$
@@ -292,21 +292,21 @@ $$
 
 ::: pf-proof
 
-The logarithmic correction in step <1>7 is lower order than $N$.
+The logarithmic correction in step [](#s1-7){.pf-ref} is lower order than $N$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Step <1>6 gives the general Stirling form when both $m$ and $N-m$ grow, and
-steps <1>7--<1>8 give the standard fixed-density large-$N$ form.
+Step [](#s1-6){.pf-ref} gives the general Stirling form when both $m$ and $N-m$ grow, and
+steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the standard fixed-density large-$N$ form.
 
 :::
 
@@ -314,7 +314,7 @@ steps <1>7--<1>8 give the standard fixed-density large-$N$ form.
 
 ::: pf-qed
 
-Steps <1>4 and <1>9 establish parts (a) and (b), respectively.
+Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

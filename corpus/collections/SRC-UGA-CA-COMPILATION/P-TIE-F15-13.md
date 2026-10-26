@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $P$ has exactly one zero in $\abs{z}<1$, counted with multiplicity.
 
@@ -55,7 +55,7 @@ on the unit circle. By Rouché's theorem, $P(z)=-6z+(z^4+3)$ and $-6z$ have the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $P$ has exactly four zeros in $\abs{z}<2$, counted with multiplicity.
 
@@ -83,7 +83,7 @@ on the circle $\abs{z}=2$. By Rouché's theorem, $P(z)=z^4+(-6z+3)$ and $z^4$ ha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The number of zeros in the annulus $1<\abs{z}<2$ is
 $$
@@ -93,7 +93,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives four zeros in $\abs{z}<2$, while step <1>1 gives one zero in $\abs{z}<1$. The strict Rouché inequalities also imply that $P$ has no zeros on either boundary circle. Therefore the annulus contains exactly
+Step [](#s1-2){.pf-ref} gives four zeros in $\abs{z}<2$, while step [](#s1-1){.pf-ref} gives one zero in $\abs{z}<1$. The strict Rouché inequalities also imply that $P$ has no zeros on either boundary circle. Therefore the annulus contains exactly
 $$
 4-1=3
 $$
@@ -103,7 +103,7 @@ zeros counted with multiplicity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the requested counts are
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-This is the combination of steps <1>1 and <1>3.
+This is the combination of steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
@@ -125,7 +125,7 @@ This is the combination of steps <1>1 and <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives both requested numbers of roots.
+Step [](#s1-4){.pf-ref} gives both requested numbers of roots.
 
 :::
 

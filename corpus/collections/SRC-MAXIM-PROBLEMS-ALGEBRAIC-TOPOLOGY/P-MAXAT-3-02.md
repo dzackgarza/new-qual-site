@@ -23,7 +23,7 @@ Use the standard CW decomposition of $\mathbb{RP}^m$ with one cell in every dime
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral cellular boundary map
 \[
@@ -51,7 +51,7 @@ The attaching map of the $k$-cell is the quotient map $S^{k-1}\to\mathbb{RP}^{k-
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The cellular cochain differential
 \[
@@ -69,13 +69,13 @@ is therefore
 
 ::: pf-proof
 
-Cellular cochains are $C^k=\operatorname{Hom}(C_k,\mathbb Z)\cong\mathbb Z$, and $\delta^k$ is dual to $d_{k+1}$. Apply step <1>1 to $k+1$.
+Cellular cochains are $C^k=\operatorname{Hom}(C_k,\mathbb Z)\cong\mathbb Z$, and $\delta^k$ is dual to $d_{k+1}$. Apply step [](#s1-1){.pf-ref} to $k+1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\mathbb{RP}^{\infty}$,
 \[
@@ -104,7 +104,7 @@ At positive even degree, the outgoing map is zero and the incoming image is $2\m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $\mathbb{RP}^{2n}$,
 \[
@@ -121,7 +121,7 @@ H^k(\mathbb{RP}^{2n};\mathbb Z)
 
 ::: pf-proof
 
-The cochain complex of step <1>2 truncates in degree $2n$. The calculation below the top is identical to step <1>3. In top degree $2n$, there is no outgoing differential and the incoming differential is multiplication by $2$, so
+The cochain complex of step [](#s1-2){.pf-ref} truncates in degree $2n$. The calculation below the top is identical to step [](#s1-3){.pf-ref}. In top degree $2n$, there is no outgoing differential and the incoming differential is multiplication by $2$, so
 \[
 H^{2n}\cong\mathbb Z/2.
 \]
@@ -131,7 +131,7 @@ This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $\mathbb{RP}^{2n+1}$,
 \[
@@ -148,13 +148,13 @@ H^k(\mathbb{RP}^{2n+1};\mathbb Z)
 
 ::: pf-proof
 
-Again the calculation below the top is step <1>3. In degree $2n+1$, the incoming differential $\delta^{2n}$ is zero and there is no outgoing differential, so the top cohomology is $\mathbb Z$. This is the integral orientation class of the orientable odd-dimensional real projective space.
+Again the calculation below the top is step [](#s1-3){.pf-ref}. In degree $2n+1$, the incoming differential $\delta^{2n}$ is zero and there is no outgoing differential, so the top cohomology is $\mathbb Z$. This is the integral orientation class of the orientable odd-dimensional real projective space.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If the ring structure is also desired, let
 \[
@@ -175,7 +175,7 @@ The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\mathbb{RP}^{\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For finite even-dimensional projective space,
 \[
@@ -186,7 +186,7 @@ For finite even-dimensional projective space,
 
 ::: pf-proof
 
-Restrict the class $u$ from $\mathbb{RP}^{\infty}$. Step <1>4 shows that $u^j$ supplies the unique nonzero class in degrees $2j$ for $1\leq j\leq n$, and dimension forces $u^{n+1}=0$.
+Restrict the class $u$ from $\mathbb{RP}^{\infty}$. Step [](#s1-4){.pf-ref} shows that $u^j$ supplies the unique nonzero class in degrees $2j$ for $1\leq j\leq n$, and dimension forces $u^{n+1}=0$.
 
 :::
 
@@ -194,7 +194,7 @@ Restrict the class $u$ from $\mathbb{RP}^{\infty}$. Step <1>4 shows that $u^j$ s
 
 ::: pf-qed
 
-Steps <1>3--<1>5 give the requested integral cohomology groups, and steps <1>6--<1>7 record the corresponding standard ring presentations where no extra top odd-degree generator is needed.
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} give the requested integral cohomology groups, and steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} record the corresponding standard ring presentations where no extra top odd-degree generator is needed.
 
 :::
 

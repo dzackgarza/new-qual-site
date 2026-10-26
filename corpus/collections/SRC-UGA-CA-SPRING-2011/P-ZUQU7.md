@@ -28,7 +28,7 @@ These may be expressed as compositions of maps, but explain why this list is com
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The inversion
 $$
@@ -64,7 +64,7 @@ biholomorphism between these domains.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The exponential map
 $$
@@ -103,7 +103,7 @@ $E'(w)=2\pi iE(w)\ne0$, the map is biholomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Cayley map
 $$
@@ -131,7 +131,7 @@ which maps $\DD$ into $\HH$ and is holomorphic there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -145,13 +145,13 @@ is a biholomorphism $G\to\DD$.
 ::: pf-proof
 
 This is the composition of the three biholomorphisms in steps
-<1>1--<1>3.
+[](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every biholomorphism $F:G\to\DD$ has the form
 $$
@@ -167,7 +167,7 @@ for some $a\in\DD$ and $\theta\in\RR$.
 ::: pf-proof
 
 Let $F:G\to\DD$ be any biholomorphism. Since $\Phi$ is a
-biholomorphism by step <1>4,
+biholomorphism by step [](#s1-4){.pf-ref},
 $$
 A=F\circ\Phi^{-1}
 $$
@@ -189,7 +189,7 @@ composition is again a biholomorphism from $G$ onto $\DD$.
 
 ::: pf-qed
 
-Step <1>5 gives the complete list of injective conformal maps of $G$ onto
+Step [](#s1-5){.pf-ref} gives the complete list of injective conformal maps of $G$ onto
 $\DD$ and proves its completeness.
 
 :::

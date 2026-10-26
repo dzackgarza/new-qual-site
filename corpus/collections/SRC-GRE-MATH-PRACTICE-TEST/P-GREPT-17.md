@@ -27,7 +27,7 @@ $1 + \cot^2 \left(\arcsin \frac{\pi}{4}\right) =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -48,7 +48,7 @@ $0<\pi/4<1$, the expression is well-defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -64,7 +64,7 @@ This is the Pythagorean identity relating cotangent and cosecant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -76,7 +76,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 1+\cot^2\theta
 =\csc^2\theta
@@ -91,7 +91,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

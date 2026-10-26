@@ -27,7 +27,7 @@ Find the Laurent series expansions of the function $f(z) = \frac{1}{z - 3}$ that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $|z-4|>1$,
 $$
@@ -48,7 +48,7 @@ which yields the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The geometric-series expansion is
 $$
@@ -63,7 +63,7 @@ The hypothesis $|z-4|>1$ gives
 $$
 \left|\frac{-1}{z-4}\right|<1.
 $$
-Hence, using $1/(1-w)=\sum_{n=0}^{\infty}w^n$ with $w=-1/(z-4)$ in step <1>1,
+Hence, using $1/(1-w)=\sum_{n=0}^{\infty}w^n$ with $w=-1/(z-4)$ in step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \frac1{z-3}
@@ -77,7 +77,7 @@ The convergence condition is exactly $|z-4|>1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the required Laurent series is
 $$
@@ -88,7 +88,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 derives the expansion on the stated annulus. In particular, the $n=0$ term $(z-4)^{-1}$ is present, so the otherwise similar choice (C), whose sum starts at $n=1$, omits the leading term and cannot equal $f$.
+Step [](#s1-2){.pf-ref} derives the expansion on the stated annulus. In particular, the $n=0$ term $(z-4)^{-1}$ is present, so the otherwise similar choice (C), whose sum starts at $n=1$, omits the leading term and cannot equal $f$.
 
 :::
 
@@ -96,7 +96,7 @@ Step <1>2 derives the expansion on the stated annulus. In particular, the $n=0$ 
 
 ::: pf-qed
 
-Step <1>3 gives the required expansion.
+Step [](#s1-3){.pf-ref} gives the required expansion.
 
 :::
 

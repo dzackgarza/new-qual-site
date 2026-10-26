@@ -48,7 +48,7 @@ as $w\to0$, since $1/w\to\infty$. Therefore $0$ is a pole of $g$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists an integer $m\ge0$ such that
 $$
@@ -65,7 +65,7 @@ This is the defining local property of a pole of finite order. If the pole has o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -94,20 +94,20 @@ w^mg(w)
 =
 \sum_{n=0}^{\infty}c_nw^{m-n}.
 $$
-By step <1>2, the left-hand side is holomorphic at $0$. A Laurent expansion of a holomorphic function at $0$ has no negative powers. Hence every coefficient of $w^{m-n}$ with $m-n<0$ must vanish. Therefore $c_n=0$ for all $n>m$.
+By step [](#s1-2){.pf-ref}, the left-hand side is holomorphic at $0$. A Laurent expansion of a holomorphic function at $0$ has no negative powers. Hence every coefficient of $w^{m-n}$ with $m-n<0$ must vanish. Therefore $c_n=0$ for all $n>m$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is a polynomial.
 
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \boxed{
 f(z)=\sum_{n=0}^{m}c_nz^n.
@@ -121,7 +121,7 @@ This is a polynomial of degree at most $m$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

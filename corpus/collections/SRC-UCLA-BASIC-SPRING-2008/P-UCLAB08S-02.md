@@ -28,7 +28,7 @@ The assertion is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each integer
 \[
@@ -73,7 +73,7 @@ on $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every fixed
 \[
@@ -131,7 +131,7 @@ f_n(x)\to0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n\ge2$,
 \[
@@ -169,7 +169,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently
 \[
@@ -182,14 +182,14 @@ Consequently
 
 ::: pf-proof
 
-By step <1>3, the integral is identically $1$ for all $n$.
+By step [](#s1-3){.pf-ref}, the integral is identically $1$ for all $n$.
 Thus its limit is $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore pointwise convergence
 \[
@@ -200,7 +200,7 @@ of continuous nonnegative functions does not imply convergence of the integrals 
 
 ::: pf-proof
 
-Steps <1>1--<1>2 verify all hypotheses of the problem for this sequence, while step <1>4 contradicts the asserted conclusion.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} verify all hypotheses of the problem for this sequence, while step [](#s1-4){.pf-ref} contradicts the asserted conclusion.
 
 :::
 
@@ -208,7 +208,7 @@ Steps <1>1--<1>2 verify all hypotheses of the problem for this sequence, while s
 
 ::: pf-qed
 
-Step <1>5 gives the required counterexample.
+Step [](#s1-5){.pf-ref} gives the required counterexample.
 
 :::
 

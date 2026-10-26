@@ -21,7 +21,7 @@ Let $\Omega$ denote the common domain of the functions.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose that $f$ is not injective. Then there are distinct points $z_1,z_2\in\Omega$ such that
 $$
@@ -37,7 +37,7 @@ This is exactly the negation of injectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is an open disk $D$ centered at $z_2$ whose closure is contained in $\Omega$ and which does not contain $z_1$.
 
@@ -62,7 +62,7 @@ has the required properties.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 $$
@@ -78,13 +78,13 @@ $$
 f_n(z)=f_n(z_1).
 $$
 Because $f_n$ is injective, this implies $z=z_1$, contradicting step
-<1>2. Hence $g_n$ is nowhere zero on $D$.
+[](#s1-2){.pf-ref}. Hence $g_n$ is nowhere zero on $D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence $(g_n)$ converges uniformly on compact subsets of $D$ to
 $$
@@ -108,18 +108,18 @@ second tends to $0$ by pointwise convergence at $z_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $g$ vanishes identically on $D$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 g(z_2)=f(z_2)-f(z_1)=0.
 $$
-Steps <1>3 and <1>4 allow Hurwitz's theorem to be applied on the disk
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} allow Hurwitz's theorem to be applied on the disk
 $D$: the compact limit of the nowhere-vanishing holomorphic functions
 $g_n$ is either nowhere zero or identically zero. Since $g(z_2)=0$,
 the nowhere-zero alternative is impossible. Thus $g\equiv0$ on $D$.
@@ -128,14 +128,14 @@ the nowhere-zero alternative is impossible. Thus $g\equiv0$ on $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $f$ is not injective, then $f$ is constant on $\Omega$.
 
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 f(z)=f(z_1)
 $$
@@ -148,14 +148,14 @@ Thus $f$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore either $f$ is constant or $f$ is injective.
 
 
 ::: pf-proof
 
-Step <1>6 shows that failure of injectivity forces constancy. Equivalently,
+Step [](#s1-6){.pf-ref} shows that failure of injectivity forces constancy. Equivalently,
 if $f$ is nonconstant, then it is injective.
 
 :::
@@ -164,7 +164,7 @@ if $f$ is nonconstant, then it is injective.
 
 ::: pf-qed
 
-Step <1>7 is the required dichotomy.
+Step [](#s1-7){.pf-ref} is the required dichotomy.
 
 :::
 

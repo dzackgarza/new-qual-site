@@ -35,7 +35,7 @@ Use disjoint $2\times2$ blocks whose four entries sum to zero in each row and co
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each integer $k\geq1$, set
 \[
@@ -67,7 +67,7 @@ This explicitly defines a doubly infinite array. The nonzero entries occur in pa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every fixed row has at most two nonzero entries.
 
@@ -92,7 +92,7 @@ All remaining rows are zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently, for every $n\in\mathbb Z$,
 \[
@@ -103,13 +103,13 @@ and this series converges absolutely.
 
 ::: pf-proof
 
-By step <1>2, a nonzero row consists of either $(c_k,-c_k)$ or $(-c_k,c_k)$, so its sum is zero and its absolute sum is $2c_k<\infty$. A zero row has both sums zero.
+By step [](#s1-2){.pf-ref}, a nonzero row consists of either $(c_k,-c_k)$ or $(-c_k,c_k)$, so its sum is zero and its absolute sum is $2c_k<\infty$. A zero row has both sums zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every fixed column likewise has at most two nonzero entries, of opposite signs and equal magnitude.
 
@@ -134,7 +134,7 @@ Every other column is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, for every $m\in\mathbb Z$,
 \[
@@ -145,13 +145,13 @@ and this series converges absolutely.
 
 ::: pf-proof
 
-The two possible nonzero terms described in step <1>4 cancel, and their absolute sum is $2c_k<\infty$.
+The two possible nonzero terms described in step [](#s1-4){.pf-ref} cancel, and their absolute sum is $2c_k<\infty$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The total absolute mass of the $k$th block is
 \[
@@ -167,7 +167,7 @@ The block has four entries, each of absolute value $c_k=1/k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -179,20 +179,20 @@ Hence
 
 ::: pf-proof
 
-The blocks are disjoint, so the iterated absolute sum is the sum of their absolute masses from step <1>6. The harmonic series diverges.
+The blocks are disjoint, so the iterated absolute sum is the sum of their absolute masses from step [](#s1-6){.pf-ref}. The harmonic series diverges.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Thus the array in step <1>1 satisfies all the required properties.
+Thus the array in step [](#s1-1){.pf-ref} satisfies all the required properties.
 
 
 ::: pf-proof
 
-Steps <1>3 and <1>5 give absolutely convergent row and column sums equal to zero, while step <1>7 gives divergent total absolute sum.
+Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} give absolutely convergent row and column sums equal to zero, while step [](#s1-7){.pf-ref} gives divergent total absolute sum.
 
 :::
 
@@ -200,7 +200,7 @@ Steps <1>3 and <1>5 give absolutely convergent row and column sums equal to zero
 
 ::: pf-qed
 
-Step <1>8 verifies the construction completely.
+Step [](#s1-8){.pf-ref} verifies the construction completely.
 
 :::
 

@@ -40,7 +40,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $f$ sends each path component of $X$ into a single path component of $Y$.
 
@@ -107,7 +107,7 @@ on the sets of path components.
 
 ::: pf-proof
 
-Step <1>1 shows that the path component containing
+Step [](#s1-1){.pf-ref} shows that the path component containing
 $$
 f(x)
 $$
@@ -121,7 +121,7 @@ Hence the induced map is well defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The homotopy
 $$
@@ -172,7 +172,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Likewise,
 $$
@@ -209,7 +209,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -224,7 +224,7 @@ is a bijection.
 
 ::: pf-proof
 
-Steps <1>3--<1>4 show that
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that
 $$
 \pi_0(g)
 $$
@@ -237,7 +237,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -263,13 +263,13 @@ This is exactly how
 $$
 D
 $$
-was defined in step <1>5.
+was defined in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One also has
 $$
@@ -367,13 +367,13 @@ are well defined.
 
 ::: pf-proof
 
-This follows from steps <1>6--<1>7.
+This follows from steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The homotopy
 $$
@@ -423,7 +423,7 @@ and gives the desired restricted homotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Likewise,
 $$
@@ -465,7 +465,7 @@ is the required homotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -477,7 +477,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>9--<1>10 show that
+Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} show that
 $$
 g_D
 $$
@@ -492,7 +492,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 proves part (1), and step <1>11 proves part (2).
+Step [](#s1-5){.pf-ref} proves part (1), and step [](#s1-11){.pf-ref} proves part (2).
 
 :::
 

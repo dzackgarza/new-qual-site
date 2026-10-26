@@ -29,7 +29,7 @@ The proof is by induction on the dimension $n$ of the underlying complex vector 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $n=1$, then $A$ is diagonalizable.
 
@@ -42,7 +42,7 @@ Every linear operator on a one-dimensional vector space is multiplication by a s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $n>1$. Then $A$ has an eigenvalue $\lambda\in\mathbb C$ and a nonzero eigenspace
 \[
@@ -62,7 +62,7 @@ and therefore $E$ contains a nonzero vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Put
 \[
@@ -109,7 +109,7 @@ v=Bw=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has the direct-sum decomposition
 \[
@@ -123,13 +123,13 @@ By rank-nullity,
 \[
 \dim\ker B+\dim\operatorname{im}B=n=\dim V.
 \]
-Step <1>3 shows that their intersection is zero. Therefore the sum is direct and has dimension $n$, hence equals $V$.
+Step [](#s1-3){.pf-ref} shows that their intersection is zero. Therefore the sum is direct and has dimension $n$, hence equals $V$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Both subspaces
 \[
@@ -163,7 +163,7 @@ Av=ABw=BAw\in\operatorname{im}B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The restriction
 \[
@@ -188,7 +188,7 @@ Thus $A_E=\lambda I$ on $\ker B$, which is diagonal in every basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -237,7 +237,7 @@ w\in\ker(A_W-\mu I).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $W\ne\{0\}$, then
 \[
@@ -247,11 +247,11 @@ If $W\ne\{0\}$, then
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \ker B\ne\{0\}.
 \]
-The direct-sum decomposition in step <1>4 gives
+The direct-sum decomposition in step [](#s1-4){.pf-ref} gives
 \[
 \dim W
 =
@@ -264,7 +264,7 @@ n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The restriction $A_W$ is diagonalizable.
 
@@ -272,29 +272,29 @@ The restriction $A_W$ is diagonalizable.
 ::: pf-proof
 
 If $W=\{0\}$, the assertion is trivial.
-Otherwise, step <1>8 gives
+Otherwise, step [](#s1-8){.pf-ref} gives
 \[
 \dim W<n,
 \]
-and step <1>7 shows that $A_W$ satisfies the same kernel-stabilization hypothesis as $A$. The induction hypothesis therefore implies that $A_W$ is diagonalizable.
+and step [](#s1-7){.pf-ref} shows that $A_W$ satisfies the same kernel-stabilization hypothesis as $A$. The induction hypothesis therefore implies that $A_W$ is diagonalizable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The operator $A$ is diagonalizable.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 V=\ker B\oplus W,
 \]
-and both summands are $A$-invariant by step <1>5.
-Choose an eigenbasis of $\ker B$ for $A_E$ using step <1>6 and an eigenbasis of $W$ for $A_W$ using step <1>9. Their union is a basis of the direct sum $V$ consisting entirely of eigenvectors of $A$. Hence
+and both summands are $A$-invariant by step [](#s1-5){.pf-ref}.
+Choose an eigenbasis of $\ker B$ for $A_E$ using step [](#s1-6){.pf-ref} and an eigenbasis of $W$ for $A_W$ using step [](#s1-9){.pf-ref}. Their union is a basis of the direct sum $V$ consisting entirely of eigenvectors of $A$. Hence
 \[
 \boxed{A\text{ is diagonalizable}}.
 \]
@@ -305,7 +305,7 @@ Choose an eigenbasis of $\ker B$ for $A_E$ using step <1>6 and an eigenbasis of 
 
 ::: pf-qed
 
-Steps <1>1--<1>10 establish the induction and prove the required diagonalizability without using canonical forms.
+Steps [](#s1-1){.pf-ref} through [](#s1-10){.pf-ref} establish the induction and prove the required diagonalizability without using canonical forms.
 
 :::
 

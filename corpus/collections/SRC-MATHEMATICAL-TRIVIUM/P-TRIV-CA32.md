@@ -59,7 +59,7 @@ for the zeta parameter.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Dirichlet series
 $$
@@ -89,7 +89,7 @@ which occurs for $\sigma>1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The same series diverges when
 $$
@@ -137,7 +137,7 @@ $0$. Hence these tails do not tend to $0$, violating the Cauchy criterion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the defining Dirichlet series converges exactly in the
 half-plane
@@ -148,13 +148,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $t>0$,
 $$
@@ -179,7 +179,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $\operatorname{Re}s>1$, then
 $$
@@ -193,7 +193,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \frac{t^{s-1}}{e^t-1}
 =
@@ -228,7 +228,7 @@ Summing gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence, for $\operatorname{Re}s>1$,
 $$
@@ -245,13 +245,13 @@ $$
 
 ::: pf-proof
 
-Divide step <1>5 by $\Gamma(s)$.
+Divide step [](#s1-5){.pf-ref} by $\Gamma(s)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On the slit plane
 $$
@@ -285,7 +285,7 @@ The upper side has argument $0$, while the lower side has argument $2\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For $\operatorname{Re}s>1$,
 $$
@@ -342,7 +342,7 @@ formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence for $\operatorname{Re}s>1$,
 $$
@@ -357,15 +357,15 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>5 and <1>8.
+Combine steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-The contour formula in step <1>9 provides the analytic continuation
+The contour formula in step [](#s1-9){.pf-ref} provides the analytic continuation
 mechanism for $\zeta$.
 
 
@@ -382,7 +382,7 @@ $$
 \frac{I(s)}
 {(e^{2\pi i s}-1)\Gamma(s)}.
 $$
-For $\operatorname{Re}s>1$, step <1>9 shows that
+For $\operatorname{Re}s>1$, step [](#s1-9){.pf-ref} shows that
 $$
 \widetilde\zeta(s)=\zeta(s).
 $$
@@ -394,7 +394,7 @@ continuation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Suppose $\operatorname{Re}s<0$. The poles of
 $$
@@ -428,7 +428,7 @@ there. Hence the residue is the numerator evaluated at the pole.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Expanding the small circle in the Hankel contour to infinity gives
 $$
@@ -460,7 +460,7 @@ converges when $\sigma<0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 For $\operatorname{Re}s<0$,
 $$
@@ -533,7 +533,7 @@ the result follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence for $\operatorname{Re}s<0$,
 $$
@@ -551,7 +551,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>13 into step <1>12 and use
+Substitute step [](#s1-13){.pf-ref} into step [](#s1-12){.pf-ref} and use
 $$
 -2\pi i\cdot i(2\pi)^{s-1}
 =(2\pi)^s.
@@ -561,9 +561,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-Comparing steps <1>9 and <1>14 gives
+Comparing steps [](#s1-9){.pf-ref} and [](#s1-14){.pf-ref} gives
 $$
 \boxed{
 \zeta(s)
@@ -583,7 +583,7 @@ $$
 
 ::: pf-proof
 
-By step <1>10, the analytic continuation of $\zeta$ is defined from the same
+By step [](#s1-10){.pf-ref}, the analytic continuation of $\zeta$ is defined from the same
 Hankel integral by
 $$
 \widetilde\zeta(s)
@@ -592,7 +592,7 @@ $$
 {(e^{2\pi i s}-1)\Gamma(s)}.
 $$
 For $\operatorname{Re}s<0$, substitute the residue evaluation from step
-<1>14:
+[](#s1-14){.pf-ref}:
 $$
 \widetilde\zeta(s)
 =
@@ -614,7 +614,7 @@ $\zeta(s)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The exponential quotient simplifies to
 $$
@@ -658,7 +658,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The functional equation is equivalently
 $$
@@ -675,7 +675,7 @@ $$
 
 ::: pf-proof
 
-By step <1>16, step <1>15 becomes
+By step [](#s1-16){.pf-ref}, step [](#s1-15){.pf-ref} becomes
 $$
 \zeta(s)
 =
@@ -704,7 +704,7 @@ yields the displayed form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Substituting $s=-1$ gives
 $$
@@ -719,14 +719,14 @@ $$
 
 ::: pf-proof
 
-The right-hand side of step <1>17 is regular at $s=-1$, so direct
+The right-hand side of step [](#s1-17){.pf-ref} is regular at $s=-1$, so direct
 substitution is valid.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Therefore
 $$
@@ -763,7 +763,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 The value $-1/12$ is an analytic-continuation value, not the ordinary
 sum of $1+2+3+\cdots$.
@@ -771,12 +771,12 @@ sum of $1+2+3+\cdots$.
 
 ::: pf-proof
 
-By step <1>3, the Dirichlet series defining $\zeta(s)$ converges only for
+By step [](#s1-3){.pf-ref}, the Dirichlet series defining $\zeta(s)$ converges only for
 $\operatorname{Re}s>1$. At $s=-1$ it becomes
 $$
 1+2+3+\cdots,
 $$
-which diverges. The value in step <1>19 belongs to the meromorphic
+which diverges. The value in step [](#s1-19){.pf-ref} belongs to the meromorphic
 continuation.
 
 :::
@@ -785,9 +785,9 @@ continuation.
 
 ::: pf-qed
 
-Steps <1>3 and <1>6 answer the convergence and integral-representation parts.
-Steps <1>7--<1>17 construct the contour continuation and functional equation.
-Steps <1>18--<1>20 compute and interpret $\zeta(-1)$.
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} answer the convergence and integral-representation parts.
+Steps [](#s1-7){.pf-ref} through [](#s1-17){.pf-ref} construct the contour continuation and functional equation.
+Steps [](#s1-18){.pf-ref} through [](#s1-20){.pf-ref} compute and interpret $\zeta(-1)$.
 
 :::
 

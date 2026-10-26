@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For any ring $S$ with identity and any $x\in S$,
 $$
@@ -229,7 +229,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -265,7 +265,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element
 $$
@@ -306,7 +306,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The element
 $$
@@ -320,12 +320,12 @@ $$
 
 ::: pf-proof
 
-By step <1>3 and the criterion from step <1>1 applied in $R$,
+By step [](#s1-3){.pf-ref} and the criterion from step [](#s1-1){.pf-ref} applied in $R$,
 $$
 1-yx
 $$
 is a unit of $R.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 e
 $$
@@ -375,7 +375,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -397,7 +397,7 @@ For every
 $$
 y\in eRe,
 $$
-step <1>5 shows
+step [](#s1-5){.pf-ref} shows
 $$
 e-yx
 $$
@@ -406,7 +406,7 @@ $$
 eRe
 $$
 whose identity is $e$.
-By step <1>1 applied to
+By step [](#s1-1){.pf-ref} applied to
 $$
 S=eRe,
 $$
@@ -419,7 +419,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Now let
 $$
@@ -447,7 +447,7 @@ Hence multiplication by $e$ on either side fixes it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Fix
 $$
@@ -478,7 +478,7 @@ Because
 $$
 x\in J(eRe),
 $$
-the Jacobson-radical criterion from step <1>1 gives that
+the Jacobson-radical criterion from step [](#s1-1){.pf-ref} gives that
 $$
 e-(ere)x
 $$
@@ -492,7 +492,7 @@ This is exactly $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Put
 $$
@@ -516,7 +516,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 x=ex.
 $$
@@ -547,7 +547,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Let
 $$
@@ -591,7 +591,7 @@ bf=0,
 \qquad
 b^2=0.
 $$
-Using step <1>9,
+Using step [](#s1-9){.pf-ref},
 $$
 \begin{aligned}
 (1-rx)v
@@ -633,7 +633,7 @@ Thus $v$ is a two-sided inverse.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For every
 $$
@@ -652,7 +652,7 @@ The element
 $$
 r
 $$
-was arbitrary in step <1>8, and step <1>10 constructs an inverse for
+was arbitrary in step [](#s1-8){.pf-ref}, and step [](#s1-10){.pf-ref} constructs an inverse for
 $$
 1-rx.
 $$
@@ -661,7 +661,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 $$
@@ -671,13 +671,13 @@ $$
 
 ::: pf-proof
 
-Apply the Jacobson-radical criterion from step <1>1 in the ring $R$ to step <1>11.
+Apply the Jacobson-radical criterion from step [](#s1-1){.pf-ref} in the ring $R$ to step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Since
 $$
@@ -691,11 +691,11 @@ $$
 
 ::: pf-proof
 
-Step <1>12 gives
+Step [](#s1-12){.pf-ref} gives
 $$
 x\in J(R),
 $$
-and step <1>7 gives
+and step [](#s1-7){.pf-ref} gives
 $$
 x=exe.
 $$
@@ -710,7 +710,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 $$
@@ -728,13 +728,13 @@ The element
 $$
 x\in J(eRe)
 $$
-was arbitrary, and step <1>13 proves the required containment.
+was arbitrary, and step [](#s1-13){.pf-ref} proves the required containment.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Combining both inclusions,
 $$
@@ -748,13 +748,13 @@ $$
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 $$
 eJ(R)e
 \subseteq
 J(eRe),
 $$
-and step <1>14 gives the reverse inclusion.
+and step [](#s1-14){.pf-ref} gives the reverse inclusion.
 
 :::
 
@@ -762,7 +762,7 @@ and step <1>14 gives the reverse inclusion.
 
 ::: pf-qed
 
-Step <1>15 is the required identity.
+Step [](#s1-15){.pf-ref} is the required identity.
 
 :::
 

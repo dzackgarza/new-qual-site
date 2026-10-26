@@ -57,7 +57,7 @@ decide which of the assertions $a_0=0$, all $a_n=0$ for $n>0$, and all $b_n=0$ h
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a), only $B$ is diagonalizable over $\mathbb R$.
 
@@ -207,7 +207,7 @@ are not forced to vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For a continuous periodic function having no real zeros, none of
 the three Fourier-vanishing assertions is forced.
@@ -232,7 +232,7 @@ every nowhere-zero function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The complete answers are
 \[
@@ -250,7 +250,7 @@ The complete answers are
 
 ::: pf-proof
 
-Steps <1>1 through <1>7 establish the corresponding assertions in parts
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} establish the corresponding assertions in parts
 (a)--(d).
 
 :::
@@ -259,7 +259,7 @@ Steps <1>1 through <1>7 establish the corresponding assertions in parts
 
 ::: pf-qed
 
-Step <1>8 records all requested decisions.
+Step [](#s1-8){.pf-ref} records all requested decisions.
 
 :::
 

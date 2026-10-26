@@ -32,7 +32,7 @@ is a basis for $U+V$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set
 $$
@@ -59,7 +59,7 @@ so $x$ lies in the span of $\mathcal B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\mathcal B$ is linearly independent.
 
@@ -88,7 +88,7 @@ Because the two original sets are bases, all $a_i$ and all $b_j$ are zero. There
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -99,7 +99,7 @@ is a basis for $U+V$.
 
 ::: pf-proof
 
-By step <1>1 the set spans $U+V$, and by step <1>2 it is linearly independent. These two properties are exactly the definition of a basis.
+By step [](#s1-1){.pf-ref} the set spans $U+V$, and by step [](#s1-2){.pf-ref} it is linearly independent. These two properties are exactly the definition of a basis.
 
 :::
 
@@ -107,7 +107,7 @@ By step <1>1 the set spans $U+V$, and by step <1>2 it is linearly independent. T
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

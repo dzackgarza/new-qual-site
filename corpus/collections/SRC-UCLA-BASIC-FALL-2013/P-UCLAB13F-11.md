@@ -29,7 +29,7 @@ where $N^*$ is the adjoint of $N$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $N$ is normal, then for every $v\in V$,
 \[
@@ -61,7 +61,7 @@ Taking nonnegative square roots gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -97,7 +97,7 @@ Now
 \[
 Tv=0.
 \]
-Applying step <1>1 to the normal operator $T$ gives
+Applying step [](#s1-1){.pf-ref} to the normal operator $T$ gives
 \[
 \|T^*v\|=\|Tv\|=0.
 \]
@@ -114,7 +114,7 @@ that is,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $v$ is an eigenvector of $N$, then
 \[
@@ -129,7 +129,7 @@ Suppose
 \[
 Nv=\lambda v.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 N^*v=\overline{\lambda}v.
 \]
@@ -165,7 +165,7 @@ N^*w\in v^\perp.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The restriction
 \[
@@ -176,7 +176,7 @@ is normal.
 
 ::: pf-proof
 
-By step <1>3, both $N$ and $N^*$ preserve $v^\perp$.
+By step [](#s1-3){.pf-ref}, both $N$ and $N^*$ preserve $v^\perp$.
 Thus
 \[
 \left(N|_{v^\perp}\right)^*
@@ -201,7 +201,7 @@ Hence the restriction is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -231,7 +231,7 @@ Any nonzero vector in this kernel is an eigenvector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every normal operator on a finite-dimensional complex inner-product space has an orthonormal basis of eigenvectors.
 
@@ -245,7 +245,7 @@ n=\dim V.
 For $n=0$ the assertion is vacuous.
 
 Assume $n>0$.
-By step <1>5, choose a nonzero eigenvector $v_1$ and normalize it so that
+By step [](#s1-5){.pf-ref}, choose a nonzero eigenvector $v_1$ and normalize it so that
 \[
 \|v_1\|=1.
 \]
@@ -253,8 +253,8 @@ Then
 \[
 v_1^\perp
 \]
-has dimension $n-1$ and is invariant under $N$ by step <1>3.
-The restricted operator is normal by step <1>4.
+has dimension $n-1$ and is invariant under $N$ by step [](#s1-3){.pf-ref}.
+The restricted operator is normal by step [](#s1-4){.pf-ref}.
 
 By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
 \[
@@ -273,7 +273,7 @@ is an orthonormal basis of $V$ consisting entirely of eigenvectors of $N$.
 
 ::: pf-qed
 
-The opening sentence gives the definition of normality, and step <1>6 proves the spectral theorem for normal operators.
+The opening sentence gives the definition of normality, and step [](#s1-6){.pf-ref} proves the spectral theorem for normal operators.
 
 :::
 

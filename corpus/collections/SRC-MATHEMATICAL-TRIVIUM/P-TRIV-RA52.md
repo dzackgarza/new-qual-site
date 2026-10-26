@@ -25,7 +25,7 @@ For what values of $\alpha$ the series $\displaystyle\sum_{n=1}^{N} \frac{1}{n^\
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the series diverges for
 $$
@@ -60,7 +60,7 @@ $$
 ::: pf-proof
 
 A necessary condition for convergence of a series is that its terms tend to
-$0$. Step <1>1 shows this condition fails.
+$0$. Step [](#s1-1){.pf-ref} shows this condition fails.
 
 :::
 
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every integer $N\geq1$,
 $$
@@ -117,7 +117,7 @@ inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -140,7 +140,7 @@ Since $1-\alpha>0$, the power $(N+1)^{1-\alpha}$ tends to infinity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -163,7 +163,7 @@ Evaluate the logarithmic antiderivative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the series diverges for every
 $$
@@ -173,14 +173,14 @@ $$
 
 ::: pf-proof
 
-Step <1>2 handles $\alpha\leq0$. For $0<\alpha\leq1$, steps <1>4--<1>6
+Step [](#s1-2){.pf-ref} handles $\alpha\leq0$. For $0<\alpha\leq1$, steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}
 show that the partial sums dominate a quantity tending to infinity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 $$
@@ -203,7 +203,7 @@ Therefore the corresponding positive decreasing series converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the divergence region is exactly
 $$
@@ -213,7 +213,7 @@ $$
 
 ::: pf-proof
 
-Step <1>7 proves divergence there, while step <1>8 excludes every
+Step [](#s1-7){.pf-ref} proves divergence there, while step [](#s1-8){.pf-ref} excludes every
 $\alpha>1$.
 
 :::
@@ -222,7 +222,7 @@ $\alpha>1$.
 
 ::: pf-qed
 
-Step <1>9 is the required classification.
+Step [](#s1-9){.pf-ref} is the required classification.
 
 :::
 

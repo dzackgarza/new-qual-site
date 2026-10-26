@@ -29,7 +29,7 @@ Then $P_n=a_n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The transition recurrences are
 \[
@@ -49,7 +49,7 @@ From top face $6$, every one of the four adjacent choices is a side face, so the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq1$,
 \[
@@ -59,13 +59,13 @@ a_n=b_n.
 
 ::: pf-proof
 
-Step <1>1 gives both $a_{n+1}$ and $b_{n+1}$ as $c_n/4$ for every $n\geq0$.
+Step [](#s1-1){.pf-ref} gives both $a_{n+1}$ and $b_{n+1}$ as $c_n/4$ for every $n\geq0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $n\geq1$,
 \[
@@ -79,7 +79,7 @@ a_{n+1}=\frac14-\frac12a_n.
 
 ::: pf-proof
 
-The three states partition all possibilities, so $a_n+b_n+c_n=1$. Apply step <1>2 to obtain $c_n=1-2a_n$, then substitute into the first recurrence of step <1>1.
+The three states partition all possibilities, so $a_n+b_n+c_n=1$. Apply step [](#s1-2){.pf-ref} to obtain $c_n=1-2a_n$, then substitute into the first recurrence of step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -87,7 +87,7 @@ The three states partition all possibilities, so $a_n+b_n+c_n=1$. Apply step <1>
 
 ::: pf-step
 
-The fixed point of the recurrence in step <1>3 is
+The fixed point of the recurrence in step [](#s1-3){.pf-ref} is
 \[
 a_*=\frac16.
 \]
@@ -105,7 +105,7 @@ This gives $(3/2)a_*=1/4$, hence $a_*=1/6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since $a_1=0$, the recurrence solves to
 \[
@@ -117,7 +117,7 @@ P_n=a_n=\frac16\left(1-\left(-\frac12\right)^{n-1}\right),
 
 ::: pf-proof
 
-Subtract the fixed point from step <1>3:
+Subtract the fixed point from step [](#s1-3){.pf-ref}:
 \[
 a_{n+1}-\frac16
 =-\frac12\left(a_n-\frac16\right).
@@ -133,7 +133,7 @@ which is the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -143,7 +143,7 @@ Therefore
 
 ::: pf-proof
 
-In step <1>5, $(-1/2)^{n-1}\to0$.
+In step [](#s1-5){.pf-ref}, $(-1/2)^{n-1}\to0$.
 
 :::
 
@@ -151,7 +151,7 @@ In step <1>5, $(-1/2)^{n-1}\to0$.
 
 ::: pf-qed
 
-Steps <1>5--<1>6 give the requested return probability and its limiting value.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the requested return probability and its limiting value.
 
 :::
 

@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $f$ has no root in $\FF_3$.
 
@@ -79,7 +79,7 @@ Thus $f$ has no root in $\FF_3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f$ is reducible, then it factors as a product of two monic quadratics.
 
@@ -87,7 +87,7 @@ If $f$ is reducible, then it factors as a product of two monic quadratics.
 ::: pf-proof
 
 The polynomial $f$ has degree $4$.
-By step <1>1 it has no linear factor.
+By step [](#s1-1){.pf-ref} it has no linear factor.
 Hence any nontrivial factorization over the field $\FF_3$ must have factor degrees
 $$
 2
@@ -100,7 +100,7 @@ Because $f$ is monic, the two factors may be chosen monic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose
 $$
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equation
 $$
@@ -181,7 +181,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The case
 $$
@@ -192,7 +192,7 @@ is impossible.
 
 ::: pf-proof
 
-The equations from step <1>3 become
+The equations from step [](#s1-3){.pf-ref} become
 $$
 a+c=1
 $$
@@ -229,7 +229,7 @@ Hence this quadratic has no roots in $\FF_3$, contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The case
 $$
@@ -264,14 +264,14 @@ ad+bc
 =
 2,
 $$
-whereas step <1>3 requires it to equal $1$.
+whereas step [](#s1-3){.pf-ref} requires it to equal $1$.
 This is a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -284,15 +284,15 @@ $$
 
 ::: pf-proof
 
-Step <1>1 rules out linear factors.
-Steps <1>2--<1>6 rule out every possible quadratic-by-quadratic factorization.
+Step [](#s1-1){.pf-ref} rules out linear factors.
+Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} rule out every possible quadratic-by-quadratic factorization.
 Thus no nontrivial factorization exists.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In $\FF_3[x]$,
 $$
@@ -327,7 +327,7 @@ Both factors have positive degree.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 $$
@@ -340,7 +340,7 @@ $$
 
 ::: pf-proof
 
-Step <1>8 gives a nontrivial factorization.
+Step [](#s1-8){.pf-ref} gives a nontrivial factorization.
 
 :::
 
@@ -348,7 +348,7 @@ Step <1>8 gives a nontrivial factorization.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

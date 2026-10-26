@@ -24,7 +24,7 @@ converges absolutely. What can be said if $\sum a_n$ and $\sum b_n$ are both onl
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\sum a_n$ converges, then the sequence $(a_n)$ is bounded.
 
@@ -45,7 +45,7 @@ for every $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\sum b_n$ converges absolutely, then
 \[
@@ -55,7 +55,7 @@ If $\sum b_n$ converges absolutely, then
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |a_nb_n|
 \le
@@ -74,7 +74,7 @@ The comparison test gives absolute convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If both original series are only conditionally convergent, the product
 series can converge absolutely.
@@ -105,7 +105,7 @@ converges absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If both original series are only conditionally convergent, the product
 series can also diverge.
@@ -128,7 +128,7 @@ so the product series is the harmonic series and diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus under conditional convergence alone,
 \[
@@ -138,8 +138,8 @@ Thus under conditional convergence alone,
 
 ::: pf-proof
 
-Step <1>3 gives a conditionally-convergent pair whose product series converges
-absolutely, while step <1>4 gives one whose product series diverges.
+Step [](#s1-3){.pf-ref} gives a conditionally-convergent pair whose product series converges
+absolutely, while step [](#s1-4){.pf-ref} gives one whose product series diverges.
 
 :::
 
@@ -147,7 +147,7 @@ absolutely, while step <1>4 gives one whose product series diverges.
 
 ::: pf-qed
 
-Step <1>2 proves the first assertion, and step <1>5 answers the conditional
+Step [](#s1-2){.pf-ref} proves the first assertion, and step [](#s1-5){.pf-ref} answers the conditional
 case.
 
 :::

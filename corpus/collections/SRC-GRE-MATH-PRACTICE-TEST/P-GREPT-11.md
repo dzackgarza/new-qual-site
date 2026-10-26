@@ -27,7 +27,7 @@ Let $\hat{\mathbf{i}} = (1, 0, 0)$, $\hat{\mathbf{j}} = (0, 1, 0)$, and $\hat{\m
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The equation
 $$
@@ -54,13 +54,13 @@ the first dot product is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Writing
 $$
 \mathbf a=a_1\hat{\mathbf i}+a_2\hat{\mathbf j}+a_3\hat{\mathbf k},
 $$
-the equation from step <1>1 becomes
+the equation from step [](#s1-1){.pf-ref} becomes
 $$
 -8a_2-4a_3=12.
 $$
@@ -83,7 +83,7 @@ $\mathbf a\cdot(\mathbf c\times\mathbf b)=-8a_2-4a_3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Among the five choices, only
 $$
@@ -102,7 +102,7 @@ The corresponding values of $-8a_2-4a_3$ are
 $$
 0,\ 0,\ 12,\ 4,\ -8.
 $$
-Thus only choice (C) satisfies step <1>2.
+Thus only choice (C) satisfies step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -110,7 +110,7 @@ Thus only choice (C) satisfies step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the required vector.
+Step [](#s1-3){.pf-ref} gives the required vector.
 
 :::
 

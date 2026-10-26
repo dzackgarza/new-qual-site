@@ -27,7 +27,7 @@ so the columns of $U$ are the new basis vectors written in the old basis.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If a linear transformation has matrix $T$ in the old basis, then its
 matrix in the new basis is
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the matrix of the given transformation in the new basis is
 $$
@@ -73,7 +73,7 @@ $$
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 $$
 T=e^A.
 $$
@@ -82,7 +82,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $k\geq0$,
 $$
@@ -110,7 +110,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -122,7 +122,7 @@ $$
 
 ::: pf-proof
 
-Using the exponential series and step <1>3,
+Using the exponential series and step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 e^{U^{-1}AU}
@@ -146,7 +146,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the transformed matrix may be written as
 $$
@@ -160,7 +160,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>4.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -168,7 +168,7 @@ Combine steps <1>2 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required change-of-basis formula.
+Step [](#s1-5){.pf-ref} is the required change-of-basis formula.
 
 :::
 

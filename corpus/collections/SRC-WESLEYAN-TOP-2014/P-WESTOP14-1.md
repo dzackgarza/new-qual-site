@@ -19,7 +19,7 @@ Let $f:X\to Y$ be continuous.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $X$ is connected, then $f(X)$ is connected.
 
@@ -42,20 +42,20 @@ are open in $X$. They are disjoint and their union is $X$. They are both nonempt
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore continuous images preserve connectedness.
 
 
 ::: pf-proof
 
-Step <1>1 proves that whenever $X$ is connected, its image $f(X)$ is connected.
+Step [](#s1-1){.pf-ref} proves that whenever $X$ is connected, its image $f(X)$ is connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $X$ is compact, then $f(X)$ is compact.
 
@@ -86,14 +86,14 @@ Hence the original cover has a finite subcover of $f(X)$, so $f(X)$ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore continuous images preserve compactness.
 
 
 ::: pf-proof
 
-Step <1>3 proves that whenever $X$ is compact, its image $f(X)$ is compact.
+Step [](#s1-3){.pf-ref} proves that whenever $X$ is compact, its image $f(X)$ is compact.
 
 :::
 
@@ -101,7 +101,7 @@ Step <1>3 proves that whenever $X$ is compact, its image $f(X)$ is compact.
 
 ::: pf-qed
 
-Steps <1>2 and <1>4 prove the two requested statements.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} prove the two requested statements.
 
 :::
 

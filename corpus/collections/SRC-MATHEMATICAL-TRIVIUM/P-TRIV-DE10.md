@@ -86,7 +86,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integration gives
 $$
@@ -129,13 +129,13 @@ when $ab\neq0$.
 
 ::: pf-proof
 
-Set $t=0$ and $C=0$ in step <1>3.
+Set $t=0$ and $C=0$ in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -148,13 +148,13 @@ $$
 
 ::: pf-proof
 
-Subtract the constant from step <1>3 and exponentiate. On the interval containing the initial point, the sign of the ratio is fixed, so the absolute values may be removed consistently.
+Subtract the constant from step [](#s1-3){.pf-ref} and exponentiate. On the interval containing the initial point, the sign of the ratio is fixed, so the absolute values may be removed consistently.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Solving for $C$ gives
 $$
@@ -176,7 +176,7 @@ Let
 $$
 q=e^{\alpha(b-a)t}.
 $$
-Then step <1>5 is
+Then step [](#s1-5){.pf-ref} is
 $$
 a(b-C)=bq(a-C).
 $$
@@ -189,14 +189,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Step <1>6 gives the solution for $a\neq b$. If $a=0$ or $b=0$, the initial condition $C(0)=0$ gives the equilibrium solution $C\equiv0$, which is also the continuous limiting case of the formula whenever defined.
+Step [](#s1-6){.pf-ref} gives the solution for $a\neq b$. If $a=0$ or $b=0$, the initial condition $C(0)=0$ gives the equilibrium solution $C\equiv0$, which is also the continuous limiting case of the formula whenever defined.
 
 :::
 
@@ -224,7 +224,7 @@ Substitute $b=a$ into the original differential equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $a\neq0$, separation gives
 $$
@@ -262,7 +262,7 @@ The initial condition $C(0)=0$ gives $K=1/a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -276,7 +276,7 @@ $$
 
 ::: pf-proof
 
-Invert step <1>9:
+Invert step [](#s1-9){.pf-ref}:
 $$
 a-C
 =
@@ -288,7 +288,7 @@ Subtract from $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If $a=b=0$, then
 $$
@@ -308,14 +308,14 @@ and the initial value $C(0)=0$ yields the equilibrium solution. Uniqueness for t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>10--<1>11 cover the cases $a=b\neq0$ and $a=b=0$.
+Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} cover the cases $a=b\neq0$ and $a=b=0$.
 
 :::
 
@@ -323,7 +323,7 @@ Steps <1>10--<1>11 cover the cases $a=b\neq0$ and $a=b=0$.
 
 ::: pf-qed
 
-Steps <1>7 and <1>12 establish parts (a) and (b), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

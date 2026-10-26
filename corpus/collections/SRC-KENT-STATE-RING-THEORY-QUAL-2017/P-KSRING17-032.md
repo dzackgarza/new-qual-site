@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The formula holds for $n=1$.
 
@@ -61,7 +61,7 @@ is empty and therefore equals $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume the formula holds for size $n-1$.
 Regard
@@ -99,7 +99,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 $$
@@ -123,7 +123,7 @@ the first row of $V$ becomes identical to the $j$th row. A determinant with two 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The product
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3 and the polynomial remainder theorem,
+By step [](#s1-3){.pf-ref} and the polynomial remainder theorem,
 $$
 x_1-x_2
 $$
@@ -152,7 +152,7 @@ Now substitute
 $$
 x_1=x_3.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 0
 =
@@ -191,7 +191,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists
 $$
@@ -208,11 +208,11 @@ $$
 
 ::: pf-proof
 
-The divisor from step <1>4 has degree exactly
+The divisor from step [](#s1-4){.pf-ref} has degree exactly
 $$
 n-1
 $$
-in $x_1$, while step <1>2 gives
+in $x_1$, while step [](#s1-2){.pf-ref} gives
 $$
 \deg_{x_1}\det V\le n-1.
 $$
@@ -222,9 +222,9 @@ Therefore the quotient is independent of $x_1$ and lies in $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The coefficient $C$ from step <1>5 is
+The coefficient $C$ from step [](#s1-5){.pf-ref} is
 $$
 \det V_{n-1}(x_2,\ldots,x_n),
 $$
@@ -265,7 +265,7 @@ Thus $C$ is exactly the determinant of the size-$(n-1)$ matrix of the same form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By the induction hypothesis,
 $$
@@ -277,13 +277,13 @@ $$
 
 ::: pf-proof
 
-Apply the induction hypothesis to the matrix in step <1>6.
+Apply the induction hypothesis to the matrix in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -295,7 +295,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>7 into step <1>5:
+Substitute step [](#s1-7){.pf-ref} into step [](#s1-5){.pf-ref}:
 $$
 \begin{aligned}
 \det V
@@ -317,7 +317,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 gives the base case, and steps <1>2--<1>8 prove the induction step.
+Step [](#s1-1){.pf-ref} gives the base case, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} prove the induction step.
 
 :::
 

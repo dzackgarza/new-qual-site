@@ -38,7 +38,7 @@ S=G^{-1}(0).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -60,7 +60,7 @@ Direct substitution gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The partial derivative of $G$ with respect to $z$ is
 \[
@@ -88,7 +88,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At the point $(1,1,1)$,
 \[
@@ -98,7 +98,7 @@ At the point $(1,1,1)$,
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 G_z(1,1,1)
 =
@@ -112,7 +112,7 @@ G_z(1,1,1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $G$ is continuously differentiable near $(1,1,1)$.
 
@@ -126,7 +126,7 @@ Hence it is smooth, in particular $C^1$, on all of $\mathbb R^3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exist open neighborhoods
 \[
@@ -165,11 +165,11 @@ The hypotheses are satisfied:
 \[
 G(1,1,1)=0
 \]
-by step <1>1,
+by step [](#s1-1){.pf-ref},
 \[
 G
 \]
-is $C^1$ by step <1>4, and the derivative with respect to the dependent variable $z$ is invertible as a linear map
+is $C^1$ by step [](#s1-4){.pf-ref}, and the derivative with respect to the dependent variable $z$ is invertible as a linear map
 \[
 \mathbb R\to\mathbb R
 \]
@@ -177,14 +177,14 @@ because
 \[
 G_z(1,1,1)=9\ne0
 \]
-by step <1>3.
+by step [](#s1-3){.pf-ref}.
 Therefore the implicit function theorem gives the stated neighborhoods and function.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $(x,y)\in N$,
 \[
@@ -194,7 +194,7 @@ For every $(x,y)\in N$,
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 G(x,y,f(x,y))=0.
 \]
@@ -213,11 +213,11 @@ this is exactly the condition that
 
 ::: pf-qed
 
-Step <1>5 gives the differentiable function with
+Step [](#s1-5){.pf-ref} gives the differentiable function with
 \[
 f(1,1)=1,
 \]
-and step <1>6 proves that its graph lies on the surface $S$ near $(1,1,1)$.
+and step [](#s1-6){.pf-ref} proves that its graph lies on the surface $S$ near $(1,1,1)$.
 
 :::
 

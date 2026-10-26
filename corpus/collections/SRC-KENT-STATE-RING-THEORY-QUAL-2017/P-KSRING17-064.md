@@ -71,7 +71,7 @@ This gives the usual fraction ring of $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ring $F$ is a field.
 
@@ -116,7 +116,7 @@ Since $F$ is commutative with identity, it is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 $$
@@ -180,18 +180,18 @@ Thus $\iota$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore every integral domain is isomorphic to a subring of a field.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 F=\operatorname{Frac}(R)
 $$
-is a field, and by step <1>3,
+is a field, and by step [](#s1-3){.pf-ref},
 $$
 \iota:R\hookrightarrow F
 $$
@@ -205,7 +205,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, suppose $R$ is a subring of a field $K$.
 Then $R$ has no nonzero zero divisors.
@@ -235,7 +235,7 @@ Thus $R$ has no nonzero zero divisors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence a nonzero subring of a field is an integral domain.
 
@@ -244,14 +244,14 @@ Hence a nonzero subring of a field is an integral domain.
 
 A subring of a field is commutative.
 Under the standard unital-subring convention, it contains the same identity and is nonzero.
-By step <1>5 it has no nonzero zero divisors.
+By step [](#s1-5){.pf-ref} it has no nonzero zero divisors.
 Therefore it is an integral domain.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 $$
@@ -265,7 +265,7 @@ $$
 
 ::: pf-proof
 
-The forward implication is step <1>4, and the converse is step <1>6.
+The forward implication is step [](#s1-4){.pf-ref}, and the converse is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -273,7 +273,7 @@ The forward implication is step <1>4, and the converse is step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required equivalence.
+Step [](#s1-7){.pf-ref} is the required equivalence.
 
 :::
 

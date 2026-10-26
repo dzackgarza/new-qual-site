@@ -27,7 +27,7 @@ A function $f:\mathbb R\to\mathbb R$ is uniformly continuous if for every $\vare
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The negation of uniform continuity is:
 \[
@@ -79,7 +79,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Take
 \[
@@ -98,7 +98,7 @@ It is a polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 \[
@@ -160,7 +160,7 @@ Thus the fixed number
 \varepsilon_0=1
 \]
 defeats every choice of $\delta$.
-By step <1>1, $f$ is not uniformly continuous.
+By step [](#s1-1){.pf-ref}, $f$ is not uniformly continuous.
 
 :::
 
@@ -168,7 +168,7 @@ By step <1>1, $f$ is not uniformly continuous.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and steps <1>2--<1>3 answer part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} answer part (b).
 
 :::
 

@@ -31,7 +31,7 @@ be the given differentiable curve.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The contour integral of \(f\) along \(\gamma\) is defined by
 \[
@@ -52,7 +52,7 @@ against the complex differential along a parametrized curve.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -87,7 +87,7 @@ f(x(t)+iy(t))
 
 ::: pf-proof
 
-Substitute step <1>2 into step <1>1.
+Substitute step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -197,7 +197,7 @@ Its derivative is
 \[
 -\gamma'(a+b-t),
 \]
-and substitution into step <1>1 gives the negative integral.
+and substitution into step [](#s1-1){.pf-ref} gives the negative integral.
 
 :::
 
@@ -205,7 +205,7 @@ and substitution into step <1>1 gives the negative integral.
 
 ::: pf-qed
 
-Step <1>1 is the requested definition.
+Step [](#s1-1){.pf-ref} is the requested definition.
 
 :::
 

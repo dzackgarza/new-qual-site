@@ -31,7 +31,7 @@ aba^{-1}b^{-1}cdc^{-1}d^{-1}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Draw an embedded arc
 \[
@@ -77,7 +77,7 @@ c,d,c^{-1},d^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After performing the identifications
 \[
@@ -115,7 +115,7 @@ T^2\setminus\operatorname{int}D^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Similarly, after identifying
 \[
@@ -145,7 +145,7 @@ T^2\setminus\operatorname{int}D^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In the original octagon, the two copies of the cutting arc $e$ are
 glued to one another.
@@ -166,7 +166,7 @@ e_2\subset\partial P_2.
 \]
 Recovering the original octagon identifies these two copies pointwise.
 
-By steps <1>2--<1>3, their images are precisely the boundary circles of the
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, their images are precisely the boundary circles of the
 two punctured tori.
 Hence
 \[
@@ -185,9 +185,9 @@ T^2\setminus\operatorname{int}D^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The space in step <1>4 is the connected sum
+The space in step [](#s1-4){.pf-ref} is the connected sum
 \[
 T^2\#T^2.
 \]
@@ -198,7 +198,7 @@ T^2\#T^2.
 By definition, the connected sum of two closed surfaces is obtained by
 removing an open disk from each and gluing the resulting boundary circles by
 a homeomorphism.
-That is exactly the construction in step <1>4.
+That is exactly the construction in step [](#s1-4){.pf-ref}.
 Thus
 \[
 M\cong T^2\#T^2.
@@ -208,7 +208,7 @@ M\cong T^2\#T^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The quotient has one $0$-cell, four $1$-cells, and one $2$-cell.
 
@@ -235,7 +235,7 @@ c_2=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -255,13 +255,13 @@ Use the CW Euler-characteristic formula
 =
 c_0-c_1+c_2.
 \]
-Substitute the cell counts from step <1>6.
+Substitute the cell counts from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The quotient surface is orientable.
 
@@ -286,7 +286,7 @@ Hence the resulting closed surface is orientable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 A closed connected orientable surface of genus $g$ has Euler
 characteristic
@@ -318,7 +318,7 @@ g=2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -333,8 +333,8 @@ the closed orientable surface of genus $2$.
 
 ::: pf-proof
 
-The concrete connected-sum construction is given in steps <1>1--<1>5.
-Steps <1>6--<1>9 independently verify the genus from the quotient CW
+The concrete connected-sum construction is given in steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
+Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} independently verify the genus from the quotient CW
 structure.
 
 :::
@@ -343,7 +343,7 @@ structure.
 
 ::: pf-qed
 
-Step <1>10 is the required identification.
+Step [](#s1-10){.pf-ref} is the required identification.
 
 :::
 

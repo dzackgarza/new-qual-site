@@ -24,7 +24,7 @@ Carefully state any major theorem used in the argument.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The real spectral theorem states that every self-adjoint matrix
 $A\in M_n(\mathbb R)$ is orthogonally diagonalizable: there is an orthogonal
@@ -44,7 +44,7 @@ operators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the hypotheses of the problem,
 \[
@@ -54,7 +54,7 @@ D^2=D.
 
 ::: pf-proof
 
-By step <1>1, every diagonal entry of $D$ is an eigenvalue of $A$. By
+By step [](#s1-1){.pf-ref}, every diagonal entry of $D$ is an eigenvalue of $A$. By
 hypothesis each such entry is either $0$ or $1$. Since
 \[
 0^2=0
@@ -67,7 +67,7 @@ squaring $D$ leaves every diagonal entry unchanged.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -77,7 +77,7 @@ Therefore
 
 ::: pf-proof
 
-Using step <1>1 and orthogonality,
+Using step [](#s1-1){.pf-ref} and orthogonality,
 \[
 \begin{aligned}
 A^2
@@ -86,7 +86,7 @@ A^2
 &=QD^2Q^T.
 \end{aligned}
 \]
-By step <1>2, $D^2=D$, so
+By step [](#s1-2){.pf-ref}, $D^2=D$, so
 \[
 A^2=QDQ^T=A.
 \]
@@ -97,7 +97,7 @@ A^2=QDQ^T=A.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

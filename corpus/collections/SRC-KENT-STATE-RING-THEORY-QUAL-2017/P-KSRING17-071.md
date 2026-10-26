@@ -31,7 +31,7 @@ be nilpotent.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The element
 $$
@@ -68,7 +68,7 @@ Thus $m$ is nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The element
 $$
@@ -83,7 +83,7 @@ With
 $$
 m^N=0
 $$
-from step <1>1, define
+from step [](#s1-1){.pf-ref}, define
 $$
 v
 \coloneqq
@@ -113,7 +113,7 @@ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -142,7 +142,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -152,9 +152,9 @@ $$
 
 ::: pf-proof
 
-The element $u$ is a unit by hypothesis, and $1+m$ is a unit by step <1>2.
+The element $u$ is a unit by hypothesis, and $1+m$ is a unit by step [](#s1-2){.pf-ref}.
 The product of two units is a unit.
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 u+n=u(1+m),
 $$
@@ -166,7 +166,7 @@ so $u+n$ is invertible.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

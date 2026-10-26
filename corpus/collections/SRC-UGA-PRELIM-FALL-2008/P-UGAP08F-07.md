@@ -24,7 +24,7 @@ You may use the division algorithm for $\mathbb Z$, but no more advanced theorem
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $S=\{0\}$, then
 $$
@@ -40,7 +40,7 @@ This is immediate because $0\ZZ=\{0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $S\ne\{0\}$. Then $S$ contains a least positive integer $k$.
 
@@ -53,7 +53,7 @@ Choose a nonzero $s\in S$. Since $S$ is closed under additive inverses, either $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every element of $S$ is an integer multiple of $k$.
 
@@ -76,7 +76,7 @@ If $r>0$, then $r$ would be a positive element of $S$ smaller than the least pos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every integer multiple of $k$ belongs to $S$.
 
@@ -89,7 +89,7 @@ Since $k\in S$ and $S$ is closed under addition and additive inverses, $nk\in S$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There is an integer $k$ such that
 $$
@@ -99,7 +99,7 @@ $$
 
 ::: pf-proof
 
-If $S=\{0\}$, use step <1>1. Otherwise choose $k$ as in step <1>2. Step <1>3 gives $S\subseteq k\ZZ$, and step <1>4 gives $k\ZZ\subseteq S$.
+If $S=\{0\}$, use step [](#s1-1){.pf-ref}. Otherwise choose $k$ as in step [](#s1-2){.pf-ref}. Step [](#s1-3){.pf-ref} gives $S\subseteq k\ZZ$, and step [](#s1-4){.pf-ref} gives $k\ZZ\subseteq S$.
 
 :::
 
@@ -107,7 +107,7 @@ If $S=\{0\}$, use step <1>1. Otherwise choose $k$ as in step <1>2. Step <1>3 giv
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

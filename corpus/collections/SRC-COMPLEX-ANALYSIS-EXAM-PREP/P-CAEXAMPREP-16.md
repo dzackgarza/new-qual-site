@@ -21,7 +21,7 @@ Show that $f$ is not constant on any neighborhood of $z_2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ were constant on a neighborhood of $z_2$, then there would be a constant $c\in\CC$ and an open disk $B(z_2,r)\subseteq A$ on which $f-c$ vanishes identically.
 
@@ -34,22 +34,22 @@ Suppose that $f$ is constant on some neighborhood $U\subseteq A$ of $z_2$, with 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the assumption of step <1>1, $f$ is constant on all of $A$.
+Under the assumption of step [](#s1-1){.pf-ref}, $f$ is constant on all of $A$.
 
 
 ::: pf-proof
 
-The function $g=f-c$ is analytic on the domain $A$. By step <1>1, its zero set contains the disk $B(z_2,r)$, so in particular it has the accumulation point $z_2\in A$. The identity theorem therefore gives $g\equiv0$ on the connected set $A$. Thus $f\equiv c$ on $A$.
+The function $g=f-c$ is analytic on the domain $A$. By step [](#s1-1){.pf-ref}, its zero set contains the disk $B(z_2,r)$, so in particular it has the accumulation point $z_2\in A$. The identity theorem therefore gives $g\equiv0$ on the connected set $A$. Thus $f\equiv c$ on $A$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The conclusion of step <1>2 contradicts $f'(z_1)\ne0$.
+The conclusion of step [](#s1-2){.pf-ref} contradicts $f'(z_1)\ne0$.
 
 
 ::: pf-proof
@@ -60,14 +60,14 @@ If $f$ is constant on $A$, then $f'(z)=0$ for every $z\in A$. In particular $f'(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $f$ is not constant on any neighborhood of $z_2$.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>3 show that the existence of any neighborhood of $z_2$ on which $f$ is constant leads to a contradiction.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that the existence of any neighborhood of $z_2$ on which $f$ is constant leads to a contradiction.
 
 :::
 
@@ -75,7 +75,7 @@ Steps <1>1--<1>3 show that the existence of any neighborhood of $z_2$ on which $
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

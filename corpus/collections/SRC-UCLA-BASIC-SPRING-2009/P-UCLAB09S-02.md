@@ -88,7 +88,7 @@ A^TA
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenvalues of $A^TA$ are
 \[
@@ -119,7 +119,7 @@ The characteristic polynomial is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every unit vector $x\in\mathbb R^2$,
 \[
@@ -139,7 +139,7 @@ By the spectral theorem, it has an orthonormal eigenbasis, and its Rayleigh quot
 x^TA^TAx
 \]
 on unit vectors lies between its smallest and largest eigenvalues.
-By step <1>2, the largest eigenvalue is $6$.
+By step [](#s1-2){.pf-ref}, the largest eigenvalue is $6$.
 Hence
 \[
 x^TA^TAx\le6.
@@ -158,9 +158,9 @@ the claimed inequality follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Equality in step <1>3 is attained.
+Equality in step [](#s1-3){.pf-ref} is attained.
 
 
 ::: pf-proof
@@ -202,7 +202,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the operator norm is
 \[
@@ -212,12 +212,12 @@ Thus the operator norm is
 
 ::: pf-proof
 
-Step <1>3 shows that
+Step [](#s1-3){.pf-ref} shows that
 \[
 \|Ax\|_2\le\sqrt6
 \]
 for every unit vector $x$.
-Step <1>4 gives a unit vector for which equality holds.
+Step [](#s1-4){.pf-ref} gives a unit vector for which equality holds.
 Therefore the maximum is exactly $\sqrt6$.
 
 :::
@@ -226,7 +226,7 @@ Therefore the maximum is exactly $\sqrt6$.
 
 ::: pf-qed
 
-Step <1>5 is the required value of the operator norm.
+Step [](#s1-5){.pf-ref} is the required value of the operator norm.
 
 :::
 

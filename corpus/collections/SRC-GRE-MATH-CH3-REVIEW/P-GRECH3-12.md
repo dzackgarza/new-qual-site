@@ -32,7 +32,7 @@ in a curve, $C$. Find the slope of the tangent line to $C$ at the point where $x
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the slice $y=1$, the curve $C$ is the graph
 $$
@@ -48,7 +48,7 @@ Substituting $y=1$ into the given surface equation gives the displayed one-varia
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along $C$,
 $$
@@ -68,7 +68,7 @@ u'(x)
 =\frac{(1-x)+(x+1)}{(1-x)^2}
 =\frac{2}{(1-x)^2}.
 $$
-By step <1>1 and the derivative of $\arctan$,
+By step [](#s1-1){.pf-ref} and the derivative of $\arctan$,
 $$
 \frac{dz}{dx}
 =\frac{u'(x)}{1+u(x)^2}
@@ -82,7 +82,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At $x=2$, the tangent slope is
 $$
@@ -93,7 +93,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Substituting $x=2$ into the derivative from step <1>2 gives
+Substituting $x=2$ into the derivative from step [](#s1-2){.pf-ref} gives
 $$
 \left.\frac{dz}{dx}\right|_{x=2}
 =\frac{1}{1+2^2}
@@ -106,7 +106,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested tangent slope and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested tangent slope and corresponding choice.
 
 :::
 

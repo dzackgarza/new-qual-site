@@ -55,7 +55,7 @@ These identities follow directly from the substitution $t=-\log x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral in part (a) becomes
 $$
@@ -81,9 +81,9 @@ Reversing the endpoints gives the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Near $t=0$, the integral in step <1>2 converges exactly when
+Near $t=0$, the integral in step [](#s1-2){.pf-ref} converges exactly when
 $$
 \beta<1.
 $$
@@ -102,9 +102,9 @@ which converges exactly for $-\beta>-1$, equivalently $\beta<1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-As $t\to\infty$, the integral in step <1>2 converges if
+As $t\to\infty$, the integral in step [](#s1-2){.pf-ref} converges if
 $$
 \alpha<1,
 $$
@@ -130,7 +130,7 @@ $\beta>1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore part (a) converges exactly when
 $$
@@ -140,10 +140,10 @@ $$
 
 ::: pf-proof
 
-Step <1>3 requires $\beta<1$. Under that condition, the exceptional case
-$\alpha=1$ from step <1>4 would require the incompatible condition
+Step [](#s1-3){.pf-ref} requires $\beta<1$. Under that condition, the exceptional case
+$\alpha=1$ from step [](#s1-4){.pf-ref} would require the incompatible condition
 $\beta>1$. Hence the only possible convergence regime is $\alpha<1$ together
-with $\beta<1$, and steps <1>3--<1>4 show this regime is sufficient.
+with $\beta<1$, and steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show this regime is sufficient.
 
 :::
 
@@ -171,7 +171,7 @@ These are the standard relations for the logarithmic substitution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The integral in part (b) becomes
 $$
@@ -197,7 +197,7 @@ and $\log x=t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Near $t=0$, convergence again requires
 $$
@@ -207,16 +207,16 @@ $$
 
 ::: pf-proof
 
-As in step <1>3, the exponential tends to $1$, so the behavior is
+As in step [](#s1-3){.pf-ref}, the exponential tends to $1$, so the behavior is
 $t^{-\beta}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-As $t\to\infty$, the integral in step <1>7 converges if
+As $t\to\infty$, the integral in step [](#s1-7){.pf-ref} converges if
 $$
 \alpha>1,
 $$
@@ -229,13 +229,13 @@ and for $\alpha=1$ converges exactly when $\beta>1$.
 
 ::: pf-proof
 
-This is the same argument as step <1>4 with the exponential sign reversed.
+This is the same argument as step [](#s1-4){.pf-ref} with the exponential sign reversed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore part (b) converges exactly when
 $$
@@ -245,10 +245,10 @@ $$
 
 ::: pf-proof
 
-Step <1>8 requires $\beta<1$. The borderline case $\alpha=1$ from step
-<1>9 requires $\beta>1$, so it cannot satisfy the endpoint condition at
+Step [](#s1-8){.pf-ref} requires $\beta<1$. The borderline case $\alpha=1$ from step
+[](#s1-9){.pf-ref} requires $\beta>1$, so it cannot satisfy the endpoint condition at
 $x=1$. Hence only $\alpha>1$, $\beta<1$ remains, and it is sufficient by
-steps <1>8--<1>9.
+steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
@@ -256,7 +256,7 @@ steps <1>8--<1>9.
 
 ::: pf-qed
 
-Steps <1>5 and <1>10 give the complete convergence regions for parts (a) and
+Steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref} give the complete convergence regions for parts (a) and
 (b), respectively.
 
 :::

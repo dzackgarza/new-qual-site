@@ -24,7 +24,7 @@ Set $a\coloneqq f(0)$ and $\phi_a(w)\coloneqq(a-w)/(1-\overline a w)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $g\coloneqq\phi_a\circ f$ is a holomorphic self-map of $\DD$ satisfying $g(0)=0$.
 
@@ -37,7 +37,7 @@ Since $\abs a<1$, the map $\phi_a$ is a holomorphic automorphism of $\DD$. Becau
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in\DD$,
 $$
@@ -47,13 +47,13 @@ $$
 
 ::: pf-proof
 
-This is Schwarz's lemma applied to $g$ from step <1>1.
+This is Schwarz's lemma applied to $g$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Put $A\coloneqq\abs a$, $r\coloneqq\abs z$, and $s\coloneqq\abs{f(z)}$. Then
 $$
@@ -63,13 +63,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives $\abs{a-f(z)}\le r\abs{1-\overline a f(z)}$, while the triangle inequality gives $\abs{1-\overline a f(z)}\le1+As$.
+Step [](#s1-2){.pf-ref} gives $\abs{a-f(z)}\le r\abs{1-\overline a f(z)}$, while the triangle inequality gives $\abs{1-\overline a f(z)}\le1+As$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-By the reverse triangle inequality and step <1>3,
+By the reverse triangle inequality and step [](#s1-3){.pf-ref},
 $$
 s-A\le\abs{f(z)-a}\le r(1+As).
 $$
@@ -89,7 +89,7 @@ Thus $s(1-Ar)\le A+r$. Since $1-Ar>0$, division gives $s\le(A+r)/(1-Ar)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -99,7 +99,7 @@ $$
 
 ::: pf-proof
 
-Again by the reverse triangle inequality and step <1>3,
+Again by the reverse triangle inequality and step [](#s1-3){.pf-ref},
 $$
 A-s\le\abs{a-f(z)}\le r(1+As).
 $$
@@ -111,7 +111,7 @@ Hence $A-r\le s(1+Ar)$, so $s\ge(A-r)/(1+Ar)$. When $A<r$, the right-hand side i
 
 ::: pf-qed
 
-Steps <1>4 and <1>5 are the two requested inequalities.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} are the two requested inequalities.
 
 :::
 

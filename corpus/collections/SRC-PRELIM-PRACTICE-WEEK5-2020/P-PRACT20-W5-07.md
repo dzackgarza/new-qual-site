@@ -17,7 +17,7 @@ Show that a group is never the union of two of its proper subgroups. Show by exa
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $H,K<G$ be proper subgroups. If one is contained in the other,
 then
@@ -38,7 +38,7 @@ Since $K$ is proper, $K\ne G$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose neither $H$ nor $K$ contains the other. Choose
 \[
@@ -71,7 +71,7 @@ Thus $hk$ lies in neither subgroup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence a group cannot be the union of two proper subgroups:
 \[
@@ -81,14 +81,14 @@ Hence a group cannot be the union of two proper subgroups:
 
 ::: pf-proof
 
-Step <1>1 handles the containment case, while step <1>2 handles the remaining
+Step [](#s1-1){.pf-ref} handles the containment case, while step [](#s1-2){.pf-ref} handles the remaining
 case.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Klein four group is the union of three proper subgroups.
 
@@ -122,7 +122,7 @@ are proper subgroups and
 
 ::: pf-qed
 
-Step <1>3 proves the impossibility for two proper subgroups, and step <1>4
+Step [](#s1-3){.pf-ref} proves the impossibility for two proper subgroups, and step [](#s1-4){.pf-ref}
 gives the requested three-subgroup example.
 
 :::

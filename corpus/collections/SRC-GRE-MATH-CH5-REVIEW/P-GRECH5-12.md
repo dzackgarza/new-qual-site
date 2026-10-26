@@ -30,7 +30,7 @@ For $1\le i,j\le n$, let $E_{ij}$ denote the matrix with a $1$ in position $(i,j
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set
 $$
@@ -55,7 +55,7 @@ so $\mathcal B$ spans the symmetric matrices. In a linear combination of element
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\mathcal B$ has
 $$
@@ -72,7 +72,7 @@ There are $n$ diagonal matrices $E_{ii}$ and one matrix $E_{ij}+E_{ji}$ for each
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -83,7 +83,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>1, $\mathcal B$ is a basis, and by step <1>2 it has $n(n+1)/2$ elements. The dimension equals the cardinality of a basis.
+By step [](#s1-1){.pf-ref}, $\mathcal B$ is a basis, and by step [](#s1-2){.pf-ref} it has $n(n+1)/2$ elements. The dimension equals the cardinality of a basis.
 
 :::
 
@@ -91,7 +91,7 @@ By step <1>1, $\mathcal B$ is a basis, and by step <1>2 it has $n(n+1)/2$ elemen
 
 ::: pf-qed
 
-Step <1>3 gives the requested dimension.
+Step [](#s1-3){.pf-ref} gives the requested dimension.
 
 :::
 

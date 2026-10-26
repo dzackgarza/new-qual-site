@@ -29,7 +29,7 @@ $$\oint_{C} \left( \cos z - z \cos \frac{1}{z} \right) dz$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Laurent expansion of the integrand about $0$ has residue
 $$
@@ -57,7 +57,7 @@ $\cos z-z\cos(1/z)$ is $1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The only singularity of the integrand inside $C$ is $z=0$.
 
@@ -72,7 +72,7 @@ the only enclosed singularity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -84,7 +84,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By the residue theorem and steps <1>1--<1>2,
+By the residue theorem and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 \oint_C\left(\cos z-z\cos\frac1z\right)dz
 =2\pi i\left(\frac12\right)
@@ -97,7 +97,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required contour integral.
+Step [](#s1-3){.pf-ref} gives the required contour integral.
 
 :::
 

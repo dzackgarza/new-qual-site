@@ -67,7 +67,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral in part (a) is
 $$
@@ -172,7 +172,7 @@ so the traversal initially moves upward from the rightmost point and is counterc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Of the two poles
 $$
@@ -228,7 +228,7 @@ so it lies outside.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The residue at the enclosed pole is
 $$
@@ -260,7 +260,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The integral in part (b) is
 $$
@@ -274,7 +274,7 @@ $$
 
 ::: pf-proof
 
-By the residue theorem and steps <1>4--<1>5,
+By the residue theorem and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
 \int_\gamma
 \frac{dz}{z(z+2i)}
@@ -317,7 +317,7 @@ This is the standard integral definition of the winding number of a piecewise sm
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The conjugate path satisfies
 $$
@@ -387,7 +387,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since
 $$
@@ -426,7 +426,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently,
 $$
@@ -439,7 +439,7 @@ $$
 
 ::: pf-proof
 
-Using steps <1>8--<1>9,
+Using steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref},
 $$
 \begin{aligned}
 n(\overline\gamma,\overline z)
@@ -463,7 +463,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 solves part (a), step <1>6 solves part (b), and step <1>10 proves part (c).
+Step [](#s1-2){.pf-ref} solves part (a), step [](#s1-6){.pf-ref} solves part (b), and step [](#s1-10){.pf-ref} proves part (c).
 
 :::
 

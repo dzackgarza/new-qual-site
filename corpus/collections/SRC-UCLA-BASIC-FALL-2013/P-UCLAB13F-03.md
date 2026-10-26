@@ -29,7 +29,7 @@ L(\gamma)\le 1+f(1)-f(0).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -73,7 +73,7 @@ for $a,b\ge0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every such partition,
 \[
@@ -86,7 +86,7 @@ For every such partition,
 
 ::: pf-proof
 
-Sum the estimate from step <1>1:
+Sum the estimate from step [](#s1-1){.pf-ref}:
 \[
 \begin{aligned}
 \sum_{j=1}^{n-1}
@@ -119,7 +119,7 @@ f(1)-f(0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -129,13 +129,13 @@ Therefore
 
 ::: pf-proof
 
-The length is the supremum of the partition sums appearing in step <1>2, all of which satisfy the same upper bound.
+The length is the supremum of the partition sums appearing in step [](#s1-2){.pf-ref}, all of which satisfy the same upper bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), let $f$ be the Cantor--Lebesgue function on $[0,1]$.
 Then $f$ is continuous and nondecreasing, with
@@ -168,7 +168,7 @@ This gives the classical Cantor--Lebesgue function, which is continuous, nondecr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At stage $k$ of the Cantor construction, there are $2^k$ closed basic intervals, each of length
 \[
@@ -205,7 +205,7 @@ The binary description of the Cantor function shows that changing from the left 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let $P_k$ be the partition consisting of all endpoints of the stage-$k$ basic intervals and all gaps between them.
 Then the corresponding polygonal sum for the graph of $f$ is
@@ -227,7 +227,7 @@ The total contribution from all gaps is therefore
 1-\left(\frac23\right)^k.
 \]
 
-Across each of the $2^k$ surviving basic intervals, the horizontal increment is $3^{-k}$ and the vertical increment is $2^{-k}$ by step <1>5.
+Across each of the $2^k$ surviving basic intervals, the horizontal increment is $3^{-k}$ and the vertical increment is $2^{-k}$ by step [](#s1-5){.pf-ref}.
 Thus each contributes
 \[
 \sqrt{3^{-2k}+2^{-2k}},
@@ -238,9 +238,9 @@ giving the displayed total.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The quantity in step <1>6 satisfies
+The quantity in step [](#s1-6){.pf-ref} satisfies
 \[
 L_k
 =
@@ -276,7 +276,7 @@ the first term tends to $1$ and the square-root term tends to $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For the Cantor function,
 \[
@@ -287,13 +287,13 @@ L(\gamma)\ge2.
 ::: pf-proof
 
 By definition, $L(\gamma)$ is the supremum over all partition sums.
-Each $L_k$ from step <1>6 is one such partition sum.
+Each $L_k$ from step [](#s1-6){.pf-ref} is one such partition sum.
 Hence
 \[
 L(\gamma)\ge L_k
 \]
 for every $k$.
-Taking $k\to\infty$ and using step <1>7 gives
+Taking $k\to\infty$ and using step [](#s1-7){.pf-ref} gives
 \[
 L(\gamma)\ge2.
 \]
@@ -302,7 +302,7 @@ L(\gamma)\ge2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For the Cantor function,
 \[
@@ -312,7 +312,7 @@ L(\gamma)\le2.
 
 ::: pf-proof
 
-Apply part (a), proved in step <1>3, using
+Apply part (a), proved in step [](#s1-3){.pf-ref}, using
 \[
 f(0)=0,
 \qquad
@@ -330,7 +330,7 @@ L(\gamma)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -341,7 +341,7 @@ for the graph of the Cantor--Lebesgue function.
 
 ::: pf-proof
 
-Combine steps <1>8 and <1>9.
+Combine steps [](#s1-8){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
 
@@ -349,7 +349,7 @@ Combine steps <1>8 and <1>9.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and steps <1>4--<1>10 give the required example for part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} give the required example for part (b).
 
 :::
 

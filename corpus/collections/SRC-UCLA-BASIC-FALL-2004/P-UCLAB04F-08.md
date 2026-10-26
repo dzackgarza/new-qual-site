@@ -42,7 +42,7 @@ v=(v_1,\ldots,v_n)^t.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each $k\in\{1,\ldots,n\}$,
 \[
@@ -81,7 +81,7 @@ so the two sums are equal. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -95,13 +95,13 @@ The $k$th coordinate of $2Av$ is
 \[
 2\sum_{j=1}^n a_{kj}v_j,
 \]
-which equals the $k$th coordinate of $\nabla Q(v)$ by step <1>1.
+which equals the $k$th coordinate of $\nabla Q(v)$ by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -133,7 +133,7 @@ Since $u\in S$, one has $\|u\|=1$, hence $u\ne0$ and therefore $\nabla h(u)\ne0$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists $\lambda\in\mathbb R$ such that
 \[
@@ -151,7 +151,7 @@ By the Lagrange multiplier theorem, there is $\lambda\in\mathbb R$ such that
 \[
 \nabla Q(u)=\lambda\nabla h(u).
 \]
-Using steps <1>2--<1>3,
+Using steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 2Au=2\lambda u.
 \]
@@ -165,9 +165,9 @@ Since $u\ne0$, this shows that $u$ is an eigenvector of $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The eigenvalue in step <1>4 is
+The eigenvalue in step [](#s1-4){.pf-ref} is
 \[
 \boxed{\lambda=M}.
 \]
@@ -201,7 +201,7 @@ Hence $\lambda=M$.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and steps <1>4--<1>5 prove part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove part (b).
 
 :::
 

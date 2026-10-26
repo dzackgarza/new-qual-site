@@ -26,7 +26,7 @@ Let $M$ be a real matrix that is both orthogonal and symmetric.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $M$ is orthogonal and symmetric,
 \[
@@ -53,7 +53,7 @@ M^2=I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every eigenvalue of $M$ is either
 \[
@@ -73,7 +73,7 @@ with
 \[
 v\ne0.
 \]
-Applying step <1>1,
+Applying step [](#s1-1){.pf-ref},
 \[
 v
 =
@@ -94,7 +94,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Because $M$ is symmetric, it has an orthonormal basis of eigenvectors.
 
@@ -107,7 +107,7 @@ Apply the spectral theorem for real symmetric matrices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $M$ is positive definite, then every eigenvalue of $M$ is positive.
 
@@ -145,7 +145,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, if $M$ is positive definite,
 \[
@@ -155,11 +155,11 @@ Therefore, if $M$ is positive definite,
 
 ::: pf-proof
 
-By step <1>2, every eigenvalue is $\pm1$.
-By step <1>4, every eigenvalue is positive.
+By step [](#s1-2){.pf-ref}, every eigenvalue is $\pm1$.
+By step [](#s1-4){.pf-ref}, every eigenvalue is positive.
 Thus every eigenvalue equals $1$.
 
-By step <1>3, $M$ is orthogonally diagonalizable.
+By step [](#s1-3){.pf-ref}, $M$ is orthogonally diagonalizable.
 Its diagonal form is therefore
 \[
 I,
@@ -174,7 +174,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $M$ is only positive semidefinite, every eigenvalue satisfies
 \[
@@ -207,7 +207,7 @@ one gets
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The conclusion does not change:
 \[
@@ -218,13 +218,13 @@ also under positive semidefiniteness.
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 \lambda\in\{-1,1\}.
 \]
-Step <1>6 rules out $-1$.
+Step [](#s1-6){.pf-ref} rules out $-1$.
 Thus all eigenvalues are again $1$.
-Using the orthonormal eigenbasis from step <1>3 gives
+Using the orthonormal eigenbasis from step [](#s1-3){.pf-ref} gives
 \[
 M=I.
 \]
@@ -235,7 +235,7 @@ M=I.
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>7 answers part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} answers part (b).
 
 :::
 

@@ -25,7 +25,7 @@ Prove that for every Noetherian module $M$, any proper submodule $N\subsetneq M$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The printed definition does not define intersection-indecomposability.
 
@@ -38,7 +38,7 @@ Every proper submodule $N$ satisfies $N=N\cap N$, with both factors proper in $M
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the corrected definition, every proper submodule of a Noetherian module is a finite intersection of intersection-indecomposable submodules.
 
@@ -57,7 +57,7 @@ Both $N_i$ are proper, since $N_1=M$ would imply $N=N_2$, and similarly for $N_2
 
 ::: pf-qed
 
-Step <1>1 identifies the failure of the statement as printed, and step <1>2 proves the standard corrected assertion.
+Step [](#s1-1){.pf-ref} identifies the failure of the statement as printed, and step [](#s1-2){.pf-ref} proves the standard corrected assertion.
 
 :::
 

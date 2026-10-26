@@ -69,7 +69,7 @@ the integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The two pieces have integrals
 $$
@@ -94,7 +94,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -106,7 +106,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Adding the two values from step <1>3 gives
+Adding the two values from step [](#s1-3){.pf-ref} gives
 $$
 \frac38+\frac12=\frac78.
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the required integral.
+Step [](#s1-4){.pf-ref} gives the required integral.
 
 :::
 

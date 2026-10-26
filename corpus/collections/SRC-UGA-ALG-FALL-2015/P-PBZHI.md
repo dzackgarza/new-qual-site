@@ -33,7 +33,7 @@ Give a proof or counterexample.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every finite group $G$ occurs as a Galois group of a field extension.
 
@@ -50,7 +50,7 @@ Thus taking $K=M$ and the base field to be $E$ realizes $G$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every Galois extension $K/F$ of degree $12$ contains an intermediate field of degree $3$.
 
@@ -66,14 +66,14 @@ Put $\Gamma=\operatorname{Gal}(K/F)$, of order $12$. By Sylow's theorem $\Gamma$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 An intermediate field of degree $2$ need not exist.
 
 
 ::: pf-proof
 
-By step <1>1 there exists a finite Galois extension $K/F$ with $\operatorname{Gal}(K/F)\cong A_4$, of order $12$. Were there an intermediate field $L$ with $[L:F]=2$, the corresponding subgroup $\operatorname{Gal}(K/L)$ would have index $2$ and hence be normal, giving a surjective homomorphism $A_4\to C_2$. Every $3$-cycle maps to the identity because $C_2$ has no nonidentity element of order dividing $3$. But $3$-cycles generate $A_4$, so this homomorphism would be trivial, a contradiction.
+By step [](#s1-1){.pf-ref} there exists a finite Galois extension $K/F$ with $\operatorname{Gal}(K/F)\cong A_4$, of order $12$. Were there an intermediate field $L$ with $[L:F]=2$, the corresponding subgroup $\operatorname{Gal}(K/L)$ would have index $2$ and hence be normal, giving a surjective homomorphism $A_4\to C_2$. Every $3$-cycle maps to the identity because $C_2$ has no nonidentity element of order dividing $3$. But $3$-cycles generate $A_4$, so this homomorphism would be trivial, a contradiction.
 
 :::
 
@@ -81,7 +81,7 @@ By step <1>1 there exists a finite Galois extension $K/F$ with $\operatorname{Ga
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

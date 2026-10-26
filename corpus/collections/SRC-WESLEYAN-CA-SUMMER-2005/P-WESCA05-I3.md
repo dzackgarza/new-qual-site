@@ -21,7 +21,7 @@ State the global Cauchy Theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The global Cauchy theorem states: let \(U\subseteq\mathbb C\) be open, let \(f:U\to\mathbb C\) be analytic, and let \(\Gamma\) be a cycle in \(U\) that is homologous to zero in \(U\). Then
 \[
@@ -45,7 +45,7 @@ Under this hypothesis the global Cauchy theorem asserts precisely the displayed 
 
 ::: pf-qed
 
-Step <1>1 is the requested statement of the theorem.
+Step [](#s1-1){.pf-ref} is the requested statement of the theorem.
 
 :::
 

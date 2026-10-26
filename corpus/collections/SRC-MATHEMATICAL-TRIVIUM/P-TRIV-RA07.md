@@ -70,7 +70,7 @@ this ordering.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Critical points satisfy
 $$
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Write the minimizing critical point as
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-Substitute $x=v+\delta$ into step <1>3:
+Substitute $x=v+\delta$ into step [](#s1-3){.pf-ref}:
 $$
 x^2-v^2
 =
@@ -130,7 +130,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -146,7 +146,7 @@ $$
 
 ::: pf-proof
 
-Equation <1>4 shows $\delta=O(\epsilon)$. Keeping the linear term gives
+Equation [](#s1-4){.pf-ref} shows $\delta=O(\epsilon)$. Keeping the linear term gives
 $$
 2\lambda v^2\delta=\epsilon+O(\epsilon^2),
 $$
@@ -156,7 +156,7 @@ and division by $2\lambda v^2$ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 At $x=v+\delta$,
 $$
@@ -199,9 +199,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Substituting step <1>5 into step <1>6 gives
+Substituting step [](#s1-5){.pf-ref} into step [](#s1-6){.pf-ref} gives
 $$
 \boxed{
 f_{\min}
@@ -247,7 +247,7 @@ Add them to the term $-\epsilon v$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the leading behavior is
 $$
@@ -257,7 +257,7 @@ $$
 
 ::: pf-proof
 
-The first correction in step <1>7 is of order $\epsilon^2$.
+The first correction in step [](#s1-7){.pf-ref} is of order $\epsilon^2$.
 
 :::
 
@@ -265,7 +265,7 @@ The first correction in step <1>7 is of order $\epsilon^2$.
 
 ::: pf-qed
 
-Steps <1>7--<1>8 give the requested asymptotic minimum.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the requested asymptotic minimum.
 
 :::
 

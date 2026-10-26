@@ -29,7 +29,7 @@ b. Find $\gal(K/F)$ and express each intermediate field between $F$ and $K$ as $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every root $r$ of $f$ satisfies $r^9=1$ and $r^3\neq1$.
 
@@ -42,7 +42,7 @@ The equation $r^6+r^3+1=0$ gives $(r^3-1)(r^6+r^3+1)=r^9-1=0$. But $r^3=1$ would
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The splitting field and Galois group are
 \[
@@ -59,7 +59,7 @@ The assumed irreducibility of the degree-six polynomial gives $[F(r):F]=6$, henc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 All intermediate fields are
 \[
@@ -70,9 +70,9 @@ F(r+r^8)\cong\mathbb F_8,\quad F(r)=K}.
 
 ::: pf-proof
 
-The cyclic group $C_6$ has exactly one subgroup of each order $1,2,3,6$, so the intermediate fields are the unique subfields of cardinalities $2,4,8,64$. By step <1>1, $r^3$ has order three and satisfies the irreducible polynomial $x^2+x+1$, hence generates $\mathbb F_4$.
+The cyclic group $C_6$ has exactly one subgroup of each order $1,2,3,6$, so the intermediate fields are the unique subfields of cardinalities $2,4,8,64$. By step [](#s1-1){.pf-ref}, $r^3$ has order three and satisfies the irreducible polynomial $x^2+x+1$, hence generates $\mathbb F_4$.
 
-Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^{64}=\beta$. Hence $\beta$ belongs to $\mathbb F_8$. It does not belong to $F$: if $\beta=0$ then $r^7=1$; if $\beta=1$, then multiplying $r+r^{-1}=1$ by $r$ gives $r^2+r+1=0$, implying $r^3=1$. Both contradict step <1>1. Since $[F_8:F]=3$, the nontrivial extension $F(\beta)$ equals $\mathbb F_8$. Finally $F(r)=K$ by step <1>2.
+Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^{64}=\beta$. Hence $\beta$ belongs to $\mathbb F_8$. It does not belong to $F$: if $\beta=0$ then $r^7=1$; if $\beta=1$, then multiplying $r+r^{-1}=1$ by $r$ gives $r^2+r+1=0$, implying $r^3=1$. Both contradict step [](#s1-1){.pf-ref}. Since $[F_8:F]=3$, the nontrivial extension $F(\beta)$ equals $\mathbb F_8$. Finally $F(r)=K$ by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -80,7 +80,7 @@ Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^
 
 ::: pf-qed
 
-Step <1>1 proves part (a); steps <1>2 and <1>3 prove part (b).
+Step [](#s1-1){.pf-ref} proves part (a); steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (b).
 
 :::
 

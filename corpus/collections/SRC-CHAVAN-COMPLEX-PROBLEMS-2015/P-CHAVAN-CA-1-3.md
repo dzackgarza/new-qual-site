@@ -50,7 +50,7 @@ Each partial sum $p_N$ is continuous on $K$, and $p_N\to f$ uniformly on $K$ by 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -88,7 +88,7 @@ Combining the two inequalities proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $N$,
 $$
@@ -104,7 +104,7 @@ Each $p_N$ is a polynomial. The polynomial maximum-modulus result established in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-Applying step <1>2 with $E=K$ and with $E=\partial K$ gives
+Applying step [](#s1-2){.pf-ref} with $E=K$ and with $E=\partial K$ gives
 $$
 \max_K|p_N|\longrightarrow\max_K|f|
 $$
@@ -122,7 +122,7 @@ and
 $$
 \max_{\partial K}|p_N|\longrightarrow\max_{\partial K}|f|.
 $$
-The two quantities on the left are equal for every $N$ by step <1>3. Their limits are therefore equal, which is the displayed identity.
+The two quantities on the left are equal for every $N$ by step [](#s1-3){.pf-ref}. Their limits are therefore equal, which is the displayed identity.
 
 :::
 
@@ -130,7 +130,7 @@ The two quantities on the left are equal for every $N$ by step <1>3. Their limit
 
 ::: pf-qed
 
-Step <1>4 is the required maximum-modulus equality.
+Step [](#s1-4){.pf-ref} is the required maximum-modulus equality.
 
 :::
 

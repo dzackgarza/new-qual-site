@@ -30,7 +30,7 @@ a_0\sim a_1\quad\Longleftrightarrow\quad f(a_0)=f(a_1).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The relation $\sim$ is reflexive.
 
@@ -54,7 +54,7 @@ a\sim a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The relation $\sim$ is symmetric.
 
@@ -82,7 +82,7 @@ a_1\sim a_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The relation $\sim$ is transitive.
 
@@ -116,7 +116,7 @@ a_0\sim a_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -129,7 +129,7 @@ Hence
 
 ::: pf-proof
 
-Steps <1>1--<1>3 verify reflexivity, symmetry, and transitivity.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify reflexivity, symmetry, and transitivity.
 
 :::
 
@@ -165,7 +165,7 @@ representative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is well defined.
 
@@ -199,7 +199,7 @@ f(a')
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map $\Phi$ is injective.
 
@@ -230,7 +230,7 @@ Thus $\Phi$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The map $\Phi$ is surjective.
 
@@ -265,7 +265,7 @@ Thus every element of $B$ is in the image.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -280,7 +280,7 @@ is a bijection.
 
 ::: pf-proof
 
-Steps <1>6--<1>8 show that $\Phi$ is a well-defined bijection.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} show that $\Phi$ is a well-defined bijection.
 
 :::
 
@@ -288,7 +288,7 @@ Steps <1>6--<1>8 show that $\Phi$ is a well-defined bijection.
 
 ::: pf-qed
 
-Step <1>4 proves part (1), and step <1>9 proves part (2).
+Step [](#s1-4){.pf-ref} proves part (1), and step [](#s1-9){.pf-ref} proves part (2).
 
 :::
 

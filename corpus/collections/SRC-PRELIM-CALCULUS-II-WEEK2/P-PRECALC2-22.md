@@ -25,7 +25,7 @@ I
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Set
 \[
@@ -41,7 +41,7 @@ This substitution removes the denominator \(1+t^2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Then
 \[
@@ -62,7 +62,7 @@ Differentiate \(t=\tan\theta\) and use the identity
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The bounds \(t=0,1\) become
 \[
@@ -96,13 +96,13 @@ I
 
 ::: pf-proof
 
-Substitute steps <1>1--<1>3 into the integral.
+Substitute steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} into the integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -123,7 +123,7 @@ Use
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The numerator satisfies
 \[
@@ -148,7 +148,7 @@ multiply by \(\sqrt2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -165,7 +165,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>5--<1>6 and take logarithms. On
+Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} and take logarithms. On
 \[
 0\le\theta\le\frac{\pi}{4},
 \]
@@ -175,7 +175,7 @@ all cosine factors are positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -195,7 +195,7 @@ I
 
 ::: pf-proof
 
-Integrate the identity from step <1>7. The constant term contributes
+Integrate the identity from step [](#s1-7){.pf-ref}. The constant term contributes
 \[
 \frac12\log2\cdot\frac{\pi}{4}
 =
@@ -206,7 +206,7 @@ Integrate the identity from step <1>7. The constant term contributes
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The two logarithmic cosine integrals are equal:
 \[
@@ -239,7 +239,7 @@ Reversing the bounds yields exactly the right-hand integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence the logarithmic integrals cancel, and
 \[
@@ -252,7 +252,7 @@ I
 
 ::: pf-proof
 
-Apply step <1>9 to step <1>8.
+Apply step [](#s1-9){.pf-ref} to step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -260,7 +260,7 @@ Apply step <1>9 to step <1>8.
 
 ::: pf-qed
 
-Step <1>10 is the requested value.
+Step [](#s1-10){.pf-ref} is the requested value.
 
 :::
 

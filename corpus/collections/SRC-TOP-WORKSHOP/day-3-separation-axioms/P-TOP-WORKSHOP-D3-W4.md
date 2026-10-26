@@ -96,7 +96,7 @@ but
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space
 \[
@@ -113,7 +113,7 @@ In a discrete space every subset is both open and closed. Thus two disjoint clos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In the coarser topology \(\mathcal T\), the sets
 \[
@@ -141,7 +141,7 @@ X-\{b\}=\{a,c\}\in\mathcal T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 These two closed sets are disjoint.
 
@@ -154,7 +154,7 @@ The points \(a\) and \(b\) are distinct.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every open neighborhood of \(a\) in \((X,\mathcal T)\) contains \(c\).
 
@@ -173,7 +173,7 @@ and both contain \(c\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every open neighborhood of \(b\) in \((X,\mathcal T)\) also contains \(c\).
 
@@ -191,20 +191,20 @@ X.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the closed sets \(\{a\}\) and \(\{b\}\) cannot be separated by disjoint open neighborhoods.
 
 
 ::: pf-proof
 
-Any open neighborhood of \(\{a\}\) contains \(c\) by step <1>7, and any open neighborhood of \(\{b\}\) contains \(c\) by step <1>8. Hence any such two neighborhoods intersect at \(c\).
+Any open neighborhood of \(\{a\}\) contains \(c\) by step [](#s1-7){.pf-ref}, and any open neighborhood of \(\{b\}\) contains \(c\) by step [](#s1-8){.pf-ref}. Hence any such two neighborhoods intersect at \(c\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus
 \[
@@ -216,20 +216,20 @@ Thus
 
 ::: pf-proof
 
-Steps <1>5--<1>9 give two disjoint closed subsets that cannot be separated by disjoint open neighborhoods.
+Steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref} give two disjoint closed subsets that cannot be separated by disjoint open neighborhoods.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence normality does not necessarily pass from a finer topology to a strictly coarser topology.
 
 
 ::: pf-proof
 
-The finer space \((X,\mathcal T')\) is normal by step <1>4, whereas the coarser space \((X,\mathcal T)\) is not normal by step <1>10.
+The finer space \((X,\mathcal T')\) is normal by step [](#s1-4){.pf-ref}, whereas the coarser space \((X,\mathcal T)\) is not normal by step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -237,7 +237,7 @@ The finer space \((X,\mathcal T')\) is normal by step <1>4, whereas the coarser 
 
 ::: pf-qed
 
-Step <1>11 answers the question.
+Step [](#s1-11){.pf-ref} answers the question.
 
 :::
 

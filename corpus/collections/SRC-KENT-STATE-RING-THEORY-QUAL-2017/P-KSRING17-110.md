@@ -70,7 +70,7 @@ This is exactly the Euclidean division property.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every ideal of $F[x]$ is principal.
 
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -166,13 +166,13 @@ The ring
 $$
 F[x]
 $$
-is an integral domain because $F$ is a field, and step <1>2 shows every ideal is principal.
+is an integral domain because $F$ is a field, and step [](#s1-2){.pf-ref} shows every ideal is principal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In
 $$
@@ -219,7 +219,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose, for contradiction, that
 $$
@@ -251,7 +251,7 @@ both $x$ and $y$ are multiples of $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The polynomials $x$ and $y$ are irreducible and are not associates in
 $$
@@ -289,9 +289,9 @@ then the monomial supports on the two sides would differ, which is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The element $f$ from step <1>5 must be a unit.
+The element $f$ from step [](#s1-5){.pf-ref} must be a unit.
 
 
 ::: pf-proof
@@ -314,7 +314,7 @@ $$
 x\mid y,
 $$
 forcing the irreducibles $x$ and $y$ to be associates.
-This contradicts step <1>6.
+This contradicts step [](#s1-6){.pf-ref}.
 Therefore
 $$
 f
@@ -325,7 +325,7 @@ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The ideal $(x,y)$ is not principal.
 
@@ -336,12 +336,12 @@ If
 $$
 (x,y)=(f)
 $$
-were principal, step <1>7 would make $f$ a unit.
+were principal, step [](#s1-7){.pf-ref} would make $f$ a unit.
 Then
 $$
 (x,y)=(f)=F[x,y],
 $$
-contradicting step <1>4.
+contradicting step [](#s1-4){.pf-ref}.
 Hence
 $$
 \boxed{
@@ -354,7 +354,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -368,7 +368,7 @@ $$
 ::: pf-proof
 
 A PID has every ideal principal.
-Step <1>8 exhibits a nonprincipal ideal.
+Step [](#s1-8){.pf-ref} exhibits a nonprincipal ideal.
 
 :::
 
@@ -376,7 +376,7 @@ Step <1>8 exhibits a nonprincipal ideal.
 
 ::: pf-qed
 
-Step <1>3 proves the first assertion, and step <1>9 proves the second.
+Step [](#s1-3){.pf-ref} proves the first assertion, and step [](#s1-9){.pf-ref} proves the second.
 
 :::
 

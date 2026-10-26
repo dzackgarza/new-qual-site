@@ -64,7 +64,7 @@ The function \(f\) is entire, so it is holomorphic on all of \(\mathbb C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the circle
 \[
@@ -84,7 +84,7 @@ Use the global boundedness hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Cauchy's estimate for the first derivative gives
 \[
@@ -107,15 +107,15 @@ on \(|z-z_0|=R\), then
 \le
 \frac{M_R}{R}.
 \]
-Apply step <1>3 with \(M_R\le M\).
+Apply step [](#s1-3){.pf-ref} with \(M_R\le M\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Since step <1>4 holds for every \(R>0\),
+Since step [](#s1-4){.pf-ref} holds for every \(R>0\),
 \[
 \boxed{f'(z_0)=0}.
 \]
@@ -146,13 +146,13 @@ The point \(z_0\) was arbitrary, so
 
 ::: pf-proof
 
-Apply step <1>5 at every point of \(\mathbb C\).
+Apply step [](#s1-5){.pf-ref} at every point of \(\mathbb C\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore \(f\) is constant.
 
@@ -168,7 +168,7 @@ connected component of its domain. The plane \(\mathbb C\) is connected.
 
 ::: pf-qed
 
-Step <1>7 is Liouville's theorem.
+Step [](#s1-7){.pf-ref} is Liouville's theorem.
 
 :::
 

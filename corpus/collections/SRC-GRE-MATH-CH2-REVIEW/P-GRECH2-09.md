@@ -33,7 +33,7 @@ Set $u(x)=\log\sqrt{x}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For interior points of the domain,
 $$
@@ -57,7 +57,7 @@ one has $u'(x)=1/(2x)$. Substitution gives the displayed derivative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $x=e$,
 $$
@@ -71,7 +71,7 @@ Because
 $$
 \log\sqrt e=\frac12,
 $$
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 $$
 f'(e)
 =\frac{1}{2e\sqrt{1-(1/2)^2}}
@@ -83,7 +83,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the requested value is
 $$
@@ -94,7 +94,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-This is exactly the evaluation established in step <1>2.
+This is exactly the evaluation established in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -102,7 +102,7 @@ This is exactly the evaluation established in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested derivative value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested derivative value and corresponding choice.
 
 :::
 

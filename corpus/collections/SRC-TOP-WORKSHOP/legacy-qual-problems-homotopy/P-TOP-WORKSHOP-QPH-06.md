@@ -23,7 +23,7 @@ Assume $n\ge1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -49,7 +49,7 @@ By definition, a retraction onto $S^{n-1}$ restricts to the identity on $S^{n-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The reduced homology groups satisfy
 \[
@@ -82,9 +82,9 @@ The ball $B^n$ is contractible, so all of its reduced homology groups vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Applying reduced homology in degree $n-1$ to step <1>1 gives
+Applying reduced homology in degree $n-1$ to step [](#s1-1){.pf-ref} gives
 \[
 r_*\circ i_*
 =
@@ -100,7 +100,7 @@ Reduced homology is functorial, so
 =
 r_*\circ i_*.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 r\circ i
 =
@@ -119,14 +119,14 @@ r_*\circ i_*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The identity in step <1>3 is impossible.
+The identity in step [](#s1-3){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \widetilde H_{n-1}(B^n;\mathbb Z)=0.
 \]
@@ -142,19 +142,19 @@ is the zero homomorphism. Hence
 r_*\circ i_*=0.
 \]
 
-But step <1>2 also gives
+But step [](#s1-2){.pf-ref} also gives
 \[
 \widetilde H_{n-1}(S^{n-1};\mathbb Z)
 \cong
 \mathbb Z\ne0,
 \]
-so its identity homomorphism is nonzero. This contradicts step <1>3.
+so its identity homomorphism is nonzero. This contradicts step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -166,7 +166,7 @@ S^{n-1}\text{ is not a retract of }B^n.
 
 ::: pf-proof
 
-The assumption that a retraction exists leads to the contradiction in step <1>4.
+The assumption that a retraction exists leads to the contradiction in step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -174,7 +174,7 @@ The assumption that a retraction exists leads to the contradiction in step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the desired conclusion.
+Step [](#s1-5){.pf-ref} is the desired conclusion.
 
 :::
 

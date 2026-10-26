@@ -30,7 +30,7 @@ f(z)=z^4-5z+1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial \(f\) has exactly four zeros in \(|z|<2\), counted with multiplicity, and no zero on \(|z|=2\).
 
@@ -47,7 +47,7 @@ By Rouché's theorem, \(f=z^4+(-5z+1)\) and \(z^4\) have the same number of zero
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial \(f\) has exactly one zero in \(|z|<1\), counted with multiplicity, and no zero on \(|z|=1\).
 
@@ -64,7 +64,7 @@ Rouché's theorem applied to \(f=(-5z)+(z^4+1)\) shows that \(f\) and \(-5z\) ha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The number of zeros of \(f\) in \(1<|z|<2\), counted with multiplicity, is
 \[
@@ -74,7 +74,7 @@ The number of zeros of \(f\) in \(1<|z|<2\), counted with multiplicity, is
 
 ::: pf-proof
 
-By step <1>1 there are four zeros with \(|z|<2\), and by step <1>2 exactly one of them has \(|z|<1\). Neither boundary circle contains a zero. Therefore precisely \(4-1=3\) zeros lie in the strict annulus \(1<|z|<2\).
+By step [](#s1-1){.pf-ref} there are four zeros with \(|z|<2\), and by step [](#s1-2){.pf-ref} exactly one of them has \(|z|<1\). Neither boundary circle contains a zero. Therefore precisely \(4-1=3\) zeros lie in the strict annulus \(1<|z|<2\).
 
 :::
 
@@ -82,7 +82,7 @@ By step <1>1 there are four zeros with \(|z|<2\), and by step <1>2 exactly one o
 
 ::: pf-qed
 
-Step <1>3 gives the required count.
+Step [](#s1-3){.pf-ref} gives the required count.
 
 :::
 

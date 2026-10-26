@@ -33,7 +33,7 @@ a,b,c\in F.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $A$ is non-invertible exactly when
 \[
@@ -61,7 +61,7 @@ If $a=0$ or $a=1$, there are
 \[
 2p-1
 \]
-choices for the pair $(b,c)$ satisfying step <1>1.
+choices for the pair $(b,c)$ satisfying step [](#s1-1){.pf-ref}.
 
 
 ::: pf-proof
@@ -87,7 +87,7 @@ If $a\notin\{0,1\}$, there are
 \[
 p-1
 \]
-choices for $(b,c)$ satisfying step <1>1.
+choices for $(b,c)$ satisfying step [](#s1-1){.pf-ref}.
 
 
 ::: pf-proof
@@ -106,7 +106,7 @@ c=\lambda b^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The total number of non-invertible matrices of trace $1$ is
 \[
@@ -136,7 +136,7 @@ N
 
 ::: pf-qed
 
-Step <1>4 is the requested count.
+Step [](#s1-4){.pf-ref} is the requested count.
 
 :::
 

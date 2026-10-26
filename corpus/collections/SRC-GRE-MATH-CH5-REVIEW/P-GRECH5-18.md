@@ -28,7 +28,7 @@ If $A$ is an invertible matrix with an eigenvalue of $3$ corresponding to the ei
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The eigenvalue equation is
 $$
@@ -44,7 +44,7 @@ This is precisely the meaning of the statement that $3$ is an eigenvalue of $A$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The same vector $\mathbf x$ satisfies
 $$
@@ -54,7 +54,7 @@ $$
 
 ::: pf-proof
 
-Apply $A^{-1}$ to both sides of step <1>1. Since $A$ is invertible,
+Apply $A^{-1}$ to both sides of step [](#s1-1){.pf-ref}. Since $A$ is invertible,
 $$
 \mathbf x=3A^{-1}\mathbf x,
 $$
@@ -64,7 +64,7 @@ and division by $3$ gives the displayed equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the statement that must be true is
 $$
@@ -75,7 +75,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Step <1>2 says exactly that $1/3$ is an eigenvalue of $A^{-1}$ corresponding to the same eigenvector $\mathbf x$.
+Step [](#s1-2){.pf-ref} says exactly that $1/3$ is an eigenvalue of $A^{-1}$ corresponding to the same eigenvector $\mathbf x$.
 
 :::
 
@@ -83,7 +83,7 @@ Step <1>2 says exactly that $1/3$ is an eigenvalue of $A^{-1}$ corresponding to 
 
 ::: pf-qed
 
-Step <1>3 identifies the required statement.
+Step [](#s1-3){.pf-ref} identifies the required statement.
 
 :::
 

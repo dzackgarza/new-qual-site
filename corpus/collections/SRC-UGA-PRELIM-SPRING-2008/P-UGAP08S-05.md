@@ -98,7 +98,7 @@ u_1+3u_1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every vector
 \[
@@ -149,7 +149,7 @@ v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose
 \[
@@ -180,7 +180,7 @@ are pairwise orthogonal eigenvectors.
 
 ::: pf-proof
 
-The coordinate sums of $u_2$ and $u_3$ are zero, so step <1>3 gives
+The coordinate sums of $u_2$ and $u_3$ are zero, so step [](#s1-3){.pf-ref} gives
 eigenvalue $1$ for both.
 
 Their dot products are
@@ -211,7 +211,7 @@ u_2\cdot u_3
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Their norms are
 \[
@@ -278,13 +278,13 @@ v_3
 
 ::: pf-proof
 
-Normalize the pairwise orthogonal eigenvectors from steps <1>4--<1>5.
+Normalize the pairwise orthogonal eigenvectors from steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 \[
@@ -338,7 +338,7 @@ Q^T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -366,7 +366,7 @@ Multiplying $A$ by $Q$ therefore multiplies each column by its eigenvalue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -386,7 +386,7 @@ Q^TAQ
 
 ::: pf-proof
 
-Left-multiply the identity in step <1>8 by
+Left-multiply the identity in step [](#s1-8){.pf-ref} by
 \[
 Q^{-1}=Q^T.
 \]
@@ -397,7 +397,7 @@ Q^{-1}=Q^T.
 
 ::: pf-qed
 
-Step <1>7 gives an explicit orthogonal matrix and step <1>9 gives the
+Step [](#s1-7){.pf-ref} gives an explicit orthogonal matrix and step [](#s1-9){.pf-ref} gives the
 required diagonalization.
 
 :::

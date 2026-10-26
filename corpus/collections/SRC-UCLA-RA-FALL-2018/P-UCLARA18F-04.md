@@ -38,7 +38,7 @@ Write \(q(t)=e^{2\pi i t}\), so that \(\mathbb T\cong\mathbb R/\mathbb Z\), and 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(\alpha\in\mathbb T\), the measure \(m\) is \(\alpha\)-invariant.
 
@@ -71,7 +71,7 @@ Thus \(m(R_\alpha(E))=m(E)\) for every Borel \(E\subseteq\mathbb T\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let \(H\subseteq\mathbb T\) be an infinite subgroup and let \(\overline H\) be its closure. Then points of \(H\setminus\{1\}\) occur arbitrarily close to \(1\).
 
@@ -88,14 +88,14 @@ for every \(j\), while \(h_{2j}h_{2j-1}^{-1}\to zz^{-1}=1\). Hence nonidentity e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every infinite subgroup \(H\subseteq\mathbb T\) is dense in \(\mathbb T\).
 
 
 ::: pf-proof
 
-Fix \(\varepsilon>0\). By step <1>2, choose
+Fix \(\varepsilon>0\). By step [](#s1-2){.pf-ref}, choose
 \[
 h=e^{2\pi i\theta}\in H\setminus\{1\}
 \]
@@ -115,7 +115,7 @@ form an \(\varepsilon\)-net in \(\mathbb T\). Since \(\varepsilon>0\) was arbitr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If \(\alpha\) is not a root of unity, then
 \[
@@ -125,13 +125,13 @@ If \(\alpha\) is not a root of unity, then
 
 ::: pf-proof
 
-The cyclic subgroup \(H=\{\alpha^n:n\in\mathbb Z\}\) is finite exactly when \(\alpha\) has finite order, i.e. exactly when \(\alpha\) is a root of unity. Under the hypothesis it is infinite, so step <1>3 applies.
+The cyclic subgroup \(H=\{\alpha^n:n\in\mathbb Z\}\) is finite exactly when \(\alpha\) has finite order, i.e. exactly when \(\alpha\) is a root of unity. Under the hypothesis it is infinite, so step [](#s1-3){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If \(\mu\) is \(\alpha\)-invariant, then \(\mu\) is invariant under \(R_{\alpha^n}\) for every \(n\in\mathbb Z\).
 
@@ -148,7 +148,7 @@ Iteration gives invariance for all negative powers as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Assume \(\alpha\) is not a root of unity. If \(\mu\) is \(\alpha\)-invariant, then for every \(\beta\in\mathbb T\) and every \(f\in C(\mathbb T)\),
 \[
@@ -159,11 +159,11 @@ Assume \(\alpha\) is not a root of unity. If \(\mu\) is \(\alpha\)-invariant, th
 
 ::: pf-proof
 
-By step <1>4, choose integers \(n_j\) with \(\alpha^{n_j}\to\beta\). Since \(f\) is uniformly continuous on compact \(\mathbb T\),
+By step [](#s1-4){.pf-ref}, choose integers \(n_j\) with \(\alpha^{n_j}\to\beta\). Since \(f\) is uniformly continuous on compact \(\mathbb T\),
 \[
 f(\alpha^{n_j}z)\longrightarrow f(\beta z)
 \]
-uniformly in \(z\). Step <1>5 gives
+uniformly in \(z\). Step [](#s1-5){.pf-ref} gives
 \[
 \int f(\alpha^{n_j}z)\,d\mu(z)=\int f(z)\,d\mu(z)
 \]
@@ -173,7 +173,7 @@ for every \(j\). Passing to the limit under the integral, justified by uniform c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Under the same hypotheses, for every \(f\in C(\mathbb T)\),
 \[
@@ -183,7 +183,7 @@ Under the same hypotheses, for every \(f\in C(\mathbb T)\),
 
 ::: pf-proof
 
-By step <1>6, the inner integral below is independent of \(\beta\). Hence Fubini's theorem and step <1>1 give
+By step [](#s1-6){.pf-ref}, the inner integral below is independent of \(\beta\). Hence Fubini's theorem and step [](#s1-1){.pf-ref} give
 \[
 \begin{aligned}
 \int_{\mathbb T}f(z)\,d\mu(z)
@@ -193,20 +193,20 @@ By step <1>6, the inner integral below is independent of \(\beta\). Hence Fubini
 &=\int_{\mathbb T}f\,dm.
 \end{aligned}
 \]
-In the third line, multiplication by the fixed \(z\in\mathbb T\) is a rotation, so it preserves \(m\) by step <1>1.
+In the third line, multiplication by the fixed \(z\in\mathbb T\) is a rotation, so it preserves \(m\) by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If \(\alpha\) is not a root of unity, then \(\boxed{m\text{ is the unique }\alpha\text{-invariant Borel probability measure}}\).
 
 
 ::: pf-proof
 
-Existence is step <1>1. If \(\mu\) is any other \(\alpha\)-invariant Borel probability measure, step <1>7 shows that \(\mu\) and \(m\) have the same integral against every real-valued continuous function on compact \(\mathbb T\). By uniqueness in the Riesz representation theorem, \(\mu=m\).
+Existence is step [](#s1-1){.pf-ref}. If \(\mu\) is any other \(\alpha\)-invariant Borel probability measure, step [](#s1-7){.pf-ref} shows that \(\mu\) and \(m\) have the same integral against every real-valued continuous function on compact \(\mathbb T\). By uniqueness in the Riesz representation theorem, \(\mu=m\).
 
 :::
 
@@ -214,7 +214,7 @@ Existence is step <1>1. If \(\mu\) is any other \(\alpha\)-invariant Borel proba
 
 ::: pf-qed
 
-Steps <1>1, <1>4, and <1>8 prove parts (a), (b), and (c), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-8){.pf-ref} prove parts (a), (b), and (c), respectively.
 
 :::
 

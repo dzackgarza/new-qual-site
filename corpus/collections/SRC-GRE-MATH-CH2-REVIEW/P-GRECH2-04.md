@@ -31,7 +31,7 @@ Evaluate the following limit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 After one application of L'Hôpital's rule, the limit becomes
 $$
@@ -57,14 +57,14 @@ Thus L'Hôpital's rule gives the displayed limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The limit in step <1>1 equals $1/6$.
+The limit in step [](#s1-1){.pf-ref} equals $1/6$.
 
 
 ::: pf-proof
 
-The quotient in step <1>1 again has the indeterminate form $0/0$. A second application of L'Hôpital's rule gives
+The quotient in step [](#s1-1){.pf-ref} again has the indeterminate form $0/0$. A second application of L'Hôpital's rule gives
 $$
 \lim_{x\to0}
 \frac{x(1-x^2)^{-3/2}}{6x}.
@@ -79,7 +79,7 @@ whose limit at $0$ is $1/6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -90,7 +90,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -98,7 +98,7 @@ Combine steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested limit and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
 
 :::
 

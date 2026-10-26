@@ -36,7 +36,7 @@ be the Frobenius norm.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hypothesis gives
 \[
@@ -57,7 +57,7 @@ a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every
 \[
@@ -109,7 +109,7 @@ Take square roots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose
 \[
@@ -132,24 +132,24 @@ x+Ax=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
 x\ne0,
 \]
-then steps <1>1--<1>3 give a contradiction.
+then steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give a contradiction.
 
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \|x\|_2
 =
 \|Ax\|_2.
 \]
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 \|Ax\|_2
 \le
@@ -173,13 +173,13 @@ to obtain
 \[
 1\le\|A\|_F,
 \]
-contradicting step <1>1.
+contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -189,13 +189,13 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 rules out every nonzero vector in the kernel.
+Step [](#s1-4){.pf-ref} rules out every nonzero vector in the kernel.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since $I+A$ is a linear map
 \[
@@ -207,7 +207,7 @@ trivial kernel implies invertibility.
 ::: pf-proof
 
 For an endomorphism of a finite-dimensional vector space, injectivity is equivalent to surjectivity.
-Step <1>5 gives injectivity.
+Step [](#s1-5){.pf-ref} gives injectivity.
 Therefore
 \[
 \boxed{I+A\text{ is invertible}.}
@@ -219,7 +219,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

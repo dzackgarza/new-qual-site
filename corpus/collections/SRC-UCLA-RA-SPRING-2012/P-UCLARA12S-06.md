@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 It suffices to prove that $M^\perp=\{0\}$.
 
@@ -50,7 +50,7 @@ Thus $M=L^2(\RR)$ exactly when $M^\perp=\{0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $g\in M^\perp$, then the $L^1$ function
 $$
@@ -100,14 +100,14 @@ for every $a\in\RR$. This is the inverse Fourier transform of $h$, so the Fourie
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $g\in M^\perp$ is zero.
 
 
 ::: pf-proof
 
-By the uniqueness theorem for the Fourier transform on $L^1(\RR)$, step <1>2 implies
+By the uniqueness theorem for the Fourier transform on $L^1(\RR)$, step [](#s1-2){.pf-ref} implies
 $$
 h(\xi)
 =
@@ -128,14 +128,14 @@ almost everywhere. Plancherel then gives $g=0$ in $L^2(\RR)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Finite linear combinations of translates of $f$ are dense in $L^2(\RR)$.
 
 
 ::: pf-proof
 
-Step <1>3 gives $M^\perp=\{0\}$. By step <1>1, $M=L^2(\RR)$, and $M$ is by definition the closure of the finite linear combinations of translates.
+Step [](#s1-3){.pf-ref} gives $M^\perp=\{0\}$. By step [](#s1-1){.pf-ref}, $M=L^2(\RR)$, and $M$ is by definition the closure of the finite linear combinations of translates.
 
 :::
 
@@ -143,7 +143,7 @@ Step <1>3 gives $M^\perp=\{0\}$. By step <1>1, $M=L^2(\RR)$, and $M$ is by defin
 
 ::: pf-qed
 
-Step <1>4 is the required density statement.
+Step [](#s1-4){.pf-ref} is the required density statement.
 
 :::
 

@@ -29,7 +29,7 @@ for all $z,w\in D$ and some constant $C\in\mathbb R$, then there is a constant $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix $z\in D$ and set
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Cauchy's derivative formula gives
 $$
@@ -72,13 +72,13 @@ The constant function $f(z)$ has derivative $0$. Apply Cauchy's derivative formu
 $$
 \zeta\longmapsto f(\zeta)-f(z)
 $$
-on the circle from step <1>1.
+on the circle from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -93,7 +93,7 @@ On $|\zeta-z|=r$, the Hölder hypothesis gives
 $$
 |f(\zeta)-f(z)|\le C r^\alpha.
 $$
-Using step <1>2 and the fact that the circle has length $2\pi r$,
+Using step [](#s1-2){.pf-ref} and the fact that the circle has length $2\pi r$,
 $$
 \begin{aligned}
 |f'(z)|
@@ -108,7 +108,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -121,7 +121,7 @@ for every $z\in D$.
 
 ::: pf-proof
 
-Substitute $r=(1-|z|)/2$ from step <1>1 into step <1>3:
+Substitute $r=(1-|z|)/2$ from step [](#s1-1){.pf-ref} into step [](#s1-3){.pf-ref}:
 $$
 C r^{\alpha-1}
 =C\left(\frac{1-|z|}{2}\right)^{\alpha-1}
@@ -138,7 +138,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required derivative estimate.
+Step [](#s1-4){.pf-ref} is the required derivative estimate.
 
 :::
 

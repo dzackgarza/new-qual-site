@@ -27,7 +27,7 @@ is a unit.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists
 $$
@@ -47,7 +47,7 @@ This is the definition of $f(x)$ being a unit in $R[x]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomials
 $$
@@ -112,7 +112,7 @@ f
 \qquad\text{and}\qquad
 g
 $$
-from step <1>1 are both nonzero.
+from step [](#s1-1){.pf-ref} are both nonzero.
 
 
 ::: pf-proof
@@ -127,7 +127,7 @@ Hence neither factor can be zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>3,
+By steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 0
@@ -163,7 +163,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -176,7 +176,7 @@ $$
 ::: pf-proof
 
 A polynomial has degree zero exactly when it is a nonzero constant polynomial.
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 $$
 \deg f=0.
 $$
@@ -188,7 +188,7 @@ Thus $f$ belongs to the coefficient ring $R$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

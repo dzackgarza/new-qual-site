@@ -21,7 +21,7 @@ Let R be a commutative ring with 1. We say R satisfies the ascending chain condi
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume $R$ satisfies the ascending chain condition, and let
 $$
@@ -42,7 +42,7 @@ Thus a non-finitely-generated ideal cannot be zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the assumption that $I$ is not finitely generated, choose
 $$
@@ -56,7 +56,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the ideal $I$ contains a nonzero element; choose one and call it $a_1$.
+By step [](#s1-1){.pf-ref}, the ideal $I$ contains a nonzero element; choose one and call it $a_1$.
 If
 $$
 (a_1)=I,
@@ -68,7 +68,7 @@ Hence the containment is strict.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose
 $$
@@ -103,9 +103,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Under the hypotheses of step <1>3, choose
+Under the hypotheses of step [](#s1-3){.pf-ref}, choose
 $$
 a_{n+1}\in I\setminus I_n.
 $$
@@ -125,7 +125,7 @@ Strict containment
 $$
 I_n\subsetneq I
 $$
-from step <1>3 gives an element
+from step [](#s1-3){.pf-ref} gives an element
 $$
 a_{n+1}\in I\setminus I_n.
 $$
@@ -147,7 +147,7 @@ the containment is strict.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $I$ were not finitely generated, there would be a strictly increasing chain
 $$
@@ -164,12 +164,12 @@ of ideals of $R$.
 
 ::: pf-proof
 
-Start with step <1>2.
+Start with step [](#s1-2){.pf-ref}.
 Given
 $$
 I_n,
 $$
-steps <1>3--<1>4 construct
+steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} construct
 $$
 I_{n+1}
 $$
@@ -180,14 +180,14 @@ Thus the construction continues indefinitely and yields the displayed chain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, if $R$ satisfies the ascending chain condition, every ideal of $R$ is finitely generated.
 
 
 ::: pf-proof
 
-The chain in step <1>5 never stabilizes because every containment is strict.
+The chain in step [](#s1-5){.pf-ref} never stabilizes because every containment is strict.
 This contradicts the ascending chain condition.
 Hence no non-finitely-generated ideal can exist.
 Therefore
@@ -233,7 +233,7 @@ This introduces the union of the chain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The set $I$ is an ideal of $R$.
 
@@ -313,13 +313,13 @@ $$
 
 ::: pf-proof
 
-This follows from the standing hypothesis that every ideal of $R$ is finitely generated, applied to the ideal $I$ from step <1>8.
+This follows from the standing hypothesis that every ideal of $R$ is finitely generated, applied to the ideal $I$ from step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For each
 $$
@@ -369,7 +369,7 @@ for every $j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 One has
 $$
@@ -379,7 +379,7 @@ $$
 
 ::: pf-proof
 
-By step <1>10, all generators
+By step [](#s1-10){.pf-ref}, all generators
 $$
 a_1,\ldots,a_t
 $$
@@ -408,7 +408,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For every
 $$
@@ -432,7 +432,7 @@ I_k\subseteq I
 =
 I_N
 $$
-by step <1>11.
+by step [](#s1-11){.pf-ref}.
 Therefore
 $$
 I_k=I_N.
@@ -442,14 +442,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence, if every ideal is finitely generated, $R$ satisfies the ascending chain condition.
 
 
 ::: pf-proof
 
-Step <1>12 shows that every ascending chain stabilizes.
+Step [](#s1-12){.pf-ref} shows that every ascending chain stabilizes.
 Thus
 $$
 \boxed{
@@ -463,7 +463,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Consequently,
 $$
@@ -477,7 +477,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 proves the forward implication, and step <1>13 proves the converse.
+Step [](#s1-6){.pf-ref} proves the forward implication, and step [](#s1-13){.pf-ref} proves the converse.
 
 :::
 
@@ -485,7 +485,7 @@ Step <1>6 proves the forward implication, and step <1>13 proves the converse.
 
 ::: pf-qed
 
-Step <1>14 is the required equivalence.
+Step [](#s1-14){.pf-ref} is the required equivalence.
 
 :::
 

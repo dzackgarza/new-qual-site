@@ -26,7 +26,7 @@ L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\mu(X)<\infty$ and $f\in L^4(X)$, then
 \[
@@ -58,7 +58,7 @@ This is exactly the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore, when $\mu(X)<\infty$,
 \[
@@ -68,7 +68,7 @@ Therefore, when $\mu(X)<\infty$,
 
 ::: pf-proof
 
-If $f\in L^4$, the first factor in step <1>1 is finite, and the second is
+If $f\in L^4$, the first factor in step [](#s1-1){.pf-ref} is finite, and the second is
 finite because $\mu(X)<\infty$. Hence
 \[
 \int_X|f|^3\,d\mu<\infty,
@@ -79,7 +79,7 @@ so $f\in L^3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the infinite-measure space
 \[
@@ -117,7 +117,7 @@ Thus $f\in L^4$ but $f\notin L^3$.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>3 gives the counterexample required in
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} gives the counterexample required in
 part (b).
 
 :::

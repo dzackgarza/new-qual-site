@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With the substitution $t=\tan x$,
 $$
@@ -58,7 +58,7 @@ Since $dt=\sec^2x\,dx$, while $\tan0=0$ and $\tan x\to\infty$ as $x\to(\pi/2)^-$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With $y=t^2$,
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-Since $dy=2t\,dt$, step <1>1 becomes
+Since $dy=2t\,dt$, step [](#s1-1){.pf-ref} becomes
 $$
 \int_0^\infty\frac{t}{1+t^4}\,dt
 =
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The value of the integral is
 $$
@@ -89,7 +89,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 I
 =
@@ -106,7 +106,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

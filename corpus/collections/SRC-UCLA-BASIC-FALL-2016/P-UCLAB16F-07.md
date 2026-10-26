@@ -34,7 +34,7 @@ B_1=\{(x,y,z):(x-1)^2+y^2+z^2\le1\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The second inequality is equivalent to being outside the interior of $B_1$.
 
@@ -60,7 +60,7 @@ if and only if
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The small ball $B_1$ is contained in the large ball $B_2$.
 
@@ -90,7 +90,7 @@ Hence $p\in B_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The plane
 \[
@@ -114,7 +114,7 @@ Thus the two pieces of the centered ball $B_2$ have equal volume.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -134,7 +134,7 @@ The volume of a radius-$2$ ball is
 =
 \frac{32\pi}{3}.
 \]
-Apply step <1>3.
+Apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -225,7 +225,7 @@ Inside the unit ball centered at $c$, the coordinate $s$ ranges from $-1$ to $1$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The volume of this cap is
 \[
@@ -272,7 +272,7 @@ s-\frac{s^3}{3}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The required region has volume
 \[
@@ -288,7 +288,7 @@ The required region has volume
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the desired region is
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the desired region is
 \[
 \bigl(B_2\cap\{z\ge x\}\bigr)
 \setminus
@@ -298,7 +298,7 @@ Since $B_1\subseteq B_2$, the part removed is exactly
 \[
 B_1\cap\{z\ge x\}.
 \]
-Subtract the cap volume from step <1>7 from the half-ball volume in step <1>4.
+Subtract the cap volume from step [](#s1-7){.pf-ref} from the half-ball volume in step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -306,7 +306,7 @@ Subtract the cap volume from step <1>7 from the half-ball volume in step <1>4.
 
 ::: pf-qed
 
-Step <1>8 is the requested volume.
+Step [](#s1-8){.pf-ref} is the requested volume.
 
 :::
 

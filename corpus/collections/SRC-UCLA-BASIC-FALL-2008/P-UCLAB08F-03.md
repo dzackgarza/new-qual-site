@@ -43,7 +43,7 @@ n^2\left(\frac2n-t\right),
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each $f_n$ is continuous on $[0,1]$.
 
@@ -68,7 +68,7 @@ Thus the pieces match continuously.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(f_n)$ converges pointwise to the zero function
 \[
@@ -102,7 +102,7 @@ Hence $f_n(t)\to0$ for every $t\in[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The pointwise limit $f$ is continuous.
 
@@ -115,7 +115,7 @@ The limit function is the constant zero function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n\ge2$,
 \[
@@ -143,18 +143,18 @@ Equivalently, the same value follows by integrating the two linear pieces direct
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The integrals do not converge to the integral of the pointwise limit.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \lim_{n\to\infty}\int_0^1f_n(t)\,dt=1.
 \]
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 f\equiv0,
 \]
@@ -177,7 +177,7 @@ Hence
 
 ::: pf-qed
 
-Steps <1>1--<1>5 give the required example.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give the required example.
 
 :::
 

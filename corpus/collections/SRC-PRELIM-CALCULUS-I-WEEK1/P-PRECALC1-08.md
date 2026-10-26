@@ -22,7 +22,7 @@ If $f : \mathbb{R} \to \mathbb{R}$ is continuously differentiable on $(-1, 4)$ w
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the fundamental theorem of calculus,
 \[
@@ -42,7 +42,7 @@ The function \(f\) is continuously differentiable on an interval containing
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -64,7 +64,7 @@ Integrating a pointwise inequality preserves the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -75,19 +75,19 @@ f(3)-f(0)\ge3}.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \int_0^3 f'(x)\,dx
 \ge
 3.
 \]
-Use step <1>1.
+Use step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since
 \[
@@ -101,13 +101,13 @@ one has
 
 ::: pf-proof
 
-Substitute the given value into step <1>3.
+Substitute the given value into step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -118,13 +118,13 @@ f(0)\le2}.
 
 ::: pf-proof
 
-Rearrange step <1>4.
+Rearrange step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -140,7 +140,7 @@ This is a continuously differentiable function on \(\mathbb R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The function \(g\) satisfies
 \[
@@ -158,7 +158,7 @@ Differentiate \(g(x)=x+2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 It also satisfies
 \[
@@ -177,7 +177,7 @@ g(3)=3+2=5.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Finally,
 \[
@@ -196,20 +196,20 @@ g(0)=0+2=2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Therefore the bound in step <1>5 is attained.
+Therefore the bound in step [](#s1-5){.pf-ref} is attained.
 
 
 ::: pf-proof
 
-Steps <1>6--<1>9 exhibit an admissible function with \(f(0)=2\).
+Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} exhibit an admissible function with \(f(0)=2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence the greatest possible value is
 \[
@@ -219,7 +219,7 @@ Hence the greatest possible value is
 
 ::: pf-proof
 
-Step <1>5 gives the upper bound, and step <1>10 shows it is sharp.
+Step [](#s1-5){.pf-ref} gives the upper bound, and step [](#s1-10){.pf-ref} shows it is sharp.
 
 :::
 
@@ -227,7 +227,7 @@ Step <1>5 gives the upper bound, and step <1>10 shows it is sharp.
 
 ::: pf-qed
 
-Step <1>11 is the requested value.
+Step [](#s1-11){.pf-ref} is the requested value.
 
 :::
 

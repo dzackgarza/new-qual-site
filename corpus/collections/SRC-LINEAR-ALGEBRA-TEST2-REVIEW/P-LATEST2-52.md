@@ -86,7 +86,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The two eigenvalues of $A$ are $6$ and $4$.
 
@@ -100,7 +100,7 @@ Hence the corresponding eigenvalues account for both eigenvalues of the $2\times
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the larger eigenvalue is
 $$
@@ -110,7 +110,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 6>4.
 $$
@@ -122,7 +122,7 @@ Thus the correct choice is $\boxed{\text{(C)}}$.
 
 ::: pf-qed
 
-Step <1>4 is the required answer.
+Step [](#s1-4){.pf-ref} is the required answer.
 
 :::
 

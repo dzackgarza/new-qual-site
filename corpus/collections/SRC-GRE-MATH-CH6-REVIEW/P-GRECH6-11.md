@@ -36,7 +36,7 @@ Note: $\tr(A)$ denotes the trace of $A$, which is the sum of the entries on the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $T$ is not a subgroup of $\GL(2,\RR)$.
 
@@ -53,7 +53,7 @@ so $T$ is not closed under multiplication.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $U$ is a subgroup of $\GL(2,\RR)$.
 
@@ -74,7 +74,7 @@ which is again upper triangular. Thus $U$ contains the identity and is closed un
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $V$ is not a subgroup of $\GL(2,\RR)$.
 
@@ -87,7 +87,7 @@ The identity matrix has trace $2$, not $0$, so it does not belong to $V$. Hence 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the only subgroup among I, II, and III is
 $$
@@ -98,7 +98,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Steps <1>1--<1>3 show respectively that $T$ is not a subgroup, $U$ is a subgroup, and $V$ is not a subgroup.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show respectively that $T$ is not a subgroup, $U$ is a subgroup, and $V$ is not a subgroup.
 
 :::
 
@@ -106,7 +106,7 @@ Steps <1>1--<1>3 show respectively that $T$ is not a subgroup, $U$ is a subgroup
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

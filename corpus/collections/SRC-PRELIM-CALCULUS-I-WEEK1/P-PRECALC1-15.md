@@ -43,7 +43,7 @@ with respect to its upper limit gives the integrand evaluated at \(x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the slope at \(x=2\) is
 \[
@@ -66,7 +66,7 @@ f'(2)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 An antiderivative of \(1/(1+t^2)\) is \(\arctan t\).
 
@@ -95,7 +95,7 @@ f(2)
 
 ::: pf-proof
 
-Apply the fundamental theorem of calculus using step <1>3:
+Apply the fundamental theorem of calculus using step [](#s1-3){.pf-ref}:
 \[
 f(2)
 =
@@ -108,7 +108,7 @@ f(2)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
@@ -131,7 +131,7 @@ Substitute the standard value of \(\arctan1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The tangent line at \((2,f(2))\) is
 \[
@@ -150,7 +150,7 @@ graph.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -166,7 +166,7 @@ y-
 
 ::: pf-proof
 
-Substitute steps <1>2 and <1>5 into step <1>6.
+Substitute steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} into step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -174,7 +174,7 @@ Substitute steps <1>2 and <1>5 into step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the requested tangent-line equation.
+Step [](#s1-7){.pf-ref} is the requested tangent-line equation.
 
 :::
 

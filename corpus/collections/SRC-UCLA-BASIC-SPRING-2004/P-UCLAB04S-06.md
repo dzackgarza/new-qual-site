@@ -43,7 +43,7 @@ be the standard basis of $\mathbb R^n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -80,7 +80,7 @@ Repeated use of the triangle inequality and absolute homogeneity gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists
 \[
@@ -117,7 +117,7 @@ d
 \sum_{j=1}^n\|e_j\|^2
 \right)^{1/2}.
 \]
-Then step <1>1 gives
+Then step [](#s1-1){.pf-ref} gives
 \[
 \|x\|
 \le
@@ -129,7 +129,7 @@ Because every basis vector is nonzero, $d>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The norm function
 \[
@@ -146,7 +146,7 @@ The reverse triangle inequality gives
 \le
 \|x-y\|.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \|x-y\|
 \le
@@ -164,7 +164,7 @@ Thus $N$ is Lipschitz with respect to the Euclidean norm, hence continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -186,7 +186,7 @@ for every $u\in S^{n-1}$.
 ::: pf-proof
 
 The Euclidean unit sphere is compact.
-By step <1>3, $N$ is continuous, so it attains a minimum
+By step [](#s1-3){.pf-ref}, $N$ is continuous, so it attains a minimum
 \[
 c=\min_{u\in S^{n-1}}\|u\|.
 \]
@@ -204,7 +204,7 @@ c>0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $x\in\mathbb R^n$,
 \[
@@ -225,7 +225,7 @@ Then
 \[
 \|u\|_2=1,
 \]
-so step <1>4 gives
+so step [](#s1-4){.pf-ref} gives
 \[
 \|u\|\ge c.
 \]
@@ -242,7 +242,7 @@ c\|x\|_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let $L$ be an $n$-dimensional subspace of an arbitrary normed vector space
 \[
@@ -290,13 +290,13 @@ Because $v_1,\ldots,v_n$ is a basis, $\Phi$ is injective, so
 \]
 only when $a=0$.
 Thus $\|\cdot\|_L$ is a norm.
-Apply part (b), proved in step <1>5, to this norm.
+Apply part (b), proved in step [](#s1-5){.pf-ref}, to this norm.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -320,7 +320,7 @@ is a Cauchy sequence in $\mathbb R^n$.
 ::: pf-proof
 
 Since $x_k\to x$ in $V$, the sequence $(x_k)$ is Cauchy.
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 \begin{aligned}
 c_L
@@ -338,7 +338,7 @@ Hence the coordinate sequence is Cauchy in Euclidean space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There exists
 \[
@@ -356,7 +356,7 @@ x=\Phi(a)\in L.
 
 ::: pf-proof
 
-Euclidean space is complete, so step <1>7 gives
+Euclidean space is complete, so step [](#s1-7){.pf-ref} gives
 \[
 a^{(k)}\to a
 \]
@@ -393,14 +393,14 @@ x=\Phi(a)\in L.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore every finite-dimensional subspace of a normed vector space is closed.
 
 
 ::: pf-proof
 
-Step <1>8 shows that every convergent sequence in $L$ whose limit lies in $V$ has its limit still in $L$.
+Step [](#s1-8){.pf-ref} shows that every convergent sequence in $L$ whose limit lies in $V$ has its limit still in $L$.
 Since normed spaces are metric spaces, sequential closedness is equivalent to closedness.
 Hence
 \[
@@ -413,7 +413,7 @@ Hence
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (b), and steps <1>6--<1>9 prove part (c).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove part (b), and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} prove part (c).
 
 :::
 

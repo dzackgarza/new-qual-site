@@ -33,7 +33,7 @@ Assume $n\geq2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), one has
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -86,13 +86,13 @@ $$
 ::: pf-proof
 
 The transformation from $x$ to $y$ is triangular with diagonal entries all
-equal to $1$, hence invertible. Step <1>1 gives the displayed canonical form.
+equal to $1$, hence invertible. Step [](#s1-1){.pf-ref} gives the displayed canonical form.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore part (a) has
 $$
@@ -102,14 +102,14 @@ $$
 
 ::: pf-proof
 
-The canonical form in step <1>2 contains $n$ positive squares and no negative
+The canonical form in step [](#s1-2){.pf-ref} contains $n$ positive squares and no negative
 or zero squares.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), write
 $$
@@ -147,7 +147,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -189,7 +189,7 @@ $e_2,\ldots,e_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence part (b) becomes
 $$
@@ -204,13 +204,13 @@ $$
 
 ::: pf-proof
 
-Substitute the identities from step <1>5 into step <1>4.
+Substitute the identities from step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 After rescaling
 $$
@@ -227,13 +227,13 @@ $$
 
 ::: pf-proof
 
-Substitute the displayed rescaling into step <1>6.
+Substitute the displayed rescaling into step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore part (b) has
 $$
@@ -243,13 +243,13 @@ $$
 
 ::: pf-proof
 
-Step <1>7 has $n$ positive squares and no negative or zero squares.
+Step [](#s1-7){.pf-ref} has $n$ positive squares and no negative or zero squares.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For part (c), write
 $$
@@ -285,9 +285,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-In the orthonormal coordinates from step <1>5,
+In the orthonormal coordinates from step [](#s1-5){.pf-ref},
 $$
 q_c
 =
@@ -308,13 +308,13 @@ and
 $$
 \sum_i x_i^2=\sum_j y_j^2
 $$
-into step <1>9.
+into step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 After rescaling
 $$
@@ -331,13 +331,13 @@ $$
 
 ::: pf-proof
 
-Substitute the rescaling into step <1>10.
+Substitute the rescaling into step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore part (c) has
 $$
@@ -353,7 +353,7 @@ $$
 
 ::: pf-proof
 
-Step <1>11 has one positive square and $n-1$ negative squares.
+Step [](#s1-11){.pf-ref} has one positive square and $n-1$ negative squares.
 
 :::
 
@@ -361,7 +361,7 @@ Step <1>11 has one positive square and $n-1$ negative squares.
 
 ::: pf-qed
 
-Steps <1>3, <1>8, and <1>12 give the canonical forms, ranks, and signatures
+Steps [](#s1-3){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} give the canonical forms, ranks, and signatures
 for parts (a), (b), and (c), respectively.
 
 :::

@@ -39,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The quotient
 $$
@@ -71,7 +71,7 @@ is maximal exactly when $f_a$ is irreducible. The quotient by $(f_a)$ is a field
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Because $f_a$ has degree $3$, it is irreducible if and only if it has no root in $\FF_5$.
 
@@ -84,7 +84,7 @@ If a cubic over a field is reducible, one factor in a nontrivial factorization h
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The values of $f_a$ at the five elements of $\FF_5$ are
 $$
@@ -136,7 +136,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -147,7 +147,7 @@ then $f_a$ is reducible.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 f_3(2)
 =
@@ -164,7 +164,7 @@ Thus $2$ is a root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -175,7 +175,7 @@ then $f_a$ is reducible.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 f_4(1)
 =
@@ -189,7 +189,7 @@ in $\FF_5$. Thus $1$ is a root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -200,7 +200,7 @@ then $f_a$ has no root in $\FF_5$.
 
 ::: pf-proof
 
-Use step <1>3.
+Use step [](#s1-3){.pf-ref}.
 
 For
 $$
@@ -237,7 +237,7 @@ Thus none of these three polynomials has a root in $\FF_5$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the quotient is a field exactly for
 $$
@@ -249,15 +249,15 @@ $$
 
 ::: pf-proof
 
-Steps <1>4--<1>5 exclude
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} exclude
 $$
 a=3,4.
 $$
-Step <1>6 and step <1>2 show that $f_a$ is irreducible for
+Step [](#s1-6){.pf-ref} and step [](#s1-2){.pf-ref} show that $f_a$ is irreducible for
 $$
 a=0,1,2.
 $$
-Step <1>1 then gives the corresponding field quotients.
+Step [](#s1-1){.pf-ref} then gives the corresponding field quotients.
 
 :::
 
@@ -265,7 +265,7 @@ Step <1>1 then gives the corresponding field quotients.
 
 ::: pf-qed
 
-Step <1>7 gives the complete list.
+Step [](#s1-7){.pf-ref} gives the complete list.
 
 :::
 

@@ -28,7 +28,7 @@ on \([0,3]\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Partition \([0,3]\) into \(n\) equal subintervals. Then
 \[
@@ -46,7 +46,7 @@ width \(3/n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The right endpoint of the \(i\)th subinterval is
 \[
@@ -68,7 +68,7 @@ Starting at \(0\), the \(i\)th right endpoint is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the given expression is
 \[
@@ -80,7 +80,7 @@ f(x_i)\,\Delta x}.
 
 ::: pf-proof
 
-Using steps <1>1--<1>2,
+Using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 f(x_i)
 =
@@ -106,7 +106,7 @@ f(x_i)\Delta x
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence, as \(n\to\infty\), the expression converges to
 \[
@@ -123,7 +123,7 @@ sums converge to its definite integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 An antiderivative is
 \[
@@ -148,7 +148,7 @@ x^2-x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -172,7 +172,7 @@ Substitute the endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -197,7 +197,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently,
 \[
@@ -217,7 +217,7 @@ Consequently,
 
 ::: pf-proof
 
-Combine steps <1>3--<1>7.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -225,7 +225,7 @@ Combine steps <1>3--<1>7.
 
 ::: pf-qed
 
-Step <1>8 is the requested limit.
+Step [](#s1-8){.pf-ref} is the requested limit.
 
 :::
 

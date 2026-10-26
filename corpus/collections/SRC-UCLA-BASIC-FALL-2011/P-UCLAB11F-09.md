@@ -53,7 +53,7 @@ Lv_j=\lambda_jv_j,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Write the unit vector $x$ as
 \[
@@ -79,7 +79,7 @@ The hypothesis $\|x\|=1$ gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -105,7 +105,7 @@ Taking the squared norm in the orthonormal basis gives the stated sum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At least one eigenvalue $\lambda_j$ satisfies
 \[
@@ -119,7 +119,7 @@ Suppose instead that
 \[
 |\lambda_j-\mu|>\varepsilon
 \]
-for every $j$. Then by step <1>3 and step <1>2,
+for every $j$. Then by step [](#s1-3){.pf-ref} and step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \|Lx-\mu x\|^2
@@ -141,7 +141,7 @@ contradicting the hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $L$ has an eigenvalue $\lambda$ with
 \[
@@ -151,7 +151,7 @@ Therefore $L$ has an eigenvalue $\lambda$ with
 
 ::: pf-proof
 
-Take $\lambda=\lambda_j$ from step <1>4.
+Take $\lambda=\lambda_j$ from step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -159,7 +159,7 @@ Take $\lambda=\lambda_j$ from step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -30,7 +30,7 @@ Set $\theta=\operatorname{arccot}(\pi/4)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\csc^2\theta-1=\cot^2\theta$.
 
@@ -47,7 +47,7 @@ rearranges to the claimed equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The requested expression is
 $$
@@ -58,7 +58,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \sqrt{\csc^2\theta-1}
 =\sqrt{\cot^2\theta}
@@ -76,7 +76,7 @@ Thus $|\cot\theta|=\pi/4$.
 
 ::: pf-qed
 
-Step <1>2 gives the requested simplified value and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested simplified value and corresponding choice.
 
 :::
 

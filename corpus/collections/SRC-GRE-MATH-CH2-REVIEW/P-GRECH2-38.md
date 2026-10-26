@@ -33,7 +33,7 @@ converges. Determine the value of the integral.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $b>e$, the substitution $u=\log x$ gives
 $$
@@ -50,19 +50,19 @@ Since $u=\log x$, one has $du=dx/x$. The lower endpoint $x=e$ becomes $u=1$, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The improper integral converges if and only if $n>1$.
 
 
 ::: pf-proof
 
-By step <1>1, if $n\ne1$, then
+By step [](#s1-1){.pf-ref}, if $n\ne1$, then
 $$
 \int_e^b \frac{dx}{x(\log x)^n}
 =\frac{(\log b)^{1-n}-1}{1-n}.
 $$
-If $n<1$, then $1-n>0$ and $(\log b)^{1-n}\to\infty$, so the integral diverges. If $n=1$, then step <1>1 gives
+If $n<1$, then $1-n>0$ and $(\log b)^{1-n}\to\infty$, so the integral diverges. If $n=1$, then step [](#s1-1){.pf-ref} gives
 $$
 \int_1^{\log b}\frac{du}{u}
 =\log(\log b),
@@ -73,7 +73,7 @@ which also diverges as $b\to\infty$. If $n>1$, then $1-n<0$, so $(\log b)^{1-n}\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For the admissible values of $n$,
 $$
@@ -84,7 +84,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By step <1>2, convergence implies $n>1$. Therefore the formula in step <1>2 yields
+By step [](#s1-2){.pf-ref}, convergence implies $n>1$. Therefore the formula in step [](#s1-2){.pf-ref} yields
 $$
 \begin{aligned}
 \int_e^\infty \frac{dx}{x(\log x)^n}
@@ -100,7 +100,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

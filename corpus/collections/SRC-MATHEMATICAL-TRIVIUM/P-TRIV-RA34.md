@@ -28,7 +28,7 @@ Investigate the limit of $x$, $y$ and $r$ as $\theta \to 0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In polar coordinates,
 $$
@@ -46,9 +46,9 @@ This is the definition of polar coordinates.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Comparing the given parametrization with step <1>1 gives
+Comparing the given parametrization with step [](#s1-1){.pf-ref} gives
 $$
 \theta=t
 $$
@@ -75,7 +75,7 @@ modulo $2\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the polar equation is
 $$
@@ -87,13 +87,13 @@ $$
 
 ::: pf-proof
 
-Eliminate $t$ from the two identities in step <1>2.
+Eliminate $t$ from the two identities in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 As $\theta$ increases, the radius decreases monotonically from
 $+\infty$ to $0$.
@@ -101,7 +101,7 @@ $+\infty$ to $0$.
 
 ::: pf-proof
 
-From step <1>3,
+From step [](#s1-3){.pf-ref},
 $$
 r'(\theta)
 =
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the schematic shape is an inward-winding counterclockwise spiral:
 it begins arbitrarily far from the origin for small positive $\theta$, crosses
@@ -131,13 +131,13 @@ the origin as $\theta\to\infty$.
 ::: pf-proof
 
 The angle equals $\theta$, so increasing $\theta$ rotates counterclockwise,
-while step <1>4 shows that the radius decreases continuously to $0$.
+while step [](#s1-4){.pf-ref} shows that the radius decreases continuously to $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 As $\theta\to0^+$,
 $$
@@ -157,7 +157,7 @@ with $\alpha>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 As $\theta\to0^+$,
 $$
@@ -167,7 +167,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>3,
+Using step [](#s1-3){.pf-ref},
 $$
 x
 =
@@ -185,7 +185,7 @@ and $\theta\to0^+$, the quotient tends to $+\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 As $\theta\to0^+$,
 $$
@@ -211,7 +211,7 @@ the limit is $\alpha$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently the spiral has the horizontal asymptote
 $$
@@ -222,7 +222,7 @@ at its far-away end $x\to+\infty$.
 
 ::: pf-proof
 
-Steps <1>7--<1>8 show that $x\to+\infty$ while $y\to\alpha$.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $x\to+\infty$ while $y\to\alpha$.
 
 :::
 
@@ -230,7 +230,7 @@ Steps <1>7--<1>8 show that $x\to+\infty$ while $y\to\alpha$.
 
 ::: pf-qed
 
-Steps <1>3, <1>5, and <1>6--<1>9 give the polar equation, schematic behavior,
+Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} give the polar equation, schematic behavior,
 and requested limits.
 
 :::

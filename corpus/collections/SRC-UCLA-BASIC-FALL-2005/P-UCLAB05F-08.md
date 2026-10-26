@@ -40,7 +40,7 @@ Suggestion: the $(i,j)$ entry of $A$ is $\langle T_Ae_j,e_i\rangle$, where $e_i$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every matrix $A$ and every $x\in\mathbb R^n$,
 \[
@@ -71,7 +71,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For all real $n\times n$ matrices $A,B$,
 \[
@@ -93,13 +93,13 @@ If $\|x\|_2=1$, then
 \|A\|+\|B\|
 \end{aligned}
 \]
-by step <1>1. Taking the supremum over all unit vectors $x$ proves the inequality.
+by step [](#s1-1){.pf-ref}. Taking the supremum over all unit vectors $x$ proves the inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The operator norm satisfies
 \[
@@ -122,7 +122,7 @@ Nonnegativity is immediate from the definition. Also
 =
 \|A\|.
 \]
-If $A=0$, then $\|A\|=0$. Conversely, if $\|A\|=0$, then step <1>1 gives
+If $A=0$, then $\|A\|=0$. Conversely, if $\|A\|=0$, then step [](#s1-1){.pf-ref} gives
 \[
 \|T_Ax\|_2=0
 \]
@@ -132,7 +132,7 @@ for every $x$, so $T_A=0$ and hence $A=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function
 \[
@@ -143,7 +143,7 @@ is a metric on the vector space $M$ of real $n\times n$ matrices.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 d(A,B)\ge0,
 \]
@@ -165,7 +165,7 @@ d(A,B)
 =
 d(B,A)
 \]
-by step <1>3. Finally, step <1>2 gives
+by step [](#s1-3){.pf-ref}. Finally, step [](#s1-2){.pf-ref} gives
 \[
 \begin{aligned}
 d(A,C)
@@ -185,7 +185,7 @@ Thus all metric axioms hold.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $(A_k)$ is Cauchy in the operator norm and
 \[
@@ -206,7 +206,7 @@ a_{ij}^{(k)}-a_{ij}^{(\ell)}
 =
 \langle T_{A_k-A_\ell}e_j,e_i\rangle.
 \]
-By Cauchy--Schwarz and step <1>1,
+By Cauchy--Schwarz and step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 |a_{ij}^{(k)}-a_{ij}^{(\ell)}|
@@ -222,7 +222,7 @@ The right side tends to zero as $k,\ell\to\infty$, because $(A_k)$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There is a real matrix
 \[
@@ -237,13 +237,13 @@ for every $i,j$.
 
 ::: pf-proof
 
-By step <1>5, each entry sequence is Cauchy in the complete space $\mathbb R$. Define $a_{ij}$ to be its limit. Since there are finitely many entries, these limits assemble into a real $n\times n$ matrix $A$.
+By step [](#s1-5){.pf-ref}, each entry sequence is Cauchy in the complete space $\mathbb R$. Define $a_{ij}$ to be its limit. Since there are finitely many entries, these limits assemble into a real $n\times n$ matrix $A$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -282,20 +282,20 @@ Hence
 \le
 \left(\sum_{i,j=1}^n|c_{ij}^{(k)}|^2\right)^{1/2}.
 \]
-By step <1>6, every entry $c_{ij}^{(k)}$ tends to zero. Since the sum has only finitely many terms, its square root tends to zero. Therefore $\|A_k-A\|\to0$.
+By step [](#s1-6){.pf-ref}, every entry $c_{ij}^{(k)}$ tends to zero. Since the sum has only finitely many terms, its square root tends to zero. Therefore $\|A_k-A\|\to0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The metric space $(M,d)$ is complete.
 
 
 ::: pf-proof
 
-Let $(A_k)$ be any Cauchy sequence in $M$. Step <1>6 constructs a matrix $A\in M$, and step <1>7 proves
+Let $(A_k)$ be any Cauchy sequence in $M$. Step [](#s1-6){.pf-ref} constructs a matrix $A\in M$, and step [](#s1-7){.pf-ref} proves
 \[
 d(A_k,A)=\|A-A_k\|\to0.
 \]
@@ -307,7 +307,7 @@ Thus every Cauchy sequence converges in $M$.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), step <1>4 proves part (b), and step <1>8 proves part (c).
+Step [](#s1-2){.pf-ref} proves part (a), step [](#s1-4){.pf-ref} proves part (b), and step [](#s1-8){.pf-ref} proves part (c).
 
 :::
 

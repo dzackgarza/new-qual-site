@@ -34,7 +34,7 @@ What's the value of $f(f^{-1}(f(2)))$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $f^{-1}(1)=2$.
 
@@ -50,14 +50,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $f(2)=1$.
 
 
 ::: pf-proof
 
-Apply $f$ to the equality in step <1>1. Since $f\circ f^{-1}$ is the identity on the domain of $f^{-1}$,
+Apply $f$ to the equality in step [](#s1-1){.pf-ref}. Since $f\circ f^{-1}$ is the identity on the domain of $f^{-1}$,
 $$
 f(2)=f\bigl(f^{-1}(1)\bigr)=1.
 $$
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The requested value is
 $$
@@ -81,7 +81,7 @@ The inverse identity gives
 $$
 f\bigl(f^{-1}(f(2))\bigr)=f(2),
 $$
-and step <1>2 evaluates the right-hand side.
+and step [](#s1-2){.pf-ref} evaluates the right-hand side.
 
 :::
 
@@ -89,7 +89,7 @@ and step <1>2 evaluates the right-hand side.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and choice.
+Step [](#s1-3){.pf-ref} gives the requested value and choice.
 
 :::
 

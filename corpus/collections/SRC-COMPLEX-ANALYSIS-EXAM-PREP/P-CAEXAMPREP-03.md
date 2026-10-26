@@ -27,7 +27,7 @@ f(z)=\frac{z^2}{1+z^4}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The improper integral in the statement converges absolutely.
 
@@ -44,7 +44,7 @@ and \(\int_1^\infty x^{-2}\,dx<\infty\). Thus both tails converge absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The poles of \(f\) in the upper half-plane are the simple poles
 \[
@@ -80,7 +80,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If \(C_R\) is the upper semicircle \(z=Re^{i\theta}\), \(0\le\theta\le\pi\), then
 \[
@@ -108,7 +108,7 @@ The length of \(C_R\) is \(\pi R\), so the ML estimate gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The requested integral is
 \[
@@ -118,14 +118,14 @@ The requested integral is
 
 ::: pf-proof
 
-For \(R>1\), integrate \(f\) counterclockwise around the boundary of the upper half-disc of radius \(R\). By the residue theorem and step <1>2,
+For \(R>1\), integrate \(f\) counterclockwise around the boundary of the upper half-disc of radius \(R\). By the residue theorem and step [](#s1-2){.pf-ref},
 \[
 \int_{-R}^{R}\frac{x^2}{1+x^4}\,dx
 +\int_{C_R}f(z)\,dz
 =2\pi i\left(-\frac{i\sqrt2}{4}\right)
 =\frac{\pi}{\sqrt2}.
 \]
-Let \(R\to\infty\). Step <1>1 identifies the limit of the real-axis integral with the improper integral in the problem, and step <1>3 makes the semicircle contribution vanish. The displayed value follows.
+Let \(R\to\infty\). Step [](#s1-1){.pf-ref} identifies the limit of the real-axis integral with the improper integral in the problem, and step [](#s1-3){.pf-ref} makes the semicircle contribution vanish. The displayed value follows.
 
 :::
 
@@ -133,7 +133,7 @@ Let \(R\to\infty\). Step <1>1 identifies the limit of the real-axis integral wit
 
 ::: pf-qed
 
-Step <1>4 gives the required evaluation.
+Step [](#s1-4){.pf-ref} gives the required evaluation.
 
 :::
 

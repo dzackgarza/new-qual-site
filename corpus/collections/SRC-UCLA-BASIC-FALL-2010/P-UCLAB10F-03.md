@@ -26,7 +26,7 @@ Problem 3. Suppose $f:\mathbb R\to\mathbb R$ and $g:\mathbb R^2\to\mathbb R$ hav
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The one-variable Taylor theorem with third-order Lagrange remainder states that for any $a,h\in\mathbb R$, there exists $\theta\in(0,1)$ such that
 \[
@@ -47,7 +47,7 @@ This is the ordinary one-variable Taylor theorem through degree $2$ with Lagrang
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The corresponding two-variable statement is: for
 \[
@@ -91,7 +91,7 @@ This is the two-variable Taylor theorem through total degree $2$ with third-orde
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define the one-variable function
 \[
@@ -119,7 +119,7 @@ t\mapsto(a+th,b+tk).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -134,7 +134,7 @@ where all derivatives of $g$ are evaluated at $(a+th,b+tk)$.
 
 ::: pf-proof
 
-Differentiate the formula in step <1>3. Since $g$ has continuous second derivatives,
+Differentiate the formula in step [](#s1-3){.pf-ref}. Since $g$ has continuous second derivatives,
 \[
 g_{xy}=g_{yx},
 \]
@@ -144,7 +144,7 @@ so the two mixed terms combine to give $2g_{xy}hk$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -160,15 +160,15 @@ again with all derivatives evaluated at $(a+th,b+tk)$.
 
 ::: pf-proof
 
-Differentiate the formula in step <1>4. Continuity of the third-order partial derivatives implies equality of mixed third partials, so the terms of type $h^2k$ combine with coefficient $3$, and similarly for the terms of type $hk^2$.
+Differentiate the formula in step [](#s1-4){.pf-ref}. Continuity of the third-order partial derivatives implies equality of mixed third partials, so the terms of type $h^2k$ combine with coefficient $3$, and similarly for the terms of type $hk^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Applying the one-variable theorem from step <1>1 to $\phi$ at $t=0$ with increment $1$ gives
+Applying the one-variable theorem from step [](#s1-1){.pf-ref} to $\phi$ at $t=0$ with increment $1$ gives
 \[
 \phi(1)
 =
@@ -182,15 +182,15 @@ for some $\theta\in(0,1)$.
 
 ::: pf-proof
 
-The function $\phi$ has continuous derivatives through order $3$ because $g$ does and the path is affine. Therefore the hypotheses of step <1>1 apply.
+The function $\phi$ has continuous derivatives through order $3$ because $g$ does and the path is affine. Therefore the hypotheses of step [](#s1-1){.pf-ref} apply.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Substituting steps <1>3--<1>5 into step <1>6 yields exactly the two-variable Taylor formula in step <1>2.
+Substituting steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} into step [](#s1-6){.pf-ref} yields exactly the two-variable Taylor formula in step [](#s1-2){.pf-ref}.
 
 
 ::: pf-proof
@@ -201,13 +201,13 @@ One has
 \qquad
 \phi(1)=g(a+h,b+k).
 \]
-The values of $\phi'(0)$ and $\phi''(0)$ are the linear and quadratic terms in step <1>2. The value $\phi'''(\theta)$ is the cubic directional expression from step <1>5 evaluated at
+The values of $\phi'(0)$ and $\phi''(0)$ are the linear and quadratic terms in step [](#s1-2){.pf-ref}. The value $\phi'''(\theta)$ is the cubic directional expression from step [](#s1-5){.pf-ref} evaluated at
 \[
 (a+\theta h,b+\theta k)
 =
 p+\theta u.
 \]
-Thus step <1>6 becomes precisely the formula stated in step <1>2.
+Thus step [](#s1-6){.pf-ref} becomes precisely the formula stated in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -215,7 +215,7 @@ Thus step <1>6 becomes precisely the formula stated in step <1>2.
 
 ::: pf-qed
 
-Step <1>1 states the one-variable theorem, step <1>2 states the two-variable theorem, and steps <1>3--<1>7 derive the latter from the former.
+Step [](#s1-1){.pf-ref} states the one-variable theorem, step [](#s1-2){.pf-ref} states the two-variable theorem, and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} derive the latter from the former.
 
 :::
 

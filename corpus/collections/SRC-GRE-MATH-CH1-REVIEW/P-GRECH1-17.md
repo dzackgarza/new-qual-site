@@ -32,7 +32,7 @@ a^{(\log_a x) + (\log_A x)}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\log_A x=\frac12\log_a x$.
 
@@ -51,7 +51,7 @@ Here the logarithms are understood on their usual domains, so in particular $a\n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The exponent simplifies to
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-Substitute the identity from step <1>1:
+Substitute the identity from step [](#s1-1){.pf-ref}:
 $$
 \log_a x+\frac12\log_a x=\frac32\log_a x.
 $$
@@ -70,7 +70,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The expression is
 $$
@@ -81,7 +81,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 a^{(\log_a x)+(\log_A x)}
 =a^{\frac32\log_a x}
@@ -97,7 +97,7 @@ where $x>0$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested simplified form and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested simplified form and corresponding choice.
 
 :::
 

@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in I$ and every $n\geq1$,
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The numerical series
 $$
@@ -86,7 +86,7 @@ It is $B$ times the convergent $p$-series $\sum_{n\ge1}n^{-2}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 $$
@@ -97,7 +97,7 @@ converges uniformly on $I$.
 
 ::: pf-proof
 
-Step <1>1 supplies the uniform majorants $B/n^2$, and step <1>2 shows that their sum converges. The Weierstrass M-test therefore gives uniform convergence on $I$.
+Step [](#s1-1){.pf-ref} supplies the uniform majorants $B/n^2$, and step [](#s1-2){.pf-ref} shows that their sum converges. The Weierstrass M-test therefore gives uniform convergence on $I$.
 
 :::
 
@@ -105,7 +105,7 @@ Step <1>1 supplies the uniform majorants $B/n^2$, and step <1>2 shows that their
 
 ::: pf-qed
 
-Since $I$ was an arbitrary bounded interval, step <1>3 proves the assertion.
+Since $I$ was an arbitrary bounded interval, step [](#s1-3){.pf-ref} proves the assertion.
 
 :::
 

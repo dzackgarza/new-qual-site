@@ -22,7 +22,7 @@ Define what it means for a function $f:U\to\mathbb C$ to be analytic.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f:U\to\CC$ is **analytic on $U$** if it is complex differentiable at every point of $U$; that is, for every $z_0\in U$ the limit
 $$
@@ -43,7 +43,7 @@ This is the standard definition of an analytic, or holomorphic, function on an o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently, for every $z_0\in U$ there is an $r>0$ with
 $$
@@ -66,7 +66,7 @@ The equivalence between holomorphy and local representability by a convergent co
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition; step <1>2 records its equivalent power-series form.
+Step [](#s1-1){.pf-ref} gives the requested definition; step [](#s1-2){.pf-ref} records its equivalent power-series form.
 
 :::
 

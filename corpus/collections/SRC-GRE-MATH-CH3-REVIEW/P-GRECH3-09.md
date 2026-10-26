@@ -28,7 +28,7 @@ If the curve $z=f(x)$ in the $xz$-plane is revolved around the $x$-axis, which o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each fixed $x$, revolving the point $(x,0,f(x))$ about the $x$-axis produces the circle
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the surface of revolution is described by
 $$
@@ -62,7 +62,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-The original curve consists of the points $(x,0,f(x))$ as $x$ varies. By step <1>1, the rotation orbit of each such point is exactly the circle cut out by the displayed equation at that value of $x$. Taking these circles over all $x$ on the curve gives precisely the stated surface.
+The original curve consists of the points $(x,0,f(x))$ as $x$ varies. By step [](#s1-1){.pf-ref}, the rotation orbit of each such point is exactly the circle cut out by the displayed equation at that value of $x$. Taking these circles over all $x$ on the curve gives precisely the stated surface.
 
 :::
 
@@ -70,7 +70,7 @@ The original curve consists of the points $(x,0,f(x))$ as $x$ varies. By step <1
 
 ::: pf-qed
 
-Step <1>2 gives the requested equation and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested equation and corresponding choice.
 
 :::
 

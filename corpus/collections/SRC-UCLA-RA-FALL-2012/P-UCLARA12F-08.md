@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every closed piecewise smooth curve $\gamma$ in $\Omega$,
 $$
@@ -77,7 +77,7 @@ where the integral is taken along any path in $\Omega$ from $z_0$ to $z$. Then $
 
 ::: pf-proof
 
-If two paths from $z_0$ to $z$ are chosen, their difference is a closed curve in $\Omega$. By step <1>1, the difference between the corresponding half-integrals is in $2\pi i\ZZ$, so their exponentials agree. Thus $g$ is well-defined.
+If two paths from $z_0$ to $z$ are chosen, their difference is a closed curve in $\Omega$. By step [](#s1-1){.pf-ref}, the difference between the corresponding half-integrals is in $2\pi i\ZZ$, so their exponentials agree. Thus $g$ is well-defined.
 
 Locally, on a simply connected disk contained in $\Omega$, the integral has a holomorphic primitive. Hence the displayed formula is locally the exponential of a holomorphic function and is therefore holomorphic.
 
@@ -85,7 +85,7 @@ Locally, on a simply connected disk contained in $\Omega$, the integral has a ho
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On $\Omega$,
 $$
@@ -115,7 +115,7 @@ Hence $g^2/f\equiv1$ on $\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $g$ extends holomorphically across every point of $Z$.
 
@@ -126,7 +126,7 @@ Let $a\in Z$ have multiplicity $2m$. On a sufficiently small disk about $a$,
 $$
 f(z)=(z-a)^{2m}h(z),
 $$
-where $h$ is holomorphic and nonvanishing. By step <1>3, on the punctured disk,
+where $h$ is holomorphic and nonvanishing. By step [](#s1-3){.pf-ref}, on the punctured disk,
 $$
 |g(z)|^2
 =|f(z)|
@@ -138,7 +138,7 @@ Since $h$ is bounded near $a$, the function $g$ is bounded near $a$ and in fact 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The extended function, still denoted $g$, is entire and satisfies
 $$
@@ -148,7 +148,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 extends $g$ holomorphically over all zeros, so $g$ is entire. The identity $g^2=f$ holds on the dense open set $\Omega$ by step <1>3 and therefore, by continuity, also at every zero of $f$.
+Step [](#s1-4){.pf-ref} extends $g$ holomorphically over all zeros, so $g$ is entire. The identity $g^2=f$ holds on the dense open set $\Omega$ by step [](#s1-3){.pf-ref} and therefore, by continuity, also at every zero of $f$.
 
 :::
 
@@ -156,7 +156,7 @@ Step <1>4 extends $g$ holomorphically over all zeros, so $g$ is entire. The iden
 
 ::: pf-qed
 
-Step <1>5 is the required entire square root.
+Step [](#s1-5){.pf-ref} is the required entire square root.
 
 :::
 

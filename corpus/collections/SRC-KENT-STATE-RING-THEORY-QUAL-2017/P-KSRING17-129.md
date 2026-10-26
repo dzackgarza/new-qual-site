@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -179,7 +179,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ideal $J$ is principal.
 
@@ -194,7 +194,7 @@ for some
 $$
 d\in D.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 J
 =
@@ -211,7 +211,7 @@ Thus every ideal of $D_P$ is principal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ring $D_P$ is an integral domain.
 
@@ -225,7 +225,7 @@ Hence it has no zero divisors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -238,7 +238,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 shows every ideal is principal, and step <1>4 shows $D_P$ is an integral domain.
+Step [](#s1-3){.pf-ref} shows every ideal is principal, and step [](#s1-4){.pf-ref} shows $D_P$ is an integral domain.
 
 :::
 
@@ -297,7 +297,7 @@ Thus $p$ is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A fraction
 $$
@@ -336,7 +336,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 A fraction
 $$
@@ -387,7 +387,7 @@ and $P$ is prime, contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -402,13 +402,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>7 and <1>8.
+Combine steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The element
 $$
@@ -427,13 +427,13 @@ lies in
 $$
 P.
 $$
-Apply step <1>9.
+Apply step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The element
 $$
@@ -451,7 +451,7 @@ $$
 \frac as\frac bt
 $$
 with both factors nonunits.
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 $$
 a,b\in P=(p).
 $$
@@ -499,7 +499,7 @@ is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Let
 $$
@@ -517,7 +517,7 @@ $$
 ::: pf-proof
 
 An irreducible element is a nonunit.
-By step <1>9, a nonunit fraction must have numerator in
+By step [](#s1-9){.pf-ref}, a nonunit fraction must have numerator in
 $$
 P.
 $$
@@ -526,7 +526,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Write
 $$
@@ -546,7 +546,7 @@ $$
 
 ::: pf-proof
 
-By step <1>12,
+By step [](#s1-12){.pf-ref},
 $$
 a\in P=(p).
 $$
@@ -568,7 +568,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The factor
 $$
@@ -584,13 +584,13 @@ $$
 \alpha
 $$
 is irreducible.
-Step <1>13 expresses it as a product
+Step [](#s1-13){.pf-ref} expresses it as a product
 $$
 \alpha
 =
 \frac p1\frac ds.
 $$
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 $$
 p/1
 $$
@@ -605,7 +605,7 @@ to be a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Every irreducible element of $D_P$ is associate to
 $$
@@ -615,13 +615,13 @@ $$
 
 ::: pf-proof
 
-Step <1>13 gives
+Step [](#s1-13){.pf-ref} gives
 $$
 \alpha
 =
 \frac p1\frac ds,
 $$
-and step <1>14 shows
+and step [](#s1-14){.pf-ref} shows
 $$
 d/s
 $$
@@ -640,7 +640,7 @@ by multiplication by a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Consequently,
 $$
@@ -653,11 +653,11 @@ $$
 
 ::: pf-proof
 
-Step <1>11 gives the irreducible
+Step [](#s1-11){.pf-ref} gives the irreducible
 $$
 p/1,
 $$
-and step <1>15 shows every irreducible is associate to it.
+and step [](#s1-15){.pf-ref} shows every irreducible is associate to it.
 
 :::
 
@@ -665,7 +665,7 @@ and step <1>15 shows every irreducible is associate to it.
 
 ::: pf-qed
 
-Step <1>5 proves that $D_P$ is a PID, and step <1>16 proves uniqueness of the irreducible up to associates.
+Step [](#s1-5){.pf-ref} proves that $D_P$ is a PID, and step [](#s1-16){.pf-ref} proves uniqueness of the irreducible up to associates.
 
 :::
 

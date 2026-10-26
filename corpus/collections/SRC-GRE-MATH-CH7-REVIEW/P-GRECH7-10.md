@@ -27,7 +27,7 @@ Let $g(x)$ be a polynomial function whose derivative is continuous and nonzero o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The tangent line to $g$ at $x_n$ is
 $$
@@ -43,7 +43,7 @@ The tangent line through $(x_n,g(x_n))$ has slope $g'(x_n)$, so its point-slope 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its $x$-intercept is
 $$
@@ -53,7 +53,7 @@ $$
 
 ::: pf-proof
 
-By definition of $x_{n+1}$, one has $L_n(x_{n+1})=0$. Using step <1>1,
+By definition of $x_{n+1}$, one has $L_n(x_{n+1})=0$. Using step [](#s1-1){.pf-ref},
 $$
 0=g(x_n)+g'(x_n)(x_{n+1}-x_n).
 $$
@@ -63,7 +63,7 @@ Since $g'(x_n)\ne0$ by hypothesis, solving for $x_{n+1}$ gives the displayed rec
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore Newton's iteration is
 $$
@@ -74,7 +74,7 @@ which is choice (D), with the $x$ in its displayed quotient evaluated at $x_n$.
 
 ::: pf-proof
 
-Step <1>2 derives the recurrence directly from the tangent-intercept construction in the problem.
+Step [](#s1-2){.pf-ref} derives the recurrence directly from the tangent-intercept construction in the problem.
 
 :::
 
@@ -82,7 +82,7 @@ Step <1>2 derives the recurrence directly from the tangent-intercept constructio
 
 ::: pf-qed
 
-Step <1>3 gives the requested approximation formula.
+Step [](#s1-3){.pf-ref} gives the requested approximation formula.
 
 :::
 

@@ -33,7 +33,7 @@ III. $\RR$ is Hausdorff.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I is false.
 
@@ -50,7 +50,7 @@ proper subset of $\RR$ that is not closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II is true: every subset $A\subseteq\RR$ is compact.
 
@@ -71,7 +71,7 @@ Therefore $A$ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III is false.
 
@@ -89,14 +89,14 @@ Hausdorff.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the correct answer is $\boxed{\text{(B) II only}}$.
 
 
 ::: pf-proof
 
-Step <1>1 disproves I, step <1>2 proves II, and step <1>3 disproves III.
+Step [](#s1-1){.pf-ref} disproves I, step [](#s1-2){.pf-ref} proves II, and step [](#s1-3){.pf-ref} disproves III.
 
 :::
 
@@ -104,7 +104,7 @@ Step <1>1 disproves I, step <1>2 proves II, and step <1>3 disproves III.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

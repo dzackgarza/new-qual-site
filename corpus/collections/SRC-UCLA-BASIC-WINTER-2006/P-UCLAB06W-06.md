@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set
 $$
@@ -55,13 +55,13 @@ Then $s\in[a,b]$.
 
 ::: pf-proof
 
-By step <1>1, the least-upper-bound property of $\RR$ gives a real number $s=\sup E$. Since every point of $E$ lies in $[a,b]$ and $a\in E$, one has $a\le s\le b$.
+By step [](#s1-1){.pf-ref}, the least-upper-bound property of $\RR$ gives a real number $s=\sup E$. Since every point of $E$ lies in $[a,b]$ and $a\in E$, one has $a\le s\le b$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -88,7 +88,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -114,7 +114,7 @@ Then $f(x)<c$, so $x\in E$, contradicting that $s$ is an upper bound for $E$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore there exists $s\in[a,b]$ such that
 $$
@@ -124,7 +124,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 give both inequalities $f(s)\le c$ and $f(s)\ge c$.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give both inequalities $f(s)\le c$ and $f(s)\ge c$.
 
 :::
 
@@ -132,7 +132,7 @@ Steps <1>3 and <1>4 give both inequalities $f(s)\le c$ and $f(s)\ge c$.
 
 ::: pf-qed
 
-The value $c$ was arbitrary between $f(a)$ and $f(b)$. Step <1>5 therefore shows that $f$ attains every intermediate value. If $f(b)<f(a)$, the same argument applies after reversing the endpoint roles.
+The value $c$ was arbitrary between $f(a)$ and $f(b)$. Step [](#s1-5){.pf-ref} therefore shows that $f$ attains every intermediate value. If $f(b)<f(a)$, the same argument applies after reversing the endpoint roles.
 
 :::
 

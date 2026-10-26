@@ -21,7 +21,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The summand has the partial-fraction decomposition
 \[
@@ -46,7 +46,7 @@ The summand has the partial-fraction decomposition
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -67,13 +67,13 @@ S_N
 
 ::: pf-proof
 
-Sum the identity from step <1>1 for \(1\le n\le N\).
+Sum the identity from step [](#s1-1){.pf-ref} for \(1\le n\le N\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Reindex the second sum:
 \[
@@ -97,7 +97,7 @@ Then \(n=1\) corresponds to \(k=m+1\), and \(n=N\) corresponds to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -111,13 +111,13 @@ S_N
 
 ::: pf-proof
 
-Combine steps <1>2--<1>3.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For \(N\ge m\),
 \[
@@ -132,7 +132,7 @@ S_N
 
 ::: pf-proof
 
-In step <1>4, the terms
+In step [](#s1-4){.pf-ref}, the terms
 \[
 \frac1{m+1},\dots,\frac1N
 \]
@@ -143,7 +143,7 @@ cancel. The first sum leaves \(1,\dots,m\), while the second sum leaves
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The tail term satisfies
 \[
@@ -168,7 +168,7 @@ There are \(m\) terms, and each satisfies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -180,7 +180,7 @@ Hence
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 0
 \le
@@ -209,13 +209,13 @@ Therefore
 
 ::: pf-proof
 
-Take \(N\to\infty\) in step <1>5 and use step <1>7.
+Take \(N\to\infty\) in step [](#s1-5){.pf-ref} and use step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Equivalently,
 \[
@@ -243,7 +243,7 @@ H_m
 
 ::: pf-qed
 
-Step <1>9 is the requested value.
+Step [](#s1-9){.pf-ref} is the requested value.
 
 :::
 

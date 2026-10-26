@@ -28,7 +28,7 @@ Prove or disprove: $(s_k)$ is a Cauchy sequence.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $j\ge2$,
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $k\ge1$,
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-For $k=1$, both sides equal $1$. For $k\ge2$, step <1>1 gives
+For $k=1$, both sides equal $1$. For $k\ge2$, step [](#s1-1){.pf-ref} gives
 $$
 \begin{aligned}
 s_k
@@ -80,14 +80,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(s_k)$ is $\boxed{\text{Cauchy}}$.
 
 
 ::: pf-proof
 
-Let $n>m\ge1$. By step <1>1,
+Let $n>m\ge1$. By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 |s_n-s_m|
@@ -109,7 +109,7 @@ Hence $(s_k)$ satisfies the Cauchy criterion.
 
 ::: pf-qed
 
-Step <1>2 proves the required bound, and step <1>3 proves that $(s_k)$ is Cauchy.
+Step [](#s1-2){.pf-ref} proves the required bound, and step [](#s1-3){.pf-ref} proves that $(s_k)$ is Cauchy.
 
 :::
 

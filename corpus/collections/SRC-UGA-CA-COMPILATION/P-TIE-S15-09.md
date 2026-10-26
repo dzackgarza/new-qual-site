@@ -24,7 +24,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every positive integer $n$,
 $$
@@ -95,7 +95,7 @@ The points $z_n$ are distinct, so this gives infinitely many zeros in the unit d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The zeros $z_n$ accumulate only at the boundary point $1$:
 $$
@@ -122,14 +122,14 @@ The point $1$ is not contained in the open unit disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 This does not contradict the identity theorem.
 
 
 ::: pf-proof
 
-The identity theorem says that a holomorphic function on a region is identically zero if its zeros have an accumulation point inside that region. By step <1>3, the zero sequence constructed here accumulates at $1$, which lies on the boundary and not in the domain $\abs{z}<1$. Hence the hypothesis of the identity theorem is not satisfied.
+The identity theorem says that a holomorphic function on a region is identically zero if its zeros have an accumulation point inside that region. By step [](#s1-3){.pf-ref}, the zero sequence constructed here accumulates at $1$, which lies on the boundary and not in the domain $\abs{z}<1$. Hence the hypothesis of the identity theorem is not satisfied.
 
 :::
 
@@ -137,7 +137,7 @@ The identity theorem says that a holomorphic function on a region is identically
 
 ::: pf-qed
 
-Steps <1>1--<1>3 give the requested nonzero analytic function with infinitely many zeros, and step <1>4 explains why there is no contradiction with uniqueness.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested nonzero analytic function with infinitely many zeros, and step [](#s1-4){.pf-ref} explains why there is no contradiction with uniqueness.
 
 :::
 

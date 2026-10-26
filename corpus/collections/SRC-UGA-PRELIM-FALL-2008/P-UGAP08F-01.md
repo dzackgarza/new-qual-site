@@ -28,7 +28,7 @@ Discuss the truth of each statement.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (a) is $\boxed{\text{true}}$.
 
@@ -49,7 +49,7 @@ which is odd. Thus the required integer $y$ exists for every integer $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (b) is $\boxed{\text{false}}$.
 
@@ -66,7 +66,7 @@ which is even. Hence no single integer $x$ can make $x+y$ odd for every integer 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement (c) is $\boxed{\text{false}}$.
 
@@ -83,7 +83,7 @@ is even, so there is no integer $y$ for which $xy$ is odd. Therefore the univers
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (d) is $\boxed{\text{true}}$.
 
@@ -102,7 +102,7 @@ which is even. Thus such an integer $x$ exists.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 determine the truth of all four statements.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} determine the truth of all four statements.
 
 :::
 

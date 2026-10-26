@@ -61,7 +61,7 @@ is a discrete subset of the compact space \(S^2\), hence finite. Because \(T\) i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For a finite \(d\)-sheeted covering of finite CW complexes,
 \[
@@ -78,7 +78,7 @@ Lift a finite CW structure on \(T\) to \(S^2\). Every cell of \(T\) has exactly 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 But
 \[
@@ -96,9 +96,9 @@ These are the standard Euler characteristics of the sphere and torus.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Thus step <1>2 would give
+Thus step [](#s1-2){.pf-ref} would give
 \[
 2=d\cdot0=0,
 \]
@@ -107,13 +107,13 @@ a contradiction.
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2.
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore no covering
 \[
@@ -124,13 +124,13 @@ exists.
 
 ::: pf-proof
 
-The assumed covering led to the contradiction in step <1>4.
+The assumed covering led to the contradiction in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since \(S^2\) is simply connected, every connected covering of \(S^2\) is trivial.
 
@@ -147,7 +147,7 @@ there is only the trivial subgroup, hence only the one-sheeted connected cover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore \(p\) would have to be a homeomorphism.
 
@@ -160,7 +160,7 @@ A one-sheeted covering map is a homeomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 But \(T\) is not homeomorphic to \(S^2\).
 
@@ -180,7 +180,7 @@ while
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence no covering
 \[
@@ -191,20 +191,20 @@ exists.
 
 ::: pf-proof
 
-Steps <1>7--<1>8 contradict the assumption.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} contradict the assumption.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since the target \(S^3\) is simply connected, every connected covering of \(S^3\) is one-sheeted.
 
 
 ::: pf-proof
 
-Apply the same covering-space classification as in step <1>6, using
+Apply the same covering-space classification as in step [](#s1-6){.pf-ref}, using
 \[
 \pi_1(S^3)=0.
 \]
@@ -213,7 +213,7 @@ Apply the same covering-space classification as in step <1>6, using
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore every covering
 \[
@@ -224,13 +224,13 @@ is a homeomorphism.
 
 ::: pf-proof
 
-The domain \(S^3\) is connected, so the cover is connected. By step <1>10 it has one sheet, and a one-sheeted covering is a homeomorphism.
+The domain \(S^3\) is connected, so the cover is connected. By step [](#s1-10){.pf-ref} it has one sheet, and a one-sheeted covering is a homeomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence there is no nontrivial covering
 \[
@@ -240,13 +240,13 @@ S^3\to S^3.
 
 ::: pf-proof
 
-Every such covering is equivalent to the identity cover by step <1>11.
+Every such covering is equivalent to the identity cover by step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus the three answers are
 \[
@@ -257,7 +257,7 @@ Thus the three answers are
 
 ::: pf-proof
 
-Use steps <1>5, <1>9, and <1>12.
+Use steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-12){.pf-ref}.
 
 :::
 
@@ -265,7 +265,7 @@ Use steps <1>5, <1>9, and <1>12.
 
 ::: pf-qed
 
-Step <1>13 gives the complete disposition.
+Step [](#s1-13){.pf-ref} gives the complete disposition.
 
 :::
 

@@ -21,7 +21,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The maximal ideals
 $$
@@ -60,7 +60,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The canonical map
 $$
@@ -75,7 +75,7 @@ is surjective.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 M_1+M_2=R.
 $$
@@ -85,7 +85,7 @@ The two-ideal Chinese remainder theorem therefore implies that the canonical map
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The kernel of $\varphi$ is
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -132,7 +132,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>2--<1>3, $\varphi$ is a surjective ring homomorphism with kernel $I$. The first isomorphism theorem gives
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $\varphi$ is a surjective ring homomorphism with kernel $I$. The first isomorphism theorem gives
 $$
 R/I
 \cong
@@ -143,7 +143,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Each quotient
 $$
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -188,7 +188,7 @@ Combine steps <1>4 and <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -58,7 +58,7 @@ has the path-lifting property, so the normalized path has a unique lift beginnin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along the path,
 $$
@@ -99,7 +99,7 @@ which yields the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The integral satisfies
 $$
@@ -110,7 +110,7 @@ $$
 
 ::: pf-proof
 
-Using the parametrization and step <1>2,
+Using the parametrization and step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 I(\gamma)
@@ -125,7 +125,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $\gamma$ winds once clockwise around the origin,
 $$
@@ -141,7 +141,7 @@ For a closed loop in $\RR^2\setminus\{0\}$, the total change of a lifted argumen
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -151,7 +151,7 @@ $$
 
 ::: pf-proof
 
-Substitute the value from step <1>4 into step <1>3:
+Substitute the value from step [](#s1-4){.pf-ref} into step [](#s1-3){.pf-ref}:
 $$
 I(\gamma)=-(-2\pi)=2\pi.
 $$
@@ -162,7 +162,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the requested value of the integral.
+Step [](#s1-5){.pf-ref} is the requested value of the integral.
 
 :::
 

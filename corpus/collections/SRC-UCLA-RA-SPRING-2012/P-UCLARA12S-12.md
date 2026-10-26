@@ -37,7 +37,7 @@ The prescribed zero set contains $0$ and the two points $\pm a_n$ for every $n\g
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every such function satisfies
 $$
@@ -67,7 +67,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f\not\equiv0$, then there are an integer $m\ge1$ and an entire function $g$ with $g(0)\ne0$ such that
 $$
@@ -83,7 +83,7 @@ $$
 
 ::: pf-proof
 
-Since $f$ is nonzero and $f(0)=0$, its zero at $0$ has some finite multiplicity $m\ge1$, so $f(z)=z^m g(z)$ with $g$ entire and $g(0)\ne0$. On $\abs z=R\ge1$, step <1>1 gives
+Since $f$ is nonzero and $f(0)=0$, its zero at $0$ has some finite multiplicity $m\ge1$, so $f(z)=z^m g(z)$ with $g$ entire and $g(0)\ne0$. On $\abs z=R\ge1$, step [](#s1-1){.pf-ref} gives
 $$
 \abs{g(z)}
 =
@@ -99,7 +99,7 @@ Taking logarithms proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $N_g(r)$ denotes the number of zeros of $g$ in $\{\abs z\le r\}$, counted with multiplicity, then for every $R>0$ for which $g$ has no zero on $\abs z=R$,
 $$
@@ -120,13 +120,13 @@ $$
 \log\abs{g(Re^{i\theta})}\,d\theta
 -\log\abs{g(0)}.
 $$
-Every zero with $\abs\zeta\le R/2$ contributes at least $\log2$ to the sum. By step <1>2, the integral average is at most $R$. This yields the stated inequality.
+Every zero with $\abs\zeta\le R/2$ contributes at least $\log2$ to the sum. By step [](#s1-2){.pf-ref}, the integral average is at most $R$. This yields the stated inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every sufficiently large $R$, the prescribed zeros force
 $$
@@ -160,14 +160,14 @@ In particular this is at least $R^2/8-1$ for all sufficiently large $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The assumption $f\not\equiv0$ is impossible.
 
 
 ::: pf-proof
 
-Choose arbitrarily large radii $R$ for which $g$ has no zero on the circle $\abs z=R$; this is possible because the zero set of a nonzero entire function is discrete. Combining steps <1>3 and <1>4 gives
+Choose arbitrarily large radii $R$ for which $g$ has no zero on the circle $\abs z=R$; this is possible because the zero set of a nonzero entire function is discrete. Combining steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} gives
 $$
 \left(\frac{R^2}{8}-1\right)\log2
 \le
@@ -179,14 +179,14 @@ The left-hand side grows quadratically in $R$, whereas the right-hand side grows
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $\boxed{f\equiv0}$.
 
 
 ::: pf-proof
 
-Step <1>5 rules out every nonzero entire function satisfying the two hypotheses.
+Step [](#s1-5){.pf-ref} rules out every nonzero entire function satisfying the two hypotheses.
 
 :::
 
@@ -194,7 +194,7 @@ Step <1>5 rules out every nonzero entire function satisfying the two hypotheses.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

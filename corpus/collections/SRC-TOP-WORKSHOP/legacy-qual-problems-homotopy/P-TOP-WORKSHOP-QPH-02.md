@@ -100,7 +100,7 @@ This loop travels once around the boundary circle of the disk factor while remai
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The class
 \[
@@ -124,7 +124,7 @@ the loop \(m\) represents
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The same loop becomes nullhomotopic in \(Y\).
 
@@ -160,13 +160,13 @@ has nontrivial kernel.
 
 ::: pf-proof
 
-The nontrivial class \([m]\) from step <1>4 is sent to the identity by step <1>5.
+The nontrivial class \([m]\) from step [](#s1-4){.pf-ref} is sent to the identity by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -216,7 +216,7 @@ Fundamental groups are functorial under composition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The existence of a left inverse \(r_*\) forces \(i_*\) to be injective.
 
@@ -243,20 +243,20 @@ Hence the kernel of \(i_*\) is trivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-This contradicts step <1>7.
+This contradicts step [](#s1-7){.pf-ref}.
 
 
 ::: pf-proof
 
-Step <1>7 says \(i_*\) is not injective, while step <1>10 says a retraction would make it injective.
+Step [](#s1-7){.pf-ref} says \(i_*\) is not injective, while step [](#s1-10){.pf-ref} says a retraction would make it injective.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -269,7 +269,7 @@ D^2\times S^1}.
 
 ::: pf-proof
 
-The assumption of a retraction led to the contradiction in step <1>11.
+The assumption of a retraction led to the contradiction in step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -277,7 +277,7 @@ The assumption of a retraction led to the contradiction in step <1>11.
 
 ::: pf-qed
 
-Step <1>12 answers the question.
+Step [](#s1-12){.pf-ref} answers the question.
 
 :::
 

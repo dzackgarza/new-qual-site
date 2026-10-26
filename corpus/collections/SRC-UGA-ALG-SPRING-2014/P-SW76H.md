@@ -44,7 +44,7 @@ If $a,b$ are algebraic over $F$, the finite extension $F(a,b)/F$ contains $a\pm 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The field $C_{\mathrm{alg}}$ is algebraically closed.
 
@@ -57,7 +57,7 @@ Let $g\in C_{\mathrm{alg}}[x]$ be nonconstant and let $L$ be the extension of $F
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every algebraic extension $E/F$ admits an $F$-embedding
 \[
@@ -75,7 +75,7 @@ Partially order pairs $(L,\varphi)$, where $F\subseteq L\subseteq E$ and $\varph
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>3 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} proves part (b).
 
 :::
 

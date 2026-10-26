@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z\in D_s(z_0)$, then
 $$
@@ -59,7 +59,7 @@ Hence $w\in D_r(z_0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in D_s(z_0)$,
 $$
@@ -107,7 +107,7 @@ Division by $\rho^2$ proves the estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -122,11 +122,11 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 D_\rho(z)\subset D_r(z_0).
 $$
-Hence step <1>2 gives
+Hence step [](#s1-2){.pf-ref} gives
 $$
 \abs{f(z)}
 \le
@@ -142,7 +142,7 @@ for every $z\in D_s(z_0)$. Taking the supremum over $z$ gives the displayed ineq
 
 ::: pf-qed
 
-Step <1>3 proves the result with
+Step [](#s1-3){.pf-ref} proves the result with
 $$
 \boxed{
 c=\frac1{\pi(r-s)^2}>0.

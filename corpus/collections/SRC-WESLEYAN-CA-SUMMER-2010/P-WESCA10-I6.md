@@ -22,7 +22,7 @@ Define what it means for a function to be a branch of the logarithm on $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A branch of the logarithm on $D$ is a holomorphic function
 $L:D\to\mathbb C$ such that
@@ -45,7 +45,7 @@ the choices vary holomorphically with $z$.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition.
+Step [](#s1-1){.pf-ref} gives the requested definition.
 
 :::
 

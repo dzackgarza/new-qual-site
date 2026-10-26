@@ -28,7 +28,7 @@ Hint: use Liouville's theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume for contradiction that
 \[
@@ -51,7 +51,7 @@ The polynomial \(f\) is entire. Under the stated assumption it has no zeros, so 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is \(R>0\) such that
 \[
@@ -82,14 +82,14 @@ Multiplying by \(|z|^n\) gives the claimed estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The entire function \(g=1/f\) is bounded outside the disk \(|z|<R\).
 
 
 ::: pf-proof
 
-By step <1>2, for \(|z|\ge R\),
+By step [](#s1-2){.pf-ref}, for \(|z|\ge R\),
 \[
 |g(z)|
 =
@@ -104,7 +104,7 @@ By step <1>2, for \(|z|\ge R\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(g\) is bounded on the closed disk
 \[
@@ -114,28 +114,28 @@ The function \(g\) is bounded on the closed disk
 
 ::: pf-proof
 
-By step <1>1, \(g\) is continuous on \(\mathbb C\). The closed disk is compact, so the continuous real-valued function \(|g|\) attains a finite maximum there.
+By step [](#s1-1){.pf-ref}, \(g\) is continuous on \(\mathbb C\). The closed disk is compact, so the continuous real-valued function \(|g|\) attains a finite maximum there.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function \(g\) is constant.
 
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 together show that \(g\) is bounded on all of \(\mathbb C\). Since \(g\) is entire by step <1>1, Liouville's theorem implies that \(g\) is constant.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} together show that \(g\) is bounded on all of \(\mathbb C\). Since \(g\) is entire by step [](#s1-1){.pf-ref}, Liouville's theorem implies that \(g\) is constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The conclusion of step <1>5 contradicts \(n\ge1\) and \(a_n\ne0\).
+The conclusion of step [](#s1-5){.pf-ref} contradicts \(n\ge1\) and \(a_n\ne0\).
 
 
 ::: pf-proof
@@ -146,7 +146,7 @@ If \(g=1/f\) is constant and never zero, then \(f=1/g\) is constant. But the pol
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -156,7 +156,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption that \(f\) has no zero led to the contradiction in step <1>6. Hence \(f\) must have at least one complex zero.
+The assumption that \(f\) has no zero led to the contradiction in step [](#s1-6){.pf-ref}. Hence \(f\) must have at least one complex zero.
 
 :::
 
@@ -164,7 +164,7 @@ The assumption that \(f\) has no zero led to the contradiction in step <1>6. Hen
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

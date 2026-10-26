@@ -34,7 +34,7 @@ q(z)=p(z)-z^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(|p(z)|<1\) for every \(|z|=1\), then \(q\) and \(-z^n\) have the same number of zeros in the unit disc, counted with multiplicity.
 
@@ -55,20 +55,20 @@ Rouché's theorem therefore gives the same zero count for \(q\) and \(-z^n\) in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The hypothesis \(|p(z)|<1\) for every \(|z|=1\) is impossible.
 
 
 ::: pf-proof
 
-Under that hypothesis, \(q\) cannot be the zero polynomial: if \(q\equiv0\), then \(p(z)=z^n\) and \(|p(z)|=1\) on the unit circle. Hence \(q\) is a nonzero polynomial of degree at most \(n-1\), so it has at most \(n-1\) zeros in \(\mathbb C\), counted with multiplicity. This contradicts step <1>1, which gives \(n\) zeros already in the unit disc.
+Under that hypothesis, \(q\) cannot be the zero polynomial: if \(q\equiv0\), then \(p(z)=z^n\) and \(|p(z)|=1\) on the unit circle. Hence \(q\) is a nonzero polynomial of degree at most \(n-1\), so it has at most \(n-1\) zeros in \(\mathbb C\), counted with multiplicity. This contradicts step [](#s1-1){.pf-ref}, which gives \(n\) zeros already in the unit disc.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently there exists \(z_0\) with \(|z_0|=1\) such that
 \[
@@ -78,7 +78,7 @@ Consequently there exists \(z_0\) with \(|z_0|=1\) such that
 
 ::: pf-proof
 
-If no such point existed, then \(|p(z)|<1\) at every point of the unit circle, contrary to step <1>2.
+If no such point existed, then \(|p(z)|<1\) at every point of the unit circle, contrary to step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -86,7 +86,7 @@ If no such point existed, then \(|p(z)|<1\) at every point of the unit circle, c
 
 ::: pf-qed
 
-Step <1>3 is exactly the required conclusion.
+Step [](#s1-3){.pf-ref} is exactly the required conclusion.
 
 :::
 

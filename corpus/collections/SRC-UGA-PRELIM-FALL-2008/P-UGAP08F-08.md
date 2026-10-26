@@ -35,7 +35,7 @@ where $C$ is the unit circle oriented counterclockwise.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), one example is
 $$
@@ -56,7 +56,7 @@ so the terms do not tend to $0$. Hence the series diverges for every $x\ne5$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For part (b), take
 $$
@@ -78,7 +78,7 @@ which is not differentiable at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (c), take
 $$
@@ -103,7 +103,7 @@ for every $t\ne0$, so $f(t,t)$ does not tend to $f(0,0)=0$ as $t\to0$. Thus $f$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (d), define the sequence in successive blocks: for each $k\ge1$, take $k$ consecutive terms equal to $1/k$, followed by $k$ consecutive terms equal to $-1/k$.
 
@@ -116,7 +116,7 @@ The terms tend to $0$ because the absolute value of every term in the $k$th bloc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (e), take
 $$
@@ -161,7 +161,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>5 give examples satisfying parts (a)--(e), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give examples satisfying parts (a)--(e), respectively.
 
 :::
 

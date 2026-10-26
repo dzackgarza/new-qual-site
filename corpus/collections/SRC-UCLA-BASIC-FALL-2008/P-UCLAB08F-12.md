@@ -32,7 +32,7 @@ Let
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every minimizer $\mathbf y$ of $\Phi$ satisfies the normal equation
 \[
@@ -79,7 +79,7 @@ A^t(A\mathbf y-\mathbf b)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The two minimizers in the problem satisfy
 \[
@@ -93,7 +93,7 @@ A^t(A(\mathbf x+\alpha\mathbf z)-\mathbf b)=0.
 
 ::: pf-proof
 
-Apply step <1>1 first to $\mathbf y=\mathbf x$ and then to
+Apply step [](#s1-1){.pf-ref} first to $\mathbf y=\mathbf x$ and then to
 \[
 \mathbf y=\mathbf x+\alpha\mathbf z.
 \]
@@ -102,7 +102,7 @@ Apply step <1>1 first to $\mathbf y=\mathbf x$ and then to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -112,7 +112,7 @@ A^tA\mathbf z=0.
 
 ::: pf-proof
 
-Subtract the two equations from step <1>2:
+Subtract the two equations from step [](#s1-2){.pf-ref}:
 \[
 \alpha A^tA\mathbf z=0.
 \]
@@ -122,7 +122,7 @@ Since $\alpha\ne0$, divide by $\alpha$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -132,7 +132,7 @@ A\mathbf z=0.
 
 ::: pf-proof
 
-Take the Euclidean inner product of the equation in step <1>3 with $\mathbf z$:
+Take the Euclidean inner product of the equation in step [](#s1-3){.pf-ref} with $\mathbf z$:
 \[
 0
 =
@@ -149,7 +149,7 @@ A\mathbf z=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus
 \[
@@ -159,7 +159,7 @@ Thus
 
 ::: pf-proof
 
-Step <1>4 is exactly the defining condition for membership in $\ker A$.
+Step [](#s1-4){.pf-ref} is exactly the defining condition for membership in $\ker A$.
 
 :::
 
@@ -167,7 +167,7 @@ Step <1>4 is exactly the defining condition for membership in $\ker A$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ $\theta$ for which the ordinary improper integral is finite.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral depends on $\theta$ only through
 $$
@@ -51,7 +51,7 @@ $|\sin\theta|$ leaves the integrand unchanged.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 It suffices to compute the integral for
 $$
@@ -65,14 +65,14 @@ If $\sin\theta\ne0$, choose $\vartheta\in(0,\pi)$ with
 $$
 \sin\vartheta=|\sin\theta|.
 $$
-By step <1>1 the two integrands coincide. After computing the formula in this
+By step [](#s1-1){.pf-ref} the two integrands coincide. After computing the formula in this
 range, replace $\sin\vartheta$ by $|\sin\theta|$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0<\theta<\pi$,
 $$
@@ -103,7 +103,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose
 $$
@@ -122,7 +122,7 @@ and both are simple.
 
 ::: pf-proof
 
-By step <1>3 the four poles are
+By step [](#s1-3){.pf-ref} the four poles are
 $$
 \pm e^{i\theta},
 \qquad
@@ -137,7 +137,7 @@ $\theta=\pi/2$, which is excluded here.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For
 $$
@@ -145,7 +145,7 @@ F(z)
 =
 \frac{z^2}{z^4-2z^2\cos2\theta+1},
 $$
-the two upper-half-plane residues from step <1>4 are
+the two upper-half-plane residues from step [](#s1-4){.pf-ref} are
 $$
 \operatorname{Res}_{z=e^{i\theta}}F
 =
@@ -201,9 +201,9 @@ and direct substitution gives the second displayed residue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The sum of the two residues in step <1>5 is
+The sum of the two residues in step [](#s1-5){.pf-ref} is
 $$
 \frac1{4i\sin\theta}.
 $$
@@ -227,7 +227,7 @@ The cancellation is valid because $\theta\ne\pi/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -267,7 +267,7 @@ $$
 $$
 The upper arc has length $\pi R$, so its integral tends to zero.
 
-By the residue theorem and step <1>6,
+By the residue theorem and step [](#s1-6){.pf-ref},
 $$
 \int_{-\infty}^{\infty}F(x)\,dx
 =
@@ -281,7 +281,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 $$
@@ -333,7 +333,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every
 $$
@@ -351,14 +351,14 @@ $$
 
 ::: pf-proof
 
-Step <1>7 proves the formula away from $\theta=\pi/2$, and step <1>8 gives
+Step [](#s1-7){.pf-ref} proves the formula away from $\theta=\pi/2$, and step [](#s1-8){.pf-ref} gives
 the same value at $\theta=\pi/2$ because $\sin(\pi/2)=1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore, for every real $\theta$ with $\sin\theta\ne0$,
 $$
@@ -374,7 +374,7 @@ $$
 
 ::: pf-proof
 
-Reduce to an angle in $(0,\pi)$ using step <1>2, apply step <1>9, and replace
+Reduce to an angle in $(0,\pi)$ using step [](#s1-2){.pf-ref}, apply step [](#s1-9){.pf-ref}, and replace
 $\sin\vartheta$ by $|\sin\theta|$.
 
 :::
@@ -383,7 +383,7 @@ $\sin\vartheta$ by $|\sin\theta|$.
 
 ::: pf-qed
 
-Step <1>10 is the maximal real-parameter form of the requested integral.
+Step [](#s1-10){.pf-ref} is the maximal real-parameter form of the requested integral.
 
 :::
 

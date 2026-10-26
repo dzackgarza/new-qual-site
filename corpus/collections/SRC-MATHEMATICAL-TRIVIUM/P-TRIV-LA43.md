@@ -31,7 +31,7 @@ Find out if these lines are
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A direction vector for $l_1$ is the cross product of the normals of its
 two defining planes:
@@ -53,7 +53,7 @@ Computing the cross product gives the displayed vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A direction vector for $l_2$ is
 $$
@@ -67,20 +67,20 @@ $$
 
 ::: pf-proof
 
-As in step <1>1, take the cross product of the two plane normals.
+As in step [](#s1-1){.pf-ref}, take the cross product of the two plane normals.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The lines are not parallel.
 
 
 ::: pf-proof
 
-The direction vectors from steps <1>1--<1>2 are not scalar multiples. For
+The direction vectors from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} are not scalar multiples. For
 example,
 $$
 \frac{27}{-4}
@@ -166,7 +166,7 @@ Elimination gives the displayed formulas for $x$ and $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If the two lines intersect, then their parameters must satisfy
 $$
@@ -183,7 +183,7 @@ Equality of the two points therefore forces $t=u$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Equality of the first coordinates then forces
 $$
@@ -193,7 +193,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>6, solve
+Using step [](#s1-6){.pf-ref}, solve
 $$
 -\frac t2
 =
@@ -212,7 +212,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 At $t=u=-1/4$, the two $y$-coordinates are different:
 $$
@@ -236,21 +236,21 @@ Direct substitution gives the two values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the two lines do not intersect.
 
 
 ::: pf-proof
 
-Any intersection point would have to satisfy steps <1>6--<1>7, but step
-<1>8 shows the resulting points are distinct.
+Any intersection point would have to satisfy steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}, but step
+[](#s1-8){.pf-ref} shows the resulting points are distinct.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -262,7 +262,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 rules out parallelism and step <1>9 rules out intersection.
+Step [](#s1-3){.pf-ref} rules out parallelism and step [](#s1-9){.pf-ref} rules out intersection.
 
 :::
 
@@ -270,7 +270,7 @@ Step <1>3 rules out parallelism and step <1>9 rules out intersection.
 
 ::: pf-qed
 
-Step <1>10 answers parts (a) and (b).
+Step [](#s1-10){.pf-ref} answers parts (a) and (b).
 
 :::
 

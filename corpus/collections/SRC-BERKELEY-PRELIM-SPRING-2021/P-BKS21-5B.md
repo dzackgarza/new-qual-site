@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $c$ in the open unit disk, $\phi_c$ maps the open unit disk into itself.
 
@@ -59,7 +59,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The inverse of $\phi_c$ is
 $$
@@ -78,13 +78,13 @@ for $z$ gives
 $$
 z=\frac{w+c}{1+\overline c\,w}.
 $$
-The denominator is nonzero for $|w|<1$ because $|\overline c\,w|<1$. Direct substitution shows that this formula is both a left and right inverse of $\phi_c$. By step <1>1, $\phi_c$ maps the disk into itself, and the same calculation from step <1>1 with $-c$ in place of $c$ shows that the displayed inverse maps the disk into itself as well.
+The denominator is nonzero for $|w|<1$ because $|\overline c\,w|<1$. Direct substitution shows that this formula is both a left and right inverse of $\phi_c$. By step [](#s1-1){.pf-ref}, $\phi_c$ maps the disk into itself, and the same calculation from step [](#s1-1){.pf-ref} with $-c$ in place of $c$ shows that the displayed inverse maps the disk into itself as well.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each $\phi_c$ is a biholomorphic automorphism of the open unit disk, and
 $$
@@ -94,13 +94,13 @@ $$
 
 ::: pf-proof
 
-The formulas in steps <1>1--<1>2 are holomorphic on the disk because their denominators do not vanish there, and they are inverse to one another. The equality $\phi_c(c)=0$ is immediate from the definition.
+The formulas in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} are holomorphic on the disk because their denominators do not vanish there, and they are inverse to one another. The equality $\phi_c(c)=0$ is immediate from the definition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map
 $$
@@ -113,7 +113,7 @@ is a biholomorphic self-map of the disk satisfying $F(a)=b$.
 
 ::: pf-proof
 
-By step <1>3, both $\phi_a$ and $\phi_b^{-1}$ are biholomorphic automorphisms of the disk, so their composition is also one. Furthermore,
+By step [](#s1-3){.pf-ref}, both $\phi_a$ and $\phi_b^{-1}$ are biholomorphic automorphisms of the disk, so their composition is also one. Furthermore,
 $$
 F(a)
 =
@@ -129,7 +129,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 constructs the required map.
+Step [](#s1-4){.pf-ref} constructs the required map.
 
 :::
 

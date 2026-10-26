@@ -46,7 +46,7 @@ a_2=\frac{a_1}{2}=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For \(m\ge2\),
 \[
@@ -69,7 +69,7 @@ a_{2(m-1)+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -83,7 +83,7 @@ b_m
 
 ::: pf-proof
 
-Using the even-index recurrence and step <1>2,
+Using the even-index recurrence and step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 b_m
@@ -105,9 +105,9 @@ a_{2m}\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The recurrence in step <1>3 can be rewritten as
+The recurrence in step [](#s1-3){.pf-ref} can be rewritten as
 \[
 \boxed{
 b_m-\frac12
@@ -134,7 +134,7 @@ Subtract \(1/2\) from both sides:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Iterating,
 \[
@@ -149,13 +149,13 @@ b_1-\frac12
 
 ::: pf-proof
 
-Apply step <1>4 repeatedly from index \(m\) down to index \(1\).
+Apply step [](#s1-4){.pf-ref} repeatedly from index \(m\) down to index \(1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since \(b_1=0\),
 \[
@@ -170,7 +170,7 @@ b_m
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 b_m-\frac12
 =
@@ -184,7 +184,7 @@ b_m-\frac12
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -195,7 +195,7 @@ a_{2m}\longrightarrow\frac12}.
 
 ::: pf-proof
 
-In step <1>6,
+In step [](#s1-6){.pf-ref},
 \[
 2^{-m}\to0.
 \]
@@ -222,9 +222,9 @@ This is the odd-index recurrence from the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Substituting step <1>6,
+Substituting step [](#s1-6){.pf-ref},
 \[
 \boxed{
 a_{2m+1}
@@ -248,7 +248,7 @@ a_{2m+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -268,7 +268,7 @@ Again
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For every \(m\ge1\),
 \[
@@ -283,13 +283,13 @@ a_{2m+1}<1.
 ::: pf-proof
 
 Both inequalities follow immediately from the positive correction terms in
-steps <1>6 and <1>9.
+steps [](#s1-6){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Fix
 \[
@@ -307,13 +307,13 @@ a_{2m}
 
 ::: pf-proof
 
-This is convergence of the even subsequence from step <1>7.
+This is convergence of the even subsequence from step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 There exists \(M_2\) such that for all \(m\ge M_2\),
 \[
@@ -327,13 +327,13 @@ a_{2m+1}
 
 ::: pf-proof
 
-This is convergence of the odd subsequence from step <1>10.
+This is convergence of the odd subsequence from step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore every sufficiently late term \(a_n\) satisfies
 \[
@@ -348,19 +348,19 @@ Choose
 \[
 M=\max(M_1,M_2).
 \]
-For late even terms use step <1>12. For late odd terms, step <1>13 gives
+For late even terms use step [](#s1-12){.pf-ref}. For late odd terms, step [](#s1-13){.pf-ref} gives
 \[
 a_{2m+1}>1-\varepsilon>\frac12-\varepsilon
 \]
 after decreasing \(\varepsilon\) if necessary; equivalently, one may use the
-explicit formula in step <1>9, whose values are eventually above
+explicit formula in step [](#s1-9){.pf-ref}, whose values are eventually above
 \(1/2-\varepsilon\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Infinitely many terms satisfy
 \[
@@ -370,13 +370,13 @@ a_n<\frac12+\varepsilon.
 
 ::: pf-proof
 
-All sufficiently late even terms do so by step <1>12.
+All sufficiently late even terms do so by step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence
 \[
@@ -387,11 +387,11 @@ Hence
 
 ::: pf-proof
 
-Step <1>14 shows that the eventual lower bound is at least
+Step [](#s1-14){.pf-ref} shows that the eventual lower bound is at least
 \[
 1/2-\varepsilon
 \]
-for every \(\varepsilon>0\), while step <1>15 shows terms occur infinitely
+for every \(\varepsilon>0\), while step [](#s1-15){.pf-ref} shows terms occur infinitely
 often below
 \[
 1/2+\varepsilon.
@@ -402,7 +402,7 @@ This is exactly the characterization of the liminf as \(1/2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Every sufficiently late term satisfies
 \[
@@ -412,14 +412,14 @@ a_n<1+\varepsilon.
 
 ::: pf-proof
 
-Late odd terms satisfy this by step <1>13. Late even terms are below \(1/2\)
-by step <1>11, hence also below \(1+\varepsilon\).
+Late odd terms satisfy this by step [](#s1-13){.pf-ref}. Late even terms are below \(1/2\)
+by step [](#s1-11){.pf-ref}, hence also below \(1+\varepsilon\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Infinitely many terms satisfy
 \[
@@ -429,13 +429,13 @@ a_n>1-\varepsilon.
 
 ::: pf-proof
 
-All sufficiently late odd terms satisfy this by step <1>13.
+All sufficiently late odd terms satisfy this by step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence
 \[
@@ -446,15 +446,15 @@ Hence
 
 ::: pf-proof
 
-Step <1>17 gives the eventual upper bound \(1+\varepsilon\), while step
-<1>18 gives infinitely many terms above \(1-\varepsilon\), for every
+Step [](#s1-17){.pf-ref} gives the eventual upper bound \(1+\varepsilon\), while step
+[](#s1-18){.pf-ref} gives infinitely many terms above \(1-\varepsilon\), for every
 \(\varepsilon>0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore
 \[
@@ -467,7 +467,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>16 and <1>19.
+Combine steps [](#s1-16){.pf-ref} and [](#s1-19){.pf-ref}.
 
 :::
 
@@ -475,7 +475,7 @@ Combine steps <1>16 and <1>19.
 
 ::: pf-qed
 
-Step <1>20 gives both requested limits.
+Step [](#s1-20){.pf-ref} gives both requested limits.
 
 :::
 

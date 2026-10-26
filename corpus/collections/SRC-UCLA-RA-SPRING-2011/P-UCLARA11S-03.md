@@ -22,7 +22,7 @@ Show that $\mu$ is supported at $\{0\}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -57,7 +57,7 @@ so subtracting from $f(0)=1$ gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The hypothesis implies
 \[
@@ -76,13 +76,13 @@ The assumed complex limit
 \[
 \frac{f(0)-f(t)}{t^2}\longrightarrow0
 \]
-implies convergence of its real part to $0$. Apply step <1>1.
+implies convergence of its real part to $0$. Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -103,7 +103,7 @@ Moreover,
 =
 \frac{x^2}{2}.
 \]
-Choose any sequence $t_n\to0$ with $t_n\ne0$. Fatou's lemma and step <1>2 give
+Choose any sequence $t_n\to0$ with $t_n\ne0$. Fatou's lemma and step [](#s1-2){.pf-ref} give
 \[
 \begin{aligned}
 \frac12
@@ -128,7 +128,7 @@ The integral of $x^2$ is nonnegative, so it must vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The measure $\mu$ is supported at $\{0\}$.
 
@@ -141,7 +141,7 @@ x^2\ge\delta^2
 \qquad
 \text{on }\{|x|\ge\delta\}.
 \]
-Hence step <1>3 gives
+Hence step [](#s1-3){.pf-ref} gives
 \[
 0
 =
@@ -177,7 +177,7 @@ Thus $\mu$ is supported at $0$.
 
 ::: pf-qed
 
-Step <1>4 is the desired conclusion.
+Step [](#s1-4){.pf-ref} is the desired conclusion.
 
 :::
 

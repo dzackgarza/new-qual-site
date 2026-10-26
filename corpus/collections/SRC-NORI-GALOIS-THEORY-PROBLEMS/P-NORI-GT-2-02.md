@@ -44,7 +44,7 @@ The finitely generated elementary abelian $2$-group $G$ is a finite-dimensional 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Then
 \[
@@ -60,7 +60,7 @@ An $s$-dimensional vector space over $\mathbb F_2$ has exactly $2^s$ elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -113,7 +113,7 @@ so its degree over $E_{j-1}$ is either $1$ or $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In fact
 \[
@@ -142,7 +142,7 @@ Thus $[a_{i_j}]$ would lie in the span of the preceding basis vectors, contradic
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently
 \[
@@ -153,13 +153,13 @@ for every $j=1,\ldots,s$.
 
 ::: pf-proof
 
-By step <1>5, the polynomial $T^2-a_{i_j}$ has no root in $E_{j-1}$. A quadratic polynomial over a field is reducible exactly when it has a root, so it is irreducible. Hence adjoining its root gives degree $2$.
+By step [](#s1-5){.pf-ref}, the polynomial $T^2-a_{i_j}$ has no root in $E_{j-1}$. A quadratic polynomial over a field is reducible exactly when it has a root, so it is irreducible. Hence adjoining its root gives degree $2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The tower law gives
 \[
@@ -169,20 +169,20 @@ The tower law gives
 
 ::: pf-proof
 
-By step <1>3, $E=E_s$. Hence
+By step [](#s1-3){.pf-ref}, $E=E_s$. Hence
 \[
 [E:F]
 =\prod_{j=1}^s[E_j:E_{j-1}]
 =\prod_{j=1}^s2
 =2^s
 \]
-by step <1>6.
+by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -192,7 +192,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>2 gives $|G|=2^s$, while step <1>7 gives $[E:F]=2^s$.
+Step [](#s1-2){.pf-ref} gives $|G|=2^s$, while step [](#s1-7){.pf-ref} gives $[E:F]=2^s$.
 
 :::
 
@@ -200,7 +200,7 @@ Step <1>2 gives $|G|=2^s$, while step <1>7 gives $[E:F]=2^s$.
 
 ::: pf-qed
 
-Step <1>8 is the required equality.
+Step [](#s1-8){.pf-ref} is the required equality.
 
 :::
 

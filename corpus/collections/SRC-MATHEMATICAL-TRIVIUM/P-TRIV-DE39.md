@@ -42,7 +42,7 @@ The transport part of the PDE is $f_x+af_y$, whose characteristic equations are 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along a characteristic $y=ax+\eta$, the function $F(x)=f(x,ax+\eta)$ satisfies
 \[
@@ -65,7 +65,7 @@ x-2(ax+\eta)=(1-2a)x-2\eta.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -76,7 +76,7 @@ where $C$ is an arbitrary function.
 
 ::: pf-proof
 
-Step <1>2 is separable:
+Step [](#s1-2){.pf-ref} is separable:
 \[
 \frac{F'}F=-((1-2a)x-2\eta).
 \]
@@ -89,9 +89,9 @@ Integrating in $x$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Substituting $\eta=y-ax$ into step <1>3 gives
+Substituting $\eta=y-ax$ into step [](#s1-3){.pf-ref} gives
 \[
 F(x)=C(y-ax)\exp\left(2xy-\left(a+\frac12\right)x^2\right).
 \]
@@ -99,7 +99,7 @@ F(x)=C(y-ax)\exp\left(2xy-\left(a+\frac12\right)x^2\right).
 
 ::: pf-proof
 
-The exponent in step <1>3 becomes
+The exponent in step [](#s1-3){.pf-ref} becomes
 \[
 -\frac{1-2a}{2}x^2+2x(y-ax)
 \;=
@@ -110,7 +110,7 @@ The exponent in step <1>3 becomes
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence, after simplification,
 \[
@@ -122,7 +122,7 @@ f(x,y)=\Phi(y-ax)
 
 ::: pf-proof
 
-Rename the arbitrary function $C$ in step <1>4 as $\Phi$. Every characteristic is labeled by $y-ax$, and $\Phi$ assigns its integration constant, so the family contains the general characteristic solution.
+Rename the arbitrary function $C$ in step [](#s1-4){.pf-ref} as $\Phi$. Every characteristic is labeled by $y-ax$, and $\Phi$ assigns its integration constant, so the family contains the general characteristic solution.
 
 :::
 
@@ -130,7 +130,7 @@ Rename the arbitrary function $C$ in step <1>4 as $\Phi$. Every characteristic i
 
 ::: pf-qed
 
-Step <1>5 gives the most general solution.
+Step [](#s1-5){.pf-ref} gives the most general solution.
 
 :::
 

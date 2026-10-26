@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume first that $R$ is local, with unique maximal ideal
 $$
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonunit belongs to some maximal ideal.
 
@@ -119,7 +119,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $R$ is local with maximal ideal $\mathfrak m$, then
 $$
@@ -129,7 +129,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 \mathfrak m\subseteq N.
 $$
@@ -137,7 +137,7 @@ Let
 $$
 a\in N.
 $$
-By step <1>2, $a$ lies in some maximal ideal.
+By step [](#s1-2){.pf-ref}, $a$ lies in some maximal ideal.
 Since $R$ is local, that maximal ideal must be
 $$
 \mathfrak m.
@@ -159,14 +159,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, if $R$ is local, then the set of nonunits is an ideal.
 
 
 ::: pf-proof
 
-By step <1>3, the set of nonunits is exactly the maximal ideal
+By step [](#s1-3){.pf-ref}, the set of nonunits is exactly the maximal ideal
 $$
 \mathfrak m,
 $$
@@ -176,7 +176,7 @@ which is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, assume the set $N$ of nonunits is an ideal.
 Then $N$ is proper.
@@ -202,7 +202,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every nonzero element of
 $$
@@ -248,7 +248,7 @@ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The quotient
 $$
@@ -259,9 +259,9 @@ is a field.
 
 ::: pf-proof
 
-By step <1>5, the quotient is nonzero.
+By step [](#s1-5){.pf-ref}, the quotient is nonzero.
 It is commutative with identity because $R$ is.
-Step <1>6 shows every nonzero element is invertible.
+Step [](#s1-6){.pf-ref} shows every nonzero element is invertible.
 Hence
 $$
 R/N
@@ -279,7 +279,7 @@ The ideal $N$ is maximal.
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 R/N
 $$
@@ -294,7 +294,7 @@ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every proper ideal of $R$ is contained in $N$.
 
@@ -329,7 +329,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The ideal $N$ is the unique maximal ideal of $R$.
 
@@ -341,11 +341,11 @@ $$
 M
 $$
 be any maximal ideal.
-It is proper, so step <1>9 gives
+It is proper, so step [](#s1-9){.pf-ref} gives
 $$
 M\subseteq N.
 $$
-But $N$ is proper by step <1>5.
+But $N$ is proper by step [](#s1-5){.pf-ref}.
 Maximality of $M$ therefore forces
 $$
 M=N.
@@ -356,7 +356,7 @@ Thus every maximal ideal equals $N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -371,7 +371,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 proves the forward implication, and step <1>10 proves the converse.
+Step [](#s1-4){.pf-ref} proves the forward implication, and step [](#s1-10){.pf-ref} proves the converse.
 
 :::
 
@@ -379,7 +379,7 @@ Step <1>4 proves the forward implication, and step <1>10 proves the converse.
 
 ::: pf-qed
 
-Step <1>11 is the required equivalence.
+Step [](#s1-11){.pf-ref} is the required equivalence.
 
 :::
 

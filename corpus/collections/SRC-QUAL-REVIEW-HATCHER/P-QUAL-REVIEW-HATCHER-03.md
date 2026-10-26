@@ -41,7 +41,7 @@ d_i>0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(i\),
 \[
@@ -83,9 +83,9 @@ This is the standard long exact cohomology sequence for a pair.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-By step <1>1 and exactness, there exists
+By step [](#s1-1){.pf-ref} and exactness, there exists
 \[
 \widetilde\alpha_i
 \in
@@ -105,7 +105,7 @@ H^{d_i}(X,A_i;R).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Relative cup product gives
 \[
@@ -135,13 +135,13 @@ and iterating this construction gives the displayed class.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
 A_1\cup\cdots\cup A_n=X,
 \]
-the group in step <1>4 is
+the group in step [](#s1-4){.pf-ref} is
 \[
 \boxed{
 H^{d_1+\cdots+d_n}(X,X;R)=0}.
@@ -156,7 +156,7 @@ Relative cohomology of a pair \((X,X)\) is zero in every degree.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -167,15 +167,15 @@ Therefore
 
 ::: pf-proof
 
-The class lies in the zero group by step <1>5.
+The class lies in the zero group by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Under the natural map from relative to absolute cohomology, the class in step <1>6 maps to
+Under the natural map from relative to absolute cohomology, the class in step [](#s1-6){.pf-ref} maps to
 \[
 \alpha_1\smile\cdots\smile\alpha_n.
 \]
@@ -187,13 +187,13 @@ Relative cup product is natural with respect to the forgetful maps
 \[
 H^*(X,A_i;R)\to H^*(X;R),
 \]
-and each \(\widetilde\alpha_i\) maps to \(\alpha_i\) by step <1>3.
+and each \(\widetilde\alpha_i\) maps to \(\alpha_i\) by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -204,7 +204,7 @@ Hence
 
 ::: pf-proof
 
-The image of the zero class from step <1>6 is zero, and by step <1>7 that image is the desired product.
+The image of the zero class from step [](#s1-6){.pf-ref} is zero, and by step [](#s1-7){.pf-ref} that image is the desired product.
 
 :::
 
@@ -233,7 +233,7 @@ This is the standard mod-\(2\) cohomology ring of real projective space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 In particular,
 \[
@@ -275,7 +275,7 @@ The class \(x\) has positive degree \(1\), so it satisfies the hypotheses of par
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (a) then gives
 \[
@@ -285,26 +285,26 @@ Part (a) then gives
 
 ::: pf-proof
 
-Step <1>8 says the cup product of \(n\) positive-degree classes vanishes under an \(n\)-set contractible cover.
+Step [](#s1-8){.pf-ref} says the cup product of \(n\) positive-degree classes vanishes under an \(n\)-set contractible cover.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
-This contradicts step <1>10.
+This contradicts step [](#s1-10){.pf-ref}.
 
 
 ::: pf-proof
 
-Step <1>10 says \(x^n\ne0\), while step <1>12 says \(x^n=0\).
+Step [](#s1-10){.pf-ref} says \(x^n\ne0\), while step [](#s1-12){.pf-ref} says \(x^n=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -316,7 +316,7 @@ Therefore
 
 ::: pf-proof
 
-The assumed cover led to the contradiction in step <1>13.
+The assumed cover led to the contradiction in step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -324,7 +324,7 @@ The assumed cover led to the contradiction in step <1>13.
 
 ::: pf-qed
 
-Step <1>8 proves part (a), and step <1>14 proves part (b).
+Step [](#s1-8){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
 
 :::
 

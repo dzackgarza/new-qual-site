@@ -38,7 +38,7 @@ a_0^2+\sum_{n=1}^\infty(a_n^2+b_n^2).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every sine coefficient is zero.
 
@@ -56,7 +56,7 @@ for every $n\geq1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq1$,
 \[
@@ -93,7 +93,7 @@ a_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The constant coefficient is
 \[
@@ -124,7 +124,7 @@ a_0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Fourier series is
 \[
@@ -138,7 +138,7 @@ f(x)\sim
 
 ::: pf-proof
 
-Substitute steps <1>1--<1>3 into
+Substitute steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} into
 \[
 \frac{a_0}{\sqrt2}
 +\sum_{n=1}^\infty(a_n\cos(nx)+b_n\sin(nx)).
@@ -152,7 +152,7 @@ $x=\pm1$ it converges to the midpoint value $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sum of the squares of all Fourier coefficients is
 \[
@@ -179,7 +179,7 @@ Since $|f(x)|=1$ everywhere,
 
 ::: pf-qed
 
-Step <1>4 gives the Fourier series and step <1>5 gives the requested
+Step [](#s1-4){.pf-ref} gives the Fourier series and step [](#s1-5){.pf-ref} gives the requested
 Parseval sum.
 
 :::

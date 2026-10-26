@@ -23,7 +23,7 @@ y(x)=e^x+\frac{y(x^2)}2,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The series
 $$
@@ -58,9 +58,9 @@ converges, the Weierstrass $M$-test gives uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The function $y$ defined in step <1>1 is continuous on $[0,1]$.
+The function $y$ defined in step [](#s1-1){.pf-ref} is continuous on $[0,1]$.
 
 
 ::: pf-proof
@@ -69,13 +69,13 @@ Each function
 $$
 x\longmapsto 2^{-k}e^{x^{2^k}}
 $$
-is continuous. By step <1>1, their series converges uniformly, so its sum is continuous.
+is continuous. By step [](#s1-1){.pf-ref}, their series converges uniformly, so its sum is continuous.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $y$ satisfies
 $$
@@ -86,7 +86,7 @@ for every $x\in[0,1]$.
 
 ::: pf-proof
 
-Using the uniformly convergent series from step <1>1,
+Using the uniformly convergent series from step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \frac12y(x^2)
@@ -112,9 +112,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Any continuous solution of the functional equation is equal to the function in step <1>1.
+Any continuous solution of the functional equation is equal to the function in step [](#s1-1){.pf-ref}.
 
 
 ::: pf-proof
@@ -157,7 +157,7 @@ Thus every continuous solution equals $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence there exists exactly one continuous solution, namely
 $$
@@ -169,7 +169,7 @@ $$
 
 ::: pf-proof
 
-Existence follows from steps <1>1--<1>3, and uniqueness follows from step <1>4.
+Existence follows from steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, and uniqueness follows from step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -177,7 +177,7 @@ Existence follows from steps <1>1--<1>3, and uniqueness follows from step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required existence-and-uniqueness statement.
+Step [](#s1-5){.pf-ref} is the required existence-and-uniqueness statement.
 
 :::
 

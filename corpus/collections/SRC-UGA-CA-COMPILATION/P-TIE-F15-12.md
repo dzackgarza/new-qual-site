@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The harmonic function $v$ vanishes on $\overline\Omega$.
 
@@ -61,14 +61,14 @@ on $\overline\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is constant on $\Omega$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 f(\Omega)\subset\RR.
 $$
@@ -78,14 +78,14 @@ If $f$ were nonconstant on the connected open set $\Omega$, the open mapping the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ is constant on all of $D$.
 
 
 ::: pf-proof
 
-Let $c$ be the constant value from step <1>2. Then the holomorphic function
+Let $c$ be the constant value from step [](#s1-2){.pf-ref}. Then the holomorphic function
 $$
 f-c
 $$
@@ -104,7 +104,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

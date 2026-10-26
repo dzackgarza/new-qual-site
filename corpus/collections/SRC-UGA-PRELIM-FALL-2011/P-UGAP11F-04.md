@@ -23,7 +23,7 @@ Give an $\varepsilon$-$\delta$ proof that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\ne3$,
 $$
@@ -51,7 +51,7 @@ and take absolute values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Given $\varepsilon>0$, set
 $$
@@ -102,7 +102,7 @@ This choice is positive for every $\varepsilon>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -123,11 +123,11 @@ Because
 $$
 |x-2|<\delta\le\frac12,
 $$
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 $$
 |3-x|>\frac12.
 $$
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 \left|
 \frac1{3-x}-1
@@ -146,7 +146,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 verifies the definition of the limit for the arbitrary $\varepsilon>0$ chosen in step <1>3.
+Step [](#s1-4){.pf-ref} verifies the definition of the limit for the arbitrary $\varepsilon>0$ chosen in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -165,7 +165,7 @@ Step <1>4 verifies the definition of the limit for the arbitrary $\varepsilon>0$
 
 ::: pf-qed
 
-Step <1>5 is the required $\varepsilon$-$\delta$ conclusion.
+Step [](#s1-5){.pf-ref} is the required $\varepsilon$-$\delta$ conclusion.
 
 :::
 

@@ -41,7 +41,7 @@ Let $\mathbf 1=(1,1,1,1)^T$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a), $A$ is invertible, symmetric, and diagonalizable over
 $\mathbb R$, and it is not a projection, reflection, or orthogonal matrix.
@@ -73,7 +73,7 @@ has norm $\sqrt3\neq1=\|e_1\|$, so $A$ is not orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In part (b), every listed assertion is true except
 $\operatorname{tr}A=0$.
@@ -101,7 +101,7 @@ one has $\det A=0$ but $\operatorname{tr}A=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In part (c), $f''=1$ matches graph D.
 
@@ -151,7 +151,7 @@ asymptote $f=1$, exactly as graph A does.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In part (c), $f'''=-f'$ matches graph B.
 
@@ -173,7 +173,7 @@ which is the qualitative shape of graph B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The complete answers are
 \[
@@ -198,8 +198,8 @@ f'''=-f'\mapsto B.
 
 ::: pf-proof
 
-Part (a) is established by step <1>1, part (b) by step <1>2, and the four
-matches in part (c) by steps <1>3 through <1>6.
+Part (a) is established by step [](#s1-1){.pf-ref}, part (b) by step [](#s1-2){.pf-ref}, and the four
+matches in part (c) by steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -207,7 +207,7 @@ matches in part (c) by steps <1>3 through <1>6.
 
 ::: pf-qed
 
-Step <1>7 records all requested selections and matches.
+Step [](#s1-7){.pf-ref} records all requested selections and matches.
 
 :::
 

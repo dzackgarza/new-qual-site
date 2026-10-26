@@ -35,7 +35,7 @@ as $t$ increases from $0$ to $\frac{\pi}{2}$. Evaluate the integral:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integrand is the exact differential of
 $$
@@ -62,7 +62,7 @@ which is exactly the integrand.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The line integral depends only on the endpoints and equals
 $$
@@ -73,7 +73,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By step <1>1 and the fundamental theorem for line integrals,
+By step [](#s1-1){.pf-ref} and the fundamental theorem for line integrals,
 $$
 \int_C d\Phi
 =\Phi(0,1)-\Phi(1,0).
@@ -97,7 +97,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested integral value and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested integral value and corresponding choice.
 
 :::
 

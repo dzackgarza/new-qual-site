@@ -21,7 +21,7 @@ State a theorem expressing the $m$th derivative of an analytic function as a con
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Cauchy's integral formula for derivatives.**
 
@@ -94,7 +94,7 @@ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 More generally, if $\gamma$ is a positively oriented simple closed
 contour in $D$ whose interior lies in $D$ and contains $z_0$, then
@@ -119,7 +119,7 @@ Apply the Cauchy integral formula on the region bounded by $\gamma$.
 
 ::: pf-qed
 
-Step <1>1 is the requested theorem, with step <1>2 recording the standard
+Step [](#s1-1){.pf-ref} is the requested theorem, with step [](#s1-2){.pf-ref} recording the standard
 contour-generalized form.
 
 :::

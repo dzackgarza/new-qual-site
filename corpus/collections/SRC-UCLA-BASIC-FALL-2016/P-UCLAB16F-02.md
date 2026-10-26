@@ -44,7 +44,7 @@ N=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -88,7 +88,7 @@ e^{2I}=e^2I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -106,7 +106,7 @@ C=e^2\|M\|_{\mathrm{op}}.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \|e^Ax\|
 =
@@ -158,7 +158,7 @@ Direct multiplication gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The eigenvalues of $M^TM$ are
 \[
@@ -191,7 +191,7 @@ Its roots are
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Euclidean operator norm of $M$ is
 \[
@@ -215,7 +215,7 @@ is the largest eigenvalue of the symmetric positive-semidefinite matrix
 \[
 M^TM.
 \]
-By step <1>4, that largest eigenvalue is
+By step [](#s1-4){.pf-ref}, that largest eigenvalue is
 \[
 \frac{3+\sqrt5}{2}.
 \]
@@ -237,7 +237,7 @@ the second expression follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the smallest possible constant is
 \[
@@ -251,7 +251,7 @@ e^2\frac{1+\sqrt5}{2}
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>5.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}.
 The operator norm is attained on a unit eigenvector of $M^TM$ for its largest eigenvalue, so no smaller constant can work.
 
 :::
@@ -260,7 +260,7 @@ The operator norm is attained on a unit eigenvector of $M^TM$ for its largest ei
 
 ::: pf-qed
 
-Step <1>6 is the required optimal constant.
+Step [](#s1-6){.pf-ref} is the required optimal constant.
 
 :::
 

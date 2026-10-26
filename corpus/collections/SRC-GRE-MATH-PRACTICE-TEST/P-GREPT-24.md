@@ -27,7 +27,7 @@ A six-sided die (whose faces are numbered $1$ through $6$, as usual) is known to
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $p$ is the probability of each odd face, then the probability of
 each even face is $2p$ and
@@ -49,7 +49,7 @@ $p=1/9$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Thus
 $$
@@ -62,13 +62,13 @@ $$
 ::: pf-proof
 
 The face $5$ is odd, so its probability is $p$. The face $6$ is even, so its
-probability is $2p$. Substitute the value of $p$ from step <1>1.
+probability is $2p$. Substitute the value of $p$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The information given does not determine the joint probability of
 rolling first a $5$ and then a $6$.
@@ -76,14 +76,14 @@ rolling first a $5$ and then a $6$.
 
 ::: pf-proof
 
-One joint model is to take the two throws to be independent. Then step <1>2
+One joint model is to take the two throws to be independent. Then step [](#s1-2){.pf-ref}
 gives
 $$
 P(5\text{ then }6)=\frac19\cdot\frac29=\frac{2}{81}.
 $$
 
 For a second joint model, let the second outcome always equal the first. Each
-throw separately then has exactly the face distribution from steps <1>1--<1>2,
+throw separately then has exactly the face distribution from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 but
 $$
 P(5\text{ then }6)=0.
@@ -95,7 +95,7 @@ requested two-throw probability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the answer from the stated hypotheses is
 $$
@@ -105,7 +105,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 exhibits two probability models satisfying all stated marginal
+Step [](#s1-3){.pf-ref} exhibits two probability models satisfying all stated marginal
 conditions but giving different answers.
 
 :::
@@ -114,7 +114,7 @@ conditions but giving different answers.
 
 ::: pf-qed
 
-Step <1>4 gives the literal answer to the question as stated.
+Step [](#s1-4){.pf-ref} gives the literal answer to the question as stated.
 
 :::
 
@@ -122,6 +122,6 @@ Step <1>4 gives the literal answer to the question as stated.
 
 ::: {.remark}
 The source selects (A), implicitly treating the two throws as independent.
-Under that additional hypothesis, steps <1>1--<1>2 give
+Under that additional hypothesis, steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $P(5\text{ then }6)=(1/9)(2/9)=2/81$.
 :::

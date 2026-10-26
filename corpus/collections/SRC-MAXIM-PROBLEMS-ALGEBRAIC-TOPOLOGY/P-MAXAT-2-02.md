@@ -34,7 +34,7 @@ there is a CW structure with exactly one cell in every dimension $0,1,\ldots,2n-
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sphere $S^{2n-1}$ admits a $C_p$-equivariant CW decomposition with $p$ cells in each dimension $0,1,\ldots,2n-1$, on which $C_p$ acts transitively in each dimension.
 
@@ -51,7 +51,7 @@ where $S^{2k-1}$ is given by $z_{k+1}=\cdots=z_n=0$. On each successive coordina
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Passing to the quotient gives one cell
 \[
@@ -65,13 +65,13 @@ k=0,1,\ldots,2n-1.
 
 ::: pf-proof
 
-By step <1>1, the $p$ cells of each fixed dimension form a single $C_p$-orbit. The quotient therefore identifies them to one cell, and equivariance of the attaching maps makes the quotient a CW complex.
+By step [](#s1-1){.pf-ref}, the $p$ cells of each fixed dimension form a single $C_p$-orbit. The quotient therefore identifies them to one cell, and equivariance of the attaching maps makes the quotient a CW complex.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For the ordinary cellular chain complex with integral coefficients, the boundary maps alternate as
 \[
@@ -106,7 +106,7 @@ where each $a_k$ is a unit modulo $p$ determined by the lens-space weights. Pass
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In particular, the CW structure recovers the standard homology groups
 \[
@@ -122,13 +122,13 @@ H_k(L^{2n-1};\mathbb Z)
 
 ::: pf-proof
 
-Compute kernels modulo images in the cellular chain complex of step <1>3. At an interior odd degree, the outgoing differential is zero and the incoming differential is multiplication by $p$, giving $\mathbb Z/p$. At an interior even degree, multiplication by $p$ is injective, giving zero homology. The bottom and top groups are $\mathbb Z$ because the space is connected and the top differential is zero with no incoming differential.
+Compute kernels modulo images in the cellular chain complex of step [](#s1-3){.pf-ref}. At an interior odd degree, the outgoing differential is zero and the incoming differential is multiplication by $p$, giving $\mathbb Z/p$. At an interior even degree, multiplication by $p$ is injective, giving zero homology. The bottom and top groups are $\mathbb Z$ because the space is connected and the top differential is zero with no incoming differential.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For the classical three-dimensional lens space $L(p,q)$, this specializes to one cell in each dimension $0,1,2,3$ with cellular complex
 \[
@@ -140,7 +140,7 @@ For the classical three-dimensional lens space $L(p,q)$, this specializes to one
 
 ::: pf-proof
 
-Set $n=2$ in steps <1>2--<1>3. The parameter $q$ affects the equivariant attaching map, and hence finer invariants such as the homotopy type, but after passing to ordinary integral cellular chains only the factor $p$ remains.
+Set $n=2$ in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}. The parameter $q$ affects the equivariant attaching map, and hence finer invariants such as the homotopy type, but after passing to ordinary integral cellular chains only the factor $p$ remains.
 
 :::
 
@@ -148,7 +148,7 @@ Set $n=2$ in steps <1>2--<1>3. The parameter $q$ affects the equivariant attachi
 
 ::: pf-qed
 
-Steps <1>1--<1>3 describe the cell structure and attaching differentials, while steps <1>4--<1>5 record their standard consequences and the classical $3$-dimensional case.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} describe the cell structure and attaching differentials, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} record their standard consequences and the classical $3$-dimensional case.
 
 :::
 

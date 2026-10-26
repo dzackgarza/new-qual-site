@@ -22,7 +22,7 @@ Define what it means for $g$ to be a branch of $f^{-1}$ on $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A **branch of $f^{-1}$ on $D$** is an analytic function
 $$
@@ -42,7 +42,7 @@ This is the definition: $g$ chooses, analytically on the domain $D$, one preimag
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Such a branch is automatically injective, and
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 is the requested definition; step <1>2 records its immediate consequences.
+Step [](#s1-1){.pf-ref} is the requested definition; step [](#s1-2){.pf-ref} records its immediate consequences.
 
 :::
 

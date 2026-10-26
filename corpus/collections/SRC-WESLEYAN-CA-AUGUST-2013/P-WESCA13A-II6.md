@@ -26,7 +26,7 @@ Show that $g$ is well-defined and analytic on $B(0,r^2)$, and express $g^{(n)}(0
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $f$ is analytic on
 \[
@@ -59,7 +59,7 @@ a_m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Because $f$ is even,
 \[
@@ -99,7 +99,7 @@ a_m=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -112,13 +112,13 @@ a_{2n}w^{2n}.
 
 ::: pf-proof
 
-Delete the odd terms using step <1>2.
+Delete the odd terms using step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -153,7 +153,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The value
 \[
@@ -192,7 +192,7 @@ z\in B(0,r^2).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For
 \[
@@ -219,7 +219,7 @@ with
 \[
 w^2=z.
 \]
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 \begin{aligned}
 g(z)
@@ -243,7 +243,7 @@ a_{2n}z^n.
 
 ::: pf-step
 
-The series in step <1>6 converges for every
+The series in step [](#s1-6){.pf-ref} converges for every
 \[
 |z|<r^2.
 \]
@@ -267,7 +267,7 @@ Then
 \[
 |w|<r
 \]
-by step <1>4.
+by step [](#s1-4){.pf-ref}.
 The series
 \[
 \sum_{n=0}^{\infty}
@@ -285,7 +285,7 @@ converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $g$ is analytic on
 \[
@@ -295,7 +295,7 @@ B(0,r^2).
 
 ::: pf-proof
 
-Step <1>6 represents $g$ by a convergent power series throughout
+Step [](#s1-6){.pf-ref} represents $g$ by a convergent power series throughout
 \[
 B(0,r^2).
 \]
@@ -305,7 +305,7 @@ Thus $g$ is holomorphic there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The Taylor coefficient of $z^n$ in $g$ is
 \[
@@ -317,14 +317,14 @@ a_{2n}
 
 ::: pf-proof
 
-The first equality follows from step <1>6.
-The second follows from the Taylor coefficient formula in step <1>1.
+The first equality follows from step [](#s1-6){.pf-ref}.
+The second follows from the Taylor coefficient formula in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently
 \[
@@ -360,7 +360,7 @@ a_{2n}
 =
 \frac{f^{(2n)}(0)}{(2n)!}
 \]
-by step <1>9.
+by step [](#s1-9){.pf-ref}.
 Substitute.
 
 :::
@@ -369,8 +369,8 @@ Substitute.
 
 ::: pf-qed
 
-Step <1>5 proves well-definedness, step <1>8 proves analyticity, and step
-<1>10 gives the requested derivative formula.
+Step [](#s1-5){.pf-ref} proves well-definedness, step [](#s1-8){.pf-ref} proves analyticity, and step
+[](#s1-10){.pf-ref} gives the requested derivative formula.
 
 :::
 

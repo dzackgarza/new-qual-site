@@ -23,7 +23,7 @@ Let $K$ be the splitting field of $f$ over $\mathbb Q$ and $G=\operatorname{Gal}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subgroup $G\leq S_5$ contains a $5$-cycle.
 
@@ -36,7 +36,7 @@ Because $f$ is irreducible in characteristic zero, its five roots are distinct a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The group $G$ contains a transposition.
 
@@ -49,7 +49,7 @@ Exactly three roots of $f$ are real; the remaining two form a nonreal conjugate 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A subgroup of $S_5$ containing a $5$-cycle and a transposition is $S_5$.
 
@@ -62,7 +62,7 @@ Label the roots by $\mathbb Z/5\mathbb Z$ so that the $5$-cycle is $\sigma:i\map
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Galois group is
 \[
@@ -72,7 +72,7 @@ The Galois group is
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 supply a $5$-cycle and a transposition in $G$. By step <1>3, $G=S_5$ in its faithful root action.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} supply a $5$-cycle and a transposition in $G$. By step [](#s1-3){.pf-ref}, $G=S_5$ in its faithful root action.
 
 :::
 
@@ -80,7 +80,7 @@ Steps <1>1 and <1>2 supply a $5$-cycle and a transposition in $G$. By step <1>3,
 
 ::: pf-qed
 
-Step <1>4 identifies the requested Galois group.
+Step [](#s1-4){.pf-ref} identifies the requested Galois group.
 
 :::
 

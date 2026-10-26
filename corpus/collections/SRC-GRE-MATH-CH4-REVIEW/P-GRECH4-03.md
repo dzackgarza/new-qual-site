@@ -28,7 +28,7 @@ Every curve in a certain family, $y = f(x, c)$, has the following property: the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every curve in the family satisfies
 $$
@@ -49,7 +49,7 @@ while the rectangle with opposite vertices $(0,0)$ and $(x,y)$ has area $xy=x f(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Writing $y=f(x,c)$, every such curve satisfies
 $$
@@ -60,7 +60,7 @@ for $x>0$.
 
 ::: pf-proof
 
-Differentiate the identity in step <1>1 with respect to $x$. The fundamental theorem of calculus gives
+Differentiate the identity in step [](#s1-1){.pf-ref} with respect to $x$. The fundamental theorem of calculus gives
 $$
 y
 =\frac13(xy)'
@@ -72,7 +72,7 @@ Multiplying by $3$ and rearranging yields $xy'=2y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The family is
 $$
@@ -83,7 +83,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-For a nonzero solution of the equation in step <1>2,
+For a nonzero solution of the equation in step [](#s1-2){.pf-ref},
 $$
 \frac{y'}{y}=\frac2x,
 $$
@@ -99,7 +99,7 @@ and hence $y=cx^2$ for a constant $c$. The zero solution is obtained by taking $
 
 ::: pf-qed
 
-Step <1>3 gives the requested family and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested family and corresponding choice.
 
 :::
 

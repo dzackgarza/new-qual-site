@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If invertible $n\times n$ matrices $X,Y$ satisfy $YX=aXY$, then $a^n=1$.
 
@@ -60,7 +60,7 @@ Since $X$ and $Y$ are invertible, $\det(X)\det(Y)\neq0$. Cancelling this product
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $a^n=1$. On the standard basis $e_0,\ldots,e_{n-1}$ of $\mathbb C^n$, with the convention $e_n=e_0$, define
 $$
@@ -84,9 +84,9 @@ of $Y$ is nonzero. Thus $Y$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The matrices from step <1>2 satisfy $YX=aXY$.
+The matrices from step [](#s1-2){.pf-ref} satisfy $YX=aXY$.
 
 
 ::: pf-proof
@@ -120,7 +120,7 @@ Thus $YX$ and $aXY$ agree on a basis and hence are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -134,7 +134,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 proves the reverse implication, and steps <1>2--<1>3 prove the forward implication.
+Step [](#s1-1){.pf-ref} proves the reverse implication, and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove the forward implication.
 
 :::
 
@@ -142,7 +142,7 @@ Step <1>1 proves the reverse implication, and steps <1>2--<1>3 prove the forward
 
 ::: pf-qed
 
-Step <1>4 is exactly the asserted equivalence.
+Step [](#s1-4){.pf-ref} is exactly the asserted equivalence.
 
 :::
 

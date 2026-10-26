@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral over $\gamma_r$ satisfies
 $$
@@ -66,7 +66,7 @@ which is the asserted identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -116,7 +116,7 @@ This proves the asserted limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \int_{\gamma_r}f(z)\,dz-iA\beta_0
 =
@@ -140,7 +140,7 @@ i\int_0^{\beta_0}
 re^{it}f(a+re^{it})-A
 \right)dt.
 $$
-The right-hand side tends to $0$ by step <1>2.
+The right-hand side tends to $0$ by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -148,7 +148,7 @@ The right-hand side tends to $0$ by step <1>2.
 
 ::: pf-qed
 
-Step <1>3 is the required limit.
+Step [](#s1-3){.pf-ref} is the required limit.
 
 :::
 

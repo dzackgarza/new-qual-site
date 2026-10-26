@@ -45,7 +45,7 @@ denote the positively oriented unit tangent vector field along
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On each connected component \(C\subset\partial F\), a nowhere-zero
 vector field \(v\) that is everywhere parallel to \(C\) is homotopic through
@@ -72,7 +72,7 @@ angle \(\pi\) in the oriented plane \(TF|_C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On each connected component \(C\subset\partial F\), a nowhere-zero
 vector field \(v\) that is everywhere perpendicular to \(C\) is likewise
@@ -102,7 +102,7 @@ nowhere-zero boundary sections to \(T\).
 
 ::: pf-proof
 
-Apply steps <1>1 and <1>2 independently on each connected component of
+Apply steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} independently on each connected component of
 \(\partial F\). The boundary components are disjoint, so the homotopies
 combine.
 
@@ -110,7 +110,7 @@ combine.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The relative Euler class is unchanged under a homotopy of the
 nowhere-zero boundary section. Hence
@@ -156,7 +156,7 @@ be transverse to the zero section while fixing the boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 We may further arrange that on a collar
 \[
@@ -178,7 +178,7 @@ interior.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The relative Euler number is the signed sum of the isolated zeros of
 \(w\):
@@ -266,7 +266,7 @@ using the reflected copy of \(w\).
 
 ::: pf-proof
 
-On the collar, step <1>6 says \(w=T\) and is independent of the normal
+On the collar, step [](#s1-6){.pf-ref} says \(w=T\) and is independent of the normal
 coordinate. Since \(\rho\) fixes the tangential vector \(T\), the two
 definitions agree smoothly along the seam. Thus they glue to a smooth vector
 field \(W\) on \(DF\).
@@ -275,7 +275,7 @@ field \(W\) on \(DF\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The field \(W\) has no zeros on the seam.
 
@@ -292,7 +292,7 @@ and \(T\) is a unit tangent vector field, hence nowhere zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Every zero \(x\) of \(w\) in \(F_+\) has a reflected zero
 \[
@@ -304,13 +304,13 @@ in \(F_-\), and there are no other zeros of \(W\).
 ::: pf-proof
 
 On each copy away from the seam, \(W\) is exactly \(w\) or its reflected
-copy. Step <1>11 rules out seam zeros.
+copy. Step [](#s1-11){.pf-ref} rules out seam zeros.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The two corresponding zeros have the same index:
 \[
@@ -333,7 +333,7 @@ of the normalized vector field around the reflected zero is the same.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Consequently,
 \[
@@ -347,15 +347,15 @@ Consequently,
 
 ::: pf-proof
 
-By steps <1>12--<1>13, the zeros of \(W\) occur in reflected pairs with equal
-indices. Summing the two copies of the index sum from step <1>7 gives the
+By steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref}, the zeros of \(W\) occur in reflected pairs with equal
+indices. Summing the two copies of the index sum from step [](#s1-7){.pf-ref} gives the
 formula.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 By the Poincaré--Hopf theorem for the closed surface \(DF\),
 \[
@@ -376,7 +376,7 @@ Apply the usual boundaryless Poincaré--Hopf theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The Euler characteristic of the double is
 \[
@@ -408,9 +408,9 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
-Combining steps <1>14--<1>16,
+Combining steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref},
 \[
 2e(TF,T)
 =
@@ -420,15 +420,15 @@ Combining steps <1>14--<1>16,
 
 ::: pf-proof
 
-Step <1>14 identifies the index sum with \(2e(TF,T)\), step <1>15 identifies
-the same sum with \(\chi(DF)\), and step <1>16 identifies
+Step [](#s1-14){.pf-ref} identifies the index sum with \(2e(TF,T)\), step [](#s1-15){.pf-ref} identifies
+the same sum with \(\chi(DF)\), and step [](#s1-16){.pf-ref} identifies
 \(\chi(DF)\) with \(2\chi(F)\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -439,13 +439,13 @@ e(TF,T)=\chi(F)}.
 
 ::: pf-proof
 
-Divide the equality in step <1>17 by \(2\).
+Divide the equality in step [](#s1-17){.pf-ref} by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Finally,
 \[
@@ -456,11 +456,11 @@ e(TF,v)=\chi(F)}.
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 \[
 e(TF,v)=e(TF,T),
 \]
-and step <1>18 computes the latter as \(\chi(F)\).
+and step [](#s1-18){.pf-ref} computes the latter as \(\chi(F)\).
 
 :::
 
@@ -468,7 +468,7 @@ and step <1>18 computes the latter as \(\chi(F)\).
 
 ::: pf-qed
 
-Step <1>19 is the Poincaré--Hopf formula requested in the exercise.
+Step [](#s1-19){.pf-ref} is the Poincaré--Hopf formula requested in the exercise.
 
 :::
 

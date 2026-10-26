@@ -37,7 +37,7 @@ y^4+ty^2+t^2y.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $F_t$ attains a global minimum on $\mathbb R$.
 
@@ -71,7 +71,7 @@ Since $F_t$ is continuous, it attains a minimum there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -102,7 +102,7 @@ y=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose
 \[
@@ -145,7 +145,7 @@ then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -156,19 +156,19 @@ then $F_t$ is strictly convex and therefore has a unique global minimizer.
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 F_t''(y)>0
 \]
 everywhere, which implies strict convexity.
 A strictly convex function can have at most one global minimizer.
-Existence was proved in step <1>1.
+Existence was proved in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 It remains to consider
 \[
@@ -224,7 +224,7 @@ Subtract.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -242,7 +242,7 @@ F_t(-y)<F_t(y).
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 F_t(-y)-F_t(y)
 =
@@ -260,7 +260,7 @@ the right-hand side is negative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore no positive number can be a global minimizer when
 \[
@@ -274,7 +274,7 @@ If
 \[
 y>0,
 \]
-step <1>6 exhibits the point
+step [](#s1-6){.pf-ref} exhibits the point
 \[
 -y
 \]
@@ -284,7 +284,7 @@ with strictly smaller function value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Also,
 \[
@@ -345,7 +345,7 @@ y^4-sy^2+s^2y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The derivative of $p$ is
 \[
@@ -413,7 +413,7 @@ y_-<0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The equation
 \[
@@ -432,7 +432,7 @@ the cubic term dominates and
 \[
 p(y)\to-\infty.
 \]
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 p(y_-)>0.
 \]
@@ -471,7 +471,7 @@ Thus there is exactly one negative root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Every global minimizer for
 \[
@@ -485,20 +485,20 @@ F_t'(y)=0.
 
 ::: pf-proof
 
-By step <1>1, a global minimizer exists.
-By steps <1>7--<1>8, every global minimizer is strictly negative.
+By step [](#s1-1){.pf-ref}, a global minimizer exists.
+By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}, every global minimizer is strictly negative.
 Since $F_t$ is differentiable on all of $\mathbb R$, every global minimizer is a critical point:
 \[
 F_t'(y)=0.
 \]
-Step <1>11 shows that there is exactly one negative critical point.
+Step [](#s1-11){.pf-ref} shows that there is exactly one negative critical point.
 Thus every global minimizer must equal it.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence for every
 \[
@@ -513,15 +513,15 @@ has exactly one global minimizer.
 
 ::: pf-proof
 
-Step <1>2 handles
+Step [](#s1-2){.pf-ref} handles
 \[
 t=0.
 \]
-Step <1>4 handles
+Step [](#s1-4){.pf-ref} handles
 \[
 t>0.
 \]
-Step <1>12 handles
+Step [](#s1-12){.pf-ref} handles
 \[
 t<0.
 \]
@@ -533,7 +533,7 @@ These cases exhaust all real $t$.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

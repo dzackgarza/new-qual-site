@@ -33,7 +33,7 @@ III. $\neg A\to\neg B$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hypotheses imply
 $$
@@ -53,14 +53,14 @@ The contrapositive of $\neg A\to\neg C$ is $C\to A$. The contrapositive of $\neg
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II must be true.
 
 
 ::: pf-proof
 
-One hypothesis is $A\to C$, while step <1>1 gives $C\to A$. Thus
+One hypothesis is $A\to C$, while step [](#s1-1){.pf-ref} gives $C\to A$. Thus
 $$
 A\leftrightarrow C,
 $$
@@ -70,14 +70,14 @@ so $A$ and $C$ are logically equivalent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III must be true.
 
 
 ::: pf-proof
 
-Using the hypothesis $B\to D$ and step <1>1 gives the implication chain
+Using the hypothesis $B\to D$ and step [](#s1-1){.pf-ref} gives the implication chain
 $$
 B\to D\to C\to A.
 $$
@@ -91,7 +91,7 @@ which is statement III.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement I need not be true.
 
@@ -110,7 +110,7 @@ Then all four hypotheses hold: $A\to C$ is true; $B\to D$ is true because $B$ is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the statements that must be true are
 $$
@@ -121,7 +121,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 prove II and III, while step <1>4 gives a counterexample to I.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove II and III, while step [](#s1-4){.pf-ref} gives a counterexample to I.
 
 :::
 
@@ -129,7 +129,7 @@ Steps <1>2 and <1>3 prove II and III, while step <1>4 gives a counterexample to 
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

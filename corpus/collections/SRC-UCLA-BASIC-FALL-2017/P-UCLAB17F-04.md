@@ -26,7 +26,7 @@ Let $V$ be a real vector space with basis $\{e_i\}_{i\in I}$. Define $e_i^\#\in 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The family
 \[
@@ -67,7 +67,7 @@ Thus the family is linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $V$ is finite-dimensional, then
 \[
@@ -84,14 +84,14 @@ If
 \]
 then the basis index set $I$ has exactly $n$ elements.
 The dual space also has dimension $n$.
-By step <1>1, the $n$ coordinate functionals are linearly independent in $V^*$.
+By step [](#s1-1){.pf-ref}, the $n$ coordinate functionals are linearly independent in $V^*$.
 Therefore they form a basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $I$ is infinite.
 Define
@@ -129,7 +129,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $j\in I$,
 \[
@@ -146,9 +146,9 @@ Thus the sum of its coordinates is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The functional $\varphi$ from step <1>3 is not in the span of
+The functional $\varphi$ from step [](#s1-3){.pf-ref} is not in the span of
 \[
 \{e_i^\#\}_{i\in I}.
 \]
@@ -174,7 +174,7 @@ Then
 \sum_{i\in F}c_i e_i^\#(e_j)
 =0.
 \]
-But step <1>4 gives
+But step [](#s1-4){.pf-ref} gives
 \[
 \varphi(e_j)=1.
 \]
@@ -188,7 +188,7 @@ So $\varphi$ is not in the span.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $V$ is infinite-dimensional, the family
 \[
@@ -200,13 +200,13 @@ does not span $V^*$.
 ::: pf-proof
 
 An infinite-dimensional vector space has an infinite Hamel basis, so the index set $I$ is infinite.
-Then step <1>5 supplies a functional in $V^*$ outside the span of the coordinate functionals.
+Then step [](#s1-5){.pf-ref} supplies a functional in $V^*$ outside the span of the coordinate functionals.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -221,7 +221,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>2 proves sufficiency, and step <1>6 proves necessity.
+Step [](#s1-2){.pf-ref} proves sufficiency, and step [](#s1-6){.pf-ref} proves necessity.
 
 :::
 
@@ -229,7 +229,7 @@ Step <1>2 proves sufficiency, and step <1>6 proves necessity.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>7 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
 
 :::
 

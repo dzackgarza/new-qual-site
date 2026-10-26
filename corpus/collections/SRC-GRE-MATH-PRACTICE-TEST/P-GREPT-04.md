@@ -27,7 +27,7 @@ Let $A = \{\varnothing, a\}$, where $\varnothing$ is the empty set. If $B$ is th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $a=\{\varnothing\}$, then
 $$
@@ -49,7 +49,7 @@ Therefore $A\cup B=B$ and $|A\cup B|=4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a=\{\{\varnothing\}\}$, then
 $$
@@ -73,7 +73,7 @@ new element $a$. Thus $|A\cup B|=5$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the requested cardinality is
 $$
@@ -83,7 +83,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives cardinality $4$, while step <1>2 gives cardinality $5$, and
+Step [](#s1-1){.pf-ref} gives cardinality $4$, while step [](#s1-2){.pf-ref} gives cardinality $5$, and
 both choices of $a$ satisfy the printed statement. Thus no single listed
 choice follows from the stated hypotheses.
 
@@ -93,7 +93,7 @@ choice follows from the stated hypotheses.
 
 ::: pf-qed
 
-Step <1>3 proves that the problem is underdetermined as written.
+Step [](#s1-3){.pf-ref} proves that the problem is underdetermined as written.
 
 :::
 

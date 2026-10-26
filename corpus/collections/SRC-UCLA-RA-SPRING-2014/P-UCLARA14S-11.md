@@ -66,7 +66,7 @@ exactly when $p<1$. Thus the given range of $p$ guarantees convergence at both e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With
 \[
@@ -110,7 +110,7 @@ The denominator becomes $1+t$, giving the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0<a<1$,
 \[
@@ -160,7 +160,7 @@ and Euler's reflection formula gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -176,7 +176,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>2 and <1>3,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 I_p
 =
@@ -202,7 +202,7 @@ Substitution gives the boxed value.
 
 ::: pf-qed
 
-Step <1>4 gives the value of the convergent improper integral for every $p\in(-1,1)$.
+Step [](#s1-4){.pf-ref} gives the value of the convergent improper integral for every $p\in(-1,1)$.
 
 :::
 

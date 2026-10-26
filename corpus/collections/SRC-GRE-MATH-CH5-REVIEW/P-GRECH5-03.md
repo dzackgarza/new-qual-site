@@ -32,7 +32,7 @@ III. $A$ is invertible and $A = A^{-1} \Rightarrow A = I$ or $A = -I$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I is false.
 
@@ -61,14 +61,14 @@ Thus $A^2=0$ does not imply $A=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II is false.
 
 
 ::: pf-proof
 
-Use the matrix $A$ from step <1>1 and set
+Use the matrix $A$ from step [](#s1-1){.pf-ref} and set
 $$
 B=I,
 \qquad
@@ -97,7 +97,7 @@ Hence $AB=AC$ need not imply $B=C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III is false.
 
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 None of statements I--III is true, so the answer is
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>3 provide explicit counterexamples to I, II, and III respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} provide explicit counterexamples to I, II, and III respectively.
 
 :::
 
@@ -145,7 +145,7 @@ Steps <1>1--<1>3 provide explicit counterexamples to I, II, and III respectively
 
 ::: pf-qed
 
-Step <1>4 identifies the correct choice.
+Step [](#s1-4){.pf-ref} identifies the correct choice.
 
 :::
 

@@ -26,7 +26,7 @@ Show also that the conclusion can fail when $B$ is unbounded.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $B=\varnothing$, then
 $$
@@ -42,7 +42,7 @@ In this case $f(B)=\varnothing$, so its boundary is empty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $B\neq\varnothing$ and $f$ is constant, then
 $$
@@ -62,7 +62,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose that $B\neq\varnothing$ and $f$ is nonconstant. Then $f(B)$ is
 open.
@@ -78,9 +78,9 @@ $f(B)$ is open in $\CC$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Under the hypotheses of step <1>3, every
+Under the hypotheses of step [](#s1-3){.pf-ref}, every
 $w\in\partial(f(B))$ belongs to $f(\partial B)$.
 
 
@@ -97,7 +97,7 @@ $\overline B\subseteq D$ and $f$ is continuous on $D$,
 $$
 w=\lim_{n\to\infty}f(z_n)=f(z).
 $$
-If $z\in B$, then $w=f(z)\in f(B)$. This is impossible because step <1>3 shows
+If $z\in B$, then $w=f(z)\in f(B)$. This is impossible because step [](#s1-3){.pf-ref} shows
 that $f(B)$ is open, hence disjoint from its boundary. Therefore
 $z\in\overline B\setminus B=\partial B$, and so $w=f(z)\in f(\partial B)$.
 
@@ -105,7 +105,7 @@ $z\in\overline B\setminus B=\partial B$, and so $w=f(z)\in f(\partial B)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For bounded $B$,
 $$
@@ -115,14 +115,14 @@ $$
 
 ::: pf-proof
 
-The empty case is step <1>1, the constant case is step <1>2, and the remaining
-case is step <1>4.
+The empty case is step [](#s1-1){.pf-ref}, the constant case is step [](#s1-2){.pf-ref}, and the remaining
+case is step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The inclusion can fail for unbounded $B$.
 
@@ -169,7 +169,7 @@ Thus $0\notin f(\partial B)$, proving that the inclusion fails.
 
 ::: pf-qed
 
-Step <1>5 proves the bounded case, and step <1>6 gives the requested unbounded
+Step [](#s1-5){.pf-ref} proves the bounded case, and step [](#s1-6){.pf-ref} gives the requested unbounded
 counterexample.
 
 :::

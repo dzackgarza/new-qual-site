@@ -26,7 +26,7 @@ Calculate its rang and signature.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Complete the square in $x_1$:
 $$
@@ -50,7 +50,7 @@ Adding the remaining $x_2^2$ gives the original three terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -64,13 +64,13 @@ $$
 
 ::: pf-proof
 
-Substitute the identity from step <1>1 into the original quadratic form.
+Substitute the identity from step [](#s1-1){.pf-ref} into the original quadratic form.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Complete the square in the remaining two variables:
 $$
@@ -94,7 +94,7 @@ then add $x_3^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -112,13 +112,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2--<1>3.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define new coordinates
 $$
@@ -136,13 +136,13 @@ $$
 
 ::: pf-proof
 
-Substitute the definitions of the $u_i$ into step <1>4.
+Substitute the definitions of the $u_i$ into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The rank is
 $$
@@ -152,13 +152,13 @@ $$
 
 ::: pf-proof
 
-The canonical form in step <1>5 has three nonzero square terms.
+The canonical form in step [](#s1-5){.pf-ref} has three nonzero square terms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The inertia is
 $$
@@ -179,20 +179,20 @@ negative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>5--<1>7 give the canonical form, rank, and signature.
+Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} give the canonical form, rank, and signature.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The coordinate change from old coordinates $x$ to canonical coordinates
 $u$ is
@@ -214,13 +214,13 @@ $$
 
 ::: pf-proof
 
-This matrix encodes exactly the three equations in step <1>5.
+This matrix encodes exactly the three equations in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Equivalently,
 $$
@@ -242,7 +242,7 @@ $$
 
 ::: pf-proof
 
-From step <1>5,
+From step [](#s1-5){.pf-ref},
 $$
 x_3=u_3,
 $$
@@ -297,15 +297,15 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Step <1>10 gives the transition matrix from canonical coordinates to the
-original basis, while step <1>9 gives the inverse coordinate transformation.
+Step [](#s1-10){.pf-ref} gives the transition matrix from canonical coordinates to the
+original basis, while step [](#s1-9){.pf-ref} gives the inverse coordinate transformation.
 
 :::
 
@@ -313,7 +313,7 @@ original basis, while step <1>9 gives the inverse coordinate transformation.
 
 ::: pf-qed
 
-Steps <1>8 and <1>12 establish parts (a) and (b).
+Steps [](#s1-8){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b).
 
 :::
 

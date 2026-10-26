@@ -40,7 +40,7 @@ Take the Smith--Volterra--Cantor set, obtained by successively removing middle o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -66,9 +66,9 @@ Hence $F(y)>F(x)$ for every $x<y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The function $F$ from step <1>2 does not satisfy $F'(x)>0$ almost everywhere.
+The function $F$ from step [](#s1-2){.pf-ref} does not satisfy $F'(x)>0$ almost everywhere.
 
 
 ::: pf-proof
@@ -83,7 +83,7 @@ for almost every $x\in[0,1]$. Since $K$ has positive measure and $\mathbf1_A=0$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $C:[0,1]\to[0,1]$ be the Cantor function and define
 $$
@@ -108,7 +108,7 @@ Hence $G'(x)=1>0$ almost everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $G$ is not strictly increasing.
 
@@ -129,7 +129,7 @@ Since $0<1$ but $G(0)>G(1)$, the function $G$ is not increasing, and in particul
 
 ::: pf-qed
 
-Steps <1>2--<1>3 give a counterexample to part (a), and steps <1>4--<1>5 give a counterexample to part (b).
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give a counterexample to part (a), and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give a counterexample to part (b).
 
 :::
 

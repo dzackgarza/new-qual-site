@@ -49,7 +49,7 @@ This is the negation of the desired conclusion, because $f$ is assumed nonnegati
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exist
 \[
@@ -123,7 +123,7 @@ the intersection contains an interval of positive length.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -139,7 +139,7 @@ By nonnegativity,
 \ge
 \int_I f(x)\,dx.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 f(x)\ge\eta>0
 \]
@@ -158,7 +158,7 @@ where $|I|$ denotes the positive length of the interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -168,7 +168,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 contradicts the hypothesis
+Step [](#s1-4){.pf-ref} contradicts the hypothesis
 \[
 \int_a^b f(x)\,dx=0.
 \]
@@ -188,7 +188,7 @@ for every $x\in[a,b]$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

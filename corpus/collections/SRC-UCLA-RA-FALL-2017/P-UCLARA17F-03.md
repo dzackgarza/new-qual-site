@@ -55,7 +55,7 @@ Since \(F_n\) converges uniformly, it is uniformly Cauchy.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choose \(N_0\) such that for every \(n\ge N_0\),
 \[
@@ -107,7 +107,7 @@ F_{N_0}(x)\to1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(n\ge N_0\),
 \[
@@ -118,7 +118,7 @@ F_n(-R)<2\delta}.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 F_n(-R)
 \le
@@ -131,7 +131,7 @@ F_{N_0}(-R)+\delta
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(n\ge N_0\),
 \[
@@ -142,7 +142,7 @@ For every \(n\ge N_0\),
 
 ::: pf-proof
 
-Again by step <1>1,
+Again by step [](#s1-1){.pf-ref},
 \[
 F_n(R)
 >
@@ -161,7 +161,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, for every \(n\ge N_0\),
 \[
@@ -188,13 +188,13 @@ and
 =
 1-F_n(R).
 \]
-Use steps <1>3--<1>4.
+Use steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since \(f\) is uniformly continuous on \([-R,R]\), there exists a partition
 \[
@@ -224,7 +224,7 @@ for \(x,y\in[-R,R]\). Choose a partition of mesh \(<\rho\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every \(x\in(-R,R]\),
 \[
@@ -239,13 +239,13 @@ If
 \[
 x\in(x_{j-1},x_j],
 \]
-then both \(x\) and \(\xi_j\) lie in the same partition interval, whose oscillation is \(<\eta\) by step <1>6.
+then both \(x\) and \(\xi_j\) lie in the same partition interval, whose oscillation is \(<\eta\) by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every \(n\ge N_0\),
 \[
@@ -268,7 +268,7 @@ Split the integral of \(|f-s|\) into
 \]
 and its complement.
 
-On \((-R,R]\), step <1>7 gives
+On \((-R,R]\), step [](#s1-7){.pf-ref} gives
 \[
 |f-s|<\eta,
 \]
@@ -278,13 +278,13 @@ Outside \((-R,R]\), one has \(s=0\) and
 \[
 |f|\le M.
 \]
-By step <1>5, the outside mass is \(<4\delta\), so the tail contribution is \(<4M\delta\).
+By step [](#s1-5){.pf-ref}, the outside mass is \(<4\delta\), so the tail contribution is \(<4M\delta\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 By the choices of \(\eta\) and \(\delta\),
 \[
@@ -315,7 +315,7 @@ Thus the sum is \(<\varepsilon/4\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 One has
 \[
@@ -356,13 +356,13 @@ F_n(x_j)-F_n(x_{j-1})
 
 ::: pf-proof
 
-Substitute step <1>10 into the step-function integral.
+Substitute step [](#s1-10){.pf-ref} into the step-function integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The sequence
 \[
@@ -402,7 +402,7 @@ The final quantity tends to \(0\) as \(n,m\to\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence there exists \(N_1\ge N_0\) such that for \(n,m\ge N_1\),
 \[
@@ -419,13 +419,13 @@ Hence there exists \(N_1\ge N_0\) such that for \(n,m\ge N_1\),
 
 ::: pf-proof
 
-Use step <1>12.
+Use step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For \(n,m\ge N_1\),
 \[
@@ -461,7 +461,7 @@ Insert the step-function integrals:
 \right|.
 \end{aligned}
 \]
-The first and third terms are \(<\varepsilon/4\) by steps <1>8--<1>9, and the middle term is \(<\varepsilon/2\) by step <1>13.
+The first and third terms are \(<\varepsilon/4\) by steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}, and the middle term is \(<\varepsilon/2\) by step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -481,13 +481,13 @@ Thus
 
 ::: pf-proof
 
-Step <1>14 is the Cauchy criterion.
+Step [](#s1-14){.pf-ref} is the Cauchy criterion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 \[
@@ -507,7 +507,7 @@ The real numbers are complete.
 
 ::: pf-qed
 
-Step <1>16 is the required conclusion.
+Step [](#s1-16){.pf-ref} is the required conclusion.
 
 :::
 

@@ -31,7 +31,7 @@ The third formula is not holomorphic on a punctured neighborhood and therefore c
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -56,7 +56,7 @@ z=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The point
 \[
@@ -94,7 +94,7 @@ f_1(0)=-\frac12.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residue of $f_1$ at $0$ is
 \[
@@ -109,13 +109,13 @@ The residue is the coefficient of
 z^{-1}
 \]
 in the Laurent expansion.
-Step <1>2 shows there is no such term.
+Step [](#s1-2){.pf-ref} shows there is no such term.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -154,7 +154,7 @@ z=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The point
 \[
@@ -197,7 +197,7 @@ e.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The point
 \[
@@ -234,7 +234,7 @@ Therefore $f_2$ is essential at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The residue of $f_2$ at $0$ is
 \[
@@ -312,7 +312,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For the third extracted expression
 \[
@@ -375,7 +375,7 @@ The recoverable classification is therefore
 
 ::: pf-proof
 
-Collect steps <1>1--<1>7.
+Collect steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -383,8 +383,8 @@ Collect steps <1>1--<1>7.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 completely solve the two source-recoverable functions.
-Step <1>8 records why the third extracted expression cannot be classified
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} completely solve the two source-recoverable functions.
+Step [](#s1-8){.pf-ref} records why the third extracted expression cannot be classified
 as an isolated singularity without recovering the intended source formula.
 
 :::

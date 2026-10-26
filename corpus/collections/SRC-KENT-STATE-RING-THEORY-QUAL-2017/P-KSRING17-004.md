@@ -26,7 +26,7 @@ Justify your answer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The unit group is
 $$
@@ -72,7 +72,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The element
 $$
@@ -101,7 +101,7 @@ The first six powers are distinct, so the order of $\overline5$ is exactly $6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -114,11 +114,11 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \abs{U_{18}}=6.
 $$
-By step <1>2, $\overline5$ has order $6$, so its cyclic subgroup has all six elements of $U_{18}$. Hence
+By step [](#s1-2){.pf-ref}, $\overline5$ has order $6$, so its cyclic subgroup has all six elements of $U_{18}$. Hence
 $$
 U_{18}
 =
@@ -131,7 +131,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>3 answers part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-3){.pf-ref} answers part (b).
 
 :::
 

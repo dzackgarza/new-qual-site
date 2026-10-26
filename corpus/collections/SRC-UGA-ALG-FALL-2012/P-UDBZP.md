@@ -23,7 +23,7 @@ Write $X=(x_1\ \cdots\ x_n)$, where $x_j\in\mathbb R^n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is an orthonormal basis $u_1,\ldots,u_n$ such that
 \[
@@ -41,7 +41,7 @@ Nondegeneracy of $X$ means its columns are linearly independent. Apply Gram--Sch
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix $X$ has a factorization
 \[
@@ -52,7 +52,7 @@ with $U$ orthogonal and $T$ upper triangular.
 
 ::: pf-proof
 
-Let $U=(u_1\ \cdots\ u_n)$. By step <1>1, for each $j$ there are unique coefficients $t_{ij}\in\mathbb R$ with $x_j=\sum_{i=1}^j t_{ij}u_i$. Set $t_{ij}=0$ for $i>j$ and define $T=(t_{ij})$. It is upper triangular, and its $j$-th column under multiplication by $U$ is $x_j$, so $UT=X$. Orthonormality gives $U^{\mathsf T}U=I_n$, hence $U$ is orthogonal.
+Let $U=(u_1\ \cdots\ u_n)$. By step [](#s1-1){.pf-ref}, for each $j$ there are unique coefficients $t_{ij}\in\mathbb R$ with $x_j=\sum_{i=1}^j t_{ij}u_i$. Set $t_{ij}=0$ for $i>j$ and define $T=(t_{ij})$. It is upper triangular, and its $j$-th column under multiplication by $U$ is $x_j$, so $UT=X$. Orthonormality gives $U^{\mathsf T}U=I_n$, hence $U$ is orthogonal.
 
 :::
 
@@ -60,7 +60,7 @@ Let $U=(u_1\ \cdots\ u_n)$. By step <1>1, for each $j$ there are unique coeffici
 
 ::: pf-qed
 
-Step <1>2 establishes the required factorization.
+Step [](#s1-2){.pf-ref} establishes the required factorization.
 
 :::
 

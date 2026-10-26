@@ -28,7 +28,7 @@ Which of the following best describes the graph of the equation $x^2 + y^2 - 2x 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The equation is equivalent to
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The graph consists of the single point
 $$
@@ -62,7 +62,7 @@ so the answer is (E), point.
 
 ::: pf-proof
 
-Both terms in step <1>1 are squares of real numbers and hence are nonnegative. Their sum is zero exactly when both vanish, which gives $x=1$ and $y=-2$.
+Both terms in step [](#s1-1){.pf-ref} are squares of real numbers and hence are nonnegative. Their sum is zero exactly when both vanish, which gives $x=1$ and $y=-2$.
 
 :::
 
@@ -70,7 +70,7 @@ Both terms in step <1>1 are squares of real numbers and hence are nonnegative. T
 
 ::: pf-qed
 
-Step <1>2 identifies the entire graph and its corresponding choice.
+Step [](#s1-2){.pf-ref} identifies the entire graph and its corresponding choice.
 
 :::
 

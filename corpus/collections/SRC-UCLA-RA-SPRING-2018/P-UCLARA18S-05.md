@@ -61,7 +61,7 @@ Apply the hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every fixed \(s\in(0,1)\),
 \[
@@ -91,7 +91,7 @@ converges uniformly on \([0,1]\). Multiply by \(s\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -110,7 +110,7 @@ integration against \(\mu\) is a continuous linear functional on
 \[
 C([0,1])
 \]
-for the sup norm. Thus the uniform convergence in step <1>2 allows
+for the sup norm. Thus the uniform convergence in step [](#s1-2){.pf-ref} allows
 term-by-term integration:
 \[
 \begin{aligned}
@@ -132,7 +132,7 @@ term-by-term integration:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every moment vanishes:
 \[
@@ -155,7 +155,7 @@ has radius of convergence at least \(1\), since
 \le
 |\mu|([0,1]).
 \]
-By step <1>3, \(F(s)=0\) for every \(s\in(0,1)\). The identity theorem for
+By step [](#s1-3){.pf-ref}, \(F(s)=0\) for every \(s\in(0,1)\). The identity theorem for
 power series therefore implies that every coefficient is zero:
 \[
 (-1)^ka_k=0.
@@ -165,7 +165,7 @@ power series therefore implies that every coefficient is zero:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every polynomial \(p\),
 \[
@@ -182,7 +182,7 @@ p(t)
 =
 \sum_{k=0}^{N}c_kt^k.
 \]
-Then by linearity and step <1>4,
+Then by linearity and step [](#s1-4){.pf-ref},
 \[
 \int_0^1p(t)\,d\mu(t)
 =
@@ -194,7 +194,7 @@ Then by linearity and step <1>4,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every continuous function \(f\in C([0,1])\),
 \[
@@ -220,7 +220,7 @@ Since \(\mu\) has finite total variation,
 |\mu|([0,1])
 \longrightarrow0.
 \]
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 \int_0^1p_n\,d\mu=0
 \]
@@ -230,7 +230,7 @@ for every \(n\), so the limit yields the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -245,7 +245,7 @@ uniquely determined by the continuous linear functional
 \[
 f\longmapsto\int_0^1f\,d\mu
 \]
-on \(C([0,1])\). Step <1>6 says this functional is identically zero.
+on \(C([0,1])\). Step [](#s1-6){.pf-ref} says this functional is identically zero.
 Therefore the representing measure is the zero measure.
 
 :::
@@ -254,7 +254,7 @@ Therefore the representing measure is the zero measure.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

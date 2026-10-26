@@ -23,7 +23,7 @@ If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniforml
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 \[
@@ -61,7 +61,7 @@ m,n\ge N,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed $m,n$, define
 \[
@@ -84,7 +84,7 @@ Both properties are preserved under subtraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $m,n$,
 \[
@@ -123,7 +123,7 @@ the boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence
 \[
@@ -145,12 +145,12 @@ Choose
 \[
 N
 \]
-from step <1>1.
+from step [](#s1-1){.pf-ref}.
 For
 \[
 m,n\ge N,
 \]
-step <1>3 gives
+step [](#s1-3){.pf-ref} gives
 \[
 \begin{aligned}
 \sup_{z\in\overline D}
@@ -170,7 +170,7 @@ step <1>3 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists a continuous function
 \[
@@ -196,7 +196,7 @@ has a complete supremum-norm function space
 \[
 C(\overline D).
 \]
-Step <1>4 says
+Step [](#s1-4){.pf-ref} says
 \[
 (f_n)
 \]
@@ -210,7 +210,7 @@ f\in C(\overline D).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In particular,
 \[
@@ -223,7 +223,7 @@ f_n\to f
 
 ::: pf-proof
 
-This is exactly the conclusion of step <1>5.
+This is exactly the conclusion of step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -255,7 +255,7 @@ This extra conclusion is not required for the uniform-convergence claim.
 
 ::: pf-qed
 
-Steps <1>1--<1>6 prove the required uniform convergence on the closure.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove the required uniform convergence on the closure.
 
 :::
 

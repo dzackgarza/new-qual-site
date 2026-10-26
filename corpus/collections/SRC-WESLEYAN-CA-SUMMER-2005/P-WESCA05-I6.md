@@ -43,7 +43,7 @@ is the standard counterclockwise parametrization of that circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The point $w=10+10i$ lies outside this circle.
 
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The winding number is
 $$
@@ -77,7 +77,7 @@ The function
 $$
 z\longmapsto\frac1{z-w}
 $$
-is holomorphic on and inside the circle because $w$ lies outside it by step <1>2. By Cauchy's theorem,
+is holomorphic on and inside the circle because $w$ lies outside it by step [](#s1-2){.pf-ref}. By Cauchy's theorem,
 $$
 \int_\gamma\frac{dz}{z-w}=0.
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required winding number.
+Step [](#s1-3){.pf-ref} is the required winding number.
 
 :::
 

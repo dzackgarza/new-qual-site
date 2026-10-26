@@ -36,7 +36,7 @@ for the closed long ray.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For item (1), take
 \[
@@ -79,7 +79,7 @@ Thus $X_1$ is infinite, connected, neither path-connected nor metrizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The open long ray
 \[
@@ -113,7 +113,7 @@ is first countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The open long ray is not compact.
 
@@ -143,7 +143,7 @@ Thus there is no finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every sequence in
 \[
@@ -181,7 +181,7 @@ has a convergent subsequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The open long ray is not metrizable.
 
@@ -193,15 +193,15 @@ Suppose
 S_\Omega
 \]
 were metrizable.
-By step <1>4 it would be sequentially compact.
+By step [](#s1-4){.pf-ref} it would be sequentially compact.
 For metric spaces, sequential compactness implies compactness.
-This contradicts step <1>3. Thus the long ray is not metrizable.
+This contradicts step [](#s1-3){.pf-ref}. Thus the long ray is not metrizable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For item (2), take the topological disjoint union
 \[
@@ -217,7 +217,7 @@ S_\Omega.
 
 ::: pf-proof
 
-Each summand is Hausdorff, normal, and first countable by step <1>2. Topological disjoint unions preserve these three properties: each component is open and closed, so neighborhoods and separation can be constructed componentwise.
+Each summand is Hausdorff, normal, and first countable by step [](#s1-2){.pf-ref}. Topological disjoint unions preserve these three properties: each component is open and closed, so neighborhoods and separation can be constructed componentwise.
 
 The space $X_2$ is disconnected because it is the union of two nonempty disjoint clopen summands.
 
@@ -226,7 +226,7 @@ If $X_2$ were metrizable, each clopen subspace
 S_\Omega
 \]
 would be metrizable.
-This contradicts step <1>5.
+This contradicts step [](#s1-5){.pf-ref}.
 
 Hence $X_2$ is normal, Hausdorff, first countable, neither metrizable nor connected.
 
@@ -234,7 +234,7 @@ Hence $X_2$ is normal, Hausdorff, first countable, neither metrizable nor connec
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For item (3), take
 \[
@@ -272,7 +272,7 @@ is also second countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For item (4), take
 \[
@@ -323,7 +323,7 @@ is an open cover of $X_4$ with no finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus the four requested examples are
 \[
@@ -340,7 +340,7 @@ Thus the four requested examples are
 
 ::: pf-proof
 
-Steps <1>1, <1>6, <1>7, and <1>8 verify all requested property combinations.
+Steps [](#s1-1){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1-8){.pf-ref} verify all requested property combinations.
 
 :::
 
@@ -348,7 +348,7 @@ Steps <1>1, <1>6, <1>7, and <1>8 verify all requested property combinations.
 
 ::: pf-qed
 
-Step <1>9 records the complete answer.
+Step [](#s1-9){.pf-ref} records the complete answer.
 
 :::
 

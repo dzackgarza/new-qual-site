@@ -64,7 +64,7 @@ Hence $\nu$ is a finite positive Borel measure.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -91,7 +91,7 @@ This is exactly absolute continuity of $\nu$ with respect to $\mu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists a Borel measurable function
 \[
@@ -109,7 +109,7 @@ for every Borel set $E$.
 ::: pf-proof
 
 The measures $\mu$ and $\nu$ are finite, hence $\sigma$-finite, and step
-<1>2 gives $\nu\ll\mu$. The Radon--Nikodym theorem therefore yields a
+[](#s1-2){.pf-ref} gives $\nu\ll\mu$. The Radon--Nikodym theorem therefore yields a
 measurable function
 \[
 w=\frac{d\nu}{d\mu}
@@ -126,7 +126,7 @@ Borel representative with values in $[0,\infty)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every bounded Borel function $f:[0,1]\to\mathbb R$,
 \[
@@ -154,7 +154,7 @@ negative parts gives the bounded real-valued case.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every continuous $f:[0,1]\to\mathbb R$,
 \[
@@ -168,13 +168,13 @@ For every continuous $f:[0,1]\to\mathbb R$,
 ::: pf-proof
 
 Every continuous function on compact $[0,1]$ is bounded and Borel measurable.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \int f\circ\phi\,d\mu
 =
 \int f\,d\nu.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \int f\,d\nu
 =
@@ -188,7 +188,7 @@ Combining the two identities gives the claimed formula.
 
 ::: pf-qed
 
-Step <1>5 is the required representation.
+Step [](#s1-5){.pf-ref} is the required representation.
 
 :::
 

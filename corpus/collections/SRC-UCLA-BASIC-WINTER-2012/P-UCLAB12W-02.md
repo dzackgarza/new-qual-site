@@ -24,7 +24,7 @@ Prove that $f_n\to f$ uniformly.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $f_n\not\to f$ uniformly. Then there exist $\varepsilon>0$, a strictly increasing sequence $(n_k)$, and points $x_k\in[a,b]$ such that
 $$
@@ -41,7 +41,7 @@ This is the negation of uniform convergence, with the indices chosen successivel
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After passing to a subsequence, there is $x\in[a,b]$ such that
 $$
@@ -57,7 +57,7 @@ The interval $[a,b]$ is compact and hence sequentially compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $x\in(a,b)$, then
 $$
@@ -128,7 +128,7 @@ Combining the upper and lower bounds proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $x=a$, then
 $$
@@ -186,7 +186,7 @@ Together with the upper bound, this proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $x=b$, then
 $$
@@ -196,7 +196,7 @@ $$
 
 ::: pf-proof
 
-This is symmetric to step <1>4. For the upper bound, fix $y\in[a,b)$ and use convexity on $[y,b]$; as $x_k\to b$, the convex coefficient of $g_k(b)$ tends to $1$, giving
+This is symmetric to step [](#s1-4){.pf-ref}. For the upper bound, fix $y\in[a,b)$ and use convexity on $[y,b]$; as $x_k\to b$, the convex coefficient of $g_k(b)$ tends to $1$, giving
 $$
 \limsup_{k\to\infty}g_k(x_k)\le f(b).
 $$
@@ -232,7 +232,7 @@ Continuity at $b$ and $\delta\downarrow0$ give the required lower bound $f(b)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In every case,
 $$
@@ -242,7 +242,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>3--<1>5 show that $f_{n_k}(x_k)\to f(x)$, according as $x$ is interior, $a$, or $b$. By step <1>2 and continuity of $f$,
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} show that $f_{n_k}(x_k)\to f(x)$, according as $x$ is interior, $a$, or $b$. By step [](#s1-2){.pf-ref} and continuity of $f$,
 $$
 f(x_k)\to f(x).
 $$
@@ -254,11 +254,11 @@ Subtracting gives the claim.
 
 ::: pf-qed
 
-Step <1>6 contradicts the fixed lower bound
+Step [](#s1-6){.pf-ref} contradicts the fixed lower bound
 $$
 \abs{f_{n_k}(x_k)-f(x_k)}\ge\varepsilon
 $$
-from step <1>1. Therefore $f_n\to f$ uniformly on $[a,b]$.
+from step [](#s1-1){.pf-ref}. Therefore $f_n\to f$ uniformly on $[a,b]$.
 
 :::
 

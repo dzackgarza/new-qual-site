@@ -31,7 +31,7 @@ Prove, without merely quoting a theorem, that $f_n\to0$ uniformly on $[0,1]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n$ and every $x\in[0,1]$,
 \[
@@ -54,7 +54,7 @@ f_n(x)\ge0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $\varepsilon>0$ and define
 \[
@@ -75,7 +75,7 @@ Thus $U_n$ is open in the subspace topology of $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sets $U_n$ are increasing:
 \[
@@ -99,7 +99,7 @@ so $x\in U_{n+1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sets $U_n$ cover $[0,1]$:
 \[
@@ -123,7 +123,7 @@ Thus $x\in U_N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $N$ such that
 \[
@@ -133,7 +133,7 @@ U_N=[0,1].
 
 ::: pf-proof
 
-By steps <1>2 and <1>4, the family $(U_n)$ is an open cover of the compact interval $[0,1]$. Hence finitely many sets
+By steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, the family $(U_n)$ is an open cover of the compact interval $[0,1]$. Hence finitely many sets
 \[
 U_{n_1},\ldots,U_{n_r}
 \]
@@ -142,7 +142,7 @@ Let
 \[
 N=\max\{n_1,\ldots,n_r\}.
 \]
-By the nesting in step <1>3,
+By the nesting in step [](#s1-3){.pf-ref},
 \[
 U_{n_j}\subseteq U_N
 \]
@@ -162,7 +162,7 @@ so $U_N=[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n\ge N$ and every $x\in[0,1]$,
 \[
@@ -172,7 +172,7 @@ For every $n\ge N$ and every $x\in[0,1]$,
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 f_N(x)<\varepsilon
 \]
@@ -180,13 +180,13 @@ for every $x$. By monotonicity,
 \[
 f_n(x)\le f_N(x)
 \]
-for $n\ge N$, and step <1>1 gives nonnegativity.
+for $n\ge N$, and step [](#s1-1){.pf-ref} gives nonnegativity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -196,7 +196,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 shows that for every $\varepsilon>0$, there exists $N$ such that for every $n\ge N$,
+Step [](#s1-6){.pf-ref} shows that for every $\varepsilon>0$, there exists $N$ such that for every $n\ge N$,
 \[
 \sup_{x\in[0,1]}|f_n(x)|
 <
@@ -210,7 +210,7 @@ This is uniform convergence to zero.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ Which one of the following groups is cyclic?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The direct product $\ZZ_m\times\ZZ_n$ is cyclic exactly when $\gcd(m,n)=1$.
 
@@ -45,7 +45,7 @@ which divides $\operatorname{lcm}(m,n)$. If $\gcd(m,n)>1$, then $\operatorname{l
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Among the five pairs of moduli, only $3$ and $4$ are relatively prime.
 
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the cyclic group is
 $$
@@ -76,7 +76,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -84,7 +84,7 @@ Combine steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Step <1>3 identifies the unique cyclic choice.
+Step [](#s1-3){.pf-ref} identifies the unique cyclic choice.
 
 :::
 

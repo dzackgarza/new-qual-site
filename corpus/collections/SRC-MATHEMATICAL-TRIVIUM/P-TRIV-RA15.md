@@ -21,7 +21,7 @@ $\mathrm { C a l c u l a t e } \int \frac { d x } { \tan x }$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -43,7 +43,7 @@ taking the reciprocal gives the identity wherever the integrand is defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Set
 $$
@@ -63,7 +63,7 @@ Differentiate $u=\sin x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -77,7 +77,7 @@ $$
 
 ::: pf-proof
 
-Use steps <1>1--<1>2 and the antiderivative
+Use steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} and the antiderivative
 $$
 \int\frac{du}{u}=\log|u|+C.
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required antiderivative on each interval where
+Step [](#s1-3){.pf-ref} is the required antiderivative on each interval where
 $\sin x\neq0$.
 
 :::

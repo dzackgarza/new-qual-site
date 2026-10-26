@@ -27,7 +27,7 @@ Let $x = r \cos \theta$ and $y = r \sin \theta$. Which of the following expressi
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Keeping $x$ constant gives
 $$
@@ -44,9 +44,9 @@ the problem that $x$ is held fixed while $r$ varies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Differentiating the relation in step <1>1 with respect to $r$ gives
+Differentiating the relation in step [](#s1-1){.pf-ref} with respect to $r$ gives
 $$
 \cos\theta-r\sin\theta
 \left(\frac{\partial\theta}{\partial r}\right)_x=0.
@@ -68,7 +68,7 @@ The derivative of the constant $x$ is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -80,7 +80,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Solving the equation in step <1>2 for the partial derivative gives
+Solving the equation in step [](#s1-2){.pf-ref} for the partial derivative gives
 $$
 \left(\frac{\partial\theta}{\partial r}\right)_x
 =\frac{\cos\theta}{r\sin\theta}
@@ -93,7 +93,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required expression.
+Step [](#s1-3){.pf-ref} gives the required expression.
 
 :::
 

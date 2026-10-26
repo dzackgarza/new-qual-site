@@ -37,7 +37,7 @@ In (b)(ii) the source reads "the level curves $\operatorname{Re}(f) = 0$ and $\o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 At $z_0$, both gradients
 $$
@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The gradients $\nabla u(z_0)$ and $\nabla v(z_0)$ are perpendicular.
 
@@ -114,7 +114,7 @@ Thus the two nonzero gradients are orthogonal at $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The tangent lines to the level curves
 $$
@@ -127,13 +127,13 @@ at $z_0$ are perpendicular.
 
 ::: pf-proof
 
-By step <1>1 and the implicit function theorem, both level sets are smooth curves near $z_0$. Their tangent lines are perpendicular to their respective gradients. Rotating both perpendicular gradient vectors through $90^\circ$ preserves the angle between them, so by step <1>2 the two tangent lines are perpendicular.
+By step [](#s1-1){.pf-ref} and the implicit function theorem, both level sets are smooth curves near $z_0$. Their tangent lines are perpendicular to their respective gradients. Rotating both perpendicular gradient vectors through $90^\circ$ preserves the angle between them, so by step [](#s1-2){.pf-ref} the two tangent lines are perpendicular.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 $$
@@ -163,7 +163,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The level curves of $\operatorname{Re}f$ are
 $$
@@ -183,13 +183,13 @@ This is the standard classification of the real conics
 $$
 x^2-y^2=c
 $$
-obtained from step <1>4.
+obtained from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The level curves of $\operatorname{Im}f$ are
 $$
@@ -209,13 +209,13 @@ This follows directly from
 $$
 \operatorname{Im}f=2xy
 $$
-in step <1>4.
+in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The zero level curves
 $$
@@ -247,7 +247,7 @@ Their only common point is $(0,0)$. Each line $y=\pm x$ makes an angle of $\pi/4
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 This does not contradict part (a).
 
@@ -278,7 +278,7 @@ Thus the nonvanishing-derivative hypothesis of part (a) fails exactly at the poi
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>8 answer part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), and steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} answer part (b).
 
 :::
 

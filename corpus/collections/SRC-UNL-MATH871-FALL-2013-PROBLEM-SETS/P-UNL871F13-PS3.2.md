@@ -34,7 +34,7 @@ Z=\mathbb Z\times\mathbb Z.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every cofinite-open subset of $Z$ is open in the product topology:
 \[
@@ -147,7 +147,7 @@ O\in\mathcal T_{mathrm{prod}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The reverse containment fails.
 
@@ -200,7 +200,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently
 \[
@@ -214,7 +214,7 @@ Consequently
 
 ::: pf-proof
 
-Step <1>1 gives the containment, and step <1>2 proves it is strict.
+Step [](#s1-1){.pf-ref} gives the containment, and step [](#s1-2){.pf-ref} proves it is strict.
 
 :::
 
@@ -222,7 +222,7 @@ Step <1>1 gives the containment, and step <1>2 proves it is strict.
 
 ::: pf-qed
 
-Step <1>3 gives the complete comparison of the two topologies.
+Step [](#s1-3){.pf-ref} gives the complete comparison of the two topologies.
 
 :::
 

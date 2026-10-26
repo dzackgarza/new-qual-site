@@ -26,7 +26,7 @@ Prove that $A$ is positive definite.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $1\le i,j\le n$,
 \[
@@ -57,7 +57,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -83,7 +83,7 @@ c^tAc
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 c^tAc
@@ -112,7 +112,7 @@ The interchange of finite sums and the integral is immediate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $c\ne0$, then the polynomial
 \[
@@ -134,7 +134,7 @@ That would imply $c=0$, contrary to hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $c\ne0$, then
 \[
@@ -144,7 +144,7 @@ If $c\ne0$, then
 
 ::: pf-proof
 
-By step <1>3, the polynomial $p_c$ is nonzero.
+By step [](#s1-3){.pf-ref}, the polynomial $p_c$ is nonzero.
 A nonzero polynomial has only finitely many roots.
 Hence there is some
 \[
@@ -168,7 +168,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every nonzero $c\in\mathbb R^n$,
 \[
@@ -178,13 +178,13 @@ For every nonzero $c\in\mathbb R^n$,
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>4.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -199,7 +199,7 @@ The defining condition for positive definiteness of a real symmetric matrix is t
 c^tAc>0
 \]
 for every nonzero vector $c$.
-Step <1>5 verifies this condition.
+Step [](#s1-5){.pf-ref} verifies this condition.
 
 :::
 
@@ -207,7 +207,7 @@ Step <1>5 verifies this condition.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

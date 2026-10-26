@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $F$ is closed under addition and additive inverses.
 
@@ -78,7 +78,7 @@ Thus $F$ is an additive subgroup of $M_2(\RR)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $F$ is closed under multiplication.
 
@@ -113,14 +113,14 @@ Hence the product again lies in $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Multiplication in $F$ is commutative.
 
 
 ::: pf-proof
 
-The multiplication formula from step <1>2 is symmetric in the pairs
+The multiplication formula from step [](#s1-2){.pf-ref} is symmetric in the pairs
 $$
 (a,b)
 \qquad\text{and}\qquad
@@ -139,7 +139,7 @@ Thus multiplication is commutative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The multiplicative identity of $M_2(\RR)$ lies in $F$:
 $$
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A matrix
 $$
@@ -195,7 +195,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every nonzero element of $F$ has a multiplicative inverse in $F$.
 
@@ -206,7 +206,7 @@ Let
 $$
 M(a,b)\ne0.
 $$
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 a^2+3b^2\ne0.
 $$
@@ -219,7 +219,7 @@ M\left(
 \frac{-b}{a^2+3b^2}
 \right).
 $$
-Using the multiplication formula from step <1>2,
+Using the multiplication formula from step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 M(a,b)N
@@ -244,7 +244,7 @@ Thus $N$ is the inverse of $M(a,b)$ and lies in $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -254,7 +254,7 @@ $$
 
 ::: pf-proof
 
-The usual matrix operations are associative and distributive. Steps <1>1--<1>4 show that $F$ is a commutative ring with identity, and step <1>6 shows that every nonzero element is invertible. Hence $F$ is a field.
+The usual matrix operations are associative and distributive. Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} show that $F$ is a commutative ring with identity, and step [](#s1-6){.pf-ref} shows that every nonzero element is invertible. Hence $F$ is a field.
 
 :::
 
@@ -262,7 +262,7 @@ The usual matrix operations are associative and distributive. Steps <1>1--<1>4 s
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -119,7 +119,7 @@ Integrate powers term by term.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -142,7 +142,7 @@ V_x=\frac{2\pi}{15}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A vertical slice at \(x\) produces a cylindrical shell of radius
 \[
@@ -166,7 +166,7 @@ x-x^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The shell volume element is
 \[
@@ -184,7 +184,7 @@ volume
 \[
 2\pi r h\,dx.
 \]
-Use step <1>6.
+Use step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -202,7 +202,7 @@ V_y
 
 ::: pf-proof
 
-Expand the integrand from step <1>7 and integrate across the region.
+Expand the integrand from step [](#s1-7){.pf-ref} and integrate across the region.
 
 :::
 
@@ -238,7 +238,7 @@ Integrate powers term by term.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -266,7 +266,7 @@ V_y=\frac{\pi}{6}}.
 
 ::: pf-qed
 
-Steps <1>5 and <1>10 give the two requested volumes.
+Steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref} give the two requested volumes.
 
 :::
 

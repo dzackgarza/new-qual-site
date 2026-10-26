@@ -23,7 +23,7 @@ Show that for $p>0$ and $q>0$,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integrals
 \[
@@ -52,7 +52,7 @@ On \([1,\infty)\), \((1+t^2)^{-1}\le t^{-2}\), and \(\int_1^\infty (\log t)t^{-2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -66,7 +66,7 @@ Let
 \[
 J=\int_0^\infty\frac{\log t}{1+t^2}\,dt,
 \]
-which is absolutely convergent by step <1>1. In the substitution \(t=1/u\),
+which is absolutely convergent by step [](#s1-1){.pf-ref}. In the substitution \(t=1/u\),
 \[
 \begin{aligned}
 J
@@ -82,7 +82,7 @@ Thus \(2J=0\), so \(J=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For \(p,q>0\),
 \[
@@ -103,7 +103,7 @@ Substitute \(x=qt\). Then
 +\frac1q\int_0^\infty\frac{\log t}{1+t^2}\,dt.
 \end{aligned}
 \]
-Step <1>1 evaluates the first integral as \(\pi/2\), and step <1>2 makes the second integral zero. This gives the claimed formula.
+Step [](#s1-1){.pf-ref} evaluates the first integral as \(\pi/2\), and step [](#s1-2){.pf-ref} makes the second integral zero. This gives the claimed formula.
 
 :::
 
@@ -111,7 +111,7 @@ Step <1>1 evaluates the first integral as \(\pi/2\), and step <1>2 makes the sec
 
 ::: pf-qed
 
-Step <1>3 proves the required identity.
+Step [](#s1-3){.pf-ref} proves the required identity.
 
 :::
 

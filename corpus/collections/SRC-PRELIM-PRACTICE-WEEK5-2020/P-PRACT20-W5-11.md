@@ -22,7 +22,7 @@ Let $G$ be a group and $H \subset G$ be a subgroup. $H$ is said to be a normal s
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set
 \[
@@ -53,7 +53,7 @@ Thus $xy^{-1}\in\ker\phi$. By the subgroup test,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $h\in\ker\phi$ and every $g\in G$,
 \[
@@ -82,7 +82,7 @@ Hence $ghg^{-1}$ belongs to the kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -92,7 +92,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>1 shows that the kernel is a subgroup, and step <1>2 verifies the
+Step [](#s1-1){.pf-ref} shows that the kernel is a subgroup, and step [](#s1-2){.pf-ref} verifies the
 defining conjugation condition for normality.
 
 :::
@@ -101,7 +101,7 @@ defining conjugation condition for normality.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

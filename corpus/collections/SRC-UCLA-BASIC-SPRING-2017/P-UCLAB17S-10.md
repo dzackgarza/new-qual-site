@@ -26,7 +26,7 @@ Let $K\subset\mathbb R^n$ be compact. Assume that for every $\varepsilon>0$ and 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $K$ is disconnected.
 Then there exist disjoint nonempty subsets
@@ -57,7 +57,7 @@ The sets $U$ and $V$ are compact.
 ::: pf-proof
 
 The set $K$ is compact by hypothesis.
-By step <1>1, $U$ and $V$ are closed subsets of $K$.
+By step [](#s1-1){.pf-ref}, $U$ and $V$ are closed subsets of $K$.
 Closed subsets of compact spaces are compact.
 
 :::
@@ -100,7 +100,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose
 \[
@@ -130,9 +130,9 @@ This is exactly the assumed chain property.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Some adjacent pair in the chain from step <1>4 has one point in $U$ and the other in $V$.
+Some adjacent pair in the chain from step [](#s1-4){.pf-ref} has one point in $U$ and the other in $V$.
 
 
 ::: pf-proof
@@ -155,9 +155,9 @@ x_{j-1}\in U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Step <1>5 contradicts the definition of $\delta$.
+Step [](#s1-5){.pf-ref} contradicts the definition of $\delta$.
 
 
 ::: pf-proof
@@ -174,7 +174,7 @@ the definition of $\delta$ gives
 \ge
 \delta.
 \]
-But step <1>4 gives
+But step [](#s1-4){.pf-ref} gives
 \[
 \|x_j-x_{j-1}\|
 <
@@ -186,7 +186,7 @@ Contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -196,14 +196,14 @@ Therefore
 
 ::: pf-proof
 
-The assumption of disconnectedness in step <1>1 led to the contradiction in step <1>6.
+The assumption of disconnectedness in step [](#s1-1){.pf-ref} led to the contradiction in step [](#s1-6){.pf-ref}.
 This proves part (a).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every connected metric space is $\varepsilon$-chain connected for every $\varepsilon>0$.
 
@@ -250,7 +250,7 @@ R=X.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define the closed topologist's sine curve
 \[
@@ -280,7 +280,7 @@ This is a subset of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The set $K_0$ is compact.
 
@@ -317,14 +317,14 @@ Thus
 K_0=\overline G
 \]
 is closed.
-It is bounded by step <1>9.
+It is bounded by step [](#s1-9){.pf-ref}.
 Hence Heine--Borel implies compactness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The set $K_0$ is connected.
 
@@ -344,7 +344,7 @@ x,\sin\frac1x
 \]
 is continuous.
 Thus $G$ is connected.
-The closure of a connected set is connected, and by step <1>10,
+The closure of a connected set is connected, and by step [](#s1-10){.pf-ref},
 \[
 \overline G=K_0.
 \]
@@ -353,20 +353,20 @@ The closure of a connected set is connected, and by step <1>10,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Consequently $K_0$ satisfies the chain hypothesis of the problem.
 
 
 ::: pf-proof
 
-Apply step <1>8 to the connected metric space $K_0$ from step <1>11.
+Apply step [](#s1-8){.pf-ref} to the connected metric space $K_0$ from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The set $K_0$ is not path connected.
 
@@ -446,14 +446,14 @@ Thus no such path exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore the chain condition does not imply path connectedness.
 
 
 ::: pf-proof
 
-The set $K_0$ is compact by step <1>10 and satisfies the required chain condition by step <1>12, but it is not path connected by step <1>13.
+The set $K_0$ is compact by step [](#s1-10){.pf-ref} and satisfies the required chain condition by step [](#s1-12){.pf-ref}, but it is not path connected by step [](#s1-13){.pf-ref}.
 This proves part (b).
 
 :::
@@ -462,7 +462,7 @@ This proves part (b).
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>14 gives the requested example for part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} gives the requested example for part (b).
 
 :::
 

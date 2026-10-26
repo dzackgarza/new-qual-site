@@ -33,7 +33,7 @@ then the value of $k$ for which $\int_{-1}^{1} f(x) dx = 1$ is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral over $[-1,0]$ is
 $$
@@ -59,7 +59,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral over $[0,1]$ is
 $$
@@ -81,7 +81,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The condition $\int_{-1}^1 f(x)\,dx=1$ forces
 $$
@@ -92,7 +92,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 -1+\frac{2k}{3}=1.
 $$
@@ -104,7 +104,7 @@ Thus $2k/3=2$, hence $k=3$.
 
 ::: pf-qed
 
-Step <1>3 gives the unique constant satisfying the integral condition.
+Step [](#s1-3){.pf-ref} gives the unique constant satisfying the integral condition.
 
 :::
 

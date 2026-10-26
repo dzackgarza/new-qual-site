@@ -36,7 +36,7 @@ r_v=Av-w.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The normal equation
 \[
@@ -64,7 +64,7 @@ Thus the displayed vector vanishes exactly when the normal equation holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The condition
 \[
@@ -102,7 +102,7 @@ for every $h$, which is exactly orthogonality to $\operatorname{im}A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $v$ satisfies the normal equation.
 Then for every $u\in V$,
@@ -124,7 +124,7 @@ Au-w
 =
 r_v+A(u-v).
 \]
-By steps <1>1--<1>2, the normal equation implies
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the normal equation implies
 \[
 r_v\perp\operatorname{im}A.
 \]
@@ -138,7 +138,7 @@ the two summands are orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $v$ satisfies the normal equation, then
 \[
@@ -153,13 +153,13 @@ for every $u\in V$.
 
 ::: pf-proof
 
-Apply the Pythagorean theorem to the orthogonal decomposition in step <1>3.
+Apply the Pythagorean theorem to the orthogonal decomposition in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every solution of the normal equation minimizes
 \[
@@ -169,7 +169,7 @@ Every solution of the normal equation minimizes
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 \[
 \|Au-w\|^2
 \ge
@@ -188,7 +188,7 @@ Thus $v$ is a minimizer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Conversely, suppose $v$ minimizes
 \[
@@ -233,7 +233,7 @@ for every $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -271,7 +271,7 @@ Differentiate at $t=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every
 \[
@@ -285,12 +285,12 @@ one has
 
 ::: pf-proof
 
-By step <1>6, $\phi$ has a minimum at $0$.
+By step [](#s1-6){.pf-ref}, $\phi$ has a minimum at $0$.
 Therefore
 \[
 \phi'(0)=0.
 \]
-Using step <1>7,
+Using step [](#s1-7){.pf-ref},
 \[
 2\langle r_v,Ah\rangle_W=0.
 \]
@@ -299,22 +299,22 @@ Using step <1>7,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every minimizer satisfies the normal equation.
 
 
 ::: pf-proof
 
-Step <1>8 says
+Step [](#s1-8){.pf-ref} says
 \[
 r_v\perp\operatorname{im}A.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 A^*r_v=0.
 \]
-By step <1>1, this is equivalent to
+By step [](#s1-1){.pf-ref}, this is equivalent to
 \[
 A^*Av=A^*w.
 \]
@@ -323,7 +323,7 @@ A^*Av=A^*w.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -337,8 +337,8 @@ A^*Av=A^*w.
 
 ::: pf-proof
 
-Step <1>5 proves the reverse implication from the normal equation to minimality.
-Step <1>9 proves the converse.
+Step [](#s1-5){.pf-ref} proves the reverse implication from the normal equation to minimality.
+Step [](#s1-9){.pf-ref} proves the converse.
 
 :::
 
@@ -346,7 +346,7 @@ Step <1>9 proves the converse.
 
 ::: pf-qed
 
-Step <1>10 is the required characterization.
+Step [](#s1-10){.pf-ref} is the required characterization.
 
 :::
 

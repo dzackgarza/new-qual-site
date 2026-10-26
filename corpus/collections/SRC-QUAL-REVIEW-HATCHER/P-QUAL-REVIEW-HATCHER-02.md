@@ -77,7 +77,7 @@ this hypothesis, the listed homology groups do not determine the answer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The numerical assertion is not determined by homology for arbitrary
 bounded-below chain complexes.
@@ -156,7 +156,7 @@ hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -184,7 +184,7 @@ $g$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Precomposition gives chain maps
 \[
@@ -227,7 +227,7 @@ Thus both precomposition maps are chain maps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -267,7 +267,7 @@ so $K$ has degree $+1$ as required for a chain homotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -346,7 +346,7 @@ f^*(\phi)-g^*(\phi).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the functor
 \[
@@ -359,14 +359,14 @@ sends chain-homotopic maps to chain-homotopic maps.
 
 ::: pf-proof
 
-Step <1>5 explicitly constructs the required chain homotopy.
+Step [](#s1-5){.pf-ref} explicitly constructs the required chain homotopy.
 This proves assertion (2) from the source.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Assume henceforth that $C_*$ is degreewise free.
 Then, noncanonically,
@@ -419,7 +419,7 @@ into elementary summands representing its homology:
   \]
   homology summand in degree $i$.
 
-Step <1>6 allows replacement of $C_*$ by this chain-homotopy equivalent
+Step [](#s1-6){.pf-ref} allows replacement of $C_*$ by this chain-homotopy equivalent
 model.
 Fact (1) from the source then allows replacement of $D_*$ by a convenient
 quasi-isomorphic free model.
@@ -459,7 +459,7 @@ theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The required elementary abelian-group calculations are
 \[
@@ -544,7 +544,7 @@ it is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 In degree
 \[
@@ -588,7 +588,7 @@ j-i-1=2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 In degree
 \[
@@ -645,7 +645,7 @@ There is no Ext contribution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 In degree
 \[
@@ -727,7 +727,7 @@ Thus there is no Ext contribution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 In degree
 \[
@@ -807,7 +807,7 @@ Adding these summands gives the displayed group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 In degree
 \[
@@ -875,7 +875,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 In degree
 \[
@@ -928,7 +928,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 In degree
 \[
@@ -965,7 +965,7 @@ and equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 All remaining homology groups vanish.
 
@@ -1004,13 +1004,13 @@ to
 \[
 1.
 \]
-Steps <1>9--<1>15 have exhausted all nonzero Hom and Ext contributions.
+Steps [](#s1-9){.pf-ref} through [](#s1-15){.pf-ref} have exhausted all nonzero Hom and Ext contributions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Under the intended free-source hypothesis, the complete answer is
 \[
@@ -1043,7 +1043,7 @@ H_n
 
 ::: pf-proof
 
-Collect steps <1>9--<1>16.
+Collect steps [](#s1-9){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
@@ -1051,10 +1051,10 @@ Collect steps <1>9--<1>16.
 
 ::: pf-qed
 
-Steps <1>2--<1>6 prove the chain-homotopy preservation assertion.
-Step <1>1 records why the numerical half needs the missing free/projective
+Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove the chain-homotopy preservation assertion.
+Step [](#s1-1){.pf-ref} records why the numerical half needs the missing free/projective
 hypothesis.
-Under that intended hypothesis, steps <1>7--<1>17 compute all homology
+Under that intended hypothesis, steps [](#s1-7){.pf-ref} through [](#s1-17){.pf-ref} compute all homology
 groups of the total Hom complex.
 
 :::

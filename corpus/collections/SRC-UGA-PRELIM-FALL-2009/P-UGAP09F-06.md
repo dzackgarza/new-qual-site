@@ -24,7 +24,7 @@ Find $\dim_{\mathbb R}V$ and exhibit a basis for $V$ over $\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The space $V$ is spanned by
 $$
@@ -47,7 +47,7 @@ $\operatorname{span}_{\RR}\{1,\sin(2x),\cos(2x)\}$, while these three functions 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The functions $1$, $\sin(2x)$, and $\cos(2x)$ are linearly independent over $\RR$.
 
@@ -64,7 +64,7 @@ for every real $x$. Setting $x=0$ gives $a+c=0$, while setting $x=\pi/2$ gives $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -78,7 +78,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that these three functions span $V$, and step <1>2 shows that they are linearly independent. Hence they form a basis, which has three elements.
+Step [](#s1-1){.pf-ref} shows that these three functions span $V$, and step [](#s1-2){.pf-ref} shows that they are linearly independent. Hence they form a basis, which has three elements.
 
 :::
 
@@ -86,7 +86,7 @@ Step <1>1 shows that these three functions span $V$, and step <1>2 shows that th
 
 ::: pf-qed
 
-Step <1>3 gives both the dimension and the requested basis.
+Step [](#s1-3){.pf-ref} gives both the dimension and the requested basis.
 
 :::
 

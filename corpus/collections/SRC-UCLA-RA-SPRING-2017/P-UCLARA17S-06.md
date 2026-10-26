@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $N$ is integrable on $(-1,1)$ and
 $$
@@ -75,20 +75,20 @@ Here $[a_n-r_n,a_n+r_n]\subset(-1,1)$ because the closed disk $D_n$ is contained
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For almost every $x\in(-1,1)$, only finitely many disks $D_n$ meet the vertical line $\operatorname{Re}z=x$.
 
 
 ::: pf-proof
 
-By step <1>1, the nonnegative function $N$ has finite integral. Therefore $N(x)<\infty$ for almost every $x$.
+By step [](#s1-1){.pf-ref}, the nonnegative function $N$ has finite integral. Therefore $N(x)<\infty$ for almost every $x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $N(x)<\infty$, then the vertical section
 $$
@@ -116,7 +116,7 @@ Consequently it stays a positive distance from both endpoints of $I_x$. Its comp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $X$ has positive area.
 
@@ -131,7 +131,7 @@ By Fubini--Tonelli applied to the indicator function of the measurable set $X$,
 $$
 |X|=\int_{-1}^1m(x)\,dx.
 $$
-By steps <1>2 and <1>3, one has $m(x)>0$ for almost every $x\in(-1,1)$. Since $m$ is nonnegative and positive on a set of positive measure,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, one has $m(x)>0$ for almost every $x\in(-1,1)$. Since $m$ is nonnegative and positive on a set of positive measure,
 $$
 \boxed{|X|>0}.
 $$
@@ -142,7 +142,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

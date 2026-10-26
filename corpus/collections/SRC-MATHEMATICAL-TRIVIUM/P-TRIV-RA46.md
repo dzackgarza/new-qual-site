@@ -42,7 +42,7 @@ integral is interpreted as an oscillatory principal value.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The inverse transform is
 $$
@@ -117,7 +117,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, for $x>0$,
 $$
@@ -147,7 +147,7 @@ The upper semicircle contribution tends to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence for $x>0$,
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>4 into step <1>1.
+Substitute step [](#s1-4){.pf-ref} into step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -205,7 +205,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore, for $x<0$,
 $$
@@ -234,7 +234,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence for $x<0$,
 $$
@@ -244,13 +244,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>8 into step <1>1.
+Substitute step [](#s1-8){.pf-ref} into step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 At $x=0$, the principal value is zero.
 
@@ -267,7 +267,7 @@ is odd, so its symmetric principal value over $\mathbb R$ vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Combining the cases gives
 $$
@@ -282,13 +282,13 @@ with the convention $\operatorname{sgn}(0)=0$.
 
 ::: pf-proof
 
-For $x>0$, this reproduces step <1>5. For $x<0$,
+For $x>0$, this reproduces step [](#s1-5){.pf-ref}. For $x<0$,
 $$
 -i\operatorname{sgn}(x)e^{-a|x|}
 =
 i e^{ax},
 $$
-which is step <1>9. Step <1>10 handles $x=0$.
+which is step [](#s1-9){.pf-ref}. Step [](#s1-10){.pf-ref} handles $x=0$.
 
 :::
 
@@ -296,7 +296,7 @@ which is step <1>9. Step <1>10 handles $x=0$.
 
 ::: pf-qed
 
-Step <1>11 is the required inverse Fourier image.
+Step [](#s1-11){.pf-ref} is the required inverse Fourier image.
 
 :::
 

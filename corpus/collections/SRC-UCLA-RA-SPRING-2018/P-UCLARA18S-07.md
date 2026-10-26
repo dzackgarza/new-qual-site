@@ -31,7 +31,7 @@ f(z)=F(z,z).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix \(z_0\in\mathbb C\) and \(R>0\). For every
 \[
@@ -87,7 +87,7 @@ integral is well-defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(z\in D(z_0,R)\),
 \[
@@ -105,7 +105,7 @@ f(z)
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 \[
 a=b=z.
 \]
@@ -114,9 +114,9 @@ a=b=z.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-For every \(0<r<R\), the integrand in step <1>2 and its derivative
+For every \(0<r<R\), the integrand in step [](#s1-2){.pf-ref} and its derivative
 with respect to \(z\) are uniformly bounded for
 \[
 |z-z_0|\le r
@@ -176,14 +176,14 @@ integrand.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(f\) is holomorphic on \(D(z_0,R)\).
 
 
 ::: pf-proof
 
-By steps <1>2 and <1>3, differentiation under the two contour integrals is
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, differentiation under the two contour integrals is
 valid on every smaller closed disk
 \[
 \overline{D(z_0,r)}
@@ -212,7 +212,7 @@ Thus the complex derivative exists at every \(z\in D(z_0,R)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -223,7 +223,7 @@ Hence
 ::: pf-proof
 
 The center \(z_0\) was arbitrary, and one may choose any \(R>0\). Step
-<1>4 therefore proves holomorphy in a neighborhood of every point of
+[](#s1-4){.pf-ref} therefore proves holomorphy in a neighborhood of every point of
 \(\mathbb C\).
 
 :::
@@ -232,7 +232,7 @@ The center \(z_0\) was arbitrary, and one may choose any \(R>0\). Step
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

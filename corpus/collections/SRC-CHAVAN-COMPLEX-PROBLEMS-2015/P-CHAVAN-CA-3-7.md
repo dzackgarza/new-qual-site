@@ -22,7 +22,7 @@ in the closed unit disk centered at the origin.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the unit circle,
 $$
@@ -51,14 +51,14 @@ unit circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The functions $3e^z$ and $3e^z-z$ have the same number of zeros in the open unit disk, counted with multiplicity.
 
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 |-z|=|z|<|3e^z|
 $$
@@ -69,7 +69,7 @@ therefore gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $3e^z-z$ has no zero in the open unit disk.
 
@@ -77,14 +77,14 @@ The function $3e^z-z$ has no zero in the open unit disk.
 ::: pf-proof
 
 The exponential function never vanishes, so $3e^z$ has no zeros.
-By step <1>2, $3e^z-z$ has the same zero count in the open unit disk,
+By step [](#s1-2){.pf-ref}, $3e^z-z$ has the same zero count in the open unit disk,
 namely zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $3e^z-z$ has no zero on the unit circle.
 
@@ -92,13 +92,13 @@ The function $3e^z-z$ has no zero on the unit circle.
 ::: pf-proof
 
 If $|z|=1$ and $3e^z-z=0$, then $|3e^z|=|z|$, contradicting the
-strict inequality in step <1>1.
+strict inequality in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The number of zeros in the closed unit disk is
 $$
@@ -108,7 +108,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 excludes zeros in the open unit disk, and step <1>4 excludes
+Step [](#s1-3){.pf-ref} excludes zeros in the open unit disk, and step [](#s1-4){.pf-ref} excludes
 zeros on its boundary.
 
 :::
@@ -117,7 +117,7 @@ zeros on its boundary.
 
 ::: pf-qed
 
-Step <1>5 gives the requested zero count.
+Step [](#s1-5){.pf-ref} gives the requested zero count.
 
 :::
 

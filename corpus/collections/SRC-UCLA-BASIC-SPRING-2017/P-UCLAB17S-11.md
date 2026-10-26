@@ -26,7 +26,7 @@ Define $F_n(x)=\int_0^x f_n(t)\,dt$. Show that there is a subsequence $n_k\to\in
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -83,7 +83,7 @@ u=nt.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix a positive integer $m$ and consider the interval
 \[
@@ -128,7 +128,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On $K_m$, the family $(F_n)$ is equi-Lipschitz:
 \[
@@ -163,7 +163,7 @@ Then
 |f_n(t)|\,dt.
 \end{aligned}
 \]
-By the hypothesis and step <1>2,
+By the hypothesis and step [](#s1-2){.pf-ref},
 \[
 |f_n(t)|
 \le
@@ -181,7 +181,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For each fixed $m$, every sequence $(F_n)$ has a subsequence converging uniformly on
 \[
@@ -191,8 +191,8 @@ K_m.
 
 ::: pf-proof
 
-By step <1>1, the family is uniformly bounded on $K_m$.
-By step <1>3, it is equicontinuous there.
+By step [](#s1-1){.pf-ref}, the family is uniformly bounded on $K_m$.
+By step [](#s1-3){.pf-ref}, it is equicontinuous there.
 The interval $K_m$ is compact.
 Apply the Arzelà--Ascoli theorem.
 
@@ -223,7 +223,7 @@ Continue inductively so that the stage-$m$ subsequence converges uniformly on $K
 
 ::: pf-proof
 
-At each stage, apply step <1>4 to the subsequence obtained at the previous stage.
+At each stage, apply step [](#s1-4){.pf-ref} to the subsequence obtained at the previous stage.
 Because
 \[
 K_m\subseteq K_{m+1},
@@ -234,7 +234,7 @@ the process enlarges the interval on which convergence is ensured while retainin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define the diagonal subsequence
 \[
@@ -266,7 +266,7 @@ Every subsequence of a uniformly convergent sequence converges uniformly to the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every
 \[
@@ -293,7 +293,7 @@ Then
 \[
 x\in K_m.
 \]
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 F_{n_k}
 \]
@@ -303,7 +303,7 @@ converges uniformly on $K_m$, hence in particular pointwise at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 At the remaining point,
 \[
@@ -331,7 +331,7 @@ Thus the sequence converges at $0$ as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore there exists a subsequence
 \[
@@ -348,7 +348,7 @@ F_{n_k}(x)
 
 ::: pf-proof
 
-Step <1>7 handles every positive $x$, and step <1>8 handles $x=0$.
+Step [](#s1-7){.pf-ref} handles every positive $x$, and step [](#s1-8){.pf-ref} handles $x=0$.
 The indices $n_k$ form a subsequence of the positive integers and may be chosen strictly increasing at each extraction stage.
 
 :::
@@ -357,7 +357,7 @@ The indices $n_k$ form a subsequence of the positive integers and may be chosen 
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

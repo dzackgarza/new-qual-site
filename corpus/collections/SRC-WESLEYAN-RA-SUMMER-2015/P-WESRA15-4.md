@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The open set
 $$
@@ -86,7 +86,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -104,13 +104,13 @@ The set $U$ is open, so $U^c$ is closed. Hence
 $$
 F=[0,1]\cap U^c
 $$
-is closed in $\RR$. By step <1>2, every rational point of $[0,1]$ lies in $U$, so no rational point belongs to $F$. Thus $F\subseteq E$.
+is closed in $\RR$. By step [](#s1-2){.pf-ref}, every rational point of $[0,1]$ lies in $U$, so no rational point belongs to $F$. Thus $F\subseteq E$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $F$ satisfies
 $$
@@ -127,7 +127,7 @@ m(F)
 \ge
 1-m(U).
 $$
-Step <1>2 therefore gives
+Step [](#s1-2){.pf-ref} therefore gives
 $$
 m(F)\ge1-\frac18=\frac78>\frac34.
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>3--<1>4 give a closed set $F\subset E$ with the required measure.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give a closed set $F\subset E$ with the required measure.
 
 :::
 

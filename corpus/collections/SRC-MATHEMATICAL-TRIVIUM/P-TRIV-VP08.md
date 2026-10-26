@@ -42,7 +42,7 @@ variation must vanish on $\partial D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first variation is
 $$
@@ -80,7 +80,7 @@ with respect to $\varepsilon$ at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Green's identity gives
 $$
@@ -121,7 +121,7 @@ The boundary term vanishes because $\eta=0$ on $\partial D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the first variation becomes
 $$
@@ -139,13 +139,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2.
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore every extremal satisfies
 $$
@@ -158,7 +158,7 @@ in $D$.
 
 ::: pf-proof
 
-At an extremum, the expression in step <1>4 vanishes for every smooth
+At an extremum, the expression in step [](#s1-4){.pf-ref} vanishes for every smooth
 variation $\eta$ with zero boundary values. The fundamental lemma of the
 calculus of variations gives
 $$
@@ -169,7 +169,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus the boundary-value problem is
 $$
@@ -184,16 +184,16 @@ $$
 
 ::: pf-proof
 
-Combine the interior Euler--Lagrange equation from step <1>5 with the fixed
+Combine the interior Euler--Lagrange equation from step [](#s1-5){.pf-ref} with the fixed
 boundary data from the problem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Let $f_*$ solve step <1>6, and let
+Let $f_*$ solve step [](#s1-6){.pf-ref}, and let
 $$
 f=f_*+\eta,
 $$
@@ -229,7 +229,7 @@ $$
 g\eta
 \right)dA.
 $$
-By step <1>3, this equals
+By step [](#s1-3){.pf-ref}, this equals
 $$
 2
 \iint_D
@@ -244,14 +244,14 @@ $\iint_D|\nabla\eta|^2dA$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Therefore every solution of step <1>6 is a minimizer of $J$.
+Therefore every solution of step [](#s1-6){.pf-ref} is a minimizer of $J$.
 
 
 ::: pf-proof
 
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 $$
 J[f]-J[f_*]
 =
@@ -263,14 +263,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $D$ is connected, the minimizer is unique.
 
 
 ::: pf-proof
 
-Equality in step <1>8 implies $\nabla\eta=0$, so $\eta$ is constant on $D$.
+Equality in step [](#s1-8){.pf-ref} implies $\nabla\eta=0$, so $\eta$ is constant on $D$.
 The boundary condition $\eta=0$ forces that constant to be zero.
 
 :::
@@ -279,7 +279,7 @@ The boundary condition $\eta=0$ forces that constant to be zero.
 
 ::: pf-qed
 
-Steps <1>5--<1>6 give the required equation, and steps <1>7--<1>9 identify
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the required equation, and steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} identify
 the extremum as the Dirichlet minimizer.
 
 :::

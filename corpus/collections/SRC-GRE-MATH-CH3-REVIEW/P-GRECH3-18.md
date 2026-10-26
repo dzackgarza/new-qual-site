@@ -36,7 +36,7 @@ what's the value of $\frac{\partial z}{\partial v}$ at $P_0$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The chain rule gives
 $$
@@ -64,7 +64,7 @@ Differentiating this composite with respect to $v$ gives the displayed multivari
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $P_0=(0,1)$,
 $$
@@ -75,7 +75,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-At $P_0$, the intermediate point is $Q_0=(2,1)$. Substituting the supplied derivative values into step <1>1 gives
+At $P_0$, the intermediate point is $Q_0=(2,1)$. Substituting the supplied derivative values into step [](#s1-1){.pf-ref} gives
 $$
 \left.\frac{\partial z}{\partial v}\right|_{P_0}
 =
@@ -94,7 +94,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested partial derivative and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested partial derivative and corresponding choice.
 
 :::
 

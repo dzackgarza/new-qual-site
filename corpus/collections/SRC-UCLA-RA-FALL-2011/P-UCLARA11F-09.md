@@ -81,7 +81,7 @@ lies in a smaller closed annulus on which the Laurent series converges uniformly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore Parseval's identity gives
 \[
@@ -111,7 +111,7 @@ Uniform convergence permits the usual Fourier/Parseval identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In polar coordinates,
 \[
@@ -137,7 +137,7 @@ dA=r\,dr\,d\theta.
 
 ::: pf-step
 
-Using step <1>3,
+Using step [](#s1-3){.pf-ref},
 \[
 \int_{\mathbb D^*}|f|^2\,dA
 =
@@ -152,13 +152,13 @@ r\,dr.
 
 ::: pf-proof
 
-Substitute the Parseval identity into step <1>4.
+Substitute the Parseval identity into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since all summands are nonnegative, Tonelli's theorem gives
 \[
@@ -234,7 +234,7 @@ diverges at \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence for every
 \[
@@ -248,7 +248,7 @@ the finiteness assumption forces
 
 ::: pf-proof
 
-If some \(a_k\ne0\) with \(k<0\), then the corresponding nonnegative term in the sum in step <1>6 would be
+If some \(a_k\ne0\) with \(k<0\), then the corresponding nonnegative term in the sum in step [](#s1-6){.pf-ref} would be
 \[
 2\pi|a_k|^2\cdot\infty=\infty,
 \]
@@ -258,7 +258,7 @@ forcing the whole \(L^2\)-integral to diverge.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the Laurent expansion reduces to
 \[
@@ -273,13 +273,13 @@ for
 
 ::: pf-proof
 
-All negative-power coefficients vanish by step <1>9.
+All negative-power coefficients vanish by step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The power series
 \[
@@ -296,7 +296,7 @@ It is the nonnegative part of the Laurent series whose outer radius of convergen
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Define
 \[
@@ -313,13 +313,13 @@ for
 
 ::: pf-proof
 
-The series is well-defined by step <1>11.
+The series is well-defined by step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The function \(\widetilde f\) is holomorphic on \(\mathbb D\).
 
@@ -332,7 +332,7 @@ A power series is holomorphic on its disk of convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 On the punctured disk,
 \[
@@ -347,20 +347,20 @@ For
 \[
 0<|z|<1,
 \]
-the defining power series for \(\widetilde f\) is exactly the Laurent series for \(f\) after the negative coefficients were shown to vanish in step <1>10.
+the defining power series for \(\widetilde f\) is exactly the Laurent series for \(f\) after the negative coefficients were shown to vanish in step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore \(f\) extends holomorphically across \(0\).
 
 
 ::: pf-proof
 
-The function \(\widetilde f\) from steps <1>12--<1>14 is a holomorphic extension to the whole disk.
+The function \(\widetilde f\) from steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} is a holomorphic extension to the whole disk.
 
 :::
 
@@ -368,7 +368,7 @@ The function \(\widetilde f\) from steps <1>12--<1>14 is a holomorphic extension
 
 ::: pf-qed
 
-Step <1>15 is the required conclusion.
+Step [](#s1-15){.pf-ref} is the required conclusion.
 
 :::
 

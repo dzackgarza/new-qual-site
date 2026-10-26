@@ -27,7 +27,7 @@ Using the Maximum Principle, show that $f$ maps $D$ onto $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The denominator $1-\overline a z$ is nonzero on the closed unit disk.
 
@@ -44,7 +44,7 @@ Hence $\overline a z\ne1$, so the denominator does not vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z$ on the unit circle,
 $$
@@ -72,7 +72,7 @@ Thus numerator and denominator have the same modulus.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -82,7 +82,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $f$ is holomorphic on a neighborhood of the closed disk and continuous on its closure. Step <1>2 gives
+By step [](#s1-1){.pf-ref}, $f$ is holomorphic on a neighborhood of the closed disk and continuous on its closure. Step [](#s1-2){.pf-ref} gives
 $$
 |f|=1
 $$
@@ -96,7 +96,7 @@ for every $z\in D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -122,7 +122,7 @@ Thus $|g|=1$ on the unit circle. Since $g$ is nonconstant and holomorphic on a n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The maps $f$ and $g$ are inverse to one another on $D$.
 
@@ -137,13 +137,13 @@ and
 $$
 g(f(z))=z
 $$
-wherever the formulas are defined. Steps <1>1 and <1>4 ensure that all denominators are nonzero on $D$.
+wherever the formulas are defined. Steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref} ensure that all denominators are nonzero on $D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -153,7 +153,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives $f(D)\subseteq D$. Conversely, if $w\in D$, then step <1>4 gives $g(w)\in D$, and step <1>5 gives
+Step [](#s1-3){.pf-ref} gives $f(D)\subseteq D$. Conversely, if $w\in D$, then step [](#s1-4){.pf-ref} gives $g(w)\in D$, and step [](#s1-5){.pf-ref} gives
 $$
 f(g(w))=w.
 $$
@@ -165,7 +165,7 @@ Hence every $w\in D$ lies in $f(D)$.
 
 ::: pf-qed
 
-Step <1>6 is the required surjectivity statement.
+Step [](#s1-6){.pf-ref} is the required surjectivity statement.
 
 :::
 

@@ -43,7 +43,7 @@ This substitution reflects the interval about its midpoint and exchanges
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Then
 \[
@@ -63,7 +63,7 @@ u=\frac{\pi}{2}-x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -76,7 +76,7 @@ I
 
 ::: pf-proof
 
-Substitute step <1>2 and reverse the limits:
+Substitute step [](#s1-2){.pf-ref} and reverse the limits:
 \[
 \begin{aligned}
 I
@@ -94,7 +94,7 @@ I
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For \(0<u<\pi/2\),
 \[
@@ -128,7 +128,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Adding the original and transformed integrands gives
 \[
@@ -143,7 +143,7 @@ Adding the original and transformed integrands gives
 
 ::: pf-proof
 
-Use step <1>4:
+Use step [](#s1-4){.pf-ref}:
 \[
 \frac1{1+t}
 +
@@ -173,13 +173,13 @@ Hence
 ::: pf-proof
 
 Add the original representation of \(I\) to the representation in step
-<1>3 and use step <1>5.
+[](#s1-3){.pf-ref} and use step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -201,7 +201,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus
 \[
@@ -212,7 +212,7 @@ I=\frac{\pi}{4}}.
 
 ::: pf-proof
 
-Divide step <1>7 by \(2\).
+Divide step [](#s1-7){.pf-ref} by \(2\).
 
 :::
 
@@ -220,7 +220,7 @@ Divide step <1>7 by \(2\).
 
 ::: pf-qed
 
-Step <1>8 is the requested value.
+Step [](#s1-8){.pf-ref} is the requested value.
 
 :::
 

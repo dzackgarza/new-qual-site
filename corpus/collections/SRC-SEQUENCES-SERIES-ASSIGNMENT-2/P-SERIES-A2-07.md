@@ -39,7 +39,7 @@ f_{n+1}f_{n-1}-f_n^2=(-1)^{n+1}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For \(n\ge1\),
 \[
@@ -57,7 +57,7 @@ This is the definition of \(r_{n+1}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Using the Fibonacci recurrence,
 \[
@@ -77,7 +77,7 @@ with \(m=n+1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -90,7 +90,7 @@ r_{n+1}
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 r_{n+1}
@@ -107,7 +107,7 @@ r_{n+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -125,7 +125,7 @@ f_2=f_1+f_0=1+1=2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Also,
 \[
@@ -143,7 +143,7 @@ f_3=f_2+f_1=2+1=3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose for some \(n\ge3\) that
 \[
@@ -181,7 +181,7 @@ because \(n\ge2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -193,14 +193,14 @@ f_n\ge n
 
 ::: pf-proof
 
-Steps <1>4--<1>5 give the initial cases, and step <1>6 gives the induction
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the initial cases, and step [](#s1-6){.pf-ref} gives the induction
 step.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The initial value is
 \[
@@ -224,7 +224,7 @@ f_2f_0-f_1^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The sequence \((C_n)\) satisfies
 \[
@@ -255,7 +255,7 @@ f_n^2-f_{n+1}f_{n-1}\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -268,11 +268,11 @@ f_{n+1}f_{n-1}-f_n^2
 
 ::: pf-proof
 
-From step <1>8,
+From step [](#s1-8){.pf-ref},
 \[
 C_1=1=(-1)^2.
 \]
-Step <1>9 says the sign flips at each step, giving
+Step [](#s1-9){.pf-ref} says the sign flips at each step, giving
 \[
 C_n=(-1)^{n+1}.
 \]
@@ -281,7 +281,7 @@ C_n=(-1)^{n+1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For \(n\ge1\),
 \[
@@ -308,7 +308,7 @@ Subtract:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 By part (c),
 \[
@@ -321,7 +321,7 @@ f_{n+2}f_n-f_{n+1}^2
 
 ::: pf-proof
 
-Apply step <1>10 with \(n\) replaced by \(n+1\):
+Apply step [](#s1-10){.pf-ref} with \(n\) replaced by \(n+1\):
 \[
 f_{n+2}f_n-f_{n+1}^2
 =
@@ -334,7 +334,7 @@ f_{n+2}f_n-f_{n+1}^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -347,13 +347,13 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>11--<1>12 and take absolute values.
+Combine steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} and take absolute values.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For \(n\ge2\),
 \[
@@ -365,13 +365,13 @@ f_{n+1}\ge n+1.
 
 ::: pf-proof
 
-Apply step <1>7 at indices \(n\) and \(n+1\).
+Apply step [](#s1-7){.pf-ref} at indices \(n\) and \(n+1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence
 \[
@@ -383,13 +383,13 @@ Hence
 
 ::: pf-proof
 
-Use step <1>13 and the lower bounds in step <1>14.
+Use step [](#s1-13){.pf-ref} and the lower bounds in step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 For \(n\ge2\),
 \[
@@ -419,7 +419,7 @@ which holds for \(n\ge1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Thus
 \[
@@ -433,13 +433,13 @@ Thus
 
 ::: pf-proof
 
-Combine steps <1>15--<1>16.
+Combine steps [](#s1-15){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Let \(m>n\ge2\). Then
 \[
@@ -458,7 +458,7 @@ The sum telescopes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence
 \[
@@ -471,7 +471,7 @@ Hence
 
 ::: pf-proof
 
-Apply the triangle inequality to step <1>18.
+Apply the triangle inequality to step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -479,7 +479,7 @@ Apply the triangle inequality to step <1>18.
 
 ::: pf-step
 
-By step <1>17,
+By step [](#s1-17){.pf-ref},
 \[
 |r_m-r_n|
 \le
@@ -490,13 +490,13 @@ By step <1>17,
 
 ::: pf-proof
 
-Bound each summand in step <1>19.
+Bound each summand in step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore
 \[
@@ -518,7 +518,7 @@ Extend the finite nonnegative sum to the full tail of the convergent
 
 ::: pf-step
 
-The right-hand side in step <1>21 tends to \(0\) as
+The right-hand side in step [](#s1-21){.pf-ref} tends to \(0\) as
 \[
 n\to\infty.
 \]
@@ -536,14 +536,14 @@ converges, so its tails tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Hence \((r_n)\) is Cauchy.
 
 
 ::: pf-proof
 
-Given \(\varepsilon>0\), choose \(N\) so that the tail in step <1>21 is less
+Given \(\varepsilon>0\), choose \(N\) so that the tail in step [](#s1-21){.pf-ref} is less
 than \(\varepsilon\) for \(n\ge N\). Then every \(m>n\ge N\) satisfies
 \[
 |r_m-r_n|<\varepsilon.
@@ -553,7 +553,7 @@ than \(\varepsilon\) for \(n\ge N\). Then every \(m>n\ge N\) satisfies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 Since \(\mathbb R\) is complete, there exists
 \[
@@ -573,7 +573,7 @@ Every real Cauchy sequence converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 Each \(r_n\) is positive, and in fact
 \[
@@ -596,7 +596,7 @@ r_n=\frac{f_{n+1}}{f_n}>1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Therefore
 \[
@@ -613,7 +613,7 @@ The limit of a sequence whose terms are all greater than \(1\) is at least
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 Passing to the limit in
 \[
@@ -628,18 +628,18 @@ L=1+\frac1L}.
 
 ::: pf-proof
 
-By step <1>24,
+By step [](#s1-24){.pf-ref},
 \[
 r_{n+1}\to L
 \]
-as well. By step <1>26, \(L\ne0\), so the reciprocal function is continuous
-at \(L\). Take limits in step <1>3.
+as well. By step [](#s1-26){.pf-ref}, \(L\ne0\), so the reciprocal function is continuous
+at \(L\). Take limits in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 Thus
 \[
@@ -649,13 +649,13 @@ L^2-L-1=0.
 
 ::: pf-proof
 
-Multiply step <1>27 by \(L\).
+Multiply step [](#s1-27){.pf-ref} by \(L\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-29}
 
 The two algebraic roots are
 \[
@@ -676,7 +676,7 @@ L^2-L-1=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-30}
 
 Since \(L\ge1\),
 \[
@@ -687,13 +687,13 @@ L=\frac{1+\sqrt5}{2}}.
 
 ::: pf-proof
 
-The second root is negative, while step <1>26 gives \(L\ge1\).
+The second root is negative, while step [](#s1-26){.pf-ref} gives \(L\ge1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-31}
 
 Therefore
 \[
@@ -707,7 +707,7 @@ Therefore
 
 ::: pf-proof
 
-Use the definition \(r_n=f_{n+1}/f_n\) and step <1>30.
+Use the definition \(r_n=f_{n+1}/f_n\) and step [](#s1-30){.pf-ref}.
 
 :::
 
@@ -715,8 +715,8 @@ Use the definition \(r_n=f_{n+1}/f_n\) and step <1>30.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), step <1>7 proves part (b), step <1>10 proves part
-(c), step <1>17 proves part (d), and steps <1>23--<1>31 prove part (e).
+Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-7){.pf-ref} proves part (b), step [](#s1-10){.pf-ref} proves part
+(c), step [](#s1-17){.pf-ref} proves part (d), and steps [](#s1-23){.pf-ref} through [](#s1-31){.pf-ref} prove part (e).
 
 :::
 

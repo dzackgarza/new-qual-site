@@ -28,7 +28,7 @@ A right circular cylinder has base radius $r=100$ cm and height $h=100$ cm. Whic
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a cylinder with volume $V(r,h)=\pi r^2h$, the first-order change is
 $$
@@ -57,7 +57,7 @@ which is the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $(r,h)=(100,100)$ with $\Delta r=1$ and $\Delta h=-1$,
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-Substituting the stated changes into step <1>1 gives
+Substituting the stated changes into step [](#s1-1){.pf-ref} gives
 $$
 \Delta V
 \approx
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The volume therefore increases by approximately
 $$
@@ -91,7 +91,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-The approximation in step <1>2 is positive, so it represents an increase, with magnitude $\pi(100)^2$ cubic cm.
+The approximation in step [](#s1-2){.pf-ref} is positive, so it represents an increase, with magnitude $\pi(100)^2$ cubic cm.
 
 :::
 
@@ -99,7 +99,7 @@ The approximation in step <1>2 is positive, so it represents an increase, with m
 
 ::: pf-qed
 
-Step <1>3 gives the requested approximate change and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested approximate change and corresponding choice.
 
 :::
 

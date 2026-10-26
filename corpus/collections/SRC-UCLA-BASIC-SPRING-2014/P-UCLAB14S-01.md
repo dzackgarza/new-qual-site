@@ -31,7 +31,7 @@ Part (a) has a straightforward example. Part (b) is false as printed.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -75,7 +75,7 @@ A^4=-I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -85,7 +85,7 @@ Therefore
 
 ::: pf-proof
 
-This is immediate from step <1>1.
+This is immediate from step [](#s1-1){.pf-ref}.
 Thus the polynomial
 \[
 t^4+1
@@ -96,7 +96,7 @@ annihilates $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The vectors
 \[
@@ -107,7 +107,7 @@ form a basis of $\mathbb R^4$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 e_1,\ Ae_1,\ A^2e_1,\ A^3e_1
 =
@@ -119,7 +119,7 @@ This is the standard basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No nonzero polynomial of degree at most $3$ annihilates $A$.
 
@@ -150,7 +150,7 @@ c_2A^2e_1
 +
 c_3A^3e_1.
 \]
-By step <1>3, the four vectors are linearly independent.
+By step [](#s1-3){.pf-ref}, the four vectors are linearly independent.
 Hence
 \[
 c_0=c_1=c_2=c_3=0.
@@ -161,7 +161,7 @@ Thus only the zero polynomial of degree at most $3$ annihilates $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The minimal polynomial of $A$ is
 \[
@@ -171,11 +171,11 @@ The minimal polynomial of $A$ is
 
 ::: pf-proof
 
-Step <1>2 shows that the minimal polynomial divides
+Step [](#s1-2){.pf-ref} shows that the minimal polynomial divides
 \[
 t^4+1.
 \]
-Step <1>4 shows that its degree cannot be at most $3$.
+Step [](#s1-4){.pf-ref} shows that its degree cannot be at most $3$.
 Therefore it has degree $4$.
 Since it is monic and divides the monic degree-$4$ polynomial $t^4+1$, it must equal that polynomial.
 This proves part (a).
@@ -184,7 +184,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Over the real numbers,
 \[
@@ -216,7 +216,7 @@ The two quadratic factors are distinct and relatively prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 \[
@@ -234,11 +234,11 @@ q(A)r(A)=0.
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 q(t)r(t)=t^4+1.
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 (A^4+I)=0.
 \]
@@ -251,7 +251,7 @@ q(A)r(A)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The operator
 \[
@@ -267,13 +267,13 @@ If
 r(A)=0,
 \]
 Then the nonzero polynomial $r$ of degree $2$ would annihilate $A$.
-This contradicts step <1>5, because the minimal polynomial has degree $4$.
+This contradicts step [](#s1-5){.pf-ref}, because the minimal polynomial has degree $4$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The subspace
 \[
@@ -284,7 +284,7 @@ is nonzero and invariant under $A$.
 
 ::: pf-proof
 
-Nonzeroness follows from step <1>8.
+Nonzeroness follows from step [](#s1-8){.pf-ref}.
 
 If
 \[
@@ -313,14 +313,14 @@ Thus $W$ is $A$-invariant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The invariant subspace $W$ is proper.
 
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 q(A)r(A)=0.
 \]
@@ -345,12 +345,12 @@ then $q(A)$ would vanish on all of $\mathbb R^4$, so
 \[
 q(A)=0.
 \]
-That would make the degree-$2$ polynomial $q$ an annihilating polynomial for $A$, again contradicting step <1>5.
+That would make the degree-$2$ polynomial $q$ an annihilating polynomial for $A$, again contradicting step [](#s1-5){.pf-ref}.
 Therefore
 \[
 W\ne\mathbb R^4.
 \]
-Together with step <1>9,
+Together with step [](#s1-9){.pf-ref},
 \[
 \boxed{0\ne W\ne\mathbb R^4}.
 \]
@@ -359,7 +359,7 @@ Together with step <1>9,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore part (b) is false as printed.
 
@@ -370,8 +370,8 @@ The matrix in part (a) has minimal polynomial
 \[
 t^4+1
 \]
-by step <1>5.
-Steps <1>9--<1>10 exhibit a nonzero proper invariant real subspace
+by step [](#s1-5){.pf-ref}.
+Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} exhibit a nonzero proper invariant real subspace
 \[
 W=\operatorname{im}r(A).
 \]
@@ -383,8 +383,8 @@ Thus the assertion that the associated real linear map has no nontrivial invaria
 
 ::: pf-qed
 
-Step <1>5 answers part (a).
-Step <1>11 gives the mathematically correct disposition of part (b), namely a counterexample to the source assertion.
+Step [](#s1-5){.pf-ref} answers part (a).
+Step [](#s1-11){.pf-ref} gives the mathematically correct disposition of part (b), namely a counterexample to the source assertion.
 
 :::
 

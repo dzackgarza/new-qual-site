@@ -50,7 +50,7 @@ the Lagrange multiplier theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The multiplier equations are
 $$
@@ -86,14 +86,14 @@ the equations follow after dividing by $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At a critical point, at most one of $x,y,z$ is nonzero.
 
 
 ::: pf-proof
 
-If two coordinates were nonzero, step <1>2 would force $\lambda$ to equal
+If two coordinates were nonzero, step [](#s1-2){.pf-ref} would force $\lambda$ to equal
 two distinct numbers among
 $$
 a^2,
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The constrained critical points are exactly
 $$
@@ -125,14 +125,14 @@ $$
 
 ::: pf-proof
 
-By step <1>3, exactly one coordinate is nonzero because the constraint equals
+By step [](#s1-3){.pf-ref}, exactly one coordinate is nonzero because the constraint equals
 $1$. Substituting into the ellipsoid equation gives the displayed values.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On the ellipsoid,
 $$
@@ -185,7 +185,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The points
 $$
@@ -199,7 +199,7 @@ $$
 
 ::: pf-proof
 
-Equality in the lower bound from step <1>5 occurs exactly when
+Equality in the lower bound from step [](#s1-5){.pf-ref} occurs exactly when
 $$
 y=z=0,
 $$
@@ -209,7 +209,7 @@ which on the ellipsoid gives $x=\pm a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The points
 $$
@@ -223,7 +223,7 @@ $$
 
 ::: pf-proof
 
-Equality in the upper bound from step <1>5 occurs exactly when
+Equality in the upper bound from step [](#s1-5){.pf-ref} occurs exactly when
 $$
 x=y=0,
 $$
@@ -233,7 +233,7 @@ which gives $z=\pm c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The points
 $$
@@ -283,7 +283,7 @@ $(0,-b,0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the complete list of local extrema is
 $$
@@ -298,7 +298,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>6--<1>8 classify all critical points from step <1>4.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} classify all critical points from step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -306,7 +306,7 @@ Steps <1>6--<1>8 classify all critical points from step <1>4.
 
 ::: pf-qed
 
-Step <1>9 gives all constrained local minima and maxima.
+Step [](#s1-9){.pf-ref} gives all constrained local minima and maxima.
 
 :::
 

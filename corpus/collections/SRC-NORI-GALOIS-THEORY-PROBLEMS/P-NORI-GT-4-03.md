@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $\beta\in S$ such that
 $$
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The second assertion is false for $\alpha=0$.
 
@@ -83,7 +83,7 @@ Thus the intended statement must concern nonzero $\alpha$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $S$ is an integral domain and $0\ne\alpha\in S$. Then
 $$
@@ -104,9 +104,9 @@ then the absence of zero divisors in $S$ and the assumption $\alpha\ne0$ imply $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Under the hypotheses of step <1>3,
+Under the hypotheses of step [](#s1-3){.pf-ref},
 $$
 \boxed{\operatorname{Norm}_R^S(\alpha)\ne0}.
 $$
@@ -126,7 +126,7 @@ Since this determinant is $\operatorname{Norm}_R^S(\alpha)$, the claim follows.
 
 ::: pf-qed
 
-Step <1>1 proves the divisibility assertion. Steps <1>2--<1>4 resolve the second sentence literally and prove its intended form for every nonzero $\alpha$ in an integral domain $S$.
+Step [](#s1-1){.pf-ref} proves the divisibility assertion. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} resolve the second sentence literally and prove its intended form for every nonzero $\alpha$ in an integral domain $S$.
 
 :::
 

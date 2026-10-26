@@ -26,7 +26,7 @@ where every $K_n$ is closed and nowhere dense.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $U\subseteq X$ is nonempty and open, and $K\subseteq X$ is closed and nowhere dense, then there is a closed ball
 \[
@@ -65,7 +65,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There are points $x_n\in X$ and radii $\delta_n>0$ such that for every $n\ge1$,
 \[
@@ -84,7 +84,7 @@ and
 
 ::: pf-proof
 
-Apply step <1>1 to
+Apply step [](#s1-1){.pf-ref} to
 \[
 U=X
 \]
@@ -99,7 +99,7 @@ The open ball
 \[
 B(x_n,\delta_n)
 \]
-is nonempty. Apply step <1>1 to this open set and $K_{n+1}$.
+is nonempty. Apply step [](#s1-1){.pf-ref} to this open set and $K_{n+1}$.
 Choose the resulting radius also small enough that
 \[
 \delta_{n+1}<\min\left\{2^{-(n+1)},\frac{\delta_n}{2}\right\}.
@@ -116,14 +116,14 @@ This completes the induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(x_n)$ is Cauchy.
 
 
 ::: pf-proof
 
-If $m>n$, repeated nesting from step <1>2 gives
+If $m>n$, repeated nesting from step [](#s1-2){.pf-ref} gives
 \[
 x_m\in B(x_n,\delta_n).
 \]
@@ -145,7 +145,7 @@ Thus $(x_n)$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists $x\in X$ such that
 \[
@@ -155,13 +155,13 @@ x_n\to x.
 
 ::: pf-proof
 
-The space $X$ is complete and $(x_n)$ is Cauchy by step <1>3.
+The space $X$ is complete and $(x_n)$ is Cauchy by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $n$,
 \[
@@ -177,7 +177,7 @@ x_m\in B(x_n,\delta_n)
 \subseteq
 \overline B(x_n,\delta_n)
 \]
-by the nesting in step <1>2.
+by the nesting in step [](#s1-2){.pf-ref}.
 The closed ball
 \[
 \overline B(x_n,\delta_n)
@@ -191,7 +191,7 @@ x\in\overline B(x_n,\delta_n).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n$,
 \[
@@ -201,11 +201,11 @@ x\notin K_n.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 x\in\overline B(x_n,\delta_n),
 \]
-while step <1>2 gives
+while step [](#s1-2){.pf-ref} gives
 \[
 \overline B(x_n,\delta_n)\cap K_n=\varnothing.
 \]
@@ -215,7 +215,7 @@ Hence $x\notin K_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The assumed covering
 \[
@@ -226,7 +226,7 @@ is impossible.
 
 ::: pf-proof
 
-Step <1>4 gives $x\in X$, while step <1>6 gives
+Step [](#s1-4){.pf-ref} gives $x\in X$, while step [](#s1-6){.pf-ref} gives
 \[
 x\notin\bigcup_{n=1}^{\infty}K_n.
 \]
@@ -236,14 +236,14 @@ This contradicts the assumed equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore a nonempty complete metric space cannot be a countable union of closed nowhere dense sets.
 
 
 ::: pf-proof
 
-This is exactly the contradiction established in step <1>7.
+This is exactly the contradiction established in step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -251,7 +251,7 @@ This is exactly the contradiction established in step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the Baire category theorem in the form requested.
+Step [](#s1-8){.pf-ref} is the Baire category theorem in the form requested.
 
 :::
 

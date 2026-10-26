@@ -27,7 +27,7 @@ Show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $z\in\mathbb D$,
 $$
@@ -43,7 +43,7 @@ The map $f$ is holomorphic on $\mathbb D$, satisfies $f(0)=0$, and maps $\mathbb
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\zeta$ on the unit circle,
 $$
@@ -53,7 +53,7 @@ $$
 
 ::: pf-proof
 
-Fix $|\zeta|=1$. For $0<r<1$, step <1>1 gives
+Fix $|\zeta|=1$. For $0<r<1$, step [](#s1-1){.pf-ref} gives
 $$
 |f(r\zeta)|\le r.
 $$
@@ -63,7 +63,7 @@ Since $f$ is entire, it is continuous at $\zeta$. Letting $r\uparrow1$ yields $|
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -77,7 +77,7 @@ Define
 $$
 \phi(t)\coloneqq |f(e^{it})|^2.
 $$
-By step <1>2, $\phi(t)\le1$ for all real $t$, while
+By step [](#s1-2){.pf-ref}, $\phi(t)\le1$ for all real $t$, while
 $$
 \phi(0)=|f(1)|^2=1.
 $$
@@ -100,7 +100,7 @@ Hence $f'(1)$ is real.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -110,7 +110,7 @@ $$
 
 ::: pf-proof
 
-For $0<r<1$, step <1>1 gives
+For $0<r<1$, step [](#s1-1){.pf-ref} gives
 $$
 |f(r)|\le r.
 $$
@@ -136,7 +136,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -146,7 +146,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, $f'(1)$ is real. Step <1>4 then gives the stated inequality.
+By step [](#s1-3){.pf-ref}, $f'(1)$ is real. Step [](#s1-4){.pf-ref} then gives the stated inequality.
 
 :::
 
@@ -154,7 +154,7 @@ By step <1>3, $f'(1)$ is real. Step <1>4 then gives the stated inequality.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

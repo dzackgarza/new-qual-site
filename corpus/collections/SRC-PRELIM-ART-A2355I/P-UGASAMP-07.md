@@ -24,7 +24,7 @@ are linearly independent.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -44,7 +44,7 @@ Expand the three scalar multiples and collect the coefficients of \(u\), \(v\), 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The coefficients satisfy
 \[
@@ -54,13 +54,13 @@ The coefficients satisfy
 
 ::: pf-proof
 
-The vectors \(u,v,w\) are linearly independent. Therefore the linear combination in step <1>1 can vanish only if each coefficient is zero.
+The vectors \(u,v,w\) are linearly independent. Therefore the linear combination in step [](#s1-1){.pf-ref} can vanish only if each coefficient is zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -70,7 +70,7 @@ a=b=c=0.
 
 ::: pf-proof
 
-From the third equation in step <1>2,
+From the third equation in step [](#s1-2){.pf-ref},
 \[
 c=b.
 \]
@@ -91,7 +91,7 @@ so \(a=0\). Hence \(b=-2a=0\) and \(c=b=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -101,7 +101,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 shows that the only linear relation among the three displayed vectors has all coefficients equal to zero. This is exactly the definition of linear independence.
+Step [](#s1-3){.pf-ref} shows that the only linear relation among the three displayed vectors has all coefficients equal to zero. This is exactly the definition of linear independence.
 
 :::
 
@@ -109,7 +109,7 @@ Step <1>3 shows that the only linear relation among the three displayed vectors 
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

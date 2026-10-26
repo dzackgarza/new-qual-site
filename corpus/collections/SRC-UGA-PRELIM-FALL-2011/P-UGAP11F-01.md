@@ -45,7 +45,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The contrapositive is:
 
@@ -79,7 +79,7 @@ means that his score was below $80$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The converse is:
 
@@ -105,7 +105,7 @@ The converse need not follow from the original implication.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If Michael's final-exam score was $75$, nothing can be concluded about whether he passed the class.
 
@@ -134,7 +134,7 @@ Thus both passing and failing are logically compatible with the given informatio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If Michael passed the course, nothing can be concluded about whether his final-exam score was at least $80$.
 
@@ -153,13 +153,13 @@ from
 $$
 Q
 $$
-would use the converse from step <1>2, which is not assumed true.
+would use the converse from step [](#s1-2){.pf-ref}, which is not assumed true.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If Michael failed the course, then his final-exam score was below $80$.
 
@@ -170,7 +170,7 @@ Failing the course means
 $$
 \neg Q.
 $$
-By the contrapositive in step <1>1,
+By the contrapositive in step [](#s1-1){.pf-ref},
 $$
 \neg Q\Longrightarrow\neg P.
 $$
@@ -182,7 +182,7 @@ Therefore his score was below $80$.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 answer parts (a)--(e), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} answer parts (a)--(e), respectively.
 
 :::
 

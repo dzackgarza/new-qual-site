@@ -27,7 +27,7 @@ where $H$ is the Heaviside function.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Distributionally,
 \[
@@ -53,7 +53,7 @@ The last term tends to zero because $\phi(-\epsilon)-\phi(\epsilon)=O(\epsilon)$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Distributionally,
 \[
@@ -75,7 +75,7 @@ For every test function $\phi$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -87,7 +87,7 @@ Therefore
 
 ::: pf-proof
 
-Differentiate the boundary-value decomposition preceding step <1>1 and apply steps <1>1--<1>2:
+Differentiate the boundary-value decomposition preceding step [](#s1-1){.pf-ref} and apply steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}:
 \[
 \frac d{dx}\bigl(\log|x|+i\pi H(-x)\bigr)
 =\operatorname{pv}\frac1x-i\pi\delta(x).
@@ -97,14 +97,14 @@ Differentiate the boundary-value decomposition preceding step <1>1 and apply ste
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 This is the source's identity when its symbol $1/x$ is understood as the principal-value distribution.
 
 
 ::: pf-proof
 
-The ordinary function $1/x$ is not locally integrable at the origin and therefore does not itself define the distribution required by the formula. Step <1>3 supplies the precise distributional meaning.
+The ordinary function $1/x$ is not locally integrable at the origin and therefore does not itself define the distribution required by the formula. Step [](#s1-3){.pf-ref} supplies the precise distributional meaning.
 
 :::
 
@@ -112,7 +112,7 @@ The ordinary function $1/x$ is not locally integrable at the origin and therefor
 
 ::: pf-qed
 
-Steps <1>3--<1>4 establish the stated identity with its necessary boundary-value and principal-value interpretations.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} establish the stated identity with its necessary boundary-value and principal-value interpretations.
 
 :::
 

@@ -46,7 +46,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonzero solution therefore satisfies
 $$
@@ -89,7 +89,7 @@ for every $x$.
 
 ::: pf-proof
 
-If the solution is not identically zero, step <1>2 excludes $f(0)=0$, so
+If the solution is not identically zero, step [](#s1-2){.pf-ref} excludes $f(0)=0$, so
 $f(0)=1$. Also
 $$
 1
@@ -104,7 +104,7 @@ which forces $f(x)\neq0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose $f$ is differentiable and nonzero. Then
 $$
@@ -127,7 +127,7 @@ $$
 f(x)
 \frac{f(h)-1}{h},
 $$
-using $f(0)=1$ from step <1>3. Let $h\to0$:
+using $f(0)=1$ from step [](#s1-3){.pf-ref}. Let $h\to0$:
 $$
 f'(x)=f(x)f'(0).
 $$
@@ -136,7 +136,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence every differentiable nonzero solution is
 $$
@@ -151,7 +151,7 @@ Put
 $$
 c=f'(0).
 $$
-Step <1>4 gives the initial-value problem
+Step [](#s1-4){.pf-ref} gives the initial-value problem
 $$
 f'=cf,
 \qquad
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the differentiable solutions are exactly
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>2 and <1>5 show necessity. Conversely, the zero function satisfies
+Steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} show necessity. Conversely, the zero function satisfies
 the equation, and
 $$
 e^{cx}e^{cy}=e^{c(x+y)}
@@ -191,7 +191,7 @@ for every $c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Now suppose only that $f$ is continuous and nonzero. Then
 $$
@@ -202,7 +202,7 @@ for every $x$.
 
 ::: pf-proof
 
-By step <1>3, $f$ never vanishes. Moreover,
+By step [](#s1-3){.pf-ref}, $f$ never vanishes. Moreover,
 $$
 f(x)
 =
@@ -216,7 +216,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 $$
@@ -230,7 +230,7 @@ $$
 
 ::: pf-proof
 
-Step <1>7 makes the logarithm well-defined. Continuity of $f$ and of the
+Step [](#s1-7){.pf-ref} makes the logarithm well-defined. Continuity of $f$ and of the
 logarithm gives continuity of $g$. The functional equation gives
 $$
 \begin{aligned}
@@ -248,7 +248,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every continuous additive function has the form
 $$
@@ -289,7 +289,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence every continuous nonzero solution is
 $$
@@ -299,7 +299,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>8--<1>9,
+By steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref},
 $$
 \log f(x)=cx.
 $$
@@ -309,7 +309,7 @@ Exponentiate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore the continuous solutions are again exactly
 $$
@@ -323,8 +323,8 @@ $$
 
 ::: pf-proof
 
-Step <1>2 handles the zero solution and step <1>10 handles every nonzero
-continuous solution. The converse verification is the same as in step <1>6.
+Step [](#s1-2){.pf-ref} handles the zero solution and step [](#s1-10){.pf-ref} handles every nonzero
+continuous solution. The converse verification is the same as in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -332,7 +332,7 @@ continuous solution. The converse verification is the same as in step <1>6.
 
 ::: pf-qed
 
-Steps <1>6 and <1>11 classify the differentiable and continuous solutions,
+Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref} classify the differentiable and continuous solutions,
 respectively.
 
 :::

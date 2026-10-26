@@ -22,7 +22,7 @@ Suppose that $r^2 = r$ for all $r$ in a ring $R$. Show that $R$ is commutative.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $r\in R$,
 \[
@@ -53,7 +53,7 @@ Subtracting $2r$ in the additive group of $R$ yields
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $r,s\in R$,
 \[
@@ -80,7 +80,7 @@ rs+sr=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $r,s\in R$,
 \[
@@ -90,11 +90,11 @@ For every $r,s\in R$,
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 rs=-sr.
 \]
-Step <1>1 applied to the element $sr$ gives
+Step [](#s1-1){.pf-ref} applied to the element $sr$ gives
 \[
 sr+sr=0,
 \]
@@ -108,14 +108,14 @@ Therefore $rs=sr$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence $R$ is commutative.
 
 
 ::: pf-proof
 
-Step <1>3 shows that every pair of elements commutes.
+Step [](#s1-3){.pf-ref} shows that every pair of elements commutes.
 
 :::
 
@@ -123,7 +123,7 @@ Step <1>3 shows that every pair of elements commutes.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

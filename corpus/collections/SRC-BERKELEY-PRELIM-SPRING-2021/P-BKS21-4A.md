@@ -66,7 +66,7 @@ for $z\neq0$, and the removable value at $0$ is $a_1=f'(0)$. Hence the displayed
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $0<r<1$,
 $$
@@ -93,7 +93,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -103,7 +103,7 @@ $$
 
 ::: pf-proof
 
-By definition, $g(0)=f'(0)$. Step <1>2 holds for every $0<r<1$; letting $r\uparrow1$ gives
+By definition, $g(0)=f'(0)$. Step [](#s1-2){.pf-ref} holds for every $0<r<1$; letting $r\uparrow1$ gives
 $$
 |f'(0)|=|g(0)|\leq1.
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required inequality.
+Step [](#s1-3){.pf-ref} is the required inequality.
 
 :::
 

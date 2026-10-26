@@ -65,7 +65,7 @@ This is a fiberwise injective bundle map whose image is the line spanned by $\wi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The metric gives an orthogonal splitting
 \[
@@ -82,7 +82,7 @@ Let $\eta_x$ be the orthogonal complement of the line $\mathbb R\widehat s(x)$ i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Euler class satisfies the Whitney product formula
 \[
@@ -96,13 +96,13 @@ For oriented real vector bundles $\alpha$ and $\beta$, the Thom class of $\alpha
 \[
 e(\alpha\oplus\beta)=e(\alpha)\smile e(\beta).
 \]
-Apply this to the splitting in step <1>3, with the induced orientation on $\eta$ chosen so that the direct-sum orientation agrees with that of $\xi$.
+Apply this to the splitting in step [](#s1-3){.pf-ref}, with the induced orientation on $\eta$ chosen so that the direct-sum orientation agrees with that of $\xi$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Euler class of the trivial line bundle vanishes:
 \[
@@ -118,7 +118,7 @@ The Euler class of an oriented rank-one bundle lies in $H^1(X;\mathbb Z)$ and is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -128,7 +128,7 @@ Hence
 
 ::: pf-proof
 
-Substitute step <1>5 into the Whitney formula of step <1>4:
+Substitute step [](#s1-5){.pf-ref} into the Whitney formula of step [](#s1-4){.pf-ref}:
 \[
 e(\xi)=0\smile e(\eta)=0.
 \]
@@ -144,7 +144,7 @@ Equivalently, this is the primary obstruction interpretation of the Euler class.
 
 ::: pf-proof
 
-For an oriented rank-$r$ bundle, $e(\xi)\in H^r(X;\mathbb Z)$ is the primary obstruction to extending a nowhere-zero section over the $r$-skeleton. A global nowhere-zero section already exists by hypothesis, so that obstruction must vanish. This independently gives the conclusion of step <1>6.
+For an oriented rank-$r$ bundle, $e(\xi)\in H^r(X;\mathbb Z)$ is the primary obstruction to extending a nowhere-zero section over the $r$-skeleton. A global nowhere-zero section already exists by hypothesis, so that obstruction must vanish. This independently gives the conclusion of step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -152,7 +152,7 @@ For an oriented rank-$r$ bundle, $e(\xi)\in H^r(X;\mathbb Z)$ is the primary obs
 
 ::: pf-qed
 
-Step <1>6 proves the required vanishing.
+Step [](#s1-6){.pf-ref} proves the required vanishing.
 
 :::
 

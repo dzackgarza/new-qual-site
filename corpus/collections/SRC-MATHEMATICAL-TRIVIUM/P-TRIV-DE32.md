@@ -23,7 +23,7 @@ The limit is understood in the sense of distributions as $\epsilon\to0^+$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $\epsilon>0$,
 \[
@@ -44,7 +44,7 @@ whose imaginary part is $\epsilon/(x^2+\epsilon^2)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every test function $\phi\in C_c^\infty(\mathbb R)$,
 \[
@@ -77,7 +77,7 @@ and the right side is integrable. Dominated convergence therefore gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -90,7 +90,7 @@ in $\mathcal D'(\mathbb R)$.
 
 ::: pf-proof
 
-By step <1>2, the family in step <1>1 converges on every test function $\phi$ to $\phi(0)=\langle\delta,\phi\rangle$, which is precisely convergence to the Dirac distribution.
+By step [](#s1-2){.pf-ref}, the family in step [](#s1-1){.pf-ref} converges on every test function $\phi$ to $\phi(0)=\langle\delta,\phi\rangle$, which is precisely convergence to the Dirac distribution.
 
 :::
 
@@ -98,7 +98,7 @@ By step <1>2, the family in step <1>1 converges on every test function $\phi$ to
 
 ::: pf-qed
 
-Step <1>3 is the asserted distributional identity.
+Step [](#s1-3){.pf-ref} is the asserted distributional identity.
 
 :::
 

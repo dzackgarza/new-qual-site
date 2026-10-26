@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The denominator $f(z)+1$ never vanishes on $\mathbb D\setminus\{0\}$.
 
@@ -57,7 +57,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $g$ is holomorphic on $\mathbb D\setminus\{0\}$ and satisfies
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-Holomorphicity follows from step <1>1. Write
+Holomorphicity follows from step [](#s1-1){.pf-ref}. Write
 $$
 w=f(z).
 $$
@@ -106,7 +106,7 @@ The singularity of $g$ at $0$ is removable.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 |g(z)|<1
 $$
@@ -119,7 +119,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The extended value satisfies
 $$
@@ -129,7 +129,7 @@ $$
 
 ::: pf-proof
 
-Continuity of $\widetilde g$ and step <1>2 give
+Continuity of $\widetilde g$ and step [](#s1-2){.pf-ref} give
 $$
 |\widetilde g(0)|\le1.
 $$
@@ -152,7 +152,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function
 $$
@@ -166,7 +166,7 @@ is holomorphic in a neighborhood of $0$.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \widetilde g(0)\ne1.
 $$
@@ -180,7 +180,7 @@ Thus the displayed quotient is holomorphic there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On the punctured disk,
 $$
@@ -210,14 +210,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the singularity of $f$ at $0$ is removable.
 
 
 ::: pf-proof
 
-Step <1>5 gives a holomorphic function near $0$, and step <1>6 shows that it agrees with $f$ away from $0$. Hence it is a holomorphic extension of $f$ across the puncture.
+Step [](#s1-5){.pf-ref} gives a holomorphic function near $0$, and step [](#s1-6){.pf-ref} shows that it agrees with $f$ away from $0$. Hence it is a holomorphic extension of $f$ across the puncture.
 
 :::
 
@@ -225,7 +225,7 @@ Step <1>5 gives a holomorphic function near $0$, and step <1>6 shows that it agr
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

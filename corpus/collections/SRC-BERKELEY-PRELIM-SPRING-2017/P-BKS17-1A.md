@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The improper integral
 $$
@@ -62,7 +62,7 @@ and $1/x^2$ is integrable on both tails. Hence the integral exists absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $L,R>0$,
 $$
@@ -102,7 +102,7 @@ To justify the integration by parts across $t=0$, split the integral at $\pm\var
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Both improper integrals in the problem exist and
 $$
@@ -116,17 +116,17 @@ $$
 
 ::: pf-proof
 
-Let $L,R\to\infty$ independently in step <1>2. Since $|\sin t|\leq1$,
+Let $L,R\to\infty$ independently in step [](#s1-2){.pf-ref}. Since $|\sin t|\leq1$,
 $$
 \frac{\sin^2R}{R}\longrightarrow0,
 \qquad
 \frac{\sin^2(-L)}{-L}\longrightarrow0.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \int_{-L}^{R}\frac{\sin^2t}{t^2}\,dt\longrightarrow J.
 $$
-Therefore the left side of the identity in step <1>2 has a limit as $L,R\to\infty$, which proves existence of the improper integral of $\sin x/x$, and that limit equals $J$.
+Therefore the left side of the identity in step [](#s1-2){.pf-ref} has a limit as $L,R\to\infty$, which proves existence of the improper integral of $\sin x/x$, and that limit equals $J$.
 
 :::
 
@@ -134,7 +134,7 @@ Therefore the left side of the identity in step <1>2 has a limit as $L,R\to\inft
 
 ::: pf-qed
 
-Step <1>3 proves both existence and equality.
+Step [](#s1-3){.pf-ref} proves both existence and equality.
 
 :::
 

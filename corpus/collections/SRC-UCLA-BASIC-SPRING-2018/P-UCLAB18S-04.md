@@ -39,7 +39,7 @@ N_X=X-I.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each of
 \[
@@ -99,7 +99,7 @@ Hence its square is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each
 \[
@@ -113,7 +113,7 @@ the minimal polynomial is
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 (X-I)^2=0,
 \]
@@ -139,7 +139,7 @@ Therefore the minimal polynomial is exactly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each of
 \[
@@ -159,7 +159,7 @@ All six matrices are unipotent upper- or lower-triangular with characteristic po
 \[
 (t-1)^3.
 \]
-For the five matrices under consideration, step <1>2 says the largest Jordan block has size $2$.
+For the five matrices under consideration, step [](#s1-2){.pf-ref} says the largest Jordan block has size $2$.
 The total dimension is $3$, so the only possible Jordan block-size partition is
 \[
 2+1.
@@ -173,7 +173,7 @@ J_2(1)\oplus[1].
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore any two matrices among
 \[
@@ -184,14 +184,14 @@ are similar over $\mathbb R$.
 
 ::: pf-proof
 
-By step <1>3, all five have the same real Jordan normal form.
+By step [](#s1-3){.pf-ref}, all five have the same real Jordan normal form.
 Matrices with the same Jordan form are similar.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For
 \[
@@ -237,7 +237,7 @@ contributes a nonzero entry, namely the $(1,3)$ entry.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -257,7 +257,7 @@ N_F^3=N_F^2N_F=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The minimal polynomial of $F$ is
 \[
@@ -267,11 +267,11 @@ The minimal polynomial of $F$ is
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 \[
 (F-I)^3=0.
 \]
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 (F-I)^2\ne0.
 \]
@@ -303,14 +303,14 @@ The characteristic polynomial is
 \[
 (t-1)^3,
 \]
-and step <1>7 says the largest Jordan block has size $3$.
+and step [](#s1-7){.pf-ref} says the largest Jordan block has size $3$.
 Since the whole space has dimension $3$, there is exactly one block.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The matrix $F$ is not similar to any of
 \[
@@ -321,7 +321,7 @@ A,B,C,D,E.
 ::: pf-proof
 
 Similarity preserves the minimal polynomial.
-By step <1>2, each of
+By step [](#s1-2){.pf-ref}, each of
 \[
 A,B,C,D,E
 \]
@@ -329,7 +329,7 @@ has minimal polynomial
 \[
 (t-1)^2,
 \]
-while step <1>7 gives
+while step [](#s1-7){.pf-ref} gives
 \[
 (t-1)^3
 \]
@@ -340,7 +340,7 @@ Thus no such similarity is possible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the complete similarity classification is:
 \[
@@ -354,8 +354,8 @@ F\text{ is in a separate similarity class}.
 
 ::: pf-proof
 
-Step <1>4 proves all similarities among the first five matrices.
-Step <1>9 separates $F$ from that class.
+Step [](#s1-4){.pf-ref} proves all similarities among the first five matrices.
+Step [](#s1-9){.pf-ref} separates $F$ from that class.
 There are no other matrices in the list.
 
 :::
@@ -364,7 +364,7 @@ There are no other matrices in the list.
 
 ::: pf-qed
 
-Step <1>10 gives all and only the similar pairs.
+Step [](#s1-10){.pf-ref} gives all and only the similar pairs.
 
 :::
 

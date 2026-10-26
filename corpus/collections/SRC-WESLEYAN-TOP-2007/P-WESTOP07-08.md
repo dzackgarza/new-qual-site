@@ -94,7 +94,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If two based loops are based-homotopic, then their lifts beginning at
 $$
@@ -193,7 +193,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 shows that the endpoint depends only on the based homotopy class
+Step [](#s1-3){.pf-ref} shows that the endpoint depends only on the based homotopy class
 $$
 [\gamma].
 $$
@@ -207,7 +207,7 @@ is well defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map
 $$
@@ -311,7 +311,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map
 $$
@@ -353,7 +353,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map
 $$
@@ -414,7 +414,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -427,7 +427,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>5--<1>7 show that
+Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} show that
 $$
 \Phi
 $$
@@ -437,7 +437,7 @@ is a bijective homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The general part of the argument is the following endpoint-of-lifts statement.
 
@@ -472,7 +472,7 @@ The endpoint lies in the fiber
 $$
 p^{-1}(x_0).
 $$
-The homotopy-lifting argument of step <1>3 shows that the endpoint depends only on
+The homotopy-lifting argument of step [](#s1-3){.pf-ref} shows that the endpoint depends only on
 $$
 [\gamma].
 $$
@@ -516,7 +516,7 @@ In general this statement alone does not put a canonical group law on the fiber.
 $$
 \mathbb Z,
 $$
-and translation invariance of the covering makes concatenation correspond to addition, as shown in step <1>5.
+and translation invariance of the covering makes concatenation correspond to addition, as shown in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -524,7 +524,7 @@ and translation invariance of the covering makes concatenation correspond to add
 
 ::: pf-qed
 
-Step <1>8 computes the fundamental group of the circle, and step <1>9 states exactly the general covering-space mechanism used in the proof without claiming more structure on a general fiber than the argument supplies.
+Step [](#s1-8){.pf-ref} computes the fundamental group of the circle, and step [](#s1-9){.pf-ref} states exactly the general covering-space mechanism used in the proof without claiming more structure on a general fiber than the argument supplies.
 
 :::
 

@@ -26,7 +26,7 @@ Show that $(a_n)$ converges and determine its limit.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\ge1$,
 \[
@@ -62,7 +62,7 @@ Thus the claim follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(a_n)$ is increasing.
 
@@ -83,7 +83,7 @@ Now
 =
 (3-a_n)(a_n+2).
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 3-a_n>0
 \qquad\text{and}\qquad
@@ -102,15 +102,15 @@ a_{n+1}>a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(a_n)$ converges.
 
 
 ::: pf-proof
 
-By step <1>2, $(a_n)$ is increasing.
-By step <1>1, it is bounded above by $3$.
+By step [](#s1-2){.pf-ref}, $(a_n)$ is increasing.
+By step [](#s1-1){.pf-ref}, it is bounded above by $3$.
 The monotone convergence theorem for real sequences therefore gives a limit
 \[
 L=\lim_{n\to\infty}a_n.
@@ -120,7 +120,7 @@ L=\lim_{n\to\infty}a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The limit $L$ satisfies
 \[
@@ -144,7 +144,7 @@ L=\sqrt{6+L}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The only possible nonnegative solution is
 \[
@@ -154,7 +154,7 @@ The only possible nonnegative solution is
 
 ::: pf-proof
 
-Squaring the equation from step <1>4 gives
+Squaring the equation from step [](#s1-4){.pf-ref} gives
 \[
 L^2-L-6=0.
 \]
@@ -168,7 +168,7 @@ L=3
 \quad\text{or}\quad
 L=-2.
 \]
-By step <1>1, every $a_n$ is nonnegative, so
+By step [](#s1-1){.pf-ref}, every $a_n$ is nonnegative, so
 \[
 L\ge0.
 \]
@@ -181,7 +181,7 @@ L=3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -191,7 +191,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 proves existence of the limit, and step <1>5 identifies it.
+Step [](#s1-3){.pf-ref} proves existence of the limit, and step [](#s1-5){.pf-ref} identifies it.
 
 :::
 
@@ -199,7 +199,7 @@ Step <1>3 proves existence of the limit, and step <1>5 identifies it.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

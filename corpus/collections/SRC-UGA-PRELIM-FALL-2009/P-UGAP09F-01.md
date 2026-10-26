@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The symbolic form of the statement is
 $$
@@ -52,14 +52,14 @@ The original sentence makes an assertion for arbitrary real numbers $x$ and $y$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The negation, without using the word "not," is: there exist real numbers $x$ and $y$ such that $x\le0$ and $x<y$, and for every real number $z$ one has $xz\le y$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \neg\!\left(\forall x\in\RR\;\forall y\in\RR\;(P(x,y)\to Q(x,y))\right)
 $$
@@ -82,14 +82,14 @@ Translating this last formula into words gives the sentence in the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The converse is: for all real numbers $x$ and $y$, if there is a real number $z$ such that $xz>y$, then $x\le0$ and $x<y$.
 
 
 ::: pf-proof
 
-The converse of an implication $A\to B$ is $B\to A$. Thus the converse of the formula in step <1>1 is
+The converse of an implication $A\to B$ is $B\to A$. Thus the converse of the formula in step [](#s1-1){.pf-ref} is
 $$
 \forall x\in\RR\;\forall y\in\RR\;
 \bigl(Q(x,y)\to P(x,y)\bigr),
@@ -102,7 +102,7 @@ which is exactly the verbal statement in the claim.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b), and step [](#s1-3){.pf-ref} answers part (c).
 
 :::
 

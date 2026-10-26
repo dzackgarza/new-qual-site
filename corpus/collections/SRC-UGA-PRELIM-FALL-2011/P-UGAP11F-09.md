@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Two vectors are equivalent exactly when their difference lies in
 $$
@@ -85,7 +85,7 @@ $$
 $$
 for every $t\in\RR$.
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 V
 \cong
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -149,7 +149,7 @@ So every vector in $V$ is a scalar multiple of $[e_1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vector $[e_1]$ is nonzero and hence linearly independent.
 
@@ -174,7 +174,7 @@ Thus the only scalar relation on $[e_1]$ is the trivial one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently,
 $$
@@ -187,7 +187,7 @@ is a basis of $V$.
 
 ::: pf-proof
 
-Step <1>3 proves spanning and step <1>4 proves linear independence.
+Step [](#s1-3){.pf-ref} proves spanning and step [](#s1-4){.pf-ref} proves linear independence.
 
 :::
 
@@ -195,7 +195,7 @@ Step <1>3 proves spanning and step <1>4 proves linear independence.
 
 ::: pf-qed
 
-Step <1>5 gives the requested basis and proof.
+Step [](#s1-5){.pf-ref} gives the requested basis and proof.
 
 :::
 

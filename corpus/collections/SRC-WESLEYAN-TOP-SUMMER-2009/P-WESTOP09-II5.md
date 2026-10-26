@@ -48,7 +48,7 @@ Commutativity means
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -89,7 +89,7 @@ h(c)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists
 \[
@@ -109,7 +109,7 @@ Exactness of the top row at $C$ gives
 =
 \operatorname{im}g.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 c\in\ker h,
 \]
@@ -123,7 +123,7 @@ for some $b\in B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -133,7 +133,7 @@ One has
 
 ::: pf-proof
 
-Using step <1>2 and commutativity of the middle square,
+Using step [](#s1-2){.pf-ref} and commutativity of the middle square,
 \[
 g'(\beta(b))
 =
@@ -152,7 +152,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists
 \[
@@ -172,13 +172,13 @@ Exactness of the bottom row at $B'$ gives
 =
 \operatorname{im}f'.
 \]
-Apply this to step <1>3.
+Apply this to step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists
 \[
@@ -202,7 +202,7 @@ is surjective by hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -212,13 +212,13 @@ One has
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \beta(b)
 =
 f'(a').
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 a'=\alpha(a),
 \]
@@ -249,7 +249,7 @@ Subtracting,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -263,13 +263,13 @@ The map
 \[
 \beta:B\to B'
 \]
-is injective. Apply injectivity to step <1>6.
+is injective. Apply injectivity to step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -279,11 +279,11 @@ c=0.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 c=g(b).
 \]
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 b=f(a),
 \]
@@ -312,7 +312,7 @@ c=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The map
 \[
@@ -325,7 +325,7 @@ is injective.
 
 ::: pf-proof
 
-Steps <1>1--<1>8 show that
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} show that
 \[
 \gamma(c)=0
 \quad\Longrightarrow\quad
@@ -342,7 +342,7 @@ Thus
 
 ::: pf-qed
 
-Step <1>9 is exactly the desired injectivity.
+Step [](#s1-9){.pf-ref} is exactly the desired injectivity.
 
 :::
 

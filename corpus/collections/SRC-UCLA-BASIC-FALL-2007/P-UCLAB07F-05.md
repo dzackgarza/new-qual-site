@@ -24,7 +24,7 @@ Show that there is a sequence of polynomials, each vanishing at $1$, that conver
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the Weierstrass approximation theorem, there is a sequence of polynomials $(q_n)$ such that
 \[
@@ -40,7 +40,7 @@ The function $f$ is continuous on the compact interval $[0,1]$, so the Weierstra
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -63,7 +63,7 @@ p_n(1)=q_n(1)-q_n(1)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $f(1)=0$, then
 \[
@@ -102,7 +102,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every polynomial $p$ satisfying $p(1)=0$ can be written as
 \[
@@ -127,7 +127,7 @@ Thus $p(1)=0$ implies $c_0=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the hypotheses of part (b),
 \[
@@ -138,7 +138,7 @@ for every polynomial $p$ with $p(1)=0$.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 p(x)=\sum_{k=1}^{m}c_k(x-1)^k.
 \]
@@ -155,7 +155,7 @@ Using linearity of the integral and the moment hypotheses,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every continuous function $g:[0,1]\to\mathbb R$ satisfying $g(1)=0$,
 \[
@@ -165,7 +165,7 @@ For every continuous function $g:[0,1]\to\mathbb R$ satisfying $g(1)=0$,
 
 ::: pf-proof
 
-By part (a), proved in steps <1>1--<1>3, there are polynomials $p_n$ satisfying
+By part (a), proved in steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, there are polynomials $p_n$ satisfying
 \[
 p_n(1)=0
 \]
@@ -173,7 +173,7 @@ and
 \[
 \|p_n-g\|_\infty\to0.
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \int_0^1 f(x)p_n(x)\,dx=0
 \]
@@ -197,7 +197,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -207,7 +207,7 @@ One has
 
 ::: pf-proof
 
-Apply step <1>6 to the continuous function
+Apply step [](#s1-6){.pf-ref} to the continuous function
 \[
 g(x)=(x-1)f(x),
 \]
@@ -224,7 +224,7 @@ which satisfies $g(1)=0$. Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ vanishes on $[0,1)$.
 
@@ -235,7 +235,7 @@ The function
 \[
 h(x)=(1-x)f(x)^2
 \]
-is continuous and nonnegative on $[0,1]$. By step <1>7, its integral is zero. Hence $h$ is identically zero.
+is continuous and nonnegative on $[0,1]$. By step [](#s1-7){.pf-ref}, its integral is zero. Hence $h$ is identically zero.
 
 For every $x<1$, one has $1-x>0$, so
 \[
@@ -250,14 +250,14 @@ f(x)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function $f$ is identically zero on $[0,1]$.
 
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 f(x)=0
 \]
@@ -276,7 +276,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

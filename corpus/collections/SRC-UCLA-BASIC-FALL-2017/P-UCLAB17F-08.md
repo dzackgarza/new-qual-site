@@ -34,7 +34,7 @@ All limits below are taken relative to $[a,b]$, so at the endpoints they are one
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix $x_0\in[a,b]$ and $\varepsilon>0$.
 There exists $\delta>0$ such that
@@ -58,7 +58,7 @@ L(x_0)=\lim_{y\to x_0}f(y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -95,7 +95,7 @@ and
 \[
 |y_k-x_0|<\delta.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |f(y_k)-L(x_0)|
 <
@@ -116,7 +116,7 @@ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $L$ is continuous on $[a,b]$.
 
@@ -131,7 +131,7 @@ For
 \[
 0<|x-x_0|<\delta/2,
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 |L(x)-L(x_0)|
 \le
@@ -146,7 +146,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -169,7 +169,7 @@ Also
 \[
 L(x)\to L(x_0)
 \]
-by continuity from step <1>3.
+by continuity from step [](#s1-3){.pf-ref}.
 Therefore
 \[
 h(x)
@@ -183,7 +183,7 @@ f(x)-L(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each positive integer $m$, define
 \[
@@ -212,7 +212,7 @@ with
 \[
 x_k\to x_0.
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 h(x_k)\to0.
 \]
@@ -229,7 +229,7 @@ Thus $E_m$ is finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set
 \[
@@ -258,7 +258,7 @@ Indeed, if $h(x)\ne0$, choose $m$ so large that
 \[
 1/m\le |h(x)|.
 \]
-Each $E_m$ is finite by step <1>5.
+Each $E_m$ is finite by step [](#s1-5){.pf-ref}.
 A countable union of finite sets is countable.
 This proves part (b).
 
@@ -266,7 +266,7 @@ This proves part (b).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The function $f$ is bounded on $[a,b]$.
 
@@ -308,8 +308,8 @@ The function $h=f-L$ is bounded.
 
 ::: pf-proof
 
-The function $f$ is bounded by step <1>7.
-The function $L$ is continuous on the compact interval $[a,b]$ by step <1>3, hence bounded.
+The function $f$ is bounded by step [](#s1-7){.pf-ref}.
+The function $L$ is continuous on the compact interval $[a,b]$ by step [](#s1-3){.pf-ref}, hence bounded.
 Therefore their difference $h$ is bounded.
 Choose
 \[
@@ -321,7 +321,7 @@ for all $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function $h$ is Riemann integrable and
 \[
@@ -338,7 +338,7 @@ Choose $m$ so large that
 <
 \frac{\varepsilon}{2}.
 \]
-By step <1>5, the set
+By step [](#s1-5){.pf-ref}, the set
 \[
 E_m
 \]
@@ -381,7 +381,7 @@ U(h,P)-L(h,P)
 \]
 Thus $h$ is Riemann integrable.
 
-Moreover, outside the countable set $D$ from step <1>6,
+Moreover, outside the countable set $D$ from step [](#s1-6){.pf-ref},
 \[
 h=0.
 \]
@@ -396,15 +396,15 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The function $f$ is Riemann integrable.
 
 
 ::: pf-proof
 
-By step <1>3, $L$ is continuous on $[a,b]$, hence Riemann integrable.
-By step <1>9, $h=f-L$ is Riemann integrable.
+By step [](#s1-3){.pf-ref}, $L$ is continuous on $[a,b]$, hence Riemann integrable.
+By step [](#s1-9){.pf-ref}, $h=f-L$ is Riemann integrable.
 Therefore
 \[
 f=L+h
@@ -418,7 +418,7 @@ This proves part (c).
 
 ::: pf-qed
 
-Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>10 proves part (c).
+Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-10){.pf-ref} proves part (c).
 
 :::
 

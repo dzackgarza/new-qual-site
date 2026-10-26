@@ -34,7 +34,7 @@ Let $S$ be the event that a signal passes from input to output.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Conditional on $E$ being open, the circuit consists of the two parallel series paths $AB$ and $CD$, so
 \[
@@ -50,7 +50,7 @@ With $E$ open, passage occurs exactly when $A$ and $B$ are both closed or $C$ an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conditional on $E$ being closed, passage occurs exactly when at least one of $A,C$ is closed and at least one of $B,D$ is closed, so
 \[
@@ -72,7 +72,7 @@ This direct characterization subsumes the failure cases described in the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -82,13 +82,13 @@ P(S)=(1-p)(2p^2-p^4)+p(2p-p^2)^2.
 
 ::: pf-proof
 
-Use the law of total probability, with $P(E\text{ open})=1-p$ and $P(E\text{ closed})=p$, and substitute steps <1>1--<1>2.
+Use the law of total probability, with $P(E\text{ open})=1-p$ and $P(E\text{ closed})=p$, and substitute steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Simplifying gives
 \[
@@ -98,7 +98,7 @@ Simplifying gives
 
 ::: pf-proof
 
-Expand step <1>3:
+Expand step [](#s1-3){.pf-ref}:
 \[
 (1-p)(2p^2-p^4)+p(4p^2-4p^3+p^4)
 =2p^2+2p^3-5p^4+2p^5.
@@ -108,7 +108,7 @@ Expand step <1>3:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The joint probability that $E$ is open and the signal passes is
 \[
@@ -118,13 +118,13 @@ P(E\text{ open}\cap S)=(1-p)(2p^2-p^4).
 
 ::: pf-proof
 
-Multiply $P(E\text{ open})=1-p$ by the conditional probability in step <1>1.
+Multiply $P(E\text{ open})=1-p$ by the conditional probability in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -141,7 +141,7 @@ By the definition of conditional probability,
 \[
 P(E\text{ open}\mid S)=\frac{P(E\text{ open}\cap S)}{P(S)}.
 \]
-Substitute steps <1>4--<1>5.
+Substitute steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -149,7 +149,7 @@ Substitute steps <1>4--<1>5.
 
 ::: pf-qed
 
-Step <1>4 answers part (a), and step <1>6 answers part (b).
+Step [](#s1-4){.pf-ref} answers part (a), and step [](#s1-6){.pf-ref} answers part (b).
 
 :::
 

@@ -35,7 +35,7 @@ All homology and cohomology groups below have integral coefficients.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -78,7 +78,7 @@ S^1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -93,7 +93,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 A\simeq S^1.
 \]
@@ -109,7 +109,7 @@ and vanishes in all other degrees.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Alexander duality gives
 \[
@@ -142,7 +142,7 @@ contractible, so the theorem applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The complement of every thickened knot has homology
 \[
@@ -159,7 +159,7 @@ H_i(S^3\setminus\operatorname{im}(K))
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 \widetilde H_i(S^3\setminus A)
 \]
@@ -251,7 +251,7 @@ Hence the displayed pair is homeomorphic to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The pair
 \[
@@ -281,7 +281,7 @@ Projection onto the first factor gives a homotopy equivalence of pairs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Its relative cohomology is
 \[
@@ -296,7 +296,7 @@ H^j(B,B\cap\partial B^4)
 
 ::: pf-proof
 
-By step <1>6 it suffices to compute
+By step [](#s1-6){.pf-ref} it suffices to compute
 \[
 H^*(D^2,S^1).
 \]
@@ -324,7 +324,7 @@ in degree $2$ and zero otherwise.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Relative Alexander duality for a compact locally contractible
 subset of the ball gives
@@ -365,7 +365,7 @@ A=B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the slice-disk complement has homology
 \[
@@ -382,7 +382,7 @@ H_i(B^4\setminus\operatorname{im}(\Delta))
 
 ::: pf-proof
 
-By steps <1>7--<1>8, reduced homology is nonzero only when
+By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}, reduced homology is nonzero only when
 \[
 3-i=2,
 \]
@@ -433,7 +433,7 @@ H_*(S^1).
 
 ::: pf-proof
 
-Compare steps <1>4 and <1>9.
+Compare steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
 
@@ -441,7 +441,7 @@ Compare steps <1>4 and <1>9.
 
 ::: pf-qed
 
-Step <1>4 solves part (1), and step <1>9 solves part (2).
+Step [](#s1-4){.pf-ref} solves part (1), and step [](#s1-9){.pf-ref} solves part (2).
 
 :::
 

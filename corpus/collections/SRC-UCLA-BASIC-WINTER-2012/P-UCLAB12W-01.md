@@ -39,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The number $\rho(A,B)$ is well defined and belongs to $[0,1]$ for every $A,B\in\Omega$.
 
@@ -60,7 +60,7 @@ Thus $\{d(x,B):x\in A\}$ is nonempty and bounded above by $1$, so $h(A,B)$ exist
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For all $A,B\in\Omega$,
 $$
@@ -81,7 +81,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\rho(A,B)=0$, then $A\subseteq B$.
 
@@ -102,7 +102,7 @@ Therefore $y_n\to x$. Since $B$ is closed in $[0,1]$, it contains the limit $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-If $\rho(A,B)=0$, step <1>3 gives $A\subseteq B$. By symmetry, applying step <1>3 with $A$ and $B$ interchanged gives $B\subseteq A$. Hence $A=B$.
+If $\rho(A,B)=0$, step [](#s1-3){.pf-ref} gives $A\subseteq B$. By symmetry, applying step [](#s1-3){.pf-ref} with $A$ and $B$ interchanged gives $B\subseteq A$. Hence $A=B$.
 
 Conversely, if $A=B$, then for every $x\in A$ one may choose $y=x\in B$, so $d(x,B)=0$. Hence $h(A,B)=h(B,A)=0$ and therefore $\rho(A,B)=0$.
 
@@ -122,7 +122,7 @@ Conversely, if $A=B$, then for every $x\in A$ one may choose $y=x\in B$, so $d(x
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For any nonempty $B,C\subseteq[0,1]$, any $x\in[0,1]$, and any $y\in B$,
 $$
@@ -145,7 +145,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For all $A,B,C\in\Omega$,
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-Fix $x\in A$. By step <1>5, for every $y\in B$,
+Fix $x\in A$. By step [](#s1-5){.pf-ref}, for every $y\in B$,
 $$
 d(x,C)
 \le
@@ -176,7 +176,7 @@ Now take the supremum over $x\in A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The triangle inequality
 $$
@@ -187,7 +187,7 @@ holds for all $A,B,C\in\Omega$.
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 h(A,C)
 \le
@@ -195,7 +195,7 @@ h(A,B)+h(B,C)
 \le
 \rho(A,B)+\rho(B,C).
 $$
-Applying step <1>6 with the order reversed gives
+Applying step [](#s1-6){.pf-ref} with the order reversed gives
 $$
 h(C,A)
 \le
@@ -215,7 +215,7 @@ are therefore bounded above by $\rho(A,B)+\rho(B,C)$.
 
 ::: pf-qed
 
-Step <1>1 proves well-definedness, step <1>2 gives nonnegativity and symmetry, step <1>4 gives definiteness, and step <1>7 proves the triangle inequality. Thus $\rho$ is a metric on $\Omega$.
+Step [](#s1-1){.pf-ref} proves well-definedness, step [](#s1-2){.pf-ref} gives nonnegativity and symmetry, step [](#s1-4){.pf-ref} gives definiteness, and step [](#s1-7){.pf-ref} proves the triangle inequality. Thus $\rho$ is a metric on $\Omega$.
 
 :::
 

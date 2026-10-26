@@ -37,7 +37,7 @@ Enumerate the functions \(g_{k,j}\) level by level, first all \(j\) for \(k=1\),
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every \(f_n\) is continuous and satisfies \(0\le f_n\le1\).
 
@@ -50,7 +50,7 @@ For a closed interval \(I\), the function \(x\mapsto\operatorname{dist}(x,I)\) i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(f_n=g_{k,j}\), then
 \[
@@ -70,7 +70,7 @@ Since \(0\le g_{k,j}\le1\), its integral is at most the measure of its support.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -80,7 +80,7 @@ One has
 
 ::: pf-proof
 
-Only finitely many functions occur before level \(k\), namely \(\sum_{r<k}2^r\). Hence the level \(k=k(n)\) of \(f_n\) tends to infinity with \(n\). Step <1>2 then gives
+Only finitely many functions occur before level \(k\), namely \(\sum_{r<k}2^r\). Hence the level \(k=k(n)\) of \(f_n\) tends to infinity with \(n\). Step [](#s1-2){.pf-ref} then gives
 \[
 0\le\int_0^1 f_n\,dm\le3\cdot2^{-k(n)}\longrightarrow0.
 \]
@@ -89,7 +89,7 @@ Only finitely many functions occur before level \(k\), namely \(\sum_{r<k}2^r\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(x\in[0,1]\), the sequence \((f_n(x))\) has infinitely many terms equal to \(1\).
 
@@ -106,14 +106,14 @@ because \(\operatorname{dist}(x,I_{k,j_k})=0\). The enumeration includes one suc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The assertion is \(\boxed{\text{false}}\); in fact, the constructed sequence fails to converge to \(0\) at every point of \([0,1]\).
 
 
 ::: pf-proof
 
-Steps <1>1 and <1>3 verify all hypotheses of the assertion. Step <1>4 shows that for every \(x\), the values \(f_n(x)\) cannot converge to \(0\), because an infinite subsequence is identically \(1\).
+Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} verify all hypotheses of the assertion. Step [](#s1-4){.pf-ref} shows that for every \(x\), the values \(f_n(x)\) cannot converge to \(0\), because an infinite subsequence is identically \(1\).
 
 :::
 
@@ -121,7 +121,7 @@ Steps <1>1 and <1>3 verify all hypotheses of the assertion. Step <1>4 shows that
 
 ::: pf-qed
 
-Step <1>5 supplies the required counterexample.
+Step [](#s1-5){.pf-ref} supplies the required counterexample.
 
 :::
 

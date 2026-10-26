@@ -29,7 +29,7 @@ $$y' = \frac{2x}{y^2 - 1}$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every integral curve satisfies
 $$
@@ -53,14 +53,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The curve through $(2,3)$ has $C=2$.
 
 
 ::: pf-proof
 
-Substituting $(x,y)=(2,3)$ into step <1>1 gives
+Substituting $(x,y)=(2,3)$ into step [](#s1-1){.pf-ref} gives
 $$
 \frac13(27)-3=4+C,
 $$
@@ -70,7 +70,7 @@ so $6=4+C$ and hence $C=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the required integral curve is
 $$
@@ -81,7 +81,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Substituting the value of $C$ from step <1>2 into step <1>1 and rearranging
+Substituting the value of $C$ from step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref} and rearranging
 gives the displayed equation.
 
 :::
@@ -90,7 +90,7 @@ gives the displayed equation.
 
 ::: pf-qed
 
-Step <1>3 gives the integral curve passing through the prescribed point.
+Step [](#s1-3){.pf-ref} gives the integral curve passing through the prescribed point.
 
 :::
 

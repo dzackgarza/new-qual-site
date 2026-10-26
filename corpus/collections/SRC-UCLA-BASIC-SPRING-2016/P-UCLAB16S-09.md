@@ -27,7 +27,7 @@ Similarly, find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly inde
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Put the vectors as the columns of
 \[
@@ -84,7 +84,7 @@ x(2-x^2).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vectors are linearly independent over $\mathbb R$ exactly when
 \[
@@ -97,7 +97,7 @@ x\notin\{0,\sqrt2,-\sqrt2\}.
 ::: pf-proof
 
 Three vectors in $\mathbb R^3$ are linearly independent over $\mathbb R$ exactly when the determinant of the matrix having them as columns is nonzero.
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \det M(x)=0
 \]
@@ -113,7 +113,7 @@ This proves the real case.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -126,13 +126,13 @@ then the vectors are also linearly independent over $\mathbb Q$.
 
 A rational linear relation is in particular a real linear relation.
 Thus real linear independence implies rational linear independence.
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At
 \[
@@ -164,7 +164,7 @@ is a nontrivial rational linear relation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose
 \[
@@ -240,7 +240,7 @@ q_3=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the vectors are linearly independent over $\mathbb Q$ exactly when
 \[
@@ -250,11 +250,11 @@ Therefore the vectors are linearly independent over $\mathbb Q$ exactly when
 
 ::: pf-proof
 
-Step <1>3 handles all values except
+Step [](#s1-3){.pf-ref} handles all values except
 \[
 0,\pm\sqrt2.
 \]
-Step <1>4 shows dependence at $0$, while step <1>5 proves rational independence at
+Step [](#s1-4){.pf-ref} shows dependence at $0$, while step [](#s1-5){.pf-ref} proves rational independence at
 \[
 \pm\sqrt2.
 \]
@@ -266,7 +266,7 @@ Thus $0$ is the only excluded value.
 
 ::: pf-qed
 
-Step <1>2 gives the answer over $\mathbb R$, and step <1>6 gives the answer over $\mathbb Q$.
+Step [](#s1-2){.pf-ref} gives the answer over $\mathbb R$, and step [](#s1-6){.pf-ref} gives the answer over $\mathbb Q$.
 
 :::
 

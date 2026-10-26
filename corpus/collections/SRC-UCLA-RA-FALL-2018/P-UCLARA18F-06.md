@@ -42,7 +42,7 @@ whenever \(h\in L^1\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(g\in M^\perp\), then for every \(y\in\mathbb R\),
 \[
@@ -66,7 +66,7 @@ which yields the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -88,20 +88,20 @@ Thus \(h\in L^1\). By the chosen Fourier convention,
 \widehat h(y)
 =\int_{\mathbb R}h(\xi)e^{-2\pi i y\xi}\,d\xi,
 \]
-and this is zero for every \(y\) by step <1>1.
+and this is zero for every \(y\) by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every \(g\in M^\perp\) is zero almost everywhere.
 
 
 ::: pf-proof
 
-Step <1>2 and [[PR-47TTS|injectivity of the Fourier transform on \(L^1\)]] imply
+Step [](#s1-2){.pf-ref} and [[PR-47TTS|injectivity of the Fourier transform on \(L^1\)]] imply
 \[
 h(\xi)=\widehat f(\xi)\overline{\widehat g(\xi)}=0
 \]
@@ -115,7 +115,7 @@ hence \(g=0\) in \(L^2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -129,7 +129,7 @@ For any subspace \(M\) of a Hilbert space,
 \[
 \overline M=(M^\perp)^\perp.
 \]
-Step <1>3 gives \(M^\perp=\{0\}\), so \(\overline M=L^2(\mathbb R)\).
+Step [](#s1-3){.pf-ref} gives \(M^\perp=\{0\}\), so \(\overline M=L^2(\mathbb R)\).
 
 :::
 
@@ -137,7 +137,7 @@ Step <1>3 gives \(M^\perp=\{0\}\), so \(\overline M=L^2(\mathbb R)\).
 
 ::: pf-qed
 
-Step <1>4 is exactly the required density of finite linear combinations of translates of \(f\).
+Step [](#s1-4){.pf-ref} is exactly the required density of finite linear combinations of translates of \(f\).
 
 :::
 

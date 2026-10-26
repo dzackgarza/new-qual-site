@@ -23,7 +23,7 @@ prove that the image of $f$ is a closed bounded interval.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The interval
 $$
@@ -50,7 +50,7 @@ is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The image
 $$
@@ -67,7 +67,7 @@ f
 $$
 is continuous by hypothesis.
 The continuous image of a compact space is compact.
-Applying this to step <1>1 gives compactness of
+Applying this to step [](#s1-1){.pf-ref} gives compactness of
 $$
 f([a,b]).
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -95,13 +95,13 @@ $$
 \mathbb R
 $$
 are exactly the closed bounded subsets.
-Apply this to step <1>2.
+Apply this to step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The image
 $$
@@ -116,7 +116,7 @@ The interval
 $$
 [a,b]
 $$
-is connected by step <1>1, and a continuous image of a connected space is connected.
+is connected by step [](#s1-1){.pf-ref}, and a continuous image of a connected space is connected.
 Therefore
 $$
 f([a,b])
@@ -127,7 +127,7 @@ is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every connected subset of
 $$
@@ -177,7 +177,7 @@ which is exactly the interval property.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -188,7 +188,7 @@ is an interval.
 
 ::: pf-proof
 
-Step <1>4 gives connectedness, and step <1>5 characterizes connected subsets of
+Step [](#s1-4){.pf-ref} gives connectedness, and step [](#s1-5){.pf-ref} characterizes connected subsets of
 $$
 \mathbb R
 $$
@@ -198,7 +198,7 @@ as intervals.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 $$
@@ -210,7 +210,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives closedness and boundedness, while step <1>6 gives the interval property.
+Step [](#s1-3){.pf-ref} gives closedness and boundedness, while step [](#s1-6){.pf-ref} gives the interval property.
 
 :::
 
@@ -218,7 +218,7 @@ Step <1>3 gives closedness and boundedness, while step <1>6 gives the interval p
 
 ::: pf-qed
 
-Step <1>7 is exactly the required conclusion.
+Step [](#s1-7){.pf-ref} is exactly the required conclusion.
 
 :::
 

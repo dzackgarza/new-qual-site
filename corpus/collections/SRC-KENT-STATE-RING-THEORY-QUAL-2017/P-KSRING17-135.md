@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each
 $$
@@ -88,7 +88,7 @@ By definition of the radical, some positive power of $x_i$ lies in $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -144,7 +144,7 @@ for at least one index $i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every degree-$N$ monomial in
 $$
@@ -155,12 +155,12 @@ belongs to $I$.
 
 ::: pf-proof
 
-By step <1>3, such a monomial is divisible by
+By step [](#s1-3){.pf-ref}, such a monomial is divisible by
 $$
 x_i^{n_i}
 $$
 for some $i$.
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 x_i^{n_i}\in I.
 $$
@@ -174,7 +174,7 @@ also lies in $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -202,7 +202,7 @@ with
 $$
 e_1+\cdots+e_r=N.
 $$
-Every such generator lies in $I$ by step <1>4.
+Every such generator lies in $I$ by step [](#s1-4){.pf-ref}.
 Therefore
 $$
 J^N\subseteq I.
@@ -212,7 +212,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 $$
@@ -234,7 +234,7 @@ then
 $$
 j^N\in J^N.
 $$
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 J^N\subseteq I.
 $$
@@ -247,7 +247,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore there exists a single positive integer $N$ such that
 $$
@@ -261,7 +261,7 @@ $$
 
 ::: pf-proof
 
-Take the integer $N$ defined in step <1>3 and apply step <1>6.
+Take the integer $N$ defined in step [](#s1-3){.pf-ref} and apply step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -269,7 +269,7 @@ Take the integer $N$ defined in step <1>3 and apply step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

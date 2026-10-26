@@ -38,7 +38,7 @@ The Hardy--Littlewood maximal theorem may be used.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix $s>0$ and define
 \[
@@ -92,7 +92,7 @@ M\widetilde f_s(x)>s/2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a dimensional constant $C_n$ such that
 \[
@@ -115,7 +115,7 @@ the asserted inequality is automatic. Otherwise
 \[
 \widetilde f_s\in L^1(\mathbb R^n).
 \]
-By step <1>1 and the weak-$(1,1)$ Hardy--Littlewood maximal inequality,
+By step [](#s1-1){.pf-ref} and the weak-$(1,1)$ Hardy--Littlewood maximal inequality,
 \[
 \begin{aligned}
 m(\{Mf>s\})
@@ -135,7 +135,7 @@ Absorbing the harmless factor $2$ from the threshold $s/2$ into $C_n$ gives the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every nonnegative measurable function $H$,
 \[
@@ -182,9 +182,9 @@ m(\{H>t\})\,dt.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Applying step <1>3 with $H=Mf$ and then step <1>2 gives
+Applying step [](#s1-3){.pf-ref} with $H=Mf$ and then step [](#s1-2){.pf-ref} gives
 \[
 \int_{\mathbb R^n}\phi(Mf(x))\,dx
 \le
@@ -199,22 +199,22 @@ C_n
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 \int\phi(Mf)
 =
 \int_0^\infty
 \phi'(t)m(\{Mf>t\})\,dt.
 \]
-Substitute the estimate from step <1>2 for each $t>0$. Since every quantity is nonnegative, the inequality remains valid even when one or both sides are infinite.
+Substitute the estimate from step [](#s1-2){.pf-ref} for each $t>0$. Since every quantity is nonnegative, the inequality remains valid even when one or both sides are infinite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The right-hand side in step <1>4 equals
+The right-hand side in step [](#s1-4){.pf-ref} equals
 \[
 C_n
 \int_{\mathbb R^n}
@@ -251,7 +251,7 @@ This is the claimed expression.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -269,7 +269,7 @@ C_n\int |f(x)|
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -277,7 +277,7 @@ Combine steps <1>4 and <1>5.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

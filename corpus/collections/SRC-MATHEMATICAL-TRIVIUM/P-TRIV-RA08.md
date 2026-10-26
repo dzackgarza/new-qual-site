@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the variables $(s,\theta)$,
 $$
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first derivatives are
 $$
@@ -81,7 +81,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the expression from step <1>1.
+Differentiate the expression from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -115,7 +115,7 @@ Since $s>0$, this means $\log s=0$, hence $s=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus four critical points are
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-Since $\sin2\theta\neq0$, the equation $f_s=0$ from step <1>2 gives
+Since $\sin2\theta\neq0$, the equation $f_s=0$ from step [](#s1-2){.pf-ref} gives
 $$
 \log s+1=0,
 $$
@@ -202,7 +202,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The second derivatives in $(s,\theta)$ are
 $$
@@ -225,13 +225,13 @@ $$
 
 ::: pf-proof
 
-Differentiate the formulas in step <1>2.
+Differentiate the formulas in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 At the points $(a,a)$ and $(-a,-a)$, the Hessian in $(s,\theta)$ is
 positive definite.
@@ -247,7 +247,7 @@ s=e^{-1},
 \qquad
 \cos2\theta=0.
 $$
-Thus step <1>7 gives
+Thus step [](#s1-7){.pf-ref} gives
 $$
 f_{ss}=\frac e2>0,
 \qquad
@@ -260,7 +260,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence $(a,a)$ and $(-a,-a)$ are local minima, with value
 $$
@@ -272,7 +272,7 @@ $$
 
 The coordinate change $(x,y)\leftrightarrow(s,\theta)$ is locally smooth and
 invertible away from the origin, so the positive-definite Hessian in step
-<1>8 gives local minima. At either point,
+[](#s1-8){.pf-ref} gives local minima. At either point,
 $$
 xy=\frac1{2e}
 $$
@@ -285,7 +285,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 At the points $(a,-a)$ and $(-a,a)$, the Hessian is negative definite.
 
@@ -309,7 +309,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence $(a,-a)$ and $(-a,a)$ are local maxima, with value
 $$
@@ -319,7 +319,7 @@ $$
 
 ::: pf-proof
 
-Step <1>10 gives negative-definite Hessian. At these points
+Step [](#s1-10){.pf-ref} gives negative-definite Hessian. At these points
 $$
 xy=-\frac1{2e}
 $$
@@ -329,14 +329,14 @@ and the logarithmic factor is $-1$, so the product is $1/(2e)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
-The four axis critical points from step <1>4 are saddle points.
+The four axis critical points from step [](#s1-4){.pf-ref} are saddle points.
 
 
 ::: pf-proof
 
-At $s=1$ and $\sin2\theta=0$, step <1>7 gives
+At $s=1$ and $\sin2\theta=0$, step [](#s1-7){.pf-ref} gives
 $$
 f_{ss}=0,
 \qquad
@@ -359,7 +359,7 @@ whose determinant is $-1<0$. Hence the critical point is a saddle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore the complete list of local extrema is
 $$
@@ -376,8 +376,8 @@ $$
 
 ::: pf-proof
 
-Steps <1>9 and <1>11 classify the four non-axis critical points, while step
-<1>12 shows the remaining critical points are not extrema.
+Steps [](#s1-9){.pf-ref} and [](#s1-11){.pf-ref} classify the four non-axis critical points, while step
+[](#s1-12){.pf-ref} shows the remaining critical points are not extrema.
 
 :::
 
@@ -385,7 +385,7 @@ Steps <1>9 and <1>11 classify the four non-axis critical points, while step
 
 ::: pf-qed
 
-Step <1>13 gives all local minima and maxima.
+Step [](#s1-13){.pf-ref} gives all local minima and maxima.
 
 :::
 

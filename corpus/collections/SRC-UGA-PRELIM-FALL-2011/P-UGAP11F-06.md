@@ -23,7 +23,7 @@ Use induction to show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The identity holds for $n=1$.
 
@@ -39,7 +39,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume for some $n\ge1$ that
 $$
@@ -96,7 +96,7 @@ Thus the formula holds for $n+1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence, for every $n\ge1$,
 $$
@@ -109,7 +109,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives the base case and step <1>2 gives the induction step.
+Step [](#s1-1){.pf-ref} gives the base case and step [](#s1-2){.pf-ref} gives the induction step.
 
 :::
 
@@ -117,7 +117,7 @@ Step <1>1 gives the base case and step <1>2 gives the induction step.
 
 ::: pf-qed
 
-Step <1>3 is the required induction result.
+Step [](#s1-3){.pf-ref} is the required induction result.
 
 :::
 

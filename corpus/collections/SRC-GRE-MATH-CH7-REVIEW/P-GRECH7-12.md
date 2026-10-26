@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The second Newton iterate is
 $$
@@ -83,7 +83,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 To three decimal places,
 $$
@@ -94,7 +94,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \frac{721}{114}=6.324561\ldots,
 $$
@@ -106,7 +106,7 @@ which rounds to $6.325$ at three decimal places.
 
 ::: pf-qed
 
-Step <1>3 gives the requested approximation after two Newton iterations.
+Step [](#s1-3){.pf-ref} gives the requested approximation after two Newton iterations.
 
 :::
 

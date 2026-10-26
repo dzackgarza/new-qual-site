@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ is not identically zero, there is a point $\alpha\in(0,1)$ with
 $$
@@ -60,9 +60,9 @@ Continuity gives a point where $|f|$ attains its maximum. Since $f(0)=f(1)=0$ an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-After replacing $f(x)$ by $f(1-x)$ if necessary, the point in step <1>1 may be chosen with $0<\alpha\leq\frac12$.
+After replacing $f(x)$ by $f(1-x)$ if necessary, the point in step [](#s1-1){.pf-ref} may be chosen with $0<\alpha\leq\frac12$.
 
 
 ::: pf-proof
@@ -73,7 +73,7 @@ If $\alpha\leq\frac12$, there is nothing to prove. If $\alpha>\frac12$, define $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -83,7 +83,7 @@ $$
 
 ::: pf-proof
 
-If $f\equiv0$, the inequality is immediate. Otherwise take $\alpha$ as in steps <1>1--<1>2. Since $f(0)=0$,
+If $f\equiv0$, the inequality is immediate. Otherwise take $\alpha$ as in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}. Since $f(0)=0$,
 $$
 f(\alpha)=\int_0^\alpha f'(x)\,dx.
 $$
@@ -95,7 +95,7 @@ $$
 =
 -\int_0^\alpha x f''(x)\,dx,
 $$
-because $f'(\alpha)=0$ by step <1>1. Therefore
+because $f'(\alpha)=0$ by step [](#s1-1){.pf-ref}. Therefore
 $$
 \max|f|
 =|f(\alpha)|
@@ -112,7 +112,7 @@ using $\alpha\leq1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Equality is attained by
 $$
@@ -138,7 +138,7 @@ Hence $\max|f|=1/8=(1/8)\max|f''|$.
 
 ::: pf-qed
 
-Step <1>3 proves the inequality, and step <1>4 supplies an equality example.
+Step [](#s1-3){.pf-ref} proves the inequality, and step [](#s1-4){.pf-ref} supplies an equality example.
 
 :::
 

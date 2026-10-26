@@ -32,7 +32,7 @@ All homology groups below have integral coefficients.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -65,7 +65,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For the torus
 \[
@@ -93,7 +93,7 @@ The fundamental group preserves products:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For the infinite cylinder
 \[
@@ -121,13 +121,13 @@ S^1\times\mathbb R
 \simeq
 S^1.
 \]
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -191,7 +191,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space
 \[
@@ -223,7 +223,7 @@ fundamental group for the union.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A universal covering of $S^1$ is
 \[
@@ -245,7 +245,7 @@ is simply connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A universal covering of $S^2$ is the identity covering
 \[
@@ -267,7 +267,7 @@ is simply connected, so it is already its own universal covering space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 A universal covering of
 \[
@@ -300,7 +300,7 @@ is simply connected, the covering is universal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 A universal covering of the torus is
 \[
@@ -336,7 +336,7 @@ is simply connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The simplicial homology of the circle is
 \[
@@ -372,7 +372,7 @@ The displayed groups follow.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The simplicial homology of the sphere is
 \[
@@ -401,7 +401,7 @@ in degrees $0$ and $2$ and zero elsewhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The simplicial homology of the projective plane is
 \[
@@ -464,9 +464,9 @@ triangulable spaces, these are also the simplicial homology groups.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 compute the requested fundamental groups,
-steps <1>6--<1>9 identify the universal covers, and
-steps <1>10--<1>12 compute the simplicial homology groups.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} compute the requested fundamental groups,
+steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} identify the universal covers, and
+steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref} compute the simplicial homology groups.
 
 :::
 

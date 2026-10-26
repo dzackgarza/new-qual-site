@@ -31,7 +31,7 @@ Compute the eigenvalues of $A$ and use them to determine
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\ge1$,
 $$
@@ -88,7 +88,7 @@ A\binom10
 =
 \binom{a_2}{a_1}.
 $$
-If the identity holds for some $n$, then step <1>1 gives
+If the identity holds for some $n$, then step [](#s1-1){.pf-ref} gives
 $$
 A^{n+1}\binom10
 =A\binom{a_{n+1}}{a_n}
@@ -101,7 +101,7 @@ Thus the claim follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The eigenvalues of $A$ are
 $$
@@ -129,7 +129,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The recurrence has the closed form
 $$
@@ -139,7 +139,7 @@ $$
 
 ::: pf-proof
 
-Because the characteristic roots of the recurrence are the distinct numbers $1$ and $3$ from step <1>3, every sequence satisfying the recurrence has the form
+Because the characteristic roots of the recurrence are the distinct numbers $1$ and $3$ from step [](#s1-3){.pf-ref}, every sequence satisfying the recurrence has the form
 $$
 a_n=c_1+c_2 3^n.
 $$
@@ -155,7 +155,7 @@ Subtracting yields $6c_2=3$, so $c_2=1/2$ and then $c_1=-1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -165,7 +165,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 a_n
 =
@@ -186,7 +186,7 @@ The factor in parentheses tends to $1/2>0$, so its $n$-th root tends to $1$. The
 
 ::: pf-qed
 
-Step <1>2 gives the required matrix identity, step <1>3 computes the eigenvalues, and step <1>5 gives the requested limit.
+Step [](#s1-2){.pf-ref} gives the required matrix identity, step [](#s1-3){.pf-ref} computes the eigenvalues, and step [](#s1-5){.pf-ref} gives the requested limit.
 
 :::
 

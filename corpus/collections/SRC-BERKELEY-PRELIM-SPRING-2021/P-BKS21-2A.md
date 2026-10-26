@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $K$ is nonempty.
 
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose, for contradiction, that $K$ is disconnected. Then there are disjoint nonempty compact sets $A,B\subset K$ such that
 $$
@@ -86,9 +86,9 @@ If $K$ is disconnected, it has a separation $K=A\cup B$ into disjoint nonempty s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the assumption of step <1>2, there is an index $N$ such that
+Under the assumption of step [](#s1-2){.pf-ref}, there is an index $N$ such that
 $$
 X_N\subset U\cup V.
 $$
@@ -107,15 +107,15 @@ $$
 K\setminus(U\cup V)
 =\varnothing
 $$
-because $K=A\cup B\subset U\cup V$. If every $F_i$ were nonempty, step <1>1 applied to the nested compact sets $F_i$ would force their intersection to be nonempty. Hence some $F_N$ is empty, which is exactly $X_N\subset U\cup V$.
+because $K=A\cup B\subset U\cup V$. If every $F_i$ were nonempty, step [](#s1-1){.pf-ref} applied to the nested compact sets $F_i$ would force their intersection to be nonempty. Hence some $F_N$ is empty, which is exactly $X_N\subset U\cup V$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The containment in step <1>3 contradicts connectedness of $X_N$.
+The containment in step [](#s1-3){.pf-ref} contradicts connectedness of $X_N$.
 
 
 ::: pf-proof
@@ -126,20 +126,20 @@ X_N\cap U
 \qquad\text{and}\qquad
 X_N\cap V
 $$
-are nonempty. They are disjoint relatively open subsets of $X_N$, and step <1>3 says their union is all of $X_N$. Thus they form a separation of $X_N$, contradicting the hypothesis that $X_N$ is connected.
+are nonempty. They are disjoint relatively open subsets of $X_N$, and step [](#s1-3){.pf-ref} says their union is all of $X_N$. Thus they form a separation of $X_N$, contradicting the hypothesis that $X_N$ is connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $K$ is nonempty and connected.
 
 
 ::: pf-proof
 
-Nonemptiness is step <1>1. Steps <1>2--<1>4 rule out disconnectedness.
+Nonemptiness is step [](#s1-1){.pf-ref}. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} rule out disconnectedness.
 
 :::
 
@@ -147,7 +147,7 @@ Nonemptiness is step <1>1. Steps <1>2--<1>4 rule out disconnectedness.
 
 ::: pf-qed
 
-Step <1>5 is the desired conclusion.
+Step [](#s1-5){.pf-ref} is the desired conclusion.
 
 :::
 

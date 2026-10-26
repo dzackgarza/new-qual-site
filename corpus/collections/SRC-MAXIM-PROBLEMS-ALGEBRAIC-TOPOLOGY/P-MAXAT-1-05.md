@@ -23,7 +23,7 @@ Here $R$ is a coefficient ring. The assertion in degrees $i>n$ is the dimension 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A smooth or topological $n$-manifold has the homotopy type of an $n$-dimensional CW complex, so
 \[
@@ -40,7 +40,7 @@ Manifolds are triangulable in the standard category used here, or equivalently a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $z$ be a singular $n$-cycle in $M$. Its support is contained in a compact subset $K\subset M$.
 
@@ -53,7 +53,7 @@ A singular chain is a finite linear combination of singular simplices. Each simp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $M$ is connected and noncompact, there exists a point
 \[
@@ -69,7 +69,7 @@ If $K=M$, then $M$ would be compact, contrary to the hypothesis. Thus its comple
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The cycle $z$ determines a class in
 \[
@@ -86,7 +86,7 @@ Because the support of $z$ is contained in $K$ and $x\notin K$, the entire cycle
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For a connected $n$-manifold, the natural map
 \[
@@ -107,7 +107,7 @@ and excision identifies it with the top relative homology of an $n$-ball modulo 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -117,15 +117,15 @@ H_n(M;R)=0.
 
 ::: pf-proof
 
-Let $[z]\in H_n(M;R)$. Steps <1>2--<1>4 choose $x$ outside its compact support and show that its image in the local homology group at $x$ is zero. By step <1>5, $[z]=0$. Since every class is represented by such a finite singular cycle, the whole group vanishes.
+Let $[z]\in H_n(M;R)$. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} choose $x$ outside its compact support and show that its image in the local homology group at $x$ is zero. By step [](#s1-5){.pf-ref}, $[z]=0$. Since every class is represented by such a finite singular cycle, the whole group vanishes.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Combining steps <1>1 and <1>6 gives
+Combining steps [](#s1-1){.pf-ref} and [](#s1-6){.pf-ref} gives
 \[
 \boxed{H_i(M;R)=0\quad\text{for every }i\geq n.}
 \]
@@ -133,7 +133,7 @@ Combining steps <1>1 and <1>6 gives
 
 ::: pf-proof
 
-Step <1>6 handles $i=n$, and step <1>1 handles every $i>n$.
+Step [](#s1-6){.pf-ref} handles $i=n$, and step [](#s1-1){.pf-ref} handles every $i>n$.
 
 :::
 
@@ -141,7 +141,7 @@ Step <1>6 handles $i=n$, and step <1>1 handles every $i>n$.
 
 ::: pf-qed
 
-Step <1>7 is the desired conclusion.
+Step [](#s1-7){.pf-ref} is the desired conclusion.
 
 :::
 

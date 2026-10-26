@@ -47,7 +47,7 @@ whenever the displayed values are defined.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The value
 $$
@@ -89,7 +89,7 @@ is minimal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -130,7 +130,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Conversely, if
 $$
@@ -169,7 +169,7 @@ or
 $$
 \varphi(r)<\varphi(a)=\varphi(1).
 $$
-The latter alternative is impossible by step <1>1.
+The latter alternative is impossible by step [](#s1-1){.pf-ref}.
 Hence
 $$
 r=0
@@ -184,7 +184,7 @@ Thus $a$ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -201,13 +201,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 $$
@@ -258,7 +258,7 @@ $$
 b\ne0.
 $$
 Then $b$ is also a unit.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \varphi(a)
 =
@@ -272,11 +272,11 @@ $$
 \le
 \varphi(1).
 $$
-Step <1>1 gives the reverse inequality, so
+Step [](#s1-1){.pf-ref} gives the reverse inequality, so
 $$
 \varphi(a+b)=\varphi(1).
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 a+b
 $$
@@ -290,7 +290,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set $F$ is a subfield of $D$.
 
@@ -305,7 +305,7 @@ and
 $$
 1.
 $$
-Step <1>5 gives closure under addition.
+Step [](#s1-5){.pf-ref} gives closure under addition.
 If
 $$
 u\in D^\times,
@@ -329,7 +329,7 @@ is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -340,7 +340,7 @@ then $D$ is a field.
 
 ::: pf-proof
 
-This is immediate from step <1>6.
+This is immediate from step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -383,7 +383,7 @@ Choose $x$ realizing it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The element $x$ is transcendental over $F$.
 
@@ -422,7 +422,7 @@ Therefore $x$ is transcendental over $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If
 $$
@@ -457,7 +457,7 @@ Then
 $$
 c
 $$
-is a unit, so by step <1>4,
+is a unit, so by step [](#s1-4){.pf-ref},
 $$
 \varphi(c)=\varphi(1).
 $$
@@ -471,7 +471,7 @@ $$
 =
 \varphi(a),
 $$
-because step <1>1 gives
+because step [](#s1-1){.pf-ref} gives
 $$
 \varphi(1)\le\varphi(a).
 $$
@@ -500,14 +500,14 @@ $$
 =
 \varphi(a+c),
 $$
-where the last equality uses step <1>1.
+where the last equality uses step [](#s1-1){.pf-ref}.
 Thus equality holds.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If
 $$
@@ -603,7 +603,7 @@ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If
 $$
@@ -625,14 +625,14 @@ Monotonicity gives
 $$
 \varphi(a)\le\varphi(ab).
 $$
-Equality would imply, by step <1>11, that $b$ is a unit.
+Equality would imply, by step [](#s1-11){.pf-ref}, that $b$ is a unit.
 Hence equality is impossible and the inequality is strict.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Every element of $D$ belongs to
 $$
@@ -722,7 +722,7 @@ Then
 $$
 x
 $$
-is a nonunit, so step <1>12 gives
+is a nonunit, so step [](#s1-12){.pf-ref} gives
 $$
 \varphi(s)
 <
@@ -736,7 +736,7 @@ with
 $$
 r\in F,
 $$
-step <1>10 gives
+step [](#s1-10){.pf-ref} gives
 $$
 \varphi(a)
 =
@@ -764,7 +764,7 @@ This completes the induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 $$
@@ -774,7 +774,7 @@ $$
 
 ::: pf-proof
 
-Step <1>13 gives
+Step [](#s1-13){.pf-ref} gives
 $$
 D\subseteq F[x].
 $$
@@ -792,7 +792,7 @@ Thus equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Since $x$ is transcendental over $F$, the evaluation homomorphism
 $$
@@ -805,7 +805,7 @@ is an isomorphism.
 
 ::: pf-proof
 
-The map is surjective by step <1>14.
+The map is surjective by step [](#s1-14){.pf-ref}.
 Its kernel consists of polynomials in
 $$
 F[T]
@@ -814,7 +814,7 @@ vanishing at
 $$
 x.
 $$
-Step <1>9 says $x$ is transcendental over $F$, so the kernel is zero.
+Step [](#s1-9){.pf-ref} says $x$ is transcendental over $F$, so the kernel is zero.
 Therefore the map is injective as well.
 Hence
 $$
@@ -827,7 +827,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Consequently,
 $$
@@ -844,16 +844,16 @@ If
 $$
 D=F,
 $$
-step <1>7 gives the field case.
+step [](#s1-7){.pf-ref} gives the field case.
 If
 $$
 D\ne F,
 $$
-step <1>15 gives
+step [](#s1-15){.pf-ref} gives
 $$
 D\cong F[T]
 $$
-for the field $F$ from step <1>6.
+for the field $F$ from step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -861,7 +861,7 @@ for the field $F$ from step <1>6.
 
 ::: pf-qed
 
-Step <1>16 is the required classification under the intended Euclidean-function convention.
+Step [](#s1-16){.pf-ref} is the required classification under the intended Euclidean-function convention.
 
 :::
 

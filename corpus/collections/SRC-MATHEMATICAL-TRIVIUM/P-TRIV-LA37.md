@@ -62,7 +62,7 @@ Direct multiplication gives the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenvalues of $AA^T$ are $45$ and $5$, with eigenvectors
 $(1,1)^T$ and $(1,-1)^T$.
@@ -88,7 +88,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -108,7 +108,7 @@ $$
 
 ::: pf-proof
 
-On the eigenvectors from step <1>2, the positive square root has eigenvalues
+On the eigenvectors from step [](#s1-2){.pf-ref}, the positive square root has eigenvalues
 $$
 \sqrt{45}=3\sqrt5
 \qquad\text{and}\qquad
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $S$ is invertible,
 $$
@@ -178,7 +178,7 @@ $$
 
 ::: pf-step
 
-The matrix $O$ in step <1>4 is orthogonal.
+The matrix $O$ in step [](#s1-4){.pf-ref} is orthogonal.
 
 
 ::: pf-proof
@@ -197,7 +197,7 @@ which are orthonormal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus part (a) has the polar decomposition
 $$
@@ -221,13 +221,13 @@ $$
 
 ::: pf-proof
 
-This is the product of the matrices from steps <1>3--<1>4.
+This is the product of the matrices from steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For
 $$
@@ -275,14 +275,14 @@ $$
 
 ::: pf-proof
 
-The matrix in step <1>7 is diagonal with nonnegative entries, so its positive
+The matrix in step [](#s1-7){.pf-ref} is diagonal with nonnegative entries, so its positive
 square root is obtained by taking the square roots of the diagonal entries.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If
 $$
@@ -317,7 +317,7 @@ Equating this with $A$ gives the two relations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Orthogonality then gives exactly two possible first rows:
 $$
@@ -347,7 +347,7 @@ perpendiculars, namely the displayed pair.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Thus two polar factorizations in part (b) are
 $$
@@ -383,14 +383,14 @@ $$
 
 ::: pf-proof
 
-Each second factor is orthogonal by step <1>10, and step <1>9 ensures that
+Each second factor is orthogonal by step [](#s1-10){.pf-ref}, and step [](#s1-9){.pf-ref} ensures that
 multiplication by $S$ gives the required matrix $A$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The polar decomposition $A=SO$ with $S$ positive semidefinite is unique
 in part (a) and not unique in part (b).
@@ -405,7 +405,7 @@ O=S^{-1}A
 $$
 is forced, proving uniqueness.
 
-In part (b), $S$ is singular. Step <1>11 exhibits two distinct orthogonal
+In part (b), $S$ is singular. Step [](#s1-11){.pf-ref} exhibits two distinct orthogonal
 extensions with the same product $SO=A$, so the orthogonal factor is not
 unique.
 
@@ -415,7 +415,7 @@ unique.
 
 ::: pf-qed
 
-Steps <1>6 and <1>11 give the two decompositions, and step <1>12 determines
+Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref} give the two decompositions, and step [](#s1-12){.pf-ref} determines
 their uniqueness behavior.
 
 :::

@@ -28,7 +28,7 @@ denote the minimal polynomial of $T$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -59,9 +59,9 @@ Therefore Bézout's identity applies to relatively prime polynomials.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Evaluating the identity from step <1>1 at $T$ gives
+Evaluating the identity from step [](#s1-1){.pf-ref} at $T$ gives
 \[
 \boxed{
 A(T)F(T)=I.
@@ -88,7 +88,7 @@ I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The operators
 \[
@@ -108,18 +108,18 @@ Any two polynomials in $T$ commute.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence $F(T)$ is invertible.
 
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 A(T)F(T)=I.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 F(T)A(T)=A(T)F(T)=I.
 \]
@@ -134,7 +134,7 @@ F(T)^{-1}=A(T).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, suppose $F$ and $m_T$ have a nonconstant common factor.
 Then they have a common root
@@ -152,9 +152,9 @@ Any nonconstant common divisor of $F$ and $m_T$ therefore has a root $\lambda$ t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The scalar $\lambda$ from step <1>5 is an eigenvalue of $T$.
+The scalar $\lambda$ from step [](#s1-5){.pf-ref} is an eigenvalue of $T$.
 
 
 ::: pf-proof
@@ -207,7 +207,7 @@ is an eigenvalue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Choose a nonzero eigenvector
 \[
@@ -240,7 +240,7 @@ P(T)v
 P(\lambda)v.
 \]
 Apply this to $P=F$.
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 F(\lambda)=0.
 \]
@@ -253,14 +253,14 @@ F(T)v=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $F(T)$ is not invertible.
 
 
 ::: pf-proof
 
-Step <1>7 gives a nonzero vector
+Step [](#s1-7){.pf-ref} gives a nonzero vector
 \[
 v\in\ker F(T).
 \]
@@ -274,7 +274,7 @@ is not injective and therefore not invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently,
 \[
@@ -288,8 +288,8 @@ F(T)\text{ is invertible}
 
 ::: pf-proof
 
-Steps <1>1--<1>4 prove the forward implication from coprimality to invertibility.
-Steps <1>5--<1>8 prove the contrapositive of the reverse implication.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove the forward implication from coprimality to invertibility.
+Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} prove the contrapositive of the reverse implication.
 
 :::
 
@@ -297,7 +297,7 @@ Steps <1>5--<1>8 prove the contrapositive of the reverse implication.
 
 ::: pf-qed
 
-Step <1>9 is the required equivalence.
+Step [](#s1-9){.pf-ref} is the required equivalence.
 
 :::
 

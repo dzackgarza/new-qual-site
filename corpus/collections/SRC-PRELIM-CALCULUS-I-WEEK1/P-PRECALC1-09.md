@@ -17,7 +17,7 @@ Compute $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin ( 2 x ) } { ( 1 +
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Rewrite the quotient as
 \[
@@ -40,7 +40,7 @@ Multiply the three factors on the right and cancel \(2x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first factor satisfies
 \[
@@ -63,7 +63,7 @@ Set \(u=2x\). Then \(u\to0\), and use the standard limit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The logarithmic factor satisfies
 \[
@@ -87,7 +87,7 @@ holds as \(x\to0\). Taking reciprocals gives the displayed limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -101,13 +101,13 @@ Therefore
 
 ::: pf-proof
 
-Multiply the limit in step <1>3 by \(2\).
+Multiply the limit in step [](#s1-3){.pf-ref} by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The final factor satisfies
 \[
@@ -127,7 +127,7 @@ The function \(1/(1+x)\) is continuous at \(x=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -143,7 +143,7 @@ Hence
 
 ::: pf-proof
 
-Apply the product law for limits to steps <1>1--<1>5.
+Apply the product law for limits to steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -151,7 +151,7 @@ Apply the product law for limits to steps <1>1--<1>5.
 
 ::: pf-qed
 
-Step <1>6 is the requested limit.
+Step [](#s1-6){.pf-ref} is the requested limit.
 
 :::
 

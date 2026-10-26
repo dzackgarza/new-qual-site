@@ -30,7 +30,7 @@ P(X)=c_0+c_1X+\cdots+c_mX^m.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $A$ is real symmetric, there is an orthonormal basis
 \[
@@ -51,7 +51,7 @@ with $\lambda_i\in\mathbb R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $i$,
 \[
@@ -82,7 +82,7 @@ P(\lambda_i)v_i.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The eigenvalues of $P(A)$ are exactly
 \[
@@ -93,7 +93,7 @@ counted with multiplicity.
 
 ::: pf-proof
 
-By step <1>2, every basis vector $v_i$ is an eigenvector of $P(A)$ with eigenvalue $P(\lambda_i)$. Since the $v_i$ form a basis by step <1>1, the matrix of $P(A)$ in this basis is diagonal with diagonal entries
+By step [](#s1-2){.pf-ref}, every basis vector $v_i$ is an eigenvector of $P(A)$ with eigenvalue $P(\lambda_i)$. Since the $v_i$ form a basis by step [](#s1-1){.pf-ref}, the matrix of $P(A)$ in this basis is diagonal with diagonal entries
 \[
 P(\lambda_1),\ldots,P(\lambda_n).
 \]
@@ -103,14 +103,14 @@ Therefore these are precisely all eigenvalues of $P(A)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every eigenvalue of $A^2$ is nonnegative.
 
 
 ::: pf-proof
 
-Apply step <1>3 to
+Apply step [](#s1-3){.pf-ref} to
 \[
 P(X)=X^2.
 \]
@@ -124,7 +124,7 @@ all of which are nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The matrix $A^2$ is nonnegative definite.
 
@@ -135,7 +135,7 @@ The matrix $A^2$ is symmetric because
 \[
 (A^2)^t=(A^t)^2=A^2.
 \]
-Using the orthonormal eigenbasis from step <1>1, write
+Using the orthonormal eigenbasis from step [](#s1-1){.pf-ref}, write
 \[
 v=\sum_{i=1}^n c_iv_i.
 \]
@@ -146,13 +146,13 @@ v\mathbin{\cdot}A^2v
 \sum_{i=1}^n \lambda_i^2c_i^2
 \ge0
 \]
-by step <1>4. Hence $A^2$ is nonnegative definite.
+by step [](#s1-4){.pf-ref}. Hence $A^2$ is nonnegative definite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -172,7 +172,7 @@ The square of a real number is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -208,7 +208,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>3 proves part (a), steps <1>4--<1>5 prove part (b), and steps <1>6--<1>7 verify the two nonnegativity statements in part (c).
+Step [](#s1-3){.pf-ref} proves part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove part (b), and steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} verify the two nonnegativity statements in part (c).
 
 :::
 

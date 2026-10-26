@@ -18,7 +18,7 @@ Let $B = A + I$ and suppose dim $( r a n g e ( B ) ) = 2$ Finally, suppose that 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $P$ factors as
 \[
@@ -64,7 +64,7 @@ with $v\ne0$, then
 \[
 0=P(A)v=P(\lambda)v.
 \]
-Hence $P(\lambda)=0$. By step <1>1, the only roots are $1$ and $-1$.
+Hence $P(\lambda)=0$. By step [](#s1-1){.pf-ref}, the only roots are $1$ and $-1$.
 
 :::
 
@@ -89,7 +89,7 @@ Thus the exponent at $1$ is at most $1$, while the exponent at $-1$ is at most $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The nullspace of
 \[
@@ -117,7 +117,7 @@ Rank-nullity therefore gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Jordan form of $A$ contains exactly two Jordan blocks with eigenvalue $-1$.
 
@@ -134,7 +134,7 @@ one has
 \]
 the eigenspace of $A$ for eigenvalue $-1$.
 For a Jordan form, the dimension of the eigenspace for an eigenvalue equals the number of Jordan blocks carrying that eigenvalue.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \dim\ker(A+I)=2,
 \]
@@ -144,7 +144,7 @@ so there are exactly two $(-1)$-Jordan blocks.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let $m_-$ be the algebraic multiplicity of $-1$. Then
 \[
@@ -186,7 +186,7 @@ m_-=3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In fact,
 \[
@@ -198,9 +198,9 @@ In fact,
 
 ::: pf-proof
 
-By step <1>5, there are two Jordan blocks for eigenvalue $-1$.
+By step [](#s1-5){.pf-ref}, there are two Jordan blocks for eigenvalue $-1$.
 Thus its algebraic multiplicity is at least $2$.
-Step <1>6 leaves only
+Step [](#s1-6){.pf-ref} leaves only
 \[
 m_-=3.
 \]
@@ -213,18 +213,18 @@ m_+=4-3=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The two Jordan blocks for eigenvalue $-1$ have sizes $2$ and $1$.
 
 
 ::: pf-proof
 
-By step <1>7, their total size is the algebraic multiplicity
+By step [](#s1-7){.pf-ref}, their total size is the algebraic multiplicity
 \[
 3.
 \]
-By step <1>5, there are exactly two such blocks.
+By step [](#s1-5){.pf-ref}, there are exactly two such blocks.
 The only partition of $3$ into two positive integers is
 \[
 2+1.
@@ -234,7 +234,7 @@ The only partition of $3$ into two positive integers is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 A Jordan canonical form of $A$ is
 \[
@@ -251,7 +251,7 @@ A Jordan canonical form of $A$ is
 
 ::: pf-proof
 
-Step <1>8 gives one Jordan block
+Step [](#s1-8){.pf-ref} gives one Jordan block
 \[
 J_2(-1)
 =
@@ -261,7 +261,7 @@ J_2(-1)
 \end{pmatrix},
 \]
 and one $1\times1$ block $[-1]$.
-Step <1>7 gives one $1\times1$ block $[1]$.
+Step [](#s1-7){.pf-ref} gives one $1\times1$ block $[1]$.
 Their direct sum is the displayed matrix.
 
 :::
@@ -270,7 +270,7 @@ Their direct sum is the displayed matrix.
 
 ::: pf-qed
 
-Step <1>9 is the required Jordan canonical form.
+Step [](#s1-9){.pf-ref} is the required Jordan canonical form.
 
 :::
 

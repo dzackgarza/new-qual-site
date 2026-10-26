@@ -27,7 +27,7 @@ If $[x]$ denotes the greatest integer $\le x$, then $\int_{0}^{\frac{7}{2}} [x] 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the intervals $[0,1)$, $[1,2)$, $[2,3)$, and $[3,7/2]$, the function $[x]$ is respectively $0$, $1$, $2$, and $3$.
 
@@ -40,7 +40,7 @@ By definition, $[x]$ is the greatest integer not exceeding $x$. Hence it is cons
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral equals
 $$
@@ -50,7 +50,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>1 and additivity of the integral,
+Using step [](#s1-1){.pf-ref} and additivity of the integral,
 $$
 \begin{aligned}
 \int_0^{7/2}[x]\,dx
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -75,7 +75,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-This is exactly the value obtained in step <1>2.
+This is exactly the value obtained in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -83,7 +83,7 @@ This is exactly the value obtained in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested integral and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested integral and corresponding choice.
 
 :::
 

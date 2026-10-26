@@ -29,7 +29,7 @@ Let $L=\lim_{n\to\infty}x_n$, which exists by hypothesis.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $L$ satisfies
 $$
@@ -49,14 +49,14 @@ gives the displayed equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $L\in\{-1,6\}$.
 
 
 ::: pf-proof
 
-Squaring the equation in step <1>1 gives
+Squaring the equation in step [](#s1-1){.pf-ref} gives
 $$
 L^2=5L+6,
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In fact,
 $$
@@ -80,7 +80,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Every term $x_n$ is nonnegative because it is either $x_1=2$ or a square root. Therefore its limit satisfies $L\geq0$, excluding the value $-1$ from step <1>2. Thus $L=6$.
+Every term $x_n$ is nonnegative because it is either $x_1=2$ or a square root. Therefore its limit satisfies $L\geq0$, excluding the value $-1$ from step [](#s1-2){.pf-ref}. Thus $L=6$.
 
 :::
 
@@ -88,7 +88,7 @@ Every term $x_n$ is nonnegative because it is either $x_1=2$ or a square root. T
 
 ::: pf-qed
 
-Step <1>3 gives the requested limit and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
 
 :::
 

@@ -61,7 +61,7 @@ give respectively $z=i$ and $z=-3i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue at $z=i$ is
 $$
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residue at $z=-3i$ is
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\alpha>0$, then
 $$
@@ -160,7 +160,7 @@ $$
 \frac{\pi R}{(R-3)(R-1)}
 \longrightarrow0.
 $$
-The only enclosed pole is $i$. Hence by step <1>2,
+The only enclosed pole is $i$. Hence by step [](#s1-2){.pf-ref},
 $$
 \int_{-\infty}^{\infty}
 \frac{e^{i\alpha x}}
@@ -176,7 +176,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $\alpha<0$, then
 $$
@@ -198,10 +198,10 @@ $$
 \leq1
 $$
 because $\alpha<0$ and $\operatorname{Im}z\leq0$. The same denominator
-estimate as in step <1>4 makes the lower-arc integral tend to zero.
+estimate as in step [](#s1-4){.pf-ref} makes the lower-arc integral tend to zero.
 
 The contour is clockwise and encloses only the pole $-3i$. Therefore, using
-step <1>3,
+step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 \int_{-\infty}^{\infty}
@@ -221,7 +221,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\alpha=0$, then
 $$
@@ -236,13 +236,13 @@ $$
 
 Close in the upper half-plane. The rational integrand is $O(|z|^{-2})$, so
 the semicircular arc tends to zero. The residue at $i$ is $1/(4i)$ by
-step <1>2 with $\alpha=0$. Thus the residue theorem gives $\pi/2$.
+step [](#s1-2){.pf-ref} with $\alpha=0$. Thus the residue theorem gives $\pi/2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence, for every real $\alpha$,
 $$
@@ -261,7 +261,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>4--<1>6 give the three sign cases. At $\alpha=0$, both displayed
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the three sign cases. At $\alpha=0$, both displayed
 formulas equal $\pi/2$.
 
 :::
@@ -270,7 +270,7 @@ formulas equal $\pi/2$.
 
 ::: pf-qed
 
-Step <1>7 is the required integral.
+Step [](#s1-7){.pf-ref} is the required integral.
 
 :::
 

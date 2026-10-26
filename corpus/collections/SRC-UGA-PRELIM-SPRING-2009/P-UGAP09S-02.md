@@ -24,7 +24,7 @@ is continuous at $x=3$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -72,7 +72,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Given $\varepsilon>0$, choose
 \[
@@ -82,7 +82,7 @@ Given $\varepsilon>0$, choose
 
 ::: pf-proof
 
-If $|x-3|<\delta$, then $|x-3|<1$, so step <1>1 applies, and
+If $|x-3|<\delta$, then $|x-3|<1$, so step [](#s1-1){.pf-ref} applies, and
 \[
 \left|f(x)-f(3)\right|
 \le
@@ -100,7 +100,7 @@ Thus the $\varepsilon$-$\delta$ condition for continuity at $3$ is satisfied.
 
 ::: pf-qed
 
-Step <1>2 proves directly from the definition that $f$ is continuous at
+Step [](#s1-2){.pf-ref} proves directly from the definition that $f$ is continuous at
 $x=3$.
 
 :::

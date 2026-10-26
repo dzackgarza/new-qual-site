@@ -28,7 +28,7 @@ Assume the intended hypothesis $f:\DD\to\DD$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 $$
@@ -49,7 +49,7 @@ Since $f(0)=0$, the quotient $f(z)/z$ has a removable singularity at $0$, with e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $0<r<1$, there exists $q_r<1$ such that
 $$
@@ -64,13 +64,13 @@ Set
 $$
 q_r\coloneqq\max_{\abs{z}\le r}\abs{g(z)}.
 $$
-The maximum exists by compactness, and step <1>1 gives $q_r<1$. Since $f(z)=zg(z)$, the estimate follows.
+The maximum exists by compactness, and step [](#s1-1){.pf-ref} gives $q_r<1$. Since $f(z)=zg(z)$, the estimate follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\abs{z}\le r<1$, then for every $n\ge1$,
 $$
@@ -80,7 +80,7 @@ $$
 
 ::: pf-proof
 
-Schwarz's lemma gives $\abs{f(w)}\le\abs{w}$, so all iterates of $z$ remain in $\abs{w}\le r$. Step <1>2 therefore applies at every stage:
+Schwarz's lemma gives $\abs{f(w)}\le\abs{w}$, so all iterates of $z$ remain in $\abs{w}\le r$. Step [](#s1-2){.pf-ref} therefore applies at every stage:
 $$
 \abs{f^{k+1}(z)}\le q_r\abs{f^k(z)}.
 $$
@@ -90,14 +90,14 @@ Induction yields the stated bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series $\sum_{n=1}^{\infty}f^n(z)$ converges uniformly on every compact subset of $\DD$.
 
 
 ::: pf-proof
 
-On $\abs{z}\le r<1$, step <1>3 gives
+On $\abs{z}\le r<1$, step [](#s1-3){.pf-ref} gives
 $$
 \abs{f^n(z)}\le rq_r^n.
 $$
@@ -107,7 +107,7 @@ The right-hand side is the general term of a convergent geometric series, so the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sum
 $$
@@ -118,7 +118,7 @@ is holomorphic on $\DD$.
 
 ::: pf-proof
 
-Each iterate $f^n$ is holomorphic on $\DD$, and step <1>4 gives locally uniform convergence. The Weierstrass theorem therefore implies that $F$ is holomorphic.
+Each iterate $f^n$ is holomorphic on $\DD$, and step [](#s1-4){.pf-ref} gives locally uniform convergence. The Weierstrass theorem therefore implies that $F$ is holomorphic.
 
 :::
 
@@ -126,7 +126,7 @@ Each iterate $f^n$ is holomorphic on $\DD$, and step <1>4 gives locally uniform 
 
 ::: pf-qed
 
-Step <1>4 proves compact-uniform convergence, and step <1>5 proves analyticity of the limit.
+Step [](#s1-4){.pf-ref} proves compact-uniform convergence, and step [](#s1-5){.pf-ref} proves analyticity of the limit.
 
 :::
 

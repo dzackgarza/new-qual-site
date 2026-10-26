@@ -36,7 +36,7 @@ Determine $M^{100}$ from the following choices:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $M$ cyclically permutes the standard basis vectors.
 
@@ -58,7 +58,7 @@ Thus $M$ acts by a $3$-cycle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-Applying the $3$-cycle from step <1>1 three times returns each basis vector to itself.
+Applying the $3$-cycle from step [](#s1-1){.pf-ref} three times returns each basis vector to itself.
 Hence
 $$
 M^3e_j=e_j
@@ -96,7 +96,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 M^{100}
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -129,7 +129,7 @@ This is answer choice $\boxed{\text{(A)}}$.
 
 ::: pf-qed
 
-Step <1>4 is the required value.
+Step [](#s1-4){.pf-ref} is the required value.
 
 :::
 

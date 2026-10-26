@@ -32,7 +32,7 @@ The source prints choices (D) and (E) as the digits $2,3$ and $5,3$ followed by 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every point on the curve satisfies
 $$
@@ -62,14 +62,14 @@ which gives $x^2+y^2\ge4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The lower bound in step <1>1 is attained on the curve.
+The lower bound in step [](#s1-1){.pf-ref} is attained on the curve.
 
 
 ::: pf-proof
 
-Equality in step <1>1 occurs when $x=y$. Substituting $y=x$ into the curve equation gives
+Equality in step [](#s1-1){.pf-ref} occurs when $x=y$. Substituting $y=x$ into the curve equation gives
 $$
 3x^2+4x^2+3x^2=10x^2=20,
 $$
@@ -85,7 +85,7 @@ lie on the curve and satisfy $x^2+y^2=4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The minimum distance from the origin to the curve is
 $$
@@ -96,7 +96,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-The distance from the origin to $(x,y)$ is $\sqrt{x^2+y^2}$. Step <1>1 gives the lower bound $2$, and step <1>2 exhibits points on the curve where this bound is attained.
+The distance from the origin to $(x,y)$ is $\sqrt{x^2+y^2}$. Step [](#s1-1){.pf-ref} gives the lower bound $2$, and step [](#s1-2){.pf-ref} exhibits points on the curve where this bound is attained.
 
 :::
 
@@ -104,7 +104,7 @@ The distance from the origin to $(x,y)$ is $\sqrt{x^2+y^2}$. Step <1>1 gives the
 
 ::: pf-qed
 
-Step <1>3 gives the requested minimum distance and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested minimum distance and corresponding choice.
 
 :::
 

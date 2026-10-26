@@ -26,7 +26,7 @@ review: draft
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A composition of open maps is open.
 
@@ -71,7 +71,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -133,7 +133,7 @@ Therefore $F$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The corresponding assertion is false for an infinite product.
 
@@ -216,7 +216,7 @@ Therefore $F$ is not an open map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose
 \[
@@ -272,7 +272,7 @@ Therefore $f^B$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The complete answer is:
 
@@ -284,7 +284,7 @@ The complete answer is:
 
 ::: pf-proof
 
-This is exactly steps <1>1--<1>4.
+This is exactly steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -292,7 +292,7 @@ This is exactly steps <1>1--<1>4.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 settle every part of the problem.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} settle every part of the problem.
 
 :::
 

@@ -27,7 +27,7 @@ Which of the following sets in $\mathbb{R}^2$ is closed?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set
 $$
@@ -53,7 +53,7 @@ is an intersection of two closed sets, since the intervals $[2,5]$ and $[1,3]$ a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Each of choices (A)--(D) is not closed.
 
@@ -66,7 +66,7 @@ For (A), the points $(2+1/n,2)$ lie in the set for all sufficiently large $n$ an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the closed set is
 $$
@@ -77,7 +77,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Step <1>1 proves that choice (E) is closed, while step <1>2 rules out all other choices.
+Step [](#s1-1){.pf-ref} proves that choice (E) is closed, while step [](#s1-2){.pf-ref} rules out all other choices.
 
 :::
 
@@ -85,7 +85,7 @@ Step <1>1 proves that choice (E) is closed, while step <1>2 rules out all other 
 
 ::: pf-qed
 
-Step <1>3 gives the required choice.
+Step [](#s1-3){.pf-ref} gives the required choice.
 
 :::
 

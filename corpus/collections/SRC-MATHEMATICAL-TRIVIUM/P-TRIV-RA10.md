@@ -27,7 +27,7 @@ the implicit derivatives are locally defined.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Along the surface
 $$
@@ -51,7 +51,7 @@ Along the level surface $df=0$, and holding $x$ fixed gives $dx=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -63,13 +63,13 @@ $$
 
 ::: pf-proof
 
-Solve the relation in step <1>1 for $dz/dy$.
+Solve the relation in step [](#s1-1){.pf-ref} for $dz/dy$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Similarly,
 $$
@@ -87,13 +87,13 @@ $$
 
 ::: pf-proof
 
-Repeat step <1>1 while holding $z$ fixed and then while holding $y$ fixed.
+Repeat step [](#s1-1){.pf-ref} while holding $z$ fixed and then while holding $y$ fixed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -109,7 +109,7 @@ $$
 
 ::: pf-proof
 
-Multiply the three formulas from steps <1>2--<1>3:
+Multiply the three formulas from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}:
 $$
 \left(-\frac{f_y}{f_z}\right)
 \left(-\frac{f_x}{f_y}\right)
@@ -123,7 +123,7 @@ All factors involving derivatives of $f$ cancel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Now let
 $$
@@ -157,7 +157,7 @@ constraint, while $df=0$ along the level hypersurface.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -171,13 +171,13 @@ $$
 
 ::: pf-proof
 
-Solve step <1>5 for $dx_{i+1}/dx_i$.
+Solve step [](#s1-5){.pf-ref} for $dx_{i+1}/dx_i$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Multiplying cyclically for $i=1,\ldots,n$ gives
 $$
@@ -196,7 +196,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 \prod_{i=1}^{n}
 \left(
@@ -216,7 +216,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 proves the three-variable identity, and step <1>7 gives its
+Step [](#s1-4){.pf-ref} proves the three-variable identity, and step [](#s1-7){.pf-ref} gives its
 $n$-variable analogue.
 
 :::

@@ -107,7 +107,7 @@ so this is a convergent \(p\)-series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(M\ge1\),
 \[
@@ -140,7 +140,7 @@ Bound the first factor by \(C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Letting \(M\to\infty\),
 \[
@@ -154,13 +154,13 @@ C^p
 
 ::: pf-proof
 
-The partial sums on both sides increase with \(M\). Raise step <1>3 to the \(p\)th power and pass to the monotone limit, allowing \(+\infty\).
+The partial sums on both sides increase with \(M\). Raise step [](#s1-3){.pf-ref} to the \(p\)th power and pass to the monotone limit, allowing \(+\infty\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each \(n\),
 \[
@@ -196,7 +196,7 @@ h(z)=|f(x+n+n^{-a}z)|.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -212,13 +212,13 @@ C^p
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Tonelli's theorem gives
 \[
@@ -236,13 +236,13 @@ C^p
 
 ::: pf-proof
 
-Integrate step <1>6 over \([N,N+1]\). All terms are nonnegative, so Tonelli permits interchange of the integral and the infinite sum.
+Integrate step [](#s1-6){.pf-ref} over \([N,N+1]\). All terms are nonnegative, so Tonelli permits interchange of the integral and the infinite sum.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For fixed \(n,z\), the change of variables
 \[
@@ -267,7 +267,7 @@ The change of variables is a translation, so \(du=dx\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since
 \[
@@ -289,7 +289,7 @@ The exponent \(a\) is positive, and \(n\ge1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore, for \(0\le z\le1\),
 \[
@@ -304,7 +304,7 @@ N+n+2]}.
 
 ::: pf-proof
 
-The left endpoint is at least \(N+n\), and by step <1>9,
+The left endpoint is at least \(N+n\), and by step [](#s1-9){.pf-ref},
 \[
 1+n^{-a}z\le2.
 \]
@@ -313,7 +313,7 @@ The left endpoint is at least \(N+n\), and by step <1>9,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence
 \[
@@ -327,13 +327,13 @@ Hence
 
 ::: pf-proof
 
-Use steps <1>8--<1>10 and nonnegativity of the integrand.
+Use steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} and nonnegativity of the integrand.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The intervals
 \[
@@ -356,7 +356,7 @@ This interval of possible integers has length \(2\), so except at endpoints it c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Consequently,
 \[
@@ -384,7 +384,7 @@ By Tonelli,
 \right)
 du.
 \]
-The multiplicity factor is at most \(2\) almost everywhere by step <1>12.
+The multiplicity factor is at most \(2\) almost everywhere by step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -392,7 +392,7 @@ The multiplicity factor is at most \(2\) almost everywhere by step <1>12.
 
 ::: pf-step
 
-Combining steps <1>7, <1>11, and <1>13,
+Combining steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-13){.pf-ref},
 \[
 \boxed{
 \int_N^{N+1}G(x)^p\,dx
@@ -405,7 +405,7 @@ Combining steps <1>7, <1>11, and <1>13,
 
 ::: pf-proof
 
-The bound in step <1>13 is independent of \(z\), and
+The bound in step [](#s1-13){.pf-ref} is independent of \(z\), and
 \[
 \int_0^1dz=1.
 \]
@@ -414,7 +414,7 @@ The bound in step <1>13 is independent of \(z\), and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -432,7 +432,7 @@ If a nonnegative measurable function has finite \(p\)th power integral on a fini
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Since
 \[
@@ -450,13 +450,13 @@ G(x)<\infty
 
 ::: pf-proof
 
-For each integer \(N\), the exceptional set in \([N,N+1]\) has measure zero by step <1>15. A countable union of null sets is null.
+For each integer \(N\), the exceptional set in \([N,N+1]\) has measure zero by step [](#s1-15){.pf-ref}. A countable union of null sets is null.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence, for almost every \(x\),
 \[
@@ -470,7 +470,7 @@ Hence, for almost every \(x\),
 
 ::: pf-proof
 
-The series has nonnegative terms, so convergence is equivalent to finiteness of its sum \(G(x)\). Apply step <1>16.
+The series has nonnegative terms, so convergence is equivalent to finiteness of its sum \(G(x)\). Apply step [](#s1-16){.pf-ref}.
 
 :::
 
@@ -478,7 +478,7 @@ The series has nonnegative terms, so convergence is equivalent to finiteness of 
 
 ::: pf-qed
 
-Step <1>17 is the required conclusion.
+Step [](#s1-17){.pf-ref} is the required conclusion.
 
 :::
 

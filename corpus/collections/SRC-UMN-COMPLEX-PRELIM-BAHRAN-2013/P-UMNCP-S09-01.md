@@ -47,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 $$
@@ -72,7 +72,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer
 $$
@@ -101,7 +101,7 @@ $$
 \frac{m!}{R^m}
 \max_{|z|=R}|f(z)|.
 $$
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 |f^{(m)}(0)|
 \le
@@ -134,7 +134,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Taylor series of $f$ at $0$ is constant.
 
@@ -148,7 +148,7 @@ f(z)
 \sum_{m=0}^{\infty}
 \frac{f^{(m)}(0)}{m!}z^m.
 $$
-By step <1>2, every coefficient with
+By step [](#s1-2){.pf-ref}, every coefficient with
 $$
 m\ge1
 $$
@@ -162,7 +162,7 @@ for every $z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus
 $$
@@ -172,7 +172,7 @@ $$
 
 ::: pf-proof
 
-This is exactly the conclusion of step <1>3.
+This is exactly the conclusion of step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -180,7 +180,7 @@ This is exactly the conclusion of step <1>3.
 
 ::: pf-qed
 
-Step <1>4 proves the claim.
+Step [](#s1-4){.pf-ref} proves the claim.
 
 :::
 

@@ -30,7 +30,7 @@ Find the angle between the diagonals of the back and left faces of the cube show
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two face diagonals may be represented by the direction vectors
 $$
@@ -48,7 +48,7 @@ Place a unit cube with a common vertex of the back and left faces at the origin 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\theta$ is the angle between these diagonals, then
 $$
@@ -58,7 +58,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \mathbf A\cdot\mathbf B=1,
 \qquad
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The angle is
 $$
@@ -87,7 +87,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-The angle between two vectors is taken in $[0,\pi]$. Step <1>2 therefore gives $\theta=\arccos(1/2)=\pi/3=60^\circ$.
+The angle between two vectors is taken in $[0,\pi]$. Step [](#s1-2){.pf-ref} therefore gives $\theta=\arccos(1/2)=\pi/3=60^\circ$.
 
 :::
 
@@ -95,7 +95,7 @@ The angle between two vectors is taken in $[0,\pi]$. Step <1>2 therefore gives $
 
 ::: pf-qed
 
-Step <1>3 gives the requested angle and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested angle and corresponding choice.
 
 :::
 

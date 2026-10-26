@@ -34,7 +34,7 @@ Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be us
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the hypotheses of part (a), the function
 $$
@@ -61,7 +61,7 @@ $h$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore $g$ has a unique fixed point in $\abs{z}<1$.
 
@@ -72,13 +72,13 @@ The fixed points of $g$ are precisely the zeros of
 $$
 h(z)=z-g(z).
 $$
-Step <1>1 gives exactly one such zero in the disk.
+Step [](#s1-1){.pf-ref} gives exactly one such zero in the disk.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The conclusion of part (a) is false if the boundary hypothesis is weakened to
 $$
@@ -104,7 +104,7 @@ on the unit circle, but every point of the unit disk is a fixed point. Thus uniq
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $\alpha\in\DD$, the map
 $$
@@ -140,7 +140,7 @@ self-map of the disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose the map $f$ in part (c) has a fixed point $\alpha\in\DD$. Then
 $$
@@ -151,7 +151,7 @@ is an analytic self-map of $\DD$ with $H(0)=0$.
 
 ::: pf-proof
 
-Step <1>4 shows that both occurrences of $\psi_\alpha$ map $\DD$ biholomorphically onto itself,
+Step [](#s1-4){.pf-ref} shows that both occurrences of $\psi_\alpha$ map $\DD$ biholomorphically onto itself,
 while the hypothesis of part (c) gives $f(\DD)\subseteq\DD$. Thus $H$ is an analytic self-map.
 Since $\psi_\alpha(0)=\alpha$ and $f(\alpha)=\alpha$,
 $$
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $H:\DD\to\DD$ is analytic, $H(0)=0$, and $H(\gamma)=\gamma$ for some
 $0\ne\gamma\in\DD$, then
@@ -197,7 +197,7 @@ for some $|\lambda|=1$. Since $H(\gamma)=\gamma$ and $\gamma\ne0$, one has $\lam
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $f:\DD\to\DD$ is analytic and $f\not\equiv\operatorname{id}_{\DD}$, then $f$ has
 at most one fixed point in $\DD$.
@@ -205,11 +205,11 @@ at most one fixed point in $\DD$.
 
 ::: pf-proof
 
-Suppose $f$ had distinct fixed points $\alpha,\beta\in\DD$. Define $H$ as in step <1>5 and put
+Suppose $f$ had distinct fixed points $\alpha,\beta\in\DD$. Define $H$ as in step [](#s1-5){.pf-ref} and put
 $$
 \gamma=\psi_\alpha(\beta).
 $$
-Because $\beta\ne\alpha$, step <1>4 gives $\gamma\ne0$. Also
+Because $\beta\ne\alpha$, step [](#s1-4){.pf-ref} gives $\gamma\ne0$. Also
 $$
 \begin{aligned}
 H(\gamma)
@@ -225,7 +225,7 @@ f(\psi_\alpha(\gamma))
 \gamma.
 \end{aligned}
 $$
-By step <1>6, $H$ is the identity. Conjugating by $\psi_\alpha$ then gives
+By step [](#s1-6){.pf-ref}, $H$ is the identity. Conjugating by $\psi_\alpha$ then gives
 $$
 f=\operatorname{id}_{\DD},
 $$
@@ -237,7 +237,7 @@ contrary to the hypothesis. Hence two distinct fixed points are impossible.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), step <1>3 answers part (b), and step <1>7 answers part (c).
+Step [](#s1-2){.pf-ref} proves part (a), step [](#s1-3){.pf-ref} answers part (b), and step [](#s1-7){.pf-ref} answers part (c).
 
 :::
 

@@ -60,7 +60,7 @@ Solve for $c_i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The normalizing sum is
 \[
@@ -87,7 +87,7 @@ The two geometric sums equal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -100,13 +100,13 @@ c_i=\frac{1-r}{1+r-r^{i+1}}
 
 ::: pf-proof
 
-Invert the expression in step <1>2 and substitute $r=e^{-\alpha}$.
+Invert the expression in step [](#s1-2){.pf-ref} and substitute $r=e^{-\alpha}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By the Chapman--Kolmogorov equation,
 \[
@@ -122,7 +122,7 @@ To move from level $i$ to level $j$ in two steps, condition on the intermediate 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -136,15 +136,15 @@ e^{-\alpha(|i-k|+|k-j|)}}.
 
 ::: pf-proof
 
-Substitute $P_{ik}(1)=c_i e^{-\alpha|i-k|}$ and $P_{kj}(1)=c_k e^{-\alpha|k-j|}$ into step <1>4 and factor out $c_i$.
+Substitute $P_{ik}(1)=c_i e^{-\alpha|i-k|}$ and $P_{kj}(1)=c_k e^{-\alpha|k-j|}$ into step [](#s1-4){.pf-ref} and factor out $c_i$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Substituting the normalization from step <1>3 gives the fully explicit convergent series
+Substituting the normalization from step [](#s1-3){.pf-ref} gives the fully explicit convergent series
 \[
 \boxed{
 P_{ij}(2)
@@ -158,7 +158,7 @@ P_{ij}(2)
 
 ::: pf-proof
 
-Replace $c_i$ and $c_k$ in step <1>5 by step <1>3. Since $0<r<1$, the summand is bounded by a constant multiple of $r^{|i-k|+|k-j|}$, so the series converges absolutely.
+Replace $c_i$ and $c_k$ in step [](#s1-5){.pf-ref} by step [](#s1-3){.pf-ref}. Since $0<r<1$, the summand is bounded by a constant multiple of $r^{|i-k|+|k-j|}$, so the series converges absolutely.
 
 :::
 
@@ -166,7 +166,7 @@ Replace $c_i$ and $c_k$ in step <1>5 by step <1>3. Since $0<r<1$, the summand is
 
 ::: pf-qed
 
-Step <1>3 gives the constants $c_i$, and steps <1>5--<1>6 give the two-step transition probabilities.
+Step [](#s1-3){.pf-ref} gives the constants $c_i$, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the two-step transition probabilities.
 
 :::
 

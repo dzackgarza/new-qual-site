@@ -39,7 +39,7 @@ Substitute $y=e^{\lambda t}$ into the homogeneous equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -75,7 +75,7 @@ The forcing is $e^{3t}$, and $3$ is not a root of the characteristic polynomial,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Substitution gives
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -124,13 +124,13 @@ $$
 
 ::: pf-proof
 
-Solve step <1>4 for $A$ and add the particular solution to the homogeneous solution from step <1>2.
+Solve step [](#s1-4){.pf-ref} for $A$ and add the particular solution to the homogeneous solution from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The condition $y(0)=1$ gives
 $$
@@ -140,13 +140,13 @@ $$
 
 ::: pf-proof
 
-Substitute $t=0$ into step <1>5.
+Substitute $t=0$ into step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The derivative is
 $$
@@ -162,13 +162,13 @@ $$
 
 ::: pf-proof
 
-Differentiate step <1>5.
+Differentiate step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The condition $y'(0)=0$ gives
 $$
@@ -178,15 +178,15 @@ $$
 
 ::: pf-proof
 
-Substitute $t=0$ into step <1>7.
+Substitute $t=0$ into step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Solving steps <1>6 and <1>8 gives
+Solving steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref} gives
 $$
 C_1=\frac52,
 \qquad
@@ -196,13 +196,13 @@ $$
 
 ::: pf-proof
 
-Subtract step <1>6 from step <1>8 to get $C_2=-2$, then substitute back to get $C_1=5/2$.
+Subtract step [](#s1-6){.pf-ref} from step [](#s1-8){.pf-ref} to get $C_2=-2$, then substitute back to get $C_1=5/2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -220,7 +220,7 @@ $$
 
 ::: pf-proof
 
-Substitute the constants from step <1>9 into step <1>5.
+Substitute the constants from step [](#s1-9){.pf-ref} into step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -228,7 +228,7 @@ Substitute the constants from step <1>9 into step <1>5.
 
 ::: pf-qed
 
-Step <1>10 satisfies both the differential equation and the two initial conditions.
+Step [](#s1-10){.pf-ref} satisfies both the differential equation and the two initial conditions.
 
 :::
 

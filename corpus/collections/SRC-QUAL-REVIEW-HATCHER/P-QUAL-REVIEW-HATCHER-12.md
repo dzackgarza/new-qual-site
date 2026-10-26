@@ -27,7 +27,7 @@ x\in M.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since \(M\) is an \(n\)-manifold, there is an open neighborhood
 \[
@@ -55,7 +55,7 @@ This is the definition of an \(n\)-manifold, after translating the Euclidean cha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Excision gives
 \[
@@ -86,7 +86,7 @@ gives the displayed isomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Via the chart,
 \[
@@ -105,7 +105,7 @@ A homeomorphism of pairs induces isomorphisms on relative homology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Shrinking \(V\) if necessary, excision identifies
 \[
@@ -140,7 +140,7 @@ H_i(B,B\setminus\{0\}).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space
 \[
@@ -163,7 +163,7 @@ v\longmapsto\frac{v}{\|v\|}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since \(\mathbb R^n\) is contractible, the long exact sequence of the pair gives
 \[
@@ -182,7 +182,7 @@ For \(i>0\), the absolute homology groups of \(\mathbb R^n\) vanish, so the conn
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -194,13 +194,13 @@ H_i(\mathbb R^n,\mathbb R^n\setminus\{0\})
 
 ::: pf-proof
 
-Apply step <1>5 to step <1>6.
+Apply step [](#s1-5){.pf-ref} to step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -216,13 +216,13 @@ H_i(M,M\setminus\{x\};\mathbb Z)
 
 ::: pf-proof
 
-By steps <1>2--<1>7, the local relative homology is the reduced homology of \(S^{n-1}\), shifted by one degree. The sphere has reduced homology \(\mathbb Z\) only in degree \(n-1\).
+By steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref}, the local relative homology is the reduced homology of \(S^{n-1}\), shifted by one degree. The sphere has reduced homology \(\mathbb Z\) only in degree \(n-1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Applying the same local-homology calculation using a \(k\)-dimensional chart gives
 \[
@@ -238,7 +238,7 @@ H_i(M,M\setminus\{x\};\mathbb Z)
 
 ::: pf-proof
 
-Repeat steps <1>1--<1>8 with \(\mathbb R^k\) in place of \(\mathbb R^n\).
+Repeat steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} with \(\mathbb R^k\) in place of \(\mathbb R^n\).
 
 :::
 
@@ -246,7 +246,7 @@ Repeat steps <1>1--<1>8 with \(\mathbb R^k\) in place of \(\mathbb R^n\).
 
 ::: pf-step
 
-The local homology group in step <1>8 is nonzero exactly in degree \(n\), while the same group in step <1>9 is nonzero exactly in degree \(k\).
+The local homology group in step [](#s1-8){.pf-ref} is nonzero exactly in degree \(n\), while the same group in step [](#s1-9){.pf-ref} is nonzero exactly in degree \(k\).
 
 
 ::: pf-proof
@@ -261,7 +261,7 @@ so both degree descriptions must agree.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -271,13 +271,13 @@ Therefore
 
 ::: pf-proof
 
-If \(n\ne k\), then at degree \(i=n\), step <1>8 gives \(\mathbb Z\) while step <1>9 gives \(0\), contradiction.
+If \(n\ne k\), then at degree \(i=n\), step [](#s1-8){.pf-ref} gives \(\mathbb Z\) while step [](#s1-9){.pf-ref} gives \(0\), contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence an \(n\)-manifold cannot also be a \(k\)-manifold for any
 \[
@@ -287,7 +287,7 @@ Hence an \(n\)-manifold cannot also be a \(k\)-manifold for any
 
 ::: pf-proof
 
-Step <1>11 shows equality of dimensions is necessary.
+Step [](#s1-11){.pf-ref} shows equality of dimensions is necessary.
 
 :::
 
@@ -295,7 +295,7 @@ Step <1>11 shows equality of dimensions is necessary.
 
 ::: pf-qed
 
-Step <1>12 is the required conclusion.
+Step [](#s1-12){.pf-ref} is the required conclusion.
 
 :::
 

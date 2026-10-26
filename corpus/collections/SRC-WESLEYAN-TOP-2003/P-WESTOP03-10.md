@@ -29,7 +29,7 @@ ordered by inclusion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The partially ordered set $\mathcal C$ is nonempty.
 
@@ -42,7 +42,7 @@ The space $X$ itself is compact and $f(X)=Y$ because $f$ is onto. Hence $X\in\ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $\mathcal T\subseteq\mathcal C$ be a chain and set
 \[
@@ -59,7 +59,7 @@ Because $X$ is Hausdorff, every compact subset $Z\subseteq X$ is closed. Thus $F
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $y\in Y$, the family
 \[
@@ -80,7 +80,7 @@ For each $Z\in\mathcal T$, surjectivity $f(Z)=Y$ gives a point of $Z\cap f^{-1}(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence for every $y\in Y$,
 \[
@@ -90,7 +90,7 @@ F_{\mathcal T}\cap f^{-1}(y)\ne\varnothing.
 
 ::: pf-proof
 
-The compact space $X$ has the property that every family of closed subsets with the finite intersection property has nonempty total intersection. Apply this to the family in step <1>3:
+The compact space $X$ has the property that every family of closed subsets with the finite intersection property has nonempty total intersection. Apply this to the family in step [](#s1-3){.pf-ref}:
 \[
 \bigcap_{Z\in\mathcal T}(Z\cap f^{-1}(y))
 =\left(\bigcap_{Z\in\mathcal T}Z\right)\cap f^{-1}(y)
@@ -101,7 +101,7 @@ The compact space $X$ has the property that every family of closed subsets with 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -112,13 +112,13 @@ so $F_{\mathcal T}\in\mathcal C$ and is a lower bound for the chain $\mathcal T$
 
 ::: pf-proof
 
-Step <1>4 says that every $y\in Y$ has a preimage lying in $F_{\mathcal T}$, so the restriction of $f$ to $F_{\mathcal T}$ is onto. Compactness is step <1>2. By definition of intersection, $F_{\mathcal T}\subseteq Z$ for every $Z\in\mathcal T$.
+Step [](#s1-4){.pf-ref} says that every $y\in Y$ has a preimage lying in $F_{\mathcal T}$, so the restriction of $f$ to $F_{\mathcal T}$ is onto. Compactness is step [](#s1-2){.pf-ref}. By definition of intersection, $F_{\mathcal T}\subseteq Z$ for every $Z\in\mathcal T$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Apply Zorn's lemma to $\mathcal C$ with the reverse inclusion order
 \[
@@ -129,13 +129,13 @@ There exists a maximal element $F$ for $\preceq$.
 
 ::: pf-proof
 
-In the reverse order, an upper bound for a chain is exactly a lower bound under ordinary inclusion. Step <1>5 supplies such an element for every chain. Since $\mathcal C$ is nonempty by step <1>1, Zorn's lemma gives a maximal element.
+In the reverse order, an upper bound for a chain is exactly a lower bound under ordinary inclusion. Step [](#s1-5){.pf-ref} supplies such an element for every chain. Since $\mathcal C$ is nonempty by step [](#s1-1){.pf-ref}, Zorn's lemma gives a maximal element.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 This $F$ is minimal under ordinary inclusion among compact subsets $Z\subseteq X$ satisfying $f(Z)=Y$.
 
@@ -148,7 +148,7 @@ Suppose $Z\in\mathcal C$ and $Z\subseteq F$. Then, in the reverse order, $F\prec
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore there exists a compact subspace
 \[
@@ -159,7 +159,7 @@ minimal among compact subspaces mapping onto $Y$.
 
 ::: pf-proof
 
-Step <1>6 gives $F\in\mathcal C$, so it is compact and satisfies $f(F)=Y$; step <1>7 proves the required minimality.
+Step [](#s1-6){.pf-ref} gives $F\in\mathcal C$, so it is compact and satisfies $f(F)=Y$; step [](#s1-7){.pf-ref} proves the required minimality.
 
 :::
 
@@ -167,7 +167,7 @@ Step <1>6 gives $F\in\mathcal C$, so it is compact and satisfies $f(F)=Y$; step 
 
 ::: pf-qed
 
-Step <1>8 is exactly the assertion of the problem.
+Step [](#s1-8){.pf-ref} is exactly the assertion of the problem.
 
 :::
 

@@ -23,7 +23,7 @@ Assume $x>0$ and $\nu$ is fixed.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With the substitution
 $$
@@ -67,7 +67,7 @@ Substituting gives the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently,
 $$
@@ -82,7 +82,7 @@ $$
 
 ::: pf-proof
 
-Split the integral from step <1>1 at $0$ and substitute $t\mapsto -t$ in
+Split the integral from step [](#s1-1){.pf-ref} at $0$ and substitute $t\mapsto -t$ in
 the negative half. Since $\cosh t$ is even,
 $$
 e^{-x\cosh(-t)}=e^{-x\cosh t},
@@ -124,7 +124,7 @@ Thus $t=0$ is the unique nondegenerate minimum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The leading saddle-point approximation is
 $$
@@ -174,7 +174,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $K_\nu$ satisfies
 $$
@@ -190,7 +190,7 @@ $$
 
 ::: pf-proof
 
-Starting from step <1>2, differentiation under the integral gives
+Starting from step [](#s1-2){.pf-ref}, differentiation under the integral gives
 $$
 K_\nu'(x)
 =
@@ -256,7 +256,7 @@ Rearranging gives the differential equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Write the saddle expansion in the form
 $$
@@ -292,7 +292,7 @@ K_\nu(x)
 =
 e^{-x}x^{-1/2}A(x).
 $$
-Substitution into the differential equation from step <1>5 gives
+Substitution into the differential equation from step [](#s1-5){.pf-ref} gives
 $$
 A''-2A'
 +
@@ -343,7 +343,7 @@ which is the displayed recurrence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The leading coefficient is
 $$
@@ -353,8 +353,8 @@ $$
 
 ::: pf-proof
 
-Compare the general ansatz in step <1>6 with the leading saddle estimate from
-step <1>4:
+Compare the general ansatz in step [](#s1-6){.pf-ref} with the leading saddle estimate from
+step [](#s1-4){.pf-ref}:
 $$
 K_\nu(x)
 \sim
@@ -366,7 +366,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -392,7 +392,7 @@ as $x\to\infty$, with the empty product equal to $1$.
 
 ::: pf-proof
 
-Starting from $a_0$ in step <1>7 and iterating the recurrence in step <1>6
+Starting from $a_0$ in step [](#s1-7){.pf-ref} and iterating the recurrence in step [](#s1-6){.pf-ref}
 gives
 $$
 a_k
@@ -407,7 +407,7 @@ a_k
 k!\,8^k
 }.
 $$
-Substitute these coefficients into the expansion of step <1>6.
+Substitute these coefficients into the expansion of step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -439,7 +439,7 @@ $$
 
 ::: pf-proof
 
-Expand the first two nontrivial terms of step <1>8.
+Expand the first two nontrivial terms of step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -447,7 +447,7 @@ Expand the first two nontrivial terms of step <1>8.
 
 ::: pf-qed
 
-Steps <1>4 and <1>8 give the leading saddle approximation and the full
+Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} give the leading saddle approximation and the full
 asymptotic expansion, respectively.
 
 :::

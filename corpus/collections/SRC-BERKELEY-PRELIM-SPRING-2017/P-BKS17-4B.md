@@ -47,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each $L_j$ has degree at most $n-1$ and satisfies
 $$
@@ -64,7 +64,7 @@ Every denominator $z_j-z_k$ is nonzero because the nodes are distinct. The defin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial
 $$
@@ -75,7 +75,7 @@ has degree at most $n-1$ and satisfies $P(z_k)=f_k$ for every $1\leq k\leq n$.
 
 ::: pf-proof
 
-The degree bound follows from step <1>1. For each $k$,
+The degree bound follows from step [](#s1-1){.pf-ref}. For each $k$,
 $$
 P(z_k)
 =
@@ -90,9 +90,9 @@ Thus the required polynomial exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The polynomial in step <1>2 is unique among polynomials of degree at most $n-1$ with the prescribed values.
+The polynomial in step [](#s1-2){.pf-ref} is unique among polynomials of degree at most $n-1$ with the prescribed values.
 
 
 ::: pf-proof
@@ -109,7 +109,7 @@ for every $j$. Then $R\coloneqq P-Q$ has degree at most $n-1$ and has the $n$ di
 
 ::: pf-qed
 
-Step <1>2 proves existence and step <1>3 proves uniqueness.
+Step [](#s1-2){.pf-ref} proves existence and step [](#s1-3){.pf-ref} proves uniqueness.
 
 :::
 

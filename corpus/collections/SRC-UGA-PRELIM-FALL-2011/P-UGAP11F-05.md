@@ -32,7 +32,7 @@ Let $D$ be the upper half-disk of radius $3$, so $C=\partial D$ with positive or
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The contribution from the diameter is $0$.
 
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The contribution from the semicircular arc is
 $$
@@ -131,7 +131,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Direct computation gives
 $$
@@ -144,13 +144,13 @@ $$
 
 ::: pf-proof
 
-Add the diameter contribution from step <1>1 and the arc contribution from step <1>2.
+Add the diameter contribution from step [](#s1-1){.pf-ref} and the arc contribution from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Green's theorem gives the same value.
 
@@ -195,7 +195,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>3--<1>4 compute the integral both directly and via Green's theorem, with the same value.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} compute the integral both directly and via Green's theorem, with the same value.
 
 :::
 

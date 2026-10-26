@@ -35,7 +35,7 @@ so that $x\in[1,e]$ corresponds to $t\in[0,1]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The differential equation becomes
 \[
@@ -63,7 +63,7 @@ The boundary values follow from $t=\log x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Writing
 \[
@@ -85,7 +85,7 @@ Y'=e^{-t}(Z'-Z),
 \qquad
 Y''=e^{-t}(Z''-2Z'+Z).
 \]
-Substitution into step <1>1 yields
+Substitution into step [](#s1-1){.pf-ref} yields
 \[
 e^{-t}\bigl(Z''+(\lambda-1)Z\bigr)=0.
 \]
@@ -95,7 +95,7 @@ Because $e^{-t}$ is nonzero, the boundary conditions for $Y$ are equivalent to t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A nonzero solution exists exactly for
 \[
@@ -120,7 +120,7 @@ The condition $Z(0)=0$ gives $A=0$, while $Z(1)=0$ permits $B\ne0$ exactly when 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Returning to $x$, all nonzero solutions are
 \[
@@ -134,7 +134,7 @@ y_n(x)=\frac{C}{x}\sin(n\pi\log x),
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 Y_n(t)=Ce^{-t}\sin(n\pi t).
 \]
@@ -146,7 +146,7 @@ Substitute $t=\log x$ and $e^{-t}=1/x$.
 
 ::: pf-qed
 
-Step <1>4 lists every eigenvalue and corresponding nonzero solution satisfying the two boundary conditions.
+Step [](#s1-4){.pf-ref} lists every eigenvalue and corresponding nonzero solution satisfying the two boundary conditions.
 
 :::
 

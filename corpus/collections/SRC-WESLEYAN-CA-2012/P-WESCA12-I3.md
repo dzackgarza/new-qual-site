@@ -40,7 +40,7 @@ the function $f$ is holomorphic on
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The point $z_0$ is a **pole** of $f$ if
 \[
@@ -75,7 +75,7 @@ principal part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The **order** of a pole $z_0$ is the unique integer
 \[
@@ -111,7 +111,7 @@ has a removable singularity at $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The isolated singularity $z_0$ is **essential** if it is neither
 removable nor a pole.
@@ -140,7 +140,7 @@ Thus the three isolated-singularity types are:
 
 ::: pf-qed
 
-Steps <1>1--<1>3 give the requested definitions and their standard
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definitions and their standard
 equivalent formulations.
 
 :::

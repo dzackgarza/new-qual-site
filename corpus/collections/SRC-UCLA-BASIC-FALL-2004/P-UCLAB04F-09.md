@@ -30,7 +30,7 @@ Tv=\lambda v.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every nonnegative integer $k$,
 \[
@@ -58,7 +58,7 @@ Thus the result follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -72,7 +72,7 @@ P(T)v=P(\lambda)v.
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 P(T)v
@@ -89,7 +89,7 @@ P(\lambda)v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -107,7 +107,7 @@ Therefore
 \[
 0=P(T)v=P(\lambda)v
 \]
-by step <1>2. Since $v\ne0$, the scalar multiplying it must be zero. Hence
+by step [](#s1-2){.pf-ref}. Since $v\ne0$, the scalar multiplying it must be zero. Hence
 \[
 \boxed{P(\lambda)=0}.
 \]
@@ -116,14 +116,14 @@ by step <1>2. Since $v\ne0$, the scalar multiplying it must be zero. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every eigenvalue of $T$ is a root of $P$.
 
 
 ::: pf-proof
 
-The eigenvalue $\lambda$ was arbitrary, and step <1>3 shows that $P(\lambda)=0$.
+The eigenvalue $\lambda$ was arbitrary, and step [](#s1-3){.pf-ref} shows that $P(\lambda)=0$.
 
 :::
 
@@ -131,7 +131,7 @@ The eigenvalue $\lambda$ was arbitrary, and step <1>3 shows that $P(\lambda)=0$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

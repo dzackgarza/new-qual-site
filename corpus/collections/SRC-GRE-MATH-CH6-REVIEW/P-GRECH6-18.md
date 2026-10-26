@@ -28,7 +28,7 @@ Which one of the following rings does NOT have the same number of units as the o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A pair $(r,s)$ is a unit in a direct-product ring $R\oplus S$ exactly when both $r$ and $s$ are units in their respective rings.
 
@@ -41,7 +41,7 @@ If $(r,s)(r',s')=(1,1)$, then $rr'=1$ and $ss'=1$, so both components are units.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The rings $\ZZ$, $\ZZ_3$, and $\ZZ_6$ each have two units, while $\ZZ_5$ has four units.
 
@@ -65,14 +65,14 @@ For $\ZZ_n$, these are exactly the residue classes relatively prime to $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Choices (A), (B), (D), and (E) each have four units, whereas choice (C) has eight.
 
 
 ::: pf-proof
 
-By steps <1>1 and <1>2, the numbers of units are respectively
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, the numbers of units are respectively
 $$
 2\cdot2=4,
 \quad
@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the exceptional ring is
 $$
@@ -100,7 +100,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>3 shows that this ring has eight units while each of the other four has four.
+Step [](#s1-3){.pf-ref} shows that this ring has eight units while each of the other four has four.
 
 :::
 
@@ -108,7 +108,7 @@ Step <1>3 shows that this ring has eight units while each of the other four has 
 
 ::: pf-qed
 
-Step <1>4 gives the required ring.
+Step [](#s1-4){.pf-ref} gives the required ring.
 
 :::
 

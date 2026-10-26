@@ -56,7 +56,7 @@ K(x)=\frac{x-x^2}{2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Integration by parts gives
 \[
@@ -90,7 +90,7 @@ K(0)=K(1)=0,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A second integration by parts gives
 \[
@@ -106,7 +106,7 @@ A second integration by parts gives
 
 ::: pf-proof
 
-Starting from step <1>2,
+Starting from step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 -\int_0^1K'f'
@@ -155,7 +155,7 @@ Combine the terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On the interval $[0,1]$,
 \[
@@ -187,7 +187,7 @@ K\left(\frac12\right)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -202,7 +202,7 @@ Hence
 
 ::: pf-proof
 
-By the triangle inequality and step <1>4,
+By the triangle inequality and step [](#s1-4){.pf-ref},
 \[
 \begin{aligned}
 \left|
@@ -222,7 +222,7 @@ By the triangle inequality and step <1>4,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -241,7 +241,7 @@ Therefore
 
 ::: pf-proof
 
-Use the identity from step <1>3 and the estimate from step <1>5.
+Use the identity from step [](#s1-3){.pf-ref} and the estimate from step [](#s1-5){.pf-ref}.
 Thus the desired inequality holds with
 \[
 \boxed{C=\frac18}.
@@ -253,7 +253,7 @@ Thus the desired inequality holds with
 
 ::: pf-qed
 
-Step <1>6 is the required estimate.
+Step [](#s1-6){.pf-ref} is the required estimate.
 
 :::
 

@@ -27,7 +27,7 @@ Given set $A = \{a, b\}$, set $B = \{c, d, e, f\}$, and set $C = \{g, h, i\}$. I
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $D=P(C)\times B$ has cardinality
 $$
@@ -50,7 +50,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -60,13 +60,13 @@ $$
 
 ::: pf-proof
 
-The power set of a finite set with $n$ elements has $2^n$ elements. Apply this with $n=32$ from step <1>1.
+The power set of a finite set with $n$ elements has $2^n$ elements. Apply this with $n=32$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Choice (A) also has cardinality $2^{32}$.
 
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 None of choices (B)--(E) has cardinality $2^{32}$.
 
@@ -118,7 +118,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the required set is
 $$
@@ -129,7 +129,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 show that choice (A) has the same cardinality as $P(D)$, while step <1>4 rules out the remaining choices.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} show that choice (A) has the same cardinality as $P(D)$, while step [](#s1-4){.pf-ref} rules out the remaining choices.
 
 :::
 
@@ -137,7 +137,7 @@ Steps <1>2 and <1>3 show that choice (A) has the same cardinality as $P(D)$, whi
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

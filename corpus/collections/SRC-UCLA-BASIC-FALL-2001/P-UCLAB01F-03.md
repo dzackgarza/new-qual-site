@@ -36,7 +36,7 @@ To prove continuity of $f$ on $E$, it is enough to prove continuity at an arbitr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists $N$ such that
 \[
@@ -53,7 +53,7 @@ The convergence $f_n\to f$ is uniform on $E$. Apply the definition of uniform co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $\delta>0$ such that, whenever $x\in E$ and $|x-x_0|<\delta$,
 \[
@@ -69,7 +69,7 @@ The function $f_N$ is continuous at $x_0$, because every $f_n$ is continuous on 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Whenever $x\in E$ and $|x-x_0|<\delta$,
 \[
@@ -79,7 +79,7 @@ Whenever $x\in E$ and $|x-x_0|<\delta$,
 
 ::: pf-proof
 
-For such $x$, the triangle inequality and steps <1>2--<1>3 give
+For such $x$, the triangle inequality and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give
 \[
 \begin{aligned}
 |f(x)-f(x_0)|
@@ -97,14 +97,14 @@ For such $x$, the triangle inequality and steps <1>2--<1>3 give
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is continuous on $E$.
 
 
 ::: pf-proof
 
-Step <1>4 proves continuity of $f$ at the arbitrary point $x_0\in E$. Therefore $f$ is continuous at every point of $E$.
+Step [](#s1-4){.pf-ref} proves continuity of $f$ at the arbitrary point $x_0\in E$. Therefore $f$ is continuous at every point of $E$.
 
 :::
 
@@ -112,7 +112,7 @@ Step <1>4 proves continuity of $f$ at the arbitrary point $x_0\in E$. Therefore 
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

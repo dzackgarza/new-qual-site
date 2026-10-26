@@ -29,7 +29,7 @@ Solve the following systems of linear equations
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a), subtracting the first equation from the second gives
 $$
@@ -49,7 +49,7 @@ Both original left-hand sides equal $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -59,13 +59,13 @@ $$
 
 ::: pf-proof
 
-Rearrange the equation from step <1>1.
+Rearrange the equation from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Substituting into the first equation gives
 $$
@@ -113,7 +113,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the solution set of part (a) is
 $$
@@ -129,13 +129,13 @@ $$
 
 ::: pf-proof
 
-Take $t=z$ in steps <1>2--<1>3.
+Take $t=z$ in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For part (b), write the two equations as
 $$
@@ -155,9 +155,9 @@ Move the remaining variables to the right-hand side.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Subtract twice the first equation in step <1>6 from the second to obtain
+Subtract twice the first equation in step [](#s1-6){.pf-ref} from the second to obtain
 $$
 x_1=x_3-2x_4+x_5.
 $$
@@ -180,9 +180,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Substituting step <1>7 into the first equation in step <1>6 gives
+Substituting step [](#s1-7){.pf-ref} into the first equation in step [](#s1-6){.pf-ref} gives
 $$
 x_2=-2x_3+3x_4-x_5.
 $$
@@ -196,13 +196,13 @@ x_2
 =
 -x_3+x_4-x_1.
 $$
-Use the expression for $x_1$ from step <1>7.
+Use the expression for $x_1$ from step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus the solution set of part (b) is
 $$
@@ -234,7 +234,7 @@ t=x_4,
 \qquad
 u=x_5
 $$
-in steps <1>7--<1>8 and collect coefficients.
+in steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} and collect coefficients.
 
 :::
 
@@ -242,7 +242,7 @@ in steps <1>7--<1>8 and collect coefficients.
 
 ::: pf-qed
 
-Steps <1>5 and <1>9 give the complete solution spaces for parts (a) and (b).
+Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} give the complete solution spaces for parts (a) and (b).
 
 :::
 

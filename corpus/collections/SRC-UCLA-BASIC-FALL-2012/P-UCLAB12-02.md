@@ -21,7 +21,7 @@ Let $f ( x )$ be a bounded real-valued function on the closed interval $[ 0 , 1 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a partition
 \[
@@ -49,7 +49,7 @@ The function is bounded by hypothesis, so all $M_i$ and $m_i$ are finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -80,7 +80,7 @@ This is the Darboux formulation of the definition of the Riemann integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Equivalently, $f$ is Riemann integrable if and only if for every $\varepsilon>0$ there exists a partition $P$ such that
 \[
@@ -108,7 +108,7 @@ Conversely, if the upper and lower integrals are equal, choose one partition who
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Assume now that $f$ is non-decreasing. For every partition $P$,
 \[
@@ -134,7 +134,7 @@ Hence the infimum and supremum on the subinterval are attained at its endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every partition $P$,
 \[
@@ -147,13 +147,13 @@ U(f,P)-L(f,P)
 
 ::: pf-proof
 
-Substitute the endpoint formulas from step <1>4 into the definitions of the upper and lower sums.
+Substitute the endpoint formulas from step [](#s1-4){.pf-ref} into the definitions of the upper and lower sums.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If the mesh of $P$ satisfies
 \[
@@ -173,7 +173,7 @@ Every difference
 \[
 f(x_i)-f(x_{i-1})
 \]
-is nonnegative. Hence step <1>5 gives
+is nonnegative. Hence step [](#s1-5){.pf-ref} gives
 \[
 \begin{aligned}
 U(f,P)-L(f,P)
@@ -191,7 +191,7 @@ because the sum telescopes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $\varepsilon>0$, there exists a partition $P$ such that
 \[
@@ -212,7 +212,7 @@ Otherwise choose
 0<\delta<
 \frac{\varepsilon}{f(1)-f(0)}.
 \]
-Take any partition with mesh at most $\delta$. Step <1>6 gives
+Take any partition with mesh at most $\delta$. Step [](#s1-6){.pf-ref} gives
 \[
 U(f,P)-L(f,P)
 <
@@ -223,14 +223,14 @@ U(f,P)-L(f,P)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore every bounded non-decreasing function on $[0,1]$ is Riemann integrable.
 
 
 ::: pf-proof
 
-Apply the criterion from step <1>3 using step <1>7.
+Apply the criterion from step [](#s1-3){.pf-ref} using step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -238,7 +238,7 @@ Apply the criterion from step <1>3 using step <1>7.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 answer part (a), and steps <1>4--<1>8 prove part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} answer part (a), and steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} prove part (b).
 
 :::
 

@@ -39,7 +39,7 @@ Prove that $f = 0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every complex polynomial $P$,
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\varepsilon>0$, there is a complex polynomial $P$ such that
 $$
@@ -96,7 +96,7 @@ uniformly on $[-1,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -106,7 +106,7 @@ $$
 
 ::: pf-proof
 
-Let $\varepsilon>0$ and choose $P$ as in step <1>2. By step <1>1,
+Let $\varepsilon>0$ and choose $P$ as in step [](#s1-2){.pf-ref}. By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \int_{-1}^1|f(x)|^2\,dx
@@ -127,7 +127,7 @@ The last integral is finite because $f$ is continuous on the compact interval $[
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-The function $|f|^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_0\in[-1,1]$, continuity would give a nontrivial interval relative to $[-1,1]$ on which $|f|^2$ is bounded below by a positive constant. Its integral would then be positive, contradicting step <1>3. Thus $f(x)=0$ for every $x\in[-1,1]$.
+The function $|f|^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_0\in[-1,1]$, continuity would give a nontrivial interval relative to $[-1,1]$ on which $|f|^2$ is bounded below by a positive constant. Its integral would then be positive, contradicting step [](#s1-3){.pf-ref}. Thus $f(x)=0$ for every $x\in[-1,1]$.
 
 :::
 
@@ -145,7 +145,7 @@ The function $|f|^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_
 
 ::: pf-qed
 
-Step <1>4 proves the assertion.
+Step [](#s1-4){.pf-ref} proves the assertion.
 
 :::
 

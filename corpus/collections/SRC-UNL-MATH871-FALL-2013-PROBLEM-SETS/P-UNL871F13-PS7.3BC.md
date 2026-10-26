@@ -43,7 +43,7 @@ set containing $0$ is the whole space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -117,7 +117,7 @@ Therefore $\gamma$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonzero point can also be joined to $0$ by a path.
 
@@ -161,22 +161,22 @@ Thus $\eta$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the excluded-point real line is path-connected.
 
 
 ::: pf-proof
 
-If both endpoints are nonzero, use step <1>2.
-If one endpoint is $0$, use step <1>3 or reverse that path.
+If both endpoints are nonzero, use step [](#s1-2){.pf-ref}.
+If one endpoint is $0$, use step [](#s1-3){.pf-ref} or reverse that path.
 Thus every two points can be joined by a path.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, in the excluded-point topology,
 \[
@@ -189,7 +189,7 @@ Therefore, in the excluded-point topology,
 ::: pf-proof
 
 Path-connected spaces are connected.
-By step <1>4, the whole space is path-connected, so it is itself the unique
+By step [](#s1-4){.pf-ref}, the whole space is path-connected, so it is itself the unique
 path component and therefore also the unique connected component.
 
 :::
@@ -214,7 +214,7 @@ This is the definition of the included-point topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -271,14 +271,14 @@ Hence $\gamma$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the included-point real line is path-connected.
 
 
 ::: pf-proof
 
-Step <1>7 constructs a path between arbitrary
+Step [](#s1-7){.pf-ref} constructs a path between arbitrary
 \[
 x,y\in\mathbb R.
 \]
@@ -287,7 +287,7 @@ x,y\in\mathbb R.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently, in the included-point topology,
 \[
@@ -299,14 +299,14 @@ Consequently, in the included-point topology,
 
 ::: pf-proof
 
-As in step <1>5, path-connectedness implies connectedness, and the whole
+As in step [](#s1-5){.pf-ref}, path-connectedness implies connectedness, and the whole
 space is the unique component of each type.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The complete answer is:
 \[
@@ -334,7 +334,7 @@ The complete answer is:
 
 ::: pf-proof
 
-Collect steps <1>4--<1>5 and <1>8--<1>9.
+Collect steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
@@ -342,7 +342,7 @@ Collect steps <1>4--<1>5 and <1>8--<1>9.
 
 ::: pf-qed
 
-Step <1>10 gives all requested classifications.
+Step [](#s1-10){.pf-ref} gives all requested classifications.
 
 :::
 

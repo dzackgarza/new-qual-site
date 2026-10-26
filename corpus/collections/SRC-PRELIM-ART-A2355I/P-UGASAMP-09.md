@@ -23,7 +23,7 @@ Find the three cube roots of $i$ and compute
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The complex number \(i\) has polar representations
 \[
@@ -45,7 +45,7 @@ Hence Euler's formula gives the displayed representations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The three cube roots of \(i\) are
 \[
@@ -57,7 +57,7 @@ e^{i3\pi/2}.
 
 ::: pf-proof
 
-If \(z^3=i\), then \(|z|^3=1\), so \(|z|=1\). Writing \(z=e^{i\theta}\), step <1>1 gives
+If \(z^3=i\), then \(|z|^3=1\), so \(|z|=1\). Writing \(z=e^{i\theta}\), step [](#s1-1){.pf-ref} gives
 \[
 3\theta=\frac{\pi}{2}+2\pi m.
 \]
@@ -76,7 +76,7 @@ Modulo \(2\pi\), the three distinct values occur for \(m=0,1,2\), namely
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the cube roots are
 \[
@@ -95,13 +95,13 @@ Apply Euler's formula
 \[
 e^{i\theta}=\cos\theta+i\sin\theta
 \]
-to the three angles in step <1>2.
+to the three angles in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -132,7 +132,7 @@ and therefore
 
 ::: pf-qed
 
-Step <1>3 gives all three cube roots of \(i\), and step <1>4 computes \((1+i)^5\).
+Step [](#s1-3){.pf-ref} gives all three cube roots of \(i\), and step [](#s1-4){.pf-ref} computes \((1+i)^5\).
 
 :::
 

@@ -36,7 +36,7 @@ z=\frac{1+w}{1-w}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The image of the extended real axis is the extended real axis:
 \[
@@ -52,7 +52,7 @@ If \(z\in\mathbb R\setminus\{-1\}\), then \((z-1)/(z+1)\in\mathbb R\). Also \(f(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The image of \(|z|=2\) is the circle
 \[
@@ -82,7 +82,7 @@ The point \(w=1\) does not satisfy this equation, so the inverse formula proves 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The image of \(|z|=1\) is the extended imaginary axis:
 \[
@@ -108,7 +108,7 @@ hence \(u=0\). Conversely, every finite \(w\) with \(\operatorname{Re}w=0\) sati
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The image of the extended imaginary axis is the unit circle:
 \[
@@ -143,7 +143,7 @@ Thus its real part is zero, so its preimage lies on the imaginary axis. The rema
 
 ::: pf-qed
 
-Steps <1>1--<1>4 determine all four requested images.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} determine all four requested images.
 
 :::
 

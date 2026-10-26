@@ -28,7 +28,7 @@ Assume $f$ and $g$ are measurable and positive.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If either
 \[
@@ -69,13 +69,13 @@ f,g\in L^1(\mu).
 
 ::: pf-proof
 
-This is the complementary case to step <1>1.
+This is the complementary case to step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 \[
@@ -98,7 +98,7 @@ The square-root function is increasing on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -114,7 +114,7 @@ Therefore
 
 ::: pf-proof
 
-Integrate the pointwise inequality from step <1>3 and use
+Integrate the pointwise inequality from step [](#s1-3){.pf-ref} and use
 \[
 \mu(\Omega)=1.
 \]
@@ -123,7 +123,7 @@ Integrate the pointwise inequality from step <1>3 and use
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By the Cauchy--Schwarz inequality,
 \[
@@ -180,9 +180,9 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Combining steps <1>4--<1>5 gives
+Combining steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} gives
 \[
 \boxed{
 \left(
@@ -199,13 +199,13 @@ Combining steps <1>4--<1>5 gives
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 \[
 1
 \le
 \int_\Omega\sqrt{fg}\,d\mu.
 \]
-Squaring and applying step <1>5 yields the conclusion.
+Squaring and applying step [](#s1-5){.pf-ref} yields the conclusion.
 
 :::
 
@@ -213,7 +213,7 @@ Squaring and applying step <1>5 yields the conclusion.
 
 ::: pf-qed
 
-Step <1>6 is the required inequality.
+Step [](#s1-6){.pf-ref} is the required inequality.
 
 :::
 

@@ -33,7 +33,7 @@ z^{a-1}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x>0$ and $\operatorname{Re}z>0$,
 \[
@@ -64,7 +64,7 @@ the exponential tends to $0$ as $t\to\infty$, and direct integration gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -102,7 +102,7 @@ The last quantity is finite because $0<a<1$ and $\sigma>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\operatorname{Re}z>0$,
 \[
@@ -146,7 +146,7 @@ Both sides are holomorphic on the connected right half-plane and agree on the po
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The integral equals
 \[
@@ -160,7 +160,7 @@ The integral equals
 
 ::: pf-proof
 
-By steps <1>1 and <1>2, Fubini's theorem applies:
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, Fubini's theorem applies:
 \[
 \begin{aligned}
 \int_0^\infty\frac{x^{a-1}}{x+z}\,dx
@@ -178,7 +178,7 @@ e^{-zt}
 \int_0^\infty t^{-a}e^{-zt}\,dt.
 \end{aligned}
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 \Gamma(a)\Gamma(1-a)z^{a-1}.
 \]
@@ -196,7 +196,7 @@ then yields the boxed expression.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value, while steps <1>1 through <1>3 justify the integral representation, interchange of integrals, and complex Gamma integral used to obtain it.
+Step [](#s1-4){.pf-ref} gives the requested value, while steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} justify the integral representation, interchange of integrals, and complex Gamma integral used to obtain it.
 
 :::
 

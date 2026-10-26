@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $r\ge R_0$ and every $n\ge0$,
 $$
@@ -78,7 +78,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\ge3$,
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-proof
 
-Fix $n\ge3$. Step <1>1 holds for every arbitrarily large $r$, so
+Fix $n\ge3$. Step [](#s1-1){.pf-ref} holds for every arbitrarily large $r$, so
 $$
 |a_n|
 \le
@@ -100,7 +100,7 @@ Since $2-n<0$, the right-hand side tends to $0$ as $r\to\infty$. Hence $a_n=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus
 $$
@@ -111,7 +111,7 @@ so $f$ is a polynomial of degree at most $2$.
 
 ::: pf-proof
 
-Step <1>2 shows that every coefficient of degree at least $3$ vanishes.
+Step [](#s1-2){.pf-ref} shows that every coefficient of degree at least $3$ vanishes.
 
 :::
 
@@ -119,7 +119,7 @@ Step <1>2 shows that every coefficient of degree at least $3$ vanishes.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

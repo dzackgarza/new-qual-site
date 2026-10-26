@@ -31,7 +31,7 @@ Let $[x]$ denote the greatest integer $\le x$. If $n$ is a positive integer, the
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The left-hand limit at $-n$ is $2n+1$.
 
@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The left-hand limit at $n$ is $1$.
 
@@ -75,7 +75,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The requested difference is
 $$
@@ -86,7 +86,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Subtract the limits from steps <1>1 and <1>2:
+Subtract the limits from steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}:
 $$
 (2n+1)-1=2n.
 $$
@@ -97,7 +97,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

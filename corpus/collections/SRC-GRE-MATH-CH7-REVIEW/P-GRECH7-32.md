@@ -27,7 +27,7 @@ If $f(x) = \begin{cases} \frac{x}{2} + c & \text{for } 0 \le t \le 8 \\ 0 & \tex
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 As printed, the piecewise condition uses the variable $t$ rather than the argument $x$, so it does not define a function of $x$ without an evident correction.
 
@@ -40,7 +40,7 @@ The displayed formula is written as $f(x)$ but its first branch is conditioned o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under that correction, normalization would force
 $$
@@ -66,14 +66,14 @@ Hence $8c=-15$, so $c=-15/8$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The value in step <1>2 does not make $f$ a probability density, and in fact no value of $c$ does.
+The value in step [](#s1-2){.pf-ref} does not make $f$ a probability density, and in fact no value of $c$ does.
 
 
 ::: pf-proof
 
-For the normalized value from step <1>2,
+For the normalized value from step [](#s1-2){.pf-ref},
 $$
 f(0)=c=-\frac{15}{8}<0,
 $$
@@ -87,14 +87,14 @@ so normalization is impossible. Therefore no real $c$ satisfies both density con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently none of choices (A)--(E) is correct; in particular, the source's supplied answer $c=-4/3$ neither normalizes the function nor makes it nonnegative.
 
 
 ::: pf-proof
 
-Step <1>3 proves that no real value of $c$ works. The listed choices are all real numbers, so none can be correct. For $c=-4/3$, one has $f(0)<0$ and
+Step [](#s1-3){.pf-ref} proves that no real value of $c$ works. The listed choices are all real numbers, so none can be correct. For $c=-4/3$, one has $f(0)<0$ and
 $$
 \int_0^8 f(x)\,dx=16-\frac{32}{3}=\frac{16}{3}\ne1.
 $$
@@ -105,7 +105,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>4 identify both the malformed variable in the printed statement and the mathematical impossibility of the intended density problem.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify both the malformed variable in the printed statement and the mathematical impossibility of the intended density problem.
 
 :::
 

@@ -27,7 +27,7 @@ Its rationalization is $K(\mathbb Q,n)$, so the rational cohomology depends only
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The rationalization map
 \[
@@ -44,7 +44,7 @@ It induces the localization map $\mathbb Z\to\mathbb Q$ on the only nonzero homo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A Sullivan minimal model for $K(\mathbb Q,n)$ has one generator $x$ in degree $n$ and zero differential:
 \[
@@ -60,7 +60,7 @@ An Eilenberg--MacLane space $K(\mathbb Q,n)$ has exactly one nonzero rational ho
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $n$ is odd, graded commutativity gives
 \[
@@ -85,7 +85,7 @@ Over $\mathbb Q$, $2$ is invertible, hence $x^2=0$. Thus the free graded-commuta
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $n$ is even, the free graded-commutative algebra on $x_n$ is the polynomial algebra
 \[
@@ -101,9 +101,9 @@ For even $n$, graded commutativity imposes no sign change on $x^2$, so no power 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Since the differential in step <1>2 is zero, its cohomology is the algebra itself. Therefore
+Since the differential in step [](#s1-2){.pf-ref} is zero, its cohomology is the algebra itself. Therefore
 \[
 \boxed{
 H^*(K(\mathbb Z,n);\mathbb Q)
@@ -118,7 +118,7 @@ H^*(K(\mathbb Z,n);\mathbb Q)
 
 ::: pf-proof
 
-Step <1>1 reduces the calculation to $K(\mathbb Q,n)$. Step <1>2 gives its zero-differential model, and steps <1>3--<1>4 identify the underlying graded-commutative algebra according to parity.
+Step [](#s1-1){.pf-ref} reduces the calculation to $K(\mathbb Q,n)$. Step [](#s1-2){.pf-ref} gives its zero-differential model, and steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} identify the underlying graded-commutative algebra according to parity.
 
 :::
 
@@ -135,7 +135,7 @@ H^*(K(\mathbb Z,3);\mathbb Q)
 
 ::: pf-proof
 
-Set $n=3$ in step <1>5.
+Set $n=3$ in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -143,7 +143,7 @@ Set $n=3$ in step <1>5.
 
 ::: pf-qed
 
-Step <1>5 is the requested rational cohomology ring.
+Step [](#s1-5){.pf-ref} is the requested rational cohomology ring.
 
 :::
 

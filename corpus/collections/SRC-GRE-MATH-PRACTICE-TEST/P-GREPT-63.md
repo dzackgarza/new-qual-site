@@ -34,7 +34,7 @@ u_n=\frac{(n!)^3}{(3n)!}x^{2n}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $x\neq 0$, the ratio of successive absolute values satisfies
 \[
@@ -57,7 +57,7 @@ $x^2/(3\cdot3\cdot3)=x^2/27$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The series converges for every $x$ with $|x|<3\sqrt3$.
 
@@ -65,21 +65,21 @@ The series converges for every $x$ with $|x|<3\sqrt3$.
 ::: pf-proof
 
 If $x=0$, the series is $1$ and therefore converges. If
-$0<|x|<3\sqrt3$, then $x^2/27<1$, so step <1>1 and the ratio test imply
+$0<|x|<3\sqrt3$, then $x^2/27<1$, so step [](#s1-1){.pf-ref} and the ratio test imply
 absolute convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $x$ with $|x|>3\sqrt3$, the series diverges.
 
 
 ::: pf-proof
 
-If $|x|>3\sqrt3$, then the limit in step <1>1 is greater than $1$.
+If $|x|>3\sqrt3$, then the limit in step [](#s1-1){.pf-ref} is greater than $1$.
 Hence $|u_{n+1}/u_n|>1$ for all sufficiently large $n$, so in particular
 $u_n$ does not tend to $0$. Therefore the series diverges.
 
@@ -87,15 +87,15 @@ $u_n$ does not tend to $0$. Therefore the series diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The largest admissible number is $\boxed{3\sqrt3}$.
 
 
 ::: pf-proof
 
-Step <1>2 shows that $a=3\sqrt3$ has the required property. If
-$a>3\sqrt3$, choose $x$ with $3\sqrt3<|x|<a$. Step <1>3 then shows that
+Step [](#s1-2){.pf-ref} shows that $a=3\sqrt3$ has the required property. If
+$a>3\sqrt3$, choose $x$ with $3\sqrt3<|x|<a$. Step [](#s1-3){.pf-ref} then shows that
 the series diverges at this $x$, so such an $a$ cannot have the required
 property. Thus the correct choice is (B).
 
@@ -105,7 +105,7 @@ property. Thus the correct choice is (B).
 
 ::: pf-qed
 
-Step <1>4 establishes the largest possible value of $a$.
+Step [](#s1-4){.pf-ref} establishes the largest possible value of $a$.
 
 :::
 

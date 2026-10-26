@@ -33,7 +33,7 @@ Let $V$ be a real vector space.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A **norm** on $V$ is a function
 \[
@@ -74,7 +74,7 @@ triangle inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The metric induced by a norm is
 \[
@@ -94,7 +94,7 @@ We verify the metric axioms in the next four steps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -113,7 +113,7 @@ Norms take values in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -140,7 +140,7 @@ x=y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The metric is symmetric:
 \[
@@ -169,7 +169,7 @@ d(x,y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The triangle inequality holds:
 \[
@@ -206,7 +206,7 @@ d(x,y)+d(y,z).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -217,13 +217,13 @@ is a metric.
 
 ::: pf-proof
 
-Steps <1>3--<1>6 verify all metric axioms.
+Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} verify all metric axioms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 A **Banach space** is a normed vector space that is complete with
 respect to the metric induced by its norm.
@@ -238,7 +238,7 @@ of the space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Let
 \[
@@ -349,7 +349,7 @@ Thus $c_{00}$ is incomplete.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 **Uniform Boundedness Theorem.**
 
@@ -398,7 +398,7 @@ The codomain need only be normed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Now let
 \[
@@ -454,7 +454,7 @@ Hence $T^{-1}$ is linear.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If, in addition,
 \[
@@ -503,7 +503,7 @@ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus
 \[
@@ -516,7 +516,7 @@ T^{-1}
 
 ::: pf-proof
 
-Linearity is step <1>11 and continuity is step <1>12.
+Linearity is step [](#s1-11){.pf-ref} and continuity is step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -524,9 +524,9 @@ Linearity is step <1>11 and continuity is step <1>12.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 answer parts (a)--(b), step <1>8 answers part (c),
-step <1>9 answers part (d), step <1>10 answers part (e), and
-steps <1>11--<1>13 answer part (f).
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} answer parts (a)--(b), step [](#s1-8){.pf-ref} answers part (c),
+step [](#s1-9){.pf-ref} answers part (d), step [](#s1-10){.pf-ref} answers part (e), and
+steps [](#s1-11){.pf-ref} through [](#s1-13){.pf-ref} answer part (f).
 
 :::
 

@@ -28,7 +28,7 @@ for every $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in[0,1)$ and every $n$,
 $$
@@ -49,7 +49,7 @@ The left-hand side is at most $C^2$. Dividing by $1-x>0$ and taking square roots
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a subsequence $(f_{n_k})$ and a non-decreasing function $f:[0,1)\to[0,\infty)$ such that
 $$
@@ -60,7 +60,7 @@ for almost every $x\in[0,1)$.
 
 ::: pf-proof
 
-Enumerate $\QQ\cap[0,1)$ as $q_1,q_2,\ldots$. By step <1>1, for each fixed $q_j$ the sequence $(f_n(q_j))_n$ is bounded. Successively extract subsequences converging at $q_1,q_2,\ldots$, and take the diagonal subsequence $(f_{n_k})$. Then
+Enumerate $\QQ\cap[0,1)$ as $q_1,q_2,\ldots$. By step [](#s1-1){.pf-ref}, for each fixed $q_j$ the sequence $(f_n(q_j))_n$ is bounded. Successively extract subsequences converging at $q_1,q_2,\ldots$, and take the diagonal subsequence $(f_{n_k})$. Then
 $$
 g(q)\coloneqq\lim_{k\to\infty}f_{n_k}(q)
 $$
@@ -100,7 +100,7 @@ Define $f(x)=\alpha(x)$ for $0<x<1$ and set $f(0)=0$. The function $f$ is non-de
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The limit function satisfies
 $$
@@ -112,7 +112,7 @@ $$
 
 ::: pf-proof
 
-Extend $f$ arbitrarily to the point $1$, which does not affect any integral. By step <1>2 and Fatou's lemma,
+Extend $f$ arbitrarily to the point $1$, which does not affect any integral. By step [](#s1-2){.pf-ref} and Fatou's lemma,
 $$
 \int_0^1 f(x)^2\,dx
 \le\liminf_{k\to\infty}\int_0^1 f_{n_k}(x)^2\,dx
@@ -123,7 +123,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $0<\delta<1$,
 $$
@@ -144,13 +144,13 @@ $$
 &\le2C\sqrt\delta
 \end{aligned}
 $$
-by the uniform bound and step <1>3.
+by the uniform bound and step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every fixed $0<\delta<1$,
 $$
@@ -160,21 +160,21 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 0\le f_{n_k}(x)\le\frac C{\sqrt\delta}
 $$
-for $0\le x\le1-\delta$. The same bound holds for $f(x)$ at almost every point by step <1>2. Hence
+for $0\le x\le1-\delta$. The same bound holds for $f(x)$ at almost every point by step [](#s1-2){.pf-ref}. Hence
 $$
 |f_{n_k}(x)-f(x)|\le\frac{2C}{\sqrt\delta}
 $$
-almost everywhere on this finite interval. Step <1>2 gives pointwise convergence almost everywhere, so the dominated convergence theorem gives the asserted $L^1$ convergence on $[0,1-\delta]$.
+almost everywhere on this finite interval. Step [](#s1-2){.pf-ref} gives pointwise convergence almost everywhere, so the dominated convergence theorem gives the asserted $L^1$ convergence on $[0,1-\delta]$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The subsequence $(f_{n_k})$ converges to $f$ in $L^1([0,1])$.
 
@@ -185,11 +185,11 @@ Let $\varepsilon>0$. If $C=0$, every $f_n=0$ almost everywhere and the conclusio
 $$
 2C\sqrt\delta<\frac\varepsilon2.
 $$
-By step <1>5, for all sufficiently large $k$,
+By step [](#s1-5){.pf-ref}, for all sufficiently large $k$,
 $$
 \int_0^{1-\delta}|f_{n_k}-f|<\frac\varepsilon2.
 $$
-Step <1>4 then gives
+Step [](#s1-4){.pf-ref} then gives
 $$
 \|f_{n_k}-f\|_1<\varepsilon.
 $$
@@ -200,7 +200,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 constructs the required $L^1$-convergent subsequence.
+Step [](#s1-6){.pf-ref} constructs the required $L^1$-convergent subsequence.
 
 :::
 

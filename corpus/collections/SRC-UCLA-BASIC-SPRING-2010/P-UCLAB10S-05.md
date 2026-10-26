@@ -41,7 +41,7 @@ in the common minimal polynomial $M(t)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hypothesis
 \[
@@ -77,7 +77,7 @@ m_i=a_i-1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For a complex matrix in Jordan normal form, the exponent of
 \[
@@ -117,7 +117,7 @@ Thus the exponent occurring in the minimal polynomial is precisely that largest 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each eigenvalue $\lambda_i$, the largest Jordan block of either $A$ or $B$ has size
 \[
@@ -127,7 +127,7 @@ a_i-1.
 
 ::: pf-proof
 
-By step <1>1, the exponent of
+By step [](#s1-1){.pf-ref}, the exponent of
 \[
 (t-\lambda_i)
 \]
@@ -135,7 +135,7 @@ in the common minimal polynomial is
 \[
 a_i-1.
 \]
-Apply step <1>2 to $A$ and to $B$.
+Apply step [](#s1-2){.pf-ref} to $A$ and to $B$.
 
 :::
 
@@ -159,7 +159,7 @@ Hence
 \[
 m_i\ge1.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 a_i-1\ge1,
 \]
@@ -172,7 +172,7 @@ a_i\ge2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each eigenvalue $\lambda_i$, the Jordan block sizes are uniquely determined:
 \[
@@ -186,7 +186,7 @@ For each eigenvalue $\lambda_i$, the Jordan block sizes are uniquely determined:
 
 The algebraic multiplicity of $\lambda_i$ is $a_i$, so the sizes of all Jordan blocks carrying eigenvalue $\lambda_i$ sum to $a_i$.
 
-By step <1>3, one of those blocks has size
+By step [](#s1-3){.pf-ref}, one of those blocks has size
 \[
 a_i-1.
 \]
@@ -209,7 +209,7 @@ this means two $1\times1$ blocks.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The Jordan normal forms of $A$ and $B$ have exactly the same blocks, up to permutation.
 
@@ -224,7 +224,7 @@ and their algebraic multiplicities
 \[
 a_1,\ldots,a_k.
 \]
-For each $\lambda_i$, step <1>5 uniquely determines the Jordan blocks:
+For each $\lambda_i$, step [](#s1-5){.pf-ref} uniquely determines the Jordan blocks:
 \[
 J_{a_i-1}(\lambda_i)
 \qquad\text{and}\qquad
@@ -237,7 +237,7 @@ Only the order of the blocks may differ.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -248,7 +248,7 @@ Therefore
 ::: pf-proof
 
 Over $\mathbb C$, two matrices are similar if and only if their Jordan normal forms agree up to permutation of Jordan blocks.
-Step <1>6 gives exactly this agreement.
+Step [](#s1-6){.pf-ref} gives exactly this agreement.
 
 :::
 
@@ -256,7 +256,7 @@ Step <1>6 gives exactly this agreement.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

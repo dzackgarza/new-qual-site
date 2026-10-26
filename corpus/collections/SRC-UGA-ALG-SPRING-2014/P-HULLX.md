@@ -27,7 +27,7 @@ Assume $n$ is a positive integer, as required for $p^m n$ to be a group order.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 An admissible bound is
 \[
@@ -43,7 +43,7 @@ For every integer $m\geq k(p,n)$, one has $p^m>(n-1)!$, hence $p^mn>n!$. This ap
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A simple group $G$ of order $p^m n$ with $m\geq1$ and $p\nmid n$ would embed into $S_r$ for some integer $r$ dividing $n$.
 
@@ -56,14 +56,14 @@ Let $r$ be the number of Sylow $p$-subgroups. If $r=1$, its unique Sylow $p$-sub
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No group of order $p^m n$ with $m\geq k(p,n)$ is simple.
 
 
 ::: pf-proof
 
-If such a group were simple, step <1>2 would give an embedding $G\hookrightarrow S_r$ with $r\leq n$, hence $p^mn=|G|\leq r!\leq n!$. This contradicts the strict inequality $p^mn>n!$ from step <1>1.
+If such a group were simple, step [](#s1-2){.pf-ref} would give an embedding $G\hookrightarrow S_r$ with $r\leq n$, hence $p^mn=|G|\leq r!\leq n!$. This contradicts the strict inequality $p^mn>n!$ from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -71,7 +71,7 @@ If such a group were simple, step <1>2 would give an embedding $G\hookrightarrow
 
 ::: pf-qed
 
-Steps <1>1 and <1>3 give the requested bound and establish its asserted property.
+Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} give the requested bound and establish its asserted property.
 
 :::
 

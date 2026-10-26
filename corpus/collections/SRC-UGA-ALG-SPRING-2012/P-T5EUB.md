@@ -43,7 +43,7 @@ Use transitivity of characteristic.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every Sylow $p$-subgroup $S$ of $G$ contains $H$.
 
@@ -56,7 +56,7 @@ Since $H$ is a $p$-subgroup, Sylow's containment theorem places it in some Sylow
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The center $Z(H)$ is a nontrivial abelian normal subgroup of $G$, of order divisible by $p$.
 
@@ -71,7 +71,7 @@ Since $H$ is a nontrivial finite $p$-group, its class equation implies $|Z(H)|$ 
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>2 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} proves part (b).
 
 :::
 

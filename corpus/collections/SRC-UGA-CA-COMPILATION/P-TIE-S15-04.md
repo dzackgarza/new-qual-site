@@ -46,7 +46,7 @@ Since $\abs{f(z)}=1$ on $\abs{z}=1$, the function $f$ has no zeros on the unit c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -107,7 +107,7 @@ on the unit circle. Multiplying over $k$ gives $\abs{B(z)}=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The quotient
 $$
@@ -124,7 +124,7 @@ By construction, the zeros of $B$ in $\DD$ are exactly $z_1,\ldots,z_n$ with the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On the unit circle,
 $$
@@ -134,7 +134,7 @@ $$
 
 ::: pf-proof
 
-For $\abs{z}=1$, the hypotheses and step <1>2 give
+For $\abs{z}=1$, the hypotheses and step [](#s1-2){.pf-ref} give
 $$
 \abs{h(z)}
 =
@@ -148,7 +148,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Throughout the unit disk,
 $$
@@ -158,7 +158,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, both $h$ and $1/h$ are holomorphic on a neighborhood of the closed disk. Step <1>4 and the maximum modulus principle give
+By step [](#s1-3){.pf-ref}, both $h$ and $1/h$ are holomorphic on a neighborhood of the closed disk. Step [](#s1-4){.pf-ref} and the maximum modulus principle give
 $$
 \abs{h(z)}\le1
 $$
@@ -176,14 +176,14 @@ Hence $\abs{h(z)}=1$ throughout $\DD$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $h$ is a unimodular constant.
 
 
 ::: pf-proof
 
-If $h$ were nonconstant, the open mapping theorem would imply that $h(\DD)$ is open in $\CC$. But step <1>5 gives
+If $h$ were nonconstant, the open mapping theorem would imply that $h(\DD)$ is open in $\CC$. But step [](#s1-5){.pf-ref} gives
 $$
 h(\DD)\subset\{w\in\CC:\abs{w}=1\},
 $$
@@ -191,7 +191,7 @@ which has empty interior. Therefore $h$ is constant:
 $$
 h(z)\equiv c.
 $$
-Step <1>5 gives $\abs{c}=1$, so
+Step [](#s1-5){.pf-ref} gives $\abs{c}=1$, so
 $$
 c=e^{i\theta}
 $$
@@ -201,7 +201,7 @@ for some $\theta\in\RR$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $f$ has at least one zero in $\DD$, then
 $$
@@ -217,17 +217,17 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 f=hB.
 $$
-Substitute the constant value of $h$ from step <1>6 and the definition of $B$ from step <1>2.
+Substitute the constant value of $h$ from step [](#s1-6){.pf-ref} and the definition of $B$ from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $f$ has no zeros in $\DD$, then
 $$
@@ -238,7 +238,7 @@ for some $\theta\in\RR$.
 
 ::: pf-proof
 
-In the zero-free case, take the empty product $B\equiv1$. Steps <1>3--<1>6 then apply directly to $h=f$, showing that $f$ is a unimodular constant.
+In the zero-free case, take the empty product $B\equiv1$. Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} then apply directly to $h=f$, showing that $f$ is a unimodular constant.
 
 :::
 
@@ -246,7 +246,7 @@ In the zero-free case, take the empty product $B\equiv1$. Steps <1>3--<1>6 then 
 
 ::: pf-qed
 
-Steps <1>7 and <1>8 give exactly the two alternatives in the statement.
+Steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} give exactly the two alternatives in the statement.
 
 :::
 

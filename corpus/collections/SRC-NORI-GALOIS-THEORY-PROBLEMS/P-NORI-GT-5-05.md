@@ -41,7 +41,7 @@ Then $c^p=a$, so $F(c)=F(a^{1/p})$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The extension $F(c)/F$ is Galois of degree $p$.
 
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The extension $E/F$ is Galois, and every $F$-automorphism of $F(c)$ extends to an $F$-automorphism of $E$.
 
@@ -86,7 +86,7 @@ is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $\sigma\in\Gal(E/F)$ such that, when
 $$
@@ -97,11 +97,11 @@ the integer $k$ is not divisible by $p$.
 
 ::: pf-proof
 
-By step <1>1, $\Gal(F(c)/F)$ has order $p$, so choose a nonidentity automorphism
+By step [](#s1-1){.pf-ref}, $\Gal(F(c)/F)$ has order $p$, so choose a nonidentity automorphism
 $$
 \tau\in\Gal(F(c)/F).
 $$
-By step <1>2, $\tau$ extends to some $\sigma\in\Gal(E/F)$.
+By step [](#s1-2){.pf-ref}, $\tau$ extends to some $\sigma\in\Gal(E/F)$.
 
 Since $\sigma(b)$ is another root of $X^{p^n}-a$, there is an integer $k$ such that
 $$
@@ -118,9 +118,9 @@ Because $\sigma|_{F(c)}=\tau$ is nonidentity, the factor $\zeta^{k p^{n-1}}$ is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The automorphism $\sigma$ from step <1>3 has order $p^n$.
+The automorphism $\sigma$ from step [](#s1-3){.pf-ref} has order $p^n$.
 
 
 ::: pf-proof
@@ -133,13 +133,13 @@ because $\sigma$ fixes $\zeta\in F$. Hence $\sigma^m=\operatorname{id}_E$ only i
 $$
 \zeta^{km}=1.
 $$
-By step <1>3, $p\nmid k$, so $\zeta^k$ is again a primitive $p^n$-th root of unity. Its order is therefore $p^n$, and consequently $\sigma$ has order $p^n$.
+By step [](#s1-3){.pf-ref}, $p\nmid k$, so $\zeta^k$ is again a primitive $p^n$-th root of unity. Its order is therefore $p^n$, and consequently $\sigma$ has order $p^n$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -149,7 +149,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $E/F$ is Galois, and every element of $\Gal(E/F)$ sends $b$ to $\zeta^j b$ for some $j$. Thus
+By step [](#s1-2){.pf-ref}, $E/F$ is Galois, and every element of $\Gal(E/F)$ sends $b$ to $\zeta^j b$ for some $j$. Thus
 $$
 \Gal(E/F)\hookrightarrow \mu_{p^n},
 $$
@@ -157,7 +157,7 @@ so
 $$
 \abs{\Gal(E/F)}\leq p^n.
 $$
-By step <1>4, $\Gal(E/F)$ contains an element of order $p^n$, so its order is at least $p^n$. Therefore
+By step [](#s1-4){.pf-ref}, $\Gal(E/F)$ contains an element of order $p^n$, so its order is at least $p^n$. Therefore
 $$
 [E:F]=\abs{\Gal(E/F)}=p^n.
 $$
@@ -169,7 +169,7 @@ Since $E=F(b)=F(a^{1/p^n})$, this is the required degree.
 
 ::: pf-qed
 
-Step <1>5 proves the required equality.
+Step [](#s1-5){.pf-ref} proves the required equality.
 
 :::
 

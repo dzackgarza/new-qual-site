@@ -28,7 +28,7 @@ Evaluate
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The apparent singularity at $z=0$ is removable.
 
@@ -66,7 +66,7 @@ The denominator factors as
 $$
 z^3+z=z(z-i)(z+i).
 $$
-By step <1>1, the factor $z$ produces no pole. The remaining zeros $\pm i$ both lie inside the circle of radius $2$.
+By step [](#s1-1){.pf-ref}, the factor $z$ produces no pole. The remaining zeros $\pm i$ both lie inside the circle of radius $2$.
 
 :::
 
@@ -128,7 +128,7 @@ As $t$ runs from $0$ to $4\pi$, the circle $|z|=2$ is traversed counterclockwise
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -160,7 +160,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the required value of the contour integral.
+Step [](#s1-5){.pf-ref} is the required value of the contour integral.
 
 :::
 

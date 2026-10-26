@@ -29,7 +29,7 @@ for every $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For integers $m\le N$,
 \[
@@ -65,7 +65,7 @@ which rearranges to the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For integers $m\le N$,
 \[
@@ -79,7 +79,7 @@ For integers $m\le N$,
 
 ::: pf-proof
 
-By step <1>1 and $|B_n|\le M$,
+By step [](#s1-1){.pf-ref} and $|B_n|\le M$,
 \[
 \left|
 \sum_{n=m}^N a_nb_n
@@ -114,7 +114,7 @@ Ma_N+Ma_m+M(a_m-a_N)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 \[
@@ -134,7 +134,7 @@ choose $m_0$ such that
 2Ma_m<\varepsilon
 \]
 for every $m\ge m_0$.
-Then for every $N\ge m\ge m_0$, step <1>2 gives
+Then for every $N\ge m\ge m_0$, step [](#s1-2){.pf-ref} gives
 \[
 \left|
 \sum_{n=m}^N a_nb_n
@@ -148,7 +148,7 @@ Thus the tails satisfy the Cauchy criterion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -158,7 +158,7 @@ Therefore
 
 ::: pf-proof
 
-The real numbers are complete, so the Cauchy criterion in step <1>3 implies convergence of the series.
+The real numbers are complete, so the Cauchy criterion in step [](#s1-3){.pf-ref} implies convergence of the series.
 
 :::
 
@@ -166,7 +166,7 @@ The real numbers are complete, so the Cauchy criterion in step <1>3 implies conv
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

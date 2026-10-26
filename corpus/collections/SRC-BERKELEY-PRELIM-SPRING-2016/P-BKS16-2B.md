@@ -35,7 +35,7 @@ Show that $g''\ge 0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $i\geq1$ and every $z,h\in\RR$,
 $$
@@ -61,7 +61,7 @@ which rearranges to the displayed inequality. The case $h<0$ is the same after r
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z,h\in\RR$,
 $$
@@ -71,7 +71,7 @@ $$
 
 ::: pf-proof
 
-Fix $z$ and $h$. By step <1>1,
+Fix $z$ and $h$. By step [](#s1-1){.pf-ref},
 $$
 2f_i(z)\leq f_i(z+h)+f_i(z-h)
 $$
@@ -81,7 +81,7 @@ for every $i$. Taking $i\to\infty$ and using the assumed pointwise convergence a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $z\in\RR$,
 $$
@@ -91,7 +91,7 @@ $$
 
 ::: pf-proof
 
-For $h\neq0$, step <1>2 gives
+For $h\neq0$, step [](#s1-2){.pf-ref} gives
 $$
 \frac{g(z+h)-2g(z)+g(z-h)}{h^2}\geq0.
 $$
@@ -116,7 +116,7 @@ and the limit of the nonnegative quantities on the right is nonnegative.
 
 ::: pf-qed
 
-Step <1>3 proves the required inequality at every real $z$.
+Step [](#s1-3){.pf-ref} proves the required inequality at every real $z$.
 
 :::
 

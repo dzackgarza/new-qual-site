@@ -27,7 +27,7 @@ where $\gamma$ is a closed smooth curve in $\mathbb C\setminus\{i,-i\}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has the partial-fraction identity
 \[
@@ -69,7 +69,7 @@ B=-\frac1{2i}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For any closed smooth curve
 \[
@@ -94,7 +94,7 @@ For any closed smooth curve
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 \int_\gamma
@@ -128,7 +128,7 @@ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every value
 \[
@@ -150,7 +150,7 @@ $m<0$, gives a closed smooth curve with
 \qquad
 \operatorname{Ind}(\gamma,-i)=0.
 \]
-Step <1>2 then gives
+Step [](#s1-2){.pf-ref} then gives
 \[
 \int_\gamma
 \frac{dz}{z^2+1}
@@ -167,7 +167,7 @@ take a small circle enclosing neither pole.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 These are the only possible values:
 \[
@@ -188,14 +188,14 @@ These are the only possible values:
 
 ::: pf-proof
 
-Both winding numbers in step <1>2 are integers, so their difference is an
-integer. Step <1>3 shows every integer difference is realized.
+Both winding numbers in step [](#s1-2){.pf-ref} are integers, so their difference is an
+integer. Step [](#s1-3){.pf-ref} shows every integer difference is realized.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Now let $\gamma$ be a positively oriented circle
 \[
@@ -230,7 +230,7 @@ a=\pm i.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If the circle contains $i$ but not $-i$, then
 \[
@@ -255,13 +255,13 @@ Hence
 \qquad
 \operatorname{Ind}(\gamma,-i)=0.
 \]
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If the circle contains $-i$ but not $i$, then
 \[
@@ -286,13 +286,13 @@ Thus
 \qquad
 \operatorname{Ind}(\gamma,-i)=1.
 \]
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If the circle contains both poles or neither pole, then
 \[
@@ -333,7 +333,7 @@ R<
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence for positively oriented circles the only possible values are
 \[
@@ -345,7 +345,7 @@ Hence for positively oriented circles the only possible values are
 
 ::: pf-proof
 
-Steps <1>6--<1>8 exhaust the four possibilities for whether each of the two
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} exhaust the four possibilities for whether each of the two
 poles lies inside the circle.
 
 :::
@@ -354,7 +354,7 @@ poles lies inside the circle.
 
 ::: pf-qed
 
-Step <1>4 solves part (a), and steps <1>5--<1>9 solve part (b).
+Step [](#s1-4){.pf-ref} solves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref} solve part (b).
 
 :::
 

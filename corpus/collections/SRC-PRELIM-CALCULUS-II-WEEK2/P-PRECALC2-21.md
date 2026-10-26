@@ -39,7 +39,7 @@ S_n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One can rewrite \(S_n\) as
 \[
@@ -67,7 +67,7 @@ n\sqrt{1+(k/n)^2}.
 
 ::: pf-step
 
-The expression in step <1>1 is the right-endpoint Riemann sum for
+The expression in step [](#s1-1){.pf-ref} is the right-endpoint Riemann sum for
 \[
 f(x)=\frac1{\sqrt{1+x^2}}
 \]
@@ -94,7 +94,7 @@ is exactly the right-endpoint Riemann sum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -114,7 +114,7 @@ to its integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 An antiderivative is
 \[
@@ -138,7 +138,7 @@ Differentiate:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -151,7 +151,7 @@ Hence
 
 ::: pf-proof
 
-Evaluate step <1>3 using step <1>4:
+Evaluate step [](#s1-3){.pf-ref} using step [](#s1-4){.pf-ref}:
 \[
 \int_0^1\frac{dx}{\sqrt{1+x^2}}
 =
@@ -162,7 +162,7 @@ Evaluate step <1>3 using step <1>4:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Rewrite
 \[
@@ -188,7 +188,7 @@ n\sqrt{1+k/n^2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For \(1\le k\le n\),
 \[
@@ -211,7 +211,7 @@ Since \(k\le n\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -229,15 +229,15 @@ The function
 \[
 x\mapsto\frac1{\sqrt{1+x}}
 \]
-is decreasing for \(x\ge0\). Apply step <1>7.
+is decreasing for \(x\ge0\). Apply step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Averaging the inequalities in step <1>8,
+Averaging the inequalities in step [](#s1-8){.pf-ref},
 \[
 \boxed{
 \frac1{\sqrt{1+1/n}}
@@ -250,20 +250,20 @@ T_n
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 T_n
 =
 \frac1n\sum_{k=1}^{n}
 \frac1{\sqrt{1+k/n^2}}.
 \]
-Average the lower and upper bounds from step <1>8 over the \(n\) terms.
+Average the lower and upper bounds from step [](#s1-8){.pf-ref} over the \(n\) terms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -274,14 +274,14 @@ Therefore
 
 ::: pf-proof
 
-The lower bound in step <1>9 tends to \(1\), and the upper bound is exactly
+The lower bound in step [](#s1-9){.pf-ref} tends to \(1\), and the upper bound is exactly
 \(1\). Apply the squeeze theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For \(1\le k\le n^2\),
 \[
@@ -304,7 +304,7 @@ n^2+n^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence every term satisfies
 \[
@@ -317,7 +317,7 @@ Hence every term satisfies
 
 ::: pf-proof
 
-Take square roots in step <1>11:
+Take square roots in step [](#s1-11){.pf-ref}:
 \[
 \sqrt{n^2+k}
 \le
@@ -343,13 +343,13 @@ n^2\cdot\frac1{\sqrt2\,n}
 
 ::: pf-proof
 
-There are \(n^2\) terms in the sum, each bounded below as in step <1>12.
+There are \(n^2\) terms in the sum, each bounded below as in step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -370,7 +370,7 @@ tends to \(+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Thus the three answers are
 \[
@@ -383,7 +383,7 @@ Thus the three answers are
 
 ::: pf-proof
 
-Combine steps <1>5, <1>10, and <1>14.
+Combine steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-14){.pf-ref}.
 
 :::
 
@@ -391,7 +391,7 @@ Combine steps <1>5, <1>10, and <1>14.
 
 ::: pf-qed
 
-Step <1>15 gives all three requested limits.
+Step [](#s1-15){.pf-ref} gives all three requested limits.
 
 :::
 

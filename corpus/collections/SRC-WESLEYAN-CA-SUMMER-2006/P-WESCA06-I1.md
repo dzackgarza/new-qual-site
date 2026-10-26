@@ -30,7 +30,7 @@ z\notin\gamma([a,b]).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The winding number, or index, of $\gamma$ about $z$ is
 \[
@@ -56,7 +56,7 @@ z\notin\gamma([a,b]).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently,
 \[
@@ -123,7 +123,7 @@ Thus the winding number is an integer.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 give the requested definition and its geometric
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the requested definition and its geometric
 interpretation.
 
 :::

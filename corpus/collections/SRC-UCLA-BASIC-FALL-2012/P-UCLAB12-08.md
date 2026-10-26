@@ -30,7 +30,7 @@ U^\perp
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Hermitian form $[\ ,\ ]$ is nondegenerate.
 
@@ -57,7 +57,7 @@ Thus the form is nondegenerate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every subspace $U\subseteq\mathbb C^n$,
 \[
@@ -84,7 +84,7 @@ The map $\Phi$ is onto. Indeed, let $\ell\in U^*$. Extend $\ell$ to a linear fun
 \[
 \widetilde\ell\in(\mathbb C^n)^*.
 \]
-By nondegeneracy from step <1>1, the map
+By nondegeneracy from step [](#s1-1){.pf-ref}, the map
 \[
 \mathbb C^n\to(\mathbb C^n)^*,
 \qquad
@@ -113,7 +113,7 @@ n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The hypothesis on $W$ implies
 \[
@@ -133,7 +133,7 @@ Thus $w\in W^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -143,11 +143,11 @@ One has
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \dim W\le\dim W^\perp.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \dim W^\perp=n-\dim W.
 \]
@@ -164,7 +164,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose $n=2m$. Let
 \[
@@ -214,7 +214,7 @@ Thus $W$ is totally isotropic and has the maximal permitted dimension $m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose $n=2m+1$. Let
 \[
@@ -237,7 +237,7 @@ Then $\det H\ne0$, $H$ is Hermitian, and
 
 Again $H$ is real symmetric.
 Its square is the identity, so it is invertible.
-The same computation as in step <1>5 shows that the form vanishes identically on $W\times W$.
+The same computation as in step [](#s1-5){.pf-ref} shows that the form vanishes identically on $W\times W$.
 The dimension of $W$ is $m=(n-1)/2$.
 
 :::
@@ -246,7 +246,7 @@ The dimension of $W$ is $m=(n-1)/2$.
 
 ::: pf-qed
 
-Step <1>4 proves the dimension bound, and steps <1>5--<1>6 give examples attaining the largest possible dimension in even and odd dimensions.
+Step [](#s1-4){.pf-ref} proves the dimension bound, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give examples attaining the largest possible dimension in even and odd dimensions.
 
 :::
 

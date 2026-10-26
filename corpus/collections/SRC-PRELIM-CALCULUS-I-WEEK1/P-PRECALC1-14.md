@@ -17,7 +17,7 @@ Define $f ( 0 ) = 0$ and $\begin{array} { r } { f ( x ) = \frac { | x | } { x } 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -49,7 +49,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -77,7 +77,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The value \(f(0)=0\) does not affect the definite integral.
 
@@ -91,7 +91,7 @@ its Riemann or Lebesgue integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -105,13 +105,13 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>1--<1>3 and split the integral at \(0\).
+Use steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} and split the integral at \(0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The first integral is
 \[
@@ -133,7 +133,7 @@ The first integral is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The second integral is
 \[
@@ -151,7 +151,7 @@ The second integral is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -162,7 +162,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>4--<1>6:
+Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}:
 \[
 -1+1=0.
 \]
@@ -173,7 +173,7 @@ Combine steps <1>4--<1>6:
 
 ::: pf-qed
 
-Step <1>7 is the requested integral.
+Step [](#s1-7){.pf-ref} is the requested integral.
 
 :::
 

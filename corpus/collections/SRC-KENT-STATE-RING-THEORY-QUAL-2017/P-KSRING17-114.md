@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every unit of $R$ is central.
 
@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -119,7 +119,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nilpotent element of $R$ is central.
 
@@ -130,12 +130,12 @@ Let
 $$
 n\in N.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 1+n
 $$
 is a unit.
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 1+n
 $$
@@ -158,7 +158,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -184,7 +184,7 @@ n^a=0,
 \qquad
 m^b=0.
 $$
-By step <1>3, both $n$ and $m$ are central, hence commute.
+By step [](#s1-3){.pf-ref}, both $n$ and $m$ are central, hence commute.
 Therefore the binomial theorem applies:
 $$
 (n+m)^{a+b-1}
@@ -228,7 +228,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -259,7 +259,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set $N$ is an additive subgroup of $R$.
 
@@ -271,13 +271,13 @@ $$
 0
 $$
 is nilpotent.
-Step <1>4 gives closure under addition, and step <1>5 gives closure under additive inverses.
+Step [](#s1-4){.pf-ref} gives closure under addition, and step [](#s1-5){.pf-ref} gives closure under additive inverses.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -303,7 +303,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 n
 $$
@@ -344,7 +344,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -357,7 +357,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 shows that $N$ is an additive subgroup, and step <1>7 shows that it absorbs multiplication from both sides by arbitrary elements of $R$.
+Step [](#s1-6){.pf-ref} shows that $N$ is an additive subgroup, and step [](#s1-7){.pf-ref} shows that it absorbs multiplication from both sides by arbitrary elements of $R$.
 Hence
 $$
 N\trianglelefteq R.
@@ -369,7 +369,7 @@ $$
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

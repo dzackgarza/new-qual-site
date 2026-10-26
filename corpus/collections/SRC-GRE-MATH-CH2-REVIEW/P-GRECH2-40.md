@@ -33,7 +33,7 @@ III. $\int_{0}^{2} \frac{dx}{(2 - x)^2}$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Integral I converges.
 
@@ -57,7 +57,7 @@ $\int_{-\infty}^{\infty}dx/(x^2+1)^2$ converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Integral II converges.
 
@@ -85,7 +85,7 @@ because $(b+1)e^{-b}\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integral III diverges.
 
@@ -104,7 +104,7 @@ As $b\to2^-$, the right-hand side tends to $+\infty$. Hence integral III diverge
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Exactly I and II converge, so the answer is
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-This follows directly from steps <1>1--<1>3.
+This follows directly from steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -122,7 +122,7 @@ This follows directly from steps <1>1--<1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested choice.
+Step [](#s1-4){.pf-ref} gives the requested choice.
 
 :::
 

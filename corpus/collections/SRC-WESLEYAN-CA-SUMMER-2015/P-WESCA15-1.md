@@ -27,7 +27,7 @@ Classify each indicated isolated singularity as removable, a pole, or essential;
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The singularity of
 $$
@@ -68,7 +68,7 @@ The numerator is holomorphic and nonzero at $0$, so $f$ has a pole of order $3$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singularity of
 $$
@@ -105,7 +105,7 @@ Thus the singularity is removable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The singularity of
 $$
@@ -132,7 +132,7 @@ The principal part contains infinitely many nonzero negative-power terms. Theref
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the classifications are
 $$
@@ -148,7 +148,7 @@ $$
 
 ::: pf-proof
 
-This is exactly the combination of steps <1>1--<1>3.
+This is exactly the combination of steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -156,7 +156,7 @@ This is exactly the combination of steps <1>1--<1>3.
 
 ::: pf-qed
 
-Step <1>4 gives all three requested classifications, including the order of the only pole.
+Step [](#s1-4){.pf-ref} gives all three requested classifications, including the order of the only pole.
 
 :::
 

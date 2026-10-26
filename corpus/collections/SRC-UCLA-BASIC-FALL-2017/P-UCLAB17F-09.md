@@ -37,7 +37,7 @@ n\ge0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\ge1$,
 \[
@@ -74,14 +74,14 @@ c_n\rho(x_1,x_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(x_n)$ is Cauchy.
 
 
 ::: pf-proof
 
-If $m>n$, the triangle inequality and step <1>1 give
+If $m>n$, the triangle inequality and step [](#s1-1){.pf-ref} give
 \[
 \begin{aligned}
 \rho(x_m,x_n)
@@ -124,7 +124,7 @@ x_n\to p.
 
 ::: pf-proof
 
-The space $X$ is complete and $(x_n)$ is Cauchy by step <1>2.
+The space $X$ is complete and $(x_n)$ is Cauchy by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -166,7 +166,7 @@ Hence $f$ is Lipschitz and therefore continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The limit point $p$ is a fixed point:
 \[
@@ -193,7 +193,7 @@ p.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since
 \[
@@ -213,7 +213,7 @@ Every convergent series has terms tending to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The fixed point is unique.
 
@@ -239,7 +239,7 @@ Hence
 \le
 c_n\rho(p,q).
 \]
-By step <1>6, choose $n$ such that
+By step [](#s1-6){.pf-ref}, choose $n$ such that
 \[
 c_n<1.
 \]
@@ -262,14 +262,14 @@ so $p=q$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $f$ has a unique fixed point in $X$.
 
 
 ::: pf-proof
 
-Step <1>5 proves existence, and step <1>7 proves uniqueness.
+Step [](#s1-5){.pf-ref} proves existence, and step [](#s1-7){.pf-ref} proves uniqueness.
 
 :::
 
@@ -277,7 +277,7 @@ Step <1>5 proves existence, and step <1>7 proves uniqueness.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

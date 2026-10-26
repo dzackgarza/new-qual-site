@@ -53,7 +53,7 @@ T:\widetilde\Omega\xrightarrow{\sim}\Omega.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -80,7 +80,7 @@ injectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Neither \(0\) nor \(\infty\) can be an essential singularity of \(g\).
 
@@ -106,7 +106,7 @@ rules out an essential singularity there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Any pole of \(g\) at \(0\) or \(\infty\) has order at most \(1\).
 
@@ -134,7 +134,7 @@ The argument at \(\infty\) is identical after replacing \(z\) by \(1/z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence \(g\), viewed as a meromorphic function on the Riemann sphere,
 has the form
@@ -149,7 +149,7 @@ for some \(a,b,c\in\mathbb C\).
 
 ::: pf-proof
 
-By steps <1>2 and <1>3, the only possible poles are at \(0\) and \(\infty\),
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, the only possible poles are at \(0\) and \(\infty\),
 each of order at most one. Subtract the possible principal part
 \[
 \frac az
@@ -165,7 +165,7 @@ on the entire Riemann sphere and therefore constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The coefficients \(a\) and \(c\) cannot both be nonzero.
 
@@ -220,7 +220,7 @@ is a nonzero zero of \(g\), impossible. Hence \(b=0\), and \(c\ne0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If \(c=0\), then
 \[
@@ -245,7 +245,7 @@ is a nonzero zero of \(g\), impossible. Hence \(b=0\), and \(a\ne0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore every injective holomorphic self-map of
 \(\mathbb C^\times\) is exactly one of
@@ -261,7 +261,7 @@ a\in\mathbb C^\times}.
 
 ::: pf-proof
 
-Steps <1>5 through <1>7 exhaust the possibilities from step <1>4.
+Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} exhaust the possibilities from step [](#s1-4){.pf-ref}.
 Conversely, both displayed maps are visibly injective holomorphic self-maps
 of \(\mathbb C^\times\).
 
@@ -269,7 +269,7 @@ of \(\mathbb C^\times\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The inverse Möbius transformation is
 \[
@@ -299,7 +299,7 @@ z=\frac{w}{1-w}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Conjugating \(g_a(z)=az\) back to \(\Omega\) gives
 \[
@@ -314,7 +314,7 @@ a\in\mathbb C^\times}.
 
 ::: pf-proof
 
-Using step <1>9,
+Using step [](#s1-9){.pf-ref},
 \[
 \begin{aligned}
 T\!\left(
@@ -336,7 +336,7 @@ T\!\left(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Conjugating \(h_a(z)=a/z\) back to \(\Omega\) gives
 \[
@@ -352,7 +352,7 @@ a\in\mathbb C^\times}.
 
 ::: pf-proof
 
-Again using step <1>9,
+Again using step [](#s1-9){.pf-ref},
 \[
 \begin{aligned}
 T\!\left(
@@ -375,7 +375,7 @@ T\!\left(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The complete list in part (b) is therefore
 \[
@@ -394,9 +394,8 @@ a\in\mathbb C^\times}.
 
 ::: pf-proof
 
-By step <1>1, every injective \(f\) is conjugate to an injective \(g\) on
-\(\mathbb C^\times\). Step <1>8 classifies the latter, and steps <1>10 and
-<1>11 compute their conjugates. Conversely, every displayed map is a
+By step [](#s1-1){.pf-ref}, every injective \(f\) is conjugate to an injective \(g\) on
+\(\mathbb C^\times\). Step [](#s1-8){.pf-ref} classifies the latter, and steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} compute their conjugates. Conversely, every displayed map is a
 conjugate of an injective holomorphic self-map of \(\mathbb C^\times\), so
 it is injective and holomorphic on \(\Omega\).
 
@@ -404,7 +403,7 @@ it is injective and holomorphic on \(\Omega\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Every injective holomorphic \(f:\Omega\to\Omega\) is surjective.
 
@@ -418,8 +417,8 @@ z\mapsto az
 z\mapsto\frac az
 \]
 are surjective on \(\mathbb C^\times\). Since \(T\) is a bijection, their
-conjugates in steps <1>10 and <1>11 are surjective on \(\Omega\). By step
-<1>12, every injective \(f\) is one of these conjugates. Hence
+conjugates in steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} are surjective on \(\Omega\). By step
+[](#s1-12){.pf-ref}, every injective \(f\) is one of these conjugates. Hence
 \[
 \boxed{f(\Omega)=\Omega}.
 \]
@@ -430,7 +429,7 @@ conjugates in steps <1>10 and <1>11 are surjective on \(\Omega\). By step
 
 ::: pf-qed
 
-Step <1>13 proves part (a), and step <1>12 gives the complete list required
+Step [](#s1-13){.pf-ref} proves part (a), and step [](#s1-12){.pf-ref} gives the complete list required
 in part (b).
 
 :::

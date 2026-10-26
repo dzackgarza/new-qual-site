@@ -25,7 +25,7 @@ f'(z)\ne0\qquad(z\in D).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $a\in D$ and $f'(a)=0$, then there is an integer $m\ge2$ and a
 holomorphic function $g$ near $a$ such that
@@ -47,7 +47,7 @@ $g(a)\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a neighborhood $U$ of $a$ and a biholomorphic coordinate
 $\phi:U\to\phi(U)$ with $\phi(a)=0$ such that
@@ -59,7 +59,7 @@ f(z)-f(a)=\phi(z)^m
 
 ::: pf-proof
 
-By step <1>1, after shrinking to a simply connected disk $U$ about $a$, the
+By step [](#s1-1){.pf-ref}, after shrinking to a simply connected disk $U$ about $a$, the
 function $g$ has no zeros on $U$. Therefore $g$ admits a holomorphic $m$-th
 root $h$ on $U$, so $h^m=g$. Define
 \[
@@ -80,14 +80,14 @@ so that $\phi$ is biholomorphic onto the open neighborhood $\phi(U)$ of $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The assumption $f'(a)=0$ contradicts injectivity of $f$.
 
 
 ::: pf-proof
 
-By step <1>2, the open set $\phi(U)$ contains a disk centered at $0$.
+By step [](#s1-2){.pf-ref}, the open set $\phi(U)$ contains a disk centered at $0$.
 Choose a nonzero $w$ in that disk small enough that
 \[
 w,\qquad e^{2\pi i/m}w
@@ -99,7 +99,7 @@ z_1=\phi^{-1}(w),
 \qquad
 z_2=\phi^{-1}(e^{2\pi i/m}w).
 \]
-Then $z_1\ne z_2$, while step <1>2 gives
+Then $z_1\ne z_2$, while step [](#s1-2){.pf-ref} gives
 \[
 f(z_1)-f(a)=w^m
 =\bigl(e^{2\pi i/m}w\bigr)^m
@@ -111,7 +111,7 @@ Thus $f(z_1)=f(z_2)$, contradicting injectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -121,7 +121,7 @@ Hence
 
 ::: pf-proof
 
-If $f'$ vanished at any $a\in D$, step <1>3 would contradict the hypothesis
+If $f'$ vanished at any $a\in D$, step [](#s1-3){.pf-ref} would contradict the hypothesis
 that $f$ is injective.
 
 :::
@@ -130,7 +130,7 @@ that $f$ is injective.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

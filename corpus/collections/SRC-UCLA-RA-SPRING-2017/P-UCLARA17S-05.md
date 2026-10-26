@@ -29,7 +29,7 @@ Let $d\nu$ be a finite complex Borel measure on $[0,1]$ absolutely continuous wi
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The assertion is false as written for complex measures on the closed interval $[0,1]$.
 
@@ -67,7 +67,7 @@ for every integer $n$. Hence the printed conclusion fails.
 
 ::: pf-step
 
-The failure in step <1>1 comes from the fact that the characters
+The failure in step [](#s1-1){.pf-ref} comes from the fact that the characters
 $$
 x\longmapsto e^{2\pi i n x}
 $$
@@ -80,13 +80,13 @@ For every integer $n$,
 $$
 e^{2\pi i n\cdot0}=e^{2\pi i n\cdot1}=1.
 $$
-Thus the Fourier coefficients cannot distinguish $\delta_0$ from $\delta_1$, which is exactly the cancellation used in step <1>1.
+Thus the Fourier coefficients cannot distinguish $\delta_0$ from $\delta_1$, which is exactly the cancellation used in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The intended statement is true on the circle $\mathbb T=\RR/\ZZ$ (equivalently on the half-open interval $[0,1)$): if $\mu$ is a finite complex Borel measure on $\mathbb T$ with
 $$
@@ -142,7 +142,7 @@ The same proof applies on $[0,1)$ after identifying it Borel-isomorphically with
 
 ::: pf-qed
 
-Step <1>1 refutes the literal source statement, and step <1>3 proves the corrected periodic version that the retained source solution attempts to use.
+Step [](#s1-1){.pf-ref} refutes the literal source statement, and step [](#s1-3){.pf-ref} proves the corrected periodic version that the retained source solution attempts to use.
 
 :::
 

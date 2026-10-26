@@ -35,7 +35,7 @@ The arrival process is Poisson with rate $a$. The counter records every particle
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Conditional on exactly $n$ arrivals during $[0,t]$, their ordered arrival times
 \[
@@ -52,7 +52,7 @@ For a homogeneous Poisson process, conditional on $N(t)=n$, the unordered arriva
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed $n\geq1$, all particles are counted exactly when
 \[
@@ -69,13 +69,13 @@ After each recorded arrival the counter is dead for time $\tau$. Thus the next a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Set
 \[
 S_i=T_i-(i-1)\tau.
 \]
-Then the inequalities in step <1>2 are equivalent to
+Then the inequalities in step [](#s1-2){.pf-ref} are equivalent to
 \[
 0<S_1<\cdots<S_n<t-(n-1)\tau.
 \]
@@ -93,7 +93,7 @@ Thus the separation inequalities are equivalent to $S_{i+1}\geq S_i$; equality o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence, provided $(n-1)\tau<t$,
 \[
@@ -105,17 +105,17 @@ and this conditional probability is zero when $(n-1)\tau\geq t$, except for the 
 
 ::: pf-proof
 
-The translation in step <1>3 has Jacobian $1$. The admissible simplex therefore has volume
+The translation in step [](#s1-3){.pf-ref} has Jacobian $1$. The admissible simplex therefore has volume
 \[
 \frac{(t-(n-1)\tau)^n}{n!}.
 \]
-Divide by the full conditional simplex volume $t^n/n!$ from step <1>1.
+Divide by the full conditional simplex volume $t^n/n!$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
@@ -134,7 +134,7 @@ where the $n=0$ term is $1$ and $x_+=\max(x,0)$.
 
 ::: pf-proof
 
-Condition on $N(t)=n$ and multiply the Poisson probability by the conditional probability in step <1>4:
+Condition on $N(t)=n$ and multiply the Poisson probability by the conditional probability in step [](#s1-4){.pf-ref}:
 \[
 e^{-at}\frac{(at)^n}{n!}
 \frac{(t-(n-1)\tau)^n}{t^n}
@@ -148,7 +148,7 @@ Summing over all feasible $n$ gives the formula; the positive-part notation make
 
 ::: pf-qed
 
-Step <1>5 gives the probability that no particle arrives during the dead time caused by any preceding particle, which is exactly the event that every entering particle is counted.
+Step [](#s1-5){.pf-ref} gives the probability that no particle arrives during the dead time caused by any preceding particle, which is exactly the event that every entering particle is counted.
 
 :::
 

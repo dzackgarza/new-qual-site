@@ -28,7 +28,7 @@ If $x$, $y$, and $z$ are positive integers such that $4x - 5y + 2z$ is divisible
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hypothesis is
 $$
@@ -44,9 +44,9 @@ An integer is divisible by $13$ exactly when it is congruent to $0$ modulo $13$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the hypothesis in step <1>1,
+Under the hypothesis in step [](#s1-1){.pf-ref},
 $$
 -7x+12y+3z\equiv0\pmod{13}.
 $$
@@ -69,7 +69,7 @@ Here the first congruence holds because the coefficient differences are $-39$, $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 None of choices (A), (B), (C), or (E) is forced by the hypothesis.
 
@@ -90,7 +90,7 @@ respectively, none of which is divisible by $13$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the expression that must be divisible by $13$ is
 $$
@@ -101,7 +101,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 proves that choice (D) is always divisible by $13$, while step <1>3 rules out every other choice.
+Step [](#s1-2){.pf-ref} proves that choice (D) is always divisible by $13$, while step [](#s1-3){.pf-ref} rules out every other choice.
 
 :::
 
@@ -109,7 +109,7 @@ Step <1>2 proves that choice (D) is always divisible by $13$, while step <1>3 ru
 
 ::: pf-qed
 
-Step <1>4 identifies the unique required expression.
+Step [](#s1-4){.pf-ref} identifies the unique required expression.
 
 :::
 

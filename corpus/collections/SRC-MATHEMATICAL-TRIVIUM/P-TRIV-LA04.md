@@ -22,7 +22,7 @@ How are det A and det B related?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $P$ be the permutation matrix that interchanges the same two rows.
 Then
@@ -40,7 +40,7 @@ exactly the same way as the corresponding permutation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The determinant of $P$ is
 $$
@@ -57,7 +57,7 @@ $-1$. The determinant of its permutation matrix equals that sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-By multiplicativity of the determinant and steps <1>1--<1>2,
+By multiplicativity of the determinant and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 \det B
 =
@@ -84,7 +84,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required relation.
+Step [](#s1-3){.pf-ref} is the required relation.
 
 :::
 

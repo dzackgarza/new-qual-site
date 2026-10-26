@@ -49,7 +49,7 @@ using the product rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $0\le t\le\pi$,
 $$
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -91,7 +91,7 @@ $$
 \int_\gamma z\,dz
 =\int_0^\pi \gamma(t)\gamma'(t)\,dt.
 $$
-Therefore, by the triangle inequality and step <1>2,
+Therefore, by the triangle inequality and step [](#s1-2){.pf-ref},
 $$
 \left|\int_\gamma z\,dz\right|
 \le
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -116,7 +116,7 @@ $$
 
 ::: pf-proof
 
-Evaluate the elementary integral from step <1>3:
+Evaluate the elementary integral from step [](#s1-3){.pf-ref}:
 $$
 \int_0^\pi t(1+t)\,dt
 =\int_0^\pi t\,dt+\int_0^\pi t^2\,dt
@@ -129,7 +129,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required estimate.
+Step [](#s1-4){.pf-ref} is the required estimate.
 
 :::
 

@@ -28,7 +28,7 @@ Let $G$ be a group of order $9$, and let $e$ denote the identity of $G$. Which o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 No group of order $9$ can contain a nonidentity element $x$ satisfying $x^{-1}=x$.
 
@@ -41,7 +41,7 @@ If $x^{-1}=x$, then multiplying by $x$ gives $x^2=e$. Since $x\ne e$, the order 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Each of statements (B)--(E) can hold for a group of order $9$.
 
@@ -62,7 +62,7 @@ so (B) also holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the statement that cannot be true is
 $$
@@ -73,7 +73,7 @@ namely the existence of a nonidentity element satisfying $x^{-1}=x$.
 
 ::: pf-proof
 
-Step <1>1 proves that (A) is impossible for every group of order $9$, while step <1>2 exhibits a group of order $9$ for which each of (B)--(E) is true.
+Step [](#s1-1){.pf-ref} proves that (A) is impossible for every group of order $9$, while step [](#s1-2){.pf-ref} exhibits a group of order $9$ for which each of (B)--(E) is true.
 
 :::
 
@@ -81,7 +81,7 @@ Step <1>1 proves that (A) is impossible for every group of order $9$, while step
 
 ::: pf-qed
 
-Step <1>3 identifies the required statement.
+Step [](#s1-3){.pf-ref} identifies the required statement.
 
 :::
 

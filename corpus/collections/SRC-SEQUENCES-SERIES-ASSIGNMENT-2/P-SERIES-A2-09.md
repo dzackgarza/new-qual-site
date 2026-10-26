@@ -53,7 +53,7 @@ R=\limsup_{n\to\infty}r_n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that
 \[
@@ -74,7 +74,7 @@ This is the defining eventual upper-bound property of the limsup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(n>N\),
 \[
@@ -116,13 +116,13 @@ for every \(n>N\).
 
 ::: pf-proof
 
-Apply the bound \(r_k<q\) from step <1>1 to every factor in step <1>2.
+Apply the bound \(r_k<q\) from step [](#s1-1){.pf-ref} to every factor in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Taking \(n\)th roots,
 \[
@@ -142,7 +142,7 @@ inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -162,13 +162,13 @@ and
 \[
 q^{1-N/n}\to q.
 \]
-Apply step <1>4.
+Apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Letting \(q\downarrow R\),
 \[
@@ -181,13 +181,13 @@ R}.
 
 ::: pf-proof
 
-Step <1>5 holds for every \(q>R\).
+Step [](#s1-5){.pf-ref} holds for every \(q>R\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose now that
 \[
@@ -221,14 +221,14 @@ a_N q^{\,n-N}}.
 
 ::: pf-proof
 
-Use the product identity from step <1>2 and bound every factor below by \(q\)
-using step <1>7.
+Use the product identity from step [](#s1-2){.pf-ref} and bound every factor below by \(q\)
+using step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Taking \(n\)th roots,
 \[
@@ -247,7 +247,7 @@ All quantities are positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -259,13 +259,13 @@ q.
 
 ::: pf-proof
 
-Take \(n\to\infty\) in step <1>9.
+Take \(n\to\infty\) in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If \(L>0\), letting \(q\uparrow L\) gives
 \[
@@ -275,13 +275,13 @@ If \(L>0\), letting \(q\uparrow L\) gives
 
 ::: pf-proof
 
-Step <1>10 holds for every \(q\in(0,L)\).
+Step [](#s1-10){.pf-ref} holds for every \(q\in(0,L)\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If \(L=0\), one still has
 \[
@@ -297,7 +297,7 @@ Every \(\rho_n\) is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus
 \[
@@ -310,13 +310,13 @@ L
 
 ::: pf-proof
 
-Combine steps <1>11--<1>12.
+Combine steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Trivially,
 \[
@@ -335,9 +335,9 @@ For every real sequence, the liminf is at most the limsup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-Combining steps <1>6, <1>13, and <1>14,
+Combining steps [](#s1-6){.pf-ref} and [](#s1-13){.pf-ref}, and [](#s1-14){.pf-ref},
 \[
 \boxed{
 \liminf\frac{a_{n+1}}{a_n}
@@ -358,7 +358,7 @@ This is exactly the chain of inequalities established above.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Suppose \(\sum a_n\) converges by the ratio test. Then
 \[
@@ -381,7 +381,7 @@ for that limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Applying part (a) to the positive sequence \((|a_n|)\),
 \[
@@ -396,13 +396,13 @@ Applying part (a) to the positive sequence \((|a_n|)\),
 
 ::: pf-proof
 
-Use step <1>15 with \(a_n\) replaced by \(|a_n|\).
+Use step [](#s1-15){.pf-ref} with \(a_n\) replaced by \(|a_n|\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Hence
 \[
@@ -413,13 +413,13 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>16--<1>17.
+Combine steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Therefore the root test also proves that
 \[
@@ -430,13 +430,13 @@ Therefore the root test also proves that
 ::: pf-proof
 
 The root-test convergence criterion is exactly the strict inequality in
-step <1>18.
+step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 The \(n\)th root is
 \[
@@ -461,7 +461,7 @@ The \(n\)th root is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore
 \[
@@ -478,13 +478,13 @@ Since
 \[
 \frac{(-1)^n}{n}\to0,
 \]
-the exponent in step <1>20 tends to \(-1\).
+the exponent in step [](#s1-20){.pf-ref} tends to \(-1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 In particular,
 \[
@@ -497,13 +497,13 @@ In particular,
 
 ::: pf-proof
 
-The full sequence has a limit by step <1>21.
+The full sequence has a limit by step [](#s1-21){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 The ratio is
 \[
@@ -531,7 +531,7 @@ The ratio is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 If \(n\) is even,
 \[
@@ -546,13 +546,13 @@ Then
 \[
 (-1)^n=1,
 \]
-so the exponent in step <1>23 is \(1\).
+so the exponent in step [](#s1-23){.pf-ref} is \(1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 If \(n\) is odd,
 \[
@@ -573,7 +573,7 @@ so the exponent is \(-3\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Hence
 \[
@@ -599,13 +599,13 @@ and
 
 ::: pf-proof
 
-The ratio alternates between the two values in steps <1>24--<1>25.
+The ratio alternates between the two values in steps [](#s1-24){.pf-ref} through [](#s1-25){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 The series
 \[
@@ -616,7 +616,7 @@ converges absolutely by the root test.
 
 ::: pf-proof
 
-By step <1>22, the root-test limsup is
+By step [](#s1-22){.pf-ref}, the root-test limsup is
 \[
 1/2<1.
 \]
@@ -625,7 +625,7 @@ By step <1>22, the root-test limsup is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 The ratio test does not decide convergence.
 
@@ -681,7 +681,7 @@ The consecutive ratio is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-30}
 
 Therefore
 \[
@@ -703,20 +703,20 @@ Use the standard limit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-31}
 
 Hence both the liminf and limsup of the ratios equal \(e\).
 
 
 ::: pf-proof
 
-The ratio sequence converges by step <1>30.
+The ratio sequence converges by step [](#s1-30){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-32}
 
 Applying the inequality from part (a),
 \[
@@ -732,13 +732,13 @@ e.
 
 ::: pf-proof
 
-Use step <1>15 together with step <1>31.
+Use step [](#s1-15){.pf-ref} together with step [](#s1-31){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-33}
 
 Therefore
 \[
@@ -749,7 +749,7 @@ Therefore
 
 ::: pf-proof
 
-The liminf and limsup are both \(e\) by step <1>32, so the sequence
+The liminf and limsup are both \(e\) by step [](#s1-32){.pf-ref}, so the sequence
 converges to \(e\).
 
 :::
@@ -758,8 +758,8 @@ converges to \(e\).
 
 ::: pf-qed
 
-Step <1>15 proves part (a), step <1>19 proves part (b), steps <1>22--<1>28
-prove part (c), and step <1>33 proves part (d).
+Step [](#s1-15){.pf-ref} proves part (a), step [](#s1-19){.pf-ref} proves part (b), steps [](#s1-22){.pf-ref} through [](#s1-28){.pf-ref}
+prove part (c), and step [](#s1-33){.pf-ref} proves part (d).
 
 :::
 

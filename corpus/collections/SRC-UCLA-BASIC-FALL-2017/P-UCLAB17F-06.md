@@ -22,7 +22,7 @@ For each field $F=\mathbb R$, $\mathbb C$, and $\mathbb F_3$, determine whether 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Over
 \[
@@ -44,7 +44,7 @@ is diagonalizable over $\mathbb R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Over
 \[
@@ -100,7 +100,7 @@ Hence $A$ is not diagonalizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Over
 \[
@@ -154,7 +154,7 @@ Therefore $A$ has no eigenvalue in $\mathbb F_3$, so it cannot be diagonalizable
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the complete answer is
 \[
@@ -172,9 +172,9 @@ F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
 
 ::: pf-proof
 
-Step <1>1 proves the positive real case.
-Step <1>2 gives a complex counterexample.
-Step <1>3 gives a counterexample over $\mathbb F_3$.
+Step [](#s1-1){.pf-ref} proves the positive real case.
+Step [](#s1-2){.pf-ref} gives a complex counterexample.
+Step [](#s1-3){.pf-ref} gives a counterexample over $\mathbb F_3$.
 
 :::
 
@@ -182,7 +182,7 @@ Step <1>3 gives a counterexample over $\mathbb F_3$.
 
 ::: pf-qed
 
-Step <1>4 records the required classification.
+Step [](#s1-4){.pf-ref} records the required classification.
 
 :::
 

@@ -40,7 +40,7 @@ Deduce the fundamental theorem of algebra by applying this to a monic polynomial
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $r>0$,
 $$
@@ -65,7 +65,7 @@ This is the required identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $r>0$,
 $$
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $r>0$,
 $$
@@ -105,7 +105,7 @@ $$
 
 ::: pf-proof
 
-Taking absolute values in step <1>1 and combining with step <1>2 gives
+Taking absolute values in step [](#s1-1){.pf-ref} and combining with step [](#s1-2){.pf-ref} gives
 $$
 \frac{2\pi}{|f(0)|}
 \le
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -150,7 +150,7 @@ Factoring $|z|^n$ gives exactly the displayed estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every nonconstant complex polynomial has a zero.
 
@@ -160,13 +160,13 @@ Every nonconstant complex polynomial has a zero.
 It is enough to treat a monic polynomial, since dividing a nonzero
 polynomial by its leading coefficient does not change its zeros. Let
 $p$ be monic of degree $n\ge1$ and suppose for contradiction that $p$
-has no zero in $\mathbb C$. Then step <1>3, applied to $f=p$, gives
+has no zero in $\mathbb C$. Then step [](#s1-3){.pf-ref}, applied to $f=p$, gives
 $$
 \min_{|z|=r}|p(z)|\le |p(0)|=|a_0|
 $$
 for every $r>0$.
 
-On the other hand, step <1>4 implies for $|z|=r$ that
+On the other hand, step [](#s1-4){.pf-ref} implies for $|z|=r$ that
 $$
 |p(z)|
 \ge r^n\left(1-\frac{|a_{n-1}|}{r}-\cdots-\frac{|a_0|}{r^n}\right).
@@ -186,8 +186,8 @@ This is the fundamental theorem of algebra.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove the minimum-modulus estimate, step <1>4 proves
-the requested polynomial inequality, and step <1>5 deduces the
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove the minimum-modulus estimate, step [](#s1-4){.pf-ref} proves
+the requested polynomial inequality, and step [](#s1-5){.pf-ref} deduces the
 fundamental theorem of algebra.
 
 :::

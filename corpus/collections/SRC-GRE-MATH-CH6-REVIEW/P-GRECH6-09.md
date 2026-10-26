@@ -28,7 +28,7 @@ How many subgroups does the group $\ZZ_3 \oplus \ZZ_{16}$ have?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The group $\ZZ_3\oplus\ZZ_{16}$ is cyclic of order $48$.
 
@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A cyclic group of order $48$ has exactly one subgroup for each positive divisor of $48$.
 
@@ -61,7 +61,7 @@ If $G=\langle g\rangle$ has order $48$ and $d\mid48$, then $\langle g^{48/d}\ran
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The integer $48=2^4\cdot3$ has
 $$
@@ -78,7 +78,7 @@ Every positive divisor has the unique form $2^a3^b$ with $0\le a\le4$ and $0\le 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $\ZZ_3\oplus\ZZ_{16}$ has
 $$
@@ -89,7 +89,7 @@ subgroups, so the answer is (B).
 
 ::: pf-proof
 
-By step <1>1 the group is cyclic of order $48$; steps <1>2 and <1>3 show that such a group has exactly ten subgroups.
+By step [](#s1-1){.pf-ref} the group is cyclic of order $48$; steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} show that such a group has exactly ten subgroups.
 
 :::
 
@@ -97,7 +97,7 @@ By step <1>1 the group is cyclic of order $48$; steps <1>2 and <1>3 show that su
 
 ::: pf-qed
 
-Step <1>4 gives the requested number of subgroups.
+Step [](#s1-4){.pf-ref} gives the requested number of subgroups.
 
 :::
 

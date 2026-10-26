@@ -78,7 +78,7 @@ The identity is assumed to hold for every real \(x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Then
 \[
@@ -108,7 +108,7 @@ c^5=-32.
 
 ::: pf-proof
 
-From step <1>3,
+From step [](#s1-3){.pf-ref},
 \[
 3c^5=-96.
 \]
@@ -118,7 +118,7 @@ Divide by \(3\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -139,7 +139,7 @@ solution is unique.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 With
 \[
@@ -179,7 +179,7 @@ one indeed has
 
 ::: pf-qed
 
-Step <1>5 gives the required lower limit, and step <1>6 verifies it.
+Step [](#s1-5){.pf-ref} gives the required lower limit, and step [](#s1-6){.pf-ref} verifies it.
 
 :::
 

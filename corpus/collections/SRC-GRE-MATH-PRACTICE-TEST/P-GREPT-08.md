@@ -27,7 +27,7 @@ If $\int_0^b \tan x \, dx = 2$, then $b$ could equal
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On every interval containing $0$ on which $\tan x$ is continuous,
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $b=\operatorname{arcsec}(e^2)$, then
 $$
@@ -75,7 +75,7 @@ $$
 \qquad\text{so}\qquad
 \cos b=e^{-2}.
 $$
-Applying step <1>1 gives
+Applying step [](#s1-1){.pf-ref} gives
 $$
 \int_0^b\tan x\,dx
 =-\log(e^{-2})=2.
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -96,7 +96,7 @@ is a possible value, so the answer is (E).
 
 ::: pf-proof
 
-Step <1>2 verifies directly that this choice satisfies the required integral
+Step [](#s1-2){.pf-ref} verifies directly that this choice satisfies the required integral
 equation.
 
 :::
@@ -105,7 +105,7 @@ equation.
 
 ::: pf-qed
 
-Step <1>3 gives the requested choice.
+Step [](#s1-3){.pf-ref} gives the requested choice.
 
 :::
 

@@ -36,7 +36,7 @@ Since the $v_j$ form a basis, $V$ is invertible.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -75,7 +75,7 @@ and this entry equals $\delta_{jk}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vectors $w_1,\ldots,w_n$ form a basis of $\mathbb C^n$.
 
@@ -92,7 +92,7 @@ is invertible because $V^{-1}$ is invertible. Hence its columns form a basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose
 \[
@@ -124,13 +124,13 @@ Therefore
 \lambda_k\delta_{jk},
 \end{aligned}
 \]
-using linearity in the second argument and step <1>1.
+using linearity in the second argument and step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $j$,
 \[
@@ -140,7 +140,7 @@ For every $j$,
 
 ::: pf-proof
 
-For every $k$, step <1>3 gives
+For every $k$, step [](#s1-3){.pf-ref} gives
 \[
 (T^*w_j,v_k)=\lambda_j\delta_{jk}.
 \]
@@ -167,14 +167,14 @@ is orthogonal to every vector in $\mathbb C^n$, so it is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus each $w_j$ is an eigenvector of $T^*$.
 
 
 ::: pf-proof
 
-By step <1>2, each $w_j$ is nonzero. Step <1>4 shows that it is an eigenvector of $T^*$ with eigenvalue $\overline{\lambda_j}$.
+By step [](#s1-2){.pf-ref}, each $w_j$ is nonzero. Step [](#s1-4){.pf-ref} shows that it is an eigenvector of $T^*$ with eigenvalue $\overline{\lambda_j}$.
 
 :::
 
@@ -182,7 +182,7 @@ By step <1>2, each $w_j$ is nonzero. Step <1>4 shows that it is an eigenvector o
 
 ::: pf-qed
 
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>5 prove part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove part (a), and steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} prove part (b).
 
 :::
 

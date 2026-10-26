@@ -32,7 +32,7 @@ be the number of edges. Choose an orientation on every edge.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The simplicial chain groups are
 \[
@@ -76,7 +76,7 @@ This is the degree-one simplicial boundary formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every element of
 \[
@@ -126,7 +126,7 @@ This is a homomorphism of free abelian groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -139,7 +139,7 @@ One has
 
 ::: pf-proof
 
-This is exactly step <1>3.
+This is exactly step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -163,7 +163,7 @@ included, omitting any edge that would create a cycle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Fix a root vertex
 \[
@@ -199,7 +199,7 @@ Hence \(v_i-v_0\) is a \(1\)-boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The elements
 \[
@@ -250,7 +250,7 @@ n_i(v_i-v_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -263,14 +263,14 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 gives one inclusion. Steps <1>7 and <1>8 show that every generator
+Step [](#s1-5){.pf-ref} gives one inclusion. Steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} show that every generator
 of \(\ker\varepsilon\) lies in \(\operatorname{im}\partial_1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The group
 \[
@@ -290,7 +290,7 @@ v_i-v_0,
 \qquad
 1\le i\le v-1,
 \]
-form a basis: they generate by step <1>8, and linear independence follows
+form a basis: they generate by step [](#s1-8){.pf-ref}, and linear independence follows
 by comparing coefficients of the distinct vertices \(v_i\).
 
 :::
@@ -308,17 +308,17 @@ Hence
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 \operatorname{im}\partial_1=\ker\varepsilon,
 \]
-whose rank is \(v-1\) by step <1>10.
+whose rank is \(v-1\) by step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since
 \[
@@ -346,7 +346,7 @@ e-v+1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -371,13 +371,13 @@ H_1(Y)
 =
 \ker\partial_1.
 \]
-Apply step <1>12.
+Apply step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Also
 \[
@@ -396,7 +396,7 @@ H_0(Y)
 =
 C_0(Y)/\operatorname{im}\partial_1.
 \]
-Using step <1>9,
+Using step [](#s1-9){.pf-ref},
 \[
 H_0(Y)
 =
@@ -416,7 +416,7 @@ This also reflects path connectedness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 For every \(n\ge2\),
 \[
@@ -427,13 +427,13 @@ H_n(Y)=0}.
 
 ::: pf-proof
 
-The chain groups \(C_n(Y)\) vanish in these dimensions by step <1>1.
+The chain groups \(C_n(Y)\) vanish in these dimensions by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The Euler characteristic of \(Y\) is
 \[
@@ -455,7 +455,7 @@ v-e.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence
 \[
@@ -477,7 +477,7 @@ Rearrange
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore the simplicial homology groups are
 \[
@@ -494,7 +494,7 @@ H_n^{\mathrm{simpl}}(Y)
 
 ::: pf-proof
 
-Combine steps <1>13--<1>17.
+Combine steps [](#s1-13){.pf-ref} through [](#s1-17){.pf-ref}.
 
 :::
 
@@ -511,7 +511,7 @@ In particular,
 
 ::: pf-proof
 
-It is the rank of the free abelian group \(H_1(Y)\) from step <1>18.
+It is the rank of the free abelian group \(H_1(Y)\) from step [](#s1-18){.pf-ref}.
 Equivalently, a connected finite graph satisfies
 \[
 e\ge v-1
@@ -524,7 +524,7 @@ because it contains a spanning tree with \(v-1\) edges.
 
 ::: pf-qed
 
-Step <1>18 gives the requested homology groups in terms of the Euler
+Step [](#s1-18){.pf-ref} gives the requested homology groups in terms of the Euler
 characteristic.
 
 :::

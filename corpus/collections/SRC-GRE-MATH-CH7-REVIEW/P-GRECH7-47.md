@@ -33,7 +33,7 @@ III. $C - B \subseteq C - A$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I is true:
 $$
@@ -49,7 +49,7 @@ Because $A\subseteq B$, every element of $A$ is already in $B$. Thus adjoining $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II is true:
 $$
@@ -65,7 +65,7 @@ An element of $A-B$ would have to belong to $A$ but not to $B$. This is impossib
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III is true:
 $$
@@ -81,7 +81,7 @@ Let $x\in C-B$. Then $x\in C$ and $x\notin B$. Since $A\subseteq B$, membership 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore all three statements must be true:
 $$
@@ -92,7 +92,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Steps <1>1--<1>3 establish I, II, and III respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} establish I, II, and III respectively.
 
 :::
 
@@ -100,7 +100,7 @@ Steps <1>1--<1>3 establish I, II, and III respectively.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

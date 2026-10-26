@@ -39,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 $$
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The entire function
 $$
@@ -105,7 +105,7 @@ $$
 =
 e^{-\operatorname{Re}(f(z)^2)}.
 $$
-By step <1>1, the exponent is nonpositive when
+By step [](#s1-1){.pf-ref}, the exponent is nonpositive when
 $$
 |z|\ge M,
 $$
@@ -118,14 +118,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $g$ is bounded on all of $\CC$.
 
 
 ::: pf-proof
 
-Step <1>2 gives a bound outside the closed disk
+Step [](#s1-2){.pf-ref} gives a bound outside the closed disk
 $$
 |z|\le M.
 $$
@@ -146,7 +146,7 @@ The function $g$ is constant.
 
 ::: pf-proof
 
-Step <1>3 gives a bounded entire function. Liouville's theorem implies that it is constant.
+Step [](#s1-3){.pf-ref} gives a bounded entire function. Liouville's theorem implies that it is constant.
 
 :::
 
@@ -192,7 +192,7 @@ identically. Hence $f^2$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $f$ is constant.
 
@@ -225,7 +225,7 @@ Since $f$ is continuous and $\CC$ is connected, its image is connected. A connec
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $R>0$ such that on the circle $\abs{z}=R$,
 $$
@@ -57,14 +57,14 @@ Each exponent $j-n$ is negative, so the finite sum on the right tends to $0$ as 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomials $P_n(z)$ and $a_nz^n$ have the same number of zeros in $\abs{z}<R$, counted with multiplicity.
 
 
 ::: pf-proof
 
-On $\abs{z}=R$, step <1>1 gives
+On $\abs{z}=R$, step [](#s1-1){.pf-ref} gives
 $$
 \abs{P_n(z)-a_nz^n}
 =
@@ -78,14 +78,14 @@ Rouché's theorem therefore implies that $P_n$ and $a_nz^n$ have the same number
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $P_n$ has exactly $n$ zeros in $\CC$, counted with multiplicity.
 
 
 ::: pf-proof
 
-The polynomial $a_nz^n$ has exactly one zero, namely $0$, of multiplicity $n$. By step <1>2, $P_n$ therefore has exactly $n$ zeros in the disk $\abs{z}<R$, counted with multiplicity. In particular, these are $n$ complex zeros of $P_n$.
+The polynomial $a_nz^n$ has exactly one zero, namely $0$, of multiplicity $n$. By step [](#s1-2){.pf-ref}, $P_n$ therefore has exactly $n$ zeros in the disk $\abs{z}<R$, counted with multiplicity. In particular, these are $n$ complex zeros of $P_n$.
 
 :::
 
@@ -93,7 +93,7 @@ The polynomial $a_nz^n$ has exactly one zero, namely $0$, of multiplicity $n$. B
 
 ::: pf-qed
 
-Step <1>3 is the Fundamental Theorem of Algebra for the given polynomial.
+Step [](#s1-3){.pf-ref} is the Fundamental Theorem of Algebra for the given polynomial.
 
 :::
 

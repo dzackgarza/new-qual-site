@@ -32,7 +32,7 @@ If $M<\infty$, then $f$ has no pole on the compact arc $\Gamma$, so the line int
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Parametrizing $\Gamma$ by $z(\theta)=Re^{i\theta}$ gives
 $$
@@ -62,7 +62,7 @@ Combining these estimates with $\abs{f(z(\theta))}\le M$ proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral satisfies the sharper estimate
 $$
@@ -74,7 +74,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \abs{\int_\Gamma f(z)e^{ikz}\,dz}
 \le
@@ -101,7 +101,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required Jordan-lemma bound holds:
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives the same inequality with constant $\pi/2$, and $\pi/2<100$.
+Step [](#s1-2){.pf-ref} gives the same inequality with constant $\pi/2$, and $\pi/2<100$.
 
 :::
 
@@ -122,7 +122,7 @@ Step <1>2 gives the same inequality with constant $\pi/2$, and $\pi/2<100$.
 
 ::: pf-qed
 
-Step <1>3 is the required estimate.
+Step [](#s1-3){.pf-ref} is the required estimate.
 
 :::
 

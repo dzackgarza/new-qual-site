@@ -34,7 +34,7 @@ F(z)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has the partial-fraction decomposition
 \[
@@ -79,7 +79,7 @@ B=3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The poles of $F$ in the upper half-plane are
 \[
@@ -103,7 +103,7 @@ half-plane.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residues are
 \[
@@ -121,7 +121,7 @@ and
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \operatorname{Res}_{z=i\sqrt2}F
 =
@@ -164,7 +164,7 @@ Similarly,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $C_R$ be the upper semicircle of radius $R$, with $R>\sqrt3$.
 Then
@@ -215,7 +215,7 @@ O(R^{-1})
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The integral over the full real line is
 \[
@@ -229,7 +229,7 @@ The integral over the full real line is
 ::: pf-proof
 
 Apply the residue theorem to the upper-half-plane semicircular contour.
-Steps <1>2--<1>3 give
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give
 \[
 \begin{aligned}
 \int_{-R}^{R}F(x)\,dx
@@ -248,7 +248,7 @@ Let
 \[
 R\to\infty.
 \]
-By step <1>4, the arc integral vanishes. Thus
+By step [](#s1-4){.pf-ref}, the arc integral vanishes. Thus
 \[
 \begin{aligned}
 \int_{-\infty}^{\infty}F(x)\,dx
@@ -275,7 +275,7 @@ By step <1>4, the arc integral vanishes. Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -298,7 +298,7 @@ The integrand is even, so
 2
 \int_0^\infty F(x)\,dx.
 \]
-Apply step <1>5 and divide by $2$.
+Apply step [](#s1-5){.pf-ref} and divide by $2$.
 
 :::
 
@@ -306,7 +306,7 @@ Apply step <1>5 and divide by $2$.
 
 ::: pf-qed
 
-Step <1>6 is the required residue-theorem evaluation.
+Step [](#s1-6){.pf-ref} is the required residue-theorem evaluation.
 
 :::
 

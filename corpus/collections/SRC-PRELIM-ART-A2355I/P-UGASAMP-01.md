@@ -24,7 +24,7 @@ f(x)=\frac{x+2}{3x-1},
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function \(f:X\to Y\) has an inverse if there is a function \(g:Y\to X\) such that
 \[
@@ -51,7 +51,7 @@ Thus an inverse, if it exists, is unique.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A function \(f:X\to Y\) has an inverse if and only if it is bijective.
 
@@ -73,7 +73,7 @@ Conversely, suppose \(f\) is bijective. For each \(y\in Y\), surjectivity gives 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 \[
@@ -96,7 +96,7 @@ which simplifies to \(6=-1\), a contradiction. Hence \(f(x)\ne\frac13\) for ever
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Solving \(y=f(x)\) for \(x\) gives
 \[
@@ -118,7 +118,7 @@ Thus
 \[
 x(3y-1)=y+2.
 \]
-By step <1>3, \(y\ne\frac13\), so \(3y-1\ne0\), and division yields
+By step [](#s1-3){.pf-ref}, \(y\ne\frac13\), so \(3y-1\ne0\), and division yields
 \[
 x=\frac{y+2}{3y-1}.
 \]
@@ -127,7 +127,7 @@ x=\frac{y+2}{3y-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function
 \[
@@ -147,13 +147,13 @@ Define
 \[
 g(y)=\frac{y+2}{3y-1}
 \]
-on \(\mathbb R\setminus\{\frac13\}\). Step <1>4 shows that \(g(y)\) is exactly the unique solution of \(f(x)=y\). Therefore
+on \(\mathbb R\setminus\{\frac13\}\). Step [](#s1-4){.pf-ref} shows that \(g(y)\) is exactly the unique solution of \(f(x)=y\). Therefore
 \[
 f(g(y))=y
 \qquad\text{and}\qquad
 g(f(x))=x,
 \]
-so \(g=f^{-1}\). In particular, \(f\) is bijective by step <1>2. The formula for \(g\) is the same as the formula for \(f\), so \(f\) is an involution.
+so \(g=f^{-1}\). In particular, \(f\) is bijective by step [](#s1-2){.pf-ref}. The formula for \(g\) is the same as the formula for \(f\), so \(f\) is an involution.
 
 :::
 
@@ -161,7 +161,7 @@ so \(g=f^{-1}\). In particular, \(f\) is bijective by step <1>2. The formula for
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the definition and necessary-and-sufficient condition for an inverse function to exist, and step <1>5 computes the inverse of the given function.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the definition and necessary-and-sufficient condition for an inverse function to exist, and step [](#s1-5){.pf-ref} computes the inverse of the given function.
 
 :::
 

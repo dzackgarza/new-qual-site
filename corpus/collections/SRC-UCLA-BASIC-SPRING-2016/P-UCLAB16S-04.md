@@ -82,7 +82,7 @@ q<1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every
 \[
@@ -125,7 +125,7 @@ Take the supremum over $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 \[
@@ -147,7 +147,7 @@ The space
 C([0,1])
 \]
 is complete in the uniform norm.
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 \|\mathcal T(\varphi)-\mathcal T(\psi)\|_\infty
 \le
@@ -163,7 +163,7 @@ Thus $\mathcal T$ is a contraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence $(f_n)$ converges uniformly to the unique fixed point
 \[
@@ -180,7 +180,7 @@ f_{n+1}
 =
 \mathcal T(f_n).
 \]
-The contraction mapping theorem applied to step <1>3 therefore implies
+The contraction mapping theorem applied to step [](#s1-3){.pf-ref} therefore implies
 \[
 f_n\to f
 \]
@@ -194,7 +194,7 @@ In particular, the pointwise limit exists for every $x\in[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The limit satisfies the integral equation
 \[
@@ -219,7 +219,7 @@ This is precisely the fixed-point equation
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -261,7 +261,7 @@ e^{B(0)}\cdot0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -302,7 +302,7 @@ e^{B(x)}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently,
 \[
@@ -316,17 +316,17 @@ H(x)
 
 ::: pf-proof
 
-Integrate the differential equation from step <1>7 from $0$ to $x$ and use
+Integrate the differential equation from step [](#s1-7){.pf-ref} from $0$ to $x$ and use
 \[
 H(0)=0
 \]
-from step <1>6.
+from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define
 \[
@@ -338,12 +338,12 @@ Then
 \[
 g
 \]
-satisfies the fixed-point equation in step <1>5.
+satisfies the fixed-point equation in step [](#s1-5){.pf-ref}.
 
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \begin{aligned}
 g(x)
@@ -368,7 +368,7 @@ g(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the limit is
 \[
@@ -388,18 +388,18 @@ e^{-\int_0^t\beta(s)\,ds}
 
 ::: pf-proof
 
-By step <1>9, the function $g$ is a fixed point of $\mathcal T$.
-By uniqueness of the fixed point from step <1>4,
+By step [](#s1-9){.pf-ref}, the function $g$ is a fixed point of $\mathcal T$.
+By uniqueness of the fixed point from step [](#s1-4){.pf-ref},
 \[
 f=g.
 \]
-Substitute the definition of $H$ from step <1>6.
+Substitute the definition of $H$ from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence for every $x\in[0,1]$,
 \[
@@ -419,7 +419,7 @@ e^{-\int_0^t\beta(s)\,ds}
 
 ::: pf-proof
 
-Step <1>4 gives convergence of $f_n$ to $f$, and step <1>10 computes $f$ explicitly.
+Step [](#s1-4){.pf-ref} gives convergence of $f_n$ to $f$, and step [](#s1-10){.pf-ref} computes $f$ explicitly.
 
 :::
 
@@ -427,7 +427,7 @@ Step <1>4 gives convergence of $f_n$ to $f$, and step <1>10 computes $f$ explici
 
 ::: pf-qed
 
-Step <1>11 is the required pointwise limit and its value.
+Step [](#s1-11){.pf-ref} is the required pointwise limit and its value.
 
 :::
 

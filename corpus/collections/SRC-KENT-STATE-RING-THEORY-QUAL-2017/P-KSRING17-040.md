@@ -21,7 +21,7 @@ Let R be a commutative ring with 1. Show that an ideal P of R is prime if and on
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume $P$ is prime. Then $R/P$ is nonzero.
 
@@ -34,7 +34,7 @@ A prime ideal is proper, so $P\ne R$. Hence $1+P\ne0+P$, and therefore $R/P$ is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $(a+P)(b+P)=0+P$, then $a+P=0+P$ or $b+P=0+P$.
 
@@ -47,20 +47,20 @@ The product equality means $ab\in P$. Since $P$ is prime, $a\in P$ or $b\in P$. 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore $R/P$ is an integral domain.
 
 
 ::: pf-proof
 
-The quotient is a nonzero commutative ring with identity, and step <1>2 shows that the product of two nonzero classes is nonzero.
+The quotient is a nonzero commutative ring with identity, and step [](#s1-2){.pf-ref} shows that the product of two nonzero classes is nonzero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Conversely, assume $R/P$ is an integral domain. Then $P$ is proper.
 
@@ -73,7 +73,7 @@ An integral domain is nonzero, so $R/P\ne0$. Hence $P\ne R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $ab\in P$, then $a\in P$ or $b\in P$.
 
@@ -90,20 +90,20 @@ in $R/P$. Since $R/P$ is an integral domain, one of the two factors is zero. Thu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $P$ is prime.
 
 
 ::: pf-proof
 
-Step <1>4 gives properness, and step <1>5 gives the defining product condition for a prime ideal.
+Step [](#s1-4){.pf-ref} gives properness, and step [](#s1-5){.pf-ref} gives the defining product condition for a prime ideal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>3 prove the forward implication, and steps <1>4--<1>6 prove the converse.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove the forward implication, and steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} prove the converse.
 
 :::
 
@@ -125,7 +125,7 @@ Steps <1>1--<1>3 prove the forward implication, and steps <1>4--<1>6 prove the c
 
 ::: pf-qed
 
-Step <1>7 is the required equivalence.
+Step [](#s1-7){.pf-ref} is the required equivalence.
 
 :::
 

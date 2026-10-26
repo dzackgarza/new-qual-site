@@ -49,7 +49,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The complex line integral of $f$ along a smooth curve
 $$
@@ -78,7 +78,7 @@ is continuous on $[a,b]$ because $f$ is continuous and $\alpha$ is smooth. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -96,7 +96,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1 and the triangle inequality,
+By step [](#s1-1){.pf-ref} and the triangle inequality,
 $$
 \begin{aligned}
 \abs{\int_\alpha f(z)\,dz}
@@ -128,7 +128,7 @@ Substitution gives the estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Along
 $$
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On $C_R$,
 $$
@@ -190,13 +190,13 @@ so
 $$
 \abs{z^2}=R^2.
 $$
-Combine this with step <1>3.
+Combine this with step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -218,7 +218,7 @@ The circle $C_R$ has length
 $$
 2\pi R.
 $$
-Apply the ML estimate from step <1>2 to the bound in step <1>4:
+Apply the ML estimate from step [](#s1-2){.pf-ref} to the bound in step [](#s1-4){.pf-ref}:
 $$
 \begin{aligned}
 \abs{
@@ -242,7 +242,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 gives the precise definition requested in part (a), step <1>2 proves part (b), and step <1>5 gives the requested $R$-dependent bound for part (c) after specifying the logarithm determination omitted by the source.
+Step [](#s1-1){.pf-ref} gives the precise definition requested in part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} gives the requested $R$-dependent bound for part (c) after specifying the logarithm determination omitted by the source.
 
 :::
 

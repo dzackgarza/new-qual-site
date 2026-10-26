@@ -28,7 +28,7 @@ For an interval \(I\subset\mathbb R\), write \(|I|\) for its length.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(A\subseteq\mathbb R\), its Lebesgue outer measure is
 \[
@@ -43,7 +43,7 @@ A\subseteq\bigcup_{j=1}^\infty I_j,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(\sum_{i=1}^\infty m^*(A_i)=\infty\), then the required inequality holds.
 
@@ -56,7 +56,7 @@ The left side is nonnegative and takes values in \([0,\infty]\), so it is automa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose \(\sum_{i=1}^\infty m^*(A_i)<\infty\). For every \(\varepsilon>0\) and every \(i\ge1\), there is a countable family of open intervals \((I_{i,j})_{j\ge1}\) such that
 \[
@@ -71,13 +71,13 @@ and
 
 ::: pf-proof
 
-Under the present assumption every \(m^*(A_i)\) is finite. The assertion follows directly from the infimum in the definition in step <1>1.
+Under the present assumption every \(m^*(A_i)\) is finite. The assertion follows directly from the infimum in the definition in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -88,7 +88,7 @@ m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 
 ::: pf-proof
 
-By step <1>3, the countable family \((I_{i,j})_{i,j\ge1}\) covers \(\bigcup_i A_i\). Hence step <1>1 gives
+By step [](#s1-3){.pf-ref}, the countable family \((I_{i,j})_{i,j\ge1}\) covers \(\bigcup_i A_i\). Hence step [](#s1-1){.pf-ref} gives
 \[
 \begin{aligned}
 m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
@@ -102,7 +102,7 @@ m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -114,7 +114,7 @@ m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 
 ::: pf-proof
 
-If the right side is infinite, step <1>2 applies. Otherwise step <1>4 holds for every \(\varepsilon>0\), so letting \(\varepsilon\downarrow0\) gives the displayed inequality.
+If the right side is infinite, step [](#s1-2){.pf-ref} applies. Otherwise step [](#s1-4){.pf-ref} holds for every \(\varepsilon>0\), so letting \(\varepsilon\downarrow0\) gives the displayed inequality.
 
 :::
 
@@ -122,7 +122,7 @@ If the right side is infinite, step <1>2 applies. Otherwise step <1>4 holds for 
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition, and step <1>5 proves countable subadditivity.
+Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-5){.pf-ref} proves countable subadditivity.
 
 :::
 

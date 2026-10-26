@@ -25,7 +25,7 @@ Give $\operatorname{MaxSpec}(A)$ the Zariski topology.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each $x\in E$, the ideal $M(x)$ is maximal.
 
@@ -48,7 +48,7 @@ is a field, so $M(x)$ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every maximal ideal $M\subset A$ has a common zero in $E$.
 
@@ -81,14 +81,14 @@ Therefore $1/h$ is a continuous real-valued function on $E$, so $h$ is a unit of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every maximal ideal of $A$ is $M(x)$ for some $x\in E$.
 
 
 ::: pf-proof
 
-By step <1>2, choose $x\in E$ such that
+By step [](#s1-2){.pf-ref}, choose $x\in E$ such that
 $$
 f(x)=0
 \qquad
@@ -98,7 +98,7 @@ Then
 $$
 M\subseteq M(x).
 $$
-Both ideals are maximal by hypothesis and step <1>1, so
+Both ideals are maximal by hypothesis and step [](#s1-1){.pf-ref}, so
 $$
 M=M(x).
 $$
@@ -107,9 +107,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The point $x$ in step <1>3 is unique.
+The point $x$ in step [](#s1-3){.pf-ref} is unique.
 
 
 ::: pf-proof
@@ -132,7 +132,7 @@ so $M(x)\ne M(y)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map
 $$
@@ -145,7 +145,7 @@ is a continuous bijection.
 
 ::: pf-proof
 
-Bijectivity follows from steps <1>3 and <1>4.
+Bijectivity follows from steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 For any ideal $I\subseteq A$, the Zariski-closed subset
 $$
@@ -165,7 +165,7 @@ which is closed in $E$. Hence $\Phi$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is closed.
 
@@ -205,14 +205,14 @@ which is closed in $\operatorname{MaxSpec}(A)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map $\Phi$ is a homeomorphism.
 
 
 ::: pf-proof
 
-By step <1>5, $\Phi$ is a continuous bijection, and by step <1>6 it is closed. Therefore its inverse is continuous, so $\Phi$ is a homeomorphism.
+By step [](#s1-5){.pf-ref}, $\Phi$ is a continuous bijection, and by step [](#s1-6){.pf-ref} it is closed. Therefore its inverse is continuous, so $\Phi$ is a homeomorphism.
 
 :::
 
@@ -220,7 +220,7 @@ By step <1>5, $\Phi$ is a continuous bijection, and by step <1>6 it is closed. T
 
 ::: pf-qed
 
-Step <1>7 proves the asserted identification of $E$ with the maximal ideal spectrum of $C(E,\RR)$.
+Step [](#s1-7){.pf-ref} proves the asserted identification of $E$ with the maximal ideal spectrum of $C(E,\RR)$.
 
 :::
 

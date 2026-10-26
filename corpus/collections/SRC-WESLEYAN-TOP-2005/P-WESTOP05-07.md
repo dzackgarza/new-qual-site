@@ -36,7 +36,7 @@ a\,b^{-1}\,c\,d\,c^{-1}\,b\,d^{-1}\,a.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two \(a\)-edges identify
 \[
@@ -62,7 +62,7 @@ Matching the arrows identifies starts with starts and ends with ends.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The two \(b\)-edges identify
 \[
@@ -89,7 +89,7 @@ Match starts and ends.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The two \(c\)-edges identify
 \[
@@ -114,7 +114,7 @@ v_5\to v_4.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The two \(d\)-edges identify
 \[
@@ -139,7 +139,7 @@ v_7\to v_6.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence there are exactly two vertex classes:
 \[
@@ -155,7 +155,7 @@ B=\{v_2,v_5\}}.
 
 ::: pf-proof
 
-Steps <1>1--<1>4 generate the displayed equivalence classes, and no listed
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} generate the displayed equivalence classes, and no listed
 identification connects a vertex in \(B\) to one in \(A\).
 
 :::
@@ -173,7 +173,7 @@ V=2,\qquad E=4,\qquad F=1}.
 
 ::: pf-proof
 
-There are two vertex classes by step <1>5, four paired edge classes
+There are two vertex classes by step [](#s1-5){.pf-ref}, four paired edge classes
 \(a,b,c,d\), and one octagon interior.
 
 :::
@@ -197,7 +197,7 @@ Apply the cellular formula for Euler characteristic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The quotient surface is nonorientable.
 
@@ -232,7 +232,7 @@ Its standard polygon has one vertex, \(k\) edge classes, and one face, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
@@ -252,7 +252,7 @@ Solve for \(k\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence the quotient is
 \[
@@ -265,8 +265,8 @@ N_3
 
 ::: pf-proof
 
-The quotient is closed and connected, is nonorientable by step <1>8, and
-has nonorientable genus \(3\) by step <1>10. Apply the classification of
+The quotient is closed and connected, is nonorientable by step [](#s1-8){.pf-ref}, and
+has nonorientable genus \(3\) by step [](#s1-10){.pf-ref}. Apply the classification of
 closed surfaces.
 
 :::
@@ -281,7 +281,7 @@ at \(A\), while the \(b\)- and \(c\)-edges join \(B\) to \(A\).
 
 ::: pf-proof
 
-From the vertex classes in step <1>5:
+From the vertex classes in step [](#s1-5){.pf-ref}:
 the \(a\)-edge has endpoints in \(A\), the \(d\)-edge has endpoints in \(A\),
 and representatives for \(b,c\) have one endpoint in \(B\) and the other in
 \(A\).
@@ -319,7 +319,7 @@ is the standard step in obtaining a presentation from a CW complex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 After setting \(c=1\), the \(2\)-cell attaching word becomes
 \[
@@ -358,13 +358,13 @@ a\,b^{-1}dbd^{-1}a=1
 ::: pf-proof
 
 The collapsed \(1\)-skeleton is a wedge of three circles \(a,b,d\), and the
-single \(2\)-cell imposes the relation from step <1>15.
+single \(2\)-cell imposes the relation from step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Cyclically conjugating the relator gives the equivalent presentation
 \[
@@ -413,7 +413,7 @@ x^2y^2z^2=1
 
 ::: pf-proof
 
-Step <1>11 identifies the underlying surface with
+Step [](#s1-11){.pf-ref} identifies the underlying surface with
 \[
 N_3=\#^3\mathbb{RP}^2,
 \]
@@ -425,7 +425,7 @@ whose standard polygon presentation has the displayed fundamental group.
 
 ::: pf-step
 
-Abelianizing the presentation in step <1>17 kills the commutator
+Abelianizing the presentation in step [](#s1-17){.pf-ref} kills the commutator
 \[
 [b^{-1},d].
 \]
@@ -463,7 +463,7 @@ after abelianization.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore
 \[
@@ -489,7 +489,7 @@ The generators \(b,d\) remain free, while \(a\) is subject only to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Thus
 \[
@@ -502,7 +502,7 @@ H_1
 
 ::: pf-proof
 
-This is the group in step <1>21 written in standard form.
+This is the group in step [](#s1-21){.pf-ref} written in standard form.
 
 :::
 
@@ -510,8 +510,8 @@ This is the group in step <1>21 written in standard form.
 
 ::: pf-qed
 
-Step <1>17 gives a presentation of the fundamental group, step <1>22 gives
-the first homology group, and step <1>11 identifies the surface as
+Step [](#s1-17){.pf-ref} gives a presentation of the fundamental group, step [](#s1-22){.pf-ref} gives
+the first homology group, and step [](#s1-11){.pf-ref} identifies the surface as
 \(\#^3\mathbb{RP}^2\).
 
 :::

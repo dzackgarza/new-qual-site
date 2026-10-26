@@ -93,7 +93,7 @@ Their cross product has norm $R^2\sin\theta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -122,20 +122,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>3.
+This is step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Parametrize the torus by
 $$
@@ -189,7 +189,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the parametrization from step <1>5.
+Differentiate the parametrization from step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -224,7 +224,7 @@ is the product of these norms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -256,14 +256,14 @@ Multiplying by the $2\pi$ from the $\varphi$-integration gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>8.
+This is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -271,7 +271,7 @@ This is step <1>8.
 
 ::: pf-qed
 
-Steps <1>4 and <1>9 establish parts (a) and (b), respectively.
+Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

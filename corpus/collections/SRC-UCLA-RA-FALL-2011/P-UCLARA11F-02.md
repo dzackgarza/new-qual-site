@@ -137,7 +137,7 @@ The dot product uses only the third coordinate, and the standard surface-area el
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -157,7 +157,7 @@ Integrate first in \(\phi\), which contributes the factor \(2\pi\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 With
 \[
@@ -183,7 +183,7 @@ the bounds \(\theta=0,\pi\) become \(u=1,-1\), and reversing them removes the mi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If \(\rho>0\),
 \[
@@ -203,7 +203,7 @@ Integrate the exponential explicitly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore, for \(\xi\ne0\),
 \[
@@ -216,13 +216,13 @@ Therefore, for \(\xi\ne0\),
 
 ::: pf-proof
 
-Combine steps <1>5--<1>7.
+Combine steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 At \(\xi=0\),
 \[
@@ -239,7 +239,7 @@ This is the normalization of surface measure given in the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus, with the continuous value at the origin,
 \[
@@ -257,13 +257,13 @@ Since
 \[
 \frac{\sin r}{r}\to1
 \]
-as \(r\to0\), the formula from step <1>8 extends continuously to the value \(4\pi\) in step <1>9.
+as \(r\to0\), the formula from step [](#s1-8){.pf-ref} extends continuously to the value \(4\pi\) in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For every
 \[
@@ -314,7 +314,7 @@ Fourier transform converts convolution of finite measures into pointwise multipl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 By part (a),
 \[
@@ -333,13 +333,13 @@ Square
 =
 \widehat\sigma^2
 \]
-and use step <1>10.
+and use step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 In polar coordinates on \(\mathbb R^3\),
 \[
@@ -359,13 +359,13 @@ The Euclidean volume element is
 \[
 d\xi=4\pi r^2\,dr
 \]
-after integrating over the unit sphere. Combine this with the factor \(r^{-4}\) from step <1>13.
+after integrating over the unit sphere. Combine this with the factor \(r^{-4}\) from step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The integral
 \[
@@ -394,7 +394,7 @@ and \(\int_0^1r^2\,dr<\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The integral
 \[
@@ -433,13 +433,13 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>14--<1>16.
+Combine steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 By Plancherel, there exists
 \[
@@ -456,7 +456,7 @@ The Fourier transform is an isomorphism of \(L^2(\mathbb R^3)\) onto itself up t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 As tempered distributions,
 \[
@@ -466,13 +466,13 @@ As tempered distributions,
 
 ::: pf-proof
 
-The finite measure \(\nu\) defines a tempered distribution whose Fourier transform is \(\widehat\nu\). The \(L^2\) function \(g\) defines a tempered distribution with the same Fourier transform by step <1>18. Fourier transform is injective on tempered distributions, so the two distributions are equal.
+The finite measure \(\nu\) defines a tempered distribution whose Fourier transform is \(\widehat\nu\). The \(L^2\) function \(g\) defines a tempered distribution with the same Fourier transform by step [](#s1-18){.pf-ref}. Fourier transform is injective on tempered distributions, so the two distributions are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore, for
 \[
@@ -489,13 +489,13 @@ the functional is
 
 ::: pf-proof
 
-Combine steps <1>11 and <1>19.
+Combine steps [](#s1-11){.pf-ref} and [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 By Cauchy--Schwarz,
 \[
@@ -509,7 +509,7 @@ By Cauchy--Schwarz,
 
 ::: pf-proof
 
-Apply the \(L^2\) Cauchy--Schwarz inequality to step <1>20.
+Apply the \(L^2\) Cauchy--Schwarz inequality to step [](#s1-20){.pf-ref}.
 
 :::
 
@@ -522,13 +522,13 @@ Hence \(\Lambda\) is bounded with respect to the \(L^2\)-norm on \(C_c^\infty(\m
 
 ::: pf-proof
 
-Step <1>21 gives a uniform linear bound.
+Step [](#s1-21){.pf-ref} gives a uniform linear bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Since
 \[
@@ -547,7 +547,7 @@ Every bounded linear functional on a dense subspace extends uniquely and continu
 
 ::: pf-qed
 
-Step <1>10 proves part (a), and step <1>23 proves part (b).
+Step [](#s1-10){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
 
 :::
 

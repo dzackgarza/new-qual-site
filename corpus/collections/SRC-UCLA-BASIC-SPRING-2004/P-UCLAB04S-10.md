@@ -26,7 +26,7 @@ Let $T\in M_n(\mathbb R)$ be symmetric. The proof is by induction on $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $T$ has a real eigenvalue and a nonzero real eigenvector.
 
@@ -62,7 +62,7 @@ At least one of $x,y$ is nonzero, so $T$ has a nonzero real eigenvector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $v$ is a real eigenvector of $T$, then the orthogonal complement
 \[
@@ -92,7 +92,7 @@ Thus $Tw\in v^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The restriction
 \[
@@ -103,7 +103,7 @@ is symmetric with respect to the Euclidean inner product.
 
 ::: pf-proof
 
-By step <1>2 the restriction is well-defined. For $w_1,w_2\in v^\perp$,
+By step [](#s1-2){.pf-ref} the restriction is well-defined. For $w_1,w_2\in v^\perp$,
 \[
 \langle T w_1,w_2\rangle
 =
@@ -115,7 +115,7 @@ because $T$ is symmetric on $\mathbb R^n$. Hence the restriction is symmetric.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n\ge1$, every real symmetric $n\times n$ matrix has an orthonormal basis of real eigenvectors.
 
@@ -124,7 +124,7 @@ For every $n\ge1$, every real symmetric $n\times n$ matrix has an orthonormal ba
 
 For $n=1$ the assertion is immediate.
 
-Assume it holds in dimension $n-1$, and let $T\in M_n(\mathbb R)$ be symmetric. By step <1>1, choose a real eigenvector $v_1$ and normalize it so that $\|v_1\|=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps <1>2--<1>3 the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
+Assume it holds in dimension $n-1$, and let $T\in M_n(\mathbb R)$ be symmetric. By step [](#s1-1){.pf-ref}, choose a real eigenvector $v_1$ and normalize it so that $\|v_1\|=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
 \[
 v_2,\ldots,v_n
 \]
@@ -138,14 +138,14 @@ is an orthonormal basis of $\mathbb R^n$ consisting of eigenvectors of $T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The matrix $T$ is similar to a diagonal matrix.
 
 
 ::: pf-proof
 
-Let $v_1,\ldots,v_n$ be the basis from step <1>4, with
+Let $v_1,\ldots,v_n$ be the basis from step [](#s1-4){.pf-ref}, with
 \[
 Tv_i=\lambda_i v_i.
 \]
@@ -165,7 +165,7 @@ Thus $T$ is similar to a diagonal matrix.
 
 ::: pf-qed
 
-Step <1>5 proves the required diagonalizability, and steps <1>1--<1>4 establish it without invoking the Spectral Theorem.
+Step [](#s1-5){.pf-ref} proves the required diagonalizability, and steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish it without invoking the Spectral Theorem.
 
 :::
 

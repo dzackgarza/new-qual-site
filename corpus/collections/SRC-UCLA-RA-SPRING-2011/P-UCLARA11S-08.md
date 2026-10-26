@@ -29,7 +29,7 @@ is subharmonic, where $\|A(z)\|$ is the operator norm on $\mathbb C^2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function
 \[
@@ -55,7 +55,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An upper-semicontinuous function
 \[
@@ -84,7 +84,7 @@ This is the standard definition of subharmonicity on an open set, specialized to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The pointwise supremum of a bounded family of subharmonic functions need not be subharmonic.
 
@@ -142,7 +142,7 @@ so $u$ is not upper-semicontinuous and therefore not subharmonic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The pointwise infimum of a family of subharmonic functions need not be subharmonic.
 
@@ -189,20 +189,20 @@ Thus the sub-mean-value inequality fails at $0$, so $u$ is not subharmonic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 This settles part (c): both assertions are false.
 
 
 ::: pf-proof
 
-Step <1>3 refutes the supremum assertion, and step <1>4 refutes the infimum assertion.
+Step [](#s1-3){.pf-ref} refutes the supremum assertion, and step [](#s1-4){.pf-ref} refutes the infimum assertion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -241,7 +241,7 @@ Hence $v$ is upper-semicontinuous everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\mathbb C^2$ such that
 \[
@@ -278,7 +278,7 @@ Then $\|y\|=1$ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For fixed vectors $x,y\in\mathbb C^2$, the scalar function
 \[
@@ -301,7 +301,7 @@ The function $h$ is a fixed complex linear combination of the holomorphic entrie
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every disk centered at $z_0$,
 \[
@@ -321,7 +321,7 @@ v(z_0)=-\infty,
 \]
 so the inequality is automatic.
 
-Assume $A(z_0)\ne0$ and choose unit vectors $x,y$ as in step <1>7. By step <1>8 and the sub-mean-value inequality,
+Assume $A(z_0)\ne0$ and choose unit vectors $x,y$ as in step [](#s1-7){.pf-ref}. By step [](#s1-8){.pf-ref} and the sub-mean-value inequality,
 \[
 \begin{aligned}
 v(z_0)
@@ -357,7 +357,7 @@ This is the required inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The function
 \[
@@ -370,7 +370,7 @@ is subharmonic.
 
 ::: pf-proof
 
-Step <1>6 gives upper-semicontinuity, and step <1>9 gives the sub-mean-value inequality. Unless $A\equiv0$, the function is not identically $-\infty$ and hence is subharmonic by step <1>2. If $A\equiv0$, the conventional extended-valued function is identically $-\infty$; under conventions that permit this degenerate subharmonic function, the conclusion holds verbatim.
+Step [](#s1-6){.pf-ref} gives upper-semicontinuity, and step [](#s1-9){.pf-ref} gives the sub-mean-value inequality. Unless $A\equiv0$, the function is not identically $-\infty$ and hence is subharmonic by step [](#s1-2){.pf-ref}. If $A\equiv0$, the conventional extended-valued function is identically $-\infty$; under conventions that permit this degenerate subharmonic function, the conclusion holds verbatim.
 
 :::
 
@@ -378,7 +378,7 @@ Step <1>6 gives upper-semicontinuity, and step <1>9 gives the sub-mean-value ine
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 answer parts (a) and (b), step <1>5 answers part (c), and step <1>10 proves part (d).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} answer parts (a) and (b), step [](#s1-5){.pf-ref} answers part (c), and step [](#s1-10){.pf-ref} proves part (d).
 
 :::
 

@@ -31,7 +31,7 @@ under the standard coordinate inclusions.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is a fiber bundle
 \[
@@ -53,7 +53,7 @@ Send an orthonormal $n$-frame $(v_1,\ldots,v_n)$ to its first $n-1$ vectors. Ove
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each fixed $n$ and $k\geq0$, there exists $m_0$ such that
 \[
@@ -68,13 +68,13 @@ Induct on $n$. For $n=1$,
 \[
 V_1(\mathbb F^m)=S^{dm-1},
 \]
-whose $\pi_k$ vanishes when $dm-1>k$. For the induction step, use the long exact homotopy sequence of the bundle in step <1>1. For sufficiently large $m$, the fiber sphere has dimension greater than $k+1$, so both $\pi_k$ and $\pi_{k-1}$ of the fiber vanish. By the induction hypothesis, $\pi_k(V_{n-1}(\mathbb F^m))=0$ for sufficiently large $m$. Exactness then gives $\pi_k(V_n(\mathbb F^m))=0$.
+whose $\pi_k$ vanishes when $dm-1>k$. For the induction step, use the long exact homotopy sequence of the bundle in step [](#s1-1){.pf-ref}. For sufficiently large $m$, the fiber sphere has dimension greater than $k+1$, so both $\pi_k$ and $\pi_{k-1}$ of the fiber vanish. By the induction hypothesis, $\pi_k(V_{n-1}(\mathbb F^m))=0$ for sufficiently large $m$. Exactness then gives $\pi_k(V_n(\mathbb F^m))=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every continuous map from a compact space into $V_n(\mathbb F^\infty)$ has image contained in some finite stage $V_n(\mathbb F^m)$.
 
@@ -87,7 +87,7 @@ The direct limit is taken with the weak topology of the nested finite-dimensiona
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -98,13 +98,13 @@ Therefore
 
 ::: pf-proof
 
-Let $f:S^k\to V_n(\mathbb F^\infty)$. By step <1>3 its image lies in some finite stage $V_n(\mathbb F^m)$. Enlarge $m$ if necessary until step <1>2 applies. The composite of $f$ with this larger-stage inclusion is null-homotopic there, hence null-homotopic in the direct limit. Thus every homotopy class vanishes. The case $k=0$ also shows path connectedness.
+Let $f:S^k\to V_n(\mathbb F^\infty)$. By step [](#s1-3){.pf-ref} its image lies in some finite stage $V_n(\mathbb F^m)$. Enlarge $m$ if necessary until step [](#s1-2){.pf-ref} applies. The composite of $f$ with this larger-stage inclusion is null-homotopic there, hence null-homotopic in the direct limit. Thus every homotopy class vanishes. The case $k=0$ also shows path connectedness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $V_n(\mathbb F^\infty)$ has the homotopy type of a CW complex.
 
@@ -117,22 +117,22 @@ Each finite Stiefel manifold admits a CW structure compatible, after subdivision
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $V_n(\mathbb F^\infty)$ is contractible.
 
 
 ::: pf-proof
 
-By step <1>4 all homotopy groups vanish, and by step <1>5 the space has CW type. The map to a point is therefore a weak homotopy equivalence, so Whitehead's theorem makes it a homotopy equivalence. Thus the space is contractible.
+By step [](#s1-4){.pf-ref} all homotopy groups vanish, and by step [](#s1-5){.pf-ref} the space has CW type. The map to a point is therefore a weak homotopy equivalence, so Whitehead's theorem makes it a homotopy equivalence. Thus the space is contractible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Applying step <1>6 to $\mathbb F=\mathbb R,\mathbb C,\mathbb H$ gives
+Applying step [](#s1-6){.pf-ref} to $\mathbb F=\mathbb R,\mathbb C,\mathbb H$ gives
 \[
 \boxed{
 V_n(\mathbb R^\infty),\quad
@@ -152,7 +152,7 @@ The proof used only the real dimension $d=1,2,4$ of the scalar division algebra,
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

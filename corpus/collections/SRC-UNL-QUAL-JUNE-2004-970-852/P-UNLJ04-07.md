@@ -25,7 +25,7 @@ b. Let us define a snarl as a graph that can be obtained from $K _ { 4 }$ by rep
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -97,7 +97,7 @@ contradicting $3$-edge-connectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 $$
@@ -157,7 +157,7 @@ contradicting $3$-edge-connectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose
 $$
@@ -199,7 +199,7 @@ deleting it disconnects the graph, contradicting $3$-edge-connectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence, in the only remaining case, exactly three edges join
 $$
@@ -225,7 +225,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, each of the two components has at least three boundary edges, so together they account for at least six edges incident to
+By step [](#s1-3){.pf-ref}, each of the two components has at least three boundary edges, so together they account for at least six edges incident to
 $$
 u
 $$
@@ -278,7 +278,7 @@ contradicting the six boundary edges just obtained.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -323,7 +323,7 @@ The equation
 $$
 a+b=3
 $$
-is the boundary-size statement from step <1>4.
+is the boundary-size statement from step [](#s1-4){.pf-ref}.
 
 Suppose
 $$
@@ -381,7 +381,7 @@ is symmetric.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In the remaining cases
 $$
@@ -454,18 +454,18 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every cubic $3$-edge-connected graph is $3$-connected.
 
 
 ::: pf-proof
 
-Step <1>1 rules out vertex cuts of size
+Step [](#s1-1){.pf-ref} rules out vertex cuts of size
 $$
 1.
 $$
-Steps <1>2--<1>6 rule out vertex cuts of size
+Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} rule out vertex cuts of size
 $$
 2.
 $$
@@ -483,7 +483,7 @@ is $3$-connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The graph
 $$
@@ -521,7 +521,7 @@ is $3$-connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Let
 $$
@@ -617,7 +617,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If
 $$
@@ -694,7 +694,7 @@ are attached to surviving endpoints of their subdivided edges or to each other, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If
 $$
@@ -799,7 +799,7 @@ is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The graph
 $$
@@ -857,7 +857,7 @@ is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The snarl operation preserves $3$-connectivity.
 
@@ -877,7 +877,7 @@ If
 $$
 S
 $$
-contains neither new vertex, step <1>10 applies.
+contains neither new vertex, step [](#s1-10){.pf-ref} applies.
 
 If
 $$
@@ -891,17 +891,17 @@ then either
 $$
 S
 $$
-contains no other vertex, in which case the same argument as step <1>11 with no
+contains no other vertex, in which case the same argument as step [](#s1-11){.pf-ref} with no
 $$
 z
 $$
-is easier, or it contains one original vertex and step <1>11 applies.
+is easier, or it contains one original vertex and step [](#s1-11){.pf-ref} applies.
 
 If
 $$
 S=\{x,y\},
 $$
-step <1>12 applies.
+step [](#s1-12){.pf-ref} applies.
 
 Thus deleting fewer than three vertices from
 $$
@@ -913,7 +913,7 @@ never disconnects it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Every snarl is $3$-connected.
 
@@ -926,10 +926,10 @@ The initial graph
 $$
 K_4
 $$
-is cubic and $3$-connected by step <1>8.
+is cubic and $3$-connected by step [](#s1-8){.pf-ref}.
 
 Assume the current graph is cubic and $3$-connected.
-Applying one snarl operation produces a cubic graph by step <1>9 and a $3$-connected graph by step <1>13.
+Applying one snarl operation produces a cubic graph by step [](#s1-9){.pf-ref} and a $3$-connected graph by step [](#s1-13){.pf-ref}.
 
 Therefore every graph obtained from
 $$
@@ -943,7 +943,7 @@ by finitely many such operations is $3$-connected.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>14 proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
 
 :::
 

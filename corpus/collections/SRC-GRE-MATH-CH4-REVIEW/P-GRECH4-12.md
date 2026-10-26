@@ -32,7 +32,7 @@ Find the general solution of the differential equation:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With the substitution
 $$
@@ -66,7 +66,7 @@ Equating these expressions and cancelling $v$ gives the displayed equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -76,7 +76,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 \frac{dv}{dx}=\frac1x.
 $$
@@ -90,7 +90,7 @@ Substitute $v=y/x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The general solution may be written
 $$
@@ -101,7 +101,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Exponentiating step <1>2 gives
+Exponentiating step [](#s1-2){.pf-ref} gives
 $$
 e^{y/x}=e^C|x|.
 $$
@@ -113,7 +113,7 @@ On any connected solution interval, the sign of $x$ is fixed. Absorbing that fix
 
 ::: pf-qed
 
-Step <1>3 gives the requested general solution and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested general solution and corresponding choice.
 
 :::
 

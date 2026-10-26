@@ -30,7 +30,7 @@ A map $f:X\to Y$ is called closed if $f(F)$ is closed in $Y$ for every closed su
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -91,7 +91,7 @@ Thus every closed subset of $X$ has closed image under $f^B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Coordinate projections from products need not be closed.
 
@@ -182,7 +182,7 @@ Thus the answer is:
 
 ::: pf-proof
 
-This is exactly the content of steps <1>1--<1>2.
+This is exactly the content of steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
@@ -190,7 +190,7 @@ This is exactly the content of steps <1>1--<1>2.
 
 ::: pf-qed
 
-Step <1>1 proves part (1), and step <1>2 supplies the required counterexample
+Step [](#s1-1){.pf-ref} proves part (1), and step [](#s1-2){.pf-ref} supplies the required counterexample
 for part (2).
 
 :::

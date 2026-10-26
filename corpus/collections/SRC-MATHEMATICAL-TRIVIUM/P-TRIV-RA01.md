@@ -25,7 +25,7 @@ Find $f'(x)$, if $f(x) = \log\frac{a}{x}$, $\cos\arcsin x$, $\frac{x^2+1}{x^3+1}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -88,7 +88,7 @@ the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 $$
@@ -132,7 +132,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>3 give the three requested derivatives.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three requested derivatives.
 
 :::
 

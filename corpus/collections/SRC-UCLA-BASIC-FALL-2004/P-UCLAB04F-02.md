@@ -23,7 +23,7 @@ You may use without proof theorems about maxima and minima of continuous or diff
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Rolle's Theorem states: if $f:[a,b]\to\mathbb R$ is continuous on $[a,b]$, differentiable on $(a,b)$, and
 \[
@@ -43,7 +43,7 @@ This is the statement to be proved.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f$ is constant on $[a,b]$, then the conclusion holds.
 
@@ -64,7 +64,7 @@ for every $c\in(a,b)$. Since $a<b$, such points exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $f$ is not constant. Then either its maximum or its minimum on $[a,b]$ is attained at an interior point $c\in(a,b)$.
 
@@ -83,9 +83,9 @@ If $f(x)>f(a)$, then the maximum value is strictly larger than the endpoint valu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-At the interior extremum $c$ from step <1>3,
+At the interior extremum $c$ from step [](#s1-3){.pf-ref},
 \[
 f'(c)=0.
 \]
@@ -109,14 +109,14 @@ The proof for a local minimum is identical with the inequalities reversed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Rolle's Theorem holds.
 
 
 ::: pf-proof
 
-Step <1>2 handles the constant case. If $f$ is nonconstant, steps <1>3--<1>4 produce $c\in(a,b)$ with $f'(c)=0$.
+Step [](#s1-2){.pf-ref} handles the constant case. If $f$ is nonconstant, steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} produce $c\in(a,b)$ with $f'(c)=0$.
 
 :::
 
@@ -124,7 +124,7 @@ Step <1>2 handles the constant case. If $f$ is nonconstant, steps <1>3--<1>4 pro
 
 ::: pf-qed
 
-Step <1>5 proves the theorem stated in step <1>1.
+Step [](#s1-5){.pf-ref} proves the theorem stated in step [](#s1-1){.pf-ref}.
 
 :::
 

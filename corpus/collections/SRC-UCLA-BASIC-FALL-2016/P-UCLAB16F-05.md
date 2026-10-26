@@ -40,7 +40,7 @@ which is the intended nondegenerate case.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The $\mathbb Q$-dimension of $V$ satisfies
 \[
@@ -65,7 +65,7 @@ gives positive dimension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose
 \[
@@ -101,7 +101,7 @@ Thus the claim follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -116,14 +116,14 @@ are linearly dependent over $\mathbb Q$.
 
 ::: pf-proof
 
-All these vectors lie in $V$ by step <1>2.
+All these vectors lie in $V$ by step [](#s1-2){.pf-ref}.
 The vector space $V$ has dimension $d$, so any $d+1$ vectors in it are linearly dependent.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exist rational numbers
 \[
@@ -137,13 +137,13 @@ not all zero, such that
 
 ::: pf-proof
 
-This is exactly the linear dependence supplied by step <1>3.
+This is exactly the linear dependence supplied by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since $v\ne0$,
 \[
@@ -153,7 +153,7 @@ Since $v\ne0$,
 
 ::: pf-proof
 
-Factor the relation in step <1>4 inside the complex numbers:
+Factor the relation in step [](#s1-4){.pf-ref} inside the complex numbers:
 \[
 \left(
 \sum_{k=0}^d c_k\beta^k
@@ -166,7 +166,7 @@ Because $v$ is a nonzero complex number, division by $v$ gives the displayed sca
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus $\beta$ is a root of a nonzero polynomial
 \[
@@ -178,11 +178,11 @@ of degree at most $d\le n$.
 
 ::: pf-proof
 
-The coefficients are rational by step <1>4, the polynomial is nonzero because the coefficients are not all zero, and step <1>5 gives
+The coefficients are rational by step [](#s1-4){.pf-ref}, the polynomial is nonzero because the coefficients are not all zero, and step [](#s1-5){.pf-ref} gives
 \[
 p(\beta)=0.
 \]
-Its degree is at most $d$, and step <1>1 gives
+Its degree is at most $d$, and step [](#s1-1){.pf-ref} gives
 \[
 d\le n.
 \]
@@ -191,7 +191,7 @@ d\le n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If a polynomial of degree exactly $n$ is required, define
 \[
@@ -213,7 +213,7 @@ The exponent
 \[
 n-\deg p
 \]
-is a nonnegative integer by step <1>6.
+is a nonnegative integer by step [](#s1-6){.pf-ref}.
 Thus $P\in\mathbb Q[X]$ has degree exactly $n$.
 Since
 \[
@@ -230,7 +230,7 @@ P(\beta)=0.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 prove the intended statement under the necessary hypothesis
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the intended statement under the necessary hypothesis
 \[
 V\ne\{0\},
 \]

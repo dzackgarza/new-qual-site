@@ -22,7 +22,7 @@ All homology groups have integer coefficients.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $A$ consists of $r$ discrete points,
 \[
@@ -47,7 +47,7 @@ Every higher homology group of a discrete space vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The homology of the sphere is
 \[
@@ -68,7 +68,7 @@ This is the standard homology computation for $S^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 \[
@@ -97,7 +97,7 @@ For
 n\ge3,
 \]
 all three absolute groups surrounding the relative group vanish by
-steps <1>1--<1>2.
+steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 Hence exactness forces
 \[
 H_n(S^2,A)=0.
@@ -107,7 +107,7 @@ H_n(S^2,A)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In degree $2$,
 \[
@@ -131,7 +131,7 @@ H_2(S^2,A)
 \longrightarrow
 H_1(A).
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 H_2(A)=0
 \]
@@ -160,7 +160,7 @@ H_2(S^2,A)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The degree-$1$ and degree-$0$ part of the long exact sequence is
 \[
@@ -234,7 +234,7 @@ map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map $i_*$ is surjective and
 \[
@@ -277,7 +277,7 @@ e_{r-1}-e_r.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -291,7 +291,7 @@ H_1(S^2,A)
 
 ::: pf-proof
 
-By exactness of the sequence in step <1>5,
+By exactness of the sequence in step [](#s1-5){.pf-ref},
 \[
 \operatorname{im}\partial
 =
@@ -310,13 +310,13 @@ H_1(S^2,A)
 \cong
 \mathbb Z^{r-1}
 \]
-by step <1>7.
+by step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -328,11 +328,11 @@ H_0(S^2,A)=0.
 
 ::: pf-proof
 
-In step <1>5, the map
+In step [](#s1-5){.pf-ref}, the map
 \[
 i_*:\mathbb Z^r\to\mathbb Z
 \]
-is surjective by step <1>7.
+is surjective by step [](#s1-7){.pf-ref}.
 Hence its cokernel is zero.
 Exactness gives
 \[
@@ -343,7 +343,7 @@ H_0(S^2,A)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The complete answer is
 \[
@@ -364,7 +364,7 @@ H_n(S^2,A)
 
 ::: pf-proof
 
-Collect steps <1>3--<1>4 and <1>8--<1>9.
+Collect steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
@@ -372,7 +372,7 @@ Collect steps <1>3--<1>4 and <1>8--<1>9.
 
 ::: pf-qed
 
-Step <1>10 gives all relative homology groups.
+Step [](#s1-10){.pf-ref} gives all relative homology groups.
 
 :::
 

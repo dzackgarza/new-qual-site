@@ -37,7 +37,7 @@ Suppose $f$ is a function from the reals to the reals satisfying $2f(x) = f(2x)$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has $f(0)=0$.
 
@@ -54,7 +54,7 @@ This gives $2f(0)=f(0)$, hence $f(0)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $f$ is differentiable at $0$ with derivative $c$, then
 $$
@@ -69,7 +69,7 @@ Fix $x\ne0$. Iterating the functional equation gives
 $$
 f\!\left(\frac{x}{2^n}\right)=\frac{f(x)}{2^n}
 $$
-for every $n\geq0$. By step <1>1,
+for every $n\geq0$. By step [](#s1-1){.pf-ref},
 $$
 \frac{f(x/2^n)-f(0)}{x/2^n}
 =
@@ -79,13 +79,13 @@ As $n\to\infty$, the points $x/2^n$ tend to $0$. Differentiability at $0$ theref
 $$
 c=f'(0)=\frac{f(x)}{x}.
 $$
-Thus $f(x)=cx$ for every nonzero $x$, and step <1>1 gives the same formula at $x=0$.
+Thus $f(x)=cx$ for every nonzero $x$, and step [](#s1-1){.pf-ref} gives the same formula at $x=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A continuous non-linear example is
 $$
@@ -130,7 +130,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>3 supplies the example required in part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} supplies the example required in part (b).
 
 :::
 

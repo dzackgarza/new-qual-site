@@ -55,7 +55,7 @@ k|x-y|^{1/m}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every Hölder continuous function of positive order belongs to some
 \[
@@ -102,7 +102,7 @@ so \(f\in A_{m,k}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence the set \(\mathcal H\) of all Hölder continuous functions satisfies
 \[
@@ -117,7 +117,7 @@ A_{m,k}}.
 
 ::: pf-proof
 
-Apply step <1>1 to each Hölder function.
+Apply step [](#s1-1){.pf-ref} to each Hölder function.
 
 :::
 
@@ -167,7 +167,7 @@ f\in A_{m,k}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By uniform continuity of \(f\), there exists \(\eta>0\) such that
 \[
@@ -185,7 +185,7 @@ Every continuous function on the compact interval \([0,1]\) is uniformly continu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Choose \(h>0\) such that
 \[
@@ -210,7 +210,7 @@ as \(h\downarrow0\), all three inequalities hold for sufficiently small \(h>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Choose
 \[
@@ -230,7 +230,7 @@ The condition \(h<1/4\) ensures that such an \(x_0\) exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exists a continuous function
 \[
@@ -253,7 +253,7 @@ For example, define \(\varphi\) to be \(0\) on \([0,x_0]\), linear from \(0\) to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 \[
@@ -270,7 +270,7 @@ The sum of continuous functions is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -285,7 +285,7 @@ One has
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 0\le\varphi\le\frac{\varepsilon}{2}.
 \]
@@ -302,7 +302,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The oscillation of \(f\) between \(x_0\) and \(x_1\) satisfies
 \[
@@ -315,17 +315,17 @@ The oscillation of \(f\) between \(x_0\) and \(x_1\) satisfies
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 |x_1-x_0|=h<\eta.
 \]
-Apply step <1>4.
+Apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -339,7 +339,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>7--<1>8,
+By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref},
 \[
 g(x_1)-g(x_0)
 =
@@ -351,7 +351,7 @@ Apply the reverse triangle inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -364,13 +364,13 @@ Hence
 
 ::: pf-proof
 
-Use step <1>10 in step <1>11.
+Use step [](#s1-10){.pf-ref} in step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 But
 \[
@@ -385,13 +385,13 @@ k h^{1/m}
 
 ::: pf-proof
 
-Use steps <1>5--<1>6.
+Use steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -403,13 +403,13 @@ k|x_1-x_0|^{1/m}.
 
 ::: pf-proof
 
-Combine steps <1>12--<1>13.
+Combine steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence
 \[
@@ -420,20 +420,20 @@ g\notin A_{m,k}}.
 
 ::: pf-proof
 
-Step <1>14 violates the defining Hölder estimate for the pair \(x_0,x_1\).
+Step [](#s1-14){.pf-ref} violates the defining Hölder estimate for the pair \(x_0,x_1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Thus every open ball around every \(f\in A_{m,k}\) contains a point outside \(A_{m,k}\).
 
 
 ::: pf-proof
 
-Given any \(\varepsilon>0\), steps <1>8--<1>15 construct \(g\) with
+Given any \(\varepsilon>0\), steps [](#s1-8){.pf-ref} through [](#s1-15){.pf-ref} construct \(g\) with
 \[
 \|g-f\|_\infty<\varepsilon
 \]
@@ -446,7 +446,7 @@ g\notin A_{m,k}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore
 \[
@@ -457,13 +457,13 @@ Therefore
 
 ::: pf-proof
 
-Step <1>16 is exactly the statement that \(A_{m,k}\) has empty interior.
+Step [](#s1-16){.pf-ref} is exactly the statement that \(A_{m,k}\) has empty interior.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Since \(A_{m,k}\) is closed and has empty interior, it is nowhere dense.
 
@@ -482,13 +482,13 @@ Thus
 =
 \varnothing
 \]
-by step <1>17.
+by step [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 The countable union
 \[
@@ -499,20 +499,20 @@ is meager.
 
 ::: pf-proof
 
-It is a countable union of nowhere-dense sets by step <1>18.
+It is a countable union of nowhere-dense sets by step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore the set of all Hölder continuous functions is meager in \(C([0,1])\).
 
 
 ::: pf-proof
 
-By step <1>2, the Hölder functions form a subset of the meager set from step <1>19. Every subset of a meager set is meager.
+By step [](#s1-2){.pf-ref}, the Hölder functions form a subset of the meager set from step [](#s1-19){.pf-ref}. Every subset of a meager set is meager.
 
 :::
 
@@ -520,7 +520,7 @@ By step <1>2, the Hölder functions form a subset of the meager set from step <1
 
 ::: pf-qed
 
-Step <1>20 is the required conclusion.
+Step [](#s1-20){.pf-ref} is the required conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ Find the perpendicular distance from the origin to the plane $x+2y+2z=6$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A line through the origin perpendicular to the plane is
 $$
@@ -48,7 +48,7 @@ is normal to the plane $x+2y+2z=6$, since its coordinates are the coefficients o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 This perpendicular line meets the plane at
 $$
@@ -58,7 +58,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, a point on the line has coordinates
+By step [](#s1-1){.pf-ref}, a point on the line has coordinates
 $$
 (x,y,z)=(t,2t,2t).
 $$
@@ -72,7 +72,7 @@ so $t=2/3$. Substitution into the line parametrization yields the displayed poin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The perpendicular distance from the origin to the plane is
 $$
@@ -83,7 +83,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By step <1>1, the segment from the origin to the intersection point in step <1>2 is perpendicular to the plane. Its length is
+By step [](#s1-1){.pf-ref}, the segment from the origin to the intersection point in step [](#s1-2){.pf-ref} is perpendicular to the plane. Its length is
 $$
 \|P\|
 =\sqrt{\left(\frac23\right)^2+\left(\frac43\right)^2+\left(\frac43\right)^2}
@@ -97,7 +97,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested perpendicular distance and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested perpendicular distance and corresponding choice.
 
 :::
 

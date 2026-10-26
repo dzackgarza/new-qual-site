@@ -66,7 +66,7 @@ g_x=v_x=-3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a real constant $C$ such that
 \[
@@ -98,7 +98,7 @@ h(y)=2y+C.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The condition $g(2,3)=1$ gives
 \[
@@ -108,7 +108,7 @@ C=1.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 1=g(2,3)
 =-3(2)+2(3)+C
@@ -119,7 +119,7 @@ By step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -129,7 +129,7 @@ Therefore
 
 ::: pf-proof
 
-Substitute the value of $C$ from step <1>3 into the formula from step <1>2.
+Substitute the value of $C$ from step [](#s1-3){.pf-ref} into the formula from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -137,7 +137,7 @@ Substitute the value of $C$ from step <1>3 into the formula from step <1>2.
 
 ::: pf-qed
 
-Step <1>4 gives the required harmonic conjugate.
+Step [](#s1-4){.pf-ref} gives the required harmonic conjugate.
 
 :::
 

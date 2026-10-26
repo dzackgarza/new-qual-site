@@ -39,7 +39,7 @@ Y\coloneqq X\setminus\{p\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every point of $Y$ can be joined by a path in $Y$ to the point
 \[
@@ -90,7 +90,7 @@ Both pieces lie in $Y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The space
 \[
@@ -105,7 +105,7 @@ Given
 \[
 q_0,q_1\in Y,
 \]
-step <1>1 gives a path from $q_0$ to
+step [](#s1-1){.pf-ref} gives a path from $q_0$ to
 \[
 (0,0)
 \]
@@ -120,7 +120,7 @@ This gives a path in $Y$ from $q_0$ to $q_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The point
 \[
@@ -155,7 +155,7 @@ Therefore every neighborhood of $p$ in $X$ meets $Y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The closure of $Y$ in $X$ is all of $X$:
 \[
@@ -169,7 +169,7 @@ Clearly
 \[
 Y\subseteq\overline Y^X.
 \]
-Step <1>3 adds the only missing point
+Step [](#s1-3){.pf-ref} adds the only missing point
 \[
 p.
 \]
@@ -187,16 +187,16 @@ The reverse inclusion is automatic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $X$ is connected.
 
 
 ::: pf-proof
 
-By step <1>2, $Y$ is path-connected and therefore connected.
+By step [](#s1-2){.pf-ref}, $Y$ is path-connected and therefore connected.
 The closure of a connected subset is connected.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 X
 =
@@ -208,7 +208,7 @@ Hence $X$ is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -238,7 +238,7 @@ Therefore a connected subset of $S$ can contain at most one point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -310,7 +310,7 @@ The interval $J$ is connected, so its continuous image
 x(J)
 \]
 is connected.
-By step <1>6, $x(J)$ is a singleton.
+By step [](#s1-6){.pf-ref}, $x(J)$ is a singleton.
 Since
 \[
 x(t_0)=0,
@@ -344,7 +344,7 @@ throughout $J$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For any path
 \[
@@ -376,7 +376,7 @@ and
 \]
 is closed in the Hausdorff space $X$.
 
-Step <1>7 shows that every point of $A$ has a neighborhood contained in
+Step [](#s1-7){.pf-ref} shows that every point of $A$ has a neighborhood contained in
 $A$.
 Thus $A$ is open.
 
@@ -384,7 +384,7 @@ Thus $A$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Any path that starts at $p$ is constant.
 
@@ -400,7 +400,7 @@ Then
 0\in A,
 \]
 so $A$ is nonempty.
-By step <1>8, $A$ is clopen in the connected interval
+By step [](#s1-8){.pf-ref}, $A$ is clopen in the connected interval
 \[
 [0,1].
 \]
@@ -418,14 +418,14 @@ for all $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The space $X$ is not path-connected.
 
 
 ::: pf-proof
 
-By step <1>9, there is no path from
+By step [](#s1-9){.pf-ref}, there is no path from
 \[
 p
 \]
@@ -439,7 +439,7 @@ Since $Y$ is nonempty, $X$ is not path-connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The path components of $X$ are exactly
 \[
@@ -453,8 +453,8 @@ Y.
 
 ::: pf-proof
 
-By step <1>2, $Y$ is one path-connected subset.
-By step <1>9, the point $p$ cannot be joined by a path to any point of $Y$,
+By step [](#s1-2){.pf-ref}, $Y$ is one path-connected subset.
+By step [](#s1-9){.pf-ref}, the point $p$ cannot be joined by a path to any point of $Y$,
 so
 \[
 \{p\}
@@ -466,7 +466,7 @@ There are no further points in $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The path component
 \[
@@ -477,7 +477,7 @@ is not closed in $X$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 p\in\overline Y^X.
 \]
@@ -497,8 +497,8 @@ so $Y$ is not closed.
 
 ::: pf-qed
 
-Step <1>2 proves part (1), step <1>5 proves part (2),
-step <1>10 proves part (3), and steps <1>11--<1>12 prove part (4).
+Step [](#s1-2){.pf-ref} proves part (1), step [](#s1-5){.pf-ref} proves part (2),
+step [](#s1-10){.pf-ref} proves part (3), and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} prove part (4).
 
 :::
 

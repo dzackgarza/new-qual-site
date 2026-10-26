@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer $n\geq1$,
 $$
@@ -94,7 +94,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -104,19 +104,19 @@ $$
 
 ::: pf-proof
 
-Iterating step <1>2 gives
+Iterating step [](#s1-2){.pf-ref} gives
 $$
 I_n
 =
 n(n-1)\cdots1\,I_0.
 $$
-Use step <1>1.
+Use step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -128,7 +128,7 @@ $$
 
 ::: pf-proof
 
-This is step <1>3.
+This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -136,7 +136,7 @@ This is step <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required value.
+Step [](#s1-4){.pf-ref} is the required value.
 
 :::
 

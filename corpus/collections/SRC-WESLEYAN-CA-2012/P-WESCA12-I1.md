@@ -27,7 +27,7 @@ The following are equivalent.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Complex differentiability at every point.**
 
@@ -54,7 +54,7 @@ In one complex variable, “holomorphic” and “analytic” are equivalent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 **Local power-series representation.**
 
@@ -102,7 +102,7 @@ inside its radius of convergence, so it defines a holomorphic function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 **Morera's criterion.**
 
@@ -131,7 +131,7 @@ around every triangle vanishes is holomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore each of the three statements
 \[
@@ -147,7 +147,7 @@ is equivalent to analyticity on $D$.
 
 ::: pf-proof
 
-Steps <1>1--<1>3 give the three standard equivalent characterizations.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three standard equivalent characterizations.
 
 :::
 
@@ -155,7 +155,7 @@ Steps <1>1--<1>3 give the three standard equivalent characterizations.
 
 ::: pf-qed
 
-Step <1>4 answers the prompt.
+Step [](#s1-4){.pf-ref} answers the prompt.
 
 :::
 

@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every unique factorization domain is integrally closed in its fraction field.
 
@@ -149,7 +149,7 @@ Thus every element of the fraction field integral over $A$ already lies in $A$, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 $$
@@ -183,7 +183,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -224,7 +224,7 @@ $$
 =
 0.
 $$
-By step <1>2, the constant coefficient lies in
+By step [](#s1-2){.pf-ref}, the constant coefficient lies in
 $$
 \ZZ\subseteq R.
 $$
@@ -240,7 +240,7 @@ Hence $\alpha$ is integral over $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element
 $$
@@ -300,20 +300,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ring $R$ is not integrally closed.
 
 
 ::: pf-proof
 
-Step <1>3 gives an element
+Step [](#s1-3){.pf-ref} gives an element
 $$
 \alpha
 \in
 \operatorname{Frac}(R)
 $$
-that is integral over $R$, while step <1>4 shows
+that is integral over $R$, while step [](#s1-4){.pf-ref} shows
 $$
 \alpha\notin R.
 $$
@@ -323,7 +323,7 @@ This is exactly failure of integral closure.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -340,8 +340,8 @@ If
 $$
 R=\ZZ[\sqrt p]
 $$
-were a UFD, step <1>1 would imply that $R$ is integrally closed.
-Step <1>5 shows that it is not.
+were a UFD, step [](#s1-1){.pf-ref} would imply that $R$ is integrally closed.
+Step [](#s1-5){.pf-ref} shows that it is not.
 Therefore $R$ cannot be a UFD.
 
 :::
@@ -350,7 +350,7 @@ Therefore $R$ cannot be a UFD.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

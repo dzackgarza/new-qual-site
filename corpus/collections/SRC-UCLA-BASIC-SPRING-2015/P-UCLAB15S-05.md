@@ -36,7 +36,7 @@ D_N
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -69,7 +69,7 @@ and collect the terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\ge1$,
 \[
@@ -100,7 +100,7 @@ f(n).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n\ge1$,
 \[
@@ -132,7 +132,7 @@ Subtract from $f(n)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The partial sums
 \[
@@ -148,7 +148,7 @@ form an increasing sequence.
 
 ::: pf-proof
 
-Every summand is nonnegative by step <1>2.
+Every summand is nonnegative by step [](#s1-2){.pf-ref}.
 Therefore
 \[
 S_{N+1}\ge S_N.
@@ -158,14 +158,14 @@ S_{N+1}\ge S_N.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sequence $(S_N)$ is bounded above by $f(1)$.
 
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 S_N
@@ -187,7 +187,7 @@ f(N+1)\ge0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $(S_N)$ converges to a finite limit
 \[
@@ -197,15 +197,15 @@ S.
 
 ::: pf-proof
 
-By step <1>4, $(S_N)$ is increasing.
-By step <1>5, it is bounded above.
+By step [](#s1-4){.pf-ref}, $(S_N)$ is increasing.
+By step [](#s1-5){.pf-ref}, it is bounded above.
 The monotone convergence theorem for real sequences therefore gives a finite limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 \[
@@ -221,17 +221,17 @@ N\to\infty.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 D_N=-S_N.
 \]
-Take the limit from step <1>6.
+Take the limit from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -246,7 +246,7 @@ converges to a finite limit.
 
 ::: pf-proof
 
-This is exactly step <1>7.
+This is exactly step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -254,7 +254,7 @@ This is exactly step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

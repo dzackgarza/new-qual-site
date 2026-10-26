@@ -30,7 +30,7 @@ for almost all $x\in\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every nonnegative rational number $q$,
 \[
@@ -79,7 +79,7 @@ The case $m=0$ is equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a\ge0$ and $(q_k)$ is a sequence of nonnegative rationals with $q_k\to a$, then for every compact interval $K\subset\mathbb R$,
 \[
@@ -137,7 +137,7 @@ After translating variables, this implies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix $a\ge0$. For every compact interval $K\subset\mathbb R$,
 \[
@@ -158,11 +158,11 @@ h(x)
 \coloneqq
 f(x+a)-f(x).
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 h_k\ge0
 \]
-almost everywhere. By step <1>2,
+almost everywhere. By step [](#s1-2){.pf-ref},
 \[
 h_k\longrightarrow h
 \quad\text{in }L^1(K).
@@ -194,7 +194,7 @@ Hence $h_-=0$ almost everywhere on $K$, which is equivalent to $h\ge0$ almost ev
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every real number $a\ge0$,
 \[
@@ -207,7 +207,7 @@ f(x+a)\ge f(x)
 
 ::: pf-proof
 
-Apply step <1>3 to the compact intervals
+Apply step [](#s1-3){.pf-ref} to the compact intervals
 \[
 [-N,N],
 \qquad
@@ -221,7 +221,7 @@ The exceptional set in each interval is null, and the countable union of these e
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

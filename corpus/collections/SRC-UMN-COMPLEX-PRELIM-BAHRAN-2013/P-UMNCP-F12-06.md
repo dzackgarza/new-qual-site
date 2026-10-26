@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 $$
@@ -87,7 +87,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -132,7 +132,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Schwarz's lemma gives
 $$
@@ -146,13 +146,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives exactly the hypotheses of Schwarz's lemma.
+Step [](#s1-2){.pf-ref} gives exactly the hypotheses of Schwarz's lemma.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -177,7 +177,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every admissible function $f$ satisfies
 $$
@@ -190,13 +190,13 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 f(2i)
 =
 g(\phi(2i)).
 $$
-Using steps <1>3--<1>4,
+Using steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 |f(2i)|
 \le
@@ -209,7 +209,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The bound
 $$
@@ -224,11 +224,11 @@ Take
 $$
 f=\phi.
 $$
-By step <1>1, this function maps the upper half-plane into the unit disk and satisfies
+By step [](#s1-1){.pf-ref}, this function maps the upper half-plane into the unit disk and satisfies
 $$
 f(i)=0.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 |f(2i)|
 =
@@ -239,7 +239,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the largest possible value is
 $$
@@ -249,7 +249,7 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives the universal upper bound and step <1>6 shows it is sharp.
+Step [](#s1-5){.pf-ref} gives the universal upper bound and step [](#s1-6){.pf-ref} shows it is sharp.
 
 :::
 
@@ -257,7 +257,7 @@ Step <1>5 gives the universal upper bound and step <1>6 shows it is sharp.
 
 ::: pf-qed
 
-Step <1>7 is the required extremal value.
+Step [](#s1-7){.pf-ref} is the required extremal value.
 
 :::
 

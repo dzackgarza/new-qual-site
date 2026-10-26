@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative $f'(z)$ is nonzero for every $z\in D_r$.
 
@@ -54,7 +54,7 @@ near $z_0$. The local mapping theorem then implies that nearby values of $f$ hav
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The area $S$ of $f(D_r)$ satisfies
 $$
@@ -90,7 +90,7 @@ u_x^2+u_y^2
 =
 \abs{f'(z)}^2.
 $$
-By step <1>1 and the inverse function theorem, $f$ is locally a $C^1$ diffeomorphism; by the assumed global injectivity on $D_r$, the change-of-variables formula has multiplicity one. Therefore
+By step [](#s1-1){.pf-ref} and the inverse function theorem, $f$ is locally a $C^1$ diffeomorphism; by the assumed global injectivity on $D_r$, the change-of-variables formula has multiplicity one. Therefore
 $$
 \operatorname{area}(f(D_r))
 =
@@ -103,7 +103,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $0\le\rho\le r$,
 $$
@@ -146,7 +146,7 @@ The uniform convergence $P_N\to f'$ on $\abs{z}\le r$ implies uniform convergenc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The area of $f(D_r)$ is
 $$
@@ -161,7 +161,7 @@ $$
 
 ::: pf-proof
 
-Using polar coordinates in step <1>2 and then step <1>3,
+Using polar coordinates in step [](#s1-2){.pf-ref} and then step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 S
@@ -202,7 +202,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The area is finite for every $r<1$.
 
@@ -213,7 +213,7 @@ Since $f'$ is continuous on the compact closed disk $\abs{z}\le r$, it is bounde
 $$
 \int_{D_r}\abs{f'(z)}^2\,dA<\infty.
 $$
-By step <1>2, this integral is exactly the area $S$.
+By step [](#s1-2){.pf-ref}, this integral is exactly the area $S$.
 
 :::
 
@@ -221,7 +221,7 @@ By step <1>2, this integral is exactly the area $S$.
 
 ::: pf-qed
 
-Step <1>4 gives the stated formula, and step <1>5 gives finiteness.
+Step [](#s1-4){.pf-ref} gives the stated formula, and step [](#s1-5){.pf-ref} gives finiteness.
 
 :::
 

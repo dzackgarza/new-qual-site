@@ -27,7 +27,7 @@ Prove your answers, quoting any general theorems you need.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial factors as
 \[
@@ -67,13 +67,13 @@ Over $\mathbb C$, the similarity class of $A$ is determined by the sizes of the 
 ::: pf-proof
 
 The Jordan canonical form theorem states that every complex matrix is similar to a direct sum of Jordan blocks, and two Jordan forms are similar exactly when, for each eigenvalue, they have the same multiset of block sizes.
-By step <1>1, the only eigenvalues are $1$ and $2$, each with algebraic multiplicity $2$.
+By step [](#s1-1){.pf-ref}, the only eigenvalues are $1$ and $2$, each with algebraic multiplicity $2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For an eigenvalue of algebraic multiplicity $2$, there are exactly two possible Jordan-block patterns:
 \[
@@ -97,7 +97,7 @@ The integer $2$ has exactly the two partitions
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence there are exactly
 \[
@@ -108,7 +108,7 @@ similarity classes with the prescribed characteristic polynomial.
 
 ::: pf-proof
 
-For eigenvalue $1$, choose independently one of the two block patterns from step <1>3.
+For eigenvalue $1$, choose independently one of the two block patterns from step [](#s1-3){.pf-ref}.
 For eigenvalue $2$, choose independently one of the two block patterns.
 Thus there are
 \[
@@ -135,7 +135,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For a Jordan form, the exponent of
 \[
@@ -168,7 +168,7 @@ Taking the product over distinct eigenvalues gives the stated rule for the minim
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The condition
 \[
@@ -180,7 +180,7 @@ forces a size-$2$ Jordan block for eigenvalue $1$ and a size-$2$ Jordan block fo
 
 ::: pf-proof
 
-By step <1>5, the exponent $2$ of $(X-1)$ in the minimal polynomial means that the largest Jordan block for eigenvalue $1$ has size $2$.
+By step [](#s1-5){.pf-ref}, the exponent $2$ of $(X-1)$ in the minimal polynomial means that the largest Jordan block for eigenvalue $1$ has size $2$.
 Since the total algebraic multiplicity at $1$ is also $2$, the only possible block pattern is the single block
 \[
 J_2(1).
@@ -191,7 +191,7 @@ The same argument applies to eigenvalue $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore exactly
 \[
@@ -205,7 +205,7 @@ M_A=C_A.
 
 ::: pf-proof
 
-Step <1>6 uniquely determines the Jordan form:
+Step [](#s1-6){.pf-ref} uniquely determines the Jordan form:
 \[
 \boxed{
 J_2(1)\oplus J_2(2)
@@ -219,7 +219,7 @@ Hence there is exactly one similarity class.
 
 ::: pf-qed
 
-Step <1>4 gives the number of classes with the prescribed characteristic polynomial, and step <1>7 gives the number satisfying the additional minimal-polynomial condition.
+Step [](#s1-4){.pf-ref} gives the number of classes with the prescribed characteristic polynomial, and step [](#s1-7){.pf-ref} gives the number satisfying the additional minimal-polynomial condition.
 
 :::
 

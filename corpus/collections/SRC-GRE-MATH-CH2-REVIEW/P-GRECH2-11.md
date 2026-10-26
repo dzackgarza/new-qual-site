@@ -39,7 +39,7 @@ as $u\to0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The numerator satisfies
 $$
@@ -69,7 +69,7 @@ Since $r(u)=o(u)$, both $r(3h^2)$ and $r(-h^2)$ are $o(h^2)$, proving the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The limit is
 $$
@@ -80,7 +80,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Divide the relation in step <1>1 by $2h^2$ for $h\ne0$:
+Divide the relation in step [](#s1-1){.pf-ref} by $2h^2$ for $h\ne0$:
 $$
 \frac{f(x+3h^2)-f(x-h^2)}{2h^2}
 =2f'(x)+o(1).
@@ -93,7 +93,7 @@ Taking $h\to0$ gives the displayed limit.
 
 ::: pf-qed
 
-Step <1>2 gives the requested value using only the stated differentiability hypothesis.
+Step [](#s1-2){.pf-ref} gives the requested value using only the stated differentiability hypothesis.
 
 :::
 

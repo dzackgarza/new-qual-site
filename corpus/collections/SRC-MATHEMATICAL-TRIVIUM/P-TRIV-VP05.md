@@ -21,7 +21,7 @@ Find an extremum of the functional $J [ f ] = \int _ { 0 } ^ { 1 } d x ( 3 6 0 x
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a functional depending on $f''$, the Euler--Lagrange equation is
 $$
@@ -45,7 +45,7 @@ $L(x,f,f',f'')$ when both $f$ and $f'$ are fixed at the endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Here
 $$
@@ -69,13 +69,13 @@ $$
 \qquad
 \frac{\partial L}{\partial f''}=-2f''.
 $$
-Substitute into step <1>1.
+Substitute into step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -85,13 +85,13 @@ $$
 
 ::: pf-proof
 
-Rearrange step <1>2.
+Rearrange step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Integrating four times gives
 $$
@@ -127,7 +127,7 @@ and then the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The conditions at $x=0$ give
 $$
@@ -139,13 +139,13 @@ $$
 
 ::: pf-proof
 
-Substitute $x=0$ into the formulas for $f$ and $f'$ from step <1>4.
+Substitute $x=0$ into the formulas for $f$ and $f'$ from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The condition $f(1)=0$ gives
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>5,
+Using step [](#s1-5){.pf-ref},
 $$
 0
 =
@@ -172,7 +172,7 @@ Multiply by $6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The condition $f'(1)=5/2$ gives
 $$
@@ -199,9 +199,9 @@ Multiply the resulting equation by $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Solving steps <1>6--<1>7 gives
+Solving steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} gives
 $$
 C_1=9,
 \qquad
@@ -221,7 +221,7 @@ then substitute back to obtain $C_1=9$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence the unique stationary function is
 $$
@@ -241,13 +241,13 @@ $$
 
 ::: pf-proof
 
-Substitute the constants from steps <1>5 and <1>8 into step <1>4.
+Substitute the constants from steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref} into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Let
 $$
@@ -288,7 +288,7 @@ $$
 -
 2\int_0^1f_*^{(4)}\eta\,dx.
 $$
-The boundary terms vanish by the conditions on $\eta$, and step <1>3 gives
+The boundary terms vanish by the conditions on $\eta$, and step [](#s1-3){.pf-ref} gives
 $$
 360x^2-2f_*^{(4)}=0.
 $$
@@ -301,7 +301,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Every nonzero admissible variation satisfies
 $$
@@ -317,26 +317,26 @@ $$
 $$
 then $\eta''=0$, so $\eta$ is affine. The four homogeneous endpoint
 conditions force $\eta\equiv0$. Thus every nonzero admissible variation has
-strictly positive $\int(\eta'')^2$, and step <1>10 is strictly negative.
+strictly positive $\int(\eta'')^2$, and step [](#s1-10){.pf-ref} is strictly negative.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore $f_*$ is the unique strict maximizer of $J$.
 
 
 ::: pf-proof
 
-Step <1>11 shows every other admissible function has smaller functional value.
+Step [](#s1-11){.pf-ref} shows every other admissible function has smaller functional value.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Its value is
 $$
@@ -346,7 +346,7 @@ $$
 
 ::: pf-proof
 
-For the function in step <1>9,
+For the function in step [](#s1-9){.pf-ref},
 $$
 360x^2f_*-(f_*'')^2
 =
@@ -377,7 +377,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>9, <1>12, and <1>13 give the extremizing function, its type, and
+Steps [](#s1-9){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-13){.pf-ref} give the extremizing function, its type, and
 its value.
 
 :::

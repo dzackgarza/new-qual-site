@@ -60,7 +60,7 @@ Exactly the first two have positive imaginary part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Their residue sum is
 \[
@@ -101,7 +101,7 @@ e^{-3i\pi/4}+e^{-i\pi/4}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $C_R$ be the upper semicircle $|z|=R$. Then
 \[
@@ -137,7 +137,7 @@ The arc length of $C_R$ is $\pi R$, so the ML estimate gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -150,7 +150,7 @@ One has
 ::: pf-proof
 
 Integrate $F$ around the positively oriented contour consisting of
-$[-R,R]$ and $C_R$. For $R>1$, the residue theorem and step <1>2 give
+$[-R,R]$ and $C_R$. For $R>1$, the residue theorem and step [](#s1-2){.pf-ref} give
 \[
 \int_{-R}^R\frac{dx}{1+x^4}
 +\int_{C_R}F(z)\,dz
@@ -160,7 +160,7 @@ $[-R,R]$ and $C_R$. For $R>1$, the residue theorem and step <1>2 give
 =
 \frac{\pi}{\sqrt2}.
 \]
-Letting $R\to\infty$ and using step <1>3 gives the result.
+Letting $R\to\infty$ and using step [](#s1-3){.pf-ref} gives the result.
 
 :::
 
@@ -168,7 +168,7 @@ Letting $R\to\infty$ and using step <1>3 gives the result.
 
 ::: pf-qed
 
-Step <1>4 is the requested value.
+Step [](#s1-4){.pf-ref} is the requested value.
 
 :::
 

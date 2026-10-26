@@ -31,7 +31,7 @@ Explain.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A finite extension is Galois precisely when it is normal and separable.
 
@@ -44,7 +44,7 @@ A finite extension $E/F$ is Galois if it is both normal and separable over $F$; 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The splitting field $E$ of $x^4-2$ has degree eight over $\mathbb Q$ and Galois group isomorphic to the dihedral group $D_8$.
 
@@ -85,7 +85,7 @@ the dihedral group of order $8$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The intermediate field $K=\mathbb Q(\alpha)$ is not Galois over $\mathbb Q$.
 
@@ -104,7 +104,7 @@ This is an intermediate field of degree $4$, but it is not normal over $\mathbb 
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} prove parts (a), (b), and (c), respectively.
 
 :::
 

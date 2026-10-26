@@ -30,7 +30,7 @@ F(z)=\frac{1+z}{1-z}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map \(F\) sends \(\mathbb D\) into \(H\).
 
@@ -51,7 +51,7 @@ Thus \(F(z)\in H\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The inverse formula
 \[
@@ -76,7 +76,7 @@ Also \(w+1\ne0\) in \(H\), so the formula is well defined there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 \[
@@ -87,7 +87,7 @@ is a bijective conformal map from the bounded region \(\mathbb D\) onto the unbo
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show that the displayed formulas for \(F\) and \(F^{-1}\) map between \(\mathbb D\) and \(H\), and direct substitution shows they are mutual inverses. Moreover,
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that the displayed formulas for \(F\) and \(F^{-1}\) map between \(\mathbb D\) and \(H\), and direct substitution shows they are mutual inverses. Moreover,
 \[
 F'(z)=\frac{2}{(1-z)^2}\ne0
 \]
@@ -99,7 +99,7 @@ on \(\mathbb D\), so \(F\) is conformal. The unit disc is bounded, whereas the r
 
 ::: pf-qed
 
-Step <1>3 supplies the requested example.
+Step [](#s1-3){.pf-ref} supplies the requested example.
 
 :::
 

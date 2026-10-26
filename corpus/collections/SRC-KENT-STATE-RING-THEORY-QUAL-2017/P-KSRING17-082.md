@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the field
 $$
@@ -89,7 +89,7 @@ Thus $f$ is reducible over $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Neither root $\alpha$ nor $\beta$ belongs to
 $$
@@ -155,7 +155,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If a monic quadratic polynomial over an integral domain $A$ is reducible in $A[x]$, then it has a root in $A$.
 
@@ -217,7 +217,7 @@ is a root of $g$ in $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The polynomial
 $$
@@ -240,21 +240,21 @@ were reducible in
 $$
 D[x],
 $$
-step <1>3 would imply that it has a root in $D$.
+step [](#s1-3){.pf-ref} would imply that it has a root in $D$.
 Its only roots in the fraction field are
 $$
 \alpha
 \qquad\text{and}\qquad
 \beta,
 $$
-and step <1>2 shows that neither lies in $D$.
+and step [](#s1-2){.pf-ref} shows that neither lies in $D$.
 Therefore $f$ is irreducible in $D[x]$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus
 $$
@@ -268,13 +268,13 @@ $$
 
 ::: pf-proof
 
-Irreducibility over $D$ is step <1>4, while reducibility over $F$ is step <1>1.
+Irreducibility over $D$ is step [](#s1-4){.pf-ref}, while reducibility over $F$ is step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The element
 $$
@@ -287,7 +287,7 @@ is integral over $D$ but does not lie in $D$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 f(\alpha)=0,
 $$
@@ -300,7 +300,7 @@ $$
 \ZZ\subseteq D.
 $$
 Hence $\alpha$ is integral over $D$.
-Step <1>2 shows
+Step [](#s1-2){.pf-ref} shows
 $$
 \alpha\notin D.
 $$
@@ -309,7 +309,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every UFD is integrally closed in its field of fractions.
 
@@ -394,20 +394,20 @@ Hence $A$ is integrally closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The ring $D$ is not a UFD.
 
 
 ::: pf-proof
 
-By step <1>6, there is an element of
+By step [](#s1-6){.pf-ref}, there is an element of
 $$
 \operatorname{Frac}(D)=F
 $$
 that is integral over $D$ but does not lie in $D$.
 Thus $D$ is not integrally closed.
-By step <1>7, every UFD is integrally closed.
+By step [](#s1-7){.pf-ref}, every UFD is integrally closed.
 Therefore
 $$
 \boxed{
@@ -421,7 +421,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>8 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
 
 :::
 

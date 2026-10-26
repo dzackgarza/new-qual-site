@@ -28,7 +28,7 @@ and let $\nu$ be its normal bundle.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The normal bundle has rank
 \[
@@ -102,7 +102,7 @@ Since $x^5=0$, all terms involving $x^6$ or higher vanish.
 
 ::: pf-step
 
-From the stable trivialization in step <1>1,
+From the stable trivialization in step [](#s1-1){.pf-ref},
 \[
 p(\nu)=p(T\mathbb{CP}^4)^{-1}.
 \]
@@ -120,7 +120,7 @@ Thus the normal total Pontryagin class is the multiplicative inverse.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Through degree $8$,
 \[
@@ -149,13 +149,13 @@ B=25-10=15.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The decisive obstruction is $p_2(\nu)$: because $\operatorname{rank}\nu\leq3$,
 \[
 p_2(\nu)=0,
 \]
-but step <1>5 gives
+but step [](#s1-5){.pf-ref} gives
 \[
 p_2(\nu)=15x^4\ne0.
 \]
@@ -163,7 +163,7 @@ p_2(\nu)=15x^4\ne0.
 
 ::: pf-proof
 
-For a real rank-$r$ bundle, $p_i$ vanishes for $2i>r$ because after applying the splitting principle there are only $\lfloor r/2\rfloor$ Pontryagin roots; equivalently $p_i=(-1)^ic_{2i}(E\otimes\mathbb C)$ and the special real structure forces $p_i=0$ for $i>\lfloor r/2\rfloor$. In particular a rank-$3$ bundle has no $p_2$. On the other hand, step <1>5 identifies $p_2(\nu)$ with $15x^4$, and
+For a real rank-$r$ bundle, $p_i$ vanishes for $2i>r$ because after applying the splitting principle there are only $\lfloor r/2\rfloor$ Pontryagin roots; equivalently $p_i=(-1)^ic_{2i}(E\otimes\mathbb C)$ and the special real structure forces $p_i=0$ for $i>\lfloor r/2\rfloor$. In particular a rank-$3$ bundle has no $p_2$. On the other hand, step [](#s1-5){.pf-ref} identifies $p_2(\nu)$ with $15x^4$, and
 \[
 x^4\ne0\in H^8(\mathbb{CP}^4;\mathbb Z).
 \]
@@ -173,7 +173,7 @@ This is the required contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -185,7 +185,7 @@ Therefore
 
 ::: pf-proof
 
-Any such embedding would produce the rank-$\leq3$ normal bundle of step <1>1, contradicting step <1>6.
+Any such embedding would produce the rank-$\leq3$ normal bundle of step [](#s1-1){.pf-ref}, contradicting step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -193,7 +193,7 @@ Any such embedding would produce the rank-$\leq3$ normal bundle of step <1>1, co
 
 ::: pf-qed
 
-Step <1>7 is the desired nonembedding statement.
+Step [](#s1-7){.pf-ref} is the desired nonembedding statement.
 
 :::
 

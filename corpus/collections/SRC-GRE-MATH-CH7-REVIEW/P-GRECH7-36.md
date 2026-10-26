@@ -33,7 +33,7 @@ Interpreting the displayed contour integral in the standard form $h(a)=\int_C f(
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The point $a=3$ lies inside $C$, and $f$ is holomorphic on and inside $C$.
 
@@ -46,7 +46,7 @@ The contour is the circle $|z|=5$, so $|3|<5$. The function $f$ is a polynomial,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Cauchy integral formula gives
 $$
@@ -56,7 +56,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, all hypotheses of the Cauchy integral formula apply to the positively oriented contour $C$. Therefore
+By step [](#s1-1){.pf-ref}, all hypotheses of the Cauchy integral formula apply to the positively oriented contour $C$. Therefore
 $$
 \frac{1}{2\pi i}\int_C\frac{f(z)}{z-3}\,dz=f(3),
 $$
@@ -66,7 +66,7 @@ which is equivalent to the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -96,7 +96,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2:
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}:
 $$
 h(3)=2\pi i\cdot26=52\pi i.
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

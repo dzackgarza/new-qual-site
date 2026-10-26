@@ -40,7 +40,7 @@ at least one first partial derivative of $f$ at the origin is nonzero.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 After permuting the coordinates if necessary, assume
 \[
@@ -67,7 +67,7 @@ Relabel the coordinate axes so that it is the first.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -97,7 +97,7 @@ Therefore $\Phi$ is $C^1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The derivative matrix of $\Phi$ at the origin is
 \[
@@ -123,7 +123,7 @@ with respect to the variables $x,y,z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The determinant of $D\Phi(0)$ is
 \[
@@ -136,18 +136,18 @@ f_x(0,0,0)
 
 ::: pf-proof
 
-The matrix in step <1>3 is upper triangular.
+The matrix in step [](#s1-3){.pf-ref} is upper triangular.
 Its determinant is the product of its diagonal entries:
 \[
 f_x(0,0,0)\cdot1\cdot1.
 \]
-This is nonzero by step <1>1.
+This is nonzero by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists an open neighborhood
 \[
@@ -166,7 +166,7 @@ The inverse function theorem applies to the $C^1$ map $\Phi$ because
 \[
 \det D\Phi(0)\ne0
 \]
-by step <1>4.
+by step [](#s1-4){.pf-ref}.
 Hence there exist open neighborhoods
 \[
 U
@@ -190,7 +190,7 @@ In particular, it is one-to-one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the functions
 \[
@@ -201,8 +201,8 @@ have the required property.
 
 ::: pf-proof
 
-For these choices, the map in the problem is exactly $\Phi$ from step <1>2.
-Step <1>5 proves that it is one-to-one on some neighborhood of the origin.
+For these choices, the map in the problem is exactly $\Phi$ from step [](#s1-2){.pf-ref}.
+Step [](#s1-5){.pf-ref} proves that it is one-to-one on some neighborhood of the origin.
 
 :::
 
@@ -210,7 +210,7 @@ Step <1>5 proves that it is one-to-one on some neighborhood of the origin.
 
 ::: pf-qed
 
-Step <1>6 is the required construction.
+Step [](#s1-6){.pf-ref} is the required construction.
 
 :::
 

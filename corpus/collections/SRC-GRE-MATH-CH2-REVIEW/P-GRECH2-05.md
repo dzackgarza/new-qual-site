@@ -33,7 +33,7 @@ has two asymptotes. Identify these lines.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Away from $x=-1/2$, the curve is the graph of
 $$
@@ -58,27 +58,27 @@ where the last equality is polynomial division.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vertical asymptote is $x=-1/2$.
 
 
 ::: pf-proof
 
-In the expression from step <1>1, the denominator $2x+1$ tends to $0$ as $x\to-1/2$, while the numerator of the fractional term is the nonzero constant $-7$. Hence the fractional term is unbounded, so $x=-1/2$ is a vertical asymptote.
+In the expression from step [](#s1-1){.pf-ref}, the denominator $2x+1$ tends to $0$ as $x\to-1/2$, while the numerator of the fractional term is the nonzero constant $-7$. Hence the fractional term is unbounded, so $x=-1/2$ is a vertical asymptote.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The oblique asymptote is $y=x+1$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 y-(x+1)=-\frac7{2x+1}\longrightarrow0
 $$
@@ -88,7 +88,7 @@ as $x\to\pm\infty$. Thus the graph approaches the line $y=x+1$ at infinity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The two asymptotes are
 $$
@@ -99,7 +99,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
@@ -107,7 +107,7 @@ Combine steps <1>2 and <1>3.
 
 ::: pf-qed
 
-Step <1>4 identifies both requested lines and the corresponding choice.
+Step [](#s1-4){.pf-ref} identifies both requested lines and the corresponding choice.
 
 :::
 

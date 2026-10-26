@@ -32,7 +32,7 @@ Put \(u(z)=\log|f(z)|\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(f\) is nonconstant, then there is \(z_0\in\mathbb C\) such that
 \[
@@ -48,7 +48,7 @@ If \(|f(z)|\le e\) for every \(z\in\mathbb C\), then Liouville's theorem would m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(r>0\),
 \[
@@ -63,13 +63,13 @@ For an entire function, \(\log|f|\) is subharmonic, with the value \(-\infty\) a
 u(z_0)
 \le\frac1{2\pi}\int_0^{2\pi}u(z_0+re^{i\theta})\,d\theta.
 \]
-Step <1>1 now yields the asserted strict lower bound.
+Step [](#s1-1){.pf-ref} now yields the asserted strict lower bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If \(f\) were nonconstant, then
 \[
@@ -79,7 +79,7 @@ If \(f\) were nonconstant, then
 
 ::: pf-proof
 
-By step <1>2 and the triangle inequality,
+By step [](#s1-2){.pf-ref} and the triangle inequality,
 \[
 \int_0^{2\pi}|u(z_0+re^{i\theta})|\,d\theta
 \ge
@@ -100,14 +100,14 @@ for every \(r>0\). Tonelli's theorem in polar coordinates centered at \(z_0\) th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence \(\boxed{f\text{ is constant}}\).
 
 
 ::: pf-proof
 
-Step <1>3 contradicts the assumed absolute integrability of \(U=u\) whenever \(f\) is nonconstant. Therefore \(f\) must be constant.
+Step [](#s1-3){.pf-ref} contradicts the assumed absolute integrability of \(U=u\) whenever \(f\) is nonconstant. Therefore \(f\) must be constant.
 
 :::
 
@@ -115,7 +115,7 @@ Step <1>3 contradicts the assumed absolute integrability of \(U=u\) whenever \(f
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

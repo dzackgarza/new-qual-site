@@ -22,7 +22,7 @@ Evaluate $\int_0^{2\pi} e^{e^{it}}\,dt$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the substitution
 \[
@@ -45,7 +45,7 @@ $2\pi$, the point $z$ traverses the unit circle once counterclockwise.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -58,13 +58,13 @@ Therefore
 
 ::: pf-proof
 
-Substitute $z=e^{it}$ and the differential relation from step <1>1.
+Substitute $z=e^{it}$ and the differential relation from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The contour integral satisfies
 \[
@@ -89,7 +89,7 @@ The residue theorem gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -99,7 +99,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3:
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}:
 \[
 \frac1i(2\pi i)=2\pi.
 \]
@@ -110,7 +110,7 @@ Combine steps <1>2 and <1>3:
 
 ::: pf-qed
 
-Step <1>4 is the requested value.
+Step [](#s1-4){.pf-ref} is the requested value.
 
 :::
 

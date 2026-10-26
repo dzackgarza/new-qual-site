@@ -38,7 +38,7 @@ recorded in the remark on the card. Its degree is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -59,7 +59,7 @@ whose coordinates are all nonnegative, and the normalizing denominator is positi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 \[
@@ -72,13 +72,13 @@ f(S^3)
 
 ::: pf-proof
 
-This is exactly step <1>1 written as a statement about the image.
+This is exactly step [](#s1-1){.pf-ref} written as a statement about the image.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In particular,
 \[
@@ -89,13 +89,13 @@ In particular,
 
 ::: pf-proof
 
-The first coordinate of every image point is nonnegative by step <1>2.
+The first coordinate of every image point is nonnegative by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore \(f\) factors through
 \[
@@ -105,13 +105,13 @@ S^3\setminus\{(-1,0,0,0)\}.
 
 ::: pf-proof
 
-Step <1>3 says the image avoids that point.
+Step [](#s1-3){.pf-ref} says the image avoids that point.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The punctured sphere
 \[
@@ -144,13 +144,13 @@ S^3\to S^3.
 
 ::: pf-proof
 
-By step <1>4, \(f\) factors through the contractible space in step <1>5. Any map factoring through a contractible space is null-homotopic.
+By step [](#s1-4){.pf-ref}, \(f\) factors through the contractible space in step [](#s1-5){.pf-ref}. Any map factoring through a contractible space is null-homotopic.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A null-homotopic self-map of \(S^3\) induces the zero homomorphism on
 \[
@@ -166,7 +166,7 @@ Homotopic maps induce the same map on homology. A null-homotopic map is homotopi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -180,7 +180,7 @@ By definition, the degree is the integer by which
 \[
 f_*:H_3(S^3;\mathbb Z)\to H_3(S^3;\mathbb Z)
 \]
-multiplies a fundamental class. Step <1>7 says this map is zero.
+multiplies a fundamental class. Step [](#s1-7){.pf-ref} says this map is zero.
 
 :::
 
@@ -188,7 +188,7 @@ multiplies a fundamental class. Step <1>7 says this map is zero.
 
 ::: pf-qed
 
-Step <1>8 is the requested degree for the self-map actually defined by the printed formula.
+Step [](#s1-8){.pf-ref} is the requested degree for the self-map actually defined by the printed formula.
 
 :::
 

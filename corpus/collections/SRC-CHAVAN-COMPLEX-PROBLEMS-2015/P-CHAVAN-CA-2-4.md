@@ -32,7 +32,7 @@ Conclude that every zero of $p$ lies in the open disk $|z|<R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $R=1$, then the zero set of $p$ is $\{0\}$.
 
@@ -53,7 +53,7 @@ so $p(z)=z^n$. Thus the only zero of $p$ is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $R>1$ and $|z|=R$. Then
 $$
@@ -88,9 +88,9 @@ because $\sum_{k=0}^{n-1}|a_k|^2=R^2-1$ and $|z|=R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the hypotheses of step <1>2,
+Under the hypotheses of step [](#s1-2){.pf-ref},
 $$
 |z^n-p(z)|<|z^n|.
 $$
@@ -106,7 +106,7 @@ Since $R>1$,
 $$
 R^{2n}-1<R^{2n}.
 $$
-Taking square roots in the estimate from step <1>2 yields
+Taking square roots in the estimate from step [](#s1-2){.pf-ref} yields
 $$
 |z^n-p(z)|
 \le\sqrt{R^{2n}-1}
@@ -118,15 +118,15 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every zero of $p$ lies in the open disk $|z|<R$.
 
 
 ::: pf-proof
 
-If $R=1$, this follows from step <1>1. Assume $R>1$. On the circle
-$|z|=R$, step <1>3 gives
+If $R=1$, this follows from step [](#s1-1){.pf-ref}. Assume $R>1$. On the circle
+$|z|=R$, step [](#s1-3){.pf-ref} gives
 $$
 |p(z)-z^n|<|z^n|.
 $$
@@ -142,8 +142,8 @@ zeros. Therefore every zero of $p$ lies in the open disk.
 
 ::: pf-qed
 
-Step <1>1 proves the case $R=1$, steps <1>2 and <1>3 establish the
-requested boundary estimate for $R>1$, and step <1>4 gives the final
+Step [](#s1-1){.pf-ref} proves the case $R=1$, steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} establish the
+requested boundary estimate for $R>1$, and step [](#s1-4){.pf-ref} gives the final
 zero-location conclusion.
 
 :::

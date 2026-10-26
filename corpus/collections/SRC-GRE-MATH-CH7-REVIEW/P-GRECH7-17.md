@@ -27,7 +27,7 @@ Which of the following is the solution set of the inequality $x + \frac{6}{x} > 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x\ne0$, the inequality is equivalent to
 $$
@@ -49,9 +49,9 @@ The original expression is undefined at $x=0$, so $x=0$ is excluded from the dom
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The expression in step <1>1 is positive exactly on
+The expression in step [](#s1-1){.pf-ref} is positive exactly on
 $$
 (0,2)\cup(3,\infty).
 $$
@@ -75,7 +75,7 @@ The inequality is strict, so the zeros $2$ and $3$ are excluded, as is the undef
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the solution set is
 $$
@@ -86,7 +86,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-This is exactly the positive-sign set found in step <1>2.
+This is exactly the positive-sign set found in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -94,7 +94,7 @@ This is exactly the positive-sign set found in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested solution set.
+Step [](#s1-3){.pf-ref} gives the requested solution set.
 
 :::
 

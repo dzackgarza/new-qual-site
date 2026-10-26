@@ -27,7 +27,7 @@ Which of the following is the negation of the sentence $(S \lor T)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The proposition $\neg(S\lor T)$ is true exactly when both $S$ and $T$ are false.
 
@@ -40,7 +40,7 @@ The disjunction $S\lor T$ is false exactly in the single case in which $S$ is fa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The proposition $\neg S\land\neg T$ is true exactly when both $S$ and $T$ are false.
 
@@ -53,7 +53,7 @@ A conjunction is true exactly when both conjuncts are true. Thus $\neg S\land\ne
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -64,7 +64,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show that the two propositions have identical truth values for every assignment of truth values to $S$ and $T$.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that the two propositions have identical truth values for every assignment of truth values to $S$ and $T$.
 
 :::
 
@@ -72,7 +72,7 @@ Steps <1>1 and <1>2 show that the two propositions have identical truth values f
 
 ::: pf-qed
 
-Step <1>3 gives the required negation.
+Step [](#s1-3){.pf-ref} gives the required negation.
 
 :::
 

@@ -23,7 +23,7 @@ Use the following three cardinal invariants.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define the weight, density, and cellularity of a topological space $X$ by
 $$
@@ -62,7 +62,7 @@ These are standard cardinal invariants: respectively the smallest size of a base
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every subspace
 $$
@@ -108,7 +108,7 @@ Closedness and metrizability are not needed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Density need not satisfy
 $$
@@ -213,7 +213,7 @@ Thus the closed-subspace inequality fails in general.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Cellularity likewise need not satisfy
 $$
@@ -268,7 +268,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $X$ is metrizable, then every subspace
 $$
@@ -377,7 +377,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $X$ is metrizable, then every subspace
 $$
@@ -505,7 +505,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For the three chosen invariants, the closed-subspace conclusions are:
 $$
@@ -541,7 +541,7 @@ $$
 
 ::: pf-proof
 
-The weight assertions are step <1>2; the general counterexamples for density and cellularity are steps <1>3--<1>4; the metrizable assertions are steps <1>5--<1>6.
+The weight assertions are step [](#s1-2){.pf-ref}; the general counterexamples for density and cellularity are steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}; the metrizable assertions are steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -549,7 +549,7 @@ The weight assertions are step <1>2; the general counterexamples for density and
 
 ::: pf-qed
 
-Steps <1>1--<1>7 define three standard cardinal invariants and completely determine the requested closed-subspace inequalities in the general and metrizable cases.
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} define three standard cardinal invariants and completely determine the requested closed-subspace inequalities in the general and metrizable cases.
 
 :::
 

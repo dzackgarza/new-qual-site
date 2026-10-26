@@ -69,7 +69,7 @@ The final function is integrable over $\RR$, so the integral converges absolutel
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $K\subset\CC$ be compact. There is an integrable function $g_K:\RR\to[0,\infty)$ such that
 $$
@@ -114,7 +114,7 @@ Hence $g_K$ is dominated outside a bounded interval by $e^{-\pi x^2/2}$ and is c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $F$ is entire.
 
@@ -138,7 +138,7 @@ e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
 $$
 Thus each $F_R$ is entire.
 
-Let $K\subset\CC$ be compact. By step <1>2,
+Let $K\subset\CC$ be compact. By step [](#s1-2){.pf-ref},
 $$
 \sup_{\xi\in K}
 \abs{F(\xi)-F_R(\xi)}
@@ -152,7 +152,7 @@ Hence $F_R\to F$ uniformly on every compact subset of $\CC$. By the Weierstrass 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function
 $$
@@ -182,7 +182,7 @@ for real $\xi$ is exactly the real-frequency identity that the problem permits u
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $\xi\in\CC$,
 $$
@@ -197,7 +197,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>3 and <1>4, the functions $F$ and $G$ are entire and agree on the real axis. The real axis has accumulation points in $\CC$, so the identity theorem implies
+By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the functions $F$ and $G$ are entire and agree on the real axis. The real axis has accumulation points in $\CC$, so the identity theorem implies
 $$
 F\equiv G
 $$
@@ -209,7 +209,7 @@ on $\CC$.
 
 ::: pf-qed
 
-Step <1>5 is the required identity for every complex frequency $\xi$.
+Step [](#s1-5){.pf-ref} is the required identity for every complex frequency $\xi$.
 
 :::
 

@@ -24,7 +24,7 @@ Problem 7. (a) Define what it means for $f:\mathbb R^n\to\mathbb R^m$ to be diff
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function
 \[
@@ -76,7 +76,7 @@ as $h\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiability of $f$ at $a$ implies
 \[
@@ -92,7 +92,7 @@ f(a+h)-f(a)
 =
 Ah+r(h)
 \]
-as in step <1>1.
+as in step [](#s1-1){.pf-ref}.
 Since $A$ is linear on a finite-dimensional normed space, it is bounded:
 \[
 \|Ah\|
@@ -116,7 +116,7 @@ Hence for sufficiently small $h$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Chain Rule: suppose
 \[
@@ -152,7 +152,7 @@ This is the statement to be proved in the following steps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Set
 \[
@@ -186,13 +186,13 @@ with
 
 ::: pf-proof
 
-This is the differentiability definition from step <1>1 applied first to $f$ at $a$ and then to $g$ at $b$.
+This is the differentiability definition from step [](#s1-1){.pf-ref} applied first to $f$ at $a$ and then to $g$ at $b$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -214,7 +214,7 @@ and
 
 ::: pf-proof
 
-The $O(\|h\|)$ estimate is step <1>2.
+The $O(\|h\|)$ estimate is step [](#s1-2){.pf-ref}.
 In particular,
 \[
 \|k(h)\|\to0,
@@ -228,7 +228,7 @@ k(h)\to0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -246,13 +246,13 @@ s(k(h)).
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 f(a+h)
 =
 b+k(h).
 \]
-Apply the expansion for $g$ from step <1>4:
+Apply the expansion for $g$ from step [](#s1-4){.pf-ref}:
 \[
 \begin{aligned}
 g(f(a+h))
@@ -278,7 +278,7 @@ subtracting yields the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The term
 \[
@@ -300,13 +300,13 @@ Boundedness of the linear map $B$ gives
 \|B\|
 \frac{\|r(h)\|}{\|h\|}.
 \]
-The final factor tends to $0$ by step <1>4.
+The final factor tends to $0$ by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The term
 \[
@@ -328,7 +328,7 @@ For $h$ such that $k(h)\ne0$,
 \frac{\|s(k(h))\|}{\|k(h)\|}
 \frac{\|k(h)\|}{\|h\|}.
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 k(h)\to0,
 \]
@@ -352,7 +352,7 @@ so the conclusion remains valid.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -367,19 +367,19 @@ Therefore
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 g(f(a+h))-g(f(a))-BAh
 =
 Br(h)+s(k(h)).
 \]
-Divide by $\|h\|$ and use the triangle inequality together with steps <1>7--<1>8.
+Divide by $\|h\|$ and use the triangle inequality together with steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -395,7 +395,7 @@ Dg(f(a))\,Df(a).
 
 ::: pf-proof
 
-Step <1>9 is exactly the differentiability criterion from step <1>1 with derivative
+Step [](#s1-9){.pf-ref} is exactly the differentiability criterion from step [](#s1-1){.pf-ref} with derivative
 \[
 BA.
 \]
@@ -407,7 +407,7 @@ Thus the chain rule follows.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and steps <1>3--<1>10 formulate and prove the chain rule requested in part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and steps [](#s1-3){.pf-ref} through [](#s1-10){.pf-ref} formulate and prove the chain rule requested in part (b).
 
 :::
 

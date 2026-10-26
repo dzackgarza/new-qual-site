@@ -22,7 +22,7 @@ Show that $V$ has an orthonormal basis consisting of vectors that are simultaneo
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the spectral theorem for real self-adjoint operators,
 \[
@@ -46,7 +46,7 @@ Grouping basis vectors with the same eigenvalue gives the orthogonal direct-sum 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every eigenspace $E_\lambda$ of $T$ is invariant under $S$.
 
@@ -80,7 +80,7 @@ Sv\in E_\lambda.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each eigenvalue $\lambda$ of $T$, the restriction
 \[
@@ -91,7 +91,7 @@ is self-adjoint.
 
 ::: pf-proof
 
-Step <1>2 shows that the restriction is well-defined.
+Step [](#s1-2){.pf-ref} shows that the restriction is well-defined.
 For
 \[
 u,v\in E_\lambda,
@@ -112,23 +112,23 @@ Thus $S_\lambda$ is self-adjoint on the inner-product space $E_\lambda$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Each $E_\lambda$ has an orthonormal basis consisting of eigenvectors of $S$.
 
 
 ::: pf-proof
 
-By step <1>3, $S_\lambda$ is self-adjoint on the finite-dimensional real inner-product space $E_\lambda$.
+By step [](#s1-3){.pf-ref}, $S_\lambda$ is self-adjoint on the finite-dimensional real inner-product space $E_\lambda$.
 The spectral theorem therefore gives an orthonormal basis of $E_\lambda$ consisting of eigenvectors of $S_\lambda$, hence of $S$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Every vector in the bases from step <1>4 is simultaneously an eigenvector of $T$ and $S$.
+Every vector in the bases from step [](#s1-4){.pf-ref} is simultaneously an eigenvector of $T$ and $S$.
 
 
 ::: pf-proof
@@ -138,21 +138,21 @@ Each such vector lies in
 E_\lambda,
 \]
 so it is an eigenvector of $T$ with eigenvalue $\lambda$.
-By construction in step <1>4, it is also an eigenvector of $S$.
+By construction in step [](#s1-4){.pf-ref}, it is also an eigenvector of $S$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The union over all $\lambda$ of the orthonormal bases from step <1>4 is an orthonormal basis of $V$.
+The union over all $\lambda$ of the orthonormal bases from step [](#s1-4){.pf-ref} is an orthonormal basis of $V$.
 
 
 ::: pf-proof
 
-By step <1>1, the eigenspaces $E_\lambda$ form an orthogonal direct sum whose sum is all of $V$.
-Within each eigenspace, step <1>4 supplies an orthonormal basis.
+By step [](#s1-1){.pf-ref}, the eigenspaces $E_\lambda$ form an orthogonal direct sum whose sum is all of $V$.
+Within each eigenspace, step [](#s1-4){.pf-ref} supplies an orthonormal basis.
 Because distinct eigenspaces are orthogonal, the union of these bases is orthonormal.
 Because their direct sum is $V$, the union spans $V$.
 
@@ -160,14 +160,14 @@ Because their direct sum is $V$, the union spans $V$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore $V$ has an orthonormal basis of simultaneous eigenvectors of $T$ and $S$.
 
 
 ::: pf-proof
 
-This is exactly the basis constructed in steps <1>4--<1>6.
+This is exactly the basis constructed in steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -175,7 +175,7 @@ This is exactly the basis constructed in steps <1>4--<1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

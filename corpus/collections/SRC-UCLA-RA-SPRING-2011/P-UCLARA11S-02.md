@@ -84,7 +84,7 @@ and by oddness of $\sin(\pi u)$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $x$ is a Lebesgue point of $f$, then
 \[
@@ -127,7 +127,7 @@ Hence the claimed limit follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $x$ is a Lebesgue point of $f$, then
 \[
@@ -139,7 +139,7 @@ If $x$ is a Lebesgue point of $f$, then
 
 ::: pf-proof
 
-Now $g_n$ is supported in $[-1/n,0]$. Exactly as in step <1>2,
+Now $g_n$ is supported in $[-1/n,0]$. Exactly as in step [](#s1-2){.pf-ref},
 \[
 \left|
 (f*g_n)(x)
@@ -156,7 +156,7 @@ which tends to $0$ at every Lebesgue point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f\in L^1_{\mathrm{loc}}(\mathbb R)$, so almost every point is a Lebesgue point of $f$.
 
@@ -175,7 +175,7 @@ for every bounded measurable set $E$. Thus $f\in L^1_{\mathrm{loc}}$, and the Le
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For almost every $x$,
 \[
@@ -197,14 +197,14 @@ f_n
 =
 f*h_n-f*g_n.
 \]
-At every Lebesgue point of $f$, steps <1>2 and <1>3 give
+At every Lebesgue point of $f$, steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give
 \[
 f_n(x)
 \longrightarrow
 \frac2\pi f(x)-\frac2\pi f(x)
 =0.
 \]
-Step <1>4 says this holds almost everywhere.
+Step [](#s1-4){.pf-ref} says this holds almost everywhere.
 
 :::
 
@@ -212,7 +212,7 @@ Step <1>4 says this holds almost everywhere.
 
 ::: pf-qed
 
-Step <1>5 is the desired almost-everywhere convergence.
+Step [](#s1-5){.pf-ref} is the desired almost-everywhere convergence.
 
 :::
 

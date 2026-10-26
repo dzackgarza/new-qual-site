@@ -61,7 +61,7 @@ Its entries are real, and it is the standard matrix for rotation through angle
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For any real angles $\alpha,\beta$,
 \[
@@ -89,7 +89,7 @@ Multiply the standard rotation matrices and use the angle-addition formulas
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrices
 \[
@@ -100,7 +100,7 @@ are pairwise commuting.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 R_jR_k
 =
@@ -113,7 +113,7 @@ R_kR_j.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The matrices
 \[
@@ -153,7 +153,7 @@ j=k.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every positive integer $m$,
 \[
@@ -165,13 +165,13 @@ R\left(\frac{2\pi km}{11}\right).
 
 ::: pf-proof
 
-Apply step <1>2 repeatedly.
+Apply step [](#s1-2){.pf-ref} repeatedly.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -185,7 +185,7 @@ k=1,\ldots,10.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 R_k^{11}
 =
@@ -198,7 +198,7 @@ I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -216,7 +216,7 @@ If
 \[
 R_k^m=I,
 \]
-then by step <1>5,
+then by step [](#s1-5){.pf-ref},
 \[
 \frac{2\pi km}{11}
 \]
@@ -246,7 +246,7 @@ contradicting
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore every $R_k$ has order exactly
 \[
@@ -256,13 +256,13 @@ Therefore every $R_k$ has order exactly
 
 ::: pf-proof
 
-Step <1>6 shows the order divides $11$, while step <1>7 shows no smaller positive exponent gives the identity.
+Step [](#s1-6){.pf-ref} shows the order divides $11$, while step [](#s1-7){.pf-ref} shows no smaller positive exponent gives the identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus
 \[
@@ -275,7 +275,7 @@ are ten distinct pairwise commuting real $2\times2$ matrices, all of the same fi
 
 ::: pf-proof
 
-Distinctness is step <1>4, pairwise commutativity is step <1>3, and common order $11$ is step <1>8.
+Distinctness is step [](#s1-4){.pf-ref}, pairwise commutativity is step [](#s1-3){.pf-ref}, and common order $11$ is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -283,7 +283,7 @@ Distinctness is step <1>4, pairwise commutativity is step <1>3, and common order
 
 ::: pf-qed
 
-Step <1>9 is the required construction.
+Step [](#s1-9){.pf-ref} is the required construction.
 
 :::
 

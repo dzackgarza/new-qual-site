@@ -74,7 +74,7 @@ The compact set \(K\) is bounded. Only finitely many squares of a fixed square g
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set \(V\) is open and bounded.
 
@@ -87,7 +87,7 @@ It is open by definition. The set \(W\) is a finite union of bounded squares, he
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -111,7 +111,7 @@ Thus every point of \(K\) is an interior point of \(W\), so \(K\subset V\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every point of \(W\) has distance \(<\delta\) from \(K\).
 
@@ -135,7 +135,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -149,13 +149,13 @@ If some \(z\in W\) lay in \(\mathbb C\setminus U\), then by definition of \(\del
 \[
 \operatorname{dist}(z,K)\ge\delta,
 \]
-contradicting step <1>5.
+contradicting step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since \(W\) is closed,
 \[
@@ -176,7 +176,7 @@ its closure is contained in \(W\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The boundary \(\partial V\) consists of finitely many closed line segments.
 
@@ -189,7 +189,7 @@ The set \(W\) is a finite union of grid squares. Every boundary point of \(V\) l
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus
 \[
@@ -201,13 +201,13 @@ with \(V\) bounded and \(\partial V\) polygonal.
 
 ::: pf-proof
 
-Combine steps <1>3--<1>8.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every \(z\in K\),
 \[
@@ -232,14 +232,14 @@ Thus \(f\) is holomorphic on a neighborhood of \(\overline V\). The Cauchy integ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The compact sets \(K\) and \(\partial V\) are disjoint.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 K\subset V,
 \]
@@ -252,7 +252,7 @@ while
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -289,7 +289,7 @@ K\times\partial V.
 
 ::: pf-proof
 
-The numerator is continuous because \(f\) is holomorphic on a neighborhood of \(\overline V\). By step <1>12,
+The numerator is continuous because \(f\) is holomorphic on a neighborhood of \(\overline V\). By step [](#s1-12){.pf-ref},
 \[
 |\zeta-z|\ge d>0
 \]
@@ -299,7 +299,7 @@ on the product, so the denominator never vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore \(G\) is uniformly continuous on
 \[
@@ -315,7 +315,7 @@ The product \(K\times\partial V\) is compact, and every continuous function on a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 For each \(\ell\), the family of functions
 \[
@@ -333,7 +333,7 @@ is uniformly equicontinuous in \(t\).
 
 ::: pf-proof
 
-This follows from uniform continuity of \(G\) on \(K\times\partial V\) from step <1>14. The derivative \(\gamma_\ell'\) is constant on each segment.
+This follows from uniform continuity of \(G\) on \(K\times\partial V\) from step [](#s1-14){.pf-ref}. The derivative \(\gamma_\ell'\) is constant on each segment.
 
 :::
 
@@ -356,7 +356,7 @@ with constants \(a,c\in\mathbb C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Every pole of \(R_N\) lies on \(\partial V\).
 
@@ -372,31 +372,31 @@ a=\gamma_\ell(t_{\ell,j}^{(N)})\in\partial V.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Hence no \(R_N\) has a pole in \(K\).
 
 
 ::: pf-proof
 
-By step <1>11,
+By step [](#s1-11){.pf-ref},
 \[
 K\cap\partial V=\varnothing.
 \]
-Combine with step <1>17.
+Combine with step [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 The Riemann sums defining \(R_N(z)\) converge uniformly in \(z\in K\) to the boundary integrals.
 
 
 ::: pf-proof
 
-Fix \(\varepsilon>0\). By uniform equicontinuity from step <1>15, choose \(N\) so large that on each subinterval the oscillation of every integrand, uniformly over \(z\in K\), is less than
+Fix \(\varepsilon>0\). By uniform equicontinuity from step [](#s1-15){.pf-ref}, choose \(N\) so large that on each subinterval the oscillation of every integrand, uniformly over \(z\in K\), is less than
 \[
 \frac{2\pi\varepsilon}{\sum_{\ell=1}^{L}|\gamma_\ell'|+1}.
 \]
@@ -406,7 +406,7 @@ The standard Riemann-sum estimate on each segment then bounds the difference bet
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore
 \[
@@ -418,13 +418,13 @@ R_N\to f
 
 ::: pf-proof
 
-Use the Cauchy representation in step <1>10 and the uniform Riemann-sum convergence in step <1>19.
+Use the Cauchy representation in step [](#s1-10){.pf-ref} and the uniform Riemann-sum convergence in step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Thus there exists a sequence of rational functions \((R_N)\) such that
 \[
@@ -440,7 +440,7 @@ R_N\text{ has no pole in }K}.
 
 ::: pf-proof
 
-Uniform approximation is step <1>20, and the pole statement is step <1>18.
+Uniform approximation is step [](#s1-20){.pf-ref}, and the pole statement is step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -448,7 +448,7 @@ Uniform approximation is step <1>20, and the pole statement is step <1>18.
 
 ::: pf-qed
 
-Step <1>9 proves part (a), and step <1>21 proves part (b).
+Step [](#s1-9){.pf-ref} proves part (a), and step [](#s1-21){.pf-ref} proves part (b).
 
 :::
 

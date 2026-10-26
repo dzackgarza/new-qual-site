@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -63,7 +63,7 @@ displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $|u|<1$,
 $$
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -111,13 +111,13 @@ Substitute
 $$
 u=\frac{w}{3-i}
 $$
-into step <1>2 and use step <1>1.
+into step [](#s1-2){.pf-ref} and use step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series converges when
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: pf-proof
 
-The binomial series in step <1>2 requires
+The binomial series in step [](#s1-2){.pf-ref} requires
 $$
 \left|
 \frac{z-i}{3-i}
@@ -152,7 +152,7 @@ this is exactly the stated disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The radius $\sqrt{10}$ is maximal.
 
@@ -171,7 +171,7 @@ singularity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus the Laurent series about $i$ has region of convergence
 $$
@@ -182,7 +182,7 @@ $$
 ::: pf-proof
 
 The center $z=i$ is not singular, so the Laurent series has no negative-power
-terms and is an ordinary Taylor series. Steps <1>4--<1>5 give its exact disk
+terms and is an ordinary Taylor series. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give its exact disk
 of convergence.
 
 :::
@@ -191,7 +191,7 @@ of convergence.
 
 ::: pf-qed
 
-Steps <1>3 and <1>6 give the requested series and its region of convergence.
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give the requested series and its region of convergence.
 
 :::
 

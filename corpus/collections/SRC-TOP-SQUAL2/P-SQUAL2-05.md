@@ -114,7 +114,7 @@ S^1\vee S^1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, in the parallel case,
 \[
@@ -240,7 +240,7 @@ z
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The line \(L_1\) is fixed by \(\Phi\).
 
@@ -260,7 +260,7 @@ Since \(\theta(0)=0\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The line \(L_2\) is sent to
 \[
@@ -290,20 +290,20 @@ Since
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence the complement of a skew pair of lines is diffeomorphic to the complement of a parallel pair.
 
 
 ::: pf-proof
 
-The diffeomorphism \(\Phi\) carries the union \(L_1\cup L_2\) to two parallel lines by steps <1>10--<1>11, and therefore restricts to a diffeomorphism of complements.
+The diffeomorphism \(\Phi\) carries the union \(L_1\cup L_2\) to two parallel lines by steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}, and therefore restricts to a diffeomorphism of complements.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore, in the skew case as well,
 \[
@@ -314,13 +314,13 @@ Therefore, in the skew case as well,
 
 ::: pf-proof
 
-Apply step <1>12 and the parallel-case computation from step <1>5.
+Apply step [](#s1-12){.pf-ref} and the parallel-case computation from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Thus for any two disjoint lines in \(\mathbb R^3\),
 \[
@@ -335,7 +335,7 @@ F_2}.
 
 ::: pf-proof
 
-Two disjoint affine lines are either parallel or skew. Steps <1>5 and <1>13 give the same answer in both cases.
+Two disjoint affine lines are either parallel or skew. Steps [](#s1-5){.pf-ref} and [](#s1-13){.pf-ref} give the same answer in both cases.
 
 :::
 
@@ -343,7 +343,7 @@ Two disjoint affine lines are either parallel or skew. Steps <1>5 and <1>13 give
 
 ::: pf-qed
 
-Step <1>14 is the required computation.
+Step [](#s1-14){.pf-ref} is the required computation.
 
 :::
 

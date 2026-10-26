@@ -19,7 +19,7 @@ Treat first the ring $\mathcal O_0$ of convergent complex power-series germs at 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every nonzero element of $\mathcal O_0$ has a unique factorization
 $$
@@ -48,7 +48,7 @@ The integer $n$ is uniquely determined as the order of vanishing of $f$ at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonzero ideal of $\mathcal O_0$ is of the form
 $$
@@ -59,7 +59,7 @@ for a unique $n\ge0$.
 
 ::: pf-proof
 
-Let $I\ne(0)$, and choose an element $f\in I$ with minimal order of vanishing $n$. By step <1>1,
+Let $I\ne(0)$, and choose an element $f\in I$ with minimal order of vanishing $n$. By step [](#s1-1){.pf-ref},
 $$
 f=z^n u
 $$
@@ -68,7 +68,7 @@ $$
 (z^n)\subseteq I.
 $$
 
-Every nonzero $g\in I$ has order at least $n$ by minimality, so step <1>1 gives
+Every nonzero $g\in I$ has order at least $n$ by minimality, so step [](#s1-1){.pf-ref} gives
 $$
 g=z^m v=z^n(z^{m-n}v)\in(z^n).
 $$
@@ -78,7 +78,7 @@ Thus $I=(z^n)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The prime ideals of $\mathcal O_0$ are exactly
 $$
@@ -102,13 +102,13 @@ but
 $$
 z\cdot z^{n-1}\in(z^n),
 $$
-so $(z^n)$ is not prime. Step <1>2 lists all nonzero ideals, proving the claim.
+so $(z^n)$ is not prime. Step [](#s1-2){.pf-ref} lists all nonzero ideals, proving the claim.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every nonzero element of $K[[z]]$ has a unique factorization
 $$
@@ -145,7 +145,7 @@ Again $n$ is uniquely the least exponent with nonzero coefficient.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every nonzero ideal of $K[[z]]$ is
 $$
@@ -156,13 +156,13 @@ for a unique $n\ge0$.
 
 ::: pf-proof
 
-The proof of step <1>2 applies verbatim using the factorization from step <1>4: choose an element of minimal $z$-adic order in the ideal, remove its unit factor, and compare the orders of all remaining elements.
+The proof of step [](#s1-2){.pf-ref} applies verbatim using the factorization from step [](#s1-4){.pf-ref}: choose an element of minimal $z$-adic order in the ideal, remove its unit factor, and compare the orders of all remaining elements.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The prime ideals of $K[[z]]$ are exactly
 $$
@@ -182,7 +182,7 @@ z\cdot z^{n-1}\in(z^n),
 \qquad
 z,z^{n-1}\notin(z^n)
 $$
-shows that $(z^n)$ is not prime. Step <1>5 exhausts all nonzero ideals.
+shows that $(z^n)$ is not prime. Step [](#s1-5){.pf-ref} exhausts all nonzero ideals.
 
 :::
 
@@ -190,7 +190,7 @@ shows that $(z^n)$ is not prime. Step <1>5 exhausts all nonzero ideals.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 determine the prime ideals of the convergent-germ ring, and steps <1>4--<1>6 determine those of $K[[z]]$.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} determine the prime ideals of the convergent-germ ring, and steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} determine those of $K[[z]]$.
 
 :::
 

@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The equation $(\bar z)^2=z^2$ is equivalent to
 $$
@@ -57,20 +57,20 @@ so $4ixy=0$, equivalently $xy=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The solution set is the union of the real and imaginary axes.
 
 
 ::: pf-proof
 
-By step <1>1, a point $(x,y)$ is a solution exactly when $x=0$ or $y=0$. The locus $x=0$ is the imaginary axis, and the locus $y=0$ is the real axis.
+By step [](#s1-1){.pf-ref}, a point $(x,y)$ is a solution exactly when $x=0$ or $y=0$. The locus $x=0$ is the imaginary axis, and the locus $y=0$ is the real axis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the locus is
 $$
@@ -81,7 +81,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-The two axes in step <1>2 are distinct lines through the origin.
+The two axes in step [](#s1-2){.pf-ref} are distinct lines through the origin.
 
 :::
 
@@ -89,7 +89,7 @@ The two axes in step <1>2 are distinct lines through the origin.
 
 ::: pf-qed
 
-Step <1>3 gives the requested geometric description.
+Step [](#s1-3){.pf-ref} gives the requested geometric description.
 
 :::
 

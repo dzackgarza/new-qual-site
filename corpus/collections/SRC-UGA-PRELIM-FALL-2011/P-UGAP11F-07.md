@@ -23,7 +23,7 @@ f\bigl(f^{-1}(S)\bigr)=S.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every map $f:X\to Y$ and every subset $S\subseteq Y$,
 $$
@@ -91,7 +91,7 @@ This proves the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -105,7 +105,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 f(f^{-1}(S))
 =
@@ -128,7 +128,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Equivalently, the necessary and sufficient condition is that every point of $S$ have at least one preimage under $f$.
 
@@ -150,7 +150,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>2--<1>3 give the requested necessary and sufficient condition.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the requested necessary and sufficient condition.
 
 :::
 

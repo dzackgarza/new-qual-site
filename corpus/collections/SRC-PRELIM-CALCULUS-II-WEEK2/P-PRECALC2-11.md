@@ -48,7 +48,7 @@ At least one of the \(x_i\) equals \(M\), and all terms are nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Taking \(n\)th roots,
 \[
@@ -67,7 +67,7 @@ The function \(t\mapsto t^{1/n}\) is increasing on \([0,\infty)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Also, for every \(i\),
 \[
@@ -87,7 +87,7 @@ and all numbers are positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -99,13 +99,13 @@ kM^n.
 
 ::: pf-proof
 
-Add the \(k\) inequalities from step <1>3.
+Add the \(k\) inequalities from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Taking \(n\)th roots gives
 \[
@@ -118,7 +118,7 @@ k^{1/n}M}.
 
 ::: pf-proof
 
-Apply the increasing \(n\)th-root function to step <1>4:
+Apply the increasing \(n\)th-root function to step [](#s1-4){.pf-ref}:
 \[
 (kM^n)^{1/n}
 =
@@ -129,7 +129,7 @@ k^{1/n}M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -153,7 +153,7 @@ Exponentiating gives the limit \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -169,7 +169,7 @@ M
 
 ::: pf-proof
 
-Steps <1>2 and <1>5 give
+Steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} give
 \[
 M
 \le
@@ -177,14 +177,14 @@ M
 \le
 k^{1/n}M.
 \]
-By step <1>6, both bounding expressions tend to \(M\). Apply the squeeze
+By step [](#s1-6){.pf-ref}, both bounding expressions tend to \(M\). Apply the squeeze
 theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For the specific expression
 \[
@@ -203,7 +203,7 @@ Here
 \[
 M=\max\{3,5\}=5.
 \]
-Apply step <1>7.
+Apply step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -211,7 +211,7 @@ Apply step <1>7.
 
 ::: pf-qed
 
-Step <1>7 gives the general answer, and step <1>8 gives the requested
+Step [](#s1-7){.pf-ref} gives the general answer, and step [](#s1-8){.pf-ref} gives the requested
 special case.
 
 :::

@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $0<a<n$,
 $$
@@ -72,7 +72,7 @@ by Euler's beta integral and the reflection formula. Multiplying by $1/n$ gives 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define, for $0<s<4$,
 $$
@@ -128,7 +128,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -154,7 +154,7 @@ J'(1)
 \int_0^\infty
 \frac{\log x}{(1+x^2)^2}\,dx.
 $$
-Differentiating the closed form from step <1>2 and evaluating at $s=1$, where
+Differentiating the closed form from step [](#s1-2){.pf-ref} and evaluating at $s=1$, where
 $$
 \cot\frac\pi2=0,
 $$
@@ -171,7 +171,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 proves part (i), and step <1>3 proves part (ii).
+Step [](#s1-1){.pf-ref} proves part (i), and step [](#s1-3){.pf-ref} proves part (ii).
 
 :::
 

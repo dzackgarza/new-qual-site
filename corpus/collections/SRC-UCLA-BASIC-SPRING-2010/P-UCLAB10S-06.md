@@ -113,7 +113,7 @@ Thus the eigenspace is the stated line.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -157,7 +157,7 @@ Direct multiplication gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 With
 \[
@@ -206,7 +206,7 @@ Also,
 \[
 Av=2v
 \]
-and step <1>3 gives
+and step [](#s1-3){.pf-ref} gives
 \[
 Aw
 =
@@ -229,7 +229,7 @@ This proves part (i).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every positive integer $m$,
 \[
@@ -275,7 +275,7 @@ This is the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In particular,
 \[
@@ -296,13 +296,13 @@ Set
 \[
 m=100
 \]
-in step <1>5.
+in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every positive integer $m$,
 \[
@@ -328,7 +328,7 @@ one has
 \[
 A^m=PJ^mP^{-1}.
 \]
-Using step <1>5, put
+Using step [](#s1-5){.pf-ref}, put
 \[
 d=2^m,
 \qquad
@@ -364,7 +364,7 @@ Substitute the values of $c,d$ and factor out $2^{m-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -386,8 +386,8 @@ Set
 \[
 m=100
 \]
-in step <1>7.
-Together with step <1>6, this completes part (ii).
+in step [](#s1-7){.pf-ref}.
+Together with step [](#s1-6){.pf-ref}, this completes part (ii).
 
 :::
 
@@ -430,7 +430,7 @@ This factors as
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Every solution of the recurrence has the form
 \[
@@ -461,7 +461,7 @@ Direct verification is also immediate:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The initial conditions give
 \[
@@ -503,7 +503,7 @@ D=\frac b2-C
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -519,7 +519,7 @@ a+n\left(\frac b2-a\right)
 
 ::: pf-proof
 
-Substitute the constants from step <1>11 into the formula from step <1>10.
+Substitute the constants from step [](#s1-11){.pf-ref} into the formula from step [](#s1-10){.pf-ref}.
 This proves part (iii).
 
 :::
@@ -528,7 +528,7 @@ This proves part (iii).
 
 ::: pf-qed
 
-Step <1>4 proves part (i), steps <1>6--<1>8 prove part (ii), and step <1>12 proves part (iii).
+Step [](#s1-4){.pf-ref} proves part (i), steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} prove part (ii), and step [](#s1-12){.pf-ref} proves part (iii).
 
 :::
 

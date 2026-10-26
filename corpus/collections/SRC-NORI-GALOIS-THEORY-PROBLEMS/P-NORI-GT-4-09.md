@@ -27,7 +27,7 @@ Let F be a field of characteristic zero. Define $\sigma f ( X ) = f ( X + 1 )$ f
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f\in F[X]$ is nonconstant, then
 $$
@@ -63,7 +63,7 @@ so the difference is not the zero polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -73,13 +73,13 @@ $$
 
 ::: pf-proof
 
-Every constant polynomial is fixed by $\sigma$. Step <1>1 shows that no nonconstant polynomial is fixed.
+Every constant polynomial is fixed by $\sigma$. Step [](#s1-1){.pf-ref} shows that no nonconstant polynomial is fixed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -113,7 +113,7 @@ so $r$ has a pole at $\alpha+1$. Iterating gives poles at $\alpha+n$ for all pos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In characteristic $0$, the elements
 $$
@@ -143,20 +143,20 @@ is injective, so $m=n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A $\sigma$-invariant rational function has no finite pole.
 
 
 ::: pf-proof
 
-If it had one finite pole, steps <1>3--<1>4 would produce infinitely many distinct poles. A rational function has only finitely many finite poles, namely the roots of its denominator after cancellation. Contradiction.
+If it had one finite pole, steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} would produce infinitely many distinct poles. A rational function has only finitely many finite poles, namely the roots of its denominator after cancellation. Contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence every $\sigma$-invariant element of $F(X)$ actually lies in $F[X]$.
 
@@ -167,13 +167,13 @@ Write
 $$
 r=\frac fg
 $$
-with coprime $f,g\in F[X]$. If $g$ were nonconstant, it would have a root in $\overline F$, producing a finite pole of $r$. Step <1>5 rules this out. Thus $g$ is constant and $r\in F[X]$.
+with coprime $f,g\in F[X]$. If $g$ were nonconstant, it would have a root in $\overline F$, producing a finite pole of $r$. Step [](#s1-5){.pf-ref} rules this out. Thus $g$ is constant and $r\in F[X]$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -183,13 +183,13 @@ $$
 
 ::: pf-proof
 
-By step <1>6, every invariant rational function is a polynomial. Step <1>2 says the only invariant polynomials are constants.
+By step [](#s1-6){.pf-ref}, every invariant rational function is a polynomial. Step [](#s1-2){.pf-ref} says the only invariant polynomials are constants.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently
 $$
@@ -199,7 +199,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>7.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
@@ -207,7 +207,7 @@ Combine steps <1>2 and <1>7.
 
 ::: pf-qed
 
-Step <1>8 is exactly the required assertion.
+Step [](#s1-8){.pf-ref} is exactly the required assertion.
 
 :::
 

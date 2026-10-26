@@ -23,7 +23,7 @@ Prove that $S$ and $T$ have a common basis of eigenvectors.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $S$ is normal, $V$ is an orthogonal direct sum of its eigenspaces:
 \[
@@ -40,7 +40,7 @@ Grouping basis vectors with the same eigenvalue gives the displayed orthogonal d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every eigenspace
 \[
@@ -80,7 +80,7 @@ Tv\in E_\lambda(S).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every eigenspace
 \[
@@ -120,7 +120,7 @@ T^*v\in E_\lambda(S).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The restriction
 \[
@@ -133,7 +133,7 @@ is normal on the inner-product space $E_\lambda(S)$.
 
 ::: pf-proof
 
-By steps <1>2--<1>3, both $T$ and $T^*$ preserve
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, both $T$ and $T^*$ preserve
 \[
 E_\lambda(S).
 \]
@@ -159,7 +159,7 @@ Hence $T_\lambda$ is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Each eigenspace
 \[
@@ -170,7 +170,7 @@ has an orthonormal basis consisting of eigenvectors of $T$.
 
 ::: pf-proof
 
-By step <1>4, the restriction $T_\lambda$ is normal on the finite-dimensional complex inner-product space
+By step [](#s1-4){.pf-ref}, the restriction $T_\lambda$ is normal on the finite-dimensional complex inner-product space
 \[
 E_\lambda(S).
 \]
@@ -180,9 +180,9 @@ The spectral theorem therefore gives an orthonormal basis of $E_\lambda(S)$ cons
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Every vector in the bases from step <1>5 is simultaneously an eigenvector of $S$ and $T$.
+Every vector in the bases from step [](#s1-5){.pf-ref} is simultaneously an eigenvector of $S$ and $T$.
 
 
 ::: pf-proof
@@ -192,27 +192,27 @@ Each such vector lies in
 E_\lambda(S),
 \]
 so it is an eigenvector of $S$ with eigenvalue $\lambda$.
-By construction in step <1>5, it is also an eigenvector of $T$.
+By construction in step [](#s1-5){.pf-ref}, it is also an eigenvector of $T$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The union over all eigenvalues $\lambda$ of the bases from step <1>5 is a basis of $V$.
+The union over all eigenvalues $\lambda$ of the bases from step [](#s1-5){.pf-ref} is a basis of $V$.
 
 
 ::: pf-proof
 
-By step <1>1, the eigenspaces of $S$ form an orthogonal direct sum equal to $V$.
+By step [](#s1-1){.pf-ref}, the eigenspaces of $S$ form an orthogonal direct sum equal to $V$.
 Choosing a basis in each summand and taking their union therefore gives a basis of $V$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -224,7 +224,7 @@ S\text{ and }T\text{ have a common orthonormal basis of eigenvectors}.
 
 ::: pf-proof
 
-By steps <1>6--<1>7, the union basis consists entirely of simultaneous eigenvectors.
+By steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}, the union basis consists entirely of simultaneous eigenvectors.
 
 :::
 
@@ -232,7 +232,7 @@ By steps <1>6--<1>7, the union basis consists entirely of simultaneous eigenvect
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

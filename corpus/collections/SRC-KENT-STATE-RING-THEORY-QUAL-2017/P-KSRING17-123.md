@@ -81,7 +81,7 @@ Thus membership in $M$ is independent of the chosen representative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $M$ is closed under subtraction.
 
@@ -134,7 +134,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $M$ absorbs multiplication by arbitrary elements of $D_P$.
 
@@ -206,13 +206,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives the additive-subgroup condition, and step <1>3 gives absorption under multiplication by arbitrary elements of $D_P$.
+Step [](#s1-2){.pf-ref} gives the additive-subgroup condition, and step [](#s1-3){.pf-ref} gives absorption under multiplication by arbitrary elements of $D_P$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal $M$ is proper.
 
@@ -240,7 +240,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -290,7 +290,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -360,15 +360,15 @@ is not invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The nonunits of $D_P$ are exactly the elements of $M$.
 
 
 ::: pf-proof
 
-Step <1>6 shows that every fraction outside $M$ is a unit.
-Step <1>7 shows that every fraction in $M$ is a nonunit.
+Step [](#s1-6){.pf-ref} shows that every fraction outside $M$ is a unit.
+Step [](#s1-7){.pf-ref} shows that every fraction in $M$ is a nonunit.
 Hence
 $$
 \boxed{
@@ -393,7 +393,7 @@ The quotient
 $$
 D_P/M
 $$
-is nonzero by step <1>5.
+is nonzero by step [](#s1-5){.pf-ref}.
 Let
 $$
 \frac ab+M
@@ -406,7 +406,7 @@ $$
 \notin
 M.
 $$
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 \frac ab
 $$
@@ -423,7 +423,7 @@ Hence $M$ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The ideal $M$ is the unique maximal ideal of $D_P$.
 
@@ -439,7 +439,7 @@ $$
 D_P.
 $$
 A proper ideal cannot contain a unit, so every element of $N$ is a nonunit.
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 N\subseteq M.
 $$
@@ -460,7 +460,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -479,7 +479,7 @@ $$
 
 ::: pf-proof
 
-Step <1>10 proves uniqueness, and the displayed description is the definition of $M$.
+Step [](#s1-10){.pf-ref} proves uniqueness, and the displayed description is the definition of $M$.
 
 :::
 
@@ -487,7 +487,7 @@ Step <1>10 proves uniqueness, and the displayed description is the definition of
 
 ::: pf-qed
 
-Step <1>11 is the required conclusion.
+Step [](#s1-11){.pf-ref} is the required conclusion.
 
 :::
 

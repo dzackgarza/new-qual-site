@@ -32,7 +32,7 @@ f(z)=-\pi z\cot(\pi z).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The point $z=0$ is a removable singularity of $f$, with
 \[
@@ -67,7 +67,7 @@ as $z\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The poles of $f$ are exactly the nonzero integers, and each is simple.
 
@@ -90,13 +90,13 @@ which is nonzero at every integer. At a nonzero integer $m$, the numerator
 \[
 -\pi m\cos(\pi m)
 \]
-is nonzero, so there is a simple pole. Step <1>1 shows that the singularity at $0$ cancels.
+is nonzero, so there is a simple pole. Step [](#s1-1){.pf-ref} shows that the singularity at $0$ cancels.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every nonzero integer $m$,
 \[
@@ -124,7 +124,7 @@ Using the simple-zero quotient formula,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $z\notin\mathbb Z$, the standard cotangent partial fraction expansion is
 \[
@@ -150,7 +150,7 @@ The paired series converges locally uniformly off $\mathbb Z$ because its terms 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $|z|<1$,
 \[
@@ -165,7 +165,7 @@ f(z)
 
 ::: pf-proof
 
-Multiply the identity in step <1>4 by $-z$:
+Multiply the identity in step [](#s1-4){.pf-ref} by $-z$:
 \[
 \begin{aligned}
 -\pi z\cot(\pi z)
@@ -186,7 +186,7 @@ Multiply the identity in step <1>4 by $-z$:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Fix $0<r<1$. On $|z|\le r$, the double series
 \[
@@ -231,7 +231,7 @@ The Weierstrass M-test gives absolute uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For $|z|<1$,
 \[
@@ -259,13 +259,13 @@ For each fixed $k$ and $|z|<1$,
 \sum_{n=1}^{\infty}
 \frac{2z^{2n}}{k^{2n}}.
 \]
-Substitute this into step <1>5. Step <1>6 justifies interchanging the sums.
+Substitute this into step [](#s1-5){.pf-ref}. Step [](#s1-6){.pf-ref} justifies interchanging the sums.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every $n\ge1$, the coefficient of $z^{2n}$ in the Taylor expansion of $f$ at $0$ is
 \[
@@ -277,7 +277,7 @@ For every $n\ge1$, the coefficient of $z^{2n}$ in the Taylor expansion of $f$ at
 
 ::: pf-proof
 
-The power series in step <1>7 converges on $|z|<1$ and is the Taylor expansion of $f$ there. Reading off the coefficient of $z^{2n}$ gives the stated value.
+The power series in step [](#s1-7){.pf-ref} converges on $|z|<1$ and is the Taylor expansion of $f$ there. Reading off the coefficient of $z^{2n}$ gives the stated value.
 
 :::
 
@@ -285,7 +285,7 @@ The power series in step <1>7 converges on $|z|<1$ and is the Taylor expansion o
 
 ::: pf-qed
 
-Steps <1>2--<1>3 prove part (a), and step <1>8 proves part (b).
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), and step [](#s1-8){.pf-ref} proves part (b).
 
 :::
 

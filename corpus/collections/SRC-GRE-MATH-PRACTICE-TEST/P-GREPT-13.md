@@ -29,7 +29,7 @@ $$f(x) = \frac{\log x}{x^a}$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On its domain $x>0$,
 $$
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function increases on $(0,e^{1/a})$ and decreases on
 $(e^{1/a},\infty)$.
@@ -57,7 +57,7 @@ $(e^{1/a},\infty)$.
 
 ::: pf-proof
 
-Because $a>0$ and $x^{a+1}>0$, the sign of $f'(x)$ in step <1>1 is the sign
+Because $a>0$ and $x^{a+1}>0$, the sign of $f'(x)$ in step [](#s1-1){.pf-ref} is the sign
 of $1-a\log x$. This quantity is positive exactly when
 $x<e^{1/a}$, vanishes at $x=e^{1/a}$, and is negative exactly when
 $x>e^{1/a}$.
@@ -66,7 +66,7 @@ $x>e^{1/a}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the maximum value is
 $$
@@ -77,7 +77,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-By step <1>2, the unique global maximum occurs at $x=e^{1/a}$. At that point,
+By step [](#s1-2){.pf-ref}, the unique global maximum occurs at $x=e^{1/a}$. At that point,
 $$
 f(e^{1/a})
 =\frac{\log(e^{1/a})}{(e^{1/a})^a}
@@ -91,7 +91,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested maximum value.
+Step [](#s1-3){.pf-ref} gives the requested maximum value.
 
 :::
 

@@ -27,7 +27,7 @@ The curves $y = (\sin x + \cos x)^4$ and $y = (\sin x - \cos x)^4$ intersect at 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two curves intersect exactly when
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The smallest positive intersection after $x=0$ is
 $$
@@ -62,14 +62,14 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the intersections occur when $2x=k\pi$, hence when
+By step [](#s1-1){.pf-ref}, the intersections occur when $2x=k\pi$, hence when
 $x=k\pi/2$. The smallest positive such value is $\pi/2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On $0<x<\pi/2$, the difference between the first curve and the second
 is
@@ -80,7 +80,7 @@ $$
 
 ::: pf-proof
 
-Using the notation from step <1>1,
+Using the notation from step [](#s1-1){.pf-ref},
 $$
 u^4-v^4=(u^2-v^2)(u^2+v^2).
 $$
@@ -99,7 +99,7 @@ $(0,\pi/2)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the area between the curves is
 $$
@@ -110,7 +110,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 A
@@ -126,7 +126,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the required area.
+Step [](#s1-4){.pf-ref} gives the required area.
 
 :::
 

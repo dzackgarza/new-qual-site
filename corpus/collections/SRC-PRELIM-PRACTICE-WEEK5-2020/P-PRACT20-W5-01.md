@@ -22,7 +22,7 @@ Suppose $G$ is a group and $x \in G$ is only element in $G$ of order $2$. Show t
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $a\in G$, the conjugate
 \[
@@ -52,7 +52,7 @@ exactly $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $a\in G$,
 \[
@@ -62,14 +62,14 @@ axa^{-1}=x.
 
 ::: pf-proof
 
-By step <1>1, $axa^{-1}$ is an element of order $2$. By hypothesis, $x$ is
+By step [](#s1-1){.pf-ref}, $axa^{-1}$ is an element of order $2$. By hypothesis, $x$ is
 the unique element of $G$ of order $2$. Hence the two elements are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus
 \[
@@ -79,7 +79,7 @@ Thus
 
 ::: pf-proof
 
-From step <1>2,
+From step [](#s1-2){.pf-ref},
 \[
 axa^{-1}=x.
 \]
@@ -95,7 +95,7 @@ equivalently $xa=ax$.
 
 ::: pf-qed
 
-Step <1>3 proves that $x$ commutes with every element of $G$.
+Step [](#s1-3){.pf-ref} proves that $x$ commutes with every element of $G$.
 
 :::
 

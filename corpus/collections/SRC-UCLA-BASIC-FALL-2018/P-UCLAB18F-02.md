@@ -36,7 +36,7 @@ is disconnected.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist nonempty separated sets
 \[
@@ -64,7 +64,7 @@ U\cap\overline V^{\,A\cup B}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $A$ is connected, it lies entirely in one of $U$ or $V$.
 
@@ -88,9 +88,9 @@ A\subseteq U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the convention of step <1>2,
+Under the convention of step [](#s1-2){.pf-ref},
 \[
 V\subseteq B.
 \]
@@ -112,7 +112,7 @@ every point of $V$ must belong to $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -122,7 +122,7 @@ One has
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 V\subseteq B,
 \]
@@ -145,7 +145,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -165,7 +165,7 @@ the closure of $V$ in the subspace $A\cup B$ is
 =
 \overline V^{\,\mathbb R^n}\cap(A\cup B).
 \]
-The separation in step <1>1 gives
+The separation in step [](#s1-1){.pf-ref} gives
 \[
 \overline V^{\,A\cup B}\cap U=\varnothing.
 \]
@@ -178,7 +178,7 @@ Since $U\subseteq A\cup B$, this is exactly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -188,7 +188,7 @@ V\cap\overline C^{\,\mathbb R^n}=\varnothing.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 V\subseteq B.
 \]
@@ -205,7 +205,7 @@ V\cap\overline C=\varnothing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -215,13 +215,13 @@ V\cap\overline U^{\,\mathbb R^n}=\varnothing.
 
 ::: pf-proof
 
-As in step <1>5,
+As in step [](#s1-5){.pf-ref},
 \[
 \overline U^{\,A\cup B}
 =
 \overline U^{\,\mathbb R^n}\cap(A\cup B).
 \]
-The separation in step <1>1 gives
+The separation in step [](#s1-1){.pf-ref} gives
 \[
 V\cap\overline U^{\,A\cup B}=\varnothing.
 \]
@@ -234,7 +234,7 @@ V\cap\overline U^{\,\mathbb R^n}=\varnothing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The sets
 \[
@@ -247,7 +247,7 @@ are separated in $\mathbb R^n$.
 
 ::: pf-proof
 
-By steps <1>4--<1>5,
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 \overline V
 \cap
@@ -255,7 +255,7 @@ By steps <1>4--<1>5,
 =
 \varnothing.
 \]
-By steps <1>6--<1>7,
+By steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref},
 \[
 V
 \cap
@@ -281,7 +281,7 @@ Thus the two sets are separated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Moreover,
 \[
@@ -299,7 +299,7 @@ By the hypotheses,
 =
 A\cup B\cup C.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 A\cup B
 =
@@ -318,16 +318,16 @@ V\cup(U\cup C).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Steps <1>8--<1>9 contradict connectedness of $\mathbb R^n$.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} contradict connectedness of $\mathbb R^n$.
 
 
 ::: pf-proof
 
-The set $V$ is nonempty by step <1>1.
+The set $V$ is nonempty by step [](#s1-1){.pf-ref}.
 The set $U\cup C$ is nonempty because $U$ is nonempty.
-Thus steps <1>8--<1>9 express $\mathbb R^n$ as the union of two nonempty separated sets.
+Thus steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} express $\mathbb R^n$ as the union of two nonempty separated sets.
 But $\mathbb R^n$ is connected.
 This is impossible.
 
@@ -335,7 +335,7 @@ This is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -345,7 +345,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption that $A\cup B$ is disconnected leads to the contradiction in step <1>10.
+The assumption that $A\cup B$ is disconnected leads to the contradiction in step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -353,7 +353,7 @@ The assumption that $A\cup B$ is disconnected leads to the contradiction in step
 
 ::: pf-qed
 
-Step <1>11 is the required conclusion.
+Step [](#s1-11){.pf-ref} is the required conclusion.
 
 :::
 

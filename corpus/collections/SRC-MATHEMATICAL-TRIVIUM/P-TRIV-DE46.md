@@ -44,7 +44,7 @@ Direct differentiation verifies $K_t=\kappa K_{xx}$. Also $\int_{\mathbb R}K(x,t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Neumann heat kernel on the half-line for a source at $\xi\geq0$ is
 \[
@@ -60,7 +60,7 @@ This is the even-image construction. Each summand solves the heat equation for $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For a source at the endpoint $\xi=0$,
 \[
@@ -70,13 +70,13 @@ K_N(x,0,t)=2K(x,t).
 
 ::: pf-proof
 
-Set $\xi=0$ in step <1>2. The factor $2$ is also required by mass normalization on the half-line, since $\int_0^\infty K(x,t)\,dx=1/2$.
+Set $\xi=0$ in step [](#s1-2){.pf-ref}. The factor $2$ is also required by mass normalization on the half-line, since $\int_0^\infty K(x,t)\,dx=1/2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus for the insulated half-line,
 \[
@@ -89,7 +89,7 @@ u(x,t)=\frac{u_0}{\sqrt{\pi\kappa t}}
 
 ::: pf-proof
 
-Multiply step <1>3 by the source strength $u_0$. The resulting function satisfies $u_t=\kappa u_{xx}$, has $u_x(0,t)=0$, and has total heat
+Multiply step [](#s1-3){.pf-ref} by the source strength $u_0$. The resulting function satisfies $u_t=\kappa u_{xx}$, has $u_x(0,t)=0$, and has total heat
 \[
 \int_0^\infty u(x,t)\,dx=u_0.
 \]
@@ -99,14 +99,14 @@ For every smooth compactly supported test function on $[0,\infty)$, the same cha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Without a boundary condition at $x=0$, the source statement does not specify a unique heat distribution.
 
 
 ::: pf-proof
 
-For example, the Neumann image kernel in step <1>2 and the Dirichlet image kernel $K(x-\xi,t)-K(x+\xi,t)$ impose different endpoint conditions and hence define different half-line evolutions for general initial data. A boundary condition is therefore part of the well-posed half-line heat problem.
+For example, the Neumann image kernel in step [](#s1-2){.pf-ref} and the Dirichlet image kernel $K(x-\xi,t)-K(x+\xi,t)$ impose different endpoint conditions and hence define different half-line evolutions for general initial data. A boundary condition is therefore part of the well-posed half-line heat problem.
 
 :::
 
@@ -114,7 +114,7 @@ For example, the Neumann image kernel in step <1>2 and the Dirichlet image kerne
 
 ::: pf-qed
 
-Step <1>4 gives the standard insulated-end solution, while step <1>5 records the missing boundary datum in the source.
+Step [](#s1-4){.pf-ref} gives the standard insulated-end solution, while step [](#s1-5){.pf-ref} records the missing boundary datum in the source.
 
 :::
 

@@ -24,7 +24,7 @@ Suppose that subgroups $H$ and $K$ of some group have order $12$ and $30$ repect
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\langle H,K\rangle$ is finite, then its order is divisible by
 \[
@@ -52,7 +52,7 @@ Hence their least common multiple $60$ divides the order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -63,13 +63,13 @@ cannot be the order of $\langle H,K\rangle$.
 
 ::: pf-proof
 
-The integer $30$ is not divisible by $60$, contradicting step <1>1.
+The integer $30$ is not divisible by $60$, contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The choice $60$ can occur.
 
@@ -133,7 +133,7 @@ and together they generate $G$, which has order $360$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Countable infinity can occur.
 
@@ -155,7 +155,7 @@ finite groups is countably infinite here, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the unique impossible choice is
 \[
@@ -165,7 +165,7 @@ Hence the unique impossible choice is
 
 ::: pf-proof
 
-Step <1>2 rules out $30$, while steps <1>3 through <1>5 realize every other
+Step [](#s1-2){.pf-ref} rules out $30$, while steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} realize every other
 listed possibility.
 
 :::
@@ -174,7 +174,7 @@ listed possibility.
 
 ::: pf-qed
 
-Step <1>6 gives the requested answer.
+Step [](#s1-6){.pf-ref} gives the requested answer.
 
 :::
 

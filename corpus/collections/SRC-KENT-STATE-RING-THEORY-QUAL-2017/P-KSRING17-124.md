@@ -107,7 +107,7 @@ Thus membership in $M_M$ does not depend on the chosen representative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $M_M$ is closed under subtraction.
 
@@ -155,7 +155,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $M_M$ absorbs multiplication by arbitrary elements of $R_M$.
 
@@ -201,7 +201,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -215,13 +215,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives the additive-subgroup condition, and step <1>3 gives absorption under multiplication by arbitrary elements.
+Step [](#s1-2){.pf-ref} gives the additive-subgroup condition, and step [](#s1-3){.pf-ref} gives absorption under multiplication by arbitrary elements.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -272,7 +272,7 @@ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -361,8 +361,8 @@ The nonunits of $R_M$ are exactly the elements of $M_M$.
 
 ::: pf-proof
 
-Step <1>5 shows every element outside $M_M$ is a unit.
-Step <1>6 shows every element of $M_M$ is a nonunit.
+Step [](#s1-5){.pf-ref} shows every element outside $M_M$ is a unit.
+Step [](#s1-6){.pf-ref} shows every element of $M_M$ is a nonunit.
 Thus
 $$
 \boxed{
@@ -376,14 +376,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The ideal $M_M$ is the unique maximal ideal of $R_M$.
 
 
 ::: pf-proof
 
-By step <1>4, the set of nonunits is an ideal.
+By step [](#s1-4){.pf-ref}, the set of nonunits is an ideal.
 A commutative ring is local exactly when its nonunits form an ideal, and in that case this ideal is the unique maximal ideal.
 Hence
 $$
@@ -509,7 +509,7 @@ Thus $\Phi$ is well-defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The map $\Phi$ is a ring homomorphism.
 
@@ -558,7 +558,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The map $\Phi$ is surjective.
 
@@ -585,7 +585,7 @@ Thus every element is in the image.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The kernel of $\Phi$ is exactly $M_M$.
 
@@ -625,7 +625,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 $$
@@ -639,7 +639,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>11--<1>13, $\Phi$ is a surjective ring homomorphism with kernel
+By steps [](#s1-11){.pf-ref} through [](#s1-13){.pf-ref}, $\Phi$ is a surjective ring homomorphism with kernel
 $$
 M_M.
 $$
@@ -656,7 +656,7 @@ $$
 
 ::: pf-qed
 
-Step <1>8 proves part (a), and step <1>14 proves part (b).
+Step [](#s1-8){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
 
 :::
 

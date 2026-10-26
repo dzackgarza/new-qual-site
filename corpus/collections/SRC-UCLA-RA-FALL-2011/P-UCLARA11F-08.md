@@ -50,7 +50,7 @@ and the right semicircle
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the imaginary-axis part of \(\partial D_R\),
 \[
@@ -77,7 +77,7 @@ then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the same boundary segment,
 \[
@@ -101,7 +101,7 @@ If \(z=iy\), then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence on the imaginary-axis part,
 \[
@@ -111,13 +111,13 @@ Hence on the imaginary-axis part,
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On the right semicircle,
 \[
@@ -143,7 +143,7 @@ e^{-\operatorname{Re}z}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On the right semicircle,
 \[
@@ -166,7 +166,7 @@ R-2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since \(R>3\),
 \[
@@ -182,7 +182,7 @@ Subtract \(2\) from \(R>3\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore on the right semicircle,
 \[
@@ -192,13 +192,13 @@ Therefore on the right semicircle,
 
 ::: pf-proof
 
-Use steps <1>4--<1>6.
+Use steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus on all of \(\partial D_R\),
 \[
@@ -208,13 +208,13 @@ Thus on all of \(\partial D_R\),
 
 ::: pf-proof
 
-The boundary is the union of the two pieces handled in steps <1>3 and <1>7.
+The boundary is the union of the two pieces handled in steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 By Rouché's theorem, \(F\) and \(G\) have the same number of zeros in \(D_R\), counted with multiplicity.
 
@@ -225,13 +225,13 @@ Since
 \[
 F=G-e^{-z},
 \]
-the perturbation \(e^{-z}\) has modulus strictly smaller than \(|G|\) on the boundary by step <1>8.
+the perturbation \(e^{-z}\) has modulus strictly smaller than \(|G|\) on the boundary by step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The function
 \[
@@ -257,14 +257,14 @@ It is a simple zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore \(F\) has exactly one zero in \(D_R\).
 
 
 ::: pf-proof
 
-Apply step <1>9 using step <1>10.
+Apply step [](#s1-9){.pf-ref} using step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -287,7 +287,7 @@ Then \(z_0\in D_R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence \(F\) has at most one zero in
 \[
@@ -297,15 +297,15 @@ H=\{z:\operatorname{Re}z>0\}.
 
 ::: pf-proof
 
-If there were two distinct zeros in \(H\), choose \(R>3\) large enough to contain both. This would contradict step <1>11.
+If there were two distinct zeros in \(H\), choose \(R>3\) large enough to contain both. This would contradict step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
-Since step <1>11 gives one zero in every \(D_R\) with \(R>3\), \(F\) has at least one zero in \(H\).
+Since step [](#s1-11){.pf-ref} gives one zero in every \(D_R\) with \(R>3\), \(F\) has at least one zero in \(H\).
 
 
 ::: pf-proof
@@ -316,7 +316,7 @@ Each \(D_R\) is contained in \(H\), and \(F\) has one zero there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -329,7 +329,7 @@ counted with multiplicity.
 
 ::: pf-proof
 
-Combine steps <1>13--<1>14.
+Combine steps [](#s1-13){.pf-ref} through [](#s1-14){.pf-ref}.
 
 :::
 
@@ -337,7 +337,7 @@ Combine steps <1>13--<1>14.
 
 ::: pf-qed
 
-Step <1>15 is the required zero count.
+Step [](#s1-15){.pf-ref} is the required zero count.
 
 :::
 

@@ -31,7 +31,7 @@ Regard $B$ as a left $A$-module through $f$, and regard $C$ as a left $B$-module
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The assertion in part (1), with the products ordered as $\gamma_i g(\beta_j)$, is false for arbitrary rings.
 
@@ -90,7 +90,7 @@ does not belong to this span. Thus the printed generators need not generate $C$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With the multiplication order corrected to
 $$
@@ -125,7 +125,7 @@ This is an $A$-linear combination of the elements $g(\beta_j)\gamma_i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the freeness hypotheses in part (2), the corrected generators
 $$
@@ -160,7 +160,7 @@ for every $i,j$. Thus the corrected generators are $A$-linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the hypotheses of part (2), the corrected family
 $$
@@ -171,13 +171,13 @@ is an $A$-basis of $C$.
 
 ::: pf-proof
 
-Step <1>2 proves that the family generates $C$ as a left $A$-module, and step <1>3 proves that it is $A$-linearly independent.
+Step [](#s1-2){.pf-ref} proves that the family generates $C$ as a left $A$-module, and step [](#s1-3){.pf-ref} proves that it is $A$-linearly independent.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If every $g(\beta_j)$ commutes with every $\gamma_i$—in particular, if $C$ is commutative—then the source's displayed family $\gamma_i g(\beta_j)$ also has the conclusions claimed in parts (1) and (2).
 
@@ -188,7 +188,7 @@ Under this additional hypothesis,
 $$
 \gamma_i g(\beta_j)=g(\beta_j)\gamma_i
 $$
-for every $i,j$. The claim therefore follows from steps <1>2 and <1>4.
+for every $i,j$. The claim therefore follows from steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -196,7 +196,7 @@ for every $i,j$. The claim therefore follows from steps <1>2 and <1>4.
 
 ::: pf-qed
 
-Step <1>1 shows that the printed statement is false without an additional commutativity hypothesis. Steps <1>2 through <1>4 prove the left-module statement with the multiplication order corrected, and step <1>5 identifies a sufficient hypothesis under which the printed order is valid.
+Step [](#s1-1){.pf-ref} shows that the printed statement is false without an additional commutativity hypothesis. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} prove the left-module statement with the multiplication order corrected, and step [](#s1-5){.pf-ref} identifies a sufficient hypothesis under which the printed order is valid.
 
 :::
 

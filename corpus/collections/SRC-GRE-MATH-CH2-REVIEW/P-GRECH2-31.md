@@ -40,7 +40,7 @@ The line $y=8x$ meets $y=8$ when $8x=8$, hence at $x=1$. The curve $y=x^3$ meets
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The area is
 $$
@@ -56,7 +56,7 @@ For $0\le x\le1$, the upper boundary is $y=8x$ and the lower boundary is $y=x^3$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The area equals
 $$
@@ -67,7 +67,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Compute the two integrals from step <1>2:
+Compute the two integrals from step [](#s1-2){.pf-ref}:
 $$
 \begin{aligned}
 \int_0^1(8x-x^3)\,dx
@@ -86,7 +86,7 @@ Their sum is $32/4=8$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested area and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
 
 :::
 

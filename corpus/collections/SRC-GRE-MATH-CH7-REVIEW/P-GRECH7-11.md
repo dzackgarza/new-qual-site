@@ -41,7 +41,7 @@ Interpreting the update lines in the displayed pseudocode as assignments, one lo
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Starting from $(380,72)$, the successive pairs after each iteration are
 $$
@@ -74,7 +74,7 @@ Thus each remainder produces exactly the next displayed value of $b$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The loop terminates after
 $$
@@ -85,7 +85,7 @@ iterations, so the answer is (C).
 
 ::: pf-proof
 
-By step <1>1, the value of $b$ becomes $0$ for the first time after the fifth update. The while-condition then fails, with $a=4$, so the algorithm terminates after five iterations.
+By step [](#s1-1){.pf-ref}, the value of $b$ becomes $0$ for the first time after the fifth update. The while-condition then fails, with $a=4$, so the algorithm terminates after five iterations.
 
 :::
 
@@ -93,7 +93,7 @@ By step <1>1, the value of $b$ becomes $0$ for the first time after the fifth up
 
 ::: pf-qed
 
-Step <1>2 gives the requested iteration count.
+Step [](#s1-2){.pf-ref} gives the requested iteration count.
 
 :::
 

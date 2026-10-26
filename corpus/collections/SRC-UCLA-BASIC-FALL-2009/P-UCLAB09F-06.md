@@ -31,7 +31,7 @@ You may use any applicable general theorem, provided you state it and justify it
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Uniform continuity of $f$ on $S$ means that for every $\varepsilon>0$ there exists $\delta>0$ such that for all
 \[
@@ -55,7 +55,7 @@ This is the definition of uniform continuity for a real-valued function on the m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set
 \[
@@ -81,7 +81,7 @@ Since $(-\infty,1]$ is closed in $\mathbb R$, the inverse image $S$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $S$ is bounded.
 
@@ -109,20 +109,20 @@ S\subseteq[-1,1]^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $S$ is compact.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>3, $S$ is closed and bounded in $\mathbb R^2$. The Heine--Borel theorem therefore implies that $S$ is compact.
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $S$ is closed and bounded in $\mathbb R^2$. The Heine--Borel theorem therefore implies that $S$ is compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function
 \[
@@ -151,14 +151,14 @@ are continuous. Products, compositions, and sums of continuous functions are con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $f$ is uniformly continuous on $S$.
 
 
 ::: pf-proof
 
-The Heine--Cantor theorem states that every continuous real-valued function on a compact metric space is uniformly continuous. Step <1>4 shows that $S$ is compact, and step <1>5 shows that $f$ is continuous on $S$. Therefore
+The Heine--Cantor theorem states that every continuous real-valued function on a compact metric space is uniformly continuous. Step [](#s1-4){.pf-ref} shows that $S$ is compact, and step [](#s1-5){.pf-ref} shows that $f$ is continuous on $S$. Therefore
 \[
 \boxed{f\text{ is uniformly continuous on }S}.
 \]
@@ -169,7 +169,7 @@ The Heine--Cantor theorem states that every continuous real-valued function on a
 
 ::: pf-qed
 
-Step <1>1 gives the definition, and step <1>6 proves that $f$ satisfies it.
+Step [](#s1-1){.pf-ref} gives the definition, and step [](#s1-6){.pf-ref} proves that $f$ satisfies it.
 
 :::
 

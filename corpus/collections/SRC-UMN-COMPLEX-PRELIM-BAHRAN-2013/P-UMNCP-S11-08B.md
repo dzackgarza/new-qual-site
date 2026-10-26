@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $R>0$ such that on the circle
 $$
@@ -91,7 +91,7 @@ is negative, so this sum tends to $0$ as $R\to\infty$. Hence for sufficiently la
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For such an $R$, the polynomial $p$ and the monomial
 $$
@@ -116,13 +116,13 @@ a_nz^n
 a_{n-1}z^{n-1}+\cdots+a_0
 \right).
 $$
-The strict inequality from step <1>1 holds on the boundary circle. Rouché's theorem therefore applies and gives the same zero count inside the circle.
+The strict inequality from step [](#s1-1){.pf-ref} holds on the boundary circle. Rouché's theorem therefore applies and gives the same zero count inside the circle.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $p$ has exactly $n$ zeros in
 $$
@@ -141,13 +141,13 @@ has a zero of multiplicity $n$ at
 $$
 z=0
 $$
-and no other zeros. By step <1>2, $p$ has the same total number of zeros inside the disk.
+and no other zeros. By step [](#s1-2){.pf-ref}, $p$ has the same total number of zeros inside the disk.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In particular, every nonconstant complex polynomial has at least one complex zero.
 
@@ -158,7 +158,7 @@ Since
 $$
 n\ge1,
 $$
-step <1>3 gives at least one zero of $p$ in
+step [](#s1-3){.pf-ref} gives at least one zero of $p$ in
 $$
 |z|<R.
 $$
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Repeated factorization gives the full fundamental theorem of algebra:
 $$
@@ -187,7 +187,7 @@ counted with multiplicity.
 
 ::: pf-proof
 
-Step <1>4 gives one zero
+Step [](#s1-4){.pf-ref} gives one zero
 $$
 r_1.
 $$
@@ -208,7 +208,7 @@ If
 $$
 n-1>0,
 $$
-apply step <1>4 to
+apply step [](#s1-4){.pf-ref} to
 $$
 q_1
 $$
@@ -220,7 +220,7 @@ and continue. Induction on the degree gives the displayed factorization into $n$
 
 ::: pf-qed
 
-Steps <1>1--<1>5 prove the fundamental theorem of algebra using Rouché's theorem.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} prove the fundamental theorem of algebra using Rouché's theorem.
 
 :::
 

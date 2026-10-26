@@ -22,7 +22,7 @@ Suppose that $f : \CC \to \CC$ is non-constant and entire. Prove that the image 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that the image of $f$ is not dense in
 $\mathbb C$. Then there exist $z_0\in\mathbb C$ and $\varepsilon>0$ such that
@@ -49,7 +49,7 @@ is disjoint from $f(\mathbb C)$. This is exactly the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -60,7 +60,7 @@ is entire and bounded.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 f(z)-z_0\ne0
 \]
@@ -78,23 +78,23 @@ Thus $g$ is bounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $g$ is constant.
 
 
 ::: pf-proof
 
-By step <1>2, $g$ is bounded and entire. Liouville's theorem therefore
+By step [](#s1-2){.pf-ref}, $g$ is bounded and entire. Liouville's theorem therefore
 implies that $g$ is constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The conclusion of step <1>3 forces $f$ to be constant.
+The conclusion of step [](#s1-3){.pf-ref} forces $f$ to be constant.
 
 
 ::: pf-proof
@@ -117,15 +117,15 @@ which is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $f(\mathbb C)$ is dense in $\mathbb C$.
 
 
 ::: pf-proof
 
-Step <1>4 contradicts the hypothesis that $f$ is nonconstant. Thus the
-assumption in step <1>1 is false. Equivalently, for every $z_0\in\mathbb C$
+Step [](#s1-4){.pf-ref} contradicts the hypothesis that $f$ is nonconstant. Thus the
+assumption in step [](#s1-1){.pf-ref} is false. Equivalently, for every $z_0\in\mathbb C$
 and every $\varepsilon>0$, there exists $z\in\mathbb C$ such that
 \[
 \boxed{|f(z)-z_0|<\varepsilon}.
@@ -137,7 +137,7 @@ and every $\varepsilon>0$, there exists $z\in\mathbb C$ such that
 
 ::: pf-qed
 
-Step <1>5 is the required density statement.
+Step [](#s1-5){.pf-ref} is the required density statement.
 
 :::
 

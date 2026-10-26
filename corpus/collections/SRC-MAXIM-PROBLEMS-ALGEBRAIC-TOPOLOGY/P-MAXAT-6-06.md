@@ -25,7 +25,7 @@ The standard nonboundary statement is the even-dimensional one.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Regard
 \[
@@ -67,7 +67,7 @@ Thus $T$ is an involution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The involution $T$ has no fixed point.
 
@@ -101,7 +101,7 @@ Hence $T$ is fixed-point free.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If a closed smooth manifold $M$ admits a fixed-point-free smooth involution $T$, then $M$ is the boundary of a compact smooth manifold.
 
@@ -153,7 +153,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently
 \[
@@ -166,26 +166,26 @@ Consequently
 
 ::: pf-proof
 
-Apply step <1>3 to the fixed-point-free involution from steps <1>1--<1>2.
+Apply step [](#s1-3){.pf-ref} to the fixed-point-free involution from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the literal problem statement cannot be proved.
 
 
 ::: pf-proof
 
-Step <1>4 proves the negation of the stated assertion.
+Step [](#s1-4){.pf-ref} proves the negation of the stated assertion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The standard corrected statement is
 \[
@@ -198,13 +198,13 @@ The standard corrected statement is
 
 ::: pf-proof
 
-It remains to prove this corrected assertion in steps <1>7--<1>9.
+It remains to prove this corrected assertion in steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If a closed manifold $M$ is the boundary of a compact manifold, then
 \[
@@ -257,7 +257,7 @@ is either $0$ or $2$, so $chi(M)$ is even.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -285,7 +285,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus $\mathbb{RP}^{2k}$ cannot be a boundary.
 
@@ -296,12 +296,12 @@ If
 \[
 \mathbb{RP}^{2k}=\partial W
 \]
-for some compact manifold $W$, step <1>7 would make
+for some compact manifold $W$, step [](#s1-7){.pf-ref} would make
 \[
 \chi(\mathbb{RP}^{2k})
 \]
 even.
-Step <1>8 says it equals $1$, a contradiction.
+Step [](#s1-8){.pf-ref} says it equals $1$, a contradiction.
 
 :::
 
@@ -309,8 +309,8 @@ Step <1>8 says it equals $1$, a contradiction.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 refute the literal source statement by constructing a bounding manifold for every $\mathbb{RP}^{2k+1}$.
-Steps <1>6--<1>9 prove the standard corrected even-dimensional statement.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} refute the literal source statement by constructing a bounding manifold for every $\mathbb{RP}^{2k+1}$.
+Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} prove the standard corrected even-dimensional statement.
 
 :::
 

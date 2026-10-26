@@ -25,7 +25,7 @@ I
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The improper integral is absolutely convergent.
 
@@ -64,7 +64,7 @@ Thus the original integral converges absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Split the integral at \(1\):
 \[
@@ -80,7 +80,7 @@ I
 
 ::: pf-proof
 
-Absolute convergence from step <1>1 justifies splitting the improper
+Absolute convergence from step [](#s1-1){.pf-ref} justifies splitting the improper
 integral.
 
 :::
@@ -108,7 +108,7 @@ This substitution exchanges the intervals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Then
 \[
@@ -136,7 +136,7 @@ and simplify the denominator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Also,
 \[
@@ -160,7 +160,7 @@ for \(u>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -174,7 +174,7 @@ Therefore
 
 ::: pf-proof
 
-Using steps <1>4--<1>5,
+Using steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 \begin{aligned}
 \int_1^\infty
@@ -196,7 +196,7 @@ Using steps <1>4--<1>5,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the two pieces cancel:
 \[
@@ -216,14 +216,14 @@ I
 
 ::: pf-proof
 
-Substitute step <1>6 into step <1>2 and rename the dummy variable \(u\) as
+Substitute step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref} and rename the dummy variable \(u\) as
 \(t\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -237,7 +237,7 @@ Therefore
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -245,7 +245,7 @@ This is step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the requested value.
+Step [](#s1-8){.pf-ref} is the requested value.
 
 :::
 

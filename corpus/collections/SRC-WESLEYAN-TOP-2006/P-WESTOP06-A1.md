@@ -29,7 +29,7 @@ For a space $X$, define its density character by
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The minimum in the definition of \(\delta X\) exists.
 
@@ -50,7 +50,7 @@ is defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(D\subseteq X\) is dense, then the restriction map
 \[
@@ -81,7 +81,7 @@ Thus \(f=g\), proving injectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If \(m\) is infinite and \(\delta X\le m\), then
 \[
@@ -95,7 +95,7 @@ Choose a dense subset \(D\subseteq X\) with
 \[
 |D|=\delta X\le m.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 |C(X)|\le|\mathbb R^D|=|\mathbb R|^{|D|}.
 \]
@@ -124,7 +124,7 @@ Hence
 
 ::: pf-qed
 
-Step <1>1 proves existence of the density character, and step <1>3 proves the required cardinal bound.
+Step [](#s1-1){.pf-ref} proves existence of the density character, and step [](#s1-3){.pf-ref} proves the required cardinal bound.
 
 :::
 

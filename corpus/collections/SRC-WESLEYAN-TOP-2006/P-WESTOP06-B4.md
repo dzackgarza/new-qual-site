@@ -30,7 +30,7 @@ b(2t-1),&\tfrac12\le t\le1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The path \(f*c_{x_1}\) is the reparametrization
 \[
@@ -52,7 +52,7 @@ These are exactly the two pieces of \(f*c_{x_1}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The maps
 \[
@@ -67,7 +67,7 @@ from \(f*c_{x_1}\) to \(f\), relative to the endpoints.
 
 ::: pf-proof
 
-The function \((t,s)\mapsto\lambda_s(t)\) is continuous and takes values in \(I\), so \(H_R\) is continuous. By step <1>1,
+The function \((t,s)\mapsto\lambda_s(t)\) is continuous and takes values in \(I\), so \(H_R\) is continuous. By step [](#s1-1){.pf-ref},
 \[
 H_R(t,0)=(f*c_{x_1})(t),
 \qquad
@@ -97,7 +97,7 @@ At \(s=0\), the first half of \(I\) is stretched across all of \(I\) and the sec
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -107,13 +107,13 @@ Hence
 
 ::: pf-proof
 
-Step <1>2 gives a path homotopy from \(f*c_{x_1}\) to \(f\), so the two paths determine the same path-homotopy class.
+Step [](#s1-2){.pf-ref} gives a path homotopy from \(f*c_{x_1}\) to \(f\), so the two paths determine the same path-homotopy class.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The path \(c_{x_0}*f\) is the reparametrization
 \[
@@ -135,7 +135,7 @@ If \(\tfrac12\le t\le1\), then \(\mu_0(t)=2t-1\), so \(f(\mu_0(t))=f(2t-1)\). Th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The maps
 \[
@@ -150,7 +150,7 @@ from \(c_{x_0}*f\) to \(f\), relative to the endpoints.
 
 ::: pf-proof
 
-The function \((t,s)\mapsto\mu_s(t)\) is continuous and takes values in \(I\), so \(H_L\) is continuous. By step <1>4,
+The function \((t,s)\mapsto\mu_s(t)\) is continuous and takes values in \(I\), so \(H_L\) is continuous. By step [](#s1-4){.pf-ref},
 \[
 H_L(t,0)=(c_{x_0}*f)(t),
 \qquad
@@ -176,7 +176,7 @@ At \(s=0\), the first half of \(I\) is collapsed to \(0\) and the second half is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -186,7 +186,7 @@ Hence
 
 ::: pf-proof
 
-Step <1>5 gives a path homotopy from \(c_{x_0}*f\) to \(f\), so they determine the same path-homotopy class.
+Step [](#s1-5){.pf-ref} gives a path homotopy from \(c_{x_0}*f\) to \(f\), so they determine the same path-homotopy class.
 
 :::
 
@@ -194,7 +194,7 @@ Step <1>5 gives a path homotopy from \(c_{x_0}*f\) to \(f\), so they determine t
 
 ::: pf-qed
 
-Steps <1>3 and <1>6 establish the right- and left-identity laws requested in the problem.
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} establish the right- and left-identity laws requested in the problem.
 
 :::
 

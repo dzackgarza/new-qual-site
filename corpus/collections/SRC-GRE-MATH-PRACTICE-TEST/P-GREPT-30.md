@@ -35,7 +35,7 @@ IV. This structure is a group.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The operation $\bullet$ is associative.
 
@@ -66,7 +66,7 @@ Thus statement I is false.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integer $0$ is an identity element for $\bullet$.
 
@@ -87,14 +87,14 @@ Thus statement II is false.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The element $1$ has no inverse in $(\ZZ,\bullet)$.
 
 
 ::: pf-proof
 
-If $n\in\ZZ$ were an inverse of $1$, then by step <1>2 it would satisfy
+If $n\in\ZZ$ were an inverse of $1$, then by step [](#s1-2){.pf-ref} it would satisfy
 $$
 1\bullet n=0.
 $$
@@ -109,7 +109,7 @@ element has an inverse, and statement III is true.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore exactly statement III is true, so the answer is
 $$
@@ -119,8 +119,8 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>3 show that I and II are false while III is true. Since a
-group requires every element to have an inverse, step <1>3 also shows that IV
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that I and II are false while III is true. Since a
+group requires every element to have an inverse, step [](#s1-3){.pf-ref} also shows that IV
 is false.
 
 :::
@@ -129,7 +129,7 @@ is false.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

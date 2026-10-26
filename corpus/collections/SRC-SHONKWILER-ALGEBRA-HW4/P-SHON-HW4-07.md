@@ -43,7 +43,7 @@ s=(12).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The commutator subgroup of \(S_3\) is
 \[
@@ -75,7 +75,7 @@ which generates \(A_3\). Hence equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since \(\mathbb C^\times\) is abelian, every homomorphism
 \[
@@ -86,13 +86,13 @@ kills \(A_3\).
 
 ::: pf-proof
 
-Every homomorphism to an abelian group kills the commutator subgroup. Apply step <1>1.
+Every homomorphism to an abelian group kills the commutator subgroup. Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore every such \(f\) factors uniquely through
 \[
@@ -108,7 +108,7 @@ Use the universal property of the quotient by a subgroup contained in the kernel
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A homomorphism
 \[
@@ -128,7 +128,7 @@ The generator has order \(2\), so its image has order dividing \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The only solutions of
 \[
@@ -150,7 +150,7 @@ z^2-1=(z-1)(z+1).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence there are exactly two homomorphisms
 \[
@@ -167,7 +167,7 @@ The choice \(z=1\) gives the trivial map. The choice \(z=-1\) sends even permuta
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus
 \[
@@ -180,13 +180,13 @@ Thus
 
 ::: pf-proof
 
-This is the classification from steps <1>2--<1>6.
+This is the classification from steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Its kernel is one of
 \[
@@ -224,7 +224,7 @@ Every element lies in the kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus this case contributes one conjugacy class.
 
@@ -273,7 +273,7 @@ The elements of order \(2\) in \(S_3\) are exactly the three transpositions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Any two order-\(2\) subgroups of \(S_3\) are conjugate.
 
@@ -286,7 +286,7 @@ All transpositions in \(S_3\) are conjugate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore all homomorphisms with kernel \(A_3\) are conjugate.
 
@@ -297,7 +297,7 @@ Such a homomorphism factors as the quotient
 \[
 S_3\twoheadrightarrow S_3/A_3\cong C_2
 \]
-followed by an embedding of \(C_2\) as an order-\(2\) subgroup of \(S_3\). By step <1>13, any two such embeddings differ by conjugation in \(S_3\).
+followed by an embedding of \(C_2\) as an order-\(2\) subgroup of \(S_3\). By step [](#s1-13){.pf-ref}, any two such embeddings differ by conjugation in \(S_3\).
 
 :::
 
@@ -345,7 +345,7 @@ because \(Z(S_3)=1\). Hence every automorphism is inner.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 All automorphisms \(S_3\to S_3\) are conjugate as homomorphisms.
 
@@ -376,7 +376,7 @@ f(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Hence, up to conjugation, there are exactly
 \[
@@ -398,7 +398,7 @@ and
 
 ::: pf-proof
 
-The three possible kernels in step <1>8 are invariant under conjugating the target homomorphism, so the three cases cannot be conjugate to one another. Steps <1>10, <1>14, and <1>17 show there is exactly one class for each kernel.
+The three possible kernels in step [](#s1-8){.pf-ref} are invariant under conjugating the target homomorphism, so the three cases cannot be conjugate to one another. Steps [](#s1-10){.pf-ref} and [](#s1-14){.pf-ref}, and [](#s1-17){.pf-ref} show there is exactly one class for each kernel.
 
 :::
 
@@ -435,7 +435,7 @@ because \(g\mapsto gh\) permutes \(S_3\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 After a change of basis, \(\rho(S_3)\) lies in \(O(2)\).
 
@@ -473,7 +473,7 @@ The determinant restricted to \(\rho(A_3)\) is a homomorphism from a group of od
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 A generator of \(\rho(A_3)\) is rotation by angle
 \[
@@ -513,7 +513,7 @@ Let \(s\) be a transposition. If \(\det\rho(s)=1\), then \(\rho(s)\in SO(2)\). S
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 Hence the image of every transposition is a reflection.
 
@@ -526,14 +526,14 @@ An orthogonal \(2\times2\) matrix with determinant \(-1\) and order \(2\) is ref
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 Therefore, after orthogonal conjugation, every injective \(\rho\) has image equal to the standard dihedral symmetry group of an equilateral triangle.
 
 
 ::: pf-proof
 
-By step <1>22, conjugate by an orthogonal map so that \(\rho((123))\) is the standard rotation through \(2\pi/3\). By step <1>24, \(\rho((12))\) is reflection across some line. Conjugating further by a rotation, which commutes with the \(2\pi/3\) rotation, moves that reflection axis to the \(x\)-axis. The relations
+By step [](#s1-22){.pf-ref}, conjugate by an orthogonal map so that \(\rho((123))\) is the standard rotation through \(2\pi/3\). By step [](#s1-24){.pf-ref}, \(\rho((12))\) is reflection across some line. Conjugating further by a rotation, which commutes with the \(2\pi/3\) rotation, moves that reflection axis to the \(x\)-axis. The relations
 \[
 r^3=s^2=1,
 \qquad
@@ -545,7 +545,7 @@ then generate exactly the standard order-\(6\) dihedral subgroup of \(O(2)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Consequently, any two injective homomorphisms
 \[
@@ -556,7 +556,7 @@ are conjugate.
 
 ::: pf-proof
 
-By step <1>20, choose
+By step [](#s1-20){.pf-ref}, choose
 \[
 A_1,A_2\in GL_2(\mathbb R)
 \]
@@ -564,7 +564,7 @@ such that
 \[
 A_i\rho_i(-)A_i^{-1}
 \]
-lands in \(O(2)\). By step <1>25, after additional orthogonal conjugations both representations become the same standard dihedral representation. Undoing the changes of basis gives some
+lands in \(O(2)\). By step [](#s1-25){.pf-ref}, after additional orthogonal conjugations both representations become the same standard dihedral representation. Undoing the changes of basis gives some
 \[
 A\in GL_2(\mathbb R)
 \]
@@ -580,7 +580,7 @@ for all \(g\in S_3\).
 
 ::: pf-qed
 
-Step <1>7 classifies the homomorphisms to \(\mathbb C^\times\), step <1>18 classifies the homomorphisms \(S_3\to S_3\) up to conjugation, and step <1>26 proves conjugacy of all injective \(2\)-dimensional real representations.
+Step [](#s1-7){.pf-ref} classifies the homomorphisms to \(\mathbb C^\times\), step [](#s1-18){.pf-ref} classifies the homomorphisms \(S_3\to S_3\) up to conjugation, and step [](#s1-26){.pf-ref} proves conjugacy of all injective \(2\)-dimensional real representations.
 
 :::
 

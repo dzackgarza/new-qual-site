@@ -23,7 +23,7 @@ For a set $X$, define
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The family $\mathcal B$ covers $X$.
 
@@ -40,7 +40,7 @@ Hence every point of $X$ belongs to at least one basis candidate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -109,7 +109,7 @@ W=U\cap V.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus
 \[
@@ -122,7 +122,7 @@ Thus
 
 ::: pf-proof
 
-The two basis axioms are exactly steps <1>1 and <1>2.
+The two basis axioms are exactly steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -156,7 +156,7 @@ The only basis element supplied separately by the definition is $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $X$ is finite, then
 \[
@@ -189,7 +189,7 @@ Thus the topology is indiscrete.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose $X$ is infinite.
 Then for every
@@ -219,7 +219,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $X$ is infinite, then every subset
 \[
@@ -233,7 +233,7 @@ is open in
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 \{x\}\in\mathcal B
 \]
@@ -254,7 +254,7 @@ Therefore $A$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus if $X$ is infinite,
 \[
@@ -269,13 +269,13 @@ the discrete topology.
 
 ::: pf-proof
 
-Step <1>7 shows every subset of $X$ is open.
+Step [](#s1-7){.pf-ref} shows every subset of $X$ is open.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The complete answer is
 \[
@@ -294,7 +294,7 @@ The complete answer is
 
 ::: pf-proof
 
-Combine steps <1>5 and <1>8.
+Combine steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
@@ -302,7 +302,7 @@ Combine steps <1>5 and <1>8.
 
 ::: pf-qed
 
-Step <1>3 proves that $\mathcal B$ is a basis, and step <1>9 identifies
+Step [](#s1-3){.pf-ref} proves that $\mathcal B$ is a basis, and step [](#s1-9){.pf-ref} identifies
 the generated topology in every case.
 
 :::

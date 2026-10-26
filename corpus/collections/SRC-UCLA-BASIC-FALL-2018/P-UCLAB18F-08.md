@@ -70,7 +70,7 @@ and the square matrix is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -106,7 +106,7 @@ X-\overline z\,I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The resolvent identity gives
 \[
@@ -136,7 +136,7 @@ Then
 B-A
 =(z-\overline z)I.
 \]
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 G-G^*
@@ -157,9 +157,9 @@ G-G^*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Taking the $(i,i)$ entry in step <1>3 gives
+Taking the $(i,i)$ entry in step [](#s1-3){.pf-ref} gives
 \[
 2i\,\operatorname{Im}G_{ii}
 =
@@ -183,13 +183,13 @@ z-\overline z
 =
 2i\,\operatorname{Im}z.
 \]
-Substitute these into the diagonal entry of step <1>3.
+Substitute these into the diagonal entry of step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -226,7 +226,7 @@ G_{ij}\overline{G_{ij}}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for every $i$,
 \[
@@ -241,7 +241,7 @@ Therefore, for every $i$,
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5 and divide by
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} and divide by
 \[
 2i\,\operatorname{Im}z.
 \]
@@ -256,7 +256,7 @@ This denominator is nonzero because
 
 ::: pf-qed
 
-Step <1>6 is the required identity.
+Step [](#s1-6){.pf-ref} is the required identity.
 
 :::
 

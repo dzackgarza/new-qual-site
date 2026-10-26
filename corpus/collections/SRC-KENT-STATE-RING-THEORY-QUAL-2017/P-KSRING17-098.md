@@ -25,7 +25,7 @@ Let D be a unique factorization domain and p a fixed irreducible element of D su
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -50,7 +50,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $d$ is a nonunit, then
 $$
@@ -69,9 +69,9 @@ This is the existence part of unique factorization in the UFD $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Every irreducible factor $q_i$ in step <1>2 is associate to $p$.
+Every irreducible factor $q_i$ in step [](#s1-2){.pf-ref} is associate to $p$.
 
 
 ::: pf-proof
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every nonzero element $d\in D$ has an expression
 $$
@@ -106,12 +106,12 @@ $$
 
 ::: pf-proof
 
-For units, use step <1>1.
+For units, use step [](#s1-1){.pf-ref}.
 For nonunits, substitute
 $$
 q_i=u_ip
 $$
-from step <1>3 into the factorization in step <1>2:
+from step [](#s1-3){.pf-ref} into the factorization in step [](#s1-2){.pf-ref}:
 $$
 \begin{aligned}
 d
@@ -131,9 +131,9 @@ The product of units is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The exponent $n$ in step <1>4 is unique.
+The exponent $n$ in step [](#s1-4){.pf-ref} is unique.
 
 
 ::: pf-proof
@@ -192,7 +192,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Once the exponent is fixed, the unit factor is also unique.
 
@@ -218,7 +218,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every nonzero element has a unique expression
 $$
@@ -234,7 +234,7 @@ $$
 
 ::: pf-proof
 
-Existence is step <1>4, and uniqueness is steps <1>5--<1>6.
+Existence is step [](#s1-4){.pf-ref}, and uniqueness is steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -256,13 +256,13 @@ $$
 
 ::: pf-proof
 
-Step <1>7 makes this definition unambiguous.
+Step [](#s1-7){.pf-ref} makes this definition unambiguous.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Let
 $$
@@ -288,7 +288,7 @@ This is a valid Euclidean division with zero remainder.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Suppose
 $$
@@ -300,7 +300,7 @@ a=up^m,
 \qquad
 b=vp^n
 $$
-as in step <1>7.
+as in step [](#s1-7){.pf-ref}.
 If
 $$
 m\ge n,
@@ -342,7 +342,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If
 $$
@@ -377,7 +377,7 @@ the remainder $a$ has strictly smaller Euclidean value than $b$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The function $\delta$ is a Euclidean function on $D$.
 
@@ -394,7 +394,7 @@ If
 $$
 a=0,
 $$
-use step <1>9.
+use step [](#s1-9){.pf-ref}.
 If
 $$
 a\ne0,
@@ -409,19 +409,19 @@ If
 $$
 m\ge n,
 $$
-step <1>10 gives division with remainder zero.
+step [](#s1-10){.pf-ref} gives division with remainder zero.
 If
 $$
 m<n,
 $$
-step <1>11 gives a remainder of strictly smaller $\delta$-value.
+step [](#s1-11){.pf-ref} gives a remainder of strictly smaller $\delta$-value.
 Thus the Euclidean division axiom holds.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 $$
@@ -435,7 +435,7 @@ $$
 ::: pf-proof
 
 The ring $D$ is already an integral domain because it is a UFD.
-Step <1>12 supplies a Euclidean function.
+Step [](#s1-12){.pf-ref} supplies a Euclidean function.
 Hence $D$ is Euclidean.
 
 :::
@@ -444,7 +444,7 @@ Hence $D$ is Euclidean.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>13 proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-13){.pf-ref} proves part (b).
 
 :::
 

@@ -52,7 +52,7 @@ is an integral domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The quotient
 $$
@@ -73,7 +73,7 @@ is the set of cosets of $P$ in the finite set $R$. Hence it has finitely many el
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The finite integral domain
 $$
@@ -99,7 +99,7 @@ $$
 R/P
 $$
 is an integral domain, this map is injective.
-Because the quotient is finite by step <1>2, the map is therefore surjective.
+Because the quotient is finite by step [](#s1-2){.pf-ref}, the map is therefore surjective.
 Hence
 $$
 1+P
@@ -136,7 +136,7 @@ is maximal.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 R/P
 $$
@@ -151,7 +151,7 @@ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence every prime ideal of $R$ is maximal.
 
@@ -172,7 +172,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

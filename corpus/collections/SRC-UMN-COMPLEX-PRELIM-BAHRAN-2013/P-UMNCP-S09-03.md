@@ -42,7 +42,7 @@ Both boundary circles pass through $0$, which is not contained in $\Omega$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $a>0$, the circle
 $$
@@ -97,7 +97,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under $w=1/z$, the two boundary circles become
 $$
@@ -112,7 +112,7 @@ respectively.
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 $$
 a=\frac12
 $$
@@ -133,7 +133,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 $$
@@ -154,7 +154,7 @@ $$
 ::: pf-proof
 
 The reciprocal map is a Möbius transformation, hence biholomorphic away from $0$.
-By step <1>2, it sends the two boundary circles to the two boundary lines of $S$.
+By step [](#s1-2){.pf-ref}, it sends the two boundary circles to the two boundary lines of $S$.
 
 To determine which component is the image, take
 $$
@@ -182,7 +182,7 @@ Hence the image component is exactly $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The exponential map
 $$
@@ -227,7 +227,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $E:S\to\mathbb H$ is injective.
 
@@ -264,7 +264,7 @@ Thus $k=0$ and $w_1=w_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $E:S\to\mathbb H$ is surjective.
 
@@ -319,7 +319,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 An explicit conformal equivalence is
 $$
@@ -332,12 +332,12 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 z\mapsto1/z
 $$
 is a biholomorphism from $\Omega$ to $S$.
-By steps <1>4--<1>6,
+By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref},
 $$
 w\mapsto e^{2\pi w}
 $$
@@ -350,7 +350,7 @@ Their composition is the displayed map.
 
 ::: pf-qed
 
-Step <1>7 gives the requested explicit conformal equivalence.
+Step [](#s1-7){.pf-ref} gives the requested explicit conformal equivalence.
 
 :::
 

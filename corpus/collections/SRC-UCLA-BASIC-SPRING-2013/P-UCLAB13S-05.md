@@ -39,7 +39,7 @@ U_n(\cos\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -70,7 +70,7 @@ U_0(x)=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -109,7 +109,7 @@ the quotient equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose for some $n\ge1$ that
 \[
@@ -168,7 +168,7 @@ reduces the numerator to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -186,7 +186,7 @@ for every $n\ge0$ and every $\theta$ with
 
 ::: pf-proof
 
-Steps <1>1--<1>3 give the induction.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the induction.
 At points where
 \[
 \sin\theta=0,
@@ -198,7 +198,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In the integral from part (b), make the substitution
 \[
@@ -245,7 +245,7 @@ Also,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The weighted inner product becomes
 \[
@@ -261,7 +261,7 @@ U_m(x)U_n(x)\sqrt{1-x^2}\,dx
 
 ::: pf-proof
 
-Using step <1>5,
+Using step [](#s1-5){.pf-ref},
 \[
 \begin{aligned}
 &\int_{-1}^1
@@ -279,7 +279,7 @@ U_n(\cos\theta)
 \sin^2\theta\,d\theta.
 \end{aligned}
 \]
-By step <1>4, for interior $\theta$,
+By step [](#s1-4){.pf-ref}, for interior $\theta$,
 \[
 U_m(\cos\theta)\sin\theta
 =
@@ -293,7 +293,7 @@ Thus the displayed identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -356,7 +356,7 @@ Hence the integral vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 \[
@@ -402,7 +402,7 @@ because the cosine integral is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -419,7 +419,7 @@ Therefore
 
 ::: pf-proof
 
-Combine step <1>6 with steps <1>7--<1>8.
+Combine step [](#s1-6){.pf-ref} with steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}.
 This proves part (b).
 
 :::
@@ -428,7 +428,7 @@ This proves part (b).
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

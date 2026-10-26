@@ -27,7 +27,7 @@ What is $\operatorname{Log}(-e^3)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The modulus of $-e^3$ is $e^3$, and its principal argument is $\pi$.
 
@@ -44,7 +44,7 @@ With the principal argument chosen in $(-\pi,\pi]$, the argument of a negative r
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -59,7 +59,7 @@ By definition of the principal logarithm,
 $$
 \operatorname{Log}z=\log|z|+i\operatorname{Arg}z.
 $$
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 \operatorname{Log}(-e^3)
 =\log(e^3)+i\pi
@@ -72,7 +72,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested principal logarithm.
+Step [](#s1-2){.pf-ref} gives the requested principal logarithm.
 
 :::
 

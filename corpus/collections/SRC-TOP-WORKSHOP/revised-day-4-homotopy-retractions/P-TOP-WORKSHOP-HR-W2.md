@@ -32,7 +32,7 @@ be the inclusion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $p$ is a deformation retraction,
 \[
@@ -56,7 +56,7 @@ which is exactly the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a homotopy
 \[
@@ -86,14 +86,14 @@ This is the defining homotopy of a deformation retraction of $Y$ onto $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The homotopy in step <1>2 is a based homotopy at $b_0$.
+The homotopy in step [](#s1-2){.pf-ref} is a based homotopy at $b_0$.
 
 
 ::: pf-proof
 
-Since $b_0\in B$, step <1>2 gives
+Since $b_0\in B$, step [](#s1-2){.pf-ref} gives
 \[
 H(b_0,t)=b_0
 \qquad
@@ -105,7 +105,7 @@ Thus the basepoint remains fixed throughout the homotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On fundamental groups,
 \[
@@ -117,7 +117,7 @@ p_*\circ j_*
 
 ::: pf-proof
 
-By functoriality and step <1>1,
+By functoriality and step [](#s1-1){.pf-ref},
 \[
 p_*\circ j_*
 =
@@ -132,7 +132,7 @@ p_*\circ j_*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On fundamental groups,
 \[
@@ -150,7 +150,7 @@ j_*\circ p_*
 =
 (j\circ p)_*.
 \]
-By steps <1>2--<1>3, the based maps
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, the based maps
 \[
 j\circ p
 \qquad\text{and}\qquad
@@ -169,7 +169,7 @@ are based-homotopic. Based-homotopic maps induce the same homomorphism on fundam
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The homomorphism
 \[
@@ -183,7 +183,7 @@ is an isomorphism with inverse $j_*$.
 
 ::: pf-proof
 
-Steps <1>4 and <1>5 show that
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} show that
 \[
 p_*\circ j_*
 =
@@ -201,7 +201,7 @@ Hence $j_*$ is a two-sided inverse of $p_*$.
 
 ::: pf-qed
 
-Step <1>6 is the required isomorphism.
+Step [](#s1-6){.pf-ref} is the required isomorphism.
 
 :::
 

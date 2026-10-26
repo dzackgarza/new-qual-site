@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -98,7 +98,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required image.
+Step [](#s1-3){.pf-ref} gives the required image.
 
 :::
 

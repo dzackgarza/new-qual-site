@@ -25,7 +25,7 @@ f(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the fundamental theorem of calculus,
 \[
@@ -89,7 +89,7 @@ inverse from its image back to its domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -113,7 +113,7 @@ y=f(3).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -124,7 +124,7 @@ f'(3)=\cos^2(9)}.
 
 ::: pf-proof
 
-Substitute \(x=3\) into step <1>1:
+Substitute \(x=3\) into step [](#s1-1){.pf-ref}:
 \[
 x^2=9.
 \]
@@ -133,7 +133,7 @@ x^2=9.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The value \(\cos 9\) is nonzero.
 
@@ -156,7 +156,7 @@ a rational number, contradicting the irrationality of \(\pi\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the inverse-function derivative formula applies:
 \[
@@ -168,7 +168,7 @@ Hence the inverse-function derivative formula applies:
 
 ::: pf-proof
 
-The denominator is nonzero at the relevant point by steps <1>4--<1>6.
+The denominator is nonzero at the relevant point by steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -188,13 +188,13 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>4--<1>7.
+Use steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus
 \[
@@ -217,7 +217,7 @@ By definition,
 
 ::: pf-qed
 
-Step <1>9 is the requested derivative.
+Step [](#s1-9){.pf-ref} is the requested derivative.
 
 :::
 

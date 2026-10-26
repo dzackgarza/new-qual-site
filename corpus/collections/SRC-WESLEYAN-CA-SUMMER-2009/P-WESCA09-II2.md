@@ -22,7 +22,7 @@ If every function analytic in $D$ has a primitive in $D$, prove that $D$ is simp
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $\sigma$ be any cycle in $D$ and let $a\in\mathbb C\setminus D$.
 Then
@@ -50,7 +50,7 @@ true over every cycle. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every cycle $\sigma$ in $D$ is homologous to zero in $D$.
 
@@ -58,7 +58,7 @@ Every cycle $\sigma$ in $D$ is homologous to zero in $D$.
 ::: pf-proof
 
 Let $a\in\mathbb C\setminus D$. By the definition of the winding number and
-step <1>1,
+step [](#s1-1){.pf-ref},
 \[
 n(\sigma,a)
 =\frac1{2\pi i}\int_\sigma\frac{dz}{z-a}
@@ -71,14 +71,14 @@ be homologous to zero in $D$ is satisfied.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence $D$ is simply connected.
 
 
 ::: pf-proof
 
-The cycle $\sigma$ in step <1>1 was arbitrary. Step <1>2 therefore shows that
+The cycle $\sigma$ in step [](#s1-1){.pf-ref} was arbitrary. Step [](#s1-2){.pf-ref} therefore shows that
 every cycle in $D$ is homologous to zero, which is the stated definition of
 simple connectedness.
 
@@ -88,7 +88,7 @@ simple connectedness.
 
 ::: pf-qed
 
-Step <1>3 proves the required conclusion.
+Step [](#s1-3){.pf-ref} proves the required conclusion.
 
 :::
 

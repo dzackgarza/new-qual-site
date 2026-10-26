@@ -25,7 +25,7 @@ where $\gamma$ is any closed piecewise smooth path in $\mathbb C$ avoiding $\pm 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The residues of $1/(1+z^2)$ at its two poles are
 \[
@@ -56,7 +56,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every admissible path $\gamma$,
 \[
@@ -67,7 +67,7 @@ For every admissible path $\gamma$,
 
 ::: pf-proof
 
-The residue theorem and step <1>1 give
+The residue theorem and step [](#s1-1){.pf-ref} give
 \[
 \int_\gamma\frac{dz}{1+z^2}
 =2\pi i\left(
@@ -81,7 +81,7 @@ which simplifies to the stated formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set of all possible values is
 \[
@@ -91,7 +91,7 @@ The set of all possible values is
 
 ::: pf-proof
 
-By step <1>2, every value is an integer multiple of $\pi$, because winding
+By step [](#s1-2){.pf-ref}, every value is an integer multiple of $\pi$, because winding
 numbers are integers. Conversely, let $m\in\mathbb Z$. Choose a sufficiently
 small positively oriented circle about $i$ that does not enclose $-i$, and
 traverse it $|m|$ times, reversing its orientation when $m<0$; for $m=0$ take
@@ -101,7 +101,7 @@ n(\gamma,i)=m,
 \qquad
 n(\gamma,-i)=0.
 \]
-Step <1>2 then gives the value $m\pi$.
+Step [](#s1-2){.pf-ref} then gives the value $m\pi$.
 
 :::
 
@@ -109,7 +109,7 @@ Step <1>2 then gives the value $m\pi$.
 
 ::: pf-qed
 
-Step <1>3 identifies exactly all possible values.
+Step [](#s1-3){.pf-ref} identifies exactly all possible values.
 
 :::
 

@@ -34,7 +34,7 @@ Prove or give a counterexample, with explanation: for every $\sigma\in A_6$ ther
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The permutation
 $$
@@ -55,7 +55,7 @@ Hence $\sigma\in A_6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\tau\in S_6$ satisfied $\tau^2=\sigma$, then $\tau$ would commute with $\sigma$.
 
@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Any permutation $\tau$ commuting with $\sigma$ must preserve the set $\{5,6\}$.
 
@@ -96,14 +96,14 @@ of respective sizes $4$ and $2$. Since the two-element orbit is unique, it must 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No $\tau\in S_6$ can satisfy $\tau^2=\sigma$.
 
 
 ::: pf-proof
 
-Suppose such a $\tau$ existed. By steps <1>2--<1>3, its restriction to $\{5,6\}$ would be a permutation of that two-element set and would satisfy
+Suppose such a $\tau$ existed. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, its restriction to $\{5,6\}$ would be a permutation of that two-element set and would satisfy
 $$
 \left(\tau|_{\{5,6\}}\right)^2=(5\ 6).
 $$
@@ -113,14 +113,14 @@ But the only permutations of a two-element set are the identity and the transpos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the proposed statement is false.
 
 
 ::: pf-proof
 
-Step <1>1 gives an element $\sigma\in A_6$, while step <1>4 proves that it has no square root in $S_6$.
+Step [](#s1-1){.pf-ref} gives an element $\sigma\in A_6$, while step [](#s1-4){.pf-ref} proves that it has no square root in $S_6$.
 
 :::
 
@@ -128,7 +128,7 @@ Step <1>1 gives an element $\sigma\in A_6$, while step <1>4 proves that it has n
 
 ::: pf-qed
 
-Step <1>5 establishes the counterexample.
+Step [](#s1-5){.pf-ref} establishes the counterexample.
 
 :::
 

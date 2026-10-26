@@ -23,7 +23,7 @@ where every $G_n$ is open in $\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every $G_n$ is dense in $\mathbb R$.
 
@@ -48,7 +48,7 @@ Thus $\overline{G_n}=\mathbb R$, so $G_n$ is dense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each $n$, the complement
 \[
@@ -60,13 +60,13 @@ is closed and nowhere dense.
 ::: pf-proof
 
 Because $G_n$ is open, $F_n$ is closed.
-Because $G_n$ is dense by step <1>1, no nonempty open interval can lie inside $F_n$. Thus $F_n$ has empty interior, so it is nowhere dense.
+Because $G_n$ is dense by step [](#s1-1){.pf-ref}, no nonempty open interval can lie inside $F_n$. Thus $F_n$ has empty interior, so it is nowhere dense.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Enumerate the rational numbers as
 \[
@@ -87,7 +87,7 @@ Singletons are closed in $\mathbb R$. They have empty interior, so they are nowh
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the assumption that $\mathbb Q=\bigcap_nG_n$,
 \[
@@ -123,14 +123,14 @@ Taking the union of $\mathbb Q$ and its complement gives the displayed equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The equality in step <1>4 contradicts the Baire category theorem.
+The equality in step [](#s1-4){.pf-ref} contradicts the Baire category theorem.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>3, every set appearing in the two countable unions of step <1>4 is closed and nowhere dense.
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, every set appearing in the two countable unions of step [](#s1-4){.pf-ref} is closed and nowhere dense.
 The real line with its usual metric is complete.
 Problem 4 therefore implies that $\mathbb R$ cannot be a countable union of such sets.
 
@@ -138,7 +138,7 @@ Problem 4 therefore implies that $\mathbb R$ cannot be a countable union of such
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -148,7 +148,7 @@ Hence
 
 ::: pf-proof
 
-Step <1>5 contradicts the assumption that such open sets $G_n$ exist.
+Step [](#s1-5){.pf-ref} contradicts the assumption that such open sets $G_n$ exist.
 
 :::
 
@@ -156,7 +156,7 @@ Step <1>5 contradicts the assumption that such open sets $G_n$ exist.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

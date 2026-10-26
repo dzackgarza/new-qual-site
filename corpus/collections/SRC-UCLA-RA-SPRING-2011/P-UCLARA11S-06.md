@@ -22,7 +22,7 @@ Prove that there is a unique pair of positive Borel measures $\mu_a,\mu_s$ such 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Set
 \[
@@ -71,13 +71,13 @@ for every Borel set $E$.
 
 ::: pf-proof
 
-This is the Radon--Nikodym theorem applied to step <1>1. Positivity of $\nu$ allows the Radon--Nikodym derivative to be chosen nonnegative.
+This is the Radon--Nikodym theorem applied to step [](#s1-1){.pf-ref}. Positivity of $\nu$ allows the Radon--Nikodym derivative to be chosen nonnegative.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -128,7 +128,7 @@ for every Borel set $E$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The measure $\mu_s$ is singular with respect to $\nu$.
 
@@ -161,7 +161,7 @@ which is exactly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The measure $\mu_a$ is absolutely continuous with respect to $\nu$.
 
@@ -221,9 +221,9 @@ Thus $\mu_a\ll\nu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Steps <1>3--<1>5 give a Lebesgue decomposition
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} give a Lebesgue decomposition
 \[
 \mu=\mu_a+\mu_s,
 \qquad
@@ -241,7 +241,7 @@ This is just the collection of the conclusions already proved.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose
 \[
@@ -276,7 +276,7 @@ Thus $\eta\ll\nu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The same signed measure $\eta$ is singular with respect to $\nu$.
 
@@ -313,7 +313,7 @@ which is $\nu$-null. Hence $\eta\perp\nu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 A signed measure that is both absolutely continuous and singular with respect to $\nu$ is zero.
 
@@ -334,14 +334,14 @@ Since $\eta$ vanishes outside $N$ as well, $\eta=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The decomposition is unique.
 
 
 ::: pf-proof
 
-By steps <1>7--<1>9,
+By steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref},
 \[
 \eta
 =
@@ -363,7 +363,7 @@ Subtracting from $\mu$ gives
 
 ::: pf-qed
 
-Step <1>6 proves existence, and step <1>10 proves uniqueness.
+Step [](#s1-6){.pf-ref} proves existence, and step [](#s1-10){.pf-ref} proves uniqueness.
 
 :::
 

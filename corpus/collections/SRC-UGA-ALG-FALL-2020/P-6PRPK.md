@@ -31,7 +31,7 @@ Let $P$ be the normal Sylow $3$-subgroup of $G$, so $|P|=3$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The group $G$ is solvable.
 
@@ -54,7 +54,7 @@ has successive quotients of orders $3$, $5$, and $4$. The first two are cyclic, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every Sylow $5$-subgroup of $G$ is normal.
 
@@ -75,7 +75,7 @@ so $n_5(H)=1$. Let $S$ be this unique Sylow $5$-subgroup. It is characteristic i
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>2 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} proves part (b).
 
 :::
 

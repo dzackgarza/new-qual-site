@@ -30,7 +30,7 @@ g(x)=\frac1{1+x-x_0}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every smooth function $g$ near $x_0$,
 \[
@@ -64,7 +64,7 @@ this is exactly the action of the displayed distribution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For the present $g$,
 \[
@@ -90,7 +90,7 @@ Evaluate at $x=x_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -105,7 +105,7 @@ so
 
 ::: pf-proof
 
-Substitute the three values from step <1>2 into the identity in step <1>1.
+Substitute the three values from step [](#s1-2){.pf-ref} into the identity in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -113,7 +113,7 @@ Substitute the three values from step <1>2 into the identity in step <1>1.
 
 ::: pf-qed
 
-Step <1>3 gives the requested coefficients.
+Step [](#s1-3){.pf-ref} gives the requested coefficients.
 
 :::
 

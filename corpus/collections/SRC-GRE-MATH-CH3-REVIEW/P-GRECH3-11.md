@@ -38,7 +38,7 @@ Which of these functions is/are continuous at the origin?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f_1$ is not continuous at $(0,0)$.
 
@@ -65,7 +65,7 @@ so $f_1$ is not continuous at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f_2$ is not continuous at $(0,0)$.
 
@@ -88,7 +88,7 @@ so $f_2$ is not continuous at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f_3$ is continuous at $(0,0)$.
 
@@ -125,7 +125,7 @@ Hence $f_3$ is continuous at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Exactly $f_3$ is continuous at the origin, so the answer is
 $$
@@ -135,7 +135,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 exclude $f_1$ and $f_2$, while step <1>3 proves continuity of $f_3$.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} exclude $f_1$ and $f_2$, while step [](#s1-3){.pf-ref} proves continuity of $f_3$.
 
 :::
 
@@ -143,7 +143,7 @@ Steps <1>1 and <1>2 exclude $f_1$ and $f_2$, while step <1>3 proves continuity o
 
 ::: pf-qed
 
-Step <1>4 identifies precisely which of the three functions is continuous at the origin.
+Step [](#s1-4){.pf-ref} identifies precisely which of the three functions is continuous at the origin.
 
 :::
 

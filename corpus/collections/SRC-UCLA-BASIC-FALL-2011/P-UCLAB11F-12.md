@@ -32,7 +32,7 @@ M=\operatorname{image}(A)\subseteq\mathbb R^m.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The nearest point in the subspace $M$ to $b$ is unique.
 
@@ -82,7 +82,7 @@ u=v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the hypotheses of the problem,
 \[
@@ -96,13 +96,13 @@ The vectors $Ax$ and $Ay$ both belong to
 \[
 M=\operatorname{image}(A)
 \]
-and both have minimal distance to $b$. By uniqueness from step <1>1, they are equal.
+and both have minimal distance to $b$. By uniqueness from step [](#s1-1){.pf-ref}, they are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -112,7 +112,7 @@ A(x-y)=0.
 
 ::: pf-proof
 
-By linearity of $A$ and step <1>2,
+By linearity of $A$ and step [](#s1-2){.pf-ref},
 \[
 A(x-y)
 =
@@ -124,7 +124,7 @@ Ax-Ay
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -134,7 +134,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 is exactly the defining condition for membership in the kernel of $A$.
+Step [](#s1-3){.pf-ref} is exactly the defining condition for membership in the kernel of $A$.
 
 :::
 
@@ -142,7 +142,7 @@ Step <1>3 is exactly the defining condition for membership in the kernel of $A$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

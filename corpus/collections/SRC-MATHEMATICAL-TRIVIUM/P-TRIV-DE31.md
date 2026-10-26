@@ -60,7 +60,7 @@ Also, $u(1)=U(0)$, while $u'(e)=U'(1)/e$, so the second boundary condition is $U
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is no nonzero solution for $\lambda\leq0$.
 
@@ -79,7 +79,7 @@ The first condition gives $A=0$, and the second gives $B\mu\cosh\mu=0$, hence $B
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\lambda>0$, write $\lambda=\mu^2$.
 A nonzero solution exists exactly when
@@ -110,7 +110,7 @@ which vanishes for a nonzero solution exactly when $\cos\mu=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the allowed values and corresponding nonzero solutions are
 \[
@@ -124,9 +124,9 @@ u_n(x)=C\sin\left(\left(n+\frac12\right)\pi\log x\right),
 
 ::: pf-proof
 
-By step <1>3, $U_n(t)=C\sin((n+1/2)\pi t)$.
+By step [](#s1-3){.pf-ref}, $U_n(t)=C\sin((n+1/2)\pi t)$.
 Substitute $t=\log x$.
-Step <1>2 shows there are no additional eigenvalues.
+Step [](#s1-2){.pf-ref} shows there are no additional eigenvalues.
 
 :::
 
@@ -134,7 +134,7 @@ Step <1>2 shows there are no additional eigenvalues.
 
 ::: pf-qed
 
-Step <1>4 gives all nonzero solutions and all allowed values of $\lambda$.
+Step [](#s1-4){.pf-ref} gives all nonzero solutions and all allowed values of $\lambda$.
 
 :::
 

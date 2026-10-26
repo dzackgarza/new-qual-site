@@ -31,7 +31,7 @@ where the scalars $\lambda_1,\ldots,\lambda_n$ are pairwise distinct.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -47,7 +47,7 @@ To prove linear independence, it is enough to show that every linear relation am
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $j\in\{1,\ldots,n\}$ and define
 \[
@@ -76,7 +76,7 @@ the entire product annihilates $v_i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -98,14 +98,14 @@ Apply this to $p_j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The coefficient $c_j$ in step <1>1 is zero.
+The coefficient $c_j$ in step [](#s1-1){.pf-ref} is zero.
 
 
 ::: pf-proof
 
-Apply $p_j(T)$ to the relation in step <1>1. By steps <1>2--<1>3,
+Apply $p_j(T)$ to the relation in step [](#s1-1){.pf-ref}. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 0
 =
@@ -123,14 +123,14 @@ and $v_j\ne0$ by hypothesis. Therefore $c_j=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The vectors $v_1,\ldots,v_n$ are linearly independent.
 
 
 ::: pf-proof
 
-The index $j$ in step <1>4 was arbitrary. Hence every coefficient in the relation from step <1>1 is zero, which is exactly linear independence.
+The index $j$ in step [](#s1-4){.pf-ref} was arbitrary. Hence every coefficient in the relation from step [](#s1-1){.pf-ref} is zero, which is exactly linear independence.
 
 :::
 
@@ -138,7 +138,7 @@ The index $j$ in step <1>4 was arbitrary. Hence every coefficient in the relatio
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

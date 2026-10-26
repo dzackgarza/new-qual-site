@@ -32,7 +32,7 @@ A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vector $\mathbf b$ lies in the column space of $A$ exactly when the linear system $A\mathbf x=\mathbf b$ is consistent.
 
@@ -45,7 +45,7 @@ The column space of $A$ consists precisely of all linear combinations of the col
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Row reduction of the augmented matrix gives
 $$
@@ -85,7 +85,7 @@ Then replace $R_3$ by $R_3-2R_2$. Its final augmented entry is $(d-84)-2(-37)=d-
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required value is
 $$
@@ -96,7 +96,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>1, the augmented system must be consistent. By step <1>2, consistency holds exactly when its last row does not assert $0=d-10\ne0$, hence exactly when $d-10=0$. Thus $d=10$.
+By step [](#s1-1){.pf-ref}, the augmented system must be consistent. By step [](#s1-2){.pf-ref}, consistency holds exactly when its last row does not assert $0=d-10\ne0$, hence exactly when $d-10=0$. Thus $d=10$.
 
 :::
 
@@ -104,7 +104,7 @@ By step <1>1, the augmented system must be consistent. By step <1>2, consistency
 
 ::: pf-qed
 
-Step <1>3 gives the unique value for which $\mathbf b$ belongs to the column space of $A$.
+Step [](#s1-3){.pf-ref} gives the unique value for which $\mathbf b$ belongs to the column space of $A$.
 
 :::
 

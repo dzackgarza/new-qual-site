@@ -30,7 +30,7 @@ Let $|G|=2p$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every group of order $2p$ is not simple.
 
@@ -51,7 +51,7 @@ If $p=2$, then $|G|=4$. By Cauchy's theorem, $G$ contains an element of order $2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $p=2$, the two isomorphism classes of groups of order $2p=4$ are $C_4$ and $C_2\times C_2$.
 
@@ -64,7 +64,7 @@ Now classify the possibilities. For $p=2$, every group of order $4$ is abelian: 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For odd $p$, there are exactly two isomorphism classes of groups of order $2p$: the cyclic group $C_{2p}$ and the dihedral group of order $2p$.
 
@@ -101,7 +101,7 @@ Hence, for $p=2$, the groups are $C_4$ and $C_2\times C_2$; for odd $p$, the gro
 
 ::: pf-qed
 
-Step <1>1 establishes part (a), and steps <1>2 and <1>3 classify all groups and give the required nonabelian presentation for part (b).
+Step [](#s1-1){.pf-ref} establishes part (a), and steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} classify all groups and give the required nonabelian presentation for part (b).
 
 :::
 

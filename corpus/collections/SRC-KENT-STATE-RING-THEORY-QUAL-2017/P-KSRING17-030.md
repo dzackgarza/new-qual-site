@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -106,7 +106,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every
 $$
@@ -145,7 +145,7 @@ z(rs)
 \in
 zR.
 $$
-By step <1>1 this ideal is nonzero. Since $R$ is simple,
+By step [](#s1-1){.pf-ref} this ideal is nonzero. Since $R$ is simple,
 $$
 zR=R.
 $$
@@ -154,7 +154,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ring $R$ has a multiplicative identity.
 
@@ -165,7 +165,7 @@ Choose
 $$
 0\ne z\in Z(R).
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 zR=R.
 $$
@@ -235,7 +235,7 @@ Thus $e$ is a two-sided identity of $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every nonzero element of $Z(R)$ is invertible in $R$.
 
@@ -246,11 +246,11 @@ Let
 $$
 0\ne c\in Z(R).
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 cR=R.
 $$
-Since $e$ is the identity from step <1>3, there exists
+Since $e$ is the identity from step [](#s1-3){.pf-ref}, there exists
 $$
 d\in R
 $$
@@ -268,7 +268,7 @@ Hence $d$ is a two-sided inverse of $c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The inverse of every nonzero central element is again central.
 
@@ -316,7 +316,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -332,11 +332,11 @@ Under the standing assumption
 $$
 Z(R)\ne0,
 $$
-step <1>3 supplies an identity
+step [](#s1-3){.pf-ref} supplies an identity
 $$
 e\in Z(R),
 $$
-because an identity commutes with every element. The center is a commutative subring of $R$, and steps <1>4--<1>5 show that every nonzero element of the center has an inverse in the center. Hence
+because an identity commutes with every element. The center is a commutative subring of $R$, and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} show that every nonzero element of the center has an inverse in the center. Hence
 $$
 Z(R)
 $$
@@ -348,7 +348,7 @@ is a field.
 
 ::: pf-qed
 
-Step <1>6 is the required dichotomy.
+Step [](#s1-6){.pf-ref} is the required dichotomy.
 
 :::
 

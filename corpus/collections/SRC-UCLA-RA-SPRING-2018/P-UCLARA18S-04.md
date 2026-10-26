@@ -47,7 +47,7 @@ operator:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every locally integrable \(f\),
 \[
@@ -91,7 +91,7 @@ Taking the supremum over \(r,\rho\) gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For \(1<p<\infty\),
 \[
@@ -122,7 +122,7 @@ Integrating in \(x\) yields the stated estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One also has
 \[
@@ -139,7 +139,7 @@ function
 \[
 g(x,y)=M_1^y|f|(x,y).
 \]
-Step <1>2 guarantees \(g\in L^p(\mathbb R^2)\). Thus
+Step [](#s1-2){.pf-ref} guarantees \(g\in L^p(\mathbb R^2)\). Thus
 \[
 \|M_1^x g\|_p
 \le
@@ -152,7 +152,7 @@ C_p^2\|f\|_p.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the strong maximal operator in part (a) is bounded on
 \(L^p(\mathbb R^2)\):
@@ -166,13 +166,13 @@ C_p^2\|f\|_{L^p(\mathbb R^2)}}.
 
 ::: pf-proof
 
-Combine the pointwise domination in step <1>1 with step <1>3.
+Combine the pointwise domination in step [](#s1-1){.pf-ref} with step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For \(r>0\), define the averaging-error operator
 \[
@@ -203,7 +203,7 @@ the integral, and apply the triangle inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If \(g\in C_c(\mathbb R^2)\), then
 \[
@@ -236,7 +236,7 @@ for all \((x,y)\), and \(Tg=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every \(u\in L^p(\mathbb R^2)\),
 \[
@@ -278,7 +278,7 @@ Take \(\limsup_{r\to0}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Fix \(\alpha>0\). For every \(u\in L^p(\mathbb R^2)\),
 \[
@@ -293,7 +293,7 @@ Fix \(\alpha>0\). For every \(u\in L^p(\mathbb R^2)\),
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 \{Tu\ge\alpha\}
 \subseteq
@@ -307,7 +307,7 @@ Apply Chebyshev's inequality to each set and add the resulting bounds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 There is a constant \(C_{p,\alpha}\) such that
 \[
@@ -326,7 +326,7 @@ By part (a),
 \le
 C_p^2\|u\|_p.
 \]
-Insert this into step <1>8:
+Insert this into step [](#s1-8){.pf-ref}:
 \[
 \left|\{Tu\ge\alpha\}\right|
 \le
@@ -340,7 +340,7 @@ Insert this into step <1>8:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Let \(f\in L^p(\mathbb R^2)\). For every \(\varepsilon>0\), choose
 \[
@@ -373,13 +373,13 @@ Taking limsups gives
 \[
 Tf\le Tg+Tu.
 \]
-Step <1>6 gives \(Tg=0\).
+Step [](#s1-6){.pf-ref} gives \(Tg=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For every \(\alpha>0\),
 \[
@@ -390,13 +390,13 @@ For every \(\alpha>0\),
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 \{Tf\ge\alpha\}
 \subseteq
 \{Tu\ge\alpha\}.
 \]
-Hence step <1>9 gives
+Hence step [](#s1-9){.pf-ref} gives
 \[
 \left|\{Tf\ge\alpha\}\right|
 \le
@@ -413,7 +413,7 @@ The left-hand side is independent of \(\varepsilon\). Let
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -423,7 +423,7 @@ Therefore
 
 ::: pf-proof
 
-Apply step <1>11 with
+Apply step [](#s1-11){.pf-ref} with
 \[
 \alpha=\frac1m,
 \qquad
@@ -444,7 +444,7 @@ is a countable union of null sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Consequently,
 \[
@@ -457,14 +457,14 @@ as \(r\to0\).
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \limsup_{r\to0}
 |A_rf(x,y)-f(x,y)|
 \le
 Tf(x,y).
 \]
-Step <1>12 makes the right-hand side zero almost everywhere, forcing the
+Step [](#s1-12){.pf-ref} makes the right-hand side zero almost everywhere, forcing the
 desired convergence.
 
 :::
@@ -473,7 +473,7 @@ desired convergence.
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>13 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-13){.pf-ref} proves part (b).
 
 :::
 

@@ -21,7 +21,7 @@ $\mathrm { C a l c u l a t e } \int \frac { d x } { \sin x }$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Use the half-angle substitution
 $$
@@ -44,7 +44,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under this substitution,
 $$
@@ -56,7 +56,7 @@ $$
 
 ::: pf-proof
 
-Substitute the identities from step <1>1:
+Substitute the identities from step [](#s1-1){.pf-ref}:
 $$
 \frac{dx}{\sin x}
 =
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -85,7 +85,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \int\frac{dx}{\sin x}
 =
@@ -98,7 +98,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -112,7 +112,7 @@ $$
 
 ::: pf-proof
 
-Substitute back $t=\tan(x/2)$ into step <1>3.
+Substitute back $t=\tan(x/2)$ into step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -120,7 +120,7 @@ Substitute back $t=\tan(x/2)$ into step <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required antiderivative on each interval avoiding zeros of
+Step [](#s1-4){.pf-ref} is the required antiderivative on each interval avoiding zeros of
 $\sin x$.
 
 :::

@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The poset $\mathcal P$ is nonempty.
 
@@ -54,7 +54,7 @@ belongs to $\mathcal P$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -131,7 +131,7 @@ It is proper because it is contained in every member of the nonempty chain, each
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -157,7 +157,7 @@ Therefore their intersection is also contained in $P$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal
 $$
@@ -168,7 +168,7 @@ is an upper bound for $\mathcal C$ with respect to $\preceq$.
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 Q_\mathcal C
 \in
@@ -196,7 +196,7 @@ Hence $Q_\mathcal C$ is an upper bound of the chain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists a maximal element
 $$
@@ -210,7 +210,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the poset is nonempty, and by step <1>4 every chain has an upper bound in the poset.
+By step [](#s1-1){.pf-ref}, the poset is nonempty, and by step [](#s1-4){.pf-ref} every chain has an upper bound in the poset.
 Zorn's lemma therefore gives a maximal element
 $$
 P_0\in\mathcal P.
@@ -220,7 +220,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The prime ideal $P_0$ is minimal under ordinary inclusion among prime ideals contained in $P$.
 
@@ -264,7 +264,7 @@ Thus no prime ideal is properly contained in $P_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore there exists a prime ideal
 $$
@@ -277,7 +277,7 @@ that does not properly contain any prime ideal.
 
 ::: pf-proof
 
-Step <1>5 constructs $P_0\subseteq P$, and step <1>6 proves its minimality.
+Step [](#s1-5){.pf-ref} constructs $P_0\subseteq P$, and step [](#s1-6){.pf-ref} proves its minimality.
 
 :::
 
@@ -285,7 +285,7 @@ Step <1>5 constructs $P_0\subseteq P$, and step <1>6 proves its minimality.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

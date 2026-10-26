@@ -39,7 +39,7 @@ Let $L$ denote the arc length of the graph of $F$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative $F'$ is strictly decreasing on $[0,1]$.
 
@@ -60,7 +60,7 @@ for some $\xi\in(x,y)$. Hence $F'(y)<F'(x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a unique $c\in(0,1)$ such that
 \[
@@ -82,7 +82,7 @@ Because
 \[
 F(1)-F(0)=\int_0^1F'(x)\,dx=0,
 \]
-$F'$ cannot be nonpositive everywhere, and it cannot be nonnegative everywhere, since by step <1>1 it is strictly decreasing. Thus
+$F'$ cannot be nonpositive everywhere, and it cannot be nonnegative everywhere, since by step [](#s1-1){.pf-ref} it is strictly decreasing. Thus
 \[
 F'(0)>0
 \qquad\text{and}\qquad
@@ -94,7 +94,7 @@ Continuity of $F'$ gives a point $c\in(0,1)$ with $F'(c)=0$. Strict decrease mak
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -104,7 +104,7 @@ One has
 
 ::: pf-proof
 
-Using the sign information from step <1>2,
+Using the sign information from step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \int_0^1|F'(x)|\,dx
@@ -126,7 +126,7 @@ because $F(0)=F(1)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -144,13 +144,13 @@ implies
 \[
 0\le F(c)\le1.
 \]
-Apply step <1>3.
+Apply step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The arc length satisfies
 \[
@@ -168,7 +168,7 @@ For every real $u$,
 \[
 \sqrt{1+u^2}\le1+|u|,
 \]
-with strict inequality whenever $u\ne0$. By step <1>2, $F'(x)\ne0$ except at the single point $c$. Hence the inequality is strict on two intervals of positive length, so
+with strict inequality whenever $u\ne0$. By step [](#s1-2){.pf-ref}, $F'(x)\ne0$ except at the single point $c$. Hence the inequality is strict on two intervals of positive length, so
 \[
 \int_0^1\sqrt{1+F'(x)^2}\,dx
 <
@@ -181,7 +181,7 @@ with strict inequality whenever $u\ne0$. By step <1>2, $F'(x)\ne0$ except at the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The arc length is strictly less than $3$:
 \[
@@ -191,7 +191,7 @@ The arc length is strictly less than $3$:
 
 ::: pf-proof
 
-By steps <1>4--<1>5,
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 L
 <
@@ -207,7 +207,7 @@ L
 
 ::: pf-qed
 
-Step <1>6 is the required estimate.
+Step [](#s1-6){.pf-ref} is the required estimate.
 
 :::
 

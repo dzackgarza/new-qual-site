@@ -33,7 +33,7 @@ III. $\sum_{n=0}^{\infty} \frac{(n+1)^3}{5(n+2)(n+3)(n+4)}$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Series I converges.
 
@@ -55,7 +55,7 @@ $\sum_{n=1}^\infty n^{-5/4}$ converges, so the comparison test proves convergenc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Series II diverges.
 
@@ -82,7 +82,7 @@ $\sum_{n=2}^\infty 1/(n\log n)$ diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Series III diverges.
 
@@ -101,7 +101,7 @@ Hence the term test implies divergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Only series I converges, so the answer is
 $$
@@ -111,7 +111,7 @@ $$
 
 ::: pf-proof
 
-This follows from steps <1>1--<1>3.
+This follows from steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -119,7 +119,7 @@ This follows from steps <1>1--<1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested choice.
+Step [](#s1-4){.pf-ref} gives the requested choice.
 
 :::
 

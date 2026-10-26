@@ -23,7 +23,7 @@ $p(a)=0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 After translating $a$ to the origin and making an invertible complex
 linear change of coordinates, it is enough to consider the case
@@ -55,7 +55,7 @@ open neighborhood.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $U$ be any open neighborhood of $0$ in $\CC^n$. There exist
 $\rho>0$ and an open neighborhood $V$ of $0$ in $\CC^{n-1}$ such that
@@ -76,7 +76,7 @@ the displayed form is contained in $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 After shrinking $V$ if necessary, for every $z'\in V$ and every
 $\abs{\zeta}=\rho$ one has
@@ -87,7 +87,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 m\coloneqq\min_{\abs{\zeta}=\rho}\abs{q(\zeta)}>0.
 $$
@@ -103,7 +103,7 @@ throughout $V\times\{\abs{\zeta}=\rho\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z'\in V$, the one-variable polynomial
 $\zeta\mapsto p(z',\zeta)$ has at least one zero with $\abs{\zeta}<\rho$.
@@ -111,7 +111,7 @@ $\zeta\mapsto p(z',\zeta)$ has at least one zero with $\abs{\zeta}<\rho$.
 
 ::: pf-proof
 
-By step <1>3 and Rouché's theorem, $p(z',\cdot)$ and $q$ have the same number
+By step [](#s1-3){.pf-ref} and Rouché's theorem, $p(z',\cdot)$ and $q$ have the same number
 of zeros in the disc $\abs{\zeta}<\rho$, counted with multiplicity. Since
 $q(0)=0$, that number is at least one.
 
@@ -119,7 +119,7 @@ $q(0)=0$, that number is at least one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The neighborhood $U$ contains infinitely many distinct zeros of $p$.
 
@@ -127,19 +127,19 @@ The neighborhood $U$ contains infinitely many distinct zeros of $p$.
 ::: pf-proof
 
 Because $n-1\geq1$, the open set $V\subseteq\CC^{n-1}$ contains infinitely
-many distinct points $z'_1,z'_2,\ldots$. By step <1>4, choose
+many distinct points $z'_1,z'_2,\ldots$. By step [](#s1-4){.pf-ref}, choose
 $\zeta_k$ with $\abs{\zeta_k}<\rho$ and
 $$
 p(z'_k,\zeta_k)=0.
 $$
-Step <1>2 places every $(z'_k,\zeta_k)$ in $U$, and the points are distinct
+Step [](#s1-2){.pf-ref} places every $(z'_k,\zeta_k)$ in $U$, and the points are distinct
 because their first $n-1$ coordinates are distinct.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every open neighborhood of every zero of the original polynomial contains
 infinitely many zeros.
@@ -147,7 +147,7 @@ infinitely many zeros.
 
 ::: pf-proof
 
-Step <1>5 proves the statement in the normalized coordinates, and step <1>1
+Step [](#s1-5){.pf-ref} proves the statement in the normalized coordinates, and step [](#s1-1){.pf-ref}
 transports it back through the invertible affine change of coordinates.
 
 :::
@@ -156,7 +156,7 @@ transports it back through the invertible affine change of coordinates.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

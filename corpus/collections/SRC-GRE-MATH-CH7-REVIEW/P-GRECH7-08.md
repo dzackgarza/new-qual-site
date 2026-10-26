@@ -35,7 +35,7 @@ How many possible combinations must the man try to unlock his safe?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The third number has exactly $10$ possible values.
 
@@ -52,7 +52,7 @@ so there are exactly $10$ choices for the third number. Each choice determines t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Once the second and third numbers are fixed, there are $58$ choices for the first number and then $57$ choices for the fourth number.
 
@@ -65,7 +65,7 @@ The second and third numbers are distinct because $2p\ne p$ for every positive p
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The number of possible combinations is
 $$
@@ -76,7 +76,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>1 there are $10$ choices for the constrained second-third pair, and by step <1>2 each such pair admits $58\cdot57$ ordered choices for the first and fourth positions. The multiplication principle gives
+By step [](#s1-1){.pf-ref} there are $10$ choices for the constrained second-third pair, and by step [](#s1-2){.pf-ref} each such pair admits $58\cdot57$ ordered choices for the first and fourth positions. The multiplication principle gives
 $$
 10\cdot58\cdot57=33{,}060.
 $$
@@ -87,7 +87,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested number of possible combinations.
+Step [](#s1-3){.pf-ref} gives the requested number of possible combinations.
 
 :::
 

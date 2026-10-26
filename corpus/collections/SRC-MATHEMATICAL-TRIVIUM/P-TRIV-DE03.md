@@ -27,7 +27,7 @@ which contains the initial point $x=0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Divide the equation by $x+1$:
 $$
@@ -77,7 +77,7 @@ on $x>-1$. Exponentiating gives the stated factor.
 
 ::: pf-step
 
-Multiplying step <1>1 by $\mu(x)$ gives
+Multiplying step [](#s1-1){.pf-ref} by $\mu(x)$ gives
 $$
 \frac d{dx}
 \left[
@@ -107,7 +107,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Integrating gives
 $$
@@ -127,7 +127,7 @@ An antiderivative of $(x+1)^{-1/2}$ is $2\sqrt{x+1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -141,13 +141,13 @@ $$
 
 ::: pf-proof
 
-Multiply step <1>4 by $(x+1)^2$.
+Multiply step [](#s1-4){.pf-ref} by $(x+1)^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The initial condition $y(0)=3$ gives
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-proof
 
-Substitute $x=0$ into step <1>5:
+Substitute $x=0$ into step [](#s1-5){.pf-ref}:
 $$
 3
 =
@@ -170,7 +170,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the solution is
 $$
@@ -188,7 +188,7 @@ $$
 
 ::: pf-proof
 
-Substitute $C=1$ from step <1>6 into step <1>5.
+Substitute $C=1$ from step [](#s1-6){.pf-ref} into step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -196,7 +196,7 @@ Substitute $C=1$ from step <1>6 into step <1>5.
 
 ::: pf-qed
 
-Step <1>7 satisfies both the differential equation and the initial condition.
+Step [](#s1-7){.pf-ref} satisfies both the differential equation and the initial condition.
 
 :::
 

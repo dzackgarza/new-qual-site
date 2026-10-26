@@ -50,7 +50,7 @@ Thus the eigenvalues are $1$ and $4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Eigenvectors for the eigenvalues $1$ and $4$ are respectively
 $$
@@ -76,7 +76,7 @@ Taking $y=1-i$ gives $(1+i)(1-i)=2$, hence $x=1$, which gives $v_4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix
 $$
@@ -95,7 +95,7 @@ $$
 
 ::: pf-proof
 
-The columns of $P$ are the eigenvectors from step <1>2, so
+The columns of $P$ are the eigenvectors from step [](#s1-2){.pf-ref}, so
 $$
 AP=P\begin{pmatrix}1&0\\0&4\end{pmatrix}.
 $$
@@ -111,7 +111,7 @@ so $P$ is invertible. Multiplying the displayed relation on the left by $P^{-1}$
 
 ::: pf-qed
 
-Step <1>3 provides the required invertible matrix and diagonal form.
+Step [](#s1-3){.pf-ref} provides the required invertible matrix and diagonal form.
 
 :::
 

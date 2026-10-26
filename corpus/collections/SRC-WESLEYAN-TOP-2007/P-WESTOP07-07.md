@@ -18,7 +18,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every second-countable space is separable.
 
@@ -97,7 +97,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Sorgenfrey line
 $$
@@ -132,7 +132,7 @@ Thus the Sorgenfrey line is separable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Sorgenfrey line is not second countable.
 
@@ -225,7 +225,7 @@ is not second countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -312,7 +312,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Restriction to
 $$
@@ -340,7 +340,7 @@ by
 $$
 R(f)=f|_D.
 $$
-Step <1>4 says that
+Step [](#s1-4){.pf-ref} says that
 $$
 R(f)=R(g)
 $$
@@ -358,7 +358,7 @@ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -413,7 +413,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -430,7 +430,7 @@ $$
 
 ::: pf-proof
 
-Combine the injection from step <1>5 with the cardinal bound from step <1>6.
+Combine the injection from step [](#s1-5){.pf-ref} with the cardinal bound from step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -438,7 +438,7 @@ Combine the injection from step <1>5 with the cardinal bound from step <1>6.
 
 ::: pf-qed
 
-Step <1>1 proves part (1), steps <1>2--<1>3 prove part (2), and steps <1>4--<1>7 prove part (3).
+Step [](#s1-1){.pf-ref} proves part (1), steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove part (2), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (3).
 
 :::
 

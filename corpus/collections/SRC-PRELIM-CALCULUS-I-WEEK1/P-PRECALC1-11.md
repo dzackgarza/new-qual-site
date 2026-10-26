@@ -24,7 +24,7 @@ x>0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since \(x>0\),
 \[
@@ -45,7 +45,7 @@ for positive \(x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiate the exponent:
 \[
@@ -81,7 +81,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By the chain rule,
 \[
@@ -98,13 +98,13 @@ e^{(2+\sin x)\log x}
 
 ::: pf-proof
 
-Differentiate the exponential expression from step <1>1 using step <1>2.
+Differentiate the exponential expression from step [](#s1-1){.pf-ref} using step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -122,8 +122,8 @@ x^{2+\sin x}
 
 ::: pf-proof
 
-Replace the exponential factor in step <1>3 by \(x^{2+\sin x}\) using
-step <1>1.
+Replace the exponential factor in step [](#s1-3){.pf-ref} by \(x^{2+\sin x}\) using
+step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -131,7 +131,7 @@ step <1>1.
 
 ::: pf-qed
 
-Step <1>4 is the requested derivative.
+Step [](#s1-4){.pf-ref} is the requested derivative.
 
 :::
 

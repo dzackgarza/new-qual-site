@@ -129,7 +129,7 @@ The derivative of $z^2+1$ at $-i$ is $-2i$, giving the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the limiting contour integral is
 $$
@@ -158,13 +158,13 @@ I_1
 \right),
 $$
 provided the two circular arcs vanish. That vanishing is verified in
-steps <1>5--<1>6.
+steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The outer-circle contribution tends to zero as $R\to\infty$.
 
@@ -195,7 +195,7 @@ Since $p<1$, the right-hand side tends to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The inner-circle contribution tends to zero as
 $\varepsilon\to0^+$.
@@ -229,7 +229,7 @@ because $p>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The upper-ray contribution tends to
 $$
@@ -257,7 +257,7 @@ integral for $I_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The lower-ray contribution tends to
 $$
@@ -293,7 +293,7 @@ Take the limits.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -305,14 +305,14 @@ $$
 
 ::: pf-proof
 
-By steps <1>5--<1>6 the circular arcs vanish, and by steps <1>7--<1>8 the
+By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} the circular arcs vanish, and by steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} the
 two ray contributions sum to the displayed expression.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 One has
 $$
@@ -330,7 +330,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>4 and <1>9,
+By steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref},
 $$
 I_2
 =
@@ -384,8 +384,8 @@ which yields the stated formula.
 
 ::: pf-qed
 
-Step <1>4 evaluates the contour integral $I_1$, step <1>9 gives its relation
-to $I_2$, and step <1>10 gives the requested real integral.
+Step [](#s1-4){.pf-ref} evaluates the contour integral $I_1$, step [](#s1-9){.pf-ref} gives its relation
+to $I_2$, and step [](#s1-10){.pf-ref} gives the requested real integral.
 
 :::
 

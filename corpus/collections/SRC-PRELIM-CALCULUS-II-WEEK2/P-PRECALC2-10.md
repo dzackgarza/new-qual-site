@@ -43,7 +43,7 @@ The distance from the graph to the \(x\)-axis is \(y=1/x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the volume is
 \[
@@ -68,7 +68,7 @@ Integrate from \(x=1\) to infinity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For \(R>1\),
 \[
@@ -90,7 +90,7 @@ An antiderivative of \(x^{-2}\) is \(-x^{-1}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Letting \(R\to\infty\),
 \[
@@ -101,7 +101,7 @@ V=\pi}.
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 V
 =
@@ -118,7 +118,7 @@ V
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The derivative of the profile is
 \[
@@ -135,7 +135,7 @@ Differentiate \(f(x)=x^{-1}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The surface area is
 \[
@@ -160,13 +160,13 @@ S
 f(x)
 \sqrt{1+f'(x)^2}\,dx.
 \]
-Use \(f(x)=1/x\) and step <1>5.
+Use \(f(x)=1/x\) and step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every \(x\ge1\),
 \[
@@ -191,7 +191,7 @@ Taking square roots preserves the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -205,13 +205,13 @@ S
 
 ::: pf-proof
 
-Apply step <1>7 pointwise to the nonnegative integrand in step <1>6.
+Apply step [](#s1-7){.pf-ref} pointwise to the nonnegative integrand in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The comparison integral diverges:
 \[
@@ -239,7 +239,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -249,14 +249,14 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>8--<1>9, the surface-area integral dominates a divergent
+By steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}, the surface-area integral dominates a divergent
 nonnegative integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Thus Gabriel’s horn has
 \[
@@ -270,7 +270,7 @@ but
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>10.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-10){.pf-ref}.
 
 :::
 
@@ -278,7 +278,7 @@ Combine steps <1>4 and <1>10.
 
 ::: pf-qed
 
-Step <1>11 gives both requested quantities.
+Step [](#s1-11){.pf-ref} gives both requested quantities.
 
 :::
 

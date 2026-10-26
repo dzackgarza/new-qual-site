@@ -39,7 +39,7 @@ Substitute the exponential trial function $y=e^{\lambda x}$ into the differentia
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence the general solution is
 $$
@@ -57,7 +57,7 @@ A repeated characteristic root $\lambda=3$ of multiplicity two gives the indepen
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The condition $y(1)=1$ gives
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-Substitute $x=1$ into step <1>2:
+Substitute $x=1$ into step [](#s1-2){.pf-ref}:
 $$
 (C_1+C_2)e^3=1.
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The derivative is
 $$
@@ -90,13 +90,13 @@ $$
 
 ::: pf-proof
 
-Differentiate step <1>2 using the product rule.
+Differentiate step [](#s1-2){.pf-ref} using the product rule.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The condition $y'(3)=0$ gives
 $$
@@ -106,15 +106,15 @@ $$
 
 ::: pf-proof
 
-Substitute $x=3$ into step <1>4. Since $e^9\neq0$, only the coefficient in parentheses must vanish.
+Substitute $x=3$ into step [](#s1-4){.pf-ref}. Since $e^9\neq0$, only the coefficient in parentheses must vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Solving steps <1>3 and <1>5 gives
+Solving steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} gives
 $$
 C_1
 =
@@ -128,11 +128,11 @@ $$
 
 ::: pf-proof
 
-From step <1>5,
+From step [](#s1-5){.pf-ref},
 $$
 C_1=-\frac{10}{3}C_2.
 $$
-Substitute into step <1>3:
+Substitute into step [](#s1-3){.pf-ref}:
 $$
 -\frac73C_2=e^{-3}.
 $$
@@ -146,7 +146,7 @@ and then $C_1=10e^{-3}/7$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -161,13 +161,13 @@ $$
 
 ::: pf-proof
 
-Substitute the constants from step <1>6 into step <1>2 and factor out $e^{-3}/7$.
+Substitute the constants from step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref} and factor out $e^{-3}/7$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The derivative of the solution is
 $$
@@ -179,7 +179,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the formula in step <1>7.
+Differentiate the formula in step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -197,7 +197,7 @@ $$
 
 ::: pf-proof
 
-Substitute $x=1$ into step <1>7 and $x=3$ into step <1>8.
+Substitute $x=1$ into step [](#s1-7){.pf-ref} and $x=3$ into step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -205,7 +205,7 @@ Substitute $x=1$ into step <1>7 and $x=3$ into step <1>8.
 
 ::: pf-qed
 
-Step <1>7 gives the unique solution satisfying both boundary conditions.
+Step [](#s1-7){.pf-ref} gives the unique solution satisfying both boundary conditions.
 
 :::
 

@@ -21,7 +21,7 @@ Let R be a non-zero commutative ring with 1. Show that an ideal M of R is maxima
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume
 $$
@@ -51,7 +51,7 @@ so the quotient is nonzero. Since $R$ is commutative with identity, so is $R/M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonzero element of $R/M$ is invertible.
 
@@ -103,7 +103,7 @@ Let
 $$
 r+M\ne0+M.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 1\in M+(r).
 $$
@@ -138,7 +138,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, if $M$ is maximal, then
 $$
@@ -148,13 +148,13 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives a nonzero commutative ring with identity, and step <1>3 shows every nonzero element is invertible.
+Step [](#s1-1){.pf-ref} gives a nonzero commutative ring with identity, and step [](#s1-3){.pf-ref} shows every nonzero element is invertible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, assume
 $$
@@ -179,7 +179,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -251,7 +251,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, if $R/M$ is a field, then
 $$
@@ -261,13 +261,13 @@ $$
 
 ::: pf-proof
 
-Step <1>5 shows that $M$ is proper. Step <1>6 shows that every ideal properly containing $M$ is the whole ring. This is exactly maximality.
+Step [](#s1-5){.pf-ref} shows that $M$ is proper. Step [](#s1-6){.pf-ref} shows that every ideal properly containing $M$ is the whole ring. This is exactly maximality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -281,7 +281,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>7.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}.
 
 :::
 
@@ -289,7 +289,7 @@ Combine steps <1>4 and <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required equivalence.
+Step [](#s1-8){.pf-ref} is the required equivalence.
 
 :::
 

@@ -22,7 +22,7 @@ Show that $F_n,F\in C([0,1])$ and that $F_n\to F$ uniformly on $[0,1]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The statement
 \[
@@ -63,7 +63,7 @@ Every weakly convergent sequence in a Banach space is norm bounded. Apply this s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The functions $F_n$ and $F$ are continuous on $[0,1]$, and $(F_n)$ is equicontinuous.
 
@@ -93,7 +93,7 @@ The bound is independent of $n$, so $(F_n)$ is equicontinuous. The same estimate
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The family $(F_n)$ is uniformly bounded on $[0,1]$.
 
@@ -115,7 +115,7 @@ M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every fixed $x\in[0,1]$,
 \[
@@ -148,7 +148,7 @@ F(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -168,9 +168,9 @@ Suppose uniform convergence failed. Then there would exist $\varepsilon>0$ and a
 (k\ge1).
 \]
 
-By steps <1>3 and <1>4, the subsequence is uniformly bounded and equicontinuous. Arzelà--Ascoli therefore gives a further subsequence converging uniformly on $[0,1]$ to some continuous function $G$.
+By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the subsequence is uniformly bounded and equicontinuous. Arzelà--Ascoli therefore gives a further subsequence converging uniformly on $[0,1]$ to some continuous function $G$.
 
-But step <1>5 gives pointwise convergence of the full sequence to $F$, so the same further subsequence converges pointwise to $F$. Hence
+But step [](#s1-5){.pf-ref} gives pointwise convergence of the full sequence to $F$, so the same further subsequence converges pointwise to $F$. Hence
 \[
 G=F.
 \]
@@ -186,7 +186,7 @@ Therefore the full sequence converges uniformly.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), while steps <1>3 and <1>6 prove part (b).
+Step [](#s1-1){.pf-ref} answers part (a), while steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} prove part (b).
 
 :::
 

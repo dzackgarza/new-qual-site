@@ -27,7 +27,7 @@ Use the convention that the complex inner product is linear in its first argumen
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $w=0$, then the Cauchy--Schwarz inequality holds.
 
@@ -52,7 +52,7 @@ are zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $w\ne0$ and define
 $$
@@ -86,7 +86,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -98,7 +98,7 @@ $$
 
 ::: pf-proof
 
-Since $v=u+\alpha w$ and $u\perp w$ by step <1>2,
+Since $v=u+\alpha w$ and $u\perp w$ by step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \norm{v}^2
@@ -112,7 +112,7 @@ because both cross terms vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -124,7 +124,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 and nonnegativity of $\norm{u}^2$ give
+Step [](#s1-3){.pf-ref} and nonnegativity of $\norm{u}^2$ give
 $$
 \norm{v}^2
 \ge
@@ -142,7 +142,7 @@ Multiplying by the positive number $\norm{w}^2$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -156,7 +156,7 @@ $$
 
 ::: pf-proof
 
-Both sides in step <1>4 are nonnegative. Taking square roots gives the displayed inequality.
+Both sides in step [](#s1-4){.pf-ref} are nonnegative. Taking square roots gives the displayed inequality.
 
 :::
 
@@ -164,7 +164,7 @@ Both sides in step <1>4 are nonnegative. Taking square roots gives the displayed
 
 ::: pf-qed
 
-Step <1>1 handles $w=0$, and steps <1>2--<1>5 handle $w\ne0$.
+Step [](#s1-1){.pf-ref} handles $w=0$, and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} handle $w\ne0$.
 
 :::
 

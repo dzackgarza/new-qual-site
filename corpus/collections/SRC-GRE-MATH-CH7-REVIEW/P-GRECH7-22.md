@@ -31,7 +31,7 @@ The source shows the three graphs I, II and III in a figure that is not reproduc
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 From the source figure, Graph I has edge set
 $$
@@ -55,7 +55,7 @@ These are the three edges visibly incident to the four labeled vertices in each 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Graphs I and II are isomorphic.
 
@@ -72,7 +72,7 @@ $$
 \qquad
 \phi(D)=H.
 $$
-This is a bijection on the four vertices, and by step <1>1 it sends the three edges
+This is a bijection on the four vertices, and by step [](#s1-1){.pf-ref} it sends the three edges
 $$
 AB,\ BC,\ CD
 $$
@@ -86,7 +86,7 @@ which are exactly the edges of Graph II. Hence adjacency and nonadjacency are pr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Graphs I and III are isomorphic.
 
@@ -103,26 +103,26 @@ $$
 \qquad
 \psi(D)=M.
 $$
-By step <1>1, the edges $AB,BC,CD$ map respectively to $JK,KL,LM$, exactly the edges of Graph III. Thus $\psi$ is a graph isomorphism.
+By step [](#s1-1){.pf-ref}, the edges $AB,BC,CD$ map respectively to $JK,KL,LM$, exactly the edges of Graph III. Thus $\psi$ is a graph isomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently all three graphs are mutually isomorphic.
 
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 give Graph I isomorphic to both Graph II and Graph III. Isomorphism is transitive, so Graph II and Graph III are also isomorphic.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give Graph I isomorphic to both Graph II and Graph III. Isomorphism is transitive, so Graph II and Graph III are also isomorphic.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the correct choice for the graph drawn in the source is
 $$
@@ -133,7 +133,7 @@ which is (E), not the source's supplied answer (C).
 
 ::: pf-proof
 
-This is exactly the conclusion of step <1>4. The source solution only shows that one particular proposed bijection from I to II fails; failure of one bijection does not prove that two graphs are nonisomorphic, and step <1>2 gives an explicit isomorphism.
+This is exactly the conclusion of step [](#s1-4){.pf-ref}. The source solution only shows that one particular proposed bijection from I to II fails; failure of one bijection does not prove that two graphs are nonisomorphic, and step [](#s1-2){.pf-ref} gives an explicit isomorphism.
 
 :::
 
@@ -141,7 +141,7 @@ This is exactly the conclusion of step <1>4. The source solution only shows that
 
 ::: pf-qed
 
-Step <1>5 gives the requested classification and identifies the source-answer error.
+Step [](#s1-5){.pf-ref} gives the requested classification and identifies the source-answer error.
 
 :::
 

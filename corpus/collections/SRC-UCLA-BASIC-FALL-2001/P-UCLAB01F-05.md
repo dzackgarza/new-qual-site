@@ -43,7 +43,7 @@ D(h,k)=f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every nonzero $h,k$, there are points $\xi$ between $a$ and $a+h$ and $\eta$ between $b$ and $b+k$ such that
 \[
@@ -70,7 +70,7 @@ Combining these identities proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every nonzero $h,k$, there are points $\xi'$ between $a$ and $a+h$ and $\eta'$ between $b$ and $b+k$ such that
 \[
@@ -97,7 +97,7 @@ Combining these identities proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At $(a,b)$,
 \[
@@ -111,7 +111,7 @@ At $(a,b)$,
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 give
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give
 \[
 (f_x)_y(\xi,\eta)
 =
@@ -128,14 +128,14 @@ As $(h,k)\to(0,0)$, both intermediate points tend to $(a,b)$. Continuity of the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The mixed partial derivatives agree at every point of $\mathbb R^2$.
 
 
 ::: pf-proof
 
-The point $(a,b)$ was arbitrary, so step <1>3 holds throughout $\mathbb R^2$.
+The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} holds throughout $\mathbb R^2$.
 
 :::
 
@@ -143,7 +143,7 @@ The point $(a,b)$ was arbitrary, so step <1>3 holds throughout $\mathbb R^2$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

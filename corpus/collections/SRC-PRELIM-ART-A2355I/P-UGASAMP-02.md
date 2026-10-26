@@ -24,7 +24,7 @@ is continuous at $a=2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function \(f:I\to\mathbb R\) is continuous at \(a\in I\) if for every \(\varepsilon>0\) there exists \(\delta>0\) such that, for every \(x\in I\),
 \[
@@ -42,7 +42,7 @@ This is the \(\varepsilon\)--\(\delta\) definition of continuity at a point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(|x-2|<1\), then
 \[
@@ -66,7 +66,7 @@ so \(|x+2|<5\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Given \(\varepsilon>0\), set
 \[
@@ -80,7 +80,7 @@ If \(|x-2|<\delta\), then
 
 ::: pf-proof
 
-Since \(\delta\le1\), the hypothesis \(|x-2|<\delta\) implies \(|x-2|<1\). By step <1>2,
+Since \(\delta\le1\), the hypothesis \(|x-2|<\delta\) implies \(|x-2|<1\). By step [](#s1-2){.pf-ref},
 \[
 |x+2|<5.
 \]
@@ -101,14 +101,14 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(f(x)=x^2\) is continuous at \(2\).
 
 
 ::: pf-proof
 
-Step <1>3 verifies the definition in step <1>1 with \(a=2\) and \(f(2)=4\). Thus
+Step [](#s1-3){.pf-ref} verifies the definition in step [](#s1-1){.pf-ref} with \(a=2\) and \(f(2)=4\). Thus
 \[
 \boxed{f(x)=x^2\text{ is continuous at }2.}
 \]
@@ -119,7 +119,7 @@ Step <1>3 verifies the definition in step <1>1 with \(a=2\) and \(f(2)=4\). Thus
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition, and step <1>4 proves the required continuity.
+Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-4){.pf-ref} proves the required continuity.
 
 :::
 

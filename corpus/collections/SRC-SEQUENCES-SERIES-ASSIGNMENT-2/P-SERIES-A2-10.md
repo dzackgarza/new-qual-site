@@ -51,7 +51,7 @@ nonzero, it must be positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose
 \[
@@ -71,7 +71,7 @@ Apply the definition of convergence to the sequence \(na_n\to\ell\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence, for \(n\ge N\),
 \[
@@ -81,7 +81,7 @@ na_n>\frac{\ell}{2}.
 
 ::: pf-proof
 
-From step <1>2,
+From step [](#s1-2){.pf-ref},
 \[
 na_n
 >
@@ -94,7 +94,7 @@ na_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -106,13 +106,13 @@ for every \(n\ge N\).
 
 ::: pf-proof
 
-Divide step <1>3 by the positive integer \(n\).
+Divide step [](#s1-3){.pf-ref} by the positive integer \(n\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The comparison series
 \[
@@ -130,7 +130,7 @@ It is the positive constant \(\ell/2\) times the harmonic series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -142,14 +142,14 @@ Hence
 
 ::: pf-proof
 
-By steps <1>4--<1>5, the tail of \(\sum a_n\) dominates a divergent
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, the tail of \(\sum a_n\) dominates a divergent
 nonnegative series.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Absolute convergence implies
 \[
@@ -177,13 +177,13 @@ for every \(n\ge N\).
 
 ::: pf-proof
 
-Apply step <1>7 with \(\varepsilon=1\).
+Apply step [](#s1-7){.pf-ref} with \(\varepsilon=1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If
 \[
@@ -208,7 +208,7 @@ Apply this with \(x=|a_n|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -225,13 +225,13 @@ The tail is bounded termwise by the convergent series
 \[
 \sum_{n=N}^{\infty}|a_n|
 \]
-using step <1>9. Finitely many initial terms do not affect convergence.
+using step [](#s1-9){.pf-ref}. Finitely many initial terms do not affect convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 In particular, whenever \(a_n^p\) is real-defined for every \(n\),
 \[
@@ -247,13 +247,13 @@ Whenever the real power is defined,
 \[
 |a_n^p|=|a_n|^p.
 \]
-Apply step <1>10.
+Apply step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Define
 \[
@@ -270,7 +270,7 @@ This will give the requested conditional-convergence counterexample.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The series
 \[
@@ -294,7 +294,7 @@ decreases to zero, so the alternating-series test applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 It does not converge absolutely.
 
@@ -312,7 +312,7 @@ which is a divergent \(p\)-series with exponent \(1/2\le1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -323,13 +323,13 @@ converges conditionally.
 
 ::: pf-proof
 
-Combine steps <1>13--<1>14.
+Combine steps [](#s1-13){.pf-ref} through [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Take
 \[
@@ -355,7 +355,7 @@ a_n^2=\frac1n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence
 \[
@@ -375,14 +375,14 @@ This is the harmonic series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Thus absolute convergence in part (b) is essential.
 
 
 ::: pf-proof
 
-Steps <1>15--<1>17 give a conditionally convergent series whose square
+Steps [](#s1-15){.pf-ref} through [](#s1-17){.pf-ref} give a conditionally convergent series whose square
 series diverges.
 
 :::
@@ -391,8 +391,8 @@ series diverges.
 
 ::: pf-qed
 
-Step <1>6 proves part (a); steps <1>10--<1>11 prove the power-series
-conclusion under absolute convergence; and steps <1>12--<1>18 give the
+Step [](#s1-6){.pf-ref} proves part (a); steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} prove the power-series
+conclusion under absolute convergence; and steps [](#s1-12){.pf-ref} through [](#s1-18){.pf-ref} give the
 counterexample.
 
 :::

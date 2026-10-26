@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $g$ is entire.
 
@@ -46,7 +46,7 @@ The function $f$ is entire by hypothesis, multiplication by $i$ preserves entire
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $g$ is bounded:
 $$
@@ -92,7 +92,7 @@ The function $g$ is constant.
 
 ::: pf-proof
 
-By step <1>1, $g$ is entire, and by step <1>2 it is bounded. Liouville's theorem therefore implies that $g$ is constant.
+By step [](#s1-1){.pf-ref}, $g$ is entire, and by step [](#s1-2){.pf-ref} it is bounded. Liouville's theorem therefore implies that $g$ is constant.
 
 :::
 
@@ -125,7 +125,7 @@ for every $z\in\CC$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $f$ is constant.
 
@@ -140,7 +140,7 @@ An entire function with identically zero derivative is constant on the connected
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The arc integral can be written as
 $$
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\varepsilon>0$, there exists $R_\varepsilon>R$ such that
 $$
@@ -109,7 +109,7 @@ so the asserted estimate follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $R'>R_\varepsilon$,
 $$
@@ -123,7 +123,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \int_L f(z)\,dz-i\theta k
@@ -134,7 +134,7 @@ i\int_0^\theta
 \right)\,dt.
 \end{aligned}
 $$
-Therefore step <1>2 gives
+Therefore step [](#s1-2){.pf-ref} gives
 $$
 \begin{aligned}
 \left|
@@ -154,7 +154,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -166,7 +166,7 @@ $$
 
 ::: pf-proof
 
-Given any $\delta>0$, apply step <1>3 with
+Given any $\delta>0$, apply step [](#s1-3){.pf-ref} with
 $$
 \varepsilon=\frac{\delta}{\theta}.
 $$
@@ -185,7 +185,7 @@ This is exactly the asserted limit.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

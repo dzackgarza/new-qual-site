@@ -35,7 +35,7 @@ Homotopy Groups of Spheres*, Lemma 1.2.3 and Corollary 1.2.4.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is a fibration
 \[
@@ -66,7 +66,7 @@ fibration.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $u$ induces an isomorphism on $\pi_3$, and therefore
 \[
@@ -127,10 +127,10 @@ so the same exact sequence gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The cohomology Serre spectral sequence of the fibration in step
-<1>1 has
+[](#s1-1){.pf-ref} has
 \[
 E_2^{s,t}
 \cong
@@ -176,7 +176,7 @@ Substitution into the Serre $E_2$-page gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The transgression satisfies
 \[
@@ -213,7 +213,7 @@ d_3(c_2)=u_3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $m\ge1$,
 \[
@@ -236,7 +236,7 @@ c_2^j d_3(c_2)c_2^{m-1-j}\\
 m u_3c_2^{m-1}
 \end{aligned}
 \]
-by step <1>4.
+by step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -267,7 +267,7 @@ Therefore the only possible nonzero differential is
 d_3:E_3^{0,t}\to E_3^{3,t-2}.
 \]
 
-By step <1>5, in fiber degree $2m$ this map is multiplication by $m$:
+By step [](#s1-5){.pf-ref}, in fiber degree $2m$ this map is multiplication by $m$:
 \[
 \mathbb Z\langle c_2^m\rangle
 \xrightarrow{\times m}
@@ -296,7 +296,7 @@ giving the stated cohomology groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The homology of $F$ is
 \[
@@ -326,9 +326,9 @@ H^n(F;\mathbb Z)
 0.
 \]
 
-The Serre spectral sequence in step <1>3 has finitely generated entries in
+The Serre spectral sequence in step [](#s1-3){.pf-ref} has finitely generated entries in
 every total degree, so $H_n(F;\mathbb Z)$ is finitely generated for every
-$n$. Also $F$ is $3$-connected by step <1>2.
+$n$. Also $F$ is $3$-connected by step [](#s1-2){.pf-ref}.
 
 Apply the universal coefficient sequences successively in increasing
 degree. If
@@ -385,7 +385,7 @@ the homology calculation in Ravenel, Lemma 1.2.3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let $\mathcal C_p$ be the Serre class of finite abelian groups whose
 orders are prime to $p$. Then
@@ -405,7 +405,7 @@ is
 
 ::: pf-proof
 
-By step <1>7, the only nonzero positive homology groups below degree $2p$
+By step [](#s1-7){.pf-ref}, the only nonzero positive homology groups below degree $2p$
 are
 \[
 H_{2m}(F)\cong\mathbb Z/m
@@ -415,7 +415,7 @@ H_{2m}(F)\cong\mathbb Z/m
 Since $m<p$, the prime $p$ does not divide $m$. Hence each such group lies
 in $\mathcal C_p$.
 
-At degree $2p$, step <1>7 gives
+At degree $2p$, step [](#s1-7){.pf-ref} gives
 \[
 H_{2p}(F)\cong\mathbb Z/p.
 \]
@@ -424,7 +424,7 @@ H_{2p}(F)\cong\mathbb Z/p.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Serre's Hurewicz theorem modulo the Serre class $\mathcal C_p$
 implies
@@ -447,8 +447,8 @@ is
 
 ::: pf-proof
 
-The space $F$ is simply connected, indeed $3$-connected by step <1>2.
-Step <1>8 says that, modulo the Serre class $\mathcal C_p$, its reduced
+The space $F$ is simply connected, indeed $3$-connected by step [](#s1-2){.pf-ref}.
+Step [](#s1-8){.pf-ref} says that, modulo the Serre class $\mathcal C_p$, its reduced
 homology vanishes below degree $2p$ and is $\mathbb Z/p$ in degree
 $2p$.
 
@@ -469,7 +469,7 @@ Corollary 1.2.4.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every prime $p$,
 \[
@@ -491,13 +491,13 @@ whereas
 
 ::: pf-proof
 
-For every $i>3$, step <1>2 gives
+For every $i>3$, step [](#s1-2){.pf-ref} gives
 \[
 \pi_i(F)
 \cong
 \pi_i(S^3).
 \]
-Transport the conclusion of step <1>9 through these isomorphisms.
+Transport the conclusion of step [](#s1-9){.pf-ref} through these isomorphisms.
 
 For $p=2$, the first relevant degree is
 \[
@@ -515,7 +515,7 @@ For odd $p$, it gives the first $p$-primary torsion in degree $2p$.
 
 ::: pf-qed
 
-Step <1>10 is exactly the assertion that the first $p$-torsion in the
+Step [](#s1-10){.pf-ref} is exactly the assertion that the first $p$-torsion in the
 homotopy groups of $S^3$ occurs in $\pi_{2p}(S^3)$ and is
 \[
 \mathbb Z/p.

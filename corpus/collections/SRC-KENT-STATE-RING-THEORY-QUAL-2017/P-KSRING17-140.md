@@ -123,7 +123,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exist
 $$
@@ -144,7 +144,7 @@ Thus such $a,b$ exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideals
 $$
@@ -167,7 +167,7 @@ adjoining either generator strictly enlarges $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal
 $$
@@ -211,7 +211,7 @@ Hence
 $$
 b\in I,
 $$
-contradicting step <1>4.
+contradicting step [](#s1-4){.pf-ref}.
 Therefore
 $$
 I+(a)\ne R.
@@ -221,7 +221,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ideal
 $$
@@ -232,7 +232,7 @@ is proper.
 
 ::: pf-proof
 
-The argument is symmetric to step <1>6.
+The argument is symmetric to step [](#s1-6){.pf-ref}.
 If
 $$
 I+(b)=R,
@@ -245,13 +245,13 @@ by $a$ would force
 $$
 a\in I,
 $$
-contradicting step <1>4.
+contradicting step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Both
 $$
@@ -264,7 +264,7 @@ are good.
 
 ::: pf-proof
 
-By steps <1>5--<1>7, both are nonzero proper ideals strictly containing the maximal counterexample $I$.
+By steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref}, both are nonzero proper ideals strictly containing the maximal counterexample $I$.
 If either were not good, it would belong to $\mathcal B$ and properly contain $I$, contradicting maximality.
 Hence both are good.
 
@@ -272,7 +272,7 @@ Hence both are good.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Choose prime ideals
 $$
@@ -312,13 +312,13 @@ $$
 
 ::: pf-proof
 
-This is exactly the definition of goodness applied in step <1>8.
+This is exactly the definition of goodness applied in step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Every prime ideal among the
 $$
@@ -356,7 +356,7 @@ which contains $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 One has
 $$
@@ -382,7 +382,7 @@ I^2,
 \subseteq
 I.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 ab\in I,
 $$
@@ -396,7 +396,7 @@ Thus the whole product is contained in $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The product
 $$
@@ -407,7 +407,7 @@ is contained in $I$.
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 $$
 P_1\cdots P_r
 \subseteq
@@ -425,34 +425,34 @@ P_1\cdots P_rQ_1\cdots Q_s
 \subseteq
 (I+(a))(I+(b)).
 $$
-Apply step <1>11.
+Apply step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The ideal $I$ is good.
 
 
 ::: pf-proof
 
-By step <1>10, every prime factor
+By step [](#s1-10){.pf-ref}, every prime factor
 $$
 P_i
 \qquad\text{and}\qquad
 Q_j
 $$
 contains $I.
-By step <1>12, their product is contained in $I$.
+By step [](#s1-12){.pf-ref}, their product is contained in $I$.
 Thus $I$ satisfies the definition of goodness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 This contradicts
 $$
@@ -462,20 +462,20 @@ $$
 
 ::: pf-proof
 
-Membership in $\mathcal B$ means that $I$ is not good, whereas step <1>13 shows that it is good.
+Membership in $\mathcal B$ means that $I$ is not good, whereas step [](#s1-13){.pf-ref} shows that it is good.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore every nonzero proper ideal $A$ of $R$ contains a product of prime ideals, each of which contains $A$.
 
 
 ::: pf-proof
 
-The assumption that a counterexample exists leads to the contradiction in step <1>14.
+The assumption that a counterexample exists leads to the contradiction in step [](#s1-14){.pf-ref}.
 Hence
 $$
 \boxed{
@@ -494,7 +494,7 @@ $$
 
 ::: pf-qed
 
-Step <1>15 proves the intended corrected statement.
+Step [](#s1-15){.pf-ref} proves the intended corrected statement.
 
 :::
 

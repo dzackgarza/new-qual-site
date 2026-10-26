@@ -26,7 +26,7 @@ Let $\Omega \subset \mathbb{C}$ be open and connected. Suppose $(f_n)$ is a sequ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The locally uniform limit $f$ is holomorphic on $\Omega$.
 
@@ -40,7 +40,7 @@ implies that a locally uniform limit of holomorphic functions is holomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose, toward a contradiction, that $f$ is not injective. Then there
 exist distinct points
@@ -61,7 +61,7 @@ This is exactly the negation of injectivity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -98,7 +98,7 @@ Hence on every compact set $K\subset\Omega$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For each $n$, the only zero of $g_n$ in $\Omega$ is $a$.
 
@@ -120,14 +120,14 @@ z=a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The zero of $g$ at $b$ is isolated.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 g(b)=f(b)-f(a)=0.
 \]
@@ -136,14 +136,14 @@ If $g$ were identically zero on $\Omega$, then
 f\equiv f(a),
 \]
 contradicting the hypothesis that $f$ is nonconstant. Since $\Omega$ is
-connected and $g$ is holomorphic by step <1>1, the identity theorem implies
+connected and $g$ is holomorphic by step [](#s1-1){.pf-ref}, the identity theorem implies
 that the zeros of $g$ are isolated.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Choose $r>0$ such that
 \[
@@ -160,14 +160,14 @@ and $g$ has no zeros on
 ::: pf-proof
 
 The points $a$ and $b$ are distinct, $\Omega$ is open, and the zero at $b$ is
-isolated by step <1>5. Hence a sufficiently small radius has all three
+isolated by step [](#s1-5){.pf-ref}. Hence a sufficiently small radius has all three
 properties.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For all sufficiently large $n$, the function $g_n$ has at least one
 zero in $D(b,r)$.
@@ -186,7 +186,7 @@ m
 \min_{|z-b|=r}|g(z)|
 >0.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 g_n\to g
 \]
@@ -203,25 +203,25 @@ $g_n$ has at least one zero there as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 This contradicts injectivity of $f_n$.
 
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 a\notin D(b,r).
 \]
-But step <1>4 says that $a$ is the only zero of $g_n$ anywhere in $\Omega$,
-while step <1>7 gives a zero of $g_n$ inside $D(b,r)$. Contradiction.
+But step [](#s1-4){.pf-ref} says that $a$ is the only zero of $g_n$ anywhere in $\Omega$,
+while step [](#s1-7){.pf-ref} gives a zero of $g_n$ inside $D(b,r)$. Contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -231,8 +231,8 @@ Therefore
 
 ::: pf-proof
 
-The assumption of noninjectivity in step <1>2 leads to the contradiction in
-step <1>8.
+The assumption of noninjectivity in step [](#s1-2){.pf-ref} leads to the contradiction in
+step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -240,7 +240,7 @@ step <1>8.
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

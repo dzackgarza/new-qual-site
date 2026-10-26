@@ -24,7 +24,7 @@ The standard clean presentations are over $\mathbb F_2$ for real projective spac
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For finite real projective space,
 \[
@@ -49,7 +49,7 @@ Hence the displayed truncated polynomial ring.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In particular,
 \[
@@ -61,14 +61,14 @@ H^*(\mathbb{RP}^{\infty};\mathbb F_2)
 
 ::: pf-proof
 
-Take the direct limit of the presentations in step <1>1 under the standard inclusions $\mathbb{RP}^m\subset\mathbb{RP}^{m+1}$.
+Take the direct limit of the presentations in step [](#s1-1){.pf-ref} under the standard inclusions $\mathbb{RP}^m\subset\mathbb{RP}^{m+1}$.
 No finite power of $x$ vanishes in the limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For finite complex projective space,
 \[
@@ -90,7 +90,7 @@ Dimensional reasons give $u^{m+1}=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus
 \[
@@ -102,13 +102,13 @@ H^*(\mathbb{CP}^{\infty};\mathbb Z)
 
 ::: pf-proof
 
-As in step <1>2, pass to the direct limit under $\mathbb{CP}^m\subset\mathbb{CP}^{m+1}$.
+As in step [](#s1-2){.pf-ref}, pass to the direct limit under $\mathbb{CP}^m\subset\mathbb{CP}^{m+1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -152,7 +152,7 @@ In particular $a^2=0$ because $a$ has odd degree and $p$ is odd.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 With integral coefficients, the additive cohomology groups of the same lens space are
 \[
@@ -175,7 +175,7 @@ The universal coefficient theorem for cohomology then gives the displayed groups
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the standard ring presentations are
 \[
@@ -193,7 +193,7 @@ and, for odd prime $p$,
 
 ::: pf-proof
 
-These are precisely steps <1>1, <1>3, and <1>5.
+These are precisely steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -201,7 +201,7 @@ These are precisely steps <1>1, <1>3, and <1>5.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 compute the requested cohomology rings with their standard coefficient choices and record the integral additive groups for lens spaces.
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} compute the requested cohomology rings with their standard coefficient choices and record the integral additive groups for lens spaces.
 
 :::
 

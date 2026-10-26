@@ -27,7 +27,7 @@ Hint: it is a very small finite set.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For an idempotent map $P$,
 \[
@@ -67,7 +67,7 @@ Thus $w=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the orthogonality hypothesis
 \[
@@ -78,7 +78,7 @@ the map $P$ is the orthogonal projection onto $\operatorname{im}P$ and is repres
 
 ::: pf-proof
 
-By step <1>1, every $v$ decomposes uniquely as
+By step [](#s1-1){.pf-ref}, every $v$ decomposes uniquely as
 \[
 v=u+k,
 \qquad
@@ -102,7 +102,7 @@ In the standard orthonormal basis of $\mathbb R^3$, its matrix is symmetric.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The rank of $P$ is $2$.
 
@@ -145,7 +145,7 @@ The kernel of $P$ is one-dimensional.
 
 ::: pf-proof
 
-By rank-nullity in $\mathbb R^3$ and step <1>3,
+By rank-nullity in $\mathbb R^3$ and step [](#s1-3){.pf-ref},
 \[
 \dim\ker P
 =
@@ -157,7 +157,7 @@ By rank-nullity in $\mathbb R^3$ and step <1>3,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $u=(u_1,u_2,u_3)^t$ be a unit vector spanning $\ker P$.
 Then
@@ -168,7 +168,7 @@ Then
 
 ::: pf-proof
 
-By step <1>2, $P$ is the orthogonal projection onto
+By step [](#s1-2){.pf-ref}, $P$ is the orthogonal projection onto
 \[
 (\ker P)^\perp=u^\perp.
 \]
@@ -187,7 +187,7 @@ Pv=v-(u\cdot v)u
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The diagonal conditions imply
 \[
@@ -201,7 +201,7 @@ u_3^2=\frac16.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 p_{ii}=1-u_i^2.
 \]
@@ -234,7 +234,7 @@ Their sum is $1$, consistent with $\|u\|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Replacing $u$ by $-u$ does not change $P$, so every possible projection is obtained by taking
 \[
@@ -252,7 +252,7 @@ u_{\varepsilon,\delta}
 
 ::: pf-proof
 
-Step <1>6 determines the absolute value of every coordinate of $u$.
+Step [](#s1-6){.pf-ref} determines the absolute value of every coordinate of $u$.
 There are $2^3$ sign choices, but
 \[
 uu^t=(-u)(-u)^t,
@@ -264,7 +264,7 @@ Fixing the first sign to be positive leaves exactly four distinct possibilities,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The four possible matrices are
 \[
@@ -290,11 +290,11 @@ P_{\varepsilon,\delta}
 
 ::: pf-proof
 
-Substitute the vector from step <1>7 into
+Substitute the vector from step [](#s1-7){.pf-ref} into
 \[
 P=I-uu^t.
 \]
-The diagonal entries are the prescribed ones by step <1>6.
+The diagonal entries are the prescribed ones by step [](#s1-6){.pf-ref}.
 The off-diagonal entries are
 \[
 -u_1u_2
@@ -321,7 +321,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 These four matrices are all valid orthogonal projections.
 
@@ -352,7 +352,7 @@ and
 
 ::: pf-qed
 
-Steps <1>7--<1>9 show that the displayed four matrices are exactly all possibilities.
+Steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} show that the displayed four matrices are exactly all possibilities.
 
 :::
 

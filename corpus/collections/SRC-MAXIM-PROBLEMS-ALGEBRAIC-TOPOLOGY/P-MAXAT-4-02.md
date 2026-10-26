@@ -48,7 +48,7 @@ Taking $Y=\Sigma X$ and the identity of $\Sigma X$ yields the unit map $\eta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the natural identification
 \[
@@ -95,7 +95,7 @@ gives $2r-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Freudenthal connectivity lemma says that the unit
 \[
@@ -112,7 +112,7 @@ Cover $\Sigma X$ by its two open cones $C_+X$ and $C_-X$. Each cone is contracti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -130,15 +130,15 @@ i=2r-1.
 
 ::: pf-proof
 
-By definition, a $k$-connected map induces isomorphisms on homotopy groups in degrees strictly below $k$ and a surjection in degree $k$. Apply this to the $(2r-1)$-connected map of step <1>4.
+By definition, a $k$-connected map induces isomorphisms on homotopy groups in degrees strictly below $k$ and a surjection in degree $k$. Apply this to the $(2r-1)$-connected map of step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Translating step <1>5 through step <1>2 gives
+Translating step [](#s1-5){.pf-ref} through step [](#s1-2){.pf-ref} gives
 \[
 \boxed{
 E:\pi_i(X)\xrightarrow{\cong}\pi_{i+1}(\Sigma X)
@@ -154,13 +154,13 @@ E:\pi_{2r-1}(X)\twoheadrightarrow
 
 ::: pf-proof
 
-Step <1>2 identifies $\eta_*$ with the suspension homomorphism after the canonical loop-space shift of homotopy groups. Apply the isomorphism and surjectivity ranges from step <1>5.
+Step [](#s1-2){.pf-ref} identifies $\eta_*$ with the suspension homomorphism after the canonical loop-space shift of homotopy groups. Apply the isomorphism and surjectivity ranges from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular, for $X=S^n$ one obtains
 \[
@@ -172,7 +172,7 @@ and a surjection at $i=2n-1$.
 
 ::: pf-proof
 
-The sphere $S^n$ is $(n-1)$-connected, so set $r=n$ in step <1>6 and use $\Sigma S^n\cong S^{n+1}$.
+The sphere $S^n$ is $(n-1)$-connected, so set $r=n$ in step [](#s1-6){.pf-ref} and use $\Sigma S^n\cong S^{n+1}$.
 
 :::
 
@@ -180,7 +180,7 @@ The sphere $S^n$ is $(n-1)$-connected, so set $r=n$ in step <1>6 and use $\Sigma
 
 ::: pf-qed
 
-Step <1>6 is the Freudenthal suspension theorem, and step <1>7 records its standard sphere formulation.
+Step [](#s1-6){.pf-ref} is the Freudenthal suspension theorem, and step [](#s1-7){.pf-ref} records its standard sphere formulation.
 
 :::
 

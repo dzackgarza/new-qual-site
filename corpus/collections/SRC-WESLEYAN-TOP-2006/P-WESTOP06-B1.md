@@ -33,7 +33,7 @@ Write \(I=[0,1]\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Two paths \(f,f':I\to X\) with the same endpoints are path-homotopic if there is a continuous map
 \[
@@ -59,7 +59,7 @@ This is the definition of a homotopy of paths relative to the endpoint set \(\{0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Path homotopy is reflexive on paths with fixed endpoints.
 
@@ -76,7 +76,7 @@ This is continuous, has \(H(\,\cdot\,,0)=H(\,\cdot\,,1)=f\), and fixes both endp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Path homotopy is symmetric.
 
@@ -93,7 +93,7 @@ Then \(K\) is continuous, runs from \(f'\) to \(f\), and fixes the same endpoint
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Path homotopy is transitive.
 
@@ -118,20 +118,20 @@ Therefore the pasting lemma gives continuity of \(L\). The map \(L\) runs from \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently, path homotopy is an equivalence relation on the set of paths with any prescribed pair of endpoints.
 
 
 ::: pf-proof
 
-Steps <1>2, <1>3, and <1>4 establish reflexivity, symmetry, and transitivity.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} establish reflexivity, symmetry, and transitivity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The image of
 \[
@@ -164,7 +164,7 @@ which gives the stated traversal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The loop \(f\) is path-homotopic in \(\mathbb R^2\setminus\{0\}\) to the constant loop \(g_0(t)=(1,0)\).
 
@@ -191,7 +191,7 @@ for every \(s\). Thus \(H\) is a path homotopy from \(f\) to \(g_0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If \(g_k\) and \(g_\ell\) are path-homotopic in \(\mathbb R^2\setminus\{0\}\), then \(k=\ell\).
 
@@ -215,7 +215,7 @@ starts at \(0\) and ends at \(k\). Hence based-homotopic loops \(g_k\) and \(g_\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The loop \(f\) is path-homotopic to \(g_k\) exactly for
 \[
@@ -225,7 +225,7 @@ The loop \(f\) is path-homotopic to \(g_k\) exactly for
 
 ::: pf-proof
 
-Step <1>7 proves that \(f\) is path-homotopic to \(g_0\). If \(f\) were path-homotopic to \(g_k\), then by symmetry and transitivity from steps <1>3 and <1>4, \(g_0\) would be path-homotopic to \(g_k\). Step <1>8 then gives \(k=0\).
+Step [](#s1-7){.pf-ref} proves that \(f\) is path-homotopic to \(g_0\). If \(f\) were path-homotopic to \(g_k\), then by symmetry and transitivity from steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, \(g_0\) would be path-homotopic to \(g_k\). Step [](#s1-8){.pf-ref} then gives \(k=0\).
 
 :::
 
@@ -233,7 +233,7 @@ Step <1>7 proves that \(f\) is path-homotopic to \(g_0\). If \(f\) were path-hom
 
 ::: pf-qed
 
-Step <1>1 answers part \(1\); step <1>5 answers part \(2\); and steps <1>6 through <1>9 answer part \(3\).
+Step [](#s1-1){.pf-ref} answers part \(1\); step [](#s1-5){.pf-ref} answers part \(2\); and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} answer part \(3\).
 
 :::
 

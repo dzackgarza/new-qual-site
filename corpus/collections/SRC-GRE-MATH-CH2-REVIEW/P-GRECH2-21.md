@@ -33,7 +33,7 @@ At what value of $x$ on the interval $(0, \frac{3\pi}{2})$ does this function at
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x>0$,
 $$
@@ -70,7 +70,7 @@ $$
 
 ::: pf-proof
 
-Since $x>0$, step <1>1 shows that $f'(x)=0$ exactly when
+Since $x>0$, step [](#s1-1){.pf-ref} shows that $f'(x)=0$ exactly when
 $$
 \sin x=0
 \quad\text{or}\quad
@@ -82,20 +82,20 @@ In $(0,3\pi/2)$, the first equation gives $x=\pi$, and the second gives $x=\pi/3
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 $f'$ changes sign from positive to negative at $x=\pi/3$, and from negative to positive at $x=\pi$.
 
 
 ::: pf-proof
 
-The denominator in step <1>1 is positive on the interval. On $(0,\pi/3)$, both $\sin x$ and $2\cos x-1$ are positive, so $f'(x)>0$. On $(\pi/3,\pi)$, one has $\sin x>0$ and $2\cos x-1<0$, so $f'(x)<0$. On $(\pi,3\pi/2)$, both factors are negative, so $f'(x)>0$.
+The denominator in step [](#s1-1){.pf-ref} is positive on the interval. On $(0,\pi/3)$, both $\sin x$ and $2\cos x-1$ are positive, so $f'(x)>0$. On $(\pi/3,\pi)$, one has $\sin x>0$ and $2\cos x-1<0$, so $f'(x)<0$. On $(\pi,3\pi/2)$, both factors are negative, so $f'(x)>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The local maximum occurs at
 $$
@@ -106,7 +106,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>3, $f'$ changes from positive to negative at $\pi/3$, so $f$ has a local maximum there. The other critical point, $\pi$, is a local minimum because the sign change there is from negative to positive.
+By step [](#s1-3){.pf-ref}, $f'$ changes from positive to negative at $\pi/3$, so $f$ has a local maximum there. The other critical point, $\pi$, is a local minimum because the sign change there is from negative to positive.
 
 :::
 
@@ -114,7 +114,7 @@ By step <1>3, $f'$ changes from positive to negative at $\pi/3$, so $f$ has a lo
 
 ::: pf-qed
 
-Step <1>4 identifies the requested local-maximum point and corresponding choice.
+Step [](#s1-4){.pf-ref} identifies the requested local-maximum point and corresponding choice.
 
 :::
 

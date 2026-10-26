@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sum of two nilpotent elements is nilpotent.
 
@@ -112,7 +112,7 @@ x^m=0,
 \qquad
 y^n=0.
 $$
-Step <1>1 then gives
+Step [](#s1-1){.pf-ref} then gives
 $$
 (x+y)^{m+n-1}=0.
 $$
@@ -125,7 +125,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The additive inverse of a nilpotent element is nilpotent.
 
@@ -153,7 +153,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $\mathcal N$ is an additive subgroup of $R$.
 
@@ -165,13 +165,13 @@ $$
 0
 $$
 is nilpotent.
-Step <1>2 gives closure under addition, and step <1>3 gives closure under additive inverses.
+Step [](#s1-2){.pf-ref} gives closure under addition, and step [](#s1-3){.pf-ref} gives closure under additive inverses.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -216,7 +216,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -229,8 +229,8 @@ $$
 
 ::: pf-proof
 
-By step <1>4, $\mathcal N$ is an additive subgroup.
-By step <1>5, it is closed under multiplication by arbitrary elements of $R$.
+By step [](#s1-4){.pf-ref}, $\mathcal N$ is an additive subgroup.
+By step [](#s1-5){.pf-ref}, it is closed under multiplication by arbitrary elements of $R$.
 Thus it is an ideal.
 
 :::
@@ -239,7 +239,7 @@ Thus it is an ideal.
 
 ::: pf-qed
 
-Step <1>2 proves the first assertion, and step <1>6 proves the second.
+Step [](#s1-2){.pf-ref} proves the first assertion, and step [](#s1-6){.pf-ref} proves the second.
 
 :::
 

@@ -29,7 +29,7 @@ Find $\dim V+\dim W$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vector space $V$ has dimension $4$.
 
@@ -54,7 +54,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every polynomial $p\in W$ is divisible by
 $$
@@ -89,14 +89,14 @@ divides $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every polynomial in $W$ is a scalar multiple of $x^3-x$.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 p(x)=(x^3-x)q(x)
 $$
@@ -124,7 +124,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -138,14 +138,14 @@ The polynomial
 $$
 x^3-x
 $$
-is nonzero and spans $W$ by step <1>3.
+is nonzero and spans $W$ by step [](#s1-3){.pf-ref}.
 Thus it is a basis of $W$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently,
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>4.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}.
 This is answer choice $\boxed{\text{(B)}}$.
 
 :::
@@ -164,7 +164,7 @@ This is answer choice $\boxed{\text{(B)}}$.
 
 ::: pf-qed
 
-Step <1>5 is the required value.
+Step [](#s1-5){.pf-ref} is the required value.
 
 :::
 

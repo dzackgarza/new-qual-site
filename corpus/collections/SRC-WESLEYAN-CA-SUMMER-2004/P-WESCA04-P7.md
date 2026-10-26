@@ -32,7 +32,7 @@ M
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are holomorphic functions
 \[
@@ -66,7 +66,7 @@ This is the local factorization characterizing a pole and its order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 \[
@@ -82,7 +82,7 @@ extends holomorphically across $z_0$.
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 H(z)
@@ -105,7 +105,7 @@ Hence each term is holomorphic near $z_0$, and so is their sum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -130,7 +130,7 @@ That is precisely a pole of order $M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -167,7 +167,7 @@ there, so the singularity is removable; that case is already settled.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -181,7 +181,7 @@ M-r.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 f(z)+g(z)
 =
@@ -208,7 +208,7 @@ M-r<M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -219,7 +219,7 @@ then the singularity of $f+g$ at $z_0$ is removable.
 
 ::: pf-proof
 
-Again using step <1>4,
+Again using step [](#s1-4){.pf-ref},
 \[
 f(z)+g(z)
 =
@@ -236,7 +236,7 @@ $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -250,18 +250,18 @@ f+g
 
 ::: pf-proof
 
-If $H(z_0)\ne0$, step <1>3 gives pole order
+If $H(z_0)\ne0$, step [](#s1-3){.pf-ref} gives pole order
 \[
 M.
 \]
-If $H(z_0)=0$, steps <1>4--<1>6 give either a smaller pole order or a
+If $H(z_0)=0$, steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give either a smaller pole order or a
 removable singularity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 More sharply, if
 \[
@@ -283,7 +283,7 @@ Then
 \[
 M=m,
 \]
-and step <1>2 gives
+and step [](#s1-2){.pf-ref} gives
 \[
 H(z)
 =
@@ -299,7 +299,7 @@ F(z_0)
 \ne
 0.
 \]
-Thus step <1>3 gives a pole of order $m$.
+Thus step [](#s1-3){.pf-ref} gives a pole of order $m$.
 The case
 \[
 n>m
@@ -317,7 +317,7 @@ can leading terms cancel.
 
 ::: pf-qed
 
-Step <1>7 proves the required statement; step <1>8 records the sharper
+Step [](#s1-7){.pf-ref} proves the required statement; step [](#s1-8){.pf-ref} records the sharper
 non-equal-order case.
 
 :::

@@ -33,7 +33,7 @@ and identify \(G\) with its faithful permutation action on the seven roots of \(
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The group \(G\) is a transitive subgroup of \(A_7\) and contains a double transposition.
 
@@ -57,7 +57,7 @@ The polynomial has exactly three real roots, so its remaining four roots form tw
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The degree-\(7\) action of \(G\) is primitive, and every nontrivial normal subgroup of \(G\) is transitive.
 
@@ -72,14 +72,14 @@ If \(1\ne N\trianglelefteq G\), then the \(N\)-orbits form a \(G\)-invariant blo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A minimal nontrivial normal subgroup \(N\trianglelefteq G\) cannot be abelian.
 
 
 ::: pf-proof
 
-Choose \(N\) minimal among the nontrivial normal subgroups of \(G\). By step <1>2, \(N\) is transitive, so \(7\mid |N|\).
+Choose \(N\) minimal among the nontrivial normal subgroups of \(G\). By step [](#s1-2){.pf-ref}, \(N\) is transitive, so \(7\mid |N|\).
 
 If \(N\) were abelian, minimal normality would make it an elementary abelian \(q\)-group for some prime \(q\). Since \(7\mid |N|\), one would have \(q=7\). But
 \[
@@ -105,13 +105,13 @@ of order \(42\): the centralizer of a \(7\)-cycle is \(N\) itself, conjugation i
 \[
 |N_{S_7}(N)\cap A_7|=21.
 \]
-Since \(G\le A_7\), it follows that \(G\) is contained in a group of odd order \(21\). This contradicts step <1>1, which gives an element of order \(2\) in \(G\). Therefore \(N\) is nonabelian.
+Since \(G\le A_7\), it follows that \(G\) is contained in a group of odd order \(21\). This contradicts step [](#s1-1){.pf-ref}, which gives an element of order \(2\) in \(G\). Therefore \(N\) is nonabelian.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The minimal normal subgroup \(N\) is isomorphic either to \(A_7\) or to \(G_{168}\).
 
@@ -122,7 +122,7 @@ A finite minimal normal subgroup is characteristically simple, hence is a direct
 \[
 N\cong S^k
 \]
-of isomorphic simple groups. By step <1>3, \(S\) is nonabelian.
+of isomorphic simple groups. By step [](#s1-3){.pf-ref}, \(S\) is nonabelian.
 
 If \(N=A_7\), there is nothing to prove in this step. Suppose instead that \(N\) is a proper subgroup of \(A_7\). A proper subgroup of \(A_7\) has index at least \(7\): if \(H<A_7\) had index \(j<7\), the action of the simple group \(A_7\) on the \(j\) cosets of \(H\) would have trivial kernel and would embed \(A_7\) into \(S_j\), impossible because
 \[
@@ -140,7 +140,7 @@ The smallest nonabelian simple group has order \(60\). Therefore \(k\ge2\) would
 \]
 contrary to \(|N|\le360\). Thus \(k=1\), so \(N\) itself is nonabelian simple.
 
-By step <1>2, \(N\) is transitive, and therefore \(7\mid |N|\). From the list of nonabelian simple groups of order below \(1000\) supplied in the problem, the only group of order at most \(360\) whose order is divisible by \(7\) is
+By step [](#s1-2){.pf-ref}, \(N\) is transitive, and therefore \(7\mid |N|\). From the list of nonabelian simple groups of order below \(1000\) supplied in the problem, the only group of order at most \(360\) whose order is divisible by \(7\) is
 \[
 G_{168}\cong\operatorname{GL}_3(\mathbb F_2)
 \cong\operatorname{PSL}_2(\mathbb F_7).
@@ -151,7 +151,7 @@ Thus a proper \(N\) is isomorphic to \(G_{168}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -177,7 +177,7 @@ Thus
 \[
 [G:N]\in\{1,3,5,15\}.
 \]
-If the index were \(3\) or \(5\), then \(G\) would have index \(5\) or \(3\), respectively, in \(A_7\), contradicting the fact proved in step <1>4 that \(A_7\) has no proper subgroup of index less than \(7\). If \([G:N]=15\), then \(G=A_7\), but this would make the proper nontrivial subgroup \(N\) normal in the simple group \(A_7\), again impossible. Hence \([G:N]=1\), so
+If the index were \(3\) or \(5\), then \(G\) would have index \(5\) or \(3\), respectively, in \(A_7\), contradicting the fact proved in step [](#s1-4){.pf-ref} that \(A_7\) has no proper subgroup of index less than \(7\). If \([G:N]=15\), then \(G=A_7\), but this would make the proper nontrivial subgroup \(N\) normal in the simple group \(A_7\), again impossible. Hence \([G:N]=1\), so
 \[
 G=N\cong G_{168}.
 \]
@@ -189,7 +189,7 @@ These are exactly the two asserted possibilities.
 
 ::: pf-qed
 
-Step <1>5 gives the required classification of \(G_f\).
+Step [](#s1-5){.pf-ref} gives the required classification of \(G_f\).
 
 :::
 

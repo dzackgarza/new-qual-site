@@ -29,7 +29,7 @@ Assume the corrected hypothesis that every proper ideal of $R$ is prime.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The zero ideal is prime.
 
@@ -60,7 +60,7 @@ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ring $R$ is an integral domain.
 
@@ -71,7 +71,7 @@ Since
 $$
 (0)
 $$
-is prime by step <1>1, whenever
+is prime by step [](#s1-1){.pf-ref}, whenever
 $$
 ab=0,
 $$
@@ -97,7 +97,7 @@ Hence $R$ is a domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -134,7 +134,7 @@ Thus $a$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose instead that
 $$
@@ -175,9 +175,9 @@ is proper. By the corrected hypothesis, every proper ideal is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Under the assumptions of step <1>4,
+Under the assumptions of step [](#s1-4){.pf-ref},
 $$
 a\in(a^2).
 $$
@@ -206,14 +206,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The element $a$ is a unit.
 
 
 ::: pf-proof
 
-By step <1>5, there exists
+By step [](#s1-5){.pf-ref}, there exists
 $$
 r\in R
 $$
@@ -227,7 +227,7 @@ Hence
 $$
 a(1-ar)=0.
 $$
-Because $R$ is an integral domain by step <1>2 and
+Because $R$ is an integral domain by step [](#s1-2){.pf-ref} and
 $$
 a\ne0,
 $$
@@ -245,7 +245,7 @@ so $a$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every nonzero element of $R$ is a unit.
 
@@ -260,17 +260,17 @@ If
 $$
 (a)=R,
 $$
-step <1>3 gives invertibility. If
+step [](#s1-3){.pf-ref} gives invertibility. If
 $$
 (a)\subsetneq R,
 $$
-steps <1>4--<1>6 give invertibility. Thus every nonzero element is a unit.
+steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give invertibility. Thus every nonzero element is a unit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -280,7 +280,7 @@ $$
 
 ::: pf-proof
 
-The ring is commutative with identity, and by step <1>7 every nonzero element is invertible.
+The ring is commutative with identity, and by step [](#s1-7){.pf-ref} every nonzero element is invertible.
 
 :::
 
@@ -288,7 +288,7 @@ The ring is commutative with identity, and by step <1>7 every nonzero element is
 
 ::: pf-qed
 
-Step <1>8 proves the corrected statement intended by the source.
+Step [](#s1-8){.pf-ref} proves the corrected statement intended by the source.
 
 :::
 

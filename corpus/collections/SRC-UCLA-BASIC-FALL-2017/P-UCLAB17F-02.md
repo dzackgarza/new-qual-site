@@ -26,7 +26,7 @@ Let $A,B$ be $n\times n$ matrices.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $A$ is invertible, then
 \[
@@ -53,7 +53,7 @@ Thus $BA$ is obtained from $AB$ by conjugation with the invertible matrix $A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore, if $A$ is invertible,
 \[
@@ -64,13 +64,13 @@ Therefore, if $A$ is invertible,
 ::: pf-proof
 
 Similar matrices have the same characteristic polynomial.
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For arbitrary square matrices $X,Y$ of the same size,
 \[
@@ -133,7 +133,7 @@ Comparing the two formulas proves the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every nonzero scalar $t$,
 \[
@@ -163,7 +163,7 @@ I-\frac1tBA
 \det(tI-BA),
 \end{aligned}
 \]
-where step <1>3 is applied with
+where step [](#s1-3){.pf-ref} is applied with
 \[
 X=-\frac1tA,
 \qquad
@@ -174,9 +174,9 @@ Y=B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The equality in step <1>4 holds for all $t$, including $t=0$.
+The equality in step [](#s1-4){.pf-ref} holds for all $t$, including $t=0$.
 
 
 ::: pf-proof
@@ -190,7 +190,7 @@ and
 t\longmapsto\det(tI-BA)
 \]
 are polynomials in $t$.
-By step <1>4, they agree for every nonzero complex number $t$.
+By step [](#s1-4){.pf-ref}, they agree for every nonzero complex number $t$.
 Two polynomials agreeing at infinitely many points are identical.
 Thus they agree for all $t$.
 
@@ -198,7 +198,7 @@ Thus they agree for all $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the answer to part (b) is yes:
 \[
@@ -209,7 +209,7 @@ for all square matrices $A,B$ of the same size, without any invertibility hypoth
 
 ::: pf-proof
 
-Step <1>5 is exactly the equality of the two characteristic polynomials.
+Step [](#s1-5){.pf-ref} is exactly the equality of the two characteristic polynomials.
 
 :::
 
@@ -217,7 +217,7 @@ Step <1>5 is exactly the equality of the two characteristic polynomials.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and steps <1>3--<1>6 prove the stronger statement required in part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove the stronger statement required in part (b).
 
 :::
 

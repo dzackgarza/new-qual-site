@@ -36,7 +36,7 @@ X=\mathbb{RP}^n\setminus\{x,y\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists a projective hyperplane
 \[
@@ -63,7 +63,7 @@ Then the projectivization of \(\ker\lambda\) is a projective hyperplane avoiding
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The complement
 \[
@@ -80,7 +80,7 @@ The complement of a projective hyperplane is the standard affine chart.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 With respect to the standard CW decomposition
 \[
@@ -93,13 +93,13 @@ we may therefore regard both \(x\) and \(y\) as points of the open \(n\)-cell.
 
 ::: pf-proof
 
-Take \(H\) from step <1>1 as the \((n-1)\)-skeleton. Its complement is the top cell by step <1>2.
+Take \(H\) from step [](#s1-1){.pf-ref} as the \((n-1)\)-skeleton. Its complement is the top cell by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -124,7 +124,7 @@ This is the standard characteristic-map description of the top cell of \(\mathbb
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The punctured disk
 \[
@@ -147,7 +147,7 @@ Equivalently, \(D^n\setminus\{u,v\}\) is obtained from \(D^n\setminus\{u\}\), wh
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 After gluing the outer boundary sphere to \(\mathbb{RP}^{n-1}\) by \(q\), the boundary-sphere part of the deformation retract becomes a mapping cylinder of \(q\), which deformation retracts onto \(\mathbb{RP}^{n-1}\).
 
@@ -166,20 +166,20 @@ Every mapping cylinder deformation retracts onto its target.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The additional \((n-1)\)-sphere from step <1>5 is attached at one point.
+The additional \((n-1)\)-sphere from step [](#s1-5){.pf-ref} is attached at one point.
 
 
 ::: pf-proof
 
-In the relative deformation retract from step <1>5, the extra sphere meets the outer-boundary part only at the endpoint of the chosen connecting arc. After the outer-boundary part retracts to \(\mathbb{RP}^{n-1}\), that intersection remains one point.
+In the relative deformation retract from step [](#s1-5){.pf-ref}, the extra sphere meets the outer-boundary part only at the endpoint of the chosen connecting arc. After the outer-boundary part retracts to \(\mathbb{RP}^{n-1}\), that intersection remains one point.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -191,13 +191,13 @@ X\simeq
 
 ::: pf-proof
 
-Combine steps <1>3--<1>7.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The integral homology of \(\mathbb{RP}^{m}\) is
 \[
@@ -221,7 +221,7 @@ This is the standard cellular-homology computation for real projective space: th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Reduced homology of a wedge of pointed CW complexes is the direct sum of the reduced homologies.
 
@@ -234,7 +234,7 @@ The wedge is a one-point union, and reduced cellular chains split as the direct 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore, for
 \[
@@ -253,13 +253,13 @@ H_k(X;\mathbb Z)
 
 ::: pf-proof
 
-In these degrees, only the \(\mathbb{RP}^{n-1}\)-summand contributes. Apply steps <1>8--<1>10.
+In these degrees, only the \(\mathbb{RP}^{n-1}\)-summand contributes. Apply steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If \(n\) is even, then \(n-1\) is odd, so
 \[
@@ -278,7 +278,7 @@ The top homology of \(\mathbb{RP}^{n-1}\) is \(\mathbb Z\) when \(n-1\) is odd, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 If \(n\) is odd, then \(n-1\) is even, so
 \[
@@ -297,7 +297,7 @@ The top integral homology of the even-dimensional nonorientable manifold \(\math
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Since \(X\) is connected for \(n\ge2\),
 \[
@@ -308,13 +308,13 @@ H_0(X;\mathbb Z)\cong\mathbb Z}.
 
 ::: pf-proof
 
-Removing finitely many points from an \(n\)-manifold with \(n\ge2\) does not disconnect this space; equivalently, the wedge model in step <1>8 is connected.
+Removing finitely many points from an \(n\)-manifold with \(n\ge2\) does not disconnect this space; equivalently, the wedge model in step [](#s1-8){.pf-ref} is connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 For \(k\ge n\),
 \[
@@ -325,13 +325,13 @@ H_k(X;\mathbb Z)=0}.
 
 ::: pf-proof
 
-The wedge model in step <1>8 has CW dimension \(n-1\).
+The wedge model in step [](#s1-8){.pf-ref} has CW dimension \(n-1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 By the universal coefficient theorem,
 \[
@@ -353,7 +353,7 @@ This is the universal coefficient theorem for cohomology over \(\mathbb Z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 For
 \[
@@ -387,7 +387,7 @@ In these degrees:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 If \(n\) is even, then
 \[
@@ -400,7 +400,7 @@ H^{n-1}(X;\mathbb Z)
 
 ::: pf-proof
 
-Here \(n-1\) is odd. By step <1>12,
+Here \(n-1\) is odd. By step [](#s1-12){.pf-ref},
 \[
 H_{n-1}\cong\mathbb Z^2,
 \]
@@ -408,13 +408,13 @@ and
 \[
 H_{n-2}=0
 \]
-because \(n-2\) is even. Apply step <1>16.
+because \(n-2\) is even. Apply step [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 If \(n\) is odd, then
 \[
@@ -427,7 +427,7 @@ H^{n-1}(X;\mathbb Z)
 
 ::: pf-proof
 
-Here \(n-1\) is even. By step <1>13,
+Here \(n-1\) is even. By step [](#s1-13){.pf-ref},
 \[
 H_{n-1}\cong\mathbb Z,
 \]
@@ -435,7 +435,7 @@ while
 \[
 H_{n-2}\cong\mathbb Z/2
 \]
-because \(n-2\) is odd. Thus step <1>16 gives
+because \(n-2\) is odd. Thus step [](#s1-16){.pf-ref} gives
 \[
 H^{n-1}
 \cong
@@ -450,7 +450,7 @@ H^{n-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Also,
 \[
@@ -467,13 +467,13 @@ H^k(X;\mathbb Z)=0
 
 ::: pf-proof
 
-The degree-zero statement follows from connectedness. For \(k\ge n\), both \(H_k\) and \(H_{k-1}\) vanish by step <1>15 except possibly \(H_{n-1}\) when \(k=n\); but \(H_{n-1}\) is free in both parity cases, so its \(\operatorname{Ext}\) group vanishes. Hence all \(H^k\) with \(k\ge n\) are zero.
+The degree-zero statement follows from connectedness. For \(k\ge n\), both \(H_k\) and \(H_{k-1}\) vanish by step [](#s1-15){.pf-ref} except possibly \(H_{n-1}\) when \(k=n\); but \(H_{n-1}\) is free in both parity cases, so its \(\operatorname{Ext}\) group vanishes. Hence all \(H^k\) with \(k\ge n\) are zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Since
 \[
@@ -490,7 +490,7 @@ A circle minus two points has exactly two connected components, each homeomorphi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Therefore, when \(n=1\),
 \[
@@ -513,7 +513,7 @@ Each component is contractible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Likewise, when \(n=1\),
 \[
@@ -538,7 +538,7 @@ Cohomology of a disjoint union of two contractible components has rank \(2\) in 
 
 ::: pf-qed
 
-Steps <1>8 and <1>11--<1>20 compute the homotopy type, homology, and cohomology for \(n\ge2\), while steps <1>21--<1>23 handle \(n=1\).
+Steps [](#s1-8){.pf-ref} and [](#s1-11){.pf-ref} through [](#s1-20){.pf-ref} compute the homotopy type, homology, and cohomology for \(n\ge2\), while steps [](#s1-21){.pf-ref} through [](#s1-23){.pf-ref} handle \(n=1\).
 
 :::
 

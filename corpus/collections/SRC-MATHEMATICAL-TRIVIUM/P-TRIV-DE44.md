@@ -33,7 +33,7 @@ on $0<x<a$, $0<y<b$, with $u=0$ on the boundary. To determine a unique evolution
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The initial profile is already a single Dirichlet eigenmode of the spatial Laplacian:
 \[
@@ -54,7 +54,7 @@ The sine factors vanish at $x=0,a$ and $y=0,b$. Moreover,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A solution retaining this spatial mode has the form
 \[
@@ -70,7 +70,7 @@ T''+\omega^2T=0,
 
 ::: pf-proof
 
-Substitute $T\phi$ into the wave equation and use step <1>1. Division by the nonzero spatial mode gives
+Substitute $T\phi$ into the wave equation and use step [](#s1-1){.pf-ref}. Division by the nonzero spatial mode gives
 \[
 T''=-v^2\pi^2\left(\frac4{a^2}+\frac9{b^2}\right)T.
 \]
@@ -79,7 +79,7 @@ T''=-v^2\pi^2\left(\frac4{a^2}+\frac9{b^2}\right)T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The initial conditions give
 \[
@@ -95,13 +95,13 @@ T(t)=\cos(\omega t).
 
 ::: pf-proof
 
-The general solution of step <1>2 is $T=A\cos(\omega t)+B\sin(\omega t)$. The prescribed initial displacement gives $A=1$, and zero initial velocity gives $B=0$.
+The general solution of step [](#s1-2){.pf-ref} is $T=A\cos(\omega t)+B\sin(\omega t)$. The prescribed initial displacement gives $A=1$, and zero initial velocity gives $B=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -115,13 +115,13 @@ u(x,y,t)=
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3. The result satisfies the fixed-edge conditions, the wave equation, the stated initial profile, and zero initial velocity.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}. The result satisfies the fixed-edge conditions, the wave equation, the stated initial profile, and zero initial velocity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Without an initial-velocity condition, the problem is underdetermined.
 
@@ -140,7 +140,7 @@ preserves the PDE, boundary conditions, and initial displacement while changing 
 
 ::: pf-qed
 
-Step <1>4 gives the standard zero-initial-velocity solution, and step <1>5 records the missing datum in the source statement.
+Step [](#s1-4){.pf-ref} gives the standard zero-initial-velocity solution, and step [](#s1-5){.pf-ref} records the missing datum in the source statement.
 
 :::
 

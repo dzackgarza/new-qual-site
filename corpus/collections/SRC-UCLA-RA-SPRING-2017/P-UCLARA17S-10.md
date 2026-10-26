@@ -58,7 +58,7 @@ which are respectively harmonicity of $u$ and equality of mixed partial derivati
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A harmonic function $u$ belongs to $R(\Omega)$ if and only if the holomorphic differential
 $$
@@ -85,7 +85,7 @@ the gradients of $u$ and $\operatorname{Re}F$ agree. The domain $\Omega$ is conn
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $\gamma_j$ be a positively oriented small circle about $a_j$ containing no other puncture, and define
 $$
@@ -110,7 +110,7 @@ The integral of $du$ around a closed curve is $0$, so the integral of $g_u\,dz$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For each $j$, the function
 $$
@@ -134,7 +134,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $u\in H(\Omega)$, the harmonic function
 $$
@@ -145,7 +145,7 @@ belongs to $R(\Omega)$.
 
 ::: pf-proof
 
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 g_v(z)
 =g_u(z)-\sum_{j=1}^n\frac{c_j(u)}{z-a_j}.
@@ -162,13 +162,13 @@ $$
 \operatorname{Ind}(\gamma,a_j)
 \operatorname{Res}_{a_j}(g_v).
 $$
-The vanishing integrals around the small circles imply that every residue $\operatorname{Res}_{a_j}(g_v)$ is $0$. Hence every closed-curve integral of $g_v$ vanishes. Step <1>2 therefore gives $v\in R(\Omega)$.
+The vanishing integrals around the small circles imply that every residue $\operatorname{Res}_{a_j}(g_v)$ is $0$. Hence every closed-curve integral of $g_v$ vanishes. Step [](#s1-2){.pf-ref} therefore gives $v\in R(\Omega)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The classes
 $$
@@ -179,7 +179,7 @@ span $H(\Omega)/R(\Omega)$.
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 u-\sum_{j=1}^n c_j(u)\ell_j\in R(\Omega),
 $$
@@ -192,7 +192,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The classes $[\ell_1],\ldots,[\ell_n]$ are linearly independent.
 
@@ -203,7 +203,7 @@ Suppose
 $$
 \sum_{j=1}^n d_j\ell_j\in R(\Omega)
 $$
-for real scalars $d_j$. By step <1>2, the corresponding holomorphic differential has zero period around every $\gamma_k$. By step <1>4,
+for real scalars $d_j$. By step [](#s1-2){.pf-ref}, the corresponding holomorphic differential has zero period around every $\gamma_k$. By step [](#s1-4){.pf-ref},
 $$
 0
 =\int_{\gamma_k}\sum_{j=1}^n\frac{d_j}{z-a_j}\,dz
@@ -215,7 +215,7 @@ Thus $d_k=0$ for every $k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -229,7 +229,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 proves spanning and step <1>7 proves linear independence.
+Step [](#s1-6){.pf-ref} proves spanning and step [](#s1-7){.pf-ref} proves linear independence.
 
 :::
 
@@ -237,7 +237,7 @@ Step <1>6 proves spanning and step <1>7 proves linear independence.
 
 ::: pf-qed
 
-Step <1>8 is the required dimension and basis statement.
+Step [](#s1-8){.pf-ref} is the required dimension and basis statement.
 
 :::
 

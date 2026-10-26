@@ -35,7 +35,7 @@ on $(-1,1)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -64,14 +64,14 @@ Thus the derivative of every spanning vector lies in $W$. By linearity of differ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Each $\phi_i$ is a nonzero eigenvector of $D$ with eigenvalue $\alpha_i$.
 
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 D\phi_i=\alpha_i\phi_i.
 \]
@@ -85,7 +85,7 @@ for every $t$, so $\phi_i$ is not the zero function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The functions
 \[
@@ -100,13 +100,13 @@ The eigenvalues
 \[
 \alpha_1,\ldots,\alpha_n
 \]
-are pairwise distinct by hypothesis. By the linear-algebra theorem that eigenvectors belonging to distinct eigenvalues are linearly independent, step <1>2 implies that $\phi_1,\ldots,\phi_n$ are linearly independent in $W$.
+are pairwise distinct by hypothesis. By the linear-algebra theorem that eigenvectors belonging to distinct eigenvalues are linearly independent, step [](#s1-2){.pf-ref} implies that $\phi_1,\ldots,\phi_n$ are linearly independent in $W$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -124,7 +124,7 @@ for every $t\in(-1,1)$ is the vector-space relation
 \[
 \sum_{i=1}^n a_i\phi_i=0
 \]
-in $W$. By step <1>3, the functions $\phi_i$ are linearly independent, so every coefficient $a_i$ must vanish.
+in $W$. By step [](#s1-3){.pf-ref}, the functions $\phi_i$ are linearly independent, so every coefficient $a_i$ must vanish.
 
 :::
 
@@ -132,7 +132,7 @@ in $W$. By step <1>3, the functions $\phi_i$ are linearly independent, so every 
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

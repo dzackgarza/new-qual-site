@@ -38,7 +38,7 @@ ordered by inclusion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The partially ordered set $\mathcal P$ is nonempty.
 
@@ -55,7 +55,7 @@ itself lies in $\mathcal P$, because it is proper by hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -122,9 +122,9 @@ Hence $U$ is a two-sided ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The ideal $U$ from step <1>2 is proper.
+The ideal $U$ from step [](#s1-2){.pf-ref} is proper.
 
 
 ::: pf-proof
@@ -162,7 +162,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal $U$ is an upper bound for the chain $\mathcal C$ in $\mathcal P$.
 
@@ -177,7 +177,7 @@ is contained in the union $U$. Also
 $$
 I\subseteq U
 $$
-because $I$ is contained in every member of $\mathcal C$. By step <1>3, $U$ is proper. Hence
+because $I$ is contained in every member of $\mathcal C$. By step [](#s1-3){.pf-ref}, $U$ is proper. Hence
 $$
 U\in\mathcal P
 $$
@@ -187,14 +187,14 @@ and is an upper bound for $\mathcal C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The poset $\mathcal P$ has a maximal element.
 
 
 ::: pf-proof
 
-By step <1>1, $\mathcal P$ is nonempty. By step <1>4, every chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore gives a maximal element
+By step [](#s1-1){.pf-ref}, $\mathcal P$ is nonempty. By step [](#s1-4){.pf-ref}, every chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore gives a maximal element
 $$
 M\in\mathcal P.
 $$
@@ -203,9 +203,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The ideal $M$ from step <1>5 is a maximal ideal of $R$ containing $I$.
+The ideal $M$ from step [](#s1-5){.pf-ref} is a maximal ideal of $R$ containing $I$.
 
 
 ::: pf-proof
@@ -236,14 +236,14 @@ Thus there is no proper ideal strictly between $M$ and $R$, so $M$ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every proper ideal is contained in a maximal ideal.
 
 
 ::: pf-proof
 
-Starting from an arbitrary proper ideal $I$, step <1>6 constructs a maximal ideal $M$ with
+Starting from an arbitrary proper ideal $I$, step [](#s1-6){.pf-ref} constructs a maximal ideal $M$ with
 $$
 \boxed{
 I\subseteq M.
@@ -256,7 +256,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -30,7 +30,7 @@ The absolute-value breakpoints are $-1$, $0$, and $1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is no solution with $x\leq-1$.
 
@@ -51,7 +51,7 @@ whose only solution is $x=1/2$, outside the interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is no solution with $-1<x\leq0$.
 
@@ -72,7 +72,7 @@ Its only solution is $x=2$, outside the interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is no solution with $0<x<1$.
 
@@ -93,7 +93,7 @@ The only solution is $x=1$, which is not in the open interval $(0,1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every $x\geq1$ is a solution.
 
@@ -114,7 +114,7 @@ identically equal to the right-hand side.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The solution set is
 $$
@@ -125,7 +125,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Steps <1>1--<1>4 exhaust the real line and leave exactly $x\geq1$.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} exhaust the real line and leave exactly $x\geq1$.
 
 :::
 
@@ -133,7 +133,7 @@ Steps <1>1--<1>4 exhaust the real line and leave exactly $x\geq1$.
 
 ::: pf-qed
 
-Step <1>5 gives the complete solution set and choice.
+Step [](#s1-5){.pf-ref} gives the complete solution set and choice.
 
 :::
 

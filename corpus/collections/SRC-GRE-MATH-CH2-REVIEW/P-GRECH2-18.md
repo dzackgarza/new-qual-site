@@ -27,7 +27,7 @@ If $n$ is a positive integer, what is the value of the $n^{\text{th}}$ derivativ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $n\geq0$,
 $$
@@ -55,7 +55,7 @@ Thus the formula follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $x=-1/2$,
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-Substitute $x=-1/2$ into step <1>1:
+Substitute $x=-1/2$ into step [](#s1-1){.pf-ref}:
 $$
 \begin{aligned}
 f^{(n)}\left(-\frac12\right)
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the requested value is
 $$
@@ -90,7 +90,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-This is exactly the value established in step <1>2.
+This is exactly the value established in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -98,7 +98,7 @@ This is exactly the value established in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the $n^{\mathrm{th}}$ derivative at the specified point and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the $n^{\mathrm{th}}$ derivative at the specified point and corresponding choice.
 
 :::
 

@@ -33,7 +33,7 @@ F(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is a measurable set $E\subset[0,1]$ of full measure such that for every $x\in E$,
 \[
@@ -66,7 +66,7 @@ the displayed limit follows on a full-measure subset $E$ of $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a,b\in E$ with $a<b$, then
 \[
@@ -113,7 +113,7 @@ Hence
 |f(t+h)-f(t)|\,dt.
 \end{aligned}
 \]
-The last quantity tends to $0$ by hypothesis. By step <1>1, the left-hand side tends to
+The last quantity tends to $0$ by hypothesis. By step [](#s1-1){.pf-ref}, the left-hand side tends to
 \[
 |f(a)-f(b)|.
 \]
@@ -123,7 +123,7 @@ Therefore $f(a)=f(b)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a constant $c\in\mathbb R$ such that
 \[
@@ -134,11 +134,11 @@ for almost every $x\in[0,1]$.
 
 ::: pf-proof
 
-The set $E$ from step <1>1 has full measure and is therefore nonempty. Fix $a_0\in E$ and set
+The set $E$ from step [](#s1-1){.pf-ref} has full measure and is therefore nonempty. Fix $a_0\in E$ and set
 \[
 c=f(a_0).
 \]
-For any $x\in E$, step <1>2 applied to the ordered pair $a_0,x$ gives
+For any $x\in E$, step [](#s1-2){.pf-ref} applied to the ordered pair $a_0,x$ gives
 \[
 f(x)=c.
 \]
@@ -150,7 +150,7 @@ Thus $f=c$ on the full-measure set $E$.
 
 ::: pf-qed
 
-Step <1>3 is exactly the desired almost-everywhere constancy.
+Step [](#s1-3){.pf-ref} is exactly the desired almost-everywhere constancy.
 
 :::
 

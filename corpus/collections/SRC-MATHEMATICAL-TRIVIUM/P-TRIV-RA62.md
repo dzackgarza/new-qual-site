@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every real $x$,
 $$
@@ -65,9 +65,9 @@ for each factor and expand the product.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Pairing conjugate terms in step <1>1 gives
+Pairing conjugate terms in step [](#s1-1){.pf-ref} gives
 $$
 \sin x
 \prod_{k=1}^{n}\cos(a_kx)
@@ -84,7 +84,7 @@ $$
 
 ::: pf-proof
 
-Multiply step <1>1 by
+Multiply step [](#s1-1){.pf-ref} by
 $$
 \sin x
 =
@@ -109,7 +109,7 @@ appears exactly once.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every nonzero real number $b$,
 $$
@@ -138,7 +138,7 @@ For $b<0$, the substitution changes the sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence, provided none of the frequencies
 $$
@@ -158,14 +158,14 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>2 into the defining integral and apply step <1>3 to each
+Substitute step [](#s1-2){.pf-ref} into the defining integral and apply step [](#s1-3){.pf-ref} to each
 finite summand.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $n\leq6$,
 $$
@@ -189,7 +189,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for every sign choice and every $n\leq6$,
 $$
@@ -205,13 +205,13 @@ b_\varepsilon
 \geq
 1-S_n.
 $$
-By step <1>5, this lower bound is positive.
+By step [](#s1-5){.pf-ref}, this lower bound is positive.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 $$
@@ -225,7 +225,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, every one of the $2^n$ signs in step <1>4 equals $+1$. Thus
+By step [](#s1-6){.pf-ref}, every one of the $2^n$ signs in step [](#s1-4){.pf-ref} equals $+1$. Thus
 $$
 I_n
 =
@@ -238,7 +238,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For $n=7$,
 $$
@@ -253,13 +253,13 @@ $$
 
 ::: pf-proof
 
-Add $1/15$ to the exact value of $S_6$ from step <1>5.
+Add $1/15$ to the exact value of $S_6$ from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The all-minus sign choice gives a negative frequency:
 $$
@@ -272,13 +272,13 @@ $$
 
 ::: pf-proof
 
-This is immediate from step <1>8.
+This is immediate from step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Every other sign choice gives a positive frequency.
 
@@ -314,7 +314,7 @@ Any additional sign changes only increase the frequency further.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Thus among the $2^7=128$ sign choices, exactly one contributes $-1$
 and the other $127$ contribute $+1$.
@@ -322,14 +322,14 @@ and the other $127$ contribute $+1$.
 
 ::: pf-proof
 
-Step <1>9 gives the unique negative choice, and step <1>10 proves every other
+Step [](#s1-9){.pf-ref} gives the unique negative choice, and step [](#s1-10){.pf-ref} proves every other
 choice is positive.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 $$
@@ -344,7 +344,7 @@ $$
 
 ::: pf-proof
 
-Apply the sign formula from step <1>4 and use the count from step <1>11.
+Apply the sign formula from step [](#s1-4){.pf-ref} and use the count from step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -352,7 +352,7 @@ Apply the sign formula from step <1>4 and use the count from step <1>11.
 
 ::: pf-qed
 
-Step <1>7 proves $I_n=\pi$ for $1\leq n\leq6$, and step <1>12 computes
+Step [](#s1-7){.pf-ref} proves $I_n=\pi$ for $1\leq n\leq6$, and step [](#s1-12){.pf-ref} computes
 $I_7$.
 
 :::

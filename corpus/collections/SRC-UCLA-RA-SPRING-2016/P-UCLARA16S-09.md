@@ -35,7 +35,7 @@ If $f$ has no zeros in $\mathbb D$, take $N=0$ and $B\equiv1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $B$ is holomorphic on a neighborhood of $\overline{\mathbb D}$, has exactly the same zeros as $f$ in $\mathbb D$ with the same multiplicities, and satisfies
 \[
@@ -79,7 +79,7 @@ extends to a holomorphic nonvanishing function on $\mathbb D$ and satisfies
 
 ::: pf-proof
 
-By step <1>1, $f$ and $B$ have the same zeros in $\mathbb D$ with the same multiplicities, so all apparent singularities of $f/B$ are removable and the extension has no zeros. On the unit circle, step <1>1 and the hypothesis give
+By step [](#s1-1){.pf-ref}, $f$ and $B$ have the same zeros in $\mathbb D$ with the same multiplicities, so all apparent singularities of $f/B$ are removable and the extension has no zeros. On the unit circle, step [](#s1-1){.pf-ref} and the hypothesis give
 \[
 |h(z)|
 =
@@ -91,7 +91,7 @@ By step <1>1, $f$ and $B$ have the same zeros in $\mathbb D$ with the same multi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a constant $C\in\mathbb C$ with $|C|=1$ such that
 \[
@@ -119,7 +119,7 @@ Hence $|h|\equiv1$ on $\mathbb D$. By the open mapping theorem, a nonconstant ho
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every zero $a_j$ equals $0$.
 
@@ -136,7 +136,7 @@ p_j
 \]
 No numerator factor vanishes at $p_j$, because every numerator zero $a_k$ lies in $\mathbb D$ while $|p_j|>1$. Hence $B$ has a genuine pole at $p_j$.
 
-On the connected domain obtained from $\mathbb C$ by deleting the finitely many poles of $B$, both $f$ and $CB$ are holomorphic and agree on the nonempty open set $\mathbb D$ by step <1>3. The identity theorem therefore gives
+On the connected domain obtained from $\mathbb C$ by deleting the finitely many poles of $B$, both $f$ and $CB$ are holomorphic and agree on the nonempty open set $\mathbb D$ by step [](#s1-3){.pf-ref}. The identity theorem therefore gives
 \[
 f=CB
 \]
@@ -146,7 +146,7 @@ throughout that domain. But $f$ is holomorphic at $p_j$, whereas $CB$ has a genu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There is an integer $m\ge0$ such that
 \[
@@ -159,11 +159,11 @@ with $|C|=1$.
 
 ::: pf-proof
 
-By step <1>4, all $N$ zeros of $f$ in $\mathbb D$ are at $0$. Therefore
+By step [](#s1-4){.pf-ref}, all $N$ zeros of $f$ in $\mathbb D$ are at $0$. Therefore
 \[
 B(z)=z^N.
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 f(z)=Cz^N
 \qquad
@@ -177,7 +177,7 @@ Both sides are entire, so the identity theorem extends the equality to all of $\
 
 ::: pf-qed
 
-Step <1>5 proves the required classification.
+Step [](#s1-5){.pf-ref} proves the required classification.
 
 :::
 

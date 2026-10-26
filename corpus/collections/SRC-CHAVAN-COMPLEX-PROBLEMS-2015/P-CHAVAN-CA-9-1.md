@@ -23,7 +23,7 @@ is dense in $M_n(\mathbb C)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $A\in M_n(\CC)$, the polynomial
 $$
@@ -42,7 +42,7 @@ Hence $p$ is monic of degree $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a sequence $t_k\in\CC\setminus\{0\}$ such that
 $$
@@ -55,7 +55,7 @@ for every $k$.
 
 ::: pf-proof
 
-By step <1>1, the zero set of $p$ is finite. The sequence $1/m$ tends to zero,
+By step [](#s1-1){.pf-ref}, the zero set of $p$ is finite. The sequence $1/m$ tends to zero,
 and only finitely many of its terms can belong to that finite zero set. Deleting
 those terms gives the required sequence.
 
@@ -63,7 +63,7 @@ those terms gives the required sequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrices
 $$
@@ -74,7 +74,7 @@ are invertible and satisfy $A_k\to A$ in $M_n(\CC)$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \det A_k=p(t_k)\neq0,
 $$
@@ -88,14 +88,14 @@ so $A_k\to A$ in the usual finite-dimensional topology on $M_n(\CC)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set of invertible matrices is dense in $M_n(\CC)$.
 
 
 ::: pf-proof
 
-The matrix $A$ was arbitrary, and step <1>3 approximates it by invertible
+The matrix $A$ was arbitrary, and step [](#s1-3){.pf-ref} approximates it by invertible
 matrices.
 
 :::
@@ -104,7 +104,7 @@ matrices.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

@@ -38,7 +38,7 @@ g(t)=f(y+tv),
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -57,7 +57,7 @@ t\longmapsto y+tv.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $0\le s<t\le1$, then
 \[
@@ -67,7 +67,7 @@ g'(t)\ge g'(s).
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 g'(t)-g'(s)
 =
@@ -101,7 +101,7 @@ g'(t)-g'(s)\ge0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $0<\alpha<1$,
 \[
@@ -125,7 +125,7 @@ g(1)-g(\alpha)
 =
 \int_\alpha^1g'(t)\,dt.
 \]
-Since $g'$ is nondecreasing by step <1>2, every value of $g'$ on $[0,\alpha]$ is at most every value on $[\alpha,1]$.
+Since $g'$ is nondecreasing by step [](#s1-2){.pf-ref}, every value of $g'$ on $[0,\alpha]$ is at most every value on $[\alpha,1]$.
 Hence the average of $g'$ on the first interval is at most its average on the second:
 \[
 \frac1\alpha\int_0^\alpha g'(t)\,dt
@@ -138,7 +138,7 @@ Substitute the two integral identities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $0\le\alpha\le1$,
 \[
@@ -150,7 +150,7 @@ g(\alpha)
 
 ::: pf-proof
 
-For $0<\alpha<1$, multiply step <1>3 by $\alpha(1-\alpha)$:
+For $0<\alpha<1$, multiply step [](#s1-3){.pf-ref} by $\alpha(1-\alpha)$:
 \[
 (1-\alpha)(g(\alpha)-g(0))
 \le
@@ -163,7 +163,7 @@ For $\alpha=0$ or $1$, it is equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -190,13 +190,13 @@ f(y+\alpha(x-y))
 =
 f(\alpha x+(1-\alpha)y).
 \]
-Substitute these identities into step <1>4.
+Substitute these identities into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 \[
@@ -206,7 +206,7 @@ Thus
 
 ::: pf-proof
 
-Step <1>5 is exactly the defining convexity inequality.
+Step [](#s1-5){.pf-ref} is exactly the defining convexity inequality.
 
 :::
 
@@ -214,7 +214,7 @@ Step <1>5 is exactly the defining convexity inequality.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is holomorphic on $D$ and
 $$
@@ -70,7 +70,7 @@ and both points lie on the boundary of $D$. Hence $f'(z)\ne0$ throughout $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $f$ sends $D$ into the upper half-plane $\HH$.
 
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $f$ is injective on $D$.
 
@@ -163,7 +163,7 @@ so the second alternative is impossible. Hence $z_1=z_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $w\in\HH$, the equation
 $$
@@ -190,7 +190,7 @@ Neither root lies on the unit circle: if $\abs z=1$, then
 $$
 \operatorname{Im}f(z)=0
 $$
-by the formula in step <1>2, contradicting $w\in\HH$.
+by the formula in step [](#s1-2){.pf-ref}, contradicting $w\in\HH$.
 
 Therefore exactly one root has modulus less than $1$, because the moduli of the two roots multiply to $1$. Let $z$ denote that root. Since
 $$
@@ -216,7 +216,7 @@ The other root has modulus greater than $1$, so it does not lie in $D$. Hence th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -229,7 +229,7 @@ is a conformal bijection.
 
 ::: pf-proof
 
-Step <1>1 gives holomorphy and nonvanishing derivative. Step <1>2 shows that the image lies in $\HH$, step <1>3 proves injectivity, and step <1>4 proves surjectivity. Hence $f$ is a conformal map of $D$ onto $\HH$.
+Step [](#s1-1){.pf-ref} gives holomorphy and nonvanishing derivative. Step [](#s1-2){.pf-ref} shows that the image lies in $\HH$, step [](#s1-3){.pf-ref} proves injectivity, and step [](#s1-4){.pf-ref} proves surjectivity. Hence $f$ is a conformal map of $D$ onto $\HH$.
 
 :::
 
@@ -237,7 +237,7 @@ Step <1>1 gives holomorphy and nonvanishing derivative. Step <1>2 shows that the
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ Two distinct solutions, $\mathbf{x}_1$ and $\mathbf{x}_2$, can be found to the l
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The nonzero vector
 $$
@@ -55,7 +55,7 @@ The solutions are distinct, so $\mathbf v\ne\mathbf0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every real number $t$,
 $$
@@ -66,7 +66,7 @@ is also a solution.
 
 ::: pf-proof
 
-By step <1>1 and linearity,
+By step [](#s1-1){.pf-ref} and linearity,
 $$
 A(\mathbf{x}_1+t\mathbf v)
 =A\mathbf{x}_1+tA\mathbf v
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a solution distinct from both $\mathbf{x}_1$ and $\mathbf{x}_2$, so the answer is
 $$
@@ -87,7 +87,7 @@ $$
 
 ::: pf-proof
 
-Take $t=2$ in step <1>2 and set
+Take $t=2$ in step [](#s1-2){.pf-ref} and set
 $$
 \mathbf{x}=\mathbf{x}_1+2\mathbf v.
 $$
@@ -103,7 +103,7 @@ so $\mathbf x-\mathbf x_2=\mathbf v\ne0$. Thus $\mathbf x$ is a third distinct s
 
 ::: pf-qed
 
-Step <1>3 proves the necessarily true statement among the choices.
+Step [](#s1-3){.pf-ref} proves the necessarily true statement among the choices.
 
 :::
 

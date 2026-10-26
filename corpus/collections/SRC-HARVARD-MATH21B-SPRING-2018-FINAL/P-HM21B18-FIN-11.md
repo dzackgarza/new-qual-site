@@ -43,7 +43,7 @@ G(x,y)=x-3y+xy.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The equilibrium points are
 \[
@@ -100,14 +100,14 @@ Differentiate $F$ and $G$:
 F_x=1-y,\quad F_y=1-x,\quad
 G_x=1+y,\quad G_y=-3+x.
 \]
-Evaluation at the two equilibria from step <1>1 gives the displayed
+Evaluation at the two equilibria from step [](#s1-1){.pf-ref} gives the displayed
 matrices.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The equilibrium $(0,0)$ is unstable and is a saddle.
 
@@ -131,7 +131,7 @@ same local saddle type and is unstable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equilibrium $(2,2)$ is locally asymptotically stable and is an
 attracting spiral.
@@ -159,14 +159,14 @@ asymptotically stable. The nonzero imaginary parts give the spiral type.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The source phase portrait is candidate A.
 
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 require a saddle at $(0,0)$ and an attracting spiral
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} require a saddle at $(0,0)$ and an attracting spiral
 at $(2,2)$ in the first quadrant. Among the source candidates described in
 the problem, exactly portrait A has this configuration.
 
@@ -174,7 +174,7 @@ the problem, exactly portrait A has this configuration.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -192,7 +192,7 @@ J(2,2)=\begin{pmatrix}-1&-1\\3&-1\end{pmatrix}
 
 ::: pf-proof
 
-Steps <1>1 through <1>5 establish parts (a)--(d).
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} establish parts (a)--(d).
 
 :::
 
@@ -200,7 +200,7 @@ Steps <1>1 through <1>5 establish parts (a)--(d).
 
 ::: pf-qed
 
-Step <1>6 records every requested answer.
+Step [](#s1-6){.pf-ref} records every requested answer.
 
 :::
 

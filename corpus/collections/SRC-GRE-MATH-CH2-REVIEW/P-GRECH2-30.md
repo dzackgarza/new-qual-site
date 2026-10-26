@@ -33,7 +33,7 @@ Simplify the following:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x\ne1,2$,
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The definite integral is
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-On $[3,5]$, both $x-1$ and $x-2$ are positive, so step <1>1 gives the antiderivative
+On $[3,5]$, both $x-1$ and $x-2$ are positive, so step [](#s1-1){.pf-ref} gives the antiderivative
 $$
 -\log(x-1)+\log(x-2)
 =\log\frac{x-2}{x-1}.
@@ -87,7 +87,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -98,7 +98,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>2 and the inverse relation between the exponential and logarithm functions,
+By step [](#s1-2){.pf-ref} and the inverse relation between the exponential and logarithm functions,
 $$
 \exp\left(\log\frac32\right)=\frac32.
 $$
@@ -109,7 +109,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested simplification and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested simplification and corresponding choice.
 
 :::
 

@@ -40,7 +40,7 @@ The Bernoulli substitution used below contains the factor $y^{-n}$, so it is app
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -62,9 +62,9 @@ Differentiate $y^{1-n}$ by the chain rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Substituting the differential equation into step <1>2 gives
+Substituting the differential equation into step [](#s1-2){.pf-ref} gives
 $$
 z'
 =
@@ -100,7 +100,7 @@ Now use $z=y^{1-n}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus $z$ satisfies the linear equation
 $$
@@ -114,13 +114,13 @@ $$
 
 ::: pf-proof
 
-Rearrange step <1>3.
+Rearrange step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Choose a reference point $x_0\in I$ and define
 $$
@@ -128,7 +128,7 @@ F(x)
 =
 \int_{x_0}^{x}f(s)\,ds.
 $$
-An integrating factor for step <1>4 is
+An integrating factor for step [](#s1-4){.pf-ref} is
 $$
 \mu(x)
 =
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-The coefficient of $z$ in step <1>4 is
+The coefficient of $z$ in step [](#s1-4){.pf-ref} is
 $$
 -(1-n)f=(n-1)f.
 $$
@@ -153,7 +153,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Multiplying by $\mu$ gives
 $$
@@ -169,13 +169,13 @@ $$
 
 ::: pf-proof
 
-This is the defining property of the integrating factor from step <1>5.
+This is the defining property of the integrating factor from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -192,13 +192,13 @@ $$
 
 ::: pf-proof
 
-Integrate step <1>6 from $x_0$ to $x$ and absorb the initial value into the constant $C$.
+Integrate step [](#s1-6){.pf-ref} from $x_0$ to $x$ and absorb the initial value into the constant $C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore, for $n\neq1$,
 $$
@@ -220,7 +220,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 z(x)
 =
@@ -240,7 +240,7 @@ Use $z=y^{1-n}$ and raise both sides to the power $1/(1-n)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Now suppose
 $$
@@ -262,7 +262,7 @@ Substitute $n=1$ into the original equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence, for $n=1$,
 $$
@@ -280,7 +280,7 @@ $$
 
 ::: pf-proof
 
-Separate variables in step <1>9:
+Separate variables in step [](#s1-9){.pf-ref}:
 $$
 \frac{y'}y=f+g.
 $$
@@ -311,7 +311,7 @@ Whenever $0^n$ is defined and equals $0$, the equation is satisfied.
 
 ::: pf-qed
 
-Step <1>8 gives the Bernoulli family for $n\neq1$, and step <1>10 gives the exceptional linear case $n=1$.
+Step [](#s1-8){.pf-ref} gives the Bernoulli family for $n\neq1$, and step [](#s1-10){.pf-ref} gives the exceptional linear case $n=1$.
 
 :::
 

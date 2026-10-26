@@ -28,7 +28,7 @@ with the connected-sum orientation.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The intersection form of $\mathbb{CP}^2$ is the one-dimensional form $(1)$, so
 \[
@@ -48,7 +48,7 @@ Thus the middle-dimensional intersection matrix in the basis $h$ is $(1)$, which
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Signature is additive under oriented connected sum, hence
 \[
@@ -62,26 +62,26 @@ For closed oriented $4$-manifolds $X,Y$, the middle homology of $X\#Y$ is the di
 \[
 Q_{X\#Y}\cong Q_X\oplus Q_Y.
 \]
-Therefore signatures add. Apply step <1>1 to the two summands.
+Therefore signatures add. Apply step [](#s1-1){.pf-ref} to the two summands.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The manifold $M$ cannot be the boundary of a compact orientable $5$-manifold.
 
 
 ::: pf-proof
 
-The preceding problem proves that every closed oriented $4n$-manifold which bounds a compact oriented $(4n+1)$-manifold has signature zero. Here $n=1$, while step <1>2 gives signature $2\ne0$.
+The preceding problem proves that every closed oriented $4n$-manifold which bounds a compact oriented $(4n+1)$-manifold has signature zero. Here $n=1$, while step [](#s1-2){.pf-ref} gives signature $2\ne0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every closed manifold $X$, the disjoint union $X\sqcup X$ is an unoriented boundary.
 
@@ -99,7 +99,7 @@ After forgetting orientations, both boundary components are copies of $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The disjoint union $X\sqcup Y$ is unoriented cobordant to the connected sum $X\#Y$.
 
@@ -112,33 +112,33 @@ Start with $(X\sqcup Y)\times[0,1]$. Attach a $1$-handle $D^1\times D^{d}$ to th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently $\mathbb{CP}^2\#\mathbb{CP}^2$ is an unoriented boundary.
 
 
 ::: pf-proof
 
-Take $X=\mathbb{CP}^2$. By step <1>4, $X\sqcup X$ bounds unorientedly. By step <1>5 there is an unoriented cobordism from $X\sqcup X$ to $X\#X$. Glue this cobordism to $X\times[0,1]$ along the two copies of $X$. The resulting compact $5$-manifold has sole boundary $X\#X=M$.
+Take $X=\mathbb{CP}^2$. By step [](#s1-4){.pf-ref}, $X\sqcup X$ bounds unorientedly. By step [](#s1-5){.pf-ref} there is an unoriented cobordism from $X\sqcup X$ to $X\#X$. Glue this cobordism to $X\times[0,1]$ along the two copies of $X$. The resulting compact $5$-manifold has sole boundary $X\#X=M$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every compact $5$-manifold whose boundary is $M$ is non-orientable.
 
 
 ::: pf-proof
 
-Step <1>6 supplies a compact bounding $5$-manifold. If that manifold were orientable, its boundary orientation would make $M$ an oriented boundary, contradicting step <1>3. Hence the bounding manifold constructed in step <1>6 is necessarily non-orientable.
+Step [](#s1-6){.pf-ref} supplies a compact bounding $5$-manifold. If that manifold were orientable, its boundary orientation would make $M$ an oriented boundary, contradicting step [](#s1-3){.pf-ref}. Hence the bounding manifold constructed in step [](#s1-6){.pf-ref} is necessarily non-orientable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -150,7 +150,7 @@ Therefore
 
 ::: pf-proof
 
-The nonexistence of an orientable bounding manifold is step <1>3, and existence of a non-orientable one is steps <1>6--<1>7.
+The nonexistence of an orientable bounding manifold is step [](#s1-3){.pf-ref}, and existence of a non-orientable one is steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -158,7 +158,7 @@ The nonexistence of an orientable bounding manifold is step <1>3, and existence 
 
 ::: pf-qed
 
-Step <1>8 proves both assertions.
+Step [](#s1-8){.pf-ref} proves both assertions.
 
 :::
 

@@ -20,7 +20,7 @@ All surfaces below are understood to be compact, connected, and without boundary
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Up to homeomorphism, the orientable surfaces are
 \[
@@ -38,7 +38,7 @@ The classification theorem for compact connected surfaces says that every orient
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Up to homeomorphism, the nonorientable surfaces are
 \[
@@ -55,7 +55,7 @@ The nonorientable half of the classification theorem says that every nonorientab
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No orientable surface $\Sigma_g$ is homeomorphic to a nonorientable surface $N_k$.
 
@@ -68,7 +68,7 @@ Orientability is a topological invariant: a homeomorphism transports local orien
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Euler characteristics are
 \[
@@ -90,14 +90,14 @@ because one removes an open disk from each surface, decreasing each Euler charac
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Distinct orientable genera give nonhomeomorphic surfaces, and distinct nonorientable genera give nonhomeomorphic surfaces.
 
 
 ::: pf-proof
 
-Euler characteristic is invariant under homeomorphism. If $\Sigma_g\cong\Sigma_h$, step <1>4 gives
+Euler characteristic is invariant under homeomorphism. If $\Sigma_g\cong\Sigma_h$, step [](#s1-4){.pf-ref} gives
 \[
 2-2g=2-2h,
 \]
@@ -105,13 +105,13 @@ so $g=h$. If $N_k\cong N_\ell$, then
 \[
 2-k=2-\ell,
 \]
-so $k=\ell$. Together with step <1>3, this proves that no two distinct entries on the classification list are homeomorphic.
+so $k=\ell$. Together with step [](#s1-3){.pf-ref}, this proves that no two distinct entries on the classification list are homeomorphic.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The connected sum
 \[
@@ -136,7 +136,7 @@ The connected sum with the nonorientable surface $\mathbb{RP}^2$ is nonorientabl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The unique nonorientable surface with Euler characteristic $-1$ is
 \[
@@ -146,17 +146,17 @@ N_3=\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2.
 
 ::: pf-proof
 
-By step <1>4, $\chi(N_k)=2-k$. Solving
+By step [](#s1-4){.pf-ref}, $\chi(N_k)=2-k$. Solving
 \[
 2-k=-1
 \]
-gives $k=3$. The uniqueness assertion follows from the classification theorem and step <1>5.
+gives $k=3$. The uniqueness assertion follows from the classification theorem and step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -169,7 +169,7 @@ T^2\#\mathbb{RP}^2
 
 ::: pf-proof
 
-Step <1>6 places $T^2\#\mathbb{RP}^2$ in the nonorientable class with Euler characteristic $-1$, and step <1>7 identifies the unique member of the classification with those invariants.
+Step [](#s1-6){.pf-ref} places $T^2\#\mathbb{RP}^2$ in the nonorientable class with Euler characteristic $-1$, and step [](#s1-7){.pf-ref} identifies the unique member of the classification with those invariants.
 
 :::
 
@@ -177,7 +177,7 @@ Step <1>6 places $T^2\#\mathbb{RP}^2$ in the nonorientable class with Euler char
 
 ::: pf-qed
 
-Steps <1>1--<1>2 give the classification list, steps <1>3--<1>5 distinguish all entries, and steps <1>6--<1>8 identify the requested connected sum.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the classification list, steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} distinguish all entries, and steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} identify the requested connected sum.
 
 :::
 

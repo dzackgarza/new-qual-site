@@ -31,7 +31,7 @@ M=\sup_n\|f_n\|_2<\infty.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 To prove weak convergence to $0$, it suffices to show that for every
 $g\in L^2(\mathbb R)$,
@@ -56,7 +56,7 @@ against all such functionals.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $h\in L^\infty(\mathbb R)$ with compact support. Then
 \[
@@ -122,7 +122,7 @@ for all sufficiently large $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space of bounded compactly supported functions is dense in
 $L^2(\mathbb R)$.
@@ -152,7 +152,7 @@ pointwise and is dominated by $|g|^2\in L^1$. By dominated convergence,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $g\in L^2(\mathbb R)$,
 \[
@@ -165,7 +165,7 @@ For every $g\in L^2(\mathbb R)$,
 Fix $\varepsilon>0$. If $M=0$, then every $f_n=0$ in $L^2$ and there is
 nothing to prove. Assume $M>0$.
 
-By step <1>3, choose bounded compactly supported $h$ such that
+By step [](#s1-3){.pf-ref}, choose bounded compactly supported $h$ such that
 \[
 \|g-h\|_2
 <
@@ -189,7 +189,7 @@ Then
 \frac{\varepsilon}{2}.
 \end{aligned}
 \]
-By step <1>2, the first term is less than $\varepsilon/2$ for all sufficiently
+By step [](#s1-2){.pf-ref}, the first term is less than $\varepsilon/2$ for all sufficiently
 large $n$. Hence
 \[
 \left|\int f_n g\right|<\varepsilon
@@ -200,7 +200,7 @@ eventually.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -210,8 +210,8 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 proves convergence against every bounded linear functional described
-in step <1>1, which is exactly weak convergence.
+Step [](#s1-4){.pf-ref} proves convergence against every bounded linear functional described
+in step [](#s1-1){.pf-ref}, which is exactly weak convergence.
 
 :::
 
@@ -219,7 +219,7 @@ in step <1>1, which is exactly weak convergence.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

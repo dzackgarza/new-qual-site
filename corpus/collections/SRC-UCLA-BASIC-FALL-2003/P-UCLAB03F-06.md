@@ -41,7 +41,7 @@ Y=F(U)\cap U.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $Y$ is nonempty.
 
@@ -58,7 +58,7 @@ Since also $F(p)\in F(U)$, one has $F(p)\in Y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $F(U)$ is open in $\mathbb R^2$.
 
@@ -83,14 +83,14 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $Y$ is open in the subspace $U$.
 
 
 ::: pf-proof
 
-By step <1>2, $F(U)$ is open in $\mathbb R^2$. Hence
+By step [](#s1-2){.pf-ref}, $F(U)$ is open in $\mathbb R^2$. Hence
 \[
 Y=F(U)\cap U
 \]
@@ -100,7 +100,7 @@ is open in the subspace topology on $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $Y$ is closed in the subspace $U$.
 
@@ -142,7 +142,7 @@ and therefore $y\in Y$. Thus $Y$ is closed in $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -152,7 +152,7 @@ Y=U.
 
 ::: pf-proof
 
-The open unit disk $U$ is connected. By steps <1>1, <1>3, and <1>4, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$. Connectedness therefore forces
+The open unit disk $U$ is connected. By steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref}, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$. Connectedness therefore forces
 \[
 Y=U.
 \]
@@ -161,7 +161,7 @@ Y=U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently
 \[
@@ -175,7 +175,7 @@ By definition,
 \[
 Y=F(U)\cap U.
 \]
-Step <1>5 says this intersection equals $U$, which is exactly the stated inclusion.
+Step [](#s1-5){.pf-ref} says this intersection equals $U$, which is exactly the stated inclusion.
 
 :::
 
@@ -183,7 +183,7 @@ Step <1>5 says this intersection equals $U$, which is exactly the stated inclusi
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

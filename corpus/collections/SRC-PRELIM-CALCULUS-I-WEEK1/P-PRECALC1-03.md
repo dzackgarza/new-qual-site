@@ -17,7 +17,7 @@ Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { \cos ( \beta x ) - 1 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Use the identity
 \[
@@ -55,7 +55,7 @@ x^2
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 \[
 u=\beta x.
 \]
@@ -64,7 +64,7 @@ u=\beta x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Rewrite the quotient as
 \[
@@ -111,7 +111,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The standard limit gives
 \[
@@ -128,7 +128,7 @@ This is the basic trigonometric limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If \(\beta\ne0\), then as \(x\to0\),
 \[
@@ -147,13 +147,13 @@ Set
 \[
 y=\frac{\beta x}{2}.
 \]
-Then \(y\to0\), so apply step <1>4.
+Then \(y\to0\), so apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence for \(\beta\ne0\),
 \[
@@ -167,13 +167,13 @@ Hence for \(\beta\ne0\),
 
 ::: pf-proof
 
-Take limits in step <1>3 and use step <1>5.
+Take limits in step [](#s1-3){.pf-ref} and use step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If \(\beta=0\), the quotient is identically \(0\), and the same
 formula gives
@@ -197,7 +197,7 @@ When \(\beta=0\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore for every \(\beta\in\mathbb R\),
 \[
@@ -211,7 +211,7 @@ Therefore for every \(\beta\in\mathbb R\),
 
 ::: pf-proof
 
-Combine steps <1>6--<1>7.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -219,7 +219,7 @@ Combine steps <1>6--<1>7.
 
 ::: pf-qed
 
-Step <1>8 is the requested limit.
+Step [](#s1-8){.pf-ref} is the requested limit.
 
 :::
 

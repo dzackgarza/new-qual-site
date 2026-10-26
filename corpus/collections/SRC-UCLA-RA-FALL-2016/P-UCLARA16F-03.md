@@ -58,7 +58,7 @@ m,\
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(m\),
 \[
@@ -74,7 +74,7 @@ The function \(\phi\) is nonnegative, and the distance term is nonnegative, so t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(x\in X\),
 \[
@@ -99,7 +99,7 @@ Taking the minimum with \(m\) preserves the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function \(\phi_m\) is \(m\)-Lipschitz and hence continuous.
 
@@ -155,7 +155,7 @@ is also \(m\)-Lipschitz.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence \((\phi_m)\) is pointwise nondecreasing.
 
@@ -187,7 +187,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If \(\phi(x)<\infty\), then
 \[
@@ -197,11 +197,11 @@ If \(\phi(x)<\infty\), then
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \phi_m(x)\le\phi(x),
 \]
-and by step <1>4 the limit
+and by step [](#s1-4){.pf-ref} the limit
 \[
 L=\lim_m\phi_m(x)
 \]
@@ -248,7 +248,7 @@ Hence \(L=\phi(x)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If \(\phi(x)=+\infty\), then
 \[
@@ -293,7 +293,7 @@ contradicting \(\phi(x)=+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -304,13 +304,13 @@ pointwise on \(X\).
 
 ::: pf-proof
 
-Monotonicity is step <1>4, and pointwise convergence is steps <1>5--<1>6.
+Monotonicity is step [](#s1-4){.pf-ref}, and pointwise convergence is steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For each fixed \(m\),
 \[
@@ -323,13 +323,13 @@ For each fixed \(m\),
 
 ::: pf-proof
 
-The function \(\phi_m\) is bounded and continuous by steps <1>1 and <1>3. Weak-star convergence of probability measures is exactly convergence against continuous functions.
+The function \(\phi_m\) is bounded and continuous by steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}. Weak-star convergence of probability measures is exactly convergence against continuous functions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since
 \[
@@ -345,13 +345,13 @@ one has
 
 ::: pf-proof
 
-Integrate the pointwise inequality from step <1>2 against the positive measure \(\mu_n\).
+Integrate the pointwise inequality from step [](#s1-2){.pf-ref} against the positive measure \(\mu_n\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -365,13 +365,13 @@ Hence
 
 ::: pf-proof
 
-Take \(n\to\infty\) in step <1>9 and use step <1>8 on the left.
+Take \(n\to\infty\) in step [](#s1-9){.pf-ref} and use step [](#s1-8){.pf-ref} on the left.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 By monotone convergence,
 \[
@@ -385,13 +385,13 @@ By monotone convergence,
 
 ::: pf-proof
 
-Use step <1>7 and the monotone convergence theorem.
+Use step [](#s1-7){.pf-ref} and the monotone convergence theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -405,13 +405,13 @@ Therefore
 
 ::: pf-proof
 
-The right-hand side of step <1>10 is independent of \(m\). Let \(m\to\infty\) and use step <1>11.
+The right-hand side of step [](#s1-10){.pf-ref} is independent of \(m\). Let \(m\to\infty\) and use step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The space \(P(K)\) is compact in the weak-star topology.
 
@@ -434,7 +434,7 @@ Therefore \(P(K)\) is weak-star compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The function
 \[
@@ -463,7 +463,7 @@ Thus the lower-semicontinuity inequality also holds on the diagonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 If
 \[
@@ -537,7 +537,7 @@ This is exactly the iterated-integral definition of \(E\), interpreted by Tonell
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The functional \(E\) is weak-star lower semicontinuous on \(P(K)\).
 
@@ -548,13 +548,13 @@ Let
 \[
 \mu_n\overset{*}{\rightharpoonup}\mu.
 \]
-By step <1>15,
+By step [](#s1-15){.pf-ref},
 \[
 \mu_n\otimes\mu_n
 \overset{*}{\rightharpoonup}
 \mu\otimes\mu.
 \]
-Apply part (a), step <1>12, on the compact metric space \(K\times K\) with the nonnegative lower-semicontinuous function \(\kappa\) from step <1>14:
+Apply part (a), step [](#s1-12){.pf-ref}, on the compact metric space \(K\times K\) with the nonnegative lower-semicontinuous function \(\kappa\) from step [](#s1-14){.pf-ref}:
 \[
 E(\mu)
 \le
@@ -565,7 +565,7 @@ E(\mu)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Choose a minimizing sequence
 \[
@@ -602,13 +602,13 @@ for some \(\mu\in P(K)\).
 
 ::: pf-proof
 
-Apply step <1>13.
+Apply step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Lower semicontinuity gives
 \[
@@ -622,13 +622,13 @@ m.
 
 ::: pf-proof
 
-Use step <1>17 and the minimizing property from step <1>18.
+Use step [](#s1-17){.pf-ref} and the minimizing property from step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 By definition of the infimum,
 \[
@@ -644,7 +644,7 @@ The measure \(\mu\) belongs to \(P(K)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Therefore
 \[
@@ -654,20 +654,20 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>20--<1>21.
+Combine steps [](#s1-20){.pf-ref} through [](#s1-21){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Hence \(E\) attains its minimum on \(P(K)\), possibly with value \(+\infty\).
 
 
 ::: pf-proof
 
-Step <1>22 constructs a minimizer.
+Step [](#s1-22){.pf-ref} constructs a minimizer.
 
 :::
 
@@ -675,7 +675,7 @@ Step <1>22 constructs a minimizer.
 
 ::: pf-qed
 
-Step <1>12 proves part (a), and step <1>23 proves part (b).
+Step [](#s1-12){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
 
 :::
 

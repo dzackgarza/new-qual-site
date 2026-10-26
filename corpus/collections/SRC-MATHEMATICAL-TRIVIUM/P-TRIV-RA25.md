@@ -21,7 +21,7 @@ Find $\int _ { { \sqrt { 2 } } } ^ { \infty } { \frac { d x } { x + x ^ { \sqrt 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Factor the denominator:
 $$
@@ -39,7 +39,7 @@ Factor out the common factor $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Set
 $$
@@ -85,13 +85,13 @@ $$
 
 ::: pf-proof
 
-Use step <1>1 and then substitute step <1>2.
+Use step [](#s1-1){.pf-ref} and then substitute step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -111,7 +111,7 @@ Combine the right-hand side over the common denominator $u(1+u)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -124,13 +124,13 @@ $$
 
 ::: pf-proof
 
-Integrate the decomposition from step <1>4.
+Integrate the decomposition from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The upper endpoint contributes $0$:
 $$
@@ -154,7 +154,7 @@ and note that the quotient tends to $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -170,11 +170,11 @@ $$
 
 ::: pf-proof
 
-Evaluate the antiderivative in step <1>5 between
+Evaluate the antiderivative in step [](#s1-5){.pf-ref} between
 $$
 u_0=(\sqrt2)^a
 $$
-and $\infty$, using step <1>6:
+and $\infty$, using step [](#s1-6){.pf-ref}:
 $$
 \frac1a
 \left[
@@ -189,7 +189,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since
 $$
@@ -208,7 +208,7 @@ $$
 
 ::: pf-proof
 
-Substitute $a=\sqrt2-1$ into step <1>7.
+Substitute $a=\sqrt2-1$ into step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -216,7 +216,7 @@ Substitute $a=\sqrt2-1$ into step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required value.
+Step [](#s1-8){.pf-ref} is the required value.
 
 :::
 

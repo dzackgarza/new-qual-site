@@ -27,7 +27,7 @@ Let $L$ be the curve whose equation in the polar coordinates $r$ and $\theta$ is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every point of $L$,
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $0\le c\le1$,
 $$
@@ -73,9 +73,9 @@ with equality exactly when $c=1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The bound in step <1>2 is attained with positive $y$.
+The bound in step [](#s1-2){.pf-ref} is attained with positive $y$.
 
 
 ::: pf-proof
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the largest possible value of $y$ is
 $$
@@ -106,7 +106,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Steps <1>1--<1>2 give $|y|\le\sqrt2/2$, and step <1>3 exhibits a point of
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give $|y|\le\sqrt2/2$, and step [](#s1-3){.pf-ref} exhibits a point of
 $L$ whose $y$-coordinate equals this upper bound.
 
 :::
@@ -115,7 +115,7 @@ $L$ whose $y$-coordinate equals this upper bound.
 
 ::: pf-qed
 
-Step <1>4 gives the required maximum.
+Step [](#s1-4){.pf-ref} gives the required maximum.
 
 :::
 

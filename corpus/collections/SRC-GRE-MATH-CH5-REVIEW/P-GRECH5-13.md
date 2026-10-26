@@ -34,7 +34,7 @@ forms
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The determinant equation is equivalent to
 $$
@@ -56,7 +56,7 @@ The three $2\times2$ determinants are $y_1-y_2$, $-1$, and $-y_1$, respectively.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The locus is the line
 $$
@@ -71,7 +71,7 @@ Thus the answer is (D).
 
 ::: pf-proof
 
-Solving the equation in step <1>1 for $y$ gives
+Solving the equation in step [](#s1-1){.pf-ref} for $y$ gives
 $$
 y=y_1-x(y_1-y_2)=(y_2-y_1)x+y_1.
 $$
@@ -83,7 +83,7 @@ This is the slope-intercept equation of a line with slope $y_2-y_1$.
 
 ::: pf-qed
 
-Step <1>2 identifies the locus and its slope.
+Step [](#s1-2){.pf-ref} identifies the locus and its slope.
 
 :::
 

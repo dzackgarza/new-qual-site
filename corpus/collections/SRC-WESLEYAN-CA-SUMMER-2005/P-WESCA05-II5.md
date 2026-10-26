@@ -32,7 +32,7 @@ Write \(a=f(0)\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 \[
@@ -59,7 +59,7 @@ The denominator is nonzero because \(|a|<1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(z\in D\),
 \[
@@ -69,7 +69,7 @@ For every \(z\in D\),
 
 ::: pf-proof
 
-By hypothesis, \(g\) is an analytic self-map of the unit disk. Step <1>1 gives \(g(0)=0\). Schwarz's lemma therefore yields
+By hypothesis, \(g\) is an analytic self-map of the unit disk. Step [](#s1-1){.pf-ref} gives \(g(0)=0\). Schwarz's lemma therefore yields
 \[
 |g(z)|\le|z|
 \]
@@ -79,7 +79,7 @@ for every \(z\in D\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Solving the defining equation for \(f\) gives
 \[
@@ -108,7 +108,7 @@ so \(1+\overline a\,g(z)\ne0\). Division gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(z\in D\),
 \[
@@ -120,7 +120,7 @@ For every \(z\in D\),
 
 ::: pf-proof
 
-By step <1>3 and the triangle inequalities,
+By step [](#s1-3){.pf-ref} and the triangle inequalities,
 \[
 |a+g(z)|\le|a|+|g(z)|
 \]
@@ -136,7 +136,7 @@ The latter denominator is positive because \(|a|,|g(z)|<1\). Dividing gives the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every \(z\in D\),
 \[
@@ -153,11 +153,11 @@ Set
 \[
 r=|z|.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 |g(z)|\le r.
 \]
-Hence the numerator in step <1>4 satisfies
+Hence the numerator in step [](#s1-4){.pf-ref} satisfies
 \[
 |a|+|g(z)|\le|a|+r,
 \]
@@ -183,7 +183,7 @@ Since \(a=f(0)\), this is exactly the stated inequality.
 
 ::: pf-qed
 
-Step <1>5 is the required bound.
+Step [](#s1-5){.pf-ref} is the required bound.
 
 :::
 

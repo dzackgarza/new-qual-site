@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose
 $$
@@ -129,7 +129,7 @@ belongs to $Q$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 pq_1=q_0\in Q.
 $$
@@ -137,7 +137,7 @@ Since $Q$ is prime and
 $$
 p\notin Q
 $$
-by step <1>1, primality forces
+by step [](#s1-1){.pf-ref}, primality forces
 $$
 q_1\in Q.
 $$
@@ -174,7 +174,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Inductively, for every
 $$
@@ -236,7 +236,7 @@ Thus the construction continues indefinitely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 $$
@@ -252,7 +252,7 @@ $$
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 q_n=pq_{n+1}.
 $$
@@ -266,9 +266,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Each containment in step <1>6 is strict.
+Each containment in step [](#s1-6){.pf-ref} is strict.
 
 
 ::: pf-proof
@@ -302,7 +302,7 @@ Hence
 $$
 q_{n+1}(1-ap)=0.
 $$
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 q_{n+1}\ne0.
 $$
@@ -333,7 +333,7 @@ for every $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -350,28 +350,28 @@ is an infinite strictly ascending chain of ideals.
 
 ::: pf-proof
 
-This is exactly steps <1>6--<1>7.
+This is exactly steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-The chain in step <1>8 contradicts Noetherianity of $R$.
+The chain in step [](#s1-8){.pf-ref} contradicts Noetherianity of $R$.
 
 
 ::: pf-proof
 
 A Noetherian ring satisfies the ascending chain condition on ideals.
-The chain from step <1>8 never stabilizes because every inclusion is strict.
+The chain from step [](#s1-8){.pf-ref} never stabilizes because every inclusion is strict.
 This is impossible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence no such prime ideal $Q$ exists.
 
@@ -386,7 +386,7 @@ Q
 \subsetneq
 P
 $$
-leads to the contradiction in step <1>9.
+leads to the contradiction in step [](#s1-9){.pf-ref}.
 Therefore
 $$
 \boxed{
@@ -402,7 +402,7 @@ $$
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

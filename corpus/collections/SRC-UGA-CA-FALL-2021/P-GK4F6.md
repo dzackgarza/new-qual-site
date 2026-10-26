@@ -27,7 +27,7 @@ Let $K=\gamma([0,1])$ and $U=\mathbb C\setminus K$. The compactness of $K$ impli
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $z_0\in U$, the derivative exists and equals
 \[
@@ -52,14 +52,14 @@ The integral of that difference therefore has absolute value at most $2L\|F\|_{\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is holomorphic on $U$.
 
 
 ::: pf-proof
 
-Step <1>1 establishes complex differentiability at every point of the open set $U$. Hence $f$ is holomorphic on $U$.
+Step [](#s1-1){.pf-ref} establishes complex differentiability at every point of the open set $U$. Hence $f$ is holomorphic on $U$.
 
 :::
 
@@ -67,7 +67,7 @@ Step <1>1 establishes complex differentiability at every point of the open set $
 
 ::: pf-qed
 
-Step <1>2 proves the assertion.
+Step [](#s1-2){.pf-ref} proves the assertion.
 
 :::
 

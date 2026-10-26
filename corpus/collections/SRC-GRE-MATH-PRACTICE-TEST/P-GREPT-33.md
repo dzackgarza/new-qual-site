@@ -31,7 +31,7 @@ Find the critical point(s) of this function.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x>0$,
 $$
@@ -62,7 +62,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The derivative vanishes exactly at
 $$
@@ -74,7 +74,7 @@ $$
 
 ::: pf-proof
 
-On the domain $x>0$, the factor $x$ in step <1>1 never vanishes. The factor
+On the domain $x>0$, the factor $x$ in step [](#s1-1){.pf-ref} never vanishes. The factor
 $\log x$ vanishes exactly at $x=1$, and $9x-4$ vanishes exactly at
 $x=4/9$.
 
@@ -82,7 +82,7 @@ $x=4/9$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the critical points occur at
 $$
@@ -94,7 +94,7 @@ so the answer is (A).
 ::: pf-proof
 
 The function is differentiable for every $x>0$, so its critical points are
-exactly the points in its domain where $f'(x)=0$. Step <1>2 lists all such
+exactly the points in its domain where $f'(x)=0$. Step [](#s1-2){.pf-ref} lists all such
 points.
 
 :::
@@ -103,7 +103,7 @@ points.
 
 ::: pf-qed
 
-Step <1>3 gives the complete set of critical points.
+Step [](#s1-3){.pf-ref} gives the complete set of critical points.
 
 :::
 

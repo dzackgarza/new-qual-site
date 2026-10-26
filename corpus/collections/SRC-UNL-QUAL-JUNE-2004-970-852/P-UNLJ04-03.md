@@ -21,7 +21,7 @@ Show that if $X$ is a Hausdorff space and $A,B\subseteq X$ are disjoint finite s
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If either
 $$
@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume now that
 $$
@@ -111,7 +111,7 @@ is Hausdorff, distinct points admit disjoint open neighborhoods.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each
 $$
@@ -162,7 +162,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For each
 $$
@@ -186,7 +186,7 @@ $$
 
 ::: pf-proof
 
-The proof is identical to step <1>3, using finiteness of
+The proof is identical to step [](#s1-3){.pf-ref}, using finiteness of
 $$
 A.
 $$
@@ -195,7 +195,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every
 $$
@@ -222,7 +222,7 @@ and
 $$
 V_b\subseteq V_{a,b}.
 $$
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 U_{a,b}\cap V_{a,b}
 =
@@ -239,7 +239,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 $$
@@ -277,7 +277,7 @@ For every
 $$
 a\in A,
 $$
-step <1>3 gives
+step [](#s1-3){.pf-ref} gives
 $$
 a\in U_a\subseteq U.
 $$
@@ -285,7 +285,7 @@ Thus
 $$
 A\subseteq U.
 $$
-Similarly, step <1>4 gives
+Similarly, step [](#s1-4){.pf-ref} gives
 $$
 B\subseteq V.
 $$
@@ -294,7 +294,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The open sets
 $$
@@ -333,7 +333,7 @@ Hence
 $$
 x\in U_a\cap V_b,
 $$
-contradicting step <1>5.
+contradicting step [](#s1-5){.pf-ref}.
 
 Therefore
 $$
@@ -346,7 +346,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 handles the empty cases, and steps <1>2--<1>7 construct the required disjoint open neighborhoods when both finite sets are nonempty.
+Step [](#s1-1){.pf-ref} handles the empty cases, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} construct the required disjoint open neighborhoods when both finite sets are nonempty.
 
 :::
 

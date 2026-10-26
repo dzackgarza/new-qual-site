@@ -67,7 +67,7 @@ Both possibilities are open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The open set
 \[
@@ -87,7 +87,7 @@ The map is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The singleton \(\{0\}\) is not open in the usual topology on \(\mathbb R\).
 
@@ -100,20 +100,20 @@ Every open neighborhood of \(0\) contains points other than \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore \(f\) is not an open map.
 
 
 ::: pf-proof
 
-An open map must send every open subset of the domain to an open subset of the codomain. Steps <1>3--<1>4 exhibit an open set whose image is not open.
+An open map must send every open subset of the domain to an open subset of the codomain. Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} exhibit an open set whose image is not open.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -130,7 +130,7 @@ To prove \(q\) is open, it suffices to show that \(q(U)\) is open in \(p(A)\) fo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since \(A\) is open in \(X\), the set \(U\) is open in \(X\).
 
@@ -147,7 +147,7 @@ Since both \(A\) and \(V\) are open in \(X\), their intersection \(U\) is open i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since \(p\) is open,
 \[
@@ -157,13 +157,13 @@ Since \(p\) is open,
 
 ::: pf-proof
 
-Apply the definition of an open map to the open subset \(U\subseteq X\) from step <1>7.
+Apply the definition of an open map to the open subset \(U\subseteq X\) from step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -179,7 +179,7 @@ The map \(q\) is simply the restriction of \(p\) to \(A\), and \(U\subseteq A\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
@@ -197,7 +197,7 @@ p(A)\cap p(U).
 
 ::: pf-proof
 
-The first equality is step <1>9. The second follows from the inclusion \(p(U)\subseteq p(A)\).
+The first equality is step [](#s1-9){.pf-ref}. The second follows from the inclusion \(p(U)\subseteq p(A)\).
 
 :::
 
@@ -210,13 +210,13 @@ Therefore \(q(U)\) is open in the subspace \(p(A)\).
 
 ::: pf-proof
 
-By step <1>8, \(p(U)\) is open in \(Y\). Step <1>10 expresses \(q(U)\) as the intersection of \(p(A)\) with an open subset of \(Y\), which is exactly a subspace-open set.
+By step [](#s1-8){.pf-ref}, \(p(U)\) is open in \(Y\). Step [](#s1-10){.pf-ref} expresses \(q(U)\) as the intersection of \(p(A)\) with an open subset of \(Y\), which is exactly a subspace-open set.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -226,7 +226,7 @@ Hence
 
 ::: pf-proof
 
-The open set \(U\subseteq A\) in step <1>6 was arbitrary.
+The open set \(U\subseteq A\) in step [](#s1-6){.pf-ref} was arbitrary.
 
 :::
 
@@ -234,7 +234,7 @@ The open set \(U\subseteq A\) in step <1>6 was arbitrary.
 
 ::: pf-qed
 
-Step <1>5 answers part 1, and step <1>12 proves part 2.
+Step [](#s1-5){.pf-ref} answers part 1, and step [](#s1-12){.pf-ref} proves part 2.
 
 :::
 

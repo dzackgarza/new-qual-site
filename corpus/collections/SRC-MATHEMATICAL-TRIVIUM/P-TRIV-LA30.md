@@ -47,7 +47,7 @@ and has $2n-1$ real parameters.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Once the first $k-1$ orthonormal columns are fixed, the $k$th column has
 $$
@@ -88,13 +88,13 @@ $$
 
 ::: pf-proof
 
-Add the independent choices from step <1>2 for all $n$ columns.
+Add the independent choices from step [](#s1-2){.pf-ref} for all $n$ columns.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 This sum equals
 $$
@@ -110,7 +110,7 @@ The sum of the first $n$ positive odd integers is $n^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -122,7 +122,7 @@ matrix.
 
 ::: pf-proof
 
-This is step <1>4. Equivalently,
+This is step [](#s1-4){.pf-ref}. Equivalently,
 $$
 \dim_{\mathbb R}U(n)=n^2.
 $$
@@ -133,7 +133,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the required count.
+Step [](#s1-5){.pf-ref} is the required count.
 
 :::
 

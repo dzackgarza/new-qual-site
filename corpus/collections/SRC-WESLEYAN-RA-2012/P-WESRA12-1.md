@@ -29,7 +29,7 @@ Let $X$ be nonempty and let $\mathcal A$ be a collection of subsets of $X$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A collection
 \[
@@ -74,7 +74,7 @@ X\setminus X.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -113,7 +113,7 @@ A\cap B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -163,7 +163,7 @@ a ring of sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -212,7 +212,7 @@ Hence it is neither finite nor cofinite, so it does not belong to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $X$ be finite and let
 \[
@@ -245,7 +245,7 @@ Because $X$ is finite, its power set is finite, so
 is finite.
 Therefore the displayed intersection is a finite intersection of members of
 $\mathcal A$.
-By repeated use of step <1>2,
+By repeated use of step [](#s1-2){.pf-ref},
 \[
 P_x\in\mathcal A.
 \]
@@ -258,7 +258,7 @@ x\in P_x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The distinct sets among the $P_x$ form a partition of $X$.
 
@@ -323,7 +323,7 @@ Hence distinct atoms are disjoint.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every set
 \[
@@ -355,7 +355,7 @@ After removing duplicates, this is a union of distinct atoms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Conversely, every union of atoms belongs to
 \[
@@ -365,7 +365,7 @@ Conversely, every union of atoms belongs to
 
 ::: pf-proof
 
-Each atom belongs to $\mathcal A$ by step <1>5.
+Each atom belongs to $\mathcal A$ by step [](#s1-5){.pf-ref}.
 There are only finitely many atoms.
 Finite unions of members of a $\sigma$-algebra belong to the
 $\sigma$-algebra.
@@ -374,7 +374,7 @@ $\sigma$-algebra.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If a finite $\sigma$-algebra has exactly
 \[
@@ -390,7 +390,7 @@ atoms, then
 
 ::: pf-proof
 
-By steps <1>7--<1>8, measurable sets are exactly unions of atoms.
+By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}, measurable sets are exactly unions of atoms.
 Choosing a measurable set is therefore equivalent to choosing an arbitrary
 subset of the set of $k$ atoms.
 There are
@@ -403,7 +403,7 @@ such choices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If
 \[
@@ -424,13 +424,13 @@ Hence the possible cardinalities of $\sigma$-algebras are
 ::: pf-proof
 
 A partition of a four-point set has between one and four nonempty blocks.
-Apply step <1>9.
+Apply step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 There is exactly one $\sigma$-algebra of cardinality
 \[
@@ -453,7 +453,7 @@ The resulting $\sigma$-algebra is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 There are exactly
 \[
@@ -495,7 +495,7 @@ Therefore the number is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 There are exactly
 \[
@@ -528,7 +528,7 @@ choices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 There is exactly one $\sigma$-algebra of cardinality
 \[
@@ -550,7 +550,7 @@ which is unique.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The complete table is
 \[
@@ -568,7 +568,7 @@ The complete table is
 
 ::: pf-proof
 
-Collect steps <1>11--<1>14.
+Collect steps [](#s1-11){.pf-ref} through [](#s1-14){.pf-ref}.
 
 :::
 
@@ -576,8 +576,8 @@ Collect steps <1>11--<1>14.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>2 answers part (b),
-steps <1>3--<1>4 answer part (c), and steps <1>5--<1>15 answer part (d).
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b),
+steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} answer part (c), and steps [](#s1-5){.pf-ref} through [](#s1-15){.pf-ref} answer part (d).
 
 :::
 

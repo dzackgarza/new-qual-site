@@ -34,7 +34,7 @@ such that $f(\pi) = 1$. What is the value of $f(\frac{1}{2}\pi)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the positive $x$-axis, multiplication by the integrating factor $x$ gives
 $$
@@ -58,7 +58,7 @@ The left-hand side is $(xy)'$ by the product rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The general solution on this interval is
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-Integrating step <1>1 gives
+Integrating step [](#s1-1){.pf-ref} gives
 $$
 xy=\int x\sin x\,dx
 =-x\cos x+\sin x+C,
@@ -79,14 +79,14 @@ where integration by parts was used. Division by $x>0$ gives the displayed formu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The condition $f(\pi)=1$ forces $C=0$.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 1=f(\pi)
 =-\cos\pi+\frac{\sin\pi+C}{\pi}
@@ -98,7 +98,7 @@ Hence $C=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -109,7 +109,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Using step <1>3 in step <1>2,
+Using step [](#s1-3){.pf-ref} in step [](#s1-2){.pf-ref},
 $$
 f\left(\frac{\pi}{2}\right)
 =-\cos\frac{\pi}{2}
@@ -123,7 +123,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested value and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

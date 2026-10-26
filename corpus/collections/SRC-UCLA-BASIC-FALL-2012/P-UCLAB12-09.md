@@ -26,7 +26,7 @@ x_0\in M.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z\in N$, then
 \[
@@ -58,7 +58,7 @@ Because $x_0$ is a minimizer, $x_0+z$ attains the same minimum value and belongs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 \[
@@ -68,13 +68,13 @@ x_0+N\subseteq M.
 
 ::: pf-proof
 
-Every element of $x_0+N$ has the form $x_0+z$ with $z\in N$, so step <1>1 applies.
+Every element of $x_0+N$ has the form $x_0+z$ with $z\in N$, so step [](#s1-1){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $x\in M$, then
 \[
@@ -109,7 +109,7 @@ Ax=Ax_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $x\in M$, then
 \[
@@ -119,7 +119,7 @@ x-x_0\in N.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 A(x-x_0)
 =
@@ -135,7 +135,7 @@ x-x_0\in\ker A=N.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -145,7 +145,7 @@ M\subseteq x_0+N.
 
 ::: pf-proof
 
-If $x\in M$, step <1>4 gives
+If $x\in M$, step [](#s1-4){.pf-ref} gives
 \[
 x=x_0+(x-x_0)
 \]
@@ -155,7 +155,7 @@ with $x-x_0\in N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently
 \[
@@ -165,7 +165,7 @@ Consequently
 
 ::: pf-proof
 
-Combine the inclusions from steps <1>2 and <1>5.
+Combine the inclusions from steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -173,7 +173,7 @@ Combine the inclusions from steps <1>2 and <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required description of the set of minimizers.
+Step [](#s1-6){.pf-ref} is the required description of the set of minimizers.
 
 :::
 

@@ -51,7 +51,7 @@ statement at an arbitrary point of $\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix
 \[
@@ -92,7 +92,7 @@ factorization with $g(z_0)\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists
 \[
@@ -135,7 +135,7 @@ Then
 
 ::: pf-proof
 
-By step <1>3, the continuous function
+By step [](#s1-3){.pf-ref}, the continuous function
 \[
 |f(z)-w_0|
 \]
@@ -149,7 +149,7 @@ It therefore attains a positive minimum there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -189,8 +189,8 @@ f(z)-w_0
 have the same number of zeros inside the circle, counted with
 multiplicity.
 
-By step <1>2, the second function has a zero of multiplicity $m\ge1$ at
-$z_0$ and no other zero in the disk by step <1>3. Hence
+By step [](#s1-2){.pf-ref}, the second function has a zero of multiplicity $m\ge1$ at
+$z_0$ and no other zero in the disk by step [](#s1-3){.pf-ref}. Hence
 \[
 f(z)-w
 \]
@@ -200,7 +200,7 @@ has $m$ zeros in the disk, in particular at least one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 \[
@@ -216,7 +216,7 @@ Let
 \[
 w\in B(w_0,\delta).
 \]
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 z\in B(z_0,r)\subseteq\Omega
 \]
@@ -230,7 +230,7 @@ Hence every point of the disk around $w_0$ lies in the image.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -249,7 +249,7 @@ has the form
 \[
 w_0=f(z_0)
 \]
-for some $z_0\in\Omega$. Step <1>6 gives an open disk centered at $w_0$
+for some $z_0\in\Omega$. Step [](#s1-6){.pf-ref} gives an open disk centered at $w_0$
 contained in $f(\Omega)$.
 
 Thus every point of $f(\Omega)$ is an interior point, so the image is open.
@@ -258,7 +258,7 @@ Thus every point of $f(\Omega)$ is an interior point, so the image is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 More generally, if
 \[
@@ -276,7 +276,7 @@ is open.
 Each connected component $V_\alpha$ of $V$ is an open connected subset of
 $\Omega$.
 
-If $f$ is nonconstant on $V_\alpha$, step <1>7 applied to the restriction
+If $f$ is nonconstant on $V_\alpha$, step [](#s1-7){.pf-ref} applied to the restriction
 \[
 f|_{V_\alpha}
 \]
@@ -304,7 +304,7 @@ is a union of open sets.
 
 ::: pf-qed
 
-Step <1>7 is the standard Open Mapping Theorem, and step <1>8 gives the
+Step [](#s1-7){.pf-ref} is the standard Open Mapping Theorem, and step [](#s1-8){.pf-ref} gives the
 equivalent open-map formulation.
 
 :::

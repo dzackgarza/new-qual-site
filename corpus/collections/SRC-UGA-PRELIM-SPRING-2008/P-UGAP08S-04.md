@@ -30,7 +30,7 @@ is a basis for $\operatorname{range}T$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors
 \[
@@ -104,7 +104,7 @@ Thus the displayed vectors span the range.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 \[
@@ -144,7 +144,7 @@ kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 \[
@@ -170,7 +170,7 @@ b_1x_1+cdots+b_kx_k.
 
 ::: pf-proof
 
-Step <1>2 places the left-hand side in
+Step [](#s1-2){.pf-ref} places the left-hand side in
 \[
 \ker T.
 \]
@@ -183,7 +183,7 @@ x_1,dots,x_k.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -199,19 +199,19 @@ a_nx_n
 
 ::: pf-proof
 
-Move all terms in step <1>3 to one side.
+Move all terms in step [](#s1-3){.pf-ref} to one side.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Because
 \[
 x_1,dots,x_n
 \]
-is a basis of $V$, every coefficient in step <1>4 is zero.
+is a basis of $V$, every coefficient in step [](#s1-4){.pf-ref} is zero.
 In particular,
 \[
 a_{k+1}
@@ -233,7 +233,7 @@ Thus the only linear relation among the basis vectors is the trivial one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -244,14 +244,14 @@ are linearly independent.
 
 ::: pf-proof
 
-Step <1>5 shows that every linear relation among them has only zero
+Step [](#s1-5){.pf-ref} shows that every linear relation among them has only zero
 coefficients.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Combining spanning and independence,
 \[
@@ -267,7 +267,7 @@ is a basis of
 
 ::: pf-proof
 
-Step <1>1 gives spanning and step <1>6 gives linear independence.
+Step [](#s1-1){.pf-ref} gives spanning and step [](#s1-6){.pf-ref} gives linear independence.
 
 :::
 
@@ -275,7 +275,7 @@ Step <1>1 gives spanning and step <1>6 gives linear independence.
 
 ::: pf-qed
 
-Step <1>7 is the desired conclusion.
+Step [](#s1-7){.pf-ref} is the desired conclusion.
 
 :::
 

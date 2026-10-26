@@ -17,7 +17,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Urysohn Metrization Theorem.** Every regular second-countable space is metrizable.
 
@@ -30,7 +30,7 @@ Here regular includes the $T_1$ separation axiom: points and disjoint closed set
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Euclidean space $\RR^n$ illustrates the theorem.
 
@@ -43,7 +43,7 @@ The space $\RR^n$ is regular because it is a metric space. It is second countabl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The countable product
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $X$ be any uncountable set and give it the discrete metric
 $$
@@ -96,14 +96,14 @@ Because $X$ is uncountable, no basis can be countable. Therefore $X$ is not seco
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The example in step <1>4 does satisfy the regularity hypothesis, but fails the second-countability hypothesis; nevertheless it is metrizable.
+The example in step [](#s1-4){.pf-ref} does satisfy the regularity hypothesis, but fails the second-countability hypothesis; nevertheless it is metrizable.
 
 
 ::: pf-proof
 
-Every discrete space is regular: a point and a closed set not containing it are separated by the disjoint open sets consisting of the point and the complement of that point. Step <1>4 proves failure of second countability, while the discrete metric already supplies metrizability. Thus Urysohn's hypotheses are sufficient but not necessary.
+Every discrete space is regular: a point and a closed set not containing it are separated by the disjoint open sets consisting of the point and the complement of that point. Step [](#s1-4){.pf-ref} proves failure of second countability, while the discrete metric already supplies metrizability. Thus Urysohn's hypotheses are sufficient but not necessary.
 
 :::
 
@@ -111,7 +111,7 @@ Every discrete space is regular: a point and a closed set not containing it are 
 
 ::: pf-qed
 
-Step <1>1 states the theorem, steps <1>2--<1>3 give two illustrations, and steps <1>4--<1>5 give the requested metrizable space that fails one of the hypotheses.
+Step [](#s1-1){.pf-ref} states the theorem, steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give two illustrations, and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the requested metrizable space that fails one of the hypotheses.
 
 :::
 

@@ -22,7 +22,7 @@ Find two different Laurent expansions for $f(z) = \frac{1}{z(z^2 + 1)}$ and spec
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -60,7 +60,7 @@ disk $0<|z|<1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -114,7 +114,7 @@ The singularities of $f$ are
 0,\qquad i,\qquad -i.
 \]
 Thus the maximal annuli centered at $0$ on which $f$ is holomorphic are
-$0<|z|<1$ and $|z|>1$, exactly the regions in steps <1>1 and <1>2.
+$0<|z|<1$ and $|z|>1$, exactly the regions in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -122,7 +122,7 @@ $0<|z|<1$ and $|z|>1$, exactly the regions in steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the two requested Laurent expansions and their
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the two requested Laurent expansions and their
 regions of convergence.
 
 :::

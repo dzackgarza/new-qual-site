@@ -71,7 +71,7 @@ a planar region.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Cauchy's theorem for triangles states that
 \[
@@ -117,7 +117,7 @@ oriented sides.
 
 ::: pf-qed
 
-Step <1>4 is the requested statement.
+Step [](#s1-4){.pf-ref} is the requested statement.
 
 :::
 

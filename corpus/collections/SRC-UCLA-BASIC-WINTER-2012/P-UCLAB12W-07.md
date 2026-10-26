@@ -27,7 +27,7 @@ of $V$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A linear map $T:V\to V$ is invertible if and only if
 $$
@@ -44,7 +44,7 @@ If $T$ is invertible, it preserves linear independence, so the images of the bas
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There are
 $$
@@ -61,7 +61,7 @@ The vector space $V$ has $p^n$ elements. The first vector of an ordered basis ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 After linearly independent vectors
 $$
@@ -82,7 +82,7 @@ The span of $k$ linearly independent vectors is a $k$-dimensional subspace of $V
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The number of ordered bases of $V$ is
 $$
@@ -92,7 +92,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives the factor $p^n-p^0$ for the first basis vector. Step <1>3 gives, successively, the factors
+Step [](#s1-2){.pf-ref} gives the factor $p^n-p^0$ for the first basis vector. Step [](#s1-3){.pf-ref} gives, successively, the factors
 $$
 p^n-p,
 \quad
@@ -106,7 +106,7 @@ Multiplying the independent successive numbers of choices gives the displayed pr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the number of invertible linear maps $V\to V$ is
 $$
@@ -120,7 +120,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, assigning an invertible linear map is equivalent to choosing the ordered basis consisting of the images of the fixed basis $e_1,\ldots,e_n$. Step <1>4 counts those ordered bases.
+By step [](#s1-1){.pf-ref}, assigning an invertible linear map is equivalent to choosing the ordered basis consisting of the images of the fixed basis $e_1,\ldots,e_n$. Step [](#s1-4){.pf-ref} counts those ordered bases.
 
 :::
 
@@ -128,7 +128,7 @@ By step <1>1, assigning an invertible linear map is equivalent to choosing the o
 
 ::: pf-qed
 
-Step <1>5 gives the requested count.
+Step [](#s1-5){.pf-ref} gives the requested count.
 
 :::
 

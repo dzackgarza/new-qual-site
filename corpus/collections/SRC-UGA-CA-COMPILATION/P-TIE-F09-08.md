@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $R>0$ such that on $|z|=R$,
 $$
@@ -72,7 +72,7 @@ on the circle $|z|=R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomials $P_n(z)$ and $a_nz^n$ have the same number of zeros in
 $|z|<R$, counted with multiplicity.
@@ -80,7 +80,7 @@ $|z|<R$, counted with multiplicity.
 
 ::: pf-proof
 
-On $|z|=R$, step <1>1 gives
+On $|z|=R$, step [](#s1-1){.pf-ref} gives
 $$
 |P_n(z)-a_nz^n|
 =
@@ -94,7 +94,7 @@ Rouché's theorem therefore gives the asserted equality of zero counts.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $P_n$ has exactly
 $$
@@ -106,7 +106,7 @@ zeros in $\CC$, counted with multiplicity.
 ::: pf-proof
 
 The polynomial $a_nz^n$ has exactly one zero, namely $0$, with multiplicity $n$.
-Hence step <1>2 shows that $P_n$ has exactly $n$ zeros in $|z|<R$, counted with
+Hence step [](#s1-2){.pf-ref} shows that $P_n$ has exactly $n$ zeros in $|z|<R$, counted with
 multiplicity.
 
 A nonzero polynomial of degree $n$ cannot have more than $n$ zeros counted with
@@ -118,7 +118,7 @@ multiplicity. Therefore these are all of the zeros of $P_n$ in $\CC$.
 
 ::: pf-qed
 
-Step <1>3 is the Fundamental Theorem of Algebra in the required form.
+Step [](#s1-3){.pf-ref} is the Fundamental Theorem of Algebra in the required form.
 
 :::
 

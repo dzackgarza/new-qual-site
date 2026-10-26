@@ -118,7 +118,7 @@ YN=NY.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -157,7 +157,7 @@ All other strictly upper-triangular entries vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -188,7 +188,7 @@ The relevant entries are
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equation
 \[
@@ -204,7 +204,7 @@ a=d,\qquad d=f,\qquad a+b=e+f.
 
 ::: pf-proof
 
-Compare the corresponding entries of the matrices in steps <1>2--<1>3.
+Compare the corresponding entries of the matrices in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 Equality of the $(1,3)$ entries gives
 \[
 a=d.
@@ -223,7 +223,7 @@ No other entries impose additional conditions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 These equations reduce to
 \[
@@ -237,7 +237,7 @@ e=b.
 
 ::: pf-proof
 
-The first two equations in step <1>4 give
+The first two equations in step [](#s1-4){.pf-ref} give
 \[
 d=f=a.
 \]
@@ -254,7 +254,7 @@ e=b.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -275,20 +275,20 @@ C=
 
 ::: pf-proof
 
-By step <1>5, every commuting matrix in $G$ must have exactly the displayed form.
+By step [](#s1-5){.pf-ref}, every commuting matrix in $G$ must have exactly the displayed form.
 Conversely, any matrix of this form has
 \[
 d=f=a
 \qquad\text{and}\qquad
 e=b,
 \]
-so it satisfies the equations in step <1>4 and therefore commutes with $M$.
+so it satisfies the equations in step [](#s1-4){.pf-ref} and therefore commutes with $M$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The set $C$ is an affine subspace of $\mathbb R^{16}$.
 
@@ -321,7 +321,7 @@ E_3=
 0&0&0&0
 \end{pmatrix}.
 \]
-Then step <1>6 says
+Then step [](#s1-6){.pf-ref} says
 \[
 C
 =
@@ -334,7 +334,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The matrices
 \[
@@ -367,7 +367,7 @@ Thus the three matrices are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -381,7 +381,7 @@ The translation space of the affine subspace $C$ is
 \[
 \operatorname{span}\{E_1,E_2,E_3\}.
 \]
-By step <1>8, this space has dimension $3$.
+By step [](#s1-8){.pf-ref}, this space has dimension $3$.
 Therefore the affine dimension of $C$ is $3$.
 This proves part (b).
 
@@ -391,7 +391,7 @@ This proves part (b).
 
 ::: pf-qed
 
-Step <1>7 proves that $C$ is an affine subspace, and step <1>9 computes its dimension.
+Step [](#s1-7){.pf-ref} proves that $C$ is an affine subspace, and step [](#s1-9){.pf-ref} computes its dimension.
 
 :::
 

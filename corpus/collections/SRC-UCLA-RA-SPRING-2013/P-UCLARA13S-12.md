@@ -52,7 +52,7 @@ u_\varepsilon(z)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $u_\varepsilon$ is a positive bounded harmonic function on $\mathbb H$, extends continuously to $\mathbb R$, and
 \[
@@ -91,7 +91,7 @@ Since $f$ is holomorphic on the larger half-plane $\operatorname{Im}w>0$, the tr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $z=x+iy\in\mathbb H$,
 \[
@@ -118,13 +118,13 @@ Using
 \[
 u_\varepsilon(t)=\pi g_\varepsilon(t)
 \]
-from step <1>1 gives the stated formula.
+from step [](#s1-1){.pf-ref} gives the stated formula.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $\varepsilon>0$,
 \[
@@ -140,7 +140,7 @@ g_\varepsilon\ge0
 
 Positivity follows from $f(\mathbb H)\subset\mathbb H$.
 
-Set $x=0$ in step <1>2 and multiply by $y$:
+Set $x=0$ in step [](#s1-2){.pf-ref} and multiply by $y$:
 \[
 y\operatorname{Im}f(i(y+\varepsilon))
 =
@@ -188,7 +188,7 @@ Then $F_\varepsilon$ is holomorphic on $\mathbb H$.
 
 ::: pf-proof
 
-By step <1>3, $g_\varepsilon\in L^1(\mathbb R)$. If $z=x+iy\in\mathbb H$, then
+By step [](#s1-3){.pf-ref}, $g_\varepsilon\in L^1(\mathbb R)$. If $z=x+iy\in\mathbb H$, then
 \[
 |t-z|\ge y,
 \]
@@ -210,7 +210,7 @@ On compact subsets of $\mathbb H$, the same positive lower bound for $\operatorn
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $z\in\mathbb H$,
 \[
@@ -236,7 +236,7 @@ Thus
 g_\varepsilon(t)
 \frac{y}{(t-x)^2+y^2}\,dt.
 \]
-Step <1>2 identifies the right-hand side with
+Step [](#s1-2){.pf-ref} identifies the right-hand side with
 \[
 u_\varepsilon(x+iy)
 =
@@ -247,7 +247,7 @@ u_\varepsilon(x+iy)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The holomorphic function
 \[
@@ -260,7 +260,7 @@ is a real constant on $\mathbb H$.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \operatorname{Im}D_\varepsilon(z)=0
 \]
@@ -270,7 +270,7 @@ throughout the connected domain $\mathbb H$. A holomorphic function with image c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In fact,
 \[
@@ -286,7 +286,7 @@ f(i(y+\varepsilon))\longrightarrow0
 \qquad
 (y\to\infty).
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 |F_\varepsilon(iy)|
 \le
@@ -303,13 +303,13 @@ Hence
 \[
 D_\varepsilon(iy)\to0.
 \]
-Since $D_\varepsilon$ is constant by step <1>6, that constant is $0$.
+Since $D_\varepsilon$ is constant by step [](#s1-6){.pf-ref}, that constant is $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every $\varepsilon>0$ and $z\in\mathbb H$,
 \[
@@ -324,13 +324,13 @@ f(z+i\varepsilon)
 
 ::: pf-proof
 
-This is the identity $D_\varepsilon\equiv0$ from step <1>7.
+This is the identity $D_\varepsilon\equiv0$ from step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Let
 \[
@@ -354,7 +354,7 @@ After passing to a subsequence, there is a finite positive Borel measure $\mu$ o
 
 ::: pf-proof
 
-By step <1>3, every $\mu_n$ is a positive measure of total mass $1$. Via the Riesz representation theorem, these measures lie in the closed unit ball of
+By step [](#s1-3){.pf-ref}, every $\mu_n$ is a positive measure of total mass $1$. Via the Riesz representation theorem, these measures lie in the closed unit ball of
 \[
 C_0(\mathbb R)^*.
 \]
@@ -364,7 +364,7 @@ Banach--Alaoglu makes that ball weak-* compact. Since $C_0(\mathbb R)$ is separa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every $z\in\mathbb H$,
 \[
@@ -381,7 +381,7 @@ For fixed $z\in\mathbb H$, the function
 \[
 t\longmapsto\frac1{t-z}
 \]
-is continuous on $\mathbb R$ and tends to $0$ as $|t|\to\infty$, so it belongs to $C_0(\mathbb R)$. Step <1>9 therefore gives
+is continuous on $\mathbb R$ and tends to $0$ as $|t|\to\infty$, so it belongs to $C_0(\mathbb R)$. Step [](#s1-9){.pf-ref} therefore gives
 \[
 \int_{\mathbb R}
 \frac{d\mu_n(t)}{t-z}
@@ -389,7 +389,7 @@ is continuous on $\mathbb R$ and tends to $0$ as $|t|\to\infty$, so it belongs t
 \int_{\mathbb R}
 \frac{d\mu(t)}{t-z}.
 \]
-By step <1>8, the left-hand side is
+By step [](#s1-8){.pf-ref}, the left-hand side is
 \[
 f(z+i\varepsilon_n),
 \]
@@ -399,7 +399,7 @@ which tends to $f(z)$ by continuity of $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The measure $\mu$ has total mass
 \[
@@ -409,7 +409,7 @@ The measure $\mu$ has total mass
 
 ::: pf-proof
 
-Set $z=iy$ in step <1>10 and multiply by $y$:
+Set $z=iy$ in step [](#s1-10){.pf-ref} and multiply by $y$:
 \[
 yf(iy)
 =
@@ -448,7 +448,7 @@ The given normalization makes the same limit equal to $i$. Therefore
 
 ::: pf-qed
 
-Step <1>8 proves part (a). Steps <1>9--<1>11 produce a Borel probability measure $\mu$ and prove the representation required in part (b).
+Step [](#s1-8){.pf-ref} proves part (a). Steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} produce a Borel probability measure $\mu$ and prove the representation required in part (b).
 
 :::
 

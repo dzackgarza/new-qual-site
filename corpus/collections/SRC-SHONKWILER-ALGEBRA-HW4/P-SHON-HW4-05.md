@@ -42,7 +42,7 @@ Each nonidentity element has order \(2\), and the product of any two distinct no
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The subgroup \(V_4\) is normal in \(A_4\).
 
@@ -55,7 +55,7 @@ Conjugation preserves cycle type. The three nonidentity elements of \(V_4\) are 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -77,7 +77,7 @@ The group \(V_4\) is abelian, so every subgroup is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -89,13 +89,13 @@ is a subnormal series.
 
 ::: pf-proof
 
-Normality of \(H\) in \(V_4\) is step <1>3, and normality of \(V_4\) in \(A_4\) is step <1>2.
+Normality of \(H\) in \(V_4\) is step [](#s1-3){.pf-ref}, and normality of \(V_4\) in \(A_4\) is step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The first factor is
 \[
@@ -112,7 +112,7 @@ The group \(H\) has order \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The second factor is
 \[
@@ -136,7 +136,7 @@ Every group of order \(2\) is cyclic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The third factor is
 \[
@@ -160,9 +160,9 @@ Every group of prime order is cyclic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Each factor in steps <1>5--<1>7 is simple.
+Each factor in steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} is simple.
 
 
 ::: pf-proof
@@ -173,7 +173,7 @@ Each has prime order.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -190,13 +190,13 @@ is a composition series.
 
 ::: pf-proof
 
-Step <1>4 gives a subnormal series, and step <1>8 shows all successive quotients are simple.
+Step [](#s1-4){.pf-ref} gives a subnormal series, and step [](#s1-8){.pf-ref} shows all successive quotients are simple.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 All composition factors are abelian.
 
@@ -207,13 +207,13 @@ They are
 \[
 C_2,\ C_2,\ C_3
 \]
-by steps <1>5--<1>7.
+by steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -223,7 +223,7 @@ Therefore
 
 ::: pf-proof
 
-A finite group is solvable if it has a subnormal series with abelian factors. The composition series in step <1>9 has abelian factors by step <1>10.
+A finite group is solvable if it has a subnormal series with abelian factors. The composition series in step [](#s1-9){.pf-ref} has abelian factors by step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -231,7 +231,7 @@ A finite group is solvable if it has a subnormal series with abelian factors. Th
 
 ::: pf-qed
 
-Step <1>9 gives the requested composition series and step <1>11 gives solvability.
+Step [](#s1-9){.pf-ref} gives the requested composition series and step [](#s1-11){.pf-ref} gives solvability.
 
 :::
 

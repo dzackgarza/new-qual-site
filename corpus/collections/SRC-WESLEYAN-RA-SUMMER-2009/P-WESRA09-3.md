@@ -44,7 +44,7 @@ For part (d), write
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a),
 \[
@@ -126,7 +126,7 @@ f^{-1}(ay_1+by_2)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If, in addition, \(X\) and \(Y\) are Banach spaces and \(f\) is continuous, then \(\boxed{f^{-1}\text{ is continuous}}\).
 
@@ -139,7 +139,7 @@ The map \(f\) is a continuous linear bijection between Banach spaces. The [[T-FO
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every function in the uniform closure \(\overline{\mathcal S}^{\|\cdot\|_\infty}\) vanishes at \(0\).
 
@@ -156,7 +156,7 @@ Therefore every uniform limit of functions in \(\mathcal S\) also vanishes at \(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every \(g\in C([-1,2],\mathbb R)\) with \(g(0)=0\) belongs to \(\overline{\mathcal S}^{\|\cdot\|_\infty}\).
 
@@ -203,7 +203,7 @@ Since \(\varepsilon\) was arbitrary, \(g\in\overline{\mathcal S}^{\|\cdot\|_\inf
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The answer to part (d) is
 \[
@@ -215,7 +215,7 @@ The answer to part (d) is
 
 ::: pf-proof
 
-Step <1>5 gives one inclusion and step <1>6 gives the reverse inclusion.
+Step [](#s1-5){.pf-ref} gives one inclusion and step [](#s1-6){.pf-ref} gives the reverse inclusion.
 
 :::
 
@@ -223,7 +223,7 @@ Step <1>5 gives one inclusion and step <1>6 gives the reverse inclusion.
 
 ::: pf-qed
 
-Steps <1>1 through <1>4 solve parts (a)--(c), and step <1>7 gives the uniform closure requested in part (d).
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} solve parts (a)--(c), and step [](#s1-7){.pf-ref} gives the uniform closure requested in part (d).
 
 :::
 

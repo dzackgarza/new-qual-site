@@ -35,7 +35,7 @@ achieves its minimum on $\mathcal M$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set \(\mathcal M\) is nonempty.
 
@@ -66,7 +66,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -118,7 +118,7 @@ the displayed identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(\gamma\in\mathcal M\),
 \[
@@ -154,15 +154,15 @@ are continuous on \(\mathbb T\). Apply the defining identity of
 \operatorname{Re}(x)\operatorname{Re}(y),\qquad
 \operatorname{Im}(x)\operatorname{Im}(y),
 \]
-and then use the cost decomposition from step <1>2.
+and then use the cost decomposition from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The value in step <1>3 is independent of \(\gamma\).
+The value in step [](#s1-3){.pf-ref} is independent of \(\gamma\).
 
 
 ::: pf-proof
@@ -179,14 +179,14 @@ Thus the same value is obtained for every \(\gamma\in\mathcal M\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore \(F\) attains its minimum on \(\mathcal M\).
 
 
 ::: pf-proof
 
-By step <1>1, \(\mathcal M\ne\varnothing\). By step <1>4, \(F\) is constant
+By step [](#s1-1){.pf-ref}, \(\mathcal M\ne\varnothing\). By step [](#s1-4){.pf-ref}, \(F\) is constant
 on \(\mathcal M\). Hence every \(\gamma\in\mathcal M\), in particular
 \(\mu\times\nu\), is a minimizer.
 
@@ -196,7 +196,7 @@ on \(\mathcal M\). Hence every \(\gamma\in\mathcal M\), in particular
 
 ::: pf-qed
 
-Step <1>5 proves the claim.
+Step [](#s1-5){.pf-ref} proves the claim.
 
 :::
 

@@ -35,7 +35,7 @@ The function $H$ is continuous on $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The value
 \[
@@ -59,7 +59,7 @@ H(0,1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -70,7 +70,7 @@ Then $K$ is nonempty.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 (0,1)\in K.
 \]
@@ -79,7 +79,7 @@ By step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $(x,y)\in K$ satisfies
 \[
@@ -101,7 +101,7 @@ H(x,y)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every $(x,y)\in K$ satisfies
 \[
@@ -127,16 +127,16 @@ Since $|x-y|>0$ on $D$, taking reciprocals gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set $K$ is compact in $\mathbb R^2$.
 
 
 ::: pf-proof
 
-Step <1>3 shows that $K$ is bounded.
+Step [](#s1-3){.pf-ref} shows that $K$ is bounded.
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 K
 \subseteq
@@ -159,7 +159,7 @@ Thus $K$ is closed and bounded, hence compact by Heine--Borel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The restriction
 \[
@@ -173,16 +173,16 @@ attains a minimum at some
 
 ::: pf-proof
 
-The set $K$ is nonempty and compact by steps <1>2 and <1>5, and $H$ is continuous on $K$.
+The set $K$ is nonempty and compact by steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}, and $H$ is continuous on $K$.
 The extreme value theorem therefore gives a minimizing point.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The point $(x_0,y_0)$ from step <1>6 is a global minimizer of $H$ on $D$.
+The point $(x_0,y_0)$ from step [](#s1-6){.pf-ref} is a global minimizer of $H$ on $D$.
 
 
 ::: pf-proof
@@ -202,7 +202,7 @@ then by definition of $K$,
 \[
 H(x,y)>2.
 \]
-Thus no point outside $K$ has smaller value than $(x_0,y_0)$, while step <1>6 gives minimality on $K$.
+Thus no point outside $K$ has smaller value than $(x_0,y_0)$, while step [](#s1-6){.pf-ref} gives minimality on $K$.
 Hence $(x_0,y_0)$ is a global minimizer on $D$.
 
 :::
@@ -211,7 +211,7 @@ Hence $(x_0,y_0)$ is a global minimizer on $D$.
 
 ::: pf-qed
 
-Step <1>7 proves that $H$ achieves its global minimum somewhere off the diagonal.
+Step [](#s1-7){.pf-ref} proves that $H$ achieves its global minimum somewhere off the diagonal.
 
 :::
 

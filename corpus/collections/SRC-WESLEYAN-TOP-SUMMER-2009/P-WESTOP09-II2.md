@@ -21,7 +21,7 @@ Compute the fundamental group of each space:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the Möbius-band product,
 \[
@@ -139,7 +139,7 @@ which is the displayed group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $G$ is the $1$-skeleton of $\Delta^3$, then
 \[
@@ -169,7 +169,7 @@ circles, whose fundamental group is $F_3$.
 
 ::: pf-qed
 
-Steps <1>1 through <1>4 compute the four requested fundamental groups.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} compute the four requested fundamental groups.
 
 :::
 

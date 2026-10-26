@@ -22,7 +22,7 @@ Show that $(X,\tau')$ is compact but not Hausdorff.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -39,7 +39,7 @@ To prove \((X,\tau')\) compact, it suffices to show that an arbitrary \(\tau'\)-
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every member of \(\mathcal U\) is also \(\tau\)-open.
 
@@ -56,14 +56,14 @@ means every \(\tau'\)-open set belongs to \(\tau\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore \(\mathcal U\) is an open cover of \((X,\tau)\).
 
 
 ::: pf-proof
 
-It covers the same underlying set \(X\), and all its members are \(\tau\)-open by step <1>2.
+It covers the same underlying set \(X\), and all its members are \(\tau\)-open by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -76,13 +76,13 @@ Since \((X,\tau)\) is compact, \(\mathcal U\) has a finite subcover.
 
 ::: pf-proof
 
-Apply compactness of \((X,\tau)\) to the cover from step <1>3.
+Apply compactness of \((X,\tau)\) to the cover from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -94,13 +94,13 @@ Hence
 
 ::: pf-proof
 
-The \(\tau'\)-open cover in step <1>1 was arbitrary.
+The \(\tau'\)-open cover in step [](#s1-1){.pf-ref} was arbitrary.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consider the identity map
 \[
@@ -116,9 +116,9 @@ The domain and codomain have the same underlying set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The identity map in step <1>6 is continuous.
+The identity map in step [](#s1-6){.pf-ref} is continuous.
 
 
 ::: pf-proof
@@ -141,7 +141,7 @@ the set \(U\) is \(\tau\)-open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The identity map is bijective.
 
@@ -154,7 +154,7 @@ It is the identity function on the same set \(X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 A continuous bijection from a compact space to a Hausdorff space is a homeomorphism.
 
@@ -182,7 +182,7 @@ is a homeomorphism.
 
 ::: pf-proof
 
-The domain is compact by hypothesis, the codomain is Hausdorff by the contradiction assumption, and steps <1>7--<1>8 give continuity and bijectivity. Apply step <1>9.
+The domain is compact by hypothesis, the codomain is Hausdorff by the contradiction assumption, and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give continuity and bijectivity. Apply step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -205,7 +205,7 @@ A homeomorphism has continuous inverse.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -229,13 +229,13 @@ must be \(\tau'\)-open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Combining
 \[
 \tau'\subseteq\tau
 \]
-with step <1>12 gives
+with step [](#s1-12){.pf-ref} gives
 \[
 \tau'=\tau.
 \]
@@ -249,7 +249,7 @@ Two sets contained in one another are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 This contradicts the strict inclusion
 \[
@@ -259,13 +259,13 @@ This contradicts the strict inclusion
 
 ::: pf-proof
 
-The equality from step <1>13 is incompatible with the hypothesis.
+The equality from step [](#s1-13){.pf-ref} is incompatible with the hypothesis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -277,7 +277,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption that \((X,\tau')\) was Hausdorff led to the contradiction in step <1>14.
+The assumption that \((X,\tau')\) was Hausdorff led to the contradiction in step [](#s1-14){.pf-ref}.
 
 :::
 
@@ -285,7 +285,7 @@ The assumption that \((X,\tau')\) was Hausdorff led to the contradiction in step
 
 ::: pf-qed
 
-Step <1>5 proves compactness, and step <1>15 proves failure of the Hausdorff property.
+Step [](#s1-5){.pf-ref} proves compactness, and step [](#s1-15){.pf-ref} proves failure of the Hausdorff property.
 
 :::
 

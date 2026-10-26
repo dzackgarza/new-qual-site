@@ -28,7 +28,7 @@ Enumerate the dense set $\QQ\cap[0,1]$ as $q_1,q_2,\ldots$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $h\in C([0,1])$,
 $$
@@ -48,7 +48,7 @@ Hence the supremum over the rational points is at least $\|h\|_\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each fixed $g\in C([0,1])$, the map
 $$
@@ -63,7 +63,7 @@ For every $j$, the function
 $$
 f\longmapsto |L_{q_j}(f)-g(q_j)|
 $$
-is $\mathcal F$-measurable because $L_{q_j}$ is measurable and absolute value is continuous. By step <1>1,
+is $\mathcal F$-measurable because $L_{q_j}$ is measurable and absolute value is continuous. By step [](#s1-1){.pf-ref},
 $$
 N_g(f)=\sup_{j\ge1}|L_{q_j}(f)-g(q_j)|.
 $$
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every open ball in $C([0,1])$ belongs to $\mathcal F$.
 
@@ -90,13 +90,13 @@ For $g\in C([0,1])$ and $r>0$,
 $$
 B(g,r)=\{f:N_g(f)<r\}.
 $$
-This set is $\mathcal F$-measurable by step <1>2.
+This set is $\mathcal F$-measurable by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space $C([0,1])$ has a countable dense subset.
 
@@ -127,14 +127,14 @@ Thus $\|f-q\|_\infty<\varepsilon$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The topology of $C([0,1])$ has a countable basis consisting of $\mathcal F$-measurable sets.
 
 
 ::: pf-proof
 
-Let $D\subseteq C([0,1])$ be the countable dense set from step <1>4. The collection
+Let $D\subseteq C([0,1])$ be the countable dense set from step [](#s1-4){.pf-ref}. The collection
 $$
 \mathcal B\coloneqq\{B(g,r):g\in D,\ r\in\QQ_{>0}\}
 $$
@@ -150,13 +150,13 @@ Such an $r$ exists because $\|f-g\|_\infty<\varepsilon/3$. Then
 $$
 f\in B(g,r)\subseteq B(f,\varepsilon)\subseteq O.
 $$
-Every element of $\mathcal B$ belongs to $\mathcal F$ by step <1>3.
+Every element of $\mathcal B$ belongs to $\mathcal F$ by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every open set in $C([0,1])$ belongs to $\mathcal F$.
 
@@ -167,7 +167,7 @@ Let $O$ be open. Since $\mathcal B$ is a countable basis,
 $$
 O=\bigcup\{B\in\mathcal B:B\subseteq O\}.
 $$
-The union is countable, and every member belongs to $\mathcal F$ by step <1>5. Since $\mathcal F$ is a $\sigma$-algebra, $O\in\mathcal F$.
+The union is countable, and every member belongs to $\mathcal F$ by step [](#s1-5){.pf-ref}. Since $\mathcal F$ is a $\sigma$-algebra, $O\in\mathcal F$.
 
 :::
 
@@ -175,7 +175,7 @@ The union is countable, and every member belongs to $\mathcal F$ by step <1>5. S
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

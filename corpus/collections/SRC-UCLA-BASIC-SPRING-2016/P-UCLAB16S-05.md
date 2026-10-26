@@ -36,7 +36,7 @@ p_0=(x_0,y_0).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 \[
@@ -65,7 +65,7 @@ A vector in $\mathbb R^2$ is nonzero exactly when at least one coordinate is non
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After interchanging the coordinate names if necessary, assume
 \[
@@ -75,7 +75,7 @@ After interchanging the coordinate names if necessary, assume
 
 ::: pf-proof
 
-Step <1>1 supplies a nonzero partial derivative.
+Step [](#s1-1){.pf-ref} supplies a nonzero partial derivative.
 If
 \[
 g_x(p_0)\ne0
@@ -86,7 +86,7 @@ instead, the same argument below is obtained by exchanging $x$ and $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist an open interval
 \[
@@ -124,7 +124,7 @@ and
 \[
 g_y(x_0,y_0)\ne0
 \]
-by step <1>2.
+by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -146,7 +146,7 @@ x=x_0.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 g(x,\phi(x))=0
 \]
@@ -177,7 +177,7 @@ near $x_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -194,7 +194,7 @@ A differentiable one-variable function has derivative zero at an interior local 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Differentiating the identity
 \[
@@ -234,7 +234,7 @@ g_y(p_0)\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Differentiating
 \[
@@ -260,7 +260,7 @@ f_x(p_0)
 +
 f_y(p_0)\phi'(x_0).
 \]
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 h'(x_0)=0.
 \]
@@ -269,9 +269,9 @@ h'(x_0)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Substituting step <1>6 into step <1>7 gives
+Substituting step [](#s1-6){.pf-ref} into step [](#s1-7){.pf-ref} gives
 \[
 \boxed{
 f_x(p_0)g_y(p_0)
@@ -285,7 +285,7 @@ f_y(p_0)g_x(p_0)
 
 ::: pf-proof
 
-Step <1>7 becomes
+Step [](#s1-7){.pf-ref} becomes
 \[
 0
 =
@@ -303,7 +303,7 @@ g_y(p_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define
 \[
@@ -324,7 +324,7 @@ f_x(p_0)=\lambda g_x(p_0).
 ::: pf-proof
 
 The first equality is the definition of $\lambda$.
-From step <1>8,
+From step [](#s1-8){.pf-ref},
 \[
 f_x(p_0)g_y(p_0)
 =
@@ -347,7 +347,7 @@ f_x(p_0)=\lambda g_x(p_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -361,7 +361,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>9 gives equality of the two coordinate components.
+Step [](#s1-9){.pf-ref} gives equality of the two coordinate components.
 
 :::
 
@@ -369,7 +369,7 @@ Step <1>9 gives equality of the two coordinate components.
 
 ::: pf-qed
 
-Step <1>10 is the required Lagrange-multiplier condition.
+Step [](#s1-10){.pf-ref} is the required Lagrange-multiplier condition.
 
 :::
 

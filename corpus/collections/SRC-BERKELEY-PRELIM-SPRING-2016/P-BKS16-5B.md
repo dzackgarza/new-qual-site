@@ -38,7 +38,7 @@ also defines a holomorphic function on a neighborhood of $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists a number $\rho>1$ such that both power series for $f$ and $g$ converge on the disk $|z|<\rho$.
 
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -70,7 +70,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the series
+By step [](#s1-1){.pf-ref}, the series
 $$
 \sum_{n=0}^\infty f_n\rho^n
 \qquad\text{and}\qquad
@@ -82,7 +82,7 @@ converge. Therefore their terms tend to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 $$
@@ -93,7 +93,7 @@ converges absolutely for every $|z|<\rho^2$.
 
 ::: pf-proof
 
-By step <1>2, the sequences $(f_n\rho^n)$ and $(g_n\rho^n)$ are bounded. Choose $M,N>0$ such that
+By step [](#s1-2){.pf-ref}, the sequences $(f_n\rho^n)$ and $(g_n\rho^n)$ are bounded. Choose $M,N>0$ such that
 $$
 |f_n|\rho^n\leq M,
 \qquad
@@ -111,14 +111,14 @@ The geometric series on the right converges, so the comparison test gives absolu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $h$ is holomorphic on a neighborhood of $D$.
 
 
 ::: pf-proof
 
-By step <1>3, the power series for $h$ has radius of convergence at least $\rho^2$. Since $\rho^2>1$, the disk $|z|<\rho^2$ is an open neighborhood of $D$, and every power series is holomorphic on the interior of its disk of convergence.
+By step [](#s1-3){.pf-ref}, the power series for $h$ has radius of convergence at least $\rho^2$. Since $\rho^2>1$, the disk $|z|<\rho^2$ is an open neighborhood of $D$, and every power series is holomorphic on the interior of its disk of convergence.
 
 :::
 
@@ -126,7 +126,7 @@ By step <1>3, the power series for $h$ has radius of convergence at least $\rho^
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

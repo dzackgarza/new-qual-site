@@ -34,7 +34,7 @@ Tv_i=\lambda_i v_i.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors $v_1,\ldots,v_n$ are linearly independent.
 
@@ -63,7 +63,7 @@ The eigenvalues are distinct, so every factor $\lambda_j-\lambda_i$ is nonzero, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ordered set
 \[
@@ -74,13 +74,13 @@ is a basis of $V$.
 
 ::: pf-proof
 
-By step <1>1, $B$ consists of $n$ linearly independent vectors. Since $\dim V=n$, every linearly independent set of $n$ vectors is a basis.
+By step [](#s1-1){.pf-ref}, $B$ consists of $n$ linearly independent vectors. Since $\dim V=n$, every linearly independent set of $n$ vectors is a basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix of $T$ in the basis $B$ is
 \[
@@ -102,7 +102,7 @@ Therefore the $i$th column of $[T]_B$ has the single nonzero entry $\lambda_i$ i
 
 ::: pf-qed
 
-Step <1>2 proves that the chosen eigenvectors form a basis, and step <1>3 proves that the matrix of $T$ in this basis is diagonal.
+Step [](#s1-2){.pf-ref} proves that the chosen eigenvectors form a basis, and step [](#s1-3){.pf-ref} proves that the matrix of $T$ in this basis is diagonal.
 
 :::
 

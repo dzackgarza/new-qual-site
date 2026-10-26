@@ -23,7 +23,7 @@ Assume $m>0$ and seek the Green function on $\mathbb R$ that decays as $|x|\to\i
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Away from $x=0$, every decaying solution has the form
 \[
@@ -43,7 +43,7 @@ For $x\ne0$, the equation is $-G''+m^2G=0$, or $G''=m^2G$. Its solutions are lin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The absence of a $\delta'$ term requires $G$ to be continuous at $0$, hence
 \[
@@ -59,7 +59,7 @@ If $G$ had a jump at $0$, its first distributional derivative would contain a mu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integrating across $0$ gives
 \[
@@ -83,7 +83,7 @@ Rearranging gives the displayed jump condition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The coefficient is
 \[
@@ -93,19 +93,19 @@ A=B=\frac1{2m}.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 G'(0^-)=mA,
 \qquad
 G'(0^+)=-mB.
 \]
-Using $A=B$ from step <1>2 in the jump condition of step <1>3 gives $-2mA=-1$.
+Using $A=B$ from step [](#s1-2){.pf-ref} in the jump condition of step [](#s1-3){.pf-ref} gives $-2mA=-1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -115,7 +115,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>4. The resulting function is continuous, has derivative jump $-1$, solves the homogeneous equation away from the origin, and decays at both infinities, so its image under $-d^2/dx^2+m^2$ is exactly $\delta_0$.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}. The resulting function is continuous, has derivative jump $-1$, solves the homogeneous equation away from the origin, and decays at both infinities, so its image under $-d^2/dx^2+m^2$ is exactly $\delta_0$.
 
 :::
 
@@ -123,7 +123,7 @@ Combine steps <1>1 and <1>4. The resulting function is continuous, has derivativ
 
 ::: pf-qed
 
-Step <1>5 gives the decaying Green function on the line.
+Step [](#s1-5){.pf-ref} gives the decaying Green function on the line.
 
 :::
 

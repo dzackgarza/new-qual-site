@@ -32,7 +32,7 @@ be the characteristic polynomial of $T$, where $n=\dim V$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The constant coefficient $c_0$ is nonzero.
 
@@ -53,7 +53,7 @@ Hence $c_0\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By the Cayley--Hamilton theorem,
 \[
@@ -69,9 +69,9 @@ The Cayley--Hamilton theorem states that every endomorphism of a finite-dimensio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Multiplying the identity in step <1>2 by $T^{-1}$ gives
+Multiplying the identity in step [](#s1-2){.pf-ref} by $T^{-1}$ gives
 \[
 T^{n-1}+c_{n-1}T^{n-2}+\cdots+c_2T+c_1I+c_0T^{-1}=0.
 \]
@@ -79,7 +79,7 @@ T^{n-1}+c_{n-1}T^{n-2}+\cdots+c_2T+c_1I+c_0T^{-1}=0.
 
 ::: pf-proof
 
-Since $T$ is invertible, compose every term in step <1>2 with $T^{-1}$. Powers of the same operator commute, so
+Since $T$ is invertible, compose every term in step [](#s1-2){.pf-ref} with $T^{-1}$. Powers of the same operator commute, so
 \[
 T^jT^{-1}=T^{j-1}
 \]
@@ -92,7 +92,7 @@ IT^{-1}=T^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -115,7 +115,7 @@ Then
 
 ::: pf-proof
 
-Solve the identity in step <1>3 for $T^{-1}$:
+Solve the identity in step [](#s1-3){.pf-ref} for $T^{-1}$:
 \[
 T^{-1}
 =
@@ -128,7 +128,7 @@ T^{n-1}
 +c_1I
 \right).
 \]
-This is exactly $f(T)$ for the polynomial defined above. Since $c_0\ne0$ by step <1>1, all coefficients lie in the field $F$.
+This is exactly $f(T)$ for the polynomial defined above. Since $c_0\ne0$ by step [](#s1-1){.pf-ref}, all coefficients lie in the field $F$.
 
 :::
 
@@ -136,7 +136,7 @@ This is exactly $f(T)$ for the polynomial defined above. Since $c_0\ne0$ by step
 
 ::: pf-qed
 
-Step <1>4 gives the required polynomial expression for the inverse.
+Step [](#s1-4){.pf-ref} gives the required polynomial expression for the inverse.
 
 :::
 

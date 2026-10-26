@@ -27,7 +27,7 @@ b_i=\dim_{\mathbb Q}H^i(M;\mathbb Q).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Poincaré duality gives
 \[
@@ -48,7 +48,7 @@ obtained by evaluation on the fundamental class is perfect. Hence the paired vec
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -62,7 +62,7 @@ In
 \[
 \chi(M)=\sum_{i=0}^{4n}(-1)^ib_i,
 \]
-every degree $i\ne2n$ pairs with $4n-i$. Since $4n$ is even, the two terms in such a pair have the same sign, and by step <1>1 their sum is
+every degree $i\ne2n$ pairs with $4n-i$. Since $4n$ is even, the two terms in such a pair have the same sign, and by step [](#s1-1){.pf-ref} their sum is
 \[
 2(-1)^ib_i,
 \]
@@ -72,7 +72,7 @@ which is even. The only unpaired term is the middle term $b_{2n}$, whose sign is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -92,7 +92,7 @@ Poincaré duality makes $Q$ nondegenerate. Since $2n$ is even, graded commutativ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By definition,
 \[
@@ -108,7 +108,7 @@ The signature of a nonsingular real symmetric bilinear form is its number of pos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -118,7 +118,7 @@ Hence
 
 ::: pf-proof
 
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 b_{2n}-\sigma(M)
 =(b_++b_-)-(b_+-b_-)
@@ -130,9 +130,9 @@ which is even.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Combining steps <1>2 and <1>5 gives
+Combining steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} gives
 \[
 \boxed{\sigma(M)\equiv\chi(M)\pmod2}.
 \]
@@ -148,7 +148,7 @@ Both integers are congruent modulo $2$ to $b_{2n}$.
 
 ::: pf-qed
 
-Step <1>6 is the required congruence.
+Step [](#s1-6){.pf-ref} is the required congruence.
 
 :::
 

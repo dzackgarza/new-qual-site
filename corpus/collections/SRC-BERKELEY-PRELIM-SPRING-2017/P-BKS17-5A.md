@@ -50,7 +50,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic roots of the recurrence are
 $$
@@ -99,7 +99,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The radius of convergence is
 $$
@@ -113,7 +113,7 @@ Since
 $$
 |r_-|=\frac{2+\sqrt7}{3}>|r_+|
 $$
-and the coefficient of $r_-^n$ in step <1>1 is nonzero,
+and the coefficient of $r_-^n$ in step [](#s1-1){.pf-ref} is nonzero,
 $$
 \limsup_{n\to\infty}|a_n|^{1/n}=|r_-|=\frac{2+\sqrt7}{3}.
 $$
@@ -130,7 +130,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $|z|<R$,
 $$
@@ -163,7 +163,7 @@ Thus the product equals $3+z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In its disk of convergence, the series converges to
 $$
@@ -179,7 +179,7 @@ $$
 \qquad\text{and}\qquad
 \sqrt7+2,
 $$
-so the denominator is nonzero for $|z|<R=\sqrt7-2$. Dividing the identity in step <1>3 gives the stated formula throughout the disk of convergence.
+so the denominator is nonzero for $|z|<R=\sqrt7-2$. Dividing the identity in step [](#s1-3){.pf-ref} gives the stated formula throughout the disk of convergence.
 
 :::
 
@@ -187,7 +187,7 @@ so the denominator is nonzero for $|z|<R=\sqrt7-2$. Dividing the identity in ste
 
 ::: pf-qed
 
-Steps <1>2 and <1>4 give the requested radius and sum.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the requested radius and sum.
 
 :::
 

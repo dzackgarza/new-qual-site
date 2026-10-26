@@ -40,7 +40,7 @@ What is the sequence of outputs when the input value is 17?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Starting from $17$, the first four outputs are
 $$
@@ -56,7 +56,7 @@ The input $17$ is odd, so the algorithm first replaces it by $3(17)+1=52$ and th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Continuing from $40$, the remaining outputs are
 $$
@@ -76,7 +76,7 @@ Indeed, every even term is halved, while the odd term $5$ is replaced by $3(5)+1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the output sequence is
 $$
@@ -87,7 +87,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Concatenating the outputs from steps <1>1 and <1>2 gives the displayed sequence. The input $17$ itself is not output before the first iteration.
+Concatenating the outputs from steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} gives the displayed sequence. The input $17$ itself is not output before the first iteration.
 
 :::
 
@@ -95,7 +95,7 @@ Concatenating the outputs from steps <1>1 and <1>2 gives the displayed sequence.
 
 ::: pf-qed
 
-Step <1>3 gives the complete sequence requested.
+Step [](#s1-3){.pf-ref} gives the complete sequence requested.
 
 :::
 

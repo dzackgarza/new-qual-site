@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $u,v\in(0,\pi)$,
 $$
@@ -59,7 +59,7 @@ This is the given identity divided by the positive number $f(u)f(v)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x,y,z\in(0,\pi)$,
 $$
@@ -73,7 +73,7 @@ $$
 
 ::: pf-proof
 
-By additivity of the integral and step <1>1,
+By additivity of the integral and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \frac{\sin(z-x)}{f(x)f(z)}
@@ -95,7 +95,7 @@ Multiplying by the positive product $f(x)f(y)f(z)$ gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist constants $A,B\in\RR$ such that
 $$
@@ -110,7 +110,7 @@ Choose distinct $x,z\in(0,\pi)$. Since $0<|z-x|<\pi$,
 $$
 \sin(z-x)\ne0.
 $$
-Solving the identity in step <1>2 for $f(y)$ and expanding the two sine differences gives
+Solving the identity in step [](#s1-2){.pf-ref} for $f(y)$ and expanding the two sine differences gives
 $$
 \begin{aligned}
 f(y)
@@ -128,7 +128,7 @@ The two coefficients are constants independent of $y$; call them $A$ and $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Positivity of $f$ forces
 $$
@@ -140,7 +140,7 @@ $$
 
 ::: pf-proof
 
-The formula in step <1>3 extends continuously to the endpoints. Since $f(y)>0$ for every $0<y<\pi$,
+The formula in step [](#s1-3){.pf-ref} extends continuously to the endpoints. Since $f(y)>0$ for every $0<y<\pi$,
 $$
 \lim_{y\downarrow0}f(y)=B\geq0.
 $$
@@ -158,7 +158,7 @@ Since $\sin y>0$ on $(0,\pi)$ and $f$ is positive there, one must have $A>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every function
 $$
@@ -190,7 +190,7 @@ The constant $a$ cancels from the quotient.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The complete set of possibilities is
 $$
@@ -200,7 +200,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 show that every solution has this form, and step <1>5 shows that every such function is a solution.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} show that every solution has this form, and step [](#s1-5){.pf-ref} shows that every such function is a solution.
 
 :::
 
@@ -208,7 +208,7 @@ Steps <1>3 and <1>4 show that every solution has this form, and step <1>5 shows 
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

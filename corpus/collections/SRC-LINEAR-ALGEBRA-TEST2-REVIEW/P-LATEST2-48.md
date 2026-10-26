@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -69,7 +69,7 @@ by the product rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -96,7 +96,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -108,7 +108,7 @@ $$
 
 ::: pf-proof
 
-Subtract step <1>2 from step <1>1:
+Subtract step [](#s1-2){.pf-ref} from step [](#s1-1){.pf-ref}:
 $$
 \begin{aligned}
 ((ST-TS)(p))(x)
@@ -133,7 +133,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 holds for every polynomial $p\in V$.
+Step [](#s1-3){.pf-ref} holds for every polynomial $p\in V$.
 Thus the operator $ST-TS$ acts as the identity on every vector in $V$.
 
 :::

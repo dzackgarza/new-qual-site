@@ -38,7 +38,7 @@ g(x,y)=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Away from the origin, both $f$ and $g$ are continuous.
 
@@ -92,7 +92,7 @@ f(x,x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -134,7 +134,7 @@ Thus the limit at the origin does not equal the defined value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -168,7 +168,7 @@ multiply by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Also
 \[
@@ -192,7 +192,7 @@ taking square roots gives the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -206,7 +206,7 @@ as
 
 ::: pf-proof
 
-By steps <1>4--<1>5,
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 |g(x,y)|
 \le
@@ -227,7 +227,7 @@ $g$ is continuous at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -241,10 +241,10 @@ g\text{ is continuous on }\mathbb R^2.
 
 ::: pf-proof
 
-Step <1>3 shows $f$ fails continuity at the origin.
-Step <1>1 gives continuity elsewhere.
+Step [](#s1-3){.pf-ref} shows $f$ fails continuity at the origin.
+Step [](#s1-1){.pf-ref} gives continuity elsewhere.
 
-Steps <1>1 and <1>6 show $g$ is continuous both away from and at the
+Steps [](#s1-1){.pf-ref} and [](#s1-6){.pf-ref} show $g$ is continuous both away from and at the
 origin.
 
 :::
@@ -253,7 +253,7 @@ origin.
 
 ::: pf-qed
 
-Step <1>7 gives the requested classification.
+Step [](#s1-7){.pf-ref} gives the requested classification.
 
 :::
 

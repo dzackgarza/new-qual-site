@@ -31,7 +31,7 @@ The source prints a stray empty "$2^6(\ )$" after choice (D).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The complex number $i-\sqrt3$ has modulus $2$ and argument $5\pi/6$.
 
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its sixth power is
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-Apply De Moivre's formula to the polar form in step <1>1:
+Apply De Moivre's formula to the polar form in step [](#s1-1){.pf-ref}:
 $$
 \left(2e^{5\pi i/6}\right)^6
 =2^6e^{5\pi i}.
@@ -75,7 +75,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -88,7 +88,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Since $\cos5\pi=-1$ and $\sin5\pi=0$, the expression from step <1>2 is the negative real number $-2^6$. Equivalently, its polar form may be written $2^6e^{i\pi}$.
+Since $\cos5\pi=-1$ and $\sin5\pi=0$, the expression from step [](#s1-2){.pf-ref} is the negative real number $-2^6$. Equivalently, its polar form may be written $2^6e^{i\pi}$.
 
 :::
 
@@ -96,7 +96,7 @@ Since $\cos5\pi=-1$ and $\sin5\pi=0$, the expression from step <1>2 is the negat
 
 ::: pf-qed
 
-Step <1>3 gives the requested value in polar form and the matching choice.
+Step [](#s1-3){.pf-ref} gives the requested value in polar form and the matching choice.
 
 :::
 

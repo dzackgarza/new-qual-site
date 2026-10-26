@@ -55,7 +55,7 @@ Give an example of each of the following.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), take
 $$
@@ -79,7 +79,7 @@ Thus $f$ has no root in $\FF_3$ and is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For part (b), take
 $$
@@ -101,7 +101,7 @@ and neither factor is a unit, so the polynomial is reducible. In $\QQ[x]$, the c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (c), take
 $$
@@ -126,7 +126,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (d), take
 $$
@@ -150,7 +150,7 @@ units.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (e), take
 $$
@@ -172,7 +172,7 @@ Thus it has finitely many ideals.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For part (f), take
 $$
@@ -188,7 +188,7 @@ The rational-function field $\FF_p(t)$ is infinite and has characteristic $p$. H
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For part (g), take
 $$
@@ -225,7 +225,7 @@ The only units have norm $1$, hence are $\pm1$. The irreducibles in the two fact
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For part (h), take
 $$
@@ -251,7 +251,7 @@ contrary to the fact that every element of $(x,y)$ has zero constant term.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For part (i), let
 $$
@@ -356,7 +356,7 @@ Hence $R$ is not Euclidean.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For part (j), take
 $$
@@ -380,7 +380,7 @@ Thus degree is a Euclidean function. The ring is neither a field nor the ring of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For part (k), take
 $$
@@ -394,13 +394,13 @@ The ring has
 $$
 2^4=16
 $$
-elements and is noncommutative by the matrix-unit computation in step <1>3.
+elements and is noncommutative by the matrix-unit computation in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For part (l), take
 $$
@@ -448,7 +448,7 @@ for every $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 For part (m), take
 $$
@@ -474,7 +474,7 @@ which is an integral domain, so $(x)$ is prime. The quotient is not a field, so 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For part (n), take the element
 $$
@@ -486,7 +486,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7, $2$ is irreducible. It is not prime because
+By step [](#s1-7){.pf-ref}, $2$ is irreducible. It is not prime because
 $$
 2
 \mid
@@ -506,7 +506,7 @@ would force the integer coefficient $1$ to be even. Thus $2$ is irreducible but 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The same example answers part (o):
 $$
@@ -518,13 +518,13 @@ $$
 
 ::: pf-proof
 
-The ring $\ZZ[\sqrt{-5}]$ is an integral domain, and step <1>14 proves that $2$ is irreducible but not prime.
+The ring $\ZZ[\sqrt{-5}]$ is an integral domain, and step [](#s1-14){.pf-ref} proves that $2$ is irreducible but not prime.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 For part (p), take
 $$
@@ -548,7 +548,7 @@ Thus $(2)$ is its unique maximal ideal. The ring is not a field because the nonz
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 For part (q), take
 $$
@@ -598,7 +598,7 @@ The last two are maximal because the corresponding quotients are each isomorphic
 
 ::: pf-qed
 
-Steps <1>1--<1>17 provide and justify examples for parts (a)--(q), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-17){.pf-ref} provide and justify examples for parts (a)--(q), respectively.
 
 :::
 

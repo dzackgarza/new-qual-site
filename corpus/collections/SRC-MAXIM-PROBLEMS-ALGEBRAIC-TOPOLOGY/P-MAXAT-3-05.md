@@ -23,7 +23,7 @@ All cohomology groups are taken with integral coefficients. The rings are exteri
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The determinant fibration
 \[
@@ -53,7 +53,7 @@ The resulting maps in both directions are continuous, giving a homeomorphism of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a sphere fibration
 \[
@@ -74,7 +74,7 @@ Thus the orbit map identifies the quotient $SU(n)/SU(n-1)$ with $S^{2n-1}$ and y
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Inductively,
 \[
@@ -87,7 +87,7 @@ H^*(SU(n);\mathbb Z)
 
 ::: pf-proof
 
-For $n=2$, $SU(2)\cong S^3$, so the claim holds. Assume it for $SU(n-1)$ and use the Serre cohomology spectral sequence of step <1>2. Its $E_2$ page is
+For $n=2$, $SU(2)\cong S^3$, so the claim holds. Assume it for $SU(n-1)$ and use the Serre cohomology spectral sequence of step [](#s1-2){.pf-ref}. Its $E_2$ page is
 \[
 H^*(S^{2n-1};\mathbb Z)\otimes H^*(SU(n-1);\mathbb Z).
 \]
@@ -97,7 +97,7 @@ The fiber cohomology is generated in degrees at most $2n-3$. Degree consideratio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently,
 \[
@@ -110,12 +110,12 @@ H^*(U(n);\mathbb Z)
 
 ::: pf-proof
 
-By step <1>1 and the Künneth theorem,
+By step [](#s1-1){.pf-ref} and the Künneth theorem,
 \[
 H^*(U(n))
 \cong H^*(SU(n))\otimes H^*(S^1).
 \]
-Step <1>3 gives the first factor, while
+Step [](#s1-3){.pf-ref} gives the first factor, while
 \[
 H^*(S^1;\mathbb Z)=\Lambda(x_1).
 \]
@@ -141,7 +141,7 @@ The group $U(n)$ acts transitively on ordered orthonormal $k$-frames. The stabil
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Forgetting the last vector gives a sphere fibration
 \[
@@ -163,7 +163,7 @@ Local orthonormal trivializations give the bundle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Induction on $k$ gives
 \[
@@ -176,13 +176,13 @@ H^*(V_k(\mathbb C^n);\mathbb Z)
 
 ::: pf-proof
 
-For $k=1$, $V_1(\mathbb C^n)=S^{2n-1}$, giving one exterior generator in degree $2n-1$. Assume the formula for $k-1$. Apply the Serre spectral sequence to step <1>6. The new sphere generator has degree $2(n-k)+1$, while the existing generators begin in degree $2(n-k+1)+1=2(n-k)+3$. Degree considerations force collapse, and all groups are free abelian. The new odd-degree generator squares to zero, and together with the inductively existing generators yields the stated exterior algebra.
+For $k=1$, $V_1(\mathbb C^n)=S^{2n-1}$, giving one exterior generator in degree $2n-1$. Assume the formula for $k-1$. Apply the Serre spectral sequence to step [](#s1-6){.pf-ref}. The new sphere generator has degree $2(n-k)+1$, while the existing generators begin in degree $2(n-k+1)+1=2(n-k)+3$. Degree considerations force collapse, and all groups are free abelian. The new odd-degree generator squares to zero, and together with the inductively existing generators yields the stated exterior algebra.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus the three ring structures are
 \[
@@ -200,7 +200,7 @@ and
 
 ::: pf-proof
 
-These are steps <1>3, <1>4, and <1>7.
+These are steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-7){.pf-ref}.
 
 :::
 
@@ -208,7 +208,7 @@ These are steps <1>3, <1>4, and <1>7.
 
 ::: pf-qed
 
-Step <1>8 gives all requested integral cohomology rings and generator degrees.
+Step [](#s1-8){.pf-ref} gives all requested integral cohomology rings and generator degrees.
 
 :::
 

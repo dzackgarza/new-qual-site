@@ -47,7 +47,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $Av=\lambda v$ with $v\neq0$, then
 $$
@@ -87,7 +87,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenvalues are
 $$
@@ -103,15 +103,15 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that every eigenvalue is an $n$th root of unity. Conversely,
-for every $n$th root of unity the vector constructed in step <1>3 is a
+Step [](#s1-1){.pf-ref} shows that every eigenvalue is an $n$th root of unity. Conversely,
+for every $n$th root of unity the vector constructed in step [](#s1-3){.pf-ref} is a
 nonzero eigenvector, so every such root occurs.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For an eigenvalue $\lambda$ with $\lambda^n=1$, an eigenvector is
 $$
@@ -158,7 +158,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $\lambda_k=e^{2\pi i k/n}$, the corresponding eigenspace is
 one-dimensional and is spanned by $v_{\lambda_k}$.
@@ -166,7 +166,7 @@ one-dimensional and is spanned by $v_{\lambda_k}$.
 
 ::: pf-proof
 
-The recurrence in step <1>1 determines every coordinate of an eigenvector from
+The recurrence in step [](#s1-1){.pf-ref} determines every coordinate of an eigenvector from
 $x_1$. Hence every eigenvector for a fixed $\lambda_k$ is a scalar multiple of
 $v_{\lambda_k}$.
 
@@ -176,7 +176,7 @@ $v_{\lambda_k}$.
 
 ::: pf-qed
 
-Steps <1>2--<1>4 give all eigenvalues and eigenvectors.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give all eigenvalues and eigenvectors.
 
 :::
 

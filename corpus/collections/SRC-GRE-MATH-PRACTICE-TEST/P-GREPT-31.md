@@ -29,7 +29,7 @@ $$\int_{0}^{\infty} \frac{e^{-x}}{\sqrt{x}} \, dx$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the substitution
 $$
@@ -58,7 +58,7 @@ $u\to\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -70,7 +70,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Using the given Gaussian integral in step <1>1,
+Using the given Gaussian integral in step [](#s1-1){.pf-ref},
 $$
 2\int_0^\infty e^{-u^2}\,du
 =2\left(\frac12\sqrt\pi\right)
@@ -83,7 +83,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the required value.
+Step [](#s1-2){.pf-ref} gives the required value.
 
 :::
 

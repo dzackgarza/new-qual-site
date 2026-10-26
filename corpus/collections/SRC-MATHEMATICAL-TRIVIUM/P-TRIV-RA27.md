@@ -22,7 +22,7 @@ For what values of α the following integrals are convergent?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $\alpha\neq1$,
 $$
@@ -40,7 +40,7 @@ Differentiate the right-hand side.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $0<\varepsilon<1$ and $\alpha\neq1$,
 $$
@@ -52,13 +52,13 @@ $$
 
 ::: pf-proof
 
-Evaluate the antiderivative from step <1>1 at the endpoints.
+Evaluate the antiderivative from step [](#s1-1){.pf-ref} at the endpoints.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\alpha<1$, then
 $$
@@ -76,13 +76,13 @@ When $\alpha<1$, one has $1-\alpha>0$, so
 $$
 \varepsilon^{1-\alpha}\to0
 $$
-as $\varepsilon\to0^+$. Apply step <1>2.
+as $\varepsilon\to0^+$. Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\alpha>1$, then
 $$
@@ -97,14 +97,14 @@ Now $1-\alpha<0$, so
 $$
 \varepsilon^{1-\alpha}\to\infty
 $$
-as $\varepsilon\to0^+$. The expression in step <1>2 therefore has no finite
+as $\varepsilon\to0^+$. The expression in step [](#s1-2){.pf-ref} therefore has no finite
 limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $\alpha=1$, then
 $$
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -140,13 +140,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>3--<1>5.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For $R>1$ and $\alpha\neq1$,
 $$
@@ -158,13 +158,13 @@ $$
 
 ::: pf-proof
 
-Evaluate the antiderivative from step <1>1 between $1$ and $R$.
+Evaluate the antiderivative from step [](#s1-1){.pf-ref} between $1$ and $R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $\alpha>1$, then
 $$
@@ -182,7 +182,7 @@ Now $1-\alpha<0$, so
 $$
 R^{1-\alpha}\to0
 $$
-as $R\to\infty$. Step <1>7 therefore tends to
+as $R\to\infty$. Step [](#s1-7){.pf-ref} therefore tends to
 $$
 \frac{-1}{1-\alpha}
 =
@@ -193,7 +193,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $\alpha<1$, then
 $$
@@ -204,13 +204,13 @@ diverges.
 
 ::: pf-proof
 
-Then $1-\alpha>0$, so $R^{1-\alpha}\to\infty$ in step <1>7.
+Then $1-\alpha>0$, so $R^{1-\alpha}\to\infty$ in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If $\alpha=1$, then
 $$
@@ -233,7 +233,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -246,7 +246,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>8--<1>10.
+Combine steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -254,7 +254,7 @@ Combine steps <1>8--<1>10.
 
 ::: pf-qed
 
-Steps <1>6 and <1>11 answer parts (a) and (b), respectively.
+Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref} answer parts (a) and (b), respectively.
 
 :::
 

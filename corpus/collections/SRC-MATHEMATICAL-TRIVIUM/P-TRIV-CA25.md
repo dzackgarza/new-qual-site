@@ -63,7 +63,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the bosonic case,
 $$
@@ -87,7 +87,7 @@ equivalently $w=-i\xi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The auxiliary function
 $$
@@ -128,7 +128,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -158,7 +158,7 @@ and
 $$
 T\beta=1,
 $$
-the displayed formula for $F_B$ follows. By step <1>2, the residue of $g_B$
+the displayed formula for $F_B$ follows. By step [](#s1-2){.pf-ref}, the residue of $g_B$
 at $i\omega_n$ is $1$, so multiplying by the holomorphic factor
 $h(-iz)$ gives residue $h(\omega_n)$.
 
@@ -166,7 +166,7 @@ $h(-iz)$ gives residue $h(\omega_n)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Besides the Matsubara poles, $F_B$ has a simple pole at
 $$
@@ -196,7 +196,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the contour prescription in the problem,
 $$
@@ -209,7 +209,7 @@ $$
 ::: pf-proof
 
 For a finite contour enclosing a finite symmetric set of Matsubara poles and
-excluding $\xi$, the residue theorem and step <1>3 identify the contour
+excluding $\xi$, the residue theorem and step [](#s1-3){.pf-ref} identify the contour
 integral with the corresponding finite Matsubara sum.
 
 Now enlarge and deform the contour as prescribed in the problem. The outer
@@ -222,7 +222,7 @@ the negative of the residue at $\xi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -244,20 +244,20 @@ h(\omega_n)
 =
 -\frac{T}{i\omega_n-\xi}.
 $$
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 This is the Bose distribution.
 
 
 ::: pf-proof
 
-The right-hand side in step <1>6 is the Bose--Einstein occupation factor
+The right-hand side in step [](#s1-6){.pf-ref} is the Bose--Einstein occupation factor
 $$
 n_B(\xi)
 =
@@ -268,7 +268,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In the fermionic case,
 $$
@@ -312,7 +312,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define
 $$
@@ -338,7 +338,7 @@ h(-iz)
 =
 -\frac{T}{z-\xi}.
 $$
-By step <1>8, the residue of $g_F$ at $i\omega_n$ is $-1$. Hence
+By step [](#s1-8){.pf-ref}, the residue of $g_F$ at $i\omega_n$ is $-1$. Hence
 $$
 \operatorname{Res}_{z=i\omega_n}F_F(z)
 =
@@ -354,7 +354,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The remaining pole of $F_F$ is at $z=\xi$, with residue
 $$
@@ -379,7 +379,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Under the same contour prescription,
 $$
@@ -392,9 +392,9 @@ $$
 
 ::: pf-proof
 
-For each finite contour, step <1>9 identifies the enclosed fermionic
+For each finite contour, step [](#s1-9){.pf-ref} identifies the enclosed fermionic
 Matsubara residues with the corresponding finite sum. Inflate and reverse the
-contour as in step <1>5. Under the prescribed regularization, the outer
+contour as in step [](#s1-5){.pf-ref}. Under the prescribed regularization, the outer
 contribution is discarded and the remaining contour has negative orientation
 around $z=\xi$.
 
@@ -402,7 +402,7 @@ around $z=\xi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 $$
@@ -418,20 +418,20 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>10 and <1>11.
+Combine steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 This is the Fermi distribution.
 
 
 ::: pf-proof
 
-The right-hand side in step <1>12 is the Fermi--Dirac occupation factor
+The right-hand side in step [](#s1-12){.pf-ref} is the Fermi--Dirac occupation factor
 $$
 n_F(\xi)
 =
@@ -444,7 +444,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1--<1>7 establish the bosonic formula, and steps <1>8--<1>13
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} establish the bosonic formula, and steps [](#s1-8){.pf-ref} through [](#s1-13){.pf-ref}
 establish the fermionic formula.
 
 :::

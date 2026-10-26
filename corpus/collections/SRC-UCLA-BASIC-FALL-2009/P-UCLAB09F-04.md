@@ -33,7 +33,7 @@ n=\dim V.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is an orthonormal basis
 \[
@@ -50,9 +50,9 @@ Choose any basis of $U$ and apply the Gram--Schmidt process. Since $U$ is a subs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Extend the basis in step <1>1 to an orthonormal basis
+Extend the basis in step [](#s1-1){.pf-ref} to an orthonormal basis
 \[
 u_1,\ldots,u_k,u_{k+1},\ldots,u_n
 \]
@@ -67,7 +67,7 @@ Extend $u_1,\ldots,u_k$ to an ordinary basis of $V$ and apply Gram--Schmidt whil
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The vectors
 \[
@@ -82,13 +82,13 @@ For $j>k$ and every $i\le k$,
 \[
 \langle u_j,u_i\rangle=0
 \]
-because the basis in step <1>2 is orthonormal. Since $u_1,\ldots,u_k$ span $U$, linearity of the inner product shows that $u_j$ is orthogonal to every vector in $U$.
+because the basis in step [](#s1-2){.pf-ref} is orthonormal. Since $u_1,\ldots,u_k$ span $U$, linearity of the inner product shows that $u_j$ is orthogonal to every vector in $U$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vectors
 \[
@@ -99,7 +99,7 @@ span $U^\perp$.
 
 ::: pf-proof
 
-Let $v\in U^\perp$. Expand $v$ in the orthonormal basis from step <1>2:
+Let $v\in U^\perp$. Expand $v$ in the orthonormal basis from step [](#s1-2){.pf-ref}:
 \[
 v=\sum_{i=1}^n c_i u_i.
 \]
@@ -117,7 +117,7 @@ so the displayed vectors span $U^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -127,7 +127,7 @@ One has
 
 ::: pf-proof
 
-By steps <1>3--<1>4, the $n-k$ vectors
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, the $n-k$ vectors
 \[
 u_{k+1},\ldots,u_n
 \]
@@ -137,7 +137,7 @@ form a basis of $U^\perp$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -153,7 +153,7 @@ By definition,
 \qquad
 \dim V=n,
 \]
-and step <1>5 gives
+and step [](#s1-5){.pf-ref} gives
 \[
 \dim U^\perp=n-k.
 \]
@@ -165,7 +165,7 @@ Adding yields the displayed identity.
 
 ::: pf-qed
 
-Step <1>6 is the required dimension formula.
+Step [](#s1-6){.pf-ref} is the required dimension formula.
 
 :::
 

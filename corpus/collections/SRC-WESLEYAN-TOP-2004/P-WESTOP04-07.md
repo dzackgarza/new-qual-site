@@ -19,7 +19,7 @@ Prove or disprove each statement:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (1) is false.
 
@@ -37,7 +37,7 @@ $$
 a<b
 \}.
 $$
-Steps <1>2--<1>4 show that
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that
 $$
 \mathbb S
 $$
@@ -51,7 +51,7 @@ is not.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Sorgenfrey line
 $$
@@ -185,7 +185,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The anti-diagonal
 $$
@@ -276,7 +276,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The product
 $$
@@ -291,7 +291,7 @@ The closed subspace
 $$
 A
 $$
-from step <1>3 is an uncountable discrete space. It is not Lindelöf, because the open cover by singleton sets
+from step [](#s1-3){.pf-ref} is an uncountable discrete space. It is not Lindelöf, because the open cover by singleton sets
 $$
 \{
 \{a\}:
@@ -334,7 +334,7 @@ cannot be Lindelöf.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every metrizable Lindelöf space is second countable.
 
@@ -440,7 +440,7 @@ is a countable base.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The product of two second-countable spaces is second countable.
 
@@ -480,7 +480,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every second-countable space is Lindelöf.
 
@@ -547,7 +547,7 @@ Thus the chosen family is a countable subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Statement (2) is true:
 $$
@@ -560,7 +560,7 @@ $$
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 X
 $$
@@ -568,11 +568,11 @@ and
 $$
 Y
 $$
-are second countable. Step <1>6 makes
+are second countable. Step [](#s1-6){.pf-ref} makes
 $$
 X\times Y
 $$
-second countable, and step <1>7 makes it Lindelöf.
+second countable, and step [](#s1-7){.pf-ref} makes it Lindelöf.
 
 :::
 
@@ -580,7 +580,7 @@ second countable, and step <1>7 makes it Lindelöf.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 disprove statement (1), and steps <1>5--<1>8 prove statement (2).
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} disprove statement (1), and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} prove statement (2).
 
 :::
 

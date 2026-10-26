@@ -32,7 +32,7 @@ v\ne0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The operator
 \[
@@ -81,7 +81,7 @@ Thus $S$ is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every normal operator $N$ on a finite-dimensional complex inner-product space,
 \[
@@ -118,7 +118,7 @@ Taking nonnegative square roots gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -140,7 +140,7 @@ Sv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -150,14 +150,14 @@ S^*v=0.
 
 ::: pf-proof
 
-By step <1>1, $S$ is normal.
-Therefore step <1>2 gives
+By step [](#s1-1){.pf-ref}, $S$ is normal.
+Therefore step [](#s1-2){.pf-ref} gives
 \[
 \|S^*v\|
 =
 \|Sv\|.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \|Sv\|=0.
 \]
@@ -174,7 +174,7 @@ S^*v=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -188,7 +188,7 @@ Since
 \[
 S^*=T^*-\overline{\lambda}I,
 \]
-step <1>4 says
+step [](#s1-4){.pf-ref} says
 \[
 (T^*-\overline{\lambda}I)v=0.
 \]
@@ -201,14 +201,14 @@ T^*v=\overline{\lambda}v.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $v$ is an eigenvector of $T^*$.
 
 
 ::: pf-proof
 
-The vector $v$ is nonzero by hypothesis, and step <1>5 shows that it is taken to a scalar multiple of itself by $T^*$.
+The vector $v$ is nonzero by hypothesis, and step [](#s1-5){.pf-ref} shows that it is taken to a scalar multiple of itself by $T^*$.
 Therefore $v$ is an eigenvector of $T^*$, with eigenvalue $\overline{\lambda}$.
 
 :::
@@ -217,7 +217,7 @@ Therefore $v$ is an eigenvector of $T^*$, with eigenvalue $\overline{\lambda}$.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

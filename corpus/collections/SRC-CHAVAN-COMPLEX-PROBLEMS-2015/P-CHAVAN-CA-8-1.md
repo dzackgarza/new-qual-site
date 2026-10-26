@@ -18,7 +18,7 @@ Show that the range of every nonconstant entire function is dense in $\mathbb C$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that the range $f(\CC)$ of a nonconstant
 entire function $f$ is not dense in $\CC$.
@@ -32,7 +32,7 @@ This is the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exist $w\in\CC$ and $r>0$ such that
 $$
@@ -50,7 +50,7 @@ $\CC\setminus\overline{f(\CC)}$ then contains some disc $B(w,r)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -61,7 +61,7 @@ is entire and satisfies $\abs{g(z)}\leq1/r$ for every $z\in\CC$.
 
 ::: pf-proof
 
-Step <1>2 shows that $f(z)\neq w$ for every $z$, so $g$ is entire. It also gives
+Step [](#s1-2){.pf-ref} shows that $f(z)\neq w$ for every $z$, so $g$ is entire. It also gives
 $\abs{f(z)-w}\geq r$, hence
 $$
 \abs{g(z)}=\frac1{\abs{f(z)-w}}\leq\frac1r.
@@ -71,29 +71,29 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is constant.
 
 
 ::: pf-proof
 
-By step <1>3, $g$ is a bounded entire function. Liouville's theorem makes $g$
+By step [](#s1-3){.pf-ref}, $g$ is a bounded entire function. Liouville's theorem makes $g$
 constant. Since $g=1/(f-w)$, this forces $f$ to be constant as well.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $f(\CC)$ is dense in $\CC$.
 
 
 ::: pf-proof
 
-Step <1>4 contradicts the hypothesis that $f$ is nonconstant, so the assumption
-in step <1>1 is false.
+Step [](#s1-4){.pf-ref} contradicts the hypothesis that $f$ is nonconstant, so the assumption
+in step [](#s1-1){.pf-ref} is false.
 
 :::
 
@@ -101,7 +101,7 @@ in step <1>1 is false.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

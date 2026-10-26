@@ -68,7 +68,7 @@ Thus $A\cap B$ lies entirely in the other.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 After exchanging $U$ and $V$ if necessary, assume
 \[
@@ -90,7 +90,7 @@ Thus no such $v$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $V$ is closed in $A\cup B$.
 
@@ -106,7 +106,7 @@ Hence $V$ is closed in $A\cup B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The complement of $V$ in $A\cup B$ is
 \[
@@ -123,7 +123,7 @@ Because
 \[
 A=U\cup V
 \]
-and $V\cap B=\varnothing$ by step <1>3,
+and $V\cap B=\varnothing$ by step [](#s1-3){.pf-ref},
 \[
 (A\cup B)\setminus V=U\cup B.
 \]
@@ -136,21 +136,21 @@ Therefore their finite union $U\cup B$ is closed in $A\cup B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set $V$ is both open and closed in $A\cup B$.
 
 
 ::: pf-proof
 
-Step <1>4 gives that $V$ is closed.
-Step <1>5 gives that its complement in $A\cup B$ is closed, so $V$ is open.
+Step [](#s1-4){.pf-ref} gives that $V$ is closed.
+Step [](#s1-5){.pf-ref} gives that its complement in $A\cup B$ is closed, so $V$ is open.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The set $V$ is a nonempty proper subset of $A\cup B$.
 
@@ -167,9 +167,9 @@ U\subseteq(A\cup B)\setminus V.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Steps <1>6--<1>7 contradict connectedness of $A\cup B$.
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} contradict connectedness of $A\cup B$.
 
 
 ::: pf-proof
@@ -181,7 +181,7 @@ But $V$ has exactly these properties.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -191,7 +191,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption that $A$ is disconnected leads to the contradiction in step <1>8.
+The assumption that $A$ is disconnected leads to the contradiction in step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -199,7 +199,7 @@ The assumption that $A$ is disconnected leads to the contradiction in step <1>8.
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

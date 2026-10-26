@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I need not be true.
 
@@ -55,7 +55,7 @@ uses all $61$ flowers, but every table has at least $15$ flowers. Thus no table 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II must be true.
 
@@ -72,7 +72,7 @@ contradicting the total of $61$. Hence some table has at least $16$ flowers.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III must be true.
 
@@ -101,7 +101,7 @@ again contradicting the total $61$. Thus some two tables contain at least $31$ f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the statements that must be true are
 $$
@@ -112,7 +112,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>1 gives a counterexample to I, while steps <1>2 and <1>3 prove II and III.
+Step [](#s1-1){.pf-ref} gives a counterexample to I, while steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove II and III.
 
 :::
 
@@ -120,7 +120,7 @@ Step <1>1 gives a counterexample to I, while steps <1>2 and <1>3 prove II and II
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

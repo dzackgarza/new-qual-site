@@ -39,7 +39,7 @@ The same argument applies in each case.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The class of modules satisfying $\mathsf P$ is closed under quotients.
 
@@ -80,7 +80,7 @@ and in particular finite length.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The class of modules satisfying $\mathsf P$ is closed under extensions.
 
@@ -129,7 +129,7 @@ so finiteness of the two end lengths implies finiteness of the middle one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The maximal element $A\in\mathcal I$ is proper.
 
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since
 $$
@@ -195,7 +195,7 @@ Fix such a witness $N$ for the rest of the proof.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose, for contradiction, that
 $$
@@ -234,7 +234,7 @@ Likewise for $b$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideals
 $$
@@ -251,14 +251,14 @@ The ideal $A$ is maximal in
 $$
 \mathcal I.
 $$
-By step <1>5, each displayed ideal strictly contains $A$.
+By step [](#s1-5){.pf-ref}, each displayed ideal strictly contains $A$.
 Hence neither can belong to $\mathcal I$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -283,7 +283,7 @@ A+(a)
 \in
 \mathcal I,
 $$
-contradicting step <1>6.
+contradicting step [](#s1-6){.pf-ref}.
 The argument for
 $$
 A+(b)
@@ -294,7 +294,7 @@ is identical.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Set
 $$
@@ -341,7 +341,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The quotient
 $$
@@ -362,13 +362,13 @@ N/L
 =
 N/N(A+(a)),
 $$
-which satisfies $\mathsf P$ by step <1>7.
+which satisfies $\mathsf P$ by step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Multiplication by $a$ induces a surjective homomorphism
 $$
@@ -398,7 +398,7 @@ Hence it is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The kernel of $\theta$ contains
 $$
@@ -468,7 +468,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The module
 $$
@@ -482,7 +482,7 @@ $$
 
 ::: pf-proof
 
-By step <1>11,
+By step [](#s1-11){.pf-ref},
 $$
 N(A+(b))
 \subseteq
@@ -499,7 +499,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The module
 $$
@@ -510,23 +510,23 @@ satisfies $\mathsf P$.
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 N/N(A+(b))
 $$
 satisfies $\mathsf P$.
-By step <1>12,
+By step [](#s1-12){.pf-ref},
 $$
 L/NA
 $$
 is its quotient.
-Apply quotient-closure from step <1>1.
+Apply quotient-closure from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The module
 $$
@@ -537,16 +537,16 @@ satisfies $\mathsf P$.
 
 ::: pf-proof
 
-In the exact sequence from step <1>8, the submodule
+In the exact sequence from step [](#s1-8){.pf-ref}, the submodule
 $$
 L/NA
 $$
-satisfies $\mathsf P$ by step <1>13, and the quotient
+satisfies $\mathsf P$ by step [](#s1-13){.pf-ref}, and the quotient
 $$
 N/L
 $$
-satisfies $\mathsf P$ by step <1>9.
-By extension-closure from step <1>2,
+satisfies $\mathsf P$ by step [](#s1-9){.pf-ref}.
+By extension-closure from step [](#s1-2){.pf-ref},
 $$
 N/NA
 $$
@@ -556,24 +556,24 @@ satisfies $\mathsf P$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-This contradicts the choice of $N$ in step <1>4.
+This contradicts the choice of $N$ in step [](#s1-4){.pf-ref}.
 
 
 ::: pf-proof
 
-Step <1>4 says
+Step [](#s1-4){.pf-ref} says
 $$
 N/NA
 $$
-does not satisfy $\mathsf P$, while step <1>14 says that it does.
+does not satisfy $\mathsf P$, while step [](#s1-14){.pf-ref} says that it does.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 $$
@@ -587,13 +587,13 @@ $$
 
 ::: pf-proof
 
-If both factors lay outside $A$, steps <1>5--<1>15 would produce a contradiction.
+If both factors lay outside $A$, steps [](#s1-5){.pf-ref} through [](#s1-15){.pf-ref} would produce a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence
 $$
@@ -606,7 +606,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 shows $A$ is proper, and step <1>16 gives the prime-product condition.
+Step [](#s1-3){.pf-ref} shows $A$ is proper, and step [](#s1-16){.pf-ref} gives the prime-product condition.
 
 :::
 
@@ -615,7 +615,7 @@ Step <1>3 shows $A$ is proper, and step <1>16 gives the prime-product condition.
 ::: pf-qed
 
 The argument applies verbatim when $\mathsf P$ is Artinian, Noetherian, or finite composition length.
-Thus step <1>17 proves all three versions of the problem.
+Thus step [](#s1-17){.pf-ref} proves all three versions of the problem.
 
 :::
 

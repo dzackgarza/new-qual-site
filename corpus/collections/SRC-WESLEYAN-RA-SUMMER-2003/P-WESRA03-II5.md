@@ -89,7 +89,7 @@ x=y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -113,7 +113,7 @@ m(\{y\})
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently,
 \[
@@ -131,7 +131,7 @@ d\sigma(y)
 
 ::: pf-proof
 
-By step <1>3, the inner integral is the zero function of \(y\). The integral
+By step [](#s1-3){.pf-ref}, the inner integral is the zero function of \(y\). The integral
 of the zero function with respect to any measure is zero.
 
 :::
@@ -160,7 +160,7 @@ y=x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -186,7 +186,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 \[
@@ -203,13 +203,13 @@ dm(x)
 
 ::: pf-proof
 
-Substitute the constant value from step <1>6.
+Substitute the constant value from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The last integral equals
 \[
@@ -254,13 +254,13 @@ f(x,y)\,d\sigma(y)\,dm(x)
 
 ::: pf-proof
 
-The first equality is step <1>4 and the second is steps <1>7--<1>8.
+The first equality is step [](#s1-4){.pf-ref} and the second is steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the two iterated integrals are unequal.
 
@@ -292,7 +292,7 @@ and the usual Tonelli--Fubini hypotheses fail.
 
 ::: pf-qed
 
-Step <1>10 is the required inequality.
+Step [](#s1-10){.pf-ref} is the required inequality.
 
 :::
 

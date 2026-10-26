@@ -41,7 +41,7 @@ a(x)\ge\frac1n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each set $E_n$ is finite.
 
@@ -80,7 +80,7 @@ Therefore $E_n$ must be finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every point $x$ with
 \[
@@ -112,7 +112,7 @@ x\in E_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -133,14 +133,14 @@ so
 x
 \]
 belongs to the set on the left.
-Conversely, step <1>2 shows that every point on the left belongs to at least one $E_n$.
+Conversely, step [](#s1-2){.pf-ref} shows that every point on the left belongs to at least one $E_n$.
 Thus the sets are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -153,8 +153,8 @@ Therefore
 
 ::: pf-proof
 
-By step <1>1, each $E_n$ is finite.
-By step <1>3, the support of $a$ is a countable union of finite sets.
+By step [](#s1-1){.pf-ref}, each $E_n$ is finite.
+By step [](#s1-3){.pf-ref}, the support of $a$ is a countable union of finite sets.
 Every countable union of finite sets is countable.
 
 :::
@@ -163,7 +163,7 @@ Every countable union of finite sets is countable.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

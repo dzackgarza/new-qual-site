@@ -35,7 +35,7 @@ are eigenvectors and find their eigenvalues.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors $v_1,v_2,v_3$ have eigenvalues $1,2,6$, respectively.
 
@@ -68,7 +68,7 @@ Thus the corresponding eigenvalues are $1,2,6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The initial vector decomposes as
 \[
@@ -93,7 +93,7 @@ v_1+3v_2+3v_3
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $t\geq0$,
 \[
@@ -104,8 +104,8 @@ For every integer $t\geq0$,
 ::: pf-proof
 
 The recurrence gives $\vec x(t)=A^t\vec x(0)$. Applying $A^t$ to the
-decomposition in step <1>2 and using the eigenvalue equations from
-step <1>1 yields
+decomposition in step [](#s1-2){.pf-ref} and using the eigenvalue equations from
+step [](#s1-1){.pf-ref} yields
 \[
 A^t v_1=1^t v_1,\qquad
 A^t v_2=2^t v_2,\qquad
@@ -117,7 +117,7 @@ which proves the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Equivalently, the closed form is
 \[
@@ -134,7 +134,7 @@ Equivalently, the closed form is
 
 ::: pf-proof
 
-Expand the expression in step <1>3 using the coordinates of
+Expand the expression in step [](#s1-3){.pf-ref} using the coordinates of
 $v_1,v_2,v_3$.
 
 :::
@@ -143,7 +143,7 @@ $v_1,v_2,v_3$.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>4 answers part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-4){.pf-ref} answers part (b).
 
 :::
 

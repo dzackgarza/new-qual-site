@@ -39,7 +39,7 @@ Let
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 \[
@@ -90,7 +90,7 @@ and has nonzero derivative on $\Omega$, hence is conformal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The squaring map
 \[
@@ -204,14 +204,14 @@ has argument in
 \left(-\frac{\pi}{2},\frac{\pi}{2}\right),
 \]
 so its real part is positive. Conversely, squaring is a conformal bijection
-from $H_R$ onto the slit plane, as in step <1>2. Thus the principal square
+from $H_R$ onto the slit plane, as in step [](#s1-2){.pf-ref}. Thus the principal square
 root is its conformal inverse.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Cayley map
 \[
@@ -246,7 +246,7 @@ which maps $\mathbb D$ to $H_R$. Thus $T_5$ is a conformal bijection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The composite
 \[
@@ -262,7 +262,7 @@ is therefore a conformal bijection
 
 ::: pf-proof
 
-Each map in steps <1>1 through <1>5 is a conformal bijection onto the next
+Each map in steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} is a conformal bijection onto the next
 domain. Their composition is therefore a conformal bijection from the
 original slit upper half-plane to the unit disk.
 
@@ -270,7 +270,7 @@ original slit upper half-plane to the unit disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Explicitly,
 \[
@@ -305,8 +305,8 @@ Applying $T_4$ and then $T_5$ gives the displayed formula.
 
 ::: pf-qed
 
-Step <1>7 gives the requested explicit conformal map, and steps <1>1 through
-<1>6 prove that it has the required source and target.
+Step [](#s1-7){.pf-ref} gives the requested explicit conformal map, and steps [](#s1-1){.pf-ref} through
+[](#s1-6){.pf-ref} prove that it has the required source and target.
 
 :::
 

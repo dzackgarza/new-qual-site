@@ -22,7 +22,7 @@ Denote by M the set of all maximal ideals of D. For $M \in \mathcal { M }$ , let
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -65,7 +65,7 @@ this fraction is just $d$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -77,7 +77,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 holds for every maximal ideal $M$.
+Step [](#s1-1){.pf-ref} holds for every maximal ideal $M$.
 
 :::
 
@@ -184,7 +184,7 @@ the ideal $I_x$ is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -229,7 +229,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose, for contradiction, that
 $$
@@ -244,7 +244,7 @@ is a proper ideal.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 x\notin D
 $$
@@ -257,7 +257,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exists a maximal ideal
 $$
@@ -272,13 +272,13 @@ $$
 ::: pf-proof
 
 Every proper ideal in a commutative ring with identity is contained in a maximal ideal.
-Apply this to the proper ideal from step <1>6.
+Apply this to the proper ideal from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since
 $$
@@ -309,9 +309,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-The denominator $s$ from step <1>8 belongs to $I_x$.
+The denominator $s$ from step [](#s1-8){.pf-ref} belongs to $I_x$.
 
 
 ::: pf-proof
@@ -341,7 +341,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 This contradicts
 $$
@@ -351,11 +351,11 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 I_x\subseteq M.
 $$
-Step <1>9 gives
+Step [](#s1-9){.pf-ref} gives
 $$
 s\in I_x.
 $$
@@ -363,13 +363,13 @@ Therefore
 $$
 s\in M,
 $$
-contradicting step <1>8.
+contradicting step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence
 $$
@@ -383,13 +383,13 @@ The assumption
 $$
 x\notin D
 $$
-leads to the contradiction in step <1>10.
+leads to the contradiction in step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 $$
@@ -405,13 +405,13 @@ The element
 $$
 x
 $$
-was arbitrary in the intersection, and step <1>11 shows it belongs to $D$.
+was arbitrary in the intersection, and step [](#s1-11){.pf-ref} shows it belongs to $D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Combining both inclusions,
 $$
@@ -425,13 +425,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 D
 \subseteq
 \bigcap_M D_M,
 $$
-and step <1>12 gives the reverse inclusion.
+and step [](#s1-12){.pf-ref} gives the reverse inclusion.
 
 :::
 
@@ -439,7 +439,7 @@ and step <1>12 gives the reverse inclusion.
 
 ::: pf-qed
 
-Step <1>13 is the required identity.
+Step [](#s1-13){.pf-ref} is the required identity.
 
 :::
 

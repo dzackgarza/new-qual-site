@@ -23,7 +23,7 @@ Show that there is a prime ideal P such that $P \cap S$ is empty.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $S$ is multiplicatively closed.
 
@@ -107,7 +107,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -124,7 +124,7 @@ Then $\mathcal P$ is nonempty.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 (0)\cap S=\varnothing.
 $$
@@ -137,7 +137,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 
@@ -208,7 +208,7 @@ maximal with respect to inclusion.
 
 ::: pf-proof
 
-By step <1>3, $\mathcal P$ is nonempty, and by step <1>4 every chain has an upper bound in $\mathcal P$. Zorn's lemma therefore yields a maximal element
+By step [](#s1-3){.pf-ref}, $\mathcal P$ is nonempty, and by step [](#s1-4){.pf-ref} every chain has an upper bound in $\mathcal P$. Zorn's lemma therefore yields a maximal element
 $$
 P\in\mathcal P.
 $$
@@ -217,7 +217,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal $P$ is proper.
 
@@ -228,7 +228,7 @@ Since
 $$
 1\in S
 $$
-by step <1>1 and
+by step [](#s1-1){.pf-ref} and
 $$
 P\cap S=\varnothing,
 $$
@@ -245,7 +245,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose
 $$
@@ -291,9 +291,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Under the assumptions of step <1>7, choose
+Under the assumptions of step [](#s1-7){.pf-ref}, choose
 $$
 s=p+ra\in S
 $$
@@ -342,14 +342,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-The assumptions of step <1>7 are impossible.
+The assumptions of step [](#s1-7){.pf-ref} are impossible.
 
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 st\in P.
 $$
@@ -357,7 +357,7 @@ But
 $$
 s,t\in S
 $$
-and $S$ is multiplicatively closed by step <1>2, so
+and $S$ is multiplicatively closed by step [](#s1-2){.pf-ref}, so
 $$
 st\in S.
 $$
@@ -374,7 +374,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -386,7 +386,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 shows that $P$ is proper. Step <1>9 shows that whenever
+Step [](#s1-6){.pf-ref} shows that $P$ is proper. Step [](#s1-9){.pf-ref} shows that whenever
 $$
 ab\in P,
 $$
@@ -407,7 +407,7 @@ $$
 
 ::: pf-qed
 
-Step <1>10 gives the required prime ideal.
+Step [](#s1-10){.pf-ref} gives the required prime ideal.
 
 :::
 

@@ -38,7 +38,7 @@ b=(a_1,\ldots,a_{n-1},1,b_{n+1},\ldots).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -112,7 +112,7 @@ At that coordinate the two binary digits are $0$ and $1$; exchange the names of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -145,9 +145,9 @@ Subtract the two convergent series term by term.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The tail in step <1>3 satisfies
+The tail in step [](#s1-3){.pf-ref} satisfies
 \[
 \sum_{k=n+1}^{\infty}
 \frac{b_k-a_k}{10^k}
@@ -186,7 +186,7 @@ The geometric-series sum is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -204,13 +204,13 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -224,7 +224,7 @@ a\ne b.
 
 ::: pf-proof
 
-Step <1>5 shows that, after possibly interchanging the two sequences,
+Step [](#s1-5){.pf-ref} shows that, after possibly interchanging the two sequences,
 \[
 \theta(b)>\theta(a).
 \]
@@ -234,7 +234,7 @@ Thus distinct sequences have distinct images.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -244,7 +244,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 is exactly the definition of injectivity.
+Step [](#s1-6){.pf-ref} is exactly the definition of injectivity.
 
 :::
 
@@ -252,7 +252,7 @@ Step <1>6 is exactly the definition of injectivity.
 
 ::: pf-qed
 
-Step <1>1 proves that $\theta$ is well-defined, and step <1>7 proves injectivity.
+Step [](#s1-1){.pf-ref} proves that $\theta$ is well-defined, and step [](#s1-7){.pf-ref} proves injectivity.
 
 :::
 

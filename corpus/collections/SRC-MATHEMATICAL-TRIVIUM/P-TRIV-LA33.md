@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every positive integer $k$,
 $$
@@ -86,9 +86,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Taking $k=N$ in step <1>2 gives
+Taking $k=N$ in step [](#s1-2){.pf-ref} gives
 $$
 \left(e^{A/N}\right)^N
 =
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-This is step <1>3 with the two sides reversed.
+This is step [](#s1-3){.pf-ref} with the two sides reversed.
 
 :::
 
@@ -129,7 +129,7 @@ This is step <1>3 with the two sides reversed.
 
 ::: pf-qed
 
-Step <1>4 proves the corrected intended statement for every
+Step [](#s1-4){.pf-ref} proves the corrected intended statement for every
 $N\in\mathbb N$.
 
 :::

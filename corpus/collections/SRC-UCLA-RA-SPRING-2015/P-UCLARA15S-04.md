@@ -39,7 +39,7 @@ Let
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\widehat f(n_0)=0$ for some $n_0\in\mathbb Z$, then $\mathcal T_f$ is not dense in $L^1((0,2\pi))$.
 
@@ -88,7 +88,7 @@ Thus $\mathcal T_f$ cannot be dense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Now suppose that
 \[
@@ -135,9 +135,9 @@ Since $\Lambda$ vanishes on $X$, the displayed annihilation identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the assumption of step <1>2, define
+Under the assumption of step [](#s1-2){.pf-ref}, define
 \[
 H(a)
 \coloneqq
@@ -154,13 +154,13 @@ H(a)=0
 
 ::: pf-proof
 
-For each $a$, the translate $f(\cdot-a)$ belongs to $\mathcal T_f\subset X$. The annihilation identity in step <1>2 therefore gives $H(a)=0$.
+For each $a$, the translate $f(\cdot-a)$ belongs to $\mathcal T_f\subset X$. The annihilation identity in step [](#s1-2){.pf-ref} therefore gives $H(a)=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n\in\mathbb Z$,
 \[
@@ -226,7 +226,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The assumption that all Fourier coefficients of $f$ are nonzero forces
 \[
@@ -238,13 +238,13 @@ The assumption that all Fourier coefficients of $f$ are nonzero forces
 
 ::: pf-proof
 
-By step <1>3, $H\equiv0$, so
+By step [](#s1-3){.pf-ref}, $H\equiv0$, so
 \[
 \widehat H(n)=0
 \qquad
 (n\in\mathbb Z).
 \]
-Step <1>4 therefore gives
+Step [](#s1-4){.pf-ref} therefore gives
 \[
 \widehat f(-n)
 \overline{\widehat g(-n)}
@@ -260,9 +260,9 @@ for every $n$, which is equivalent to the stated conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The function $g$ in step <1>2 must vanish almost everywhere.
+The function $g$ in step [](#s1-2){.pf-ref} must vanish almost everywhere.
 
 
 ::: pf-proof
@@ -273,7 +273,7 @@ g\in L^\infty
 \subset
 L^1.
 \]
-By step <1>5 all Fourier coefficients of $g$ vanish. The uniqueness theorem for Fourier series of $L^1$ functions implies
+By step [](#s1-5){.pf-ref} all Fourier coefficients of $g$ vanish. The uniqueness theorem for Fourier series of $L^1$ functions implies
 \[
 g=0
 \]
@@ -283,14 +283,14 @@ almost everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If every Fourier coefficient of $f$ is nonzero, then $\mathcal T_f$ is dense in $L^1((0,2\pi))$.
 
 
 ::: pf-proof
 
-If the closure $X$ were proper, step <1>2 would produce a nonzero annihilator $g\in L^\infty$, whereas step <1>6 would force that annihilator to be zero almost everywhere. This contradiction shows
+If the closure $X$ were proper, step [](#s1-2){.pf-ref} would produce a nonzero annihilator $g\in L^\infty$, whereas step [](#s1-6){.pf-ref} would force that annihilator to be zero almost everywhere. This contradiction shows
 \[
 X=L^1((0,2\pi)).
 \]
@@ -301,7 +301,7 @@ X=L^1((0,2\pi)).
 
 ::: pf-qed
 
-Step <1>1 proves necessity, and step <1>7 proves sufficiency.
+Step [](#s1-1){.pf-ref} proves necessity, and step [](#s1-7){.pf-ref} proves sufficiency.
 
 :::
 

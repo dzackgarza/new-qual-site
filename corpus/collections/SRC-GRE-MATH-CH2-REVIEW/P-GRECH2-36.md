@@ -31,7 +31,7 @@ What positive value of $a$ satisfies the following equation?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $a>0$ and $x>0$,
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Any positive $a$ satisfying the equation must have $a>1$, and the equation becomes
 $$
@@ -62,15 +62,15 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives the displayed integrand. If $0<a\le1$, then $a^e\le1$, so the interval from $e$ to $a^e$ reaches the singular point $x=1$ of $1/(x\log x)$; the corresponding improper integral does not converge to a finite value. Hence a solution must satisfy $a>1$, and step <1>1 reduces the original equation to the displayed one.
+Step [](#s1-1){.pf-ref} gives the displayed integrand. If $0<a\le1$, then $a^e\le1$, so the interval from $e$ to $a^e$ reaches the singular point $x=1$ of $1/(x\log x)$; the corresponding improper integral does not converge to a finite value. Hence a solution must satisfy $a>1$, and step [](#s1-1){.pf-ref} reduces the original equation to the displayed one.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The equation in step <1>2 is equivalent to
+The equation in step [](#s1-2){.pf-ref} is equivalent to
 $$
 \log(e\log a)=1.
 $$
@@ -97,7 +97,7 @@ because $\log e=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The unique positive solution is
 $$
@@ -108,7 +108,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Exponentiating step <1>3 gives
+Exponentiating step [](#s1-3){.pf-ref} gives
 $$
 e\log a=e,
 $$
@@ -120,7 +120,7 @@ so $\log a=1$ and hence $a=e$. This value is admissible and therefore is the uni
 
 ::: pf-qed
 
-Step <1>4 gives the requested positive value and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested positive value and corresponding choice.
 
 :::
 

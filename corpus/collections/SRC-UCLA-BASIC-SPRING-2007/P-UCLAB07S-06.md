@@ -33,7 +33,7 @@ Show that if $Y$ is another solution satisfying $|Y(t)-y_0|\le C$ on $[0,T]$, th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The solution $y$ is bounded on $[0,T]$.
 
@@ -67,7 +67,7 @@ for every $t\in[0,T]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists $M>0$ such that
 \[
@@ -82,7 +82,7 @@ By hypothesis,
 \[
 |Y(t)-y_0|\le C.
 \]
-By step <1>1, $y$ is bounded; hence
+By step [](#s1-1){.pf-ref}, $y$ is bounded; hence
 \[
 |y(t)-y_0|
 \]
@@ -106,7 +106,7 @@ M=C+C'.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $t\in[0,T]$,
 \[
@@ -161,7 +161,7 @@ K\int_0^t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every integer $n\ge0$ and every $t\in[0,T]$,
 \[
@@ -181,10 +181,10 @@ For $n=0$, the claim is
 \[
 |Y(t)-y(t)|\le M,
 \]
-which is step <1>2.
+which is step [](#s1-2){.pf-ref}.
 
 Assume the estimate holds for some $n$.
-Then step <1>3 gives
+Then step [](#s1-3){.pf-ref} gives
 \[
 \begin{aligned}
 |Y(t)-y(t)|
@@ -209,7 +209,7 @@ Thus the induction closes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For fixed $t\in[0,T]$,
 \[
@@ -231,7 +231,7 @@ Hence its terms tend to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $t\in[0,T]$,
 \[
@@ -242,7 +242,7 @@ Y(t)=y(t).
 ::: pf-proof
 
 Fix $t$.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 0
 \le
@@ -251,7 +251,7 @@ By step <1>4,
 M\frac{(Kt)^n}{n!}
 \]
 for every $n$.
-By step <1>5, the right-hand side tends to $0$ as $n\to\infty$.
+By step [](#s1-5){.pf-ref}, the right-hand side tends to $0$ as $n\to\infty$.
 Therefore
 \[
 |Y(t)-y(t)|=0.
@@ -268,7 +268,7 @@ Since $t$ was arbitrary, the equality holds on all of $[0,T]$.
 
 ::: pf-qed
 
-Step <1>6 proves uniqueness of the solution within the stated bounded class.
+Step [](#s1-6){.pf-ref} proves uniqueness of the solution within the stated bounded class.
 
 :::
 

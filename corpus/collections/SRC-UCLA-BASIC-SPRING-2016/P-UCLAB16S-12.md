@@ -28,7 +28,7 @@ Prove that $v_1+2v_2$ is orthogonal to $3v_3+4v_4$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $i\ne j$, then
 \[
@@ -76,7 +76,7 @@ it follows that
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In particular,
 \[
@@ -92,7 +92,7 @@ v_2\perp v_4.
 
 ::: pf-proof
 
-Apply step <1>1 to the four pairs
+Apply step [](#s1-1){.pf-ref} to the four pairs
 \[
 (1,3),\ (1,4),\ (2,3),\ (2,4).
 \]
@@ -101,7 +101,7 @@ Apply step <1>1 to the four pairs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -127,20 +127,20 @@ Expand the inner product bilinearly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Every term on the right-hand side of step <1>3 vanishes.
+Every term on the right-hand side of step [](#s1-3){.pf-ref} vanishes.
 
 
 ::: pf-proof
 
-This is exactly step <1>2.
+This is exactly step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -154,7 +154,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>3--<1>4.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 Thus
 \[
 v_1+2v_2
@@ -170,7 +170,7 @@ is orthogonal to
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

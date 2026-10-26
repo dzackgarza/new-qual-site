@@ -36,7 +36,7 @@ F(z)=H(z)-\alpha.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(R>2\) and
 \[
@@ -69,7 +69,7 @@ Thus the strict inequality holds on all of \(\partial D_R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function \(H\) has exactly \(n\) zeros in \(D_R\), counted with multiplicity.
 
@@ -82,14 +82,14 @@ The exponential function has no zeros. Hence the only zero of \(H(z)=e^z(z-1)^n\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(R>2\), the equation \(F(z)=0\) has exactly \(n\) roots in \(D_R\), counted with multiplicity.
 
 
 ::: pf-proof
 
-On \(\partial D_R\), step <1>1 gives
+On \(\partial D_R\), step [](#s1-1){.pf-ref} gives
 \[
 |{-\alpha}|<|H(z)|.
 \]
@@ -97,26 +97,26 @@ Rouché's theorem therefore implies that \(H\) and
 \[
 H-\alpha=F
 \]
-have the same number of zeros in \(D_R\), counted with multiplicity. Step <1>2 gives that number as \(n\).
+have the same number of zeros in \(D_R\), counted with multiplicity. Step [](#s1-2){.pf-ref} gives that number as \(n\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equation \(F(z)=0\) has exactly \(n\) roots in the entire half-plane \(\{\operatorname{Re}z>0\}\), counted with multiplicity.
 
 
 ::: pf-proof
 
-Step <1>3 already gives \(n\) roots in every \(D_R\) with \(R>2\). If there were any additional root \(w\) in the right half-plane outside one such half-disc, choose \(R>|w|\). Then \(D_R\) would contain the \(n\) roots already counted together with \(w\), contradicting step <1>3. Since the increasing union of the sets \(D_R\) is the whole open right half-plane, the total number there is exactly \(n\), counted with multiplicity.
+Step [](#s1-3){.pf-ref} already gives \(n\) roots in every \(D_R\) with \(R>2\). If there were any additional root \(w\) in the right half-plane outside one such half-disc, choose \(R>|w|\). Then \(D_R\) would contain the \(n\) roots already counted together with \(w\), contradicting step [](#s1-3){.pf-ref}. Since the increasing union of the sets \(D_R\) is the whole open right half-plane, the total number there is exactly \(n\), counted with multiplicity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every root of \(F\) in the right half-plane is simple.
 
@@ -134,7 +134,7 @@ z+n-1=0,
 \qquad\text{hence}\qquad
 z=1-n.
 \]
-But \(1-n\le0\) is real, so it does not lie in the open right half-plane. Thus every root counted in step <1>4 is simple.
+But \(1-n\le0\) is real, so it does not lie in the open right half-plane. Thus every root counted in step [](#s1-4){.pf-ref} is simple.
 
 :::
 
@@ -142,7 +142,7 @@ But \(1-n\le0\) is real, so it does not lie in the open right half-plane. Thus e
 
 ::: pf-qed
 
-Steps <1>4 and <1>5 show that there are exactly \(n\) roots in the right half-plane and that all of them are simple.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} show that there are exactly \(n\) roots in the right half-plane and that all of them are simple.
 
 :::
 

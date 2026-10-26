@@ -33,7 +33,7 @@ The proof below follows the source's displayed definition literally.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume the displayed source convergence.
 For each
@@ -79,7 +79,7 @@ Apply the source definition with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -120,7 +120,7 @@ By countable subadditivity,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -152,7 +152,7 @@ By continuity from above,
 \lim_{m\to\infty}
 \mu(E_m).
 \]
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 0
 \le
@@ -171,7 +171,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -225,7 +225,7 @@ k\ge m.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every
 \[
@@ -243,7 +243,7 @@ Fix
 \[
 x\notin E
 \]
-and let $m$ be as in step <1>4.
+and let $m$ be as in step [](#s1-4){.pf-ref}.
 
 Let
 \[
@@ -261,7 +261,7 @@ Since
 \[
 x\notin B_k,
 \]
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 \[
 |f_n(x)-f(x)|
 <
@@ -282,7 +282,7 @@ f_n(x)\to f(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the source convergence implies almost-everywhere
 convergence of the full sequence, and in particular some subsequence
@@ -291,11 +291,11 @@ converges almost everywhere.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \mu(E)=0.
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 f_n(x)\to f(x)
 \]
@@ -310,7 +310,7 @@ Any subsequence therefore also converges almost everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Now assume
 \[
@@ -338,7 +338,7 @@ These are the hypotheses of Egorov's theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 By Egorov's theorem, there exists a measurable set
 \[
@@ -371,7 +371,7 @@ Apply it with exceptional-set measure bound
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Uniform convergence on
 \[
@@ -408,7 +408,7 @@ This is the definition of uniform convergence, using the tolerance
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -423,7 +423,7 @@ For the given
 \[
 \varepsilon>0,
 \]
-step <1>8 supplies a measurable exceptional set
+step [](#s1-8){.pf-ref} supplies a measurable exceptional set
 \[
 B
 \]
@@ -431,7 +431,7 @@ with
 \[
 \mu(B)<\varepsilon,
 \]
-and step <1>9 supplies
+and step [](#s1-9){.pf-ref} supplies
 \[
 N
 \]
@@ -448,9 +448,9 @@ This is exactly the source's displayed definition.
 
 ::: pf-qed
 
-Step <1>6 proves part (a), in the stronger form of convergence of the full
+Step [](#s1-6){.pf-ref} proves part (a), in the stronger form of convergence of the full
 sequence almost everywhere.
-Steps <1>7--<1>10 prove part (b) by Egorov's theorem.
+Steps [](#s1-7){.pf-ref} through [](#s1-10){.pf-ref} prove part (b) by Egorov's theorem.
 
 :::
 

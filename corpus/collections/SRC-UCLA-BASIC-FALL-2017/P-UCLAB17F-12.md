@@ -53,7 +53,7 @@ The meanings of the terms are:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose $\mathcal F$ is compact in the supremum norm.
 Then $\mathcal F$ is closed.
@@ -69,7 +69,7 @@ Hence $\mathcal F$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\mathcal F$ is compact, then it is bounded.
 
@@ -104,7 +104,7 @@ So $\mathcal F$ is bounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\mathcal F$ is compact, then it is equicontinuous.
 
@@ -175,20 +175,20 @@ Hence $\mathcal F$ is equicontinuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus compactness implies closedness, boundedness, and equicontinuity.
 
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Assume conversely that $\mathcal F$ is closed, bounded, and equicontinuous.
 Then the equicontinuity is uniform in the following sense:
@@ -285,7 +285,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The compact metric space $X$ has a countable dense subset.
 
@@ -314,7 +314,7 @@ gives a point of $D_m$ inside $B(x,r)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -359,9 +359,9 @@ For each fixed $j$, its tail lies inside the $j$th selected subsequence, so its 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-The subsequence from step <1>7 is uniformly Cauchy.
+The subsequence from step [](#s1-7){.pf-ref} is uniformly Cauchy.
 
 
 ::: pf-proof
@@ -372,7 +372,7 @@ Let
 \]
 denote that subsequence.
 Fix $\varepsilon>0$.
-By step <1>5, choose $\delta>0$ such that
+By step [](#s1-5){.pf-ref}, choose $\delta>0$ such that
 \[
 d(x,y)<\delta
 \]
@@ -438,7 +438,7 @@ for all $m,n\ge N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The space
 \[
@@ -487,9 +487,9 @@ Therefore $C(X)$ is complete.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-The uniformly Cauchy subsequence from step <1>8 converges uniformly to some
+The uniformly Cauchy subsequence from step [](#s1-8){.pf-ref} converges uniformly to some
 \[
 g\in C(X).
 \]
@@ -497,13 +497,13 @@ g\in C(X).
 
 ::: pf-proof
 
-Apply completeness of $C(X)$ from step <1>9.
+Apply completeness of $C(X)$ from step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The limit $g$ belongs to $\mathcal F$.
 
@@ -517,7 +517,7 @@ Since $\mathcal F$ is closed, its uniform limit belongs to $\mathcal F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Every sequence in $\mathcal F$ has a uniformly convergent subsequence whose limit belongs to $\mathcal F$.
 
@@ -525,13 +525,13 @@ Every sequence in $\mathcal F$ has a uniformly convergent subsequence whose limi
 ::: pf-proof
 
 Start with an arbitrary sequence in $\mathcal F$.
-Step <1>7 gives a diagonally convergent subsequence, steps <1>8--<1>10 show that this subsequence converges uniformly, and step <1>11 puts the limit in $\mathcal F$.
+Step [](#s1-7){.pf-ref} gives a diagonally convergent subsequence, steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} show that this subsequence converges uniformly, and step [](#s1-11){.pf-ref} puts the limit in $\mathcal F$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence $\mathcal F$ is compact in the supremum norm.
 
@@ -539,14 +539,14 @@ Hence $\mathcal F$ is compact in the supremum norm.
 ::: pf-proof
 
 In metric spaces, compactness is equivalent to sequential compactness.
-Step <1>12 proves sequential compactness of $\mathcal F$.
+Step [](#s1-12){.pf-ref} proves sequential compactness of $\mathcal F$.
 Therefore $\mathcal F$ is compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -560,7 +560,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 proves the forward implication, and steps <1>5--<1>13 prove the reverse implication.
+Step [](#s1-4){.pf-ref} proves the forward implication, and steps [](#s1-5){.pf-ref} through [](#s1-13){.pf-ref} prove the reverse implication.
 
 :::
 
@@ -568,7 +568,7 @@ Step <1>4 proves the forward implication, and steps <1>5--<1>13 prove the revers
 
 ::: pf-qed
 
-Step <1>14 is the stated Arzelà--Ascoli theorem, with all terms defined at the start of the solution.
+Step [](#s1-14){.pf-ref} is the stated Arzelà--Ascoli theorem, with all terms defined at the start of the solution.
 
 :::
 

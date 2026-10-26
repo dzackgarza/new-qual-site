@@ -68,7 +68,7 @@ Hence $C$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The inverse of $C$ is
 $$
@@ -124,7 +124,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 M
@@ -150,7 +150,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The entries decode to ROME.
 
@@ -172,7 +172,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 gives answer choice $\boxed{\text{(C)}}$.
+Step [](#s1-5){.pf-ref} gives answer choice $\boxed{\text{(C)}}$.
 
 :::
 

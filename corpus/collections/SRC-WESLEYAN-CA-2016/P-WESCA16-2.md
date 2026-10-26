@@ -44,7 +44,7 @@ with positive orientation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z$ with $|z-z_0|<R$,
 \[
@@ -61,7 +61,7 @@ of the closed disk bounded by $\Gamma$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $n\ge0$ and every $z$ with $|z-z_0|<R$,
 \[
@@ -87,7 +87,7 @@ and all of its $z$-derivatives are continuous on the compact product of
 $\Gamma$ with that smaller disk, and are uniformly bounded there.
 Consequently differentiation under the contour integral is valid.
 
-Differentiating step <1>2 once gives
+Differentiating step [](#s1-2){.pf-ref} once gives
 \[
 f'(z)=\frac1{2\pi i}
 \int_\Gamma\frac{f(\zeta)}{(\zeta-z)^2}\,d\zeta.
@@ -103,14 +103,14 @@ which yields the displayed formula for every $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is infinitely complex-differentiable on $D$.
 
 
 ::: pf-proof
 
-The point $z_0\in D$ was arbitrary. Step <1>3 constructs derivatives of
+The point $z_0\in D$ was arbitrary. Step [](#s1-3){.pf-ref} constructs derivatives of
 every order on a neighborhood of every point of $D$. Hence all derivatives
 $f^{(n)}$ exist throughout $D$ for every $n\ge0$.
 
@@ -120,7 +120,7 @@ $f^{(n)}$ exist throughout $D$ for every $n\ge0$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

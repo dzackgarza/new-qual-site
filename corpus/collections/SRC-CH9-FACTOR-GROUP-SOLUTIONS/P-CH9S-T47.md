@@ -29,7 +29,7 @@ be the quotient homomorphism.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subgroup $\pi(H)$ is either $\{N\}$ or all of $G/N$.
 
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\pi(H)=\{N\}$, then $H\subseteq N$.
 
@@ -67,7 +67,7 @@ $N$, so $H\subseteq N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\pi(H)=G/N$, then $NH=G$.
 
@@ -91,8 +91,8 @@ $N,H\subseteq G$, so $NH=G$.
 
 ::: pf-qed
 
-Step <1>1 gives the only two cases. Step <1>2 gives $H\subseteq N$ in
-the first case, and step <1>3 gives $NH=G$ in the second.
+Step [](#s1-1){.pf-ref} gives the only two cases. Step [](#s1-2){.pf-ref} gives $H\subseteq N$ in
+the first case, and step [](#s1-3){.pf-ref} gives $NH=G$ in the second.
 
 :::
 

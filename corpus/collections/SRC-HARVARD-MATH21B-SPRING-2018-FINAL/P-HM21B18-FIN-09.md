@@ -75,7 +75,7 @@ and you may leave the answer in terms of eigenvalues of the basic circulant matr
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\det A=1$.
 
@@ -197,7 +197,7 @@ $19,10,10,10,10$, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $\zeta_k=e^{2\pi i k/5}$ for $k=0,\ldots,4$, then
 \[
@@ -241,7 +241,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The five requested determinants are
 \[
@@ -256,7 +256,7 @@ The five requested determinants are
 
 ::: pf-proof
 
-These are the results of steps <1>1 through <1>5.
+These are the results of steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -264,7 +264,7 @@ These are the results of steps <1>1 through <1>5.
 
 ::: pf-qed
 
-Step <1>6 records all five determinants.
+Step [](#s1-6){.pf-ref} records all five determinants.
 
 :::
 

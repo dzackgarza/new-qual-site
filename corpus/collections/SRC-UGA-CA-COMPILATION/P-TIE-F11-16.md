@@ -37,7 +37,7 @@ whenever $\abs{z}\ge R_0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $n\ge0$ and every $R\ge R_0$,
 $$
@@ -80,7 +80,7 @@ Substitution yields the stated estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\ge3$,
 $$
@@ -90,7 +90,7 @@ $$
 
 ::: pf-proof
 
-Fix $n\ge3$. By step <1>1,
+Fix $n\ge3$. By step [](#s1-1){.pf-ref},
 $$
 \frac{\abs{f^{(n)}(0)}}{n!}
 \le
@@ -102,7 +102,7 @@ for every $R\ge R_0$. Since $2-n<0$, the right-hand side tends to $0$ as $R\to\i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ is a polynomial of degree at most $2$.
 
@@ -116,7 +116,7 @@ f(z)
 \sum_{n=0}^\infty
 \frac{f^{(n)}(0)}{n!}z^n.
 $$
-By step <1>2, every coefficient with $n\ge3$ vanishes. Hence
+By step [](#s1-2){.pf-ref}, every coefficient with $n\ge3$ vanishes. Hence
 $$
 \boxed{
 f(z)
@@ -132,7 +132,7 @@ so $f$ has degree at most $2$.
 
 ::: pf-qed
 
-Step <1>3 proves the required conclusion.
+Step [](#s1-3){.pf-ref} proves the required conclusion.
 
 :::
 

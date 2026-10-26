@@ -39,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 s+P
 $$
@@ -151,7 +151,7 @@ $$
 =
 0.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 u+P
 \ne
@@ -214,7 +214,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $\Phi$ preserves multiplication and identity.
 
@@ -254,7 +254,7 @@ Thus $\Phi$ is a unital ring homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is surjective.
 
@@ -294,7 +294,7 @@ Thus $\Phi$ is onto.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -340,7 +340,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Conversely, if
 $$
@@ -379,7 +379,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The kernel of $\Phi$ is
 $$
@@ -398,19 +398,19 @@ $$
 
 ::: pf-proof
 
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 $$
 \ker\Phi
 \subseteq
 P_P,
 $$
-and step <1>8 gives the reverse inclusion.
+and step [](#s1-8){.pf-ref} gives the reverse inclusion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -424,8 +424,8 @@ $$
 
 ::: pf-proof
 
-By steps <1>5--<1>6, $\Phi$ is a surjective ring homomorphism.
-By step <1>9, its kernel is
+By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}, $\Phi$ is a surjective ring homomorphism.
+By step [](#s1-9){.pf-ref}, its kernel is
 $$
 P_P.
 $$
@@ -444,7 +444,7 @@ $$
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

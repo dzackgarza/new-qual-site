@@ -30,7 +30,7 @@ M=\begin{pmatrix}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The inverse of $M$ is
 \[
@@ -108,9 +108,9 @@ M^{-1}M^{-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Squaring the matrix in step <1>1 gives
+Squaring the matrix in step [](#s1-1){.pf-ref} gives
 \[
 \boxed{
 M^{-2}
@@ -163,7 +163,7 @@ and the remaining rows similarly give
 
 ::: pf-qed
 
-Step <1>3 is the requested value of $M^{-2}$.
+Step [](#s1-3){.pf-ref} is the requested value of $M^{-2}$.
 
 :::
 

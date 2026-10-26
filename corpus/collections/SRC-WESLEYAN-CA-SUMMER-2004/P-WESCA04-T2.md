@@ -99,7 +99,7 @@ set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Cauchy's theorem on the multiply connected region $\Omega$ gives
 \[
@@ -134,7 +134,7 @@ Rearranging yields the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $j$,
 \[
@@ -177,9 +177,9 @@ formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Combining steps <1>3 and <1>4 yields
+Combining steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} yields
 \[
 \int_\gamma f(z)\,dz
 =
@@ -191,13 +191,13 @@ Combining steps <1>3 and <1>4 yields
 
 ::: pf-proof
 
-Substitute the $m$ identities from step <1>4 into the sum in step <1>3.
+Substitute the $m$ identities from step [](#s1-4){.pf-ref} into the sum in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 More generally, if $\Gamma$ is a closed piecewise-$C^1$ cycle in
 $U$ which is homologous to zero in $U$ and avoids all singularities of
@@ -229,11 +229,11 @@ multiplicity
 \int_\Gamma
 \frac{dz}{z-a}.
 \]
-Applying the local computation from step <1>4 to each circle gives the
+Applying the local computation from step [](#s1-4){.pf-ref} to each circle gives the
 displayed weighted residue sum.
 
 For a positively oriented simple Jordan curve, the index is $1$ at points
-inside and $0$ outside, so this reduces to step <1>5.
+inside and $0$ outside, so this reduces to step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -241,7 +241,7 @@ inside and $0$ outside, so this reduces to step <1>5.
 
 ::: pf-qed
 
-Step <1>5 is the usual Residue Theorem, and step <1>6 records its standard
+Step [](#s1-5){.pf-ref} is the usual Residue Theorem, and step [](#s1-6){.pf-ref} records its standard
 homological generalization.
 
 :::

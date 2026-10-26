@@ -35,7 +35,7 @@ be the standard generator. Suppose, for contradiction, that there is a smooth em
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Its normal bundle $\nu$ has rank
 \[
@@ -69,7 +69,7 @@ w(\nu)=(1+a)^{-(n+1)}.
 
 ::: pf-proof
 
-Apply the Whitney product formula to step <1>1:
+Apply the Whitney product formula to step [](#s1-1){.pf-ref}:
 \[
 w(T\mathbb{RP}^n)w(\nu)=1.
 \]
@@ -103,7 +103,7 @@ Set $x=1$, $y=a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In the truncated ring $\mathbb F_2[a]/(a^{n+1})$,
 \[
@@ -143,7 +143,7 @@ Thus $S$ is the required inverse.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -153,7 +153,7 @@ w_n(\nu)=a^n\ne0.
 
 ::: pf-proof
 
-Step <1>4 identifies the degree-$n$ component of $w(\nu)$ with $a^n$. The mod-$2$ cohomology ring of real projective space is
+Step [](#s1-4){.pf-ref} identifies the degree-$n$ component of $w(\nu)$ with $a^n$. The mod-$2$ cohomology ring of real projective space is
 \[
 H^*(\mathbb{RP}^n;\mathbb F_2)
 =\mathbb F_2[a]/(a^{n+1}),
@@ -164,7 +164,7 @@ so $a^n$ is its nonzero top-dimensional class.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 But a rank-$(n-1)$ vector bundle has
 \[
@@ -180,9 +180,9 @@ For a rank-$k$ real vector bundle, Stiefel--Whitney classes vanish in every degr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Steps <1>5 and <1>6 contradict each other.
+Steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref} contradict each other.
 
 
 ::: pf-proof
@@ -193,7 +193,7 @@ The same normal bundle $\nu$ cannot simultaneously have $w_n(\nu)=a^n\ne0$ and $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -205,7 +205,7 @@ Hence
 
 ::: pf-proof
 
-The contradiction in step <1>7 disproves the assumed embedding.
+The contradiction in step [](#s1-7){.pf-ref} disproves the assumed embedding.
 
 :::
 
@@ -213,7 +213,7 @@ The contradiction in step <1>7 disproves the assumed embedding.
 
 ::: pf-qed
 
-Step <1>8 is the required nonembedding result.
+Step [](#s1-8){.pf-ref} is the required nonembedding result.
 
 :::
 

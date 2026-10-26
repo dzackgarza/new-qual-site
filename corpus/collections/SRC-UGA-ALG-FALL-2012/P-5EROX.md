@@ -24,7 +24,7 @@ Moreover, when the characteristic of $k$ is 2, find a counterexample to this sta
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In characteristic zero, $AB-BA=A$ forces
 \[
@@ -44,7 +44,7 @@ where the first equality uses invariance of trace under conjugation. Because $n>
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In characteristic two, there are invertible matrices satisfying $AB-BA=A$; one example is
 \[
@@ -68,7 +68,7 @@ In characteristic two, subtraction equals addition, so $AB-BA=A$. Nevertheless $
 
 ::: pf-qed
 
-Step <1>1 proves the characteristic-zero assertion, and step <1>2 supplies the required characteristic-two counterexample.
+Step [](#s1-1){.pf-ref} proves the characteristic-zero assertion, and step [](#s1-2){.pf-ref} supplies the required characteristic-two counterexample.
 
 :::
 

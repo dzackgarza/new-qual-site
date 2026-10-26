@@ -51,7 +51,7 @@ The set of degrees of such relations is a nonempty subset of the nonnegative int
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 We may assume the chosen polynomial is monic:
 $$
@@ -82,7 +82,7 @@ Multiplying the polynomial by the inverse of its leading coefficient preserves i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The constant coefficient
 $$
@@ -157,7 +157,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Rearranging
 $$
@@ -186,7 +186,7 @@ Substitute
 $$
 X=a
 $$
-in the monic relation from step <1>2 and factor $a$ from all positive-degree terms.
+in the monic relation from step [](#s1-2){.pf-ref} and factor $a$ from all positive-degree terms.
 
 :::
 
@@ -203,7 +203,7 @@ is a unit of $D$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 c_0\ne0.
 $$
@@ -234,14 +234,14 @@ Thus $c_0$ is a unit of $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The element $a$ is a unit of $D$.
 
 
 ::: pf-proof
 
-Multiply the identity in step <1>4 by
+Multiply the identity in step [](#s1-4){.pf-ref} by
 $$
 -c_0^{-1}.
 $$
@@ -277,7 +277,7 @@ Thus $a$ has a multiplicative inverse in $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every nonzero element of $D$ is invertible.
 
@@ -289,13 +289,13 @@ $$
 a\in D
 $$
 was arbitrary.
-Step <1>6 shows that every such $a$ is a unit.
+Step [](#s1-6){.pf-ref} shows that every such $a$ is a unit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -308,7 +308,7 @@ $$
 ::: pf-proof
 
 The ring $D$ is already assumed to be an integral domain, hence a nonzero commutative ring with identity.
-Step <1>7 shows that every nonzero element is invertible.
+Step [](#s1-7){.pf-ref} shows that every nonzero element is invertible.
 This is exactly the definition of a field.
 
 :::
@@ -317,7 +317,7 @@ This is exactly the definition of a field.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

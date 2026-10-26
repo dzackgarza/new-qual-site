@@ -35,7 +35,7 @@ a_kb_k z^k.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix real numbers
 \[
@@ -65,7 +65,7 @@ of convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence
 \[
@@ -95,7 +95,7 @@ such that
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 \[
@@ -107,7 +107,7 @@ converges.
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 |a_kb_k|(rs)^k
@@ -122,13 +122,13 @@ The comparison series
 \[
 \sum M|a_k|r^k
 \]
-converges by step <1>1.
+converges by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -138,7 +138,7 @@ R\ge rs.
 
 ::: pf-proof
 
-Step <1>3 says the coefficientwise-product power series converges absolutely
+Step [](#s1-3){.pf-ref} says the coefficientwise-product power series converges absolutely
 at every
 \[
 z
@@ -153,7 +153,7 @@ Therefore its radius of convergence is at least $rs$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -177,7 +177,7 @@ Assume
 \[
 A,B>0.
 \]
-Step <1>4 holds for every
+Step [](#s1-4){.pf-ref} holds for every
 \[
 r<A,
 \qquad
@@ -212,7 +212,7 @@ AB=\infty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The inequality can be strict.
 
@@ -295,7 +295,7 @@ R>AB=1.
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>6 gives the strict example required
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} gives the strict example required
 in part (b).
 
 :::

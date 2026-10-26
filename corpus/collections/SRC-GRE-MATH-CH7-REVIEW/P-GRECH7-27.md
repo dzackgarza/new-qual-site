@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The source figure shows $C$ oriented counterclockwise and enclosing the poles $i$ and $-i$, while the pole $-3$ lies outside.
 
@@ -50,7 +50,7 @@ The arrow on the upper-right portion of the drawn curve points from right to lef
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue of $f$ at $i$ is
 $$
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residue of $f$ at $-i$ is
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -116,12 +116,12 @@ so the answer is (D).
 
 ::: pf-proof
 
-By the residue theorem and step <1>1,
+By the residue theorem and step [](#s1-1){.pf-ref},
 $$
 \int_C f(z)\,dz
 =2\pi i\left(\operatorname{Res}(f;i)+\operatorname{Res}(f;-i)\right).
 $$
-Using steps <1>2 and <1>3, the sum of residues is
+Using steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, the sum of residues is
 $$
 \frac{1-2i}{10}+\frac{1+2i}{10}=\frac15,
 $$
@@ -133,7 +133,7 @@ which yields $2\pi i/5$.
 
 ::: pf-qed
 
-Step <1>4 gives the requested contour integral.
+Step [](#s1-4){.pf-ref} gives the requested contour integral.
 
 :::
 

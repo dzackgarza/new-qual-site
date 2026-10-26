@@ -21,7 +21,7 @@ Suppose $A , B$ are invertible $n \times n$ matrices with complex entries, such 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrices $B$ and $B^3$ have the same characteristic polynomial.
 
@@ -39,7 +39,7 @@ Similar matrices have the same characteristic polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -63,14 +63,14 @@ for some nonzero $v$, then
 B^3v=\lambda^3v.
 \]
 Thus $\lambda^3$ is an eigenvalue of $B^3$.
-By step <1>1, $B$ and $B^3$ have the same eigenvalues with algebraic multiplicity.
+By step [](#s1-1){.pf-ref}, $B$ and $B^3$ have the same eigenvalues with algebraic multiplicity.
 Hence $\lambda^3$ is also an eigenvalue of $B$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $r\ge0$,
 \[
@@ -87,7 +87,7 @@ If
 \[
 \lambda^{3^r}
 \]
-is an eigenvalue, step <1>2 implies that its cube
+is an eigenvalue, step [](#s1-2){.pf-ref} implies that its cube
 \[
 \lambda^{3^{r+1}}
 \]
@@ -97,7 +97,7 @@ is also an eigenvalue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exist integers
 \[
@@ -113,7 +113,7 @@ such that
 
 ::: pf-proof
 
-By step <1>3, all numbers
+By step [](#s1-3){.pf-ref}, all numbers
 \[
 \lambda,\lambda^3,\lambda^{3^2},\ldots
 \]
@@ -125,7 +125,7 @@ Thus two terms with distinct indices are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since $B$ is invertible,
 \[
@@ -141,7 +141,7 @@ An invertible matrix has no zero eigenvalue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The eigenvalue $\lambda$ satisfies
 \[
@@ -151,13 +151,13 @@ The eigenvalue $\lambda$ satisfies
 
 ::: pf-proof
 
-From step <1>4,
+From step [](#s1-4){.pf-ref},
 \[
 \lambda^{3^r}
 =
 \lambda^{3^s}.
 \]
-By step <1>5, divide by
+By step [](#s1-5){.pf-ref}, divide by
 \[
 \lambda^{3^s}
 \]
@@ -176,14 +176,14 @@ Factor the exponent:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every eigenvalue of $B$ is a root of unity.
 
 
 ::: pf-proof
 
-The exponent in step <1>6 is a positive integer because
+The exponent in step [](#s1-6){.pf-ref} is a positive integer because
 \[
 r>s.
 \]
@@ -199,7 +199,7 @@ for some positive integer $N$, which is exactly the definition of a root of unit
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

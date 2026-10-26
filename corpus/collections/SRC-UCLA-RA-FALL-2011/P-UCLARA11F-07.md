@@ -154,7 +154,7 @@ e^{i\cdot i}=e^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -200,7 +200,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On the upper semicircle,
 \[
@@ -231,7 +231,7 @@ e^{-y}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For \(R>2\) and \(z\in\Gamma_R\),
 \[
@@ -256,7 +256,7 @@ R^2-1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -271,7 +271,7 @@ Therefore
 
 ::: pf-proof
 
-The length of \(\Gamma_R\) is \(\pi R\). Combine steps <1>7--<1>8 with the \(ML\)-estimate.
+The length of \(\Gamma_R\) is \(\pi R\). Combine steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} with the \(ML\)-estimate.
 
 :::
 
@@ -295,13 +295,13 @@ By the residue theorem,
 
 ::: pf-proof
 
-Use the residue from step <1>6.
+Use the residue from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Letting \(R\to\infty\),
 \[
@@ -315,7 +315,7 @@ Letting \(R\to\infty\),
 
 ::: pf-proof
 
-The semicircle term vanishes by step <1>9, and
+The semicircle term vanishes by step [](#s1-9){.pf-ref}, and
 \[
 2\pi i
 \left(
@@ -329,7 +329,7 @@ The semicircle term vanishes by step <1>9, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Taking real parts,
 \[
@@ -343,7 +343,7 @@ Taking real parts,
 
 ::: pf-proof
 
-The denominator is real on the real axis, so the real part of the integrand in step <1>11 is
+The denominator is real on the real axis, so the real part of the integrand in step [](#s1-11){.pf-ref} is
 \[
 \frac{\cos x}{(1+x^2)^2}.
 \]
@@ -354,7 +354,7 @@ The denominator is real on the real axis, so the real part of the integrand in s
 
 ::: pf-step
 
-The integrand in step <1>12 is even.
+The integrand in step [](#s1-12){.pf-ref} is even.
 
 
 ::: pf-proof
@@ -365,7 +365,7 @@ Both \(\cos x\) and \((1+x^2)^2\) are even functions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -385,7 +385,7 @@ The integral over the whole real line of an even integrable function is twice th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -399,7 +399,7 @@ Therefore
 
 ::: pf-proof
 
-Divide step <1>14 by \(2\).
+Divide step [](#s1-14){.pf-ref} by \(2\).
 
 :::
 
@@ -407,7 +407,7 @@ Divide step <1>14 by \(2\).
 
 ::: pf-qed
 
-Step <1>15 is the requested value.
+Step [](#s1-15){.pf-ref} is the requested value.
 
 :::
 

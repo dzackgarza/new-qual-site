@@ -22,7 +22,7 @@ Suppose that $A v = 3 v$ for a vector $v \in \mathbb { R } ^ { n }$ (i) Give an 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (i), take
 \[
@@ -59,9 +59,9 @@ The matrix $A$ is invertible and has rational entries.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-For the vector in step <1>1, no nonzero real scalar multiple belongs to
+For the vector in step [](#s1-1){.pf-ref}, no nonzero real scalar multiple belongs to
 \[
 \mathbb Q^2.
 \]
@@ -99,7 +99,7 @@ Thus only $\lambda=0$ gives a rational vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (ii), the equation
 \[
@@ -122,7 +122,7 @@ Aw-3w=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The matrix
 \[
@@ -140,7 +140,7 @@ Their difference therefore has rational entries.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The real nullspace
 \[
@@ -162,7 +162,7 @@ Thus the real nullspace is nontrivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A rational matrix with nontrivial real nullspace has a nonzero rational null vector.
 
@@ -189,7 +189,7 @@ lying in the nullspace.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exists
 \[
@@ -203,11 +203,11 @@ Aw=3w.
 
 ::: pf-proof
 
-Apply step <1>6 to
+Apply step [](#s1-6){.pf-ref} to
 \[
 M=A-3I.
 \]
-Step <1>4 gives rational entries and step <1>5 gives nontrivial real nullspace.
+Step [](#s1-4){.pf-ref} gives rational entries and step [](#s1-5){.pf-ref} gives nontrivial real nullspace.
 Hence there is
 \[
 0\ne w\in\mathbb Q^n
@@ -216,7 +216,7 @@ with
 \[
 (A-3I)w=0.
 \]
-By step <1>3, this is equivalent to
+By step [](#s1-3){.pf-ref}, this is equivalent to
 \[
 Aw=3w.
 \]
@@ -227,7 +227,7 @@ Aw=3w.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 give the example required in part (i), and steps <1>3--<1>7 prove part (ii).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the example required in part (i), and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} prove part (ii).
 
 :::
 

@@ -55,7 +55,7 @@ These are obtained by coordinate-wise subtraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -79,7 +79,7 @@ which equals $(1,0,-3)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The scalar triple product is
 $$
@@ -89,7 +89,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 (-4,2,-1)\cdot(1,0,-3)
 =
@@ -102,21 +102,21 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The three displacement vectors are linearly independent.
 
 
 ::: pf-proof
 
-Their scalar triple product is nonzero by step <1>3. Equivalently, the
+Their scalar triple product is nonzero by step [](#s1-3){.pf-ref}. Equivalently, the
 $3\times3$ matrix with these vectors as columns has nonzero determinant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the four points do not lie in one plane.
 
@@ -124,14 +124,14 @@ Therefore the four points do not lie in one plane.
 ::: pf-proof
 
 Four points in $\mathbb R^3$ are coplanar exactly when the three displacement
-vectors from one of the points are linearly dependent. Step <1>4 shows that
+vectors from one of the points are linearly dependent. Step [](#s1-4){.pf-ref} shows that
 they are linearly independent.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -149,7 +149,7 @@ This is step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -48,7 +48,7 @@ This definition is available under the temporary assumption that $A$ is invertib
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has the block factorization
 \[
@@ -91,7 +91,7 @@ E.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -105,7 +105,7 @@ Hence
 
 ::: pf-proof
 
-The left factor in step <1>2 is block lower triangular with identity matrices on its diagonal, so its determinant is $1$.
+The left factor in step [](#s1-2){.pf-ref} is block lower triangular with identity matrices on its diagonal, so its determinant is $1$.
 The right side is block upper triangular, so its determinant is
 \[
 \det A\,\det E.
@@ -123,7 +123,7 @@ Since $M$ is invertible, the Schur complement $E$ is invertible.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \det M
 =
@@ -139,7 +139,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the assumption that $A$ is invertible, the lower-right block of $M^{-1}$ is
 \[
@@ -185,7 +185,7 @@ E^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, when $A$ is invertible,
 \[
@@ -197,7 +197,7 @@ Therefore, when $A$ is invertible,
 
 ::: pf-proof
 
-By steps <1>3 and <1>5,
+By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref},
 \[
 \begin{aligned}
 \det(M)\det(S)
@@ -270,7 +270,7 @@ avoiding the finitely many zeros of both polynomials.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For such a sequence $t_j$, write
 \[
@@ -296,13 +296,13 @@ For each $j$, the upper-left block
 A+t_jI
 \]
 is invertible, and $M_{t_j}$ is invertible.
-Therefore step <1>6 applies to $M_{t_j}$.
+Therefore step [](#s1-6){.pf-ref} applies to $M_{t_j}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -337,15 +337,15 @@ S_j\to S.
 ::: pf-proof
 
 The lower-right $k\times k$ block is obtained by selecting fixed matrix entries.
-Entrywise convergence of the full inverse matrices in step <1>9 therefore gives entrywise convergence of the corresponding blocks.
+Entrywise convergence of the full inverse matrices in step [](#s1-9){.pf-ref} therefore gives entrywise convergence of the corresponding blocks.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-Taking limits in step <1>8 gives
+Taking limits in step [](#s1-8){.pf-ref} gives
 \[
 \boxed{
 \det(M)\det(S)=\det(A).
@@ -371,7 +371,7 @@ Take the limit
 \[
 j\to\infty
 \]
-in the identity from step <1>8.
+in the identity from step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -379,7 +379,7 @@ in the identity from step <1>8.
 
 ::: pf-qed
 
-Step <1>11 proves the identity without any invertibility assumption on $A$.
+Step [](#s1-11){.pf-ref} proves the identity without any invertibility assumption on $A$.
 
 :::
 

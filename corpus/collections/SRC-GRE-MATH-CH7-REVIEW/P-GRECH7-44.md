@@ -31,7 +31,7 @@ As printed, ten flips cannot produce forty heads; the book's solution treats one
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 As printed with $10$ flips, the requested probability is $0$.
 
@@ -44,7 +44,7 @@ Ten coin flips can produce at most ten heads. Hence the event of obtaining betwe
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If the intended number of flips is $100$, then for $X\sim\operatorname{Binomial}(100,1/2)$ the exact probability is
 $$
@@ -66,9 +66,9 @@ The events for distinct $k$ are disjoint, so summing from $40$ through $50$ give
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The probability in step <1>2 is approximately
+The probability in step [](#s1-2){.pf-ref} is approximately
 $$
 0.5221945186=52.21945186\%.
 $$
@@ -76,13 +76,13 @@ $$
 
 ::: pf-proof
 
-Dividing the numerator by the denominator in step <1>2 gives the displayed decimal. In particular, its distance from $53\%$ is less than $0.8$ percentage points, whereas its distance from $47\%$ exceeds $5$ percentage points; the other listed percentages are farther away still.
+Dividing the numerator by the denominator in step [](#s1-2){.pf-ref} gives the displayed decimal. In particular, its distance from $53\%$ is less than $0.8$ percentage points, whereas its distance from $47\%$ exceeds $5$ percentage points; the other listed percentages are farther away still.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The normal approximation with continuity correction also gives approximately $52.2\%$, not $47\%$.
 
@@ -109,7 +109,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the printed question has no listed answer; after the evident correction from $10$ to $100$ flips, the closest listed answer is
 $$
@@ -120,7 +120,7 @@ which is choice (E), not the source's supplied choice (D).
 
 ::: pf-proof
 
-Step <1>1 settles the literal question. Steps <1>2--<1>4 independently show that the corrected $100$-flip problem has probability about $52.2\%$, making choice (E) the nearest listed percentage.
+Step [](#s1-1){.pf-ref} settles the literal question. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} independently show that the corrected $100$-flip problem has probability about $52.2\%$, making choice (E) the nearest listed percentage.
 
 :::
 
@@ -128,7 +128,7 @@ Step <1>1 settles the literal question. Steps <1>2--<1>4 independently show that
 
 ::: pf-qed
 
-Step <1>5 records both the literal result and the corrected multiple-choice result.
+Step [](#s1-5){.pf-ref} records both the literal result and the corrected multiple-choice result.
 
 :::
 

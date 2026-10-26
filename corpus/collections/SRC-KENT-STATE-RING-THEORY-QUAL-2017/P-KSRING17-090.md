@@ -37,7 +37,7 @@ Let $D$ be a principal ideal domain and let $a, b \in D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $D$ is a principal ideal domain, the ideal
 $$
@@ -67,7 +67,7 @@ Every ideal in a PID is principal, so such a generator $d$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -114,7 +114,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -170,20 +170,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Thus the element $d$ from step <1>1 satisfies the two properties in part (a).
+Thus the element $d$ from step [](#s1-1){.pf-ref} satisfies the two properties in part (a).
 
 
 ::: pf-proof
 
-Step <1>2 proves property (i), and step <1>3 proves property (ii).
+Step [](#s1-2){.pf-ref} proves property (i), and step [](#s1-3){.pf-ref} proves property (ii).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal
 $$
@@ -209,7 +209,7 @@ Since $D$ is a PID, it is principal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -245,7 +245,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -281,14 +281,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Thus the element $m$ from step <1>5 satisfies the two properties in part (b).
+Thus the element $m$ from step [](#s1-5){.pf-ref} satisfies the two properties in part (b).
 
 
 ::: pf-proof
 
-Step <1>6 proves property (i), and step <1>7 proves property (ii).
+Step [](#s1-6){.pf-ref} proves property (i), and step [](#s1-7){.pf-ref} proves property (ii).
 
 :::
 
@@ -296,7 +296,7 @@ Step <1>6 proves property (i), and step <1>7 proves property (ii).
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>8 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
 
 :::
 

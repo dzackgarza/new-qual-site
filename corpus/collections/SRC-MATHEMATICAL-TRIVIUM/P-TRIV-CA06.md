@@ -21,7 +21,7 @@ Compute the Laurent series of $f ( z ) = { \frac { z } { ( z + 1 ) ( z - 1 ) } }
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function has the partial-fraction decomposition
 $$
@@ -51,7 +51,7 @@ Setting $z=1$ gives $A=1/2$, and setting $z=-1$ gives $B=1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -95,7 +95,7 @@ converges for $|w|<1$. Take $w=(z-1)/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the Laurent series of $f$ about $z=1$ is
 $$
@@ -112,14 +112,14 @@ $$
 
 ::: pf-proof
 
-Substitute the expansion from step <1>2 into the decomposition from
-step <1>1.
+Substitute the expansion from step [](#s1-2){.pf-ref} into the decomposition from
+step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The region of convergence is
 $$
@@ -132,7 +132,7 @@ $$
 ::: pf-proof
 
 The center $z=1$ is a simple pole, so it must be excluded. The geometric
-series from step <1>2 converges exactly for $|z-1|<2$. The boundary point
+series from step [](#s1-2){.pf-ref} converges exactly for $|z-1|<2$. The boundary point
 $z=-1$ is a singularity of the original function and lies at distance $2$
 from the center, so the outer radius cannot be enlarged.
 
@@ -142,7 +142,7 @@ from the center, so the outer radius cannot be enlarged.
 
 ::: pf-qed
 
-Steps <1>3 and <1>4 give the Laurent series and its exact annulus of
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the Laurent series and its exact annulus of
 convergence.
 
 :::

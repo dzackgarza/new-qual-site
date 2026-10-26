@@ -26,7 +26,7 @@ Assume the circle \(|z|=2\) has its standard positive orientation.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 \[
@@ -47,7 +47,7 @@ Thus the hypotheses of the differentiated Cauchy integral formula apply at \(a=1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The differentiated Cauchy integral formula gives
 \[
@@ -66,13 +66,13 @@ F'(a)
 \frac{1}{2\pi i}
 \int_C\frac{F(z)}{(z-a)^2}\,dz.
 \]
-Apply this with \(C=\{|z|=2\}\), \(a=1\), and \(F(z)=e^{\pi z}\), using step <1>1.
+Apply this with \(C=\{|z|=2\}\), \(a=1\), and \(F(z)=e^{\pi z}\), using step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -92,7 +92,7 @@ Evaluating at \(z=1\) gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -104,7 +104,7 @@ Therefore
 
 ::: pf-proof
 
-Substitute step <1>3 into the identity in step <1>2:
+Substitute step [](#s1-3){.pf-ref} into the identity in step [](#s1-2){.pf-ref}:
 \[
 2\pi i\,F'(1)
 =
@@ -119,7 +119,7 @@ Substitute step <1>3 into the identity in step <1>2:
 
 ::: pf-qed
 
-Step <1>4 gives the requested contour integral.
+Step [](#s1-4){.pf-ref} gives the requested contour integral.
 
 :::
 

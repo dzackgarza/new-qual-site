@@ -25,7 +25,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 From the first equation,
 $$
@@ -44,9 +44,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Substituting step <1>1 into the second equation gives
+Substituting step [](#s1-1){.pf-ref} into the second equation gives
 $$
 x=3+2z.
 $$
@@ -77,7 +77,7 @@ $$
 
 ::: pf-step
 
-Substituting steps <1>1--<1>2 into the third equation gives
+Substituting steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} into the third equation gives
 $$
 z=-1.
 $$
@@ -120,7 +120,7 @@ $$
 
 ::: pf-proof
 
-Substitute $z=-1$ into steps <1>1--<1>2:
+Substitute $z=-1$ into steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}:
 $$
 y=-1-3(-1)=2,
 $$
@@ -133,7 +133,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the solution is
 $$
@@ -162,7 +162,7 @@ Hence the triple satisfies all three equations.
 
 ::: pf-qed
 
-Step <1>5 is the required solution.
+Step [](#s1-5){.pf-ref} is the required solution.
 
 :::
 

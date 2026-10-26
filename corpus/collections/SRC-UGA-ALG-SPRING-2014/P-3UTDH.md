@@ -50,7 +50,7 @@ Eisenstein's criterion at $11$ gives $[\mathbb Q(a):\mathbb Q]=3$. This cubic fi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 No square root $\sqrt n$ with squarefree positive $n>1$ belongs to $E$.
 
@@ -63,7 +63,7 @@ The group $S_3$ has exactly one subgroup of index two, namely $A_3$. The Galois 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The splitting field of $(x^3-11)(x^2-2)$ has Galois group
 \[
@@ -73,7 +73,7 @@ The splitting field of $(x^3-11)(x^2-2)$ has Galois group
 
 ::: pf-proof
 
-Its splitting field is $E(\sqrt2)$. By step <1>2, $\mathbb Q(\sqrt2)$ is not contained in $E$, so their intersection is $\mathbb Q$. Both are finite Galois extensions of $\mathbb Q$, and the restriction isomorphism for their compositum gives
+Its splitting field is $E(\sqrt2)$. By step [](#s1-2){.pf-ref}, $\mathbb Q(\sqrt2)$ is not contained in $E$, so their intersection is $\mathbb Q$. Both are finite Galois extensions of $\mathbb Q$, and the restriction isomorphism for their compositum gives
 \[
 \operatorname{Gal}(E(\sqrt2)/\mathbb Q)
 \cong\operatorname{Gal}(E/\mathbb Q)\times
@@ -84,7 +84,7 @@ Its splitting field is $E(\sqrt2)$. By step <1>2, $\mathbb Q(\sqrt2)$ is not con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The minimal polynomial of $\theta=\sqrt[3]{11}+\sqrt2$ has degree
 \[
@@ -106,7 +106,7 @@ As $\theta$ is real, the factor $3\theta^2+2$ is nonzero. Therefore $\sqrt2=(\th
 
 ::: pf-qed
 
-Steps <1>2, <1>3, and <1>4 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

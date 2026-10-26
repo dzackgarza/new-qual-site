@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that $L>0$. For every $\varepsilon$ with $0<\varepsilon<L$, there exists $N$ such that for every $k\ge N$,
 $$
@@ -50,9 +50,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the hypotheses of step <1>1, for every $n>N$,
+Under the hypotheses of step [](#s1-1){.pf-ref}, for every $n>N$,
 $$
 b_N(L-\varepsilon)^{n-N}
 <
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-Multiply the inequalities from step <1>1 for
+Multiply the inequalities from step [](#s1-1){.pf-ref} for
 $$
 k=N,N+1,\ldots,n-1.
 $$
@@ -80,7 +80,7 @@ Multiplying by $b_N$ gives the stated bounds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $L>0$, then
 $$
@@ -90,7 +90,7 @@ $$
 
 ::: pf-proof
 
-Taking $n$th roots in step <1>2 gives
+Taking $n$th roots in step [](#s1-2){.pf-ref} gives
 $$
 b_N^{1/n}(L-\varepsilon)^{1-N/n}
 <
@@ -120,7 +120,7 @@ Since this holds for every $0<\varepsilon<L$, letting $\varepsilon\downarrow0$ y
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $L=0$, then
 $$
@@ -134,7 +134,7 @@ Let $\varepsilon>0$. Since $b_{n+1}/b_n\to0$, there exists $N$ such that
 $$
 \frac{b_{k+1}}{b_k}<\varepsilon
 $$
-for every $k\ge N$. Multiplying as in step <1>2 gives
+for every $k\ge N$. Multiplying as in step [](#s1-2){.pf-ref} gives
 $$
 b_n<b_N\varepsilon^{n-N}.
 $$
@@ -154,7 +154,7 @@ Since $\varepsilon>0$ is arbitrary and $b_n^{1/n}\ge0$, the limit is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -166,13 +166,13 @@ $$
 
 ::: pf-proof
 
-Step <1>3 proves the assertion when $L>0$, and step <1>4 proves it when $L=0$.
+Step [](#s1-3){.pf-ref} proves the assertion when $L>0$, and step [](#s1-4){.pf-ref} proves it when $L=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\sum_{n=0}^\infty a_nz^n$ is a power series and the ratio limit is $L$, then its radius of convergence is
 $$
@@ -199,7 +199,7 @@ The ratio test gives absolute convergence when $L\abs{z}<1$ and divergence when 
 
 ::: pf-qed
 
-Step <1>5 proves the required root limit, and step <1>6 gives the stated consequence for power-series radii of convergence.
+Step [](#s1-5){.pf-ref} proves the required root limit, and step [](#s1-6){.pf-ref} gives the stated consequence for power-series radii of convergence.
 
 :::
 

@@ -26,7 +26,7 @@ Show that $E(X_1, \ldots, X_d)$ is a field extension of $F(X_1, \ldots, X_d)$ of
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The assertion holds for $d=1$.
 
@@ -42,7 +42,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume for some $d\ge2$ that
 $$
@@ -64,7 +64,7 @@ This is the induction hypothesis together with notation for the intermediate fie
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Applying Problem 4.4 to the finite extension
 $$
@@ -78,13 +78,13 @@ $$
 
 ::: pf-proof
 
-By step <1>2, the extension $E_{d-1}/F_{d-1}$ has degree $n$. Problem 4.4 states that adjoining one transcendental indeterminate to both fields preserves the degree of a finite extension. Therefore the displayed equality follows.
+By step [](#s1-2){.pf-ref}, the extension $E_{d-1}/F_{d-1}$ has degree $n$. Problem 4.4 states that adjoining one transcendental indeterminate to both fields preserves the degree of a finite extension. Therefore the displayed equality follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -104,7 +104,7 @@ Both equalities are immediate from the definitions of the rational function fiel
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -114,13 +114,13 @@ $$
 
 ::: pf-proof
 
-Substitute the identifications from step <1>4 into the degree equality of step <1>3.
+Substitute the identifications from step [](#s1-4){.pf-ref} into the degree equality of step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for every $d\ge1$,
 $$
@@ -134,7 +134,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 is the base case, and steps <1>2--<1>5 establish the induction step.
+Step [](#s1-1){.pf-ref} is the base case, and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} establish the induction step.
 
 :::
 
@@ -142,7 +142,7 @@ Step <1>1 is the base case, and steps <1>2--<1>5 establish the induction step.
 
 ::: pf-qed
 
-Step <1>6 is the required statement.
+Step [](#s1-6){.pf-ref} is the required statement.
 
 :::
 

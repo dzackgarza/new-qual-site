@@ -33,7 +33,7 @@ v(x)=\int^x\frac{e^{-\int^sP(t)\,dt}}{y_1(s)^2}\,ds,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Substitution of $y_2=y_1v$ into the differential operator gives
 \[
@@ -61,7 +61,7 @@ The first term vanishes because $y_1$ is a solution.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The derivative of $v$ satisfies
 \[
@@ -85,7 +85,7 @@ which is the second identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 \[
@@ -97,13 +97,13 @@ solves $y''+Py'+Qy=0$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 y_1v''+(2y_1'+Py_1)v'
 =y_1\left[-P-2\frac{y_1'}{y_1}\right]v'
 +(2y_1'+Py_1)v'=0.
 \]
-Step <1>1 therefore gives $y_2''+Py_2'+Qy_2=0$.
+Step [](#s1-1){.pf-ref} therefore gives $y_2''+Py_2'+Qy_2=0$.
 
 :::
 
@@ -111,7 +111,7 @@ Step <1>1 therefore gives $y_2''+Py_2'+Qy_2=0$.
 
 ::: pf-qed
 
-Step <1>3 proves the asserted reduction-of-order formula on every interval where its integrand is defined.
+Step [](#s1-3){.pf-ref} proves the asserted reduction-of-order formula on every interval where its integrand is defined.
 
 :::
 

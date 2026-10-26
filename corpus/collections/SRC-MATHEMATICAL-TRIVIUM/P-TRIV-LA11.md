@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $n=1$,
 $$
@@ -52,7 +52,7 @@ The $1\times1$ Vandermonde matrix is $(1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Regard $D_n$ as a polynomial in $x_n$. Its degree is at most $n-1$.
 
@@ -70,7 +70,7 @@ $n-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $j<n$,
 $$
@@ -87,7 +87,7 @@ A determinant with two equal columns is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -101,7 +101,7 @@ for some polynomial $C$ independent of $x_n$.
 
 ::: pf-proof
 
-By steps <1>2--<1>3, the polynomial in $x_n$ has the $n-1$ distinct roots
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, the polynomial in $x_n$ has the $n-1$ distinct roots
 $$
 x_1,\ldots,x_{n-1}
 $$
@@ -112,7 +112,7 @@ independent of $x_n$, of the displayed product.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The coefficient of $x_n^{n-1}$ in $D_n$ is
 $$
@@ -133,7 +133,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -145,14 +145,14 @@ $$
 
 ::: pf-proof
 
-The product in step <1>4 is monic of degree $n-1$ in $x_n$. Hence its
-coefficient of $x_n^{n-1}$ is $C$. Compare with step <1>5.
+The product in step [](#s1-4){.pf-ref} is monic of degree $n-1$ in $x_n$. Hence its
+coefficient of $x_n^{n-1}$ is $C$. Compare with step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Inductively,
 $$
@@ -166,7 +166,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>4 and <1>6,
+By steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref},
 $$
 D_n
 =
@@ -179,26 +179,26 @@ D_{n-1}
 =
 \prod_{1\le i<j\le n-1}(x_j-x_i),
 $$
-and combine the factors. The base case is step <1>1.
+and combine the factors. The base case is step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 $$
@@ -213,7 +213,7 @@ for some $i\neq j$.
 
 ::: pf-proof
 
-By step <1>7, the determinant is a product of the factors
+By step [](#s1-7){.pf-ref}, the determinant is a product of the factors
 $$
 x_j-x_i,
 \qquad
@@ -231,14 +231,14 @@ for some $i<j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>9.
+This is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -246,7 +246,7 @@ This is step <1>9.
 
 ::: pf-qed
 
-Steps <1>8 and <1>10 establish parts (a) and (b), respectively.
+Steps [](#s1-8){.pf-ref} and [](#s1-10){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

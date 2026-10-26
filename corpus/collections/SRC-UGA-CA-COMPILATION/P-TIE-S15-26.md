@@ -23,7 +23,7 @@ Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The bounded Jordan interior $U$ of $\gamma$ is contained in $\Omega$.
 
@@ -39,14 +39,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is holomorphic on a neighborhood of $\overline U$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 U\subset\Omega,
 $$
@@ -68,7 +68,7 @@ Since $\Omega$ is open, every point of the compact set $\overline U$ has a neigh
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -80,7 +80,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $f$ is holomorphic on a neighborhood of $\overline U$, so it is continuous on $\overline U$. The compactness of $\overline U$ implies that $\abs f$ attains its maximum there.
+By step [](#s1-2){.pf-ref}, $f$ is holomorphic on a neighborhood of $\overline U$, so it is continuous on $\overline U$. The compactness of $\overline U$ implies that $\abs f$ attains its maximum there.
 
 If a maximum were attained at an interior point of $U$ and $f$ were nonconstant, the strong maximum modulus principle would be violated. If $f$ is constant, the equality is immediate. Therefore in all cases the maximum on $\overline U$ is attained on the boundary
 $$
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z\in U$,
 $$
@@ -101,7 +101,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \abs{f(z)}
 \le
@@ -122,7 +122,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

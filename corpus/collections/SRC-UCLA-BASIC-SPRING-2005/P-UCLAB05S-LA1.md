@@ -39,7 +39,7 @@ Let $E_{ij}$ denote the standard matrix unit.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $n=1$, the kernel of $\operatorname{tr}$ is $\{0\}$, whose basis is the empty set. For $n\ge2$, a basis of $\ker(\operatorname{tr})$ is
 $$
@@ -64,7 +64,7 @@ Since $\operatorname{tr}$ is a nonzero linear map from the $n^2$-dimensional spa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every commutator has trace $0$.
 
@@ -88,9 +88,9 @@ By linearity, every finite sum of commutators also has trace $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Every basis element from step <1>1 is a commutator.
+Every basis element from step [](#s1-1){.pf-ref} is a commutator.
 
 
 ::: pf-proof
@@ -113,7 +113,7 @@ Thus each basis vector of $\ker(\operatorname{tr})$ is a commutator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\operatorname{tr}(X)=0$, then $X$ is a finite sum of commutators.
 
@@ -121,7 +121,7 @@ If $\operatorname{tr}(X)=0$, then $X$ is a finite sum of commutators.
 ::: pf-proof
 
 If $n=1$, then $X=0=[0,0]$, so the assertion holds. Assume $n\ge2$.
-By step <1>1, write $X$ as a linear combination of the displayed basis elements. By step <1>3, each basis element is a commutator. A scalar multiple of a commutator is again a commutator because
+By step [](#s1-1){.pf-ref}, write $X$ as a linear combination of the displayed basis elements. By step [](#s1-3){.pf-ref}, each basis element is a commutator. A scalar multiple of a commutator is again a commutator because
 $$
 c(AB-BA)=(cA)B-B(cA).
 $$
@@ -131,7 +131,7 @@ Therefore $X$ is a finite sum of commutators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $X\in M_n(\CC)$,
 $$
@@ -146,7 +146,7 @@ for some integer $m$ and matrices $A_j,B_j\in M_n(\CC)$.
 
 ::: pf-proof
 
-The forward implication is step <1>4. The reverse implication is step <1>2.
+The forward implication is step [](#s1-4){.pf-ref}. The reverse implication is step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -154,7 +154,7 @@ The forward implication is step <1>4. The reverse implication is step <1>2.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>5 proves part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

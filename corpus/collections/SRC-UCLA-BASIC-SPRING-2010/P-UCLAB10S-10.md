@@ -37,7 +37,7 @@ be a nonzero direction vector.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $t\ne0$,
 \[
@@ -77,7 +77,7 @@ f(ta,tb)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The two-sided directional difference quotient at the origin is
 \[
@@ -94,13 +94,13 @@ Since
 \[
 f(0,0)=0,
 \]
-divide the formula in step <1>1 by $t$.
+divide the formula in step [](#s1-1){.pf-ref} by $t$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -115,7 +115,7 @@ For
 \[
 t>0,
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 \frac{f(tv)}t
 =
@@ -143,7 +143,7 @@ Hence the two-sided limit does not exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -161,7 +161,7 @@ When
 \[
 ab=0,
 \]
-the quotient in step <1>2 is identically zero for every
+the quotient in step [](#s1-2){.pf-ref} is identically zero for every
 \[
 t\ne0.
 \]
@@ -171,7 +171,7 @@ Thus its limit is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the directional derivatives at the origin exist exactly in the nonzero directions parallel to one of the coordinate axes, and all such derivatives equal $0$.
 
@@ -192,14 +192,14 @@ a=0
 \quad\text{or}\quad
 b=0.
 \]
-Apply steps <1>3--<1>4.
+Apply steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 This answers part (a).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $f$ were differentiable at $(0,0)$, then its derivative would be the zero linear map.
 
@@ -207,7 +207,7 @@ If $f$ were differentiable at $(0,0)$, then its derivative would be the zero lin
 ::: pf-proof
 
 Differentiability implies existence of the partial derivatives, and they are the directional derivatives in the coordinate directions.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \frac{\partial f}{\partial x}(0,0)=0
 \qquad\text{and}\qquad
@@ -222,7 +222,7 @@ Df(0,0)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Along the line
 \[
@@ -273,14 +273,14 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ is not differentiable at $(0,0)$.
 
 
 ::: pf-proof
 
-If $f$ were differentiable there, step <1>6 says the derivative would be zero.
+If $f$ were differentiable there, step [](#s1-6){.pf-ref} says the derivative would be zero.
 The differentiability condition would then require
 \[
 \frac{
@@ -294,7 +294,7 @@ as
 \[
 h\to0.
 \]
-But step <1>7 shows that along
+But step [](#s1-7){.pf-ref} shows that along
 \[
 h=(t,t)\to(0,0),
 \]
@@ -314,7 +314,7 @@ Hence
 
 ::: pf-qed
 
-Step <1>5 answers part (a), and step <1>8 answers part (b).
+Step [](#s1-5){.pf-ref} answers part (a), and step [](#s1-8){.pf-ref} answers part (b).
 
 :::
 

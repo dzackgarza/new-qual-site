@@ -67,7 +67,7 @@ Factoring gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An eigenvector for \(\lambda=3\) is
 \[
@@ -169,7 +169,7 @@ which gives the displayed formula for \(P^{-1}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A diagonalization of \(A\) is
 \[
@@ -184,7 +184,7 @@ P^{-1}AP=
 
 ::: pf-proof
 
-The columns of \(P\) are the eigenvectors \(v_3\) and \(v_1\) from step <1>2. Therefore
+The columns of \(P\) are the eigenvectors \(v_3\) and \(v_1\) from step [](#s1-2){.pf-ref}. Therefore
 \[
 AP
 =
@@ -202,7 +202,7 @@ Multiplying on the left by \(P^{-1}\) yields the claimed diagonalization.
 
 ::: pf-qed
 
-Step <1>4 gives the requested diagonal form and change-of-basis matrix.
+Step [](#s1-4){.pf-ref} gives the requested diagonal form and change-of-basis matrix.
 
 :::
 

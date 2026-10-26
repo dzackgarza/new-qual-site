@@ -28,7 +28,7 @@ is decreasing on $(0,1)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix
 \[
@@ -62,7 +62,7 @@ f'(\xi).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists
 \[
@@ -84,7 +84,7 @@ Apply the mean value theorem to $f$ on $[x,y]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -107,7 +107,7 @@ f'(\eta)\le f'(\xi).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -119,15 +119,15 @@ Therefore
 
 ::: pf-proof
 
-Substitute the identities from steps <1>1--<1>2 into the inequality of step <1>3.
+Substitute the identities from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} into the inequality of step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The inequality in step <1>4 implies
+The inequality in step [](#s1-4){.pf-ref} implies
 \[
 \frac{f(y)}y
 \le
@@ -137,7 +137,7 @@ The inequality in step <1>4 implies
 
 ::: pf-proof
 
-Multiply step <1>4 by $y-x>0$:
+Multiply step [](#s1-4){.pf-ref} by $y-x>0$:
 \[
 f(y)-f(x)
 \le
@@ -164,7 +164,7 @@ Divide by $y>0$:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 \[
@@ -178,7 +178,7 @@ The points
 \[
 0<x<y<1
 \]
-were arbitrary, and step <1>5 gives
+were arbitrary, and step [](#s1-5){.pf-ref} gives
 \[
 g(y)\le g(x).
 \]
@@ -189,7 +189,7 @@ g(y)\le g(x).
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -42,7 +42,7 @@ Without it, the assertion is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The literal first assertion fails for an arbitrary cochain.
 
@@ -101,7 +101,7 @@ cochain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For a singular chain
 \[
@@ -162,7 +162,7 @@ then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -188,7 +188,7 @@ Since
 \[
 \delta\alpha=0,
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 \begin{aligned}
 \langle z,\alpha\rangle
@@ -209,7 +209,7 @@ step <1>2 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -229,7 +229,7 @@ is a cycle, then
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \langle z,\alpha\rangle
 =
@@ -247,7 +247,7 @@ the right-hand side is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -279,7 +279,7 @@ for some
 \[
 w\in C_{k+1}(X;R).
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 \langle z,\alpha\rangle
 =
@@ -298,7 +298,7 @@ with
 \[
 \alpha-\alpha'=\delta\beta.
 \]
-Then step <1>4, applied to the cycle $z'$, gives
+Then step [](#s1-4){.pf-ref}, applied to the cycle $z'$, gives
 \[
 \langle z',\alpha-\alpha'\rangle=0.
 \]
@@ -314,7 +314,7 @@ Combining the two equalities proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -334,14 +334,14 @@ is well defined.
 
 ::: pf-proof
 
-Step <1>5 shows independence of both the cycle representative and the
+Step [](#s1-5){.pf-ref} shows independence of both the cycle representative and the
 cocycle representative.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The pairing is bilinear.
 
@@ -369,7 +369,7 @@ z,\alpha_1+\alpha_2
 \langle z,\alpha_2\rangle.
 \]
 Scalar multiplication behaves compatibly as well.
-These identities descend through the quotient groups by step <1>6.
+These identities descend through the quotient groups by step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -377,8 +377,8 @@ These identities descend through the quotient groups by step <1>6.
 
 ::: pf-qed
 
-Step <1>1 records the defect in the literal source statement.
-Steps <1>2--<1>7 prove the corrected Kronecker pairing on homology and
+Step [](#s1-1){.pf-ref} records the defect in the literal source statement.
+Steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the corrected Kronecker pairing on homology and
 cohomology.
 
 :::

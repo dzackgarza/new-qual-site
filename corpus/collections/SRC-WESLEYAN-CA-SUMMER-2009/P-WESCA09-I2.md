@@ -22,7 +22,7 @@ Define what it means for $\alpha_1$ to be freely homotopic to $\alpha_2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The closed paths $\alpha_1$ and $\alpha_2$ are freely homotopic if there exists a continuous map
 \[
@@ -59,7 +59,7 @@ loops.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition.
+Step [](#s1-1){.pf-ref} gives the requested definition.
 
 :::
 

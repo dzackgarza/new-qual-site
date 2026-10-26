@@ -27,7 +27,7 @@ $\int_0^1 (x \log x) \, dx =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $0<\varepsilon<1$,
 $$
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -85,7 +85,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By the definition of the improper integral and steps <1>1--<1>2,
+By the definition of the improper integral and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \int_0^1x\log x\,dx
@@ -101,7 +101,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required integral.
+Step [](#s1-3){.pf-ref} gives the required integral.
 
 :::
 

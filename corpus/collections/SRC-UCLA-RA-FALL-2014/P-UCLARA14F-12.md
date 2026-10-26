@@ -26,7 +26,7 @@ Let $\Omega = \{ z \in \mathbb{C} ; |z| > 1 \}$. Suppose $u : \overline{\Omega} 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $u$ is bounded on $\overline\Omega$, there is $M>0$ such that
 \[
@@ -69,7 +69,7 @@ immediate from the continuity of the two summands.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the inner boundary,
 \[
@@ -94,7 +94,7 @@ by hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose $R>1$ so large that
 \[
@@ -109,7 +109,7 @@ v_\varepsilon(z)<0
 
 ::: pf-proof
 
-For $|z|\ge R$, step <1>1 gives
+For $|z|\ge R$, step [](#s1-1){.pf-ref} gives
 \[
 v_\varepsilon(z)
 \le
@@ -123,7 +123,7 @@ M-\varepsilon\log R
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On the closed annulus
 \[
@@ -138,7 +138,7 @@ v_\varepsilon\le0.
 ::: pf-proof
 
 The function $v_\varepsilon$ is continuous on $A_R$ and subharmonic in its
-interior. By steps <1>3 and <1>4, it is nonpositive on both boundary circles
+interior. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, it is nonpositive on both boundary circles
 \[
 |z|=1
 \qquad\text{and}\qquad
@@ -154,7 +154,7 @@ throughout the annulus.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In fact,
 \[
@@ -165,11 +165,11 @@ v_\varepsilon(z)\le0
 
 ::: pf-proof
 
-Step <1>5 covers the region
+Step [](#s1-5){.pf-ref} covers the region
 \[
 1\le|z|\le R.
 \]
-Step <1>4 covers
+Step [](#s1-4){.pf-ref} covers
 \[
 |z|\ge R.
 \]
@@ -179,7 +179,7 @@ Together they cover $\overline\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $z\in\Omega$ and every $\varepsilon>0$,
 \[
@@ -189,7 +189,7 @@ u(z)\le\varepsilon\log|z|.
 
 ::: pf-proof
 
-Step <1>6 says
+Step [](#s1-6){.pf-ref} says
 \[
 u(z)-\varepsilon\log|z|\le0.
 \]
@@ -199,7 +199,7 @@ Rearrange.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -213,7 +213,7 @@ Fix $z\in\Omega$. Since
 \[
 \log|z|>0
 \]
-is finite, step <1>7 holds for every $\varepsilon>0$. Letting
+is finite, step [](#s1-7){.pf-ref} holds for every $\varepsilon>0$. Letting
 \[
 \varepsilon\downarrow0
 \]
@@ -228,7 +228,7 @@ u(z)\le0.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

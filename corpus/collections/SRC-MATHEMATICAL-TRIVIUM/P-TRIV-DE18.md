@@ -27,7 +27,7 @@ Let $r=\sqrt{x^2+y^2+z^2}$ and let $\delta_0$ denote the Dirac delta distributio
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $r>0$,
 \[
@@ -55,7 +55,7 @@ Substitution cancels the $r^{-2}$ and $r^{-3}$ terms and leaves $a^2e^{-ar}/r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Distributionally on $\mathbb R^3$,
 \[
@@ -66,7 +66,7 @@ Distributionally on $\mathbb R^3$,
 
 ::: pf-proof
 
-Step <1>1 determines the ordinary-function part away from the origin. To determine the singular term, integrate the Laplacian over the ball $B_\epsilon$ and use the divergence theorem:
+Step [](#s1-1){.pf-ref} determines the ordinary-function part away from the origin. To determine the singular term, integrate the Laplacian over the ball $B_\epsilon$ and use the divergence theorem:
 \[
 \int_{B_\epsilon}\nabla^2\left(\frac{e^{-ar}}r\right)dV
 =4\pi\epsilon^2\left[-e^{-a\epsilon}\left(\frac a\epsilon+\frac1{\epsilon^2}\right)\right]
@@ -78,7 +78,7 @@ as $\epsilon\to0^+$. The locally integrable term $a^2e^{-ar}/r$ has integral ten
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The charge density is
 \[
@@ -92,7 +92,7 @@ Poisson's equation in SI units is
 \[
 \nabla^2\varphi=-\frac\rho{\varepsilon_0}.
 \]
-Using the given potential and step <1>2,
+Using the given potential and step [](#s1-2){.pf-ref},
 \[
 \nabla^2\varphi
 =\frac{Z}{4\pi\varepsilon_0}
@@ -106,7 +106,7 @@ Multiplying by $-\varepsilon_0$ gives the displayed charge distribution.
 
 ::: pf-qed
 
-Step <1>3 gives the charge distribution whose Poisson equation produces the stated potential.
+Step [](#s1-3){.pf-ref} gives the charge distribution whose Poisson equation produces the stated potential.
 
 :::
 

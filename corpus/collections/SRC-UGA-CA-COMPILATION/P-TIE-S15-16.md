@@ -45,7 +45,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The harmonic function $v$ vanishes on $\gamma$.
 
@@ -70,7 +70,7 @@ on $\partial D=\gamma$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -81,7 +81,7 @@ on $D$.
 
 ::: pf-proof
 
-Because $f$ is holomorphic on a neighborhood of $\overline D$, the function $v$ is harmonic on $D$ and continuous on $\overline D$. By step <1>1,
+Because $f$ is holomorphic on a neighborhood of $\overline D$, the function $v$ is harmonic on $D$ and continuous on $\overline D$. By step [](#s1-1){.pf-ref},
 $$
 v=0
 $$
@@ -105,14 +105,14 @@ on $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ is constant on $D$.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 f(D)\subset\RR.
 $$
@@ -122,7 +122,7 @@ If $f$ were nonconstant on the open connected set $D$, the open mapping theorem 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is constant on all of $\Omega$.
 
@@ -149,7 +149,7 @@ throughout $\Omega$.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 prove the corrected theorem. The remark gives a counterexample to the uncorrected source statement.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove the corrected theorem. The remark gives a counterexample to the uncorrected source statement.
 
 :::
 

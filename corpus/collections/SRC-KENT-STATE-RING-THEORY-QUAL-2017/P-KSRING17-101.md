@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $f$ is primitive.
 
@@ -76,7 +76,7 @@ Substitution gives the displayed reduction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $\overline f$ has no root in $\FF_3$.
 
@@ -121,14 +121,14 @@ is a root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\overline f$ is reducible in $\FF_3[x]$, then it factors as a product of two monic quadratics.
 
 
 ::: pf-proof
 
-The polynomial $\overline f$ has degree $4$ and no linear factor by step <1>3.
+The polynomial $\overline f$ has degree $4$ and no linear factor by step [](#s1-3){.pf-ref}.
 A nontrivial factorization over a field must therefore have factor degrees
 $$
 2
@@ -141,7 +141,7 @@ Since $\overline f$ is monic, the two quadratic factors may be taken monic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose
 $$
@@ -191,7 +191,7 @@ gives the displayed equations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The condition
 $$
@@ -225,7 +225,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In either case,
 $$
@@ -252,7 +252,7 @@ The relation
 $$
 ac+b+d=2
 $$
-from step <1>5 therefore becomes
+from step [](#s1-5){.pf-ref} therefore becomes
 $$
 ac=2.
 $$
@@ -261,7 +261,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since
 $$
@@ -307,7 +307,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The coefficient of $x$ cannot vanish.
 
@@ -326,7 +326,7 @@ this becomes
 $$
 a(d-b).
 $$
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 b\ne d,
 $$
@@ -334,7 +334,7 @@ so
 $$
 d-b\ne0.
 $$
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 a\ne0.
 $$
@@ -352,14 +352,14 @@ is $0$, a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore $\overline f$ is irreducible in $\FF_3[x]$.
 
 
 ::: pf-proof
 
-Step <1>3 rules out linear factors, and steps <1>4--<1>9 rule out a factorization into two quadratics.
+Step [](#s1-3){.pf-ref} rules out linear factors, and steps [](#s1-4){.pf-ref} through [](#s1-9){.pf-ref} rule out a factorization into two quadratics.
 These are all possible nontrivial factorizations of a quartic over a field.
 Hence
 $$
@@ -371,14 +371,14 @@ is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The polynomial $f$ is irreducible in $\QQ[x]$.
 
 
 ::: pf-proof
 
-The polynomial $f$ is primitive by step <1>1.
+The polynomial $f$ is primitive by step [](#s1-1){.pf-ref}.
 If it were reducible in $\QQ[x]$, Gauss's lemma would make it reducible in $\ZZ[x]$.
 Reducing a primitive factorization modulo $3$ would then give a nontrivial factorization of
 $$
@@ -386,7 +386,7 @@ $$
 \in
 \FF_3[x],
 $$
-contradicting step <1>10.
+contradicting step [](#s1-10){.pf-ref}.
 Therefore
 $$
 \boxed{
@@ -401,7 +401,7 @@ $$
 
 ::: pf-qed
 
-Step <1>11 is the required conclusion.
+Step [](#s1-11){.pf-ref} is the required conclusion.
 
 :::
 

@@ -65,7 +65,7 @@ for all $j\ge J$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -99,7 +99,7 @@ Taking the supremum over $x$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In part (a),
 \[
@@ -113,7 +113,7 @@ In part (a),
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \left|
@@ -133,7 +133,7 @@ By step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), define $F=0$ and, for each positive integer $j$, define $f_j:[0,1]\to\mathbb R$ by
 \[
@@ -168,7 +168,7 @@ Each piece is linear or constant, so $f_j$ is continuous on $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sequence $f_j$ converges pointwise to $F=0$.
 
@@ -193,7 +193,7 @@ of $f_j$, so $f_j(x)=0$. Thus $f_j(x)\to0$ for every $x\in[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $j$,
 \[
@@ -224,9 +224,9 @@ By symmetry of the triangular graph about $x=1/j$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The example in steps <1>4--<1>6 satisfies
+The example in steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} satisfies
 \[
 \lim_{j\to\infty}\int_0^1f_j(x)^2\,dx
 =
@@ -240,7 +240,7 @@ The example in steps <1>4--<1>6 satisfies
 
 ::: pf-proof
 
-Step <1>6 makes the left side constantly $1/3$, while $F=0$ makes the right side zero.
+Step [](#s1-6){.pf-ref} makes the left side constantly $1/3$, while $F=0$ makes the right side zero.
 
 :::
 
@@ -248,7 +248,7 @@ Step <1>6 makes the left side constantly $1/3$, while $F=0$ makes the right side
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>7 provides the counterexample required in part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} provides the counterexample required in part (b).
 
 :::
 

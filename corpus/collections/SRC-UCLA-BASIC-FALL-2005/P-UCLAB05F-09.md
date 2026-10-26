@@ -34,7 +34,7 @@ Suggestion: use induction on $k$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -59,7 +59,7 @@ so every vector in the target has the form $v_1+v_2$ with $v_i\in V_i$. Hence it
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The kernel of $\Phi$ is
 \[
@@ -87,7 +87,7 @@ with $w\in V_1\cap V_2$. Conversely, every such pair plainly lies in the kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -101,7 +101,7 @@ One has
 
 ::: pf-proof
 
-By step <1>2, the map
+By step [](#s1-2){.pf-ref}, the map
 \[
 V_1\cap V_2\to\ker\Phi,
 \qquad
@@ -111,7 +111,7 @@ is an isomorphism, so
 \[
 \dim\ker\Phi=\dim(V_1\cap V_2).
 \]
-By rank-nullity for the surjective map $\Phi$ from step <1>1,
+By rank-nullity for the surjective map $\Phi$ from step [](#s1-1){.pf-ref},
 \[
 \dim V_1+\dim V_2
 =
@@ -123,7 +123,7 @@ Rearranging gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $H_1,\ldots,H_k\subseteq V$ each have dimension $n-1$, and put
 \[
@@ -147,7 +147,7 @@ and $\dim H_1=n-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -165,7 +165,7 @@ Since
 \[
 W_{j+1}=W_j\cap H_{j+1},
 \]
-part (a), proved in step <1>3, gives
+part (a), proved in step [](#s1-3){.pf-ref}, gives
 \[
 \dim W_{j+1}
 =
@@ -192,7 +192,7 @@ n-(j+1).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $k<n$,
 \[
@@ -204,7 +204,7 @@ For every $k<n$,
 
 ::: pf-proof
 
-Step <1>4 is the base case $k=1$. Step <1>5 is the induction step. Therefore the inequality holds for every positive integer $k$, in particular for every $k<n$.
+Step [](#s1-4){.pf-ref} is the base case $k=1$. Step [](#s1-5){.pf-ref} is the induction step. Therefore the inequality holds for every positive integer $k$, in particular for every $k<n$.
 
 :::
 
@@ -212,7 +212,7 @@ Step <1>4 is the base case $k=1$. Step <1>5 is the induction step. Therefore the
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

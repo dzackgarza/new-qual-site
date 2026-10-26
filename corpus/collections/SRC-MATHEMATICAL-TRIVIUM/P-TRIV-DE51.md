@@ -28,7 +28,7 @@ Use spherical coordinates with polar axis in the direction of the applied field,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The most general axisymmetric harmonic potential outside the sphere compatible with the prescribed far field has the form
 \[
@@ -49,7 +49,7 @@ At infinity, the only allowed growing term is the specified uniform-field term $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The condition $\Phi(a,\theta)=0$ forces
 \[
@@ -71,7 +71,7 @@ Uniqueness of the Legendre expansion gives $A_1a^{-2}=Ea$ and all other coeffici
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus
 \[
@@ -83,13 +83,13 @@ Thus
 
 ::: pf-proof
 
-Insert the coefficients from step <1>2 into step <1>1. The result is harmonic for $r>a$, vanishes at $r=a$, and has the required asymptotic uniform field.
+Insert the coefficients from step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}. The result is harmonic for $r>a$, vanishes at $r=a$, and has the required asymptotic uniform field.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The induced total charge on the sphere is zero.
 
@@ -104,7 +104,7 @@ Hence the surface charge density is proportional to $\cos\theta$. Its integral o
 \[
 \int_0^\pi\cos\theta\sin\theta\,d\theta=0.
 \]
-Equivalently, step <1>2 has no $r^{-1}$ monopole term. Thus the solution is consistent with the stipulated zero total charge.
+Equivalently, step [](#s1-2){.pf-ref} has no $r^{-1}$ monopole term. Thus the solution is consistent with the stipulated zero total charge.
 
 :::
 
@@ -112,7 +112,7 @@ Equivalently, step <1>2 has no $r^{-1}$ monopole term. Thus the solution is cons
 
 ::: pf-qed
 
-Step <1>3 gives the requested exterior potential, and step <1>4 verifies the charge condition.
+Step [](#s1-3){.pf-ref} gives the requested exterior potential, and step [](#s1-4){.pf-ref} verifies the charge condition.
 
 :::
 

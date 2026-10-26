@@ -53,7 +53,7 @@ implies that the norms are uniformly bounded for all sufficiently large $n$. Rem
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The pointwise limit $f$ belongs to $L^p(\RR^3)$ and
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix $g\in L^q(\RR^3)$. The family
 $$
@@ -102,7 +102,7 @@ Since $|g|^q\in L^1$, the absolute continuity of the Lebesgue integral implies t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The family $\{f_ng:n\ge1\}$ is tight in $L^1(\RR^3)$.
 
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -143,24 +143,24 @@ Since $f_n\to f$ almost everywhere,
 $$
 f_ng\to fg
 $$
-almost everywhere. Steps <1>3 and <1>4 give uniform integrability and tightness of the sequence $(f_ng)$. By the Vitali convergence theorem on $\RR^3$,
+almost everywhere. Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give uniform integrability and tightness of the sequence $(f_ng)$. By the Vitali convergence theorem on $\RR^3$,
 $$
 \|f_ng-fg\|_{L^1}\to0.
 $$
-Therefore the integrals converge. The function $fg$ is integrable by Hölder's inequality and step <1>2.
+Therefore the integrals converge. The function $fg$ is integrable by Hölder's inequality and step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The sequence $(f_n)$ converges weakly to $f$ in $L^p(\RR^3)$.
 
 
 ::: pf-proof
 
-Because $1<p<\infty$, the dual of $L^p(\RR^3)$ is $L^q(\RR^3)$. Step <1>5 proves convergence of the pairing
+Because $1<p<\infty$, the dual of $L^p(\RR^3)$ is $L^q(\RR^3)$. Step [](#s1-5){.pf-ref} proves convergence of the pairing
 $$
 \langle f_n,g\rangle
 =\int f_ng
@@ -173,7 +173,7 @@ to $\langle f,g\rangle$ for every $g\in L^q$. This is exactly weak convergence i
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

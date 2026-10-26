@@ -29,7 +29,7 @@ $$\int_C e^x (\sin y \, dx + \cos y \, dy)$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The differential form
 $$
@@ -55,7 +55,7 @@ which are exactly the coefficients of $dx$ and $dy$ in the integrand.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The curve $C$ starts at $(0,0)$ and ends at $(1,\pi/2)$.
 
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -90,7 +90,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By the fundamental theorem for line integrals and steps <1>1--<1>2,
+By the fundamental theorem for line integrals and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \int_C dF
@@ -106,7 +106,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required integral.
+Step [](#s1-3){.pf-ref} gives the required integral.
 
 :::
 

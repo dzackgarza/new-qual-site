@@ -21,7 +21,7 @@ must hold. If equality can fail, determine which inclusion, if either, always ho
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every index \(\alpha\),
 \[
@@ -39,7 +39,7 @@ This is the defining property of a union.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Taking closures,
 \[
@@ -54,13 +54,13 @@ for every \(\alpha\).
 ::: pf-proof
 
 Closure is monotone: if \(A\subseteq B\), then \(\overline A\subseteq\overline B\).
-Apply this to step <1>1.
+Apply this to step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -73,7 +73,7 @@ Therefore
 
 ::: pf-proof
 
-Every set \(\overline{A_\alpha}\) is contained in the right-hand side by step <1>2, so their union is also contained there.
+Every set \(\overline{A_\alpha}\) is contained in the right-hand side by step [](#s1-2){.pf-ref}, so their union is also contained there.
 
 :::
 
@@ -92,7 +92,7 @@ Singletons are closed in the Hausdorff space \(\mathbb R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -109,7 +109,7 @@ The closure of a closed set is itself.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -122,13 +122,13 @@ Therefore
 
 ::: pf-proof
 
-Use step <1>5.
+Use step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The point \(0\) belongs to
 \[
@@ -144,7 +144,7 @@ Every open interval around \(0\) contains \(1/n\) for all sufficiently large \(n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 But
 \[
@@ -155,26 +155,26 @@ But
 
 ::: pf-proof
 
-The right-hand side is exactly the set of positive numbers \(1/n\) by step <1>6.
+The right-hand side is exactly the set of positive numbers \(1/n\) by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Thus the inclusion in step <1>3 can be strict.
+Thus the inclusion in step [](#s1-3){.pf-ref} can be strict.
 
 
 ::: pf-proof
 
-Steps <1>7--<1>8 show that \(0\) belongs to the right-hand side but not the left-hand side.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that \(0\) belongs to the right-hand side but not the left-hand side.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence the correct general statement is
 \[
@@ -189,7 +189,7 @@ and equality need not hold.
 
 ::: pf-proof
 
-The inclusion is step <1>3, and strictness is step <1>9.
+The inclusion is step [](#s1-3){.pf-ref}, and strictness is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -197,7 +197,7 @@ The inclusion is step <1>3, and strictness is step <1>9.
 
 ::: pf-qed
 
-Step <1>10 gives the complete answer.
+Step [](#s1-10){.pf-ref} gives the complete answer.
 
 :::
 

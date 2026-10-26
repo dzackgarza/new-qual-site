@@ -27,7 +27,7 @@ Let $(X, T)$ be a topological space, and let $A$ be the subset $(0, 1) \cup [4, 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The closure of
 $$
@@ -47,7 +47,7 @@ The interval $(0,1)$ has closure $[0,1]$, while $[4,6)$ has closure $[4,6]$. Sin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The exterior of $A$ is
 $$
@@ -71,7 +71,7 @@ Applying this identity in $\RR$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -83,7 +83,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Taking the complement of the closed set in step <1>1 yields exactly the three displayed open intervals, by step <1>2.
+Taking the complement of the closed set in step [](#s1-1){.pf-ref} yields exactly the three displayed open intervals, by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -91,7 +91,7 @@ Taking the complement of the closed set in step <1>1 yields exactly the three di
 
 ::: pf-qed
 
-Step <1>3 gives the requested exterior.
+Step [](#s1-3){.pf-ref} gives the requested exterior.
 
 :::
 

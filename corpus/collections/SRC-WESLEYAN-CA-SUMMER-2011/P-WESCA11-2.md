@@ -36,7 +36,7 @@ so
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Polynomial division gives
 \[
@@ -81,7 +81,7 @@ The three cube roots of \(1\) are
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Write
 \[
@@ -104,7 +104,7 @@ a partial-fraction expansion with one simple term at each root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For a simple root \(r\) of \(z^3-1\), the coefficient of
 \[
@@ -151,7 +151,7 @@ the limit is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At \(r=1\),
 \[
@@ -161,13 +161,13 @@ At \(r=1\),
 
 ::: pf-proof
 
-Apply step <1>4.
+Apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 At \(r=\omega\),
 \[
@@ -193,7 +193,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 At \(r=\omega^2\),
 \[
@@ -215,7 +215,7 @@ Again use
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -234,13 +234,13 @@ z
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>3--<1>7.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Over the real quadratic factorization
 \[
@@ -266,7 +266,7 @@ This is the standard partial-fraction form over the real coefficients.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Clearing denominators gives
 \[
@@ -280,7 +280,7 @@ A(z^2+z+1)
 
 ::: pf-proof
 
-Multiply the identity in step <1>9 by
+Multiply the identity in step [](#s1-9){.pf-ref} by
 \[
 (z-1)(z^2+z+1).
 \]
@@ -289,7 +289,7 @@ Multiply the identity in step <1>9 by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Comparing coefficients yields
 \[
@@ -304,7 +304,7 @@ C=\frac13}.
 
 ::: pf-proof
 
-Expanding step <1>10 gives
+Expanding step [](#s1-10){.pf-ref} gives
 \[
 z
 =
@@ -328,7 +328,7 @@ Solving gives the displayed values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence an equivalent real-coefficient form is
 \[
@@ -345,7 +345,7 @@ z
 
 ::: pf-proof
 
-Insert step <1>11 into step <1>9 and combine with step <1>1.
+Insert step [](#s1-11){.pf-ref} into step [](#s1-9){.pf-ref} and combine with step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -353,8 +353,8 @@ Insert step <1>11 into step <1>9 and combine with step <1>1.
 
 ::: pf-qed
 
-Step <1>8 gives the complete complex partial-fraction decomposition, and
-step <1>12 gives the equivalent real-coefficient form.
+Step [](#s1-8){.pf-ref} gives the complete complex partial-fraction decomposition, and
+step [](#s1-12){.pf-ref} gives the equivalent real-coefficient form.
 
 :::
 

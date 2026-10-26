@@ -32,7 +32,7 @@ No proofs are required.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One example of a non-diagonalizable matrix is
 \[
@@ -93,7 +93,7 @@ On the final vertical edge, $x=0$, so the contribution is again $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $f(x)=\cos(x^2)$,
 \[
@@ -120,7 +120,7 @@ f^{(10)}(0)=10!\,[x^{10}]f(x)=0.
 
 ::: pf-qed
 
-Steps <1>1 through <1>3 give the three requested computations.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three requested computations.
 
 :::
 

@@ -42,7 +42,7 @@ Treat $\phi$ and $\phi^*$ as independent fields in the variation.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Lagrangian density, including the radial measure factor, is
 $$
@@ -67,7 +67,7 @@ This is the integrand of the given functional after omitting the constant factor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Variation with respect to $\phi^*$ gives
 $$
@@ -90,9 +90,9 @@ This is the Euler--Lagrange equation for a field depending on the independent va
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The three derivatives in step <1>2 are
+The three derivatives in step [](#s1-2){.pf-ref} are
 $$
 \frac{\partial\mathcal L}{\partial\phi^*}
 =
@@ -113,7 +113,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the expression from step <1>1. For the potential term, use
+Differentiate the expression from step [](#s1-1){.pf-ref}. For the potential term, use
 $$
 \frac{\partial}{\partial\phi^*}U(\phi\phi^*)
 =
@@ -124,7 +124,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the field equation is
 $$
@@ -143,7 +143,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2:
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}:
 $$
 -r^2U'(s)\phi
 -
@@ -164,7 +164,7 @@ and divide by $-r^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Variation with respect to $\phi$ gives the conjugate equation
 $$
@@ -183,13 +183,13 @@ $$
 
 ::: pf-proof
 
-Repeat steps <1>2--<1>4 with $\phi$ and $\phi^*$ interchanged. Since $U$ is real-valued, $U'(s)$ is real for real $s=|\phi|^2$, so the result is the complex conjugate of step <1>4.
+Repeat steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} with $\phi$ and $\phi^*$ interchanged. Since $U$ is real-valued, $U'(s)$ is real for real $s=|\phi|^2$, so the result is the complex conjugate of step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Substitute
 $$
@@ -213,9 +213,9 @@ Differentiate the ansatz with respect to $t$ and $r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Equation <1>4 then becomes
+Equation [](#s1-4){.pf-ref} then becomes
 $$
 \boxed{
 f''
@@ -232,13 +232,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>6 into step <1>4 and divide by the nonzero factor $e^{i\omega t}$.
+Substitute step [](#s1-6){.pf-ref} into step [](#s1-4){.pf-ref} and divide by the nonzero factor $e^{i\omega t}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The conjugate equation gives the same real equation for $f$.
 
@@ -249,26 +249,26 @@ Substitute
 $$
 \phi^*=f(r)e^{-i\omega t}
 $$
-into step <1>5. The factor $e^{-i\omega t}$ cancels and yields step <1>7 again.
+into step [](#s1-5){.pf-ref}. The factor $e^{-i\omega t}$ cancels and yields step [](#s1-7){.pf-ref} again.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>4--<1>8 give the field equation, its conjugate, and the reduced radial equation.
+Steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} give the field equation, its conjugate, and the reduced radial equation.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Substituting the ansatz into the integrand first gives the reduced action per unit time
 $$
@@ -308,7 +308,7 @@ The time dependence therefore cancels completely, leaving the displayed spatial 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The reduced Euler--Lagrange equation is
 $$
@@ -335,13 +335,13 @@ $$
 
 ::: pf-proof
 
-This is the ordinary one-variable Euler--Lagrange equation for the reduced functional in step <1>10.
+This is the ordinary one-variable Euler--Lagrange equation for the reduced functional in step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 $$
@@ -364,7 +364,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the reduced Lagrangian from step <1>11. For the potential term, use
+Differentiate the reduced Lagrangian from step [](#s1-11){.pf-ref}. For the potential term, use
 $$
 \frac d{df}U(f^2)
 =
@@ -375,7 +375,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore the reduced Euler--Lagrange equation is again
 $$
@@ -394,7 +394,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>12 into step <1>11:
+Substitute step [](#s1-12){.pf-ref} into step [](#s1-11){.pf-ref}:
 $$
 2r^2(\omega^2f-U'(f^2)f)
 +
@@ -407,14 +407,14 @@ Divide by $2r^2$ and expand the derivative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The two procedures commute for this ansatz: varying first and substituting later gives exactly the same radial equation as substituting first and varying later.
 
 
 ::: pf-proof
 
-Compare steps <1>7 and <1>13.
+Compare steps [](#s1-7){.pf-ref} and [](#s1-13){.pf-ref}.
 
 :::
 
@@ -422,7 +422,7 @@ Compare steps <1>7 and <1>13.
 
 ::: pf-qed
 
-Step <1>9 proves part (a), and steps <1>10--<1>14 prove part (b) and the requested comparison.
+Step [](#s1-9){.pf-ref} proves part (a), and steps [](#s1-10){.pf-ref} through [](#s1-14){.pf-ref} prove part (b) and the requested comparison.
 
 :::
 

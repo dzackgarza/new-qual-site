@@ -21,7 +21,7 @@ Consider the vectors $\vec { a } _ { 1 }$ and $\vec { a } _ { 2 }$ in $\mathbb {
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -47,7 +47,7 @@ It is plainly a scalar multiple of $a_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose a unit vector $e_2$ perpendicular to $e_1$ and oriented so that
 $$
@@ -70,7 +70,7 @@ the $e_2$-component of $a_2$ is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In this basis,
 $$
@@ -80,7 +80,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 a_1=2e_1.
 $$
@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The $e_1$-component of $a_2$ is
 $$
@@ -110,7 +110,7 @@ namely $\pi/6$, because $e_1$ is parallel to $a_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The $e_2$-component of $a_2$ is
 $$
@@ -130,13 +130,13 @@ $$
 +
 6\sin\frac\pi6\,e_2.
 $$
-The sign convention in step <1>2 makes the second coefficient positive.
+The sign convention in step [](#s1-2){.pf-ref} makes the second coefficient positive.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -146,7 +146,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -154,7 +154,7 @@ Combine steps <1>4 and <1>5.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 construct the orthonormal basis, and steps <1>3 and <1>6
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} construct the orthonormal basis, and steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref}
 give the requested coordinates.
 
 :::

@@ -26,7 +26,7 @@ admits a unique continuous solution $f:[0,1]\to\mathbb R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f$ is a solution, then the quantity
 \[
@@ -54,9 +54,9 @@ f(t)=e^{t^2}+c.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Substituting the expression from step <1>1 into the definition of $c$ gives
+Substituting the expression from step [](#s1-1){.pf-ref} into the definition of $c$ gives
 \[
 c
 =
@@ -71,7 +71,7 @@ c
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 f(s)=e^{s^2}+c.
 \]
@@ -92,7 +92,7 @@ c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -117,7 +117,7 @@ An antiderivative of $\cos s$ is $\sin s$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence $c$ must satisfy
 \[
@@ -132,7 +132,7 @@ Hence $c$ must satisfy
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2 and move the term
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref} and move the term
 \[
 \frac c2\sin1
 \]
@@ -142,7 +142,7 @@ to the left.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The coefficient
 \[
@@ -170,7 +170,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore there is exactly one possible value
 \[
@@ -188,13 +188,13 @@ c
 
 ::: pf-proof
 
-Solve the linear equation from step <1>4 using the nonzero coefficient from step <1>5.
+Solve the linear equation from step [](#s1-4){.pf-ref} using the nonzero coefficient from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 \[
@@ -204,7 +204,7 @@ f(t)
 e^{t^2}+c
 }
 \]
-with $c$ as in step <1>6.
+with $c$ as in step [](#s1-6){.pf-ref}.
 Then $f$ is continuous on $[0,1]$.
 
 
@@ -220,14 +220,14 @@ is continuous, and adding a constant preserves continuity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-The function from step <1>7 satisfies the integral equation.
+The function from step [](#s1-7){.pf-ref} satisfies the integral equation.
 
 
 ::: pf-proof
 
-By the defining equation for $c$ from step <1>2,
+By the defining equation for $c$ from step [](#s1-2){.pf-ref},
 \[
 \frac12
 \int_0^1
@@ -261,7 +261,7 @@ f(t).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The continuous solution is unique.
 
@@ -272,23 +272,23 @@ Any solution must have the form
 \[
 f(t)=e^{t^2}+c
 \]
-by step <1>1.
-Its constant $c$ must satisfy the scalar equation from step <1>4.
-By step <1>5, that equation has exactly one solution, namely the value in step <1>6.
+by step [](#s1-1){.pf-ref}.
+Its constant $c$ must satisfy the scalar equation from step [](#s1-4){.pf-ref}.
+By step [](#s1-5){.pf-ref}, that equation has exactly one solution, namely the value in step [](#s1-6){.pf-ref}.
 Thus no second continuous solution can exist.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the equation admits a unique continuous solution.
 
 
 ::: pf-proof
 
-Existence is step <1>8 and uniqueness is step <1>9.
+Existence is step [](#s1-8){.pf-ref} and uniqueness is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -296,7 +296,7 @@ Existence is step <1>8 and uniqueness is step <1>9.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

@@ -37,7 +37,7 @@ The splitting field is Galois in characteristic zero, so $|G|=1225=5^2\cdot7^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The group $G$ is solvable.
 
@@ -50,14 +50,14 @@ The quotient $G/P$ has order $25=5^2$ and is abelian. Hence the commutator subgr
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $f$ is solvable by radicals.
 
 
 ::: pf-proof
 
-The Galois criterion for solvability by radicals in characteristic zero states that a polynomial is solvable by radicals precisely when the Galois group of its splitting field is solvable. This applies by step <1>2.
+The Galois criterion for solvability by radicals in characteristic zero states that a polynomial is solvable by radicals precisely when the Galois group of its splitting field is solvable. This applies by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -65,7 +65,7 @@ The Galois criterion for solvability by radicals in characteristic zero states t
 
 ::: pf-qed
 
-Step <1>3 establishes the assertion.
+Step [](#s1-3){.pf-ref} establishes the assertion.
 
 :::
 

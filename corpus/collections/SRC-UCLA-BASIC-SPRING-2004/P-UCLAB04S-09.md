@@ -30,7 +30,7 @@ Show that the following are equivalent:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Condition (a) implies condition (b).
 
@@ -58,7 +58,7 @@ Both norms are nonnegative, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Condition (b) implies condition (a).
 
@@ -103,7 +103,7 @@ Thus (a) holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Condition (a) implies condition (c).
 
@@ -143,7 +143,7 @@ for every $x$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Condition (c) implies condition (b).
 
@@ -177,7 +177,7 @@ Taking square roots gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Condition (c) implies that $T$ is injective.
 
@@ -204,7 +204,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Because $V$ is finite-dimensional, condition (c) implies that $T$ is invertible and
 \[
@@ -214,7 +214,7 @@ T^{-1}=T^*.
 
 ::: pf-proof
 
-By step <1>5, $T$ is injective.
+By step [](#s1-5){.pf-ref}, $T$ is injective.
 For an endomorphism of a finite-dimensional vector space, injectivity implies surjectivity, hence invertibility.
 From
 \[
@@ -229,14 +229,14 @@ T^*=T^{-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Condition (c) implies condition (d).
 
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 T^*=T^{-1}.
 \]
@@ -252,7 +252,7 @@ TT^{-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Condition (d) implies condition (c).
 
@@ -285,18 +285,18 @@ T^*(T^*)^{-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence conditions (a), (b), (c), and (d) are equivalent.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>4 prove
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove
 \[
 (a)\iff(b)\iff(c),
 \]
-and steps <1>7--<1>8 prove
+and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} prove
 \[
 (c)\iff(d).
 \]
@@ -308,7 +308,7 @@ Therefore all four conditions are equivalent.
 
 ::: pf-qed
 
-Step <1>9 is the required equivalence.
+Step [](#s1-9){.pf-ref} is the required equivalence.
 
 :::
 

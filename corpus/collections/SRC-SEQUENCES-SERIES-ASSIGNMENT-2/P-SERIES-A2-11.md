@@ -49,7 +49,7 @@ These sequences will give a counterexample.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The series
 \[
@@ -70,7 +70,7 @@ decreases to \(0\), so the alternating-series test applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence \((b_n)\) converges to \(0\).
 
@@ -85,7 +85,7 @@ The sequence \((b_n)\) converges to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 But
 \[
@@ -109,7 +109,7 @@ a_nb_n=\frac1n}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -120,13 +120,13 @@ diverges.
 
 ::: pf-proof
 
-By step <1>4, this is the harmonic series.
+By step [](#s1-4){.pf-ref}, this is the harmonic series.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence proposition (a) is
 \[
@@ -136,13 +136,13 @@ Hence proposition (a) is
 
 ::: pf-proof
 
-Steps <1>2--<1>5 satisfy the hypotheses but not the conclusion.
+Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} satisfy the hypotheses but not the conclusion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose, toward a contradiction, that
 \[
@@ -159,7 +159,7 @@ We will show this forces absolute convergence of \(\sum a_n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Then
 \[
@@ -176,7 +176,7 @@ The terms of every convergent series tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence there exists \(N\) such that for every \(n\ge N\),
 \[
@@ -187,13 +187,13 @@ Hence there exists \(N\) such that for every \(n\ge N\),
 
 ::: pf-proof
 
-Apply step <1>8 with \(\varepsilon=1\).
+Apply step [](#s1-8){.pf-ref} with \(\varepsilon=1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore, for \(n\ge N\),
 \[
@@ -204,13 +204,13 @@ Therefore, for \(n\ge N\),
 
 ::: pf-proof
 
-Divide step <1>9 by the positive number \(n^2\).
+Divide step [](#s1-9){.pf-ref} by the positive number \(n^2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence
 \[
@@ -221,7 +221,7 @@ converges.
 
 ::: pf-proof
 
-By step <1>10, compare with the convergent \(p\)-series
+By step [](#s1-10){.pf-ref}, compare with the convergent \(p\)-series
 \[
 \sum_{n=N}^{\infty}\frac1{n^2}.
 \]
@@ -242,7 +242,7 @@ would converge absolutely.
 ::: pf-proof
 
 Adding finitely many initial absolute values does not affect convergence.
-Apply step <1>11.
+Apply step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -261,7 +261,7 @@ Conditional convergence means convergence without absolute convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -273,7 +273,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption in step <1>7 led to a contradiction.
+The assumption in step [](#s1-7){.pf-ref} led to a contradiction.
 
 :::
 
@@ -295,7 +295,7 @@ The terms of a convergent series tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Since \((a_n)\) is decreasing and tends to \(0\),
 \[
@@ -316,7 +316,7 @@ for all \(n\ge N\), contradicting \(a_n\to0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Let
 \[
@@ -332,14 +332,14 @@ By the Cauchy criterion for the convergent series \(\sum a_n\), there exists
 
 ::: pf-proof
 
-All terms are nonnegative by step <1>16, so the absolute value in the Cauchy
+All terms are nonnegative by step [](#s1-16){.pf-ref}, so the absolute value in the Cauchy
 criterion may be omitted.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Let \(n>2N\) and set
 \[
@@ -363,7 +363,7 @@ Taking the floor gives \(m\ge N\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Since the sequence is decreasing,
 \[
@@ -383,7 +383,7 @@ For \(k\le n\), decreasingness gives \(a_k\ge a_n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Hence
 \[
@@ -395,13 +395,13 @@ Hence
 
 ::: pf-proof
 
-There are \(n-m+1\) terms, each at least \(a_n\) by step <1>19.
+There are \(n-m+1\) terms, each at least \(a_n\) by step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 One has
 \[
@@ -427,7 +427,7 @@ n-\frac n2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Therefore
 \[
@@ -440,15 +440,15 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>20--<1>21 and use \(a_n\ge0\).
+Combine steps [](#s1-20){.pf-ref} through [](#s1-21){.pf-ref} and use \(a_n\ge0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
-By step <1>17,
+By step [](#s1-17){.pf-ref},
 \[
 \sum_{k=m}^{n}a_k<\frac{\varepsilon}{2}.
 \]
@@ -456,15 +456,15 @@ By step <1>17,
 
 ::: pf-proof
 
-Step <1>18 gives \(m\ge N\), so the Cauchy tail estimate applies.
+Step [](#s1-18){.pf-ref} gives \(m\ge N\), so the Cauchy tail estimate applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
-Combining steps <1>22--<1>23,
+Combining steps [](#s1-22){.pf-ref} through [](#s1-23){.pf-ref},
 \[
 \frac n2\,a_n<\frac{\varepsilon}{2}.
 \]
@@ -478,7 +478,7 @@ The same tail sum is bounded below and above by those two quantities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 Hence
 \[
@@ -490,13 +490,13 @@ for every \(n>2N\).
 
 ::: pf-proof
 
-Multiply step <1>24 by \(2\).
+Multiply step [](#s1-24){.pf-ref} by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Therefore
 \[
@@ -507,13 +507,13 @@ na_n\to0}.
 
 ::: pf-proof
 
-Step <1>25 is the \(\varepsilon\)-definition of convergence to \(0\).
+Step [](#s1-25){.pf-ref} is the \(\varepsilon\)-definition of convergence to \(0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 Thus the answers are:
 \[
@@ -524,7 +524,7 @@ Thus the answers are:
 
 ::: pf-proof
 
-Use steps <1>6, <1>14, and <1>26.
+Use steps [](#s1-6){.pf-ref} and [](#s1-14){.pf-ref}, and [](#s1-26){.pf-ref}.
 
 :::
 
@@ -532,7 +532,7 @@ Use steps <1>6, <1>14, and <1>26.
 
 ::: pf-qed
 
-Step <1>27 gives the required dispositions.
+Step [](#s1-27){.pf-ref} gives the required dispositions.
 
 :::
 

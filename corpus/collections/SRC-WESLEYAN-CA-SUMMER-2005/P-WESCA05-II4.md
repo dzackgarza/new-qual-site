@@ -27,7 +27,7 @@ Prove that $f$ is a polynomial of degree at most $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(R>0\),
 \[
@@ -43,7 +43,7 @@ This is the given growth estimate restricted to the circle \(|z|=R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer \(k\ge0\) and every \(R>0\),
 \[
@@ -62,7 +62,7 @@ f^{(k)}(0)
 \frac{k!}{2\pi i}
 \int_{|z|=R}\frac{f(z)}{z^{k+1}}\,dz.
 \]
-Taking absolute values and using the ML estimate together with step <1>1 gives
+Taking absolute values and using the ML estimate together with step [](#s1-1){.pf-ref} gives
 \[
 \begin{aligned}
 |f^{(k)}(0)|
@@ -79,7 +79,7 @@ k!MR^{n-k}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If \(k>n\), then
 \[
@@ -89,7 +89,7 @@ f^{(k)}(0)=0.
 
 ::: pf-proof
 
-For \(k>n\), step <1>2 gives
+For \(k>n\), step [](#s1-2){.pf-ref} gives
 \[
 |f^{(k)}(0)|
 \le
@@ -101,7 +101,7 @@ for every \(R>0\). Since \(n-k<0\), the right-hand side tends to \(0\) as \(R\to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Taylor series of \(f\) about \(0\) terminates after degree \(n\):
 \[
@@ -119,13 +119,13 @@ f(z)
 =
 \sum_{k=0}^{\infty}\frac{f^{(k)}(0)}{k!}z^k.
 \]
-Step <1>3 shows that every coefficient with \(k>n\) is zero, so only the terms through degree \(n\) remain.
+Step [](#s1-3){.pf-ref} shows that every coefficient with \(k>n\) is zero, so only the terms through degree \(n\) remain.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -135,7 +135,7 @@ Therefore
 
 ::: pf-proof
 
-The expression in step <1>4 is a polynomial with no term of degree greater than \(n\), and it equals \(f\) everywhere.
+The expression in step [](#s1-4){.pf-ref} is a polynomial with no term of degree greater than \(n\), and it equals \(f\) everywhere.
 
 :::
 
@@ -143,7 +143,7 @@ The expression in step <1>4 is a polynomial with no term of degree greater than 
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -24,7 +24,7 @@ f(x)>0\qquad(x\in X).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume first that
 \[
@@ -63,7 +63,7 @@ This is the definition of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define disjoint measurable sets
 \[
@@ -116,7 +116,7 @@ Thus the $A_n$ partition $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each
 \[
@@ -137,14 +137,14 @@ c_n>0.
 
 ::: pf-proof
 
-The denominator is a finite positive number by step <1>2, so each $c_n$ is
+The denominator is a finite positive number by step [](#s1-2){.pf-ref}, so each $c_n$ is
 strictly positive.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -183,7 +183,7 @@ f(x)=c_n>0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ belongs to
 \[
@@ -223,7 +223,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -237,7 +237,7 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1--<1>5 construct such an $f$.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} construct such an $f$.
 
 :::
 
@@ -278,7 +278,7 @@ Because $f$ is measurable, every superlevel set $F_n$ is measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The sets
 \[
@@ -321,7 +321,7 @@ x\in F_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Each $F_n$ has finite measure.
 
@@ -362,7 +362,7 @@ n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -376,8 +376,8 @@ is
 
 ::: pf-proof
 
-By step <1>8, the measurable sets $F_n$ cover $X$.
-By step <1>9, each has finite measure.
+By step [](#s1-8){.pf-ref}, the measurable sets $F_n$ cover $X$.
+By step [](#s1-9){.pf-ref}, each has finite measure.
 That is exactly the definition of
 \[
 \sigma\text{-finiteness}.
@@ -387,7 +387,7 @@ That is exactly the definition of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -402,7 +402,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 proves the forward implication and step <1>10 proves the reverse
+Step [](#s1-6){.pf-ref} proves the forward implication and step [](#s1-10){.pf-ref} proves the reverse
 implication.
 
 :::
@@ -411,7 +411,7 @@ implication.
 
 ::: pf-qed
 
-Step <1>11 is the desired equivalence.
+Step [](#s1-11){.pf-ref} is the desired equivalence.
 
 :::
 

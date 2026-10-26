@@ -28,7 +28,7 @@ Let $L$ be the line in space that passes through the points $P=(-1,-2,4)$ and $Q
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A parametrization of $L$ is
 $$
@@ -48,14 +48,14 @@ Therefore every point of the line through $P$ and $Q$ has the displayed form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The point of $L$ lying in the plane occurs at $t=2$.
 
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 $$
 x=-1+5t,\qquad y=-2+4t,\qquad z=4-3t.
 $$
@@ -73,7 +73,7 @@ and hence $t=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The intersection point is
 $$
@@ -84,7 +84,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Substituting $t=2$ from step <1>2 into the parametrization from step <1>1 gives
+Substituting $t=2$ from step [](#s1-2){.pf-ref} into the parametrization from step [](#s1-1){.pf-ref} gives
 $$
 (-1+10,-2+8,4-6)=(9,6,-2).
 $$
@@ -95,7 +95,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested intersection point and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested intersection point and corresponding choice.
 
 :::
 

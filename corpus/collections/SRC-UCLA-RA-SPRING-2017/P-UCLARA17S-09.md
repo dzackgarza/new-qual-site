@@ -47,7 +47,7 @@ The zeros of a nonzero holomorphic function are discrete. Since the closed disk 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $b_1,\ldots,b_N$ are the zeros of $f$ in $|z|<R$, repeated according to multiplicity, then
 $$
@@ -64,7 +64,7 @@ Divide $f$ successively by the corresponding linear factors, with repetitions ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -81,7 +81,7 @@ Because $g$ is holomorphic and nonvanishing on a simply connected neighborhood o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $b$ with $|b|<R$,
 $$
@@ -112,7 +112,7 @@ Adding the constant $\log R$ proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Jensen's formula holds:
 $$
@@ -124,7 +124,7 @@ $$
 
 ::: pf-proof
 
-Using the factorization from step <1>2 and then steps <1>3--<1>4,
+Using the factorization from step [](#s1-2){.pf-ref} and then steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
 \frac1{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\,d\theta
@@ -146,7 +146,7 @@ which gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -165,7 +165,7 @@ Fix $R\ge1$. The set of moduli of zeros is discrete in every compact interval, s
 $$
 \rho\in[2R,3R]
 $$
-such that $f$ has no zero on $|z|=\rho$. Every zero with $|a_n|<R$ contributes at least $\log2$ to the Jensen sum at radius $\rho$. Hence step <1>5 and the growth hypothesis give
+such that $f$ has no zero on $|z|=\rho$. Every zero with $|a_n|<R$ contributes at least $\log2$ to the Jensen sum at radius $\rho$. Hence step [](#s1-5){.pf-ref} and the growth hypothesis give
 $$
 \begin{aligned}
 N(R)\log2
@@ -181,7 +181,7 @@ Absorbing the fixed constants into $C_1$ yields the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $\varepsilon>0$,
 $$
@@ -199,7 +199,7 @@ There are only finitely many zeros with $|a_n|<1$, and none is zero because $f(0
 $$
 E_k=\{n:2^k\le|a_n|<2^{k+1}\}.
 $$
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 \#E_k\le N(2^{k+1})\le C_2\,2^{(k+1)\lambda}
 $$
@@ -219,7 +219,7 @@ Summing over $k\ge0$ gives a convergent geometric series.
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>7 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
 
 :::
 

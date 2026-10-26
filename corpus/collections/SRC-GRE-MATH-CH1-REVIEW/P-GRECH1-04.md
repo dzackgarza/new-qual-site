@@ -28,7 +28,7 @@ Let $f$ be a function such that $f(n+1) = 1 - [f(n)]^2$ for all nonnegative inte
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Applying the recurrence at $n+1$ gives
 $$
@@ -44,7 +44,7 @@ Since $n$ is nonnegative, so is $n+1$, and the given recurrence therefore applie
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Substituting the recurrence for $f(n+1)$ gives
 $$
@@ -55,7 +55,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>1 and the given recurrence,
+By step [](#s1-1){.pf-ref} and the given recurrence,
 $$
 \begin{aligned}
 f(n+2)
@@ -71,7 +71,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested expression and identifies the corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested expression and identifies the corresponding choice.
 
 :::
 

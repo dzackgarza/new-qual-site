@@ -28,7 +28,7 @@ The displayed integrals require the usual implicit hypothesis that each $f_n$ is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The uniform limit $f$ is Riemann integrable on $[a,b]$.
 
@@ -72,7 +72,7 @@ By the Darboux criterion, $f$ is Riemann integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n$,
 \[
@@ -88,7 +88,7 @@ For every $n$,
 
 ::: pf-proof
 
-The function $f_n-f$ is Riemann integrable by step <1>1 and linearity of the Riemann integral. Since
+The function $f_n-f$ is Riemann integrable by step [](#s1-1){.pf-ref} and linearity of the Riemann integral. Since
 \[
 -\|f_n-f\|_\infty
 \le
@@ -110,7 +110,7 @@ Taking absolute values yields the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -128,7 +128,7 @@ Uniform convergence means
 \[
 \|f_n-f\|_\infty\to0.
 \]
-Therefore the right side of the estimate in step <1>2 tends to $0$, forcing the difference of the integrals to tend to $0$.
+Therefore the right side of the estimate in step [](#s1-2){.pf-ref} tends to $0$, forcing the difference of the integrals to tend to $0$.
 
 :::
 
@@ -136,7 +136,7 @@ Therefore the right side of the estimate in step <1>2 tends to $0$, forcing the 
 
 ::: pf-qed
 
-Step <1>1 justifies the existence of the limiting integral, and step <1>3 proves the stated convergence.
+Step [](#s1-1){.pf-ref} justifies the existence of the limiting integral, and step [](#s1-3){.pf-ref} proves the stated convergence.
 
 :::
 

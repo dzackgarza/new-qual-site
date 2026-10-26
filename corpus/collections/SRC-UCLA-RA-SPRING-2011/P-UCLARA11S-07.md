@@ -25,7 +25,7 @@ I(\Delta)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If a triangle $\Delta$ is subdivided by joining the midpoints of its three sides into four congruent triangles $\Delta_1,\dots,\Delta_4$, then
 \[
@@ -43,7 +43,7 @@ Each interior segment of the subdivision occurs twice in the sum of the four ori
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Among the four subtriangles, at least one satisfies
 \[
@@ -55,7 +55,7 @@ Among the four subtriangles, at least one satisfies
 
 ::: pf-proof
 
-By step <1>1 and the triangle inequality,
+By step [](#s1-1){.pf-ref} and the triangle inequality,
 \[
 |I(\Delta)|
 \le
@@ -67,7 +67,7 @@ If every term on the right were strictly smaller than $|I(\Delta)|/4$, their sum
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Starting from $\Delta_0=\Delta$, one can choose nested closed triangles
 \[
@@ -95,7 +95,7 @@ and
 
 ::: pf-proof
 
-At each stage subdivide $\Delta_n$ into four congruent midpoint triangles and choose a child satisfying step <1>2. Each such child has all side lengths halved, hence both diameter and perimeter are halved. Iterating the integral estimate gives
+At each stage subdivide $\Delta_n$ into four congruent midpoint triangles and choose a child satisfying step [](#s1-2){.pf-ref}. Each such child has all side lengths halved, hence both diameter and perimeter are halved. Iterating the integral estimate gives
 \[
 |I(\Delta_n)|
 \ge
@@ -116,13 +116,13 @@ z_0\in\bigcap_{n=0}^{\infty}\Delta_n.
 
 ::: pf-proof
 
-The sets $\Delta_n$ are nonempty compact and nested, so their intersection is nonempty. Their diameters tend to zero by step <1>3, hence the intersection contains at most one point.
+The sets $\Delta_n$ are nonempty compact and nested, so their intersection is nonempty. Their diameters tend to zero by step [](#s1-3){.pf-ref}, hence the intersection contains at most one point.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $\varepsilon>0$, there is $N$ such that whenever $z\in\Delta_N$,
 \[
@@ -164,7 +164,7 @@ f'(z_0)
 <
 \varepsilon.
 \]
-By step <1>3, choose $N$ so large that
+By step [](#s1-3){.pf-ref}, choose $N$ so large that
 \[
 \operatorname{diam}(\Delta_N)<\delta.
 \]
@@ -174,7 +174,7 @@ Since $z_0\in\Delta_N$, every $z\in\Delta_N$ satisfies $|z-z_0|<\delta$. Define 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n\ge N$,
 \[
@@ -187,7 +187,7 @@ I(\Delta_n)
 
 ::: pf-proof
 
-Insert the expansion from step <1>5 into the contour integral. The constant term contributes
+Insert the expansion from step [](#s1-5){.pf-ref} into the contour integral. The constant term contributes
 \[
 f(z_0)\oint_{\partial\Delta_n}dz
 =0.
@@ -207,7 +207,7 @@ Only the remainder remains.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $n\ge N$,
 \[
@@ -221,7 +221,7 @@ For every $n\ge N$,
 
 ::: pf-proof
 
-By steps <1>5 and <1>6,
+By steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref},
 \[
 |(z-z_0)\eta(z)|
 \le
@@ -235,7 +235,7 @@ on $\partial\Delta_n$. The ML inequality then gives the stated bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The original integral satisfies
 \[
@@ -249,7 +249,7 @@ The original integral satisfies
 
 ::: pf-proof
 
-By steps <1>3 and <1>7,
+By steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref},
 \[
 4^{-n}|I(\Delta_0)|
 \le
@@ -272,7 +272,7 @@ Multiply by $4^n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -284,7 +284,7 @@ Therefore
 
 ::: pf-proof
 
-The estimate in step <1>8 holds for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ forces
+The estimate in step [](#s1-8){.pf-ref} holds for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ forces
 \[
 |I(\Delta_0)|=0.
 \]
@@ -296,7 +296,7 @@ Since $\Delta_0=\Delta$, this is the desired conclusion.
 
 ::: pf-qed
 
-Step <1>9 proves Goursat's theorem for the given triangle.
+Step [](#s1-9){.pf-ref} proves Goursat's theorem for the given triangle.
 
 :::
 

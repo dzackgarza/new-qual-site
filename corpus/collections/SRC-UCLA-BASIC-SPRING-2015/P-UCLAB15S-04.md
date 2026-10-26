@@ -29,7 +29,7 @@ x_0\in[0,1].
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $f$ is not continuous at $x_0$.
 Then there exist
@@ -55,7 +55,7 @@ This is the sequential criterion for failure of continuity in a metric space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 After passing to a subsequence, one of the following alternatives holds for every $n$:
 \[
@@ -81,7 +81,7 @@ Pass to the corresponding subsequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Assume first that
 \[
@@ -123,7 +123,7 @@ Apply the intermediate value property on the interval with endpoints $x_0$ and $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence $(z_n)$ converges to $x_0$.
 
@@ -150,7 +150,7 @@ z_n\to x_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The closedness of the fiber
 \[
@@ -165,12 +165,12 @@ a contradiction.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 z_n\in f^{-1}(\{y\})
 \]
 for every $n$.
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 z_n\to x_0.
 \]
@@ -192,7 +192,7 @@ which is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The alternative
 \[
@@ -232,22 +232,22 @@ a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore $f$ is continuous at $x_0$.
 
 
 ::: pf-proof
 
-The assumption of discontinuity in step <1>1 leads, after step <1>2, to one of the two alternatives.
-Steps <1>3--<1>5 rule out the first, and step <1>6 rules out the second.
+The assumption of discontinuity in step [](#s1-1){.pf-ref} leads, after step [](#s1-2){.pf-ref}, to one of the two alternatives.
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} rule out the first, and step [](#s1-6){.pf-ref} rules out the second.
 Hence $f$ must be continuous at $x_0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since $x_0$ was arbitrary,
 \[
@@ -257,7 +257,7 @@ Since $x_0$ was arbitrary,
 
 ::: pf-proof
 
-Step <1>7 applies at every point of the domain, including the endpoints because the argument uses only points of $[0,1]$ and one-sided sequences there.
+Step [](#s1-7){.pf-ref} applies at every point of the domain, including the endpoints because the argument uses only points of $[0,1]$ and one-sided sequences there.
 
 :::
 
@@ -265,7 +265,7 @@ Step <1>7 applies at every point of the domain, including the endpoints because 
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

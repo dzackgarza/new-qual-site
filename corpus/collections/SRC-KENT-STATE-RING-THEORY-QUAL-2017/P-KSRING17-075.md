@@ -27,7 +27,7 @@ Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the sa
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume $s$ is integral over $R$.
 Then there exist
@@ -52,9 +52,9 @@ This is exactly the definition of integrality over $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the hypothesis of step <1>1, every power
+Under the hypothesis of step [](#s1-1){.pf-ref}, every power
 $$
 s^m
 $$
@@ -70,7 +70,7 @@ $$
 
 ::: pf-proof
 
-The relation from step <1>1 gives
+The relation from step [](#s1-1){.pf-ref} gives
 $$
 s^n
 =
@@ -97,7 +97,7 @@ as an $R$-linear combination of
 $$
 s,s^2,\ldots,s^n.
 $$
-Replace the $s^n$ term using the monic relation from step <1>1.
+Replace the $s^n$ term using the monic relation from step [](#s1-1){.pf-ref}.
 This yields an $R$-linear combination of
 $$
 1,s,\ldots,s^{n-1}.
@@ -108,7 +108,7 @@ Induction proves the assertion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -126,7 +126,7 @@ $$
 R[s]
 $$
 is a polynomial in $s$ with coefficients in $R$.
-By step <1>2, all powers
+By step [](#s1-2){.pf-ref}, all powers
 $$
 s^m
 $$
@@ -153,7 +153,7 @@ Thus (i) implies (ii).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Assume
 $$
@@ -215,7 +215,7 @@ This is exactly the finite-generation hypothesis in (iii).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For each
 $$
@@ -249,7 +249,7 @@ generate $M$ as an $R$-module, $sm_j$ has an $R$-linear expression in these gene
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 $$
@@ -277,7 +277,7 @@ $$
 
 ::: pf-proof
 
-The $j$th relation from step <1>6 is exactly the corresponding coordinate of the matrix equation
+The $j$th relation from step [](#s1-6){.pf-ref} is exactly the corresponding coordinate of the matrix equation
 $$
 (sI_n-A)\mathbf m=0,
 $$
@@ -288,9 +288,9 @@ Equivalently, one may transpose the coefficient matrix; the determinant below is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Multiplying the equation in step <1>7 by the adjugate matrix gives
+Multiplying the equation in step [](#s1-7){.pf-ref} by the adjugate matrix gives
 $$
 \det(sI_n-A)\,m_j
 =
@@ -314,7 +314,7 @@ $$
 =
 \det(sI_n-A)I_n.
 $$
-Apply this matrix to $\mathbf m$ and use step <1>7:
+Apply this matrix to $\mathbf m$ and use step [](#s1-7){.pf-ref}:
 $$
 \det(sI_n-A)\mathbf m
 =
@@ -326,7 +326,7 @@ Thus each coordinate satisfies the displayed annihilation relation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The element
 $$
@@ -339,7 +339,7 @@ annihilates all of $M$.
 
 ::: pf-proof
 
-By step <1>8, it annihilates each $R$-module generator
+By step [](#s1-8){.pf-ref}, it annihilates each $R$-module generator
 $$
 m_j.
 $$
@@ -349,7 +349,7 @@ Since multiplication by an element of $R[s]$ is $R$-linear, it therefore annihil
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Because $M$ is faithful as an $R[s]$-module,
 $$
@@ -361,7 +361,7 @@ in $R[s]$.
 ::: pf-proof
 
 Faithfulness means that the annihilator of $M$ in $R[s]$ is zero.
-Step <1>9 shows
+Step [](#s1-9){.pf-ref} shows
 $$
 \det(sI_n-A)
 $$
@@ -372,7 +372,7 @@ Hence it is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The expression
 $$
@@ -406,7 +406,7 @@ is monic of degree $n$ with coefficients in $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The element $s$ satisfies the monic polynomial
 $$
@@ -418,11 +418,11 @@ $$
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 $$
 \det(sI_n-A)=0.
 $$
-By step <1>11,
+By step [](#s1-11){.pf-ref},
 $$
 \chi_A(T)
 =
@@ -440,7 +440,7 @@ Therefore (iii) implies (i).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Consequently,
 $$
@@ -456,15 +456,15 @@ $$
 
 ::: pf-proof
 
-Step <1>3 proves
+Step [](#s1-3){.pf-ref} proves
 $$
 \text{(i)}\implies\text{(ii)}.
 $$
-Step <1>4 proves
+Step [](#s1-4){.pf-ref} proves
 $$
 \text{(ii)}\implies\text{(iii)}.
 $$
-Step <1>12 proves
+Step [](#s1-12){.pf-ref} proves
 $$
 \text{(iii)}\implies\text{(i)}.
 $$
@@ -475,7 +475,7 @@ $$
 
 ::: pf-qed
 
-Step <1>13 establishes the equivalence of all three statements.
+Step [](#s1-13){.pf-ref} establishes the equivalence of all three statements.
 
 :::
 

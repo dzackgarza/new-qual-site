@@ -29,7 +29,7 @@ Let $n_1,n_2,n_3$ denote the numbers of residents who watch exactly one, exactly
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -49,7 +49,7 @@ Every resident watches at least one show, so the three disjoint classes counted 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Counting show memberships with multiplicity gives
 $$
@@ -69,7 +69,7 @@ whose sum is $750$. A resident who watches exactly one show contributes once to 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The number of residents who watch all three shows is
 $$
@@ -79,11 +79,11 @@ $$
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 $$
 n_1=600-108-n_3=492-n_3.
 $$
-Substituting this and $n_2=108$ into step <1>2 gives
+Substituting this and $n_2=108$ into step [](#s1-2){.pf-ref} gives
 $$
 (492-n_3)+216+3n_3=750,
 $$
@@ -93,7 +93,7 @@ so $708+2n_3=750$ and hence $n_3=21$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the requested probability is
 $$
@@ -104,7 +104,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-There are $21$ favorable residents by step <1>3, and the resident is chosen uniformly from all $600$ residents.
+There are $21$ favorable residents by step [](#s1-3){.pf-ref}, and the resident is chosen uniformly from all $600$ residents.
 
 :::
 
@@ -112,7 +112,7 @@ There are $21$ favorable residents by step <1>3, and the resident is chosen unif
 
 ::: pf-qed
 
-Step <1>4 gives the requested probability.
+Step [](#s1-4){.pf-ref} gives the requested probability.
 
 :::
 

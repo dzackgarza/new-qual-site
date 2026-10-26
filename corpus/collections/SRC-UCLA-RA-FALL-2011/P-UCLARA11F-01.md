@@ -61,7 +61,7 @@ is measurable, and a countable union of measurable sets is measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed \(m\), the sets \(A_{m,N}\) decrease with \(N\):
 \[
@@ -81,7 +81,7 @@ The union defining \(A_{m,N+1}\) runs over the smaller index set
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For fixed \(m\),
 \[
@@ -106,7 +106,7 @@ Thus the difference does not eventually stay below \(1/m\), so \(f_n(x)\not\to f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -119,13 +119,13 @@ Hence
 
 ::: pf-proof
 
-The sequence converges to \(f\) almost everywhere, so the failure set has Lebesgue measure zero. Apply step <1>3.
+The sequence converges to \(f\) almost everywhere, so the failure set has Lebesgue measure zero. Apply step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Because
 \[
@@ -145,7 +145,7 @@ Lebesgue measure of \([0,1]\) is \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By continuity from above of measure,
 \[
@@ -158,13 +158,13 @@ for every fixed \(m\).
 
 ::: pf-proof
 
-The sets decrease by step <1>2, the first has finite measure by step <1>5, and their intersection has measure zero by step <1>4.
+The sets decrease by step [](#s1-2){.pf-ref}, the first has finite measure by step [](#s1-5){.pf-ref}, and their intersection has measure zero by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For each \(m\ge1\), choose \(N_m\) such that
 \[
@@ -177,7 +177,7 @@ For each \(m\ge1\), choose \(N_m\) such that
 
 ::: pf-proof
 
-This is possible by step <1>6.
+This is possible by step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -203,7 +203,7 @@ This is a countable union of measurable sets, hence measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The exceptional set satisfies
 \[
@@ -214,7 +214,7 @@ The exceptional set satisfies
 
 ::: pf-proof
 
-By countable subadditivity and step <1>7,
+By countable subadditivity and step [](#s1-7){.pf-ref},
 \[
 \lambda(E)
 \le
@@ -231,7 +231,7 @@ By countable subadditivity and step <1>7,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every \(m\ge1\), every \(x\in F\), and every \(n\ge N_m\),
 \[
@@ -279,7 +279,7 @@ The sequence \(1/m\) tends to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Then for every
 \[
@@ -297,7 +297,7 @@ x\in F,
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 |f_n(x)-f(x)|<\frac1m<\delta.
 \]
@@ -306,7 +306,7 @@ By step <1>10,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -319,13 +319,13 @@ f_n\to f
 
 ::: pf-proof
 
-Step <1>12 is exactly the definition of uniform convergence on \(F\): for the given \(\delta>0\), the single index \(N_m\) works simultaneously for every \(x\in F\).
+Step [](#s1-12){.pf-ref} is exactly the definition of uniform convergence on \(F\): for the given \(\delta>0\), the single index \(N_m\) works simultaneously for every \(x\in F\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Thus for every \(\varepsilon>0\), there exists a measurable set \(E\subseteq[0,1]\) with
 \[
@@ -339,7 +339,7 @@ such that \(f_n\to f\) uniformly on
 
 ::: pf-proof
 
-The measure estimate is step <1>9 and uniform convergence is step <1>13.
+The measure estimate is step [](#s1-9){.pf-ref} and uniform convergence is step [](#s1-13){.pf-ref}.
 
 :::
 
@@ -347,7 +347,7 @@ The measure estimate is step <1>9 and uniform convergence is step <1>13.
 
 ::: pf-qed
 
-Step <1>14 is the required conclusion.
+Step [](#s1-14){.pf-ref} is the required conclusion.
 
 :::
 

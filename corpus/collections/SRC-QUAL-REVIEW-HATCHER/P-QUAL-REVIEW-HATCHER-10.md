@@ -185,7 +185,7 @@ The square terms vanish, and since \(n\) is even,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -209,7 +209,7 @@ implies \(2kl=0\), hence \(kl=0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Similarly,
 \[
@@ -228,33 +228,33 @@ Apply the same argument to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since the first row \((k,l)\) is nonzero and satisfies \(kl=0\), exactly one of \(k,l\) is nonzero.
 
 
 ::: pf-proof
 
-The row cannot be zero because \(M\) is invertible. Step <1>5 says at least one entry is zero.
+The row cannot be zero because \(M\) is invertible. Step [](#s1-5){.pf-ref} says at least one entry is zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since the second row \((p,q)\) is nonzero and satisfies \(pq=0\), exactly one of \(p,q\) is nonzero.
 
 
 ::: pf-proof
 
-Use invertibility and step <1>6.
+Use invertibility and step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The nonzero entries of the two rows must occur in different columns.
 
@@ -289,7 +289,7 @@ p&0
 
 ::: pf-proof
 
-Steps <1>7--<1>9 say each row and each column has exactly one nonzero entry.
+Steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} say each row and each column has exactly one nonzero entry.
 
 :::
 
@@ -335,7 +335,7 @@ Again, an integer product equal to \(\pm1\) forces both factors to be units in \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence \(M\) is one of the eight signed permutation matrices:
 \[
@@ -413,7 +413,7 @@ F^*\beta=\varepsilon_2\beta.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore all four diagonal signed permutation matrices occur.
 
@@ -514,7 +514,7 @@ This is the displayed matrix in the convention of the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore all four off-diagonal signed permutation matrices occur.
 
@@ -530,7 +530,7 @@ Choose independently
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Thus every one of the eight signed permutation matrices is realized by a homeomorphism of
 \[
@@ -540,7 +540,7 @@ S^n\times S^n.
 
 ::: pf-proof
 
-The diagonal four are realized in step <1>16 and the off-diagonal four in step <1>20.
+The diagonal four are realized in step [](#s1-16){.pf-ref} and the off-diagonal four in step [](#s1-20){.pf-ref}.
 
 :::
 
@@ -548,7 +548,7 @@ The diagonal four are realized in step <1>16 and the off-diagonal four in step <
 
 ::: pf-qed
 
-Step <1>13 proves the restriction on the matrix, and step <1>21 realizes all eight possibilities.
+Step [](#s1-13){.pf-ref} proves the restriction on the matrix, and step [](#s1-21){.pf-ref} realizes all eight possibilities.
 
 :::
 

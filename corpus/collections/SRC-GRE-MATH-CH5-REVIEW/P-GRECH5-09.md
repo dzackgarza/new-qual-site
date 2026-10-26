@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The determinant of $M$ is
 $$
@@ -78,7 +78,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix is noninvertible exactly when
 $$
@@ -89,7 +89,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-A square matrix is noninvertible exactly when its determinant is zero. By step <1>1, this condition is $-x-1=0$, whose unique solution is $x=-1$.
+A square matrix is noninvertible exactly when its determinant is zero. By step [](#s1-1){.pf-ref}, this condition is $-x-1=0$, whose unique solution is $x=-1$.
 
 :::
 
@@ -97,7 +97,7 @@ A square matrix is noninvertible exactly when its determinant is zero. By step <
 
 ::: pf-qed
 
-Step <1>2 gives the requested parameter.
+Step [](#s1-2){.pf-ref} gives the requested parameter.
 
 :::
 

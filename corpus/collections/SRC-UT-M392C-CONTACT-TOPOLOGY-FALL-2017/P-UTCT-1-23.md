@@ -49,7 +49,7 @@ H^2(M;\mathbb Z)\cong H_1(M;\mathbb Z)\cong\mathbb Z/p.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a fixed trivialization \(\tau\) of \(TM\), the invariant
 \[
@@ -76,7 +76,7 @@ H_1(M)\cong\mathbb Z/p.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently, for fixed \(\tau\), there are at least \(p\) distinct
 homotopy classes of oriented plane fields on \(M\).
@@ -85,14 +85,14 @@ homotopy classes of oriented plane fields on \(M\).
 ::: pf-proof
 
 Plane fields with different values of \(\Gamma_\tau\) cannot be homotopic,
-since \(\Gamma_\tau\) is a homotopy invariant. Step <1>1 shows that all
+since \(\Gamma_\tau\) is a homotopy invariant. Step [](#s1-1){.pf-ref} shows that all
 \(p\) elements of \(\mathbb Z/p\) occur.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every oriented plane field \(\xi\),
 \[
@@ -116,7 +116,7 @@ source notes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore an oriented \(2\)-plane bundle over \(M\) with Euler class
 \(e\in H^2(M)\) is realizable as a plane field exactly when
@@ -139,7 +139,7 @@ under the Poincaré-duality identification with \(H_1(M)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If \(p\) is odd, multiplication by \(2\),
 \[
@@ -162,7 +162,7 @@ the class of \(2\) is invertible modulo \(p\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence, if \(p\) is odd,
 \[
@@ -173,13 +173,13 @@ Hence, if \(p\) is odd,
 
 ::: pf-proof
 
-This is surjectivity of the isomorphism in step <1>5.
+This is surjectivity of the isomorphism in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every oriented \(2\)-plane bundle over \(L(p,q)\) is
 realizable as a plane field when \(p\) is odd.
@@ -191,14 +191,14 @@ Oriented real rank-\(2\) bundles are classified by their Euler class in
 \[
 H^2(M;\mathbb Z)\cong\mathbb Z/p.
 \]
-By step <1>6, every Euler class is divisible by \(2\), so step <1>4 applies
+By step [](#s1-6){.pf-ref}, every Euler class is divisible by \(2\), so step [](#s1-4){.pf-ref} applies
 to every bundle class.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For \(p\) odd, the Euler class determines the value of
 \(\Gamma_\tau\).
@@ -206,36 +206,36 @@ For \(p\) odd, the Euler class determines the value of
 
 ::: pf-proof
 
-From step <1>3,
+From step [](#s1-3){.pf-ref},
 \[
 2\Gamma_\tau(\xi)
 =
 \operatorname{PD}(e(\xi)).
 \]
-Since multiplication by \(2\) is injective by step <1>5, the right-hand side
+Since multiplication by \(2\) is injective by step [](#s1-5){.pf-ref}, the right-hand side
 determines the unique value of \(\Gamma_\tau(\xi)\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus, for \(p\) odd, the \(p\) values of \(\Gamma_\tau\) obtained in
-step <1>1 give \(p\) plane fields whose underlying plane bundles have \(p\)
+step [](#s1-1){.pf-ref} give \(p\) plane fields whose underlying plane bundles have \(p\)
 different Euler classes.
 
 
 ::: pf-proof
 
-Step <1>8 says distinct \(\Gamma_\tau\)-values have distinct doubles, hence
-distinct Euler classes. There are \(p\) values by step <1>1.
+Step [](#s1-8){.pf-ref} says distinct \(\Gamma_\tau\)-values have distinct doubles, hence
+distinct Euler classes. There are \(p\) values by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The kernel of multiplication by \(2\) on \(\mathbb Z/p\) is
 \[
@@ -262,7 +262,7 @@ Modulo \(2r\), the two such classes are \(0\) and \(r\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The image of multiplication by \(2\) is
 \[
@@ -295,7 +295,7 @@ r.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore, when \(p\) is even, exactly
 \[
@@ -306,14 +306,14 @@ Euler classes occur among plane fields.
 
 ::: pf-proof
 
-By step <1>4, the realizable Euler classes are exactly the image of
-multiplication by \(2\). Step <1>11 gives its cardinality.
+By step [](#s1-4){.pf-ref}, the realizable Euler classes are exactly the image of
+multiplication by \(2\). Step [](#s1-11){.pf-ref} gives its cardinality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Each realizable Euler class has exactly two possible
 \(\Gamma_\tau\)-values.
@@ -331,14 +331,14 @@ x-y\in\ker d_2
 =
 \{0,p/2\}
 \]
-by step <1>10. Thus the two solutions differ by \(p/2\), and there are
+by step [](#s1-10){.pf-ref}. Thus the two solutions differ by \(p/2\), and there are
 exactly two of them.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence, when \(p\) is even, there are pairs of nonhomotopic plane
 fields having isomorphic underlying oriented plane bundles.
@@ -358,7 +358,7 @@ with
 \Gamma_\tau(\xi')=x+p/2.
 \]
 They are not homotopic because their \(\Gamma_\tau\)-values differ. But
-step <1>3 and
+step [](#s1-3){.pf-ref} and
 \[
 2(x+p/2)
 =
@@ -377,7 +377,7 @@ plane bundles are isomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 For \(p=2\), this recovers the \(\mathbb{RP}^3\) example:
 every plane field has trivial Euler class, but \(\Gamma_\tau\) takes two
@@ -421,8 +421,8 @@ p\text{ even} & p/2 & 2.
 
 ::: pf-proof
 
-For odd \(p\), use steps <1>5--<1>9. For even \(p\), use steps
-<1>10--<1>14.
+For odd \(p\), use steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref}. For even \(p\), use steps
+[](#s1-10){.pf-ref} through [](#s1-14){.pf-ref}.
 
 :::
 
@@ -436,7 +436,7 @@ pairwise nonhomotopic plane fields on \(L(p,q)\).
 
 ::: pf-proof
 
-This is step <1>2. The parity analysis describes how those \(p\) distinct
+This is step [](#s1-2){.pf-ref}. The parity analysis describes how those \(p\) distinct
 \(\Gamma_\tau\)-values project to Euler classes.
 
 :::
@@ -445,7 +445,7 @@ This is step <1>2. The parity analysis describes how those \(p\) distinct
 
 ::: pf-qed
 
-Steps <1>7--<1>9 analyze the odd case, and steps <1>12--<1>15 analyze the
+Steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} analyze the odd case, and steps [](#s1-12){.pf-ref} through [](#s1-15){.pf-ref} analyze the
 even case, including the \(\mathbb{RP}^3\) specialization.
 
 :::

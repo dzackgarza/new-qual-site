@@ -25,7 +25,7 @@ Put \(b=|a|>0\). Since \(\cos(ax)=\cos(bx)\), it is enough to evaluate the integ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -51,7 +51,7 @@ The denominator factors as \((z-i)(z+i)\), so the only upper-half-plane pole is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(C_R\) is the upper semicircle \(z=Re^{i\theta}\), \(0\le\theta\le\pi\), then
 \[
@@ -81,7 +81,7 @@ Since the length of \(C_R\) is \(\pi R\), the ML estimate gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -92,20 +92,20 @@ One has
 
 ::: pf-proof
 
-For \(R>1\), integrate \(F\) counterclockwise around the boundary of the upper half-disc of radius \(R\). The residue theorem and step <1>1 give
+For \(R>1\), integrate \(F\) counterclockwise around the boundary of the upper half-disc of radius \(R\). The residue theorem and step [](#s1-1){.pf-ref} give
 \[
 \int_{-R}^{R}\frac{e^{ibx}}{1+x^2}\,dx
 +\int_{C_R}F(z)\,dz
 =2\pi i\frac{e^{-b}}{2i}
 =\pi e^{-b}.
 \]
-The real-axis integrand is absolutely integrable because its modulus is \((1+x^2)^{-1}\). Letting \(R\to\infty\) and using step <1>2 gives the displayed identity.
+The real-axis integrand is absolutely integrable because its modulus is \((1+x^2)^{-1}\). Letting \(R\to\infty\) and using step [](#s1-2){.pf-ref} gives the displayed identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -117,7 +117,7 @@ Therefore
 
 ::: pf-proof
 
-Taking real parts in step <1>3 yields
+Taking real parts in step [](#s1-3){.pf-ref} yields
 \[
 \int_{-\infty}^{\infty}\frac{\cos(bx)}{1+x^2}\,dx
 =\pi e^{-b}.
@@ -130,7 +130,7 @@ Since \(b=|a|\) and \(\cos(ax)=\cos(bx)\), this is exactly the claimed formula.
 
 ::: pf-qed
 
-Step <1>4 gives the required evaluation.
+Step [](#s1-4){.pf-ref} gives the required evaluation.
 
 :::
 

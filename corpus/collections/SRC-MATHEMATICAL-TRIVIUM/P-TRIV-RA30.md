@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Integration by parts gives
 $$
@@ -79,7 +79,7 @@ Negating gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -91,13 +91,13 @@ $$
 
 ::: pf-proof
 
-Subtract $A(x)=\sin x/x$ from step <1>1.
+Subtract $A(x)=\sin x/x$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $x>0$,
 $$
@@ -140,7 +140,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence, whenever $\sin x\neq0$,
 $$
@@ -152,7 +152,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2--<1>3 and divide by
+Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} and divide by
 $$
 |A(x)|
 =
@@ -163,7 +163,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Put
 $$
@@ -179,7 +179,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 $$
 |\operatorname{Ci}(x)-A(x)|
 \leq
@@ -199,7 +199,7 @@ Divide the two estimates.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A sufficient condition for true relative error below $10^{-4}$ is
 $$
@@ -213,7 +213,7 @@ Let
 $$
 \varepsilon=10^{-4}.
 $$
-By step <1>5, it suffices to require
+By step [](#s1-5){.pf-ref}, it suffices to require
 $$
 \frac{q}{1-q}<\varepsilon.
 $$
@@ -238,7 +238,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The large-$x$ asymptotic expansion begins
 $$
@@ -254,7 +254,7 @@ $$
 
 ::: pf-proof
 
-Integrate the remainder in step <1>1 once more by parts:
+Integrate the remainder in step [](#s1-1){.pf-ref} once more by parts:
 $$
 \int_x^\infty\frac{\sin t}{t^2}\,dt
 =
@@ -263,13 +263,13 @@ $$
 2\int_x^\infty\frac{\cos t}{t^3}\,dt.
 $$
 The last integral is $O(x^{-3})$ by the same Dirichlet estimate used in step
-<1>3.
+[](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Away from zeros of $\sin x$, the pointwise relative error therefore has
 the asymptotic form
@@ -286,14 +286,14 @@ $$
 
 ::: pf-proof
 
-Subtract the leading approximation from step <1>7 and divide by
+Subtract the leading approximation from step [](#s1-7){.pf-ref} and divide by
 $|\sin x|/x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 No condition of the form $x>X$ alone can guarantee relative error below
 $10^{-4}$.
@@ -305,7 +305,7 @@ For every $X$ there is an integer $n$ with $n\pi>X$. At $x=n\pi$,
 $$
 A(x)=\frac{\sin(n\pi)}{n\pi}=0,
 $$
-whereas step <1>7 gives
+whereas step [](#s1-7){.pf-ref} gives
 $$
 \operatorname{Ci}(n\pi)
 =
@@ -322,8 +322,8 @@ have small relative error on an entire tail interval.
 
 ::: pf-qed
 
-Step <1>1 proves the leading approximation, step <1>6 gives a rigorous region
-with relative error below $10^{-4}$, and steps <1>8--<1>9 describe the
+Step [](#s1-1){.pf-ref} proves the leading approximation, step [](#s1-6){.pf-ref} gives a rigorous region
+with relative error below $10^{-4}$, and steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} describe the
 asymptotically sharp pointwise behavior and the unavoidable exclusions near
 zeros of $\sin x$.
 

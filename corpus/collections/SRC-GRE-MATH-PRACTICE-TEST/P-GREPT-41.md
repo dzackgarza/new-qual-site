@@ -35,7 +35,7 @@ What is the smallest number $m$ that makes the statement $f(1) \leq m$ true?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -74,7 +74,7 @@ derivative $0$, proving that $h$ is smooth and flat at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $M>0$, the function
 $$
@@ -85,7 +85,7 @@ satisfies all three hypotheses of the problem.
 
 ::: pf-proof
 
-By step <1>1, $h^{(n)}(0)=0$ for every $n$. Therefore
+By step [](#s1-1){.pf-ref}, $h^{(n)}(0)=0$ for every $n$. Therefore
 $$
 f_M(0)=0,
 \qquad
@@ -103,7 +103,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The values $f_M(1)$ are unbounded above as $M$ varies.
 
@@ -120,7 +120,7 @@ This tends to $+\infty$ as $M\to\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -132,7 +132,7 @@ so none of choices (A)--(E) is correct as written.
 ::: pf-proof
 
 Given any proposed finite $m$, choose $M>e(m-2)$. Then the function $f_M$
-from step <1>2 satisfies every printed hypothesis, while step <1>3 gives
+from step [](#s1-2){.pf-ref} satisfies every printed hypothesis, while step [](#s1-3){.pf-ref} gives
 $f_M(1)>m$.
 
 :::
@@ -141,7 +141,7 @@ $f_M(1)>m$.
 
 ::: pf-qed
 
-Step <1>4 proves the literal conclusion.
+Step [](#s1-4){.pf-ref} proves the literal conclusion.
 
 :::
 

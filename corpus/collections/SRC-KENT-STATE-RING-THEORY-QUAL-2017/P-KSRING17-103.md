@@ -51,7 +51,7 @@ Assume the corrected hypotheses.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The coefficient $a_0$ is nonzero and satisfies
 $$
@@ -75,7 +75,7 @@ Therefore $a_0\ne0$ and the exact $p$-adic exponent of $a_0$ is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Factor $f$ in $\ZZ[x]$ as
 $$
@@ -102,7 +102,7 @@ Any integer content is absorbed into $c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The integer $c$ is not divisible by $p$.
 
@@ -135,7 +135,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Exactly one irreducible factor $f_j$ has constant coefficient divisible by $p$.
 
@@ -152,7 +152,7 @@ b_{j,1}x
 +
 \cdots.
 $$
-Taking constant coefficients in the factorization from step <1>2 gives
+Taking constant coefficients in the factorization from step [](#s1-2){.pf-ref} gives
 $$
 a_0
 =
@@ -160,11 +160,11 @@ c
 \prod_{j=1}^{r}
 b_{j,0}.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 v_p(a_0)=1,
 $$
-and by step <1>3,
+and by step [](#s1-3){.pf-ref},
 $$
 v_p(c)=0.
 $$
@@ -189,7 +189,7 @@ and every other constant coefficient is prime to $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Reduce the factorization modulo $p$.
 Then
@@ -247,7 +247,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 $$
@@ -262,7 +262,7 @@ is not divisible by $x$.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 p\nmid b_{j,0}
 $$
@@ -284,7 +284,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The reduction
 $$
@@ -310,7 +310,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 All $k$ powers of $x$ dividing $\overline f$ come from
 $$
@@ -326,7 +326,7 @@ $$
 
 ::: pf-proof
 
-Reducing the factorization from step <1>2 modulo $p$ gives
+Reducing the factorization from step [](#s1-2){.pf-ref} modulo $p$ gives
 $$
 \overline f
 =
@@ -338,9 +338,9 @@ where
 $$
 \overline c\ne0
 $$
-by step <1>3.
+by step [](#s1-3){.pf-ref}.
 
-By step <1>6, every factor except
+By step [](#s1-6){.pf-ref}, every factor except
 $$
 \overline{f_{j_0}}
 $$
@@ -348,7 +348,7 @@ has nonzero constant term and therefore contributes zero to the order of vanishi
 $$
 x=0.
 $$
-Step <1>5 says the total order of vanishing of
+Step [](#s1-5){.pf-ref} says the total order of vanishing of
 $$
 \overline f
 $$
@@ -369,7 +369,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 $$
@@ -379,12 +379,12 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 \overline{f_{j_0}}
 $$
 is a nonzero polynomial.
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 x^k
 \mid
@@ -409,7 +409,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore $f$ has an irreducible factor of degree at least $k$.
 
@@ -420,7 +420,7 @@ The factor
 $$
 f_{j_0}
 $$
-is irreducible by step <1>2, and step <1>9 gives
+is irreducible by step [](#s1-2){.pf-ref}, and step [](#s1-9){.pf-ref} gives
 $$
 \deg f_{j_0}\ge k.
 $$
@@ -439,7 +439,7 @@ $$
 
 ::: pf-qed
 
-Step <1>10 proves the corrected generalized Eisenstein criterion.
+Step [](#s1-10){.pf-ref} proves the corrected generalized Eisenstein criterion.
 
 :::
 

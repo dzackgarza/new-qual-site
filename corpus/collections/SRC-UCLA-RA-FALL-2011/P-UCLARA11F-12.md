@@ -77,7 +77,7 @@ This is the standard derivative form of Cauchy's integral formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -104,7 +104,7 @@ and its length is \(2\pi\). Hence the \(ML\)-estimate gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -131,7 +131,7 @@ By the triangle inequality,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -145,13 +145,13 @@ c_1e^{c_2}e^{c_2|z|}.
 
 ::: pf-proof
 
-Apply the exponential-type bound for \(f\) to step <1>3 and use step <1>4.
+Apply the exponential-type bound for \(f\) to step [](#s1-3){.pf-ref} and use step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -170,26 +170,26 @@ C_2=c_2.
 
 ::: pf-proof
 
-This is just a relabeling of the constants in step <1>5.
+This is just a relabeling of the constants in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus \(f'\) is of exponential type.
 
 
 ::: pf-proof
 
-Step <1>6 matches the definition.
+Step [](#s1-6){.pf-ref} matches the definition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every \(z\in\mathbb C\),
 \[
@@ -218,7 +218,7 @@ Integrate from \(0\) to \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -234,13 +234,13 @@ Therefore
 
 ::: pf-proof
 
-Take absolute values in step <1>8 and use the triangle inequality.
+Take absolute values in step [](#s1-8){.pf-ref} and use the triangle inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Using the exponential-type bound for \(f'\),
 \[
@@ -260,13 +260,13 @@ Since
 \[
 |tz|=t|z|
 \]
-for \(0\le t\le1\), substitute the assumed bound into step <1>9.
+for \(0\le t\le1\), substitute the assumed bound into step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If \(z\ne0\),
 \[
@@ -310,13 +310,13 @@ e^{a_2|z|}-1
 
 ::: pf-proof
 
-Use steps <1>10--<1>11.
+Use steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Since
 \[
@@ -355,20 +355,20 @@ At \(z=0\), the displayed inequality is immediate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore \(f\) is of exponential type.
 
 
 ::: pf-proof
 
-Step <1>13 has exactly the required form.
+Step [](#s1-13){.pf-ref} has exactly the required form.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Consequently,
 \[
@@ -381,7 +381,7 @@ f'\text{ is of exponential type}.}
 
 ::: pf-proof
 
-The forward implication is step <1>7, and the reverse implication is step <1>14.
+The forward implication is step [](#s1-7){.pf-ref}, and the reverse implication is step [](#s1-14){.pf-ref}.
 
 :::
 
@@ -389,7 +389,7 @@ The forward implication is step <1>7, and the reverse implication is step <1>14.
 
 ::: pf-qed
 
-Step <1>15 is the required equivalence.
+Step [](#s1-15){.pf-ref} is the required equivalence.
 
 :::
 

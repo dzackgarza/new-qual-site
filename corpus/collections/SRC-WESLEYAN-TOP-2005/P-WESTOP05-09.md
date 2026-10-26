@@ -30,7 +30,7 @@ N=q(X\times\{1\}).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -52,7 +52,7 @@ end \(X\times\{1\}\) lies in the second.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sets \(U\) and \(V\) are open in \(\Sigma X\).
 
@@ -97,7 +97,7 @@ cover \(I\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space \(U\) is contractible.
 
@@ -117,7 +117,7 @@ At \(s=1\), every point is sent to \(S\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space \(V\) is contractible.
 
@@ -149,14 +149,14 @@ q\bigl(X\times(1/3,2/3)\bigr)}.
 
 ::: pf-proof
 
-This is the overlap of the two interval factors from step <1>1.
+This is the overlap of the two interval factors from step [](#s1-1){.pf-ref}.
 No quotient identifications occur in the open middle interval.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -200,7 +200,7 @@ is contractible, so projection onto \(X\) is a homotopy equivalence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since \(X\) is path connected,
 \[
@@ -212,27 +212,27 @@ U\cap V
 
 ::: pf-proof
 
-A product of path-connected spaces is path connected. Use step <1>7 and the
+A product of path-connected spaces is path connected. Use step [](#s1-7){.pf-ref} and the
 fact that the interval is path connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The spaces \(U\) and \(V\) are path connected.
 
 
 ::: pf-proof
 
-Each is contractible by steps <1>4--<1>5, hence path connected.
+Each is contractible by steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, hence path connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The Seifert--van Kampen theorem gives
 \[
@@ -251,13 +251,13 @@ The cover
 \Sigma X=U\cup V
 \]
 is by open path-connected sets with path-connected intersection by steps
-<1>2, <1>9, and <1>10.
+[](#s1-2){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -273,13 +273,13 @@ and
 
 ::: pf-proof
 
-Both spaces are contractible by steps <1>4--<1>5.
+Both spaces are contractible by steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -291,8 +291,8 @@ Therefore
 ::: pf-proof
 
 The amalgamated free product of the two trivial groups is trivial,
-regardless of the maps from \(\pi_1(U\cap V)\). Apply step <1>11 and step
-<1>12.
+regardless of the maps from \(\pi_1(U\cap V)\). Apply step [](#s1-11){.pf-ref} and step
+[](#s1-12){.pf-ref}.
 
 :::
 
@@ -307,7 +307,7 @@ connected.
 ::: pf-proof
 
 The suspension is path connected because \(U\) and \(V\) are path connected
-and intersect nontrivially, and step <1>13 gives trivial fundamental group.
+and intersect nontrivially, and step [](#s1-13){.pf-ref} gives trivial fundamental group.
 
 :::
 
@@ -315,7 +315,7 @@ and intersect nontrivially, and step <1>13 gives trivial fundamental group.
 
 ::: pf-qed
 
-Step <1>13 is the requested computation.
+Step [](#s1-13){.pf-ref} is the requested computation.
 
 :::
 

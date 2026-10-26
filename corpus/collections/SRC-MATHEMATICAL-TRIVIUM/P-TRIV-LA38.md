@@ -42,7 +42,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -75,7 +75,7 @@ Thus $R\in SO(2)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -114,7 +114,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The transformed second column is
 $$
@@ -143,21 +143,21 @@ because $\det A=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>3 construct the required rotation and describe its action on
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} construct the required rotation and describe its action on
 both columns.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 $$
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-The determinant is $r^{-1}r=1$. By step <1>2,
+The determinant is $r^{-1}r=1$. By step [](#s1-2){.pf-ref},
 $$
 P^{-1}
 \begin{pmatrix}r\\0\end{pmatrix}
@@ -192,7 +192,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -206,7 +206,7 @@ $$
 
 ::: pf-proof
 
-Apply $P^{-1}$ to the vector in step <1>3:
+Apply $P^{-1}$ to the vector in step [](#s1-3){.pf-ref}:
 $$
 \begin{pmatrix}
 r^{-1}&0\\
@@ -227,21 +227,21 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>5--<1>6 give the required diagonal transformation and the claimed
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the required diagonal transformation and the claimed
 coordinates of the second column.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 $$
@@ -292,7 +292,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -302,21 +302,21 @@ $$
 
 ::: pf-proof
 
-The columns of $A$ are $g_1,g_2$. By steps <1>5--<1>6, the first two inverse
+The columns of $A$ are $g_1,g_2$. By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}, the first two inverse
 steps send those columns to
 $$
 e_1
 \qquad\text{and}\qquad
 \begin{pmatrix}x\\1\end{pmatrix}.
 $$
-Step <1>8 sends these to $e_1,e_2$, respectively. Hence the resulting matrix
+Step [](#s1-8){.pf-ref} sends these to $e_1,e_2$, respectively. Hence the resulting matrix
 is the identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus
 $$
@@ -352,27 +352,27 @@ $$
 
 ::: pf-proof
 
-Invert the identity in step <1>9. The formulas for $P$ and $T$ are the
-inverses of those in steps <1>5 and <1>8, and $r^2=a^2+c^2$.
+Invert the identity in step [](#s1-9){.pf-ref}. The formulas for $P$ and $T$ are the
+inverses of those in steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}, and $r^2=a^2+c^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Steps <1>8--<1>10 construct the required shear and yield the decomposition.
+Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} construct the required shear and yield the decomposition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The factor $R$ is uniquely determined.
 
@@ -402,14 +402,14 @@ determined by its first column, so $R$ is unique.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The factor $P$ is uniquely determined.
 
 
 ::: pf-proof
 
-Step <1>12 fixes
+Step [](#s1-12){.pf-ref} fixes
 $$
 r=\|g_1\|=\sqrt{a^2+c^2}.
 $$
@@ -423,7 +423,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The factor $T$ is uniquely determined.
 
@@ -434,7 +434,7 @@ Once $R$ and $P$ are fixed,
 $$
 T=P^{-1}R^{-1}A.
 $$
-Equivalently, step <1>6 uniquely determines its shear parameter
+Equivalently, step [](#s1-6){.pf-ref} uniquely determines its shear parameter
 $$
 x=\frac{ab+cd}{r^2}.
 $$
@@ -443,7 +443,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore the decomposition
 $$
@@ -455,20 +455,20 @@ $T=\begin{pmatrix}1&x\\0&1\end{pmatrix}$ is unique.
 
 ::: pf-proof
 
-Steps <1>12--<1>14 show uniqueness of the three factors successively.
+Steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} show uniqueness of the three factors successively.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Part (d) follows.
 
 
 ::: pf-proof
 
-This is step <1>15.
+This is step [](#s1-15){.pf-ref}.
 
 :::
 
@@ -476,7 +476,7 @@ This is step <1>15.
 
 ::: pf-qed
 
-Steps <1>4, <1>7, <1>11, and <1>16 establish parts (a)--(d).
+Steps [](#s1-4){.pf-ref}, [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref}, and [](#s1-16){.pf-ref} establish parts (a)--(d).
 
 :::
 

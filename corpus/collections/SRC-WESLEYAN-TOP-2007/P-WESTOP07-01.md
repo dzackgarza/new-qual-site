@@ -17,7 +17,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 $$
@@ -84,7 +84,7 @@ inside the punctured space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The space
 $$
@@ -109,7 +109,7 @@ a union of two nonempty disjoint open subsets in the subspace topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 $$
@@ -152,13 +152,13 @@ with
 $$
 \mathbb R^n\setminus\{0\}.
 $$
-But step <1>2 says the first punctured space is disconnected, while step <1>1 says the second is path-connected. Contradiction.
+But step [](#s1-2){.pf-ref} says the first punctured space is disconnected, while step [](#s1-1){.pf-ref} says the second is path-connected. Contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every
 $$
@@ -227,7 +227,7 @@ The scalar factor is always positive, so the homotopy never passes through the o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -239,7 +239,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \mathbb R^2\setminus\{0\}
 \simeq
@@ -254,7 +254,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every
 $$
@@ -269,7 +269,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \mathbb R^n\setminus\{0\}
 \simeq
@@ -289,7 +289,7 @@ is simply connected. Therefore the punctured Euclidean space has trivial fundame
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every
 $$
@@ -328,7 +328,7 @@ After translating the target, the right-hand side is homeomorphic to
 $$
 \mathbb R^n\setminus\{0\}.
 $$
-Homeomorphic spaces have isomorphic fundamental groups, contradicting steps <1>5--<1>6:
+Homeomorphic spaces have isomorphic fundamental groups, contradicting steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}:
 $$
 \mathbb Z
 \not\cong
@@ -341,7 +341,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 proves part (1), and step <1>7 proves part (2).
+Step [](#s1-3){.pf-ref} proves part (1), and step [](#s1-7){.pf-ref} proves part (2).
 
 :::
 

@@ -28,7 +28,7 @@ Define linear operators $S$ and $T$ on the $xy$-plane ($\RR^2$) as follows: $S$ 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the standard basis, the matrices of $S$ and $T$ are
 $$
@@ -46,7 +46,7 @@ A $90^\circ$ counterclockwise rotation sends $(1,0)$ to $(0,1)$ and $(0,1)$ to $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The two compositions satisfy
 $$
@@ -58,7 +58,7 @@ $$
 
 ::: pf-proof
 
-Because $ST=S\circ T$ and $TS=T\circ S$, step <1>1 gives
+Because $ST=S\circ T$ and $TS=T\circ S$, step [](#s1-1){.pf-ref} gives
 $$
 [ST]=[S][T]
 =\begin{pmatrix}0&-1\\ -1&0\end{pmatrix}
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -84,7 +84,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-The two matrices in step <1>2 are negatives of one another. Equality of standard matrices is equivalent to equality of the corresponding linear operators.
+The two matrices in step [](#s1-2){.pf-ref} are negatives of one another. Equality of standard matrices is equivalent to equality of the corresponding linear operators.
 
 :::
 
@@ -92,7 +92,7 @@ The two matrices in step <1>2 are negatives of one another. Equality of standard
 
 ::: pf-qed
 
-Step <1>3 identifies the true relation.
+Step [](#s1-3){.pf-ref} identifies the true relation.
 
 :::
 

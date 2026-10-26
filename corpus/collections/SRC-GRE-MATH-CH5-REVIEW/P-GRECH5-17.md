@@ -30,7 +30,7 @@ Write $\mathbf x=(x,y,z)^T$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The cross product is
 $$
@@ -63,7 +63,7 @@ which is the displayed vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the matrix of $T$ in the standard basis is
 $$
@@ -88,7 +88,7 @@ cx-az\\
 -bx+ay
 \end{pmatrix},
 $$
-which equals $\mathbf v\times\mathbf x$ by step <1>1 for every $\mathbf x\in\RR^3$. Thus it is the required matrix representative.
+which equals $\mathbf v\times\mathbf x$ by step [](#s1-1){.pf-ref} for every $\mathbf x\in\RR^3$. Thus it is the required matrix representative.
 
 :::
 
@@ -96,7 +96,7 @@ which equals $\mathbf v\times\mathbf x$ by step <1>1 for every $\mathbf x\in\RR^
 
 ::: pf-qed
 
-Step <1>2 gives the required matrix.
+Step [](#s1-2){.pf-ref} gives the required matrix.
 
 :::
 

@@ -26,7 +26,7 @@ If $A\subset\mathbb R$ has finite Lebesgue measure, explain what this says about
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $g\in C_c(\mathbb R)$, then
 \[
@@ -61,7 +61,7 @@ and the right-hand side tends to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Translation preserves the $L^1$ norm:
 \[
@@ -84,7 +84,7 @@ By the translation invariance of Lebesgue measure,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $f\in L^1(\mathbb R)$,
 \[
@@ -100,11 +100,11 @@ choose $g\in C_c(\mathbb R)$ such that
 \[
 \|f-g\|_1<\frac{\varepsilon}{3}.
 \]
-By step <1>1, for all sufficiently small $|t|$,
+By step [](#s1-1){.pf-ref}, for all sufficiently small $|t|$,
 \[
 \|g-g_t\|_1<\frac{\varepsilon}{3}.
 \]
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 \|f_t-g_t\|_1
 =\|(f-g)_t\|_1
@@ -124,7 +124,7 @@ This proves the limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $A\subseteq\mathbb R$ is measurable with finite measure, then
 \[
@@ -148,7 +148,7 @@ Moreover,
 |\chi_A-\chi_{A+t}|
 =\chi_{A\triangle(A+t)}.
 \]
-Hence step <1>3 gives
+Hence step [](#s1-3){.pf-ref} gives
 \[
 m(A\triangle(A+t))
 =\|\chi_A-\chi_{A+t}\|_1
@@ -161,7 +161,7 @@ m(A\triangle(A+t))
 
 ::: pf-qed
 
-Step <1>3 proves the translation-continuity statement, and step <1>4 gives
+Step [](#s1-3){.pf-ref} proves the translation-continuity statement, and step [](#s1-4){.pf-ref} gives
 its consequence for finite-measure sets.
 
 :::

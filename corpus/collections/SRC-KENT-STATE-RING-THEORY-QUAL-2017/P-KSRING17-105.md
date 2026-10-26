@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -78,7 +78,7 @@ is nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ring
 $$
@@ -104,7 +104,7 @@ A polynomial ring over an integral domain is again an integral domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial
 $$
@@ -118,11 +118,11 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \overline f^{\,N}=0.
 $$
-By step <1>2, the polynomial ring is an integral domain and therefore has no nonzero nilpotent elements.
+By step [](#s1-2){.pf-ref}, the polynomial ring is an integral domain and therefore has no nonzero nilpotent elements.
 Hence
 $$
 \overline f=0.
@@ -132,7 +132,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every coefficient
 $$
@@ -151,7 +151,7 @@ The equality
 $$
 \overline f=0
 $$
-from step <1>3 means every coefficient of
+from step [](#s1-3){.pf-ref} means every coefficient of
 $$
 \overline f
 $$
@@ -173,7 +173,7 @@ The prime ideal $\mathfrak p$ was arbitrary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If an element
 $$
@@ -282,7 +282,7 @@ Therefore $a$ is nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Each coefficient
 $$
@@ -293,12 +293,12 @@ of $f$ is nilpotent.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 a_i
 $$
 lies in every prime ideal of $R$.
-Step <1>5 therefore implies that
+Step [](#s1-5){.pf-ref} therefore implies that
 $$
 a_i
 $$
@@ -308,7 +308,7 @@ is nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -320,7 +320,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 applies to each
+Step [](#s1-6){.pf-ref} applies to each
 $$
 i=0,\ldots,n.
 $$
@@ -331,7 +331,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

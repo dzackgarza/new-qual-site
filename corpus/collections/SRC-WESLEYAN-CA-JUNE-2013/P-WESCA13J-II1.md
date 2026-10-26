@@ -27,7 +27,7 @@ For each function, classify the singularity at the indicated point and find the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a),
 $$
@@ -69,14 +69,14 @@ gives the displayed Laurent series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singularity in part (a) is essential.
 
 
 ::: pf-proof
 
-The Laurent expansion from step <1>1 contains infinitely many negative powers
+The Laurent expansion from step [](#s1-1){.pf-ref} contains infinitely many negative powers
 $$
 z^{2-3n},
 \qquad
@@ -92,7 +92,7 @@ is an essential singularity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residue in part (a) is
 $$
@@ -106,7 +106,7 @@ The residue is the coefficient of
 $$
 z^{-1}.
 $$
-In step <1>1 this exponent occurs when
+In step [](#s1-1){.pf-ref} this exponent occurs when
 $$
 2-3n=-1,
 $$
@@ -125,7 +125,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), writing
 $$
@@ -165,7 +165,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The singularity in part (b) is a pole of order
 $$
@@ -179,7 +179,7 @@ $$
 
 ::: pf-proof
 
-The Laurent expansion from step <1>4 has leading term
+The Laurent expansion from step [](#s1-4){.pf-ref} has leading term
 $$
 w^{-2}
 $$
@@ -205,7 +205,7 @@ which is the residue.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For part (c),
 $$
@@ -252,7 +252,7 @@ from the second expression yields the displayed form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -267,7 +267,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 (1-\cos z)^{-3}
 =
@@ -299,7 +299,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -313,7 +313,7 @@ $$
 
 ::: pf-proof
 
-Multiply the expansions from steps <1>6--<1>7:
+Multiply the expansions from steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}:
 $$
 \begin{aligned}
 \frac{\sin(z^3)}{(1-\cos z)^3}
@@ -342,7 +342,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The singularity in part (c) is a pole of order
 $$
@@ -356,7 +356,7 @@ $$
 
 ::: pf-proof
 
-Step <1>8 has leading term
+Step [](#s1-8){.pf-ref} has leading term
 $$
 8z^{-3},
 $$
@@ -380,7 +380,7 @@ which is the residue.
 
 ::: pf-qed
 
-Steps <1>2--<1>3 solve part (a), steps <1>4--<1>5 solve part (b), and steps <1>6--<1>9 solve part (c).
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} solve part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} solve part (b), and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} solve part (c).
 
 :::
 

@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two surfaces intersect above the ellipse
 $$
@@ -61,7 +61,7 @@ Thus $r=1$, hence $q=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The projection of the solid to the $xy$-plane is
 $$
@@ -72,7 +72,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the boundary of the projection is the ellipse
+By step [](#s1-1){.pf-ref}, the boundary of the projection is the ellipse
 $$
 x^2+\frac19y^2=1.
 $$
@@ -88,7 +88,7 @@ Thus the bounded solid projects to the ellipse interior $q\le1$. Solving the ell
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required volume integral is
 $$
@@ -106,7 +106,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Over the region $R$ from step <1>2, the upper surface is
+Over the region $R$ from step [](#s1-2){.pf-ref}, the upper surface is
 $$
 z_{\mathrm{top}}=1-q
 $$
@@ -120,7 +120,7 @@ z_{\mathrm{top}}-z_{\mathrm{bottom}}
 =2-q-\sqrt q
 =2-x^2-\frac19y^2-\sqrt{x^2+\frac19y^2}.
 $$
-Integrating this vertical thickness over the bounds from step <1>2 yields the displayed integral.
+Integrating this vertical thickness over the bounds from step [](#s1-2){.pf-ref} yields the displayed integral.
 
 :::
 
@@ -128,7 +128,7 @@ Integrating this vertical thickness over the bounds from step <1>2 yields the di
 
 ::: pf-qed
 
-Step <1>3 gives the requested double-integral setup and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested double-integral setup and corresponding choice.
 
 :::
 

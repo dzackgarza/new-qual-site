@@ -58,7 +58,7 @@ This is the unnormalized Fourier integral of the chosen Gaussian.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiating under the integral sign gives
 $$
@@ -81,7 +81,7 @@ convergence justifies differentiation under the integral sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 $$
@@ -120,7 +120,7 @@ The boundary term vanishes because of Gaussian decay, leaving $-ipI(p)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -130,7 +130,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2:
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}:
 $$
 I'(p)
 =
@@ -143,7 +143,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The initial value is
 $$
@@ -173,9 +173,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Solving the differential equation from step <1>4 gives
+Solving the differential equation from step [](#s1-4){.pf-ref} gives
 $$
 I(p)
 =
@@ -194,13 +194,13 @@ has solution
 $$
 I(p)=Ce^{-p^2/2}.
 $$
-Step <1>5 gives $C=\sqrt{2\pi}$.
+Step [](#s1-5){.pf-ref} gives $C=\sqrt{2\pi}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -215,13 +215,13 @@ $$
 
 ::: pf-proof
 
-Apply the Fourier normalization from the remark to the value in step <1>6.
+Apply the Fourier normalization from the remark to the value in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -245,7 +245,7 @@ Since
 $$
 f(p)=e^{-p^2/2},
 $$
-step <1>7 is exactly the required eigenfunction relation.
+step [](#s1-7){.pf-ref} is exactly the required eigenfunction relation.
 
 :::
 
@@ -253,7 +253,7 @@ step <1>7 is exactly the required eigenfunction relation.
 
 ::: pf-qed
 
-Step <1>8 supplies the requested function and constant.
+Step [](#s1-8){.pf-ref} supplies the requested function and constant.
 
 :::
 

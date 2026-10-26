@@ -62,7 +62,7 @@ For a typical sequence, $|r-p|\leq\epsilon$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A sequence with $nr$ successes has probability
 \[
@@ -78,7 +78,7 @@ Independence gives one factor $p$ for each success and one factor $q$ for each f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its logarithmic probability satisfies
 \[
@@ -90,7 +90,7 @@ Its logarithmic probability satisfies
 
 ::: pf-proof
 
-Take logarithms in step <1>1 and divide by $-n$. Subtract
+Take logarithms in step [](#s1-1){.pf-ref} and divide by $-n$. Subtract
 \[
 H=-p\log p-q\log q
 \]
@@ -104,7 +104,7 @@ and use $q=1-p$ to obtain
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\omega\in C(n,\epsilon)$, then
 \[
@@ -121,7 +121,7 @@ for the source's
 
 ::: pf-proof
 
-The first inequality follows from step <1>2 and $|r-p|\leq\epsilon$. Since $0<p,q<1$,
+The first inequality follows from step [](#s1-2){.pf-ref} and $|r-p|\leq\epsilon$. Since $0<p,q<1$,
 \[
 \left|\log\frac qp\right|
 \leq|\log q|+|\log p|
@@ -134,7 +134,7 @@ and the definition of $\widetilde\epsilon$ gives the second inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore every typical sequence satisfies
 \[
@@ -147,7 +147,7 @@ e^{-n(H+\widetilde\epsilon)}
 
 ::: pf-proof
 
-Step <1>3 is equivalent to
+Step [](#s1-3){.pf-ref} is equivalent to
 \[
 H-\widetilde\epsilon
 \leq-\frac1n\log p(\omega)
@@ -159,7 +159,7 @@ Multiply by $-n$, reverse the inequalities, and exponentiate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The upper bound on the number $N(C(n,\epsilon))$ of typical sequences is
 \[
@@ -169,7 +169,7 @@ The upper bound on the number $N(C(n,\epsilon))$ of typical sequences is
 
 ::: pf-proof
 
-By the lower probability bound in step <1>4,
+By the lower probability bound in step [](#s1-4){.pf-ref},
 \[
 1\geq P(C(n,\epsilon))
 =\sum_{\omega\in C(n,\epsilon)}p(\omega)
@@ -181,7 +181,7 @@ Rearrange.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The source's unconditional lower bound
 \[
@@ -192,7 +192,7 @@ does not follow from the definition of $C(n,\epsilon)$ and is false for finite $
 
 ::: pf-proof
 
-From the upper probability bound in step <1>4 one only obtains
+From the upper probability bound in step [](#s1-4){.pf-ref} one only obtains
 \[
 P(C(n,\epsilon))
 \leq N(C(n,\epsilon))e^{-n(H-\widetilde\epsilon)},
@@ -208,7 +208,7 @@ The missing factor $P(C(n,\epsilon))$ cannot be replaced by $1$. For example, if
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Nevertheless, for every fixed $\epsilon>0$, the weak law of large numbers gives
 \[
@@ -228,13 +228,13 @@ Since $S_n/n$ is the sample mean of independent Bernoulli variables of mean $p$ 
 P\left(\left|\frac{S_n}n-p\right|>\epsilon\right)
 \leq\frac{pq}{n\epsilon^2}\to0.
 \]
-The cardinality inequality is the rearrangement obtained in step <1>6.
+The cardinality inequality is the rearrangement obtained in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus the rigorous finite-$n$ bounds are
 \[
@@ -248,7 +248,7 @@ with $P(C(n,\epsilon))\to1$ as $n\to\infty$.
 
 ::: pf-proof
 
-Combine steps <1>5 and <1>7. In particular, the typical-set cardinality has exponential scale $e^{nH}$ up to the stated exponential tolerance, while each typical sequence has probability on scale $e^{-nH}$.
+Combine steps [](#s1-5){.pf-ref} and [](#s1-7){.pf-ref}. In particular, the typical-set cardinality has exponential scale $e^{nH}$ up to the stated exponential tolerance, while each typical sequence has probability on scale $e^{-nH}$.
 
 :::
 
@@ -256,7 +256,7 @@ Combine steps <1>5 and <1>7. In particular, the typical-set cardinality has expo
 
 ::: pf-qed
 
-Step <1>4 proves part (a). Steps <1>5--<1>8 give the correct version of part (b) and identify the missing probability factor in the source's finite-$n$ lower bound.
+Step [](#s1-4){.pf-ref} proves part (a). Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the correct version of part (b) and identify the missing probability factor in the source's finite-$n$ lower bound.
 
 :::
 

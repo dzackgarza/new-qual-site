@@ -23,7 +23,7 @@ Two standard pairs answer the two parenthetical versions separately.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The spaces
 \[
@@ -55,7 +55,7 @@ which gives exactly the same groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Nevertheless,
 \[
@@ -77,7 +77,7 @@ and $u^2\ne0$ in $H^4$. In $S^2\vee S^4$, the generator $v\in H^2$ comes from th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For an example with the same homotopy groups, take two distinct lens spaces
 \[
@@ -95,7 +95,7 @@ Both are closed $3$-manifolds obtained as free quotients of $S^3$ by an action o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 These lens spaces have isomorphic homotopy groups in every degree:
 \[
@@ -110,13 +110,13 @@ and, for every $k\geq2$,
 
 ::: pf-proof
 
-The fundamental-group statement is step <1>3. A covering map induces an isomorphism on $\pi_k$ for every $k\geq2$. Apply this to the universal coverings $S^3\to L(5,q)$.
+The fundamental-group statement is step [](#s1-3){.pf-ref}. A covering map induces an isomorphism on $\pi_k$ for every $k\geq2$. Apply this to the universal coverings $S^3\to L(5,q)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 But
 \[
@@ -142,7 +142,7 @@ The nonzero squares modulo $5$ are $1$ and $4=-1$, so the values $\pm a^2$ are o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the requested examples are
 \[
@@ -160,7 +160,7 @@ L(5,1)\text{ and }L(5,2)
 
 ::: pf-proof
 
-Steps <1>1--<1>2 establish the homology example, and steps <1>3--<1>5 establish the homotopy-group example.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} establish the homology example, and steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} establish the homotopy-group example.
 
 :::
 
@@ -168,7 +168,7 @@ Steps <1>1--<1>2 establish the homology example, and steps <1>3--<1>5 establish 
 
 ::: pf-qed
 
-Step <1>6 supplies both requested kinds of examples and proves that their homotopy types differ.
+Step [](#s1-6){.pf-ref} supplies both requested kinds of examples and proves that their homotopy types differ.
 
 :::
 

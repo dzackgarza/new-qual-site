@@ -61,7 +61,7 @@ Choose $n_1$ with $a_{n_1}\in I_1$. Having chosen $n_k$, use the fact that $I_{k
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The subsequence $(a_{n_k})$ is Cauchy.
 
@@ -85,14 +85,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The subsequence $(a_{n_k})$ converges to a point of $[0,1]$.
 
 
 ::: pf-proof
 
-By completeness of $\RR$, the Cauchy sequence from step <1>3 converges to some $a\in\RR$. Since every term lies in the closed interval $[0,1]$, its limit also lies in $[0,1]$.
+By completeness of $\RR$, the Cauchy sequence from step [](#s1-3){.pf-ref} converges to some $a\in\RR$. Since every term lies in the closed interval $[0,1]$, its limit also lies in $[0,1]$.
 
 :::
 
@@ -100,7 +100,7 @@ By completeness of $\RR$, the Cauchy sequence from step <1>3 converges to some $
 
 ::: pf-qed
 
-Step <1>4 constructs a convergent subsequence of the arbitrary original sequence.
+Step [](#s1-4){.pf-ref} constructs a convergent subsequence of the arbitrary original sequence.
 
 :::
 

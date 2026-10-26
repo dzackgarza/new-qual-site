@@ -28,7 +28,7 @@ If $L$ is the line through the point $A=(3,2,1)$ and parallel to the vector $\ma
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The plane contains the two independent direction vectors
 $$
@@ -50,7 +50,7 @@ is another direction vector in the plane. These vectors are independent because 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A normal vector to the plane is
 $$
@@ -60,7 +60,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, a normal vector is obtained from the cross product
+By step [](#s1-1){.pf-ref}, a normal vector is obtained from the cross product
 $$
 \overrightarrow{AB}\times\mathbf{v}
 =(-5,1,0)\times(-2,1,3)
@@ -73,7 +73,7 @@ Thus $\mathbf{n}=(1,5,-1)$ is normal to the plane.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The plane has equation
 $$
@@ -84,7 +84,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Using the normal vector from step <1>2 and the point $A=(3,2,1)$, the plane equation is
+Using the normal vector from step [](#s1-2){.pf-ref} and the point $A=(3,2,1)$, the plane equation is
 $$
 (1,5,-1)\cdot\bigl((x,y,z)-(3,2,1)\bigr)=0.
 $$
@@ -100,7 +100,7 @@ which simplifies to $x+5y-z=12$.
 
 ::: pf-qed
 
-Step <1>3 gives the required plane equation and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the required plane equation and corresponding choice.
 
 :::
 

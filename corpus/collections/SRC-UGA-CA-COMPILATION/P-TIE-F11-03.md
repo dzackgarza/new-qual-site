@@ -42,7 +42,7 @@ The hypothesis is $\abs{q}<m$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On $K$ one has
 $$
@@ -62,14 +62,14 @@ Since $f(z)\ne0$ on $K$, multiplication by $\abs{f(z)}$ gives the asserted inequ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $F(z)=z-a-qf(z)$ has exactly one zero $w$ in $\Delta$, counted with multiplicity; in particular, $w$ is simple and $F'(w)\ne0$.
 
 
 ::: pf-proof
 
-On $K$, step <1>1 gives
+On $K$, step [](#s1-1){.pf-ref} gives
 $$
 \abs{F(z)-(z-a)}
 =
@@ -83,7 +83,7 @@ Rouché's theorem therefore implies that $F$ and $z-a$ have the same number of z
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $G$ as in part (2),
 $$
@@ -97,7 +97,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $G/F$ is meromorphic on $\Delta$ with a single pole, at the simple zero $w$ of $F$. Its residue there is
+By step [](#s1-2){.pf-ref}, $G/F$ is meromorphic on $\Delta$ with a single pole, at the simple zero $w$ of $F$. Its residue there is
 $$
 \operatorname{Res}_{z=w}\frac{G(z)}{F(z)}
 =
@@ -115,7 +115,7 @@ which is the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $z\in K$,
 $$
@@ -138,7 +138,7 @@ for every $z\in K$. Taking reciprocals and multiplying by $\abs{q}$ gives the st
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $z\in K$,
 $$
@@ -161,14 +161,14 @@ $$
 \frac1{z-a}
 \frac1{1-\frac{qf(z)}{z-a}}.
 $$
-By step <1>4, the quantity $qf(z)/(z-a)$ has modulus at most the constant $\abs{q}/m<1$. Hence the geometric series gives
+By step [](#s1-4){.pf-ref}, the quantity $qf(z)/(z-a)$ has modulus at most the constant $\abs{q}/m<1$. Hence the geometric series gives
 $$
 \frac1{1-\frac{qf(z)}{z-a}}
 =
 \sum_{n=0}^{\infty}
 \left(\frac{qf(z)}{z-a}\right)^n.
 $$
-Multiplying by $1/(z-a)$ yields the displayed expansion. The bound in step <1>4 is uniform in $z\in K$, so the geometric series converges uniformly on $K$.
+Multiplying by $1/(z-a)$ yields the displayed expansion. The bound in step [](#s1-4){.pf-ref} is uniform in $z\in K$, so the geometric series converges uniformly on $K$.
 
 :::
 
@@ -176,7 +176,7 @@ Multiplying by $1/(z-a)$ yields the displayed expansion. The bound in step <1>4 
 
 ::: pf-qed
 
-Step <1>2 proves part (1), step <1>3 proves part (2), and step <1>5 proves part (3).
+Step [](#s1-2){.pf-ref} proves part (1), step [](#s1-3){.pf-ref} proves part (2), and step [](#s1-5){.pf-ref} proves part (3).
 
 :::
 

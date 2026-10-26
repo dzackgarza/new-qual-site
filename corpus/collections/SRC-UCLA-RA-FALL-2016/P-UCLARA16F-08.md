@@ -77,7 +77,7 @@ the function is not identically zero. An infinite set of zeros in the compact di
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The denominator
 \[
@@ -105,7 +105,7 @@ r^2-\overline a z\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On the boundary circle \(|z|=r\),
 \[
@@ -136,7 +136,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At \(z=0\),
 \[
@@ -168,7 +168,7 @@ The function \(g\) extends holomorphically to \(|z|<r\) and has no zeros there.
 
 ::: pf-proof
 
-Each \(B_{a_j}\) has exactly one zero at \(a_j\), with the same multiplicity contribution used in the list of zeros. Dividing by the product cancels all zeros of \(f\) in \(|z|<r\). Step <1>3 shows the Blaschke denominators introduce no singularities in the disk. Thus the quotient extends holomorphically and is zero-free.
+Each \(B_{a_j}\) has exactly one zero at \(a_j\), with the same multiplicity contribution used in the list of zeros. Dividing by the product cancels all zeros of \(f\) in \(|z|<r\). Step [](#s1-3){.pf-ref} shows the Blaschke denominators introduce no singularities in the disk. Thus the quotient extends holomorphically and is zero-free.
 
 :::
 
@@ -191,7 +191,7 @@ A zero-free holomorphic function has locally a holomorphic logarithm, whose real
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 By the mean-value property,
 \[
@@ -212,7 +212,7 @@ Apply the harmonic mean-value property to \(\log|g|\) on the disk of radius \(r\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 On \(|z|=r\),
 \[
@@ -222,13 +222,13 @@ On \(|z|=r\),
 
 ::: pf-proof
 
-By step <1>4, every factor \(B_{a_j}\) has modulus \(1\) on the boundary circle.
+By step [](#s1-4){.pf-ref}, every factor \(B_{a_j}\) has modulus \(1\) on the boundary circle.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 At the origin,
 \[
@@ -242,7 +242,7 @@ At the origin,
 
 ::: pf-proof
 
-Using step <1>5,
+Using step [](#s1-5){.pf-ref},
 \[
 \left|
 \prod_{j=1}^{N}B_{a_j}(0)
@@ -257,7 +257,7 @@ Since \(f(0)\ne0\), none of the zeros \(a_j\) equals \(0\). Divide.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -275,7 +275,7 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>8--<1>10 and take logarithms of the product in step <1>10.
+Use steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} and take logarithms of the product in step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -283,7 +283,7 @@ Use steps <1>8--<1>10 and take logarithms of the product in step <1>10.
 
 ::: pf-step
 
-Every term in the sum in step <1>11 is positive.
+Every term in the sum in step [](#s1-11){.pf-ref} is positive.
 
 
 ::: pf-proof
@@ -301,7 +301,7 @@ r/|a_j|>1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -316,13 +316,13 @@ Hence
 
 ::: pf-proof
 
-Drop the nonnegative sum from step <1>11.
+Drop the nonnegative sum from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The set of radii
 \[
@@ -350,13 +350,13 @@ such that \(f\) has no zeros on \(|z|=r_n\).
 
 ::: pf-proof
 
-Avoid the countable set of zero moduli from step <1>14 while choosing \(r_n\to1\).
+Avoid the countable set of zero moduli from step [](#s1-14){.pf-ref} while choosing \(r_n\to1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 For every \(n\),
 \[
@@ -371,13 +371,13 @@ For every \(n\),
 
 ::: pf-proof
 
-Since \(f\) is continuous on the compact circle \(|z|=r_n\) and has no zeros there, its modulus has a positive minimum. Apply part (a), step <1>13.
+Since \(f\) is continuous on the compact circle \(|z|=r_n\) and has no zeros there, its modulus has a positive minimum. Apply part (a), step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Since \(f\) is continuous on the compact closed disk, it is uniformly continuous.
 
@@ -417,7 +417,7 @@ Also
 =
 1-r_n\to0
 \]
-uniformly in \(\theta\). Uniform continuity from step <1>17 therefore gives
+uniformly in \(\theta\). Uniform continuity from step [](#s1-17){.pf-ref} therefore gives
 \[
 \sup_{\theta\in E}
 |f(r_ne^{i\theta})-f(e^{i\theta})|
@@ -455,7 +455,7 @@ the maximum is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 For every \(n\),
 \[
@@ -494,7 +494,7 @@ so the logarithm is at most \(\log M\). Integrate the two bounds over the two me
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Since
 \[
@@ -504,7 +504,7 @@ and
 \[
 \delta_n\to0,
 \]
-the right-hand side in step <1>20 tends to \(-\infty\).
+the right-hand side in step [](#s1-20){.pf-ref} tends to \(-\infty\).
 
 
 ::: pf-proof
@@ -533,20 +533,20 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>20--<1>21.
+Use steps [](#s1-20){.pf-ref} through [](#s1-21){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
-This contradicts the uniform lower bound in step <1>16.
+This contradicts the uniform lower bound in step [](#s1-16){.pf-ref}.
 
 
 ::: pf-proof
 
-Step <1>16 says every average is at least the finite number
+Step [](#s1-16){.pf-ref} says every average is at least the finite number
 \[
 \log|f(0)|.
 \]
@@ -555,7 +555,7 @@ Step <1>16 says every average is at least the finite number
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 Hence
 \[
@@ -565,7 +565,7 @@ Hence
 
 ::: pf-proof
 
-The assumption \(|E|>0\) led to the contradiction in step <1>23.
+The assumption \(|E|>0\) led to the contradiction in step [](#s1-23){.pf-ref}.
 
 :::
 
@@ -573,7 +573,7 @@ The assumption \(|E|>0\) led to the contradiction in step <1>23.
 
 ::: pf-qed
 
-Step <1>13 proves part (a), and step <1>24 proves part (b).
+Step [](#s1-13){.pf-ref} proves part (a), and step [](#s1-24){.pf-ref} proves part (b).
 
 :::
 

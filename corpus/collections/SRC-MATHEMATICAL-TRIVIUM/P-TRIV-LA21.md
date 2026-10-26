@@ -27,7 +27,7 @@ nonzero scalar multiple $cI$ with $c\neq0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For any two $n\times n$ matrices $A$ and $B$,
 $$
@@ -54,7 +54,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every commutator has trace zero:
 $$
@@ -68,7 +68,7 @@ By definition,
 $$
 [A,B]=AB-BA.
 $$
-Therefore, using step <1>1,
+Therefore, using step [](#s1-1){.pf-ref},
 $$
 \operatorname{Tr}[A,B]
 =
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-Take traces and use step <1>2:
+Take traces and use step [](#s1-2){.pf-ref}:
 $$
 0
 =
@@ -109,7 +109,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Over $\mathbb R$, if $n\geq1$, the equality
 $$
@@ -124,13 +124,13 @@ $$
 ::: pf-proof
 
 Since $n$ is a positive integer, it is nonzero in $\mathbb R$. Thus step
-<1>3 implies $c=0$.
+[](#s1-3){.pf-ref} implies $c=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore no commutator of real matrices can be a nonzero scalar
 multiple of the identity:
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-If such an equality held, step <1>4 would force $c=0$, a contradiction.
+If such an equality held, step [](#s1-4){.pf-ref} would force $c=0$, a contradiction.
 
 :::
 
@@ -149,7 +149,7 @@ If such an equality held, step <1>4 would force $c=0$, a contradiction.
 
 ::: pf-qed
 
-Step <1>5 is the corrected intended conclusion.
+Step [](#s1-5){.pf-ref} is the corrected intended conclusion.
 
 :::
 

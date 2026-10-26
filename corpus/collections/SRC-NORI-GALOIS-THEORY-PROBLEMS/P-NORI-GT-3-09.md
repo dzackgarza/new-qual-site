@@ -29,7 +29,7 @@ is monic of degree $4$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose an irreducible monic polynomial $g$ of degree $3$ divides $f$, and let $\alpha$ be a root of $g$ in an algebraic closure of $F$. Then
 $$
@@ -57,9 +57,9 @@ which is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the hypothesis of step <1>1, the field $F(\alpha)$ contains an element $u$ satisfying
+Under the hypothesis of step [](#s1-1){.pf-ref}, the field $F(\alpha)$ contains an element $u$ satisfying
 $$
 u^2=c.
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $P(\alpha)\ne0$. Set
+By step [](#s1-1){.pf-ref}, $P(\alpha)\ne0$. Set
 $$
 u=\frac{Q(\alpha)}{P(\alpha)}\in F(\alpha).
 $$
@@ -81,9 +81,9 @@ and division by $P(\alpha)^2$ gives $u^2=c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-If $c$ is not a square in $F$, step <1>2 is impossible.
+If $c$ is not a square in $F$, step [](#s1-2){.pf-ref} is impossible.
 
 
 ::: pf-proof
@@ -110,7 +110,7 @@ The tower law would force $2$ to divide $3$, a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $c$ is a square in $F$, no irreducible cubic polynomial can divide $f$.
 
@@ -133,7 +133,7 @@ Each factor has degree at most $2$; in fact both have leading term $X^2$ because
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence an irreducible monic divisor $g$ of $f$ with $\deg g\ge3$ must have degree $4$, and therefore
 $$
@@ -143,13 +143,13 @@ $$
 
 ::: pf-proof
 
-Steps <1>3--<1>4 rule out degree $3$. Since $f$ has degree $4$, a divisor of degree at least $3$ can only have degree $4$. If monic degree-$4$ polynomials $g$ and $f$ satisfy $g\mid f$, their quotient is a monic constant, necessarily $1$. Thus $g=f$.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} rule out degree $3$. Since $f$ has degree $4$, a divisor of degree at least $3$ can only have degree $4$. If monic degree-$4$ polynomials $g$ and $f$ satisfy $g\mid f$, their quotient is a monic constant, necessarily $1$. Thus $g=f$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Now suppose $f$ is irreducible, let $\theta$ be a root, and set
 $$
@@ -169,7 +169,7 @@ If $P(\theta)=0$, then $f(\theta)=0$ gives $Q(\theta)=0$. The irreducible polyno
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The element
 $$
@@ -183,20 +183,20 @@ $$
 
 ::: pf-proof
 
-This is the same calculation as in step <1>2, using $f(\theta)=0$ and step <1>6 to divide by $P(\theta)^2$.
+This is the same calculation as in step [](#s1-2){.pf-ref}, using $f(\theta)=0$ and step [](#s1-6){.pf-ref} to divide by $P(\theta)^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The element $c$ is not a square in $F$.
 
 
 ::: pf-proof
 
-If $c=d^2$ for some $d\in F$, then as in step <1>4,
+If $c=d^2$ for some $d\in F$, then as in step [](#s1-4){.pf-ref},
 $$
 f=(Q-dP)(Q+dP)
 $$
@@ -206,7 +206,7 @@ would be a product of two polynomials of degree $2$, contradicting irreducibilit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -216,7 +216,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7, $u$ is a root of $X^2-c$. By step <1>8, this polynomial has no root in $F$, so it is irreducible of degree $2$. Hence
+By step [](#s1-7){.pf-ref}, $u$ is a root of $X^2-c$. By step [](#s1-8){.pf-ref}, this polynomial has no root in $F$, so it is irreducible of degree $2$. Hence
 $$
 [F(u):F]=2.
 $$
@@ -228,7 +228,7 @@ Since $u\in E$, this gives the required quadratic subextension of $E/F$.
 
 ::: pf-qed
 
-Step <1>5 proves the first assertion, and step <1>9 proves that every irreducible quartic of the prescribed form generates an extension containing a quadratic extension of $F$.
+Step [](#s1-5){.pf-ref} proves the first assertion, and step [](#s1-9){.pf-ref} proves that every irreducible quartic of the prescribed form generates an extension containing a quadratic extension of $F$.
 
 :::
 

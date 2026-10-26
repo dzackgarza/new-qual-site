@@ -29,7 +29,7 @@ M=\begin{pmatrix}3&5\\1&-1\end{pmatrix}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial of $M$ is
 \[
@@ -70,7 +70,7 @@ The matrix $M$ is diagonalizable over $\mathbb R$.
 
 ::: pf-proof
 
-Step <1>1 gives two distinct real eigenvalues, $4$ and $-2$.
+Step [](#s1-1){.pf-ref} gives two distinct real eigenvalues, $4$ and $-2$.
 Therefore $M$ has a basis of eigenvectors.
 
 :::
@@ -104,7 +104,7 @@ Applying these polynomials to $M$ gives the two eigenspace projections.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -124,7 +124,7 @@ On the eigenspace for eigenvalue $4$, the exponential acts by multiplication by 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Explicitly,
 \[
@@ -152,7 +152,7 @@ These follow by direct matrix addition and subtraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -174,14 +174,14 @@ e^4+5e^{-2}
 
 ::: pf-proof
 
-Substitute the matrices from step <1>5 into the formula of step <1>4.
+Substitute the matrices from step [](#s1-5){.pf-ref} into the formula of step [](#s1-4){.pf-ref}.
 This answers part 1.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If a real matrix $A$ satisfied
 \[
@@ -207,7 +207,7 @@ The right-hand side is strictly positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 But
 \[
@@ -234,7 +234,7 @@ Direct computation gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore no real $2\times2$ matrix $A$ satisfies
 \[
@@ -244,7 +244,7 @@ Therefore no real $2\times2$ matrix $A$ satisfies
 
 ::: pf-proof
 
-Steps <1>7--<1>8 give a contradiction to the existence of such an $A$.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give a contradiction to the existence of such an $A$.
 Thus the answer to part 2 is
 \[
 \boxed{\text{No}.}
@@ -256,7 +256,7 @@ Thus the answer to part 2 is
 
 ::: pf-qed
 
-Step <1>6 computes $\exp(M)$, and step <1>9 answers the second question.
+Step [](#s1-6){.pf-ref} computes $\exp(M)$, and step [](#s1-9){.pf-ref} answers the second question.
 
 :::
 

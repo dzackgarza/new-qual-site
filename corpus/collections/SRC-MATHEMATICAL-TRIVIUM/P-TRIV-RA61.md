@@ -23,7 +23,7 @@ Assume $a\in\mathbb R$ and $|a|<1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every real $x$,
 $$
@@ -46,7 +46,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $|a|<1$, one has
 $$
@@ -78,7 +78,7 @@ converges absolutely for $|z|<1$. Substitute $z=ae^{\pm ix}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -93,14 +93,14 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the positive real number
+By step [](#s1-1){.pf-ref}, the positive real number
 $$
 1-2a\cos x+a^2
 =
 |1-ae^{ix}|^2
 $$
 is the product of the two conjugate factors. Adding the conjugate logarithm
-series from step <1>2 gives
+series from step [](#s1-2){.pf-ref} gives
 $$
 -\sum_{n=1}^{\infty}
 \frac{a^n}{n}
@@ -112,9 +112,9 @@ which is the displayed cosine series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The series in step <1>3 converges uniformly in $x\in[0,\pi]$.
+The series in step [](#s1-3){.pf-ref} converges uniformly in $x\in[0,\pi]$.
 
 
 ::: pf-proof
@@ -137,7 +137,7 @@ converges, so the Weierstrass $M$-test applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence termwise integration gives
 $$
@@ -154,13 +154,13 @@ $$
 
 ::: pf-proof
 
-Uniform convergence from step <1>4 justifies exchanging the sum and integral.
+Uniform convergence from step [](#s1-4){.pf-ref} justifies exchanging the sum and integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every integer $n\geq1$,
 $$
@@ -184,7 +184,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -199,7 +199,7 @@ $$
 
 ::: pf-proof
 
-Every term on the right-hand side of step <1>5 vanishes by step <1>6.
+Every term on the right-hand side of step [](#s1-5){.pf-ref} vanishes by step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -207,7 +207,7 @@ Every term on the right-hand side of step <1>5 vanishes by step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required identity.
+Step [](#s1-7){.pf-ref} is the required identity.
 
 :::
 

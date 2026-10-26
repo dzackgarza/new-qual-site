@@ -23,7 +23,7 @@ Let $f:\mathbb R\to\mathbb R$ be nondecreasing.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in\mathbb R$, the one-sided limits
 \[
@@ -55,7 +55,7 @@ Monotonicity gives the displayed inequalities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is continuous at $x$ if and only if
 \[
@@ -90,7 +90,7 @@ Thus $f$ is continuous at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $f$ is discontinuous at $x$, then
 \[
@@ -100,17 +100,17 @@ f(x^-)<f(x^+).
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 f(x^-)\le f(x)\le f(x^+).
 \]
-If the endpoints were equal, then all three quantities would be equal, and step <1>2 would imply continuity. Hence discontinuity forces strict inequality.
+If the endpoints were equal, then all three quantities would be equal, and step [](#s1-2){.pf-ref} would imply continuity. Hence discontinuity forces strict inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $x<y$, then the open intervals
 \[
@@ -138,14 +138,14 @@ Thus the first open interval lies entirely to the left of the second.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set of discontinuities of $f$ is countable.
 
 
 ::: pf-proof
 
-For every discontinuity point $x$, step <1>3 gives a nonempty open interval
+For every discontinuity point $x$, step [](#s1-3){.pf-ref} gives a nonempty open interval
 \[
 I_x=(f(x^-),f(x^+)).
 \]
@@ -153,7 +153,7 @@ Choose a rational number
 \[
 q_x\in I_x.
 \]
-By step <1>4, the intervals $I_x$ for distinct discontinuity points are disjoint, so the chosen rationals $q_x$ are distinct.
+By step [](#s1-4){.pf-ref}, the intervals $I_x$ for distinct discontinuity points are disjoint, so the chosen rationals $q_x$ are distinct.
 Thus the map
 \[
 x\longmapsto q_x
@@ -165,7 +165,7 @@ Since $\mathbb Q$ is countable, so is the discontinuity set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For part (b), enumerate the countable set $S$ without repetition as
 \[
@@ -197,9 +197,9 @@ the series defining $f(x)$ converges absolutely and uniformly by the Weierstrass
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The function $f$ from step <1>6 is nondecreasing.
+The function $f$ from step [](#s1-6){.pf-ref} is nondecreasing.
 
 
 ::: pf-proof
@@ -219,7 +219,7 @@ f(x)\le f(y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ is discontinuous at every point $s_k\in S$.
 
@@ -241,7 +241,7 @@ Hence $f$ is discontinuous at $s_k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function $f$ is continuous at every
 \[
@@ -293,14 +293,14 @@ Thus $f$ is continuous at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The discontinuity set of $f$ is exactly $S$.
 
 
 ::: pf-proof
 
-Step <1>8 shows every point of $S$ is a discontinuity, while step <1>9 shows every point outside $S$ is a continuity point.
+Step [](#s1-8){.pf-ref} shows every point of $S$ is a discontinuity, while step [](#s1-9){.pf-ref} shows every point outside $S$ is a continuity point.
 
 :::
 
@@ -308,7 +308,7 @@ Step <1>8 shows every point of $S$ is a discontinuity, while step <1>9 shows eve
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and steps <1>6--<1>10 prove part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and steps [](#s1-6){.pf-ref} through [](#s1-10){.pf-ref} prove part (b).
 
 :::
 

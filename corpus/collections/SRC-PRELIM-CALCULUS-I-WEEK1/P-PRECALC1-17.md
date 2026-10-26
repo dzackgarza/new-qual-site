@@ -36,7 +36,7 @@ so
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One necessarily has
 \[
@@ -63,7 +63,7 @@ f^2\sim g^2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Whenever the real square roots are defined eventually, one necessarily
 has
@@ -93,7 +93,7 @@ and the square-root function is continuous at \(1\), the ratio tends to \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One necessarily has
 \[
@@ -121,7 +121,7 @@ f+g\sim2g}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One necessarily has
 \[
@@ -149,7 +149,7 @@ the ratio is nonzero for all sufficiently large \(x\). Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -168,7 +168,7 @@ These are continuous real-valued functions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For this pair,
 \[
@@ -192,7 +192,7 @@ f\sim g}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 But
 \[
@@ -206,7 +206,7 @@ e.
 
 ::: pf-proof
 
-For the functions in step <1>5,
+For the functions in step [](#s1-5){.pf-ref},
 \[
 f(x)-g(x)
 =
@@ -219,7 +219,7 @@ x-(x-1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -230,7 +230,7 @@ e^f\not\sim e^g}.
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 \lim_{x\to\infty}
 \frac{e^{f(x)}}{e^{g(x)}}
@@ -242,7 +242,7 @@ e\ne1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence the statement that does not necessarily follow is
 \[
@@ -252,7 +252,7 @@ Hence the statement that does not necessarily follow is
 
 ::: pf-proof
 
-Steps <1>1--<1>4 verify the other alternatives, while steps <1>5--<1>8
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} verify the other alternatives, while steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref}
 give a counterexample to (c).
 
 :::
@@ -261,7 +261,7 @@ give a counterexample to (c).
 
 ::: pf-qed
 
-Step <1>9 gives the required choice.
+Step [](#s1-9){.pf-ref} gives the required choice.
 
 :::
 

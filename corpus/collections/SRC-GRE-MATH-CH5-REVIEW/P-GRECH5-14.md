@@ -28,7 +28,7 @@ The linear transformation $T\colon \RR^2 \to \RR^2$ that maps $(1, 2)$ to $(-1, 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vector $(1,1)$ decomposes as
 $$
@@ -44,7 +44,7 @@ Adding the two vectors on the right gives $(1+0,2-1)=(1,1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -55,7 +55,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By linearity and step <1>1,
+By linearity and step [](#s1-1){.pf-ref},
 $$
 T(1,1)=T(1,2)+T(0,-1)=(-1,1)+(2,-1)=(1,0).
 $$
@@ -66,7 +66,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested image.
+Step [](#s1-2){.pf-ref} gives the requested image.
 
 :::
 

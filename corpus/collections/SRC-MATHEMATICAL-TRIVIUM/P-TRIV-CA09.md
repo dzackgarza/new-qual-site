@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $\Phi$ is analytic on the unit disk.
 
@@ -42,7 +42,7 @@ not inside it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $|z|<1$,
 $$
@@ -75,7 +75,7 @@ formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The image of the unit disk under $\Phi$ lies in the left half-plane.
 
@@ -86,7 +86,7 @@ If $|z|<1$, then
 $$
 1-|z|^2>0.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \operatorname{Re}\Phi(z)<0.
 $$
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Solving $w=\Phi(z)$ for $z$ gives
 $$
@@ -127,7 +127,7 @@ which is equivalent to the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -162,7 +162,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is onto the left half-plane.
 
@@ -177,7 +177,7 @@ Define
 $$
 z=\frac{1+w}{w-1}.
 $$
-By step <1>5, $|z|<1$. Step <1>4 shows that
+By step [](#s1-5){.pf-ref}, $|z|<1$. Step [](#s1-4){.pf-ref} shows that
 $$
 \Phi(z)=w.
 $$
@@ -187,7 +187,7 @@ Thus every point of the left half-plane has a preimage in the unit disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -202,8 +202,8 @@ is an analytic map from the unit disk onto the left half-plane.
 
 ::: pf-proof
 
-Step <1>1 gives analyticity, step <1>3 gives containment of the image, and
-step <1>6 gives surjectivity.
+Step [](#s1-1){.pf-ref} gives analyticity, step [](#s1-3){.pf-ref} gives containment of the image, and
+step [](#s1-6){.pf-ref} gives surjectivity.
 
 :::
 
@@ -211,7 +211,7 @@ step <1>6 gives surjectivity.
 
 ::: pf-qed
 
-Step <1>7 is the requested map and verification.
+Step [](#s1-7){.pf-ref} is the requested map and verification.
 
 :::
 

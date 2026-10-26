@@ -26,7 +26,7 @@ v=v_1+v_2,\qquad f(v)=f(v_1),\qquad g(v)=g(v_2).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The restriction of $g$ to $\ker f$ is not the zero functional.
 
@@ -98,7 +98,7 @@ contradicting linear independence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose
 \[
@@ -112,13 +112,13 @@ g(w)\ne0.
 
 ::: pf-proof
 
-Such a vector exists by step <1>1.
+Such a vector exists by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Given
 \[
@@ -138,13 +138,13 @@ v_1=v-v_2.
 
 ::: pf-proof
 
-The denominator is nonzero by step <1>2, so the definitions make sense.
+The denominator is nonzero by step [](#s1-2){.pf-ref}, so the definitions make sense.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -167,7 +167,7 @@ g(v).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -181,7 +181,7 @@ Since
 \[
 w\in\ker f,
 \]
-step <1>3 gives
+step [](#s1-3){.pf-ref} gives
 \[
 f(v_2)
 =
@@ -203,22 +203,22 @@ f(v).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The vectors $v_1,v_2$ satisfy all three required identities.
 
 
 ::: pf-proof
 
-By definition in step <1>3,
+By definition in step [](#s1-3){.pf-ref},
 \[
 v=v_1+v_2.
 \]
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 f(v)=f(v_1),
 \]
-and step <1>4 gives
+and step [](#s1-4){.pf-ref} gives
 \[
 g(v)=g(v_2).
 \]
@@ -229,7 +229,7 @@ g(v)=g(v_2).
 
 ::: pf-qed
 
-Step <1>6 gives the required decomposition for arbitrary $v$.
+Step [](#s1-6){.pf-ref} gives the required decomposition for arbitrary $v$.
 
 :::
 

@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integer
 $$
@@ -74,7 +74,7 @@ has order
 $$
 p-1.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 3\mid\abs{\FF_p^\times}.
 $$
@@ -127,7 +127,7 @@ has degree $3$, so it has at most three roots in the field $\FF_p$. Hence these 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The elements
 $$
@@ -167,7 +167,7 @@ The three negatives remain distinct.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -185,7 +185,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, the monic cubic
+By step [](#s1-4){.pf-ref}, the monic cubic
 $$
 x^3+1
 $$
@@ -201,7 +201,7 @@ A monic degree-$3$ polynomial is therefore the product of the corresponding moni
 
 ::: pf-qed
 
-Step <1>5 shows that $x^3+1$ splits completely over $\FF_p$.
+Step [](#s1-5){.pf-ref} shows that $x^3+1$ splits completely over $\FF_p$.
 
 :::
 

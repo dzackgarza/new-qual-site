@@ -28,7 +28,7 @@ A vertical fence is constructed whose base is the curve $y=x\sqrt{x}$, from $(0,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A parametrization of the base curve is
 $$
@@ -54,7 +54,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The arc-length element of the base curve is
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 $$
 \frac{dx}{dt}=2t,\qquad
 \frac{dy}{dt}=3t^2.
@@ -82,7 +82,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The fence area is
 $$
@@ -97,7 +97,7 @@ The area of a vertical fence of height $H$ over a base curve $C$ is
 $$
 \int_C H\,ds.
 $$
-Using steps <1>1 and <1>2,
+Using steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
 $$
 A
 =27\int_0^1 t\sqrt{4+9t^2}\,dt.
@@ -118,7 +118,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested area and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
 
 :::
 

@@ -55,7 +55,7 @@ A=T-\lambda I.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The chain
 \[
@@ -95,7 +95,7 @@ Repeating this argument shows equality of all later kernels. Since a strictly in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\lambda\in\mathbb C$,
 \[
@@ -111,7 +111,7 @@ V(\lambda)
 =
 \bigcup_{N\ge1}\ker A^N.
 \]
-Step <1>1 shows that every kernel in this union is contained in
+Step [](#s1-1){.pf-ref} shows that every kernel in this union is contained in
 \[
 \ker A^n
 \]
@@ -121,7 +121,7 @@ and every later kernel equals it. Hence the union is exactly $\ker A^n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $\lambda\ne\mu$ and
 \[
@@ -143,7 +143,7 @@ This is exactly the definition of membership in the two generalized eigenspaces.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exist polynomials $a(X),b(X)\in\mathbb C[X]$ such that
 \[
@@ -165,7 +165,7 @@ have no common root and are therefore coprime. Bézout's identity in the princip
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -175,7 +175,7 @@ v=0.
 
 ::: pf-proof
 
-Evaluate the Bézout identity from step <1>4 at the operator $T$ and apply it to $v$:
+Evaluate the Bézout identity from step [](#s1-4){.pf-ref} at the operator $T$ and apply it to $v$:
 \[
 \begin{aligned}
 v
@@ -187,13 +187,13 @@ b(T)(T-\mu I)^sv\\
 =0,
 \end{aligned}
 \]
-using step <1>3.
+using step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\lambda\ne\mu$, then
 \[
@@ -203,7 +203,7 @@ If $\lambda\ne\mu$, then
 
 ::: pf-proof
 
-Every vector in the intersection is zero by step <1>5.
+Every vector in the intersection is zero by step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -211,7 +211,7 @@ Every vector in the intersection is zero by step <1>5.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), with the uniform choice $M=n$, and step <1>6 proves part (b) for the corrected complexified statement.
+Step [](#s1-2){.pf-ref} proves part (a), with the uniform choice $M=n$, and step [](#s1-6){.pf-ref} proves part (b) for the corrected complexified statement.
 
 :::
 

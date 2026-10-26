@@ -27,7 +27,7 @@ Let $A$ be the set of all ordered pairs of integers $(m, n)$ such that $7m + 12n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every integer solution satisfies
 $$
@@ -52,7 +52,7 @@ $n\equiv3\pmod7$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 All integer solutions are
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, write $n=3+7k$. Substitution gives
+By step [](#s1-1){.pf-ref}, write $n=3+7k$. Substitution gives
 $$
 7m+12(3+7k)=22,
 $$
@@ -86,7 +86,7 @@ $$
 
 ::: pf-proof
 
-For the solutions in step <1>2,
+For the solutions in step [](#s1-2){.pf-ref},
 $$
 m+n=(-2-12k)+(3+7k)=1-5k.
 $$
@@ -97,7 +97,7 @@ $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The greatest negative element of $B$ is
 $$
@@ -117,7 +117,7 @@ largest when $k=1$, yielding $1-5=-4$.
 
 ::: pf-qed
 
-Step <1>4 gives the requested greatest negative value.
+Step [](#s1-4){.pf-ref} gives the requested greatest negative value.
 
 :::
 

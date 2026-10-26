@@ -38,7 +38,7 @@ find $B^{-1}$ by row reduction.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The four middle columns of $A$ are linearly independent.
 
@@ -63,7 +63,7 @@ fifth gives $a_4=0$. Hence the four columns are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The rank of $A$ is $4$, its nullity is $2$, and
 \[
@@ -73,7 +73,7 @@ The rank of $A$ is $4$, its nullity is $2$, and
 
 ::: pf-proof
 
-The first and sixth columns are zero, while step <1>1 shows that columns
+The first and sixth columns are zero, while step [](#s1-1){.pf-ref} shows that columns
 $2,3,4,5$ are independent. Thus $\operatorname{rank}A=4$. By
 rank-nullity,
 \[
@@ -86,7 +86,7 @@ basis of the two-dimensional kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A basis for $\operatorname{im}A$ is
 \[
@@ -97,14 +97,14 @@ A basis for $\operatorname{im}A$ is
 ::: pf-proof
 
 The image is the column space of $A$. The only nonzero columns are
-$c_2,c_3,c_4,c_5$, and step <1>1 shows that they are linearly
+$c_2,c_3,c_4,c_5$, and step [](#s1-1){.pf-ref} shows that they are linearly
 independent. Hence they form a basis of the image.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Row reduction of $[B\mid I_3]$ gives
 \[
@@ -151,7 +151,7 @@ Swapping $R_2$ and $R_3$ gives the displayed reduced augmented matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -173,7 +173,7 @@ B^{-1}=
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 give parts (a) and (b). In step <1>4, the left block
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give parts (a) and (b). In step [](#s1-4){.pf-ref}, the left block
 is $I_3$, so the right block is $B^{-1}$, giving part (c).
 
 :::
@@ -182,7 +182,7 @@ is $I_3$, so the right block is $B^{-1}$, giving part (c).
 
 ::: pf-qed
 
-Step <1>5 records all requested quantities.
+Step [](#s1-5){.pf-ref} records all requested quantities.
 
 :::
 

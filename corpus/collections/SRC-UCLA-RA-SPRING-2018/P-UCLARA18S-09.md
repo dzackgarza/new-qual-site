@@ -42,7 +42,7 @@ a_n=\log\left(1+\frac1n\right).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -92,7 +92,7 @@ The integrand is nonnegative and at most \(t\), so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix \(R>0\). There is a constant \(C_R\) such that for every
 \[
@@ -125,7 +125,7 @@ Using
 \le
 \frac12|w|^2e^{|w|},
 \]
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 \[
 \begin{aligned}
 \left|
@@ -175,7 +175,7 @@ The first term is \(O_R(n^{-2})\), and the second is also
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every compact set \(K\subset\mathbb C\),
 \[
@@ -192,7 +192,7 @@ Choose \(R\) with
 \[
 K\subseteq\{z:|z|\le R\}.
 \]
-Step <1>2 bounds the tail by a constant multiple of
+Step [](#s1-2){.pf-ref} bounds the tail by a constant multiple of
 \[
 \sum_{n=1}^{\infty}\frac1{n^2},
 \]
@@ -202,7 +202,7 @@ and the finitely many initial terms cause no problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The partial products
 \[
@@ -219,7 +219,7 @@ Fix a compact \(K\). Put
 \[
 u_n(z)=q_n(z)-1.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \sum_n\|u_n\|_{K,\infty}<\infty.
 \]
@@ -254,7 +254,7 @@ Hence \((P_N)\) is uniformly Cauchy on \(K\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The locally uniform limit
 \[
@@ -271,14 +271,14 @@ is entire on \(\mathbb C\).
 ::: pf-proof
 
 Each finite product \(P_N\) is entire because every \(q_n\) is entire.
-Step <1>4 gives locally uniform convergence on \(\mathbb C\). By the
+Step [](#s1-4){.pf-ref} gives locally uniform convergence on \(\mathbb C\). By the
 Weierstrass theorem, the locally uniform limit \(P\) is entire.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Fix \(z<0\). Then every factor \(q_n(z)\) is positive.
 
@@ -299,7 +299,7 @@ Thus their product is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For each fixed \(z<0\), the infinite product converges to a strictly
 positive finite number.
@@ -307,7 +307,7 @@ positive finite number.
 
 ::: pf-proof
 
-Step <1>2, applied to the compact singleton \(\{z\}\), gives
+Step [](#s1-2){.pf-ref}, applied to the compact singleton \(\{z\}\), gives
 \[
 \sum_{n=1}^{\infty}|q_n(z)-1|<\infty.
 \]
@@ -315,7 +315,7 @@ Hence \(q_n(z)\to1\). For all sufficiently large \(n\),
 \[
 |q_n(z)-1|\le\frac12.
 \]
-Since the factors are positive by step <1>6, the real logarithm is defined,
+Since the factors are positive by step [](#s1-6){.pf-ref}, the real logarithm is defined,
 and
 \[
 |\log q_n(z)|
@@ -340,23 +340,23 @@ converges to a positive finite number.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (a) holds for every \(z\in(-\infty,0)\).
 
 
 ::: pf-proof
 
-This is exactly step <1>7.
+This is exactly step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function obtained in part (a) extends to the entire function \(P\)
-from step <1>5.
+from step [](#s1-5){.pf-ref}.
 
 
 ::: pf-proof
@@ -375,7 +375,7 @@ convergent product from part (a).
 
 ::: pf-qed
 
-Step <1>8 proves part (a), and steps <1>5 and <1>9 prove part (b).
+Step [](#s1-8){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} prove part (b).
 
 :::
 

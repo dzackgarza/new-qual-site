@@ -34,7 +34,7 @@ such that $f(0) = 1$, $f'(0) = 0$, and $f''(0) = a^2$. How many positive values 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The general real solution of the differential equation is
 $$
@@ -55,7 +55,7 @@ Its roots are $a,ia,-ia$, so the displayed expression is the general real soluti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The initial conditions give
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 $$
 y(0)=c_1+c_2=1.
 $$
@@ -97,7 +97,7 @@ whose solution is the displayed triple.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus
 $$
@@ -107,13 +107,13 @@ $$
 
 ::: pf-proof
 
-Substitute the constants from step <1>2 into the general solution in step <1>1.
+Substitute the constants from step [](#s1-2){.pf-ref} into the general solution in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There are
 $$
@@ -124,7 +124,7 @@ positive values of $x$ satisfying $f(x)=0$, so the answer is (A).
 
 ::: pf-proof
 
-If $x>0$, then $a>0$ implies $e^{ax}>1$. On the other hand, $\sin(ax)\le1$. Hence step <1>3 gives
+If $x>0$, then $a>0$ implies $e^{ax}>1$. On the other hand, $\sin(ax)\le1$. Hence step [](#s1-3){.pf-ref} gives
 $$
 f(x)=e^{ax}-\sin(ax)>0
 $$
@@ -136,7 +136,7 @@ for every positive $x$.
 
 ::: pf-qed
 
-Step <1>4 gives the requested number of positive zeros and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested number of positive zeros and corresponding choice.
 
 :::
 

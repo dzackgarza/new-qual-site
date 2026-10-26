@@ -61,7 +61,7 @@ with respect to $\varepsilon$ at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Integrating the second term by parts gives
 $$
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $f$ is already an extremum for fixed boundary values, it satisfies
 the Euler--Lagrange equation
@@ -111,14 +111,14 @@ For fixed endpoint values, admissible variations satisfy
 $$
 \eta(a)=\eta(b)=0,
 $$
-so the boundary term in step <1>2 vanishes. Stationarity for arbitrary
+so the boundary term in step [](#s1-2){.pf-ref} vanishes. Stationarity for arbitrary
 interior variations then gives the Euler--Lagrange equation.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If the endpoint values are allowed to vary freely, then
 $$
@@ -140,7 +140,7 @@ values at each endpoint independently.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the Euler--Lagrange equation, the first variation reduces to
 $$
@@ -154,13 +154,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2.
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore stationarity for all free-boundary variations requires
 $$
@@ -174,15 +174,15 @@ $$
 
 ::: pf-proof
 
-By step <1>4, the two endpoint values of $\eta$ are arbitrary and independent.
-The linear expression in step <1>5 can vanish for all choices only if both
+By step [](#s1-4){.pf-ref}, the two endpoint values of $\eta$ are arbitrary and independent.
+The linear expression in step [](#s1-5){.pf-ref} can vanish for all choices only if both
 coefficients vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Equivalently, the additional natural boundary condition is
 $$
@@ -196,7 +196,7 @@ $$
 ::: pf-proof
 
 For the interval $D=[a,b]$, the boundary consists exactly of the two endpoints.
-Step <1>6 gives the condition at both.
+Step [](#s1-6){.pf-ref} gives the condition at both.
 
 :::
 
@@ -204,7 +204,7 @@ Step <1>6 gives the condition at both.
 
 ::: pf-qed
 
-Step <1>7 is the required additional condition.
+Step [](#s1-7){.pf-ref} is the required additional condition.
 
 :::
 

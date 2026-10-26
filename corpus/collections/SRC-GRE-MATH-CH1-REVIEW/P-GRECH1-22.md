@@ -28,7 +28,7 @@ Which one of the following is in the domain of the function $f(x) = \log(\sin x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A real number $t$ lies in the domain of $f$ exactly when $\sin t>0$.
 
@@ -41,7 +41,7 @@ The real logarithm $\log u$ is defined exactly for $u>0$. Therefore $\log(\sin t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The four candidates lie in the intervals
 $$
@@ -75,20 +75,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Among the listed numbers, only $11111$ has positive sine.
 
 
 ::: pf-proof
 
-Sine is negative on $(m\pi,(m+1)\pi)$ when $m$ is odd and positive there when $m$ is even. In step <1>2, the first three left endpoints have odd indices $3$, $35$, and $353$, while the last has even index $3536$. Hence the first three sines are negative and $\sin(11111)>0$.
+Sine is negative on $(m\pi,(m+1)\pi)$ when $m$ is odd and positive there when $m$ is even. In step [](#s1-2){.pf-ref}, the first three left endpoints have odd indices $3$, $35$, and $353$, while the last has even index $3536$. Hence the first three sines are negative and $\sin(11111)>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The answer is
 $$
@@ -99,7 +99,7 @@ namely choice (D).
 
 ::: pf-proof
 
-Combine step <1>1 with step <1>3.
+Combine step [](#s1-1){.pf-ref} with step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -107,7 +107,7 @@ Combine step <1>1 with step <1>3.
 
 ::: pf-qed
 
-Step <1>4 identifies the unique listed input in the domain of $f$.
+Step [](#s1-4){.pf-ref} identifies the unique listed input in the domain of $f$.
 
 :::
 

@@ -23,7 +23,7 @@ Define a *simple group*. Prove that a group of order 56 can not be simple.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A group $G$ is simple if $G\neq1$ and the only normal subgroups of $G$ are $1$ and $G$.
 
@@ -36,7 +36,7 @@ This is the definition of a simple group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If a group $G$ has order $56$, then either it has a normal Sylow $7$-subgroup or it has exactly eight Sylow $7$-subgroups.
 
@@ -49,7 +49,7 @@ Since $56=2^3\cdot7$, Sylow's theorems imply $n_7\mid8$ and $n_7\equiv1\pmod7$. 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $n_7=8$, the Sylow $2$-subgroup of $G$ is unique and normal.
 
@@ -62,14 +62,14 @@ Distinct groups of prime order seven intersect in the identity. Consequently the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No group of order $56$ is simple.
 
 
 ::: pf-proof
 
-By step <1>2 either $G$ has a normal subgroup of order seven, or by step <1>3 it has a normal subgroup of order eight. In both cases this is a nontrivial proper normal subgroup, contradicting simplicity as defined in step <1>1.
+By step [](#s1-2){.pf-ref} either $G$ has a normal subgroup of order seven, or by step [](#s1-3){.pf-ref} it has a normal subgroup of order eight. In both cases this is a nontrivial proper normal subgroup, contradicting simplicity as defined in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -77,7 +77,7 @@ By step <1>2 either $G$ has a normal subgroup of order seven, or by step <1>3 it
 
 ::: pf-qed
 
-Steps <1>1 and <1>4 answer the two requests.
+Steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref} answer the two requests.
 
 :::
 

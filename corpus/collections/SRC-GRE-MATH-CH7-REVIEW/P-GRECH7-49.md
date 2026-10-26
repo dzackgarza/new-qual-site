@@ -40,7 +40,7 @@ Which of the following correctly represents the algorithm described above?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $a_{n-1}$ is even, then the next value is
 $$
@@ -56,7 +56,7 @@ When the current value satisfies $a\bmod 2=0$, the `if` branch replaces $a$ by $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a_{n-1}$ is odd, then the next value is
 $$
@@ -72,7 +72,7 @@ When $a_{n-1}$ is odd, the condition $a\bmod 2=0$ is false, so the `else` branch
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the recurrence is
 $$
@@ -88,7 +88,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Step <1>1 gives the even case and step <1>2 gives the odd case. Both branches test the parity of the current value $a_{n-1}$ before assigning the next value $a_n$.
+Step [](#s1-1){.pf-ref} gives the even case and step [](#s1-2){.pf-ref} gives the odd case. Both branches test the parity of the current value $a_{n-1}$ before assigning the next value $a_n$.
 
 :::
 
@@ -96,7 +96,7 @@ Step <1>1 gives the even case and step <1>2 gives the odd case. Both branches te
 
 ::: pf-qed
 
-Step <1>3 is exactly the recurrence implemented by the algorithm.
+Step [](#s1-3){.pf-ref} is exactly the recurrence implemented by the algorithm.
 
 :::
 

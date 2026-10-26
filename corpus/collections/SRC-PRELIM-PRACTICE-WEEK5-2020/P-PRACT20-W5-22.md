@@ -22,7 +22,7 @@ Put $(1 + i)^{10}$ in the form $a + bi$ for $a, b \in \RR$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -43,7 +43,7 @@ Expanding gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -53,7 +53,7 @@ Therefore
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 (1+i)^{10}
 =\bigl((1+i)^2\bigr)^5
@@ -70,7 +70,7 @@ the value is $32i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In the requested form,
 \[
@@ -80,7 +80,7 @@ In the requested form,
 
 ::: pf-proof
 
-Step <1>2 gives real part $0$ and imaginary coefficient $32$.
+Step [](#s1-2){.pf-ref} gives real part $0$ and imaginary coefficient $32$.
 
 :::
 
@@ -88,7 +88,7 @@ Step <1>2 gives real part $0$ and imaginary coefficient $32$.
 
 ::: pf-qed
 
-Step <1>3 is the requested expression.
+Step [](#s1-3){.pf-ref} is the requested expression.
 
 :::
 

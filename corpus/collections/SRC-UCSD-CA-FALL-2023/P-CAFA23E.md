@@ -19,7 +19,7 @@ Prove that $f$ is analytic on $\mathbb{C}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 It is enough to prove that
 $$
@@ -39,7 +39,7 @@ vanishes. Thus the displayed assertion implies that $f$ is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix a triangle $T$. For $\varepsilon>0$, put
 $$
@@ -64,9 +64,9 @@ vanishing integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-As $\varepsilon\downarrow0$, the boundary integral in step <1>2
+As $\varepsilon\downarrow0$, the boundary integral in step [](#s1-2){.pf-ref}
 converges to the integral over the portion of $\partial T$ in the closed
 upper half-plane together with the real-axis cut, oriented as the boundary
 of $T\cap\{\Im z\ge0\}$.
@@ -84,14 +84,14 @@ All these segments remain in one fixed compact neighborhood of $T$.
 Continuity of $f$ therefore implies uniform continuity and boundedness on
 that compact set. Consequently the line integrals along the moving segments
 converge to the line integrals along the limiting segments. Taking the limit
-in the equality from step <1>2 gives the asserted upper-half-plane boundary
+in the equality from step [](#s1-2){.pf-ref} gives the asserted upper-half-plane boundary
 integral equal to zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The analogous integral for the lower half-plane also vanishes.
 
@@ -107,7 +107,7 @@ where $f$ is holomorphic. Cauchy's theorem gives
 $$
 \int_{\partial T^-_\varepsilon}f(z)\,dz=0.
 $$
-The same compactness and continuity argument as in step <1>3 allows
+The same compactness and continuity argument as in step [](#s1-3){.pf-ref} allows
 $\varepsilon\downarrow0$, yielding zero for the boundary integral of
 $T\cap\{\Im z\le0\}$.
 
@@ -115,7 +115,7 @@ $T\cap\{\Im z\le0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -125,7 +125,7 @@ $$
 
 ::: pf-proof
 
-Add the two limiting boundary integrals from steps <1>3 and <1>4. Every
+Add the two limiting boundary integrals from steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}. Every
 segment lying on the real axis occurs twice with opposite orientations, so
 those contributions cancel. The remaining oriented segments are exactly
 the boundary of $T$. Therefore their sum is
@@ -142,14 +142,14 @@ axis, the limiting-segment argument above already includes that case.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $f$ is entire.
 
 
 ::: pf-proof
 
-Step <1>5 proves the triangular integral condition required in step <1>1.
+Step [](#s1-5){.pf-ref} proves the triangular integral condition required in step [](#s1-1){.pf-ref}.
 Morera's theorem therefore implies that $f$ is holomorphic on all of
 $\CC$.
 
@@ -159,7 +159,7 @@ $\CC$.
 
 ::: pf-qed
 
-Step <1>6 is exactly the desired conclusion.
+Step [](#s1-6){.pf-ref} is exactly the desired conclusion.
 
 :::
 

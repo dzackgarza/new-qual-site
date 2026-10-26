@@ -64,7 +64,7 @@ are continuous real-valued functions on $[0,1]$, because sums and products of co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With these operations, $R$ is a commutative ring with identity.
 
@@ -102,7 +102,7 @@ Thus $R$ is a commutative ring with identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -145,7 +145,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -188,7 +188,7 @@ Thus $f$ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the units of $R$ are exactly the nowhere-zero functions:
 $$
@@ -202,13 +202,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -249,14 +249,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every idempotent in $R$ is either $0_R$ or $1_R$.
 
 
 ::: pf-proof
 
-By step <1>6, the image of $f$ lies in
+By step [](#s1-6){.pf-ref}, the image of $f$ lies in
 $$
 \{0,1\}.
 $$
@@ -282,7 +282,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 $$
@@ -323,7 +323,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 proves part (a), step <1>5 proves part (b), step <1>7 proves part (c), and step <1>8 proves part (d).
+Step [](#s1-2){.pf-ref} proves part (a), step [](#s1-5){.pf-ref} proves part (b), step [](#s1-7){.pf-ref} proves part (c), and step [](#s1-8){.pf-ref} proves part (d).
 
 :::
 

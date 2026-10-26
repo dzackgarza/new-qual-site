@@ -111,7 +111,7 @@ points have equal images.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -191,7 +191,7 @@ Both maps are continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On the boundary circle, the two maps agree:
 \[
@@ -234,7 +234,7 @@ points of $D_2$ map to the open lower hemisphere, so no interior point from
 one disk is identified with a point from the other.
 
 Each $\phi_\pm$ is injective on its own disk.
-The only common image points occur on the equator, and step <1>5 shows that
+The only common image points occur on the equator, and step [](#s1-5){.pf-ref} shows that
 the two boundary points have the same image exactly when their Euclidean
 coordinates are equal.
 Thus the fibers are exactly the prescribed classes.
@@ -243,7 +243,7 @@ Thus the fibers are exactly the prescribed classes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently
 \[
@@ -272,7 +272,7 @@ Hence the induced continuous bijection is a homeomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For part (3), define
 \[
@@ -320,7 +320,7 @@ The formula is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 On the open disk
 \[
@@ -379,15 +379,15 @@ to one point.
 
 ::: pf-proof
 
-By step <1>9, every interior point is in a singleton fiber.
-By step <1>8, every boundary point maps to the same south pole.
+By step [](#s1-9){.pf-ref}, every interior point is in a singleton fiber.
+By step [](#s1-8){.pf-ref}, every boundary point maps to the same south pole.
 Thus the only nontrivial fiber is the whole boundary circle.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Consequently
 \[
@@ -415,7 +415,7 @@ Therefore $\bar q_3$ is a homeomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The three quotient spaces are
 \[
@@ -431,7 +431,7 @@ The three quotient spaces are
 
 ::: pf-proof
 
-Collect steps <1>3, <1>7, and <1>11.
+Collect steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref}.
 
 :::
 
@@ -439,7 +439,7 @@ Collect steps <1>3, <1>7, and <1>11.
 
 ::: pf-qed
 
-Step <1>12 gives the requested identifications, with explicit quotient maps
+Step [](#s1-12){.pf-ref} gives the requested identifications, with explicit quotient maps
 constructed in the preceding steps.
 
 :::

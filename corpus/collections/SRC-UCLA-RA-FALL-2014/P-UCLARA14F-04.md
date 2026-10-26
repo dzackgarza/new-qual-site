@@ -43,7 +43,7 @@ with
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The coefficient sequences $(c_n)$ and $(d_n)$ belong to $\ell^1$.
 
@@ -80,7 +80,7 @@ Since
 \[
 |\cos(nx)|\le1,
 \]
-step <1>1 and the Weierstrass $M$-test give absolute and uniform convergence.
+step [](#s1-1){.pf-ref} and the Weierstrass $M$-test give absolute and uniform convergence.
 Thus the series define continuous even $2\pi$-periodic representatives of
 $f$ and $g$.
 
@@ -88,7 +88,7 @@ $f$ and $g$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define bilateral sequences $(a_k)_{k\in\mathbb Z}$ and
 $(b_k)_{k\in\mathbb Z}$ by
@@ -118,14 +118,14 @@ Use
 \[
 \cos(kx)=\frac{e^{ikx}+e^{-ikx}}2.
 \]
-The bilateral series are absolutely summable because step <1>1 gives
+The bilateral series are absolutely summable because step [](#s1-1){.pf-ref} gives
 $a,b\in\ell^1(\mathbb Z)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The weighted sequences
 \[
@@ -138,7 +138,7 @@ belong to $\ell^2(\mathbb Z)$.
 
 ::: pf-proof
 
-By the definitions in step <1>3,
+By the definitions in step [](#s1-3){.pf-ref},
 \[
 \sum_{k\in\mathbb Z}(1+k^2)|a_k|^2
 =
@@ -153,7 +153,7 @@ The same calculation applies to $b$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The product has the absolutely convergent Fourier expansion
 \[
@@ -169,7 +169,7 @@ e_n=(a*b)_n
 
 ::: pf-proof
 
-The two Fourier series in step <1>3 are absolutely convergent. Their Cauchy
+The two Fourier series in step [](#s1-3){.pf-ref} are absolutely convergent. Their Cauchy
 product is therefore absolutely convergent and equals the pointwise product.
 The coefficient at frequency $n$ is exactly the convolution shown above.
 
@@ -177,7 +177,7 @@ The coefficient at frequency $n$ is exactly the convolution shown above.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There is an absolute constant $C$ such that for all integers $n,k$,
 \[
@@ -219,7 +219,7 @@ Thus the inequality holds, for example with $C=\sqrt2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The weighted product coefficients satisfy
 \[
@@ -232,7 +232,7 @@ The weighted product coefficients satisfy
 
 ::: pf-proof
 
-By steps <1>5 and <1>6,
+By steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref},
 \[
 \begin{aligned}
 (1+n^2)^{1/2}|e_n|
@@ -270,13 +270,13 @@ C\left(
 <\infty,
 \end{aligned}
 \]
-using steps <1>1 and <1>4.
+using steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The sequence $(e_n)$ is even:
 \[
@@ -305,7 +305,7 @@ e_{-n}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence $fg$ has a cosine expansion
 \[
@@ -321,7 +321,7 @@ with
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \sum_{n\in\mathbb Z}e_ne^{inx}
 =
@@ -340,7 +340,7 @@ r_0=e_0,
 \qquad
 r_n=2e_n\quad(n\ge1).
 \]
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 \[
 \sum_{n\ge0}(1+n^2)|r_n|^2<\infty
 \]
@@ -350,7 +350,7 @@ up to the harmless factor $4$ for $n\ge1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -360,7 +360,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>9 is exactly the defining condition for $fg\in\mathcal G$.
+Step [](#s1-9){.pf-ref} is exactly the defining condition for $fg\in\mathcal G$.
 
 :::
 
@@ -368,7 +368,7 @@ Step <1>9 is exactly the defining condition for $fg\in\mathcal G$.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

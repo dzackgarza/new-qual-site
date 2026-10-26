@@ -46,7 +46,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $|z|\geq R$, then
 $$
@@ -81,7 +81,7 @@ This proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial
 $$
@@ -92,7 +92,7 @@ has no zero with $|z|\geq R$.
 
 ::: pf-proof
 
-For $|z|\geq R$, step <1>1 and the reverse triangle inequality give
+For $|z|\geq R$, step [](#s1-1){.pf-ref} and the reverse triangle inequality give
 $$
 \begin{aligned}
 |p(z)|
@@ -107,7 +107,7 @@ Thus $p(z)\neq0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every zero $\zeta$ of $p$ satisfies
 $$
@@ -118,7 +118,7 @@ $$
 
 ::: pf-proof
 
-This is the contrapositive of step <1>2 together with the definition of $R$.
+This is the contrapositive of step [](#s1-2){.pf-ref} together with the definition of $R$.
 
 :::
 
@@ -126,7 +126,7 @@ This is the contrapositive of step <1>2 together with the definition of $R$.
 
 ::: pf-qed
 
-Step <1>3 is exactly the asserted open-disc bound.
+Step [](#s1-3){.pf-ref} is exactly the asserted open-disc bound.
 
 :::
 

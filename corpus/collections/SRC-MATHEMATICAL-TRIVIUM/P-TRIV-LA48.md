@@ -85,7 +85,7 @@ No third spatial coordinate or direction vector is specified.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An equilateral triangle of side
 $$
@@ -121,7 +121,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 With the orientation shown in the source, one possible ordered target
 triple is
@@ -167,7 +167,7 @@ Thus they are precisely the target configuration described in the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 To determine commands, the problem must specify, for every command
 sequence
@@ -209,7 +209,7 @@ on displayed positions is defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The source does not determine the spatial direction of a star from its
 displayed radius
@@ -275,7 +275,7 @@ three-dimensional pitch, yaw, and roll rotations act.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently, even the effect of a pure rotation on the displayed
 points is not uniquely determined.
@@ -287,7 +287,7 @@ Take a star with displayed radius
 $$
 r>0.
 $$
-By step <1>5, two projection conventions compatible with the source assign
+By step [](#s1-5){.pf-ref}, two projection conventions compatible with the source assign
 different spatial polar angles to that same point.
 
 Apply the same nontrivial pitch or yaw rotation in
@@ -313,7 +313,7 @@ from the information in the source.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The effect of the boost command is even less determined by the source.
 
@@ -350,7 +350,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the equations
 $$
@@ -362,23 +362,23 @@ left-hand side.
 
 ::: pf-proof
 
-Step <1>6 shows that the rotational part of
+Step [](#s1-6){.pf-ref} shows that the rotational part of
 $$
 F_C
 $$
 depends on an unspecified projection convention.
-Step <1>7 shows that the boost part is also unspecified.
+Step [](#s1-7){.pf-ref} shows that the boost part is also unspecified.
 Thus the source does not define the transformation
 $$
 F_C
 $$
-needed in step <1>4.
+needed in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence no unique series of pitch, yaw, roll, and boost commands can be
 deduced from
@@ -397,8 +397,8 @@ The target coordinates are completely determined by
 $$
 d
 $$
-up to a permutation and overall orientation, as steps <1>2--<1>3 show.
-But steps <1>4--<1>8 prove that the transformation from the initial displayed
+up to a permutation and overall orientation, as steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} show.
+But steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} prove that the transformation from the initial displayed
 points to the displayed points after a command sequence is absent from the
 mathematical data.
 
@@ -413,7 +413,7 @@ Therefore the original source does not determine the requested sequence.
 
 ::: pf-qed
 
-Step <1>9 is the complete resolution of the problem as retained.
+Step [](#s1-9){.pf-ref} is the complete resolution of the problem as retained.
 
 :::
 

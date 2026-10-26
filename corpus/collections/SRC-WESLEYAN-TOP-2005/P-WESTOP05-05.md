@@ -31,7 +31,7 @@ denote the canonical embedding.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The space $\beta X$ is compact Hausdorff, and
 \[
@@ -50,7 +50,7 @@ $X$ onto a dense subspace of the compact Hausdorff space $\beta X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Čech--Stone compactification is characterized by the following
 universal extension property:
@@ -94,7 +94,7 @@ F=G.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Equivalently, every bounded continuous real-valued function
 \[
@@ -116,7 +116,7 @@ is bounded, its image lies in some compact interval
 \[
 [-M,M].
 \]
-Apply step <1>2 with
+Apply step [](#s1-2){.pf-ref} with
 \[
 K=[-M,M].
 \]
@@ -132,7 +132,7 @@ $K$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The pair
 \[
@@ -182,7 +182,7 @@ and
 \[
 \operatorname{id}_{\beta X}
 \]
-agree on the dense set $i(X)$. By uniqueness in step <1>2,
+agree on the dense set $i(X)$. By uniqueness in step [](#s1-2){.pf-ref},
 \[
 G\circ F=\operatorname{id}_{\beta X}.
 \]
@@ -197,7 +197,7 @@ $x\in X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the characteristic description requested in part (1) is:
 \[
@@ -214,13 +214,13 @@ X\text{ embeds densely in }\beta X,\\
 
 ::: pf-proof
 
-This is the combined content of steps <1>1--<1>4.
+This is the combined content of steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (2) cannot be answered from the retained source.
 
@@ -244,8 +244,8 @@ missing source data not present in the repository.
 
 ::: pf-qed
 
-Step <1>5 completely answers the recoverable characteristic-property
-subproblem, and step <1>6 records the exact source obstruction for the
+Step [](#s1-5){.pf-ref} completely answers the recoverable characteristic-property
+subproblem, and step [](#s1-6){.pf-ref} records the exact source obstruction for the
 unrecoverable cardinality subproblem.
 
 :::

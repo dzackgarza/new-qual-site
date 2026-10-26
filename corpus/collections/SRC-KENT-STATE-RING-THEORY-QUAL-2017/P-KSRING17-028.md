@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $F_p$ is closed under addition and additive inverses.
 
@@ -70,7 +70,7 @@ Thus $F_p$ is an additive subgroup of $M_2(\FF_p)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $F_p$ is closed under multiplication, and multiplication is commutative.
 
@@ -102,7 +102,7 @@ Thus multiplication is closed and commutative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The identity matrix belongs to $F_p$.
 
@@ -154,7 +154,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In $\FF_7$, the element $-1$ is not a square.
 
@@ -188,7 +188,7 @@ is not among them.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every nonzero element of $F_7$ is invertible.
 
@@ -209,7 +209,7 @@ $$
 =
 -1
 $$
-in $\FF_7$, contradicting step <1>5. If $b=0$, then $a^2=0$, so $a=0$, contradicting nonzeroness.
+in $\FF_7$, contradicting step [](#s1-5){.pf-ref}. If $b=0$, then $a^2=0$, so $a=0$, contradicting nonzeroness.
 
 Therefore
 $$
@@ -224,7 +224,7 @@ M\left(
 \frac{-b}{a^2+b^2}
 \right).
 $$
-Using the multiplication formula from step <1>2,
+Using the multiplication formula from step [](#s1-2){.pf-ref},
 $$
 M(a,b)N
 =
@@ -238,7 +238,7 @@ Thus every nonzero element is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -248,7 +248,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>3, $F_7$ is a commutative ring with identity, and step <1>6 shows every nonzero element is invertible.
+By steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, $F_7$ is a commutative ring with identity, and step [](#s1-6){.pf-ref} shows every nonzero element is invertible.
 
 :::
 
@@ -280,7 +280,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The ring $F_{13}$ has nonzero zero divisors.
 
@@ -297,7 +297,7 @@ B
 \coloneqq
 M(5,-1).
 $$
-Both matrices are nonzero. By step <1>2,
+Both matrices are nonzero. By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 AB
@@ -316,7 +316,7 @@ Thus $A$ and $B$ are nonzero zero divisors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -326,7 +326,7 @@ $$
 
 ::: pf-proof
 
-A field has no nonzero zero divisors, whereas step <1>9 exhibits such zero divisors in $F_{13}$.
+A field has no nonzero zero divisors, whereas step [](#s1-9){.pf-ref} exhibits such zero divisors in $F_{13}$.
 
 :::
 
@@ -334,7 +334,7 @@ A field has no nonzero zero divisors, whereas step <1>9 exhibits such zero divis
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (a), step <1>7 proves part (b), and step <1>10 proves part (c).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), step [](#s1-7){.pf-ref} proves part (b), and step [](#s1-10){.pf-ref} proves part (c).
 
 :::
 

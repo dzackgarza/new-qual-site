@@ -32,7 +32,7 @@ v_1,\ldots,v_n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors
 \[
@@ -73,7 +73,7 @@ Since $k$ was arbitrary, all coefficients vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The list
 \[
@@ -84,14 +84,14 @@ is a basis of $\mathbb C^n$.
 
 ::: pf-proof
 
-By step <1>1, it is a linearly independent list of $n$ vectors in the $n$-dimensional space $\mathbb C^n$.
+By step [](#s1-1){.pf-ref}, it is a linearly independent list of $n$ vectors in the $n$-dimensional space $\mathbb C^n$.
 Therefore it is a basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each eigenspace
 \[
@@ -109,7 +109,7 @@ E_{\lambda_j}
 
 ::: pf-proof
 
-The direct sum of all eigenspaces contains the $n$ linearly independent vectors from step <1>1 and therefore has dimension at least $n$.
+The direct sum of all eigenspaces contains the $n$ linearly independent vectors from step [](#s1-1){.pf-ref} and therefore has dimension at least $n$.
 Since the ambient space has dimension $n$, the sum of the dimensions of the eigenspaces is exactly $n$.
 There are $n$ distinct eigenvalues, and every eigenspace has dimension at least $1$.
 Hence every eigenspace has dimension exactly $1$.
@@ -118,7 +118,7 @@ Hence every eigenspace has dimension exactly $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every eigenspace of $A$ is invariant under $B$.
 
@@ -156,7 +156,7 @@ Bv\in E_{\lambda_j}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each $j$, there exists
 \[
@@ -170,11 +170,11 @@ such that
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 Bv_j\in E_{\lambda_j}.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 E_{\lambda_j}
 =
@@ -190,7 +190,7 @@ is a scalar multiple of $v_j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The basis
 \[
@@ -201,13 +201,13 @@ consists of eigenvectors of $B$.
 
 ::: pf-proof
 
-This is exactly the content of step <1>5, together with the fact from step <1>2 that the vectors form a basis.
+This is exactly the content of step [](#s1-5){.pf-ref}, together with the fact from step [](#s1-2){.pf-ref} that the vectors form a basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -218,7 +218,7 @@ Therefore
 ::: pf-proof
 
 A linear operator is diagonalizable precisely when the ambient vector space has a basis consisting of eigenvectors.
-Step <1>6 supplies such a basis for $B$.
+Step [](#s1-6){.pf-ref} supplies such a basis for $B$.
 
 :::
 
@@ -226,7 +226,7 @@ Step <1>6 supplies such a basis for $B$.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -26,7 +26,7 @@ Show that $A$ is not invertible.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $A$ is invertible.
 
@@ -63,7 +63,7 @@ while $A^{-1}A=I$ on the right-hand side.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Taking traces gives
 \[
@@ -79,7 +79,7 @@ Trace is linear and $\operatorname{tr}(I_n)=n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 But
 \[
@@ -101,9 +101,9 @@ Equivalently, $A^{-1}BA$ is similar to $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Steps <1>3--<1>4 imply
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} imply
 \[
 0=n,
 \]
@@ -112,13 +112,13 @@ a contradiction.
 
 ::: pf-proof
 
-Substitute the equality from step <1>4 into step <1>3. Since the matrices are $n\times n$ with $n\geq1$, the scalar $n$ is nonzero in $\mathbb C$.
+Substitute the equality from step [](#s1-4){.pf-ref} into step [](#s1-3){.pf-ref}. Since the matrices are $n\times n$ with $n\geq1$, the scalar $n$ is nonzero in $\mathbb C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -128,7 +128,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption of invertibility in step <1>1 led to the contradiction in step <1>5.
+The assumption of invertibility in step [](#s1-1){.pf-ref} led to the contradiction in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -136,7 +136,7 @@ The assumption of invertibility in step <1>1 led to the contradiction in step <1
 
 ::: pf-qed
 
-Step <1>6 is the desired conclusion.
+Step [](#s1-6){.pf-ref} is the desired conclusion.
 
 :::
 

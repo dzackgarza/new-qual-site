@@ -26,7 +26,7 @@ Show that $f$ is constant.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -50,7 +50,7 @@ is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $g$ is bounded:
 \[
@@ -93,7 +93,7 @@ Liouville's theorem implies that $g$ is constant.
 
 ::: pf-proof
 
-Steps <1>1--<1>2 show that $g$ is a bounded entire function. Liouville's
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $g$ is a bounded entire function. Liouville's
 theorem therefore gives
 \[
 g(z)\equiv c
@@ -104,7 +104,7 @@ for some constant $c\in\mathbb C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The constant $c$ is nonzero.
 
@@ -147,7 +147,7 @@ The chain rule gives
 \[
 e^{f(z)}f'(z)=0.
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 e^{f(z)}=c\ne0.
 \]
@@ -161,7 +161,7 @@ for every $z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -180,7 +180,7 @@ connected plane $\mathbb C$.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

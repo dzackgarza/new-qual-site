@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Away from the origin,
 $$
@@ -84,7 +84,7 @@ small Euclidean ball about the origin lies inside it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $\Omega_\varepsilon$ be the region inside $S$ but outside
 $S_\varepsilon$. Then
@@ -98,7 +98,7 @@ $$
 
 ::: pf-proof
 
-The field is smooth on $\Omega_\varepsilon$, and by step <1>1 its divergence
+The field is smooth on $\Omega_\varepsilon$, and by step [](#s1-1){.pf-ref} its divergence
 vanishes there. The divergence theorem gives
 $$
 \int_{\partial\Omega_\varepsilon}
@@ -115,7 +115,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the outward flux through $S$ equals the outward flux through
 $S_\varepsilon$.
@@ -126,7 +126,7 @@ $S_\varepsilon$.
 The boundary of $\Omega_\varepsilon$ consists of the outer sphere $S$ with its
 usual outward normal and the inner sphere $S_\varepsilon$ with normal pointing
 into the excised ball, which is the negative of the usual outward normal of
-$S_\varepsilon$. Thus step <1>3 gives
+$S_\varepsilon$. Thus step [](#s1-3){.pf-ref} gives
 $$
 \Phi(S)-\Phi(S_\varepsilon)=0.
 $$
@@ -135,7 +135,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On $S_\varepsilon$,
 $$
@@ -164,7 +164,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -182,14 +182,14 @@ $$
 
 ::: pf-proof
 
-Use step <1>5 and the surface area formula for a sphere of radius
+Use step [](#s1-5){.pf-ref} and the surface area formula for a sphere of radius
 $\varepsilon$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -201,7 +201,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>6.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref}.
 
 :::
 
@@ -209,7 +209,7 @@ Combine steps <1>4 and <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required flux.
+Step [](#s1-7){.pf-ref} is the required flux.
 
 :::
 

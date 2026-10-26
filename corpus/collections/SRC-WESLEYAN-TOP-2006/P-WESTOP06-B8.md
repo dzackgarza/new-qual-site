@@ -22,7 +22,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Lebesgue Number Lemma states: if \(K\) is a compact metric space and \(\mathcal U\) is an open cover of \(K\), then there is a number \(\delta>0\) such that every subset of \(K\) of diameter less than \(\delta\) is contained in some member of \(\mathcal U\).
 
@@ -35,7 +35,7 @@ This is the statement of the lemma. Such a \(\delta\) is called a Lebesgue numbe
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The path \(f([0,1])\) admits a finite subdivision
 \[
@@ -54,7 +54,7 @@ For every \(t\in[0,1]\), choose an evenly covered open neighborhood \(U_t\) of \
 \[
 \{f^{-1}(U_t):t\in[0,1]\}
 \]
-is an open cover of the compact metric space \([0,1]\). By step <1>1, it has a Lebesgue number \(\delta>0\). Choose a subdivision whose mesh is less than \(\delta\). Each closed subinterval \([t_{i-1},t_i]\) has diameter less than \(\delta\), so it is contained in some \(f^{-1}(U_t)\). Rename that evenly covered neighborhood \(U_i\). Then
+is an open cover of the compact metric space \([0,1]\). By step [](#s1-1){.pf-ref}, it has a Lebesgue number \(\delta>0\). Choose a subdivision whose mesh is less than \(\delta\). Each closed subinterval \([t_{i-1},t_i]\) has diameter less than \(\delta\), so it is contained in some \(f^{-1}(U_t)\). Rename that evenly covered neighborhood \(U_i\). Then
 \[
 f([t_{i-1},t_i])\subseteq U_i.
 \]
@@ -63,7 +63,7 @@ f([t_{i-1},t_i])\subseteq U_i.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose a lift \(\widetilde f\) has been constructed on \([0,t_{i-1}]\), ending at \(e_{i-1}\in E\). There is a unique lift of
 \[
@@ -74,7 +74,7 @@ that begins at \(e_{i-1}\).
 
 ::: pf-proof
 
-By step <1>2, the image of this subpath lies in an evenly covered set \(U_i\). Thus
+By step [](#s1-2){.pf-ref}, the image of this subpath lies in an evenly covered set \(U_i\). Thus
 \[
 p^{-1}(U_i)=\coprod_{\lambda\in\Lambda_i}V_{i,\lambda},
 \]
@@ -107,7 +107,7 @@ For uniqueness, any lift of this subpath beginning at \(e_{i-1}\) must remain in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists a lift
 \[
@@ -121,7 +121,7 @@ with
 
 ::: pf-proof
 
-Start with \(e_0\) at \(t_0=0\). Apply step <1>3 to the first subinterval \([t_0,t_1]\). Its endpoint supplies the starting point for the second subinterval. Continue inductively through the finite subdivision from step <1>2.
+Start with \(e_0\) at \(t_0=0\). Apply step [](#s1-3){.pf-ref} to the first subinterval \([t_0,t_1]\). Its endpoint supplies the starting point for the second subinterval. Continue inductively through the finite subdivision from step [](#s1-2){.pf-ref}.
 
 On adjacent subintervals, the two formulas agree at their common endpoint by construction. Hence the pasting lemma gives a continuous map
 \[
@@ -133,9 +133,9 @@ Each piece satisfies \(p\circ\widetilde f=f\), so the pasted map does also, and 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The lift in step <1>4 is unique.
+The lift in step [](#s1-4){.pf-ref} is unique.
 
 
 ::: pf-proof
@@ -144,11 +144,11 @@ Let \(\widetilde f\) and \(\widehat f\) be two lifts of \(f\) with
 \[
 \widetilde f(0)=\widehat f(0)=e_0.
 \]
-On the first subinterval \([t_0,t_1]\), step <1>3 gives uniqueness for the prescribed initial point, so
+On the first subinterval \([t_0,t_1]\), step [](#s1-3){.pf-ref} gives uniqueness for the prescribed initial point, so
 \[
 \widetilde f=\widehat f
 \]
-there. In particular, the two lifts have the same value at \(t_1\). Applying step <1>3 again on \([t_1,t_2]\) shows that they agree there as well. Induction over the finite subdivision proves
+there. In particular, the two lifts have the same value at \(t_1\). Applying step [](#s1-3){.pf-ref} again on \([t_1,t_2]\) shows that they agree there as well. Induction over the finite subdivision proves
 \[
 \widetilde f=\widehat f
 \]
@@ -158,14 +158,14 @@ on all of \([0,1]\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every path \(f:[0,1]\to B\) beginning at \(b_0\) has a unique lift beginning at \(e_0\).
 
 
 ::: pf-proof
 
-Existence is step <1>4 and uniqueness is step <1>5. Therefore
+Existence is step [](#s1-4){.pf-ref} and uniqueness is step [](#s1-5){.pf-ref}. Therefore
 \[
 \boxed{\text{there is a unique }\widetilde f:[0,1]\to E
 \text{ with }p\circ\widetilde f=f,\ \widetilde f(0)=e_0.}
@@ -177,7 +177,7 @@ Existence is step <1>4 and uniqueness is step <1>5. Therefore
 
 ::: pf-qed
 
-Step <1>1 states the Lebesgue Number Lemma, and step <1>6 proves the path-lifting theorem.
+Step [](#s1-1){.pf-ref} states the Lebesgue Number Lemma, and step [](#s1-6){.pf-ref} proves the path-lifting theorem.
 
 :::
 

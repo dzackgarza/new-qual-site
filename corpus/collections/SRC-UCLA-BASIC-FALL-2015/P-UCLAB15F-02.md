@@ -26,7 +26,7 @@ Show that if $g,h:[a,b]\to\mathbb R$ are continuous and $h\ge0$, then there is $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -46,7 +46,7 @@ Hence the extreme value theorem gives a minimum and a maximum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $h\ge0$,
 \[
@@ -74,7 +74,7 @@ Integrate over $[a,b]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -106,7 +106,7 @@ g(c)\cdot0=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose
 \[
@@ -125,7 +125,7 @@ M.
 
 ::: pf-proof
 
-Divide the inequalities from step <1>2 by the positive number
+Divide the inequalities from step [](#s1-2){.pf-ref} by the positive number
 \[
 \int_a^b h(x)\,dx.
 \]
@@ -134,7 +134,7 @@ Divide the inequalities from step <1>2 by the positive number
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $c\in[a,b]$ such that
 \[
@@ -147,15 +147,15 @@ g(c)
 
 ::: pf-proof
 
-By step <1>1, the continuous function $g$ attains the values $m$ and $M$.
-By step <1>4, the displayed quotient lies between them.
+By step [](#s1-1){.pf-ref}, the continuous function $g$ attains the values $m$ and $M$.
+By step [](#s1-4){.pf-ref}, the displayed quotient lies between them.
 The intermediate value theorem therefore gives a point $c$ at which $g$ equals this quotient.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -170,8 +170,8 @@ for some $c\in[a,b]$.
 
 ::: pf-proof
 
-Step <1>3 handles the case in which the integral of $h$ is zero.
-Otherwise multiply the identity in step <1>5 by
+Step [](#s1-3){.pf-ref} handles the case in which the integral of $h$ is zero.
+Otherwise multiply the identity in step [](#s1-5){.pf-ref} by
 \[
 \int_a^b h(x)\,dx.
 \]
@@ -182,7 +182,7 @@ Otherwise multiply the identity in step <1>5 by
 
 ::: pf-qed
 
-Step <1>6 is the required weighted mean value theorem.
+Step [](#s1-6){.pf-ref} is the required weighted mean value theorem.
 
 :::
 

@@ -39,7 +39,7 @@ Let the pole of $f$ at $z_0$ have order $m\ge1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist coefficients $a_{-1},\ldots,a_{-m}$ with $a_{-m}\ne0$ and a function $h$ holomorphic on a disk $\abs{z}<\rho$ for some $\rho>1$ such that
 $$
@@ -66,7 +66,7 @@ Subtracting this principal part removes the pole, so the difference extends holo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $j\ge1$ and $\abs{z}<1$,
 $$
@@ -105,7 +105,7 @@ which is the claimed expansion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a polynomial $P(n)$ of degree $m-1$ with nonzero leading coefficient such that
 $$
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1 and <1>2, comparison of Taylor coefficients gives
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, comparison of Taylor coefficients gives
 $$
 c_n
 =
@@ -150,7 +150,7 @@ which is nonzero. Thus $\deg P=m-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For some $r>1$ and some constant $C>0$,
 $$
@@ -179,20 +179,20 @@ Take $C=M_r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The coefficients $c_n$ are nonzero for all sufficiently large $n$.
 
 
 ::: pf-proof
 
-Since $\abs{z_0}=1$, step <1>3 gives
+Since $\abs{z_0}=1$, step [](#s1-3){.pf-ref} gives
 $$
 z_0^nc_n
 =
 P(n)+z_0^nh_n.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \abs{z_0^nh_n}
 =
@@ -229,7 +229,7 @@ so $c_n\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -245,13 +245,13 @@ Set
 $$
 \varepsilon_n\coloneqq z_0^nh_n.
 $$
-Then step <1>3 becomes
+Then step [](#s1-3){.pf-ref} becomes
 $$
 c_n
 =
 z_0^{-n}\left(P(n)+\varepsilon_n\right),
 $$
-and step <1>4 gives $\varepsilon_n=O(r^{-n})$. By step <1>5, the denominator below is nonzero for large $n$, and
+and step [](#s1-4){.pf-ref} gives $\varepsilon_n=O(r^{-n})$. By step [](#s1-5){.pf-ref}, the denominator below is nonzero for large $n$, and
 $$
 \frac{c_n}{c_{n+1}}
 =
@@ -283,7 +283,7 @@ which proves the claimed limit.
 
 ::: pf-qed
 
-Step <1>5 proves part (1), and step <1>6 proves part (2).
+Step [](#s1-5){.pf-ref} proves part (1), and step [](#s1-6){.pf-ref} proves part (2).
 
 :::
 

@@ -43,7 +43,7 @@ be compact.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choose a bounded open set \(U\) with
 \[
@@ -93,7 +93,7 @@ Euclidean space is normal, and \(K\) is closed while \(U\) is open with \(K\subs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -126,13 +126,13 @@ f(x)g(x)\,dx
 \varepsilon
 \end{aligned}
 \]
-by step <1>1.
+by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By the hypothesis,
 \[
@@ -154,7 +154,7 @@ This is the assumed inequality applied to the test function \(g\in C_c(\mathbb R
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
@@ -196,13 +196,13 @@ Therefore
 
 ::: pf-proof
 
-Use the triangle inequality with steps <1>3--<1>5.
+Use the triangle inequality with steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
@@ -221,7 +221,7 @@ Since
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |U|=|K|+|U\setminus K|
 <
@@ -232,7 +232,7 @@ By step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Letting \(\varepsilon\downarrow0\),
 \[
@@ -247,7 +247,7 @@ Letting \(\varepsilon\downarrow0\),
 
 ::: pf-proof
 
-The bound in step <1>7 holds for every positive \(\varepsilon\), and the right-hand side converges to \(|K|^{1/p}\).
+The bound in step [](#s1-7){.pf-ref} holds for every positive \(\varepsilon\), and the right-hand side converges to \(|K|^{1/p}\).
 
 :::
 
@@ -277,7 +277,7 @@ Divide each coordinate interval into \(N\) equal pieces and take Cartesian produ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since the overlaps of distinct subcubes lie in boundaries of measure zero,
 \[
@@ -313,7 +313,7 @@ Hence
 
 ::: pf-proof
 
-Apply the triangle inequality to step <1>10.
+Apply the triangle inequality to step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -321,7 +321,7 @@ Apply the triangle inequality to step <1>10.
 
 ::: pf-step
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \left|
 \int_{Q_j}f
@@ -346,7 +346,7 @@ Each \(Q_j\) is compact, and its volume is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -377,7 +377,7 @@ N^{d(1-1/p)}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Since \(0<p<1\),
 \[
@@ -402,9 +402,9 @@ Multiply by \(d>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-Letting \(N\to\infty\) in step <1>13 gives
+Letting \(N\to\infty\) in step [](#s1-13){.pf-ref} gives
 \[
 \boxed{
 \int_Q f(x)\,dx=0}
@@ -414,7 +414,7 @@ for every closed cube \(Q\).
 
 ::: pf-proof
 
-By step <1>14,
+By step [](#s1-14){.pf-ref},
 \[
 N^{d-d/p}\to0.
 \]
@@ -424,7 +424,7 @@ The left-hand side is independent of \(N\), so its absolute value is bounded by 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Since
 \[
@@ -450,20 +450,20 @@ This is the Lebesgue differentiation theorem for locally integrable functions, w
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
-Every integral in step <1>16 is zero.
+Every integral in step [](#s1-16){.pf-ref} is zero.
 
 
 ::: pf-proof
 
-Each \(Q_r(x)\) is a closed cube, so step <1>15 applies.
+Each \(Q_r(x)\) is a closed cube, so step [](#s1-15){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -475,7 +475,7 @@ for almost every \(x\in\mathbb R^d\).
 
 ::: pf-proof
 
-At every Lebesgue differentiation point of \(f\), steps <1>16--<1>17 give
+At every Lebesgue differentiation point of \(f\), steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give
 \[
 f(x)=\lim_{r\downarrow0}0=0.
 \]
@@ -487,7 +487,7 @@ Such points form a full-measure set.
 
 ::: pf-qed
 
-Step <1>18 is the required conclusion.
+Step [](#s1-18){.pf-ref} is the required conclusion.
 
 :::
 

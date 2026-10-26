@@ -34,7 +34,7 @@ is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), take the universe to be
 \[
@@ -94,7 +94,7 @@ is false.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For part (b), take
 \[
@@ -175,7 +175,7 @@ Hence the domain of convergence is exactly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (c), define
 \[
@@ -231,7 +231,7 @@ In particular the supremum does not tend to $0$.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 provide the three requested examples and verify their
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} provide the three requested examples and verify their
 properties.
 
 :::

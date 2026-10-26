@@ -29,7 +29,7 @@ Erratum: the trailing $\mathrm{d}x$ is printed in the source after $d\theta$ and
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $a=0$, then
 $$
@@ -47,7 +47,7 @@ For $a=0$ the integrand is identically $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-Substituting step <1>2,
+Substituting step [](#s1-2){.pf-ref},
 $$
 1+a\cos\theta
 =
@@ -109,7 +109,7 @@ integrand.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The roots of
 $$
@@ -133,7 +133,7 @@ Apply the quadratic formula.
 
 ::: pf-step
 
-Exactly one of the roots in step <1>4 lies inside the unit circle,
+Exactly one of the roots in step [](#s1-4){.pf-ref} lies inside the unit circle,
 namely
 $$
 z_+
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The residue of
 $$
@@ -202,7 +202,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, for $0<|a|<1$,
 $$
@@ -215,7 +215,7 @@ $$
 ::: pf-proof
 
 The unit circle encloses only the pole $z_+$. By the residue theorem and
-step <1>6,
+step [](#s1-6){.pf-ref},
 $$
 \oint_{|z|=1}
 \frac{2}{i(az^2+2z+a)}\,dz
@@ -230,7 +230,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every real $a$ with $|a|<1$,
 $$
@@ -244,7 +244,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 handles $a=0$, and step <1>7 handles $0<|a|<1$. The same formula
+Step [](#s1-1){.pf-ref} handles $a=0$, and step [](#s1-7){.pf-ref} handles $0<|a|<1$. The same formula
 gives $2\pi$ at $a=0$.
 
 :::
@@ -253,7 +253,7 @@ gives $2\pi$ at $a=0$.
 
 ::: pf-qed
 
-Step <1>8 is the requested value.
+Step [](#s1-8){.pf-ref} is the requested value.
 
 :::
 

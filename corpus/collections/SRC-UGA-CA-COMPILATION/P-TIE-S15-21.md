@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 $$
@@ -121,7 +121,7 @@ lies in the strip and satisfies $e^{\pi i w}=\zeta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -193,7 +193,7 @@ maps $D_2$ conformally onto
 $$
 0<\operatorname{Re}v<1.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 e^{\pi i v}
 $$
@@ -207,7 +207,7 @@ is a Möbius conformal bijection $\HH\to\DD$. Their composition is $F_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -282,7 +282,7 @@ maps $\HH$ conformally onto $\DD$. The displayed $F_3$ is the composition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $0<a<1$, define
 $$
@@ -334,7 +334,7 @@ Hence it maps the slit $[a,1)$ bijectively onto $[0,1)$. Removing the slit on bo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -467,7 +467,7 @@ maps the right half-disk conformally onto $\HH$, and composing the four conforma
 
 ::: pf-qed
 
-Steps <1>1--<1>5 construct and verify a conformal map for each of the five requested domains.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} construct and verify a conformal map for each of the five requested domains.
 
 :::
 

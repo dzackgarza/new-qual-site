@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Two side vectors issuing from $C$ are
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Their cross product is
 $$
@@ -69,7 +69,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 (-3,2,0)\times(-3,0,1)
@@ -84,7 +84,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The triangle has area
 $$
@@ -95,7 +95,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-The area is one half the area of the parallelogram spanned by the two side vectors. By step <1>2,
+The area is one half the area of the parallelogram spanned by the two side vectors. By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \operatorname{Area}(\triangle ABC)
@@ -112,7 +112,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested area and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
 
 :::
 

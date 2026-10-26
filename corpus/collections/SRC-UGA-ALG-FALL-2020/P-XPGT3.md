@@ -35,7 +35,7 @@ Prove that if the induced morphism \( \bar{f}: M/IM \to N/IN \) is surjective, t
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subset $IM\subseteq M$ is a left $R$-submodule.
 
@@ -56,7 +56,7 @@ Thus $IM$ is a left $R$-submodule of $M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Surjectivity of $\bar f:M/IM\to N/IN$ implies $N=f(M)+IN$.
 
@@ -76,14 +76,14 @@ N=f(M)+IN.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $I$ is nilpotent, then $f:M\to N$ is surjective.
 
 
 ::: pf-proof
 
-Let $Q=N/f(M)$. Since $f(M)$ is a submodule, $Q$ is a left $R$-module. The equality from step <1>2 gives
+Let $Q=N/f(M)$. Since $f(M)$ is a submodule, $Q$ is a left $R$-module. The equality from step [](#s1-2){.pf-ref} gives
 \[
 Q=IQ.
 \]
@@ -103,7 +103,7 @@ Therefore $N=f(M)$, so $f$ is surjective.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), while steps <1>2 and <1>3 prove part (b).
+Step [](#s1-1){.pf-ref} proves part (a), while steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (b).
 
 :::
 

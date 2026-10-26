@@ -47,7 +47,7 @@ Thus constant functions cannot increase the supremum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(u:\mathbb D\to[0,1]\) is nonconstant and harmonic, then
 \[
@@ -95,7 +95,7 @@ Choose that constant so that
 \[
 v(0)=0.
 \]
-Step <1>2 shows that the image lies in the vertical strip \(S\).
+Step [](#s1-2){.pf-ref} shows that the image lies in the vertical strip \(S\).
 
 :::
 
@@ -132,7 +132,7 @@ Their composition is \(T\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -193,7 +193,7 @@ the displayed estimate follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For \(t\in(0,1)\),
 \[
@@ -256,7 +256,7 @@ Dividing gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every admissible harmonic function satisfies
 \[
@@ -281,13 +281,13 @@ so
 \le
 |F'(0)|.
 \]
-Combine steps <1>5 and <1>6.
+Combine steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let \(H=T^{-1}:\mathbb D\to S\) be the inverse conformal map,
 \[
@@ -358,7 +358,7 @@ H'(0)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define
 \[
@@ -386,7 +386,7 @@ Since multiplication by \(i\) is an automorphism of \(\mathbb D\),
 is holomorphic, so its real part \(u_*\) is harmonic and takes values in
 \((0,1)\).
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \widetilde H'(0)
 =
@@ -410,7 +410,7 @@ For a holomorphic function, the real part of the derivative is the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence the supremum is
 \[
@@ -420,7 +420,7 @@ Hence the supremum is
 
 ::: pf-proof
 
-Step <1>7 gives \(2/\pi\) as an upper bound, while step <1>9 constructs an
+Step [](#s1-7){.pf-ref} gives \(2/\pi\) as an upper bound, while step [](#s1-9){.pf-ref} constructs an
 admissible harmonic function attaining that value.
 
 :::
@@ -429,7 +429,7 @@ admissible harmonic function attaining that value.
 
 ::: pf-qed
 
-Step <1>10 is the required sharp result.
+Step [](#s1-10){.pf-ref} is the required sharp result.
 
 :::
 

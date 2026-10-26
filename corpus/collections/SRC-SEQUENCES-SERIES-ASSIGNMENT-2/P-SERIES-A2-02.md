@@ -40,7 +40,7 @@ that intended hypothesis, the theorem is correct.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume
 \[
@@ -115,9 +115,9 @@ a_{n_k}\to L.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the hypothesis of step <1>1,
+Under the hypothesis of step [](#s1-1){.pf-ref},
 \[
 L\in S.
 \]
@@ -125,14 +125,14 @@ L\in S.
 
 ::: pf-proof
 
-Step <1>1 constructs a subsequence converging to $L$, which is exactly the
+Step [](#s1-1){.pf-ref} constructs a subsequence converging to $L$, which is exactly the
 definition of membership in $S$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $x\in S$ satisfies
 \[
@@ -178,7 +178,7 @@ x\le L.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -194,7 +194,7 @@ L=\max S=\sup S.
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 L\in S,
 \]
@@ -202,7 +202,7 @@ so
 \[
 L\le\sup S.
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 x\le L
 \qquad
@@ -222,7 +222,7 @@ and because $L\in S$, the supremum is attained.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, suppose
 \[
@@ -263,7 +263,7 @@ Therefore equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In the intended bounded-sequence setting, the condition
 \[
@@ -316,13 +316,13 @@ x>L=\sup S,
 a contradiction. Thus the sequence is eventually bounded above by
 $L+\varepsilon$ for every $\varepsilon>0$.
 
-Apply step <1>5.
+Apply step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, for a bounded real sequence,
 \[
@@ -334,13 +334,13 @@ Therefore, for a bounded real sequence,
 
 ::: pf-proof
 
-The forward implication is step <1>4. The reverse implication is step <1>6.
+The forward implication is step [](#s1-4){.pf-ref}. The reverse implication is step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The analogous statement for the lower limit is
 \[
@@ -353,7 +353,7 @@ for every bounded real sequence.
 
 ::: pf-proof
 
-Apply step <1>7 to the sequence
+Apply step [](#s1-7){.pf-ref} to the sequence
 \[
 b_n=-a_n.
 \]
@@ -402,7 +402,7 @@ but the sequence is not assumed bounded above, the forward implication
 \[
 \liminf a_n=\min S
 \]
-still holds by the same direct argument as steps <1>1--<1>4.
+still holds by the same direct argument as steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}.
 
 
 ::: pf-proof
@@ -420,8 +420,8 @@ subsequence construction and extremality argument apply.
 
 ::: pf-qed
 
-Step <1>7 proves the intended bounded-sequence form of part (a), and step
-<1>8 proves the corresponding statement for $\liminf$. The opening
+Step [](#s1-7){.pf-ref} proves the intended bounded-sequence form of part (a), and step
+[](#s1-8){.pf-ref} proves the corresponding statement for $\liminf$. The opening
 counterexample records why the unrestricted literal statement requires the
 missing finiteness/boundedness hypothesis.
 

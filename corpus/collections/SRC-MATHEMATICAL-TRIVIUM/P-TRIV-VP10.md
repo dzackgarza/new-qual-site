@@ -68,7 +68,7 @@ not vanish on $\partial D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first variation of
 $$
@@ -106,7 +106,7 @@ $\varepsilon=0$ and apply the chain rule to the interior integrand.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Green's formula gives
 $$
@@ -161,7 +161,7 @@ Rearrange.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -194,14 +194,14 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2 and collect the interior and boundary
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref} and collect the interior and boundary
 terms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At an extremum, the interior Euler--Lagrange equation is
 $$
@@ -220,16 +220,16 @@ in $D$.
 ::: pf-proof
 
 Choose variations supported compactly inside $D$. Then the boundary term in
-step <1>4 vanishes, and the fundamental lemma of the calculus of variations
+step [](#s1-4){.pf-ref} vanishes, and the fundamental lemma of the calculus of variations
 forces the interior coefficient of $\eta$ to vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Once step <1>5 holds, stationarity for arbitrary boundary values of
+Once step [](#s1-5){.pf-ref} holds, stationarity for arbitrary boundary values of
 $\eta$ gives the natural boundary condition
 $$
 \boxed{
@@ -245,14 +245,14 @@ on $\partial D$.
 
 ::: pf-proof
 
-With the interior term zero, step <1>4 reduces to the boundary integral. Since
+With the interior term zero, step [](#s1-4){.pf-ref} reduces to the boundary integral. Since
 $\eta|_{\partial D}$ is arbitrary, the boundary coefficient must vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus the extrema of $J$ satisfy precisely the corrected system in
 part (a).
@@ -260,13 +260,13 @@ part (a).
 
 ::: pf-proof
 
-Combine steps <1>5--<1>6.
+Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For part (b), define
 $$
@@ -294,7 +294,7 @@ is $hf\eta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The first variation of the new boundary contribution is
 $$
@@ -320,10 +320,10 @@ with respect to $\varepsilon$ at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore $J_h$ has the same interior Euler--Lagrange equation as in
-step <1>5 and the boundary condition
+step [](#s1-5){.pf-ref} and the boundary condition
 $$
 \boxed{
 F_{f_x}n_x
@@ -344,7 +344,7 @@ is still
 $$
 (F_{f_x}n_x+F_{f_y}n_y)\eta.
 $$
-Adding step <1>9 gives the total boundary coefficient
+Adding step [](#s1-9){.pf-ref} gives the total boundary coefficient
 $$
 F_{f_x}n_x
 +
@@ -362,7 +362,7 @@ Stationarity for arbitrary boundary variations forces it to vanish.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and steps <1>8--<1>10 give the required modified
+Step [](#s1-7){.pf-ref} proves part (a), and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give the required modified
 functional for part (b).
 
 :::

@@ -25,7 +25,7 @@ Assume, as implicit in the statement, that \(f\) is meromorphic on the Riemann s
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The positively oriented contour \(\gamma\) satisfies
 \[
@@ -42,7 +42,7 @@ Because \(\gamma\) is traveled counterclockwise, it is positively oriented with 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residues on the Riemann sphere satisfy
 \[
@@ -61,7 +61,7 @@ The total-residue theorem on the Riemann sphere states that the sum of the resid
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -73,13 +73,13 @@ Hence
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \sum_{a\in I}\operatorname{Res}_{z=a}f
 =-
 \sum_{b\in O}\operatorname{Res}_{z=b}f.
 \]
-Substituting this identity into step <1>1 gives the claimed outside-residue formula. In particular, the residue at \(\infty\) is included in the second sum exactly as stated in the problem.
+Substituting this identity into step [](#s1-1){.pf-ref} gives the claimed outside-residue formula. In particular, the residue at \(\infty\) is included in the second sum exactly as stated in the problem.
 
 :::
 
@@ -87,7 +87,7 @@ Substituting this identity into step <1>1 gives the claimed outside-residue form
 
 ::: pf-qed
 
-Step <1>3 is the required identity.
+Step [](#s1-3){.pf-ref} is the required identity.
 
 :::
 

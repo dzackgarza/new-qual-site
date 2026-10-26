@@ -35,7 +35,7 @@ Fix any submultiplicative matrix norm $\|\cdot\|$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 As $N\to\infty$,
 $$
@@ -79,7 +79,7 @@ which is $O(N^{-2})$. The argument for $B$ is identical.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -95,7 +95,7 @@ $$
 
 ::: pf-proof
 
-Multiply the two expansions from step <1>1:
+Multiply the two expansions from step [](#s1-1){.pf-ref}:
 $$
 \left(I+\frac AN+O(N^{-2})\right)
 \left(I+\frac BN+O(N^{-2})\right).
@@ -107,7 +107,7 @@ $O(N^{-2})$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Put
 $$
@@ -131,13 +131,13 @@ $$
 
 ::: pf-proof
 
-This is step <1>2 rewritten.
+This is step [](#s1-2){.pf-ref} rewritten.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For all sufficiently large $N$, the convergent logarithm series gives
 $$
@@ -165,7 +165,7 @@ $\|X_N\|^2$ for $N$ large enough.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -177,7 +177,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>3--<1>4,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
 \log\left(e^{A/N}e^{B/N}\right)
@@ -193,7 +193,7 @@ Multiply by $N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For sufficiently large $N$,
 $$
@@ -212,7 +212,7 @@ $$
 Y_N=e^{A/N}e^{B/N}=I+X_N.
 $$
 For $N$ large, $\log Y_N$ is defined by the convergent series from step
-<1>4 and satisfies
+[](#s1-4){.pf-ref} and satisfies
 $$
 e^{\log Y_N}=Y_N.
 $$
@@ -229,7 +229,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Taking $N\to\infty$ gives
 $$
@@ -244,13 +244,13 @@ $$
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 N\log\left(e^{A/N}e^{B/N}\right)
 \longrightarrow
 A+B.
 $$
-The matrix exponential is continuous, so step <1>6 yields
+The matrix exponential is continuous, so step [](#s1-6){.pf-ref} yields
 $$
 \left(e^{A/N}e^{B/N}\right)^N
 \longrightarrow
@@ -263,7 +263,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the Lie--Trotter product formula.
+Step [](#s1-7){.pf-ref} is the Lie--Trotter product formula.
 
 :::
 

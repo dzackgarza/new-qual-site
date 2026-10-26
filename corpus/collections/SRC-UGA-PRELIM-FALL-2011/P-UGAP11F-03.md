@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The radius of convergence is $1$.
 
@@ -59,7 +59,7 @@ i.e. for $1<x<3$, and diverges for $|x-2|>1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $x=3$, the series converges.
 
@@ -77,7 +77,7 @@ the alternating harmonic series, which converges by the alternating-series test.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At $x=1$, the series diverges.
 
@@ -97,7 +97,7 @@ which is the harmonic series and diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the set of real points where the power series converges is exactly
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives convergence on $(1,3)$ and divergence outside $[1,3]$. Steps <1>2--<1>3 determine the two endpoints.
+Step [](#s1-1){.pf-ref} gives convergence on $(1,3)$ and divergence outside $[1,3]$. Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} determine the two endpoints.
 
 :::
 
@@ -115,7 +115,7 @@ Step <1>1 gives convergence on $(1,3)$ and divergence outside $[1,3]$. Steps <1>
 
 ::: pf-qed
 
-Step <1>4 gives the requested example and its exact interval of convergence.
+Step [](#s1-4){.pf-ref} gives the requested example and its exact interval of convergence.
 
 :::
 

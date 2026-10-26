@@ -23,7 +23,7 @@ Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The bounded region $U$ enclosed by $\gamma$ satisfies
 $$
@@ -46,7 +46,7 @@ The function $f$ is holomorphic on a neighborhood of $\overline U$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 U\subset\Omega,
 $$
@@ -64,7 +64,7 @@ Since $\Omega$ is open, $f$ is holomorphic on an open neighborhood of the compac
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z\in U$,
 $$
@@ -95,7 +95,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \abs{f(z)}
 \le
@@ -116,7 +116,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

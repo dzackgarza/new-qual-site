@@ -27,7 +27,7 @@ and U is $\mathrm { ~ a ~ } C ^ { 1 }$ function of $x , y , z$ . Write the syste
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the coordinate $x$, the Euler--Lagrange equation is
 $$
@@ -49,7 +49,7 @@ the Euler--Lagrange equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -80,7 +80,7 @@ with respect to $x'$ and $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -90,7 +90,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>2 into step <1>1:
+Substitute step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}:
 $$
 \frac d{dt}(mx')+U_x=0.
 $$
@@ -99,7 +99,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The same argument for the coordinate $y$ gives
 $$
@@ -121,7 +121,7 @@ Substitute into the Euler--Lagrange equation for $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The same argument for the coordinate $z$ gives
 $$
@@ -142,7 +142,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the extremals satisfy
 $$
@@ -161,7 +161,7 @@ $$
 
 ::: pf-proof
 
-Collect the three scalar equations from steps <1>3--<1>5 into vector form.
+Collect the three scalar equations from steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} into vector form.
 
 :::
 
@@ -169,7 +169,7 @@ Collect the three scalar equations from steps <1>3--<1>5 into vector form.
 
 ::: pf-qed
 
-Step <1>6 is the required Euler--Lagrange system.
+Step [](#s1-6){.pf-ref} is the required Euler--Lagrange system.
 
 :::
 

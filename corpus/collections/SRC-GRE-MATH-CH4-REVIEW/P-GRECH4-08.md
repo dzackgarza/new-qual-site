@@ -34,7 +34,7 @@ such that $f(0) = f'(0) = f''(0) = 0$ and $f'''(0) = -1$. What is $f(x)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The general real solution is
 $$
@@ -58,7 +58,7 @@ Thus $0$ is a double root and $\pm1$ are simple roots, giving the displayed gene
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The conditions $f(0)=f''(0)=0$ imply
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 $$
 y(0)=A+C=0.
 $$
@@ -82,7 +82,7 @@ so $y''(0)=C=0$. Substituting this into $A+C=0$ gives $A=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The conditions $f'(0)=0$ and $f'''(0)=-1$ imply
 $$
@@ -92,11 +92,11 @@ $$
 
 ::: pf-proof
 
-Differentiating step <1>1 gives
+Differentiating step [](#s1-1){.pf-ref} gives
 $$
 y'=B+C\sinh x+D\cosh x,
 $$
-so, using $C=0$ from step <1>2,
+so, using $C=0$ from step [](#s1-2){.pf-ref},
 $$
 y'(0)=B+D=0.
 $$
@@ -114,7 +114,7 @@ Therefore $B=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Consequently
 $$
@@ -125,7 +125,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Substitute the constants from steps <1>2 and <1>3 into the general solution in step <1>1.
+Substitute the constants from steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} into the general solution in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -133,7 +133,7 @@ Substitute the constants from steps <1>2 and <1>3 into the general solution in s
 
 ::: pf-qed
 
-Step <1>4 gives the requested solution and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested solution and corresponding choice.
 
 :::
 

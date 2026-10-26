@@ -28,7 +28,7 @@ Calculate
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $r>0$,
 \[
@@ -58,7 +58,7 @@ The length of $\gamma_r$ is $\pi r$, so the ML inequality gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -68,7 +68,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>1, the absolute value of the integral is bounded by $\pi/r$, which tends to $0$ as $r\to\infty$. The squeeze theorem gives the stated limit.
+By step [](#s1-1){.pf-ref}, the absolute value of the integral is bounded by $\pi/r$, which tends to $0$ as $r\to\infty$. The squeeze theorem gives the stated limit.
 
 :::
 
@@ -76,7 +76,7 @@ By step <1>1, the absolute value of the integral is bounded by $\pi/r$, which te
 
 ::: pf-qed
 
-Step <1>2 gives the requested value.
+Step [](#s1-2){.pf-ref} gives the requested value.
 
 :::
 

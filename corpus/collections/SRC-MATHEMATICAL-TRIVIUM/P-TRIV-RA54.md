@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The series converges absolutely for
 $$
@@ -59,7 +59,7 @@ telescopes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -80,7 +80,7 @@ Exponential growth dominates the quadratic denominator, so these terms do not te
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the complete convergence set is
 $$
@@ -90,13 +90,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n\geq1$,
 $$
@@ -114,7 +114,7 @@ Combine the two fractions on the right over the common denominator $n(n+1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $|x|<1$ and $x\neq0$,
 $$
@@ -130,16 +130,16 @@ $$
 
 ::: pf-proof
 
-Use step <1>4 term by term.
+Use step [](#s1-4){.pf-ref} term by term.
 Absolute convergence permits splitting the series.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The first sum in step <1>5 is
+The first sum in step [](#s1-5){.pf-ref} is
 $$
 \sum_{n=1}^{\infty}
 \frac{x^{n-1}}n
@@ -162,9 +162,9 @@ Divide by $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The second sum in step <1>5 is
+The second sum in step [](#s1-5){.pf-ref} is
 $$
 \sum_{n=1}^{\infty}
 \frac{x^{n-1}}{n+1}
@@ -195,7 +195,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore, for $|x|<1$ and $x\neq0$,
 $$
@@ -209,13 +209,13 @@ $$
 
 ::: pf-proof
 
-Substitute steps <1>6--<1>7 into step <1>5 and combine over the denominator $x^2$.
+Substitute steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} into step [](#s1-5){.pf-ref} and combine over the denominator $x^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 At $x=0$,
 $$
@@ -230,13 +230,13 @@ The $n=1$ term is
 $$
 \frac1{1\cdot2}.
 $$
-The formula in step <1>8 has the same removable limit.
+The formula in step [](#s1-8){.pf-ref} has the same removable limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 At $x=1$,
 $$
@@ -262,7 +262,7 @@ which telescopes to $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 At $x=-1$,
 $$
@@ -272,7 +272,7 @@ $$
 
 ::: pf-proof
 
-Because the series converges absolutely at $x=-1$, its value equals the continuous boundary limit of the power-series expression in step <1>8. Thus
+Because the series converges absolutely at $x=-1$, its value equals the continuous boundary limit of the power-series expression in step [](#s1-8){.pf-ref}. Thus
 $$
 S(-1)
 =
@@ -285,7 +285,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the full convergence set, and steps <1>8--<1>11 give the sum at every point of that set.
+Step [](#s1-3){.pf-ref} gives the full convergence set, and steps [](#s1-8){.pf-ref} through [](#s1-11){.pf-ref} give the sum at every point of that set.
 
 :::
 

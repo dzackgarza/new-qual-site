@@ -22,7 +22,7 @@ Consider first
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(n\ge2\),
 \[
@@ -43,7 +43,7 @@ is at most \(n\), so the product is at most the product of \(n\) copies of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -53,7 +53,7 @@ Therefore
 
 ::: pf-proof
 
-The logarithm is increasing on \((0,\infty)\). Apply \(\log\) to step <1>1:
+The logarithm is increasing on \((0,\infty)\). Apply \(\log\) to step [](#s1-1){.pf-ref}:
 \[
 \log(n^n)=n\log n.
 \]
@@ -62,7 +62,7 @@ The logarithm is increasing on \((0,\infty)\). Apply \(\log\) to step <1>1:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -76,13 +76,13 @@ Hence
 ::: pf-proof
 
 For \(n\ge2\), both denominators are positive. Taking reciprocals reverses
-the inequality in step <1>2.
+the inequality in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The comparison series
 \[
@@ -110,7 +110,7 @@ By the integral test,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -123,14 +123,14 @@ Therefore
 
 ::: pf-proof
 
-The terms are nonnegative, and step <1>3 bounds them below by the terms of
-the divergent series in step <1>4.
+The terms are nonnegative, and step [](#s1-3){.pf-ref} bounds them below by the terms of
+the divergent series in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -161,7 +161,7 @@ The two expressions are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -174,13 +174,13 @@ Hence
 
 ::: pf-proof
 
-Take reciprocals in step <1>6.
+Take reciprocals in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There exists \(N\) such that for every \(n\ge N\),
 \[
@@ -204,7 +204,7 @@ works.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore, for all \(n\ge N\),
 \[
@@ -217,7 +217,7 @@ Therefore, for all \(n\ge N\),
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \log\log n\ge2.
 \]
@@ -232,7 +232,7 @@ Take reciprocals.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The series
 \[
@@ -253,7 +253,7 @@ p=2>1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -266,8 +266,8 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>7 and <1>9, its tail is bounded above by the convergent series in
-step <1>10. Finitely many initial terms do not affect convergence.
+By steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}, its tail is bounded above by the convergent series in
+step [](#s1-10){.pf-ref}. Finitely many initial terms do not affect convergence.
 
 :::
 
@@ -275,7 +275,7 @@ step <1>10. Finitely many initial terms do not affect convergence.
 
 ::: pf-qed
 
-Step <1>5 gives divergence of the first series, and step <1>11 gives
+Step [](#s1-5){.pf-ref} gives divergence of the first series, and step [](#s1-11){.pf-ref} gives
 convergence of the second.
 
 :::

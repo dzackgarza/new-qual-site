@@ -28,7 +28,7 @@ View $A$ as a complex matrix acting on $\mathbb C^n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every eigenvalue of $A$ is purely imaginary.
 
@@ -89,7 +89,7 @@ to be purely imaginary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The nonzero eigenvalues occur in conjugate pairs
 \[
@@ -102,7 +102,7 @@ with $\mu\in\mathbb R\setminus\{0\}$.
 
 The characteristic polynomial of $A$ has real coefficients.
 Hence if $\lambda$ is a nonreal root, then its complex conjugate $\overline\lambda$ is also a root with the same algebraic multiplicity.
-By step <1>1, every nonzero eigenvalue has the form
+By step [](#s1-1){.pf-ref}, every nonzero eigenvalue has the form
 \[
 i\mu
 \]
@@ -115,7 +115,7 @@ with $\mu\in\mathbb R\setminus\{0\}$, and its conjugate is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $0$ is an eigenvalue of $A$, then
 \[
@@ -132,7 +132,7 @@ Thus the determinant vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $0$ is not an eigenvalue, then
 \[
@@ -142,7 +142,7 @@ If $0$ is not an eigenvalue, then
 
 ::: pf-proof
 
-By step <1>2, the eigenvalues can be grouped into conjugate pairs
+By step [](#s1-2){.pf-ref}, the eigenvalues can be grouped into conjugate pairs
 \[
 i\mu_j,\ -i\mu_j.
 \]
@@ -161,7 +161,7 @@ Thus the full product is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -171,8 +171,8 @@ Therefore
 
 ::: pf-proof
 
-If $0$ is an eigenvalue, apply step <1>3.
-Otherwise apply step <1>4.
+If $0$ is an eigenvalue, apply step [](#s1-3){.pf-ref}.
+Otherwise apply step [](#s1-4){.pf-ref}.
 These cases exhaust all possibilities.
 
 :::
@@ -181,7 +181,7 @@ These cases exhaust all possibilities.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

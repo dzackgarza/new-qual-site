@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrices $J$ and $-J$ are similar in $GL_2(\mathbb R)$.
 
@@ -86,7 +86,7 @@ Thus $J$ and $-J$ are conjugate in $GL_2(\mathbb R)$. Notice that $\det S=-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $P\in GL_2(\mathbb R)$ satisfying
 $$
@@ -147,7 +147,7 @@ Since $P$ is invertible, $(a,b)\neq(0,0)$, and therefore $\det P<0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus
 $$
@@ -158,7 +158,7 @@ form a counterexample: they are similar in $GL_2(\mathbb R)$ but are not conjuga
 
 ::: pf-proof
 
-Similarity is step <1>2. If they were conjugate in $GL_2^+(\mathbb R)$, there would be a conjugator $P$ of positive determinant, contradicting step <1>3.
+Similarity is step [](#s1-2){.pf-ref}. If they were conjugate in $GL_2^+(\mathbb R)$, there would be a conjugator $P$ of positive determinant, contradicting step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -166,7 +166,7 @@ Similarity is step <1>2. If they were conjugate in $GL_2^+(\mathbb R)$, there wo
 
 ::: pf-qed
 
-Step <1>4 disproves the proposed equivalence.
+Step [](#s1-4){.pf-ref} disproves the proposed equivalence.
 
 :::
 

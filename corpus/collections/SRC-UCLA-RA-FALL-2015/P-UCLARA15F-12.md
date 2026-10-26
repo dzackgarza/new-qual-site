@@ -57,7 +57,7 @@ which lies on the boundary of the region and is excluded from \(\Omega\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -94,7 +94,7 @@ becomes
 
 ::: pf-proof
 
-Substitute step <1>2.
+Substitute step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -124,7 +124,7 @@ Since \(w\ne0\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Squaring gives
 \[
@@ -155,7 +155,7 @@ the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the outer circle maps to the vertical line
 \[
@@ -166,7 +166,7 @@ Hence the outer circle maps to the vertical line
 
 ::: pf-proof
 
-Cancel \(4|w|^2\) from step <1>5:
+Cancel \(4|w|^2\) from step [](#s1-5){.pf-ref}:
 \[
 4\operatorname{Re}w+1=0.
 \]
@@ -228,7 +228,7 @@ Multiplying by \(|w|\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Squaring gives
 \[
@@ -252,7 +252,7 @@ Squaring gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence the inner circle maps to the vertical line
 \[
@@ -263,7 +263,7 @@ Hence the inner circle maps to the vertical line
 
 ::: pf-proof
 
-Cancel \(|w|^2\) in step <1>9.
+Cancel \(|w|^2\) in step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -345,7 +345,7 @@ U_{\eta\eta}=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 On the line
 \[
@@ -371,7 +371,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 On the line
 \[
@@ -397,7 +397,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Define
 \[
@@ -424,7 +424,7 @@ u=U\circ w.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The function \(u\) is harmonic in \(\Omega\).
 
@@ -441,7 +441,7 @@ is holomorphic on \(\Omega\), so its real part is harmonic. Affine combinations 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 On the outer circle \(|z|=2\), away from \(z=2\),
 \[
@@ -451,19 +451,19 @@ On the outer circle \(|z|=2\), away from \(z=2\),
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 \operatorname{Re}\frac1{z-2}
 =
 -\frac14.
 \]
-Apply step <1>14.
+Apply step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 On the inner circle \(|z-1|=1\), away from \(z=2\),
 \[
@@ -473,19 +473,19 @@ On the inner circle \(|z-1|=1\), away from \(z=2\),
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 \operatorname{Re}\frac1{z-2}
 =
 -\frac12.
 \]
-Apply step <1>15.
+Apply step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 In Cartesian coordinates,
 \[
@@ -513,13 +513,13 @@ its real part is
 \[
 \frac{x-2}{(x-2)^2+y^2}.
 \]
-Substitute into step <1>16.
+Substitute into step [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore the required harmonic function is
 \[
@@ -537,7 +537,7 @@ u(x,y)
 
 ::: pf-proof
 
-Steps <1>17--<1>20 verify harmonicity and both boundary values.
+Steps [](#s1-17){.pf-ref} through [](#s1-20){.pf-ref} verify harmonicity and both boundary values.
 
 :::
 
@@ -545,7 +545,7 @@ Steps <1>17--<1>20 verify harmonicity and both boundary values.
 
 ::: pf-qed
 
-Step <1>21 is the requested function.
+Step [](#s1-21){.pf-ref} is the requested function.
 
 :::
 

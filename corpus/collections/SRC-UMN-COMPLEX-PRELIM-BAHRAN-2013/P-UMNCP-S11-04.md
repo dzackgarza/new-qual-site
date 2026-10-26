@@ -28,7 +28,7 @@ The retained solution notes explicitly record that the printed exam omitted the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Schwarz's lemma gives
 $$
@@ -60,7 +60,7 @@ is holomorphic on $\mathbb D$, maps $\mathbb D$ into the closed unit disk, and s
 
 ::: pf-proof
 
-Since $f(0)=0$, the quotient $f(z)/z$ has a removable singularity at $0$ with value $f'(0)$. Thus $g$ is holomorphic. Step <1>1 gives
+Since $f(0)=0$, the quotient $f(z)/z$ has a removable singularity at $0$ with value $f'(0)$. Thus $g$ is holomorphic. Step [](#s1-1){.pf-ref} gives
 $$
 |g(z)|\le1
 $$
@@ -70,7 +70,7 @@ for $z\ne0$, and continuity gives the same bound at $0$. The hypothesis $f'(0)=0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A second application of Schwarz's lemma gives
 $$
@@ -87,7 +87,7 @@ If $g$ were a unimodular constant then $g(0)$ would have modulus $1$, contrary t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is a holomorphic function $h:\mathbb D\to\overline{\mathbb D}$ such that
 $$
@@ -97,7 +97,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, the function
+By step [](#s1-3){.pf-ref}, the function
 $$
 h(z)=
 \begin{cases}
@@ -115,7 +115,7 @@ Since $g(z)=zh(z)$ and $f(z)=zg(z)$, one gets $f(z)=z^2h(z)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -139,7 +139,7 @@ Evaluating at $z=0$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -149,7 +149,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>4--<1>5,
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
 |f''(0)|=2|h(0)|\le2.
 $$
@@ -158,7 +158,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Equality
 $$
@@ -173,7 +173,7 @@ for some $\theta\in\RR$.
 
 ::: pf-proof
 
-If equality holds, then step <1>5 gives
+If equality holds, then step [](#s1-5){.pf-ref} gives
 $$
 |h(0)|=1.
 $$
@@ -202,7 +202,7 @@ whose modulus is $2$.
 
 ::: pf-qed
 
-Step <1>6 proves the bound, and step <1>7 gives the complete equality case.
+Step [](#s1-6){.pf-ref} proves the bound, and step [](#s1-7){.pf-ref} gives the complete equality case.
 
 :::
 

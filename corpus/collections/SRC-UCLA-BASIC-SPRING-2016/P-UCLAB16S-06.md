@@ -46,7 +46,7 @@ and
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -69,7 +69,7 @@ This is exactly the negation of the defining inequality
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -120,7 +120,7 @@ Thus equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The complement of the open ball $B(x,r)$ is open.
 
@@ -131,7 +131,7 @@ Take
 \[
 y\notin B(x,r).
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \rho(x,y)\ge r.
 \]
@@ -139,7 +139,7 @@ For every
 \[
 z\in B(y,\rho(x,y)),
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 \rho(x,z)
 =
@@ -163,7 +163,7 @@ So every point of the complement has an open neighborhood contained in the compl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -173,7 +173,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 shows that its complement is open.
+Step [](#s1-3){.pf-ref} shows that its complement is open.
 
 :::
 
@@ -199,7 +199,7 @@ This is the definition of the closed ball.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -238,7 +238,7 @@ z\in\overline B(x,r).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -252,7 +252,7 @@ For every
 \[
 y\in\overline B(x,r),
 \]
-step <1>6 gives
+step [](#s1-6){.pf-ref} gives
 \[
 B(y,r)
 \subseteq
@@ -266,7 +266,7 @@ Thus every point of the closed ball has an open neighborhood contained in it.
 
 ::: pf-qed
 
-Step <1>4 proves that every open ball is closed, and step <1>7 proves that every closed ball is open.
+Step [](#s1-4){.pf-ref} proves that every open ball is closed, and step [](#s1-7){.pf-ref} proves that every closed ball is open.
 
 :::
 

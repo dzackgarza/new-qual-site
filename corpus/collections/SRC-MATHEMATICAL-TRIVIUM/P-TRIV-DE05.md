@@ -59,7 +59,7 @@ Substitute into the differential equation and divide by the nonzero factor $e^{\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The characteristic polynomial factors as
 $$
@@ -92,13 +92,13 @@ $$
 
 ::: pf-proof
 
-Solve the two linear factors from step <1>3.
+Solve the two linear factors from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore two independent solutions are
 $$
@@ -118,7 +118,7 @@ Each exponential corresponds to one characteristic root. Distinct roots give lin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus the general solution is
 $$
@@ -131,7 +131,7 @@ with arbitrary constants $C_1,C_2\in\mathbb R$.
 
 ::: pf-proof
 
-A second-order homogeneous linear equation has a two-dimensional solution space, and step <1>5 provides a basis.
+A second-order homogeneous linear equation has a two-dimensional solution space, and step [](#s1-5){.pf-ref} provides a basis.
 
 :::
 
@@ -139,7 +139,7 @@ A second-order homogeneous linear equation has a two-dimensional solution space,
 
 ::: pf-qed
 
-Step <1>6 is the complete solution family.
+Step [](#s1-6){.pf-ref} is the complete solution family.
 
 :::
 

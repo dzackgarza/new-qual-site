@@ -26,7 +26,7 @@ z_0=\frac i2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Möbius transformation
 \[
@@ -70,7 +70,7 @@ Conversely, $M^{-1}$ maps the right half-plane to $\mathbb D$ and the upper half
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 \[
@@ -116,13 +116,13 @@ is a biholomorphism
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At
 \[
@@ -171,7 +171,7 @@ q_0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The derivative of $\Phi$ at $z_0$ satisfies
 \[
@@ -224,7 +224,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -301,7 +301,7 @@ which is the first inequality. The second follows from $1-|a|^2\le1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -333,13 +333,13 @@ so
 =
 |G'(q_0)|\,|\Phi'(z_0)|.
 \]
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 |G'(q_0)|
 \le
 \frac1{2\operatorname{Im}q_0}.
 \]
-Using steps <1>4 and <1>5,
+Using steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref},
 \[
 \operatorname{Im}q_0
 =
@@ -362,7 +362,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -379,13 +379,13 @@ For every complex number $w$,
 \[
 \operatorname{Re}w\le|w|.
 \]
-Apply step <1>7 to $w=f'(z_0)$.
+Apply step [](#s1-7){.pf-ref} to $w=f'(z_0)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The bound $5/3$ is attained.
 
@@ -398,7 +398,7 @@ Use the map
 =
 \frac{w-q_0}{w-\overline{q_0}}
 \]
-from step <1>6 and define
+from step [](#s1-6){.pf-ref} and define
 \[
 f_0
 =
@@ -416,7 +416,7 @@ The function $f_0$ maps $\Omega$ holomorphically into $\mathbb D$. Since
 =
 \frac1{2\operatorname{Im}q_0},
 \]
-steps <1>4--<1>5 give
+steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give
 \[
 |f_0'(z_0)|
 =
@@ -430,7 +430,7 @@ The phase $e^{i\theta}$ makes this derivative equal to the positive real number 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -448,7 +448,7 @@ f:\Omega\to\mathbb D
 
 ::: pf-proof
 
-Step <1>8 gives the upper bound and step <1>9 attains it.
+Step [](#s1-8){.pf-ref} gives the upper bound and step [](#s1-9){.pf-ref} attains it.
 
 :::
 
@@ -456,7 +456,7 @@ Step <1>8 gives the upper bound and step <1>9 attains it.
 
 ::: pf-qed
 
-Step <1>10 is the required value.
+Step [](#s1-10){.pf-ref} is the required value.
 
 :::
 

@@ -35,7 +35,7 @@ but $f$ is not continuous at $(0,0)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is not continuous at $(0,0)$.
 
@@ -84,7 +84,7 @@ Therefore the two-variable limit of $f(x,y)$ at $(0,0)$ cannot equal $f(0,0)$, s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A sufficient condition for $g:\RR^2\to\RR$ to be differentiable at $P=(a,b)$ is that $g_x$ and $g_y$ exist on a neighborhood of $P$ and are continuous at $P$.
 
@@ -119,7 +119,7 @@ which is precisely differentiability of $g$ at $P$.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove part (a), and step <1>3 gives and justifies the sufficient condition requested in part (b).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), and step [](#s1-3){.pf-ref} gives and justifies the sufficient condition requested in part (b).
 
 :::
 

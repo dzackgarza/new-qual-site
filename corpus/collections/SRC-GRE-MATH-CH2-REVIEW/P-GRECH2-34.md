@@ -27,7 +27,7 @@ The region bounded by the graphs of $y = x^2$ and $y = 6 - |x|$ is revolved arou
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two curves meet at $(\pm2,4)$.
 
@@ -48,7 +48,7 @@ The nonnegative solution is $x=2$, giving $y=4$. Reflection across the $y$-axis 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A horizontal cross-section of the rotated solid has radius
 $$
@@ -62,13 +62,13 @@ $$
 
 ::: pf-proof
 
-The parabola gives $|x|=\sqrt y$, while the graph $y=6-|x|$ gives $|x|=6-y$. The bounded region uses the smaller of these two radii. They are equal at $y=4$ by step <1>1; below $4$ one has $\sqrt y\le6-y$, and above $4$ one has $6-y\le\sqrt y$.
+The parabola gives $|x|=\sqrt y$, while the graph $y=6-|x|$ gives $|x|=6-y$. The bounded region uses the smaller of these two radii. They are equal at $y=4$ by step [](#s1-1){.pf-ref}; below $4$ one has $\sqrt y\le6-y$, and above $4$ one has $6-y\le\sqrt y$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The volume is
 $$
@@ -79,7 +79,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Using the disk method and step <1>2,
+Using the disk method and step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 V
@@ -97,7 +97,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested volume and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested volume and corresponding choice.
 
 :::
 

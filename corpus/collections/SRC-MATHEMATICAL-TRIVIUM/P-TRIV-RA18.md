@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Integration by parts gives
 $$
@@ -46,7 +46,7 @@ Take $u=\sin x$ and $dv=e^{2x}\,dx$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -70,9 +70,9 @@ Integrate $J$ by parts with $u=\cos x$ and $dv=e^{2x}\,dx$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Substituting step <1>2 into step <1>1 gives
+Substituting step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref} gives
 $$
 I
 =
@@ -86,13 +86,13 @@ $$
 
 ::: pf-proof
 
-Replace the cosine integral in step <1>1 by $J$ from step <1>2.
+Replace the cosine integral in step [](#s1-1){.pf-ref} by $J$ from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -109,7 +109,7 @@ $$
 
 ::: pf-proof
 
-Move $-I/4$ in step <1>3 to the left:
+Move $-I/4$ in step [](#s1-3){.pf-ref} to the left:
 $$
 \frac54I
 =
@@ -133,7 +133,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required antiderivative.
+Step [](#s1-4){.pf-ref} is the required antiderivative.
 
 :::
 

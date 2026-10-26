@@ -30,7 +30,7 @@ The five graphical choices (A)–(E) appear on the source page:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Wherever the differential equation is defined, it is equivalent to
 $$
@@ -60,7 +60,7 @@ Hence $y'=x/y$. The original equation contains $x/y$, so it is defined only wher
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its integral curves satisfy
 $$
@@ -70,7 +70,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 y\,dy=x\,dx.
 $$
@@ -84,7 +84,7 @@ equivalently $y^2-x^2=C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required depiction is
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-For $C=0$, step <1>2 gives the two lines $y=\pm x$; the origin is omitted because $y=0$ there. For $C>0$, the curves are hyperbolas opening in the $y$-direction. For $C<0$, they are hyperbolas opening in the $x$-direction, with their intersections with the $x$-axis omitted because the differential equation is undefined when $y=0$. Among the source figures, exactly choice (C) has these curves and deleted points.
+For $C=0$, step [](#s1-2){.pf-ref} gives the two lines $y=\pm x$; the origin is omitted because $y=0$ there. For $C>0$, the curves are hyperbolas opening in the $y$-direction. For $C<0$, they are hyperbolas opening in the $x$-direction, with their intersections with the $x$-axis omitted because the differential equation is undefined when $y=0$. Among the source figures, exactly choice (C) has these curves and deleted points.
 
 :::
 
@@ -102,7 +102,7 @@ For $C=0$, step <1>2 gives the two lines $y=\pm x$; the origin is omitted becaus
 
 ::: pf-qed
 
-Step <1>3 identifies the requested family of integral curves.
+Step [](#s1-3){.pf-ref} identifies the requested family of integral curves.
 
 :::
 

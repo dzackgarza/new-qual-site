@@ -27,7 +27,7 @@ I_n
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since \(n\ne1\),
 \[
@@ -68,13 +68,13 @@ I_n
 
 ::: pf-proof
 
-Apply the fundamental theorem of calculus using step <1>1.
+Apply the fundamental theorem of calculus using step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -105,13 +105,13 @@ I_n
 
 ::: pf-proof
 
-Multiply numerator and denominator in step <1>3 by \(-1\).
+Multiply numerator and denominator in step [](#s1-3){.pf-ref} by \(-1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -135,7 +135,7 @@ the denominator is at least \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -149,7 +149,7 @@ I_n
 
 ::: pf-proof
 
-From step <1>5,
+From step [](#s1-5){.pf-ref},
 \[
 0\le1-n^{1-n}\le1.
 \]
@@ -159,7 +159,7 @@ Divide by the positive number \(n-1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
@@ -174,13 +174,13 @@ I_n\to0}.
 
 ::: pf-proof
 
-Apply the squeeze theorem to step <1>6.
+Apply the squeeze theorem to step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -194,7 +194,7 @@ Therefore
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -202,7 +202,7 @@ This is step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the requested limit.
+Step [](#s1-8){.pf-ref} is the requested limit.
 
 :::
 

@@ -26,7 +26,7 @@ unit ball. The same computation gives the radius-$R$ formula as well.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In spherical coordinates,
 $$
@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The unit ball is described by
 $$
@@ -85,13 +85,13 @@ $$
 
 ::: pf-proof
 
-Integrate the volume element from step <1>1 over the region from step <1>2.
+Integrate the volume element from step [](#s1-1){.pf-ref} over the region from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The three one-dimensional integrals are
 $$
@@ -118,7 +118,7 @@ Evaluate each elementary integral directly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -132,13 +132,13 @@ $$
 
 ::: pf-proof
 
-Multiply the three factors from step <1>4.
+Multiply the three factors from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 More generally, a ball of radius $R$ has volume
 $$
@@ -164,7 +164,7 @@ The angular integrals are unchanged.
 
 ::: pf-qed
 
-Step <1>5 gives the volume of the unit ball, and step <1>6 records the general
+Step [](#s1-5){.pf-ref} gives the volume of the unit ball, and step [](#s1-6){.pf-ref} records the general
 radius formula.
 
 :::

@@ -34,7 +34,7 @@ Prove that $T$ is positive-definite Hermitian and find all possible eigenvalues 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (i), every eigenvalue of $A$ is nonpositive.
 
@@ -73,7 +73,7 @@ it follows that
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The trace of $A$ is the sum of its eigenvalues.
 
@@ -97,7 +97,7 @@ Trace is invariant under similarity, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -108,12 +108,12 @@ then every eigenvalue of $A$ is zero.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \lambda_i\le0
 \]
 for every $i$.
-By step <1>2 and the trace hypothesis,
+By step [](#s1-2){.pf-ref} and the trace hypothesis,
 \[
 \sum_{i=1}^n\lambda_i=0.
 \]
@@ -128,7 +128,7 @@ for all $i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -139,7 +139,7 @@ Therefore
 ::: pf-proof
 
 The symmetric matrix $A$ is orthogonally diagonalizable.
-By step <1>3, its diagonal form has only zero entries.
+By step [](#s1-3){.pf-ref}, its diagonal form has only zero entries.
 Hence the diagonal form is the zero matrix, and therefore so is $A$.
 This proves part (i).
 
@@ -147,7 +147,7 @@ This proves part (i).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (ii), the operator
 \[
@@ -172,7 +172,7 @@ Thus $TT^*$ is self-adjoint.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The identity
 \[
@@ -183,7 +183,7 @@ forces $T$ to be Hermitian.
 
 ::: pf-proof
 
-By step <1>5, the left-hand side is Hermitian.
+By step [](#s1-5){.pf-ref}, the left-hand side is Hermitian.
 Hence the right-hand side is Hermitian:
 \[
 (4T-3I)^*
@@ -211,7 +211,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 \[
@@ -221,7 +221,7 @@ Consequently,
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 T^*=T.
 \]
@@ -246,7 +246,7 @@ T^2-4T+3I
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every eigenvalue $\lambda$ of $T$ belongs to
 \[
@@ -264,7 +264,7 @@ with
 \[
 v\ne0.
 \]
-Applying the polynomial identity from step <1>7 gives
+Applying the polynomial identity from step [](#s1-7){.pf-ref} gives
 \[
 (\lambda-1)(\lambda-3)v=0.
 \]
@@ -287,16 +287,16 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The operator $T$ is positive definite.
 
 
 ::: pf-proof
 
-By step <1>6, $T$ is Hermitian.
+By step [](#s1-6){.pf-ref}, $T$ is Hermitian.
 Hence the spectral theorem gives an orthonormal basis of eigenvectors.
-By step <1>8, every eigenvalue is either $1$ or $3$, and therefore positive.
+By step [](#s1-8){.pf-ref}, every eigenvalue is either $1$ or $3$, and therefore positive.
 
 For any nonzero
 \[
@@ -324,8 +324,8 @@ Thus
 
 ::: pf-qed
 
-Step <1>4 proves part (i).
-Steps <1>6, <1>8, and <1>9 prove part (ii): $T$ is Hermitian, its only possible eigenvalues are $1$ and $3$, and it is positive definite.
+Step [](#s1-4){.pf-ref} proves part (i).
+Steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} prove part (ii): $T$ is Hermitian, its only possible eigenvalues are $1$ and $3$, and it is positive definite.
 
 :::
 

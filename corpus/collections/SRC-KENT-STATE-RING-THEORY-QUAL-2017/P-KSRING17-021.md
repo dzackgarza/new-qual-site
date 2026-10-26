@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each
 $$
@@ -84,7 +84,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -121,7 +121,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 b_j
 =
@@ -158,7 +158,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -174,11 +174,11 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 b\in\bigcap_{j\ne i}I_j,
 $$
-and by step <1>3,
+and by step [](#s1-3){.pf-ref},
 $$
 1-b\in I_i.
 $$
@@ -198,7 +198,7 @@ Any ideal containing $1$ is the whole ring, so the sum equals $R$.
 
 ::: pf-qed
 
-The index $i$ was arbitrary, so step <1>4 proves the corrected conclusion for every $i$.
+The index $i$ was arbitrary, so step [](#s1-4){.pf-ref} proves the corrected conclusion for every $i$.
 
 :::
 

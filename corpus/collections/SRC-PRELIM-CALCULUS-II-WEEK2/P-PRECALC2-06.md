@@ -17,7 +17,7 @@ Evaluate $\int _ { 0 } ^ { a } { \frac { x ^ { 2 } + b ^ { 2 } } { x ^ { 2 } + a
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Rewrite the integrand as
 \[
@@ -42,7 +42,7 @@ division by \(x^2+a^2\) gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -59,7 +59,7 @@ a
 
 ::: pf-proof
 
-Integrate the two terms in step <1>1 separately, using
+Integrate the two terms in step [](#s1-1){.pf-ref} separately, using
 \[
 \int_0^a1\,dx=a.
 \]
@@ -84,7 +84,7 @@ Since \(a>0\), this substitution is valid on the whole interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Then
 \[
@@ -107,7 +107,7 @@ and substitute the two endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -122,7 +122,7 @@ Hence
 
 ::: pf-proof
 
-Substitute step <1>4:
+Substitute step [](#s1-4){.pf-ref}:
 \[
 \begin{aligned}
 \int_0^a\frac{dx}{x^2+a^2}
@@ -140,7 +140,7 @@ Substitute step <1>4:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -160,7 +160,7 @@ Since
 =
 \arctan u,
 \]
-step <1>5 gives
+step [](#s1-5){.pf-ref} gives
 \[
 \frac1a
 \left[
@@ -177,7 +177,7 @@ step <1>5 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 \[
@@ -191,7 +191,7 @@ a+\frac{\pi(b^2-a^2)}{4a}}.
 
 ::: pf-proof
 
-Insert step <1>6 into step <1>2.
+Insert step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -199,7 +199,7 @@ Insert step <1>6 into step <1>2.
 
 ::: pf-qed
 
-Step <1>7 is the requested value.
+Step [](#s1-7){.pf-ref} is the requested value.
 
 :::
 

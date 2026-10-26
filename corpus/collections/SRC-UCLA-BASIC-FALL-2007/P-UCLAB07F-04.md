@@ -25,7 +25,7 @@ Suppose $f:\mathbb R\to\mathbb R$ is twice differentiable and $|f''(x)|\le B$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in\mathbb R$,
 \[
@@ -50,7 +50,7 @@ B|x|.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x\in\mathbb R$,
 \[
@@ -68,7 +68,7 @@ f(x)-f(0)-xf'(0)
 =
 \int_0^x\bigl(f'(t)-f'(0)\bigr)\,dt.
 \]
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \left|f(x)-f(0)-xf'(0)\right|
 \le
@@ -81,7 +81,7 @@ Using step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $A>0$,
 \[
@@ -97,7 +97,7 @@ For every $A>0$,
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \left|f(x)-f(0)-xf'(0)\right|
 \le
@@ -126,7 +126,7 @@ one obtains
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), set
 \[
@@ -160,7 +160,7 @@ These are exactly the $n$ equal subintervals of the uniform partition of $[a,b]$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each $k$,
 \[
@@ -175,7 +175,7 @@ For each $k$,
 
 ::: pf-proof
 
-Apply step <1>3 to the translated function
+Apply step [](#s1-3){.pf-ref} to the translated function
 \[
 g_k(t)=f(c_k+t)
 \]
@@ -187,7 +187,7 @@ Since
 \[
 |g_k''(t)|=|f''(c_k+t)|\le B,
 \]
-step <1>3 gives
+step [](#s1-3){.pf-ref} gives
 \[
 \left|
 h f(c_k)
@@ -205,7 +205,7 @@ Changing variables $x=c_k+t$ gives the stated estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The midpoint quadrature error satisfies
 \[
@@ -225,7 +225,7 @@ f\!\left(a+\frac{2k-1}{2n}(b-a)\right)
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \int_a^b f(x)\,dx
 =
@@ -236,7 +236,7 @@ Subtract
 \[
 h\sum_{k=1}^n f(c_k)
 \]
-and apply the triangle inequality together with step <1>5:
+and apply the triangle inequality together with step [](#s1-5){.pf-ref}:
 \[
 \begin{aligned}
 \left|
@@ -259,7 +259,7 @@ Substituting the definitions of $h$ and $c_k$ gives exactly the displayed formul
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b) with
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b) with
 \[
 C=\frac{B(b-a)^3}{24},
 \]

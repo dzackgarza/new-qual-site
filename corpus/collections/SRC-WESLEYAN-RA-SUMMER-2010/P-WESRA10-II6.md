@@ -32,7 +32,7 @@ Calculate $\|P\|$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $H_E$ is a linear subspace of $\mathcal H$.
 
@@ -51,7 +51,7 @@ Hence $af+bg\in H_E$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The subspace $H_E$ is closed in $L^2([0,1])$.
 
@@ -88,7 +88,7 @@ Hence $f\in H_E$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -133,7 +133,7 @@ Therefore $g\in H_{E^c}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The operator
 \[
@@ -186,13 +186,13 @@ Therefore
 \frac{\|P\chi_E\|_2}{\|\chi_E\|_2}
 =1.
 \]
-Together with step <1>4, this gives $\|P\|=1$.
+Together with step [](#s1-4){.pf-ref}, this gives $\|P\|=1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $m(E)=0$, then
 \[
@@ -214,8 +214,8 @@ in $L^2$ for every $f$. Hence $P$ is the zero operator, whose norm is $0$.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove part (a), step <1>3 proves part (b), and steps
-<1>4 through <1>6 compute the norm in all cases for part (c).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), step [](#s1-3){.pf-ref} proves part (b), and steps
+[](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} compute the norm in all cases for part (c).
 
 :::
 

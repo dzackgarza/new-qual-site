@@ -24,7 +24,7 @@ sends the upper half-plane to itself.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The denominator \(cz+d\) does not vanish at any point of the upper half-plane.
 
@@ -37,7 +37,7 @@ If \(c=0\), then \(ad>bc=0\), so \(d\ne0\). If \(c\ne0\), the unique zero of \(c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(z\) in the upper half-plane,
 \[
@@ -63,7 +63,7 @@ Dividing by \(2i\) gives the stated formula for the imaginary part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -73,7 +73,7 @@ One has
 
 ::: pf-proof
 
-If \(\operatorname{Im}z>0\), then step <1>1 makes the denominator in step <1>2 strictly positive. The hypothesis \(ad>bc\) says \(ad-bc>0\). Hence step <1>2 gives \(\operatorname{Im}T(z)>0\), as required.
+If \(\operatorname{Im}z>0\), then step [](#s1-1){.pf-ref} makes the denominator in step [](#s1-2){.pf-ref} strictly positive. The hypothesis \(ad>bc\) says \(ad-bc>0\). Hence step [](#s1-2){.pf-ref} gives \(\operatorname{Im}T(z)>0\), as required.
 
 :::
 
@@ -81,7 +81,7 @@ If \(\operatorname{Im}z>0\), then step <1>1 makes the denominator in step <1>2 s
 
 ::: pf-qed
 
-Step <1>3 is the required invariance statement.
+Step [](#s1-3){.pf-ref} is the required invariance statement.
 
 :::
 

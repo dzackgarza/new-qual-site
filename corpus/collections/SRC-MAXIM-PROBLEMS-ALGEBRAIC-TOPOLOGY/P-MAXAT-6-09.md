@@ -36,7 +36,7 @@ be the positive generator, normalized by
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The total Pontryagin class of $M$ is
 \[
@@ -57,7 +57,7 @@ where $c_1(\gamma^*)=x$. The underlying real bundle of $\gamma^*$ has total Pont
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In particular,
 \[
@@ -67,7 +67,7 @@ p_n(TM)=\binom{2n+1}{n}x^{2n}.
 
 ::: pf-proof
 
-Expand the formula in step <1>1:
+Expand the formula in step [](#s1-1){.pf-ref}:
 \[
 (1+x^2)^{2n+1}
 =\sum_{j=0}^{2n+1}\binom{2n+1}{j}x^{2j}.
@@ -78,7 +78,7 @@ The degree-$4n$ component is obtained at $j=n$ and is exactly $p_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the Pontryagin number
 \[
@@ -93,7 +93,7 @@ is nonzero:
 
 ::: pf-proof
 
-Substitute step <1>2 and use the normalization
+Substitute step [](#s1-2){.pf-ref} and use the normalization
 \[
 \langle x^{2n},[M]\rangle=1.
 \]
@@ -103,7 +103,7 @@ The binomial coefficient is a positive integer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every Pontryagin number of an oriented boundary is zero.
 
@@ -128,24 +128,24 @@ Since $[N]=\partial[W,N]$, the Kronecker pairing with a restricted absolute coho
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $\mathbb{CP}^{2n}$ cannot be an oriented boundary.
 
 
 ::: pf-proof
 
-If $M=\mathbb{CP}^{2n}$ bounded orientably, step <1>4 would force
+If $M=\mathbb{CP}^{2n}$ bounded orientably, step [](#s1-4){.pf-ref} would force
 \[
 \langle p_n(TM),[M]\rangle=0.
 \]
-Step <1>3 computes the same integer as the nonzero value $\binom{2n+1}{n}$, a contradiction.
+Step [](#s1-3){.pf-ref} computes the same integer as the nonzero value $\binom{2n+1}{n}$, a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 \[
@@ -155,7 +155,7 @@ Thus
 
 ::: pf-proof
 
-This is the conclusion of step <1>5.
+This is the conclusion of step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -163,7 +163,7 @@ This is the conclusion of step <1>5.
 
 ::: pf-qed
 
-Step <1>6 proves the required oriented non-bordism statement.
+Step [](#s1-6){.pf-ref} proves the required oriented non-bordism statement.
 
 :::
 

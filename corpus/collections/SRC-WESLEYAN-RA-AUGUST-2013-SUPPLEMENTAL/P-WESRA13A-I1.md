@@ -21,7 +21,7 @@ State Fatou's lemma.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fatou's lemma states: if $(X,\mathcal A,\mu)$ is a measure space and $(f_n)$ is a sequence of nonnegative measurable functions, then
 $$
@@ -44,7 +44,7 @@ This is the statement requested in the problem.
 
 ::: pf-qed
 
-Step <1>1 gives Fatou's lemma with its hypotheses and conclusion.
+Step [](#s1-1){.pf-ref} gives Fatou's lemma with its hypotheses and conclusion.
 
 :::
 

@@ -44,7 +44,7 @@ U_i\cap U_{i+1}\ne\varnothing
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set \(C\) is nonempty.
 
@@ -68,7 +68,7 @@ a\in C.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -109,7 +109,7 @@ The family \(\mathcal U\) covers \(X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sets \(U_n\) and \(V\) intersect.
 
@@ -125,7 +125,7 @@ x\in U_n\cap V.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every point
 \[
@@ -136,25 +136,25 @@ belongs to \(C\).
 
 ::: pf-proof
 
-Append \(V\) to the chain from step <1>2:
+Append \(V\) to the chain from step [](#s1-2){.pf-ref}:
 \[
 U_1,\dots,U_n,V.
 \]
-By step <1>4, the final overlap is nonempty. The chain begins at a set
+By step [](#s1-4){.pf-ref}, the final overlap is nonempty. The chain begins at a set
 containing \(a\) and ends at \(V\), which contains \(y\). Hence \(y\in C\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore \(C\) is open.
 
 
 ::: pf-proof
 
-For every \(x\in C\), step <1>5 gives an open neighborhood
+For every \(x\in C\), step [](#s1-5){.pf-ref} gives an open neighborhood
 \[
 V\subseteq C.
 \]
@@ -187,7 +187,7 @@ Again use that \(\mathcal U\) is a cover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -223,14 +223,14 @@ contradicting \(x\in X-C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore \(X-C\) is open.
 
 
 ::: pf-proof
 
-For every \(x\in X-C\), step <1>8 gives an open neighborhood
+For every \(x\in X-C\), step [](#s1-8){.pf-ref} gives an open neighborhood
 \[
 V\subseteq X-C.
 \]
@@ -246,7 +246,7 @@ Hence \(C\) is both open and closed in \(X\).
 
 ::: pf-proof
 
-Openness is step <1>6, and step <1>9 says its complement is open.
+Openness is step [](#s1-6){.pf-ref}, and step [](#s1-9){.pf-ref} says its complement is open.
 
 :::
 
@@ -262,7 +262,7 @@ Since \(X\) is connected and \(C\ne\varnothing\),
 
 ::: pf-proof
 
-A connected space has no nontrivial clopen subsets. By step <1>1,
+A connected space has no nontrivial clopen subsets. By step [](#s1-1){.pf-ref},
 \[
 C\ne\varnothing.
 \]
@@ -272,7 +272,7 @@ Thus the only possibility is \(C=X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 In particular,
 \[
@@ -288,7 +288,7 @@ Since \(b\in X=C\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore there exist
 \[
@@ -307,7 +307,7 @@ for every \(1\le i<n\).
 
 ::: pf-proof
 
-This is exactly the definition of \(b\in C\) from step <1>12.
+This is exactly the definition of \(b\in C\) from step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -315,7 +315,7 @@ This is exactly the definition of \(b\in C\) from step <1>12.
 
 ::: pf-qed
 
-Step <1>13 is the required finite chain.
+Step [](#s1-13){.pf-ref} is the required finite chain.
 
 :::
 

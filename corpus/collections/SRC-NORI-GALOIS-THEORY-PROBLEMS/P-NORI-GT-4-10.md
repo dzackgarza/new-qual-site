@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The automorphism $\sigma$ has order exactly $p$.
 
@@ -58,7 +58,7 @@ Thus the order is exactly $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By Artin's fixed-field theorem,
 $$
@@ -76,7 +76,7 @@ The finite cyclic group
 $$
 G=\langle\sigma\rangle
 $$
-has order $p$ by step <1>1 and acts faithfully on $L$. Artin's theorem gives
+has order $p$ by step [](#s1-1){.pf-ref} and acts faithfully on $L$. Artin's theorem gives
 $$
 [L:L^G]=|G|=p
 $$
@@ -86,7 +86,7 @@ and identifies the full Galois group with $G$. Since $L^G=L^\sigma$, the claim f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The element
 $$
@@ -113,7 +113,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -123,13 +123,13 @@ $$
 
 ::: pf-proof
 
-Step <1>3 shows that $Y$ is fixed, and every element of $F$ is fixed. Therefore every rational function in $Y$ with coefficients in $F$ is fixed by $\sigma$.
+Step [](#s1-3){.pf-ref} shows that $Y$ is fixed, and every element of $F$ is fixed. Therefore every rational function in $Y$ with coefficients in $F$ is fixed by $\sigma$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The element $X$ is algebraic over $F(Y)$ of degree at most $p$.
 
@@ -157,7 +157,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -167,7 +167,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 F(Y)\subseteq L^\sigma\subseteq L.
 $$
@@ -176,7 +176,7 @@ $$
 [L:F(Y)]
 =[L:L^\sigma][L^\sigma:F(Y)].
 $$
-By step <1>2, the first factor is $p$, while step <1>5 gives
+By step [](#s1-2){.pf-ref}, the first factor is $p$, while step [](#s1-5){.pf-ref} gives
 $$
 [L:F(Y)]\le p.
 $$
@@ -190,7 +190,7 @@ Thus $L^\sigma=F(Y)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ring $F[X]$ is generated as an $F[Y]$-module by
 $$
@@ -210,7 +210,7 @@ allows every power $X^m$ with $m\ge p$ to be reduced recursively to an $F[Y]$-li
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The elements
 $$
@@ -221,7 +221,7 @@ are linearly independent over $F(Y)$, and therefore over $F[Y]$.
 
 ::: pf-proof
 
-Step <1>6 and step <1>2 give
+Step [](#s1-6){.pf-ref} and step [](#s1-2){.pf-ref} give
 $$
 [F(X):F(Y)]=p.
 $$
@@ -235,7 +235,7 @@ are linearly independent over $F(Y)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus
 $$
@@ -247,13 +247,13 @@ $$
 
 ::: pf-proof
 
-Spanning is step <1>7 and directness is step <1>8.
+Spanning is step [](#s1-7){.pf-ref} and directness is step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The polynomial invariants are
 $$
@@ -267,21 +267,21 @@ The inclusion
 $$
 F[Y]\subseteq F[X]^\sigma
 $$
-follows from step <1>3.
+follows from step [](#s1-3){.pf-ref}.
 
 Conversely, if
 $$
 f\in F[X]^\sigma,
 $$
-then by step <1>6,
+then by step [](#s1-6){.pf-ref},
 $$
 f\in F(Y).
 $$
-Write the unique decomposition from step <1>9:
+Write the unique decomposition from step [](#s1-9){.pf-ref}:
 $$
 f=b_0(Y)+b_1(Y)X+\cdots+b_{p-1}(Y)X^{p-1}
 $$
-with $b_i(Y)\in F[Y]$. Since $f$ also lies in $F(Y)$, linear independence over $F(Y)$ from step <1>8 forces
+with $b_i(Y)\in F[Y]$. Since $f$ also lies in $F(Y)$, linear independence over $F(Y)$ from step [](#s1-8){.pf-ref} forces
 $$
 b_1=\cdots=b_{p-1}=0.
 $$
@@ -291,7 +291,7 @@ Hence $f=b_0(Y)\in F[Y]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -305,7 +305,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>6 and <1>10.
+Combine steps [](#s1-6){.pf-ref} and [](#s1-10){.pf-ref}.
 
 :::
 
@@ -313,7 +313,7 @@ Combine steps <1>6 and <1>10.
 
 ::: pf-qed
 
-Step <1>2 proves the Galois-degree assertion, and step <1>11 identifies both invariant rings requested in the problem.
+Step [](#s1-2){.pf-ref} proves the Galois-degree assertion, and step [](#s1-11){.pf-ref} identifies both invariant rings requested in the problem.
 
 :::
 

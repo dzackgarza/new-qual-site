@@ -40,7 +40,7 @@ This is a change of variable in the polynomial identity, chosen so that powers o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In powers of $y$,
 $$
@@ -57,7 +57,7 @@ This is the binomial expansion of $(y-1)^4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficient of $(x+1)^3$ is
 $$
@@ -72,7 +72,7 @@ The given identity becomes
 $$
 (y-1)^4=k_0+k_1y+k_2y^2+k_3y^3+k_4y^4.
 $$
-Comparing the coefficient of $y^3$ with step <1>2 gives $k_3=-4$.
+Comparing the coefficient of $y^3$ with step [](#s1-2){.pf-ref} gives $k_3=-4$.
 
 :::
 
@@ -80,7 +80,7 @@ Comparing the coefficient of $y^3$ with step <1>2 gives $k_3=-4$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested coefficient and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested coefficient and corresponding choice.
 
 :::
 

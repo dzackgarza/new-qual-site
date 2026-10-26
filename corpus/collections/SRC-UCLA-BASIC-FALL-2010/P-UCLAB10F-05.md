@@ -36,7 +36,7 @@ Problem 5. Prove or disprove each statement for arbitrary subsets $S,S'$ of a ve
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (a) is false in general.
 
@@ -85,7 +85,7 @@ Thus the claimed equality fails.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -111,7 +111,7 @@ Since the right-hand side is a subspace, it contains every sum of one vector fro
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -144,7 +144,7 @@ By minimality of the span, every subspace containing $S\cup S'$ must contain
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (b) is true:
 \[
@@ -158,7 +158,7 @@ Statement (b) is true:
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 prove the two inclusions.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove the two inclusions.
 
 :::
 
@@ -166,7 +166,7 @@ Steps <1>2 and <1>3 prove the two inclusions.
 
 ::: pf-qed
 
-Step <1>1 disproves part (a), and step <1>4 proves part (b).
+Step [](#s1-1){.pf-ref} disproves part (a), and step [](#s1-4){.pf-ref} proves part (b).
 
 :::
 

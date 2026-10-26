@@ -41,7 +41,7 @@ with positive orientation, chosen so that $\gamma$ and the fixed point $z$ lie i
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every fixed $z\in\CC$,
 $$
@@ -87,7 +87,7 @@ Hence the error term tends to $0$, proving the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $z\in\Omega_1$, then
 $$
@@ -110,13 +110,13 @@ $$
 \int_\gamma\frac{f(\xi)}{\xi-z}\,d\xi
 =0.
 $$
-Thus the integral over $\gamma$ equals the integral over $C_R$. Letting $R\to\infty$ and using step <1>1 gives the result.
+Thus the integral over $\gamma$ equals the integral over $C_R$. Letting $R\to\infty$ and using step [](#s1-1){.pf-ref} gives the result.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $z\in\Omega_2$, then
 $$
@@ -148,7 +148,7 @@ $$
 -
 2\pi i f(z).
 $$
-Letting $R\to\infty$ and applying step <1>1 yields
+Letting $R\to\infty$ and applying step [](#s1-1){.pf-ref} yields
 $$
 \int_\gamma\frac{f(\xi)}{\xi-z}\,d\xi
 =
@@ -159,7 +159,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -177,7 +177,7 @@ $$
 
 ::: pf-proof
 
-Divide the identity in step <1>2 or step <1>3 by $2\pi i$, according to the location of $z$.
+Divide the identity in step [](#s1-2){.pf-ref} or step [](#s1-3){.pf-ref} by $2\pi i$, according to the location of $z$.
 
 :::
 
@@ -185,7 +185,7 @@ Divide the identity in step <1>2 or step <1>3 by $2\pi i$, according to the loca
 
 ::: pf-qed
 
-Step <1>4 is the required exterior Cauchy formula.
+Step [](#s1-4){.pf-ref} is the required exterior Cauchy formula.
 
 :::
 

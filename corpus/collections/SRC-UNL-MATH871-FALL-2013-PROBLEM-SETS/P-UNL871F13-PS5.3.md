@@ -34,7 +34,7 @@ For each space and equivalence relation below, identify a familiar space homeomo
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (1), define
 \[
@@ -69,7 +69,7 @@ Thus two points are equivalent exactly when they lie in the same fiber.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $q_1$ is a continuous open surjection.
 
@@ -109,7 +109,7 @@ Hence $q_1$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -128,7 +128,7 @@ Let
 \pi:\mathbb R^2\to\mathbb R^2/{\sim}
 \]
 be the quotient map.
-By step <1>1, $q_1$ is constant exactly on the equivalence classes, so it
+By step [](#s1-1){.pf-ref}, $q_1$ is constant exactly on the equivalence classes, so it
 factors uniquely through a bijection
 \[
 \bar q_1:
@@ -141,7 +141,7 @@ with
 q_1=\bar q_1\circ\pi.
 \]
 
-Because $q_1$ is a quotient map by step <1>2, the induced bijection
+Because $q_1$ is a quotient map by step [](#s1-2){.pf-ref}, the induced bijection
 $\bar q_1$ is a homeomorphism.
 
 :::
@@ -175,7 +175,7 @@ which is exactly equality of $q_2$-values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $q_2$ is a continuous open surjection onto
 \[
@@ -251,7 +251,7 @@ $q_2$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -265,9 +265,9 @@ Therefore
 
 ::: pf-proof
 
-As in step <1>3, the map $q_2$ factors through a bijection from the quotient
+As in step [](#s1-3){.pf-ref}, the map $q_2$ factors through a bijection from the quotient
 onto $[0,\infty)$.
-Step <1>5 says $q_2$ is a quotient map, so the induced bijection is a
+Step [](#s1-5){.pf-ref} says $q_2$ is a quotient map, so the induced bijection is a
 homeomorphism.
 
 :::
@@ -311,7 +311,7 @@ x\sim y
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -349,7 +349,7 @@ homeomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For part (4), define
 \[
@@ -383,7 +383,7 @@ x\sim y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The map $q_4$ is an open quotient map.
 
@@ -421,7 +421,7 @@ Since $q_4$ is also surjective, it is a quotient map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Consequently
 \[
@@ -435,20 +435,20 @@ S^1.
 
 ::: pf-proof
 
-By step <1>9, $q_4$ factors through a bijection
+By step [](#s1-9){.pf-ref}, $q_4$ factors through a bijection
 \[
 \bar q_4:
 \mathbb R/{\sim}
 \to
 S^1.
 \]
-Step <1>10 says $q_4$ is quotient, so $\bar q_4$ is a homeomorphism.
+Step [](#s1-10){.pf-ref} says $q_4$ is quotient, so $\bar q_4$ is a homeomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The four quotient identifications are therefore
 \[
@@ -465,7 +465,7 @@ The four quotient identifications are therefore
 
 ::: pf-proof
 
-Collect steps <1>3, <1>6, <1>8, and <1>11.
+Collect steps [](#s1-3){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-8){.pf-ref}, and [](#s1-11){.pf-ref}.
 
 :::
 
@@ -473,7 +473,7 @@ Collect steps <1>3, <1>6, <1>8, and <1>11.
 
 ::: pf-qed
 
-Step <1>12 gives all four requested quotient spaces, with the preceding
+Step [](#s1-12){.pf-ref} gives all four requested quotient spaces, with the preceding
 steps proving the homeomorphisms.
 
 :::

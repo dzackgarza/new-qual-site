@@ -32,7 +32,7 @@ What is the value of $f_{xy}$ at the point $(0,0)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $y\ne0$,
 $$
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -84,7 +84,7 @@ The defining formula gives $f(h,0)=0$ for every $h$ and $f(0,0)=0$, so the quoti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The mixed partial derivative at the origin is
 $$
@@ -100,7 +100,7 @@ $$
 f_{xy}(0,0)
 =\lim_{k\to0}\frac{f_x(0,k)-f_x(0,0)}{k}.
 $$
-For $k\ne0$, step <1>1 gives $f_x(0,k)=-k$, while step <1>2 gives $f_x(0,0)=0$. Hence
+For $k\ne0$, step [](#s1-1){.pf-ref} gives $f_x(0,k)=-k$, while step [](#s1-2){.pf-ref} gives $f_x(0,0)=0$. Hence
 $$
 f_{xy}(0,0)
 =\lim_{k\to0}\frac{-k}{k}
@@ -113,7 +113,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested mixed partial derivative and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested mixed partial derivative and corresponding choice.
 
 :::
 

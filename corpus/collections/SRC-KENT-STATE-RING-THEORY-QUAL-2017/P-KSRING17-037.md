@@ -21,7 +21,7 @@ Show that if p is a prime such that $p \equiv 3 ( { \bmod { 4 } } )$ , then $x ^
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The prime $p$ is odd, and
 $$
@@ -52,7 +52,7 @@ which is odd.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is no element
 $$
@@ -90,7 +90,7 @@ a^{p-1}
 -1,
 \end{aligned}
 $$
-because $(p-1)/2$ is odd by step <1>1.
+because $(p-1)/2$ is odd by step [](#s1-1){.pf-ref}.
 This gives
 $$
 1=-1
@@ -101,7 +101,7 @@ in $\FF_p$, impossible because $p$ is odd.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial
 $$
@@ -124,13 +124,13 @@ equivalently
 $$
 a^2=-1,
 $$
-which is impossible by step <1>2.
+which is impossible by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -143,7 +143,7 @@ $$
 
 ::: pf-proof
 
-A polynomial of degree $2$ over a field is reducible if and only if it has a root in that field. Step <1>3 shows that $x^2+1$ has no root in $\FF_p$, so it is irreducible.
+A polynomial of degree $2$ over a field is reducible if and only if it has a root in that field. Step [](#s1-3){.pf-ref} shows that $x^2+1$ has no root in $\FF_p$, so it is irreducible.
 
 :::
 
@@ -151,7 +151,7 @@ A polynomial of degree $2$ over a field is reducible if and only if it has a roo
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

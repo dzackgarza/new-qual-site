@@ -42,7 +42,7 @@ Let $y=\tanh^{-1}x$, so that $x=\tanh y$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The equation $x=\tanh y$ is equivalent to
 $$
@@ -70,7 +70,7 @@ which yields the displayed identity for $-1<x<1$, the range of $\tanh$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -81,7 +81,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-The quotient in step <1>1 is positive for $-1<x<1$. Taking logarithms gives
+The quotient in step [](#s1-1){.pf-ref} is positive for $-1<x<1$. Taking logarithms gives
 $$
 2y=\log\frac{1+x}{1-x},
 $$
@@ -93,7 +93,7 @@ and division by $2$ gives the claimed formula.
 
 ::: pf-qed
 
-Step <1>2 gives the requested inverse formula on the full domain of $\tanh^{-1}$.
+Step [](#s1-2){.pf-ref} gives the requested inverse formula on the full domain of $\tanh^{-1}$.
 
 :::
 

@@ -49,7 +49,7 @@ where $\log t$ is the real logarithm.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $0<\varepsilon<R<\infty$, the function
 $$
@@ -80,7 +80,7 @@ Thus $\Gamma_{\varepsilon,R}$ is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The improper integrals
 $$
@@ -123,7 +123,7 @@ tails at $0$ and at $\infty$, uniformly for $s\in K$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -136,13 +136,13 @@ is analytic on $\Re s>0$.
 
 ::: pf-proof
 
-Choose sequences $\varepsilon_j\downarrow0$ and $R_j\uparrow\infty$. By step <1>2,
+Choose sequences $\varepsilon_j\downarrow0$ and $R_j\uparrow\infty$. By step [](#s1-2){.pf-ref},
 $$
 \Gamma_{\varepsilon_j,R_j}(s)
 \longrightarrow
 \int_0^\infty e^{-t}t^{s-1}\,dt
 $$
-uniformly on every compact subset of $H$. Each truncated function is entire by step <1>1.
+uniformly on every compact subset of $H$. Each truncated function is entire by step [](#s1-1){.pf-ref}.
 The locally uniform limit of analytic functions is analytic, so the displayed integral defines
 an analytic function on $H$. For real $s>0$ it is the original defining integral, hence this is
 the analytic extension of the gamma function.
@@ -151,7 +151,7 @@ the analytic extension of the gamma function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For real $0<s<1$ and every $t>0$,
 $$
@@ -163,7 +163,7 @@ $$
 
 ::: pf-proof
 
-Starting from step <1>3,
+Starting from step [](#s1-3){.pf-ref},
 $$
 \Gamma(1-s)
 =
@@ -175,7 +175,7 @@ Substitute $u=vt$, so $du=t\,dv$. This gives exactly the stated formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For real $0<s<1$,
 $$
@@ -187,7 +187,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
 \Gamma(s)\Gamma(1-s)
@@ -222,7 +222,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For real $0<s<1$,
 $$
@@ -242,13 +242,13 @@ $$
 =
 \frac{\pi}{\sin\pi s}.
 $$
-Combine this with step <1>5.
+Combine this with step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The reflection formula holds for every complex $s$ with
 $$
@@ -258,12 +258,12 @@ $$
 
 ::: pf-proof
 
-By step <1>3, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip
+By step [](#s1-3){.pf-ref}, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip
 $0<\Re s<1$. Since $\sin\pi s$ has no zero in this open strip, so is
 $$
 \frac{\pi}{\sin\pi s}.
 $$
-Step <1>6 proves equality on the real interval $(0,1)$, which has accumulation points inside
+Step [](#s1-6){.pf-ref} proves equality on the real interval $(0,1)$, which has accumulation points inside
 the strip. The identity theorem therefore gives the equality throughout the strip.
 
 :::
@@ -272,7 +272,7 @@ the strip. The identity theorem therefore gives the equality throughout the stri
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and steps <1>4--<1>7 prove part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b).
 
 :::
 

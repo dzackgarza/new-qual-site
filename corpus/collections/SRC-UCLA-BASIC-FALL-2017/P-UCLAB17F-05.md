@@ -39,7 +39,7 @@ Y=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The zero map belongs to $X$.
 
@@ -56,7 +56,7 @@ which has dimension $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $T,S\in X$, then
 \[
@@ -88,7 +88,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $T\in X$ and $\lambda\in\mathbb C$, then
 \[
@@ -98,7 +98,7 @@ If $T\in X$ and $\lambda\in\mathbb C$, then
 
 ::: pf-proof
 
-If $\lambda=0$, then $\lambda T$ is the zero map, which belongs to $X$ by step <1>1.
+If $\lambda=0$, then $\lambda T$ is the zero map, which belongs to $X$ by step [](#s1-1){.pf-ref}.
 If $\lambda\ne0$, then
 \[
 \operatorname{im}(\lambda T)
@@ -111,7 +111,7 @@ so the rank remains finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -121,13 +121,13 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1--<1>3 verify the zero-vector, addition, and scalar-multiplication conditions for a subspace.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify the zero-vector, addition, and scalar-multiplication conditions for a subspace.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The zero map does not belong to $Y$.
 
@@ -149,7 +149,7 @@ so the zero map is not in $Y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -160,13 +160,13 @@ Hence
 ::: pf-proof
 
 Every linear subspace must contain the zero vector.
-Step <1>5 shows that $Y$ does not contain the zero map.
+Step [](#s1-5){.pf-ref} shows that $Y$ does not contain the zero map.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose
 \[
@@ -192,7 +192,7 @@ Membership in $Y$ means finite-dimensional kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If both $\ker T$ and $\operatorname{im}T$ are finite-dimensional, then $V$ is finite-dimensional.
 
@@ -251,7 +251,7 @@ Therefore $V$ is finite-dimensional.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since $V$ is infinite-dimensional,
 \[
@@ -261,7 +261,7 @@ Since $V$ is infinite-dimensional,
 
 ::: pf-proof
 
-If some $T$ belonged to $X\cap Y$, steps <1>7--<1>8 would imply that $V$ is finite-dimensional, contradicting the hypothesis.
+If some $T$ belonged to $X\cap Y$, steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} would imply that $V$ is finite-dimensional, contradicting the hypothesis.
 Thus no such map exists.
 
 :::
@@ -270,7 +270,7 @@ Thus no such map exists.
 
 ::: pf-qed
 
-Step <1>4 answers part (a), step <1>6 answers part (b), and step <1>9 answers part (c).
+Step [](#s1-4){.pf-ref} answers part (a), step [](#s1-6){.pf-ref} answers part (b), and step [](#s1-9){.pf-ref} answers part (c).
 
 :::
 

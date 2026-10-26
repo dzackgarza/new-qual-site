@@ -30,7 +30,7 @@ Because larger values of $X$ favor $H_1$, use a threshold rule: accept $H_1$ whe
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For fixed $n,c$, the two error probabilities are
 \[
@@ -73,7 +73,7 @@ Thus larger $k$ gives a larger likelihood ratio, so a threshold test is the like
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $n=98$ and $c=58$,
 \[
@@ -85,7 +85,7 @@ For $n=98$ and $c=58$,
 
 ::: pf-proof
 
-Substitution in the exact binomial sums of step <1>1 gives
+Substitution in the exact binomial sums of step [](#s1-1){.pf-ref} gives
 \[
 2^{-98}\sum_{k=58}^{98}\binom{98}{k}
 \approx0.0427053
@@ -102,20 +102,20 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No $n\leq97$ admits an integer threshold $c$ for which both error probabilities are at most $0.05$.
 
 
 ::: pf-proof
 
-For each fixed $n$, $\alpha_{n,c}$ decreases as $c$ increases, while $\beta_{n,c}$ increases. Hence it suffices to take the smallest $c$ for which $\alpha_{n,c}\leq0.05$ and check whether its $\beta_{n,c}$ is also at most $0.05$. Exact evaluation of the finite binomial sums in step <1>1 for $1\leq n\leq97$ shows that none satisfies the second inequality. At $n=98$, step <1>3 gives the first feasible threshold, $c=58$.
+For each fixed $n$, $\alpha_{n,c}$ decreases as $c$ increases, while $\beta_{n,c}$ increases. Hence it suffices to take the smallest $c$ for which $\alpha_{n,c}\leq0.05$ and check whether its $\beta_{n,c}$ is also at most $0.05$. Exact evaluation of the finite binomial sums in step [](#s1-1){.pf-ref} for $1\leq n\leq97$ shows that none satisfies the second inequality. At $n=98$, step [](#s1-3){.pf-ref} gives the first feasible threshold, $c=58$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the minimum required number of two-coin trials is
 \[
@@ -130,7 +130,7 @@ with the decision rule
 
 ::: pf-proof
 
-Step <1>3 proves feasibility at $n=98$, and step <1>4 proves minimality.
+Step [](#s1-3){.pf-ref} proves feasibility at $n=98$, and step [](#s1-4){.pf-ref} proves minimality.
 
 :::
 
@@ -138,7 +138,7 @@ Step <1>3 proves feasibility at $n=98$, and step <1>4 proves minimality.
 
 ::: pf-qed
 
-Step <1>5 gives the smallest sample size and an exact test meeting both requested error bounds.
+Step [](#s1-5){.pf-ref} gives the smallest sample size and an exact test meeting both requested error bounds.
 
 :::
 

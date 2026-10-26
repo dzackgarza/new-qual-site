@@ -21,7 +21,7 @@ If p is a prime satisfying $p \equiv 1$ (mod 4), then p is a sum of two squares.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists an integer $a$ such that
 $$
@@ -82,7 +82,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The element $p$ is not prime in the Gaussian integer ring
 $$
@@ -92,7 +92,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 p
 \mid
@@ -126,7 +126,7 @@ Thus $p$ divides a product without dividing either factor, so it is not a prime 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The element $p$ is reducible in $\ZZ[i]$.
 
@@ -141,7 +141,7 @@ x^2+y^2.
 $$
 Hence $\ZZ[i]$ is a UFD, and in a UFD every irreducible element is prime.
 
-Step <1>2 shows that $p$ is not prime. Therefore $p$ cannot be irreducible. Since $p$ is neither zero nor a unit, it is reducible:
+Step [](#s1-2){.pf-ref} shows that $p$ is not prime. Therefore $p$ cannot be irreducible. Since $p$ is neither zero nor a unit, it is reducible:
 $$
 p=\alpha\beta
 $$
@@ -154,9 +154,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-One of the factors in step <1>3 has Gaussian norm exactly $p$.
+One of the factors in step [](#s1-3){.pf-ref} has Gaussian norm exactly $p$.
 
 
 ::: pf-proof
@@ -188,7 +188,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence $p$ is a sum of two squares.
 
@@ -203,7 +203,7 @@ with
 $$
 x,y\in\ZZ.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 p
 =
@@ -225,7 +225,7 @@ for integers $x,y$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

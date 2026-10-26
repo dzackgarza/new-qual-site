@@ -34,7 +34,7 @@ for some constant $M$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume first that there are constants $C>0$ and $a\ge0$ such that
 \[
@@ -71,7 +71,7 @@ Cauchy's derivative estimate therefore gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a=0$, then $f$ is constant.
 
@@ -93,7 +93,7 @@ for every $n\ge1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose $a>0$. For every $n\ge1$,
 \[
@@ -105,7 +105,7 @@ C(ae)^n.
 
 ::: pf-proof
 
-In step <1>1 choose
+In step [](#s1-1){.pf-ref} choose
 \[
 R=\frac na.
 \]
@@ -131,7 +131,7 @@ C(ae)^n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the exponential-growth hypothesis, there exists $M>0$ such that
 \[
@@ -145,7 +145,7 @@ M^{n+1}
 
 ::: pf-proof
 
-If $a=0$, step <1>2 applies. Choose
+If $a=0$, step [](#s1-2){.pf-ref} applies. Choose
 \[
 M\ge\max\{1,C\}.
 \]
@@ -163,7 +163,7 @@ For $n=0$,
 \[
 |f(0)|\le C\le M.
 \]
-For $n\ge1$, step <1>3 gives
+For $n\ge1$, step [](#s1-3){.pf-ref} gives
 \[
 |f^{(n)}(0)|
 \le
@@ -176,7 +176,7 @@ M^{n+1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, assume there is $M>0$ such that
 \[
@@ -233,14 +233,14 @@ a=M.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the two conditions are equivalent.
 
 
 ::: pf-proof
 
-Step <1>4 proves the forward implication and step <1>5 proves the reverse
+Step [](#s1-4){.pf-ref} proves the forward implication and step [](#s1-5){.pf-ref} proves the reverse
 implication.
 
 :::
@@ -249,7 +249,7 @@ implication.
 
 ::: pf-qed
 
-Step <1>6 is the required equivalence.
+Step [](#s1-6){.pf-ref} is the required equivalence.
 
 :::
 

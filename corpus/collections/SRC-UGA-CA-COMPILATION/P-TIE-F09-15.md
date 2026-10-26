@@ -48,7 +48,7 @@ and $K_\rho$ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\varepsilon>0$, there is $N$ such that for all $M\ge N$ and all
 $w\in K_\rho$,
@@ -72,7 +72,7 @@ at $N$ has the displayed bound throughout $K_\rho$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix $z\in K$ and integers $M\ge N$. There exist complex numbers
 $\lambda_N,\ldots,\lambda_M$ with $|\lambda_n|=1$ such that
@@ -98,7 +98,7 @@ $1$. Summing gives the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z\in K$ and every $M\ge N$,
 $$
@@ -108,7 +108,7 @@ $$
 
 ::: pf-proof
 
-For the phases chosen in step <1>3, put
+For the phases chosen in step [](#s1-3){.pf-ref}, put
 $$
 A(\zeta)=\sum_{n=N}^{M}\lambda_na_n(\zeta).
 $$
@@ -116,7 +116,7 @@ This is analytic on $D$, and
 $$
 A'(z)=\sum_{n=N}^{M}\lambda_na_n'(z).
 $$
-The circle $|\zeta-z|=\rho$ lies in $K_\rho$. Cauchy's derivative formula and step <1>3 give
+The circle $|\zeta-z|=\rho$ lies in $K_\rho$. Cauchy's derivative formula and step [](#s1-3){.pf-ref} give
 $$
 \begin{aligned}
 \sum_{n=N}^{M}|a_n'(z)|
@@ -131,13 +131,13 @@ $$
 \sum_{n=N}^{M}|a_n(\zeta)|.
 \end{aligned}
 $$
-Step <1>2 makes the last quantity strictly less than $\varepsilon$.
+Step [](#s1-2){.pf-ref} makes the last quantity strictly less than $\varepsilon$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The series
 $$
@@ -150,7 +150,7 @@ converges uniformly on $K$.
 
 ::: pf-proof
 
-Step <1>4 shows that for every $\varepsilon>0$ there exists $N$ such that every finite tail
+Step [](#s1-4){.pf-ref} shows that for every $\varepsilon>0$ there exists $N$ such that every finite tail
 from $N$ onward is bounded by $\varepsilon$, uniformly for $z\in K$. This is the uniform
 Cauchy criterion for the series of nonnegative functions $|a_n'|$.
 
@@ -160,7 +160,7 @@ Cauchy criterion for the series of nonnegative functions $|a_n'|$.
 
 ::: pf-qed
 
-The bounded closed subregion $K\Subset D$ was arbitrary, so step <1>5 proves the asserted
+The bounded closed subregion $K\Subset D$ was arbitrary, so step [](#s1-5){.pf-ref} proves the asserted
 local uniform absolute convergence throughout $D$.
 
 :::

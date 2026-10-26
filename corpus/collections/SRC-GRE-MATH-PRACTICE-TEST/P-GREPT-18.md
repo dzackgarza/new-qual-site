@@ -27,7 +27,7 @@ $\lim_{x \to 0} (x + e^{3x})^{1/x} =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x$ sufficiently close to $0$ with $x\ne0$, set
 $$
@@ -49,7 +49,7 @@ gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -59,7 +59,7 @@ $$
 
 ::: pf-proof
 
-Both numerator and denominator in step <1>1 tend to $0$. By L'Hopital's rule,
+Both numerator and denominator in step [](#s1-1){.pf-ref} tend to $0$. By L'Hopital's rule,
 $$
 \lim_{x\to0}\frac{\log(x+e^{3x})}{x}
 =\lim_{x\to0}\frac{1+3e^{3x}}{x+e^{3x}}
@@ -70,7 +70,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -81,7 +81,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-By step <1>2 and continuity of the exponential function,
+By step [](#s1-2){.pf-ref} and continuity of the exponential function,
 $$
 y(x)=\exp(\log y(x))\longrightarrow e^4.
 $$
@@ -92,7 +92,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required limit.
+Step [](#s1-3){.pf-ref} gives the required limit.
 
 :::
 

@@ -21,7 +21,7 @@ State Cauchy's Integral Formula.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Cauchy's Integral Formula.**
 
@@ -70,7 +70,7 @@ This is the standard circle form of Cauchy's formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 More generally, for every integer
 \[
@@ -89,7 +89,7 @@ f^{(m)}(z_0)
 
 ::: pf-proof
 
-Differentiate the formula in step <1>1 under the integral sign.
+Differentiate the formula in step [](#s1-1){.pf-ref} under the integral sign.
 This is Cauchy's integral formula for derivatives.
 
 :::
@@ -98,7 +98,7 @@ This is Cauchy's integral formula for derivatives.
 
 ::: pf-qed
 
-Step <1>1 is the requested theorem statement; step <1>2 records its standard
+Step [](#s1-1){.pf-ref} is the requested theorem statement; step [](#s1-2){.pf-ref} records its standard
 derivative extension.
 
 :::

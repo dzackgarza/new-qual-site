@@ -31,7 +31,7 @@ The source shows the graph in a figure that is not reproduced here.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The source figure has edges
 $$
@@ -47,7 +47,7 @@ These are exactly the seven line segments shown between the labeled vertices $A,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choice (A),
 $$
@@ -58,7 +58,7 @@ is a circuit.
 
 ::: pf-proof
 
-By step <1>1, every consecutive pair in the sequence is joined by an edge:
+By step [](#s1-1){.pf-ref}, every consecutive pair in the sequence is joined by an edge:
 $$
 BD,\ DA,\ AE,\ ED,\ DC,\ CB.
 $$
@@ -68,7 +68,7 @@ The sequence begins and ends at $B$, and these six edges are pairwise distinct. 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 None of choices (B)--(E) is a circuit.
 
@@ -81,7 +81,7 @@ Choice (B) begins with $C,A$, but $CA$ is not an edge. Choice (C) traverses the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the circuit is
 $$
@@ -92,7 +92,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Step <1>2 establishes (A), and step <1>3 rules out all other choices.
+Step [](#s1-2){.pf-ref} establishes (A), and step [](#s1-3){.pf-ref} rules out all other choices.
 
 :::
 
@@ -100,7 +100,7 @@ Step <1>2 establishes (A), and step <1>3 rules out all other choices.
 
 ::: pf-qed
 
-Step <1>4 gives the required sequence.
+Step [](#s1-4){.pf-ref} gives the required sequence.
 
 :::
 

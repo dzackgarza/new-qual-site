@@ -29,7 +29,7 @@ be the standard generators, with $x=c_1(\gamma^*)$ for the dual tautological com
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For real projective space there is a stable bundle isomorphism
 \[
@@ -60,7 +60,7 @@ because $\gamma^1\otimes\gamma^1\cong\varepsilon^1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -74,7 +74,7 @@ the Whitney product formula gives
 
 ::: pf-proof
 
-Apply total Stiefel--Whitney classes to step <1>1. The trivial line has total class $1$, and Whitney multiplicativity gives
+Apply total Stiefel--Whitney classes to step [](#s1-1){.pf-ref}. The trivial line has total class $1$, and Whitney multiplicativity gives
 \[
 w(T\mathbb{RP}^n)=(1+a)^{n+1}
 \]
@@ -88,7 +88,7 @@ H^*(\mathbb{RP}^n;\mathbb F_2)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For complex projective space the Euler sequence gives a stable complex bundle isomorphism
 \[
@@ -111,7 +111,7 @@ As complex topological bundles, $\mathcal O(1)=\gamma^*$, and a short exact sequ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -121,7 +121,7 @@ Therefore
 
 ::: pf-proof
 
-The total Chern class of $\gamma^*$ is $1+x$. Apply Whitney multiplicativity to step <1>3 and use $c(\varepsilon^1_{\mathbb C})=1$. The formula is interpreted in
+The total Chern class of $\gamma^*$ is $1+x$. Apply Whitney multiplicativity to step [](#s1-3){.pf-ref} and use $c(\varepsilon^1_{\mathbb C})=1$. The formula is interpreted in
 \[
 H^*(\mathbb{CP}^n;\mathbb Z)
 =\mathbb Z[x]/(x^{n+1}).
@@ -135,7 +135,7 @@ c_i(T\mathbb{CP}^n)=\binom{n+1}{i}x^i.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For a complex vector bundle $E$, the Pontryagin class of its underlying real bundle satisfies
 \[
@@ -164,9 +164,9 @@ If the Chern roots of $E$ are $y_j$, those of $\overline E$ are $-y_j$, and the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Applying step <1>5 to the stable splitting in step <1>3 gives
+Applying step [](#s1-5){.pf-ref} to the stable splitting in step [](#s1-3){.pf-ref} gives
 \[
 \boxed{p(T\mathbb{CP}^n)=(1+x^2)^{n+1}.}
 \]
@@ -174,7 +174,7 @@ Applying step <1>5 to the stable splitting in step <1>3 gives
 
 ::: pf-proof
 
-Pontryagin classes are stable, so the trivial complex line in step <1>3 contributes $1$. The underlying real bundle of each copy of $\gamma^*$ has total Pontryagin class
+Pontryagin classes are stable, so the trivial complex line in step [](#s1-3){.pf-ref} contributes $1$. The underlying real bundle of each copy of $\gamma^*$ has total Pontryagin class
 \[
 1+c_1(\gamma^*)^2=1+x^2.
 \]
@@ -187,7 +187,7 @@ p_i(T\mathbb{CP}^n)=\binom{n+1}{i}x^{2i}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -204,7 +204,7 @@ and
 
 ::: pf-proof
 
-These are steps <1>2, <1>4, and <1>6.
+These are steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-6){.pf-ref}.
 
 :::
 
@@ -212,7 +212,7 @@ These are steps <1>2, <1>4, and <1>6.
 
 ::: pf-qed
 
-Step <1>7 gives all three requested total characteristic classes.
+Step [](#s1-7){.pf-ref} gives all three requested total characteristic classes.
 
 :::
 

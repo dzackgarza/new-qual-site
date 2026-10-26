@@ -23,7 +23,7 @@ review: draft
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\pi$ is a prime element of $A$, then $\pi A$ is a prime ideal.
 
@@ -46,7 +46,7 @@ Thus $\pi A$ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonzero prime ideal $P\subset A$ contains $\pi A$ for some prime element $\pi$.
 
@@ -69,13 +69,13 @@ for some $i$. Therefore
 $$
 \pi_iA\subseteq P.
 $$
-Step <1>1 shows that $\pi_iA$ is itself a nonzero prime ideal.
+Step [](#s1-1){.pf-ref} shows that $\pi_iA$ is itself a nonzero prime ideal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every prime element $\pi$, the prime ideal $\pi A$ is minimal among the nonzero prime ideals.
 
@@ -86,7 +86,7 @@ Let $Q$ be a nonzero prime ideal with
 $$
 Q\subseteq\pi A.
 $$
-By step <1>2 there is a prime element $\rho$ such that
+By step [](#s1-2){.pf-ref} there is a prime element $\rho$ such that
 $$
 \rho A\subseteq Q.
 $$
@@ -108,14 +108,14 @@ and hence $Q=\pi A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideals $\pi A$, with $\pi$ prime, are exactly the nonzero principal prime ideals.
 
 
 ::: pf-proof
 
-Step <1>1 proves that every ideal of the form $\pi A$ is a nonzero principal prime ideal.
+Step [](#s1-1){.pf-ref} proves that every ideal of the form $\pi A$ is a nonzero principal prime ideal.
 
 Conversely, let $aA$ be a nonzero principal prime ideal. Since it is proper, $a$ is a nonzero nonunit. If
 $$
@@ -135,7 +135,7 @@ so $a\mid x$ or $a\mid y$. Thus $a$ is a prime element. Therefore the ideal is o
 
 ::: pf-qed
 
-Step <1>1 proves part (a), step <1>2 proves part (b), and steps <1>3 and <1>4 prove part (c).
+Step [](#s1-1){.pf-ref} proves part (a), step [](#s1-2){.pf-ref} proves part (b), and steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove part (c).
 
 :::
 

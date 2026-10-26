@@ -30,7 +30,7 @@ Set $\theta=\arcsin(1/3)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\tan\theta=\frac{1}{2\sqrt2}$.
 
@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The requested value is
 $$
@@ -67,7 +67,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Using the tangent double-angle formula and step <1>1,
+Using the tangent double-angle formula and step [](#s1-1){.pf-ref},
 $$
 \tan(2\theta)
 =\frac{2\tan\theta}{1-\tan^2\theta}
@@ -82,7 +82,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested simplified value and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested simplified value and corresponding choice.
 
 :::
 

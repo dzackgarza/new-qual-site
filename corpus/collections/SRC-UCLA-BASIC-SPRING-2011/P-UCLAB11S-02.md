@@ -40,7 +40,7 @@ Because $A$ is invertible, none of the diagonal entries $\lambda_i$ is zero, alt
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every positive integer $m$,
 \[
@@ -78,7 +78,7 @@ cancel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix $D^m$ is diagonal.
 
@@ -103,14 +103,14 @@ D^m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $A^m$ is diagonalizable for every positive integer $m$.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 A^m
 \]
@@ -118,7 +118,7 @@ is similar to the diagonal matrix
 \[
 D^m,
 \]
-which is diagonal by step <1>3.
+which is diagonal by step [](#s1-3){.pf-ref}.
 Hence
 \[
 \boxed{A^m\text{ is diagonalizable}.}
@@ -130,7 +130,7 @@ Hence
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

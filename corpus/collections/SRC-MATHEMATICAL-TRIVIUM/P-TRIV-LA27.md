@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Put
 $$
@@ -148,7 +148,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Here
 $$
@@ -204,8 +204,8 @@ $$
 
 ::: pf-proof
 
-Substitute the vector $u$ and the scalar from step <1>4 into the Householder
-formula in step <1>2. The mixed coefficient uses
+Substitute the vector $u$ and the scalar from step [](#s1-4){.pf-ref} into the Householder
+formula in step [](#s1-2){.pf-ref}. The mixed coefficient uses
 $$
 \left(1+\frac{\sqrt3}{2}\right)(\sqrt3-2)=-\frac12,
 $$
@@ -220,7 +220,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Directly,
 $$
@@ -258,7 +258,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>2 and <1>6 show that the displayed matrix is orthogonal and maps
+Steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref} show that the displayed matrix is orthogonal and maps
 $A$ to $B$.
 
 :::

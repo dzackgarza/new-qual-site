@@ -26,7 +26,7 @@ be distinct.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since the two points are distinct, at least one coordinate differs:
 \[
@@ -45,7 +45,7 @@ If both coordinates were equal, the ordered pairs would be equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since \(X\) is completely Hausdorff, there exist open sets
 \[
@@ -90,7 +90,7 @@ These are the natural product neighborhoods of the two points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sets \(W_1,W_2\) are open in \(X\times Y\).
 
@@ -103,7 +103,7 @@ Each is a product of an open subset of \(X\) with the open set \(Y\subseteq Y\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -117,13 +117,13 @@ and
 
 ::: pf-proof
 
-This follows from the containments in step <1>2.
+This follows from the containments in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every subset \(A\subseteq X\),
 \[
@@ -168,7 +168,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -186,13 +186,13 @@ and
 
 ::: pf-proof
 
-Apply step <1>6 with \(A=U_1\) and \(A=U_2\).
+Apply step [](#s1-6){.pf-ref} with \(A=U_1\) and \(A=U_2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -205,13 +205,13 @@ Hence
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 \overline{W_1}\cap\overline{W_2}
 =
 (\overline{U_1}\cap\overline{U_2})\times Y,
 \]
-which is empty by step <1>2.
+which is empty by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -244,7 +244,7 @@ Apply complete Hausdorffness of \(Y\) to the distinct points \(y_1,y_2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Define
 \[
@@ -263,7 +263,7 @@ Then \(W_1,W_2\) are open neighborhoods of the two points and
 
 ::: pf-proof
 
-The argument from steps <1>4--<1>8 applies with the factors reversed:
+The argument from steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} applies with the factors reversed:
 \[
 \overline{X\times V_i}
 =
@@ -281,20 +281,20 @@ X\times
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore every pair of distinct points in \(X\times Y\) has open neighborhoods with disjoint closures.
 
 
 ::: pf-proof
 
-By step <1>1, either Case 1 or Case 2 applies. The required neighborhoods are supplied by step <1>8 or step <1>10.
+By step [](#s1-1){.pf-ref}, either Case 1 or Case 2 applies. The required neighborhoods are supplied by step [](#s1-8){.pf-ref} or step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -306,7 +306,7 @@ X\times Y
 
 ::: pf-proof
 
-Step <1>11 is exactly the definition of complete Hausdorffness.
+Step [](#s1-11){.pf-ref} is exactly the definition of complete Hausdorffness.
 
 :::
 
@@ -314,7 +314,7 @@ Step <1>11 is exactly the definition of complete Hausdorffness.
 
 ::: pf-qed
 
-Step <1>12 is the required conclusion.
+Step [](#s1-12){.pf-ref} is the required conclusion.
 
 :::
 

@@ -31,7 +31,7 @@ Choose a primitive $p$-th root of unity $\zeta\in F$ and choose $b\in L$ with $b
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The extension $L/F$ is finite Galois, and every $\sigma\in G$ extends to some
 $$
@@ -65,7 +65,7 @@ is surjective for a finite Galois extension, so every $\sigma\in G$ has an exten
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $\sigma\in G$ and an extension $\widetilde\sigma\in\Gal(L/F)$. Then
 $$
@@ -97,24 +97,24 @@ Thus every element of $\Gal(L/K)$ fixes $c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The element $c$ lies in $K^\times$.
 
 
 ::: pf-proof
 
-By step <1>1, $L/K$ is Galois because $L/F$ is Galois and $K$ is an intermediate field fixed by the subgroup $\Gal(L/K)$. By the Fundamental Theorem of Galois Theory,
+By step [](#s1-1){.pf-ref}, $L/K$ is Galois because $L/F$ is Galois and $K$ is an intermediate field fixed by the subgroup $\Gal(L/K)$. By the Fundamental Theorem of Galois Theory,
 $$
 L^{\Gal(L/K)}=K.
 $$
-Step <1>2 shows that $c$ belongs to this fixed field. Since $b$ and $\widetilde\sigma(b)$ are nonzero, $c\in K^\times$.
+Step [](#s1-2){.pf-ref} shows that $c$ belongs to this fixed field. Since $b$ and $\widetilde\sigma(b)$ are nonzero, $c\in K^\times$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -132,7 +132,7 @@ c^p
 =\frac{\sigma(a)}{a}
 =a^{-1}\sigma(a).
 $$
-By step <1>3, $c\in K^\times$, so this quotient is a $p$-th power in $K^\times$.
+By step [](#s1-3){.pf-ref}, $c\in K^\times$, so this quotient is a $p$-th power in $K^\times$.
 
 :::
 
@@ -140,7 +140,7 @@ By step <1>3, $c\in K^\times$, so this quotient is a $p$-th power in $K^\times$.
 
 ::: pf-qed
 
-The element $\sigma\in G$ was arbitrary, so step <1>4 proves the assertion for every $\sigma\in\Gal(K/F)$.
+The element $\sigma\in G$ was arbitrary, so step [](#s1-4){.pf-ref} proves the assertion for every $\sigma\in\Gal(K/F)$.
 
 :::
 

@@ -42,7 +42,7 @@ Write \(dA=dx\,dy\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(0<r<1\) there is a constant \(C_r>0\) such that every holomorphic \(h\in L^2(\mathbb D,dA)\) satisfies
 \[
@@ -68,7 +68,7 @@ Thus one may take \(C_r=1/(\sqrt\pi\rho)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let \((f_j)\) be Cauchy in \(\mathcal D\). Then \((f_j')\) converges in \(L^2(\mathbb D)\) to some \(g\in L^2(\mathbb D)\), and it also converges locally uniformly on \(\mathbb D\) to a holomorphic function \(h\).
 
@@ -81,7 +81,7 @@ By definition of the norm,
 \]
 so \((f_j')\) is Cauchy in the complete space \(L^2(\mathbb D)\) and hence converges there to some \(g\).
 
-Fix \(0<r<1\). Applying step <1>1 to \(h=f_j'-f_k'\) gives
+Fix \(0<r<1\). Applying step [](#s1-1){.pf-ref} to \(h=f_j'-f_k'\) gives
 \[
 \sup_{|z|\le r}|f_j'(z)-f_k'(z)|
 \le C_r\|f_j'-f_k'\|_{L^2}\longrightarrow0.
@@ -92,7 +92,7 @@ Thus \((f_j')\) is uniformly Cauchy on every closed disc \(\{|z|\le r\}\). It th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The functions \(g\) and \(h\) agree almost everywhere on \(\mathbb D\).
 
@@ -105,7 +105,7 @@ From \(f_j'\to g\) in \(L^2\), choose a subsequence \((f_{j_k}')\) converging to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is a unique holomorphic function \(F\) on \(\mathbb D\) such that
 \[
@@ -118,7 +118,7 @@ and \(F\in\mathcal D\).
 
 ::: pf-proof
 
-The unit disc is simply connected, so the holomorphic function \(h\) has a primitive. Fix the additive constant by requiring \(F(0)=0\). By step <1>3,
+The unit disc is simply connected, so the holomorphic function \(h\) has a primitive. Fix the additive constant by requiring \(F(0)=0\). By step [](#s1-3){.pf-ref},
 \[
 \int_{\mathbb D}|F'|^2\,dA
 =\int_{\mathbb D}|h|^2\,dA
@@ -130,14 +130,14 @@ so \(F\in\mathcal D\). Uniqueness follows because two primitives with the same v
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has \(f_j\to F\) in \(\mathcal D\). Consequently \(\boxed{\mathcal D\text{ is complete}}\).
 
 
 ::: pf-proof
 
-By steps <1>2--<1>4,
+By steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref},
 \[
 \|f_j-F\|_{\mathcal D}
 =\|f_j'-F'\|_{L^2}
@@ -149,7 +149,7 @@ Thus every Cauchy sequence converges in \(\mathcal D\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -187,7 +187,7 @@ Integrating in \(r\) from \(0\) to \(R\) yields
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The exact norm identity is
 \[
@@ -199,13 +199,13 @@ with either side allowed to be \(+\infty\).
 
 ::: pf-proof
 
-Let \(R\uparrow1\) in step <1>6. The discs \(\{|z|<R\}\) increase to \(\mathbb D\), so monotone convergence gives convergence of the left side to \(\int_{\mathbb D}|f'|^2dA\). On the right, each nonnegative term \(n|a_n|^2R^{2n}\) increases to \(n|a_n|^2\), so monotone convergence for series gives the displayed identity.
+Let \(R\uparrow1\) in step [](#s1-6){.pf-ref}. The discs \(\{|z|<R\}\) increase to \(\mathbb D\), so monotone convergence gives convergence of the left side to \(\int_{\mathbb D}|f'|^2dA\). On the right, each nonnegative term \(n|a_n|^2R^{2n}\) increases to \(n|a_n|^2\), so monotone convergence for series gives the displayed identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -218,7 +218,7 @@ f\in\mathcal D
 
 ::: pf-proof
 
-The function already has \(f(0)=0\) because its power series starts at \(n=1\). By step <1>7, the defining integral for \(\mathcal D\) is finite exactly when the displayed weighted square sum is finite.
+The function already has \(f(0)=0\) because its power series starts at \(n=1\). By step [](#s1-7){.pf-ref}, the defining integral for \(\mathcal D\) is finite exactly when the displayed weighted square sum is finite.
 
 :::
 
@@ -226,7 +226,7 @@ The function already has \(f(0)=0\) because its power series starts at \(n=1\). 
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>8 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
 
 :::
 

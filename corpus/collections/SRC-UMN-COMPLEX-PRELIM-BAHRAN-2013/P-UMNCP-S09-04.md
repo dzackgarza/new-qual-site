@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the unit circle,
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the unit circle,
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In fact,
 $$
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>2, failure of strict inequality could occur only if
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, failure of strict inequality could occur only if
 $$
 |f(z)-g(z)|=4
 $$
@@ -158,7 +158,7 @@ Thus equality never occurs.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The functions $f$ and $g$ have the same number of zeros in
 $$
@@ -169,13 +169,13 @@ counted with multiplicity.
 
 ::: pf-proof
 
-Step <1>3 gives the strict Rouché inequality on the boundary circle. Rouché's theorem therefore applies.
+Step [](#s1-3){.pf-ref} gives the strict Rouché inequality on the boundary circle. Rouché's theorem therefore applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $g$ has exactly two zeros in the unit disk, counted with multiplicity.
 
@@ -196,7 +196,7 @@ with multiplicity $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $f$ has exactly
 $$
@@ -207,7 +207,7 @@ zeros in the unit disk, counted with multiplicity.
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -215,7 +215,7 @@ Combine steps <1>4 and <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required zero count.
+Step [](#s1-6){.pf-ref} is the required zero count.
 
 :::
 

@@ -65,7 +65,7 @@ the function $\sin(\psi/2)$ is increasing, so the substitution is valid.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under this substitution,
 $$
@@ -110,7 +110,7 @@ $u$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -132,7 +132,7 @@ $$
 
 ::: pf-proof
 
-Substitute the two identities from step <1>2. The factors of $k$ cancel.
+Substitute the two identities from step [](#s1-2){.pf-ref}. The factors of $k$ cancel.
 
 :::
 
@@ -160,7 +160,7 @@ Continuity of sine gives the limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Near $u=1$,
 $$
@@ -196,7 +196,7 @@ Hence the only singular factor has order $(1-u)^{-1/2}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The limiting integral is convergent for
 $$
@@ -206,18 +206,18 @@ $$
 
 ::: pf-proof
 
-By step <1>5, the endpoint behavior is dominated by a constant multiple of
+By step [](#s1-5){.pf-ref}, the endpoint behavior is dominated by a constant multiple of
 $$
 (1-u)^{-1/2},
 $$
 whose integral near $u=1$ is finite. Therefore the improper integral in step
-<1>3 converges as the upper endpoint tends to $1$.
+[](#s1-3){.pf-ref} converges as the upper endpoint tends to $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -228,7 +228,7 @@ the integral diverges logarithmically.
 
 ::: pf-proof
 
-Now $k=1$, so the integrand in step <1>3 becomes
+Now $k=1$, so the integrand in step [](#s1-3){.pf-ref} becomes
 $$
 \frac{2}{1-u^2}.
 $$
@@ -244,7 +244,7 @@ whose integral diverges logarithmically.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -257,7 +257,7 @@ $$
 
 ::: pf-proof
 
-This is step <1>6; step <1>7 records the endpoint exception $\phi_0=\pi$.
+This is step [](#s1-6){.pf-ref}; step [](#s1-7){.pf-ref} records the endpoint exception $\phi_0=\pi$.
 
 :::
 
@@ -265,7 +265,7 @@ This is step <1>6; step <1>7 records the endpoint exception $\phi_0=\pi$.
 
 ::: pf-qed
 
-Steps <1>6--<1>8 give the complete convergence statement in the physically
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give the complete convergence statement in the physically
 relevant range.
 
 :::

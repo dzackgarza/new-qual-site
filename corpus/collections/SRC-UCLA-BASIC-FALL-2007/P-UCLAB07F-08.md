@@ -22,7 +22,7 @@ Does it follow that \[\sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty?\] Prove your 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -48,7 +48,7 @@ Thus the transformed series has infinitely many terms at least $1/2$, so its par
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -76,9 +76,9 @@ Since $a_n\ge0$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-In the case of step <1>2,
+In the case of step [](#s1-2){.pf-ref},
 \[
 \sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty.
 \]
@@ -90,7 +90,7 @@ Choose $N$ such that $a_n<1$ for all $n\ge N$. By hypothesis,
 \[
 \sum_{n=N}^{\infty}a_n=\infty,
 \]
-because removing finitely many terms does not change divergence. By step <1>2,
+because removing finitely many terms does not change divergence. By step [](#s1-2){.pf-ref},
 \[
 \sum_{n=N}^{M}\frac{a_n}{1+a_n}
 \ge
@@ -102,7 +102,7 @@ The right side tends to $+\infty$ as $M\to\infty$, so the transformed series div
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -114,7 +114,7 @@ Therefore
 
 ::: pf-proof
 
-Either $a_n\ge1$ for infinitely many $n$, in which case step <1>1 applies, or $a_n<1$ eventually, in which case step <1>3 applies. These cases exhaust all possibilities.
+Either $a_n\ge1$ for infinitely many $n$, in which case step [](#s1-1){.pf-ref} applies, or $a_n<1$ eventually, in which case step [](#s1-3){.pf-ref} applies. These cases exhaust all possibilities.
 
 :::
 
@@ -122,7 +122,7 @@ Either $a_n\ge1$ for infinitely many $n$, in which case step <1>1 applies, or $a
 
 ::: pf-qed
 
-Step <1>4 answers the question affirmatively.
+Step [](#s1-4){.pf-ref} answers the question affirmatively.
 
 :::
 

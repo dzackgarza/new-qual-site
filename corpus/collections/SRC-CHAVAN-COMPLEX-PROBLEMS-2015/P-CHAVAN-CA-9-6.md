@@ -18,7 +18,7 @@ Show that $\operatorname{GL}_n(\mathbb C)$ is path-connected.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the coordinate identification
 $$
@@ -42,7 +42,7 @@ is a polynomial in the matrix entries.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singular matrices form the zero set of this polynomial, and therefore
 $$
@@ -60,7 +60,7 @@ A complex matrix is invertible if and only if its determinant is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space $\operatorname{GL}_n(\CC)$ is path-connected.
 
@@ -69,8 +69,8 @@ The space $\operatorname{GL}_n(\CC)$ is path-connected.
 
 Theorem 9.5 in the source states that the complement of the zero set of any
 complex polynomial in $N$ variables is path-connected. Apply it with
-$N=n^2$ and the determinant polynomial from step <1>1, then use the
-identification in step <1>2.
+$N=n^2$ and the determinant polynomial from step [](#s1-1){.pf-ref}, then use the
+identification in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -78,7 +78,7 @@ identification in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

@@ -29,7 +29,7 @@ Let $T$ be a linear transformation from a finite-dimensional inner-product space
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The adjoint of
 \[
@@ -99,7 +99,7 @@ Because the basis is orthonormal, the $i$th coordinate is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix of $T^*$ in the corresponding orthonormal bases is
 \[
@@ -135,7 +135,7 @@ This proves part (b).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -171,7 +171,7 @@ Thus $w$ is orthogonal to every vector in $\operatorname{im}T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One also has
 \[
@@ -215,7 +215,7 @@ T^*w=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -229,14 +229,14 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 This proves part (c).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The rank of $T^*$ equals the rank of $T$.
 
@@ -252,7 +252,7 @@ T^*:W\to V,
 =
 \dim W-\dim\ker T^*.
 \]
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 \dim\ker T^*
 =
@@ -273,7 +273,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let $A$ be the matrix of $T$ in orthonormal bases.
 Then the column rank of $A$ equals
@@ -294,7 +294,7 @@ Te_1,\ldots,Te_n.
 \]
 Their span is therefore the coordinate image of $\operatorname{im}T$, so the column rank is $\operatorname{rank}T$.
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 [T^*]=A^T.
 \]
@@ -308,7 +308,7 @@ Hence the row rank of $A$ is the column rank of $A^T$, which equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -322,13 +322,13 @@ Therefore
 
 ::: pf-proof
 
-By step <1>8, these ranks are
+By step [](#s1-8){.pf-ref}, these ranks are
 \[
 \operatorname{rank}T^*
 \quad\text{and}\quad
 \operatorname{rank}T.
 \]
-Step <1>7 shows they are equal.
+Step [](#s1-7){.pf-ref} shows they are equal.
 This proves part (d).
 
 :::
@@ -337,7 +337,7 @@ This proves part (d).
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>3 proves part (b), step <1>6 proves part (c), and step <1>9 proves part (d).
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-3){.pf-ref} proves part (b), step [](#s1-6){.pf-ref} proves part (c), and step [](#s1-9){.pf-ref} proves part (d).
 
 :::
 

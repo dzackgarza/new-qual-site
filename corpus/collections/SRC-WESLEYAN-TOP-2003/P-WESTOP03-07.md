@@ -21,7 +21,7 @@ If $X$ is already compact, one may take $X^*=X\sqcup\{\infty\}$ with $\infty$ is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 As a set, define
 \[
@@ -38,7 +38,7 @@ This adjoins exactly one new point to $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Declare a subset $U\subseteq X^*$ to be open if either
 \[
@@ -60,20 +60,20 @@ These sets form a topology. Arbitrary unions are immediate: if a union contains 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The subspace topology induced on $X\subseteq X^*$ is the original topology of $X$.
 
 
 ::: pf-proof
 
-Every open subset of $X$ was explicitly declared open in $X^*$. Conversely, intersecting any open set of $X^*$ with $X$ gives an open subset of $X$ by step <1>2.
+Every open subset of $X$ was explicitly declared open in $X^*$. Conversely, intersecting any open set of $X^*$ with $X$ gives an open subset of $X$ by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space $X^*$ is compact.
 
@@ -90,7 +90,7 @@ is compact in $X$. The remaining members of $\mathcal U$ cover $K$, so finitely 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $X^*$ is Hausdorff.
 
@@ -109,7 +109,7 @@ are disjoint open neighborhoods of $x$ and $\infty$, respectively.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Now suppose $X$ has a countable basis $\{B_n:n\geq1\}$. Then $X$ is $\sigma$-compact: there exist compact sets
 \[
@@ -137,7 +137,7 @@ Each $K_n$ is compact, the sequence is increasing, and its union is $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The sets
 \[
@@ -148,7 +148,7 @@ form a countable neighborhood basis at $\infty$.
 
 ::: pf-proof
 
-Each $U_n$ is a neighborhood of $\infty$ by the definition in step <1>2. If $U$ is any neighborhood of $\infty$, then
+Each $U_n$ is a neighborhood of $\infty$ by the definition in step [](#s1-2){.pf-ref}. If $U$ is any neighborhood of $\infty$, then
 \[
 C=X^*\setminus U
 \]
@@ -161,35 +161,35 @@ U_N=X^*\setminus K_N\subseteq X^*\setminus C=U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Combining the countable basis of $X$ with $\{U_n:n\geq1\}$ gives a countable basis for $X^*$.
 
 
 ::: pf-proof
 
-At points of $X$, the original basis elements form a neighborhood basis by step <1>3. At $\infty$, step <1>7 supplies the countable neighborhood basis. Their union is countable and is a basis for all of $X^*$.
+At points of $X$, the original basis elements form a neighborhood basis by step [](#s1-3){.pf-ref}. At $\infty$, step [](#s1-7){.pf-ref} supplies the countable neighborhood basis. Their union is countable and is a basis for all of $X^*$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since $X^*$ is compact Hausdorff and second countable, it is metrizable.
 
 
 ::: pf-proof
 
-A compact Hausdorff space is regular. By step <1>8, $X^*$ is second countable. The Urysohn metrization theorem states that every regular second-countable $T_1$ space is metrizable. The $T_1$ property follows from Hausdorffness in step <1>5.
+A compact Hausdorff space is regular. By step [](#s1-8){.pf-ref}, $X^*$ is second countable. The Urysohn metrization theorem states that every regular second-countable $T_1$ space is metrizable. The $T_1$ property follows from Hausdorffness in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Thus the one-point compactification is the space described in steps <1>1--<1>5, and if $X$ has a countable basis then
+Thus the one-point compactification is the space described in steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}, and if $X$ has a countable basis then
 \[
 \boxed{X^*\text{ is metrizable}.}
 \]
@@ -197,7 +197,7 @@ Thus the one-point compactification is the space described in steps <1>1--<1>5, 
 
 ::: pf-proof
 
-Steps <1>1--<1>5 construct and verify the one-point compactification. Steps <1>6--<1>9 prove the metrizability assertion.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} construct and verify the one-point compactification. Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} prove the metrizability assertion.
 
 :::
 
@@ -205,7 +205,7 @@ Steps <1>1--<1>5 construct and verify the one-point compactification. Steps <1>6
 
 ::: pf-qed
 
-Step <1>10 contains both requested conclusions.
+Step [](#s1-10){.pf-ref} contains both requested conclusions.
 
 :::
 

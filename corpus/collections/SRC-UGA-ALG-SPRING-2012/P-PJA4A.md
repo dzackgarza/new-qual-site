@@ -32,7 +32,7 @@ Let $G=\operatorname{Gal}(E/F)$, with $|G|=14$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists exactly one intermediate field of degree two over $F$.
 
@@ -45,7 +45,7 @@ By the Galois correspondence, a field $K$ with $[K:F]=2$ corresponds to a subgro
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If there exist two distinct intermediate fields of degree seven over $F$, then $G$ is nonabelian.
 
@@ -60,7 +60,7 @@ The two fields correspond to distinct subgroups $H_1,H_2\leq G$ of order two by 
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove parts (a) and (b), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove parts (a) and (b), respectively.
 
 :::
 

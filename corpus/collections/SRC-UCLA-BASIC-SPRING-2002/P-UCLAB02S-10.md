@@ -58,7 +58,7 @@ The vector is a finite linear combination of basis vectors of $W$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vector
 \[
@@ -93,7 +93,7 @@ Hence $v-v_W$ is orthogonal to every basis vector of $W$, and therefore to every
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $w\in W$,
 \[
@@ -107,7 +107,7 @@ and the two summands are orthogonal.
 ::: pf-proof
 
 The displayed decomposition is algebraic.
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 v-v_W
 \perp
@@ -123,7 +123,7 @@ the two summands are orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $w\in W$,
 \[
@@ -137,13 +137,13 @@ For every $w\in W$,
 
 ::: pf-proof
 
-Apply the Pythagorean theorem to the orthogonal decomposition in step <1>3.
+Apply the Pythagorean theorem to the orthogonal decomposition in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $w\in W$,
 \[
@@ -157,7 +157,7 @@ For every $w\in W$,
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \|v-w\|^2
 =
@@ -173,7 +173,7 @@ Both sides are nonnegative, so taking square roots gives the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Equality
 \[
@@ -189,7 +189,7 @@ w=v_W.
 
 ::: pf-proof
 
-By step <1>4, equality of the norms is equivalent to
+By step [](#s1-4){.pf-ref}, equality of the norms is equivalent to
 \[
 \|v_W-w\|^2=0.
 \]
@@ -202,7 +202,7 @@ w=v_W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The minimizing vector is unique.
 
@@ -230,14 +230,14 @@ gives
 \le
 \|v-v_W\|.
 \]
-But step <1>5, applied to $w=u$, gives the reverse inequality.
+But step [](#s1-5){.pf-ref}, applied to $w=u$, gives the reverse inequality.
 Thus
 \[
 \|v-u\|
 =
 \|v-v_W\|.
 \]
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 u=v_W.
 \]
@@ -248,7 +248,7 @@ u=v_W.
 
 ::: pf-qed
 
-Step <1>5 proves existence of a best approximant, step <1>7 proves uniqueness, and step <1>6 gives the equality criterion.
+Step [](#s1-5){.pf-ref} proves existence of a best approximant, step [](#s1-7){.pf-ref} proves uniqueness, and step [](#s1-6){.pf-ref} gives the equality criterion.
 
 :::
 

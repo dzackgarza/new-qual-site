@@ -34,7 +34,7 @@ be the universal covering map.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -54,7 +54,7 @@ This sets up the classification statement needed below.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose lifts
 \[
@@ -82,7 +82,7 @@ lift through the covering \(p\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The common degree \(d\) is characterized by
 \[
@@ -108,7 +108,7 @@ is integer-valued and continuous in \(t\), hence constant. That constant is the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -130,7 +130,7 @@ This is a continuous linear interpolation between the two lifts.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -141,7 +141,7 @@ K_s(t+1)=K_s(t)+d}.
 
 ::: pf-proof
 
-Using step <1>3,
+Using step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 K_s(t+1)
@@ -156,7 +156,7 @@ K_s(t)+d.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the formula
 \[
@@ -171,7 +171,7 @@ If
 \[
 p(t)=p(t+k)
 \]
-for \(k\in\mathbb Z\), then repeated use of step <1>5 gives
+for \(k\in\mathbb Z\), then repeated use of step [](#s1-5){.pf-ref} gives
 \[
 K_s(t+k)=K_s(t)+kd.
 \]
@@ -185,7 +185,7 @@ Thus the value depends only on the point \(p(t)\in S^1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map
 \[
@@ -209,7 +209,7 @@ H(p(t),1)=p(G(t))=g(p(t)).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -222,13 +222,13 @@ f\simeq g}.
 
 ::: pf-proof
 
-This is the conclusion of steps <1>1--<1>7.
+This is the conclusion of steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Degree is multiplicative under composition:
 \[
@@ -270,13 +270,13 @@ Likewise,
 
 ::: pf-proof
 
-Reverse the order in step <1>9.
+Reverse the order in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Since integer multiplication is commutative,
 \[
@@ -297,7 +297,7 @@ mn=nm.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -310,7 +310,7 @@ Therefore
 
 ::: pf-proof
 
-Apply step <1>8 to the two maps whose degrees agree by step <1>11.
+Apply step [](#s1-8){.pf-ref} to the two maps whose degrees agree by step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -318,7 +318,7 @@ Apply step <1>8 to the two maps whose degrees agree by step <1>11.
 
 ::: pf-qed
 
-Step <1>12 is the required homotopy statement.
+Step [](#s1-12){.pf-ref} is the required homotopy statement.
 
 :::
 

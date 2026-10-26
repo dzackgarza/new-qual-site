@@ -28,7 +28,7 @@ The temperature at each point $(x,y,z)$ in a room is given by the equation $T(x,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The temperature gradient at $(2,2,2)$ is
 $$
@@ -57,7 +57,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The direction of most rapid decrease of $T$ at $(2,2,2)$ is the direction of
 $$
@@ -83,7 +83,7 @@ with equality exactly when $\mathbf{u}$ points opposite to the gradient. Hence t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required listed direction is
 $$
@@ -94,11 +94,11 @@ so the answer is (A).
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 -\nabla T(2,2,2)=-12(5,1,2).
 $$
-Multiplying a nonzero direction vector by a positive scalar does not change its direction, so step <1>2 identifies $(-5,-1,-2)$, which is choice (A).
+Multiplying a nonzero direction vector by a positive scalar does not change its direction, so step [](#s1-2){.pf-ref} identifies $(-5,-1,-2)$, which is choice (A).
 
 :::
 
@@ -106,7 +106,7 @@ Multiplying a nonzero direction vector by a positive scalar does not change its 
 
 ::: pf-qed
 
-Step <1>3 gives the requested direction and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested direction and corresponding choice.
 
 :::
 

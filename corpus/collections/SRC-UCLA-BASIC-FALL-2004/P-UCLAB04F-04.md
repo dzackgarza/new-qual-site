@@ -25,7 +25,7 @@ Prove that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n$,
 \[
@@ -69,7 +69,7 @@ Combining the two inequalities yields the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -83,7 +83,7 @@ Since $x_n\to x$,
 \[
 \rho(x_n,x)\to0.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 0
 \le
@@ -102,7 +102,7 @@ The squeeze theorem therefore gives
 
 ::: pf-qed
 
-Step <1>2 is the required conclusion.
+Step [](#s1-2){.pf-ref} is the required conclusion.
 
 :::
 

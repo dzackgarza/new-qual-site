@@ -49,7 +49,7 @@ Thus the two local powers are $x^\nu$ and $x^{-\nu}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\nu\ne0$, the divergent branch has leading power $x^{-|\nu|}$, and the standard normalization of $K_\nu$ gives
 \[
@@ -85,7 +85,7 @@ The same leading formula at positive integral $\nu$ follows by continuity in the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\nu=0$, the two indicial roots coalesce at $r=0$, and the divergent solution is logarithmic rather than a power:
 \[
@@ -97,7 +97,7 @@ where $\gamma$ is Euler's constant.
 
 ::: pf-proof
 
-Use the representation from step <1>2 and take the limit $\nu\to0$. The expansions
+Use the representation from step [](#s1-2){.pf-ref} and take the limit $\nu\to0$. The expansions
 \[
 I_\nu(x)=I_0(x)+O(\nu),
 \qquad I_0(x)=1+O(x^2),
@@ -116,7 +116,7 @@ show that the cancellation of the two coincident power branches leaves the logar
 
 ::: pf-qed
 
-Steps <1>2 and <1>3 give the requested small-$x$ behavior for nonzero and zero order, respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give the requested small-$x$ behavior for nonzero and zero order, respectively.
 
 :::
 

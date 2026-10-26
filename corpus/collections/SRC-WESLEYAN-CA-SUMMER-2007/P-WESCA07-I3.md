@@ -21,7 +21,7 @@ State the local Cauchy Theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Local Cauchy Theorem.** Let $U\subseteq\CC$ be open and let $f:U\to\CC$ be analytic. For every $z_0\in U$, there exists $r>0$ such that
 $$
@@ -42,7 +42,7 @@ This is the local form of Cauchy's theorem: on a sufficiently small disk contain
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently, for every $z_0\in U$ there is a neighborhood $V\subseteq U$ of $z_0$ on which $f$ has a holomorphic primitive $F$, so that
 $$
@@ -60,7 +60,7 @@ Vanishing of all closed-path integrals on a connected open set is equivalent to 
 
 ::: pf-qed
 
-Step <1>1 is the requested theorem statement; step <1>2 gives its standard equivalent formulation.
+Step [](#s1-1){.pf-ref} is the requested theorem statement; step [](#s1-2){.pf-ref} gives its standard equivalent formulation.
 
 :::
 

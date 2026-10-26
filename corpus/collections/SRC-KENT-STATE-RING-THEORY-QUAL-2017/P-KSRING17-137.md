@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The descending chain
 $$
@@ -70,7 +70,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Set
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 J^n
 =
@@ -109,7 +109,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose, for contradiction, that
 $$
@@ -138,7 +138,7 @@ Choose such a minimal right ideal and call it $C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists
 $$
@@ -177,7 +177,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set
 $$
@@ -226,13 +226,13 @@ $$
 c\in C
 $$
 and $C$ is a right ideal.
-It is nonzero by step <1>4.
+It is nonzero by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -242,7 +242,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 A=AJ.
 $$
@@ -298,17 +298,17 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives a nonzero right ideal
+Step [](#s1-5){.pf-ref} gives a nonzero right ideal
 $$
 cA
 \subseteq
 C.
 $$
-Step <1>6 shows
+Step [](#s1-6){.pf-ref} shows
 $$
 (cA)A\ne0.
 $$
-Thus $cA$ belongs to the collection of right ideals used in step <1>3.
+Thus $cA$ belongs to the collection of right ideals used in step [](#s1-3){.pf-ref}.
 Minimality of $C$ forces
 $$
 cA=C.
@@ -318,7 +318,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since
 $$
@@ -353,7 +353,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The element
 $$
@@ -406,11 +406,11 @@ $$
 
 ::: pf-proof
 
-Rearranging step <1>8 gives
+Rearranging step [](#s1-8){.pf-ref} gives
 $$
 c(1-a)=0.
 $$
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 $$
 1-a
 $$
@@ -428,7 +428,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 This contradicts
 $$
@@ -446,13 +446,13 @@ then
 $$
 cA=0,
 $$
-contrary to the choice of $c$ in step <1>4.
+contrary to the choice of $c$ in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 $$
@@ -466,7 +466,7 @@ The assumption
 $$
 A\ne0
 $$
-leads to the contradiction in step <1>11.
+leads to the contradiction in step [](#s1-11){.pf-ref}.
 Hence
 $$
 A=0.
@@ -476,7 +476,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Consequently,
 $$
@@ -496,7 +496,7 @@ By definition,
 $$
 A=J^n.
 $$
-Step <1>12 gives
+Step [](#s1-12){.pf-ref} gives
 $$
 A=0.
 $$
@@ -512,7 +512,7 @@ This is exactly nilpotence of the Jacobson radical.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

@@ -35,7 +35,7 @@ v(x,y)=y^2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The first partial derivatives are
 \[
@@ -65,7 +65,7 @@ All partial derivatives are continuous everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Cauchy--Riemann equations are
 \[
@@ -83,14 +83,14 @@ For this function they reduce to
 
 ::: pf-proof
 
-Substitute the derivatives from step <1>1 into the Cauchy--Riemann
+Substitute the derivatives from step [](#s1-1){.pf-ref} into the Cauchy--Riemann
 equations.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the Cauchy--Riemann equations hold exactly at the points
 \[
@@ -114,7 +114,7 @@ x=y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is complex differentiable at every point on the line
 \[
@@ -125,12 +125,12 @@ y=x.
 ::: pf-proof
 
 The partial derivatives of $u$ and $v$ are continuous everywhere by
-step <1>1.
+step [](#s1-1){.pf-ref}.
 Therefore the standard Cauchy--Riemann differentiability theorem applies:
 at every point where the Cauchy--Riemann equations hold, $f$ is complex
 differentiable.
 
-By step <1>3, this includes every point of the line
+By step [](#s1-3){.pf-ref}, this includes every point of the line
 \[
 y=x.
 \]
@@ -161,7 +161,7 @@ f'
 =
 u_x+i v_x.
 \]
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 f'(z)
 =
@@ -174,7 +174,7 @@ f'(z)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function is not complex differentiable at any point off the line
 \[
@@ -188,7 +188,7 @@ If
 \[
 x\ne y,
 \]
-then step <1>2 gives
+then step [](#s1-2){.pf-ref} gives
 \[
 u_x
 =
@@ -205,7 +205,7 @@ so $f$ cannot be complex differentiable there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The line
 \[
@@ -231,7 +231,7 @@ Hence no nonempty open disk is contained in $L$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ is nowhere analytic.
 
@@ -249,7 +249,7 @@ U\ni z_0
 on which $f$ is holomorphic, hence complex differentiable at every point of
 $U$.
 
-By step <1>6, every complex-differentiability point lies on
+By step [](#s1-6){.pf-ref}, every complex-differentiability point lies on
 \[
 L.
 \]
@@ -257,7 +257,7 @@ Thus
 \[
 U\subseteq L,
 \]
-contradicting step <1>7 because $U$ is nonempty and open.
+contradicting step [](#s1-7){.pf-ref} because $U$ is nonempty and open.
 Therefore no point has a neighborhood on which $f$ is analytic.
 
 :::
@@ -266,11 +266,11 @@ Therefore no point has a neighborhood on which $f$ is analytic.
 
 ::: pf-qed
 
-Step <1>4 proves differentiability along
+Step [](#s1-4){.pf-ref} proves differentiability along
 \[
 y=x,
 \]
-and step <1>8 proves that $f$ is nowhere analytic.
+and step [](#s1-8){.pf-ref} proves that $f$ is nowhere analytic.
 
 :::
 

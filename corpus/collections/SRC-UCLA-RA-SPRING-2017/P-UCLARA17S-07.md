@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $f:A_R\to A_S$ is biholomorphic, and its extension to the closed annuli sends the two boundary circles of the source onto the two boundary circles of the target, possibly interchanging them.
 
@@ -52,7 +52,7 @@ On the interior, $f$ is analytic and injective. An injective nonconstant holomor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -104,13 +104,13 @@ or the reverse.
 
 ::: pf-proof
 
-Composition of a harmonic function with a biholomorphic map is harmonic. Continuity up to the boundary follows from the given continuous extension of $f$. The boundary values follow from step <1>1 and the boundary values of $u$ from step <1>2.
+Composition of a harmonic function with a biholomorphic map is harmonic. Continuity up to the boundary follows from the given continuous extension of $f$. The boundary values follow from step [](#s1-1){.pf-ref} and the boundary values of $u$ from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has either
 $$
@@ -134,7 +134,7 @@ is harmonic on $A_R$, continuous on its closure, and has boundary values $0$ on 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Dirichlet energy of $v$ is
 $$
@@ -145,7 +145,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, $|\nabla v|=|\nabla h|$ in either case. The computation in step <1>2 with $R$ in place of $S$ gives
+By step [](#s1-4){.pf-ref}, $|\nabla v|=|\nabla h|$ in either case. The computation in step [](#s1-2){.pf-ref} with $R$ in place of $S$ gives
 $$
 \int_{A_R}|\nabla h|^2\,dA=\frac{2\pi}{\log R}.
 $$
@@ -154,7 +154,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Conformal invariance of Dirichlet energy gives
 $$
@@ -176,7 +176,7 @@ The Jacobian determinant of $f$ is $|f'|^2$. The change-of-variables formula for
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -186,7 +186,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>2, <1>5, and <1>6,
+By steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref},
 $$
 \frac{2\pi}{\log R}
 =\frac{2\pi}{\log S}.
@@ -199,7 +199,7 @@ Since $R,S>1$, both logarithms are positive, so $\log R=\log S$ and hence $R=S$.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

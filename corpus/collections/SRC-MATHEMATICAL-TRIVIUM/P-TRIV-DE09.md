@@ -21,7 +21,7 @@ Solve $y ^ { \prime \prime } + 3 y ^ { \prime } + 2 y = \operatorname { t a n h 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Factor the differential operator:
 $$
@@ -61,13 +61,13 @@ $$
 
 ::: pf-proof
 
-Apply $D+1$ to the definition of $z$ and use step <1>1.
+Apply $D+1$ to the definition of $z$ and use step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Multiplying by $e^x$ gives
 $$
@@ -85,7 +85,7 @@ The integrating factor for $z'+z=\tanh x$ is $e^x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -131,7 +131,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -147,13 +147,13 @@ $$
 
 ::: pf-proof
 
-Integrate step <1>3 using step <1>4 and divide by $e^x$.
+Integrate step [](#s1-3){.pf-ref} using step [](#s1-4){.pf-ref} and divide by $e^x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Now solve
 $$
@@ -175,7 +175,7 @@ The integrating factor for the first-order equation $y'+2y=z$ is $e^{2x}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A particular antiderivative of the nonhomogeneous part is
 $$
@@ -216,14 +216,14 @@ Substitute back $u=e^x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The term $C_1e^{-x}$ in $z$ contributes a homogeneous-mode term proportional to $e^{-x}$ in $y$, and the integrating constant contributes a term proportional to $e^{-2x}$.
 
 
 ::: pf-proof
 
-Under step <1>6,
+Under step [](#s1-6){.pf-ref},
 $$
 e^{2x}C_1e^{-x}=C_1e^x,
 $$
@@ -234,7 +234,7 @@ The final integration constant becomes $C_2e^{-2x}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the general solution is
 $$
@@ -259,7 +259,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>5--<1>8 and multiply the particular antiderivative from step <1>7 by $e^{-2x}$.
+Combine steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} and multiply the particular antiderivative from step [](#s1-7){.pf-ref} by $e^{-2x}$.
 
 :::
 
@@ -267,7 +267,7 @@ Combine steps <1>5--<1>8 and multiply the particular antiderivative from step <1
 
 ::: pf-qed
 
-Step <1>9 gives the complete two-parameter solution family.
+Step [](#s1-9){.pf-ref} gives the complete two-parameter solution family.
 
 :::
 

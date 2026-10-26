@@ -23,7 +23,7 @@ throughout the parameter interval.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the chain rule,
 \[
@@ -47,7 +47,7 @@ and differentiating with respect to \(t\) gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -60,7 +60,7 @@ Therefore
 
 ::: pf-proof
 
-Solve step <1>1 for \(dy/dx\), using
+Solve step [](#s1-1){.pf-ref} for \(dy/dx\), using
 \[
 x'(t)\ne0.
 \]
@@ -69,7 +69,7 @@ x'(t)\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Differentiation with respect to \(x\) along the curve is
 \[
@@ -101,7 +101,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -117,21 +117,21 @@ Hence
 
 ::: pf-proof
 
-Apply step <1>3 to the function
+Apply step [](#s1-3){.pf-ref} to the function
 \[
 F(t)=\frac{dy}{dx}
 =
 \frac{y'}{x'}
 \]
-from step <1>2.
+from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The derivative in step <1>4 is
+The derivative in step [](#s1-4){.pf-ref} is
 \[
 \frac{d}{dt}
 \left(
@@ -150,7 +150,7 @@ Apply the quotient rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -164,7 +164,7 @@ Therefore
 
 ::: pf-proof
 
-Substitute step <1>5 into step <1>4:
+Substitute step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref}:
 \[
 \frac1{x'}
 \cdot
@@ -179,7 +179,7 @@ Substitute step <1>5 into step <1>4:
 
 ::: pf-qed
 
-Steps <1>2 and <1>6 give the requested first and second derivatives as
+Steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref} give the requested first and second derivatives as
 functions of \(t\).
 
 :::

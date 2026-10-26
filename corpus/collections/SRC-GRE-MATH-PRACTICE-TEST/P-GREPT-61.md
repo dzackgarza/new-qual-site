@@ -29,7 +29,7 @@ $$\oint_C \sqrt{2x+1} \, dx + \left(2xy + \sqrt{y^2 - y}\right) dy$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The terms depending only on $x$ or only on $y$ contribute zero around $C$.
 
@@ -50,7 +50,7 @@ Therefore the given integral equals $\oint_C 2xy\,dy$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The contribution of the horizontal edge from $(0,1)$ to $(1,1)$ is $0$.
 
@@ -63,7 +63,7 @@ Along this edge, $dy=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The contribution of the vertical edge from $(1,1)$ to $(1,3)$ is $8$.
 
@@ -79,7 +79,7 @@ Here $x=1$ and $y$ increases from $1$ to $3$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The contribution of the diagonal edge from $(1,3)$ to $(0,1)$ is $-\frac{14}{3}$.
 
@@ -98,14 +98,14 @@ counterclockwise orientation, $y$ decreases from $3$ to $1$. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The value of the integral is $\boxed{\frac{10}{3}}$.
 
 
 ::: pf-proof
 
-By steps <1>1, <1>2, <1>3, and <1>4, the integral is
+By steps [](#s1-1){.pf-ref}, [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref}, the integral is
 \[
 0+8-\frac{14}{3}=\frac{10}{3}.
 \]
@@ -117,7 +117,7 @@ Thus the correct choice is (D).
 
 ::: pf-qed
 
-Step <1>5 gives the requested value.
+Step [](#s1-5){.pf-ref} gives the requested value.
 
 :::
 

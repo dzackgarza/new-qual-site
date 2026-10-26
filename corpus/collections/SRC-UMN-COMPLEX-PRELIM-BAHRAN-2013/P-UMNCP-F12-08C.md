@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Schwarz's lemma gives
 $$
@@ -65,7 +65,7 @@ These are the hypotheses of Schwarz's lemma.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the circle
 $$
@@ -81,7 +81,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 |f(z)|
 \le
@@ -113,7 +113,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The functions
 $$
@@ -134,13 +134,13 @@ counted with multiplicity.
 
 ::: pf-proof
 
-Step <1>2 gives the strict Rouché inequality on the boundary circle. Both functions are holomorphic on a neighborhood of the closed disk, so Rouché's theorem applies.
+Step [](#s1-2){.pf-ref} gives the strict Rouché inequality on the boundary circle. Both functions are holomorphic on a neighborhood of the closed disk, so Rouché's theorem applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $F_m$ has exactly
 $$
@@ -159,7 +159,7 @@ The comparison function
 $$
 -2^mz^m
 $$
-has a zero of multiplicity $m$ at the origin and no other zeros. Step <1>3 transfers this zero count to $F_m$.
+has a zero of multiplicity $m$ at the origin and no other zeros. Step [](#s1-3){.pf-ref} transfers this zero count to $F_m$.
 
 :::
 
@@ -167,7 +167,7 @@ has a zero of multiplicity $m$ at the origin and no other zeros. Step <1>3 trans
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

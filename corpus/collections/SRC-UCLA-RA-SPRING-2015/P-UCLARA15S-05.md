@@ -46,7 +46,7 @@ for which Plancherel's theorem reads
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $(x,\xi)\in\mathbb R^2$, the integral defining $U(x,\xi)$ converges absolutely.
 
@@ -90,7 +90,7 @@ Thus $U(x,\xi)$ is well defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed $x\in\mathbb R$, define
 \[
@@ -155,7 +155,7 @@ The last integral is $\mathcal Fh_x(-\xi)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every fixed $x\in\mathbb R$,
 \[
@@ -171,7 +171,7 @@ e^{-(x-y)^2}
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 |U(x,\xi)|^2e^{-\xi^2}
 =
@@ -208,7 +208,7 @@ e^{-(x-y)^2}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -224,7 +224,7 @@ One has
 
 ::: pf-proof
 
-The integrand in step <1>3 is nonnegative, so Tonelli's theorem permits integration in $x$ and $y$ in either order:
+The integrand in step [](#s1-3){.pf-ref} is nonnegative, so Tonelli's theorem permits integration in $x$ and $y$ in either order:
 \[
 \begin{aligned}
 \iint_{\mathbb R^2}
@@ -260,7 +260,7 @@ the boxed identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the required constant is
 \[
@@ -270,7 +270,7 @@ Thus the required constant is
 
 ::: pf-proof
 
-Compare the identity in step <1>4 with the form required in the problem.
+Compare the identity in step [](#s1-4){.pf-ref} with the form required in the problem.
 
 :::
 
@@ -278,7 +278,7 @@ Compare the identity in step <1>4 with the form required in the problem.
 
 ::: pf-qed
 
-Step <1>1 proves well-definedness, and steps <1>4 and <1>5 prove the norm identity and determine the constant.
+Step [](#s1-1){.pf-ref} proves well-definedness, and steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} prove the norm identity and determine the constant.
 
 :::
 

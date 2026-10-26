@@ -46,7 +46,7 @@ u_t(x,0)=x.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the heat equation, each sine mode evolves by
 \[
@@ -68,7 +68,7 @@ Thus $a'=-9n^2a$, so $a(t)=a(0)e^{-9n^2t}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The solution of part (a) is
 \[
@@ -78,7 +78,7 @@ u(x,t)=4e^{-9t}\sin x+5e^{-36t}\sin(2x).
 
 ::: pf-proof
 
-Apply step <1>1 to the $n=1$ and $n=2$ terms in the initial condition.
+Apply step [](#s1-1){.pf-ref} to the $n=1$ and $n=2$ terms in the initial condition.
 At $t=0$ the resulting expression is
 $4\sin x+5\sin(2x)$, as required.
 
@@ -86,7 +86,7 @@ $4\sin x+5\sin(2x)$, as required.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The answer to part (b) is
 \[
@@ -97,7 +97,7 @@ The answer to part (b) is
 ::: pf-proof
 
 With the stated norm, the functions $\sin(nx)$ are orthonormal. By
-step <1>2,
+step [](#s1-2){.pf-ref},
 \[
 u(x,1)=4e^{-9}\sin x+5e^{-36}\sin(2x).
 \]
@@ -112,7 +112,7 @@ Parseval's identity therefore gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On $(-\pi,\pi)$,
 \[
@@ -142,7 +142,7 @@ $-\pi<x<\pi$ and its periodic $L^2$ class globally.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (c), let
 \[
@@ -172,7 +172,7 @@ q_n''+(9n^2+2)q_n=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The component determined by the initial position
 $7\sin(5x)$ is
@@ -184,7 +184,7 @@ u_{\mathrm{pos}}(x,t)
 
 ::: pf-proof
 
-For $n=5$, step <1>5 gives
+For $n=5$, step [](#s1-5){.pf-ref} gives
 \[
 \omega_5=\sqrt{9\cdot25+2}=\sqrt{227}.
 \]
@@ -195,7 +195,7 @@ $q_5(t)=7\cos(\sqrt{227}\,t)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The component determined by the initial velocity $x$ is
 \[
@@ -209,11 +209,11 @@ u_{\mathrm{vel}}(x,t)
 
 ::: pf-proof
 
-By step <1>4, the initial velocity coefficient of $\sin(nx)$ is
+By step [](#s1-4){.pf-ref}, the initial velocity coefficient of $\sin(nx)$ is
 \[
 v_n=\frac{2(-1)^{n+1}}n.
 \]
-For the oscillator in step <1>5 with zero initial position and initial
+For the oscillator in step [](#s1-5){.pf-ref} with zero initial position and initial
 velocity $v_n$, the amplitude is
 \[
 q_n(t)=\frac{v_n}{\omega_n}\sin(\omega_nt).
@@ -224,7 +224,7 @@ Substituting $v_n$ and $\omega_n$ gives the displayed series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The spatially constant component forced by $1$ is
 \[
@@ -253,7 +253,7 @@ $c''+2c=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The solution of part (c) is
 \[
@@ -274,19 +274,19 @@ The operator
 \[
 L[u]=u_{tt}-9u_{xx}+2u
 \]
-is linear. Steps <1>6 and <1>7 give solutions of $L[u]=0$, while
-step <1>8 gives a solution of $L[u]=1$. Their sum therefore solves the
+is linear. Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give solutions of $L[u]=0$, while
+step [](#s1-8){.pf-ref} gives a solution of $L[u]=1$. Their sum therefore solves the
 inhomogeneous PDE. At $t=0$, the second and third components vanish and
 the first is $7\sin(5x)$. Differentiating at $t=0$, the first and third
-components have zero derivative, while step <1>7 yields the sine series
-in step <1>4, namely the prescribed initial velocity $x$ in the periodic
+components have zero derivative, while step [](#s1-7){.pf-ref} yields the sine series
+in step [](#s1-4){.pf-ref}, namely the prescribed initial velocity $x$ in the periodic
 $L^2$ sense.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Collecting the requested outputs,
 \[
@@ -309,8 +309,8 @@ u(x,t)=7\cos(\sqrt{227}\,t)\sin(5x)\\
 
 ::: pf-proof
 
-Parts (a), (b), and (c) are established by steps <1>2, <1>3, and
-<1>9, respectively.
+Parts (a), (b), and (c) are established by steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and
+[](#s1-9){.pf-ref}, respectively.
 
 :::
 
@@ -318,7 +318,7 @@ Parts (a), (b), and (c) are established by steps <1>2, <1>3, and
 
 ::: pf-qed
 
-Step <1>10 records all three requested answers.
+Step [](#s1-10){.pf-ref} records all three requested answers.
 
 :::
 

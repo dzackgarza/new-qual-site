@@ -46,7 +46,7 @@ The source labels the first three integrals (i)–(iii) and then, at the top of 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Dirichlet integral is
 $$
@@ -112,7 +112,7 @@ uniformly in $\varepsilon\ge0$. On $[0,R]$, dominated convergence applies as $\v
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -151,7 +151,7 @@ $$
 \int_0^\infty
 \frac{\sin2x}{x}\,dx.
 $$
-The boundary term vanishes at both $0$ and $\infty$. With $u=2x$ and step <1>1,
+The boundary term vanishes at both $0$ and $\infty$. With $u=2x$ and step [](#s1-1){.pf-ref},
 $$
 \int_0^\infty
 \frac{\sin2x}{x}\,dx
@@ -172,7 +172,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0<a<2$,
 $$
@@ -226,7 +226,7 @@ which is also the limit of the displayed formula as $a\to1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $a,b>0$,
 $$
@@ -266,7 +266,7 @@ b
 \frac{\sin bx}{x}\,dx.
 \end{aligned}
 $$
-For any $c>0$, the substitution $u=cx$ and step <1>1 give
+For any $c>0$, the substitution $u=cx$ and step [](#s1-1){.pf-ref} give
 $$
 \int_0^\infty
 \frac{\sin cx}{x}\,dx
@@ -284,7 +284,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $0<a<n$,
 $$
@@ -341,7 +341,7 @@ Multiplying by $1/n$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For $n\ge2$,
 $$
@@ -372,7 +372,7 @@ I_n'(1)
 \int_0^\infty
 \frac{\log x}{1+x^n}\,dx.
 $$
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 I_n(a)
 =
@@ -393,7 +393,7 @@ Setting $a=1$ gives the stated value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -457,7 +457,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For $a\in\CC$, choose a root $q$ of
 $$
@@ -566,7 +566,7 @@ any singularity is logarithmic and integrable. Thus the same identity holds on t
 
 ::: pf-qed
 
-Steps <1>1--<1>8 evaluate parts (i)--(viii), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} evaluate parts (i)--(viii), respectively.
 
 :::
 

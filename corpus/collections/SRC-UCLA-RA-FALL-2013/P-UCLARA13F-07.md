@@ -28,7 +28,7 @@ Let $\mathcal D$ denote the set in the problem. It suffices to approximate funct
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subspace
 \[
@@ -54,7 +54,7 @@ by absolute continuity of the Lebesgue integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every $g\in\mathcal S$ satisfies
 \[
@@ -74,7 +74,7 @@ Choose $\varepsilon>0$ such that $g=0$ on $[0,\varepsilon]$. On $[\varepsilon,1]
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $N\geq2$, define
 \[
@@ -109,7 +109,7 @@ Also $x^{-1/2}\phi_N\in L^1$ by the same computation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus
 \[
@@ -120,13 +120,13 @@ while every $\phi_N$ has weighted integral $1$.
 
 ::: pf-proof
 
-This is immediate from step <1>3 because $1/\log N\to0$.
+This is immediate from step [](#s1-3){.pf-ref} because $1/\log N\to0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Fix $g\in\mathcal S$ and set
 \[
@@ -141,7 +141,7 @@ Then $g_N\in\mathcal D$.
 
 ::: pf-proof
 
-By steps <1>2 and <1>3, both $x^{-1/2}g$ and $x^{-1/2}\phi_N$ are integrable, so the same is true for $g_N$. Moreover,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, both $x^{-1/2}g$ and $x^{-1/2}\phi_N$ are integrable, so the same is true for $g_N$. Moreover,
 \[
 \int_0^1x^{-1/2}g_N(x)\,dx
 =c-c\cdot1=0.
@@ -152,7 +152,7 @@ Thus $g_N$ satisfies both defining conditions of $\mathcal D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -162,20 +162,20 @@ One has
 
 ::: pf-proof
 
-By definition $g_N-g=-c\phi_N$, and step <1>4 gives the limit.
+By definition $g_N-g=-c\phi_N$, and step [](#s1-4){.pf-ref} gives the limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore $\mathcal D$ is dense in $L^2([0,1])$.
 
 
 ::: pf-proof
 
-Step <1>1 says $\mathcal S$ is dense in $L^2$. Steps <1>5--<1>6 show every $g\in\mathcal S$ lies in the $L^2$ closure of $\mathcal D$. Hence the closure of $\mathcal D$ contains the dense set $\mathcal S$, so it is all of $L^2([0,1])$.
+Step [](#s1-1){.pf-ref} says $\mathcal S$ is dense in $L^2$. Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} show every $g\in\mathcal S$ lies in the $L^2$ closure of $\mathcal D$. Hence the closure of $\mathcal D$ contains the dense set $\mathcal S$, so it is all of $L^2([0,1])$.
 
 :::
 
@@ -183,7 +183,7 @@ Step <1>1 says $\mathcal S$ is dense in $L^2$. Steps <1>5--<1>6 show every $g\in
 
 ::: pf-qed
 
-Step <1>7 is the required density statement.
+Step [](#s1-7){.pf-ref} is the required density statement.
 
 :::
 

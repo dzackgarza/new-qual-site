@@ -28,7 +28,7 @@ Given the vector identity $\mathbf{A}\times(\mathbf{B}\times\mathbf{C})=(\mathbf
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vector triple product gives
 $$
@@ -50,7 +50,7 @@ Because $\mathbf A\perp\mathbf B$, the first scalar product is $0$. Because $\ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -61,7 +61,7 @@ one has $\mathbf A\times\mathbf V=\mathbf B$.
 
 ::: pf-proof
 
-By bilinearity of the cross product and step <1>1,
+By bilinearity of the cross product and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \mathbf A\times\mathbf V
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the answer is
 $$
@@ -86,7 +86,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 verifies directly that the vector in choice (E) satisfies the required equation.
+Step [](#s1-2){.pf-ref} verifies directly that the vector in choice (E) satisfies the required equation.
 
 :::
 
@@ -94,7 +94,7 @@ Step <1>2 verifies directly that the vector in choice (E) satisfies the required
 
 ::: pf-qed
 
-Step <1>3 gives the requested vector and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested vector and corresponding choice.
 
 :::
 

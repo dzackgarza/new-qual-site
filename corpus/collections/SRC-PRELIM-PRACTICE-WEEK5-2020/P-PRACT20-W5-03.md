@@ -22,7 +22,7 @@ The continuous functions on $[0, 1]$ form a ring under pointwise addition and po
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -48,7 +48,7 @@ Thus both are nonzero elements of the ring.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Their pointwise product is identically zero:
 \[
@@ -75,7 +75,7 @@ f(x)g(x)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -85,7 +85,7 @@ Therefore
 
 ::: pf-proof
 
-An integral domain has no nonzero zero divisors. Steps <1>1 and <1>2 exhibit
+An integral domain has no nonzero zero divisors. Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} exhibit
 two nonzero ring elements whose product is zero.
 
 :::
@@ -94,7 +94,7 @@ two nonzero ring elements whose product is zero.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

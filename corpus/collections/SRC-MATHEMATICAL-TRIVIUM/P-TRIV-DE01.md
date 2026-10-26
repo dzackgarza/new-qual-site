@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Rewrite the differential equation as
 $$
@@ -50,7 +50,7 @@ for $y>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Multiply by $y^2$:
 $$
@@ -62,13 +62,13 @@ $$
 
 ::: pf-proof
 
-This is an algebraic rearrangement of step <1>1.
+This is an algebraic rearrangement of step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The left-hand side is
 $$
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The right-hand side is
 $$
@@ -116,7 +116,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -130,13 +130,13 @@ $$
 
 ::: pf-proof
 
-Integrate step <1>2 using steps <1>3--<1>4.
+Integrate step [](#s1-2){.pf-ref} using steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Equivalently,
 $$
@@ -153,14 +153,14 @@ for an arbitrary constant $C\in\mathbb R$.
 
 ::: pf-proof
 
-Multiply step <1>5 by $3$ and absorb the factor $3$ into the integration
+Multiply step [](#s1-5){.pf-ref} by $3$ and absorb the factor $3$ into the integration
 constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus the solutions are
 $$
@@ -182,7 +182,7 @@ $$
 
 ::: pf-proof
 
-Take the real cube root in step <1>6. The strict positivity condition is
+Take the real cube root in step [](#s1-6){.pf-ref}. The strict positivity condition is
 required by the original logarithm $\log y$.
 
 :::
@@ -191,7 +191,7 @@ required by the original logarithm $\log y$.
 
 ::: pf-qed
 
-Step <1>7 gives the complete family of real solutions on the natural domains
+Step [](#s1-7){.pf-ref} gives the complete family of real solutions on the natural domains
 of the equation.
 
 :::

@@ -23,7 +23,7 @@ Evaluate
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function \(|\sin x|\) is \(\pi\)-periodic.
 
@@ -43,7 +43,7 @@ For every \(x\in\mathbb R\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One period has integral
 \[
@@ -68,27 +68,27 @@ On \([0,\pi]\), one has \(\sin x\ge0\), so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The interval \([0,10\pi]\) consists of ten consecutive periods of \(|\sin x|\).
 
 
 ::: pf-proof
 
-By step <1>1, for each integer \(k=0,\ldots,9\),
+By step [](#s1-1){.pf-ref}, for each integer \(k=0,\ldots,9\),
 \[
 \int_{k\pi}^{(k+1)\pi}|\sin x|\,dx
 =
 \int_0^\pi|\sin x|\,dx
 =2
 \]
-by step <1>2.
+by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -98,7 +98,7 @@ Therefore
 
 ::: pf-proof
 
-Add the ten integrals from step <1>3:
+Add the ten integrals from step [](#s1-3){.pf-ref}:
 \[
 \int_0^{10\pi}|\sin x|\,dx
 =
@@ -114,7 +114,7 @@ Add the ten integrals from step <1>3:
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

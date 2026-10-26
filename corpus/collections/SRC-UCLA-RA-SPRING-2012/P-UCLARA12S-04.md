@@ -29,7 +29,7 @@ S=\left\{f\in L^1(\mathbb R^3):\int_{\mathbb R^3}f(x)\,dx=0\right\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The linear functional
 $$
@@ -56,7 +56,7 @@ Thus $T$ is bounded, hence continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The subspace $S$ is closed in $L^1(\RR^3)$.
 
@@ -67,13 +67,13 @@ By definition,
 $$
 S=\ker T.
 $$
-The kernel of the continuous linear functional from step <1>1 is closed.
+The kernel of the continuous linear functional from step [](#s1-1){.pf-ref} is closed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every compactly supported $h\in L^2(\RR^3)$ can be approximated arbitrarily closely in $L^2$ by an element of $S\cap L^2(\RR^3)$.
 
@@ -117,7 +117,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The subspace $S\cap L^2(\RR^3)$ is dense in $L^2(\RR^3)$.
 
@@ -128,7 +128,7 @@ Let $f\in L^2(\RR^3)$ and $\varepsilon>0$. Compactly supported $L^2$ functions a
 $$
 \norm{f-h}_{L^2}<\frac{\varepsilon}{2}.
 $$
-By step <1>3, choose $g\in S\cap L^2$ with
+By step [](#s1-3){.pf-ref}, choose $g\in S\cap L^2$ with
 $$
 \norm{h-g}_{L^2}<\frac{\varepsilon}{2}.
 $$
@@ -147,7 +147,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>4 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
 
 :::
 

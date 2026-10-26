@@ -49,7 +49,7 @@ M=\max_{x\in[a,b]}|f^{(3)}(x)|.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $t\in[-h,h]$, Taylor's theorem at $m$ gives
 \[
@@ -91,7 +91,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Simpson's rule is exact for the quadratic polynomial $p$:
 \[
@@ -156,7 +156,7 @@ This agrees with the integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The quadrature error for $f$ equals the quadrature error for the remainder $R$:
 \[
@@ -183,19 +183,19 @@ x=m+t,
 \]
 the integral over $[a,b]$ becomes an integral over $[-h,h]$.
 Both integration and Simpson's rule are linear.
-By step <1>2, they agree exactly on the polynomial part $p$.
+By step [](#s1-2){.pf-ref}, they agree exactly on the polynomial part $p$.
 Subtracting therefore leaves only the remainder contribution.
 Since
 \[
 R(0)=0
 \]
-by step <1>1, this term will vanish in the estimate below.
+by step [](#s1-1){.pf-ref}, this term will vanish in the estimate below.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The integral remainder satisfies
 \[
@@ -209,7 +209,7 @@ The integral remainder satisfies
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 \left|
@@ -243,7 +243,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Simpson remainder satisfies
 \[
@@ -260,7 +260,7 @@ The Simpson remainder satisfies
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |R(\pm h)|
 \le
@@ -294,7 +294,7 @@ this is the displayed bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -308,8 +308,8 @@ Hence
 
 ::: pf-proof
 
-Apply the triangle inequality to the error identity in step <1>3.
-Use the estimates from steps <1>4--<1>5:
+Apply the triangle inequality to the error identity in step [](#s1-3){.pf-ref}.
+Use the estimates from steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}:
 \[
 \frac{M}{12}h^4
 +
@@ -329,7 +329,7 @@ Mh^4
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
@@ -357,7 +357,7 @@ h^4
 =
 \frac{(b-a)^4}{16}
 \]
-into step <1>6:
+into step [](#s1-6){.pf-ref}:
 \[
 \frac7{36}Mh^4
 =
@@ -377,7 +377,7 @@ Thus the estimate holds with the universal constant
 
 ::: pf-qed
 
-Step <1>7 is the required Simpson-rule error bound.
+Step [](#s1-7){.pf-ref} is the required Simpson-rule error bound.
 
 :::
 

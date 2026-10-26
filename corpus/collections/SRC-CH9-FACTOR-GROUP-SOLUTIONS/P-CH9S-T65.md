@@ -23,7 +23,7 @@ If G is non-Abelian, show that Aut(G) is not cyclic.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\operatorname{Aut}(G)$ were cyclic, then $\operatorname{Inn}(G)$ would be cyclic.
 
@@ -41,7 +41,7 @@ $\operatorname{Aut}(G)$ would imply cyclicity of $\operatorname{Inn}(G)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is an isomorphism
 $$
@@ -70,7 +70,7 @@ $G/Z(G)\cong\operatorname{Inn}(G)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $G/Z(G)$ is cyclic, then $G$ is Abelian.
 
@@ -98,7 +98,7 @@ Thus all elements of $G$ commute, so $G$ is Abelian.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The group $\operatorname{Aut}(G)$ is not cyclic.
 
@@ -106,8 +106,8 @@ The group $\operatorname{Aut}(G)$ is not cyclic.
 ::: pf-proof
 
 Suppose for contradiction that $\operatorname{Aut}(G)$ is cyclic.
-By step <1>1, $\operatorname{Inn}(G)$ is cyclic. By step <1>2,
-$G/Z(G)$ is therefore cyclic, and step <1>3 then makes $G$ Abelian.
+By step [](#s1-1){.pf-ref}, $\operatorname{Inn}(G)$ is cyclic. By step [](#s1-2){.pf-ref},
+$G/Z(G)$ is therefore cyclic, and step [](#s1-3){.pf-ref} then makes $G$ Abelian.
 This contradicts the hypothesis that $G$ is non-Abelian. Hence
 $\operatorname{Aut}(G)$ cannot be cyclic.
 
@@ -117,7 +117,7 @@ $\operatorname{Aut}(G)$ cannot be cyclic.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

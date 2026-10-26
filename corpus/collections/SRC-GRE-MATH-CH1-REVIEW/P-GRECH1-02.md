@@ -32,7 +32,7 @@ Determine the set of positive values of $x$ that satisfy the following inequalit
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x\notin\{0,1,2\}$, the inequality is equivalent to
 $$
@@ -55,9 +55,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-On the positive axis, the expression in step <1>1 is positive exactly
+On the positive axis, the expression in step [](#s1-1){.pf-ref} is positive exactly
 on
 $$
 (0,1)\cup(\sqrt2,2).
@@ -84,7 +84,7 @@ numerator zero; the inequality is strict, so none is included.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The solution set is
 $$
@@ -95,7 +95,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-This is exactly the positive set obtained in step <1>2.
+This is exactly the positive set obtained in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -103,7 +103,7 @@ This is exactly the positive set obtained in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested set and choice.
+Step [](#s1-3){.pf-ref} gives the requested set and choice.
 
 :::
 

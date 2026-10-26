@@ -41,7 +41,7 @@ Show that $F(t)^2+G(t)$ is constant and deduce the value of $F(\infty)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $t\geq0$,
 $$
@@ -77,14 +77,14 @@ with both sides equal to $0$ when $t=0$. This proves the second identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $F(t)^2+G(t)$ is constant on $[0,\infty)$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \frac{d}{dt}\bigl(F(t)^2+G(t)\bigr)
 =
@@ -96,7 +96,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The constant value is
 $$
@@ -120,13 +120,13 @@ G(0)
 =
 \frac{\pi}{4}.
 $$
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has $G(t)\to0$ as $t\to\infty$.
 
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Gaussian half-integral is
 $$
@@ -159,7 +159,7 @@ $$
 
 ::: pf-proof
 
-The function $F(t)$ is increasing and bounded above by step <1>3, so $F(\infty)$ exists. Letting $t\to\infty$ in step <1>3 and using step <1>4 gives
+The function $F(t)$ is increasing and bounded above by step [](#s1-3){.pf-ref}, so $F(\infty)$ exists. Letting $t\to\infty$ in step [](#s1-3){.pf-ref} and using step [](#s1-4){.pf-ref} gives
 $$
 F(\infty)^2=\frac{\pi}{4}.
 $$
@@ -171,7 +171,7 @@ Since $F(\infty)>0$, the positive square root gives the displayed value.
 
 ::: pf-qed
 
-Steps <1>2--<1>3 prove constancy, and step <1>5 gives the requested value.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove constancy, and step [](#s1-5){.pf-ref} gives the requested value.
 
 :::
 

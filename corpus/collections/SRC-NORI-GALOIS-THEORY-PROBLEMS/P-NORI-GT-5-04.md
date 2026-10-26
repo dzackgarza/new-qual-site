@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $\sigma\in\operatorname{Gal}(EK/E)$, one has
 $$
@@ -58,14 +58,14 @@ The extension $K/F$ is normal. Therefore every $F$-embedding of $K$ into an exte
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\rho$ is well defined and is a group homomorphism.
 
 
 ::: pf-proof
 
-By step <1>1, $\sigma|_K$ is an automorphism of $K$. It fixes $F$ because $F\subseteq E$, and it fixes every element of
+By step [](#s1-1){.pf-ref}, $\sigma|_K$ is an automorphism of $K$. It fixes $F$ because $F\subseteq E$, and it fixes every element of
 $$
 K\cap E
 $$
@@ -79,7 +79,7 @@ Restriction clearly respects composition, so $\rho$ is a homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The homomorphism $\rho$ is injective.
 
@@ -100,7 +100,7 @@ Thus $\ker\rho$ is trivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -120,7 +120,7 @@ Every element of $J$ is the restriction of an automorphism of $EK$ fixing $E$ po
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely,
 $$
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -159,13 +159,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>4 and <1>5.
+Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -183,7 +183,7 @@ is a bijection from subgroups of $\operatorname{Gal}(K/F)$ to intermediate field
 $$
 M\longmapsto\operatorname{Gal}(K/M).
 $$
-By step <1>6, the subgroup $J$ has fixed field $K\cap E$. Therefore the unique subgroup corresponding to this field is
+By step [](#s1-6){.pf-ref}, the subgroup $J$ has fixed field $K\cap E$. Therefore the unique subgroup corresponding to this field is
 $$
 J=\operatorname{Gal}(K/K\cap E).
 $$
@@ -192,20 +192,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence $\rho$ is surjective.
 
 
 ::: pf-proof
 
-Its image is $J$, and step <1>7 identifies this image with the entire target group.
+Its image is $J$, and step [](#s1-7){.pf-ref} identifies this image with the entire target group.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore restriction gives an isomorphism
 $$
@@ -221,7 +221,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives a homomorphism, step <1>3 gives injectivity, and step <1>8 gives surjectivity.
+Step [](#s1-2){.pf-ref} gives a homomorphism, step [](#s1-3){.pf-ref} gives injectivity, and step [](#s1-8){.pf-ref} gives surjectivity.
 
 :::
 
@@ -229,7 +229,7 @@ Step <1>2 gives a homomorphism, step <1>3 gives injectivity, and step <1>8 gives
 
 ::: pf-qed
 
-Step <1>9 is the required natural-irrationalities isomorphism, and steps <1>5 and <1>7 explicitly identify the two uses of the Fundamental Theorem of Galois Theory requested by the warning in the source.
+Step [](#s1-9){.pf-ref} is the required natural-irrationalities isomorphism, and steps [](#s1-5){.pf-ref} and [](#s1-7){.pf-ref} explicitly identify the two uses of the Fundamental Theorem of Galois Theory requested by the warning in the source.
 
 :::
 

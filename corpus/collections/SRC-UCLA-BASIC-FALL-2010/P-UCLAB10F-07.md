@@ -76,7 +76,7 @@ of $W$ by Gram--Schmidt. Since $m\le n$, retain its first $m$ vectors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -99,7 +99,7 @@ Every vector of $V$ has a unique coordinate expansion in the basis $v_1,\ldots,v
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -117,7 +117,7 @@ one has
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 Tv=\sum_i a_iw_i,
 \qquad
@@ -138,7 +138,7 @@ Since the $w_i$ are orthonormal,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One also has
 \[
@@ -150,13 +150,13 @@ One also has
 
 ::: pf-proof
 
-The vectors $v_1,\ldots,v_m$ form an orthonormal basis of $V$, so the same computation as in step <1>4 applies.
+The vectors $v_1,\ldots,v_m$ form an orthonormal basis of $V$, so the same computation as in step [](#s1-4){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -171,7 +171,7 @@ for all $v,v'\in V$.
 
 ::: pf-proof
 
-Compare the formulas in steps <1>4 and <1>5.
+Compare the formulas in steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -179,7 +179,7 @@ Compare the formulas in steps <1>4 and <1>5.
 
 ::: pf-qed
 
-Step <1>3 constructs the required linear map, and step <1>6 proves that it preserves the inner product.
+Step [](#s1-3){.pf-ref} constructs the required linear map, and step [](#s1-6){.pf-ref} proves that it preserves the inner product.
 
 :::
 

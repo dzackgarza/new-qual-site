@@ -24,7 +24,7 @@ Choose $b$ with $b^p=a$, so that $K(a^{1/p})=K(b)$. Let $M/F$ be a normal extens
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $\sigma\in G$, there is an $F$-embedding
 $$
@@ -44,14 +44,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\sigma\in G$, the image of $M$ under $\widetilde\sigma$ is $M$.
 
 
 ::: pf-proof
 
-The extension $M/F$ is normal. Therefore every $F$-embedding of $M$ into an algebraic closure has image $M$. Applying this to the embedding from step <1>1 gives
+The extension $M/F$ is normal. Therefore every $F$-embedding of $M$ into an algebraic closure has image $M$. Applying this to the embedding from step [](#s1-1){.pf-ref} gives
 $$
 \widetilde\sigma(M)=M.
 $$
@@ -60,14 +60,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $\sigma\in G$, the field $M$ contains a $p$-th root of $\sigma(a)$.
 
 
 ::: pf-proof
 
-Since $b\in M$, step <1>2 gives
+Since $b\in M$, step [](#s1-2){.pf-ref} gives
 $$
 \widetilde\sigma(b)\in M.
 $$
@@ -84,14 +84,14 @@ because $a\in K$ and $\widetilde\sigma|_K=\sigma$. Hence $\widetilde\sigma(b)$ i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The field $M$ contains the field $L$ obtained from $K$ by adjoining $p$-th roots of all $\sigma(a)$ with $\sigma\in G$.
 
 
 ::: pf-proof
 
-By hypothesis, $K\subseteq M$. By step <1>3, for every $\sigma\in G$ the field $M$ contains a $p$-th root of $\sigma(a)$. Therefore $M$ contains the field generated over $K$ by these roots, namely $L$.
+By hypothesis, $K\subseteq M$. By step [](#s1-3){.pf-ref}, for every $\sigma\in G$ the field $M$ contains a $p$-th root of $\sigma(a)$. Therefore $M$ contains the field generated over $K$ by these roots, namely $L$.
 
 Because $K$ contains a primitive $p$-th root of unity, adjoining one $p$-th root of a given $\sigma(a)$ adjoins all of its $p$-th roots, so the field $L$ is independent of the choices of roots.
 
@@ -101,7 +101,7 @@ Because $K$ contains a primitive $p$-th root of unity, adjoining one $p$-th root
 
 ::: pf-qed
 
-Step <1>4 proves the required containment $L\subseteq M$ for every normal extension $M/F$ containing $K(a^{1/p})$.
+Step [](#s1-4){.pf-ref} proves the required containment $L\subseteq M$ for every normal extension $M/F$ containing $K(a^{1/p})$.
 
 :::
 

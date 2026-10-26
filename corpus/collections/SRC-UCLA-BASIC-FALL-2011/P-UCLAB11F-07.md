@@ -31,7 +31,7 @@ Is $g$ always continuous?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix $t\in\mathbb R$ and let
 \[
@@ -52,7 +52,7 @@ Every matrix rank is a nonnegative integer, so the liminf on the right is at lea
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $r>0$. Then $f(t)$ has an $r\times r$ minor with nonzero determinant.
 
@@ -69,14 +69,14 @@ such an $r\times r$ minor exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The determinant of the corresponding $r\times r$ minor of $f(s)$ is nonzero for every $s$ sufficiently close to $t$.
 
 
 ::: pf-proof
 
-Fix the row and column indices of the nonzero minor from step <1>2. Its determinant is a polynomial in the corresponding entries of $f(s)$. Since $f:\mathbb R\to M_{n\times n}$ is continuous, every matrix entry is continuous, so this minor determinant is a continuous scalar function of $s$.
+Fix the row and column indices of the nonzero minor from step [](#s1-2){.pf-ref}. Its determinant is a polynomial in the corresponding entries of $f(s)$. Since $f:\mathbb R\to M_{n\times n}$ is continuous, every matrix entry is continuous, so this minor determinant is a continuous scalar function of $s$.
 
 Its value at $s=t$ is nonzero. Hence it remains nonzero on some neighborhood of $t$.
 
@@ -84,7 +84,7 @@ Its value at $s=t$ is nonzero. Hence it remains nonzero on some neighborhood of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $s$ sufficiently close to $t$,
 \[
@@ -94,13 +94,13 @@ For every $s$ sufficiently close to $t$,
 
 ::: pf-proof
 
-By step <1>3, $f(s)$ has a nonzero $r\times r$ minor. Therefore its rank is at least $r$.
+By step [](#s1-3){.pf-ref}, $f(s)$ has a nonzero $r\times r$ minor. Therefore its rank is at least $r$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $t_k\to t$, then
 \[
@@ -112,11 +112,11 @@ g(t)\le\liminf_{k\to\infty}g(t_k)
 
 ::: pf-proof
 
-If $g(t)=0$, apply step <1>1. Otherwise let
+If $g(t)=0$, apply step [](#s1-1){.pf-ref}. Otherwise let
 \[
 r=g(t)>0.
 \]
-By step <1>4, there is a neighborhood of $t$ on which $g(s)\ge r$. Since $t_k\to t$, all sufficiently large $k$ lie in this neighborhood. Thus
+By step [](#s1-4){.pf-ref}, there is a neighborhood of $t$ on which $g(s)\ge r$. Since $t_k\to t$, all sufficiently large $k$ lie in this neighborhood. Thus
 \[
 g(t_k)\ge r=g(t)
 \]
@@ -129,7 +129,7 @@ eventually, and hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $g$ need not be continuous.
 
@@ -160,7 +160,7 @@ Thus $g$ is discontinuous at $0$.
 
 ::: pf-qed
 
-Step <1>5 proves lower semicontinuity, and step <1>6 answers the continuity question negatively.
+Step [](#s1-5){.pf-ref} proves lower semicontinuity, and step [](#s1-6){.pf-ref} answers the continuity question negatively.
 
 :::
 

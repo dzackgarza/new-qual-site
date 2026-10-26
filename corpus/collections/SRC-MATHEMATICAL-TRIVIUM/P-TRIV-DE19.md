@@ -32,7 +32,7 @@ y(s)=\sum_{n=0}^{\infty}a_ns^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the variable $s$, the differential equation is
 \[
@@ -54,7 +54,7 @@ and differentiation with respect to $x$ is the same as differentiation with resp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The power-series coefficients satisfy
 \[
@@ -75,7 +75,7 @@ y'=\sum_{n=0}^{\infty}(n+1)a_{n+1}s^n,
 \qquad
 y''=\sum_{n=0}^{\infty}(n+2)(n+1)a_{n+2}s^n.
 \]
-Substitution into step <1>1 shows that the coefficient of $s^n$ is
+Substitution into step [](#s1-1){.pf-ref} shows that the coefficient of $s^n$ is
 \[
 (n+2)(n+1)a_{n+2}
 -\bigl(n(n-1)+3n+1\bigr)a_n.
@@ -86,7 +86,7 @@ The expression in parentheses is $(n+1)^2$, which gives the recurrence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The even coefficients are
 \[
@@ -98,7 +98,7 @@ a_{2m}=a_0\prod_{j=1}^{m}\frac{2j-1}{2j}
 
 ::: pf-proof
 
-Apply the recurrence in step <1>2 successively with $n=0,2,\ldots,2m-2$. This gives the product. Using
+Apply the recurrence in step [](#s1-2){.pf-ref} successively with $n=0,2,\ldots,2m-2$. This gives the product. Using
 \[
 (2m)!!=2^m m!,
 \qquad
@@ -110,7 +110,7 @@ gives the factorial form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The odd coefficients are
 \[
@@ -122,13 +122,13 @@ a_{2m+1}=a_1\prod_{j=1}^{m}\frac{2j}{2j+1}
 
 ::: pf-proof
 
-Apply the recurrence in step <1>2 successively with $n=1,3,\ldots,2m-1$.
+Apply the recurrence in step [](#s1-2){.pf-ref} successively with $n=1,3,\ldots,2m-1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the general power-series solution about $x=1$ is
 \[
@@ -143,7 +143,7 @@ for $|x-1|<1$.
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 determine all coefficients from the two independent initial coefficients $a_0=C_0$ and $a_1=C_1$. The nearest singular points of the differential equation to the expansion point $x=1$ occur at $x=0$ and $x=2$, both at distance $1$, so these power series converge for $|x-1|<1$.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} determine all coefficients from the two independent initial coefficients $a_0=C_0$ and $a_1=C_1$. The nearest singular points of the differential equation to the expansion point $x=1$ occur at $x=0$ and $x=2$, both at distance $1$, so these power series converge for $|x-1|<1$.
 
 :::
 
@@ -151,7 +151,7 @@ Steps <1>3 and <1>4 determine all coefficients from the two independent initial 
 
 ::: pf-qed
 
-Step <1>5 gives the two-parameter general solution as a power series about $x=1$.
+Step [](#s1-5){.pf-ref} gives the two-parameter general solution as a power series about $x=1$.
 
 :::
 

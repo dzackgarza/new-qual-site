@@ -33,7 +33,7 @@ A=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The augmented matrix reduces to
 \[
@@ -73,7 +73,7 @@ $R_1\leftarrow R_1-R_2$. This gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 All solutions are
 \[
@@ -87,7 +87,7 @@ All solutions are
 
 ::: pf-proof
 
-Step <1>1 gives $x+z=15$ and $y+w=5$. Set $z=s$ and $w=t$.
+Step [](#s1-1){.pf-ref} gives $x+z=15$ and $y+w=5$. Set $z=s$ and $w=t$.
 Then $x=15-s$ and $y=5-t$, which is exactly the displayed
 parametrization.
 
@@ -95,7 +95,7 @@ parametrization.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The kernel of $A$ is
 \[
@@ -106,15 +106,15 @@ The kernel of $A$ is
 
 ::: pf-proof
 
-The homogeneous version of the reduced system in step <1>1 is
-$x+z=0$ and $y+w=0$. Parametrizing it as in step <1>2 gives the displayed
+The homogeneous version of the reduced system in step [](#s1-1){.pf-ref} is
+$x+z=0$ and $y+w=0$. Parametrizing it as in step [](#s1-2){.pf-ref} gives the displayed
 basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vectors
 \[
@@ -128,7 +128,7 @@ are linearly independent and perpendicular to $\ker A$.
 ::: pf-proof
 
 They are the two rows of $A$, and they are not scalar multiples, so they
-are linearly independent. For the basis vectors from step <1>3,
+are linearly independent. For the basis vectors from step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 r_1\cdot(-1,0,1,0)&=0,&
@@ -143,7 +143,7 @@ Hence each $r_i$ is perpendicular to every vector in $\ker A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the requested results are
 \[
@@ -160,7 +160,7 @@ s,t\in\mathbb R,\\
 
 ::: pf-proof
 
-The solution set is step <1>2, and step <1>4 supplies the two required
+The solution set is step [](#s1-2){.pf-ref}, and step [](#s1-4){.pf-ref} supplies the two required
 vectors.
 
 :::
@@ -169,7 +169,7 @@ vectors.
 
 ::: pf-qed
 
-Step <1>5 contains both requested outputs.
+Step [](#s1-5){.pf-ref} contains both requested outputs.
 
 :::
 

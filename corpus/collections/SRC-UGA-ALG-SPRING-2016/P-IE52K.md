@@ -28,7 +28,7 @@ c. Write down exactly one representative in each isomorphism class of abelian gr
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The three Sylow theorems are existence, conjugacy and containment, and enumeration.
 
@@ -41,7 +41,7 @@ For a finite group $G$ and prime $p$, write $|G|=p^am$ with $p\nmid m$. (i) Ther
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every group $G$ of order $1225$ is abelian.
 
@@ -54,7 +54,7 @@ Since $1225=5^2 7^2$, the Sylow theorems give $n_7\mid25$ and $n_7\equiv1\pmod7$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The complete list of isomorphism classes of groups of order $1225$ is
 \[
@@ -68,7 +68,7 @@ C_5\times C_5\times C_7\times C_7.
 
 ::: pf-proof
 
-By step <1>2 every such group is abelian. The classification of finite abelian groups gives precisely two possibilities for its Sylow $5$-subgroup, $C_{25}$ or $C_5^2$, and precisely two for its Sylow $7$-subgroup, $C_{49}$ or $C_7^2$. Their independent products give the four displayed types, which are pairwise nonisomorphic because their primary components are nonisomorphic.
+By step [](#s1-2){.pf-ref} every such group is abelian. The classification of finite abelian groups gives precisely two possibilities for its Sylow $5$-subgroup, $C_{25}$ or $C_5^2$, and precisely two for its Sylow $7$-subgroup, $C_{49}$ or $C_7^2$. Their independent products give the four displayed types, which are pairwise nonisomorphic because their primary components are nonisomorphic.
 
 :::
 
@@ -76,7 +76,7 @@ By step <1>2 every such group is abelian. The classification of finite abelian g
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>3 answer parts (a), (b), and (c).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} answer parts (a), (b), and (c).
 
 :::
 

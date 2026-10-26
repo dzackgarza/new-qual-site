@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the keyhole contour integral tends to
 $$
@@ -141,7 +141,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Set
 $$
@@ -202,7 +202,7 @@ combination of $I_0,I_1,I_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -236,7 +236,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -250,7 +250,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, the limiting contour integral is
+By step [](#s1-4){.pf-ref}, the limiting contour integral is
 $$
 -6\pi i,I_2
 +
@@ -258,7 +258,7 @@ $$
 +
 8\pi^3 i,I_0.
 $$
-Substitute the values from step <1>5:
+Substitute the values from step [](#s1-5){.pf-ref}:
 $$
 12\pi^2I_1=0,
 $$
@@ -270,15 +270,15 @@ $$
 =
 4\pi^4i.
 $$
-Step <1>3 gives the value of the same contour integral.
+Step [](#s1-3){.pf-ref} gives the value of the same contour integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Solving the equation in step <1>6 gives
+Solving the equation in step [](#s1-6){.pf-ref} gives
 $$
 \boxed{
 \int_0^\infty
@@ -291,7 +291,7 @@ $$
 
 ::: pf-proof
 
-From step <1>6,
+From step [](#s1-6){.pf-ref},
 $$
 -6\pi i,I_2
 =
@@ -316,7 +316,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the required value.
+Step [](#s1-7){.pf-ref} is the required value.
 
 :::
 

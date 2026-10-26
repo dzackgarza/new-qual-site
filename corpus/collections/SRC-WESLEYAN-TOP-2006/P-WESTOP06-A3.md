@@ -35,7 +35,7 @@ Write \(\kappa=|A|\), and interpret “countable” as “at most countable.”
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the property “finite,” both products and sums preserve the property for every family indexed by \(A\) exactly when \(\kappa\) is finite.
 
@@ -126,7 +126,7 @@ This is a metric, and its open balls of radius less than \(1\) give exactly the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For the property “normal,” products preserve the property exactly when \(\kappa\le1\), while sums preserve it for every cardinality \(\kappa\).
 
@@ -153,7 +153,7 @@ For sums, let \(E,F\) be disjoint closed subsets of \(\sum_{a\in A}X_a\). Then \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The complete classification is
 \[
@@ -173,7 +173,7 @@ P & \prod_{a\in A}X_a & \sum_{a\in A}X_a\\
 
 ::: pf-proof
 
-Steps <1>1 through <1>6 establish every entry in the table and show that every excluded cardinality has a counterexample.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} establish every entry in the table and show that every excluded cardinality has a counterexample.
 
 :::
 
@@ -181,7 +181,7 @@ Steps <1>1 through <1>6 establish every entry in the table and show that every e
 
 ::: pf-qed
 
-Step <1>7 gives the requested classification for all six properties, for both products and sums.
+Step [](#s1-7){.pf-ref} gives the requested classification for all six properties, for both products and sums.
 
 :::
 

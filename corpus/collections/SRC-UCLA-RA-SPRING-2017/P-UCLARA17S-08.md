@@ -32,7 +32,7 @@ so that $B=\prod_{j=1}^n b_{a_j}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Wherever $B(z)\ne0$,
 $$
@@ -60,7 +60,7 @@ Taking the logarithmic derivative of the product defining $B$ gives the displaye
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z$ with $|z|=1$,
 $$
@@ -77,20 +77,20 @@ $$
 (z-a)(1-\overline a z)
 =z|z-a|^2.
 $$
-Substituting this into step <1>1 gives the equality. Since every $|a_j|<1$, each numerator $1-|a_j|^2$ is positive, so the sum is strictly positive.
+Substituting this into step [](#s1-1){.pf-ref} gives the equality. Since every $|a_j|<1$, each numerator $1-|a_j|^2$ is positive, so the sum is strictly positive.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $B'$ has no zeros on the unit circle, and along $|z|=1$ its change of argument equals the change of argument of $B(z)/z$.
 
 
 ::: pf-proof
 
-Each factor $b_{a_j}$ has modulus $1$ on the unit circle, so $B(z)\ne0$ there. Step <1>2 writes
+Each factor $b_{a_j}$ has modulus $1$ on the unit circle, so $B(z)\ne0$ there. Step [](#s1-2){.pf-ref} writes
 $$
 B'(z)=\frac{B(z)}{z}\,c(z),
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 As $z$ traverses the positively oriented unit circle once,
 $$
@@ -123,7 +123,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 As $z$ traverses the unit circle once,
 $$
@@ -133,18 +133,18 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \Delta\arg B'
 =\Delta\arg B-\Delta\arg z.
 $$
-Step <1>4 gives the first term as $2\pi n$, while $z$ itself winds once around $0$, so $\Delta\arg z=2\pi$. Thus the difference is $2\pi(n-1)$.
+Step [](#s1-4){.pf-ref} gives the first term as $2\pi n$, while $z$ itself winds once around $0$, so $\Delta\arg z=2\pi$. Thus the difference is $2\pi(n-1)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The derivative $B'$ has exactly
 $$
@@ -155,7 +155,7 @@ zeros in $D$, counted with multiplicity.
 
 ::: pf-proof
 
-The function $B'$ is holomorphic on a neighborhood of the closed unit disk and has no boundary zeros by step <1>3. Applying the argument principle to $B'$ and using step <1>5 gives
+The function $B'$ is holomorphic on a neighborhood of the closed unit disk and has no boundary zeros by step [](#s1-3){.pf-ref}. Applying the argument principle to $B'$ and using step [](#s1-5){.pf-ref} gives
 $$
 \#\{\text{zeros of }B'\text{ in }D\}
 =\frac1{2\pi}\Delta_{|z|=1}\arg B'
@@ -169,7 +169,7 @@ counting multiplicities.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

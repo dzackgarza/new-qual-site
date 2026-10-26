@@ -25,7 +25,7 @@ Let R be a commutative ring with identity that has exactly one prime ideal P . P
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The prime ideal $P$ is contained in some maximal ideal $M$ of $R$.
 
@@ -47,7 +47,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The maximal ideal $M$ is prime.
 
@@ -65,7 +65,7 @@ is a prime ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -80,7 +80,7 @@ $$
 P
 $$
 is the only prime ideal of $R$.
-Step <1>2 shows that $M$ is prime.
+Step [](#s1-2){.pf-ref} shows that $M$ is prime.
 Therefore
 $$
 M=P.
@@ -90,14 +90,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal $P$ is maximal.
 
 
 ::: pf-proof
 
-Step <1>3 identifies $P$ with the maximal ideal $M$ from step <1>1.
+Step [](#s1-3){.pf-ref} identifies $P$ with the maximal ideal $M$ from step [](#s1-1){.pf-ref}.
 Hence
 $$
 \boxed{P\text{ is maximal}.}
@@ -107,7 +107,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, $P$ is maximal.
+By step [](#s1-4){.pf-ref}, $P$ is maximal.
 The maximal-ideal quotient criterion gives that
 $$
 R/P
@@ -128,7 +128,7 @@ is a field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal $P$ is the unique maximal ideal of $R$.
 
@@ -142,7 +142,7 @@ Since $P$ is the unique prime ideal by hypothesis, there can be no maximal ideal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every element
 $$
@@ -168,7 +168,7 @@ $$
 (s)\subseteq M
 $$
 for some maximal ideal $M$.
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 M=P.
 $$
@@ -183,7 +183,7 @@ Therefore every element outside $P$ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let
 $$
@@ -216,7 +216,7 @@ with
 $$
 s\in S.
 $$
-By step <1>7, $s$ is a unit in $R$.
+By step [](#s1-7){.pf-ref}, $s$ is a unit in $R$.
 Hence
 $$
 s^{-1}\in R.
@@ -235,7 +235,7 @@ Thus every element of $R_P$ lies in the image of $\varphi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The map $\varphi$ is injective.
 
@@ -259,7 +259,7 @@ such that
 $$
 sr=0.
 $$
-By step <1>7, $s$ is a unit.
+By step [](#s1-7){.pf-ref}, $s$ is a unit.
 Multiplying by
 $$
 s^{-1}
@@ -278,7 +278,7 @@ so $\varphi$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -293,7 +293,7 @@ $$
 ::: pf-proof
 
 The natural localization map $\varphi$ is a ring homomorphism.
-Steps <1>8--<1>9 show that it is bijective.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} show that it is bijective.
 Hence it is a ring isomorphism.
 
 :::
@@ -302,7 +302,7 @@ Hence it is a ring isomorphism.
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>10 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-10){.pf-ref} proves part (b).
 
 :::
 

@@ -30,7 +30,7 @@ A_N
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $N\ge1$, the set $T(A_N)$ is relatively compact in $B_2$.
 
@@ -55,7 +55,7 @@ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $N,m\ge1$, there is a finite set
 \[
@@ -66,7 +66,7 @@ such that every point of $T(A_N)$ lies within distance $2/m$ of some point of $F
 
 ::: pf-proof
 
-By step <1>1, the compact set $K_N$ is totally bounded. Hence there are points
+By step [](#s1-1){.pf-ref}, the compact set $K_N$ is totally bounded. Hence there are points
 \[
 z_1,\dots,z_q\in K_N
 \]
@@ -102,7 +102,7 @@ Thus $F_{N,m}$ is a finite $2/m$-net for $T(A_N)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each $N\ge1$, the set
 \[
@@ -121,7 +121,7 @@ Fix $y\in T(A_N)$ and $\varepsilon>0$. Choose $m$ so large that
 \[
 \frac2m<\varepsilon.
 \]
-By step <1>2, some point $d\in F_{N,m}\subset D_N$ satisfies
+By step [](#s1-2){.pf-ref}, some point $d\in F_{N,m}\subset D_N$ satisfies
 \[
 \|y-d\|<\frac2m<\varepsilon.
 \]
@@ -131,7 +131,7 @@ Hence $D_N$ is dense in $T(A_N)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set
 \[
@@ -144,7 +144,7 @@ is countable and dense in $\operatorname{Im}T$.
 
 ::: pf-proof
 
-Each $D_N$ is countable by step <1>3, so $D$ is countable.
+Each $D_N$ is countable by step [](#s1-3){.pf-ref}, so $D$ is countable.
 
 Moreover,
 \[
@@ -158,13 +158,13 @@ hence
 =
 \bigcup_{N=1}^{\infty}T(A_N).
 \]
-If $y\in\operatorname{Im}T$, then $y\in T(A_N)$ for some $N$. Step <1>3 says that $D_N\subset D$ is dense in that set, so every neighborhood of $y$ meets $D$. Thus $D$ is dense in $\operatorname{Im}T$.
+If $y\in\operatorname{Im}T$, then $y\in T(A_N)$ for some $N$. Step [](#s1-3){.pf-ref} says that $D_N\subset D$ is dense in that set, so every neighborhood of $y$ meets $D$. Thus $D$ is dense in $\operatorname{Im}T$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -174,7 +174,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 constructs an explicit dense countable subset of $\operatorname{Im}T$.
+Step [](#s1-4){.pf-ref} constructs an explicit dense countable subset of $\operatorname{Im}T$.
 
 :::
 
@@ -182,7 +182,7 @@ Step <1>4 constructs an explicit dense countable subset of $\operatorname{Im}T$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

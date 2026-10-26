@@ -43,7 +43,7 @@ D(t)=\{x\in\mathbb R^2:\|x\|\le R(t)\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In polar coordinates,
 \[
@@ -67,9 +67,9 @@ whose Jacobian is $\rho$, for the disk of radius $R(t)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Differentiating the expression in step <1>1 gives
+Differentiating the expression in step [](#s1-1){.pf-ref} gives
 \[
 \begin{aligned}
 \frac d{dt}\int_{D(t)}u(x,t)\,dx
@@ -100,7 +100,7 @@ The moving upper endpoint contributes the second term displayed above.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The boundary arclength element on $\partial D(t)$ is
 \[
@@ -134,7 +134,7 @@ so the line element is $dS=R(t)\,d\theta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, whenever $r(t)\ne0$,
 \[
@@ -150,13 +150,13 @@ R'(t)\int_{\partial D(t)}u(x,t)\,dS
 
 ::: pf-proof
 
-Substitute the identity from step <1>3 into step <1>2 and subtract the interior $u_t$ integral.
+Substitute the identity from step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref} and subtract the interior $u_t$ integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In terms of the function $r$ appearing in the problem,
 \[
@@ -192,13 +192,13 @@ For $r(t)\ne0$,
 =
 \operatorname{sgn}(r(t))\,r'(t).
 \]
-Insert this into step <1>4.
+Insert this into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $r(t)=0$, the moving-boundary contribution is $0$.
 
@@ -223,7 +223,7 @@ at a zero of $r$, the first-order contribution caused by the changing disk is ze
 
 ::: pf-qed
 
-Steps <1>4--<1>6 give the requested surface-integral expression, including the sign convention forced by the fact that the disk depends on $r(t)^2$.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the requested surface-integral expression, including the sign convention forced by the fact that the disk depends on $r(t)^2$.
 
 :::
 

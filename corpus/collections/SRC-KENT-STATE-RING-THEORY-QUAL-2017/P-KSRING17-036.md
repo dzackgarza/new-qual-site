@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Wilson's theorem gives
 $$
@@ -42,7 +42,7 @@ This is Wilson's theorem for the prime $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -95,7 +95,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 $$
@@ -127,7 +127,7 @@ is even.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element
 $$
@@ -145,7 +145,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3:
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}:
 $$
 -1
 \equiv
@@ -164,7 +164,7 @@ in $\FF_p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -178,7 +178,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 a
 $$
@@ -201,7 +201,7 @@ Both factors have positive degree, so the polynomial is not irreducible.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

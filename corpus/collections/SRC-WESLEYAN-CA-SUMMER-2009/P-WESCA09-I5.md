@@ -22,7 +22,7 @@ Define what it means for a function $F$ to be a primitive of $f$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function $F:U\to\mathbb C$ is a primitive of $f$ on $U$ if $F$ is
 holomorphic on $U$ and
@@ -42,7 +42,7 @@ function on an open set.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition.
+Step [](#s1-1){.pf-ref} gives the requested definition.
 
 :::
 

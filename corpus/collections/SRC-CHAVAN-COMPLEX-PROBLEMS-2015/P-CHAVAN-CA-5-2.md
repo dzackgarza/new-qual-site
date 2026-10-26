@@ -22,7 +22,7 @@ Show that $|\Omega|$ is relatively open in $\mathbb R_{\ge0}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $\rho\in|\Omega|$. Choose $a\in\Omega$ with
 $$
@@ -39,7 +39,7 @@ $|\Omega|=\{|z|:z\in\Omega\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a\ne0$, then there is an $r>0$ such that
 $$
@@ -72,7 +72,7 @@ Thus $z\in B(a,r)\subseteq\Omega$, so $t=|z|\in|\Omega|$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $a=0$, then there is an $r>0$ such that
 $$
@@ -93,16 +93,16 @@ has modulus $t$. Hence $t\in|\Omega|$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every point of $|\Omega|$ has a neighborhood relative to $\mathbb R_{\ge0}$ contained in $|\Omega|$.
 
 
 ::: pf-proof
 
-Let $\rho\in|\Omega|$ and choose $a$ as in step <1>1. If $a\ne0$,
-step <1>2 gives an open interval about $\rho$ contained in
-$|\Omega|$. If $a=0$, then $\rho=0$, and step <1>3 gives
+Let $\rho\in|\Omega|$ and choose $a$ as in step [](#s1-1){.pf-ref}. If $a\ne0$,
+step [](#s1-2){.pf-ref} gives an open interval about $\rho$ contained in
+$|\Omega|$. If $a=0$, then $\rho=0$, and step [](#s1-3){.pf-ref} gives
 $$
 [0,r)=(-r,r)\cap\mathbb R_{\ge0}
 $$
@@ -113,14 +113,14 @@ $\mathbb R_{\ge0}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $|\Omega|$ is relatively open in $\mathbb R_{\ge0}$.
 
 
 ::: pf-proof
 
-Step <1>4 is the definition of openness in the subspace topology on
+Step [](#s1-4){.pf-ref} is the definition of openness in the subspace topology on
 $\mathbb R_{\ge0}$.
 
 :::
@@ -129,7 +129,7 @@ $\mathbb R_{\ge0}$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -21,7 +21,7 @@ Solve $y ^ { \prime \prime } + 1 6 y = \theta ( \pi - t )$ with $y ( 0 ) = y ^ {
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $t<\pi$, the initial-value problem reduces to
 \[
@@ -37,7 +37,7 @@ If $t<\pi$, then $\pi-t>0$, so $\theta(\pi-t)=1$ by the definition of the Heavis
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On $t<\pi$, the solution is
 \[
@@ -47,7 +47,7 @@ y(t)=\frac{1-\cos(4t)}{16}.
 
 ::: pf-proof
 
-A particular solution of the equation in step <1>1 is $1/16$, while the complementary solution is $A\cos(4t)+B\sin(4t)$. Hence
+A particular solution of the equation in step [](#s1-1){.pf-ref} is $1/16$, while the complementary solution is $A\cos(4t)+B\sin(4t)$. Hence
 \[
 y(t)=A\cos(4t)+B\sin(4t)+\frac1{16}.
 \]
@@ -61,7 +61,7 @@ so $y'(0)=0$ gives $B=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At the switching time,
 \[
@@ -71,7 +71,7 @@ y(\pi)=0,\qquad y'(\pi)=0.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \lim_{t\to\pi^-}y(t)=\frac{1-\cos(4\pi)}{16}=0
 \]
@@ -85,20 +85,20 @@ The forcing has only a jump discontinuity at $t=\pi$ and contains no impulse, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $t>\pi$, one has $y(t)=0$.
 
 
 ::: pf-proof
 
-If $t>\pi$, then $\theta(\pi-t)=0$, so the equation is $y''+16y=0$. By step <1>3 its data at $t=\pi$ are $y(\pi)=y'(\pi)=0$. The general solution is $A\cos(4(t-\pi))+B\sin(4(t-\pi))$, and these two conditions give $A=B=0$.
+If $t>\pi$, then $\theta(\pi-t)=0$, so the equation is $y''+16y=0$. By step [](#s1-3){.pf-ref} its data at $t=\pi$ are $y(\pi)=y'(\pi)=0$. The general solution is $A\cos(4(t-\pi))+B\sin(4(t-\pi))$, and these two conditions give $A=B=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the solution is
 \[
@@ -113,7 +113,7 @@ y(t)=
 
 ::: pf-proof
 
-Steps <1>2 and <1>4 give the two branches. Step <1>3 shows that they join with matching value and first derivative at $t=\pi$, so the displayed function satisfies the differential equation on each side of the forcing discontinuity and the prescribed initial conditions.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the two branches. Step [](#s1-3){.pf-ref} shows that they join with matching value and first derivative at $t=\pi$, so the displayed function satisfies the differential equation on each side of the forcing discontinuity and the prescribed initial conditions.
 
 :::
 
@@ -121,7 +121,7 @@ Steps <1>2 and <1>4 give the two branches. Step <1>3 shows that they join with m
 
 ::: pf-qed
 
-Step <1>5 gives the requested solution.
+Step [](#s1-5){.pf-ref} gives the requested solution.
 
 :::
 

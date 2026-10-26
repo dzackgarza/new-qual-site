@@ -51,7 +51,7 @@ is open in the subspace topology on $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The family
 \[
@@ -72,7 +72,7 @@ Equivalently, every $x$ belongs to at least one $U_m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There are positive integers
 \[
@@ -86,13 +86,13 @@ such that
 
 ::: pf-proof
 
-The interval $[0,1]$ is compact. By step <1>2, the sets $U_m$ form an open cover, so compactness gives a finite subcover.
+The interval $[0,1]$ is compact. By step [](#s1-2){.pf-ref}, the sets $U_m$ form an open cover, so compactness gives a finite subcover.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -106,7 +106,7 @@ f^{(m)}(x)\ne0.
 
 ::: pf-proof
 
-Fix $x\in[0,1]$. By step <1>3, $x\in U_{m_i}$ for some $i$. By the definition of $U_{m_i}$,
+Fix $x\in[0,1]$. By step [](#s1-3){.pf-ref}, $x\in U_{m_i}$ for some $i$. By the definition of $U_{m_i}$,
 \[
 f^{(m_i)}(x)\ne0.
 \]
@@ -118,7 +118,7 @@ Since $m_i\le M$, taking $m=m_i$ proves the claim.
 
 ::: pf-qed
 
-Step <1>4 is exactly the required uniform finite bound on the derivative order.
+Step [](#s1-4){.pf-ref} is exactly the required uniform finite bound on the derivative order.
 
 :::
 

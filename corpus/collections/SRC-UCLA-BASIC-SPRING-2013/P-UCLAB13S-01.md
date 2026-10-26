@@ -65,7 +65,7 @@ These are the standard Darboux sums associated to a bounded function and a parti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A bounded function
 \[
@@ -106,7 +106,7 @@ This answers part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $f$ be monotone increasing on $[0,1]$.
 Then for every partition $P$,
@@ -137,7 +137,7 @@ Thus the infimum and supremum on $I_i$ are attained at the endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For a monotone increasing $f$,
 \[
@@ -153,13 +153,13 @@ f(x_i)-f(x_{i-1})
 
 ::: pf-proof
 
-Substitute the formulas from step <1>3 into the definitions of the Darboux sums.
+Substitute the formulas from step [](#s1-3){.pf-ref} into the definitions of the Darboux sums.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If the mesh of $P$ is at most $\delta$, then
 \[
@@ -176,7 +176,7 @@ Every increment
 f(x_i)-f(x_{i-1})
 \]
 is nonnegative.
-Hence step <1>4 gives
+Hence step [](#s1-4){.pf-ref} gives
 \[
 \begin{aligned}
 U(f,P)-L(f,P)
@@ -199,7 +199,7 @@ because the sum telescopes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every monotone increasing function on $[0,1]$ is Riemann integrable.
 
@@ -223,18 +223,18 @@ choose
 \frac{\varepsilon}{f(1)-f(0)}.
 \]
 Take a partition with mesh at most $\delta$.
-Then step <1>5 gives
+Then step [](#s1-5){.pf-ref} gives
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
-By the criterion in step <1>2, $f$ is Riemann integrable.
+By the criterion in step [](#s1-2){.pf-ref}, $f$ is Riemann integrable.
 This proves part (b).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 \[
@@ -281,21 +281,21 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $g$ is Riemann integrable.
 
 
 ::: pf-proof
 
-By step <1>7, $g$ is monotone increasing.
-Apply part (b), proved in step <1>6.
+By step [](#s1-7){.pf-ref}, $g$ is monotone increasing.
+Apply part (b), proved in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every positive integer $m$, the function $g$ is discontinuous at
 \[
@@ -336,15 +336,15 @@ Hence $g$ is discontinuous at $1/m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore $g$ is a Riemann integrable function with infinitely many discontinuities.
 
 
 ::: pf-proof
 
-Step <1>8 gives Riemann integrability.
-Step <1>9 gives a discontinuity at every point
+Step [](#s1-8){.pf-ref} gives Riemann integrability.
+Step [](#s1-9){.pf-ref} gives a discontinuity at every point
 \[
 1,\frac12,\frac13,\ldots,
 \]
@@ -357,7 +357,7 @@ This proves part (c).
 
 ::: pf-qed
 
-Step <1>2 answers part (a), step <1>6 proves part (b), and step <1>10 gives the example required in part (c).
+Step [](#s1-2){.pf-ref} answers part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-10){.pf-ref} gives the example required in part (c).
 
 :::
 

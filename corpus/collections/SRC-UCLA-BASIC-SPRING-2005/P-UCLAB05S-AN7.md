@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 $$
@@ -60,7 +60,7 @@ Continuity of $F$ for the displayed Euclidean matrix metric is equivalent to con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $U$ is open in $\RR$.
 
@@ -71,13 +71,13 @@ A complex matrix is invertible exactly when its determinant is nonzero. Hence
 $$
 U=(\det\circ F)^{-1}(\CC\setminus\{0\}).
 $$
-The set $\CC\setminus\{0\}$ is open, and $\det\circ F$ is continuous by step <1>1. Therefore $U$ is open.
+The set $\CC\setminus\{0\}$ is open, and $\det\circ F$ is continuous by step [](#s1-1){.pf-ref}. Therefore $U$ is open.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On $U$,
 $$
@@ -93,20 +93,20 @@ This is the adjugate formula for the inverse of an invertible matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every entry of the matrix-valued map $x\mapsto F(x)^{-1}$ is continuous on $U$.
 
 
 ::: pf-proof
 
-Each entry of $\operatorname{adj}(F(x))$ is, up to sign, a determinant of an $(n-1)\times(n-1)$ minor of $F(x)$, hence is a polynomial in the entries of $F(x)$ and therefore continuous. By definition of $U$, the denominator $\det F(x)$ never vanishes there. Thus each entry in the quotient formula from step <1>3 is continuous on $U$.
+Each entry of $\operatorname{adj}(F(x))$ is, up to sign, a determinant of an $(n-1)\times(n-1)$ minor of $F(x)$, hence is a polynomial in the entries of $F(x)$ and therefore continuous. By definition of $U$, the denominator $\det F(x)$ never vanishes there. Thus each entry in the quotient formula from step [](#s1-3){.pf-ref} is continuous on $U$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map
 $$
@@ -117,7 +117,7 @@ is continuous.
 
 ::: pf-proof
 
-The metric on $M_n(\CC)$ is the Euclidean metric on its finitely many complex coordinates. A matrix-valued map into this space is continuous exactly when all of its coordinate functions are continuous. Apply step <1>4.
+The metric on $M_n(\CC)$ is the Euclidean metric on its finitely many complex coordinates. A matrix-valued map into this space is continuous exactly when all of its coordinate functions are continuous. Apply step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -125,7 +125,7 @@ The metric on $M_n(\CC)$ is the Euclidean metric on its finitely many complex co
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

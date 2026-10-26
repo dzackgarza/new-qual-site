@@ -24,7 +24,7 @@ Let $z_0$ be the possible exceptional point.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist $r>0$ and $M>0$ such that
 $$
@@ -44,7 +44,7 @@ This is precisely the hypothesis that $f$ is bounded near $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -64,7 +64,7 @@ $$
 \frac{g(z)-g(z_0)}{z-z_0}
 =(z-z_0)f(z).
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 |(z-z_0)f(z)|
 \le
@@ -81,7 +81,7 @@ Thus $g$ is analytic throughout $\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $g$ has a zero of order at least $2$ at $z_0$.
 
@@ -92,7 +92,7 @@ By definition,
 $$
 g(z_0)=0,
 $$
-and step <1>2 gives
+and step [](#s1-2){.pf-ref} gives
 $$
 g'(z_0)=0.
 $$
@@ -106,14 +106,14 @@ for some analytic function $h$ near $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ has a removable singularity at $z_0$.
 
 
 ::: pf-proof
 
-For $0<|z-z_0|<r$, steps <1>2 and <1>3 give
+For $0<|z-z_0|<r$, steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give
 $$
 (z-z_0)^2f(z)
 =
@@ -134,7 +134,7 @@ therefore extends $f$ analytically across $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every triangle $\Delta$ whose closed interior lies in $\Omega$,
 $$
@@ -144,7 +144,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, $f$ may be regarded as analytic on all of $\Omega$. Goursat's theorem applied
+By step [](#s1-4){.pf-ref}, $f$ may be regarded as analytic on all of $\Omega$. Goursat's theorem applied
 to the triangle $\Delta$ then gives
 $$
 \int_{\partial\Delta}f(z)\,dz=0.
@@ -157,7 +157,7 @@ This is the triangle integral denoted $\int_\Delta f(z)\,dz$ in the source.
 
 ::: pf-qed
 
-Step <1>5 proves the required assertion.
+Step [](#s1-5){.pf-ref} proves the required assertion.
 
 :::
 

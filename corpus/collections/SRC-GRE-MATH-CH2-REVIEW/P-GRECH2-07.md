@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x$ near $0$,
 $$
@@ -52,14 +52,14 @@ The integrand is continuous near $0$ because $1+\sin t$ is nonzero there. The fu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The limit equals $1/2$.
 
 
 ::: pf-proof
 
-Since $F(0)=0$, the original quotient has the indeterminate form $0/0$. By L'Hôpital's rule and step <1>1,
+Since $F(0)=0$, the original quotient has the indeterminate form $0/0$. By L'Hôpital's rule and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \lim_{x\to0}\frac{F(x)}{x^2}
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -84,7 +84,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-This is exactly the value obtained in step <1>2.
+This is exactly the value obtained in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -92,7 +92,7 @@ This is exactly the value obtained in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested limit and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
 
 :::
 

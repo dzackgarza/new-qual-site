@@ -77,7 +77,7 @@ Thus the only eigenvalue is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The eigenspace for the eigenvalue $1$ is
 \[
@@ -120,20 +120,20 @@ which vanishes exactly when $y=0$. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The eigenvectors of $T$ do not span $\mathbb C^2$.
 
 
 ::: pf-proof
 
-Every eigenvector belongs to the one-dimensional eigenspace $E_1$ from step <1>3. Thus the span of all eigenvectors is $E_1$, which has dimension $1$ and is strictly smaller than $\mathbb C^2$.
+Every eigenvector belongs to the one-dimensional eigenspace $E_1$ from step [](#s1-3){.pf-ref}. Thus the span of all eigenvectors is $E_1$, which has dimension $1$ and is strictly smaller than $\mathbb C^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -143,7 +143,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 gives the required counterexample.
+Step [](#s1-4){.pf-ref} gives the required counterexample.
 
 :::
 
@@ -151,7 +151,7 @@ Step <1>4 gives the required counterexample.
 
 ::: pf-qed
 
-Step <1>5 answers the question.
+Step [](#s1-5){.pf-ref} answers the question.
 
 :::
 

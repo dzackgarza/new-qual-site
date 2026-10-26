@@ -26,7 +26,7 @@ Construct an $f \in L^1(\mathbb{R})$ so that $f(x+y)$ does *not* converge almost
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -48,7 +48,7 @@ Borel measurable, so its indicator is measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -73,7 +73,7 @@ Thus $f$ is integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every point $x\in K$ is a boundary point of $K$.
 
@@ -96,7 +96,7 @@ Since $K$ has empty interior,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $x\in K$, there is a sequence
 \[
@@ -111,7 +111,7 @@ x+y_j\notin K
 
 ::: pf-proof
 
-By step <1>3, every neighborhood of $x$ meets
+By step [](#s1-3){.pf-ref}, every neighborhood of $x$ meets
 \[
 \mathbb R\setminus K.
 \]
@@ -135,7 +135,7 @@ so $y_j\to0$, while $x+y_j=u_j\notin K$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $x\in K$,
 \[
@@ -150,7 +150,7 @@ For $x\in K$,
 \[
 f(x)=1.
 \]
-For the sequence from step <1>4,
+For the sequence from step [](#s1-4){.pf-ref},
 \[
 f(x+y_j)
 =
@@ -167,9 +167,9 @@ Therefore the limit as $y\to0$ cannot equal $f(x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The failure in step <1>5 occurs on a set of positive measure.
+The failure in step [](#s1-5){.pf-ref} occurs on a set of positive measure.
 
 
 ::: pf-proof
@@ -187,7 +187,7 @@ does not hold almost everywhere.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 construct an $L^1$ function, while steps <1>5 and <1>6
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} construct an $L^1$ function, while steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}
 prove the required failure of almost-everywhere translation convergence.
 
 :::

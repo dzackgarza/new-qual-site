@@ -26,7 +26,7 @@ in the closed disk \(|z|\le\frac12\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the circle
 $$
@@ -81,7 +81,7 @@ the desired strict inequality follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $P$ and the monomial
 $$
@@ -106,13 +106,13 @@ z^3
 z^7+\frac1{16}
 \right).
 $$
-Step <1>1 gives the strict Rouché inequality on the boundary circle. Hence Rouché's theorem applies.
+Step [](#s1-1){.pf-ref} gives the strict Rouché inequality on the boundary circle. Hence Rouché's theorem applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $P$ has exactly three zeros in
 $$
@@ -127,13 +127,13 @@ The function
 $$
 z^3
 $$
-has a zero of multiplicity $3$ at the origin and no other zeros. Step <1>2 transfers this zero count to $P$.
+has a zero of multiplicity $3$ at the origin and no other zeros. Step [](#s1-2){.pf-ref} transfers this zero count to $P$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The polynomial $P$ has no zeros on
 $$
@@ -155,13 +155,13 @@ z^3
 z^7+\frac1{16}
 \right),
 $$
-so the two sides would have equal modulus. This contradicts the strict inequality in step <1>1.
+so the two sides would have equal modulus. This contradicts the strict inequality in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the number of zeros in the closed disk
 $$
@@ -175,7 +175,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 counts the interior zeros and step <1>4 shows that no additional zeros lie on the boundary.
+Step [](#s1-3){.pf-ref} counts the interior zeros and step [](#s1-4){.pf-ref} shows that no additional zeros lie on the boundary.
 
 :::
 
@@ -183,7 +183,7 @@ Step <1>3 counts the interior zeros and step <1>4 shows that no additional zeros
 
 ::: pf-qed
 
-Step <1>5 is the required answer.
+Step [](#s1-5){.pf-ref} is the required answer.
 
 :::
 

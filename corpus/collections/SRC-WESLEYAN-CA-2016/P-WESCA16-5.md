@@ -42,7 +42,7 @@ z^{\pi/\alpha}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 \[
@@ -89,7 +89,7 @@ which never vanishes on $\Omega_1$, so $P$ is conformal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Möbius transformation
 \[
@@ -138,7 +138,7 @@ $H_1$, it is conformal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 An explicit conformal map in part (a) is
 \[
@@ -151,7 +151,7 @@ F(z)=
 
 ::: pf-proof
 
-By steps <1>1 and <1>2,
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
 \[
 F=C\circ P
 \]
@@ -165,7 +165,7 @@ Hence it is a conformal bijection from $\Omega_1$ to $\Omega_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There are at least $\mathfrak c$ conformal maps
 $\Omega_1\to\Omega_2$.
@@ -191,7 +191,7 @@ $t$ give distinct maps, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There are at most $\mathfrak c$ conformal maps
 $\Omega_1\to\Omega_2$.
@@ -225,7 +225,7 @@ Thus there are at most $\mathfrak c$ such maps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The answer to part (b) is
 \[
@@ -235,7 +235,7 @@ The answer to part (b) is
 
 ::: pf-proof
 
-Step <1>4 gives the lower bound and step <1>5 gives the upper bound.
+Step [](#s1-4){.pf-ref} gives the lower bound and step [](#s1-5){.pf-ref} gives the upper bound.
 
 :::
 
@@ -243,7 +243,7 @@ Step <1>4 gives the lower bound and step <1>5 gives the upper bound.
 
 ::: pf-qed
 
-Step <1>3 gives the explicit map requested in part (a), and step <1>6 answers
+Step [](#s1-3){.pf-ref} gives the explicit map requested in part (a), and step [](#s1-6){.pf-ref} answers
 part (b).
 
 :::

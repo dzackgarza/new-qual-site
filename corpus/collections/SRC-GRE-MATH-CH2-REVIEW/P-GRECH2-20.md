@@ -33,7 +33,7 @@ and the rectangle has area $A=2xy$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every such rectangle satisfies $A\le a^2$.
 
@@ -57,9 +57,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The upper bound in step <1>1 is attained.
+The upper bound in step [](#s1-1){.pf-ref} is attained.
 
 
 ::: pf-proof
@@ -81,7 +81,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the maximum area is
 $$
@@ -92,7 +92,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>1 gives $a^2$ as an upper bound, and step <1>2 exhibits an inscribed rectangle attaining it.
+Step [](#s1-1){.pf-ref} gives $a^2$ as an upper bound, and step [](#s1-2){.pf-ref} exhibits an inscribed rectangle attaining it.
 
 :::
 
@@ -100,7 +100,7 @@ Step <1>1 gives $a^2$ as an upper bound, and step <1>2 exhibits an inscribed rec
 
 ::: pf-qed
 
-Step <1>3 gives the requested maximum and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested maximum and corresponding choice.
 
 :::
 

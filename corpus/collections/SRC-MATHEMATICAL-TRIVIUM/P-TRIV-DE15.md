@@ -75,7 +75,7 @@ while the right-hand side is $e^{2t}e^{-t}\theta(t)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integrating from $0$ to $t$ gives
 $$
@@ -95,7 +95,7 @@ The value $e^{0}y(0)$ is absorbed into the arbitrary constant $C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $t<0$, then
 $$
@@ -115,7 +115,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $t>0$, then
 $$
@@ -138,7 +138,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the continuous solution family is
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-proof
 
-For $t<0$, steps <1>3--<1>4 give $y=Ce^{-2t}$. For $t>0$, steps <1>3 and <1>5 give
+For $t<0$, steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give $y=Ce^{-2t}$. For $t>0$, steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} give
 $$
 y
 =
@@ -174,7 +174,7 @@ These two expressions are combined by the Heaviside function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Equivalently,
 $$
@@ -191,13 +191,13 @@ $$
 
 ::: pf-proof
 
-Expand the Heaviside expression from step <1>6 on the two half-lines.
+Expand the Heaviside expression from step [](#s1-6){.pf-ref} on the two half-lines.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The two branches meet continuously at $t=0$.
 
@@ -208,7 +208,7 @@ The left limit is $C$. The right limit is
 $$
 1+(C-1)=C.
 $$
-Thus the value assigned to $\theta(0)$ is irrelevant because the Heaviside correction in step <1>6 vanishes at $t=0$.
+Thus the value assigned to $\theta(0)$ is irrelevant because the Heaviside correction in step [](#s1-6){.pf-ref} vanishes at $t=0$.
 
 :::
 
@@ -216,7 +216,7 @@ Thus the value assigned to $\theta(0)$ is irrelevant because the Heaviside corre
 
 ::: pf-qed
 
-Steps <1>6--<1>8 give the complete continuous solution family.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give the complete continuous solution family.
 
 :::
 

@@ -35,7 +35,7 @@ Every complex polynomial is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -55,7 +55,7 @@ gives zero.
 
 ::: pf-qed
 
-Step <1>2 is the requested value.
+Step [](#s1-2){.pf-ref} is the requested value.
 
 :::
 

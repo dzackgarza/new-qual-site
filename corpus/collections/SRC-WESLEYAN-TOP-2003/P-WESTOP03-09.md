@@ -43,7 +43,7 @@ is open in the Sorgenfrey topology: each point $x<a$ has some basic interval $[x
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore $S$ is completely regular.
 
@@ -64,7 +64,7 @@ is continuous because $U$ is clopen, satisfies $\varphi(x)=0$, and equals $1$ on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $\mathbb Q$ is dense in $S$, so $S$ is separable.
 
@@ -77,7 +77,7 @@ Every nonempty basic interval $[a,b)$ contains a rational number because $a<b$ a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Sorgenfrey line is Lindelöf.
 
@@ -102,7 +102,7 @@ The corresponding countable family $\{U_{x_n}\}$ covers $V$. The complement $C=\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Sorgenfrey line is not second countable.
 
@@ -119,20 +119,20 @@ If $x<y$, then $x\in B_x$ but $x\notin[y,y+1)$, so $B_x\ne B_y$. Thus $x\mapsto 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $S$ is not metrizable.
 
 
 ::: pf-proof
 
-Every separable metric space is second countable: a countable dense set together with balls of positive rational radii forms a countable basis. Step <1>3 says $S$ is separable, while step <1>5 says it is not second countable. Therefore it cannot be metrizable.
+Every separable metric space is second countable: a countable dense set together with balls of positive rational radii forms a countable basis. Step [](#s1-3){.pf-ref} says $S$ is separable, while step [](#s1-5){.pf-ref} says it is not second countable. Therefore it cannot be metrizable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The product $S\times S$ is separable.
 
@@ -149,7 +149,7 @@ contains a pair of rationals.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The anti-diagonal
 \[
@@ -178,27 +178,27 @@ whose points still have negative sum for sufficiently small $\varepsilon$. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The product $S\times S$ is not Lindelöf.
 
 
 ::: pf-proof
 
-A closed subspace of a Lindelöf space is Lindelöf. But an uncountable discrete space is not Lindelöf: its cover by singleton open sets has no countable subcover. Step <1>8 gives an uncountable closed discrete subspace $D$, so $S\times S$ cannot be Lindelöf.
+A closed subspace of a Lindelöf space is Lindelöf. But an uncountable discrete space is not Lindelöf: its cover by singleton open sets has no countable subcover. Step [](#s1-8){.pf-ref} gives an uncountable closed discrete subspace $D$, so $S\times S$ cannot be Lindelöf.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The product $S\times S$ is not normal.
 
 
 ::: pf-proof
 
-Suppose it were normal. It is separable by step <1>7. In any separable normal space, every closed discrete subspace has cardinality at most continuum, which alone is insufficient here; use instead the standard Jones lemma: in a separable normal space, every closed discrete subspace $D$ satisfies
+Suppose it were normal. It is separable by step [](#s1-7){.pf-ref}. In any separable normal space, every closed discrete subspace has cardinality at most continuum, which alone is insufficient here; use instead the standard Jones lemma: in a separable normal space, every closed discrete subspace $D$ satisfies
 \[
 2^{|D|}\leq2^{\aleph_0}.
 \]
@@ -206,7 +206,7 @@ Indeed, for each subset $A\subseteq D$, normality separates the disjoint closed 
 \[
 |\mathbb R|^{\aleph_0}=2^{\aleph_0}
 \]
-such functions. For the anti-diagonal $D$ of step <1>8, $|D|=2^{\aleph_0}$, so Cantor's theorem gives
+such functions. For the anti-diagonal $D$ of step [](#s1-8){.pf-ref}, $|D|=2^{\aleph_0}$, so Cantor's theorem gives
 \[
 2^{|D|}=2^{2^{\aleph_0}}>2^{\aleph_0},
 \]
@@ -216,14 +216,14 @@ a contradiction. Thus $S\times S$ is not normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore $S$ is completely regular, separable, Lindelöf, and nonmetrizable, whereas $S\times S$ is separable, nonnormal, and non-Lindelöf.
 
 
 ::: pf-proof
 
-The assertions for $S$ are steps <1>2--<1>6, and those for $S\times S$ are steps <1>7--<1>10.
+The assertions for $S$ are steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref}, and those for $S\times S$ are steps [](#s1-7){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -231,7 +231,7 @@ The assertions for $S$ are steps <1>2--<1>6, and those for $S\times S$ are steps
 
 ::: pf-qed
 
-Step <1>11 collects all requested properties.
+Step [](#s1-11){.pf-ref} collects all requested properties.
 
 :::
 

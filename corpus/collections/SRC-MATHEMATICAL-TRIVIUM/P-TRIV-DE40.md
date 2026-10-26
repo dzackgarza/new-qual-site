@@ -21,7 +21,7 @@ Find the most general solution of $x \frac { \partial f } { \partial x } - y \fr
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic equations are
 \[
@@ -41,7 +41,7 @@ These are the characteristic equations associated to the transport vector field 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along every characteristic,
 \[
@@ -61,20 +61,20 @@ Thus $xy$ is a first integral of the characteristic field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The value of $f$ is constant along each characteristic.
 
 
 ::: pf-proof
 
-The third equation in step <1>1 is $df/ds=0$.
+The third equation in step [](#s1-1){.pf-ref} is $df/ds=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence on any connected region where the characteristics are parametrized by the invariant $xy$, the general solution is
 \[
@@ -85,7 +85,7 @@ where $\Phi$ is arbitrary.
 
 ::: pf-proof
 
-By steps <1>2--<1>3, $f$ may depend only on the characteristic label $xy$. Conversely, if $f=\Phi(xy)$, then
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $f$ may depend only on the characteristic label $xy$. Conversely, if $f=\Phi(xy)$, then
 \[
 f_x=y\Phi'(xy),
 \qquad
@@ -102,7 +102,7 @@ xf_x-yf_y=xy\Phi'(xy)-xy\Phi'(xy)=0.
 
 ::: pf-qed
 
-Step <1>4 gives and directly verifies the general characteristic solution.
+Step [](#s1-4){.pf-ref} gives and directly verifies the general characteristic solution.
 
 :::
 

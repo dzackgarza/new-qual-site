@@ -27,7 +27,7 @@ Which of the following sets in $\mathbb{R}^3$ is compact?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choice (C) is closed and bounded in $\RR^3$.
 
@@ -47,7 +47,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choices (B) and (D) are not bounded.
 
@@ -60,7 +60,7 @@ For every positive integer $n$, the point $(-n,0,0)$ lies in (B), so (B) is unbo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Choices (A) and (E) are not closed.
 
@@ -83,7 +83,7 @@ belong to the set for all sufficiently large $n$ and converge to $(\sqrt2,0,0)$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the compact set is
 $$
@@ -94,7 +94,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By the Heine--Borel theorem, a subset of $\RR^3$ is compact exactly when it is closed and bounded. Step <1>1 proves these properties for (C), while steps <1>2 and <1>3 rule out the other choices.
+By the Heine--Borel theorem, a subset of $\RR^3$ is compact exactly when it is closed and bounded. Step [](#s1-1){.pf-ref} proves these properties for (C), while steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} rule out the other choices.
 
 :::
 
@@ -102,7 +102,7 @@ By the Heine--Borel theorem, a subset of $\RR^3$ is compact exactly when it is c
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

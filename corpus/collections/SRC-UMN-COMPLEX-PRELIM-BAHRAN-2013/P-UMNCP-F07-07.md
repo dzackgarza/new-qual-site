@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the unit circle,
 $$
@@ -71,7 +71,7 @@ Thus the strict inequality holds on the whole boundary circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The functions
 $$
@@ -92,13 +92,13 @@ counted with multiplicity.
 
 ::: pf-proof
 
-Step <1>1 is exactly the Rouché inequality on the unit circle. Both functions are entire, so Rouché's theorem applies.
+Step [](#s1-1){.pf-ref} is exactly the Rouché inequality on the unit circle. Both functions are entire, so Rouché's theorem applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ has exactly
 $$
@@ -113,7 +113,7 @@ The comparison function
 $$
 -4z^2
 $$
-has a zero of multiplicity $2$ at the origin and no other zeros. Step <1>2 transfers this zero count to $f$.
+has a zero of multiplicity $2$ at the origin and no other zeros. Step [](#s1-2){.pf-ref} transfers this zero count to $f$.
 
 :::
 
@@ -121,7 +121,7 @@ has a zero of multiplicity $2$ at the origin and no other zeros. Step <1>2 trans
 
 ::: pf-qed
 
-Step <1>3 is the required answer.
+Step [](#s1-3){.pf-ref} is the required answer.
 
 :::
 

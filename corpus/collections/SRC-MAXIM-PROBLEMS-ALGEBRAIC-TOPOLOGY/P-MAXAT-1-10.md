@@ -27,7 +27,7 @@ for the torsion subgroup of a finitely generated abelian group $A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The universal coefficient theorem gives a short exact sequence
 \[
@@ -46,7 +46,7 @@ This is the universal coefficient theorem for cohomology applied to the singular
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The group $\operatorname{Hom}(H_i(M),\mathbb Z)$ is torsion-free, and
 \[
@@ -75,7 +75,7 @@ so the Ext group is isomorphic to the torsion summand. Also every subgroup of a 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently,
 \[
@@ -86,13 +86,13 @@ T(H^i(M))
 
 ::: pf-proof
 
-In the exact sequence of step <1>1, the left group is torsion by step <1>2 and the right group is torsion-free. Hence every torsion element of $H^i(M)$ lies in the image of the left injection, while every element of that image is torsion. Thus the injection identifies the left group with the full torsion subgroup of $H^i(M)$. Apply the second isomorphism of step <1>2.
+In the exact sequence of step [](#s1-1){.pf-ref}, the left group is torsion by step [](#s1-2){.pf-ref} and the right group is torsion-free. Hence every torsion element of $H^i(M)$ lies in the image of the left injection, while every element of that image is torsion. Thus the injection identifies the left group with the full torsion subgroup of $H^i(M)$. Apply the second isomorphism of step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Poincaré duality gives
 \[
@@ -112,9 +112,9 @@ Set $k=n-i+1$. Then $n-k=i-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Taking torsion subgroups in step <1>4 gives
+Taking torsion subgroups in step [](#s1-4){.pf-ref} gives
 \[
 T(H^{n-i+1}(M))
 \cong T(H_{i-1}(M)).
@@ -129,7 +129,7 @@ An isomorphism of abelian groups carries torsion elements exactly to torsion ele
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -140,7 +140,7 @@ T(H^i(M))\cong T(H^{n-i+1}(M)).}
 
 ::: pf-proof
 
-Steps <1>3 and <1>5 identify both groups with $T(H_{i-1}(M))$.
+Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} identify both groups with $T(H_{i-1}(M))$.
 
 :::
 
@@ -148,7 +148,7 @@ Steps <1>3 and <1>5 identify both groups with $T(H_{i-1}(M))$.
 
 ::: pf-qed
 
-Step <1>6 is the required torsion duality.
+Step [](#s1-6){.pf-ref} is the required torsion duality.
 
 :::
 

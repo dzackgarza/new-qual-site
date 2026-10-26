@@ -29,7 +29,7 @@ The statement is false as printed.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Take the continuously differentiable function
 \[
@@ -46,7 +46,7 @@ Constant functions are continuously differentiable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For this function,
 \[
@@ -78,7 +78,7 @@ Also,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the expression in the source equals
 \[
@@ -89,7 +89,7 @@ for every positive integer $n$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 n
 \left(
@@ -103,14 +103,14 @@ n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the displayed limit does not exist as a finite real number.
 
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 n\to+\infty.
 \]
@@ -120,7 +120,7 @@ Thus the literal claim that the limit exists is false.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The natural corrected statement is obtained by removing the outer factor $n$:
 \[
@@ -145,7 +145,7 @@ The remaining steps prove this corrected first-order Riemann-sum formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Set
 \[
@@ -189,7 +189,7 @@ f(x_n)=f(1).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For each $k$,
 \[
@@ -275,9 +275,9 @@ n\omega(h)\frac{h^2}{2}\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Summing step <1>7 over
+Summing step [](#s1-7){.pf-ref} over
 \[
 k=0,\ldots,n-1
 \]
@@ -307,7 +307,7 @@ where
 
 ::: pf-proof
 
-Add the $n$ estimates from step <1>7 and use step <1>6.
+Add the $n$ estimates from step [](#s1-7){.pf-ref} and use step [](#s1-6){.pf-ref}.
 The total error is at most
 \[
 n\cdot
@@ -320,7 +320,7 @@ n\cdot
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -354,7 +354,7 @@ The second limit is the ordinary left-endpoint Riemann-sum convergence for the c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus the corrected expression converges to
 \[
@@ -364,7 +364,7 @@ Thus the corrected expression converges to
 
 ::: pf-proof
 
-Take limits in step <1>8 and use step <1>9:
+Take limits in step [](#s1-8){.pf-ref} and use step [](#s1-9){.pf-ref}:
 \[
 \begin{aligned}
 \lim
@@ -394,8 +394,8 @@ f(1)
 
 ::: pf-qed
 
-Steps <1>1--<1>4 disprove the literal source statement.
-Steps <1>5--<1>10 prove the natural corrected first-order Riemann-sum formula.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} disprove the literal source statement.
+Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} prove the natural corrected first-order Riemann-sum formula.
 
 :::
 

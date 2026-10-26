@@ -20,7 +20,7 @@ Write the precise definition of what it means for a function $f:\mathbb R\to\mat
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f:\mathbb R\to\mathbb R$ is uniformly continuous if
 \[
@@ -39,7 +39,7 @@ simultaneously for every pair $x,y$ in the domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ fails to be uniformly continuous precisely when
 \[
@@ -54,7 +54,7 @@ The function $f$ fails to be uniformly continuous precisely when
 
 ::: pf-proof
 
-This is the logical negation of the quantifier statement in step <1>1:
+This is the logical negation of the quantifier statement in step [](#s1-1){.pf-ref}:
 the existential and universal quantifiers reverse, the implication fails by
 having its hypothesis true and conclusion false, and
 \[
@@ -73,7 +73,7 @@ the problem.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the two requested precise statements.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the two requested precise statements.
 
 :::
 

@@ -28,7 +28,7 @@ Let $(X,\mathcal B,\mu)$ be a measure space and let $f\ge0$ be integrable.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $a>0$,
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $a>0$,
 $$
@@ -72,7 +72,7 @@ Because $f$ is integrable,
 $$
 \int_Xf\,d\mu<\infty.
 $$
-Dividing the inequality in step <1>1 by $a>0$ yields
+Dividing the inequality in step [](#s1-1){.pf-ref} by $a>0$ yields
 $$
 \mu\{f\geq a\}
 \leq\frac1a\int_Xf\,d\mu<\infty.
@@ -83,7 +83,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -100,18 +100,18 @@ If $f(x)\geq1/n$ for some $n$, then $f(x)>0$. Conversely, if $f(x)>0$, choose $n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $\{x:f(x)>0\}$ is a countable union of sets of finite measure.
 
 
 ::: pf-proof
 
-By step <1>3 it is the countable union of the measurable sets
+By step [](#s1-3){.pf-ref} it is the countable union of the measurable sets
 $$
 E_n=\left\{x:f(x)\geq\frac1n\right\}.
 $$
-Step <1>2 with $a=1/n$ gives $\mu(E_n)<\infty$ for every $n$. This proves part (b).
+Step [](#s1-2){.pf-ref} with $a=1/n$ gives $\mu(E_n)<\infty$ for every $n$. This proves part (b).
 
 :::
 
@@ -119,7 +119,7 @@ Step <1>2 with $a=1/n$ gives $\mu(E_n)<\infty$ for every $n$. This proves part (
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>4 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
 
 :::
 

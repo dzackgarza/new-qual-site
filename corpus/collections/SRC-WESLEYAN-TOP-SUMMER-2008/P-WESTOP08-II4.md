@@ -28,7 +28,7 @@ on all of $Y$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A map
 \[
@@ -69,7 +69,7 @@ Such a neighborhood $U$ is called evenly covered.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -95,7 +95,7 @@ This is exactly the definition of being a lift of $f$ through $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define the coincidence set
 \[
@@ -118,7 +118,7 @@ The two lifts agree at at least one point of $Y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $E$ is open in $Y$.
 
@@ -185,7 +185,7 @@ For
 \[
 y\in W,
 \]
-step <1>2 gives
+step [](#s1-2){.pf-ref} gives
 \[
 p(\widetilde f_1(y))
 =
@@ -214,7 +214,7 @@ so $E$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The complement
 \[
@@ -287,21 +287,21 @@ so the complement is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $E$ is both open and closed in $Y$.
 
 
 ::: pf-proof
 
-Step <1>4 gives openness of $E$, while step <1>5 says its complement is
+Step [](#s1-4){.pf-ref} gives openness of $E$, while step [](#s1-5){.pf-ref} says its complement is
 open, equivalently $E$ is closed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since $Y$ is connected and
 \[
@@ -316,7 +316,7 @@ E=Y.
 ::: pf-proof
 
 A connected space has no nontrivial subset that is both open and closed.
-By step <1>3, $E$ is nonempty.
+By step [](#s1-3){.pf-ref}, $E$ is nonempty.
 Hence the only possibility is
 \[
 E=Y.
@@ -326,7 +326,7 @@ E=Y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus
 \[
@@ -341,7 +341,7 @@ on all of $Y$.
 
 ::: pf-proof
 
-By step <1>7, every point
+By step [](#s1-7){.pf-ref}, every point
 \[
 y\in Y
 \]
@@ -353,7 +353,7 @@ lies in the coincidence set $E$.
 
 ::: pf-qed
 
-Step <1>1 states the definition of a covering space, and steps <1>2--<1>8
+Step [](#s1-1){.pf-ref} states the definition of a covering space, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref}
 prove uniqueness of lifts from a connected domain once they agree at one
 point.
 

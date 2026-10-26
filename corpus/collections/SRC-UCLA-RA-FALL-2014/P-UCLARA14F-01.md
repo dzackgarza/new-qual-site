@@ -37,7 +37,7 @@ For each $n\in\mathbb N$, define
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every measurable $h$ on $[-n,n]$,
 \[
@@ -74,7 +74,7 @@ and taking square roots gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $f,g\in L^3(\mathbb R)$,
 \[
@@ -106,7 +106,7 @@ Hence Cauchy--Schwarz gives
 \bigr).
 \end{aligned}
 \]
-Apply step <1>1 to each $L^2$ norm and use
+Apply step [](#s1-1){.pf-ref} to each $L^2$ norm and use
 \[
 \|h\|_{L^3([-n,n])}\le\|h\|_{L^3(\mathbb R)}.
 \]
@@ -121,7 +121,7 @@ which yields the displayed estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each functional
 \[
@@ -142,7 +142,7 @@ so the factor
 \[
 \|f\|_3+\|g\|_3
 \]
-remains bounded near $f$. Step <1>2 then implies
+remains bounded near $f$. Step [](#s1-2){.pf-ref} then implies
 \[
 |\phi_n(g)-\phi_n(f)|\to0.
 \]
@@ -151,7 +151,7 @@ remains bounded near $f$. Step <1>2 then implies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $f\in L^3(\mathbb R)$,
 \[
@@ -175,7 +175,7 @@ gives the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set $A$ has the representation
 \[
@@ -194,7 +194,7 @@ If
 \[
 \int_{\mathbb R}|f|^2<\infty,
 \]
-choose an integer $m$ larger than this integral. Then by step <1>4,
+choose an integer $m$ larger than this integral. Then by step [](#s1-4){.pf-ref},
 \[
 \phi_n(f)\le m
 \]
@@ -204,7 +204,7 @@ Conversely, if there is $m$ such that
 \[
 \phi_n(f)\le m
 \]
-for every $n$, then step <1>4 gives
+for every $n$, then step [](#s1-4){.pf-ref} gives
 \[
 \int_{\mathbb R}|f|^2
 =
@@ -217,20 +217,20 @@ Thus $f\in A$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set $A$ is Borel in $L^3(\mathbb R)$.
 
 
 ::: pf-proof
 
-By step <1>3, each set
+By step [](#s1-3){.pf-ref}, each set
 \[
 \{f:\phi_n(f)\le m\}
 =
 \phi_n^{-1}((-\infty,m])
 \]
-is closed, hence Borel. Step <1>5 expresses $A$ using only countable
+is closed, hence Borel. Step [](#s1-5){.pf-ref} expresses $A$ using only countable
 intersections and a countable union of these Borel sets. Therefore $A$ is
 Borel.
 
@@ -240,7 +240,7 @@ Borel.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

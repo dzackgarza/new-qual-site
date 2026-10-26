@@ -32,7 +32,7 @@ Prove that $g_n(x)$ converges to some $g(x)\in\mathbb R$ for every $x\in[-1,1]$ 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each fixed $x\in[-1,1]$, the series
 \[
@@ -62,7 +62,7 @@ for every fixed $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(f_n)$ converges uniformly to $0$ on $[-1,1]$.
 
@@ -112,7 +112,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n$ and every $x\in[-1,1]$,
 \[
@@ -124,7 +124,7 @@ f_{n+1}(x).
 
 ::: pf-proof
 
-For fixed $x$, the series from step <1>1 is an alternating series whose term magnitudes
+For fixed $x$, the series from step [](#s1-1){.pf-ref} is an alternating series whose term magnitudes
 \[
 f_m(x)
 \]
@@ -146,7 +146,7 @@ The left side is exactly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The convergence
 \[
@@ -157,13 +157,13 @@ is uniform on $[-1,1]$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \|g-g_n\|_\infty
 \le
 \|f_{n+1}\|_\infty.
 \]
-The right side tends to zero by step <1>2.
+The right side tends to zero by step [](#s1-2){.pf-ref}.
 Therefore
 \[
 \|g-g_n\|_\infty\to0.
@@ -173,7 +173,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Each $g_n$ is continuous on $[-1,1]$.
 
@@ -192,14 +192,14 @@ is a finite linear combination of continuous functions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The limit function $g$ is continuous on $[-1,1]$.
 
 
 ::: pf-proof
 
-By step <1>4, $g_n\to g$ uniformly, and by step <1>5 every $g_n$ is continuous.
+By step [](#s1-4){.pf-ref}, $g_n\to g$ uniformly, and by step [](#s1-5){.pf-ref} every $g_n$ is continuous.
 A uniform limit of continuous functions is continuous.
 Thus
 \[
@@ -212,7 +212,7 @@ Thus
 
 ::: pf-qed
 
-Step <1>1 proves pointwise existence of the limit, and steps <1>2--<1>6 prove continuity of the resulting function.
+Step [](#s1-1){.pf-ref} proves pointwise existence of the limit, and steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove continuity of the resulting function.
 
 :::
 

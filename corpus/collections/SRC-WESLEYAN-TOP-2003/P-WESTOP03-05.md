@@ -26,7 +26,7 @@ or
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume $|X|>1$, and choose distinct points
 \[
@@ -42,7 +42,7 @@ This is the only case not already covered by the alternative $|X|\leq1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $X$ is $T_1$, the sets $\{a\}$ and $\{b\}$ are disjoint closed subsets of $X$.
 
@@ -55,7 +55,7 @@ In a $T_1$ space every singleton is closed, and $a\ne b$ makes the two singleton
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By Urysohn's lemma, there exists a continuous function
 \[
@@ -71,13 +71,13 @@ f(b)=1.
 
 ::: pf-proof
 
-Urysohn's lemma states that in a normal space, any two disjoint closed subsets can be separated by a continuous $[0,1]$-valued function taking the values $0$ and $1$ on the respective closed sets. Apply it to the closed singletons from step <1>2.
+Urysohn's lemma states that in a normal space, any two disjoint closed subsets can be separated by a continuous $[0,1]$-valued function taking the values $0$ and $1$ on the respective closed sets. Apply it to the closed singletons from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The image $f(X)$ is connected.
 
@@ -90,7 +90,7 @@ Continuous images of connected spaces are connected, and $X$ is connected by hyp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
@@ -110,7 +110,7 @@ Connected subsets of $\mathbb R$ are intervals. Any interval contained in $[0,1]
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus $f$ is a surjection from $X$ onto $[0,1]$, so
 \[
@@ -120,13 +120,13 @@ Thus $f$ is a surjection from $X$ onto $[0,1]$, so
 
 ::: pf-proof
 
-Step <1>5 gives surjectivity. A surjection $X\to Y$ implies $|Y|\leq|X|$: choosing one preimage for each element of $Y$ gives an injection $Y\to X$ (equivalently, this is the standard cardinal comparison associated to a surjection).
+Step [](#s1-5){.pf-ref} gives surjectivity. A surjection $X\to Y$ implies $|Y|\leq|X|$: choosing one preimage for each element of $Y$ gives an injection $Y\to X$ (equivalently, this is the standard cardinal comparison associated to a surjection).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
@@ -140,13 +140,13 @@ it follows that
 
 ::: pf-proof
 
-The interval $[0,1]$ has the cardinality of the continuum, namely $2^{\aleph_0}$. Combine this with step <1>6.
+The interval $[0,1]$ has the cardinality of the continuum, namely $2^{\aleph_0}$. Combine this with step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore every connected normal $T_1$ space satisfies
 \[
@@ -156,7 +156,7 @@ Therefore every connected normal $T_1$ space satisfies
 
 ::: pf-proof
 
-If $|X|\leq1$, the first alternative holds. If $|X|>1$, steps <1>1--<1>7 prove the second.
+If $|X|\leq1$, the first alternative holds. If $|X|>1$, steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the second.
 
 :::
 
@@ -164,7 +164,7 @@ If $|X|\leq1$, the first alternative holds. If $|X|>1$, steps <1>1--<1>7 prove t
 
 ::: pf-qed
 
-Step <1>8 is exactly the required dichotomy.
+Step [](#s1-8){.pf-ref} is exactly the required dichotomy.
 
 :::
 

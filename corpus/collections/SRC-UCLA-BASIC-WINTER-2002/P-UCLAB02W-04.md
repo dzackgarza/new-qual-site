@@ -23,7 +23,7 @@ Let $P=\RR\setminus\QQ$ denote the set of irrational numbers.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every closed subset $F\subseteq P$ has empty interior in $\RR$.
 
@@ -40,7 +40,7 @@ But $I\subseteq F\subseteq P$ contains no rational numbers, a contradiction. Hen
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every closed subset $F\subseteq P$ is nowhere dense in $\RR$.
 
@@ -51,7 +51,7 @@ Because $F$ is closed,
 $$
 \overline F=F.
 $$
-By step <1>1, the interior of $F$ is empty. Therefore
+By step [](#s1-1){.pf-ref}, the interior of $F$ is empty. Therefore
 $$
 \operatorname{int}(\overline F)=\varnothing,
 $$
@@ -61,7 +61,7 @@ which is exactly the definition that $F$ is nowhere dense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The rational numbers form a countable union of nowhere-dense subsets of $\RR$.
 
@@ -82,7 +82,7 @@ is a countable union of nowhere-dense sets.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The irrational numbers cannot be a countable union of closed subsets of $\RR$.
 
@@ -93,7 +93,7 @@ Assume for contradiction that
 $$
 P=\bigcup_{n=1}^{\infty}F_n,
 $$
-where every $F_n$ is closed in $\RR$. Since each $F_n\subseteq P$, step <1>2 shows that every $F_n$ is nowhere dense. By step <1>3,
+where every $F_n$ is closed in $\RR$. Since each $F_n\subseteq P$, step [](#s1-2){.pf-ref} shows that every $F_n$ is nowhere dense. By step [](#s1-3){.pf-ref},
 $$
 \RR
 =P\cup\QQ
@@ -111,7 +111,7 @@ This contradicts the Baire category theorem, because $\RR$ is a complete metric 
 
 ::: pf-qed
 
-Step <1>4 proves the required assertion.
+Step [](#s1-4){.pf-ref} proves the required assertion.
 
 :::
 

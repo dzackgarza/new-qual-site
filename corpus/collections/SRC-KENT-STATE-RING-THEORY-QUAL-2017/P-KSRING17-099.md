@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 $$
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The norm is multiplicative:
 $$
@@ -97,7 +97,7 @@ $$
 =
 \overline\alpha\,\overline\beta.
 $$
-Hence, using step <1>1,
+Hence, using step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 N(\alpha\beta)
@@ -119,7 +119,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -159,7 +159,7 @@ Taking the contrapositive proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -199,7 +199,7 @@ whose elements have exactly this form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Choose integers
 $$
@@ -232,7 +232,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Set
 $$
@@ -283,7 +283,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 $$
@@ -321,7 +321,7 @@ The displayed division identity is the definition of $r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 $$
@@ -336,7 +336,7 @@ $$
 
 ::: pf-proof
 
-From step <1>7,
+From step [](#s1-7){.pf-ref},
 $$
 \begin{aligned}
 r
@@ -349,13 +349,13 @@ r
 \right).
 \end{aligned}
 $$
-Apply multiplicativity of the norm from step <1>2.
+Apply multiplicativity of the norm from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If
 $$
@@ -369,7 +369,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>6 and <1>8,
+By steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref},
 $$
 N(r)
 \le
@@ -380,7 +380,7 @@ Because
 $$
 \beta\ne0,
 $$
-step <1>3 gives
+step [](#s1-3){.pf-ref} gives
 $$
 N(\beta)>0.
 $$
@@ -399,7 +399,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The function
 $$
@@ -416,7 +416,7 @@ $$
 \qquad
 \beta\ne0,
 $$
-steps <1>4--<1>7 construct
+steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} construct
 $$
 q,r\in D
 $$
@@ -433,7 +433,7 @@ If
 $$
 r\ne0,
 $$
-step <1>9 gives
+step [](#s1-9){.pf-ref} gives
 $$
 N(r)<N(\beta).
 $$
@@ -443,7 +443,7 @@ Thus the division-with-remainder axiom is satisfied.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -465,7 +465,7 @@ $$
 \QQ(\sqrt{-2}),
 $$
 so it is an integral domain.
-Step <1>10 supplies a Euclidean function.
+Step [](#s1-10){.pf-ref} supplies a Euclidean function.
 Hence it is a Euclidean domain.
 
 :::
@@ -474,7 +474,7 @@ Hence it is a Euclidean domain.
 
 ::: pf-qed
 
-Step <1>11 is the required conclusion.
+Step [](#s1-11){.pf-ref} is the required conclusion.
 
 :::
 

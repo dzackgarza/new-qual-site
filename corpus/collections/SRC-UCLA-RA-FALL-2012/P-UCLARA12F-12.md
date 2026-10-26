@@ -30,7 +30,7 @@ for every $z_0\in\partial\Omega$, then $u(z)\le M$ for every $z\in\Omega$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the hypotheses of part (a), for every $\varepsilon>0$ there is an open neighborhood $U$ of $\partial\Omega$ such that
 $$
@@ -55,7 +55,7 @@ for $z\in U_{z_0}\cap\Omega$ sufficiently close to $z_0$. The boundary $\partial
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the hypotheses of part (a), one has
 $$
@@ -70,7 +70,7 @@ Suppose the superlevel set
 $$
 E_\varepsilon\coloneqq\{z\in\Omega:u(z)>M+\varepsilon\}
 $$
-were nonempty. By step <1>1, its closure is disjoint from a neighborhood of $\partial\Omega$, hence is compactly contained in $\Omega$.
+were nonempty. By step [](#s1-1){.pf-ref}, its closure is disjoint from a neighborhood of $\partial\Omega$, hence is compactly contained in $\Omega$.
 
 Let $D$ be a connected component of $E_\varepsilon$. Then $u$ is harmonic on $D$, continuous on $\overline D$, and
 $$
@@ -82,7 +82,7 @@ on $\partial D$ by continuity. Since $\overline D$ is compact, $u$ attains its m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Part (a) follows:
 $$
@@ -92,13 +92,13 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives $u(z)\le M+\varepsilon$ for every $\varepsilon>0$. Let $\varepsilon\downarrow0$.
+Step [](#s1-2){.pf-ref} gives $u(z)\le M+\varepsilon$ for every $\varepsilon>0$. Let $\varepsilon\downarrow0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For part (b), let $p_1,\ldots,p_N$ be the exceptional boundary points. Choose $d>0$ so large that
 $$
@@ -130,7 +130,7 @@ so each summand is nonnegative. As $z\to p_j$, the corresponding logarithm tends
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $\eta>0$, the harmonic function
 $$
@@ -149,7 +149,7 @@ $$
 \le M.
 $$
 
-At an exceptional point $p_j$, the function $u$ is bounded above by hypothesis while $v(z)\to+\infty$ by step <1>4. Hence
+At an exceptional point $p_j$, the function $u$ is bounded above by hypothesis while $v(z)\to+\infty$ by step [](#s1-4){.pf-ref}. Hence
 $$
 u_\eta(z)=u(z)-\eta v(z)\to-\infty
 $$
@@ -159,7 +159,7 @@ as $z\to p_j$, so the required limsup inequality also holds there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Under the hypotheses of part (b),
 $$
@@ -169,7 +169,7 @@ $$
 
 ::: pf-proof
 
-Apply part (a), proved in step <1>3, to $u_\eta$. Step <1>5 gives
+Apply part (a), proved in step [](#s1-3){.pf-ref}, to $u_\eta$. Step [](#s1-5){.pf-ref} gives
 $$
 u(z)-\eta v(z)\le M
 $$
@@ -181,7 +181,7 @@ for every $z\in\Omega$ and every $\eta>0$. For fixed $z$, the number $v(z)$ is f
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

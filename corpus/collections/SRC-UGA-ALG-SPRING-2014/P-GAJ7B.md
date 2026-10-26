@@ -34,7 +34,7 @@ Write $a=(123)$, $b=(456)$, $c=(789)$, and $d=(147)(258)(369)$. By Sylow conjuga
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subgroup $H=\langle a,b,c\rangle$ is isomorphic to $C_3^3$.
 
@@ -47,7 +47,7 @@ The three displayed $3$-cycles have disjoint supports, hence commute, have order
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The subgroup $H$ is normal in the Sylow $3$-subgroup $G_0=\langle a,b,c,d\rangle$.
 
@@ -60,7 +60,7 @@ Conjugation by $d$ cyclically permutes $a,b,c$: $dad^{-1}=b$, $dbd^{-1}=c$, and 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The group $G$ has a presentation, with all generators of order three,
 \[
@@ -74,15 +74,15 @@ The group $G$ has a presentation, with all generators of order three,
 
 ::: pf-proof
 
-The permutations $a,b,c,d$ satisfy the displayed relations. Conversely, these relations move every word into $a^ib^jc^kd^\ell$ with $0\leq i,j,k,\ell<3$, so the presented group has at most $3^4=81$ elements. The corresponding subgroup $G_0$ has exactly $81$ elements by step <1>2, so the presentation describes $G_0$ and therefore any Sylow $3$-subgroup up to isomorphism.
+The permutations $a,b,c,d$ satisfy the displayed relations. Conversely, these relations move every word into $a^ib^jc^kd^\ell$ with $0\leq i,j,k,\ell<3$, so the presented group has at most $3^4=81$ elements. The corresponding subgroup $G_0$ has exactly $81$ elements by step [](#s1-2){.pf-ref}, so the presentation describes $G_0$ and therefore any Sylow $3$-subgroup up to isomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The Sylow $3$-subgroup $G$ contains an element of order nine, independently of steps <1>1--<1>3.
+The Sylow $3$-subgroup $G$ contains an element of order nine, independently of steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 
 ::: pf-proof
@@ -95,7 +95,7 @@ The cycle $(1\,2\,3\,4\,5\,6\,7\,8\,9)$ has order nine, so its cyclic subgroup i
 
 ::: pf-qed
 
-Steps <1>1--<1>4 establish parts (a)--(d), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish parts (a)--(d), respectively.
 
 :::
 

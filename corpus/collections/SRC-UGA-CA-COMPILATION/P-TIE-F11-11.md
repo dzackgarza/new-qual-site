@@ -34,7 +34,7 @@ Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be us
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the hypotheses of part (a), $g$ has exactly one fixed point in $\abs{z}<1$.
 
@@ -60,7 +60,7 @@ By Rouché's theorem, $H$ and $z$ have the same number of zeros in $\abs{z}<1$, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If the boundary hypothesis is weakened to $\abs{g(z)}\le1$ on $\abs{z}=1$, the conclusion of part (a) can fail.
 
@@ -90,7 +90,7 @@ Moreover, uniqueness can also fail under the non-strict hypothesis: the identity
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\alpha\in\DD$, the map
 $$
@@ -122,7 +122,7 @@ so $\psi_\alpha$ is an automorphism and is its own inverse.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $f:\DD\to\DD$ is analytic, $f\not\equiv\operatorname{id}$, and $\alpha\in\DD$ is a fixed point of $f$, then $f$ has no second fixed point in $\DD$.
 
@@ -135,7 +135,7 @@ h
 \coloneqq
 \psi_\alpha\circ f\circ\psi_\alpha.
 $$
-By step <1>3, $h:\DD\to\DD$ is analytic. Since $f(\alpha)=\alpha$ and $\psi_\alpha(0)=\alpha$,
+By step [](#s1-3){.pf-ref}, $h:\DD\to\DD$ is analytic. Since $f(\alpha)=\alpha$ and $\psi_\alpha(0)=\alpha$,
 $$
 h(0)=0.
 $$
@@ -157,7 +157,7 @@ for some real $t$. Since $h(\gamma)=\gamma$ and $\gamma\ne0$, one has $e^{it}=1$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently, the answer to part (c) is
 $$
@@ -167,7 +167,7 @@ $$
 
 ::: pf-proof
 
-If $f$ has a fixed point, step <1>4 shows that it is unique unless $f$ is the identity. If $f$ has no fixed point, the assertion is immediate.
+If $f$ has a fixed point, step [](#s1-4){.pf-ref} shows that it is unique unless $f$ is the identity. If $f$ has no fixed point, the assertion is immediate.
 
 :::
 
@@ -175,7 +175,7 @@ If $f$ has a fixed point, step <1>4 shows that it is unique unless $f$ is the id
 
 ::: pf-qed
 
-Step <1>1 proves part (a), step <1>2 proves part (b), and step <1>5 proves part (c).
+Step [](#s1-1){.pf-ref} proves part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} proves part (c).
 
 :::
 

@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The span of all six listed vectors has dimension at most $3$.
 
@@ -76,7 +76,7 @@ Therefore the required span has dimension at most $3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vectors $v_1,v_3,v_4$ are linearly independent.
 
@@ -113,21 +113,21 @@ Thus only the trivial linear combination vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The span has dimension at least $3$.
 
 
 ::: pf-proof
 
-Step <1>2 exhibits three linearly independent vectors among the six given vectors.
+Step [](#s1-2){.pf-ref} exhibits three linearly independent vectors among the six given vectors.
 Hence the span has dimension at least $3$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the dimension is
 $$
@@ -137,7 +137,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives an upper bound of $3$, while step <1>3 gives a lower bound of $3$.
+Step [](#s1-1){.pf-ref} gives an upper bound of $3$, while step [](#s1-3){.pf-ref} gives a lower bound of $3$.
 Thus the dimension is exactly $3$, which is answer choice $\boxed{\text{(B)}}$.
 
 :::
@@ -146,7 +146,7 @@ Thus the dimension is exactly $3$, which is answer choice $\boxed{\text{(B)}}$.
 
 ::: pf-qed
 
-Step <1>4 is the required dimension.
+Step [](#s1-4){.pf-ref} is the required dimension.
 
 :::
 

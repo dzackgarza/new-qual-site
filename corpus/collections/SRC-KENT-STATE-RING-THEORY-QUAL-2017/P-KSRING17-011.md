@@ -21,7 +21,7 @@ Show that a non-zero ring R in which $x ^ { 2 } = x$ for all $x \in R$ is of cha
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in R$,
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x\in R$,
 $$
@@ -62,7 +62,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 x=-x.
 $$
@@ -80,14 +80,14 @@ for every $x\in R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ring $R$ has characteristic $2$.
 
 
 ::: pf-proof
 
-Step <1>2 shows that
+Step [](#s1-2){.pf-ref} shows that
 $$
 2\cdot1_R=0.
 $$
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For all $x,y\in R$,
 $$
@@ -137,18 +137,18 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ring $R$ is commutative.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 xy=-yx.
 $$
-But by step <1>3 the ring has characteristic $2$, so
+But by step [](#s1-3){.pf-ref} the ring has characteristic $2$, so
 $$
 -yx=yx.
 $$
@@ -167,7 +167,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 proves the characteristic assertion, and step <1>5 proves commutativity.
+Step [](#s1-3){.pf-ref} proves the characteristic assertion, and step [](#s1-5){.pf-ref} proves commutativity.
 
 :::
 

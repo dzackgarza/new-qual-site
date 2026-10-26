@@ -22,7 +22,7 @@ Let $G$ be a group and define $\Aut(G)$ to be the set of all isomorphisms of $G$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The composition of two automorphisms of $G$ is an automorphism of $G$.
 
@@ -43,14 +43,14 @@ Thus $\alpha\circ\beta$ is a homomorphism and therefore an automorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\Aut(G)$ is a group under composition.
 
 
 ::: pf-proof
 
-Composition of functions is associative. By step <1>1, $\Aut(G)$ is closed
+Composition of functions is associative. By step [](#s1-1){.pf-ref}, $\Aut(G)$ is closed
 under composition. The identity map
 \[
 \operatorname{id}_G:G\to G
@@ -71,7 +71,7 @@ Hence every element has an inverse in $\Aut(G)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $g\in G$, the map
 \[
@@ -101,7 +101,7 @@ Hence $\phi_g\in\Aut(G)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The inner automorphisms satisfy
 \[
@@ -124,7 +124,7 @@ For every $x\in G$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -134,11 +134,11 @@ One has
 
 ::: pf-proof
 
-By step <1>3, every inner automorphism belongs to $\Aut(G)$. Also
+By step [](#s1-3){.pf-ref}, every inner automorphism belongs to $\Aut(G)$. Also
 \[
 \phi_e=\operatorname{id}_G.
 \]
-By step <1>4, the product of two inner automorphisms is inner, and
+By step [](#s1-4){.pf-ref}, the product of two inner automorphisms is inner, and
 \[
 \phi_g^{-1}=\phi_{g^{-1}}
 \]
@@ -148,7 +148,7 @@ is inner. Hence $\operatorname{Inn}(G)$ is a subgroup.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $G$ is abelian, then
 \[
@@ -170,8 +170,8 @@ Thus every inner automorphism is the identity.
 
 ::: pf-qed
 
-Step <1>2 proves that $\Aut(G)$ is a group, step <1>5 proves the subgroup
-claim, and step <1>6 settles the abelian case.
+Step [](#s1-2){.pf-ref} proves that $\Aut(G)$ is a group, step [](#s1-5){.pf-ref} proves the subgroup
+claim, and step [](#s1-6){.pf-ref} settles the abelian case.
 
 :::
 

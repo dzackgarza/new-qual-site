@@ -44,7 +44,7 @@ difference is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -67,7 +67,7 @@ f(0)-0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -104,14 +104,14 @@ g(c)=0.
 
 ::: pf-proof
 
-Steps <1>2--<1>3 show that the continuous function \(g\) changes sign on
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} show that the continuous function \(g\) changes sign on
 \([0,1]\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -135,14 +135,14 @@ f(c)-c=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence statement (a) is necessarily true.
 
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -184,7 +184,7 @@ This is the mean value theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Using the endpoint values,
 \[
@@ -207,20 +207,20 @@ f'(c)=-1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence statement (b) is necessarily true.
 
 
 ::: pf-proof
 
-This is step <1>9.
+This is step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The function \(h\) is continuous on \([0,1]\) and differentiable on
 \((0,1)\).
@@ -234,7 +234,7 @@ It is a sum of elementary smooth functions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -257,7 +257,7 @@ h(0)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 One has
 \[
@@ -280,7 +280,7 @@ h(1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 But
 \[
@@ -309,21 +309,21 @@ h(1/2)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore statement (c) is not necessarily true.
 
 
 ::: pf-proof
 
-The function \(h\) satisfies all hypotheses by steps <1>11--<1>13 but
-violates the proposed positivity by step <1>14.
+The function \(h\) satisfies all hypotheses by steps [](#s1-11){.pf-ref} through [](#s1-13){.pf-ref} but
+violates the proposed positivity by step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Thus the statements that are necessarily true are
 \[
@@ -333,8 +333,8 @@ Thus the statements that are necessarily true are
 
 ::: pf-proof
 
-Statement (a) is step <1>6, statement (b) is step <1>10, and statement (c)
-is disproved in step <1>15.
+Statement (a) is step [](#s1-6){.pf-ref}, statement (b) is step [](#s1-10){.pf-ref}, and statement (c)
+is disproved in step [](#s1-15){.pf-ref}.
 
 :::
 
@@ -342,7 +342,7 @@ is disproved in step <1>15.
 
 ::: pf-qed
 
-Step <1>16 gives the required answer.
+Step [](#s1-16){.pf-ref} gives the required answer.
 
 :::
 

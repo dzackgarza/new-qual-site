@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $\varphi$ preserves addition.
 
@@ -67,7 +67,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\varphi$ preserves multiplication and identity.
 
@@ -107,7 +107,7 @@ Hence $\varphi$ is a ring homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\varphi$ is surjective, then
 $$
@@ -156,7 +156,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Assume
 $$
@@ -199,9 +199,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Under the hypothesis of step <1>4, the map $\varphi$ is surjective.
+Under the hypothesis of step [](#s1-4){.pf-ref}, the map $\varphi$ is surjective.
 
 
 ::: pf-proof
@@ -212,7 +212,7 @@ $$
 \in
 R/A\times R/B
 $$
-be arbitrary. Choose $a,b$ as in step <1>4 and define
+be arbitrary. Choose $a,b$ as in step [](#s1-4){.pf-ref} and define
 $$
 x
 \coloneqq
@@ -271,7 +271,7 @@ and $\varphi$ is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -285,7 +285,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 proves the forward implication, and step <1>5 proves the converse.
+Step [](#s1-3){.pf-ref} proves the forward implication, and step [](#s1-5){.pf-ref} proves the converse.
 
 :::
 
@@ -293,7 +293,7 @@ Step <1>3 proves the forward implication, and step <1>5 proves the converse.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 prove part (a), and step <1>6 proves part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

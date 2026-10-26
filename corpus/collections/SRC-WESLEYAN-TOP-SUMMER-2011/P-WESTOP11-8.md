@@ -32,7 +32,7 @@ be the inclusion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The surface $X$ deformation retracts onto a wedge of four circles.
 
@@ -54,7 +54,7 @@ S^1\vee S^1\vee S^1\vee S^1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -75,7 +75,7 @@ groups.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -114,7 +114,7 @@ Thus the boundary generator is represented by the product of commutators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The induced homomorphism
 \[
@@ -128,7 +128,7 @@ is injective.
 
 ::: pf-proof
 
-By step <1>3, the generator of
+By step [](#s1-3){.pf-ref}, the generator of
 \[
 \pi_1(A)\cong\mathbb Z
 \]
@@ -159,7 +159,7 @@ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The homology groups are
 \[
@@ -186,7 +186,7 @@ The groups for
 A\cong S^1
 \]
 are standard.
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 X\simeq\bigvee^4S^1,
 \]
@@ -197,7 +197,7 @@ copies in degree $1$, and zero in higher degrees.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On degree-$0$ homology,
 \[
@@ -223,7 +223,7 @@ is the identity under the standard identifications.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On degree-$1$ homology,
 \[
@@ -245,7 +245,7 @@ H_1(Y;\mathbb Z)
 \cong
 \pi_1(Y)^{\mathrm{ab}}.
 \]
-By step <1>3, the boundary generator maps in the fundamental group to
+By step [](#s1-3){.pf-ref}, the boundary generator maps in the fundamental group to
 \[
 [a_1,b_1][a_2,b_2].
 \]
@@ -266,7 +266,7 @@ maps to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In every degree
 \[
@@ -281,13 +281,13 @@ is the zero map between zero groups.
 
 ::: pf-proof
 
-This is immediate from step <1>5.
+This is immediate from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The boundary circle $A$ is not a retract of $X$.
 
@@ -310,7 +310,7 @@ r_*\circ i_*
 =
 \operatorname{id}_{H_1(A)}.
 \]
-But step <1>7 gives
+But step [](#s1-7){.pf-ref} gives
 \[
 i_*=0,
 \]
@@ -330,7 +330,7 @@ its identity map is nonzero, a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The same obstruction is visible directly on fundamental groups.
 
@@ -352,7 +352,7 @@ is abelian, so every homomorphism
 r_*:F_4\to\mathbb Z
 \]
 kills commutators.
-Hence by step <1>3,
+Hence by step [](#s1-3){.pf-ref},
 \[
 r_*i_*(c)
 =
@@ -372,9 +372,9 @@ would send $c$ to the nonzero generator $c$.
 
 ::: pf-qed
 
-Steps <1>2--<1>4 compute the map on fundamental groups,
-steps <1>5--<1>8 compute the maps on homology,
-and steps <1>9--<1>10 prove that $A$ is not a retract of $X$.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} compute the map on fundamental groups,
+steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} compute the maps on homology,
+and steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} prove that $A$ is not a retract of $X$.
 
 :::
 

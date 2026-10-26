@@ -40,7 +40,7 @@ where the first sum is empty when $n=0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each $\varphi_n$ is a nonnegative measurable simple function, and $\varphi_0=0$.
 
@@ -53,7 +53,7 @@ Each set $W_{n,k}$ is measurable because $f$ is measurable, and $\{f\geq n\}$ is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq0$ and $x\in\mathbb R^d$,
 $$
@@ -83,7 +83,7 @@ Thus $x\in W_{n,k}$ and the sum defining $\varphi_n$ takes the value $k2^{-n}=2^
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n\geq0$ and $x\in\mathbb R^d$,
 $$
@@ -97,7 +97,7 @@ Fix $x$ and write $t=f(x)$. If $t\geq n+1$, then
 $$
 \varphi_n(x)=n\leq n+1=\varphi_{n+1}(x).
 $$
-If $n\leq t<n+1$, then $\varphi_n(x)=n$, while step <1>2 gives either $\varphi_{n+1}(x)=n+1$ or
+If $n\leq t<n+1$, then $\varphi_n(x)=n$, while step [](#s1-2){.pf-ref} gives either $\varphi_{n+1}(x)=n+1$ or
 $$
 \varphi_{n+1}(x)=2^{-(n+1)}\lfloor2^{n+1}t\rfloor\geq n,
 $$
@@ -119,7 +119,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $x\in\mathbb R^d$,
 $$
@@ -129,7 +129,7 @@ $$
 
 ::: pf-proof
 
-Fix $x$ and set $t=f(x)<\infty$. For every integer $n>t$, step <1>2 gives
+Fix $x$ and set $t=f(x)<\infty$. For every integer $n>t$, step [](#s1-2){.pf-ref} gives
 $$
 \varphi_n(x)=2^{-n}\lfloor2^nt\rfloor.
 $$
@@ -143,7 +143,7 @@ The right-hand side tends to zero, so $\varphi_n(x)\to t=f(x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sequence $(\varphi_n)$ satisfies all requirements of part (a):
 $$
@@ -156,13 +156,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 through <1>4.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n\geq0$, the function
 $$
@@ -173,13 +173,13 @@ is a nonnegative measurable simple function.
 
 ::: pf-proof
 
-By step <1>3, $\psi_n\geq0$. It is measurable as a difference of measurable functions. Since $\varphi_n$ and $\varphi_{n+1}$ each have finite range, their difference also has finite range, so $\psi_n$ is simple.
+By step [](#s1-3){.pf-ref}, $\psi_n\geq0$. It is measurable as a difference of measurable functions. Since $\varphi_n$ and $\varphi_{n+1}$ each have finite range, their difference also has finite range, so $\psi_n$ is simple.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For each $n$, there are finitely many nonnegative numbers $d_{n,1},\ldots,d_{n,r_n}$ and measurable sets $E_{n,1},\ldots,E_{n,r_n}$ such that
 $$
@@ -189,7 +189,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, $\psi_n$ is a nonnegative simple function. Let $d_{n,1},\ldots,d_{n,r_n}$ be its distinct nonzero values and set
+By step [](#s1-6){.pf-ref}, $\psi_n$ is a nonnegative simple function. Let $d_{n,1},\ldots,d_{n,r_n}$ be its distinct nonzero values and set
 $$
 E_{n,j}=\{x:\psi_n(x)=d_{n,j}\}.
 $$
@@ -199,7 +199,7 @@ These level sets are measurable and give the displayed finite representation. If
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There are nonnegative numbers $(c_p)_{p\geq0}$ and measurable sets $(M_p)_{p\geq0}$ such that
 $$
@@ -219,14 +219,14 @@ c_p=d_{n_p,j_p},
 \qquad
 M_p=E_{n_p,j_p}.
 $$
-By step <1>5 and telescoping,
+By step [](#s1-5){.pf-ref} and telescoping,
 $$
 f
 =\lim_{N\to\infty}\varphi_{N+1}
 =\sum_{n=0}^\infty(\varphi_{n+1}-\varphi_n)
 =\sum_{n=0}^\infty\psi_n.
 $$
-Substituting the finite representation from step <1>7 and then using the enumeration gives
+Substituting the finite representation from step [](#s1-7){.pf-ref} and then using the enumeration gives
 $$
 f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}.
 $$
@@ -238,7 +238,7 @@ All terms are nonnegative, so this rearrangement of the countable family of summ
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>8 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
 
 :::
 

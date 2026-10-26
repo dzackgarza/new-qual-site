@@ -75,7 +75,7 @@ The function \(|f|^2\) is subharmonic. Apply the subharmonic mean-value inequali
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -94,7 +94,7 @@ The integral over \(D(z_0,r)\) is bounded above by the integral over the whole u
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -108,26 +108,26 @@ Hence
 
 ::: pf-proof
 
-Take square roots in step <1>2.
+Take square roots in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus \(L_{z_0}\) is bounded.
 
 
 ::: pf-proof
 
-Step <1>3 gives a finite operator-norm bound.
+Step [](#s1-3){.pf-ref} gives a finite operator-norm bound.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The functional \(L_{z_0}\) is linear.
 
@@ -147,7 +147,7 @@ aL_{z_0}(f)+bL_{z_0}(g).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -159,13 +159,13 @@ L_{z_0}:H\to\mathbb C
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For integers \(m,n\ge0\),
 \[
@@ -213,7 +213,7 @@ if \(n\ne m\), while for \(n=m\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently,
 \[
@@ -228,7 +228,7 @@ Consequently,
 
 ::: pf-proof
 
-For \(0<\rho<1\), uniform convergence of the Taylor series on \(|z|\le\rho\) and step <1>7 give
+For \(0<\rho<1\), uniform convergence of the Taylor series on \(|z|\le\rho\) and step [](#s1-7){.pf-ref} give
 \[
 \int_{|z|<\rho}|f(z)|^2\,dA
 =
@@ -243,7 +243,7 @@ Let \(\rho\uparrow1\). The left-hand side increases to \(\|f\|_H^2\), while the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The power-series expansion is
 \[
@@ -284,7 +284,7 @@ Since \(|z_0|<1\) and \(|z|<1\), one has \(|w|<1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The function \(g_{z_0}\) belongs to \(H\).
 
@@ -297,7 +297,7 @@ b_n
 =
 \frac{n+1}{\pi}\overline{z_0}^{\,n}.
 \]
-Using step <1>8,
+Using step [](#s1-8){.pf-ref},
 \[
 \begin{aligned}
 \|g_{z_0}\|_H^2
@@ -326,7 +326,7 @@ Thus \(g_{z_0}\in H\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 One has
 \[
@@ -340,7 +340,7 @@ a_n z_0^n}.
 
 ::: pf-proof
 
-By steps <1>7--<1>9,
+By steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref},
 \[
 \begin{aligned}
 \langle f,g_{z_0}\rangle
@@ -364,7 +364,7 @@ a_n(m+1)z_0^m
 z^n\overline z^{\,m}\,dA.
 \end{aligned}
 \]
-Orthogonality from step <1>7 kills all terms except \(n=m\), and the surviving factor is
+Orthogonality from step [](#s1-7){.pf-ref} kills all terms except \(n=m\), and the surviving factor is
 \[
 \frac1\pi
 a_n(n+1)z_0^n
@@ -372,13 +372,13 @@ a_n(n+1)z_0^n
 =
 a_nz_0^n.
 \]
-The series converges absolutely by Cauchy--Schwarz with the coefficient norm from step <1>8 and the finite norm from step <1>10.
+The series converges absolutely by Cauchy--Schwarz with the coefficient norm from step [](#s1-8){.pf-ref} and the finite norm from step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since
 \[
@@ -398,13 +398,13 @@ f(z_0)
 
 ::: pf-proof
 
-The Taylor series of an entire-on-the-disk holomorphic function converges to \(f\) at every \(z_0\in D\). Combine this with step <1>11.
+The Taylor series of an entire-on-the-disk holomorphic function converges to \(f\) at every \(z_0\in D\). Combine this with step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore the reproducing vector is
 \[
@@ -417,7 +417,7 @@ g_{z_0}(z)
 
 ::: pf-proof
 
-Step <1>10 shows this function belongs to \(H\), and step <1>12 proves the reproducing identity.
+Step [](#s1-10){.pf-ref} shows this function belongs to \(H\), and step [](#s1-12){.pf-ref} proves the reproducing identity.
 
 :::
 
@@ -425,7 +425,7 @@ Step <1>10 shows this function belongs to \(H\), and step <1>12 proves the repro
 
 ::: pf-qed
 
-Step <1>6 proves part (a), and step <1>13 proves part (b).
+Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-13){.pf-ref} proves part (b).
 
 :::
 

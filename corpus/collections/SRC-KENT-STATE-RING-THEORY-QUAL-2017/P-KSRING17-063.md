@@ -26,7 +26,7 @@ Let R be a commutative ring with 1. An ideal I of R is called a primary ideal if
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume $I$ is primary. Then
 $$
@@ -50,7 +50,7 @@ is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $I$ is primary and let
 $$
@@ -130,7 +130,7 @@ is nilpotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence if $I$ is primary, then
 $$
@@ -143,13 +143,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Conversely, assume
 $$
@@ -182,7 +182,7 @@ contrary to the hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose
 $$
@@ -229,9 +229,9 @@ is annihilated by a nonzero element and is therefore a zero divisor.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Under the assumptions of step <1>5, there exists
+Under the assumptions of step [](#s1-5){.pf-ref}, there exists
 $$
 n\ge1
 $$
@@ -243,7 +243,7 @@ $$
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 \overline y
 $$
@@ -270,7 +270,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -285,18 +285,18 @@ $$
 
 ::: pf-proof
 
-The forward implication is step <1>3.
-For the converse, step <1>4 gives
+The forward implication is step [](#s1-3){.pf-ref}.
+For the converse, step [](#s1-4){.pf-ref} gives
 $$
 I\ne R,
 $$
-and steps <1>5--<1>6 give the defining primary condition.
+and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the defining primary condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Now assume $I$ is primary and set
 $$
@@ -340,7 +340,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Suppose
 $$
@@ -401,7 +401,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -414,7 +414,7 @@ $$
 
 ::: pf-proof
 
-Step <1>8 gives properness, and step <1>9 gives the prime-product condition.
+Step [](#s1-8){.pf-ref} gives properness, and step [](#s1-9){.pf-ref} gives the prime-product condition.
 
 :::
 
@@ -422,7 +422,7 @@ Step <1>8 gives properness, and step <1>9 gives the prime-product condition.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>10 proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-10){.pf-ref} proves part (b).
 
 :::
 

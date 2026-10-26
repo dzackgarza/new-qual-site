@@ -29,7 +29,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The number $x$ satisfies
 $$
@@ -74,7 +74,7 @@ where $\zeta^{-k}=\zeta^{7-k}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial
 $$
@@ -101,7 +101,7 @@ in $\mathbb F_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -111,13 +111,13 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that $x$ is algebraic and annihilated by $p$. Step <1>2 shows that $p$ is irreducible of degree $3$, so it is the minimal polynomial of $x$ over $\mathbb Q$.
+Step [](#s1-1){.pf-ref} shows that $x$ is algebraic and annihilated by $p$. Step [](#s1-2){.pf-ref} shows that $p$ is irreducible of degree $3$, so it is the minimal polynomial of $x$ over $\mathbb Q$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The number $x$ is not contained in any finite extension $K/\mathbb Q$ whose degree is a power of $2$.
 
@@ -132,7 +132,7 @@ Then
 $$
 \mathbb Q\subseteq\mathbb Q(x)\subseteq K.
 $$
-By the tower law and step <1>3,
+By the tower law and step [](#s1-3){.pf-ref},
 $$
 2^m=[K:\mathbb Q]
 =[K:\mathbb Q(x)]\,[\mathbb Q(x):\mathbb Q]
@@ -146,7 +146,7 @@ Thus $3$ divides $2^m$, which is impossible.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 give the required irreducible polynomial, and step <1>4 gives the field-degree obstruction.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the required irreducible polynomial, and step [](#s1-4){.pf-ref} gives the field-degree obstruction.
 
 :::
 

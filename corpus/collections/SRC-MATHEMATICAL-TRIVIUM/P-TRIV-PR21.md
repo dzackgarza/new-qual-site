@@ -23,7 +23,7 @@ Let $n$ be a unit normal to the fixed projection plane, and let $u_1,u_2,u_3$ be
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a fixed orientation of the cube, the area of its orthogonal projection is
 \[
@@ -52,7 +52,7 @@ Haar-uniform rotation of any fixed unit vector has the rotation-invariant probab
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $U$ is uniform on $S^2$, then
 \[
@@ -78,7 +78,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -88,7 +88,7 @@ Therefore
 
 ::: pf-proof
 
-By linearity of expectation, independence of the three $u_i$ is unnecessary. Apply step <1>3 separately to each term in step <1>1:
+By linearity of expectation, independence of the three $u_i$ is unnecessary. Apply step [](#s1-3){.pf-ref} separately to each term in step [](#s1-1){.pf-ref}:
 \[
 \mathbf EA
 =\sum_{i=1}^3\mathbf E|n\cdot u_i|
@@ -102,7 +102,7 @@ By linearity of expectation, independence of the three $u_i$ is unnecessary. App
 
 ::: pf-qed
 
-Step <1>4 gives the expected projected area of the randomly oriented unit cube.
+Step [](#s1-4){.pf-ref} gives the expected projected area of the randomly oriented unit cube.
 
 :::
 

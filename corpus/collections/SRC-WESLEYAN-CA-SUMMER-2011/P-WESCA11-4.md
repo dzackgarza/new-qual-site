@@ -79,7 +79,7 @@ To prove \(R\ge AB\), it suffices to show convergence for every such \(z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist positive numbers
 \[
@@ -125,7 +125,7 @@ of convergence. Since \(r<A\), apply this to the first power series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the sequence
 \[
@@ -144,7 +144,7 @@ terms form a bounded sequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Likewise,
 \[
@@ -157,13 +157,13 @@ is bounded.
 ::: pf-proof
 
 Since \(s<B\), the second power series converges absolutely at \(s\), and the
-same argument as in step <1>5 applies.
+same argument as in step [](#s1-5){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Choose constants
 \[
@@ -182,13 +182,13 @@ for all \(n\).
 
 ::: pf-proof
 
-Use the boundedness from steps <1>5--<1>6.
+Use the boundedness from steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Set
 \[
@@ -203,13 +203,13 @@ Then
 
 ::: pf-proof
 
-This is step <1>3 divided by the positive number \(rs\).
+This is step [](#s1-3){.pf-ref} divided by the positive number \(rs\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every \(n\),
 \[
@@ -238,7 +238,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -251,13 +251,13 @@ MNq^n}.
 
 ::: pf-proof
 
-Apply the bounds from step <1>7 to step <1>9.
+Apply the bounds from step [](#s1-7){.pf-ref} to step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The geometric series
 \[
@@ -268,7 +268,7 @@ converges.
 
 ::: pf-proof
 
-Step <1>8 gives
+Step [](#s1-8){.pf-ref} gives
 \[
 0\le q<1.
 \]
@@ -277,7 +277,7 @@ Step <1>8 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -288,13 +288,13 @@ converges absolutely.
 
 ::: pf-proof
 
-Apply the comparison test using steps <1>10--<1>11.
+Apply the comparison test using steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Since every \(z\) with
 \[
@@ -308,7 +308,7 @@ lies in the disk of convergence of the coefficientwise product series,
 
 ::: pf-proof
 
-Step <1>12 holds for an arbitrary \(z\) satisfying \(|z|<AB\). Therefore the
+Step [](#s1-12){.pf-ref} holds for an arbitrary \(z\) satisfying \(|z|<AB\). Therefore the
 radius \(R\) is at least \(AB\).
 
 :::
@@ -317,7 +317,7 @@ radius \(R\) is at least \(AB\).
 
 ::: pf-qed
 
-Step <1>13 is the required estimate.
+Step [](#s1-13){.pf-ref} is the required estimate.
 
 :::
 

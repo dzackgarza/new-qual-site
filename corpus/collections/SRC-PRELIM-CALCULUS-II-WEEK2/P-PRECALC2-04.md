@@ -17,7 +17,7 @@ Perform the integral $\int _ { - \infty } ^ { x } { \frac { d t } { \cosh ( t ) 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Rewrite the integrand as
 \[
@@ -51,7 +51,7 @@ Multiply numerator and denominator by \(e^t\):
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Set
 \[
@@ -67,7 +67,7 @@ This substitution matches the numerator \(e^t\,dt\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Then
 \[
@@ -83,7 +83,7 @@ Differentiate \(u=e^t\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 As
 \[
@@ -106,7 +106,7 @@ e^t\to0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 At the upper endpoint \(t=x\),
 \[
@@ -134,13 +134,13 @@ Therefore
 
 ::: pf-proof
 
-Apply steps <1>1--<1>5.
+Apply steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
@@ -166,7 +166,7 @@ Use the standard antiderivative of \(1/(1+u^2)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -183,7 +183,7 @@ Since
 \[
 \arctan0=0,
 \]
-step <1>7 gives
+step [](#s1-7){.pf-ref} gives
 \[
 2\arctan(e^x).
 \]
@@ -194,7 +194,7 @@ step <1>7 gives
 
 ::: pf-qed
 
-Step <1>8 is the requested antiderivative-with-limit.
+Step [](#s1-8){.pf-ref} is the requested antiderivative-with-limit.
 
 :::
 

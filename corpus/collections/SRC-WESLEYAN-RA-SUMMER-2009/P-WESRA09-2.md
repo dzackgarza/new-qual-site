@@ -29,7 +29,7 @@ State the following theorems:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The uniqueness theorem for premeasures on rings is the following: let \(\mathcal R\) be a ring of subsets of a set \(\Omega\), and let \(\mu_0:\mathcal R\to[0,\infty]\) be a premeasure. Suppose \(\mu_0\) is \(\sigma\)-finite on \(\mathcal R\), meaning that there are sets \(E_n\in\mathcal R\) with
 \[
@@ -70,7 +70,7 @@ The Hahn--Banach Theorem in normed-space form is the following: let \(X\) be a n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Uniform Boundedness Theorem is the following: let \(X\) be a Banach space, let \(Y\) be a normed vector space, and let \(\mathcal F\) be a family of bounded linear maps \(T:X\to Y\). If
 \[
@@ -86,7 +86,7 @@ then
 
 ::: pf-qed
 
-Steps <1>1 through <1>4 state the four requested theorems, including the hypotheses needed for each conclusion.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} state the four requested theorems, including the hypotheses needed for each conclusion.
 
 :::
 

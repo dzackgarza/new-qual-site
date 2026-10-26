@@ -42,7 +42,7 @@ T^t(\varphi)=\varphi\circ T.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -64,7 +64,7 @@ Since $Tv\in\operatorname{im}T$ and $\varphi$ vanishes on $\operatorname{im}T$, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -89,7 +89,7 @@ Thus $\varphi$ vanishes on $\operatorname{im}T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -99,13 +99,13 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 prove the two inclusions.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove the two inclusions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every subspace $Y\subseteq W$,
 \[
@@ -132,7 +132,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -152,7 +152,7 @@ Since $W$ is finite-dimensional,
 \[
 \dim W^*=\dim W.
 \]
-By step <1>3 and then step <1>4,
+By step [](#s1-3){.pf-ref} and then step [](#s1-4){.pf-ref},
 \[
 \dim\ker(T^t)
 =
@@ -175,7 +175,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>3 proves part (i), and step <1>5 proves part (ii).
+Step [](#s1-3){.pf-ref} proves part (i), and step [](#s1-5){.pf-ref} proves part (ii).
 
 :::
 

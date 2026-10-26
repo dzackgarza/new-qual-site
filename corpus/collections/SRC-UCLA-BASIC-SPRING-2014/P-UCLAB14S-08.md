@@ -37,7 +37,7 @@ Prove that $f$ is infinitely differentiable.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $m\geq0$,
 \[
@@ -57,7 +57,7 @@ Repeated l'Hopital, or the power-series estimate $e^t\geq t^{m+1}/(m+1)!$, shows
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $k\geq0$ there is a polynomial $P_k$ such that, for $x>0$,
 \[
@@ -78,7 +78,7 @@ which again has the required form with a polynomial in $1/x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $k\geq0$,
 \[
@@ -88,13 +88,13 @@ For every $k\geq0$,
 
 ::: pf-proof
 
-Expand the polynomial in step <1>2 into finitely many monomials $c_mx^{-m}$. Each monomial times $e^{-1/x}$ tends to zero by step <1>1.
+Expand the polynomial in step [](#s1-2){.pf-ref} into finitely many monomials $c_mx^{-m}$. Each monomial times $e^{-1/x}$ tends to zero by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is $C^\infty$ on $\mathbb R$, and
 \[
@@ -109,13 +109,13 @@ On $(-\infty,0)$ the function is identically zero and on $(0,\infty)$ it is smoo
 \[
 \lim_{h\to0}\frac{f^{(k)}(h)-f^{(k)}(0)}h.
 \]
-For $h<0$ the quotient is zero. For $h>0$, step <1>2 expresses it as a finite sum of terms $h^{-m}e^{-1/h}$, which tend to zero by step <1>1. Thus the derivative exists and equals zero; step <1>3 gives continuity of the next derivative. This proves the assertion for all $k$.
+For $h<0$ the quotient is zero. For $h>0$, step [](#s1-2){.pf-ref} expresses it as a finite sum of terms $h^{-m}e^{-1/h}$, which tend to zero by step [](#s1-1){.pf-ref}. Thus the derivative exists and equals zero; step [](#s1-3){.pf-ref} gives continuity of the next derivative. This proves the assertion for all $k$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -131,7 +131,7 @@ while $\psi(x)>0$ for $|x|<1$.
 
 ::: pf-proof
 
-The map $x\mapsto1-|x|^2$ is smooth, and step <1>4 says $f$ is smooth, so their composition is smooth. The defining formula for $f$ gives nonnegativity and the support statement immediately.
+The map $x\mapsto1-|x|^2$ is smooth, and step [](#s1-4){.pf-ref} says $f$ is smooth, so their composition is smooth. The defining formula for $f$ gives nonnegativity and the support statement immediately.
 
 :::
 
@@ -154,7 +154,7 @@ The function $\psi$ is continuous and supported in the compact unit ball, hence 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Set
 \[
@@ -174,7 +174,7 @@ and
 
 ::: pf-proof
 
-All regularity, positivity, and support properties follow from step <1>5 because $C>0$. By the definition of $C$,
+All regularity, positivity, and support properties follow from step [](#s1-5){.pf-ref} because $C>0$. By the definition of $C$,
 \[
 \int\varphi=C^{-1}\int\psi=1.
 \]
@@ -185,7 +185,7 @@ All regularity, positivity, and support properties follow from step <1>5 because
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>7 constructs the function required in part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} constructs the function required in part (b).
 
 :::
 

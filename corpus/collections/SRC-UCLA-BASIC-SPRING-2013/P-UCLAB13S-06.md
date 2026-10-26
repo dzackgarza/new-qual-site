@@ -23,7 +23,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -44,7 +44,7 @@ The complex Schur theorem states that every complex square matrix is unitarily s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Write the diagonal entries of $T$ as
 \[
@@ -127,13 +127,13 @@ An upper triangular matrix has characteristic polynomial
 \prod_{j=1}^n(t-\mu_j),
 \]
 so its eigenvalues are precisely its diagonal entries.
-By construction in step <1>2, these are pairwise distinct.
+By construction in step [](#s1-2){.pf-ref}, these are pairwise distinct.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence $T_\varepsilon$ is diagonalizable over $\mathbb C$.
 
@@ -148,7 +148,7 @@ Therefore it is diagonalizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -164,7 +164,7 @@ A_\varepsilon\to A.
 
 ::: pf-proof
 
-Similarity preserves diagonalizability, so $A_\varepsilon$ is diagonalizable by step <1>5.
+Similarity preserves diagonalizability, so $A_\varepsilon$ is diagonalizable by step [](#s1-5){.pf-ref}.
 
 Also,
 \[
@@ -188,7 +188,7 @@ A_\varepsilon\to A.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the diagonalizable complex matrices are dense in
 \[
@@ -198,14 +198,14 @@ Therefore the diagonalizable complex matrices are dense in
 
 ::: pf-proof
 
-The matrix $A$ in step <1>1 was arbitrary, and step <1>6 constructs diagonalizable matrices arbitrarily close to it.
+The matrix $A$ in step [](#s1-1){.pf-ref} was arbitrary, and step [](#s1-6){.pf-ref} constructs diagonalizable matrices arbitrarily close to it.
 This proves part (a).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For real matrices, the answer is yes when
 \[
@@ -236,7 +236,7 @@ which is done in the following steps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For
 \[
@@ -286,7 +286,7 @@ Such a matrix has no real eigenvalues and hence cannot be diagonalizable over $\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For
 \[
@@ -305,7 +305,7 @@ R
 \oplus
 \operatorname{diag}(3,4,\ldots,n),
 \]
-where $R$ is the rotation matrix from step <1>9.
+where $R$ is the rotation matrix from step [](#s1-9){.pf-ref}.
 Its eigenvalues are
 \[
 i,-i,3,4,\ldots,n,
@@ -329,7 +329,7 @@ Thus an open neighborhood of $A_0$ contains no real-diagonalizable matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Consequently, for every
 \[
@@ -343,7 +343,7 @@ M_n(\mathbb R).
 
 ::: pf-proof
 
-Step <1>9 proves the assertion for $n=2$, and step <1>10 proves it for all larger $n$ by exhibiting a nonempty open set disjoint from the real-diagonalizable matrices.
+Step [](#s1-9){.pf-ref} proves the assertion for $n=2$, and step [](#s1-10){.pf-ref} proves it for all larger $n$ by exhibiting a nonempty open set disjoint from the real-diagonalizable matrices.
 
 :::
 
@@ -351,7 +351,7 @@ Step <1>9 proves the assertion for $n=2$, and step <1>10 proves it for all large
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and steps <1>8--<1>11 answer part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and steps [](#s1-8){.pf-ref} through [](#s1-11){.pf-ref} answer part (b).
 
 :::
 

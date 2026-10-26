@@ -30,7 +30,7 @@ S^2\longrightarrow S(\xi)\longrightarrow S^4.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Oriented rank-$3$ vector bundles over $S^4$ are classified by
 \[
@@ -54,7 +54,7 @@ Changing trivializations changes $g$ by homotopy, so isomorphism classes are $[S
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose $\xi$ corresponding to a generator
 \[
@@ -65,13 +65,13 @@ Then $\xi$ is oriented and nontrivial.
 
 ::: pf-proof
 
-Its structure group is $SO(3)$ by construction, so it is oriented. Under the clutching classification of step <1>1, the trivial bundle corresponds to the null-homotopic clutching map. Since $[g]\ne0$, $\xi$ is not trivial.
+Its structure group is $SO(3)$ by construction, so it is oriented. Under the clutching classification of step [](#s1-1){.pf-ref}, the trivial bundle corresponds to the null-homotopic clutching map. Since $[g]\ne0$, $\xi$ is not trivial.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Euler class of $\xi$ vanishes:
 \[
@@ -108,7 +108,7 @@ The sphere bundle consists of the unit vectors in the fibers of $\xi$. A section
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $S(\xi)$ had a section, then
 \[
@@ -125,7 +125,7 @@ A nowhere-zero section spans a trivial line subbundle. Taking its orthogonal com
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every oriented rank-$2$ bundle over $S^4$ is trivial.
 
@@ -147,25 +147,25 @@ Thus $\eta\cong\varepsilon^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Hence a section would force $\xi$ to be trivial, contradicting step <1>2.
+Hence a section would force $\xi$ to be trivial, contradicting step [](#s1-2){.pf-ref}.
 
 
 ::: pf-proof
 
-By steps <1>5--<1>6,
+By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref},
 \[
 \xi\cong\varepsilon^1\oplus\varepsilon^2
 \cong\varepsilon^3.
 \]
-This contradicts the nontrivial clutching class chosen in step <1>2.
+This contradicts the nontrivial clutching class chosen in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the unit-sphere bundle
 \[
@@ -176,7 +176,7 @@ is orientable, has zero Euler class, and has no section.
 
 ::: pf-proof
 
-The bundle is oriented because its structure group is $SO(3)$; step <1>3 gives zero Euler class; and step <1>7 proves that no section exists.
+The bundle is oriented because its structure group is $SO(3)$; step [](#s1-3){.pf-ref} gives zero Euler class; and step [](#s1-7){.pf-ref} proves that no section exists.
 
 :::
 
@@ -184,7 +184,7 @@ The bundle is oriented because its structure group is $SO(3)$; step <1>3 gives z
 
 ::: pf-qed
 
-Step <1>8 supplies the requested example with all three properties verified.
+Step [](#s1-8){.pf-ref} supplies the requested example with all three properties verified.
 
 :::
 

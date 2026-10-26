@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $b\in K$, one has
 $$
@@ -73,7 +73,7 @@ Thus $P_\chi(b)$ satisfies the defining condition for $V^\chi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The $F$-linear map
 $$
@@ -100,24 +100,24 @@ which is nonzero for every $\sigma$. Hence the displayed linear combination of a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space $V^\chi$ contains a nonzero element.
 
 
 ::: pf-proof
 
-By step <1>2, there exists $b\in K$ with
+By step [](#s1-2){.pf-ref}, there exists $b\in K$ with
 $$
 P_\chi(b)\neq0.
 $$
-By step <1>1, this element lies in $V^\chi$.
+By step [](#s1-1){.pf-ref}, this element lies in $V^\chi$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Any two nonzero elements of $V^\chi$ differ by multiplication by an element of $F^\times$.
 
@@ -141,14 +141,14 @@ Therefore $c/a\in F^\times$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The $F$-vector space $V^\chi$ is one-dimensional.
 
 
 ::: pf-proof
 
-By step <1>3, choose a nonzero $a\in V^\chi$. Step <1>4 shows that every nonzero $c\in V^\chi$ has the form
+By step [](#s1-3){.pf-ref}, choose a nonzero $a\in V^\chi$. Step [](#s1-4){.pf-ref} shows that every nonzero $c\in V^\chi$ has the form
 $$
 c=\lambda a
 $$
@@ -167,7 +167,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 proves the required statement.
+Step [](#s1-5){.pf-ref} proves the required statement.
 
 :::
 

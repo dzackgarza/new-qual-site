@@ -30,7 +30,7 @@ A=T^*T.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the spectral theorem, there are a unitary matrix $U$ and real numbers $\lambda_1,\ldots,\lambda_n$ such that
 $$
@@ -48,7 +48,7 @@ Since $A$ is Hermitian, the spectral theorem for Hermitian matrices gives a unit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every eigenvalue $\lambda_i$ is nonnegative.
 
@@ -68,7 +68,7 @@ The hypothesis therefore implies $\lambda_i\ge0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -87,7 +87,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, the square roots are real and defined. Since $D^{1/2}$ is Hermitian,
+By step [](#s1-2){.pf-ref}, the square roots are real and defined. Since $D^{1/2}$ is Hermitian,
 $$
 T^*=UD^{1/2}.
 $$
@@ -98,7 +98,7 @@ T^*T
 =UDU^*
 =A
 $$
-by step <1>1.
+by step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -106,7 +106,7 @@ by step <1>1.
 
 ::: pf-qed
 
-Step <1>3 constructs the required matrix $T$ and verifies the factorization.
+Step [](#s1-3){.pf-ref} constructs the required matrix $T$ and verifies the factorization.
 
 :::
 

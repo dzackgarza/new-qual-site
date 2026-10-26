@@ -65,7 +65,7 @@ dimension $n-2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 More generally, once
 $$
@@ -94,7 +94,7 @@ The unit sphere in that space has dimension $n-k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the total number of independent parameters is
 $$
@@ -106,13 +106,13 @@ $$
 
 ::: pf-proof
 
-Add the independent choices from step <1>3 for all columns.
+Add the independent choices from step [](#s1-3){.pf-ref} for all columns.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -126,7 +126,7 @@ matrix.
 
 ::: pf-proof
 
-The arithmetic sum in step <1>4 is
+The arithmetic sum in step [](#s1-4){.pf-ref} is
 $$
 \frac{n(n-1)}2.
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the required count.
+Step [](#s1-5){.pf-ref} is the required count.
 
 :::
 

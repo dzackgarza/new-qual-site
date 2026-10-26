@@ -40,7 +40,7 @@ for all $j$, and
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $A$ admits a factorization
 \[
@@ -102,7 +102,7 @@ d_j=\frac{\Delta_j}{\Delta_{j-1}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Hermitian forms defined by $A$ and by $D$ have the same signature.
 
@@ -133,7 +133,7 @@ Therefore $A$ and $D$ have the same inertia, hence the same signature.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The number of negative entries among
 \[
@@ -162,7 +162,7 @@ That is precisely a sign change between consecutive terms of the sequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $q$ be the number of sign changes in
 \[
@@ -182,15 +182,15 @@ and
 
 ::: pf-proof
 
-By step <1>3, exactly $q$ diagonal entries of $D$ are negative.
+By step [](#s1-3){.pf-ref}, exactly $q$ diagonal entries of $D$ are negative.
 Because every $\Delta_j$ is nonzero, every $d_j$ is nonzero, so the remaining $n-q$ diagonal entries are positive.
-Step <1>2 transfers these inertia counts from $D$ to $A$.
+Step [](#s1-2){.pf-ref} transfers these inertia counts from $D$ to $A$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Equivalently, if the signature is defined as
 \[
@@ -208,7 +208,7 @@ where $q$ is the number of sign changes in
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 n_+=n-q,
 \qquad
@@ -227,7 +227,7 @@ Therefore
 
 ::: pf-qed
 
-Steps <1>1--<1>5 prove the rule and its relation to the signs of the leading principal minors.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} prove the rule and its relation to the signs of the leading principal minors.
 
 :::
 

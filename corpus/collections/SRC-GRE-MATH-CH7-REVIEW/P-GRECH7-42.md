@@ -27,7 +27,7 @@ If $M=(-1,3]\cup[7,8)$, what is the Lebesgue measure of $M$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two intervals in $M$ are disjoint and have lengths $4$ and $1$.
 
@@ -48,7 +48,7 @@ They are disjoint because $3<7$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -59,7 +59,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Lebesgue measure is finitely additive on disjoint measurable sets. By step <1>1,
+Lebesgue measure is finitely additive on disjoint measurable sets. By step [](#s1-1){.pf-ref},
 $$
 m(M)=m((-1,3])+m([7,8))=4+1=5.
 $$
@@ -71,7 +71,7 @@ The inclusion or exclusion of interval endpoints does not affect their measure b
 
 ::: pf-qed
 
-Step <1>2 gives the requested measure.
+Step [](#s1-2){.pf-ref} gives the requested measure.
 
 :::
 

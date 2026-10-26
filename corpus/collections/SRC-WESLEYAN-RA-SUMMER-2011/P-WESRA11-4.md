@@ -38,7 +38,7 @@ A_n=\left\{t>0:\mu(S_t)\ge\frac1n\right\}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For distinct \(s,t>0\), the spheres \(S_s\) and \(S_t\) are disjoint.
 
@@ -51,14 +51,14 @@ If \(x\in S_s\cap S_t\), then \(|x|=s\) and \(|x|=t\), hence \(s=t\). Thus disti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every set \(A_n\) is finite.
 
 
 ::: pf-proof
 
-Suppose \(A_n\) were infinite. For any integer \(N\ge1\), choose distinct \(t_1,\dots,t_N\in A_n\). By step <1>1 the Borel sets \(S_{t_1},\dots,S_{t_N}\) are pairwise disjoint, so finite additivity gives
+Suppose \(A_n\) were infinite. For any integer \(N\ge1\), choose distinct \(t_1,\dots,t_N\in A_n\). By step [](#s1-1){.pf-ref} the Borel sets \(S_{t_1},\dots,S_{t_N}\) are pairwise disjoint, so finite additivity gives
 \[
 \mu(\mathbb R^d)
 \ge
@@ -72,7 +72,7 @@ Since \(\mu(\mathbb R^d)<\infty\), this is impossible for arbitrarily large \(N\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -88,14 +88,14 @@ Every \(A_n\) is contained in \(A\). Conversely, if \(t\in A\), then \(\mu(S_t)>
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore \(\boxed{A\text{ is at most countable}}\).
 
 
 ::: pf-proof
 
-By step <1>2 each \(A_n\) is finite, and by step <1>3 the set \(A\) is a countable union of these finite sets.
+By step [](#s1-2){.pf-ref} each \(A_n\) is finite, and by step [](#s1-3){.pf-ref} the set \(A\) is a countable union of these finite sets.
 
 :::
 
@@ -103,7 +103,7 @@ By step <1>2 each \(A_n\) is finite, and by step <1>3 the set \(A\) is a countab
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

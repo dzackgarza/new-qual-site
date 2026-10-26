@@ -37,7 +37,7 @@ Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\mathbb R)$, for examp
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $R>0$, the matrix series
 \[
@@ -70,7 +70,7 @@ converges. The Weierstrass $M$-test therefore gives uniform convergence of the m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $R>0$, the series obtained by differentiating each term,
 \[
@@ -103,7 +103,7 @@ so the Weierstrass $M$-test again gives uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $E:\mathbb R\to M_n(\mathbb R)$ is differentiable and may be differentiated term by term:
 \[
@@ -118,13 +118,13 @@ E'(t)
 
 Apply the standard termwise-differentiation theorem for series of $C^1$ functions on a compact interval: if the derivative series converges uniformly and the original series converges at one point, then the original series converges to a differentiable function whose derivative is the sum of the derivative series.
 
-For each fixed $R$, step <1>2 gives uniform convergence of the derivative series on $[-R,R]$, and at $t=0$ the original series converges trivially to $I$. Applying the theorem entrywise gives the displayed derivative on $[-R,R]$. Since $R$ is arbitrary, the formula holds for every real $t$.
+For each fixed $R$, step [](#s1-2){.pf-ref} gives uniform convergence of the derivative series on $[-R,R]$, and at $t=0$ the original series converges trivially to $I$. Applying the theorem entrywise gives the displayed derivative on $[-R,R]$. Since $R$ is arbitrary, the formula holds for every real $t$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -134,7 +134,7 @@ One has
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 E'(t)
@@ -155,7 +155,7 @@ where $j=k-1$. Multiplication by the fixed matrix $A$ may be pulled through the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function
 \[
@@ -177,7 +177,7 @@ Hence
 \[
 v'(t)=E'(t)v_0.
 \]
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 \[
 v'(t)
 =
@@ -190,7 +190,7 @@ Av(t).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -233,7 +233,7 @@ v(0)=v_0.
 
 ::: pf-proof
 
-Step <1>5 proves the differential equation and step <1>6 proves the initial condition.
+Step [](#s1-5){.pf-ref} proves the differential equation and step [](#s1-6){.pf-ref} proves the initial condition.
 
 :::
 
@@ -241,7 +241,7 @@ Step <1>5 proves the differential equation and step <1>6 proves the initial cond
 
 ::: pf-qed
 
-The calculus inputs used are the Weierstrass $M$-test and the termwise-differentiation theorem for uniformly convergent derivative series, with their hypotheses verified in steps <1>1--<1>3.
+The calculus inputs used are the Weierstrass $M$-test and the termwise-differentiation theorem for uniformly convergent derivative series, with their hypotheses verified in steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 

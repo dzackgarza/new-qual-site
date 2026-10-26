@@ -26,7 +26,7 @@ d_n=|a_n-a_{n-1}|.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hypothesis is
 \[
@@ -44,7 +44,7 @@ This is exactly the given inequality written in terms of \(d_n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(n\ge1\),
 \[
@@ -60,7 +60,7 @@ Use induction.
 
 For \(n=1\), the statement is equality.
 
-If it holds for \(n\), then by step <1>1,
+If it holds for \(n\), then by step [](#s1-1){.pf-ref},
 \[
 d_{n+1}
 \le
@@ -76,7 +76,7 @@ d_{n+1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let \(m>n\). Then
 \[
@@ -100,7 +100,7 @@ a_m-a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -112,7 +112,7 @@ Hence
 
 ::: pf-proof
 
-Apply the triangle inequality to step <1>3.
+Apply the triangle inequality to step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -120,7 +120,7 @@ Apply the triangle inequality to step <1>3.
 
 ::: pf-step
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 |a_m-a_n|
 \le
@@ -132,13 +132,13 @@ d_1
 
 ::: pf-proof
 
-Bound each \(d_k\) in step <1>4 by the geometric estimate from step <1>2.
+Bound each \(d_k\) in step [](#s1-4){.pf-ref} by the geometric estimate from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Extending the finite sum to an infinite geometric tail,
 \[
@@ -158,7 +158,7 @@ All terms are nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The geometric tail is
 \[
@@ -185,7 +185,7 @@ Set \(j=k-1\):
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore, for every \(m>n\),
 \[
@@ -198,7 +198,7 @@ d_1\,2^{1-n}}.
 
 ::: pf-proof
 
-Combine steps <1>6--<1>7.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -228,7 +228,7 @@ such \(N\) exists. If \(d_1=0\), any \(N\) works.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Then for all
 \[
@@ -243,7 +243,7 @@ one has
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 |a_m-a_n|
 \le
@@ -265,13 +265,13 @@ Thus \((a_n)\) is a Cauchy sequence.
 
 ::: pf-proof
 
-Step <1>10 is exactly the Cauchy criterion.
+Step [](#s1-10){.pf-ref} is exactly the Cauchy criterion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since \(\mathbb R\) is complete,
 \[
@@ -290,7 +290,7 @@ Every Cauchy sequence of real numbers converges.
 
 ::: pf-qed
 
-Step <1>12 is the required conclusion.
+Step [](#s1-12){.pf-ref} is the required conclusion.
 
 :::
 

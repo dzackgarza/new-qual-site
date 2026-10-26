@@ -45,7 +45,7 @@ is undefined there. For $\alpha=0$, the normalized integral equals $1$, which is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -86,7 +86,7 @@ which is the stated formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\psi_\alpha$ is a conformal automorphism of $\DD$.
 
@@ -103,7 +103,7 @@ is the standard Blaschke automorphism interchanging $0$ and $\alpha$. Direct cal
 $$
 \psi_\alpha(\psi_\alpha(z))=z,
 $$
-so it is bijective with holomorphic inverse equal to itself. By step <1>1,
+so it is bijective with holomorphic inverse equal to itself. By step [](#s1-1){.pf-ref},
 $$
 \psi_\alpha'(z)\ne0
 $$
@@ -113,7 +113,7 @@ on $\DD$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -134,7 +134,7 @@ J_{\psi_\alpha}(z)
 =
 \abs{\psi_\alpha'(z)}^2.
 $$
-By step <1>2, $\psi_\alpha$ is a conformal bijection of $\DD$ onto itself. The change-of-variables formula therefore gives
+By step [](#s1-2){.pf-ref}, $\psi_\alpha$ is a conformal bijection of $\DD$ onto itself. The change-of-variables formula therefore gives
 $$
 \iint_{\DD}
 \abs{\psi_\alpha'(z)}^2\,dA(z)
@@ -151,7 +151,7 @@ Dividing by $\pi$ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Put
 $$
@@ -200,7 +200,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $0<\abs{\alpha}<1$, then
 $$
@@ -217,14 +217,14 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \abs{\psi_\alpha'(z)}
 =
 \frac{1-r^2}
 {\abs{1-\overline\alpha z}^2}.
 $$
-Using polar coordinates and step <1>4,
+Using polar coordinates and step [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
 \frac1\pi
@@ -261,7 +261,7 @@ Replacing $r$ by $\abs\alpha$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\alpha=0$, then
 $$
@@ -297,7 +297,7 @@ $$
 \log\frac1{1-r^2}
 =1,
 $$
-so this is precisely the continuous extension of the formula in step <1>5.
+so this is precisely the continuous extension of the formula in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -305,7 +305,7 @@ so this is precisely the continuous extension of the formula in step <1>5.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), while steps <1>5--<1>6 prove part (b), including the source's omitted $\alpha=0$ interpretation.
+Step [](#s1-3){.pf-ref} proves part (a), while steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b), including the source's omitted $\alpha=0$ interpretation.
 
 :::
 

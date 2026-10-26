@@ -60,7 +60,7 @@ and the basepoints of \(S^2_+\) and \(S^2_-\) both map to the wedgepoint of the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Away from the wedgepoint \(x_0\), the map \(p\) is locally a two-sheeted covering.
 
@@ -77,7 +77,7 @@ On the \(S^2\)-summand away from its basepoint, there are exactly two disjoint c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map \(p\) is also evenly covered near the wedgepoint.
 
@@ -118,7 +118,7 @@ where \(U_S^\pm\) are the corresponding disk neighborhoods in \(S^2_\pm\). Each 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -131,13 +131,13 @@ is a connected two-sheeted covering.
 
 ::: pf-proof
 
-Steps <1>2--<1>3 establish the covering property. The space \(\widetilde X\) is connected because all three spheres are attached to the connected sphere \(S^2_0\).
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} establish the covering property. The space \(\widetilde X\) is connected because all three spheres are attached to the connected sphere \(S^2_0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space \(\widetilde X\) is simply connected.
 
@@ -150,14 +150,14 @@ Each of the three spheres is simply connected. Attach \(S^2_+\) to \(S^2_0\) at 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence \(p\) is the universal covering map.
 
 
 ::: pf-proof
 
-A connected covering space is universal exactly when its total space is simply connected. Apply steps <1>4--<1>5.
+A connected covering space is universal exactly when its total space is simply connected. Apply steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -219,7 +219,7 @@ Reduced homology is invariant under homotopy equivalence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For the wedge of three \(2\)-spheres,
 \[
@@ -243,7 +243,7 @@ Reduced homology of a wedge of pointed CW complexes is the direct sum of the red
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For \(k\ne2\),
 \[
@@ -260,7 +260,7 @@ Each \(S^2\) has reduced homology only in degree \(2\), and reduced homology of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since \(\widetilde X\) is connected,
 \[
@@ -277,7 +277,7 @@ Every nonempty connected space has zeroth homology \(\mathbb Z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus
 \[
@@ -294,7 +294,7 @@ H_k(\widetilde X;\mathbb Z)
 
 ::: pf-proof
 
-Combine steps <1>10--<1>12.
+Combine steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref}.
 
 :::
 
@@ -302,7 +302,7 @@ Combine steps <1>10--<1>12.
 
 ::: pf-qed
 
-Step <1>6 identifies the universal cover, and step <1>13 computes all of its homology groups.
+Step [](#s1-6){.pf-ref} identifies the universal cover, and step [](#s1-13){.pf-ref} computes all of its homology groups.
 
 :::
 

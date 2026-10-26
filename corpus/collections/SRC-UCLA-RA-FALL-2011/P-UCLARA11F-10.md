@@ -91,7 +91,7 @@ This is the standard disk automorphism carrying \(w_1\) to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -144,7 +144,7 @@ Since \(\psi(w_1)=0\), one must have \(\psi(w_2)\ne0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The point \(a\) is also fixed by \(G\):
 \[
@@ -185,7 +185,7 @@ for every \(\zeta\in\mathbb D\).
 
 ::: pf-proof
 
-The map \(G:\mathbb D\to\mathbb D\) is holomorphic and fixes \(0\) by step <1>3.
+The map \(G:\mathbb D\to\mathbb D\) is holomorphic and fixes \(0\) by step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -201,7 +201,7 @@ At the nonzero point \(a\),
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 G(a)=a.
 \]
@@ -210,7 +210,7 @@ G(a)=a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Equality in Schwarz's lemma at the nonzero point \(a\) implies
 \[
@@ -232,7 +232,7 @@ at some nonzero \(a\in\mathbb D\), then \(G\) is a rotation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since \(G(a)=a\) and \(a\ne0\),
 \[
@@ -242,7 +242,7 @@ Since \(G(a)=a\) and \(a\ne0\),
 
 ::: pf-proof
 
-From step <1>8,
+From step [](#s1-8){.pf-ref},
 \[
 a=G(a)=e^{i\theta}a.
 \]
@@ -263,17 +263,17 @@ G=\operatorname{id}_{\mathbb D}}.
 
 ::: pf-proof
 
-Step <1>8 becomes
+Step [](#s1-8){.pf-ref} becomes
 \[
 G(\zeta)=\zeta
 \]
-after step <1>9.
+after step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -293,7 +293,7 @@ Conjugating the identity map by \(\psi\) gives the identity map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Finally,
 \[
@@ -307,13 +307,13 @@ f
 
 ::: pf-proof
 
-Use step <1>11 and the definition of \(F\).
+Use step [](#s1-11){.pf-ref} and the definition of \(F\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Thus
 \[
@@ -325,7 +325,7 @@ f(z)=z
 
 ::: pf-proof
 
-This is step <1>12.
+This is step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -333,7 +333,7 @@ This is step <1>12.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

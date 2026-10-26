@@ -28,7 +28,7 @@ Consider
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The radius of convergence is
 \[
@@ -75,7 +75,7 @@ and diverges for
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At the left endpoint
 \[
@@ -103,7 +103,7 @@ convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At the right endpoint
 \[
@@ -125,7 +125,7 @@ This is the harmonic series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -138,7 +138,7 @@ the series diverges.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |x-3|>1.
 \]
@@ -159,7 +159,7 @@ Therefore the necessary term test fails.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the exact interval of convergence is
 \[
@@ -171,7 +171,7 @@ Hence the exact interval of convergence is
 
 ::: pf-proof
 
-Steps <1>1--<1>4 show:
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} show:
 
 - convergence for every
   \[
@@ -201,7 +201,7 @@ Thus the convergence set is exactly
 
 ::: pf-qed
 
-Step <1>5 gives the required example and proof.
+Step [](#s1-5){.pf-ref} gives the required example and proof.
 
 :::
 

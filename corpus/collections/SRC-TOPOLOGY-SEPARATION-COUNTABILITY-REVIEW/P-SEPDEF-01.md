@@ -25,7 +25,7 @@ Prove that a topological space $X$ is regular if and only if $X$ is $T_1$ and, f
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose $X$ is regular. Then $X$ is $T_1$, and for every $x\in U$ with $U$ open there is an open set $V$ containing $x$ such that
 $$
@@ -59,7 +59,7 @@ Therefore $\overline V\subseteq U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, suppose $X$ is $T_1$ and has the stated closure-neighborhood property. Then $X$ is regular.
 
@@ -88,7 +88,7 @@ Then $W$ is open. Since $\overline V\subseteq X\setminus F$, one has $F\subseteq
 
 ::: pf-qed
 
-Step <1>1 proves the forward implication, and step <1>2 proves the converse.
+Step [](#s1-1){.pf-ref} proves the forward implication, and step [](#s1-2){.pf-ref} proves the converse.
 
 :::
 

@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In spherical coordinates,
 $$
@@ -97,7 +97,7 @@ leaves the radial factor $\alpha e^{-\mu r}r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polar-angle integral is
 $$
@@ -136,7 +136,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, for $k>0$,
 $$
@@ -151,14 +151,14 @@ $$
 
 ::: pf-proof
 
-The $\varphi$-integral gives $2\pi$. Substitute step <1>3 into step <1>2;
+The $\varphi$-integral gives $2\pi$. Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref};
 the factor $r$ cancels with the $r$ in $kr$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The remaining integral is
 $$
@@ -201,13 +201,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>5 into step <1>4 and cancel the factor $k$.
+Substitute step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref} and cancel the factor $k$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Simplifying the normalization gives
 $$
@@ -237,7 +237,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The same formula holds at $k=0$ by continuity.
 
@@ -265,7 +265,7 @@ which is the same value.
 
 ::: pf-qed
 
-Steps <1>7--<1>8 give the Fourier image for all $\vec k\in\mathbb R^3$.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the Fourier image for all $\vec k\in\mathbb R^3$.
 
 :::
 

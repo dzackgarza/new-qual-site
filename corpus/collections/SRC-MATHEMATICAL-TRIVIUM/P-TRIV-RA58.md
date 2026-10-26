@@ -51,7 +51,7 @@ The ant reaches the car exactly when $u(t)=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Uniform stretching of the cord carries the ant with velocity
 $$
@@ -69,7 +69,7 @@ $u$ fixed and differentiating gives stretching velocity $uL'(t)=uV$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -80,13 +80,13 @@ $$
 ::: pf-proof
 
 The ant's velocity relative to the ground is the sum of the local stretching
-velocity from step <1>2 and its velocity $v$ relative to the cord.
+velocity from step [](#s1-2){.pf-ref} and its velocity $v$ relative to the cord.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Differentiating
 $$
@@ -108,7 +108,7 @@ Apply the product rule and use $L'(t)=V$.
 
 ::: pf-step
 
-Comparing steps <1>3--<1>4 yields
+Comparing steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} yields
 $$
 u'(t)=\frac{v}{L_0+Vt}.
 $$
@@ -126,7 +126,7 @@ Substitute $L(t)=L_0+Vt$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Integrating from $0$ to $t$ gives
 $$
@@ -160,7 +160,7 @@ This simplifies to the displayed expression.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -171,13 +171,13 @@ as $t\to\infty$.
 
 ::: pf-proof
 
-The logarithm in step <1>6 tends to infinity, and $v/V>0$.
+The logarithm in step [](#s1-6){.pf-ref} tends to infinity, and $v/V>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence there is a finite time $t_*$ at which
 $$
@@ -188,14 +188,14 @@ $$
 ::: pf-proof
 
 The function $u$ is continuous, satisfies $u(0)=0$, and tends to infinity by
-step <1>7. The Intermediate Value Theorem therefore gives a finite point where
+step [](#s1-7){.pf-ref}. The Intermediate Value Theorem therefore gives a finite point where
 $u=1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Solving for that time gives
 $$
@@ -212,7 +212,7 @@ $$
 
 ::: pf-proof
 
-Set $u(t_*)=1$ in step <1>6:
+Set $u(t_*)=1$ in step [](#s1-6){.pf-ref}:
 $$
 1
 =
@@ -235,14 +235,14 @@ Exponentiate and solve for $t_*$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the ant does reach the car.
 
 
 ::: pf-proof
 
-Step <1>8 proves eventual arrival. The numerical speeds
+Step [](#s1-8){.pf-ref} proves eventual arrival. The numerical speeds
 $$
 V=10\,\mathrm{m/s},
 \qquad
@@ -252,7 +252,7 @@ make
 $$
 \frac Vv=100,
 $$
-so the time in step <1>9 is enormous but finite.
+so the time in step [](#s1-9){.pf-ref} is enormous but finite.
 
 :::
 
@@ -260,7 +260,7 @@ so the time in step <1>9 is enormous but finite.
 
 ::: pf-qed
 
-Step <1>10 answers the question.
+Step [](#s1-10){.pf-ref} answers the question.
 
 :::
 

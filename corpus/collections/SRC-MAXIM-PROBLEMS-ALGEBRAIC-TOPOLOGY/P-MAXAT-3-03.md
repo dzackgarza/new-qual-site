@@ -30,7 +30,7 @@ f(x)=f(-x).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that
 \[
@@ -63,7 +63,7 @@ g(-x)=-g(x).
 
 ::: pf-proof
 
-The denominator is nonzero by step <1>1, so the normalization is defined and continuous. Moreover,
+The denominator is nonzero by step [](#s1-1){.pf-ref}, so the normalization is defined and continuous. Moreover,
 \[
 g(-x)
 =\frac{f(-x)-f(x)}{\|f(-x)-f(x)\|}
@@ -74,7 +74,7 @@ g(-x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Because $g$ is odd, it descends to a continuous map
 \[
@@ -99,7 +99,7 @@ is well-defined and continuous on the quotient.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -115,13 +115,13 @@ are the standard generators, then
 
 ::: pf-proof
 
-The double covers $S^n\to\mathbb{RP}^n$ and $S^{n-1}\to\mathbb{RP}^{n-1}$ are classified by the nonzero classes $a$ and $b$ in $H^1(-;\mathbb F_2)$. The commutative square in step <1>3 is a map of these double covers, so the pullback of the target cover along $\bar g$ is the source antipodal cover. Therefore their classifying classes satisfy $\bar g^*(b)=a$. Equivalently, for $n\ge2$, the induced map on fundamental groups sends the nontrivial antipodal loop to the nontrivial antipodal loop; the $n=1$ case is immediate separately.
+The double covers $S^n\to\mathbb{RP}^n$ and $S^{n-1}\to\mathbb{RP}^{n-1}$ are classified by the nonzero classes $a$ and $b$ in $H^1(-;\mathbb F_2)$. The commutative square in step [](#s1-3){.pf-ref} is a map of these double covers, so the pullback of the target cover along $\bar g$ is the source antipodal cover. Therefore their classifying classes satisfy $\bar g^*(b)=a$. Equivalently, for $n\ge2$, the induced map on fundamental groups sends the nontrivial antipodal loop to the nontrivial antipodal loop; the $n=1$ case is immediate separately.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -131,7 +131,7 @@ Hence
 
 ::: pf-proof
 
-Cohomology pullback is a ring homomorphism, so by step <1>4,
+Cohomology pullback is a ring homomorphism, so by step [](#s1-4){.pf-ref},
 \[
 \bar g^*(b^n)=(\bar g^*b)^n=a^n.
 \]
@@ -140,7 +140,7 @@ Cohomology pullback is a ring homomorphism, so by step <1>4,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In the target,
 \[
@@ -170,9 +170,9 @@ Thus $b^n$ vanishes by the target truncation, whereas $a^n$ is the nonzero top-d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Steps <1>5--<1>6 give a contradiction.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give a contradiction.
 
 
 ::: pf-proof
@@ -181,13 +181,13 @@ Since $b^n=0$, functoriality gives
 \[
 0=\bar g^*(b^n).
 \]
-But step <1>5 identifies this class with $a^n$, which is nonzero by step <1>6.
+But step [](#s1-5){.pf-ref} identifies this class with $a^n$, which is nonzero by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore there exists $x\in S^n$ such that
 \[
@@ -197,7 +197,7 @@ Therefore there exists $x\in S^n$ such that
 
 ::: pf-proof
 
-The contradiction in step <1>7 disproves the assumption in step <1>1, leaving exactly the Borsuk--Ulam conclusion.
+The contradiction in step [](#s1-7){.pf-ref} disproves the assumption in step [](#s1-1){.pf-ref}, leaving exactly the Borsuk--Ulam conclusion.
 
 :::
 
@@ -205,7 +205,7 @@ The contradiction in step <1>7 disproves the assumption in step <1>1, leaving ex
 
 ::: pf-qed
 
-Step <1>8 proves the theorem.
+Step [](#s1-8){.pf-ref} proves the theorem.
 
 :::
 

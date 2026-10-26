@@ -30,7 +30,7 @@ The particle moves left with probability $p$ and right with probability $q=1-p$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The probability $\beta(x)$ of eventual absorption at $B$ satisfies
 \[
@@ -50,7 +50,7 @@ Condition on the first step from an interior point. The walk moves to $x-1$ with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $p\ne q$, then
 \[
@@ -64,7 +64,7 @@ If $p\ne q$, then
 
 ::: pf-proof
 
-The characteristic equation of the recurrence in step <1>1 is
+The characteristic equation of the recurrence in step [](#s1-1){.pf-ref} is
 \[
 qr^2-r+p=0,
 \]
@@ -78,7 +78,7 @@ The boundary conditions give $C+D=0$ and $C+D(p/q)^N=1$, yielding the formula. S
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $p=q=1/2$, then
 \[
@@ -96,7 +96,7 @@ The recurrence becomes $2\beta(x)=\beta(x-1)+\beta(x+1)$, so the second finite d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The mean absorption time satisfies
 \[
@@ -114,7 +114,7 @@ From an interior point, one step is spent immediately and the expected remaining
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $p\ne q$, then
 \[
@@ -128,11 +128,11 @@ m(x)=
 
 ::: pf-proof
 
-A particular solution of step <1>4 is $(x-A)/(p-q)$, because substituting a linear function $cx$ into
+A particular solution of step [](#s1-4){.pf-ref} is $(x-A)/(p-q)$, because substituting a linear function $cx$ into
 \[
 m-pm(x-1)-qm(x+1)=1
 \]
-gives $c(p-q)=1$. The homogeneous solutions are $1$ and $(p/q)^{x-A}$ as in step <1>2. Thus
+gives $c(p-q)=1$. The homogeneous solutions are $1$ and $(p/q)^{x-A}$ as in step [](#s1-2){.pf-ref}. Thus
 \[
 m(x)=\frac{x-A}{p-q}+C+D(p/q)^{x-A}.
 \]
@@ -142,7 +142,7 @@ Imposing $m(A)=m(B)=0$ and solving for $C,D$ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $p=q=1/2$, then
 \[
@@ -152,7 +152,7 @@ If $p=q=1/2$, then
 
 ::: pf-proof
 
-Step <1>4 becomes
+Step [](#s1-4){.pf-ref} becomes
 \[
 m(x+1)-2m(x)+m(x-1)=-2.
 \]
@@ -162,7 +162,7 @@ Hence $m$ is a quadratic polynomial with leading coefficient $-1$. The zeros at 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular, if $A=-B$, $x=0$, and $p=q=1/2$, then
 \[
@@ -172,7 +172,7 @@ In particular, if $A=-B$, $x=0$, and $p=q=1/2$, then
 
 ::: pf-proof
 
-Substitute $A=-B$ and $x=0$ into step <1>6:
+Substitute $A=-B$ and $x=0$ into step [](#s1-6){.pf-ref}:
 \[
 m(0)=(0+B)(B-0)=B^2.
 \]
@@ -183,7 +183,7 @@ m(0)=(0+B)(B-0)=B^2.
 
 ::: pf-qed
 
-Steps <1>2--<1>3 give the absorption probabilities, and steps <1>5--<1>7 give the mean absorption time and the requested symmetric check.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the absorption probabilities, and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} give the mean absorption time and the requested symmetric check.
 
 :::
 

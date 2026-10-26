@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume now that
 $$
@@ -139,7 +139,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Conversely, if
 $$
@@ -168,7 +168,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the assumption
 $$
@@ -186,13 +186,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Under the same assumption,
 $$
@@ -215,7 +215,7 @@ is proper,
 $$
 1\notin P.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \frac11
 \notin
@@ -232,7 +232,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -266,7 +266,7 @@ one has
 $$
 st\in S.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \frac{ab}{st}
 \in
@@ -281,9 +281,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Under the assumptions of step <1>6,
+Under the assumptions of step [](#s1-6){.pf-ref},
 $$
 a\in P
 \quad\text{or}\quad
@@ -293,7 +293,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 $$
 ab\in P.
 $$
@@ -312,7 +312,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -328,13 +328,13 @@ $$
 
 ::: pf-proof
 
-Apply step <1>4 to the conclusion of step <1>7.
+Apply step [](#s1-4){.pf-ref} to the conclusion of step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence, if
 $$
@@ -351,14 +351,14 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives properness.
-Steps <1>6--<1>8 give the prime-product condition.
+Step [](#s1-5){.pf-ref} gives properness.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give the prime-product condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently,
 $$
@@ -375,12 +375,12 @@ If
 $$
 P\cap S\ne\varnothing,
 $$
-step <1>1 gives the whole ring.
+step [](#s1-1){.pf-ref} gives the whole ring.
 If
 $$
 P\cap S=\varnothing,
 $$
-step <1>9 gives a prime ideal.
+step [](#s1-9){.pf-ref} gives a prime ideal.
 These are the two exhaustive cases.
 
 :::
@@ -389,7 +389,7 @@ These are the two exhaustive cases.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

@@ -35,7 +35,7 @@ for every $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The almost-everywhere limit $f$ belongs to $L^2(\RR^3)$.
 
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(f_n)$ converges weakly to $f$ in $L^2(\RR^3)$.
 
@@ -68,7 +68,7 @@ This is exactly the result of `P-UCLARA12F-01` applied with $p=2$: an almost-eve
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n$,
 $$
@@ -91,7 +91,7 @@ Rearranging gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -104,13 +104,13 @@ $$
 
 ::: pf-proof
 
-By steps <1>1 and <1>3,
+By steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref},
 $$
 \int_{\RR^3}
 \left(|f_n|^2-|f_n-f|^2-|f|^2\right)
 =2\int_{\RR^3}f(f_n-f).
 $$
-Since $f\in L^2$, it is an admissible test function for weak convergence. Step <1>2 therefore gives
+Since $f\in L^2$, it is an admissible test function for weak convergence. Step [](#s1-2){.pf-ref} therefore gives
 $$
 \int f f_n\to\int f^2,
 $$
@@ -122,7 +122,7 @@ so the right-hand side tends to $0$.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

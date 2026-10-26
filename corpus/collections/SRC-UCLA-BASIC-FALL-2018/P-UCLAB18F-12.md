@@ -29,7 +29,7 @@ n=\dim V.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $n\le1$, then $T$ is a scalar multiple of the identity.
 
@@ -43,7 +43,7 @@ If $n=1$, every endomorphism is multiplication by a scalar.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $n\ge2$.
 For every nonzero $v\in V$,
@@ -97,7 +97,7 @@ Hence the intersection is exactly $\operatorname{span}\{v\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every one-dimensional subspace of $V$ is invariant under $T$.
 
@@ -127,7 +127,7 @@ Tv
 \in
 \bigcap_{\substack{W\subset V\\ \dim W=n-1\\ v\in W}}W.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 Tv\in\operatorname{span}\{v\}.
 \]
@@ -137,14 +137,14 @@ Thus the line spanned by $v$ is invariant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every nonzero vector is an eigenvector of $T$.
 
 
 ::: pf-proof
 
-By step <1>3, for each nonzero $v$ there exists a scalar $\lambda_v$ such that
+By step [](#s1-3){.pf-ref}, for each nonzero $v$ there exists a scalar $\lambda_v$ such that
 \[
 Tv=\lambda_vv.
 \]
@@ -153,7 +153,7 @@ Tv=\lambda_vv.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $u,v$ are linearly independent, then
 \[
@@ -163,7 +163,7 @@ If $u,v$ are linearly independent, then
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 Tu=\lambda_uu,
 \qquad
@@ -173,7 +173,7 @@ The vector
 \[
 u+v
 \]
-is nonzero, so step <1>4 also gives
+is nonzero, so step [](#s1-4){.pf-ref} also gives
 \[
 T(u+v)=\lambda_{u+v}(u+v).
 \]
@@ -192,7 +192,7 @@ Since $u$ and $v$ are linearly independent,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There is a single scalar $\lambda$ such that
 \[
@@ -212,7 +212,7 @@ and set
 \lambda=\lambda_u.
 \]
 Let $v\ne0$.
-If $v$ is linearly independent of $u$, step <1>5 gives
+If $v$ is linearly independent of $u$, step [](#s1-5){.pf-ref} gives
 \[
 \lambda_v=\lambda.
 \]
@@ -233,7 +233,7 @@ T0=\lambda0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -243,7 +243,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>6 says that $T$ and $\lambda I$ agree on every vector of $V$.
+Step [](#s1-6){.pf-ref} says that $T$ and $\lambda I$ agree on every vector of $V$.
 
 :::
 
@@ -251,7 +251,7 @@ Step <1>6 says that $T$ and $\lambda I$ agree on every vector of $V$.
 
 ::: pf-qed
 
-Step <1>1 handles dimensions at most one, and steps <1>2--<1>7 prove the result for $n\ge2$.
+Step [](#s1-1){.pf-ref} handles dimensions at most one, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the result for $n\ge2$.
 
 :::
 

@@ -44,7 +44,7 @@ I(S)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $I(S)$ is an ideal of $C(X)$.
 
@@ -103,7 +103,7 @@ Therefore $I(S)$ is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -159,7 +159,7 @@ f\in I(\overline S).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -189,7 +189,7 @@ f\in I(S_1).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix
 \[
@@ -246,7 +246,7 @@ Hence evaluation is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The kernel of $\operatorname{ev}_p$ is
 \[
@@ -271,7 +271,7 @@ f\in I(\{p\}).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every topological space $X$ and every $p\in X$,
 \[
@@ -284,7 +284,7 @@ I(\{p\})
 
 ::: pf-proof
 
-By steps <1>4--<1>5 and the first isomorphism theorem,
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} and the first isomorphism theorem,
 \[
 C(X)/I(\{p\})
 \cong
@@ -304,7 +304,7 @@ part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Now assume $X$ is compact Hausdorff, and let
 \[
@@ -350,7 +350,7 @@ Since each zero set $Z(f)$ is closed, its complement is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There exist finitely many functions
 \[
@@ -366,7 +366,7 @@ such that
 
 ::: pf-proof
 
-By step <1>7, the open family
+By step [](#s1-7){.pf-ref}, the open family
 \[
 \{X\setminus Z(f):f\in I\}
 \]
@@ -390,7 +390,7 @@ Taking complements gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define
 \[
@@ -429,7 +429,7 @@ For every
 \[
 x\in X,
 \]
-step <1>8 says that not all
+step [](#s1-8){.pf-ref} says that not all
 \[
 f_j(x)
 \]
@@ -446,9 +446,9 @@ g(x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-The function $g$ from step <1>9 is a unit in $C(X)$.
+The function $g$ from step [](#s1-9){.pf-ref} is a unit in $C(X)$.
 
 
 ::: pf-proof
@@ -478,18 +478,18 @@ Thus $g$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-The assumption in step <1>7 is impossible.
+The assumption in step [](#s1-7){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 g\in I.
 \]
-By step <1>10, there is
+By step [](#s1-10){.pf-ref}, there is
 \[
 h\in C(X)
 \]
@@ -511,7 +511,7 @@ contradicting that a maximal ideal is proper.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore there exists
 \[
@@ -531,7 +531,7 @@ I\subseteq I(\{p\}).
 
 ::: pf-proof
 
-Step <1>11 shows
+Step [](#s1-11){.pf-ref} shows
 \[
 \bigcap_{f\in I}Z(f)
 \ne
@@ -547,7 +547,7 @@ in this intersection. Then every $f\in I$ vanishes at $p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 One has
 \[
@@ -559,11 +559,11 @@ I=I(\{p\}).
 
 ::: pf-proof
 
-By step <1>12,
+By step [](#s1-12){.pf-ref},
 \[
 I\subseteq I(\{p\}).
 \]
-Step <1>6 says
+Step [](#s1-6){.pf-ref} says
 \[
 I(\{p\})
 \]
@@ -574,7 +574,7 @@ the inclusion forces equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Thus, for compact Hausdorff $X$, the maximal ideals of $C(X)$ are
 exactly the point-evaluation ideals
@@ -591,7 +591,7 @@ p\in X.
 
 ::: pf-proof
 
-Step <1>6 shows every point-evaluation ideal is maximal, and step <1>13
+Step [](#s1-6){.pf-ref} shows every point-evaluation ideal is maximal, and step [](#s1-13){.pf-ref}
 shows every maximal ideal is of this form.
 
 :::
@@ -600,8 +600,8 @@ shows every maximal ideal is of this form.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (1), steps <1>4--<1>6 prove part (2), and
-steps <1>7--<1>14 prove part (3).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (1), steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} prove part (2), and
+steps [](#s1-7){.pf-ref} through [](#s1-14){.pf-ref} prove part (3).
 
 :::
 

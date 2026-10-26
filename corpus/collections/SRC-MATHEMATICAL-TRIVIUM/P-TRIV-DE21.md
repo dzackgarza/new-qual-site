@@ -65,7 +65,7 @@ E_0(g)=\sum_{n=0}^{\infty}a_n\lambda^n,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 After substituting $\psi=e^{-x^2/2}S$, the Schrodinger equation becomes
 \[
@@ -89,7 +89,7 @@ Substitution into the differential equation cancels the $x^2S/2$ terms. Since $g
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq1$,
 \[
@@ -101,7 +101,7 @@ For every $n\geq1$,
 
 ::: pf-proof
 
-The coefficient of $\lambda^n$ in step <1>1 is
+The coefficient of $\lambda^n$ in step [](#s1-1){.pf-ref} is
 \[
 -\frac12B_n''+xB_n'+\frac12B_n+x^4B_{n-1}
 =\sum_{k=0}^{n}a_kB_{n-k}.
@@ -112,13 +112,13 @@ Since $a_0=1/2$, the terms $B_n/2$ cancel, giving the recurrence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under
 \[
 B_n(x)=(-1)^n\sum_{j=1}^{2n}B_{n,j}x^{2j},
 \]
-the constant coefficient in step <1>2 gives
+the constant coefficient in step [](#s1-2){.pf-ref} gives
 \[
 \boxed{a_n=(-1)^{n+1}B_{n,1}}.
 \]
@@ -126,13 +126,13 @@ the constant coefficient in step <1>2 gives
 
 ::: pf-proof
 
-The only constant term on the left side of step <1>2 is produced by $-B_n''/2$ from the $x^2$ term of $B_n$, and it equals $(-1)^{n+1}B_{n,1}$. On the right, the only constant term is $a_nB_0=a_n$, because every $B_k$ with $k\geq1$ has zero constant term.
+The only constant term on the left side of step [](#s1-2){.pf-ref} is produced by $-B_n''/2$ from the $x^2$ term of $B_n$, and it equals $(-1)^{n+1}B_{n,1}$. On the right, the only constant term is $a_nB_0=a_n$, because every $B_k$ with $k\geq1$ has zero constant term.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $j\geq1$, comparison of the coefficient of $x^{2j}$ gives
 \[
@@ -145,7 +145,7 @@ where coefficients outside their natural index ranges are zero.
 
 ::: pf-proof
 
-In step <1>2, the coefficient of $x^{2j}$ on the left is
+In step [](#s1-2){.pf-ref}, the coefficient of $x^{2j}$ on the left is
 \[
 (-1)^n\left(2jB_{n,j}-(j+1)(2j+1)B_{n,j+1}\right).
 \]
@@ -160,7 +160,7 @@ Divide by $(-1)^n$ and relabel $k\leftrightarrow n-k$ in the finite sum to obtai
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $n=1$,
 \[
@@ -174,21 +174,21 @@ B_{1,1}=\frac34,
 
 ::: pf-proof
 
-Step <1>4 with $(n,j)=(1,2)$ gives
+Step [](#s1-4){.pf-ref} with $(n,j)=(1,2)$ gives
 \[
 4B_{1,2}=B_{0,0}=1,
 \]
-where $B_{0,0}=1$ records $B_0=1$. Thus $B_{1,2}=1/4$. Step <1>4 with $(n,j)=(1,1)$ then gives
+where $B_{0,0}=1$ records $B_0=1$. Thus $B_{1,2}=1/4$. Step [](#s1-4){.pf-ref} with $(n,j)=(1,1)$ then gives
 \[
 2B_{1,1}=6B_{1,2}=\frac32,
 \]
-so $B_{1,1}=3/4$. Step <1>3 gives $a_1=3/4$.
+so $B_{1,1}=3/4$. Step [](#s1-3){.pf-ref} gives $a_1=3/4$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For $n=2$,
 \[
@@ -200,23 +200,23 @@ B_{2,1}=\frac{21}{8},
 
 ::: pf-proof
 
-At order $\lambda^2$, step <1>2 gives
+At order $\lambda^2$, step [](#s1-2){.pf-ref} gives
 \[
 -\frac12B_2''+xB_2'=a_1B_1+a_2-x^4B_1.
 \]
-Using step <1>4 from the highest nonzero coefficient downward gives
+Using step [](#s1-4){.pf-ref} from the highest nonzero coefficient downward gives
 \[
 B_{2,4}=\frac1{32},\qquad
 B_{2,3}=\frac{13}{48},\qquad
 B_{2,2}=\frac{31}{32}.
 \]
-Indeed, these are respectively the $j=4,3,2$ instances of the recurrence, with $B_{1,2}=1/4$ and $B_{1,1}=3/4$. For $j=1$, step <1>4 gives
+Indeed, these are respectively the $j=4,3,2$ instances of the recurrence, with $B_{1,2}=1/4$ and $B_{1,1}=3/4$. For $j=1$, step [](#s1-4){.pf-ref} gives
 \[
 2B_{2,1}=6B_{2,2}-B_{1,1}^2
 =6\frac{31}{32}-\frac9{16}
 =\frac{21}{4}.
 \]
-Thus $B_{2,1}=21/8$, and step <1>3 gives $a_2=-21/8$.
+Thus $B_{2,1}=21/8$, and step [](#s1-3){.pf-ref} gives $a_2=-21/8$.
 
 :::
 
@@ -224,7 +224,7 @@ Thus $B_{2,1}=21/8$, and step <1>3 gives $a_2=-21/8$.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 establish the requested recurrences, and steps <1>5--<1>6 give the first two energy corrections.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish the requested recurrences, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the first two energy corrections.
 
 :::
 

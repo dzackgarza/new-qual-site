@@ -51,7 +51,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $A$ and $B$ are inverses, their middle columns in the equation $AB=I$ give
 $$
@@ -86,7 +86,7 @@ The middle column of the identity matrix is $(0,1,0)^{\mathsf T}$, yielding the 
 
 ::: pf-step
 
-The system in step <1>1 implies
+The system in step [](#s1-1){.pf-ref} implies
 $$
 b=0.
 $$
@@ -103,7 +103,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One then has
 $$
@@ -129,7 +129,7 @@ so $a=2$ and hence $c=3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -140,7 +140,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-This is the value obtained in step <1>3.
+This is the value obtained in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -148,7 +148,7 @@ This is the value obtained in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested matrix entry and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested matrix entry and corresponding choice.
 
 :::
 

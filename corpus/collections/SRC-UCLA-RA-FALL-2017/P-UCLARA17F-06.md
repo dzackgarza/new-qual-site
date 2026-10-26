@@ -34,7 +34,7 @@ on \(\mathbb C\cong\mathbb R^2\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The kernel \(k\) belongs to \(L^1(\mathbb C)\).
 
@@ -57,7 +57,7 @@ Thus the integral is finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 More precisely,
 \[
@@ -68,7 +68,7 @@ More precisely,
 
 ::: pf-proof
 
-This is the value computed in step <1>1.
+This is the value computed in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -115,7 +115,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function
 \[
@@ -143,13 +143,13 @@ Therefore \(g\) is measurable as an extended-valued nonnegative function.
 
 ::: pf-proof
 
-By step <1>4, Tonelli's theorem implies that the integral in \(u\) defines a measurable function of \(z\), possibly taking the value \(+\infty\).
+By step [](#s1-4){.pf-ref}, Tonelli's theorem implies that the integral in \(u\) defines a measurable function of \(z\), possibly taking the value \(+\infty\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -194,7 +194,7 @@ k(u)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every \(u\in\mathbb C\),
 \[
@@ -237,15 +237,15 @@ Hence
 
 ::: pf-proof
 
-Substitute the constant value from step <1>7 into step <1>6.
+Substitute the constant value from step [](#s1-7){.pf-ref} into step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 \boxed{
 \|g\|_2
@@ -266,7 +266,7 @@ Using step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -277,7 +277,7 @@ g\in L^2(\mathbb C)}.
 
 ::: pf-proof
 
-The right-hand side of step <1>9 is finite because
+The right-hand side of step [](#s1-9){.pf-ref} is finite because
 \[
 f\in L^2(\mathbb C).
 \]
@@ -287,7 +287,7 @@ Thus \(\|g\|_2<\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 In particular,
 \[
@@ -307,7 +307,7 @@ An \(L^2\)-function is finite almost everywhere; otherwise the integral of its s
 
 ::: pf-qed
 
-Step <1>10 proves \(g\in L^2\), and step <1>11 gives the almost-everywhere finiteness.
+Step [](#s1-10){.pf-ref} proves \(g\in L^2\), and step [](#s1-11){.pf-ref} gives the almost-everywhere finiteness.
 
 :::
 

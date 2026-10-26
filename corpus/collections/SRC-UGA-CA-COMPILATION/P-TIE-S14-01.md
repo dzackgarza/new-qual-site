@@ -41,7 +41,7 @@ with $\rho>0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $n$,
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $n\ne-1$, then
 $$
@@ -99,13 +99,13 @@ $$
 =0.
 \end{aligned}
 $$
-Step <1>1 then gives the stated value.
+Step [](#s1-1){.pf-ref} then gives the stated value.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $n=-1$, then
 $$
@@ -117,7 +117,7 @@ $$
 
 ::: pf-proof
 
-When $n=-1$, the integrand in step <1>1 becomes $e^0=1$ and $\rho^{n+1}=1$. Hence
+When $n=-1$, the integrand in step [](#s1-1){.pf-ref} becomes $e^0=1$ and $\rho^{n+1}=1$. Hence
 $$
 \int_\gamma z^{-1}\,dz
 =
@@ -130,7 +130,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, for every integer $n$,
 $$
@@ -147,7 +147,7 @@ $$
 
 ::: pf-proof
 
-This combines steps <1>2 and <1>3.
+This combines steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
@@ -155,7 +155,7 @@ This combines steps <1>2 and <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the value for every integer $n$ without using Cauchy's theorem.
+Step [](#s1-4){.pf-ref} gives the value for every integer $n$ without using Cauchy's theorem.
 
 :::
 

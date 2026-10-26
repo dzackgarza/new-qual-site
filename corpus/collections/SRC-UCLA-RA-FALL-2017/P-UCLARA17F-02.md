@@ -31,7 +31,7 @@ for almost every \(x\in[0,1]\), and assume
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The limit \(f\) belongs to \(L^2([0,1])\) and satisfies
 \[
@@ -55,7 +55,7 @@ M^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -73,7 +73,7 @@ This is immediate from the assumed a.e. convergence \(f_n\to f\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence \((h_n)\) is uniformly bounded in \(L^2\):
 \[
@@ -84,7 +84,7 @@ The sequence \((h_n)\) is uniformly bounded in \(L^2\):
 
 ::: pf-proof
 
-By the triangle inequality and step <1>1,
+By the triangle inequality and step [](#s1-1){.pf-ref},
 \[
 \|h_n\|_2
 \le
@@ -99,7 +99,7 @@ M+M
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose \(\delta>0\) so small that
 \[
@@ -116,7 +116,7 @@ The left-hand side tends to \(0\) as \(\delta\downarrow0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By Egorov's theorem, there exists a measurable set
 \[
@@ -134,7 +134,7 @@ such that \(h_n\to0\) uniformly on
 
 ::: pf-proof
 
-The underlying measure space has finite measure, and \(h_n\to0\) almost everywhere by step <1>2.
+The underlying measure space has finite measure, and \(h_n\to0\) almost everywhere by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -153,13 +153,13 @@ For sufficiently large \(n\),
 
 ::: pf-proof
 
-Use the uniform convergence from step <1>5.
+Use the uniform convergence from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence for all sufficiently large \(n\),
 \[
@@ -215,7 +215,7 @@ Apply Cauchy--Schwarz:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -228,7 +228,7 @@ for every \(n\).
 
 ::: pf-proof
 
-Use step <1>3, the bound \(|E|<\delta\), and step <1>4:
+Use step [](#s1-3){.pf-ref}, the bound \(|E|<\delta\), and step [](#s1-4){.pf-ref}:
 \[
 \int_E|h_n|
 \le
@@ -243,7 +243,7 @@ Use step <1>3, the bound \(|E|<\delta\), and step <1>4:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -264,7 +264,7 @@ For all sufficiently large \(n\),
 <
 \varepsilon
 \]
-by steps <1>7 and <1>9.
+by steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
 
@@ -288,7 +288,7 @@ This is a measurable bounded function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -320,7 +320,7 @@ pointwise and is dominated by \(|g|^2\in L^1\). Dominated convergence gives the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 For fixed \(R\),
 \[
@@ -340,13 +340,13 @@ Since \(g_R\in L^\infty\),
 \|g_R\|_\infty
 \|h_n\|_1.
 \]
-Apply step <1>10.
+Apply step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For every \(n\),
 \[
@@ -361,7 +361,7 @@ h_n(g-g_R)
 
 ::: pf-proof
 
-By Cauchy--Schwarz and step <1>3,
+By Cauchy--Schwarz and step [](#s1-3){.pf-ref},
 \[
 \left|
 \int h_n(g-g_R)
@@ -377,7 +377,7 @@ By Cauchy--Schwarz and step <1>3,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Given \(\varepsilon>0\), choose \(R\) so large that
 \[
@@ -389,13 +389,13 @@ Given \(\varepsilon>0\), choose \(R\) so large that
 
 ::: pf-proof
 
-Use the convergence in step <1>12.
+Use the convergence in step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 For this fixed \(R\), choose \(N\) so large that for \(n\ge N\),
 \[
@@ -409,13 +409,13 @@ For this fixed \(R\), choose \(N\) so large that for \(n\ge N\),
 
 ::: pf-proof
 
-Use step <1>13.
+Use step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Then for \(n\ge N\),
 \[
@@ -437,13 +437,13 @@ Split:
 +
 \int h_n(g-g_R),
 \]
-and use steps <1>14--<1>16.
+and use steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -461,7 +461,7 @@ Since
 \[
 h_n=f_n-f,
 \]
-step <1>17 says
+step [](#s1-17){.pf-ref} says
 \[
 \int h_n g\to0.
 \]
@@ -470,7 +470,7 @@ step <1>17 says
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence
 \[
@@ -482,7 +482,7 @@ f_n\rightharpoonup f
 
 ::: pf-proof
 
-Step <1>18 is exactly the definition of weak convergence in the Hilbert space \(L^2([0,1])\).
+Step [](#s1-18){.pf-ref} is exactly the definition of weak convergence in the Hilbert space \(L^2([0,1])\).
 
 :::
 
@@ -490,7 +490,7 @@ Step <1>18 is exactly the definition of weak convergence in the Hilbert space \(
 
 ::: pf-qed
 
-Step <1>19 is the required conclusion.
+Step [](#s1-19){.pf-ref} is the required conclusion.
 
 :::
 

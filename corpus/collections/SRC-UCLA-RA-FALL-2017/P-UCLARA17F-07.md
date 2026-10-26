@@ -56,7 +56,7 @@ The zeros of \(\sin(\pi z)\) are exactly the integers.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(n\in\mathbb Z\),
 \[
@@ -79,7 +79,7 @@ Since \(\sin(\pi w)=0\) exactly when \(w\in\mathbb Z\), the denominator is nonze
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -92,7 +92,7 @@ z\in\mathbb Z}.
 
 ::: pf-proof
 
-The prefactor \(\tanh\pi\) is nonzero, and step <1>2 shows no numerator zero is canceled by a denominator zero.
+The prefactor \(\tanh\pi\) is nonzero, and step [](#s1-2){.pf-ref} shows no numerator zero is canceled by a denominator zero.
 
 :::
 
@@ -123,7 +123,7 @@ z-\tfrac13\in\mathbb Z.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -151,7 +151,7 @@ then the numerator is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence every point
 \[
@@ -174,13 +174,13 @@ The zeros of the denominator are simple because
 \pi(z-\tfrac13)
 \right),
 \]
-which equals \(\pm\pi\) at those zeros. Step <1>5 prevents cancellation.
+which equals \(\pm\pi\) at those zeros. Step [](#s1-5){.pf-ref} prevents cancellation.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -193,13 +193,13 @@ z-\frac13\in\mathbb Z}.
 
 ::: pf-proof
 
-This is step <1>6.
+This is step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 \[
@@ -248,7 +248,7 @@ b=\pi y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Likewise,
 \[
@@ -269,13 +269,13 @@ Likewise,
 
 ::: pf-proof
 
-Apply step <1>8 with \(x\) replaced by \(x-\tfrac13\).
+Apply step [](#s1-8){.pf-ref} with \(x\) replaced by \(x-\tfrac13\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The numerator satisfies
 \[
@@ -291,13 +291,13 @@ Since
 \[
 \sin^2(\pi x)\le1,
 \]
-apply step <1>8.
+apply step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The denominator satisfies
 \[
@@ -313,13 +313,13 @@ The denominator satisfies
 
 ::: pf-proof
 
-The sine-squared term in step <1>9 is nonnegative.
+The sine-squared term in step [](#s1-9){.pf-ref} is nonnegative.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -334,13 +334,13 @@ Therefore
 
 ::: pf-proof
 
-Divide the upper bound in step <1>10 by the lower bound in step <1>11.
+Divide the upper bound in step [](#s1-10){.pf-ref} by the lower bound in step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Since
 \[
@@ -362,7 +362,7 @@ The function \(|\sinh t|\) is increasing in \(|t|\) for \(|t|\ge0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -376,7 +376,7 @@ Hence
 
 ::: pf-proof
 
-The inequality uses step <1>13. The identity
+The inequality uses step [](#s1-13){.pf-ref}. The identity
 \[
 1+\operatorname{csch}^2\pi
 =
@@ -392,7 +392,7 @@ divided by \(\sinh^2\pi\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -408,13 +408,13 @@ Therefore
 
 ::: pf-proof
 
-Take nonnegative square roots in steps <1>12--<1>14.
+Take nonnegative square roots in steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Multiplying by \(\tanh\pi\),
 \[
@@ -439,7 +439,7 @@ By definition,
 {\sin\!\left(\pi(z-\tfrac13)\right)}
 \right|.
 \]
-Use step <1>15 and
+Use step [](#s1-15){.pf-ref} and
 \[
 \tanh\pi\cdot\coth\pi=1.
 \]
@@ -450,7 +450,7 @@ Use step <1>15 and
 
 ::: pf-qed
 
-Step <1>3 proves the zero set, step <1>7 proves the pole set, and step <1>16 proves the required bound.
+Step [](#s1-3){.pf-ref} proves the zero set, step [](#s1-7){.pf-ref} proves the pole set, and step [](#s1-16){.pf-ref} proves the required bound.
 
 :::
 

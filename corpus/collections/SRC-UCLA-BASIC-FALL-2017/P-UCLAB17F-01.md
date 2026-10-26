@@ -30,7 +30,7 @@ defines an inner product on $V$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $f,g\in V$, the quantity
 \[
@@ -67,7 +67,7 @@ is conjugate symmetric:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The form is linear in the first variable and conjugate-linear in the second.
 
@@ -100,7 +100,7 @@ Similarly,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $f\in V$,
 \[
@@ -132,7 +132,7 @@ The converse is immediate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -147,13 +147,13 @@ defines an inner product on $V$.
 
 ::: pf-proof
 
-Steps <1>1--<1>3 verify conjugate symmetry, sesquilinearity, and positive definiteness.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify conjugate symmetry, sesquilinearity, and positive definiteness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -210,7 +210,7 @@ Thus all distinct pairs are orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Their squared norms are
 \[
@@ -292,7 +292,7 @@ For $p_3$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore an orthonormal basis is
 \[
@@ -312,8 +312,8 @@ Therefore an orthonormal basis is
 
 ::: pf-proof
 
-By step <1>5, the four displayed polynomials are mutually orthogonal.
-Step <1>6 gives the normalization factors.
+By step [](#s1-5){.pf-ref}, the four displayed polynomials are mutually orthogonal.
+Step [](#s1-6){.pf-ref} gives the normalization factors.
 Their degrees are
 \[
 0,1,2,3,
@@ -328,7 +328,7 @@ After normalization, it is orthonormal.
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>7 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
 
 :::
 

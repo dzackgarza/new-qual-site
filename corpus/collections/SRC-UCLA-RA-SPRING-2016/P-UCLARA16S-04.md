@@ -47,7 +47,7 @@ Every linear map from a finite-dimensional normed space to a normed space is con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each $j$, there exists a continuous linear functional
 \[
@@ -64,7 +64,7 @@ Apply the Hahn--Banach theorem to the bounded linear functional $\lambda_j$ on t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -101,7 +101,7 @@ Thus $P$ is bounded, hence continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The restriction of $P$ to $V_1$ is the identity map.
 
@@ -112,7 +112,7 @@ If
 \[
 v=\sum_{k=1}^n a_ke_k\in V_1,
 \]
-then step <1>2 gives
+then step [](#s1-2){.pf-ref} gives
 \[
 \widetilde\lambda_j(v)
 =
@@ -132,7 +132,7 @@ P(v)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $P$ satisfies
 \[
@@ -146,7 +146,7 @@ P^2=P,
 
 ::: pf-proof
 
-By definition, $P(x)\in V_1$ for every $x\in V$. Applying step <1>4 to $P(x)$ gives
+By definition, $P(x)\in V_1$ for every $x\in V$. Applying step [](#s1-4){.pf-ref} to $P(x)$ gives
 \[
 P^2(x)
 =
@@ -160,7 +160,7 @@ Also,
 \[
 \operatorname{range}(P)\subseteq V_1.
 \]
-Conversely, step <1>4 says that every $v\in V_1$ satisfies $P(v)=v$, so every element of $V_1$ lies in the range of $P$. Hence
+Conversely, step [](#s1-4){.pf-ref} says that every $v\in V_1$ satisfies $P(v)=v$, so every element of $V_1$ lies in the range of $P$. Hence
 \[
 \operatorname{range}(P)=V_1.
 \]
@@ -171,7 +171,7 @@ Conversely, step <1>4 says that every $v\in V_1$ satisfies $P(v)=v$, so every el
 
 ::: pf-qed
 
-Steps <1>3 and <1>5 show that $P$ is a continuous projection of $V$ onto $V_1$.
+Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} show that $P$ is a continuous projection of $V$ onto $V_1$.
 
 :::
 

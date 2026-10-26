@@ -90,7 +90,7 @@ respectively.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The countable family
 \[
@@ -147,9 +147,9 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Enumerate the intersections from step <1>2 as
+Enumerate the intersections from step [](#s1-2){.pf-ref} as
 \[
 C_1,C_2,\dots
 \]
@@ -189,7 +189,7 @@ E_n
 \subseteq
 C_n,
 \]
-so finiteness of both restricted measures follows from step <1>2.
+so finiteness of both restricted measures follows from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -229,7 +229,7 @@ Then
 
 ::: pf-proof
 
-Both measures are finite by step <1>3.
+Both measures are finite by step [](#s1-3){.pf-ref}.
 If
 \[
 \mu_n(F)=0,
@@ -255,7 +255,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By the finite-measure Radon--Nikodym theorem, for every $n$ there is
 a measurable function
@@ -322,7 +322,7 @@ Thus $f$ is measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every measurable
 \[
@@ -349,7 +349,7 @@ Apply countable additivity of $\nu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every measurable
 \[
@@ -366,20 +366,20 @@ f_n\,d\mu.
 
 ::: pf-proof
 
-Apply the local Radon--Nikodym formula from step <1>5 to each measurable
+Apply the local Radon--Nikodym formula from step [](#s1-5){.pf-ref} to each measurable
 subset
 \[
 A\cap E_n
 \subseteq
 E_n,
 \]
-then substitute into step <1>7.
+then substitute into step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -433,7 +433,7 @@ f_n\,d\mu.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -451,14 +451,14 @@ A\in\mathcal M.
 
 ::: pf-proof
 
-Combine steps <1>8--<1>9.
+Combine steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 Thus $f$ is a Radon--Nikodym derivative of $\nu$ with respect to $\mu$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The derivative is unique
 \[
@@ -519,7 +519,7 @@ almost everywhere on $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence the finite-measure Radon--Nikodym theorem implies the
 $\sigma$-finite version.
@@ -527,7 +527,7 @@ $\sigma$-finite version.
 
 ::: pf-proof
 
-Step <1>10 proves existence of the density, and step <1>11 proves its
+Step [](#s1-10){.pf-ref} proves existence of the density, and step [](#s1-11){.pf-ref} proves its
 almost-everywhere uniqueness.
 These are the conclusions of the Radon--Nikodym theorem for
 $\sigma$-finite measures.
@@ -538,7 +538,7 @@ $\sigma$-finite measures.
 
 ::: pf-qed
 
-Step <1>12 is the desired extension from finite to
+Step [](#s1-12){.pf-ref} is the desired extension from finite to
 \[
 \sigma\text{-finite}
 \]

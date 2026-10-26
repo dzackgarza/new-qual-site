@@ -43,7 +43,7 @@ with $a_d\neq0$. Necessarily $d\geq1$: if $d=0$, then $P(L)=a_0I\neq0$ because $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\lambda\in K$ is an eigenvalue of $L$, then
 $$
@@ -72,14 +72,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every eigenvalue of $L$ is a root of $P$.
 
 
 ::: pf-proof
 
-Let $\lambda$ be an eigenvalue and choose a nonzero eigenvector $v$. The hypothesis $P(L)=0$ and step <1>1 give
+Let $\lambda$ be an eigenvalue and choose a nonzero eigenvector $v$. The hypothesis $P(L)=0$ and step [](#s1-1){.pf-ref} give
 $$
 0=P(L)v=P(\lambda)v.
 $$
@@ -89,7 +89,7 @@ Since $v\neq0$ and $K$ is a field, this forces $P(\lambda)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Assume now that $P$ splits completely over $K$. Then, for some $\lambda_1,\ldots,\lambda_d\in K$,
 $$
@@ -106,7 +106,7 @@ This is precisely the meaning of complete splitting, with the nonzero leading co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose any nonzero $v\in V$ and define
 $$
@@ -122,7 +122,7 @@ $$
 
 ::: pf-proof
 
-By choice, $v_0=v\neq0$. On the other hand, steps <1>3 and the hypothesis $P(L)=0$ give
+By choice, $v_0=v\neq0$. On the other hand, steps [](#s1-3){.pf-ref} and the hypothesis $P(L)=0$ give
 $$
 0=P(L)v
 =
@@ -136,9 +136,9 @@ Since $a_d\neq0$, it follows that $v_d=0$. Therefore among the indices $1,\ldots
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The scalar $\lambda_{k+1}$ from step <1>4 is an eigenvalue of $L$ and a root of $P$.
+The scalar $\lambda_{k+1}$ from step [](#s1-4){.pf-ref} is an eigenvalue of $L$ and a root of $P$.
 
 
 ::: pf-proof
@@ -148,11 +148,11 @@ $$
 v_{k+1}
 =(L-\lambda_{k+1}I)v_k.
 $$
-Step <1>4 gives $v_k\neq0$ and $v_{k+1}=0$, so
+Step [](#s1-4){.pf-ref} gives $v_k\neq0$ and $v_{k+1}=0$, so
 $$
 Lv_k=\lambda_{k+1}v_k.
 $$
-Thus $\lambda_{k+1}$ is an eigenvalue. It is also a root of $P$ by the factorization in step <1>3.
+Thus $\lambda_{k+1}$ is an eigenvalue. It is also a root of $P$ by the factorization in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -160,7 +160,7 @@ Thus $\lambda_{k+1}$ is an eigenvalue. It is also a root of $P$ by the factoriza
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

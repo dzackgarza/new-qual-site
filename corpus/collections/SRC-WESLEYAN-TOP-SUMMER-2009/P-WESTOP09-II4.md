@@ -31,7 +31,7 @@ All homology groups are taken with integer coefficients.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The absolute homology groups needed for the pair $(X,A)$ are
 \[
@@ -67,7 +67,7 @@ is the torus, whose homology groups are the displayed ones.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map induced by inclusion
 \[
@@ -94,7 +94,7 @@ $\mu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The relative homology of the solid torus and its boundary is
 \[
@@ -126,7 +126,7 @@ The next part is
 \longrightarrow H_1(X,A)
 \longrightarrow H_0(A)\longrightarrow H_0(X).
 \]
-By step <1>2, the map $H_1(A)\to H_1(X)$ is surjective with kernel
+By step [](#s1-2){.pf-ref}, the map $H_1(A)\to H_1(X)$ is surjective with kernel
 $\mathbb Z$. Exactness therefore gives
 \[
 H_2(X,A)\cong\mathbb Z.
@@ -135,19 +135,19 @@ Both $A$ and $X$ are connected, so
 \[
 H_0(A)\longrightarrow H_0(X)
 \]
-is an isomorphism. Together with the surjectivity in step <1>2, exactness
+is an isomorphism. Together with the surjectivity in step [](#s1-2){.pf-ref}, exactness
 then gives
 \[
 H_1(X,A)=H_0(X,A)=0.
 \]
-All groups in degrees above $3$ vanish by step <1>1 and the same long exact
+All groups in degrees above $3$ vanish by step [](#s1-1){.pf-ref} and the same long exact
 sequence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The tubular neighborhood $N(K)$ has the homotopy type of $S^1$.
 
@@ -168,7 +168,7 @@ N(K)\simeq S^1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The homology of the complement is
 \[
@@ -190,7 +190,7 @@ applies:
 \cong
 \widetilde H^{\,2-n}(N(K)).
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \widetilde H^j(N(K))
 \cong
@@ -215,7 +215,7 @@ answer in every degree.
 
 ::: pf-qed
 
-Step <1>3 solves part 1 and step <1>5 solves part 2.
+Step [](#s1-3){.pf-ref} solves part 1 and step [](#s1-5){.pf-ref} solves part 2.
 
 :::
 

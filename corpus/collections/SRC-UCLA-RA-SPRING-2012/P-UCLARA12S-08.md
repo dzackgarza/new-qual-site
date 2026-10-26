@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $u$ is harmonic on $\Omega$.
 
@@ -48,7 +48,7 @@ is entire. The imaginary part of a holomorphic function is harmonic, so $u=\oper
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $z=x+iy$,
 $$
@@ -77,14 +77,14 @@ Taking imaginary parts gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $u$ extends continuously to $\partial\Omega$ and vanishes there.
 
 
 ::: pf-proof
 
-The formula in step <1>2 defines a continuous function on all of $\CC$, so it already supplies a continuous extension to the closure of $\Omega$.
+The formula in step [](#s1-2){.pf-ref} defines a continuous function on all of $\CC$, so it already supplies a continuous extension to the closure of $\Omega$.
 
 The boundary of $\Omega$ consists of the nonnegative coordinate rays together with the hyperbola
 $$
@@ -104,7 +104,7 @@ Thus $u=0$ on all of $\partial\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $u$ is unbounded on $\Omega$.
 
@@ -119,7 +119,7 @@ Then
 $$
 x\cdot\frac1{4x}=\frac14<1,
 $$
-so $z_x\in\Omega$. By step <1>2,
+so $z_x\in\Omega$. By step [](#s1-2){.pf-ref},
 $$
 u(z_x)
 =
@@ -136,7 +136,7 @@ This tends to $+\infty$ as $x\to\infty$.
 
 ::: pf-qed
 
-Steps <1>1, <1>3, and <1>4 verify respectively harmonicity, the zero continuous boundary extension, and unboundedness.
+Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} verify respectively harmonicity, the zero continuous boundary extension, and unboundedness.
 
 :::
 

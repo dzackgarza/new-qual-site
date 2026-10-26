@@ -28,7 +28,7 @@ The equation $x^3z^5-y^2z^3-3xy=1$ defines an implicit function $z=f(x,y)$. What
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 At $(x,y)=(-1,1)$, the implicit equation has the unique real solution
 $$
@@ -56,7 +56,7 @@ The value $z=1$ satisfies this equation. If $z\le0$, then $z^5+z^3\le0$; if $0<z
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Implicit differentiation with respect to $y$, holding $x$ fixed, gives
 $$
@@ -87,7 +87,7 @@ which gives the displayed formula whenever the coefficient on the left is nonzer
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At $(x,y,z)=(-1,1,1)$,
 $$
@@ -98,7 +98,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>1, the relevant point on the surface has $z=1$. Substitution into step <1>2 gives
+By step [](#s1-1){.pf-ref}, the relevant point on the surface has $z=1$. Substitution into step [](#s1-2){.pf-ref} gives
 $$
 \frac{\partial f}{\partial y}
 =\frac{2(1)(1)^3+3(-1)}
@@ -114,7 +114,7 @@ The denominator is $-8\ne0$, so the implicit derivative is well-defined there.
 
 ::: pf-qed
 
-Step <1>3 gives the requested partial derivative and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested partial derivative and corresponding choice.
 
 :::
 

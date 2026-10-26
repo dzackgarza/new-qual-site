@@ -67,7 +67,7 @@ In particular, if the theorem itself failed, the zero ideal would belong to $\ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\mathcal B$ has a maximal element under inclusion.
 
@@ -98,9 +98,9 @@ is maximal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The ideal $I$ from step <1>2 is not prime.
+The ideal $I$ from step [](#s1-2){.pf-ref} is not prime.
 
 
 ::: pf-proof
@@ -124,7 +124,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exist
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, $I$ is not prime.
+By step [](#s1-3){.pf-ref}, $I$ is not prime.
 Since $I$ is proper—an ideal with a prime lying over it must be proper—the failure of primality gives elements
 $$
 a,b\notin I
@@ -152,7 +152,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideals
 $$
@@ -186,7 +186,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Each of the ideals
 $$
@@ -200,7 +200,7 @@ has only finitely many minimal primes.
 ::: pf-proof
 
 The ideal $I$ was chosen maximal in $\mathcal B$.
-By step <1>5, both displayed ideals properly contain $I$.
+By step [](#s1-5){.pf-ref}, both displayed ideals properly contain $I$.
 Hence neither can lie in $\mathcal B$.
 Therefore each has only finitely many minimal primes.
 
@@ -208,7 +208,7 @@ Therefore each has only finitely many minimal primes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 $$
@@ -225,7 +225,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 ab\in I\subseteq P.
 $$
@@ -240,7 +240,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 $$
@@ -292,7 +292,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If
 $$
@@ -306,13 +306,13 @@ $$
 
 ::: pf-proof
 
-This is the same argument as step <1>8, with $b$ in place of $a$.
+This is the same argument as step [](#s1-8){.pf-ref}, with $b$ in place of $a$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Every prime ideal minimal over $I$ is a minimal prime over one of
 $$
@@ -324,26 +324,26 @@ $$
 
 ::: pf-proof
 
-By step <1>7, every minimal prime
+By step [](#s1-7){.pf-ref}, every minimal prime
 $$
 P
 $$
 over $I$ contains at least one of $a,b$.
-If it contains $a$, apply step <1>8.
-If it contains $b$, apply step <1>9.
+If it contains $a$, apply step [](#s1-8){.pf-ref}.
+If it contains $b$, apply step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The ideal $I$ has only finitely many minimal primes.
 
 
 ::: pf-proof
 
-By step <1>6, the set of minimal primes over
+By step [](#s1-6){.pf-ref}, the set of minimal primes over
 $$
 I+(a)
 $$
@@ -351,14 +351,14 @@ is finite, and so is the set of minimal primes over
 $$
 I+(b).
 $$
-By step <1>10, every minimal prime over $I$ belongs to the union of these two finite sets.
+By step [](#s1-10){.pf-ref}, every minimal prime over $I$ belongs to the union of these two finite sets.
 Therefore the set of minimal primes over $I$ is finite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 This contradicts the choice
 $$
@@ -368,20 +368,20 @@ $$
 
 ::: pf-proof
 
-Membership in $\mathcal B$ means precisely that $I$ has infinitely many minimal primes, whereas step <1>11 shows it has only finitely many.
+Membership in $\mathcal B$ means precisely that $I$ has infinitely many minimal primes, whereas step [](#s1-11){.pf-ref} shows it has only finitely many.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore every ideal of $R$ has only finitely many minimal primes.
 
 
 ::: pf-proof
 
-The assumption that $\mathcal B$ is nonempty leads to the contradiction in step <1>12.
+The assumption that $\mathcal B$ is nonempty leads to the contradiction in step [](#s1-12){.pf-ref}.
 Hence
 $$
 \mathcal B=\varnothing.
@@ -391,7 +391,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 In particular, $R$ has only finitely many minimal prime ideals.
 
@@ -402,7 +402,7 @@ The minimal prime ideals of $R$ are exactly the prime ideals minimal over the ze
 $$
 (0).
 $$
-Apply step <1>13 to
+Apply step [](#s1-13){.pf-ref} to
 $$
 I=(0).
 $$
@@ -419,7 +419,7 @@ $$
 
 ::: pf-qed
 
-Step <1>14 is the required conclusion.
+Step [](#s1-14){.pf-ref} is the required conclusion.
 
 :::
 

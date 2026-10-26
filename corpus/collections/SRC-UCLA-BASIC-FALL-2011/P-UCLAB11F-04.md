@@ -35,7 +35,7 @@ q_k=-\frac1{2k-1}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The positive subseries of the first series diverges to $+\infty$, and its negative subseries diverges to $-\infty$.
 
@@ -66,7 +66,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix any target
 \[
@@ -77,7 +77,7 @@ There is a rearrangement of the first series constructed by repeatedly taking un
 
 ::: pf-proof
 
-Step <1>1 guarantees that every positive block and every negative block terminates after finitely many terms. Within each sign, use terms in their original order. Thus no term is repeated.
+Step [](#s1-1){.pf-ref} guarantees that every positive block and every negative block terminates after finitely many terms. Within each sign, use terms in their original order. Thus no term is repeated.
 
 Every positive block contains at least one new positive term and every negative block contains at least one new negative term, so after infinitely many blocks every $p_k$ and every $q_k$ has appeared. Hence the construction is a genuine rearrangement.
 
@@ -85,9 +85,9 @@ Every positive block contains at least one new positive term and every negative 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The rearrangement in step <1>2 converges to $L$.
+The rearrangement in step [](#s1-2){.pf-ref} converges to $L$.
 
 
 ::: pf-proof
@@ -126,7 +126,7 @@ Thus the rearranged series converges to $L$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set of finite limiting values obtainable by rearranging
 \[
@@ -140,13 +140,13 @@ is
 
 ::: pf-proof
 
-Step <1>3 constructs, for every prescribed $L\in\mathbb R$, a rearrangement converging to $L$. Conversely, every finite limiting value of a rearrangement is by definition a real number.
+Step [](#s1-3){.pf-ref} constructs, for every prescribed $L\in\mathbb R$, a rearrangement converging to $L$. Conversely, every finite limiting value of a rearrangement is by definition a real number.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The second series
 \[
@@ -167,7 +167,7 @@ which converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every rearrangement of an absolutely convergent series has the same sum as the original series.
 
@@ -203,7 +203,7 @@ Hence the rearranged partial sums converge to $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every rearrangement of the second series has the single limiting value
 \[
@@ -217,7 +217,7 @@ Every rearrangement of the second series has the single limiting value
 
 ::: pf-proof
 
-By steps <1>5--<1>6, every rearrangement has the original sum.
+By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}, every rearrangement has the original sum.
 Using the standard Basel sum
 \[
 \sum_{n=1}^{\infty}\frac1{n^2}
@@ -255,7 +255,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>4 gives all finite rearrangement limits of the first series, and step <1>7 gives the unique rearrangement limit of the second.
+Step [](#s1-4){.pf-ref} gives all finite rearrangement limits of the first series, and step [](#s1-7){.pf-ref} gives the unique rearrangement limit of the second.
 
 :::
 

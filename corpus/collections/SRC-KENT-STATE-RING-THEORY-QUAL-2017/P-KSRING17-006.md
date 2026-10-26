@@ -21,7 +21,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A finite abelian group is an elementary abelian $2$-group if and only if every element has square equal to the identity.
 
@@ -48,7 +48,7 @@ for some $r\ge0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -79,14 +79,14 @@ An element in a product ring is a unit exactly when each coordinate is a unit, s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 No odd prime $p\ge5$ can divide such an integer $n$.
 
 
 ::: pf-proof
 
-If $p\mid n$, then by step <1>2 every nonzero class in
+If $p\mid n$, then by step [](#s1-2){.pf-ref} every nonzero class in
 $$
 \FF_p
 $$
@@ -108,7 +108,7 @@ elements. This is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $3^e\mid n$, then
 $$
@@ -138,13 +138,13 @@ The second term is divisible by $3^e$, while the first is not. Hence
 $$
 u^2\not\equiv1\pmod{3^e},
 $$
-contradicting step <1>1. Therefore $e\le1$.
+contradicting step [](#s1-1){.pf-ref}. Therefore $e\le1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $2^e\mid n$, then
 $$
@@ -171,14 +171,14 @@ for every $e\ge4$. This contradicts the exponent-$2$ condition. Thus $e\le3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently, every admissible $n$ divides $24$.
 
 
 ::: pf-proof
 
-By step <1>3, the only possible odd prime divisor is $3$. Step <1>4 permits at most one factor of $3$, and step <1>5 permits at most three factors of $2$. Hence
+By step [](#s1-3){.pf-ref}, the only possible odd prime divisor is $3$. Step [](#s1-4){.pf-ref} permits at most one factor of $3$, and step [](#s1-5){.pf-ref} permits at most three factors of $2$. Hence
 $$
 n
 \mid
@@ -191,14 +191,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Conversely, every positive divisor of $24$ has elementary abelian unit group.
 
 
 ::: pf-proof
 
-It suffices by step <1>2 to check the prime powers
+It suffices by step [](#s1-2){.pf-ref} to check the prime powers
 $$
 2,\quad4,\quad8,\quad3.
 $$
@@ -219,13 +219,13 @@ $$
 \{\overline1,\overline2\}.
 \end{aligned}
 $$
-Every listed element has square $\overline1$. Any divisor of $24$ is a product of a divisor of $8$ and a divisor of $3$ with coprime factors, so the Chinese remainder theorem implies that every unit modulo such an $n$ has square $1$. Step <1>1 then gives an elementary abelian $2$-group.
+Every listed element has square $\overline1$. Any divisor of $24$ is a product of a divisor of $8$ and a divisor of $3$ with coprime factors, so the Chinese remainder theorem implies that every unit modulo such an $n$ has square $1$. Step [](#s1-1){.pf-ref} then gives an elementary abelian $2$-group.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the complete list is
 $$
@@ -238,7 +238,7 @@ $$
 
 ::: pf-proof
 
-These are exactly the positive divisors of $24$, by steps <1>6 and <1>7. For $n=1$, the unit group is the trivial group, viewed as $(\ZZ/2\ZZ)^0$.
+These are exactly the positive divisors of $24$, by steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref}. For $n=1$, the unit group is the trivial group, viewed as $(\ZZ/2\ZZ)^0$.
 
 :::
 
@@ -246,7 +246,7 @@ These are exactly the positive divisors of $24$, by steps <1>6 and <1>7. For $n=
 
 ::: pf-qed
 
-Step <1>8 gives all and only the required positive integers.
+Step [](#s1-8){.pf-ref} gives all and only the required positive integers.
 
 :::
 

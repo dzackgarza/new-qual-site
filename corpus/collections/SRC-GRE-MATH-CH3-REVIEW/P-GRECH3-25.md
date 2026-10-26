@@ -28,7 +28,7 @@ If $\mathbf{F}=(3y-2x)\hat{\mathbf{i}}+(x^2+y)\hat{\mathbf{j}}$, find the value 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A parametrization of $C$ with the required orientation is
 $$
@@ -45,7 +45,7 @@ The equation $y=x^2$ is satisfied by $(x,y)=(t,t^2)$. At $t=-1$ this gives $(-1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along this parametrization,
 $$
@@ -56,7 +56,7 @@ $$
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 $$
 \mathbf{r}'(t)=(1,2t).
 $$
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The line integral is
 $$
@@ -88,7 +88,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 \int_C\mathbf{F}\cdot d\mathbf{r}
 =\int_{-1}^{0}(4t^3+3t^2-2t)\,dt
@@ -107,7 +107,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested line-integral value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested line-integral value and corresponding choice.
 
 :::
 

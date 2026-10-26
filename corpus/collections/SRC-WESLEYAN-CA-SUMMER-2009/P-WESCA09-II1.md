@@ -30,7 +30,7 @@ for some $A\in\mathbb C$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 \[
@@ -58,7 +58,7 @@ Therefore the assumed estimate gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a constant $A\in\mathbb C$ such that
 \[
@@ -68,7 +68,7 @@ There is a constant $A\in\mathbb C$ such that
 
 ::: pf-proof
 
-By step <1>1, $g$ is a bounded entire function. Liouville's theorem therefore
+By step [](#s1-1){.pf-ref}, $g$ is a bounded entire function. Liouville's theorem therefore
 implies that $g$ is constant, say $g(z)=A$. Thus
 \[
 f(z)e^{-\alpha z}=A,
@@ -81,7 +81,7 @@ and multiplication by $e^{\alpha z}$ gives the stated formula.
 
 ::: pf-qed
 
-Step <1>2 is the required conclusion.
+Step [](#s1-2){.pf-ref} is the required conclusion.
 
 :::
 

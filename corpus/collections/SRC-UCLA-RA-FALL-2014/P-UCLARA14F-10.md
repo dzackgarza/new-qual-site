@@ -39,7 +39,7 @@ where $dA=dx\,dy$ is planar Lebesgue measure.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ambient space
 \[
@@ -95,7 +95,7 @@ therefore attains a positive minimum on $K_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $h$ is entire, then
 \[
@@ -149,7 +149,7 @@ claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every norm-Cauchy sequence $(f_n)$ in $\mathcal B$ is locally
 uniformly Cauchy on $\mathbb C$.
@@ -157,7 +157,7 @@ uniformly Cauchy on $\mathbb C$.
 
 ::: pf-proof
 
-For any compact $K$ and any $n,m$, step <1>3 applied to the entire function
+For any compact $K$ and any $n,m$, step [](#s1-3){.pf-ref} applied to the entire function
 \[
 h=f_n-f_m
 \]
@@ -174,7 +174,7 @@ as $n,m\to\infty$. Thus $(f_n)$ is uniformly Cauchy on every compact set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists an entire function $g$ such that
 \[
@@ -185,7 +185,7 @@ locally uniformly on $\mathbb C$.
 
 ::: pf-proof
 
-By step <1>4, on each compact disk the sequence is uniformly Cauchy, hence
+By step [](#s1-4){.pf-ref}, on each compact disk the sequence is uniformly Cauchy, hence
 uniformly convergent to a continuous limit. These local limits agree on
 overlaps, producing a function $g$ on $\mathbb C$. The Weierstrass theorem
 for locally uniform limits of holomorphic functions shows that $g$ is
@@ -210,14 +210,14 @@ in $L^2(\mu)$.
 
 ::: pf-proof
 
-This follows from step <1>1 because $(f_n)$ is norm-Cauchy in the ambient
+This follows from step [](#s1-1){.pf-ref} because $(f_n)$ is norm-Cauchy in the ambient
 complete space.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The functions $f$ and $g$ agree $\mu$-almost everywhere.
 
@@ -229,7 +229,7 @@ From convergence in $L^2(\mu)$, choose a subsequence
 f_{n_j}
 \]
 that converges pointwise $\mu$-almost everywhere to $f$. On the other hand,
-step <1>5 gives
+step [](#s1-5){.pf-ref} gives
 \[
 f_{n_j}(z)\to g(z)
 \]
@@ -243,14 +243,14 @@ almost everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The $L^2(\mu)$ limit belongs to $\mathcal B$.
 
 
 ::: pf-proof
 
-By step <1>7, the equivalence class $f$ has the entire representative $g$.
+By step [](#s1-7){.pf-ref}, the equivalence class $f$ has the entire representative $g$.
 Also
 \[
 \|g\|_{L^2(\mu)}
@@ -270,7 +270,7 @@ Thus $g\in\mathcal B$, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -281,7 +281,7 @@ Therefore
 ::: pf-proof
 
 Every Cauchy sequence in $\mathcal B$ converges in the norm to an element of
-$\mathcal B$ by steps <1>4 through <1>8. Hence $\mathcal B$ is a closed
+$\mathcal B$ by steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref}. Hence $\mathcal B$ is a closed
 subspace of the Hilbert space $L^2(\mu)$ and is itself complete.
 
 :::
@@ -290,7 +290,7 @@ subspace of the Hilbert space $L^2(\mu)$ and is itself complete.
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

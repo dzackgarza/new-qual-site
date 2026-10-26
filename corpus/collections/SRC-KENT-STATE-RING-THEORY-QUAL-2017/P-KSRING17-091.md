@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every ideal of $R$ containing $(a)$ has the form
 $$
@@ -86,7 +86,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, if
 $$
@@ -156,7 +156,7 @@ The only ideal containing $R$ is $R$ itself.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose $a$ is not a unit.
 Choose a factorization
@@ -218,14 +218,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There are only finitely many divisors of $a$ up to associates.
 
 
 ::: pf-proof
 
-By step <1>5, an associate class of a divisor is determined by the finite tuple
+By step [](#s1-5){.pf-ref}, an associate class of a divisor is determined by the finite tuple
 $$
 (f_1,\ldots,f_r)
 $$
@@ -244,7 +244,7 @@ Hence there are finitely many divisor classes up to associates.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Associate elements generate the same principal ideal.
 
@@ -271,14 +271,14 @@ because multiplication by a unit does not change the set of multiples.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore there are only finitely many ideals containing $(a)$.
 
 
 ::: pf-proof
 
-By steps <1>1--<1>2, ideals containing
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, ideals containing
 $$
 (a)
 $$
@@ -290,7 +290,7 @@ with
 $$
 d\mid a.
 $$
-Step <1>6 gives only finitely many divisors up to associates, and step <1>7 shows associates yield the same ideal.
+Step [](#s1-6){.pf-ref} gives only finitely many divisors up to associates, and step [](#s1-7){.pf-ref} shows associates yield the same ideal.
 Thus
 $$
 \boxed{
@@ -304,7 +304,7 @@ $$
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

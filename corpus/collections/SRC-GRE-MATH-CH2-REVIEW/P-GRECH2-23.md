@@ -29,7 +29,7 @@ Let $r(t)$ be the radius and $A(t)=\pi r(t)^2$ the area.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The area satisfies
 $$
@@ -45,7 +45,7 @@ Differentiate the identity $A=\pi r^2$ with respect to time and apply the chain 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 When $r=4$ cm,
 $$
@@ -59,7 +59,7 @@ Because the radius is decreasing at $0.5$ cm/sec,
 $$
 \frac{dr}{dt}=-0.5=-\frac12.
 $$
-Substituting $r=4$ and this value into step <1>1 gives
+Substituting $r=4$ and this value into step [](#s1-1){.pf-ref} gives
 $$
 \frac{dA}{dt}=2\pi(4)\left(-\frac12\right)=-4\pi.
 $$
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the circle's area is decreasing at the rate
 $$
@@ -79,7 +79,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Step <1>2 gives the signed rate of change as $-4\pi$. Thus the positive magnitude of the rate of decrease is $4\pi$.
+Step [](#s1-2){.pf-ref} gives the signed rate of change as $-4\pi$. Thus the positive magnitude of the rate of decrease is $4\pi$.
 
 :::
 
@@ -87,7 +87,7 @@ Step <1>2 gives the signed rate of change as $-4\pi$. Thus the positive magnitud
 
 ::: pf-qed
 
-Step <1>3 gives the requested rate of decrease and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested rate of decrease and corresponding choice.
 
 :::
 

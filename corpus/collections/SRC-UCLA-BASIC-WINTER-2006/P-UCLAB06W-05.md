@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $(u,v)\in\RR^2$,
 $$
@@ -69,7 +69,7 @@ where equality of the mixed partials is used. This is exactly the displayed ineq
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -81,13 +81,13 @@ $$
 
 ::: pf-proof
 
-Apply step <1>1 first to $(u,v)=(1,0)$ and then to $(u,v)=(0,1)$.
+Apply step [](#s1-1){.pf-ref} first to $(u,v)=(1,0)$ and then to $(u,v)=(0,1)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $c>0$, then
 $$
@@ -97,7 +97,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, for every $t\in\RR$,
+By step [](#s1-1){.pf-ref}, for every $t\in\RR$,
 $$
 a+2bt+ct^2\ge0.
 $$
@@ -111,7 +111,7 @@ which is equivalent to $b^2\le ac$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $c=0$, then $b=0$, and hence again
 $$
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-With $c=0$, step <1>1 applied to $(u,v)=(1,t)$ gives
+With $c=0$, step [](#s1-1){.pf-ref} applied to $(u,v)=(1,t)$ gives
 $$
 a+2bt\ge0
 $$
@@ -131,7 +131,7 @@ for every $t\in\RR$. If $b\ne0$, choosing $t$ with sufficiently large magnitude 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -145,7 +145,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, either $c>0$ or $c=0$. Step <1>3 handles the first case and step <1>4 the second. Substituting the definitions of $a,b,c$ gives the displayed inequality.
+By step [](#s1-2){.pf-ref}, either $c>0$ or $c=0$. Step [](#s1-3){.pf-ref} handles the first case and step [](#s1-4){.pf-ref} the second. Substituting the definitions of $a,b,c$ gives the displayed inequality.
 
 :::
 
@@ -153,7 +153,7 @@ By step <1>2, either $c>0$ or $c=0$. Step <1>3 handles the first case and step <
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion. The uniqueness of the minimum is stronger than needed; only the fact that $(0,0)$ is a local minimum enters the proof.
+Step [](#s1-5){.pf-ref} is the required conclusion. The uniqueness of the minimum is stronger than needed; only the fact that $(0,0)$ is a local minimum enters the proof.
 
 :::
 

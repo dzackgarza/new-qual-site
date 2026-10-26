@@ -45,7 +45,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has the partial-fraction identity
 $$
@@ -72,7 +72,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On $\abs{z}=r$,
 $$
@@ -107,7 +107,7 @@ The ratio has constant modulus $\abs{a}/r<1$ on the circle, so the convergence i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -119,7 +119,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, uniform convergence permits termwise integration:
+By step [](#s1-2){.pf-ref}, uniform convergence permits termwise integration:
 $$
 \int_\gamma\frac{dz}{z-a}
 =
@@ -142,7 +142,7 @@ for every integer $m$. Hence only the term $k=0$ survives, giving $2\pi i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On $\abs{z}=r$,
 $$
@@ -174,7 +174,7 @@ The ratio has constant modulus $r/\abs{b}<1$, so the convergence is uniform.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -185,7 +185,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, integrate term by term:
+By step [](#s1-4){.pf-ref}, integrate term by term:
 $$
 \int_\gamma\frac{dz}{z-b}
 =
@@ -203,7 +203,7 @@ Therefore the whole sum is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -217,7 +217,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 I
 =
@@ -228,7 +228,7 @@ I
 \int_\gamma\frac{dz}{z-b}
 \right).
 $$
-Substituting steps <1>3 and <1>5 gives
+Substituting steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} gives
 $$
 I
 =
@@ -243,7 +243,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 is the required evaluation, obtained without Cauchy's theorem.
+Step [](#s1-6){.pf-ref} is the required evaluation, obtained without Cauchy's theorem.
 
 :::
 

@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -75,7 +75,7 @@ Since $\FF_p$ is a field, one of the two factors is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a$ is a quadratic residue modulo $p$, then
 $$
@@ -107,7 +107,7 @@ by Fermat's little theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial
 $$
@@ -134,7 +134,7 @@ $$
 $$
 nonzero quadratic residues.
 
-By step <1>2, all of them are roots of
+By step [](#s1-2){.pf-ref}, all of them are roots of
 $$
 X^{(p-1)/2}-1.
 $$
@@ -144,7 +144,7 @@ This polynomial has degree $(p-1)/2$, so over the field $\FF_p$ it has at most $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $a$ is a quadratic nonresidue modulo $p$, then
 $$
@@ -157,7 +157,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, a nonresidue is not a root of
+By step [](#s1-3){.pf-ref}, a nonresidue is not a root of
 $$
 X^{(p-1)/2}-1.
 $$
@@ -168,7 +168,7 @@ a^{(p-1)/2}
 1
 \pmod p.
 $$
-Step <1>1 shows that the only remaining possibility is
+Step [](#s1-1){.pf-ref} shows that the only remaining possibility is
 $$
 a^{(p-1)/2}
 \equiv
@@ -180,7 +180,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -204,7 +204,7 @@ $$
 -1,&\text{if $a$ is a quadratic nonresidue modulo $p$}.
 \end{cases}
 $$
-Steps <1>2 and <1>4 give exactly these two congruences.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give exactly these two congruences.
 
 :::
 
@@ -212,7 +212,7 @@ Steps <1>2 and <1>4 give exactly these two congruences.
 
 ::: pf-qed
 
-Step <1>5 is Euler's criterion.
+Step [](#s1-5){.pf-ref} is Euler's criterion.
 
 :::
 

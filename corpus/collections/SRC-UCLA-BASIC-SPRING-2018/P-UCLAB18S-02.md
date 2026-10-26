@@ -32,7 +32,7 @@ By hypothesis, $C$ is invertible.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -65,7 +65,7 @@ A-A-BA\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One also has
 \[
@@ -98,7 +98,7 @@ B-BA-B\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -112,13 +112,13 @@ Both sides equal
 \[
 -BA
 \]
-by steps <1>1--<1>2.
+by steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $C$ is invertible,
 \[
@@ -132,7 +132,7 @@ Multiply the identity
 \[
 CA=BC
 \]
-from step <1>3 on the right by
+from step [](#s1-3){.pf-ref} on the right by
 \[
 C^{-1}.
 \]
@@ -152,14 +152,14 @@ Thus $A$ and $B$ are similar.
 
 ::: pf-proof
 
-Step <1>4 expresses $B$ as a conjugate of $A$ by the invertible matrix $C$.
+Step [](#s1-4){.pf-ref} expresses $B$ as a conjugate of $A$ by the invertible matrix $C$.
 That is precisely similarity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Similar matrices have the same rank.
 
@@ -173,7 +173,7 @@ Hence
 =
 \operatorname{rank}(A).
 \]
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 \[
 \operatorname{rank}(B)
 =
@@ -184,7 +184,7 @@ Using step <1>4,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -196,7 +196,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly step <1>6.
+This is exactly step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -204,7 +204,7 @@ This is exactly step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -29,7 +29,7 @@ $$f(x, y) = \frac{k^2}{x} + \frac{k}{y} + xy$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 At a critical point in the domain $xy\ne0$, the equations
 $$
@@ -54,7 +54,7 @@ A critical point satisfies $f_x=f_y=0$, giving the displayed equations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every critical point has
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-Substitute $y=k^2/x^2$ from step <1>1 into the second equation:
+Substitute $y=k^2/x^2$ from step [](#s1-1){.pf-ref} into the second equation:
 $$
 x
 =\frac{k}{(k^2/x^2)^2}
@@ -78,7 +78,7 @@ injective, so $x=k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The corresponding $y$-coordinate is
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-proof
 
-Substituting $x=k$ into the first equation of step <1>1 gives
+Substituting $x=k$ into the first equation of step [](#s1-1){.pf-ref} gives
 $$
 y=\frac{k^2}{k^2}=1.
 $$
@@ -97,7 +97,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the unique critical point is
 $$
@@ -108,8 +108,8 @@ so the answer is (E).
 
 ::: pf-proof
 
-Steps <1>2--<1>3 show that every critical point must equal $(k,1)$, and
-direct substitution into the two equations of step <1>1 verifies that this
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} show that every critical point must equal $(k,1)$, and
+direct substitution into the two equations of step [](#s1-1){.pf-ref} verifies that this
 point is indeed critical.
 
 :::
@@ -118,7 +118,7 @@ point is indeed critical.
 
 ::: pf-qed
 
-Step <1>4 gives the required critical point.
+Step [](#s1-4){.pf-ref} gives the required critical point.
 
 :::
 

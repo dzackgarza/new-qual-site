@@ -26,7 +26,7 @@ The five graphical choices (A)–(E) appear on the source page:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In Cartesian coordinates the surface equation is
 $$
@@ -53,7 +53,7 @@ Thus $z=x^2-y^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The level curve at height $z=c$ is
 $$
@@ -63,20 +63,20 @@ $$
 
 ::: pf-proof
 
-Fixing the value of $z$ in the Cartesian equation from step <1>1 gives exactly the displayed equation in the $xy$-plane.
+Fixing the value of $z$ in the Cartesian equation from step [](#s1-1){.pf-ref} gives exactly the displayed equation in the $xy$-plane.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 These level curves consist of the two diagonal lines when $c=0$, hyperbolas opening in the $x$-direction when $c>0$, and hyperbolas opening in the $y$-direction when $c<0$.
 
 
 ::: pf-proof
 
-If $c=0$, step <1>2 gives
+If $c=0$, step [](#s1-2){.pf-ref} gives
 $$
 x^2-y^2=(x-y)(x+y)=0,
 $$
@@ -94,7 +94,7 @@ which is a hyperbola with transverse axis on the $y$-axis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the required depiction is
 $$
@@ -104,7 +104,7 @@ $$
 
 ::: pf-proof
 
-Among the five source figures, choice (C) is the one showing the level-curve family characterized in step <1>3.
+Among the five source figures, choice (C) is the one showing the level-curve family characterized in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -112,7 +112,7 @@ Among the five source figures, choice (C) is the one showing the level-curve fam
 
 ::: pf-qed
 
-Step <1>4 identifies the requested graphical choice.
+Step [](#s1-4){.pf-ref} identifies the requested graphical choice.
 
 :::
 

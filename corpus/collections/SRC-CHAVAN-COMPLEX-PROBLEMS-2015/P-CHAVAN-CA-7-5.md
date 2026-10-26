@@ -25,7 +25,7 @@ with the $a_j$ distinct, and put $\Omega=\CC\setminus F$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is an $r>0$ such that the circle
 $$
@@ -47,7 +47,7 @@ Then no point of the circle is one of the deleted points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 $$
@@ -62,7 +62,7 @@ $$
 ::: pf-proof
 
 The only pole of $h$ is at $a_1\notin\Omega$. Along the parametrization in
-step <1>1,
+step [](#s1-1){.pf-ref},
 $$
 h(\gamma(t))=\frac{e^{-it}}r,
 \qquad
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\Omega$ were simply connected, then
 $$
@@ -100,14 +100,14 @@ which is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $\Omega=\CC\setminus F$ is not simply connected.
 
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 would give the contradiction $2\pi i=0$ if $\Omega$ were
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} would give the contradiction $2\pi i=0$ if $\Omega$ were
 simply connected.
 
 :::
@@ -116,7 +116,7 @@ simply connected.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

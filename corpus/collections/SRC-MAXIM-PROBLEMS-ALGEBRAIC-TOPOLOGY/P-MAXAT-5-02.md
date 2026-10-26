@@ -27,7 +27,7 @@ be a real rank-$r$ vector bundle over a path-connected simply connected base $X$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A real vector bundle is orientable if and only if its first Stiefel--Whitney class vanishes:
 \[
@@ -43,7 +43,7 @@ The transition functions of a rank-$r$ real bundle take values in $GL_r(\mathbb 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $X$ is simply connected,
 \[
@@ -63,7 +63,7 @@ Since $\pi_1(X)=0$, its abelianization is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The universal coefficient theorem gives
 \[
@@ -91,7 +91,7 @@ Hence the right map is an isomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -101,13 +101,13 @@ H^1(X;\mathbb Z/2)=0.
 
 ::: pf-proof
 
-Substitute $H_1(X;\mathbb Z)=0$ from step <1>2 into the isomorphism of step <1>3.
+Substitute $H_1(X;\mathbb Z)=0$ from step [](#s1-2){.pf-ref} into the isomorphism of step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In particular,
 \[
@@ -117,20 +117,20 @@ w_1(\xi)=0.
 
 ::: pf-proof
 
-The first Stiefel--Whitney class lies in the zero group from step <1>4.
+The first Stiefel--Whitney class lies in the zero group from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $\xi$ is orientable.
 
 
 ::: pf-proof
 
-Apply the criterion in step <1>1 to the vanishing established in step <1>5.
+Apply the criterion in step [](#s1-1){.pf-ref} to the vanishing established in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -147,13 +147,13 @@ The orientation local system of $\xi$ has monodromy character
 \[
 \pi_1(X)\to\{\pm1\}.
 \]
-Since $\pi_1(X)=0$, this character is trivial. Thus an orientation chosen in one fiber transports consistently to every fiber. This is the local-system form of steps <1>1--<1>6.
+Since $\pi_1(X)=0$, this character is trivial. Thus an orientation chosen in one fiber transports consistently to every fiber. This is the local-system form of steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -163,7 +163,7 @@ Therefore
 
 ::: pf-proof
 
-This is step <1>6.
+This is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -171,7 +171,7 @@ This is step <1>6.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

@@ -24,7 +24,7 @@ converges to $1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A sequence \((a_n)_{n=1}^\infty\) of real numbers converges to \(a\in\mathbb R\) if for every \(\varepsilon>0\) there is \(N\in\mathbb N\) such that
 \[
@@ -42,7 +42,7 @@ This is the \(\varepsilon\)--\(N\) definition of convergence of a real sequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(n\ge1\),
 \[
@@ -81,7 +81,7 @@ Since \(3n-2<3n\) and \(n^2+3n>n^2\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Given \(\varepsilon>0\), choose an integer
 \[
@@ -99,7 +99,7 @@ If \(n\ge N\), then
 \[
 \frac3n\le\frac3N<\varepsilon.
 \]
-Combining this with step <1>2 gives
+Combining this with step [](#s1-2){.pf-ref} gives
 \[
 |a_n-1|<\frac3n\le\frac3N<\varepsilon.
 \]
@@ -108,7 +108,7 @@ Combining this with step <1>2 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -118,7 +118,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 verifies the definition in step <1>1 with \(a=1\).
+Step [](#s1-3){.pf-ref} verifies the definition in step [](#s1-1){.pf-ref} with \(a=1\).
 
 :::
 
@@ -126,7 +126,7 @@ Step <1>3 verifies the definition in step <1>1 with \(a=1\).
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition, and step <1>4 proves the requested convergence.
+Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-4){.pf-ref} proves the requested convergence.
 
 :::
 

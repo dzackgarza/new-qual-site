@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $H$ is differentiable on $\RR$ and
 $$
@@ -51,7 +51,7 @@ then $H$ is differentiable and $H'(u)=g(u)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -67,7 +67,7 @@ This is immediate from the definitions of $F$ and $H$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The derivative is
 $$
@@ -77,7 +77,7 @@ $$
 
 ::: pf-proof
 
-The sine function is differentiable with derivative $\cos x$. By step <1>1, $H$ is differentiable. Therefore the chain rule applied to step <1>2 gives
+The sine function is differentiable with derivative $\cos x$. By step [](#s1-1){.pf-ref}, $H$ is differentiable. Therefore the chain rule applied to step [](#s1-2){.pf-ref} gives
 $$
 \begin{aligned}
 F'(x)
@@ -93,7 +93,7 @@ The two required results are therefore the Fundamental Theorem of Calculus for a
 
 ::: pf-qed
 
-Step <1>3 gives the derivative and identifies the theorems that justify it.
+Step [](#s1-3){.pf-ref} gives the derivative and identifies the theorems that justify it.
 
 :::
 

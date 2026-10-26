@@ -49,7 +49,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Transposing $M$ and then interchanging its first two columns produces a matrix of determinant $-d$.
 
@@ -62,9 +62,9 @@ Transposition preserves determinant, so $\det(M^{\mathsf T})=d$. Interchanging t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Starting from the matrix in step <1>1, add its first column to its third column, multiply its second column by $2$, and then subtract twice its first column from its second column. The resulting matrix is
+Starting from the matrix in step [](#s1-1){.pf-ref}, add its first column to its third column, multiply its second column by $2$, and then subtract twice its first column from its second column. The resulting matrix is
 $$
 \begin{pmatrix}
 k&2(a-k)&p+k\\
@@ -84,7 +84,7 @@ $$
 \quad
 \begin{pmatrix}p\\ q\\ r\end{pmatrix}.
 $$
-After the interchange in step <1>1, they are ordered as the second, first, and third of these columns. The three stated operations therefore transform them respectively into
+After the interchange in step [](#s1-1){.pf-ref}, they are ordered as the second, first, and third of these columns. The three stated operations therefore transform them respectively into
 $$
 \begin{pmatrix}k\\ l\\ m\end{pmatrix},
 \quad
@@ -98,7 +98,7 @@ which are precisely the columns of the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The determinant in the question is
 $$
@@ -109,7 +109,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Adding a multiple of one column to another does not change the determinant. Thus, among the operations in step <1>2, only multiplying the second column by $2$ changes the determinant, multiplying it by $2$. By step <1>1, the determinant before those operations is $-d$, so the final determinant is $2(-d)=-2d$.
+Adding a multiple of one column to another does not change the determinant. Thus, among the operations in step [](#s1-2){.pf-ref}, only multiplying the second column by $2$ changes the determinant, multiplying it by $2$. By step [](#s1-1){.pf-ref}, the determinant before those operations is $-d$, so the final determinant is $2(-d)=-2d$.
 
 :::
 
@@ -117,7 +117,7 @@ Adding a multiple of one column to another does not change the determinant. Thus
 
 ::: pf-qed
 
-Step <1>3 gives the requested determinant.
+Step [](#s1-3){.pf-ref} gives the requested determinant.
 
 :::
 

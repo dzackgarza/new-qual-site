@@ -31,7 +31,7 @@ All composita are taken inside the given ambient field $E'$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $K/F$ is finite, then $EK/E$ is finite and
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $K/F$ is finite separable. Then there exists $\alpha\in K$ with
 $$
@@ -80,9 +80,9 @@ This is the primitive element theorem for finite separable extensions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the hypothesis of step <1>2,
+Under the hypothesis of step [](#s1-2){.pf-ref},
 $$
 EK=E(\alpha).
 $$
@@ -99,7 +99,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The minimal polynomial of $\alpha$ over $E$ is separable.
 
@@ -122,7 +122,7 @@ be the minimal polynomial of $\alpha$ over $E$. Since $f(\alpha)=0$, the polynom
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore if $K/F$ is finite separable, then
 $$
@@ -132,13 +132,13 @@ $$
 
 ::: pf-proof
 
-Finiteness is step <1>1. By step <1>3, $EK=E(\alpha)$, and step <1>4 shows that the minimal polynomial of the generator $\alpha$ over $E$ is separable.
+Finiteness is step [](#s1-1){.pf-ref}. By step [](#s1-3){.pf-ref}, $EK=E(\alpha)$, and step [](#s1-4){.pf-ref} shows that the minimal polynomial of the generator $\alpha$ over $E$ is separable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose $K/F$ is finite normal. Choose elements
 $$
@@ -160,7 +160,7 @@ The extension is finite, so it is finitely generated. Normality means that every
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The field $EK$ is the splitting field over $E$ of the finite family
 $$
@@ -170,7 +170,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, every root of every $f_i$ lies in $K$, hence in $EK$. Thus all the polynomials split over $EK$.
+By step [](#s1-6){.pf-ref}, every root of every $f_i$ lies in $K$, hence in $EK$. Thus all the polynomials split over $EK$.
 
 Conversely, any field containing $E$ in which all $f_i$ split contains in particular the chosen roots $\alpha_i$. Hence it contains
 $$
@@ -182,7 +182,7 @@ Therefore $EK$ is the smallest extension of $E$ splitting all the $f_i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore if $K/F$ is finite normal, then
 $$
@@ -192,13 +192,13 @@ $$
 
 ::: pf-proof
 
-Finiteness is step <1>1. By step <1>7, $EK$ is a splitting field over $E$ of a finite family of polynomials. Hence $EK/E$ is normal.
+Finiteness is step [](#s1-1){.pf-ref}. By step [](#s1-7){.pf-ref}, $EK$ is a splitting field over $E$ of a finite family of polynomials. Hence $EK/E$ is normal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $K/F$ is finite Galois, then
 $$
@@ -208,7 +208,7 @@ $$
 
 ::: pf-proof
 
-A finite Galois extension is both separable and normal. Apply step <1>5 to obtain separability of $EK/E$ and step <1>8 to obtain normality. A finite extension that is both separable and normal is Galois.
+A finite Galois extension is both separable and normal. Apply step [](#s1-5){.pf-ref} to obtain separability of $EK/E$ and step [](#s1-8){.pf-ref} to obtain normality. A finite extension that is both separable and normal is Galois.
 
 :::
 
@@ -216,7 +216,7 @@ A finite Galois extension is both separable and normal. Apply step <1>5 to obtai
 
 ::: pf-qed
 
-Steps <1>5, <1>8, and <1>9 prove parts (1), (2), and (3), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} prove parts (1), (2), and (3), respectively.
 
 :::
 

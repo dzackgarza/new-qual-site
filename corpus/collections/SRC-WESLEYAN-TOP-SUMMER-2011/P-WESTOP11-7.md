@@ -115,7 +115,7 @@ y\notin B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The two subsets
 \[
@@ -163,21 +163,21 @@ so both sets are nonempty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 This contradicts connectedness of $C$.
 
 
 ::: pf-proof
 
-Step <1>4 writes $C$ as the union of two disjoint nonempty open subsets.
+Step [](#s1-4){.pf-ref} writes $C$ as the union of two disjoint nonempty open subsets.
 That is a separation of $C$, impossible because $C$ is connected.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore every connected subset of $X$ has at most one point.
 
@@ -185,13 +185,13 @@ Therefore every connected subset of $X$ has at most one point.
 ::: pf-proof
 
 The assumption that a connected subset contains two distinct points leads to
-the contradiction in step <1>5.
+the contradiction in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -203,7 +203,7 @@ X\text{ is totally disconnected}.
 
 ::: pf-proof
 
-Every singleton is connected, and step <1>6 says these are the only nonempty
+Every singleton is connected, and step [](#s1-6){.pf-ref} says these are the only nonempty
 connected subsets.
 
 :::
@@ -212,7 +212,7 @@ connected subsets.
 
 ::: pf-qed
 
-Step <1>7 is the desired conclusion.
+Step [](#s1-7){.pf-ref} is the desired conclusion.
 
 :::
 

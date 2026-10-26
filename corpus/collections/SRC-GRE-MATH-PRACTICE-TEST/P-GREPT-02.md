@@ -27,7 +27,7 @@ $$\frac{d}{dx}\left(\frac{1}{x} - \frac{1}{\log x}\right) =$$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Differentiating the two terms gives
 $$
@@ -49,7 +49,7 @@ by the chain rule. Adding the two derivatives proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The derivative simplifies to
 $$
@@ -60,7 +60,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Using the common denominator $x^2(\log x)^2$ in step <1>1 gives
+Using the common denominator $x^2(\log x)^2$ in step [](#s1-1){.pf-ref} gives
 $$
 -\frac1{x^2}+\frac1{x(\log x)^2}
 =\frac{-(\log x)^2+x}{x^2(\log x)^2}
@@ -73,7 +73,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the required derivative.
+Step [](#s1-2){.pf-ref} gives the required derivative.
 
 :::
 

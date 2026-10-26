@@ -25,7 +25,7 @@ for every $k\in\mathbb Z$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every eigenvalue $\lambda$ of $A$ satisfies
 \[
@@ -77,7 +77,7 @@ so $|\lambda|\ge1$. Therefore $|\lambda|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $A$ were not diagonalizable, then there would exist an eigenvalue $\lambda$ and vectors $v,w$ with
 \[
@@ -135,9 +135,9 @@ Thus the stated vectors exist whenever $A$ is not diagonalizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-For the vectors in step <1>2 and every integer $k\ge1$,
+For the vectors in step [](#s1-2){.pf-ref} and every integer $k\ge1$,
 \[
 A^kv
 =
@@ -177,18 +177,18 @@ because all terms involving $N^j$ for $j\ge2$ vanish on $v$. Since $Nv=w$, the f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The formula in step <1>3 contradicts boundedness of the powers of $A$.
+The formula in step [](#s1-3){.pf-ref} contradicts boundedness of the powers of $A$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |\lambda|=1.
 \]
-Therefore step <1>3 gives
+Therefore step [](#s1-3){.pf-ref} gives
 \[
 \begin{aligned}
 \|A^kv\|
@@ -213,7 +213,7 @@ which is bounded independently of $k$. This is a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -223,7 +223,7 @@ Therefore
 
 ::: pf-proof
 
-If $A$ were not diagonalizable, steps <1>2--<1>4 would contradict the assumed boundedness of its integer powers. Hence $A$ must be diagonalizable.
+If $A$ were not diagonalizable, steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} would contradict the assumed boundedness of its integer powers. Hence $A$ must be diagonalizable.
 
 :::
 
@@ -231,7 +231,7 @@ If $A$ were not diagonalizable, steps <1>2--<1>4 would contradict the assumed bo
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

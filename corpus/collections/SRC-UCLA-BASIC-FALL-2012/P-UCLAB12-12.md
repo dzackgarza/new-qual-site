@@ -24,7 +24,7 @@ be the linear map whose matrix in the standard bases is $M$, where $\mathbb F$ i
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The column rank of $M$ equals
 \[
@@ -49,7 +49,7 @@ Hence the span of the columns is exactly $\operatorname{image}T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -78,7 +78,7 @@ Thus the row space of $M$ is naturally identified with $\operatorname{image}T^*$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -117,7 +117,7 @@ That is precisely the condition
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every subspace
 \[
@@ -153,7 +153,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The dual map has the same rank as the original map:
 \[
@@ -169,7 +169,7 @@ By rank-nullity for
 \[
 T^*:(\mathbb F^n)^*\to(\mathbb F^m)^*,
 \]
-steps <1>3--<1>4 give
+steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
 \[
 \begin{aligned}
 \dim\operatorname{image}T^*
@@ -188,28 +188,28 @@ n-\bigl(n-\dim\operatorname{image}T\bigr)\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the row rank of $M$ equals the column rank of $M$.
 
 
 ::: pf-proof
 
-By step <1>1, the column rank is
+By step [](#s1-1){.pf-ref}, the column rank is
 \[
 \dim\operatorname{image}T.
 \]
-By step <1>2, the row rank is
+By step [](#s1-2){.pf-ref}, the row rank is
 \[
 \dim\operatorname{image}T^*.
 \]
-These dimensions are equal by step <1>5.
+These dimensions are equal by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The equality has the natural vector-space interpretation
 \[
@@ -232,7 +232,7 @@ Thus row rank equals column rank precisely because these two naturally attached 
 
 ::: pf-qed
 
-Step <1>6 proves equality of row and column rank, and step <1>7 gives the requested interpretation.
+Step [](#s1-6){.pf-ref} proves equality of row and column rank, and step [](#s1-7){.pf-ref} gives the requested interpretation.
 
 :::
 

@@ -37,7 +37,7 @@ K_t*f(x)=\int_{\mathbb R^3}K_t(x-y)f(y)\,dy.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The heat kernel satisfies the scaling identity
 \[
@@ -68,7 +68,7 @@ K_t(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -80,7 +80,7 @@ t^{-1/2}\|K_1\|_{L^{3/2}}.
 
 ::: pf-proof
 
-Using step <1>1 and the change of variables
+Using step [](#s1-1){.pf-ref} and the change of variables
 \[
 y=\frac{x}{\sqrt t},
 \qquad
@@ -111,7 +111,7 @@ Raising both sides to the power $2/3$ yields the claimed scaling.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $f\in L^3(\mathbb R^3)$ and every $t>0$,
 \[
@@ -135,13 +135,13 @@ gives
 \le
 \|K_t\|_{3/2}\|f\|_3.
 \]
-Substitute the scaling from step <1>2 and multiply by $t^{1/2}$.
+Substitute the scaling from step [](#s1-2){.pf-ref} and multiply by $t^{1/2}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The operators
 \[
@@ -154,7 +154,7 @@ are bounded uniformly in $t>0$.
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 \|T_tf\|_\infty
 \le
@@ -166,7 +166,7 @@ with a constant independent of $t$. This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $g\in C_c(\mathbb R^3)$, then
 \[
@@ -205,7 +205,7 @@ t^{1/2}\|g\|_\infty
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $f\in L^3(\mathbb R^3)$,
 \[
@@ -226,7 +226,7 @@ Fix $\varepsilon>0$. Since $C_c(\mathbb R^3)$ is dense in $L^3(\mathbb R^3)$, ch
 <
 \frac{\varepsilon}{2\|K_1\|_{3/2}}.
 \]
-By step <1>5, there exists $\delta>0$ such that
+By step [](#s1-5){.pf-ref}, there exists $\delta>0$ such that
 \[
 t^{1/2}\|K_t*g\|_\infty
 <
@@ -234,7 +234,7 @@ t^{1/2}\|K_t*g\|_\infty
 \qquad
 (0<t<\delta).
 \]
-For such $t$, step <1>3 gives
+For such $t$, step [](#s1-3){.pf-ref} gives
 \[
 \begin{aligned}
 t^{1/2}\|K_t*f\|_\infty
@@ -258,7 +258,7 @@ This proves part (b).
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

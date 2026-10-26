@@ -26,7 +26,7 @@ for every \(z\in V\), then \(h\) is constant on \(V\). Find all possible values 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $z\in V$,
 $$
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The image of $h$ satisfies
 $$
@@ -75,13 +75,13 @@ $$
 
 ::: pf-proof
 
-This is exactly the content of step <1>1.
+This is exactly the content of step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $h$ is constant on $V$.
 
@@ -94,7 +94,7 @@ h(V)
 $$
 is an open subset of $\CC$.
 
-But step <1>2 gives
+But step [](#s1-2){.pf-ref} gives
 $$
 h(V)
 \subseteq
@@ -106,7 +106,7 @@ and this set has empty interior in $\CC$. Hence it contains no nonempty open sub
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A constant value $c$ is allowed exactly when
 $$
@@ -126,7 +126,7 @@ c^2=\overline c.
 $$
 If $c=0$, this holds.
 
-If $c\ne0$, step <1>1 gives
+If $c\ne0$, step [](#s1-1){.pf-ref} gives
 $$
 |c|=1,
 $$
@@ -151,7 +151,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the complete list of possible values is
 $$
@@ -165,7 +165,7 @@ $$
 
 ::: pf-proof
 
-These are $0$ together with the three cube roots of unity from step <1>4, and each directly satisfies
+These are $0$ together with the three cube roots of unity from step [](#s1-4){.pf-ref}, and each directly satisfies
 $$
 c^2=\overline c.
 $$
@@ -176,7 +176,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 proves constancy, and step <1>5 gives all possible constant values.
+Step [](#s1-3){.pf-ref} proves constancy, and step [](#s1-5){.pf-ref} gives all possible constant values.
 
 :::
 

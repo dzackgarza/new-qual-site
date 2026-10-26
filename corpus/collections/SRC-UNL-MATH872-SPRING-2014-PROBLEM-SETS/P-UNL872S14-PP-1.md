@@ -60,7 +60,7 @@ V_i=\operatorname{vol}(A_i).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The plane and half-spaces are exactly
 \[
@@ -87,7 +87,7 @@ component is $J_{q,t}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For a block $A_i$,
 \[
@@ -115,7 +115,7 @@ can be computed by elementary multivariable geometry.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each fixed block $A_i$, the function
 \[
@@ -155,7 +155,7 @@ F_i(q_n,t_n)\to F_i(q,t).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For fixed $q\in S^2$, the function
 \[
@@ -178,7 +178,7 @@ If $t_1<t_2$, then
 \[
 H_{q,t_2}\subset H_{q,t_1},
 \]
-so the volume is nonincreasing. Continuity follows from step <1>3.
+so the volume is nonincreasing. Continuity follows from step [](#s1-3){.pf-ref}.
 
 Since $A_3$ is compact, the continuous function $x\mapsto x\cdot q$
 attains a minimum and maximum on $A_3$. Below the minimum, the whole block
@@ -188,7 +188,7 @@ lies in $H_{q,t}$; above the maximum, none of it does.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each $q\in S^2$, there exists $t_q\in\mathbb R$ such that
 \[
@@ -198,7 +198,7 @@ For each $q\in S^2$, there exists $t_q\in\mathbb R$ such that
 
 ::: pf-proof
 
-By step <1>4, the continuous function $F_3(q,-)$ takes the values
+By step [](#s1-4){.pf-ref}, the continuous function $F_3(q,-)$ takes the values
 $V_3$ and $0$. The intermediate value theorem gives a level where it
 equals $V_3/2$.
 
@@ -206,7 +206,7 @@ equals $V_3/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For fixed $q$, the function $F_3(q,t)$ is strictly decreasing
 while the plane $P_{q,t}$ passes through the interior of $A_3$.
@@ -238,23 +238,23 @@ F_3(q,t_1)-F_3(q,t_2)>0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The number $t_q$ from step <1>5 is unique.
+The number $t_q$ from step [](#s1-5){.pf-ref} is unique.
 
 
 ::: pf-proof
 
 The value $V_3/2$ is strictly between $0$ and $V_3$, so any level
 where it occurs lies between the minimum and maximum values of
-$x\cdot q$ on $A_3$. Step <1>6 gives strict decrease there, so the
+$x\cdot q$ on $A_3$. Step [](#s1-6){.pf-ref} gives strict decrease there, so the
 level is unique.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The plane $P_{q,t_q}$ bisects $A_3$:
 \[
@@ -269,7 +269,7 @@ The plane $P_{q,t_q}$ bisects $A_3$:
 
 ::: pf-proof
 
-Step <1>5 gives the first equality to $V_3/2$. The plane
+Step [](#s1-5){.pf-ref} gives the first equality to $V_3/2$. The plane
 $P_{q,t_q}$ has three-dimensional volume zero, so the two open
 half-spaces partition $A_3$ up to a null set. Hence the other half also
 has volume $V_3/2$.
@@ -278,7 +278,7 @@ has volume $V_3/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The half-volume level satisfies
 \[
@@ -298,9 +298,9 @@ H_{-q,-t_q}
 =
 J_{q,t_q}.
 \]
-By step <1>8, this half-space contains exactly half the volume of $A_3$.
+By step [](#s1-8){.pf-ref}, this half-space contains exactly half the volume of $A_3$.
 Thus $-t_q$ is a half-volume level for direction $-q$. Uniqueness from
-step <1>7 gives
+step [](#s1-7){.pf-ref} gives
 \[
 t_{-q}=-t_q.
 \]
@@ -309,7 +309,7 @@ t_{-q}=-t_q.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The map
 \[
@@ -330,7 +330,7 @@ let
 \[
 t_{n_j}\to t.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 F_3(q,t)
 =
@@ -339,7 +339,7 @@ F_3(q_{n_j},t_{n_j})
 =
 \frac{V_3}{2}.
 \]
-Uniqueness in step <1>7 gives $t=t_q$. Therefore every convergent
+Uniqueness in step [](#s1-7){.pf-ref} gives $t=t_q$. Therefore every convergent
 subsequence of $(t_n)$ converges to $t_q$, forcing
 \[
 t_n\to t_q.
@@ -349,7 +349,7 @@ t_n\to t_q.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For $i=1,2$, the function
 \[
@@ -364,14 +364,14 @@ The map
 \[
 q\longmapsto(q,t_q)
 \]
-is continuous by step <1>10, and $F_i$ is continuous by step <1>3.
+is continuous by step [](#s1-10){.pf-ref}, and $F_i$ is continuous by step [](#s1-3){.pf-ref}.
 Their composition is $f_i$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For $i=1,2$,
 \[
@@ -382,7 +382,7 @@ f_i(-q)=V_i-f_i(q)}.
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 H_{-q,t_{-q}}
 =
@@ -410,7 +410,7 @@ V_i-f_i(q).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Define
 \[
@@ -423,13 +423,13 @@ Then $F$ is continuous.
 
 ::: pf-proof
 
-This follows from step <1>11 componentwise.
+This follows from step [](#s1-11){.pf-ref} componentwise.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 By the Borsuk--Ulam theorem, there exists $q\in S^2$ such that
 \[
@@ -444,15 +444,15 @@ The Borsuk--Ulam theorem states that every continuous map
 S^2\to\mathbb R^2
 \]
 takes the same value at some antipodal pair. Apply it to the map in step
-<1>13.
+[](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
-For the $q$ from step <1>14,
+For the $q$ from step [](#s1-14){.pf-ref},
 \[
 \boxed{
 f_i(q)=\frac{V_i}{2}
@@ -462,11 +462,11 @@ f_i(q)=\frac{V_i}{2}
 
 ::: pf-proof
 
-By step <1>14,
+By step [](#s1-14){.pf-ref},
 \[
 f_i(q)=f_i(-q).
 \]
-Step <1>12 gives
+Step [](#s1-12){.pf-ref} gives
 \[
 f_i(-q)=V_i-f_i(q).
 \]
@@ -479,7 +479,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The plane
 \[
@@ -490,7 +490,7 @@ simultaneously bisects all three blocks $(A_1,A_2,A_3)$.
 
 ::: pf-proof
 
-Step <1>8 says this plane bisects $A_3$. Step <1>15 says its
+Step [](#s1-8){.pf-ref} says this plane bisects $A_3$. Step [](#s1-15){.pf-ref} says its
 $H_{q,t_q}$-side contains half the volume of each of $A_1$ and $A_2$;
 since the plane itself has zero volume, their other halves also have half
 the volume. Thus all three blocks are bisected by the same plane.
@@ -501,8 +501,8 @@ the volume. Thus all three blocks are bisected by the same plane.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 address part (a), steps <1>3--<1>10 prove part (b), step
-<1>11 proves part (c), and steps <1>12--<1>16 prove part (d).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} address part (a), steps [](#s1-3){.pf-ref} through [](#s1-10){.pf-ref} prove part (b), step
+[](#s1-11){.pf-ref} proves part (c), and steps [](#s1-12){.pf-ref} through [](#s1-16){.pf-ref} prove part (d).
 
 :::
 

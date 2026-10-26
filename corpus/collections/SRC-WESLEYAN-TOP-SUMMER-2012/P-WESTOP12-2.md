@@ -47,7 +47,7 @@ is exact, and $i,p$ are chain maps.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The induced long exact sequence is
 \[
@@ -79,7 +79,7 @@ The remaining steps define its maps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -138,7 +138,7 @@ Hence the map is well defined on homology classes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -157,7 +157,7 @@ p_*([b])
 
 ::: pf-proof
 
-The proof is identical to step <1>2.
+The proof is identical to step [](#s1-2){.pf-ref}.
 If
 \[
 b\in Z_n(B),
@@ -188,7 +188,7 @@ Thus $p_*$ is well defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 To define the connecting homomorphism, let
 \[
@@ -225,7 +225,7 @@ Surjectivity of $p_n$ follows from exactness of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -261,7 +261,7 @@ p_{n-1}(d_Bb)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Exactness gives a unique element
 \[
@@ -277,7 +277,7 @@ d_Bb.
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 d_Bb
 \in
@@ -301,13 +301,13 @@ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The element
 \[
 a
 \]
-from step <1>6 is a cycle:
+from step [](#s1-6){.pf-ref} is a cycle:
 \[
 d_Aa=0.
 \]
@@ -348,7 +348,7 @@ d_Aa=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 \[
@@ -364,14 +364,14 @@ H_{n-1}(A).
 
 ::: pf-proof
 
-Step <1>7 shows that $a$ is a cycle.
+Step [](#s1-7){.pf-ref} shows that $a$ is a cycle.
 The next steps verify independence of all choices.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The class
 \[
@@ -443,7 +443,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The class
 \[
@@ -516,7 +516,7 @@ Hence the homology class is independent of the representative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The connecting map
 \[
@@ -578,7 +578,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence every map in the long exact sequence
 \[
@@ -599,8 +599,8 @@ is explicitly defined and well defined.
 
 ::: pf-proof
 
-Steps <1>2--<1>3 define and verify the induced maps.
-Steps <1>4--<1>11 define and verify the connecting homomorphism.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} define and verify the induced maps.
+Steps [](#s1-4){.pf-ref} through [](#s1-11){.pf-ref} define and verify the connecting homomorphism.
 
 :::
 
@@ -608,7 +608,7 @@ Steps <1>4--<1>11 define and verify the connecting homomorphism.
 
 ::: pf-qed
 
-Step <1>1 states the requested long exact sequence, and step <1>12 supplies
+Step [](#s1-1){.pf-ref} states the requested long exact sequence, and step [](#s1-12){.pf-ref} supplies
 all map definitions and well-definedness checks requested by the problem.
 
 :::

@@ -37,7 +37,7 @@ Check that if $C$ is symmetric, then $\Phi_C$ is self-adjoint.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For matrices
 \[
@@ -75,7 +75,7 @@ Summing over $i$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 \[
@@ -89,7 +89,7 @@ is bilinear and symmetric.
 ::: pf-proof
 
 Bilinearity follows from bilinearity of matrix multiplication and linearity of trace and transpose.
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \langle A,B\rangle
 =
@@ -104,7 +104,7 @@ By step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every matrix $A$,
 \[
@@ -121,14 +121,14 @@ A=0.
 
 ::: pf-proof
 
-Apply step <1>1 with $B=A$.
+Apply step [](#s1-1){.pf-ref} with $B=A$.
 The sum of squares is nonnegative and vanishes exactly when every entry $a_{ij}$ is zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -146,13 +146,13 @@ M_{n\times n}(\mathbb R).
 
 ::: pf-proof
 
-Steps <1>2--<1>3 verify bilinearity, symmetry, and positive definiteness.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} verify bilinearity, symmetry, and positive definiteness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For all matrices $A,B$,
 \[
@@ -206,7 +206,7 @@ A(B^TC-CB^T)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The adjoint of $\Phi_C$ is
 \[
@@ -234,7 +234,7 @@ A(\Phi_C^*(B))^T
 \bigr)
 \]
 for every $A$.
-By step <1>5, it is enough to require
+By step [](#s1-5){.pf-ref}, it is enough to require
 \[
 (\Phi_C^*(B))^T
 =
@@ -251,7 +251,7 @@ C^TB-BC^T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $C$ is symmetric, then $\Phi_C$ is self-adjoint.
 
@@ -262,7 +262,7 @@ If
 \[
 C^T=C,
 \]
-step <1>6 gives
+step [](#s1-6){.pf-ref} gives
 \[
 \Phi_C^*
 =
@@ -279,7 +279,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every $A$,
 \[
@@ -308,14 +308,14 @@ Using cyclicity of trace,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The map $\Phi_C$ is not onto.
 
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \operatorname{im}\Phi_C
 \subseteq
@@ -341,7 +341,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>4 proves part (a), steps <1>6--<1>7 prove part (b), and step <1>9 proves part (c).
+Step [](#s1-4){.pf-ref} proves part (a), steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} prove part (b), and step [](#s1-9){.pf-ref} proves part (c).
 
 :::
 

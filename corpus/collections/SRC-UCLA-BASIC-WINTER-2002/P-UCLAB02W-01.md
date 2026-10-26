@@ -48,7 +48,7 @@ For fixed $x\in I$, continuity of $f$ on $I\times[a,b]$ implies continuity of th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $x_0\in I$. There is $r>0$ such that
 $$
@@ -68,7 +68,7 @@ Because $I$ is open, choose $r>0$ with the displayed inclusion. The set $K$ is c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0<\abs h<r$ and every $y\in[a,b]$, there exists a point $\xi_{h,y}$ between $x_0$ and $x_0+h$ such that
 $$
@@ -85,7 +85,7 @@ For fixed $y$, the one-variable function $t\mapsto f(t,y)$ is continuous on the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 As $h\to0$,
 $$
@@ -98,11 +98,11 @@ uniformly for $y\in[a,b]$.
 
 ::: pf-proof
 
-Let $\varepsilon>0$. By uniform continuity from step <1>2, there exists $\delta>0$ such that whenever $(s,y),(t,y)\in K$ and $\abs{s-t}<\delta$,
+Let $\varepsilon>0$. By uniform continuity from step [](#s1-2){.pf-ref}, there exists $\delta>0$ such that whenever $(s,y),(t,y)\in K$ and $\abs{s-t}<\delta$,
 $$
 \abs{\frac{\partial f}{\partial x}(s,y)-\frac{\partial f}{\partial x}(t,y)}<\varepsilon.
 $$
-If $0<\abs h<\min\{r,\delta\}$, then step <1>3 gives $\abs{\xi_{h,y}-x_0}\le\abs h<\delta$ for every $y\in[a,b]$. Hence
+If $0<\abs h<\min\{r,\delta\}$, then step [](#s1-3){.pf-ref} gives $\abs{\xi_{h,y}-x_0}\le\abs h<\delta$ for every $y\in[a,b]$. Hence
 $$
 \abs{
 \frac{f(x_0+h,y)-f(x_0,y)}{h}
@@ -116,7 +116,7 @@ for every $y\in[a,b]$. This is uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $F$ is differentiable at $x_0$ and
 $$
@@ -154,13 +154,13 @@ $$
 }.
 \end{aligned}
 $$
-The supremum tends to $0$ by step <1>4. Hence the difference quotient for $F$ converges to the displayed integral.
+The supremum tends to $0$ by step [](#s1-4){.pf-ref}. Hence the difference quotient for $F$ converges to the displayed integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus, under the hypotheses stated above,
 $$
@@ -175,7 +175,7 @@ for every $x\in I$.
 
 ::: pf-proof
 
-The point $x_0\in I$ was arbitrary, and step <1>5 proves the formula at every such point.
+The point $x_0\in I$ was arbitrary, and step [](#s1-5){.pf-ref} proves the formula at every such point.
 
 :::
 
@@ -183,7 +183,7 @@ The point $x_0\in I$ was arbitrary, and step <1>5 proves the formula at every su
 
 ::: pf-qed
 
-Step <1>6 gives the requested differentiation-under-the-integral formula under the sufficient hypotheses stated at the beginning of the solution.
+Step [](#s1-6){.pf-ref} gives the requested differentiation-under-the-integral formula under the sufficient hypotheses stated at the beginning of the solution.
 
 :::
 

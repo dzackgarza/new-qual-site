@@ -27,7 +27,7 @@ If the formula $A \vee B \rightarrow \neg C \vee D$ is true, which of the follow
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The contrapositive of an implication $P\to Q$ is $\neg Q\to\neg P$.
 
@@ -40,7 +40,7 @@ The formulas $P\to Q$ and $\neg Q\to\neg P$ have the same truth table: both are 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the contrapositive is
 $$
@@ -84,7 +84,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Substitute the expressions from step <1>2 into the contrapositive form in step <1>1.
+Substitute the expressions from step [](#s1-2){.pf-ref} into the contrapositive form in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -92,7 +92,7 @@ Substitute the expressions from step <1>2 into the contrapositive form in step <
 
 ::: pf-qed
 
-Step <1>3 gives the required formula.
+Step [](#s1-3){.pf-ref} gives the required formula.
 
 :::
 

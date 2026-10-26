@@ -26,7 +26,7 @@ Let $(X_a)_{a\in A}$ be an arbitrary family of spaces.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Tychonoff product topology on
 \[
@@ -84,7 +84,7 @@ It remains to verify the topology axioms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -110,7 +110,7 @@ which is also open in \(X_a\). Thus both sets belong to \(\mathcal T\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The collection \(\mathcal T\) is closed under arbitrary unions.
 
@@ -132,7 +132,7 @@ Each \(G_i\cap X_a\) is open in \(X_a\), so the union is open in \(X_a\). Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The collection \(\mathcal T\) is closed under finite intersections.
 
@@ -150,7 +150,7 @@ which is open in \(X_a\). Hence \(G\cap H\in\mathcal T\). By induction, the same
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore \(\mathcal T\) is a topology, and
 \[
@@ -161,7 +161,7 @@ denotes \(\bigcup_{a\in A}X_a\) equipped with this topology.
 
 ::: pf-proof
 
-Steps <1>3, <1>4, and <1>5 verify the three topology axioms.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref} verify the three topology axioms.
 
 :::
 
@@ -169,7 +169,7 @@ Steps <1>3, <1>4, and <1>5 verify the three topology axioms.
 
 ::: pf-qed
 
-Step <1>1 defines the Tychonoff product topology, and step <1>6 defines and verifies the topology on the topological sum.
+Step [](#s1-1){.pf-ref} defines the Tychonoff product topology, and step [](#s1-6){.pf-ref} defines and verifies the topology on the topological sum.
 
 :::
 

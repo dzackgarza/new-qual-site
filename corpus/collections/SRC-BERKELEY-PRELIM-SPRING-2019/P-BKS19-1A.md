@@ -48,7 +48,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every solution has the form
 $$
@@ -69,7 +69,7 @@ whose three distinct roots are $1$, $\omega$, and $\overline\omega$. The standar
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The condition $y(t)\to0$ as $t\to\infty$ forces $c_0=0$.
 
@@ -80,7 +80,7 @@ Since
 $$
 \operatorname{Re}(\omega)=\operatorname{Re}(\overline\omega)=-\frac12,
 $$
-both $e^{\omega t}$ and $e^{\overline\omega t}$ tend to $0$ as $t\to\infty$. Hence step <1>1 gives
+both $e^{\omega t}$ and $e^{\overline\omega t}$ tend to $0$ as $t\to\infty$. Hence step [](#s1-1){.pf-ref} gives
 $$
 c_0e^t
 =
@@ -93,7 +93,7 @@ If $c_0\neq0$, then $|c_0e^t|=|c_0|e^t\to\infty$, a contradiction. Thus $c_0=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -103,7 +103,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 y(t)=c_1e^{\omega t}+c_2e^{\overline\omega t}.
 $$
@@ -123,7 +123,7 @@ Both $\omega$ and $\overline\omega$ are roots of $r^2+r+1$, so both parenthesize
 
 ::: pf-qed
 
-Step <1>3 proves the required identity.
+Step [](#s1-3){.pf-ref} proves the required identity.
 
 :::
 

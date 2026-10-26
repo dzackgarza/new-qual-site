@@ -25,7 +25,7 @@ Find $\sin^{100} 0.1$ with $10\%$ accuracy.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The alternating Taylor series for sine gives
 $$
@@ -53,7 +53,7 @@ bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Dividing by $0.1$ gives
 $$
@@ -75,13 +75,13 @@ and
 $$
 \frac{0.1^4}{120}=\frac1{1,200,000},
 $$
-the bounds follow from step <1>1.
+the bounds follow from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -108,7 +108,7 @@ $$
 -u.
 $$
 
-For the lower bound in step <1>2, take $u=1/600$. Then
+For the lower bound in step [](#s1-2){.pf-ref}, take $u=1/600$. Then
 $$
 100\log r
 >
@@ -119,7 +119,7 @@ $$
 -0.167.
 $$
 
-For the upper bound, step <1>2 gives
+For the upper bound, step [](#s1-2){.pf-ref} gives
 $$
 r
 <
@@ -139,7 +139,7 @@ Exponentiating gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Numerically,
 $$
@@ -153,7 +153,7 @@ $$
 
 ::: pf-proof
 
-The endpoint exponentials in step <1>3 satisfy
+The endpoint exponentials in step [](#s1-3){.pf-ref} satisfy
 $$
 e^{-0.167}>0.8462
 $$
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -198,13 +198,13 @@ $$
 =
 10^{-100}r^{100}.
 $$
-Apply step <1>4.
+Apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus a convenient answer with much better than $10\%$ accuracy is
 $$
@@ -214,7 +214,7 @@ $$
 
 ::: pf-proof
 
-The interval in step <1>5 has relative width far below $10\%$, and the stated
+The interval in step [](#s1-5){.pf-ref} has relative width far below $10\%$, and the stated
 approximation lies inside that interval.
 
 :::
@@ -223,7 +223,7 @@ approximation lies inside that interval.
 
 ::: pf-qed
 
-Step <1>6 gives the requested approximation.
+Step [](#s1-6){.pf-ref} gives the requested approximation.
 
 :::
 

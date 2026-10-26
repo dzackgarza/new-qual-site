@@ -41,7 +41,7 @@ g_n(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For almost every \(x\in X\),
 \[
@@ -70,7 +70,7 @@ Subtract.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(n\) and almost every \(x\),
 \[
@@ -104,7 +104,7 @@ The left-hand side is \(|g_n(x)|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 \[
@@ -121,7 +121,7 @@ This is exactly the definition of membership in \(L^1(\mu)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, by the dominated convergence theorem,
 \[
@@ -134,13 +134,13 @@ Therefore, by the dominated convergence theorem,
 
 ::: pf-proof
 
-Use pointwise almost-everywhere convergence from step <1>1 and domination by the integrable function \(|f|\) from steps <1>2--<1>3.
+Use pointwise almost-everywhere convergence from step [](#s1-1){.pf-ref} and domination by the integrable function \(|f|\) from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every \(n\),
 \[
@@ -172,7 +172,7 @@ Integrate term by term.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -185,13 +185,13 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By hypothesis,
 \[
@@ -208,7 +208,7 @@ This is assumption (ii).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -219,7 +219,7 @@ Therefore
 
 ::: pf-proof
 
-From step <1>6,
+From step [](#s1-6){.pf-ref},
 \[
 \|f_n-f\|_1
 =
@@ -229,7 +229,7 @@ From step <1>6,
 \|f_n\|_1-\|f_n-f\|_1
 \right).
 \]
-The first term tends to \(\|f\|_1\) by step <1>7, and the parenthesized term tends to \(\|f\|_1\) by step <1>6. Their difference tends to \(0\).
+The first term tends to \(\|f\|_1\) by step [](#s1-7){.pf-ref}, and the parenthesized term tends to \(\|f\|_1\) by step [](#s1-6){.pf-ref}. Their difference tends to \(0\).
 
 :::
 
@@ -237,7 +237,7 @@ The first term tends to \(\|f\|_1\) by step <1>7, and the parenthesized term ten
 
 ::: pf-qed
 
-Step <1>8 is the required \(L^1\)-convergence.
+Step [](#s1-8){.pf-ref} is the required \(L^1\)-convergence.
 
 :::
 

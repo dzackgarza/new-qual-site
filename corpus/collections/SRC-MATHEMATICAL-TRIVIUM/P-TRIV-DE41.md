@@ -21,7 +21,7 @@ Find the most general solution of $\left( { \frac { \partial } { \partial x } } 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic curves satisfy
 \[
@@ -44,7 +44,7 @@ The transport vector field is $\partial_x+\partial_y+\partial_z$. Along its inte
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along a characteristic with fixed $(\eta,\zeta)$, one has
 \[
@@ -62,13 +62,13 @@ Using $x$ itself as the characteristic parameter,
 \[
 \frac{df}{dx}=f_x+f_y+f_z.
 \]
-The PDE identifies this with $x-y$, while $y=x+\eta$ by step <1>1.
+The PDE identifies this with $x-y$, while $y=x+\eta$ by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Integration along the characteristic gives
 \[
@@ -79,13 +79,13 @@ where $C$ is an arbitrary function of two variables.
 
 ::: pf-proof
 
-Step <1>2 has constant right side along a fixed characteristic, so integration in $x$ gives the displayed formula. The integration constant may depend arbitrarily on the two independent characteristic invariants.
+Step [](#s1-2){.pf-ref} has constant right side along a fixed characteristic, so integration in $x$ gives the displayed formula. The integration constant may depend arbitrarily on the two independent characteristic invariants.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the most general solution is
 \[
@@ -97,7 +97,7 @@ where $\Phi$ is arbitrary.
 
 ::: pf-proof
 
-Substitute $\eta=y-x$ and $\zeta=z-x$ into step <1>3. Conversely,
+Substitute $\eta=y-x$ and $\zeta=z-x$ into step [](#s1-3){.pf-ref}. Conversely,
 \[
 (\partial_x+\partial_y+\partial_z)\Phi(y-x,z-x)=0
 \]
@@ -113,7 +113,7 @@ Thus every displayed function solves the PDE.
 
 ::: pf-qed
 
-Step <1>4 gives and verifies the general characteristic solution.
+Step [](#s1-4){.pf-ref} gives and verifies the general characteristic solution.
 
 :::
 

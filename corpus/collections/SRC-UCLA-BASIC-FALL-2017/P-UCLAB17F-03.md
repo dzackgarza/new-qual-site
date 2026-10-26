@@ -161,7 +161,7 @@ v_5=
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vectors $v_4$ and $v_5$ form a basis of $\mathbb R^2$.
 
@@ -175,7 +175,7 @@ Since $\mathbb R^2$ has dimension $2$, they form a basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For arbitrary constants
 \[
@@ -225,7 +225,7 @@ x'(t).
 
 ::: pf-step
 
-Every solution has the form in step <1>5.
+Every solution has the form in step [](#s1-5){.pf-ref}.
 
 
 ::: pf-proof
@@ -234,13 +234,13 @@ For any initial value
 \[
 x(0)\in\mathbb R^2,
 \]
-step <1>4 gives unique constants $c_4,c_5$ such that
+step [](#s1-4){.pf-ref} gives unique constants $c_4,c_5$ such that
 \[
 x(0)
 =
 c_4v_4+c_5v_5.
 \]
-The function in step <1>5 has exactly this initial value.
+The function in step [](#s1-5){.pf-ref} has exactly this initial value.
 Uniqueness for linear systems with constant coefficients implies that it is the unique solution with that initial value.
 Thus every solution is obtained in this way.
 
@@ -248,7 +248,7 @@ Thus every solution is obtained in this way.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the general solution is
 \[
@@ -273,7 +273,7 @@ c_4,c_5\in\mathbb R.
 
 ::: pf-proof
 
-Expand the vector formula from step <1>5 coordinatewise.
+Expand the vector formula from step [](#s1-5){.pf-ref} coordinatewise.
 
 :::
 
@@ -281,7 +281,7 @@ Expand the vector formula from step <1>5 coordinatewise.
 
 ::: pf-qed
 
-Step <1>7 gives all solutions of the system.
+Step [](#s1-7){.pf-ref} gives all solutions of the system.
 
 :::
 

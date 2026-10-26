@@ -88,7 +88,7 @@ This is the definition of separability.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Fix
 \[
@@ -129,7 +129,7 @@ Choose one corresponding point $z_j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -155,7 +155,7 @@ is the image of a subset of $\mathbb N$ and is countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every
 \[
@@ -185,7 +185,7 @@ Then
 \[
 B_{\varepsilon/2}(g_j)
 \]
-meets $\Phi$, so a point $z_j\in Z_\varepsilon$ was selected in step <1>3 with
+meets $\Phi$, so a point $z_j\in Z_\varepsilon$ was selected in step [](#s1-3){.pf-ref} with
 \[
 \|\phi_{z_j}-g_j\|_\infty
 <
@@ -202,7 +202,7 @@ The triangle inequality gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence for every
 \[
@@ -224,7 +224,7 @@ satisfies
 
 ::: pf-proof
 
-The supremum-norm inequality in step <1>5 means precisely that
+The supremum-norm inequality in step [](#s1-5){.pf-ref} means precisely that
 \[
 \sup_{y\in X}
 |d(x,y)-d(z,y)|
@@ -237,7 +237,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every positive integer $m$, choose the countable set
 \[
@@ -258,14 +258,14 @@ Each
 \[
 Z_{1/m}
 \]
-is countable by step <1>4.
+is countable by step [](#s1-4){.pf-ref}.
 A countable union of countable sets is countable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The set $Z$ is dense in $X$.
 
@@ -288,7 +288,7 @@ so large that
 \[
 \frac1m<\eta.
 \]
-By step <1>6, there exists
+By step [](#s1-6){.pf-ref}, there exists
 \[
 z\in Z_{1/m}
 \subseteq Z
@@ -320,7 +320,7 @@ Thus every open ball around $x$ meets $Z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -330,7 +330,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>7 gives a countable subset $Z\subseteq X$, and step <1>8 shows that it is dense.
+Step [](#s1-7){.pf-ref} gives a countable subset $Z\subseteq X$, and step [](#s1-8){.pf-ref} shows that it is dense.
 This is the definition of separability.
 
 :::
@@ -339,7 +339,7 @@ This is the definition of separability.
 
 ::: pf-qed
 
-Step <1>6 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

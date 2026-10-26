@@ -24,7 +24,7 @@ Regard $\mathbb Z$ as an additive group when discussing group homomorphisms.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\phi:(\mathbb Z,+)\to(\mathbb Z,+)$ is a group homomorphism and
 \[
@@ -59,7 +59,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, for every $k\in\mathbb Z$, the map
 \[
@@ -82,7 +82,7 @@ For $m,n\in\mathbb Z$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the group homomorphisms $\mathbb Z\to\mathbb Z$ are exactly
 \[
@@ -92,13 +92,13 @@ Hence the group homomorphisms $\mathbb Z\to\mathbb Z$ are exactly
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 prove both directions.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove both directions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\phi:\mathbb Z\to\mathbb Z$ is a ring homomorphism, then
 \[
@@ -108,7 +108,7 @@ If $\phi:\mathbb Z\to\mathbb Z$ is a ring homomorphism, then
 
 ::: pf-proof
 
-Every ring homomorphism is additive, so by step <1>1,
+Every ring homomorphism is additive, so by step [](#s1-1){.pf-ref},
 \[
 \phi(n)=n\phi(1).
 \]
@@ -132,7 +132,7 @@ Since $\mathbb Z$ is an integral domain, $k=0$ or $k=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ring homomorphisms are exactly
 \[
@@ -146,7 +146,7 @@ and
 
 ::: pf-proof
 
-Step <1>4 leaves only $\phi(1)=0$ or $\phi(1)=1$, and step <1>1 then gives
+Step [](#s1-4){.pf-ref} leaves only $\phi(1)=0$ or $\phi(1)=1$, and step [](#s1-1){.pf-ref} then gives
 the two displayed maps. Both preserve addition and multiplication.
 
 :::
@@ -155,7 +155,7 @@ the two displayed maps. Both preserve addition and multiplication.
 
 ::: pf-qed
 
-Step <1>3 classifies the group homomorphisms and step <1>5 classifies the ring
+Step [](#s1-3){.pf-ref} classifies the group homomorphisms and step [](#s1-5){.pf-ref} classifies the ring
 homomorphisms.
 
 :::

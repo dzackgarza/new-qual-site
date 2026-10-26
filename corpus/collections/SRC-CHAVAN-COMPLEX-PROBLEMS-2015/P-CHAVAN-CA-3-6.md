@@ -23,7 +23,7 @@ has exactly one solution in the right half-plane, and that this solution is real
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every solution with $\operatorname{Re}z>0$ is real.
 
@@ -64,7 +64,7 @@ solution in the right half-plane is real.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The real function
 $$
@@ -91,7 +91,7 @@ the definition of $h$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a unique $x_\lambda>0$ such that
 $$
@@ -101,15 +101,15 @@ $$
 
 ::: pf-proof
 
-Since $\lambda>1$, step <1>2 and the intermediate value theorem give
+Since $\lambda>1$, step [](#s1-2){.pf-ref} and the intermediate value theorem give
 an $x_\lambda>0$ with $h(x_\lambda)=\lambda$. Strict monotonicity in
-step <1>2 makes this $x_\lambda$ unique.
+step [](#s1-2){.pf-ref} makes this $x_\lambda$ unique.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equation $\lambda=z+e^{-z}$ has exactly one solution in the right half-plane, namely the real number
 $$
@@ -119,9 +119,9 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives one positive real solution, hence one solution in the
-right half-plane. Step <1>1 shows that every solution in that
-half-plane is real, and step <1>3 shows that the real solution is
+Step [](#s1-3){.pf-ref} gives one positive real solution, hence one solution in the
+right half-plane. Step [](#s1-1){.pf-ref} shows that every solution in that
+half-plane is real, and step [](#s1-3){.pf-ref} shows that the real solution is
 unique.
 
 :::
@@ -130,7 +130,7 @@ unique.
 
 ::: pf-qed
 
-Step <1>4 gives both the uniqueness and the reality of the required
+Step [](#s1-4){.pf-ref} gives both the uniqueness and the reality of the required
 solution.
 
 :::

@@ -24,7 +24,7 @@ for some $p\in\CC$ and $\alpha\in\RR$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The affine map
 $$
@@ -46,7 +46,7 @@ axis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Polar coordinates give a homeomorphism
 $$
@@ -73,7 +73,7 @@ is continuous as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Any two curves in $(0,\infty)\times(0,2\pi)$ with the same endpoints are
 homotopic relative to those endpoints.
@@ -94,7 +94,7 @@ and fixes both endpoints throughout the homotopy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Any two curves in $\CC\setminus L$ with the same endpoints are homotopic
 relative to those endpoints.
@@ -103,21 +103,21 @@ relative to those endpoints.
 ::: pf-proof
 
 Transport the curves by the homeomorphism $P\circ T$, use the homotopy from
-step <1>3, and transport that homotopy back by $(P\circ T)^{-1}$.
+step [](#s1-3){.pf-ref}, and transport that homotopy back by $(P\circ T)^{-1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $\CC\setminus L$ is simply connected.
 
 
 ::: pf-proof
 
-Step <1>4 is precisely the homotopy definition of simple connectivity used in
-the source. In particular, the space is a region because steps <1>1 and <1>2
+Step [](#s1-4){.pf-ref} is precisely the homotopy definition of simple connectivity used in
+the source. In particular, the space is a region because steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}
 identify it with the connected open set $(0,\infty)\times(0,2\pi)$.
 
 :::
@@ -126,7 +126,7 @@ identify it with the connected open set $(0,\infty)\times(0,2\pi)$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

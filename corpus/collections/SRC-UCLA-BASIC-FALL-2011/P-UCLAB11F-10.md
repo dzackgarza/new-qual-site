@@ -56,7 +56,7 @@ Hence the polynomial $t^3-1$ annihilates $A$, so the minimal polynomial of $A$ d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix $A$ is diagonalizable over $\mathbb C$.
 
@@ -107,7 +107,7 @@ so $\lambda$ is one of the three cube roots of unity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The eigenvalue $1$ occurs with odd multiplicity, and the multiplicities of $\omega$ and $\overline\omega$ are equal.
 
@@ -126,7 +126,7 @@ is even. The remaining multiplicity, belonging to the only real cube root $1$, i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There are only two spectral possibilities:
 \[
@@ -138,7 +138,7 @@ There are only two spectral possibilities:
 
 ::: pf-proof
 
-By step <1>4, the multiplicity of $1$ is either $1$ or $3$. If it is $3$, there are no other eigenvalues. If it is $1$, the remaining two eigenvalues must be the conjugate pair $\omega,\overline\omega$.
+By step [](#s1-4){.pf-ref}, the multiplicity of $1$ is either $1$ or $3$. If it is $3$, there are no other eigenvalues. If it is $1$, the remaining two eigenvalues must be the conjugate pair $\omega,\overline\omega$.
 
 :::
 
@@ -146,7 +146,7 @@ By step <1>4, the multiplicity of $1$ is either $1$ or $3$. If it is $3$, there 
 
 ::: pf-step
 
-In the first case of step <1>5,
+In the first case of step [](#s1-5){.pf-ref},
 \[
 A=I.
 \]
@@ -154,15 +154,15 @@ A=I.
 
 ::: pf-proof
 
-By step <1>2, $A$ is diagonalizable over $\mathbb C$. If all three eigenvalues are $1$, then in an eigenbasis its matrix is the identity. Hence the operator itself is the identity.
+By step [](#s1-2){.pf-ref}, $A$ is diagonalizable over $\mathbb C$. If all three eigenvalues are $1$, then in an eigenbasis its matrix is the identity. Hence the operator itself is the identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-In the second case of step <1>5, there is a real basis
+In the second case of step [](#s1-5){.pf-ref}, there is a real basis
 \[
 u_1,u_2,u_3
 \]
@@ -214,7 +214,7 @@ Replacing $v$ by $-v$ if necessary gives the displayed $2\times2$ rotation block
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus $A$ is similar over $\mathbb R$ to
 \[
@@ -235,7 +235,7 @@ with
 ::: pf-proof
 
 If $A=I$, take $\theta=0$.
-In the second case, step <1>7 gives the rotation block with
+In the second case, step [](#s1-7){.pf-ref} gives the rotation block with
 \[
 \cos\theta=-\frac12,
 \qquad
@@ -261,7 +261,7 @@ so the corresponding rotation block has cube equal to the identity.
 
 ::: pf-qed
 
-Step <1>8 gives both the required real similarity form and all possible values of $\theta$.
+Step [](#s1-8){.pf-ref} gives both the required real similarity form and all possible values of $\theta$.
 
 :::
 

@@ -29,7 +29,7 @@ c. Describe one nonabelian group of order 2020.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every group of order $2020$ is solvable.
 
@@ -50,7 +50,7 @@ Hence $n_{101}=1$, so the Sylow $101$-subgroup $N$ is normal. The quotient $G/N$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The abelian groups of order $2020$ are, up to isomorphism, $C_{2020}$ and $C_2\times C_{1010}$.
 
@@ -70,7 +70,7 @@ C_2\times C_2\times C_5\times C_{101}\cong C_2\times C_{1010}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The group $D_{202}\times C_{10}$ is a nonabelian group of order $2020$.
 
@@ -89,7 +89,7 @@ where $D_{202}$ denotes the dihedral group of order $202$; this has order $2020$
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>3 prove the three requested assertions.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} prove the three requested assertions.
 
 :::
 

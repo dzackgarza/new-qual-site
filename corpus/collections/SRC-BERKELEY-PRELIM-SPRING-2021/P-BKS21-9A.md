@@ -37,7 +37,7 @@ be the set of distinct conjugates of $H$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The number of distinct conjugates of $H$ is
 $$
@@ -53,7 +53,7 @@ The group $G$ acts on its subgroups by conjugation. The stabilizer of $H$ for th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -71,13 +71,13 @@ Hence
 $$
 [G:N]\leq [G:H].
 $$
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The union of all conjugates satisfies
 $$
@@ -97,14 +97,14 @@ Every $K\in\mathcal C$ is conjugate to $H$, so $|K|=|H|$. Also every subgroup $K
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The union of the conjugates has strictly fewer than $|G|$ elements.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 \left|
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -139,7 +139,7 @@ $$
 
 ::: pf-proof
 
-If the union were all of $G$, its cardinality would be $|G|$, contradicting step <1>4.
+If the union were all of $G$, its cardinality would be $|G|$, contradicting step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -147,7 +147,7 @@ If the union were all of $G$, its cardinality would be $|G|$, contradicting step
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

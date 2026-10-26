@@ -35,7 +35,7 @@ f=u+iv.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 At every point
 \[
@@ -67,7 +67,7 @@ Every holomorphic function satisfies the Cauchy--Riemann equations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along the real axis,
 \[
@@ -112,7 +112,7 @@ Exponential decay dominates every power, proving the limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Along the imaginary axis,
 \[
@@ -141,7 +141,7 @@ f(iy)=e^{-1/y^4},
 \]
 which is real.
 
-Exactly as in step <1>2,
+Exactly as in step [](#s1-2){.pf-ref},
 \[
 \frac{e^{-1/y^4}}{|y|}
 \longrightarrow0.
@@ -151,7 +151,7 @@ Exactly as in step <1>2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 All four first partial derivatives of $u$ and $v$ exist at the
 origin and satisfy
@@ -174,7 +174,7 @@ Along the real axis,
 \[
 v(x,0)=0
 \]
-because $f(x)$ is real. Step <1>2 therefore gives
+because $f(x)$ is real. Step [](#s1-2){.pf-ref} therefore gives
 \[
 u_x(0,0)=0,
 \qquad
@@ -185,7 +185,7 @@ Along the imaginary axis,
 \[
 v(0,y)=0
 \]
-because $f(iy)$ is real. Step <1>3 therefore gives
+because $f(iy)$ is real. Step [](#s1-3){.pf-ref} therefore gives
 \[
 u_y(0,0)=0,
 \qquad
@@ -196,7 +196,7 @@ v_y(0,0)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the Cauchy--Riemann equations hold at the origin:
 \[
@@ -208,13 +208,13 @@ u_y(0,0)=-v_x(0,0).
 
 ::: pf-proof
 
-By step <1>4, both sides of both equations are zero.
+By step [](#s1-4){.pf-ref}, both sides of both equations are zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Nevertheless, $f$ is not continuous at the origin.
 
@@ -263,7 +263,7 @@ Thus $f$ is not continuous at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently $f$ is not complex differentiable at the origin and
 is not analytic on $\mathbb C$.
@@ -272,7 +272,7 @@ is not analytic on $\mathbb C$.
 ::: pf-proof
 
 Complex differentiability at a point implies continuity at that point.
-Step <1>6 shows that $f$ is not continuous at $0$, so it cannot be complex
+Step [](#s1-6){.pf-ref} shows that $f$ is not continuous at $0$, so it cannot be complex
 differentiable there.
 
 Hence $f$ is not holomorphic on any neighborhood of $0$ and therefore is
@@ -282,7 +282,7 @@ not analytic on all of $\mathbb C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The example is possible because the Cauchy--Riemann equations at a
 point, by themselves, do not imply complex differentiability there.
@@ -290,8 +290,8 @@ point, by themselves, do not imply complex differentiability there.
 
 ::: pf-proof
 
-Steps <1>1 and <1>5 show that the Cauchy--Riemann equations hold at every
-point. Step <1>7 shows that complex differentiability nevertheless fails at
+Steps [](#s1-1){.pf-ref} and [](#s1-5){.pf-ref} show that the Cauchy--Riemann equations hold at every
+point. Step [](#s1-7){.pf-ref} shows that complex differentiability nevertheless fails at
 $0$.
 
 The usual converse theorem requires additional regularity, for example
@@ -305,7 +305,7 @@ continuous at the origin.
 
 ::: pf-qed
 
-Step <1>8 explains exactly why there is no contradiction.
+Step [](#s1-8){.pf-ref} explains exactly why there is no contradiction.
 
 :::
 

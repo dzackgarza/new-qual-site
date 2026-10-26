@@ -34,7 +34,7 @@ Then $\Phi$ is a biholomorphism from $\mathbb C_+$ onto the unit disk $\mathbb D
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\mathbb C_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
 \[
@@ -77,7 +77,7 @@ The family $(g_j)$ is uniformly bounded by $1$, so Montel's theorem gives a loca
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The limit function $g$ is not identically equal to $1$.
 
@@ -96,7 +96,7 @@ so
 =
 \frac{2}{|w+i|}.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 |1-g_j(z_j)|
 =
@@ -120,27 +120,27 @@ Thus $g(z_\infty)\ne1$, so $g$ is not the constant function $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $g$ never takes the value $1$ on $\mathbb C_+$.
 
 
 ::: pf-proof
 
-The limit satisfies $|g|\le1$. If $g(z_0)=1$ at some interior point, then $|g|$ attains its maximum value $1$ at $z_0$. The maximum-modulus principle would force $g\equiv1$, contradicting step <1>3.
+The limit satisfies $|g|\le1$. If $g(z_0)=1$ at some interior point, then $|g|$ attains its maximum value $1$ at $z_0$. The maximum-modulus principle would force $g\equiv1$, contradicting step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The subsequence $(f_{n_j})$ converges uniformly on compact subsets of $\mathbb C_+$.
 
 
 ::: pf-proof
 
-Let $L\subset\mathbb C_+$ be compact. By steps <1>3 and <1>4, the continuous function $1-g$ has no zeros on $L$. Hence
+Let $L\subset\mathbb C_+$ be compact. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, the continuous function $1-g$ has no zeros on $L$. Hence
 \[
 \delta
 \coloneqq
@@ -180,7 +180,7 @@ uniformly on $L$. Since $L$ was arbitrary, the convergence is uniform on compact
 
 ::: pf-qed
 
-Step <1>5 gives the required locally uniformly convergent subsequence.
+Step [](#s1-5){.pf-ref} gives the required locally uniformly convergent subsequence.
 
 :::
 

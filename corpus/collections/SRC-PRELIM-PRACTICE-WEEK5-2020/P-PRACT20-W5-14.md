@@ -41,7 +41,7 @@ contains some nonzero element of the displayed set, so $d\ge2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $J=d\mathbb Z$ contains three of the five displayed integers, then
 those three integers have a common divisor $d>1$.
@@ -56,7 +56,7 @@ belong to $J$, then $d$ divides all three.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The only three-element subset of
 \[
@@ -97,7 +97,7 @@ Thus no other triple has a nontrivial common divisor.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The subgroup
 \[
@@ -129,7 +129,7 @@ Thus the other two numbers do not belong to $p\mathbb Z$.
 
 ::: pf-qed
 
-Steps <1>2 and <1>3 force the three members to be those in step <1>4, which
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} force the three members to be those in step [](#s1-4){.pf-ref}, which
 also shows that such a proper subgroup exists.
 
 :::

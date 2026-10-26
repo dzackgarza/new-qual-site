@@ -28,7 +28,7 @@ equivalently a reduction of the structure group from $GL_{2n}(\mathbb R)$ to $GL
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A complex vector bundle has a canonical orientation. Hence a necessary condition is
 \[
@@ -48,7 +48,7 @@ Thus a reduction to $GL_n(\mathbb C)$ reduces the real structure group to $GL^+_
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $TM$ is the underlying real bundle of a complex bundle $E$, then
 \[
@@ -71,7 +71,7 @@ Since $c_i(E)$ lies in degree $2i$, there are no odd-degree components, giving t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In particular,
 \[
@@ -85,7 +85,7 @@ Equivalently,
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 w_2(TM)=\rho_2(c_1(E)).
 \]
@@ -99,7 +99,7 @@ a mod-$2$ class lifts integrally exactly when its Bockstein vanishes. The Bockst
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Pontryagin classes must be expressible in terms of integral Chern classes by
 \[
@@ -128,7 +128,7 @@ If $x_j$ are the Chern roots of $E$, those of $\overline E$ are $-x_j$, yielding
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Euler class must agree with the top Chern class for the complex orientation:
 \[
@@ -152,7 +152,7 @@ Combining the two identities gives the characteristic-number condition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus any proposed complex structure requires integral classes
 \[
@@ -163,7 +163,7 @@ satisfying simultaneously
 \[
 \rho_2(c_i)=w_{2i}(TM),
 \]
-the Pontryagin identities of step <1>4, and
+the Pontryagin identities of step [](#s1-4){.pf-ref}, and
 \[
 c_n=e(TM).
 \]
@@ -171,20 +171,20 @@ c_n=e(TM).
 
 ::: pf-proof
 
-These are exactly the necessary identities from steps <1>2, <1>4, and <1>5 applied to the hypothetical complex tangent bundle $E=(TM,J)$.
+These are exactly the necessary identities from steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref} applied to the hypothetical complex tangent bundle $E=(TM,J)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Failure of any one of these identities obstructs a complex structure on $M$.
 
 
 ::: pf-proof
 
-If a complex structure existed, all identities in steps <1>1--<1>6 would necessarily hold. Their contrapositives therefore give obstructions. These conditions are not asserted to be sufficient in arbitrary dimension; higher obstruction classes may remain in the reduction problem
+If a complex structure existed, all identities in steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} would necessarily hold. Their contrapositives therefore give obstructions. These conditions are not asserted to be sufficient in arbitrary dimension; higher obstruction classes may remain in the reduction problem
 \[
 SO(2n)/U(n)\to BU(n)\to BSO(2n).
 \]
@@ -193,13 +193,13 @@ SO(2n)/U(n)\to BU(n)\to BSO(2n).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In summary, characteristic-class obstructions include
 \[
 \boxed{w_1=0,\quad w_{2i+1}=0,\quad W_3=\beta w_2=0,}
 \]
-together with compatibility of $w_{2i}$, $p_i$, and $e$ with integral Chern classes as in steps <1>2, <1>4, and <1>5.
+together with compatibility of $w_{2i}$, $p_i$, and $e$ with integral Chern classes as in steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}.
 
 
 ::: pf-proof
@@ -212,7 +212,7 @@ This simply collects the necessary conditions already proved.
 
 ::: pf-qed
 
-Steps <1>1--<1>8 provide the requested obstructions to reducing the tangent bundle to a complex vector bundle.
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} provide the requested obstructions to reducing the tangent bundle to a complex vector bundle.
 
 :::
 

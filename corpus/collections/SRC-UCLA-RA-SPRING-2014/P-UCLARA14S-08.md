@@ -39,7 +39,7 @@ E_1\!\left(\frac zn\right)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are constants $\delta>0$ and $C>0$ such that
 \[
@@ -80,7 +80,7 @@ Thus one may take $\delta=1/2$ and $C=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $R>0$, the series
 \[
@@ -100,7 +100,7 @@ Choose $N>2R$. Then for $n\ge N$ and $|z|\le R$,
 \le
 \frac12.
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \left|
 \Log\left(1-\frac zn\right)+\frac zn
@@ -120,14 +120,14 @@ the Weierstrass M-test gives uniform convergence of the tail on the closed disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The product defining $f$ converges uniformly on compact subsets of $\mathbb C$ to an entire function.
 
 
 ::: pf-proof
 
-Fix $R>0$ and choose $N>2R$ as in step <1>2. For $n\ge N$ and $|z|\le R$,
+Fix $R>0$ and choose $N>2R$ as in step [](#s1-2){.pf-ref}. For $n\ge N$ and $|z|\le R$,
 \[
 E_1\!\left(\frac zn\right)
 =
@@ -135,7 +135,7 @@ E_1\!\left(\frac zn\right)
 \Log\left(1-\frac zn\right)+\frac zn
 \right).
 \]
-By step <1>2, the sum of the exponents converges uniformly on $|z|\le R$. Therefore the tail product
+By step [](#s1-2){.pf-ref}, the sum of the exponents converges uniformly on $|z|\le R$. Therefore the tail product
 \[
 \prod_{n=N}^{\infty}
 E_1\!\left(\frac zn\right)
@@ -153,7 +153,7 @@ shows that the full product converges uniformly on $|z|\le R$ to a holomorphic f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $z\notin\mathbb N_{>0}$, then
 \[
@@ -163,7 +163,7 @@ f(z)\ne0.
 
 ::: pf-proof
 
-Fix such a $z$. Choose $N>|z|+1$. The tail product from step <1>3 is nonzero because it is the exponential of a convergent series. Every factor in the finite product
+Fix such a $z$. Choose $N>|z|+1$. The tail product from step [](#s1-3){.pf-ref} is nonzero because it is the exponential of a convergent series. Every factor in the finite product
 \[
 \prod_{n=1}^{N-1}
 \left(1-\frac zn\right)e^{z/n}
@@ -174,7 +174,7 @@ is also nonzero because $z\ne n$ for every positive integer $n$. Hence their pro
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every positive integer $m$ is a simple zero of $f$.
 
@@ -189,7 +189,7 @@ f(z)
 \prod_{n\ne m}
 \left(1-\frac zn\right)e^{z/n}.
 \]
-By the same compact-uniform convergence argument as in step <1>3, the product over $n\ne m$ defines a holomorphic function near $z=m$. Step <1>4 applied to the product with the $m$-th factor removed shows that its value at $m$ is nonzero.
+By the same compact-uniform convergence argument as in step [](#s1-3){.pf-ref}, the product over $n\ne m$ defines a holomorphic function near $z=m$. Step [](#s1-4){.pf-ref} applied to the product with the $m$-th factor removed shows that its value at $m$ is nonzero.
 
 The factor
 \[
@@ -201,7 +201,7 @@ has a simple zero at $z=m$, while $e^{z/m}$ is nonzero there. Therefore $f$ has 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 \[
@@ -217,7 +217,7 @@ is a nonconstant entire function whose zeros are exactly the positive natural nu
 
 ::: pf-proof
 
-Entirety is step <1>3, absence of all other zeros is step <1>4, and simplicity at every positive integer is step <1>5. Since the function has zeros, it is not constant.
+Entirety is step [](#s1-3){.pf-ref}, absence of all other zeros is step [](#s1-4){.pf-ref}, and simplicity at every positive integer is step [](#s1-5){.pf-ref}. Since the function has zeros, it is not constant.
 
 :::
 
@@ -225,7 +225,7 @@ Entirety is step <1>3, absence of all other zeros is step <1>4, and simplicity a
 
 ::: pf-qed
 
-Step <1>6 provides the required construction and verifies all of its properties.
+Step [](#s1-6){.pf-ref} provides the required construction and verifies all of its properties.
 
 :::
 

@@ -22,7 +22,7 @@ Show that R is a field.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every nonzero $a\in R$, the map
 $$
@@ -57,20 +57,20 @@ so $L_a$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every nonzero $a\in R$, the map $L_a$ is bijective.
 
 
 ::: pf-proof
 
-The set $R$ is finite. Any injective self-map of a finite set is surjective. Apply this to $L_a$ from step <1>1.
+The set $R$ is finite. Any injective self-map of a finite set is surjective. Apply this to $L_a$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ring $R$ has a multiplicative identity.
 
@@ -83,7 +83,7 @@ a\in R,
 \qquad
 a\ne0.
 $$
-By step <1>2, $L_a$ is surjective. Hence there exists
+By step [](#s1-2){.pf-ref}, $L_a$ is surjective. Hence there exists
 $$
 e\in R
 $$
@@ -124,7 +124,7 @@ Hence $e$ is a multiplicative identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every nonzero element of $R$ is invertible.
 
@@ -137,7 +137,7 @@ x\in R,
 \qquad
 x\ne0.
 $$
-By step <1>2, the multiplication map
+By step [](#s1-2){.pf-ref}, the multiplication map
 $$
 L_x:R\to R
 $$
@@ -149,7 +149,7 @@ such that
 $$
 xy=e,
 $$
-where $e$ is the identity from step <1>3. Since $R$ is commutative,
+where $e$ is the identity from step [](#s1-3){.pf-ref}. Since $R$ is commutative,
 $$
 yx=e
 $$
@@ -159,7 +159,7 @@ as well. Thus $y$ is the multiplicative inverse of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -169,7 +169,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, $R$ is a nonzero commutative ring with identity. By step <1>4, every nonzero element has a multiplicative inverse. This is exactly the definition of a field.
+By step [](#s1-3){.pf-ref}, $R$ is a nonzero commutative ring with identity. By step [](#s1-4){.pf-ref}, every nonzero element has a multiplicative inverse. This is exactly the definition of a field.
 
 :::
 
@@ -177,7 +177,7 @@ By step <1>3, $R$ is a nonzero commutative ring with identity. By step <1>4, eve
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

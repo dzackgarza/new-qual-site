@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative $f'(z)$ is nonzero throughout $A(r,R)$.
 
@@ -44,7 +44,7 @@ If $f'(z_0)=0$, then the local power-series expansion of the nonconstant holomor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The area $S$ of $f(A(r,R))$ is
 $$
@@ -66,7 +66,7 @@ u_x^2+u_y^2
 =
 \abs{f'(z)}^2
 $$
-by the Cauchy--Riemann equations. Step <1>1 gives local invertibility, and global injectivity gives multiplicity one. The change-of-variables formula therefore yields
+by the Cauchy--Riemann equations. Step [](#s1-1){.pf-ref} gives local invertibility, and global injectivity gives multiplicity one. The change-of-variables formula therefore yields
 $$
 \operatorname{area}(f(A(r,R)))
 =
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $\rho$ with $r\le\rho\le R$,
 $$
@@ -119,7 +119,7 @@ Uniform convergence of the derivative series on the compact annulus permits pass
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The area is
 $$
@@ -136,7 +136,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>2 and <1>3 and polar coordinates,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} and polar coordinates,
 $$
 \begin{aligned}
 S
@@ -181,7 +181,7 @@ Adding the zero $n=0$ term gives the displayed formula.
 
 ::: pf-step
 
-Every term in the series in step <1>4 is nonnegative.
+Every term in the series in step [](#s1-4){.pf-ref} is nonnegative.
 
 
 ::: pf-proof
@@ -200,7 +200,7 @@ and multiplying by the negative integer $n$ again gives a positive number.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The area $S$ is finite.
 
@@ -215,7 +215,7 @@ so it is bounded there. Hence
 $$
 \int_{A(r,R)}\abs{f'(z)}^2\,dA<\infty.
 $$
-By step <1>2, this integral is exactly $S$.
+By step [](#s1-2){.pf-ref}, this integral is exactly $S$.
 
 :::
 
@@ -223,7 +223,7 @@ By step <1>2, this integral is exactly $S$.
 
 ::: pf-qed
 
-Step <1>4 proves the stated area formula, and step <1>6 proves finiteness.
+Step [](#s1-4){.pf-ref} proves the stated area formula, and step [](#s1-6){.pf-ref} proves finiteness.
 
 :::
 

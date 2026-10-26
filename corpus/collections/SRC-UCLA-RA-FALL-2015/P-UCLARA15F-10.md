@@ -78,7 +78,7 @@ The only singularity is \(z=0\), and that point lies inside the removed small ha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -95,7 +95,7 @@ Apply Cauchy's theorem, equivalently the residue theorem with no poles inside th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On the large semicircle,
 \[
@@ -123,7 +123,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If \(|w|\le1\), then
 \[
@@ -154,7 +154,7 @@ e|w|.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence on the large semicircle,
 \[
@@ -166,17 +166,17 @@ Hence on the large semicircle,
 
 ::: pf-proof
 
-Apply step <1>5 with
+Apply step [](#s1-5){.pf-ref} with
 \[
 w=e^{iz},
 \]
-whose modulus is at most \(1\) by step <1>4.
+whose modulus is at most \(1\) by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the large-arc integral satisfies
 \[
@@ -194,13 +194,13 @@ On the arc,
 \[
 |dz|=R\,d\theta.
 \]
-Combine with step <1>6.
+Combine with step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For
 \[
@@ -226,7 +226,7 @@ The sine function is concave on \([0,\pi]\), so on \([0,\pi/2]\) it lies above t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently,
 \[
@@ -244,7 +244,7 @@ By symmetry,
 =
 2\int_0^{\pi/2}e^{-R\sin\theta}\,d\theta.
 \]
-Using step <1>8,
+Using step [](#s1-8){.pf-ref},
 \[
 \begin{aligned}
 2\int_0^{\pi/2}e^{-R\sin\theta}\,d\theta
@@ -262,7 +262,7 @@ e^{-2R\theta/\pi}\,d\theta\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -275,13 +275,13 @@ as \(R\to\infty\).
 
 ::: pf-proof
 
-Combine steps <1>7--<1>9.
+Combine steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 As \(z\to0\),
 \[
@@ -304,7 +304,7 @@ Divide by \(z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -318,7 +318,7 @@ as \(\varepsilon\downarrow0\).
 
 ::: pf-proof
 
-Using the principal part from step <1>11,
+Using the principal part from step [](#s1-11){.pf-ref},
 \[
 \int_{\text{small arc}}
 \frac{e-1}{z}\,dz
@@ -336,7 +336,7 @@ The \(O(1)\) remainder contributes \(O(\varepsilon)\), which tends to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 One has
 \[
@@ -371,7 +371,7 @@ F(-x)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -387,13 +387,13 @@ For any complex number \(w\),
 \[
 w-\overline w=2i\,\operatorname{Im}w.
 \]
-Use step <1>13.
+Use step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The imaginary part of \(F(x)\) is
 \[
@@ -423,7 +423,7 @@ subtracting \(1\) changes only the real part. Divide by the real number \(x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 \[
@@ -445,13 +445,13 @@ Change variables \(x=-t\) in the negative real integral:
 =
 \int_{\varepsilon}^{R}F(-t)\,dt.
 \]
-Add the positive integral and use steps <1>14--<1>15.
+Add the positive integral and use steps [](#s1-14){.pf-ref} through [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The integrand
 \[
@@ -478,20 +478,20 @@ Thus the product tends to \(e\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Hence the improper integral near \(0\) is ordinary convergent.
 
 
 ::: pf-proof
 
-Step <1>17 shows the singularity at \(0\) is removable.
+Step [](#s1-17){.pf-ref} shows the singularity at \(0\) is removable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Letting first \(R\to\infty\) and then \(\varepsilon\downarrow0\),
 \[
@@ -506,17 +506,17 @@ e^{\cos x}\sin(\sin x)\frac{dx}{x}
 
 ::: pf-proof
 
-The contour integral is zero by step <1>3. The large arc tends to zero by step <1>10. The small arc tends to
+The contour integral is zero by step [](#s1-3){.pf-ref}. The large arc tends to zero by step [](#s1-10){.pf-ref}. The small arc tends to
 \[
 -i\pi(e-1)
 \]
-by step <1>12. The two real segments combine as in step <1>16, and step <1>18 permits passage to the limit \(\varepsilon\downarrow0\).
+by step [](#s1-12){.pf-ref}. The two real segments combine as in step [](#s1-16){.pf-ref}, and step [](#s1-18){.pf-ref} permits passage to the limit \(\varepsilon\downarrow0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore
 \[
@@ -530,13 +530,13 @@ i\pi(e-1).
 
 ::: pf-proof
 
-Rearrange step <1>19.
+Rearrange step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Dividing by \(2i\),
 \[
@@ -550,7 +550,7 @@ e^{\cos x}\sin(\sin x)\frac{dx}{x}
 
 ::: pf-proof
 
-This is immediate from step <1>20.
+This is immediate from step [](#s1-20){.pf-ref}.
 
 :::
 
@@ -558,7 +558,7 @@ This is immediate from step <1>20.
 
 ::: pf-qed
 
-Step <1>21 is the required identity.
+Step [](#s1-21){.pf-ref} is the required identity.
 
 :::
 

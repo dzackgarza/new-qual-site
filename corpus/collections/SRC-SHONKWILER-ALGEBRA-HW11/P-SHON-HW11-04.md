@@ -25,7 +25,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 It is enough to prove that every irreducible polynomial in
 \[
@@ -57,13 +57,13 @@ and let \(L\) be its splitting field.
 
 ::: pf-proof
 
-This fixes one irreducible factor for the reduction in step <1>1.
+This fixes one irreducible factor for the reduction in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Galois group
 \[
@@ -83,7 +83,7 @@ The group \(G\) acts faithfully on the \(n\) distinct roots of \(f\). Distinctne
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The groups \(S_1\) and \(S_2\) are solvable.
 
@@ -96,7 +96,7 @@ They are respectively the trivial group and the cyclic group \(C_2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The group \(S_3\) is solvable.
 
@@ -120,7 +120,7 @@ C_3,\ C_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -142,7 +142,7 @@ Conjugation preserves cycle type. Thus conjugating a double transposition produc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -159,7 +159,7 @@ Every nonidentity element has order \(2\), and the product of any two distinct n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since
 \[
@@ -184,7 +184,7 @@ Every group of prime order is cyclic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since
 \[
@@ -199,7 +199,7 @@ has abelian quotients.
 
 ::: pf-proof
 
-Choose any order-\(2\) subgroup inside \(V_4\). The quotient of \(V_4\cong C_2\times C_2\) by it is \(C_2\). Step <1>8 gives the next quotient \(C_3\), and the sign homomorphism gives
+Choose any order-\(2\) subgroup inside \(V_4\). The quotient of \(V_4\cong C_2\times C_2\) by it is \(C_2\). Step [](#s1-8){.pf-ref} gives the next quotient \(C_3\), and the sign homomorphism gives
 \[
 S_4/A_4\cong C_2.
 \]
@@ -208,7 +208,7 @@ S_4/A_4\cong C_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -218,13 +218,13 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>4--<1>9.
+Use steps [](#s1-4){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Every subgroup of a solvable group is solvable.
 
@@ -237,9 +237,9 @@ Intersect a subnormal series with the subgroup; the resulting successive quotien
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
-Hence the Galois group \(G\) from step <1>3 is solvable.
+Hence the Galois group \(G\) from step [](#s1-3){.pf-ref} is solvable.
 
 
 ::: pf-proof
@@ -248,7 +248,7 @@ Since
 \[
 n<5,
 \]
-step <1>10 says \(S_n\) is solvable. Then apply step <1>11 to
+step [](#s1-10){.pf-ref} says \(S_n\) is solvable. Then apply step [](#s1-11){.pf-ref} to
 \[
 G\le S_n.
 \]
@@ -257,20 +257,20 @@ G\le S_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore \(f\) is solvable by radicals.
 
 
 ::: pf-proof
 
-Over a characteristic-zero field containing the required roots of unity after a radical extension, a polynomial is solvable by radicals if and only if its splitting-field Galois group is solvable. Apply step <1>12.
+Over a characteristic-zero field containing the required roots of unity after a radical extension, a polynomial is solvable by radicals if and only if its splitting-field Galois group is solvable. Apply step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Consequently,
 \[
@@ -282,7 +282,7 @@ Consequently,
 
 ::: pf-proof
 
-Apply step <1>13 to every irreducible factor as in step <1>1.
+Apply step [](#s1-13){.pf-ref} to every irreducible factor as in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -365,7 +365,7 @@ The extension is not trivial because \(\zeta\) is nonreal while \(\alpha\) is re
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -392,7 +392,7 @@ By the tower law,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence the irreducible polynomial of \(\alpha\) over \(\mathbb Q\) has degree \(5\).
 
@@ -405,7 +405,7 @@ For any algebraic element,
 =
 \deg m_\alpha.
 \]
-Use step <1>18.
+Use step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -443,7 +443,7 @@ C_5.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Therefore the irreducible polynomial of \(\alpha\) is solvable by radicals.
 
@@ -456,7 +456,7 @@ The Galois group \(C_5\) is abelian, hence solvable. Apply the solvability-by-ra
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Thus
 \[
@@ -468,7 +468,7 @@ is an algebraic number of degree \(5\) over \(\mathbb Q\) whose irreducible poly
 
 ::: pf-proof
 
-Degree \(5\) is step <1>19, and solvability by radicals is step <1>21.
+Degree \(5\) is step [](#s1-19){.pf-ref}, and solvability by radicals is step [](#s1-21){.pf-ref}.
 
 :::
 
@@ -476,7 +476,7 @@ Degree \(5\) is step <1>19, and solvability by radicals is step <1>21.
 
 ::: pf-qed
 
-Step <1>14 proves part 1, and step <1>22 supplies the requested degree-\(5\) example in part 2.
+Step [](#s1-14){.pf-ref} proves part 1, and step [](#s1-22){.pf-ref} supplies the requested degree-\(5\) example in part 2.
 
 :::
 

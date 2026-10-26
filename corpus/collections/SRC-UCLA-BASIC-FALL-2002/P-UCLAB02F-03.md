@@ -26,7 +26,7 @@ S=\mathbb Q.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that
 \[
@@ -43,7 +43,7 @@ This is the negation of the desired claim for the proposed example $S=\mathbb Q$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every $U_n$ is dense in $\mathbb R$.
 
@@ -64,7 +64,7 @@ Hence $U_n$ is dense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -85,7 +85,7 @@ Each singleton $\{q_m\}$ is closed and has empty interior. Therefore its complem
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The intersection
 \[
@@ -98,20 +98,20 @@ is nonempty.
 
 ::: pf-proof
 
-By steps <1>2--<1>3, all sets appearing in the two countable families are open and dense in $\mathbb R$. Since $\mathbb R$ is a complete metric space, the Baire category theorem implies that the intersection of these countably many open dense sets is dense, hence nonempty.
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, all sets appearing in the two countable families are open and dense in $\mathbb R$. Since $\mathbb R$ is a complete metric space, the Baire category theorem implies that the intersection of these countably many open dense sets is dense, hence nonempty.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The intersection in step <1>4 is empty.
+The intersection in step [](#s1-4){.pf-ref} is empty.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \bigcap_{n=1}^{\infty}U_n=\mathbb Q.
 \]
@@ -127,14 +127,14 @@ Their intersection is therefore empty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set $\mathbb Q$ is not a countable intersection of open subsets of $\mathbb R$.
 
 
 ::: pf-proof
 
-Steps <1>4 and <1>5 contradict the assumption in step <1>1. Hence no such family $(U_n)$ exists.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in step [](#s1-1){.pf-ref}. Hence no such family $(U_n)$ exists.
 
 :::
 
@@ -142,7 +142,7 @@ Steps <1>4 and <1>5 contradict the assumption in step <1>1. Hence no such family
 
 ::: pf-qed
 
-Step <1>6 supplies the required subset of $\mathbb R$.
+Step [](#s1-6){.pf-ref} supplies the required subset of $\mathbb R$.
 
 :::
 

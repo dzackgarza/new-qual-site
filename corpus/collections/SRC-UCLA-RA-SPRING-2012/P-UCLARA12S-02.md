@@ -27,7 +27,7 @@ Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corr
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -70,7 +70,7 @@ Thus $\mathcal F$ is closed under countable unions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every open subset of $Y$ belongs to $\mathcal F$.
 
@@ -91,7 +91,7 @@ so $U\in\mathcal F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $E\in\mathcal B(Y)$, then
 \[
@@ -101,7 +101,7 @@ If $E\in\mathcal B(Y)$, then
 
 ::: pf-proof
 
-By steps <1>1 and <1>2, $\mathcal F$ is a $\sigma$-algebra containing every open subset of $Y$. Therefore
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, $\mathcal F$ is a $\sigma$-algebra containing every open subset of $Y$. Therefore
 \[
 \mathcal B(Y)\subset\mathcal F.
 \]
@@ -111,7 +111,7 @@ The definition of $\mathcal F$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The coordinate projections
 \[
@@ -130,7 +130,7 @@ This is part of the definition of the product topology: the product topology is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -149,13 +149,13 @@ then
 
 ::: pf-proof
 
-Apply part (a), proved in step <1>3, to the continuous maps $\pi_X$ and $\pi_Y$ from step <1>4.
+Apply part (a), proved in step [](#s1-3){.pf-ref}, to the continuous maps $\pi_X$ and $\pi_Y$ from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -177,7 +177,7 @@ A\times E
 \cap
 \pi_Y^{-1}(E).
 \]
-Both inverse images are Borel by step <1>5, and Borel sets are closed under finite intersections.
+Both inverse images are Borel by step [](#s1-5){.pf-ref}, and Borel sets are closed under finite intersections.
 
 :::
 
@@ -185,7 +185,7 @@ Both inverse images are Borel by step <1>5, and Borel sets are closed under fini
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

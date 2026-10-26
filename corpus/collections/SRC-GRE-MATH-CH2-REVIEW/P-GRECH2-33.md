@@ -53,7 +53,7 @@ Since $a,b>0$, the two solutions are $x=0$ and $x=-b/a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The volume of revolution is
 $$
@@ -77,7 +77,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The relation
 $$
@@ -92,7 +92,7 @@ Under the displayed relation,
 $$
 \frac{b^5}{a^3}=2,
 $$
-so step <1>2 gives the constant volume
+so step [](#s1-2){.pf-ref} gives the constant volume
 $$
 V=\frac{4\pi}{15}.
 $$
@@ -104,7 +104,7 @@ Thus choice (C) has the required property.
 
 ::: pf-qed
 
-Step <1>3 verifies the stated parameter relation produces a constant volume.
+Step [](#s1-3){.pf-ref} verifies the stated parameter relation produces a constant volume.
 
 :::
 

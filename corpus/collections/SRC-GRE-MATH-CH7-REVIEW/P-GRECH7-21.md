@@ -52,7 +52,7 @@ Each identity holds for every assignment of truth values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choice (C) is not a tautology.
 
@@ -73,7 +73,7 @@ is false because its antecedent is true and its consequent is false. Hence the b
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Choice (E), as printed, is also not a tautology.
 
@@ -94,7 +94,7 @@ is false. Thus the biconditional in (E) is false for this assignment.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The source's explanation identifies (E) as the distributive law, whose correct right-hand side is
 $$
@@ -116,9 +116,9 @@ With this correction, (E) is a tautology, leaving (C) as the unique non-tautolog
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Therefore the problem as printed has two correct choices, (C) and (E); under the evident correction in step <1>4, the intended answer is
+Therefore the problem as printed has two correct choices, (C) and (E); under the evident correction in step [](#s1-4){.pf-ref}, the intended answer is
 $$
 \boxed{\text{(C)}}.
 $$
@@ -126,7 +126,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 show that both (C) and the printed (E) are non-tautologies. Step <1>4 identifies the source's evident intended version of (E), under which only (C) remains non-tautological.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} show that both (C) and the printed (E) are non-tautologies. Step [](#s1-4){.pf-ref} identifies the source's evident intended version of (E), under which only (C) remains non-tautological.
 
 :::
 
@@ -134,7 +134,7 @@ Steps <1>2 and <1>3 show that both (C) and the printed (E) are non-tautologies. 
 
 ::: pf-qed
 
-Step <1>5 gives both the literal status of the printed question and the intended answer.
+Step [](#s1-5){.pf-ref} gives both the literal status of the printed question and the intended answer.
 
 :::
 

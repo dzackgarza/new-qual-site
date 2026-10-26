@@ -23,7 +23,7 @@ Write $R=\mathbb Z/n\mathbb Z$. Choose a nonzero polynomial $g=\sum_{j=0}^m b_jx
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $0\leq i\leq d$, multiplication by $a_i$ annihilates $g$.
 
@@ -42,7 +42,7 @@ with terms involving out-of-range indices interpreted as zero. Every summand in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The nonzero scalar $b_m\in R$ annihilates $f$:
 \[
@@ -52,7 +52,7 @@ The nonzero scalar $b_m\in R$ annihilates $f$:
 
 ::: pf-proof
 
-Step <1>1 gives $a_ig=0$ for every $i$, so its leading coefficient is $a_ib_m=0$. Since $R$ is commutative,
+Step [](#s1-1){.pf-ref} gives $a_ig=0$ for every $i$, so its leading coefficient is $a_ib_m=0$. Since $R$ is commutative,
 \[
 b_mf=\sum_{i=0}^d b_ma_ix^i=0.
 \]
@@ -64,7 +64,7 @@ The choice of $g$ guarantees $b_m\neq0$.
 
 ::: pf-qed
 
-Step <1>2 supplies the required nonzero scalar annihilator.
+Step [](#s1-2){.pf-ref} supplies the required nonzero scalar annihilator.
 
 :::
 

@@ -43,7 +43,7 @@ E_\alpha
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -149,7 +149,7 @@ Hence \(Mf(x')>\alpha\), so a neighborhood of \(x\) lies in \(E_\alpha\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(x\in K\), choose \(h_x>0\) such that
 \[
@@ -204,7 +204,7 @@ Every open cover of a compact set has a finite subcover.
 
 ::: pf-step
 
-Apply the covering lemma from step <1>1 to obtain pairwise disjoint intervals
+Apply the covering lemma from step [](#s1-1){.pf-ref} to obtain pairwise disjoint intervals
 \[
 J_1,\dots,J_m
 \]
@@ -234,7 +234,7 @@ The covering lemma gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -259,7 +259,7 @@ By subadditivity,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every selected interval \(J_k\) satisfies
 \[
@@ -272,17 +272,17 @@ Every selected interval \(J_k\) satisfies
 
 ::: pf-proof
 
-Each \(J_k\) is one of the intervals chosen in step <1>3. Since
+Each \(J_k\) is one of the intervals chosen in step [](#s1-3){.pf-ref}. Since
 \[
 |J_k|=2h_x,
 \]
-the average inequality from step <1>3 is exactly the displayed inequality.
+the average inequality from step [](#s1-3){.pf-ref} is exactly the displayed inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -296,13 +296,13 @@ Hence
 
 ::: pf-proof
 
-Divide the inequalities in step <1>8 by \(\alpha\) and sum.
+Divide the inequalities in step [](#s1-8){.pf-ref} by \(\alpha\) and sum.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since the \(J_k\) are pairwise disjoint,
 \[
@@ -321,7 +321,7 @@ The sum of the integrals over pairwise disjoint measurable sets is the integral 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -335,7 +335,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>7--<1>10.
+Combine steps [](#s1-7){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -359,9 +359,9 @@ Lebesgue measure is inner regular on open subsets of \(\mathbb R\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
-Taking the supremum in step <1>11 gives
+Taking the supremum in step [](#s1-11){.pf-ref} gives
 \[
 \boxed{
 \lambda(E_\alpha)
@@ -379,7 +379,7 @@ The same upper bound holds for every compact \(K\subseteq E_\alpha\), so it also
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Thus the weak type \((1,1)\) estimate holds with
 \[
@@ -389,7 +389,7 @@ Thus the weak type \((1,1)\) estimate holds with
 
 ::: pf-proof
 
-Step <1>13 is precisely
+Step [](#s1-13){.pf-ref} is precisely
 \[
 \lambda\{Mf>\alpha\}
 \le
@@ -403,7 +403,7 @@ with \(A=3\).
 
 ::: pf-qed
 
-Step <1>1 proves the required covering lemma, and step <1>14 proves the maximal-function estimate.
+Step [](#s1-1){.pf-ref} proves the required covering lemma, and step [](#s1-14){.pf-ref} proves the maximal-function estimate.
 
 :::
 

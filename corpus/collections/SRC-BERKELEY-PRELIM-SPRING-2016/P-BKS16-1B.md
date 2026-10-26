@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $t>0$,
 $$
@@ -57,7 +57,7 @@ Multiplying by $e^{-t/2}$ yields the displayed expansion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\alpha>0$,
 $$
@@ -89,7 +89,7 @@ As $R\to\infty$, both $e^{-\alpha R}$ and $R e^{-\alpha R}$ tend to $0$, proving
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -101,7 +101,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the integrand is the pointwise sum of the nonnegative functions
+By step [](#s1-1){.pf-ref}, the integrand is the pointwise sum of the nonnegative functions
 $$
 t\longmapsto t e^{-(n+1/2)t}.
 $$
@@ -114,7 +114,7 @@ $$
 \int_0^\infty t e^{-(n+1/2)t}\,dt\\
 &=
 \sum_{n=0}^\infty \frac{1}{(n+1/2)^2}
-&&\text{by step <1>2}\\
+&&\text{by step [](#s1-2){.pf-ref}}\\
 &=
 4\sum_{n=0}^\infty \frac{1}{(2n+1)^2}.
 \end{aligned}
@@ -126,7 +126,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required identity.
+Step [](#s1-3){.pf-ref} is the required identity.
 
 :::
 

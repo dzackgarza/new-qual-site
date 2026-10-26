@@ -47,7 +47,7 @@ D=\operatorname{diag}(1,2,\ldots,n).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -77,7 +77,7 @@ This is exactly $M$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every vector
 \[
@@ -95,7 +95,7 @@ x^tMx
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 x^tMx
@@ -118,7 +118,7 @@ x^t\mathbf1\mathbf1^tx\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $x\ne0$, then
 \[
@@ -143,7 +143,7 @@ is strictly positive, while every other term is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence for every nonzero $x$,
 \[
@@ -153,7 +153,7 @@ Hence for every nonzero $x$,
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 x^tMx
 =
@@ -161,14 +161,14 @@ x^tMx
 +
 \left(\sum_{j=1}^n x_j\right)^2.
 \]
-The first term is strictly positive by step <1>3, and the second is nonnegative.
+The first term is strictly positive by step [](#s1-3){.pf-ref}, and the second is nonnegative.
 Thus their sum is positive.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -183,7 +183,7 @@ A real symmetric matrix is positive definite precisely when
 x^tMx>0
 \]
 for every nonzero real vector $x$.
-Step <1>4 verifies this condition.
+Step [](#s1-4){.pf-ref} verifies this condition.
 
 :::
 
@@ -191,7 +191,7 @@ Step <1>4 verifies this condition.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

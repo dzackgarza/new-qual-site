@@ -37,7 +37,7 @@ x_0\in[a,b].
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -90,7 +90,7 @@ Thus the displayed inequalities hold.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 As
 \[
@@ -121,7 +121,7 @@ y\longmapsto f(x_0,y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -133,7 +133,7 @@ g(x_0).
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 f(x,x_0)
 \le
@@ -147,14 +147,14 @@ f(x_0,x_0)
 =
 g(x_0)
 \]
-by step <1>2.
+by step [](#s1-2){.pf-ref}.
 Apply the squeeze theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -210,7 +210,7 @@ f(x,x_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 As
 \[
@@ -228,13 +228,13 @@ f(x,x_0)\to f(x_0,x_0).
 
 ::: pf-proof
 
-These are the same separate-continuity statements used in step <1>2.
+These are the same separate-continuity statements used in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -246,13 +246,13 @@ g(x_0).
 
 ::: pf-proof
 
-Use the inequalities from step <1>4 and the limits from step <1>5, then apply the squeeze theorem.
+Use the inequalities from step [](#s1-4){.pf-ref} and the limits from step [](#s1-5){.pf-ref}, then apply the squeeze theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence $g$ is continuous at $x_0$.
 
@@ -263,18 +263,18 @@ At an interior point,
 \[
 x_0\in(a,b),
 \]
-steps <1>3 and <1>6 give the right- and left-hand limits, both equal to
+steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give the right- and left-hand limits, both equal to
 \[
 g(x_0).
 \]
-At the endpoint $a$, only the right-hand limit is required and step <1>3 applies.
-At the endpoint $b$, only the left-hand limit is required and step <1>6 applies.
+At the endpoint $a$, only the right-hand limit is required and step [](#s1-3){.pf-ref} applies.
+At the endpoint $b$, only the left-hand limit is required and step [](#s1-6){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since $x_0$ was arbitrary,
 \[
@@ -284,7 +284,7 @@ Since $x_0$ was arbitrary,
 
 ::: pf-proof
 
-Step <1>7 proves continuity at every point of the interval.
+Step [](#s1-7){.pf-ref} proves continuity at every point of the interval.
 
 :::
 
@@ -292,7 +292,7 @@ Step <1>7 proves continuity at every point of the interval.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

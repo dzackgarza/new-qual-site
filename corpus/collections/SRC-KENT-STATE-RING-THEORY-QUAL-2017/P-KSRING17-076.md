@@ -21,7 +21,7 @@ Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the sa
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume first that
 $$
@@ -66,7 +66,7 @@ Thus every element of $S$ is integral over $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the same hypothesis, $T$ is integral over $S$.
 
@@ -102,7 +102,7 @@ Since $t$ was arbitrary, $T$ is integral over $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Now assume conversely that
 $$
@@ -134,7 +134,7 @@ It suffices to prove that this arbitrary element $t$ is integral over $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $t$ is integral over $S$, there exist
 $$
@@ -168,7 +168,7 @@ This is the definition of integrality of $t$ over $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Set
 $$
@@ -229,14 +229,14 @@ is finitely generated as an $R$-module.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The element $t$ is integral over $A$.
 
 
 ::: pf-proof
 
-The monic relation in step <1>4 has all coefficients
+The monic relation in step [](#s1-4){.pf-ref} has all coefficients
 $$
 s_i
 $$
@@ -253,7 +253,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ring
 $$
@@ -266,8 +266,8 @@ is finitely generated as an $A$-module.
 
 ::: pf-proof
 
-By step <1>6, $t$ is integral over $A$.
-Using the monic equation from step <1>4, every power
+By step [](#s1-6){.pf-ref}, $t$ is integral over $A$.
+Using the monic equation from step [](#s1-4){.pf-ref}, every power
 $$
 t^m
 $$
@@ -296,19 +296,19 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The ring $B$ is finitely generated as an $R$-module.
 
 
 ::: pf-proof
 
-By step <1>5, choose finitely many $R$-module generators
+By step [](#s1-5){.pf-ref}, choose finitely many $R$-module generators
 $$
 a_1,\ldots,a_r
 $$
 of $A$.
-By step <1>7, choose finitely many $A$-module generators
+By step [](#s1-7){.pf-ref}, choose finitely many $A$-module generators
 $$
 b_1,\ldots,b_m
 $$
@@ -324,7 +324,7 @@ Indeed, an arbitrary element of $B$ is an $A$-linear combination of the $b_j$, a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Regard $B$ as an $R[t]$-module by multiplication.
 Then $B$ is faithful as an $R[t]$-module.
@@ -360,7 +360,7 @@ Therefore the annihilator of $B$ in $R[t]$ is zero, so the module is faithful.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Choose $R$-module generators
 $$
@@ -381,7 +381,7 @@ $$
 
 ::: pf-proof
 
-Finite generation of $B$ over $R$ was proved in step <1>8.
+Finite generation of $B$ over $R$ was proved in step [](#s1-8){.pf-ref}.
 Because
 $$
 t\in B
@@ -396,7 +396,7 @@ Hence it can be expressed as an $R$-linear combination of the chosen generators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Let
 $$
@@ -415,7 +415,7 @@ annihilates every generator $m_j$.
 
 ::: pf-proof
 
-The relations from step <1>10 can be written as
+The relations from step [](#s1-10){.pf-ref} can be written as
 $$
 (tI_N-A_0)\mathbf m=0,
 $$
@@ -453,7 +453,7 @@ Thus the determinant annihilates each generator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 $$
@@ -464,14 +464,14 @@ in $B$.
 
 ::: pf-proof
 
-By step <1>11, the element
+By step [](#s1-11){.pf-ref}, the element
 $$
 \det(tI_N-A_0)
 \in
 R[t]
 $$
 annihilates every $R$-module generator of $B$, hence annihilates all of $B$.
-By faithfulness from step <1>9, its annihilator in $R[t]$ is zero.
+By faithfulness from step [](#s1-9){.pf-ref}, its annihilator in $R[t]$ is zero.
 Therefore
 $$
 \det(tI_N-A_0)=0.
@@ -481,7 +481,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The polynomial
 $$
@@ -507,7 +507,7 @@ X^N.
 $$
 All coefficients lie in $R$ because the entries of $A_0$ lie in $R$.
 
-Step <1>12 gives
+Step [](#s1-12){.pf-ref} gives
 $$
 \chi(t)
 =
@@ -520,14 +520,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore $t$ is integral over $R$.
 
 
 ::: pf-proof
 
-Step <1>13 gives a monic polynomial
+Step [](#s1-13){.pf-ref} gives a monic polynomial
 $$
 \chi(X)\in R[X]
 $$
@@ -541,7 +541,7 @@ This is exactly the definition of integrality of $t$ over $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore $T$ is integral over $R$.
 
@@ -552,8 +552,8 @@ The element
 $$
 t\in T
 $$
-was arbitrary in step <1>3.
-Step <1>14 shows that every such $t$ is integral over $R$.
+was arbitrary in step [](#s1-3){.pf-ref}.
+Step [](#s1-14){.pf-ref} shows that every such $t$ is integral over $R$.
 Hence
 $$
 T
@@ -567,7 +567,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Consequently,
 $$
@@ -583,7 +583,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>2 prove the reverse implication from
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove the reverse implication from
 $$
 T/R
 $$
@@ -593,7 +593,7 @@ S/R
 \text{ and }
 T/S.
 $$
-Steps <1>3--<1>15 prove transitivity.
+Steps [](#s1-3){.pf-ref} through [](#s1-15){.pf-ref} prove transitivity.
 
 :::
 
@@ -601,7 +601,7 @@ Steps <1>3--<1>15 prove transitivity.
 
 ::: pf-qed
 
-Step <1>16 is the required equivalence.
+Step [](#s1-16){.pf-ref} is the required equivalence.
 
 :::
 

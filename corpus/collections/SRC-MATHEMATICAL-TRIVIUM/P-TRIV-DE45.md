@@ -34,7 +34,7 @@ T(R,\mu)=T_0+\frac{\Delta T}{2}\operatorname{sgn}(\mu).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every axisymmetric harmonic function regular at the center has an expansion
 \[
@@ -51,7 +51,7 @@ Separation of Laplace's equation in spherical coordinates gives radial factors $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The coefficients are
 \[
@@ -64,7 +64,7 @@ A_\ell=\frac{2\ell+1}{2}
 
 ::: pf-proof
 
-At $r=R$, step <1>1 is the Legendre expansion of the boundary function. Orthogonality,
+At $r=R$, step [](#s1-1){.pf-ref} is the Legendre expansion of the boundary function. Orthogonality,
 \[
 \int_{-1}^{1}P_\ell(\mu)P_j(\mu)\,d\mu
 =\frac{2}{2\ell+1}\delta_{\ell j},
@@ -75,7 +75,7 @@ gives the coefficient formula. The average of the two hemisphere temperatures is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Apart from $A_0$, only odd degrees occur, and
 \[
@@ -97,7 +97,7 @@ because the integral is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The cubic coefficient is
 \[
@@ -123,7 +123,7 @@ A_3=\frac72\frac{\Delta T}{2}\left(-\frac14\right)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, through third order in $r/R$,
 \[
@@ -140,7 +140,7 @@ T(r,\theta)=
 
 ::: pf-proof
 
-Insert $A_0,A_1,A_3$ from steps <1>2--<1>4 into step <1>1 and use $P_1(\mu)=\mu$ and $P_3(\mu)=(5\mu^3-3\mu)/2$. The next nonconstant term has odd degree $5$, giving the stated remainder order.
+Insert $A_0,A_1,A_3$ from steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} into step [](#s1-1){.pf-ref} and use $P_1(\mu)=\mu$ and $P_3(\mu)=(5\mu^3-3\mu)/2$. The next nonconstant term has odd degree $5$, giving the stated remainder order.
 
 :::
 
@@ -148,7 +148,7 @@ Insert $A_0,A_1,A_3$ from steps <1>2--<1>4 into step <1>1 and use $P_1(\mu)=\mu$
 
 ::: pf-qed
 
-Step <1>5 is the stationary interior temperature expansion through cubic order.
+Step [](#s1-5){.pf-ref} is the stationary interior temperature expansion through cubic order.
 
 :::
 

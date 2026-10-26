@@ -42,7 +42,7 @@ so $g(z_0)=0$. The converse is identical.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At every common zero $z_0$, the orders of vanishing of $f$ and $g$ are equal.
 
@@ -83,7 +83,7 @@ If $m>n$, the left-hand side would tend to $0$; if $m<n$, it would tend to $+\in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The quotient
 $$
@@ -94,7 +94,7 @@ extends to a holomorphic nowhere-zero function on all of $\Omega$.
 
 ::: pf-proof
 
-Away from the zeros of $g$, the quotient is holomorphic. At a common zero $z_0$, step <1>2 gives equal order $m$, so
+Away from the zeros of $g$, the quotient is holomorphic. At a common zero $z_0$, step [](#s1-2){.pf-ref} gives equal order $m$, so
 $$
 \frac{f(z)}{g(z)}
 =
@@ -106,7 +106,7 @@ near $z_0$, with $v(z_0)\ne0$. Thus the quotient has a removable singularity the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The extended function $h$ satisfies
 $$
@@ -124,13 +124,13 @@ $$
 \frac{\abs{f(z)}}{\abs{g(z)}}
 =1.
 $$
-These points are dense in $\Omega$, because a nonzero holomorphic function has isolated zeros. By continuity of the holomorphic extension from step <1>3, the identity $\abs{h}=1$ holds at the common zeros as well.
+These points are dense in $\Omega$, because a nonzero holomorphic function has isolated zeros. By continuity of the holomorphic extension from step [](#s1-3){.pf-ref}, the identity $\abs{h}=1$ holds at the common zeros as well.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $h$ is constant.
 
@@ -141,7 +141,7 @@ If $h$ were nonconstant, the open mapping theorem would imply that
 $$
 h(\Omega)
 $$
-is an open subset of $\CC$. But step <1>4 gives
+is an open subset of $\CC$. But step [](#s1-4){.pf-ref} gives
 $$
 h(\Omega)\subset\{w\in\CC:\abs{w}=1\},
 $$
@@ -151,7 +151,7 @@ and the unit circle has empty interior in $\CC$. This is impossible. Hence $h$ i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exists $\theta$ with $0\le\theta<2\pi$ such that
 $$
@@ -164,11 +164,11 @@ for every $z\in\Omega$.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 h(z)\equiv c
 $$
-for some constant $c$. Step <1>4 gives $\abs{c}=1$, so
+for some constant $c$. Step [](#s1-4){.pf-ref} gives $\abs{c}=1$, so
 $$
 c=e^{i\theta}
 $$
@@ -180,7 +180,7 @@ for some unique $\theta\in[0,2\pi)$. Since $h=f/g$, the displayed identity follo
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -53,7 +53,7 @@ a based map, with \(X\) path connected and locally path connected.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A based lift
 \[
@@ -90,7 +90,7 @@ lies in the image of \(p_*\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, if
 \[
@@ -116,7 +116,7 @@ as that lifted endpoint. Local path connectedness gives continuity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the necessary and sufficient condition is
 \[
@@ -129,13 +129,13 @@ p_*\pi_1(E,e_0)}.
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If a based lift exists, it is unique.
 
@@ -184,25 +184,25 @@ Since \(x\) was arbitrary, the lifts are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the number of based lifts is
 \[
 \boxed{
 0\text{ or }1},
 \]
-and it is \(1\) exactly when the subgroup condition in step <1>3 holds.
+and it is \(1\) exactly when the subgroup condition in step [](#s1-3){.pf-ref} holds.
 
 
 ::: pf-proof
 
-Existence is step <1>3 and uniqueness is step <1>4.
+Existence is step [](#s1-3){.pf-ref} and uniqueness is step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The space \(H\) is simply connected.
 
@@ -215,7 +215,7 @@ This is the defining property of a universal covering space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -294,7 +294,7 @@ e.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The induced subgroup
 \[
@@ -305,13 +305,13 @@ is trivial.
 
 ::: pf-proof
 
-The domain is simply connected by step <1>7.
+The domain is simply connected by step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The image
 \[
@@ -326,13 +326,13 @@ Again,
 \[
 \pi_1(H,e')=0
 \]
-by step <1>6.
+by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence the lifting criterion gives a unique based lift
 \[
@@ -351,7 +351,7 @@ p\circ\mu'
 
 ::: pf-proof
 
-By steps <1>10--<1>11,
+By steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref},
 \[
 F_*\pi_1(H\times H)
 =
@@ -361,13 +361,13 @@ F_*\pi_1(H\times H)
 =
 p_*\pi_1(H).
 \]
-Apply the criterion from step <1>3 and uniqueness from step <1>4.
+Apply the criterion from step [](#s1-3){.pf-ref} and uniqueness from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 In particular,
 \[
@@ -378,13 +378,13 @@ In particular,
 
 ::: pf-proof
 
-The lift in step <1>12 is based.
+The lift in step [](#s1-12){.pf-ref} is based.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For every \((h_1,h_2,h_3)\in H^3\),
 \[
@@ -398,7 +398,7 @@ p(h_3)).
 
 ::: pf-proof
 
-Using step <1>12 twice,
+Using step [](#s1-12){.pf-ref} twice,
 \[
 \begin{aligned}
 p(A(h_1,h_2,h_3))
@@ -419,7 +419,7 @@ p(h_3)).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Likewise,
 \[
@@ -433,13 +433,13 @@ p(h_1),
 
 ::: pf-proof
 
-Apply step <1>12 twice in the other parenthesization.
+Apply step [](#s1-12){.pf-ref} twice in the other parenthesization.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Since multiplication in \(G\) is associative,
 \[
@@ -462,13 +462,13 @@ Apply this to
 \[
 g_i=p(h_i)
 \]
-and compare steps <1>14--<1>15.
+and compare steps [](#s1-14){.pf-ref} through [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Both \(A\) and \(B\) send
 \[
@@ -479,7 +479,7 @@ to \(e'\).
 
 ::: pf-proof
 
-Using step <1>13,
+Using step [](#s1-13){.pf-ref},
 \[
 A(e',e',e')
 =
@@ -498,7 +498,7 @@ B(e',e',e')=e'.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 The space \(H^3\) is path connected.
 
@@ -512,7 +512,7 @@ path-connected spaces is path connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Therefore
 \[
@@ -522,12 +522,12 @@ Therefore
 
 ::: pf-proof
 
-By step <1>16, \(A\) and \(B\) are lifts through \(p\) of the same map
+By step [](#s1-16){.pf-ref}, \(A\) and \(B\) are lifts through \(p\) of the same map
 \[
 H^3\to G.
 \]
-By step <1>17 they agree at the basepoint. Since the domain is path
-connected by step <1>18, uniqueness of lifting gives
+By step [](#s1-17){.pf-ref} they agree at the basepoint. Since the domain is path
+connected by step [](#s1-18){.pf-ref}, uniqueness of lifting gives
 \[
 A=B.
 \]
@@ -536,7 +536,7 @@ A=B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Hence
 \[
@@ -550,20 +550,20 @@ for all \(h_1,h_2,h_3\in H\).
 
 ::: pf-proof
 
-This is the pointwise meaning of step <1>19.
+This is the pointwise meaning of step [](#s1-19){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Thus the lifted multiplication \(\mu'\) is associative.
 
 
 ::: pf-proof
 
-Step <1>20 is exactly associativity.
+Step [](#s1-20){.pf-ref} is exactly associativity.
 
 :::
 
@@ -571,8 +571,8 @@ Step <1>20 is exactly associativity.
 
 ::: pf-qed
 
-Steps <1>3--<1>5 answer part \(1\), step <1>12 constructs the lifted
-multiplication in part \(2\), and step <1>21 proves associativity in part
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} answer part \(1\), step [](#s1-12){.pf-ref} constructs the lifted
+multiplication in part \(2\), and step [](#s1-21){.pf-ref} proves associativity in part
 \(3\).
 
 :::

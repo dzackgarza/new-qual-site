@@ -66,7 +66,7 @@ Translation preserves the $L^2$ norm. Hence Cauchy--Schwarz gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -90,7 +90,7 @@ Plancherel gives $F\in L^2$. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The convolution theorem gives, with the stated normalization,
 \[
@@ -116,7 +116,7 @@ Passing to the limit in the inversion formula yields the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -130,7 +130,7 @@ h(x)=\widehat g(x).
 
 ::: pf-proof
 
-Integrability follows from step <1>2. Substituting $t=-\xi$ in step <1>3 gives
+Integrability follows from step [](#s1-2){.pf-ref}. Substituting $t=-\xi$ in step [](#s1-3){.pf-ref} gives
 \[
 h(x)=\frac1{2\pi}\int_{\mathbb R}e^{-ixt}F(-t)^2\,dt
 =\int_{\mathbb R}e^{-ixt}g(t)\,dt.
@@ -141,7 +141,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, let $g\in L^1(\mathbb R)$. There exists a measurable function $F$ such that
 \[
@@ -172,20 +172,20 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By Plancherel, there exists $f\in L^2(\mathbb R)$ whose Fourier transform is $F$.
 
 
 ::: pf-proof
 
-The Fourier transform, with the corresponding normalization factor, is a bijective isometry up to the fixed constant on $L^2(\mathbb R)$. Since $F\in L^2$ by step <1>5, it has an inverse Fourier transform $f\in L^2$.
+The Fourier transform, with the corresponding normalization factor, is a bijective isometry up to the fixed constant on $L^2(\mathbb R)$. Since $F\in L^2$ by step [](#s1-5){.pf-ref}, it has an inverse Fourier transform $f\in L^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The self-convolution $h=f*f$ satisfies
 \[
@@ -195,11 +195,11 @@ h(x)=\widehat g(x).
 
 ::: pf-proof
 
-Apply step <1>3 to the $f$ from step <1>6:
+Apply step [](#s1-3){.pf-ref} to the $f$ from step [](#s1-6){.pf-ref}:
 \[
 h(x)=\frac1{2\pi}\int_{\mathbb R}e^{ix\xi}F(\xi)^2\,d\xi.
 \]
-Set $t=-\xi$ and use step <1>5:
+Set $t=-\xi$ and use step [](#s1-5){.pf-ref}:
 \[
 h(x)=\frac1{2\pi}\int_{\mathbb R}e^{-ixt}F(-t)^2\,dt
 =\int_{\mathbb R}e^{-ixt}g(t)\,dt
@@ -210,14 +210,14 @@ h(x)=\frac1{2\pi}\int_{\mathbb R}e^{-ixt}F(-t)^2\,dt
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus both implications hold.
 
 
 ::: pf-proof
 
-Step <1>4 proves part (a), and steps <1>5--<1>7 prove part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} prove part (b).
 
 :::
 
@@ -225,7 +225,7 @@ Step <1>4 proves part (a), and steps <1>5--<1>7 prove part (b).
 
 ::: pf-qed
 
-Step <1>8 proves the two requested statements.
+Step [](#s1-8){.pf-ref} proves the two requested statements.
 
 :::
 

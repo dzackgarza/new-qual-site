@@ -27,7 +27,7 @@ For how many values of $a$ is the integral $\int_0^a (12x^2 + 8x + 1) \, dx$ equ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral equals
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral vanishes exactly when
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 4a^3+4a^2+a
 =a(4a^2+4a+1)
@@ -77,7 +77,7 @@ $a=-1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the number of values of $a$ is
 $$
@@ -88,7 +88,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>2 lists exactly two distinct values.
+Step [](#s1-2){.pf-ref} lists exactly two distinct values.
 
 :::
 
@@ -96,7 +96,7 @@ Step <1>2 lists exactly two distinct values.
 
 ::: pf-qed
 
-Step <1>3 gives the requested count.
+Step [](#s1-3){.pf-ref} gives the requested count.
 
 :::
 

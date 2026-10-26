@@ -35,7 +35,7 @@ where $\arg$ is the principal argument.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $g$ is well-defined on $\Omega$ and satisfies
 $$
@@ -72,7 +72,7 @@ square is $f(z)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $g$ is continuous on
 $$
@@ -96,7 +96,7 @@ is $|f|^{1/2}$, and the defining product for $g$ is continuous there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $g$ is continuous at every $x\in(1,\infty)$.
 
@@ -133,28 +133,28 @@ $g(x)=|f(x)|^{1/2}$. Hence $g(z)\to g(x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $g$ is continuous on all of $\Omega$.
 
 
 ::: pf-proof
 
-Step <1>2 gives continuity away from $(1,\infty)$, and step <1>3 gives
+Step [](#s1-2){.pf-ref} gives continuity away from $(1,\infty)$, and step [](#s1-3){.pf-ref} gives
 continuity at every point of that remaining ray.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $g$ is analytic on $\Omega$.
 
 
 ::: pf-proof
 
-Fix $z_0\in\Omega$. By step <1>1,
+Fix $z_0\in\Omega$. By step [](#s1-1){.pf-ref},
 $$
 g(z_0)^2=f(z_0)\ne0,
 $$
@@ -165,7 +165,7 @@ $$
 \frac{f(z)-f(z_0)}{z-z_0}
 \frac1{g(z)+g(z_0)}.
 $$
-By step <1>4, $g(z)\to g(z_0)$ as $z\to z_0$, and the denominator on
+By step [](#s1-4){.pf-ref}, $g(z)\to g(z_0)$ as $z\to z_0$, and the denominator on
 the right tends to $2g(z_0)\ne0$. Since $f$ is analytic,
 $$
 \lim_{z\to z_0}\frac{g(z)-g(z_0)}{z-z_0}
@@ -178,7 +178,7 @@ analytic there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If an analytic function $L$ on $\Omega$ satisfied
 $$
@@ -208,7 +208,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The function $f$ has no analytic logarithm on $\Omega$.
 
@@ -226,7 +226,7 @@ $L$ on $\Omega$,
 $$
 \int_\gamma L'(z)\,dz=0.
 $$
-On the other hand, step <1>6 and the Cauchy integral formula give
+On the other hand, step [](#s1-6){.pf-ref} and the Cauchy integral formula give
 $$
 \begin{aligned}
 \int_\gamma L'(z)\,dz
@@ -245,7 +245,7 @@ shows that no analytic logarithm of $f$ exists on $\Omega$.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 prove part 1, step <1>5 proves part 2, and step <1>7
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part 1, step [](#s1-5){.pf-ref} proves part 2, and step [](#s1-7){.pf-ref}
 proves part 3.
 
 :::

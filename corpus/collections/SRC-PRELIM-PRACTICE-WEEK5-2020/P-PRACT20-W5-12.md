@@ -22,7 +22,7 @@ Let $R$ be a ring with unity. A set $I \subset R$ is said to be a right ideal of
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two right ideals of $R$ are
 \[
@@ -41,7 +41,7 @@ there are exactly two distinct right ideals, these must be the only ones.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $a\in R$ is nonzero, then
 \[
@@ -55,14 +55,14 @@ The principal right ideal
 \[
 aR=\{ar:r\in R\}
 \]
-contains $a=a\cdot1$, so it is nonzero. By step <1>1, every nonzero right
+contains $a=a\cdot1$, so it is nonzero. By step [](#s1-1){.pf-ref}, every nonzero right
 ideal equals $R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every nonzero $a\in R$ has a right inverse: there is $b\in R$ such that
 \[
@@ -72,7 +72,7 @@ ab=1.
 
 ::: pf-proof
 
-By step <1>2, $aR=R$. In particular,
+By step [](#s1-2){.pf-ref}, $aR=R$. In particular,
 \[
 1\in aR,
 \]
@@ -82,9 +82,9 @@ so $1=ab$ for some $b\in R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The element $b$ in step <1>3 is nonzero and has a right inverse
+The element $b$ in step [](#s1-3){.pf-ref} is nonzero and has a right inverse
 $c\in R$:
 \[
 bc=1.
@@ -93,14 +93,14 @@ bc=1.
 
 ::: pf-proof
 
-If $b=0$, then $ab=0$, contradicting $ab=1$. Thus $b\ne0$, so step <1>3
+If $b=0$, then $ab=0$, contradicting $ab=1$. Thus $b\ne0$, so step [](#s1-3){.pf-ref}
 applied to $b$ gives $c\in R$ with $bc=1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -110,7 +110,7 @@ c=a.
 
 ::: pf-proof
 
-Using steps <1>3 and <1>4,
+Using steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref},
 \[
 a
 =a\cdot1
@@ -124,7 +124,7 @@ a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $b$ is a two-sided inverse of $a$:
 \[
@@ -134,7 +134,7 @@ Hence $b$ is a two-sided inverse of $a$:
 
 ::: pf-proof
 
-Step <1>3 gives $ab=1$. By step <1>5,
+Step [](#s1-3){.pf-ref} gives $ab=1$. By step [](#s1-5){.pf-ref},
 \[
 ba=bc=1.
 \]
@@ -143,14 +143,14 @@ ba=bc=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every nonzero element of $R$ is invertible.
 
 
 ::: pf-proof
 
-The choice of nonzero $a$ was arbitrary, and step <1>6 constructs its
+The choice of nonzero $a$ was arbitrary, and step [](#s1-6){.pf-ref} constructs its
 multiplicative inverse.
 
 :::
@@ -159,7 +159,7 @@ multiplicative inverse.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

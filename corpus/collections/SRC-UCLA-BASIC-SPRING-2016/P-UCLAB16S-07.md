@@ -29,7 +29,7 @@ n\ge2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $u,v\in\mathbb R^n$ be unit vectors.
 There exists an orthogonal transformation $E$ such that
@@ -108,7 +108,7 @@ The base case and induction step are established in the following steps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 \[
@@ -164,7 +164,7 @@ Since $M$ is orthogonal,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Choose an elementary orthogonal transformation $E$ such that
 \[
@@ -178,7 +178,7 @@ Then
 
 ::: pf-proof
 
-Apply step <1>1 to the unit vectors $u$ and $e_n$.
+Apply step [](#s1-1){.pf-ref} to the unit vectors $u$ and $e_n$.
 Then
 \[
 (EM)e_n
@@ -194,7 +194,7 @@ e_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The subspace
 \[
@@ -216,7 +216,7 @@ The matrix $F$ is orthogonal and satisfies
 \[
 Fe_n=e_n
 \]
-by step <1>5.
+by step [](#s1-5){.pf-ref}.
 Hence
 \[
 F^{-1}e_n=e_n.
@@ -253,14 +253,14 @@ is an orthogonal transformation of the $(n-1)$-dimensional space $H$.
 
 ::: pf-proof
 
-By step <1>6, the restriction is well-defined.
+By step [](#s1-6){.pf-ref}, the restriction is well-defined.
 Since $F$ preserves the Euclidean inner product on all of $\mathbb R^n$, its restriction preserves the inner product on $H$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 By the induction hypothesis,
 \[
@@ -285,9 +285,9 @@ Apply the induction hypothesis in that dimension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Extend each factor from step <1>8 to $\mathbb R^n$ by fixing $e_n$.
+Extend each factor from step [](#s1-8){.pf-ref} to $\mathbb R^n$ by fixing $e_n$.
 Each extension is elementary in $\mathbb R^n$.
 
 
@@ -315,7 +315,7 @@ Thus the extension is elementary in $\mathbb R^n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The matrix $F=EM$ is a product of at most
 \[
@@ -326,7 +326,7 @@ elementary orthogonal matrices.
 
 ::: pf-proof
 
-The extensions from step <1>9 agree with $F$ on $H$ by step <1>8.
+The extensions from step [](#s1-9){.pf-ref} agree with $F$ on $H$ by step [](#s1-8){.pf-ref}.
 They also fix $e_n$, as does $F$.
 Since
 \[
@@ -340,7 +340,7 @@ the product of those extensions equals $F$ on all of $\mathbb R^n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The inverse
 \[
@@ -370,7 +370,7 @@ It is orthogonal because the inverse of an orthogonal matrix is orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore $M$ is a product of at most
 \[
@@ -381,7 +381,7 @@ elementary orthogonal matrices.
 
 ::: pf-proof
 
-By step <1>10, write
+By step [](#s1-10){.pf-ref}, write
 \[
 EM
 =
@@ -397,7 +397,7 @@ M
 =
 E^{-1}F_1\cdots F_r.
 \]
-By step <1>11, $E^{-1}$ is elementary, and each $F_j$ is elementary by step <1>9.
+By step [](#s1-11){.pf-ref}, $E^{-1}$ is elementary, and each $F_j$ is elementary by step [](#s1-9){.pf-ref}.
 Thus the number of factors is at most
 \[
 1+(n-2)
@@ -411,7 +411,7 @@ n-1.
 
 ::: pf-qed
 
-The base case is step <1>3 and the induction step is completed in step <1>12.
+The base case is step [](#s1-3){.pf-ref} and the induction step is completed in step [](#s1-12){.pf-ref}.
 
 :::
 

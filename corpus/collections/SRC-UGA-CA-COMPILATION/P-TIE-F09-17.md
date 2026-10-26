@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $0<r\le R$,
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\varepsilon>0$, there is $\delta>0$ such that
 $$
@@ -101,7 +101,7 @@ the estimate holds simultaneously for every $t\in[0,\beta_0]$ once $r<\delta$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0<r<\delta$,
 $$
@@ -115,7 +115,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \int_{\gamma_r}f(z)\,dz-iA\beta_0
 =
@@ -124,7 +124,7 @@ i\int_0^{\beta_0}
 (\gamma_r(t)-a)f(\gamma_r(t))-A
 \right)dt.
 $$
-Taking absolute values and applying step <1>2 gives
+Taking absolute values and applying step [](#s1-2){.pf-ref} gives
 $$
 \left|
 \int_{\gamma_r}f(z)\,dz-iA\beta_0
@@ -139,7 +139,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -154,7 +154,7 @@ $$
 
 ::: pf-proof
 
-Given $\eta>0$, use step <1>3 with
+Given $\eta>0$, use step [](#s1-3){.pf-ref} with
 $$
 \varepsilon=\frac{\eta}{\beta_0}.
 $$
@@ -167,7 +167,7 @@ $r>0$.
 
 ::: pf-qed
 
-Step <1>4 is the required limit.
+Step [](#s1-4){.pf-ref} is the required limit.
 
 :::
 

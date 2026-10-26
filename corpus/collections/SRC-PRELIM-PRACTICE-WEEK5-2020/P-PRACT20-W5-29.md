@@ -49,7 +49,7 @@ and all have modulus less than $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue at $0$ is
 \[
@@ -72,7 +72,7 @@ Since the pole is simple,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residues at $i$ and $-i$ are both
 \[
@@ -113,7 +113,7 @@ At $-i$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -125,7 +125,7 @@ Therefore
 
 ::: pf-proof
 
-By the residue theorem and steps <1>2 and <1>3,
+By the residue theorem and steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 \oint_C F(z)\,dz
 =
@@ -142,7 +142,7 @@ By the residue theorem and steps <1>2 and <1>3,
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

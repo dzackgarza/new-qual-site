@@ -42,7 +42,7 @@ Write down the minimal polynomial of $A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial of $A$ is $(x-2)^3$, while its minimal polynomial is
 \[
@@ -78,7 +78,7 @@ Since $A-2I\neq0$ but $(A-2I)^2=0$, the minimal polynomial is exactly $(x-2)^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Jordan canonical form of $A$ is
 \[
@@ -97,13 +97,13 @@ J=
 0&0&2
 \end{bmatrix}.
 \]
-By step <1>1, these are precisely the block sizes compatible with the minimal and characteristic polynomials.
+By step [](#s1-1){.pf-ref}, these are precisely the block sizes compatible with the minimal and characteristic polynomials.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 An invertible conjugating matrix is
 \[
@@ -134,7 +134,7 @@ so $P^{-1}AP=J$.
 
 ::: pf-qed
 
-Steps <1>2, <1>3, and <1>1 prove parts (a), (b), and (c), respectively.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-1){.pf-ref} prove parts (a), (b), and (c), respectively.
 
 :::
 

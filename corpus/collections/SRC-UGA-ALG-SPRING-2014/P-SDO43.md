@@ -29,7 +29,7 @@ b. Show that an injective $R\dash$linear endomorphism of $R^n$ need not be surje
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every surjective $R$-linear endomorphism $T:R^n\to R^n$ is injective.
 
@@ -42,7 +42,7 @@ Let $A\in M_n(R)$ represent $T$. For each standard basis vector $e_i$, surjectiv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An injective endomorphism of a finite-rank free module need not be surjective.
 
@@ -57,7 +57,7 @@ Take $R=\mathbb Z$ and $n=1$. Multiplication by $2$ defines an injective endomor
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 establish parts (a) and (b), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

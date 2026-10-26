@@ -35,7 +35,7 @@ f\bigl(f^{-1}(C)\bigr)\qquad C.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a),
 \[
@@ -102,7 +102,7 @@ f(A)\cap f(B)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For part (b),
 \[
@@ -141,7 +141,7 @@ f^{-1}(C)-f^{-1}(D).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (c),
 \[
@@ -204,7 +204,7 @@ C.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the best relations are
 \[
@@ -220,7 +220,7 @@ Therefore the best relations are
 
 ::: pf-proof
 
-Collect steps <1>1--<1>3.
+Collect steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -228,7 +228,7 @@ Collect steps <1>1--<1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested choices.
+Step [](#s1-4){.pf-ref} gives the requested choices.
 
 :::
 

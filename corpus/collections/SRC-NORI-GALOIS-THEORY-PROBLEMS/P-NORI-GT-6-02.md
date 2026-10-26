@@ -35,7 +35,7 @@ We construct a tower of $A$-algebras by adjoining the roots one at a time.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define recursively
 $$
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each $1\leq i\leq n$, the algebra $R_i$ is free as an $R_{i-1}$-module with basis
 $$
@@ -99,7 +99,7 @@ Applying this with $R=R_{i-1}$, $h=f_{i-1}$, and $d=n-i+1$ gives the asserted ba
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The algebra $R_n$ is free as an $A$-module with basis
 $$
@@ -110,7 +110,7 @@ $$
 
 ::: pf-proof
 
-Apply step <1>2 successively through the tower
+Apply step [](#s1-2){.pf-ref} successively through the tower
 $$
 A=R_0\subseteq R_1\subseteq\cdots\subseteq R_n.
 $$
@@ -128,7 +128,7 @@ with $0\leq m_i\leq n-i$, equivalently $m_i+i\leq n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In $R_n[T]$ one has
 $$
@@ -143,7 +143,7 @@ for $1\leq i\leq n$.
 
 ::: pf-proof
 
-Step <1>1 with $i=n$ gives
+Step [](#s1-1){.pf-ref} with $i=n$ gives
 $$
 f(T)=\prod_{j=1}^n(T-x_j)f_n(T).
 $$
@@ -172,7 +172,7 @@ sending the class of $X_i$ to $x_i$.
 
 ::: pf-proof
 
-By step <1>4, the elements $x_1,\ldots,x_n$ satisfy all relations
+By step [](#s1-4){.pf-ref}, the elements $x_1,\ldots,x_n$ satisfy all relations
 $$
 s_i-a_i=0
 $$
@@ -227,7 +227,7 @@ with $\Psi(x_i)=\overline X_i$ for all $i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The homomorphisms $\Phi$ and $\Psi$ are inverse isomorphisms.
 
@@ -250,7 +250,7 @@ for each $i$. Hence $\Phi\circ\Psi=\operatorname{id}_{R_n}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $B$ is a free $A$-module with basis
 $$
@@ -261,13 +261,13 @@ $$
 
 ::: pf-proof
 
-By step <1>7, $B\cong R_n$ via an isomorphism carrying the class of $X_i$ to $x_i$. The basis of step <1>3 therefore transports to the displayed basis of $B$.
+By step [](#s1-7){.pf-ref}, $B\cong R_n$ via an isomorphism carrying the class of $X_i$ to $x_i$. The basis of step [](#s1-3){.pf-ref} therefore transports to the displayed basis of $B$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For $n=3$, a basis is
 $$
@@ -285,7 +285,7 @@ $$
 \qquad
 m_3=0.
 $$
-Thus the monomials in step <1>8 are exactly the six displayed elements.
+Thus the monomials in step [](#s1-8){.pf-ref} are exactly the six displayed elements.
 
 Concretely, the tower is
 $$
@@ -307,7 +307,7 @@ The first extension has basis $1,x_1,x_1^2$ and the second has basis $1,x_2$, gi
 
 ::: pf-qed
 
-Step <1>8 proves the general statement, and step <1>9 gives the requested case $n=3$ explicitly.
+Step [](#s1-8){.pf-ref} proves the general statement, and step [](#s1-9){.pf-ref} gives the requested case $n=3$ explicitly.
 
 :::
 

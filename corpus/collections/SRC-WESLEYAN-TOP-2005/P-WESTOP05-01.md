@@ -40,7 +40,7 @@ denote the cardinality of the continuum.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -78,7 +78,7 @@ is in bijection with \(\{0,1\}^{\mathbb N}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -95,7 +95,7 @@ The set has exactly two elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -129,7 +129,7 @@ the Cantor--Bernstein theorem gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -181,7 +181,7 @@ The map
 \[
 x\longmapsto f_x
 \]
-is injective. By step <1>3,
+is injective. By step [](#s1-3){.pf-ref},
 \[
 |[0,1]|=\mathfrak c.
 \]
@@ -190,7 +190,7 @@ is injective. By step <1>3,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since
 \[
@@ -216,7 +216,7 @@ of cardinality \(\mathfrak c\) has cardinality
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Cardinal exponentiation gives
 \[
@@ -250,7 +250,7 @@ for cardinals, together with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -265,13 +265,13 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>6--<1>7.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Collecting the results,
 \[
@@ -297,7 +297,7 @@ and
 
 ::: pf-proof
 
-Use steps <1>1--<1>4 and <1>8.
+Use steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
@@ -305,7 +305,7 @@ Use steps <1>1--<1>4 and <1>8.
 
 ::: pf-qed
 
-Step <1>9 gives all requested cardinalities.
+Step [](#s1-9){.pf-ref} gives all requested cardinalities.
 
 :::
 

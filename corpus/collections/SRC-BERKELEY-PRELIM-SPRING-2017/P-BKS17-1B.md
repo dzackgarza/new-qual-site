@@ -39,7 +39,7 @@ for all $x \in \RR$ and all $h \neq 0$. (Hint: multiply both sides by $2h$.)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every differentiable function satisfying the stated identity is twice differentiable.
 
@@ -56,7 +56,7 @@ Since $f$ is differentiable, the right-hand side is differentiable as a function
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x\in\mathbb R$ and every $h\neq0$,
 $$
@@ -74,7 +74,7 @@ Since $f$ is differentiable, both sides may be differentiated with respect to $h
 $$
 2f'(x)=f'(x+h)+f'(x-h).
 $$
-By step <1>1, $f'$ is differentiable, so differentiating once more with respect to $h$ gives
+By step [](#s1-1){.pf-ref}, $f'$ is differentiable, so differentiating once more with respect to $h$ gives
 $$
 0=f''(x+h)-f''(x-h),
 $$
@@ -84,7 +84,7 @@ which is the asserted identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The second derivative $f''$ is constant on $\mathbb R$.
 
@@ -97,13 +97,13 @@ x\coloneqq\frac{a+b}{2},
 \qquad
 h\coloneqq\frac{a-b}{2}.
 $$
-Then $h\neq0$, $x+h=a$, and $x-h=b$. Step <1>2 therefore gives $f''(a)=f''(b)$. Thus $f''$ has the same value at every pair of distinct points, and hence is constant.
+Then $h\neq0$, $x+h=a$, and $x-h=b$. Step [](#s1-2){.pf-ref} therefore gives $f''(a)=f''(b)$. Thus $f''$ has the same value at every pair of distinct points, and hence is constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every solution has the form
 $$
@@ -114,13 +114,13 @@ for some $a,b,c\in\mathbb R$.
 
 ::: pf-proof
 
-By step <1>3, write $f''(x)=2a$ for a constant $a\in\mathbb R$. Integrating once gives $f'(x)=2ax+b$ for some $b\in\mathbb R$, and integrating again gives $f(x)=ax^2+bx+c$ for some $c\in\mathbb R$.
+By step [](#s1-3){.pf-ref}, write $f''(x)=2a$ for a constant $a\in\mathbb R$. Integrating once gives $f'(x)=2ax+b$ for some $b\in\mathbb R$, and integrating again gives $f(x)=ax^2+bx+c$ for some $c\in\mathbb R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, every function $f(x)=ax^2+bx+c$ satisfies the required identity.
 
@@ -144,7 +144,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 shows that every solution is quadratic, and step <1>5 shows that every quadratic polynomial has the required property.
+Step [](#s1-4){.pf-ref} shows that every solution is quadratic, and step [](#s1-5){.pf-ref} shows that every quadratic polynomial has the required property.
 
 :::
 

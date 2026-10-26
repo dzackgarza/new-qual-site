@@ -25,7 +25,7 @@ Let $(X,\mathcal M,\mu)$ be a measure space and let $f_n:X\to\mathbb R$ be measu
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The statement $f_n\to0$ in $L^1$ means that each $f_n$ is integrable and
 $$
@@ -43,7 +43,7 @@ This is the definition of convergence to zero in the $L^1$ norm. This gives the 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The statement $f_n\to0$ in measure means that for every $\varepsilon>0$,
 $$
@@ -60,7 +60,7 @@ This is the definition of convergence in measure to zero. Replacing $\geq\vareps
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $\varepsilon>0$ and every $n$,
 $$
@@ -93,7 +93,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $f_n\to0$ in $L^1$, then
 $$
@@ -103,14 +103,14 @@ $$
 
 ::: pf-proof
 
-Fix $\varepsilon>0$. By step <1>3,
+Fix $\varepsilon>0$. By step [](#s1-3){.pf-ref},
 $$
 0\leq
 \mu\bigl(\{x:\abs{f_n(x)}\geq\varepsilon\}\bigr)
 \leq
 \frac{\norm{f_n}_{L^1}}{\varepsilon}.
 $$
-If $f_n\to0$ in $L^1$, then the right-hand side tends to zero. Hence the measure of the exceptional set tends to zero. By step <1>2, this is convergence in measure. This proves part (b).
+If $f_n\to0$ in $L^1$, then the right-hand side tends to zero. Hence the measure of the exceptional set tends to zero. By step [](#s1-2){.pf-ref}, this is convergence in measure. This proves part (b).
 
 :::
 
@@ -118,7 +118,7 @@ If $f_n\to0$ in $L^1$, then the right-hand side tends to zero. Hence the measure
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the requested definitions, and step <1>4 proves the implication.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the requested definitions, and step [](#s1-4){.pf-ref} proves the implication.
 
 :::
 

@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The statement without the $T_0$ hypothesis is false.
 
@@ -66,7 +66,7 @@ is Hausdorff, and every subspace of a Hausdorff space is Hausdorff. The indiscre
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every subspace of a generalized Cantor space has a basis of clopen sets.
 
@@ -120,7 +120,7 @@ is a basis of clopen subsets for the subspace topology on $Y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $X$ be $T_0$ and let
 $$
@@ -171,7 +171,7 @@ Thus a clopen basis element separates the two points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -220,7 +220,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $e$ is continuous.
 
@@ -268,7 +268,7 @@ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $e$ is injective.
 
@@ -279,7 +279,7 @@ If
 $$
 x\ne y,
 $$
-step <1>3 gives
+step [](#s1-3){.pf-ref} gives
 $$
 B\in\mathcal B
 $$
@@ -306,7 +306,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map
 $$
@@ -384,7 +384,7 @@ is an open bijection. Its inverse is therefore continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Taking
 $$
@@ -398,7 +398,7 @@ $$
 
 ::: pf-proof
 
-Step <1>7 embeds
+Step [](#s1-7){.pf-ref} embeds
 $$
 X
 $$
@@ -423,7 +423,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 records the defect in the literal statement. Step <1>2 proves the forward implication, and steps <1>3--<1>8 prove the converse under the necessary $T_0$ hypothesis.
+Step [](#s1-1){.pf-ref} records the defect in the literal statement. Step [](#s1-2){.pf-ref} proves the forward implication, and steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} prove the converse under the necessary $T_0$ hypothesis.
 
 :::
 

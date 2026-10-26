@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The element $f$ divides both $x$ and $y$.
 
@@ -116,7 +116,7 @@ The same argument proves irreducibility of $y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The irreducibles $x$ and $y$ are not associates.
 
@@ -140,7 +140,7 @@ This is impossible.
 
 ::: pf-step
 
-The common divisor $f$ from step <1>1 must be a unit.
+The common divisor $f$ from step [](#s1-1){.pf-ref} must be a unit.
 
 
 ::: pf-proof
@@ -158,7 +158,7 @@ one would have
 $$
 x\mid y.
 $$
-Since $y$ is irreducible, this would make $x$ and $y$ associates, contradicting step <1>3.
+Since $y$ is irreducible, this would make $x$ and $y$ associates, contradicting step [](#s1-3){.pf-ref}.
 Therefore
 $$
 f
@@ -169,7 +169,7 @@ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $f$ is a unit, then
 $$
@@ -193,7 +193,7 @@ the conclusion follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal $(x,y)$ is proper.
 
@@ -229,18 +229,18 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The assumption that $(x,y)$ is principal is impossible.
 
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 (x,y)=R,
 $$
-while step <1>6 gives
+while step [](#s1-6){.pf-ref} gives
 $$
 (x,y)\ne R.
 $$
@@ -250,7 +250,7 @@ This contradiction proves that no generator $f$ can exist.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -263,7 +263,7 @@ $$
 
 ::: pf-proof
 
-This is exactly the conclusion of step <1>7.
+This is exactly the conclusion of step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -271,7 +271,7 @@ This is exactly the conclusion of step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

@@ -49,7 +49,7 @@ Multiply out and use \(i^2=-1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Comparing real and imaginary parts with
 \[
@@ -74,7 +74,7 @@ parts.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -84,13 +84,13 @@ Hence
 
 ::: pf-proof
 
-Divide the second equation in step <1>2 by \(2\).
+Divide the second equation in step [](#s1-2){.pf-ref} by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The modulus of \(2-4i\) is
 \[
@@ -135,13 +135,13 @@ and
 \[
 |w|^2=|w^2|=|2-4i|.
 \]
-Apply step <1>4.
+Apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Adding the equations
 \[
@@ -165,7 +165,7 @@ The \(b^2\)-terms cancel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -176,13 +176,13 @@ a^2=1+\sqrt5}.
 
 ::: pf-proof
 
-Divide step <1>6 by \(2\).
+Divide step [](#s1-6){.pf-ref} by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Subtracting the first equation from the second gives
 \[
@@ -200,7 +200,7 @@ Subtracting the first equation from the second gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -211,13 +211,13 @@ b^2=\sqrt5-1}.
 
 ::: pf-proof
 
-Divide step <1>8 by \(2\).
+Divide step [](#s1-8){.pf-ref} by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Thus
 \[
@@ -235,20 +235,20 @@ and
 
 ::: pf-proof
 
-Take nonnegative square roots in steps <1>7--<1>9.
+Take nonnegative square roots in steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The signs of \(a\) and \(b\) must be opposite.
 
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 ab=-2<0.
 \]
@@ -257,7 +257,7 @@ ab=-2<0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Taking \(a>0\) forces
 \[
@@ -270,7 +270,7 @@ b=-\sqrt{\sqrt5-1}}.
 
 ::: pf-proof
 
-Use step <1>10 and the opposite-sign condition from step <1>11.
+Use step [](#s1-10){.pf-ref} and the opposite-sign condition from step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -302,7 +302,7 @@ ab
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore one square root is
 \[
@@ -315,13 +315,13 @@ i\sqrt{\sqrt5-1}}.
 
 ::: pf-proof
 
-Substitute step <1>12 into \(w=a+ib\).
+Substitute step [](#s1-12){.pf-ref} into \(w=a+ib\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The other square root is its negative:
 \[
@@ -341,7 +341,7 @@ square roots, which are opposites.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Hence the real and imaginary parts of the two roots are
 \[
@@ -363,7 +363,7 @@ and
 
 ::: pf-proof
 
-Read off the real and imaginary parts from steps <1>14--<1>15.
+Read off the real and imaginary parts from steps [](#s1-14){.pf-ref} through [](#s1-15){.pf-ref}.
 
 :::
 
@@ -371,7 +371,7 @@ Read off the real and imaginary parts from steps <1>14--<1>15.
 
 ::: pf-qed
 
-Step <1>16 gives the requested algebraic expressions.
+Step [](#s1-16){.pf-ref} gives the requested algebraic expressions.
 
 :::
 

@@ -68,7 +68,7 @@ so they lie in the slit plane enclosed by the contour.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue at $\zeta_k$ is
 $$
@@ -111,7 +111,7 @@ Substitution gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sum
 $$
@@ -188,7 +188,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the sum of all residues is
 $$
@@ -202,7 +202,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \sum_k
 \operatorname{Res}_{z=\zeta_k}F
@@ -210,7 +210,7 @@ $$
 -\frac i\alpha
 \sum_k\theta_k\zeta_k.
 $$
-Use step <1>3 and
+Use step [](#s1-3){.pf-ref} and
 $$
 (-i)(-i)=-1.
 $$
@@ -219,7 +219,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The outer and inner circular-arc contributions tend to zero as
 $R\to\infty$ and $\varepsilon\to0^+$.
@@ -281,7 +281,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 $$
@@ -338,7 +338,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By the residue theorem,
 $$
@@ -354,15 +354,15 @@ $$
 
 ::: pf-proof
 
-By step <1>5, only the two ray contributions survive in the limit. Step
-<1>6 gives their value, while the residue theorem and step <1>4 give the
+By step [](#s1-5){.pf-ref}, only the two ray contributions survive in the limit. Step
+[](#s1-6){.pf-ref} gives their value, while the residue theorem and step [](#s1-4){.pf-ref} give the
 right-hand side.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -378,7 +378,7 @@ $$
 
 ::: pf-proof
 
-Cancel the common factor $-2\pi i$ in step <1>7.
+Cancel the common factor $-2\pi i$ in step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -386,7 +386,7 @@ Cancel the common factor $-2\pi i$ in step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required value.
+Step [](#s1-8){.pf-ref} is the required value.
 
 :::
 

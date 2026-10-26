@@ -27,7 +27,7 @@ Let $a$ be the smallest positive value of $x$ at which the function $f(x) = (\co
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function can be written as
 $$
@@ -51,7 +51,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The smallest positive critical point satisfies
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, a positive critical point must satisfy
+By step [](#s1-1){.pf-ref}, a positive critical point must satisfy
 $\cos(2x^2)=0$. Thus
 $$
 2x^2=\frac\pi2+k\pi
@@ -74,7 +74,7 @@ $a^2=\pi/4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At this point,
 $$
@@ -85,7 +85,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Using step <1>1 and $2a^2=\pi/2$ from step <1>2,
+Using step [](#s1-1){.pf-ref} and $2a^2=\pi/2$ from step [](#s1-2){.pf-ref},
 $$
 f(a)=\frac12\sin(2a^2)
 =\frac12\sin\frac\pi2
@@ -98,7 +98,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

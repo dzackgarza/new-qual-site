@@ -34,7 +34,7 @@ The solution uses this intended definition.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every integer $m\geq0$,
 $$
@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\geq0$, there is a polynomial $P_n$ such that for $x\neq0$,
 $$
@@ -110,17 +110,17 @@ when the derivative is taken on $x\neq0$.
 
 ::: pf-proof
 
-By step <1>2, $f^{(n)}(x)$ is a finite sum of terms
+By step [](#s1-2){.pf-ref}, $f^{(n)}(x)$ is a finite sum of terms
 $$
 c_m x^{-m}e^{-1/x^2}.
 $$
-Each term tends to $0$ by step <1>1.
+Each term tends to $0$ by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is differentiable at $0$ and
 $$
@@ -136,13 +136,13 @@ $$
 =
 \frac{e^{-1/h^2}}h.
 $$
-Its absolute value tends to $0$ by step <1>1 with $m=1$.
+Its absolute value tends to $0$ by step [](#s1-1){.pf-ref} with $m=1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Suppose $f^{(n)}(0)=0$. Then $f^{(n+1)}(0)$ exists and equals $0$.
 
@@ -155,18 +155,18 @@ $$
 =
 \frac{f^{(n)}(h)}h.
 $$
-By step <1>2, this is again a finite sum of terms of the form
+By step [](#s1-2){.pf-ref}, this is again a finite sum of terms of the form
 $$
 c_m h^{-m}e^{-1/h^2},
 $$
-after increasing the exponents by one. Step <1>1 shows that every such term
+after increasing the exponents by one. Step [](#s1-1){.pf-ref} shows that every such term
 tends to $0$. Hence the derivative at $0$ exists and is $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for every integer $n>0$,
 $$
@@ -176,7 +176,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 is the base case, and step <1>5 gives the induction step.
+Step [](#s1-4){.pf-ref} is the base case, and step [](#s1-5){.pf-ref} gives the induction step.
 
 :::
 
@@ -184,7 +184,7 @@ Step <1>4 is the base case, and step <1>5 gives the induction step.
 
 ::: pf-qed
 
-Step <1>6 is the required value of every derivative at the origin.
+Step [](#s1-6){.pf-ref} is the required value of every derivative at the origin.
 
 :::
 

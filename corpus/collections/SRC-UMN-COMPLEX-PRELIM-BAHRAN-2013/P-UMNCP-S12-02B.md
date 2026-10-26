@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $p$ has exactly four zeros in
 $$
@@ -79,7 +79,7 @@ have the same number of zeros in $|z|<2$. The function $z^4$ has four zeros ther
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $p$ has exactly one zero in
 $$
@@ -124,7 +124,7 @@ have the same number of zeros in $|z|<1$. The function $5z$ has exactly one zero
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $p$ has no zeros on either boundary circle
 $$
@@ -136,13 +136,13 @@ $$
 
 ::: pf-proof
 
-The strict Rouché inequalities in steps <1>1 and <1>2 imply that $p$ cannot vanish on either contour: if $p(z)=0$, then the two compared terms would have equal modulus, contradicting the strict inequality.
+The strict Rouché inequalities in steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} imply that $p$ cannot vanish on either contour: if $p(z)=0$, then the two compared terms would have equal modulus, contradicting the strict inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the number of zeros in
 $$
@@ -156,7 +156,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1 there are four zeros in $|z|<2$, while by step <1>2 there is one zero in $|z|<1$. Step <1>3 ensures that no zero lies on either boundary. Therefore the annulus contains
+By step [](#s1-1){.pf-ref} there are four zeros in $|z|<2$, while by step [](#s1-2){.pf-ref} there is one zero in $|z|<1$. Step [](#s1-3){.pf-ref} ensures that no zero lies on either boundary. Therefore the annulus contains
 $$
 4-1=3
 $$
@@ -168,7 +168,7 @@ zeros, counted with multiplicity.
 
 ::: pf-qed
 
-Step <1>4 is the required zero count.
+Step [](#s1-4){.pf-ref} is the required zero count.
 
 :::
 

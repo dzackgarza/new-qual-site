@@ -27,7 +27,7 @@ Which of the following sets is NOT countably infinite?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sets $\ZZ^+$, $E$, $\ZZ$, and $\QQ$ are countably infinite.
 
@@ -48,7 +48,7 @@ so $\ZZ$ is countably infinite. Finally, every rational number has a representat
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\QQ^c=\RR\setminus\QQ$ of irrational numbers is uncountable.
 
@@ -65,7 +65,7 @@ would be a union of two countable sets and therefore countable, contradicting Ca
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the set that is not countably infinite is
 $$
@@ -76,7 +76,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>1 proves that choices (A), (B), (D), and (E) are countably infinite, while step <1>2 proves that choice (C) is uncountable.
+Step [](#s1-1){.pf-ref} proves that choices (A), (B), (D), and (E) are countably infinite, while step [](#s1-2){.pf-ref} proves that choice (C) is uncountable.
 
 :::
 
@@ -84,7 +84,7 @@ Step <1>1 proves that choices (A), (B), (D), and (E) are countably infinite, whi
 
 ::: pf-qed
 
-Step <1>3 gives the required choice.
+Step [](#s1-3){.pf-ref} gives the required choice.
 
 :::
 

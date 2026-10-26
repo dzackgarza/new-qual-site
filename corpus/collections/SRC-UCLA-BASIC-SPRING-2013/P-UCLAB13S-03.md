@@ -23,7 +23,7 @@ A metric space is totally bounded when for every $\varepsilon>0$ it can be cover
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that $X$ is sequentially compact.
 Then $X$ is complete.
@@ -74,7 +74,7 @@ Hence every Cauchy sequence converges, so $X$ is complete.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $X$ is sequentially compact, then $X$ is totally bounded.
 
@@ -130,7 +130,7 @@ Thus $X$ is totally bounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Now suppose conversely that $X$ is complete and totally bounded.
 Let
@@ -193,9 +193,9 @@ Thus $(y_k)$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The Cauchy subsequence from step <1>3 converges in $X$.
+The Cauchy subsequence from step [](#s1-3){.pf-ref} converges in $X$.
 
 
 ::: pf-proof
@@ -207,7 +207,7 @@ Therefore every Cauchy sequence in $X$, including the subsequence $(y_k)$, conve
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence $X$ is sequentially compact.
 
@@ -215,14 +215,14 @@ Hence $X$ is sequentially compact.
 ::: pf-proof
 
 The original sequence $(x_n)$ was arbitrary.
-Steps <1>3--<1>4 show that every sequence has a convergent subsequence.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that every sequence has a convergent subsequence.
 This is the definition of sequential compactness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -236,7 +236,7 @@ X\text{ is complete and totally bounded}.
 
 ::: pf-proof
 
-Steps <1>1--<1>2 prove the forward implication, and steps <1>3--<1>5 prove the converse.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove the forward implication, and steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} prove the converse.
 
 :::
 
@@ -244,7 +244,7 @@ Steps <1>1--<1>2 prove the forward implication, and steps <1>3--<1>5 prove the c
 
 ::: pf-qed
 
-Step <1>6 is the required equivalence.
+Step [](#s1-6){.pf-ref} is the required equivalence.
 
 :::
 

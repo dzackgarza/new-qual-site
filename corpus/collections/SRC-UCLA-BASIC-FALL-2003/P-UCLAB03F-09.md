@@ -89,7 +89,7 @@ Hence $w$ is orthogonal to both.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The line
 \[
@@ -117,7 +117,7 @@ because $A$ is symmetric and $z\perp v_i$. Thus $Az$ is orthogonal to both $v_1$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vector
 \[
@@ -128,15 +128,15 @@ is an eigenvector of $A$ and is linearly independent of $v_1,v_2$.
 
 ::: pf-proof
 
-By step <1>3, the nonzero one-dimensional subspace $L$ is $A$-invariant, so every nonzero vector in $L$ is an eigenvector. Dividing $w=(-13,2,3)$ by $-13$ gives the displayed vector. It is orthogonal to $v_1,v_2$, hence cannot lie in their span except as the zero vector, so it is linearly independent of them.
+By step [](#s1-3){.pf-ref}, the nonzero one-dimensional subspace $L$ is $A$-invariant, so every nonzero vector in $L$ is an eigenvector. Dividing $w=(-13,2,3)$ by $-13$ gives the displayed vector. It is orthogonal to $v_1,v_2$, hence cannot lie in their span except as the zero vector, so it is linearly independent of them.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The eigenvalue corresponding to the vector in step <1>4 is
+The eigenvalue corresponding to the vector in step [](#s1-4){.pf-ref} is
 \[
 \boxed{3}.
 \]
@@ -144,7 +144,7 @@ The eigenvalue corresponding to the vector in step <1>4 is
 
 ::: pf-proof
 
-Let the third eigenvalue be $\mu$. By step <1>4, the three displayed eigenvectors form a basis of $\mathbb R^3$. Hence in that basis the matrix of $A$ is diagonal with diagonal entries
+Let the third eigenvalue be $\mu$. By step [](#s1-4){.pf-ref}, the three displayed eigenvectors form a basis of $\mathbb R^3$. Hence in that basis the matrix of $A$ is diagonal with diagonal entries
 \[
 1,\quad2,\quad\mu.
 \]
@@ -163,7 +163,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>4 answers part (a), and step <1>5 answers part (b).
+Step [](#s1-4){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} answers part (b).
 
 :::
 

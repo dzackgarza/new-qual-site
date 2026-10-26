@@ -30,7 +30,7 @@ a=x_1,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Consider
 \[
@@ -49,7 +49,7 @@ There are eight sign triples, so the product is monic of degree eight. The facto
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Pairing each signed sum with its negative gives
 \[
@@ -73,14 +73,14 @@ give roots $r$ and $-r$. Their factors multiply to $(X-r)(X+r)=X^2-r^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Set
 \[
 S=a+b+c,
 \qquad Y=X^2-S.
 \]
-Then the four factors in step <1>2 are
+Then the four factors in step [](#s1-2){.pf-ref} are
 \[
 Y-2(\varepsilon_2\sqrt{ab}+\varepsilon_3\sqrt{ac}+\varepsilon_2\varepsilon_3\sqrt{bc}).
 \]
@@ -118,13 +118,13 @@ P(X)=
 
 ::: pf-proof
 
-These are exactly the four choices $(\varepsilon_2,\varepsilon_3)=(1,1),(1,-1),(-1,1),(-1,-1)$ in step <1>3, reordered.
+These are exactly the four choices $(\varepsilon_2,\varepsilon_3)=(1,1),(1,-1),(-1,1),(-1,-1)$ in step [](#s1-3){.pf-ref}, reordered.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Multiplying the first two and the last two factors yields
 \[
@@ -142,7 +142,7 @@ Use $(A-B)(A+B)=A^2-B^2$ on the first pair with $A=Y-u$, $B=v+w$, and on the sec
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -156,7 +156,7 @@ P(X)=(A-2Yu-2vw)(A+2Yu+2vw).
 
 ::: pf-proof
 
-Expanding the two factors from step <1>5 gives
+Expanding the two factors from step [](#s1-5){.pf-ref} gives
 \[
 (Y-u)^2-(v+w)^2
 =A-2Yu-2vw
@@ -171,7 +171,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -181,13 +181,13 @@ P(X)=A^2-4(Yu+vw)^2.
 
 ::: pf-proof
 
-Apply the difference-of-squares identity to step <1>6.
+Apply the difference-of-squares identity to step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Substituting
 \[
@@ -209,7 +209,7 @@ Y=X^2-(a+b+c).}
 
 ::: pf-proof
 
-From step <1>7,
+From step [](#s1-7){.pf-ref},
 \[
 A^2-4(Yu+vw)^2
 =A^2-4Y^2u^2-8Yuvw-4v^2w^2.
@@ -228,7 +228,7 @@ which is the boxed expression.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore an explicit answer is
 \[
@@ -244,7 +244,7 @@ f(X)=
 
 ::: pf-proof
 
-Use the corrected simplification at the end of step <1>8 and substitute back $a=x_1$, $b=x_2$, $c=x_3$, and $Y=X^2-(a+b+c)$. The polynomial lies in $F[X]$, is monic of degree eight, and equals the product in step <1>1, so $f(\alpha)=0$.
+Use the corrected simplification at the end of step [](#s1-8){.pf-ref} and substitute back $a=x_1$, $b=x_2$, $c=x_3$, and $Y=X^2-(a+b+c)$. The polynomial lies in $F[X]$, is monic of degree eight, and equals the product in step [](#s1-1){.pf-ref}, so $f(\alpha)=0$.
 
 :::
 
@@ -252,7 +252,7 @@ Use the corrected simplification at the end of step <1>8 and substitute back $a=
 
 ::: pf-qed
 
-Step <1>9 supplies the requested monic degree-eight polynomial over $F$ and step <1>1 verifies the required root.
+Step [](#s1-9){.pf-ref} supplies the requested monic degree-eight polynomial over $F$ and step [](#s1-1){.pf-ref} verifies the required root.
 
 :::
 

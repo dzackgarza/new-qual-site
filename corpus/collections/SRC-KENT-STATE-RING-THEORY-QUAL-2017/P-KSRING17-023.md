@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -98,13 +98,13 @@ is well-defined.
 
 ::: pf-proof
 
-This is exactly step <1>1.
+This is exactly step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $\varphi$ is injective.
 
@@ -149,22 +149,22 @@ Thus $\varphi$ is one-to-one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose $X$ is finite. Then $\varphi$ is surjective.
 
 
 ::: pf-proof
 
-By step <1>3, $\varphi$ is an injective self-map of the finite set $X$. Every injective self-map of a finite set is surjective.
+By step [](#s1-3){.pf-ref}, $\varphi$ is an injective self-map of the finite set $X$. Every injective self-map of a finite set is surjective.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Under the hypothesis of step <1>4, there exists
+Under the hypothesis of step [](#s1-4){.pf-ref}, there exists
 $$
 x\in X
 $$
@@ -184,15 +184,15 @@ one has
 $$
 b\in X.
 $$
-By surjectivity from step <1>4, $b$ has a preimage $x\in X$.
+By surjectivity from step [](#s1-4){.pf-ref}, $b$ has a preimage $x\in X$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The element $x$ from step <1>5 is a two-sided inverse of $a$.
+The element $x$ from step [](#s1-5){.pf-ref} is a two-sided inverse of $a$.
 
 
 ::: pf-proof
@@ -229,7 +229,7 @@ Thus $x$ is a two-sided inverse of $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $a$ has a two-sided inverse $x$, then $X=\{x\}$.
 
@@ -266,14 +266,14 @@ Hence every element of $X$ equals $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $X$ has more than one element, then $X$ is infinite.
 
 
 ::: pf-proof
 
-Suppose $X$ had more than one element but were finite. Steps <1>4--<1>6 would produce a two-sided inverse $x$ of $a$, and step <1>7 would then imply
+Suppose $X$ had more than one element but were finite. Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} would produce a two-sided inverse $x$ of $a$, and step [](#s1-7){.pf-ref} would then imply
 $$
 X=\{x\},
 $$
@@ -294,7 +294,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 proves part (a), step <1>3 proves part (b), and step <1>8 proves part (c).
+Step [](#s1-1){.pf-ref} proves part (a), step [](#s1-3){.pf-ref} proves part (b), and step [](#s1-8){.pf-ref} proves part (c).
 
 :::
 

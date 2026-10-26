@@ -21,7 +21,7 @@ State the most general version of Cauchy's Theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $U\subset\mathbb C$ be open and let
 \[
@@ -55,7 +55,7 @@ steps give a proof.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Write
 \[
@@ -127,7 +127,7 @@ d\omega=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 \[
@@ -152,7 +152,7 @@ with the same boundary for purposes of integration.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Stokes' theorem gives
 \[
@@ -164,7 +164,7 @@ Stokes' theorem gives
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 \int_\Gamma f(z)\,dz
@@ -183,7 +183,7 @@ By steps <1>2--<1>3,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For a closed cycle $\Gamma\subset U$, the condition that it be
 null-homologous in $U$ can equivalently be expressed by the winding-number
@@ -215,7 +215,7 @@ zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently an equivalent standard formulation is:
 if $f$ is holomorphic on $U$ and $\Gamma$ is a closed piecewise-$C^1$
@@ -235,8 +235,8 @@ then
 
 ::: pf-proof
 
-By step <1>5, the winding-number hypothesis says exactly that $\Gamma$ is
-homologous to zero in $U$. Apply step <1>4.
+By step [](#s1-5){.pf-ref}, the winding-number hypothesis says exactly that $\Gamma$ is
+homologous to zero in $U$. Apply step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -258,7 +258,7 @@ A simply connected domain has
 \[
 H_1(U;\mathbb Z)=0.
 \]
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -266,8 +266,8 @@ Apply step <1>1.
 
 ::: pf-qed
 
-Steps <1>1 and <1>6 state the most general planar Cauchy theorem in its
-homological and winding-number forms; steps <1>2--<1>4 prove it.
+Steps [](#s1-1){.pf-ref} and [](#s1-6){.pf-ref} state the most general planar Cauchy theorem in its
+homological and winding-number forms; steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} prove it.
 
 :::
 

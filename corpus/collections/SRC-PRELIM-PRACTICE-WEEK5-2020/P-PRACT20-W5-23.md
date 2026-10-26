@@ -24,7 +24,7 @@ If $f$ is an entire function which maps the complex plane into the real axis, th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ must be constant.
 
@@ -46,7 +46,7 @@ contradiction. Hence $f$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the image of the imaginary axis is a singleton
 \[
@@ -56,7 +56,7 @@ Therefore the image of the imaginary axis is a singleton
 
 ::: pf-proof
 
-By step <1>1 there is $c\in\mathbb R$ such that
+By step [](#s1-1){.pf-ref} there is $c\in\mathbb R$ such that
 \[
 f(z)=c
 \qquad(z\in\mathbb C).
@@ -71,7 +71,7 @@ Conversely, every real constant function is entire and has this image.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In the listed choices, (b) is the general answer, and (a) is its
 special case $c=0$; neither (c) nor (d) is possible.
@@ -79,7 +79,7 @@ special case $c=0$; neither (c) nor (d) is possible.
 
 ::: pf-proof
 
-This follows immediately from the singleton classification in step <1>2.
+This follows immediately from the singleton classification in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -87,7 +87,7 @@ This follows immediately from the singleton classification in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 settles the alternatives.
+Step [](#s1-3){.pf-ref} settles the alternatives.
 
 :::
 

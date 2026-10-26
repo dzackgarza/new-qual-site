@@ -36,7 +36,7 @@ The source adds "cf. Theorem 5.6 on p.60 of Stein et al." to part (3), a pointer
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The assertion in part (1) is false, even when $O$ is a region.
 
@@ -69,7 +69,7 @@ Thus an accumulating sequence of zeros does not force a harmonic function to van
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The assertion in part (2) is false for an arbitrary open set $O$.
 
@@ -99,7 +99,7 @@ The function is harmonic on the open set $O$ and vanishes on the entire first di
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $O$ is a region and a harmonic function $u$ vanishes on a nonempty disk contained in $O$, then
 $$
@@ -144,7 +144,7 @@ Hence $E$ is nonempty, open, and closed in the connected set $O$. Therefore $E=O
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Harmonic Schwarz reflection principle: let $G\subset\CC$ be a region symmetric under complex conjugation, let
 $$
@@ -198,7 +198,7 @@ Hence the two semicircle contributions cancel, and the average is $0=U(x_0)$. Th
 
 ::: pf-qed
 
-Step <1>1 answers part (1), steps <1>2--<1>3 answer part (2), and step <1>4 formulates and proves the harmonic Schwarz reflection principle requested in part (3).
+Step [](#s1-1){.pf-ref} answers part (1), steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} answer part (2), and step [](#s1-4){.pf-ref} formulates and proves the harmonic Schwarz reflection principle requested in part (3).
 
 :::
 

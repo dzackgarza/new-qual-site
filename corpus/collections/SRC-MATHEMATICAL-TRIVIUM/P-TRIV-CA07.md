@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -66,7 +66,7 @@ Using oddness of sine gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sine addition formula gives
 $$
@@ -94,13 +94,13 @@ a=1,
 \qquad
 b=1/w,
 $$
-and then multiply by $-1$ as in step <1>1.
+and then multiply by $-1$ as in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $w\neq0$,
 $$
@@ -127,7 +127,7 @@ sine.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the Laurent series about $z=1$ is
 $$
@@ -149,14 +149,14 @@ $$
 
 ::: pf-proof
 
-Substitute the two expansions from step <1>3 into step <1>2 and replace
+Substitute the two expansions from step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref} and replace
 $w$ by $z-1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The region of convergence is
 $$
@@ -184,7 +184,7 @@ The singularity at $z=1$ is essential.
 
 ::: pf-proof
 
-Step <1>4 contains infinitely many nonzero negative-power terms. Hence the
+Step [](#s1-4){.pf-ref} contains infinitely many nonzero negative-power terms. Hence the
 principal part is infinite, which characterizes an essential singularity.
 
 :::
@@ -193,7 +193,7 @@ principal part is infinite, which characterizes an essential singularity.
 
 ::: pf-qed
 
-Steps <1>4--<1>5 give the Laurent series and its exact region of convergence.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the Laurent series and its exact region of convergence.
 
 :::
 

@@ -16,7 +16,7 @@ Let $I=[0,1]$. Characterize exactly the topological spaces that can be obtained 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The spaces that occur as subspaces of products of copies of $I$ are
 exactly the
@@ -34,7 +34,7 @@ The remaining steps prove both directions of this characterization.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every subspace of a product of copies of $I$ is completely regular and
 Hausdorff.
@@ -55,7 +55,7 @@ is completely regular and Hausdorff.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $X$ be completely regular and Hausdorff, and put
 \[
@@ -95,7 +95,7 @@ Thus the $f$-coordinates of $e(x)$ and $e(y)$ differ, so $e(x)\ne e(y)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The evaluation map $e$ is a topological embedding.
 
@@ -127,7 +127,7 @@ and
 e^{-1}(W)\subseteq U.
 \]
 Hence every open neighborhood in $X$ contains the inverse image under $e$ of
-a product-open neighborhood. Since $e$ is already continuous by step <1>3,
+a product-open neighborhood. Since $e$ is already continuous by step [](#s1-3){.pf-ref},
 the original topology on $X$ agrees with the topology pulled back from
 $e(X)$. Thus $e:X\to e(X)$ is a homeomorphism.
 
@@ -135,7 +135,7 @@ $e(X)$. Thus $e:X\to e(X)$ is a homeomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every completely regular Hausdorff space is therefore a subspace of a
 possibly infinite product of copies of $I$.
@@ -143,7 +143,7 @@ possibly infinite product of copies of $I$.
 
 ::: pf-proof
 
-For such an $X$, step <1>4 embeds $X$ into the power
+For such an $X$, step [](#s1-4){.pf-ref} embeds $X$ into the power
 \[
 I^{C(X,I)}.
 \]
@@ -154,8 +154,8 @@ I^{C(X,I)}.
 
 ::: pf-qed
 
-Step <1>2 proves one direction and step <1>5 proves the converse, establishing
-the characterization in step <1>1.
+Step [](#s1-2){.pf-ref} proves one direction and step [](#s1-5){.pf-ref} proves the converse, establishing
+the characterization in step [](#s1-1){.pf-ref}.
 
 :::
 

@@ -50,7 +50,7 @@ their sign reversed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its determinant is
 $$
@@ -78,7 +78,7 @@ The determinant is the product of these diagonal entries.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In $\mathbb R^2$, reflection through the origin is rotation by $\pi$.
 
@@ -100,7 +100,7 @@ which is exactly the matrix of a rotation through angle $\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In $\mathbb R^2$, reflection across any line through the origin is not a
 rotation.
@@ -108,7 +108,7 @@ rotation.
 
 ::: pf-proof
 
-Such a line has dimension $m=1$, so step <1>2 gives
+Such a line has dimension $m=1$, so step [](#s1-2){.pf-ref} gives
 $$
 \det R_U=-1.
 $$
@@ -119,20 +119,20 @@ reflection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 give the two assertions.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the two assertions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In $\mathbb R^3$, central reflection through the origin is not a
 rotation.
@@ -144,13 +144,13 @@ Here $m=0$, so
 $$
 \det R=(-1)^3=-1
 $$
-by step <1>2. A rotation belongs to $SO(3)$ and has determinant $1$.
+by step [](#s1-2){.pf-ref}. A rotation belongs to $SO(3)$ and has determinant $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In $\mathbb R^3$, reflection across a line through the origin is a
 rotation by $\pi$ around that line.
@@ -170,7 +170,7 @@ the usual rotation by $\pi$ about the axis $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In $\mathbb R^3$, reflection across a plane through the origin is not a
 rotation.
@@ -178,7 +178,7 @@ rotation.
 
 ::: pf-proof
 
-Here $m=2$, so step <1>2 gives
+Here $m=2$, so step [](#s1-2){.pf-ref} gives
 $$
 \det R=-1.
 $$
@@ -188,27 +188,27 @@ Thus the reflection is orientation-reversing and cannot lie in $SO(3)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>6--<1>8 settle the point, line, and plane cases.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} settle the point, line, and plane cases.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If $n-m$ is odd, reflection across an $m$-plane cannot be a rotation.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \det R_U=(-1)^{n-m}=-1.
 $$
@@ -218,7 +218,7 @@ Every rotation has determinant $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If $n-m$ is even, reflection across an $m$-plane is a rotation in the
 general $SO(n)$ sense.
@@ -246,7 +246,7 @@ has determinant $1$ and lies in $SO(n)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore reflection across an $m$-dimensional plane through the origin
 is realizable by a rotation if and only if
@@ -257,20 +257,20 @@ $$
 
 ::: pf-proof
 
-Step <1>10 proves necessity and step <1>11 proves sufficiency.
+Step [](#s1-10){.pf-ref} proves necessity and step [](#s1-11){.pf-ref} proves sufficiency.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Step <1>12 is the requested general statement.
+Step [](#s1-12){.pf-ref} is the requested general statement.
 
 :::
 
@@ -278,7 +278,7 @@ Step <1>12 is the requested general statement.
 
 ::: pf-qed
 
-Steps <1>5, <1>9, and <1>13 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-13){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

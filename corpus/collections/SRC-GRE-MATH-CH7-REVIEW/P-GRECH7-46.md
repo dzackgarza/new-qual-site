@@ -31,7 +31,7 @@ As printed in the source, choices (B) and (C) coincide, as do (A), (D) and (E). 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -63,7 +63,7 @@ which is the displayed quadratic equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The two possible values of $w$ are
 $$
@@ -73,7 +73,7 @@ $$
 
 ::: pf-proof
 
-The quadratic formula applied to step <1>1 gives
+The quadratic formula applied to step [](#s1-1){.pf-ref} gives
 $$
 w=\frac{6\pm\sqrt{36-4}}{2}
 =\frac{6\pm4\sqrt2}{2}
@@ -85,9 +85,9 @@ Both values are positive real numbers, and their product is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-For either value of $w$ in step <1>2, all solutions of $e^{iz}=w$ are
+For either value of $w$ in step [](#s1-2){.pf-ref}, all solutions of $e^{iz}=w$ are
 $$
 z=2k\pi-i\log w,
 \qquad k\in\ZZ.
@@ -107,7 +107,7 @@ Multiplying by $-i$ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the complete solution set is
 $$
@@ -117,20 +117,20 @@ $$
 
 ::: pf-proof
 
-Substitute the two values of $w$ from step <1>2 into step <1>3. Conversely, every number obtained this way satisfies $e^{iz}=3\pm2\sqrt2$ and hence the quadratic relation in step <1>1, so it satisfies $\cos z=3$.
+Substitute the two values of $w$ from step [](#s1-2){.pf-ref} into step [](#s1-3){.pf-ref}. Conversely, every number obtained this way satisfies $e^{iz}=3\pm2\sqrt2$ and hence the quadratic relation in step [](#s1-1){.pf-ref}, so it satisfies $\cos z=3$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-None of the answer choices in the retained scan is correct as printed; the source's Chapter 8 solution gives the formula in step <1>4 and labels it choice (C).
+None of the answer choices in the retained scan is correct as printed; the source's Chapter 8 solution gives the formula in step [](#s1-4){.pf-ref} and labels it choice (C).
 
 
 ::: pf-proof
 
-Direct inspection of the retained page shows $\sqrt{2i}$, not $\sqrt2$, in every choice; moreover choices (B) and (C) are identical, as are (A), (D), and (E). Step <1>4 shows that the required quantity is $\sqrt2$. Thus the printed choices do not contain the derived solution, although the Chapter 8 derivation does.
+Direct inspection of the retained page shows $\sqrt{2i}$, not $\sqrt2$, in every choice; moreover choices (B) and (C) are identical, as are (A), (D), and (E). Step [](#s1-4){.pf-ref} shows that the required quantity is $\sqrt2$. Thus the printed choices do not contain the derived solution, although the Chapter 8 derivation does.
 
 :::
 
@@ -138,7 +138,7 @@ Direct inspection of the retained page shows $\sqrt{2i}$, not $\sqrt2$, in every
 
 ::: pf-qed
 
-Steps <1>4 and <1>5 give the complete mathematical solution and the status of the printed choices.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give the complete mathematical solution and the status of the printed choices.
 
 :::
 

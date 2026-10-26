@@ -24,7 +24,7 @@ Let $K\subset D$ be an arbitrary bounded closed subregion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $\delta>0$ such that
 $$
@@ -47,7 +47,7 @@ Choose $0<\delta<d$. Then every point whose distance from $K$ is at most $\delta
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in K$, every $n\ge0$, and the circle
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the closed disk $\abs{w-z}\le\delta$ lies in $D$. Cauchy's integral formula for derivatives gives
+By step [](#s1-1){.pf-ref}, the closed disk $\abs{w-z}\le\delta$ lies in $D$. Cauchy's integral formula for derivatives gives
 $$
 a_n'(z)
 =
@@ -79,7 +79,7 @@ Parametrize $C_z$ by $w=z+\delta e^{it}$. Then $\abs{dw}=\delta\,dt$ and $\abs{w
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For integers $M\ge N$ and every $z\in K$,
 $$
@@ -93,7 +93,7 @@ $$
 
 ::: pf-proof
 
-Summing the estimate from step <1>2 and using the finiteness of the sum,
+Summing the estimate from step [](#s1-2){.pf-ref} and using the finiteness of the sum,
 $$
 \begin{aligned}
 \sum_{n=N}^M\abs{a_n'(z)}
@@ -114,7 +114,7 @@ The points $z+\delta e^{it}$ lie in $K_\delta$, which justifies the last inequal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series
 $$
@@ -137,7 +137,7 @@ $$
 \sum_{n=N}^M\abs{a_n(w)}
 \longrightarrow0
 $$
-as $N,M\to\infty$ with $M\ge N$. Step <1>3 therefore implies
+as $N,M\to\infty$ with $M\ge N$. Step [](#s1-3){.pf-ref} therefore implies
 $$
 \sup_{z\in K}
 \sum_{n=N}^M\abs{a_n'(z)}
@@ -151,7 +151,7 @@ Thus the partial sums of $\sum\abs{a_n'(z)}$ are uniformly Cauchy on $K$, and he
 
 ::: pf-qed
 
-The bounded closed subregion $K\subset D$ was arbitrary, so step <1>4 proves the assertion on every such subregion.
+The bounded closed subregion $K\subset D$ was arbitrary, so step [](#s1-4){.pf-ref} proves the assertion on every such subregion.
 
 :::
 

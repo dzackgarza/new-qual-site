@@ -37,7 +37,7 @@ y,z\in[a,b]\cap(x-\delta,x+\delta)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is continuous at $x$ if and only if
 \[
@@ -80,7 +80,7 @@ whenever $y\in[a,b]$ and $|y-x|<\delta$, so $f$ is continuous at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $n\ge1$, the set
 \[
@@ -111,20 +111,20 @@ Hence the oscillation of $f$ on the smaller neighborhood is also less than $1/n$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set of continuity points of $f$ is Borel measurable.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \{x:f\text{ is continuous at }x\}
 =
 \bigcap_{n=1}^\infty E_n.
 \]
-Each $E_n$ is relatively open by step <1>2, hence Borel in $[a,b]$. A countable intersection of Borel sets is Borel.
+Each $E_n$ is relatively open by step [](#s1-2){.pf-ref}, hence Borel in $[a,b]$. A countable intersection of Borel sets is Borel.
 
 :::
 
@@ -170,7 +170,7 @@ The asserted limits follow.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each $n$, define step functions $L_n,U_n$ by taking on each subinterval $I$ of $P_n$ the values
 \[
@@ -204,7 +204,7 @@ The only ambiguity is at endpoints shared by adjacent intervals; the union of al
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The pointwise limits
 \[
@@ -226,7 +226,7 @@ exist almost everywhere, satisfy $L\le f\le U$, and
 
 ::: pf-proof
 
-The monotonicity from step <1>5 gives the pointwise limits away from the null set of partition endpoints. Since $f$ is bounded, choose $M$ with
+The monotonicity from step [](#s1-5){.pf-ref} gives the pointwise limits away from the null set of partition endpoints. Since $f$ is bounded, choose $M$ with
 \[
 |f|\le M.
 \]
@@ -255,7 +255,7 @@ and similarly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 At every point $x$ that is not an endpoint of any $P_n$,
 \[
@@ -311,7 +311,7 @@ Since $x$ lies in the interior of $I_n(x)$, this gives continuity at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The function $f$ is Riemann integrable if and only if
 \[
@@ -323,7 +323,7 @@ L=U
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 \overline{\int_a^b}f
 -
@@ -337,18 +337,18 @@ Since $U-L\ge0$, this difference is zero if and only if $U-L=0$ almost everywher
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function $f$ is Riemann integrable if and only if it is continuous almost everywhere.
 
 
 ::: pf-proof
 
-The set of all partition endpoints is countable and hence null. Away from that set, step <1>7 says
+The set of all partition endpoints is countable and hence null. Away from that set, step [](#s1-7){.pf-ref} says
 \[
 L=U
 \]
-exactly at the continuity points of $f$. Step <1>8 therefore identifies Riemann integrability with continuity almost everywhere.
+exactly at the continuity points of $f$. Step [](#s1-8){.pf-ref} therefore identifies Riemann integrability with continuity almost everywhere.
 
 :::
 
@@ -356,7 +356,7 @@ exactly at the continuity points of $f$. Step <1>8 therefore identifies Riemann 
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

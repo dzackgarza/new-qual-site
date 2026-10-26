@@ -24,7 +24,7 @@ If $A,B$ are subspaces of $V$, which of the following are necessarily subspaces 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sum
 \[
@@ -70,7 +70,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The intersection
 \[
@@ -96,7 +96,7 @@ belongs to both $A$ and $B$, hence to their intersection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The union
 \[
@@ -133,7 +133,7 @@ Thus $A\cup B$ is not closed under addition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The complement
 \[
@@ -159,7 +159,7 @@ which also does not contain $0$ and is not a subspace.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the necessarily-subspace choices are exactly
 \[
@@ -169,8 +169,7 @@ Therefore the necessarily-subspace choices are exactly
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 prove that (a) and (c) always work, while steps <1>3
-and <1>4 give the failures of (b) and (d).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove that (a) and (c) always work, while steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the failures of (b) and (d).
 
 :::
 
@@ -178,7 +177,7 @@ and <1>4 give the failures of (b) and (d).
 
 ::: pf-qed
 
-Step <1>5 gives the complete answer.
+Step [](#s1-5){.pf-ref} gives the complete answer.
 
 :::
 

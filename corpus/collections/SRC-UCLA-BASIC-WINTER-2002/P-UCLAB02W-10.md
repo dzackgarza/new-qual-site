@@ -28,7 +28,7 @@ Use the convention that the complex inner product is linear in its first argumen
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Choose an orthonormal basis
 $$
@@ -48,7 +48,7 @@ A finite-dimensional complex inner-product space admits an orthonormal basis by 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -68,9 +68,9 @@ This follows immediately from linearity of $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-For the vector $w$ from step <1>1,
+For the vector $w$ from step [](#s1-1){.pf-ref},
 $$
 \langle v,w\rangle
 =\sum_{j=1}^n v_j f(e_j).
@@ -100,7 +100,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -111,7 +111,7 @@ for every $v\in V$.
 
 ::: pf-proof
 
-The right-hand sides obtained in steps <1>2 and <1>3 are identical.
+The right-hand sides obtained in steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} are identical.
 
 :::
 
@@ -119,7 +119,7 @@ The right-hand sides obtained in steps <1>2 and <1>3 are identical.
 
 ::: pf-qed
 
-Step <1>1 constructs the required vector $w$, and step <1>4 verifies that it represents $f$ on every vector in $V$.
+Step [](#s1-1){.pf-ref} constructs the required vector $w$, and step [](#s1-4){.pf-ref} verifies that it represents $f$ on every vector in $V$.
 
 :::
 

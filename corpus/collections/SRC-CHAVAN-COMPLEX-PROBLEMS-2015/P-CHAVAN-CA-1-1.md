@@ -52,7 +52,7 @@ Let $\|\cdot\|$ denote the operator norm induced by the Euclidean norm on $\math
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $U_z$ is unitary, and every eigenvalue of $U_z$ has modulus $1$.
 
@@ -92,7 +92,7 @@ and hence $|\lambda|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer $k$ with $0\le k\le n$,
 $$
@@ -126,7 +126,7 @@ gives $e_1^TU_z^ke_1=z^k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $|z|\le1$,
 $$
@@ -136,7 +136,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 e_1^Tp(U_z)e_1
@@ -150,7 +150,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $z_0$ satisfy
 $$
@@ -166,7 +166,7 @@ $$
 
 Such a point $z_0$ exists because $p$ is continuous on the compact
 closed unit disk. Since the standard basis vector $e_1$ has real
-coordinates, $e_1^T=e_1^*$, and step <1>3 gives
+coordinates, $e_1^T=e_1^*$, and step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
 \max_{|z|\le1}|p(z)|
@@ -181,7 +181,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $\lambda_1,\ldots,\lambda_{n+1}$ are the eigenvalues of $U$ and
 $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, then
@@ -192,7 +192,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $U$ is unitary. The spectral theorem for unitary matrices
+By step [](#s1-1){.pf-ref}, $U$ is unitary. The spectral theorem for unitary matrices
 therefore gives a unitary matrix $V$ such that
 $$
 U=VDV^*.
@@ -224,7 +224,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The maximum modulus of $p$ on the closed unit disk is attained on the unit circle:
 $$
@@ -234,8 +234,8 @@ $$
 
 ::: pf-proof
 
-By step <1>1, every eigenvalue $\lambda_i$ of $U$ satisfies
-$|\lambda_i|=1$. Hence steps <1>4 and <1>5 give
+By step [](#s1-1){.pf-ref}, every eigenvalue $\lambda_i$ of $U$ satisfies
+$|\lambda_i|=1$. Hence steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give
 $$
 \max_{|z|\le1}|p(z)|
 \le \max_i|p(\lambda_i)|
@@ -250,8 +250,8 @@ subset of the closed unit disk. Therefore the two maxima are equal.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 establish the four requested intermediate claims,
-and step <1>6 gives the required conclusion.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} establish the four requested intermediate claims,
+and step [](#s1-6){.pf-ref} gives the required conclusion.
 
 :::
 

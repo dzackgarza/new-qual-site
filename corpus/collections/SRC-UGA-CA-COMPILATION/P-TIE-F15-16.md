@@ -28,7 +28,7 @@ For $n\ge1$, write $f^n$ for the $n$-fold iterate.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 $$
@@ -64,7 +64,7 @@ for some real $\theta$, contrary to the hypothesis. Therefore $\abs{g(z)}<1$ eve
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $0<r<1$, there exists $q_r<1$ such that
 $$
@@ -75,7 +75,7 @@ whenever $\abs{z}\le r$.
 
 ::: pf-proof
 
-The closed disk $\abs{z}\le r$ is compact, and $\abs{g(z)}<1$ there by step <1>1. Hence
+The closed disk $\abs{z}\le r$ is compact, and $\abs{g(z)}<1$ there by step [](#s1-1){.pf-ref}. Hence
 $$
 q_r
 \coloneqq
@@ -87,7 +87,7 @@ exists and satisfies $q_r<1$. Since $f(z)=zg(z)$, the asserted inequality follow
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\abs{z}\le r<1$, then for every $n\ge1$,
 $$
@@ -105,7 +105,7 @@ Schwarz's lemma gives
 $$
 \abs{f(w)}\le\abs{w}
 $$
-for every $w\in\DD$. Thus if $\abs{z}\le r$, every iterate $f^k(z)$ also lies in the closed disk $\abs{w}\le r$. Step <1>2 can therefore be applied at every stage:
+for every $w\in\DD$. Thus if $\abs{z}\le r$, every iterate $f^k(z)$ also lies in the closed disk $\abs{w}\le r$. Step [](#s1-2){.pf-ref} can therefore be applied at every stage:
 $$
 \abs{f^{k+1}(z)}
 \le
@@ -122,7 +122,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series
 $$
@@ -133,7 +133,7 @@ converges uniformly on every closed disk $\abs{z}\le r<1$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \abs{f^n(z)}
 \le
@@ -149,7 +149,7 @@ is a convergent geometric series, the Weierstrass $M$-test gives uniform converg
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The series converges uniformly on every compact subset of $\DD$.
 
@@ -160,13 +160,13 @@ Let $K\subset\DD$ be compact. Then
 $$
 r\coloneqq\max_{z\in K}\abs{z}<1,
 $$
-so $K\subset\{z:\abs{z}\le r\}$. Step <1>4 gives uniform convergence on that closed disk, hence on $K$.
+so $K\subset\{z:\abs{z}\le r\}$. Step [](#s1-4){.pf-ref} gives uniform convergence on that closed disk, hence on $K$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The sum
 $$
@@ -179,7 +179,7 @@ is analytic on $\DD$.
 
 ::: pf-proof
 
-Each iterate $f^n$ is holomorphic on $\DD$. By step <1>5, the series of holomorphic functions converges locally uniformly on $\DD$. The Weierstrass theorem therefore implies that its sum $F$ is holomorphic.
+Each iterate $f^n$ is holomorphic on $\DD$. By step [](#s1-5){.pf-ref}, the series of holomorphic functions converges locally uniformly on $\DD$. The Weierstrass theorem therefore implies that its sum $F$ is holomorphic.
 
 :::
 
@@ -187,7 +187,7 @@ Each iterate $f^n$ is holomorphic on $\DD$. By step <1>5, the series of holomorp
 
 ::: pf-qed
 
-Step <1>5 proves the required compact-uniform convergence, and step <1>6 proves that the limit is analytic.
+Step [](#s1-5){.pf-ref} proves the required compact-uniform convergence, and step [](#s1-6){.pf-ref} proves that the limit is analytic.
 
 :::
 

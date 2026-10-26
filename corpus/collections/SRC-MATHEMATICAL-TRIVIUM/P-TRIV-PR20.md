@@ -43,7 +43,7 @@ Assume these moments are finite.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Conditional on $\tau=k$,
 \[
@@ -59,7 +59,7 @@ This is the definition of the random sum $S_\tau$. Independence of $\tau$ from t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -69,7 +69,7 @@ Therefore
 
 ::: pf-proof
 
-On the event $\{\tau=k\}$, step <1>1 and linearity of expectation give
+On the event $\{\tau=k\}$, step [](#s1-1){.pf-ref} and linearity of expectation give
 \[
 \mathbf E(S_\tau\mid\tau=k)
 =\sum_{i=1}^k\mathbf E\xi_i=k\mu.
@@ -80,9 +80,9 @@ Thus the conditional expectation as a function of $\tau$ is $\tau\mu$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Taking expectations in step <1>2 gives
+Taking expectations in step [](#s1-2){.pf-ref} gives
 \[
 \boxed{\mathbf ES_\tau=\mathbf E\tau\cdot\mathbf E\xi_1}.
 \]
@@ -102,7 +102,7 @@ By the tower property,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Conditional on $\tau=k$,
 \[
@@ -112,7 +112,7 @@ Conditional on $\tau=k$,
 
 ::: pf-proof
 
-By step <1>1, $S_\tau$ is then a sum of $k$ independent identically distributed variables. Variances of independent sums add, so
+By step [](#s1-1){.pf-ref}, $S_\tau$ is then a sum of $k$ independent identically distributed variables. Variances of independent sums add, so
 \[
 \mathbf D(\xi_1+\cdots+\xi_k)
 =\sum_{i=1}^k\mathbf D\xi_i=k\sigma^2.
@@ -122,7 +122,7 @@ By step <1>1, $S_\tau$ is then a sum of $k$ independent identically distributed 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -132,13 +132,13 @@ Hence
 
 ::: pf-proof
 
-Step <1>4 identifies the conditional variance on each event $\{\tau=k\}$, so as a random variable measurable with respect to $\tau$ it equals $\tau\sigma^2$.
+Step [](#s1-4){.pf-ref} identifies the conditional variance on each event $\{\tau=k\}$, so as a random variable measurable with respect to $\tau$ it equals $\tau\sigma^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The law of total variance gives
 \[
@@ -162,7 +162,7 @@ After squaring and taking expectations, the cross term vanishes because its cond
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently
 \[
@@ -175,7 +175,7 @@ Consequently
 
 ::: pf-proof
 
-Substitute steps <1>2 and <1>5 into step <1>6:
+Substitute steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} into step [](#s1-6){.pf-ref}:
 \[
 \mathbf E(\tau\sigma^2)+\mathbf D(\tau\mu)
 =\sigma^2\mathbf E\tau+\mu^2\mathbf D\tau.
@@ -187,7 +187,7 @@ Substitute steps <1>2 and <1>5 into step <1>6:
 
 ::: pf-qed
 
-Steps <1>3, <1>2, <1>7, and <1>5 prove parts (a), (b), (c), and (d), respectively.
+Steps [](#s1-3){.pf-ref}, [](#s1-2){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1-5){.pf-ref} prove parts (a), (b), (c), and (d), respectively.
 
 :::
 

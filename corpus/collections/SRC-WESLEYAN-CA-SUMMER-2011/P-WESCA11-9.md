@@ -67,7 +67,7 @@ a_1=f'(0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix
 \[
@@ -108,7 +108,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 \[
@@ -134,13 +134,13 @@ By the maximum modulus principle,
 =
 \max_{|z|=r}|g(z)|.
 \]
-Apply the boundary estimate from step <1>2.
+Apply the boundary estimate from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix
 \[
@@ -162,7 +162,7 @@ with
 \[
 |z|<r<1.
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 |g(z)|
 \le
@@ -181,7 +181,7 @@ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -203,7 +203,7 @@ one has
 \[
 f(z)=zg(z).
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 |f(z)|
 =
@@ -230,7 +230,7 @@ f(0)=0.
 
 ::: pf-qed
 
-Step <1>5 is Schwarz's estimate obtained from the maximum principle.
+Step [](#s1-5){.pf-ref} is Schwarz's estimate obtained from the maximum principle.
 
 :::
 

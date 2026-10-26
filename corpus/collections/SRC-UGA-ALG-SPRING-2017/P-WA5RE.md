@@ -34,7 +34,7 @@ c. Show that the extension $E/F$ in (b) is a Galois extension.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A splitting field of $f\in F[x]$ over $F$ is an extension $L/F$ in which $f$ factors into linear factors and which is generated over $F$ by all the roots of $f$ in $L$.
 
@@ -47,7 +47,7 @@ These are the defining properties of a splitting field.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial
 \[
@@ -64,27 +64,27 @@ As an $n$-dimensional vector space over the field of cardinality $q$, the field 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The extension $E/F$ is a splitting field of $g$.
 
 
 ::: pf-proof
 
-By step <1>2, the polynomial $g$ splits completely over $E$, and its roots comprise every element of $E$. Consequently the subfield of $E$ generated over $F$ by these roots is $E$ itself. Step <1>1 therefore identifies $E$ as a splitting field.
+By step [](#s1-2){.pf-ref}, the polynomial $g$ splits completely over $E$, and its roots comprise every element of $E$. Consequently the subfield of $E$ generated over $F$ by these roots is $E$ itself. Step [](#s1-1){.pf-ref} therefore identifies $E$ as a splitting field.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The extension $E/F$ is Galois.
 
 
 ::: pf-proof
 
-By step <1>2, the polynomial $g$ has no repeated root and is therefore separable. Step <1>3 exhibits $E$ as its splitting field, so $E/F$ is a finite normal and separable extension. Hence $E/F$ is Galois.
+By step [](#s1-2){.pf-ref}, the polynomial $g$ has no repeated root and is therefore separable. Step [](#s1-3){.pf-ref} exhibits $E$ as its splitting field, so $E/F$ is a finite normal and separable extension. Hence $E/F$ is Galois.
 
 :::
 
@@ -92,7 +92,7 @@ By step <1>2, the polynomial $g$ has no repeated root and is therefore separable
 
 ::: pf-qed
 
-Step <1>1 answers part (a), steps <1>2 and <1>3 answer part (b), and step <1>4 answers part (c).
+Step [](#s1-1){.pf-ref} answers part (a), steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} answer part (b), and step [](#s1-4){.pf-ref} answers part (c).
 
 :::
 

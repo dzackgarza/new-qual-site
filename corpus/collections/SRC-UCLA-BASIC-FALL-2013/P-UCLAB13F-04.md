@@ -27,7 +27,7 @@ Prove that $f(x,y)=0$ for all $(x,y)\in\mathbb R^2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose there exists a point
 \[
@@ -68,7 +68,7 @@ U\subseteq B(p,\delta).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonempty open rectangle in $\mathbb R^2$ contains a square of the form
 \[
@@ -116,7 +116,7 @@ Then the square with lower-left corner $(a,b)$ and side length $1/n$ lies in $U$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The assumption
 \[
@@ -127,8 +127,8 @@ is impossible.
 
 ::: pf-proof
 
-Take the square $S\subseteq U$ supplied by step <1>2.
-By step <1>1,
+Take the square $S\subseteq U$ supplied by step [](#s1-2){.pf-ref}.
+By step [](#s1-1){.pf-ref},
 \[
 f(x,y)>0
 \]
@@ -144,7 +144,7 @@ This contradiction rules out $f(p)>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is no point $p$ with
 \[
@@ -159,7 +159,7 @@ If
 f(p)<0,
 \]
 the same continuity argument gives a nonempty open rectangle on which $f<0$.
-Step <1>2 then gives an allowed rational square $S$ contained in that rectangle, and
+Step [](#s1-2){.pf-ref} then gives an allowed rational square $S$ contained in that rectangle, and
 \[
 \iint_S f(x,y)\,dx\,dy<0,
 \]
@@ -169,7 +169,7 @@ again contradicting the hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -180,7 +180,7 @@ for every $(x,y)\in\mathbb R^2$.
 
 ::: pf-proof
 
-At each point, steps <1>3--<1>4 rule out both positive and negative values.
+At each point, steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} rule out both positive and negative values.
 The only remaining value is $0$.
 
 :::
@@ -189,7 +189,7 @@ The only remaining value is $0$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ One of the foci of the hyperbola $y^2 = \left(\frac{x}{a}\right)^2 + 1$ is the p
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hyperbola can be written as
 $$
@@ -48,7 +48,7 @@ which is the displayed standard form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The focus condition implies $a^2=1$.
 
@@ -59,7 +59,7 @@ For a hyperbola
 $$
 \frac{y^2}{b^2}-\frac{x^2}{A^2}=1,
 $$
-the foci are $(0,\pm c)$ with $c^2=A^2+b^2$. In step <1>1, $b^2=1$ and $A^2=a^2$. Since the stated focus has $c=\sqrt2$,
+the foci are $(0,\pm c)$ with $c^2=A^2+b^2$. In step [](#s1-1){.pf-ref}, $b^2=1$ and $A^2=a^2$. Since the stated focus has $c=\sqrt2$,
 $$
 2=c^2=a^2+1,
 $$
@@ -69,7 +69,7 @@ so $a^2=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus $|a|=1$, and the listed value is
 $$
@@ -80,7 +80,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 gives $a=\pm1$. The equation of the hyperbola depends only on $a^2$, while among the listed choices only $a=1$ occurs.
+Step [](#s1-2){.pf-ref} gives $a=\pm1$. The equation of the hyperbola depends only on $a^2$, while among the listed choices only $a=1$ occurs.
 
 :::
 
@@ -88,7 +88,7 @@ Step <1>2 gives $a=\pm1$. The equation of the hyperbola depends only on $a^2$, w
 
 ::: pf-qed
 
-Step <1>3 identifies the unique listed choice satisfying the focus condition.
+Step [](#s1-3){.pf-ref} identifies the unique listed choice satisfying the focus condition.
 
 :::
 

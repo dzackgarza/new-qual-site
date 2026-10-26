@@ -80,7 +80,7 @@ be the given quadratic subfield.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is a squarefree integer $c$ such that
 $$
@@ -107,7 +107,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -135,7 +135,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficients $a,b\in K$ are algebraic integers.
 
@@ -166,7 +166,7 @@ Sums and products of algebraic integers are algebraic integers.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -198,9 +198,9 @@ Therefore $r\in\frac12\ZZ\subset R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Under the hypotheses of step <1>4,
+Under the hypotheses of step [](#s1-4){.pf-ref},
 $$
 s\in R.
 $$
@@ -242,7 +242,7 @@ contradicting $4cs^2\in\ZZ$. Hence no odd prime divides $B$, so $B$ is a power o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently every algebraic integer in $K$ belongs to
 $$
@@ -258,13 +258,13 @@ $$
 
 ::: pf-proof
 
-Apply steps <1>4--<1>5 first to an arbitrary algebraic integer of $K$, and then specifically to $a$ and $b$, which are algebraic integers by step <1>3.
+Apply steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} first to an arbitrary algebraic integer of $K$, and then specifically to $a$ and $b$, which are algebraic integers by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 $$
@@ -288,13 +288,13 @@ $$
 
 ::: pf-proof
 
-This follows immediately from the decompositions in step <1>6.
+This follows immediately from the decompositions in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The integral polynomial $f$ has the representation
 $$
@@ -309,7 +309,7 @@ The nontrivial automorphism of $K/\QQ$ sends
 $$
 \sqrt c\longmapsto-\sqrt c.
 $$
-Thus step <1>2 and step <1>7 give
+Thus step [](#s1-2){.pf-ref} and step [](#s1-7){.pf-ref} give
 $$
 \begin{aligned}
 f
@@ -318,13 +318,13 @@ f
 &=Q^2-cP^2.
 \end{aligned}
 $$
-Step <1>1 makes $c$ squarefree, and step <1>7 gives the dyadic coefficient condition.
+Step [](#s1-1){.pf-ref} makes $c$ squarefree, and step [](#s1-7){.pf-ref} gives the dyadic coefficient condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Let $p$ be an odd prime. Reduction modulo $p$ defines a ring homomorphism
 $$
@@ -340,9 +340,9 @@ Since $p\ne2$, the class of $2$ is invertible in $\FF_p$. Therefore every fracti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Reducing step <1>8 modulo $p$ gives
+Reducing step [](#s1-8){.pf-ref} modulo $p$ gives
 $$
 \overline f
 =\overline Q^2-\overline c\,\overline P^2
@@ -355,20 +355,20 @@ $$
 
 ::: pf-proof
 
-Apply the homomorphism from step <1>9 coefficientwise. The leading coefficient of $Q$ is $1$, so it remains $1$ after reduction and the degree remains $2$. Reduction cannot increase the degree of $P$.
+Apply the homomorphism from step [](#s1-9){.pf-ref} coefficientwise. The leading coefficient of $Q$ is $1$, so it remains $1$ after reduction and the degree remains $2$. Reduction cannot increase the degree of $P$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The polynomial $\overline f$ has no irreducible factor of degree $3$.
 
 
 ::: pf-proof
 
-Suppose an irreducible monic cubic $g\in\FF_p[X]$ divided $\overline f$. The first assertion of Problem 3.9 applies to the representation in step <1>10 and says that every irreducible monic divisor of degree at least $3$ must equal the entire quartic. Thus
+Suppose an irreducible monic cubic $g\in\FF_p[X]$ divided $\overline f$. The first assertion of Problem 3.9 applies to the representation in step [](#s1-10){.pf-ref} and says that every irreducible monic divisor of degree at least $3$ must equal the entire quartic. Thus
 $$
 g=\overline f.
 $$
@@ -380,7 +380,7 @@ But $\deg g=3$ while $\overline f$ is monic of degree $4$, a contradiction.
 
 ::: pf-qed
 
-Steps <1>1--<1>8 prove conditions (i)--(ii), interpreted with the intended ring $R=\ZZ[1/2]$, and steps <1>9--<1>11 prove the asserted absence of cubic irreducible factors modulo every odd prime.
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} prove conditions (i)--(ii), interpreted with the intended ring $R=\ZZ[1/2]$, and steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} prove the asserted absence of cubic irreducible factors modulo every odd prime.
 
 :::
 

@@ -24,7 +24,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -52,7 +52,7 @@ This is the basic generator used in the singular chain complex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singular $p$-chain group
 \[
@@ -80,7 +80,7 @@ Addition is coefficientwise.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 \[
@@ -115,7 +115,7 @@ orientations of the faces of the simplex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The boundary maps satisfy
 \[
@@ -141,7 +141,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define the group of $p$-cycles and the group of $p$-boundaries by
 \[
@@ -163,7 +163,7 @@ B_p(X)\subseteq Z_p(X).
 
 ::: pf-proof
 
-The inclusion follows from step <1>4:
+The inclusion follows from step [](#s1-4){.pf-ref}:
 if
 \[
 b=\partial_{p+1}c,
@@ -181,7 +181,7 @@ then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The $p$th singular homology group is
 \[
@@ -203,7 +203,7 @@ This completes the requested detailed definition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 \[
@@ -262,7 +262,7 @@ There are no other positive-dimensional cells.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 \[
@@ -338,7 +338,7 @@ All other positive cellular chain groups vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 **Mayer--Vietoris Theorem.**
 
@@ -401,8 +401,8 @@ The same theorem may be written in reduced homology as
 
 ::: pf-qed
 
-Steps <1>1--<1>6 define singular homology, steps <1>7--<1>8 construct the
-requested CW complex and compute its homology, and step <1>9 states the
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} define singular homology, steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} construct the
+requested CW complex and compute its homology, and step [](#s1-9){.pf-ref} states the
 Mayer--Vietoris theorem.
 
 :::

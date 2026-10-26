@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral defining $I(\alpha)$ converges absolutely.
 
@@ -71,7 +71,7 @@ Thus the improper integral is absolutely convergent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The substitution
 $$
@@ -120,13 +120,13 @@ I(\alpha)
 \,dt.
 \end{aligned}
 $$
-Absolute convergence from step <1>1 justifies the substitution and separation of terms.
+Absolute convergence from step [](#s1-1){.pf-ref} justifies the substitution and separation of terms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -148,7 +148,7 @@ J
 \frac{\log t}{1+t^2}
 \,dt.
 $$
-This integral is absolutely convergent by the same endpoint estimates as in step <1>1.
+This integral is absolutely convergent by the same endpoint estimates as in step [](#s1-1){.pf-ref}.
 
 Make the substitution
 $$
@@ -186,7 +186,7 @@ so $J=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -220,7 +220,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -233,7 +233,7 @@ $$
 
 ::: pf-proof
 
-Split the integral in step <1>2:
+Split the integral in step [](#s1-2){.pf-ref}:
 $$
 I(\alpha)
 =
@@ -246,7 +246,7 @@ I(\alpha)
 \frac{\log t}{1+t^2}
 \,dt.
 $$
-Now apply steps <1>3--<1>4.
+Now apply steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -254,7 +254,7 @@ Now apply steps <1>3--<1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required evaluation.
+Step [](#s1-5){.pf-ref} is the required evaluation.
 
 :::
 

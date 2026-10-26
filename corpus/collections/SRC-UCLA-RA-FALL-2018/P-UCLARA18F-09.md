@@ -37,7 +37,7 @@ a_{2k}=\sum_{n\ge1}\frac{2}{n^{2k}}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The poles of \(g\) are precisely the nonzero integers, every pole is simple, and for each \(n\in\mathbb Z\setminus\{0\}\),
 \[
@@ -75,7 +75,7 @@ so the singularity at \(0\) is removable rather than a pole.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For \(z\notin\mathbb Z\),
 \[
@@ -104,7 +104,7 @@ which is the claimed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For \(|z|<1\),
 \[
@@ -114,7 +114,7 @@ g(z)=-1+2\sum_{m=1}^{\infty}\frac{z^2}{m^2-z^2}.
 
 ::: pf-proof
 
-Multiplying the identity in step <1>2 by \(-z\) gives
+Multiplying the identity in step [](#s1-2){.pf-ref} by \(-z\) gives
 \[
 g(z)
 =-1-2z^2\sum_{m=1}^{\infty}\frac1{z^2-m^2}
@@ -126,7 +126,7 @@ The restriction \(|z|<1\) avoids every nonzero integer and is the disc of conver
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every integer \(k\ge1\), the Taylor coefficient of \(z^{2k}\) is
 \[
@@ -150,7 +150,7 @@ Moreover,
 \left(\sum_{k=1}^{\infty}r^{2k}\right)
 <\infty.
 \]
-Thus the double series is uniformly absolutely convergent on \(|z|\le r\), so step <1>3 may be rearranged as
+Thus the double series is uniformly absolutely convergent on \(|z|\le r\), so step [](#s1-3){.pf-ref} may be rearranged as
 \[
 \begin{aligned}
 g(z)
@@ -167,7 +167,7 @@ Since \(r<1\) was arbitrary, this is the Taylor expansion of \(g\) throughout \(
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>4 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
 
 :::
 

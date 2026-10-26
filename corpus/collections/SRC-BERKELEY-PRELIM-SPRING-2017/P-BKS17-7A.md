@@ -33,7 +33,7 @@ Given two vectors $x$ and $y$ in $\RR^n$ with $\norm{x}_2 = \norm{y}_2$, constru
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\|x\|_2=\|y\|_2$ and $x=y$, then the choice
 $$
@@ -50,7 +50,7 @@ The identity matrix satisfies $I^TI=I$, and $Ix=x=y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose $\|x\|_2=\|y\|_2$ and $x\neq y$, and define
 $$
@@ -75,14 +75,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The matrix $Q$ from step <1>2 is orthogonal.
+The matrix $Q$ from step [](#s1-2){.pf-ref} is orthogonal.
 
 
 ::: pf-proof
 
-Since $uu^T$ is symmetric and $u^Tu=1$ by step <1>2,
+Since $uu^T$ is symmetric and $u^Tu=1$ by step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 Q^TQ
@@ -97,9 +97,9 @@ Thus $Q$ is orthogonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Under the hypotheses of step <1>2,
+Under the hypotheses of step [](#s1-2){.pf-ref},
 $$
 2uu^Tx=x-y.
 $$
@@ -135,14 +135,14 @@ The cancelled scalar is nonzero because, by the displayed norm identity, it equa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The matrix $Q$ from step <1>2 satisfies $Qx=y$.
+The matrix $Q$ from step [](#s1-2){.pf-ref} satisfies $Qx=y$.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 Qx=(I-2uu^T)x=x-(x-y)=y.
 $$
@@ -151,7 +151,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\|x\|_2\neq\|y\|_2$, there is no orthogonal matrix $Q$ satisfying $Qx=y$.
 
@@ -178,7 +178,7 @@ contrary to the hypothesis.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2--<1>5 construct the required orthogonal matrix when the norms are equal, and step <1>6 proves impossibility when the norms are unequal.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} construct the required orthogonal matrix when the norms are equal, and step [](#s1-6){.pf-ref} proves impossibility when the norms are unequal.
 
 :::
 

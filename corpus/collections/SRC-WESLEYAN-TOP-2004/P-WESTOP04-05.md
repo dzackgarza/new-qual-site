@@ -25,7 +25,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The compact connected surfaces are, up to homeomorphism,
 $$
@@ -54,7 +54,7 @@ real projective planes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A hexagon whose six boundary edges are to be identified in pairs must have each edge-pair label occur exactly twice in the boundary word.
 
@@ -69,7 +69,7 @@ If the usual polygon-word notation labels the two members of one pair by the sam
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In the printed source word
 $$
@@ -110,15 +110,15 @@ The inverse signs affect orientation, not which label occurs.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the printed data do not specify a pairing of the six boundary edges.
 
 
 ::: pf-proof
 
-By step <1>2, every label in a valid pair-identification word must occur exactly twice.
-Step <1>3 violates this condition for both
+By step [](#s1-2){.pf-ref}, every label in a valid pair-identification word must occur exactly twice.
+Step [](#s1-3){.pf-ref} violates this condition for both
 $$
 a
 $$
@@ -141,7 +141,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently, no quotient surface is determined by the problem as printed.
 
@@ -149,7 +149,7 @@ Consequently, no quotient surface is determined by the problem as printed.
 ::: pf-proof
 
 The requested quotient depends on an equivalence relation pairing boundary edges.
-Step <1>4 shows that the printed labeling does not define such an equivalence relation.
+Step [](#s1-4){.pf-ref} shows that the printed labeling does not define such an equivalence relation.
 
 Different corrections of the apparent typo can lead to different polygon words and hence to different quotient surfaces.
 Therefore a particular compact connected surface cannot be inferred uniquely from the retained source.
@@ -158,7 +158,7 @@ Therefore a particular compact connected surface cannot be inferred uniquely fro
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the complete answer to the printed problem is:
 $$
@@ -170,8 +170,8 @@ $$
 
 ::: pf-proof
 
-Step <1>1 answers the classification request.
-Steps <1>2--<1>5 prove that the source's boundary word cannot encode the claimed pairwise edge identification, so there is no mathematically determined surface to classify without an external correction to the source.
+Step [](#s1-1){.pf-ref} answers the classification request.
+Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove that the source's boundary word cannot encode the claimed pairwise edge identification, so there is no mathematically determined surface to classify without an external correction to the source.
 
 :::
 
@@ -179,7 +179,7 @@ Steps <1>2--<1>5 prove that the source's boundary word cannot encode the claimed
 
 ::: pf-qed
 
-Step <1>6 gives the complete mathematically valid disposition of both parts.
+Step [](#s1-6){.pf-ref} gives the complete mathematically valid disposition of both parts.
 
 :::
 

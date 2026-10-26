@@ -16,7 +16,7 @@ Prove that if $X$ is locally compact and dense in a Hausdorff space $Y$, then $X
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(x\in X\), there is an open set \(U\subseteq X\) with \(x\in U\) such that \(\overline U^{\,X}\) is compact.
 
@@ -29,20 +29,20 @@ Because \(Y\) is Hausdorff, its subspace \(X\) is Hausdorff. In a locally compac
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(K=\overline U^{\,X}\), then \(K\) is closed in \(Y\).
 
 
 ::: pf-proof
 
-By step <1>1, \(K\) is compact as a subspace of \(X\). The inclusion \(X\hookrightarrow Y\) is continuous, so \(K\) is compact as a subspace of \(Y\). Since \(Y\) is Hausdorff, every compact subset of \(Y\) is closed.
+By step [](#s1-1){.pf-ref}, \(K\) is compact as a subspace of \(X\). The inclusion \(X\hookrightarrow Y\) is continuous, so \(K\) is compact as a subspace of \(Y\). Since \(Y\) is Hausdorff, every compact subset of \(Y\) is closed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is an open set \(V\subseteq Y\) such that
 \[
@@ -64,7 +64,7 @@ By construction,
 \[
 V\cap X=U\subseteq K.
 \]
-Step <1>2 shows that \(K\) is closed in \(Y\), so it contains the closure in \(Y\) of \(V\cap X\). Since \(V\cap X\) is dense in \(V\),
+Step [](#s1-2){.pf-ref} shows that \(K\) is closed in \(Y\), so it contains the closure in \(Y\) of \(V\cap X\). Since \(V\cap X\) is dense in \(V\),
 \[
 V\subseteq \overline{V\cap X}^{\,Y}\subseteq K.
 \]
@@ -74,14 +74,14 @@ Also \(x\in U=V\cap X\), so \(x\in V\). Thus \(x\in V\subseteq K\subseteq X\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 \(X\) is open in \(Y\).
 
 
 ::: pf-proof
 
-By step <1>3, every \(x\in X\) lies in an open subset \(V\) of \(Y\) contained in \(X\). Hence \(X\) is the union of open subsets of \(Y\), so \(X\) is open in \(Y\).
+By step [](#s1-3){.pf-ref}, every \(x\in X\) lies in an open subset \(V\) of \(Y\) contained in \(X\). Hence \(X\) is the union of open subsets of \(Y\), so \(X\) is open in \(Y\).
 
 :::
 
@@ -89,7 +89,7 @@ By step <1>3, every \(x\in X\) lies in an open subset \(V\) of \(Y\) contained i
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

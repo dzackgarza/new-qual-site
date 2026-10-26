@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence $(a_n)$ is decreasing.
 
@@ -67,7 +67,7 @@ Therefore $a_{n+1}-a_n<0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(a_n)$ is bounded below by $0$.
 
@@ -100,20 +100,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(a_n)$ converges to a finite real number.
 
 
 ::: pf-proof
 
-By step <1>1, $(a_n)$ is monotone decreasing, and by step <1>2 it is bounded below. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges.
+By step [](#s1-1){.pf-ref}, $(a_n)$ is monotone decreasing, and by step [](#s1-2){.pf-ref} it is bounded below. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -129,7 +129,7 @@ $$
 
 ::: pf-proof
 
-The expression inside the limit is exactly $a_n$, whose convergence is step <1>3.
+The expression inside the limit is exactly $a_n$, whose convergence is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -137,7 +137,7 @@ The expression inside the limit is exactly $a_n$, whose convergence is step <1>3
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

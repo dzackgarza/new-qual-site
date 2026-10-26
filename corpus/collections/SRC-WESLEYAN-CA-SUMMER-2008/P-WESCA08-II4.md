@@ -40,7 +40,7 @@ L
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function \(g\) is not identically zero in a neighborhood of
 \(z_0\).
@@ -64,7 +64,7 @@ it is not identically zero near \(z_0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose first that \(f\) is not identically zero near \(z_0\). Then
 there are integers
@@ -99,9 +99,9 @@ their orders of vanishing are positive integers \(m,n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Differentiating the factorizations in step <1>2 gives
+Differentiating the factorizations in step [](#s1-2){.pf-ref} gives
 \[
 f'(z)
 =
@@ -129,7 +129,7 @@ Apply the product rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -170,7 +170,7 @@ F(z_0),G(z_0)\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For \(z\ne z_0\) sufficiently close to \(z_0\),
 \[
@@ -184,14 +184,14 @@ For \(z\ne z_0\) sufficiently close to \(z_0\),
 
 ::: pf-proof
 
-Divide the two derivative formulas in step <1>3. By step <1>4,
+Divide the two derivative formulas in step [](#s1-3){.pf-ref}. By step [](#s1-4){.pf-ref},
 \(G_1\) is nonzero in some neighborhood of \(z_0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The existence of the finite limit \(L\) forces
 \[
@@ -201,7 +201,7 @@ The existence of the finite limit \(L\) forces
 
 ::: pf-proof
 
-If \(m<n\), then step <1>5 gives
+If \(m<n\), then step [](#s1-5){.pf-ref} gives
 \[
 \left|
 \frac{f'(z)}{g'(z)}
@@ -225,7 +225,7 @@ the assumed finite limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -239,7 +239,7 @@ then
 
 ::: pf-proof
 
-In step <1>5, the analytic quotient
+In step [](#s1-5){.pf-ref}, the analytic quotient
 \[
 F_1/G_1
 \]
@@ -253,7 +253,7 @@ Thus the derivative ratio tends to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 \[
@@ -270,7 +270,7 @@ L
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 L
 =
@@ -285,7 +285,7 @@ L
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For \(z\ne z_0\) sufficiently close to \(z_0\),
 \[
@@ -299,13 +299,13 @@ For \(z\ne z_0\) sufficiently close to \(z_0\),
 
 ::: pf-proof
 
-Divide the factorizations from step <1>2.
+Divide the factorizations from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If \(m>n\), then
 \[
@@ -321,7 +321,7 @@ L}.
 
 ::: pf-proof
 
-In step <1>9,
+In step [](#s1-9){.pf-ref},
 \[
 F(z)/G(z)
 \to
@@ -331,13 +331,13 @@ a finite nonzero number, while
 \[
 (z-z_0)^{m-n}\to0.
 \]
-Use step <1>7 for the value of \(L\).
+Use step [](#s1-7){.pf-ref} for the value of \(L\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If \(m=n\), then
 \[
@@ -353,14 +353,14 @@ L}.
 
 ::: pf-proof
 
-Set \(m-n=0\) in step <1>9 and use continuity of \(F/G\), then apply
-step <1>8.
+Set \(m-n=0\) in step [](#s1-9){.pf-ref} and use continuity of \(F/G\), then apply
+step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If \(f\) is identically zero in a neighborhood of \(z_0\), then
 \[
@@ -385,7 +385,7 @@ f'(z)=0
 near \(z_0\), so wherever the derivative ratio is defined it equals \(0\).
 Thus \(L=0\).
 
-Since \(g\) is not identically zero by step <1>1, its zeros are isolated.
+Since \(g\) is not identically zero by step [](#s1-1){.pf-ref}, its zeros are isolated.
 For all \(z\ne z_0\) sufficiently close to \(z_0\) with \(g(z)\ne0\),
 \[
 \frac{f(z)}{g(z)}=0.
@@ -396,7 +396,7 @@ Hence the quotient limit is \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore in all cases,
 \[
@@ -413,8 +413,8 @@ L}.
 
 ::: pf-proof
 
-If \(f\) is locally nonzero, steps <1>6, <1>10, and <1>11 exhaust the
-possibilities. If \(f\) is locally identically zero, use step <1>12.
+If \(f\) is locally nonzero, steps [](#s1-6){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-11){.pf-ref} exhaust the
+possibilities. If \(f\) is locally identically zero, use step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -422,7 +422,7 @@ possibilities. If \(f\) is locally identically zero, use step <1>12.
 
 ::: pf-qed
 
-Step <1>13 proves existence of the requested limit and calculates it.
+Step [](#s1-13){.pf-ref} proves existence of the requested limit and calculates it.
 
 :::
 

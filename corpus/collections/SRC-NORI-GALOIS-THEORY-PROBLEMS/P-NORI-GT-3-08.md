@@ -42,7 +42,7 @@ be an algebraic closure of $\FF_p$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The group
 $$
@@ -67,7 +67,7 @@ which has no common root with $X^{n'}-1$ in characteristic $p$. Thus $X^{n'}-1$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By Problem 3.7, the roots of the reduction of $\Phi_n(X)$ in $\overline{\FF}_p$ are precisely the primitive $n'$-th roots of unity, and each occurs with multiplicity
 $$
@@ -77,7 +77,7 @@ $$
 
 ::: pf-proof
 
-The field $\overline{\FF}_p$ has characteristic $p$, and step <1>1 verifies the hypothesis
+The field $\overline{\FF}_p$ has characteristic $p$, and step [](#s1-1){.pf-ref} verifies the hypothesis
 $$
 |\mu_{n'}(\overline{\FF}_p)|=n'.
 $$
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The roots of the reduction of $\Phi_{n'}(X)$ in $\overline{\FF}_p$ are precisely the primitive $n'$-th roots of unity, each with multiplicity $1$.
 
@@ -111,7 +111,7 @@ the stated roots occur with multiplicity one.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the two polynomials
 $$
@@ -126,15 +126,15 @@ viewed in $\FF_p[X]$ have the same roots with the same multiplicities in $\overl
 
 ::: pf-proof
 
-By step <1>2, every primitive $n'$-th root occurs in $\Phi_n$ with multiplicity $\varphi(p^k)$. By step <1>3, every such root occurs once in $\Phi_{n'}$, hence with multiplicity $\varphi(p^k)$ in its indicated power. Neither polynomial has any other root.
+By step [](#s1-2){.pf-ref}, every primitive $n'$-th root occurs in $\Phi_n$ with multiplicity $\varphi(p^k)$. By step [](#s1-3){.pf-ref}, every such root occurs once in $\Phi_{n'}$, hence with multiplicity $\varphi(p^k)$ in its indicated power. Neither polynomial has any other root.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Both polynomials in step <1>4 are monic.
+Both polynomials in step [](#s1-4){.pf-ref} are monic.
 
 
 ::: pf-proof
@@ -145,7 +145,7 @@ Every cyclotomic polynomial is monic over $\ZZ$, so its reduction modulo $p$ is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -160,7 +160,7 @@ $$
 
 ::: pf-proof
 
-Over the algebraically closed field $\overline{\FF}_p$, a monic polynomial is uniquely determined by its roots counted with multiplicity. Steps <1>4--<1>5 therefore give equality after extending scalars to $\overline{\FF}_p$. The natural map
+Over the algebraically closed field $\overline{\FF}_p$, a monic polynomial is uniquely determined by its roots counted with multiplicity. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} therefore give equality after extending scalars to $\overline{\FF}_p$. The natural map
 $$
 \FF_p[X]\hookrightarrow\overline{\FF}_p[X]
 $$
@@ -172,7 +172,7 @@ is injective, so the equality already holds in $\FF_p[X]$.
 
 ::: pf-qed
 
-Step <1>6 is exactly the required deduction from Problem 3.7.
+Step [](#s1-6){.pf-ref} is exactly the required deduction from Problem 3.7.
 
 :::
 

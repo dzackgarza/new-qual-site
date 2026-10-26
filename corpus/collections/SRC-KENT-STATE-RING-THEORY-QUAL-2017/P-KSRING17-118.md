@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For any indices
 $$
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 $$
@@ -136,13 +136,13 @@ E_{ki}AE_{j\ell}
 \in
 J.
 $$
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every matrix unit
 $$
@@ -166,7 +166,7 @@ lies in
 $$
 M_n(F).
 $$
-Multiplying the element from step <1>3 by this scalar matrix gives
+Multiplying the element from step [](#s1-3){.pf-ref} by this scalar matrix gives
 $$
 (a_{ij}^{-1}I_n)
 (a_{ij}E_{k\ell})
@@ -180,7 +180,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every matrix in
 $$
@@ -202,7 +202,7 @@ B
 \sum_{k,\ell=1}^{n}
 b_{k\ell}E_{k\ell}.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 E_{k\ell}\in J.
 $$
@@ -223,7 +223,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the only two-sided ideals of
 $$
@@ -240,13 +240,13 @@ $$
 ::: pf-proof
 
 The zero ideal always exists.
-Step <1>5 shows that every nonzero two-sided ideal is the whole ring.
+Step [](#s1-5){.pf-ref} shows that every nonzero two-sided ideal is the whole ring.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ring
 $$
@@ -273,7 +273,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -286,13 +286,13 @@ $$
 
 ::: pf-proof
 
-Step <1>6 gives the required ideal structure, and step <1>7 gives the nonzero product condition.
+Step [](#s1-6){.pf-ref} gives the required ideal structure, and step [](#s1-7){.pf-ref} gives the nonzero product condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $V$ is a finite-dimensional $F$-vector space of dimension $n$, then
 $$
@@ -319,7 +319,7 @@ Thus the matrix-representation map is a ring isomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -333,7 +333,7 @@ $$
 ::: pf-proof
 
 Simplicity is preserved by ring isomorphism.
-Apply step <1>8 through the isomorphism in step <1>9.
+Apply step [](#s1-8){.pf-ref} through the isomorphism in step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -341,7 +341,7 @@ Apply step <1>8 through the isomorphism in step <1>9.
 
 ::: pf-qed
 
-Step <1>8 proves the matrix-ring statement, and step <1>10 proves the equivalent endomorphism-ring formulation.
+Step [](#s1-8){.pf-ref} proves the matrix-ring statement, and step [](#s1-10){.pf-ref} proves the equivalent endomorphism-ring formulation.
 
 :::
 

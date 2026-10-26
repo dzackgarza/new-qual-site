@@ -40,7 +40,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each Pauli matrix is Hermitian:
 $$
@@ -59,7 +59,7 @@ $i\leftrightarrow -i$, again recovering $\sigma_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix
 $$
@@ -91,10 +91,10 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $2\times2$ Hermitian matrix of trace zero has the form in step
-<1>2 with $a,b,c\in\mathbb R$.
+[](#s1-2){.pf-ref} with $a,b,c\in\mathbb R$.
 
 
 ::: pf-proof
@@ -115,13 +115,13 @@ Write
 $$
 z=b+ic
 $$
-with $b,c\in\mathbb R$. Then $H$ has the form of step <1>2.
+with $b,c\in\mathbb R$. Then $H$ has the form of step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The matrices $\sigma_1,\sigma_2,\sigma_3$ are linearly independent over
 $\mathbb R$.
@@ -146,7 +146,7 @@ Since $r_1,r_2$ are real, both vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -158,14 +158,14 @@ matrices.
 
 ::: pf-proof
 
-Step <1>3 together with step <1>2 gives spanning, and step <1>4 gives linear
+Step [](#s1-3){.pf-ref} together with step [](#s1-2){.pf-ref} gives spanning, and step [](#s1-4){.pf-ref} gives linear
 independence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every $2\times2$ Hermitian matrix can be written uniquely as
 $$
@@ -187,7 +187,7 @@ Then
 $$
 H-\alpha I
 $$
-is Hermitian and trace zero, so step <1>5 writes it uniquely as a real linear
+is Hermitian and trace zero, so step [](#s1-5){.pf-ref} writes it uniquely as a real linear
 combination of the three Pauli matrices. Since $I$ has nonzero trace while
 each $\sigma_i$ has trace zero, $I$ is not in their span; hence the four
 matrices are linearly independent.
@@ -196,21 +196,21 @@ matrices are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Parts (a)--(d) follow.
 
 
 ::: pf-proof
 
-Step <1>1 proves (a), step <1>2 proves (b), step <1>5 proves (c), and step
-<1>6 proves (d).
+Step [](#s1-1){.pf-ref} proves (a), step [](#s1-2){.pf-ref} proves (b), step [](#s1-5){.pf-ref} proves (c), and step
+[](#s1-6){.pf-ref} proves (d).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The eigenvalues of $\sigma_1$ are $1$ and $-1$, with eigenvectors
 $$
@@ -248,7 +248,7 @@ matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The eigenvalues of $\sigma_2$ are $1$ and $-1$, with eigenvectors
 $$
@@ -284,7 +284,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The eigenvalues of $\sigma_3$ are $1$ and $-1$, with eigenvectors
 $$
@@ -313,14 +313,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (e) follows.
 
 
 ::: pf-proof
 
-Steps <1>8--<1>10 list the eigenvalues and eigenvectors of all three Pauli
+Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} list the eigenvalues and eigenvectors of all three Pauli
 matrices.
 
 :::
@@ -329,7 +329,7 @@ matrices.
 
 ::: pf-qed
 
-Steps <1>7 and <1>11 establish parts (a)--(e).
+Steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref} establish parts (a)--(e).
 
 :::
 

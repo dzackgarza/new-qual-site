@@ -26,7 +26,7 @@ Let $K=\operatorname{Frac}(R)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -55,7 +55,7 @@ Since $R$ is an integral domain and $\det(T)\ne0$, multiplication by $\det(T)$ i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 $$
@@ -76,9 +76,9 @@ The same matrix $T$ may be viewed in $\mathbb M_n(K)$. Its determinant in $K$ is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Under the hypothesis of step <1>2, there exists a nonzero vector $v\in R^n$ satisfying
+Under the hypothesis of step [](#s1-2){.pf-ref}, there exists a nonzero vector $v\in R^n$ satisfying
 $$
 Tv=0.
 $$
@@ -104,7 +104,7 @@ Thus $T:R^n\to R^n$ is not injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -118,7 +118,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 proves the forward condition from nonvanishing determinant, while steps <1>2--<1>3 prove that vanishing determinant forces failure of injectivity.
+Step [](#s1-1){.pf-ref} proves the forward condition from nonvanishing determinant, while steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove that vanishing determinant forces failure of injectivity.
 
 :::
 
@@ -126,7 +126,7 @@ Step <1>1 proves the forward condition from nonvanishing determinant, while step
 
 ::: pf-qed
 
-Step <1>4 is exactly the required equivalence.
+Step [](#s1-4){.pf-ref} is exactly the required equivalence.
 
 :::
 

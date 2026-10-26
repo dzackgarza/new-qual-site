@@ -25,7 +25,7 @@ Consider the function $J ( a ) = \sum _ { n = 0 } ^ { \infty } n e ^ { - a n }$ 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Put
 $$
@@ -64,7 +64,7 @@ This is the standard geometric-series formula for $|q|<1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Differentiating with respect to $q$ gives
 $$
@@ -82,7 +82,7 @@ The geometric series converges uniformly on every closed disk $|q|\leq r<1$, so 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Multiplying by $q$ gives
 $$
@@ -94,13 +94,13 @@ $$
 
 ::: pf-proof
 
-The $n=0$ term is zero, so multiplying step <1>3 by $q$ gives the stated series.
+The $n=0$ term is zero, so multiplying step [](#s1-3){.pf-ref} by $q$ gives the stated series.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -114,13 +114,13 @@ $$
 
 ::: pf-proof
 
-Substitute $q=e^{-a}$ from step <1>1 into step <1>4.
+Substitute $q=e^{-a}$ from step [](#s1-1){.pf-ref} into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Equivalently,
 $$
@@ -149,26 +149,26 @@ $$
 =
 4e^{-a}\sinh^2(a/2).
 $$
-Substitute this into step <1>5.
+Substitute this into step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>5--<1>6 give two explicit equivalent formulas.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give two explicit equivalent formulas.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 As $a\to0$,
 $$
@@ -196,7 +196,7 @@ with $z=a/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -212,7 +212,7 @@ $$
 
 ::: pf-proof
 
-Square the expansion from step <1>8:
+Square the expansion from step [](#s1-8){.pf-ref}:
 $$
 \left(
 \frac a2+\frac{a^3}{48}+O(a^5)
@@ -230,7 +230,7 @@ Multiply by $4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -243,13 +243,13 @@ $$
 
 ::: pf-proof
 
-Factor $a^2$ from the denominator in step <1>9 and use step <1>6.
+Factor $a^2$ from the denominator in step [](#s1-9){.pf-ref} and use step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Using
 $$
@@ -273,7 +273,7 @@ $$
 
 ::: pf-proof
 
-In step <1>10, take
+In step [](#s1-10){.pf-ref}, take
 $$
 u=\frac{a^2}{12}+O(a^4).
 $$
@@ -289,14 +289,14 @@ Multiplying by $a^{-2}$ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Step <1>11 includes every term through order $a^0$.
+Step [](#s1-11){.pf-ref} includes every term through order $a^0$.
 
 :::
 
@@ -304,7 +304,7 @@ Step <1>11 includes every term through order $a^0$.
 
 ::: pf-qed
 
-Steps <1>7 and <1>12 establish parts (a) and (b), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

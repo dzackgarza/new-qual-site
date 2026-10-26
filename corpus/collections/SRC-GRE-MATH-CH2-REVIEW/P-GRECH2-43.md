@@ -31,7 +31,7 @@ Evaluate the following limit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every positive integer $n$,
 $$
@@ -54,7 +54,7 @@ Summing from $k=1$ to $n$ gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The required limit equals
 $$
@@ -64,13 +64,13 @@ $$
 
 ::: pf-proof
 
-Let $f(x)=x-x^2$. The expression in step <1>1 is the right-endpoint Riemann sum for $f$ on $[0,1]$ with $n$ equal subintervals. Since $f$ is continuous on $[0,1]$, these Riemann sums converge to $\int_0^1f(x)\,dx$.
+Let $f(x)=x-x^2$. The expression in step [](#s1-1){.pf-ref} is the right-endpoint Riemann sum for $f$ on $[0,1]$ with $n$ equal subintervals. Since $f$ is continuous on $[0,1]$, these Riemann sums converge to $\int_0^1f(x)\,dx$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The limit is
 $$
@@ -81,7 +81,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \int_0^1(x-x^2)\,dx
@@ -97,7 +97,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested limit and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
 
 :::
 

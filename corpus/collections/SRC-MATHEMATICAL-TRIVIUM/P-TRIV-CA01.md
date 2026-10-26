@@ -25,7 +25,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -44,7 +44,7 @@ principal argument is $\pi/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -66,7 +66,7 @@ and its principal argument is $-\pi/4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -95,7 +95,7 @@ so its principal argument is $\arctan(1/2)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -114,7 +114,7 @@ principal argument is $\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -150,7 +150,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The quotient simplifies to
 $$
@@ -175,7 +175,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -190,7 +190,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, the modulus is
+By step [](#s1-6){.pf-ref}, the modulus is
 $$
 \frac{\sqrt{(-2)^2+(-9)^2}}{17}
 =
@@ -211,7 +211,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Finally,
 $$
@@ -241,7 +241,7 @@ which is a positive real number and therefore has argument $0$.
 
 ::: pf-qed
 
-Steps <1>1--<1>8 give polar forms for all seven requested quantities.
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} give polar forms for all seven requested quantities.
 
 :::
 

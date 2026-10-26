@@ -55,7 +55,7 @@ so the two displayed sets coincide.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $K_1$ is a subfield of $\CC$.
 
@@ -78,7 +78,7 @@ The denominator is nonzero: otherwise, if $b\ne0$, then $(a/b)^2=6$, contradicti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $K_2$ is not a subfield of $\CC$.
 
@@ -99,7 +99,7 @@ does not lie in $K_2$, since $2\cdot2=4>\sqrt2$. Hence $K_2$ is not closed under
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $K_3$ is not a subfield of $\CC$.
 
@@ -116,7 +116,7 @@ does not lie in $K_3$ because its real and imaginary coefficients are not intege
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the listed subfields are
 $$
@@ -127,7 +127,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-Step <1>2 proves that $K_1$ is a subfield, while steps <1>3 and <1>4 rule out $K_2$ and $K_3$.
+Step [](#s1-2){.pf-ref} proves that $K_1$ is a subfield, while steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} rule out $K_2$ and $K_3$.
 
 :::
 
@@ -135,7 +135,7 @@ Step <1>2 proves that $K_1$ is a subfield, while steps <1>3 and <1>4 rule out $K
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

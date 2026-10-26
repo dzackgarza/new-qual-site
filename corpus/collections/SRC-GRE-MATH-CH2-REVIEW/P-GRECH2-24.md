@@ -27,7 +27,7 @@ The function $f(x) = \int_{e^x}^{e^{2x}} t \log t \, dt$ has an absolute minimum
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative is
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-Since $e^{2x}>0$, step <1>1 vanishes exactly when $x=0$ or
+Since $e^{2x}>0$, step [](#s1-1){.pf-ref} vanishes exactly when $x=0$ or
 $$
 4e^{2x}=1.
 $$
@@ -78,14 +78,14 @@ hence $x=-\log2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 $f$ has a local maximum at $x=-\log2$.
 
 
 ::: pf-proof
 
-The factor $4e^{2x}-1$ is negative for $x<-\log2$ and positive for $x>-\log2$. Thus step <1>1 gives
+The factor $4e^{2x}-1$ is negative for $x<-\log2$ and positive for $x>-\log2$. Thus step [](#s1-1){.pf-ref} gives
 $$
 f'(x)>0\quad(x<-\log2),
 $$
@@ -102,7 +102,7 @@ Therefore $f'$ changes from positive to negative at $-\log2$, while it changes f
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The requested value is
 $$
@@ -113,7 +113,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Step <1>3 identifies the local maximum point among the two critical points.
+Step [](#s1-3){.pf-ref} identifies the local maximum point among the two critical points.
 
 :::
 
@@ -121,7 +121,7 @@ Step <1>3 identifies the local maximum point among the two critical points.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

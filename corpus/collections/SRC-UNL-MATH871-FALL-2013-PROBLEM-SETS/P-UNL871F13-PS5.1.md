@@ -25,7 +25,7 @@ are homeomorphisms.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $f$ is a homeomorphism,
 \[
@@ -42,7 +42,7 @@ The inverse of any bijection is again a bijection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 \[
@@ -60,7 +60,7 @@ $f$ is a continuous bijection whose inverse is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The inverse of
 \[
@@ -85,7 +85,7 @@ Since $f$ is a homeomorphism, it is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -98,14 +98,14 @@ f^{-1}:Y\to X
 
 ::: pf-proof
 
-Steps <1>1--<1>3 show that $f^{-1}$ is a continuous bijection with
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that $f^{-1}$ is a continuous bijection with
 continuous inverse.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The composite
 \[
@@ -122,7 +122,7 @@ The composition of bijections is a bijection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The composite
 \[
@@ -148,7 +148,7 @@ The composition of continuous maps is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The inverse of the composite is
 \[
@@ -181,7 +181,7 @@ and similarly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The inverse
 \[
@@ -192,7 +192,7 @@ is continuous.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 f^{-1}
 \]
@@ -208,7 +208,7 @@ Their composition is therefore continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -221,7 +221,7 @@ g\circ f:X\to Z
 
 ::: pf-proof
 
-Steps <1>5--<1>8 show that $g\circ f$ is a continuous bijection with
+Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} show that $g\circ f$ is a continuous bijection with
 continuous inverse.
 
 :::
@@ -230,7 +230,7 @@ continuous inverse.
 
 ::: pf-qed
 
-Step <1>4 proves the inverse statement, and step <1>9 proves the composition
+Step [](#s1-4){.pf-ref} proves the inverse statement, and step [](#s1-9){.pf-ref} proves the composition
 statement.
 
 :::

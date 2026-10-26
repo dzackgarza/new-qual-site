@@ -39,7 +39,7 @@ For $f\in L^1(\mathbb R)$, write
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $f\in L^1(\mathbb R)$, the function $\mathcal Ff$ is continuous.
 
@@ -69,7 +69,7 @@ Since $|f|\in L^1$, dominated convergence gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $f\in L^1(\mathbb R)$,
 \[
@@ -123,7 +123,7 @@ For sufficiently large $|\xi|$, the first term is also less than $\varepsilon/2$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -133,13 +133,13 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show that every element of $X$ is continuous and vanishes at infinity.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that every element of $X$ is continuous and vanishes at infinity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every Schwartz function belongs to $X$.
 
@@ -166,7 +166,7 @@ with the sign convention used here after replacing the variable by its negative 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Schwartz space is dense in $C_0(\mathbb R)$ in the supremum norm.
 
@@ -204,20 +204,20 @@ is smooth and compactly supported, hence is a Schwartz function. Thus every $h\i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The subspace $X$ is dense in $C_0(\mathbb R)$.
 
 
 ::: pf-proof
 
-By step <1>4, $X$ contains the Schwartz space. By step <1>5, the latter is dense in $C_0(\mathbb R)$.
+By step [](#s1-4){.pf-ref}, $X$ contains the Schwartz space. By step [](#s1-5){.pf-ref}, the latter is dense in $C_0(\mathbb R)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The Fourier transform
 \[
@@ -240,7 +240,7 @@ so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Suppose, toward a contradiction, that
 \[
@@ -258,7 +258,7 @@ C\|\mathcal Ff\|_\infty
 
 ::: pf-proof
 
-Under the assumption, step <1>7 makes
+Under the assumption, step [](#s1-7){.pf-ref} makes
 \[
 \mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
 \]
@@ -268,7 +268,7 @@ a bounded linear bijection between Banach spaces. By the open mapping theorem, i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 There exists a sequence $(h_j)\subset C_c^\infty(\mathbb R)$ such that
 \[
@@ -296,7 +296,7 @@ and $h_j\to h$ pointwise almost everywhere with supports contained in one fixed 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Let
 \[
@@ -323,14 +323,14 @@ By the Plancherel theorem, the Fourier transform extends to an isomorphism of $L
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-The function $g$ from step <1>10 does not belong to $L^1(\mathbb R)$.
+The function $g$ from step [](#s1-10){.pf-ref} does not belong to $L^1(\mathbb R)$.
 
 
 ::: pf-proof
 
-Suppose instead that $g\in L^1$. Then by step <1>3, its $L^1$ Fourier transform has a continuous representative in $C_0(\mathbb R)$. By compatibility of the $L^1$ and $L^2$ Fourier transforms, that continuous representative agrees almost everywhere with
+Suppose instead that $g\in L^1$. Then by step [](#s1-3){.pf-ref}, its $L^1$ Fourier transform has a continuous representative in $C_0(\mathbb R)$. By compatibility of the $L^1$ and $L^2$ Fourier transforms, that continuous representative agrees almost everywhere with
 \[
 h=\mathbf 1_{[-1,1]}.
 \]
@@ -341,7 +341,7 @@ No continuous function can agree almost everywhere with this indicator. Indeed, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -353,27 +353,27 @@ One has
 
 ::: pf-proof
 
-Along the almost-everywhere convergent subsequence from step <1>10, Fatou's lemma gives
+Along the almost-everywhere convergent subsequence from step [](#s1-10){.pf-ref}, Fatou's lemma gives
 \[
 \int_{\mathbb R}|g(x)|\,dx
 \le
 \liminf_{j\to\infty}
 \int_{\mathbb R}|g_j(x)|\,dx.
 \]
-The left-hand side is infinite by step <1>11, so the liminf is infinite.
+The left-hand side is infinite by step [](#s1-11){.pf-ref}, so the liminf is infinite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
-The surjectivity assumption in step <1>8 is impossible.
+The surjectivity assumption in step [](#s1-8){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \|g_j\|_1
 \le
@@ -381,13 +381,13 @@ C\|\mathcal Fg_j\|_\infty
 =
 C\|h_j\|_\infty.
 \]
-The right-hand side is uniformly bounded by step <1>9, contradicting step <1>12.
+The right-hand side is uniformly bounded by step [](#s1-9){.pf-ref}, contradicting step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -397,7 +397,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>13 contradicts the only alternative $X=C_0$.
+Step [](#s1-13){.pf-ref} contradicts the only alternative $X=C_0$.
 
 :::
 
@@ -405,7 +405,7 @@ Step <1>13 contradicts the only alternative $X=C_0$.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>14 proves part (c).
+Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-14){.pf-ref} proves part (c).
 
 :::
 

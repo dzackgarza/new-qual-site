@@ -28,7 +28,7 @@ and
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Expand the first integrand:
 \[
@@ -74,7 +74,7 @@ and it lies inside the circle
 
 ::: pf-proof
 
-The expansion in step <1>1 shows that the only negative powers occur at
+The expansion in step [](#s1-1){.pf-ref} shows that the only negative powers occur at
 \(z=0\). Moreover,
 \[
 |0-i|=1<10.
@@ -84,7 +84,7 @@ The expansion in step <1>1 shows that the only negative powers occur at
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residue at \(z=0\) is zero:
 \[
@@ -98,13 +98,13 @@ The residue at \(z=0\) is zero:
 ::: pf-proof
 
 The residue is the coefficient of \(z^{-1}\) in the Laurent expansion.
-Step <1>1 contains no \(z^{-1}\)-term.
+Step [](#s1-1){.pf-ref} contains no \(z^{-1}\)-term.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -126,7 +126,7 @@ By the residue theorem,
 \operatorname{Res}_{z=0}
 \left(z+\frac1z\right)^4.
 \]
-Apply step <1>3.
+Apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -168,7 +168,7 @@ removable and the specified extension is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -186,7 +186,7 @@ A finite product of entire functions is entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On the circle \(|z|=4\),
 \[
@@ -208,7 +208,7 @@ g(z)=\frac{\sin z}{z}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -221,7 +221,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>6--<1>7, the integrand on the contour is the restriction of the
+By steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}, the integrand on the contour is the restriction of the
 entire function \(g^{100}\). Cauchy's integral theorem gives zero around the
 closed circle.
 
@@ -231,7 +231,7 @@ closed circle.
 
 ::: pf-qed
 
-Steps <1>4 and <1>8 evaluate the two requested contour integrals.
+Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} evaluate the two requested contour integrals.
 
 :::
 

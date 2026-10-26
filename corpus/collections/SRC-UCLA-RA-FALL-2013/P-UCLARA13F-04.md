@@ -34,7 +34,7 @@ M(r)=\frac1{2\pi}\int_0^{2\pi}u(re^{i\theta})\,d\theta,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $0<r<R<1$, the maximum principle on the annulus $r<|z|<1$ gives
 \[
@@ -60,7 +60,7 @@ On $|z|=r$, $h_r=A_r\geq u$, while on $|z|=1$, $h_r=0=u$. Since $u-h_r$ is subha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 It is enough to find a sequence $r_j\downarrow0$ such that
 \[
@@ -70,7 +70,7 @@ It is enough to find a sequence $r_j\downarrow0$ such that
 
 ::: pf-proof
 
-Fix $z\ne0$. For all sufficiently large $j$, $r_j<|z|$. Step <1>1 then gives
+Fix $z\ne0$. For all sufficiently large $j$, $r_j<|z|$. Step [](#s1-1){.pf-ref} then gives
 \[
 0\leq u(z)
 \leq\log(1/|z|)
@@ -82,7 +82,7 @@ If the displayed ratio tends to zero, then $u(z)=0$. Since $z$ was arbitrary in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $0<r<1/2$ and every $z$ with $|z|=r$, the disk
 \[
@@ -105,7 +105,7 @@ r-r/2<|w|<r+r/2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sub-mean inequality gives
 \[
@@ -117,18 +117,18 @@ u(z)\leq\frac4{\pi r^2}
 
 ::: pf-proof
 
-The function $u$ is subharmonic on the disk $D(z,r/2)$ because that disk avoids $0$ by step <1>3. Hence
+The function $u$ is subharmonic on the disk $D(z,r/2)$ because that disk avoids $0$ by step [](#s1-3){.pf-ref}. Hence
 \[
 u(z)\leq\frac1{\pi(r/2)^2}
 \int_{D(z,r/2)}u(w)\,d\lambda(w).
 \]
-Use the containment from step <1>3 and nonnegativity of $u$.
+Use the containment from step [](#s1-3){.pf-ref} and nonnegativity of $u$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently
 \[
@@ -140,13 +140,13 @@ Consequently
 
 ::: pf-proof
 
-The annulus in step <1>4 is contained in $0<|w|<2r$. The right side is independent of $z$, so take the maximum over $|z|=r$.
+The annulus in step [](#s1-4){.pf-ref} is contained in $0<|w|<2r$. The right side is independent of $z$, so take the maximum over $|z|=r$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The hypothesis implies
 \[
@@ -174,9 +174,9 @@ the stated quotient tends to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Combining steps <1>5--<1>6 yields
+Combining steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} yields
 \[
 \frac{\max_{|z|=r}u(z)}{\log(1/r)}\longrightarrow0
 \qquad(r\downarrow0).
@@ -185,26 +185,26 @@ Combining steps <1>5--<1>6 yields
 
 ::: pf-proof
 
-Divide the estimate in step <1>5 by $\log(1/r)$ and apply step <1>6.
+Divide the estimate in step [](#s1-5){.pf-ref} by $\log(1/r)$ and apply step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $u(z)=0$ for every $z\in\mathbb D\setminus\{0\}$.
 
 
 ::: pf-proof
 
-Step <1>7 supplies the condition required in step <1>2, indeed for all sufficiently small $r$ rather than merely along a sequence.
+Step [](#s1-7){.pf-ref} supplies the condition required in step [](#s1-2){.pf-ref}, indeed for all sufficiently small $r$ rather than merely along a sequence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 \[
@@ -214,7 +214,7 @@ Hence
 
 ::: pf-proof
 
-The domain of $u$ in the problem is the punctured disk, and step <1>8 proves vanishing at every point of that domain.
+The domain of $u$ in the problem is the punctured disk, and step [](#s1-8){.pf-ref} proves vanishing at every point of that domain.
 
 :::
 
@@ -222,7 +222,7 @@ The domain of $u$ in the problem is the punctured disk, and step <1>8 proves van
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

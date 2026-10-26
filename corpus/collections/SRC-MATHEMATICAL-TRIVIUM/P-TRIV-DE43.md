@@ -32,7 +32,7 @@ u(x,y,z)=X(x)Y(y)Z(z).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Separation of variables gives
 \[
@@ -48,7 +48,7 @@ Substitute $XYZ$ into $(\nabla^2+k^2)u=0$ and divide by $XYZ$ wherever it is non
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Write
 \[
@@ -66,13 +66,13 @@ k^2=\alpha^2+\beta^2+\gamma^2.
 
 ::: pf-proof
 
-Since the sum in step <1>1 is constant, each coordinate-dependent quotient must be constant. Denote the three constants by $-\alpha^2,-\beta^2,-\gamma^2$; their sum must be $-k^2$.
+Since the sum in step [](#s1-1){.pf-ref} is constant, each coordinate-dependent quotient must be constant. Denote the three constants by $-\alpha^2,-\beta^2,-\gamma^2$; their sum must be $-k^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Dirichlet conditions in the $x$ coordinate require
 \[
@@ -91,7 +91,7 @@ The conditions $u=0$ on $x=0$ and $x=L$ imply $X(0)=X(L)=0$ for a nonzero separa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Similarly,
 \[
@@ -104,13 +104,13 @@ Similarly,
 
 ::: pf-proof
 
-Apply the argument of step <1>3 to the pairs of faces $y=0,L$ and $z=0,L$.
+Apply the argument of step [](#s1-3){.pf-ref} to the pairs of faces $y=0,L$ and $z=0,L$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the separated eigenmodes are
 \[
@@ -131,7 +131,7 @@ k^2=\frac{\pi^2}{L^2}
 
 ::: pf-proof
 
-Substitute the values from steps <1>3--<1>4 into the relation in step <1>2. Each product mode vanishes on all six faces and satisfies the Helmholtz equation. Linear combinations of modes sharing the same value of $k^2$ give the full eigenspace for that eigenvalue.
+Substitute the values from steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} into the relation in step [](#s1-2){.pf-ref}. Each product mode vanishes on all six faces and satisfies the Helmholtz equation. Linear combinations of modes sharing the same value of $k^2$ give the full eigenspace for that eigenvalue.
 
 :::
 
@@ -139,7 +139,7 @@ Substitute the values from steps <1>3--<1>4 into the relation in step <1>2. Each
 
 ::: pf-qed
 
-Step <1>5 gives the Dirichlet modes and every allowed value of $k^2$.
+Step [](#s1-5){.pf-ref} gives the Dirichlet modes and every allowed value of $k^2$.
 
 :::
 

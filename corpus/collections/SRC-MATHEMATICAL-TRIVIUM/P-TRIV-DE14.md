@@ -25,7 +25,7 @@ Solve $y'' - 6y' + 15y = 2\sin 3t$ with $y(0) = -1$ and $y'(0) = 4$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The homogeneous characteristic polynomial is
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -69,7 +69,7 @@ $$
 
 ::: pf-proof
 
-Use the standard real basis associated with the conjugate roots in step <1>1.
+Use the standard real basis associated with the conjugate roots in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -91,7 +91,7 @@ The forcing has frequency $3$, and $\pm3i$ are not characteristic roots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Substitution gives
 $$
@@ -124,7 +124,7 @@ Match coefficients with $2\sin3t$ and divide by $6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -144,13 +144,13 @@ $$
 
 ::: pf-proof
 
-From $B-3A=0$, one has $B=3A$. Substitution into the first equation of step <1>4 gives $10A=1/3$.
+From $B-3A=0$, one has $B=3A$. Substitution into the first equation of step [](#s1-4){.pf-ref} gives $10A=1/3$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 $$
@@ -171,13 +171,13 @@ $$
 
 ::: pf-proof
 
-Add the homogeneous solution from step <1>2 and the particular solution from step <1>5.
+Add the homogeneous solution from step [](#s1-2){.pf-ref} and the particular solution from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The condition $y(0)=-1$ gives
 $$
@@ -196,7 +196,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The derivative at $t=0$ is
 $$
@@ -212,13 +212,13 @@ $$
 
 ::: pf-proof
 
-Differentiate step <1>6. At $t=0$, the homogeneous derivative contributes $3C_1+\sqrt6 C_2$, while the derivative of the particular part contributes $1/10$.
+Differentiate step [](#s1-6){.pf-ref}. At $t=0$, the homogeneous derivative contributes $3C_1+\sqrt6 C_2$, while the derivative of the particular part contributes $1/10$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The condition $y'(0)=4$ therefore gives
 $$
@@ -230,7 +230,7 @@ $$
 
 ::: pf-proof
 
-Substitute $C_1=-11/10$ from step <1>7 into step <1>8:
+Substitute $C_1=-11/10$ from step [](#s1-7){.pf-ref} into step [](#s1-8){.pf-ref}:
 $$
 4
 =
@@ -259,7 +259,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -285,7 +285,7 @@ $$
 
 ::: pf-proof
 
-Substitute steps <1>7 and <1>9 into step <1>6.
+Substitute steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref} into step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -293,7 +293,7 @@ Substitute steps <1>7 and <1>9 into step <1>6.
 
 ::: pf-qed
 
-Step <1>10 is the unique solution satisfying the differential equation and both initial conditions.
+Step [](#s1-10){.pf-ref} is the unique solution satisfying the differential equation and both initial conditions.
 
 :::
 

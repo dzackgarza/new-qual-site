@@ -47,7 +47,7 @@ u=\frac{x-y}{d}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -78,7 +78,7 @@ I-2uu^T
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -121,7 +121,7 @@ I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -154,7 +154,7 @@ Thus $A$ is a reflection in the sense of the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -208,7 +208,7 @@ x-y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The matrix $A$ satisfies
 \[
@@ -218,7 +218,7 @@ The matrix $A$ satisfies
 
 ::: pf-proof
 
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 \[
 \begin{aligned}
 Ax
@@ -235,7 +235,7 @@ y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The matrix $A$ also satisfies
 \[
@@ -259,7 +259,7 @@ u^Ty
 =
 -\frac{1-c}{d}.
 \]
-Hence, as in step <1>4,
+Hence, as in step [](#s1-4){.pf-ref},
 \[
 2u(u^Ty)
 =
@@ -282,14 +282,14 @@ x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus a reflection interchanging $x$ and $y$ exists.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>3 verify that the matrix $A$ is a reflection, and steps <1>5--<1>6 verify
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify that the matrix $A$ is a reflection, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} verify
 \[
 Ax=y,
 \qquad
@@ -300,7 +300,7 @@ Ay=x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Let $B$ be any reflection satisfying
 \[
@@ -334,7 +334,7 @@ Thus $x-y$ is a $(-1)$-eigenvector of $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For any reflection $B$, the $(-1)$-eigenspace is one-dimensional.
 
@@ -383,7 +383,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For such a $B$,
 \[
@@ -393,7 +393,7 @@ E_{-1}(B)=\operatorname{span}\{u\}.
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 x-y
 \]
@@ -408,7 +408,7 @@ also lies in
 \[
 E_{-1}(B).
 \]
-By step <1>9, this eigenspace is one-dimensional, so it equals
+By step [](#s1-9){.pf-ref}, this eigenspace is one-dimensional, so it equals
 \[
 \operatorname{span}\{u\}.
 \]
@@ -417,7 +417,7 @@ By step <1>9, this eigenspace is one-dimensional, so it equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The $1$-eigenspace of $B$ is
 \[
@@ -437,7 +437,7 @@ E_{-1}(B)^\perp
 =
 u^\perp.
 \]
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 \dim E_{-1}(B)=1,
 \]
@@ -459,7 +459,7 @@ E_1(B)=u^\perp.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The reflection $B$ must equal
 \[
@@ -475,11 +475,11 @@ z=z_\perp+(u^Tz)u,
 \qquad
 z_\perp\in u^\perp.
 \]
-By step <1>11,
+By step [](#s1-11){.pf-ref},
 \[
 Bz_\perp=z_\perp,
 \]
-while by step <1>10,
+while by step [](#s1-10){.pf-ref},
 \[
 Bu=-u.
 \]
@@ -504,18 +504,18 @@ B=I-2uu^T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore the reflection is unique.
 
 
 ::: pf-proof
 
-Step <1>7 constructs the reflection
+Step [](#s1-7){.pf-ref} constructs the reflection
 \[
 A=I-2uu^T,
 \]
-and step <1>12 shows that every reflection satisfying the two interchange conditions must equal this matrix.
+and step [](#s1-12){.pf-ref} shows that every reflection satisfying the two interchange conditions must equal this matrix.
 
 :::
 
@@ -523,7 +523,7 @@ and step <1>12 shows that every reflection satisfying the two interchange condit
 
 ::: pf-qed
 
-Steps <1>1--<1>7 prove existence, and steps <1>8--<1>13 prove uniqueness.
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove existence, and steps [](#s1-8){.pf-ref} through [](#s1-13){.pf-ref} prove uniqueness.
 
 :::
 

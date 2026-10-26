@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\ge x_0$,
 $$
@@ -63,7 +63,7 @@ Substitution into the contour integral gives the stated identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -79,7 +79,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 \int_{\gamma_x}f(z)\,dz-iAb
@@ -106,7 +106,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -127,7 +127,7 @@ $$
 \abs{f(x+it)-A}
 \longrightarrow0
 $$
-as $x\to+\infty$. The estimate in step <1>2 therefore forces the difference between the contour integral and $iAb$ to tend to $0$.
+as $x\to+\infty$. The estimate in step [](#s1-2){.pf-ref} therefore forces the difference between the contour integral and $iAb$ to tend to $0$.
 
 :::
 
@@ -135,7 +135,7 @@ as $x\to+\infty$. The estimate in step <1>2 therefore forces the difference betw
 
 ::: pf-qed
 
-Step <1>3 is the required limit.
+Step [](#s1-3){.pf-ref} is the required limit.
 
 :::
 

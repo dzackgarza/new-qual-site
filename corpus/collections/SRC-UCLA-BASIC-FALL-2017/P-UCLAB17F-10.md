@@ -26,7 +26,7 @@ for every integer $n\ge0$. Prove that $f=0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every polynomial
 \[
@@ -55,7 +55,7 @@ Every moment on the right is zero by hypothesis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists a sequence of polynomials $(p_m)$ such that
 \[
@@ -77,7 +77,7 @@ Thus such a sequence exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $m$,
 \[
@@ -87,13 +87,13 @@ For every $m$,
 
 ::: pf-proof
 
-Each $p_m$ is a polynomial, so step <1>1 applies.
+Each $p_m$ is a polynomial, so step [](#s1-1){.pf-ref} applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -120,8 +120,8 @@ Hence
 (b-a)\|f\|_\infty\|f-p_m\|_\infty.
 \end{aligned}
 \]
-The right side tends to $0$ by step <1>2.
-Using step <1>3 and taking $m\to\infty$ gives
+The right side tends to $0$ by step [](#s1-2){.pf-ref}.
+Using step [](#s1-3){.pf-ref} and taking $m\to\infty$ gives
 \[
 \int_a^b f(x)^2\,dx=0.
 \]
@@ -130,7 +130,7 @@ Using step <1>3 and taking $m\to\infty$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is identically zero.
 
@@ -141,7 +141,7 @@ The continuous function
 \[
 f^2
 \]
-is nonnegative on $[a,b]$ and has integral zero by step <1>4.
+is nonnegative on $[a,b]$ and has integral zero by step [](#s1-4){.pf-ref}.
 If there were
 \[
 x_0\in[a,b]
@@ -155,7 +155,7 @@ continuity would give an interval on which
 f(x)^2\ge\varepsilon
 \]
 for some $\varepsilon>0$.
-Its integral would then be strictly positive, contradicting step <1>4.
+Its integral would then be strictly positive, contradicting step [](#s1-4){.pf-ref}.
 Therefore
 \[
 \boxed{f\equiv0}.
@@ -167,7 +167,7 @@ Therefore
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -28,7 +28,7 @@ Thus the image of $f$ contains the unit disk.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $|z|\le1$,
 $$
@@ -50,7 +50,7 @@ throughout the closed unit disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ has a zero in the open unit disk.
 
@@ -69,7 +69,7 @@ Applying the maximum modulus principle to $1/f$ gives
 $$
 \frac1{|f(z)|}\le1
 $$
-for $|z|\le1$, so $|f(z)|\ge1$. Combining this with step <1>1 yields
+for $|z|\le1$, so $|f(z)|\ge1$. Combining this with step [](#s1-1){.pf-ref} yields
 $$
 |f(z)|=1
 $$
@@ -82,7 +82,7 @@ in the open unit disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $w_0$ with $|w_0|<1$, the functions $f$ and $f-w_0$ have the same number of zeros in the open unit disk, counted with multiplicity.
 
@@ -101,7 +101,7 @@ the open unit disk, counted with multiplicity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $|w_0|<1$, there is a $z$ with $|z|<1$ such that
 $$
@@ -111,22 +111,22 @@ $$
 
 ::: pf-proof
 
-By step <1>2, $f$ has at least one zero in the open unit disk. By step
-<1>3, $f-w_0$ has the same number of zeros there, hence at least one.
+By step [](#s1-2){.pf-ref}, $f$ has at least one zero in the open unit disk. By step
+[](#s1-3){.pf-ref}, $f-w_0$ has the same number of zeros there, hence at least one.
 Any such zero satisfies $f(z)=w_0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The image of $f$ contains the open unit disk.
 
 
 ::: pf-proof
 
-Step <1>4 applies to every $w_0$ with $|w_0|<1$, so every point of the
+Step [](#s1-4){.pf-ref} applies to every $w_0$ with $|w_0|<1$, so every point of the
 open unit disk lies in the image of $f$.
 
 :::
@@ -135,8 +135,8 @@ open unit disk lies in the image of $f$.
 
 ::: pf-qed
 
-Step <1>2 proves part 1, steps <1>3 and <1>4 prove part 2, and step
-<1>5 gives the stated image containment.
+Step [](#s1-2){.pf-ref} proves part 1, steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove part 2, and step
+[](#s1-5){.pf-ref} gives the stated image containment.
 
 :::
 

@@ -50,7 +50,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ideal
 $$
@@ -78,7 +78,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 1\in M+(a).
 $$
@@ -113,7 +113,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element
 $$
@@ -154,7 +154,7 @@ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 No element of a proper ideal can be a unit.
 
@@ -182,7 +182,7 @@ contradicting maximality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The assumption
 $$
@@ -193,11 +193,11 @@ is impossible.
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 $$
 m\in M,
 $$
-while step <1>4 says that $m$ is a unit. This contradicts step <1>5.
+while step [](#s1-4){.pf-ref} says that $m$ is a unit. This contradicts step [](#s1-5){.pf-ref}.
 Therefore
 $$
 I\subseteq M.
@@ -207,7 +207,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -223,7 +223,7 @@ $$
 
 ::: pf-proof
 
-The maximal ideal $M$ was arbitrary. By step <1>6,
+The maximal ideal $M$ was arbitrary. By step [](#s1-6){.pf-ref},
 $$
 I\subseteq M
 $$
@@ -235,7 +235,7 @@ for every maximal ideal $M$ of $R$. Taking the intersection over all such $M$ gi
 
 ::: pf-qed
 
-Step <1>7 is exactly the required conclusion.
+Step [](#s1-7){.pf-ref} is exactly the required conclusion.
 
 :::
 

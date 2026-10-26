@@ -70,7 +70,7 @@ The roots of $X^p-X$ in any field of characteristic $p$ are exactly the elements
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -86,7 +86,7 @@ The prime field $\mathbb F_p$ has exactly $p$ elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every fiber of $T$ has either zero elements or exactly $p$ elements.
 
@@ -101,13 +101,13 @@ so $x-x'\in\ker T$. Conversely, if $c\in\ker T$, then
 \[
 T(x+c)=T(x)+T(c)=y.
 \]
-Thus every nonempty fiber is a coset of $\ker T$ and has $p$ elements by step <1>3.
+Thus every nonempty fiber is a coset of $\ker T$ and has $p$ elements by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -117,13 +117,13 @@ Therefore
 
 ::: pf-proof
 
-The $q$ elements of the domain are partitioned into the nonempty fibers over the image. Step <1>4 says every such fiber has exactly $p$ elements. Hence the number of fibers, equivalently the number of image elements, is $q/p$.
+The $q$ elements of the domain are partitioned into the nonempty fibers over the image. Step [](#s1-4){.pf-ref} says every such fiber has exactly $p$ elements. Hence the number of fibers, equivalently the number of image elements, is $q/p$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus the number of elements of $\mathbb F_q$ of the form
 \[
@@ -137,7 +137,7 @@ is
 
 ::: pf-proof
 
-These elements are precisely the image of $T$, whose cardinality was computed in step <1>5.
+These elements are precisely the image of $T$, whose cardinality was computed in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -145,7 +145,7 @@ These elements are precisely the image of $T$, whose cardinality was computed in
 
 ::: pf-qed
 
-Step <1>6 is the requested count.
+Step [](#s1-6){.pf-ref} is the requested count.
 
 :::
 

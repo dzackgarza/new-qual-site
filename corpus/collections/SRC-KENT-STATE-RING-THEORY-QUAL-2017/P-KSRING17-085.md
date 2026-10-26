@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The roots of $f$ in
 $$
@@ -69,7 +69,7 @@ The quadratic formula gives the displayed roots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 $$
@@ -86,14 +86,14 @@ $$
 
 ::: pf-proof
 
-This is the factorization determined by the two roots from step <1>1.
+This is the factorization determined by the two roots from step [](#s1-1){.pf-ref}.
 Thus $f$ is reducible over $F$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Neither $\alpha$ nor $\beta$ belongs to
 $$
@@ -163,7 +163,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A monic quadratic over an integral domain is reducible only if it has a root in that domain.
 
@@ -204,7 +204,7 @@ is a root.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The polynomial
 $$
@@ -219,15 +219,15 @@ $$
 ::: pf-proof
 
 The ring $D$ is an integral domain by hypothesis.
-If $f$ were reducible in $D[x]$, step <1>4 would give a root of $f$ in $D$.
-Its only roots in the fraction field are $\alpha$ and $\beta$, and step <1>3 shows neither lies in $D$.
+If $f$ were reducible in $D[x]$, step [](#s1-4){.pf-ref} would give a root of $f$ in $D$.
+Its only roots in the fraction field are $\alpha$ and $\beta$, and step [](#s1-3){.pf-ref} shows neither lies in $D$.
 Hence $f$ is irreducible over $D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -241,13 +241,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>5.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The element
 $$
@@ -260,7 +260,7 @@ is integral over $D$ but does not belong to $D$.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 f(\alpha)=0,
 $$
@@ -273,7 +273,7 @@ $$
 \ZZ\subseteq D.
 $$
 Thus $\alpha$ is integral over $D$.
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 $$
 \alpha\notin D.
 $$
@@ -282,7 +282,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Every UFD is integrally closed in its field of fractions.
 
@@ -349,20 +349,20 @@ Hence $A$ is integrally closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The ring $D$ is not a UFD.
 
 
 ::: pf-proof
 
-Step <1>7 exhibits an element of
+Step [](#s1-7){.pf-ref} exhibits an element of
 $$
 \operatorname{Frac}(D)=F
 $$
 that is integral over $D$ but not in $D$.
 Thus $D$ is not integrally closed.
-Step <1>8 shows that every UFD is integrally closed.
+Step [](#s1-8){.pf-ref} shows that every UFD is integrally closed.
 Therefore
 $$
 \boxed{
@@ -377,7 +377,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

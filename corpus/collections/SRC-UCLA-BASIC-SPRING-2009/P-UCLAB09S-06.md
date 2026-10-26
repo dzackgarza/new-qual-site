@@ -25,7 +25,7 @@ f(x)=g(x)\qquad(0\le x<1).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that there exists a continuous function
 \[
@@ -79,7 +79,7 @@ there, $f$ is uniformly continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, suppose $f$ is uniformly continuous on $[0,1)$.
 Then the sequence
@@ -136,7 +136,7 @@ Thus the displayed sequence is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists
 \[
@@ -151,13 +151,13 @@ f\left(1-\frac1n\right)\to L.
 ::: pf-proof
 
 The real numbers are complete.
-Apply completeness to the Cauchy sequence from step <1>2.
+Apply completeness to the Cauchy sequence from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -245,7 +245,7 @@ as $x\to1^-$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -265,14 +265,14 @@ L,&x=1.
 
 ::: pf-proof
 
-The value $L$ is the finite one-sided limit supplied by step <1>4.
+The value $L$ is the finite one-sided limit supplied by step [](#s1-4){.pf-ref}.
 Thus the definition makes sense.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $g$ is continuous on $[0,1]$.
 
@@ -284,7 +284,7 @@ On
 [0,1),
 \]
 the function $g$ equals the continuous function $f$.
-At the endpoint $1$, step <1>4 gives
+At the endpoint $1$, step [](#s1-4){.pf-ref} gives
 \[
 \lim_{x\to1^-}g(x)
 =
@@ -300,7 +300,7 @@ Thus $g$ is continuous at $1$ as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -314,8 +314,8 @@ f\text{ extends continuously to }[0,1].
 
 ::: pf-proof
 
-Step <1>1 proves the reverse implication.
-Steps <1>2--<1>6 prove the forward implication.
+Step [](#s1-1){.pf-ref} proves the reverse implication.
+Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove the forward implication.
 
 :::
 
@@ -323,7 +323,7 @@ Steps <1>2--<1>6 prove the forward implication.
 
 ::: pf-qed
 
-Step <1>7 is the required equivalence.
+Step [](#s1-7){.pf-ref} is the required equivalence.
 
 :::
 

@@ -28,7 +28,7 @@ be a nonzero prime ideal of the Euclidean domain $D$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every ideal of $D$ is principal.
 
@@ -104,7 +104,7 @@ Thus every ideal is principal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Write
 $$
@@ -162,7 +162,7 @@ Therefore $p$ is irreducible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -182,7 +182,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 I=(a)
 $$
@@ -202,7 +202,7 @@ for some
 $$
 r\in D.
 $$
-Since $p$ is irreducible by step <1>2, either
+Since $p$ is irreducible by step [](#s1-2){.pf-ref}, either
 $$
 a
 $$
@@ -225,7 +225,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -236,7 +236,7 @@ $$
 ::: pf-proof
 
 The ideal $P$ is proper because it is prime.
-Step <1>3 shows that no proper ideal lies strictly between $P$ and $D$.
+Step [](#s1-3){.pf-ref} shows that no proper ideal lies strictly between $P$ and $D$.
 Thus $P$ is maximal.
 
 :::
@@ -245,7 +245,7 @@ Thus $P$ is maximal.
 
 ::: pf-qed
 
-Since $P$ was an arbitrary nonzero prime ideal, step <1>4 proves the assertion.
+Since $P$ was an arbitrary nonzero prime ideal, step [](#s1-4){.pf-ref} proves the assertion.
 
 :::
 

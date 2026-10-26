@@ -29,7 +29,7 @@ the admissible positive integers with exactly \(m\) decimal digits.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The number of elements of \(S_m\) is
 \[
@@ -50,7 +50,7 @@ digit. Hence there are \(9^m\) such numbers.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every \(n\in S_m\) satisfies
 \[
@@ -67,7 +67,7 @@ This is the defining lower bound for an \(m\)-digit positive integer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, for every \(n\in S_m\),
 \[
@@ -79,13 +79,13 @@ Therefore, for every \(n\in S_m\),
 ::: pf-proof
 
 All quantities are positive, so taking reciprocals reverses the inequality
-in step <1>2.
+in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the total contribution of the \(m\)-digit block satisfies
 \[
@@ -97,15 +97,15 @@ Hence the total contribution of the \(m\)-digit block satisfies
 
 ::: pf-proof
 
-There are \(|S_m|\) terms, each bounded above by the quantity in step <1>3.
+There are \(|S_m|\) terms, each bounded above by the quantity in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \boxed{
 \sum_{n\in S_m}\frac1n
@@ -122,7 +122,7 @@ Substitute
 \[
 |S_m|=9^m
 \]
-into step <1>4 and factor:
+into step [](#s1-4){.pf-ref} and factor:
 \[
 \frac{9^m}{10^{m-1}}
 =
@@ -133,7 +133,7 @@ into step <1>4 and factor:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The series
 \[
@@ -154,7 +154,7 @@ It is geometric with ratio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 \[
@@ -191,14 +191,14 @@ By comparison,
 ::: pf-proof
 
 Each block is nonnegative and bounded above by the corresponding term of the
-convergent geometric series in step <1>6, by step <1>5. Apply the comparison
-test to the block sums in step <1>7.
+convergent geometric series in step [](#s1-6){.pf-ref}, by step [](#s1-5){.pf-ref}. Apply the comparison
+test to the block sums in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -222,7 +222,7 @@ does not change the sum of the nonnegative terms.
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

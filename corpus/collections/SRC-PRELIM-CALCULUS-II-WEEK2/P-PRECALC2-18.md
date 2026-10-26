@@ -52,7 +52,7 @@ P_N
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(x\ge0\),
 \[
@@ -85,7 +85,7 @@ Hence \(h(x)\ge0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -102,13 +102,13 @@ Positivity follows because
 \[
 1+\frac1{n^2}>1.
 \]
-Apply step <1>1 with \(x=1/n^2\).
+Apply step [](#s1-1){.pf-ref} with \(x=1/n^2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 \[
@@ -120,7 +120,7 @@ converges.
 
 ::: pf-proof
 
-By step <1>2 it is a nonnegative series dominated termwise by the convergent
+By step [](#s1-2){.pf-ref} it is a nonnegative series dominated termwise by the convergent
 \(p\)-series
 \[
 \sum_{n=1}^{\infty}\frac1{n^2}.
@@ -146,13 +146,13 @@ S.
 ::: pf-proof
 
 The logarithm of a finite product of positive factors is the sum of the
-logarithms. Apply step <1>3.
+logarithms. Apply step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -176,7 +176,7 @@ e^S>0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 \[
@@ -189,13 +189,13 @@ Thus
 
 ::: pf-proof
 
-Step <1>5 gives a positive finite limit of the partial products.
+Step [](#s1-5){.pf-ref} gives a positive finite limit of the partial products.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Each factor satisfies
 \[
@@ -230,13 +230,13 @@ Q_N
 
 ::: pf-proof
 
-Substitute step <1>7 into the finite product.
+Substitute step [](#s1-7){.pf-ref} into the finite product.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The product telescopes:
 \[
@@ -260,7 +260,7 @@ N+1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -273,7 +273,7 @@ Hence
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 Q_N=N+1\to+\infty.
 \]
@@ -282,7 +282,7 @@ Q_N=N+1\to+\infty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 For every \(n\ge3\),
 \[
@@ -311,7 +311,7 @@ Subtract from \(1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For \(0<x<1\),
 \[
@@ -344,7 +344,7 @@ Hence \(k(x)>0\) for \(x>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -357,14 +357,14 @@ Therefore
 
 ::: pf-proof
 
-By step <1>11 all factors are positive, so logarithms are defined. Then
+By step [](#s1-11){.pf-ref} all factors are positive, so logarithms are defined. Then
 \[
 \log R_N
 =
 \sum_{n=3}^{N}
 \log\left(1-\frac1{\log n}\right).
 \]
-Apply step <1>12 termwise with
+Apply step [](#s1-12){.pf-ref} termwise with
 \[
 x=\frac1{\log n}.
 \]
@@ -373,7 +373,7 @@ x=\frac1{\log n}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 For every \(n\ge3\),
 \[
@@ -396,7 +396,7 @@ Both quantities are positive, so taking reciprocals reverses the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence
 \[
@@ -408,7 +408,7 @@ diverges.
 
 ::: pf-proof
 
-By step <1>14 it dominates the divergent harmonic tail
+By step [](#s1-14){.pf-ref} it dominates the divergent harmonic tail
 \[
 \sum_{n=3}^{\infty}\frac1n.
 \]
@@ -417,7 +417,7 @@ By step <1>14 it dominates the divergent harmonic tail
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Consequently,
 \[
@@ -427,19 +427,19 @@ Consequently,
 
 ::: pf-proof
 
-Step <1>13 gives
+Step [](#s1-13){.pf-ref} gives
 \[
 \log R_N
 \le
 -\sum_{n=3}^{N}\frac1{\log n},
 \]
-and the right-hand side tends to \(-\infty\) by step <1>15.
+and the right-hand side tends to \(-\infty\) by step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore
 \[
@@ -454,13 +454,13 @@ Since
 R_N=e^{\log R_N}
 \]
 and the exponential tends to \(0\) as its argument tends to \(-\infty\),
-step <1>16 gives the result.
+step [](#s1-16){.pf-ref} gives the result.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Thus the intended positive-tail product satisfies
 \[
@@ -474,7 +474,7 @@ in the sense that its partial products diverge to zero.
 
 ::: pf-proof
 
-This is step <1>17.
+This is step [](#s1-17){.pf-ref}.
 
 :::
 
@@ -482,7 +482,7 @@ This is step <1>17.
 
 ::: pf-qed
 
-Step <1>6 proves (a), step <1>10 proves (b), and step <1>18 proves the
+Step [](#s1-6){.pf-ref} proves (a), step [](#s1-10){.pf-ref} proves (b), and step [](#s1-18){.pf-ref} proves the
 corrected form of (c).
 
 :::

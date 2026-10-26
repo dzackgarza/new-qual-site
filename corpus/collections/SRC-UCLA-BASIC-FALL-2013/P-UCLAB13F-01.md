@@ -32,7 +32,7 @@ for every $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\ge0$,
 \[
@@ -65,7 +65,7 @@ Thus $h(x)\ge0$ for $x\ge0$, which is the stated inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -80,7 +80,7 @@ converges.
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 0<\log(1+a_n)\le a_n.
 \]
@@ -90,7 +90,7 @@ The comparison test therefore gives convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -107,7 +107,7 @@ By definition,
 =
 \sum_{j=1}^n\log(1+a_j).
 \]
-By step <1>2, these partial sums converge to some finite real number $L$.
+By step [](#s1-2){.pf-ref}, these partial sums converge to some finite real number $L$.
 Continuity of the exponential gives
 \[
 P_n
@@ -122,7 +122,7 @@ Since $e^L>0$, the limit is a nonzero real number.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Conversely, suppose
 \[
@@ -162,7 +162,7 @@ a_n\to0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $x\in[0,1]$,
 \[
@@ -196,9 +196,9 @@ Thus $g(x)\ge0$ on $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Under the assumption in step <1>4,
+Under the assumption in step [](#s1-4){.pf-ref},
 \[
 \sum_{n=1}^{\infty}\log(1+a_n)
 \]
@@ -227,9 +227,9 @@ Thus the displayed series converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Under the assumption in step <1>4,
+Under the assumption in step [](#s1-4){.pf-ref},
 \[
 \sum_{n=1}^{\infty}a_n<\infty.
 \]
@@ -237,19 +237,19 @@ Under the assumption in step <1>4,
 
 ::: pf-proof
 
-By step <1>4, there exists $N$ such that
+By step [](#s1-4){.pf-ref}, there exists $N$ such that
 \[
 0<a_n\le1
 \]
 for every $n\ge N$.
-Then step <1>5 gives
+Then step [](#s1-5){.pf-ref} gives
 \[
 a_n
 \le
 2\log(1+a_n)
 \]
 for $n\ge N$.
-The series on the right converges by step <1>6, so the comparison test gives
+The series on the right converges by step [](#s1-6){.pf-ref}, so the comparison test gives
 \[
 \sum_{n=N}^{\infty}a_n<\infty.
 \]
@@ -259,7 +259,7 @@ Adding the finitely many initial terms proves convergence of the full series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -274,7 +274,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 proves the forward construction from convergence of $\sum a_n$, and step <1>7 proves the converse.
+Step [](#s1-3){.pf-ref} proves the forward construction from convergence of $\sum a_n$, and step [](#s1-7){.pf-ref} proves the converse.
 
 :::
 
@@ -282,7 +282,7 @@ Step <1>3 proves the forward construction from convergence of $\sum a_n$, and st
 
 ::: pf-qed
 
-Step <1>8 is the required equivalence.
+Step [](#s1-8){.pf-ref} is the required equivalence.
 
 :::
 

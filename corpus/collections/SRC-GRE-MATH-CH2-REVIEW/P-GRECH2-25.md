@@ -31,7 +31,7 @@ Evaluate the following integral:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With the substitution $u=x+1$, the integral becomes
 $$
@@ -51,7 +51,7 @@ which gives the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The value of the integral is
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-Integrating term by term in step <1>1 gives
+Integrating term by term in step [](#s1-1){.pf-ref} gives
 $$
 \left[\frac{u^6}{6}-\frac{2u^5}{5}+\frac{u^4}{4}\right]_0^1
 =\frac16-\frac25+\frac14
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -84,7 +84,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-This is exactly the value established in step <1>2.
+This is exactly the value established in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -92,7 +92,7 @@ This is exactly the value established in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested integral and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested integral and corresponding choice.
 
 :::
 

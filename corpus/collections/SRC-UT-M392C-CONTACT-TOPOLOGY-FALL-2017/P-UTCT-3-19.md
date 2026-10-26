@@ -86,7 +86,7 @@ x\,dy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -130,7 +130,7 @@ Q=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the lower-half singular set is
 \[
@@ -141,13 +141,13 @@ Hence the lower-half singular set is
 
 ::: pf-proof
 
-The vector field in step <1>2 vanishes exactly when \(x=0\).
+The vector field in step [](#s1-2){.pf-ref} vanishes exactly when \(x=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On \(y\ge0\),
 \[
@@ -168,7 +168,7 @@ z=bxy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -181,7 +181,7 @@ b\,y\,dx+(b+1)x\,dy}.
 
 ::: pf-proof
 
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 \[
 \begin{aligned}
 \Phi_+^*\alpha
@@ -198,7 +198,7 @@ b\,y\,dx+(b+1)x\,dy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -221,13 +221,13 @@ b\,y\,\partial_y}.
 
 ::: pf-proof
 
-As in step <1>2,
+As in step [](#s1-2){.pf-ref},
 \[
 \iota_{v_+}\omega
 =
 P\,dy-Q\,dx.
 \]
-Comparing with step <1>5 gives
+Comparing with step [](#s1-5){.pf-ref} gives
 \[
 P=(b+1)x,
 \qquad
@@ -242,7 +242,7 @@ Q=-by.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The linearization of \(v_+\) at the origin is
 \[
@@ -258,7 +258,7 @@ b+1&0\\
 
 ::: pf-proof
 
-The vector field in step <1>6 is already linear.
+The vector field in step [](#s1-6){.pf-ref} is already linear.
 
 :::
 
@@ -286,7 +286,7 @@ These inequalities are immediate from the stated range.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence, when
 \[
@@ -316,7 +316,7 @@ origin as \(t\to+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the endpoint of the lower singular curve at the origin is
 \[
@@ -331,14 +331,14 @@ when
 ::: pf-proof
 
 The lower half contributes the singular curve ending at the origin by step
-<1>3, while the upper half has source-type elliptic dynamics by step <1>9.
+[](#s1-3){.pf-ref}, while the upper half has source-type elliptic dynamics by step [](#s1-9){.pf-ref}.
 This is precisely the half-elliptic local model from the notes.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If
 \[
@@ -360,7 +360,7 @@ Immediate from \(b<-1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If
 \[
@@ -382,7 +382,7 @@ Immediate from \(b>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 In either case
 \[
@@ -395,14 +395,14 @@ the origin is a saddle for the upper-half characteristic foliation.
 
 ::: pf-proof
 
-Steps <1>11--<1>12 show that the two eigenvalues of the diagonal
-linearization in step <1>7 have opposite signs.
+Steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} show that the two eigenvalues of the diagonal
+linearization in step [](#s1-7){.pf-ref} have opposite signs.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore the origin is
 \[
@@ -419,8 +419,8 @@ b>0}.
 
 ::: pf-proof
 
-The lower half again supplies the singular curve from step <1>3, while the
-upper half has hyperbolic saddle dynamics by step <1>13. This is the
+The lower half again supplies the singular curve from step [](#s1-3){.pf-ref}, while the
+upper half has hyperbolic saddle dynamics by step [](#s1-13){.pf-ref}. This is the
 half-hyperbolic local model.
 
 :::
@@ -513,7 +513,7 @@ Thus \(\nu_\xi\in\xi\), and it is clearly transverse to \(\partial_x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 In the oriented normal \(yz\)-plane to \(\gamma\), the slopes of the
 two framing vectors are
@@ -546,7 +546,7 @@ Their vertical-over-horizontal slopes are therefore \(bx\) and \(-x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 The infinitesimal relative slope of the contact framing with respect
 to the surface framing at the origin is
@@ -563,7 +563,7 @@ to the surface framing at the origin is
 
 ::: pf-proof
 
-Subtract the two slopes in step <1>18:
+Subtract the two slopes in step [](#s1-18){.pf-ref}:
 \[
 -x-bx
 =
@@ -575,7 +575,7 @@ then differentiate with respect to \(x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 If
 \[
@@ -595,7 +595,7 @@ Since \(b+1<0\), its negative is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Thus, in the right-hand convention used in the notes,
 \[
@@ -610,10 +610,10 @@ when
 
 ::: pf-proof
 
-Step <1>19 measures the signed first-order rotation of the contact framing
+Step [](#s1-19){.pf-ref} measures the signed first-order rotation of the contact framing
 relative to the surface framing in the oriented normal plane. Positive
 relative rotation is the right-hand twist convention of the local model, and
-step <1>20 shows that this occurs exactly for \(b<-1\).
+step [](#s1-20){.pf-ref} shows that this occurs exactly for \(b<-1\).
 
 :::
 
@@ -639,7 +639,7 @@ Now \(b+1>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Hence
 \[
@@ -654,7 +654,7 @@ when
 
 ::: pf-proof
 
-By step <1>19, the relative first-order rotation is negative in this range,
+By step [](#s1-19){.pf-ref}, the relative first-order rotation is negative in this range,
 which is the left-hand twist convention.
 
 :::
@@ -663,8 +663,8 @@ which is the left-hand twist convention.
 
 ::: pf-qed
 
-Steps <1>10 and <1>14 classify the half-elliptic and half-hyperbolic
-singularities, while steps <1>21 and <1>23 give the relative twisting
+Steps [](#s1-10){.pf-ref} and [](#s1-14){.pf-ref} classify the half-elliptic and half-hyperbolic
+singularities, while steps [](#s1-21){.pf-ref} and [](#s1-23){.pf-ref} give the relative twisting
 directions.
 
 :::

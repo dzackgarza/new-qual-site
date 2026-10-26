@@ -27,7 +27,7 @@ Which of the following is a harmonic conjugate $u(x, y)$ of the harmonic functio
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $u$ is a harmonic conjugate of
 $$
@@ -65,9 +65,9 @@ which gives the displayed requirements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Integrating the first equation in step <1>1 with respect to $x$ gives
+Integrating the first equation in step [](#s1-1){.pf-ref} with respect to $x$ gives
 $$
 u(x,y)=-x^3+3xy^2+g(y)
 $$
@@ -86,7 +86,7 @@ The integration constant may depend on the parameter $y$, giving $g(y)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The second Cauchy--Riemann equation forces
 $$
@@ -97,17 +97,17 @@ for some real constant $C$.
 
 ::: pf-proof
 
-Differentiating the expression in step <1>2 with respect to $y$ gives
+Differentiating the expression in step [](#s1-2){.pf-ref} with respect to $y$ gives
 $$
 u_y=6xy+g'(y).
 $$
-Comparing with $u_y=-1+6xy$ from step <1>1 yields $g'(y)=-1$, hence $g(y)=-y+C$.
+Comparing with $u_y=-1+6xy$ from step [](#s1-1){.pf-ref} yields $g'(y)=-1$, hence $g(y)=-y+C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus one harmonic conjugate is
 $$
@@ -118,7 +118,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Take $C=0$ in step <1>3. Adding a real constant gives the other harmonic conjugates, and the displayed choice is exactly option (B).
+Take $C=0$ in step [](#s1-3){.pf-ref}. Adding a real constant gives the other harmonic conjugates, and the displayed choice is exactly option (B).
 
 :::
 
@@ -126,7 +126,7 @@ Take $C=0$ in step <1>3. Adding a real constant gives the other harmonic conjuga
 
 ::: pf-qed
 
-Step <1>4 gives the requested harmonic conjugate.
+Step [](#s1-4){.pf-ref} gives the requested harmonic conjugate.
 
 :::
 

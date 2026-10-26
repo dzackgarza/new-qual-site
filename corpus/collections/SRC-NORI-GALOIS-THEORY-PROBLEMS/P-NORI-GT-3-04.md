@@ -40,7 +40,7 @@ The direct iteration from Problem 3.3 cannot start with an arbitrary nonsquare $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $p\equiv3\pmod4$, the element $-1$ is not a square in $\mathbb F_p$.
 
@@ -57,7 +57,7 @@ because $(p-1)/2$ is odd. Hence $-1$ is a nonsquare.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose $i$ with
 \[
@@ -79,13 +79,13 @@ E_1\cong\mathbb F_{p^2}.
 
 ::: pf-proof
 
-By step <1>1, $X^2+1$ is irreducible over $\mathbb F_p$, so adjoining a root gives degree $2$. The resulting field has $p^2$ elements and hence is the unique field $\mathbb F_{p^2}$.
+By step [](#s1-1){.pf-ref}, $X^2+1$ is irreducible over $\mathbb F_p$, so adjoining a root gives degree $2$. The resulting field has $p^2$ elements and hence is the unique field $\mathbb F_{p^2}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The exact power of $2$ dividing $p^2-1$ is at least $2^3$.
 
@@ -106,7 +106,7 @@ Thus $|E_1^\times|=p^2-1$ has exact $2$-adic valuation $k'\ge3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choose any nonsquare
 \[
@@ -141,7 +141,7 @@ This is the same recursive construction as in Problem 3.3, now with base field $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every extension in this recursive tail is quadratic:
 \[
@@ -152,13 +152,13 @@ Every extension in this recursive tail is quadratic:
 
 ::: pf-proof
 
-Problem 3.3 applies verbatim to the finite field $E_1=\mathbb F_{p^2}$ because the exact power of $2$ dividing $|E_1^\times|=p^2-1$ is $2^{k'}$ with $k'\ge2$, by step <1>3, and $u_1$ is a nonsquare by step <1>4. Its conclusion is that every successive square-root adjunction has degree $2$.
+Problem 3.3 applies verbatim to the finite field $E_1=\mathbb F_{p^2}$ because the exact power of $2$ dividing $|E_1^\times|=p^2-1$ is $2^{k'}$ with $k'\ge2$, by step [](#s1-3){.pf-ref}, and $u_1$ is a nonsquare by step [](#s1-4){.pf-ref}. Its conclusion is that every successive square-root adjunction has degree $2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Together with the first extension, this gives an infinite tower
 \[
@@ -175,7 +175,7 @@ with
 
 ::: pf-proof
 
-Step <1>2 proves the degree statement for $E_1/E_0$, and step <1>6 proves it for every later stage.
+Step [](#s1-2){.pf-ref} proves the degree statement for $E_1/E_0$, and step [](#s1-6){.pf-ref} proves it for every later stage.
 
 :::
 
@@ -183,7 +183,7 @@ Step <1>2 proves the degree statement for $E_1/E_0$, and step <1>6 proves it for
 
 ::: pf-qed
 
-Step <1>7 supplies the requested construction for the case $k=1$.
+Step [](#s1-7){.pf-ref} supplies the requested construction for the case $k=1$.
 
 :::
 

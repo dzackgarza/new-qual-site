@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A type-I prime is $(0)$.
 
@@ -47,7 +47,7 @@ This is exactly type I in [[P-TATE85-PI-04]].
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The primes of types II and III are precisely the principal ideals
 $$
@@ -76,9 +76,9 @@ Conversely, $\CC[X,Y]$ is a UFD, so every irreducible polynomial is prime and th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-In step <1>2, the irreducible generator $f$ is determined by $P$ up to a nonzero constant factor.
+In step [](#s1-2){.pf-ref}, the irreducible generator $f$ is determined by $P$ up to a nonzero constant factor.
 
 
 ::: pf-proof
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The type-IV primes are exactly
 $$
@@ -122,9 +122,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The pair $(x_0,y_0)$ in step <1>4 is uniquely determined by the ideal.
+The pair $(x_0,y_0)$ in step [](#s1-4){.pf-ref} is uniquely determined by the ideal.
 
 
 ::: pf-proof
@@ -147,7 +147,7 @@ in $\CC[X]$, hence $x_0=x_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The only maximal ideals are the type-IV ideals.
 
@@ -164,7 +164,7 @@ when its generator is associated to $Y-y_0$. Thus no prime of types I--III is ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A type-IV ideal
 $$
@@ -200,7 +200,7 @@ Since $(f)\subseteq\mathfrak m_{(x_0,y_0)}$ is equivalent to $f\in\mathfrak m_{(
 
 ::: pf-qed
 
-Steps <1>1--<1>5 give the three distinct forms and their uniqueness assertions; steps <1>6 and <1>7 give the maximality and containment statements.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give the three distinct forms and their uniqueness assertions; steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the maximality and containment statements.
 
 :::
 

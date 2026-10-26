@@ -20,7 +20,7 @@ Let $I=[0,1]$, let $C(X,I)$ be the set of continuous functions from $X$ to $I$, 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $X\ne\varnothing$, then
 \[
@@ -47,7 +47,7 @@ is an injection from $I$ into $C(X,I)$, proving the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set of all functions $I\to I$ has cardinality strictly larger than
 $\mathfrak c$.
@@ -76,7 +76,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A continuous function $f:I\to I$ is uniquely determined by its
 restriction to
@@ -100,7 +100,7 @@ Thus $f=g$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -110,7 +110,7 @@ One has
 
 ::: pf-proof
 
-By step <1>3, restriction defines an injection
+By step [](#s1-3){.pf-ref}, restriction defines an injection
 \[
 C(I,I)\hookrightarrow I^Q.
 \]
@@ -129,7 +129,7 @@ Hence $|C(I,I)|\le\mathfrak c$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -139,8 +139,8 @@ Therefore
 
 ::: pf-proof
 
-Applying step <1>1 with $X=I$ gives
-$|C(I,I)|\ge\mathfrak c$, while step <1>4 gives the reverse inequality.
+Applying step [](#s1-1){.pf-ref} with $X=I$ gives
+$|C(I,I)|\ge\mathfrak c$, while step [](#s1-4){.pf-ref} gives the reverse inequality.
 
 :::
 
@@ -148,7 +148,7 @@ $|C(I,I)|\ge\mathfrak c$, while step <1>4 gives the reverse inequality.
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>5 prove the three requested assertions.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-5){.pf-ref} prove the three requested assertions.
 
 :::
 

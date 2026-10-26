@@ -41,7 +41,7 @@ a\ge0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $b=0$, then
 \[
@@ -64,7 +64,7 @@ When $b=0$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $b>0$.
 Then
@@ -94,7 +94,7 @@ and the last term is constant in $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The derivative $\phi'$ vanishes at exactly one point,
 \[
@@ -126,14 +126,14 @@ a_0=b^{1/(p-1)}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The point $a_0$ is the global minimum of $\phi$ on $[0,\infty)$.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \phi'(a)<0
 \]
@@ -156,7 +156,7 @@ Therefore $a_0$ is the unique global minimum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The conjugacy relation
 \[
@@ -195,7 +195,7 @@ q-1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 At the minimizing point,
 \[
@@ -212,7 +212,7 @@ a_0b=b^q.
 
 ::: pf-proof
 
-The first identity follows from steps <1>3 and <1>5.
+The first identity follows from steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}.
 Then
 \[
 a_0^p
@@ -238,7 +238,7 @@ b^q.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -248,7 +248,7 @@ One has
 
 ::: pf-proof
 
-Using step <1>6,
+Using step [](#s1-6){.pf-ref},
 \[
 \begin{aligned}
 \phi(a_0)
@@ -272,7 +272,7 @@ b^q
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -286,16 +286,16 @@ a,b\ge0.
 
 ::: pf-proof
 
-If $b=0$, use step <1>1.
-If $b>0$, step <1>4 says that $\phi$ is minimized at $a_0$, and step <1>7 gives the minimum value $0$.
+If $b=0$, use step [](#s1-1){.pf-ref}.
+If $b>0$, step [](#s1-4){.pf-ref} says that $\phi$ is minimized at $a_0$, and step [](#s1-7){.pf-ref} gives the minimum value $0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Rearranging step <1>8 gives Young's inequality:
+Rearranging step [](#s1-8){.pf-ref} gives Young's inequality:
 \[
 \boxed{
 ab
@@ -329,7 +329,7 @@ Move the term $ab$ to the other side.
 
 ::: pf-qed
 
-Step <1>9 is the required inequality.
+Step [](#s1-9){.pf-ref} is the required inequality.
 
 :::
 

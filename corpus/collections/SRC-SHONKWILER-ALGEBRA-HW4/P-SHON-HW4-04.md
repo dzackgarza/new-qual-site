@@ -38,7 +38,7 @@ G=\langle \sigma,\tau\rangle.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each
 \[
@@ -73,7 +73,7 @@ for \(1\le i\le n-1\), the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore every adjacent transposition
 \[
@@ -85,13 +85,13 @@ belongs to \(G\).
 
 ::: pf-proof
 
-Each one is one of the conjugates from step <1>1.
+Each one is one of the conjugates from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every transposition \((i\,j)\) with \(i<j\) can be written as a product of adjacent transpositions:
 \[
@@ -111,20 +111,20 @@ The right-hand side moves \(i\) successively to \(j\), then moves the intermedia
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus every transposition in \(S_n\) belongs to \(G\).
 
 
 ::: pf-proof
 
-Step <1>2 puts all adjacent transpositions in \(G\), and step <1>3 expresses any transposition as their product.
+Step [](#s1-2){.pf-ref} puts all adjacent transpositions in \(G\), and step [](#s1-3){.pf-ref} expresses any transposition as their product.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The transpositions generate \(S_n\).
 
@@ -155,13 +155,13 @@ S_n\subseteq G.
 
 ::: pf-proof
 
-By steps <1>4--<1>5, every element of \(S_n\) is a product of elements already in \(G\).
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, every element of \(S_n\) is a product of elements already in \(G\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since by definition
 \[
@@ -184,7 +184,7 @@ Combine the two inclusions.
 
 ::: pf-qed
 
-Step <1>7 is the required generation statement.
+Step [](#s1-7){.pf-ref} is the required generation statement.
 
 :::
 

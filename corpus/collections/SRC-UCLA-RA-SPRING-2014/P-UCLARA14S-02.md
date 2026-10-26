@@ -42,7 +42,7 @@ w(a)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\mathbb R$,
 \[
@@ -88,7 +88,7 @@ C_\beta
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -125,7 +125,7 @@ w(a)\frac{|f(x)|}{|x-a|^\beta}\,dx\,da\\
 \right)dx.
 \end{aligned}
 \]
-Apply step <1>1 to the inner integral:
+Apply step [](#s1-1){.pf-ref} to the inner integral:
 \[
 \int_{\mathbb R}w(a)F(a)\,da
 \le
@@ -138,7 +138,7 @@ The right-hand side is finite because $f\in L^1(\mathbb R)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set
 \[
@@ -161,13 +161,13 @@ so the nonnegative integral
 \[
 \int_{\mathbb R}w(a)F(a)\,da
 \]
-would be infinite. This contradicts step <1>2. Hence $m(E)=0$.
+would be infinite. This contradicts step [](#s1-2){.pf-ref}. Hence $m(E)=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -183,7 +183,7 @@ for Lebesgue-almost every $a\in\mathbb R$.
 
 ::: pf-proof
 
-By definition, the integral is $F(a)$, and step <1>3 shows that $F(a)<\infty$ outside a null set.
+By definition, the integral is $F(a)$, and step [](#s1-3){.pf-ref} shows that $F(a)<\infty$ outside a null set.
 
 :::
 
@@ -191,7 +191,7 @@ By definition, the integral is $F(a)$, and step <1>3 shows that $F(a)<\infty$ ou
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

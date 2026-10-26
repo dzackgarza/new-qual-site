@@ -31,7 +31,7 @@ If $x$ is an element of the set $(A \cup B) \cap C$, which of the following must
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The hypothesis implies
 $$
@@ -55,14 +55,14 @@ is equivalent to the two displayed statements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement I must be true.
 
 
 ::: pf-proof
 
-By step <1>1, $x\in C$. Since
+By step [](#s1-1){.pf-ref}, $x\in C$. Since
 $$
 C\subseteq(A\cap B)\cup C,
 $$
@@ -72,20 +72,20 @@ it follows that $x\in(A\cap B)\cup C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement II must be true.
 
 
 ::: pf-proof
 
-This is exactly the second membership assertion in step <1>1.
+This is exactly the second membership assertion in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement III need not be true.
 
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the statements that must be true are
 $$
@@ -116,7 +116,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Steps <1>2 and <1>3 prove I and II, while step <1>4 gives a counterexample to III.
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove I and II, while step [](#s1-4){.pf-ref} gives a counterexample to III.
 
 :::
 
@@ -124,7 +124,7 @@ Steps <1>2 and <1>3 prove I and II, while step <1>4 gives a counterexample to II
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

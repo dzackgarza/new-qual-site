@@ -27,7 +27,7 @@ What is the slope of the tangent line to the curve $xy(x + y) = x + y^4$ at the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Along the curve, the derivative satisfies
 $$
@@ -56,7 +56,7 @@ which gives the displayed formula whenever the denominator is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $(1,1)$, the slope is
 $$
@@ -67,7 +67,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-At $(1,1)$, the denominator in step <1>1 equals
+At $(1,1)$, the denominator in step [](#s1-1){.pf-ref} equals
 $$
 1+2-4=-1\ne0,
 $$
@@ -86,7 +86,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the tangent slope at the specified point and the corresponding choice.
+Step [](#s1-2){.pf-ref} gives the tangent slope at the specified point and the corresponding choice.
 
 :::
 

@@ -19,7 +19,7 @@ Let $X$ be a compact metric space, let $(x_n)$ be a sequence in $X$, and let $x\
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that
 \[
@@ -35,7 +35,7 @@ This is the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists $\varepsilon>0$ such that for every $N$ there is some $n\ge N$ with
 \[
@@ -51,7 +51,7 @@ This is exactly the negation of convergence in a metric space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One can choose a subsequence
 \[
@@ -66,8 +66,8 @@ for every $k$.
 
 ::: pf-proof
 
-Choose $n_1$ using step <1>2 with $N=1$.
-After choosing $n_k$, use step <1>2 with
+Choose $n_1$ using step [](#s1-2){.pf-ref} with $N=1$.
+After choosing $n_k$, use step [](#s1-2){.pf-ref} with
 \[
 N=n_k+1
 \]
@@ -85,7 +85,7 @@ This inductively defines the required subsequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No subsequence of $(y_k)$ can converge to $x$.
 
@@ -103,22 +103,22 @@ Thus no subsequence of $(y_k)$ can converge to $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Step <1>4 contradicts the hypothesis of the problem.
+Step [](#s1-4){.pf-ref} contradicts the hypothesis of the problem.
 
 
 ::: pf-proof
 
-The sequence $(y_k)$ constructed in step <1>3 is itself a subsequence of $(x_n)$.
+The sequence $(y_k)$ constructed in step [](#s1-3){.pf-ref} is itself a subsequence of $(x_n)$.
 By hypothesis, every subsequence of $(x_n)$ must have a further subsequence converging to $x$.
-Step <1>4 says this particular subsequence has no such further subsequence.
+Step [](#s1-4){.pf-ref} says this particular subsequence has no such further subsequence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -128,7 +128,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption in step <1>1 leads to the contradiction in step <1>5.
+The assumption in step [](#s1-1){.pf-ref} leads to the contradiction in step [](#s1-5){.pf-ref}.
 Hence the assumption is false, and the sequence converges to $x$.
 
 :::
@@ -137,7 +137,7 @@ Hence the assumption is false, and the sequence converges to $x$.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

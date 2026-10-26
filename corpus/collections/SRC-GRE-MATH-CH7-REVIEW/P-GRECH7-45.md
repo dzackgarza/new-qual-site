@@ -27,7 +27,7 @@ In how many different ways can four people sit around a restaurant table (not in
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix one of the four people in a reference seat.
 
@@ -40,7 +40,7 @@ Two seatings that differ only by a rotation are to be identified. Every rotation
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The remaining three people can be arranged in
 $$
@@ -51,13 +51,13 @@ ways around the remaining seats.
 
 ::: pf-proof
 
-After fixing $A$ as in step <1>1, the three distinct people $B,C,D$ may be assigned arbitrarily to the three remaining seats, giving $3!$ permutations.
+After fixing $A$ as in step [](#s1-1){.pf-ref}, the three distinct people $B,C,D$ may be assigned arbitrarily to the three remaining seats, giving $3!$ permutations.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the number of circular seatings, modulo rotations, is
 $$
@@ -68,7 +68,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By step <1>1, each rotational equivalence class is counted exactly once by the arrangements enumerated in step <1>2.
+By step [](#s1-1){.pf-ref}, each rotational equivalence class is counted exactly once by the arrangements enumerated in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -76,7 +76,7 @@ By step <1>1, each rotational equivalence class is counted exactly once by the a
 
 ::: pf-qed
 
-Step <1>3 gives the requested count.
+Step [](#s1-3){.pf-ref} gives the requested count.
 
 :::
 

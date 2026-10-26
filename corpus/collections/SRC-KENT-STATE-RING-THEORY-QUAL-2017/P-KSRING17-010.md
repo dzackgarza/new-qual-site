@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The subset $I_1$ is an ideal of $R_1$.
 
@@ -93,14 +93,14 @@ Therefore $I_1$ is an ideal of $R_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The subset $I_2$ is an ideal of $R_2$.
 
 
 ::: pf-proof
 
-The proof is identical to step <1>1, using pairs of the form
+The proof is identical to step [](#s1-1){.pf-ref}, using pairs of the form
 $$
 (0,b)
 $$
@@ -115,7 +115,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every element of $I$ lies in
 $$
@@ -166,7 +166,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every element of
 $$
@@ -203,7 +203,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -225,7 +225,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>2 show that $I_1$ and $I_2$ are ideals, while steps <1>3--<1>4 prove the two inclusions.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $I_1$ and $I_2$ are ideals, while steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} prove the two inclusions.
 
 :::
 
@@ -233,7 +233,7 @@ Steps <1>1--<1>2 show that $I_1$ and $I_2$ are ideals, while steps <1>3--<1>4 pr
 
 ::: pf-qed
 
-Step <1>5 is the required decomposition.
+Step [](#s1-5){.pf-ref} is the required decomposition.
 
 :::
 

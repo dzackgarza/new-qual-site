@@ -18,7 +18,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A **CW complex** is a Hausdorff space
 \[
@@ -89,7 +89,7 @@ The open cells are the images of the interiors of the attached disks.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The projective plane
 \[
@@ -164,7 +164,7 @@ which has degree $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The complex projective space
 \[
@@ -227,7 +227,7 @@ appears at each stage.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the cellular chain groups of
 \[
@@ -250,14 +250,14 @@ C_n^{\mathrm{cell}}
 ::: pf-proof
 
 The cellular chain group in degree $n$ is free abelian on the $n$-cells.
-Step <1>3 gives exactly one cell in each listed even degree and none in the
+Step [](#s1-3){.pf-ref} gives exactly one cell in each listed even degree and none in the
 odd degrees.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every cellular boundary map for
 \[
@@ -301,7 +301,7 @@ d_n=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the cellular homology is
 \[
@@ -339,7 +339,7 @@ C_n^{\mathrm{cell}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus
 \[
@@ -358,7 +358,7 @@ H_n(\mathbb{CP}^4;\mathbb Z)
 
 ::: pf-proof
 
-Combine steps <1>4--<1>6.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -366,9 +366,9 @@ Combine steps <1>4--<1>6.
 
 ::: pf-qed
 
-Step <1>1 defines a CW complex.
-Steps <1>2--<1>3 give the requested CW structures.
-Step <1>7 computes the homology of
+Step [](#s1-1){.pf-ref} defines a CW complex.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the requested CW structures.
+Step [](#s1-7){.pf-ref} computes the homology of
 \[
 \mathbb{CP}^4.
 \]

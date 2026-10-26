@@ -62,7 +62,7 @@ Since $\sum n^{-2}<\infty$, the variance series converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The centered series
 \[
@@ -89,7 +89,7 @@ With $\epsilon=2^{-j}$ and then $m\to\infty$, the probability that some tail par
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $p=q=1/2$, then $\mu=0$ and
 \[
@@ -99,13 +99,13 @@ If $p=q=1/2$, then $\mu=0$ and
 
 ::: pf-proof
 
-When $p=q=1/2$, the centered summand $X_n$ equals $\xi_n/n$. Apply step <1>2.
+When $p=q=1/2$, the centered summand $X_n$ equals $\xi_n/n$. Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For arbitrary $p$, the partial sums decompose as
 \[
@@ -127,7 +127,7 @@ Sum this identity from $1$ to $N$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $p\ne q$, then $\mu\ne0$, and
 \[
@@ -137,7 +137,7 @@ If $p\ne q$, then $\mu\ne0$, and
 
 ::: pf-proof
 
-By step <1>2, the first term on the right side of step <1>4 converges almost surely to a finite random limit. The harmonic partial sums tend to $+\infty$. Since $\mu\ne0$, the second term tends to $+\infty$ when $p>q$ and to $-\infty$ when $p<q$. Adding an almost surely convergent sequence cannot cancel this divergence.
+By step [](#s1-2){.pf-ref}, the first term on the right side of step [](#s1-4){.pf-ref} converges almost surely to a finite random limit. The harmonic partial sums tend to $+\infty$. Since $\mu\ne0$, the second term tends to $+\infty$ when $p>q$ and to $-\infty$ when $p<q$. Adding an almost surely convergent sequence cannot cancel this divergence.
 
 :::
 
@@ -145,7 +145,7 @@ By step <1>2, the first term on the right side of step <1>4 converges almost sur
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

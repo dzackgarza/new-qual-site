@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The definition of $h$ is well-defined.
 
@@ -89,7 +89,7 @@ Hence the value of $h$ depends only on the fraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $h$ preserves addition.
 
@@ -137,7 +137,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $h$ preserves multiplication and identity.
 
@@ -179,7 +179,7 @@ Thus $h$ is a unital ring homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map $h$ extends $g$.
 
@@ -229,7 +229,7 @@ Then $k$ is a well-defined ring homomorphism.
 
 ::: pf-proof
 
-The same argument as in steps <1>1--<1>3 applies to the ring automorphism
+The same argument as in steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} applies to the ring automorphism
 $$
 g^{-1}:D\to D.
 $$
@@ -238,7 +238,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The maps $h$ and $k$ are inverse to one another.
 
@@ -282,7 +282,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -295,13 +295,13 @@ $$
 
 ::: pf-proof
 
-Steps <1>2--<1>3 show that $h$ is a ring homomorphism, and step <1>6 gives a two-sided inverse.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} show that $h$ is a ring homomorphism, and step [](#s1-6){.pf-ref} gives a two-sided inverse.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The extension $h$ is unique.
 
@@ -361,7 +361,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently there is a unique field automorphism
 $$
@@ -374,7 +374,7 @@ extending $g$.
 
 ::: pf-proof
 
-Existence is step <1>7 together with step <1>4, and uniqueness is step <1>8.
+Existence is step [](#s1-7){.pf-ref} together with step [](#s1-4){.pf-ref}, and uniqueness is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -382,7 +382,7 @@ Existence is step <1>7 together with step <1>4, and uniqueness is step <1>8.
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

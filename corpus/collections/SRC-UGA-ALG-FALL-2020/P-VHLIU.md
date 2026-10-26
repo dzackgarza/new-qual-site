@@ -38,7 +38,7 @@ b. Find a $3\times 3$ matrix $J$ in Jordan canonical form and an invertible matr
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The minimal polynomial of $B$ is
 \[
@@ -73,7 +73,7 @@ m_B(x)=(x+1)(x-1)^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A Jordan canonical form and an invertible conjugating matrix are
 \[
@@ -120,7 +120,7 @@ Thus $B$ is similar to the displayed Jordan matrix.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 prove parts (a) and (b), respectively.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove parts (a) and (b), respectively.
 
 :::
 

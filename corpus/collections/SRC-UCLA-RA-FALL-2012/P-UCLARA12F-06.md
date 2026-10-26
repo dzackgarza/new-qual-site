@@ -44,7 +44,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $g\in C_c(\RR)$, then
 $$
@@ -69,7 +69,7 @@ Thus the limsup is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $g\in C_c(\RR)$ and almost every $x$,
 $$
@@ -98,13 +98,13 @@ $$
 +|h(x)|.
 \end{aligned}
 $$
-Taking the limsup as $r\to0$, using step <1>1 and the definition of the maximal function, yields the inequality.
+Taking the limsup as $r\to0$, using step [](#s1-1){.pf-ref} and the definition of the maximal function, yields the inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $\lambda>0$ and every $g\in C_c(\RR)$,
 $$
@@ -116,7 +116,7 @@ $$
 
 ::: pf-proof
 
-Set $h=f-g$. By step <1>2,
+Set $h=f-g$. By step [](#s1-2){.pf-ref},
 $$
 \{Df>2\lambda\}
 \subseteq
@@ -138,7 +138,7 @@ Adding the bounds proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $\lambda>0$,
 $$
@@ -152,7 +152,7 @@ The space $C_c(\RR)$ is dense in $L^1(\RR)$. Given $\varepsilon>0$, choose $g\in
 $$
 \|f-g\|_1<\frac{\varepsilon\lambda}{4}.
 $$
-Step <1>3 then gives
+Step [](#s1-3){.pf-ref} then gives
 $$
 |\{Df>2\lambda\}|<\varepsilon.
 $$
@@ -162,7 +162,7 @@ Since $\varepsilon>0$ is arbitrary, the set has measure zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -174,7 +174,7 @@ $$
 
 ::: pf-proof
 
-For each positive rational $q$, step <1>4 shows that the set
+For each positive rational $q$, step [](#s1-4){.pf-ref} shows that the set
 $$
 \{x:Df(x)>q\}
 $$
@@ -186,7 +186,7 @@ has measure zero. Their countable union is the set where $Df(x)>0$. Hence $Df=0$
 
 ::: pf-qed
 
-Step <1>5 is exactly the required differentiation statement.
+Step [](#s1-5){.pf-ref} is exactly the required differentiation statement.
 
 :::
 

@@ -28,7 +28,7 @@ Prove
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $\rho$ with $0<\rho<r$,
 \[
@@ -63,7 +63,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -73,7 +73,7 @@ One has
 
 ::: pf-proof
 
-Step <1>1 holds for every $0<\rho<r$. Letting $\rho\uparrow r$ yields
+Step [](#s1-1){.pf-ref} holds for every $0<\rho<r$. Letting $\rho\uparrow r$ yields
 \[
 |f'(z_0)|\le\frac mr.
 \]
@@ -84,7 +84,7 @@ Step <1>1 holds for every $0<\rho<r$. Letting $\rho\uparrow r$ yields
 
 ::: pf-qed
 
-Step <1>2 is the required estimate.
+Step [](#s1-2){.pf-ref} is the required estimate.
 
 :::
 

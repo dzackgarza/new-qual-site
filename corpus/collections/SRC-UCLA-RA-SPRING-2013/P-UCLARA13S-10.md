@@ -23,7 +23,7 @@ Without using either Picard theorem, show that there exist complex numbers $z$ o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that there is $R_0>0$ such that
 \[
@@ -41,7 +41,7 @@ This is exactly the negation of the assertion that points of arbitrarily large m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose a positive real number $M$ such that
 \[
@@ -76,13 +76,13 @@ Now suppose $|z|>R_0$. If $g(z)\in[0,\infty)$, then
 \[
 f(z)=M+g(z)>0
 \]
-is a positive real number, contradicting step <1>1. Thus $g$ avoids the entire nonnegative real axis.
+is a positive real number, contradicting step [](#s1-1){.pf-ref}. Thus $g$ avoids the entire nonnegative real axis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is an injective holomorphic map
 \[
@@ -138,20 +138,20 @@ is constant.
 
 ::: pf-proof
 
-By step <1>2, $g$ takes values in the domain of $\Phi$. Hence the composition is entire. Its image lies in the unit disk, so it is bounded. Liouville's theorem therefore makes it constant.
+By step [](#s1-2){.pf-ref}, $g$ takes values in the domain of $\Phi$. Hence the composition is entire. Its image lies in the unit disk, so it is bounded. Liouville's theorem therefore makes it constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is constant.
 
 
 ::: pf-proof
 
-The map $\Phi$ is injective by step <1>3. Thus constancy of
+The map $\Phi$ is injective by step [](#s1-3){.pf-ref}. Thus constancy of
 \[
 \Phi\circ g
 \]
@@ -165,20 +165,20 @@ the function $f$ is constant as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The assumption in step <1>1 is impossible.
+The assumption in step [](#s1-1){.pf-ref} is impossible.
 
 
 ::: pf-proof
 
-Step <1>5 contradicts the hypothesis that $f$ is nonconstant.
+Step [](#s1-5){.pf-ref} contradicts the hypothesis that $f$ is nonconstant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, for every $R>0$, there exists $z\in\mathbb C$ with
 \[
@@ -192,7 +192,7 @@ such that
 
 ::: pf-proof
 
-If this failed for some $R$, step <1>1 would hold with $R_0=R$, contradicting step <1>6.
+If this failed for some $R$, step [](#s1-1){.pf-ref} would hold with $R_0=R$, contradicting step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -200,7 +200,7 @@ If this failed for some $R$, step <1>1 would hold with $R_0=R$, contradicting st
 
 ::: pf-qed
 
-Step <1>7 is the required statement.
+Step [](#s1-7){.pf-ref} is the required statement.
 
 :::
 

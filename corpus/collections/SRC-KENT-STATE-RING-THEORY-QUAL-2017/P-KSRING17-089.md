@@ -25,7 +25,7 @@ Let D be a principal ideal domain.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A least common multiple of
 $$
@@ -62,7 +62,7 @@ As usual, least common multiples are unique only up to multiplication by a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $d$ is a least common multiple of $a$ and $b$.
 Then
@@ -104,7 +104,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the same hypothesis,
 $$
@@ -149,7 +149,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence if $d$ is a least common multiple, then
 $$
@@ -159,13 +159,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, assume
 $$
@@ -205,7 +205,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -246,7 +246,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus, if
 $$
@@ -257,14 +257,14 @@ then $d$ is a least common multiple of $a$ and $b$.
 
 ::: pf-proof
 
-Step <1>5 shows that $d$ is a common multiple, and step <1>6 shows that $d$ divides every common multiple.
-These are exactly the conditions from step <1>1.
+Step [](#s1-5){.pf-ref} shows that $d$ is a common multiple, and step [](#s1-6){.pf-ref} shows that $d$ divides every common multiple.
+These are exactly the conditions from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -278,7 +278,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 proves the forward implication and step <1>7 proves the converse.
+Step [](#s1-4){.pf-ref} proves the forward implication and step [](#s1-7){.pf-ref} proves the converse.
 
 :::
 
@@ -286,7 +286,7 @@ Step <1>4 proves the forward implication and step <1>7 proves the converse.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>8 proves part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-8){.pf-ref} proves part (b).
 
 :::
 

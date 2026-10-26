@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a fixed $z\in[-1,1]$, the cross-section of the solid by the plane of that $z$ is the square
 $$
@@ -60,9 +60,9 @@ Such points exist exactly when $1-z^2\geq0$, namely for $-1\leq z\leq1$, and the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The area of the cross-section in step <1>1 is
+The area of the cross-section in step [](#s1-1){.pf-ref} is
 $$
 A(z)=4(1-z^2).
 $$
@@ -83,7 +83,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The volume is
 $$
@@ -93,7 +93,7 @@ $$
 
 ::: pf-proof
 
-By slicing perpendicular to the $z$-axis and using step <1>2,
+By slicing perpendicular to the $z$-axis and using step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 V
@@ -110,7 +110,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested volume.
+Step [](#s1-3){.pf-ref} gives the requested volume.
 
 :::
 

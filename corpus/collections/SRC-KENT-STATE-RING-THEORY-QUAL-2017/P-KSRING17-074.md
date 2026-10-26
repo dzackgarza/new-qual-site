@@ -36,7 +36,7 @@ ordered by inclusion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The poset $\mathcal P$ is nonempty.
 
@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -118,9 +118,9 @@ Thus $U$ is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The ideal $U$ from step <1>2 is not principal.
+The ideal $U$ from step [](#s1-2){.pf-ref} is not principal.
 
 
 ::: pf-proof
@@ -175,14 +175,14 @@ is non-principal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>3, the union
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, the union
 $$
 U
 $$
@@ -196,7 +196,7 @@ It contains every member of the chain, so it is an upper bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists an ideal
 $$
@@ -207,7 +207,7 @@ maximal with respect to being non-principal.
 
 ::: pf-proof
 
-By step <1>1, $\mathcal P$ is nonempty, and by step <1>4 every chain has an upper bound in $\mathcal P$.
+By step [](#s1-1){.pf-ref}, $\mathcal P$ is nonempty, and by step [](#s1-4){.pf-ref} every chain has an upper bound in $\mathcal P$.
 Zorn's lemma therefore yields a maximal element
 $$
 I\in\mathcal P.
@@ -218,7 +218,7 @@ Thus $I$ is non-principal, and every ideal properly containing $I$ is principal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 $$
@@ -258,7 +258,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 $$
@@ -286,7 +286,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 $$
@@ -301,7 +301,7 @@ is principal.
 
 ::: pf-proof
 
-The ideal $I$ is maximal among non-principal ideals by step <1>5.
+The ideal $I$ is maximal among non-principal ideals by step [](#s1-5){.pf-ref}.
 Therefore every ideal properly containing $I$ must be principal.
 Thus
 $$
@@ -316,9 +316,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Under the hypothesis of step <1>8,
+Under the hypothesis of step [](#s1-8){.pf-ref},
 $$
 J/I
 $$
@@ -360,7 +360,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Every ideal of
 $$
@@ -377,7 +377,7 @@ $$
 \trianglelefteq
 R/I.
 $$
-By step <1>6, write
+By step [](#s1-6){.pf-ref}, write
 $$
 \overline J=J/I
 $$
@@ -389,19 +389,19 @@ If
 $$
 J=I,
 $$
-step <1>7 gives a principal ideal.
+step [](#s1-7){.pf-ref} gives a principal ideal.
 If
 $$
 J\supsetneq I,
 $$
-steps <1>8--<1>9 give a principal ideal.
+steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give a principal ideal.
 Thus every ideal of the quotient is principal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -414,7 +414,7 @@ $$
 
 ::: pf-proof
 
-Step <1>10 is exactly the defining property of a principal ideal ring.
+Step [](#s1-10){.pf-ref} is exactly the defining property of a principal ideal ring.
 
 :::
 
@@ -422,7 +422,7 @@ Step <1>10 is exactly the defining property of a principal ideal ring.
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>11 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-11){.pf-ref} proves part (b).
 
 :::
 

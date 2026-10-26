@@ -55,7 +55,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 $$
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For pairwise comaximal ideals,
 $$
@@ -183,7 +183,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -216,7 +216,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since
 $$
@@ -254,7 +254,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -267,13 +267,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2--<1>4.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The canonical homomorphism
 $$
@@ -295,14 +295,14 @@ The ideals
 $$
 I_1,\ldots,I_r
 $$
-are pairwise comaximal by step <1>1.
+are pairwise comaximal by step [](#s1-1){.pf-ref}.
 The Chinese remainder theorem therefore gives surjectivity of the canonical map.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The kernel of $\Phi$ is zero.
 
@@ -315,7 +315,7 @@ $$
 =
 \bigcap_{i=1}^{r}I_i.
 $$
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 \ker\Phi=(0).
 $$
@@ -324,7 +324,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -339,7 +339,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>6--<1>7 show that
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} show that
 $$
 \Phi
 $$
@@ -349,7 +349,7 @@ is a bijective ring homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For each $i$, the quotient
 $$
@@ -417,7 +417,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The characteristic of $R_i$ divides
 $$
@@ -454,21 +454,21 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The characteristic of $R_i$ is a positive power of $p_i$.
 
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 $$
 R_i
 \ne
 0,
 $$
 so its characteristic is a positive integer greater than $1$ or possibly $1$ only for the zero ring, which has been excluded.
-By step <1>10, it divides
+By step [](#s1-10){.pf-ref}, it divides
 $$
 p_i^{e_i}.
 $$
@@ -495,20 +495,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Each factor $R_i$ is a $p_i$-ring.
 
 
 ::: pf-proof
 
-This is exactly step <1>11 together with the definition of a $p$-ring.
+This is exactly step [](#s1-11){.pf-ref} together with the definition of a $p$-ring.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 $$
@@ -522,7 +522,7 @@ $$
 
 ::: pf-proof
 
-Step <1>8 gives the finite direct-product decomposition, and step <1>12 identifies the $i$th factor as a $p_i$-ring.
+Step [](#s1-8){.pf-ref} gives the finite direct-product decomposition, and step [](#s1-12){.pf-ref} identifies the $i$th factor as a $p_i$-ring.
 The primes
 $$
 p_1,\ldots,p_r
@@ -535,7 +535,7 @@ are distinct by construction.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

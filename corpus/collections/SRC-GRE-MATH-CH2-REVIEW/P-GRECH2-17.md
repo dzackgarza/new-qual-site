@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 At $x=1$,
 $$
@@ -59,7 +59,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $x=1$,
 $$
@@ -88,7 +88,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The requested derivative is
 $$
@@ -99,7 +99,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-The quotient rule and steps <1>1--<1>2 give
+The quotient rule and steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give
 $$
 \left(\frac ND\right)'(1)
 =\frac{N'(1)D(1)-N(1)D'(1)}{D(1)^2}
@@ -113,7 +113,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested derivative value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested derivative value and corresponding choice.
 
 :::
 

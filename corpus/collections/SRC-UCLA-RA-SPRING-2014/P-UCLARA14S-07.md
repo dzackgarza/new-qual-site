@@ -25,7 +25,7 @@ Characterize all entire functions $f$ such that $|f(z)|>0$ for all sufficiently 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Such a function $f$ has only finitely many zeros in $\mathbb C$.
 
@@ -44,7 +44,7 @@ Thus every zero lies in the compact disk $|z|\le R_0$. Since $f$ is not identica
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a polynomial $p$ and an entire function $h$ such that
 \[
@@ -91,7 +91,7 @@ for an entire function $h$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There are constants $A>0$ and $R_1>0$ such that
 \[
@@ -142,7 +142,7 @@ Take $A=C+C_p'$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Write
 \[
@@ -182,7 +182,7 @@ Multiply by $e^{-ik\theta}$ and integrate term-by-term over $[0,2\pi]$. Orthogon
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -194,7 +194,7 @@ c_k=0
 
 ::: pf-proof
 
-By steps <1>3 and <1>4, for sufficiently large $R$,
+By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, for sufficiently large $R$,
 \[
 \begin{aligned}
 \pi|c_k|R^k
@@ -217,7 +217,7 @@ If $k\ge2$, letting $R\to\infty$ gives $c_k=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -234,17 +234,17 @@ with $p$ a polynomial.
 
 ::: pf-proof
 
-Step <1>5 shows that the Taylor series of $h$ has no terms of degree at least $2$. Thus
+Step [](#s1-5){.pf-ref} shows that the Taylor series of $h$ has no terms of degree at least $2$. Thus
 \[
 h(z)=c_1z+c_0.
 \]
-Rename $a=c_1$ and $b=c_0$, and substitute into the factorization from step <1>2.
+Rename $a=c_1$ and $b=c_0$, and substitute into the factorization from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Conversely, every function
 \[
@@ -287,7 +287,7 @@ for suitable constants $C_1,C_2$. Dividing by $|z|$ shows that
 
 ::: pf-qed
 
-Steps <1>1--<1>6 prove necessity, and step <1>7 proves sufficiency.
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove necessity, and step [](#s1-7){.pf-ref} proves sufficiency.
 
 :::
 

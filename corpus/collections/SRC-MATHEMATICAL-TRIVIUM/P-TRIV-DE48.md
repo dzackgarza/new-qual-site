@@ -34,7 +34,7 @@ y(0,t)=y(L,t)=0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A fixed-end solution with zero initial displacement has the expansion
 \[
@@ -56,7 +56,7 @@ Zero initial displacement removes the cosine term, leaving the displayed sine-in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its initial velocity is
 \[
@@ -67,7 +67,7 @@ y_t(x,0)=\sum_{n=1}^{\infty}B_n\frac{n\pi v}{L}
 
 ::: pf-proof
 
-Differentiate the series in step <1>1 with respect to $t$ and set $t=0$.
+Differentiate the series in step [](#s1-1){.pf-ref} with respect to $t$ and set $t=0$.
 
 :::
 
@@ -95,7 +95,7 @@ Taking $g=\delta_a$ gives $c_n=(2/L)\sin(n\pi a/L)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Matching the prescribed initial velocity gives
 \[
@@ -113,7 +113,7 @@ y_t(x,0)=Lv_0\delta(x-a)
 \sin\frac{n\pi a}{L}
 \sin\frac{n\pi x}{L}.
 \]
-Compare this with step <1>2 and solve
+Compare this with step [](#s1-2){.pf-ref} and solve
 \[
 B_n\frac{n\pi v}{L}=2v_0\sin\frac{n\pi a}{L}.
 \]
@@ -122,7 +122,7 @@ B_n\frac{n\pi v}{L}=2v_0\sin\frac{n\pi a}{L}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -137,7 +137,7 @@ y(x,t)=\frac{2Lv_0}{\pi v}
 
 ::: pf-proof
 
-Insert the coefficients from step <1>4 into step <1>1. The series satisfies the wave equation and fixed-end conditions termwise, has zero initial displacement, and step <1>4 verifies its initial velocity distributionally.
+Insert the coefficients from step [](#s1-4){.pf-ref} into step [](#s1-1){.pf-ref}. The series satisfies the wave equation and fixed-end conditions termwise, has zero initial displacement, and step [](#s1-4){.pf-ref} verifies its initial velocity distributionally.
 
 :::
 
@@ -145,7 +145,7 @@ Insert the coefficients from step <1>4 into step <1>1. The series satisfies the 
 
 ::: pf-qed
 
-Step <1>5 gives the displacement of the struck string.
+Step [](#s1-5){.pf-ref} gives the displacement of the struck string.
 
 :::
 

@@ -42,7 +42,7 @@ for the Euclidean distance and $\rho$ for the cylindrical radius.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 $$
@@ -64,7 +64,7 @@ Apply the chain rule to $-\log R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In Cartesian coordinates,
 $$
@@ -90,7 +90,7 @@ with respect to $x,y,z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the Cartesian components are
 $$
@@ -108,20 +108,20 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>2 into step <1>1.
+Substitute step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>3.
+This is step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -147,7 +147,7 @@ These are the standard cylindrical-coordinate relations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $\log(1/R)$ is independent of $\phi$, and
 $$
@@ -178,7 +178,7 @@ differentiate with respect to $\rho$ and $z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the cylindrical components are
 $$
@@ -206,20 +206,20 @@ e_\phi\frac1\rho\frac{\partial f}{\partial\phi}
 +
 e_z\frac{\partial f}{\partial z}.
 $$
-Use step <1>6 and $\partial f/\partial\phi=0$.
+Use step [](#s1-6){.pf-ref} and $\partial f/\partial\phi=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>7.
+This is step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -243,7 +243,7 @@ coordinate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 $$
@@ -264,7 +264,7 @@ $\theta$ or $\phi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence the spherical components are
 $$
@@ -282,20 +282,20 @@ $$
 
 ::: pf-proof
 
-Use the standard spherical-coordinate gradient formula and step <1>10.
+Use the standard spherical-coordinate gradient formula and step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-This is step <1>11.
+This is step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -303,7 +303,7 @@ This is step <1>11.
 
 ::: pf-qed
 
-Steps <1>4, <1>8, and <1>12 give the components in Cartesian, cylindrical,
+Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} give the components in Cartesian, cylindrical,
 and spherical coordinates.
 
 :::

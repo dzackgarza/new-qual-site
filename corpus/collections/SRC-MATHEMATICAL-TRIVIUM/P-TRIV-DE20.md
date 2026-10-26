@@ -33,7 +33,7 @@ u(\xi)=\xi^r\sum_{n=0}^{\infty}a_n\xi^n,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The indicial equation is
 \[
@@ -62,7 +62,7 @@ whose coefficient is $-m^2a_0/4$. Since $a_0\ne0$, the coefficient of $\xi^{r-1}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With $a_{-1}=a_{-2}=a_{-3}=0$, the coefficients satisfy
 \[
@@ -82,7 +82,7 @@ Substitute the Frobenius series into the differential equation and collect the c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficient of the second term is
 \[
@@ -92,7 +92,7 @@ a_1=-\frac{\alpha}{2r+1}a_0.
 
 ::: pf-proof
 
-Set $n=1$ in step <1>2. Since $r^2=m^2/4$ by step <1>1,
+Set $n=1$ in step [](#s1-2){.pf-ref}. Since $r^2=m^2/4$ by step [](#s1-1){.pf-ref},
 \[
 \bigl((r+1)^2-r^2\bigr)a_1+\alpha a_0=0.
 \]
@@ -102,7 +102,7 @@ The difference of squares is $2r+1$, which gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The coefficient of the third term is
 \[
@@ -113,17 +113,17 @@ a_2=\frac{a_0}{4(r+1)}
 
 ::: pf-proof
 
-Set $n=2$ in step <1>2 and use step <1>1:
+Set $n=2$ in step [](#s1-2){.pf-ref} and use step [](#s1-1){.pf-ref}:
 \[
 4(r+1)a_2+\alpha a_1+\frac E2a_0=0.
 \]
-Substituting $a_1$ from step <1>3 and solving for $a_2$ gives the displayed expression.
+Substituting $a_1$ from step [](#s1-3){.pf-ref} and solving for $a_2$ gives the displayed expression.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, with $r=|m|/2$, the first three terms are
 \[
@@ -140,7 +140,7 @@ u(\xi)=a_0\xi^r
 
 ::: pf-proof
 
-Insert the coefficients from steps <1>3--<1>4 into the Frobenius series. The parameter $F$ first occurs in the recurrence at $n=3$, so it does not enter the first three terms.
+Insert the coefficients from steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} into the Frobenius series. The parameter $F$ first occurs in the recurrence at $n=3$, so it does not enter the first three terms.
 
 :::
 
@@ -148,7 +148,7 @@ Insert the coefficients from steps <1>3--<1>4 into the Frobenius series. The par
 
 ::: pf-qed
 
-Step <1>5 is the requested three-term series corresponding to the largest indicial root.
+Step [](#s1-5){.pf-ref} is the requested three-term series corresponding to the largest indicial root.
 
 :::
 

@@ -32,7 +32,7 @@ The useful closure property here is that $\mathcal D$ is a Dynkin system; it nee
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has $X\in\mathcal D$.
 
@@ -49,7 +49,7 @@ so $X\in\mathcal D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $A,B\in\mathcal D$ and $A\subseteq B$, then
 $$
@@ -73,7 +73,7 @@ Hence $B\setminus A\in\mathcal D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $A_1,A_2,\ldots\in\mathcal D$ are pairwise disjoint, then
 $$
@@ -95,20 +95,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus $\mathcal D$ is a Dynkin system containing $\mathcal C$.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>3 are the Dynkin-system axioms. The inclusion $\mathcal C\subseteq\mathcal D$ is exactly the hypothesis that $\mu$ and $\nu$ agree on every member of $\mathcal C$.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} are the Dynkin-system axioms. The inclusion $\mathcal C\subseteq\mathcal D$ is exactly the hypothesis that $\mu$ and $\nu$ agree on every member of $\mathcal C$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If a Dynkin system $\mathcal L$ contains an algebra $\mathcal C$, then $\mathcal L$ contains $\sigma(\mathcal C)$.
 
@@ -161,7 +161,7 @@ Consequently every Dynkin system containing $\mathcal C$ contains $\sigma(\mathc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -171,7 +171,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4, $\mathcal D$ is a Dynkin system containing the algebra $\mathcal C$. Step <1>5 therefore gives
+By step [](#s1-4){.pf-ref}, $\mathcal D$ is a Dynkin system containing the algebra $\mathcal C$. Step [](#s1-5){.pf-ref} therefore gives
 $$
 \sigma(\mathcal C)\subseteq\mathcal D.
 $$
@@ -181,7 +181,7 @@ Since $\mathcal A=\sigma(\mathcal C)$, the claim follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -191,7 +191,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, every $A\in\mathcal A$ belongs to $\mathcal D$, whose defining property is equality of the two measures.
+By step [](#s1-6){.pf-ref}, every $A\in\mathcal A$ belongs to $\mathcal D$, whose defining property is equality of the two measures.
 
 :::
 
@@ -199,7 +199,7 @@ By step <1>6, every $A\in\mathcal A$ belongs to $\mathcal D$, whose defining pro
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

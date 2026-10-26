@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At $x=0$,
 $$
@@ -86,7 +86,7 @@ Direct substitution gives both values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -106,7 +106,7 @@ $$
 =
 f'(g(x))g'(x).
 $$
-At $x=0$, step <1>3 gives
+At $x=0$, step [](#s1-3){.pf-ref} gives
 $$
 f'(g(0))g'(0)
 =
@@ -120,7 +120,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required value.
+Step [](#s1-4){.pf-ref} is the required value.
 
 :::
 

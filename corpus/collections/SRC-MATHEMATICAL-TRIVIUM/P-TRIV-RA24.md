@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The exponential factor is even:
 $$
@@ -46,7 +46,7 @@ Both powers $x^{-4}$ and $x^4$ are even functions on $\mathbb R\setminus\{0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The factor $\sin^5x$ is odd:
 $$
@@ -62,7 +62,7 @@ Since $\sin(-x)=-\sin x$ and the exponent $5$ is odd, the identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -73,13 +73,13 @@ for every $x\neq0$.
 
 ::: pf-proof
 
-Multiply the parity statements in steps <1>1--<1>2.
+Multiply the parity statements in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The integrand extends continuously to $x=0$ by setting
 $$
@@ -106,14 +106,14 @@ the squeeze theorem gives $F(x)\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The improper integral is absolutely convergent.
 
 
 ::: pf-proof
 
-Near $0$, step <1>4 gives boundedness of the continuous extension.
+Near $0$, step [](#s1-4){.pf-ref} gives boundedness of the continuous extension.
 For $|x|\geq1$,
 $$
 |F(x)|
@@ -130,7 +130,7 @@ Thus the integral over $\mathbb R$ converges absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -144,7 +144,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>3--<1>5, $F$ is an absolutely integrable odd function on
+By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, $F$ is an absolutely integrable odd function on
 $\mathbb R$. Therefore its integral over the symmetric domain $\mathbb R$ is
 zero.
 
@@ -154,7 +154,7 @@ zero.
 
 ::: pf-qed
 
-Step <1>6 is the required value.
+Step [](#s1-6){.pf-ref} is the required value.
 
 :::
 

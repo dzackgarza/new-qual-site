@@ -62,7 +62,7 @@ An arbitrary intersection of ideals is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The canonical map
 $$
@@ -122,7 +122,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A direct product of nilpotent-free rings is nilpotent-free.
 
@@ -161,7 +161,7 @@ Therefore the product element is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The quotient
 $$
@@ -172,11 +172,11 @@ is nilpotent-free.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 R/A
 $$
-embeds as a subring of the product in step <1>3.
+embeds as a subring of the product in step [](#s1-3){.pf-ref}.
 A subring of a nilpotent-free ring is nilpotent-free:
 if an element has zero $n$th power in the subring, it has zero $n$th power in the ambient ring and hence is zero.
 Thus
@@ -189,7 +189,7 @@ is nilpotent-free.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal $A$ is contained in every ideal
 $$
@@ -215,7 +215,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -229,15 +229,15 @@ $$
 
 ::: pf-proof
 
-Step <1>4 shows that $A$ itself has the required property.
-Step <1>5 shows that every ideal with the required property contains $A$.
+Step [](#s1-4){.pf-ref} shows that $A$ itself has the required property.
+Step [](#s1-5){.pf-ref} shows that every ideal with the required property contains $A$.
 Thus $A$ is the unique smallest such ideal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For part (b), take
 $$
@@ -306,9 +306,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-For the ring in step <1>7, every proper quotient is not nilpotent-free.
+For the ring in step [](#s1-7){.pf-ref}, every proper quotient is not nilpotent-free.
 
 
 ::: pf-proof
@@ -397,7 +397,7 @@ Hence $\mathcal N$ is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The quotient
 $$
@@ -446,7 +446,7 @@ So the quotient has no nonzero nilpotents.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If
 $$
@@ -501,7 +501,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore, in the commutative case,
 $$
@@ -516,12 +516,12 @@ the nilradical of $R$.
 
 ::: pf-proof
 
-Step <1>10 shows
+Step [](#s1-10){.pf-ref} shows
 $$
 R/\mathcal N
 $$
 is nilpotent-free.
-Step <1>11 shows every ideal with nilpotent-free quotient contains
+Step [](#s1-11){.pf-ref} shows every ideal with nilpotent-free quotient contains
 $$
 \mathcal N.
 $$
@@ -534,7 +534,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 In particular, if $R$ is nonzero, there is a proper ideal with nilpotent-free quotient.
 
@@ -545,7 +545,7 @@ Take
 $$
 I=\mathcal N.
 $$
-By step <1>10 the quotient is nilpotent-free.
+By step [](#s1-10){.pf-ref} the quotient is nilpotent-free.
 Moreover,
 $$
 1\notin\mathcal N
@@ -565,7 +565,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 proves part (a), step <1>8 proves part (b), and steps <1>12--<1>13 prove part (c).
+Step [](#s1-6){.pf-ref} proves part (a), step [](#s1-8){.pf-ref} proves part (b), and steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref} prove part (c).
 
 :::
 

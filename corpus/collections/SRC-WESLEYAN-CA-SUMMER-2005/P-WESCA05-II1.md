@@ -25,7 +25,7 @@ in a Laurent series on the annulus $0<|z|<\infty$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The exponential power series gives
 \[
@@ -42,13 +42,13 @@ The exponential function is entire, and its Taylor series about \(0\) has infini
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(z\ne0\), substituting
 \[
 w=\frac1{z^2}
 \]
-into step <1>1 gives
+into step [](#s1-1){.pf-ref} gives
 \[
 e^{1/z^2}
 =
@@ -58,13 +58,13 @@ e^{1/z^2}
 
 ::: pf-proof
 
-If \(z\ne0\), then \(w=1/z^2\) is a well-defined complex number. Since the series in step <1>1 converges for every complex \(w\), this substitution is valid.
+If \(z\ne0\), then \(w=1/z^2\) is a well-defined complex number. Since the series in step [](#s1-1){.pf-ref} converges for every complex \(w\), this substitution is valid.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the Laurent expansion on \(0<|z|<\infty\) is
 \[
@@ -80,7 +80,7 @@ e^{1/z^2}
 
 ::: pf-proof
 
-Step <1>2 gives the Laurent series. Its convergence domain is exactly the punctured plane: for every \(z\ne0\), it is the convergent exponential series evaluated at \(1/z^2\), while the expression is not defined at \(z=0\).
+Step [](#s1-2){.pf-ref} gives the Laurent series. Its convergence domain is exactly the punctured plane: for every \(z\ne0\), it is the convergent exponential series evaluated at \(1/z^2\), while the expression is not defined at \(z=0\).
 
 :::
 
@@ -88,7 +88,7 @@ Step <1>2 gives the Laurent series. Its convergence domain is exactly the punctu
 
 ::: pf-qed
 
-Step <1>3 is the requested Laurent expansion on the stated annulus.
+Step [](#s1-3){.pf-ref} is the requested Laurent expansion on the stated annulus.
 
 :::
 

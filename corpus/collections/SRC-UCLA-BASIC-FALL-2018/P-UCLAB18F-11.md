@@ -27,7 +27,7 @@ defines an inner product on $V$, and exhibit an orthonormal basis.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The formula
 \[
@@ -60,7 +60,7 @@ The same argument applies in the second variable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The form is symmetric:
 \[
@@ -91,7 +91,7 @@ Using invariance of trace under transpose,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $A=(a_{ij})\in V$,
 \[
@@ -123,14 +123,14 @@ Multiply by $1/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The form is positive definite.
 
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 \langle A,A\rangle\ge0.
 \]
@@ -144,7 +144,7 @@ Thus the form is positive definite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -159,13 +159,13 @@ defines an inner product on $V$.
 
 ::: pf-proof
 
-Steps <1>1, <1>2, and <1>4 verify bilinearity, symmetry, and positive definiteness.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-4){.pf-ref} verify bilinearity, symmetry, and positive definiteness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -215,15 +215,15 @@ This representation is unique, so the three matrices form a basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The basis in step <1>6 is orthonormal.
+The basis in step [](#s1-6){.pf-ref} is orthonormal.
 
 
 ::: pf-proof
 
 Each $E_i$ has exactly two nonzero entries, namely $1$ and $-1$.
-Hence step <1>3 gives
+Hence step [](#s1-3){.pf-ref} gives
 \[
 \langle E_i,E_i\rangle
 =
@@ -248,7 +248,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus an orthonormal basis is
 \[
@@ -276,7 +276,7 @@ Thus an orthonormal basis is
 
 ::: pf-proof
 
-This follows from steps <1>6--<1>7.
+This follows from steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -284,7 +284,7 @@ This follows from steps <1>6--<1>7.
 
 ::: pf-qed
 
-Step <1>5 proves the inner-product assertion, and step <1>8 gives an explicit orthonormal basis.
+Step [](#s1-5){.pf-ref} proves the inner-product assertion, and step [](#s1-8){.pf-ref} gives an explicit orthonormal basis.
 
 :::
 

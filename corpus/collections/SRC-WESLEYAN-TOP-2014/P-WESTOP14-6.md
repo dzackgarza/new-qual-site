@@ -46,7 +46,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the first diagram all six polygon vertices are identified to one
 vertex.
@@ -97,7 +97,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives the single vertex.
+Step [](#s1-1){.pf-ref} gives the single vertex.
 Each pair of identified polygon edges gives one $1$-cell, and the polygon
 interior gives one $2$-cell.
 The attaching map is read directly from the boundary word.
@@ -106,7 +106,7 @@ The attaching map is read directly from the boundary word.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The fundamental group of $X_1$ is
 $$
@@ -134,7 +134,7 @@ relation represented by its attaching word.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The cellular chain complex of $X_1$ is
 $$
@@ -194,7 +194,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -242,7 +242,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The space $X_1$ is a closed $2$-manifold; in fact it is the
 nonorientable surface of genus $3$.
@@ -290,7 +290,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In the second diagram the six vertices form exactly two quotient
 vertices:
@@ -317,7 +317,7 @@ as displayed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Orient the quotient edges so that
 $$
@@ -396,7 +396,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The homology of $X_2$ is
 $$
@@ -470,7 +470,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Collapsing the edge $a$ in the $1$-skeleton gives
 $$
@@ -524,7 +524,7 @@ renaming generators.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The space $X_2$ is a closed $2$-manifold; in fact it is the Klein
 bottle.
@@ -562,7 +562,7 @@ namely the Klein bottle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 In the third diagram the six vertices again form two quotient
 vertices
@@ -592,7 +592,7 @@ vertex classes displayed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The cellular chain complex for $X_3$ has
 $$
@@ -667,7 +667,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The homology of $X_3$ is
 $$
@@ -710,7 +710,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The fundamental group of $X_3$ is trivial.
 
@@ -748,7 +748,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The space $X_3$ is not a $2$-manifold.
 
@@ -780,7 +780,7 @@ is not locally Euclidean there.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore the complete answers are
 $$
@@ -818,7 +818,7 @@ groups.
 
 ::: pf-proof
 
-This summarizes steps <1>3--<1>16.
+This summarizes steps [](#s1-3){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
@@ -826,7 +826,7 @@ This summarizes steps <1>3--<1>16.
 
 ::: pf-qed
 
-Step <1>17 answers all three requested questions for all three quotient
+Step [](#s1-17){.pf-ref} answers all three requested questions for all three quotient
 spaces.
 
 :::

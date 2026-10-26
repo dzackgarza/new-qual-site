@@ -28,7 +28,7 @@ is nearly uniform convergence**.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In words:
 
@@ -46,7 +46,7 @@ precise forms of Littlewood's principles.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Precisely, let
 \[
@@ -138,7 +138,7 @@ quantifiers displayed.
 
 ::: pf-qed
 
-Step <1>1 gives the requested verbal form and step <1>2 gives the precise
+Step [](#s1-1){.pf-ref} gives the requested verbal form and step [](#s1-2){.pf-ref} gives the precise
 mathematical formulation.
 
 :::

@@ -23,7 +23,7 @@ Hint: consider $u_x-iu_y$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 \[
@@ -63,14 +63,14 @@ which holds because $u\in C^2(D)$. Hence $g$ is analytic on $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $g$ has an analytic primitive $F$ on $D$.
 
 
 ::: pf-proof
 
-By step <1>1, $g$ is analytic. Since $D$ is simply connected, the standard
+By step [](#s1-1){.pf-ref}, $g$ is analytic. Since $D$ is simply connected, the standard
 primitive theorem for holomorphic functions on simply connected domains gives
 an analytic function $F$ on $D$ such that
 \[
@@ -81,7 +81,7 @@ F'=g.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $F=U+iV$, then $U-u$ is constant on $D$.
 
@@ -92,7 +92,7 @@ Since $F$ is analytic,
 \[
 F'=U_x+iV_x.
 \]
-Together with step <1>2 and the definition of $g$, this gives
+Together with step [](#s1-2){.pf-ref} and the definition of $g$, this gives
 \[
 U_x=u_x,
 \qquad
@@ -114,14 +114,14 @@ Because $D$ is a domain and therefore connected, $U-u$ is constant on $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $u$ has a harmonic conjugate on $D$.
 
 
 ::: pf-proof
 
-By step <1>3, there is a real constant $c$ such that $U=u+c$. Define
+By step [](#s1-3){.pf-ref}, there is a real constant $c$ such that $U=u+c$. Define
 \[
 v=V.
 \]
@@ -138,7 +138,7 @@ particular, as the imaginary part of an analytic function, $v$ is harmonic.
 
 ::: pf-qed
 
-Step <1>4 proves the required existence of a harmonic conjugate.
+Step [](#s1-4){.pf-ref} proves the required existence of a harmonic conjugate.
 
 :::
 

@@ -49,7 +49,7 @@ be the all-ones matrix.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $M$ can be written as
 \[
@@ -70,7 +70,7 @@ and off-diagonal entries $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -86,7 +86,7 @@ Every row of $J$ consists of $n$ ones, so every coordinate of $J\mathbf1$ equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -120,7 +120,7 @@ Therefore $Jv=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vector $\mathbf1$ is an eigenvector of $M$ with eigenvalue
 \[
@@ -130,7 +130,7 @@ The vector $\mathbf1$ is an eigenvector of $M$ with eigenvalue
 
 ::: pf-proof
 
-Using steps <1>1--<1>2,
+Using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 M\mathbf1
@@ -147,7 +147,7 @@ M\mathbf1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every vector in $\mathbf1^\perp$ is an eigenvector of $M$ with eigenvalue
 \[
@@ -157,7 +157,7 @@ Every vector in $\mathbf1^\perp$ is an eigenvector of $M$ with eigenvalue
 
 ::: pf-proof
 
-If $v\in\mathbf1^\perp$, then by steps <1>1 and <1>3,
+If $v\in\mathbf1^\perp$, then by steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 Mv
 =(k-1)v+Jv
@@ -168,7 +168,7 @@ Mv
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The eigenvalues of $M$ are
 \[
@@ -191,15 +191,15 @@ The space decomposes orthogonally as
 \oplus
 \mathbf1^\perp.
 \]
-The first summand has dimension $1$ and carries the eigenvalue from step <1>4.
-The second has dimension $n-1$ and carries the eigenvalue from step <1>5.
+The first summand has dimension $1$ and carries the eigenvalue from step [](#s1-4){.pf-ref}.
+The second has dimension $n-1$ and carries the eigenvalue from step [](#s1-5){.pf-ref}.
 Together these account for all $n$ dimensions.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -213,7 +213,7 @@ Therefore
 ::: pf-proof
 
 The determinant of a matrix is the product of its eigenvalues counted with algebraic multiplicity.
-Apply step <1>6.
+Apply step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -221,7 +221,7 @@ Apply step <1>6.
 
 ::: pf-qed
 
-Steps <1>6--<1>7 give the requested spectrum and determinant.
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give the requested spectrum and determinant.
 
 :::
 

@@ -55,7 +55,7 @@ Differentiate each coordinate with respect to $t$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The speed is constant:
 $$
@@ -87,7 +87,7 @@ Taking the positive square root gives the speed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The arc length from parameter $0$ to parameter $\phi$ is
 $$
@@ -107,7 +107,7 @@ This is the standard arc-length formula for a parametrized curve.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -121,7 +121,7 @@ $$
 
 ::: pf-proof
 
-Substitute the constant speed from step <1>2 into step <1>3:
+Substitute the constant speed from step [](#s1-2){.pf-ref} into step [](#s1-3){.pf-ref}:
 $$
 L(\phi)
 =
@@ -137,7 +137,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 is the required length function.
+Step [](#s1-4){.pf-ref} is the required length function.
 
 :::
 

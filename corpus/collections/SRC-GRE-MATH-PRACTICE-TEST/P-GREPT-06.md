@@ -27,7 +27,7 @@ At how many points does the graph of the curve $y = x^5 + x^3 + x - 2000$ cross 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial
 $$
@@ -52,7 +52,7 @@ By the intermediate value theorem, $p(c)=0$ for some $c\in(4,5)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $p$ is strictly increasing on $\mathbb R$.
 
@@ -70,7 +70,7 @@ $x$. Hence $p$ is strictly increasing on $\mathbb R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the graph crosses the $x$-axis at exactly
 $$
@@ -81,9 +81,9 @@ point, so the answer is (A).
 
 ::: pf-proof
 
-Step <1>1 gives at least one real zero. By step <1>2, a strictly increasing
+Step [](#s1-1){.pf-ref} gives at least one real zero. By step [](#s1-2){.pf-ref}, a strictly increasing
 function cannot take the value $0$ at two distinct real numbers. Thus the zero
-from step <1>1 is unique.
+from step [](#s1-1){.pf-ref} is unique.
 
 :::
 
@@ -91,7 +91,7 @@ from step <1>1 is unique.
 
 ::: pf-qed
 
-Step <1>3 gives the requested number of crossings.
+Step [](#s1-3){.pf-ref} gives the requested number of crossings.
 
 :::
 

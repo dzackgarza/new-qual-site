@@ -32,7 +32,7 @@ Let $F,G:\mathbb R^n\to\mathbb R^n$ be linear operators, with
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $FG=GF$, then for every integer $n\ge0$,
 \[
@@ -53,7 +53,7 @@ The ordinary inductive proof applies because $F$ and $G$ commute, hence every po
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The exponential series
 \[
@@ -87,7 +87,7 @@ The same argument applies to $G$ and $F+G$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $FG=GF$, then
 \[
@@ -101,7 +101,7 @@ If $FG=GF$, then
 
 ::: pf-proof
 
-By step <1>2, both exponential series converge absolutely.
+By step [](#s1-2){.pf-ref}, both exponential series converge absolutely.
 Therefore their product may be computed by the Cauchy product:
 \[
 \begin{aligned}
@@ -124,7 +124,7 @@ Therefore their product may be computed by the Cauchy product:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $FG=GF$, then
 \[
@@ -134,7 +134,7 @@ If $FG=GF$, then
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 \exp(F+G)
@@ -149,13 +149,13 @@ By step <1>1,
 \frac{F^kG^{n-k}}{k!(n-k)!}.
 \end{aligned}
 \]
-This is exactly the expression from step <1>3.
+This is exactly the expression from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part 2, take
 \[
@@ -199,7 +199,7 @@ Thus they do not commute.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since
 \[
@@ -241,7 +241,7 @@ Multiplying yields the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -289,9 +289,9 @@ which is the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-The matrices in steps <1>6 and <1>7 are unequal.
+The matrices in steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} are unequal.
 
 
 ::: pf-proof
@@ -324,7 +324,7 @@ Hence
 
 ::: pf-qed
 
-Step <1>4 proves part 1, and steps <1>5--<1>8 give the requested noncommuting counterexample for part 2.
+Step [](#s1-4){.pf-ref} proves part 1, and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the requested noncommuting counterexample for part 2.
 
 :::
 

@@ -43,7 +43,7 @@ T_4=\text{normal }T_1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The excluded-point real line is compact.
 
@@ -84,7 +84,7 @@ is already a finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The excluded-point real line is
 \[
@@ -131,7 +131,7 @@ open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, for the excluded-point topology,
 \[
@@ -145,13 +145,13 @@ Therefore, for the excluded-point topology,
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The included-point real line is not compact.
 
@@ -190,7 +190,7 @@ Hence the space is not compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The included-point real line is
 \[
@@ -235,7 +235,7 @@ $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore, for the included-point topology,
 \[
@@ -249,13 +249,13 @@ Therefore, for the included-point topology,
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The lower-limit line
 \[
@@ -293,7 +293,7 @@ is Hausdorff, hence $T_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The lower-limit line is normal.
 
@@ -405,7 +405,7 @@ is normal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -419,7 +419,7 @@ T_4.
 
 ::: pf-proof
 
-By step <1>7 it is $T_1$, and by step <1>8 it is normal.
+By step [](#s1-7){.pf-ref} it is $T_1$, and by step [](#s1-8){.pf-ref} it is normal.
 Thus it is $T_4$.
 In fact, the Sorgenfrey line is perfectly normal, but $T_4$ is the highest
 level requested in the standard finite hierarchy.
@@ -428,7 +428,7 @@ level requested in the standard finite hierarchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The lower-limit line is not compact.
 
@@ -457,7 +457,7 @@ Thus no finite subcover exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore, for the lower-limit line,
 \[
@@ -471,13 +471,13 @@ Therefore, for the lower-limit line,
 
 ::: pf-proof
 
-Combine steps <1>9--<1>10.
+Combine steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The subspace
 \[
@@ -511,7 +511,7 @@ are open in the lower-limit topology, so the complement is open.
 
 A closed subspace of a normal space is normal.
 Also the $T_1$ property is hereditary to subspaces.
-By steps <1>7--<1>8,
+By steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref},
 \[
 \mathbb R_\ell
 \]
@@ -526,7 +526,7 @@ is $T_4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The subspace
 \[
@@ -603,7 +603,7 @@ Thus there is no finite subcover.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore, for
 \[
@@ -620,13 +620,13 @@ Therefore, for
 
 ::: pf-proof
 
-Combine steps <1>12--<1>13.
+Combine steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The complete table is
 \[
@@ -655,7 +655,7 @@ The complete table is
 
 ::: pf-proof
 
-Collect steps <1>3, <1>6, <1>11, and <1>14.
+Collect steps [](#s1-3){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-11){.pf-ref}, and [](#s1-14){.pf-ref}.
 
 :::
 
@@ -663,7 +663,7 @@ Collect steps <1>3, <1>6, <1>11, and <1>14.
 
 ::: pf-qed
 
-Step <1>15 gives all requested classifications.
+Step [](#s1-15){.pf-ref} gives all requested classifications.
 
 :::
 

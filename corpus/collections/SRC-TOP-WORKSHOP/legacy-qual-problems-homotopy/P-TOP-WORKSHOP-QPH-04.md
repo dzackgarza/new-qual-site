@@ -33,7 +33,7 @@ for the open unit disk.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -87,7 +87,7 @@ f(x)\in\mathring D^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -103,13 +103,13 @@ The inverse
 \[
 f^{-1}:D^2\to D^2
 \]
-is also a homeomorphism. Apply step <1>1 to $f^{-1}$.
+is also a homeomorphism. Apply step [](#s1-1){.pf-ref} to $f^{-1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -121,11 +121,11 @@ f(\mathring D^2)
 
 ::: pf-proof
 
-Step <1>1 gives one inclusion. For the reverse inclusion, let
+Step [](#s1-1){.pf-ref} gives one inclusion. For the reverse inclusion, let
 \[
 y\in\mathring D^2.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 f^{-1}(y)\in\mathring D^2.
 \]
@@ -142,7 +142,7 @@ f(\mathring D^2).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -164,7 +164,7 @@ Using
 \[
 f(D^2)=D^2
 \]
-and step <1>3,
+and step [](#s1-3){.pf-ref},
 \[
 f(\partial D^2)
 =
@@ -179,7 +179,7 @@ D^2\setminus\mathring D^2
 
 ::: pf-qed
 
-Step <1>4 implies in particular that every
+Step [](#s1-4){.pf-ref} implies in particular that every
 \[
 x\in\partial D^2
 \]

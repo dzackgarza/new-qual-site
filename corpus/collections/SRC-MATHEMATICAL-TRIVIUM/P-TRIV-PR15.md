@@ -23,7 +23,7 @@ Assume the stated moments are finite.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The moment equalities imply
 \[
@@ -64,7 +64,7 @@ Both factors $\xi^2$ and $(\xi-1)^2$ are squares, so their product is nonnegativ
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -79,13 +79,13 @@ A nonnegative random variable with expectation zero must vanish almost surely. I
 \[
 \mathbf EZ\geq\frac1nP(Z\geq1/n)>0,
 \]
-contradicting step <1>1.
+contradicting step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -95,7 +95,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \xi^2(\xi-1)^2=0
 \]
@@ -107,7 +107,7 @@ almost surely. A real number $r$ satisfies $r^2(r-1)^2=0$ exactly when $r=0$ or 
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion. The argument in fact does not require discreteness.
+Step [](#s1-4){.pf-ref} is the required conclusion. The argument in fact does not require discreteness.
 
 :::
 

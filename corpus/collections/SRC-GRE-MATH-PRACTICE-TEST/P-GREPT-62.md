@@ -29,7 +29,7 @@ Define $f=\mathbf 1_{\QQ}$, the characteristic function of the rational numbers.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is bounded and Lebesgue integrable on $\RR$.
 
@@ -48,7 +48,7 @@ Hence $f$ is Lebesgue integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is discontinuous at every point of $\RR$.
 
@@ -64,21 +64,21 @@ at $x$. Since $x$ was arbitrary, $f$ is nowhere continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ is nondifferentiable at every point of $\RR$.
 
 
 ::: pf-proof
 
-Differentiability at a point implies continuity at that point. Step <1>2
+Differentiability at a point implies continuity at that point. Step [](#s1-2){.pf-ref}
 shows that $f$ is continuous nowhere, so it is differentiable nowhere.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (A) is false.
 
@@ -94,31 +94,31 @@ even on $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Statements (B), (C), and (D) are false.
 
 
 ::: pf-proof
 
-By step <1>3, $f$ is nondifferentiable on all of $\RR$. Therefore any
+By step [](#s1-3){.pf-ref}, $f$ is nondifferentiable on all of $\RR$. Therefore any
 countably infinite subset of $\RR$ contradicts (B), while the uncountable
-set $E=\RR$ contradicts (C). By step <1>2, the same set $E=\RR$
+set $E=\RR$ contradicts (C). By step [](#s1-2){.pf-ref}, the same set $E=\RR$
 contradicts (D).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The correct answer is $\boxed{\text{(E) None of the above}}$.
 
 
 ::: pf-proof
 
-Step <1>1 supplies a function satisfying the hypotheses, while steps
-<1>4 and <1>5 show that none of statements (A)--(D) must hold.
+Step [](#s1-1){.pf-ref} supplies a function satisfying the hypotheses, while steps
+[](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} show that none of statements (A)--(D) must hold.
 
 :::
 
@@ -126,7 +126,7 @@ Step <1>1 supplies a function satisfying the hypotheses, while steps
 
 ::: pf-qed
 
-Step <1>6 gives the required choice.
+Step [](#s1-6){.pf-ref} gives the required choice.
 
 :::
 

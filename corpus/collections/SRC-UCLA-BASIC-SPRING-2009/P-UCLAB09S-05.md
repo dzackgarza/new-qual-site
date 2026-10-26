@@ -31,7 +31,7 @@ x(t)=e^{At}x(0).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial of $A$ is
 \[
@@ -71,7 +71,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenspace for eigenvalue $0$ is one-dimensional.
 
@@ -116,7 +116,7 @@ which has dimension $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The minimal polynomial of $A$ is
 \[
@@ -126,7 +126,7 @@ The minimal polynomial of $A$ is
 
 ::: pf-proof
 
-By step <1>1, the characteristic polynomial is
+By step [](#s1-1){.pf-ref}, the characteristic polynomial is
 \[
 \lambda^2(\lambda-4).
 \]
@@ -138,7 +138,7 @@ Thus the only possibilities are
 \lambda^2(\lambda-4).
 \]
 If the first polynomial were the minimal polynomial, it would have distinct roots, and $A$ would be diagonalizable.
-But step <1>2 shows that eigenvalue $0$ has algebraic multiplicity $2$ and geometric multiplicity $1$, so $A$ is not diagonalizable.
+But step [](#s1-2){.pf-ref} shows that eigenvalue $0$ has algebraic multiplicity $2$ and geometric multiplicity $1$, so $A$ is not diagonalizable.
 Therefore the repeated factor $\lambda^2$ is necessary.
 
 :::
@@ -157,7 +157,7 @@ I+b(t)A+c(t)A^2.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 A^2(A-4I)=0,
 \]
@@ -236,7 +236,7 @@ c(t)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The square of $A$ is
 \[
@@ -268,7 +268,7 @@ by itself gives the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -294,7 +294,7 @@ c(t)
 =
 \frac{e^{4t}-1-4t}{16}.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 A^2(A-4I)=0,
 \]
@@ -348,13 +348,13 @@ one has
 \[
 E(t)=e^{At}.
 \]
-Using step <1>6 gives a fully explicit matrix.
+Using step [](#s1-6){.pf-ref} gives a fully explicit matrix.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Explicitly, with
 \[
@@ -376,7 +376,7 @@ t+3c&c&1+t+6c
 
 ::: pf-proof
 
-Substitute the matrices $A$ and $A^2$ into the formula in step <1>7 and add the entries.
+Substitute the matrices $A$ and $A^2$ into the formula in step [](#s1-7){.pf-ref} and add the entries.
 
 :::
 
@@ -384,7 +384,7 @@ Substitute the matrices $A$ and $A^2$ into the formula in step <1>7 and add the 
 
 ::: pf-qed
 
-Step <1>8 is the requested matrix exponential.
+Step [](#s1-8){.pf-ref} is the requested matrix exponential.
 
 :::
 

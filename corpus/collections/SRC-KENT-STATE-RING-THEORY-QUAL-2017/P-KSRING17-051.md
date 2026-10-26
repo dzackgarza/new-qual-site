@@ -27,7 +27,7 @@ and that $P$ is maximal among ideals with this property.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ideal $P$ is proper.
 
@@ -59,7 +59,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 $$
@@ -100,7 +100,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If also
 $$
@@ -115,13 +115,13 @@ meets $S$.
 
 ::: pf-proof
 
-This is the same argument as in step <1>2, with $b$ in place of $a$.
+This is the same argument as in step [](#s1-2){.pf-ref}, with $b$ in place of $a$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the assumptions
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-Existence of $s$ and $t$ follows from steps <1>2--<1>3.
+Existence of $s$ and $t$ follows from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 Membership in
 $$
 P+(a)
@@ -170,7 +170,7 @@ gives the displayed decompositions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The product
 $$
@@ -181,7 +181,7 @@ belongs to $P$.
 
 ::: pf-proof
 
-Using the expressions from step <1>4,
+Using the expressions from step [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
 st
@@ -222,7 +222,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The product
 $$
@@ -233,7 +233,7 @@ also belongs to $S$.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 s,t\in S.
 $$
@@ -246,7 +246,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore it is impossible to have
 $$
@@ -262,7 +262,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>5--<1>6 give
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give
 $$
 st\in P\cap S,
 $$
@@ -275,7 +275,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -285,7 +285,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows $P$ is proper. Step <1>7 shows
+Step [](#s1-1){.pf-ref} shows $P$ is proper. Step [](#s1-7){.pf-ref} shows
 $$
 ab\in P
 \implies
@@ -301,7 +301,7 @@ These are exactly the defining conditions for a prime ideal.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

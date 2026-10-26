@@ -29,7 +29,7 @@ For $f\in L^1(\mu)$, show that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The conclusion holds whenever $f$ is a trigonometric polynomial on the unit circle.
 
@@ -52,7 +52,7 @@ For each fixed $m$, one has $n+m\to\infty$ as $n\to\infty$. By hypothesis each t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Trigonometric polynomials are dense in $L^1(\mu)$.
 
@@ -65,7 +65,7 @@ Since the unit circle is a compact metric space and $\mu$ is a finite Borel meas
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $f\in L^1(\mu)$,
 $$
@@ -77,11 +77,11 @@ $$
 
 ::: pf-proof
 
-Let $\varepsilon>0$. By step <1>2, choose a trigonometric polynomial $P$ such that
+Let $\varepsilon>0$. By step [](#s1-2){.pf-ref}, choose a trigonometric polynomial $P$ such that
 $$
 \|f-P\|_{L^1(\mu)}<\varepsilon.
 $$
-By step <1>1, for all sufficiently large $n$,
+By step [](#s1-1){.pf-ref}, for all sufficiently large $n$,
 $$
 \left|\int z^nP\,d\mu\right|<\varepsilon.
 $$
@@ -105,7 +105,7 @@ Because $\varepsilon>0$ is arbitrary, the integral tends to $0$.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

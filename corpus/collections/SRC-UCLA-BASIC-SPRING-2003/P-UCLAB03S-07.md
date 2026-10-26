@@ -29,7 +29,7 @@ W_1^0\cap W_2^0=(W_1+W_2)^0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -61,7 +61,7 @@ f\in(W_1+W_2)^0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -89,7 +89,7 @@ so \(f\in W_1^0\cap W_2^0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -99,7 +99,7 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 prove the two inclusions.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove the two inclusions.
 
 :::
 
@@ -107,7 +107,7 @@ Steps <1>1 and <1>2 prove the two inclusions.
 
 ::: pf-qed
 
-Step <1>3 is the required equality.
+Step [](#s1-3){.pf-ref} is the required equality.
 
 :::
 

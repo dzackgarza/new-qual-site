@@ -23,7 +23,7 @@ In fact, the stronger topological statement holds: for $n>0$, $\mathbb{CP}^n$ is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that
 \[
@@ -43,7 +43,7 @@ A product decomposition of complex manifolds is in particular a diffeomorphism o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -68,7 +68,7 @@ The left side is zero because $X\times Y\cong\mathbb{CP}^n$. Hence both summands
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In degree two, Kunneth gives
 \[
@@ -85,13 +85,13 @@ H^2(X)\otimes H^0(Y),\quad
 H^1(X)\otimes H^1(Y),\quad
 H^0(X)\otimes H^2(Y),
 \]
-together with the corresponding Tor terms. Connectedness gives $H^0\cong\mathbb Z$, and step <1>2 kills the degree-one contributions and their Tor terms. Since the product cohomology in degree two is the torsion-free group $\mathbb Z$, the displayed direct-sum identification follows.
+together with the corresponding Tor terms. Connectedness gives $H^0\cong\mathbb Z$, and step [](#s1-2){.pf-ref} kills the degree-one contributions and their Tor terms. Since the product cohomology in degree two is the torsion-free group $\mathbb Z$, the displayed direct-sum identification follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Both groups
 \[
@@ -120,9 +120,9 @@ for dimensional reasons, and since $s<n$ this would force $h^n=0$, a contradicti
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Step <1>3 is impossible because
+Step [](#s1-3){.pf-ref} is impossible because
 \[
 H^2(\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z
 \]
@@ -131,13 +131,13 @@ has rank one, whereas the right-hand side contains two nonzero free summands.
 
 ::: pf-proof
 
-The direct sum in step <1>3 is isomorphic to the torsion-free group $\mathbb Z$, so each summand is torsion-free. By step <1>4 both are nonzero; hence each has rank at least one and their direct sum has rank at least two. This contradicts the rank-one left-hand side.
+The direct sum in step [](#s1-3){.pf-ref} is isomorphic to the torsion-free group $\mathbb Z$, so each summand is torsion-free. By step [](#s1-4){.pf-ref} both are nonzero; hence each has rank at least one and their direct sum has rank at least two. This contradicts the rank-one left-hand side.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore no such nontrivial product decomposition exists:
 \[
@@ -149,7 +149,7 @@ Therefore no such nontrivial product decomposition exists:
 
 ::: pf-proof
 
-The contradiction in step <1>5 disproves the assumption in step <1>1.
+The contradiction in step [](#s1-5){.pf-ref} disproves the assumption in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -157,7 +157,7 @@ The contradiction in step <1>5 disproves the assumption in step <1>1.
 
 ::: pf-qed
 
-Step <1>6 is the required indecomposability statement.
+Step [](#s1-6){.pf-ref} is the required indecomposability statement.
 
 :::
 

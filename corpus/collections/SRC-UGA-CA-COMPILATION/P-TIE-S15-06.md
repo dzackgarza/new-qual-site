@@ -34,7 +34,7 @@ Thus the singularity moduli are $0$ and $1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the annulus
 $$
@@ -77,13 +77,13 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The annulus
 $$
 0<\abs{z}<1
 $$
-is maximal for the Laurent series in step <1>1.
+is maximal for the Laurent series in step [](#s1-1){.pf-ref}.
 
 
 ::: pf-proof
@@ -94,7 +94,7 @@ The function has a singularity at $z=0$, so the inner radius cannot be reduced b
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the annulus
 $$
@@ -133,13 +133,13 @@ Adding $1/z$ gives the displayed Laurent expansion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The annulus
 $$
 \abs{z}>1
 $$
-is maximal for the Laurent series in step <1>3.
+is maximal for the Laurent series in step [](#s1-3){.pf-ref}.
 
 
 ::: pf-proof
@@ -150,14 +150,14 @@ The singularities $z=\pm1$ lie on the circle $\abs{z}=1$, so the inner radius ca
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 These are all Laurent expansions of $f$ about $0$ on maximal annuli.
 
 
 ::: pf-proof
 
-A Laurent expansion about $0$ is determined on each connected annular component obtained by removing the singularity circles centered at $0$. The only singularity radii are $0$ and $1$, so the only maximal annuli are exactly those in steps <1>2 and <1>4.
+A Laurent expansion about $0$ is determined on each connected annular component obtained by removing the singularity circles centered at $0$. The only singularity radii are $0$ and $1$, so the only maximal annuli are exactly those in steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -165,7 +165,7 @@ A Laurent expansion about $0$ is determined on each connected annular component 
 
 ::: pf-qed
 
-Steps <1>1--<1>5 give both Laurent series and their largest annuli of validity.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give both Laurent series and their largest annuli of validity.
 
 :::
 

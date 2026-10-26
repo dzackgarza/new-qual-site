@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $a\in A$,
 $$
@@ -61,7 +61,7 @@ where in the second product we reindex by $c=b-a$. This proves part (i).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -86,7 +86,7 @@ while $f_A(Y)$ has $X$-degree $0$. Therefore $\deg_X h\leq q-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every element $a\in A$ is a root of $h(X)$.
 
@@ -97,7 +97,7 @@ Because $0\in A$, one has
 $$
 f_A(a)=0
 $$
-for every $a\in A$. By step <1>1, applied with the indeterminate $Y$ in place of $X$,
+for every $a\in A$. By step [](#s1-1){.pf-ref}, applied with the indeterminate $Y$ in place of $X$,
 $$
 f_A(Y+a)=f_A(Y).
 $$
@@ -115,7 +115,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -126,13 +126,13 @@ in $F[Y][X]$.
 
 ::: pf-proof
 
-The coefficient ring $F[Y]$ is an integral domain. A nonzero polynomial of degree at most $q-1$ over an integral domain has at most $q-1$ distinct roots in that domain. By step <1>3, the polynomial $h$ has the $q$ distinct roots given by the elements of $A\subseteq F\subseteq F[Y]$. Together with the degree bound in step <1>2, this forces $h=0$.
+The coefficient ring $F[Y]$ is an integral domain. A nonzero polynomial of degree at most $q-1$ over an integral domain has at most $q-1$ distinct roots in that domain. By step [](#s1-3){.pf-ref}, the polynomial $h$ has the $q$ distinct roots given by the elements of $A\subseteq F\subseteq F[Y]$. Together with the degree bound in step [](#s1-2){.pf-ref}, this forces $h=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -143,7 +143,7 @@ in $F[X,Y]$.
 
 ::: pf-proof
 
-Step <1>4 says precisely that
+Step [](#s1-4){.pf-ref} says precisely that
 $$
 -f_A(X+Y)+f_A(X)+f_A(Y)=0.
 $$
@@ -155,7 +155,7 @@ Rearranging gives the asserted identity, proving part (ii).
 
 ::: pf-qed
 
-Step <1>1 proves part (i), and step <1>5 proves part (ii).
+Step [](#s1-1){.pf-ref} proves part (i), and step [](#s1-5){.pf-ref} proves part (ii).
 
 :::
 

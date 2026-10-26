@@ -28,7 +28,7 @@ Find the volume of the solid in the first octant of $xyz$-space, bounded below b
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The base of the solid is the quarter unit disk
 $$
@@ -44,7 +44,7 @@ The solid lies in the first octant, so its projection to the $xy$-plane has $x\g
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The volume is
 $$
@@ -59,7 +59,7 @@ The height above $(x,y)\in R$ is $z=8xy$. With
 $$
 x=r\cos\theta,\qquad y=r\sin\theta,\qquad dA=r\,dr\,d\theta,
 $$
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 $$
 V
 =\iint_R8xy\,dA
@@ -81,7 +81,7 @@ $$
 
 ::: pf-qed
 
-Step <1>2 gives the requested volume and corresponding choice.
+Step [](#s1-2){.pf-ref} gives the requested volume and corresponding choice.
 
 :::
 

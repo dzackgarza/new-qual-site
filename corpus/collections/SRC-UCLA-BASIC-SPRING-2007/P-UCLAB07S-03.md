@@ -46,7 +46,7 @@ n\ge0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The zero sequence belongs to $W$.
 
@@ -71,7 +71,7 @@ Ax_{n+1}+Bx_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $W$ is closed under addition.
 
@@ -122,7 +122,7 @@ x+y\in W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $W$ is closed under scalar multiplication.
 
@@ -164,20 +164,20 @@ cx\in W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore $W$ is a linear subspace of $\mathcal S$.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>3 verify that $W$ contains zero and is closed under addition and scalar multiplication.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify that $W$ contains zero and is closed under addition and scalar multiplication.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -207,7 +207,7 @@ c\Phi(x)+d\Phi(y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The map $\Phi$ is injective.
 
@@ -257,7 +257,7 @@ x=y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map $\Phi$ is surjective.
 
@@ -298,7 +298,7 @@ Hence every element of $\mathbb R^2$ lies in the image.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -308,14 +308,14 @@ W\cong\mathbb R^2.
 
 ::: pf-proof
 
-By steps <1>5--<1>7, $\Phi$ is a linear bijection.
+By steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref}, $\Phi$ is a linear bijection.
 Hence it is a vector-space isomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently
 \[
@@ -330,7 +330,7 @@ Since
 \[
 \dim\mathbb R^2=2,
 \]
-step <1>8 gives
+step [](#s1-8){.pf-ref} gives
 \[
 \dim W=2.
 \]
@@ -341,7 +341,7 @@ step <1>8 gives
 
 ::: pf-qed
 
-Step <1>4 proves that the recurrence solutions form a linear subspace of $\mathcal S$, and step <1>9 proves that this subspace is two-dimensional.
+Step [](#s1-4){.pf-ref} proves that the recurrence solutions form a linear subspace of $\mathcal S$, and step [](#s1-9){.pf-ref} proves that this subspace is two-dimensional.
 
 :::
 

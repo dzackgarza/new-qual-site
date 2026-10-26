@@ -27,7 +27,7 @@ If the matrix $A = \begin{pmatrix} t & 1-t \\ 1 & 2t \end{pmatrix}$ has $1$ as a
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $1$ is an eigenvalue,
 $$
@@ -44,9 +44,9 @@ Applying this with $\lambda=1$ gives the stated determinant equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The condition in step <1>1 forces
+The condition in step [](#s1-1){.pf-ref} forces
 $$
 t=0
 \qquad\text{or}\qquad
@@ -78,7 +78,7 @@ Thus $t=0$ or $t=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $t=0$, the other eigenvalue is $-1$; if $t=1$, the other
 eigenvalue is $2$.
@@ -88,13 +88,13 @@ eigenvalue is $2$.
 
 For a $2\times2$ matrix, the sum of the two eigenvalues equals the trace.
 Here $\operatorname{tr}(A)=3t$. Since one eigenvalue is $1$, the other is
-$3t-1$. Substituting the two values from step <1>2 gives $-1$ and $2$.
+$3t-1$. Substituting the two values from step [](#s1-2){.pf-ref} gives $-1$ and $2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore another eigenvalue could be
 $$
@@ -105,7 +105,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>3 lists all possible second eigenvalues, and among the choices only
+Step [](#s1-3){.pf-ref} lists all possible second eigenvalues, and among the choices only
 $2$ occurs.
 
 :::
@@ -114,7 +114,7 @@ $2$ occurs.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

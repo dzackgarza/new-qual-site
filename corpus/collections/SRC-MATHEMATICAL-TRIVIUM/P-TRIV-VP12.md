@@ -31,7 +31,7 @@ spatial boundary conditions for which $\hat H$ is Hermitian.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define the time-dependent action
 $$
@@ -64,7 +64,7 @@ Hamiltonian.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Varying $S$ with respect to $\psi^\dagger$ gives
 $$
@@ -85,16 +85,16 @@ $$
 
 ::: pf-proof
 
-Differentiate the integrand from step <1>1 with respect to
+Differentiate the integrand from step [](#s1-1){.pf-ref} with respect to
 $\psi^\dagger$ and $\dot\psi^\dagger$, keeping $\psi$ fixed.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Integrating the middle term in step <1>2 by parts in time gives
+Integrating the middle term in step [](#s1-2){.pf-ref} by parts in time gives
 $$
 \delta_{\psi^\dagger}S
 =
@@ -121,13 +121,13 @@ $$
 \int
 \delta\psi^\dagger\dot\psi,dt.
 $$
-This combines with the first term in step <1>2.
+This combines with the first term in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore stationarity with respect to $\psi^\dagger$ gives
 $$
@@ -142,13 +142,13 @@ $$
 ::: pf-proof
 
 The variation $\delta\psi^\dagger$ is arbitrary, so the coefficient in
-step <1>3 must vanish.
+step [](#s1-3){.pf-ref} must vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Varying $S$ with respect to $\psi$ gives
 $$
@@ -166,7 +166,7 @@ $$
 
 ::: pf-proof
 
-The time-derivative terms are treated exactly as in steps <1>2--<1>3, with
+The time-derivative terms are treated exactly as in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, with
 $\psi$ and $\psi^\dagger$ interchanged. For the Hamiltonian term, hermiticity
 of $\hat H$ and the assumed spatial boundary conditions move all derivatives
 off $\delta\psi$ and onto $\psi^\dagger$.
@@ -175,7 +175,7 @@ off $\delta\psi$ and onto $\psi^\dagger$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence stationarity with respect to $\psi$ gives the conjugate
 Schrödinger equation
@@ -190,27 +190,27 @@ $$
 
 ::: pf-proof
 
-The variation $\delta\psi$ is arbitrary in step <1>5, so its coefficient must
+The variation $\delta\psi$ is arbitrary in step [](#s1-5){.pf-ref}, so its coefficient must
 vanish.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 give the Schrödinger equation and its Hermitian conjugate.
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} give the Schrödinger equation and its Hermitian conjugate.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For the stationary problem, define
 $$
@@ -233,7 +233,7 @@ This functional is quadratic and vanishes on an eigenstate of energy $E$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Variation with respect to $\psi^\dagger$ gives
 $$
@@ -248,13 +248,13 @@ $$
 
 ::: pf-proof
 
-The functional in step <1>8 is linear in $\psi^\dagger$.
+The functional in step [](#s1-8){.pf-ref} is linear in $\psi^\dagger$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore stationarity with respect to $\psi^\dagger$ gives
 $$
@@ -266,13 +266,13 @@ $$
 
 ::: pf-proof
 
-The variation $\delta\psi^\dagger$ is arbitrary in step <1>9.
+The variation $\delta\psi^\dagger$ is arbitrary in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Variation with respect to $\psi$ gives
 $$
@@ -287,22 +287,22 @@ $$
 ::: pf-proof
 
 Hermiticity of $\hat H$ allows the variation to be transferred from
-$\hat H\delta\psi$ onto the conjugate field, exactly as in step <1>5. Since
+$\hat H\delta\psi$ onto the conjugate field, exactly as in step [](#s1-5){.pf-ref}. Since
 $E$ is real for a Hermitian Hamiltonian, the result is the Hermitian conjugate
-of step <1>10.
+of step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>10--<1>11 give the stationary Schrödinger equation and its conjugate.
+Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} give the stationary Schrödinger equation and its conjugate.
 
 :::
 
@@ -310,7 +310,7 @@ Steps <1>10--<1>11 give the stationary Schrödinger equation and its conjugate.
 
 ::: pf-qed
 
-Steps <1>7 and <1>12 establish parts (a) and (b), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

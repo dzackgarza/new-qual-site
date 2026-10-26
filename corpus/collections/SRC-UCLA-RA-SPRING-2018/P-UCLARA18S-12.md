@@ -35,7 +35,7 @@ f(z)=\sum_{n=0}^{\infty}a_nz^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(n\ge0\),
 \[
@@ -101,7 +101,7 @@ f(z)\overline z^{\,n}\,dA(z)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For fixed \(w\in\mathbb D\),
 \[
@@ -151,9 +151,9 @@ The Weierstrass \(M\)-test therefore gives uniform convergence in \(z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-One may integrate the series in step <1>2 term by term against
+One may integrate the series in step [](#s1-2){.pf-ref} term by term against
 \(f(z)\,dA(z)\).
 
 
@@ -175,14 +175,14 @@ The terms satisfy
 \]
 The right-hand side is summable in \(n\) and independent of \(z\), while
 \(\mathbb D\) has finite area. Equivalently, the kernel series converges
-uniformly by step <1>2 and \(f\in L^1(\mathbb D)\). Hence integration and
+uniformly by step [](#s1-2){.pf-ref} and \(f\in L^1(\mathbb D)\). Hence integration and
 summation may be interchanged.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(w\in\mathbb D\),
 \[
@@ -200,7 +200,7 @@ For every \(w\in\mathbb D\),
 
 ::: pf-proof
 
-By steps <1>2 and <1>3,
+By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 \frac1\pi
@@ -216,7 +216,7 @@ By steps <1>2 and <1>3,
 f(z)\overline z^{\,n}\,dA(z).
 \end{aligned}
 \]
-Apply step <1>1:
+Apply step [](#s1-1){.pf-ref}:
 \[
 \begin{aligned}
 &=
@@ -233,7 +233,7 @@ Apply step <1>1:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -253,7 +253,7 @@ f(w)
 
 The Taylor series of the holomorphic function \(f\) converges to \(f(w)\)
 for every \(w\in\mathbb D\). Thus the series on the right-hand side of
-step <1>4 equals \(f(w)\).
+step [](#s1-4){.pf-ref} equals \(f(w)\).
 
 :::
 
@@ -261,7 +261,7 @@ step <1>4 equals \(f(w)\).
 
 ::: pf-qed
 
-Step <1>5 is the required reproducing formula.
+Step [](#s1-5){.pf-ref} is the required reproducing formula.
 
 :::
 

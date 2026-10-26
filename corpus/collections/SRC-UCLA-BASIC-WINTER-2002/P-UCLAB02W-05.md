@@ -26,7 +26,7 @@ Define what it means for $f$ to be differentiable at a point $x\in U$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function $f:U\to\RR^k$ is differentiable at $x\in U$ if there exists a linear map
 $$
@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The multivariable Chain Rule is the following statement. Let $U\subset\RR^n$ and $V\subset\RR^k$ be open, let
 $$
@@ -75,7 +75,7 @@ This is the precise chain-rule statement to be proved in the remaining steps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Put
 $$
@@ -99,13 +99,13 @@ $$
 
 ::: pf-proof
 
-These are exactly the differentiability expansions from step <1>1, first for $f$ at $x$ and then for $g$ at $f(x)$.
+These are exactly the differentiability expansions from step [](#s1-1){.pf-ref}, first for $f$ at $x$ and then for $g$ at $f(x)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There are constants $C>0$ and $\delta>0$ such that, whenever $0<\norm{h}<\delta$,
 $$
@@ -115,7 +115,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \frac{\norm{r_f(h)}}{\norm{h}}\to0.
 $$
@@ -137,7 +137,7 @@ Take $C=\norm{A}+1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For sufficiently small $h$, if
 $$
@@ -152,7 +152,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 u_h=Ah+r_f(h).
 $$
@@ -171,9 +171,9 @@ Rearranging gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The remainder in step <1>5 is $o(\norm{h})$:
+The remainder in step [](#s1-5){.pf-ref} is $o(\norm{h})$:
 $$
 \frac{\norm{Br_f(h)+r_g(u_h)}}{\norm{h}}\longrightarrow0.
 $$
@@ -188,9 +188,9 @@ $$
 \norm{B}\frac{\norm{r_f(h)}}{\norm{h}}
 \longrightarrow0
 $$
-by step <1>3.
+by step [](#s1-3){.pf-ref}.
 
-For the second term, if $u_h\ne0$, then step <1>4 gives
+For the second term, if $u_h\ne0$, then step [](#s1-4){.pf-ref} gives
 $$
 \frac{\norm{r_g(u_h)}}{\norm{h}}
 =
@@ -199,25 +199,25 @@ $$
 \le
 C\frac{\norm{r_g(u_h)}}{\norm{u_h}}.
 $$
-As $h\to0$, step <1>4 implies $u_h\to0$, so the last factor tends to $0$ by step <1>3. If $u_h=0$, then $r_g(u_h)=r_g(0)=0$. Hence the second term also tends to $0$ after division by $\norm{h}$.
+As $h\to0$, step [](#s1-4){.pf-ref} implies $u_h\to0$, so the last factor tends to $0$ by step [](#s1-3){.pf-ref}. If $u_h=0$, then $r_g(u_h)=r_g(0)=0$. Hence the second term also tends to $0$ after division by $\norm{h}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The composition $g\circ f$ is differentiable at $x$ with derivative $B\circ A$.
 
 
 ::: pf-proof
 
-By steps <1>5--<1>6,
+By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref},
 $$
 (g\circ f)(x+h)
 =(g\circ f)(x)+BAh+o(\norm{h}).
 $$
-Since $BA:\RR^n\to\RR^m$ is linear, step <1>1 identifies it as the derivative of $g\circ f$ at $x$.
+Since $BA:\RR^n\to\RR^m$ is linear, step [](#s1-1){.pf-ref} identifies it as the derivative of $g\circ f$ at $x$.
 
 :::
 
@@ -225,7 +225,7 @@ Since $BA:\RR^n\to\RR^m$ is linear, step <1>1 identifies it as the derivative of
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>7 proves the Chain Rule required in part (c).
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b), and step [](#s1-7){.pf-ref} proves the Chain Rule required in part (c).
 
 :::
 

@@ -19,7 +19,7 @@ The proof is by induction on $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The result holds for $n=1$.
 
@@ -42,7 +42,7 @@ Then $A=LU$, with $L$ lower triangular and $U$ upper triangular.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume $n\ge2$ and write
 \[
@@ -74,7 +74,7 @@ By hypothesis,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define the Schur complement
 \[
@@ -129,20 +129,20 @@ which gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every leading principal minor of $S$ required by the induction hypothesis is nonzero.
 
 
 ::: pf-proof
 
-For $j=1,\ldots,n-2$, step <1>3 gives
+For $j=1,\ldots,n-2$, step [](#s1-3){.pf-ref} gives
 \[
 \det S_j
 =
 \frac{\det A_{j+1}}{a}.
 \]
-The numerator is nonzero by the hypothesis on $A$, and the denominator is nonzero by step <1>2. Thus
+The numerator is nonzero by the hypothesis on $A$, and the denominator is nonzero by step [](#s1-2){.pf-ref}. Thus
 \[
 \det S_j\ne0.
 \]
@@ -151,7 +151,7 @@ The numerator is nonzero by the hypothesis on $A$, and the denominator is nonzer
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By induction, there exist an $(n-1)\times(n-1)$ lower triangular matrix $L_1$ and upper triangular matrix $U_1$ such that
 \[
@@ -161,13 +161,13 @@ S=L_1U_1.
 
 ::: pf-proof
 
-Step <1>4 verifies exactly the leading-principal-minor hypothesis for the matrix $S$ of size $n-1$. The induction hypothesis therefore applies.
+Step [](#s1-4){.pf-ref} verifies exactly the leading-principal-minor hypothesis for the matrix $S$ of size $n-1$. The induction hypothesis therefore applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -196,7 +196,7 @@ The block forms are triangular because $L_1$ is lower triangular and $U_1$ is up
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -206,7 +206,7 @@ One has
 
 ::: pf-proof
 
-Multiply the two block matrices from step <1>6:
+Multiply the two block matrices from step [](#s1-6){.pf-ref}:
 \[
 \begin{aligned}
 LU
@@ -226,7 +226,7 @@ c&(c/a)r+L_1U_1
 \end{pmatrix}.
 \end{aligned}
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 L_1U_1=S=D-\frac1a\,cr.
 \]
@@ -252,7 +252,7 @@ c&D
 
 ::: pf-qed
 
-Step <1>1 is the base case, and steps <1>2--<1>7 prove the induction step. Thus the factorization exists for every $n$ under the stated hypotheses.
+Step [](#s1-1){.pf-ref} is the base case, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the induction step. Thus the factorization exists for every $n$ under the stated hypotheses.
 
 :::
 

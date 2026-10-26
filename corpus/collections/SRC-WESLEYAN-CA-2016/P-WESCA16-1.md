@@ -21,7 +21,7 @@ State the principle of analytic continuation for holomorphic functions and give 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $D$ is connected and open and $f,g:D\to\mathbb C$ are holomorphic,
 then agreement on a subset of $D$ having an accumulation point in $D$ implies
@@ -39,7 +39,7 @@ overlapping connected domains is unique wherever two continuations overlap.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A concrete example is
 \[
@@ -57,7 +57,7 @@ For $|z|<1$, the finite geometric-sum identity gives
 \]
 Letting $N\to\infty$ gives the displayed identity. The function
 $(1-z)^{-1}$ is holomorphic on $\mathbb C\setminus\{1\}$ and agrees with the
-series on the unit disk. Step <1>1 gives uniqueness of any analytic
+series on the unit disk. Step [](#s1-1){.pf-ref} gives uniqueness of any analytic
 continuation from that germ to a connected overlapping domain.
 
 :::
@@ -66,7 +66,7 @@ continuation from that germ to a connected overlapping domain.
 
 ::: pf-qed
 
-Step <1>1 states the principle and step <1>2 gives a specific application.
+Step [](#s1-1){.pf-ref} states the principle and step [](#s1-2){.pf-ref} gives a specific application.
 
 :::
 

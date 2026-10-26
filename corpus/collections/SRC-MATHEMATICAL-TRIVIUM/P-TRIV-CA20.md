@@ -37,7 +37,7 @@ This places the branch cut on the positive real axis.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integrand
 $$
@@ -62,7 +62,7 @@ domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the chosen branch,
 $$
@@ -101,7 +101,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The outer-circle contribution tends to zero as $R\to\infty$.
 
@@ -132,7 +132,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The inner-circle contribution tends to zero as
 $\varepsilon\to0^+$.
@@ -167,7 +167,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In the limit
 $$
@@ -201,7 +201,7 @@ version of $I_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The lower-ray contribution also tends to $I_2$.
 
@@ -235,7 +235,7 @@ Taking the limits gives $I_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the limiting keyhole integral satisfies
 $$
@@ -245,14 +245,14 @@ $$
 
 ::: pf-proof
 
-Steps <1>3--<1>4 show that both circular arcs vanish in the limit, while
-steps <1>5--<1>6 show that the two ray contributions both tend to $I_2$.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that both circular arcs vanish in the limit, while
+steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} show that the two ray contributions both tend to $I_2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The residue theorem gives
 $$
@@ -266,7 +266,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the contour encloses exactly one pole with residue
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the contour encloses exactly one pole with residue
 $$
 e^{-3\pi i/4}
 =
@@ -288,7 +288,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently
 $$
@@ -305,11 +305,11 @@ $$
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 I_2=\frac{I_1}{2}.
 $$
-Substitute the value of $I_1$ from step <1>8.
+Substitute the value of $I_1$ from step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -317,7 +317,7 @@ Substitute the value of $I_1$ from step <1>8.
 
 ::: pf-qed
 
-Step <1>8 solves part (a), and steps <1>7 and <1>9 solve part (b).
+Step [](#s1-8){.pf-ref} solves part (a), and steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref} solve part (b).
 
 :::
 

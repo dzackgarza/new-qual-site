@@ -27,7 +27,7 @@ Suppose $A$ is the set of all prime numbers, and $B$ is the set of all odd integ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $A-B$ consists of the prime numbers that are not odd.
 
@@ -44,7 +44,7 @@ Here $A$ is the set of primes and $B$ is the set of odd integers, so the element
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The only prime number that is not odd is $2$.
 
@@ -57,7 +57,7 @@ Every integer greater than $2$ that is even is divisible by $2$ and hence is com
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -68,7 +68,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -76,7 +76,7 @@ Combine steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the required relative complement.
+Step [](#s1-3){.pf-ref} gives the required relative complement.
 
 :::
 

@@ -40,7 +40,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral over $L_r$ satisfies
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -107,7 +107,7 @@ This proves the asserted limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -120,14 +120,14 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \int_{L_r}f(z)\,dz-i\theta k
 =
 i\int_0^\theta
 \left(re^{it}f(re^{it})-k\right)\,dt.
 $$
-The right-hand side tends to $0$ by step <1>2.
+The right-hand side tends to $0$ by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -135,7 +135,7 @@ The right-hand side tends to $0$ by step <1>2.
 
 ::: pf-qed
 
-Step <1>3 is the required limit.
+Step [](#s1-3){.pf-ref} is the required limit.
 
 :::
 

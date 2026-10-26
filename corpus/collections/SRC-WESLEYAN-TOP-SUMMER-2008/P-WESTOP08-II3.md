@@ -19,7 +19,7 @@ State the definition of a path-connected space. Let $X$ be path-connected and le
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A topological space $X$ is path-connected if for every pair of points
 \[
@@ -45,7 +45,7 @@ This is the definition of path-connectedness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $X$ is path-connected, choose a path
 \[
@@ -82,7 +82,7 @@ x_1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For a loop
 \[
@@ -112,7 +112,7 @@ Hence it is a loop based at $x_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map
 \[
@@ -158,7 +158,7 @@ Thus the output class depends only on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The map $\Phi$ is a group homomorphism.
 
@@ -215,7 +215,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -238,14 +238,14 @@ This is the same construction using the path
 \[
 \bar\eta:x_0\to x_1.
 \]
-By the same argument as steps <1>3--<1>5, it is a well-defined group
+By the same argument as steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, it is a well-defined group
 homomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The maps $\Phi$ and $\Psi$ are inverse to each other.
 
@@ -304,7 +304,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -320,7 +320,7 @@ is an isomorphism.
 
 ::: pf-proof
 
-Step <1>5 gives that $\Phi$ is a homomorphism, and step <1>7 gives its
+Step [](#s1-5){.pf-ref} gives that $\Phi$ is a homomorphism, and step [](#s1-7){.pf-ref} gives its
 two-sided inverse.
 
 :::
@@ -355,7 +355,7 @@ $X$.
 
 ::: pf-qed
 
-Step <1>1 gives the requested definition, and steps <1>2--<1>8 construct
+Step [](#s1-1){.pf-ref} gives the requested definition, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} construct
 the isomorphism in full detail.
 
 :::

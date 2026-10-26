@@ -31,7 +31,7 @@ Which of the following statements is true about this sequence?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $x_1>0$, then every $x_n>0$ and
 $$
@@ -54,14 +54,14 @@ gives the bound for every $n\ge2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $x_1>0$, the tail $(x_n)_{n\ge2}$ is nonincreasing.
 
 
 ::: pf-proof
 
-For $n\ge2$, step <1>1 gives $x_n\ge\sqrt2$. Hence
+For $n\ge2$, step [](#s1-1){.pf-ref} gives $x_n\ge\sqrt2$. Hence
 $$
 x_{n+1}-x_n
 =\frac12\left(x_n+\frac2{x_n}\right)-x_n
@@ -73,7 +73,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $x_1>0$, then
 $$
@@ -83,7 +83,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the tail is decreasing and bounded below by $\sqrt2$,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the tail is decreasing and bounded below by $\sqrt2$,
 so it converges to some $L\ge\sqrt2$. Passing to the limit in the continuous
 recursion gives
 $$
@@ -95,7 +95,7 @@ so $L^2=2$. Since $L>0$, one has $L=\sqrt2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $x_1<0$, then
 $$
@@ -111,14 +111,14 @@ y_{n+1}
 =-x_{n+1}
 =\frac12\left(y_n+\frac2{y_n}\right).
 $$
-Thus $(y_n)$ satisfies the positive recursion treated in step <1>3, so
+Thus $(y_n)$ satisfies the positive recursion treated in step [](#s1-3){.pf-ref}, so
 $y_n\to\sqrt2$ and therefore $x_n=-y_n\to-\sqrt2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the true statement is
 $$
@@ -128,7 +128,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>3--<1>4 give exactly the two sign-dependent limits stated in choice
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give exactly the two sign-dependent limits stated in choice
 (D).
 
 :::
@@ -137,7 +137,7 @@ Steps <1>3--<1>4 give exactly the two sign-dependent limits stated in choice
 
 ::: pf-qed
 
-Step <1>5 gives the required choice.
+Step [](#s1-5){.pf-ref} gives the required choice.
 
 :::
 

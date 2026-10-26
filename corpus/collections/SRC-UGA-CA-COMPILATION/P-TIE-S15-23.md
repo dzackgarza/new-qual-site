@@ -30,7 +30,7 @@ By hypothesis, $E$ has a limit point in $\Omega$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every subsequence of $(f_n)$ has a further subsequence that converges uniformly on compact subsets of $\Omega$ to a holomorphic function.
 
@@ -49,7 +49,7 @@ is locally uniformly bounded by hypothesis. Montel's theorem therefore implies t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every locally uniform subsequential limit of $(f_n)$ equals $f$ on all of $\Omega$.
 
@@ -90,7 +90,7 @@ on $\Omega$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The full sequence $(f_n)$ converges uniformly to $f$ on every compact subset of $\Omega$.
 
@@ -110,11 +110,11 @@ $$
 $$
 for every $j$.
 
-By step <1>1, this subsequence has a further subsequence
+By step [](#s1-1){.pf-ref}, this subsequence has a further subsequence
 $$
 f_{n_{j_k}}
 $$
-that converges uniformly on compact subsets of $\Omega$ to a holomorphic function $g$. By step <1>2,
+that converges uniformly on compact subsets of $\Omega$ to a holomorphic function $g$. By step [](#s1-2){.pf-ref},
 $$
 g=f.
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

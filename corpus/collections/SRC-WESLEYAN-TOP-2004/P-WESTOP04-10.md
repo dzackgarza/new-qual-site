@@ -26,7 +26,7 @@ The source lists five familiar principles equivalent to the Axiom of Choice: Zor
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Axiom of Choice states:
 
@@ -60,7 +60,7 @@ This is the standard formulation of the Axiom of Choice.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Zorn's Lemma states:
 
@@ -91,7 +91,7 @@ This is the standard statement of Zorn's Lemma.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The well-ordering principle states:
 
@@ -109,7 +109,7 @@ A well-ordering is a total order under which every nonempty subset has a least e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Assume Zorn's Lemma. Let
 $$
@@ -126,7 +126,7 @@ To prove the Axiom of Choice from Zorn's Lemma, it is enough to construct a choi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -184,7 +184,7 @@ is nonempty. The extension relation is reflexive, antisymmetric, and transitive,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every chain in
 $$
@@ -264,7 +264,7 @@ is an upper bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By Zorn's Lemma,
 $$
@@ -278,7 +278,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 verifies the hypothesis of Zorn's Lemma for the partially ordered set
+Step [](#s1-6){.pf-ref} verifies the hypothesis of Zorn's Lemma for the partially ordered set
 $$
 P.
 $$
@@ -287,7 +287,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The domain of
 $$
@@ -339,7 +339,7 @@ contradicting maximality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -353,7 +353,7 @@ $$
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 \mathcal D_{f_{\max}}
 =
@@ -376,7 +376,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 $$
@@ -393,7 +393,7 @@ The family
 $$
 \mathcal A
 $$
-was arbitrary. Step <1>9 constructs a choice function for every family of nonempty sets, which is exactly the Axiom of Choice.
+was arbitrary. Step [](#s1-9){.pf-ref} constructs a choice function for every family of nonempty sets, which is exactly the Axiom of Choice.
 
 :::
 
@@ -401,7 +401,7 @@ was arbitrary. Step <1>9 constructs a choice function for every family of nonemp
 
 ::: pf-qed
 
-Steps <1>1--<1>3 state AC and two of the listed equivalent principles, and steps <1>4--<1>10 prove one required implication.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} state AC and two of the listed equivalent principles, and steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} prove one required implication.
 
 :::
 

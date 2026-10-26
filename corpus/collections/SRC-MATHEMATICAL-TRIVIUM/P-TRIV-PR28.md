@@ -39,7 +39,7 @@ with total sample size $300$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The maximum-likelihood estimate of the Poisson parameter is the sample mean,
 \[
@@ -67,7 +67,7 @@ so $\widehat\lambda=762/300=2.54$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the fitted Poisson law, the expected frequencies for $k=0,\ldots,5$ are approximately
 \[
@@ -87,7 +87,7 @@ Evaluating this expression for $k=0,\ldots,5$ gives the displayed values.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Pool the tail $k\geq6$. Its observed and expected frequencies are
 \[
@@ -107,7 +107,7 @@ The observed tail is $10+4+1=15$. Pooling is required because the separate fitte
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Pearson's chi-squared statistic for the seven resulting cells is
 \[
@@ -119,7 +119,7 @@ Pearson's chi-squared statistic for the seven resulting cells is
 
 ::: pf-proof
 
-Using the six cells in step <1>2 and the pooled tail in step <1>3 gives
+Using the six cells in step [](#s1-2){.pf-ref} and the pooled tail in step [](#s1-3){.pf-ref} gives
 \[
 \chi^2
 =\sum_{k=0}^{5}\frac{(O_k-E_k)^2}{E_k}
@@ -148,7 +148,7 @@ There are seven pooled categories. Their probabilities sum to one, costing one d
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 At significance level $0.05$, the critical value is
 \[
@@ -163,13 +163,13 @@ the Poisson hypothesis is not rejected.
 
 ::: pf-proof
 
-The chi-squared goodness-of-fit test rejects when the statistic exceeds the upper 5% critical value for the reference degrees of freedom. Step <1>4 gives a statistic well below that threshold.
+The chi-squared goodness-of-fit test rejects when the statistic exceeds the upper 5% critical value for the reference degrees of freedom. Step [](#s1-4){.pf-ref} gives a statistic well below that threshold.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -180,7 +180,7 @@ and the observed spectrum is compatible with the fitted Poisson distribution at 
 
 ::: pf-proof
 
-The estimate is step <1>1, and the goodness-of-fit decision is step <1>6.
+The estimate is step [](#s1-1){.pf-ref}, and the goodness-of-fit decision is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -188,7 +188,7 @@ The estimate is step <1>1, and the goodness-of-fit decision is step <1>6.
 
 ::: pf-qed
 
-Step <1>7 gives both requested conclusions.
+Step [](#s1-7){.pf-ref} gives both requested conclusions.
 
 :::
 

@@ -21,7 +21,7 @@ State Morera's theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Morera's theorem states the following.
 
@@ -46,7 +46,7 @@ Equivalently, it is enough to assume that the integral of $f$ around every close
 
 ::: pf-qed
 
-Step <1>1 gives the requested precise statement, including the continuity hypothesis and the triangular-contour condition.
+Step [](#s1-1){.pf-ref} gives the requested precise statement, including the continuity hypothesis and the triangular-contour condition.
 
 :::
 

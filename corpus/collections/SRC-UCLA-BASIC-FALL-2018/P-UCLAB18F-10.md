@@ -30,7 +30,7 @@ Compute $\lim_{n\to\infty}A^n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The eigenvalues of $A$ are
 \[
@@ -46,7 +46,7 @@ The matrix $A$ is lower triangular, so its eigenvalues are its diagonal entries.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Corresponding eigenvectors are
 \[
@@ -117,9 +117,9 @@ Av_{1/3}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The vectors in step <1>2 form a basis of $\mathbb R^3$.
+The vectors in step [](#s1-2){.pf-ref} form a basis of $\mathbb R^3$.
 
 
 ::: pf-proof
@@ -140,7 +140,7 @@ Hence $S$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -158,14 +158,14 @@ S^{-1}.
 
 ::: pf-proof
 
-The columns of $S$ are eigenvectors of $A$ for the three eigenvalues listed in step <1>1.
-Thus this is the diagonalization of $A$ in the eigenbasis from step <1>3.
+The columns of $S$ are eigenvectors of $A$ for the three eigenvalues listed in step [](#s1-1){.pf-ref}.
+Thus this is the diagonalization of $A$ in the eigenbasis from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -183,13 +183,13 @@ S^{-1}.
 
 ::: pf-proof
 
-Raise the diagonalization in step <1>4 to the $n$th power.
+Raise the diagonalization in step [](#s1-4){.pf-ref} to the $n$th power.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 As $n\to\infty$,
 \[
@@ -213,7 +213,7 @@ Since
 \qquad\text{and}\qquad
 3^{-n}\to0,
 \]
-the diagonal matrix in step <1>5 converges entrywise to
+the diagonal matrix in step [](#s1-5){.pf-ref} converges entrywise to
 \[
 \operatorname{diag}(1,0,0).
 \]
@@ -223,9 +223,9 @@ Multiplication by the fixed matrices $S$ and $S^{-1}$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The matrix in step <1>6 equals
+The matrix in step [](#s1-6){.pf-ref} equals
 \[
 \boxed{
 \begin{pmatrix}
@@ -290,7 +290,7 @@ whose standard matrix is the displayed matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus
 \[
@@ -308,7 +308,7 @@ Thus
 
 ::: pf-proof
 
-Combine steps <1>6--<1>7.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -316,7 +316,7 @@ Combine steps <1>6--<1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required limit.
+Step [](#s1-8){.pf-ref} is the required limit.
 
 :::
 

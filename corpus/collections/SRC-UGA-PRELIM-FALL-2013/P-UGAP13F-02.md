@@ -38,7 +38,7 @@ the matrices $B$ and $C$ are similar.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (a) is true:
 \[
@@ -69,7 +69,7 @@ Using multiplicativity of the determinant,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (b) is true:
 \[
@@ -106,7 +106,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement (c) is false in general.
 
@@ -176,7 +176,7 @@ Thus $B$ and $C$ need not have the same eigenvectors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 What similarity preserves is the eigenspace structure up to $A$:
 if
@@ -222,7 +222,7 @@ corresponding eigenspace of $C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Statement (d) is true:
 \[
@@ -253,7 +253,7 @@ A(\lambda I-B)A^{-1}
 \det(\lambda I-B)
 \end{aligned}
 \]
-by step <1>1 applied to
+by step [](#s1-1){.pf-ref} applied to
 \[
 \lambda I-B.
 \]
@@ -264,7 +264,7 @@ multiplicity, are identical.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The complete classification is
 \[
@@ -284,7 +284,7 @@ The complete classification is
 
 ::: pf-proof
 
-Collect steps <1>1--<1>5.
+Collect steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -292,7 +292,7 @@ Collect steps <1>1--<1>5.
 
 ::: pf-qed
 
-Step <1>6 gives the requested answer.
+Step [](#s1-6){.pf-ref} gives the requested answer.
 
 :::
 

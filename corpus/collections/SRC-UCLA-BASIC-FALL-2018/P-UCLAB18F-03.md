@@ -57,7 +57,7 @@ x=y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The inverse
 \[
@@ -95,7 +95,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $E\subseteq\mathbb R$ has Lebesgue measure zero and
 \[
@@ -152,7 +152,7 @@ If $L=0$, the image consists of at most one point and is automatically null.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -173,7 +173,7 @@ By the Lebesgue criterion, their discontinuity sets have Lebesgue measure zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set
 \[
@@ -184,17 +184,17 @@ has measure zero.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 D_f
 \]
 has measure zero.
-By step <1>2, the inverse map
+By step [](#s1-2){.pf-ref}, the inverse map
 \[
 g^{-1}:g([0,1])\to[0,1]
 \]
 is $1/\alpha$-Lipschitz.
-Apply step <1>3 with
+Apply step [](#s1-3){.pf-ref} with
 \[
 E=D_f,
 \qquad
@@ -207,7 +207,7 @@ E_0=g([0,1]),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -242,7 +242,7 @@ is continuous at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the discontinuity set of $f\circ g$ is contained in
 \[
@@ -254,37 +254,37 @@ g^{-1}(D_f\cap g([0,1])).
 
 ::: pf-proof
 
-This is the contrapositive of step <1>6.
+This is the contrapositive of step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The discontinuity set of $f\circ g$ has measure zero.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 D_g
 \]
 has measure zero.
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 g^{-1}(D_f\cap g([0,1]))
 \]
 has measure zero.
 A finite union of null sets is null.
-Apply step <1>7.
+Apply step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function
 \[
@@ -310,7 +310,7 @@ are bounded by the same bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -320,8 +320,8 @@ Hence
 
 ::: pf-proof
 
-By step <1>9, the composition is bounded.
-By step <1>8, its set of discontinuities has measure zero.
+By step [](#s1-9){.pf-ref}, the composition is bounded.
+By step [](#s1-8){.pf-ref}, its set of discontinuities has measure zero.
 The Lebesgue criterion for Riemann integrability therefore applies.
 
 :::
@@ -330,7 +330,7 @@ The Lebesgue criterion for Riemann integrability therefore applies.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

@@ -27,7 +27,7 @@ Show that if $A$ has an accumulation point in $\mathbb D$, then there exists a h
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The family $\{f_n:n\ge1\}$ is normal on $\mathbb D$.
 
@@ -44,7 +44,7 @@ for every $z\in\mathbb D$ and every $n$. Thus the family is locally uniformly bo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Any two locally uniform subsequential limits of $(f_n)$ are equal.
 
@@ -70,22 +70,22 @@ on $\mathbb D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists a holomorphic function $f$ on $\mathbb D$ that is the locally uniform limit of some subsequence of $(f_n)$.
 
 
 ::: pf-proof
 
-Apply step <1>1 to the sequence $(f_n)$ itself. Montel's theorem gives a subsequence $(f_{n_k})$ converging locally uniformly to some holomorphic function $f$.
+Apply step [](#s1-1){.pf-ref} to the sequence $(f_n)$ itself. Montel's theorem gives a subsequence $(f_{n_k})$ converging locally uniformly to some holomorphic function $f$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The full sequence $(f_n)$ converges locally uniformly to the function $f$ from step <1>3.
+The full sequence $(f_n)$ converges locally uniformly to the function $f$ from step [](#s1-3){.pf-ref}.
 
 
 ::: pf-proof
@@ -96,7 +96,7 @@ $$
 $$
 for every $j$.
 
-By step <1>1, the subsequence $(f_{m_j})$ has a further subsequence $(f_{m_{j_\ell}})$ converging locally uniformly to some holomorphic function $g$. By step <1>2, every locally uniform subsequential limit equals $f$, so $g=f$. Therefore
+By step [](#s1-1){.pf-ref}, the subsequence $(f_{m_j})$ has a further subsequence $(f_{m_{j_\ell}})$ converging locally uniformly to some holomorphic function $g$. By step [](#s1-2){.pf-ref}, every locally uniform subsequential limit equals $f$, so $g=f$. Therefore
 $$
 \sup_{z\in K}|f_{m_{j_\ell}}(z)-f(z)|\longrightarrow0,
 $$
@@ -106,7 +106,7 @@ contradicting the displayed lower bound by $\varepsilon$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore there exists a holomorphic function $f$ on $\mathbb D$ such that
 $$
@@ -116,7 +116,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 constructs a holomorphic candidate, and step <1>4 proves convergence of the full sequence to it.
+Step [](#s1-3){.pf-ref} constructs a holomorphic candidate, and step [](#s1-4){.pf-ref} proves convergence of the full sequence to it.
 
 :::
 
@@ -124,7 +124,7 @@ Step <1>3 constructs a holomorphic candidate, and step <1>4 proves convergence o
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

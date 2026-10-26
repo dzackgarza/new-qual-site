@@ -22,7 +22,7 @@ Suppose that $f : \CC \to \CC$ is an entire function such that $\abs{f(z)} \leq 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is $R_0>0$ such that for every $R\ge R_0$,
 \[
@@ -43,7 +43,7 @@ On the circle $|z|=R\ge R_0$, the bound is therefore $CR$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer $n\ge0$ and every $R\ge R_0$,
 \[
@@ -62,7 +62,7 @@ Cauchy's derivative estimate on the circle $|z|=R$ gives
 \frac{n!}{R^n}
 \max_{|z|=R}|f(z)|.
 \]
-Apply step <1>1 to obtain
+Apply step [](#s1-1){.pf-ref} to obtain
 \[
 |f^{(n)}(0)|
 \le
@@ -75,7 +75,7 @@ n!C R^{1-n}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n\ge2$,
 \[
@@ -85,7 +85,7 @@ f^{(n)}(0)=0.
 
 ::: pf-proof
 
-Fix $n\ge2$. Step <1>2 holds for every sufficiently large $R$, and
+Fix $n\ge2$. Step [](#s1-2){.pf-ref} holds for every sufficiently large $R$, and
 \[
 n!C R^{1-n}\longrightarrow0
 \qquad(R\to\infty).
@@ -99,7 +99,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Taylor series of $f$ at $0$ terminates after degree $1$:
 \[
@@ -117,14 +117,14 @@ f(z)
 =
 \sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}z^n.
 \]
-By step <1>3, every coefficient with $n\ge2$ vanishes, leaving only the
+By step [](#s1-3){.pf-ref}, every coefficient with $n\ge2$ vanishes, leaving only the
 constant and linear terms.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -140,7 +140,7 @@ c_2=f'(0).
 
 ::: pf-proof
 
-This is exactly the formula in step <1>4.
+This is exactly the formula in step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -148,7 +148,7 @@ This is exactly the formula in step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

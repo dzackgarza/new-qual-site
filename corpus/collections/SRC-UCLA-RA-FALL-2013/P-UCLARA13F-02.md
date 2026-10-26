@@ -27,7 +27,7 @@ Suppose, for contradiction, that such a holomorphic function exists near $0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 \[
@@ -55,7 +55,7 @@ Taking $n\to\infty$ and using continuity at $0$ yields the conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The difference quotient along $z_n=1/n^2$ is
 \[
@@ -67,13 +67,13 @@ The difference quotient along $z_n=1/n^2$ is
 
 ::: pf-proof
 
-Use step <1>1 and divide the prescribed value by $1/n^2$.
+Use step [](#s1-1){.pf-ref} and divide the prescribed value by $1/n^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -83,13 +83,13 @@ f'(0)=0.
 
 ::: pf-proof
 
-The sequence $z_n\to0$ through nonzero points, and the difference quotients in step <1>2 tend to $0$. Since the complex derivative $f'(0)$ exists, every such sequence of difference quotients must converge to $f'(0)$.
+The sequence $z_n\to0$ through nonzero points, and the difference quotients in step [](#s1-2){.pf-ref} tend to $0$. Since the complex derivative $f'(0)$ exists, every such sequence of difference quotients must converge to $f'(0)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $f(0)=f'(0)=0$, holomorphicity implies
 \[
@@ -100,7 +100,7 @@ for some function $g$ holomorphic near $0$.
 
 ::: pf-proof
 
-The Taylor expansion of $f$ at $0$ has vanishing constant and linear coefficients by steps <1>1 and <1>3. Thus
+The Taylor expansion of $f$ at $0$ has vanishing constant and linear coefficients by steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}. Thus
 \[
 f(z)=\sum_{k\geq2}a_kz^k
 =z^2\sum_{k\geq2}a_kz^{k-2},
@@ -111,7 +111,7 @@ and the final series defines a holomorphic $g$ near $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Evaluating at $z_n=1/n^2$ gives
 \[
@@ -123,7 +123,7 @@ g(1/n^2)
 
 ::: pf-proof
 
-From step <1>4,
+From step [](#s1-4){.pf-ref},
 \[
 g(1/n^2)=\frac{f(1/n^2)}{(1/n^2)^2}=n^4f(1/n^2).
 \]
@@ -136,9 +136,9 @@ n^4\frac{n^2-1}{n^5}=\frac{n^2-1}{n}=n-\frac1n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The right-hand side of step <1>5 tends to $+\infty$, while the left-hand side must tend to the finite number $g(0)$.
+The right-hand side of step [](#s1-5){.pf-ref} tends to $+\infty$, while the left-hand side must tend to the finite number $g(0)$.
 
 
 ::: pf-proof
@@ -153,14 +153,14 @@ This is impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore no such holomorphic function exists.
 
 
 ::: pf-proof
 
-The assumed existence led to the contradiction in step <1>6.
+The assumed existence led to the contradiction in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -168,7 +168,7 @@ The assumed existence led to the contradiction in step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

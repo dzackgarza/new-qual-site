@@ -44,7 +44,7 @@ The set $\QQ$ is countable, so such an enumeration exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each $n\ge1$, define
 $$
@@ -68,7 +68,7 @@ The interval has radius $\varepsilon/2^{n+3}$, so its length is twice that numbe
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The intervals cover $\QQ$:
 $$
@@ -84,7 +84,7 @@ For every $n$, the center $q_n$ belongs to $I_n$. Hence every rational number be
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Their total length satisfies
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \sum_{n=1}^{\infty}|I_n|
 =
@@ -110,7 +110,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>3 and <1>4 give exactly the two required properties.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give exactly the two required properties.
 
 :::
 

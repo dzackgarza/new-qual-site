@@ -23,7 +23,7 @@ for \(t>0\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The given limit can be rewritten as
 \[
@@ -49,7 +49,7 @@ the quotient is exactly the one in the problem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For \(t>0\),
 \[
@@ -67,7 +67,7 @@ This is the standard definition of the real power \(t^\alpha\) for
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -78,7 +78,7 @@ f'(t)=\alpha t^{\alpha-1}}.
 
 ::: pf-proof
 
-Differentiate step <1>2:
+Differentiate step [](#s1-2){.pf-ref}:
 \[
 \begin{aligned}
 f'(t)
@@ -95,7 +95,7 @@ t^\alpha\frac{\alpha}{t}\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In particular,
 \[
@@ -106,7 +106,7 @@ f'(1)=\alpha}.
 
 ::: pf-proof
 
-Substitute \(t=1\) into step <1>3:
+Substitute \(t=1\) into step [](#s1-3){.pf-ref}:
 \[
 f'(1)
 =
@@ -119,7 +119,7 @@ f'(1)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 By the definition of the derivative,
 \[
@@ -139,7 +139,7 @@ This is the difference-quotient definition of the derivative at the point
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -153,7 +153,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>1, <1>4, and <1>5.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}.
 
 :::
 
@@ -161,7 +161,7 @@ Combine steps <1>1, <1>4, and <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the requested limit.
+Step [](#s1-6){.pf-ref} is the requested limit.
 
 :::
 

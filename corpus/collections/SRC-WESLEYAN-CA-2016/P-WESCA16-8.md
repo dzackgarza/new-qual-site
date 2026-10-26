@@ -29,7 +29,7 @@ has at least three zeros counted with multiplicity.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The statement as printed is false.
 
@@ -55,7 +55,7 @@ conclusion for this $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume in addition that $f\not\equiv0$ on the connected component of
 its domain containing $0$. Then $0$ is a zero of finite order $m\ge3$.
@@ -83,7 +83,7 @@ Therefore $m\ge3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is $r>0$ such that $f$ has no zeros on
 \[
@@ -93,7 +93,7 @@ There is $r>0$ such that $f$ has no zeros on
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 f(z)=z^m g(z)
 \]
@@ -106,7 +106,7 @@ $\overline{B_r(0)}$ lies in this neighborhood.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -117,14 +117,14 @@ Then $\varepsilon>0$.
 
 ::: pf-proof
 
-By step <1>3, $f$ has no zeros on the compact circle $|z|=r$. The continuous
+By step [](#s1-3){.pf-ref}, $f$ has no zeros on the compact circle $|z|=r$. The continuous
 function $|f|$ therefore has a positive minimum on that circle.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $|w|<\varepsilon$, then $f(z)-w$ has exactly $m$ zeros in
 $B_r(0)$, counted with multiplicity.
@@ -132,7 +132,7 @@ $B_r(0)$, counted with multiplicity.
 
 ::: pf-proof
 
-On $|z|=r$, step <1>4 gives
+On $|z|=r$, step [](#s1-4){.pf-ref} gives
 \[
 |w|<\varepsilon\le |f(z)|.
 \]
@@ -142,14 +142,14 @@ Thus
 \]
 on the boundary circle. Rouché's theorem implies that $f-w$ and $f$ have
 the same number of zeros in $B_r(0)$, counted with multiplicity. By step
-<1>3, $f$ has exactly the single zero $0$ there, with multiplicity $m$.
+[](#s1-3){.pf-ref}, $f$ has exactly the single zero $0$ there, with multiplicity $m$.
 Hence $f-w$ has exactly $m$ zeros in $B_r(0)$, counted with multiplicity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Under the additional hypothesis $f\not\equiv0$, there is
 $\varepsilon>0$ such that every $|w|<\varepsilon$ has at least three
@@ -158,7 +158,7 @@ preimages under $f$, counted with multiplicity.
 
 ::: pf-proof
 
-By step <1>2, $m\ge3$. Step <1>5 gives exactly $m$ zeros of
+By step [](#s1-2){.pf-ref}, $m\ge3$. Step [](#s1-5){.pf-ref} gives exactly $m$ zeros of
 \[
 f(z)-w
 \]
@@ -171,7 +171,7 @@ zeros counted with multiplicity.
 
 ::: pf-qed
 
-Step <1>1 refutes the literal source statement, and step <1>6 proves the
+Step [](#s1-1){.pf-ref} refutes the literal source statement, and step [](#s1-6){.pf-ref} proves the
 corrected statement obtained by excluding the identically-zero function.
 
 :::

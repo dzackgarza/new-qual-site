@@ -29,7 +29,7 @@ $$\mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \\ 0 \\ 1 \end{pmatrix}, \quad \mathbf{
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The vectors $\mathbf v_1$ and $\mathbf v_2$ are linearly independent.
 
@@ -44,7 +44,7 @@ be $2$, not $1$. Thus they are independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The remaining nonzero vectors lie in
 $\operatorname{span}\{\mathbf v_1,\mathbf v_2\}$:
@@ -75,7 +75,7 @@ Also $\mathbf v_3=0$ belongs to every subspace.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -86,8 +86,8 @@ so the answer is (B).
 
 ::: pf-proof
 
-Step <1>2 shows that all five vectors lie in the span of
-$\mathbf v_1,\mathbf v_2$, while step <1>1 shows that this span has dimension
+Step [](#s1-2){.pf-ref} shows that all five vectors lie in the span of
+$\mathbf v_1,\mathbf v_2$, while step [](#s1-1){.pf-ref} shows that this span has dimension
 $2$.
 
 :::
@@ -96,7 +96,7 @@ $2$.
 
 ::: pf-qed
 
-Step <1>3 gives the required dimension.
+Step [](#s1-3){.pf-ref} gives the required dimension.
 
 :::
 

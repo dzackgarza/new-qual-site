@@ -24,7 +24,7 @@ f(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral over the initial interval
 \[
@@ -49,7 +49,7 @@ Hence its integral there is finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every real \(u\) with
 \[
@@ -88,7 +88,7 @@ for \(0\le u\le\pi/2\). Oddness of \(\sin\) gives the absolute-value form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For each integer \(n\ge1\), define
 \[
@@ -113,7 +113,7 @@ and each contains exactly one zero \(n\pi\) of \(\sin x\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -146,7 +146,7 @@ Taking absolute values gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For \(x\in I_n\),
 \[
@@ -170,9 +170,9 @@ n\pi-\frac{\pi}{2}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Combining steps <1>2, <1>4, and <1>5,
+Combining steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref},
 \[
 x^4\sin^2x
 \ge
@@ -184,13 +184,13 @@ u^2.
 
 ::: pf-proof
 
-From step <1>5,
+From step [](#s1-5){.pf-ref},
 \[
 x^4
 \ge
 \pi^4\left(n-\frac12\right)^4.
 \]
-From steps <1>2 and <1>4,
+From steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref},
 \[
 \sin^2x
 =
@@ -223,13 +223,13 @@ Use the substitution
 \[
 x=n\pi+u
 \]
-and the denominator bound from step <1>6.
+and the denominator bound from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Extending the domain of integration,
 \[
@@ -250,7 +250,7 @@ The integrand is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every \(A>0\),
 \[
@@ -288,9 +288,9 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Applying step <1>9 with
+Applying step [](#s1-9){.pf-ref} with
 \[
 A
 =
@@ -307,7 +307,7 @@ one gets
 
 ::: pf-proof
 
-The denominator in step <1>8 is
+The denominator in step [](#s1-8){.pf-ref} is
 \[
 1+A^2u^2
 \]
@@ -325,7 +325,7 @@ for the displayed \(A\). Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The series
 \[
@@ -358,7 +358,7 @@ Compare with the convergent \(p\)-series
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -370,7 +370,7 @@ converges.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 [\pi/2,\infty)
 =
@@ -383,13 +383,13 @@ up to shared endpoints. Since \(f\ge0\),
 \sum_{n=1}^{\infty}
 \int_{I_n}f(x)\,dx.
 \]
-Steps <1>10--<1>11 give a convergent majorant for this series.
+Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} give a convergent majorant for this series.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -402,8 +402,8 @@ Hence
 
 ::: pf-proof
 
-The integral over \([0,\pi/2]\) is finite by step <1>1, and the tail
-converges by step <1>12.
+The integral over \([0,\pi/2]\) is finite by step [](#s1-1){.pf-ref}, and the tail
+converges by step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -411,7 +411,7 @@ converges by step <1>12.
 
 ::: pf-qed
 
-Step <1>13 is the required convergence decision.
+Step [](#s1-13){.pf-ref} is the required convergence decision.
 
 :::
 

@@ -32,7 +32,7 @@ Given that the following differential equation has an integrating factor of the 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Exactness after multiplication by $\mu=x^my^n$ requires
 $$
@@ -72,7 +72,7 @@ Equating the coefficients of the two monomials gives the displayed system.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integrating factor exponents are
 $$
@@ -82,7 +82,7 @@ $$
 
 ::: pf-proof
 
-The equations in step <1>1 are
+The equations in step [](#s1-1){.pf-ref} are
 $$
 2m-3n=2,
 \qquad
@@ -94,7 +94,7 @@ Subtracting suitable multiples gives $n=2$, and then $m=4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A potential for the resulting exact differential form is
 $$
@@ -104,7 +104,7 @@ $$
 
 ::: pf-proof
 
-With the exponents from step <1>2,
+With the exponents from step [](#s1-2){.pf-ref},
 $$
 \overline M=3x^5y^4-5x^4y^3.
 $$
@@ -128,7 +128,7 @@ so $h'(y)=0$, and a constant may be absorbed into the final level constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The general integral is
 $$
@@ -139,7 +139,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Integral curves of the exact equation satisfy $F(x,y)=c$. Factoring the potential from step <1>3 gives
+Integral curves of the exact equation satisfy $F(x,y)=c$. Factoring the potential from step [](#s1-3){.pf-ref} gives
 $$
 F(x,y)
 =x^5y^3\left(\frac12xy-1\right).
@@ -151,7 +151,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested general solution and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested general solution and corresponding choice.
 
 :::
 

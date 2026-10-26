@@ -25,7 +25,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The roots of
 $$
@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The roots of
 $$
@@ -91,7 +91,7 @@ which gives the four stated roots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The solutions of
 $$
@@ -132,7 +132,7 @@ Modulo $2\pi$, exactly six values occur, represented by $m=0,\ldots,5$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The solutions of
 $$
@@ -168,9 +168,9 @@ Modulo $2\pi$, the three distinct values arise from $m=0,1,2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Equivalently, the roots in step <1>4 are
+Equivalently, the roots in step [](#s1-4){.pf-ref} are
 $$
 \boxed{
 \frac12+i\frac{\sqrt3}{2},
@@ -184,7 +184,7 @@ $$
 
 ::: pf-proof
 
-Apply Euler's formula to the three polar forms from step <1>4.
+Apply Euler's formula to the three polar forms from step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -192,7 +192,7 @@ Apply Euler's formula to the three polar forms from step <1>4.
 
 ::: pf-qed
 
-Steps <1>1--<1>5 give all roots requested in the four equations.
+Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give all roots requested in the four equations.
 
 :::
 

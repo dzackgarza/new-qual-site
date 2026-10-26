@@ -26,7 +26,7 @@ Measure arrival times $X,Y$ in minutes after 2:00, and assume they are independe
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The two people meet exactly when
 \[
@@ -42,7 +42,7 @@ The earlier arrival waits for ten minutes. Thus a meeting occurs precisely when 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sample space is the square
 \[
@@ -59,7 +59,7 @@ Independence and uniformity make $(X,Y)$ uniformly distributed on this square, s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Failure occurs in the two triangles
 \[
@@ -72,13 +72,13 @@ Each triangle has legs of length $50$ and area $1250$.
 
 ::: pf-proof
 
-By step <1>1, failure is $|X-Y|>10$. The two components lie above $Y=X+10$ and below $Y=X-10$. Each is a right triangle with vertices separated by $60-10=50$ along the two coordinate directions, hence has area $50^2/2=1250$.
+By step [](#s1-1){.pf-ref}, failure is $|X-Y|>10$. The two components lie above $Y=X+10$ and below $Y=X-10$. Each is a right triangle with vertices separated by $60-10=50$ along the two coordinate directions, hence has area $50^2/2=1250$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -88,7 +88,7 @@ Therefore
 
 ::: pf-proof
 
-Divide the total failure area $2500$ from step <1>3 by the sample-space area $3600$ from step <1>2 and reduce the fraction.
+Divide the total failure area $2500$ from step [](#s1-3){.pf-ref} by the sample-space area $3600$ from step [](#s1-2){.pf-ref} and reduce the fraction.
 
 :::
 
@@ -96,7 +96,7 @@ Divide the total failure area $2500$ from step <1>3 by the sample-space area $36
 
 ::: pf-qed
 
-Step <1>4 gives the requested probability of failing to meet.
+Step [](#s1-4){.pf-ref} gives the requested probability of failing to meet.
 
 :::
 

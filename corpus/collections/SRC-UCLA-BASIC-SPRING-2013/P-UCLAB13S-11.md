@@ -91,7 +91,7 @@ G_n=G_{n-1}+G_{n-2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -118,7 +118,7 @@ for all $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $n\ge2$,
 \[
@@ -135,7 +135,7 @@ For $n\ge2$,
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 \[
 \begin{aligned}
 \frac{F_n}{F_{n-1}}
@@ -161,7 +161,7 @@ for $n\ge2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -194,7 +194,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -211,12 +211,12 @@ Hence
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \left(\frac{\psi}{\phi}\right)^n
 \to0.
 \]
-Taking the limit in step <1>3 gives
+Taking the limit in step [](#s1-3){.pf-ref} gives
 \[
 \lim_{n\to\infty}
 \frac{F_n}{F_{n-1}}
@@ -232,7 +232,7 @@ This proves part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -289,7 +289,7 @@ D_{m+1}=-D_m.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -322,7 +322,7 @@ F_2F_0-F_1^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -337,11 +337,11 @@ for every $m\ge1$.
 
 ::: pf-proof
 
-By step <1>6, the numbers $D_m$ alternate sign:
+By step [](#s1-6){.pf-ref}, the numbers $D_m$ alternate sign:
 \[
 D_m=(-1)^{m-1}D_1.
 \]
-Using step <1>7,
+Using step [](#s1-7){.pf-ref},
 \[
 D_m
 =
@@ -355,13 +355,13 @@ This is Cassini's identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Setting
 \[
 m=2n
 \]
-in step <1>8 gives
+in step [](#s1-8){.pf-ref} gives
 \[
 \boxed{
 F_{2n+1}F_{2n-1}-F_{2n}^2
@@ -377,7 +377,7 @@ Since
 \[
 (-1)^{2n}=1,
 \]
-step <1>8 becomes exactly the identity required in part (b).
+step [](#s1-8){.pf-ref} becomes exactly the identity required in part (b).
 
 :::
 
@@ -385,7 +385,7 @@ step <1>8 becomes exactly the identity required in part (b).
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

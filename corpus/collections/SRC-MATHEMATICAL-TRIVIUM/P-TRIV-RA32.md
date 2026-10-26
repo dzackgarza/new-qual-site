@@ -21,7 +21,7 @@ A body moves in (xy)-plane along the trajectory y = log cos x. Find the path len
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 $$
@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The arc length is
 $$
@@ -68,7 +68,7 @@ This is the standard arc-length formula for a graph $y=y(x)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the interval $[0,\pi/6]$,
 $$
@@ -105,13 +105,13 @@ $$
 
 ::: pf-proof
 
-Substitute steps <1>1--<1>3 into the arc-length formula.
+Substitute steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} into the arc-length formula.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 An antiderivative of $\sec x$ is
 $$
@@ -150,13 +150,13 @@ $$
 
 ::: pf-proof
 
-Evaluate the antiderivative from step <1>5 between $0$ and $\pi/6$.
+Evaluate the antiderivative from step [](#s1-5){.pf-ref} between $0$ and $\pi/6$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since
 $$
@@ -199,7 +199,7 @@ $$
 
 ::: pf-qed
 
-Step <1>7 is the required path length.
+Step [](#s1-7){.pf-ref} is the required path length.
 
 :::
 

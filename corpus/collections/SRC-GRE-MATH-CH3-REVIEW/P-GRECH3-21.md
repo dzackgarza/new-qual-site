@@ -32,7 +32,7 @@ at the point where $y=8$ and $z=4$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The point on the surface with $y=8$ and $z=4$ is
 $$
@@ -60,7 +60,7 @@ so $g$ decreases on $(0,1)$ and increases on $(1,\infty)$. Since $g(1)=0$, its u
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -80,7 +80,7 @@ F_x=\frac1S-1,\qquad
 F_y=\frac{2y}{S},\qquad
 F_z=-\frac{3z^2}{S}.
 $$
-At the point $P=(1,8,4)$ from step <1>1,
+At the point $P=(1,8,4)$ from step [](#s1-1){.pf-ref},
 $$
 S=1+8^2-4^3=1.
 $$
@@ -93,7 +93,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A normal vector to the surface at $P$ is
 $$
@@ -104,7 +104,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-The surface is the level set $F=0$. Since the gradient in step <1>2 is nonzero, it is normal to that level surface at $P$. Any nonzero scalar multiple is also normal, and
+The surface is the level set $F=0$. Since the gradient in step [](#s1-2){.pf-ref} is nonzero, it is normal to that level surface at $P$. Any nonzero scalar multiple is also normal, and
 $$
 \frac1{16}\nabla F(P)=(0,1,-3)
 =\hat{\mathbf{j}}-3\hat{\mathbf{k}}.
@@ -116,7 +116,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested normal vector and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested normal vector and corresponding choice.
 
 :::
 

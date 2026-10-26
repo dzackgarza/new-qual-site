@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every square complex matrix $X$,
 $$
@@ -82,9 +82,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Applying step <1>1 to $L$ gives
+Applying step [](#s1-1){.pf-ref} to $L$ gives
 $$
 \boxed{e^{\operatorname{Tr}L}=\det A}.
 $$
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus $\operatorname{Tr}L$ is a scalar logarithm of $\det A$.
 
@@ -116,7 +116,7 @@ By definition, a scalar $w$ is a logarithm of $\det A$ exactly when
 $$
 e^w=\det A.
 $$
-Step <1>2 gives this with
+Step [](#s1-2){.pf-ref} gives this with
 $$
 w=\operatorname{Tr}L.
 $$
@@ -125,7 +125,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If a scalar branch $\log(\det A)$ is fixed independently, then
 $$
@@ -141,14 +141,14 @@ for some $k\in\mathbb Z$.
 ::: pf-proof
 
 Any two scalar logarithms of the same nonzero complex number differ by an
-integer multiple of $2\pi i$. Apply this to the logarithm from step <1>3 and
+integer multiple of $2\pi i$. Apply this to the logarithm from step [](#s1-3){.pf-ref} and
 the chosen scalar logarithm.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 With compatible branches,
 $$
@@ -159,7 +159,7 @@ $$
 ::: pf-proof
 
 Choose the scalar logarithm of $\det A$ to be the logarithm supplied by
-step <1>3. Then the integer $k$ in step <1>4 is zero.
+step [](#s1-3){.pf-ref}. Then the integer $k$ in step [](#s1-4){.pf-ref} is zero.
 
 :::
 
@@ -167,7 +167,7 @@ step <1>3. Then the integer $k$ in step <1>4 is zero.
 
 ::: pf-qed
 
-Steps <1>2--<1>5 give the precise branch-independent identity and the source's
+Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} give the precise branch-independent identity and the source's
 formula under compatible choices.
 
 :::

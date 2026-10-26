@@ -61,7 +61,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $k\geq0$ and every $a\in\mathbb Z_2^n$,
 $$
@@ -89,7 +89,7 @@ Since each $a_j\in\mathbb Z_2$ satisfies $a_j^{2^k}=a_j$, the displayed identity
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every nonzero $a\in\mathbb Z_2^n$, the linear polynomial $L_a$ divides $D$.
 
@@ -100,7 +100,7 @@ Choose $i$ with $a_i=1$. Replace the $i$-th column of the determinant by the sum
 $$
 \sum_{j=1}^n a_j\,(\text{$j$-th column}).
 $$
-Because $a_i=1$, this is obtained from the original $i$-th column by adding a linear combination of the other columns, so the determinant is unchanged. By step <1>1, the new $i$-th column is
+Because $a_i=1$, this is obtained from the original $i$-th column by adding a linear combination of the other columns, so the determinant is unchanged. By step [](#s1-1){.pf-ref}, the new $i$-th column is
 $$
 \begin{pmatrix}
 L_a\\
@@ -115,7 +115,7 @@ Every entry in that column is divisible by $L_a$, hence the determinant is divis
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The product
 $$
@@ -130,13 +130,13 @@ Each $L_a$ is a nonzero linear polynomial, hence irreducible in the polynomial U
 $$
 \mathbb Z_2[x_1,\ldots,x_n].
 $$
-If $a\neq b$, then $L_a\neq L_b$. Since the only nonzero unit of $\mathbb Z_2$ is $1$, distinct $L_a$ are nonassociate. Step <1>2 shows that every one of these pairwise nonassociate irreducibles divides $D$, so their product divides $D$.
+If $a\neq b$, then $L_a\neq L_b$. Since the only nonzero unit of $\mathbb Z_2$ is $1$, distinct $L_a$ are nonassociate. Step [](#s1-2){.pf-ref} shows that every one of these pairwise nonassociate irreducibles divides $D$, so their product divides $D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The determinant $D$ is nonzero and homogeneous of degree
 $$
@@ -164,7 +164,7 @@ are pairwise distinct and therefore determine which variable was chosen in each 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The product $P$ is homogeneous of degree $2^n-1$.
 
@@ -177,7 +177,7 @@ There are exactly $2^n-1$ nonzero vectors in $\mathbb Z_2^n$, and every factor $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -192,7 +192,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3, write $D=PQ$. Steps <1>4--<1>5 show
+By step [](#s1-3){.pf-ref}, write $D=PQ$. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} show
 $$
 \deg D=\deg P=2^n-1.
 $$
@@ -204,7 +204,7 @@ Since $D$ and $P$ are nonzero, $Q$ has degree $0$, hence is a nonzero constant. 
 
 ::: pf-qed
 
-Step <1>6 is the required identity.
+Step [](#s1-6){.pf-ref} is the required identity.
 
 :::
 

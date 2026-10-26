@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The functions $S_N(re^{i\theta})$ converge uniformly to $f(re^{i\theta})$ for $0\le\theta\le2\pi$.
 
@@ -58,7 +58,7 @@ The Weierstrass $M$-test therefore gives uniform convergence of $\sum c_nz^n$ on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $N$,
 $$
@@ -99,7 +99,7 @@ Integrating term by term leaves exactly the diagonal terms, giving the claimed i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -115,13 +115,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $S_N(re^{i\theta})\to f(re^{i\theta})$ uniformly. The sequence $S_N(re^{i\theta})$ is therefore uniformly bounded, so
+By step [](#s1-1){.pf-ref}, $S_N(re^{i\theta})\to f(re^{i\theta})$ uniformly. The sequence $S_N(re^{i\theta})$ is therefore uniformly bounded, so
 $$
 \abs{S_N(re^{i\theta})}^2
 \longrightarrow
 \abs{f(re^{i\theta})}^2
 $$
-uniformly as well. Hence the integrals in step <1>2 converge to the left-hand side above. The right-hand side of step <1>2 is the $N$th partial sum of the nonnegative series
+uniformly as well. Hence the integrals in step [](#s1-2){.pf-ref} converge to the left-hand side above. The right-hand side of step [](#s1-2){.pf-ref} is the $N$th partial sum of the nonnegative series
 $$
 \sum_{n=0}^\infty\abs{c_n}^2r^{2n},
 $$
@@ -131,7 +131,7 @@ so taking $N\to\infty$ gives the displayed identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $f$ is entire and bounded by $M$, then for every $n\ge1$ and every $r>0$,
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-Since $f$ is entire, step <1>3 applies for every $r>0$. If $\abs{f(z)}\le M$ on $\CC$, then
+Since $f$ is entire, step [](#s1-3){.pf-ref} applies for every $r>0$. If $\abs{f(z)}\le M$ on $\CC$, then
 $$
 \sum_{j=0}^\infty\abs{c_j}^2r^{2j}
 =
@@ -160,14 +160,14 @@ which gives the asserted estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every bounded entire function is constant.
 
 
 ::: pf-proof
 
-Fix $n\ge1$. By step <1>4,
+Fix $n\ge1$. By step [](#s1-4){.pf-ref},
 $$
 \abs{c_n}\le \frac{M}{r^n}
 $$
@@ -183,7 +183,7 @@ for all $z\in\CC$. This is Liouville's theorem.
 
 ::: pf-qed
 
-Step <1>3 proves part (1), and step <1>5 proves part (2).
+Step [](#s1-3){.pf-ref} proves part (1), and step [](#s1-5){.pf-ref} proves part (2).
 
 :::
 

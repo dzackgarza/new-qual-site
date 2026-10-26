@@ -31,7 +31,7 @@ be an enumeration of all bounded open intervals with rational endpoints.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every nonempty nondegenerate interval
 \[
@@ -62,7 +62,7 @@ and this interval occurs somewhere in the enumeration.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonempty open interval
 \[
@@ -101,7 +101,7 @@ is compact and nowhere dense and has measure
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 We construct recursively pairs of compact nowhere-dense sets
 \[
@@ -147,7 +147,7 @@ U_n,V_n
 J_n\setminus F_{n-1}.
 \]
 
-By step <1>2, choose a compact nowhere-dense positive-measure set
+By step [](#s1-2){.pf-ref}, choose a compact nowhere-dense positive-measure set
 \[
 K_n\subseteq U_n
 \]
@@ -162,7 +162,7 @@ This completes the induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -192,7 +192,7 @@ set, hence Borel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every
 \[
@@ -212,7 +212,7 @@ L_n\subseteq\mathbb R\setminus E.
 
 The first inclusion is immediate from the definition of $E$.
 
-By step <1>3, every $L_n$ is disjoint from every $K_m$, including those
+By step [](#s1-3){.pf-ref}, every $L_n$ is disjoint from every $K_m$, including those
 chosen later because each later stage avoids all previously chosen $L_n$.
 Hence
 \[
@@ -227,7 +227,7 @@ E
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -238,7 +238,7 @@ Choose
 \[
 J_n\subseteq I
 \]
-as in step <1>1.
+as in step [](#s1-1){.pf-ref}.
 Then
 \[
 m(E\cap I)>0.
@@ -278,7 +278,7 @@ m(K_n)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For the same interval $I$,
 \[
@@ -288,7 +288,7 @@ m(I\setminus E)>0.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 L_n
 \subseteq
@@ -321,7 +321,7 @@ m(L_n)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -349,7 +349,7 @@ m(E\cap I)
 +
 m(I\setminus E).
 \]
-Step <1>7 shows the second summand is strictly positive.
+Step [](#s1-7){.pf-ref} shows the second summand is strictly positive.
 Therefore
 \[
 m(E\cap I)
@@ -361,7 +361,7 @@ m(I).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Consequently
 \[
@@ -378,7 +378,7 @@ for every finite nonempty nondegenerate interval $I$.
 
 ::: pf-proof
 
-The left inequality is step <1>6 and the right inequality is step <1>8.
+The left inequality is step [](#s1-6){.pf-ref} and the right inequality is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -386,7 +386,7 @@ The left inequality is step <1>6 and the right inequality is step <1>8.
 
 ::: pf-qed
 
-Step <1>4 constructs a Borel set $E$, and step <1>9 proves it has the
+Step [](#s1-4){.pf-ref} constructs a Borel set $E$, and step [](#s1-9){.pf-ref} proves it has the
 required measure-theoretic thickness in every interval.
 
 :::

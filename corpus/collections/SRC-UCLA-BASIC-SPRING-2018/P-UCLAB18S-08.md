@@ -29,7 +29,7 @@ Hint: show that $x_{n+1}^{-2}-x_n^{-2}$ converges to a constant.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence $(x_n)$ is positive, strictly decreasing, and converges to $0$.
 
@@ -50,7 +50,7 @@ The inequality $\sin x<x$ for $x>0$ implies that the only nonnegative solution i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The increments of $y_n\coloneqq x_n^{-2}$ satisfy
 $$
@@ -80,13 +80,13 @@ $$
 =\frac{\frac13x^4+O(x^6)}{x^4+O(x^6)}
 \longrightarrow\frac13.
 $$
-Since $x_n\to0$ by step <1>1, the asserted increment limit follows.
+Since $x_n\to0$ by step [](#s1-1){.pf-ref}, the asserted increment limit follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -107,13 +107,13 @@ $$
 =\frac{y_1}{n}
 +\frac{n-1}{n}\left(\frac1{n-1}\sum_{k=1}^{n-1}(y_{k+1}-y_k)\right).
 $$
-By step <1>2, the sequence of increments converges to $1/3$, so its arithmetic means also converge to $1/3$. The first term tends to $0$ and $(n-1)/n\to1$, proving the claim.
+By step [](#s1-2){.pf-ref}, the sequence of increments converges to $1/3$, so its arithmetic means also converge to $1/3$. The first term tends to $0$ and $(n-1)/n\to1$, proving the claim.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The requested limit is
 $$
@@ -129,7 +129,7 @@ $$
 =\sqrt{\frac{n}{y_n}}
 =\frac1{\sqrt{y_n/n}}.
 $$
-Step <1>3 gives $y_n/n\to1/3$, hence continuity of the square-root function on $(0,\infty)$ gives the stated limit.
+Step [](#s1-3){.pf-ref} gives $y_n/n\to1/3$, hence continuity of the square-root function on $(0,\infty)$ gives the stated limit.
 
 :::
 
@@ -137,7 +137,7 @@ Step <1>3 gives $y_n/n\to1/3$, hence continuity of the square-root function on $
 
 ::: pf-qed
 
-Step <1>4 computes the limit and therefore proves its existence.
+Step [](#s1-4){.pf-ref} computes the limit and therefore proves its existence.
 
 :::
 

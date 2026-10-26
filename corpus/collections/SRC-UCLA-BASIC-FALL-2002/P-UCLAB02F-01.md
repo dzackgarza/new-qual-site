@@ -28,7 +28,7 @@ If $K=\varnothing$ or $F=\varnothing$, the set of distances is empty; with the e
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in K$, there exists $r_x>0$ such that
 \[
@@ -47,7 +47,7 @@ B(x,r_x)\subseteq X\setminus F.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There are points $x_1,\ldots,x_m\in K$ such that
 \[
@@ -67,7 +67,7 @@ form an open cover of $K$. Since $K$ is compact, a finite subcover exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -84,11 +84,11 @@ for every $x\in K$ and $y\in F$.
 
 The minimum is positive because it is the minimum of finitely many positive numbers.
 
-Fix $x\in K$ and $y\in F$. By step <1>2, choose $i$ such that
+Fix $x\in K$ and $y\in F$. By step [](#s1-2){.pf-ref}, choose $i$ such that
 \[
 d(x,x_i)<\frac{r_{x_i}}2.
 \]
-By step <1>1, $y\notin B(x_i,r_{x_i})$, so
+By step [](#s1-1){.pf-ref}, $y\notin B(x_i,r_{x_i})$, so
 \[
 d(x_i,y)\ge r_{x_i}.
 \]
@@ -108,7 +108,7 @@ r_{x_i}-\frac{r_{x_i}}2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -121,7 +121,7 @@ One has
 
 ::: pf-proof
 
-Step <1>3 shows that every element of the distance set is at least the positive number $\delta$. Hence its infimum is at least $\delta>0$.
+Step [](#s1-3){.pf-ref} shows that every element of the distance set is at least the positive number $\delta$. Hence its infimum is at least $\delta>0$.
 
 :::
 
@@ -129,7 +129,7 @@ Step <1>3 shows that every element of the distance set is at least the positive 
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion in the nonempty case, and the opening observation covers the empty-set convention.
+Step [](#s1-4){.pf-ref} is the required conclusion in the nonempty case, and the opening observation covers the empty-set convention.
 
 :::
 

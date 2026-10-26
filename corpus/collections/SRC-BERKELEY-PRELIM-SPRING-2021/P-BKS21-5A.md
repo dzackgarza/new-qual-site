@@ -41,7 +41,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The poles of $h$ in the open upper half-plane are
 $$
@@ -64,9 +64,9 @@ Exactly the roots with $k=0,1$ have positive imaginary part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The sum of the residues of $h$ at the poles in step <1>1 is
+The sum of the residues of $h$ at the poles in step [](#s1-1){.pf-ref} is
 $$
 \operatorname{Res}_{z=z_1}h+\operatorname{Res}_{z=z_2}h
 =
@@ -106,7 +106,7 @@ Adding gives the claimed value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -118,7 +118,7 @@ $$
 
 ::: pf-proof
 
-Integrate $h$ over the positively oriented contour consisting of $[-R,R]$ and the upper semicircle $\Gamma_R$, with $R>1$. By the residue theorem and step <1>2,
+Integrate $h$ over the positively oriented contour consisting of $[-R,R]$ and the upper semicircle $\Gamma_R$, with $R>1$. By the residue theorem and step [](#s1-2){.pf-ref},
 $$
 \int_{-R}^{R}\frac{dx}{x^4+1}
 +
@@ -149,7 +149,7 @@ Letting $R\to\infty$ gives the displayed integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -169,7 +169,7 @@ $$
 =
 2\int_0^\infty\frac{dx}{x^4+1}.
 $$
-Apply step <1>3.
+Apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -177,7 +177,7 @@ Apply step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

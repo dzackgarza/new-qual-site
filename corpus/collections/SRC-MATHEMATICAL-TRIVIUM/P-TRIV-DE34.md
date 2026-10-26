@@ -26,7 +26,7 @@ f(x)=\frac1{1+x^2}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The distributional derivative identity gives
 \[
@@ -46,7 +46,7 @@ Here $n=2$ and $a=2$, so the sign is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The second derivative of $f$ is
 \[
@@ -70,7 +70,7 @@ f''(x)=-\frac2{(1+x^2)^2}+\frac{8x^2}{(1+x^2)^3}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -82,7 +82,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 f''(2)=\frac{6\cdot4-2}{(1+4)^3}
 =\frac{22}{125}.
@@ -94,7 +94,7 @@ f''(2)=\frac{6\cdot4-2}{(1+4)^3}
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

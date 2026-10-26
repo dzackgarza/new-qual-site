@@ -31,7 +31,7 @@ Determine whether each statement is true or false:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (a) is false.
 
@@ -66,7 +66,7 @@ which does not tend to $0$ along any subsequence. Hence no subsequence converges
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (b) is true.
 
@@ -112,14 +112,14 @@ Thus a subsequence converges almost everywhere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement (c) is false.
 
 
 ::: pf-proof
 
-Use the same sequence as in step <1>1:
+Use the same sequence as in step [](#s1-1){.pf-ref}:
 \[
 f_n=n\mathbf 1_{[0,1/n]}.
 \]
@@ -135,7 +135,7 @@ f_n\longrightarrow0
 \]
 in measure.
 
-But step <1>1 gives
+But step [](#s1-1){.pf-ref} gives
 \[
 \|f_n\|_3=n^{2/3}\not\to0.
 \]
@@ -145,7 +145,7 @@ Thus convergence in measure does not imply convergence in $L^3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (d) is true.
 
@@ -192,7 +192,7 @@ This is convergence in measure.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The answers are
 \[
@@ -207,7 +207,7 @@ The answers are
 
 ::: pf-proof
 
-Steps <1>1--<1>4 establish the four assertions respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish the four assertions respectively.
 
 :::
 
@@ -215,7 +215,7 @@ Steps <1>1--<1>4 establish the four assertions respectively.
 
 ::: pf-qed
 
-Step <1>5 records the complete classification.
+Step [](#s1-5){.pf-ref} records the complete classification.
 
 :::
 

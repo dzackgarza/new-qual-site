@@ -80,7 +80,7 @@ is holomorphic on a neighborhood of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -114,7 +114,7 @@ gives the stated value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By Cauchy's integral formula for derivatives,
 \[
@@ -144,7 +144,7 @@ Rearrange.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -164,7 +164,7 @@ Substitute
 \[
 h'(0)=\frac1e
 \]
-from step <1>2 into step <1>3.
+from step [](#s1-2){.pf-ref} into step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -212,7 +212,7 @@ the needed neighborhood.
 
 ::: pf-qed
 
-Step <1>4 gives the required value.
+Step [](#s1-4){.pf-ref} gives the required value.
 
 :::
 

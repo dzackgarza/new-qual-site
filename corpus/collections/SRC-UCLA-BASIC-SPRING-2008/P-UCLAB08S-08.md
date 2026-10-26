@@ -27,7 +27,7 @@ with $T(v_1)=v_1$ and $T(v_2)=0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For any
 \[
@@ -51,7 +51,7 @@ These are well-defined vectors of $V$ because $T$ maps $V$ to itself.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -61,7 +61,7 @@ v=v_1+v_2.
 
 ::: pf-proof
 
-By the definitions in step <1>1,
+By the definitions in step [](#s1-1){.pf-ref},
 \[
 v_1+v_2
 =
@@ -73,7 +73,7 @@ Tv+(v-Tv)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The vector $v_1$ satisfies
 \[
@@ -108,7 +108,7 @@ v_1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vector $v_2$ satisfies
 \[
@@ -139,7 +139,7 @@ Tv-Tv\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus every
 \[
@@ -150,7 +150,7 @@ has at least one decomposition with the required properties.
 
 ::: pf-proof
 
-Steps <1>2--<1>4 show that the vectors constructed in step <1>1 satisfy
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that the vectors constructed in step [](#s1-1){.pf-ref} satisfy
 \[
 v=v_1+v_2,
 \qquad
@@ -163,7 +163,7 @@ T(v_2)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Suppose
 \[
@@ -202,9 +202,9 @@ w_1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Under the hypotheses of step <1>6,
+Under the hypotheses of step [](#s1-6){.pf-ref},
 \[
 w_2=v-Tv.
 \]
@@ -216,7 +216,7 @@ Since
 \[
 v=w_1+w_2
 \]
-and step <1>6 gives
+and step [](#s1-6){.pf-ref} gives
 \[
 w_1=Tv,
 \]
@@ -229,18 +229,18 @@ w_2=v-w_1=v-Tv.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the decomposition is unique.
 
 
 ::: pf-proof
 
-Steps <1>6--<1>7 show that any decomposition with the required properties must equal
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} show that any decomposition with the required properties must equal
 \[
 Tv+(v-Tv),
 \]
-which is exactly the decomposition from step <1>1.
+which is exactly the decomposition from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -267,7 +267,7 @@ Uniqueness of the decomposition means the sum is direct.
 
 ::: pf-qed
 
-Steps <1>5 and <1>8 prove existence and uniqueness of the required decomposition.
+Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref} prove existence and uniqueness of the required decomposition.
 
 :::
 

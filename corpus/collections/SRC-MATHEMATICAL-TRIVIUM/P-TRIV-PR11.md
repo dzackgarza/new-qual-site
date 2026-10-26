@@ -24,7 +24,7 @@ Interpret the stated infinitesimal law as a constant conditional collision rate:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The survival probability satisfies
 \[
@@ -41,7 +41,7 @@ For the waiting time to exceed $t+\Delta t$, it must first exceed $t$ and then n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence
 \[
@@ -51,7 +51,7 @@ P'(t)=-\lambda P(t).
 
 ::: pf-proof
 
-Subtract $P(t)$ from step <1>1, divide by $\Delta t$, and let $\Delta t\to0$:
+Subtract $P(t)$ from step [](#s1-1){.pf-ref}, divide by $\Delta t$, and let $\Delta t\to0$:
 \[
 \frac{P(t+\Delta t)-P(t)}{\Delta t}
 =-\lambda P(t)+P(t)o(1).
@@ -61,7 +61,7 @@ Subtract $P(t)$ from step <1>1, divide by $\Delta t$, and let $\Delta t\to0$:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The initial condition is
 \[
@@ -77,7 +77,7 @@ Immediately after the collision at time $0$, the waiting time to the next collis
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -88,7 +88,7 @@ Therefore
 
 ::: pf-proof
 
-The unique solution of the differential equation in step <1>2 with the initial condition in step <1>3 is $P(t)=e^{-\lambda t}$.
+The unique solution of the differential equation in step [](#s1-2){.pf-ref} with the initial condition in step [](#s1-3){.pf-ref} is $P(t)=e^{-\lambda t}$.
 
 :::
 
@@ -96,7 +96,7 @@ The unique solution of the differential equation in step <1>2 with the initial c
 
 ::: pf-qed
 
-Step <1>4 gives the probability that the intercollision time exceeds $t$.
+Step [](#s1-4){.pf-ref} gives the probability that the intercollision time exceeds $t$.
 
 :::
 

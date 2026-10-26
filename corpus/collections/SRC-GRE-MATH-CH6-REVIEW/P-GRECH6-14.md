@@ -28,7 +28,7 @@ Let $H$ be the set of all group homomorphisms $\phi\colon \ZZ_3 \to \ZZ_6$. How 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A homomorphism $\phi\colon\ZZ_3\to\ZZ_6$ is determined uniquely by $\phi(\overline1)$.
 
@@ -45,7 +45,7 @@ so fixing the image of $\overline1$ fixes the entire homomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The possible values of $\phi(\overline1)$ are exactly $\overline0$, $\overline2$, and $\overline4$ in $\ZZ_6$.
 
@@ -62,7 +62,7 @@ in $\ZZ_6$. For $a\in\{0,1,2,3,4,5\}$, the congruence $3a\equiv0\pmod6$ holds ex
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence $H$ contains
 $$
@@ -73,7 +73,7 @@ functions, so the answer is (C).
 
 ::: pf-proof
 
-By step <1>1, distinct allowed images of $\overline1$ give distinct homomorphisms, and step <1>2 gives exactly three allowed images.
+By step [](#s1-1){.pf-ref}, distinct allowed images of $\overline1$ give distinct homomorphisms, and step [](#s1-2){.pf-ref} gives exactly three allowed images.
 
 :::
 
@@ -81,7 +81,7 @@ By step <1>1, distinct allowed images of $\overline1$ give distinct homomorphism
 
 ::: pf-qed
 
-Step <1>3 gives the requested cardinality.
+Step [](#s1-3){.pf-ref} gives the requested cardinality.
 
 :::
 

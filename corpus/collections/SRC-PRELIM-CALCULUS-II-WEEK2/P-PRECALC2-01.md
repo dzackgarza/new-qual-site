@@ -17,7 +17,7 @@ What is the length of the curve $( x ( t ) , y ( t ) ) = ( \cos ( t ) , \sin ( t
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The coordinate derivatives are
 \[
@@ -42,7 +42,7 @@ y(t)=\sin t.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The speed of the parametrized curve is
 \[
@@ -53,7 +53,7 @@ The speed of the parametrized curve is
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 \sqrt{x'(t)^2+y'(t)^2}
@@ -86,13 +86,13 @@ L
 ::: pf-proof
 
 Apply the arc-length formula for a \(C^1\) parametrized plane curve and use
-step <1>2.
+step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -115,7 +115,7 @@ Evaluate
 
 ::: pf-qed
 
-Step <1>4 is the requested length.
+Step [](#s1-4){.pf-ref} is the requested length.
 
 :::
 

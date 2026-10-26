@@ -27,7 +27,7 @@ Prove that $K$ is compact.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every Cauchy sequence in $K$ converges to a point of $K$.
 
@@ -46,7 +46,7 @@ Thus $K$ is complete.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every sequence in $K$ has a Cauchy subsequence.
 
@@ -98,22 +98,22 @@ Thus $(y_j)$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every sequence in $K$ has a convergent subsequence with limit in $K$.
 
 
 ::: pf-proof
 
-By step <1>2, every sequence has a Cauchy subsequence.
-By step <1>1, every Cauchy sequence in $K$ converges to a point of $K$.
+By step [](#s1-2){.pf-ref}, every sequence has a Cauchy subsequence.
+By step [](#s1-1){.pf-ref}, every Cauchy sequence in $K$ converges to a point of $K$.
 Therefore $K$ is sequentially compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A sequentially compact metric space is totally bounded.
 
@@ -148,7 +148,7 @@ Thus $Y$ is totally bounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every sequentially compact metric space is compact.
 
@@ -200,7 +200,7 @@ B(y,r)
 a contradiction.
 Thus some $\delta>0$ is a Lebesgue number for the cover.
 
-By step <1>4, $Y$ is totally bounded, so finitely many balls of radius $\delta/2$ cover $Y$.
+By step [](#s1-4){.pf-ref}, $Y$ is totally bounded, so finitely many balls of radius $\delta/2$ cover $Y$.
 Each such ball has diameter less than $\delta$, hence is contained in some member of $\mathcal U$.
 Choosing one member of $\mathcal U$ for each ball gives a finite subcover.
 Therefore $Y$ is compact.
@@ -209,7 +209,7 @@ Therefore $Y$ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -219,7 +219,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 gives sequential compactness of $K$, and step <1>5 gives compactness.
+Step [](#s1-3){.pf-ref} gives sequential compactness of $K$, and step [](#s1-5){.pf-ref} gives compactness.
 
 :::
 
@@ -227,7 +227,7 @@ Step <1>3 gives sequential compactness of $K$, and step <1>5 gives compactness.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -21,7 +21,7 @@ Find the surface area of a body formed by rotation of a curve $y = \sin x$ aroun
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a graph $y=y(x)\geq0$ rotated about the $x$-axis, the surface area is
 $$
@@ -43,7 +43,7 @@ This is the standard surface-of-revolution formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -79,14 +79,14 @@ $$
 
 ::: pf-proof
 
-On $[0,\pi]$, one has $\sin x\geq0$. Substitute step <1>2 into the formula
-from step <1>1.
+On $[0,\pi]$, one has $\sin x\geq0$. Substitute step [](#s1-2){.pf-ref} into the formula
+from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Set
 $$
@@ -112,7 +112,7 @@ Differentiate $u=\cos x$ and evaluate the endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -132,13 +132,13 @@ $$
 
 ::: pf-proof
 
-Use step <1>4. The integrand is even, giving the second equality.
+Use step [](#s1-4){.pf-ref}. The integrand is even, giving the second equality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 An antiderivative is
 $$
@@ -169,7 +169,7 @@ The derivative simplifies to $\sqrt{1+u^2}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -188,13 +188,13 @@ $$
 
 ::: pf-proof
 
-Evaluate the antiderivative from step <1>6 at $u=1$ and $u=0$.
+Evaluate the antiderivative from step [](#s1-6){.pf-ref} at $u=1$ and $u=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since
 $$
@@ -219,7 +219,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>7 into step <1>5 and use the logarithmic formula for
+Substitute step [](#s1-7){.pf-ref} into step [](#s1-5){.pf-ref} and use the logarithmic formula for
 $\operatorname{arsinh}$.
 
 :::
@@ -228,7 +228,7 @@ $\operatorname{arsinh}$.
 
 ::: pf-qed
 
-Step <1>8 is the required surface area.
+Step [](#s1-8){.pf-ref} is the required surface area.
 
 :::
 

@@ -38,7 +38,7 @@ r=\operatorname{rank}(B).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $r=0$, then the desired inequality is immediate.
 
@@ -104,7 +104,7 @@ By construction, $D\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists $N$ such that
 \[
@@ -139,7 +139,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $n\ge N$,
 \[
@@ -149,14 +149,14 @@ For every $n\ge N$,
 
 ::: pf-proof
 
-By step <1>4, $A_n$ has a nonzero $r\times r$ minor for every sufficiently large $n$.
+By step [](#s1-4){.pf-ref}, $A_n$ has a nonzero $r\times r$ minor for every sufficiently large $n$.
 Hence its rank is at least $r$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -170,8 +170,8 @@ Therefore
 
 ::: pf-proof
 
-If $r=0$, use step <1>1.
-If $r>0$, step <1>5 shows that the ranks are eventually bounded below by
+If $r=0$, use step [](#s1-1){.pf-ref}.
+If $r>0$, step [](#s1-5){.pf-ref} shows that the ranks are eventually bounded below by
 \[
 r=\operatorname{rank}(B).
 \]
@@ -183,7 +183,7 @@ Hence their lower limit is at least $r$.
 
 ::: pf-qed
 
-Step <1>6 is the required inequality.
+Step [](#s1-6){.pf-ref} is the required inequality.
 
 :::
 

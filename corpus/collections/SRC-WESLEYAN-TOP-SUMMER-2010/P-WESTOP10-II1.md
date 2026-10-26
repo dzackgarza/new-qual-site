@@ -35,7 +35,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (1), let
 \[
@@ -91,7 +91,7 @@ By van Kampen,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently,
 \[
@@ -125,7 +125,7 @@ resulting group is the free product
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (2), let $X_2$ be the presentation complex with one
 $0$-cell, two $1$-cells $x,y$, and three $2$-cells attached along
@@ -168,7 +168,7 @@ relations.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The group in part (2) is the Klein four group:
 \[
@@ -215,7 +215,7 @@ and the multiplication is that of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The literal printed statement in part (3) is satisfied, for example,
 by taking
@@ -248,7 +248,7 @@ Thus the literal extracted condition is satisfied.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The contrastive word “but” strongly suggests that part (3) intended
 \[
@@ -366,7 +366,7 @@ Therefore the complete response is:
 
 ::: pf-proof
 
-This is the collection of steps <1>1--<1>6.
+This is the collection of steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -374,8 +374,8 @@ This is the collection of steps <1>1--<1>6.
 
 ::: pf-qed
 
-Steps <1>1--<1>4 solve the two presentation-realization problems.
-Steps <1>5--<1>6 answer both the literal and likely intended readings of
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} solve the two presentation-realization problems.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} answer both the literal and likely intended readings of
 the ambiguous third subproblem.
 
 :::

@@ -28,7 +28,7 @@ What's the equation of all points in the $xy$-plane that are equidistant from th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A point $(x,y)$ is equidistant from $(-1,4)$ and $(5,-2)$ exactly when
 $$
@@ -50,7 +50,7 @@ The distances are nonnegative, so they are equal exactly when their squares are 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The locus is
 $$
@@ -61,7 +61,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Expanding the equation in step <1>1 gives
+Expanding the equation in step [](#s1-1){.pf-ref} gives
 $$
 x^2+2x+1+y^2-8y+16
 =x^2-10x+25+y^2+4y+4.
@@ -78,7 +78,7 @@ equivalently $x-y=1$.
 
 ::: pf-qed
 
-Step <1>2 gives the complete equidistance locus and identifies the corresponding choice.
+Step [](#s1-2){.pf-ref} gives the complete equidistance locus and identifies the corresponding choice.
 
 :::
 

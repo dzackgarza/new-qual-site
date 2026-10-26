@@ -38,7 +38,7 @@ be the eigenvalues of $A$, counted with algebraic multiplicity.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The trace identities give
 \[
@@ -76,7 +76,7 @@ Substitute the given traces.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -88,7 +88,7 @@ One has
 
 ::: pf-proof
 
-Square the first identity from step <1>1:
+Square the first identity from step [](#s1-1){.pf-ref}:
 \[
 16
 =
@@ -113,7 +113,7 @@ e_2=5.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -152,7 +152,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The characteristic polynomial of $A$ is
 \[
@@ -180,7 +180,7 @@ t^3
 -
 \lambda_1\lambda_2\lambda_3.
 \]
-Use steps <1>1--<1>3 to obtain
+Use steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} to obtain
 \[
 t^3-4t^2+5t-2.
 \]
@@ -193,20 +193,20 @@ Factoring gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the eigenvalue $1$ has algebraic multiplicity $2$, and the eigenvalue $2$ has algebraic multiplicity $1$.
 
 
 ::: pf-proof
 
-This follows directly from the factorization in step <1>4.
+This follows directly from the factorization in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For the eigenvalue $2$, the only possible Jordan block is
 \[
@@ -216,14 +216,14 @@ For the eigenvalue $2$, the only possible Jordan block is
 
 ::: pf-proof
 
-Its algebraic multiplicity is $1$ by step <1>5.
+Its algebraic multiplicity is $1$ by step [](#s1-5){.pf-ref}.
 Therefore the total size of all Jordan blocks carrying eigenvalue $2$ is $1$, so there is exactly one $1\times1$ block.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For the eigenvalue $1$, there are exactly two possible Jordan block patterns:
 \[
@@ -257,7 +257,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently there are exactly two similarity classes, represented by
 \[
@@ -283,14 +283,14 @@ and
 
 ::: pf-proof
 
-Combine the unique block for eigenvalue $2$ from step <1>6 with each of the two possibilities for eigenvalue $1$ from step <1>7.
+Combine the unique block for eigenvalue $2$ from step [](#s1-6){.pf-ref} with each of the two possibilities for eigenvalue $1$ from step [](#s1-7){.pf-ref}.
 Jordan normal form classifies complex matrices up to similarity, so these two block patterns give exactly the two similarity classes.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Both representatives satisfy the three trace conditions.
 
@@ -320,7 +320,7 @@ Thus both listed classes actually occur.
 
 ::: pf-qed
 
-Step <1>8 gives all similarity classes, and step <1>9 verifies that both satisfy the hypotheses.
+Step [](#s1-8){.pf-ref} gives all similarity classes, and step [](#s1-9){.pf-ref} verifies that both satisfy the hypotheses.
 
 :::
 

@@ -23,7 +23,7 @@ What is the image of $A$ under the map $f(z)=z^2$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(z=x+iy\in A\), then
 \[
@@ -50,7 +50,7 @@ f(A)\subseteq\{w:\operatorname{Im}w>2\}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every \(w\) with \(\operatorname{Im}w>2\) is equal to \(z^2\) for some \(z\in A\).
 
@@ -76,7 +76,7 @@ hence \(xy>1\). Therefore \(z\in A\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The image is
 \[
@@ -86,7 +86,7 @@ The image is
 
 ::: pf-proof
 
-Step <1>1 gives one inclusion and step <1>2 gives the reverse inclusion.
+Step [](#s1-1){.pf-ref} gives one inclusion and step [](#s1-2){.pf-ref} gives the reverse inclusion.
 
 :::
 
@@ -94,7 +94,7 @@ Step <1>1 gives one inclusion and step <1>2 gives the reverse inclusion.
 
 ::: pf-qed
 
-Step <1>3 determines the requested image.
+Step [](#s1-3){.pf-ref} determines the requested image.
 
 :::
 

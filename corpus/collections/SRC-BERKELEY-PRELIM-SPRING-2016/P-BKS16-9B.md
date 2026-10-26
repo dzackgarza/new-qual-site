@@ -33,7 +33,7 @@ Let $p$ be a prime number. Prove that every group $G$ of order $p^2$ is commutat
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The center $Z(G)$ has order divisible by $p$, and therefore
 $$
@@ -65,7 +65,7 @@ The center contains the identity, so it is nonempty; its order divides $p^2$. He
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $|Z(G)|=p^2$, then $G$ is abelian. If $|Z(G)|=p$, then $G/Z(G)$ is cyclic.
 
@@ -84,7 +84,7 @@ Every group of prime order is cyclic, so $G/Z(G)$ is cyclic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $G/Z(G)$ is cyclic, then $G$ is abelian.
 
@@ -111,14 +111,14 @@ Thus every pair of elements commutes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The group $G$ is abelian.
 
 
 ::: pf-proof
 
-By step <1>1, the center has order $p$ or $p^2$. The case $p^2$ is abelian by step <1>2. In the case $p$, step <1>2 gives that $G/Z(G)$ is cyclic, and step <1>3 then gives that $G$ is abelian.
+By step [](#s1-1){.pf-ref}, the center has order $p$ or $p^2$. The case $p^2$ is abelian by step [](#s1-2){.pf-ref}. In the case $p$, step [](#s1-2){.pf-ref} gives that $G/Z(G)$ is cyclic, and step [](#s1-3){.pf-ref} then gives that $G$ is abelian.
 
 :::
 
@@ -126,7 +126,7 @@ By step <1>1, the center has order $p$ or $p^2$. The case $p^2$ is abelian by st
 
 ::: pf-qed
 
-Step <1>4 proves the assertion.
+Step [](#s1-4){.pf-ref} proves the assertion.
 
 :::
 

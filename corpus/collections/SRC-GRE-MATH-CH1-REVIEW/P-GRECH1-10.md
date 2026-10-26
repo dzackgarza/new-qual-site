@@ -28,7 +28,7 @@ Every point on the parabola $y = \sqrt{2x - 1}$ is equidistant from the $y$-axis
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every point $(x,y)$ on the given graph is equidistant from the $y$-axis and $(1,0)$.
 
@@ -51,7 +51,7 @@ Because $x>0$, the distance to $(1,0)$ is also $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The required point is uniquely
 $$
@@ -66,7 +66,7 @@ The graph contains $(1,1)$. If a point $(p,0)$ is equidistant from every point o
 $$
 (1-p)^2+1=1,
 $$
-so $p=1$. Step <1>1 shows that this value indeed works for every point on the graph.
+so $p=1$. Step [](#s1-1){.pf-ref} shows that this value indeed works for every point on the graph.
 
 :::
 
@@ -74,7 +74,7 @@ so $p=1$. Step <1>1 shows that this value indeed works for every point on the gr
 
 ::: pf-qed
 
-Step <1>2 identifies the unique listed point with the required property.
+Step [](#s1-2){.pf-ref} identifies the unique listed point with the required property.
 
 :::
 

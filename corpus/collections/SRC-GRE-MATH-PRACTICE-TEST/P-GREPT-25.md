@@ -27,7 +27,7 @@ $\int_{-1/2}^{1/2} \frac{dx}{1 - x^2} =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On $[-1/2,1/2]$,
 $$
@@ -48,7 +48,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An antiderivative on this interval is
 $$
@@ -58,7 +58,7 @@ $$
 
 ::: pf-proof
 
-Integrating the decomposition from step <1>1 gives
+Integrating the decomposition from step [](#s1-1){.pf-ref} gives
 $$
 \frac12\log(1+x)-\frac12\log(1-x)
 =\frac12\log\frac{1+x}{1-x}.
@@ -69,7 +69,7 @@ Both $1+x$ and $1-x$ are positive on the interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -81,7 +81,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \int_{-1/2}^{1/2}\frac{dx}{1-x^2}
@@ -99,7 +99,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the required integral.
+Step [](#s1-3){.pf-ref} gives the required integral.
 
 :::
 

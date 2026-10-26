@@ -48,7 +48,7 @@ The function $t^{\sigma-1}$ is integrable near $0$, and the exponential factor m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 $$
@@ -75,7 +75,7 @@ and the right-hand side is integrable on $[1,\infty)$. The same argument, with a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\operatorname{Re}z>0$,
 $$
@@ -112,7 +112,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series
 $$
@@ -152,7 +152,7 @@ The second summand is holomorphic near $-m$, so $B$ has at worst a simple pole t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function
 $$
@@ -163,7 +163,7 @@ is a meromorphic continuation of $\Gamma$ to all of $\CC$.
 
 ::: pf-proof
 
-By steps <1>2 and <1>4, $A+B$ is meromorphic on $\CC$. For $\operatorname{Re}z>0$, step <1>3 gives
+By steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, $A+B$ is meromorphic on $\CC$. For $\operatorname{Re}z>0$, step [](#s1-3){.pf-ref} gives
 $$
 \begin{aligned}
 \widetilde\Gamma(z)
@@ -183,7 +183,7 @@ Thus $\widetilde\Gamma$ agrees with the original Gamma function on its half-plan
 
 ::: pf-qed
 
-Step <1>5 gives the required meromorphic continuation.
+Step [](#s1-5){.pf-ref} gives the required meromorphic continuation.
 
 :::
 

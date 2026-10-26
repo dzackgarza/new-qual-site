@@ -25,7 +25,7 @@ Find the presentation complex $X_H$ and then find its universal cover $\widetild
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The presentation complex $X_H$ has one $0$-cell, one $1$-cell, and one $2$-cell.
 
@@ -40,7 +40,7 @@ There is one relator $x^6$, so one $2$-cell is attached to that circle by traver
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently,
 \[
@@ -54,7 +54,7 @@ S^1\cup_{z\mapsto z^6}D^2.
 
 ::: pf-proof
 
-By step <1>1, the attaching map of the unique $2$-cell wraps its boundary six times around the unique $1$-cell. After identifying both boundary and $1$-skeleton with $S^1$, this is exactly the degree-$6$ map
+By step [](#s1-1){.pf-ref}, the attaching map of the unique $2$-cell wraps its boundary six times around the unique $1$-cell. After identifying both boundary and $1$-skeleton with $S^1$, this is exactly the degree-$6$ map
 \[
 z\longmapsto z^6.
 \]
@@ -123,7 +123,7 @@ with respect to the generator $x$: multiplication by $x$ sends the vertex labele
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Attach six $2$-cells
 \[
@@ -144,7 +144,7 @@ Starting at $v_j$, the path successively traverses all six edges and returns to 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There is a cellular map
 \[
@@ -165,9 +165,9 @@ which is exactly the attaching map of the $2$-cell of $X_H$. Therefore the map o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The map $p$ in step <1>6 is a $6$-sheeted covering map.
+The map $p$ in step [](#s1-6){.pf-ref} is a $6$-sheeted covering map.
 
 
 ::: pf-proof
@@ -182,7 +182,7 @@ Thus every point of $X_H$ has an evenly covered neighborhood, and every fiber co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The space $Y$ is simply connected.
 
@@ -208,7 +208,7 @@ Attaching the remaining $2$-cells cannot create new fundamental-group elements; 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -221,19 +221,19 @@ where $Y$ is six disks glued along their common boundary circle.
 
 ::: pf-proof
 
-By steps <1>7 and <1>8,
+By steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref},
 \[
 p:Y\to X_H
 \]
 is a connected covering whose total space is simply connected. Therefore it is the universal covering.
 
-By step <1>5, the common $1$-skeleton is the hexagonal circle and each of the six $2$-cells is attached to it by a homeomorphism of its boundary. Thus, as a space, $Y$ is precisely six closed disks glued along the same boundary circle.
+By step [](#s1-5){.pf-ref}, the common $1$-skeleton is the hexagonal circle and each of the six $2$-cells is attached to it by a homeomorphism of its boundary. Thus, as a space, $Y$ is precisely six closed disks glued along the same boundary circle.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 In particular,
 \[
@@ -288,7 +288,7 @@ Both spaces are simply connected CW complexes, so Whitehead's theorem makes this
 
 ::: pf-qed
 
-Step <1>2 identifies the presentation complex exactly, and step <1>9 identifies its universal cover exactly; step <1>10 records its familiar homotopy type.
+Step [](#s1-2){.pf-ref} identifies the presentation complex exactly, and step [](#s1-9){.pf-ref} identifies its universal cover exactly; step [](#s1-10){.pf-ref} records its familiar homotopy type.
 
 :::
 

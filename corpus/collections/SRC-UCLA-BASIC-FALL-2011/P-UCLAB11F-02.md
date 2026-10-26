@@ -42,7 +42,7 @@ g(t)=f(y+tv),
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative of $g$ is
 \[
@@ -58,7 +58,7 @@ This follows from the chain rule, since $f$ is continuously differentiable and t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $0\le s<t\le1$,
 \[
@@ -71,7 +71,7 @@ c(t-s)\|v\|^2
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 g'(t)-g'(s)
@@ -101,20 +101,20 @@ Divide by the positive number $t-s$ to obtain the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $g'$ is nondecreasing on $[0,1]$.
 
 
 ::: pf-proof
 
-This is the second inequality in step <1>2.
+This is the second inequality in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $0\le\alpha\le1$,
 \[
@@ -138,7 +138,7 @@ g(1)-g(\alpha)
 =
 \int_\alpha^1g'(t)\,dt.
 \]
-Because $g'$ is nondecreasing by step <1>3,
+Because $g'$ is nondecreasing by step [](#s1-3){.pf-ref},
 \[
 \frac1\alpha\int_0^\alpha g'(t)\,dt
 \le
@@ -162,7 +162,7 @@ The cases $\alpha=0,1$ are equalities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -189,13 +189,13 @@ f(y+\alpha(x-y))
 =
 f(\alpha x+(1-\alpha)y).
 \]
-Substitute these identities into step <1>4.
+Substitute these identities into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -205,7 +205,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 is exactly the defining convexity inequality.
+Step [](#s1-5){.pf-ref} is exactly the defining convexity inequality.
 
 :::
 
@@ -213,7 +213,7 @@ Step <1>5 is exactly the defining convexity inequality.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

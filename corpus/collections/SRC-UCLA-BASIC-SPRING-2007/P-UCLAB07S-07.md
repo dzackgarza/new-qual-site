@@ -36,7 +36,7 @@ M=\sup_{x\in\mathbb R}|f''(x)|<\infty.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $\delta>0$ such that
 \[
@@ -79,7 +79,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x$ with
 \[
@@ -105,7 +105,7 @@ The hypotheses hold because $f\in C^2(\mathbb R)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 \[
@@ -123,7 +123,7 @@ for some $\xi$ between $x$ and $x^*$.
 
 ::: pf-proof
 
-From step <1>2 and
+From step [](#s1-2){.pf-ref} and
 \[
 f(x^*)=0,
 \]
@@ -170,7 +170,7 @@ x-x^*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For all $x$ with
 \[
@@ -192,7 +192,7 @@ C=\frac{M}{|f'(x^*)|}.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 |F(x)-x^*|
 \le
@@ -203,7 +203,7 @@ The bound on $f''$ gives
 \[
 |f''(\xi)|\le M,
 \]
-while step <1>1 gives
+while step [](#s1-1){.pf-ref} gives
 \[
 2|f'(x)|
 \ge
@@ -221,7 +221,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Shrink $\delta$ if necessary so that
 \[
@@ -239,7 +239,7 @@ implies
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 |F(x)-x^*|
 \le
@@ -256,7 +256,7 @@ C\delta|x-x^*|
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -276,12 +276,12 @@ Suppose
 \[
 |x_{n-1}-x^*|\le\delta.
 \]
-Then step <1>1 gives
+Then step [](#s1-1){.pf-ref} gives
 \[
 f'(x_{n-1})\ne0,
 \]
 so the Newton step is defined.
-Step <1>5 then gives
+Step [](#s1-5){.pf-ref} then gives
 \[
 |x_n-x^*|
 =
@@ -294,7 +294,7 @@ Step <1>5 then gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $n\ge1$,
 \[
@@ -308,12 +308,12 @@ C|x_{n-1}-x^*|^2
 
 ::: pf-proof
 
-By step <1>6, every iterate
+By step [](#s1-6){.pf-ref}, every iterate
 \[
 x_{n-1}
 \]
 lies within distance $\delta$ of $x^*$.
-Therefore step <1>4 applies to
+Therefore step [](#s1-4){.pf-ref} applies to
 \[
 x=x_{n-1},
 \]
@@ -332,7 +332,7 @@ C|x_{n-1}-x^*|^2.
 
 ::: pf-qed
 
-Step <1>7 is the required quadratic error estimate for all Newton iterates starting sufficiently close to the simple root.
+Step [](#s1-7){.pf-ref} is the required quadratic error estimate for all Newton iterates starting sufficiently close to the simple root.
 
 :::
 

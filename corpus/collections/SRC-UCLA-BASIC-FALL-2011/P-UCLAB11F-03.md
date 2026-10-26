@@ -62,7 +62,7 @@ for every $j$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sets $E_a$ are pairwise disjoint and
 \[
@@ -82,7 +82,7 @@ so $x$ belongs to exactly one $E_a$. This proves both the union and pairwise dis
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $a\in\Sigma$, the set $E_a$ is uncountable.
 
@@ -117,14 +117,14 @@ The set $\Sigma$ is uncountable by Cantor's diagonal argument. Hence $E_a$ is un
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There are uncountably many distinct sets $E_a$.
 
 
 ::: pf-proof
 
-By step <1>2, the sets $E_a$ are pairwise disjoint, and by step <1>3 each is nonempty. Therefore distinct sequences $a\in\Sigma$ give distinct sets $E_a$. Since $\Sigma$ is uncountable, the family
+By step [](#s1-2){.pf-ref}, the sets $E_a$ are pairwise disjoint, and by step [](#s1-3){.pf-ref} each is nonempty. Therefore distinct sequences $a\in\Sigma$ give distinct sets $E_a$. Since $\Sigma$ is uncountable, the family
 \[
 \{E_a:a\in\Sigma\}
 \]
@@ -134,7 +134,7 @@ is uncountable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Fix one sequence $a_0\in\Sigma$ and define
 \[
@@ -152,13 +152,13 @@ Then the sets $F_a$ are pairwise disjoint and
 
 ::: pf-proof
 
-The sets $E_a$ partition $C$ by step <1>2. The set $\mathbb R\setminus C$ is disjoint from every $E_a$, so adjoining it to exactly one member of the partition preserves pairwise disjointness and changes the union from $C$ to all of $\mathbb R$.
+The sets $E_a$ partition $C$ by step [](#s1-2){.pf-ref}. The set $\mathbb R\setminus C$ is disjoint from every $E_a$, so adjoining it to exactly one member of the partition preserves pairwise disjointness and changes the union from $C$ to all of $\mathbb R$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every $F_a$ is uncountable, and there are uncountably many of them.
 
@@ -169,17 +169,17 @@ For $a\ne a_0$,
 \[
 F_a=E_a
 \]
-is uncountable by step <1>3. Also
+is uncountable by step [](#s1-3){.pf-ref}. Also
 \[
 E_{a_0}\subseteq F_{a_0},
 \]
-so $F_{a_0}$ is uncountable as well. Step <1>4 shows that the indexing set yields uncountably many distinct members.
+so $F_{a_0}$ is uncountable as well. Step [](#s1-4){.pf-ref} shows that the indexing set yields uncountably many distinct members.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -192,7 +192,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly the partition constructed in steps <1>5--<1>6.
+This is exactly the partition constructed in steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -200,7 +200,7 @@ This is exactly the partition constructed in steps <1>5--<1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

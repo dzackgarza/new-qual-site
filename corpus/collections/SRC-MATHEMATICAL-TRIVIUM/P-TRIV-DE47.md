@@ -29,7 +29,7 @@ and write the heat equation as $T_t=\kappa T_{xx}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The stationary temperature profile is
 \[
@@ -69,7 +69,7 @@ Since $S''=0$, subtracting $S$ preserves the heat equation. The boundary values 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The separated Dirichlet expansion is
 \[
@@ -87,7 +87,7 @@ The Dirichlet eigenfunctions of $-d^2/dx^2$ on $(0,L)$ are $\sin(n\pi x/L)$ with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Fourier coefficients are
 \[
@@ -114,7 +114,7 @@ which yields the stated coefficient.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -129,7 +129,7 @@ T(x,t)=\frac{T_0x}{L}
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>3--<1>4. For $t>0$ the series satisfies the heat equation and both endpoint temperatures. As $t\to0^+$, its sine series equals $-T_0x/L$ for $0<x<L$, so the interior initial temperature is zero. The incompatibility at the corner $(L,0)$ is forced by the source data: the boundary prescribes $T(L,t)=T_0$ while the initial condition prescribes zero at $t=0$.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}. For $t>0$ the series satisfies the heat equation and both endpoint temperatures. As $t\to0^+$, its sine series equals $-T_0x/L$ for $0<x<L$, so the interior initial temperature is zero. The incompatibility at the corner $(L,0)$ is forced by the source data: the boundary prescribes $T(L,t)=T_0$ while the initial condition prescribes zero at $t=0$.
 
 :::
 
@@ -137,7 +137,7 @@ Combine steps <1>1 and <1>3--<1>4. For $t>0$ the series satisfies the heat equat
 
 ::: pf-qed
 
-Step <1>5 gives the temperature evolution for the stated fixed endpoint temperatures and zero interior initial temperature.
+Step [](#s1-5){.pf-ref} gives the temperature evolution for the stated fixed endpoint temperatures and zero interior initial temperature.
 
 :::
 

@@ -28,7 +28,7 @@ A population of bacteria grows at a rate proportional to the number present. Aft
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $N(t)$ denotes the population at time $t$, then
 $$
@@ -55,7 +55,7 @@ and hence $N(t)=Ae^{ct}$. Evaluating at $t=0$ gives $A=N(0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The tripling condition implies
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 3N(0)=N(2)=N(0)e^{2c}.
 $$
@@ -75,7 +75,7 @@ Since the population is nonzero, division by $N(0)$ gives the displayed identity
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 After four hours the population has increased by the factor
 $$
@@ -86,7 +86,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Using steps <1>1 and <1>2,
+Using steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
 $$
 \frac{N(4)}{N(0)}
 =e^{4c}
@@ -101,7 +101,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested growth factor and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested growth factor and corresponding choice.
 
 :::
 

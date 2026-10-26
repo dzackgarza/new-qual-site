@@ -44,7 +44,7 @@ $f$ means exactly that $f(0)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Successive use of the recursion gives
 $$
@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -82,7 +82,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Applying the recursion with $n=4$ and using step <1>2 gives
+Applying the recursion with $n=4$ and using step [](#s1-2){.pf-ref} gives
 $$
 f(8)=4^2+f(6)=16+14=30.
 $$
@@ -93,7 +93,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

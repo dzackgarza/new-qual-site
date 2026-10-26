@@ -62,7 +62,7 @@ Thus one of them is smaller than the other.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -84,7 +84,7 @@ so $v$ is an upper bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -98,7 +98,7 @@ u\le c\le v.
 
 ::: pf-proof
 
-The least-upper-bound property applies by step <1>3.
+The least-upper-bound property applies by step [](#s1-3){.pf-ref}.
 Since $u\in S$, one has $c\ge u$.
 Since $v$ is an upper bound for $S$, one has $c\le v$.
 
@@ -106,7 +106,7 @@ Since $v$ is an upper bound for $S$, one has $c\le v$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The point $c$ cannot belong to $U$.
 
@@ -146,7 +146,7 @@ contradicting that $c$ is an upper bound for $S$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The point $c$ cannot belong to $V$.
 
@@ -215,14 +215,14 @@ U\cap V=\varnothing.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The assumed separation is impossible.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 c\in[0,1].
 \]
@@ -231,13 +231,13 @@ Since
 [0,1]=U\cup V,
 \]
 the point $c$ must belong to either $U$ or $V$.
-Steps <1>5 and <1>6 rule out both possibilities.
+Steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref} rule out both possibilities.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -247,7 +247,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption that $[0,1]$ admits a separation leads to the contradiction in step <1>7.
+The assumption that $[0,1]$ admits a separation leads to the contradiction in step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -255,7 +255,7 @@ The assumption that $[0,1]$ admits a separation leads to the contradiction in st
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

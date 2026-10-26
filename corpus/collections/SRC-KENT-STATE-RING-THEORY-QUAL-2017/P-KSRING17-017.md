@@ -22,7 +22,7 @@ If $U _ { n } , U _ { m }$ are the units of $\mathbb { Z } _ { n }$ and $\mathbb
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The restriction
 $$
@@ -57,7 +57,7 @@ so $\varphi(\overline a)\in U_m$. Thus the restriction is well-defined and multi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -113,7 +113,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 $$
@@ -124,7 +124,7 @@ is surjective.
 
 ::: pf-proof
 
-Let $\overline a\in U_m$. Choose $b$ as in step <1>2. Then
+Let $\overline a\in U_m$. Choose $b$ as in step [](#s1-2){.pf-ref}. Then
 $$
 \overline b\in U_n
 $$
@@ -140,7 +140,7 @@ because $b\equiv a\pmod m$. Hence every unit modulo $m$ has a preimage in $U_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -153,7 +153,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>3.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
@@ -161,7 +161,7 @@ Combine steps <1>1 and <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

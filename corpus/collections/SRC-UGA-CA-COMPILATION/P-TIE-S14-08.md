@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $R>0$ such that on $\abs{z}=R$,
 $$
@@ -64,7 +64,7 @@ on the circle.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomials $P_n$ and $a_nz^n$ have the same number of zeros in $\abs{z}<R$, counted with multiplicity.
 
@@ -79,20 +79,20 @@ $$
 <
 \abs{a_nz^n}
 $$
-by step <1>1. Rouché's theorem therefore gives the same number of zeros for $P_n$ and $a_nz^n$ inside the circle, counted with multiplicity.
+by step [](#s1-1){.pf-ref}. Rouché's theorem therefore gives the same number of zeros for $P_n$ and $a_nz^n$ inside the circle, counted with multiplicity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $P_n$ has exactly $n$ zeros in $\CC$, counted with multiplicity.
 
 
 ::: pf-proof
 
-The polynomial $a_nz^n$ has the single zero $0$ with multiplicity $n$. By step <1>2, $P_n$ has exactly $n$ zeros in $\abs{z}<R$, counted with multiplicity. Hence it has $n$ complex zeros in total.
+The polynomial $a_nz^n$ has the single zero $0$ with multiplicity $n$. By step [](#s1-2){.pf-ref}, $P_n$ has exactly $n$ zeros in $\abs{z}<R$, counted with multiplicity. Hence it has $n$ complex zeros in total.
 
 :::
 
@@ -100,7 +100,7 @@ The polynomial $a_nz^n$ has the single zero $0$ with multiplicity $n$. By step <
 
 ::: pf-qed
 
-Step <1>3 is the Fundamental Theorem of Algebra.
+Step [](#s1-3){.pf-ref} is the Fundamental Theorem of Algebra.
 
 :::
 

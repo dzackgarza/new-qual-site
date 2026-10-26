@@ -26,7 +26,7 @@ Justify your answer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The unit group is
 $$
@@ -70,7 +70,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every element of $U_{24}$ has square equal to $\overline1$.
 
@@ -95,18 +95,18 @@ The identity also squares to itself. Hence every group element has order dividin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The group $U_{24}$ is not cyclic.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \abs{U_{24}}=8.
 $$
-A cyclic group of order $8$ must contain an element of order $8$. By step <1>2, every element of $U_{24}$ has order at most $2$. Therefore
+A cyclic group of order $8$ must contain an element of order $8$. By step [](#s1-2){.pf-ref}, every element of $U_{24}$ has order at most $2$. Therefore
 $$
 \boxed{
 U_{24}\text{ is not cyclic.}
@@ -119,7 +119,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>3 answers part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-3){.pf-ref} answers part (b).
 
 :::
 

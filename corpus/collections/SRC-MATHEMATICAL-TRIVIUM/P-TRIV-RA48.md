@@ -63,7 +63,7 @@ This is the definition of the Fourier transform applied to $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With
 $$
@@ -106,14 +106,14 @@ minus sign that changes $1/a$ to $1/|a|$. The argument remains $k/a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>2.
+This is step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -144,7 +144,7 @@ Again this is the Fourier-transform definition.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Set
 $$
@@ -192,14 +192,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -207,7 +207,7 @@ This is step <1>5.
 
 ::: pf-qed
 
-Steps <1>3 and <1>6 establish parts (a) and (b), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

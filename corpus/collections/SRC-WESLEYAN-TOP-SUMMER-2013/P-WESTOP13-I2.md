@@ -22,7 +22,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the hypotheses of part 1, the identity map
 $$
@@ -39,7 +39,7 @@ The map is bijective because it is the identity on the underlying set. Since $T_
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $(X,T_1)$ is compact and $(X,T_2)$ is Hausdorff, then
 $$
@@ -49,7 +49,7 @@ $$
 
 ::: pf-proof
 
-Let $C$ be closed in $(X,T_1)$. Since $(X,T_1)$ is compact, $C$ is compact. By continuity of the identity map from step <1>1, the same set $C$ is compact in $(X,T_2)$. Compact subsets of a Hausdorff space are closed, so $C$ is $T_2$-closed.
+Let $C$ be closed in $(X,T_1)$. Since $(X,T_1)$ is compact, $C$ is compact. By continuity of the identity map from step [](#s1-1){.pf-ref}, the same set $C$ is compact in $(X,T_2)$. Compact subsets of a Hausdorff space are closed, so $C$ is $T_2$-closed.
 
 Thus every $T_1$-closed set is $T_2$-closed, equivalently every $T_1$-open set is $T_2$-open. Hence
 $$
@@ -61,7 +61,7 @@ The assumed fineness gives $T_2\subseteq T_1$, so equality follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 As literally written, part 2 has one degenerate exception: if $J=\varnothing$, then $X$ is a one-point space and is compact. Hence the asserted noncompactness requires $J\ne\varnothing$.
 
@@ -74,7 +74,7 @@ The empty product of topological spaces is, by definition, a singleton. Every si
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Assume henceforth that $J\ne\varnothing$. Let $T$ be the given product topology on
 $$
@@ -94,7 +94,7 @@ Both the $K$-topology and the lower-limit topology on $\RR$ are finer than the u
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The space $(I^J,T_0)$ is Hausdorff.
 
@@ -107,7 +107,7 @@ The ordinary interval $I$ is Hausdorff, and an arbitrary product of Hausdorff sp
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $\alpha_0\in J$, the topology on the factor $Y_{\alpha_0}$ is strictly finer than the ordinary topology on $I$.
 
@@ -135,7 +135,7 @@ is open in the $K$-subspace topology. It is not open in the ordinary topology on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $J\ne\varnothing$, then
 $$
@@ -145,7 +145,7 @@ $$
 
 ::: pf-proof
 
-Choose $\alpha_0\in J$ and choose a set $U\subseteq I$ that is open in $Y_{\alpha_0}$ but not ordinary-open, as supplied by step <1>6. The cylinder
+Choose $\alpha_0\in J$ and choose a set $U\subseteq I$ that is open in $Y_{\alpha_0}$ but not ordinary-open, as supplied by step [](#s1-6){.pf-ref}. The cylinder
 $$
 W=\pi_{\alpha_0}^{-1}(U)
 $$
@@ -171,18 +171,18 @@ would be ordinary-open in $I$, contrary to the choice of $U$. Thus $W$ is not $T
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $J\ne\varnothing$, then the product space $(X,T)$ is not compact.
 
 
 ::: pf-proof
 
-Suppose $(X,T)$ were compact. By step <1>4, $T$ is finer than $T_0$, and by step <1>5, $(X,T_0)$ is Hausdorff. Part 1, proved in step <1>2, would then imply
+Suppose $(X,T)$ were compact. By step [](#s1-4){.pf-ref}, $T$ is finer than $T_0$, and by step [](#s1-5){.pf-ref}, $(X,T_0)$ is Hausdorff. Part 1, proved in step [](#s1-2){.pf-ref}, would then imply
 $$
 T=T_0.
 $$
-This contradicts step <1>7. Hence $(X,T)$ is not compact.
+This contradicts step [](#s1-7){.pf-ref}. Hence $(X,T)$ is not compact.
 
 :::
 
@@ -190,7 +190,7 @@ This contradicts step <1>7. Hence $(X,T)$ is not compact.
 
 ::: pf-qed
 
-Step <1>2 proves part 1. Step <1>8 proves the intended statement of part 2 for every nonempty index set $J$, while step <1>3 records the empty-product exception in the literal wording.
+Step [](#s1-2){.pf-ref} proves part 1. Step [](#s1-8){.pf-ref} proves the intended statement of part 2 for every nonempty index set $J$, while step [](#s1-3){.pf-ref} records the empty-product exception in the literal wording.
 
 :::
 

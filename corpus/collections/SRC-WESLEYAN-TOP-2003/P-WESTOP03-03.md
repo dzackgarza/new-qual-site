@@ -25,7 +25,7 @@ Characterize each of the following classes in terms of familiar intrinsic proper
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A space is homeomorphic to a subspace of a Hausdorff space if and only if it is Hausdorff.
 
@@ -38,7 +38,7 @@ Every subspace of a Hausdorff space is Hausdorff: distinct points can be separat
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every topological space is homeomorphic to a subspace of a compact space, when no separation axiom is imposed on the compact ambient space.
 
@@ -55,7 +55,7 @@ Declare the open sets of $X^*$ to be all open subsets of $X$, together with $X^*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A space is homeomorphic to a subspace of a compact Hausdorff space if and only if it is Tychonoff, i.e. completely regular and Hausdorff.
 
@@ -72,7 +72,7 @@ for a suitable index set $I$ (for example using its continuous $[0,1]$-valued fu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A space is homeomorphic to an open subspace of a compact Hausdorff space if and only if it is locally compact Hausdorff.
 
@@ -89,7 +89,7 @@ is compact Hausdorff and $X=X^+\setminus\{\infty\}$ is open. If $X$ is already c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every topological space is homeomorphic to a subspace of a path-connected space.
 
@@ -116,7 +116,7 @@ joins it to $v$. Thus every point can be joined to $v$, so $CX$ is path connecte
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently the requested characterizations are
 \[
@@ -134,7 +134,7 @@ Consequently the requested characterizations are
 
 ::: pf-proof
 
-The five rows are exactly steps <1>1--<1>5.
+The five rows are exactly steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -142,7 +142,7 @@ The five rows are exactly steps <1>1--<1>5.
 
 ::: pf-qed
 
-Step <1>6 collects the five required characterizations with the constructions and necessity arguments established above.
+Step [](#s1-6){.pf-ref} collects the five required characterizations with the constructions and necessity arguments established above.
 
 :::
 

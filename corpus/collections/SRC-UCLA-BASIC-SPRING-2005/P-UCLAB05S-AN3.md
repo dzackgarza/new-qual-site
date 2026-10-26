@@ -33,7 +33,7 @@ Show that $f$ is proper.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), the map
 $$
@@ -50,7 +50,7 @@ The map is not injective because $f(x)=f(-x)$. Let $K\subseteq\RR$ be compact. T
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For part (b), the constant map
 $$
@@ -91,7 +91,7 @@ Since $f$ is $C^1$, the derivative $f'$ is continuous. The inequality $|f'(x)|\g
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $x\in\RR$,
 $$
@@ -115,14 +115,14 @@ Thus the desired inequality holds. The case $f'\le-1$ is identical after replaci
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is proper.
 
 
 ::: pf-proof
 
-Let $K\subseteq\RR$ be compact. Choose $M\ge0$ such that $K\subseteq[-M,M]$. If $x\in f^{-1}(K)$, then $|f(x)|\le M$. By step <1>4,
+Let $K\subseteq\RR$ be compact. Choose $M\ge0$ such that $K\subseteq[-M,M]$. If $x\in f^{-1}(K)$, then $|f(x)|\le M$. By step [](#s1-4){.pf-ref},
 $$
 |x|\le|f(x)-f(0)|\le |f(x)|+|f(0)|\le M+|f(0)|.
 $$
@@ -134,7 +134,7 @@ Hence $f^{-1}(K)$ is bounded. It is also closed because $K$ is closed and $f$ is
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the requested examples, and step <1>5 proves part (c).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the requested examples, and step [](#s1-5){.pf-ref} proves part (c).
 
 :::
 

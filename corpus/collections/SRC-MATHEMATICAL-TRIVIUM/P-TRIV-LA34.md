@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 At $\lambda=0$,
 $$
@@ -82,13 +82,13 @@ $$
 
 ::: pf-proof
 
-Substitute $\lambda=0$ into the definitions in step <1>1.
+Substitute $\lambda=0$ into the definitions in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, to first order,
 $$
@@ -102,26 +102,26 @@ $$
 
 ::: pf-proof
 
-Apply the Taylor expansion of $F$ at $\lambda=0$ using step <1>2.
+Apply the Taylor expansion of $F$ at $\lambda=0$ using step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>3.
+This is step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define recursively
 $$
@@ -148,13 +148,13 @@ e^{-\lambda B}[C_n,B]e^{\lambda B}
 =
 e^{-\lambda B}C_{n+1}e^{\lambda B},
 $$
-using the same calculation as in step <1>1.
+using the same calculation as in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 $$
@@ -164,13 +164,13 @@ $$
 
 ::: pf-proof
 
-Set $\lambda=0$ in step <1>5.
+Set $\lambda=0$ in step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the full expansion is
 $$
@@ -191,13 +191,13 @@ $$
 
 ::: pf-proof
 
-Taylor-expand $F$ at $0$ and use step <1>6.
+Taylor-expand $F$ at $0$ and use step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Equivalently,
 $$
@@ -219,20 +219,20 @@ $$
 
 ::: pf-proof
 
-Write out the first terms of the series in step <1>7.
+Write out the first terms of the series in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>7--<1>8 give the expansion to arbitrary order.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the expansion to arbitrary order.
 
 :::
 
@@ -240,7 +240,7 @@ Steps <1>7--<1>8 give the expansion to arbitrary order.
 
 ::: pf-qed
 
-Steps <1>4 and <1>9 establish parts (a) and (b), respectively.
+Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

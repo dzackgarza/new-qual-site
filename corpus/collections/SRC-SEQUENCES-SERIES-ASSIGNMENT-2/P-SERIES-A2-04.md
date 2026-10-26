@@ -24,7 +24,7 @@ the same limit \(a\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that
 \[
@@ -40,7 +40,7 @@ This is the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Then there exists
 \[
@@ -61,7 +61,7 @@ to \(a\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore one can choose a subsequence
 \[
@@ -77,8 +77,8 @@ for every \(k\).
 
 ::: pf-proof
 
-Choose \(n_1\) using step <1>2 with \(N=1\). After choosing \(n_k\), apply
-step <1>2 with \(N=n_k+1\) to choose \(n_{k+1}>n_k\) satisfying the same
+Choose \(n_1\) using step [](#s1-2){.pf-ref} with \(N=1\). After choosing \(n_k\), apply
+step [](#s1-2){.pf-ref} with \(N=n_k+1\) to choose \(n_{k+1}>n_k\) satisfying the same
 inequality.
 
 :::
@@ -117,7 +117,7 @@ subsequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By the hypothesis of part (a),
 \[
@@ -134,7 +134,7 @@ sequence, and every such subsequence is assumed to converge to \(a\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On the other hand,
 \[
@@ -148,7 +148,7 @@ Every term of the convergent subsubsequence satisfies
 \[
 |a_{n_{k_j}}-a|\ge\varepsilon
 \]
-by step <1>3. Passing to the limit and using continuity of
+by step [](#s1-3){.pf-ref}. Passing to the limit and using continuity of
 \(x\mapsto|x-a|\) gives
 \[
 |b-a|\ge\varepsilon.
@@ -160,7 +160,7 @@ by step <1>3. Passing to the limit and using continuity of
 
 ::: pf-step
 
-Steps <1>6 and <1>7 contradict one another.
+Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} contradict one another.
 
 
 ::: pf-proof
@@ -169,7 +169,7 @@ If \(b=a\), then
 \[
 |b-a|=0,
 \]
-but step <1>7 gives
+but step [](#s1-7){.pf-ref} gives
 \[
 |b-a|\ge\varepsilon>0.
 \]
@@ -178,7 +178,7 @@ but step <1>7 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -188,13 +188,13 @@ Therefore
 
 ::: pf-proof
 
-The assumption of nonconvergence in step <1>1 led to a contradiction.
+The assumption of nonconvergence in step [](#s1-1){.pf-ref} led to a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Suppose, toward a contradiction, that
 \[
@@ -210,7 +210,7 @@ Again this is the negation of the desired conclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Then there are
 \[
@@ -226,7 +226,7 @@ for every \(k\).
 
 ::: pf-proof
 
-Repeat the construction in steps <1>2--<1>3.
+Repeat the construction in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -244,7 +244,7 @@ a_{n_{k_j}}\to a.
 ::: pf-proof
 
 The stated property applies to every subsequence, including the one chosen in
-step <1>11.
+step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -265,31 +265,31 @@ there exists \(J\) such that for all \(j\ge J\),
 ::: pf-proof
 
 Apply the definition of convergence with the same positive
-\(\varepsilon\) from step <1>11.
+\(\varepsilon\) from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 This contradicts
 \[
 |a_{n_{k_j}}-a|\ge\varepsilon
 \]
-from step <1>11.
+from step [](#s1-11){.pf-ref}.
 
 
 ::: pf-proof
 
 The further subsequence is still a subsequence of \((a_{n_k})\), so every
-one of its terms satisfies the lower bound from step <1>11.
+one of its terms satisfies the lower bound from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -299,8 +299,8 @@ Therefore
 
 ::: pf-proof
 
-The nonconvergence assumption in step <1>10 leads to the contradiction in
-step <1>14.
+The nonconvergence assumption in step [](#s1-10){.pf-ref} leads to the contradiction in
+step [](#s1-14){.pf-ref}.
 
 :::
 
@@ -308,7 +308,7 @@ step <1>14.
 
 ::: pf-qed
 
-Step <1>9 proves part (a), and step <1>15 proves part (b).
+Step [](#s1-9){.pf-ref} proves part (a), and step [](#s1-15){.pf-ref} proves part (b).
 
 :::
 

@@ -43,7 +43,7 @@ By convention,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If \(n=0\), then necessarily \(m=0\).
 
@@ -76,7 +76,7 @@ This selects corresponding points under the homeomorphism.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The homeomorphism \(h\) restricts to a homeomorphism
 \[
@@ -99,7 +99,7 @@ it carries the complement of \(\{p\}\) exactly onto the complement of \(\{q\}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Translation gives
 \[
@@ -121,7 +121,7 @@ is a homeomorphism of \(\mathbb R^m\) sending \(q\) to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every \(k\ge1\),
 \[
@@ -156,7 +156,7 @@ Points already on \(S^{k-1}\) remain fixed. Thus this is a deformation retractio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -176,15 +176,15 @@ S^{m-1}}.
 
 ::: pf-proof
 
-For the \(n\)-dimensional space, \(p=0\), so apply step <1>6 directly. For the \(m\)-dimensional space, combine step <1>5 with step <1>6.
+For the \(n\)-dimensional space, \(p=0\), so apply step [](#s1-6){.pf-ref} directly. For the \(m\)-dimensional space, combine step [](#s1-5){.pf-ref} with step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-By steps <1>4 and <1>7,
+By steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref},
 \[
 \boxed{
 S^{n-1}\simeq S^{m-1}}.
@@ -199,7 +199,7 @@ Homeomorphic spaces are homotopy equivalent, and homotopy equivalence is transit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every \(r\ge0\),
 \[
@@ -220,7 +220,7 @@ This is the standard reduced homology computation for spheres.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since homotopy equivalent spaces have isomorphic homology groups,
 \[
@@ -233,7 +233,7 @@ for every \(j\).
 
 ::: pf-proof
 
-Apply homotopy invariance of reduced homology to step <1>8.
+Apply homotopy invariance of reduced homology to step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -255,13 +255,13 @@ one has
 
 ::: pf-proof
 
-Apply step <1>9 with \(r=n-1\).
+Apply step [](#s1-9){.pf-ref} with \(r=n-1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence
 \[
@@ -273,13 +273,13 @@ Hence
 
 ::: pf-proof
 
-Use the isomorphism from step <1>10.
+Use the isomorphism from step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -289,13 +289,13 @@ n-1=m-1.
 
 ::: pf-proof
 
-By step <1>9, the only degree in which \(S^{m-1}\) has nonzero reduced homology is degree \(m-1\). Step <1>12 shows its reduced homology is nonzero in degree \(n-1\). Hence these degrees are equal.
+By step [](#s1-9){.pf-ref}, the only degree in which \(S^{m-1}\) has nonzero reduced homology is degree \(m-1\). Step [](#s1-12){.pf-ref} shows its reduced homology is nonzero in degree \(n-1\). Hence these degrees are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Thus
 \[
@@ -305,7 +305,7 @@ Thus
 
 ::: pf-proof
 
-Add \(1\) to the equality in step <1>13. The zero-dimensional case was already handled in step <1>2.
+Add \(1\) to the equality in step [](#s1-13){.pf-ref}. The zero-dimensional case was already handled in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -313,7 +313,7 @@ Add \(1\) to the equality in step <1>13. The zero-dimensional case was already h
 
 ::: pf-qed
 
-Step <1>14 is the required invariance-of-dimension conclusion.
+Step [](#s1-14){.pf-ref} is the required invariance-of-dimension conclusion.
 
 :::
 

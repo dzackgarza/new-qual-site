@@ -27,7 +27,7 @@ be the standard parabola.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every straight line in $\mathbb R^2$ meets $C$ in at most two points.
 
@@ -61,7 +61,7 @@ This quadratic equation has at most two real roots. Hence the line meets $C$ in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -83,7 +83,7 @@ Intersect the assumed equality with $C$ and distribute intersection over the uni
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each set $C\cap S_i$ is finite.
 
@@ -94,26 +94,26 @@ Since
 \[
 C\cap S_i\subseteq C\cap L_i,
 \]
-step <1>1 shows that $C\cap S_i$ has at most two elements.
+step [](#s1-1){.pf-ref} shows that $C\cap S_i$ has at most two elements.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Under the assumption in step <1>2, the parabola $C$ would be countable.
+Under the assumption in step [](#s1-2){.pf-ref}, the parabola $C$ would be countable.
 
 
 ::: pf-proof
 
-By step <1>3, each $C\cap S_i$ is finite. A countable union of finite sets is countable, so the union in step <1>2 would be countable.
+By step [](#s1-3){.pf-ref}, each $C\cap S_i$ is finite. A countable union of finite sets is countable, so the union in step [](#s1-2){.pf-ref} would be countable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The parabola $C$ is uncountable.
 
@@ -132,14 +132,14 @@ is a bijection. Since $\mathbb R$ is uncountable, so is $C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $\mathbb R^2$ cannot be a countable union of subsets of straight lines.
 
 
 ::: pf-proof
 
-Steps <1>4 and <1>5 contradict the assumption in step <1>2. Hence no such countable family $(S_i)$ can cover $\mathbb R^2$.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in step [](#s1-2){.pf-ref}. Hence no such countable family $(S_i)$ can cover $\mathbb R^2$.
 
 :::
 
@@ -147,7 +147,7 @@ Steps <1>4 and <1>5 contradict the assumption in step <1>2. Hence no such counta
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

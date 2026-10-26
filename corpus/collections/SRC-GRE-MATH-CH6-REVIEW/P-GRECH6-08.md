@@ -28,7 +28,7 @@ If $G$ is a group of order $12$, then $G$ must have a subgroup of all of the fol
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every group of order $12$ has subgroups of orders $2$, $3$, and $4$.
 
@@ -41,7 +41,7 @@ Since $2$ and $3$ divide $12$, Cauchy's theorem gives elements, and hence cyclic
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every group of order $12$ has a subgroup of order $12$.
 
@@ -54,7 +54,7 @@ The group is a subgroup of itself.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A group of order $12$ need not have a subgroup of order $6$.
 
@@ -71,7 +71,7 @@ would be a nontrivial homomorphism. Every $3$-cycle must map to the identity in 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the subgroup order not forced by $|G|=12$ is
 $$
@@ -82,7 +82,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show that orders $2$, $3$, $4$, and $12$ are forced, while step <1>3 gives a group of order $12$ with no subgroup of order $6$.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that orders $2$, $3$, $4$, and $12$ are forced, while step [](#s1-3){.pf-ref} gives a group of order $12$ with no subgroup of order $6$.
 
 :::
 
@@ -90,7 +90,7 @@ Steps <1>1 and <1>2 show that orders $2$, $3$, $4$, and $12$ are forced, while s
 
 ::: pf-qed
 
-Step <1>4 identifies the exceptional order.
+Step [](#s1-4){.pf-ref} identifies the exceptional order.
 
 :::
 

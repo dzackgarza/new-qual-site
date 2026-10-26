@@ -23,7 +23,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $C\subset[0,1]$ be a fat Cantor set: $C$ is closed, has empty
 interior, and has positive one-dimensional Lebesgue measure.
@@ -50,7 +50,7 @@ $C$ has empty interior. Hence $A$ contains no nonempty open set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -79,14 +79,14 @@ f(x)=\chi_A(x)=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every point of $A$ is a boundary point of $A$.
 
 
 ::: pf-proof
 
-The set $A$ is closed and has empty interior by step <1>1. Therefore
+The set $A$ is closed and has empty interior by step [](#s1-1){.pf-ref}. Therefore
 \[
 \partial A
 =A\setminus\operatorname{int}(A)
@@ -97,7 +97,7 @@ The set $A$ is closed and has empty interior by step <1>1. Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $x\in B$ and every $r>0$, there is
 \[
@@ -108,14 +108,14 @@ such that $f(y)=0$.
 
 ::: pf-proof
 
-Fix $x\in B\subseteq A$. By step <1>3, every ball $B_r(x)$ meets
+Fix $x\in B\subseteq A$. By step [](#s1-3){.pf-ref}, every ball $B_r(x)$ meets
 $\mathbb R^2\setminus A$. Since $A$ is closed, $\mathbb R^2\setminus A$ is
 open, so
 \[
 B_r(x)\cap(\mathbb R^2\setminus A)
 \]
 is a nonempty open set and therefore has positive Lebesgue measure. The set
-$N$ is null by step <1>2, so this open set cannot be contained in $N$.
+$N$ is null by step [](#s1-2){.pf-ref}, so this open set cannot be contained in $N$.
 Choose
 \[
 y\in
@@ -130,18 +130,18 @@ f(y)=\chi_A(y)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is discontinuous at every point of $B$.
 
 
 ::: pf-proof
 
-Fix $x\in B$. By step <1>2,
+Fix $x\in B$. By step [](#s1-2){.pf-ref},
 \[
 f(x)=1.
 \]
-By step <1>4, every neighborhood of $x$ contains a point $y$ with
+By step [](#s1-4){.pf-ref}, every neighborhood of $x$ contains a point $y$ with
 $f(y)=0$. Hence there are points arbitrarily close to $x$ at which the
 function value differs from $f(x)$ by $1$. Therefore $f$ is not continuous
 at $x$.
@@ -152,7 +152,7 @@ at $x$.
 
 ::: pf-qed
 
-Step <1>1 solves part (a). Steps <1>2 through <1>5 produce a set
+Step [](#s1-1){.pf-ref} solves part (a). Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} produce a set
 $B$ of positive measure on which every point is a discontinuity of $f$, which
 proves part (b).
 

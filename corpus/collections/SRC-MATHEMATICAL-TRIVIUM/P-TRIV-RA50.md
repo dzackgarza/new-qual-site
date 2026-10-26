@@ -59,7 +59,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Fourier transform is
 $$
@@ -87,7 +87,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The angular integrals give
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $k>0$,
 $$
@@ -135,13 +135,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>3 into step <1>2 and cancel one factor of $r$.
+Substitute step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref} and cancel one factor of $r$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -171,7 +171,7 @@ The lower endpoint contributes zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence, for $k>0$,
 $$
@@ -188,7 +188,7 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>5 into step <1>4 and use
+Substitute step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref} and use
 $$
 \frac{4\pi}{(2\pi)^3}
 =
@@ -199,7 +199,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 At $k=0$,
 $$
@@ -225,7 +225,7 @@ f_0\frac{4\pi r_0^3}{3}
 =
 \frac{f_0r_0^3}{6\pi^2}.
 $$
-Equivalently, the expression in step <1>6 has the same limit because
+Equivalently, the expression in step [](#s1-6){.pf-ref} has the same limit because
 $$
 \sin z-z\cos z
 =
@@ -238,7 +238,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>6--<1>7 give the Fourier image for all $\vec k\in\mathbb R^3$.
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give the Fourier image for all $\vec k\in\mathbb R^3$.
 
 :::
 

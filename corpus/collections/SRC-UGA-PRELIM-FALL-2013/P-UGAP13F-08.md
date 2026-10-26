@@ -75,7 +75,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -116,7 +116,7 @@ gives $-8$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -160,7 +160,7 @@ for some integer $k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The three distinct arguments are
 \[
@@ -176,7 +176,7 @@ k=0,1,2.
 
 ::: pf-proof
 
-Divide the congruence from step <1>3 by $3$:
+Divide the congruence from step [](#s1-3){.pf-ref} by $3$:
 \[
 \theta
 =
@@ -194,7 +194,7 @@ give the three distinct cube roots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore the cube roots, in the form
 \[
@@ -240,7 +240,7 @@ Substitute
 \[
 k=0,1,2
 \]
-into step <1>4 and convert each polar form
+into step [](#s1-4){.pf-ref} and convert each polar form
 \[
 re^{i\theta}
 \]
@@ -262,7 +262,7 @@ a+bi.
 
 ::: pf-qed
 
-Step <1>2 gives $z^3$, and step <1>5 lists all three cube roots.
+Step [](#s1-2){.pf-ref} gives $z^3$, and step [](#s1-5){.pf-ref} lists all three cube roots.
 
 :::
 

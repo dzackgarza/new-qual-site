@@ -30,7 +30,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The connected components and path-connected components of $S$ are
 $$
@@ -57,9 +57,9 @@ For radius $1/n$, the fiber is the whole circle $C_{1/n}$, which is path-connect
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The quasi-components of $S$ are the same sets as in step <1>1.
+The quasi-components of $S$ are the same sets as in step [](#s1-1){.pf-ref}.
 
 
 ::: pf-proof
@@ -68,7 +68,7 @@ The space
 $$
 \bigcup_{n\ge1}C_{1/n}\cup\{(0,0)\}
 $$
-is closed and bounded in $\RR^2$, hence compact, and adjoining the isolated point $(1,1)$ preserves compactness. Thus $S$ is compact Hausdorff. In every compact Hausdorff space, quasi-components coincide with connected components. Step <1>1 therefore gives the quasi-components.
+is closed and bounded in $\RR^2$, hence compact, and adjoining the isolated point $(1,1)$ preserves compactness. Thus $S$ is compact Hausdorff. In every compact Hausdorff space, quasi-components coincide with connected components. Step [](#s1-1){.pf-ref} therefore gives the quasi-components.
 
 Equivalently, one can see this directly: each circle $C_{1/n}$ and the point $(1,1)$ can be isolated by clopen radial neighborhoods, while clopen sets
 $$
@@ -80,7 +80,7 @@ with $a>0$ chosen between successive radii shrink to $(0,0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The connected components and path-connected components of $T$ are
 $$
@@ -113,7 +113,7 @@ whose two points form separate connected components because they have disjoint r
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every rational $r\in(0,1)$, the quasi-component of a point of $C_r$ is exactly $C_r$, and the quasi-component of $(0,0)$ is $\{(0,0)\}$.
 
@@ -136,7 +136,7 @@ is clopen in $T$: its complement is $T\cap\rho^{-1}((a,\infty))$, and no point o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The two points $(1,0)$ and $(-1,0)$ belong to the same quasi-component of $T$.
 
@@ -164,9 +164,9 @@ Thus every clopen neighborhood of $(1,0)$ contains $(-1,0)$. By symmetry, every 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-No point of radius less than $1$ lies in the quasi-component from step <1>5. Therefore that quasi-component is exactly
+No point of radius less than $1$ lies in the quasi-component from step [](#s1-5){.pf-ref}. Therefore that quasi-component is exactly
 $$
 \boxed{\{(-1,0),(1,0)\}}.
 $$
@@ -182,13 +182,13 @@ Then
 $$
 T\cap\rho^{-1}((a,\infty))
 $$
-is a clopen subset of $T$ containing both radius-$1$ points but not $x$. Thus $x$ is not in their quasi-component. Combine this with step <1>5.
+is a clopen subset of $T$ containing both radius-$1$ points but not $x$. Thus $x$ is not in their quasi-component. Combine this with step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the quasi-components of $T$ are
 $$
@@ -203,7 +203,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>4--<1>6 give all quasi-components.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give all quasi-components.
 
 :::
 
@@ -211,7 +211,7 @@ Steps <1>4--<1>6 give all quasi-components.
 
 ::: pf-qed
 
-Steps <1>1--<1>2 determine all three kinds of components for $S$, and steps <1>3--<1>7 do so for $T$.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} determine all three kinds of components for $S$, and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} do so for $T$.
 
 :::
 

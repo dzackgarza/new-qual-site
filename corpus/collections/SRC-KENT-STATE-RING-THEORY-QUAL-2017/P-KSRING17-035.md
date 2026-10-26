@@ -27,7 +27,7 @@ Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $D$ contains $0$ and $1$ and is closed under addition and additive inverses.
 
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $D$ is closed under multiplication.
 
@@ -103,7 +103,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -113,13 +113,13 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>2 verify closure under the ring operations and show that the same $1$ as in $\RR$ belongs to $D$.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} verify closure under the ring operations and show that the same $1$ as in $\RR$ belongs to $D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 $$
@@ -173,7 +173,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every nonzero element of $D$ has an inverse in $D$.
 
@@ -184,7 +184,7 @@ Let
 $$
 x=a+b\sqrt2\ne0.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 a^2-2b^2\ne0.
 $$
@@ -211,14 +211,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence $D$ is a field, and therefore a principal ideal domain.
 
 
 ::: pf-proof
 
-By steps <1>3 and <1>5, $D$ is a commutative ring with identity in which every nonzero element is invertible. Thus $D$ is a field.
+By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, $D$ is a commutative ring with identity in which every nonzero element is invertible. Thus $D$ is a field.
 
 The only ideals of a field are
 $$
@@ -235,7 +235,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose, for contradiction, that
 $$
@@ -259,9 +259,9 @@ This is exactly the definition of membership in $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Under the assumption of step <1>7,
+Under the assumption of step [](#s1-7){.pf-ref},
 $$
 ab=0
 $$
@@ -273,7 +273,7 @@ $$
 
 ::: pf-proof
 
-Square the equation from step <1>7:
+Square the equation from step [](#s1-7){.pf-ref}:
 $$
 3
 =
@@ -304,7 +304,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The case
 $$
@@ -319,7 +319,7 @@ If
 $$
 b=0,
 $$
-step <1>8 gives
+step [](#s1-8){.pf-ref} gives
 $$
 a^2=3.
 $$
@@ -359,7 +359,7 @@ contradicting the assumption that $r/s$ is in lowest terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The case
 $$
@@ -374,7 +374,7 @@ If
 $$
 a=0,
 $$
-step <1>8 gives
+step [](#s1-8){.pf-ref} gives
 $$
 2b^2=3,
 $$
@@ -419,7 +419,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -429,11 +429,11 @@ $$
 
 ::: pf-proof
 
-Step <1>8 gives
+Step [](#s1-8){.pf-ref} gives
 $$
 ab=0,
 $$
-so either $a=0$ or $b=0$. Steps <1>9--<1>10 rule out both possibilities.
+so either $a=0$ or $b=0$. Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} rule out both possibilities.
 
 :::
 
@@ -441,7 +441,7 @@ so either $a=0$ or $b=0$. Steps <1>9--<1>10 rule out both possibilities.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>11 proves part (c).
+Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-11){.pf-ref} proves part (c).
 
 :::
 

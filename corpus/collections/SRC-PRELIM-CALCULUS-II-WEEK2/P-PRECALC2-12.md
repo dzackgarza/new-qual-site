@@ -29,7 +29,7 @@ Consider
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every \(q>0\) and every \(\varepsilon>0\),
 \[
@@ -59,7 +59,7 @@ this inequality holds for all sufficiently large \(n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose \(\alpha>1\) and \(\beta\ge0\). Then, for \(n\ge3\),
 \[
@@ -84,7 +84,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the series converges when
 \[
@@ -98,7 +98,7 @@ The comparison series
 \[
 \sum\frac1{n^\alpha}
 \]
-converges because \(\alpha>1\). Apply step <1>2.
+converges because \(\alpha>1\). Apply step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -131,7 +131,7 @@ This choice satisfies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For all sufficiently large \(n\),
 \[
@@ -145,7 +145,7 @@ For all sufficiently large \(n\),
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 (\log n)^q\le n^\varepsilon
 \]
@@ -155,7 +155,7 @@ eventually. Divide by \(n^\alpha\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the series converges for every
 \[
@@ -166,7 +166,7 @@ regardless of \(\beta\).
 
 ::: pf-proof
 
-The cases \(\beta\ge0\) and \(\beta<0\) are steps <1>3 and <1>5. In the
+The cases \(\beta\ge0\) and \(\beta<0\) are steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}. In the
 second case,
 \[
 \alpha-\varepsilon>1,
@@ -177,7 +177,7 @@ so the comparison \(p\)-series converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose \(\alpha<1\) and \(\beta\le0\). Then, for \(n\ge3\),
 \[
@@ -200,7 +200,7 @@ for \(n\ge3\). Dividing by a number at most \(1\) makes the term at least
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the series diverges when
 \[
@@ -214,7 +214,7 @@ The \(p\)-series
 \[
 \sum n^{-\alpha}
 \]
-diverges for \(\alpha\le1\). Apply step <1>7.
+diverges for \(\alpha\le1\). Apply step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -243,7 +243,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For all sufficiently large \(n\),
 \[
@@ -255,7 +255,7 @@ n^\varepsilon.
 
 ::: pf-proof
 
-Apply step <1>1 with
+Apply step [](#s1-1){.pf-ref} with
 \[
 q=\beta.
 \]
@@ -264,7 +264,7 @@ q=\beta.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence, eventually,
 \[
@@ -276,7 +276,7 @@ Hence, eventually,
 
 ::: pf-proof
 
-Use step <1>10:
+Use step [](#s1-10){.pf-ref}:
 \[
 n^\alpha(\log n)^\beta
 \le
@@ -288,7 +288,7 @@ Taking reciprocals reverses the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore the series diverges for every
 \[
@@ -299,7 +299,7 @@ regardless of \(\beta\).
 
 ::: pf-proof
 
-The case \(\beta\le0\) is step <1>8. If \(\beta>0\), step <1>11 compares
+The case \(\beta\le0\) is step [](#s1-8){.pf-ref}. If \(\beta>0\), step [](#s1-11){.pf-ref} compares
 from below with the divergent \(p\)-series
 \[
 \sum\frac1{n^{\alpha+\varepsilon}},
@@ -313,7 +313,7 @@ whose exponent satisfies
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Let
 \[
@@ -342,7 +342,7 @@ so \(f'(x)<0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 By the integral test,
 \[
@@ -359,13 +359,13 @@ has the same convergence behavior as
 ::: pf-proof
 
 Apply the integral test to the eventually positive decreasing function from
-step <1>13. Finitely many initial terms do not affect convergence.
+step [](#s1-13){.pf-ref}. Finitely many initial terms do not affect convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 With
 \[
@@ -395,7 +395,7 @@ u^{-\beta}\,du.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The integral
 \[
@@ -420,7 +420,7 @@ which converges exactly when \(p>1\). Here \(p=\beta\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore, when
 \[
@@ -438,13 +438,13 @@ and diverges for
 
 ::: pf-proof
 
-Combine steps <1>14--<1>16.
+Combine steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Altogether,
 \[
@@ -465,14 +465,14 @@ Altogether,
 
 ::: pf-proof
 
-Step <1>6 handles \(\alpha>1\), step <1>12 handles \(\alpha<1\), and step
-<1>17 handles the boundary case \(\alpha=1\).
+Step [](#s1-6){.pf-ref} handles \(\alpha>1\), step [](#s1-12){.pf-ref} handles \(\alpha<1\), and step
+[](#s1-17){.pf-ref} handles the boundary case \(\alpha=1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Equivalently, the series diverges exactly when
 \[
@@ -485,7 +485,7 @@ Equivalently, the series diverges exactly when
 
 ::: pf-proof
 
-This is the complementary parameter region to step <1>18.
+This is the complementary parameter region to step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -493,7 +493,7 @@ This is the complementary parameter region to step <1>18.
 
 ::: pf-qed
 
-Steps <1>18--<1>19 give the complete convergence/divergence classification.
+Steps [](#s1-18){.pf-ref} through [](#s1-19){.pf-ref} give the complete convergence/divergence classification.
 
 :::
 

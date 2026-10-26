@@ -22,7 +22,7 @@ What is the probability that the order is correct (direct or inverse)?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are
 \[
@@ -39,7 +39,7 @@ A shelf order is a permutation of the five volumes. Under random ordering, each 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Exactly two orders are favorable.
 
@@ -60,7 +60,7 @@ No other permutation has the volumes in numerical order in either direction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the probability is
 \[
@@ -70,7 +70,7 @@ Therefore the probability is
 
 ::: pf-proof
 
-Divide the two favorable outcomes from step <1>2 by the $120$ equally likely outcomes from step <1>1.
+Divide the two favorable outcomes from step [](#s1-2){.pf-ref} by the $120$ equally likely outcomes from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -78,7 +78,7 @@ Divide the two favorable outcomes from step <1>2 by the $120$ equally likely out
 
 ::: pf-qed
 
-Step <1>3 gives the requested probability.
+Step [](#s1-3){.pf-ref} gives the requested probability.
 
 :::
 

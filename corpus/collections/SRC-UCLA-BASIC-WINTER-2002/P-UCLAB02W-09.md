@@ -27,7 +27,7 @@ is linearly independent.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The assertion is true when $m=1$.
 
@@ -40,7 +40,7 @@ The single vector $v_1$ is nonzero by hypothesis, so the set $\{v_1\}$ is linear
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume the assertion holds for every collection of $m-1$ eigenvectors belonging to distinct eigenvalues, and suppose
 $$
@@ -71,7 +71,7 @@ For $i=m$ this is zero, while for $1\le i<m$ it gives the displayed relation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -85,7 +85,7 @@ The eigenvalues $\lambda_1,\ldots,\lambda_{m-1}$ are distinct, so by the inducti
 $$
 v_1,\ldots,v_{m-1}
 $$
-are linearly independent. Step <1>2 therefore implies
+are linearly independent. Step [](#s1-2){.pf-ref} therefore implies
 $$
 a_i(\lambda_i-\lambda_m)=0
 $$
@@ -99,14 +99,14 @@ so $a_i=0$ for every $i<m$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One also has $a_m=0$.
 
 
 ::: pf-proof
 
-Substituting the conclusion of step <1>3 into the original relation gives
+Substituting the conclusion of step [](#s1-3){.pf-ref} into the original relation gives
 $$
 a_mv_m=0.
 $$
@@ -116,14 +116,14 @@ Since $v_m\ne0$, it follows that $a_m=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence $\{v_1,\ldots,v_m\}$ is linearly independent.
 
 
 ::: pf-proof
 
-Steps <1>3--<1>4 show that every linear relation among $v_1,\ldots,v_m$ has all coefficients equal to zero. This is the definition of linear independence.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that every linear relation among $v_1,\ldots,v_m$ has all coefficients equal to zero. This is the definition of linear independence.
 
 :::
 
@@ -131,7 +131,7 @@ Steps <1>3--<1>4 show that every linear relation among $v_1,\ldots,v_m$ has all 
 
 ::: pf-qed
 
-Step <1>1 supplies the base case, and steps <1>2--<1>5 establish the induction step. Therefore the assertion holds for every $m\ge1$.
+Step [](#s1-1){.pf-ref} supplies the base case, and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} establish the induction step. Therefore the assertion holds for every $m\ge1$.
 
 :::
 

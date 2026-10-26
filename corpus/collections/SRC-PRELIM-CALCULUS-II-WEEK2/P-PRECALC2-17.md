@@ -77,7 +77,7 @@ Since both subsequences tend to \(0\), the whole sequence does.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The contribution of the \(k\)th odd-even pair to the alternating
 series is
@@ -123,13 +123,13 @@ S_{2N}
 ::: pf-proof
 
 Group the first \(2N\) terms into the \(N\) consecutive pairs computed in
-step <1>3.
+step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -151,7 +151,7 @@ and the harmonic partial sums diverge to \(+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -165,13 +165,13 @@ Hence
 ::: pf-proof
 
 A convergent series must have all subsequences of its partial sums converge
-to the same finite limit. Step <1>5 shows the even partial sums diverge.
+to the same finite limit. Step [](#s1-5){.pf-ref} shows the even partial sums diverge.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The sequence
 \[
@@ -195,7 +195,7 @@ n^{-1/2}\to0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -210,13 +210,13 @@ Therefore
 
 ::: pf-proof
 
-Apply the alternating series test using step <1>7.
+Apply the alternating series test using step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 But
 \[
@@ -239,7 +239,7 @@ b_n^2=\frac1n}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -253,7 +253,7 @@ Hence
 
 ::: pf-proof
 
-Use step <1>9 and divergence of the harmonic series.
+Use step [](#s1-9){.pf-ref} and divergence of the harmonic series.
 
 :::
 
@@ -300,7 +300,7 @@ Since \(b_n\to0\), eventually
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 For \(n\ge N\),
 \[
@@ -325,7 +325,7 @@ Apply this with \(x=|b_n|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -336,7 +336,7 @@ converges.
 
 ::: pf-proof
 
-By step <1>13, the nonnegative series is termwise bounded by the convergent
+By step [](#s1-13){.pf-ref}, the nonnegative series is termwise bounded by the convergent
 tail
 \[
 \sum_{n=N}^{\infty}|b_n|.
@@ -347,7 +347,7 @@ Apply the comparison test.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Thus
 \[
@@ -360,14 +360,14 @@ Thus
 
 ::: pf-proof
 
-Step <1>14 gives convergence of the tail, and finitely many initial terms do
+Step [](#s1-14){.pf-ref} gives convergence of the tail, and finitely many initial terms do
 not affect convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Consequently, it is impossible to choose \((b_n)\) so that
 \[
@@ -382,7 +382,7 @@ diverges.
 
 ::: pf-proof
 
-Such a sequence would contradict step <1>15.
+Such a sequence would contradict step [](#s1-15){.pf-ref}.
 
 :::
 
@@ -390,8 +390,8 @@ Such a sequence would contradict step <1>15.
 
 ::: pf-qed
 
-Step <1>6 gives the first requested sequence, steps <1>8--<1>10 give the
-second, and step <1>16 answers the final question.
+Step [](#s1-6){.pf-ref} gives the first requested sequence, steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give the
+second, and step [](#s1-16){.pf-ref} answers the final question.
 
 :::
 

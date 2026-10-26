@@ -32,7 +32,7 @@ Let $S=\xi+\eta$. Both $\xi$ and $\eta$ are independent Bernoulli random variabl
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Independence gives
 \[
@@ -48,7 +48,7 @@ For each possible value of $\eta$, the conditional distribution of $\xi$ equals 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -63,13 +63,13 @@ By linearity of conditional expectation and because $\eta$ is measurable with re
 \mathbf E(\xi+\eta\mid\eta)
 =\mathbf E(\xi\mid\eta)+\eta.
 \]
-Apply step <1>1.
+Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Conditional on $S=0$, one has $\xi=0$, and conditional on $S=2$, one has $\xi=1$.
 
@@ -82,7 +82,7 @@ Since $\xi,\eta\in\{0,1\}$, the sum $0$ occurs only for $(0,0)$ and the sum $2$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Conditional on $S=1$,
 \[
@@ -98,7 +98,7 @@ The event $S=1$ consists of the two outcomes $(\xi,\eta)=(1,0)$ and $(0,1)$. Ind
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -108,7 +108,7 @@ Hence
 
 ::: pf-proof
 
-By steps <1>3--<1>4, the conditional expectation takes the values $0,1/2,1$ when $S$ equals $0,1,2$, respectively. This is exactly $S/2$.
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, the conditional expectation takes the values $0,1/2,1$ when $S$ equals $0,1,2$, respectively. This is exactly $S/2$.
 
 :::
 
@@ -116,7 +116,7 @@ By steps <1>3--<1>4, the conditional expectation takes the values $0,1/2,1$ when
 
 ::: pf-qed
 
-Steps <1>2 and <1>5 give the two requested conditional expectations.
+Steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} give the two requested conditional expectations.
 
 :::
 

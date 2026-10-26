@@ -47,7 +47,7 @@ for every Borel set \(E\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since \(\mu\perp m\), there exists a Borel set
 \[
@@ -70,7 +70,7 @@ This is the definition of mutual singularity of the positive measures \(\mu\) an
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -104,7 +104,7 @@ f=0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -116,7 +116,7 @@ for \(\mu\)-almost every \(x\in\mathbb R\).
 
 ::: pf-proof
 
-By step <1>1, \(\mu\) is concentrated on \(S\). The exceptional subset of \(S\) in step <1>2 is \(\nu\)-null, hence also \(\mu\)-null because
+By step [](#s1-1){.pf-ref}, \(\mu\) is concentrated on \(S\). The exceptional subset of \(S\) in step [](#s1-2){.pf-ref} is \(\nu\)-null, hence also \(\mu\)-null because
 \[
 \mu\le\nu.
 \]
@@ -125,7 +125,7 @@ By step <1>1, \(\mu\) is concentrated on \(S\). The exceptional subset of \(S\) 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By the differentiation theorem for locally finite Borel measures on \(\mathbb R\),
 \[
@@ -150,9 +150,9 @@ This is the Lebesgue differentiation theorem in the measure \(\nu\), applied loc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The numerator in step <1>4 is
+The numerator in step [](#s1-4){.pf-ref} is
 \[
 \boxed{
 \int_{[x-r,x+r]}f\,d\nu
@@ -176,7 +176,7 @@ m([x-r,x+r])
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The denominator is
 \[
@@ -207,7 +207,7 @@ m([x-r,x+r])
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence, for \(\nu\)-almost every \(x\),
 \[
@@ -225,13 +225,13 @@ f(x)
 
 ::: pf-proof
 
-Substitute steps <1>5--<1>6 into step <1>4.
+Substitute steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} into step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For \(\mu\)-almost every \(x\),
 \[
@@ -249,7 +249,7 @@ For \(\mu\)-almost every \(x\),
 
 ::: pf-proof
 
-The differentiation identity in step <1>7 holds \(\nu\)-almost everywhere, hence \(\mu\)-almost everywhere because \(\mu\le\nu\). At \(\mu\)-almost every such point, step <1>3 gives
+The differentiation identity in step [](#s1-7){.pf-ref} holds \(\nu\)-almost everywhere, hence \(\mu\)-almost everywhere because \(\mu\le\nu\). At \(\mu\)-almost every such point, step [](#s1-3){.pf-ref} gives
 \[
 f(x)=0.
 \]
@@ -258,9 +258,9 @@ f(x)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-The ratio in step <1>8 can be rewritten as
+The ratio in step [](#s1-8){.pf-ref} can be rewritten as
 \[
 \boxed{
 \frac1{1+q_r(x)}}.
@@ -282,7 +282,7 @@ Divide numerator and denominator by \(2r>0\):
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
@@ -311,7 +311,7 @@ if and only if \(1+q\to+\infty\), equivalently \(q\to+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore, for \(\mu\)-almost every \(x\),
 \[
@@ -329,7 +329,7 @@ Therefore, for \(\mu\)-almost every \(x\),
 
 ::: pf-proof
 
-Combine steps <1>8--<1>10.
+Combine steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -337,7 +337,7 @@ Combine steps <1>8--<1>10.
 
 ::: pf-qed
 
-Step <1>11 is the required density statement.
+Step [](#s1-11){.pf-ref} is the required density statement.
 
 :::
 

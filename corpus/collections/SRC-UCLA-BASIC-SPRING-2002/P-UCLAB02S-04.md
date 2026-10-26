@@ -23,7 +23,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A function
 \[
@@ -48,7 +48,7 @@ The crucial point is that the same $\delta$ works simultaneously for every pair 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose there exists a continuous
 \[
@@ -82,7 +82,7 @@ the function $f$ is uniformly continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Conversely, assume $f:(0,1)\to\mathbb R$ is uniformly continuous.
 Then for every sequence $(x_n)$ in $(0,1)$ with
@@ -126,7 +126,7 @@ So $(f(x_n))$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists a real number $L_0$ such that
 \[
@@ -142,7 +142,7 @@ x_n\in(0,1),
 \qquad
 x_n\to0.
 \]
-By step <1>3, $(f(x_n))$ is Cauchy, so completeness of $\mathbb R$ gives
+By step [](#s1-3){.pf-ref}, $(f(x_n))$ is Cauchy, so completeness of $\mathbb R$ gives
 \[
 f(x_n)\to L_0
 \]
@@ -182,7 +182,7 @@ By the sequential criterion for one-sided limits,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists a real number $L_1$ such that
 \[
@@ -192,7 +192,7 @@ There exists a real number $L_1$ such that
 
 ::: pf-proof
 
-Apply the same argument as in steps <1>3--<1>4 to sequences
+Apply the same argument as in steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} to sequences
 \[
 x_n\to1
 \]
@@ -218,7 +218,7 @@ Thus the one-sided limit exists and is finite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -241,7 +241,7 @@ Then $F$ is continuous on $[0,1]$.
 On $(0,1)$, the function $F$ equals $f$.
 Uniform continuity implies ordinary continuity, so $f$ is continuous there.
 
-At $0$, step <1>4 gives
+At $0$, step [](#s1-4){.pf-ref} gives
 \[
 \lim_{x\to0^+}F(x)
 =
@@ -253,7 +253,7 @@ F(0).
 \]
 Thus $F$ is continuous at $0$.
 
-At $1$, step <1>5 gives
+At $1$, step [](#s1-5){.pf-ref} gives
 \[
 \lim_{x\to1^-}F(x)
 =
@@ -270,7 +270,7 @@ Hence $F$ is continuous on all of $[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -284,8 +284,8 @@ f\text{ is uniformly continuous on }(0,1)
 
 ::: pf-proof
 
-Step <1>2 proves the forward implication.
-Steps <1>3--<1>6 prove the reverse implication.
+Step [](#s1-2){.pf-ref} proves the forward implication.
+Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove the reverse implication.
 
 :::
 
@@ -293,7 +293,7 @@ Steps <1>3--<1>6 prove the reverse implication.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>7 proves part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-7){.pf-ref} proves part (b).
 
 :::
 

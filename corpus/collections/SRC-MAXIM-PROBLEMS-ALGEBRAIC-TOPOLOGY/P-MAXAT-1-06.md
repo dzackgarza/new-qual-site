@@ -23,7 +23,7 @@ Let $M$ be a closed $n$-manifold with $n$ odd. Work with coefficients in $\mathb
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Poincaré duality gives
 \[
@@ -41,7 +41,7 @@ Every manifold is orientable over $\mathbb F_2$. Since $M$ is closed, mod-$2$ Po
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the Betti numbers satisfy
 \[
@@ -56,13 +56,13 @@ Over the field $\mathbb F_2$, the universal coefficient theorem gives
 \dim H^{n-i}(M;\mathbb F_2)
 =\dim H_{n-i}(M;\mathbb F_2).
 \]
-Take dimensions in the duality isomorphism from step <1>1.
+Take dimensions in the duality isomorphism from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Euler characteristic is
 \[
@@ -78,7 +78,7 @@ For a finite CW model of the compact manifold $M$, Euler characteristic equals t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Pairing the $i$th and $(n-i)$th terms gives zero.
 
@@ -89,7 +89,7 @@ Because $n$ is odd, $i\ne n-i$ for every integer $i$, and
 \[
 (-1)^{n-i}=-(-1)^i.
 \]
-By step <1>2, $b_{n-i}=b_i$. Hence
+By step [](#s1-2){.pf-ref}, $b_{n-i}=b_i$. Hence
 \[
 (-1)^ib_i+(-1)^{n-i}b_{n-i}=0.
 \]
@@ -98,7 +98,7 @@ By step <1>2, $b_{n-i}=b_i$. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently
 \[
@@ -108,7 +108,7 @@ Consequently
 
 ::: pf-proof
 
-The finite sum in step <1>3 decomposes into the cancelling pairs from step <1>4.
+The finite sum in step [](#s1-3){.pf-ref} decomposes into the cancelling pairs from step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -116,7 +116,7 @@ The finite sum in step <1>3 decomposes into the cancelling pairs from step <1>4.
 
 ::: pf-qed
 
-Step <1>5 proves the claim for every closed odd-dimensional manifold, orientable or not.
+Step [](#s1-5){.pf-ref} proves the claim for every closed odd-dimensional manifold, orientable or not.
 
 :::
 

@@ -62,7 +62,7 @@ is open in the subspace topology on $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sets $U_n$ are increasing:
 \[
@@ -93,7 +93,7 @@ x\in U_{n+1}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The family
 \[
@@ -139,7 +139,7 @@ U_N=X.
 
 ::: pf-proof
 
-The sets $U_n$ form an open cover of the compact space $X$ by step <1>3.
+The sets $U_n$ form an open cover of the compact space $X$ by step [](#s1-3){.pf-ref}.
 Hence there is a finite subcover
 \[
 U_{n_1},\ldots,U_{n_r}.
@@ -148,7 +148,7 @@ Let
 \[
 N=\max\{n_1,\ldots,n_r\}.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 U_{n_j}\subseteq U_N
 \]
@@ -172,7 +172,7 @@ U_N=X.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $n\ge N$ and every $x\in X$,
 \[
@@ -204,7 +204,7 @@ then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -214,7 +214,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 shows that for every $\varepsilon>0$ there is $N$ such that
+Step [](#s1-5){.pf-ref} shows that for every $\varepsilon>0$ there is $N$ such that
 \[
 |f_n(x)|<\varepsilon
 \]
@@ -227,7 +227,7 @@ This is exactly uniform convergence to $0$.
 
 ::: pf-qed
 
-Step <1>6 proves Dini's theorem in the stated setting.
+Step [](#s1-6){.pf-ref} proves Dini's theorem in the stated setting.
 
 :::
 

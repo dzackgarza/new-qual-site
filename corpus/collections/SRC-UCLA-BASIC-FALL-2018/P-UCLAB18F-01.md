@@ -27,7 +27,7 @@ also diverges.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -65,7 +65,7 @@ Since all terms are nonnegative, its partial sums are unbounded.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose instead that
 \[
@@ -101,9 +101,9 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-In the case of step <1>2, the transformed series diverges.
+In the case of step [](#s1-2){.pf-ref}, the transformed series diverges.
 
 
 ::: pf-proof
@@ -123,7 +123,7 @@ diverges and the terms are nonnegative,
 =
 \infty.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \sum_{n=N}^{M}
 \frac{a_n}{2a_n+1}
@@ -138,7 +138,7 @@ Thus the transformed series diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -151,7 +151,7 @@ Therefore
 
 ::: pf-proof
 
-Either $a_n\ge1$ infinitely often, in which case step <1>1 applies, or $a_n<1$ eventually, in which case step <1>3 applies.
+Either $a_n\ge1$ infinitely often, in which case step [](#s1-1){.pf-ref} applies, or $a_n<1$ eventually, in which case step [](#s1-3){.pf-ref} applies.
 These cases exhaust all possibilities.
 
 :::
@@ -160,7 +160,7 @@ These cases exhaust all possibilities.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

@@ -24,7 +24,7 @@ As in the preceding problems of this section, $F$ has characteristic $p>0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $A\subset F$ be an additive subgroup of order $p^n$. Then
 $$
@@ -44,7 +44,7 @@ The product defining $f_A$ has exactly $p^n$ monic linear factors, so it is moni
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exist coefficients $a_0,\ldots,a_{n-1}\in F$ such that
 $$
@@ -54,20 +54,20 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $f_A$ is additive. Problem 6.4 therefore shows that every exponent occurring in $f_A$ is a power of $p$. Since $f_A$ is monic of degree $p^n$, its highest term is exactly $X^{p^n}$, and all lower possible terms have exponents $1,p,\ldots,p^{n-1}$.
+By step [](#s1-1){.pf-ref}, $f_A$ is additive. Problem 6.4 therefore shows that every exponent occurring in $f_A$ is a power of $p$. Since $f_A$ is monic of degree $p^n$, its highest term is exactly $X^{p^n}$, and all lower possible terms have exponents $1,p,\ldots,p^{n-1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The coefficient $a_0$ in step <1>2 is nonzero.
+The coefficient $a_0$ in step [](#s1-2){.pf-ref} is nonzero.
 
 
 ::: pf-proof
 
-The roots of $f_A$ are exactly the distinct elements of $A$. Hence $f_A$ is separable. On the other hand, differentiating the expression in step <1>2 in characteristic $p$ gives
+The roots of $f_A$ are exactly the distinct elements of $A$. Hence $f_A$ is separable. On the other hand, differentiating the expression in step [](#s1-2){.pf-ref} in characteristic $p$ gives
 $$
 f_A'(X)=a_0,
 $$
@@ -77,7 +77,7 @@ because the derivative of $X^{p^i}$ is zero for every $i\geq1$. A polynomial wit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map
 $$
@@ -98,7 +98,7 @@ then the two polynomials have the same root set, so $A=A'$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, let
 $$
@@ -142,13 +142,13 @@ so $x+y\in A_f$. Also
 $$
 0=f(0)=f(x+(-x))=f(x)+f(-x),
 $$
-and therefore $f(-x)=0$ whenever $f(x)=0$. Thus $A_f$ is an additive subgroup. By step <1>5, it has exactly $p^n$ elements.
+and therefore $f(-x)=0$ whenever $f(x)=0$. Thus $A_f$ is an additive subgroup. By step [](#s1-5){.pf-ref}, it has exactly $p^n$ elements.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -158,7 +158,7 @@ $$
 
 ::: pf-proof
 
-Both polynomials are monic of degree $p^n$, and by definition both have precisely the elements of $A_f$ as their roots. Step <1>5 shows these roots are distinct. Therefore
+Both polynomials are monic of degree $p^n$, and by definition both have precisely the elements of $A_f$ as their roots. Step [](#s1-5){.pf-ref} shows these roots are distinct. Therefore
 $$
 f(X)=\prod_{a\in A_f}(X-a)=f_{A_f}(X).
 $$
@@ -167,14 +167,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The assignment $A\mapsto f_A$ is a bijection between the two collections in the statement.
 
 
 ::: pf-proof
 
-Steps <1>1 through <1>3 show that the assignment lands in the stated set of polynomials. Step <1>4 proves injectivity. Steps <1>5 through <1>7 show that every polynomial in the stated set equals $f_A$ for the additive subgroup formed by its roots, proving surjectivity.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that the assignment lands in the stated set of polynomials. Step [](#s1-4){.pf-ref} proves injectivity. Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} show that every polynomial in the stated set equals $f_A$ for the additive subgroup formed by its roots, proving surjectivity.
 
 :::
 
@@ -182,7 +182,7 @@ Steps <1>1 through <1>3 show that the assignment lands in the stated set of poly
 
 ::: pf-qed
 
-Step <1>8 is exactly the claimed one-to-one correspondence.
+Step [](#s1-8){.pf-ref} is exactly the claimed one-to-one correspondence.
 
 :::
 

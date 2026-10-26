@@ -45,7 +45,7 @@ Because $\operatorname{char}F\ne2$, every quadratic extension is separable. If $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The square class $[d]\in F^\times/(F^\times)^2$ is a nontrivial element of the kernel of
 \[
@@ -65,7 +65,7 @@ so its image in $E^\times/(E^\times)^2$ is trivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $a\in F^\times$ represent an arbitrary element of $\ker\iota$. Then there exist $x,y\in F$ such that
 \[
@@ -83,7 +83,7 @@ Being in the kernel means exactly that $a$ becomes a square in $E$. Every elemen
 
 ::: pf-step
 
-Expanding the equality in step <1>3 gives
+Expanding the equality in step [](#s1-3){.pf-ref} gives
 \[
 a=x^2+dy^2+2xy\sqrt d,
 \]
@@ -101,7 +101,7 @@ The left side $a$ lies in $F$. Since $1,\sqrt d$ are linearly independent over $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $y=0$, then $a=x^2$ and $[a]=1$. If $x=0$, then $a=dy^2$ and $[a]=[d]$.
 
@@ -114,7 +114,7 @@ These are the two alternatives forced by $xy=0$. Since $a\ne0$, in the first cas
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -128,13 +128,13 @@ so
 
 ::: pf-proof
 
-Step <1>2 shows both displayed classes lie in the kernel and are distinct; step <1>5 shows there are no others.
+Step [](#s1-2){.pf-ref} shows both displayed classes lie in the kernel and are distinct; step [](#s1-5){.pf-ref} shows there are no others.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For the tower
 \[
@@ -157,13 +157,13 @@ for every $i$.
 
 ::: pf-proof
 
-Each extension $E_i/E_{i-1}$ is quadratic. Since the original field has characteristic different from $2$, every field in the tower does also. Step <1>6 therefore applies at every stage.
+Each extension $E_i/E_{i-1}$ is quadratic. Since the original field has characteristic different from $2$, every field in the tower does also. Step [](#s1-6){.pf-ref} therefore applies at every stage.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 \[
@@ -189,7 +189,7 @@ Thus the quotient order divides $|\ker\phi_j|$, proving the displayed divisibili
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Induction gives
 \[
@@ -199,13 +199,13 @@ Induction gives
 
 ::: pf-proof
 
-For $j=1$, step <1>7 gives $|\ker\Phi_1|=2$. If $|\ker\Phi_{j-1}|$ divides $2^{j-1}$, then steps <1>7--<1>8 show that $|\ker\Phi_j|$ divides $2^{j-1}\cdot2=2^j$.
+For $j=1$, step [](#s1-7){.pf-ref} gives $|\ker\Phi_1|=2$. If $|\ker\Phi_{j-1}|$ divides $2^{j-1}$, then steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $|\ker\Phi_j|$ divides $2^{j-1}\cdot2=2^j$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since $\Phi_n$ is the natural map
 \[
@@ -219,7 +219,7 @@ its kernel has order dividing
 
 ::: pf-proof
 
-The natural map along the entire field inclusion is the composite of the natural maps at each stage, namely $\Phi_n$. Apply step <1>9.
+The natural map along the entire field inclusion is the composite of the natural maps at each stage, namely $\Phi_n$. Apply step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -227,7 +227,7 @@ The natural map along the entire field inclusion is the composite of the natural
 
 ::: pf-qed
 
-Step <1>6 proves the first assertion and step <1>10 proves the deduction for a tower of quadratic extensions.
+Step [](#s1-6){.pf-ref} proves the first assertion and step [](#s1-10){.pf-ref} proves the deduction for a tower of quadratic extensions.
 
 :::
 

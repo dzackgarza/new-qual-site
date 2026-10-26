@@ -24,7 +24,7 @@ F(u)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the fundamental theorem of calculus,
 \[
@@ -58,7 +58,7 @@ Substitute \(u=x^2\) into the definition of \(F\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 By the chain rule,
 \[
@@ -76,9 +76,9 @@ Differentiate the composition \(F\circ(x\mapsto x^2)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 F'(x^2)
 =
@@ -99,7 +99,7 @@ F'(u)=e^{-u^2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -113,7 +113,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>3--<1>4.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
@@ -121,7 +121,7 @@ Combine steps <1>3--<1>4.
 
 ::: pf-qed
 
-Step <1>5 is the requested derivative.
+Step [](#s1-5){.pf-ref} is the requested derivative.
 
 :::
 

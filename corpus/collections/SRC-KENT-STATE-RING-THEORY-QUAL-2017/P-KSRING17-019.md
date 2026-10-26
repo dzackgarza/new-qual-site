@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For arbitrary integers $c,d$, define
 $$
@@ -101,7 +101,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -132,7 +132,7 @@ is a ring homomorphism, and therefore their product $\Phi$ is one as well.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $\Phi$ is surjective.
 
@@ -145,7 +145,7 @@ $$
 \in
 \ZZ/m\ZZ\times\ZZ/n\ZZ
 $$
-be arbitrary. By step <1>1, there exists an integer $x$ with
+be arbitrary. By step [](#s1-1){.pf-ref}, there exists an integer $x$ with
 $$
 x\equiv c\pmod m,
 \qquad
@@ -163,7 +163,7 @@ Thus $\Phi$ is surjective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The kernel of $\Phi$ is
 $$
@@ -194,7 +194,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -209,7 +209,7 @@ as rings.
 
 ::: pf-proof
 
-By steps <1>2--<1>4, $\Phi$ is a surjective ring homomorphism with kernel $(mn)$. The first isomorphism theorem gives
+By steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref}, $\Phi$ is a surjective ring homomorphism with kernel $(mn)$. The first isomorphism theorem gives
 $$
 \ZZ/\ker\Phi
 \cong
@@ -227,7 +227,7 @@ gives the displayed isomorphism.
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

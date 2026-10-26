@@ -31,7 +31,7 @@ Set $\theta=\sqrt2+\sqrt5$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The extension has degree
 \[
@@ -47,7 +47,7 @@ From $\theta^2=7+2\sqrt{10}$ follows $\sqrt{10}=(\theta^2-7)/2\in K$. Since $\th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The extension $K/\mathbb Q$ is Galois, with group
 \[
@@ -63,7 +63,7 @@ The field $K=\mathbb Q(\sqrt2,\sqrt5)$ is the splitting field of the separable p
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The complete Galois correspondence is
 \[
@@ -89,7 +89,7 @@ The displayed quadratic fields are fixed respectively by the indicated order-two
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>3 answer parts (a), (b), and (c).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} answer parts (a), (b), and (c).
 
 :::
 

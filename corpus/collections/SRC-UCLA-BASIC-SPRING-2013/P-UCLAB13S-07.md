@@ -35,7 +35,7 @@ converges if the operator norm of $A$ is less than one.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The operator norm of a real $n\times n$ matrix $A$ is
 \[
@@ -63,7 +63,7 @@ This answers part (a).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The operator norm is submultiplicative:
 \[
@@ -92,7 +92,7 @@ Take the supremum over unit vectors $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every positive integer $m$,
 \[
@@ -104,13 +104,13 @@ For every positive integer $m$,
 
 ::: pf-proof
 
-Apply step <1>2 inductively.
+Apply step [](#s1-2){.pf-ref} inductively.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The exponential series
 \[
@@ -121,7 +121,7 @@ converges absolutely in operator norm.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \left\|
 \frac{A^m}{m!}
@@ -146,7 +146,7 @@ M_n(\mathbb R).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Operator-norm convergence implies entrywise convergence.
 
@@ -178,7 +178,7 @@ then every entry of $B_m-B$ tends to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -193,14 +193,14 @@ converges entrywise for every real matrix $A$.
 
 ::: pf-proof
 
-Step <1>4 gives convergence in operator norm, and step <1>5 gives entrywise convergence.
+Step [](#s1-4){.pf-ref} gives convergence in operator norm, and step [](#s1-5){.pf-ref} gives entrywise convergence.
 This proves part (b).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Suppose
 \[
@@ -220,7 +220,7 @@ Let
 \[
 q=\|A\|_{\mathrm{op}}<1.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 \left\|
 \frac{A^m}{m}
@@ -242,7 +242,7 @@ Therefore the matrix series converges absolutely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently,
 \[
@@ -261,15 +261,15 @@ is well-defined whenever
 
 ::: pf-proof
 
-This is exactly the convergent series from step <1>7.
-By step <1>5, it also converges entrywise.
+This is exactly the convergent series from step [](#s1-7){.pf-ref}.
+By step [](#s1-5){.pf-ref}, it also converges entrywise.
 This proves part (c).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 In any complete normed algebra, absolutely convergent power series in one element may be multiplied and composed according to the corresponding scalar power-series identities, provided the scalar compositions converge absolutely.
 
@@ -308,7 +308,7 @@ Repeated application gives the same conclusion for absolutely convergent composi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For scalar $z$ with
 \[
@@ -341,13 +341,13 @@ Both series converge absolutely there, and their composition represents the anal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If
 \[
 \|A\|_{\mathrm{op}}<1,
 \]
-then substituting $A$ into the scalar identity in step <1>10 gives
+then substituting $A$ into the scalar identity in step [](#s1-10){.pf-ref} gives
 \[
 \boxed{
 \exp(\ln(I+A))
@@ -359,9 +359,9 @@ I+A.
 
 ::: pf-proof
 
-By steps <1>4 and <1>7, the exponential and logarithm matrix series converge absolutely in operator norm.
-Step <1>9 permits the same Cauchy-product and composition manipulations as for the scalar power series.
-The scalar identity from step <1>10 has power-series expansion exactly
+By steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}, the exponential and logarithm matrix series converge absolutely in operator norm.
+Step [](#s1-9){.pf-ref} permits the same Cauchy-product and composition manipulations as for the scalar power series.
+The scalar identity from step [](#s1-10){.pf-ref} has power-series expansion exactly
 \[
 1+z.
 \]
@@ -379,7 +379,7 @@ This proves part (d).
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>6 proves part (b), step <1>8 proves part (c), and step <1>11 proves part (d).
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-6){.pf-ref} proves part (b), step [](#s1-8){.pf-ref} proves part (c), and step [](#s1-11){.pf-ref} proves part (d).
 
 :::
 

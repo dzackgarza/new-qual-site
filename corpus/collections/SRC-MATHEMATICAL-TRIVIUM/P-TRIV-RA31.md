@@ -46,7 +46,7 @@ which is integrable because $a>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One may differentiate under the integral sign, obtaining
 $$
@@ -70,9 +70,9 @@ integral sign.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The Laplace integral in step <1>2 equals
+The Laplace integral in step [](#s1-2){.pf-ref} equals
 $$
 \frac{a}{a^2+y^2}.
 $$
@@ -111,13 +111,13 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2--<1>3.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -133,7 +133,7 @@ The integrand vanishes identically when $y=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -157,7 +157,7 @@ Thus
 $$
 J(y)=\arctan\frac ya+C.
 $$
-Step <1>5 gives $C=0$.
+Step [](#s1-5){.pf-ref} gives $C=0$.
 
 :::
 
@@ -165,7 +165,7 @@ Step <1>5 gives $C=0$.
 
 ::: pf-qed
 
-Step <1>6 is the required value.
+Step [](#s1-6){.pf-ref} is the required value.
 
 :::
 

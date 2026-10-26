@@ -35,7 +35,7 @@ g(x,y)=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is continuous at every point other than the origin.
 
@@ -97,7 +97,7 @@ so $g$ is again a quotient of polynomial functions with nonzero denominator.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $(x,y)\ne(0,0)$,
 \[
@@ -139,14 +139,14 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $g$ is continuous at $(0,0)$.
 
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 |g(x,y)-g(0,0)|
 =|g(x,y)|
@@ -163,7 +163,7 @@ g(x,y)\to0=g(0,0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -174,7 +174,7 @@ g\text{ is continuous on }\mathbb R^2}.
 
 ::: pf-proof
 
-Combine steps <1>1 through <1>5.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
@@ -182,7 +182,7 @@ Combine steps <1>1 through <1>5.
 
 ::: pf-qed
 
-Step <1>6 gives the requested determination.
+Step [](#s1-6){.pf-ref} gives the requested determination.
 
 :::
 

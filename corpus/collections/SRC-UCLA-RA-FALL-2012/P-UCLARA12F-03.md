@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists a sequence $(x_n)$ in $E$ such that
 $$
@@ -50,7 +50,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The minimizing sequence $(x_n)$ is Cauchy in $H$.
 
@@ -75,13 +75,13 @@ $$
 &\le2\|x_n\|^2+2\|x_m\|^2-4d^2.
 \end{aligned}
 $$
-As $n,m\to\infty$, the right-hand side tends to $0$ by step <1>1. Hence $(x_n)$ is Cauchy.
+As $n,m\to\infty$, the right-hand side tends to $0$ by step [](#s1-1){.pf-ref}. Hence $(x_n)$ is Cauchy.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $x\in E$ such that
 $$
@@ -91,7 +91,7 @@ $$
 
 ::: pf-proof
 
-Since $H$ is complete, step <1>2 gives a limit $x_n\to x$ in $H$. The set $E$ is closed, so $x\in E$. The norm is continuous, and therefore
+Since $H$ is complete, step [](#s1-2){.pf-ref} gives a limit $x_n\to x$ in $H$. The set $E$ is closed, so $x\in E$. The norm is continuous, and therefore
 $$
 \|x\|=\lim_{n\to\infty}\|x_n\|=d.
 $$
@@ -100,7 +100,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The minimizing point is unique.
 
@@ -132,7 +132,7 @@ Thus $x=y$.
 
 ::: pf-qed
 
-Step <1>3 proves existence and step <1>4 proves uniqueness.
+Step [](#s1-3){.pf-ref} proves existence and step [](#s1-4){.pf-ref} proves uniqueness.
 
 :::
 

@@ -58,7 +58,7 @@ converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -112,7 +112,7 @@ The boundary terms vanish because $\operatorname{Re}z>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -132,14 +132,14 @@ The rational function $1/z^2$ is holomorphic at every nonzero complex number.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $g$ analytically continues the original function $f$.
 
 
 ::: pf-proof
 
-For positive real $z$, step <1>2 gives
+For positive real $z$, step [](#s1-2){.pf-ref} gives
 $$
 f(z)
 =
@@ -155,7 +155,7 @@ Thus $g$ agrees with $f$ on the original domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The maximal domain of this analytic continuation is
 $$
@@ -165,7 +165,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives analyticity on $\CC\setminus\{0\}$. At $z=0$,
+Step [](#s1-3){.pf-ref} gives analyticity on $\CC\setminus\{0\}$. At $z=0$,
 $$
 g(z)=\frac1{z^2}
 $$
@@ -177,7 +177,7 @@ has a pole of order $2$, so no holomorphic extension through $0$ exists.
 
 ::: pf-qed
 
-Steps <1>4--<1>5 give the analytic continuation and its maximal domain.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the analytic continuation and its maximal domain.
 
 :::
 

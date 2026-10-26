@@ -22,7 +22,7 @@ Let $G$ be a non-empty set with a binary operation which is associative and full
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in G$, there is an integer $r\ge1$ such that
 \[
@@ -60,9 +60,9 @@ r=n-m\ge1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-For the integer $r$ from step <1>1, the element
+For the integer $r$ from step [](#s1-1){.pf-ref}, the element
 \[
 e_x=x^r
 \]
@@ -74,7 +74,7 @@ e_x^2=e_x.
 
 ::: pf-proof
 
-From step <1>1,
+From step [](#s1-1){.pf-ref},
 \[
 x^{r+1}=x.
 \]
@@ -95,7 +95,7 @@ Thus in every case
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Any idempotent element $e\in G$ is a two-sided identity for all of
 $G$.
@@ -129,29 +129,29 @@ Hence $e$ is a global two-sided identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $G$ has a two-sided identity element $e$.
 
 
 ::: pf-proof
 
-Choose any $x\in G$, which is possible because $G$ is nonempty. Step <1>2
-produces an idempotent $e_x$, and step <1>3 shows that $e_x$ is a global
+Choose any $x\in G$, which is possible because $G$ is nonempty. Step [](#s1-2){.pf-ref}
+produces an idempotent $e_x$, and step [](#s1-3){.pf-ref} shows that $e_x$ is a global
 identity. Denote it by $e$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every $x\in G$ has a two-sided inverse.
 
 
 ::: pf-proof
 
-Fix $x\in G$ and choose $r\ge1$ as in step <1>1. By steps <1>2 and <1>3,
+Fix $x\in G$ and choose $r\ge1$ as in step [](#s1-1){.pf-ref}. By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 x^r=e.
 \]
@@ -175,7 +175,7 @@ Thus $y$ is a two-sided inverse of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -185,7 +185,7 @@ Therefore
 
 ::: pf-proof
 
-Associativity is assumed. Step <1>4 supplies an identity, and step <1>5
+Associativity is assumed. Step [](#s1-4){.pf-ref} supplies an identity, and step [](#s1-5){.pf-ref}
 supplies a two-sided inverse for every element. These are precisely the
 remaining group axioms.
 
@@ -195,7 +195,7 @@ remaining group axioms.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

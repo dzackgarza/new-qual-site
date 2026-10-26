@@ -49,7 +49,7 @@ where $\log t$ is the real logarithm.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every compact set
 $$
@@ -90,7 +90,7 @@ which is integrable on $[1,\infty)$. The two bounds are independent of $s\in K$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function
 $$
@@ -116,13 +116,13 @@ $$
 \int_\varepsilon^R
 e^{-t}e^{(s-1)\log t}\log t\,dt,
 $$
-so $\Gamma_{\varepsilon,R}$ is entire. By step <1>1, as $\varepsilon\downarrow0$ and $R\to\infty$, these functions converge uniformly on every compact subset of $\operatorname{Re}(s)>0$ to $\Gamma(s)$. A locally uniform limit of holomorphic functions is holomorphic, so $\Gamma$ is analytic on the half-plane.
+so $\Gamma_{\varepsilon,R}$ is entire. By step [](#s1-1){.pf-ref}, as $\varepsilon\downarrow0$ and $R\to\infty$, these functions converge uniformly on every compact subset of $\operatorname{Re}(s)>0$ to $\Gamma(s)$. A locally uniform limit of holomorphic functions is holomorphic, so $\Gamma$ is analytic on the half-plane.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For real $s$ with $0<s<1$,
 $$
@@ -174,7 +174,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For real $0<s<1$,
 $$
@@ -194,13 +194,13 @@ $$
 =
 \frac{\pi}{\sin\pi s}.
 $$
-Combine this with step <1>3.
+Combine this with step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The reflection formula
 $$
@@ -218,7 +218,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip $0<\operatorname{Re}(s)<1$. The function $\pi/\sin\pi s$ is analytic there as well, because the zeros of $\sin\pi s$ are the integers and no integer lies in the strip. Step <1>4 shows that the two analytic functions agree for every real $s\in(0,1)$. This set has accumulation points in the strip, so the identity theorem implies equality throughout the strip.
+By step [](#s1-2){.pf-ref}, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip $0<\operatorname{Re}(s)<1$. The function $\pi/\sin\pi s$ is analytic there as well, because the zeros of $\sin\pi s$ are the integers and no integer lies in the strip. Step [](#s1-4){.pf-ref} shows that the two analytic functions agree for every real $s\in(0,1)$. This set has accumulation points in the strip, so the identity theorem implies equality throughout the strip.
 
 :::
 
@@ -226,7 +226,7 @@ By step <1>2, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip $0<\o
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>5 proves part (b) on the natural domain where both gamma factors are defined by the integral from part (a).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b) on the natural domain where both gamma factors are defined by the integral from part (a).
 
 :::
 

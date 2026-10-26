@@ -25,7 +25,7 @@ Let R be a commutative ring with identity that has exactly three ideals, {0}, I,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -98,7 +98,7 @@ I,
 \qquad
 R.
 $$
-Step <1>1 excludes the first two possibilities for
+Step [](#s1-1){.pf-ref} excludes the first two possibilities for
 $$
 (a),
 $$
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence every
 $$
@@ -122,7 +122,7 @@ is a unit.
 
 ::: pf-proof
 
-From step <1>2,
+From step [](#s1-2){.pf-ref},
 $$
 1\in(a).
 $$
@@ -148,7 +148,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -192,9 +192,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Under the assumption of step <1>4, there exists
+Under the assumption of step [](#s1-4){.pf-ref}, there exists
 $$
 r\in R
 $$
@@ -225,7 +225,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -268,7 +268,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The element
 $$
@@ -279,13 +279,13 @@ is a unit.
 
 ::: pf-proof
 
-This follows immediately from step <1>3 and step <1>6.
+This follows immediately from step [](#s1-3){.pf-ref} and step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The assumption
 $$
@@ -296,7 +296,7 @@ is impossible.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 a=abr,
 $$
@@ -304,7 +304,7 @@ so
 $$
 a(1-br)=0.
 $$
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 1-br
 $$
@@ -326,7 +326,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -340,7 +340,7 @@ $$
 
 ::: pf-proof
 
-Step <1>8 rules out the only alternative.
+Step [](#s1-8){.pf-ref} rules out the only alternative.
 
 :::
 
@@ -348,7 +348,7 @@ Step <1>8 rules out the only alternative.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

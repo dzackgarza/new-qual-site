@@ -34,7 +34,7 @@ has which one of the following as an eigenvalue?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial of $A$ is
 $$
@@ -66,14 +66,14 @@ which gives the displayed polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenvalues of $A$ are $1$ and $7$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 p(\lambda)=\lambda^2-8\lambda+7=(\lambda-1)(\lambda-7).
 $$
@@ -83,7 +83,7 @@ The eigenvalues are precisely the roots of the characteristic polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus the listed eigenvalue is
 $$
@@ -94,7 +94,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Step <1>2 gives the complete set of eigenvalues, and among the listed choices only $7$ occurs.
+Step [](#s1-2){.pf-ref} gives the complete set of eigenvalues, and among the listed choices only $7$ occurs.
 
 :::
 
@@ -102,7 +102,7 @@ Step <1>2 gives the complete set of eigenvalues, and among the listed choices on
 
 ::: pf-qed
 
-Step <1>3 identifies the required choice.
+Step [](#s1-3){.pf-ref} identifies the required choice.
 
 :::
 

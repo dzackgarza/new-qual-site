@@ -48,7 +48,7 @@ The spectral theorem for normal complex matrices says precisely that a normal ma
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists a polynomial $P\in\mathbb C[x]$ satisfying
 \[
@@ -71,7 +71,7 @@ Substituting $x=\lambda_i$ leaves only the $i$th summand and gives $P(\lambda_i)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Applying $P$ to the diagonalization gives
 \[
@@ -91,7 +91,7 @@ Taking the same linear combination of powers prescribed by the polynomial $P$ yi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The interpolation property implies
 \[
@@ -101,13 +101,13 @@ P(D)=D^*.
 
 ::: pf-proof
 
-If the $j$th diagonal entry of $D$ is $\lambda_i$, then the $j$th diagonal entry of $P(D)$ is $P(\lambda_i)=\overline{\lambda_i}$ by step <1>2. These are exactly the diagonal entries of $D^*$.
+If the $j$th diagonal entry of $D$ is $\lambda_i$, then the $j$th diagonal entry of $P(D)$ is $P(\lambda_i)=\overline{\lambda_i}$ by step [](#s1-2){.pf-ref}. These are exactly the diagonal entries of $D^*$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -117,7 +117,7 @@ P(A)=UD^*U^*=A^*.
 
 ::: pf-proof
 
-Steps <1>3--<1>4 give $P(A)=UD^*U^*$. On the other hand,
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give $P(A)=UD^*U^*$. On the other hand,
 \[
 A^*=(UDU^*)^*=UD^*U^*,
 \]
@@ -127,18 +127,18 @@ because $U$ is unitary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
 \boxed{A^*=P(A)}
 \]
-for the polynomial $P$ constructed in step <1>2.
+for the polynomial $P$ constructed in step [](#s1-2){.pf-ref}.
 
 
 ::: pf-proof
 
-This is exactly step <1>5.
+This is exactly step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -146,7 +146,7 @@ This is exactly step <1>5.
 
 ::: pf-qed
 
-Step <1>6 proves the assertion.
+Step [](#s1-6){.pf-ref} proves the assertion.
 
 :::
 

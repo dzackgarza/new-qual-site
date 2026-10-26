@@ -31,7 +31,7 @@ f(x) = \arcsin(\log \sqrt{x})
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The inverse-sine condition is
 $$
@@ -41,15 +41,15 @@ $$
 
 ::: pf-proof
 
-The inner expression $\log\sqrt{x}$ first requires $x>0$. On that domain, the real function $\arcsin u$ is defined exactly for $u\in[-1,1]$, which gives the displayed inequalities. Step <1>2 will show that those inequalities force $x\ge e^{-2}>0$, so no additional domain restriction remains.
+The inner expression $\log\sqrt{x}$ first requires $x>0$. On that domain, the real function $\arcsin u$ is defined exactly for $u\in[-1,1]$, which gives the displayed inequalities. Step [](#s1-2){.pf-ref} will show that those inequalities force $x\ge e^{-2}>0$, so no additional domain restriction remains.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The condition in step <1>1 is equivalent to
+The condition in step [](#s1-1){.pf-ref} is equivalent to
 $$
 e^{-2}\leq x\leq e^2.
 $$
@@ -57,7 +57,7 @@ $$
 
 ::: pf-proof
 
-Exponentiation is increasing, so step <1>1 gives
+Exponentiation is increasing, so step [](#s1-1){.pf-ref} gives
 $$
 e^{-1}\leq\sqrt{x}\leq e.
 $$
@@ -70,7 +70,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The domain is
 $$
@@ -81,7 +81,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 gives exactly the set of real $x$ for which every operation in $f(x)$ is defined.
+Step [](#s1-2){.pf-ref} gives exactly the set of real $x$ for which every operation in $f(x)$ is defined.
 
 :::
 
@@ -89,7 +89,7 @@ Step <1>2 gives exactly the set of real $x$ for which every operation in $f(x)$ 
 
 ::: pf-qed
 
-Step <1>3 gives the requested domain and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested domain and corresponding choice.
 
 :::
 

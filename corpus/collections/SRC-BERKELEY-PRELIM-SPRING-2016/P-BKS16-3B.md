@@ -40,7 +40,7 @@ Then the function in the problem is $f(x)=F(|x|)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The series defining $F(u)$ converges for every $u\geq0$.
 
@@ -57,7 +57,7 @@ is positive, decreases in $k$, and tends to $0$. The alternating-series test the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $F$ is $1$-Lipschitz on $[0,\infty)$.
 
@@ -88,14 +88,14 @@ Interchanging $u$ and $v$ gives the same estimate for arbitrary $u,v\geq0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The pointwise limit $f$ is $1$-Lipschitz on $\RR$.
 
 
 ::: pf-proof
 
-By step <1>2 and the reverse triangle inequality,
+By step [](#s1-2){.pf-ref} and the reverse triangle inequality,
 $$
 \begin{aligned}
 |f(x)-f(y)|
@@ -110,7 +110,7 @@ Thus $f$ is Lipschitz with constant $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series converges uniformly on $\RR$; the answer to the second question is $\boxed{\text{yes}}$.
 
@@ -140,7 +140,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1 and <1>3 prove the pointwise convergence to a Lipschitz function, and step <1>4 proves uniform convergence.
+Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} prove the pointwise convergence to a Lipschitz function, and step [](#s1-4){.pf-ref} proves uniform convergence.
 
 :::
 

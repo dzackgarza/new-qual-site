@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -59,7 +59,7 @@ by choice of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every chain in $\mathcal A$ has an upper bound in $\mathcal A$.
 
@@ -125,7 +125,7 @@ and it is an upper bound for the chain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists a prime ideal
 $$
@@ -136,7 +136,7 @@ maximal with respect to inclusion.
 
 ::: pf-proof
 
-By steps <1>1--<1>2, Zorn's lemma applies to $\mathcal A$.
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, Zorn's lemma applies to $\mathcal A$.
 Hence there exists a maximal element
 $$
 P^*\in\mathcal A.
@@ -155,7 +155,7 @@ Moreover, no larger prime ideal inside $Q$ can still omit $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal
 $$
@@ -170,7 +170,7 @@ One has
 $$
 P^*\subseteq Q
 $$
-by step <1>3, and
+by step [](#s1-3){.pf-ref}, and
 $$
 x\in Q
 $$
@@ -184,7 +184,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 $$
@@ -209,7 +209,7 @@ contains
 $$
 P^*+(x)
 $$
-by step <1>4.
+by step [](#s1-4){.pf-ref}.
 Thus
 $$
 Q\in\mathcal B.
@@ -219,7 +219,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Order $\mathcal B$ by reverse inclusion:
 $$
@@ -317,7 +317,7 @@ Hence $L$ is an upper bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exists a prime ideal
 $$
@@ -328,7 +328,7 @@ minimal under ordinary inclusion.
 
 ::: pf-proof
 
-By steps <1>5--<1>6, Zorn's lemma gives a maximal element of $\mathcal B$ with respect to the reverse-inclusion order.
+By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}, Zorn's lemma gives a maximal element of $\mathcal B$ with respect to the reverse-inclusion order.
 Call it
 $$
 Q^*.
@@ -347,7 +347,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 $$
@@ -357,11 +357,11 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 x\notin P^*.
 $$
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 x\in P^*+(x)\subseteq Q^*.
 $$
@@ -379,7 +379,7 @@ the inclusion is strict.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 There is no prime ideal strictly between
 $$
@@ -445,7 +445,7 @@ Therefore no such $T$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence there exist prime ideals
 $$
@@ -460,7 +460,7 @@ with no prime ideal strictly between $P^*$ and $Q^*$.
 
 ::: pf-proof
 
-Steps <1>3, <1>7, <1>8, and <1>9 establish all required properties.
+Steps [](#s1-3){.pf-ref}, [](#s1-7){.pf-ref}, and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} establish all required properties.
 
 :::
 
@@ -468,7 +468,7 @@ Steps <1>3, <1>7, <1>8, and <1>9 establish all required properties.
 
 ::: pf-qed
 
-Step <1>10 is the desired conclusion.
+Step [](#s1-10){.pf-ref} is the desired conclusion.
 
 :::
 

@@ -48,7 +48,7 @@ $y=\pm\sqrt3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Möbius transformation
 $$
@@ -69,7 +69,7 @@ hence to a straight line through the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 These two image lines have arguments
 $$
@@ -98,7 +98,7 @@ modulo $\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The image of $D$ under $T$ is
 $$
@@ -117,7 +117,7 @@ $2\pi/3$ and $4\pi/3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Multiplication by $-1$ sends this sector biholomorphically onto
 $$
@@ -134,7 +134,7 @@ the interval $(2\pi/3,4\pi/3)$ to $(-\pi/3,\pi/3)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On $S$, choose the branch of the logarithm with
 $$
@@ -164,7 +164,7 @@ $\{\zeta:\Re\zeta>0\}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 A conformal map from $D$ onto the upper half-plane is
 $$
@@ -172,13 +172,13 @@ $$
 F(z)
 =i\left(-\frac{z-i\sqrt3}{z+i\sqrt3}\right)^{3/2}}
 $$
-where the power uses the branch specified in step <1>6.
+where the power uses the branch specified in step [](#s1-6){.pf-ref}.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>5, the expression inside the power maps $D$
-conformally and bijectively onto $S$. Step <1>6 maps $S$ onto the right
+By steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref}, the expression inside the power maps $D$
+conformally and bijectively onto $S$. Step [](#s1-6){.pf-ref} maps $S$ onto the right
 half-plane. Multiplication by $i$ rotates the right half-plane onto
 $$
 \HH=\{z:\Im z>0\}.
@@ -191,7 +191,7 @@ Thus the displayed composition is the required conformal bijection.
 
 ::: pf-qed
 
-Step <1>7 gives an explicit conformal map from the stated intersection
+Step [](#s1-7){.pf-ref} gives an explicit conformal map from the stated intersection
 onto the upper half-plane.
 
 :::

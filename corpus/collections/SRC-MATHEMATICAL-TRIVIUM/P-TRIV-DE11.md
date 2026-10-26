@@ -57,7 +57,7 @@ These are not equal in general.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $y\neq0$,
 $$
@@ -96,7 +96,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence an integrating factor depending only on $y$ is
 $$
@@ -119,13 +119,13 @@ $$
 \exp\int\frac{N_x-M_y}{M},dy
 $$
 is an integrating factor.
-Apply step <1>2.
+Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Multiplying by $y^{-2}$ gives
 $$
@@ -146,9 +146,9 @@ Multiply each coefficient of the original form by $y^{-2}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The form in step <1>4 is exact.
+The form in step [](#s1-4){.pf-ref} is exact.
 
 
 ::: pf-proof
@@ -176,7 +176,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A potential function is
 $$
@@ -190,7 +190,7 @@ $$
 
 ::: pf-proof
 
-Integrate the $dx$-coefficient from step <1>4 with respect to $x$:
+Integrate the $dx$-coefficient from step [](#s1-4){.pf-ref} with respect to $x$:
 $$
 \int
 \left(
@@ -207,13 +207,13 @@ Differentiating with respect to $y$ gives
 $$
 \frac{x}{y^2}+h'(y).
 $$
-Matching the $dy$-coefficient in step <1>4 forces $h'(y)=0$.
+Matching the $dy$-coefficient in step [](#s1-4){.pf-ref} forces $h'(y)=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore every nonzero solution satisfies
 $$
@@ -235,7 +235,7 @@ For an exact differential equation $dF=0$, the potential $F$ is constant along s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Solving for $y$ gives
 $$
@@ -250,7 +250,7 @@ on intervals where the denominator is nonzero.
 
 ::: pf-proof
 
-From step <1>7,
+From step [](#s1-7){.pf-ref},
 $$
 \frac{x}{y}
 =
@@ -270,7 +270,7 @@ Rename the arbitrary constant $-2C$ as $C_1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The function
 $$
@@ -285,7 +285,7 @@ Substitution into the original differential form gives
 $$
 (x\cdot0^2-0)dx+x\,d(0)=0.
 $$
-This solution was excluded from steps <1>2--<1>8 because the integrating factor $y^{-2}$ is undefined at $y=0$.
+This solution was excluded from steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} because the integrating factor $y^{-2}$ is undefined at $y=0$.
 
 :::
 
@@ -293,7 +293,7 @@ This solution was excluded from steps <1>2--<1>8 because the integrating factor 
 
 ::: pf-qed
 
-Steps <1>8--<1>9 give the complete solution family.
+Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the complete solution family.
 
 :::
 

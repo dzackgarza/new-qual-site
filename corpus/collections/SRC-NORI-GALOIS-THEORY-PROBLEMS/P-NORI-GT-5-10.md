@@ -37,7 +37,7 @@ By hypothesis, $p\nmid m$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -103,7 +103,7 @@ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -113,7 +113,7 @@ $$
 
 ::: pf-proof
 
-Let $\alpha^p=a$. By step <1>2,
+Let $\alpha^p=a$. By step [](#s1-2){.pf-ref},
 $$
 b=a^m c^p=(c\alpha^m)^p.
 $$
@@ -126,7 +126,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -140,7 +140,7 @@ Since $p\nmid m$, choose integers $r,s$ such that
 $$
 rm+sp=1.
 $$
-Let $\beta=c\alpha^m$, so by step <1>3 one has $\beta^p=b$ and $\beta\in K(b^{1/p})$. Then
+Let $\beta=c\alpha^m$, so by step [](#s1-3){.pf-ref} one has $\beta^p=b$ and $\beta\in K(b^{1/p})$. Then
 $$
 \frac{\beta^r a^s}{c^r}
 =\frac{(c\alpha^m)^r(\alpha^p)^s}{c^r}
@@ -157,7 +157,7 @@ and hence $K(a^{1/p})\subseteq K(b^{1/p})$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $b\in F^\times$ such that
 $$
@@ -167,11 +167,11 @@ $$
 
 ::: pf-proof
 
-Take $b=N_{K/F}(a)$ from step <1>2. By steps <1>3 and <1>4,
+Take $b=N_{K/F}(a)$ from step [](#s1-2){.pf-ref}. By steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref},
 $$
 K(a^{1/p})=K(b^{1/p}).
 $$
-Combining this with step <1>1 gives
+Combining this with step [](#s1-1){.pf-ref} gives
 $$
 L=K(b^{1/p}).
 $$
@@ -182,7 +182,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 proves the required statement.
+Step [](#s1-5){.pf-ref} proves the required statement.
 
 :::
 

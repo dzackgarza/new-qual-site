@@ -44,7 +44,7 @@ L=\frac{d^2}{dt^2}+2k\frac d{dt}+\Omega^2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The retarded Green function is characterized by
 \[
@@ -64,7 +64,7 @@ The absence of a $\delta_0'$ term forces $G$ to be continuous at $0$. Retardedne
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $\Omega>k>0$ and $\omega=\sqrt{\Omega^2-k^2}$, then
 \[
@@ -78,13 +78,13 @@ For $t>0$, the characteristic roots of $LG=0$ are $-k\pm i\omega$. Thus
 \[
 G(t)=e^{-kt}\bigl(A\cos(\omega t)+B\sin(\omega t)\bigr).
 \]
-The conditions in step <1>1 give $A=0$ and $B\omega=1$, so $B=1/\omega$. Multiplication by $\theta(t)$ imposes retardedness.
+The conditions in step [](#s1-1){.pf-ref} give $A=0$ and $B\omega=1$, so $B=1/\omega$. Multiplication by $\theta(t)$ imposes retardedness.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\Omega=k$, then
 \[
@@ -98,13 +98,13 @@ The characteristic polynomial has the repeated root $-k$, so for $t>0$,
 \[
 G(t)=(A+Bt)e^{-kt}.
 \]
-Step <1>1 gives $A=0$ and $B=1$.
+Step [](#s1-1){.pf-ref} gives $A=0$ and $B=1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $k>\Omega>0$ and $\lambda=\sqrt{k^2-\Omega^2}$, then
 \[
@@ -118,20 +118,20 @@ The characteristic roots are $-k\pm\lambda$. Hence for $t>0$ one may write
 \[
 G(t)=e^{-kt}\bigl(A\cosh(\lambda t)+B\sinh(\lambda t)\bigr).
 \]
-Step <1>1 gives $A=0$ and $B\lambda=1$, so $B=1/\lambda$.
+Step [](#s1-1){.pf-ref} gives $A=0$ and $B\lambda=1$, so $B=1/\lambda$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 These formulas give the Green function in all three damping regimes, subject to the retarded condition.
 
 
 ::: pf-proof
 
-Steps <1>2--<1>4 solve $LG=0$ for $t\ne0$ and satisfy the jump conditions in step <1>1, hence each satisfies $LG=\delta_0$. Without a boundary condition such as retardedness, the differential equation alone does not select a unique Green function, since a homogeneous solution may be added to any particular Green function.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} solve $LG=0$ for $t\ne0$ and satisfy the jump conditions in step [](#s1-1){.pf-ref}, hence each satisfies $LG=\delta_0$. Without a boundary condition such as retardedness, the differential equation alone does not select a unique Green function, since a homogeneous solution may be added to any particular Green function.
 
 :::
 
@@ -139,7 +139,7 @@ Steps <1>2--<1>4 solve $LG=0$ for $t\ne0$ and satisfy the jump conditions in ste
 
 ::: pf-qed
 
-Step <1>5 establishes the three requested formulas and states the boundary condition under which they are uniquely determined.
+Step [](#s1-5){.pf-ref} establishes the three requested formulas and states the boundary condition under which they are uniquely determined.
 
 :::
 

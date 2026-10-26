@@ -36,7 +36,7 @@ x+1=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -59,7 +59,7 @@ x+1\le0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For
 \[
@@ -82,7 +82,7 @@ x+1\ge0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -96,13 +96,13 @@ Therefore
 
 ::: pf-proof
 
-Split the integral at the sign-change point and use steps <1>2--<1>3.
+Split the integral at the sign-change point and use steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The first integral equals
 \[
@@ -138,7 +138,7 @@ The first integral equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The second integral equals
 \[
@@ -174,7 +174,7 @@ The second integral equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -185,7 +185,7 @@ Hence
 
 ::: pf-proof
 
-Combine steps <1>4--<1>6:
+Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}:
 \[
 2+8=10.
 \]
@@ -196,7 +196,7 @@ Combine steps <1>4--<1>6:
 
 ::: pf-qed
 
-Step <1>7 is the requested value.
+Step [](#s1-7){.pf-ref} is the requested value.
 
 :::
 

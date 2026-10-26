@@ -34,7 +34,7 @@ where $\rho>0$ and $\abs{c}>\rho$, since the origin is outside the enclosed disk
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $n\ne-1$, then
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On $\gamma$,
 $$
@@ -104,7 +104,7 @@ The ratio has modulus $\rho/\abs{c}<1$ independently of $t$, so the geometric se
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $n=-1$,
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2 and
+By step [](#s1-2){.pf-ref} and
 $$
 dz=i\rho e^{it}\,dt,
 $$
@@ -139,7 +139,7 @@ so the whole sum is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, for every integer $n$,
 $$
@@ -151,7 +151,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 covers $n\ne-1$, and step <1>3 covers $n=-1$.
+Step [](#s1-1){.pf-ref} covers $n\ne-1$, and step [](#s1-3){.pf-ref} covers $n=-1$.
 
 :::
 
@@ -159,7 +159,7 @@ Step <1>1 covers $n\ne-1$, and step <1>3 covers $n=-1$.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value for every integer $n$ without using Cauchy's theorem.
+Step [](#s1-4){.pf-ref} gives the requested value for every integer $n$ without using Cauchy's theorem.
 
 :::
 

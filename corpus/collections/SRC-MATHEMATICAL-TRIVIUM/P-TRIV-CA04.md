@@ -21,7 +21,7 @@ Compute the Laurent series of $f ( z ) = \frac { e ^ { z } } { ( z - 1 ) ^ { 2 }
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Write
 $$
@@ -50,7 +50,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Taylor series of $e^{z-1}$ is
 $$
@@ -71,7 +71,7 @@ $z-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -87,13 +87,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>2 into step <1>1 and divide termwise by $(z-1)^2$.
+Substitute step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref} and divide termwise by $(z-1)^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In expanded form,
 $$
@@ -116,13 +116,13 @@ $$
 
 ::: pf-proof
 
-Write out the first terms of the series in step <1>3.
+Write out the first terms of the series in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The region of convergence is
 $$
@@ -135,7 +135,7 @@ $$
 ::: pf-proof
 
 The exponential series has infinite radius of convergence, so the shifted
-series in step <1>3 converges for every finite $z$. The only excluded point is
+series in step [](#s1-3){.pf-ref} converges for every finite $z$. The only excluded point is
 $z=1$, where the original function has a pole of order $2$.
 
 :::
@@ -144,7 +144,7 @@ $z=1$, where the original function has a pole of order $2$.
 
 ::: pf-qed
 
-Steps <1>4 and <1>5 give the Laurent series and its region of convergence.
+Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give the Laurent series and its region of convergence.
 
 :::
 

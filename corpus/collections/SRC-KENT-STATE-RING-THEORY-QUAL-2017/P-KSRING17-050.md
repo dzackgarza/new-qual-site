@@ -21,7 +21,7 @@ Let R be a commutative ring with identity and let U be maximal among non-princip
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ideal $U$ is proper.
 
@@ -41,7 +41,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 $$
@@ -83,7 +83,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exist
 $$
@@ -122,7 +122,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -190,7 +190,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The element
 $$
@@ -204,7 +204,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 c=u+ra.
 $$
@@ -243,14 +243,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal $V$ is principal.
 
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 U\subsetneq V.
 $$
@@ -267,7 +267,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -305,7 +305,7 @@ so
 $$
 y\in V.
 $$
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 V=(d),
 $$
@@ -336,7 +336,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 $$
@@ -363,7 +363,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Thus
 $$
@@ -374,20 +374,20 @@ contradicting the assumption that $U$ is non-principal.
 
 ::: pf-proof
 
-Combine steps <1>7 and <1>8.
+Combine steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore $U$ is prime.
 
 
 ::: pf-proof
 
-Step <1>1 shows $U$ is proper. If
+Step [](#s1-1){.pf-ref} shows $U$ is proper. If
 $$
 ab\in U
 $$
@@ -399,7 +399,7 @@ nor
 $$
 b
 $$
-lay in $U$, steps <1>2--<1>9 would produce a contradiction. Hence
+lay in $U$, steps [](#s1-2){.pf-ref} through [](#s1-9){.pf-ref} would produce a contradiction. Hence
 $$
 ab\in U
 \implies
@@ -418,7 +418,7 @@ $$
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

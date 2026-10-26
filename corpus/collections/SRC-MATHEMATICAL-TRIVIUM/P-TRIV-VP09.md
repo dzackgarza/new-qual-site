@@ -64,7 +64,7 @@ so it preserves the prescribed boundary values of $f$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The first variation is
 $$
@@ -100,7 +100,7 @@ with respect to $\varepsilon$ at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Two integrations by parts give
 $$
@@ -143,7 +143,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At an extremum,
 $$
@@ -160,14 +160,14 @@ $$
 
 ::: pf-proof
 
-The first variation from step <1>2 must vanish for every admissible variation.
-Use step <1>3.
+The first variation from step [](#s1-2){.pf-ref} must vanish for every admissible variation.
+Use step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore every extremum satisfies
 $$
@@ -178,13 +178,13 @@ in $D$.
 
 ::: pf-proof
 
-Apply the fundamental lemma of the calculus of variations to step <1>4.
+Apply the fundamental lemma of the calculus of variations to step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In Cartesian coordinates,
 $$
@@ -212,7 +212,7 @@ Mixed derivatives commute because $f\in C^4(\bar D)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence the functional in the boxed formula above has the required
 biharmonic Euler--Lagrange equation.
@@ -220,7 +220,7 @@ biharmonic Euler--Lagrange equation.
 
 ::: pf-proof
 
-Steps <1>5--<1>6 reproduce exactly the differential equation stated in the
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} reproduce exactly the differential equation stated in the
 problem.
 
 :::
@@ -229,7 +229,7 @@ problem.
 
 ::: pf-qed
 
-Step <1>7 verifies the requested variational principle.
+Step [](#s1-7){.pf-ref} verifies the requested variational principle.
 
 :::
 

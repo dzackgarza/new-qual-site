@@ -28,7 +28,7 @@ f_3(z)=\sqrt z.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The only finite singularity of
 \[
@@ -58,7 +58,7 @@ Thus $f_1$ is holomorphic on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singularity of $f_1$ at $0$ is removable, with removable value
 \[
@@ -106,7 +106,7 @@ The right-hand side extends holomorphically to $z=0$ with value
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 \[
@@ -143,7 +143,7 @@ z=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The point
 \[
@@ -182,7 +182,7 @@ Hence $z=1$ is a pole of order $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The point
 \[
@@ -220,7 +220,7 @@ Hence $f_2$ is also essential at $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The expression
 \[
@@ -291,7 +291,7 @@ neighborhood of $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Consequently,
 \[
@@ -307,7 +307,7 @@ z=0
 
 An isolated singularity requires a single-valued holomorphic function on a
 full punctured disk around the point.
-Step <1>6 proves that no such branch of
+Step [](#s1-6){.pf-ref} proves that no such branch of
 \[
 \sqrt z
 \]
@@ -325,7 +325,7 @@ in that domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The complete classification is therefore
 \[
@@ -350,7 +350,7 @@ The complete classification is therefore
 
 ::: pf-proof
 
-Collect steps <1>1--<1>7.
+Collect steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -358,7 +358,7 @@ Collect steps <1>1--<1>7.
 
 ::: pf-qed
 
-Step <1>8 gives all requested classifications.
+Step [](#s1-8){.pf-ref} gives all requested classifications.
 
 :::
 

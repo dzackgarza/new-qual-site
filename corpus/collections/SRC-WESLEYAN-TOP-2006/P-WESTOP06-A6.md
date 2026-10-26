@@ -50,7 +50,7 @@ These are the definitions used in the remaining steps.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every proper ideal \(J\) of a commutative ring \(R\) with identity is contained in a maximal ideal.
 
@@ -71,7 +71,7 @@ is an ideal containing \(J\): for two elements of \(U\), the chain condition put
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 With the retained literal definition
 \[
@@ -88,7 +88,7 @@ The condition \(Z(f)\supseteq X\) means exactly that \(f(x)=0\) for every \(x\in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For the intended definition \(I_{\mathrm{van}}(S)\), the set \(I_{\mathrm{van}}(S)\) is an ideal,
 \[
@@ -109,7 +109,7 @@ For every \(f\in C(X)\), the zero set \(Z(f)=f^{-1}(\{0\})\) is closed. Hence \(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The converse in part \(3\) is false as printed, and it remains false after replacing the retained \(X\) by the intended \(S\).
 
@@ -128,7 +128,7 @@ where \(x\) denotes the identity function. Suppose \(J=I_{\mathrm{van}}(S)\) for
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If \(X\) is compact Hausdorff, then the maximal ideals of \(C(X)\) are exactly
 \[
@@ -170,7 +170,7 @@ is nonempty. Choose \(x\) in it. Then every \(f\in M\) vanishes at \(x\), so \(M
 
 ::: pf-qed
 
-Step <1>2 proves part \(1\); steps <1>3 and <1>4 address the literal and intended readings of part \(2\); step <1>5 resolves the false converse in part \(3\); and step <1>6 gives the maximal ideals requested in part \(4\).
+Step [](#s1-2){.pf-ref} proves part \(1\); steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} address the literal and intended readings of part \(2\); step [](#s1-5){.pf-ref} resolves the false converse in part \(3\); and step [](#s1-6){.pf-ref} gives the maximal ideals requested in part \(4\).
 
 :::
 

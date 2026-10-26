@@ -39,7 +39,7 @@ Hint: let $w$ be a unit vector such that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative
 \[
@@ -88,7 +88,7 @@ Thus $L_1=L_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 \[
@@ -112,7 +112,7 @@ while the right-hand side is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose now that
 \[
@@ -161,7 +161,7 @@ Its norm is $1$ by construction, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Parametrize the segment $I$ by
 \[
@@ -187,7 +187,7 @@ Taking the Euclidean inner product with the fixed vector $w$ preserves these pro
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists
 \[
@@ -218,7 +218,7 @@ for some $t_0\in(0,1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -261,7 +261,7 @@ Differentiating the scalar product with the constant vector $w$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -273,7 +273,7 @@ One has
 
 ::: pf-proof
 
-By steps <1>3, <1>5, and <1>6,
+By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref},
 \[
 \begin{aligned}
 \|f(q)-f(p)\|_2
@@ -309,8 +309,8 @@ Combining the inequalities proves the claim.
 
 ::: pf-qed
 
-Step <1>1 answers part (a).
-Step <1>2 handles the case $f(q)=f(p)$ in part (b), and steps <1>3--<1>7 prove the estimate when $f(q)\ne f(p)$.
+Step [](#s1-1){.pf-ref} answers part (a).
+Step [](#s1-2){.pf-ref} handles the case $f(q)=f(p)$ in part (b), and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} prove the estimate when $f(q)\ne f(p)$.
 
 :::
 

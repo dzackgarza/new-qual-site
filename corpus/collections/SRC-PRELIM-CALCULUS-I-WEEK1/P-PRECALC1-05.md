@@ -22,7 +22,7 @@ Let $f(x) = |x| + 3x^2$ for $x \in \mathbb{R}$. What is $f'(-1)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In a neighborhood of
 \[
@@ -45,7 +45,7 @@ Every \(x\) sufficiently close to \(-1\) is negative, and for \(x<0\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore, near \(x=-1\),
 \[
@@ -57,7 +57,7 @@ f(x)
 
 ::: pf-proof
 
-Substitute step <1>1 into
+Substitute step [](#s1-1){.pf-ref} into
 \[
 f(x)=|x|+3x^2.
 \]
@@ -66,7 +66,7 @@ f(x)=|x|+3x^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 \[
@@ -78,13 +78,13 @@ for \(x\) near \(-1\).
 
 ::: pf-proof
 
-Differentiate the polynomial expression from step <1>2.
+Differentiate the polynomial expression from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Evaluating at \(-1\),
 \[
@@ -95,7 +95,7 @@ f'(-1)=-1+6(-1)=-7}.
 
 ::: pf-proof
 
-Substitute \(x=-1\) into step <1>3.
+Substitute \(x=-1\) into step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -103,7 +103,7 @@ Substitute \(x=-1\) into step <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the requested derivative.
+Step [](#s1-4){.pf-ref} is the requested derivative.
 
 :::
 

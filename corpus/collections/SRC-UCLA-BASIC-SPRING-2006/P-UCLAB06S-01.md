@@ -23,7 +23,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -61,7 +61,7 @@ These are the upper and lower Darboux sums associated to the partition $P$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A bounded function
 \[
@@ -98,7 +98,7 @@ and common refinements can only increase lower sums and decrease upper sums.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The uniform limit $f$ is bounded.
 
@@ -127,7 +127,7 @@ for every $x\in[0,1]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix $\varepsilon>0$.
 Choose $N$ such that
@@ -148,7 +148,7 @@ uniformly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since $f_N$ is Riemann integrable, there exists a partition $P$ such that
 \[
@@ -158,13 +158,13 @@ U(f_N,P)-L(f_N,P)<\frac{\varepsilon}{2}.
 
 ::: pf-proof
 
-Apply the Darboux criterion from step <1>2 to the Riemann integrable function $f_N$ with tolerance $\varepsilon/2$.
+Apply the Darboux criterion from step [](#s1-2){.pf-ref} to the Riemann integrable function $f_N$ with tolerance $\varepsilon/2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every subinterval $I_i$ of $P$,
 \[
@@ -202,9 +202,9 @@ and taking the infimum gives the second.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-For the partition $P$ from step <1>5,
+For the partition $P$ from step [](#s1-5){.pf-ref},
 \[
 U(f,P)-L(f,P)
 <
@@ -214,7 +214,7 @@ U(f,P)-L(f,P)
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 \begin{aligned}
 U(f,P)-L(f,P)
@@ -241,7 +241,7 @@ Since
 \[
 \sum_{i=1}^m(x_i-x_{i-1})=1,
 \]
-and step <1>5 gives
+and step [](#s1-5){.pf-ref} gives
 \[
 U(f_N,P)-L(f_N,P)<\frac{\varepsilon}{2},
 \]
@@ -254,16 +254,16 @@ U(f,P)-L(f,P)<\varepsilon.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore $f$ is Riemann integrable on $[0,1]$.
 
 
 ::: pf-proof
 
-Step <1>3 gives boundedness.
-Step <1>7 shows that for every $\varepsilon>0$ there is a partition with upper-minus-lower sum less than $\varepsilon$.
-By the criterion in step <1>2,
+Step [](#s1-3){.pf-ref} gives boundedness.
+Step [](#s1-7){.pf-ref} shows that for every $\varepsilon>0$ there is a partition with upper-minus-lower sum less than $\varepsilon$.
+By the criterion in step [](#s1-2){.pf-ref},
 \[
 \boxed{f\text{ is Riemann integrable}.}
 \]
@@ -274,7 +274,7 @@ By the criterion in step <1>2,
 
 ::: pf-qed
 
-Steps <1>1--<1>2 answer part (A), and steps <1>3--<1>8 prove part (B).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} answer part (A), and steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} prove part (B).
 
 :::
 

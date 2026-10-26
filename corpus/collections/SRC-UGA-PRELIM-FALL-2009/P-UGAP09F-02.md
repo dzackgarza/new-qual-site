@@ -36,7 +36,7 @@ R=\{(x,y,z)\in\mathbb R^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a),
 $$
@@ -67,7 +67,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For part (b), the Taylor expansion about $a=2$ is
 $$
@@ -104,7 +104,7 @@ Hence the series converges for $|x-2|<2$ and diverges for $|x-2|>2$, so its radi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For part (c), one suitable iterated integral is
 $$
@@ -143,7 +143,7 @@ Using these three bounds with the integrand $x\sin(y+z)$ gives the displayed ite
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b), and step [](#s1-3){.pf-ref} answers part (c).
 
 :::
 

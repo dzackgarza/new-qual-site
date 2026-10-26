@@ -32,7 +32,7 @@ I=\int_0^1x^{-2/3}(1-x)^{-1/3}\,dx.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral is the beta integral
 \[
@@ -52,7 +52,7 @@ Taking $a=1/3$ and $b=2/3$ gives exactly the integrand $x^{-2/3}(1-x)^{-1/3}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -74,7 +74,7 @@ Here $a+b=1$ and $\Gamma(1)=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Euler's reflection formula gives
 \[
@@ -111,13 +111,13 @@ on the plane cut along $[0,1]$. The two boundary values along the cut differ by 
 \[
 B(a,1-a)=\frac\pi{\sin(\pi a)}
 \]
-with $a=1/3$, hence the value in step <1>3.
+with $a=1/3$, hence the value in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -127,7 +127,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
@@ -135,7 +135,7 @@ Combine steps <1>1--<1>3.
 
 ::: pf-qed
 
-Step <1>5 is the requested integral.
+Step [](#s1-5){.pf-ref} is the requested integral.
 
 :::
 

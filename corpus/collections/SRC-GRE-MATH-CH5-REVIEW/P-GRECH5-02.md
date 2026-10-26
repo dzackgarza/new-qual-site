@@ -38,7 +38,7 @@ is $(x, y, z) = (a, b, a)$. If $a$ is NOT an integer, what is the numerical valu
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Substituting $(x,y,z)=(a,b,a)$ into the third equation gives
 $$
@@ -62,7 +62,7 @@ Solving for $b$ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The parameter $a$ satisfies
 $$
@@ -76,7 +76,7 @@ The first equation after substitution is
 $$
 a^2+ab-a=1.
 $$
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 a^2+a(2a^2-1)-a=1,
 $$
@@ -94,7 +94,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since $a$ is not an integer,
 $$
@@ -106,11 +106,11 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 a\in\left\{1,-1,-\frac12\right\}.
 $$
-The first two values are integers, so the hypothesis forces $a=-1/2$. Step <1>1 then gives
+The first two values are integers, so the hypothesis forces $a=-1/2$. Step [](#s1-1){.pf-ref} then gives
 $$
 b=2\left(\frac14\right)-1=-\frac12.
 $$
@@ -119,7 +119,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -130,7 +130,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Add the two values in step <1>3.
+Add the two values in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -138,7 +138,7 @@ Add the two values in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested numerical value and corresponding choice.
+Step [](#s1-4){.pf-ref} gives the requested numerical value and corresponding choice.
 
 :::
 

@@ -28,7 +28,7 @@ Let $R$ be a ring; an element $x$ in $R$ is said to be idempotent if $x^2 = x$. 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the Chinese remainder theorem,
 $$
@@ -49,7 +49,7 @@ Ring homomorphisms preserve the equation $x^2=x$, so an element of $\ZZ_{20}$ is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Each of $\ZZ_4$ and $\ZZ_5$ has exactly two idempotents, $0$ and $1$.
 
@@ -66,7 +66,7 @@ Modulo $5$, which is a field, this forces $x=0$ or $x=1$. Modulo $4$, the intege
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence $\ZZ_{20}$ has exactly four idempotents, represented by
 $$
@@ -76,13 +76,13 @@ $$
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 give $2\cdot2=4$ possible pairs of idempotent components. Solving the four pairs of congruences modulo $4$ and $5$ gives respectively $0,1,5,16$ modulo $20$.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $2\cdot2=4$ possible pairs of idempotent components. Solving the four pairs of congruences modulo $4$ and $5$ gives respectively $0,1,5,16$ modulo $20$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the number of idempotents is
 $$
@@ -93,7 +93,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-This is the count established in step <1>3.
+This is the count established in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -101,7 +101,7 @@ This is the count established in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the requested number.
+Step [](#s1-4){.pf-ref} gives the requested number.
 
 :::
 

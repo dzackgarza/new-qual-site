@@ -31,7 +31,7 @@ Assume the tetrahedron is fair, so each face has probability $1/4$. The four fac
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each color event has probability
 \[
@@ -47,7 +47,7 @@ The event $R$ occurs on the red-only face and on the $RGB$ face, two of the four
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For any two distinct colors $A,B\in\{R,G,B\}$,
 \[
@@ -63,7 +63,7 @@ The only face containing any prescribed pair of distinct colors is the $RGB$ fac
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence every pair of distinct color events is independent:
 \[
@@ -73,13 +73,13 @@ P(A\cap B)=P(A)P(B)=\frac14.
 
 ::: pf-proof
 
-By step <1>1, $P(A)P(B)=(1/2)(1/2)=1/4$, which equals the intersection probability in step <1>2.
+By step [](#s1-1){.pf-ref}, $P(A)P(B)=(1/2)(1/2)=1/4$, which equals the intersection probability in step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The triple intersection has probability
 \[
@@ -93,20 +93,20 @@ P(R)P(G)P(B)=\frac18.
 
 ::: pf-proof
 
-All three colors occur simultaneously exactly on the $RGB$ face, so the triple intersection has probability $1/4$. Step <1>1 gives the product $(1/2)^3=1/8$.
+All three colors occur simultaneously exactly on the $RGB$ face, so the triple intersection has probability $1/4$. Step [](#s1-1){.pf-ref} gives the product $(1/2)^3=1/8$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $R,G,B$ are pairwise independent but not mutually independent.
 
 
 ::: pf-proof
 
-Pairwise independence is step <1>3. Mutual independence would require the triple-intersection identity, which fails by step <1>4.
+Pairwise independence is step [](#s1-3){.pf-ref}. Mutual independence would require the triple-intersection identity, which fails by step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -114,7 +114,7 @@ Pairwise independence is step <1>3. Mutual independence would require the triple
 
 ::: pf-qed
 
-Steps <1>3--<1>5 answer parts (a) and (b).
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} answer parts (a) and (b).
 
 :::
 

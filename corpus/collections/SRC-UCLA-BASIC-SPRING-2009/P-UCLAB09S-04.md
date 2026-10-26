@@ -34,7 +34,7 @@ Prove that $X$ is compact if and only if, for every $r>0$, $X$ can be covered by
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The metric space $X$ is *compact* if every open cover of $X$ has a finite subcover.
 
@@ -47,7 +47,7 @@ This is the open-cover definition of compactness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The metric space $X$ is *complete* if every Cauchy sequence in $X$ converges to a point of $X$.
 
@@ -60,7 +60,7 @@ This is the definition of completeness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The metric space $X$ is *connected* if it cannot be written as
 \[
@@ -83,7 +83,7 @@ X.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space $\mathbb Q$ with its usual metric is not connected.
 
@@ -134,7 +134,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $X$ is compact, then for every $r>0$, finitely many open balls of radius $r$ cover $X$.
 
@@ -167,7 +167,7 @@ B(x_N,r).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Conversely, suppose that for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
 Then every sequence in $X$ has a Cauchy subsequence.
@@ -232,14 +232,14 @@ Thus $(y_k)$ is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $X$ is complete and satisfies the finite-ball-cover property, then every sequence in $X$ has a convergent subsequence.
 
 
 ::: pf-proof
 
-By step <1>6, every sequence has a Cauchy subsequence.
+By step [](#s1-6){.pf-ref}, every sequence has a Cauchy subsequence.
 Completeness implies that this Cauchy subsequence converges to a point of $X$.
 Thus $X$ is sequentially compact.
 
@@ -247,7 +247,7 @@ Thus $X$ is sequentially compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In a metric space, sequential compactness implies compactness.
 
@@ -326,7 +326,7 @@ Thus $X$ is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $X$ is complete, then
 \[
@@ -340,8 +340,8 @@ X\text{ is compact}
 
 ::: pf-proof
 
-The forward implication is step <1>5.
-For the reverse implication, steps <1>6--<1>7 give sequential compactness, and step <1>8 turns sequential compactness into compactness.
+The forward implication is step [](#s1-5){.pf-ref}.
+For the reverse implication, steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give sequential compactness, and step [](#s1-8){.pf-ref} turns sequential compactness into compactness.
 
 :::
 
@@ -349,7 +349,7 @@ For the reverse implication, steps <1>6--<1>7 give sequential compactness, and s
 
 ::: pf-qed
 
-Steps <1>1--<1>3 give the requested definitions, step <1>4 answers part (d), and step <1>9 proves part (e).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definitions, step [](#s1-4){.pf-ref} answers part (d), and step [](#s1-9){.pf-ref} proves part (e).
 
 :::
 

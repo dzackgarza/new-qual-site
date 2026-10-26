@@ -25,7 +25,7 @@ Find $f(3,5)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Express $(3,5)$ as a linear combination of the two vectors on which $f$ is known:
 $$
@@ -46,7 +46,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By linearity,
 $$
@@ -58,7 +58,7 @@ $$
 
 ::: pf-proof
 
-Apply $f$ to the decomposition in step <1>1 and use linearity of $f$.
+Apply $f$ to the decomposition in step [](#s1-1){.pf-ref} and use linearity of $f$.
 
 :::
 
@@ -84,13 +84,13 @@ f(1,1)=1,
 \qquad
 f(-1,0)=2
 $$
-into step <1>2.
+into step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 $$
@@ -108,7 +108,7 @@ This is answer choice $\boxed{\text{(E)}}$.
 
 ::: pf-qed
 
-Step <1>4 is the required value.
+Step [](#s1-4){.pf-ref} is the required value.
 
 :::
 

@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $z\in D_s(z_0)$, then
 $$
@@ -59,7 +59,7 @@ Thus $w\in D_r(z_0)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in D_s(z_0)$ and every $0<t<\rho$,
 $$
@@ -73,7 +73,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the circle
+By step [](#s1-1){.pf-ref}, the circle
 $$
 \abs{w-z}=t
 $$
@@ -91,7 +91,7 @@ Taking absolute values yields the estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $z\in D_s(z_0)$,
 $$
@@ -105,7 +105,7 @@ $$
 
 ::: pf-proof
 
-Multiply the estimate in step <1>2 by $2t$ and integrate from $0$ to $\rho$:
+Multiply the estimate in step [](#s1-2){.pf-ref} by $2t$ and integrate from $0$ to $\rho$:
 $$
 \abs{f(z)}
 \int_0^\rho2t\,dt
@@ -131,7 +131,7 @@ Division by $\rho^2$ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -146,11 +146,11 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 D_\rho(z)\subset D_r(z_0),
 $$
-so step <1>3 gives
+so step [](#s1-3){.pf-ref} gives
 $$
 \abs{f(z)}
 \le
@@ -166,7 +166,7 @@ for every $z\in D_s(z_0)$. Taking the supremum over $z$ yields the displayed ine
 
 ::: pf-qed
 
-Step <1>4 proves the assertion with
+Step [](#s1-4){.pf-ref} proves the assertion with
 $$
 \boxed{
 c=\frac1{\pi(r-s)^2}>0.

@@ -29,7 +29,7 @@ positive symmetry axis.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For the ring, every charge element is at distance
 $$
@@ -48,7 +48,7 @@ Pythagoras gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The field contribution of a ring element $dq$ has axial component
 $$
@@ -74,13 +74,13 @@ k_e\frac{dq}{s^2}\frac d s
 =
 k_e\frac{d\,dq}{s^3}.
 $$
-Use step <1>1.
+Use step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The transverse components cancel around the ring.
 
@@ -95,7 +95,7 @@ component.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The total charge of the ring is
 $$
@@ -111,7 +111,7 @@ The circumference is $2\pi R$ and the linear charge density is $\rho$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the electric-field magnitude on the axis is
 $$
@@ -126,33 +126,33 @@ $$
 
 ::: pf-proof
 
-Integrate step <1>2 over the ring. Since its coefficient is constant,
+Integrate step [](#s1-2){.pf-ref} over the ring. Since its coefficient is constant,
 $$
 E_z
 =
 k_e\frac d{(R^2+d^2)^{3/2}}
 \int dq.
 $$
-Use step <1>4 and step <1>3.
+Use step [](#s1-4){.pf-ref} and step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For the disk, decompose it into concentric rings of radius $r$ and
 thickness $dr$. Such a ring has charge
@@ -175,7 +175,7 @@ and multiplying by surface charge density $\sigma$ gives the charge.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The axial field from this annulus is
 $$
@@ -188,14 +188,14 @@ $$
 
 ::: pf-proof
 
-Apply the ring formula from step <1>2 with radius $r$ and charge from step
-<1>7.
+Apply the ring formula from step [](#s1-2){.pf-ref} with radius $r$ and charge from step
+[](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -209,13 +209,13 @@ $$
 
 ::: pf-proof
 
-Integrate the annular contributions from step <1>8 over all radii in the disk.
+Integrate the annular contributions from step [](#s1-8){.pf-ref} over all radii in the disk.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The radial integral satisfies
 $$
@@ -249,7 +249,7 @@ Evaluate between $0$ and $R$, using $d>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence
 $$
@@ -268,13 +268,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>10 into step <1>9.
+Substitute step [](#s1-10){.pf-ref} into step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 As $R\to\infty$,
 $$
@@ -293,20 +293,20 @@ $$
 \frac d{\sqrt{R^2+d^2}}
 \longrightarrow0,
 $$
-the result follows from step <1>11.
+the result follows from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>11--<1>12 give the disk field and its infinite-radius limit.
+Steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} give the disk field and its infinite-radius limit.
 
 :::
 
@@ -314,7 +314,7 @@ Steps <1>11--<1>12 give the disk field and its infinite-radius limit.
 
 ::: pf-qed
 
-Steps <1>6 and <1>13 establish parts (a) and (b), respectively.
+Steps [](#s1-6){.pf-ref} and [](#s1-13){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

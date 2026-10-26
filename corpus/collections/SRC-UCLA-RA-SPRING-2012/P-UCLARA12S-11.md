@@ -27,7 +27,7 @@ whenever $|z|=1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $P\equiv0$, the conclusion holds with $n=0$ and $Q=0$.
 
@@ -40,7 +40,7 @@ Both sides of the required identity are then identically zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 $$
@@ -84,9 +84,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-With $n=m$ and the polynomial $Q$ from step <1>2,
+With $n=m$ and the polynomial $Q$ from step [](#s1-2){.pf-ref},
 $$
 \boxed{P(z)Q(z)=z^m\abs{P(z)}^2}
 $$
@@ -95,7 +95,7 @@ for every $\abs z=1$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 P(z)Q(z)
 =
@@ -111,7 +111,7 @@ Thus the required integer may be taken to be the degree of $P$.
 
 ::: pf-qed
 
-Step <1>1 handles the zero polynomial, and step <1>3 proves the assertion for every nonzero polynomial.
+Step [](#s1-1){.pf-ref} handles the zero polynomial, and step [](#s1-3){.pf-ref} proves the assertion for every nonzero polynomial.
 
 :::
 

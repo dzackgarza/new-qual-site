@@ -27,7 +27,7 @@ be the standard generator.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The tangent bundle satisfies
 \[
@@ -48,7 +48,7 @@ and $w(\gamma^1)=1+a$ give the formula by the Whitney product theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -72,7 +72,7 @@ Choosing the orthogonal complement gives the rank-$k$ normal bundle $\nu$ and th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently the total Stiefel--Whitney class of the normal bundle is
 \[
@@ -84,11 +84,11 @@ w(\nu)=(1+a)^{-(n+1)}
 
 ::: pf-proof
 
-Whitney multiplicativity applied to step <1>2 gives
+Whitney multiplicativity applied to step [](#s1-2){.pf-ref} gives
 \[
 w(T\mathbb{RP}^n)w(\nu)=1.
 \]
-Use step <1>1 and the formal binomial expansion
+Use step [](#s1-1){.pf-ref} and the formal binomial expansion
 \[
 (1+a)^{-m}=\sum_{j\geq0}(-1)^j\binom{m+j-1}{j}a^j.
 \]
@@ -98,7 +98,7 @@ Over $\mathbb F_2$ the signs disappear, and setting $m=n+1$ yields the stated co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $\nu$ has rank $k$,
 \[
@@ -114,7 +114,7 @@ Therefore an immersion can exist only if
 
 ::: pf-proof
 
-Stiefel--Whitney classes above the rank of a vector bundle vanish. By step <1>3,
+Stiefel--Whitney classes above the rank of a vector bundle vanish. By step [](#s1-3){.pf-ref},
 \[
 w_j(\nu)=\binom{n+j}{j}a^j.
 \]
@@ -124,7 +124,7 @@ For $j\leq n$, the class $a^j$ is nonzero in $H^j(\mathbb{RP}^n;\mathbb F_2)$. H
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $2^s$ be the least power of two strictly larger than $n$. Then
 \[
@@ -138,7 +138,7 @@ Put
 \[
 j=2^s-n-1.
 \]
-Then $1\leq j\leq n$ whenever $2^{s-1}\leq n<2^s$ and $n\ne2^s-1$; in the endpoint case $j=0$ gives no obstruction. The coefficient in step <1>3 is
+Then $1\leq j\leq n$ whenever $2^{s-1}\leq n<2^s$ and $n\ne2^s-1$; in the endpoint case $j=0$ gives no obstruction. The coefficient in step [](#s1-3){.pf-ref} is
 \[
 \binom{n+j}{j}
 =\binom{2^s-1}{j}.
@@ -153,7 +153,7 @@ Thus the coefficient is $1$ mod $2$, proving the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence, whenever $n\ne2^s-1$, every immersion
 \[
@@ -167,13 +167,13 @@ must satisfy
 
 ::: pf-proof
 
-The nonzero class in step <1>5 is a Stiefel--Whitney class of the rank-$k$ normal bundle. Its degree cannot exceed $k$, giving the inequality.
+The nonzero class in step [](#s1-5){.pf-ref} is a Stiefel--Whitney class of the rank-$k$ normal bundle. Its degree cannot exceed $k$, giving the inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 More sharply, the complete Stiefel--Whitney obstruction is
 \[
@@ -185,13 +185,13 @@ k\geq
 
 ::: pf-proof
 
-Step <1>4 says every nonzero inverse Stiefel--Whitney class must occur in degree at most the normal rank. Taking the largest degree with odd coefficient gives exactly this necessary bound. Lucas's theorem can be used to read the odd coefficients directly from the binary expansion of $n$.
+Step [](#s1-4){.pf-ref} says every nonzero inverse Stiefel--Whitney class must occur in degree at most the normal rank. Taking the largest degree with odd coefficient gives exactly this necessary bound. Lucas's theorem can be used to read the odd coefficients directly from the binary expansion of $n$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The same bound applies to embeddings
 \[
@@ -201,7 +201,7 @@ The same bound applies to embeddings
 
 ::: pf-proof
 
-Every smooth embedding is in particular a smooth immersion, and its geometric normal bundle satisfies the same stable tangent-normal identity of step <1>2. Hence every Stiefel--Whitney obstruction derived above remains necessary.
+Every smooth embedding is in particular a smooth immersion, and its geometric normal bundle satisfies the same stable tangent-normal identity of step [](#s1-2){.pf-ref}. Hence every Stiefel--Whitney obstruction derived above remains necessary.
 
 :::
 
@@ -222,7 +222,7 @@ Vanishing of the inverse Stiefel--Whitney classes above degree $k$ is necessary 
 
 ::: pf-qed
 
-Steps <1>3--<1>8 give the requested Stiefel--Whitney analysis of possible immersion and embedding codimensions.
+Steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} give the requested Stiefel--Whitney analysis of possible immersion and embedding codimensions.
 
 :::
 

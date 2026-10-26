@@ -22,7 +22,7 @@ Let $f, g : \CC \to \CC$ be entire. Show that if $e^{f(z)} + e^{g(z)} = 1$ for a
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The entire function
 \[
@@ -51,7 +51,7 @@ for every $z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $e^f$ is constant.
 
@@ -59,21 +59,21 @@ The function $e^f$ is constant.
 ::: pf-proof
 
 Little Picard's theorem states that a nonconstant entire function can omit at
-most one complex value. By step <1>1, the entire function $e^f$ omits two
+most one complex value. By step [](#s1-1){.pf-ref}, the entire function $e^f$ omits two
 distinct values, $0$ and $1$. Hence it must be constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f$ is constant.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 e^{f(z)}=c
 \]
@@ -91,18 +91,18 @@ for every $z$. Thus $f$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $g$ is constant.
 
 
 ::: pf-proof
 
-By the original identity and step <1>2,
+By the original identity and step [](#s1-2){.pf-ref},
 \[
 e^{g(z)}=1-c,
 \]
-which is constant and nonzero. Differentiating as in step <1>3 gives
+which is constant and nonzero. Differentiating as in step [](#s1-3){.pf-ref} gives
 \[
 g'(z)=0
 \]
@@ -112,7 +112,7 @@ for every $z$, so $g$ is constant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -122,7 +122,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly steps <1>3 and <1>4.
+This is exactly steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -130,7 +130,7 @@ This is exactly steps <1>3 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

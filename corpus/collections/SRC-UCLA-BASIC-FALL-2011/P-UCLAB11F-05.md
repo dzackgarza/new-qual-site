@@ -32,7 +32,7 @@ f(x)=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is discontinuous at every point
 \[
@@ -58,7 +58,7 @@ has empty interior. At each such nearby point, $f=0$. Therefore values of $f$ ar
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ has infinitely many discontinuities.
 
@@ -69,13 +69,13 @@ The points
 \[
 1,\frac12,\frac13,\ldots
 \]
-are pairwise distinct, and step <1>1 shows that each is a discontinuity.
+are pairwise distinct, and step [](#s1-1){.pf-ref} shows that each is a discontinuity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every lower Darboux sum of $f$ on $[0,1]$ is $0$.
 
@@ -88,7 +88,7 @@ Every nondegenerate subinterval of $[0,1]$ contains a point not equal to any $1/
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $\varepsilon>0$, there is a partition $P$ such that
 \[
@@ -135,7 +135,7 @@ or in one of the chosen small intervals, the function is identically zero, so it
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function $f$ is Riemann integrable and
 \[
@@ -145,7 +145,7 @@ The function $f$ is Riemann integrable and
 
 ::: pf-proof
 
-By step <1>3, every lower sum is $0$, so the lower integral is $0$. By step <1>4, upper sums can be made arbitrarily small and are nonnegative, so the upper integral is also $0$. Therefore the upper and lower integrals agree, and $f$ is Riemann integrable with integral $0$.
+By step [](#s1-3){.pf-ref}, every lower sum is $0$, so the lower integral is $0$. By step [](#s1-4){.pf-ref}, upper sums can be made arbitrarily small and are nonnegative, so the upper integral is also $0$. Therefore the upper and lower integrals agree, and $f$ is Riemann integrable with integral $0$.
 
 :::
 
@@ -153,7 +153,7 @@ By step <1>3, every lower sum is $0$, so the lower integral is $0$. By step <1>4
 
 ::: pf-qed
 
-Step <1>2 gives infinitely many discontinuities, and step <1>5 proves Riemann integrability directly from Darboux sums.
+Step [](#s1-2){.pf-ref} gives infinitely many discontinuities, and step [](#s1-5){.pf-ref} proves Riemann integrability directly from Darboux sums.
 
 :::
 

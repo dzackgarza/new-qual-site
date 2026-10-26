@@ -25,7 +25,7 @@ W(z)=i\frac{1+z}{1-z}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map \(W\) is a biholomorphism from the unit disk \(\mathbb D\) onto the upper half-plane \(\mathbb H\).
 
@@ -51,7 +51,7 @@ so the inverse satisfies \(|z|<1\). Thus \(W\) is bijective between \(\mathbb D\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With the branch \(0<\operatorname{Arg}w<\pi\) on \(\mathbb H\), the function
 \[
@@ -67,7 +67,7 @@ On \(\mathbb H\), choose the holomorphic branch
 \operatorname{Log}w=\log|w|+i\operatorname{Arg}w,
 \qquad 0<\operatorname{Arg}w<\pi.
 \]
-By step <1>1, \(\operatorname{Log}W(z)\) is holomorphic on \(\mathbb D\). The imaginary part of a holomorphic function is harmonic: the Cauchy--Riemann equations imply its Laplacian is zero. Therefore
+By step [](#s1-1){.pf-ref}, \(\operatorname{Log}W(z)\) is holomorphic on \(\mathbb D\). The imaginary part of a holomorphic function is harmonic: the Cauchy--Riemann equations imply its Laplacian is zero. Therefore
 \[
 \phi(z)=\frac1\pi\operatorname{Im}(\operatorname{Log}W(z))
 \]
@@ -77,7 +77,7 @@ is harmonic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The boundary values of \(\phi\) are \(1\) on the open upper semicircle and \(0\) on the open lower semicircle.
 
@@ -96,7 +96,7 @@ When \(0<\theta<\pi\), this is negative real, and approaching the boundary from 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the electric potential is
 \[
@@ -108,7 +108,7 @@ Hence the electric potential is
 
 ::: pf-proof
 
-Step <1>2 proves harmonicity in the disk, and step <1>3 gives the required boundary values on the two open semicircles.
+Step [](#s1-2){.pf-ref} proves harmonicity in the disk, and step [](#s1-3){.pf-ref} gives the required boundary values on the two open semicircles.
 
 :::
 
@@ -116,7 +116,7 @@ Step <1>2 proves harmonicity in the disk, and step <1>3 gives the required bound
 
 ::: pf-qed
 
-Step <1>4 is the required potential.
+Step [](#s1-4){.pf-ref} is the required potential.
 
 :::
 

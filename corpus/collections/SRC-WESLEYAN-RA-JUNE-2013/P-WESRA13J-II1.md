@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n$,
 $$
@@ -49,7 +49,7 @@ This is countable subadditivity applied to the family $(A_k)_{k\geq n}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -67,13 +67,13 @@ Hence the tails
 $$
 \sum_{k=n}^\infty\mu(A_k)
 $$
-tend to zero. Step <1>1 then implies $0\leq\mu(B_n)$ is bounded above by a sequence tending to zero.
+tend to zero. Step [](#s1-1){.pf-ref} then implies $0\leq\mu(B_n)$ is bounded above by a sequence tending to zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set
 $$
@@ -88,13 +88,13 @@ For every $n$, one has $L\subseteq B_n$, so monotonicity of measure gives
 $$
 0\leq\mu(L)\leq\mu(B_n).
 $$
-Letting $n\to\infty$ and using step <1>2 yields $\mu(L)=0$.
+Letting $n\to\infty$ and using step [](#s1-2){.pf-ref} yields $\mu(L)=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -104,7 +104,7 @@ $$
 
 ::: pf-proof
 
-By definition, the set inside the measure is exactly $L$ from step <1>3.
+By definition, the set inside the measure is exactly $L$ from step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -112,7 +112,7 @@ By definition, the set inside the measure is exactly $L$ from step <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

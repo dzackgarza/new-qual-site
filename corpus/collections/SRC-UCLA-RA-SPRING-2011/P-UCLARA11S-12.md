@@ -23,7 +23,7 @@ is finite and independent of $t$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The principal logarithm is a biholomorphism
 \[
@@ -54,7 +54,7 @@ Its argument takes values in $(-\pi,\pi)$, so its image is exactly the stated ho
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A point $z\in\Omega$ solves
 \[
@@ -84,13 +84,13 @@ equivalently
 \[
 w e^w=t.
 \]
-The equivalence is reversible because $z=e^w$ and $w=\log z$ are inverse coordinates by step <1>1.
+The equivalence is reversible because $z=e^w$ and $w=\log z$ are inverse coordinates by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -132,7 +132,7 @@ Because $t$ is real, the imaginary part must vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 No solution in the strip can have
 \[
@@ -150,7 +150,7 @@ one has
 \[
 \sin b\ne0.
 \]
-From step <1>3,
+From step [](#s1-3){.pf-ref},
 \[
 a
 =
@@ -199,7 +199,7 @@ Therefore $b=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every solution has
 \[
@@ -213,7 +213,7 @@ a e^a=t.
 
 ::: pf-proof
 
-Step <1>4 gives $w=a\in\mathbb R$. The equation becomes
+Step [](#s1-4){.pf-ref} gives $w=a\in\mathbb R$. The equation becomes
 \[
 a e^a=t.
 \]
@@ -223,7 +223,7 @@ Since $e^a>0$ and $t>0$, necessarily $a>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For each $t>0$, the equation
 \[
@@ -260,14 +260,14 @@ By the intermediate value theorem, for each $t>0$ there is exactly one $a>0$ wit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $t>0$, the original equation has exactly one solution in $\Omega$.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>6, there is exactly one solution
+By steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref}, there is exactly one solution
 \[
 w=a>0
 \]
@@ -275,7 +275,7 @@ of
 \[
 w e^w=t
 \]
-in the strip $S$. Step <1>1 gives the corresponding unique point
+in the strip $S$. Step [](#s1-1){.pf-ref} gives the corresponding unique point
 \[
 z=e^a\in(1,\infty)\subset\Omega.
 \]
@@ -284,7 +284,7 @@ z=e^a\in(1,\infty)\subset\Omega.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the number of solutions is finite and independent of $t$:
 \[
@@ -303,7 +303,7 @@ z\in\Omega:
 
 ::: pf-proof
 
-This is exactly step <1>7, now stated as the requested count.
+This is exactly step [](#s1-7){.pf-ref}, now stated as the requested count.
 
 :::
 
@@ -311,7 +311,7 @@ This is exactly step <1>7, now stated as the requested count.
 
 ::: pf-qed
 
-Step <1>8 proves both finiteness and independence of $t$.
+Step [](#s1-8){.pf-ref} proves both finiteness and independence of $t$.
 
 :::
 

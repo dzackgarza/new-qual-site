@@ -28,7 +28,7 @@ How many elements $x$ in the field $\ZZ_{11}$ satisfy the equation $x^{12} - x^{
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Any solution $x\in\ZZ_{11}$ is nonzero and therefore satisfies $x^{10}=1$.
 
@@ -56,13 +56,13 @@ Factor the left-hand side as
 $$
 x^{12}-x^{10}=x^{10}(x^2-1).
 $$
-Using step <1>1, the equation becomes $x^2-1=2$, which is equivalent to $x^2=3$.
+Using step [](#s1-1){.pf-ref}, the equation becomes $x^2-1=2$, which is equivalent to $x^2=3$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The equation $x^2=3$ has exactly the two solutions $x=5$ and $x=6$ in $\ZZ_{11}$.
 
@@ -81,7 +81,7 @@ These are distinct. The polynomial $X^2-3$ has degree $2$ over the field $\ZZ_{1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the number of solutions is
 $$
@@ -92,7 +92,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Step <1>3 gives the complete solution set.
+Step [](#s1-3){.pf-ref} gives the complete solution set.
 
 :::
 
@@ -100,7 +100,7 @@ Step <1>3 gives the complete solution set.
 
 ::: pf-qed
 
-Step <1>4 gives the requested number.
+Step [](#s1-4){.pf-ref} gives the requested number.
 
 :::
 

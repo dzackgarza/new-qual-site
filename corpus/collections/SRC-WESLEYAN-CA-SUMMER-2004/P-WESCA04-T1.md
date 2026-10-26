@@ -21,7 +21,7 @@ State the Casorati–Weierstrass theorem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Casorati--Weierstrass Theorem.**
 
@@ -86,7 +86,7 @@ z_n\ne z_0.
 
 ::: pf-qed
 
-Step <1>1 is the requested theorem statement.
+Step [](#s1-1){.pf-ref} is the requested theorem statement.
 
 :::
 

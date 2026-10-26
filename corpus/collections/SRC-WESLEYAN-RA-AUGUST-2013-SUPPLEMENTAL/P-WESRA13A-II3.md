@@ -34,7 +34,7 @@ almost everywhere on $A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -61,7 +61,7 @@ If every set on the right had measure zero, then their countable union would als
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $m(E_r)>0$, then there is a compact set
 $$
@@ -97,14 +97,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $\{f>0\}$ has measure zero.
 
 
 ::: pf-proof
 
-Suppose it had positive measure. By steps <1>1--<1>2, there would be some $r$ and a compact set $K\subset E_r\subset A$ with $m(K)>0$. On $K$,
+Suppose it had positive measure. By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, there would be some $r$ and a compact set $K\subset E_r\subset A$ with $m(K)>0$. On $K$,
 $$
 f\ge\frac1r.
 $$
@@ -121,14 +121,14 @@ contradicting the hypothesis that the integral is zero for every compact $K\subs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $\{f<0\}$ also has measure zero.
 
 
 ::: pf-proof
 
-Apply step <1>3 to the measurable function $-f$. For every compact $K\subset A$,
+Apply step [](#s1-3){.pf-ref} to the measurable function $-f$. For every compact $K\subset A$,
 $$
 \int_K(-f)\,dm
 =-\int_K f\,dm
@@ -147,7 +147,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -161,7 +161,7 @@ The set where $f\ne0$ is
 $$
 \{f>0\}\cup\{f<0\}.
 $$
-Both sets have measure zero by steps <1>3--<1>4, so their union has measure zero.
+Both sets have measure zero by steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, so their union has measure zero.
 
 :::
 
@@ -169,7 +169,7 @@ Both sets have measure zero by steps <1>3--<1>4, so their union has measure zero
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

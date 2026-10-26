@@ -69,7 +69,7 @@ Connected components of open subsets of \(\mathbb C\) are open, because \(\mathb
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 \[
@@ -104,7 +104,7 @@ continuity gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every
 \[
@@ -118,7 +118,7 @@ one has
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 |f(z)|\le1.
 \]
@@ -158,7 +158,7 @@ The reciprocal of a nowhere-zero holomorphic function is holomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On \(\Omega\),
 \[
@@ -181,7 +181,7 @@ for \(z\in\Omega\), and \(f(z)\ne0\). Taking reciprocals gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 On \(\partial\Omega\),
 \[
@@ -191,7 +191,7 @@ On \(\partial\Omega\),
 
 ::: pf-proof
 
-Use step <1>4:
+Use step [](#s1-4){.pf-ref}:
 \[
 |g(z)|=\frac1{|f(z)|}=1.
 \]
@@ -200,7 +200,7 @@ Use step <1>4:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Since \(\Omega\) is bounded, \(\overline\Omega\) is compact.
 
@@ -213,20 +213,20 @@ The closure is closed and bounded in \(\mathbb C\cong\mathbb R^2\). By Heine--Bo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The continuous function \(|g|\) attains a maximum on \(\overline\Omega\).
 
 
 ::: pf-proof
 
-Apply the extreme-value theorem to the compact set from step <1>8.
+Apply the extreme-value theorem to the compact set from step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 This maximum is strictly greater than \(1\).
 
@@ -237,20 +237,20 @@ Every point of \(\Omega\) satisfies
 \[
 |g|>1
 \]
-by step <1>6.
+by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 No boundary point can attain that maximum.
 
 
 ::: pf-proof
 
-By step <1>7, every boundary point has modulus exactly \(1\), while the maximum is \(>1\) by step <1>10.
+By step [](#s1-7){.pf-ref}, every boundary point has modulus exactly \(1\), while the maximum is \(>1\) by step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -263,7 +263,7 @@ Hence \(|g|\) attains its maximum at an interior point of \(\Omega\).
 
 ::: pf-proof
 
-The maximum is attained somewhere in \(\overline\Omega\) by step <1>9, and step <1>11 excludes the boundary.
+The maximum is attained somewhere in \(\overline\Omega\) by step [](#s1-9){.pf-ref}, and step [](#s1-11){.pf-ref} excludes the boundary.
 
 :::
 
@@ -312,7 +312,7 @@ The constant value of \(g\) is nonzero because \(g=1/f\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 This contradicts the existence of the boundary \(\partial\Omega\) with
 \[
@@ -333,20 +333,20 @@ If \(f\) were constant, its modulus could not be both \(<1\) on \(\Omega\) and e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore no connected component of \(U\) can be bounded.
 
 
 ::: pf-proof
 
-The assumption of a bounded component led to the contradiction in step <1>16.
+The assumption of a bounded component led to the contradiction in step [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Thus
 \[
@@ -359,7 +359,7 @@ Thus
 
 ::: pf-proof
 
-This is step <1>17.
+This is step [](#s1-17){.pf-ref}.
 
 :::
 
@@ -367,7 +367,7 @@ This is step <1>17.
 
 ::: pf-qed
 
-Step <1>18 is the required conclusion.
+Step [](#s1-18){.pf-ref} is the required conclusion.
 
 :::
 

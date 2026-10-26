@@ -30,7 +30,7 @@ Write the remainder upon division by $x^2-1$ as $r(x)=ax+b$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $r(1)=1$ and $r(-1)=-1$.
 
@@ -50,14 +50,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $a=1$ and $b=0$.
 
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 a+b=1,\qquad -a+b=-1.
 $$
@@ -67,7 +67,7 @@ Adding the equations gives $2b=0$, so $b=0$, and then $a=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required remainder is
 $$
@@ -78,7 +78,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-Substitute the coefficients from step <1>2 into $r(x)=ax+b$.
+Substitute the coefficients from step [](#s1-2){.pf-ref} into $r(x)=ax+b$.
 
 :::
 
@@ -86,7 +86,7 @@ Substitute the coefficients from step <1>2 into $r(x)=ax+b$.
 
 ::: pf-qed
 
-Step <1>3 gives the unique remainder of degree less than $2$.
+Step [](#s1-3){.pf-ref} gives the unique remainder of degree less than $2$.
 
 :::
 

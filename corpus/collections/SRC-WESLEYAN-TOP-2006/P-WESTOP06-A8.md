@@ -33,7 +33,7 @@ with \(2\) discrete. For \(U\in\mathcal B\), write \(\chi_U:X\to2\) for its char
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The evaluation map
 \[
@@ -64,7 +64,7 @@ and the set on the right is a basic clopen cylinder in the product. Thus every m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -75,13 +75,13 @@ Then \(zX\) is compact Hausdorff and contains \(X\) densely, after identifying \
 
 ::: pf-proof
 
-The discrete two-point space \(2\) is compact Hausdorff. By Tychonoff's theorem, \(2^{\mathcal B}\) is compact Hausdorff. Hence its closed subspace \(zX\) is compact Hausdorff. By step <1>1, \(e(X)\) is a copy of \(X\), and it is dense in \(zX\) by the definition of \(zX\) as its closure.
+The discrete two-point space \(2\) is compact Hausdorff. By Tychonoff's theorem, \(2^{\mathcal B}\) is compact Hausdorff. Hence its closed subspace \(zX\) is compact Hausdorff. By step [](#s1-1){.pf-ref}, \(e(X)\) is a copy of \(X\), and it is dense in \(zX\) by the definition of \(zX\) as its closure.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space \(zX\) is zero-dimensional.
 
@@ -94,7 +94,7 @@ The product \(2^{\mathcal B}\) has a basis of clopen cylinder sets: a basic cyli
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every continuous \(f:X\to2\) has a continuous extension \(\overline f:zX\to2\).
 
@@ -127,9 +127,9 @@ so \(\overline f\) extends \(f\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The extension in step <1>4 is unique.
+The extension in step [](#s1-4){.pf-ref} is unique.
 
 
 ::: pf-proof
@@ -146,7 +146,7 @@ is closed in \(zX\). It contains the dense subset \(e(X)\), so it is all of \(zX
 
 ::: pf-qed
 
-Steps <1>2 and <1>3 give a compact zero-dimensional Hausdorff space \(zX\) containing \(X\) densely, and steps <1>4 and <1>5 give the required unique extension of every continuous map \(X\to\{0,1\}\).
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give a compact zero-dimensional Hausdorff space \(zX\) containing \(X\) densely, and steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give the required unique extension of every continuous map \(X\to\{0,1\}\).
 
 :::
 

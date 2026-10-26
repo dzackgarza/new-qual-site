@@ -34,7 +34,7 @@ III. $\ZZ_{p^2}$, where $p$ is a prime
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ring $\ZZ\oplus\ZZ$ is not an integral domain.
 
@@ -51,7 +51,7 @@ so $\ZZ\oplus\ZZ$ has zero divisors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The ring $\ZZ_p$ is an integral domain when $p$ is prime.
 
@@ -64,7 +64,7 @@ Suppose $\overline a\,\overline b=\overline0$ in $\ZZ_p$. Then $p\mid ab$. Since
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The ring $\ZZ_{p^2}$ is not an integral domain.
 
@@ -81,7 +81,7 @@ Hence $\overline p$ is a nonzero zero divisor.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the only integral domain listed is
 $$
@@ -92,7 +92,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Steps <1>1--<1>3 show that I and III are not integral domains and II is an integral domain.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that I and III are not integral domains and II is an integral domain.
 
 :::
 
@@ -100,7 +100,7 @@ Steps <1>1--<1>3 show that I and III are not integral domains and II is an integ
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

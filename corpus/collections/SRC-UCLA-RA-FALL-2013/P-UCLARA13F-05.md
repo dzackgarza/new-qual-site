@@ -27,7 +27,7 @@ Show that some subsequence converges uniformly on every compact subset of $\math
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix $0<r<R<1$. For every $z$ with $|z|\leq r$, the disk
 \[
@@ -47,7 +47,7 @@ If $|w-z|<R-r$, then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $|f_n|$ is subharmonic, the sub-mean inequality gives
 \[
@@ -59,13 +59,13 @@ Since $|f_n|$ is subharmonic, the sub-mean inequality gives
 
 ::: pf-proof
 
-The modulus of a holomorphic function is subharmonic. Apply its mean-value inequality over the disk from step <1>1.
+The modulus of a holomorphic function is subharmonic. Apply its mean-value inequality over the disk from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, uniformly in $n$,
 \[
@@ -76,7 +76,7 @@ Therefore, uniformly in $n$,
 
 ::: pf-proof
 
-The integral over the smaller disk in step <1>2 is at most
+The integral over the smaller disk in step [](#s1-2){.pf-ref} is at most
 \[
 \int_{\mathbb D}|f_n(w)|\,d\lambda(w)\leq1
 \]
@@ -93,13 +93,13 @@ Thus the family $\{f_n\}$ is locally uniformly bounded on $\mathbb D$.
 
 ::: pf-proof
 
-Every compact $K\subset\mathbb D$ is contained in some closed disk $\{|z|\leq r\}$ with $r<1$. Choose $R$ with $r<R<1$ and apply step <1>3.
+Every compact $K\subset\mathbb D$ is contained in some closed disk $\{|z|\leq r\}$ with $r<1$. Choose $R$ with $r<R<1$ and apply step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Fix $0<r<R<1$. Cauchy's estimate gives a constant $C_{r,R}$ independent of $n$ such that
 \[
@@ -109,7 +109,7 @@ Fix $0<r<R<1$. Cauchy's estimate gives a constant $C_{r,R}$ independent of $n$ s
 
 ::: pf-proof
 
-Choose $r<R_1<R<1$. Step <1>3 gives a uniform bound $M$ for $|f_n|$ on $|z|\leq R_1$. For $|z|\leq r$, the circle of radius $R_1-r$ about $z$ lies in $|w|<R_1$. Cauchy's derivative estimate gives
+Choose $r<R_1<R<1$. Step [](#s1-3){.pf-ref} gives a uniform bound $M$ for $|f_n|$ on $|z|\leq R_1$. For $|z|\leq r$, the circle of radius $R_1-r$ about $z$ lies in $|w|<R_1$. Cauchy's derivative estimate gives
 \[
 |f_n'(z)|\leq \frac{M}{R_1-r},
 \]
@@ -119,14 +119,14 @@ which is independent of $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On every closed disk $\{|z|\leq r\}$, the sequence $(f_n)$ is uniformly bounded and equicontinuous.
 
 
 ::: pf-proof
 
-Uniform boundedness is step <1>3. The derivative bound in step <1>5 and the line-segment integral formula give
+Uniform boundedness is step [](#s1-3){.pf-ref}. The derivative bound in step [](#s1-5){.pf-ref} and the line-segment integral formula give
 \[
 |f_n(z)-f_n(w)|\leq C_{r,R}|z-w|
 \]
@@ -147,13 +147,13 @@ By Arzela--Ascoli, every subsequence of $(f_n)$ has a further subsequence conver
 
 ::: pf-proof
 
-Each $K_k$ is compact. Step <1>6 gives uniform boundedness and equicontinuity there, so Arzela--Ascoli gives a uniformly convergent subsequence on $K_k$.
+Each $K_k$ is compact. Step [](#s1-6){.pf-ref} gives uniform boundedness and equicontinuity there, so Arzela--Ascoli gives a uniformly convergent subsequence on $K_k$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 A diagonal extraction produces a single subsequence $(f_{n_j})$ converging uniformly on every $K_k$.
 
@@ -166,14 +166,14 @@ Choose a subsequence converging on $K_2$; from it choose one converging on $K_3$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence $(f_{n_j})$ converges uniformly on every compact subset of $\mathbb D$.
 
 
 ::: pf-proof
 
-Every compact subset of $\mathbb D$ lies in some $K_k$, and step <1>8 gives uniform convergence there.
+Every compact subset of $\mathbb D$ lies in some $K_k$, and step [](#s1-8){.pf-ref} gives uniform convergence there.
 
 :::
 
@@ -181,7 +181,7 @@ Every compact subset of $\mathbb D$ lies in some $K_k$, and step <1>8 gives unif
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

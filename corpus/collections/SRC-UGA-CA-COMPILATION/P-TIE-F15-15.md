@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Under the hypotheses of part (1), the function
 $$
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in\DD$,
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $\phi:\DD\to\DD$ is holomorphic and $\phi(0)=0$. Schwarz's lemma therefore gives
+By step [](#s1-1){.pf-ref}, $\phi:\DD\to\DD$ is holomorphic and $\phi(0)=0$. Schwarz's lemma therefore gives
 $$
 \abs{\phi(z)}\le\abs{z},
 $$
@@ -98,7 +98,7 @@ which is exactly the displayed inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -108,7 +108,7 @@ $$
 
 ::: pf-proof
 
-Differentiate the function from step <1>1:
+Differentiate the function from step [](#s1-1){.pf-ref}:
 $$
 \phi'(z)
 =
@@ -132,7 +132,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If instead $\operatorname{Re}f(z)\ge0$ on $\DD$, then in fact
 $$
@@ -157,14 +157,14 @@ If $u(z_0)=0$ at some interior point, then $u$ would attain its minimum value $0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The conclusions of part (1) remain valid under the non-strict hypothesis $\operatorname{Re}f\ge0$.
 
 
 ::: pf-proof
 
-By step <1>4, the non-strict hypothesis together with $f(0)=a>0$ implies the strict hypothesis of part (1). Steps <1>2 and <1>3 therefore apply unchanged.
+By step [](#s1-4){.pf-ref}, the non-strict hypothesis together with $f(0)=a>0$ implies the strict hypothesis of part (1). Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} therefore apply unchanged.
 
 :::
 
@@ -172,7 +172,7 @@ By step <1>4, the non-strict hypothesis together with $f(0)=a>0$ implies the str
 
 ::: pf-qed
 
-Steps <1>2 and <1>3 prove part (1), and step <1>5 proves part (2).
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (1), and step [](#s1-5){.pf-ref} proves part (2).
 
 :::
 

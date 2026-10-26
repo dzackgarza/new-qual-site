@@ -25,7 +25,7 @@ converges as $n\to\infty$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every positive integer $n$,
 \[
@@ -61,7 +61,7 @@ Substituting gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(a_n)$ is increasing.
 
@@ -74,7 +74,7 @@ Fix $n$. For each $k\le n$ and each $j\in\{0,\ldots,k-1\}$,
 \ge
 1-\frac{j}{n}.
 \]
-All these factors are nonnegative. Hence the $k$th summand in the expansion from step <1>1 for $a_{n+1}$ is at least the corresponding $k$th summand for $a_n$. In addition, $a_{n+1}$ contains the positive term with $k=n+1$. Therefore
+All these factors are nonnegative. Hence the $k$th summand in the expansion from step [](#s1-1){.pf-ref} for $a_{n+1}$ is at least the corresponding $k$th summand for $a_n$. In addition, $a_{n+1}$ contains the positive term with $k=n+1$. Therefore
 \[
 a_{n+1}\ge a_n.
 \]
@@ -83,7 +83,7 @@ a_{n+1}\ge a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $n$,
 \[
@@ -93,7 +93,7 @@ a_n\le3.
 
 ::: pf-proof
 
-Every factor in the product from step <1>1 lies in $[0,1]$. Therefore
+Every factor in the product from step [](#s1-1){.pf-ref} lies in $[0,1]$. Therefore
 \[
 a_n
 \le
@@ -121,14 +121,14 @@ a_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence $(a_n)$ converges.
 
 
 ::: pf-proof
 
-By step <1>2, $(a_n)$ is increasing, and by step <1>3 it is bounded above. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges to its supremum.
+By step [](#s1-2){.pf-ref}, $(a_n)$ is increasing, and by step [](#s1-3){.pf-ref} it is bounded above. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges to its supremum.
 
 :::
 
@@ -136,7 +136,7 @@ By step <1>2, $(a_n)$ is increasing, and by step <1>3 it is bounded above. The m
 
 ::: pf-qed
 
-Step <1>4 proves the required convergence.
+Step [](#s1-4){.pf-ref} proves the required convergence.
 
 :::
 

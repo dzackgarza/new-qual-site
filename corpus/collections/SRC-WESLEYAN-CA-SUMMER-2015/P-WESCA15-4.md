@@ -27,7 +27,7 @@ Calculate the following counterclockwise contour integrals:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The first integral is
 $$
@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The second integral is
 $$
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Inside $|z|=1/2$, the third integrand has only the singularity $z=0$.
 
@@ -102,7 +102,7 @@ is the pole contributed by $z^3$ at the origin.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The residue of the third integrand at $z=0$ is
 $$
@@ -141,7 +141,7 @@ After division by $z^3$, the coefficient of $z^{-1}$ is therefore $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The third integral is
 $$
@@ -151,7 +151,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>3--<1>4 and the residue theorem,
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} and the residue theorem,
 $$
 \int_{|z|=1/2}\frac{e^{\sin z}}{z^3\cos z}\,dz
 =2\pi i\operatorname{Res}_{z=0}\frac{e^{\sin z}}{z^3\cos z}
@@ -164,7 +164,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1, <1>2, and <1>5 give the three requested values, respectively:
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-5){.pf-ref} give the three requested values, respectively:
 $$
 \boxed{0,\quad0,\quad2\pi i}.
 $$

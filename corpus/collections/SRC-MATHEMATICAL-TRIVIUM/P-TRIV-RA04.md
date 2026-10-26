@@ -40,7 +40,7 @@ This is the Taylor series of the exponential function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The coefficient of $x^{100}$ in
 $$
@@ -58,7 +58,7 @@ of the exponential series.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficient of $x^{100}$ in
 $$
@@ -79,7 +79,7 @@ of the exponential series, whose coefficient is $100^{99}/99!$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the coefficient of $x^{100}$ in $f(x)$ is
 $$
@@ -89,13 +89,13 @@ $$
 
 ::: pf-proof
 
-Add the contributions from steps <1>2--<1>3.
+Add the contributions from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -118,13 +118,13 @@ one has
 $$
 f^{(100)}(0)=100!a_{100}.
 $$
-Apply step <1>4.
+Apply step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus
 $$
@@ -138,7 +138,7 @@ Since
 $$
 \frac{100!}{99!}=100,
 $$
-the second term in step <1>5 is
+the second term in step [](#s1-5){.pf-ref} is
 $$
 100\cdot100^{99}=100^{100}.
 $$
@@ -149,7 +149,7 @@ $$
 
 ::: pf-qed
 
-Step <1>6 is the required value.
+Step [](#s1-6){.pf-ref} is the required value.
 
 :::
 

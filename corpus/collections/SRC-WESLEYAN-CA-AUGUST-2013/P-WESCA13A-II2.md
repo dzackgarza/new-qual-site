@@ -58,7 +58,7 @@ holomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Cauchy's integral formula for derivatives gives
 \[
@@ -78,7 +78,7 @@ h'(0)=\frac1{2\pi i}\int_{|z|=1}\frac{h(z)}{z^2}\,dz.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since
 \[
@@ -98,7 +98,7 @@ Substitute
 \[
 h'(0)=\frac1e
 \]
-into step <1>2.
+into step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -130,7 +130,7 @@ shows that the singularity at $0$ is removable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -249,7 +249,7 @@ contributes no further change of argument about either negative pole.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -285,7 +285,7 @@ The residue theorem with winding numbers gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The three values are
 \[
@@ -301,7 +301,7 @@ The three values are
 
 ::: pf-proof
 
-Collect steps <1>3, <1>5, and <1>8.
+Collect steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-8){.pf-ref}.
 
 :::
 
@@ -309,7 +309,7 @@ Collect steps <1>3, <1>5, and <1>8.
 
 ::: pf-qed
 
-Step <1>9 answers all three subparts.
+Step [](#s1-9){.pf-ref} answers all three subparts.
 
 :::
 

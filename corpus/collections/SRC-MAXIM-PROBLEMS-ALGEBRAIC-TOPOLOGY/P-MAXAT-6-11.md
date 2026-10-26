@@ -78,7 +78,7 @@ Comparing homogeneous components gives the elementary symmetric polynomials.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently
 \[
@@ -164,7 +164,7 @@ Again, homogeneous components are elementary symmetric polynomials.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -193,7 +193,7 @@ so the $w_i$ generate the entire ring.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore the standard cohomology-ring calculations are
 \[
@@ -207,7 +207,7 @@ and
 
 ::: pf-proof
 
-These are steps <1>3 and <1>6.
+These are steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref}.
 
 :::
 
@@ -215,7 +215,7 @@ These are steps <1>3 and <1>6.
 
 ::: pf-qed
 
-Step <1>7 gives both requested classifying-space cohomology rings with their standard coefficient systems.
+Step [](#s1-7){.pf-ref} gives both requested classifying-space cohomology rings with their standard coefficient systems.
 
 :::
 

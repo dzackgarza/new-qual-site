@@ -25,7 +25,7 @@ Remark: In reality, the above adjoint matrix is simply $\Lambda ^ { n - 1 } ( T 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $\operatorname{adj}(T)$ be the adjugate matrix of $T$, whose $(i,j)$ entry is the $(j,i)$ cofactor of $T$.
 Then
@@ -52,7 +52,7 @@ The argument uses only addition, multiplication, and signs, so it is valid over 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $v\in R^n$, define
 $$
@@ -66,7 +66,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 Tw
 =T\operatorname{adj}(T)v
@@ -78,7 +78,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore for every $v\in R^n$ there exists $w\in R^n$ satisfying
 $$
@@ -88,7 +88,7 @@ $$
 
 ::: pf-proof
 
-The vector constructed in step <1>2 has the required property.
+The vector constructed in step [](#s1-2){.pf-ref} has the required property.
 
 :::
 
@@ -96,7 +96,7 @@ The vector constructed in step <1>2 has the required property.
 
 ::: pf-qed
 
-Step <1>3 is exactly the assertion of the problem.
+Step [](#s1-3){.pf-ref} is exactly the assertion of the problem.
 
 :::
 

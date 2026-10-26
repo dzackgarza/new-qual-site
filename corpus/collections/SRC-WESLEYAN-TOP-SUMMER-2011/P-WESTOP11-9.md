@@ -27,7 +27,7 @@ $S$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -78,7 +78,7 @@ south pole of the next.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 \[
@@ -115,7 +115,7 @@ p:\widetilde X\to X.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map
 \[
@@ -157,7 +157,7 @@ Thus every point has an evenly covered neighborhood.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The space $\widetilde X$ is path-connected.
 
@@ -172,7 +172,7 @@ Thus all sphere copies lie in one path component.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every finite subchain
 \[
@@ -227,7 +227,7 @@ Thus the induction closes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The whole space
 \[
@@ -253,7 +253,7 @@ Hence
 Y_{m,n}
 \]
 for some finite subchain.
-By step <1>5, the loop is null-homotopic there, hence also in
+By step [](#s1-5){.pf-ref}, the loop is null-homotopic there, hence also in
 \[
 \widetilde X.
 \]
@@ -262,7 +262,7 @@ By step <1>5, the loop is null-homotopic there, hence also in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -273,15 +273,15 @@ is the universal covering space.
 
 ::: pf-proof
 
-By steps <1>3--<1>4, $p$ is a connected covering.
-By step <1>6, the total space is simply connected.
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, $p$ is a connected covering.
+By step [](#s1-6){.pf-ref}, the total space is simply connected.
 A connected simply connected covering is universal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 \[
@@ -314,7 +314,7 @@ Thus it is a deck transformation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every deck transformation is a power of $T$.
 
@@ -364,7 +364,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently
 \[
@@ -385,7 +385,7 @@ canonically isomorphic to the fundamental group:
 \cong
 \operatorname{Deck}(\widetilde X/X).
 \]
-Apply step <1>9.
+Apply step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -393,8 +393,8 @@ Apply step <1>9.
 
 ::: pf-qed
 
-Steps <1>1--<1>7 construct the requested simply connected covering space,
-and steps <1>8--<1>10 compute its deck group and hence
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} construct the requested simply connected covering space,
+and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} compute its deck group and hence
 \[
 \pi_1(X).
 \]

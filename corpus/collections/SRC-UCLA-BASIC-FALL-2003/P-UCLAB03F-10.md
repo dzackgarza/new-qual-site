@@ -41,7 +41,7 @@ A=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a), the characteristic polynomial of
 \[
@@ -82,14 +82,14 @@ One computes
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $t$ is not an integer multiple of $\pi$, then the matrix in part (a) has no real eigenvalues.
 
 
 ::: pf-proof
 
-The discriminant of the polynomial in step <1>1 is
+The discriminant of the polynomial in step [](#s1-1){.pf-ref} is
 \[
 4\cos^2t-4
 =
@@ -101,7 +101,7 @@ Since $t\notin\pi\mathbb Z$, one has $\sin t\ne0$, so the discriminant is strict
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is no real invertible matrix $B$ for which $BAB^{-1}$ is diagonal in part (a).
 
@@ -112,13 +112,13 @@ Suppose such a real matrix $B$ existed and set
 \[
 D=BAB^{-1}.
 \]
-Then $D$ would be a real diagonal matrix similar to $A$. Similar matrices have the same characteristic polynomial, so every diagonal entry of $D$ would be a real eigenvalue of $A$. This contradicts step <1>2.
+Then $D$ would be a real diagonal matrix similar to $A$. Similar matrices have the same characteristic polynomial, so every diagonal entry of $D$ would be a real eigenvalue of $A$. This contradicts step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In part (b), the only eigenvalue of
 \[
@@ -165,27 +165,27 @@ Since $\lambda\ne0$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The matrix in part (b) is not diagonalizable over $\mathbb R$.
 
 
 ::: pf-proof
 
-If a real $2\times2$ matrix is diagonalizable over $\mathbb R$, then $\mathbb R^2$ has a basis consisting of two real eigenvectors. By step <1>4, every eigenvector of this matrix lies in the one-dimensional space $E_1$. Hence there cannot be two linearly independent eigenvectors, so the matrix is not diagonalizable.
+If a real $2\times2$ matrix is diagonalizable over $\mathbb R$, then $\mathbb R^2$ has a basis consisting of two real eigenvectors. By step [](#s1-4){.pf-ref}, every eigenvector of this matrix lies in the one-dimensional space $E_1$. Hence there cannot be two linearly independent eigenvectors, so the matrix is not diagonalizable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore there is no real invertible matrix $B$ for which $BAB^{-1}$ is diagonal in part (b).
 
 
 ::: pf-proof
 
-Such a matrix $B$ would make $A$ similar over $\mathbb R$ to a diagonal matrix, which is precisely real diagonalizability. Step <1>5 rules this out.
+Such a matrix $B$ would make $A$ similar over $\mathbb R$ to a diagonal matrix, which is precisely real diagonalizability. Step [](#s1-5){.pf-ref} rules this out.
 
 :::
 
@@ -193,7 +193,7 @@ Such a matrix $B$ would make $A$ similar over $\mathbb R$ to a diagonal matrix, 
 
 ::: pf-qed
 
-Step <1>3 proves part (a), and step <1>6 proves part (b).
+Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
 
 :::
 

@@ -31,7 +31,7 @@ has infinitely many zeros.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function
 \[
@@ -90,13 +90,13 @@ The case
 \[
 m=0
 \]
-is step <1>1.
+is step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 \[
@@ -163,7 +163,7 @@ vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sequence
 \[
@@ -199,7 +199,7 @@ x_{k+1}^{(m+1)}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus if
 \[
@@ -213,7 +213,7 @@ f^{(m+1)}.
 
 ::: pf-proof
 
-Steps <1>3--<1>4 construct a strictly increasing bi-infinite sequence of
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} construct a strictly increasing bi-infinite sequence of
 zeros of
 \[
 f^{(m+1)}.
@@ -223,7 +223,7 @@ f^{(m+1)}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By induction, for every
 \[
@@ -238,14 +238,14 @@ has infinitely many roots.
 
 ::: pf-proof
 
-Step <1>1 gives the base case.
-Step <1>5 gives the induction step.
+Step [](#s1-1){.pf-ref} gives the base case.
+Step [](#s1-5){.pf-ref} gives the induction step.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular, for every
 \[
@@ -260,7 +260,7 @@ has at least one root.
 
 ::: pf-proof
 
-This is immediate from the stronger conclusion in step <1>6.
+This is immediate from the stronger conclusion in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -268,7 +268,7 @@ This is immediate from the stronger conclusion in step <1>6.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

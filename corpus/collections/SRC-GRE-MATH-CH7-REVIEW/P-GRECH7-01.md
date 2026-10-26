@@ -27,7 +27,7 @@ For which of the following intervals does $P(x) = 4x^3 - 4x^2 - 33x + 45$ have a
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial factors as
 $$
@@ -52,7 +52,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The real zeros of $P$ are
 $$
@@ -62,13 +62,13 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $P(x)=0$ exactly when one of the three linear factors vanishes.
+By step [](#s1-1){.pf-ref}, $P(x)=0$ exactly when one of the three linear factors vanishes.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Among the listed intervals, exactly $[2,3]$ contains a zero of $P$.
 
@@ -79,13 +79,13 @@ The zero $-3$ lies to the left of every listed interval. The zero $3/2$ lies str
 $$
 2<\frac52<3,
 $$
-so it lies in $[2,3]$. None of the other listed intervals contains any of the three zeros from step <1>2.
+so it lies in $[2,3]$. None of the other listed intervals contains any of the three zeros from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the required interval is
 $$
@@ -96,7 +96,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-This is exactly the interval identified in step <1>3.
+This is exactly the interval identified in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -104,7 +104,7 @@ This is exactly the interval identified in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

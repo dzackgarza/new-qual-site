@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The stated inequality is necessary.
 
@@ -68,7 +68,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume now that
 $$
@@ -138,7 +138,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 This bipartite graph satisfies Hall's condition:
 $$
@@ -215,7 +215,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 By Hall's marriage theorem, there is a matching saturating every vertex of
 $$
@@ -225,7 +225,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 is exactly Hall's condition for the finite bipartite graph constructed in step <1>2. Hall's theorem therefore gives an injective assignment
+Step [](#s1-3){.pf-ref} is exactly Hall's condition for the finite bipartite graph constructed in step [](#s1-2){.pf-ref}. Hall's theorem therefore gives an injective assignment
 $$
 m:L\to R
 $$
@@ -242,7 +242,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For each
 $$
@@ -277,7 +277,7 @@ lies in
 $$
 A_i
 $$
-by step <1>4, so
+by step [](#s1-4){.pf-ref}, so
 $$
 D_i\subseteq A_i.
 $$
@@ -295,7 +295,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The sets
 $$
@@ -335,14 +335,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus the stated condition is sufficient.
 
 
 ::: pf-proof
 
-Steps <1>5--<1>6 produce pairwise-disjoint subsets
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} produce pairwise-disjoint subsets
 $$
 D_i\subseteq A_i
 $$
@@ -359,7 +359,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -377,7 +377,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 proves necessity, and step <1>7 proves sufficiency.
+Step [](#s1-1){.pf-ref} proves necessity, and step [](#s1-7){.pf-ref} proves sufficiency.
 
 :::
 
@@ -385,7 +385,7 @@ Step <1>1 proves necessity, and step <1>7 proves sufficiency.
 
 ::: pf-qed
 
-Step <1>8 is the required equivalence.
+Step [](#s1-8){.pf-ref} is the required equivalence.
 
 :::
 

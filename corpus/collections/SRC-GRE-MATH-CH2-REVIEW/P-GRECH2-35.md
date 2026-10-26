@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $0<x<1$,
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The arc-length integrand simplifies to
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 1+(y')^2
@@ -79,7 +79,7 @@ Since $x>0$, its positive square root is $x^{-1/3}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required length is
 $$
@@ -90,7 +90,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-The endpoint abscissas are $1/8$ and $1$. Therefore, by step <1>2,
+The endpoint abscissas are $1/8$ and $1$. Therefore, by step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 L
@@ -107,7 +107,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested arc length and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested arc length and corresponding choice.
 
 :::
 

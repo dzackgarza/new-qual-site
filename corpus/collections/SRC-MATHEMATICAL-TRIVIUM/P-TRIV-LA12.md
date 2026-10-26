@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For two functions,
 $$
@@ -57,7 +57,7 @@ This is the determinant of the $2\times2$ Wronskian matrix.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $y_1,y_2$ solve
 $$
@@ -71,7 +71,7 @@ $$
 
 ::: pf-proof
 
-Differentiate step <1>1:
+Differentiate step [](#s1-1){.pf-ref}:
 $$
 \begin{aligned}
 W'
@@ -101,7 +101,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -116,7 +116,7 @@ for some constant $C$.
 
 ::: pf-proof
 
-Step <1>2 is the first-order equation
+Step [](#s1-2){.pf-ref} is the first-order equation
 $$
 W'=aW.
 $$
@@ -127,7 +127,7 @@ enter the Wronskian equation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $y_1$ is known, then $y_2$ satisfies the first-order equation
 $$
@@ -137,16 +137,16 @@ $$
 
 ::: pf-proof
 
-This is simply the defining identity for the Wronskian from step <1>1, with
-$W$ already known from step <1>3.
+This is simply the defining identity for the Wronskian from step [](#s1-1){.pf-ref}, with
+$W$ already known from step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Wherever $y_1\neq0$, step <1>4 is equivalently
+Wherever $y_1\neq0$, step [](#s1-4){.pf-ref} is equivalently
 $$
 y_2'
 -
@@ -158,13 +158,13 @@ $$
 
 ::: pf-proof
 
-Divide step <1>4 by $y_1$.
+Divide step [](#s1-4){.pf-ref} by $y_1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The equation printed in the source,
 $$
@@ -188,27 +188,27 @@ Rearranging gives
 $$
 y_1y_2'-y_1'y_2=W,
 $$
-which is step <1>4.
+which is step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Step <1>3 gives Abel's formula, and steps <1>4--<1>6 give the requested
+Step [](#s1-3){.pf-ref} gives Abel's formula, and steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the requested
 first-order reduction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Under a change of variable $t=t(x)$,
 $$
@@ -227,7 +227,7 @@ This is the chain rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every $k\geq0$,
 $$
@@ -248,7 +248,7 @@ for coefficients $c_{k,r}$ independent of $j$.
 ::: pf-proof
 
 Proceed by induction on $k$. The case $k=0$ is immediate. If the formula
-holds at order $k$, differentiate it using step <1>8. The derivative of the
+holds at order $k$, differentiate it using step [](#s1-8){.pf-ref}. The derivative of the
 leading term contributes
 $$
 \left(
@@ -264,7 +264,7 @@ Thus the formula holds at order $k+1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The $x$-Wronskian matrix is obtained from the $t$-Wronskian matrix by
 left multiplication by a lower-triangular matrix whose diagonal is
@@ -280,7 +280,7 @@ $$
 ::: pf-proof
 
 Row $k+1$ of the Wronskian contains the $k$th derivatives of all $y_j$.
-Step <1>9 says that this row equals
+Step [](#s1-9){.pf-ref} says that this row equals
 $$
 \left(\frac{dt}{dx}\right)^k
 $$
@@ -291,7 +291,7 @@ of earlier rows. This is exactly a lower-triangular row transformation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -308,7 +308,7 @@ $$
 
 ::: pf-proof
 
-By step <1>10, the determinant multiplier is the product of the diagonal
+By step [](#s1-10){.pf-ref}, the determinant multiplier is the product of the diagonal
 entries:
 $$
 \prod_{k=0}^{n-1}
@@ -332,20 +332,20 @@ the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>11.
+This is step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 For every $k\geq0$,
 $$
@@ -376,7 +376,7 @@ derivative of $y_j$ of order less than $k$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The Wronskian matrix of
 $$
@@ -392,7 +392,7 @@ $y$.
 
 ::: pf-proof
 
-Apply step <1>13 to each derivative row. The $k$th derivative row equals
+Apply step [](#s1-13){.pf-ref} to each derivative row. The $k$th derivative row equals
 $y$ times the corresponding original row plus a linear combination of earlier
 rows.
 
@@ -400,7 +400,7 @@ rows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence
 $$
@@ -415,20 +415,20 @@ $$
 ::: pf-proof
 
 The determinant of the lower-triangular row-transformation matrix in step
-<1>14 is the product of its $n$ diagonal entries, namely $y^n$.
+[](#s1-14){.pf-ref} is the product of its $n$ diagonal entries, namely $y^n$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-This is step <1>15.
+This is step [](#s1-15){.pf-ref}.
 
 :::
 
@@ -436,7 +436,7 @@ This is step <1>15.
 
 ::: pf-qed
 
-Steps <1>7, <1>12, and <1>16 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-16){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

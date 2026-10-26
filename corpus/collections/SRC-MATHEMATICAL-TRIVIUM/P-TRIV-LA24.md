@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every linear transformation $T:\mathbb R^n\to\mathbb R^n$ satisfies
 $$
@@ -55,7 +55,7 @@ Subtracting $T(0)$ from both sides gives $T(0)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The translation satisfies
 $$
@@ -74,21 +74,21 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $a\neq0$, then $T_a$ is not linear.
 
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 are incompatible when $a\neq0$: a linear map would have
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} are incompatible when $a\neq0$: a linear map would have
 to send $0$ to $0$, whereas $T_a$ sends $0$ to $a$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $a=0$, then $T_a$ is linear.
 
@@ -105,7 +105,7 @@ the identity transformation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore a translation is linear exactly in the trivial case
 $$
@@ -115,7 +115,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 excludes every nonzero translation vector, and step <1>4 handles
+Step [](#s1-3){.pf-ref} excludes every nonzero translation vector, and step [](#s1-4){.pf-ref} handles
 $a=0$.
 
 :::
@@ -124,7 +124,7 @@ $a=0$.
 
 ::: pf-qed
 
-Step <1>5 gives the precise conclusion.
+Step [](#s1-5){.pf-ref} gives the precise conclusion.
 
 :::
 

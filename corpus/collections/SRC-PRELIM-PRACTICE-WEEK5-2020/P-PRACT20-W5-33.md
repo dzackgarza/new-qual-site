@@ -27,7 +27,7 @@ F(z)=\frac{e^{1/(1-z)}}{z}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The finite singularities of $F$ are
 \[
@@ -51,7 +51,7 @@ There are no other finite singularities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 As $z\to\infty$,
 \[
@@ -81,7 +81,7 @@ and division by $z$ gives the stated expansion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The residue of $F$ at infinity is
 \[
@@ -92,13 +92,13 @@ The residue of $F$ at infinity is
 ::: pf-proof
 
 The residue at infinity is the negative of the coefficient of $z^{-1}$ in
-the Laurent expansion at infinity. By step <1>2, that coefficient is $1$.
+the Laurent expansion at infinity. By step [](#s1-2){.pf-ref}, that coefficient is $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sum of the residues at the two finite singularities is
 \[
@@ -110,7 +110,7 @@ The sum of the residues at the two finite singularities is
 
 For a function holomorphic on the Riemann sphere away from isolated
 singularities, the sum of all residues, including the residue at infinity,
-is zero. Hence by step <1>3,
+is zero. Hence by step [](#s1-3){.pf-ref},
 \[
 \operatorname{Res}(F,0)+\operatorname{Res}(F,1)
 =
@@ -122,7 +122,7 @@ is zero. Hence by step <1>3,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -135,7 +135,7 @@ Therefore
 ::: pf-proof
 
 The positively oriented circle encloses exactly the two singularities in
-step <1>1. By the residue theorem and step <1>4,
+step [](#s1-1){.pf-ref}. By the residue theorem and step [](#s1-4){.pf-ref},
 \[
 \oint_{|z|=3}F(z)\,dz
 =
@@ -149,7 +149,7 @@ step <1>1. By the residue theorem and step <1>4,
 
 ::: pf-qed
 
-Step <1>5 gives the requested value.
+Step [](#s1-5){.pf-ref} gives the requested value.
 
 :::
 

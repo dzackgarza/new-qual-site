@@ -93,7 +93,7 @@ Choose $r$ strictly between this maximum and $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $z$ with $|z|\le r$, Harnack's inequality gives
 \[
@@ -123,7 +123,7 @@ uniform bounds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -136,7 +136,7 @@ v(0)
 
 ::: pf-proof
 
-The left-hand inequality in step <1>4 gives, for every $z\in L$,
+The left-hand inequality in step [](#s1-4){.pf-ref} gives, for every $z\in L$,
 \[
 v(z)
 \ge
@@ -148,7 +148,7 @@ Taking the infimum over $L$ and rearranging gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $z\in L$,
 \[
@@ -161,19 +161,19 @@ v(z)
 
 ::: pf-proof
 
-The right-hand inequality in step <1>4 gives
+The right-hand inequality in step [](#s1-4){.pf-ref} gives
 \[
 v(z)
 \le
 \frac{1+r}{1-r}v(0).
 \]
-Substitute the upper bound for $v(0)$ from step <1>5.
+Substitute the upper bound for $v(0)$ from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -206,7 +206,7 @@ and
 =
 \inf_{z\in L}v(z).
 \]
-Taking the supremum in step <1>6 gives the asserted inequality.
+Taking the supremum in step [](#s1-6){.pf-ref} gives the asserted inequality.
 
 :::
 
@@ -214,7 +214,7 @@ Taking the supremum in step <1>6 gives the asserted inequality.
 
 ::: pf-qed
 
-Step <1>7 supplies the required constant for the arbitrary compact set $K$.
+Step [](#s1-7){.pf-ref} supplies the required constant for the arbitrary compact set $K$.
 
 :::
 

@@ -39,7 +39,7 @@ E_k\coloneqq
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -65,7 +65,7 @@ The first two factors are finite by local $L^2$ and $L^3$ integrability, and $m(
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $k\ge1$,
 \[
@@ -126,7 +126,7 @@ Absorbing the fixed factor $2^{n/6}$ into $C_n$ gives the claimed estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 \[
@@ -146,7 +146,7 @@ Set
 =
 \frac{n+3a+2b}{6}.
 \]
-The hypothesis gives $\gamma<0$. By step <1>2,
+The hypothesis gives $\gamma<0$. By step [](#s1-2){.pf-ref},
 \[
 \sum_{k=1}^{\infty}
 \int_{E_k}|fg|
@@ -161,7 +161,7 @@ The last series is geometric with ratio $2^\gamma<1$, hence converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -183,7 +183,7 @@ cover $\mathbb R^n$ up to their boundary overlaps, which have measure zero. Henc
 +
 \sum_{k=1}^{\infty}\int_{E_k}|fg|.
 \]
-The first term is finite by step <1>1 and the series is finite by step <1>3.
+The first term is finite by step [](#s1-1){.pf-ref} and the series is finite by step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -191,7 +191,7 @@ The first term is finite by step <1>1 and the series is finite by step <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

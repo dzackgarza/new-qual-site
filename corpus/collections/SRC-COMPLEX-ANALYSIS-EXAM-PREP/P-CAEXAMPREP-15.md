@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Joukowski map $J$ is a biholomorphism from $A$ onto the upper half-plane $\mathbb H$.
 
@@ -66,7 +66,7 @@ on $A$, so $J$ is biholomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The complex potential
 $$
@@ -77,7 +77,7 @@ has the boundary of $A$ as a streamline.
 
 ::: pf-proof
 
-The uniform horizontal flow on $\mathbb H$ has complex potential $F_0(w)=\alpha w$, whose stream function is $\operatorname{Im}F_0(w)=\alpha\operatorname{Im}w$ and hence vanishes on $\partial\mathbb H=\mathbb R$. By step <1>1, pulling this potential back by $J$ gives $F=F_0\circ J$ on $A$.
+The uniform horizontal flow on $\mathbb H$ has complex potential $F_0(w)=\alpha w$, whose stream function is $\operatorname{Im}F_0(w)=\alpha\operatorname{Im}w$ and hence vanishes on $\partial\mathbb H=\mathbb R$. By step [](#s1-1){.pf-ref}, pulling this potential back by $J$ gives $F=F_0\circ J$ on $A$.
 
 Equivalently, for $z=re^{i\theta}$,
 $$
@@ -90,7 +90,7 @@ This vanishes when $r=1$ and also when $\theta=0$ or $\theta=\pi$, so every boun
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The velocity tends to the prescribed horizontal velocity $\alpha$ at infinity.
 
@@ -108,7 +108,7 @@ Thus $u\to\alpha$ and $v\to0$, so the limiting velocity is parallel to the $x$-a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The required flow is
 $$
@@ -129,7 +129,7 @@ z+\frac1z
 =\left(r+\frac1r\right)\cos\theta
 +i\left(r-\frac1r\right)\sin\theta,
 $$
-the real and imaginary parts of the potential in step <1>2 are exactly the displayed velocity potential $\phi$ and stream function $\psi$. Steps <1>2 and <1>3 verify the boundary and far-field conditions.
+the real and imaginary parts of the potential in step [](#s1-2){.pf-ref} are exactly the displayed velocity potential $\phi$ and stream function $\psi$. Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} verify the boundary and far-field conditions.
 
 :::
 
@@ -137,7 +137,7 @@ the real and imaginary parts of the potential in step <1>2 are exactly the displ
 
 ::: pf-qed
 
-Step <1>4 gives the required flow.
+Step [](#s1-4){.pf-ref} gives the required flow.
 
 :::
 

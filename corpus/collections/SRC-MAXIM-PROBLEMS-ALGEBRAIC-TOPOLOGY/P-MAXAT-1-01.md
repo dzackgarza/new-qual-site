@@ -27,7 +27,7 @@ All homology groups below are taken with coefficients in $\mathbb F_2$, so no or
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $\dim W=n$, then Poincaré--Lefschetz duality gives
 \[
@@ -44,7 +44,7 @@ Every manifold is orientable over $\mathbb F_2$. Poincaré--Lefschetz duality fo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently,
 \[
@@ -58,7 +58,7 @@ Over the field $\mathbb F_2$, the universal coefficient theorem gives
 \[
 \dim H^j(W;\mathbb F_2)=\dim H_j(W;\mathbb F_2).
 \]
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 \chi(W,M)
@@ -72,7 +72,7 @@ Using step <1>1,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Additivity of Euler characteristic for the pair $(W,M)$ gives
 \[
@@ -91,9 +91,9 @@ The long exact homology sequence of the pair $(W,M)$ is finite-dimensional in ea
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-Combining steps <1>2--<1>3 yields
+Combining steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} yields
 \[
 \chi(M)=\bigl(1-(-1)^n\bigr)\chi(W).
 \]
@@ -101,20 +101,20 @@ Combining steps <1>2--<1>3 yields
 
 ::: pf-proof
 
-Substitute $\chi(W,M)=(-1)^n\chi(W)$ from step <1>2 into step <1>3 and rearrange.
+Substitute $\chi(W,M)=(-1)^n\chi(W)$ from step [](#s1-2){.pf-ref} into step [](#s1-3){.pf-ref} and rearrange.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence $\chi(M)$ is even.
 
 
 ::: pf-proof
 
-If $n$ is even, step <1>4 gives $\chi(M)=0$. If $n$ is odd, it gives
+If $n$ is even, step [](#s1-4){.pf-ref} gives $\chi(M)=0$. If $n$ is odd, it gives
 \[
 \chi(M)=2\chi(W).
 \]
@@ -124,7 +124,7 @@ In either case $\chi(M)\in2\mathbb Z$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -134,7 +134,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly step <1>5.
+This is exactly step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -142,7 +142,7 @@ This is exactly step <1>5.
 
 ::: pf-qed
 
-Step <1>6 proves the claim.
+Step [](#s1-6){.pf-ref} proves the claim.
 
 :::
 

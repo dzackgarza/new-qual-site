@@ -28,7 +28,7 @@ The vectors $\mathbf{v}_1 = (-1, 1, 1)$, $\mathbf{v}_2 = (1, 1, 1)$, and $\mathb
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The three vectors form a basis of $\RR^3$ exactly when the determinant of the matrix having them as rows is nonzero.
 
@@ -41,7 +41,7 @@ Three vectors in $\RR^3$ form a basis exactly when they are linearly independent
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 $$
@@ -74,7 +74,7 @@ This matrix is upper triangular, so its determinant is the product of its diagon
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The exceptional parameter is
 $$
@@ -85,7 +85,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-By step <1>1, failure to be a basis occurs exactly when $\det M=0$. By step <1>2, this is equivalent to $-2(k+1)=0$, hence to $k=-1$.
+By step [](#s1-1){.pf-ref}, failure to be a basis occurs exactly when $\det M=0$. By step [](#s1-2){.pf-ref}, this is equivalent to $-2(k+1)=0$, hence to $k=-1$.
 
 :::
 
@@ -93,7 +93,7 @@ By step <1>1, failure to be a basis occurs exactly when $\det M=0$. By step <1>2
 
 ::: pf-qed
 
-Step <1>3 gives the unique real parameter for which the three vectors fail to form a basis.
+Step [](#s1-3){.pf-ref} gives the unique real parameter for which the three vectors fail to form a basis.
 
 :::
 

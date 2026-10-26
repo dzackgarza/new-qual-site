@@ -29,7 +29,7 @@ You are not required to use your answer to (c).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every group of order $30$ has a subgroup $H$ of order $15$.
 
@@ -42,7 +42,7 @@ By Sylow's theorems, $n_3\in\{1,10\}$ and $n_5\in\{1,6\}$. If both were greater 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every group of order $15$ is cyclic.
 
@@ -55,20 +55,20 @@ For $|H|=15$, Sylow's theorems give $n_5\mid3$, $n_5\equiv1\pmod5$, $n_3\mid5$, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every group of order $30$ is isomorphic to $C_{15}\rtimes C_2$ for some action of $C_2$ on $C_{15}$.
 
 
 ::: pf-proof
 
-The subgroup $H$ in step <1>1 has index two and is therefore normal, and by step <1>2 it is cyclic of order $15$. Cauchy's theorem provides an element $s$ of order two. Since $H$ has odd order, $H\cap\langle s\rangle=1$, and $H\langle s\rangle$ has order $30$. The multiplication map identifies $G$ with the semidirect product for the conjugation action of $\langle s\rangle$ on $H$.
+The subgroup $H$ in step [](#s1-1){.pf-ref} has index two and is therefore normal, and by step [](#s1-2){.pf-ref} it is cyclic of order $15$. Cauchy's theorem provides an element $s$ of order two. Since $H$ has odd order, $H\cap\langle s\rangle=1$, and $H\langle s\rangle$ has order $30$. The multiplication map identifies $G$ with the semidirect product for the conjugation action of $\langle s\rangle$ on $H$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Three pairwise nonisomorphic groups of order $30$ are
 \[
@@ -87,7 +87,7 @@ All three groups have order $30$. Their respective numbers of elements of order 
 
 ::: pf-qed
 
-Steps <1>1--<1>4 establish parts (a)--(d), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish parts (a)--(d), respectively.
 
 :::
 

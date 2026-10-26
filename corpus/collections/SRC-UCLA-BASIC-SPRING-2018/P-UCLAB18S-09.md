@@ -26,7 +26,7 @@ Fix a finite interval with $a<b$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is bounded on $[a,b]$.
 
@@ -43,7 +43,7 @@ Thus $f$ is bounded on $[a,b]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For the uniform partition
 $$
@@ -80,7 +80,7 @@ where the sum telescopes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $\varepsilon>0$, there is a partition $P$ of $[a,b]$ such that
 $$
@@ -90,11 +90,11 @@ $$
 
 ::: pf-proof
 
-If $f(b)=f(a)$, step <1>2 gives $U(f,P_N)-L(f,P_N)=0$ for every $N$. Otherwise choose
+If $f(b)=f(a)$, step [](#s1-2){.pf-ref} gives $U(f,P_N)-L(f,P_N)=0$ for every $N$. Otherwise choose
 $$
 N>\frac{(b-a)(f(b)-f(a))}{\varepsilon}.
 $$
-Then step <1>2 gives
+Then step [](#s1-2){.pf-ref} gives
 $$
 U(f,P_N)-L(f,P_N)
 =\frac{(b-a)(f(b)-f(a))}{N}
@@ -105,14 +105,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is Riemann integrable on $[a,b]$, and hence on every finite interval.
 
 
 ::: pf-proof
 
-The Darboux criterion states that a bounded function on a closed finite interval is Riemann integrable if and only if for every $\varepsilon>0$ there is a partition $P$ for which $U(f,P)-L(f,P)<\varepsilon$. Boundedness is step <1>1, and the required partitions are provided by step <1>3. Therefore $f$ is Riemann integrable on $[a,b]$.
+The Darboux criterion states that a bounded function on a closed finite interval is Riemann integrable if and only if for every $\varepsilon>0$ there is a partition $P$ for which $U(f,P)-L(f,P)<\varepsilon$. Boundedness is step [](#s1-1){.pf-ref}, and the required partitions are provided by step [](#s1-3){.pf-ref}. Therefore $f$ is Riemann integrable on $[a,b]$.
 
 :::
 
@@ -120,7 +120,7 @@ The Darboux criterion states that a bounded function on a closed finite interval
 
 ::: pf-qed
 
-The endpoints $a<b$ were arbitrary, so step <1>4 proves the claim for every finite interval.
+The endpoints $a<b$ were arbitrary, so step [](#s1-4){.pf-ref} proves the claim for every finite interval.
 
 :::
 

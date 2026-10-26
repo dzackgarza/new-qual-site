@@ -54,7 +54,7 @@ for every \(v\in\ell^\infty\).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every fixed coordinate \(i\),
 \[
@@ -84,7 +84,7 @@ The assumed weak convergence to \(0\) gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose any \(n_1\), and then choose \(N_1\) so large that
 \[
@@ -100,7 +100,7 @@ The vector \(u_{n_1}\) belongs to \(\ell^1\), so its tails tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose \(N_{k-1}\) and \(n_{k-1}\) have been chosen. Then one can choose \(n_k>n_{k-1}\) such that
 \[
@@ -117,7 +117,7 @@ For each fixed
 \[
 1\le i\le N_{k-1},
 \]
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 \[
 x_i^{(n)}\to0.
 \]
@@ -127,7 +127,7 @@ Since there are only finitely many such coordinates, their absolute-value sum te
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 After choosing \(n_k\), choose \(N_k>N_{k-1}\) such that
 \[
@@ -153,13 +153,13 @@ Thus the required subsequence and block endpoints exist.
 
 ::: pf-proof
 
-Steps <1>2--<1>4 give the induction.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give the induction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The \(\ell^1\)-mass of \(u_{n_k}\) outside \(I_k\) satisfies
 \[
@@ -187,7 +187,7 @@ Each contribution is \(<\varepsilon\) by construction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -210,13 +210,13 @@ Since
 \sum_{i\notin I_k}|x_i^{(n_k)}|
 \ge1,
 \]
-apply step <1>6.
+apply step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The vector \(v\) belongs to \(\ell^\infty\) and
 \[
@@ -236,7 +236,7 @@ Set \(v_i=0\) on coordinates not belonging to any block.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 On the block \(I_k\),
 \[
@@ -260,7 +260,7 @@ on \(I_k\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The contribution from outside \(I_k\) satisfies
 \[
@@ -287,7 +287,7 @@ x_i^{(n_k)}v_i
 <
 2\varepsilon
 \]
-by step <1>6.
+by step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -305,7 +305,7 @@ Hence
 
 ::: pf-proof
 
-Using steps <1>7, <1>9, and <1>10,
+Using steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-10){.pf-ref},
 \[
 \begin{aligned}
 \langle u_{n_k},v\rangle
@@ -334,7 +334,7 @@ x_i^{(n_k)}v_i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since \(\varepsilon=1/8\),
 \[
@@ -358,7 +358,7 @@ for every \(k\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 This contradicts the assumption that
 \[
@@ -369,26 +369,26 @@ for every \(v\in\ell^\infty\).
 
 ::: pf-proof
 
-The fixed vector \(v\in\ell^\infty\) from step <1>8 has pairings along the subsequence bounded below by \(1/2\), by step <1>12.
+The fixed vector \(v\in\ell^\infty\) from step [](#s1-8){.pf-ref} has pairings along the subsequence bounded below by \(1/2\), by step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore no sequence satisfying conditions (i) and (ii) exists.
 
 
 ::: pf-proof
 
-The assumption of its existence led to the contradiction in step <1>13.
+The assumption of its existence led to the contradiction in step [](#s1-13){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Define
 \[
@@ -415,7 +415,7 @@ For every \(v\in\ell^\infty\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Suppose, toward a contradiction, that
 \[
@@ -431,7 +431,7 @@ This is the negation of norm convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Then there exist
 \[
@@ -470,7 +470,7 @@ Since \(\delta>0\), this is well defined.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Then
 \[
@@ -482,7 +482,7 @@ for every \(k\).
 
 ::: pf-proof
 
-By step <1>17,
+By step [](#s1-17){.pf-ref},
 \[
 \|z_k\|_1
 =
@@ -495,7 +495,7 @@ By step <1>17,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Also
 \[
@@ -514,7 +514,7 @@ For every \(v\in\ell^\infty\),
 \langle w_{n_k},v\rangle
 \to0
 \]
-by step <1>15.
+by step [](#s1-15){.pf-ref}.
 
 :::
 
@@ -522,18 +522,18 @@ by step <1>15.
 
 ::: pf-step
 
-Steps <1>19--<1>20 contradict part (a).
+Steps [](#s1-19){.pf-ref} through [](#s1-20){.pf-ref} contradict part (a).
 
 
 ::: pf-proof
 
-Part (a), step <1>14, says no weakly null sequence in \(\ell^1\) can have all norms at least \(1\).
+Part (a), step [](#s1-14){.pf-ref}, says no weakly null sequence in \(\ell^1\) can have all norms at least \(1\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Therefore
 \[
@@ -544,7 +544,7 @@ Therefore
 
 ::: pf-proof
 
-The assumption in step <1>16 is impossible, and
+The assumption in step [](#s1-16){.pf-ref} is impossible, and
 \[
 \|u_n-u\|_1=\|w_n\|_1.
 \]
@@ -553,14 +553,14 @@ The assumption in step <1>16 is impossible, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Thus every weakly convergent sequence in \(\ell^1\) converges in norm.
 
 
 ::: pf-proof
 
-This is step <1>22.
+This is step [](#s1-22){.pf-ref}.
 
 :::
 
@@ -568,7 +568,7 @@ This is step <1>22.
 
 ::: pf-qed
 
-Step <1>14 proves part (a), and step <1>23 proves part (b).
+Step [](#s1-14){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
 
 :::
 

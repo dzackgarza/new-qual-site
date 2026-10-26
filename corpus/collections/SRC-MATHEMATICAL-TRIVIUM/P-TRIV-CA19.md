@@ -23,7 +23,7 @@ Assume $n$ is a nonnegative integer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since $\cos^{2n}\theta$ has period $\pi$,
 $$
@@ -51,7 +51,7 @@ equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Euler's formula gives
 $$
@@ -87,7 +87,7 @@ Combine the exponential factors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For an integer $m$,
 $$
@@ -116,7 +116,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -129,7 +129,7 @@ $$
 
 ::: pf-proof
 
-In the expansion from step <1>2, step <1>3 kills every term except the one
+In the expansion from step [](#s1-2){.pf-ref}, step [](#s1-3){.pf-ref} kills every term except the one
 with
 $$
 2n-2k=0,
@@ -144,7 +144,7 @@ Multiplying it by $2\pi$ gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -159,7 +159,7 @@ $$
 
 ::: pf-proof
 
-Apply step <1>1 to the value obtained in step <1>4.
+Apply step [](#s1-1){.pf-ref} to the value obtained in step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -167,7 +167,7 @@ Apply step <1>1 to the value obtained in step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the requested integral.
+Step [](#s1-5){.pf-ref} is the requested integral.
 
 :::
 

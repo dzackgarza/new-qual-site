@@ -22,7 +22,7 @@ Explain your answer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Ideals of $\ZZ/90\ZZ$ are in bijection with positive divisors of $90$.
 
@@ -65,7 +65,7 @@ Thus the ideals of $\ZZ/90\ZZ$ are parametrized by the positive divisors of $90$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integer $90$ has exactly
 $$
@@ -106,7 +106,7 @@ choices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -119,7 +119,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>2.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 :::
 
@@ -127,7 +127,7 @@ Combine steps <1>1 and <1>2.
 
 ::: pf-qed
 
-Step <1>3 answers the problem.
+Step [](#s1-3){.pf-ref} answers the problem.
 
 :::
 

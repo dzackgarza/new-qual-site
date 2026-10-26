@@ -94,7 +94,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $\lambda_1=5$, an eigenvector is
 $$
@@ -122,7 +122,7 @@ so $y=x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $\lambda_2=-3$, an eigenvector is
 $$
@@ -172,13 +172,13 @@ $$
 =
 A(e^{\lambda t}v).
 $$
-The eigenvectors from steps <1>3--<1>4 are linearly independent.
+The eigenvectors from steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} are linearly independent.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the general solution is
 $$
@@ -214,7 +214,7 @@ and read off the two coordinates.
 
 ::: pf-qed
 
-Step <1>6 is the complete two-parameter solution family.
+Step [](#s1-6){.pf-ref} is the complete two-parameter solution family.
 
 :::
 

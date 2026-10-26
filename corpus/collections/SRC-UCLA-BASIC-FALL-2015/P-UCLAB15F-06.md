@@ -47,7 +47,7 @@ x,y\in X.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $\rho$ is a metric on $X$.
 
@@ -96,7 +96,7 @@ Thus $\rho$ is a metric.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -122,7 +122,7 @@ Hence convergence in $\rho$ implies ordinary convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 \[
@@ -164,7 +164,7 @@ The right side tends to $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Ordinary convergence to a point of $X$ is equivalent to convergence in $\rho$:
 \[
@@ -178,7 +178,7 @@ Ordinary convergence to a point of $X$ is equivalent to convergence in $\rho$:
 
 ::: pf-proof
 
-The forward implication follows from step <1>3:
+The forward implication follows from step [](#s1-3){.pf-ref}:
 \[
 \rho(x_n,x)
 =
@@ -189,13 +189,13 @@ The forward implication follows from step <1>3:
 \right|
 \longrightarrow0.
 \]
-The reverse implication is step <1>2.
+The reverse implication is step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $(x_n)$ be a $\rho$-Cauchy sequence.
 Then both real sequences
@@ -229,7 +229,7 @@ Thus the Cauchy property for $\rho$ implies the ordinary Cauchy property for eac
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exist real numbers $a,b$ such that
 \[
@@ -241,13 +241,13 @@ x_n\to a
 
 ::: pf-proof
 
-The real line is complete, and both sequences are Cauchy by step <1>5.
+The real line is complete, and both sequences are Cauchy by step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -261,7 +261,7 @@ For every $n$,
 \[
 x_n\cdot\frac1{x_n}=1.
 \]
-Multiplication is continuous, so using the limits from step <1>6 gives
+Multiplication is continuous, so using the limits from step [](#s1-6){.pf-ref} gives
 \[
 ab
 =
@@ -274,7 +274,7 @@ x_n\frac1{x_n}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In particular,
 \[
@@ -292,7 +292,7 @@ The identity
 \[
 ab=1
 \]
-from step <1>7 rules out $a=0$.
+from step [](#s1-7){.pf-ref} rules out $a=0$.
 Solving for $b$ gives
 \[
 b=1/a.
@@ -302,14 +302,14 @@ b=1/a.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The sequence $(x_n)$ converges to $a$ in the metric $\rho$.
 
 
 ::: pf-proof
 
-By steps <1>6 and <1>8,
+By steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref},
 \[
 |x_n-a|\to0
 \]
@@ -336,7 +336,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence
 \[
@@ -346,7 +346,7 @@ Hence
 
 ::: pf-proof
 
-Every $\rho$-Cauchy sequence converges in $\rho$ to a point $a\in X$ by steps <1>5--<1>9.
+Every $\rho$-Cauchy sequence converges in $\rho$ to a point $a\in X$ by steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref}.
 
 :::
 
@@ -354,7 +354,7 @@ Every $\rho$-Cauchy sequence converges in $\rho$ to a point $a\in X$ by steps <1
 
 ::: pf-qed
 
-Step <1>1 proves that $\rho$ is a metric, step <1>4 proves that it induces the same sequential convergence as the usual metric on $X$, and step <1>10 proves completeness.
+Step [](#s1-1){.pf-ref} proves that $\rho$ is a metric, step [](#s1-4){.pf-ref} proves that it induces the same sequential convergence as the usual metric on $X$, and step [](#s1-10){.pf-ref} proves completeness.
 
 :::
 

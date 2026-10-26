@@ -44,7 +44,7 @@ for every $f\in\mathcal F$. Therefore the set $\{f(x):f\in\mathcal F\}$ is bound
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $x\in X$ and $\varepsilon>0$. There exists $\delta>0$ such that whenever $\rho(x,y)<\delta$,
 $$
@@ -61,9 +61,9 @@ This is exactly equicontinuity of the family $\mathcal F$ at the point $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-If $\rho(x,y)<\delta$, with $\delta$ as in step <1>2, then
+If $\rho(x,y)<\delta$, with $\delta$ as in step [](#s1-2){.pf-ref}, then
 $$
 g(x)\le g(y)+\varepsilon.
 $$
@@ -71,7 +71,7 @@ $$
 
 ::: pf-proof
 
-For every $f\in\mathcal F$, step <1>2 gives
+For every $f\in\mathcal F$, step [](#s1-2){.pf-ref} gives
 $$
 f(x)<f(y)+\varepsilon\le g(y)+\varepsilon.
 $$
@@ -84,7 +84,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $\rho(x,y)<\delta$, then
 $$
@@ -94,7 +94,7 @@ $$
 
 ::: pf-proof
 
-For every $f\in\mathcal F$, step <1>2 also gives
+For every $f\in\mathcal F$, step [](#s1-2){.pf-ref} also gives
 $$
 f(y)<f(x)+\varepsilon\le g(x)+\varepsilon.
 $$
@@ -104,7 +104,7 @@ Taking the supremum over $f\in\mathcal F$ gives the asserted inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $\rho(x,y)<\delta$, then
 $$
@@ -114,7 +114,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 give
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give
 $$
 -\varepsilon\le g(x)-g(y)\le\varepsilon,
 $$
@@ -126,7 +126,7 @@ which is equivalent to the stated bound.
 
 ::: pf-qed
 
-The point $x\in X$ and the number $\varepsilon>0$ were arbitrary. Step <1>5 therefore proves that $g$ is continuous at every point of $X$.
+The point $x\in X$ and the number $\varepsilon>0$ were arbitrary. Step [](#s1-5){.pf-ref} therefore proves that $g$ is continuous at every point of $X$.
 
 :::
 

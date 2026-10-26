@@ -37,7 +37,7 @@ over $\QQ$, and put $G=\operatorname{Gal}(L/\QQ)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $f$ is irreducible over $\QQ$.
 
@@ -64,7 +64,7 @@ Division of $X^7+X+1$ by these three polynomials leaves remainders $1$, $X$, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 By part (I),
 $$
@@ -80,13 +80,13 @@ The discriminant is
 $$
 \operatorname{disc}(f)=3^8 7^8=(3^4 7^4)^2,
 $$
-and the source states that $f$ has exactly three real roots. Together with the irreducibility from step <1>1, these are precisely the hypotheses of part (I), whose conclusion is the displayed dichotomy.
+and the source states that $f$ has exactly three real roots. Together with the irreducibility from step [](#s1-1){.pf-ref}, these are precisely the hypotheses of part (I), whose conclusion is the displayed dichotomy.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let $\alpha_1,\ldots,\alpha_7$ be the roots of $f$ and form the three-set resolvent
 $$
@@ -138,26 +138,26 @@ has remainder $0$, proving the displayed factorization. The Euclidean algorithm 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The alternative $G\cong A_7$ is impossible.
 
 
 ::: pf-proof
 
-The group $A_7$ acts transitively on the $35$ three-element subsets of $\{1,\ldots,7\}$. By step <1>3 the corresponding $35$ three-root sums are all distinct. Therefore, if $G=A_7$, the Galois conjugates of any root
+The group $A_7$ acts transitively on the $35$ three-element subsets of $\{1,\ldots,7\}$. By step [](#s1-3){.pf-ref} the corresponding $35$ three-root sums are all distinct. Therefore, if $G=A_7$, the Galois conjugates of any root
 $$
 \alpha_i+\alpha_j+\alpha_k
 $$
 of the three-set resolvent run through all $35$ roots of $P_{35}$. Consequently $P_{35}$ is irreducible over $\QQ$.
 
-Step <1>3 shows instead that $P_{35}$ has factors of degrees $7$ and $28$. Hence $G\ne A_7$.
+Step [](#s1-3){.pf-ref} shows instead that $P_{35}$ has factors of degrees $7$ and $28$. Hence $G\ne A_7$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -168,7 +168,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 leaves only $A_7$ and $G_{168}$, and step <1>4 excludes $A_7$.
+Step [](#s1-2){.pf-ref} leaves only $A_7$ and $G_{168}$, and step [](#s1-4){.pf-ref} excludes $A_7$.
 
 :::
 
@@ -183,7 +183,7 @@ The supplied prime counts are consistent with this exact conclusion.
 
 In the natural action of $G_{168}=\operatorname{GL}_3(\FF_2)$ on the seven nonzero vectors of $\FF_2^3$, the numbers of fixed points of an element can only be $0$, $1$, $3$, or $7$. For an unramified prime, the number of roots of $f$ modulo $p$ is the number of fixed points of a Frobenius element. Thus the observed root counts $0$, $1$, $3$, and $7$ have exactly the pattern expected for $G_{168}$.
 
-The finite table is corroborating evidence rather than the logical step that excludes $A_7$; that exclusion is supplied by the exact resolvent factorization in steps <1>3 and <1>4.
+The finite table is corroborating evidence rather than the logical step that excludes $A_7$; that exclusion is supplied by the exact resolvent factorization in steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -191,7 +191,7 @@ The finite table is corroborating evidence rather than the logical step that exc
 
 ::: pf-qed
 
-Step <1>5 gives the requested Galois group.
+Step [](#s1-5){.pf-ref} gives the requested Galois group.
 
 :::
 

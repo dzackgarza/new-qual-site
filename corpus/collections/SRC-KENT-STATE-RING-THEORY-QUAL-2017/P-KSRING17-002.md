@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The number of units is
 $$
@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every ideal of $\ZZ/60\ZZ$ is of the form
 $$
@@ -130,7 +130,7 @@ Thus ideals of $\ZZ/60\ZZ$ are in bijection with positive divisors of $60$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The number of ideals is
 $$
@@ -162,7 +162,7 @@ $$
 =
 12.
 $$
-By step <1>3, this is exactly the number of ideals of $\ZZ/60\ZZ$.
+By step [](#s1-3){.pf-ref}, this is exactly the number of ideals of $\ZZ/60\ZZ$.
 
 :::
 
@@ -170,7 +170,7 @@ By step <1>3, this is exactly the number of ideals of $\ZZ/60\ZZ$.
 
 ::: pf-qed
 
-Step <1>2 answers part (a), and step <1>4 answers part (b).
+Step [](#s1-2){.pf-ref} answers part (a), and step [](#s1-4){.pf-ref} answers part (b).
 
 :::
 

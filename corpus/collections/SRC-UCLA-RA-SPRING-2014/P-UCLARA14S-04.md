@@ -37,7 +37,7 @@ Prove that there are continuous linear functionals on $L^\infty([0,1])$ that are
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The functional
 \[
@@ -70,7 +70,7 @@ Thus $\varphi$ is continuous.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a sequence $(f_k)\subset C([0,1])$ such that
 \[
@@ -103,7 +103,7 @@ so $f_k(x)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $k$,
 \[
@@ -128,7 +128,7 @@ are nonnegative, and the $n=1$ term equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is no $g\in L^1([0,1])$ such that
 \[
@@ -141,7 +141,7 @@ for every $f\in C([0,1])$.
 
 ::: pf-proof
 
-Suppose such a $g$ existed. By step <1>2,
+Suppose such a $g$ existed. By step [](#s1-2){.pf-ref},
 \[
 f_k(x)g(x)\longrightarrow0
 \]
@@ -160,13 +160,13 @@ Under the assumed representation, this says
 \[
 \varphi(f_k)\longrightarrow0,
 \]
-contradicting step <1>3.
+contradicting step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Regard $C([0,1])$ as a closed linear subspace of $L^\infty([0,1])$ via the natural inclusion. The functional $\varphi$ extends to a bounded linear functional
 \[
@@ -180,13 +180,13 @@ For a continuous function on $[0,1]$, the supremum norm equals the essential sup
 \[
 C([0,1])\hookrightarrow L^\infty([0,1])
 \]
-is isometric. By step <1>1, $\varphi$ is bounded on this subspace. The Hahn--Banach theorem therefore gives a bounded linear extension $\widetilde\varphi$ to all of $L^\infty([0,1])$.
+is isometric. By step [](#s1-1){.pf-ref}, $\varphi$ is bounded on this subspace. The Hahn--Banach theorem therefore gives a bounded linear extension $\widetilde\varphi$ to all of $L^\infty([0,1])$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The functional $\widetilde\varphi$ is not equal to $T_g$ for any $g\in L^1([0,1])$.
 
@@ -203,7 +203,7 @@ for some $g\in L^1([0,1])$, then restricting both sides to $C([0,1])$ would give
 =
 \int_0^1f(x)g(x)\,dx
 \]
-for every continuous $f$. This contradicts step <1>4.
+for every continuous $f$. This contradicts step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -211,7 +211,7 @@ for every continuous $f$. This contradicts step <1>4.
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and steps <1>5--<1>6 prove part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b).
 
 :::
 

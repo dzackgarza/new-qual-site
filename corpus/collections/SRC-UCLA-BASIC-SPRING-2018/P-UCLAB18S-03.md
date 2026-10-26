@@ -33,7 +33,7 @@ The claim is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define the real-valued continuous function
 \[
@@ -49,7 +49,7 @@ The exponential function and polynomials are continuous, so their difference is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -82,7 +82,7 @@ e
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -117,7 +117,7 @@ e^2-7>0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There exists
 \[
@@ -135,7 +135,7 @@ e^\lambda
 
 ::: pf-proof
 
-By steps <1>1--<1>3, the continuous function $h$ changes sign between $1$ and $2$.
+By steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, the continuous function $h$ changes sign between $1$ and $2$.
 The intermediate value theorem therefore gives
 \[
 \lambda\in(1,2)
@@ -149,7 +149,7 @@ h(\lambda)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let
 \[
@@ -163,7 +163,7 @@ A\ne0.
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 \[
 \lambda>1,
 \]
@@ -178,7 +178,7 @@ is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For this matrix,
 \[
@@ -208,7 +208,7 @@ e^\lambda I_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One also has
 \[
@@ -234,7 +234,7 @@ Add the three scalar multiples of $I_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore the nonzero matrix $A$ satisfies
 \[
@@ -246,30 +246,30 @@ e^A=I_n+A+A^2.
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 e^\lambda
 =
 1+\lambda+\lambda^2.
 \]
-Combine steps <1>6--<1>7.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence the assertion that $A$ must be zero is false.
 
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 \[
 A\ne0,
 \]
-while step <1>8 shows that $A$ satisfies the required matrix equation.
+while step [](#s1-8){.pf-ref} shows that $A$ satisfies the required matrix equation.
 Thus $A$ is a counterexample.
 
 :::
@@ -278,7 +278,7 @@ Thus $A$ is a counterexample.
 
 ::: pf-qed
 
-Step <1>9 disproves the claim.
+Step [](#s1-9){.pf-ref} disproves the claim.
 
 :::
 

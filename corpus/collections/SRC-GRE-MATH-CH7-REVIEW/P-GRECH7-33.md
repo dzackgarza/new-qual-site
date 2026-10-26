@@ -31,7 +31,7 @@ The source shows the graph in a figure that is not reproduced here.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 From the source figure, the five edges have endpoints
 $$
@@ -51,7 +51,7 @@ These incidences are read directly from the labeled graph: $e_1$ is the upper-le
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the unoriented incidence matrix, with rows $v_1,v_2,v_3,v_4$ and columns $e_1,\ldots,e_5$, is
 $$
@@ -66,13 +66,13 @@ $$
 
 ::: pf-proof
 
-In an unoriented incidence matrix, the $(i,j)$ entry is $1$ exactly when $v_i$ is an endpoint of $e_j$. Applying this rule to the incidences in step <1>1 gives the displayed rows.
+In an unoriented incidence matrix, the $(i,j)$ entry is $1$ exactly when $v_i$ is an endpoint of $e_j$. Applying this rule to the incidences in step [](#s1-1){.pf-ref} gives the displayed rows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the answer is
 $$
@@ -82,7 +82,7 @@ $$
 
 ::: pf-proof
 
-The matrix in step <1>2 is exactly choice (B).
+The matrix in step [](#s1-2){.pf-ref} is exactly choice (B).
 
 :::
 
@@ -90,7 +90,7 @@ The matrix in step <1>2 is exactly choice (B).
 
 ::: pf-qed
 
-Step <1>3 gives the required incidence matrix.
+Step [](#s1-3){.pf-ref} gives the required incidence matrix.
 
 :::
 

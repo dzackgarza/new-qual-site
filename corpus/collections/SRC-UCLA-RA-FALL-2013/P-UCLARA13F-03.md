@@ -29,7 +29,7 @@ No such holomorphic function exists.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that $f:\mathbb D\to\mathbb C$ is holomorphic and satisfies the stated property.
 
@@ -42,7 +42,7 @@ This assumes the negation of the desired answer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The stated sequential property implies that for every $M>0$ there exists $0<r<1$ such that
 \[
@@ -66,7 +66,7 @@ Then $|z_n|\to1$ but $|f(z_n)|$ would not tend to infinity, contradicting the hy
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Taking $M=1$, there exists $r<1$ such that $f$ has no zeros in the annulus
 \[
@@ -76,7 +76,7 @@ r<|z|<1.
 
 ::: pf-proof
 
-By step <1>2, $|f(z)|>1$ throughout this annulus, so $f(z)\ne0$ there.
+By step [](#s1-2){.pf-ref}, $|f(z)|>1$ throughout this annulus, so $f(z)\ne0$ there.
 
 :::
 
@@ -89,13 +89,13 @@ The zeros of $f$ in the closed disk $\{|z|\leq r\}$ are finite in number, counte
 
 ::: pf-proof
 
-The zero set of a nonzero holomorphic function is discrete. The function is not identically zero because step <1>3 gives $|f|>1$ near the boundary. A discrete subset of the compact disk $\{|z|\leq r\}$ is finite.
+The zero set of a nonzero holomorphic function is discrete. The function is not identically zero because step [](#s1-3){.pf-ref} gives $|f|>1$ near the boundary. A discrete subset of the compact disk $\{|z|\leq r\}$ is finite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $a_1,\ldots,a_s$ be these zeros, repeated according to multiplicity, and define
 \[
@@ -108,13 +108,13 @@ Then $g$ extends to a holomorphic function on all of $\mathbb D$.
 
 ::: pf-proof
 
-By step <1>3 there are no zeros outside the compact disk, so $a_1,\ldots,a_s$ list every zero of $f$ in $\mathbb D$. At each zero, $p$ has exactly the same multiplicity as $f$, so the apparent singularity of $p/f$ is removable. Removing all of them yields a holomorphic function on $\mathbb D$.
+By step [](#s1-3){.pf-ref} there are no zeros outside the compact disk, so $a_1,\ldots,a_s$ list every zero of $f$ in $\mathbb D$. At each zero, $p$ has exactly the same multiplicity as $f$, so the apparent singularity of $p/f$ is removable. Removing all of them yields a holomorphic function on $\mathbb D$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -125,7 +125,7 @@ g(z)\longrightarrow0
 
 ::: pf-proof
 
-The polynomial $p$ is bounded on the unit disk: there is $C<\infty$ with $|p(z)|\leq C$ for $|z|<1$. By the assumed property, $|f(z)|\to\infty$ uniformly toward the boundary in the sense of step <1>2. Hence
+The polynomial $p$ is bounded on the unit disk: there is $C<\infty$ with $|p(z)|\leq C$ for $|z|<1$. By the assumed property, $|f(z)|\to\infty$ uniformly toward the boundary in the sense of step [](#s1-2){.pf-ref}. Hence
 \[
 |g(z)|=\frac{|p(z)|}{|f(z)|}\leq\frac C{|f(z)|}\to0.
 \]
@@ -134,7 +134,7 @@ The polynomial $p$ is bounded on the unit disk: there is $C<\infty$ with $|p(z)|
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $0<\rho<1$, the maximum modulus principle gives
 \[
@@ -145,15 +145,15 @@ For every $0<\rho<1$, the maximum modulus principle gives
 
 ::: pf-proof
 
-The function $g$ is holomorphic on the unit disk by step <1>5, hence on a neighborhood of the closed disk of radius $\rho$. The maximum modulus principle applies.
+The function $g$ is holomorphic on the unit disk by step [](#s1-5){.pf-ref}, hence on a neighborhood of the closed disk of radius $\rho$. The maximum modulus principle applies.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Letting $\rho\uparrow1$ in step <1>7 and using step <1>6 gives
+Letting $\rho\uparrow1$ in step [](#s1-7){.pf-ref} and using step [](#s1-6){.pf-ref} gives
 \[
 g\equiv0.
 \]
@@ -165,13 +165,13 @@ Fix $z\in\mathbb D$. For every $\rho$ with $|z|<\rho<1$,
 \[
 |g(z)|\leq\max_{|w|=\rho}|g(w)|.
 \]
-Step <1>6, in its uniform form from step <1>2, says the right side tends to zero as $\rho\uparrow1$. Thus $g(z)=0$. Since $z$ was arbitrary, $g\equiv0$.
+Step [](#s1-6){.pf-ref}, in its uniform form from step [](#s1-2){.pf-ref}, says the right side tends to zero as $\rho\uparrow1$. Thus $g(z)=0$. Since $z$ was arbitrary, $g\equiv0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 This is impossible because $p$ is a nonzero polynomial and $g=p/f$ away from the zeros of $f$.
 
@@ -182,13 +182,13 @@ Choose a point $z$ that is not one of the finitely many zeros $a_j$. Then $p(z)\
 \[
 g(z)=p(z)/f(z)\ne0,
 \]
-contradicting step <1>8.
+contradicting step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -198,7 +198,7 @@ Therefore
 
 ::: pf-proof
 
-The existence assumption in step <1>1 led to the contradiction in step <1>9.
+The existence assumption in step [](#s1-1){.pf-ref} led to the contradiction in step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -206,7 +206,7 @@ The existence assumption in step <1>1 led to the contradiction in step <1>9.
 
 ::: pf-qed
 
-Step <1>10 answers the question and proves the assertion.
+Step [](#s1-10){.pf-ref} answers the question and proves the assertion.
 
 :::
 

@@ -28,7 +28,7 @@ Recall that a collection of open sets is a basis if every open set can be writte
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Assume that $X$ has a countable dense subset
 $$
@@ -50,9 +50,9 @@ The set $\NN\times\NN$ is countable, and each pair $(j,m)$ determines one ball $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The collection $\mathcal B$ from step <1>1 is a basis for the topology of $X$.
+The collection $\mathcal B$ from step [](#s1-1){.pf-ref} is a basis for the topology of $X$.
 
 
 ::: pf-proof
@@ -82,7 +82,7 @@ Therefore every point of every open set lies in a member of $\mathcal B$ contain
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Conversely, suppose the topology of $X$ has a countable basis
 $$
@@ -103,9 +103,9 @@ There is at most one chosen point for each basis element $U_n$, and the basis is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The set $D$ from step <1>3 is dense in $X$.
+The set $D$ from step [](#s1-3){.pf-ref} is dense in $X$.
 
 
 ::: pf-proof
@@ -120,7 +120,7 @@ In particular $U_n$ is nonempty, so the chosen point $x_n$ belongs to $D\cap U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore, for a metric space $(X,d)$,
 $$
@@ -133,7 +133,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>2 prove (a)$\Rightarrow$(b), and steps <1>3--<1>4 prove (b)$\Rightarrow$(a).
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove (a)$\Rightarrow$(b), and steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} prove (b)$\Rightarrow$(a).
 
 :::
 
@@ -141,7 +141,7 @@ Steps <1>1--<1>2 prove (a)$\Rightarrow$(b), and steps <1>3--<1>4 prove (b)$\Righ
 
 ::: pf-qed
 
-Step <1>5 is the required equivalence.
+Step [](#s1-5){.pf-ref} is the required equivalence.
 
 :::
 

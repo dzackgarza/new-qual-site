@@ -56,7 +56,7 @@ H^n(S^n\times S^n;\mathbb Z).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 By the Künneth theorem,
 \[
@@ -82,7 +82,7 @@ H^0(S^n)\otimes H^n(S^n).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore there exist integers \(r,s\) such that
 \[
@@ -94,7 +94,7 @@ ra+sb.
 
 ::: pf-proof
 
-Use the basis from step <1>1.
+Use the basis from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -120,7 +120,7 @@ By hypothesis,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -143,7 +143,7 @@ i_1^*\mu^*
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -175,7 +175,7 @@ i_1^*b=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -189,7 +189,7 @@ Apply \(i_1^*\) to
 \[
 \mu^*u=ra+sb.
 \]
-Using steps <1>4--<1>5 gives
+Using steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} gives
 \[
 u=ru.
 \]
@@ -199,7 +199,7 @@ Since \(u\) generates an infinite cyclic group, \(r=1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Similarly,
 \[
@@ -223,7 +223,7 @@ i_2^*a=0,
 \qquad
 i_2^*b=u.
 \]
-Applying \(i_2^*\) to step <1>2 yields
+Applying \(i_2^*\) to step [](#s1-2){.pf-ref} yields
 \[
 u=su,
 \]
@@ -233,7 +233,7 @@ hence \(s=1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus
 \[
@@ -244,13 +244,13 @@ Thus
 
 ::: pf-proof
 
-Combine steps <1>2, <1>6, and <1>7.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Since
 \[
@@ -291,15 +291,15 @@ Cup product is natural:
 =
 \mu^*u\smile\mu^*u.
 \]
-Use step <1>9.
+Use step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-Using step <1>8,
+Using step [](#s1-8){.pf-ref},
 \[
 0
 =
@@ -317,7 +317,7 @@ Expand bilinearly.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 One has
 \[
@@ -335,13 +335,13 @@ a=\pi_1^*u,
 \[
 a^2=\pi_1^*(u^2)=0
 \]
-by step <1>9. The same argument gives \(b^2=0\).
+by step [](#s1-9){.pf-ref}. The same argument gives \(b^2=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Graded commutativity gives
 \[
@@ -371,7 +371,7 @@ Since \(n^2\) and \(n\) have the same parity,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -385,13 +385,13 @@ a\smile b}.
 
 ::: pf-proof
 
-Substitute steps <1>12--<1>13 into step <1>11.
+Substitute steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref} into step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 By the Künneth theorem,
 \[
@@ -429,7 +429,7 @@ If \(n\) were even, then
 \[
 1+(-1)^n=2,
 \]
-so step <1>14 would give
+so step [](#s1-14){.pf-ref} would give
 \[
 2(a\smile b)=0.
 \]
@@ -446,7 +446,7 @@ For even \(n\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 This is impossible because
 \[
@@ -457,7 +457,7 @@ generates an infinite cyclic group.
 
 ::: pf-proof
 
-By step <1>15,
+By step [](#s1-15){.pf-ref},
 \[
 H^{2n}(S^n\times S^n;\mathbb Z)\cong\mathbb Z
 \]
@@ -467,20 +467,20 @@ has no nonzero torsion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore \(n\) is not even.
 
 
 ::: pf-proof
 
-The assumption of evenness led to the contradiction in step <1>17.
+The assumption of evenness led to the contradiction in step [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Since \(n>0\),
 \[
@@ -490,7 +490,7 @@ Since \(n>0\),
 
 ::: pf-proof
 
-Every positive integer is either even or odd, and step <1>18 excludes the even case.
+Every positive integer is either even or odd, and step [](#s1-18){.pf-ref} excludes the even case.
 
 :::
 
@@ -498,7 +498,7 @@ Every positive integer is either even or odd, and step <1>18 excludes the even c
 
 ::: pf-qed
 
-Step <1>19 is the required conclusion.
+Step [](#s1-19){.pf-ref} is the required conclusion.
 
 :::
 

@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 $$
@@ -103,7 +103,7 @@ on $R_1$, so $S$ is conformal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Möbius map
 $$
@@ -164,7 +164,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $T:D_+\to R_2$ is bijective.
 
@@ -221,7 +221,7 @@ Therefore $T$ is onto $R_2$, and injectivity follows from the fact that it is a 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The composition
 $$
@@ -235,11 +235,11 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 S:R_1\to D_+
 $$
-is a biholomorphism. By steps <1>2--<1>3,
+is a biholomorphism. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 $$
 T:D_+\to R_2
 $$
@@ -256,7 +256,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 gives the requested explicit conformal equivalence.
+Step [](#s1-4){.pf-ref} gives the requested explicit conformal equivalence.
 
 :::
 

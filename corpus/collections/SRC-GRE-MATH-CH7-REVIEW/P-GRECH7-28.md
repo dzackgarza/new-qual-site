@@ -27,7 +27,7 @@ Suppose X is a nonempty set for which $\delta: X \times X \to \mathbb{R}$ is a r
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Properties (A), (C), and (D) are metric axioms.
 
@@ -52,7 +52,7 @@ These are exactly (A), (C), and (D).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Property (B) is the triangle inequality and is also a metric axiom.
 
@@ -69,7 +69,7 @@ for all $x,y,z\in X$, which is precisely statement (B).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Property (E) is not required of a metric and can fail.
 
@@ -94,7 +94,7 @@ Thus equality in the triangle inequality need not hold.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the condition that is not a metric property is
 $$
@@ -105,7 +105,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 identify (A)--(D) as metric axioms, while step <1>3 gives a metric violating (E).
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} identify (A)--(D) as metric axioms, while step [](#s1-3){.pf-ref} gives a metric violating (E).
 
 :::
 
@@ -113,7 +113,7 @@ Steps <1>1 and <1>2 identify (A)--(D) as metric axioms, while step <1>3 gives a 
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

@@ -33,7 +33,7 @@ Use the product rule and the chain rule.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One obtains
 \[
@@ -61,7 +61,7 @@ e^{g(x)}g'(x).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Factor out \(e^{g(x)}\):
 \[
@@ -77,13 +77,13 @@ g'(x)h(x)+h'(x)
 
 ::: pf-proof
 
-This is an algebraic factorization of step <1>2.
+This is an algebraic factorization of step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The given relation
 \[
@@ -115,13 +115,13 @@ for every \(x\in\mathbb R\).
 
 ::: pf-proof
 
-Combine steps <1>3--<1>4.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore \(f\) is constant on \(\mathbb R\).
 
@@ -135,7 +135,7 @@ is constant there. The real line is an interval.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus the necessarily true statement is
 \[
@@ -145,7 +145,7 @@ Thus the necessarily true statement is
 
 ::: pf-proof
 
-This is step <1>6.
+This is step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -153,7 +153,7 @@ This is step <1>6.
 
 ::: pf-qed
 
-Step <1>7 gives the required choice.
+Step [](#s1-7){.pf-ref} gives the required choice.
 
 :::
 

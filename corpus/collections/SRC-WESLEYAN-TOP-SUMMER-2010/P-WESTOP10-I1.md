@@ -54,7 +54,7 @@ y<y'.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -123,9 +123,9 @@ Hence every intrinsic-order basis set is subspace-open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The inclusion in step <1>1 is strict:
+The inclusion in step [](#s1-1){.pf-ref} is strict:
 \[
 \boxed{
 \tau_{mathrm{ord}}
@@ -181,7 +181,7 @@ Therefore $p$ has no intrinsic-order neighborhood contained in $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -263,9 +263,9 @@ O\in\tau_{mathrm{sub}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The inclusion in step <1>3 is strict:
+The inclusion in step [](#s1-3){.pf-ref} is strict:
 \[
 \boxed{
 \tau_{mathrm{prod}}
@@ -285,7 +285,7 @@ U
 \times
 \left[0,\frac12\right)
 \]
-from step <1>2 is
+from step [](#s1-2){.pf-ref} is
 \[
 \tau_{mathrm{sub}}
 \]
@@ -303,7 +303,7 @@ contains only points with first coordinate exactly $x_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The intrinsic lexicographic order topology is not contained in the
 product topology.
@@ -337,7 +337,7 @@ Thus
 V\in\tau_{mathrm{ord}}.
 \]
 
-But $V$ is not product-open for the same reason as in step <1>4:
+But $V$ is not product-open for the same reason as in step [](#s1-4){.pf-ref}:
 every product neighborhood of a point
 \[
 (x_0,y)
@@ -353,7 +353,7 @@ V\notin\tau_{mathrm{prod}}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The product topology is not contained in the intrinsic order
 topology.
@@ -434,7 +434,7 @@ W\in\tau_{mathrm{prod}}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -447,14 +447,14 @@ are incomparable.
 
 ::: pf-proof
 
-Step <1>5 gives an intrinsic-order-open set that is not product-open.
-Step <1>6 gives a product-open set that is not intrinsic-order-open.
+Step [](#s1-5){.pf-ref} gives an intrinsic-order-open set that is not product-open.
+Step [](#s1-6){.pf-ref} gives a product-open set that is not intrinsic-order-open.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The complete comparison is
 \[
@@ -481,7 +481,7 @@ while
 
 ::: pf-proof
 
-Combine steps <1>2, <1>4, and <1>7.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-7){.pf-ref}.
 
 :::
 
@@ -489,7 +489,7 @@ Combine steps <1>2, <1>4, and <1>7.
 
 ::: pf-qed
 
-Step <1>8 gives the complete relation among the three topologies.
+Step [](#s1-8){.pf-ref} gives the complete relation among the three topologies.
 
 :::
 

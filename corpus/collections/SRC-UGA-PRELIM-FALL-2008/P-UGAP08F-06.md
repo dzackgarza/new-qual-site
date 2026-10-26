@@ -28,7 +28,7 @@ Give an example showing that the conclusion need not hold when $f$ is not contin
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are constants $c>0$ and $\delta>0$ such that
 $$
@@ -59,7 +59,7 @@ Replacing $\delta$ by $\min(\delta,1/2)$ if necessary keeps the relevant interva
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -69,7 +69,7 @@ $$
 
 ::: pf-proof
 
-Using step <1>1 and the hypothesis $f\ge0$ on $[0,1]$,
+Using step [](#s1-1){.pf-ref} and the hypothesis $f\ge0$ on $[0,1]$,
 $$
 \begin{aligned}
 \int_0^1 f(x)\,dx
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Continuity is necessary: define
 $$
@@ -111,7 +111,7 @@ The function $g$ is discontinuous at $1/2$. It differs from the zero function at
 
 ::: pf-qed
 
-Step <1>2 proves the assertion under continuity, and step <1>3 supplies the requested counterexample without continuity.
+Step [](#s1-2){.pf-ref} proves the assertion under continuity, and step [](#s1-3){.pf-ref} supplies the requested counterexample without continuity.
 
 :::
 

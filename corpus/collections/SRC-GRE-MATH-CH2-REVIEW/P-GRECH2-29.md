@@ -43,7 +43,7 @@ For $0\le x\le1$, both $x$ and $\arctan x$ are nonnegative, so the graph lies ab
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An antiderivative of $x\arctan x$ is
 $$
@@ -79,7 +79,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The area is
 $$
@@ -90,7 +90,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 \begin{aligned}
 \int_0^1 x\arctan x\,dx
@@ -106,7 +106,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested area and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
 
 :::
 

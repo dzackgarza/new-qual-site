@@ -37,7 +37,7 @@ A^T:\mathbb R^4\to\mathbb R^5.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -67,7 +67,7 @@ The domain of $A^T$ has dimension $4$, so rank-nullity gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The rank of $C=A^TB$ is
 \[
@@ -117,7 +117,7 @@ this is the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -127,7 +127,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \ker A^T
 \]
@@ -137,7 +137,7 @@ Hence
 \dim(\operatorname{im}B\cap\ker A^T)
 \]
 is either $0$ or $1$.
-Step <1>2 then gives
+Step [](#s1-2){.pf-ref} then gives
 \[
 \operatorname{rank}C
 =
@@ -151,7 +151,7 @@ Thus no other rank is possible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Rank $3$ occurs.
 
@@ -187,7 +187,7 @@ which has rank $3$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Rank $2$ occurs.
 
@@ -233,7 +233,7 @@ which has rank $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the complete list of possible values is
 \[
@@ -243,7 +243,7 @@ Hence the complete list of possible values is
 
 ::: pf-proof
 
-Step <1>3 rules out every other value, while steps <1>4--<1>5 realize both listed values.
+Step [](#s1-3){.pf-ref} rules out every other value, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} realize both listed values.
 
 :::
 
@@ -251,7 +251,7 @@ Step <1>3 rules out every other value, while steps <1>4--<1>5 realize both liste
 
 ::: pf-qed
 
-Step <1>6 is the required classification.
+Step [](#s1-6){.pf-ref} is the required classification.
 
 :::
 

@@ -43,7 +43,7 @@ is nonzero by hypothesis, so it contains a nonzero element.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since $s$ is integral over $R$, there exists a monic relation
 $$
@@ -73,7 +73,7 @@ The positive integers are well ordered, so among all such monic relations one ha
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The constant coefficient
 $$
@@ -88,7 +88,7 @@ Suppose
 $$
 a_0=0.
 $$
-Then the relation in step <1>2 becomes
+Then the relation in step [](#s1-2){.pf-ref} becomes
 $$
 s
 \left(
@@ -131,7 +131,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element
 $$
@@ -142,7 +142,7 @@ belongs to $I$.
 
 ::: pf-proof
 
-Rearrange the relation from step <1>2:
+Rearrange the relation from step [](#s1-2){.pf-ref}:
 $$
 a_0
 =
@@ -168,7 +168,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The element
 $$
@@ -183,11 +183,11 @@ and is nonzero.
 
 ::: pf-proof
 
-By construction in step <1>2,
+By construction in step [](#s1-2){.pf-ref},
 $$
 a_0\in R.
 $$
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 a_0\in I.
 $$
@@ -195,7 +195,7 @@ Hence
 $$
 a_0\in I\cap R.
 $$
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 $$
 a_0\ne0.
 $$
@@ -204,7 +204,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -218,7 +218,7 @@ $$
 
 ::: pf-proof
 
-Step <1>5 exhibits a nonzero element of the intersection.
+Step [](#s1-5){.pf-ref} exhibits a nonzero element of the intersection.
 
 :::
 
@@ -226,7 +226,7 @@ Step <1>5 exhibits a nonzero element of the intersection.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

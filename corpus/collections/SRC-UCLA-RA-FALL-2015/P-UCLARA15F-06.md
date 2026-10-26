@@ -44,7 +44,7 @@ Since \(u\in L^2(\mathbb R^d)\), Plancherel's theorem applies.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For fixed \(y\in\mathbb R^d\), the Fourier transform of
 \[
@@ -72,7 +72,7 @@ under the chosen convention. Subtract the transform of \(u(x)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Hence, by Plancherel,
 \[
@@ -88,7 +88,7 @@ Hence, by Plancherel,
 
 ::: pf-proof
 
-Apply Plancherel to the difference from step <1>1.
+Apply Plancherel to the difference from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -114,13 +114,13 @@ Therefore
 
 ::: pf-proof
 
-Insert step <1>2 into the definition of \([u]_{1/2}^2\).
+Insert step [](#s1-2){.pf-ref} into the definition of \([u]_{1/2}^2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Tonelli's theorem permits interchange of the two integrals:
 \[
@@ -150,7 +150,7 @@ The integrand is nonnegative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -204,7 +204,7 @@ Orthogonal maps preserve Lebesgue measure and Euclidean norm, and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Make the scaling change of variables
 \[
@@ -253,7 +253,7 @@ Multiplying the scaling factors gives one remaining factor \(|\xi|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 \[
@@ -272,13 +272,13 @@ C_d
 
 ::: pf-proof
 
-This is the dimension-dependent constant appearing in step <1>7.
+This is the dimension-dependent constant appearing in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The constant \(C_d\) is finite.
 
@@ -343,7 +343,7 @@ C
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The constant \(C_d\) is strictly positive.
 
@@ -360,7 +360,7 @@ Such a set has positive Lebesgue measure.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore, for every \(\xi\in\mathbb R^d\),
 \[
@@ -371,7 +371,7 @@ I(\xi)=C_d|\xi|}.
 
 ::: pf-proof
 
-For \(\xi\ne0\), combine steps <1>7--<1>10. For \(\xi=0\), both sides are zero by step <1>5.
+For \(\xi\ne0\), combine steps [](#s1-7){.pf-ref} through [](#s1-10){.pf-ref}. For \(\xi=0\), both sides are zero by step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -379,7 +379,7 @@ For \(\xi\ne0\), combine steps <1>7--<1>10. For \(\xi=0\), both sides are zero b
 
 ::: pf-step
 
-Substituting step <1>11 into step <1>4 gives
+Substituting step [](#s1-11){.pf-ref} into step [](#s1-4){.pf-ref} gives
 \[
 \boxed{
 [u]_{1/2}^2
@@ -394,13 +394,13 @@ C_d
 
 ::: pf-proof
 
-Replace the inner \(y\)-integral in step <1>4 by \(C_d|\xi|\).
+Replace the inner \(y\)-integral in step [](#s1-4){.pf-ref} by \(C_d|\xi|\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Since \(C_d\in(0,\infty)\),
 \[
@@ -424,7 +424,7 @@ Multiplication by a fixed finite positive constant does not affect finiteness.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Since \(u\in L^2(\mathbb R^d)\),
 \[
@@ -441,7 +441,7 @@ Apply Plancherel's theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 One has the pointwise comparability
 \[
@@ -484,7 +484,7 @@ Set \(t=|\xi|\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 \[
@@ -502,15 +502,15 @@ if and only if
 
 ::: pf-proof
 
-Square the \(L^2\)-norm and use the two-sided comparison from step <1>15.
+Square the \(L^2\)-norm and use the two-sided comparison from step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
-By step <1>14, the condition in step <1>16 is equivalent to
+By step [](#s1-14){.pf-ref}, the condition in step [](#s1-16){.pf-ref} is equivalent to
 \[
 \boxed{
 \int_{\mathbb R^d}
@@ -533,9 +533,9 @@ is already finite because \(u\in L^2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
-Combining steps <1>13 and <1>17,
+Combining steps [](#s1-13){.pf-ref} and [](#s1-17){.pf-ref},
 \[
 \boxed{
 u\in H^{1/2}(\mathbb R^d)
@@ -561,7 +561,7 @@ Both conditions are equivalent to finiteness of
 
 ::: pf-qed
 
-Step <1>18 is the required equivalence.
+Step [](#s1-18){.pf-ref} is the required equivalence.
 
 :::
 

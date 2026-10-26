@@ -21,7 +21,7 @@ Let π be an irreducible element of a principal ideal domain R. Prove that π is
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ideal $(\pi)$ is proper.
 
@@ -60,7 +60,7 @@ Since $\pi\in(\pi)\subseteq(d)$, the element $\pi$ is a multiple of $d$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Either $I=R$ or $I=(\pi)$.
 
@@ -73,33 +73,33 @@ From $\pi=dr$ and irreducibility of $\pi$, either $d$ is a unit or $r$ is a unit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $(\pi)$ is maximal, hence prime.
 
 
 ::: pf-proof
 
-Step <1>1 gives properness and step <1>4 gives maximality. Every maximal ideal in a commutative ring with identity is prime.
+Step [](#s1-1){.pf-ref} gives properness and step [](#s1-4){.pf-ref} gives maximality. Every maximal ideal in a commutative ring with identity is prime.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\pi\mid ab$, then $\pi\mid a$ or $\pi\mid b$.
 
 
 ::: pf-proof
 
-The divisibility $\pi\mid ab$ means $ab\in(\pi)$. Since $(\pi)$ is prime by step <1>5, either $a\in(\pi)$ or $b\in(\pi)$, equivalently $\pi\mid a$ or $\pi\mid b$.
+The divisibility $\pi\mid ab$ means $ab\in(\pi)$. Since $(\pi)$ is prime by step [](#s1-5){.pf-ref}, either $a\in(\pi)$ or $b\in(\pi)$, equivalently $\pi\mid a$ or $\pi\mid b$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -109,7 +109,7 @@ $$
 
 ::: pf-proof
 
-Step <1>6 is the defining prime-element divisibility condition.
+Step [](#s1-6){.pf-ref} is the defining prime-element divisibility condition.
 
 :::
 
@@ -117,7 +117,7 @@ Step <1>6 is the defining prime-element divisibility condition.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -25,7 +25,7 @@ Let R be a non-zero commutative ring with 1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a), the ideal $P$ is proper.
 
@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose
 $$
@@ -108,13 +108,13 @@ meets $S$.
 
 ::: pf-proof
 
-The proof is identical to step <1>2, with $b$ in place of $a$.
+The proof is identical to step [](#s1-2){.pf-ref}, with $b$ in place of $a$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the assumptions
 $$
@@ -173,9 +173,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The assumptions in step <1>4 are impossible.
+The assumptions in step [](#s1-4){.pf-ref} are impossible.
 
 
 ::: pf-proof
@@ -188,7 +188,7 @@ and $S$ is multiplicatively closed,
 $$
 st\in S.
 $$
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 $$
 st\in P.
 $$
@@ -205,7 +205,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -215,11 +215,11 @@ $$
 
 ::: pf-proof
 
-Step <1>1 shows that $P$ is proper. If
+Step [](#s1-1){.pf-ref} shows that $P$ is proper. If
 $$
 ab\in P,
 $$
-step <1>5 shows that it is impossible for both $a$ and $b$ to lie outside $P$. Hence
+step [](#s1-5){.pf-ref} shows that it is impossible for both $a$ and $b$ to lie outside $P$. Hence
 $$
 a\in P
 \quad\text{or}\quad
@@ -231,7 +231,7 @@ Thus $P$ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 $$
@@ -301,7 +301,7 @@ for every prime ideal $\mathfrak p$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Consequently,
 $$
@@ -313,13 +313,13 @@ $$
 
 ::: pf-proof
 
-This is exactly step <1>7 after intersecting over all prime ideals.
+This is exactly step [](#s1-7){.pf-ref} after intersecting over all prime ideals.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Let
 $$
@@ -365,7 +365,7 @@ which would make $x$ nilpotent. This contradicts the choice of $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 There exists an ideal
 $$
@@ -390,7 +390,7 @@ I\cap S_x=\varnothing
 $$
 ordered by inclusion.
 
-The zero ideal lies in $\mathcal P_x$ by step <1>9, so the poset is nonempty.
+The zero ideal lies in $\mathcal P_x$ by step [](#s1-9){.pf-ref}, so the poset is nonempty.
 
 Let
 $$
@@ -434,9 +434,9 @@ By Zorn's lemma, $\mathcal P_x$ has a maximal element $P$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
-The ideal $P$ from step <1>10 is prime.
+The ideal $P$ from step [](#s1-10){.pf-ref} is prime.
 
 
 ::: pf-proof
@@ -445,7 +445,7 @@ The multiplicative set
 $$
 S_x
 $$
-does not contain $0$ by step <1>9, and $P$ is maximal among ideals disjoint from $S_x$. Therefore part (a), proved in step <1>6, applies and gives
+does not contain $0$ by step [](#s1-9){.pf-ref}, and $P$ is maximal among ideals disjoint from $S_x$. Therefore part (a), proved in step [](#s1-6){.pf-ref}, applies and gives
 $$
 P\text{ prime}.
 $$
@@ -454,9 +454,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
-The prime ideal $P$ from step <1>11 does not contain $x$.
+The prime ideal $P$ from step [](#s1-11){.pf-ref} does not contain $x$.
 
 
 ::: pf-proof
@@ -478,7 +478,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence every non-nilpotent element is omitted by some prime ideal.
 
@@ -489,7 +489,7 @@ Given any non-nilpotent
 $$
 x\in R,
 $$
-steps <1>9--<1>12 construct a prime ideal $P$ with
+steps [](#s1-9){.pf-ref} through [](#s1-12){.pf-ref} construct a prime ideal $P$ with
 $$
 x\notin P.
 $$
@@ -498,7 +498,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 $$
@@ -514,7 +514,7 @@ Suppose
 $$
 x\notin\mathcal N.
 $$
-By step <1>13, there exists a prime ideal $\mathfrak p$ such that
+By step [](#s1-13){.pf-ref}, there exists a prime ideal $\mathfrak p$ such that
 $$
 x\notin\mathfrak p.
 $$
@@ -529,7 +529,7 @@ Taking the contrapositive yields the claimed containment.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Consequently,
 $$
@@ -543,7 +543,7 @@ $$
 
 ::: pf-proof
 
-Step <1>8 gives one inclusion and step <1>14 gives the reverse inclusion.
+Step [](#s1-8){.pf-ref} gives one inclusion and step [](#s1-14){.pf-ref} gives the reverse inclusion.
 
 :::
 
@@ -551,7 +551,7 @@ Step <1>8 gives one inclusion and step <1>14 gives the reverse inclusion.
 
 ::: pf-qed
 
-Step <1>6 proves part (a), and step <1>15 proves part (b).
+Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-15){.pf-ref} proves part (b).
 
 :::
 

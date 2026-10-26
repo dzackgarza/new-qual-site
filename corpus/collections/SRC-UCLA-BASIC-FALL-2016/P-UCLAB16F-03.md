@@ -47,7 +47,7 @@ namely one positive square, one negative square, and one zero square.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -78,7 +78,7 @@ R^TBR
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the same hypothesis,
 \[
@@ -131,7 +131,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the same hypothesis,
 \[
@@ -149,7 +149,7 @@ rank-nullity gives
 \[
 \dim\ker R=1.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \dim\ker A=1.
 \]
@@ -165,7 +165,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the same hypothesis, the quadratic form defined by $A$ takes both positive and negative values.
 
@@ -226,20 +226,20 @@ Thus $A$ is indefinite.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence symmetry, rank $2$, and indefiniteness are necessary.
 
 
 ::: pf-proof
 
-Symmetry is step <1>1, rank $2$ is step <1>3, and indefiniteness is step <1>4.
+Symmetry is step [](#s1-1){.pf-ref}, rank $2$ is step [](#s1-3){.pf-ref}, and indefiniteness is step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Conversely, suppose $A$ is real symmetric, has rank $2$, and is indefinite.
 Then its eigenvalues are
@@ -269,7 +269,7 @@ with $\lambda,\mu>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exists an orthogonal matrix $Q$ such that
 \[
@@ -298,7 +298,7 @@ The spectral theorem gives the displayed diagonalization.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Define
 \[
@@ -333,9 +333,9 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-The matrix from step <1>8 satisfies
+The matrix from step [](#s1-8){.pf-ref} satisfies
 \[
 \boxed{A=R^TBR}.
 \]
@@ -373,20 +373,20 @@ Q\\
 A
 \end{aligned}
 \]
-by step <1>7.
+by step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the stated conditions are sufficient.
 
 
 ::: pf-proof
 
-Steps <1>6--<1>9 construct a full-rank $2\times3$ matrix $R$ satisfying the required identity.
+Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} construct a full-rank $2\times3$ matrix $R$ satisfying the required identity.
 
 :::
 
@@ -394,7 +394,7 @@ Steps <1>6--<1>9 construct a full-rank $2\times3$ matrix $R$ satisfying the requ
 
 ::: pf-qed
 
-Step <1>5 proves necessity, and step <1>10 proves sufficiency.
+Step [](#s1-5){.pf-ref} proves necessity, and step [](#s1-10){.pf-ref} proves sufficiency.
 
 :::
 

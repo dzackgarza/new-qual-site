@@ -27,7 +27,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $|z|<R$ and $|w|<R$, then
 $$
@@ -59,7 +59,7 @@ the claimed estimate follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f$ is uniformly continuous on the open disk
 $$
@@ -73,7 +73,7 @@ Given $\varepsilon>0$, choose
 $$
 \delta=\frac{\varepsilon}{2R}.
 $$
-If $z,w\in D_R$ and $|z-w|<\delta$, then step <1>1 gives
+If $z,w\in D_R$ and $|z-w|<\delta$, then step [](#s1-1){.pf-ref} gives
 $$
 |f(z)-f(w)|
 <
@@ -87,7 +87,7 @@ The same $\delta$ works for every pair of points in $D_R$, so the continuity is 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There are sequences $z_n,w_n\in\CC$ such that
 $$
@@ -129,7 +129,7 @@ which tends to $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f(z)=z^2$ is not uniformly continuous on $\CC$.
 
@@ -141,7 +141,7 @@ $|z_n-w_n|\to0$ one would have
 $$
 |f(z_n)-f(w_n)|\to0.
 $$
-Step <1>3 provides a contradiction.
+Step [](#s1-3){.pf-ref} provides a contradiction.
 
 :::
 
@@ -149,7 +149,7 @@ Step <1>3 provides a contradiction.
 
 ::: pf-qed
 
-Step <1>2 proves uniform continuity on every fixed open disk, and step <1>4 proves failure
+Step [](#s1-2){.pf-ref} proves uniform continuity on every fixed open disk, and step [](#s1-4){.pf-ref} proves failure
 of uniform continuity on the whole plane.
 
 :::

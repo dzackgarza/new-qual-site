@@ -26,7 +26,7 @@ Prove that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For any subspaces $U_1,U_2\subseteq V$,
 \[
@@ -61,7 +61,7 @@ Thus the two subspaces are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In a finite-dimensional inner-product space,
 \[
@@ -94,9 +94,9 @@ Thus the inclusion is between subspaces of equal dimension and is therefore equa
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Applying step <1>1 to $W_1^\perp$ and $W_2^\perp$ gives
+Applying step [](#s1-1){.pf-ref} to $W_1^\perp$ and $W_2^\perp$ gives
 \[
 (W_1^\perp+W_2^\perp)^\perp
 =
@@ -106,7 +106,7 @@ W_1\cap W_2.
 
 ::: pf-proof
 
-Step <1>1 yields
+Step [](#s1-1){.pf-ref} yields
 \[
 (W_1^\perp+W_2^\perp)^\perp
 =
@@ -114,7 +114,7 @@ Step <1>1 yields
 \cap
 (W_2^\perp)^\perp.
 \]
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 (W_i^\perp)^\perp=W_i
 \]
@@ -124,7 +124,7 @@ for $i=1,2$, giving the stated equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -138,13 +138,13 @@ W_1^\perp+W_2^\perp
 
 ::: pf-proof
 
-Take orthogonal complements of both sides of step <1>3. By step <1>2,
+Take orthogonal complements of both sides of step [](#s1-3){.pf-ref}. By step [](#s1-2){.pf-ref},
 \[
 \bigl((W_1^\perp+W_2^\perp)^\perp\bigr)^\perp
 =
 W_1^\perp+W_2^\perp,
 \]
-while the orthogonal complement of the right side of step <1>3 is
+while the orthogonal complement of the right side of step [](#s1-3){.pf-ref} is
 \[
 (W_1\cap W_2)^\perp.
 \]
@@ -155,7 +155,7 @@ while the orthogonal complement of the right side of step <1>3 is
 
 ::: pf-qed
 
-Step <1>4 is the required identity.
+Step [](#s1-4){.pf-ref} is the required identity.
 
 :::
 

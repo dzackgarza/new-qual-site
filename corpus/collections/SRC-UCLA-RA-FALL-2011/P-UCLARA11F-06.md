@@ -49,7 +49,7 @@ For \(\delta>0\), define
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function \(\varphi_\delta\) is continuous on \(X\).
 
@@ -70,7 +70,7 @@ preserves continuity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -87,7 +87,7 @@ This is immediate from the defining maximum.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every \(x\in K\),
 \[
@@ -106,7 +106,7 @@ d(x,K)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -117,13 +117,13 @@ Therefore
 
 ::: pf-proof
 
-On \(K\), both sides equal \(1\) by step <1>3. Outside \(K\), the left side is \(0\) and the right side is nonnegative by step <1>2.
+On \(K\), both sides equal \(1\) by step [](#s1-3){.pf-ref}. Outside \(K\), the left side is \(0\) and the right side is nonnegative by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every \(n\),
 \[
@@ -144,13 +144,13 @@ Since \(\mu_n\) is positive,
 \le
 \int_X\varphi_\delta\,d\mu_n
 \]
-by step <1>4.
+by step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Taking \(\limsup\),
 \[
@@ -163,13 +163,13 @@ Taking \(\limsup\),
 
 ::: pf-proof
 
-The pointwise inequality in step <1>5 holds for every \(n\), so the limsup of the left side is bounded by the limsup of the right side. The latter sequence actually converges by weak-* convergence.
+The pointwise inequality in step [](#s1-5){.pf-ref} holds for every \(n\), so the limsup of the left side is bounded by the limsup of the right side. The latter sequence actually converges by weak-* convergence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 By weak-* convergence,
 \[
@@ -183,13 +183,13 @@ By weak-* convergence,
 
 ::: pf-proof
 
-The test function \(\varphi_\delta\) is continuous by step <1>1.
+The test function \(\varphi_\delta\) is continuous by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -203,13 +203,13 @@ for every \(\delta>0\).
 
 ::: pf-proof
 
-Combine steps <1>6--<1>7.
+Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every \(x\notin K\),
 \[
@@ -225,7 +225,7 @@ The set \(K\) is closed. If \(d(x,K)=0\), then \(x\) belongs to the closure of \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore, for every \(x\in X\),
 \[
@@ -237,13 +237,13 @@ as \(\delta\downarrow0\).
 
 ::: pf-proof
 
-If \(x\in K\), step <1>3 gives \(\varphi_\delta(x)=1\) for every \(\delta\).
+If \(x\in K\), step [](#s1-3){.pf-ref} gives \(\varphi_\delta(x)=1\) for every \(\delta\).
 
 If \(x\notin K\), let
 \[
 r=d(x,K)>0
 \]
-by step <1>9. For every \(0<\delta<r\),
+by step [](#s1-9){.pf-ref}. For every \(0<\delta<r\),
 \[
 1-\frac r\delta<0,
 \]
@@ -257,7 +257,7 @@ Thus the limit is \(0=\mathbf 1_K(x)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Since
 \[
@@ -275,15 +275,15 @@ as \(\delta\downarrow0\).
 
 ::: pf-proof
 
-Use step <1>10 for pointwise convergence and step <1>2 for domination by the integrable constant function \(1\), whose integral is \(\mu(X)<\infty\).
+Use step [](#s1-10){.pf-ref} for pointwise convergence and step [](#s1-2){.pf-ref} for domination by the integrable constant function \(1\), whose integral is \(\mu(X)<\infty\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
-Letting \(\delta\downarrow0\) in step <1>8,
+Letting \(\delta\downarrow0\) in step [](#s1-8){.pf-ref},
 \[
 \boxed{
 \limsup_{n\to\infty}\mu_n(K)
@@ -294,13 +294,13 @@ Letting \(\delta\downarrow0\) in step <1>8,
 
 ::: pf-proof
 
-The left-hand side is independent of \(\delta\), while the right-hand side converges to \(\mu(K)\) by step <1>11.
+The left-hand side is independent of \(\delta\), while the right-hand side converges to \(\mu(K)\) by step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Equivalently,
 \[
@@ -313,7 +313,7 @@ Equivalently,
 
 ::: pf-proof
 
-This is step <1>12 rewritten.
+This is step [](#s1-12){.pf-ref} rewritten.
 
 :::
 
@@ -321,7 +321,7 @@ This is step <1>12 rewritten.
 
 ::: pf-qed
 
-Step <1>13 is the required conclusion.
+Step [](#s1-13){.pf-ref} is the required conclusion.
 
 :::
 

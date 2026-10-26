@@ -37,7 +37,7 @@ is surjective but not injective.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $u,v,w\in\mathbb C$,
 $$
@@ -62,7 +62,7 @@ which is exactly the asserted coefficient vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $F$ is surjective.
 
@@ -77,7 +77,7 @@ factors over $\mathbb C$ as
 $$
 p(z)=(z-u)(z-v)(z-w)
 $$
-for some $u,v,w\in\mathbb C$, with repeated roots allowed. Comparing with step <1>1 gives
+for some $u,v,w\in\mathbb C$, with repeated roots allowed. Comparing with step [](#s1-1){.pf-ref} gives
 $$
 F(u,v,w)=(a,b,c).
 $$
@@ -87,7 +87,7 @@ Thus every point of $\mathbb C^3$ has a preimage.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $F$ is not injective.
 
@@ -106,7 +106,7 @@ while $(0,1,2)\neq(1,0,2)$. Hence $F$ is not injective.
 
 ::: pf-qed
 
-Step <1>2 proves surjectivity and step <1>3 proves failure of injectivity.
+Step [](#s1-2){.pf-ref} proves surjectivity and step [](#s1-3){.pf-ref} proves failure of injectivity.
 
 :::
 

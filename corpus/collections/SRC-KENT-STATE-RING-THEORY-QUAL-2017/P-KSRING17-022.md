@@ -38,7 +38,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The scalar action of $A$ on $R$ is well-defined.
 
@@ -75,7 +75,7 @@ so the action depends only on the residue class modulo $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -97,7 +97,7 @@ Then $S$ is a commutative ring.
 
 ::: pf-proof
 
-The multiplication is well-defined by step <1>1.
+The multiplication is well-defined by step [](#s1-1){.pf-ref}.
 Distributivity follows from distributivity in $A$ and $R$ and from the $A$-module structure.
 
 Commutativity holds because $A$ and $R$ are commutative:
@@ -159,7 +159,7 @@ The second coordinates agree by commutativity of scalar multiplication, so multi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The element
 $$
@@ -192,7 +192,7 @@ Commutativity gives the same identity on the other side.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map
 $$
@@ -223,7 +223,7 @@ Thus $\iota$ is a ring embedding.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The image
 $$
@@ -258,7 +258,7 @@ By commutativity, multiplication on the other side gives the same conclusion. He
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The projection
 $$
@@ -304,7 +304,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -318,7 +318,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, the first isomorphism theorem gives
+By step [](#s1-6){.pf-ref}, the first isomorphism theorem gives
 $$
 S/\ker\pi
 \cong
@@ -339,7 +339,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>2--<1>3 construct a unital ring $S$, steps <1>4--<1>5 embed $R$ as an ideal of $S$, and step <1>7 identifies the quotient.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} construct a unital ring $S$, steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} embed $R$ as an ideal of $S$, and step [](#s1-7){.pf-ref} identifies the quotient.
 
 :::
 

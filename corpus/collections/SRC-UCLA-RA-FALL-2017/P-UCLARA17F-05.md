@@ -63,7 +63,7 @@ holds for almost every \(x\), so replacing \(f(x)\) by \(f(2x)\) does not change
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Split the integral at \(1/2\):
 \[
@@ -85,7 +85,7 @@ This is additivity of the Lebesgue integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In the first integral, the substitution
 \[
@@ -120,7 +120,7 @@ e^{-\pi i n u}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In the second integral, set
 \[
@@ -164,7 +164,7 @@ Substitute these identities.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -179,13 +179,13 @@ f(u)e^{-\pi i n u}\,du}.
 
 ::: pf-proof
 
-Combine steps <1>2--<1>4.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If \(n\) is odd, then
 \[
@@ -200,13 +200,13 @@ For odd \(n\),
 \[
 1+(-1)^n=0.
 \]
-Apply step <1>5.
+Apply step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If \(n=2m\) is even, then
 \[
@@ -227,7 +227,7 @@ e^{-\pi i n u}
 =
 e^{-2\pi i m u}.
 \]
-Thus step <1>5 becomes
+Thus step [](#s1-5){.pf-ref} becomes
 \[
 \widehat f(2m)
 =
@@ -259,9 +259,9 @@ Factor out the highest power of \(2\) dividing the nonzero integer \(n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Iterating step <1>7 gives
+Iterating step [](#s1-7){.pf-ref} gives
 \[
 \boxed{
 \widehat f(n)=\widehat f(q)}.
@@ -280,7 +280,7 @@ successively \(k\) times.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since \(q\) is odd,
 \[
@@ -291,13 +291,13 @@ Since \(q\) is odd,
 
 ::: pf-proof
 
-Apply step <1>6.
+Apply step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Hence
 \[
@@ -312,7 +312,7 @@ n\ne0.
 
 ::: pf-proof
 
-Combine steps <1>9--<1>10.
+Combine steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -329,7 +329,7 @@ has all Fourier coefficients equal to \(0\).
 
 ::: pf-proof
 
-For \(n\ne0\), use step <1>11. For \(n=0\),
+For \(n\ne0\), use step [](#s1-11){.pf-ref}. For \(n=0\),
 \[
 \widehat g(0)
 =
@@ -342,7 +342,7 @@ For \(n\ne0\), use step <1>11. For \(n=0\),
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore
 \[
@@ -376,13 +376,13 @@ for almost every \(x\in[0,1]\).
 
 ::: pf-proof
 
-This is step <1>13 with \(g=f-c\).
+This is step [](#s1-13){.pf-ref} with \(g=f-c\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The same equality holds for almost every \(x\in\mathbb R\).
 
@@ -405,7 +405,7 @@ almost everywhere on \(\mathbb R\).
 
 ::: pf-qed
 
-Step <1>15 is the required conclusion.
+Step [](#s1-15){.pf-ref} is the required conclusion.
 
 :::
 

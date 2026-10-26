@@ -78,7 +78,7 @@ Take $N_{m+1}$ to be its index set.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a strictly increasing sequence of positive integers
 \[
@@ -110,7 +110,7 @@ n_{i+1}>n_i.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every fixed $m\in\mathbb N$,
 \[
@@ -140,20 +140,20 @@ Therefore it converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 This proves part (i).
 
 
 ::: pf-proof
 
-The indices $n_i$ are distinct by step <1>3, and step <1>4 gives convergence for every fixed $m$.
+The indices $n_i$ are distinct by step [](#s1-3){.pf-ref}, and step [](#s1-4){.pf-ref} gives convergence for every fixed $m$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The assertion in part (ii) is false.
 
@@ -218,7 +218,7 @@ Thus the reverse iterated limit exists but is not equal to $0$.
 
 ::: pf-qed
 
-Step <1>5 proves part (i), and step <1>6 disproves the assertion in part (ii).
+Step [](#s1-5){.pf-ref} proves part (i), and step [](#s1-6){.pf-ref} disproves the assertion in part (ii).
 
 :::
 

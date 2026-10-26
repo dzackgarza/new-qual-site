@@ -43,7 +43,7 @@ N=
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -67,7 +67,7 @@ The only nonzero contributions are the entries shown.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -85,7 +85,7 @@ N^3=
 
 ::: pf-proof
 
-Multiply $N$ by the matrix in step <1>1.
+Multiply $N$ by the matrix in step [](#s1-1){.pf-ref}.
 Only the first-row entries in columns $3,4$ of $N$ can combine with the nonzero second-column entries in rows $3,4$ of $N^2$:
 \[
 2a(c-d)+2b(c-d)
@@ -98,7 +98,7 @@ All other entries vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -108,7 +108,7 @@ One has
 
 ::: pf-proof
 
-By step <1>2, the only possibly nonzero entry of $N^3$ lies in column $2$.
+By step [](#s1-2){.pf-ref}, the only possibly nonzero entry of $N^3$ lies in column $2$.
 But the second row of $N$ is zero.
 Therefore
 \[
@@ -119,14 +119,14 @@ N^4=N^3N=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence every eigenvalue of $M$ is equal to $1$.
 
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 (M-I)^4=0.
 \]
@@ -145,7 +145,7 @@ Since $M$ is $4\times4$, its algebraic multiplicity is $4$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The Jordan form of $M$ consists of a single Jordan block if and only if
 \[
@@ -155,7 +155,7 @@ N^3\ne0.
 
 ::: pf-proof
 
-By step <1>4, every Jordan block has eigenvalue $1$.
+By step [](#s1-4){.pf-ref}, every Jordan block has eigenvalue $1$.
 For a nilpotent operator $N=M-I$ on a $4$-dimensional space, the size of the largest Jordan block is the nilpotency index of $N$.
 
 There is a single Jordan block exactly when the unique block has size $4$, which is equivalent to
@@ -164,13 +164,13 @@ N^4=0
 \quad\text{and}\quad
 N^3\ne0.
 \]
-Step <1>3 gives the first condition automatically.
+Step [](#s1-3){.pf-ref} gives the first condition automatically.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the condition in part (a) is
 \[
@@ -182,7 +182,7 @@ Therefore the condition in part (a) is
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 N^3\ne0
 \]
@@ -190,13 +190,13 @@ exactly when
 \[
 2(a+b)(c-d)\ne0.
 \]
-Apply step <1>5.
+Apply step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Under the specialization
 \[
@@ -212,7 +212,7 @@ one has
 
 ::: pf-proof
 
-In step <1>1,
+In step [](#s1-1){.pf-ref},
 \[
 a+b=0
 \]
@@ -233,7 +233,7 @@ Thus every entry of $N^2$ vanishes.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Under the same specialization,
 \[
@@ -260,7 +260,7 @@ Hence the row rank, and therefore the rank, is $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The Jordan form in part (b) is
 \[
@@ -272,9 +272,9 @@ J_2(1)\oplus J_2(1).
 
 ::: pf-proof
 
-By step <1>7, every Jordan block for $N$ has size at most $2$.
+By step [](#s1-7){.pf-ref}, every Jordan block for $N$ has size at most $2$.
 For a nilpotent matrix with square zero, each size-$2$ Jordan block contributes rank $1$, while each size-$1$ zero block contributes rank $0$.
-Step <1>8 gives
+Step [](#s1-8){.pf-ref} gives
 \[
 \operatorname{rank}N=2.
 \]
@@ -290,7 +290,7 @@ J_2(1)\oplus J_2(1).
 
 ::: pf-qed
 
-Step <1>6 answers part (a), and step <1>9 answers part (b).
+Step [](#s1-6){.pf-ref} answers part (a), and step [](#s1-9){.pf-ref} answers part (b).
 
 :::
 

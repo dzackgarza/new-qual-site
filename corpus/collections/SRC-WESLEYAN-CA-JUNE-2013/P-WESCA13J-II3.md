@@ -28,7 +28,7 @@ The statement is false as printed.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -53,7 +53,7 @@ is a polynomial, hence entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -78,7 +78,7 @@ is a nonconstant polynomial, hence entire.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -112,7 +112,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the hypotheses of the printed problem do not force
 $$
@@ -123,7 +123,7 @@ to be constant.
 
 ::: pf-proof
 
-Steps <1>1--<1>3 produce an explicit pair of entire functions
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} produce an explicit pair of entire functions
 $$
 f(z)=z^2,
 \qquad
@@ -143,7 +143,7 @@ is nonconstant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 More generally, every nonconstant entire function
 $$
@@ -199,7 +199,7 @@ Hence no proof of the requested conclusion exists without an additional hypothes
 
 ::: pf-proof
 
-Step <1>4 already contradicts the claimed conclusion, and step <1>5 shows that the failure is not exceptional but occurs for every square of a nonconstant entire function.
+Step [](#s1-4){.pf-ref} already contradicts the claimed conclusion, and step [](#s1-5){.pf-ref} shows that the failure is not exceptional but occurs for every square of a nonconstant entire function.
 
 :::
 

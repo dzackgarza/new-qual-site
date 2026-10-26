@@ -27,7 +27,7 @@ OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z +
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The partial-fraction decomposition is
 $$
@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $|z|<1$,
 $$
@@ -97,7 +97,7 @@ valid for $|z|<2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, for $|z|<1$,
 $$
@@ -115,13 +115,13 @@ $$
 
 ::: pf-proof
 
-Subtract the two series in step <1>2 using step <1>1.
+Subtract the two series in step [](#s1-2){.pf-ref} using step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For $1<|z|<2$,
 $$
@@ -153,14 +153,14 @@ $$
 $$
 which converges when $|z|>1$.
 
-The second expansion is the one from step <1>2 and converges when $|z|<2$.
+The second expansion is the one from step [](#s1-2){.pf-ref} and converges when $|z|<2$.
 Thus both are valid simultaneously on $1<|z|<2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence, for $1<|z|<2$,
 $$
@@ -178,13 +178,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>4 into the partial fractions from step <1>1.
+Substitute step [](#s1-4){.pf-ref} into the partial fractions from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For $|z|>2$,
 $$
@@ -204,7 +204,7 @@ $$
 
 ::: pf-proof
 
-The first series is from step <1>4. For the second,
+The first series is from step [](#s1-4){.pf-ref}. For the second,
 $$
 \frac1{z+2}
 =
@@ -220,7 +220,7 @@ which converges for $|z|>2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, for $|z|>2$,
 $$
@@ -236,13 +236,13 @@ $$
 
 ::: pf-proof
 
-Subtract the two negative-power series in step <1>6.
+Subtract the two negative-power series in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For part (d), set
 $$
@@ -270,7 +270,7 @@ the displayed identity follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For $0<|z+1|<1$,
 $$
@@ -285,7 +285,7 @@ $$
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 f(z)
 =
@@ -306,7 +306,7 @@ must be excluded because it is a pole.
 
 ::: pf-qed
 
-Steps <1>3, <1>5, <1>7, and <1>9 give the requested Laurent series on all
+Steps [](#s1-3){.pf-ref}, [](#s1-5){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1-9){.pf-ref} give the requested Laurent series on all
 four regions.
 
 :::

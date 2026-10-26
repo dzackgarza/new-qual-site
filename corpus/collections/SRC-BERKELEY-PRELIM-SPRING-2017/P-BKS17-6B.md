@@ -54,7 +54,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define the matrix $B$ by
 $$
@@ -78,7 +78,7 @@ The $(i,j)$ entry of $u_kv_k^T$ is $t_i^ks_j^k=(t_is_j)^k$, so the two displayed
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix $B$ has rank at most $r$.
 
@@ -97,7 +97,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $1\leq i,j\leq n$,
 $$
@@ -117,7 +117,7 @@ f(t_is_j)
 =
 \sum_{k=0}^{\infty}a_k(t_is_j)^k.
 $$
-Subtracting the truncation from step <1>1 and using $|f^{(k)}(0)|\leq M$ gives
+Subtracting the truncation from step [](#s1-1){.pf-ref} and using $|f^{(k)}(0)|\leq M$ gives
 $$
 \begin{aligned}
 |A_{ij}-B_{ij}|
@@ -132,7 +132,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every integer $r\geq1$,
 $$
@@ -166,9 +166,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The matrix $B$ from step <1>1 satisfies
+The matrix $B$ from step [](#s1-1){.pf-ref} satisfies
 $$
 \boxed{
 \operatorname{rank}(B)\leq r,
@@ -180,7 +180,7 @@ $$
 
 ::: pf-proof
 
-The rank bound is step <1>2. Combining steps <1>3 and <1>4 gives the entrywise error bound.
+The rank bound is step [](#s1-2){.pf-ref}. Combining steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} gives the entrywise error bound.
 
 :::
 
@@ -188,7 +188,7 @@ The rank bound is step <1>2. Combining steps <1>3 and <1>4 gives the entrywise e
 
 ::: pf-qed
 
-Step <1>5 gives the required matrix and both requested estimates.
+Step [](#s1-5){.pf-ref} gives the required matrix and both requested estimates.
 
 :::
 

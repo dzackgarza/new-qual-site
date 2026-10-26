@@ -129,7 +129,7 @@ Thus $d$ divides $x$ in the polynomial ring.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The element $d$ is a unit of $D$.
 
@@ -164,7 +164,7 @@ Thus $d$ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If $(x,c)$ were principal, then
 $$
@@ -174,7 +174,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 d
 $$
@@ -193,7 +193,7 @@ the conclusion follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The ideal $(x,c)$ is proper.
 
@@ -238,18 +238,18 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The assumption that $(x,c)$ is principal is impossible.
 
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 (x,c)=D[x],
 $$
-while step <1>6 gives
+while step [](#s1-6){.pf-ref} gives
 $$
 (x,c)\ne D[x].
 $$
@@ -259,7 +259,7 @@ This is a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -272,7 +272,7 @@ $$
 
 ::: pf-proof
 
-Step <1>7 rules out the existence of a single generator.
+Step [](#s1-7){.pf-ref} rules out the existence of a single generator.
 
 :::
 
@@ -280,7 +280,7 @@ Step <1>7 rules out the existence of a single generator.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

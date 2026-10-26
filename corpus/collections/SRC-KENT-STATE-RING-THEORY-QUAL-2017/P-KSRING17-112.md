@@ -28,7 +28,7 @@ is a principal ideal domain.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ring $R[x]$ is an integral domain.
 
@@ -41,7 +41,7 @@ Being an integral domain is part of the definition of a principal ideal domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The coefficient ring $R$ is an integral domain.
 
@@ -65,7 +65,7 @@ Since
 $$
 R[x]
 $$
-is an integral domain by step <1>1,
+is an integral domain by step [](#s1-1){.pf-ref},
 $$
 a=0
 \quad\text{or}\quad
@@ -87,7 +87,7 @@ Hence $R$ is an integral domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose, for contradiction, that $R$ is not a field.
 Then there exists a nonzero nonunit
@@ -99,13 +99,13 @@ $$
 ::: pf-proof
 
 In a nonzero commutative ring with identity, being a field is equivalent to every nonzero element being a unit.
-Since $R$ is not a field and is nonzero by step <1>2, some nonzero element is not invertible.
+Since $R$ is not a field and is nonzero by step [](#s1-2){.pf-ref}, some nonzero element is not invertible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal
 $$
@@ -142,7 +142,7 @@ $$
 =
 c\,h(0).
 $$
-Thus $c$ is a unit of $R$, contradicting step <1>3.
+Thus $c$ is a unit of $R$, contradicting step [](#s1-3){.pf-ref}.
 Hence
 $$
 (x,c)\subsetneq R[x].
@@ -152,7 +152,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 $$
@@ -184,7 +184,7 @@ $$
 c
 $$
 is nonzero and has degree $0$.
-Because $R$ is an integral domain by step <1>2,
+Because $R$ is an integral domain by step [](#s1-2){.pf-ref},
 $$
 \deg(fg)
 =
@@ -207,9 +207,9 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The constant $d$ from step <1>5 is a unit of $R$.
+The constant $d$ from step [](#s1-5){.pf-ref} is a unit of $R$.
 
 
 ::: pf-proof
@@ -241,19 +241,19 @@ is a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ideal $(x,c)$ is not principal.
 
 
 ::: pf-proof
 
-If it were principal, steps <1>5--<1>6 would give
+If it were principal, steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} would give
 $$
 (x,c)=(d)=R[x],
 $$
 because a unit generates the whole ring.
-This contradicts properness from step <1>4.
+This contradicts properness from step [](#s1-4){.pf-ref}.
 Thus
 $$
 \boxed{
@@ -266,7 +266,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The assumption that $R$ is not a field contradicts the hypothesis that $R[x]$ is a PID.
 
@@ -274,17 +274,17 @@ The assumption that $R$ is not a field contradicts the hypothesis that $R[x]$ is
 ::: pf-proof
 
 A principal ideal domain has every ideal principal.
-Step <1>7 gives a nonprincipal ideal of
+Step [](#s1-7){.pf-ref} gives a nonprincipal ideal of
 $$
 R[x].
 $$
-This contradiction shows that the assumption in step <1>3 is impossible.
+This contradiction shows that the assumption in step [](#s1-3){.pf-ref} is impossible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore, if
 $$
@@ -299,13 +299,13 @@ is a field.
 
 ::: pf-proof
 
-This is the conclusion of step <1>8.
+This is the conclusion of step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Equivalently,
 $$
@@ -319,7 +319,7 @@ $$
 
 ::: pf-proof
 
-This is the contrapositive of step <1>9.
+This is the contrapositive of step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -327,7 +327,7 @@ This is the contrapositive of step <1>9.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

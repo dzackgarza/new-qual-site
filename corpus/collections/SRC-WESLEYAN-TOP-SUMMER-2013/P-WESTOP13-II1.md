@@ -33,7 +33,7 @@ be their normal closure.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The quotient group $F/N$ is isomorphic to $\ZZ/2\ZZ$.
 
@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently, $N$ is the kernel of the homomorphism
 $$
@@ -77,20 +77,20 @@ The elements $a^2,b^2,ab$ all lie in $\ker\phi$, so
 $$
 N\subseteq\ker\phi.
 $$
-The map $\phi$ is surjective, so $F/\ker\phi$ has order $2$. Step <1>1 shows that $F/N$ also has order $2$. Since $N\subseteq\ker\phi$, equality follows.
+The map $\phi$ is surjective, so $F/\ker\phi$ has order $2$. Step [](#s1-1){.pf-ref} shows that $F/N$ also has order $2$. Since $N\subseteq\ker\phi$, equality follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The corresponding covering has two vertices, say $v_0$ and $v_1$, indexed by the two cosets of $N$ in $F$.
 
 
 ::: pf-proof
 
-For a subgroup of the fundamental group of a graph, the vertices of the associated Schreier covering graph are the right cosets of the subgroup. By step <1>1,
+For a subgroup of the fundamental group of a graph, the vertices of the associated Schreier covering graph are the right cosets of the subgroup. By step [](#s1-1){.pf-ref},
 $$
 [F:N]=2.
 $$
@@ -100,20 +100,20 @@ Thus there are exactly two vertices.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Both the $a$-edge and the $b$-edge interchange the two vertices.
 
 
 ::: pf-proof
 
-In the quotient $F/N\cong\ZZ/2\ZZ$, both $a$ and $b$ represent the nonzero element by step <1>2. Right multiplication by either generator therefore swaps the two cosets.
+In the quotient $F/N\cong\ZZ/2\ZZ$, both $a$ and $b$ represent the nonzero element by step [](#s1-2){.pf-ref}. Right multiplication by either generator therefore swaps the two cosets.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence the covering graph is the two-sheeted graph with vertices $v_0,v_1$ and four edges:
 $$
@@ -130,7 +130,7 @@ where each $a_j$ maps homeomorphically to the $a$-circle and each $b_j$ maps hom
 
 ::: pf-proof
 
-At each vertex of a covering of $S^1\vee S^1$, there must be exactly one outgoing lift of the positively oriented $a$-edge and exactly one outgoing lift of the positively oriented $b$-edge. Step <1>4 says that each such lift ends at the other sheet. Thus the four listed edges give the entire covering.
+At each vertex of a covering of $S^1\vee S^1$, there must be exactly one outgoing lift of the positively oriented $a$-edge and exactly one outgoing lift of the positively oriented $b$-edge. Step [](#s1-4){.pf-ref} says that each such lift ends at the other sheet. Thus the four listed edges give the entire covering.
 
 Ignoring orientation, this is a graph with two vertices joined by four parallel edges, two labeled $a$ and two labeled $b$.
 
@@ -138,7 +138,7 @@ Ignoring orientation, this is a graph with two vertices joined by four parallel 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 This graph is a connected regular two-sheeted covering of $S^1\vee S^1$, and its associated subgroup is exactly $N$.
 
@@ -157,7 +157,7 @@ whose stabilizer of the identity coset is $N$. Since $N$ is normal, the covering
 
 ::: pf-qed
 
-Steps <1>3--<1>6 completely specify the requested picture and verify that it corresponds to the given normal subgroup.
+Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} completely specify the requested picture and verify that it corresponds to the given normal subgroup.
 
 :::
 

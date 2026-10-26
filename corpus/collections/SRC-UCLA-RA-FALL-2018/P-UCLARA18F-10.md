@@ -25,7 +25,7 @@ Problem 10. For $-1<\beta<1$, evaluate
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The improper integral converges for every \(-1<\beta<1\).
 
@@ -46,7 +46,7 @@ and \(\int_1^\infty x^{\beta-2}\,dx<\infty\) because \(\beta<1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -80,7 +80,7 @@ The residue theorem therefore gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The contributions from the outer and inner semicircles tend to \(0\) as \(R\to\infty\) and \(\varepsilon\to0\), respectively.
 
@@ -105,7 +105,7 @@ because \(\beta>-1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The two straight sides of the contour satisfy
 \[
@@ -129,7 +129,7 @@ Adding the positive-axis contribution proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -141,7 +141,7 @@ Therefore
 
 ::: pf-proof
 
-Let \(R\to\infty\) and \(\varepsilon\to0\) in step <1>2. By steps <1>1, <1>3, and <1>4,
+Let \(R\to\infty\) and \(\varepsilon\to0\) in step [](#s1-2){.pf-ref}. By steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref},
 \[
 \bigl(1+e^{i\pi\beta}\bigr)
 \int_0^\infty\frac{x^\beta}{1+x^2}\,dx
@@ -160,7 +160,7 @@ and \(-1<\beta<1\) implies \(\cos(\pi\beta/2)>0\), division gives the displayed 
 
 ::: pf-qed
 
-Step <1>5 is the required evaluation.
+Step [](#s1-5){.pf-ref} is the required evaluation.
 
 :::
 

@@ -29,7 +29,7 @@ Calculate
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Among the poles of
 \[
@@ -59,7 +59,7 @@ so these two poles lie outside $D$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residue of $h$ at $0$ is
 \[
@@ -81,7 +81,7 @@ The pole at $0$ is simple, and therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required integral is
 \[
@@ -92,8 +92,8 @@ The required integral is
 
 ::: pf-proof
 
-The boundary is positively oriented, and by step <1>1 the only enclosed pole
-is $0$. Hence the residue theorem and step <1>2 give
+The boundary is positively oriented, and by step [](#s1-1){.pf-ref} the only enclosed pole
+is $0$. Hence the residue theorem and step [](#s1-2){.pf-ref} give
 \[
 \int_{\partial D}\frac{\cos z}{z(z^2+8)}\,dz
 =2\pi i\operatorname{Res}(0,h)
@@ -107,7 +107,7 @@ is $0$. Hence the residue theorem and step <1>2 give
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

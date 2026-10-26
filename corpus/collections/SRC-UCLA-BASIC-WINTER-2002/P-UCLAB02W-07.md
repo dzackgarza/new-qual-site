@@ -48,7 +48,7 @@ Y=F(U)\cap U.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $Y$ is nonempty.
 
@@ -72,7 +72,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $F(U)$ is open in $\mathbb R^2$.
 
@@ -109,14 +109,14 @@ the set $F(U)$ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $Y$ is open in the subspace $U$.
 
 
 ::: pf-proof
 
-By step <1>2, $F(U)$ is open in $\mathbb R^2$.
+By step [](#s1-2){.pf-ref}, $F(U)$ is open in $\mathbb R^2$.
 Therefore
 \[
 Y=F(U)\cap U
@@ -127,7 +127,7 @@ is open in the subspace topology on $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $(y_n)$ be a sequence in $Y$ converging to a point
 \[
@@ -151,7 +151,7 @@ Every $y_n$ belongs to $F(U)$ by definition of $Y$, so such an $x_n$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The sequence $(x_n)$ has a convergent subsequence
 \[
@@ -179,7 +179,7 @@ Hence Bolzano--Weierstrass gives a convergent subsequence with limit in $\overli
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -207,7 +207,7 @@ y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The limit point $x$ lies in $U$, not on $\partial U$.
 
@@ -222,7 +222,7 @@ Then the boundary hypothesis gives
 \[
 \|F(x)\|\ge1.
 \]
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 F(x)=y.
 \]
@@ -245,7 +245,7 @@ so $x\in U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The set $Y$ is closed in $U$.
 
@@ -260,7 +260,7 @@ converge to
 \[
 y\in U.
 \]
-Steps <1>4--<1>7 produce
+Steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} produce
 \[
 x\in U
 \]
@@ -278,7 +278,7 @@ Thus $Y$ contains every limit in $U$ of sequences from $Y$, so it is closed in t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -289,7 +289,7 @@ Y=U.
 ::: pf-proof
 
 The open unit disk $U$ is connected.
-By steps <1>1, <1>3, and <1>8, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$.
+By steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-8){.pf-ref}, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$.
 Connectedness therefore forces
 \[
 Y=U.
@@ -299,7 +299,7 @@ Y=U.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -313,7 +313,7 @@ Since
 \[
 Y=F(U)\cap U,
 \]
-step <1>9 gives
+step [](#s1-9){.pf-ref} gives
 \[
 F(U)\cap U=U.
 \]
@@ -328,7 +328,7 @@ U\subseteq F(U).
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

@@ -32,7 +32,7 @@ for almost every $x\in X$ and every $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $\varepsilon>0$, if
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\varepsilon>0$,
 $$
@@ -80,7 +80,7 @@ Because $f_n\to0$ in measure,
 $$
 \mu(E_{n,\varepsilon})\longrightarrow0
 $$
-for every fixed $\varepsilon>0$. Taking the upper limit in the estimate from step <1>1 therefore gives
+for every fixed $\varepsilon>0$. Taking the upper limit in the estimate from step [](#s1-1){.pf-ref} therefore gives
 $$
 \limsup_{n\to\infty}\int_X\abs{f_n}\,d\mu
 \leq\varepsilon\mu(X).
@@ -90,7 +90,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -104,7 +104,7 @@ The quantity
 $$
 L=\limsup_{n\to\infty}\int_X\abs{f_n}\,d\mu
 $$
-is nonnegative. Step <1>2 gives
+is nonnegative. Step [](#s1-2){.pf-ref} gives
 $$
 0\leq L\leq\varepsilon\mu(X)
 $$
@@ -116,7 +116,7 @@ for every $\varepsilon>0$. Since $\mu(X)<\infty$, letting $\varepsilon\downarrow
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

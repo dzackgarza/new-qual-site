@@ -71,7 +71,7 @@ For \(h\in\mathbb R^3\), write
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(\varphi\in C_c(\mathbb R^3)\), then
 \[
@@ -106,7 +106,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(u\in L^q(\mathbb R^3)\),
 \[
@@ -144,13 +144,13 @@ Translations preserve the \(L^q\)-norm, so
 \|\tau_h\varphi-\varphi\|_q.
 \end{aligned}
 \]
-By step <1>1, the final term is \(<\varepsilon\) for sufficiently small \(h\). Since \(\varepsilon\) is arbitrary, the result follows.
+By step [](#s1-1){.pf-ref}, the final term is \(<\varepsilon\) for sufficiently small \(h\). Since \(\varepsilon\) is arbitrary, the result follows.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -190,7 +190,7 @@ The \(T_x\)-translations satisfy the same norm-continuity as \(\tau_h\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For \(x,h\in\mathbb R^3\),
 \[
@@ -204,13 +204,13 @@ For \(x,h\in\mathbb R^3\),
 
 ::: pf-proof
 
-Subtract the two integral expressions from step <1>3 and apply Hölder's inequality.
+Subtract the two integral expressions from step [](#s1-3){.pf-ref} and apply Hölder's inequality.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The norm on the right satisfies
 \[
@@ -236,7 +236,7 @@ T_{x+h}=T_xT_h.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -248,7 +248,7 @@ as \(h\to0\).
 
 ::: pf-proof
 
-By steps <1>4--<1>5,
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 \[
 |(f*g)(x+h)-(f*g)(x)|
 \le
@@ -256,13 +256,13 @@ By steps <1>4--<1>5,
 \,
 \|T_h\widetilde g-\widetilde g\|_q.
 \]
-The final norm tends to \(0\) by step <1>2.
+The final norm tends to \(0\) by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -273,7 +273,7 @@ f*g\in C(\mathbb R^3)}.
 
 ::: pf-proof
 
-The point \(x\) was arbitrary in step <1>6.
+The point \(x\) was arbitrary in step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -342,7 +342,7 @@ f_0*(g-g_0).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -377,7 +377,7 @@ The harmless \(+1\) terms in the denominators ensure the strict inequalities eve
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Since \(f_0\) and \(g_0\) have compact support,
 \[
@@ -409,7 +409,7 @@ which is compact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence there exists \(R>0\) such that
 \[
@@ -421,13 +421,13 @@ Hence there exists \(R>0\) such that
 
 ::: pf-proof
 
-A compact subset of \(\mathbb R^3\) is bounded. Choose \(R\) containing the compact support from step <1>11.
+A compact subset of \(\mathbb R^3\) is bounded. Choose \(R\) containing the compact support from step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 For \(|x|>R\),
 \[
@@ -438,7 +438,7 @@ For \(|x|>R\),
 
 ::: pf-proof
 
-By step <1>12,
+By step [](#s1-12){.pf-ref},
 \[
 (f_0*g_0)(x)=0.
 \]
@@ -452,13 +452,13 @@ Hence
 <
 \varepsilon
 \]
-by step <1>10.
+by step [](#s1-10){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -470,7 +470,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>13 is the definition of vanishing at infinity.
+Step [](#s1-13){.pf-ref} is the definition of vanishing at infinity.
 
 :::
 
@@ -478,7 +478,7 @@ Step <1>13 is the definition of vanishing at infinity.
 
 ::: pf-qed
 
-Step <1>7 proves part (a), and step <1>14 proves part (b).
+Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
 
 :::
 

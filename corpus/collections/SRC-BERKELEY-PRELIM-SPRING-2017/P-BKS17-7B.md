@@ -49,7 +49,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -83,7 +83,7 @@ this is precisely $X^T+X=C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix $C$ is symmetric, and there is a unique upper triangular matrix $X$ satisfying $X^T+X=C$; its entries are
 $$
@@ -112,9 +112,9 @@ Now let $X$ be upper triangular. If $i<j$, then $X_{ji}=0$, so the $(i,j)$ entry
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The unique required matrix is $E=XR$, where $X$ is given in step <1>2. Equivalently, its entries are
+The unique required matrix is $E=XR$, where $X$ is given in step [](#s1-2){.pf-ref}. Equivalently, its entries are
 $$
 \boxed{
 E_{ij}
@@ -142,7 +142,7 @@ E_{ij}
 \frac12 C_{ii}R_{ij}
 +\sum_{k=i+1}^{j}C_{ik}R_{kj},
 $$
-using step <1>2. Step <1>1 shows that this $E$ satisfies the original equation. Uniqueness of $X$ in step <1>2 and the bijection $E\leftrightarrow ER^{-1}$ in step <1>1 imply uniqueness of $E$.
+using step [](#s1-2){.pf-ref}. Step [](#s1-1){.pf-ref} shows that this $E$ satisfies the original equation. Uniqueness of $X$ in step [](#s1-2){.pf-ref} and the bijection $E\leftrightarrow ER^{-1}$ in step [](#s1-1){.pf-ref} imply uniqueness of $E$.
 
 :::
 
@@ -150,7 +150,7 @@ using step <1>2. Step <1>1 shows that this $E$ satisfies the original equation. 
 
 ::: pf-qed
 
-Step <1>3 gives the explicit entries and proves existence and uniqueness.
+Step [](#s1-3){.pf-ref} gives the explicit entries and proves existence and uniqueness.
 
 :::
 

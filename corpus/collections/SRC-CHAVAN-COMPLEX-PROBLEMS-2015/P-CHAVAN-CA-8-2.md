@@ -24,7 +24,7 @@ for some $a\in\CC$ and $\alpha\in\RR$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that a nonconstant entire function $f$
 satisfies $f(\CC)\subseteq\CC\setminus L$. Then
@@ -46,7 +46,7 @@ $[0,\infty)$ and preserves holomorphy and nonconstancy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is an entire function $h$ such that
 $$
@@ -80,7 +80,7 @@ whose argument lies in $(0,\pi)$; hence $\operatorname{Im}h(z)>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function
 $$
@@ -97,31 +97,31 @@ $$
 =e^{-\operatorname{Im}h(z)}
 <1
 $$
-by step <1>2.
+by step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function $f$ is constant.
 
 
 ::: pf-proof
 
-Liouville's theorem applied to step <1>3 makes $k$ constant. Since
+Liouville's theorem applied to step [](#s1-3){.pf-ref} makes $k$ constant. Since
 $$
 k'(z)=ih'(z)e^{ih(z)}
 $$
 and $e^{ih(z)}$ never vanishes, $h'\equiv0$. Thus $h$ is constant, so
-$g=h^2$ is constant, and step <1>1 then implies that $f$ is constant.
+$g=h^2$ is constant, and step [](#s1-1){.pf-ref} then implies that $f$ is constant.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 No nonconstant entire function can have range contained in the complement
 of a half-line.
@@ -129,7 +129,7 @@ of a half-line.
 
 ::: pf-proof
 
-Step <1>4 contradicts the nonconstancy assumed in step <1>1.
+Step [](#s1-4){.pf-ref} contradicts the nonconstancy assumed in step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -137,7 +137,7 @@ Step <1>4 contradicts the nonconstancy assumed in step <1>1.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

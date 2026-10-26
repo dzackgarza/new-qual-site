@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The plane
 $$
@@ -111,7 +111,7 @@ whose eigenvalues are $0$ and $9$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 (a,b)\longmapsto(a+2b,4a+8b).
 $$
@@ -168,7 +168,7 @@ gives $b=4a$, so choose $(a,b)=(1,4)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The three eigenvectors are mutually orthogonal and therefore form a
 basis of $\mathbb R^3$.
@@ -193,7 +193,7 @@ All three vectors are nonzero, so they are linearly independent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 A transition matrix whose columns are eigenvectors is
 $$
@@ -210,21 +210,21 @@ $$
 
 ::: pf-proof
 
-The columns are respectively $v_{-1},v_0,v_9$. By step <1>5 they form a
+The columns are respectively $v_{-1},v_0,v_9$. By step [](#s1-5){.pf-ref} they form a
 basis, so $P$ is invertible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Step <1>6 gives the requested change-of-basis matrix. If the convention is
+Step [](#s1-6){.pf-ref} gives the requested change-of-basis matrix. If the convention is
 that coordinates transform from the original basis to the eigenbasis, the
 coordinate-change matrix is $P^{-1}$.
 
@@ -232,7 +232,7 @@ coordinate-change matrix is $P^{-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In the eigenbasis,
 $$
@@ -263,20 +263,20 @@ Multiply on the left by $P^{-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>8.
+This is step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Each span of a subset of
 $$
@@ -295,7 +295,7 @@ to itself.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Conversely, every invariant subspace of $A$ is the span of a subset of
 the three eigendirections.
@@ -347,7 +347,7 @@ eigendirections that occur in it.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Hence the invariant subspaces are exactly
 $$
@@ -368,21 +368,21 @@ $$
 
 ::: pf-proof
 
-Step <1>10 shows that every displayed subspace is invariant, and step <1>11
+Step [](#s1-10){.pf-ref} shows that every displayed subspace is invariant, and step [](#s1-11){.pf-ref}
 shows that no others occur.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-This is step <1>12.
+This is step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -390,7 +390,7 @@ This is step <1>12.
 
 ::: pf-qed
 
-Steps <1>7, <1>9, and <1>13 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-13){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

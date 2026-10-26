@@ -24,7 +24,7 @@ The point $0$ is an isolated singularity of $f$, so it is removable, a pole, or 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The singularity at $0$ is not removable.
 
@@ -49,7 +49,7 @@ Hence $f\equiv0$ on $\CC\setminus\{0\}$, contradicting the hypothesis that $f$ i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The singularity at $0$ is not a pole.
 
@@ -84,14 +84,14 @@ contradicting $g(0)\ne0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore $0$ is an essential singularity of $f$.
 
 
 ::: pf-proof
 
-An isolated singularity is exactly one of removable, pole, or essential. Steps <1>1 and <1>2 exclude the first two possibilities. Hence
+An isolated singularity is exactly one of removable, pole, or essential. Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} exclude the first two possibilities. Hence
 $$
 \boxed{0\text{ is an essential singularity of }f.}
 $$
@@ -102,7 +102,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

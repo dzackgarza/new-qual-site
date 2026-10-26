@@ -32,7 +32,7 @@ of $V$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $w\in W$, define
 $$
@@ -49,7 +49,7 @@ The displayed sum is a finite linear combination of basis vectors of $V$, so it 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $v\in V$ and $w\in W$,
 $$
@@ -98,7 +98,7 @@ $$
 =
 \sum_{j=1}^n v_j\langle T(e_j),w\rangle_W.
 $$
-On the other hand, by step <1>1 and orthonormality,
+On the other hand, by step [](#s1-1){.pf-ref} and orthonormality,
 $$
 \begin{aligned}
 \langle v,T^t(w)\rangle_V
@@ -117,7 +117,7 @@ Thus the two sides are equal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map satisfying the adjoint identity is unique.
 
@@ -152,7 +152,7 @@ so $A(w)=B(w)$. Since $w$ was arbitrary, $A=B$.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 construct a linear map $T^t$ satisfying the required identity, and step <1>4 proves uniqueness.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} construct a linear map $T^t$ satisfying the required identity, and step [](#s1-4){.pf-ref} proves uniqueness.
 
 :::
 

@@ -22,7 +22,7 @@ Compute the limit $\lim_{x \to 0} (x^{-2} - \sin(x)^{-2})$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Combine the two fractions:
 \[
@@ -64,7 +64,7 @@ Apply the difference-of-squares identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -93,7 +93,7 @@ Multiply the three factors on the right:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The first factor satisfies
 \[
@@ -121,7 +121,7 @@ Square.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The second factor satisfies
 \[
@@ -169,7 +169,7 @@ Both numerator and denominator tend to \(0\). Apply l’Hôpital’s rule once.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Applying l’Hôpital’s rule again,
 \[
@@ -189,7 +189,7 @@ Again both numerator and denominator tend to \(0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -207,7 +207,7 @@ Using
 \[
 \frac{\sin x}{x}\to1,
 \]
-step <1>7 gives
+step [](#s1-7){.pf-ref} gives
 \[
 \lim_{x\to0}
 \frac{-\sin x}{6x}
@@ -219,7 +219,7 @@ step <1>7 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Combining the three factor limits,
 \[
@@ -238,13 +238,13 @@ x^{-2}-\sin(x)^{-2}
 
 ::: pf-proof
 
-Use steps <1>1, <1>3, <1>4, <1>5, and <1>8.
+Use steps [](#s1-1){.pf-ref}, [](#s1-3){.pf-ref}, [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}, and [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -260,7 +260,7 @@ x^{-2}-\sin(x)^{-2}
 
 ::: pf-proof
 
-This is step <1>9.
+This is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -268,7 +268,7 @@ This is step <1>9.
 
 ::: pf-qed
 
-Step <1>10 is the requested limit.
+Step [](#s1-10){.pf-ref} is the requested limit.
 
 :::
 

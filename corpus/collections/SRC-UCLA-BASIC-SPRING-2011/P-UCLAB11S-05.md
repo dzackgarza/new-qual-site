@@ -23,7 +23,7 @@ b\in(\ker A^T)^\perp.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One always has
 \[
@@ -71,9 +71,9 @@ y\in(\ker A^T)^\perp.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-The two spaces in step <1>1 have the same dimension.
+The two spaces in step [](#s1-1){.pf-ref} have the same dimension.
 
 
 ::: pf-proof
@@ -111,7 +111,7 @@ n-\dim\ker A^T
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -125,14 +125,14 @@ Therefore
 
 ::: pf-proof
 
-Step <1>1 gives an inclusion between finite-dimensional subspaces, and step <1>2 shows that they have equal dimension.
+Step [](#s1-1){.pf-ref} gives an inclusion between finite-dimensional subspaces, and step [](#s1-2){.pf-ref} shows that they have equal dimension.
 Hence they are equal.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The equation
 \[
@@ -155,7 +155,7 @@ Ax=b.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently,
 \[
@@ -169,7 +169,7 @@ b\in(\ker A^T)^\perp.
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -177,7 +177,7 @@ Combine steps <1>3 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required equivalence.
+Step [](#s1-5){.pf-ref} is the required equivalence.
 
 :::
 

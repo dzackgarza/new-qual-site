@@ -21,7 +21,7 @@ Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } | 2 n + 1 | e
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The absolute values
 $$
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -63,13 +63,13 @@ $$
 
 ::: pf-proof
 
-Group the equal positive and negative odd contributions from step <1>1.
+Group the equal positive and negative odd contributions from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Put
 $$
@@ -98,13 +98,13 @@ e^{-a}(e^{-2a})^m
 =
 e^{-a}q^m
 $$
-from step <1>2.
+from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The geometric-series identities are
 $$
@@ -129,7 +129,7 @@ multiply by $q$ to obtain the second.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 \begin{aligned}
 \sum_{m=0}^{\infty}(2m+1)q^m
@@ -162,7 +162,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -176,13 +176,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>5 into step <1>3 and restore $q=e^{-2a}$.
+Substitute step [](#s1-5){.pf-ref} into step [](#s1-3){.pf-ref} and restore $q=e^{-2a}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Using
 $$
@@ -208,7 +208,7 @@ $$
 
 ::: pf-proof
 
-Substitute the two hyperbolic identities into step <1>6. The common factor
+Substitute the two hyperbolic identities into step [](#s1-6){.pf-ref}. The common factor
 $4e^{-2a}$ cancels between numerator and denominator.
 
 :::
@@ -217,7 +217,7 @@ $4e^{-2a}$ cancels between numerator and denominator.
 
 ::: pf-qed
 
-Step <1>7 is the required closed form.
+Step [](#s1-7){.pf-ref} is the required closed form.
 
 :::
 

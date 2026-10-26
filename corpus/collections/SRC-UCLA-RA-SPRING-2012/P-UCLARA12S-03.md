@@ -30,7 +30,7 @@ For each $n$, let $A_n:L^1([0,1])\to L^1([0,1])$ denote the averaging operator $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each $A_n$ is an $L^1$-contraction:
 $$
@@ -69,7 +69,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If $g\in C([0,1])$, then
 $$
@@ -109,7 +109,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $f\in L^1([0,1])$,
 $$
@@ -123,7 +123,7 @@ Fix $\varepsilon>0$. Since continuous functions are dense in $L^1([0,1])$, choos
 $$
 \norm{f-g}_{L^1}<\varepsilon.
 $$
-By step <1>1 and the triangle inequality,
+By step [](#s1-1){.pf-ref} and the triangle inequality,
 $$
 \begin{aligned}
 \norm{A_nf-f}_{L^1}
@@ -135,7 +135,7 @@ $$
 2\varepsilon+\norm{A_ng-g}_{L^1}.
 \end{aligned}
 $$
-By step <1>2, the last term tends to zero. Thus
+By step [](#s1-2){.pf-ref}, the last term tends to zero. Thus
 $$
 \limsup_{n\to\infty}\norm{A_nf-f}_{L^1}
 \le2\varepsilon.
@@ -148,7 +148,7 @@ Since $\varepsilon>0$ is arbitrary, the limit is zero.
 
 ::: pf-qed
 
-Step <1>3 is exactly the required $L^1$ convergence.
+Step [](#s1-3){.pf-ref} is exactly the required $L^1$ convergence.
 
 :::
 

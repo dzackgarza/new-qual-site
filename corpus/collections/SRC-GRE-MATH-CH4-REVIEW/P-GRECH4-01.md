@@ -34,7 +34,7 @@ such that $y = 0$ when $x = 0$. What is the value of $f(1)$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every solution of the differential equation has the form
 $$
@@ -60,14 +60,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The initial condition forces $C=0$.
 
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 0=f(0)=0-\arctan0+C=C.
 $$
@@ -76,7 +76,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -87,7 +87,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Using step <1>2,
+Using step [](#s1-2){.pf-ref},
 $$
 f(1)
 =1-\arctan1
@@ -101,7 +101,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
 
 :::
 

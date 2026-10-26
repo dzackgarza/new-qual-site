@@ -56,7 +56,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If the three task-teams have sizes $2,2,2$, then there are
 $$
@@ -73,7 +73,7 @@ Choose the two students for the first task, then two of the remaining four for t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If the task-teams have sizes $3,2,1$ in some fixed order, then there are
 $$
@@ -90,7 +90,7 @@ Choose the three students for the task receiving the $3$-person team and then tw
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If the task-teams have sizes $4,1,1$ in some fixed order, then there are
 $$
@@ -107,20 +107,20 @@ Choose the four students for the $4$-person team and then one of the remaining t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence among the listed numbers, exactly I and II are possible.
 
 
 ::: pf-proof
 
-Steps <1>2--<1>4 show that the possible counts are $90$, $60$, and $30$. Thus I and II occur, while III, which is $45$, does not.
+Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that the possible counts are $90$, $60$, and $30$. Thus I and II occur, while III, which is $45$, does not.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the answer is
 $$
@@ -131,7 +131,7 @@ which is choice (B).
 
 ::: pf-proof
 
-This is the conclusion of step <1>5.
+This is the conclusion of step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -139,7 +139,7 @@ This is the conclusion of step <1>5.
 
 ::: pf-qed
 
-Step <1>6 gives the required choice.
+Step [](#s1-6){.pf-ref} gives the required choice.
 
 :::
 

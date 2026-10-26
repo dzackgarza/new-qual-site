@@ -22,7 +22,7 @@ Define what it means for a function $f:U\to\mathbb C$ to be uniformly continuous
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f:U\to\CC$ is **uniformly continuous on $U$** if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $z,w\in U$,
 $$
@@ -55,7 +55,7 @@ In pointwise continuity the permissible $\delta$ may depend on the base point. U
 
 ::: pf-qed
 
-Step <1>1 is the requested definition.
+Step [](#s1-1){.pf-ref} is the requested definition.
 
 :::
 

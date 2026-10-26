@@ -65,7 +65,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\varphi$ is surjective.
 
@@ -96,7 +96,7 @@ lies in the image.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -126,7 +126,7 @@ lies in the kernel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -167,7 +167,7 @@ divides $f$ in $\QQ[x]$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The polynomial
 $$
@@ -193,9 +193,9 @@ whose greatest common divisor is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The divisibility in step <1>4 already holds in
+The divisibility in step [](#s1-4){.pf-ref} already holds in
 $$
 \ZZ[x].
 $$
@@ -203,7 +203,7 @@ $$
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 $$
 2x-1
 $$
@@ -239,7 +239,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -251,8 +251,8 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives one inclusion.
-Steps <1>4--<1>6 show that every element of the kernel is divisible by
+Step [](#s1-3){.pf-ref} gives one inclusion.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} show that every element of the kernel is divisible by
 $$
 2x-1,
 $$
@@ -262,7 +262,7 @@ giving the reverse inclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -276,7 +276,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>2 and <1>7, $\varphi$ is surjective with kernel
+By steps [](#s1-2){.pf-ref} and [](#s1-7){.pf-ref}, $\varphi$ is surjective with kernel
 $$
 (2x-1).
 $$
@@ -286,7 +286,7 @@ The first isomorphism theorem gives the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For part (b), set
 $$
@@ -333,7 +333,7 @@ impossible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The ideal $I$ is proper.
 
@@ -390,7 +390,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -406,7 +406,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>9 and <1>10.
+Combine steps [](#s1-9){.pf-ref} and [](#s1-10){.pf-ref}.
 
 :::
 
@@ -414,7 +414,7 @@ Combine steps <1>9 and <1>10.
 
 ::: pf-qed
 
-Step <1>8 proves part (a), and step <1>11 proves part (b).
+Step [](#s1-8){.pf-ref} proves part (a), and step [](#s1-11){.pf-ref} proves part (b).
 
 :::
 

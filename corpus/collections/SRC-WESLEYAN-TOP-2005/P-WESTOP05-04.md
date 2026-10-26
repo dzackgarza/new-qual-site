@@ -27,7 +27,7 @@ Let \(\mathbb S\) denote the Sorgenfrey line.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Sorgenfrey line is regular.
 
@@ -57,7 +57,7 @@ inside a prescribed neighborhood, which is regularity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Sorgenfrey line is Lindelöf.
 
@@ -118,20 +118,20 @@ countable subcover of \(\mathcal U\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore \(\mathbb S\) is normal.
 
 
 ::: pf-proof
 
-A regular Lindelöf space is normal. Apply steps <1>1--<1>2.
+A regular Lindelöf space is normal. Apply steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Sorgenfrey plane
 \[
@@ -156,7 +156,7 @@ contains a pair of rational points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The anti-diagonal
 \[
@@ -199,7 +199,7 @@ Thus the complement of \(D\) is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The subspace \(D\) is discrete.
 
@@ -231,7 +231,7 @@ t=x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence \(D\) is a closed discrete subspace of cardinality
 \[
@@ -241,7 +241,7 @@ Hence \(D\) is a closed discrete subspace of cardinality
 
 ::: pf-proof
 
-Closedness is step <1>5, discreteness is step <1>6, and the map
+Closedness is step [](#s1-5){.pf-ref}, discreteness is step [](#s1-6){.pf-ref}, and the map
 \[
 x\longmapsto(x,-x)
 \]
@@ -251,7 +251,7 @@ is a bijection from \(\mathbb R\) to \(D\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 A separable space has at most \(\mathfrak c\) continuous functions
 into \([0,1]\).
@@ -281,7 +281,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If \(\mathbb S^2\) were normal, then it would admit at least
 \[
@@ -320,7 +320,7 @@ there would be at least \(2^{\mathfrak c}\) such functions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 This is impossible because
 \[
@@ -335,13 +335,13 @@ Cantor's theorem gives
 2^\kappa>\kappa
 \]
 for every cardinal \(\kappa\). Apply it to \(\kappa=\mathfrak c\), and
-compare steps <1>4, <1>8, and <1>9.
+compare steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -353,8 +353,8 @@ Therefore
 
 ::: pf-proof
 
-Normality of each factor is step <1>3, while nonnormality of the product is
-steps <1>4--<1>10.
+Normality of each factor is step [](#s1-3){.pf-ref}, while nonnormality of the product is
+steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -367,7 +367,7 @@ The Sorgenfrey line is completely regular Hausdorff.
 
 ::: pf-proof
 
-The Sorgenfrey line is normal by step <1>3 and Hausdorff. Every normal
+The Sorgenfrey line is normal by step [](#s1-3){.pf-ref} and Hausdorff. Every normal
 Hausdorff space is completely regular by Urysohn's lemma.
 
 :::
@@ -410,7 +410,7 @@ which is compact Hausdorff.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 The ambient space \(X\) is normal, but the embedded subspace \(Y\) is
 not normal.
@@ -419,26 +419,26 @@ not normal.
 ::: pf-proof
 
 Compact Hausdorff spaces are normal. The subspace \(Y\cong\mathbb S^2\) is
-not normal by step <1>11.
+not normal by step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Thus this \(X\) and \(Y\subseteq X\) answer part \(2\).
 
 
 ::: pf-proof
 
-Step <1>15 gives exactly the requested phenomenon.
+Step [](#s1-15){.pf-ref} gives exactly the requested phenomenon.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The interval
 \[
@@ -456,7 +456,7 @@ It is compact by Heine--Borel. Every neighborhood of every point of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 The space
 \[
@@ -475,7 +475,7 @@ Heine--Borel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Every point \(1/n\) is isolated in \(K\).
 
@@ -490,7 +490,7 @@ the singleton \(\{1/n\}\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 The set of isolated points
 \[
@@ -508,7 +508,7 @@ Thus its closure is all of \(K\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 The space \(D^*\) is infinite compact Hausdorff.
 
@@ -523,7 +523,7 @@ Hausdorff, and noncompact.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 The point \(\infty\) has no countable local base.
 
@@ -560,20 +560,20 @@ is a neighborhood of \(\infty\), but \(d\in U_n\) for every \(n\), so no
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Thus \(D^*\) answers part \(4\).
 
 
 ::: pf-proof
 
-Use steps <1>21--<1>22.
+Use steps [](#s1-21){.pf-ref} through [](#s1-22){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 The space \(D\) is first countable.
 
@@ -590,7 +590,7 @@ is a one-element local base.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 The space \(D\) is not second countable.
 
@@ -613,20 +613,20 @@ at least \(|D|\), which is uncountable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Therefore an uncountable discrete space answers part \(5\).
 
 
 ::: pf-proof
 
-Combine steps <1>24--<1>25.
+Combine steps [](#s1-24){.pf-ref} through [](#s1-25){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 The Sorgenfrey line is separable.
 
@@ -644,7 +644,7 @@ contains a rational point.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 The Sorgenfrey line is not second countable.
 
@@ -666,28 +666,28 @@ contain \(x\). Thus a basis has at least continuum many elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-29}
 
 Hence the Sorgenfrey line is not metrizable.
 
 
 ::: pf-proof
 
-Every separable metric space is second countable. Steps <1>27--<1>28
+Every separable metric space is second countable. Steps [](#s1-27){.pf-ref} through [](#s1-28){.pf-ref}
 contradict this consequence.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-30}
 
 Therefore the Sorgenfrey line answers part \(6\).
 
 
 ::: pf-proof
 
-It is separable by step <1>27 and nonmetrizable by step <1>29.
+It is separable by step [](#s1-27){.pf-ref} and nonmetrizable by step [](#s1-29){.pf-ref}.
 
 :::
 
@@ -695,7 +695,7 @@ It is separable by step <1>27 and nonmetrizable by step <1>29.
 
 ::: pf-qed
 
-Steps <1>11, <1>16, <1>17--<1>20, <1>23, <1>26, and <1>30 provide the six
+Steps [](#s1-11){.pf-ref}, [](#s1-16){.pf-ref}, [](#s1-17){.pf-ref} through [](#s1-20){.pf-ref}, [](#s1-23){.pf-ref}, and [](#s1-26){.pf-ref}, and [](#s1-30){.pf-ref} provide the six
 requested Hausdorff examples.
 
 :::

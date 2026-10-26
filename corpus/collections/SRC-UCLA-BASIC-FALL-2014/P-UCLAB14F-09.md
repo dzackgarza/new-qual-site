@@ -22,7 +22,7 @@ Problem 9. Let $A\neq0$ be an $n\times n$ complex matrix. Prove that there is a 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $A$ is invertible, the choice
 \[
@@ -44,7 +44,7 @@ Thus the spectra are disjoint.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume henceforth that $A$ is singular and nonzero.
 Then there exists a vector $v$ such that
@@ -87,7 +87,7 @@ Therefore the required $v$ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Choose a basis
 \[
@@ -102,7 +102,7 @@ and the coefficient of $e_n$ in $Ae_1$ is nonzero.
 
 ::: pf-proof
 
-By step <1>2, the vectors
+By step [](#s1-2){.pf-ref}, the vectors
 \[
 v,\ Av
 \]
@@ -127,9 +127,9 @@ a_{n1}=1\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-In the basis from step <1>3, let
+In the basis from step [](#s1-3){.pf-ref}, let
 \[
 N=
 \begin{pmatrix}
@@ -160,7 +160,7 @@ so $\lambda=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The polynomial
 \[
@@ -194,7 +194,7 @@ Thus the coefficient of $t^{n-1}$ is
 \[
 \pm a_{n1}.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 a_{n1}\ne0.
 \]
@@ -204,7 +204,7 @@ Hence $p(t)$ is a nonzero polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exists $t\in\mathbb C$ such that
 \[
@@ -215,7 +215,7 @@ is invertible.
 
 ::: pf-proof
 
-The nonzero polynomial $p(t)$ from step <1>5 has only finitely many roots.
+The nonzero polynomial $p(t)$ from step [](#s1-5){.pf-ref} has only finitely many roots.
 Choose $t$ that is not one of them.
 Then
 \[
@@ -230,7 +230,7 @@ Thus $A+tN$ is invertible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For such a $t$, set
 \[
@@ -241,8 +241,8 @@ Then $B$ and $A+B$ have no eigenvalues in common.
 
 ::: pf-proof
 
-By step <1>4, $B=tN$ is nilpotent and therefore has only the eigenvalue $0$.
-By step <1>6,
+By step [](#s1-4){.pf-ref}, $B=tN$ is nilpotent and therefore has only the eigenvalue $0$.
+By step [](#s1-6){.pf-ref},
 \[
 A+B=A+tN
 \]
@@ -262,7 +262,7 @@ Hence
 
 ::: pf-qed
 
-Step <1>1 handles the invertible case, and steps <1>2--<1>7 handle the singular nonzero case.
+Step [](#s1-1){.pf-ref} handles the invertible case, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} handle the singular nonzero case.
 
 :::
 

@@ -30,7 +30,7 @@ Choose $M<\infty$ such that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Cantor set $E$ has one-dimensional Lebesgue measure zero.
 
@@ -51,7 +51,7 @@ for every $n$. Letting $n\to\infty$ gives $m(E)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $\varepsilon>0$, there are finitely many pairwise disjoint bounded open intervals
 \[
@@ -71,7 +71,7 @@ a_j,b_j\notin E,
 
 ::: pf-proof
 
-By step <1>1 and outer regularity of Lebesgue measure, choose an open set
+By step [](#s1-1){.pf-ref} and outer regularity of Lebesgue measure, choose an open set
 \[
 U\supset E
 \]
@@ -87,7 +87,7 @@ If two selected intervals have touching closures, merge them into their convex h
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Each interval $I_j=(a_j,b_j)$ can be thickened to a closed rectangle
 \[
@@ -114,9 +114,9 @@ Moreover,
 
 ::: pf-proof
 
-By step <1>2, the finitely many interval closures are pairwise disjoint, so their mutual distances are positive. Choose each $\eta_j>0$ small enough that the rectangles remain disjoint and also $\eta_j\le|I_j|$.
+By step [](#s1-2){.pf-ref}, the finitely many interval closures are pairwise disjoint, so their mutual distances are positive. Choose each $\eta_j>0$ small enough that the rectangles remain disjoint and also $\eta_j\le|I_j|$.
 
-The horizontal sides have nonzero imaginary part and therefore miss $E\subset\mathbb R$. The vertical sides meet the real axis only at $a_j$ and $b_j$, which lie outside $E$ by step <1>2. Hence $\partial Q_j\cap E=\varnothing$.
+The horizontal sides have nonzero imaginary part and therefore miss $E\subset\mathbb R$. The vertical sides meet the real axis only at $a_j$ and $b_j$, which lie outside $E$ by step [](#s1-2){.pf-ref}. Hence $\partial Q_j\cap E=\varnothing$.
 
 Finally,
 \[
@@ -132,7 +132,7 @@ Summing gives the estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix $R>2$ and define, for $|z|<R$,
 \[
@@ -153,7 +153,7 @@ The circle $|\zeta|=R$ is disjoint from $E\subset[0,1]$, so $f$ is holomorphic i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Fix
 \[
@@ -165,7 +165,7 @@ d
 \coloneqq
 \operatorname{dist}(z,E)>0.
 \]
-The intervals and rectangles in steps <1>2--<1>3 may be chosen so that
+The intervals and rectangles in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} may be chosen so that
 \[
 \bigcup_jQ_j
 \subset
@@ -175,13 +175,13 @@ The intervals and rectangles in steps <1>2--<1>3 may be chosen so that
 
 ::: pf-proof
 
-Since $E$ is compact, its $d/2$-neighborhood is open. In step <1>2, choose the finite interval cover inside the intersection of that neighborhood with the real axis, and then choose the thicknesses $\eta_j$ in step <1>3 sufficiently small. This keeps every rectangle inside the $d/2$-neighborhood.
+Since $E$ is compact, its $d/2$-neighborhood is open. In step [](#s1-2){.pf-ref}, choose the finite interval cover inside the intersection of that neighborhood with the real axis, and then choose the thicknesses $\eta_j$ in step [](#s1-3){.pf-ref} sufficiently small. This keeps every rectangle inside the $d/2$-neighborhood.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For the domain
 \[
@@ -205,7 +205,7 @@ where each $\partial Q_j$ is given the positive orientation as the boundary of t
 
 ::: pf-proof
 
-By step <1>5, $z\in\Omega$. The function
+By step [](#s1-5){.pf-ref}, $z\in\Omega$. The function
 \[
 \zeta\longmapsto
 \frac{f(\zeta)}{\zeta-z}
@@ -218,14 +218,14 @@ Apply the Cauchy integral formula on the multiply connected domain $\Omega$. The
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-The inner-boundary term in step <1>6 can be made arbitrarily small.
+The inner-boundary term in step [](#s1-6){.pf-ref} can be made arbitrarily small.
 
 
 ::: pf-proof
 
-For $\zeta\in Q_j$, step <1>5 gives
+For $\zeta\in Q_j$, step [](#s1-5){.pf-ref} gives
 \[
 |\zeta-z|
 \ge
@@ -250,13 +250,13 @@ Hence
 \sum_{j=1}^N|I_j|.
 \end{aligned}
 \]
-By step <1>2, the final sum can be made smaller than any prescribed $\varepsilon>0$.
+By step [](#s1-2){.pf-ref}, the final sum can be made smaller than any prescribed $\varepsilon>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every
 \[
@@ -270,7 +270,7 @@ f(z)=F_R(z).
 
 ::: pf-proof
 
-In step <1>6, choose interval covers with total length tending to zero. Step <1>7 shows that the inner-boundary term tends to zero, while the outer integral $F_R(z)$ is independent of the cover. Thus
+In step [](#s1-6){.pf-ref}, choose interval covers with total length tending to zero. Step [](#s1-7){.pf-ref} shows that the inner-boundary term tends to zero, while the outer integral $F_R(z)$ is independent of the cover. Thus
 \[
 f(z)=F_R(z).
 \]
@@ -286,7 +286,7 @@ The function $F_R$ extends $f$ holomorphically across $E$ inside $B(0,R)$.
 
 ::: pf-proof
 
-Step <1>4 says $F_R$ is holomorphic on all of $B(0,R)$, and step <1>8 says it agrees with $f$ on the punctured set
+Step [](#s1-4){.pf-ref} says $F_R$ is holomorphic on all of $B(0,R)$, and step [](#s1-8){.pf-ref} says it agrees with $f$ on the punctured set
 \[
 B(0,R)\setminus E.
 \]
@@ -296,7 +296,7 @@ Thus it is the desired extension.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The function $f$ extends to a bounded entire function on $\mathbb C$.
 
@@ -316,7 +316,7 @@ On the overlap
 \[
 1<|z|<R,
 \]
-the two definitions agree by step <1>8, so they glue to an entire function on $\mathbb C$.
+the two definitions agree by step [](#s1-8){.pf-ref}, so they glue to an entire function on $\mathbb C$.
 
 Off $E$, this extension equals the original function and therefore has modulus at most $M$. Since $\mathbb C\setminus E$ is dense and the extension is continuous, the same bound holds on $E$. Hence
 \[
@@ -328,7 +328,7 @@ for every $z\in\mathbb C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -338,7 +338,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>10, $f$ has a bounded entire extension. Liouville's theorem makes that extension constant, hence the original function on $\mathbb C\setminus E$ is constant.
+By step [](#s1-10){.pf-ref}, $f$ has a bounded entire extension. Liouville's theorem makes that extension constant, hence the original function on $\mathbb C\setminus E$ is constant.
 
 :::
 
@@ -346,7 +346,7 @@ By step <1>10, $f$ has a bounded entire extension. Liouville's theorem makes tha
 
 ::: pf-qed
 
-Step <1>11 is the desired conclusion.
+Step [](#s1-11){.pf-ref} is the desired conclusion.
 
 :::
 

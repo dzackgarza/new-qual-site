@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 $$
@@ -79,7 +79,7 @@ is the image of the constant polynomial $r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The kernel of
 $$
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -141,7 +141,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>1--<1>2, the first isomorphism theorem gives
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the first isomorphism theorem gives
 $$
 R[x]/\ker\operatorname{ev}_0
 \cong
@@ -156,7 +156,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The ideal
 $$
@@ -181,7 +181,7 @@ $$
 \iff
 R[x]/(x)\text{ is an integral domain}.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 R[x]/(x)
 \cong
@@ -200,7 +200,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ideal
 $$
@@ -225,7 +225,7 @@ $$
 \iff
 R[x]/(x)\text{ is a field}.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 R[x]/(x)
 \cong
@@ -246,7 +246,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

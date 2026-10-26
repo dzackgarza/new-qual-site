@@ -54,7 +54,7 @@ dx_1\wedge dy_1\wedge dx_2\wedge dy_2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 With the normalization used in the notes,
 \[
@@ -87,7 +87,7 @@ its contact orientation, so the source adopts the displayed normalization.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Its exterior derivative is
 \[
@@ -116,7 +116,7 @@ Sum over \(j=1,2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -149,7 +149,7 @@ terms into the displayed coordinate order gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The differential of the squared radius is
 \[
@@ -171,7 +171,7 @@ r^2=x_1^2+y_1^2+x_2^2+y_2^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Wedge multiplication gives
 \[
@@ -184,7 +184,7 @@ d(r^2)\wedge\alpha\wedge d\alpha
 
 ::: pf-proof
 
-Using step <1>3, only one term of \(d(r^2)\) can complete each displayed
+Using step [](#s1-3){.pf-ref}, only one term of \(d(r^2)\) can complete each displayed
 \(3\)-form to the ordered \(4\)-form \(\Omega\):
 
 \[
@@ -232,13 +232,13 @@ After reordering, all four contributions have positive sign. Their sum is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 On
 \[
 \mathbb C^2-\{0\},
 \]
-the \(4\)-form in step <1>5 is positive.
+the \(4\)-form in step [](#s1-5){.pf-ref} is positive.
 
 
 ::: pf-proof
@@ -253,7 +253,7 @@ and \(\Omega\) is the chosen positive volume form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular, along
 \[
@@ -269,7 +269,7 @@ is a positive volume form on the outward-oriented sphere.
 
 ::: pf-proof
 
-The outward normal is positively paired with \(d(r^2)\). By step <1>5,
+The outward normal is positively paired with \(d(r^2)\). By step [](#s1-5){.pf-ref},
 \[
 d(r^2)\wedge\alpha\wedge d\alpha
 \]
@@ -284,7 +284,7 @@ to the oriented level set \(S^3\) be positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -301,13 +301,13 @@ when
 \[
 \alpha\wedge d\alpha
 \]
-is a positive volume form. Apply step <1>7.
+is a positive volume form. Apply step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Define
 \[
@@ -330,7 +330,7 @@ sphere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The image of \(\mathcal C\) lies in \(S^3\).
 
@@ -376,7 +376,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The point
 \[
@@ -405,7 +405,7 @@ would imply \(1=-1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The map \(\mathcal C\) is a diffeomorphism
 \[
@@ -464,7 +464,7 @@ S^3-\{(0,-1)\}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 On \(\mathbb C\times\mathbb R\), define the Heisenberg contact form
 \[
@@ -483,7 +483,7 @@ This is the standard contact form in complex notation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Writing \(\zeta=u+iv\),
 \[
@@ -512,7 +512,7 @@ Take the imaginary part.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 A direct differentiation of the Cayley transform gives
 \[
@@ -530,7 +530,7 @@ A direct differentiation of the Cayley transform gives
 
 ::: pf-proof
 
-Substitute the two component functions from step <1>9 into
+Substitute the two component functions from step [](#s1-9){.pf-ref} into
 \[
 \alpha
 =
@@ -541,7 +541,7 @@ Substitute the two component functions from step <1>9 into
 \overline w_2\,dw_2
 \right),
 \]
-which is equivalent to the real-coordinate expression in step <1>1.
+which is equivalent to the real-coordinate expression in step [](#s1-1){.pf-ref}.
 Differentiating
 \[
 w_1=\frac{2\zeta}{D},
@@ -561,9 +561,9 @@ yields the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
-The scalar factor in step <1>15 is everywhere positive.
+The scalar factor in step [](#s1-15){.pf-ref} is everywhere positive.
 
 
 ::: pf-proof
@@ -574,7 +574,7 @@ Its denominator is a sum of squares and its numerator is \(2>0\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence \(\mathcal C\) is a contactomorphism from
 \[
@@ -588,7 +588,7 @@ to
 
 ::: pf-proof
 
-By steps <1>15--<1>16,
+By steps [](#s1-15){.pf-ref} through [](#s1-16){.pf-ref},
 \[
 \mathcal C^*\alpha
 =
@@ -601,13 +601,13 @@ d\mathcal C(\ker\beta)
 =
 \ker\alpha.
 \]
-Step <1>12 gives the diffeomorphism.
+Step [](#s1-12){.pf-ref} gives the diffeomorphism.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Under \(\Phi\),
 \[
@@ -639,7 +639,7 @@ Multiply by \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Also
 \[
@@ -660,7 +660,7 @@ t=z+\frac{xy}{2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Therefore
 \[
@@ -673,7 +673,7 @@ dz+x\,dy}.
 
 ::: pf-proof
 
-Using steps <1>18--<1>19,
+Using steps [](#s1-18){.pf-ref} through [](#s1-19){.pf-ref},
 \[
 \begin{aligned}
 \Phi^*\beta
@@ -694,7 +694,7 @@ dz+x\,dy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 The composite
 \[
@@ -716,12 +716,12 @@ onto the punctured standard contact sphere.
 ::: pf-proof
 
 The map \(\Phi\) is a diffeomorphism from \(\mathbb R^3\) to
-\(\mathbb C\times\mathbb R\). By step <1>20, it is a strict
+\(\mathbb C\times\mathbb R\). By step [](#s1-20){.pf-ref}, it is a strict
 contactomorphism from
 \[
 dz+x\,dy
 \]
-to \(\beta\). Step <1>17 says \(\mathcal C\) is a contactomorphism from
+to \(\beta\). Step [](#s1-17){.pf-ref} says \(\mathcal C\) is a contactomorphism from
 \(\ker\beta\) to the punctured sphere. Their composite is therefore a
 contactomorphism.
 
@@ -731,8 +731,8 @@ contactomorphism.
 
 ::: pf-qed
 
-Steps <1>1--<1>8 verify the positive contact form on \(S^3\), and steps
-<1>9--<1>21 give the explicit contactomorphism with standard
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} verify the positive contact form on \(S^3\), and steps
+[](#s1-9){.pf-ref} through [](#s1-21){.pf-ref} give the explicit contactomorphism with standard
 \(\mathbb R^3\) after deleting one point.
 
 :::

@@ -45,7 +45,7 @@ $Q$ orthogonal and $R$ upper triangular with positive diagonal entries.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement 1 is false.
 
@@ -410,7 +410,7 @@ $0$ as $t\to\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Statement 19 is true.
 
@@ -426,7 +426,7 @@ A(3v+2u)=3Av+2Au=3(5v)+2(-u)=15v-2u.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 The recovered truth values, in order, are
 \[
@@ -436,7 +436,7 @@ The recovered truth values, in order, are
 
 ::: pf-proof
 
-Steps <1>1 through <1>19 establish the corresponding truth values.
+Steps [](#s1-1){.pf-ref} through [](#s1-19){.pf-ref} establish the corresponding truth values.
 
 :::
 
@@ -444,7 +444,7 @@ Steps <1>1 through <1>19 establish the corresponding truth values.
 
 ::: pf-qed
 
-Step <1>20 records the required answers to all recovered statements.
+Step [](#s1-20){.pf-ref} records the required answers to all recovered statements.
 
 :::
 

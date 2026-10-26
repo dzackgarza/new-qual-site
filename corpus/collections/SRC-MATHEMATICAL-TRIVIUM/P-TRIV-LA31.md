@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each $i\in\{x,y,z\}$,
 $$
@@ -47,7 +47,7 @@ Each displayed matrix has zero diagonal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each $i\in\{x,y,z\}$,
 $$
@@ -64,20 +64,20 @@ nonzero off-diagonal entries and reverses their signs.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>2 give the trace and transpose of all three generators.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the trace and transpose of all three generators.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For each generator $M_i$,
 $$
@@ -108,7 +108,7 @@ coordinates.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -122,7 +122,7 @@ $$
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 $$
 M_i^{2k+1}=(-1)^kM_i
 $$
@@ -144,7 +144,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -162,13 +162,13 @@ $$
 
 ::: pf-proof
 
-Substitute $M_x$ and $M_x^2$ into step <1>5.
+Substitute $M_x$ and $M_x^2$ into step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -186,13 +186,13 @@ $$
 
 ::: pf-proof
 
-Substitute $M_y$ and $M_y^2$ into step <1>5.
+Substitute $M_y$ and $M_y^2$ into step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has
 $$
@@ -210,26 +210,26 @@ $$
 
 ::: pf-proof
 
-Substitute $M_z$ and $M_z^2$ into step <1>5.
+Substitute $M_z$ and $M_z^2$ into step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>6--<1>8 give all three exponentials.
+Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give all three exponentials.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The transformation $e^{\theta M_x}$ is rotation by angle $\theta$
 about the $x$-axis.
@@ -237,14 +237,14 @@ about the $x$-axis.
 
 ::: pf-proof
 
-Step <1>6 fixes the $x$-coordinate and rotates the $(y,z)$-coordinates by the
+Step [](#s1-6){.pf-ref} fixes the $x$-coordinate and rotates the $(y,z)$-coordinates by the
 standard planar rotation matrix.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The transformations $e^{\theta M_y}$ and $e^{\theta M_z}$ are rotations
 by angle $\theta$ about the $y$- and $z$-axes, respectively.
@@ -252,21 +252,21 @@ by angle $\theta$ about the $y$- and $z$-axes, respectively.
 
 ::: pf-proof
 
-Step <1>7 fixes the $y$-coordinate and rotates the $(z,x)$-plane, while step
-<1>8 fixes the $z$-coordinate and rotates the $(x,y)$-plane.
+Step [](#s1-7){.pf-ref} fixes the $y$-coordinate and rotates the $(z,x)$-plane, while step
+[](#s1-8){.pf-ref} fixes the $z$-coordinate and rotates the $(x,y)$-plane.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Steps <1>10--<1>11 give the geometrical interpretation.
+Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} give the geometrical interpretation.
 
 :::
 
@@ -274,7 +274,7 @@ Steps <1>10--<1>11 give the geometrical interpretation.
 
 ::: pf-qed
 
-Steps <1>3, <1>9, and <1>12 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-12){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

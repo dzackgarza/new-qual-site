@@ -52,7 +52,7 @@ This is the main finite-valued case.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists \(N_1\) such that
 \[
@@ -71,7 +71,7 @@ sufficiently late terms lie below \(A+\varepsilon\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists \(N_2\) such that
 \[
@@ -89,7 +89,7 @@ Apply the same property to the sequence \((b_n)\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -105,13 +105,13 @@ A+B+2\varepsilon.
 
 ::: pf-proof
 
-Add the inequalities from steps <1>2--<1>3.
+Add the inequalities from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 \[
@@ -124,14 +124,14 @@ A+B+2\varepsilon.
 ::: pf-proof
 
 Every sufficiently late term of the sequence \((a_n+b_n)\) is bounded above
-by the right-hand side of step <1>4, so its limsup is also bounded above by
+by the right-hand side of step [](#s1-4){.pf-ref}, so its limsup is also bounded above by
 that number.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Letting \(\varepsilon\downarrow0\),
 \[
@@ -144,13 +144,13 @@ A+B}.
 
 ::: pf-proof
 
-Step <1>5 holds for every positive \(\varepsilon\).
+Step [](#s1-5){.pf-ref} holds for every positive \(\varepsilon\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -175,7 +175,7 @@ Every extended real number is at most \(+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The same conclusion holds if
 \[
@@ -195,7 +195,7 @@ The right-hand side is again \(+\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Suppose
 \[
@@ -247,9 +247,9 @@ Because \(M\) was arbitrary,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Therefore, in the situation of step <1>9,
+Therefore, in the situation of step [](#s1-9){.pf-ref},
 \[
 \limsup(a_n+b_n)
 =
@@ -268,7 +268,7 @@ The extended-real sum of \(-\infty\) and a finite real number is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The symmetric case
 \[
@@ -281,13 +281,13 @@ is identical.
 
 ::: pf-proof
 
-Interchange the roles of the two sequences in step <1>9.
+Interchange the roles of the two sequences in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If
 \[
@@ -318,7 +318,7 @@ Since \(M\) is arbitrary, the limsup is \(-\infty\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Combining the finite and extended-real cases,
 \[
@@ -342,15 +342,15 @@ and
 
 ::: pf-proof
 
-The finite case is step <1>6, the \(+\infty\) cases are steps <1>7--<1>8,
-the finite-plus-\(-\infty\) cases are steps <1>9--<1>11, and the
-\(-\infty-\infty\) case is step <1>12.
+The finite case is step [](#s1-6){.pf-ref}, the \(+\infty\) cases are steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref},
+the finite-plus-\(-\infty\) cases are steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref}, and the
+\(-\infty-\infty\) case is step [](#s1-12){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 One has
 \[
@@ -368,7 +368,7 @@ The sequence \(a_n\) alternates between \(1\) and \(-1\), and the value
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 One also has
 \[
@@ -386,7 +386,7 @@ occurring infinitely often.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 But
 \[
@@ -407,7 +407,7 @@ By definition,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Hence
 \[
@@ -418,13 +418,13 @@ Hence
 
 ::: pf-proof
 
-The sequence is identically zero by step <1>16.
+The sequence is identically zero by step [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Therefore
 \[
@@ -441,20 +441,20 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>14--<1>17.
+Use steps [](#s1-14){.pf-ref} through [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Thus the inequality can be strict.
 
 
 ::: pf-proof
 
-Step <1>18 gives an explicit strict example.
+Step [](#s1-18){.pf-ref} gives an explicit strict example.
 
 :::
 
@@ -462,7 +462,7 @@ Step <1>18 gives an explicit strict example.
 
 ::: pf-qed
 
-Step <1>13 proves part (a), and steps <1>14--<1>19 prove part (b).
+Step [](#s1-13){.pf-ref} proves part (a), and steps [](#s1-14){.pf-ref} through [](#s1-19){.pf-ref} prove part (b).
 
 :::
 

@@ -23,7 +23,7 @@ Prove, without using determinants, that if $UT\colon V\to Z$ is invertible, then
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map
 \[
@@ -66,7 +66,7 @@ so $T$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -85,7 +85,7 @@ By rank-nullity,
 +
 \dim\operatorname{im}T.
 \]
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 \[
 \dim\ker T=0.
 \]
@@ -113,14 +113,14 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore $T$ is invertible.
 
 
 ::: pf-proof
 
-Steps <1>1--<1>2 show that $T$ is both injective and surjective.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $T$ is both injective and surjective.
 A linear bijection between vector spaces has a linear inverse.
 Thus
 \[
@@ -131,7 +131,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map
 \[
@@ -173,7 +173,7 @@ Thus every $z\in Z$ lies in the image of $U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
@@ -192,7 +192,7 @@ Rank-nullity gives
 +
 \dim\operatorname{im}U.
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \operatorname{im}U=Z,
 \]
@@ -216,14 +216,14 @@ Thus $U$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $U$ is invertible.
 
 
 ::: pf-proof
 
-Steps <1>4--<1>5 show that $U$ is bijective.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} show that $U$ is bijective.
 Thus
 \[
 \boxed{U\text{ is invertible}.}
@@ -235,7 +235,7 @@ Thus
 
 ::: pf-qed
 
-Step <1>3 proves that $T$ is invertible, and step <1>6 proves that $U$ is invertible, without using determinants.
+Step [](#s1-3){.pf-ref} proves that $T$ is invertible, and step [](#s1-6){.pf-ref} proves that $U$ is invertible, without using determinants.
 
 :::
 

@@ -23,7 +23,7 @@ Give an example that shows that $U ( R )$ does not have to map onto $U ( S )$ un
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -60,7 +60,7 @@ Then $\overline b$ will be a unit modulo $n$ mapping to $\overline a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -83,7 +83,7 @@ By construction, every prime factor of $P$ fails to divide $m$. Therefore no pri
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists an integer $b$ satisfying
 $$
@@ -95,7 +95,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 \gcd(m,P)=1.
 $$
@@ -105,9 +105,9 @@ The Chinese remainder theorem therefore gives a simultaneous solution to the two
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The integer $b$ from step <1>3 satisfies
+The integer $b$ from step [](#s1-3){.pf-ref} satisfies
 $$
 \gcd(b,n)=1.
 $$
@@ -146,7 +146,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The natural map on unit groups
 $$
@@ -161,7 +161,7 @@ is surjective.
 
 ::: pf-proof
 
-For the arbitrary unit $\overline a$ chosen in step <1>1, steps <1>3--<1>4 construct a unit
+For the arbitrary unit $\overline a$ chosen in step [](#s1-1){.pf-ref}, steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} construct a unit
 $$
 \overline b\in(\ZZ/n\ZZ)^\times
 $$
@@ -175,7 +175,7 @@ Hence every unit modulo $m$ has a unit lift modulo $n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Surjectivity on units fails for general surjective ring homomorphisms.
 
@@ -227,7 +227,7 @@ is not surjective.
 
 ::: pf-qed
 
-Step <1>5 proves the first assertion, and step <1>6 gives the requested counterexample.
+Step [](#s1-5){.pf-ref} proves the first assertion, and step [](#s1-6){.pf-ref} gives the requested counterexample.
 
 :::
 

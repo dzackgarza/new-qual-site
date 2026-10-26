@@ -32,7 +32,7 @@ y(x)=\sum_{n=0}^{\infty}c_nx^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Substitution into Laguerre's equation gives the recurrence
 \[
@@ -63,7 +63,7 @@ which yields the recurrence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The coefficients are
 \[
@@ -78,7 +78,7 @@ is the rising factorial.
 
 ::: pf-proof
 
-Iterating step <1>1 gives
+Iterating step [](#s1-1){.pf-ref} gives
 \[
 c_n=c_0\prod_{j=0}^{n-1}\frac{j-a}{(j+1)^2}
 =c_0\frac{(-a)_n}{(n!)^2}.
@@ -88,7 +88,7 @@ c_n=c_0\prod_{j=0}^{n-1}\frac{j-a}{(j+1)^2}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the analytic series solution at $x=0$ is
 \[
@@ -100,13 +100,13 @@ y(x)=c_0\sum_{n=0}^{\infty}
 
 ::: pf-proof
 
-Insert the coefficients from step <1>2 into the power series. The ratio of consecutive absolute terms is asymptotic to $|x|/n$, so the series converges for every finite $x$.
+Insert the coefficients from step [](#s1-2){.pf-ref} into the power series. The ratio of consecutive absolute terms is asymptotic to $|x|/n$, so the series converges for every finite $x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $a=N\in\mathbb N_0$, the series terminates at degree $N$ and is proportional to the Laguerre polynomial
 \[
@@ -116,7 +116,7 @@ L_N(x)=\sum_{n=0}^{N}(-1)^n\binom{N}{n}\frac{x^n}{n!}.
 
 ::: pf-proof
 
-For $a=N$, step <1>1 gives $c_{N+1}=0$, and every later coefficient is then zero. Moreover,
+For $a=N$, step [](#s1-1){.pf-ref} gives $c_{N+1}=0$, and every later coefficient is then zero. Moreover,
 \[
 \frac{(-N)_n}{(n!)^2}
 =(-1)^n\frac{N!}{(N-n)!(n!)^2}
@@ -130,7 +130,7 @@ which is the displayed polynomial after choosing $c_0=1$.
 
 ::: pf-qed
 
-Steps <1>1--<1>3 develop the requested series solution, and step <1>4 records its polynomial specialization.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} develop the requested series solution, and step [](#s1-4){.pf-ref} records its polynomial specialization.
 
 :::
 

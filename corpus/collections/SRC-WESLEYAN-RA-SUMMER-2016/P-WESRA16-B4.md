@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On $Y$,
 $$
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On $Z$,
 $$
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On $X$, the functions $f^n\mathbf1_X$ increase pointwise to the extended-valued function
 $$
@@ -112,7 +112,7 @@ If $x\in X$, then $f(x)>1$, so the sequence $f(x)^n$ is increasing and tends to 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -127,7 +127,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3 and the Monotone Convergence Theorem,
+By step [](#s1-3){.pf-ref} and the Monotone Convergence Theorem,
 $$
 \lim_{n\to\infty}\int_Xf^n
 =\int h.
@@ -146,7 +146,7 @@ Since $M$ is arbitrary, $\int h=\infty$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -161,13 +161,13 @@ $$
 
 ::: pf-proof
 
-Use the decomposition before step <1>1. The $Y$-term equals $\lambda(Y)$ by step <1>1, the $Z$-term tends to $0$ by step <1>2, and the $X$-term has the limit computed in step <1>4. Adding these three limits gives the displayed formula.
+Use the decomposition before step [](#s1-1){.pf-ref}. The $Y$-term equals $\lambda(Y)$ by step [](#s1-1){.pf-ref}, the $Z$-term tends to $0$ by step [](#s1-2){.pf-ref}, and the $X$-term has the limit computed in step [](#s1-4){.pf-ref}. Adding these three limits gives the displayed formula.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exist $\alpha,\beta,\gamma\in[0,\infty]$ such that
 $$
@@ -192,7 +192,7 @@ $$
 \infty,&\lambda(X)>0.
 \end{cases}
 $$
-If $\lambda(X)=0$, the right-hand side is $\lambda(Y)$; if $\lambda(X)>0$, it is $\infty$. Step <1>5 shows that these are exactly the two possible values of the limit.
+If $\lambda(X)=0$, the right-hand side is $\lambda(Y)$; if $\lambda(X)>0$, it is $\infty$. Step [](#s1-5){.pf-ref} shows that these are exactly the two possible values of the limit.
 
 :::
 
@@ -200,7 +200,7 @@ If $\lambda(X)=0$, the right-hand side is $\lambda(Y)$; if $\lambda(X)>0$, it is
 
 ::: pf-qed
 
-Steps <1>2 and <1>4 give the requested dominated- and monotone-convergence contributions, and step <1>6 gives the required constants.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the requested dominated- and monotone-convergence contributions, and step [](#s1-6){.pf-ref} gives the required constants.
 
 :::
 

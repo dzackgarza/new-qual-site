@@ -24,7 +24,7 @@ review: draft
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are continuum many subsets
 \[
@@ -49,7 +49,7 @@ is a bijection from that power set onto the family of subsets of $\mathbb Z$ con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each subset $A\subset\mathbb Z$ containing $0$, let
 \[
@@ -75,7 +75,7 @@ while $x_A$ takes only the values $0$ and $1$. Hence its supremum norm is exactl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $A\ne B$, then
 \[
@@ -99,20 +99,20 @@ At every coordinate the difference has absolute value at most $1$, so the suprem
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 This proves part (a).
 
 
 ::: pf-proof
 
-Combine steps <1>1--<1>3.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $X$ be a Banach space. If $X^*$ is separable, then $X$ is separable.
 
@@ -181,7 +181,7 @@ Thus $Y=X$, so $X$ is separable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The dual
 \[
@@ -194,26 +194,26 @@ is not separable.
 
 By part (a), $\ell^\infty(\mathbb Z)$ contains an uncountable $1$-separated set, so it is not separable.
 
-If its dual were separable, step <1>5 would imply that $\ell^\infty(\mathbb Z)$ itself is separable, a contradiction.
+If its dual were separable, step [](#s1-5){.pf-ref} would imply that $\ell^\infty(\mathbb Z)$ itself is separable, a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 This proves part (b).
 
 
 ::: pf-proof
 
-Step <1>6 is exactly the assertion of part (b).
+Step [](#s1-6){.pf-ref} is exactly the assertion of part (b).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 One has the canonical isometric identification
 \[
@@ -251,7 +251,7 @@ so $a\in\ell^\infty$, and density of finitely supported sequences gives $T=T_a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The space $\ell^1(\mathbb Z)$ is not reflexive.
 
@@ -264,7 +264,7 @@ Suppose instead that $\ell^1$ were reflexive. Then
 \cong
 \ell^1.
 \]
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 (\ell^\infty)^*
 \cong
@@ -276,7 +276,7 @@ Hence
 \cong
 \ell^1.
 \]
-But $\ell^1(\mathbb Z)$ is separable, while step <1>6 says $(\ell^\infty)^*$ is not separable. This contradiction proves that $\ell^1$ is not reflexive.
+But $\ell^1(\mathbb Z)$ is separable, while step [](#s1-6){.pf-ref} says $(\ell^\infty)^*$ is not separable. This contradiction proves that $\ell^1$ is not reflexive.
 
 :::
 
@@ -284,7 +284,7 @@ But $\ell^1(\mathbb Z)$ is separable, while step <1>6 says $(\ell^\infty)^*$ is 
 
 ::: pf-qed
 
-Step <1>4 proves part (a), step <1>7 proves part (b), and step <1>9 proves part (c).
+Step [](#s1-4){.pf-ref} proves part (a), step [](#s1-7){.pf-ref} proves part (b), and step [](#s1-9){.pf-ref} proves part (c).
 
 :::
 

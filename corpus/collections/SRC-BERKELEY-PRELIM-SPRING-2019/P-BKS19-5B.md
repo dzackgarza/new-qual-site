@@ -49,7 +49,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the circle $|z|=r$,
 $$
@@ -71,7 +71,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Cauchy's coefficient estimate gives
 $$
@@ -95,7 +95,7 @@ $$
 \leq
 \frac{\max_{|z|=r}|f(z)|}{r^n}.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 |a_n|
 <
@@ -111,7 +111,7 @@ The asserted weak inequality follows a fortiori.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every integer $n\geq1$,
 $$
@@ -139,7 +139,7 @@ Multiplying by $n$ and exponentiating yields the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -155,7 +155,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>2 and <1>3.
+Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 
 :::
 
@@ -163,7 +163,7 @@ Combine steps <1>2 and <1>3.
 
 ::: pf-qed
 
-Step <1>4 is the required estimate.
+Step [](#s1-4){.pf-ref} is the required estimate.
 
 :::
 

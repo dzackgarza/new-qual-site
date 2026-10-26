@@ -26,7 +26,7 @@ Prove that $A$ has $1$ as an eigenvalue.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Consider the diagonal matrix
 $$
@@ -58,7 +58,7 @@ Thus every stated hypothesis is satisfied.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The matrix $A$ does not have $1$ as an eigenvalue.
 
@@ -79,14 +79,14 @@ None is equal to $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the assertion in the problem is false as printed.
 
 
 ::: pf-proof
 
-Step <1>1 gives a matrix satisfying all hypotheses, while step <1>2 shows that it fails the claimed conclusion. This is a counterexample.
+Step [](#s1-1){.pf-ref} gives a matrix satisfying all hypotheses, while step [](#s1-2){.pf-ref} shows that it fails the claimed conclusion. This is a counterexample.
 
 :::
 
@@ -94,7 +94,7 @@ Step <1>1 gives a matrix satisfying all hypotheses, while step <1>2 shows that i
 
 ::: pf-qed
 
-Step <1>3 completely resolves the printed claim by disproving it.
+Step [](#s1-3){.pf-ref} completely resolves the printed claim by disproving it.
 
 :::
 

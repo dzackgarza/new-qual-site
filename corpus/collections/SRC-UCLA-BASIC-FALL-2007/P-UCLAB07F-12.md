@@ -34,7 +34,7 @@ L_j(x)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For all $j,k\in\{0,\ldots,n\}$,
 \[
@@ -61,7 +61,7 @@ L_j(x_k)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The functionals
 \[
@@ -86,13 +86,13 @@ as a linear functional on $\mathbb P^n$. Fix $k$. Evaluating this functional at 
 =
 a_k
 \]
-by step <1>1. Since $k$ was arbitrary, every $a_k=0$. Thus the functionals are linearly independent.
+by step [](#s1-1){.pf-ref}. Since $k$ was arbitrary, every $a_k=0$. Thus the functionals are linearly independent.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set
 \[
@@ -103,13 +103,13 @@ is a basis of $(\mathbb P^n)^*$.
 
 ::: pf-proof
 
-The vector space $\mathbb P^n$ has dimension $n+1$, so its dual also has dimension $n+1$. Step <1>2 gives $n+1$ linearly independent vectors in the dual, hence a basis.
+The vector space $\mathbb P^n$ has dimension $n+1$, so its dual also has dimension $n+1$. Step [](#s1-2){.pf-ref} gives $n+1$ linearly independent vectors in the dual, hence a basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map
 \[
@@ -141,7 +141,7 @@ I(\alpha p+\beta q)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exist unique scalars
 \[
@@ -155,13 +155,13 @@ I=\sum_{j=0}^n c_jl_j.
 
 ::: pf-proof
 
-By step <1>3, the functionals $l_0,\ldots,l_n$ form a basis of $(\mathbb P^n)^*$. By step <1>4, $I$ is an element of this dual space. Therefore $I$ has a unique expansion in that basis.
+By step [](#s1-3){.pf-ref}, the functionals $l_0,\ldots,l_n$ form a basis of $(\mathbb P^n)^*$. By step [](#s1-4){.pf-ref}, $I$ is an element of this dual space. Therefore $I$ has a unique expansion in that basis.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The unique coefficients are
 \[
@@ -175,7 +175,7 @@ j=0,\ldots,n.
 
 ::: pf-proof
 
-Evaluate the identity from step <1>5 at $L_k$:
+Evaluate the identity from step [](#s1-5){.pf-ref} at $L_k$:
 \[
 \int_a^bL_k(x)\,dx
 =
@@ -183,13 +183,13 @@ Evaluate the identity from step <1>5 at $L_k$:
 =
 c_k
 \]
-by step <1>1.
+by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every $p\in\mathbb P^n$,
 \[
@@ -207,7 +207,7 @@ Since
 \[
 l_j(p)=p(x_j),
 \]
-the basis expansion in step <1>5 is exactly the displayed identity.
+the basis expansion in step [](#s1-5){.pf-ref} is exactly the displayed identity.
 
 :::
 
@@ -215,7 +215,7 @@ the basis expansion in step <1>5 is exactly the displayed identity.
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and steps <1>5--<1>7 prove existence and uniqueness in part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} prove existence and uniqueness in part (b).
 
 :::
 

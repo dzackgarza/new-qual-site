@@ -31,7 +31,7 @@ Let $A=(a_{ij})$, and let $T$ be the real symmetric tridiagonal matrix with $1$ 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $A$ is similar over $\mathbb C$ to $iT$.
 
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For each $m=1,\ldots,n$, set
 $$
@@ -123,7 +123,7 @@ The vector $v^{(m)}$ is nonzero because its first coordinate is $\sin\theta_m\ne
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The $n$ numbers
 $$
@@ -136,7 +136,7 @@ are all the eigenvalues of $T$.
 
 ::: pf-proof
 
-Step <1>2 gives all of them as eigenvalues. The angles
+Step [](#s1-2){.pf-ref} gives all of them as eigenvalues. The angles
 $$
 \frac{\pi}{n+1},
 \frac{2\pi}{n+1},
@@ -149,7 +149,7 @@ are distinct and lie in $(0,\pi)$, where $\cos$ is strictly decreasing. Hence th
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The eigenvalues of $A$ are
 $$
@@ -165,7 +165,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, $A$ and $iT$ are similar and therefore have the same eigenvalues. Multiplying a matrix by $i$ multiplies each eigenvalue by $i$. Apply step <1>3.
+By step [](#s1-1){.pf-ref}, $A$ and $iT$ are similar and therefore have the same eigenvalues. Multiplying a matrix by $i$ multiplies each eigenvalue by $i$. Apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -173,7 +173,7 @@ By step <1>1, $A$ and $iT$ are similar and therefore have the same eigenvalues. 
 
 ::: pf-qed
 
-Step <1>4 gives the complete list of eigenvalues.
+Step [](#s1-4){.pf-ref} gives the complete list of eigenvalues.
 
 :::
 

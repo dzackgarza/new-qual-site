@@ -27,7 +27,7 @@ What is the probability that $j$'s student gets a happy ticket, $1 \leqslant j \
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Drawing the tickets sequentially without replacement produces a uniformly random permutation of the $N$ tickets.
 
@@ -44,20 +44,20 @@ Thus every permutation is equally likely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently, the ticket in position $j$ is uniformly distributed among the $N$ tickets.
 
 
 ::: pf-proof
 
-Fix any ticket. Among the $N!$ permutations from step <1>1, exactly $(N-1)!$ place that ticket in position $j$. Hence its probability of occupying position $j$ is $(N-1)!/N!=1/N$, independently of $j$.
+Fix any ticket. Among the $N!$ permutations from step [](#s1-1){.pf-ref}, exactly $(N-1)!$ place that ticket in position $j$. Hence its probability of occupying position $j$ is $(N-1)!/N!=1/N$, independently of $j$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Since exactly $n$ tickets are happy, the probability that student $j$ receives one is
 \[
@@ -67,7 +67,7 @@ Since exactly $n$ tickets are happy, the probability that student $j$ receives o
 
 ::: pf-proof
 
-By step <1>2, each of the $N$ tickets has probability $1/N$ of being drawn in position $j$. The $n$ favorable tickets are disjoint possibilities, so their probabilities sum to $n/N$.
+By step [](#s1-2){.pf-ref}, each of the $N$ tickets has probability $1/N$ of being drawn in position $j$. The $n$ favorable tickets are disjoint possibilities, so their probabilities sum to $n/N$.
 
 :::
 
@@ -75,7 +75,7 @@ By step <1>2, each of the $N$ tickets has probability $1/N$ of being drawn in po
 
 ::: pf-qed
 
-Step <1>3 gives the requested probability for every $1\leq j\leq N$.
+Step [](#s1-3){.pf-ref} gives the requested probability for every $1\leq j\leq N$.
 
 :::
 

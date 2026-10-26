@@ -34,7 +34,7 @@ are $-4$ and $b - 1$. Find $b$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The trace of $A$ is
 $$
@@ -53,7 +53,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sum of the two given eigenvalues is
 $$
@@ -72,7 +72,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The parameter is
 $$
@@ -83,7 +83,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-For a $2\times2$ matrix, the sum of the eigenvalues, counted with algebraic multiplicity, equals the trace. By steps <1>1 and <1>2,
+For a $2\times2$ matrix, the sum of the eigenvalues, counted with algebraic multiplicity, equals the trace. By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
 $$
 b-5=1,
 $$
@@ -95,7 +95,7 @@ and hence $b=6$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

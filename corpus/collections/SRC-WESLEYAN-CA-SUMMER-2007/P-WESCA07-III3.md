@@ -41,7 +41,7 @@ The obstruction is that an open set need not be connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A counterexample is obtained by taking
 $$
@@ -88,13 +88,13 @@ is constant.
 
 ::: pf-proof
 
-The added connectedness hypothesis rules out the counterexample from step <1>2 and permits use of the Open Mapping Theorem.
+The added connectedness hypothesis rules out the counterexample from step [](#s1-2){.pf-ref} and permits use of the Open Mapping Theorem.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the corrected hypothesis, $f(U)$ is contained in the parabola
 $$
@@ -114,7 +114,7 @@ for every $z\in U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set $P$ has empty interior in $\CC$.
 
@@ -127,18 +127,18 @@ The set $P$ is the graph in $\RR^2\cong\CC$ of the real-valued function $y=x^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Under the corrected hypothesis, $f$ is constant on $U$.
 
 
 ::: pf-proof
 
-Suppose $f$ were nonconstant. Since $U$ is a domain and $f$ is holomorphic, the Open Mapping Theorem would imply that $f(U)$ is open in $\CC$. But step <1>4 gives
+Suppose $f$ were nonconstant. Since $U$ is a domain and $f$ is holomorphic, the Open Mapping Theorem would imply that $f(U)$ is open in $\CC$. But step [](#s1-4){.pf-ref} gives
 $$
 f(U)\subseteq P,
 $$
-while step <1>5 says that $P$ contains no nonempty open set. This is a contradiction. Therefore $f$ is constant.
+while step [](#s1-5){.pf-ref} says that $P$ contains no nonempty open set. This is a contradiction. Therefore $f$ is constant.
 
 :::
 
@@ -146,7 +146,7 @@ while step <1>5 says that $P$ contains no nonempty open set. This is a contradic
 
 ::: pf-qed
 
-Step <1>2 disproves the original statement, and step <1>6 proves the corrected connected-domain statement.
+Step [](#s1-2){.pf-ref} disproves the original statement, and step [](#s1-6){.pf-ref} proves the corrected connected-domain statement.
 
 :::
 

@@ -26,7 +26,7 @@ Let $f:[0,1]\to\mathbb R$ be continuous and absolutely continuous on every inter
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For part (a), define
 \[
@@ -46,7 +46,7 @@ Since $|x\sin(1/x)|\leq x$, one has $f(x)\to0=f(0)$ as $x\downarrow0$. On every 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $x>0$,
 \[
@@ -62,7 +62,7 @@ Differentiate $x\sin(1/x)$ by the product and chain rules.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The derivative is not integrable on $(0,1)$:
 \[
@@ -86,7 +86,7 @@ On each interval $[k\pi,k\pi+\pi/3]$, one has $|\cos t|\geq1/2$ after choosing t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Thus $f$ is not absolutely continuous on $[0,1]$.
 
@@ -97,13 +97,13 @@ An absolutely continuous function on a compact interval has derivative in $L^1$ 
 \[
 f(x)-f(0)=\int_0^xf'(t)\,dt.
 \]
-Step <1>3 contradicts the required $L^1$ integrability.
+Step [](#s1-3){.pf-ref} contradicts the required $L^1$ integrability.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (b), assume additionally that $f$ has bounded variation on $[0,1]$. Let
 \[
@@ -128,7 +128,7 @@ but more is needed to exclude $L>0$. The variation measure associated to a BV fu
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Fix $\eta>0$. Choose $\delta_0>0$ so that
 \[
@@ -138,13 +138,13 @@ Fix $\eta>0$. Choose $\delta_0>0$ so that
 
 ::: pf-proof
 
-This follows from step <1>5.
+This follows from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since $f$ is absolutely continuous on $[\delta_0/2,1]$, there exists $\delta_1>0$ such that every finite pairwise-disjoint family of intervals $(a_j,b_j)\subset[\delta_0/2,1]$ with
 \[
@@ -164,7 +164,7 @@ This is the defining interval criterion for absolute continuity on $[\delta_0/2,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Set
 \[
@@ -178,20 +178,20 @@ Then any finite pairwise-disjoint family $(a_j,b_j)\subset[0,1]$ with total leng
 
 ::: pf-proof
 
-Separate the intervals into those meeting $[0,\delta_0]$ and those lying in $[\delta_0/2,1]$. Because their total length is $<\delta_0/2$, an interval beginning below $\delta_0/2$ cannot end beyond $\delta_0$; hence every such interval lies in $[0,\delta_0]$. The sum of oscillations over all intervals in this first group is at most $\operatorname{Var}_{[0,\delta_0]}(f)<\eta/2$ by step <1>6. The remaining intervals lie in $[\delta_0/2,1]$ and have total length $<\delta_1$, so step <1>7 bounds their sum by $\eta/2$. Adding the two bounds gives $<\eta$.
+Separate the intervals into those meeting $[0,\delta_0]$ and those lying in $[\delta_0/2,1]$. Because their total length is $<\delta_0/2$, an interval beginning below $\delta_0/2$ cannot end beyond $\delta_0$; hence every such interval lies in $[0,\delta_0]$. The sum of oscillations over all intervals in this first group is at most $\operatorname{Var}_{[0,\delta_0]}(f)<\eta/2$ by step [](#s1-6){.pf-ref}. The remaining intervals lie in $[\delta_0/2,1]$ and have total length $<\delta_1$, so step [](#s1-7){.pf-ref} bounds their sum by $\eta/2$. Adding the two bounds gives $<\eta$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore $f$ is absolutely continuous on $[0,1]$.
 
 
 ::: pf-proof
 
-Step <1>8 verifies the defining $\varepsilon$--$\delta$ interval criterion for absolute continuity, with arbitrary $\eta>0$.
+Step [](#s1-8){.pf-ref} verifies the defining $\varepsilon$--$\delta$ interval criterion for absolute continuity, with arbitrary $\eta>0$.
 
 :::
 
@@ -199,7 +199,7 @@ Step <1>8 verifies the defining $\varepsilon$--$\delta$ interval criterion for a
 
 ::: pf-qed
 
-Steps <1>1--<1>4 prove part (a), and steps <1>5--<1>9 prove part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part (a), and steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref} prove part (b).
 
 :::
 

@@ -23,7 +23,7 @@ Assume $n\geq1$. By the preceding Euler-characteristic criterion, the boundary o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Real projective space $\mathbb{RP}^{2n}$ has a CW decomposition with exactly one cell in every dimension
 \[
@@ -43,7 +43,7 @@ is obtained by attaching one $k$-cell in passing from $\mathbb{RP}^{k-1}$ to $\m
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -54,13 +54,13 @@ Therefore
 
 ::: pf-proof
 
-Euler characteristic is the alternating sum of the numbers of cells in a finite CW decomposition. Step <1>1 gives one cell in each dimension. Since the sum has an odd number $2n+1$ of alternating terms beginning and ending with $+1$, its value is $1$.
+Euler characteristic is the alternating sum of the numbers of cells in a finite CW decomposition. Step [](#s1-1){.pf-ref} gives one cell in each dimension. Since the sum has an odd number $2n+1$ of alternating terms beginning and ending with $+1$, its value is $1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Complex projective space $\mathbb{CP}^{2n}$ has one cell in each even real dimension
 \[
@@ -81,7 +81,7 @@ attaches one real $2k$-cell at the $k$th stage.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -91,13 +91,13 @@ Hence
 
 ::: pf-proof
 
-All $2n+1$ cells from step <1>3 have even dimension, so each contributes $+1$ to the Euler characteristic.
+All $2n+1$ cells from step [](#s1-3){.pf-ref} have even dimension, so each contributes $+1$ to the Euler characteristic.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Quaternionic projective space $\mathbb{HP}^{2n}$ has one cell in each real dimension
 \[
@@ -117,33 +117,33 @@ The standard projective-space filtration attaches one quaternionic $k$-cell, of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Each of the three Euler characteristics is odd.
 
 
 ::: pf-proof
 
-Step <1>2 gives $1$ for $\mathbb{RP}^{2n}$, while steps <1>4--<1>5 give $2n+1$ for the complex and quaternionic projective spaces. These integers are odd.
+Step [](#s1-2){.pf-ref} gives $1$ for $\mathbb{RP}^{2n}$, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give $2n+1$ for the complex and quaternionic projective spaces. These integers are odd.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 None of these manifolds can be the boundary of a compact manifold.
 
 
 ::: pf-proof
 
-If any one were such a boundary, its Euler characteristic would be even by the boundary theorem proved in the preceding problem. Step <1>6 gives a contradiction in each case.
+If any one were such a boundary, its Euler characteristic would be even by the boundary theorem proved in the preceding problem. Step [](#s1-6){.pf-ref} gives a contradiction in each case.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -155,7 +155,7 @@ Therefore
 
 ::: pf-proof
 
-This is step <1>7 applied to the three projective spaces.
+This is step [](#s1-7){.pf-ref} applied to the three projective spaces.
 
 :::
 
@@ -163,7 +163,7 @@ This is step <1>7 applied to the three projective spaces.
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

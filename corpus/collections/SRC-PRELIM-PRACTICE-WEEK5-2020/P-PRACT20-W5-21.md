@@ -22,7 +22,7 @@ Find $\displaystyle\lim_{z \to 0} \frac{(\overline{z})^2}{z^2}$ or show that the
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Along the real axis, the quotient is identically $1$ away from the
 origin.
@@ -44,7 +44,7 @@ Hence along this path the limit is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Along the line $y=x$, the quotient is identically $-1$ away from the
 origin.
@@ -77,7 +77,7 @@ Hence along this path the limit is $-1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -87,7 +87,7 @@ Therefore
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 give two paths approaching the same point $0$ along
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give two paths approaching the same point $0$ along
 which the function has different limiting values, namely $1$ and $-1$.
 Therefore no two-dimensional limit exists.
 
@@ -97,7 +97,7 @@ Therefore no two-dimensional limit exists.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

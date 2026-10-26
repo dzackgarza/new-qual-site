@@ -21,7 +21,7 @@ Prove that no two of the unit disk $\mathbb D$, the complex plane $\mathbb C$, a
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The unit disk $\mathbb D$ and the complex plane $\mathbb C$ are not
 conformally equivalent.
@@ -51,7 +51,7 @@ exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Riemann sphere is not conformally equivalent to either
 $\mathbb C$ or $\mathbb D$.
@@ -78,14 +78,14 @@ conformally equivalent to either noncompact domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Consequently the three spaces are pairwise not conformally equivalent.
 
 
 ::: pf-proof
 
-Step <1>1 separates $\mathbb D$ from $\mathbb C$, while step <1>2 separates
+Step [](#s1-1){.pf-ref} separates $\mathbb D$ from $\mathbb C$, while step [](#s1-2){.pf-ref} separates
 the Riemann sphere from each of them.
 
 :::
@@ -94,7 +94,7 @@ the Riemann sphere from each of them.
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

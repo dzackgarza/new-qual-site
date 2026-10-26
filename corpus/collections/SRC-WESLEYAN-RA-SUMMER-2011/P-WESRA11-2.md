@@ -29,7 +29,7 @@ Give proofs or counterexamples.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Condition (i) does not imply condition (ii).
 
@@ -51,7 +51,7 @@ Suppose there were a continuous \(g:\mathbb R\to\mathbb R\) with \(f=g\) almost 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Condition (ii) does not imply condition (i).
 
@@ -72,14 +72,14 @@ However, every open interval contains both rational and irrational points. Conse
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore \(\boxed{\text{neither (i) nor (ii) implies the other}}\).
 
 
 ::: pf-proof
 
-Step <1>1 disproves (i)\(\Rightarrow\)(ii), and step <1>2 disproves (ii)\(\Rightarrow\)(i).
+Step [](#s1-1){.pf-ref} disproves (i)\(\Rightarrow\)(ii), and step [](#s1-2){.pf-ref} disproves (ii)\(\Rightarrow\)(i).
 
 :::
 
@@ -87,7 +87,7 @@ Step <1>1 disproves (i)\(\Rightarrow\)(ii), and step <1>2 disproves (ii)\(\Right
 
 ::: pf-qed
 
-Step <1>3 is the required comparison.
+Step [](#s1-3){.pf-ref} is the required comparison.
 
 :::
 

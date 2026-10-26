@@ -48,7 +48,7 @@ whose range is $S$; if $S$ is finite, repeat its elements as necessary.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose $g_1,\ldots,g_{n-1}$ have been defined and satisfy
 $$
@@ -79,7 +79,7 @@ Thus each of $a_1,\ldots,a_{n-1}$ belongs to the finite set $\{1,\ldots,m-1\}$. 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The functions $g_n:\mathbb N\to\mathbb N$ can be defined recursively so that, for every $m$,
 $$
@@ -97,13 +97,13 @@ $$
 
 ::: pf-proof
 
-For fixed $n,m$, step <1>1 shows that $P_{n,m}$ is finite, hence so is $D_{n,m}$. If $D_{n,m}$ is nonempty, all of its elements are positive, so $\min D_{n,m}>0$. There is therefore an integer larger than both $2m$ and $2/\min D_{n,m}$. Choose $g_n(m)$ to be such an integer. If $D_{n,m}$ is empty, choose any integer larger than $2m$. Starting with $n=1$, where $P_{1,m}=\{1/m\}$, this defines the functions successively for all $n$.
+For fixed $n,m$, step [](#s1-1){.pf-ref} shows that $P_{n,m}$ is finite, hence so is $D_{n,m}$. If $D_{n,m}$ is nonempty, all of its elements are positive, so $\min D_{n,m}>0$. There is therefore an integer larger than both $2m$ and $2/\min D_{n,m}$. Choose $g_n(m)$ to be such an integer. If $D_{n,m}$ is empty, choose any integer larger than $2m$. Starting with $n=1$, where $P_{1,m}=\{1/m\}$, this defines the functions successively for all $n$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For any $f:\mathbb N\to\mathbb N$ satisfying
 $$
@@ -118,7 +118,7 @@ converges.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 f(n+1)>g_n(f(n))>2f(n).
 $$
@@ -140,7 +140,7 @@ so the series converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $n$, if
 $$
@@ -156,7 +156,7 @@ $$
 
 ::: pf-proof
 
-Put $m=f(n)$. The defining inequality gives $f(n+1)>g_n(m)$. Thereafter step <1>2 gives
+Put $m=f(n)$. The defining inequality gives $f(n+1)>g_n(m)$. Thereafter step [](#s1-2){.pf-ref} gives
 $$
 f(n+k)\geq2^{k-1}f(n+1)
 \qquad(k\geq1).
@@ -177,7 +177,7 @@ Positivity is immediate because every summand is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $n$, one has $A\neq s_n$.
 
@@ -186,9 +186,9 @@ For every $n$, one has $A\neq s_n$.
 
 Fix $n$ and set $m=f(n)$. The actual first $n$ values $f(1),\ldots,f(n)$ satisfy the defining conditions for $P_{n,m}$, so $p_n\in P_{n,m}$.
 
-If $p_n=s_n$, then step <1>4 gives $A=p_n+T_n>s_n$.
+If $p_n=s_n$, then step [](#s1-4){.pf-ref} gives $A=p_n+T_n>s_n$.
 
-Suppose $p_n\neq s_n$. Then $D_{n,m}$ is nonempty, and step <1>2 together with step <1>4 gives
+Suppose $p_n\neq s_n$. Then $D_{n,m}$ is nonempty, and step [](#s1-2){.pf-ref} together with step [](#s1-4){.pf-ref} gives
 $$
 0<T_n
 <
@@ -210,7 +210,7 @@ Thus in every case $A\neq s_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The constructed functions satisfy the required conclusion:
 $$
@@ -220,7 +220,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 shows that $A$ converges to a real number. Since the sequence $(s_n)$ has range $S$, step <1>5 shows that $A$ is unequal to every element of $S$.
+Step [](#s1-3){.pf-ref} shows that $A$ converges to a real number. Since the sequence $(s_n)$ has range $S$, step [](#s1-5){.pf-ref} shows that $A$ is unequal to every element of $S$.
 
 :::
 
@@ -228,7 +228,7 @@ Step <1>3 shows that $A$ converges to a real number. Since the sequence $(s_n)$ 
 
 ::: pf-qed
 
-Step <1>6 is exactly the desired conclusion.
+Step [](#s1-6){.pf-ref} is exactly the desired conclusion.
 
 :::
 

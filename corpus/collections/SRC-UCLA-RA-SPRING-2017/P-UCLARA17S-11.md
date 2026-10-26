@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $z_0\in\CC$ and every $R>0$,
 $$
@@ -47,7 +47,7 @@ This is the mean-value property for harmonic functions, applied to the disk $B(z
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z_0\in\CC$ and $R>0$,
 $$
@@ -57,7 +57,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 |U(z_0)|
 \le\frac1{\pi R^2}
@@ -82,7 +82,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -92,7 +92,7 @@ $$
 
 ::: pf-proof
 
-Fix $z_0\in\CC$. Step <1>2 gives, for every $R>0$,
+Fix $z_0\in\CC$. Step [](#s1-2){.pf-ref} gives, for every $R>0$,
 $$
 |U(z_0)|\le \frac{M}{(\pi R^2)^{1/p}}.
 $$
@@ -104,7 +104,7 @@ Since $p<\infty$, the right-hand side tends to $0$ as $R\to\infty$. Hence $|U(z_
 
 ::: pf-qed
 
-Step <1>3 is the required conclusion.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 

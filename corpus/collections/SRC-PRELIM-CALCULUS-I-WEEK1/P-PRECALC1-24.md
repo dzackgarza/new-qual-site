@@ -27,7 +27,7 @@ g(t)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For \(t\) sufficiently close to \(0\),
 \[
@@ -71,13 +71,13 @@ Use
 =
 \frac1t\log a
 \]
-for the positive base from step <1>1.
+for the positive base from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Factor the logarithmic quotient:
 \[
@@ -98,7 +98,7 @@ Multiply and divide by \(\sin(2t)\) and \(2t\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 \[
@@ -119,7 +119,7 @@ This is the standard logarithmic limit, equivalently the derivative of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -136,7 +136,7 @@ Since
 \[
 \sin(2t)\to0,
 \]
-apply step <1>4 with
+apply step [](#s1-4){.pf-ref} with
 \[
 u=\sin(2t).
 \]
@@ -145,7 +145,7 @@ u=\sin(2t).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Also,
 \[
@@ -169,7 +169,7 @@ with \(u=2t\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -180,13 +180,13 @@ Hence
 
 ::: pf-proof
 
-Take limits in step <1>3 using steps <1>5--<1>6.
+Take limits in step [](#s1-3){.pf-ref} using steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Exponentiating,
 \[
@@ -197,7 +197,7 @@ Exponentiating,
 
 ::: pf-proof
 
-The exponential function is continuous, so step <1>7 gives
+The exponential function is continuous, so step [](#s1-7){.pf-ref} gives
 \[
 g(t)
 =
@@ -210,7 +210,7 @@ e^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Extend \(g\) continuously to \(t=0\) by defining
 \[
@@ -221,13 +221,13 @@ g(0)=e^2}.
 
 ::: pf-proof
 
-Step <1>8 shows that this removes the singularity at \(t=0\).
+Step [](#s1-8){.pf-ref} shows that this removes the singularity at \(t=0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For \(x\ne0\) sufficiently close to \(0\), the integral mean-value
 theorem gives a point \(c_x\) between \(0\) and \(x\) such that
@@ -254,7 +254,7 @@ which is equivalent to the displayed identity after changing signs.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 As \(x\to0\),
 \[
@@ -273,7 +273,7 @@ The point \(c_x\) lies between \(0\) and \(x\), so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore
 \[
@@ -288,11 +288,11 @@ e^2.
 
 ::: pf-proof
 
-By step <1>10, the quotient equals \(g(c_x)\). By step <1>11,
+By step [](#s1-10){.pf-ref}, the quotient equals \(g(c_x)\). By step [](#s1-11){.pf-ref},
 \[
 c_x\to0,
 \]
-and by continuity of the extension in step <1>9,
+and by continuity of the extension in step [](#s1-9){.pf-ref},
 \[
 g(c_x)\to g(0)=e^2.
 \]
@@ -301,7 +301,7 @@ g(c_x)\to g(0)=e^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -317,7 +317,7 @@ e^2}.
 
 ::: pf-proof
 
-This is step <1>12.
+This is step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -325,7 +325,7 @@ This is step <1>12.
 
 ::: pf-qed
 
-Step <1>13 is the requested limit.
+Step [](#s1-13){.pf-ref} is the requested limit.
 
 :::
 

@@ -36,7 +36,7 @@ F(z)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The only poles of $F$ are
 \[
@@ -64,7 +64,7 @@ and the numerator does not vanish at either point:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The residues are
 \[
@@ -110,7 +110,7 @@ For the pole at $-4$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The closing line segment from
 \[
@@ -173,7 +173,7 @@ a+t e^{it}
 =
 q_a(t).
 \]
-By step <1>3, the closing segment adds no argument change.
+By step [](#s1-3){.pf-ref}, the closing segment adds no argument change.
 Thus the winding number of the full closed curve is determined entirely by
 the lifted argument of $q_a$.
 
@@ -181,7 +181,7 @@ the lifted argument of $q_a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The curve $q_a$ can meet the negative real axis only at odd multiples
 of $\pi$ satisfying
@@ -224,9 +224,9 @@ so the crossing is on the positive real axis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Every negative-real-axis crossing in step <1>5 contributes
+Every negative-real-axis crossing in step [](#s1-5){.pf-ref} contributes
 \[
 +1
 \]
@@ -269,7 +269,7 @@ adds one full turn, i.e. an argument increase of $2\pi$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The winding number about $-1$ is
 \[
@@ -299,14 +299,14 @@ Both satisfy
 \[
 t>1.
 \]
-Thus step <1>5 gives two negative-axis crossings, and step <1>6 gives one
+Thus step [](#s1-5){.pf-ref} gives two negative-axis crossings, and step [](#s1-6){.pf-ref} gives one
 positive winding for each.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The winding number about $-4$ is
 \[
@@ -341,13 +341,13 @@ one has
 q_4(3\pi)=4-3\pi<0.
 \]
 Thus there is exactly one negative-axis crossing, giving one positive
-winding by step <1>6.
+winding by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The residue theorem for a possibly nonsimple closed curve gives
 \[
@@ -375,13 +375,13 @@ This is the residue theorem with winding numbers:
 \operatorname{Ind}(\gamma,a)
 \operatorname{Res}_{z=a}F.
 \]
-The only poles are those in step <1>1.
+The only poles are those in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -397,7 +397,7 @@ Therefore
 
 ::: pf-proof
 
-Substitute steps <1>2, <1>7, and <1>8 into step <1>9:
+Substitute steps [](#s1-2){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-8){.pf-ref} into step [](#s1-9){.pf-ref}:
 \[
 \begin{aligned}
 \int_\gamma F(z)\,dz
@@ -431,7 +431,7 @@ Substitute steps <1>2, <1>7, and <1>8 into step <1>9:
 
 ::: pf-qed
 
-Step <1>10 is the requested contour integral.
+Step [](#s1-10){.pf-ref} is the requested contour integral.
 
 :::
 

@@ -17,7 +17,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Zorn's Lemma.**
 
@@ -46,7 +46,7 @@ x=m.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $R$ be a commutative ring with identity
 \[
@@ -84,7 +84,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -162,9 +162,9 @@ Thus $J$ is an ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The ideal $J$ from step <1>3 is proper.
+The ideal $J$ from step [](#s1-3){.pf-ref} is proper.
 
 
 ::: pf-proof
@@ -202,7 +202,7 @@ J\ne R.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence every chain in $\mathcal P$ has an upper bound in
 $\mathcal P$.
@@ -214,7 +214,7 @@ For a chain
 \[
 \mathcal C\subseteq\mathcal P,
 \]
-steps <1>3--<1>4 show that
+steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that
 \[
 J=\bigcup_{I\in\mathcal C}I
 \]
@@ -234,7 +234,7 @@ so $J$ is an upper bound for the chain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By Zorn's Lemma, $\mathcal P$ contains a maximal element
 \[
@@ -244,14 +244,14 @@ By Zorn's Lemma, $\mathcal P$ contains a maximal element
 
 ::: pf-proof
 
-Step <1>2 shows that $\mathcal P$ is nonempty, and step <1>5 verifies the
-chain-upper-bound hypothesis of Zorn's Lemma. Apply step <1>1.
+Step [](#s1-2){.pf-ref} shows that $\mathcal P$ is nonempty, and step [](#s1-5){.pf-ref} verifies the
+chain-upper-bound hypothesis of Zorn's Lemma. Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ideal
 \[
@@ -298,7 +298,7 @@ This is exactly the definition of a maximal ideal.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore every commutative ring with identity
 \[
@@ -309,7 +309,7 @@ has a maximal ideal.
 
 ::: pf-proof
 
-Step <1>7 constructs one.
+Step [](#s1-7){.pf-ref} constructs one.
 
 :::
 
@@ -317,7 +317,7 @@ Step <1>7 constructs one.
 
 ::: pf-qed
 
-Step <1>1 states Zorn's Lemma, and steps <1>2--<1>8 apply it to prove the
+Step [](#s1-1){.pf-ref} states Zorn's Lemma, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} apply it to prove the
 maximal-ideal theorem.
 
 :::

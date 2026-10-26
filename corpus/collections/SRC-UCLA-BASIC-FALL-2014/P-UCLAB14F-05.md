@@ -28,7 +28,7 @@ Prove that this sequence converges and find its limit.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -61,7 +61,7 @@ The claim follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence $(a_n)$ is increasing.
 
@@ -81,7 +81,7 @@ Rearranging,
 2+a_n-a_n^2
 =(2-a_n)(a_n+1).
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 2-a_n>0
 \qquad\text{and}\qquad
@@ -100,15 +100,15 @@ a_{n+1}>a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence $(a_n)$ converges.
 
 
 ::: pf-proof
 
-By step <1>2, $(a_n)$ is increasing.
-By step <1>1, it is bounded above by $2$.
+By step [](#s1-2){.pf-ref}, $(a_n)$ is increasing.
+By step [](#s1-1){.pf-ref}, it is bounded above by $2$.
 The monotone convergence theorem for real sequences therefore gives convergence to some limit
 \[
 L\le2.
@@ -118,7 +118,7 @@ L\le2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The limit satisfies
 \[
@@ -142,9 +142,9 @@ L=\sqrt{2+L}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The only possible positive solution of the equation in step <1>4 is
+The only possible positive solution of the equation in step [](#s1-4){.pf-ref} is
 \[
 \boxed{L=2}.
 \]
@@ -170,13 +170,13 @@ L=2
 \quad\text{or}\quad
 L=-1.
 \]
-Step <1>1 gives $L\ge0$, so only $L=2$ is possible.
+Step [](#s1-1){.pf-ref} gives $L\ge0$, so only $L=2$ is possible.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -186,7 +186,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>3 gives existence of the limit, and step <1>5 identifies it.
+Step [](#s1-3){.pf-ref} gives existence of the limit, and step [](#s1-5){.pf-ref} identifies it.
 
 :::
 
@@ -194,7 +194,7 @@ Step <1>3 gives existence of the limit, and step <1>5 identifies it.
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

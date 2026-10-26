@@ -36,7 +36,7 @@ Let $G$ be an antiderivative of $g$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The differential equation is exact, with potential
 $$
@@ -70,7 +70,7 @@ Thus $dF=M\,dx+N\,dy$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral curve through $(1,1)$ is contained in the level set
 $$
@@ -80,7 +80,7 @@ $$
 
 ::: pf-proof
 
-Along an integral curve, the differential equation gives $dF=0$ by step <1>1, so $F$ is constant. At the specified point,
+Along an integral curve, the differential equation gives $dF=0$ by step [](#s1-1){.pf-ref}, so $F$ is constant. At the specified point,
 $$
 F(1,1)
 =1\cdot1+G(1)-G(1)
@@ -91,7 +91,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The point that must also lie on this level set is
 $$
@@ -108,7 +108,7 @@ F(-1,-1)
 =(-1)(-1)+G(-1)-G(-1)
 =1.
 $$
-Thus step <1>2 shows that $(-1,-1)$ lies on the same integral curve level set, independently of the particular function $g$.
+Thus step [](#s1-2){.pf-ref} shows that $(-1,-1)$ lies on the same integral curve level set, independently of the particular function $g$.
 
 :::
 
@@ -116,7 +116,7 @@ Thus step <1>2 shows that $(-1,-1)$ lies on the same integral curve level set, i
 
 ::: pf-qed
 
-Step <1>3 gives the required point and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the required point and corresponding choice.
 
 :::
 

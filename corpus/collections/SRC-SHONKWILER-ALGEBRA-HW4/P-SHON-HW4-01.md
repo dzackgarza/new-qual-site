@@ -62,7 +62,7 @@ and inverses are handled similarly. Thus \(HN\le G\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The second isomorphism theorem gives
 \[
@@ -85,7 +85,7 @@ is surjective with kernel \(H\cap N\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -98,13 +98,13 @@ Therefore
 
 ::: pf-proof
 
-Take orders in the finite-group isomorphism from step <1>2.
+Take orders in the finite-group isomorphism from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The integer
 \[
@@ -131,7 +131,7 @@ the quotient \(HN/N\) is a subgroup of \(G/N\). By Lagrange's theorem,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The integer
 \[
@@ -142,7 +142,7 @@ also divides \(|H|\).
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 |HN/N|=[H:H\cap N],
 \]
@@ -152,7 +152,7 @@ and every subgroup index divides the group order in a finite group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Since
 \[
@@ -167,7 +167,7 @@ one has
 
 ::: pf-proof
 
-Substitute the given equality into step <1>5.
+Substitute the given equality into step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -184,7 +184,7 @@ By the coprimality hypothesis,
 
 ::: pf-proof
 
-Steps <1>4 and <1>6 show that \(|HN/N|\) divides both
+Steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} show that \(|HN/N|\) divides both
 \[
 [G:N]
 \]
@@ -218,7 +218,7 @@ The quotient \(HN/N\) has one element exactly when \(HN=N\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -237,13 +237,13 @@ H\subseteq HN=N.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
 |H|=|N|,
 \]
-the inclusion in step <1>9 is equality:
+the inclusion in step [](#s1-9){.pf-ref} is equality:
 \[
 \boxed{H=N}.
 \]
@@ -257,14 +257,14 @@ A finite subgroup contained in another finite group of the same order must equal
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Thus \(N\) is the unique subgroup of \(G\) of order \(|N|\).
 
 
 ::: pf-proof
 
-The subgroup \(H\) was arbitrary among subgroups with \(|H|=|N|\), and step <1>10 shows every such \(H\) equals \(N\).
+The subgroup \(H\) was arbitrary among subgroups with \(|H|=|N|\), and step [](#s1-10){.pf-ref} shows every such \(H\) equals \(N\).
 
 :::
 
@@ -272,7 +272,7 @@ The subgroup \(H\) was arbitrary among subgroups with \(|H|=|N|\), and step <1>1
 
 ::: pf-qed
 
-Step <1>11 is the required uniqueness statement.
+Step [](#s1-11){.pf-ref} is the required uniqueness statement.
 
 :::
 

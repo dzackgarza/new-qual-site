@@ -35,7 +35,7 @@ The set $C$ is nonempty because
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If the series converges at some nonzero point
 \[
@@ -118,14 +118,14 @@ Suppose instead that the series converged at some $x$ satisfying
 \[
 |x|>|x_0|.
 \]
-Then step <1>1, applied to the convergence point $x$, would imply convergence at every point whose absolute value is smaller than $|x|$, in particular at $x_0$.
+Then step [](#s1-1){.pf-ref}, applied to the convergence point $x$, would imply convergence at every point whose absolute value is smaller than $|x|$, in particular at $x_0$.
 This contradicts the assumed divergence at $x_0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 \[
@@ -174,7 +174,7 @@ the series converges at $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If
 \[
@@ -192,7 +192,7 @@ Suppose, for contradiction, that the series converges at some $x$ with
 \[
 |x|>\rho.
 \]
-By step <1>1, it then converges for every $y$ satisfying
+By step [](#s1-1){.pf-ref}, it then converges for every $y$ satisfying
 \[
 |y|<|x|.
 \]
@@ -214,7 +214,7 @@ Therefore the series diverges for every
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If the series converges for every real $x$, then
 \[
@@ -238,7 +238,7 @@ Thus $C$ is unbounded above, and its supremum in the extended interval is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If the required parameter is required to lie in
 \[
@@ -260,7 +260,7 @@ If the source's phrase
 \[
 \rho\ge0
 \]
-is intended to permit the infinite value, steps <1>3--<1>5 give existence in all cases.
+is intended to permit the infinite value, steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} give existence in all cases.
 If only finite real numbers are allowed, then the statement is false for series such as
 \[
 e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},
@@ -271,7 +271,7 @@ which converges for every real $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The radius is unique.
 
@@ -299,7 +299,7 @@ The same argument applies in the extended-real setting.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore there is a unique radius of convergence
 \[
@@ -319,7 +319,7 @@ and diverges for
 
 ::: pf-proof
 
-Existence follows from steps <1>3--<1>5, and uniqueness from step <1>7.
+Existence follows from steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, and uniqueness from step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -327,7 +327,7 @@ Existence follows from steps <1>3--<1>5, and uniqueness from step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the standard radius-of-convergence theorem, with step <1>6 recording the necessary infinite-radius case omitted by the literal finite-valued wording.
+Step [](#s1-8){.pf-ref} is the standard radius-of-convergence theorem, with step [](#s1-6){.pf-ref} recording the necessary infinite-radius case omitted by the literal finite-valued wording.
 
 :::
 

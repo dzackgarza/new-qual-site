@@ -17,7 +17,7 @@ Let $\{ f _ { n } ( x ) \}$ be a sequence of non-negative continuous functions o
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $f_n\to f$ uniformly on $X$, then $f$ is continuous.
 
@@ -58,7 +58,7 @@ Thus $f$ is continuous at $x_0$, and hence on $X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume conversely that $f$ is continuous, and fix $\varepsilon>0$.
 For each $n$, define
@@ -84,7 +84,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sets $U_n$ are increasing:
 \[
@@ -110,7 +110,7 @@ Thus membership in $U_n$ implies membership in $U_{n+1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The sets $U_n$ cover $X$.
 
@@ -135,7 +135,7 @@ so $x\in U_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists $N$ such that
 \[
@@ -145,7 +145,7 @@ U_N=X.
 
 ::: pf-proof
 
-By steps <1>2 and <1>4, the sets $U_n$ form an open cover of the compact space $X$. Hence finitely many
+By steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, the sets $U_n$ form an open cover of the compact space $X$. Hence finitely many
 \[
 U_{n_1},\ldots,U_{n_r}
 \]
@@ -153,7 +153,7 @@ cover $X$. Let
 \[
 N=\max\{n_1,\ldots,n_r\}.
 \]
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 U_{n_j}\subseteq U_N
 \]
@@ -167,7 +167,7 @@ Thus $U_N=X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For every $n\ge N$ and every $x\in X$,
 \[
@@ -195,14 +195,14 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore $f_n\to f$ uniformly on $X$.
 
 
 ::: pf-proof
 
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 \[
 \sup_{x\in X}|f_n(x)-f(x)|<\varepsilon
 \]
@@ -212,7 +212,7 @@ for every $n\ge N$. This is uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -226,7 +226,7 @@ f_n\to f\text{ uniformly on }X
 
 ::: pf-proof
 
-Step <1>1 proves the forward implication from uniform convergence to continuity, and steps <1>2--<1>7 prove the converse under the monotone hypotheses.
+Step [](#s1-1){.pf-ref} proves the forward implication from uniform convergence to continuity, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the converse under the monotone hypotheses.
 
 :::
 
@@ -234,7 +234,7 @@ Step <1>1 proves the forward implication from uniform convergence to continuity,
 
 ::: pf-qed
 
-Step <1>8 is the required equivalence.
+Step [](#s1-8){.pf-ref} is the required equivalence.
 
 :::
 

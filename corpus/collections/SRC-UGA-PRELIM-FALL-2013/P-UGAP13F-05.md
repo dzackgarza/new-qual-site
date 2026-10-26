@@ -107,7 +107,7 @@ e^y\,dy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Thus
 \[
@@ -133,7 +133,7 @@ e^2-1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Now let $C_2$ go vertically from
 \[
@@ -175,7 +175,7 @@ vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Along the horizontal segment of $C_2$,
 \[
@@ -206,7 +206,7 @@ y=2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -221,13 +221,13 @@ y e^x\,dx+x e^y\,dy
 
 ::: pf-proof
 
-Combine steps <1>4--<1>5.
+Combine steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The two values are different:
 \[
@@ -242,7 +242,7 @@ Hence the integral depends on the path.
 
 ::: pf-proof
 
-Steps <1>3 and <1>6 give two paths with the same endpoints but different
+Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give two paths with the same endpoints but different
 line integrals.
 Therefore the integral is not path-independent.
 
@@ -291,7 +291,7 @@ Here that equality fails in general, so the form is not conservative.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For part (b), define
 \[
@@ -325,7 +325,7 @@ Thus the gradient is a negative scalar multiple of the position vector.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For every
 \[
@@ -366,7 +366,7 @@ At the origin itself,
 
 ::: pf-qed
 
-Step <1>7 answers part (a), and steps <1>9--<1>10 answer part (b).
+Step [](#s1-7){.pf-ref} answers part (a), and steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} answer part (b).
 
 :::
 

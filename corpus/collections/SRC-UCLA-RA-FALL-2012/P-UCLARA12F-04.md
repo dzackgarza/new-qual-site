@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There is an absolute constant $C_0$ such that
 $$
@@ -81,7 +81,7 @@ Dividing by $2\pi$ proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every continuous $g$ on $\mathbb T$,
 $$
@@ -92,7 +92,7 @@ $$
 
 ::: pf-proof
 
-Using the convolution formula and step <1>1,
+Using the convolution formula and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 |s_n(g)(x)|
@@ -124,7 +124,7 @@ Trigonometric polynomials are uniformly dense in $C(\mathbb T)$ by the Stone--We
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $N$ is the degree of $P$, then for every $n\ge N$,
 $$
@@ -140,7 +140,7 @@ The Fourier series of a trigonometric polynomial has only finitely many nonzero 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every $n\ge N$,
 $$
@@ -153,11 +153,11 @@ $$
 
 ::: pf-proof
 
-By linearity and step <1>4,
+By linearity and step [](#s1-4){.pf-ref},
 $$
 s_n(f)=P+s_n(f-P).
 $$
-Therefore step <1>2 gives
+Therefore step [](#s1-2){.pf-ref} gives
 $$
 \begin{aligned}
 \|s_n(f)\|_\infty
@@ -171,7 +171,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -183,7 +183,7 @@ $$
 
 ::: pf-proof
 
-Divide the estimate from step <1>5 by $\log n$ and let $n\to\infty$:
+Divide the estimate from step [](#s1-5){.pf-ref} by $\log n$ and let $n\to\infty$:
 $$
 \limsup_{n\to\infty}
 \frac{\|s_n(f)\|_\infty}{\log n}
@@ -197,7 +197,7 @@ Since $\varepsilon>0$ was arbitrary, the limsup is $0$. The quotient is nonnegat
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

@@ -49,7 +49,7 @@ so the unsigned formula is false.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every non-loop edge
 $$
@@ -113,7 +113,7 @@ which rearranges to the displayed recurrence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -159,7 +159,7 @@ contradicting acyclicity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If
 $$
@@ -235,7 +235,7 @@ in
 $$
 G-e,
 $$
-which is impossible by step <1>2. Since
+which is impossible by step [](#s1-2){.pf-ref}. Since
 $$
 \mathcal O
 $$
@@ -247,7 +247,7 @@ The other case is symmetric.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If neither
 $$
@@ -304,7 +304,7 @@ By hypothesis no such directed path exists in either direction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The acyclic orientations of
 $$
@@ -401,7 +401,7 @@ The two constructions are inverse to each other.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The number of acyclic orientations satisfies
 $$
@@ -419,7 +419,7 @@ Start with an acyclic orientation of
 $$
 G-e.
 $$
-By steps <1>3--<1>4, it contributes:
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, it contributes:
 
 1. one acyclic extension to
 $$
@@ -438,7 +438,7 @@ a(G-e),
 $$
 and each incomparable orientation contributes one additional extension.
 
-By step <1>5, the number of incomparable orientations is
+By step [](#s1-5){.pf-ref}, the number of incomparable orientations is
 $$
 a(G/e).
 $$
@@ -454,7 +454,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Define
 $$
@@ -483,7 +483,7 @@ $$
 \qquad
 |V(G/e)|=n-1.
 $$
-Evaluate the chromatic recurrence of step <1>1 at $k=-1$:
+Evaluate the chromatic recurrence of step [](#s1-1){.pf-ref} at $k=-1$:
 $$
 \chi(G;-1)
 =
@@ -510,7 +510,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 $$
@@ -549,7 +549,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For every finite loopless graph,
 $$
@@ -564,7 +564,7 @@ $$
 
 Induct on the number of edges.
 
-The base case is step <1>8.
+The base case is step [](#s1-8){.pf-ref}.
 
 For a graph with at least one edge, choose a non-loop edge
 $$
@@ -584,7 +584,7 @@ a(G-e)=b(G-e),
 \qquad
 a(G/e)=b(G/e).
 $$
-Steps <1>6--<1>7 therefore give
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} therefore give
 $$
 a(G)
 =
@@ -601,7 +601,7 @@ $$
 
 ::: pf-qed
 
-Step <1>1 gives the chromatic recurrence. Step <1>9 proves the corrected acyclic-orientation theorem and explains why the unsigned statement printed in the source cannot be correct.
+Step [](#s1-1){.pf-ref} gives the chromatic recurrence. Step [](#s1-9){.pf-ref} proves the corrected acyclic-orientation theorem and explains why the unsigned statement printed in the source cannot be correct.
 
 :::
 

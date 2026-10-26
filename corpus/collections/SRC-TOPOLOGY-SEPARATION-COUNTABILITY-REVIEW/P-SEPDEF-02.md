@@ -25,7 +25,7 @@ Prove that a topological space $X$ is normal if and only if $X$ is $T_1$ and, fo
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose $X$ is normal. Then $X$ is $T_1$, and whenever $A\subseteq U$ with $A$ closed and $U$ open, there is an open set $V$ containing $A$ such that
 $$
@@ -59,7 +59,7 @@ Therefore $\overline V\subseteq U$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, suppose $X$ is $T_1$ and has the stated closure-neighborhood property. Then $X$ is normal.
 
@@ -88,7 +88,7 @@ Then $W$ is open. Since $\overline V\subseteq X\setminus B$, one has $B\subseteq
 
 ::: pf-qed
 
-Step <1>1 proves the forward implication, and step <1>2 proves the converse.
+Step [](#s1-1){.pf-ref} proves the forward implication, and step [](#s1-2){.pf-ref} proves the converse.
 
 :::
 

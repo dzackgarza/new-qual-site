@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The element
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -68,7 +68,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \delta\in I.
 $$
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Define
 $$
@@ -120,7 +120,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Set
 $$
@@ -138,7 +138,7 @@ $$
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 t\in I.
 $$
@@ -152,7 +152,7 @@ so $e$ and $a$ determine the same coset modulo $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Because
 $$
@@ -176,7 +176,7 @@ This is immediate from the square-zero hypothesis on $I$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -192,7 +192,7 @@ Using
 $$
 e=a+t,
 $$
-and step <1>5,
+and step [](#s1-5){.pf-ref},
 $$
 \begin{aligned}
 e^2-e
@@ -211,7 +211,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 $$
@@ -245,7 +245,7 @@ $$
 \delta+4\delta^2.
 \end{aligned}
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \delta^2=0,
 $$
@@ -260,20 +260,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The element $e$ is idempotent.
 
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 t
 =
 -(2a-1)\delta.
 $$
-Substitute this into step <1>6:
+Substitute this into step [](#s1-6){.pf-ref}:
 $$
 \begin{aligned}
 e^2-e
@@ -287,7 +287,7 @@ e^2-e
 0,
 \end{aligned}
 $$
-where step <1>7 is used in the second equality.
+where step [](#s1-7){.pf-ref} is used in the second equality.
 Therefore
 $$
 e^2=e.
@@ -297,7 +297,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence the coset
 $$
@@ -308,11 +308,11 @@ contains an idempotent element of $R$.
 
 ::: pf-proof
 
-Step <1>4 shows
+Step [](#s1-4){.pf-ref} shows
 $$
 e+I=a+I,
 $$
-and step <1>8 shows that $e$ is idempotent.
+and step [](#s1-8){.pf-ref} shows that $e$ is idempotent.
 Thus
 $$
 \boxed{
@@ -328,7 +328,7 @@ $$
 
 ::: pf-qed
 
-Step <1>9 is the required conclusion.
+Step [](#s1-9){.pf-ref} is the required conclusion.
 
 :::
 

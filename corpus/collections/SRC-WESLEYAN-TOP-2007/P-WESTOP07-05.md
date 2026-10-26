@@ -20,7 +20,7 @@ Give an intrinsic condition on a topological space $X$ characterizing each of th
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -156,7 +156,7 @@ This, together with the Hausdorff condition, is the standard intrinsic definitio
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -225,7 +225,7 @@ embeds as a subspace of a compact Hausdorff space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every topological space is homeomorphic to a subspace of a contractible space.
 
@@ -318,7 +318,7 @@ every point is sent to the apex. The formula is well-defined on the collapsed to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every topological space is homeomorphic to a subspace of a simply connected space.
 
@@ -329,7 +329,7 @@ If
 $$
 X
 $$
-is nonempty, step <1>4 embeds it in the contractible space
+is nonempty, step [](#s1-4){.pf-ref} embeds it in the contractible space
 $$
 CX.
 $$
@@ -345,7 +345,7 @@ it embeds as the empty subspace of any simply connected space, for example a poi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Thus the three intrinsic characterizations are
 $$
@@ -373,7 +373,7 @@ $$
 
 ::: pf-proof
 
-These are steps <1>1, <1>3, and <1>5, respectively.
+These are steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-5){.pf-ref}, respectively.
 
 :::
 
@@ -381,7 +381,7 @@ These are steps <1>1, <1>3, and <1>5, respectively.
 
 ::: pf-qed
 
-Step <1>6 gives the requested intrinsic characterizations.
+Step [](#s1-6){.pf-ref} gives the requested intrinsic characterizations.
 
 :::
 

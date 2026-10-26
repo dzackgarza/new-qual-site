@@ -49,7 +49,7 @@ for every $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The family $(f_n)$ is uniformly bounded and equicontinuous on $[0,1]$.
 
@@ -74,7 +74,7 @@ Thus the family has a common Hölder modulus of continuity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There is a subsequence
 \[
@@ -85,13 +85,13 @@ that converges uniformly on $[0,1]$ to a continuous function $f$.
 
 ::: pf-proof
 
-Apply the Arzelà--Ascoli theorem to step <1>1.
+Apply the Arzelà--Ascoli theorem to step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The limit $f$ belongs to
 \[
@@ -130,7 +130,7 @@ Taking the supremum gives the stated bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -148,7 +148,7 @@ and
 
 ::: pf-proof
 
-The uniform convergence in step <1>2 gives
+The uniform convergence in step [](#s1-2){.pf-ref} gives
 \[
 \|g_j\|_\infty\to0.
 \]
@@ -164,13 +164,13 @@ M+M
 =
 2M
 \]
-by the triangle inequality for the Hölder seminorm and step <1>3.
+by the triangle inequality for the Hölder seminorm and step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If a function $g$ satisfies
 \[
@@ -239,7 +239,7 @@ Thus the displayed bound holds for every pair $x\ne y$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -249,7 +249,7 @@ One has
 
 ::: pf-proof
 
-Apply step <1>5 with
+Apply step [](#s1-5){.pf-ref} with
 \[
 \eta=\|g_j\|_\infty
 \]
@@ -257,7 +257,7 @@ and
 \[
 H=2M.
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \eta\to0.
 \]
@@ -274,7 +274,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -293,13 +293,13 @@ By definition,
 +
 [g_j]_{1/3}.
 \]
-The first term tends to zero by step <1>4, and the second by step <1>6.
+The first term tends to zero by step [](#s1-4){.pf-ref}, and the second by step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Thus every bounded sequence in
 \[
@@ -313,7 +313,7 @@ has a subsequence converging in
 
 ::: pf-proof
 
-The subsequence constructed in step <1>2 converges in the stronger sense established in step <1>7.
+The subsequence constructed in step [](#s1-2){.pf-ref} converges in the stronger sense established in step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -321,7 +321,7 @@ The subsequence constructed in step <1>2 converges in the stronger sense establi
 
 ::: pf-qed
 
-Step <1>8 is the required compact-embedding statement.
+Step [](#s1-8){.pf-ref} is the required compact-embedding statement.
 
 :::
 

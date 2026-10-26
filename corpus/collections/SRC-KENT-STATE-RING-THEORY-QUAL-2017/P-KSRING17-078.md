@@ -44,7 +44,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exist finitely many elements
 $$
@@ -88,7 +88,7 @@ such a finite representation exists.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -143,7 +143,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -156,7 +156,7 @@ $$
 
 ::: pf-proof
 
-Multiply the identity from step <1>1 by $x$:
+Multiply the identity from step [](#s1-1){.pf-ref} by $x$:
 $$
 \begin{aligned}
 ax
@@ -167,7 +167,7 @@ x
 \sum_{i=1}^{n}x_i(xy_i).
 \end{aligned}
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 xy_i
 =
@@ -190,13 +190,13 @@ using commutativity of $R$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Since $R$ is a domain and
 $$
 a\ne0,
 $$
-one may cancel $a$ in step <1>3, obtaining
+one may cancel $a$ in step [](#s1-3){.pf-ref}, obtaining
 $$
 x
 =
@@ -206,7 +206,7 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 $$
 a
 \left(
@@ -231,7 +231,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The elements
 $$
@@ -256,7 +256,7 @@ Conversely, let
 $$
 x\in I.
 $$
-Step <1>4 expresses $x$ as an $R$-linear combination of the $x_i$.
+Step [](#s1-4){.pf-ref} expresses $x$ as an $R$-linear combination of the $x_i$.
 Thus
 $$
 x\in(x_1,\ldots,x_n).
@@ -273,7 +273,7 @@ Therefore $I$ is finitely generated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By symmetry, $J$ is finitely generated.
 
@@ -288,7 +288,7 @@ and
 $$
 J.
 $$
-The same representation from step <1>1 and the same cancellation argument show that the finitely many elements
+The same representation from step [](#s1-1){.pf-ref} and the same cancellation argument show that the finitely many elements
 $$
 y_1,\ldots,y_n
 $$
@@ -298,7 +298,7 @@ generate $J$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore, under the corrected nonzero-product hypothesis,
 $$
@@ -310,7 +310,7 @@ $$
 
 ::: pf-proof
 
-Step <1>5 proves the assertion for $I$, and step <1>6 proves it for $J$.
+Step [](#s1-5){.pf-ref} proves the assertion for $I$, and step [](#s1-6){.pf-ref} proves it for $J$.
 
 :::
 
@@ -318,7 +318,7 @@ Step <1>5 proves the assertion for $I$, and step <1>6 proves it for $J$.
 
 ::: pf-qed
 
-Step <1>7 is the intended conclusion.
+Step [](#s1-7){.pf-ref} is the intended conclusion.
 
 :::
 

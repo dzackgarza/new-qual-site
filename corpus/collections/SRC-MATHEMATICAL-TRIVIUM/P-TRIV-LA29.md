@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 $$
@@ -53,7 +53,7 @@ transformations, hence is linear.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the basis vectors,
 $$
@@ -67,13 +67,13 @@ $$
 
 ::: pf-proof
 
-Apply the definition in step <1>1 and the relation $Se_i=e_{i+1}$.
+Apply the definition in step [](#s1-1){.pf-ref} and the relation $Se_i=e_{i+1}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 At $\lambda=1$,
 $$
@@ -83,7 +83,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 gives
+Step [](#s1-1){.pf-ref} gives
 $$
 U(1)=1\cdot I+0\cdot S=I.
 $$
@@ -92,7 +92,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At $\lambda=0$,
 $$
@@ -103,7 +103,7 @@ for every $i$.
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 $$
 U(0)e_i=Se_i=e_{i+1}.
 $$
@@ -112,7 +112,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The path $\lambda\mapsto U(\lambda)$ is continuous in operator norm.
 
@@ -151,8 +151,8 @@ Thus the path is Lipschitz, hence continuous.
 
 ::: pf-qed
 
-Steps <1>3--<1>5 verify the two endpoint conditions and continuity of the
-family defined in step <1>1.
+Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} verify the two endpoint conditions and continuity of the
+family defined in step [](#s1-1){.pf-ref}.
 
 :::
 

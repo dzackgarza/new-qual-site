@@ -29,7 +29,7 @@ with every $U_n\subseteq\mathbb R$ open.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every $U_n$ is dense in $\mathbb R$.
 
@@ -57,7 +57,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Enumerate
 \[
@@ -83,7 +83,7 @@ Therefore its complement is open and dense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The intersection
 \[
@@ -98,7 +98,7 @@ Each
 \[
 U_n\cap V_n
 \]
-is open and dense by steps <1>1--<1>2.
+is open and dense by steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 Apply the Baire category theorem to the complete metric space $\mathbb R$: the intersection of countably many open dense subsets of a nonempty complete metric space is dense, hence nonempty.
 Thus the displayed intersection is nonempty.
@@ -107,7 +107,7 @@ Thus the displayed intersection is nonempty.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 On the other hand,
 \[
@@ -143,14 +143,14 @@ The second equality uses the assumed representation of $\mathbb Q$ and the defin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $\mathbb Q$ is not a countable intersection of open subsets of $\mathbb R$.
 
 
 ::: pf-proof
 
-Steps <1>3 and <1>4 contradict each other.
+Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} contradict each other.
 Hence the assumed representation cannot exist.
 
 :::
@@ -159,7 +159,7 @@ Hence the assumed representation cannot exist.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -30,7 +30,7 @@ m_n=\left\lfloor\frac n2\right\rfloor.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every
 \[
@@ -58,7 +58,7 @@ a_k\ge a_n.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 \[
@@ -75,13 +75,13 @@ There are exactly
 n-m_n
 \]
 terms in the sum.
-By step <1>1, each of them is at least $a_n$.
+By step [](#s1-1){.pf-ref}, each of them is at least $a_n$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -108,7 +108,7 @@ n-m_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence
 \[
@@ -120,7 +120,7 @@ Hence
 
 ::: pf-proof
 
-By steps <1>2--<1>3,
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 \[
 \frac n2 a_n
 \le
@@ -134,9 +134,9 @@ Multiply by $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The right-hand side in step <1>4 tends to $0$.
+The right-hand side in step [](#s1-4){.pf-ref} tends to $0$.
 
 
 ::: pf-proof
@@ -169,7 +169,7 @@ one has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -179,13 +179,13 @@ Therefore
 
 ::: pf-proof
 
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 0\le na_n
 \le
 2\sum_{k=m_n+1}^{n}a_k.
 \]
-The right side tends to zero by step <1>5.
+The right side tends to zero by step [](#s1-5){.pf-ref}.
 The squeeze theorem gives the conclusion.
 
 :::
@@ -194,7 +194,7 @@ The squeeze theorem gives the conclusion.
 
 ::: pf-qed
 
-Step <1>6 is the required limit.
+Step [](#s1-6){.pf-ref} is the required limit.
 
 :::
 

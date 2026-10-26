@@ -23,7 +23,7 @@ Assume $x>0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Use integration by parts with
 $$
@@ -46,7 +46,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -64,13 +64,13 @@ Apply
 $$
 \int u\,dv=uv-\int v\,du
 $$
-using step <1>1.
+using step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence
 $$
@@ -84,7 +84,7 @@ $$
 
 ::: pf-proof
 
-Evaluate the remaining integral in step <1>2.
+Evaluate the remaining integral in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -92,7 +92,7 @@ Evaluate the remaining integral in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 is the required antiderivative.
+Step [](#s1-3){.pf-ref} is the required antiderivative.
 
 :::
 

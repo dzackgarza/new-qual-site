@@ -25,7 +25,7 @@ Let D be an integral domain.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A greatest common divisor of
 $$
@@ -62,7 +62,7 @@ Such a gcd is unique only up to multiplication by a unit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Assume
 $$
@@ -121,7 +121,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Because
 $$
@@ -158,7 +158,7 @@ the displayed representation follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 $$
@@ -189,7 +189,7 @@ for some
 $$
 r,s\in D.
 $$
-Using step <1>3,
+Using step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 d
@@ -210,7 +210,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -223,9 +223,9 @@ $$
 
 ::: pf-proof
 
-Step <1>2 shows that $d$ is a common divisor.
-Step <1>4 shows that every common divisor divides $d$.
-These are exactly the two conditions in the definition from step <1>1.
+Step [](#s1-2){.pf-ref} shows that $d$ is a common divisor.
+Step [](#s1-4){.pf-ref} shows that every common divisor divides $d$.
+These are exactly the two conditions in the definition from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -233,7 +233,7 @@ These are exactly the two conditions in the definition from step <1>1.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), and step <1>5 proves part (b).
+Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

@@ -47,7 +47,7 @@ Among the $N$ birds, $M$ are marked and $N-M$ are unmarked. A sample of $n$ bird
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For admissible consecutive population sizes,
 \[
@@ -72,7 +72,7 @@ for the denominator gives the displayed ratio.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The likelihood is nondecreasing from $N$ to $N+1$ exactly when
 \[
@@ -82,7 +82,7 @@ NX\leq Mn-X.
 
 ::: pf-proof
 
-Comparing the ratio in step <1>2 with $1$ gives
+Comparing the ratio in step [](#s1-2){.pf-ref} with $1$ gives
 \[
 (N+1-M)(N+1-n)
 \geq(N+1)(N+1-M-n+X).
@@ -97,7 +97,7 @@ which is $NX\leq Mn-X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $X>0$, the maximum-likelihood population size is therefore the integer nearest the transition point $Mn/X$, with the exact rule
 \[
@@ -112,13 +112,13 @@ maximize the likelihood.
 
 ::: pf-proof
 
-Step <1>3 says $L(N+1)\geq L(N)$ precisely for $N+1\leq Mn/X$. Thus the likelihood increases until the ratio crosses $1$ and decreases afterward. If $Mn/X$ is not an integer, the last increase ends at $\lfloor Mn/X\rfloor$, which is the unique maximizer. If $Mn/X=K$ is an integer, then $L(K)=L(K-1)$ and the adjacent ratios on either side are respectively greater and less than $1$, so both $K-1$ and $K$ are maximizers.
+Step [](#s1-3){.pf-ref} says $L(N+1)\geq L(N)$ precisely for $N+1\leq Mn/X$. Thus the likelihood increases until the ratio crosses $1$ and decreases afterward. If $Mn/X$ is not an integer, the last increase ends at $\lfloor Mn/X\rfloor$, which is the unique maximizer. If $Mn/X=K$ is an integer, then $L(K)=L(K-1)$ and the adjacent ratios on either side are respectively greater and less than $1$, so both $K-1$ and $K$ are maximizers.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 In the usual large-population interpretation, this is the capture--recapture estimate
 \[
@@ -128,20 +128,20 @@ In the usual large-population interpretation, this is the capture--recapture est
 
 ::: pf-proof
 
-The observed marked fraction $X/n$ estimates the population marked fraction $M/N$. Solving $X/n=M/N$ gives $N=Mn/X$, agreeing with the exact likelihood transition in step <1>4.
+The observed marked fraction $X/n$ estimates the population marked fraction $M/N$. Solving $X/n=M/N$ gives $N=Mn/X$, agreeing with the exact likelihood transition in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $X=0$, there is no finite maximum-likelihood estimate of $N$.
 
 
 ::: pf-proof
 
-With no recaptured marked birds, step <1>2 becomes
+With no recaptured marked birds, step [](#s1-2){.pf-ref} becomes
 \[
 \frac{L(N+1)}{L(N)}
 =\frac{(N+1-M)(N+1-n)}{(N+1)(N+1-M-n)}>1
@@ -154,7 +154,7 @@ for admissible finite $N$, so the likelihood increases toward its supremum as $N
 
 ::: pf-qed
 
-Steps <1>4--<1>6 give the maximum-likelihood answer, including the integer tie and zero-recapture cases.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the maximum-likelihood answer, including the integer tie and zero-recapture cases.
 
 :::
 

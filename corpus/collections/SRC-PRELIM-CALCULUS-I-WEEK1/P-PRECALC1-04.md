@@ -24,7 +24,7 @@ c>0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative is
 \[
@@ -55,7 +55,7 @@ e^x=c.
 
 ::: pf-proof
 
-Use step <1>1.
+Use step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -94,7 +94,7 @@ for every \(x\in\mathbb R\).
 
 ::: pf-proof
 
-Differentiate step <1>1.
+Differentiate step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -132,7 +132,7 @@ and any critical point is its global minimizer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Evaluate:
 \[
@@ -158,7 +158,7 @@ e^{\log c}=c.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence the minimum value is
 \[
@@ -169,7 +169,7 @@ c(1-\log c)}.
 
 ::: pf-proof
 
-Factor \(c\) from step <1>7.
+Factor \(c\) from step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -177,7 +177,7 @@ Factor \(c\) from step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the requested minimum value.
+Step [](#s1-8){.pf-ref} is the requested minimum value.
 
 :::
 

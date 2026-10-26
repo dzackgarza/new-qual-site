@@ -36,7 +36,7 @@ q_k=a_{2k-1}=-\frac1{2k-1}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The positive subseries diverges to $+\infty$, while the negative subseries diverges to $-\infty$.
 
@@ -70,14 +70,14 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Construct a rearranged sequence by alternately taking unused positive terms until the running sum exceeds $\alpha$, then unused negative terms until it is below $\alpha$.
 
 
 ::: pf-proof
 
-Start with sum $0$. By step <1>1, after finitely many unused positive terms the running sum is greater than $\alpha$. Then, again by step <1>1, after finitely many unused negative terms it is less than $\alpha$. Repeat this procedure indefinitely.
+Start with sum $0$. By step [](#s1-1){.pf-ref}, after finitely many unused positive terms the running sum is greater than $\alpha$. Then, again by step [](#s1-1){.pf-ref}, after finitely many unused negative terms it is less than $\alpha$. Repeat this procedure indefinitely.
 
 Within each positive block use
 \[
@@ -93,7 +93,7 @@ in their natural order. Thus no term is ever repeated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $p_k$ and every $q_k$ occurs after finitely many stages.
 
@@ -108,9 +108,9 @@ Likewise, each negative block is nonempty, because immediately before it the run
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The order constructed in step <1>2 defines a bijection
+The order constructed in step [](#s1-2){.pf-ref} defines a bijection
 \[
 \sigma:\mathbb N\to\mathbb N.
 \]
@@ -118,7 +118,7 @@ The order constructed in step <1>2 defines a bijection
 
 ::: pf-proof
 
-Step <1>2 shows that no original term is used twice, so the resulting map from positions in the rearranged series to original indices is injective. Step <1>3 shows that every even index $2k$ and every odd index $2k-1$ eventually appears, so the map is surjective. Hence it is a bijection.
+Step [](#s1-2){.pf-ref} shows that no original term is used twice, so the resulting map from positions in the rearranged series to original indices is injective. Step [](#s1-3){.pf-ref} shows that every even index $2k$ and every odd index $2k-1$ eventually appears, so the map is surjective. Hence it is a bijection.
 
 :::
 
@@ -135,7 +135,7 @@ At the end of a positive block, the running sum has just crossed from at most $\
 \[
 0<S_m-\alpha\le p_k.
 \]
-By step <1>3, the indices $k$ of these terminal positive terms tend to infinity as the blocks proceed, and therefore $p_k\to0$.
+By step [](#s1-3){.pf-ref}, the indices $k$ of these terminal positive terms tend to infinity as the blocks proceed, and therefore $p_k\to0$.
 
 Similarly, at the end of a negative block, if the last added term is $q_k$, then the previous running sum was at least $\alpha$ and
 \[
@@ -147,7 +147,7 @@ Again $k\to\infty$ through successive negative blocks and $q_k\to0$. Thus both k
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The rearranged series converges to
 \[
@@ -163,7 +163,7 @@ p_k<\varepsilon
 \qquad\text{and}\qquad
 -q_k<\varepsilon
 \]
-whenever $k\ge K$. By step <1>3, after finitely many blocks all subsequently used terms have indices at least $K$ within their respective positive or negative subsequences.
+whenever $k\ge K$. By step [](#s1-3){.pf-ref}, after finitely many blocks all subsequently used terms have indices at least $K$ within their respective positive or negative subsequences.
 
 From then on, the endpoint of every positive block lies in
 \[
@@ -185,7 +185,7 @@ Therefore $S_m\to\alpha$.
 
 ::: pf-qed
 
-Step <1>4 gives the required bijection $\sigma$, and step <1>6 proves that the rearranged series determined by $\sigma$ has sum $\alpha$.
+Step [](#s1-4){.pf-ref} gives the required bijection $\sigma$, and step [](#s1-6){.pf-ref} proves that the rearranged series determined by $\sigma$ has sum $\alpha$.
 
 :::
 

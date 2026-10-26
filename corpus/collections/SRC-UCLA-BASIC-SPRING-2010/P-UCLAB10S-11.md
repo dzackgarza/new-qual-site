@@ -37,7 +37,7 @@ which exists because the series is absolutely convergent.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix
 \[
@@ -66,7 +66,7 @@ Therefore its tails tend to zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Because $\sigma:\mathbb N\to\mathbb N$ is onto, there exists
 \[
@@ -103,7 +103,7 @@ M=\max\{m_1,\ldots,m_N\}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every
 \[
@@ -121,14 +121,14 @@ a_{\sigma(1)},\ldots,a_{\sigma(m)}.
 
 ::: pf-proof
 
-This is exactly the containment of index sets from step <1>2.
+This is exactly the containment of index sets from step [](#s1-2){.pf-ref}.
 Increasing $m$ beyond $M$ does not remove any previously occurring index.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For
 \[
@@ -146,7 +146,7 @@ one has
 
 ::: pf-proof
 
-By step <1>3, every index
+By step [](#s1-3){.pf-ref}, every index
 \[
 1,\ldots,N
 \]
@@ -198,7 +198,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence for every
 \[
@@ -216,13 +216,13 @@ one has
 
 ::: pf-proof
 
-Combine steps <1>1 and <1>4.
+Combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -233,7 +233,7 @@ converges to $S$.
 
 ::: pf-proof
 
-Step <1>5 is precisely the $\varepsilon$-definition of convergence of the rearranged partial sums to $S$.
+Step [](#s1-5){.pf-ref} is precisely the $\varepsilon$-definition of convergence of the rearranged partial sums to $S$.
 Thus
 \[
 \boxed{
@@ -247,7 +247,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 In particular, every rearrangement of an absolutely convergent series converges and has the same sum.
 
@@ -255,7 +255,7 @@ In particular, every rearrangement of an absolutely convergent series converges 
 ::: pf-proof
 
 The bijection $\sigma$ was arbitrary.
-Thus step <1>6 applies to every rearrangement.
+Thus step [](#s1-6){.pf-ref} applies to every rearrangement.
 
 :::
 
@@ -263,7 +263,7 @@ Thus step <1>6 applies to every rearrangement.
 
 ::: pf-qed
 
-Step <1>7 is the required conclusion.
+Step [](#s1-7){.pf-ref} is the required conclusion.
 
 :::
 

@@ -22,7 +22,7 @@ Define what it means for $(f_n)$ to converge normally (locally uniformly) to $f$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence \((f_n)\) converges locally uniformly to \(f\) on \(U\) if
 for every compact set
@@ -46,7 +46,7 @@ domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently, for every compact \(K\subset U\) and every
 \[
@@ -110,7 +110,7 @@ This is the terminology requested in the problem statement.
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 give the requested definition and its equivalent
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the requested definition and its equivalent
 \(\varepsilon\)-form.
 
 :::

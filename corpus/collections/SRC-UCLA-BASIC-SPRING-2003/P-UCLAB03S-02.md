@@ -34,7 +34,7 @@ s_N=\sum_{j=1}^N a_j.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sequence of partial sums
 \[
@@ -55,14 +55,14 @@ means precisely that the sequence \((t_N)\) converges in \(\mathbb R\). Every co
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sequence \((s_N)\) is Cauchy.
 
 
 ::: pf-proof
 
-Let \(\varepsilon>0\). By step <1>1, there is \(N_0\) such that whenever \(m>n\ge N_0\),
+Let \(\varepsilon>0\). By step [](#s1-1){.pf-ref}, there is \(N_0\) such that whenever \(m>n\ge N_0\),
 \[
 \sum_{j=n+1}^{m}|a_j|
 =
@@ -84,20 +84,20 @@ Hence \((s_N)\) is Cauchy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The sequence \((s_N)\) converges to a real number.
 
 
 ::: pf-proof
 
-The real numbers are complete, so every Cauchy sequence in \(\mathbb R\) converges. Apply completeness to step <1>2.
+The real numbers are complete, so every Cauchy sequence in \(\mathbb R\) converges. Apply completeness to step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -109,7 +109,7 @@ Therefore
 
 ::: pf-proof
 
-This is exactly the convergence of the partial-sum sequence established in step <1>3.
+This is exactly the convergence of the partial-sum sequence established in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -117,7 +117,7 @@ This is exactly the convergence of the partial-sum sequence established in step 
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

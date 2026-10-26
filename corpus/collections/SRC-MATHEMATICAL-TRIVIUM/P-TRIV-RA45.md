@@ -48,7 +48,7 @@ transform problem.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In part (a),
 $$
@@ -70,7 +70,7 @@ that interval contributes to the Fourier integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $k\neq0$,
 $$
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -121,13 +121,13 @@ for $k\neq0$.
 
 ::: pf-proof
 
-Substitute step <1>2 into step <1>1.
+Substitute step [](#s1-2){.pf-ref} into step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The continuous value at $k=0$ is
 $$
@@ -145,27 +145,27 @@ Using
 $$
 \lim_{k\to0}\frac{\sin(kx_0)}k=x_0,
 $$
-step <1>3 extends continuously to the displayed value. Equivalently, set
-$k=0$ directly in step <1>1.
+step [](#s1-3){.pf-ref} extends continuously to the displayed value. Equivalently, set
+$k=0$ directly in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>3--<1>4 give the complete transform.
+Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give the complete transform.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In part (b),
 $$
@@ -187,7 +187,7 @@ by the Fourier kernel gives $e^{-(a+ik)x}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Since $a>0$,
 $$
@@ -217,7 +217,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 $$
@@ -233,20 +233,20 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>7 into step <1>6 and rationalize the denominator.
+Substitute step [](#s1-7){.pf-ref} into step [](#s1-6){.pf-ref} and rationalize the denominator.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>8.
+This is step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -254,7 +254,7 @@ This is step <1>8.
 
 ::: pf-qed
 
-Steps <1>5 and <1>9 establish parts (a) and (b), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

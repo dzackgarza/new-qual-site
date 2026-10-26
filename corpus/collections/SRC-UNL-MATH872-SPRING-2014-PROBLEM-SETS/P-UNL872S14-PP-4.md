@@ -29,7 +29,7 @@ constructed in PP.2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -48,7 +48,7 @@ These are the centers of the two opposite \(z\)-faces.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Join \(c_0\) to the four bottom vertices. This subdivides the bottom
 square into four triangles.
@@ -63,7 +63,7 @@ into four triangular regions with disjoint interiors.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Apply the corresponding subdivision to the top square using \(c_1\).
 
@@ -82,7 +82,7 @@ subdivision to the top four-triangle subdivision.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Joining each bottom triangle to the corresponding top triangle divides
 the cube into
@@ -101,7 +101,7 @@ have disjoint interiors and fill the cube.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 On each rectangular prism face, choose a diagonal, and on every
 boundary face paired by a cube identification choose the diagonal on the
@@ -118,7 +118,7 @@ ensures that the subdivisions match under the quotient identifications.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Triangulate each triangular prism into three tetrahedra compatibly with
 the chosen boundary diagonals.
@@ -139,13 +139,13 @@ top vertices \(u'_0,u'_1,u'_2\) admits the standard triangulation
 \]
 The induced diagonals on the rectangular faces are exactly the standard
 staircase diagonals. Relabel each prism so these agree with the choices in
-step <1>5.
+step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus the cube has a triangulation by
 \[
@@ -157,14 +157,14 @@ pairings.
 
 ::: pf-proof
 
-There are four prisms by step <1>4 and three tetrahedra in each by step
-<1>6. Compatibility on paired boundary faces is step <1>5.
+There are four prisms by step [](#s1-4){.pf-ref} and three tetrahedra in each by step
+[](#s1-6){.pf-ref}. Compatibility on paired boundary faces is step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Passing to the quotient gives a finite \(\Delta\)-complex structure on
 \(X\).
@@ -207,7 +207,7 @@ PP.2 gave two \(0\)-cells \(A,B\), four \(1\)-cells \(p,q,r,s\), three
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 With the orientations fixed in PP.2,
 \[
@@ -241,7 +241,7 @@ initial vertex.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -254,13 +254,13 @@ Therefore
 
 ::: pf-proof
 
-Extend the formulas in step <1>10 linearly.
+Extend the formulas in step [](#s1-10){.pf-ref} linearly.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The image of \(\partial_1\) is
 \[
@@ -299,7 +299,7 @@ H_0(X)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The three \(2\)-cell attaching words from PP.2 are
 \[
@@ -322,7 +322,7 @@ These were computed from the three pairs of opposite cube faces in PP.2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Hence
 \[
@@ -344,7 +344,7 @@ and
 
 For a cellular \(2\)-cell, the boundary coefficient of a \(1\)-cell is the
 signed total number of times the attaching word traverses that \(1\)-cell.
-Abelianizing the three words in step <1>13 gives the displayed chains.
+Abelianizing the three words in step [](#s1-13){.pf-ref} gives the displayed chains.
 
 :::
 
@@ -375,13 +375,13 @@ M=
 
 ::: pf-proof
 
-The columns are the coordinate vectors from step <1>14.
+The columns are the coordinate vectors from step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The three columns of \(M\) are linearly independent over
 \(\mathbb Z\).
@@ -407,7 +407,7 @@ over \(\mathbb Z\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Therefore
 \[
@@ -417,14 +417,14 @@ Therefore
 
 ::: pf-proof
 
-The domain of \(\partial_2\) is free of rank \(3\), and step <1>16 says the
+The domain of \(\partial_2\) is free of rank \(3\), and step [](#s1-16){.pf-ref} says the
 three images of its basis vectors are independent.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Since
 \[
@@ -442,13 +442,13 @@ The image of \(\partial_3\) lies in
 \[
 \ker\partial_2,
 \]
-which is zero by step <1>17.
+which is zero by step [](#s1-17){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence
 \[
@@ -466,13 +466,13 @@ H_3(X)
 =
 \mathbb Z
 \]
-by step <1>18.
+by step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Also
 \[
@@ -488,13 +488,13 @@ H_2(X)
 =
 \ker\partial_2/\operatorname{im}\partial_3.
 \]
-Both groups are zero by steps <1>17--<1>18.
+Both groups are zero by steps [](#s1-17){.pf-ref} through [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 The kernel of \(\partial_1\) consists of
 \[
@@ -506,13 +506,13 @@ x_p+x_q-x_r-x_s=0\}}.
 
 ::: pf-proof
 
-This is step <1>11.
+This is step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 A basis for \(\ker\partial_1\) is
 \[
@@ -525,7 +525,7 @@ u_3=(0,0,1,-1)}.
 
 ::: pf-proof
 
-Each vector satisfies the equation in step <1>21. Conversely, if
+Each vector satisfies the equation in step [](#s1-21){.pf-ref}. Conversely, if
 \[
 x_p+x_q-x_r-x_s=0,
 \]
@@ -565,7 +565,7 @@ For
 \[
 \partial_2F_x=(1,1,1,1),
 \]
-the coordinates in the basis of step <1>22 are \((1,1,1)\).
+the coordinates in the basis of step [](#s1-22){.pf-ref} are \((1,1,1)\).
 
 For
 \[
@@ -584,7 +584,7 @@ These are the columns of \(N\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-24}
 
 The determinant of \(N\) is
 \[
@@ -610,7 +610,7 @@ A direct expansion gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-25}
 
 The greatest common divisor of all entries of \(N\) is \(1\), and the
 greatest common divisor of its \(2\times2\) minors is \(2\).
@@ -635,7 +635,7 @@ so the gcd of all \(2\times2\) minors is exactly \(2\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-26}
 
 Therefore the Smith normal form of \(N\) is
 \[
@@ -660,7 +660,7 @@ and
 \[
 d_1d_2d_3=|\det N|.
 \]
-By steps <1>24--<1>25,
+By steps [](#s1-24){.pf-ref} through [](#s1-25){.pf-ref},
 \[
 d_1=1,\qquad
 d_1d_2=2,\qquad
@@ -675,7 +675,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-27}
 
 Consequently,
 \[
@@ -690,7 +690,7 @@ H_1(X)
 
 ::: pf-proof
 
-In the basis of step <1>22, the inclusion of
+In the basis of step [](#s1-22){.pf-ref}, the inclusion of
 \[
 \operatorname{im}\partial_2
 \]
@@ -698,7 +698,7 @@ into
 \[
 \ker\partial_1\cong\mathbb Z^3
 \]
-is represented by \(N\). Step <1>26 gives the quotient
+is represented by \(N\). Step [](#s1-26){.pf-ref} gives the quotient
 \[
 \mathbb Z^3/
 N\mathbb Z^3
@@ -711,10 +711,10 @@ Discard the trivial factor.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-28}
 
 Thus the simplicial homology groups of the \(\Delta\)-complex from
-step <1>8 are
+step [](#s1-8){.pf-ref} are
 \[
 \boxed{
 H_n^{\mathrm{simpl}}(X)
@@ -729,8 +729,8 @@ H_n^{\mathrm{simpl}}(X)
 
 ::: pf-proof
 
-Steps <1>12, <1>19, <1>20, and <1>27 compute the homology groups of the
-finite CW structure on the same space. The \(\Delta\)-complex of step <1>8
+Steps [](#s1-12){.pf-ref}, [](#s1-19){.pf-ref}, and [](#s1-20){.pf-ref}, and [](#s1-27){.pf-ref} compute the homology groups of the
+finite CW structure on the same space. The \(\Delta\)-complex of step [](#s1-8){.pf-ref}
 is a subdivision of this structure, and simplicial homology of a
 \(\Delta\)-complex agrees with the homology of the underlying space.
 Therefore the same groups are the requested simplicial homology groups.
@@ -765,7 +765,7 @@ Q_8/\{\pm1\}
 \cong
 \mathbb Z/2\oplus\mathbb Z/2.
 \]
-This matches step <1>27 and the general identity
+This matches step [](#s1-27){.pf-ref} and the general identity
 \[
 H_1(X;\mathbb Z)\cong\pi_1(X)^{\mathrm{ab}}.
 \]
@@ -776,7 +776,7 @@ H_1(X;\mathbb Z)\cong\pi_1(X)^{\mathrm{ab}}.
 
 ::: pf-qed
 
-Steps <1>1--<1>8 describe the requested \(\Delta\)-complex, and step <1>28
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} describe the requested \(\Delta\)-complex, and step [](#s1-28){.pf-ref}
 gives all simplicial homology groups.
 
 :::

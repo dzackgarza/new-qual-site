@@ -42,7 +42,7 @@ Let $\mathcal N=\{a\in R:a^n=0\text{ for some }n\geq1\}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $\mathcal N$ is an ideal of $R$.
 
@@ -55,7 +55,7 @@ The element $0$ is nilpotent. If $a^m=b^n=0$, then every term in the binomial ex
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every prime ideal of $R$ contains $\mathcal N$.
 
@@ -68,7 +68,7 @@ If $a^m=0\in\mathfrak p$ with $\mathfrak p$ prime, repeated application of the i
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $x$ is not nilpotent and $I$ is maximal among ideals disjoint from $S=\{x^n:n\geq1\}$, then $I$ is prime.
 
@@ -85,7 +85,7 @@ contradicting $I\cap S=\varnothing$. Therefore $a\in I$ or $b\in I$, proving pri
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The nilradical equals the intersection of all prime ideals:
 \[
@@ -95,7 +95,7 @@ The nilradical equals the intersection of all prime ideals:
 
 ::: pf-proof
 
-Step <1>2 gives containment from left to right. Conversely, if $x\notin\mathcal N$, step <1>3 supplies a prime ideal disjoint from the powers of $x$, so in particular it does not contain $x$. Thus no nonnilpotent element belongs to the displayed intersection.
+Step [](#s1-2){.pf-ref} gives containment from left to right. Conversely, if $x\notin\mathcal N$, step [](#s1-3){.pf-ref} supplies a prime ideal disjoint from the powers of $x$, so in particular it does not contain $x$. Thus no nonnilpotent element belongs to the displayed intersection.
 
 :::
 
@@ -103,7 +103,7 @@ Step <1>2 gives containment from left to right. Conversely, if $x\notin\mathcal 
 
 ::: pf-qed
 
-Steps <1>1--<1>4 establish parts (a)--(d), respectively.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish parts (a)--(d), respectively.
 
 :::
 

@@ -22,7 +22,7 @@ Justify your answer.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The statement is
 \[
@@ -75,7 +75,7 @@ without an additional regularity hypothesis, are not sufficient.
 
 ::: pf-qed
 
-Step <1>1 gives a counterexample satisfying the equations throughout a domain
+Step [](#s1-1){.pf-ref} gives a counterexample satisfying the equations throughout a domain
 but failing to be analytic there.
 
 :::

@@ -72,7 +72,7 @@ The differentiated series therefore represents $f'$ on the punctured disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficient of
 $$
@@ -115,7 +115,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A function with a simple pole at $0$ has a nonzero
 $$
@@ -143,14 +143,14 @@ Equivalently, its residue at the pole is nonzero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore $f'$ cannot have a simple pole at $0$.
 
 
 ::: pf-proof
 
-Step <1>3 says that the $z^{-1}$ coefficient of $f'$ is zero. Step <1>4 says that a simple pole would require that coefficient to be nonzero. These conditions are incompatible.
+Step [](#s1-3){.pf-ref} says that the $z^{-1}$ coefficient of $f'$ is zero. Step [](#s1-4){.pf-ref} says that a simple pole would require that coefficient to be nonzero. These conditions are incompatible.
 
 :::
 
@@ -158,7 +158,7 @@ Step <1>3 says that the $z^{-1}$ coefficient of $f'$ is zero. Step <1>4 says tha
 
 ::: pf-qed
 
-Step <1>5 proves that no such analytic function $f$ exists.
+Step [](#s1-5){.pf-ref} proves that no such analytic function $f$ exists.
 
 :::
 

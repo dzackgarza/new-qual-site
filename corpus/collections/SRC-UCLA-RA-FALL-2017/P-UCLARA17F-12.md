@@ -33,7 +33,7 @@ B\coloneqq h^{-1}(Z).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $Z$ is discrete in $\mathbb C$.
 
@@ -46,7 +46,7 @@ Since $g$ is non-constant and entire, $g'$ is not identically zero. The zeros of
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $h$ is holomorphic on $\mathbb C\setminus B$.
 
@@ -71,7 +71,7 @@ The right-hand side is holomorphic, so $h$ is holomorphic at $z_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $B$ is discrete in $\mathbb C$.
 
@@ -86,7 +86,7 @@ Then $h(z_n)\in Z$ for all $n$, while continuity of $h$ gives
 \[
 h(z_n)\longrightarrow h(z_\infty).
 \]
-Because $Z$ is the zero set of the continuous function $g'$, it is closed, so $h(z_\infty)\in Z$. Since $Z$ is discrete by step <1>1, there is a neighborhood of $h(z_\infty)$ containing no other point of $Z$. Therefore
+Because $Z$ is the zero set of the continuous function $g'$, it is closed, so $h(z_\infty)\in Z$. Since $Z$ is discrete by step [](#s1-1){.pf-ref}, there is a neighborhood of $h(z_\infty)$ containing no other point of $Z$. Therefore
 \[
 h(z_n)=h(z_\infty)
 \]
@@ -100,31 +100,31 @@ for infinitely many distinct $z_n\to z_\infty$. The identity theorem then forces
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every point of $B$ is a removable singularity for the holomorphic function $h|_{\mathbb C\setminus B}$.
 
 
 ::: pf-proof
 
-Fix $b\in B$. By step <1>3, choose $r>0$ such that
+Fix $b\in B$. By step [](#s1-3){.pf-ref}, choose $r>0$ such that
 \[
 B(b,r)\cap B=\{b\}.
 \]
-Step <1>2 shows that $h$ is holomorphic on the punctured disk $0<|z-b|<r$. Since $h$ is continuous at $b$, it is bounded on some smaller disk around $b$. Riemann's removable singularity theorem therefore extends the punctured-disk holomorphic function across $b$. The extension agrees with the given value $h(b)$ by continuity, so the original function $h$ is holomorphic at $b$.
+Step [](#s1-2){.pf-ref} shows that $h$ is holomorphic on the punctured disk $0<|z-b|<r$. Since $h$ is continuous at $b$, it is bounded on some smaller disk around $b$. Riemann's removable singularity theorem therefore extends the punctured-disk holomorphic function across $b$. The extension agrees with the given value $h(b)$ by continuity, so the original function $h$ is holomorphic at $b$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 $h$ is holomorphic on $\mathbb C$.
 
 
 ::: pf-proof
 
-Step <1>2 gives holomorphy on $\mathbb C\setminus B$, and step <1>4 gives holomorphy at every point of $B$.
+Step [](#s1-2){.pf-ref} gives holomorphy on $\mathbb C\setminus B$, and step [](#s1-4){.pf-ref} gives holomorphy at every point of $B$.
 
 :::
 
@@ -132,7 +132,7 @@ Step <1>2 gives holomorphy on $\mathbb C\setminus B$, and step <1>4 gives holomo
 
 ::: pf-qed
 
-Step <1>5 is the desired conclusion.
+Step [](#s1-5){.pf-ref} is the desired conclusion.
 
 :::
 

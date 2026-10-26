@@ -34,7 +34,7 @@ The multiplicative group of every finite field is cyclic; for $\mathbb F_p$ its 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A nontrivial element $\omega\in\mathbb F_p$ satisfying $\omega^3=1$ exists if and only if
 \[
@@ -50,7 +50,7 @@ Such an $\omega$ has multiplicative order exactly $3$. A cyclic group of order $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The prime $p=3$ does not admit such an $\omega$.
 
@@ -67,7 +67,7 @@ so the only cube root of unity in $\mathbb F_3$ is $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the required primes are precisely
 \[
@@ -77,13 +77,13 @@ Therefore the required primes are precisely
 
 ::: pf-proof
 
-Steps <1>2--<1>3 cover all primes. For a prime different from $3$, divisibility $3\mid p-1$ is equivalent to $p\equiv1\pmod3$.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} cover all primes. For a prime different from $3$, divisibility $3\mid p-1$ is equivalent to $p\equiv1\pmod3$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Fix such a prime $p$ and a nontrivial cube root $\omega\in\mathbb F_p$. Let
 \[
@@ -104,7 +104,7 @@ Thus $f$ has no repeated roots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\alpha$ is a root, then
 \[
@@ -120,7 +120,7 @@ This is exactly the equation $f(\alpha)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Every root satisfies
 \[
@@ -130,7 +130,7 @@ Every root satisfies
 
 ::: pf-proof
 
-Because $\omega\in\mathbb F_p$, one has $\omega^p=\omega$. Applying the $p$-power map successively to step <1>6 gives
+Because $\omega\in\mathbb F_p$, one has $\omega^p=\omega$. Applying the $p$-power map successively to step [](#s1-6){.pf-ref} gives
 \[
 \alpha^{p^2}
 =(\omega\alpha)^p
@@ -150,20 +150,20 @@ and then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence all roots lie in $\mathbb F_{p^3}$.
 
 
 ::: pf-proof
 
-The roots of $X^{p^3}-X$ in an algebraic closure are exactly the elements of $\mathbb F_{p^3}$. Apply step <1>7.
+The roots of $X^{p^3}-X$ in an algebraic closure are exactly the elements of $\mathbb F_{p^3}$. Apply step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The root set
 \[
@@ -178,13 +178,13 @@ The equation is the kernel of the $\mathbb F_p$-linear map
 \[
 T(x)=x^p-\omega x.
 \]
-By step <1>5, $f$ has exactly $p$ distinct roots in its splitting field, and step <1>8 puts all of them in $\mathbb F_{p^3}$. Hence $|V|=p$, so $V$ has dimension one over $\mathbb F_p$.
+By step [](#s1-5){.pf-ref}, $f$ has exactly $p$ distinct roots in its splitting field, and step [](#s1-8){.pf-ref} puts all of them in $\mathbb F_{p^3}$. Hence $|V|=p$, so $V$ has dimension one over $\mathbb F_p$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 If $0\ne\alpha\in V$, then the splitting field is
 \[
@@ -194,20 +194,20 @@ E=\mathbb F_p(\alpha).
 
 ::: pf-proof
 
-By step <1>9, every root is $c\alpha$ for some $c\in\mathbb F_p$. Thus adjoining one nonzero root adjoins every root, and conversely the splitting field contains such a root.
+By step [](#s1-9){.pf-ref}, every root is $c\alpha$ for some $c\in\mathbb F_p$. Thus adjoining one nonzero root adjoins every root, and conversely the splitting field contains such a root.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The element $\alpha$ does not lie in $\mathbb F_p$.
 
 
 ::: pf-proof
 
-If $\alpha\in\mathbb F_p$, then $\alpha^p=\alpha$. Step <1>6 would give
+If $\alpha\in\mathbb F_p$, then $\alpha^p=\alpha$. Step [](#s1-6){.pf-ref} would give
 \[
 \alpha=\omega\alpha.
 \]
@@ -217,7 +217,7 @@ Since $\alpha\ne0$, this would imply $\omega=1$, contrary to the choice of $\ome
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Since $\alpha\in\mathbb F_{p^3}\setminus\mathbb F_p$ and $3$ is prime,
 \[
@@ -227,13 +227,13 @@ Since $\alpha\in\mathbb F_{p^3}\setminus\mathbb F_p$ and $3$ is prime,
 
 ::: pf-proof
 
-The extension $\mathbb F_{p^3}/\mathbb F_p$ has degree $3$. By the tower law, an intermediate field has degree over $\mathbb F_p$ dividing $3$, hence degree $1$ or $3$. Step <1>11 excludes degree $1$ for $\mathbb F_p(\alpha)$.
+The extension $\mathbb F_{p^3}/\mathbb F_p$ has degree $3$. By the tower law, an intermediate field has degree over $\mathbb F_p$ dividing $3$, hence degree $1$ or $3$. Step [](#s1-11){.pf-ref} excludes degree $1$ for $\mathbb F_p(\alpha)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Therefore the splitting field has
 \[
@@ -244,7 +244,7 @@ elements.
 
 ::: pf-proof
 
-Steps <1>10--<1>12 identify the splitting field with $\mathbb F_{p^3}$, which by definition has $p^3$ elements.
+Steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref} identify the splitting field with $\mathbb F_{p^3}$, which by definition has $p^3$ elements.
 
 :::
 
@@ -252,7 +252,7 @@ Steps <1>10--<1>12 identify the splitting field with $\mathbb F_{p^3}$, which by
 
 ::: pf-qed
 
-Step <1>4 identifies the primes, and step <1>13 gives the size of the splitting field for each such prime.
+Step [](#s1-4){.pf-ref} identifies the primes, and step [](#s1-13){.pf-ref} gives the size of the splitting field for each such prime.
 
 :::
 

@@ -42,7 +42,7 @@ p_n(x)=x^n.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The algebraic identity
 \[
@@ -64,7 +64,7 @@ This is the standard factorization of a difference of \(n\)th powers.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -91,7 +91,7 @@ By the triangle inequality,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Under the same hypothesis,
 \[
@@ -106,7 +106,7 @@ n(|a|+1)^{n-1}.
 ::: pf-proof
 
 There are \(n\) terms. Each term has total degree \(n-1\) in \(x\) and \(a\).
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 |x|<|a|+1,
 \]
@@ -124,7 +124,7 @@ Apply the triangle inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore, whenever
 \[
@@ -141,13 +141,13 @@ n(|a|+1)^{n-1}|x-a|}.
 
 ::: pf-proof
 
-Take absolute values in step <1>1 and apply step <1>3.
+Take absolute values in step [](#s1-1){.pf-ref} and apply step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Given
 \[
@@ -174,7 +174,7 @@ The denominator is positive for every \(n\ge1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -193,7 +193,7 @@ Since
 \[
 \delta\le1,
 \]
-step <1>4 applies. Also,
+step [](#s1-4){.pf-ref} applies. Also,
 \[
 |x-a|
 <
@@ -213,7 +213,7 @@ n(|a|+1)^{n-1}|x-a|
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -225,27 +225,27 @@ p_n(x)=x^n
 
 ::: pf-proof
 
-Step <1>6 is the \(\varepsilon\)-\(\delta\) definition of continuity, with
-the explicit \(\delta\) from step <1>5.
+Step [](#s1-6){.pf-ref} is the \(\varepsilon\)-\(\delta\) definition of continuity, with
+the explicit \(\delta\) from step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore \(p_n\) is continuous on all of \(\mathbb R\).
 
 
 ::: pf-proof
 
-The point \(a\) in step <1>7 was arbitrary.
+The point \(a\) in step [](#s1-7){.pf-ref} was arbitrary.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For \(x>0\),
 \[
@@ -269,7 +269,7 @@ The denominator is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
@@ -286,13 +286,13 @@ one has
 
 ::: pf-proof
 
-Apply the lower bound to the denominator in step <1>9.
+Apply the lower bound to the denominator in step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Given \(\varepsilon>0\), choose
 \[
@@ -309,7 +309,7 @@ Since \(a>0\), this \(\delta\) is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 If
 \[
@@ -326,7 +326,7 @@ then
 
 ::: pf-proof
 
-By step <1>10,
+By step [](#s1-10){.pf-ref},
 \[
 |\sqrt x-\sqrt a|
 \le
@@ -341,7 +341,7 @@ By step <1>10,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -353,13 +353,13 @@ Hence
 
 ::: pf-proof
 
-Step <1>12 proves continuity at the arbitrary point \(a>0\).
+Step [](#s1-12){.pf-ref} proves continuity at the arbitrary point \(a>0\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 The difference-of-powers identity gives
 \[
@@ -392,7 +392,7 @@ apply the identity from the problem to \(u^n-v^n\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Every term in the parenthesized sum is nonnegative, and the last term
 equals
@@ -421,7 +421,7 @@ a^{(n-1)/n}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 \[
@@ -439,15 +439,15 @@ a^{(n-1)/n}.
 
 ::: pf-proof
 
-The sum is positive and contains the positive term from step <1>15.
+The sum is positive and contains the positive term from step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
-Taking absolute values in step <1>14,
+Taking absolute values in step [](#s1-14){.pf-ref},
 \[
 \boxed{
 |x^{1/n}-a^{1/n}|
@@ -459,14 +459,14 @@ Taking absolute values in step <1>14,
 
 ::: pf-proof
 
-The second factor in step <1>14 is positive and bounded below as in step
-<1>16. Divide by it.
+The second factor in step [](#s1-14){.pf-ref} is positive and bounded below as in step
+[](#s1-16){.pf-ref}. Divide by it.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Given
 \[
@@ -490,7 +490,7 @@ Since \(a>0\), this is positive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 If
 \[
@@ -507,7 +507,7 @@ then
 
 ::: pf-proof
 
-Use step <1>17:
+Use step [](#s1-17){.pf-ref}:
 \[
 |x^{1/n}-a^{1/n}|
 \le
@@ -527,7 +527,7 @@ a^{(n-1)/n}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Hence
 \[
@@ -539,7 +539,7 @@ f_n(x)=x^{1/n}
 
 ::: pf-proof
 
-Step <1>19 proves continuity at the arbitrary point \(a>0\).
+Step [](#s1-19){.pf-ref} proves continuity at the arbitrary point \(a>0\).
 
 :::
 
@@ -547,8 +547,8 @@ Step <1>19 proves continuity at the arbitrary point \(a>0\).
 
 ::: pf-qed
 
-Steps <1>5--<1>8 prove part (a) with explicit \(\delta\), steps
-<1>9--<1>13 prove part (b), and steps <1>14--<1>20 prove part (c).
+Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} prove part (a) with explicit \(\delta\), steps
+[](#s1-9){.pf-ref} through [](#s1-13){.pf-ref} prove part (b), and steps [](#s1-14){.pf-ref} through [](#s1-20){.pf-ref} prove part (c).
 
 :::
 

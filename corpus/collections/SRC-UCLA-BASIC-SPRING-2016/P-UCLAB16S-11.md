@@ -45,7 +45,7 @@ D_0=1.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The determinants satisfy
 \[
@@ -93,7 +93,7 @@ b^2D_{n-2}.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 \[
@@ -119,7 +119,7 @@ D_{n-1}>0
 \quad\text{and}\quad
 D_{n-2}>0,
 \]
-then step <1>1 gives
+then step [](#s1-1){.pf-ref} gives
 \[
 D_n
 =
@@ -137,7 +137,7 @@ The claim follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -186,7 +186,7 @@ r_+
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every
 \[
@@ -208,7 +208,7 @@ r_+-r_-
 
 ::: pf-proof
 
-The sequence on the right satisfies the recurrence in step <1>1 because each $r_\pm$ satisfies
+The sequence on the right satisfies the recurrence in step [](#s1-1){.pf-ref} because each $r_\pm$ satisfies
 \[
 r_\pm^2
 =
@@ -244,7 +244,7 @@ The recurrence with two initial values determines the sequence uniquely.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Writing
 \[
@@ -277,18 +277,18 @@ The inequality
 \[
 |q|<1
 \]
-is step <1>3.
+is step [](#s1-3){.pf-ref}.
 Factor
 \[
 r_+^{n+1}
 \]
-from the numerator in step <1>4.
+from the numerator in step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently,
 \[
@@ -304,12 +304,12 @@ Consequently,
 
 ::: pf-proof
 
-Step <1>2 gives
+Step [](#s1-2){.pf-ref} gives
 \[
 D_n>0,
 \]
 so its logarithm is defined.
-In step <1>5, one has
+In step [](#s1-5){.pf-ref}, one has
 \[
 r_+-r_->0
 \]
@@ -327,7 +327,7 @@ Taking logarithms gives the identity.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If
 \[
@@ -341,7 +341,7 @@ then
 
 ::: pf-proof
 
-In step <1>6,
+In step [](#s1-6){.pf-ref},
 \[
 (n+1)\log r_+\to+\infty.
 \]
@@ -362,7 +362,7 @@ q^{n+1}\to0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If
 \[
@@ -385,13 +385,13 @@ so the linear term
 (n+1)\log r_+
 \]
 tends to $-\infty$.
-The remaining terms in step <1>6 stay bounded.
+The remaining terms in step [](#s1-6){.pf-ref} stay bounded.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If
 \[
@@ -422,7 +422,7 @@ gives
 \[
 r_-=-b^2.
 \]
-Then step <1>4 gives
+Then step [](#s1-4){.pf-ref} gives
 \[
 D_n
 =
@@ -432,7 +432,7 @@ D_n
 1+b^2
 }.
 \]
-Because step <1>3 gives
+Because step [](#s1-3){.pf-ref} gives
 \[
 |r_-|=b^2<1,
 \]
@@ -447,7 +447,7 @@ and taking logarithms gives the displayed limit.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The condition
 \[
@@ -474,7 +474,7 @@ exactly when
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore the literal source claim of a finite real limit is false in general.
 
@@ -493,7 +493,7 @@ r_+
 >
 1.
 \]
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 \log\det M_n\to+\infty.
 \]
@@ -514,7 +514,7 @@ The complete extended-real behavior is:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The natural normalized statement is
 \[
@@ -534,7 +534,7 @@ a+\sqrt{a^2+4b^2}
 
 ::: pf-proof
 
-Divide the identity in step <1>6 by $n$.
+Divide the identity in step [](#s1-6){.pf-ref} by $n$.
 Then
 \[
 \frac{n+1}{n}\log r_+
@@ -545,7 +545,7 @@ while the constant term divided by $n$ tends to $0$, and
 \[
 \frac1n\log(1-q^{n+1})\to0.
 \]
-Substitute the definition of $r_+$ from step <1>3.
+Substitute the definition of $r_+$ from step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -553,8 +553,8 @@ Substitute the definition of $r_+$ from step <1>3.
 
 ::: pf-qed
 
-Step <1>2 proves positivity of every determinant.
-Steps <1>7--<1>11 give the correct disposition of the literal logarithmic limit, and step <1>12 records the finite normalized limit naturally associated to the problem.
+Step [](#s1-2){.pf-ref} proves positivity of every determinant.
+Steps [](#s1-7){.pf-ref} through [](#s1-11){.pf-ref} give the correct disposition of the literal logarithmic limit, and step [](#s1-12){.pf-ref} records the finite normalized limit naturally associated to the problem.
 
 :::
 

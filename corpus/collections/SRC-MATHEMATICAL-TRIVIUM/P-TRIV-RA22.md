@@ -21,7 +21,7 @@ Find $\int _ { 0 } ^ { \pi ^ { 2 } } \cos { \sqrt { x } } d x .$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Set
 $$
@@ -43,7 +43,7 @@ Differentiate $x=u^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The limits transform as
 $$
@@ -61,7 +61,7 @@ Take the nonnegative square root at both endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -73,13 +73,13 @@ $$
 
 ::: pf-proof
 
-Substitute the relations from steps <1>1--<1>2.
+Substitute the relations from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Integration by parts gives
 $$
@@ -122,7 +122,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -134,7 +134,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -142,7 +142,7 @@ Combine steps <1>3 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required value.
+Step [](#s1-5){.pf-ref} is the required value.
 
 :::
 

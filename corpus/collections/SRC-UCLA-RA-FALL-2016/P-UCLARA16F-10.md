@@ -45,7 +45,7 @@ works.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 \[
@@ -76,7 +76,7 @@ since \(|w|>1\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -103,7 +103,7 @@ r^2-1-\frac32r
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence if
 \[
@@ -118,13 +118,13 @@ then
 
 ::: pf-proof
 
-Combine steps <1>1--<1>2.
+Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every \(m\ge0\),
 \[
@@ -142,7 +142,7 @@ Use induction. The case \(m=0\) is equality. If the bound holds at \(m\), then i
 \[
 |f^{N+m}(z)|>2,
 \]
-so step <1>3 gives
+so step [](#s1-3){.pf-ref} gives
 \[
 |f^{N+m+1}(z)|
 >
@@ -155,7 +155,7 @@ so step <1>3 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -166,13 +166,13 @@ Therefore
 
 ::: pf-proof
 
-The lower bound in step <1>4 grows geometrically to \(+\infty\).
+The lower bound in step [](#s1-4){.pf-ref} grows geometrically to \(+\infty\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Consequently, if the orbit does not tend to infinity, then
 \[
@@ -184,13 +184,13 @@ for every \(n\ge0\).
 
 ::: pf-proof
 
-If some iterate had modulus \(>2\), step <1>5 would force escape.
+If some iterate had modulus \(>2\), step [](#s1-5){.pf-ref} would force escape.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus for every \(z\in\mathbb C\), exactly one of the following holds:
 - \(|f^n(z)|\to\infty\);
@@ -199,13 +199,13 @@ Thus for every \(z\in\mathbb C\), exactly one of the following holds:
 
 ::: pf-proof
 
-Step <1>5 handles any orbit that ever leaves the closed disk of radius \(2\), while step <1>6 handles every remaining orbit.
+Step [](#s1-5){.pf-ref} handles any orbit that ever leaves the closed disk of radius \(2\), while step [](#s1-6){.pf-ref} handles every remaining orbit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence
 \[
@@ -216,13 +216,13 @@ is an admissible constant.
 
 ::: pf-proof
 
-This is exactly the dichotomy in step <1>7.
+This is exactly the dichotomy in step [](#s1-7){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -236,13 +236,13 @@ U
 
 ::: pf-proof
 
-If \(z\in U\), then eventually \(|f^N(z)|>2\). Conversely, if some iterate has modulus \(>2\), step <1>5 gives escape.
+If \(z\in U\), then eventually \(|f^N(z)|>2\). Conversely, if some iterate has modulus \(>2\), step [](#s1-5){.pf-ref} gives escape.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 For each \(N\),
 \[
@@ -263,7 +263,7 @@ is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 \[
@@ -273,7 +273,7 @@ Therefore
 
 ::: pf-proof
 
-Use steps <1>9--<1>10 and closure of open sets under arbitrary unions.
+Use steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} and closure of open sets under arbitrary unions.
 
 :::
 
@@ -290,13 +290,13 @@ K=\mathbb C\setminus U}.
 
 ::: pf-proof
 
-Part (a), step <1>7, gives the exact dichotomy between escape and boundedness by \(2\).
+Part (a), step [](#s1-7){.pf-ref}, gives the exact dichotomy between escape and boundedness by \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -312,7 +312,7 @@ It is the complement of the open set \(U\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Also,
 \[
@@ -332,7 +332,7 @@ The defining condition for \(K\) includes the case \(n=0\):
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Therefore
 \[
@@ -342,13 +342,13 @@ Therefore
 
 ::: pf-proof
 
-The set \(K\) is closed by step <1>13 and bounded by step <1>14. Apply Heine--Borel in \(\mathbb C\cong\mathbb R^2\).
+The set \(K\) is closed by step [](#s1-13){.pf-ref} and bounded by step [](#s1-14){.pf-ref}. Apply Heine--Borel in \(\mathbb C\cong\mathbb R^2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 The boundary of \(V\) satisfies
 \[
@@ -372,7 +372,7 @@ Because \(z_0\in\partial V\), this disk meets \(V\). Thus the disk and \(V\) lie
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 For every \(n\ge0\) and every \(z\in\partial V\),
 \[
@@ -383,7 +383,7 @@ For every \(n\ge0\) and every \(z\in\partial V\),
 
 ::: pf-proof
 
-By step <1>16,
+By step [](#s1-16){.pf-ref},
 \[
 z\in K,
 \]
@@ -393,7 +393,7 @@ and this is the defining property of \(K\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 For each fixed \(n\), the maximum modulus principle gives
 \[
@@ -405,13 +405,13 @@ for every \(z\in V\).
 
 ::: pf-proof
 
-The domain \(V\) is bounded, and the polynomial \(f^n\) is holomorphic on a neighborhood of \(\overline V\) and continuous there. By step <1>17, its modulus is at most \(2\) on \(\partial V\). The maximum modulus principle therefore gives the same bound throughout \(V\).
+The domain \(V\) is bounded, and the polynomial \(f^n\) is holomorphic on a neighborhood of \(\overline V\) and continuous there. By step [](#s1-17){.pf-ref}, its modulus is at most \(2\) on \(\partial V\). The maximum modulus principle therefore gives the same bound throughout \(V\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Hence every \(z\in V\) satisfies
 \[
@@ -422,7 +422,7 @@ for all \(n\ge0\).
 
 ::: pf-proof
 
-Step <1>18 holds for each \(n\).
+Step [](#s1-18){.pf-ref} holds for each \(n\).
 
 :::
 
@@ -438,13 +438,13 @@ V\subseteq K.
 
 ::: pf-proof
 
-Step <1>19 is exactly the defining condition for membership in \(K\).
+Step [](#s1-19){.pf-ref} is exactly the defining condition for membership in \(K\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 This contradicts
 \[
@@ -467,13 +467,13 @@ Therefore \(U\) has no bounded connected components.
 
 ::: pf-proof
 
-The assumption of a bounded connected component led to the contradiction in step <1>21.
+The assumption of a bounded connected component led to the contradiction in step [](#s1-21){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Equivalently,
 \[
@@ -492,7 +492,7 @@ By definition in the problem, “no holes” means that \(\mathbb C\setminus K\)
 
 ::: pf-qed
 
-Step <1>8 proves part (a); steps <1>11 and <1>15 prove openness of \(U\) and compactness of \(K\); step <1>23 proves that \(K\) has no holes.
+Step [](#s1-8){.pf-ref} proves part (a); steps [](#s1-11){.pf-ref} and [](#s1-15){.pf-ref} prove openness of \(U\) and compactness of \(K\); step [](#s1-23){.pf-ref} proves that \(K\) has no holes.
 
 :::
 

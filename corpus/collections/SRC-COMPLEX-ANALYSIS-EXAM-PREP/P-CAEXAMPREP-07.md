@@ -36,7 +36,7 @@ D_{R,\varepsilon}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On \(\partial D_{R,\varepsilon}\),
 \[
@@ -64,33 +64,33 @@ Thus \(|f-g|<1<|g|\) everywhere on the boundary.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function \(f\) has exactly one zero in \(D_{R,\varepsilon}\), counted with multiplicity.
 
 
 ::: pf-proof
 
-By step <1>1 and Rouché's theorem, \(f\) and \(g\) have the same number of zeros in \(D_{R,\varepsilon}\), counted with multiplicity. The function \(g(z)=z-2\) has exactly one zero, namely \(2\), and \(2\in D_{R,\varepsilon}\) because \(\varepsilon<1<2<R\). Hence \(f\) has exactly one zero there.
+By step [](#s1-1){.pf-ref} and Rouché's theorem, \(f\) and \(g\) have the same number of zeros in \(D_{R,\varepsilon}\), counted with multiplicity. The function \(g(z)=z-2\) has exactly one zero, namely \(2\), and \(2\in D_{R,\varepsilon}\) because \(\varepsilon<1<2<R\). Hence \(f\) has exactly one zero there.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function \(f\) has at least one zero in the right half-plane.
 
 
 ::: pf-proof
 
-For example, step <1>2 applied with \(\varepsilon=1/2\) and \(R=4\) gives one zero in \(D_{4,1/2}\), which is contained in \(\{\operatorname{Re}z>0\}\).
+For example, step [](#s1-2){.pf-ref} applied with \(\varepsilon=1/2\) and \(R=4\) gives one zero in \(D_{4,1/2}\), which is contained in \(\{\operatorname{Re}z>0\}\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(f\) has at most one zero in the right half-plane.
 
@@ -105,13 +105,13 @@ and
 \[
 R>\max\{3,|z_1|,|z_2|\}.
 \]
-Then both zeros lie in \(D_{R,\varepsilon}\), contradicting step <1>2, which says that this domain contains only one zero even when multiplicity is counted.
+Then both zeros lie in \(D_{R,\varepsilon}\), contradicting step [](#s1-2){.pf-ref}, which says that this domain contains only one zero even when multiplicity is counted.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore there is exactly
 \[
@@ -122,7 +122,7 @@ point \(z\) with \(\operatorname{Re}z>0\) satisfying \(z+e^{-z}=2\).
 
 ::: pf-proof
 
-Such a point exists by step <1>3 and is unique by step <1>4.
+Such a point exists by step [](#s1-3){.pf-ref} and is unique by step [](#s1-4){.pf-ref}.
 
 :::
 
@@ -130,7 +130,7 @@ Such a point exists by step <1>3 and is unique by step <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $\Phi$ is well-defined and bijective.
 
@@ -78,7 +78,7 @@ Therefore $\Phi$ is bijective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\Phi$ preserves addition.
 
@@ -109,7 +109,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The map $\Phi$ preserves multiplication.
 
@@ -164,7 +164,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The map $\Phi$ preserves the identity.
 
@@ -185,7 +185,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -198,7 +198,7 @@ as rings.
 
 ::: pf-proof
 
-Step <1>1 gives bijectivity, and steps <1>2--<1>4 show that $\Phi$ is a unital ring homomorphism. Hence it is a ring isomorphism.
+Step [](#s1-1){.pf-ref} gives bijectivity, and steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} show that $\Phi$ is a unital ring homomorphism. Hence it is a ring isomorphism.
 
 :::
 
@@ -206,7 +206,7 @@ Step <1>1 gives bijectivity, and steps <1>2--<1>4 show that $\Phi$ is a unital r
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -107,7 +107,7 @@ hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Under the same restriction,
 \[
@@ -160,7 +160,7 @@ Choose
 
 ::: pf-proof
 
-This choice guarantees both the bound in step <1>4 and the final
+This choice guarantees both the bound in step [](#s1-4){.pf-ref} and the final
 \[
 \varepsilon
 \]
@@ -170,7 +170,7 @@ estimate.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If
 \[
@@ -190,7 +190,7 @@ Because
 \[
 \delta\le1,
 \]
-step <1>4 applies.
+step [](#s1-4){.pf-ref} applies.
 Hence
 \[
 \begin{aligned}
@@ -211,7 +211,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -224,7 +224,7 @@ f(x)=x^3
 
 ::: pf-proof
 
-Step <1>6 is exactly the
+Step [](#s1-6){.pf-ref} is exactly the
 \[
 \varepsilon\text{--}\delta
 \]
@@ -236,7 +236,7 @@ definition of continuity at $2$.
 
 ::: pf-qed
 
-Step <1>7 is the desired conclusion.
+Step [](#s1-7){.pf-ref} is the desired conclusion.
 
 :::
 

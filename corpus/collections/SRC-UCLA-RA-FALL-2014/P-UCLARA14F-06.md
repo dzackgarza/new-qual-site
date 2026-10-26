@@ -65,7 +65,7 @@ allows these choices to be made simultaneously.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 \[
@@ -141,7 +141,7 @@ contradicting $\varphi\ne0$. Thus $M=X$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The linear span of the countable set $\{x_n\}$ has a countable dense
 subset.
@@ -181,18 +181,18 @@ instead; the same argument applies.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The Banach space $X$ is separable.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \overline{\operatorname{span}}\{x_n\}=X.
 \]
-By step <1>3, the span contains a countable dense subset $D$. Therefore
+By step [](#s1-3){.pf-ref}, the span contains a countable dense subset $D$. Therefore
 \[
 \overline D=X,
 \]
@@ -204,7 +204,7 @@ so $X$ is separable.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

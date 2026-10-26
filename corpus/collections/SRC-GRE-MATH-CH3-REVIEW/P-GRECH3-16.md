@@ -32,7 +32,7 @@ at the point $Q=(1,1,1)$. Which of the following points also lies in $P$?
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 $$
@@ -61,7 +61,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The tangent plane at $Q$ has equation
 $$
@@ -71,7 +71,7 @@ $$
 
 ::: pf-proof
 
-The given surface is the level surface $F=2$. Since the gradient in step <1>1 is nonzero, it is normal to the tangent plane at $Q$. Hence the tangent plane is
+The given surface is the level surface $F=2$. Since the gradient in step [](#s1-1){.pf-ref} is nonzero, it is normal to the tangent plane at $Q$. Hence the tangent plane is
 $$
 (4,5,-3)\cdot\bigl((x,y,z)-(1,1,1)\bigr)=0.
 $$
@@ -84,7 +84,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Among the listed points, exactly
 $$
@@ -95,7 +95,7 @@ lies in the tangent plane, so the answer is (E).
 
 ::: pf-proof
 
-Substitution into the equation from step <1>2 gives
+Substitution into the equation from step [](#s1-2){.pf-ref} gives
 $$
 4(-2)+5(4)-3(2)=-8+20-6=6,
 $$
@@ -111,7 +111,7 @@ none of which is $6$.
 
 ::: pf-qed
 
-Step <1>3 identifies the requested point and corresponding choice.
+Step [](#s1-3){.pf-ref} identifies the requested point and corresponding choice.
 
 :::
 

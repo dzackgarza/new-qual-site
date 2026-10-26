@@ -40,7 +40,7 @@ Since $F$ and $\rho$ are smooth, $G$ is continuous.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose first that
 \[
@@ -78,7 +78,7 @@ the right side equals
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, suppose that for every ball $\Omega$,
 \[
@@ -119,7 +119,7 @@ This is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose, for contradiction, that
 \[
@@ -169,14 +169,14 @@ G(q)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The situation in step <1>3 contradicts step <1>2.
+The situation in step [](#s1-3){.pf-ref} contradicts step [](#s1-2){.pf-ref}.
 
 
 ::: pf-proof
 
-On the ball $\Omega$ from step <1>3,
+On the ball $\Omega$ from step [](#s1-3){.pf-ref},
 \[
 G(q)
 >
@@ -191,14 +191,14 @@ Therefore
 >
 0.
 \]
-But step <1>2 says that the integral of $G$ over every ball is zero.
+But step [](#s1-2){.pf-ref} says that the integral of $G$ over every ball is zero.
 This is a contradiction.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 No point can satisfy
 \[
@@ -208,7 +208,7 @@ G(p)<0.
 
 ::: pf-proof
 
-Apply steps <1>3--<1>4 to the continuous function
+Apply steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} to the continuous function
 \[
 -G.
 \]
@@ -224,13 +224,13 @@ which would produce a ball on which
 \[
 \iiint_\Omega G<0,
 \]
-again contradicting step <1>2.
+again contradicting step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -240,7 +240,7 @@ Therefore
 
 ::: pf-proof
 
-At every point, steps <1>4--<1>5 rule out both positive and negative values.
+At every point, steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} rule out both positive and negative values.
 Thus
 \[
 G(p)=0
@@ -254,7 +254,7 @@ p\in\mathbb R^3.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 \[
@@ -271,7 +271,7 @@ G
 =
 \operatorname{div}F-\rho.
 \]
-Step <1>6 gives
+Step [](#s1-6){.pf-ref} gives
 \[
 G=0,
 \]
@@ -286,7 +286,7 @@ so
 
 ::: pf-qed
 
-Step <1>1 proves the forward implication, and steps <1>2--<1>7 prove the converse.
+Step [](#s1-1){.pf-ref} proves the forward implication, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the converse.
 
 :::
 

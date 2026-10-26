@@ -28,7 +28,7 @@ c. Determine those functions $f$ for which the above Taylor series converges uni
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $R>0$ and every $n\ge0$,
 $$
@@ -55,7 +55,7 @@ Since $a_n=f^{(n)}(0)/n!$, the displayed coefficient formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $R>0$,
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-Apply the ML estimate to the integral in step <1>1:
+Apply the ML estimate to the integral in step [](#s1-1){.pf-ref}:
 $$
 |a_n|
 \le
@@ -81,7 +81,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Taylor series of $f$ converges uniformly on every bounded
 subset of $\CC$.
@@ -93,7 +93,7 @@ Let $E\subset\CC$ be bounded. Choose $r>0$ with
 $$
 E\subseteq\{z:|z|\le r\},
 $$
-and then choose $R>r$. For $z\in E$, step <1>2 gives
+and then choose $R>r$. For $z\in E$, step [](#s1-2){.pf-ref} gives
 $$
 |a_nz^n|
 \le M_R\left(\frac rR\right)^n.
@@ -110,7 +110,7 @@ $\sum a_nz^n$ converges uniformly on $E$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If the Taylor series converges uniformly on all of $\CC$, then
 $f$ is a polynomial.
@@ -135,7 +135,7 @@ $n\ge N$, so the Taylor series is finite and $f$ is a polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Conversely, the Taylor series of every polynomial converges
 uniformly on all of $\CC$.
@@ -152,7 +152,7 @@ on all of $\CC$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore the answer to part (c) is
 $$
@@ -162,7 +162,7 @@ $$
 
 ::: pf-proof
 
-Step <1>4 proves necessity, and step <1>5 proves sufficiency.
+Step [](#s1-4){.pf-ref} proves necessity, and step [](#s1-5){.pf-ref} proves sufficiency.
 
 :::
 
@@ -170,7 +170,7 @@ Step <1>4 proves necessity, and step <1>5 proves sufficiency.
 
 ::: pf-qed
 
-Step <1>1 answers part (a), step <1>3 proves part (b), and step <1>6
+Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-3){.pf-ref} proves part (b), and step [](#s1-6){.pf-ref}
 answers part (c).
 
 :::

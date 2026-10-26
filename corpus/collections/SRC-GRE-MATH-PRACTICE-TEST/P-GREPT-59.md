@@ -27,7 +27,7 @@ Let $\omega = e^{2\pi i/5}$ be a fifth root of $1$. What is the value of the fun
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $1+\omega+\omega^2+\omega^3+\omega^4=0$.
 
@@ -44,27 +44,27 @@ Because $\omega-1\neq 0$, the second factor must vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $\omega^2+\omega+1+\omega^{-1}+\omega^{-2}=0$.
 
 
 ::: pf-proof
 
-Divide the identity in step <1>1 by the nonzero number $\omega^2$.
+Divide the identity in step [](#s1-1){.pf-ref} by the nonzero number $\omega^2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 $f(\omega+\omega^{-1})=\boxed{1}$.
 
 
 ::: pf-proof
 
-Expanding and then applying step <1>2 gives
+Expanding and then applying step [](#s1-2){.pf-ref} gives
 \[
 \begin{aligned}
 f(\omega+\omega^{-1})
@@ -82,7 +82,7 @@ Hence the correct choice is (D).
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

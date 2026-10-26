@@ -40,7 +40,7 @@ g(x)=e^{-2x}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\ge2$,
 \[
@@ -78,7 +78,7 @@ Thus the formula follows by induction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix $R>0$.
 For every integer $j\ge0$ and every $x\in[0,R]$,
@@ -125,7 +125,7 @@ because $e^{-2t}\le1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The series
 \[
@@ -136,7 +136,7 @@ converges uniformly on every compact interval $[0,R]$.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 |K^jg(x)|
 \le
@@ -156,7 +156,7 @@ The Weierstrass $M$-test therefore gives uniform convergence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $x\ge0$, the limit
 \[
@@ -171,14 +171,14 @@ f=\sum_{j=0}^{\infty}K^jg.
 ::: pf-proof
 
 Given $x\ge0$, choose $R\ge x$.
-By step <1>1, $f_n$ is the sequence of partial sums of the series in step <1>3.
+By step [](#s1-1){.pf-ref}, $f_n$ is the sequence of partial sums of the series in step [](#s1-3){.pf-ref}.
 Uniform convergence on $[0,R]$ therefore gives convergence at the point $x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The limit function satisfies the integral equation
 \[
@@ -193,7 +193,7 @@ e^{-2x}
 ::: pf-proof
 
 Fix $R>0$.
-By step <1>3, $f_n\to f$ uniformly on $[0,R]$.
+By step [](#s1-3){.pf-ref}, $f_n\to f$ uniformly on $[0,R]$.
 The recursion gives
 \[
 f_{n+1}(x)
@@ -210,7 +210,7 @@ Since $R$ is arbitrary, it holds for all $x\ge0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The function $f$ is continuously differentiable and satisfies
 \[
@@ -226,7 +226,7 @@ f(0)=1.
 
 ::: pf-proof
 
-The integral equation in step <1>5 shows that $f$ is continuous.
+The integral equation in step [](#s1-5){.pf-ref} shows that $f$ is continuous.
 Therefore
 \[
 t\mapsto f(t)e^{-2t}
@@ -239,7 +239,7 @@ The fundamental theorem of calculus gives
 =
 f(x)e^{-2x}.
 \]
-Differentiating step <1>5 yields the ODE.
+Differentiating step [](#s1-5){.pf-ref} yields the ODE.
 At $x=0$,
 \[
 f(0)=1.
@@ -249,7 +249,7 @@ f(0)=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Put
 \[
@@ -265,7 +265,7 @@ u(0)=1.
 
 ::: pf-proof
 
-From step <1>6,
+From step [](#s1-6){.pf-ref},
 \[
 \begin{aligned}
 u'(x)
@@ -288,9 +288,9 @@ u(0)=2-f(0)=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-The solution of the equation in step <1>7 is
+The solution of the equation in step [](#s1-7){.pf-ref} is
 \[
 u(x)
 =
@@ -328,7 +328,7 @@ Exponentiation gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -349,7 +349,7 @@ By definition,
 \[
 f=2-u.
 \]
-Substitute the formula from step <1>8.
+Substitute the formula from step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -357,7 +357,7 @@ Substitute the formula from step <1>8.
 
 ::: pf-qed
 
-Step <1>4 proves existence of the pointwise limit for all $x\ge0$, and step <1>9 identifies it explicitly.
+Step [](#s1-4){.pf-ref} proves existence of the pointwise limit for all $x\ge0$, and step [](#s1-9){.pf-ref} identifies it explicitly.
 
 :::
 

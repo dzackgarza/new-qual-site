@@ -34,7 +34,7 @@ Explain why $f$ is integrable and calculate $\int_Xf\,d\lambda$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For
 \[
@@ -82,7 +82,7 @@ k\ge0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Intersecting with
 \[
@@ -138,7 +138,7 @@ which has measure zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -156,7 +156,7 @@ Therefore
 
 ::: pf-proof
 
-The intervals in step <1>2 have pairwise disjoint interiors, and endpoints
+The intervals in step [](#s1-2){.pf-ref} have pairwise disjoint interiors, and endpoints
 do not affect Lebesgue measure.
 The measure is therefore the sum of their lengths.
 
@@ -164,9 +164,9 @@ The measure is therefore the sum of their lengths.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-The series in step <1>3 equals
+The series in step [](#s1-3){.pf-ref} equals
 \[
 \boxed{
 2\log2-1.
@@ -206,7 +206,7 @@ Removing it leaves
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For part (a2), let
 \[
@@ -249,7 +249,7 @@ allowed digit blocks, giving total measure
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set
 \[
@@ -275,7 +275,7 @@ measure zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -307,7 +307,7 @@ By continuity from above,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For part (a3), for each
 \[
@@ -343,7 +343,7 @@ Again the countable set of ambiguous decimal expansions is irrelevant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The measure of numbers for which none of the first $m$ disjoint digit
 pairs equals $56$ is
@@ -379,7 +379,7 @@ Thus the measure is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Hence the set of numbers containing the consecutive digits
 \[
@@ -403,7 +403,7 @@ Thus for every $m$,
 \[
 G
 \]
-is contained in the set from step <1>9.
+is contained in the set from step [](#s1-9){.pf-ref}.
 Therefore
 \[
 \lambda(G)
@@ -427,7 +427,7 @@ Its complement, the set containing $56$ somewhere, has measure $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 **Dominated Convergence Theorem.**
 
@@ -477,7 +477,7 @@ This is the Dominated Convergence Theorem on the measure space
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For part (c), set
 \[
@@ -546,7 +546,7 @@ occurs inside $[0,1]$, and the midpoint is
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The midpoint tie set is countable and therefore has measure zero.
 
@@ -566,7 +566,7 @@ does not affect the integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 On
 \[
@@ -638,7 +638,7 @@ R_n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 For
 \[
@@ -676,13 +676,13 @@ Therefore
 +
 \frac12R_n^2.
 \]
-Substitute the values from step <1>14.
+Substitute the values from step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 For
 \[
@@ -720,7 +720,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 The function $f$ is measurable and integrable.
 
@@ -753,7 +753,7 @@ Hence $f$ is integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Its integral is
 \[
@@ -776,13 +776,13 @@ Its integral is
 The intervals $I_n$ partition $(0,1]$ up to their shared endpoints.
 The function vanishes on even-indexed cells and equals the distance function
 on odd-indexed cells.
-Apply steps <1>15--<1>16.
+Apply steps [](#s1-15){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 For
 \[
@@ -825,9 +825,9 @@ Both sides reduce to
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
-Summing the first-order terms in step <1>19 over odd
+Summing the first-order terms in step [](#s1-19){.pf-ref} over odd
 \[
 n\ge3
 \]
@@ -871,7 +871,7 @@ The series telescopes:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-21}
 
 Summing the two shifted-square terms gives
 \[
@@ -935,7 +935,7 @@ this becomes
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-22}
 
 Summing the final term
 \[
@@ -984,7 +984,7 @@ Multiply by
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-23}
 
 Therefore
 \[
@@ -1002,7 +1002,7 @@ Therefore
 
 ::: pf-proof
 
-By steps <1>18--<1>22,
+By steps [](#s1-18){.pf-ref} through [](#s1-22){.pf-ref},
 \[
 \begin{aligned}
 \int_0^1f(x)\,dx
@@ -1057,7 +1057,7 @@ The answers to part (a) are
 
 ::: pf-proof
 
-These are steps <1>4, <1>7, and <1>10.
+These are steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-10){.pf-ref}.
 
 :::
 
@@ -1065,8 +1065,8 @@ These are steps <1>4, <1>7, and <1>10.
 
 ::: pf-qed
 
-Steps <1>1--<1>10 solve part (a), step <1>11 states the Dominated
-Convergence Theorem for part (b), and steps <1>12--<1>23 solve part (c).
+Steps [](#s1-1){.pf-ref} through [](#s1-10){.pf-ref} solve part (a), step [](#s1-11){.pf-ref} states the Dominated
+Convergence Theorem for part (b), and steps [](#s1-12){.pf-ref} through [](#s1-23){.pf-ref} solve part (c).
 
 :::
 

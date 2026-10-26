@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -57,7 +57,7 @@ Every term in the average is strictly greater than $1/2$, so the average is stri
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set
 $$
@@ -78,13 +78,13 @@ $$
 \leq\frac12\mu(X)
 =\frac12,
 $$
-contradicting step <1>1. Hence $\mu(C)>0$.
+contradicting step [](#s1-1){.pf-ref}. Hence $\mu(C)>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every $x\in C$ satisfies
 $$
@@ -102,7 +102,7 @@ This is exactly the defining inequality for membership in $C$.
 
 ::: pf-qed
 
-Step <1>2 gives a measurable set $C$ of positive measure, and step <1>3 gives the required pointwise inequality on it.
+Step [](#s1-2){.pf-ref} gives a measurable set $C$ of positive measure, and step [](#s1-3){.pf-ref} gives the required pointwise inequality on it.
 
 :::
 

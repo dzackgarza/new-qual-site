@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -59,7 +59,7 @@ Taking dimensions gives the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The restriction
 $$
@@ -84,7 +84,7 @@ Applying the rank-nullity theorem to $S|_R$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The lower bound
 $$
@@ -97,7 +97,7 @@ holds.
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 \operatorname{rank}(S\circ T)
 =\dim R-\dim(R\cap\ker S).
@@ -128,7 +128,7 @@ Substitution yields the required lower bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -140,7 +140,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 \operatorname{rank}(S\circ T)=\dim S(R).
 $$
@@ -153,7 +153,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One also has
 $$
@@ -178,7 +178,7 @@ taking dimensions gives the inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -192,7 +192,7 @@ $$
 
 ::: pf-proof
 
-The first inequality is the conjunction of steps <1>4 and <1>5. The second is immediate for two real numbers.
+The first inequality is the conjunction of steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}. The second is immediate for two real numbers.
 
 :::
 
@@ -200,7 +200,7 @@ The first inequality is the conjunction of steps <1>4 and <1>5. The second is im
 
 ::: pf-qed
 
-Step <1>3 proves the required lower bound, and step <1>6 proves the requested upper bound.
+Step [](#s1-3){.pf-ref} proves the required lower bound, and step [](#s1-6){.pf-ref} proves the requested upper bound.
 
 :::
 

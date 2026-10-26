@@ -35,7 +35,7 @@ be the characteristic polynomial of $T$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Cayley--Hamilton theorem gives
 \[
@@ -60,7 +60,7 @@ Expanding this identity and solving for $T^n$ gives the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every integer $m\ge n$,
 \[
@@ -73,9 +73,9 @@ T^m
 ::: pf-proof
 
 Proceed by induction on $m$.
-The case $m=n$ is step <1>1.
+The case $m=n$ is step [](#s1-1){.pf-ref}.
 
-Assume the claim holds for all powers from $n$ through $m$. Multiply the identity in step <1>1 by $T^{m+1-n}$ to obtain
+Assume the claim holds for all powers from $n$ through $m$. Multiply the identity in step [](#s1-1){.pf-ref} by $T^{m+1-n}$ to obtain
 \[
 T^{m+1}
 =
@@ -94,7 +94,7 @@ and the lower powers already lie there. Hence $T^{m+1}$ lies in the same span.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space $W$ satisfies
 \[
@@ -106,13 +106,13 @@ W
 
 ::: pf-proof
 
-By definition, $W$ is spanned by all nonnegative powers of $T$. The right-hand side is contained in $W$. Conversely, step <1>2 shows that every power $T^m$ with $m\ge n$ lies in the span of the first $n$ powers. Thus every generator of $W$ lies in the displayed finite span.
+By definition, $W$ is spanned by all nonnegative powers of $T$. The right-hand side is contained in $W$. Conversely, step [](#s1-2){.pf-ref} shows that every power $T^m$ with $m\ge n$ lies in the span of the first $n$ powers. Thus every generator of $W$ lies in the displayed finite span.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -122,7 +122,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>3, $W$ is spanned by the $n$ vectors
+By step [](#s1-3){.pf-ref}, $W$ is spanned by the $n$ vectors
 \[
 I,T,\ldots,T^{n-1}
 \]
@@ -134,7 +134,7 @@ in $\operatorname{End}(V)$. A vector space spanned by $n$ vectors has dimension 
 
 ::: pf-qed
 
-Step <1>4 is the required inequality.
+Step [](#s1-4){.pf-ref} is the required inequality.
 
 :::
 

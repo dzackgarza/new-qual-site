@@ -29,7 +29,7 @@ for constants $a,b\in\mathbb C$ with $|a|=1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For a holomorphic function $f=u+iv$,
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The hypothesis implies
 $$
@@ -75,7 +75,7 @@ for every $z\in\CC$.
 
 ::: pf-proof
 
-Combine the given Jacobian identity with step <1>1.
+Combine the given Jacobian identity with step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -88,7 +88,7 @@ The derivative $f'$ is constant.
 
 ::: pf-proof
 
-The function $f'$ is entire because $f$ is entire. Step <1>2 shows that it is bounded. By Liouville's theorem,
+The function $f'$ is entire because $f$ is entire. Step [](#s1-2){.pf-ref} shows that it is bounded. By Liouville's theorem,
 $$
 f'(z)\equiv a
 $$
@@ -98,7 +98,7 @@ for some constant $a\in\CC$. Moreover $|a|=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 There is a constant $b\in\CC$ such that
 $$
@@ -117,7 +117,7 @@ Since $f'\equiv a$, the derivative of $f(z)-az$ is identically zero. Hence $f(z)
 
 ::: pf-qed
 
-Step <1>4 is the required form of $f$.
+Step [](#s1-4){.pf-ref} is the required form of $f$.
 
 :::
 

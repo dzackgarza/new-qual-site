@@ -29,7 +29,7 @@ for every bounded interval $I$ and rational $r$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $x\in\mathbb R$ and every rational $r$,
 \[
@@ -64,7 +64,7 @@ continuity from above gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $x\in\mathbb R$,
 \[
@@ -82,7 +82,7 @@ Choose distinct rational numbers
 \[
 r_1,r_2,\dots\in[0,1].
 \]
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \mu(\{x+r_k\})=c
 \]
@@ -100,7 +100,7 @@ The left-hand side is finite, so $c=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $y\in\mathbb R$,
 \[
@@ -115,7 +115,7 @@ For any sequence $\delta_n\downarrow0$, the intervals
 (y-\delta_n,y+\delta_n)
 \]
 decrease to $\{y\}$ and the first has finite measure. Continuity from above
-and step <1>2 give
+and step [](#s1-2){.pf-ref} give
 \[
 \lim_{n\to\infty}\mu((y-\delta_n,y+\delta_n))
 =\mu(\{y\})
@@ -128,7 +128,7 @@ one-sided limit is $0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let $I$ be a bounded interval and let $r_n\in\mathbb Q$ satisfy
 \[
@@ -143,7 +143,7 @@ Then
 ::: pf-proof
 
 Write the endpoints of $I$ as $u<v$. Because singletons have measure zero by
-step <1>2, the measure of an interval is unchanged by adding or removing its
+step [](#s1-2){.pf-ref}, the measure of an interval is unchanged by adding or removing its
 endpoints. Thus it is enough to compare the open intervals
 \[
 (u+r_n,v+r_n)
@@ -152,7 +152,7 @@ endpoints. Thus it is enough to compare the open intervals
 \]
 Their symmetric difference is contained in the union of two intervals whose
 lengths are at most $|r_n-a|$, one near $u+a$ and one near $v+a$.
-By step <1>3, the measures of those two endpoint intervals tend to $0$.
+By step [](#s1-3){.pf-ref}, the measures of those two endpoint intervals tend to $0$.
 Therefore
 \[
 \mu\bigl((I+r_n)\triangle(I+a)\bigr)\to0.
@@ -169,7 +169,7 @@ the desired convergence follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For every bounded interval $I$ and every real $a$,
 \[
@@ -183,7 +183,7 @@ Choose rationals $r_n\to a$. By hypothesis,
 \[
 \mu(I+r_n)=\mu(I)
 \]
-for every $n$. Step <1>4 gives
+for every $n$. Step [](#s1-4){.pf-ref} gives
 \[
 \mu(I+a)
 =\lim_{n\to\infty}\mu(I+r_n)
@@ -196,7 +196,7 @@ for every $n$. Step <1>4 gives
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>5 proves part (b).
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
 
 :::
 

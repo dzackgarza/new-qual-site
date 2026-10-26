@@ -30,7 +30,7 @@ Let $r$ and $s$ be the roots of $x^2+bx+1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $r+s=-b$ and $rs=1$.
 
@@ -43,14 +43,14 @@ These are Viète's formulas for the monic quadratic $x^2+bx+1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $r^2+s^2=b^2-2$.
 
 
 ::: pf-proof
 
-Using step <1>1,
+Using step [](#s1-1){.pf-ref},
 $$
 r^2+s^2=(r+s)^2-2rs=(-b)^2-2=b^2-2.
 $$
@@ -59,7 +59,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The coefficient is
 $$
@@ -70,7 +70,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-By hypothesis, the roots of $x^2+Bx+1$ are $r^2$ and $s^2$. Their sum is therefore $-B$ by Viète's formulas. Step <1>2 gives
+By hypothesis, the roots of $x^2+Bx+1$ are $r^2$ and $s^2$. Their sum is therefore $-B$ by Viète's formulas. Step [](#s1-2){.pf-ref} gives
 $$
 -B=b^2-2,
 $$
@@ -82,7 +82,7 @@ which is equivalent to the displayed value of $B$.
 
 ::: pf-qed
 
-Step <1>3 gives the requested expression and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested expression and corresponding choice.
 
 :::
 

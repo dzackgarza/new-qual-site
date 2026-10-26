@@ -32,7 +32,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Five Taylor terms are not sufficient.
 
@@ -58,7 +58,7 @@ Thus five terms cannot give the required accuracy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Six Taylor terms are sufficient.
 
@@ -95,7 +95,7 @@ Hence six terms ensure the required accuracy.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The minimum number of terms is
 $$
@@ -106,7 +106,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>1 rules out five terms, while step <1>2 proves that six terms suffice. Therefore six is minimal.
+Step [](#s1-1){.pf-ref} rules out five terms, while step [](#s1-2){.pf-ref} proves that six terms suffice. Therefore six is minimal.
 
 :::
 
@@ -114,7 +114,7 @@ Step <1>1 rules out five terms, while step <1>2 proves that six terms suffice. T
 
 ::: pf-qed
 
-Step <1>3 gives the requested minimum and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested minimum and corresponding choice.
 
 :::
 

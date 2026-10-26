@@ -27,7 +27,7 @@ In a State Lottery, players choose 6 numbers from among the integers 1 through 5
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 A guaranteed win requires one ticket for every $6$-element subset of $\{1,\dots,51\}$.
 
@@ -40,7 +40,7 @@ The six numbers drawn form an unordered $6$-element subset. A ticket wins exactl
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The number of such subsets is
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the minimum number of tickets is
 $$
@@ -75,7 +75,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Step <1>1 shows that every possible $6$-element subset is both necessary and sufficient, and step <1>2 counts those subsets.
+Step [](#s1-1){.pf-ref} shows that every possible $6$-element subset is both necessary and sufficient, and step [](#s1-2){.pf-ref} counts those subsets.
 
 :::
 
@@ -83,7 +83,7 @@ Step <1>1 shows that every possible $6$-element subset is both necessary and suf
 
 ::: pf-qed
 
-Step <1>3 gives the required minimum.
+Step [](#s1-3){.pf-ref} gives the required minimum.
 
 :::
 

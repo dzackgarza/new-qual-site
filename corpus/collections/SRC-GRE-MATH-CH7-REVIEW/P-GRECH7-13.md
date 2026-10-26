@@ -48,7 +48,7 @@ together with one loop at $M$, giving eight edges in total.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Any connected subgraph containing all five vertices must retain at least $4$ edges.
 
@@ -61,7 +61,7 @@ Every connected graph on $v$ vertices contains a spanning tree, and every tree o
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Four edges can in fact be retained while keeping all five vertices connected.
 
@@ -82,7 +82,7 @@ which contains all five vertices and is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence the maximum number of removable edges is
 $$
@@ -93,7 +93,7 @@ so the answer is (B).
 
 ::: pf-proof
 
-Step <1>2 shows that at most $8-4=4$ edges can be removed, while step <1>3 exhibits a connected spanning subgraph obtained by retaining only four edges. Thus the bound is attained.
+Step [](#s1-2){.pf-ref} shows that at most $8-4=4$ edges can be removed, while step [](#s1-3){.pf-ref} exhibits a connected spanning subgraph obtained by retaining only four edges. Thus the bound is attained.
 
 :::
 
@@ -101,7 +101,7 @@ Step <1>2 shows that at most $8-4=4$ edges can be removed, while step <1>3 exhib
 
 ::: pf-qed
 
-Step <1>4 gives the requested maximum.
+Step [](#s1-4){.pf-ref} gives the requested maximum.
 
 :::
 

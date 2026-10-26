@@ -35,7 +35,7 @@ M\|f\|_2
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every positive integer $N$ and every $x\in[0,1]$,
 \[
@@ -89,14 +89,14 @@ Squaring proves the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every finite orthonormal subfamily of $\{\phi_n\}$ has cardinality at most $M^2$.
 
 
 ::: pf-proof
 
-Integrating the inequality from step <1>1 over $[0,1]$ and using Tonelli's theorem,
+Integrating the inequality from step [](#s1-1){.pf-ref} over $[0,1]$ and using Tonelli's theorem,
 \[
 \begin{aligned}
 N
@@ -116,27 +116,27 @@ Thus no finite orthonormal subfamily can contain more than $M^2$ elements.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The orthonormal system $\{\phi_n\}$ is finite.
 
 
 ::: pf-proof
 
-If the system were infinite, then for every positive integer $N$ it would contain $N$ distinct elements. Choosing an integer $N>M^2$ would contradict step <1>2.
+If the system were infinite, then for every positive integer $N$ it would contain $N$ distinct elements. Choosing an integer $N>M^2$ would contradict step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 $S$ is finite dimensional.
 
 
 ::: pf-proof
 
-By step <1>3 there are only finitely many functions in the orthonormal system. Their span is therefore finite dimensional, hence closed in $L^2([0,1])$. Since $S$ is defined as the closure of that span, $S$ equals the span itself and is finite dimensional.
+By step [](#s1-3){.pf-ref} there are only finitely many functions in the orthonormal system. Their span is therefore finite dimensional, hence closed in $L^2([0,1])$. Since $S$ is defined as the closure of that span, $S$ equals the span itself and is finite dimensional.
 
 :::
 
@@ -144,7 +144,7 @@ By step <1>3 there are only finitely many functions in the orthonormal system. T
 
 ::: pf-qed
 
-Step <1>4 is the desired conclusion.
+Step [](#s1-4){.pf-ref} is the desired conclusion.
 
 :::
 

@@ -26,7 +26,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If
 $$
@@ -63,7 +63,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Conversely, assume
 $$
@@ -84,7 +84,7 @@ so $f(0)=0$. Hence the constant coefficient $c_0$ is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $m\geq1$ and $c_m\neq0$, then
 $$
@@ -111,7 +111,7 @@ which must vanish. If $c_m\neq0$, then $\binom{m}{k}=0$ in $F$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If every intermediate binomial coefficient
 $$
@@ -151,14 +151,14 @@ contradicting the hypothesis. Therefore $q=1$, so $m=p^r$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every exponent occurring in $f$ with nonzero coefficient is a power of $p$.
 
 
 ::: pf-proof
 
-Let $m\geq1$ with $c_m\neq0$. By step <1>3, all intermediate binomial coefficients of $m$ vanish in $F$, hence modulo $p$. Step <1>4 therefore gives
+Let $m\geq1$ with $c_m\neq0$. By step [](#s1-3){.pf-ref}, all intermediate binomial coefficients of $m$ vanish in $F$, hence modulo $p$. Step [](#s1-4){.pf-ref} therefore gives
 $$
 m=p^r
 $$
@@ -168,7 +168,7 @@ for some $r\geq0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exist $n\geq0$ and $a_0,\ldots,a_n\in F$ such that
 $$
@@ -178,7 +178,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2, no constant term occurs. By step <1>5, every nonzero remaining term has exponent $p^i$ for some $i\geq0$. Let $n$ be at least the largest such $i$ and let $a_i$ be the coefficient of $X^{p^i}$, allowing $a_i=0$ when that power is absent. This gives the displayed form. The zero polynomial is included by taking $n=0$ and $a_0=0$.
+By step [](#s1-2){.pf-ref}, no constant term occurs. By step [](#s1-5){.pf-ref}, every nonzero remaining term has exponent $p^i$ for some $i\geq0$. Let $n$ be at least the largest such $i$ and let $a_i$ be the coefficient of $X^{p^i}$, allowing $a_i=0$ when that power is absent. This gives the displayed form. The zero polynomial is included by taking $n=0$ and $a_0=0$.
 
 :::
 
@@ -186,7 +186,7 @@ By step <1>2, no constant term occurs. By step <1>5, every nonzero remaining ter
 
 ::: pf-qed
 
-Step <1>1 proves the forward implication from the displayed form to additivity, and steps <1>2 through <1>6 prove the converse.
+Step [](#s1-1){.pf-ref} proves the forward implication from the displayed form to additivity, and steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove the converse.
 
 :::
 

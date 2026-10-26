@@ -29,7 +29,7 @@ Show the following.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 $$
@@ -59,9 +59,9 @@ This is exactly the meaning of incomparability under inclusion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Under the assumptions of step <1>1,
+Under the assumptions of step [](#s1-1){.pf-ref},
 $$
 a\notin P,
 \qquad
@@ -123,7 +123,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Every prime ideal is irreducible.
 
@@ -134,7 +134,7 @@ If
 $$
 P=I\cap J
 $$
-with $I$ and $J$ incomparable, step <1>2 gives
+with $I$ and $J$ incomparable, step [](#s1-2){.pf-ref} gives
 $$
 ab\in P
 $$
@@ -152,7 +152,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Fix
 $$
@@ -190,7 +190,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every chain in $\mathcal P_x$ has an upper bound in $\mathcal P_x$.
 
@@ -241,7 +241,7 @@ Clearly every member of the chain lies in $U$, so $U$ is an upper bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 There exists an ideal
 $$
@@ -255,7 +255,7 @@ $$
 
 ::: pf-proof
 
-By steps <1>4--<1>5, Zorn's lemma applies to $\mathcal P_x$.
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, Zorn's lemma applies to $\mathcal P_x$.
 Hence there exists a maximal element
 $$
 I_x\in\mathcal P_x.
@@ -265,7 +265,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The ideal $I_x$ is irreducible.
 
@@ -311,7 +311,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Assume every irreducible ideal of $R$ is prime.
 Suppose, for contradiction, that
@@ -329,9 +329,9 @@ This sets up the contradiction argument for part (c).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
-Let $I_x$ be the irreducible ideal from steps <1>6--<1>7.
+Let $I_x$ be the irreducible ideal from steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 Then $I_x$ is prime and
 $$
 x\notin I_x.
@@ -344,7 +344,7 @@ By construction,
 $$
 x\notin I_x.
 $$
-By step <1>7, $I_x$ is irreducible.
+By step [](#s1-7){.pf-ref}, $I_x$ is irreducible.
 Under the hypothesis of part (c), every irreducible ideal is prime.
 Therefore
 $$
@@ -356,7 +356,7 @@ is prime.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The nilpotence of $x$ forces
 $$
@@ -393,13 +393,13 @@ implies
 $$
 x\in I_x.
 $$
-This contradicts step <1>9.
+This contradicts step [](#s1-9){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Therefore
 $$
@@ -412,7 +412,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>8--<1>10 show that no nonzero nilpotent element can exist.
+Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} show that no nonzero nilpotent element can exist.
 
 :::
 
@@ -420,7 +420,7 @@ Steps <1>8--<1>10 show that no nonzero nilpotent element can exist.
 
 ::: pf-qed
 
-Step <1>3 proves part (a), steps <1>4--<1>7 prove part (b), and step <1>11 proves part (c).
+Step [](#s1-3){.pf-ref} proves part (a), steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b), and step [](#s1-11){.pf-ref} proves part (c).
 
 :::
 

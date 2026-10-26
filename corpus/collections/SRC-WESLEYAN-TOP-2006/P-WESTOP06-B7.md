@@ -29,7 +29,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If \(X\) deformation retracts to \(x\), then for every neighborhood \(U\) of \(x\) there is a neighborhood \(V\subseteq U\) of \(x\) such that the inclusion \(V\hookrightarrow U\) is null-homotopic.
 
@@ -62,7 +62,7 @@ is a homotopy from the inclusion \(V\hookrightarrow U\) to the constant map with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every \(a\in[0,1]\), the space \(X\) deformation retracts to the point \((a,0)\).
 
@@ -95,7 +95,7 @@ If \((r,y)=(a,0)\), both formulas give \((a,0)\) for every \(t\). Hence \(H_a\) 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let \(p=(r_0,y_0)\in X\) with \(y_0>0\). There is a neighborhood \(U\) of \(p\) such that every path in \(U\) has constant first coordinate.
 
@@ -122,7 +122,7 @@ If \(\gamma:I\to U\) is a path, then \(\pi_1\circ\gamma:I\to\mathbb Q\) has conn
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every neighborhood \(V\subseteq U\) of \(p\) contains a point \(q\) that cannot be joined to \(p\) by a path in \(U\).
 
@@ -148,20 +148,20 @@ q=(r,y_0)\in X\cap B_\delta(p)\subseteq V.
 
 If \(y_0=1-r_0\), choose instead a rational \(r<r_0\) with \(|r-r_0|<\delta\). Then \(1-r>1-r_0=y_0\), so again \(q=(r,y_0)\in V\).
 
-In either case, \(q\) and \(p\) have different first coordinates. By step <1>3, no path in \(U\) can join them.
+In either case, \(q\) and \(p\) have different first coordinates. By step [](#s1-3){.pf-ref}, no path in \(U\) can join them.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 No point \(p=(r_0,y_0)\in X\) with \(y_0>0\) can be a deformation-retraction point of \(X\).
 
 
 ::: pf-proof
 
-Assume that \(X\) deformation retracts to such a point \(p\), and choose the neighborhood \(U\) from step <1>3. By step <1>1, there must be a neighborhood \(V\subseteq U\) of \(p\) for which the inclusion
+Assume that \(X\) deformation retracts to such a point \(p\), and choose the neighborhood \(U\) from step [](#s1-3){.pf-ref}. By step [](#s1-1){.pf-ref}, there must be a neighborhood \(V\subseteq U\) of \(p\) for which the inclusion
 \[
 i:V\hookrightarrow U
 \]
@@ -171,13 +171,13 @@ K:V\times I\to U
 \]
 be a homotopy from \(i\) to a constant map with value \(c\in U\). For every \(v\in V\), the path \(t\mapsto K(v,t)\) joins \(v\) to \(c\) in \(U\). Hence every two points of \(V\) lie in the same path component of \(U\).
 
-This contradicts step <1>4, which gives a point \(q\in V\) not path-connected to \(p\) in \(U\). Therefore \(X\) cannot deformation retract to \(p\).
+This contradicts step [](#s1-4){.pf-ref}, which gives a point \(q\in V\) not path-connected to \(p\) in \(U\). Therefore \(X\) cannot deformation retract to \(p\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The deformation-retraction points of \(X\) are exactly
 \[
@@ -187,7 +187,7 @@ The deformation-retraction points of \(X\) are exactly
 
 ::: pf-proof
 
-Step <1>2 shows that every point on the horizontal segment is a deformation-retraction point. Every point of \(X\) outside that segment has positive second coordinate, so step <1>5 excludes all remaining points.
+Step [](#s1-2){.pf-ref} shows that every point on the horizontal segment is a deformation-retraction point. Every point of \(X\) outside that segment has positive second coordinate, so step [](#s1-5){.pf-ref} excludes all remaining points.
 
 :::
 
@@ -195,7 +195,7 @@ Step <1>2 shows that every point on the horizontal segment is a deformation-retr
 
 ::: pf-qed
 
-Step <1>1 proves part \(1\), and step <1>6 proves part \(2\).
+Step [](#s1-1){.pf-ref} proves part \(1\), and step [](#s1-6){.pf-ref} proves part \(2\).
 
 :::
 

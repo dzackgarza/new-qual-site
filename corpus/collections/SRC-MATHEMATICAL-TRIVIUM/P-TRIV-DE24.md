@@ -44,7 +44,7 @@ y(x)=\sum_{m=0}^{\infty}a_mx^{r+m},
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The indicial equation is
 \[
@@ -69,7 +69,7 @@ The coefficient of the lowest power $x^r$ is $(r^2-p^2)a_0$. Since $a_0\ne0$, it
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For either indicial root, $a_1=0$ and, for $m\geq2$,
 \[
@@ -79,7 +79,7 @@ For either indicial root, $a_1=0$ and, for $m\geq2$,
 
 ::: pf-proof
 
-Shift the second sum in step <1>1 by two indices. For $m\geq2$, the coefficient of $x^{r+m}$ is
+Shift the second sum in step [](#s1-1){.pf-ref} by two indices. For $m\geq2$, the coefficient of $x^{r+m}$ is
 \[
 \bigl((r+m)^2-p^2\bigr)a_m+a_{m-2}.
 \]
@@ -89,7 +89,7 @@ For $m=1$, the coefficient is $((r+1)^2-p^2)a_1$, which gives $a_1=0$ whenever t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For the root $r=p$,
 \[
@@ -99,7 +99,7 @@ a_{2k}=(-1)^k a_0\frac{\Gamma(p+1)}{4^k k!\,\Gamma(k+p+1)}.
 
 ::: pf-proof
 
-With $r=p$, step <1>2 becomes
+With $r=p$, step [](#s1-2){.pf-ref} becomes
 \[
 a_{2k}=-\frac{a_{2k-2}}{(p+2k)^2-p^2}
 =-\frac{a_{2k-2}}{4k(k+p)}.
@@ -118,7 +118,7 @@ the formula follows.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Choosing $a_0=1/(2^p\Gamma(p+1))$ gives
 \[
@@ -131,13 +131,13 @@ J_p(x)=\sum_{k=0}^{\infty}
 
 ::: pf-proof
 
-Insert the normalization into step <1>3 and multiply $a_{2k}$ by $x^{p+2k}$. The factors $2^p4^k=2^{p+2k}$ combine into $(x/2)^{p+2k}$.
+Insert the normalization into step [](#s1-3){.pf-ref} and multiply $a_{2k}$ by $x^{p+2k}$. The factors $2^p4^k=2^{p+2k}$ combine into $(x/2)^{p+2k}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For the root $r=-p$,
 \[
@@ -147,7 +147,7 @@ a_{2k}=(-1)^ka_0\frac{\Gamma(1-p)}{4^k k!\,\Gamma(k-p+1)}.
 
 ::: pf-proof
 
-With $r=-p$, step <1>2 gives
+With $r=-p$, step [](#s1-2){.pf-ref} gives
 \[
 a_{2k}=-\frac{a_{2k-2}}{(-p+2k)^2-p^2}
 =-\frac{a_{2k-2}}{4k(k-p)}.
@@ -162,7 +162,7 @@ give the result.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Choosing $a_0=2^p/\Gamma(1-p)$ gives
 \[
@@ -175,7 +175,7 @@ J_{-p}(x)=\sum_{k=0}^{\infty}
 
 ::: pf-proof
 
-Insert this normalization into step <1>5 and multiply by $x^{-p+2k}$. Since $2^{-p+2k}=4^k/2^p$, the coefficients take exactly the displayed form.
+Insert this normalization into step [](#s1-5){.pf-ref} and multiply by $x^{-p+2k}$. Since $2^{-p+2k}=4^k/2^p$, the coefficients take exactly the displayed form.
 
 :::
 
@@ -183,7 +183,7 @@ Insert this normalization into step <1>5 and multiply by $x^{-p+2k}$. Since $2^{
 
 ::: pf-qed
 
-Steps <1>1--<1>2 give the indicial roots and recurrence, while steps <1>3--<1>6 give the two normalized Frobenius series requested in the problem.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the indicial roots and recurrence, while steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} give the two normalized Frobenius series requested in the problem.
 
 :::
 

@@ -48,7 +48,7 @@ The groups \(G\) and \(G^{\mathrm{op}}\) have the same underlying set, and \(g^{
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let \(\star\) denote multiplication in \(G^{\mathrm{op}}\). Then
 \[
@@ -66,7 +66,7 @@ This is the definition of the opposite group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For \(x,y\in G\),
 \[
@@ -86,7 +86,7 @@ Use the inverse-of-a-product identity in \(G\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Also,
 \[
@@ -100,13 +100,13 @@ y^{-1}x^{-1}.
 
 ::: pf-proof
 
-Apply the reversed multiplication from step <1>2.
+Apply the reversed multiplication from step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -117,13 +117,13 @@ Therefore
 
 ::: pf-proof
 
-Compare steps <1>3--<1>4.
+Compare steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence \(\phi\) is a group homomorphism
 \[
@@ -133,13 +133,13 @@ G\to G^{\mathrm{op}}.
 
 ::: pf-proof
 
-Step <1>5 is exactly the homomorphism condition.
+Step [](#s1-5){.pf-ref} is exactly the homomorphism condition.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The map \(\phi\) is injective.
 
@@ -163,7 +163,7 @@ x=y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The map \(\phi\) is surjective.
 
@@ -183,7 +183,7 @@ Then
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 \[
@@ -194,7 +194,7 @@ G\cong G^{\mathrm{op}}}.
 
 ::: pf-proof
 
-The map \(\phi\) is a bijective homomorphism by steps <1>6--<1>8.
+The map \(\phi\) is a bijective homomorphism by steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref}.
 
 :::
 
@@ -202,7 +202,7 @@ The map \(\phi\) is a bijective homomorphism by steps <1>6--<1>8.
 
 ::: pf-qed
 
-Step <1>9 is the required isomorphism.
+Step [](#s1-9){.pf-ref} is the required isomorphism.
 
 :::
 

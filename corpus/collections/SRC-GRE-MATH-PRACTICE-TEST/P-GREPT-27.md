@@ -75,7 +75,7 @@ whose roots are $-1\pm2i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the general real solution is
 $$
@@ -97,7 +97,7 @@ arbitrary real coefficients gives the displayed general solution.
 
 ::: pf-qed
 
-Step <1>3 gives the complete four-parameter solution of the fourth-order
+Step [](#s1-3){.pf-ref} gives the complete four-parameter solution of the fourth-order
 equation.
 
 :::

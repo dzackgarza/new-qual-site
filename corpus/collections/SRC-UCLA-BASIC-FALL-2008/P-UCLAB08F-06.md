@@ -26,7 +26,7 @@ Prove, without merely quoting the rank-nullity theorem, that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -46,9 +46,9 @@ k=\dim\ker T.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Extend the basis in step <1>1 to a basis
+Extend the basis in step [](#s1-1){.pf-ref} to a basis
 \[
 v_1,\ldots,v_k,v_{k+1},\ldots,v_n
 \]
@@ -63,7 +63,7 @@ Every linearly independent set in a finite-dimensional vector space extends to a
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The vectors
 \[
@@ -96,7 +96,7 @@ Hence the displayed vectors span the range.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The vectors
 \[
@@ -125,7 +125,7 @@ But it also lies in
 \[
 \operatorname{span}\{v_{k+1},\ldots,v_n\}.
 \]
-Since the full list in step <1>2 is a basis, these two spans intersect only in $0$. Therefore
+Since the full list in step [](#s1-2){.pf-ref} is a basis, these two spans intersect only in $0$. Therefore
 \[
 a_{k+1}=\cdots=a_n=0.
 \]
@@ -134,7 +134,7 @@ a_{k+1}=\cdots=a_n=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -144,7 +144,7 @@ One has
 
 ::: pf-proof
 
-By steps <1>3--<1>4, the $n-k$ vectors
+By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, the $n-k$ vectors
 \[
 Tv_{k+1},\ldots,Tv_n
 \]
@@ -154,7 +154,7 @@ form a basis of $\operatorname{range}T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -166,11 +166,11 @@ Therefore
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \dim\ker T=k,
 \]
-and by step <1>5,
+and by step [](#s1-5){.pf-ref},
 \[
 \dim\operatorname{range}T=n-k.
 \]
@@ -182,7 +182,7 @@ Adding gives $n$.
 
 ::: pf-qed
 
-Step <1>6 proves the desired formula without invoking rank-nullity as a black box.
+Step [](#s1-6){.pf-ref} proves the desired formula without invoking rank-nullity as a black box.
 
 :::
 

@@ -45,7 +45,7 @@ Set
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The characteristic polynomial is
 \[
@@ -72,7 +72,7 @@ One has
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The eigenvalues are $\lambda_+$ and $\lambda_-$, with respective
 eigenvectors
@@ -85,7 +85,7 @@ u_-=\begin{pmatrix}-1\\\beta\end{pmatrix}.
 
 ::: pf-proof
 
-Solving the quadratic in step <1>1 gives
+Solving the quadratic in step [](#s1-1){.pf-ref} gives
 $\lambda_\pm=(3\pm\sqrt5)/2$. Directly,
 \[
 Au_+
@@ -108,7 +108,7 @@ Thus the displayed vectors are eigenvectors for the stated eigenvalues.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The discrete system $x(t+1)=Ax(t)$ is not asymptotically stable.
 
@@ -130,7 +130,7 @@ stable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The eigenvectors $u_+$ and $u_-$ are orthogonal.
 
@@ -149,7 +149,7 @@ u_+\cdot u_-
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Define
 \[
@@ -182,8 +182,8 @@ One computes
 \qquad
 \|u_-\|^2=1+\beta^2=\frac{5+\sqrt5}{2}=n_-^2.
 \]
-By step <1>4, the columns of $S$ form an orthonormal basis, so
-$S^{-1}=S^T$. Step <1>2 says that these columns are eigenvectors with
+By step [](#s1-4){.pf-ref}, the columns of $S$ form an orthonormal basis, so
+$S^{-1}=S^T$. Step [](#s1-2){.pf-ref} says that these columns are eigenvectors with
 eigenvalues $\lambda_+,\lambda_-$, hence
 \[
 AS=SB.
@@ -194,7 +194,7 @@ Multiplying on the left by $S^{-1}$ gives $S^{-1}AS=B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In part (e), the transformed picture is candidate B.
 
@@ -212,7 +212,7 @@ candidates, this is precisely picture B.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The requested answers are
 \[
@@ -222,7 +222,7 @@ The requested answers are
 \lambda_\pm=\frac{3\pm\sqrt5}{2},\\
 u_+=(1,\alpha)^T,\quad u_-=(-1,\beta)^T,\qquad
 \text{the system is not asymptotically stable},\\
-B=S^{-1}AS\text{ for the }S,B\text{ of step <1>5},\qquad
+B=S^{-1}AS\text{ for the }S,B\text{ of step [](#s1-5){.pf-ref}},\qquad
 \text{picture B in part (e).}
 \end{gathered}}
 \]
@@ -230,7 +230,7 @@ B=S^{-1}AS\text{ for the }S,B\text{ of step <1>5},\qquad
 
 ::: pf-proof
 
-Steps <1>1--<1>6 establish parts (a)--(e), respectively, with step <1>5
+Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} establish parts (a)--(e), respectively, with step [](#s1-5){.pf-ref}
 providing the requested orthogonal diagonalization.
 
 :::
@@ -239,7 +239,7 @@ providing the requested orthogonal diagonalization.
 
 ::: pf-qed
 
-Step <1>7 records all requested outputs.
+Step [](#s1-7){.pf-ref} records all requested outputs.
 
 :::
 

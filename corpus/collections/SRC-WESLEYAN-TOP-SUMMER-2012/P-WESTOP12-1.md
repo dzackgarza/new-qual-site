@@ -31,7 +31,7 @@ For path-connected spaces $X$ and $Y$, give an explicit example satisfying each 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement (1) is possible.
 Take
@@ -55,7 +55,7 @@ infinitely many.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement (2) is possible as literally stated.
 Take two disjoint copies of the circle:
@@ -76,7 +76,7 @@ of the other.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement (3) is impossible.
 
@@ -108,7 +108,7 @@ X\simeq Y.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Statement (4) is possible.
 Take
@@ -129,7 +129,7 @@ This gives a retraction
 r:Y\to X.
 \]
 
-If $X$ were a deformation retract of $Y$, then step <1>3 would imply
+If $X$ were a deformation retract of $Y$, then step [](#s1-3){.pf-ref} would imply
 \[
 X\simeq Y.
 \]
@@ -147,7 +147,7 @@ Hence the retraction is not a deformation retraction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Statement (5) is impossible.
 
@@ -162,7 +162,7 @@ Thus every deformation retract is a retract.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Statement (6) is impossible.
 
@@ -180,7 +180,7 @@ Homotopy inverse maps induce mutually inverse homomorphisms on
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Statement (7) is possible.
 Take
@@ -209,22 +209,22 @@ Therefore $X$ and $Y$ cannot be homotopy equivalent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Statement (8) is impossible.
 
 
 ::: pf-proof
 
-By step <1>3, a deformation retract is a homotopy equivalence.
-By step <1>6, homotopy-equivalent spaces have isomorphic fundamental
+By step [](#s1-3){.pf-ref}, a deformation retract is a homotopy equivalence.
+By step [](#s1-6){.pf-ref}, homotopy-equivalent spaces have isomorphic fundamental
 groups.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Statement (9) is impossible.
 
@@ -244,7 +244,7 @@ Homotopy invariance of the fundamental group gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Statement (10) is possible.
 Take
@@ -268,7 +268,7 @@ H_2(S^2)\cong\mathbb Z\ne0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Statement (11) is possible.
 Take
@@ -307,7 +307,7 @@ H_1(Y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Statement (12) is impossible.
 
@@ -333,7 +333,7 @@ H_1(X)\cong H_1(Y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Statement (13) is possible.
 Take
@@ -363,7 +363,7 @@ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Statement (14) is possible.
 Take
@@ -407,7 +407,7 @@ The complete classification is
 
 ::: pf-proof
 
-This table collects steps <1>1--<1>14.
+This table collects steps [](#s1-1){.pf-ref} through [](#s1-14){.pf-ref}.
 
 :::
 

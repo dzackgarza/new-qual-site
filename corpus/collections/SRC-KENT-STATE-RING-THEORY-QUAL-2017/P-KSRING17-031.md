@@ -43,7 +43,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The map $\varphi$ is a well-defined ring homomorphism.
 
@@ -82,7 +82,7 @@ preserves addition, multiplication, and $1$, so $\varphi$ is a unital ring homom
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The map $\varphi$ is injective.
 
@@ -115,7 +115,7 @@ so $\varphi$ is injective.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The image of $\varphi$ is contained in
 $$
@@ -144,7 +144,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every element of
 $$
@@ -187,7 +187,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The element
 $$
@@ -198,13 +198,13 @@ does not lie in $\operatorname{im}\varphi$.
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 \operatorname{im}\varphi
 \subseteq
 \QQ(t^2).
 $$
-By step <1>4, every element of the image is fixed by $\sigma$.
+By step [](#s1-4){.pf-ref}, every element of the image is fixed by $\sigma$.
 But
 $$
 \sigma(t)
@@ -222,20 +222,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore $\varphi$ is not surjective.
 
 
 ::: pf-proof
 
-Step <1>5 exhibits an element of $F$ with no preimage.
+Step [](#s1-5){.pf-ref} exhibits an element of $F$ with no preimage.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Hence
 $$
@@ -250,7 +250,7 @@ is the required example.
 
 ::: pf-proof
 
-Steps <1>1--<1>2 show that $\varphi$ is an injective ring homomorphism, while step <1>6 shows that it is not onto.
+Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $\varphi$ is an injective ring homomorphism, while step [](#s1-6){.pf-ref} shows that it is not onto.
 
 :::
 
@@ -258,7 +258,7 @@ Steps <1>1--<1>2 show that $\varphi$ is an injective ring homomorphism, while st
 
 ::: pf-qed
 
-Step <1>7 verifies the requested example.
+Step [](#s1-7){.pf-ref} verifies the requested example.
 
 :::
 

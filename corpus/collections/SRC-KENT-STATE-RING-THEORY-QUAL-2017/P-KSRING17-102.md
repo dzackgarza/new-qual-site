@@ -46,7 +46,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Both $f$ and $g$ are nonconstant polynomials.
 
@@ -82,7 +82,7 @@ The same argument applied to the inverse automorphism $\psi$ shows that $g$ is n
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every polynomial
 $$
@@ -127,7 +127,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Likewise, for every
 $$
@@ -144,13 +144,13 @@ $$
 ::: pf-proof
 
 The inverse automorphism $\psi$ also fixes $D$ pointwise.
-Apply the argument of step <1>2 with $\psi$ in place of $\varphi$.
+Apply the argument of step [](#s1-2){.pf-ref} with $\psi$ in place of $\varphi$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The inverse relation
 $$
@@ -184,13 +184,13 @@ x
 f(g(x)),
 \end{aligned}
 $$
-where the last equality uses step <1>3.
+where the last equality uses step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For nonconstant polynomials
 $$
@@ -248,7 +248,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -262,8 +262,8 @@ $$
 
 ::: pf-proof
 
-By step <1>1, both degrees are positive.
-By steps <1>4--<1>5,
+By step [](#s1-1){.pf-ref}, both degrees are positive.
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 $$
 1
 =
@@ -288,7 +288,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 There exist
 $$
@@ -314,13 +314,13 @@ This is exactly the meaning of
 $$
 \deg f=\deg g=1
 $$
-from step <1>6.
+from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The identity
 $$
@@ -336,7 +336,7 @@ $$
 
 ::: pf-proof
 
-Substitute the expressions from step <1>7:
+Substitute the expressions from step [](#s1-7){.pf-ref}:
 $$
 \begin{aligned}
 x
@@ -360,14 +360,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore $a$ is a unit of $D$.
 
 
 ::: pf-proof
 
-Step <1>8 exhibits
+Step [](#s1-8){.pf-ref} exhibits
 $$
 c\in D
 $$
@@ -391,7 +391,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently,
 $$
@@ -414,11 +414,11 @@ By definition,
 $$
 \varphi(x)=f(x).
 $$
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 $$
 f(x)=ax+b,
 $$
-and step <1>9 shows
+and step [](#s1-9){.pf-ref} shows
 $$
 a\in D^\times.
 $$
@@ -429,7 +429,7 @@ $$
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

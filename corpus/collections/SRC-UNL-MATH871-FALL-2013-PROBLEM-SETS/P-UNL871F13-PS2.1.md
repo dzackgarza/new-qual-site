@@ -18,7 +18,7 @@ Determine whether $(X,\mathcal T_{ip})$ and $(Y,\mathcal T_{fc})$ are homeomorph
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 In the finite-complement topology on
 \[
@@ -65,7 +65,7 @@ space.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In the included-point topology on
 \[
@@ -120,7 +120,7 @@ T_1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The property of being
 \[
@@ -162,7 +162,7 @@ The converse follows from $h^{-1}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -176,17 +176,17 @@ Therefore
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 (Y,\mathcal T_{fc})
 \]
 is $T_1$.
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 (X,\mathcal T_{ip})
 \]
 is not $T_1$.
-Step <1>3 says homeomorphic spaces must agree on this property.
+Step [](#s1-3){.pf-ref} says homeomorphic spaces must agree on this property.
 Hence no homeomorphism exists.
 
 :::
@@ -195,7 +195,7 @@ Hence no homeomorphism exists.
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

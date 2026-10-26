@@ -35,7 +35,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose $\alpha>0$. On the upper semicircle
 $$
@@ -71,7 +71,7 @@ because $\alpha>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For $R>a$, the upper-semicircle contribution tends to zero as
 $R\to\infty$.
@@ -85,7 +85,7 @@ $$
 \geq
 R^2-a^2.
 $$
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 |F(z)|
 \leq
@@ -105,7 +105,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $\alpha>0$, then
 $$
@@ -137,13 +137,13 @@ $$
 =
 \frac\pi a e^{-\alpha a}.
 $$
-Let $R\to\infty$ and use step <1>2.
+Let $R\to\infty$ and use step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose $\alpha<0$. On the lower semicircle,
 $$
@@ -170,20 +170,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The lower-semicircle contribution tends to zero as $R\to\infty$.
 
 
 ::: pf-proof
 
-The denominator estimate from step <1>2 remains valid:
+The denominator estimate from step [](#s1-2){.pf-ref} remains valid:
 $$
 |z^2+a^2|
 \geq
 R^2-a^2.
 $$
-Together with step <1>4 and the arc length $\pi R$, the $ML$ estimate gives
+Together with step [](#s1-4){.pf-ref} and the arc length $\pi R$, the $ML$ estimate gives
 $$
 \left|
 \int_{\Gamma_R^-}F(z)\,dz
@@ -197,7 +197,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $\alpha<0$, then
 $$
@@ -231,13 +231,13 @@ $$
 =
 \frac\pi a e^{\alpha a}.
 $$
-Let $R\to\infty$ and use step <1>5.
+Let $R\to\infty$ and use step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $\alpha=0$, then
 $$
@@ -250,7 +250,7 @@ $$
 
 ::: pf-proof
 
-This is step <1>3 with $\alpha=0$; equivalently, the same upper-semicircle
+This is step [](#s1-3){.pf-ref} with $\alpha=0$; equivalently, the same upper-semicircle
 residue calculation applies because the exponential factor is identically
 $1$.
 
@@ -258,7 +258,7 @@ $1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 For every real $\alpha$ and every $m\ne0$,
 $$
@@ -274,17 +274,17 @@ $$
 
 ::: pf-proof
 
-Recall $a=|m|$. For $\alpha>0$, step <1>3 gives
+Recall $a=|m|$. For $\alpha>0$, step [](#s1-3){.pf-ref} gives
 $$
 \frac\pi a e^{-\alpha a}.
 $$
-For $\alpha<0$, step <1>6 gives
+For $\alpha<0$, step [](#s1-6){.pf-ref} gives
 $$
 \frac\pi a e^{\alpha a}
 =
 \frac\pi a e^{-|alpha|a}.
 $$
-Step <1>7 handles $\alpha=0$. These are exactly the displayed unified
+Step [](#s1-7){.pf-ref} handles $\alpha=0$. These are exactly the displayed unified
 formula.
 
 :::
@@ -293,7 +293,7 @@ formula.
 
 ::: pf-qed
 
-Step <1>8 is the required Fourier-transform integral in every convergent case.
+Step [](#s1-8){.pf-ref} is the required Fourier-transform integral in every convergent case.
 
 :::
 

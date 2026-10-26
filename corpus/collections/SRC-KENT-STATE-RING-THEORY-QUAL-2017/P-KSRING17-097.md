@@ -25,7 +25,7 @@ Assume henceforth that $D$ is not a field.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Fix an irreducible element
 $$
@@ -75,7 +75,7 @@ Hence $a$ is associate to $p^n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every nonzero element $a\in D$ can be written uniquely in the form
 $$
@@ -91,7 +91,7 @@ $$
 
 ::: pf-proof
 
-Existence follows from step <1>1, with
+Existence follows from step [](#s1-1){.pf-ref}, with
 $$
 n=0
 $$
@@ -138,7 +138,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -165,16 +165,16 @@ k\ge0:
 \text{some unit multiple of }p^k\text{ lies in }I
 \}
 $$
-is nonempty because $I$ contains a nonzero element and step <1>2 applies.
+is nonempty because $I$ contains a nonzero element and step [](#s1-2){.pf-ref} applies.
 The nonnegative integers are well ordered, so this set has a least element.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
-For the least exponent $n$ from step <1>3,
+For the least exponent $n$ from step [](#s1-3){.pf-ref},
 $$
 p^n\in I.
 $$
@@ -200,7 +200,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Every element of $I$ lies in
 $$
@@ -214,7 +214,7 @@ Let
 $$
 0\ne a\in I.
 $$
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 a=vp^m
 $$
@@ -222,7 +222,7 @@ for a unit $v$ and some
 $$
 m\ge0.
 $$
-By minimality of $n$ in step <1>3,
+By minimality of $n$ in step [](#s1-3){.pf-ref},
 $$
 m\ge n.
 $$
@@ -247,7 +247,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Every nonzero ideal of $D$ has the form
 $$
@@ -261,11 +261,11 @@ $$
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 $$
 (p^n)\subseteq I,
 $$
-and step <1>5 gives
+and step [](#s1-5){.pf-ref} gives
 $$
 I\subseteq(p^n).
 $$
@@ -275,7 +275,7 @@ Hence equality holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For nonnegative integers $m,n$,
 $$
@@ -333,7 +333,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Any two ideals $A,B$ of $D$ are comparable.
 
@@ -342,7 +342,7 @@ Any two ideals $A,B$ of $D$ are comparable.
 
 If either ideal is zero, comparability is immediate.
 Assume both are nonzero.
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 A=(p^m),
 \qquad
@@ -360,7 +360,7 @@ or
 $$
 n\ge m.
 $$
-By step <1>7, the first case gives
+By step [](#s1-7){.pf-ref}, the first case gives
 $$
 A\subseteq B,
 $$
@@ -383,7 +383,7 @@ $$
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

@@ -27,7 +27,7 @@ where $a$ and $b$ are the two circle generators.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Up to covering equivalence, there are exactly three connected
 $2$-sheeted covers of $X$.
@@ -115,7 +115,7 @@ subgroup has index $2$, hence is normal, and the quotient is $\mathbb Z/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For the cover with
 \[
@@ -145,7 +145,7 @@ is $\mathbb Z/2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 There exists a connected covering of $X$ that is not regular.
 
@@ -176,7 +176,7 @@ its associated subgroup is normal, so this covering is not regular.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The universal cover of $X$ is the $4$-regular tree.
 
@@ -199,7 +199,7 @@ $a,a^{-1},b,b^{-1}$, so the tree is $4$-regular.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The universal abelian cover is the square grid with vertex set
 $\mathbb Z^2$.
@@ -236,9 +236,9 @@ the two circles. Its deck group is
 
 ::: pf-qed
 
-Steps <1>1 through <1>4 classify the connected two-sheeted covers and compute
-their subgroups and deck groups; step <1>5 gives a nonregular cover; steps
-<1>6 and <1>7 describe the universal and universal-abelian covers.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} classify the connected two-sheeted covers and compute
+their subgroups and deck groups; step [](#s1-5){.pf-ref} gives a nonregular cover; steps
+[](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} describe the universal and universal-abelian covers.
 
 :::
 

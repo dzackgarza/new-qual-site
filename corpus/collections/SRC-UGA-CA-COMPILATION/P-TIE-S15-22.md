@@ -55,7 +55,7 @@ Composing these maps gives $T$. The same construction gives $T'$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The points
 $$
@@ -85,7 +85,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There is a unique real affine map
 $$
@@ -109,7 +109,7 @@ w=x+iy,
 \qquad
 w'=x'+iy',
 $$
-with $y,y'\ne0$ by step <1>2. The equation
+with $y,y'\ne0$ by step [](#s1-2){.pf-ref}. The equation
 $$
 aw+b=w'
 $$
@@ -132,7 +132,7 @@ These values are real and give the unique such affine map.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -192,7 +192,7 @@ f(z_1)
 =
 z_1',
 $$
-and by step <1>3,
+and by step [](#s1-3){.pf-ref},
 $$
 f(z_2)
 =
@@ -208,7 +208,7 @@ Thus $f$ has all the required properties.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The transformation $f$ is unique.
 
@@ -253,7 +253,7 @@ $$
 
 ::: pf-qed
 
-Step <1>4 proves existence and step <1>5 proves uniqueness.
+Step [](#s1-4){.pf-ref} proves existence and step [](#s1-5){.pf-ref} proves uniqueness.
 
 :::
 

@@ -42,7 +42,7 @@ Part (A) is true, while part (B) is false as printed.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $f\in W$ and every $x\in[0,1]$,
 \[
@@ -83,7 +83,7 @@ the triangle inequality gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $f\in W$,
 \[
@@ -101,7 +101,7 @@ Then for every
 \[
 x\in[0,1],
 \]
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 \[
 |f(x)|
 \ge
@@ -133,7 +133,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The family $W$ is uniformly bounded; for example,
 \[
@@ -144,7 +144,7 @@ for every $f\in W$ and every $x\in[0,1]$.
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 \[
 |f(x)|
 \le
@@ -163,7 +163,7 @@ This proves part (A).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -203,7 +203,7 @@ so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For $n\ge2$, set
 \[
@@ -250,7 +250,7 @@ c_n\to c.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -265,7 +265,7 @@ for every $n\ge2$.
 
 ::: pf-proof
 
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \int_0^1f_n(x)^2\,dx=1.
 \]
@@ -294,7 +294,7 @@ Thus $f_n$ satisfies both defining conditions of $W$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 One has
 \[
@@ -329,14 +329,14 @@ Hence the convergence is uniform.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The limit $g$ does not belong to $W$.
 
 
 ::: pf-proof
 
-Although step <1>4 gives
+Although step [](#s1-4){.pf-ref} gives
 \[
 \int_0^1g^2=1,
 \]
@@ -359,24 +359,24 @@ g\notin W.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore $W$ is not closed in $C[0,1]$ with the supremum norm.
 
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 \[
 f_n\in W
 \]
 for all $n$.
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 f_n\to g
 \]
 in the supremum norm.
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 g\notin W.
 \]
@@ -386,7 +386,7 @@ Thus $W$ is not closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Consequently part (B) is false as printed.
 
@@ -398,7 +398,7 @@ The normed space
 C[0,1]
 \]
 is Hausdorff, and every compact subset of a Hausdorff space is closed.
-Step <1>9 shows that $W$ is not closed.
+Step [](#s1-9){.pf-ref} shows that $W$ is not closed.
 Therefore
 \[
 \boxed{W\text{ is not compact}.}
@@ -408,7 +408,7 @@ Therefore
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If the source's strict inequality is replaced by
 \[
@@ -436,9 +436,9 @@ Therefore Arzelà--Ascoli gives compactness.
 
 ::: pf-qed
 
-Step <1>3 proves part (A).
-Steps <1>4--<1>10 prove that part (B) is false for the literal strict inequality.
-Step <1>11 records the corrected non-strict version for which the intended compactness conclusion holds.
+Step [](#s1-3){.pf-ref} proves part (A).
+Steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} prove that part (B) is false for the literal strict inequality.
+Step [](#s1-11){.pf-ref} records the corrected non-strict version for which the intended compactness conclusion holds.
 
 :::
 

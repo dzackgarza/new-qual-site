@@ -31,7 +31,7 @@ It is a separate problem, carried by its own card.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For all $z,w$ with $\abs{z}<R$ and $\abs{w}<R$,
 $$
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The function $f(z)=z^2$ is uniformly continuous on the open disk $\abs{z}<R$.
 
@@ -75,7 +75,7 @@ Let $\varepsilon>0$ and choose
 $$
 \delta\coloneqq\frac{\varepsilon}{2R}.
 $$
-If $\abs{z}<R$, $\abs{w}<R$, and $\abs{z-w}<\delta$, then by step <1>1,
+If $\abs{z}<R$, $\abs{w}<R$, and $\abs{z-w}<\delta$, then by step [](#s1-1){.pf-ref},
 $$
 \abs{f(z)-f(w)}
 <
@@ -89,7 +89,7 @@ The choice of $\delta$ depends only on $\varepsilon$ and $R$, not on the points 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The function $f(z)=z^2$ is not uniformly continuous on $\CC$.
 
@@ -130,7 +130,7 @@ If $f$ were uniformly continuous on $\CC$, pairs of points whose distance tends 
 
 ::: pf-qed
 
-Step <1>2 proves uniform continuity on every fixed open disk, and step <1>3 proves failure of uniform continuity on $\CC$.
+Step [](#s1-2){.pf-ref} proves uniform continuity on every fixed open disk, and step [](#s1-3){.pf-ref} proves failure of uniform continuity on $\CC$.
 
 :::
 

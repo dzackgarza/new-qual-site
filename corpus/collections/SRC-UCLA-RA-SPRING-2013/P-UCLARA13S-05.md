@@ -61,7 +61,7 @@ is holomorphic on $D$. Every holomorphic function on the disk has a power-series
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -113,7 +113,7 @@ u_x(0,0)=\operatorname{Re}a_1=\alpha_1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $0<R<1$,
 \[
@@ -130,7 +130,7 @@ R^{2n+2}.
 
 ::: pf-proof
 
-For each fixed $R<1$, the power series from step <1>2 converges uniformly on $|z|\le R$, so it may be integrated term-by-term. Orthogonality on $[0,2\pi]$ gives
+For each fixed $R<1$, the power series from step [](#s1-2){.pf-ref} converges uniformly on $|z|\le R$, so it may be integrated term-by-term. Orthogonality on $[0,2\pi]$ gives
 \[
 \int_0^{2\pi}\cos(n\theta)\cos(m\theta)\,d\theta
 =
@@ -157,7 +157,7 @@ Integrating this identity against $r\,dr$ from $0$ to $R$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $u\in H$,
 \[
@@ -169,7 +169,7 @@ For every $u\in H$,
 
 ::: pf-proof
 
-By step <1>3, every term in the expansion of the integral is nonnegative. In particular, for every $R<1$,
+By step [](#s1-3){.pf-ref}, every term in the expansion of the integral is nonnegative. In particular, for every $R<1$,
 \[
 \int_{|z|<R}u(z)^2\,dA(z)
 \ge
@@ -183,13 +183,13 @@ Letting $R\uparrow1$ and using monotone convergence on the left yields
 \ge
 \frac\pi4\alpha_1^2.
 \]
-By step <1>2, $\alpha_1=u_x(0,0)$.
+By step [](#s1-2){.pf-ref}, $\alpha_1=u_x(0,0)$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The functional $T$ is bounded and
 \[
@@ -201,7 +201,7 @@ The functional $T$ is bounded and
 
 ::: pf-proof
 
-Step <1>4 gives
+Step [](#s1-4){.pf-ref} gives
 \[
 |T(u)|
 =
@@ -217,7 +217,7 @@ Linearity follows from linearity of differentiation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For
 \[
@@ -256,7 +256,7 @@ r^2\cos^2\theta\,r\,d\theta\,dr\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -270,7 +270,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 gives the upper bound. Step <1>6 gives
+Step [](#s1-5){.pf-ref} gives the upper bound. Step [](#s1-6){.pf-ref} gives
 \[
 \frac{|T(u_0)|}{\|u_0\|_H}
 =
@@ -286,7 +286,7 @@ so the upper bound is attained.
 
 ::: pf-qed
 
-Step <1>5 proves boundedness in part (a), and step <1>7 gives the exact norm required in part (b).
+Step [](#s1-5){.pf-ref} proves boundedness in part (a), and step [](#s1-7){.pf-ref} gives the exact norm required in part (b).
 
 :::
 

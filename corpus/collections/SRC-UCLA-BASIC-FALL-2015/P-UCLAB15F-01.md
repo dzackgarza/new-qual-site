@@ -35,7 +35,7 @@ Set
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -56,7 +56,7 @@ Taking the lower limit preserves this inequality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Fix an integer $m\ge1$.
 For every $n$, write
@@ -99,7 +99,7 @@ If $r=0$, the same formula holds with $a_0=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 \[
@@ -117,7 +117,7 @@ Then
 
 ::: pf-proof
 
-The remainder index $r$ in step <1>2 satisfies
+The remainder index $r$ in step [](#s1-2){.pf-ref} satisfies
 \[
 0\le r<m,
 \]
@@ -125,13 +125,13 @@ so
 \[
 a_r\le C_m.
 \]
-Divide the inequality in step <1>2 by $n>0$.
+Divide the inequality in step [](#s1-2){.pf-ref} by $n>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For fixed $m$,
 \[
@@ -162,7 +162,7 @@ Also
 \[
 \frac{C_m}{n}\to0.
 \]
-Taking $\limsup$ in step <1>3 gives
+Taking $\limsup$ in step [](#s1-3){.pf-ref} gives
 \[
 \limsup_{n\to\infty}\frac{a_n}{n}
 \le
@@ -173,7 +173,7 @@ Taking $\limsup$ in step <1>3 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -185,7 +185,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>4 holds for every $m\ge1$.
+Step [](#s1-4){.pf-ref} holds for every $m\ge1$.
 Taking the infimum over $m$ gives
 \[
 \limsup_{n\to\infty}\frac{a_n}{n}
@@ -199,7 +199,7 @@ Taking the infimum over $m$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 \[
@@ -213,13 +213,13 @@ One has
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 \liminf_{n\to\infty}\frac{a_n}{n}
 \ge
 \alpha.
 \]
-By step <1>5,
+By step [](#s1-5){.pf-ref},
 \[
 \limsup_{n\to\infty}\frac{a_n}{n}
 \le
@@ -238,7 +238,7 @@ Thus the ordinary limit exists and equals the stated infimum.
 
 ::: pf-qed
 
-Step <1>6 is Fekete's lemma in the requested form.
+Step [](#s1-6){.pf-ref} is Fekete's lemma in the requested form.
 
 :::
 

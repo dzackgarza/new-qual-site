@@ -105,7 +105,7 @@ Since \(L=K(\alpha)\), the normal closure of \(L/K\) is obtained by adjoining al
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The action of
 \[
@@ -125,7 +125,7 @@ Every \(K\)-automorphism of \(\widetilde L\) permutes the roots of \(f\). The ac
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -140,7 +140,7 @@ Since \(\widetilde L/K\) is finite Galois,
 \[
 [\widetilde L:K]=|G|.
 \]
-By step <1>5, \(G\) is a subgroup of \(S_p\), so Lagrange's theorem gives
+By step [](#s1-5){.pf-ref}, \(G\) is a subgroup of \(S_p\), so Lagrange's theorem gives
 \[
 |G|\mid|S_p|=p!.
 \]
@@ -187,7 +187,7 @@ is finite separable, and every \(L\)-embedding of \(LM\) fixes \(L\) and sends \
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 One has
 \[
@@ -209,7 +209,7 @@ This is the standard degree formula for a compositum when \(M/K\) is finite:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Since
 \[
@@ -232,13 +232,13 @@ has degree over \(K\) dividing the prime degree \([M:K]=p\). Hence
 \[
 [L\cap M:K]
 \]
-is \(1\) or \(p\), and step <1>9 gives the two possibilities for \([LM:L]\).
+is \(1\) or \(p\), and step [](#s1-9){.pf-ref} gives the two possibilities for \([LM:L]\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The case
 \[
@@ -282,7 +282,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>10 gives only the two possibilities, and step <1>11 excludes \(1\).
+Step [](#s1-10){.pf-ref} gives only the two possibilities, and step [](#s1-11){.pf-ref} excludes \(1\).
 
 :::
 
@@ -299,7 +299,7 @@ L\cap M=K}.
 
 ::: pf-proof
 
-By step <1>9,
+By step [](#s1-9){.pf-ref},
 \[
 p=[LM:L]=[M:L\cap M].
 \]
@@ -322,7 +322,7 @@ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -351,7 +351,7 @@ p^2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Since
 \[
@@ -372,15 +372,15 @@ By the tower law,
 =
 [\widetilde L:LM]\,[LM:K].
 \]
-Apply step <1>14.
+Apply step [](#s1-14){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
-Combining steps <1>6 and <1>15,
+Combining steps [](#s1-6){.pf-ref} and [](#s1-15){.pf-ref},
 \[
 \boxed{
 p^2\mid p!}.
@@ -389,11 +389,11 @@ p^2\mid p!}.
 
 ::: pf-proof
 
-Step <1>15 gives
+Step [](#s1-15){.pf-ref} gives
 \[
 p^2\mid[\widetilde L:K],
 \]
-and step <1>6 gives
+and step [](#s1-6){.pf-ref} gives
 \[
 [\widetilde L:K]\mid p!.
 \]
@@ -403,7 +403,7 @@ Divisibility is transitive.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 But
 \[
@@ -424,37 +424,37 @@ the only multiple of the prime \(p\) is \(p\) itself, and it contributes exactly
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 Hence
 \[
 p^2\nmid p!,
 \]
-contradicting step <1>16.
+contradicting step [](#s1-16){.pf-ref}.
 
 
 ::: pf-proof
 
-Step <1>17 says the exponent of \(p\) in the prime factorization of \(p!\) is exactly \(1\), whereas divisibility by \(p^2\) would require exponent at least \(2\).
+Step [](#s1-17){.pf-ref} says the exponent of \(p\) in the prime factorization of \(p!\) is exactly \(1\), whereas divisibility by \(p^2\) would require exponent at least \(2\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Therefore no such field \(M\) exists.
 
 
 ::: pf-proof
 
-The assumption of its existence led to the contradiction in step <1>18.
+The assumption of its existence led to the contradiction in step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Thus
 \[
@@ -468,7 +468,7 @@ M/K\text{ Galois and }[M:K]=p.}
 
 ::: pf-proof
 
-This is step <1>19.
+This is step [](#s1-19){.pf-ref}.
 
 :::
 
@@ -476,7 +476,7 @@ This is step <1>19.
 
 ::: pf-qed
 
-Step <1>20 is the required conclusion.
+Step [](#s1-20){.pf-ref} is the required conclusion.
 
 :::
 

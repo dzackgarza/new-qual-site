@@ -33,7 +33,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $\lambda>0$, the event $\{\xi\geq x\}$ equals
 \[
@@ -49,7 +49,7 @@ The exponential function $u\mapsto e^{\lambda u}$ is strictly increasing when $\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Markov's inequality applied to the nonnegative random variable $e^{\lambda\xi}$ gives
 \[
@@ -66,13 +66,13 @@ For any nonnegative random variable $Y$ and $a>0$,
 \mathbf EY\geq\mathbf E[Y\mathbf1_{Y\geq a}]
 \geq aP(Y\geq a),
 \]
-so $P(Y\geq a)\leq\mathbf EY/a$. Take $Y=e^{\lambda\xi}$ and $a=e^{\lambda x}$, using step <1>1. Finiteness of the stated exponential moment makes the bound finite.
+so $P(Y\geq a)\leq\mathbf EY/a$. Take $Y=e^{\lambda\xi}$ and $a=e^{\lambda x}$, using step [](#s1-1){.pf-ref}. Finiteness of the stated exponential moment makes the bound finite.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For $m>0$ and $x>0$, the event $\{|\xi|\geq x\}$ equals
 \[
@@ -88,7 +88,7 @@ The function $u\mapsto u^m$ is increasing on $[0,\infty)$ for every $m>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Markov's inequality applied to $|\xi|^m$ gives
 \[
@@ -100,7 +100,7 @@ P(|\xi|\geq x)
 
 ::: pf-proof
 
-Apply the Markov inequality proved in step <1>2 to the nonnegative random variable $Y=|\xi|^m$ with threshold $a=x^m$, and use step <1>3.
+Apply the Markov inequality proved in step [](#s1-2){.pf-ref} to the nonnegative random variable $Y=|\xi|^m$ with threshold $a=x^m$, and use step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -108,7 +108,7 @@ Apply the Markov inequality proved in step <1>2 to the nonnegative random variab
 
 ::: pf-qed
 
-Step <1>2 proves part (a), and step <1>4 proves part (b). Neither argument requires $\xi$ to have a continuous distribution.
+Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b). Neither argument requires $\xi$ to have a continuous distribution.
 
 :::
 

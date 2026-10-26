@@ -24,7 +24,7 @@ be its boundary. Compute $H_n(X,A)$ for all $n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The absolute homology groups are
 $$
@@ -53,7 +53,7 @@ The solid torus $X=D^2\times S^1$ deformation retracts onto $\{0\}\times S^1$, s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Under the inclusion $i:A\hookrightarrow X$, the induced map
 $$
@@ -70,7 +70,7 @@ Choose the standard generators of $H_1(A)$: the meridian $m=S^1\times\{1\}$ and 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -84,13 +84,13 @@ The long exact sequence of the pair contains
 $$
 H_3(X)\longrightarrow H_3(X,A)\longrightarrow H_2(A)\longrightarrow H_2(X).
 $$
-By step <1>1, the outer groups are $0$ and $H_2(A)\cong\ZZ$. Exactness therefore gives $H_3(X,A)\cong\ZZ$.
+By step [](#s1-1){.pf-ref}, the outer groups are $0$ and $H_2(A)\cong\ZZ$. Exactness therefore gives $H_3(X,A)\cong\ZZ$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -104,13 +104,13 @@ The next part of the long exact sequence is
 $$
 0=H_2(X)\longrightarrow H_2(X,A)\longrightarrow H_1(A)\xrightarrow{i_*}H_1(X).
 $$
-Hence $H_2(X,A)\cong\ker i_*$. By step <1>2, this kernel is isomorphic to $\ZZ$.
+Hence $H_2(X,A)\cong\ker i_*$. By step [](#s1-2){.pf-ref}, this kernel is isomorphic to $\ZZ$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -124,13 +124,13 @@ Continue the long exact sequence:
 $$
 H_1(A)\xrightarrow{i_*}H_1(X)\longrightarrow H_1(X,A)\longrightarrow H_0(A)\longrightarrow H_0(X).
 $$
-The map $i_*$ is surjective by step <1>2, and $H_0(A)\to H_0(X)$ is an isomorphism because both spaces are connected. Exactness forces $H_1(X,A)=0$.
+The map $i_*$ is surjective by step [](#s1-2){.pf-ref}, and $H_0(A)\to H_0(X)$ is an isomorphism because both spaces are connected. Exactness forces $H_1(X,A)=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 One has
 $$
@@ -141,13 +141,13 @@ and $H_n(X,A)=0$ for every $n\ge4$.
 
 ::: pf-proof
 
-Since $A$ meets the unique path component of $X$, $H_0(X,A)=0$. For $n\ge4$, step <1>1 gives $H_n(X)=0$ and $H_{n-1}(A)=0$, so the long exact sequence gives $H_n(X,A)=0$.
+Since $A$ meets the unique path component of $X$, $H_0(X,A)=0$. For $n\ge4$, step [](#s1-1){.pf-ref} gives $H_n(X)=0$ and $H_{n-1}(A)=0$, so the long exact sequence gives $H_n(X,A)=0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -162,7 +162,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>3--<1>6.
+Combine steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref}.
 
 :::
 
@@ -170,7 +170,7 @@ Combine steps <1>3--<1>6.
 
 ::: pf-qed
 
-Step <1>7 lists all relative homology groups.
+Step [](#s1-7){.pf-ref} lists all relative homology groups.
 
 :::
 

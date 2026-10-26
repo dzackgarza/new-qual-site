@@ -24,7 +24,7 @@ Assume the inner product is linear in its first variable.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let $H$ be a real or complex Hilbert space and let $L:H\to\mathbb F$ be a bounded linear functional. Then there exists a unique $y\in H$ such that
 $$
@@ -60,7 +60,7 @@ Continuity of $L$ makes $\ker L=L^{-1}(\{0\})$ closed. Since $L\ne0$, its kernel
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $L\ne0$, choose $0\ne u\in(\ker L)^\perp$. Then
 $$
@@ -103,20 +103,20 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The representing vector exists for every bounded linear functional.
 
 
 ::: pf-proof
 
-If $L=0$, take $y=0$. If $L\ne0$, step <1>3 supplies the required vector.
+If $L=0$, take $y=0$. If $L\ne0$, step [](#s1-3){.pf-ref} supplies the required vector.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The representing vector is unique.
 
@@ -137,7 +137,7 @@ so $y_1=y_2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The norm identity $\norm L=\norm y$ holds.
 
@@ -164,7 +164,7 @@ hence $\norm L\ge\norm y$. If $y=0$, both norms are zero.
 
 ::: pf-qed
 
-Steps <1>4--<1>6 prove existence, uniqueness, and the norm identity in the theorem stated in step <1>1.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} prove existence, uniqueness, and the norm identity in the theorem stated in step [](#s1-1){.pf-ref}.
 
 :::
 

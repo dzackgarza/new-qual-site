@@ -28,7 +28,7 @@ Next compute and draw $\nabla f$ at a representative collection of points in $\m
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The level set
 $$
@@ -95,7 +95,7 @@ These descriptions determine the requested representative sketches.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The gradient is
 $$
@@ -119,7 +119,7 @@ the definition of the gradient gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Representative gradient vectors include
 $$
@@ -142,13 +142,13 @@ $$
 
 ::: pf-proof
 
-Substitute the listed points into the formula from step <1>2. These vectors give representative arrows for the gradient sketch.
+Substitute the listed points into the formula from step [](#s1-2){.pf-ref}. These vectors give representative arrows for the gradient sketch.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At every regular point of a level set, the gradient is perpendicular to the level set.
 
@@ -193,14 +193,14 @@ the level set is locally a smooth curve, so this means the gradient is a normal 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 For the present function, the only critical point is the origin.
 
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \nabla f(x,y)=0
 $$
@@ -222,7 +222,7 @@ so there is no single tangent line there. This is exactly where the usual nonzer
 
 ::: pf-qed
 
-Steps <1>1--<1>3 describe the level sets and gradient field, while steps <1>4--<1>5 establish their general geometric relation and identify the exceptional critical point.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} describe the level sets and gradient field, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} establish their general geometric relation and identify the exceptional critical point.
 
 :::
 

@@ -28,7 +28,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $F$ has a simple pole at $z=i$ with residue
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let $C_R$ be the positively oriented contour consisting of
 $[-R,R]$ and the upper semicircle
@@ -76,7 +76,7 @@ $$
 ::: pf-proof
 
 The only pole of $F$ inside the upper semicircle is $z=i$. By the residue
-theorem and step <1>1,
+theorem and step [](#s1-1){.pf-ref},
 $$
 \int_{C_R}F(z),dz
 =
@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 On the semicircular arc $\Gamma_R$,
 $$
@@ -115,7 +115,7 @@ by the reverse triangle inequality. Taking reciprocals gives the bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The arc integral tends to zero:
 $$
@@ -127,7 +127,7 @@ as $R\to\infty$.
 
 ::: pf-proof
 
-The length of $\Gamma_R$ is $\pi R$. By the $ML$ estimate and step <1>3,
+The length of $\Gamma_R$ is $\pi R$. By the $ML$ estimate and step [](#s1-3){.pf-ref},
 $$
 \left|
 \int_{\Gamma_R}F(z),dz
@@ -141,7 +141,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 $$
@@ -154,7 +154,7 @@ $$
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 $$
 \int_{-R}^{R}\frac{dx}{1+x^2}
 +
@@ -162,13 +162,13 @@ $$
 =
 \pi.
 $$
-Let $R\to\infty$ and use step <1>4.
+Let $R\to\infty$ and use step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 $$
@@ -192,7 +192,7 @@ $$
 \int_0^{\infty}
 \frac{dx}{1+x^2}.
 $$
-Apply step <1>5.
+Apply step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -200,7 +200,7 @@ Apply step <1>5.
 
 ::: pf-qed
 
-Step <1>6 is the required value.
+Step [](#s1-6){.pf-ref} is the required value.
 
 :::
 

@@ -24,7 +24,7 @@ h(z)=\left(\frac{z^2-1}{e^z}\right)^{10}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Rewrite
 \[
@@ -45,7 +45,7 @@ the displayed expression is algebraically identical to the given function.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Differentiating by the product and chain rules gives
 \[
@@ -70,13 +70,13 @@ and
 \[
 \frac{d}{dz}e^{-10z}=-10e^{-10z}.
 \]
-Apply the product rule to the expression in step <1>1.
+Apply the product rule to the expression in step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 \[
@@ -89,7 +89,7 @@ h'(z)
 
 ::: pf-proof
 
-Factor the expression from step <1>2:
+Factor the expression from step [](#s1-2){.pf-ref}:
 \[
 \begin{aligned}
 h'(z)
@@ -107,7 +107,7 @@ h'(z)
 
 ::: pf-qed
 
-Step <1>3 gives the requested derivative.
+Step [](#s1-3){.pf-ref} gives the requested derivative.
 
 :::
 

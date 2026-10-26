@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 On the circle
 $$
@@ -75,7 +75,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The polynomial $p$ and the monomial $z^5$ have the same number of zeros in
 $$
@@ -90,7 +90,7 @@ Write
 $$
 p(z)=z^5+(3z^3+7).
 $$
-The strict inequality from step <1>1 holds on the boundary circle
+The strict inequality from step [](#s1-1){.pf-ref} holds on the boundary circle
 $$
 |z|=2.
 $$
@@ -100,7 +100,7 @@ Rouché's theorem therefore gives the same number of zeros inside the circle for
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $p$ has exactly five zeros in
 $$
@@ -115,13 +115,13 @@ The function
 $$
 z^5
 $$
-has a zero of multiplicity $5$ at the origin and no other zeros. By step <1>2, $p$ also has five zeros in the disk.
+has a zero of multiplicity $5$ at the origin and no other zeros. By step [](#s1-2){.pf-ref}, $p$ also has five zeros in the disk.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore every zero of $p$ lies in
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: pf-proof
 
-The polynomial $p$ has degree $5$, so by the fundamental theorem of algebra it has exactly five zeros in $\CC$, counted with multiplicity. Step <1>3 places all five of them in $|z|<2$.
+The polynomial $p$ has degree $5$, so by the fundamental theorem of algebra it has exactly five zeros in $\CC$, counted with multiplicity. Step [](#s1-3){.pf-ref} places all five of them in $|z|<2$.
 
 :::
 
@@ -139,7 +139,7 @@ The polynomial $p$ has degree $5$, so by the fundamental theorem of algebra it h
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion.
+Step [](#s1-4){.pf-ref} is the required conclusion.
 
 :::
 

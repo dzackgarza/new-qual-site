@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Each $g_n$ is measurable, integrable, and nonnegative.
 
@@ -55,7 +55,7 @@ and the right-hand side is integrable because both $f_n$ and $f$ are integrable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -96,7 +96,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the functions $g_n$ are nonnegative. By step <1>2,
+By step [](#s1-1){.pf-ref}, the functions $g_n$ are nonnegative. By step [](#s1-2){.pf-ref},
 $$
 \liminf_{n\to\infty}g_n=2|f|
 $$
@@ -111,7 +111,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose, for contradiction, that
 $$
@@ -132,9 +132,9 @@ The integrals are nonnegative. Failure to converge to $0$ therefore yields a pos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-Along the subsequence from step <1>4,
+Along the subsequence from step [](#s1-4){.pf-ref},
 $$
 \limsup_{k\to\infty}\int_Xg_{n_k}\,d\mu
 \le
@@ -154,7 +154,7 @@ $$
 -
 \int_X|f_{n_k}-f|\,d\mu.
 $$
-Using step <1>4,
+Using step [](#s1-4){.pf-ref},
 $$
 \int_Xg_{n_k}\,d\mu
 \le
@@ -173,9 +173,9 @@ then gives the asserted limit-superior bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-Step <1>5 contradicts Fatou's lemma applied to the subsequence $(g_{n_k})$.
+Step [](#s1-5){.pf-ref} contradicts Fatou's lemma applied to the subsequence $(g_{n_k})$.
 
 
 ::: pf-proof
@@ -190,7 +190,7 @@ $$
 \le
 \liminf_{k\to\infty}\int_Xg_{n_k}\,d\mu.
 $$
-But step <1>5 gives
+But step [](#s1-5){.pf-ref} gives
 $$
 \liminf_{k\to\infty}\int_Xg_{n_k}\,d\mu
 \le
@@ -204,7 +204,7 @@ a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 $$
@@ -216,7 +216,7 @@ $$
 
 ::: pf-proof
 
-The contradiction in step <1>6 shows that the negation assumed in step <1>4 is impossible. Since the integrals are nonnegative, they must converge to $0$.
+The contradiction in step [](#s1-6){.pf-ref} shows that the negation assumed in step [](#s1-4){.pf-ref} is impossible. Since the integrals are nonnegative, they must converge to $0$.
 
 :::
 
@@ -224,7 +224,7 @@ The contradiction in step <1>6 shows that the negation assumed in step <1>4 is i
 
 ::: pf-qed
 
-Step <1>7 is exactly the required $L^1$ convergence.
+Step [](#s1-7){.pf-ref} is exactly the required $L^1$ convergence.
 
 :::
 

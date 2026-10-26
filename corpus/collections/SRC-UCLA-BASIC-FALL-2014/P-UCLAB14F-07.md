@@ -72,7 +72,7 @@ Thus the third equation is redundant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every solution has the form
 \[
@@ -122,7 +122,7 @@ x_1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The squared Euclidean norm of $x(s,t)$ is
 \[
@@ -136,7 +136,7 @@ The squared Euclidean norm of $x(s,t)$ is
 
 ::: pf-proof
 
-Substitute the coordinates from step <1>2:
+Substitute the coordinates from step [](#s1-2){.pf-ref}:
 \[
 \begin{aligned}
 \|x(s,t)\|^2
@@ -154,7 +154,7 @@ Expanding and collecting terms gives the displayed quadratic polynomial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A minimizer of the squared norm must satisfy
 \[
@@ -168,7 +168,7 @@ and
 
 ::: pf-proof
 
-Differentiate the quadratic polynomial from step <1>3:
+Differentiate the quadratic polynomial from step [](#s1-3){.pf-ref}:
 \[
 \frac{\partial}{\partial s}\|x(s,t)\|^2
 =
@@ -185,9 +185,9 @@ At an interior minimum in $\mathbb R^2$, both partial derivatives vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The system in step <1>4 has the unique solution
+The system in step [](#s1-4){.pf-ref} has the unique solution
 \[
 \boxed{
 s=\frac{25}{59},
@@ -231,9 +231,9 @@ t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The critical point in step <1>5 is the unique global minimum of the squared norm.
+The critical point in step [](#s1-5){.pf-ref} is the unique global minimum of the squared norm.
 
 
 ::: pf-proof
@@ -264,7 +264,7 @@ Therefore the quadratic function is strictly convex and its unique critical poin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Substituting the minimizing parameters gives
 \[
@@ -284,7 +284,7 @@ x_{\min}
 
 ::: pf-proof
 
-Using step <1>2 and
+Using step [](#s1-2){.pf-ref} and
 \[
 s=\frac{25}{59},
 \qquad
@@ -318,7 +318,7 @@ x_4=\frac{13}{59}.
 
 ::: pf-qed
 
-Steps <1>6--<1>7 prove that the displayed solution is the unique solution of minimal Euclidean length.
+Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} prove that the displayed solution is the unique solution of minimal Euclidean length.
 
 :::
 

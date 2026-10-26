@@ -24,7 +24,7 @@ Yes.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Define
 \[
@@ -61,7 +61,7 @@ are pairwise distinct, so $K$ contains infinitely many points.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $K$ is bounded.
 
@@ -77,7 +77,7 @@ Every point of $K$ lies in the interval
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $K$ is closed in $\mathbb R$.
 
@@ -164,28 +164,28 @@ is open, so $K$ is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $K$ is compact in $\mathbb R$.
 
 
 ::: pf-proof
 
-By steps <1>2--<1>3, $K$ is closed and bounded.
+By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $K$ is closed and bounded.
 The Heine--Borel theorem therefore implies that $K$ is compact.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore there exist infinite compact subsets of $\mathbb Q$.
 
 
 ::: pf-proof
 
-The set $K$ from step <1>1 is an infinite subset of $\mathbb Q$, and step <1>4 proves that it is compact.
+The set $K$ from step [](#s1-1){.pf-ref} is an infinite subset of $\mathbb Q$, and step [](#s1-4){.pf-ref} proves that it is compact.
 Hence
 \[
 \boxed{
@@ -206,7 +206,7 @@ is an explicit example.
 
 ::: pf-qed
 
-Step <1>5 answers the question affirmatively.
+Step [](#s1-5){.pf-ref} answers the question affirmatively.
 
 :::
 

@@ -34,7 +34,7 @@ Label the six displayed vectors $v_1,\dots,v_6$ in the order in which they occur
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The displayed subspace is
 $$
@@ -56,7 +56,7 @@ Thus $v_3,v_4,v_6$ add no new vectors to the span, and the span of all six vecto
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The vectors $v_1,v_2,v_5$ are linearly independent.
 
@@ -73,7 +73,7 @@ The first coordinate gives $\alpha=0$, and the second coordinate gives $\beta=0$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The dimension of the subspace is
 $$
@@ -84,7 +84,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By step <1>1, the subspace is spanned by $v_1,v_2,v_5$, and by step <1>2 these three vectors are linearly independent. They therefore form a basis of the subspace, which consequently has dimension $3$.
+By step [](#s1-1){.pf-ref}, the subspace is spanned by $v_1,v_2,v_5$, and by step [](#s1-2){.pf-ref} these three vectors are linearly independent. They therefore form a basis of the subspace, which consequently has dimension $3$.
 
 :::
 
@@ -92,7 +92,7 @@ By step <1>1, the subspace is spanned by $v_1,v_2,v_5$, and by step <1>2 these t
 
 ::: pf-qed
 
-Step <1>3 gives the requested dimension.
+Step [](#s1-3){.pf-ref} gives the requested dimension.
 
 :::
 

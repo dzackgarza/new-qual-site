@@ -45,7 +45,7 @@ Then $P'(z)=6z^5+1$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The polynomial $P$ has exactly six zeros inside $C$ and no zeros on $C$.
 
@@ -66,7 +66,7 @@ have the same number of zeros inside $C$, counted with multiplicity. Since $z^6$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The integral equals
 $$
@@ -76,7 +76,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1, the argument principle applies to $P$ on $C$. Since $P$ is a polynomial and has six zeros inside $C$, counted with multiplicity,
+By step [](#s1-1){.pf-ref}, the argument principle applies to $P$ on $C$. Since $P$ is a polynomial and has six zeros inside $C$, counted with multiplicity,
 $$
 \int_C\frac{P'(z)}{P(z)}\,dz
 =
@@ -92,7 +92,7 @@ Substituting $P'(z)=6z^5+1$ gives the integral in the problem.
 
 ::: pf-qed
 
-Step <1>2 gives the requested value.
+Step [](#s1-2){.pf-ref} gives the requested value.
 
 :::
 

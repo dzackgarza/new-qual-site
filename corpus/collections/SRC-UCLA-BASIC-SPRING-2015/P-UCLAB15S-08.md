@@ -31,7 +31,7 @@ d(A,B)=\left(\sum_{1\le i,j\le3}|a_{ij}-b_{ij}|^2\right)^{1/2}.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Claim 1 is false.
 
@@ -69,7 +69,7 @@ Thus the determinant-one matrices are not dense.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 In fact, there is an open neighborhood of the zero matrix containing no determinant-one matrix.
 
@@ -93,7 +93,7 @@ No such matrix can satisfy
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Claim 2 is true.
 Let
@@ -117,7 +117,7 @@ This is the complex Schur theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Write
 \[
@@ -147,7 +147,7 @@ Choose $\mu_1$, then choose $\mu_2$ different from $\mu_1$, then choose $\mu_3$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Let $T_\varepsilon$ be obtained from $T$ by replacing the diagonal entries $\lambda_i$ by $\mu_i$ and leaving the off-diagonal entries unchanged.
 Then
@@ -172,7 +172,7 @@ Hence a $3\times3$ matrix with three distinct eigenvalues is diagonalizable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Define
 \[
@@ -189,7 +189,7 @@ as $\varepsilon\to0$.
 
 ::: pf-proof
 
-Similarity preserves diagonalizability, so $A_\varepsilon$ is diagonalizable by step <1>5.
+Similarity preserves diagonalizability, so $A_\varepsilon$ is diagonalizable by step [](#s1-5){.pf-ref}.
 
 Also,
 \[
@@ -219,7 +219,7 @@ A_\varepsilon\to A.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore matrices with distinct eigenvalues are dense in
 \[
@@ -229,13 +229,13 @@ Therefore matrices with distinct eigenvalues are dense in
 
 ::: pf-proof
 
-The matrix $A$ was arbitrary, and step <1>6 constructs matrices with distinct eigenvalues arbitrarily close to it.
+The matrix $A$ was arbitrary, and step [](#s1-6){.pf-ref} constructs matrices with distinct eigenvalues arbitrarily close to it.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Hence the answers are:
 \[
@@ -245,7 +245,7 @@ Hence the answers are:
 
 ::: pf-proof
 
-Claim 1 is disproved in steps <1>1--<1>2, and Claim 2 is proved in steps <1>3--<1>7.
+Claim 1 is disproved in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, and Claim 2 is proved in steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 :::
 
@@ -253,7 +253,7 @@ Claim 1 is disproved in steps <1>1--<1>2, and Claim 2 is proved in steps <1>3--<
 
 ::: pf-qed
 
-Step <1>8 gives the complete disposition of both claims.
+Step [](#s1-8){.pf-ref} gives the complete disposition of both claims.
 
 :::
 

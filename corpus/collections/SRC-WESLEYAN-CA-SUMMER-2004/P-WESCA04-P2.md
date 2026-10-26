@@ -44,7 +44,7 @@ simply connected regions.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The intersection
 \[
@@ -63,7 +63,7 @@ Thus it is a domain.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For
 \[
@@ -91,7 +91,7 @@ Apply the planar-domain complement criterion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Both sets
 \[
@@ -130,7 +130,7 @@ Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The union
 \[
@@ -141,8 +141,8 @@ is connected.
 
 ::: pf-proof
 
-By step <1>2, both $K_1$ and $K_2$ are connected.
-By step <1>3,
+By step [](#s1-2){.pf-ref}, both $K_1$ and $K_2$ are connected.
+By step [](#s1-3){.pf-ref},
 \[
 K_1\cap K_2
 \]
@@ -157,7 +157,7 @@ The union of two connected subsets with nonempty intersection is connected.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -186,7 +186,7 @@ This is De Morgan's law:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -199,19 +199,19 @@ D_1\cap D_2
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 \[
 D_1\cap D_2
 \]
 is a domain.
-By steps <1>4--<1>5, its complement in the Riemann sphere is connected.
+By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, its complement in the Riemann sphere is connected.
 Apply the planar-domain complement criterion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The intersection
 \[
@@ -239,7 +239,7 @@ U=D_1\cap D_2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The union
 \[
@@ -257,7 +257,7 @@ D_1
 D_2
 \]
 are open and simply connected.
-Their intersection is nonempty and path-connected by step <1>7.
+Their intersection is nonempty and path-connected by step [](#s1-7){.pf-ref}.
 
 Choose
 \[
@@ -291,7 +291,7 @@ is simply connected.
 
 ::: pf-qed
 
-Step <1>6 proves the assertion for the intersection, and step <1>8 proves
+Step [](#s1-6){.pf-ref} proves the assertion for the intersection, and step [](#s1-8){.pf-ref} proves
 the assertion for the union.
 
 :::

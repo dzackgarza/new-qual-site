@@ -43,7 +43,7 @@ f(0)\ne0.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since \(f\) is continuous at \(0\),
 \[
@@ -65,7 +65,7 @@ Apply continuity of the entire function \(f\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exists \(R>0\) such that for \(|z|\ge R\),
 \[
@@ -76,7 +76,7 @@ There exists \(R>0\) such that for \(|z|\ge R\),
 
 ::: pf-proof
 
-By step <1>1, choose \(R\) so large that
+By step [](#s1-1){.pf-ref}, choose \(R\) so large that
 \[
 |f(1/z)-f(0)|
 <
@@ -97,7 +97,7 @@ whenever \(|z|\ge R\). The reverse triangle inequality gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence for \(|z|\ge R\),
 \[
@@ -116,13 +116,13 @@ By hypothesis,
 \le
 M.
 \]
-Use the lower bound from step <1>2 and divide.
+Use the lower bound from step [](#s1-2){.pf-ref} and divide.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(f\) is bounded on the closed disk
 \[
@@ -145,13 +145,13 @@ Therefore \(f\) is bounded on all of \(\mathbb C\).
 
 ::: pf-proof
 
-Use step <1>3 outside the disk and step <1>4 inside.
+Use step [](#s1-3){.pf-ref} outside the disk and step [](#s1-4){.pf-ref} inside.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 By Liouville's theorem,
 \[
@@ -192,7 +192,7 @@ f(z)=az^n=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 There exists a unique integer
 \[
@@ -230,13 +230,13 @@ z^{-n}h(1/z).
 
 ::: pf-proof
 
-Apply the factorization from step <1>8 at the point \(1/z\).
+Apply the factorization from step [](#s1-8){.pf-ref} at the point \(1/z\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -264,7 +264,7 @@ The powers of \(z\) cancel.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The function
 \[
@@ -275,7 +275,7 @@ is bounded on \(\mathbb C\setminus\{0\}\).
 
 ::: pf-proof
 
-By step <1>10, it is exactly the originally bounded function
+By step [](#s1-10){.pf-ref}, it is exactly the originally bounded function
 \[
 f(z)f(1/z).
 \]
@@ -295,17 +295,17 @@ part (a) applies to \(h\).
 
 ::: pf-proof
 
-The function \(h\) is entire by step <1>8, its value at \(0\) is nonzero, and its product
+The function \(h\) is entire by step [](#s1-8){.pf-ref}, its value at \(0\) is nonzero, and its product
 \[
 h(z)h(1/z)
 \]
-is bounded by step <1>11.
+is bounded by step [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 Hence
 \[
@@ -317,13 +317,13 @@ for some \(a\in\mathbb C\).
 
 ::: pf-proof
 
-Apply step <1>6 to \(h\).
+Apply step [](#s1-6){.pf-ref} to \(h\).
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore
 \[
@@ -335,7 +335,7 @@ for all \(z\in\mathbb C\).
 
 ::: pf-proof
 
-Substitute the constant \(h\equiv a\) from step <1>13 into
+Substitute the constant \(h\equiv a\) from step [](#s1-13){.pf-ref} into
 \[
 f(z)=z^nh(z).
 \]
@@ -346,7 +346,7 @@ f(z)=z^nh(z).
 
 ::: pf-qed
 
-Step <1>6 proves part (a), and step <1>14 proves part (b).
+Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
 
 :::
 

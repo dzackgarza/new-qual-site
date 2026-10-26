@@ -28,7 +28,7 @@ the observed defective fraction. Use the normal approximation for simple random 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The estimated standard error of the sample proportion, including the finite-population correction, is
 \[
@@ -51,7 +51,7 @@ Replacing the unknown $p$ by the observed proportion $\widehat p$ gives the plug
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Numerically,
 \[
@@ -63,13 +63,13 @@ Numerically,
 
 ::: pf-proof
 
-Substitute $N=500$, $n=70$, and $\widehat p=0.2$ into step <1>1.
+Substitute $N=500$, $n=70$, and $\widehat p=0.2$ into step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 A central 96% normal interval uses
 \[
@@ -85,7 +85,7 @@ A two-sided central interval with coverage $0.96$ leaves total tail probability 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The approximate 96% confidence interval is
 \[
@@ -96,7 +96,7 @@ The approximate 96% confidence interval is
 
 ::: pf-proof
 
-Multiply the standard error in step <1>2 by the quantile in step <1>3:
+Multiply the standard error in step [](#s1-2){.pf-ref} by the quantile in step [](#s1-3){.pf-ref}:
 \[
 2.05375(0.04438)\approx0.09115.
 \]
@@ -105,7 +105,7 @@ Multiply the standard error in step <1>2 by the quantile in step <1>3:
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus the defective fraction is estimated to lie in
 \[
@@ -116,13 +116,13 @@ with approximately 96% confidence.
 
 ::: pf-proof
 
-Subtract and add the margin from step <1>4 to $\widehat p=0.2$.
+Subtract and add the margin from step [](#s1-4){.pf-ref} to $\widehat p=0.2$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 In terms of the number $K=500p$ of defective goods, this corresponds approximately to
 \[
@@ -132,7 +132,7 @@ In terms of the number $K=500p$ of defective goods, this corresponds approximate
 
 ::: pf-proof
 
-Multiply the endpoints in step <1>5 by $500$ and round outward to integer population counts.
+Multiply the endpoints in step [](#s1-5){.pf-ref} by $500$ and round outward to integer population counts.
 
 :::
 
@@ -140,7 +140,7 @@ Multiply the endpoints in step <1>5 by $500$ and round outward to integer popula
 
 ::: pf-qed
 
-Steps <1>5--<1>6 give the requested approximate 96% interval for the fraction and its equivalent population-count range.
+Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the requested approximate 96% interval for the fraction and its equivalent population-count range.
 
 :::
 

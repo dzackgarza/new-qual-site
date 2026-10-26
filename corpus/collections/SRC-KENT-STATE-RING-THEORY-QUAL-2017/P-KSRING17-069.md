@@ -36,7 +36,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The set $F$ contains $0$.
 
@@ -64,7 +64,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $F$ is closed under subtraction.
 
@@ -98,7 +98,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set $F$ is closed under multiplication.
 
@@ -126,7 +126,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The identity element $1_R$ belongs to $F$.
 
@@ -179,7 +179,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -193,13 +193,13 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>3 give closure under the ring operations, and step <1>4 gives the identity.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give closure under the ring operations, and step [](#s1-4){.pf-ref} gives the identity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Assume now that
 $$
@@ -276,7 +276,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The polynomial
 $$
@@ -293,7 +293,7 @@ and is monic of degree $2$.
 
 ::: pf-proof
 
-By step <1>6,
+By step [](#s1-6){.pf-ref},
 $$
 t_r,n_r\in F.
 $$
@@ -310,7 +310,7 @@ Its leading coefficient is $1\in F$ and its degree is $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The element $r$ is a root of $p_r$.
 
@@ -341,7 +341,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence every element of $R$ is the root of a monic quadratic polynomial over $F$.
 
@@ -353,7 +353,7 @@ $$
 r\in R
 $$
 was arbitrary.
-Steps <1>7--<1>8 produce a monic polynomial
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} produce a monic polynomial
 $$
 p_r\in F[X]
 $$
@@ -368,7 +368,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 proves part (a), and step <1>9 proves part (b).
+Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
 
 :::
 

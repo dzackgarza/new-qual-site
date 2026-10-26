@@ -21,7 +21,7 @@ State the Argument Principle.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 **Argument Principle.**
 
@@ -114,7 +114,7 @@ N-P.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Equivalently,
 \[
@@ -159,7 +159,7 @@ which is precisely
 
 ::: pf-qed
 
-Step <1>1 is the standard Argument Principle, and step <1>2 records its
+Step [](#s1-1){.pf-ref} is the standard Argument Principle, and step [](#s1-2){.pf-ref} records its
 winding-number interpretation.
 
 :::

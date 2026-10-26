@@ -37,7 +37,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 If $a=b$, then
 $$
@@ -66,7 +66,7 @@ Since $a=b$, this equals $1/(ab)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Suppose now that $a\neq b$. Then
 $$
@@ -84,7 +84,7 @@ Expand $b(1-x)$ and collect the $x$-terms.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Set
 $$
@@ -110,7 +110,7 @@ Differentiate the affine substitution and evaluate it at the two endpoints.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -124,13 +124,13 @@ $$
 
 ::: pf-proof
 
-Use steps <1>2--<1>3.
+Use steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Evaluating the last integral gives
 $$
@@ -151,7 +151,7 @@ Since
 $$
 \int u^{-2}\,du=-u^{-1},
 $$
-step <1>4 becomes
+step [](#s1-4){.pf-ref} becomes
 $$
 \frac1{a-b}
 \left[
@@ -174,7 +174,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence, under the corrected hypothesis $ab>0$,
 $$
@@ -189,7 +189,7 @@ $$
 
 ::: pf-proof
 
-Step <1>1 handles $a=b$, and step <1>5 handles $a\neq b$.
+Step [](#s1-1){.pf-ref} handles $a=b$, and step [](#s1-5){.pf-ref} handles $a\neq b$.
 
 :::
 
@@ -197,7 +197,7 @@ Step <1>1 handles $a=b$, and step <1>5 handles $a\neq b$.
 
 ::: pf-qed
 
-Step <1>6 is the corrected intended identity.
+Step [](#s1-6){.pf-ref} is the corrected intended identity.
 
 :::
 

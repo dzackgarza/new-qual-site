@@ -28,7 +28,7 @@ Let $A\subseteq X$ be infinite.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There are nested infinite subsets
 $$
@@ -50,7 +50,7 @@ Inductively, suppose $A_n$ is infinite and all of its members have the same firs
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Let
 $$
@@ -64,7 +64,7 @@ $$
 
 ::: pf-proof
 
-The first $n$ coordinates of $\sigma$ and $\tau$ agree by step <1>1. Therefore
+The first $n$ coordinates of $\sigma$ and $\tau$ agree by step [](#s1-1){.pf-ref}. Therefore
 $$
 \begin{aligned}
 \operatorname{dist}(\sigma,\tau)
@@ -78,14 +78,14 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The point $\tau$ is an accumulation point of $A$.
 
 
 ::: pf-proof
 
-Let $\varepsilon>0$. Choose $n$ so large that $2^{-n}<\varepsilon$. By step <1>2, every element of the infinite set $A_n$ lies in the open ball $B(\tau,\varepsilon)$. Hence that ball contains infinitely many points of $A$, and in particular contains a point of $A$ distinct from $\tau$. Since this holds for every $\varepsilon>0$, the point $\tau$ is an accumulation point of $A$.
+Let $\varepsilon>0$. Choose $n$ so large that $2^{-n}<\varepsilon$. By step [](#s1-2){.pf-ref}, every element of the infinite set $A_n$ lies in the open ball $B(\tau,\varepsilon)$. Hence that ball contains infinitely many points of $A$, and in particular contains a point of $A$ distinct from $\tau$. Since this holds for every $\varepsilon>0$, the point $\tau$ is an accumulation point of $A$.
 
 :::
 
@@ -93,7 +93,7 @@ Let $\varepsilon>0$. Choose $n$ so large that $2^{-n}<\varepsilon$. By step <1>2
 
 ::: pf-qed
 
-Step <1>3 proves that every infinite subset $A\subseteq X$ has an accumulation point.
+Step [](#s1-3){.pf-ref} proves that every infinite subset $A\subseteq X$ has an accumulation point.
 
 :::
 

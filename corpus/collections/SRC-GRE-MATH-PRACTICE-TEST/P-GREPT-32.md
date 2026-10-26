@@ -55,7 +55,7 @@ Evaluating at $(1,1,1)$ gives $(1,-2,1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The tangent plane to $S$ at $P$ is
 $$
@@ -76,7 +76,7 @@ which simplifies to $x-2y+z=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The line
 $$
@@ -88,7 +88,7 @@ lies in this tangent plane, so the answer is (A).
 ::: pf-proof
 
 Every point on the line has the form $(t,t,t)$. Substitution into the plane
-equation from step <1>2 gives
+equation from step [](#s1-2){.pf-ref} gives
 $$
 t-2t+t=0
 $$
@@ -104,7 +104,7 @@ satisfy that equation.
 
 ::: pf-qed
 
-Step <1>3 identifies one of the listed lines contained in the tangent plane.
+Step [](#s1-3){.pf-ref} identifies one of the listed lines contained in the tangent plane.
 
 :::
 

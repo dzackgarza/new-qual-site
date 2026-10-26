@@ -40,7 +40,7 @@ H\le G.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 \[
@@ -56,7 +56,7 @@ This is exactly the inclusion \(H\le G\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -82,7 +82,7 @@ Every commutator of elements of \(H^{(m)}\) is also a commutator of elements of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore, for every \(m\ge0\),
 \[
@@ -93,13 +93,13 @@ H^{(m)}\le G^{(m)}}.
 
 ::: pf-proof
 
-Apply induction using steps <1>1--<1>2.
+Apply induction using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If \(G\) is solvable, choose \(r\) with
 \[
@@ -113,7 +113,7 @@ Then
 
 ::: pf-proof
 
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 \[
 H^{(r)}\le G^{(r)}=1.
 \]
@@ -122,20 +122,20 @@ H^{(r)}\le G^{(r)}=1.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence every subgroup of a solvable group is solvable.
 
 
 ::: pf-proof
 
-Step <1>4 shows the derived series of \(H\) terminates.
+Step [](#s1-4){.pf-ref} shows the derived series of \(H\) terminates.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The commutator subgroup of \(G/N\) is
 \[
@@ -159,7 +159,7 @@ G'N/N.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 More generally,
 \[
@@ -196,13 +196,13 @@ Assume the formula for \(m\). Then
 G^{(m+1)}N/N,
 \end{aligned}
 \]
-by the quotient commutator formula from step <1>6 applied to the subgroup image.
+by the quotient commutator formula from step [](#s1-6){.pf-ref} applied to the subgroup image.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If \(G\) is solvable and
 \[
@@ -217,7 +217,7 @@ then
 
 ::: pf-proof
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 \[
 (G/N)^{(r)}
 =
@@ -232,20 +232,20 @@ N/N
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence every quotient group of a solvable group is solvable.
 
 
 ::: pf-proof
 
-Step <1>8 shows the quotient derived series terminates.
+Step [](#s1-8){.pf-ref} shows the quotient derived series terminates.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore
 \[
@@ -256,7 +256,7 @@ Therefore
 
 ::: pf-proof
 
-The subgroup statement is step <1>5 and the quotient statement is step <1>9.
+The subgroup statement is step [](#s1-5){.pf-ref} and the quotient statement is step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -264,7 +264,7 @@ The subgroup statement is step <1>5 and the quotient statement is step <1>9.
 
 ::: pf-qed
 
-Step <1>10 is the required conclusion.
+Step [](#s1-10){.pf-ref} is the required conclusion.
 
 :::
 

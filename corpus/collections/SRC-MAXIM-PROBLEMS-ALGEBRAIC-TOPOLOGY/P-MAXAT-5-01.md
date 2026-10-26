@@ -23,7 +23,7 @@ Interpret the statement as asking for principal $S^1$-bundles over $S^2$. Their 
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Principal $S^1$-bundles over a paracompact space $X$ are classified by homotopy classes of maps
 \[
@@ -43,7 +43,7 @@ has contractible total space. Pullback along a map $X\to BS^1$ produces a princi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Since
 \[
@@ -65,7 +65,7 @@ The infinite complex projective space is the classifying space of $S^1=U(1)$ and
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The integer classifying a bundle
 \[
@@ -79,13 +79,13 @@ k=\langle c_1(E),[S^2]\rangle\in\mathbb Z.
 
 ::: pf-proof
 
-Under the identification in step <1>2, the universal generator of $H^2(BS^1;\mathbb Z)$ pulls back to the first Chern class of the associated complex line bundle. Evaluating this class on the fundamental class of $S^2$ gives the corresponding integer.
+Under the identification in step [](#s1-2){.pf-ref}, the universal generator of $H^2(BS^1;\mathbb Z)$ pulls back to the first Chern class of the associated complex line bundle. Evaluating this class on the fundamental class of $S^2$ gives the corresponding integer.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Equivalently, the classification can be obtained by clutching along the equator:
 \[
@@ -104,13 +104,13 @@ Every bundle is trivial over each hemisphere because each disk is contractible. 
 \[
 [S^1,S^1]\cong\pi_1(S^1)\cong\mathbb Z
 \]
-are classified by degree. This integer agrees with the Chern number in step <1>3.
+are classified by degree. This integer agrees with the Chern number in step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A representative of class $k$ is obtained by gluing
 \[
@@ -126,7 +126,7 @@ along their boundary by
 
 ::: pf-proof
 
-The map $z\mapsto z^k$ has degree $k$, so this is exactly the clutching construction from step <1>4 for the class $k$.
+The map $z\mapsto z^k$ has degree $k$, so this is exactly the clutching construction from step [](#s1-4){.pf-ref} for the class $k$.
 
 :::
 
@@ -153,7 +153,7 @@ Degree zero gives the constant clutching map and hence the product bundle. The H
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Therefore
 \[
@@ -166,7 +166,7 @@ classified by $c_1$ or, equivalently, the degree of the clutching map.
 
 ::: pf-proof
 
-Steps <1>1--<1>4 identify the set of isomorphism classes with $\mathbb Z$, and step <1>5 gives an explicit representative of every integer class.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify the set of isomorphism classes with $\mathbb Z$, and step [](#s1-5){.pf-ref} gives an explicit representative of every integer class.
 
 :::
 
@@ -174,7 +174,7 @@ Steps <1>1--<1>4 identify the set of isomorphism classes with $\mathbb Z$, and s
 
 ::: pf-qed
 
-Step <1>7 is the requested classification.
+Step [](#s1-7){.pf-ref} is the requested classification.
 
 :::
 

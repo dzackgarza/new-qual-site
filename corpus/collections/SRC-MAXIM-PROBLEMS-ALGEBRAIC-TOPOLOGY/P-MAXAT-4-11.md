@@ -24,7 +24,7 @@ homotopy theory.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\ge2$ and every $k\ge2$, the group
 \[
@@ -43,7 +43,7 @@ connected finite-type CW complex is finitely generated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 A finitely generated abelian group $A$ is torsion if and only if
 \[
@@ -70,7 +70,7 @@ when $A$ is torsion.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $n$ is odd, a minimal Sullivan model for $S^n$ is
 \[
@@ -100,7 +100,7 @@ Sullivan model of the sphere.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $n$ is even, a minimal Sullivan model for $S^n$ is
 \[
@@ -145,7 +145,7 @@ ring of $S^n$, hence is the minimal Sullivan model.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 If
 \[
@@ -170,7 +170,7 @@ of the minimal model are dual to the degree-$k$ rational homotopy group.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If $n$ is odd and $n\ge3$, then
 \[
@@ -185,14 +185,14 @@ If $n$ is odd and $n\ge3$, then
 
 ::: pf-proof
 
-By step <1>3, the minimal model has exactly one indecomposable generator,
-namely $x_n$ in degree $n$. Apply step <1>5.
+By step [](#s1-3){.pf-ref}, the minimal model has exactly one indecomposable generator,
+namely $x_n$ in degree $n$. Apply step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 If $n$ is even, then
 \[
@@ -208,7 +208,7 @@ If $n$ is even, then
 
 ::: pf-proof
 
-By step <1>4, the minimal model has exactly two indecomposable generators:
+By step [](#s1-4){.pf-ref}, the minimal model has exactly two indecomposable generators:
 \[
 x_n
 \quad\text{in degree }n
@@ -218,13 +218,13 @@ and
 y_{2n-1}
 \quad\text{in degree }2n-1.
 \]
-Apply step <1>5.
+Apply step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 If $n\ge3$ is odd and $k\ne n$, then
 \[
@@ -236,17 +236,17 @@ is a torsion group.
 ::: pf-proof
 
 For $k<n$ the group is zero because $S^n$ is $(n-1)$-connected. For
-$k>n$, step <1>1 gives finite generation and step <1>6 gives
+$k>n$, step [](#s1-1){.pf-ref} gives finite generation and step [](#s1-6){.pf-ref} gives
 \[
 \pi_k(S^n)\otimes\mathbb Q=0.
 \]
-Step <1>2 therefore implies that $\pi_k(S^n)$ is torsion.
+Step [](#s1-2){.pf-ref} therefore implies that $\pi_k(S^n)$ is torsion.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 If $n$ is even and
 \[
@@ -262,14 +262,14 @@ is a torsion group.
 ::: pf-proof
 
 Again the groups below degree $n$ vanish. For $k\ge n$ outside the two
-exceptional degrees, steps <1>1 and <1>7 give a finitely generated group
-whose tensor product with $\mathbb Q$ is zero. Apply step <1>2.
+exceptional degrees, steps [](#s1-1){.pf-ref} and [](#s1-7){.pf-ref} give a finitely generated group
+whose tensor product with $\mathbb Q$ is zero. Apply step [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The exceptional degree $n$ is genuinely nontorsion:
 \[
@@ -294,7 +294,7 @@ H_n(S^n;\mathbb Z)
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 If $n$ is even, the exceptional group
 \[
@@ -305,13 +305,13 @@ has a free rank-one summand.
 
 ::: pf-proof
 
-Step <1>7 gives
+Step [](#s1-7){.pf-ref} gives
 \[
 \pi_{2n-1}(S^n)\otimes\mathbb Q
 \cong
 \mathbb Q.
 \]
-By step <1>1, the integral group is finitely generated. Hence its free
+By step [](#s1-1){.pf-ref}, the integral group is finitely generated. Hence its free
 rank is one:
 \[
 \pi_{2n-1}(S^n)
@@ -324,7 +324,7 @@ for some finite abelian group $T$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 For $n=1$, the odd-sphere statement also holds.
 
@@ -348,7 +348,7 @@ Thus the only nontorsion homotopy group is in degree $1=n$.
 
 ::: pf-qed
 
-Steps <1>8, <1>10, and <1>12 prove part (a). Steps <1>9--<1>11 prove
+Steps [](#s1-8){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-12){.pf-ref} prove part (a). Steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} prove
 part (b).
 
 :::

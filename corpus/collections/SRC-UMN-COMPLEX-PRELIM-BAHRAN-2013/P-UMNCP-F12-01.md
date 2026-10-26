@@ -30,7 +30,7 @@ Work on the Riemann sphere, so a straight line is regarded as a circle through $
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every straight line or circle in $\CC$ is the zero set of an equation
 $$
@@ -82,9 +82,9 @@ which is the same form with $A=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-Conversely, a nonempty zero set of an equation from step <1>1 is either a straight line or a circle.
+Conversely, a nonempty zero set of an equation from step [](#s1-1){.pf-ref} is either a straight line or a circle.
 
 
 ::: pf-proof
@@ -118,7 +118,7 @@ Whenever the zero set is nonempty and not a single degenerate point, this is a c
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $w=T(z)$, then
 $$
@@ -148,7 +148,7 @@ the inverse Möbius transformation exists and is given by the displayed formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Substituting $z=T^{-1}(w)$ into a generalized-circle equation and multiplying by
 $$
@@ -170,7 +170,7 @@ Start from
 $$
 A|z|^2+Bz+\overline B\,\overline z+C=0.
 $$
-By step <1>3,
+By step [](#s1-3){.pf-ref},
 $$
 z=\frac{dw-b}{-cw+a},
 \qquad
@@ -215,18 +215,18 @@ Hence it has the stated form, with the coefficients of $w$ and $\overline w$ con
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore every Möbius transformation maps every straight line or circle onto a straight line or circle.
 
 
 ::: pf-proof
 
-Let $C$ be the original line or circle. By step <1>1 it is described by a generalized-circle equation. Step <1>4 shows that
+Let $C$ be the original line or circle. By step [](#s1-1){.pf-ref} it is described by a generalized-circle equation. Step [](#s1-4){.pf-ref} shows that
 $$
 T(C)
 $$
-is described by another equation of the same form. Since $T$ is bijective on the Riemann sphere, the image is nonempty and nondegenerate. By step <1>2 it is a straight line or circle.
+is described by another equation of the same form. Since $T$ is bijective on the Riemann sphere, the image is nonempty and nondegenerate. By step [](#s1-2){.pf-ref} it is a straight line or circle.
 
 :::
 
@@ -234,7 +234,7 @@ is described by another equation of the same form. Since $T$ is bijective on the
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

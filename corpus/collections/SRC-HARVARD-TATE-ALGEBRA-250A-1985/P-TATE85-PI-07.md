@@ -25,7 +25,7 @@ be the quotient map.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The ideal $M/M^n$ is prime in $A$.
 
@@ -42,7 +42,7 @@ Since $M$ is maximal, $B/M$ is a field, hence an integral domain. Therefore $M/M
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Every prime ideal of $A$ equals $M/M^n$.
 
@@ -74,7 +74,7 @@ $$
 
 ::: pf-qed
 
-Steps <1>1 and <1>2 show that $M/M^n$ is prime and that no other prime ideal exists.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that $M/M^n$ is prime and that no other prime ideal exists.
 
 :::
 

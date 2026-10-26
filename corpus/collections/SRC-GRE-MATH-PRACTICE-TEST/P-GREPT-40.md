@@ -27,7 +27,7 @@ The tangent line to the curve $y = x^{(e^x)}$ at the point $(1, 1)$ passes throu
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $x>0$, the derivative of
 $$
@@ -55,7 +55,7 @@ and multiplying by $y=x^{e^x}$ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The slope at $(1,1)$ is
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-Substituting $x=1$ into step <1>1 gives
+Substituting $x=1$ into step [](#s1-1){.pf-ref} gives
 $$
 y'(1)=1^e e\left(\log1+1\right)=e.
 $$
@@ -74,7 +74,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The tangent line is
 $$
@@ -84,14 +84,14 @@ $$
 
 ::: pf-proof
 
-The tangent line through $(1,1)$ with slope $e$ from step <1>2 has the
+The tangent line through $(1,1)$ with slope $e$ from step [](#s1-2){.pf-ref} has the
 displayed point-slope equation.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 At $x=2$, this line has
 $$
@@ -102,7 +102,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Substituting $x=2$ into step <1>3 gives $y-1=e$, hence $y=e+1$.
+Substituting $x=2$ into step [](#s1-3){.pf-ref} gives $y-1=e$, hence $y=e+1$.
 
 :::
 
@@ -110,7 +110,7 @@ Substituting $x=2$ into step <1>3 gives $y-1=e$, hence $y=e+1$.
 
 ::: pf-qed
 
-Step <1>4 gives the requested value.
+Step [](#s1-4){.pf-ref} gives the requested value.
 
 :::
 

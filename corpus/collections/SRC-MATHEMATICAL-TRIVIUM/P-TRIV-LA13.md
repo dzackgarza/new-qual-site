@@ -34,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 One has
 $$
@@ -66,7 +66,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore
 $$
@@ -85,13 +85,13 @@ $$
 
 ::: pf-proof
 
-This follows from step <1>1.
+This follows from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -121,7 +121,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -131,26 +131,26 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives $B^2=I$.
+Step [](#s1-3){.pf-ref} gives $B^2=I$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>2 and <1>4 give both inverses.
+Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give both inverses.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The matrix $A$ rotates vectors counterclockwise by angle $\phi$.
 
@@ -180,7 +180,7 @@ by the angle-addition formulas.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The matrix $B$ reflects vectors across the line making angle
 $$
@@ -204,20 +204,20 @@ Setting $\theta=\phi/2$ gives exactly $B$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Steps <1>6 and <1>7 give the geometrical interpretations.
+Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the geometrical interpretations.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The reflection matrix $B$ has eigenvalue $1$ with eigenvector
 $$
@@ -241,7 +241,7 @@ $$
 
 ::: pf-proof
 
-By step <1>7, vectors along the reflection axis are fixed, while vectors
+By step [](#s1-7){.pf-ref}, vectors along the reflection axis are fixed, while vectors
 perpendicular to that axis have their sign reversed. The two displayed vectors
 span those two directions.
 
@@ -249,7 +249,7 @@ span those two directions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Over $\mathbb C$, the rotation matrix $A$ has eigenvalues
 $$
@@ -285,7 +285,7 @@ and similarly for $e^{-i\phi}$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Over $\mathbb R$, $A$ has real eigenvectors only when
 $$
@@ -295,7 +295,7 @@ $$
 
 ::: pf-proof
 
-The eigenvalues from step <1>10 are real exactly when
+The eigenvalues from step [](#s1-10){.pf-ref} are real exactly when
 $$
 e^{i\phi}=\pm1,
 $$
@@ -314,14 +314,14 @@ nonreal, hence there are no real eigendirections.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Steps <1>9--<1>11 describe the eigendirections of both matrices.
+Steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} describe the eigendirections of both matrices.
 
 :::
 
@@ -329,7 +329,7 @@ Steps <1>9--<1>11 describe the eigendirections of both matrices.
 
 ::: pf-qed
 
-Steps <1>5, <1>8, and <1>12 establish parts (a), (b), and (c), respectively.
+Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} establish parts (a), (b), and (c), respectively.
 
 :::
 

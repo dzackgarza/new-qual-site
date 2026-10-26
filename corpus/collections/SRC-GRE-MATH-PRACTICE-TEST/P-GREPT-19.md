@@ -27,7 +27,7 @@ If $y' = x - y$ and $y(0) = 1$, then $y(1) =$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The differential equation has general solution
 $$
@@ -59,14 +59,14 @@ and hence the stated formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The initial condition $y(0)=1$ gives $C=2$.
 
 
 ::: pf-proof
 
-Substituting $x=0$ into step <1>1 gives
+Substituting $x=0$ into step [](#s1-1){.pf-ref} gives
 $$
 1=-1+C,
 $$
@@ -76,7 +76,7 @@ so $C=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -87,7 +87,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-By steps <1>1--<1>2,
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 $$
 y(1)=1-1+2e^{-1}=\frac2e.
 $$
@@ -98,7 +98,7 @@ $$
 
 ::: pf-qed
 
-Step <1>3 gives the requested value.
+Step [](#s1-3){.pf-ref} gives the requested value.
 
 :::
 

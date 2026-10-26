@@ -56,7 +56,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every point of $X$ belongs to at least one of the stated basic sets.
 
@@ -98,7 +98,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 If an interior point
 $$
@@ -150,7 +150,7 @@ gives an allowed ordinary basic disk contained in their intersection.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If a boundary point
 $$
@@ -220,16 +220,16 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The stated family is a basis for a topology on $X$.
 
 
 ::: pf-proof
 
-Step <1>1 gives the first basis axiom: every point lies in some basis element.
+Step [](#s1-1){.pf-ref} gives the first basis axiom: every point lies in some basis element.
 
-Steps <1>2--<1>3 give the second basis axiom: whenever a point lies in the intersection of two basis elements, there is a third basis element containing that point and contained in the intersection.
+Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the second basis axiom: whenever a point lies in the intersection of two basis elements, there is a third basis element containing that point and contained in the intersection.
 
 Therefore the stated family is a basis.
 
@@ -237,7 +237,7 @@ Therefore the stated family is a basis.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The set
 $$
@@ -289,14 +289,14 @@ inside that disk.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The set $C$ is dense in $X$, so $X$ is separable.
 
 
 ::: pf-proof
 
-By step <1>5 every nonempty basic open set meets
+By step [](#s1-5){.pf-ref} every nonempty basic open set meets
 $$
 C.
 $$
@@ -322,7 +322,7 @@ is countable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let
 $$
@@ -363,7 +363,7 @@ Thus the complement is open.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 The subspace topology on $A$ is discrete.
 
@@ -394,7 +394,7 @@ is open in the subspace topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The Tietze Extension Theorem states: if $Y$ is normal, $F\subseteq Y$ is closed, and
 $$
@@ -418,7 +418,7 @@ This is the bounded real-valued form of the Tietze Extension Theorem, sufficient
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 There are
 $$
@@ -436,7 +436,7 @@ $$
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 $$
 A
 $$
@@ -461,7 +461,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 There are at most
 $$
@@ -475,7 +475,7 @@ $$
 
 ::: pf-proof
 
-By step <1>6, choose a countable dense subset
+By step [](#s1-6){.pf-ref}, choose a countable dense subset
 $$
 D\subseteq X.
 $$
@@ -522,7 +522,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The space $X$ is not normal.
 
@@ -535,11 +535,11 @@ X
 $$
 were normal.
 
-By step <1>7,
+By step [](#s1-7){.pf-ref},
 $$
 A
 $$
-is closed. By step <1>10, there are
+is closed. By step [](#s1-10){.pf-ref}, there are
 $$
 2^{\mathfrak c}
 $$
@@ -572,7 +572,7 @@ $$
 $$
 continuous real-valued functions.
 
-But step <1>11 shows that it admits at most
+But step [](#s1-11){.pf-ref} shows that it admits at most
 $$
 \mathfrak c
 $$
@@ -590,7 +590,7 @@ a contradiction.
 
 ::: pf-qed
 
-Step <1>4 proves part (1), step <1>6 proves part (2), steps <1>7--<1>8 prove part (3), and steps <1>9--<1>12 prove part (4).
+Step [](#s1-4){.pf-ref} proves part (1), step [](#s1-6){.pf-ref} proves part (2), steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} prove part (3), and steps [](#s1-9){.pf-ref} through [](#s1-12){.pf-ref} prove part (4).
 
 :::
 

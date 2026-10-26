@@ -27,7 +27,7 @@ Assume $A$ is $n\times n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For each
 $$
@@ -47,9 +47,9 @@ Adding a multiple of one row to another does not change the determinant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
-After the operations in step <1>1, the matrix becomes
+After the operations in step [](#s1-1){.pf-ref}, the matrix becomes
 $$
 \begin{pmatrix}
 1&1&1&\cdots&1\\
@@ -80,7 +80,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The transformed matrix has determinant
 $$
@@ -90,14 +90,14 @@ $$
 
 ::: pf-proof
 
-The matrix in step <1>2 is upper triangular. The determinant of a triangular
+The matrix in step [](#s1-2){.pf-ref} is upper triangular. The determinant of a triangular
 matrix is the product of its diagonal entries.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -107,7 +107,7 @@ $$
 
 ::: pf-proof
 
-The row operations in step <1>1 preserve the determinant, and step <1>3
+The row operations in step [](#s1-1){.pf-ref} preserve the determinant, and step [](#s1-3){.pf-ref}
 computes the determinant of the resulting matrix.
 
 :::
@@ -116,7 +116,7 @@ computes the determinant of the resulting matrix.
 
 ::: pf-qed
 
-Step <1>4 is the required value.
+Step [](#s1-4){.pf-ref} is the required value.
 
 :::
 

@@ -33,7 +33,7 @@ III. The series $\sum_{n=2}^{\infty} (-1)^n a_n^2$ converges.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Statement I is true: the sequence $(a_n)$ converges to $0$.
 
@@ -49,7 +49,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Statement II is false: the series
 $$
@@ -71,7 +71,7 @@ test implies that $\sum_{n=2}^\infty a_n$ diverges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Statement III is true: the series
 $$
@@ -86,7 +86,7 @@ The positive terms
 $$
 a_n^2=\frac1{(\log n)^2}
 $$
-decrease monotonically for $n\ge2$ and tend to $0$ by step <1>1. Hence the
+decrease monotonically for $n\ge2$ and tend to $0$ by step [](#s1-1){.pf-ref}. Hence the
 alternating-series test gives convergence of
 $\sum_{n=2}^\infty(-1)^na_n^2$.
 
@@ -94,7 +94,7 @@ $\sum_{n=2}^\infty(-1)^na_n^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore exactly I and III are true, so the answer is
 $$
@@ -104,7 +104,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>1--<1>3 establish respectively that I is true, II is false, and III
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} establish respectively that I is true, II is false, and III
 is true.
 
 :::
@@ -113,7 +113,7 @@ is true.
 
 ::: pf-qed
 
-Step <1>4 gives the required choice.
+Step [](#s1-4){.pf-ref} gives the required choice.
 
 :::
 

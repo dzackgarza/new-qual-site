@@ -30,7 +30,7 @@ share the same broad pattern:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The Dominated Convergence Theorem is striking because almost-everywhere
 pointwise convergence alone does not justify exchanging limit and integral.
@@ -75,7 +75,7 @@ convergence of the global integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The Uniform Boundedness Theorem is analogous in functional analysis.
 
@@ -120,7 +120,7 @@ is the structural hypothesis that makes the conclusion possible.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The two theorems are therefore conceptually parallel.
 
@@ -149,7 +149,7 @@ be upgraded to a uniform or integral statement.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 A concise response to the prompt is therefore:
 
@@ -165,7 +165,7 @@ A concise response to the prompt is therefore:
 
 ::: pf-proof
 
-Steps <1>1--<1>3 justify every mathematical assertion in the response.
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} justify every mathematical assertion in the response.
 
 :::
 
@@ -173,7 +173,7 @@ Steps <1>1--<1>3 justify every mathematical assertion in the response.
 
 ::: pf-qed
 
-Step <1>4 supplies a complete answer to the reflective prompt.
+Step [](#s1-4){.pf-ref} supplies a complete answer to the reflective prompt.
 
 :::
 

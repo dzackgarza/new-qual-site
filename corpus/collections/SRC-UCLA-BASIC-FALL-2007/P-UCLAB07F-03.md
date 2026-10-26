@@ -24,7 +24,7 @@ If $V=\{0\}$, then $T=0$ and the conclusion is immediate. Assume $V\ne\{0\}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every nonzero vector of $V$ is an eigenvector of $T$.
 
@@ -56,13 +56,13 @@ for some scalar $\lambda$.
 
 ::: pf-proof
 
-This is possible by step <1>1.
+This is possible by step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $v\in V$ is linearly independent of $u$, then
 \[
@@ -72,7 +72,7 @@ Tv=\lambda v.
 
 ::: pf-proof
 
-By step <1>1, there are scalars $\mu,\nu$ such that
+By step [](#s1-1){.pf-ref}, there are scalars $\mu,\nu$ such that
 \[
 Tv=\mu v
 \]
@@ -104,7 +104,7 @@ Hence $Tv=\lambda v$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $v\in V$,
 \[
@@ -114,7 +114,7 @@ Tv=\lambda v.
 
 ::: pf-proof
 
-If $v$ is linearly independent of $u$, apply step <1>3. If $v$ is linearly dependent on $u$, write
+If $v$ is linearly independent of $u$, apply step [](#s1-3){.pf-ref}. If $v$ is linearly dependent on $u$, write
 \[
 v=cu
 \]
@@ -128,7 +128,7 @@ The zero vector also satisfies the equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -138,7 +138,7 @@ One has
 
 ::: pf-proof
 
-Step <1>4 says that $T$ and $\lambda I$ agree on every vector in $V$.
+Step [](#s1-4){.pf-ref} says that $T$ and $\lambda I$ agree on every vector in $V$.
 
 :::
 
@@ -146,7 +146,7 @@ Step <1>4 says that $T$ and $\lambda I$ agree on every vector in $V$.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

@@ -37,7 +37,7 @@ I_\varepsilon
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Along any sequence $\varepsilon_n\downarrow0$, the integrands
 \[
@@ -64,7 +64,7 @@ the double integral.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The hypothesis implies
 \[
@@ -86,7 +86,7 @@ Because
 \limsup_{\varepsilon\to0}I_\varepsilon<\infty,
 \]
 the sequence $(I_{\varepsilon_n})$ is bounded for all sufficiently large
-$n$. By step <1>1 and the monotone convergence theorem,
+$n$. By step [](#s1-1){.pf-ref} and the monotone convergence theorem,
 \[
 \begin{aligned}
 \int_{\mathbb R^2}
@@ -102,7 +102,7 @@ I_{\varepsilon_n}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Suppose, toward a contradiction, that $f$ does not vanish almost
 everywhere. Then there exists a Lebesgue point $a$ of $|f|$ such that
@@ -125,7 +125,7 @@ $|f|$. Hence $E$ contains such a point $a$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 For every $r>0$,
 \[
@@ -177,9 +177,9 @@ which is the stated bound.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The right-hand side in step <1>4 tends to
+The right-hand side in step [](#s1-4){.pf-ref} tends to
 \[
 |f(a)|^2>0
 \qquad(r\downarrow0).
@@ -201,14 +201,14 @@ Square both sides.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
-The left-hand side in step <1>4 tends to $0$ as $r\downarrow0$.
+The left-hand side in step [](#s1-4){.pf-ref} tends to $0$ as $r\downarrow0$.
 
 
 ::: pf-proof
 
-By step <1>2, the nonnegative function
+By step [](#s1-2){.pf-ref}, the nonnegative function
 \[
 G(x,y)
 =
@@ -233,15 +233,15 @@ $G$ therefore gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
-Steps <1>4 through <1>6 give a contradiction.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give a contradiction.
 
 
 ::: pf-proof
 
-Step <1>4 says the left-hand side is at least the right-hand side for every
-$r>0$. Step <1>6 says the left-hand side tends to $0$, whereas step <1>5
+Step [](#s1-4){.pf-ref} says the left-hand side is at least the right-hand side for every
+$r>0$. Step [](#s1-6){.pf-ref} says the left-hand side tends to $0$, whereas step [](#s1-5){.pf-ref}
 says the right-hand side tends to the strictly positive number
 $|f(a)|^2$.
 
@@ -249,7 +249,7 @@ $|f(a)|^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -259,8 +259,8 @@ Therefore
 
 ::: pf-proof
 
-The contrary assumption in step <1>3 leads to the contradiction in step
-<1>7.
+The contrary assumption in step [](#s1-3){.pf-ref} leads to the contradiction in step
+[](#s1-7){.pf-ref}.
 
 :::
 
@@ -268,7 +268,7 @@ The contrary assumption in step <1>3 leads to the contradiction in step
 
 ::: pf-qed
 
-Step <1>8 is the required conclusion.
+Step [](#s1-8){.pf-ref} is the required conclusion.
 
 :::
 

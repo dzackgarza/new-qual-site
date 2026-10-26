@@ -50,7 +50,7 @@ This is the complex Schur theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Write the diagonal entries of $T$ as
 \[
@@ -94,14 +94,14 @@ Thus
 =
 \{\mu_1,\mu_2,\mu_3\}.
 \]
-They are pairwise distinct by step <1>2.
+They are pairwise distinct by step [](#s1-2){.pf-ref}.
 A $3\times3$ matrix with three distinct eigenvalues has three linearly independent eigenvectors and is therefore diagonalizable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -138,7 +138,7 @@ A_\varepsilon\to A.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore matrices with distinct eigenvalues are dense in
 \[
@@ -148,14 +148,14 @@ Therefore matrices with distinct eigenvalues are dense in
 
 ::: pf-proof
 
-The matrix $A$ was arbitrary, and step <1>4 constructs matrices with distinct eigenvalues arbitrarily close to it.
+The matrix $A$ was arbitrary, and step [](#s1-4){.pf-ref} constructs matrices with distinct eigenvalues arbitrarily close to it.
 This proves part 1.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Let
 \[
@@ -198,7 +198,7 @@ Nonzero discriminant means the characteristic polynomial has no repeated root, s
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Any $3\times3$ matrix with one Jordan block has only one eigenvalue.
 
@@ -225,22 +225,22 @@ Thus any matrix similar to a single Jordan block has exactly one eigenvalue, of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Hence the open neighborhood from step <1>6 contains no matrix with one Jordan block.
+Hence the open neighborhood from step [](#s1-6){.pf-ref} contains no matrix with one Jordan block.
 
 
 ::: pf-proof
 
-Every matrix in that neighborhood has three distinct eigenvalues by step <1>6.
-Every matrix with one Jordan block has only one eigenvalue by step <1>7.
+Every matrix in that neighborhood has three distinct eigenvalues by step [](#s1-6){.pf-ref}.
+Every matrix with one Jordan block has only one eigenvalue by step [](#s1-7){.pf-ref}.
 Thus the two sets are disjoint.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore the set of matrices with one Jordan block is not dense in
 \[
@@ -251,7 +251,7 @@ Therefore the set of matrices with one Jordan block is not dense in
 ::: pf-proof
 
 A dense subset must meet every nonempty open set.
-Step <1>8 exhibits a nonempty open neighborhood that contains no matrix with one Jordan block.
+Step [](#s1-8){.pf-ref} exhibits a nonempty open neighborhood that contains no matrix with one Jordan block.
 This proves part 2.
 
 :::
@@ -260,7 +260,7 @@ This proves part 2.
 
 ::: pf-qed
 
-Step <1>5 proves part 1, and step <1>9 proves part 2.
+Step [](#s1-5){.pf-ref} proves part 1, and step [](#s1-9){.pf-ref} proves part 2.
 
 :::
 

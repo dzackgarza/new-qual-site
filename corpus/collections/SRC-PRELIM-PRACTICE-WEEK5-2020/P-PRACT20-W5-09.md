@@ -24,7 +24,7 @@ Suppose that a group has an element of order $7$ but no element which is its own
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The group order must be divisible by $7$.
 
@@ -45,7 +45,7 @@ order of the finite group. Hence
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The group order must be odd.
 
@@ -67,7 +67,7 @@ Since $x\ne e$, this contradicts the hypothesis. Therefore $2\nmid |G|$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Among the listed choices, the only possible order is
 \[
@@ -81,7 +81,7 @@ The choices divisible by $7$ are
 \[
 28,\qquad35,\qquad42.
 \]
-Steps <1>1 and <1>2 require divisibility by $7$ and oddness. Only $35$
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} require divisibility by $7$ and oddness. Only $35$
 satisfies both conditions.
 
 :::
@@ -90,7 +90,7 @@ satisfies both conditions.
 
 ::: pf-qed
 
-Step <1>3 gives the requested choice.
+Step [](#s1-3){.pf-ref} gives the requested choice.
 
 :::
 

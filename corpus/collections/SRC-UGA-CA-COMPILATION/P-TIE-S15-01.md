@@ -24,7 +24,7 @@ Let $K\subset D$ be an arbitrary bounded closed subregion.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 There exists $\delta>0$ such that
 $$
@@ -47,7 +47,7 @@ Choose $0<\delta<d$. Then every point at distance at most $\delta$ from $K$ stil
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $z\in K$ and every $n\ge0$,
 $$
@@ -61,7 +61,7 @@ $$
 
 ::: pf-proof
 
-The closed disk $\abs{w-z}\le\delta$ lies in $D$ by step <1>1. Cauchy's integral formula for derivatives gives
+The closed disk $\abs{w-z}\le\delta$ lies in $D$ by step [](#s1-1){.pf-ref}. Cauchy's integral formula for derivatives gives
 $$
 a_n'(z)
 =
@@ -75,7 +75,7 @@ Parametrize the circle by $w=z+\delta e^{it}$. Taking absolute values yields the
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For integers $M\ge N$ and every $z\in K$,
 $$
@@ -89,7 +89,7 @@ $$
 
 ::: pf-proof
 
-Sum the estimate in step <1>2 over $n=N,\ldots,M$:
+Sum the estimate in step [](#s1-2){.pf-ref} over $n=N,\ldots,M$:
 $$
 \begin{aligned}
 \sum_{n=N}^{M}\abs{a_n'(z)}
@@ -109,7 +109,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The series
 $$
@@ -132,7 +132,7 @@ $$
 \sum_{n=N}^{M}\abs{a_n(w)}
 \longrightarrow0
 $$
-as $N,M\to\infty$ with $M\ge N$. Step <1>3 therefore gives
+as $N,M\to\infty$ with $M\ge N$. Step [](#s1-3){.pf-ref} therefore gives
 $$
 \sup_{z\in K}
 \sum_{n=N}^{M}\abs{a_n'(z)}
@@ -146,7 +146,7 @@ Thus the derivative series is uniformly Cauchy on $K$, and hence converges unifo
 
 ::: pf-qed
 
-The bounded closed subregion $K$ was arbitrary, so step <1>4 proves the assertion on every such subregion of $D$.
+The bounded closed subregion $K$ was arbitrary, so step [](#s1-4){.pf-ref} proves the assertion on every such subregion of $D$.
 
 :::
 

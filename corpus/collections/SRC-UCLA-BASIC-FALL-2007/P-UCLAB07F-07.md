@@ -27,7 +27,7 @@ A(x)=(a_{ij}(x)).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every entry of $\operatorname{adj}(A(x))$ is differentiable.
 
@@ -40,7 +40,7 @@ Each entry of the adjugate matrix is, up to sign, the determinant of an $(n-1)\t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The scalar function
 \[
@@ -61,7 +61,7 @@ for every $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The matrix-valued function $A^{-1}(x)$ is differentiable entrywise.
 
@@ -74,13 +74,13 @@ A^{-1}(x)
 =
 \frac{\operatorname{adj}(A(x))}{\det A(x)}.
 \]
-By steps <1>1--<1>2, each numerator entry is differentiable and the denominator is a differentiable scalar function that never vanishes. Therefore every entry of $A^{-1}(x)$ is differentiable.
+By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, each numerator entry is differentiable and the denominator is a differentiable scalar function that never vanishes. Therefore every entry of $A^{-1}(x)$ is differentiable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Differentiating
 \[
@@ -102,7 +102,7 @@ where
 \[
 A^{-1}(x)=(b_{ij}(x)).
 \]
-By step <1>3, all $b_{ij}$ are differentiable. Applying the ordinary product rule term by term yields
+By step [](#s1-3){.pf-ref}, all $b_{ij}$ are differentiable. Applying the ordinary product rule term by term yields
 \[
 \frac{d}{dx}\bigl(A(x)A^{-1}(x)\bigr)
 =
@@ -114,7 +114,7 @@ The derivative of the constant matrix $I$ is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -128,7 +128,7 @@ One has
 
 ::: pf-proof
 
-Multiply the identity in step <1>4 on the left by $A^{-1}(x)$:
+Multiply the identity in step [](#s1-4){.pf-ref} on the left by $A^{-1}(x)$:
 \[
 A^{-1}A'A^{-1}+(A^{-1})'=0.
 \]
@@ -140,7 +140,7 @@ Rearranging gives the displayed formula.
 
 ::: pf-qed
 
-Step <1>3 proves differentiability of the inverse matrix, and step <1>5 gives its derivative.
+Step [](#s1-3){.pf-ref} proves differentiability of the inverse matrix, and step [](#s1-5){.pf-ref} gives its derivative.
 
 :::
 

@@ -29,7 +29,7 @@ audit:
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The one-dimensional Gaussian integral satisfies
 $$
@@ -62,13 +62,13 @@ $$
 ::: pf-proof
 
 By Fubini's theorem, the integral factors into $n+1$ copies of the
-one-dimensional integral from step <1>1.
+one-dimensional integral from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Let
 $$
@@ -98,7 +98,7 @@ variables gives the factor $A_n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The radial integral equals
 $$
@@ -140,7 +140,7 @@ which is the displayed Gamma value.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -155,26 +155,26 @@ $$
 
 ::: pf-proof
 
-Solve the identity in step <1>3 for $A_n$ using step <1>4.
+Solve the identity in step [](#s1-3){.pf-ref} for $A_n$ using step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-This is step <1>5.
+This is step [](#s1-5){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Let $V_n(R)$ be the volume of the radius-$R$ ball in $\mathbb R^n$.
 Then
@@ -191,9 +191,9 @@ The dilation $x\mapsto Rx$ multiplies every $n$-dimensional volume by $R^n$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-Differentiating step <1>7 with respect to $R$ at $R=1$ gives
+Differentiating step [](#s1-7){.pf-ref} with respect to $R$ at $R=1$ gives
 $$
 \operatorname{Area}(S^{n-1})
 =
@@ -214,7 +214,7 @@ at $R=1$ gives $nV_n(1)$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Therefore
 $$
@@ -229,15 +229,15 @@ $$
 
 ::: pf-proof
 
-Rearrange step <1>8.
+Rearrange step [](#s1-8){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
-Using step <1>5 with $n-1$ in place of $n$,
+Using step [](#s1-5){.pf-ref} with $n-1$ in place of $n$,
 $$
 \boxed{
 V_n
@@ -250,14 +250,14 @@ $$
 
 ::: pf-proof
 
-Step <1>5 gives
+Step [](#s1-5){.pf-ref} gives
 $$
 \operatorname{Area}(S^{n-1})
 =
 \frac{2\pi^{n/2}}
 {\Gamma(n/2)}.
 $$
-Hence by step <1>9,
+Hence by step [](#s1-9){.pf-ref},
 $$
 V_n
 =
@@ -276,14 +276,14 @@ gives the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-This is step <1>10.
+This is step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -317,13 +317,13 @@ $$
 
 ::: pf-proof
 
-Apply the scaling relation from step <1>7 with $R=1-a$.
+Apply the scaling relation from step [](#s1-7){.pf-ref} with $R=1-a$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Therefore the shell volume is
 $$
@@ -349,7 +349,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Hence
 $$
@@ -363,13 +363,13 @@ $$
 
 ::: pf-proof
 
-Divide step <1>14 by $V_n>0$.
+Divide step [](#s1-14){.pf-ref} by $V_n>0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 For fixed $0<a<1$,
 $$
@@ -391,26 +391,26 @@ one has
 $$
 (1-a)^n\to0.
 $$
-Apply step <1>15.
+Apply step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-17}
 
 Part (c) follows.
 
 
 ::: pf-proof
 
-Steps <1>15--<1>16 give the ratio and its high-dimensional limit.
+Steps [](#s1-15){.pf-ref} through [](#s1-16){.pf-ref} give the ratio and its high-dimensional limit.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-18}
 
 For a $20$-dimensional ball with rind thickness $0.1$ of its radius,
 $$
@@ -428,13 +428,13 @@ n=20,
 \qquad
 a=0.1
 $$
-into step <1>15.
+into step [](#s1-15){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-19}
 
 Numerically,
 $$
@@ -455,20 +455,20 @@ $$
 
 ::: pf-proof
 
-Evaluate the expression in step <1>18.
+Evaluate the expression in step [](#s1-18){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-20}
 
 Part (d) follows.
 
 
 ::: pf-proof
 
-This is step <1>19.
+This is step [](#s1-19){.pf-ref}.
 
 :::
 
@@ -476,7 +476,7 @@ This is step <1>19.
 
 ::: pf-qed
 
-Steps <1>6, <1>11, <1>17, and <1>20 establish parts (a)--(d).
+Steps [](#s1-6){.pf-ref}, [](#s1-11){.pf-ref}, and [](#s1-17){.pf-ref}, and [](#s1-20){.pf-ref} establish parts (a)--(d).
 
 :::
 

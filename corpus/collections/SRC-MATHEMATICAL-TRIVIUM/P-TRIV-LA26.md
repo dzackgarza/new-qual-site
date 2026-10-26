@@ -89,7 +89,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Therefore the transformations in part (a) are exactly
 $$
@@ -129,7 +129,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Every matrix satisfying
 $$
@@ -156,7 +156,7 @@ Hence $q(x)=0$ if and only if $q(Ax)=0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 More generally, every matrix satisfying
 $$
@@ -184,7 +184,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Conversely, if an invertible $A$ preserves the cone setwise, then
 $$
@@ -222,7 +222,7 @@ when $c>0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Thus the exact form-preserving transformations in part (b) are
 $$
@@ -236,7 +236,7 @@ $$
 
 ::: pf-proof
 
-Steps <1>4--<1>6 give the two characterizations.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the two characterizations.
 
 :::
 
@@ -270,7 +270,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Every matrix satisfying
 $$
@@ -297,7 +297,7 @@ Hence the level set $q=R^2$ is preserved.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Conversely, if an invertible $A$ preserves the hyperboloid
 $$
@@ -337,7 +337,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The equality
 $$
@@ -352,7 +352,7 @@ The difference
 $$
 p(x)=q(Ax)-q(x)
 $$
-is a polynomial in the coordinates of $x$. By step <1>10, it vanishes on the
+is a polynomial in the coordinates of $x$. By step [](#s1-10){.pf-ref}, it vanishes on the
 open set
 $$
 \{x:q(x)>0\}.
@@ -364,7 +364,7 @@ Hence $p(x)=0$ for all $x$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 Therefore the transformations in part (c) are exactly
 $$
@@ -374,7 +374,7 @@ $$
 
 ::: pf-proof
 
-By step <1>11,
+By step [](#s1-11){.pf-ref},
 $$
 x^T(A^TJ_{p,n-p}A-J_{p,n-p})x=0
 $$
@@ -382,7 +382,7 @@ for every $x$. The matrix in parentheses is symmetric, so it must be zero:
 $$
 A^TJ_{p,n-p}A=J_{p,n-p}.
 $$
-This is the defining relation for $O(p,n-p)$. Step <1>9 proves the converse.
+This is the defining relation for $O(p,n-p)$. Step [](#s1-9){.pf-ref} proves the converse.
 
 :::
 
@@ -390,7 +390,7 @@ This is the defining relation for $O(p,n-p)$. Step <1>9 proves the converse.
 
 ::: pf-qed
 
-Step <1>2 solves part (a), step <1>7 solves part (b), and step <1>12 solves
+Step [](#s1-2){.pf-ref} solves part (a), step [](#s1-7){.pf-ref} solves part (b), and step [](#s1-12){.pf-ref} solves
 part (c).
 
 :::

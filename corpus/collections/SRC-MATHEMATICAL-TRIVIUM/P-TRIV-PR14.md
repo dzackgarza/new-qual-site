@@ -29,7 +29,7 @@ Suppose, for contradiction, that $x(t)\geq0$ and that the displayed integral equ
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Evaluating the equation at $y=0$ gives
 \[
@@ -45,7 +45,7 @@ Set $y=0$ in the assumed equation. The right side is $e^0=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every $y,t\in\mathbb R$,
 \[
@@ -66,9 +66,9 @@ Using $(y-t)^2\leq2y^2+2t^2$ gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Since $x(t)\geq0$, steps <1>1--<1>2 imply
+Since $x(t)\geq0$, steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} imply
 \[
 \int_{-\infty}^{\infty}
 \frac{x(t)}{(y-t)^2+1}\,dt
@@ -78,18 +78,18 @@ Since $x(t)\geq0$, steps <1>1--<1>2 imply
 
 ::: pf-proof
 
-Step <1>2 implies
+Step [](#s1-2){.pf-ref} implies
 \[
 \frac1{(y-t)^2+1}
 \geq\frac1{2(1+y^2)(1+t^2)}.
 \]
-Multiply by the nonnegative function $x(t)$ and integrate. Step <1>1 evaluates the remaining integral.
+Multiply by the nonnegative function $x(t)$ and integrate. Step [](#s1-1){.pf-ref} evaluates the remaining integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The assumed equation would therefore require
 \[
@@ -100,20 +100,20 @@ for every real $y$.
 
 ::: pf-proof
 
-Replace the left side of the inequality in step <1>3 by the assumed value $e^{-y^2}$.
+Replace the left side of the inequality in step [](#s1-3){.pf-ref} by the assumed value $e^{-y^2}$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
-The inequality in step <1>4 is false for sufficiently large $|y|$.
+The inequality in step [](#s1-4){.pf-ref} is false for sufficiently large $|y|$.
 
 
 ::: pf-proof
 
-Equivalently, step <1>4 asserts
+Equivalently, step [](#s1-4){.pf-ref} asserts
 \[
 e^{y^2}\leq2(1+y^2).
 \]
@@ -123,14 +123,14 @@ But $e^{s}/(1+s)\to\infty$ as $s\to\infty$. For example, at $y=2$ it already fai
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the integral equation has no nonnegative solution $x(t)$.
 
 
 ::: pf-proof
 
-Steps <1>4--<1>5 contradict the assumption preceding step <1>1.
+Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} contradict the assumption preceding step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -138,7 +138,7 @@ Steps <1>4--<1>5 contradict the assumption preceding step <1>1.
 
 ::: pf-qed
 
-Step <1>6 proves the claim.
+Step [](#s1-6){.pf-ref} proves the claim.
 
 :::
 

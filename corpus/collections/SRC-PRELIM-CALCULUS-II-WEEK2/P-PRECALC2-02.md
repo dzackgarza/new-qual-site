@@ -17,7 +17,7 @@ Compute $\int _ { e ^ { - 3 } } ^ { e ^ { - 2 } } \frac { d x } { x \log ( x ) }
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Set
 \[
@@ -36,7 +36,7 @@ This substitution is natural because the integrand contains the factor
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Then
 \[
@@ -55,7 +55,7 @@ u=\log x.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The lower bound transforms as
 \[
@@ -75,7 +75,7 @@ x=e^{-3}
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The upper bound transforms as
 \[
@@ -109,13 +109,13 @@ Therefore
 
 ::: pf-proof
 
-Substitute steps <1>1--<1>4 into the original integral.
+Substitute steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} into the original integral.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 An antiderivative of \(1/u\) on the interval \([-3,-2]\) is
 \[
@@ -152,13 +152,13 @@ Hence
 
 ::: pf-proof
 
-Apply the fundamental theorem of calculus using step <1>6.
+Apply the fundamental theorem of calculus using step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 \[
@@ -185,7 +185,7 @@ Use the logarithm identity
 
 ::: pf-qed
 
-Step <1>8 is the requested value.
+Step [](#s1-8){.pf-ref} is the requested value.
 
 :::
 

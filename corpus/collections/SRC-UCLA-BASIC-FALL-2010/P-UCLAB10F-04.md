@@ -35,7 +35,7 @@ K=[0,1]^2.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The algebra of real polynomials in the coordinate functions $x$ and $y$ is uniformly dense in $C(K)$.
 
@@ -56,7 +56,7 @@ then either $x_1\ne x_2$, in which case the coordinate function $(x,y)\mapsto x$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Given $\varepsilon>0$, there is a polynomial
 \[
@@ -70,15 +70,15 @@ with $F\subseteq\mathbb N^2$ finite such that
 
 ::: pf-proof
 
-This follows directly from the uniform density in step <1>1. If the theorem gives strict inequality $<\varepsilon$, then the displayed weak inequality follows as well.
+This follows directly from the uniform density in step [](#s1-1){.pf-ref}. If the theorem gives strict inequality $<\varepsilon$, then the displayed weak inequality follows as well.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The polynomial $P$ from step <1>2 can be written as a finite sum
+The polynomial $P$ from step [](#s1-2){.pf-ref} can be written as a finite sum
 \[
 P(x,y)=\sum_{i=1}^n g_i(x)h_i(y)
 \]
@@ -110,7 +110,7 @@ P(x,y).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore for every continuous $f$ and every $\varepsilon>0$ there are finitely many continuous $g_i,h_i$ such that
 \[
@@ -126,13 +126,13 @@ for every $(x,y)\in[0,1]^2$.
 
 ::: pf-proof
 
-Combine steps <1>2--<1>3.
+Combine steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Even when $f$ is symmetric, one cannot in general require
 \[
@@ -183,7 +183,7 @@ Thus for $\varepsilon<1$, the symmetric function $f\equiv-1$ cannot be approxima
 
 ::: pf-qed
 
-Step <1>4 proves part (a), and step <1>5 gives a symmetric counterexample for part (b).
+Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} gives a symmetric counterexample for part (b).
 
 :::
 

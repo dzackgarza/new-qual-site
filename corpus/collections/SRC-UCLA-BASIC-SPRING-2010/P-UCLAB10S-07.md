@@ -37,7 +37,7 @@ Enumerate the rational numbers as
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The real sequence
 \[
@@ -63,7 +63,7 @@ By Bolzano--Weierstrass, it has a convergent subsequence.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Choose an infinite index sequence
 \[
@@ -78,7 +78,7 @@ converges.
 
 ::: pf-proof
 
-This is the subsequence supplied by step <1>1, written by its indices.
+This is the subsequence supplied by step [](#s1-1){.pf-ref}, written by its indices.
 
 :::
 
@@ -86,7 +86,7 @@ This is the subsequence supplied by step <1>1, written by its indices.
 
 ::: pf-step
 
-From the subsequence in step <1>2, extract a further subsequence
+From the subsequence in step [](#s1-2){.pf-ref}, extract a further subsequence
 \[
 n^{(2)}_1<n^{(2)}_2<\cdots
 \]
@@ -115,7 +115,7 @@ Because it is a subsequence of the stage-1 sequence, convergence at $r_1$ is pre
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Continuing inductively, construct nested subsequences
 \[
@@ -177,7 +177,7 @@ is a subsequence of
 \bigl(n^{(j)}_k\bigr).
 \]
 In particular, the $k$th term of the stage-$k$ sequence occurs no earlier than the $k$th term of any previous stage, and the diagonal indices can be chosen strictly increasing.
-Equivalently, when carrying out the induction in step <1>4, choose each extracted subsequence with its $k$th term larger than the previously chosen diagonal term.
+Equivalently, when carrying out the induction in step [](#s1-4){.pf-ref}, choose each extracted subsequence with its $k$th term larger than the previously chosen diagonal term.
 Thus
 \[
 n_1<n_2<\cdots.
@@ -187,7 +187,7 @@ n_1<n_2<\cdots.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Fix
 \[
@@ -217,7 +217,7 @@ Thus the tail of the diagonal sequence is a subsequence of the stage-$j$ sequenc
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 For every rational number
 \[
@@ -237,7 +237,7 @@ At stage $j$, the sequence
 f_{n^{(j)}_k}(r_j)
 \]
 was chosen to converge.
-By step <1>6, the tail
+By step [](#s1-6){.pf-ref}, the tail
 \[
 \bigl(f_{n_k}(r_j)\bigr)_{k\ge j}
 \]
@@ -253,7 +253,7 @@ converges.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore there exists a subsequence
 \[
@@ -275,7 +275,7 @@ Every rational number is equal to
 r_j
 \]
 for some $j$.
-Apply step <1>7.
+Apply step [](#s1-7){.pf-ref}.
 
 :::
 
@@ -283,7 +283,7 @@ Apply step <1>7.
 
 ::: pf-qed
 
-Step <1>8 is the required diagonal-subsequence conclusion.
+Step [](#s1-8){.pf-ref} is the required diagonal-subsequence conclusion.
 
 :::
 

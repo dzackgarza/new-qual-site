@@ -80,7 +80,7 @@ UU^*=U^*U=I.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 For every $j$,
 \[
@@ -113,7 +113,7 @@ U(\lambda_jv_j)\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -127,7 +127,7 @@ UHU^*
 
 ::: pf-proof
 
-Step <1>3 shows that every standard basis vector $e_j$ is an eigenvector of $UHU^*$ with eigenvalue $\lambda_j$.
+Step [](#s1-3){.pf-ref} shows that every standard basis vector $e_j$ is an eigenvector of $UHU^*$ with eigenvalue $\lambda_j$.
 Thus the matrix of $UHU^*$ in the standard basis is diagonal with those diagonal entries.
 
 :::
@@ -136,7 +136,7 @@ Thus the matrix of $UHU^*$ in the standard basis is diagonal with those diagonal
 
 ::: pf-qed
 
-Step <1>4 gives the required unitary diagonalization.
+Step [](#s1-4){.pf-ref} gives the required unitary diagonalization.
 
 :::
 

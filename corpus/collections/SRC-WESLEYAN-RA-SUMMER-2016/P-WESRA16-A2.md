@@ -31,7 +31,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $m,n\ge0$ and $k\ge1$, the set
 $$
@@ -58,7 +58,7 @@ is measurable.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define
 $$
@@ -72,13 +72,13 @@ Then $C$ is Lebesgue measurable.
 
 ::: pf-proof
 
-Each $E_{m,n,k}$ is measurable by step <1>1. The set $C$ is obtained from these sets by countable intersections and countable unions, so it is measurable.
+Each $E_{m,n,k}$ is measurable by step [](#s1-1){.pf-ref}. The set $C$ is obtained from these sets by countable intersections and countable unions, so it is measurable.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -106,14 +106,14 @@ which is exactly the condition $x\in C$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The convergence set $E$ is measurable.
 
 
 ::: pf-proof
 
-By step <1>3, $E=C$, and step <1>2 shows that $C$ is measurable.
+By step [](#s1-3){.pf-ref}, $E=C$, and step [](#s1-2){.pf-ref} shows that $C$ is measurable.
 
 :::
 
@@ -121,7 +121,7 @@ By step <1>3, $E=C$, and step <1>2 shows that $C$ is measurable.
 
 ::: pf-qed
 
-Step <1>4 proves the required measurability.
+Step [](#s1-4){.pf-ref} proves the required measurability.
 
 :::
 

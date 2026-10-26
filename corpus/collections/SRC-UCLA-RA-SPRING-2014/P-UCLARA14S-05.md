@@ -27,7 +27,7 @@ T:\ell^2(\mathbb N)\to\ell^1(\mathbb N).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For $p\in\{1,2\}$, the space $\ell^p(\mathbb N)$ is complete.
 
@@ -78,7 +78,7 @@ In particular $x-x^{(M)}\in\ell^p$, so $x\in\ell^p$, and $x^{(m)}\to x$ in $\ell
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The spaces $\ell^1(\mathbb N)$ and $\ell^2(\mathbb N)$ are separable.
 
@@ -123,7 +123,7 @@ Thus $D$ is countable and dense in both $\ell^1$ and $\ell^2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The space $\ell^\infty(\mathbb N)$ is not separable.
 
@@ -159,7 +159,7 @@ would each contain a distinct point of $D$, which is impossible. Hence $\ell^\in
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Suppose, toward a contradiction, that
 \[
@@ -175,13 +175,13 @@ Tx=y
 
 ::: pf-proof
 
-The spaces $\ell^2$ and $\ell^1$ are Banach by step <1>1. Since $T$ is bounded and surjective, the open mapping theorem implies that $T$ maps some ball about $0$ in $\ell^2$ onto a set containing a ball about $0$ in $\ell^1$. Rescaling gives the displayed uniform preimage estimate.
+The spaces $\ell^2$ and $\ell^1$ are Banach by step [](#s1-1){.pf-ref}. Since $T$ is bounded and surjective, the open mapping theorem implies that $T$ maps some ball about $0$ in $\ell^2$ onto a set containing a ball about $0$ in $\ell^1$. Rescaling gives the displayed uniform preimage estimate.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The adjoint
 \[
@@ -201,7 +201,7 @@ C\|T^*\phi\|_2
 
 ::: pf-proof
 
-Fix $\phi\in\ell^\infty$. For every $y\in\ell^1$ with $\|y\|_1\le1$, step <1>4 gives $x\in\ell^2$ with
+Fix $\phi\in\ell^\infty$. For every $y\in\ell^1$ with $\|y\|_1\le1$, step [](#s1-4){.pf-ref} gives $x\in\ell^2$ with
 \[
 Tx=y,
 \qquad
@@ -223,20 +223,20 @@ Taking the supremum over the unit ball of $\ell^1$ gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The range $T^*(\ell^\infty)$ is a closed subspace of $\ell^2$, and $T^*$ is an isomorphism from $\ell^\infty$ onto that range.
 
 
 ::: pf-proof
 
-Step <1>5 shows that $T^*$ is injective and that its inverse on its range is bounded.
+Step [](#s1-5){.pf-ref} shows that $T^*$ is injective and that its inverse on its range is bounded.
 
 To see that the range is closed, suppose
 \[
 T^*\phi_n\to y
 \]
-in $\ell^2$. By step <1>5,
+in $\ell^2$. By step [](#s1-5){.pf-ref},
 \[
 \|\phi_n-\phi_m\|_\infty
 \le
@@ -252,21 +252,21 @@ Thus the range is closed.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The assumed surjection $T$ cannot exist.
 
 
 ::: pf-proof
 
-By step <1>2, $\ell^2$ is separable. Every subspace of a separable metric space is separable, so the closed subspace
+By step [](#s1-2){.pf-ref}, $\ell^2$ is separable. Every subspace of a separable metric space is separable, so the closed subspace
 \[
 T^*(\ell^\infty)
 \subset\ell^2
 \]
 is separable.
 
-But step <1>6 says that $\ell^\infty$ is homeomorphic, via a bounded linear isomorphism, to this range. Hence $\ell^\infty$ would be separable, contradicting step <1>3.
+But step [](#s1-6){.pf-ref} says that $\ell^\infty$ is homeomorphic, via a bounded linear isomorphism, to this range. Hence $\ell^\infty$ would be separable, contradicting step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -274,7 +274,7 @@ But step <1>6 says that $\ell^\infty$ is homeomorphic, via a bounded linear isom
 
 ::: pf-qed
 
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>7 prove part (b).
+Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b).
 
 :::
 

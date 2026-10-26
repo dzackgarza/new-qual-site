@@ -33,7 +33,7 @@ Only the joining point $x=1$ can fail to be differentiable.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Differentiability at $x=1$ forces $m=3$.
 
@@ -50,7 +50,7 @@ so the left derivative at $1$ is $3$. For $x>1$, the derivative is the constant 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Continuity at $x=1$ then forces $b=-4$.
 
@@ -65,26 +65,26 @@ The right-hand limit is $m+b$, so continuity requires
 $$
 m+b=-1.
 $$
-Using $m=3$ from step <1>1 gives $b=-4$.
+Using $m=3$ from step [](#s1-1){.pf-ref} gives $b=-4$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The values $m=3$ and $b=-4$ are sufficient.
 
 
 ::: pf-proof
 
-With these values, both one-sided limits at $1$ equal $-1$, so the function is continuous there, and both one-sided derivatives equal $3$ by step <1>1. Hence the derivative exists at $1$. Each branch is a polynomial or linear function, so it is differentiable at every other point.
+With these values, both one-sided limits at $1$ equal $-1$, so the function is continuous there, and both one-sided derivatives equal $3$ by step [](#s1-1){.pf-ref}. Hence the derivative exists at $1$. Each branch is a polynomial or linear function, so it is differentiable at every other point.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 $$
@@ -95,7 +95,7 @@ so the answer is (E).
 
 ::: pf-proof
 
-Steps <1>1 and <1>2 show necessity, while step <1>3 shows sufficiency.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show necessity, while step [](#s1-3){.pf-ref} shows sufficiency.
 
 :::
 
@@ -103,7 +103,7 @@ Steps <1>1 and <1>2 show necessity, while step <1>3 shows sufficiency.
 
 ::: pf-qed
 
-Step <1>4 gives the unique pair for which $f$ is differentiable everywhere.
+Step [](#s1-4){.pf-ref} gives the unique pair for which $f$ is differentiable everywhere.
 
 :::
 

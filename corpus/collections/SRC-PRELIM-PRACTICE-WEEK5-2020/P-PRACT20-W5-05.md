@@ -70,7 +70,7 @@ partitions.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence there are exactly
 \[
@@ -90,7 +90,7 @@ and no two such choices are isomorphic.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 In invariant-factor form, the six groups are
 \[
@@ -132,7 +132,7 @@ elementary-divisor descriptions
 \mathbb Z_{600}.
 \end{aligned}
 \]
-These are the six cases counted in step <1>3.
+These are the six cases counted in step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -140,7 +140,7 @@ These are the six cases counted in step <1>3.
 
 ::: pf-qed
 
-Step <1>4 gives the complete classification up to isomorphism.
+Step [](#s1-4){.pf-ref} gives the complete classification up to isomorphism.
 
 :::
 

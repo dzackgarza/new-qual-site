@@ -29,7 +29,7 @@ Set $x=\sin\theta$ with $\theta=\arcsin x$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The integral becomes
 $$
@@ -58,7 +58,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 An antiderivative is
 $$
@@ -72,7 +72,7 @@ Using
 $$
 \sin^2\theta=\frac{1-\cos2\theta}{2},
 $$
-step <1>1 gives
+step [](#s1-1){.pf-ref} gives
 $$
 \int\sin^2\theta\,d\theta
 =\frac\theta2-\frac{\sin2\theta}{4}+C
@@ -83,7 +83,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Returning to $x$ gives
 $$
@@ -94,7 +94,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Since $\theta=\arcsin x$, $\sin\theta=x$, and $\cos\theta=\sqrt{1-x^2}$, substitution into step <1>2 gives the displayed antiderivative.
+Since $\theta=\arcsin x$, $\sin\theta=x$, and $\cos\theta=\sqrt{1-x^2}$, substitution into step [](#s1-2){.pf-ref} gives the displayed antiderivative.
 
 :::
 
@@ -102,7 +102,7 @@ Since $\theta=\arcsin x$, $\sin\theta=x$, and $\cos\theta=\sqrt{1-x^2}$, substit
 
 ::: pf-qed
 
-Step <1>3 gives the requested antiderivative and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested antiderivative and corresponding choice.
 
 :::
 

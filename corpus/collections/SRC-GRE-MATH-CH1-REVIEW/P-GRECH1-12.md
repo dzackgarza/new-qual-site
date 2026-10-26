@@ -30,7 +30,7 @@ Set $\alpha=\sqrt3-\sqrt2$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 $\alpha^2-5=-2\sqrt6$.
 
@@ -47,7 +47,7 @@ Rearranging gives the claim.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $\alpha$ satisfies
 $$
@@ -57,7 +57,7 @@ $$
 
 ::: pf-proof
 
-Squaring the equality in step <1>1 gives
+Squaring the equality in step [](#s1-1){.pf-ref} gives
 $$
 (\alpha^2-5)^2=24.
 $$
@@ -71,7 +71,7 @@ which is the claimed relation.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The required polynomial is
 $$
@@ -82,7 +82,7 @@ so the answer is (D).
 
 ::: pf-proof
 
-Step <1>2 states exactly that substituting $x=\alpha$ into the polynomial in choice (D) gives zero.
+Step [](#s1-2){.pf-ref} states exactly that substituting $x=\alpha$ into the polynomial in choice (D) gives zero.
 
 :::
 
@@ -90,7 +90,7 @@ Step <1>2 states exactly that substituting $x=\alpha$ into the polynomial in cho
 
 ::: pf-qed
 
-Step <1>3 identifies the requested listed polynomial.
+Step [](#s1-3){.pf-ref} identifies the requested listed polynomial.
 
 :::
 

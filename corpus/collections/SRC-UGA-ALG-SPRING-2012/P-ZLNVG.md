@@ -30,7 +30,7 @@ Let $D_{2n}$ denote the dihedral group of order $2n$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every group $G$ of order $70$ is nonsimple.
 
@@ -43,7 +43,7 @@ The number $n_5$ of Sylow $5$-subgroups divides $14$ and is congruent to $1$ mod
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Three groups of order $70$ are
 \[
@@ -59,9 +59,9 @@ The cyclic group $C_{70}$ has order $70$. The dihedral group $D_{70}$ has order 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-The three groups in step <1>2 are pairwise nonisomorphic.
+The three groups in step [](#s1-2){.pf-ref} are pairwise nonisomorphic.
 
 
 ::: pf-proof
@@ -74,7 +74,7 @@ The group $C_{70}$ is abelian, whereas both dihedral groups $D_{70}$ and $D_{14}
 
 ::: pf-qed
 
-Step <1>1 proves part (a), and steps <1>2 and <1>3 prove part (b).
+Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (b).
 
 :::
 

@@ -42,7 +42,7 @@ v(x,y)=u(x,y)-ax-by.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function \(v\) is subharmonic in \(\Omega\) and continuous on \(\overline\Omega\).
 
@@ -59,7 +59,7 @@ is harmonic. Subtracting a harmonic function preserves subharmonicity. Continuit
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 On the boundary rays,
 \[
@@ -112,7 +112,7 @@ on the quadrant.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The function \(h\) is harmonic in \(\Omega\).
 
@@ -125,7 +125,7 @@ The quadrant is simply connected and does not meet the negative real axis after 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The function \(h\) is strictly positive on
 \[
@@ -163,7 +163,7 @@ because \(p<2\). Therefore the cosine factor is positive. Also \(r^p>0\) for \(r
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 More precisely, there is a constant
 \[
@@ -197,20 +197,20 @@ on \([0,\pi/2]\) is attained at the endpoints and equals \(c_p\).
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The function \(v_\varepsilon\) is subharmonic in \(\Omega\).
 
 
 ::: pf-proof
 
-The function \(v\) is subharmonic by step <1>1, and \(h\) is harmonic by step <1>4. Subtracting \(\varepsilon h\) preserves subharmonicity.
+The function \(v\) is subharmonic by step [](#s1-1){.pf-ref}, and \(h\) is harmonic by step [](#s1-4){.pf-ref}. Subtracting \(\varepsilon h\) preserves subharmonicity.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 On the two coordinate axes,
 \[
@@ -221,11 +221,11 @@ v_\varepsilon\le0}.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 v\le0
 \]
-on the axes, while by step <1>5,
+on the axes, while by step [](#s1-5){.pf-ref},
 \[
 h\ge0.
 \]
@@ -238,7 +238,7 @@ v_\varepsilon=v-\varepsilon h\le0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 For \(r\ge R_0\),
 \[
@@ -268,7 +268,7 @@ r.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 On the quarter-circle
 \[
@@ -284,17 +284,17 @@ R-\varepsilon c_pR^p.
 
 ::: pf-proof
 
-Use step <1>9 and the lower bound
+Use step [](#s1-9){.pf-ref} and the lower bound
 \[
 h\ge c_pR^p
 \]
-from step <1>6.
+from step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Since \(p>1\), there exists \(R_\varepsilon\ge R_0\) such that
 \[
@@ -327,20 +327,20 @@ Thus eventually
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 The boundary values of \(v_\varepsilon\) on \(\partial Q_R\) are nonpositive.
 
 
 ::: pf-proof
 
-On the two radial sides, use step <1>8. On the circular arc, use steps <1>10--<1>11.
+On the two radial sides, use step [](#s1-8){.pf-ref}. On the circular arc, use steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 By the maximum principle for subharmonic functions,
 \[
@@ -352,7 +352,7 @@ v_\varepsilon\le0
 
 ::: pf-proof
 
-The function \(v_\varepsilon\) is subharmonic in \(Q_R\) by step <1>7 and continuous on its closure. Since its boundary values are nonpositive by step <1>12, the subharmonic maximum principle gives
+The function \(v_\varepsilon\) is subharmonic in \(Q_R\) by step [](#s1-7){.pf-ref} and continuous on its closure. Since its boundary values are nonpositive by step [](#s1-12){.pf-ref}, the subharmonic maximum principle gives
 \[
 \sup_{Q_R}v_\varepsilon
 \le
@@ -364,7 +364,7 @@ The function \(v_\varepsilon\) is subharmonic in \(Q_R\) by step <1>7 and contin
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-14}
 
 Let \((x,y)\in\Omega\) be arbitrary. Then
 \[
@@ -380,7 +380,7 @@ Choose
 \[
 R>\max\{R_\varepsilon,\sqrt{x^2+y^2}\}.
 \]
-Then \((x,y)\in Q_R\), so step <1>13 gives
+Then \((x,y)\in Q_R\), so step [](#s1-13){.pf-ref} gives
 \[
 v_\varepsilon(x,y)
 =
@@ -393,7 +393,7 @@ Rearrange.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-15}
 
 Letting \(\varepsilon\downarrow0\),
 \[
@@ -404,7 +404,7 @@ v(x,y)\le0}.
 
 ::: pf-proof
 
-For fixed \((x,y)\), the number \(h(x,y)\) is finite. Step <1>14 holds for every \(\varepsilon>0\), so
+For fixed \((x,y)\), the number \(h(x,y)\) is finite. Step [](#s1-14){.pf-ref} holds for every \(\varepsilon>0\), so
 \[
 v(x,y)\le\inf_{\varepsilon>0}\varepsilon h(x,y)=0.
 \]
@@ -413,7 +413,7 @@ v(x,y)\le\inf_{\varepsilon>0}\varepsilon h(x,y)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-16}
 
 Therefore
 \[
@@ -429,7 +429,7 @@ Recall
 \[
 v=u-ax-by.
 \]
-Step <1>15 gives \(v\le0\).
+Step [](#s1-15){.pf-ref} gives \(v\le0\).
 
 :::
 
@@ -437,7 +437,7 @@ Step <1>15 gives \(v\le0\).
 
 ::: pf-qed
 
-Step <1>16 is the required Phragmén--Lindelöf bound.
+Step [](#s1-16){.pf-ref} is the required Phragmén--Lindelöf bound.
 
 :::
 

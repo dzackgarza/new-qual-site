@@ -34,7 +34,7 @@ If there is no such $x$, set $B_q=\varnothing$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $q\in\QQ$, the set $B_q$ is an interval, or is empty.
 
@@ -53,20 +53,20 @@ If $w\le q$, then $u\le w\le q$, so $w\in I_u$. If $w\ge q$, then $q\le w\le v$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Each $B_q$ is a Borel subset of $\RR$.
 
 
 ::: pf-proof
 
-Every interval in $\RR$—bounded or unbounded, with any choice of included endpoints—is Borel. The empty set is also Borel. Apply step <1>1.
+Every interval in $\RR$—bounded or unbounded, with any choice of included endpoints—is Borel. The empty set is also Borel. Apply step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 $$
@@ -91,14 +91,14 @@ The open interval $(x-1,x+1)$ is nonempty, so it contains some rational number $
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The set $B$ is Lebesgue measurable.
 
 
 ::: pf-proof
 
-The rationals are countable. By steps <1>2--<1>3, $B$ is a countable union of Borel sets, hence is Borel. Every Borel subset of $\RR$ is Lebesgue measurable.
+The rationals are countable. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $B$ is a countable union of Borel sets, hence is Borel. Every Borel subset of $\RR$ is Lebesgue measurable.
 
 :::
 
@@ -106,7 +106,7 @@ The rationals are countable. By steps <1>2--<1>3, $B$ is a countable union of Bo
 
 ::: pf-qed
 
-Step <1>4 is the required conclusion. The argument actually does not require the hypothesis that $A$ itself is measurable.
+Step [](#s1-4){.pf-ref} is the required conclusion. The argument actually does not require the hypothesis that $A$ itself is measurable.
 
 :::
 

@@ -55,7 +55,7 @@ Substitute $y=e^{\lambda x}$ into the homogeneous equation and factor the result
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Hence the homogeneous solution is
 $$
@@ -75,7 +75,7 @@ The two distinct characteristic roots are $1$ and $2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Seek a particular solution of the form
 $$
@@ -117,13 +117,13 @@ $$
 
 ::: pf-proof
 
-Differentiate step <1>4 term by term.
+Differentiate step [](#s1-4){.pf-ref} term by term.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Substitution into the differential equation gives
 $$
@@ -166,13 +166,13 @@ $$
 
 ::: pf-proof
 
-Match the sine and cosine coefficients in step <1>6.
+Match the sine and cosine coefficients in step [](#s1-6){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Solving gives
 $$
@@ -193,7 +193,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence
 $$
@@ -207,13 +207,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>8 into the ansatz from step <1>4.
+Substitute step [](#s1-8){.pf-ref} into the ansatz from step [](#s1-4){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 Therefore the general solution is
 $$
@@ -233,7 +233,7 @@ $$
 
 ::: pf-proof
 
-Add the homogeneous solution from step <1>3 and one particular solution from step <1>9.
+Add the homogeneous solution from step [](#s1-3){.pf-ref} and one particular solution from step [](#s1-9){.pf-ref}.
 
 :::
 
@@ -241,7 +241,7 @@ Add the homogeneous solution from step <1>3 and one particular solution from ste
 
 ::: pf-qed
 
-Step <1>10 is the complete solution family.
+Step [](#s1-10){.pf-ref} is the complete solution family.
 
 :::
 

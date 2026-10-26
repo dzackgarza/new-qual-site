@@ -27,7 +27,7 @@ Q_M(x,y)=\langle x\smile y,[M]\rangle,
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Let
 \[
@@ -54,7 +54,7 @@ because exactness of the cohomology sequence of $(V,M)$ gives $\delta\circ i^*=0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The long exact cohomology sequence of the pair contains
 \[
@@ -81,9 +81,9 @@ and taking dimensions yields the formula.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
-Poincaré--Lefschetz duality identifies the map $j^*$ in step <1>2 with the dual of
+Poincaré--Lefschetz duality identifies the map $j^*$ in step [](#s1-2){.pf-ref} with the dual of
 \[
 i^*:H^{2n}(V)\to H^{2n}(M)
 \]
@@ -103,20 +103,20 @@ and Poincaré duality gives a perfect pairing on $H^{2n}(M)$. Under these pairin
 \[
 \dim H^{2n}(M)=2\dim L.
 \]
-Combining this with step <1>2 gives $\dim\ker j^*=\dim L$.
+Combining this with step [](#s1-2){.pf-ref} gives $\dim\ker j^*=\dim L$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Hence $L$ is a Lagrangian subspace of the nonsingular symmetric form $Q_M$.
 
 
 ::: pf-proof
 
-Step <1>1 shows that $L$ is isotropic, while step <1>3 gives
+Step [](#s1-1){.pf-ref} shows that $L$ is isotropic, while step [](#s1-3){.pf-ref} gives
 \[
 \dim L=\frac12\dim H^{2n}(M;\mathbb Q).
 \]
@@ -126,7 +126,7 @@ The intersection form is nonsingular by Poincaré duality. An isotropic subspace
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A nonsingular symmetric bilinear form over $\mathbb Q$ that has a Lagrangian has signature zero.
 
@@ -154,7 +154,7 @@ Over $\mathbb R$, this is a direct sum of $r$ hyperbolic planes, each with one p
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -164,7 +164,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>4, the middle-dimensional intersection form of $M$ has a Lagrangian. Step <1>5 therefore gives zero signature.
+By step [](#s1-4){.pf-ref}, the middle-dimensional intersection form of $M$ has a Lagrangian. Step [](#s1-5){.pf-ref} therefore gives zero signature.
 
 :::
 
@@ -172,7 +172,7 @@ By step <1>4, the middle-dimensional intersection form of $M$ has a Lagrangian. 
 
 ::: pf-qed
 
-Step <1>6 proves the claim.
+Step [](#s1-6){.pf-ref} proves the claim.
 
 :::
 

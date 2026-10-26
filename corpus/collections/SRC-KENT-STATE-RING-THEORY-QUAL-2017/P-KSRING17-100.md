@@ -128,7 +128,7 @@ of an integer, so $m,n$ can be chosen as stated.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Set
 $$
@@ -173,7 +173,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 $$
@@ -206,7 +206,7 @@ r
 \frac{\alpha}{\beta}-q
 \right).
 $$
-By multiplicativity of the norm and step <1>3,
+By multiplicativity of the norm and step [](#s1-3){.pf-ref},
 $$
 \begin{aligned}
 N(r)
@@ -230,7 +230,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 $$
@@ -243,13 +243,13 @@ $$
 
 ::: pf-proof
 
-Step <1>4 gives Euclidean division with remainder of strictly smaller norm whenever the remainder is nonzero.
+Step [](#s1-4){.pf-ref} gives Euclidean division with remainder of strictly smaller norm whenever the remainder is nonzero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 For the elements
 $$
@@ -305,7 +305,7 @@ so this is a valid Euclidean-division step.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The next division is exact:
 $$
@@ -335,7 +335,7 @@ Thus the remainder is zero.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 Therefore
 $$
@@ -354,7 +354,7 @@ $$
 ::: pf-proof
 
 In a Euclidean domain, the last nonzero remainder in the Euclidean algorithm is a greatest common divisor.
-By steps <1>6--<1>7, the last nonzero remainder is
+By steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}, the last nonzero remainder is
 $$
 2+3i.
 $$
@@ -381,11 +381,11 @@ $$
 
 ::: pf-qed
 
-Step <1>5 proves that
+Step [](#s1-5){.pf-ref} proves that
 $$
 \ZZ[i]
 $$
-is Euclidean, and step <1>8 gives the requested greatest common divisor.
+is Euclidean, and step [](#s1-8){.pf-ref} gives the requested greatest common divisor.
 
 :::
 

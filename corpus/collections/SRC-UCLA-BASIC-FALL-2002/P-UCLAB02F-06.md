@@ -48,7 +48,7 @@ v_0=(a_0,b_0,c_0).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 After relabeling the coordinates of $\mathbb R^3$ if necessary, the $2\times2$ matrix
 \[
@@ -69,7 +69,7 @@ is onto, so its $2\times3$ matrix has rank $2$. Therefore at least one of its $2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 There exist an interval $I$ containing $c_0$ and a continuously differentiable map
 \[
@@ -94,7 +94,7 @@ Then
 \[
 G(a_0,b_0,c_0)=0.
 \]
-By step <1>1, the derivative of $G$ with respect to the variables $(a,b)$ is invertible at $(a_0,b_0,c_0)$. The implicit function theorem therefore gives a neighborhood $I$ of $c_0$ and a continuously differentiable function
+By step [](#s1-1){.pf-ref}, the derivative of $G$ with respect to the variables $(a,b)$ is invertible at $(a_0,b_0,c_0)$. The implicit function theorem therefore gives a neighborhood $I$ of $c_0$ and a continuously differentiable function
 \[
 \phi(c)=(\phi_1(c),\phi_2(c))
 \]
@@ -111,7 +111,7 @@ F(\phi(c),c)=x_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 There exists $\varepsilon>0$ such that
 \[
@@ -127,7 +127,7 @@ The set $I$ is an open neighborhood of $c_0$, so it contains some open interval 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -146,7 +146,7 @@ for every $t\in(-\varepsilon,\varepsilon)$.
 
 ::: pf-proof
 
-The map $\phi$ is continuously differentiable by step <1>2, so $\gamma$ is continuously differentiable. By step <1>3, $c_0+t\in I$ for every $|t|<\varepsilon$. Step <1>2 therefore gives
+The map $\phi$ is continuously differentiable by step [](#s1-2){.pf-ref}, so $\gamma$ is continuously differentiable. By step [](#s1-3){.pf-ref}, $c_0+t\in I$ for every $|t|<\varepsilon$. Step [](#s1-2){.pf-ref} therefore gives
 \[
 F(\gamma(t))
 =
@@ -159,7 +159,7 @@ x_0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 One has
 \[
@@ -169,7 +169,7 @@ One has
 
 ::: pf-proof
 
-Differentiating the formula in step <1>4 gives
+Differentiating the formula in step [](#s1-4){.pf-ref} gives
 \[
 \gamma'(0)
 =
@@ -183,7 +183,7 @@ Its third coordinate is $1$, so the vector is nonzero.
 
 ::: pf-qed
 
-Step <1>4 constructs the required continuously differentiable curve in the level set $F^{-1}(x_0)$, and step <1>5 proves that it is nonconstant to first order at $0$.
+Step [](#s1-4){.pf-ref} constructs the required continuously differentiable curve in the level set $F^{-1}(x_0)$, and step [](#s1-5){.pf-ref} proves that it is nonconstant to first order at $0$.
 
 :::
 

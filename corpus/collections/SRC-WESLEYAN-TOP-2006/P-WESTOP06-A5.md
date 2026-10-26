@@ -29,7 +29,7 @@ Call $X$ *zero-dimensional* if $\operatorname{clop}(X)$ is a basis, and let $wX$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The usual topology on \(\mathbb Q\) has a basis of clopen sets.
 
@@ -58,7 +58,7 @@ where the irrationality of \(a\) and \(b\) removes any endpoint issue. Thus ever
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The weight of \(\mathbb Q\) is
 \[
@@ -80,7 +80,7 @@ On the other hand, \(\mathbb Q\) is an infinite \(T_1\) space. A finite basis wo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The set of clopen subsets of \(\mathbb Q\) has cardinality at least \(2^{\aleph_0}\).
 
@@ -109,7 +109,7 @@ is injective. Since \(|\mathbb R\setminus\mathbb Q|=2^{\aleph_0}\), the claim fo
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore
 \[
@@ -119,7 +119,7 @@ Therefore
 
 ::: pf-proof
 
-By step <1>2, \(w\mathbb Q=\aleph_0\), while step <1>3 gives
+By step [](#s1-2){.pf-ref}, \(w\mathbb Q=\aleph_0\), while step [](#s1-3){.pf-ref} gives
 \[
 |\operatorname{clop}(\mathbb Q)|\ge2^{\aleph_0}>\aleph_0
 \]
@@ -129,7 +129,7 @@ by Cantor's theorem.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Part \(2\) is false as printed for finite compact Hausdorff zero-dimensional spaces.
 
@@ -150,7 +150,7 @@ In particular, the one-point space already contradicts the literal statement.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 If \(X\) is infinite, compact, Hausdorff, and zero-dimensional, then
 \[
@@ -189,7 +189,7 @@ Combining the two inequalities gives the claimed equality.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 The exact corrected form of part \(2\) is: the asserted equality holds for every infinite compact Hausdorff zero-dimensional space, while an \(n\)-point compact Hausdorff space satisfies
 \[
@@ -201,7 +201,7 @@ wX=n,
 
 ::: pf-proof
 
-The infinite case is step <1>6. A finite Hausdorff space is discrete, so the finite computation is exactly the one in step <1>5.
+The infinite case is step [](#s1-6){.pf-ref}. A finite Hausdorff space is discrete, so the finite computation is exactly the one in step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -209,7 +209,7 @@ The infinite case is step <1>6. A finite Hausdorff space is discrete, so the fin
 
 ::: pf-qed
 
-Steps <1>1 through <1>4 prove part \(1\). Steps <1>5 through <1>7 show that part \(2\) is false as printed and prove the intended infinite-space statement together with the exact finite exception.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part \(1\). Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} show that part \(2\) is false as printed and prove the intended infinite-space statement together with the exact finite exception.
 
 :::
 

@@ -26,7 +26,7 @@ are linearly independent in the space of continuous functions on $[1,2]$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Suppose
 \[
@@ -50,7 +50,7 @@ To prove linear independence, it suffices to show that every linear relation of 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Define the polynomial
 \[
@@ -74,7 +74,7 @@ Since
 \[
 e^{kt}=(e^t)^k,
 \]
-the relation in step <1>1 is exactly
+the relation in step [](#s1-1){.pf-ref} is exactly
 \[
 p(e^t)=0.
 \]
@@ -83,7 +83,7 @@ p(e^t)=0.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The polynomial $p$ vanishes at every point of the interval
 \[
@@ -113,7 +113,7 @@ with
 \[
 s=e^t.
 \]
-Step <1>2 then gives
+Step [](#s1-2){.pf-ref} then gives
 \[
 p(s)=0.
 \]
@@ -134,14 +134,14 @@ is the zero polynomial.
 ::: pf-proof
 
 A nonzero real polynomial of degree at most $n$ has at most $n$ real roots.
-Step <1>3 gives infinitely many roots, indeed an entire interval.
+Step [](#s1-3){.pf-ref} gives infinitely many roots, indeed an entire interval.
 Hence $p$ must be identically zero.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Thus
 \[
@@ -159,7 +159,7 @@ The coefficients of the zero polynomial all vanish.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence
 \[
@@ -172,7 +172,7 @@ e^t,e^{2t},\ldots,e^{nt}
 
 ::: pf-proof
 
-Step <1>5 shows that the only linear relation among the functions is the trivial one.
+Step [](#s1-5){.pf-ref} shows that the only linear relation among the functions is the trivial one.
 
 :::
 
@@ -180,7 +180,7 @@ Step <1>5 shows that the only linear relation among the functions is the trivial
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

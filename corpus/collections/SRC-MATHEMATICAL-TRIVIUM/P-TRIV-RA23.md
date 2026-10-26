@@ -23,7 +23,7 @@ Assume $x_0>0$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Set
 $$
@@ -45,7 +45,7 @@ This is the linear change of variables $x=x_0u$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The limits transform as
 $$
@@ -63,7 +63,7 @@ Substitute the endpoints into $u=x/x_0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore
 $$
@@ -77,13 +77,13 @@ $$
 
 ::: pf-proof
 
-Substitute the relations from steps <1>1--<1>2.
+Substitute the relations from steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 One has
 $$
@@ -116,7 +116,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Hence
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -139,7 +139,7 @@ Combine steps <1>3 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required value.
+Step [](#s1-5){.pf-ref} is the required value.
 
 :::
 

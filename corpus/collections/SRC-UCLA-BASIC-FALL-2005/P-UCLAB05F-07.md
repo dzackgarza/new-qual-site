@@ -28,7 +28,7 @@ be the linear map whose standard matrix is $A$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The column rank of $A$ is
 \[
@@ -51,7 +51,7 @@ where $e_1,\ldots,e_m$ is the standard basis of $\mathbb R^m$. Hence their span 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The row rank of $A$ is
 \[
@@ -65,7 +65,7 @@ The standard matrix of the transpose map
 \[
 T^t:(\mathbb R^n)^*\to(\mathbb R^m)^*
 \]
-is $A^t$. The columns of $A^t$ are the rows of $A$. By step <1>1 applied to $T^t$, the maximum number of linearly independent rows of $A$ is therefore
+is $A^t$. The columns of $A^t$ are the rows of $A$. By step [](#s1-1){.pf-ref} applied to $T^t$, the maximum number of linearly independent rows of $A$ is therefore
 \[
 \operatorname{rank}(T^t).
 \]
@@ -74,7 +74,7 @@ is $A^t$. The columns of $A^t$ are the rows of $A$. By step <1>1 applied to $T^t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 One has
 \[
@@ -99,7 +99,7 @@ for every $v\in\mathbb R^m$. This holds exactly when $\varphi$ vanishes on every
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 If $Y$ is a subspace of a finite-dimensional vector space $W$, then
 \[
@@ -130,7 +130,7 @@ Thus
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The ranks of $T$ and $T^t$ are equal.
 
@@ -141,7 +141,7 @@ By rank-nullity for
 \[
 T^t:(\mathbb R^n)^*\to(\mathbb R^m)^*,
 \]
-steps <1>3--<1>4 give
+steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
 \[
 \begin{aligned}
 \operatorname{rank}(T^t)
@@ -160,14 +160,14 @@ n-(n-\dim\operatorname{im}T)\\
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The row rank of $A$ equals its column rank.
 
 
 ::: pf-proof
 
-By step <1>1, the column rank is $\operatorname{rank}(T)$. By step <1>2, the row rank is $\operatorname{rank}(T^t)$. These are equal by step <1>5.
+By step [](#s1-1){.pf-ref}, the column rank is $\operatorname{rank}(T)$. By step [](#s1-2){.pf-ref}, the row rank is $\operatorname{rank}(T^t)$. These are equal by step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -175,7 +175,7 @@ By step <1>1, the column rank is $\operatorname{rank}(T)$. By step <1>2, the row
 
 ::: pf-qed
 
-Step <1>6 is the required conclusion.
+Step [](#s1-6){.pf-ref} is the required conclusion.
 
 :::
 

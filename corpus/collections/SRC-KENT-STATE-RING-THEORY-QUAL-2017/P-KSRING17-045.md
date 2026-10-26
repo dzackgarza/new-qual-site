@@ -28,7 +28,7 @@ be an arbitrary prime ideal of $R$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Since
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 One has
 $$
@@ -67,7 +67,7 @@ $$
 
 ::: pf-proof
 
-By step <1>1,
+By step [](#s1-1){.pf-ref},
 $$
 a(1-a)=0\in P.
 $$
@@ -82,7 +82,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The element
 $$
@@ -115,7 +115,7 @@ Thus $1-a$ is idempotent.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Both
 $$
@@ -163,14 +163,14 @@ Therefore $1-a$ is also nontrivial.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore every prime ideal $P$ contains a nontrivial idempotent.
 
 
 ::: pf-proof
 
-By step <1>2, the ideal $P$ contains either $a$ or $1-a$. By steps <1>3--<1>4, whichever element occurs is an idempotent different from both $0$ and $1$.
+By step [](#s1-2){.pf-ref}, the ideal $P$ contains either $a$ or $1-a$. By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, whichever element occurs is an idempotent different from both $0$ and $1$.
 Thus
 $$
 \boxed{
@@ -184,7 +184,7 @@ $$
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

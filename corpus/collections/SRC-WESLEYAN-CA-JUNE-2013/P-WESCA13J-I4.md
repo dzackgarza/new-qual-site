@@ -49,7 +49,7 @@ This is the standard ambient situation in which removable singularities, poles, 
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The point
 $$
@@ -94,7 +94,7 @@ These two exclusions distinguish an essential singularity from the other two pos
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 In terms of the Laurent expansion
 $$
@@ -152,7 +152,7 @@ $$
 
 ::: pf-proof
 
-Step <1>2 gives the definition, and step <1>3 gives the standard equivalent Laurent-series criterion.
+Step [](#s1-2){.pf-ref} gives the definition, and step [](#s1-3){.pf-ref} gives the standard equivalent Laurent-series criterion.
 
 :::
 

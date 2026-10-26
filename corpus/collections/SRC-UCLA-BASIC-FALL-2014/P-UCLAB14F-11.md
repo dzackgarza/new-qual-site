@@ -29,7 +29,7 @@ Prove that
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The matrix $A$ is diagonalizable over $\mathbb R$.
 
@@ -59,7 +59,7 @@ A
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Consequently,
 \[
@@ -82,13 +82,13 @@ A^2
 =
 SD^2S^{-1}.
 \]
-Apply this with the diagonal matrix $D$ from step <1>1.
+Apply this with the diagonal matrix $D$ from step [](#s1-1){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The trace of $A^2$ is
 \[
@@ -101,7 +101,7 @@ The trace of $A^2$ is
 ::: pf-proof
 
 Trace is invariant under similarity.
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \operatorname{Tr}(A^2)
 =
@@ -115,7 +115,7 @@ which is the sum of the diagonal entries.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 The number
 \[
@@ -142,7 +142,7 @@ is an integer.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -155,7 +155,7 @@ Therefore
 
 ::: pf-proof
 
-Combine steps <1>3 and <1>4.
+Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 
 :::
 
@@ -163,7 +163,7 @@ Combine steps <1>3 and <1>4.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

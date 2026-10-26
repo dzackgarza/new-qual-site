@@ -27,7 +27,7 @@ X\sim\operatorname{Binomial}\left(12000,\frac16\right).
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The mean and variance of $X$ are
 \[
@@ -53,7 +53,7 @@ Substitute $n=12000$ and $p=1/6$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 With the continuity correction, the event $1800\leq X\leq2100$ is approximated by
 \[
@@ -70,7 +70,7 @@ The central limit theorem approximates the binomial law by the normal law with t
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Standardizing gives
 \[
@@ -83,7 +83,7 @@ P(1800\leq X\leq2100)
 
 ::: pf-proof
 
-Subtract the mean $2000$ from the two endpoints in step <1>2 and divide by the standard deviation $\sigma$ from step <1>1.
+Subtract the mean $2000$ from the two endpoints in step [](#s1-2){.pf-ref} and divide by the standard deviation $\sigma$ from step [](#s1-1){.pf-ref}.
 
 :::
 
@@ -101,13 +101,13 @@ The standardized endpoints are approximately
 
 ::: pf-proof
 
-Insert $\sigma=\sqrt{5000/3}$ from step <1>1 and evaluate the two quotients.
+Insert $\sigma=\sqrt{5000/3}$ from step [](#s1-1){.pf-ref} and evaluate the two quotients.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Therefore
 \[
@@ -120,7 +120,7 @@ P(1800\leq X\leq2100)
 
 ::: pf-proof
 
-The lower-tail term $\Phi(-4.9114)$ is about $4.5\times10^{-7}$, while $\Phi(2.4616)$ is about $0.9931$. Substitution into step <1>3 gives the displayed approximation.
+The lower-tail term $\Phi(-4.9114)$ is about $4.5\times10^{-7}$, while $\Phi(2.4616)$ is about $0.9931$. Substitution into step [](#s1-3){.pf-ref} gives the displayed approximation.
 
 :::
 
@@ -128,7 +128,7 @@ The lower-tail term $\Phi(-4.9114)$ is about $4.5\times10^{-7}$, while $\Phi(2.4
 
 ::: pf-qed
 
-Step <1>5 gives the requested normal approximation to the binomial probability.
+Step [](#s1-5){.pf-ref} gives the requested normal approximation to the binomial probability.
 
 :::
 

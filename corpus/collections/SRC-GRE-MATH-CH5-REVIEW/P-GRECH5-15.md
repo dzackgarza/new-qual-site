@@ -28,7 +28,7 @@ Let $T\colon \RR^5 \to \RR^3$ be a linear transformation whose kernel is a three
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The image of $T$ has dimension $2$.
 
@@ -49,7 +49,7 @@ and therefore $\dim\operatorname{im}T=2$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The set $\{T(\mathbf x):\mathbf x\in\RR^5\}$ is
 $$
@@ -60,7 +60,7 @@ so the answer is (C).
 
 ::: pf-proof
 
-The displayed set is $\operatorname{im}T$, which is a linear subspace of $\RR^3$. By step <1>1 it is two-dimensional. A two-dimensional linear subspace of $\RR^3$ is a plane containing the origin.
+The displayed set is $\operatorname{im}T$, which is a linear subspace of $\RR^3$. By step [](#s1-1){.pf-ref} it is two-dimensional. A two-dimensional linear subspace of $\RR^3$ is a plane containing the origin.
 
 :::
 
@@ -68,7 +68,7 @@ The displayed set is $\operatorname{im}T$, which is a linear subspace of $\RR^3$
 
 ::: pf-qed
 
-Step <1>2 identifies the image.
+Step [](#s1-2){.pf-ref} identifies the image.
 
 :::
 

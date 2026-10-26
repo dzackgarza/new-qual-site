@@ -26,7 +26,7 @@ Prove that your list is exhaustive.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Every solution satisfies
 \[
@@ -54,7 +54,7 @@ Since $f$ is entire,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For every solution, either
 \[
@@ -74,9 +74,9 @@ f'
 \qquad\text{and}\qquad
 f''+f
 \]
-are entire, and their product is identically zero by step <1>1.
+are entire, and their product is identically zero by step [](#s1-1){.pf-ref}.
 
-If $f'$ is not identically zero, choose $z_0$ with $f'(z_0)\ne0$. By continuity, $f'$ is nonzero on some neighborhood of $z_0$, so step <1>1 gives
+If $f'$ is not identically zero, choose $z_0$ with $f'(z_0)\ne0$. By continuity, $f'$ is nonzero on some neighborhood of $z_0$, so step [](#s1-1){.pf-ref} gives
 \[
 f''+f=0
 \]
@@ -90,7 +90,7 @@ on all of $\mathbb C$. Thus one of the two alternatives holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 If $f'\equiv0$, then
 \[
@@ -171,7 +171,7 @@ Since $c_0=c_1=0$, this recurrence gives $c_n=0$ for every $n$. Thus $h\equiv0$,
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 A function
 \[
@@ -217,7 +217,7 @@ Hence the original equation holds exactly when $a^2+b^2=1$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 The complete list of solutions is
 \[
@@ -233,13 +233,13 @@ a^2+b^2=1.
 
 ::: pf-proof
 
-By steps <1>2 through <1>5, every nonconstant solution has the boxed form. The constant solutions from step <1>3 are included as
+By steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref}, every nonconstant solution has the boxed form. The constant solutions from step [](#s1-3){.pf-ref} are included as
 \[
 (a,b)=(1,0)
 \qquad\text{and}\qquad
 (a,b)=(-1,0).
 \]
-Conversely, step <1>5 shows that every function in the boxed family satisfies the original equation.
+Conversely, step [](#s1-5){.pf-ref} shows that every function in the boxed family satisfies the original equation.
 
 :::
 
@@ -247,7 +247,7 @@ Conversely, step <1>5 shows that every function in the boxed family satisfies th
 
 ::: pf-qed
 
-Step <1>6 gives all entire solutions and proves exhaustiveness.
+Step [](#s1-6){.pf-ref} gives all entire solutions and proves exhaustiveness.
 
 :::
 

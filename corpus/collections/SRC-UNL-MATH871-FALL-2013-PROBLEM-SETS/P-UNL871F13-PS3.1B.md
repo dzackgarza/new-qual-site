@@ -52,7 +52,7 @@ This is the standard basis for the product topology.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 For such a basis element,
 \[
@@ -118,7 +118,7 @@ U_\beta
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 Therefore the projection of every product-basic open set is open in
 \[
@@ -128,7 +128,7 @@ X_\beta.
 
 ::: pf-proof
 
-By step <1>2,
+By step [](#s1-2){.pf-ref},
 \[
 \pi_\beta(B)
 =
@@ -140,7 +140,7 @@ and $U_\beta$ is open by construction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Let
 \[
@@ -175,14 +175,14 @@ Each set
 \[
 \pi_\beta(B_j)
 \]
-is open by step <1>3.
+is open by step [](#s1-3){.pf-ref}.
 Hence their union is open.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Consequently
 \[
@@ -198,7 +198,7 @@ X_\beta
 
 ::: pf-proof
 
-Step <1>4 verifies the definition of an open map.
+Step [](#s1-4){.pf-ref} verifies the definition of an open map.
 
 :::
 
@@ -206,7 +206,7 @@ Step <1>4 verifies the definition of an open map.
 
 ::: pf-qed
 
-Step <1>5 is the required conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 

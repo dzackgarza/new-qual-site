@@ -26,7 +26,7 @@ Write
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 Present the Klein bottle as a square with edge word
 \[
@@ -120,7 +120,7 @@ simplices in that degree.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The boundary
 \[
@@ -151,7 +151,7 @@ the same conclusion holds.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Over
 \[
@@ -272,7 +272,7 @@ The cochain differential is dual to the chain differential:
 =
 \partial_1^*.
 \]
-Step <1>3 gives
+Step [](#s1-3){.pf-ref} gives
 \[
 \partial_1=0.
 \]
@@ -281,7 +281,7 @@ Step <1>3 gives
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
 In the dual bases,
 \[
@@ -320,7 +320,7 @@ one has
 =
 \phi(\partial_2\sigma_j).
 \]
-By step <1>4,
+By step [](#s1-4){.pf-ref},
 \[
 \partial_2\sigma_j
 =
@@ -341,7 +341,7 @@ j=1,2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 The zeroth cohomology group is
 \[
@@ -373,7 +373,7 @@ C^0
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-10}
 
 The first cohomology group is
 \[
@@ -387,7 +387,7 @@ H^1(X;\mathbb F_2)
 
 ::: pf-proof
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \ker\delta^1
 =
@@ -418,7 +418,7 @@ H^1
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 The second cohomology group is
 \[
@@ -444,7 +444,7 @@ C^2/
 \operatorname{im}\delta^1.
 \]
 
-By step <1>8,
+By step [](#s1-8){.pf-ref},
 \[
 \operatorname{im}\delta^1
 =
@@ -472,7 +472,7 @@ H^2
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-12}
 
 All higher cohomology groups vanish.
 
@@ -497,7 +497,7 @@ n>2.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-13}
 
 The complete answer is
 \[
@@ -518,7 +518,7 @@ H^n(X;\mathbb Z/2)
 
 ::: pf-proof
 
-Collect steps <1>9--<1>12.
+Collect steps [](#s1-9){.pf-ref} through [](#s1-12){.pf-ref}.
 
 :::
 
@@ -526,11 +526,11 @@ Collect steps <1>9--<1>12.
 
 ::: pf-qed
 
-Step <1>1 gives the
+Step [](#s1-1){.pf-ref} gives the
 \[
 \Delta\text{-complex}
 \]
-structure, and step <1>13 gives its simplicial cohomology with
+structure, and step [](#s1-13){.pf-ref} gives its simplicial cohomology with
 \[
 \mathbb Z/2
 \]

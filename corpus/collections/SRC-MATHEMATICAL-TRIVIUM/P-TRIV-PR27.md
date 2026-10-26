@@ -34,7 +34,7 @@ where $s$ is the sample standard deviation.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The sample mean is
 \[
@@ -53,7 +53,7 @@ The eight observations sum to $231.4$, so
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The sample standard deviation is
 \[
@@ -64,7 +64,7 @@ s=\sqrt{\frac1{7}\sum_{i=1}^8(x_i-\bar x)^2}
 
 ::: pf-proof
 
-Using the mean from step <1>1, the sum of squared deviations is approximately $98.2549$. Dividing by $8-1=7$ and taking the square root gives $s\approx3.7465$.
+Using the mean from step [](#s1-1){.pf-ref}, the sum of squared deviations is approximately $98.2549$. Dividing by $8-1=7$ and taking the square root gives $s\approx3.7465$.
 
 :::
 
@@ -82,7 +82,7 @@ G_{\mathrm{obs}}
 
 ::: pf-proof
 
-The suspected value is the sample maximum, so its absolute deviation from the mean is $6.975$. Divide by the sample standard deviation from step <1>2.
+The suspected value is the sample maximum, so its absolute deviation from the mean is $6.975$. Divide by the sample standard deviation from step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -110,7 +110,7 @@ where $t$ is the upper $\alpha/(2n)$ quantile of Student's $t$ distribution with
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 Since
 \[
@@ -127,7 +127,7 @@ Grubbs' test rejects the suspected observation exactly when the observed statist
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Therefore
 \[
@@ -137,7 +137,7 @@ Therefore
 
 ::: pf-proof
 
-Step <1>5 shows that the data do not provide sufficient evidence, at the specified significance level, to classify $35.9$ as a single normal-sample outlier.
+Step [](#s1-5){.pf-ref} shows that the data do not provide sufficient evidence, at the specified significance level, to classify $35.9$ as a single normal-sample outlier.
 
 :::
 
@@ -145,7 +145,7 @@ Step <1>5 shows that the data do not provide sufficient evidence, at the specifi
 
 ::: pf-qed
 
-Step <1>6 answers the requested decision.
+Step [](#s1-6){.pf-ref} answers the requested decision.
 
 :::
 

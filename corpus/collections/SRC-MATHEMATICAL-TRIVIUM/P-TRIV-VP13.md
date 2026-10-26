@@ -40,7 +40,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivatives are
 $$
@@ -60,7 +60,7 @@ Differentiate the Gaussian once and then differentiate the result again.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 Acting with the Hamiltonian gives
 $$
@@ -81,13 +81,13 @@ $$
 
 ::: pf-proof
 
-Substitute step <1>1 into the definition of $\hat H$ and collect the constant and $x^2$ coefficients.
+Substitute step [](#s1-1){.pf-ref} into the definition of $\hat H$ and collect the constant and $x^2$ coefficients.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The Gaussian is an exact eigenfunction precisely when
 $$
@@ -97,13 +97,13 @@ $$
 
 ::: pf-proof
 
-For $\hat H\psi_\sigma=E\psi_\sigma$ with constant $E$, the bracket in step <1>2 must be independent of $x$.
+For $\hat H\psi_\sigma=E\psi_\sigma$ with constant $E$, the bracket in step [](#s1-2){.pf-ref} must be independent of $x$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-4}
 
 Therefore the distinguished width is
 $$
@@ -113,13 +113,13 @@ $$
 
 ::: pf-proof
 
-Step <1>3 gives $m^2\omega^2\sigma^4=\hbar^2$. Since $\sigma>0$, take the positive square root.
+Step [](#s1-3){.pf-ref} gives $m^2\omega^2\sigma^4=\hbar^2$. Since $\sigma>0$, take the positive square root.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-5}
 
 The same width is the unique minimum of the Gaussian Rayleigh quotient
 $$
@@ -160,7 +160,7 @@ $$
 +
 \frac{m\omega^2\sigma}{2},
 $$
-whose unique positive zero is step <1>4. Moreover
+whose unique positive zero is step [](#s1-4){.pf-ref}. Moreover
 $$
 \mathcal E''(\sigma)
 =
@@ -174,7 +174,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-6}
 
 Hence the Gaussian extremum occurs at
 $$
@@ -191,28 +191,28 @@ $$
 
 ::: pf-proof
 
-Substitute the minimizing width from step <1>4 into the source ansatz.
+Substitute the minimizing width from step [](#s1-4){.pf-ref} into the source ansatz.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-7}
 
 Part (a) follows.
 
 
 ::: pf-proof
 
-Steps <1>4--<1>6 identify the extremizing member of the Gaussian family.
+Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} identify the extremizing member of the Gaussian family.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-8}
 
-At this width, step <1>2 reduces to
+At this width, step [](#s1-2){.pf-ref} reduces to
 $$
 \hat H\psi_*
 =
@@ -222,13 +222,13 @@ $$
 
 ::: pf-proof
 
-The $x^2$ coefficient vanishes by step <1>3.
+The $x^2$ coefficient vanishes by step [](#s1-3){.pf-ref}.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-9}
 
 Hence the corresponding eigenvalue is
 $$
@@ -238,7 +238,7 @@ $$
 
 ::: pf-proof
 
-Use $\sigma_*^2=\hbar/(m\omega)$ in step <1>8.
+Use $\sigma_*^2=\hbar/(m\omega)$ in step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -251,7 +251,7 @@ At $E=E_0$, the functional is stationary at $\psi_*$ even under full independent
 
 ::: pf-proof
 
-At the pair from steps <1>6 and <1>9,
+At the pair from steps [](#s1-6){.pf-ref} and [](#s1-9){.pf-ref},
 $$
 (E_0-\hat H)\psi_*=0.
 $$
@@ -261,14 +261,14 @@ Since $\hat H$ is Hermitian, the conjugate equation also holds. Therefore the fi
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-11}
 
 Part (b) follows.
 
 
 ::: pf-proof
 
-Step <1>9 gives the requested eigenvalue.
+Step [](#s1-9){.pf-ref} gives the requested eigenvalue.
 
 :::
 
@@ -276,7 +276,7 @@ Step <1>9 gives the requested eigenvalue.
 
 ::: pf-qed
 
-Steps <1>7 and <1>11 establish parts (a) and (b), respectively.
+Steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref} establish parts (a) and (b), respectively.
 
 :::
 

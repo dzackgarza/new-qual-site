@@ -33,7 +33,7 @@ for each integer $n \ge 1$. Given that this sequence converges, what is its limi
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 For every $n\geq1$,
 $$
@@ -55,7 +55,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 $\lim_{n\to\infty}x_n=0$.
 
@@ -66,7 +66,7 @@ Because $1/e>0$,
 $$
 \lim_{n\to\infty}\frac1{n^{1/e}}=0.
 $$
-Together with step <1>1, this gives
+Together with step [](#s1-1){.pf-ref}, this gives
 $$
 -\frac1{n^{1/e}}\leq x_n\leq\frac1{n^{1/e}},
 $$
@@ -76,7 +76,7 @@ so the squeeze theorem yields $x_n\to0$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-3}
 
 The limit is
 $$
@@ -87,7 +87,7 @@ so the answer is (A).
 
 ::: pf-proof
 
-This is exactly the limit established in step <1>2.
+This is exactly the limit established in step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -95,7 +95,7 @@ This is exactly the limit established in step <1>2.
 
 ::: pf-qed
 
-Step <1>3 gives the requested limit and corresponding choice.
+Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
 
 :::
 
