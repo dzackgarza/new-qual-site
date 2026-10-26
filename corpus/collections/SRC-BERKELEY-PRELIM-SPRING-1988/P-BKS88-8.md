@@ -32,14 +32,17 @@ s:=\sqrt{a^2-1}
 \rho:=a-s.
 \]
 
-<1>1. One has $0<\rho<1$ and
+::: pf
+
+::: {.pf-step #poisson-expansion}
+One has $0<\rho<1$ and
 \[
 \frac{1}{a-\cos\theta}
 =\frac1s\left(1+2\sum_{k=1}^{\infty}\rho^k\cos k\theta\right),
 \]
 with uniform convergence in $\theta$.
 
-::: {.proof}
+::: pf-proof
 Since $(a-s)(a+s)=1$, one has $\rho^{-1}=a+s$, and therefore
 \[
 \rho+\rho^{-1}=2a,
@@ -63,14 +66,17 @@ For $|\rho|<1$, the geometric series for $(1-\rho e^{i\theta})^{-1}$ and $(1-\rh
 Combining these identities proves the displayed expansion and its uniform convergence.
 :::
 
-<1>2. For every $n\geq 0$,
+:::
+
+::: pf-step
+For every $n\geq 0$,
 \[
 C_n(a)=\boxed{\frac{2\pi}{\sqrt{a^2-1}}
 \left(a-\sqrt{a^2-1}\right)^n}.
 \]
 
-::: {.proof}
-By step <1>1, termwise integration against $\cos n\theta$ is valid. If $n=0$, orthogonality gives
+::: pf-proof
+By [](#poisson-expansion){.pf-ref}, termwise integration against $\cos n\theta$ is valid. If $n=0$, orthogonality gives
 \[
 C_0(a)=\frac1s\int_{-\pi}^{\pi}1\,d\theta=\frac{2\pi}{s}.
 \]
@@ -89,18 +95,20 @@ C_n(a)=\frac{2\rho^n}{s}\pi=\frac{2\pi\rho^n}{s}.
 Substituting $s=\sqrt{a^2-1}$ and $\rho=a-s$ gives the claimed formula, which also agrees with the $n=0$ case.
 :::
 
-<1>3. For every $n\geq 0$,
+:::
+
+::: pf-step
+For every $n\geq 0$,
 \[
 S_n(a)=\boxed{0}.
 \]
 
-::: {.proof}
+::: pf-proof
 The function $\theta\mapsto a-\cos\theta$ is even, while $\theta\mapsto\sin n\theta$ is odd. Hence the integrand defining $S_n(a)$ is odd on $[-\pi,\pi]$, so its integral is $0$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 evaluate both requested integrals.
 :::
+
+:::
+
 :::
