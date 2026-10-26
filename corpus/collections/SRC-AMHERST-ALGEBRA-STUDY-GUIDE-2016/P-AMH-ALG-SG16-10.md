@@ -27,11 +27,16 @@ Prove that for any $x,y\in G_1$, $H_1x=H_1y$ if and only if $H_2\varphi(x)=H_2\v
 :::
 
 ::: {.solution}
-<1>1. If $H_1x=H_1y$, then
+
+::: pf
+
+::: {.pf-step #s1-1}
+If $H_1x=H_1y$, then
 $$
 H_2\varphi(x)=H_2\varphi(y).
 $$
-::: {.proof}
+
+::: pf-proof
 By the right-coset criterion,
 $$
 H_1x=H_1y
@@ -57,12 +62,16 @@ H_2\varphi(x)=H_2\varphi(y).
 $$
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s1-2}
+If
 $$
 H_2\varphi(x)=H_2\varphi(y),
 $$
 then $H_1x=H_1y$.
-::: {.proof}
+
+::: pf-proof
 By the right-coset criterion,
 $$
 \varphi(x)\varphi(y)^{-1}\in H_2.
@@ -82,16 +91,20 @@ H_1x=H_1y.
 $$
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{H_1x=H_1y\iff H_2\varphi(x)=H_2\varphi(y)}.
 $$
-::: {.proof}
-Step <1>1 proves the forward implication and step <1>2 proves the reverse implication.
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} proves the forward implication and step [](#s1-2){.pf-ref} proves the reverse implication.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the required equivalence.
 :::
+
+:::
+
 :::
