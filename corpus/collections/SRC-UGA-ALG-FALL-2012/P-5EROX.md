@@ -22,6 +22,8 @@ Prove that $\det A = 0$.
 Moreover, when the characteristic of $k$ is 2, find a counterexample to this statement.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -69,6 +71,8 @@ In characteristic two, subtraction equals addition, so $AB-BA=A$. Nevertheless $
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the characteristic-zero assertion, and step [](#s1-2){.pf-ref} supplies the required characteristic-two counterexample.
+
+:::
 
 :::
 
