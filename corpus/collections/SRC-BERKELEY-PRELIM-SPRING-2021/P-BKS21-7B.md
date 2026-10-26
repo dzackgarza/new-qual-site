@@ -27,6 +27,8 @@ a_{ij}=\begin{cases}
 $$
 :::
 
+::: {.solution}
+
 Let $A=(a_{ij})$, and let $T$ be the real symmetric tridiagonal matrix with $1$ on both the superdiagonal and subdiagonal and $0$ elsewhere.
 
 ::: pf
@@ -174,6 +176,8 @@ By step [](#s1-1){.pf-ref}, $A$ and $iT$ are similar and therefore have the same
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the complete list of eigenvalues.
+
+:::
 
 :::
 
