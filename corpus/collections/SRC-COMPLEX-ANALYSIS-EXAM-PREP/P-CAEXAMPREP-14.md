@@ -18,6 +18,8 @@ On the unit disk $|z|<1$, the electric potential is maintained at $\phi=0$ on th
 Find $\phi$ inside the disk.
 :::
 
+::: {.solution}
+
 Define
 \[
 W(z)=i\frac{1+z}{1-z}.
@@ -117,6 +119,8 @@ Step [](#s1-2){.pf-ref} proves harmonicity in the disk, and step [](#s1-3){.pf-r
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required potential.
+
+:::
 
 :::
 
