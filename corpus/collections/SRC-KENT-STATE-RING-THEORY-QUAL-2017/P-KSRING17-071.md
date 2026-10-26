@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring with 1. Show that if u is a unit in R and n is nilpotent, then $u + n$ is a unit.
 :::
 
-::: {.solution}
 Let
 $$
 u\in R^\times
@@ -30,7 +29,11 @@ n\in R
 $$
 be nilpotent.
 
-<1>1. The element
+::: pf
+
+::: pf-step
+
+The element
 $$
 m
 \coloneqq
@@ -38,7 +41,9 @@ u^{-1}n
 $$
 is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 N\ge1
@@ -58,15 +63,22 @@ u^{-N}n^N
 0.
 $$
 Thus $m$ is nilpotent.
+
 :::
 
-<1>2. The element
+:::
+
+::: pf-step
+
+The element
 $$
 1+m
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 With
 $$
 m^N=0
@@ -96,16 +108,23 @@ $$
 1+m
 $$
 is invertible.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 u+n
 =
 u(1+m).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition
 $$
 m=u^{-1}n,
@@ -118,14 +137,21 @@ u+uu^{-1}n
 =
 u+n.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{u+n\text{ is a unit}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The element $u$ is a unit by hypothesis, and $1+m$ is a unit by step <1>2.
 The product of two units is a unit.
 By step <1>3,
@@ -133,11 +159,15 @@ $$
 u+n=u(1+m),
 $$
 so $u+n$ is invertible.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

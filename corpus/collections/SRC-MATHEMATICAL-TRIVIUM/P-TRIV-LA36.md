@@ -31,10 +31,13 @@ $(e^{A/N}e^{B/N})^N$ used here is defined for positive integer $N$. The limit
 is therefore taken along $N\in\mathbb N$.
 :::
 
-::: {.solution}
 Fix any submultiplicative matrix norm $\|\cdot\|$.
 
-<1>1. As $N\to\infty$,
+::: pf
+
+::: pf-step
+
+As $N\to\infty$,
 $$
 e^{A/N}
 =
@@ -47,7 +50,9 @@ e^{B/N}
 I+\frac BN+O(N^{-2}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From the exponential series,
 $$
 e^{A/N}
@@ -69,9 +74,14 @@ $$
 \frac{\|A\|^k}{k!},
 $$
 which is $O(N^{-2})$. The argument for $B$ is identical.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 e^{A/N}e^{B/N}
 =
@@ -82,7 +92,9 @@ I
 O(N^{-2}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the two expansions from step <1>1:
 $$
 \left(I+\frac AN+O(N^{-2})\right)
@@ -90,9 +102,14 @@ $$
 $$
 The linear terms give $(A+B)/N$, and every remaining nonconstant term is
 $O(N^{-2})$.
+
 :::
 
-<1>3. Put
+:::
+
+::: pf-step
+
+Put
 $$
 X_N
 =
@@ -111,11 +128,18 @@ $$
 \|X_N\|\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>2 rewritten.
+
 :::
 
-<1>4. For all sufficiently large $N$, the convergent logarithm series gives
+:::
+
+::: pf-step
+
+For all sufficiently large $N$, the convergent logarithm series gives
 $$
 \log(I+X_N)
 =
@@ -124,7 +148,9 @@ X_N
 O(\|X_N\|^2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $\|X_N\|<1$, define
 $$
 \log(I+X_N)
@@ -134,16 +160,23 @@ $$
 $$
 The terms from $k\geq2$ have norm bounded by a constant multiple of
 $\|X_N\|^2$ for $N$ large enough.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 N\log\left(e^{A/N}e^{B/N}\right)
 =
 A+B+O(N^{-1}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4,
 $$
 \begin{aligned}
@@ -155,9 +188,14 @@ X_N+O(\|X_N\|^2)\\
 \end{aligned}
 $$
 Multiply by $N$.
+
 :::
 
-<1>6. For sufficiently large $N$,
+:::
+
+::: pf-step
+
+For sufficiently large $N$,
 $$
 \left(e^{A/N}e^{B/N}\right)^N
 =
@@ -166,7 +204,9 @@ N\log\left(e^{A/N}e^{B/N}\right)
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 Y_N=e^{A/N}e^{B/N}=I+X_N.
@@ -184,9 +224,14 @@ Y_N^N
 =
 e^{N\log Y_N}.
 $$
+
 :::
 
-<1>7. Taking $N\to\infty$ gives
+:::
+
+::: pf-step
+
+Taking $N\to\infty$ gives
 $$
 \boxed{
 \lim_{N\to\infty}
@@ -196,7 +241,9 @@ e^{A+B}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 N\log\left(e^{A/N}e^{B/N}\right)
@@ -209,11 +256,15 @@ $$
 \longrightarrow
 e^{A+B}.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the Lie--Trotter product formula.
+
 :::
+
 :::

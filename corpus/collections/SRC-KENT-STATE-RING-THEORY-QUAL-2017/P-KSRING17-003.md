@@ -20,10 +20,15 @@ audit:
 Explain your answer.
 :::
 
-::: {.solution}
-<1>1. Ideals of $\ZZ/90\ZZ$ are in bijection with positive divisors of $90$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Ideals of $\ZZ/90\ZZ$ are in bijection with positive divisors of $90$.
+
+
+::: pf-proof
+
 Let
 $$
 \pi:\ZZ\to\ZZ/90\ZZ
@@ -55,15 +60,22 @@ $$
 \ZZ/90\ZZ.
 $$
 Thus the ideals of $\ZZ/90\ZZ$ are parametrized by the positive divisors of $90$.
+
 :::
 
-<1>2. The integer $90$ has exactly
+:::
+
+::: pf-step
+
+The integer $90$ has exactly
 $$
 12
 $$
 positive divisors.
 
-::: {.proof}
+
+::: pf-proof
+
 The prime factorization is
 $$
 90
@@ -89,9 +101,14 @@ $$
 12
 $$
 choices.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \ZZ/90\ZZ
@@ -99,13 +116,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 answers the problem.
+
 :::
+
 :::

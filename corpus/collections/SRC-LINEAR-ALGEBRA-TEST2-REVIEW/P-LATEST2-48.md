@@ -28,20 +28,25 @@ Which statement is true?
 (A) $ST=0$  (B) $ST=T$  (C) $ST=TS$  (D) $ST-TS$ is the identity map of $V$  (E) $ST+TS$ is the identity map of $V$
 :::
 
-::: {.solution}
 Let
 $$
 p\in V.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 (ST)(p)(x)
 =
 p(x)+xp'(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 T(p)(x)=xp(x).
@@ -59,16 +64,23 @@ p(x)+xp'(x),
 \end{aligned}
 $$
 by the product rule.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (TS)(p)(x)
 =
 xp'(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 First,
 $$
 S(p)(x)=p'(x).
@@ -79,16 +91,23 @@ $$
 =
 x p'(x).
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 ((ST-TS)(p))(x)
 =
 p(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract step <1>2 from step <1>1:
 $$
 \begin{aligned}
@@ -99,21 +118,32 @@ $$
 p(x).
 \end{aligned}
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{ST-TS=\operatorname{id}_V}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 holds for every polynomial $p\in V$.
 Thus the operator $ST-TS$ acts as the identity on every vector in $V$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The correct answer is $\boxed{\text{(D)}}$.
+
 :::
+
 :::

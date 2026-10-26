@@ -21,15 +21,20 @@ Show that there is a prime ideal P such that $P \cap S$ is empty.
 (Hint: Use Zorn’s Lemma.)
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 0\notin S
 \qquad\text{and}\qquad
 1\in S.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $R$ has identity and is nonzero, there exists a nonzero element of $R$, namely $1$. Hence
 $$
 0\cdot1=0,
@@ -51,11 +56,18 @@ Thus
 $$
 1\in S.
 $$
+
 :::
 
-<1>2. The set $S$ is multiplicatively closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $S$ is multiplicatively closed.
+
+
+::: pf-proof
+
 Let
 $$
 a,b\in S.
@@ -90,9 +102,14 @@ Therefore
 $$
 ab\in S.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \mathcal P
 \coloneqq
@@ -104,7 +121,9 @@ $$
 ordered by inclusion.
 Then $\mathcal P$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 (0)\cap S=\varnothing.
@@ -113,11 +132,18 @@ Hence
 $$
 (0)\in\mathcal P.
 $$
+
 :::
 
-<1>4. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal C\subseteq\mathcal P
@@ -166,24 +192,38 @@ $$
 U\in\mathcal P,
 $$
 and it is an upper bound for $\mathcal C$.
+
 :::
 
-<1>5. There exists an ideal
+:::
+
+::: pf-step
+
+There exists an ideal
 $$
 P\in\mathcal P
 $$
 maximal with respect to inclusion.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $\mathcal P$ is nonempty, and by step <1>4 every chain has an upper bound in $\mathcal P$. Zorn's lemma therefore yields a maximal element
 $$
 P\in\mathcal P.
 $$
+
 :::
 
-<1>6. The ideal $P$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $P$ is proper.
+
+
+::: pf-proof
+
 Since
 $$
 1\in S
@@ -200,9 +240,14 @@ Thus
 $$
 P\ne R.
 $$
+
 :::
 
-<1>7. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 ab\in P
 $$
@@ -222,7 +267,9 @@ P+(b)
 $$
 each meet $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 a\notin P,
@@ -239,9 +286,14 @@ The same argument with $b$ gives
 $$
 (P+(b))\cap S\ne\varnothing.
 $$
+
 :::
 
-<1>8. Under the assumptions of step <1>7, choose
+:::
+
+::: pf-step
+
+Under the assumptions of step <1>7, choose
 $$
 s=p+ra\in S
 $$
@@ -260,7 +312,9 @@ $$
 st\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand:
 $$
 \begin{aligned}
@@ -283,11 +337,18 @@ Thus
 $$
 st\in P.
 $$
+
 :::
 
-<1>9. The assumptions of step <1>7 are impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumptions of step <1>7 are impossible.
+
+
+::: pf-proof
+
 By step <1>8,
 $$
 st\in P.
@@ -308,16 +369,23 @@ contradicting
 $$
 P\cap S=\varnothing.
 $$
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 P\text{ is prime and }P\cap S=\varnothing.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 shows that $P$ is proper. Step <1>9 shows that whenever
 $$
 ab\in P,
@@ -332,11 +400,15 @@ Thus $P$ is prime. By construction,
 $$
 P\cap S=\varnothing.
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 gives the required prime ideal.
+
 :::
+
 :::

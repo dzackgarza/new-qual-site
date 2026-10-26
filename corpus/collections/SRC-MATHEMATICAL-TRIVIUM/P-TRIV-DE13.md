@@ -19,19 +19,29 @@ audit:
 Solve $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = e ^ { 3 t } \mathrm { w i t h } y ( 0 ) = 1 , y ^ { \prime } ( 0 ) = 0$
 :::
 
-::: {.solution}
-<1>1. The associated homogeneous equation has characteristic polynomial
+::: pf
+
+::: pf-step
+
+The associated homogeneous equation has characteristic polynomial
 $$
 \lambda^2-3\lambda+2
 =
 (\lambda-1)(\lambda-2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $y=e^{\lambda t}$ into the homogeneous equation.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 y_h
 =
@@ -40,27 +50,43 @@ C_1e^t
 C_2e^{2t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The distinct characteristic roots are $1$ and $2$.
+
 :::
 
-<1>3. Seek a particular solution of the form
+:::
+
+::: pf-step
+
+Seek a particular solution of the form
 $$
 y_p=Ae^{3t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The forcing is $e^{3t}$, and $3$ is not a root of the characteristic polynomial, so no resonance factor is needed.
+
 :::
 
-<1>4. Substitution gives
+:::
+
+::: pf-step
+
+Substitution gives
 $$
 2A e^{3t}
 =
 e^{3t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $y_p=Ae^{3t}$,
 $$
 y_p'=3Ae^{3t},
@@ -73,9 +99,14 @@ y_p''-3y_p'+2y_p
 =
 (9-9+2)Ae^{3t}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 A=\frac12,
 $$
@@ -90,20 +121,34 @@ C_2e^{2t}
 \frac12e^{3t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve step <1>4 for $A$ and add the particular solution to the homogeneous solution from step <1>2.
+
 :::
 
-<1>6. The condition $y(0)=1$ gives
+:::
+
+::: pf-step
+
+The condition $y(0)=1$ gives
 $$
 C_1+C_2=\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $t=0$ into step <1>5.
+
 :::
 
-<1>7. The derivative is
+:::
+
+::: pf-step
+
+The derivative is
 $$
 y'(t)
 =
@@ -114,31 +159,52 @@ C_1e^t
 \frac32e^{3t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate step <1>5.
+
 :::
 
-<1>8. The condition $y'(0)=0$ gives
+:::
+
+::: pf-step
+
+The condition $y'(0)=0$ gives
 $$
 C_1+2C_2=-\frac32.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $t=0$ into step <1>7.
+
 :::
 
-<1>9. Solving steps <1>6 and <1>8 gives
+:::
+
+::: pf-step
+
+Solving steps <1>6 and <1>8 gives
 $$
 C_1=\frac52,
 \qquad
 C_2=-2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract step <1>6 from step <1>8 to get $C_2=-2$, then substitute back to get $C_1=5/2$.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 y(t)
@@ -151,13 +217,19 @@ y(t)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the constants from step <1>9 into step <1>5.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 satisfies both the differential equation and the two initial conditions.
+
 :::
+
 :::

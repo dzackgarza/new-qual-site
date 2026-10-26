@@ -25,7 +25,6 @@ $$
 with $x \in [ 1 , e ]$ such that $y ( 1 ) = y ( e ) = 0$
 :::
 
-::: {.solution}
 Set
 \[
 t=\log x,
@@ -34,14 +33,20 @@ Y(t)=y(e^t),
 \]
 so that $x\in[1,e]$ corresponds to $t\in[0,1]$.
 
-<1>1. The differential equation becomes
+::: pf
+
+::: pf-step
+
+The differential equation becomes
 \[
 Y''+2Y'+\lambda Y=0,
 \qquad
 Y(0)=Y(1)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 y'(x)=\frac1xY'(t),
@@ -53,9 +58,14 @@ one has
 x^2y''+3xy'=Y''-Y'+3Y'=Y''+2Y'.
 \]
 The boundary values follow from $t=\log x$.
+
 :::
 
-<1>2. Writing
+:::
+
+::: pf-step
+
+Writing
 \[
 Y(t)=e^{-t}Z(t)
 \]
@@ -66,7 +76,9 @@ Z''+(\lambda-1)Z=0,
 Z(0)=Z(1)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiation gives
 \[
 Y'=e^{-t}(Z'-Z),
@@ -78,9 +90,14 @@ Substitution into step <1>1 yields
 e^{-t}\bigl(Z''+(\lambda-1)Z\bigr)=0.
 \]
 Because $e^{-t}$ is nonzero, the boundary conditions for $Y$ are equivalent to those for $Z$.
+
 :::
 
-<1>3. A nonzero solution exists exactly for
+:::
+
+::: pf-step
+
+A nonzero solution exists exactly for
 \[
 \boxed{\lambda_n=1+n^2\pi^2},
 \qquad n=1,2,3,\ldots,
@@ -90,15 +107,22 @@ and then
 Z_n(t)=C\sin(n\pi t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $\lambda-1\leq0$, the elementary linear or hyperbolic solutions satisfying $Z(0)=0$ cannot also vanish at $t=1$ unless they are zero. If $\lambda-1=\mu^2>0$, then
 \[
 Z=A\cos(\mu t)+B\sin(\mu t).
 \]
 The condition $Z(0)=0$ gives $A=0$, while $Z(1)=0$ permits $B\ne0$ exactly when $\sin\mu=0$, i.e. $\mu=n\pi$ for $n\geq1$.
+
 :::
 
-<1>4. Returning to $x$, all nonzero solutions are
+:::
+
+::: pf-step
+
+Returning to $x$, all nonzero solutions are
 \[
 \boxed{
 y_n(x)=\frac{C}{x}\sin(n\pi\log x),
@@ -107,17 +131,23 @@ y_n(x)=\frac{C}{x}\sin(n\pi\log x),
 \qquad n=1,2,3,\ldots,\ C\ne0.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 \[
 Y_n(t)=Ce^{-t}\sin(n\pi t).
 \]
 Substitute $t=\log x$ and $e^{-t}=1/x$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 lists every eigenvalue and corresponding nonzero solution satisfying the two boundary conditions.
+
 :::
+
 :::

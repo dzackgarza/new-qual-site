@@ -19,7 +19,6 @@ audit:
 Let $A = E + \epsilon B _ { }$ , where E is the identity matrix and $\epsilon \ll 1$ . Expand det A to the first order in €.
 :::
 
-::: {.solution}
 Write the columns of $B$ as
 $$
 b_1,\ldots,b_n,
@@ -29,7 +28,11 @@ $$
 e_1,\ldots,e_n.
 $$
 
-<1>1. The columns of
+::: pf
+
+::: pf-step
+
+The columns of
 $$
 I+\epsilon B
 $$
@@ -40,11 +43,18 @@ e_j+\epsilon b_j,
 j=1,\ldots,n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the column-wise form of matrix addition and scalar multiplication.
+
 :::
 
-<1>2. By multilinearity of the determinant,
+:::
+
+::: pf-step
+
+By multilinearity of the determinant,
 $$
 \det(I+\epsilon B)
 =
@@ -58,7 +68,9 @@ $$
 where $D_j$ is the determinant obtained from $I$ by replacing its $j$th
 column by $b_j$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 \det(e_1+\epsilon b_1,\ldots,e_n+\epsilon b_n)
@@ -70,21 +82,33 @@ $$
 The terms linear in $\epsilon$ are exactly those in which one column $e_j$ is
 replaced by $b_j$. Every term involving at least two columns from $B$ carries
 at least two factors of $\epsilon$ and is therefore $O(\epsilon^2)$.
+
 :::
 
-<1>3. For each $j$,
+:::
+
+::: pf-step
+
+For each $j$,
 $$
 D_j=b_{jj}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand $D_j$ along the $j$th column. Every cofactor vanishes except the one in
 row $j$, because the remaining columns are standard basis vectors. The
 surviving cofactor equals $1$, so the determinant is the $j$th entry of
 $b_j$, namely $b_{jj}$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \sum_{j=1}^n D_j
 =
@@ -93,11 +117,18 @@ $$
 \operatorname{Tr}B.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 and the definition of trace.
+
 :::
 
-<1>5. Hence the first-order expansion is
+:::
+
+::: pf-step
+
+Hence the first-order expansion is
 $$
 \boxed{
 \det(I+\epsilon B)
@@ -110,13 +141,19 @@ O(\epsilon^2).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>4 into step <1>2.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required first-order expansion.
+
 :::
+
 :::

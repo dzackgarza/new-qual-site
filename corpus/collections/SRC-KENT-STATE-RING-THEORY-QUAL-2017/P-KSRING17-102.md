@@ -25,7 +25,6 @@ Suppose $\varphi : D[x] \to D[x]$ is an isomorphism such that $\varphi(d) = d$ f
 Show that $\varphi(x) = ax + b$ for some $a, b \in D$ and that $a$ is a unit of $D$.
 :::
 
-::: {.solution}
 Set
 $$
 f(x)
@@ -45,9 +44,15 @@ g(x)
 \psi(x).
 $$
 
-<1>1. Both $f$ and $g$ are nonconstant polynomials.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Both $f$ and $g$ are nonconstant polynomials.
+
+
+::: pf-proof
+
 Suppose
 $$
 f\in D
@@ -72,9 +77,14 @@ This contradicts surjectivity of $\varphi$.
 
 Hence $f$ is nonconstant.
 The same argument applied to the inverse automorphism $\psi$ shows that $g$ is nonconstant.
+
 :::
 
-<1>2. For every polynomial
+:::
+
+::: pf-step
+
+For every polynomial
 $$
 h(x)\in D[x],
 $$
@@ -85,7 +95,9 @@ $$
 h(f(x)).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 h(x)
@@ -110,9 +122,14 @@ d_i f(x)^i\\
 h(f(x)).
 \end{aligned}
 $$
+
 :::
 
-<1>3. Likewise, for every
+:::
+
+::: pf-step
+
+Likewise, for every
 $$
 h(x)\in D[x],
 $$
@@ -123,12 +140,19 @@ $$
 h(g(x)).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse automorphism $\psi$ also fixes $D$ pointwise.
 Apply the argument of step <1>2 with $\psi$ in place of $\varphi$.
+
 :::
 
-<1>4. The inverse relation
+:::
+
+::: pf-step
+
+The inverse relation
 $$
 \psi\circ\varphi
 =
@@ -141,7 +165,9 @@ f(g(x))
 x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply
 $$
 \psi\circ\varphi
@@ -159,9 +185,14 @@ f(g(x)),
 \end{aligned}
 $$
 where the last equality uses step <1>3.
+
 :::
 
-<1>5. For nonconstant polynomials
+:::
+
+::: pf-step
+
+For nonconstant polynomials
 $$
 u,v\in D[x],
 $$
@@ -172,7 +203,9 @@ $$
 \deg(u)\deg(v).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 u(x)
@@ -210,9 +243,14 @@ Thus
 $$
 \deg(u\circ v)=mn.
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \deg f
 =
@@ -221,7 +259,9 @@ $$
 1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, both degrees are positive.
 By steps <1>4--<1>5,
 $$
@@ -243,9 +283,14 @@ Hence
 $$
 \deg f=\deg g=1.
 $$
+
 :::
 
-<1>7. There exist
+:::
+
+::: pf-step
+
+There exist
 $$
 a,b,c,d\in D
 $$
@@ -262,15 +307,22 @@ $$
 g(x)=cx+d.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the meaning of
 $$
 \deg f=\deg g=1
 $$
 from step <1>6.
+
 :::
 
-<1>8. The identity
+:::
+
+::: pf-step
+
+The identity
 $$
 f(g(x))
 =
@@ -281,7 +333,9 @@ $$
 ac=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the expressions from step <1>7:
 $$
 \begin{aligned}
@@ -301,11 +355,18 @@ Thus the coefficient of $x$ satisfies
 $$
 ac=1.
 $$
+
 :::
 
-<1>9. Therefore $a$ is a unit of $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $a$ is a unit of $D$.
+
+
+::: pf-proof
+
 Step <1>8 exhibits
 $$
 c\in D
@@ -325,9 +386,14 @@ $$
 a\in D^\times.
 }
 $$
+
 :::
 
-<1>10. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 \varphi(x)
@@ -341,7 +407,9 @@ a,b\in D
 $$
 with $a$ a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 \varphi(x)=f(x).
@@ -354,11 +422,15 @@ and step <1>9 shows
 $$
 a\in D^\times.
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

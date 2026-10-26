@@ -25,13 +25,18 @@ $[A,B]=0$. The intended assertion is that a commutator cannot equal a
 nonzero scalar multiple $cI$ with $c\neq0$.
 :::
 
-::: {.solution}
-<1>1. For any two $n\times n$ matrices $A$ and $B$,
+::: pf
+
+::: pf-step
+
+For any two $n\times n$ matrices $A$ and $B$,
 $$
 \operatorname{Tr}(AB)=\operatorname{Tr}(BA).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Writing entries,
 $$
 \operatorname{Tr}(AB)
@@ -44,14 +49,21 @@ $$
 =
 \operatorname{Tr}(BA).
 $$
+
 :::
 
-<1>2. Every commutator has trace zero:
+:::
+
+::: pf-step
+
+Every commutator has trace zero:
 $$
 \operatorname{Tr}[A,B]=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 [A,B]=AB-BA.
@@ -63,9 +75,14 @@ $$
 \operatorname{Tr}(AB)-\operatorname{Tr}(BA)
 =0.
 $$
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 [A,B]=cI,
 $$
@@ -74,7 +91,9 @@ $$
 cn=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take traces and use step <1>2:
 $$
 0
@@ -85,9 +104,14 @@ $$
 =
 cn.
 $$
+
 :::
 
-<1>4. Over $\mathbb R$, if $n\geq1$, the equality
+:::
+
+::: pf-step
+
+Over $\mathbb R$, if $n\geq1$, the equality
 $$
 [A,B]=cI
 $$
@@ -96,24 +120,37 @@ $$
 c=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $n$ is a positive integer, it is nonzero in $\mathbb R$. Thus step
 <1>3 implies $c=0$.
+
 :::
 
-<1>5. Therefore no commutator of real matrices can be a nonzero scalar
+:::
+
+::: pf-step
+
+Therefore no commutator of real matrices can be a nonzero scalar
 multiple of the identity:
 $$
 \boxed{[A,B]\neq cI\quad\text{for every }c\neq0.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If such an equality held, step <1>4 would force $c=0$, a contradiction.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the corrected intended conclusion.
+
 :::
+
 :::

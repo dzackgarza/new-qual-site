@@ -19,13 +19,18 @@ audit:
 Let A be a real matrix with $( \operatorname* { d e t } A ) ^ { 2 } = 1$ . Give a conclusion about orthogonality of A.
 :::
 
-::: {.solution}
-<1>1. Every real orthogonal matrix satisfies
+::: pf
+
+::: pf-step
+
+Every real orthogonal matrix satisfies
 $$
 (\det A)^2=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $A$ is orthogonal, then
 $$
 A^TA=I.
@@ -42,11 +47,18 @@ one obtains
 $$
 (\det A)^2=1.
 $$
+
 :::
 
-<1>2. The converse is false in dimension at least $2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The converse is false in dimension at least $2$.
+
+
+::: pf-proof
+
 Consider
 $$
 A=
@@ -74,15 +86,22 @@ A^TA
 \neq I.
 $$
 Thus $A$ is not orthogonal.
+
 :::
 
-<1>3. Therefore the hypothesis implies only
+:::
+
+::: pf-step
+
+Therefore the hypothesis implies only
 $$
 \boxed{\det A=\pm1},
 $$
 not that $A$ is orthogonal.
 
-::: {.proof}
+
+::: pf-proof
+
 The equation
 $$
 (\det A)^2=1
@@ -95,22 +114,33 @@ $$
 $$
 Step <1>2 shows that this determinant condition alone does not imply
 orthogonality.
+
 :::
 
-<1>4. In dimension $1$, the condition does imply orthogonality.
+:::
 
-::: {.proof}
+::: pf-step
+
+In dimension $1$, the condition does imply orthogonality.
+
+
+::: pf-proof
+
 A real $1\times1$ matrix has the form $(a)$. The condition $a^2=1$ gives
 $a=\pm1$, and then
 $$
 A^TA=(a^2)=(1).
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 give the precise relation between the determinant condition
 and orthogonality.
+
 :::
+
 :::

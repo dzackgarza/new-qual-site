@@ -23,25 +23,37 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. From the first equation,
+::: pf
+
+::: pf-step
+
+From the first equation,
 $$
 y=-1-3z.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange
 $$
 y+3z=-1.
 $$
+
 :::
 
-<1>2. Substituting step <1>1 into the second equation gives
+:::
+
+::: pf-step
+
+Substituting step <1>1 into the second equation gives
 $$
 x=3+2z.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The second equation becomes
 $$
 2x+3(-1-3z)+5z=3.
@@ -58,14 +70,21 @@ and hence
 $$
 x=3+2z.
 $$
+
 :::
 
-<1>3. Substituting steps <1>1--<1>2 into the third equation gives
+:::
+
+::: pf-step
+
+Substituting steps <1>1--<1>2 into the third equation gives
 $$
 z=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The third equation becomes
 $$
 3(3+2z)+5(-1-3z)+7z=6.
@@ -82,9 +101,14 @@ Therefore
 $$
 z=-1.
 $$
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 y=2
 $$
@@ -93,7 +117,9 @@ $$
 x=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $z=-1$ into steps <1>1--<1>2:
 $$
 y=-1-3(-1)=2,
@@ -102,14 +128,21 @@ and
 $$
 x=3+2(-1)=1.
 $$
+
 :::
 
-<1>5. Thus the solution is
+:::
+
+::: pf-step
+
+Thus the solution is
 $$
 \boxed{(x,y,z)=(1,2,-1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives
 $$
 2+3(-1)=-1,
@@ -122,11 +155,15 @@ $$
 3(1)+5(2)+7(-1)=6.
 $$
 Hence the triple satisfies all three equations.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required solution.
+
 :::
+
 :::

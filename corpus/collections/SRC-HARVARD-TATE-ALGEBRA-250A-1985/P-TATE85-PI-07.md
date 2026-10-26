@@ -17,26 +17,38 @@ review: draft
 Examples:$A = \mathbb { Z } / 1 0 2 4 \mathbb { Z } , A = \mathbb { C } [ X ] / X ^ { n } \mathbb { C } [ X ]$
 :::
 
-::: {.solution}
 Let
 $$
 q:B\to A=B/M^n
 $$
 be the quotient map.
 
-<1>1. The ideal $M/M^n$ is prime in $A$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ideal $M/M^n$ is prime in $A$.
+
+
+::: pf-proof
+
 One has
 $$
 A/(M/M^n)\cong B/M.
 $$
 Since $M$ is maximal, $B/M$ is a field, hence an integral domain. Therefore $M/M^n$ is prime.
+
 :::
 
-<1>2. Every prime ideal of $A$ equals $M/M^n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every prime ideal of $A$ equals $M/M^n$.
+
+
+::: pf-proof
+
 Let $\mathfrak p\subseteq A$ be prime, and let
 $$
 P=q^{-1}(\mathfrak p).
@@ -55,11 +67,15 @@ The ideal $M$ is maximal and $P$ is proper, so $P=M$. Passing to the quotient gi
 $$
 \mathfrak p=P/M^n=M/M^n.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 show that $M/M^n$ is prime and that no other prime ideal exists.
+
 :::
+
 :::

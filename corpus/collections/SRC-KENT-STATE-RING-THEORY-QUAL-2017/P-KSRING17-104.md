@@ -19,8 +19,11 @@ audit:
 Let D be an integral domain and $D [ x ]$ the polynomial ring over D in the indeterminate x. Show that if every nonzero prime ideal of $D [ x ]$ is a maximal ideal, then D is a field.
 :::
 
-::: {.solution}
-<1>1. Define the evaluation homomorphism
+::: pf
+
+::: pf-step
+
+Define the evaluation homomorphism
 $$
 \operatorname{ev}_0:D[x]\to D
 $$
@@ -36,7 +39,9 @@ $$
 =(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map is a surjective ring homomorphism because every
 $$
 d\in D
@@ -67,9 +72,14 @@ Thus
 $$
 \ker\operatorname{ev}_0=(x).
 $$
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D[x]/(x)
@@ -78,11 +88,18 @@ D.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the first isomorphism theorem to the surjective map in step <1>1.
+
 :::
 
-<1>3. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 (x)
 $$
@@ -91,7 +108,9 @@ $$
 D[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 D[x]/(x)
@@ -109,15 +128,22 @@ $$
 (x)
 $$
 is prime.
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 (x)
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial
 $$
 x
@@ -135,15 +161,22 @@ Hence
 $$
 (x)\ne(0).
 $$
+
 :::
 
-<1>5. By hypothesis,
+:::
+
+::: pf-step
+
+By hypothesis,
 $$
 (x)
 $$
 is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>4 show that
 $$
 (x)
@@ -153,15 +186,22 @@ $$
 D[x].
 $$
 The hypothesis says every such ideal is maximal.
+
 :::
 
-<1>6. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 D[x]/(x)
 $$
 is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 (x)
@@ -172,9 +212,14 @@ $$
 D[x]/(x)
 $$
 is a field.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D
@@ -182,7 +227,9 @@ D
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 D
@@ -192,11 +239,15 @@ $$
 Step <1>6 shows the quotient is a field.
 Being a field is preserved under ring isomorphism.
 Hence $D$ is a field.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

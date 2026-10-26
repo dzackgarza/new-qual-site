@@ -15,16 +15,21 @@ review: draft
 (8) Let A be the ring of power series$c _ { 0 } + c _ { 1 } z + c _ { 2 } z ^ { 2 } + . .$. with complex coefficients$c _ { i }$which have a nonzero radius of convergence (ring of germs of analytic functions at the origin$z = 0$in the complex z-plane). Discuss the prime ideals in$A .$. Do the same for the ring of formal power series$\dot { \boldsymbol { A } } = \boldsymbol { K } [ [ \boldsymbol { z } ] ]$in one variable z over any field.
 :::
 
-::: {.solution}
 Treat first the ring $\mathcal O_0$ of convergent complex power-series germs at $0$, and then $K[[z]]$.
 
-<1>1. Every nonzero element of $\mathcal O_0$ has a unique factorization
+::: pf
+
+::: pf-step
+
+Every nonzero element of $\mathcal O_0$ has a unique factorization
 $$
 f=z^n u
 $$
 with $n\ge0$ and $u$ a unit of $\mathcal O_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 f(z)=\sum_{j\ge0}c_jz^j
@@ -38,15 +43,22 @@ $$
 Since $u(0)=c_n\ne0$, the holomorphic function $u$ is nonvanishing on some neighborhood of $0$. Hence $1/u$ is holomorphic there and defines a convergent power-series germ. Thus $u$ is a unit.
 
 The integer $n$ is uniquely determined as the order of vanishing of $f$ at $0$.
+
 :::
 
-<1>2. Every nonzero ideal of $\mathcal O_0$ is of the form
+:::
+
+::: pf-step
+
+Every nonzero ideal of $\mathcal O_0$ is of the form
 $$
 \boxed{(z^n)}
 $$
 for a unique $n\ge0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $I\ne(0)$, and choose an element $f\in I$ with minimal order of vanishing $n$. By step <1>1,
 $$
 f=z^n u
@@ -61,14 +73,21 @@ $$
 g=z^m v=z^n(z^{m-n}v)\in(z^n).
 $$
 Thus $I=(z^n)$.
+
 :::
 
-<1>3. The prime ideals of $\mathcal O_0$ are exactly
+:::
+
+::: pf-step
+
+The prime ideals of $\mathcal O_0$ are exactly
 $$
 \boxed{(0)\quad\text{and}\quad(z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring $\mathcal O_0$ is an integral domain, so $(0)$ is prime. Also
 $$
 \mathcal O_0/(z)\cong\CC,
@@ -84,15 +103,22 @@ $$
 z\cdot z^{n-1}\in(z^n),
 $$
 so $(z^n)$ is not prime. Step <1>2 lists all nonzero ideals, proving the claim.
+
 :::
 
-<1>4. Every nonzero element of $K[[z]]$ has a unique factorization
+:::
+
+::: pf-step
+
+Every nonzero element of $K[[z]]$ has a unique factorization
 $$
 f=z^n u
 $$
 with $u\in K[[z]]^\times$.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 f=\sum_{j\ge0}c_jz^j\ne0,
@@ -114,24 +140,38 @@ $$
 are determined recursively from $uv=1$, starting with $d_0=c_0^{-1}$. Hence $u$ is a unit.
 
 Again $n$ is uniquely the least exponent with nonzero coefficient.
+
 :::
 
-<1>5. Every nonzero ideal of $K[[z]]$ is
+:::
+
+::: pf-step
+
+Every nonzero ideal of $K[[z]]$ is
 $$
 \boxed{(z^n)}
 $$
 for a unique $n\ge0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The proof of step <1>2 applies verbatim using the factorization from step <1>4: choose an element of minimal $z$-adic order in the ideal, remove its unit factor, and compare the orders of all remaining elements.
+
 :::
 
-<1>6. The prime ideals of $K[[z]]$ are exactly
+:::
+
+::: pf-step
+
+The prime ideals of $K[[z]]$ are exactly
 $$
 \boxed{(0)\quad\text{and}\quad(z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring $K[[z]]$ is a domain, so $(0)$ is prime, and
 $$
 K[[z]]/(z)\cong K
@@ -143,11 +183,15 @@ z\cdot z^{n-1}\in(z^n),
 z,z^{n-1}\notin(z^n)
 $$
 shows that $(z^n)$ is not prime. Step <1>5 exhausts all nonzero ideals.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 determine the prime ideals of the convergent-germ ring, and steps <1>4--<1>6 determine those of $K[[z]]$.
+
 :::
+
 :::

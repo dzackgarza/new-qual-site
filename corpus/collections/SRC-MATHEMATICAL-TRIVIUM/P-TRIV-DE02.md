@@ -19,7 +19,6 @@ audit:
 Solve $\left\{ { \begin{array} { l } { x ^ { \prime } ( t ) = - x ( t ) + 6 y ( t ) } \\ { y ^ { \prime } ( t ) = 2 x ( t ) + 3 y ( t ) } \end{array} } \right.$
 :::
 
-::: {.solution}
 Write
 $$
 u(t)=
@@ -39,14 +38,20 @@ $$
 u'=Au.
 $$
 
-<1>1. The characteristic polynomial is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial is
 $$
 \det(A-\lambda I)
 =
 \lambda^2-2\lambda-15.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -61,25 +66,37 @@ $$
 \lambda^2-2\lambda-15.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The eigenvalues are
+:::
+
+::: pf-step
+
+The eigenvalues are
 $$
 \boxed{\lambda_1=5,
 \qquad
 \lambda_2=-3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor
 $$
 \lambda^2-2\lambda-15
 =
 (\lambda-5)(\lambda+3).
 $$
+
 :::
 
-<1>3. For $\lambda_1=5$, an eigenvector is
+:::
+
+::: pf-step
+
+For $\lambda_1=5$, an eigenvector is
 $$
 v_1=
 \begin{pmatrix}
@@ -88,7 +105,9 @@ v_1=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equation
 $$
 (A-5I)v=0
@@ -98,9 +117,14 @@ $$
 -6x+6y=0,
 $$
 so $y=x$.
+
 :::
 
-<1>4. For $\lambda_2=-3$, an eigenvector is
+:::
+
+::: pf-step
+
+For $\lambda_2=-3$, an eigenvector is
 $$
 v_2=
 \begin{pmatrix}
@@ -109,7 +133,9 @@ v_2=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equation
 $$
 (A+3I)v=0
@@ -119,9 +145,14 @@ $$
 2x+6y=0,
 $$
 so $x=-3y$.
+
 :::
 
-<1>5. Therefore two independent solutions are
+:::
+
+::: pf-step
+
+Therefore two independent solutions are
 $$
 u_1(t)=e^{5t}v_1
 $$
@@ -130,7 +161,9 @@ $$
 u_2(t)=e^{-3t}v_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $Av=\lambda v$, then
 $$
 \frac d{dt}(e^{\lambda t}v)
@@ -140,9 +173,14 @@ $$
 A(e^{\lambda t}v).
 $$
 The eigenvectors from steps <1>3--<1>4 are linearly independent.
+
 :::
 
-<1>6. Hence the general solution is
+:::
+
+::: pf-step
+
+Hence the general solution is
 $$
 \boxed{
 \begin{aligned}
@@ -161,17 +199,23 @@ C_2e^{-3t},
 $$
 where $C_1,C_2\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Take the arbitrary linear combination
 $$
 u=C_1u_1+C_2u_2
 $$
 and read off the two coordinates.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the complete two-parameter solution family.
+
 :::
+
 :::

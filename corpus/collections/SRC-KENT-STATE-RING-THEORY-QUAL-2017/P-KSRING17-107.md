@@ -20,7 +20,6 @@ Let D be a unique factorization domain and F its field of fractions.
 Prove that if $f ( x )$ is a monic polynomial in $D [ x ]$ and $\alpha \in F$ is a root of $f ,$ then $\alpha \in D$ .
 :::
 
-::: {.solution}
 Let
 $$
 f(x)
@@ -46,7 +45,11 @@ $$
 \alpha\in F.
 $$
 
-<1>1. Write
+::: pf
+
+::: pf-step
+
+Write
 $$
 \alpha=\frac ab
 $$
@@ -58,16 +61,23 @@ b\ne0,
 $$
 such that $a$ and $b$ have no common irreducible factor.
 
-::: {.proof}
+
+::: pf-proof
+
 Every element of the fraction field has a representation
 $$
 a/b.
 $$
 Because $D$ is a UFD, common irreducible factors of numerator and denominator can be cancelled.
 Thus one may choose a lowest-terms representation.
+
 :::
 
-<1>2. Substituting
+:::
+
+::: pf-step
+
+Substituting
 $$
 \alpha=a/b
 $$
@@ -94,16 +104,25 @@ c_0b^n
 0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is obtained by clearing denominators in the monic polynomial relation.
+
 :::
 
-<1>3. The relation in step <1>2 implies
+:::
+
+::: pf-step
+
+The relation in step <1>2 implies
 $$
 b\mid a^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange:
 $$
 a^n
@@ -124,32 +143,53 @@ Hence
 $$
 b\mid a^n.
 $$
+
 :::
 
-<1>4. Suppose $b$ is not a unit.
+:::
+
+::: pf-step
+
+Suppose $b$ is not a unit.
 Then some irreducible element
 $$
 \pi
 $$
 divides $b$.
 
-::: {.proof}
+
+::: pf-proof
+
 In a UFD, every nonzero nonunit factors into irreducibles.
 Thus a nonunit denominator has at least one irreducible divisor.
+
 :::
 
-<1>5. The irreducible element $\pi$ from step <1>4 is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The irreducible element $\pi$ from step <1>4 is prime.
+
+
+::: pf-proof
+
 In a UFD, every irreducible element is prime.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \pi\mid a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 \pi\mid b.
@@ -170,11 +210,18 @@ gives
 $$
 \pi\mid a.
 $$
+
 :::
 
-<1>7. The assumption that $b$ is a nonunit contradicts the lowest-terms choice of $a/b$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumption that $b$ is a nonunit contradicts the lowest-terms choice of $a/b$.
+
+
+::: pf-proof
+
 Steps <1>4 and <1>6 show that the irreducible element $\pi$ divides both
 $$
 a
@@ -187,14 +234,21 @@ $$
 b
 $$
 must be a unit.
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \alpha\in D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 b\in D^\times,
@@ -215,11 +269,15 @@ Thus
 $$
 \boxed{\alpha\in D.}
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

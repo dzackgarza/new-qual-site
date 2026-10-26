@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring with identity and let C be a chain of prime ideals of R. Show that $\cup _ { P \in { \mathcal { C } } } P$ and $\cap _ { P \in { \mathcal { C } } } P$ are prime ideals of R.
 :::
 
-::: {.solution}
 Set
 $$
 U
@@ -33,9 +32,15 @@ I
 \bigcap_{P\in\mathcal C}P.
 $$
 
-<1>1. The set $U$ is an ideal of $R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $U$ is an ideal of $R$.
+
+
+::: pf-proof
+
 Let
 $$
 x,y\in U.
@@ -84,11 +89,18 @@ $$
 rx\in P\subseteq U.
 $$
 Hence $U$ is an ideal.
+
 :::
 
-<1>2. The ideal $U$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $U$ is proper.
+
+
+::: pf-proof
+
 If
 $$
 1\in U,
@@ -110,11 +122,18 @@ Thus
 $$
 1\notin U.
 $$
+
 :::
 
-<1>3. The ideal $U$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $U$ is prime.
+
+
+::: pf-proof
+
 Suppose
 $$
 ab\in U.
@@ -143,11 +162,18 @@ Together with step <1>2, this proves that
 $$
 \boxed{U\text{ is prime}.}
 $$
+
 :::
 
-<1>4. The set $I$ is an ideal of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $I$ is an ideal of $R$.
+
+
+::: pf-proof
+
 An arbitrary intersection of ideals is an ideal. Explicitly, if
 $$
 x,y\in I,
@@ -180,11 +206,18 @@ for every $P$, hence
 $$
 rx\in I.
 $$
+
 :::
 
-<1>5. The ideal $I$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is proper.
+
+
+::: pf-proof
+
 Every
 $$
 P\in\mathcal C
@@ -204,9 +237,14 @@ Thus
 $$
 I\ne R.
 $$
+
 :::
 
-<1>6. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 ab\in I
 $$
@@ -229,7 +267,9 @@ $$
 b\notin Q.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 $$
 a\notin I
@@ -245,11 +285,18 @@ with
 $$
 b\notin Q.
 $$
+
 :::
 
-<1>7. The assumptions in step <1>6 lead to a contradiction.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumptions in step <1>6 lead to a contradiction.
+
+
+::: pf-proof
+
 Because $\mathcal C$ is a chain, either
 $$
 P\subseteq Q
@@ -302,11 +349,18 @@ $$
 ab\in I\subseteq Q,
 $$
 contradicting primality of $Q$.
+
 :::
 
-<1>8. Therefore $I$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $I$ is prime.
+
+
+::: pf-proof
+
 By step <1>7, if
 $$
 ab\in I,
@@ -321,11 +375,15 @@ Together with step <1>5, this gives
 $$
 \boxed{I\text{ is prime}.}
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves that the union of the chain is prime, and step <1>8 proves that the intersection is prime.
+
 :::
+
 :::

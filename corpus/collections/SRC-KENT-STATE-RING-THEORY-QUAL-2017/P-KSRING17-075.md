@@ -25,8 +25,11 @@ Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the sa
 (iii) There exists a faithful $R [ s ]$ module which is finitely generated as an R-module.
 :::
 
-::: {.solution}
-<1>1. Assume $s$ is integral over $R$.
+::: pf
+
+::: pf-step
+
+Assume $s$ is integral over $R$.
 Then there exist
 $$
 n\ge1
@@ -40,11 +43,18 @@ $$
 s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of integrality over $R$.
+
 :::
 
-<1>2. Under the hypothesis of step <1>1, every power
+:::
+
+::: pf-step
+
+Under the hypothesis of step <1>1, every power
 $$
 s^m
 $$
@@ -57,7 +67,9 @@ $$
 1,s,\ldots,s^{n-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The relation from step <1>1 gives
 $$
 s^n
@@ -91,9 +103,14 @@ $$
 1,s,\ldots,s^{n-1}.
 $$
 Induction proves the assertion.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R[s]
@@ -101,7 +118,9 @@ R[s]
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every element of
 $$
 R[s]
@@ -129,16 +148,23 @@ R\cdot1
 +R\cdot s^{n-1}.
 $$
 Thus (i) implies (ii).
+
 :::
 
-<1>4. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 R[s]
 $$
 is finitely generated as an $R$-module.
 Then there exists a faithful $R[s]$-module finitely generated over $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 M
@@ -162,9 +188,14 @@ $$
 t=0.
 $$
 Therefore (ii) implies (iii).
+
 :::
 
-<1>5. Assume now that there exists a faithful $R[s]$-module
+:::
+
+::: pf-step
+
+Assume now that there exists a faithful $R[s]$-module
 $$
 M
 $$
@@ -175,11 +206,18 @@ m_1,\ldots,m_n
 $$
 of $M$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the finite-generation hypothesis in (iii).
+
 :::
 
-<1>6. For each
+:::
+
+::: pf-step
+
+For each
 $$
 j=1,\ldots,n,
 $$
@@ -194,7 +232,9 @@ s m_j
 \sum_{i=1}^{n}a_{ij}m_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $M$ is an $R[s]$-module,
 $$
 sm_j\in M.
@@ -204,9 +244,14 @@ $$
 m_1,\ldots,m_n
 $$
 generate $M$ as an $R$-module, $sm_j$ has an $R$-linear expression in these generators.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 $$
 A
 \coloneqq
@@ -229,16 +274,23 @@ $$
 (sI_n-A)\mathbf m=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $j$th relation from step <1>6 is exactly the corresponding coordinate of the matrix equation
 $$
 (sI_n-A)\mathbf m=0,
 $$
 after choosing the convention that the $j$th column of $A$ records the coefficients of $sm_j$.
 Equivalently, one may transpose the coefficient matrix; the determinant below is unchanged.
+
 :::
 
-<1>8. Multiplying the equation in step <1>7 by the adjugate matrix gives
+:::
+
+::: pf-step
+
+Multiplying the equation in step <1>7 by the adjugate matrix gives
 $$
 \det(sI_n-A)\,m_j
 =
@@ -249,7 +301,9 @@ $$
 j=1,\ldots,n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Over the commutative ring
 $$
 R[s],
@@ -267,9 +321,14 @@ $$
 0.
 $$
 Thus each coordinate satisfies the displayed annihilation relation.
+
 :::
 
-<1>9. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \det(sI_n-A)
 \in
@@ -277,21 +336,30 @@ R[s]
 $$
 annihilates all of $M$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8, it annihilates each $R$-module generator
 $$
 m_j.
 $$
 Since multiplication by an element of $R[s]$ is $R$-linear, it therefore annihilates every $R$-linear combination of the generators, hence all of $M$.
+
 :::
 
-<1>10. Because $M$ is faithful as an $R[s]$-module,
+:::
+
+::: pf-step
+
+Because $M$ is faithful as an $R[s]$-module,
 $$
 \det(sI_n-A)=0
 $$
 in $R[s]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Faithfulness means that the annihilator of $M$ in $R[s]$ is zero.
 Step <1>9 shows
 $$
@@ -299,9 +367,14 @@ $$
 $$
 lies in that annihilator.
 Hence it is zero.
+
 :::
 
-<1>11. The expression
+:::
+
+::: pf-step
+
+The expression
 $$
 \det(TI_n-A)
 $$
@@ -311,7 +384,9 @@ R[T]
 $$
 of degree $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 In the determinant expansion, the unique degree-$n$ term is obtained by taking the diagonal term
 $$
 T
@@ -326,16 +401,23 @@ $$
 \det(TI_n-A)
 $$
 is monic of degree $n$ with coefficients in $R$.
+
 :::
 
-<1>12. The element $s$ satisfies the monic polynomial
+:::
+
+::: pf-step
+
+The element $s$ satisfies the monic polynomial
 $$
 \chi_A(T)
 \in
 R[T].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10,
 $$
 \det(sI_n-A)=0.
@@ -353,9 +435,14 @@ $$
 $$
 Hence $s$ is integral over $R$.
 Therefore (iii) implies (i).
+
 :::
 
-<1>13. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 \text{(i)}
@@ -366,7 +453,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves
 $$
 \text{(i)}\implies\text{(ii)}.
@@ -379,11 +468,15 @@ Step <1>12 proves
 $$
 \text{(iii)}\implies\text{(i)}.
 $$
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 establishes the equivalence of all three statements.
+
 :::
+
 :::

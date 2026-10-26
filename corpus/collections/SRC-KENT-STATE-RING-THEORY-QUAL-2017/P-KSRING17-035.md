@@ -25,10 +25,15 @@ Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a 
 (c) Show that $\sqrt { 3 }$ is not an element of D.
 :::
 
-::: {.solution}
-<1>1. The set $D$ contains $0$ and $1$ and is closed under addition and additive inverses.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $D$ contains $0$ and $1$ and is closed under addition and additive inverses.
+
+
+::: pf-proof
+
 One has
 $$
 0=0+0\sqrt2
@@ -59,11 +64,18 @@ $$
 (-a)+(-b)\sqrt2
 \in D.
 $$
+
 :::
 
-<1>2. The set $D$ is closed under multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $D$ is closed under multiplication.
+
+
+::: pf-proof
+
 For
 $$
 x=a+b\sqrt2,
@@ -86,18 +98,30 @@ Both coefficients are rational, so
 $$
 xy\in D.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{D\text{ is a subring of }\RR.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 verify closure under the ring operations and show that the same $1$ as in $\RR$ belongs to $D$.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 0\ne x=a+b\sqrt2\in D,
 $$
@@ -106,7 +130,9 @@ $$
 a^2-2b^2\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 a^2-2b^2=0.
@@ -142,11 +168,18 @@ impossible. Hence
 $$
 a^2-2b^2\ne0.
 $$
+
 :::
 
-<1>5. Every nonzero element of $D$ has an inverse in $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $D$ has an inverse in $D$.
+
+
+::: pf-proof
+
 Let
 $$
 x=a+b\sqrt2\ne0.
@@ -173,11 +206,18 @@ Both coefficients are rational, so
 $$
 x^{-1}\in D.
 $$
+
 :::
 
-<1>6. Hence $D$ is a field, and therefore a principal ideal domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $D$ is a field, and therefore a principal ideal domain.
+
+
+::: pf-proof
+
 By steps <1>3 and <1>5, $D$ is a commutative ring with identity in which every nonzero element is invertible. Thus $D$ is a field.
 
 The only ideals of a field are
@@ -190,9 +230,14 @@ both principal. Therefore
 $$
 \boxed{D\text{ is a PID}.}
 $$
+
 :::
 
-<1>7. Suppose, for contradiction, that
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that
 $$
 \sqrt3\in D.
 $$
@@ -205,11 +250,18 @@ $$
 \sqrt3=a+b\sqrt2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of membership in $D$.
+
 :::
 
-<1>8. Under the assumption of step <1>7,
+:::
+
+::: pf-step
+
+Under the assumption of step <1>7,
 $$
 ab=0
 $$
@@ -218,7 +270,9 @@ $$
 a^2+2b^2=3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Square the equation from step <1>7:
 $$
 3
@@ -245,15 +299,22 @@ and comparison of rational parts gives
 $$
 a^2+2b^2=3.
 $$
+
 :::
 
-<1>9. The case
+:::
+
+::: pf-step
+
+The case
 $$
 b=0
 $$
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 b=0,
@@ -293,15 +354,22 @@ $$
 3\mid s,
 $$
 contradicting the assumption that $r/s$ is in lowest terms.
+
 :::
 
-<1>10. The case
+:::
+
+::: pf-step
+
+The case
 $$
 a=0
 $$
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 a=0,
@@ -346,24 +414,35 @@ This contradicts
 $$
 \gcd(r,s)=1.
 $$
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\sqrt3\notin D.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 gives
 $$
 ab=0,
 $$
 so either $a=0$ or $b=0$. Steps <1>9--<1>10 rule out both possibilities.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>11 proves part (c).
+
 :::
+
 :::

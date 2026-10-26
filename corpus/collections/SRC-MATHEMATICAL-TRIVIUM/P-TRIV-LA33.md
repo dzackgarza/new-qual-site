@@ -25,29 +25,41 @@ $(e^{A/N})^N$ is defined here only for integer $N$. The intended statement is
 for $N\in\mathbb N$.
 :::
 
-::: {.solution}
 Fix
 $$
 N\in\mathbb N.
 $$
 
-<1>1. The matrix $A/N$ commutes with itself.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $A/N$ commutes with itself.
+
+
+::: pf-proof
+
 Every matrix commutes with itself:
 $$
 \left[\frac AN,\frac AN\right]=0.
 $$
+
 :::
 
-<1>2. For every positive integer $k$,
+:::
+
+::: pf-step
+
+For every positive integer $k$,
 $$
 \left(e^{A/N}\right)^k
 =
 e^{kA/N}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction on $k$. For $k=1$ the identity is immediate.
 
 Assume
@@ -69,16 +81,23 @@ $$
 =
 e^{(k+1)A/N}.
 $$
+
 :::
 
-<1>3. Taking $k=N$ in step <1>2 gives
+:::
+
+::: pf-step
+
+Taking $k=N$ in step <1>2 gives
 $$
 \left(e^{A/N}\right)^N
 =
 e^A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $k=N$:
 $$
 e^{kA/N}
@@ -87,21 +106,32 @@ e^{NA/N}
 =
 e^A.
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{e^A=\left(e^{A/N}\right)^N}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>3 with the two sides reversed.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the corrected intended statement for every
 $N\in\mathbb N$.
+
 :::
+
 :::

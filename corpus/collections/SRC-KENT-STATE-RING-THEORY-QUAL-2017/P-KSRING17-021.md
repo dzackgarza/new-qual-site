@@ -34,13 +34,16 @@ I_i+\bigcap_{j\ne i}I_j=R.
 $$
 :::
 
-::: {.solution}
 Fix
 $$
 i\in\{1,\ldots,n\}.
 $$
 
-<1>1. For each
+::: pf
+
+::: pf-step
+
+For each
 $$
 j\ne i,
 $$
@@ -55,7 +58,9 @@ $$
 a_j+b_j=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Pairwise comaximality gives
 $$
 I_i+I_j=R
@@ -74,9 +79,14 @@ a_j\in I_i,
 \qquad
 b_j\in I_j.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 b
 \coloneqq
@@ -87,7 +97,9 @@ $$
 b\in\bigcap_{j\ne i}I_j.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 k\ne i.
@@ -104,14 +116,21 @@ As this holds for every $k\ne i$,
 $$
 b\in\bigcap_{j\ne i}I_j.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 1-b\in I_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 b_j
@@ -134,9 +153,14 @@ Hence
 $$
 1-b\in I_i.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I_i
@@ -147,7 +171,9 @@ R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 b\in\bigcap_{j\ne i}I_j,
@@ -165,11 +191,15 @@ $$
 I_i+\bigcap_{j\ne i}I_j.
 $$
 Any ideal containing $1$ is the whole ring, so the sum equals $R$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The index $i$ was arbitrary, so step <1>4 proves the corrected conclusion for every $i$.
+
 :::
+
 :::

@@ -19,28 +19,45 @@ audit:
 Solve $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = \sin x$
 :::
 
-::: {.solution}
-<1>1. The associated homogeneous equation is
+::: pf
+
+::: pf-step
+
+The associated homogeneous equation is
 $$
 y''-3y'+2y=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set the forcing term equal to zero.
+
 :::
 
-<1>2. Its characteristic polynomial is
+:::
+
+::: pf-step
+
+Its characteristic polynomial is
 $$
 \lambda^2-3\lambda+2
 =
 (\lambda-1)(\lambda-2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $y=e^{\lambda x}$ into the homogeneous equation and factor the resulting polynomial.
+
 :::
 
-<1>3. Hence the homogeneous solution is
+:::
+
+::: pf-step
+
+Hence the homogeneous solution is
 $$
 y_h
 =
@@ -49,11 +66,18 @@ C_1e^x
 C_2e^{2x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The two distinct characteristic roots are $1$ and $2$.
+
 :::
 
-<1>4. Seek a particular solution of the form
+:::
+
+::: pf-step
+
+Seek a particular solution of the form
 $$
 y_p
 =
@@ -62,11 +86,18 @@ A\sin x
 B\cos x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The forcing is $\sin x$, and neither $\pm i$ is a characteristic root of the homogeneous equation, so no resonance factor is needed.
+
 :::
 
-<1>5. The derivatives are
+:::
+
+::: pf-step
+
+The derivatives are
 $$
 y_p'
 =
@@ -83,11 +114,18 @@ y_p''
 B\cos x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate step <1>4 term by term.
+
 :::
 
-<1>6. Substitution into the differential equation gives
+:::
+
+::: pf-step
+
+Substitution into the differential equation gives
 $$
 (A+3B)\sin x
 +
@@ -96,7 +134,9 @@ $$
 \sin x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the coefficients from
 $$
 y_p''-3y_p'+2y_p.
@@ -109,34 +149,53 @@ and for the cosine term it is
 $$
 -B-3A+2B=B-3A.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 A+3B=1,
 \qquad
 B-3A=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Match the sine and cosine coefficients in step <1>6.
+
 :::
 
-<1>8. Solving gives
+:::
+
+::: pf-step
+
+Solving gives
 $$
 A=\frac1{10},
 \qquad
 B=\frac3{10}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From the second equation, $B=3A$. Substitute into the first:
 $$
 10A=1.
 $$
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 y_p
 =
@@ -145,11 +204,18 @@ y_p
 \frac3{10}\cos x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>8 into the ansatz from step <1>4.
+
 :::
 
-<1>10. Therefore the general solution is
+:::
+
+::: pf-step
+
+Therefore the general solution is
 $$
 \boxed{
 y(x)
@@ -164,13 +230,19 @@ C_2e^{2x}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the homogeneous solution from step <1>3 and one particular solution from step <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the complete solution family.
+
 :::
+
 :::

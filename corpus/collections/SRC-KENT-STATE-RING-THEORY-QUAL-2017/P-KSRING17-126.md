@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring with identity and P a prime ideal of R. Let $R _ { P }$ be the ring of quotients of R with respect to the set $R - P = \{ s \in R \mid s \not \in P \}$ . Show that $R _ { P } / P _ { P }$ is the field of fractions of the integral domain $R / P$
 :::
 
-::: {.solution}
 Set
 $$
 S
@@ -38,7 +37,11 @@ K
 \operatorname{Frac}(R/P).
 $$
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 $$
 s\in S,
 $$
@@ -51,7 +54,9 @@ $$
 R/P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 $$
 s\in S
@@ -66,9 +71,14 @@ s+P
 \ne
 0+P.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \Phi:R_P\to K
 $$
@@ -81,7 +91,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 s+P
@@ -94,11 +106,18 @@ Hence it is a valid denominator in
 $$
 \operatorname{Frac}(R/P).
 $$
+
 :::
 
-<1>3. The map $\Phi$ is well-defined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is well-defined.
+
+
+::: pf-proof
+
 Suppose
 $$
 \frac as
@@ -155,11 +174,18 @@ $$
 \frac{b+P}{t+P}
 $$
 in the fraction field.
+
 :::
 
-<1>4. The map $\Phi$ preserves addition.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ preserves addition.
+
+
+::: pf-proof
+
 For
 $$
 \frac as,\frac bt
@@ -183,11 +209,18 @@ $$
 \frac{b+P}{t+P}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The map $\Phi$ preserves multiplication and identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ preserves multiplication and identity.
+
+
+::: pf-proof
+
 One has
 $$
 \begin{aligned}
@@ -216,11 +249,18 @@ $$
 1.
 $$
 Thus $\Phi$ is a unital ring homomorphism.
+
 :::
 
-<1>6. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 \frac{a+P}{b+P}
@@ -249,9 +289,14 @@ $$
 \frac{a+P}{b+P}.
 $$
 Thus $\Phi$ is onto.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac as
 \in
@@ -262,7 +307,9 @@ $$
 a\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 $$
 \Phi\left(\frac as\right)=0
@@ -288,9 +335,14 @@ so
 $$
 a\in P.
 $$
+
 :::
 
-<1>8. Conversely, if
+:::
+
+::: pf-step
+
+Conversely, if
 $$
 a\in P,
 \qquad
@@ -303,7 +355,9 @@ $$
 \ker\Phi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 a\in P,
@@ -320,9 +374,14 @@ $$
 =
 0.
 $$
+
 :::
 
-<1>9. The kernel of $\Phi$ is
+:::
+
+::: pf-step
+
+The kernel of $\Phi$ is
 $$
 \boxed{
 \ker\Phi
@@ -336,7 +395,9 @@ a\in P,\ s\notin P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 gives
 $$
 \ker\Phi
@@ -344,9 +405,14 @@ $$
 P_P,
 $$
 and step <1>8 gives the reverse inclusion.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R_P/P_P
@@ -355,7 +421,9 @@ R_P/P_P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5--<1>6, $\Phi$ is a surjective ring homomorphism.
 By step <1>9, its kernel is
 $$
@@ -369,11 +437,15 @@ K
 =
 \operatorname{Frac}(R/P).
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

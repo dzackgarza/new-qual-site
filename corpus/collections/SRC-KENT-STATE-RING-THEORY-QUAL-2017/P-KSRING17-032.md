@@ -25,7 +25,6 @@ $$
 Prove that the determinant of V is $\prod _ { 1 \leqslant i < j \leqslant n } ( x _ { i } - x _ { j } )$
 :::
 
-::: {.solution}
 We prove by induction on $n$ that
 $$
 \boxed{
@@ -35,9 +34,15 @@ $$
 }
 $$
 
-<1>1. The formula holds for $n=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The formula holds for $n=1$.
+
+
+::: pf-proof
+
 For $n=1$,
 $$
 V=[1],
@@ -51,9 +56,14 @@ $$
 1\le i<j\le1
 $$
 is empty and therefore equals $1$.
+
 :::
 
-<1>2. Assume the formula holds for size $n-1$.
+:::
+
+::: pf-step
+
+Assume the formula holds for size $n-1$.
 Regard
 $$
 \det V
@@ -69,7 +79,9 @@ $$
 \deg_{x_1}(\det V)\le n-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Only the first row of $V$ contains $x_1$, and its entries are
 $$
 x_1^{n-1},
@@ -82,9 +94,14 @@ Expanding the determinant along the first row shows that the highest possible po
 $$
 x_1^{n-1}.
 $$
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 $$
 j\in\{2,\ldots,n\},
 $$
@@ -93,15 +110,22 @@ $$
 x_1=x_j.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 After substituting
 $$
 x_1=x_j,
 $$
 the first row of $V$ becomes identical to the $j$th row. A determinant with two equal rows is zero.
+
 :::
 
-<1>4. The product
+:::
+
+::: pf-step
+
+The product
 $$
 \prod_{j=2}^{n}(x_1-x_j)
 $$
@@ -110,7 +134,9 @@ $$
 A[x_1].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3 and the polynomial remainder theorem,
 $$
 x_1-x_2
@@ -160,9 +186,14 @@ $$
 \mid
 \det V.
 $$
+
 :::
 
-<1>5. There exists
+:::
+
+::: pf-step
+
+There exists
 $$
 C\in A
 $$
@@ -174,7 +205,9 @@ C
 \prod_{j=2}^{n}(x_1-x_j).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The divisor from step <1>4 has degree exactly
 $$
 n-1
@@ -184,15 +217,22 @@ $$
 \deg_{x_1}\det V\le n-1.
 $$
 Therefore the quotient is independent of $x_1$ and lies in $A$.
+
 :::
 
-<1>6. The coefficient $C$ from step <1>5 is
+:::
+
+::: pf-step
+
+The coefficient $C$ from step <1>5 is
 $$
 \det V_{n-1}(x_2,\ldots,x_n),
 $$
 the determinant of the same reversed-column Vandermonde matrix of size $n-1$.
 
-::: {.proof}
+
+::: pf-proof
+
 The product
 $$
 \prod_{j=2}^{n}(x_1-x_j)
@@ -220,27 +260,41 @@ x_n^{n-2}&\cdots&x_n&1
 \end{pmatrix}.
 $$
 Thus $C$ is exactly the determinant of the size-$(n-1)$ matrix of the same form.
+
 :::
 
-<1>7. By the induction hypothesis,
+:::
+
+::: pf-step
+
+By the induction hypothesis,
 $$
 C
 =
 \prod_{2\le i<j\le n}(x_i-x_j).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the induction hypothesis to the matrix in step <1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \det V
 =
 \prod_{1\le i<j\le n}(x_i-x_j).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>7 into step <1>5:
 $$
 \begin{aligned}
@@ -256,11 +310,15 @@ $$
 \prod_{1\le i<j\le n}(x_i-x_j).
 \end{aligned}
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the base case, and steps <1>2--<1>8 prove the induction step.
+
 :::
+
 :::

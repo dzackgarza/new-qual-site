@@ -19,7 +19,6 @@ audit:
 The surface of a sphere of radius R is kept at a constant temperature $T _ { U }$ for the upper hemisphere $( 0 \leq \theta < \pi / 2 )$ and $T _ { L }$ for the lower hempisphere $( \pi / 2 \leq \theta \leq \pi )$ . Find the stationary temperature distribution inside the sphere, at a distance r from the center, in an expansion in terms of $\frac { r } { R }$ . Compute terms up to third order.
 :::
 
-::: {.solution}
 Put
 \[
 \mu=\cos\theta,
@@ -33,17 +32,28 @@ The boundary temperature is
 T(R,\mu)=T_0+\frac{\Delta T}{2}\operatorname{sgn}(\mu).
 \]
 
-<1>1. Every axisymmetric harmonic function regular at the center has an expansion
+::: pf
+
+::: pf-step
+
+Every axisymmetric harmonic function regular at the center has an expansion
 \[
 T(r,\theta)=\sum_{\ell=0}^{\infty}A_\ell
 \left(\frac rR\right)^\ell P_\ell(\cos\theta).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Separation of Laplace's equation in spherical coordinates gives radial factors $r^\ell$ and $r^{-\ell-1}$ multiplying Legendre polynomials $P_\ell(\cos\theta)$. Regularity at $r=0$ excludes the negative powers. Scaling by $R$ gives the displayed form.
+
 :::
 
-<1>2. The coefficients are
+:::
+
+::: pf-step
+
+The coefficients are
 \[
 A_0=T_0,
 \qquad
@@ -51,21 +61,30 @@ A_\ell=\frac{2\ell+1}{2}
 \int_{-1}^{1}T(R,\mu)P_\ell(\mu)\,d\mu.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At $r=R$, step <1>1 is the Legendre expansion of the boundary function. Orthogonality,
 \[
 \int_{-1}^{1}P_\ell(\mu)P_j(\mu)\,d\mu
 =\frac{2}{2\ell+1}\delta_{\ell j},
 \]
 gives the coefficient formula. The average of the two hemisphere temperatures is $A_0=T_0$.
+
 :::
 
-<1>3. Apart from $A_0$, only odd degrees occur, and
+:::
+
+::: pf-step
+
+Apart from $A_0$, only odd degrees occur, and
 \[
 A_1=\frac{3}{4}\Delta T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $\operatorname{sgn}(\mu)$ is odd, so its Legendre expansion contains only odd $P_\ell$. For $\ell=1$, $P_1(\mu)=\mu$, hence
 \[
 A_1=\frac32\frac{\Delta T}{2}
@@ -73,14 +92,21 @@ A_1=\frac32\frac{\Delta T}{2}
 =\frac{3\Delta T}{4},
 \]
 because the integral is $1$.
+
 :::
 
-<1>4. The cubic coefficient is
+:::
+
+::: pf-step
+
+The cubic coefficient is
 \[
 A_3=-\frac{7}{16}\Delta T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $P_3(\mu)=(5\mu^3-3\mu)/2$,
 \[
 \int_{-1}^{1}\operatorname{sgn}(\mu)P_3(\mu)\,d\mu
@@ -92,9 +118,14 @@ Thus
 A_3=\frac72\frac{\Delta T}{2}\left(-\frac14\right)
 =-\frac{7\Delta T}{16}.
 \]
+
 :::
 
-<1>5. Therefore, through third order in $r/R$,
+:::
+
+::: pf-step
+
+Therefore, through third order in $r/R$,
 \[
 \boxed{
 T(r,\theta)=
@@ -106,13 +137,19 @@ T(r,\theta)=
 +O\!\left((r/R)^5\right).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert $A_0,A_1,A_3$ from steps <1>2--<1>4 into step <1>1 and use $P_1(\mu)=\mu$ and $P_3(\mu)=(5\mu^3-3\mu)/2$. The next nonconstant term has odd degree $5$, giving the stated remainder order.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the stationary interior temperature expansion through cubic order.
+
 :::
+
 :::

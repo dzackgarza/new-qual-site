@@ -20,19 +20,24 @@ Determine for which integers n the ring $\mathbb { Z } / n \mathbb { Z }$ is a d
 Prove your answer.
 :::
 
-::: {.solution}
 For a nonzero integer $n$, the quotient depends only on $\abs n$, so it suffices first to consider
 $$
 n>1.
 $$
 
-<1>1. If $n$ is squarefree, then
+::: pf
+
+::: pf-step
+
+If $n$ is squarefree, then
 $$
 \ZZ/n\ZZ
 $$
 is a finite direct product of fields.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 n
@@ -55,11 +60,18 @@ $$
 \ZZ/p_i\ZZ
 $$
 is the field $\FF_{p_i}$. Thus the quotient is a finite direct product, equivalently a finite direct sum, of fields.
+
 :::
 
-<1>2. A direct product of fields has no nonzero nilpotent elements.
+:::
 
-::: {.proof}
+::: pf-step
+
+A direct product of fields has no nonzero nilpotent elements.
+
+
+::: pf-proof
+
 Let
 $$
 R
@@ -86,15 +98,22 @@ for every $i$. Hence
 $$
 x=0.
 $$
+
 :::
 
-<1>3. If $n>1$ is not squarefree, then
+:::
+
+::: pf-step
+
+If $n>1$ is not squarefree, then
 $$
 \ZZ/n\ZZ
 $$
 has a nonzero nilpotent element.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $n$ is not squarefree, there is a prime $p$ such that
 $$
 p^2\mid n.
@@ -131,19 +150,31 @@ $$
 a^2\equiv0\pmod n.
 $$
 Thus $\overline a$ is a nonzero nilpotent.
+
 :::
 
-<1>4. If $n>1$ and
+:::
+
+::: pf-step
+
+If $n>1$ and
 $$
 \ZZ/n\ZZ
 $$
 is a direct sum of fields, then $n$ is squarefree.
 
-::: {.proof}
+
+::: pf-proof
+
 If $n$ were not squarefree, step <1>3 would produce a nonzero nilpotent in the quotient. Step <1>2 shows that no direct product of fields can contain such an element. Hence $n$ must be squarefree.
+
 :::
 
-<1>5. Therefore, for
+:::
+
+::: pf-step
+
+Therefore, for
 $$
 \abs n>1,
 $$
@@ -157,11 +188,18 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Replace $n$ by $\abs n$ and combine steps <1>1 and <1>4.
+
 :::
 
-<1>6. The remaining integer values are exceptional only by convention:
+:::
+
+::: pf-step
+
+The remaining integer values are exceptional only by convention:
 
 - if $n=0$, then
   $$
@@ -174,15 +212,21 @@ Replace $n$ by $\abs n$ and combine steps <1>1 and <1>4.
   $$
   is the zero ring.
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=0$, the ring $\ZZ$ is not a field and has no nontrivial idempotents. A finite product of at least two nonzero fields has nontrivial idempotents, while a product of one field is a field. Hence $\ZZ$ is not such a product.
 
 For $n=\pm1$, the quotient is the zero ring. If the empty direct sum of fields is allowed, it is included as that empty sum; under the usual convention that a direct sum here has at least one field factor, it is excluded.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the substantive classification, with step <1>6 recording the degenerate integer cases.
+
 :::
+
 :::

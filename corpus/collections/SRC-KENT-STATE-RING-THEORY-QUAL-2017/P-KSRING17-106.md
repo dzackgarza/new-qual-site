@@ -19,14 +19,17 @@ audit:
 Show that if R is an integral domain and $f ( x )$ is a unit in the polynomial ring $R [ x ]$ , then $f ( x )$ is in R.
 :::
 
-::: {.solution}
 Assume
 $$
 f(x)\in R[x]
 $$
 is a unit.
 
-<1>1. There exists
+::: pf
+
+::: pf-step
+
+There exists
 $$
 g(x)\in R[x]
 $$
@@ -35,11 +38,18 @@ $$
 f(x)g(x)=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of $f(x)$ being a unit in $R[x]$.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 u,v\in R[x]
 $$
@@ -50,7 +60,9 @@ $$
 \deg u+\deg v.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 u
@@ -87,9 +99,14 @@ m+n
 =
 \deg u+\deg v.
 $$
+
 :::
 
-<1>3. The polynomials
+:::
+
+::: pf-step
+
+The polynomials
 $$
 f
 \qquad\text{and}\qquad
@@ -97,15 +114,22 @@ g
 $$
 from step <1>1 are both nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Their product is
 $$
 1\ne0.
 $$
 Hence neither factor can be zero.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \deg f
 =
@@ -114,7 +138,9 @@ $$
 0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>3,
 $$
 \begin{aligned}
@@ -132,27 +158,38 @@ Their sum is zero, so
 $$
 \deg f=\deg g=0.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 f(x)\in R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A polynomial has degree zero exactly when it is a nonzero constant polynomial.
 Step <1>4 gives
 $$
 \deg f=0.
 $$
 Thus $f$ belongs to the coefficient ring $R$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

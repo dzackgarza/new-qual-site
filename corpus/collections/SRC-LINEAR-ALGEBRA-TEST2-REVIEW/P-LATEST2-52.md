@@ -25,19 +25,24 @@ Which of the following is the larger eigenvalue of
 (A) $4$  (B) $5$  (C) $6$  (D) $10$  (E) $12$
 :::
 
-::: {.solution}
 Let
 $$
 A=\begin{pmatrix}5&1\\1&5\end{pmatrix}.
 $$
 
-<1>1. The vector
+::: pf
+
+::: pf-step
+
+The vector
 $$
 v_+=\begin{pmatrix}1\\1\end{pmatrix}
 $$
 is an eigenvector with eigenvalue $6$.
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 Av_+
@@ -49,15 +54,22 @@ Av_+
 =
 6v_+.
 $$
+
 :::
 
-<1>2. The vector
+:::
+
+::: pf-step
+
+The vector
 $$
 v_-=\begin{pmatrix}1\\-1\end{pmatrix}
 $$
 is an eigenvector with eigenvalue $4$.
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 Av_-
@@ -69,31 +81,49 @@ Av_-
 =
 4v_-.
 $$
+
 :::
 
-<1>3. The two eigenvalues of $A$ are $6$ and $4$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two eigenvalues of $A$ are $6$ and $4$.
+
+
+::: pf-proof
+
 The vectors $v_+$ and $v_-$ are linearly independent, so they form a basis of $\mathbb R^2$.
 Hence the corresponding eigenvalues account for both eigenvalues of the $2\times2$ matrix $A$.
+
 :::
 
-<1>4. Therefore the larger eigenvalue is
+:::
+
+::: pf-step
+
+Therefore the larger eigenvalue is
 $$
 \boxed{6}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 6>4.
 $$
 Thus the correct choice is $\boxed{\text{(C)}}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required answer.
+
 :::
+
 :::

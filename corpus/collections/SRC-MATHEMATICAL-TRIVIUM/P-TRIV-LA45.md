@@ -19,8 +19,11 @@ audit:
 Find if the quadratic form $f ( \vec { x } ) = 9 x _ { 1 } ^ { 2 } + 6 x _ { 1 } x _ { 2 } + 6 x _ { 2 } ^ { 2 } + 8 x _ { 2 } x _ { 3 } + 4 x _ { 3 } ^ { 2 }$ is positive definite or not.
 :::
 
-::: {.solution}
-<1>1. The symmetric matrix of the quadratic form is
+::: pf
+
+::: pf-step
+
+The symmetric matrix of the quadratic form is
 $$
 Q=
 \begin{pmatrix}
@@ -30,7 +33,9 @@ Q=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a symmetric quadratic form
 $$
 x^TQx,
@@ -44,18 +49,30 @@ q_{23}=4,
 q_{13}=0,
 $$
 with the diagonal entries read directly from the square terms.
+
 :::
 
-<1>2. The first leading principal minor is
+:::
+
+::: pf-step
+
+The first leading principal minor is
 $$
 \Delta_1=9>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the upper-left $1\times1$ determinant.
+
 :::
 
-<1>3. The second leading principal minor is
+:::
+
+::: pf-step
+
+The second leading principal minor is
 $$
 \Delta_2
 =
@@ -68,7 +85,9 @@ $$
 45>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 9\cdot6-3\cdot3
@@ -76,9 +95,14 @@ $$
 54-9
 =45.
 $$
+
 :::
 
-<1>4. The third leading principal minor is
+:::
+
+::: pf-step
+
+The third leading principal minor is
 $$
 \Delta_3
 =
@@ -87,7 +111,9 @@ $$
 36>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand along the first row:
 $$
 \begin{aligned}
@@ -113,28 +139,46 @@ $$
 &=36.
 \end{aligned}
 $$
+
 :::
 
-<1>5. By Sylvester's criterion, the quadratic form is positive definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+By Sylvester's criterion, the quadratic form is positive definite.
+
+
+::: pf-proof
+
 For a real symmetric matrix, Sylvester's criterion states that the associated
 quadratic form is positive definite exactly when all leading principal minors
 are positive. Steps <1>2--<1>4 verify this condition.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f\text{ is positive definite}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

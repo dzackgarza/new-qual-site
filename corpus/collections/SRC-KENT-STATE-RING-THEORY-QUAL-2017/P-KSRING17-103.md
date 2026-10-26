@@ -47,15 +47,20 @@ p^2\nmid a_0.
 $$
 :::
 
-::: {.solution}
 Assume the corrected hypotheses.
 
-<1>1. The coefficient $a_0$ is nonzero and satisfies
+::: pf
+
+::: pf-step
+
+The coefficient $a_0$ is nonzero and satisfies
 $$
 v_p(a_0)=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 p\mid a_0
@@ -65,9 +70,14 @@ $$
 p^2\nmid a_0.
 $$
 Therefore $a_0\ne0$ and the exact $p$-adic exponent of $a_0$ is $1$.
+
 :::
 
-<1>2. Factor $f$ in $\ZZ[x]$ as
+:::
+
+::: pf-step
+
+Factor $f$ in $\ZZ[x]$ as
 $$
 f
 =
@@ -79,17 +89,26 @@ c\in\ZZ\setminus\{0\}
 $$
 and each $f_j$ is primitive and irreducible of positive degree.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Gauss's lemma and unique factorization in
 $$
 \ZZ[x].
 $$
 Any integer content is absorbed into $c$.
+
 :::
 
-<1>3. The integer $c$ is not divisible by $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The integer $c$ is not divisible by $p$.
+
+
+::: pf-proof
+
 If
 $$
 p\mid c,
@@ -111,11 +130,18 @@ Thus
 $$
 p\nmid c.
 $$
+
 :::
 
-<1>4. Exactly one irreducible factor $f_j$ has constant coefficient divisible by $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Exactly one irreducible factor $f_j$ has constant coefficient divisible by $p$.
+
+
+::: pf-proof
+
 Write
 $$
 f_j(x)
@@ -158,9 +184,14 @@ $$
 v_p(b_{j_0,0})=1,
 $$
 and every other constant coefficient is prime to $p$.
+
 :::
 
-<1>5. Reduce the factorization modulo $p$.
+:::
+
+::: pf-step
+
+Reduce the factorization modulo $p$.
 Then
 $$
 \overline f(x)
@@ -176,7 +207,9 @@ $$
 h(0)\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the corrected hypotheses,
 $$
 p\mid a_0,\ldots,a_{k-1},
@@ -209,9 +242,14 @@ with
 $$
 h(0)\ne0.
 $$
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 $$
 j\ne j_0,
 $$
@@ -221,7 +259,9 @@ $$
 $$
 is not divisible by $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 p\nmid b_{j,0}
@@ -239,15 +279,22 @@ Therefore
 $$
 x\nmid\overline{f_j}(x).
 $$
+
 :::
 
-<1>7. The reduction
+:::
+
+::: pf-step
+
+The reduction
 $$
 \overline{f_{j_0}}(x)
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial
 $$
 f_{j_0}
@@ -258,9 +305,14 @@ Therefore at least one coefficient survives modulo $p$, so
 $$
 \overline{f_{j_0}}\ne0.
 $$
+
 :::
 
-<1>8. All $k$ powers of $x$ dividing $\overline f$ come from
+:::
+
+::: pf-step
+
+All $k$ powers of $x$ dividing $\overline f$ come from
 $$
 \overline{f_{j_0}}.
 $$
@@ -271,7 +323,9 @@ x^k
 \overline{f_{j_0}}(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Reducing the factorization from step <1>2 modulo $p$ gives
 $$
 \overline f
@@ -310,14 +364,21 @@ x^k
 \mid
 \overline{f_{j_0}}.
 $$
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \deg f_{j_0}\ge k.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 \overline{f_{j_0}}
@@ -343,11 +404,18 @@ $$
 \ge
 k.
 $$
+
 :::
 
-<1>10. Therefore $f$ has an irreducible factor of degree at least $k$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ has an irreducible factor of degree at least $k$.
+
+
+::: pf-proof
+
 The factor
 $$
 f_{j_0}
@@ -364,11 +432,15 @@ f
 \text{ of degree at least }k.
 }
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 proves the corrected generalized Eisenstein criterion.
+
 :::
+
 :::

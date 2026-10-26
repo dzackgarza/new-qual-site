@@ -20,34 +20,53 @@ Let A be a non-degenerate matrix, and B is obtained from A by interchange two of
 How are det A and det B related?
 :::
 
-::: {.solution}
-<1>1. Let $P$ be the permutation matrix that interchanges the same two rows.
+::: pf
+
+::: pf-step
+
+Let $P$ be the permutation matrix that interchanges the same two rows.
 Then
 $$
 B=PA.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Left multiplication by a permutation matrix permutes the rows of a matrix in
 exactly the same way as the corresponding permutation.
+
 :::
 
-<1>2. The determinant of $P$ is
+:::
+
+::: pf-step
+
+The determinant of $P$ is
 $$
 \det P=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The row permutation is a single transposition, and a transposition has sign
 $-1$. The determinant of its permutation matrix equals that sign.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\det B=-\det A}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By multiplicativity of the determinant and steps <1>1--<1>2,
 $$
 \det B
@@ -58,11 +77,15 @@ $$
 =
 -\det A.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required relation.
+
 :::
+
 :::

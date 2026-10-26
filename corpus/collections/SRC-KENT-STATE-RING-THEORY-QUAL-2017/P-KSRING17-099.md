@@ -19,7 +19,6 @@ audit:
 Prove that $\mathbb { Z } [ \sqrt { - 2 } ] = \{ a + b \sqrt { - 2 } \ | \ a , b \in \mathbb { Z } \}$ is a Euclidean domain.
 :::
 
-::: {.solution}
 Set
 $$
 D
@@ -37,7 +36,11 @@ N(a+b\sqrt{-2})
 a^2+2b^2.
 $$
 
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 $$
 \alpha=a+b\sqrt{-2},
 $$
@@ -54,7 +57,9 @@ $$
 a-b\sqrt{-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 $$
 \begin{aligned}
@@ -69,16 +74,23 @@ a^2+2b^2\\
 N(\alpha).
 \end{aligned}
 $$
+
 :::
 
-<1>2. The norm is multiplicative:
+:::
+
+::: pf-step
+
+The norm is multiplicative:
 $$
 N(\alpha\beta)
 =
 N(\alpha)N(\beta).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Conjugation is multiplicative:
 $$
 \overline{\alpha\beta}
@@ -102,9 +114,14 @@ N(\alpha\beta)
 N(\alpha)N(\beta).
 \end{aligned}
 $$
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 \alpha\ne0,
 $$
@@ -113,7 +130,9 @@ $$
 N(\alpha)>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 \alpha=a+b\sqrt{-2}.
@@ -135,9 +154,14 @@ $$
 \alpha=0.
 $$
 Taking the contrapositive proves the claim.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \alpha,\beta\in D,
 \qquad
@@ -158,7 +182,9 @@ $$
 x,y\in\QQ.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The field of fractions of
 $$
 \ZZ[\sqrt{-2}]
@@ -168,9 +194,14 @@ $$
 \QQ(\sqrt{-2}),
 $$
 whose elements have exactly this form.
+
 :::
 
-<1>5. Choose integers
+:::
+
+::: pf-step
+
+Choose integers
 $$
 m,n\in\ZZ
 $$
@@ -181,7 +212,9 @@ $$
 \abs{y-n}\le\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every real number has an integer within distance at most
 $$
 \frac12.
@@ -194,9 +227,14 @@ and
 $$
 y.
 $$
+
 :::
 
-<1>6. Set
+:::
+
+::: pf-step
+
+Set
 $$
 q
 \coloneqq
@@ -213,7 +251,9 @@ N\left(
 \frac34.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \frac{\alpha}{\beta}-q
@@ -238,9 +278,14 @@ N\left(
 \frac34.
 \end{aligned}
 $$
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 $$
 r
 \coloneqq
@@ -255,7 +300,9 @@ $$
 r\in D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 \alpha,\beta,q\in D
@@ -269,9 +316,14 @@ r
 D.
 $$
 The displayed division identity is the definition of $r$.
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 $$
 N(r)
 =
@@ -281,7 +333,9 @@ N\left(
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>7,
 $$
 \begin{aligned}
@@ -296,9 +350,14 @@ r
 \end{aligned}
 $$
 Apply multiplicativity of the norm from step <1>2.
+
 :::
 
-<1>9. If
+:::
+
+::: pf-step
+
+If
 $$
 r\ne0,
 $$
@@ -307,7 +366,9 @@ $$
 N(r)<N(\beta).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>6 and <1>8,
 $$
 N(r)
@@ -333,15 +394,22 @@ so
 $$
 N(r)<N(\beta).
 $$
+
 :::
 
-<1>10. The function
+:::
+
+::: pf-step
+
+The function
 $$
 N:D\setminus\{0\}\to\ZZ_{>0}
 $$
 is a Euclidean function.
 
-::: {.proof}
+
+::: pf-proof
+
 Given
 $$
 \alpha,\beta\in D,
@@ -370,9 +438,14 @@ $$
 N(r)<N(\beta).
 $$
 Thus the division-with-remainder axiom is satisfied.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \ZZ[\sqrt{-2}]
@@ -380,7 +453,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring
 $$
 \ZZ[\sqrt{-2}]
@@ -392,11 +467,15 @@ $$
 so it is an integral domain.
 Step <1>10 supplies a Euclidean function.
 Hence it is a Euclidean domain.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required conclusion.
+
 :::
+
 :::

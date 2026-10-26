@@ -20,7 +20,6 @@ A local ring is a commutative ring with 1 that has a unique maximal ideal.
 Show that a ring R is local if and only if the set of non-units in R is an ideal.
 :::
 
-::: {.solution}
 Let
 $$
 N
@@ -28,7 +27,11 @@ N
 \{r\in R:r\text{ is not a unit}\}.
 $$
 
-<1>1. Assume first that $R$ is local, with unique maximal ideal
+::: pf
+
+::: pf-step
+
+Assume first that $R$ is local, with unique maximal ideal
 $$
 \mathfrak m.
 $$
@@ -38,7 +41,9 @@ $$
 $$
 is a nonunit.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 u\in\mathfrak m
@@ -58,11 +63,18 @@ $$
 \subseteq
 N.
 $$
+
 :::
 
-<1>2. Every nonunit belongs to some maximal ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonunit belongs to some maximal ideal.
+
+
+::: pf-proof
+
 Let
 $$
 a\in R
@@ -102,14 +114,21 @@ and therefore
 $$
 a\in M.
 $$
+
 :::
 
-<1>3. If $R$ is local with maximal ideal $\mathfrak m$, then
+:::
+
+::: pf-step
+
+If $R$ is local with maximal ideal $\mathfrak m$, then
 $$
 N=\mathfrak m.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives
 $$
 \mathfrak m\subseteq N.
@@ -135,22 +154,36 @@ Combining the two inclusions,
 $$
 N=\mathfrak m.
 $$
+
 :::
 
-<1>4. Therefore, if $R$ is local, then the set of nonunits is an ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore, if $R$ is local, then the set of nonunits is an ideal.
+
+
+::: pf-proof
+
 By step <1>3, the set of nonunits is exactly the maximal ideal
 $$
 \mathfrak m,
 $$
 which is an ideal.
+
 :::
 
-<1>5. Conversely, assume the set $N$ of nonunits is an ideal.
+:::
+
+::: pf-step
+
+Conversely, assume the set $N$ of nonunits is an ideal.
 Then $N$ is proper.
 
-::: {.proof}
+
+::: pf-proof
+
 The identity
 $$
 1
@@ -164,15 +197,22 @@ so
 $$
 N\ne R.
 $$
+
 :::
 
-<1>6. Every nonzero element of
+:::
+
+::: pf-step
+
+Every nonzero element of
 $$
 R/N
 $$
 is invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 a+N
@@ -203,15 +243,22 @@ $$
 a+N
 $$
 is invertible.
+
 :::
 
-<1>7. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 R/N
 $$
 is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, the quotient is nonzero.
 It is commutative with identity because $R$ is.
 Step <1>6 shows every nonzero element is invertible.
@@ -220,11 +267,18 @@ $$
 R/N
 $$
 is a field.
+
 :::
 
-<1>8. The ideal $N$ is maximal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $N$ is maximal.
+
+
+::: pf-proof
+
 By step <1>7,
 $$
 R/N
@@ -235,11 +289,18 @@ $$
 N
 $$
 is maximal.
+
 :::
 
-<1>9. Every proper ideal of $R$ is contained in $N$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every proper ideal of $R$ is contained in $N$.
+
+
+::: pf-proof
+
 Let
 $$
 I\trianglelefteq R
@@ -263,11 +324,18 @@ Thus every element of $I$ is a nonunit:
 $$
 I\subseteq N.
 $$
+
 :::
 
-<1>10. The ideal $N$ is the unique maximal ideal of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $N$ is the unique maximal ideal of $R$.
+
+
+::: pf-proof
+
 Let
 $$
 M
@@ -283,9 +351,14 @@ $$
 M=N.
 $$
 Thus every maximal ideal equals $N$.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R\text{ is local}
@@ -295,13 +368,19 @@ R\text{ is local}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 proves the forward implication, and step <1>10 proves the converse.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required equivalence.
+
 :::
+
 :::

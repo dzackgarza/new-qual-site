@@ -19,7 +19,6 @@ audit:
 Use the saddle point method to approximate $f ( t ) = \int _ { - \infty } ^ { \infty } \frac { e ^ { - t ( z ^ { 2 } - 1 / 4 ) } \cos t z } { 1 + z ^ { 2 } } \mathrm { d } z$ for $t \gg 1$
 :::
 
-::: {.solution}
 Define
 $$
 J(t)
@@ -36,14 +35,20 @@ $$
 f(t)=\operatorname{Re}J(t).
 $$
 
-<1>1. The exponential phase completes to a square:
+::: pf
+
+::: pf-step
+
+The exponential phase completes to a square:
 $$
 -t\left(z^2-\frac14\right)+itz
 =
 -t\left(z-\frac i2\right)^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \left(z-\frac i2\right)^2
@@ -51,14 +56,21 @@ $$
 z^2-iz-\frac14.
 $$
 Multiplying by $-t$ gives the stated identity.
+
 :::
 
-<1>2. The saddle point of the phase is
+:::
+
+::: pf-step
+
+The saddle point of the phase is
 $$
 z_0=\frac i2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The phase is
 $$
 \Phi(z)
@@ -72,14 +84,21 @@ $$
 -2\left(z-\frac i2\right),
 $$
 which vanishes only at $z=i/2$.
+
 :::
 
-<1>3. The contour of integration may be shifted from the real axis to the line
+:::
+
+::: pf-step
+
+The contour of integration may be shifted from the real axis to the line
 $$
 \operatorname{Im}z=\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The only poles of
 $$
 \frac1{1+z^2}
@@ -121,9 +140,14 @@ $$
 uniformly on the vertical sides. Since those sides have length $1/2$, their
 integrals tend to $0$ as $R\to\infty$. Cauchy's theorem therefore gives the
 contour shift.
+
 :::
 
-<1>4. After the shift
+:::
+
+::: pf-step
+
+After the shift
 $$
 z=x+\frac i2,
 $$
@@ -137,23 +161,32 @@ J(t)
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 z-\frac i2=x
 $$
 on the shifted contour, so the exponential becomes $e^{-tx^2}$. Also
 $dz=dx$.
+
 :::
 
-<1>5. The amplitude at the saddle is
+:::
+
+::: pf-step
+
+The amplitude at the saddle is
 $$
 \frac1{1+(i/2)^2}
 =
 \frac43.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \left(\frac i2\right)^2
@@ -167,9 +200,14 @@ $$
 \frac34.
 $$
 Taking the reciprocal gives $4/3$.
+
 :::
 
-<1>6. As $t\to\infty$,
+:::
+
+::: pf-step
+
+As $t\to\infty$,
 $$
 J(t)
 \sim
@@ -178,7 +216,9 @@ J(t)
 e^{-tx^2}\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 A(x)
@@ -213,16 +253,23 @@ $$
 for each fixed $u$, and the amplitude is bounded on the shifted contour by an
 integrable Gaussian majorant after this rescaling, dominated convergence gives
 the stated asymptotic.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 J(t)
 \sim
 \frac43\sqrt{\frac\pi t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the Gaussian integral
 $$
 \int_{-\infty}^{\infty}e^{-tx^2}\,dx
@@ -230,11 +277,18 @@ $$
 \sqrt{\frac\pi t}
 $$
 in step <1>6.
+
 :::
 
-<1>8. The quantity $J(t)$ is real.
+:::
 
-::: {.proof}
+::: pf-step
+
+The quantity $J(t)$ is real.
+
+
+::: pf-proof
+
 From step <1>4,
 $$
 J(t)
@@ -247,9 +301,14 @@ $$
 The integrand at $-x$ is the complex conjugate of the integrand at $x$.
 Therefore the contributions from $x$ and $-x$ have real sum, and the entire
 integral is real.
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 f(t)
@@ -260,7 +319,9 @@ f(t)
 (t\to\infty).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 f(t)=\operatorname{Re}J(t).
@@ -270,11 +331,15 @@ $$
 \operatorname{Re}J(t)=J(t),
 $$
 and step <1>7 gives its leading asymptotic.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the saddle-point approximation.
+
 :::
+
 :::

@@ -19,7 +19,6 @@ audit:
 For the vectors $A = { \left[ \begin{array} { l } { 1 } \\ { { \sqrt { 2 } } } \\ { { \sqrt { 3 } } } \end{array} \right] } , B = { \left[ \begin{array} { l } { 0 } \\ { { \sqrt { 2 } } } \\ { 2 } \end{array} \right] }$ find an orthogonal transformation that maps A to B.
 :::
 
-::: {.solution}
 Let
 $$
 a=
@@ -37,12 +36,18 @@ b=
 \end{pmatrix}.
 $$
 
-<1>1. The two vectors have the same norm:
+::: pf
+
+::: pf-step
+
+The two vectors have the same norm:
 $$
 \|a\|^2=\|b\|^2=6.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 \|a\|^2=1+2+3=6,
@@ -51,9 +56,14 @@ and
 $$
 \|b\|^2=0+2+4=6.
 $$
+
 :::
 
-<1>2. Put
+:::
+
+::: pf-step
+
+Put
 $$
 u=a-b
 =
@@ -73,7 +83,9 @@ I
 $$
 is orthogonal.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 P=\frac{uu^T}{u^Tu}.
@@ -90,11 +102,18 @@ Therefore
 $$
 H^TH=I.
 $$
+
 :::
 
-<1>3. The Householder transformation sends $a$ to $b$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Householder transformation sends $a$ to $b$.
+
+
+::: pf-proof
+
 Because $\|a\|=\|b\|$,
 $$
 u^Ta
@@ -124,9 +143,14 @@ a-u
 =
 b.
 $$
+
 :::
 
-<1>4. Here
+:::
+
+::: pf-step
+
+Here
 $$
 u^Tu
 =
@@ -139,7 +163,9 @@ $$
 1+\frac{\sqrt3}{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 u^Tu
@@ -156,9 +182,14 @@ $$
 =
 1+\frac{\sqrt3}{2}.
 $$
+
 :::
 
-<1>5. The matrix simplifies to
+:::
+
+::: pf-step
+
+The matrix simplifies to
 $$
 \boxed{
 H=
@@ -170,7 +201,9 @@ H=
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the vector $u$ and the scalar from step <1>4 into the Householder
 formula in step <1>2. The mixed coefficient uses
 $$
@@ -182,14 +215,21 @@ $$
 =
 1-\frac{\sqrt3}{2}.
 $$
+
 :::
 
-<1>6. Directly,
+:::
+
+::: pf-step
+
+Directly,
 $$
 Ha=b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplication gives
 $$
 H
@@ -211,12 +251,16 @@ H
 2
 \end{pmatrix}.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>6 show that the displayed matrix is orthogonal and maps
 $A$ to $B$.
+
 :::
+
 :::

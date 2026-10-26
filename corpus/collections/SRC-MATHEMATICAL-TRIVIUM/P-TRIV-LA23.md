@@ -27,34 +27,51 @@ Consider the basis $\vec { e } _ { i } , i = 1 , 2 , 3$ , in the vector space $\
 Find the eigenvectors of these transformations.
 :::
 
-::: {.solution}
-<1>1. If every direction is stretched by the same factor $\lambda$, then the
+::: pf
+
+::: pf-step
+
+If every direction is stretched by the same factor $\lambda$, then the
 matrix is
 $$
 \boxed{S=\lambda I_3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The transformation sends every vector $v$ to
 $$
 Sv=\lambda v.
 $$
 In the basis $e_1,e_2,e_3$, this is represented by the scalar matrix
 $\lambda I_3$.
+
 :::
 
-<1>2. For the transformation in part (a), every nonzero vector is an
+:::
+
+::: pf-step
+
+For the transformation in part (a), every nonzero vector is an
 eigenvector with eigenvalue $\lambda$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 Sv=\lambda v
 $$
 for every vector $v$.
+
 :::
 
-<1>3. If the three basis directions are stretched by factors
+:::
+
+::: pf-step
+
+If the three basis directions are stretched by factors
 $$
 \lambda_1,\lambda_2,\lambda_3,
 $$
@@ -70,7 +87,9 @@ S=
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 $$
 Se_i=\lambda_i e_i,
@@ -78,21 +97,33 @@ Se_i=\lambda_i e_i,
 i=1,2,3.
 $$
 The $i$th column of the matrix of $S$ is therefore $\lambda_i e_i$.
+
 :::
 
-<1>4. In part (b), each basis vector $e_i$ is an eigenvector with eigenvalue
+:::
+
+::: pf-step
+
+In part (b), each basis vector $e_i$ is an eigenvector with eigenvalue
 $\lambda_i$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the relation
 $$
 Se_i=\lambda_i e_i.
 $$
 If some of the $\lambda_i$ coincide, the corresponding coordinate subspace is
 the full eigenspace for that common eigenvalue.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 n=
 \begin{pmatrix}
@@ -108,12 +139,19 @@ $$
 v=(n\cdot v)n+\bigl(v-(n\cdot v)n\bigr).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first term is the orthogonal projection of $v$ onto the line spanned by
 $n$, and the second lies in $n^\perp$.
+
 :::
 
-<1>6. Stretching only the direction $n$ by a factor $\lambda$ while fixing
+:::
+
+::: pf-step
+
+Stretching only the direction $n$ by a factor $\lambda$ while fixing
 all perpendicular directions gives
 $$
 Sv
@@ -123,17 +161,26 @@ Sv
 v-(n\cdot v)n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The component parallel to $n$ is multiplied by $\lambda$ and the component in
 $n^\perp$ is unchanged.
+
 :::
 
-<1>7. Therefore the matrix for part (c) is
+:::
+
+::: pf-step
+
+Therefore the matrix for part (c) is
 $$
 \boxed{S=I_3+(\lambda-1)nn^T}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 nn^Tv=(n\cdot v)n,
@@ -144,9 +191,14 @@ Sv
 =
 v+(\lambda-1)nn^Tv.
 $$
+
 :::
 
-<1>8. Explicitly,
+:::
+
+::: pf-step
+
+Explicitly,
 $$
 \boxed{
 S=
@@ -158,13 +210,22 @@ S=
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the outer product $nn^T$ in step <1>7.
+
 :::
 
-<1>9. In part (c), $n$ is an eigenvector with eigenvalue $\lambda$.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), $n$ is an eigenvector with eigenvalue $\lambda$.
+
+
+::: pf-proof
+
 Since $n^Tn=1$,
 $$
 Sn
@@ -173,12 +234,19 @@ n+(\lambda-1)n(n^Tn)
 =
 \lambda n.
 $$
+
 :::
 
-<1>10. Every nonzero vector in $n^\perp$ is an eigenvector with eigenvalue
+:::
+
+::: pf-step
+
+Every nonzero vector in $n^\perp$ is an eigenvector with eigenvalue
 $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $n\cdot v=0$, then
 $$
 nn^Tv=0.
@@ -187,12 +255,16 @@ Hence step <1>7 gives
 $$
 Sv=v.
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 solve part (a), steps <1>3--<1>4 solve part (b), and steps
 <1>5--<1>10 solve part (c) and identify all eigendirections.
+
 :::
+
 :::

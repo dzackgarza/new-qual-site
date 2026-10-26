@@ -28,7 +28,6 @@ Show the following:
 (b) $D$ is not a unique factorization domain.
 :::
 
-::: {.solution}
 Set
 $$
 f(x)
@@ -36,7 +35,11 @@ f(x)
 x^2+x-1.
 $$
 
-<1>1. In the field
+::: pf
+
+::: pf-step
+
+In the field
 $$
 F=\QQ(\sqrt5),
 $$
@@ -54,7 +57,9 @@ x-\frac{-1-\sqrt5}{2}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quadratic formula gives the two roots
 $$
 \alpha
@@ -79,14 +84,21 @@ $$
 F[x].
 $$
 Thus $f$ is reducible over $F$.
+
 :::
 
-<1>2. Neither root $\alpha$ nor $\beta$ belongs to
+:::
+
+::: pf-step
+
+Neither root $\alpha$ nor $\beta$ belongs to
 $$
 D=\ZZ[\sqrt5].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \alpha
@@ -138,11 +150,18 @@ shows
 $$
 \beta\notin D.
 $$
+
 :::
 
-<1>3. If a monic quadratic polynomial over an integral domain $A$ is reducible in $A[x]$, then it has a root in $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If a monic quadratic polynomial over an integral domain $A$ is reducible in $A[x]$, then it has a root in $A$.
+
+
+::: pf-proof
+
 Let
 $$
 g(x)
@@ -193,9 +212,14 @@ $$
 -a'
 $$
 is a root of $g$ in $A$.
+
 :::
 
-<1>4. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 x^2+x-1
 $$
@@ -204,7 +228,9 @@ $$
 D[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring $D$ is an integral domain by hypothesis.
 If
 $$
@@ -223,9 +249,14 @@ $$
 $$
 and step <1>2 shows that neither lies in $D$.
 Therefore $f$ is irreducible in $D[x]$.
+
 :::
 
-<1>5. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{
 x^2+x-1
@@ -234,11 +265,18 @@ x^2+x-1
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Irreducibility over $D$ is step <1>4, while reducibility over $F$ is step <1>1.
+
 :::
 
-<1>6. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \alpha
 =
@@ -246,7 +284,9 @@ $$
 $$
 is integral over $D$ but does not lie in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 f(\alpha)=0,
@@ -264,11 +304,18 @@ Step <1>2 shows
 $$
 \alpha\notin D.
 $$
+
 :::
 
-<1>7. Every UFD is integrally closed in its field of fractions.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every UFD is integrally closed in its field of fractions.
+
+
+::: pf-proof
+
 Let
 $$
 A
@@ -342,11 +389,18 @@ $$
 a/b\in A.
 $$
 Hence $A$ is integrally closed.
+
 :::
 
-<1>8. The ring $D$ is not a UFD.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $D$ is not a UFD.
+
+
+::: pf-proof
+
 By step <1>6, there is an element of
 $$
 \operatorname{Frac}(D)=F
@@ -360,11 +414,15 @@ $$
 D\text{ is not a unique factorization domain}.
 }
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>8 proves part (b).
+
 :::
+
 :::

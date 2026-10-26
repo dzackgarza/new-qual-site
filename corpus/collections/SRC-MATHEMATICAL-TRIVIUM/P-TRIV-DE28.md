@@ -25,19 +25,24 @@ Develop a series solution for Laguerre's ODE (given in problem 27).
 Problem 27 of the source gives Laguerre's ODE as $x y'' + (1 - x) y' + a y = 0$.
 :::
 
-::: {.solution}
 Seek a power series
 \[
 y(x)=\sum_{n=0}^{\infty}c_nx^n.
 \]
 
-<1>1. Substitution into Laguerre's equation gives the recurrence
+::: pf
+
+::: pf-step
+
+Substitution into Laguerre's equation gives the recurrence
 \[
 \boxed{c_{n+1}=\frac{n-a}{(n+1)^2}c_n}
 \qquad(n\geq0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The derivatives are
 \[
 y'=\sum_{n=0}^{\infty}(n+1)c_{n+1}x^n,
@@ -53,9 +58,14 @@ For each $n\geq0$, the coefficient of $x^n$ is
 (n+1)^2c_{n+1}+(a-n)c_n,
 \]
 which yields the recurrence.
+
 :::
 
-<1>2. The coefficients are
+:::
+
+::: pf-step
+
+The coefficients are
 \[
 c_n=c_0\frac{(-a)_n}{(n!)^2},
 \]
@@ -65,31 +75,47 @@ where
 \]
 is the rising factorial.
 
-::: {.proof}
+
+::: pf-proof
+
 Iterating step <1>1 gives
 \[
 c_n=c_0\prod_{j=0}^{n-1}\frac{j-a}{(j+1)^2}
 =c_0\frac{(-a)_n}{(n!)^2}.
 \]
+
 :::
 
-<1>3. Hence the analytic series solution at $x=0$ is
+:::
+
+::: pf-step
+
+Hence the analytic series solution at $x=0$ is
 \[
 \boxed{
 y(x)=c_0\sum_{n=0}^{\infty}
 \frac{(-a)_n}{(n!)^2}x^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the coefficients from step <1>2 into the power series. The ratio of consecutive absolute terms is asymptotic to $|x|/n$, so the series converges for every finite $x$.
+
 :::
 
-<1>4. If $a=N\in\mathbb N_0$, the series terminates at degree $N$ and is proportional to the Laguerre polynomial
+:::
+
+::: pf-step
+
+If $a=N\in\mathbb N_0$, the series terminates at degree $N$ and is proportional to the Laguerre polynomial
 \[
 L_N(x)=\sum_{n=0}^{N}(-1)^n\binom{N}{n}\frac{x^n}{n!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $a=N$, step <1>1 gives $c_{N+1}=0$, and every later coefficient is then zero. Moreover,
 \[
 \frac{(-N)_n}{(n!)^2}
@@ -97,11 +123,15 @@ For $a=N$, step <1>1 gives $c_{N+1}=0$, and every later coefficient is then zero
 =(-1)^n\binom Nn\frac1{n!},
 \]
 which is the displayed polynomial after choosing $c_0=1$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 develop the requested series solution, and step <1>4 records its polynomial specialization.
+
 :::
+
 :::

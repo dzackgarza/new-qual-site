@@ -19,8 +19,11 @@ audit:
 Solve $y ^ { \prime } - y = e ^ { 3 t }$ with $y ( 0 ) = 2$
 :::
 
-::: {.solution}
-<1>1. The equation
+::: pf
+
+::: pf-step
+
+The equation
 $$
 y'-y=e^{3t}
 $$
@@ -29,15 +32,22 @@ $$
 \mu(t)=e^{-t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For an equation $y'+p(t)y=q(t)$, an integrating factor is
 $$
 e^{\int p(t)dt}.
 $$
 Here $p(t)=-1$.
+
 :::
 
-<1>2. Multiplying by $e^{-t}$ gives
+:::
+
+::: pf-step
+
+Multiplying by $e^{-t}$ gives
 $$
 \frac d{dt}
 \left(
@@ -47,15 +57,22 @@ e^{-t}y
 e^{2t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The left-hand side expands as
 $$
 e^{-t}y'-e^{-t}y,
 $$
 and the right-hand side is $e^{-t}e^{3t}$.
+
 :::
 
-<1>3. Integrating gives
+:::
+
+::: pf-step
+
+Integrating gives
 $$
 e^{-t}y
 =
@@ -64,11 +81,18 @@ e^{-t}y
 C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative of $e^{2t}$ is $e^{2t}/2$.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 y(t)
 =
@@ -77,16 +101,25 @@ y(t)
 Ce^t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply step <1>3 by $e^t$.
+
 :::
 
-<1>5. The initial condition $y(0)=2$ gives
+:::
+
+::: pf-step
+
+The initial condition $y(0)=2$ gives
 $$
 C=\frac32.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $t=0$ into step <1>4:
 $$
 2
@@ -95,9 +128,14 @@ $$
 +
 C.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 y(t)
@@ -108,13 +146,19 @@ y(t)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>5 into step <1>4.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 satisfies both the differential equation and the initial condition.
+
 :::
+
 :::

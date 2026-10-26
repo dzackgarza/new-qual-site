@@ -25,7 +25,6 @@ A linear transformation A writes in some basis in $\mathbb { R } ^ { n }$ as fol
 (c) Determine the invariant subspaces of A.
 :::
 
-::: {.solution}
 Let
 $$
 A=
@@ -36,7 +35,11 @@ A=
 \end{pmatrix}.
 $$
 
-<1>1. The vector
+::: pf
+
+::: pf-step
+
+The vector
 $$
 v_{-1}=
 \begin{pmatrix}
@@ -45,7 +48,9 @@ v_{-1}=
 $$
 is an eigenvector with eigenvalue $-1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 $$
 Av_{-1}
@@ -56,15 +61,22 @@ Av_{-1}
 =
 -v_{-1}.
 $$
+
 :::
 
-<1>2. The plane
+:::
+
+::: pf-step
+
+The plane
 $$
 S=\{(a,b,a):a,b\in\mathbb R\}
 $$
 is invariant under $A$.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 v=(a,b,a)^T,
@@ -80,9 +92,14 @@ a+2b
 \end{pmatrix},
 $$
 whose first and third coordinates are equal.
+
 :::
 
-<1>3. In coordinates $(a,b)$ on $S$, the restriction of $A$ is represented by
+:::
+
+::: pf-step
+
+In coordinates $(a,b)$ on $S$, the restriction of $A$ is represented by
 $$
 \begin{pmatrix}
 1&2\\
@@ -91,7 +108,9 @@ $$
 $$
 whose eigenvalues are $0$ and $9$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 (a,b)\longmapsto(a+2b,4a+8b).
@@ -108,9 +127,14 @@ $$
 =
 \lambda(\lambda-9).
 $$
+
 :::
 
-<1>4. Eigenvectors for the remaining eigenvalues may be chosen as
+:::
+
+::: pf-step
+
+Eigenvectors for the remaining eigenvalues may be chosen as
 $$
 v_0=
 \begin{pmatrix}
@@ -125,7 +149,9 @@ v_9=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For eigenvalue $0$, the equation
 $$
 a+2b=0
@@ -137,12 +163,19 @@ $$
 a+2b=9a
 $$
 gives $b=4a$, so choose $(a,b)=(1,4)$.
+
 :::
 
-<1>5. The three eigenvectors are mutually orthogonal and therefore form a
+:::
+
+::: pf-step
+
+The three eigenvectors are mutually orthogonal and therefore form a
 basis of $\mathbb R^3$.
 
-::: {.proof}
+
+::: pf-proof
+
 Their pairwise inner products are
 $$
 v_{-1}\cdot v_0=-2+2=0,
@@ -155,9 +188,14 @@ $$
 v_0\cdot v_9=-2+4-2=0.
 $$
 All three vectors are nonzero, so they are linearly independent.
+
 :::
 
-<1>6. A transition matrix whose columns are eigenvectors is
+:::
+
+::: pf-step
+
+A transition matrix whose columns are eigenvectors is
 $$
 \boxed{
 P=
@@ -169,20 +207,34 @@ P=
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The columns are respectively $v_{-1},v_0,v_9$. By step <1>5 they form a
 basis, so $P$ is invertible.
+
 :::
 
-<1>7. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Step <1>6 gives the requested change-of-basis matrix. If the convention is
 that coordinates transform from the original basis to the eigenbasis, the
 coordinate-change matrix is $P^{-1}$.
+
 :::
 
-<1>8. In the eigenbasis,
+:::
+
+::: pf-step
+
+In the eigenbasis,
 $$
 \boxed{
 P^{-1}AP
@@ -195,7 +247,9 @@ P^{-1}AP
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each column of $P$ is an eigenvector, so
 $$
 AP
@@ -204,30 +258,51 @@ P
 \operatorname{diag}(-1,0,9).
 $$
 Multiply on the left by $P^{-1}$.
+
 :::
 
-<1>9. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>8.
+
 :::
 
-<1>10. Each span of a subset of
+:::
+
+::: pf-step
+
+Each span of a subset of
 $$
 \{v_{-1},v_0,v_9\}
 $$
 is invariant under $A$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each $v_\lambda$ is an eigenvector. Therefore $A$ maps every selected
 eigendirection to itself, and hence maps any sum of selected eigendirections
 to itself.
+
 :::
 
-<1>11. Conversely, every invariant subspace of $A$ is the span of a subset of
+:::
+
+::: pf-step
+
+Conversely, every invariant subspace of $A$ is the span of a subset of
 the three eigendirections.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $W\subseteq\mathbb R^3$ be $A$-invariant. Since $W$ is invariant under
 $A$, it is invariant under every polynomial in $A$.
 
@@ -267,9 +342,14 @@ p_\lambda(A)w
 $$
 for each eigenvalue $\lambda$. Thus $W$ is the direct sum of those
 eigendirections that occur in it.
+
 :::
 
-<1>12. Hence the invariant subspaces are exactly
+:::
+
+::: pf-step
+
+Hence the invariant subspaces are exactly
 $$
 \boxed{
 \begin{gathered}
@@ -285,20 +365,33 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 shows that every displayed subspace is invariant, and step <1>11
 shows that no others occur.
+
 :::
 
-<1>13. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 This is step <1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7, <1>9, and <1>13 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

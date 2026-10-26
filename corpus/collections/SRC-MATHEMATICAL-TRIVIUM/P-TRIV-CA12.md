@@ -19,7 +19,6 @@ audit:
 Compute $\int _ { 0 } ^ { \infty } \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x ;$
 :::
 
-::: {.solution}
 Let
 $$
 F(z)=\frac1{1+z^2}
@@ -27,14 +26,20 @@ F(z)=\frac1{1+z^2}
 \frac1{(z-i)(z+i)}.
 $$
 
-<1>1. The function $F$ has a simple pole at $z=i$ with residue
+::: pf
+
+::: pf-step
+
+The function $F$ has a simple pole at $z=i$ with residue
 $$
 \operatorname{Res}_{z=i}F(z)
 =
 \frac1{2i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 F(z)=\frac1{(z-i)(z+i)},
@@ -48,9 +53,14 @@ $$
 =
 \frac1{2i}.
 $$
+
 :::
 
-<1>2. Let $C_R$ be the positively oriented contour consisting of
+:::
+
+::: pf-step
+
+Let $C_R$ be the positively oriented contour consisting of
 $[-R,R]$ and the upper semicircle
 $$
 \Gamma_R=\{Re^{it}:0\leq t\leq\pi\},
@@ -62,7 +72,9 @@ $$
 \pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The only pole of $F$ inside the upper semicircle is $z=i$. By the residue
 theorem and step <1>1,
 $$
@@ -72,16 +84,23 @@ $$
 =
 \pi.
 $$
+
 :::
 
-<1>3. On the semicircular arc $\Gamma_R$,
+:::
+
+::: pf-step
+
+On the semicircular arc $\Gamma_R$,
 $$
 |F(z)|
 \leq
 \frac1{R^2-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $|z|=R$,
 $$
 |1+z^2|
@@ -91,16 +110,23 @@ $$
 R^2-1
 $$
 by the reverse triangle inequality. Taking reciprocals gives the bound.
+
 :::
 
-<1>4. The arc integral tends to zero:
+:::
+
+::: pf-step
+
+The arc integral tends to zero:
 $$
 \int_{\Gamma_R}F(z),dz
 \longrightarrow0
 $$
 as $R\to\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 The length of $\Gamma_R$ is $\pi R$. By the $ML$ estimate and step <1>3,
 $$
 \left|
@@ -110,9 +136,14 @@ $$
 \frac{\pi R}{R^2-1}
 \longrightarrow0.
 $$
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_{-\infty}^{\infty}
 \frac{dx}{1+x^2}
@@ -120,7 +151,9 @@ $$
 \pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \int_{-R}^{R}\frac{dx}{1+x^2}
@@ -130,9 +163,14 @@ $$
 \pi.
 $$
 Let $R\to\infty$ and use step <1>4.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \int_0^{\infty}
@@ -142,7 +180,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is even, so
 $$
 \int_{-\infty}^{\infty}
@@ -153,11 +193,15 @@ $$
 \frac{dx}{1+x^2}.
 $$
 Apply step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required value.
+
 :::
+
 :::

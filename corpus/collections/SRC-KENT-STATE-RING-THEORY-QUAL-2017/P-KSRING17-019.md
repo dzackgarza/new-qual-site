@@ -23,7 +23,6 @@ Let m and n be relatively prime integers.
 (b) Show that $\mathbb { Z } _ { m n }$ and $\mathbb { Z } _ { m } \times \mathbb { Z } _ { n }$ are isomorphic as rings.
 :::
 
-::: {.solution}
 Since
 $$
 \gcd(m,n)=1,
@@ -37,7 +36,11 @@ $$
 um+vn=1.
 $$
 
-<1>1. For arbitrary integers $c,d$, define
+::: pf
+
+::: pf-step
+
+For arbitrary integers $c,d$, define
 $$
 x
 \coloneqq
@@ -50,7 +53,9 @@ x\equiv c\pmod m
 x\equiv d\pmod n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Modulo $m$,
 $$
 um\equiv0,
@@ -91,9 +96,14 @@ x
 d
 \pmod n.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \Phi:\ZZ\to\ZZ/m\ZZ\times\ZZ/n\ZZ
 $$
@@ -105,7 +115,9 @@ $$
 $$
 Then $\Phi$ is a ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Reduction modulo an ideal preserves addition, multiplication, and identity. Hence each coordinate map
 $$
 \ZZ\to\ZZ/m\ZZ
@@ -115,11 +127,18 @@ $$
 \ZZ\to\ZZ/n\ZZ
 $$
 is a ring homomorphism, and therefore their product $\Phi$ is one as well.
+
 :::
 
-<1>3. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 (c+(m),d+(n))
@@ -139,14 +158,21 @@ $$
 (c+(m),d+(n)).
 $$
 Thus $\Phi$ is surjective.
+
 :::
 
-<1>4. The kernel of $\Phi$ is
+:::
+
+::: pf-step
+
+The kernel of $\Phi$ is
 $$
 (mn).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An integer $a$ lies in $\ker\Phi$ exactly when
 $$
 m\mid a
@@ -163,9 +189,14 @@ $$
 =
 (mn).
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \ZZ/mn\ZZ
@@ -175,7 +206,9 @@ $$
 $$
 as rings.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>4, $\Phi$ is a surjective ring homomorphism with kernel $(mn)$. The first isomorphism theorem gives
 $$
 \ZZ/\ker\Phi
@@ -187,11 +220,15 @@ $$
 \ker\Phi=(mn)
 $$
 gives the displayed isomorphism.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

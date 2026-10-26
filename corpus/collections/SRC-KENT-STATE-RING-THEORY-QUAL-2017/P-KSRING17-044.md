@@ -19,14 +19,17 @@ audit:
 Let R be a non-zero commutative ring with 1. Show that if I is an ideal of R such that $1 + a$ is a unit in R for all $a \in I ,$ , then I is contained in every maximal ideal of R.
 :::
 
-::: {.solution}
 Let
 $$
 M
 $$
 be an arbitrary maximal ideal of $R$.
 
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that
 $$
 I\nsubseteq M.
 $$
@@ -35,20 +38,29 @@ $$
 a\in I\setminus M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of
 $$
 I\subseteq M.
 $$
+
 :::
 
-<1>2. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 M+(a)
 $$
 is equal to $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\notin M,
@@ -61,9 +73,14 @@ properly contains $M$. By maximality of $M$,
 $$
 M+(a)=R.
 $$
+
 :::
 
-<1>3. There exist
+:::
+
+::: pf-step
+
+There exist
 $$
 m\in M,
 \qquad
@@ -74,7 +91,9 @@ $$
 1=m+ra.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 1\in M+(a).
@@ -89,15 +108,22 @@ m\in M,
 \qquad
 r\in R.
 $$
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 m=1-ra
 $$
 is a unit of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\in I
@@ -123,11 +149,18 @@ $$
 1-ra=m
 $$
 is a unit.
+
 :::
 
-<1>5. No element of a proper ideal can be a unit.
+:::
 
-::: {.proof}
+::: pf-step
+
+No element of a proper ideal can be a unit.
+
+
+::: pf-proof
+
 If
 $$
 u\in M
@@ -144,15 +177,22 @@ $$
 M=R,
 $$
 contradicting maximality.
+
 :::
 
-<1>6. The assumption
+:::
+
+::: pf-step
+
+The assumption
 $$
 I\nsubseteq M
 $$
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives
 $$
 m\in M,
@@ -162,9 +202,14 @@ Therefore
 $$
 I\subseteq M.
 $$
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 I
@@ -175,17 +220,23 @@ J(R).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The maximal ideal $M$ was arbitrary. By step <1>6,
 $$
 I\subseteq M
 $$
 for every maximal ideal $M$ of $R$. Taking the intersection over all such $M$ gives the displayed containment.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is exactly the required conclusion.
+
 :::
+
 :::

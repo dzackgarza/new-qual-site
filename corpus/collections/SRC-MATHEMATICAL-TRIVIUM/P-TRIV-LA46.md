@@ -29,10 +29,13 @@ Reduce the following quadratic forms to the canonical form and determine the ran
 (c) $\sum_{1 \leqslant i < j \leqslant n} x_i x_j$.
 :::
 
-::: {.solution}
 Assume $n\geq2$.
 
-<1>1. For part (a), one has
+::: pf
+
+::: pf-step
+
+For part (a), one has
 $$
 x_1^2
 +
@@ -43,7 +46,9 @@ x_1^2
 \sum_{i=1}^{n-1}(x_i-x_{i+1})^2+x_n^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the right-hand side gives
 $$
 \sum_{i=1}^{n-1}
@@ -55,9 +60,14 @@ $2\leq i\leq n$ is $2$, and the cross terms are exactly
 $$
 -2\sum_{i=1}^{n-1}x_ix_{i+1}.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 y_i=x_i-x_{i+1},
 \qquad
@@ -72,22 +82,36 @@ $$
 \boxed{y_1^2+\cdots+y_n^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The transformation from $x$ to $y$ is triangular with diagonal entries all
 equal to $1$, hence invertible. Step <1>1 gives the displayed canonical form.
+
 :::
 
-<1>3. Therefore part (a) has
+:::
+
+::: pf-step
+
+Therefore part (a) has
 $$
 \boxed{\operatorname{rank}=n,\qquad \text{inertia}=(n,0),\qquad \text{signature}=n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The canonical form in step <1>2 contains $n$ positive squares and no negative
 or zero squares.
+
 :::
 
-<1>4. For part (b), write
+:::
+
+::: pf-step
+
+For part (b), write
 $$
 q_b(x)
 =
@@ -107,7 +131,9 @@ q_b(x)
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 \left(\sum_i x_i\right)^2
@@ -116,9 +142,14 @@ $$
 +
 2\sum_{i<j}x_ix_j.
 $$
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 e_1
 =
@@ -147,13 +178,20 @@ $$
 \sqrt n,y_1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first identity follows from orthonormality. The second follows because
 the vector $(1,\ldots,1)$ equals $\sqrt n,e_1$ and is orthogonal to
 $e_2,\ldots,e_n$.
+
 :::
 
-<1>6. Hence part (b) becomes
+:::
+
+::: pf-step
+
+Hence part (b) becomes
 $$
 q_b
 =
@@ -163,11 +201,18 @@ q_b
 \sum_{j=2}^{n}y_j^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the identities from step <1>5 into step <1>4.
+
 :::
 
-<1>7. After rescaling
+:::
+
+::: pf-step
+
+After rescaling
 $$
 u_1=\sqrt{\frac{n+1}{2}},y_1,
 \qquad
@@ -179,20 +224,34 @@ $$
 \boxed{u_1^2+u_2^2+\cdots+u_n^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the displayed rescaling into step <1>6.
+
 :::
 
-<1>8. Therefore part (b) has
+:::
+
+::: pf-step
+
+Therefore part (b) has
 $$
 \boxed{\operatorname{rank}=n,\qquad \text{inertia}=(n,0),\qquad \text{signature}=n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 has $n$ positive squares and no negative or zero squares.
+
 :::
 
-<1>9. For part (c), write
+:::
+
+::: pf-step
+
+For part (c), write
 $$
 q_c(x)
 =
@@ -210,7 +269,9 @@ q_c(x)
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange the identity
 $$
 \left(\sum_i x_i\right)^2
@@ -219,9 +280,14 @@ $$
 +
 2\sum_{i<j}x_ix_j.
 $$
+
 :::
 
-<1>10. In the orthonormal coordinates from step <1>5,
+:::
+
+::: pf-step
+
+In the orthonormal coordinates from step <1>5,
 $$
 q_c
 =
@@ -231,7 +297,9 @@ q_c
 \sum_{j=2}^{n}y_j^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 \sum_i x_i=\sqrt n,y_1
@@ -241,9 +309,14 @@ $$
 \sum_i x_i^2=\sum_j y_j^2
 $$
 into step <1>9.
+
 :::
 
-<1>11. After rescaling
+:::
+
+::: pf-step
+
+After rescaling
 $$
 u_1=\sqrt{\frac{n-1}{2}},y_1,
 \qquad
@@ -255,11 +328,18 @@ $$
 \boxed{u_1^2-u_2^2-\cdots-u_n^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the rescaling into step <1>10.
+
 :::
 
-<1>12. Therefore part (c) has
+:::
+
+::: pf-step
+
+Therefore part (c) has
 $$
 \boxed{
 \operatorname{rank}=n,
@@ -270,14 +350,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>11 has one positive square and $n-1$ negative squares.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3, <1>8, and <1>12 give the canonical forms, ranks, and signatures
 for parts (a), (b), and (c), respectively.
+
 :::
+
 :::

@@ -26,7 +26,6 @@ Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_
 In the source this contour is used with the branch cut on the positive real axis, the radius of $\gamma_\epsilon$ sent to zero and the radius of $C_R$ sent to infinity.
 :::
 
-::: {.solution}
 Use the branch
 $$
 \Log z
@@ -42,7 +41,11 @@ F(z)
 \frac{\Log z}{1+z^\alpha}.
 $$
 
-<1>1. The poles of $F$ inside the keyhole contour are
+::: pf
+
+::: pf-step
+
+The poles of $F$ inside the keyhole contour are
 $$
 \zeta_k
 =
@@ -51,16 +54,23 @@ e^{(2k+1)\pi i/\alpha},
 k=0,1,\ldots,\alpha-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The poles occur where
 $$
 z^\alpha=-1.
 $$
 The displayed $\alpha$ roots have arguments strictly between $0$ and $2\pi$,
 so they lie in the slit plane enclosed by the contour.
+
 :::
 
-<1>2. The residue at $\zeta_k$ is
+:::
+
+::: pf-step
+
+The residue at $\zeta_k$ is
 $$
 \operatorname{Res}_{z=\zeta_k}F(z)
 =
@@ -71,7 +81,9 @@ $$
 \frac{(2k+1)\pi}{\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each pole is simple, and
 $$
 \Log\zeta_k=i\theta_k.
@@ -94,9 +106,14 @@ $$
 -\zeta_k.
 $$
 Substitution gives the result.
+
 :::
 
-<1>3. The sum
+:::
+
+::: pf-step
+
+The sum
 $$
 \sum_{k=0}^{\alpha-1}
 \theta_k\zeta_k
@@ -107,7 +124,9 @@ $$
 \csc\left(\frac\pi\alpha\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Put
 $$
 q=e^{2\pi i/\alpha},
@@ -164,9 +183,14 @@ $$
 -\pi i
 \csc\left(\frac\pi\alpha\right).
 $$
+
 :::
 
-<1>4. Therefore the sum of all residues is
+:::
+
+::: pf-step
+
+Therefore the sum of all residues is
 $$
 \sum_{k=0}^{\alpha-1}
 \operatorname{Res}_{z=\zeta_k}F(z)
@@ -175,7 +199,9 @@ $$
 \csc\left(\frac\pi\alpha\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \sum_k
@@ -188,12 +214,19 @@ Use step <1>3 and
 $$
 (-i)(-i)=-1.
 $$
+
 :::
 
-<1>5. The outer and inner circular-arc contributions tend to zero as
+:::
+
+::: pf-step
+
+The outer and inner circular-arc contributions tend to zero as
 $R\to\infty$ and $\varepsilon\to0^+$.
 
-::: {.proof}
+
+::: pf-proof
+
 On the outer circle $|z|=R$,
 $$
 |\Log z|
@@ -243,9 +276,14 @@ $$
 \varepsilon|\log\varepsilon|
 \longrightarrow0.
 $$
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 J_\alpha
 =
@@ -257,7 +295,9 @@ $$
 -2\pi i J_\alpha.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the upper side of the positive real axis, the branch has
 $$
 \Log x=\log x,
@@ -293,9 +333,14 @@ R\to\infty,
 \qquad
 \varepsilon\to0^+.
 $$
+
 :::
 
-<1>7. By the residue theorem,
+:::
+
+::: pf-step
+
+By the residue theorem,
 $$
 -2\pi i J_\alpha
 =
@@ -306,13 +351,20 @@ $$
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, only the two ray contributions survive in the limit. Step
 <1>6 gives their value, while the residue theorem and step <1>4 give the
 right-hand side.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \int_0^\infty
@@ -323,13 +375,19 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Cancel the common factor $-2\pi i$ in step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required value.
+
 :::
+
 :::

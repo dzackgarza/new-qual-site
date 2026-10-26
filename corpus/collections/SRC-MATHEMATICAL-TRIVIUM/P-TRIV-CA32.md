@@ -51,14 +51,17 @@ Figure 5 of the source (contour for problem 32) shows, with the cut line along t
 The source uses $I$ in the fourth part without defining it; it presumably denotes the contour integral of the third part.
 :::
 
-::: {.solution}
 Write
 $$
 s=\sigma+i\tau
 $$
 for the zeta parameter.
 
-<1>1. The Dirichlet series
+::: pf
+
+::: pf-step
+
+The Dirichlet series
 $$
 \sum_{n=1}^{\infty}n^{-s}
 $$
@@ -67,7 +70,9 @@ $$
 \sigma>1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 |n^{-s}|
@@ -79,14 +84,21 @@ $$
 \sum_{n=1}^{\infty}n^{-\sigma},
 $$
 which occurs for $\sigma>1$.
+
 :::
 
-<1>2. The same series diverges when
+:::
+
+::: pf-step
+
+The same series diverges when
 $$
 \sigma\leq1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $\sigma\leq0$, then
 $$
 |n^{-s}|=n^{-\sigma}
@@ -120,26 +132,40 @@ N^{1-\sigma}.
 $$
 For $\sigma<1$ it grows, and for $\sigma=1$ it stays bounded away from
 $0$. Hence these tails do not tend to $0$, violating the Cauchy criterion.
+
 :::
 
-<1>3. Therefore the defining Dirichlet series converges exactly in the
+:::
+
+::: pf-step
+
+Therefore the defining Dirichlet series converges exactly in the
 half-plane
 $$
 \boxed{\operatorname{Re}s>1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. For $t>0$,
+:::
+
+::: pf-step
+
+For $t>0$,
 $$
 \frac1{e^t-1}
 =
 \sum_{m=1}^{\infty}e^{-mt}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $e^{-t}\in(0,1)$,
 $$
 \sum_{m=1}^{\infty}e^{-mt}
@@ -148,9 +174,14 @@ $$
 =
 \frac1{e^t-1}.
 $$
+
 :::
 
-<1>5. If $\operatorname{Re}s>1$, then
+:::
+
+::: pf-step
+
+If $\operatorname{Re}s>1$, then
 $$
 \int_0^\infty
 \frac{t^{s-1}}{e^t-1}
@@ -159,7 +190,9 @@ $$
 \Gamma(s)\zeta(s).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 \frac{t^{s-1}}{e^t-1}
@@ -190,9 +223,14 @@ t^{s-1}e^{-mt}
 m^{-s}\Gamma(s).
 $$
 Summing gives the result.
+
 :::
 
-<1>6. Hence, for $\operatorname{Re}s>1$,
+:::
+
+::: pf-step
+
+Hence, for $\operatorname{Re}s>1$,
 $$
 \boxed{
 \zeta(s)
@@ -204,11 +242,18 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>5 by $\Gamma(s)$.
+
 :::
 
-<1>7. On the slit plane
+:::
+
+::: pf-step
+
+On the slit plane
 $$
 \CC\setminus[0,\infty),
 $$
@@ -230,12 +275,19 @@ I(s)
 $$
 where $H$ is the contour described in the problem.
 
-::: {.proof}
+
+::: pf-proof
+
 This fixes the branch used on the two sides of the positive-real-axis cut.
 The upper side has argument $0$, while the lower side has argument $2\pi$.
+
 :::
 
-<1>8. For $\operatorname{Re}s>1$,
+:::
+
+::: pf-step
+
+For $\operatorname{Re}s>1$,
 $$
 I(s)
 =
@@ -245,7 +297,9 @@ I(s)
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the upper side of the cut, the contour runs from $+\infty$ to the small
 circle and
 $$
@@ -283,9 +337,14 @@ so the integrand has size $O(|w|^{\sigma-2})$. The small-circle contribution
 is therefore $O(\varepsilon^{\sigma-1})$, which tends to $0$ because
 $\sigma>1$. Letting $R\to\infty$ and $\varepsilon\to0^+$ gives the
 formula.
+
 :::
 
-<1>9. Hence for $\operatorname{Re}s>1$,
+:::
+
+::: pf-step
+
+Hence for $\operatorname{Re}s>1$,
 $$
 \boxed{
 I(s)
@@ -295,14 +354,23 @@ I(s)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5 and <1>8.
+
 :::
 
-<1>10. The contour formula in step <1>9 provides the analytic continuation
+:::
+
+::: pf-step
+
+The contour formula in step <1>9 provides the analytic continuation
 mechanism for $\zeta$.
 
-::: {.proof}
+
+::: pf-proof
+
 Away from the zeros of
 $$
 (e^{2\pi i s}-1)\Gamma(s),
@@ -321,9 +389,14 @@ $$
 Thus this quotient continues the original Dirichlet-series function wherever
 the quotient is holomorphic, with removable singularities filled by analytic
 continuation.
+
 :::
 
-<1>11. Suppose $\operatorname{Re}s<0$. The poles of
+:::
+
+::: pf-step
+
+Suppose $\operatorname{Re}s<0$. The poles of
 $$
 \frac{w^{s-1}}{e^w-1}
 $$
@@ -338,7 +411,9 @@ $$
 (2\pi i n)^{s-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The zeros of $e^w-1$ occur at $w=2\pi i n$. For $n\neq0$ these zeros are
 simple because
 $$
@@ -348,9 +423,14 @@ e^w
 =1
 $$
 there. Hence the residue is the numerator evaluated at the pole.
+
 :::
 
-<1>12. Expanding the small circle in the Hankel contour to infinity gives
+:::
+
+::: pf-step
+
+Expanding the small circle in the Hankel contour to infinity gives
 $$
 I(s)
 =
@@ -359,7 +439,9 @@ I(s)
 (2\pi i n)^{s-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\sigma<0$, the large-circle contribution tends to zero: the factor
 $w^{s-1}$ has size $O(R^{\sigma-1})$, so after multiplication by the arc
 length the left-half-plane contribution is $O(R^\sigma)$, while the
@@ -373,9 +455,14 @@ $$
 \sum_{n\neq0}|n|^{\sigma-1}
 $$
 converges when $\sigma<0$.
+
 :::
 
-<1>13. For $\operatorname{Re}s<0$,
+:::
+
+::: pf-step
+
+For $\operatorname{Re}s<0$,
 $$
 \sum_{n\in\ZZ\setminus\{0\}}
 (2\pi i n)^{s-1}
@@ -389,7 +476,9 @@ e^{\pi i s/2}
 \zeta(1-s).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Split the sum into $n>0$ and $n<0$. On the branch
 $0<\arg w<2\pi$,
 $$
@@ -439,9 +528,14 @@ e^{\pi i s/2}
 \right),
 $$
 the result follows.
+
 :::
 
-<1>14. Hence for $\operatorname{Re}s<0$,
+:::
+
+::: pf-step
+
+Hence for $\operatorname{Re}s<0$,
 $$
 I(s)
 =
@@ -454,15 +548,22 @@ e^{\pi i s/2}
 \zeta(1-s).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>13 into step <1>12 and use
 $$
 -2\pi i\cdot i(2\pi)^{s-1}
 =(2\pi)^s.
 $$
+
 :::
 
-<1>15. Comparing steps <1>9 and <1>14 gives
+:::
+
+::: pf-step
+
+Comparing steps <1>9 and <1>14 gives
 $$
 \boxed{
 \zeta(s)
@@ -479,7 +580,9 @@ e^{2\pi i s}-1
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10, the analytic continuation of $\zeta$ is defined from the same
 Hankel integral by
 $$
@@ -506,9 +609,14 @@ $$
 Since $\widetilde\zeta$ agrees with the original zeta function on
 $\operatorname{Re}s>1$, it is the analytic continuation denoted again by
 $\zeta(s)$.
+
 :::
 
-<1>16. The exponential quotient simplifies to
+:::
+
+::: pf-step
+
+The exponential quotient simplifies to
 $$
 \frac{
 e^{3\pi i s/2}
@@ -521,7 +629,9 @@ e^{2\pi i s}-1
 \frac1{2\cos(\pi s/2)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor
 $$
 e^{3\pi i s/2}
@@ -543,9 +653,14 @@ e^{\pi i s}+1
 2e^{\pi i s/2}
 \cos\left(\frac{\pi s}{2}\right).
 $$
+
 :::
 
-<1>17. The functional equation is equivalently
+:::
+
+::: pf-step
+
+The functional equation is equivalently
 $$
 \boxed{
 \zeta(s)
@@ -557,7 +672,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>16, step <1>15 becomes
 $$
 \zeta(s)
@@ -582,9 +699,14 @@ $$
 \cos\left(\frac{\pi s}{2}\right)
 $$
 yields the displayed form.
+
 :::
 
-<1>18. Substituting $s=-1$ gives
+:::
+
+::: pf-step
+
+Substituting $s=-1$ gives
 $$
 \zeta(-1)
 =
@@ -594,12 +716,19 @@ $$
 \zeta(2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The right-hand side of step <1>17 is regular at $s=-1$, so direct
 substitution is valid.
+
 :::
 
-<1>19. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \zeta(-1)
@@ -608,7 +737,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 \sin\left(-\frac\pi2\right)=-1,
@@ -627,12 +758,19 @@ $$
 =
 -\frac1{12}.
 $$
+
 :::
 
-<1>20. The value $-1/12$ is an analytic-continuation value, not the ordinary
+:::
+
+::: pf-step
+
+The value $-1/12$ is an analytic-continuation value, not the ordinary
 sum of $1+2+3+\cdots$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the Dirichlet series defining $\zeta(s)$ converges only for
 $\operatorname{Re}s>1$. At $s=-1$ it becomes
 $$
@@ -640,13 +778,17 @@ $$
 $$
 which diverges. The value in step <1>19 belongs to the meromorphic
 continuation.
+
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>6 answer the convergence and integral-representation parts.
 Steps <1>7--<1>17 construct the contour continuation and functional equation.
 Steps <1>18--<1>20 compute and interpret $\zeta(-1)$.
+
 :::
+
 :::

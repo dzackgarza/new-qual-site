@@ -23,10 +23,15 @@ Explain your answer.
 Explain your answer.
 :::
 
-::: {.solution}
-<1>1. The units of $\ZZ/60\ZZ$ are exactly the residue classes represented by integers relatively prime to $60$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The units of $\ZZ/60\ZZ$ are exactly the residue classes represented by integers relatively prime to $60$.
+
+
+::: pf-proof
+
 A class
 $$
 \overline a\in\ZZ/60\ZZ
@@ -43,14 +48,21 @@ Thus the number of units is Euler's totient
 $$
 \varphi(60).
 $$
+
 :::
 
-<1>2. The number of units is
+:::
+
+::: pf-step
+
+The number of units is
 $$
 \boxed{16}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 60
@@ -72,15 +84,22 @@ $$
 16.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Every ideal of $\ZZ/60\ZZ$ is of the form
+:::
+
+::: pf-step
+
+Every ideal of $\ZZ/60\ZZ$ is of the form
 $$
 (\overline d)
 $$
 for a unique positive divisor $d$ of $60$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \pi:\ZZ\to\ZZ/60\ZZ
@@ -106,14 +125,21 @@ $$
 \overline d.
 $$
 Thus ideals of $\ZZ/60\ZZ$ are in bijection with positive divisors of $60$.
+
 :::
 
-<1>4. The number of ideals is
+:::
+
+::: pf-step
+
+The number of ideals is
 $$
 \boxed{12}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 60=2^2\cdot3^1\cdot5^1,
@@ -137,11 +163,15 @@ $$
 12.
 $$
 By step <1>3, this is exactly the number of ideals of $\ZZ/60\ZZ$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 answers part (a), and step <1>4 answers part (b).
+
 :::
+
 :::

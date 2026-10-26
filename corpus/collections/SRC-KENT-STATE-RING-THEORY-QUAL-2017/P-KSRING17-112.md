@@ -19,7 +19,6 @@ audit:
 [CORRECTED] Show that if R is a commutative ring with 1 that is not a field, then $R [ x ]$ is not a principal ideal domain.
 :::
 
-::: {.solution}
 We prove the contrapositive.
 Assume
 $$
@@ -27,15 +26,28 @@ R[x]
 $$
 is a principal ideal domain.
 
-<1>1. The ring $R[x]$ is an integral domain.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ring $R[x]$ is an integral domain.
+
+
+::: pf-proof
+
 Being an integral domain is part of the definition of a principal ideal domain.
+
 :::
 
-<1>2. The coefficient ring $R$ is an integral domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+The coefficient ring $R$ is an integral domain.
+
+
+::: pf-proof
+
 The ring $R$ embeds in
 $$
 R[x]
@@ -70,20 +82,32 @@ R[x]
 $$
 is nonzero.
 Hence $R$ is an integral domain.
+
 :::
 
-<1>3. Suppose, for contradiction, that $R$ is not a field.
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that $R$ is not a field.
 Then there exists a nonzero nonunit
 $$
 c\in R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In a nonzero commutative ring with identity, being a field is equivalent to every nonzero element being a unit.
 Since $R$ is not a field and is nonzero by step <1>2, some nonzero element is not invertible.
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 (x,c)
 \subseteq
@@ -91,7 +115,9 @@ R[x]
 $$
 is proper.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 1\in(x,c).
@@ -121,9 +147,14 @@ Hence
 $$
 (x,c)\subsetneq R[x].
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 (x,c)
 $$
@@ -133,7 +164,9 @@ $$
 $$
 then $f$ would be constant.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 c\in(f),
@@ -169,11 +202,18 @@ for some nonzero
 $$
 d\in R.
 $$
+
 :::
 
-<1>6. The constant $d$ from step <1>5 is a unit of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The constant $d$ from step <1>5 is a unit of $R$.
+
+
+::: pf-proof
+
 Since
 $$
 x\in(x,c)=(d),
@@ -196,11 +236,18 @@ $$
 d
 $$
 is a unit.
+
 :::
 
-<1>7. The ideal $(x,c)$ is not principal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $(x,c)$ is not principal.
+
+
+::: pf-proof
+
 If it were principal, steps <1>5--<1>6 would give
 $$
 (x,c)=(d)=R[x],
@@ -214,20 +261,32 @@ $$
 \text{ is not principal}.
 }
 $$
+
 :::
 
-<1>8. The assumption that $R$ is not a field contradicts the hypothesis that $R[x]$ is a PID.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumption that $R$ is not a field contradicts the hypothesis that $R[x]$ is a PID.
+
+
+::: pf-proof
+
 A principal ideal domain has every ideal principal.
 Step <1>7 gives a nonprincipal ideal of
 $$
 R[x].
 $$
 This contradiction shows that the assumption in step <1>3 is impossible.
+
 :::
 
-<1>9. Therefore, if
+:::
+
+::: pf-step
+
+Therefore, if
 $$
 R[x]
 $$
@@ -237,11 +296,18 @@ R
 $$
 is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the conclusion of step <1>8.
+
 :::
 
-<1>10. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 \boxed{
 R\text{ not a field}
@@ -250,13 +316,19 @@ R[x]\text{ not a PID}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the contrapositive of step <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

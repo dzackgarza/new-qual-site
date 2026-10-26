@@ -19,14 +19,17 @@ audit:
 ${ \mathrm { S o l v e ~ } } ( x + 1 ) { \frac { d y } { d x } } = 2 y + ( x + 1 ) ^ { 5 / 2 } { \mathrm { ~ w i t h ~ } } y ( 0 ) = 3$
 :::
 
-::: {.solution}
 Work on the interval
 $$
 x>-1,
 $$
 which contains the initial point $x=0$.
 
-<1>1. Divide the equation by $x+1$:
+::: pf
+
+::: pf-step
+
+Divide the equation by $x+1$:
 $$
 y'
 -
@@ -35,11 +38,18 @@ y'
 (x+1)^{3/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x>-1$, one has $x+1\neq0$. Divide both sides of the differential equation by $x+1$.
+
 :::
 
-<1>2. An integrating factor is
+:::
+
+::: pf-step
+
+An integrating factor is
 $$
 \mu(x)
 =
@@ -50,7 +60,9 @@ $$
 (x+1)^{-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \int -\frac2{x+1}\,dx
@@ -58,9 +70,14 @@ $$
 -2\log(x+1)
 $$
 on $x>-1$. Exponentiating gives the stated factor.
+
 :::
 
-<1>3. Multiplying step <1>1 by $\mu(x)$ gives
+:::
+
+::: pf-step
+
+Multiplying step <1>1 by $\mu(x)$ gives
 $$
 \frac d{dx}
 \left[
@@ -70,7 +87,9 @@ $$
 (x+1)^{-1/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The left side becomes
 $$
 (x+1)^{-2}y'
@@ -83,9 +102,14 @@ $$
 =
 (x+1)^{-1/2}.
 $$
+
 :::
 
-<1>4. Integrating gives
+:::
+
+::: pf-step
+
+Integrating gives
 $$
 (x+1)^{-2}y
 =
@@ -94,11 +118,18 @@ $$
 C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative of $(x+1)^{-1/2}$ is $2\sqrt{x+1}$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 y(x)
 =
@@ -107,16 +138,25 @@ y(x)
 C(x+1)^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply step <1>4 by $(x+1)^2$.
+
 :::
 
-<1>6. The initial condition $y(0)=3$ gives
+:::
+
+::: pf-step
+
+The initial condition $y(0)=3$ gives
 $$
 C=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $x=0$ into step <1>5:
 $$
 3
@@ -125,9 +165,14 @@ $$
 +
 C.
 $$
+
 :::
 
-<1>7. Therefore the solution is
+:::
+
+::: pf-step
+
+Therefore the solution is
 $$
 \boxed{
 y(x)
@@ -140,13 +185,19 @@ x>-1.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $C=1$ from step <1>6 into step <1>5.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 satisfies both the differential equation and the initial condition.
+
 :::
+
 :::

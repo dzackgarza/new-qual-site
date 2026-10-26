@@ -24,8 +24,11 @@ Denote the set of invertible elements of the ring $\mathbb { Z } _ { n }$ by $U 
 Justify your answer.
 :::
 
-::: {.solution}
-<1>1. The unit group is
+::: pf
+
+::: pf-step
+
+The unit group is
 $$
 \boxed{
 U_{18}
@@ -41,7 +44,9 @@ U_{18}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A residue class
 $$
 \overline a\in\ZZ/18\ZZ
@@ -62,15 +67,22 @@ are exactly
 $$
 1,5,7,11,13,17.
 $$
+
 :::
 
-<1>2. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \overline5\in U_{18}
 $$
 has order $6$.
 
-::: {.proof}
+
+::: pf-proof
+
 Compute successive powers modulo $18$:
 $$
 \begin{aligned}
@@ -84,9 +96,14 @@ $$
 \end{aligned}
 $$
 The first six powers are distinct, so the order of $\overline5$ is exactly $6$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 U_{18}
@@ -94,7 +111,9 @@ U_{18}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \abs{U_{18}}=6.
@@ -105,11 +124,15 @@ U_{18}
 =
 \langle\overline5\rangle.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>3 answers part (b).
+
 :::
+
 :::

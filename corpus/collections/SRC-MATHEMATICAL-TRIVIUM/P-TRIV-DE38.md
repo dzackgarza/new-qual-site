@@ -19,19 +19,24 @@ audit:
 Show that ${ \frac { d } { d x } } \log x = { \frac { 1 } { x } } - i \pi \delta ( x )$
 :::
 
-::: {.solution}
 Interpret $\log x$ as the boundary value $\log(x+i0)$ of the principal complex logarithm. Then
 \[
 \log(x+i0)=\log|x|+i\pi H(-x),
 \]
 where $H$ is the Heaviside function.
 
-<1>1. Distributionally,
+::: pf
+
+::: pf-step
+
+Distributionally,
 \[
 \frac d{dx}\log|x|=\operatorname{pv}\frac1x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a test function $\phi$,
 \[
 \left\langle\frac d{dx}\log|x|,\phi\right\rangle
@@ -43,14 +48,21 @@ Integrating by parts separately on $(-\infty,-\epsilon)$ and $(\epsilon,\infty)$
 +\log\epsilon\bigl(\phi(-\epsilon)-\phi(\epsilon)\bigr).
 \]
 The last term tends to zero because $\phi(-\epsilon)-\phi(\epsilon)=O(\epsilon)$, while the first tends by definition to $\langle\operatorname{pv}(1/x),\phi\rangle$.
+
 :::
 
-<1>2. Distributionally,
+:::
+
+::: pf-step
+
+Distributionally,
 \[
 \frac d{dx}H(-x)=-\delta(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every test function $\phi$,
 \[
 \left\langle\frac d{dx}H(-x),\phi\right\rangle
@@ -58,32 +70,50 @@ For every test function $\phi$,
 =-\phi(0)
 =\langle-\delta,\phi\rangle.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac d{dx}\log(x+i0)
 =\operatorname{pv}\frac1x-i\pi\delta(x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the boundary-value decomposition preceding step <1>1 and apply steps <1>1--<1>2:
 \[
 \frac d{dx}\bigl(\log|x|+i\pi H(-x)\bigr)
 =\operatorname{pv}\frac1x-i\pi\delta(x).
 \]
+
 :::
 
-<1>4. This is the source's identity when its symbol $1/x$ is understood as the principal-value distribution.
+:::
 
-::: {.proof}
+::: pf-step
+
+This is the source's identity when its symbol $1/x$ is understood as the principal-value distribution.
+
+
+::: pf-proof
+
 The ordinary function $1/x$ is not locally integrable at the origin and therefore does not itself define the distribution required by the formula. Step <1>3 supplies the precise distributional meaning.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>4 establish the stated identity with its necessary boundary-value and principal-value interpretations.
+
 :::
+
 :::

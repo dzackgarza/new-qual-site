@@ -27,19 +27,29 @@ Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with $|a| <
 Erratum: the trailing $\mathrm{d}x$ is printed in the source after $d\theta$ and is a typo; the integral is $\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with integration variable $\theta$ and no $x$ in the integrand.
 :::
 
-::: {.solution}
-<1>1. If $a=0$, then
+::: pf
+
+::: pf-step
+
+If $a=0$, then
 $$
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
 =
 2\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $a=0$ the integrand is identically $1$.
+
 :::
 
-<1>2. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 0<|a|<1
 $$
@@ -58,15 +68,22 @@ $$
 \frac12\left(z+\frac1z\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $z=e^{i\theta}$ to get
 $$
 dz=iz\,d\theta.
 $$
 Euler's formula gives the standard expression for cosine.
+
 :::
 
-<1>3. The integral becomes
+:::
+
+::: pf-step
+
+The integral becomes
 $$
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
 =
@@ -74,7 +91,9 @@ $$
 \frac{2}{i(az^2+2z+a)}\,dz.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting step <1>2,
 $$
 1+a\cos\theta
@@ -85,9 +104,14 @@ $$
 $$
 Multiplying its reciprocal by $dz/(iz)$ gives the displayed contour
 integrand.
+
 :::
 
-<1>4. The roots of
+:::
+
+::: pf-step
+
+The roots of
 $$
 az^2+2z+a
 $$
@@ -98,11 +122,18 @@ z_\pm
 \frac{-1\pm\sqrt{1-a^2}}{a}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the quadratic formula.
+
 :::
 
-<1>5. Exactly one of the roots in step <1>4 lies inside the unit circle,
+:::
+
+::: pf-step
+
+Exactly one of the roots in step <1>4 lies inside the unit circle,
 namely
 $$
 z_+
@@ -112,7 +143,9 @@ z_+
 -\frac{a}{1+\sqrt{1-a^2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rationalizing the first expression gives the second. Hence
 $$
 |z_+|
@@ -129,9 +162,14 @@ so
 $$
 |z_-|>1.
 $$
+
 :::
 
-<1>6. The residue of
+:::
+
+::: pf-step
+
+The residue of
 $$
 \frac{2}{i(az^2+2z+a)}
 $$
@@ -140,7 +178,9 @@ $$
 \frac1{i\sqrt{1-a^2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative of the quadratic denominator is
 $$
 2az+2.
@@ -157,16 +197,23 @@ $$
 =
 \frac1{i\sqrt{1-a^2}}.
 $$
+
 :::
 
-<1>7. Therefore, for $0<|a|<1$,
+:::
+
+::: pf-step
+
+Therefore, for $0<|a|<1$,
 $$
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
 =
 \frac{2\pi}{\sqrt{1-a^2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The unit circle encloses only the pole $z_+$. By the residue theorem and
 step <1>6,
 $$
@@ -178,9 +225,14 @@ $$
 =
 \frac{2\pi}{\sqrt{1-a^2}}.
 $$
+
 :::
 
-<1>8. For every real $a$ with $|a|<1$,
+:::
+
+::: pf-step
+
+For every real $a$ with $|a|<1$,
 $$
 \boxed{
 \int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}
@@ -189,14 +241,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 handles $a=0$, and step <1>7 handles $0<|a|<1$. The same formula
 gives $2\pi$ at $a=0$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested value.
+
 :::
+
 :::

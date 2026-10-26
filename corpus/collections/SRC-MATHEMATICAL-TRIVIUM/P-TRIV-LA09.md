@@ -23,10 +23,13 @@ A = \left[ { \begin{array} { l l l l l } { 1 } & { 1 } & { 1 } & { \dots } & { 1
 $$
 :::
 
-::: {.solution}
 Assume $A$ is $n\times n$.
 
-<1>1. For each
+::: pf
+
+::: pf-step
+
+For each
 $$
 i=2,\ldots,n,
 $$
@@ -35,11 +38,18 @@ $$
 R_i\longleftarrow R_i-R_1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Adding a multiple of one row to another does not change the determinant.
+
 :::
 
-<1>2. After the operations in step <1>1, the matrix becomes
+:::
+
+::: pf-step
+
+After the operations in step <1>1, the matrix becomes
 $$
 \begin{pmatrix}
 1&1&1&\cdots&1\\
@@ -50,7 +60,9 @@ $$
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In row $i\geq2$, the first entry is
 $$
 1-1=0.
@@ -63,31 +75,49 @@ Every other entry in that row is
 $$
 1-1=0.
 $$
+
 :::
 
-<1>3. The transformed matrix has determinant
+:::
+
+::: pf-step
+
+The transformed matrix has determinant
 $$
 1\cdot(-1)^{n-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix in step <1>2 is upper triangular. The determinant of a triangular
 matrix is the product of its diagonal entries.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\det A=(-1)^{n-1}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The row operations in step <1>1 preserve the determinant, and step <1>3
 computes the determinant of the resulting matrix.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required value.
+
 :::
+
 :::

@@ -25,11 +25,14 @@ Consider the reflection maps in $\mathbb { R } ^ { n }$ . The reflection across 
 (c) In $\mathbb { R } ^ { n }$ , formulate and prove a general statement about the existence of rotations that perform the reflection across a given m-dimensional plane, $m = 0 , 1 , . . . , n - 1$ , crossing the origin (where $m = 1$ corresponds to the line, and $m = 0 \textrm { - } \mathrm { t o }$ the point).
 :::
 
-::: {.solution}
 Here “rotation” means an orientation-preserving orthogonal transformation,
 that is, an element of $SO(n)$.
 
-<1>1. Reflection across an $m$-dimensional linear subspace $U\subseteq\mathbb R^n$
+::: pf
+
+::: pf-step
+
+Reflection across an $m$-dimensional linear subspace $U\subseteq\mathbb R^n$
 acts as
 $$
 R_U
@@ -37,17 +40,26 @@ R_U
 I_U\oplus(-I_{U^\perp}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, vectors in $U$ are fixed and vectors perpendicular to $U$ have
 their sign reversed.
+
 :::
 
-<1>2. Its determinant is
+:::
+
+::: pf-step
+
+Its determinant is
 $$
 \boxed{\det R_U=(-1)^{n-m}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose an orthonormal basis adapted to
 $$
 \mathbb R^n=U\oplus U^\perp.
@@ -61,11 +73,18 @@ R_U=
 ).
 $$
 The determinant is the product of these diagonal entries.
+
 :::
 
-<1>3. In $\mathbb R^2$, reflection through the origin is rotation by $\pi$.
+:::
 
-::: {.proof}
+::: pf-step
+
+In $\mathbb R^2$, reflection through the origin is rotation by $\pi$.
+
+
+::: pf-proof
+
 Here $m=0$ and
 $$
 R_{\{0\}}=-I_2
@@ -76,41 +95,69 @@ R_{\{0\}}=-I_2
 \end{pmatrix},
 $$
 which is exactly the matrix of a rotation through angle $\pi$.
+
 :::
 
-<1>4. In $\mathbb R^2$, reflection across any line through the origin is not a
+:::
+
+::: pf-step
+
+In $\mathbb R^2$, reflection across any line through the origin is not a
 rotation.
 
-::: {.proof}
+
+::: pf-proof
+
 Such a line has dimension $m=1$, so step <1>2 gives
 $$
 \det R_U=-1.
 $$
 Every planar rotation has determinant $1$. Hence no rotation can equal this
 reflection.
+
 :::
 
-<1>5. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>3 and <1>4 give the two assertions.
+
 :::
 
-<1>6. In $\mathbb R^3$, central reflection through the origin is not a
+:::
+
+::: pf-step
+
+In $\mathbb R^3$, central reflection through the origin is not a
 rotation.
 
-::: {.proof}
+
+::: pf-proof
+
 Here $m=0$, so
 $$
 \det R=(-1)^3=-1
 $$
 by step <1>2. A rotation belongs to $SO(3)$ and has determinant $1$.
+
 :::
 
-<1>7. In $\mathbb R^3$, reflection across a line through the origin is a
+:::
+
+::: pf-step
+
+In $\mathbb R^3$, reflection across a line through the origin is a
 rotation by $\pi$ around that line.
 
-::: {.proof}
+
+::: pf-proof
+
 Let the line be $U$. Then
 $$
 \mathbb R^3=U\oplus U^\perp,
@@ -118,39 +165,67 @@ $$
 where $U^\perp$ is a $2$-plane. The reflection fixes $U$ and acts as $-I$ on
 $U^\perp$. On a $2$-plane, $-I$ is rotation by $\pi$. Hence the whole map is
 the usual rotation by $\pi$ about the axis $U$.
+
 :::
 
-<1>8. In $\mathbb R^3$, reflection across a plane through the origin is not a
+:::
+
+::: pf-step
+
+In $\mathbb R^3$, reflection across a plane through the origin is not a
 rotation.
 
-::: {.proof}
+
+::: pf-proof
+
 Here $m=2$, so step <1>2 gives
 $$
 \det R=-1.
 $$
 Thus the reflection is orientation-reversing and cannot lie in $SO(3)$.
+
 :::
 
-<1>9. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>6--<1>8 settle the point, line, and plane cases.
+
 :::
 
-<1>10. If $n-m$ is odd, reflection across an $m$-plane cannot be a rotation.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $n-m$ is odd, reflection across an $m$-plane cannot be a rotation.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 \det R_U=(-1)^{n-m}=-1.
 $$
 Every rotation has determinant $1$.
+
 :::
 
-<1>11. If $n-m$ is even, reflection across an $m$-plane is a rotation in the
+:::
+
+::: pf-step
+
+If $n-m$ is even, reflection across an $m$-plane is a rotation in the
 general $SO(n)$ sense.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 n-m=2r.
@@ -166,27 +241,45 @@ of $U^\perp$, while acting as $I$ on $U$. It is therefore exactly $R_U$.
 
 Each $2$-plane rotation has determinant $1$, so their orthogonal direct sum
 has determinant $1$ and lies in $SO(n)$.
+
 :::
 
-<1>12. Therefore reflection across an $m$-dimensional plane through the origin
+:::
+
+::: pf-step
+
+Therefore reflection across an $m$-dimensional plane through the origin
 is realizable by a rotation if and only if
 $$
 \boxed{n-m\text{ is even}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 proves necessity and step <1>11 proves sufficiency.
+
 :::
 
-<1>13. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 Step <1>12 is the requested general statement.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5, <1>9, and <1>13 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

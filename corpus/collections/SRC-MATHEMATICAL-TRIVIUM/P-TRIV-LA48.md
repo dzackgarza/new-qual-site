@@ -46,11 +46,14 @@ reasonable display models produce different transformations of the points
 $(r_i,\varphi_i)$, so the problem is underdetermined as retained.
 :::
 
-::: {.solution}
 The requested command sequence is not determined by the data in the problem
 statement.
 
-<1>1. The displayed initial positions determine only three planar points
+::: pf
+
+::: pf-step
+
+The displayed initial positions determine only three planar points
 $$
 p_i
 =
@@ -60,7 +63,9 @@ r_i
 i=1,2,3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The source specifies for each star only its distance
 $$
 r_i
@@ -75,9 +80,14 @@ $$
 $$
 Those are exactly the polar coordinates of the displayed point.
 No third spatial coordinate or direction vector is specified.
+
 :::
 
-<1>2. An equilateral triangle of side
+:::
+
+::: pf-step
+
+An equilateral triangle of side
 $$
 d
 $$
@@ -90,7 +100,9 @@ $$
 \boxed{R=\frac d{\sqrt3}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The centroid of an equilateral triangle is two thirds of the way from a
 vertex along an altitude.
 The altitude has length
@@ -104,9 +116,14 @@ $$
 =
 \frac d{\sqrt3}.
 $$
+
 :::
 
-<1>3. With the orientation shown in the source, one possible ordered target
+:::
+
+::: pf-step
+
+With the orientation shown in the source, one possible ordered target
 triple is
 $$
 \boxed{
@@ -129,7 +146,9 @@ q_3=
 \right).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The lower side is horizontal and has length
 $$
 d.
@@ -143,9 +162,14 @@ $$
 d.
 $$
 Thus they are precisely the target configuration described in the problem.
+
 :::
 
-<1>4. To determine commands, the problem must specify, for every command
+:::
+
+::: pf-step
+
+To determine commands, the problem must specify, for every command
 sequence
 $$
 C=(\psi_1,\theta_1,\phi_1,T_1,\ldots),
@@ -159,7 +183,9 @@ F_C:
 \text{display positions}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A command sequence solves the problem only if the resulting displayed star
 positions satisfy
 $$
@@ -178,15 +204,22 @@ $$
 F_C
 $$
 on displayed positions is defined.
+
 :::
 
-<1>5. The source does not determine the spatial direction of a star from its
+:::
+
+::: pf-step
+
+The source does not determine the spatial direction of a star from its
 displayed radius
 $$
 r.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \alpha
@@ -237,12 +270,19 @@ $$
 $$
 do not determine the three spatial directions on which the stated
 three-dimensional pitch, yaw, and roll rotations act.
+
 :::
 
-<1>6. Consequently, even the effect of a pure rotation on the displayed
+:::
+
+::: pf-step
+
+Consequently, even the effect of a pure rotation on the displayed
 points is not uniquely determined.
 
-::: {.proof}
+
+::: pf-proof
+
 Take a star with displayed radius
 $$
 r>0.
@@ -268,11 +308,18 @@ $$
 (r_i,\varphi_i)
 $$
 from the information in the source.
+
 :::
 
-<1>7. The effect of the boost command is even less determined by the source.
+:::
 
-::: {.proof}
+::: pf-step
+
+The effect of the boost command is even less determined by the source.
+
+
+::: pf-proof
+
 The statement gives only a proper-time or clock-time duration
 $$
 T
@@ -298,16 +345,23 @@ on displayed star positions associated to the command
 $$
 \text{boost time }T.
 $$
+
 :::
 
-<1>8. Therefore the equations
+:::
+
+::: pf-step
+
+Therefore the equations
 $$
 F_C(p_i)=q_{\sigma(i)}
 $$
 that would determine a successful command sequence have no specified
 left-hand side.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 shows that the rotational part of
 $$
 F_C
@@ -319,9 +373,14 @@ $$
 F_C
 $$
 needed in step <1>4.
+
 :::
 
-<1>9. Hence no unique series of pitch, yaw, roll, and boost commands can be
+:::
+
+::: pf-step
+
+Hence no unique series of pitch, yaw, roll, and boost commands can be
 deduced from
 $$
 r_1,r_2,r_3,
@@ -331,7 +390,9 @@ g
 $$
 as the problem is written.
 
-::: {.proof}
+
+::: pf-proof
+
 The target coordinates are completely determined by
 $$
 d
@@ -345,11 +406,15 @@ Adding a particular projection and boost/aberration law would define a new,
 well-posed problem, but different such additions give different command
 equations.
 Therefore the original source does not determine the requested sequence.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the complete resolution of the problem as retained.
+
 :::
+
 :::

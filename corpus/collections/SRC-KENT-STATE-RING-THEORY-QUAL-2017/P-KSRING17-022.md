@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring, not necessarily with identity, and assume there is some fixed positive integer n such that $n r = 0$ for all $r \in R .$ . Prove that R embeds in a ring S with identity so that R is an ideal of S and $S / R \cong \mathbb { Z } / n \mathbb { Z }$
 :::
 
-::: {.solution}
 Let
 $$
 A
@@ -37,9 +36,15 @@ $$
 kr.
 $$
 
-<1>1. The scalar action of $A$ on $R$ is well-defined.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The scalar action of $A$ on $R$ is well-defined.
+
+
+::: pf-proof
+
 Suppose
 $$
 \overline k=\overline\ell
@@ -65,9 +70,14 @@ $$
 kr=\ell r,
 $$
 so the action depends only on the residue class modulo $n$.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 S
 \coloneqq
@@ -84,7 +94,9 @@ $$
 $$
 Then $S$ is a commutative ring.
 
-::: {.proof}
+
+::: pf-proof
+
 The multiplication is well-defined by step <1>1.
 Distributivity follows from distributivity in $A$ and $R$ and from the $A$-module structure.
 
@@ -142,9 +154,14 @@ $$
 \end{aligned}
 $$
 The second coordinates agree by commutativity of scalar multiplication, so multiplication is associative.
+
 :::
 
-<1>3. The element
+:::
+
+::: pf-step
+
+The element
 $$
 1_S
 \coloneqq
@@ -152,7 +169,9 @@ $$
 $$
 is a multiplicative identity of $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 $$
 (\alpha,r)\in S,
@@ -168,9 +187,14 @@ $$
 \end{aligned}
 $$
 Commutativity gives the same identity on the other side.
+
 :::
 
-<1>4. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \iota:R\to S,
 \qquad
@@ -180,7 +204,9 @@ $$
 $$
 is an injective ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 It is clearly injective and additive. Moreover,
 $$
 \iota(r)\iota(s)
@@ -192,9 +218,14 @@ $$
 \iota(rs).
 $$
 Thus $\iota$ is a ring embedding.
+
 :::
 
-<1>5. The image
+:::
+
+::: pf-step
+
+The image
 $$
 \iota(R)
 =
@@ -202,7 +233,9 @@ $$
 $$
 is an ideal of $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 It is an additive subgroup. For
 $$
 (\alpha,s)\in S
@@ -220,9 +253,14 @@ $$
 \iota(R).
 $$
 By commutativity, multiplication on the other side gives the same conclusion. Hence $\iota(R)\trianglelefteq S$.
+
 :::
 
-<1>6. The projection
+:::
+
+::: pf-step
+
+The projection
 $$
 \pi:S\to A,
 \qquad
@@ -232,7 +270,9 @@ $$
 $$
 is a surjective ring homomorphism with kernel $\iota(R)$.
 
-::: {.proof}
+
+::: pf-proof
+
 The definition of multiplication in $S$ gives
 $$
 \pi((\alpha,r)(\beta,s))
@@ -259,9 +299,14 @@ $$
 =
 \iota(R).
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 S/\iota(R)
@@ -270,7 +315,9 @@ S/\iota(R)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, the first isomorphism theorem gives
 $$
 S/\ker\pi
@@ -285,11 +332,15 @@ and
 $$
 A=\ZZ/n\ZZ.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>3 construct a unital ring $S$, steps <1>4--<1>5 embed $R$ as an ideal of $S$, and step <1>7 identifies the quotient.
+
 :::
+
 :::

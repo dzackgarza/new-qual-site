@@ -19,7 +19,6 @@ audit:
 Let R be an integral domain, S a multiplicative set, and let $\begin{array} { r } { S ^ { - 1 } R = \{ \frac { r } { s } \ | \ r \in R , \ s \in S \} } \end{array}$ (contained in the field of fractions of R). Show that if P is a prime ideal of R, then $S ^ { - 1 } P$ is either a prime ideal of $S ^ { - 1 } R$ or else equals $S ^ { - 1 } R$
 :::
 
-::: {.solution}
 Recall
 $$
 S^{-1}P
@@ -30,7 +29,11 @@ p\in P,\ s\in S
 \right\}.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 P\cap S\ne\varnothing,
 $$
@@ -41,7 +44,9 @@ S^{-1}P
 S^{-1}R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 s\in P\cap S.
@@ -63,9 +68,14 @@ S^{-1}P
 =
 S^{-1}R.
 $$
+
 :::
 
-<1>2. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 $$
 P\cap S=\varnothing.
 $$
@@ -80,7 +90,9 @@ $$
 a\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Membership in
 $$
 S^{-1}P
@@ -122,9 +134,14 @@ Primality of $P$ therefore forces
 $$
 a\in P.
 $$
+
 :::
 
-<1>3. Conversely, if
+:::
+
+::: pf-step
+
+Conversely, if
 $$
 a\in P
 $$
@@ -139,14 +156,21 @@ $$
 S^{-1}P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from the definition of
 $$
 S^{-1}P.
 $$
+
 :::
 
-<1>4. Under the assumption
+:::
+
+::: pf-step
+
+Under the assumption
 $$
 P\cap S=\varnothing,
 $$
@@ -159,17 +183,26 @@ a\in P.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>3.
+
 :::
 
-<1>5. Under the same assumption,
+:::
+
+::: pf-step
+
+Under the same assumption,
 $$
 S^{-1}P
 $$
 is proper.
 
-::: {.proof}
+
+::: pf-proof
+
 The identity is
 $$
 1=\frac11.
@@ -194,9 +227,14 @@ S^{-1}P
 \ne
 S^{-1}R.
 $$
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \frac as,\frac bt
 \in
@@ -213,7 +251,9 @@ $$
 ab\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The product is
 $$
 \frac{ab}{st}.
@@ -236,16 +276,23 @@ implies
 $$
 ab\in P.
 $$
+
 :::
 
-<1>7. Under the assumptions of step <1>6,
+:::
+
+::: pf-step
+
+Under the assumptions of step <1>6,
 $$
 a\in P
 \quad\text{or}\quad
 b\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives
 $$
 ab\in P.
@@ -260,9 +307,14 @@ a\in P
 \quad\text{or}\quad
 b\in P.
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \frac as
 \in
@@ -273,11 +325,18 @@ S^{-1}P
 S^{-1}P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>4 to the conclusion of step <1>7.
+
 :::
 
-<1>9. Hence, if
+:::
+
+::: pf-step
+
+Hence, if
 $$
 P\cap S=\varnothing,
 $$
@@ -289,12 +348,19 @@ S^{-1}P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives properness.
 Steps <1>6--<1>8 give the prime-product condition.
+
 :::
 
-<1>10. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 S^{-1}P
@@ -302,7 +368,9 @@ S^{-1}P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 P\cap S\ne\varnothing,
@@ -314,11 +382,15 @@ P\cap S=\varnothing,
 $$
 step <1>9 gives a prime ideal.
 These are the two exhaustive cases.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

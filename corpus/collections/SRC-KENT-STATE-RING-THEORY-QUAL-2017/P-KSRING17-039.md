@@ -19,8 +19,11 @@ audit:
 Let R be a non-zero commutative ring with 1. Show that an ideal M of R is maximal if and only if $R / M$ is a field.
 :::
 
-::: {.solution}
-<1>1. Assume
+::: pf
+
+::: pf-step
+
+Assume
 $$
 M
 $$
@@ -31,7 +34,9 @@ R/M
 $$
 is a nonzero commutative ring with identity.
 
-::: {.proof}
+
+::: pf-proof
+
 Because a maximal ideal is proper,
 $$
 M\ne R.
@@ -41,9 +46,14 @@ $$
 1+M\ne0+M,
 $$
 so the quotient is nonzero. Since $R$ is commutative with identity, so is $R/M$.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 r+M
 \ne
@@ -58,7 +68,9 @@ $$
 M+(r)=R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 $$
 r+M\ne0+M
@@ -75,11 +87,18 @@ properly contains $M$. Since $M$ is maximal,
 $$
 M+(r)=R.
 $$
+
 :::
 
-<1>3. Every nonzero element of $R/M$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $R/M$ is invertible.
+
+
+::: pf-proof
+
 Let
 $$
 r+M\ne0+M.
@@ -114,25 +133,39 @@ is the inverse of
 $$
 r+M.
 $$
+
 :::
 
-<1>4. Therefore, if $M$ is maximal, then
+:::
+
+::: pf-step
+
+Therefore, if $M$ is maximal, then
 $$
 \boxed{R/M\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a nonzero commutative ring with identity, and step <1>3 shows every nonzero element is invertible.
+
 :::
 
-<1>5. Conversely, assume
+:::
+
+::: pf-step
+
+Conversely, assume
 $$
 R/M
 $$
 is a field.
 Then $M$ is a proper ideal.
 
-::: {.proof}
+
+::: pf-proof
+
 A field is nonzero, so
 $$
 R/M\ne0.
@@ -141,9 +174,14 @@ Hence
 $$
 M\ne R.
 $$
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 $$
 I
 $$
@@ -156,7 +194,9 @@ $$
 I=R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 r\in I\setminus M.
@@ -206,18 +246,30 @@ Hence
 $$
 I=R.
 $$
+
 :::
 
-<1>7. Therefore, if $R/M$ is a field, then
+:::
+
+::: pf-step
+
+Therefore, if $R/M$ is a field, then
 $$
 \boxed{M\text{ is maximal}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows that $M$ is proper. Step <1>6 shows that every ideal properly containing $M$ is the whole ring. This is exactly maximality.
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 M\text{ is maximal}
@@ -226,13 +278,19 @@ R/M\text{ is a field}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required equivalence.
+
 :::
+
 :::

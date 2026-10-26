@@ -20,16 +20,21 @@ Let D be a Euclidean domain.
 Prove that every non-zero prime ideal is a maximal ideal.
 :::
 
-::: {.solution}
 Let
 $$
 P
 $$
 be a nonzero prime ideal of the Euclidean domain $D$.
 
-<1>1. Every ideal of $D$ is principal.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every ideal of $D$ is principal.
+
+
+::: pf-proof
+
 Let
 $$
 I\trianglelefteq D
@@ -94,9 +99,14 @@ $$
 (0).
 $$
 Thus every ideal is principal.
+
 :::
 
-<1>2. Write
+:::
+
+::: pf-step
+
+Write
 $$
 P=(p)
 $$
@@ -106,7 +116,9 @@ p\ne0.
 $$
 Then $p$ is irreducible.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 p=ab.
@@ -145,9 +157,14 @@ $$
 so $b$ is a unit.
 The other case similarly makes $a$ a unit.
 Therefore $p$ is irreducible.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 I
 $$
@@ -162,7 +179,9 @@ I=P
 I=D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 I=(a)
@@ -201,22 +220,33 @@ If $r$ is a unit, $a$ is associate to $p$, hence
 $$
 I=(a)=(p)=P.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{P\text{ is maximal}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ideal $P$ is proper because it is prime.
 Step <1>3 shows that no proper ideal lies strictly between $P$ and $D$.
 Thus $P$ is maximal.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Since $P$ was an arbitrary nonzero prime ideal, step <1>4 proves the assertion.
+
 :::
+
 :::

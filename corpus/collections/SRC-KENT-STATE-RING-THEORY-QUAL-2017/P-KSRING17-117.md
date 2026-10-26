@@ -19,7 +19,6 @@ audit:
 If R is any ring with identity, let $J ( R )$ denote the Jacobson radical of R. Show that if e is any idempotent of R, then $J ( e R e ) = e J ( R ) e$
 :::
 
-::: {.solution}
 Write
 $$
 J
@@ -35,7 +34,11 @@ $$
 e.
 $$
 
-<1>1. For any ring $S$ with identity and any $x\in S$,
+::: pf
+
+::: pf-step
+
+For any ring $S$ with identity and any $x\in S$,
 $$
 \boxed{
 x\in J(S)
@@ -45,7 +48,9 @@ x\in J(S)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 First suppose
 $$
 x\in J(S).
@@ -184,16 +189,23 @@ Therefore
 $$
 x\in J(S).
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 eJe
 \subseteq
 eRe.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 J
@@ -212,9 +224,14 @@ lies in
 $$
 eRe.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 x\in eJe
 $$
@@ -227,7 +244,9 @@ $$
 yx\in J(R).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 x\in eJe,
@@ -241,9 +260,14 @@ Therefore
 $$
 yx\in J(R).
 $$
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 yx
 $$
@@ -252,7 +276,9 @@ $$
 eyx=yx=yxe.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both
 $$
 y
@@ -275,9 +301,14 @@ Therefore
 $$
 e(yx)=yx=(yx)e.
 $$
+
 :::
 
-<1>5. The element
+:::
+
+::: pf-step
+
+The element
 $$
 e-yx
 $$
@@ -286,7 +317,9 @@ $$
 eRe.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3 and the criterion from step <1>1 applied in $R$,
 $$
 1-yx
@@ -337,9 +370,14 @@ is invertible in
 $$
 eRe.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 eJ(R)e
@@ -348,7 +386,9 @@ J(eRe).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 x\in eJ(R)e.
@@ -374,9 +414,14 @@ one has
 $$
 x\in J(eRe).
 $$
+
 :::
 
-<1>7. Now let
+:::
+
+::: pf-step
+
+Now let
 $$
 x\in J(eRe).
 $$
@@ -385,7 +430,9 @@ $$
 x=ex=xe.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every element of the corner ring
 $$
 eRe
@@ -395,9 +442,14 @@ $$
 ere.
 $$
 Hence multiplication by $e$ on either side fixes it.
+
 :::
 
-<1>8. Fix
+:::
+
+::: pf-step
+
+Fix
 $$
 r\in R,
 $$
@@ -411,7 +463,9 @@ eRe.
 $$
 Then $a$ is a unit of $eRe$.
 
-::: {.proof}
+
+::: pf-proof
+
 The element
 $$
 ere
@@ -433,9 +487,14 @@ $$
 eRe.
 $$
 This is exactly $a$.
+
 :::
 
-<1>9. Put
+:::
+
+::: pf-step
+
+Put
 $$
 f
 \coloneqq
@@ -454,7 +513,9 @@ $$
 a+f-b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 x=ex.
@@ -481,9 +542,14 @@ e+f-erex-frex\\
 a+f-b.
 \end{aligned}
 $$
+
 :::
 
-<1>10. Let
+:::
+
+::: pf-step
+
+Let
 $$
 a^{-1}
 \in
@@ -501,7 +567,9 @@ $$
 1-rx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Peirce relations give
 $$
 ef=fe=0,
@@ -560,9 +628,14 @@ e+f-b+b\\
 \end{aligned}
 $$
 Thus $v$ is a two-sided inverse.
+
 :::
 
-<1>11. For every
+:::
+
+::: pf-step
+
+For every
 $$
 r\in R,
 $$
@@ -572,7 +645,9 @@ $$
 $$
 is a unit of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 The element
 $$
 r
@@ -581,18 +656,30 @@ was arbitrary in step <1>8, and step <1>10 constructs an inverse for
 $$
 1-rx.
 $$
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 x\in J(R).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Jacobson-radical criterion from step <1>1 in the ring $R$ to step <1>11.
+
 :::
 
-<1>13. Since
+:::
+
+::: pf-step
+
+Since
 $$
 x=exe,
 $$
@@ -601,7 +688,9 @@ $$
 x\in eJ(R)e.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>12 gives
 $$
 x\in J(R),
@@ -616,9 +705,14 @@ x
 \in
 eJ(R)e.
 $$
+
 :::
 
-<1>14. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 J(eRe)
@@ -627,15 +721,22 @@ eJ(R)e.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The element
 $$
 x\in J(eRe)
 $$
 was arbitrary, and step <1>13 proves the required containment.
+
 :::
 
-<1>15. Combining both inclusions,
+:::
+
+::: pf-step
+
+Combining both inclusions,
 $$
 \boxed{
 J(eRe)
@@ -644,7 +745,9 @@ eJ(R)e.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives
 $$
 eJ(R)e
@@ -652,11 +755,15 @@ eJ(R)e
 J(eRe),
 $$
 and step <1>14 gives the reverse inclusion.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 is the required identity.
+
 :::
+
 :::

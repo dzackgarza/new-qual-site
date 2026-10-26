@@ -20,8 +20,11 @@ Let F be a field.
 Prove that the polynomial ring $F [ x ]$ is a PID and that $F [ x , y ]$ is not a PID.
 :::
 
-::: {.solution}
-<1>1. The polynomial ring
+::: pf
+
+::: pf-step
+
+The polynomial ring
 $$
 F[x]
 $$
@@ -36,7 +39,9 @@ $$
 f\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 f,g\in F[x],
@@ -60,11 +65,18 @@ $$
 \deg r<\deg g.
 $$
 This is exactly the Euclidean division property.
+
 :::
 
-<1>2. Every ideal of $F[x]$ is principal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every ideal of $F[x]$ is principal.
+
+
+::: pf-proof
+
 Let
 $$
 I\trianglelefteq F[x].
@@ -132,9 +144,14 @@ Hence
 $$
 I=(d).
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 F[x]
@@ -142,15 +159,22 @@ F[x]
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring
 $$
 F[x]
 $$
 is an integral domain because $F$ is a field, and step <1>2 shows every ideal is principal.
+
 :::
 
-<1>4. In
+:::
+
+::: pf-step
+
+In
 $$
 F[x,y],
 $$
@@ -162,7 +186,9 @@ I
 $$
 is proper.
 
-::: {.proof}
+
+::: pf-proof
+
 Consider evaluation at the origin:
 $$
 \operatorname{ev}_{(0,0)}:
@@ -188,9 +214,14 @@ so
 $$
 (x,y)\ne F[x,y].
 $$
+
 :::
 
-<1>5. Suppose, for contradiction, that
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that
 $$
 (x,y)=(f)
 $$
@@ -207,20 +238,29 @@ $$
 f\mid y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 x,y\in(x,y)=(f),
 $$
 both $x$ and $y$ are multiples of $f$.
+
 :::
 
-<1>6. The polynomials $x$ and $y$ are irreducible and are not associates in
+:::
+
+::: pf-step
+
+The polynomials $x$ and $y$ are irreducible and are not associates in
 $$
 F[x,y].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring
 $$
 F[x,y]
@@ -244,11 +284,18 @@ $$
 u\in F[x,y]^\times=F^\times,
 $$
 then the monomial supports on the two sides would differ, which is impossible.
+
 :::
 
-<1>7. The element $f$ from step <1>5 must be a unit.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $f$ from step <1>5 must be a unit.
+
+
+::: pf-proof
+
 Since
 $$
 f\mid x
@@ -273,11 +320,18 @@ $$
 f
 $$
 is a unit.
+
 :::
 
-<1>8. The ideal $(x,y)$ is not principal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $(x,y)$ is not principal.
+
+
+::: pf-proof
+
 If
 $$
 (x,y)=(f)
@@ -295,9 +349,14 @@ $$
 \text{ is not principal}.
 }
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 F[x,y]
@@ -305,14 +364,20 @@ F[x,y]
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A PID has every ideal principal.
 Step <1>8 exhibits a nonprincipal ideal.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the first assertion, and step <1>9 proves the second.
+
 :::
+
 :::

@@ -26,7 +26,6 @@ $$
 Prove that if M is a maximal ideal of R, then there is a real number $x _ { 0 } \in [ 0 , 1 ]$ such that $M = \{ f \in R \mid f ( x _ { 0 } ) = 0 \}$ .
 :::
 
-::: {.solution}
 Let
 $$
 M
@@ -36,9 +35,15 @@ $$
 R=C([0,1],\RR).
 $$
 
-<1>1. The functions in $M$ have a common zero in $[0,1]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The functions in $M$ have a common zero in $[0,1]$.
+
+
+::: pf-proof
+
 Suppose, for contradiction, that there is no common zero.
 Then for every
 $$
@@ -143,9 +148,14 @@ for every
 $$
 f\in M.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 I_{x_0}
 \coloneqq
@@ -156,11 +166,18 @@ $$
 M\subseteq I_{x_0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the conclusion of step <1>1.
+
 :::
 
-<1>3. The evaluation map
+:::
+
+::: pf-step
+
+The evaluation map
 $$
 \operatorname{ev}_{x_0}:R\to\RR,
 \qquad
@@ -171,7 +188,9 @@ $$
 I_{x_0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Pointwise addition and multiplication give
 $$
 \operatorname{ev}_{x_0}(f+g)
@@ -207,15 +226,22 @@ $$
 =
 I_{x_0}.
 $$
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 I_{x_0}
 $$
 is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3 and the first isomorphism theorem,
 $$
 R/I_{x_0}
@@ -231,14 +257,21 @@ $$
 I_{x_0}
 $$
 is maximal.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 M=I_{x_0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 M\subseteq I_{x_0}.
@@ -248,9 +281,14 @@ Since a maximal ideal cannot be properly contained in another proper ideal,
 $$
 M=I_{x_0}.
 $$
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 M
@@ -263,13 +301,19 @@ $$
 x_0\in[0,1].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required classification.
+
 :::
+
 :::

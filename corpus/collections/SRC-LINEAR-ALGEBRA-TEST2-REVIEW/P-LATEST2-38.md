@@ -34,10 +34,15 @@ Determine $M^{100}$ from the following choices:
 (E) none of the above
 :::
 
-::: {.solution}
-<1>1. The matrix $M$ cyclically permutes the standard basis vectors.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $M$ cyclically permutes the standard basis vectors.
+
+
+::: pf-proof
+
 Let $e_1,e_2,e_3$ be the standard basis of $\mathbb R^3$.
 From the columns of $M$,
 $$
@@ -48,14 +53,21 @@ Me_2=e_1,
 Me_3=e_2.
 $$
 Thus $M$ acts by a $3$-cycle.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 M^3=I_3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Applying the $3$-cycle from step <1>1 three times returns each basis vector to itself.
 Hence
 $$
@@ -65,9 +77,14 @@ for $j=1,2,3$, so
 $$
 M^3=I_3.
 $$
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 $$
 100=3\cdot33+1,
 $$
@@ -76,7 +93,9 @@ $$
 M^{100}=M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2,
 $$
 \begin{aligned}
@@ -87,20 +106,31 @@ M^{100}
 &=M.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{M^{100}=M}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is answer choice $\boxed{\text{(A)}}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required value.
+
 :::
+
 :::

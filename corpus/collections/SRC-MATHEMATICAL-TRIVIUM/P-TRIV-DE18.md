@@ -23,15 +23,20 @@ $$
 $$
 :::
 
-::: {.solution}
 Let $r=\sqrt{x^2+y^2+z^2}$ and let $\delta_0$ denote the Dirac delta distribution at the origin in $\mathbb R^3$.
 
-<1>1. For $r>0$,
+::: pf
+
+::: pf-step
+
+For $r>0$,
 \[
 \nabla^2\left(\frac{e^{-ar}}r\right)=a^2\frac{e^{-ar}}r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a radial function $f(r)$ in three dimensions,
 \[
 \nabla^2 f=f''+\frac2r f'.
@@ -45,15 +50,22 @@ and
 f''(r)=e^{-ar}\left(\frac{a^2}r+\frac{2a}{r^2}+\frac2{r^3}\right).
 \]
 Substitution cancels the $r^{-2}$ and $r^{-3}$ terms and leaves $a^2e^{-ar}/r$.
+
 :::
 
-<1>2. Distributionally on $\mathbb R^3$,
+:::
+
+::: pf-step
+
+Distributionally on $\mathbb R^3$,
 \[
 \nabla^2\left(\frac{e^{-ar}}r\right)
 =a^2\frac{e^{-ar}}r-4\pi\delta_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 determines the ordinary-function part away from the origin. To determine the singular term, integrate the Laplacian over the ball $B_\epsilon$ and use the divergence theorem:
 \[
 \int_{B_\epsilon}\nabla^2\left(\frac{e^{-ar}}r\right)dV
@@ -61,14 +73,21 @@ Step <1>1 determines the ordinary-function part away from the origin. To determi
 \longrightarrow -4\pi
 \]
 as $\epsilon\to0^+$. The locally integrable term $a^2e^{-ar}/r$ has integral tending to $0$ over $B_\epsilon$. Hence the singular contribution is $-4\pi\delta_0$.
+
 :::
 
-<1>3. The charge density is
+:::
+
+::: pf-step
+
+The charge density is
 \[
 \boxed{\rho(\mathbf r)=Z\delta_0(\mathbf r)-\frac{Za^2}{4\pi}\frac{e^{-ar}}r}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Poisson's equation in SI units is
 \[
 \nabla^2\varphi=-\frac\rho{\varepsilon_0}.
@@ -80,11 +99,15 @@ Using the given potential and step <1>2,
 \left(a^2\frac{e^{-ar}}r-4\pi\delta_0\right).
 \]
 Multiplying by $-\varepsilon_0$ gives the displayed charge distribution.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the charge distribution whose Poisson equation produces the stated potential.
+
 :::
+
 :::

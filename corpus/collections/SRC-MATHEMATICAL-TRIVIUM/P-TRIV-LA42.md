@@ -19,7 +19,6 @@ audit:
 Check if the following points belong to the same plane: (6, 1, 2), (2, 3, 1), (3, 4, 1), (6, 2, 2).
 :::
 
-::: {.solution}
 Let
 $$
 p_1=(6,1,2),
@@ -31,7 +30,11 @@ p_3=(3,4,1),
 p_4=(6,2,2).
 $$
 
-<1>1. Form the displacement vectors from $p_1$:
+::: pf
+
+::: pf-step
+
+Form the displacement vectors from $p_1$:
 $$
 v_2=p_2-p_1=(-4,2,-1),
 $$
@@ -43,16 +46,25 @@ $$
 v_4=p_4-p_1=(0,1,0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are obtained by coordinate-wise subtraction.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 v_3\times v_4=(1,0,-3).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 (-3,3,-1)\times(0,1,0)
@@ -62,14 +74,21 @@ $$
 (-3)\cdot1-3\cdot0\bigr),
 $$
 which equals $(1,0,-3)$.
+
 :::
 
-<1>3. The scalar triple product is
+:::
+
+::: pf-step
+
+The scalar triple product is
 $$
 v_2\cdot(v_3\times v_4)=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2,
 $$
 (-4,2,-1)\cdot(1,0,-3)
@@ -78,35 +97,60 @@ $$
 =
 -1.
 $$
+
 :::
 
-<1>4. The three displacement vectors are linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The three displacement vectors are linearly independent.
+
+
+::: pf-proof
+
 Their scalar triple product is nonzero by step <1>3. Equivalently, the
 $3\times3$ matrix with these vectors as columns has nonzero determinant.
+
 :::
 
-<1>5. Therefore the four points do not lie in one plane.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the four points do not lie in one plane.
+
+
+::: pf-proof
+
 Four points in $\mathbb R^3$ are coplanar exactly when the three displacement
 vectors from one of the points are linearly dependent. Step <1>4 shows that
 they are linearly independent.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{\text{the four points are not coplanar}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

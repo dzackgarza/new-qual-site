@@ -19,20 +19,25 @@ audit:
 Solve $y ^ { \prime } ( x ) = x e ^ { x ^ { 2 } - 2 \log y ( x ) }$
 :::
 
-::: {.solution}
 Because the equation contains $\log y$, work on an interval on which
 $$
 y(x)>0.
 $$
 
-<1>1. Rewrite the differential equation as
+::: pf
+
+::: pf-step
+
+Rewrite the differential equation as
 $$
 y'
 =
 x e^{x^2}y^{-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 e^{-2\log y}
@@ -40,20 +45,32 @@ e^{-2\log y}
 y^{-2}
 $$
 for $y>0$.
+
 :::
 
-<1>2. Multiply by $y^2$:
+:::
+
+::: pf-step
+
+Multiply by $y^2$:
 $$
 y^2y'
 =
 x e^{x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is an algebraic rearrangement of step <1>1.
+
 :::
 
-<1>3. The left-hand side is
+:::
+
+::: pf-step
+
+The left-hand side is
 $$
 y^2y'
 =
@@ -61,16 +78,23 @@ y^2y'
 \frac d{dx}(y^3).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $y^3$ by the chain rule:
 $$
 \frac d{dx}(y^3)
 =
 3y^2y'.
 $$
+
 :::
 
-<1>4. The right-hand side is
+:::
+
+::: pf-step
+
+The right-hand side is
 $$
 x e^{x^2}
 =
@@ -78,16 +102,23 @@ x e^{x^2}
 \frac d{dx}e^{x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $e^{x^2}$:
 $$
 \frac d{dx}e^{x^2}
 =
 2x e^{x^2}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \frac13y^3
 =
@@ -96,11 +127,18 @@ $$
 C_0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate step <1>2 using steps <1>3--<1>4.
+
 :::
 
-<1>6. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 \boxed{
 y^3
@@ -112,12 +150,19 @@ C
 $$
 for an arbitrary constant $C\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply step <1>5 by $3$ and absorb the factor $3$ into the integration
 constant.
+
 :::
 
-<1>7. Thus the solutions are
+:::
+
+::: pf-step
+
+Thus the solutions are
 $$
 \boxed{
 y(x)
@@ -134,15 +179,21 @@ $$
 C+\frac32e^{x^2}>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the real cube root in step <1>6. The strict positivity condition is
 required by the original logarithm $\log y$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the complete family of real solutions on the natural domains
 of the equation.
+
 :::
+
 :::

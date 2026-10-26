@@ -25,7 +25,6 @@ $$
 such that $u ( 1 ) = 0$ and $u ^ { \prime } ( e ) = 0$ . What values of λ are allowed?
 :::
 
-::: {.solution}
 Set
 \[
 t=\log x,
@@ -34,7 +33,11 @@ U(t)=u(e^t),
 \]
 so that $x\in[1,e]$ corresponds to $t\in[0,1]$.
 
-<1>1. The eigenvalue problem becomes
+::: pf
+
+::: pf-step
+
+The eigenvalue problem becomes
 \[
 U''+\lambda U=0,
 \qquad
@@ -43,18 +46,27 @@ U(0)=0,
 U'(1)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $u'(x)=U'(t)/x$, one has $xu'(x)=U'(t)$ and therefore
 \[
 (xu')'=\frac1xU''(t).
 \]
 Multiplying the given equation by $x$ gives $U''=-\lambda U$.
 Also, $u(1)=U(0)$, while $u'(e)=U'(1)/e$, so the second boundary condition is $U'(1)=0$.
+
 :::
 
-<1>2. There is no nonzero solution for $\lambda\leq0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+There is no nonzero solution for $\lambda\leq0$.
+
+
+::: pf-proof
+
 If $\lambda=0$, then $U=A+Bt$.
 The condition $U(0)=0$ gives $A=0$, and $U'(1)=0$ gives $B=0$.
 If $\lambda=-\mu^2<0$, then
@@ -62,9 +74,14 @@ If $\lambda=-\mu^2<0$, then
 U=A\cosh(\mu t)+B\sinh(\mu t).
 \]
 The first condition gives $A=0$, and the second gives $B\mu\cosh\mu=0$, hence $B=0$.
+
 :::
 
-<1>3. For $\lambda>0$, write $\lambda=\mu^2$.
+:::
+
+::: pf-step
+
+For $\lambda>0$, write $\lambda=\mu^2$.
 A nonzero solution exists exactly when
 \[
 \cos\mu=0,
@@ -75,7 +92,9 @@ that is,
 \qquad n=0,1,2,\ldots.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The general solution is
 \[
 U=A\cos(\mu t)+B\sin(\mu t).
@@ -86,9 +105,14 @@ Then
 U'(1)=B\mu\cos\mu,
 \]
 which vanishes for a nonzero solution exactly when $\cos\mu=0$.
+
 :::
 
-<1>4. Hence the allowed values and corresponding nonzero solutions are
+:::
+
+::: pf-step
+
+Hence the allowed values and corresponding nonzero solutions are
 \[
 \boxed{
 \lambda_n=\left(n+\frac12\right)^2\pi^2,
@@ -97,15 +121,21 @@ u_n(x)=C\sin\left(\left(n+\frac12\right)\pi\log x\right),
 \quad n=0,1,2,\ldots,\ C\ne0.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $U_n(t)=C\sin((n+1/2)\pi t)$.
 Substitute $t=\log x$.
 Step <1>2 shows there are no additional eigenvalues.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives all nonzero solutions and all allowed values of $\lambda$.
+
 :::
+
 :::

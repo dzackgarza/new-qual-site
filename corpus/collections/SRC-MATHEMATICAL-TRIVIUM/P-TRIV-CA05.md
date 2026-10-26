@@ -19,7 +19,6 @@ audit:
 Compute the Laurent series of $f ( z ) = { \frac { 1 } { ( z - 3 ) ^ { 3 } } }$ around $z _ { 0 } = i ;$ give the region of convergence.
 :::
 
-::: {.solution}
 Set
 $$
 w=z-i.
@@ -31,7 +30,11 @@ z-3
 w-(3-i).
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \frac1{(z-3)^3}
 =
@@ -41,7 +44,9 @@ $$
 \right)^{-3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor
 $$
 z-3
@@ -53,9 +58,14 @@ z-3
 $$
 Cubing introduces a factor $-1$, and then taking reciprocals gives the
 displayed identity.
+
 :::
 
-<1>2. For $|u|<1$,
+:::
+
+::: pf-step
+
+For $|u|<1$,
 $$
 (1-u)^{-3}
 =
@@ -63,7 +73,9 @@ $$
 \binom{n+2}{2}u^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the geometric series twice:
 $$
 \frac1{1-u}
@@ -74,9 +86,14 @@ The standard binomial-series coefficient for exponent $-3$ is
 $$
 \binom{n+2}{2}.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \frac1{(z-3)^3}
@@ -87,15 +104,22 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 u=\frac{w}{3-i}
 $$
 into step <1>2 and use step <1>1.
+
 :::
 
-<1>4. The series converges when
+:::
+
+::: pf-step
+
+The series converges when
 $$
 |z-i|
 <
@@ -104,7 +128,9 @@ $$
 \sqrt{10}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The binomial series in step <1>2 requires
 $$
 \left|
@@ -121,11 +147,18 @@ $$
 \sqrt{10},
 $$
 this is exactly the stated disk.
+
 :::
 
-<1>5. The radius $\sqrt{10}$ is maximal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The radius $\sqrt{10}$ is maximal.
+
+
+::: pf-proof
+
 The function
 $$
 \frac1{(z-3)^3}
@@ -133,22 +166,33 @@ $$
 has its nearest singularity to the center $i$ at $z=3$, whose distance from
 $i$ is $\sqrt{10}$. A Taylor series about $i$ cannot converge through that
 singularity.
+
 :::
 
-<1>6. Thus the Laurent series about $i$ has region of convergence
+:::
+
+::: pf-step
+
+Thus the Laurent series about $i$ has region of convergence
 $$
 \boxed{|z-i|<\sqrt{10}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The center $z=i$ is not singular, so the Laurent series has no negative-power
 terms and is an ordinary Taylor series. Steps <1>4--<1>5 give its exact disk
 of convergence.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>6 give the requested series and its region of convergence.
+
 :::
+
 :::

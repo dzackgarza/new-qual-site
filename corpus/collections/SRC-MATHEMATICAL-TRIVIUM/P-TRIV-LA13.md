@@ -25,7 +25,6 @@ Consider the matrices $A = { \left[ \begin{array} { l l } { \cos \phi } & { - \s
 (c) What can one say about the eigenvectors of A and B?
 :::
 
-::: {.solution}
 Write
 $$
 c=\cos\phi,
@@ -33,12 +32,18 @@ c=\cos\phi,
 s=\sin\phi.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 A^TA=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 A^T=
@@ -56,9 +61,14 @@ c^2+s^2&0\\
 \end{pmatrix}
 =I.
 $$
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 A^{-1}
@@ -72,16 +82,25 @@ A^T
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from step <1>1.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 B^2=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 $$
 B^2
@@ -97,26 +116,47 @@ c^2+s^2&0\\
 \end{pmatrix}
 =I.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{B^{-1}=B}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives $B^2=I$.
+
 :::
 
-<1>5. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>2 and <1>4 give both inverses.
+
 :::
 
-<1>6. The matrix $A$ rotates vectors counterclockwise by angle $\phi$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ rotates vectors counterclockwise by angle $\phi$.
+
+
+::: pf-proof
+
 For a unit vector
 $$
 v=
@@ -135,15 +175,22 @@ Av
 \end{pmatrix}
 $$
 by the angle-addition formulas.
+
 :::
 
-<1>7. The matrix $B$ reflects vectors across the line making angle
+:::
+
+::: pf-step
+
+The matrix $B$ reflects vectors across the line making angle
 $$
 \frac\phi2
 $$
 with the positive $x$-axis.
 
-::: {.proof}
+
+::: pf-proof
+
 Reflection across a line making angle $\theta$ with the $x$-axis has matrix
 $$
 \begin{pmatrix}
@@ -152,15 +199,27 @@ $$
 \end{pmatrix}.
 $$
 Setting $\theta=\phi/2$ gives exactly $B$.
+
 :::
 
-<1>8. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>6 and <1>7 give the geometrical interpretations.
+
 :::
 
-<1>9. The reflection matrix $B$ has eigenvalue $1$ with eigenvector
+:::
+
+::: pf-step
+
+The reflection matrix $B$ has eigenvalue $1$ with eigenvector
 $$
 u_+
 =
@@ -179,13 +238,20 @@ u_-
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7, vectors along the reflection axis are fixed, while vectors
 perpendicular to that axis have their sign reversed. The two displayed vectors
 span those two directions.
+
 :::
 
-<1>10. Over $\mathbb C$, the rotation matrix $A$ has eigenvalues
+:::
+
+::: pf-step
+
+Over $\mathbb C$, the rotation matrix $A$ has eigenvalues
 $$
 e^{i\phi}
 \qquad\text{and}\qquad
@@ -199,7 +265,9 @@ $$
 $$
 respectively.
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 A
@@ -212,14 +280,21 @@ e^{i\phi}
 \begin{pmatrix}1\\-i\end{pmatrix},
 $$
 and similarly for $e^{-i\phi}$.
+
 :::
 
-<1>11. Over $\mathbb R$, $A$ has real eigenvectors only when
+:::
+
+::: pf-step
+
+Over $\mathbb R$, $A$ has real eigenvectors only when
 $$
 \sin\phi=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The eigenvalues from step <1>10 are real exactly when
 $$
 e^{i\phi}=\pm1,
@@ -234,17 +309,28 @@ A=-I,
 $$
 so every nonzero real vector is an eigenvector. Otherwise the eigenvalues are
 nonreal, hence there are no real eigendirections.
+
 :::
 
-<1>12. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 Steps <1>9--<1>11 describe the eigendirections of both matrices.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5, <1>8, and <1>12 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

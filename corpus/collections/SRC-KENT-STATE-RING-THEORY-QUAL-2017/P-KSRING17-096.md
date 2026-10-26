@@ -20,7 +20,6 @@ Let D be an integral domain and F its field of fractions.
 Show that if g is an isomorphism of D onto itself, then there is a unique isomorphism h of F onto F such that $h ( d ) = g ( d )$ for all d in D.
 :::
 
-::: {.solution}
 For
 $$
 a,b\in D,
@@ -36,9 +35,15 @@ h\left(\frac ab\right)
 }
 $$
 
-<1>1. The definition of $h$ is well-defined.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The definition of $h$ is well-defined.
+
+
+::: pf-proof
+
 Suppose
 $$
 \frac ab
@@ -79,11 +84,18 @@ $$
 $$
 in the fraction field.
 Hence the value of $h$ depends only on the fraction.
+
 :::
 
-<1>2. The map $h$ preserves addition.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $h$ preserves addition.
+
+
+::: pf-proof
+
 For
 $$
 \frac ab,\frac cd\in F,
@@ -120,11 +132,18 @@ h\left(\frac ab\right)
 h\left(\frac cd\right).
 \end{aligned}
 $$
+
 :::
 
-<1>3. The map $h$ preserves multiplication and identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $h$ preserves multiplication and identity.
+
+
+::: pf-proof
+
 One has
 $$
 \begin{aligned}
@@ -155,11 +174,18 @@ h\left(\frac11\right)
 1.
 $$
 Thus $h$ is a unital ring homomorphism.
+
 :::
 
-<1>4. The map $h$ extends $g$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $h$ extends $g$.
+
+
+::: pf-proof
+
 For
 $$
 d\in D,
@@ -181,9 +207,14 @@ h\left(\frac d1\right)\\
 g(d).
 \end{aligned}
 $$
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 $$
 k:F\to F
 $$
@@ -195,16 +226,25 @@ k\left(\frac ab\right)
 $$
 Then $k$ is a well-defined ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 The same argument as in steps <1>1--<1>3 applies to the ring automorphism
 $$
 g^{-1}:D\to D.
 $$
+
 :::
 
-<1>6. The maps $h$ and $k$ are inverse to one another.
+:::
 
-::: {.proof}
+::: pf-step
+
+The maps $h$ and $k$ are inverse to one another.
+
+
+::: pf-proof
+
 For
 $$
 \frac ab\in F,
@@ -237,9 +277,14 @@ Thus
 $$
 k=h^{-1}.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 h:F\to F
@@ -247,13 +292,22 @@ h:F\to F
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>3 show that $h$ is a ring homomorphism, and step <1>6 gives a two-sided inverse.
+
 :::
 
-<1>8. The extension $h$ is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The extension $h$ is unique.
+
+
+::: pf-proof
+
 Let
 $$
 \widetilde h:F\to F
@@ -302,9 +356,14 @@ Thus
 $$
 \widetilde h=h.
 $$
+
 :::
 
-<1>9. Consequently there is a unique field automorphism
+:::
+
+::: pf-step
+
+Consequently there is a unique field automorphism
 $$
 \boxed{
 h:F\overset{\sim}{\longrightarrow}F
@@ -312,13 +371,19 @@ h:F\overset{\sim}{\longrightarrow}F
 $$
 extending $g$.
 
-::: {.proof}
+
+::: pf-proof
+
 Existence is step <1>7 together with step <1>4, and uniqueness is step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

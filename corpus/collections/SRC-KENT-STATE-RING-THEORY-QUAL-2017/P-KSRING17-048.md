@@ -26,7 +26,6 @@ is a field.
 Justify your answer.
 :::
 
-::: {.solution}
 For
 $$
 a\in\FF_5,
@@ -38,7 +37,11 @@ f_a(x)
 x^3+2x^2+ax+3.
 $$
 
-<1>1. The quotient
+::: pf
+
+::: pf-step
+
+The quotient
 $$
 \FF_5[x]/(f_a)
 $$
@@ -51,7 +54,9 @@ $$
 \FF_5[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \FF_5[x]
@@ -61,15 +66,27 @@ $$
 (f_a)
 $$
 is maximal exactly when $f_a$ is irreducible. The quotient by $(f_a)$ is a field exactly when $(f_a)$ is maximal.
+
 :::
 
-<1>2. Because $f_a$ has degree $3$, it is irreducible if and only if it has no root in $\FF_5$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Because $f_a$ has degree $3$, it is irreducible if and only if it has no root in $\FF_5$.
+
+
+::: pf-proof
+
 If a cubic over a field is reducible, one factor in a nontrivial factorization has degree $1$, giving a root. Conversely, a root yields a linear factor by the factor theorem.
+
 :::
 
-<1>3. The values of $f_a$ at the five elements of $\FF_5$ are
+:::
+
+::: pf-step
+
+The values of $f_a$ at the five elements of $\FF_5$ are
 $$
 \begin{aligned}
 f_a(0)&=3,\\
@@ -80,7 +97,9 @@ f_a(4)&=4+4a.
 \end{aligned}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These follow by direct substitution and reduction modulo $5$:
 $$
 \begin{aligned}
@@ -112,15 +131,22 @@ f_a(4)
 4+4a.
 \end{aligned}
 $$
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 a=3,
 $$
 then $f_a$ is reducible.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 f_3(2)
@@ -133,15 +159,22 @@ f_3(2)
 \pmod5.
 $$
 Thus $2$ is a root.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 a=4,
 $$
 then $f_a$ is reducible.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 f_4(1)
@@ -151,15 +184,22 @@ f_4(1)
 0
 $$
 in $\FF_5$. Thus $1$ is a root.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 a\in\{0,1,2\},
 $$
 then $f_a$ has no root in $\FF_5$.
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>3.
 
 For
@@ -192,16 +232,23 @@ $$
 $$
 all nonzero.
 Thus none of these three polynomials has a root in $\FF_5$.
+
 :::
 
-<1>7. Therefore the quotient is a field exactly for
+:::
+
+::: pf-step
+
+Therefore the quotient is a field exactly for
 $$
 \boxed{
 a\in\{0,1,2\}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4--<1>5 exclude
 $$
 a=3,4.
@@ -211,11 +258,15 @@ $$
 a=0,1,2.
 $$
 Step <1>1 then gives the corresponding field quotients.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the complete list.
+
 :::
+
 :::

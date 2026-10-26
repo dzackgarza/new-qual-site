@@ -20,14 +20,17 @@ Let R be any ring with identity, and n any positive integer.
 If $M _ { n } ( R )$ denotes the ring of $n \times n$ matrices with entries in R, prove that $M _ { n } ( I )$ is an ideal of $M _ { n } ( R )$ whenever I is an ideal of R, and that every ideal of $M _ { n } ( R )$ has this form.
 :::
 
-::: {.solution}
 Let
 $$
 E_{ij}
 $$
 denote the standard matrix unit with $1_R$ in position $(i,j)$ and $0$ elsewhere.
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 I\trianglelefteq R,
 $$
@@ -40,7 +43,9 @@ $$
 M_n(R).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set $M_n(I)$ is closed under subtraction entrywise because $I$ is an additive subgroup of $R$.
 
 Let
@@ -71,9 +76,14 @@ $$
 AB\in M_n(I).
 $$
 Thus $M_n(I)$ is a two-sided ideal.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 J\trianglelefteq M_n(R).
 $$
@@ -85,7 +95,9 @@ I
 $$
 Then $I$ is a two-sided ideal of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 0\cdot E_{11}=0\in J,
@@ -139,9 +151,14 @@ $$
 tr,rt\in I.
 $$
 Thus $I\trianglelefteq R$.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 A=(a_{ij})\in J,
 $$
@@ -151,7 +168,9 @@ a_{ij}
 $$
 lies in $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 For any indices
 $$
 i,j,
@@ -175,14 +194,21 @@ so by definition
 $$
 a_{ij}\in I.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 J\subseteq M_n(I).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 A=(a_{ij})\in J.
@@ -191,9 +217,14 @@ By step <1>3, every entry $a_{ij}$ lies in $I$. Therefore
 $$
 A\in M_n(I).
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 r\in I,
 $$
@@ -202,7 +233,9 @@ $$
 rE_{k\ell}\in J.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of $I$,
 $$
 rE_{11}\in J.
@@ -220,14 +253,21 @@ Hence
 $$
 rE_{k\ell}\in J.
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 M_n(I)\subseteq J.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 A=(a_{k\ell})\in M_n(I).
@@ -255,16 +295,23 @@ Therefore
 $$
 M_n(I)\subseteq J.
 $$
+
 :::
 
-<1>7. Hence every ideal of $M_n(R)$ is of the form $M_n(I)$ for a unique ideal $I$ of $R$:
+:::
+
+::: pf-step
+
+Hence every ideal of $M_n(R)$ is of the form $M_n(I)$ for a unique ideal $I$ of $R$:
 $$
 \boxed{
 J=M_n(I).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4 and <1>6 prove the two inclusions.
 
 Uniqueness follows because if
@@ -285,11 +332,15 @@ Thus
 $$
 I=I'.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the first assertion, and steps <1>2--<1>7 prove the classification of all ideals of $M_n(R)$.
+
 :::
+
 :::

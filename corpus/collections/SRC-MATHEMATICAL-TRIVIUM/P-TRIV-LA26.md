@@ -33,8 +33,11 @@ larger than exact preservation of the quadratic form: positive scalar
 dilations also preserve the cone.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 q_E(x)=x^Tx
 $$
@@ -48,7 +51,9 @@ $$
 A^TA=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $A^TA=I$, then
 $$
 q_E(Ax)
@@ -79,18 +84,30 @@ on every vector, so
 $$
 A^TA=I.
 $$
+
 :::
 
-<1>2. Therefore the transformations in part (a) are exactly
+:::
+
+::: pf-step
+
+Therefore the transformations in part (a) are exactly
 $$
 \boxed{O(3)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the real orthogonal group.
+
 :::
 
-<1>3. For the cone in part (b), put
+:::
+
+::: pf-step
+
+For the cone in part (b), put
 $$
 J=
 \operatorname{diag}(1,-1,-1,-1)
@@ -100,20 +117,29 @@ $$
 q(x)=x^TJx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Then the cone equation is exactly
 $$
 q(x)=0.
 $$
+
 :::
 
-<1>4. Every matrix satisfying
+:::
+
+::: pf-step
+
+Every matrix satisfying
 $$
 A^TJA=J
 $$
 preserves the cone.
 
-::: {.proof}
+
+::: pf-proof
+
 For such $A$,
 $$
 q(Ax)
@@ -125,15 +151,22 @@ x^TJx
 q(x).
 $$
 Hence $q(x)=0$ if and only if $q(Ax)=0$.
+
 :::
 
-<1>5. More generally, every matrix satisfying
+:::
+
+::: pf-step
+
+More generally, every matrix satisfying
 $$
 A^TJA=cJ
 $$
 with $c>0$ preserves the cone setwise.
 
-::: {.proof}
+
+::: pf-proof
+
 Then
 $$
 q(Ax)=c,q(x),
@@ -146,15 +179,22 @@ with
 $$
 L^TJL=J.
 $$
+
 :::
 
-<1>6. Conversely, if an invertible $A$ preserves the cone setwise, then
+:::
+
+::: pf-step
+
+Conversely, if an invertible $A$ preserves the cone setwise, then
 $$
 A^TJA=cJ
 $$
 for some $c>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Define the quadratic form
 $$
 r(x)=q(Ax)=x^TA^TJAx.
@@ -177,9 +217,14 @@ $$
 Because congruent real symmetric matrices have the same inertia,
 $A^TJA$ has signature $(1,3)$. The form $cJ$ has that same signature only
 when $c>0$.
+
 :::
 
-<1>7. Thus the exact form-preserving transformations in part (b) are
+:::
+
+::: pf-step
+
+Thus the exact form-preserving transformations in part (b) are
 $$
 \boxed{O(1,3)},
 $$
@@ -188,11 +233,18 @@ $$
 \boxed{\mathbb R_{>0}\cdot O(1,3)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4--<1>6 give the two characterizations.
+
 :::
 
-<1>8. For part (c), let
+:::
+
+::: pf-step
+
+For part (c), let
 $$
 J_{p,n-p}
 =
@@ -206,20 +258,29 @@ $$
 q(x)=x^TJ_{p,n-p}x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Then the hyperboloid in the problem is the level set
 $$
 q(x)=R^2.
 $$
+
 :::
 
-<1>9. Every matrix satisfying
+:::
+
+::: pf-step
+
+Every matrix satisfying
 $$
 A^TJ_{p,n-p}A=J_{p,n-p}
 $$
 preserves the hyperboloid.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x$,
 $$
 q(Ax)
@@ -231,9 +292,14 @@ x^TJ_{p,n-p}x
 q(x).
 $$
 Hence the level set $q=R^2$ is preserved.
+
 :::
 
-<1>10. Conversely, if an invertible $A$ preserves the hyperboloid
+:::
+
+::: pf-step
+
+Conversely, if an invertible $A$ preserves the hyperboloid
 $$
 q(x)=R^2
 $$
@@ -243,7 +309,9 @@ q(Ax)=q(x)
 $$
 for every $x$ with $q(x)>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $x$ satisfy $q(x)>0$. Set
 $$
 t=\frac{R}{\sqrt{q(x)}}.
@@ -264,15 +332,22 @@ Since $t\neq0$,
 $$
 q(Ax)=q(x).
 $$
+
 :::
 
-<1>11. The equality
+:::
+
+::: pf-step
+
+The equality
 $$
 q(Ax)=q(x)
 $$
 holds for every $x\in\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 The difference
 $$
 p(x)=q(Ax)-q(x)
@@ -284,14 +359,21 @@ $$
 $$
 A real polynomial that vanishes on a nonempty open set is identically zero.
 Hence $p(x)=0$ for all $x$.
+
 :::
 
-<1>12. Therefore the transformations in part (c) are exactly
+:::
+
+::: pf-step
+
+Therefore the transformations in part (c) are exactly
 $$
 \boxed{O(p,n-p)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>11,
 $$
 x^T(A^TJ_{p,n-p}A-J_{p,n-p})x=0
@@ -301,12 +383,16 @@ $$
 A^TJ_{p,n-p}A=J_{p,n-p}.
 $$
 This is the defining relation for $O(p,n-p)$. Step <1>9 proves the converse.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 solves part (a), step <1>7 solves part (b), and step <1>12 solves
 part (c).
+
 :::
+
 :::

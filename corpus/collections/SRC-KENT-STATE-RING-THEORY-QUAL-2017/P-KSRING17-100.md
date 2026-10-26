@@ -19,7 +19,6 @@ audit:
 Show that the ring Z[i] of Gaussian integers is a Euclidean ring and compute the greatest common divisor of $5 + i$ and 13 using the Euclidean algorithm.
 :::
 
-::: {.solution}
 Let
 $$
 \ZZ[i]
@@ -33,7 +32,11 @@ N(a+bi)
 a^2+b^2.
 $$
 
-<1>1. The norm is multiplicative:
+::: pf
+
+::: pf-step
+
+The norm is multiplicative:
 $$
 N(zw)=N(z)N(w)
 $$
@@ -42,7 +45,9 @@ $$
 z,w\in\ZZ[i].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 z=a+bi,
@@ -67,9 +72,14 @@ zw\,\overline z\,\overline w\\
 N(z)N(w).
 \end{aligned}
 $$
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \alpha,\beta\in\ZZ[i],
 \qquad
@@ -96,7 +106,9 @@ $$
 \abs{y-n}\le\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The fraction field of
 $$
 \ZZ[i]
@@ -111,9 +123,14 @@ $$
 \frac12
 $$
 of an integer, so $m,n$ can be chosen as stated.
+
 :::
 
-<1>3. Set
+:::
+
+::: pf-step
+
+Set
 $$
 q
 \coloneqq
@@ -128,7 +145,9 @@ N\left(
 \frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \frac{\alpha}{\beta}-q
@@ -149,9 +168,14 @@ N\left(
 \frac12.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 $$
 r
 \coloneqq
@@ -170,7 +194,9 @@ $$
 N(r)<N(\beta).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 r
@@ -199,9 +225,14 @@ because
 $$
 N(\beta)>0.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \ZZ[i]
@@ -209,11 +240,18 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives Euclidean division with remainder of strictly smaller norm whenever the remainder is nonzero.
+
 :::
 
-<1>6. For the elements
+:::
+
+::: pf-step
+
+For the elements
 $$
 13
 \qquad\text{and}\qquad
@@ -230,7 +268,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -260,9 +300,14 @@ N(2+3i)
 N(5+i),
 $$
 so this is a valid Euclidean-division step.
+
 :::
 
-<1>7. The next division is exact:
+:::
+
+::: pf-step
+
+The next division is exact:
 $$
 \boxed{
 5+i
@@ -271,7 +316,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -283,9 +330,14 @@ $$
 \end{aligned}
 $$
 Thus the remainder is zero.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 2+3i
 $$
@@ -298,7 +350,9 @@ $$
 13.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In a Euclidean domain, the last nonzero remainder in the Euclidean algorithm is a greatest common divisor.
 By steps <1>6--<1>7, the last nonzero remainder is
 $$
@@ -320,15 +374,19 @@ denotes equality up to multiplication by a unit
 $$
 \pm1,\pm i.
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves that
 $$
 \ZZ[i]
 $$
 is Euclidean, and step <1>8 gives the requested greatest common divisor.
+
 :::
+
 :::

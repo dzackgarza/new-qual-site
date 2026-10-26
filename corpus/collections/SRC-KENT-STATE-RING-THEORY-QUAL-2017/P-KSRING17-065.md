@@ -20,7 +20,6 @@ Let R be a commutative ring with identity.
 Show that if x and y are nilpotent elements of R then $x + y$ is nilpotent and the set of all nilpotent elements is an ideal in R.
 :::
 
-::: {.solution}
 Let
 $$
 \mathcal N
@@ -28,7 +27,11 @@ $$
 \{r\in R:r^k=0\text{ for some }k\ge1\}.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 x^m=0
 $$
@@ -41,7 +44,9 @@ $$
 (x+y)^{m+n-1}=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the binomial theorem,
 $$
 (x+y)^{m+n-1}
@@ -81,11 +86,18 @@ Thus every summand is zero, and hence
 $$
 (x+y)^{m+n-1}=0.
 $$
+
 :::
 
-<1>2. The sum of two nilpotent elements is nilpotent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sum of two nilpotent elements is nilpotent.
+
+
+::: pf-proof
+
 If
 $$
 x,y\in\mathcal N,
@@ -108,11 +120,18 @@ Thus
 $$
 x+y\in\mathcal N.
 $$
+
 :::
 
-<1>3. The additive inverse of a nilpotent element is nilpotent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The additive inverse of a nilpotent element is nilpotent.
+
+
+::: pf-proof
+
 If
 $$
 x^m=0,
@@ -129,20 +148,32 @@ Thus
 $$
 -x\in\mathcal N.
 $$
+
 :::
 
-<1>4. The set $\mathcal N$ is an additive subgroup of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $\mathcal N$ is an additive subgroup of $R$.
+
+
+::: pf-proof
+
 The element
 $$
 0
 $$
 is nilpotent.
 Step <1>2 gives closure under addition, and step <1>3 gives closure under additive inverses.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 r\in R
 $$
@@ -155,7 +186,9 @@ $$
 rx\in\mathcal N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 m\ge1
@@ -178,9 +211,14 @@ rx
 \in
 \mathcal N.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \mathcal N
@@ -188,15 +226,21 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $\mathcal N$ is an additive subgroup.
 By step <1>5, it is closed under multiplication by arbitrary elements of $R$.
 Thus it is an ideal.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves the first assertion, and step <1>6 proves the second.
+
 :::
+
 :::

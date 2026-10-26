@@ -24,10 +24,15 @@ Let I be the set of functions f in S such that $f ( t ) \to 0 { \mathrm { ~ a s 
 (b) Suppose $x \in S$ is such that there is an $i \in I$ with ix = x. Show that $x ( t ) = 0$ for all sufficiently large |t|.
 :::
 
-::: {.solution}
-<1>1. The set $I$ is nonempty and closed under subtraction.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $I$ is nonempty and closed under subtraction.
+
+
+::: pf-proof
+
 The zero function belongs to $I$.
 
 Let
@@ -55,9 +60,14 @@ Since $f-g$ is bounded and continuous, one has
 $$
 f-g\in I.
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 f\in I
 $$
@@ -70,7 +80,9 @@ $$
 hf\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $h$ is bounded, there exists
 $$
 M\ge0
@@ -103,18 +115,30 @@ The product $hf$ is continuous and bounded, so
 $$
 hf\in I.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{I\trianglelefteq S.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that $I$ is an additive subgroup of $S$, and step <1>2 shows that it absorbs multiplication by arbitrary elements of $S$. Since $S$ is commutative, this is exactly the ideal condition.
+
 :::
 
-<1>4. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 i\in I,
 \qquad
@@ -137,7 +161,9 @@ $$
 \abs t>T.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 i\in I,
@@ -154,9 +180,14 @@ Apply the definition of this limit with
 $$
 \varepsilon=\frac12.
 $$
+
 :::
 
-<1>5. For every
+:::
+
+::: pf-step
+
+For every
 $$
 t
 $$
@@ -169,7 +200,9 @@ $$
 x(t)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluating
 $$
 ix=x
@@ -202,9 +235,14 @@ implies
 $$
 x(t)=0.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 x(t)=0
@@ -212,13 +250,19 @@ x(t)=0
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the constant $T$ from step <1>4 and apply step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

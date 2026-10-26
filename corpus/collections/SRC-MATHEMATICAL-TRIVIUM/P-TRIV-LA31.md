@@ -29,38 +29,64 @@ $$
 (c) Give a geometrical interpretation of the transformations $e ^ { \theta M _ { i } } , i = x , y , z$ acting on the vectors in $\mathbb { R } ^ { 3 }$
 :::
 
-::: {.solution}
-<1>1. For each $i\in\{x,y,z\}$,
+::: pf
+
+::: pf-step
+
+For each $i\in\{x,y,z\}$,
 $$
 \boxed{\operatorname{Tr}M_i=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each displayed matrix has zero diagonal.
+
 :::
 
-<1>2. For each $i\in\{x,y,z\}$,
+:::
+
+::: pf-step
+
+For each $i\in\{x,y,z\}$,
 $$
 \boxed{M_i^T=-M_i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each matrix is skew-symmetric by inspection: transposition exchanges the two
 nonzero off-diagonal entries and reverses their signs.
+
 :::
 
-<1>3. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>1--<1>2 give the trace and transpose of all three generators.
+
 :::
 
-<1>4. For each generator $M_i$,
+:::
+
+::: pf-step
+
+For each generator $M_i$,
 $$
 M_i^3=-M_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For example,
 $$
 M_x^2
@@ -77,9 +103,14 @@ M_x^3=M_xM_x^2=-M_x.
 $$
 The computations for $M_y$ and $M_z$ are identical after permuting
 coordinates.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 e^{\theta M_i}
@@ -88,7 +119,9 @@ I+\sin\theta,M_i+(1-\cos\theta)M_i^2.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 M_i^{2k+1}=(-1)^kM_i
@@ -106,9 +139,14 @@ and the nonconstant even terms sum to
 $$
 (1-\cos\theta)M_i^2.
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 e^{\theta M_x}
@@ -121,11 +159,18 @@ e^{\theta M_x}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $M_x$ and $M_x^2$ into step <1>5.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 e^{\theta M_y}
@@ -138,11 +183,18 @@ e^{\theta M_y}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $M_y$ and $M_y^2$ into step <1>5.
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 e^{\theta M_z}
@@ -155,41 +207,75 @@ e^{\theta M_z}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $M_z$ and $M_z^2$ into step <1>5.
+
 :::
 
-<1>9. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>6--<1>8 give all three exponentials.
+
 :::
 
-<1>10. The transformation $e^{\theta M_x}$ is rotation by angle $\theta$
+:::
+
+::: pf-step
+
+The transformation $e^{\theta M_x}$ is rotation by angle $\theta$
 about the $x$-axis.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 fixes the $x$-coordinate and rotates the $(y,z)$-coordinates by the
 standard planar rotation matrix.
+
 :::
 
-<1>11. The transformations $e^{\theta M_y}$ and $e^{\theta M_z}$ are rotations
+:::
+
+::: pf-step
+
+The transformations $e^{\theta M_y}$ and $e^{\theta M_z}$ are rotations
 by angle $\theta$ about the $y$- and $z$-axes, respectively.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 fixes the $y$-coordinate and rotates the $(z,x)$-plane, while step
 <1>8 fixes the $z$-coordinate and rotates the $(x,y)$-plane.
+
 :::
 
-<1>12. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 Steps <1>10--<1>11 give the geometrical interpretation.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3, <1>9, and <1>12 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

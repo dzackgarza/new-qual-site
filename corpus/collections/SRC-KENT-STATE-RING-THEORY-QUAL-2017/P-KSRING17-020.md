@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring with 1 and let I and J be ideals of R such that $I + J = R$ Show that $R / ( I \cap J ) \cong R / I \oplus R / J$ .
 :::
 
-::: {.solution}
 Define
 $$
 \varphi:R\to R/I\oplus R/J
@@ -31,9 +30,15 @@ $$
 (r+I,r+J).
 $$
 
-<1>1. The map $\varphi$ is a ring homomorphism.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is a ring homomorphism.
+
+
+::: pf-proof
+
 For
 $$
 r,s\in R,
@@ -65,14 +70,21 @@ $$
 (1_R+I,1_R+J),
 $$
 the identity of the product ring.
+
 :::
 
-<1>2. The kernel of $\varphi$ is
+:::
+
+::: pf-step
+
+The kernel of $\varphi$ is
 $$
 I\cap J.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \varphi(r)=(0+I,0+J)
@@ -89,9 +101,14 @@ $$
 =
 I\cap J.
 $$
+
 :::
 
-<1>3. Because
+:::
+
+::: pf-step
+
+Because
 $$
 I+J=R,
 $$
@@ -106,7 +123,9 @@ $$
 i+j=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equality
 $$
 I+J=R
@@ -125,11 +144,18 @@ i\in I,
 \qquad
 j\in J.
 $$
+
 :::
 
-<1>4. The map $\varphi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 (a+I,b+J)
@@ -184,9 +210,14 @@ $$
 (a+I,b+J),
 $$
 and $\varphi$ is surjective.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R/(I\cap J)
@@ -195,7 +226,9 @@ R/I\oplus R/J.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>4, $\varphi$ is a surjective ring homomorphism with kernel
 $$
 I\cap J.
@@ -210,11 +243,15 @@ Substitute
 $$
 \ker\varphi=I\cap J.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the desired ring isomorphism.
+
 :::
+
 :::

@@ -30,7 +30,6 @@ Find the dimension of the subspace spanned by
 (A) $2$  (B) $3$  (C) $4$  (D) $5$  (E) $6$
 :::
 
-::: {.solution}
 Let
 $$
 v_1=\begin{pmatrix}1\\1\\0\\0\end{pmatrix},
@@ -40,9 +39,15 @@ v_3=\begin{pmatrix}0\\1\\0\\0\end{pmatrix},
 v_4=\begin{pmatrix}2\\0\\0\\3\end{pmatrix}.
 $$
 
-<1>1. The span of all six listed vectors has dimension at most $3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The span of all six listed vectors has dimension at most $3$.
+
+
+::: pf-proof
+
 Every listed vector has third coordinate equal to $0$.
 Hence their span is contained in
 $$
@@ -66,11 +71,18 @@ $$
 \dim W=3.
 $$
 Therefore the required span has dimension at most $3$.
+
 :::
 
-<1>2. The vectors $v_1,v_3,v_4$ are linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vectors $v_1,v_3,v_4$ are linearly independent.
+
+
+::: pf-proof
+
 Suppose
 $$
 av_1+bv_3+cv_4=0.
@@ -96,28 +108,46 @@ $$
 b=0.
 $$
 Thus only the trivial linear combination vanishes.
+
 :::
 
-<1>3. The span has dimension at least $3$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The span has dimension at least $3$.
+
+
+::: pf-proof
+
 Step <1>2 exhibits three linearly independent vectors among the six given vectors.
 Hence the span has dimension at least $3$.
+
 :::
 
-<1>4. Therefore the dimension is
+:::
+
+::: pf-step
+
+Therefore the dimension is
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives an upper bound of $3$, while step <1>3 gives a lower bound of $3$.
 Thus the dimension is exactly $3$, which is answer choice $\boxed{\text{(B)}}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required dimension.
+
 :::
+
 :::

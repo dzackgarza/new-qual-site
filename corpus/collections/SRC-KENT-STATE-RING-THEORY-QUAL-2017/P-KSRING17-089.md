@@ -23,8 +23,11 @@ Let D be a principal ideal domain.
 (b) Show that $d \in D$ is a least common multiple of a and b if and only if $( a ) \cap ( b ) = ( d )$
 :::
 
-::: {.solution}
-<1>1. A least common multiple of
+::: pf
+
+::: pf-step
+
+A least common multiple of
 $$
 a,b\in D
 $$
@@ -49,18 +52,27 @@ $$
 d\mid c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard divisibility definition of a least common multiple in an integral domain.
 As usual, least common multiples are unique only up to multiplication by a unit.
+
 :::
 
-<1>2. Assume $d$ is a least common multiple of $a$ and $b$.
+:::
+
+::: pf-step
+
+Assume $d$ is a least common multiple of $a$ and $b$.
 Then
 $$
 (d)\subseteq(a)\cap(b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\mid d
@@ -87,14 +99,21 @@ is an ideal containing $d$, it contains every multiple of $d$:
 $$
 (d)\subseteq(a)\cap(b).
 $$
+
 :::
 
-<1>3. Under the same hypothesis,
+:::
+
+::: pf-step
+
+Under the same hypothesis,
 $$
 (a)\cap(b)\subseteq(d).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 c\in(a)\cap(b).
@@ -125,18 +144,30 @@ Therefore
 $$
 (a)\cap(b)\subseteq(d).
 $$
+
 :::
 
-<1>4. Hence if $d$ is a least common multiple, then
+:::
+
+::: pf-step
+
+Hence if $d$ is a least common multiple, then
 $$
 (a)\cap(b)=(d).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>3.
+
 :::
 
-<1>5. Conversely, assume
+:::
+
+::: pf-step
+
+Conversely, assume
 $$
 (a)\cap(b)=(d).
 $$
@@ -147,7 +178,9 @@ a\mid d
 b\mid d.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 d\in(d)
@@ -167,9 +200,14 @@ a\mid d
 \qquad\text{and}\qquad
 b\mid d.
 $$
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 $$
 c\in D
 $$
@@ -179,7 +217,9 @@ $$
 d\mid c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 a\mid c
@@ -201,20 +241,32 @@ Therefore
 $$
 d\mid c.
 $$
+
 :::
 
-<1>7. Thus, if
+:::
+
+::: pf-step
+
+Thus, if
 $$
 (a)\cap(b)=(d),
 $$
 then $d$ is a least common multiple of $a$ and $b$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows that $d$ is a common multiple, and step <1>6 shows that $d$ divides every common multiple.
 These are exactly the conditions from step <1>1.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 d\text{ is an lcm of }a,b
@@ -223,13 +275,19 @@ d\text{ is an lcm of }a,b
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 proves the forward implication and step <1>7 proves the converse.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>8 proves part (b).
+
 :::
+
 :::

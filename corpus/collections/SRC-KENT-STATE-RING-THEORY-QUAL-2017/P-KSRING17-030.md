@@ -20,7 +20,6 @@ A ring R is called simple if $R ^ { 2 } \neq 0$ and 0 and R are its only ideals.
 Show that the center of a simple ring is 0 or a field.
 :::
 
-::: {.solution}
 Let
 $$
 Z(R)
@@ -36,7 +35,11 @@ $$
 Z(R)\ne0.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 0\ne z\in Z(R),
 $$
@@ -45,7 +48,9 @@ $$
 zR\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 zR=0.
@@ -96,9 +101,14 @@ Therefore
 $$
 zR\ne0.
 $$
+
 :::
 
-<1>2. For every
+:::
+
+::: pf-step
+
+For every
 $$
 0\ne z\in Z(R),
 $$
@@ -107,7 +117,9 @@ $$
 zR=R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $z$ is central,
 $$
 zR
@@ -137,11 +149,18 @@ By step <1>1 this ideal is nonzero. Since $R$ is simple,
 $$
 zR=R.
 $$
+
 :::
 
-<1>3. The ring $R$ has a multiplicative identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ has a multiplicative identity.
+
+
+::: pf-proof
+
 Choose
 $$
 0\ne z\in Z(R).
@@ -211,11 +230,18 @@ r,
 $$
 where centrality of $z$ is used to rearrange the factors.
 Thus $e$ is a two-sided identity of $R$.
+
 :::
 
-<1>4. Every nonzero element of $Z(R)$ is invertible in $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $Z(R)$ is invertible in $R$.
+
+
+::: pf-proof
+
 Let
 $$
 0\ne c\in Z(R).
@@ -237,11 +263,18 @@ $$
 dc=cd=e.
 $$
 Hence $d$ is a two-sided inverse of $c$.
+
 :::
 
-<1>5. The inverse of every nonzero central element is again central.
+:::
 
-::: {.proof}
+::: pf-step
+
+The inverse of every nonzero central element is again central.
+
+
+::: pf-proof
+
 Let
 $$
 c\in Z(R)^\times
@@ -278,16 +311,23 @@ for every $r$, so
 $$
 d\in Z(R).
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 Z(R)\text{ is either }0\text{ or a field}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Under the standing assumption
 $$
 Z(R)\ne0,
@@ -301,11 +341,15 @@ $$
 Z(R)
 $$
 is a field.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required dichotomy.
+
 :::
+
 :::

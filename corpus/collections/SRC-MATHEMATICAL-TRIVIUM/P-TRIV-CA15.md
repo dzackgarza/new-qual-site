@@ -25,7 +25,6 @@ Fourier-transform interpretation, and the contour choice according to the sign
 of $\alpha$, use $\alpha\in\RR$.
 :::
 
-::: {.solution}
 Let
 $$
 F_\alpha(z)
@@ -34,14 +33,20 @@ F_\alpha(z)
 {(3-iz)(1+iz)}.
 $$
 
-<1>1. The poles of $F_\alpha$ are
+::: pf
+
+::: pf-step
+
+The poles of $F_\alpha$ are
 $$
 z=i
 \qquad\text{and}\qquad
 z=-3i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equations
 $$
 1+iz=0
@@ -51,16 +56,23 @@ $$
 3-iz=0
 $$
 give respectively $z=i$ and $z=-3i$.
+
 :::
 
-<1>2. The residue at $z=i$ is
+:::
+
+::: pf-step
+
+The residue at $z=i$ is
 $$
 \operatorname{Res}_{z=i}F_\alpha(z)
 =
 \frac{e^{-\alpha}}{4i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 1+iz=i(z-i),
@@ -74,16 +86,23 @@ i(3-i i)
 =
 \frac{e^{-\alpha}}{4i}.
 $$
+
 :::
 
-<1>3. The residue at $z=-3i$ is
+:::
+
+::: pf-step
+
+The residue at $z=-3i$ is
 $$
 \operatorname{Res}_{z=-3i}F_\alpha(z)
 =
 -\frac{e^{3\alpha}}{4i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative of $3-iz$ is $-i$, and
 $$
 1+i(-3i)=4.
@@ -96,9 +115,14 @@ $$
 =
 -\frac{e^{3\alpha}}{4i}.
 $$
+
 :::
 
-<1>4. If $\alpha>0$, then
+:::
+
+::: pf-step
+
+If $\alpha>0$, then
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -109,7 +133,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Close the real segment by an upper semicircle. On the upper half-plane,
 $$
 |e^{i\alpha z}|
@@ -145,9 +171,14 @@ $$
 =
 \frac\pi2 e^{-\alpha}.
 $$
+
 :::
 
-<1>5. If $\alpha<0$, then
+:::
+
+::: pf-step
+
+If $\alpha<0$, then
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -158,7 +189,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Close in the lower half-plane. There
 $$
 |e^{i\alpha z}|
@@ -183,9 +216,14 @@ $$
 \frac\pi2 e^{3\alpha}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. If $\alpha=0$, then
+:::
+
+::: pf-step
+
+If $\alpha=0$, then
 $$
 \int_{-\infty}^{\infty}
 \frac{dx}{(3-ix)(1+ix)}
@@ -193,13 +231,20 @@ $$
 \frac\pi2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Close in the upper half-plane. The rational integrand is $O(|z|^{-2})$, so
 the semicircular arc tends to zero. The residue at $i$ is $1/(4i)$ by
 step <1>2 with $\alpha=0$. Thus the residue theorem gives $\pi/2$.
+
 :::
 
-<1>7. Hence, for every real $\alpha$,
+:::
+
+::: pf-step
+
+Hence, for every real $\alpha$,
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -213,14 +258,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4--<1>6 give the three sign cases. At $\alpha=0$, both displayed
 formulas equal $\pi/2$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required integral.
+
 :::
+
 :::

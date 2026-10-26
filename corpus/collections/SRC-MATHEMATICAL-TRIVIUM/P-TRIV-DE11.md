@@ -23,7 +23,6 @@ $$
 $$
 :::
 
-::: {.solution}
 Write
 $$
 M(x,y)=xy^2-y,
@@ -31,13 +30,19 @@ M(x,y)=xy^2-y,
 N(x,y)=x.
 $$
 
-<1>1. The differential form
+::: pf
+
+::: pf-step
+
+The differential form
 $$
 M\,dx+N\,dy
 $$
 is not exact.
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 M_y=2xy-1,
@@ -47,16 +52,23 @@ $$
 N_x=1.
 $$
 These are not equal in general.
+
 :::
 
-<1>2. For $y\neq0$,
+:::
+
+::: pf-step
+
+For $y\neq0$,
 $$
 \frac{N_x-M_y}{M}
 =
 -\frac2y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 N_x-M_y
@@ -79,9 +91,14 @@ $$
 =
 -\frac2y.
 $$
+
 :::
 
-<1>3. Hence an integrating factor depending only on $y$ is
+:::
+
+::: pf-step
+
+Hence an integrating factor depending only on $y$ is
 $$
 \mu(y)
 =
@@ -92,7 +109,9 @@ $$
 y^{-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a differential form $Mdx+Ndy$, if $(N_x-M_y)/M$ depends only on $y$, then
 $$
 \mu(y)
@@ -101,9 +120,14 @@ $$
 $$
 is an integrating factor.
 Apply step <1>2.
+
 :::
 
-<1>4. Multiplying by $y^{-2}$ gives
+:::
+
+::: pf-step
+
+Multiplying by $y^{-2}$ gives
 $$
 \left(
 x-\frac1y
@@ -113,13 +137,22 @@ x-\frac1y
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply each coefficient of the original form by $y^{-2}$.
+
 :::
 
-<1>5. The form in step <1>4 is exact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The form in step <1>4 is exact.
+
+
+::: pf-proof
+
 One has
 $$
 \frac{\partial}{\partial y}
@@ -138,9 +171,14 @@ $$
 =
 \frac1{y^2}.
 $$
+
 :::
 
-<1>6. A potential function is
+:::
+
+::: pf-step
+
+A potential function is
 $$
 F(x,y)
 =
@@ -149,7 +187,9 @@ F(x,y)
 \frac{x}{y}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the $dx$-coefficient from step <1>4 with respect to $x$:
 $$
 \int
@@ -168,9 +208,14 @@ $$
 \frac{x}{y^2}+h'(y).
 $$
 Matching the $dy$-coefficient in step <1>4 forces $h'(y)=0$.
+
 :::
 
-<1>7. Therefore every nonzero solution satisfies
+:::
+
+::: pf-step
+
+Therefore every nonzero solution satisfies
 $$
 \boxed{
 \frac{x^2}{2}
@@ -181,11 +226,18 @@ C.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For an exact differential equation $dF=0$, the potential $F$ is constant along solutions.
+
 :::
 
-<1>8. Solving for $y$ gives
+:::
+
+::: pf-step
+
+Solving for $y$ gives
 $$
 \boxed{
 y(x)
@@ -195,7 +247,9 @@ y(x)
 $$
 on intervals where the denominator is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>7,
 $$
 \frac{x}{y}
@@ -211,25 +265,36 @@ y
 \frac{2x}{x^2-2C}.
 $$
 Rename the arbitrary constant $-2C$ as $C_1$.
+
 :::
 
-<1>9. The function
+:::
+
+::: pf-step
+
+The function
 $$
 \boxed{y\equiv0}
 $$
 is also a solution.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitution into the original differential form gives
 $$
 (x\cdot0^2-0)dx+x\,d(0)=0.
 $$
 This solution was excluded from steps <1>2--<1>8 because the integrating factor $y^{-2}$ is undefined at $y=0$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>8--<1>9 give the complete solution family.
+
 :::
+
 :::

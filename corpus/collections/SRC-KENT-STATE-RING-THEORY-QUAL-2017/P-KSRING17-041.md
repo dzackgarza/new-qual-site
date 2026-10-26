@@ -21,8 +21,11 @@ audit:
 (b) Give an example of a non-zero prime ideal in a ring R that is not a maximal ideal.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 M
 $$
@@ -36,17 +39,26 @@ R/M
 $$
 is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 By the maximal-ideal quotient criterion, an ideal of a commutative ring with identity is maximal exactly when its quotient is a field. Since $M$ is maximal,
 $$
 R/M
 $$
 is a field.
+
 :::
 
-<1>2. Every field is an integral domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every field is an integral domain.
+
+
+::: pf-proof
+
 Let
 $$
 K
@@ -68,11 +80,18 @@ $$
 b=0.
 $$
 Thus a field has no zero divisors and is therefore an integral domain.
+
 :::
 
-<1>3. Therefore every maximal ideal of $R$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every maximal ideal of $R$ is prime.
+
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 $$
 R/M
@@ -81,9 +100,14 @@ is an integral domain. By the prime-ideal quotient criterion, this implies
 $$
 \boxed{M\text{ is prime}.}
 $$
+
 :::
 
-<1>4. For part (b), take
+:::
+
+::: pf-step
+
+For part (b), take
 $$
 \boxed{
 R=\ZZ[x],
@@ -92,21 +116,30 @@ P=(2).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ideal
 $$
 (2)
 $$
 is nonzero because it contains the nonzero polynomial $2$.
+
 :::
 
-<1>5. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 P=(2)
 $$
 is prime in $\ZZ[x]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Reduction of coefficients modulo $2$ gives a ring isomorphism
 $$
 \ZZ[x]/(2)
@@ -122,15 +155,22 @@ $$
 (2)
 $$
 is prime.
+
 :::
 
-<1>6. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 P=(2)
 $$
 is not maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient
 $$
 \ZZ[x]/(2)
@@ -148,9 +188,14 @@ $$
 (2)
 $$
 is therefore not maximal.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 (2)\subset\ZZ[x]
@@ -158,13 +203,19 @@ $$
 $$
 is a nonzero prime ideal that is not maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>7 gives the required example for part (b).
+
 :::
+
 :::

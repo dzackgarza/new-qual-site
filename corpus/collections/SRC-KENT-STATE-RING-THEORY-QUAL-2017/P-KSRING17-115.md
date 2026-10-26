@@ -20,7 +20,6 @@ Let p be a prime.
 A ring S is called a p-ring if the characteristic of S is a power of p. Show that if R is a ring with identity of finite characteristic, then R is isomorphic to a finite direct product of p-rings for distinct primes.
 :::
 
-::: {.solution}
 Let
 $$
 \operatorname{char}R
@@ -54,7 +53,11 @@ I_i
 p_i^{e_i}R.
 $$
 
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 $$
 i\ne j,
 $$
@@ -66,7 +69,9 @@ I_j
 $$
 are comaximal.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 \gcd(p_i^{e_i},p_j^{e_j})=1,
@@ -101,16 +106,23 @@ Hence
 $$
 I_i+I_j=R.
 $$
+
 :::
 
-<1>2. For pairwise comaximal ideals,
+:::
+
+::: pf-step
+
+For pairwise comaximal ideals,
 $$
 \bigcap_{i=1}^{r}I_i
 =
 \prod_{i=1}^{r}I_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For two comaximal ideals
 $$
 I+J=R,
@@ -166,16 +178,23 @@ Apply this repeatedly to the pairwise comaximal family
 $$
 I_1,\ldots,I_r.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \prod_{i=1}^{r}I_i
 =
 nR.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 I_i
@@ -192,9 +211,14 @@ $$
 =
 nR.
 $$
+
 :::
 
-<1>4. Since
+:::
+
+::: pf-step
+
+Since
 $$
 \operatorname{char}R=n,
 $$
@@ -203,7 +227,9 @@ $$
 nR=(0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic condition means
 $$
 n1_R=0.
@@ -223,9 +249,14 @@ Thus
 $$
 nR=(0).
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \bigcap_{i=1}^{r}I_i
@@ -233,11 +264,18 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2--<1>4.
+
 :::
 
-<1>6. The canonical homomorphism
+:::
+
+::: pf-step
+
+The canonical homomorphism
 $$
 \Phi:
 R
@@ -250,18 +288,27 @@ r
 $$
 is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 The ideals
 $$
 I_1,\ldots,I_r
 $$
 are pairwise comaximal by step <1>1.
 The Chinese remainder theorem therefore gives surjectivity of the canonical map.
+
 :::
 
-<1>7. The kernel of $\Phi$ is zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The kernel of $\Phi$ is zero.
+
+
+::: pf-proof
+
 By definition,
 $$
 \ker\Phi
@@ -272,9 +319,14 @@ Step <1>5 gives
 $$
 \ker\Phi=(0).
 $$
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 R
@@ -284,15 +336,22 @@ R/p_i^{e_i}R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>6--<1>7 show that
 $$
 \Phi
 $$
 is a bijective ring homomorphism.
+
 :::
 
-<1>9. For each $i$, the quotient
+:::
+
+::: pf-step
+
+For each $i$, the quotient
 $$
 R_i
 \coloneqq
@@ -300,7 +359,9 @@ R/p_i^{e_i}R
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 R_i=0.
@@ -351,14 +412,21 @@ Thus
 $$
 R_i\ne0.
 $$
+
 :::
 
-<1>10. The characteristic of $R_i$ divides
+:::
+
+::: pf-step
+
+The characteristic of $R_i$ divides
 $$
 p_i^{e_i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In the quotient,
 $$
 p_i^{e_i}(1_R+I_i)
@@ -381,11 +449,18 @@ divides
 $$
 p_i^{e_i}.
 $$
+
 :::
 
-<1>11. The characteristic of $R_i$ is a positive power of $p_i$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The characteristic of $R_i$ is a positive power of $p_i$.
+
+
+::: pf-proof
+
 By step <1>9,
 $$
 R_i
@@ -415,15 +490,27 @@ $$
 =
 p_i^{f_i}.
 $$
+
 :::
 
-<1>12. Each factor $R_i$ is a $p_i$-ring.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each factor $R_i$ is a $p_i$-ring.
+
+
+::: pf-proof
+
 This is exactly step <1>11 together with the definition of a $p$-ring.
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R
@@ -432,18 +519,24 @@ p_i\text{-rings for distinct primes }p_i.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 gives the finite direct-product decomposition, and step <1>12 identifies the $i$th factor as a $p_i$-ring.
 The primes
 $$
 p_1,\ldots,p_r
 $$
 are distinct by construction.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 is the required conclusion.
+
 :::
+
 :::

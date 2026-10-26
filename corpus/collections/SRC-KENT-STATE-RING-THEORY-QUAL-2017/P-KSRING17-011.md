@@ -19,13 +19,18 @@ audit:
 Show that a non-zero ring R in which $x ^ { 2 } = x$ for all $x \in R$ is of characteristic 2 and is commutative.
 :::
 
-::: {.solution}
-<1>1. For every $x\in R$,
+::: pf
+
+::: pf-step
+
+For every $x\in R$,
 $$
 x=-x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis applied to $x$ gives
 $$
 x^2=x.
@@ -42,14 +47,21 @@ Therefore
 $$
 x=-x.
 $$
+
 :::
 
-<1>2. For every $x\in R$,
+:::
+
+::: pf-step
+
+For every $x\in R$,
 $$
 2x=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives
 $$
 x=-x.
@@ -63,11 +75,18 @@ $$
 2x=0
 $$
 for every $x\in R$.
+
 :::
 
-<1>3. The ring $R$ has characteristic $2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ has characteristic $2$.
+
+
+::: pf-proof
+
 Step <1>2 shows that
 $$
 2\cdot1_R=0.
@@ -80,14 +99,21 @@ so the characteristic is not $1$. Therefore
 $$
 \boxed{\operatorname{char}R=2.}
 $$
+
 :::
 
-<1>4. For all $x,y\in R$,
+:::
+
+::: pf-step
+
+For all $x,y\in R$,
 $$
 xy+yx=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the hypothesis to $x+y$:
 $$
 (x+y)^2=x+y.
@@ -106,11 +132,18 @@ subtraction gives
 $$
 xy+yx=0.
 $$
+
 :::
 
-<1>5. The ring $R$ is commutative.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ is commutative.
+
+
+::: pf-proof
+
 By step <1>4,
 $$
 xy=-yx.
@@ -127,11 +160,15 @@ for all $x,y\in R$. Hence
 $$
 \boxed{R\text{ is commutative}.}
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the characteristic assertion, and step <1>5 proves commutativity.
+
 :::
+
 :::

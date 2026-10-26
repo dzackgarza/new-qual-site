@@ -21,10 +21,15 @@ review: draft
 (c) The ideals of the form$\pi A$are the minimal elements in the set of nonzero prime ideals, ordered by inclusion, and they are the only nonzero principal prime ideals.
 :::
 
-::: {.solution}
-<1>1. If $\pi$ is a prime element of $A$, then $\pi A$ is a prime ideal.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $\pi$ is a prime element of $A$, then $\pi A$ is a prime ideal.
+
+
+::: pf-proof
+
 The ideal $\pi A$ is proper because a prime element is not a unit. Suppose
 $$
 xy\in\pi A.
@@ -36,11 +41,18 @@ x\in\pi A
 y\in\pi A.
 $$
 Thus $\pi A$ is prime.
+
 :::
 
-<1>2. Every nonzero prime ideal $P\subset A$ contains $\pi A$ for some prime element $\pi$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero prime ideal $P\subset A$ contains $\pi A$ for some prime element $\pi$.
+
+
+::: pf-proof
+
 Choose $0\ne a\in P$. Since $P$ is proper, $a$ is not a unit. Factor $a$ in the UFD $A$:
 $$
 a=u\pi_1\cdots\pi_r,
@@ -58,11 +70,18 @@ $$
 \pi_iA\subseteq P.
 $$
 Step <1>1 shows that $\pi_iA$ is itself a nonzero prime ideal.
+
 :::
 
-<1>3. For every prime element $\pi$, the prime ideal $\pi A$ is minimal among the nonzero prime ideals.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every prime element $\pi$, the prime ideal $\pi A$ is minimal among the nonzero prime ideals.
+
+
+::: pf-proof
+
 Let $Q$ be a nonzero prime ideal with
 $$
 Q\subseteq\pi A.
@@ -84,11 +103,18 @@ $$
 \pi A=\rho A\subseteq Q\subseteq\pi A,
 $$
 and hence $Q=\pi A$.
+
 :::
 
-<1>4. The ideals $\pi A$, with $\pi$ prime, are exactly the nonzero principal prime ideals.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideals $\pi A$, with $\pi$ prime, are exactly the nonzero principal prime ideals.
+
+
+::: pf-proof
+
 Step <1>1 proves that every ideal of the form $\pi A$ is a nonzero principal prime ideal.
 
 Conversely, let $aA$ be a nonzero principal prime ideal. Since it is proper, $a$ is a nonzero nonunit. If
@@ -102,11 +128,15 @@ x\in aA
 y\in aA,
 $$
 so $a\mid x$ or $a\mid y$. Thus $a$ is a prime element. Therefore the ideal is of the required form.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), step <1>2 proves part (b), and steps <1>3 and <1>4 prove part (c).
+
 :::
+
 :::

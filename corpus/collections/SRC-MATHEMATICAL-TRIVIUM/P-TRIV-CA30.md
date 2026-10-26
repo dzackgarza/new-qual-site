@@ -23,7 +23,6 @@ Using Stirling's approximation, find the leading behavior of:
 (b) $S = \log Z ( N , m )$ with $\begin{array} { r } { Z = \frac { N ! } { ( N - m ) ! m ! } } \end{array}$ for large N.
 :::
 
-::: {.solution}
 Use Stirling's formula
 $$
 n!
@@ -32,18 +31,29 @@ n!
 \left(\frac ne\right)^n.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \binom{2N}{N}
 =
 \frac{(2N)!}{(N!)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the central binomial coefficient.
+
 :::
 
-<1>2. Applying Stirling's formula to step <1>1 gives
+:::
+
+::: pf-step
+
+Applying Stirling's formula to step <1>1 gives
 $$
 \binom{2N}{N}
 \sim
@@ -56,11 +66,18 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Stirling's formula to $(2N)!$ and to each factor $N!$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \binom{2N}{N}
@@ -69,7 +86,9 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>2,
 $$
 \left(
@@ -86,15 +105,27 @@ $$
 =
 \frac1{\sqrt{\pi N}}.
 $$
+
 :::
 
-<1>4. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>3.
+
 :::
 
-<1>5. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 m\to\infty
 \qquad\text{and}\qquad
@@ -117,7 +148,9 @@ m^m(N-m)^{N-m}
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Stirling's formula to
 $$
 Z(N,m)
@@ -138,9 +171,14 @@ $$
 {2\pi m(N-m)}
 }.
 $$
+
 :::
 
-<1>6. Taking logarithms in step <1>5 gives
+:::
+
+::: pf-step
+
+Taking logarithms in step <1>5 gives
 $$
 \boxed{
 \begin{aligned}
@@ -163,12 +201,19 @@ o(1).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the logarithm of the asymptotic formula in step <1>5. Since the quotient
 of the two sides tends to $1$, the logarithm of that quotient is $o(1)$.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 m=pN
 $$
@@ -197,7 +242,9 @@ o(1).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 m=pN,
@@ -221,9 +268,14 @@ $$
 2\pi Np(1-p)
 \right).
 $$
+
 :::
 
-<1>8. The leading extensive behavior in the fixed-density regime is
+:::
+
+::: pf-step
+
+The leading extensive behavior in the fixed-density regime is
 $$
 \boxed{
 S
@@ -237,20 +289,33 @@ N
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The logarithmic correction in step <1>7 is lower order than $N$.
+
 :::
 
-<1>9. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Step <1>6 gives the general Stirling form when both $m$ and $N-m$ grow, and
 steps <1>7--<1>8 give the standard fixed-density large-$N$ form.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>9 establish parts (a) and (b), respectively.
+
 :::
+
 :::

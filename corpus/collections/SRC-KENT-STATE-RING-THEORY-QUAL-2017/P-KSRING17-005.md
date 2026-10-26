@@ -24,8 +24,11 @@ audit:
 Justify your answer.
 :::
 
-::: {.solution}
-<1>1. The unit group is
+::: pf
+
+::: pf-step
+
+The unit group is
 $$
 \boxed{
 U_{24}
@@ -43,7 +46,9 @@ U_{24}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A residue class
 $$
 \overline a\in\ZZ/24\ZZ
@@ -60,11 +65,18 @@ the representatives between $0$ and $23$ relatively prime to $24$ are exactly
 $$
 1,5,7,11,13,17,19,23.
 $$
+
 :::
 
-<1>2. Every element of $U_{24}$ has square equal to $\overline1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every element of $U_{24}$ has square equal to $\overline1$.
+
+
+::: pf-proof
+
 Directly modulo $24$,
 $$
 \begin{aligned}
@@ -78,11 +90,18 @@ $$
 \end{aligned}
 $$
 The identity also squares to itself. Hence every group element has order dividing $2$.
+
 :::
 
-<1>3. The group $U_{24}$ is not cyclic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The group $U_{24}$ is not cyclic.
+
+
+::: pf-proof
+
 By step <1>1,
 $$
 \abs{U_{24}}=8.
@@ -93,11 +112,15 @@ $$
 U_{24}\text{ is not cyclic.}
 }
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>3 answers part (b).
+
 :::
+
 :::

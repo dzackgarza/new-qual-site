@@ -19,20 +19,25 @@ audit:
 Show that if R is a finite commutative ring with identity then every prime ideal of R is a maximal ideal.
 :::
 
-::: {.solution}
 Let
 $$
 P
 $$
 be a prime ideal of the finite commutative ring $R$.
 
-<1>1. The quotient
+::: pf
+
+::: pf-step
+
+The quotient
 $$
 R/P
 $$
 is an integral domain.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 P
@@ -42,29 +47,43 @@ $$
 R/P
 $$
 is an integral domain.
+
 :::
 
-<1>2. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 R/P
 $$
 is finite.
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient set
 $$
 R/P
 $$
 is the set of cosets of $P$ in the finite set $R$. Hence it has finitely many elements.
+
 :::
 
-<1>3. The finite integral domain
+:::
+
+::: pf-step
+
+The finite integral domain
 $$
 R/P
 $$
 is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 0\ne a+P\in R/P.
@@ -101,15 +120,22 @@ $$
 R/P
 $$
 is a field.
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 P
 $$
 is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 R/P
@@ -120,11 +146,18 @@ $$
 P
 $$
 is maximal.
+
 :::
 
-<1>5. Hence every prime ideal of $R$ is maximal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence every prime ideal of $R$ is maximal.
+
+
+::: pf-proof
+
 The prime ideal $P$ was arbitrary.
 Therefore
 $$
@@ -132,11 +165,15 @@ $$
 \text{every prime ideal of }R\text{ is maximal}.
 }
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

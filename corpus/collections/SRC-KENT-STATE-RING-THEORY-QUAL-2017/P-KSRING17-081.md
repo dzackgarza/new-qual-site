@@ -19,7 +19,6 @@ audit:
 Show that if p is a prime such that $p \equiv 1 ( { \bmod { 4 } } )$ , then $\mathbb { Z } [ { \sqrt { p } } ]$ is not a unique factorization domain.
 :::
 
-::: {.solution}
 Set
 $$
 R
@@ -27,9 +26,15 @@ R
 \ZZ[\sqrt p].
 $$
 
-<1>1. Every unique factorization domain is integrally closed in its fraction field.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every unique factorization domain is integrally closed in its fraction field.
+
+
+::: pf-proof
+
 Let
 $$
 A
@@ -139,9 +144,14 @@ $$
 x=\frac ab\in A.
 $$
 Thus every element of the fraction field integral over $A$ already lies in $A$, so $A$ is integrally closed.
+
 :::
 
-<1>2. Since
+:::
+
+::: pf-step
+
+Since
 $$
 p\equiv1\pmod4,
 $$
@@ -151,7 +161,9 @@ $$
 $$
 lies in $\ZZ$.
 
-::: {.proof}
+
+::: pf-proof
+
 The congruence
 $$
 p\equiv1\pmod4
@@ -166,9 +178,14 @@ $$
 \in
 \ZZ.
 $$
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \alpha
 \coloneqq
@@ -178,7 +195,9 @@ $$
 $$
 Then $\alpha$ is integral over $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -216,9 +235,14 @@ X^2-X+\frac{1-p}{4}
 R[X].
 $$
 Hence $\alpha$ is integral over $R$.
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \alpha
 =
@@ -229,7 +253,9 @@ $$
 R=\ZZ[\sqrt p].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 \alpha
@@ -269,11 +295,18 @@ Thus
 $$
 \alpha\notin R.
 $$
+
 :::
 
-<1>5. The ring $R$ is not integrally closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ is not integrally closed.
+
+
+::: pf-proof
+
 Step <1>3 gives an element
 $$
 \alpha
@@ -285,9 +318,14 @@ $$
 \alpha\notin R.
 $$
 This is exactly failure of integral closure.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \ZZ[\sqrt p]
@@ -295,7 +333,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 R=\ZZ[\sqrt p]
@@ -303,11 +343,15 @@ $$
 were a UFD, step <1>1 would imply that $R$ is integrally closed.
 Step <1>5 shows that it is not.
 Therefore $R$ cannot be a UFD.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

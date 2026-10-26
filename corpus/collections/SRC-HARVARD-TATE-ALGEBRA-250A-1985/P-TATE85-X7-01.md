@@ -25,16 +25,21 @@ Note that $G_{168}$ is isomorphic to a subgroup of $S_7$, in fact of $A_7$, via 
 But it is even easier if you know that the only non-abelian simple groups of order $< 1000$ are $A_5$ of order $60 = 2^2 \cdot 3 \cdot 5$, $G_{168}$ of order $168 = 2^3 \cdot 3 \cdot 7$, $A_6$ of order $360 = 2^3 \cdot 3^2 \cdot 5$, $\mathrm{PSL}(2, \mathbb{F}_8)$ of order $504 = 2^3 \cdot 3^2 \cdot 7$, and $\mathrm{PSL}(2, \mathbb{F}_{11})$ of order $660 = 2^2 \cdot 3 \cdot 5 \cdot 11$.)
 :::
 
-::: {.solution}
 Let \(L\) be the splitting field of \(f\), let
 \[
 G=G_f=\operatorname{Gal}(L/\mathbb Q),
 \]
 and identify \(G\) with its faithful permutation action on the seven roots of \(f\).
 
-<1>1. The group \(G\) is a transitive subgroup of \(A_7\) and contains a double transposition.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The group \(G\) is a transitive subgroup of \(A_7\) and contains a double transposition.
+
+
+::: pf-proof
+
 Since \(f\) is irreducible over \(\mathbb Q\), the Galois group acts transitively on its roots.
 
 If the roots are \(\alpha_1,\ldots,\alpha_7\), put
@@ -47,19 +52,33 @@ G\le A_7.
 \]
 
 The polynomial has exactly three real roots, so its remaining four roots form two nonreal complex-conjugate pairs. Complex conjugation fixes the three real roots and exchanges each of the two nonreal pairs. Its action on the roots is therefore a product of two disjoint transpositions. In particular \(G\) contains a nontrivial element of order \(2\).
+
 :::
 
-<1>2. The degree-\(7\) action of \(G\) is primitive, and every nontrivial normal subgroup of \(G\) is transitive.
+:::
 
-::: {.proof}
+::: pf-step
+
+The degree-\(7\) action of \(G\) is primitive, and every nontrivial normal subgroup of \(G\) is transitive.
+
+
+::: pf-proof
+
 In a transitive action of prime degree, every block has size dividing the degree. Since the degree is \(7\), the only block sizes are \(1\) and \(7\), so the action is primitive.
 
 If \(1\ne N\trianglelefteq G\), then the \(N\)-orbits form a \(G\)-invariant block system. Primitivity forces those orbits either to be singletons or to consist of all seven points. The first alternative would make \(N\) act trivially; the action of \(G\) is faithful, so this would give \(N=1\). Hence every nontrivial normal subgroup \(N\) is transitive.
+
 :::
 
-<1>3. A minimal nontrivial normal subgroup \(N\trianglelefteq G\) cannot be abelian.
+:::
 
-::: {.proof}
+::: pf-step
+
+A minimal nontrivial normal subgroup \(N\trianglelefteq G\) cannot be abelian.
+
+
+::: pf-proof
+
 Choose \(N\) minimal among the nontrivial normal subgroups of \(G\). By step <1>2, \(N\) is transitive, so \(7\mid |N|\).
 
 If \(N\) were abelian, minimal normality would make it an elementary abelian \(q\)-group for some prime \(q\). Since \(7\mid |N|\), one would have \(q=7\). But
@@ -87,11 +106,18 @@ of order \(42\): the centralizer of a \(7\)-cycle is \(N\) itself, conjugation i
 |N_{S_7}(N)\cap A_7|=21.
 \]
 Since \(G\le A_7\), it follows that \(G\) is contained in a group of odd order \(21\). This contradicts step <1>1, which gives an element of order \(2\) in \(G\). Therefore \(N\) is nonabelian.
+
 :::
 
-<1>4. The minimal normal subgroup \(N\) is isomorphic either to \(A_7\) or to \(G_{168}\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The minimal normal subgroup \(N\) is isomorphic either to \(A_7\) or to \(G_{168}\).
+
+
+::: pf-proof
+
 A finite minimal normal subgroup is characteristically simple, hence is a direct product
 \[
 N\cong S^k
@@ -120,14 +146,21 @@ G_{168}\cong\operatorname{GL}_3(\mathbb F_2)
 \cong\operatorname{PSL}_2(\mathbb F_7).
 \]
 Thus a proper \(N\) is isomorphic to \(G_{168}\).
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{G\cong A_7\quad\text{or}\quad G\cong G_{168}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(N=A_7\), then
 \[
 A_7=N\le G\le A_7,
@@ -149,11 +182,15 @@ If the index were \(3\) or \(5\), then \(G\) would have index \(5\) or \(3\), re
 G=N\cong G_{168}.
 \]
 These are exactly the two asserted possibilities.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required classification of \(G_f\).
+
 :::
+
 :::

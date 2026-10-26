@@ -25,7 +25,6 @@ $$
 Show that I is an ideal of R.
 :::
 
-::: {.solution}
 Let
 $$
 \iota:R\to D^{-1}R
@@ -37,7 +36,11 @@ $$
 \frac a1.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 a\in I,
 $$
@@ -48,7 +51,9 @@ $$
 J.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of $I$, there exists
 $$
 d\in D
@@ -83,9 +88,14 @@ $$
 \in
 J.
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac a1
 \in
@@ -96,7 +106,9 @@ $$
 a\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 1\in D,
@@ -109,9 +121,14 @@ Thus
 $$
 a\in I.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I
@@ -125,17 +142,26 @@ a\in R:
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 prove the two inclusions.
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 0
 $$
 belongs to $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 J
@@ -156,9 +182,14 @@ Thus step <1>3 gives
 $$
 0\in I.
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 a,b\in I,
 $$
@@ -167,7 +198,9 @@ $$
 a-b\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \frac a1,\frac b1
@@ -186,9 +219,14 @@ Applying step <1>3 again gives
 $$
 a-b\in I.
 $$
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 r\in R
 $$
@@ -201,7 +239,9 @@ $$
 ra\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \frac a1
@@ -226,9 +266,14 @@ Step <1>3 then gives
 $$
 ra\in I.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I
@@ -237,14 +282,20 @@ R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives nonemptiness, step <1>5 gives closure under subtraction, and step <1>6 gives absorption under multiplication by arbitrary elements of $R$.
 Thus $I$ is an ideal.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

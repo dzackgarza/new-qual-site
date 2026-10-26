@@ -25,7 +25,6 @@ Let R be a ring with identity 1 and $a , b \in R$ such that $a b = 1$ . Denote $
 (c) If X has more than one element, then X is an infinite set.
 :::
 
-::: {.solution}
 Recall
 $$
 X
@@ -37,7 +36,11 @@ $$
 ab=1.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 x\in X,
 $$
@@ -46,7 +49,9 @@ $$
 b+(1-xa)\in X.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 x\in X,
@@ -73,9 +78,14 @@ Hence
 $$
 b+(1-xa)\in X.
 $$
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \varphi:X\to X,
 \qquad
@@ -85,13 +95,22 @@ b+(1-xa)
 $$
 is well-defined.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>1.
+
 :::
 
-<1>3. The map $\varphi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is injective.
+
+
+::: pf-proof
+
 Suppose
 $$
 \varphi(x)=\varphi(y)
@@ -125,15 +144,27 @@ $$
 x=y.
 $$
 Thus $\varphi$ is one-to-one.
+
 :::
 
-<1>4. Suppose $X$ is finite. Then $\varphi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+Suppose $X$ is finite. Then $\varphi$ is surjective.
+
+
+::: pf-proof
+
 By step <1>3, $\varphi$ is an injective self-map of the finite set $X$. Every injective self-map of a finite set is surjective.
+
 :::
 
-<1>5. Under the hypothesis of step <1>4, there exists
+:::
+
+::: pf-step
+
+Under the hypothesis of step <1>4, there exists
 $$
 x\in X
 $$
@@ -142,7 +173,9 @@ $$
 \varphi(x)=b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 ab=1,
@@ -152,11 +185,18 @@ $$
 b\in X.
 $$
 By surjectivity from step <1>4, $b$ has a preimage $x\in X$.
+
 :::
 
-<1>6. The element $x$ from step <1>5 is a two-sided inverse of $a$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $x$ from step <1>5 is a two-sided inverse of $a$.
+
+
+::: pf-proof
+
 The equality
 $$
 \varphi(x)=b
@@ -184,11 +224,18 @@ $$
 ax=1.
 $$
 Thus $x$ is a two-sided inverse of $a$.
+
 :::
 
-<1>7. If $a$ has a two-sided inverse $x$, then $X=\{x\}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $a$ has a two-sided inverse $x$, then $X=\{x\}$.
+
+
+::: pf-proof
+
 Let
 $$
 y\in X.
@@ -214,11 +261,18 @@ x(ay)
 x.
 $$
 Hence every element of $X$ equals $x$.
+
 :::
 
-<1>8. If $X$ has more than one element, then $X$ is infinite.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $X$ has more than one element, then $X$ is infinite.
+
+
+::: pf-proof
+
 Suppose $X$ had more than one element but were finite. Steps <1>4--<1>6 would produce a two-sided inverse $x$ of $a$, and step <1>7 would then imply
 $$
 X=\{x\},
@@ -233,11 +287,15 @@ $$
 X\text{ is infinite}.
 }
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), step <1>3 proves part (b), and step <1>8 proves part (c).
+
 :::
+
 :::

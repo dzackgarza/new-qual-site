@@ -20,8 +20,11 @@ Let D be an integral domain and F its field of fractions.
 Denote by M the set of all maximal ideals of D. For $M \in \mathcal { M }$ , let $\begin{array} { r } { D _ { M } = \{ \frac { a } { s } \ | \ a , s \in D , s \not \in M \} \subset F } \end{array}$ . Show that $\bigcap _ { M \in { \mathcal { M } } } D _ { M } = D$
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 D
 \subseteq
@@ -33,7 +36,9 @@ M
 $$
 of $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 d\in D.
@@ -55,20 +60,32 @@ $$
 D\subseteq F,
 $$
 this fraction is just $d$.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 D
 \subseteq
 \bigcap_{M\in\mathcal M}D_M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 holds for every maximal ideal $M$.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 x
 \in
@@ -82,7 +99,9 @@ I_x
 $$
 Then $I_x$ is an ideal of $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 d,e\in I_x,
@@ -125,11 +144,18 @@ $$
 rd\in I_x.
 $$
 Thus $I_x$ is an ideal.
+
 :::
 
-<1>4. The ideal $I_x$ is nonzero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I_x$ is nonzero.
+
+
+::: pf-proof
+
 Write
 $$
 x=\frac ab
@@ -153,16 +179,23 @@ $$
 b\ne0,
 $$
 the ideal $I_x$ is nonzero.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 x\in D
 \iff
 I_x=D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 x\in D,
@@ -191,9 +224,14 @@ By definition,
 $$
 1\cdot x=x\in D.
 $$
+
 :::
 
-<1>6. Suppose, for contradiction, that
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that
 $$
 x\notin D.
 $$
@@ -203,7 +241,9 @@ I_x
 $$
 is a proper ideal.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 x\notin D
@@ -212,9 +252,14 @@ implies
 $$
 I_x\ne D.
 $$
+
 :::
 
-<1>7. There exists a maximal ideal
+:::
+
+::: pf-step
+
+There exists a maximal ideal
 $$
 M
 $$
@@ -223,12 +268,19 @@ $$
 I_x\subseteq M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every proper ideal in a commutative ring with identity is contained in a maximal ideal.
 Apply this to the proper ideal from step <1>6.
+
 :::
 
-<1>8. Since
+:::
+
+::: pf-step
+
+Since
 $$
 x\in D_M,
 $$
@@ -245,16 +297,25 @@ $$
 x=\frac cs.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the localization
 $$
 D_M.
 $$
+
 :::
 
-<1>9. The denominator $s$ from step <1>8 belongs to $I_x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The denominator $s$ from step <1>8 belongs to $I_x$.
+
+
+::: pf-proof
+
 From
 $$
 x=\frac cs,
@@ -275,14 +336,21 @@ gives
 $$
 s\in I_x.
 $$
+
 :::
 
-<1>10. This contradicts
+:::
+
+::: pf-step
+
+This contradicts
 $$
 s\notin M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 I_x\subseteq M.
@@ -296,37 +364,56 @@ $$
 s\in M,
 $$
 contradicting step <1>8.
+
 :::
 
-<1>11. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 x\in D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption
 $$
 x\notin D
 $$
 leads to the contradiction in step <1>10.
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \bigcap_{M\in\mathcal M}D_M
 \subseteq
 D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The element
 $$
 x
 $$
 was arbitrary in the intersection, and step <1>11 shows it belongs to $D$.
+
 :::
 
-<1>13. Combining both inclusions,
+:::
+
+::: pf-step
+
+Combining both inclusions,
 $$
 \boxed{
 \bigcap_{M\in\mathcal M}D_M
@@ -335,7 +422,9 @@ D.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 $$
 D
@@ -343,11 +432,15 @@ D
 \bigcap_M D_M,
 $$
 and step <1>12 gives the reverse inclusion.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 is the required identity.
+
 :::
+
 :::

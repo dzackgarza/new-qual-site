@@ -36,14 +36,17 @@ The normalization $a_0 = \frac{1}{2^n n!}$ in the source uses an undefined $n$.
 The stated series have leading coefficient $a_0 = \frac{1}{2^p\,\Gamma(p+1)}$ for $J_p$ and $a_0 = \frac{1}{2^{-p}\,\Gamma(1-p)}$ for $J_{-p}$; the source's formula is the case $p = n \in \mathbb{N}_0$ of the first.
 :::
 
-::: {.solution}
 Take
 \[
 y(x)=\sum_{m=0}^{\infty}a_mx^{r+m},
 \qquad a_0\ne0.
 \]
 
-<1>1. The indicial equation is
+::: pf
+
+::: pf-step
+
+The indicial equation is
 \[
 r^2-p^2=0,
 \]
@@ -52,34 +55,50 @@ with roots
 \boxed{r=p\quad\text{and}\quad r=-p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitution into Bessel's equation gives
 \[
 \sum_{m=0}^{\infty}\bigl((r+m)^2-p^2\bigr)a_mx^{r+m}
 +\sum_{m=0}^{\infty}a_mx^{r+m+2}=0.
 \]
 The coefficient of the lowest power $x^r$ is $(r^2-p^2)a_0$. Since $a_0\ne0$, it vanishes exactly for $r=\pm p$.
+
 :::
 
-<1>2. For either indicial root, $a_1=0$ and, for $m\geq2$,
+:::
+
+::: pf-step
+
+For either indicial root, $a_1=0$ and, for $m\geq2$,
 \[
 \boxed{a_m=-\frac{a_{m-2}}{(r+m)^2-p^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Shift the second sum in step <1>1 by two indices. For $m\geq2$, the coefficient of $x^{r+m}$ is
 \[
 \bigl((r+m)^2-p^2\bigr)a_m+a_{m-2}.
 \]
 For $m=1$, the coefficient is $((r+1)^2-p^2)a_1$, which gives $a_1=0$ whenever that factor is nonzero. Thus all odd coefficients vanish in the generic Frobenius case, and the displayed recurrence determines the even coefficients.
+
 :::
 
-<1>3. For the root $r=p$,
+:::
+
+::: pf-step
+
+For the root $r=p$,
 \[
 a_{2k}=(-1)^k a_0\frac{\Gamma(p+1)}{4^k k!\,\Gamma(k+p+1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 With $r=p$, step <1>2 becomes
 \[
 a_{2k}=-\frac{a_{2k-2}}{(p+2k)^2-p^2}
@@ -94,9 +113,14 @@ Since
 (p+1)\cdots(p+k)=\frac{\Gamma(p+k+1)}{\Gamma(p+1)},
 \]
 the formula follows.
+
 :::
 
-<1>4. Choosing $a_0=1/(2^p\Gamma(p+1))$ gives
+:::
+
+::: pf-step
+
+Choosing $a_0=1/(2^p\Gamma(p+1))$ gives
 \[
 \boxed{
 J_p(x)=\sum_{k=0}^{\infty}
@@ -104,16 +128,25 @@ J_p(x)=\sum_{k=0}^{\infty}
 \left(\frac x2\right)^{2k+p}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the normalization into step <1>3 and multiply $a_{2k}$ by $x^{p+2k}$. The factors $2^p4^k=2^{p+2k}$ combine into $(x/2)^{p+2k}$.
+
 :::
 
-<1>5. For the root $r=-p$,
+:::
+
+::: pf-step
+
+For the root $r=-p$,
 \[
 a_{2k}=(-1)^ka_0\frac{\Gamma(1-p)}{4^k k!\,\Gamma(k-p+1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 With $r=-p$, step <1>2 gives
 \[
 a_{2k}=-\frac{a_{2k-2}}{(-p+2k)^2-p^2}
@@ -124,9 +157,14 @@ Iteration and the identity
 (1-p)(2-p)\cdots(k-p)=\frac{\Gamma(k-p+1)}{\Gamma(1-p)}
 \]
 give the result.
+
 :::
 
-<1>6. Choosing $a_0=2^p/\Gamma(1-p)$ gives
+:::
+
+::: pf-step
+
+Choosing $a_0=2^p/\Gamma(1-p)$ gives
 \[
 \boxed{
 J_{-p}(x)=\sum_{k=0}^{\infty}
@@ -134,13 +172,19 @@ J_{-p}(x)=\sum_{k=0}^{\infty}
 \left(\frac x2\right)^{2k-p}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert this normalization into step <1>5 and multiply by $x^{-p+2k}$. Since $2^{-p+2k}=4^k/2^p$, the coefficients take exactly the displayed form.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 give the indicial roots and recurrence, while steps <1>3--<1>6 give the two normalized Frobenius series requested in the problem.
+
 :::
+
 :::

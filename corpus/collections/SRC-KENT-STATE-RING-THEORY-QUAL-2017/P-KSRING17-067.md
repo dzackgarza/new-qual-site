@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring with 1 and let I be an ideal of R satisfying $I ^ { 2 } = \{ 0 \}$ . Show that if $a + I \in R / I$ is an idempotent element of $R / I$ , then the coset $a + I$ contains an idempotent element of R.
 :::
 
-::: {.solution}
 Assume
 $$
 (a+I)^2
@@ -27,7 +26,11 @@ $$
 a+I.
 $$
 
-<1>1. The element
+::: pf
+
+::: pf-step
+
+The element
 $$
 \delta
 \coloneqq
@@ -35,7 +38,9 @@ a^2-a
 $$
 lies in $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 The idempotence relation in the quotient gives
 $$
 a^2+I
@@ -48,14 +53,21 @@ a^2-a
 \in
 I.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \delta^2=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \delta\in I.
@@ -68,9 +80,14 @@ the product of any two elements of $I$ is zero. In particular,
 $$
 \delta^2=0.
 $$
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 t
 \coloneqq
@@ -81,7 +98,9 @@ $$
 t\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \delta\in I
@@ -96,9 +115,14 @@ Hence also
 $$
 t\in I.
 $$
+
 :::
 
-<1>4. Set
+:::
+
+::: pf-step
+
+Set
 $$
 e
 \coloneqq
@@ -111,7 +135,9 @@ e+I
 a+I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 t\in I.
@@ -121,9 +147,14 @@ $$
 e-a=t\in I,
 $$
 so $e$ and $a$ determine the same coset modulo $I$.
+
 :::
 
-<1>5. Because
+:::
+
+::: pf-step
+
+Because
 $$
 t\in I
 $$
@@ -136,18 +167,27 @@ $$
 t^2=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from the square-zero hypothesis on $I$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 e^2-e
 =
 \delta+(2a-1)t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 e=a+t,
@@ -166,16 +206,23 @@ a^2+2at+t^2-a-t\\
 \delta+(2a-1)t.
 \end{aligned}
 $$
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (2a-1)^2\delta
 =
 \delta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -208,11 +255,18 @@ $$
 =
 \delta.
 $$
+
 :::
 
-<1>8. The element $e$ is idempotent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $e$ is idempotent.
+
+
+::: pf-proof
+
 By step <1>3,
 $$
 t
@@ -238,15 +292,22 @@ Therefore
 $$
 e^2=e.
 $$
+
 :::
 
-<1>9. Hence the coset
+:::
+
+::: pf-step
+
+Hence the coset
 $$
 a+I
 $$
 contains an idempotent element of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows
 $$
 e+I=a+I,
@@ -260,11 +321,15 @@ e\in a+I
 e^2=e.
 }
 $$
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

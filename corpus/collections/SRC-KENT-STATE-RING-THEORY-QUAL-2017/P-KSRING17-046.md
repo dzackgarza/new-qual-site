@@ -23,7 +23,6 @@ Let R be a commutative ring with 1.
 (b) Prove that (x) is a maximal ideal in R[x] if and only if R is a field.
 :::
 
-::: {.solution}
 Define the evaluation map
 $$
 \operatorname{ev}_0:R[x]\to R
@@ -35,13 +34,19 @@ $$
 f(0).
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 \operatorname{ev}_0
 $$
 is a surjective ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 f,g\in R[x],
@@ -69,9 +74,14 @@ $$
 r\in R
 $$
 is the image of the constant polynomial $r$.
+
 :::
 
-<1>2. The kernel of
+:::
+
+::: pf-step
+
+The kernel of
 $$
 \operatorname{ev}_0
 $$
@@ -80,7 +90,9 @@ $$
 (x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A polynomial
 $$
 f(x)
@@ -110,9 +122,14 @@ $$
 \ker\operatorname{ev}_0
 =(x).
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R[x]/(x)
@@ -121,7 +138,9 @@ R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the first isomorphism theorem gives
 $$
 R[x]/\ker\operatorname{ev}_0
@@ -132,9 +151,14 @@ Substitute
 $$
 \ker\operatorname{ev}_0=(x).
 $$
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 (x)
 $$
@@ -148,7 +172,9 @@ R
 $$
 is an integral domain.
 
-::: {.proof}
+
+::: pf-proof
+
 By the prime-ideal quotient criterion,
 $$
 (x)\text{ is prime}
@@ -169,9 +195,14 @@ $$
 R\text{ is an integral domain}.
 }
 $$
+
 :::
 
-<1>5. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 (x)
 $$
@@ -185,7 +216,9 @@ R
 $$
 is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 By the maximal-ideal quotient criterion,
 $$
 (x)\text{ is maximal}
@@ -206,11 +239,15 @@ $$
 R\text{ is a field}.
 }
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

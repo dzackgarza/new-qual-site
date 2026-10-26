@@ -23,7 +23,6 @@ A = { \left[ \begin{array} { l l l l l l } { 0 } & { 0 } & { 0 } & { \dots } & {
 $$
 :::
 
-::: {.solution}
 For
 $$
 v=
@@ -46,12 +45,18 @@ x_{n-1}
 \end{pmatrix}.
 $$
 
-<1>1. If $Av=\lambda v$ with $v\neq0$, then
+::: pf
+
+::: pf-step
+
+If $Av=\lambda v$ with $v\neq0$, then
 $$
 \lambda^n=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The eigenvalue equation gives
 $$
 x_n=\lambda x_1
@@ -77,9 +82,14 @@ eigenvector must have $x_1\neq0$ by the recurrence. Hence
 $$
 \lambda^n=1.
 $$
+
 :::
 
-<1>2. The eigenvalues are
+:::
+
+::: pf-step
+
+The eigenvalues are
 $$
 \boxed{
 \lambda_k
@@ -90,13 +100,20 @@ k=0,1,\ldots,n-1.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that every eigenvalue is an $n$th root of unity. Conversely,
 for every $n$th root of unity the vector constructed in step <1>3 is a
 nonzero eigenvector, so every such root occurs.
+
 :::
 
-<1>3. For an eigenvalue $\lambda$ with $\lambda^n=1$, an eigenvector is
+:::
+
+::: pf-step
+
+For an eigenvalue $\lambda$ with $\lambda^n=1$, an eigenvector is
 $$
 \boxed{
 v_\lambda
@@ -111,7 +128,9 @@ v_\lambda
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Applying $A$ gives
 $$
 Av_\lambda
@@ -134,20 +153,31 @@ Av_\lambda
 =
 \lambda v_\lambda.
 $$
+
 :::
 
-<1>4. For $\lambda_k=e^{2\pi i k/n}$, the corresponding eigenspace is
+:::
+
+::: pf-step
+
+For $\lambda_k=e^{2\pi i k/n}$, the corresponding eigenspace is
 one-dimensional and is spanned by $v_{\lambda_k}$.
 
-::: {.proof}
+
+::: pf-proof
+
 The recurrence in step <1>1 determines every coordinate of an eigenvector from
 $x_1$. Hence every eigenvector for a fixed $\lambda_k$ is a scalar multiple of
 $v_{\lambda_k}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>4 give all eigenvalues and eigenvectors.
+
 :::
+
 :::

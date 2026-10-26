@@ -19,8 +19,11 @@ audit:
 Solve $y ^ { \prime \prime } + 3 y ^ { \prime } + 2 y = \operatorname { t a n h } x$
 :::
 
-::: {.solution}
-<1>1. Factor the differential operator:
+::: pf
+
+::: pf-step
+
+Factor the differential operator:
 $$
 D^2+3D+2
 =
@@ -28,16 +31,23 @@ D^2+3D+2
 $$
 where $D=d/dx$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 (D+1)(D+2)
 =
 D^2+3D+2.
 $$
+
 :::
 
-<1>2. Set
+:::
+
+::: pf-step
+
+Set
 $$
 z=(D+2)y
 =
@@ -48,22 +58,36 @@ $$
 z'+z=\tanh x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply $D+1$ to the definition of $z$ and use step <1>1.
+
 :::
 
-<1>3. Multiplying by $e^x$ gives
+:::
+
+::: pf-step
+
+Multiplying by $e^x$ gives
 $$
 \frac d{dx}(e^xz)
 =
 e^x\tanh x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integrating factor for $z'+z=\tanh x$ is $e^x$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int e^x\tanh x\,dx
 =
@@ -74,7 +98,9 @@ e^x
 C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u=e^x,
@@ -100,9 +126,14 @@ $$
 1-\frac2{u^2+1}
 \right)du.
 $$
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 z(x)
 =
@@ -113,11 +144,18 @@ z(x)
 C_1e^{-x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate step <1>3 using step <1>4 and divide by $e^x$.
+
 :::
 
-<1>6. Now solve
+:::
+
+::: pf-step
+
+Now solve
 $$
 y'+2y=z(x).
 $$
@@ -128,11 +166,18 @@ $$
 e^{2x}z(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integrating factor for the first-order equation $y'+2y=z$ is $e^{2x}$.
+
 :::
 
-<1>7. A particular antiderivative of the nonhomogeneous part is
+:::
+
+::: pf-step
+
+A particular antiderivative of the nonhomogeneous part is
 $$
 \int
 \left[
@@ -148,7 +193,9 @@ e^{2x}
 \log(1+e^{2x}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the second term, set $u=e^x$:
 $$
 2\int e^x\arctan(e^x)\,dx
@@ -164,20 +211,32 @@ u\arctan u
 \frac12\log(1+u^2).
 $$
 Substitute back $u=e^x$.
+
 :::
 
-<1>8. The term $C_1e^{-x}$ in $z$ contributes a homogeneous-mode term proportional to $e^{-x}$ in $y$, and the integrating constant contributes a term proportional to $e^{-2x}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The term $C_1e^{-x}$ in $z$ contributes a homogeneous-mode term proportional to $e^{-x}$ in $y$, and the integrating constant contributes a term proportional to $e^{-2x}$.
+
+
+::: pf-proof
+
 Under step <1>6,
 $$
 e^{2x}C_1e^{-x}=C_1e^x,
 $$
 whose antiderivative is $C_1e^x$, yielding $C_1e^{-x}$ after multiplication by $e^{-2x}$.
 The final integration constant becomes $C_2e^{-2x}$.
+
 :::
 
-<1>9. Therefore the general solution is
+:::
+
+::: pf-step
+
+Therefore the general solution is
 $$
 \boxed{
 \begin{aligned}
@@ -197,13 +256,19 @@ e^{-2x}\log(1+e^{2x}).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5--<1>8 and multiply the particular antiderivative from step <1>7 by $e^{-2x}$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 gives the complete two-parameter solution family.
+
 :::
+
 :::

@@ -20,7 +20,6 @@ Let R be a commutative ring with $1 \neq 0$ in which the set of nonunits is clos
 Prove that R is local, i.e., has a unique maximal ideal.
 :::
 
-::: {.solution}
 Let
 $$
 N
@@ -28,13 +27,19 @@ N
 \{a\in R:a\text{ is not a unit}\}.
 $$
 
-<1>1. The element
+::: pf
+
+::: pf-step
+
+The element
 $$
 0
 $$
 belongs to $N$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 1\ne0,
@@ -44,9 +49,14 @@ Thus
 $$
 0\in N.
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 a\in N,
 $$
@@ -55,7 +65,9 @@ $$
 -a\in N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 -a
@@ -80,11 +92,18 @@ Therefore
 $$
 -a\in N.
 $$
+
 :::
 
-<1>3. The set $N$ is an additive subgroup of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $N$ is an additive subgroup of $R$.
+
+
+::: pf-proof
+
 By hypothesis, $N$ is closed under addition.
 Step <1>1 gives
 $$
@@ -92,9 +111,14 @@ $$
 $$
 and step <1>2 gives closure under additive inverses.
 Thus $N$ is an additive subgroup.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 a\in N
 $$
@@ -107,7 +131,9 @@ $$
 ra\in N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 ra
@@ -133,9 +159,14 @@ Therefore
 $$
 ra\in N.
 $$
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 N
@@ -143,13 +174,22 @@ N
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives the additive-subgroup condition, and step <1>4 gives absorption under multiplication by arbitrary elements of $R$.
+
 :::
 
-<1>6. The ideal $N$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $N$ is proper.
+
+
+::: pf-proof
+
 The identity
 $$
 1
@@ -163,15 +203,22 @@ so
 $$
 N\ne R.
 $$
+
 :::
 
-<1>7. Every nonzero element of
+:::
+
+::: pf-step
+
+Every nonzero element of
 $$
 R/N
 $$
 is invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 a+N
@@ -202,15 +249,22 @@ $$
 a+N
 $$
 is invertible.
+
 :::
 
-<1>8. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 R/N
 $$
 is a field, so $N$ is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, the quotient is nonzero.
 Step <1>7 shows every nonzero element is invertible.
 Thus
@@ -223,11 +277,18 @@ $$
 N
 $$
 is maximal.
+
 :::
 
-<1>9. Every proper ideal of $R$ is contained in $N$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every proper ideal of $R$ is contained in $N$.
+
+
+::: pf-proof
+
 Let
 $$
 I\trianglelefteq R
@@ -254,11 +315,18 @@ Hence
 $$
 I\subseteq N.
 $$
+
 :::
 
-<1>10. The ideal $N$ is the unique maximal ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $N$ is the unique maximal ideal.
+
+
+::: pf-proof
+
 Let
 $$
 M
@@ -273,9 +341,14 @@ $$
 M=N.
 $$
 Thus every maximal ideal is equal to $N$.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R
@@ -283,13 +356,19 @@ R
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 shows that $R$ has exactly one maximal ideal.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required conclusion.
+
 :::
+
 :::

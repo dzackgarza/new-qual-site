@@ -21,21 +21,31 @@ Let $I$ be a nonzero ideal of $S$.
 Prove that $I\cap R$ is a nonzero ideal of $R$.
 :::
 
-::: {.solution}
-<1>1. Choose
+::: pf
+
+::: pf-step
+
+Choose
 $$
 0\ne s\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ideal
 $$
 I
 $$
 is nonzero by hypothesis, so it contains a nonzero element.
+
 :::
 
-<1>2. Since $s$ is integral over $R$, there exists a monic relation
+:::
+
+::: pf-step
+
+Since $s$ is integral over $R$, there exists a monic relation
 $$
 s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0
 $$
@@ -45,7 +55,9 @@ a_i\in R.
 $$
 Choose such a relation with $n$ minimal.
 
-::: {.proof}
+
+::: pf-proof
+
 Integrality of
 $$
 S
@@ -56,15 +68,22 @@ R
 $$
 means every element of $S$, in particular $s$, satisfies some monic polynomial over $R$.
 The positive integers are well ordered, so among all such monic relations one has minimal degree.
+
 :::
 
-<1>3. The constant coefficient
+:::
+
+::: pf-step
+
+The constant coefficient
 $$
 a_0
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 a_0=0.
@@ -107,15 +126,22 @@ Therefore
 $$
 a_0\ne0.
 $$
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 a_0
 $$
 belongs to $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange the relation from step <1>2:
 $$
 a_0
@@ -137,9 +163,14 @@ Thus
 $$
 a_0\in I.
 $$
+
 :::
 
-<1>5. The element
+:::
+
+::: pf-step
+
+The element
 $$
 a_0
 $$
@@ -149,7 +180,9 @@ I\cap R
 $$
 and is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 By construction in step <1>2,
 $$
 a_0\in R.
@@ -166,9 +199,14 @@ Step <1>3 gives
 $$
 a_0\ne0.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I\cap R
@@ -177,13 +215,19 @@ I\cap R
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 exhibits a nonzero element of the intersection.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

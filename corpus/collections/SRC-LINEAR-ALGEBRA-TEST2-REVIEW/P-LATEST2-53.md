@@ -27,10 +27,15 @@ Find $\dim V+\dim W$.
 (A) $4$  (B) $5$  (C) $6$  (D) $7$  (E) $8$
 :::
 
-::: {.solution}
-<1>1. The vector space $V$ has dimension $4$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The vector space $V$ has dimension $4$.
+
+
+::: pf-proof
+
 Every polynomial in $V$ has the form
 $$
 a_0+a_1x+a_2x^2+a_3x^3.
@@ -44,14 +49,21 @@ Hence
 $$
 \dim V=4.
 $$
+
 :::
 
-<1>2. Every polynomial $p\in W$ is divisible by
+:::
+
+::: pf-step
+
+Every polynomial $p\in W$ is divisible by
 $$
 x(x-1)(x+1)=x^3-x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The conditions
 $$
 p(0)=p(1)=p(-1)=0
@@ -72,11 +84,18 @@ $$
 x(x-1)(x+1)=x^3-x
 $$
 divides $p$.
+
 :::
 
-<1>3. Every polynomial in $W$ is a scalar multiple of $x^3-x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every polynomial in $W$ is a scalar multiple of $x^3-x$.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 p(x)=(x^3-x)q(x)
@@ -100,35 +119,53 @@ Hence
 $$
 W=\operatorname{span}\{x^3-x\}.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \dim W=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial
 $$
 x^3-x
 $$
 is nonzero and spans $W$ by step <1>3.
 Thus it is a basis of $W$.
+
 :::
 
-<1>5. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{\dim V+\dim W=4+1=5}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>4.
 This is answer choice $\boxed{\text{(B)}}$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required value.
+
 :::
+
 :::

@@ -28,7 +28,6 @@ Problem 34 of the source reads: Solve the integral $\int_0^\infty \frac{1}{1 + x
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
 
-::: {.solution}
 Set
 $$
 \theta=\frac{2\pi}{\alpha},
@@ -46,7 +45,11 @@ $$
 \zeta^\alpha=-1.
 $$
 
-<1>1. In the sector
+::: pf
+
+::: pf-step
+
+In the sector
 $$
 0<\arg z<\theta,
 $$
@@ -59,7 +62,9 @@ $$
 z=\zeta=e^{i\pi/\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The poles are the roots of
 $$
 z^\alpha=-1,
@@ -70,9 +75,14 @@ z_k=e^{(2k+1)\pi i/\alpha}.
 $$
 Only the root with argument $\pi/\alpha=t$ lies strictly between $0$ and
 $2\pi/\alpha=2t$.
+
 :::
 
-<1>2. The residue at $\zeta$ is
+:::
+
+::: pf-step
+
+The residue at $\zeta$ is
 $$
 \operatorname{Res}_{z=\zeta}
 \frac1{1+z^\alpha}
@@ -80,7 +90,9 @@ $$
 -\frac{\zeta}{\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The pole is simple, so
 $$
 \operatorname{Res}_{z=\zeta}
@@ -99,9 +111,14 @@ $$
 -\zeta.
 $$
 Hence the residue is $-\zeta/\alpha$.
+
 :::
 
-<1>3. Let $C_{\varepsilon,R}$ be the positively oriented boundary of the
+:::
+
+::: pf-step
+
+Let $C_{\varepsilon,R}$ be the positively oriented boundary of the
 annular sector
 $$
 \varepsilon\leq|z|\leq R,
@@ -116,19 +133,28 @@ $$
 -\frac{2\pi i\zeta}{\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the contour encloses exactly the simple pole $\zeta$.
 The residue theorem gives
 $$
 2\pi i
 \left(-\frac{\zeta}{\alpha}\right).
 $$
+
 :::
 
-<1>4. The two circular-arc integrals in step <1>3 tend to $0$ as
+:::
+
+::: pf-step
+
+The two circular-arc integrals in step <1>3 tend to $0$ as
 $R\to\infty$ and $\varepsilon\to0^+$.
 
-::: {.proof}
+
+::: pf-proof
+
 On $|z|=R$,
 $$
 |1+z^\alpha|
@@ -155,9 +181,14 @@ $$
 \frac{\theta\varepsilon}{1-\varepsilon^\alpha}
 \longrightarrow0.
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 J_\alpha
 =
@@ -170,7 +201,9 @@ $$
 -\frac{2\pi i\zeta}{\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Along the lower ray $z=x$,
 $$
 dz=dx,
@@ -197,9 +230,14 @@ $$
 -e^{i\theta}J_\alpha.
 $$
 Let $R\to\infty$ and $\varepsilon\to0$ in step <1>3 and use step <1>4.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 J_\alpha
@@ -209,7 +247,9 @@ J_\alpha
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 1-e^{i\theta}
@@ -231,9 +271,14 @@ J_\alpha
 \frac{\pi}{\alpha\sin t}.
 $$
 Substitute $t=\pi/\alpha$.
+
 :::
 
-<1>7. On the sector
+:::
+
+::: pf-step
+
+On the sector
 $$
 0\leq\arg z\leq\theta,
 $$
@@ -249,7 +294,9 @@ $$
 -\frac{i\pi\zeta}{\alpha^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 At
 $$
 \zeta=e^{i\pi/\alpha},
@@ -277,9 +324,14 @@ Hence the residue is
 $$
 -\frac{i\pi\zeta}{\alpha^2}.
 $$
+
 :::
 
-<1>8. The residue theorem gives
+:::
+
+::: pf-step
+
+The residue theorem gives
 $$
 \int_{C_{\varepsilon,R}}
 \frac{\Log z}{1+z^\alpha}\,dz
@@ -287,7 +339,9 @@ $$
 \frac{2\pi^2\zeta}{\alpha^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 2\pi i
@@ -297,12 +351,19 @@ $$
 =
 \frac{2\pi^2\zeta}{\alpha^2}.
 $$
+
 :::
 
-<1>9. The two circular-arc integrals in step <1>8 tend to $0$ as
+:::
+
+::: pf-step
+
+The two circular-arc integrals in step <1>8 tend to $0$ as
 $R\to\infty$ and $\varepsilon\to0^+$.
 
-::: {.proof}
+
+::: pf-proof
+
 On the outer arc,
 $$
 |\Log z|
@@ -348,9 +409,14 @@ $$
 \longrightarrow0,
 $$
 this bound tends to $0$.
+
 :::
 
-<1>10. Let
+:::
+
+::: pf-step
+
+Let
 $$
 I_\alpha
 =
@@ -366,7 +432,9 @@ i\theta e^{i\theta}J_\alpha
 \frac{2\pi^2\zeta}{\alpha^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Along the lower ray,
 $$
 \Log x=\log x,
@@ -399,9 +467,14 @@ i\theta e^{i\theta}J_\alpha.
 $$
 Now let $R\to\infty$ and $\varepsilon\to0$ in step <1>8 and use
 step <1>9.
+
 :::
 
-<1>11. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 I_\alpha
@@ -412,7 +485,9 @@ I_\alpha
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Recall
 $$
 t=\frac\pi\alpha,
@@ -478,11 +553,15 @@ Substitute
 $$
 t=\frac\pi\alpha.
 $$
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required value of the integral.
+
 :::
+
 :::

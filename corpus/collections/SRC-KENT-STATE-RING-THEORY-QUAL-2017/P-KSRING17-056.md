@@ -19,7 +19,6 @@ audit:
 Let R be a commutative ring and P a prime ideal of R. Show that there is a prime ideal $P _ { 0 } \subseteq P$ that does not properly contain any prime ideal.
 :::
 
-::: {.solution}
 Let
 $$
 \mathcal P
@@ -36,17 +35,28 @@ Q_1\preceq Q_2
 Q_2\subseteq Q_1.
 $$
 
-<1>1. The poset $\mathcal P$ is nonempty.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The poset $\mathcal P$ is nonempty.
+
+
+::: pf-proof
+
 The given prime ideal
 $$
 P
 $$
 belongs to $\mathcal P$.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \mathcal C
 \subseteq
@@ -61,7 +71,9 @@ Q_\mathcal C
 $$
 is a prime ideal.
 
-::: {.proof}
+
+::: pf-proof
+
 A chain for the reverse-inclusion order is also a chain under ordinary inclusion.
 The intersection of a chain of prime ideals is prime:
 if
@@ -114,16 +126,23 @@ contradicting primality of $Q_a$.
 
 Thus the intersection satisfies the prime-product condition.
 It is proper because it is contained in every member of the nonempty chain, each of which is proper.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 Q_\mathcal C
 \subseteq
 P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every member
 $$
 Q\in\mathcal C
@@ -133,15 +152,22 @@ $$
 Q\subseteq P.
 $$
 Therefore their intersection is also contained in $P$.
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 Q_\mathcal C
 $$
 is an upper bound for $\mathcal C$ with respect to $\preceq$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 $$
 Q_\mathcal C
@@ -165,9 +191,14 @@ Q
 Q_\mathcal C.
 $$
 Hence $Q_\mathcal C$ is an upper bound of the chain.
+
 :::
 
-<1>5. There exists a maximal element
+:::
+
+::: pf-step
+
+There exists a maximal element
 $$
 P_0
 $$
@@ -176,17 +207,26 @@ $$
 (\mathcal P,\preceq).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the poset is nonempty, and by step <1>4 every chain has an upper bound in the poset.
 Zorn's lemma therefore gives a maximal element
 $$
 P_0\in\mathcal P.
 $$
+
 :::
 
-<1>6. The prime ideal $P_0$ is minimal under ordinary inclusion among prime ideals contained in $P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The prime ideal $P_0$ is minimal under ordinary inclusion among prime ideals contained in $P$.
+
+
+::: pf-proof
+
 Suppose
 $$
 Q
@@ -219,9 +259,14 @@ Q
 $$
 in the reverse order, contradicting maximality of $P_0$.
 Thus no prime ideal is properly contained in $P_0$.
+
 :::
 
-<1>7. Therefore there exists a prime ideal
+:::
+
+::: pf-step
+
+Therefore there exists a prime ideal
 $$
 \boxed{
 P_0\subseteq P
@@ -229,13 +274,19 @@ P_0\subseteq P
 $$
 that does not properly contain any prime ideal.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 constructs $P_0\subseteq P$, and step <1>6 proves its minimality.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

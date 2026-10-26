@@ -19,14 +19,19 @@ audit:
 Show that if p is a prime such that $p \equiv 3 ( { \bmod { 4 } } )$ , then $x ^ { 2 } + 1$ is irreducible in $\mathbb { Z } _ { p } [ x ]$
 :::
 
-::: {.solution}
-<1>1. The prime $p$ is odd, and
+::: pf
+
+::: pf-step
+
+The prime $p$ is odd, and
 $$
 \frac{p-1}{2}
 $$
 is odd.
 
-::: {.proof}
+
+::: pf-proof
+
 The congruence
 $$
 p\equiv3\pmod4
@@ -42,9 +47,14 @@ $$
 2m+1,
 $$
 which is odd.
+
 :::
 
-<1>2. There is no element
+:::
+
+::: pf-step
+
+There is no element
 $$
 a\in\FF_p
 $$
@@ -53,7 +63,9 @@ $$
 a^2=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 a^2=-1.
@@ -84,15 +96,22 @@ $$
 1=-1
 $$
 in $\FF_p$, impossible because $p$ is odd.
+
 :::
 
-<1>3. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 x^2+1
 $$
 has no root in $\FF_p$.
 
-::: {.proof}
+
+::: pf-proof
+
 A root
 $$
 a\in\FF_p
@@ -106,9 +125,14 @@ $$
 a^2=-1,
 $$
 which is impossible by step <1>2.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 x^2+1
@@ -116,13 +140,19 @@ x^2+1
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A polynomial of degree $2$ over a field is reducible if and only if it has a root in that field. Step <1>3 shows that $x^2+1$ has no root in $\FF_p$, so it is irreducible.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

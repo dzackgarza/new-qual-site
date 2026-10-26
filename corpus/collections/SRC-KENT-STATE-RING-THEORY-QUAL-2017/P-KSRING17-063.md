@@ -24,13 +24,18 @@ Let R be a commutative ring with 1. An ideal I of R is called a primary ideal if
 (Recall that $\operatorname { R a d } ( I ) = \{ x \in R \mid x ^ { n } \in I$ for some n}.)
 :::
 
-::: {.solution}
-<1>1. Assume $I$ is primary. Then
+::: pf
+
+::: pf-step
+
+Assume $I$ is primary. Then
 $$
 R/I\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, a primary ideal satisfies
 $$
 I\ne R.
@@ -40,9 +45,14 @@ $$
 R/I
 $$
 is nonzero.
+
 :::
 
-<1>2. Assume $I$ is primary and let
+:::
+
+::: pf-step
+
+Assume $I$ is primary and let
 $$
 \overline y
 \in
@@ -54,7 +64,9 @@ $$
 $$
 is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 \overline y
@@ -113,9 +125,14 @@ $$
 \overline y
 $$
 is nilpotent.
+
 :::
 
-<1>3. Hence if $I$ is primary, then
+:::
+
+::: pf-step
+
+Hence if $I$ is primary, then
 $$
 \boxed{
 R/I\ne0
@@ -123,11 +140,18 @@ R/I\ne0
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. Conversely, assume
+:::
+
+::: pf-step
+
+Conversely, assume
 $$
 R/I\ne0
 $$
@@ -141,7 +165,9 @@ $$
 I\ne R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 I=R,
@@ -151,9 +177,14 @@ $$
 R/I=0,
 $$
 contrary to the hypothesis.
+
 :::
 
-<1>5. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 xy\in I
 $$
@@ -169,7 +200,9 @@ R/I
 $$
 is a zero divisor.
 
-::: {.proof}
+
+::: pf-proof
+
 In the quotient,
 $$
 \overline x\,\overline y
@@ -191,9 +224,14 @@ $$
 \overline y
 $$
 is annihilated by a nonzero element and is therefore a zero divisor.
+
 :::
 
-<1>6. Under the assumptions of step <1>5, there exists
+:::
+
+::: pf-step
+
+Under the assumptions of step <1>5, there exists
 $$
 n\ge1
 $$
@@ -202,7 +240,9 @@ $$
 y^n\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 \overline y
@@ -225,9 +265,14 @@ Equivalently,
 $$
 y^n\in I.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I\text{ is primary}
@@ -237,16 +282,23 @@ R/I\ne0
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The forward implication is step <1>3.
 For the converse, step <1>4 gives
 $$
 I\ne R,
 $$
 and steps <1>5--<1>6 give the defining primary condition.
+
 :::
 
-<1>8. Now assume $I$ is primary and set
+:::
+
+::: pf-step
+
+Now assume $I$ is primary and set
 $$
 \sqrt I
 \coloneqq
@@ -259,7 +311,9 @@ $$
 R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 1\in\sqrt I,
@@ -281,9 +335,14 @@ Thus
 $$
 1\notin\sqrt I.
 $$
+
 :::
 
-<1>9. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 xy\in\sqrt I.
 $$
@@ -294,7 +353,9 @@ x\in\sqrt I
 y\in\sqrt I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 xy\in\sqrt I,
@@ -335,9 +396,14 @@ In the second,
 $$
 y\in\sqrt I.
 $$
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \sqrt I
@@ -345,13 +411,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 gives properness, and step <1>9 gives the prime-product condition.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>10 proves part (b).
+
 :::
+
 :::

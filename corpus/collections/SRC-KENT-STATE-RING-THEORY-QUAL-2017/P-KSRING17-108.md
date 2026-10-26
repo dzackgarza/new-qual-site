@@ -21,7 +21,6 @@ audit:
 (b) Show that $x ^ { 4 } + 1$ is not irreducible in $\mathbb { Z } _ { 3 } [ x ]$
 :::
 
-::: {.solution}
 Set
 $$
 f(x)
@@ -31,9 +30,15 @@ x^4+x^3+x^2+x+1
 \FF_3[x].
 $$
 
-<1>1. The polynomial $f$ has no root in $\FF_3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $f$ has no root in $\FF_3$.
+
+
+::: pf-proof
+
 Evaluate at
 $$
 0,1,2.
@@ -69,11 +74,18 @@ f(2)
 \end{aligned}
 $$
 Thus $f$ has no root in $\FF_3$.
+
 :::
 
-<1>2. If $f$ is reducible, then it factors as a product of two monic quadratics.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f$ is reducible, then it factors as a product of two monic quadratics.
+
+
+::: pf-proof
+
 The polynomial $f$ has degree $4$.
 By step <1>1 it has no linear factor.
 Hence any nontrivial factorization over the field $\FF_3$ must have factor degrees
@@ -83,9 +95,14 @@ $$
 2.
 $$
 Because $f$ is monic, the two factors may be chosen monic.
+
 :::
 
-<1>3. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 f(x)
 =
@@ -106,7 +123,9 @@ $$
 bd=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand:
 $$
 \begin{aligned}
@@ -125,9 +144,14 @@ Compare coefficients with
 $$
 x^4+x^3+x^2+x+1.
 $$
+
 :::
 
-<1>4. The equation
+:::
+
+::: pf-step
+
+The equation
 $$
 bd=1
 $$
@@ -140,7 +164,9 @@ $$
 (b,d)=(2,2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The nonzero elements of $\FF_3$ are $1$ and $2$.
 The products equal to $1$ are
 $$
@@ -150,15 +176,22 @@ and
 $$
 2\cdot2=4\equiv1.
 $$
+
 :::
 
-<1>5. The case
+:::
+
+::: pf-step
+
+The case
 $$
 b=d=1
 $$
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 The equations from step <1>3 become
 $$
 a+c=1
@@ -191,15 +224,22 @@ $$
 1.
 $$
 Hence this quadratic has no roots in $\FF_3$, contradiction.
+
 :::
 
-<1>6. The case
+:::
+
+::: pf-step
+
+The case
 $$
 b=d=2
 $$
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 The $x^2$-coefficient equation gives
 $$
 ac+2+2
@@ -226,9 +266,14 @@ ad+bc
 $$
 whereas step <1>3 requires it to equal $1$.
 This is a contradiction.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 x^4+x^3+x^2+x+1
@@ -236,13 +281,20 @@ x^4+x^3+x^2+x+1
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 rules out linear factors.
 Steps <1>2--<1>6 rule out every possible quadratic-by-quadratic factorization.
 Thus no nontrivial factorization exists.
+
 :::
 
-<1>8. In $\FF_3[x]$,
+:::
+
+::: pf-step
+
+In $\FF_3[x]$,
 $$
 \boxed{
 x^4+1
@@ -251,7 +303,9 @@ x^4+1
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply:
 $$
 \begin{aligned}
@@ -268,9 +322,14 @@ x^4+1
 $$
 in characteristic $3$.
 Both factors have positive degree.
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 x^4+1
@@ -278,13 +337,19 @@ x^4+1
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 gives a nontrivial factorization.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

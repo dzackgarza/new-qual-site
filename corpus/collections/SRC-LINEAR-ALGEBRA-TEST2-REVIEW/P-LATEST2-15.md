@@ -23,33 +23,50 @@ Find $f(3,5)$.
 (A) $-6$  (B) $-5$  (C) $0$  (D) $8$  (E) $9$
 :::
 
-::: {.solution}
-<1>1. Express $(3,5)$ as a linear combination of the two vectors on which $f$ is known:
+::: pf
+
+::: pf-step
+
+Express $(3,5)$ as a linear combination of the two vectors on which $f$ is known:
 $$
 (3,5)=5(1,1)+2(-1,0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 5(1,1)+2(-1,0)
 =(5,5)+(-2,0)
 =(3,5).
 $$
+
 :::
 
-<1>2. By linearity,
+:::
+
+::: pf-step
+
+By linearity,
 $$
 f(3,5)
 =
 5f(1,1)+2f(-1,0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply $f$ to the decomposition in step <1>1 and use linearity of $f$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 f(3,5)
 =
@@ -58,7 +75,9 @@ f(3,5)
 9.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the given values
 $$
 f(1,1)=1,
@@ -66,20 +85,31 @@ f(1,1)=1,
 f(-1,0)=2
 $$
 into step <1>2.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{f(3,5)=9}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is answer choice $\boxed{\text{(E)}}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required value.
+
 :::
+
 :::

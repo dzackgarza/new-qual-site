@@ -20,17 +20,22 @@ Let D be a unique factorization domain such that if p and q are irreducible elem
 Show that if A and B are ideals of D, then either $A \subseteq B$ or $B \subseteq A$
 :::
 
-::: {.solution}
 If $D$ is a field, then its only ideals are $(0)$ and $D$, so the conclusion is immediate.
 Assume henceforth that $D$ is not a field.
 
-<1>1. Fix an irreducible element
+::: pf
+
+::: pf-step
+
+Fix an irreducible element
 $$
 p\in D.
 $$
 Then every nonzero nonunit of $D$ is associate to a power of $p$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 0\ne a\in D
@@ -65,9 +70,14 @@ u\prod_{i=1}^{n}u_i
 p^n.
 $$
 Hence $a$ is associate to $p^n$.
+
 :::
 
-<1>2. Every nonzero element $a\in D$ can be written uniquely in the form
+:::
+
+::: pf-step
+
+Every nonzero element $a\in D$ can be written uniquely in the form
 $$
 a=up^n
 $$
@@ -78,7 +88,9 @@ u\in D^\times,
 n\in\ZZ_{\ge0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Existence follows from step <1>1, with
 $$
 n=0
@@ -121,9 +133,14 @@ Thus
 $$
 m=n.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 I\trianglelefteq D
 $$
@@ -138,7 +155,9 @@ up^n\in I
 $$
 for some unit $u.
 
-::: {.proof}
+
+::: pf-proof
+
 The set
 $$
 \{
@@ -148,14 +167,21 @@ k\ge0:
 $$
 is nonempty because $I$ contains a nonzero element and step <1>2 applies.
 The nonnegative integers are well ordered, so this set has a least element.
+
 :::
 
-<1>4. For the least exponent $n$ from step <1>3,
+:::
+
+::: pf-step
+
+For the least exponent $n$ from step <1>3,
 $$
 p^n\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 up^n\in I
@@ -169,14 +195,21 @@ p^n
 \in
 I.
 $$
+
 :::
 
-<1>5. Every element of $I$ lies in
+:::
+
+::: pf-step
+
+Every element of $I$ lies in
 $$
 (p^n).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 0\ne a\in I.
@@ -209,9 +242,14 @@ Thus
 $$
 I\subseteq(p^n).
 $$
+
 :::
 
-<1>6. Every nonzero ideal of $D$ has the form
+:::
+
+::: pf-step
+
+Every nonzero ideal of $D$ has the form
 $$
 \boxed{I=(p^n)}
 $$
@@ -220,7 +258,9 @@ $$
 n\ge0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives
 $$
 (p^n)\subseteq I,
@@ -230,16 +270,23 @@ $$
 I\subseteq(p^n).
 $$
 Hence equality holds.
+
 :::
 
-<1>7. For nonnegative integers $m,n$,
+:::
+
+::: pf-step
+
+For nonnegative integers $m,n$,
 $$
 (p^m)\subseteq(p^n)
 \iff
 m\ge n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 m\ge n,
@@ -281,11 +328,18 @@ Hence
 $$
 m\ge n.
 $$
+
 :::
 
-<1>8. Any two ideals $A,B$ of $D$ are comparable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Any two ideals $A,B$ of $D$ are comparable.
+
+
+::: pf-proof
+
 If either ideal is zero, comparability is immediate.
 Assume both are nonzero.
 By step <1>6,
@@ -322,11 +376,15 @@ A\subseteq B
 B\subseteq A.
 }
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

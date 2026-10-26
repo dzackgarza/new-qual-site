@@ -19,13 +19,18 @@ audit:
 If p is a prime satisfying $p \equiv 1$ (mod 4), then p is a sum of two squares.
 :::
 
-::: {.solution}
-<1>1. There exists an integer $a$ such that
+::: pf
+
+::: pf-step
+
+There exists an integer $a$ such that
 $$
 a^2\equiv-1\pmod p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 p=4m+1.
@@ -72,14 +77,21 @@ a
 \coloneqq
 \left(\frac{p-1}{2}\right)!.
 $$
+
 :::
 
-<1>2. The element $p$ is not prime in the Gaussian integer ring
+:::
+
+::: pf-step
+
+The element $p$ is not prime in the Gaussian integer ring
 $$
 \ZZ[i].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 p
@@ -109,11 +121,18 @@ $$
 p\nmid a-i.
 $$
 Thus $p$ divides a product without dividing either factor, so it is not a prime element of $\ZZ[i]$.
+
 :::
 
-<1>3. The element $p$ is reducible in $\ZZ[i]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $p$ is reducible in $\ZZ[i]$.
+
+
+::: pf-proof
+
 The Gaussian integers form a Euclidean domain with Euclidean function
 $$
 N(x+iy)
@@ -130,11 +149,18 @@ for nonunits
 $$
 \alpha,\beta\in\ZZ[i].
 $$
+
 :::
 
-<1>4. One of the factors in step <1>3 has Gaussian norm exactly $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+One of the factors in step <1>3 has Gaussian norm exactly $p$.
+
+
+::: pf-proof
+
 Taking norms in
 $$
 p=\alpha\beta
@@ -157,11 +183,18 @@ Both norms are positive integers dividing $p^2$. Since $p$ is prime, the only po
 $$
 N(\alpha)=N(\beta)=p.
 $$
+
 :::
 
-<1>5. Hence $p$ is a sum of two squares.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $p$ is a sum of two squares.
+
+
+::: pf-proof
+
 Write
 $$
 \alpha=x+iy
@@ -185,11 +218,15 @@ p=x^2+y^2
 }
 $$
 for integers $x,y$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

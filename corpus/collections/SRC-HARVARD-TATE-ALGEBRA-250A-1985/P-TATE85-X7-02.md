@@ -29,16 +29,21 @@ $f ( X )$has 7 roots (mod p) for 1 p (namely$p = 1 8 7 9 )$;
 Is$G _ { f } = G _ { 1 6 8 } , \mathrm { o r } \ A _ { 7 } { \mathrm { ? } }$
 :::
 
-::: {.solution}
 Let $L$ be the splitting field of
 $$
 f(X)=X^7-7X+3
 $$
 over $\QQ$, and put $G=\operatorname{Gal}(L/\QQ)$.
 
-<1>1. The polynomial $f$ is irreducible over $\QQ$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $f$ is irreducible over $\QQ$.
+
+
+::: pf-proof
+
 Modulo $2$,
 $$
 f(X)\equiv X^7+X+1.
@@ -54,24 +59,36 @@ X^3+X+1,
 X^3+X^2+1.
 $$
 Division of $X^7+X+1$ by these three polynomials leaves remainders $1$, $X$, and $X$, respectively. Hence it has no irreducible factor of degree $1$, $2$, or $3$. A reducible polynomial of degree $7$ must have a factor of degree at most $3$, so $X^7+X+1$ is irreducible over $\FF_2$. Gauss's lemma therefore gives the irreducibility of $f$ over $\QQ$.
+
 :::
 
-<1>2. By part (I),
+:::
+
+::: pf-step
+
+By part (I),
 $$
 G\cong A_7
 \qquad\text{or}\qquad
 G\cong G_{168}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The discriminant is
 $$
 \operatorname{disc}(f)=3^8 7^8=(3^4 7^4)^2,
 $$
 and the source states that $f$ has exactly three real roots. Together with the irreducibility from step <1>1, these are precisely the hypotheses of part (I), whose conclusion is the displayed dichotomy.
+
 :::
 
-<1>3. Let $\alpha_1,\ldots,\alpha_7$ be the roots of $f$ and form the three-set resolvent
+:::
+
+::: pf-step
+
+Let $\alpha_1,\ldots,\alpha_7$ be the roots of $f$ and form the three-set resolvent
 $$
 P_{35}(T)
 =
@@ -102,7 +119,9 @@ $$
 \gcd(P_{35},P_{35}')=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficients of $P_{35}$ are symmetric polynomials in the roots of $f$, hence are polynomials in the elementary symmetric functions of those roots. For
 $$
 f(X)=X^7-7X+3,
@@ -114,11 +133,18 @@ $$
 T^7+14T^4-42T^2-21T+9
 $$
 has remainder $0$, proving the displayed factorization. The Euclidean algorithm applied to the same explicit polynomial and its derivative gives gcd $1$. Hence $P_{35}$ is reducible and has $35$ distinct roots.
+
 :::
 
-<1>4. The alternative $G\cong A_7$ is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The alternative $G\cong A_7$ is impossible.
+
+
+::: pf-proof
+
 The group $A_7$ acts transitively on the $35$ three-element subsets of $\{1,\ldots,7\}$. By step <1>3 the corresponding $35$ three-root sums are all distinct. Therefore, if $G=A_7$, the Galois conjugates of any root
 $$
 \alpha_i+\alpha_j+\alpha_k
@@ -126,29 +152,47 @@ $$
 of the three-set resolvent run through all $35$ roots of $P_{35}$. Consequently $P_{35}$ is irreducible over $\QQ$.
 
 Step <1>3 shows instead that $P_{35}$ has factors of degrees $7$ and $28$. Hence $G\ne A_7$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{G_f\cong G_{168}\cong \operatorname{GL}_3(\FF_2)
 \cong \operatorname{PSL}_2(\FF_7)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 leaves only $A_7$ and $G_{168}$, and step <1>4 excludes $A_7$.
+
 :::
 
-<1>6. The supplied prime counts are consistent with this exact conclusion.
+:::
 
-::: {.proof}
+::: pf-step
+
+The supplied prime counts are consistent with this exact conclusion.
+
+
+::: pf-proof
+
 In the natural action of $G_{168}=\operatorname{GL}_3(\FF_2)$ on the seven nonzero vectors of $\FF_2^3$, the numbers of fixed points of an element can only be $0$, $1$, $3$, or $7$. For an unramified prime, the number of roots of $f$ modulo $p$ is the number of fixed points of a Frobenius element. Thus the observed root counts $0$, $1$, $3$, and $7$ have exactly the pattern expected for $G_{168}$.
 
 The finite table is corroborating evidence rather than the logical step that excludes $A_7$; that exclusion is supplied by the exact resolvent factorization in steps <1>3 and <1>4.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested Galois group.
+
 :::
+
 :::

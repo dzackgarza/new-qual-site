@@ -24,18 +24,23 @@ The claim requires $a\neq0$. If $a=0$, the translation is the identity map,
 which is linear.
 :::
 
-::: {.solution}
 Define
 $$
 T_a(x)=x+a.
 $$
 
-<1>1. Every linear transformation $T:\mathbb R^n\to\mathbb R^n$ satisfies
+::: pf
+
+::: pf-step
+
+Every linear transformation $T:\mathbb R^n\to\mathbb R^n$ satisfies
 $$
 T(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity,
 $$
 T(0)
@@ -45,50 +50,82 @@ T(0+0)
 T(0)+T(0).
 $$
 Subtracting $T(0)$ from both sides gives $T(0)=0$.
+
 :::
 
-<1>2. The translation satisfies
+:::
+
+::: pf-step
+
+The translation satisfies
 $$
 T_a(0)=a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 T_a(0)=0+a=a.
 $$
+
 :::
 
-<1>3. If $a\neq0$, then $T_a$ is not linear.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $a\neq0$, then $T_a$ is not linear.
+
+
+::: pf-proof
+
 Steps <1>1 and <1>2 are incompatible when $a\neq0$: a linear map would have
 to send $0$ to $0$, whereas $T_a$ sends $0$ to $a$.
+
 :::
 
-<1>4. If $a=0$, then $T_a$ is linear.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $a=0$, then $T_a$ is linear.
+
+
+::: pf-proof
+
 In that case,
 $$
 T_0(x)=x,
 $$
 the identity transformation.
+
 :::
 
-<1>5. Therefore a translation is linear exactly in the trivial case
+:::
+
+::: pf-step
+
+Therefore a translation is linear exactly in the trivial case
 $$
 \boxed{a=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 excludes every nonzero translation vector, and step <1>4 handles
 $a=0$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the precise conclusion.
+
 :::
+
 :::

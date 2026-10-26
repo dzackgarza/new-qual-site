@@ -19,7 +19,6 @@ audit:
 Consider the infinite dimensional vector space with the orthonormal basis $\vec { e _ { i } }$ $i = 1 , 2 , \dots$ Construct the continuous family of linear transformations $U ( \lambda )$ $0 \leqslant \lambda \leqslant 1$ , acting in this space such that $U ( 1 ) = E$ and $U ( 0 ) \vec { e } _ { i } = \vec { e } _ { i + 1 } , i = 1 , 2 ,$
 :::
 
-::: {.solution}
 Let $S$ denote the unilateral shift
 $$
 Se_i=e_{i+1},
@@ -27,7 +26,11 @@ Se_i=e_{i+1},
 i=1,2,\ldots.
 $$
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 $$
 \boxed{
 U(\lambda)
@@ -40,12 +43,19 @@ U(\lambda)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For each fixed $\lambda$, this is a linear combination of two linear
 transformations, hence is linear.
+
 :::
 
-<1>2. On the basis vectors,
+:::
+
+::: pf-step
+
+On the basis vectors,
 $$
 U(\lambda)e_i
 =
@@ -54,38 +64,61 @@ U(\lambda)e_i
 (1-\lambda)e_{i+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the definition in step <1>1 and the relation $Se_i=e_{i+1}$.
+
 :::
 
-<1>3. At $\lambda=1$,
+:::
+
+::: pf-step
+
+At $\lambda=1$,
 $$
 U(1)=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives
 $$
 U(1)=1\cdot I+0\cdot S=I.
 $$
+
 :::
 
-<1>4. At $\lambda=0$,
+:::
+
+::: pf-step
+
+At $\lambda=0$,
 $$
 U(0)e_i=e_{i+1}
 $$
 for every $i$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 $$
 U(0)e_i=Se_i=e_{i+1}.
 $$
+
 :::
 
-<1>5. The path $\lambda\mapsto U(\lambda)$ is continuous in operator norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+The path $\lambda\mapsto U(\lambda)$ is continuous in operator norm.
+
+
+::: pf-proof
+
 For $\lambda,\mu\in[0,1]$,
 $$
 U(\lambda)-U(\mu)
@@ -111,12 +144,16 @@ $$
 2|\lambda-\mu|.
 $$
 Thus the path is Lipschitz, hence continuous.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>5 verify the two endpoint conditions and continuity of the
 family defined in step <1>1.
+
 :::
+
 :::

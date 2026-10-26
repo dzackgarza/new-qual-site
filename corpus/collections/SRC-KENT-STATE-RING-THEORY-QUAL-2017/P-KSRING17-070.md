@@ -23,8 +23,11 @@ Let R be a commutative ring with identity that has exactly three ideals, {0}, I,
 (b) Show that if $a , b \in I$ then $a b = 0$
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 a\notin I.
 $$
@@ -41,7 +44,9 @@ $$
 I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 0\in I,
@@ -70,14 +75,21 @@ so
 $$
 (a)\ne I.
 $$
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 (a)=R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis, the only ideals of $R$ are
 $$
 (0),
@@ -94,15 +106,22 @@ so the only remaining possibility is
 $$
 (a)=R.
 $$
+
 :::
 
-<1>3. Hence every
+:::
+
+::: pf-step
+
+Hence every
 $$
 a\notin I
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>2,
 $$
 1\in(a).
@@ -124,9 +143,14 @@ a\notin I
 a\in R^\times.
 }
 $$
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 a,b\in I.
 $$
@@ -139,7 +163,9 @@ $$
 (ab)=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 ab\in I
@@ -161,9 +187,14 @@ The only nonzero proper ideal is $I$, so
 $$
 (ab)=I.
 $$
+
 :::
 
-<1>5. Under the assumption of step <1>4, there exists
+:::
+
+::: pf-step
+
+Under the assumption of step <1>4, there exists
 $$
 r\in R
 $$
@@ -172,7 +203,9 @@ $$
 a=abr.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 a\in I
@@ -187,14 +220,21 @@ for some
 $$
 r\in R.
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 1-br\notin I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 b\in I
@@ -223,25 +263,39 @@ Therefore
 $$
 1-br\notin I.
 $$
+
 :::
 
-<1>7. The element
+:::
+
+::: pf-step
+
+The element
 $$
 1-br
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 This follows immediately from step <1>3 and step <1>6.
+
 :::
 
-<1>8. The assumption
+:::
+
+::: pf-step
+
+The assumption
 $$
 ab\ne0
 $$
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 a=abr,
@@ -267,9 +321,14 @@ contradicting the assumption
 $$
 ab\ne0.
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 a,b\in I
@@ -278,13 +337,19 @@ ab=0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 rules out the only alternative.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

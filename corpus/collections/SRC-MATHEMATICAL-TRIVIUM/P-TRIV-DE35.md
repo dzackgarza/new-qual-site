@@ -23,19 +23,24 @@ $$
 $$
 :::
 
-::: {.solution}
 Set
 \[
 g(x)=\frac1{1+x-x_0}.
 \]
 
-<1>1. For every smooth function $g$ near $x_0$,
+::: pf
+
+::: pf-step
+
+For every smooth function $g$ near $x_0$,
 \[
 g\,\delta_{x_0}''
 =g(x_0)\delta_{x_0}''-2g'(x_0)\delta_{x_0}'+g''(x_0)\delta_{x_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any test function $\phi$,
 \[
 \langle g\delta_{x_0}'',\phi\rangle
@@ -54,9 +59,14 @@ Since
 \langle\delta_{x_0}',\phi\rangle=-\phi'(x_0),
 \]
 this is exactly the action of the displayed distribution.
+
 :::
 
-<1>2. For the present $g$,
+:::
+
+::: pf-step
+
+For the present $g$,
 \[
 g(x_0)=1,
 \qquad
@@ -65,7 +75,9 @@ g'(x_0)=-1,
 g''(x_0)=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiation gives
 \[
 g'(x)=-(1+x-x_0)^{-2},
@@ -73,9 +85,14 @@ g'(x)=-(1+x-x_0)^{-2},
 g''(x)=2(1+x-x_0)^{-3}.
 \]
 Evaluate at $x=x_0$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \frac{\delta''(x-x_0)}{1+x-x_0}
 =\boxed{\delta''(x-x_0)+2\delta'(x-x_0)+2\delta(x-x_0)},
@@ -85,13 +102,19 @@ so
 \boxed{a=1,\qquad b=2,\qquad c=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the three values from step <1>2 into the identity in step <1>1.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested coefficients.
+
 :::
+
 :::

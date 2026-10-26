@@ -19,13 +19,16 @@ audit:
 Let R be a commutative ring with identity, and let $P \subset Q$ be prime ideals of R. Prove that there exist prime ideals $P ^ { * } , Q ^ { * }$ satisfying $P \subseteq P ^ { * } \subset Q ^ { * } \subseteq Q$ , such that there are no prime ideals strictly between $P ^ { * }$ and $Q ^ { * }$ . HINT: Fix $x \in Q - P$ and show that there exists a prime ideal $P ^ { * }$ containing P , contained in Q and maximal with respect to not containing x.
 :::
 
-::: {.solution}
 Choose
 $$
 x\in Q\setminus P.
 $$
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 \mathcal A
 \coloneqq
@@ -39,7 +42,9 @@ $$
 ordered by inclusion.
 Then $\mathcal A$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 The prime ideal
 $$
 P
@@ -49,11 +54,18 @@ $$
 x\notin P
 $$
 by choice of $x$.
+
 :::
 
-<1>2. Every chain in $\mathcal A$ has an upper bound in $\mathcal A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every chain in $\mathcal A$ has an upper bound in $\mathcal A$.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal C\subseteq\mathcal A
@@ -108,15 +120,22 @@ $$
 U\in\mathcal A,
 $$
 and it is an upper bound for the chain.
+
 :::
 
-<1>3. There exists a prime ideal
+:::
+
+::: pf-step
+
+There exists a prime ideal
 $$
 P^*\in\mathcal A
 $$
 maximal with respect to inclusion.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, Zorn's lemma applies to $\mathcal A$.
 Hence there exists a maximal element
 $$
@@ -131,15 +150,22 @@ $$
 x\notin P^*.
 $$
 Moreover, no larger prime ideal inside $Q$ can still omit $x$.
+
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 P^*+(x)
 $$
 is contained in $Q$.
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 P^*\subseteq Q
@@ -153,9 +179,14 @@ Therefore
 $$
 P^*+(x)\subseteq Q.
 $$
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \mathcal B
 \coloneqq
@@ -167,7 +198,9 @@ $$
 $$
 Then $\mathcal B$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 The prime ideal
 $$
 Q
@@ -181,9 +214,14 @@ Thus
 $$
 Q\in\mathcal B.
 $$
+
 :::
 
-<1>6. Order $\mathcal B$ by reverse inclusion:
+:::
+
+::: pf-step
+
+Order $\mathcal B$ by reverse inclusion:
 $$
 \mathfrak q_1\preceq\mathfrak q_2
 \quad\Longleftrightarrow\quad
@@ -191,7 +229,9 @@ $$
 $$
 Every chain has an upper bound in this order.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal D\subseteq\mathcal B
@@ -272,15 +312,22 @@ $$
 $$
 in the reverse order.
 Hence $L$ is an upper bound.
+
 :::
 
-<1>7. There exists a prime ideal
+:::
+
+::: pf-step
+
+There exists a prime ideal
 $$
 Q^*\in\mathcal B
 $$
 minimal under ordinary inclusion.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5--<1>6, Zorn's lemma gives a maximal element of $\mathcal B$ with respect to the reverse-inclusion order.
 Call it
 $$
@@ -295,14 +342,21 @@ and no smaller prime ideal inside $Q$ contains
 $$
 P^*+(x).
 $$
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 $$
 P^*\subsetneq Q^*.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 x\notin P^*.
@@ -320,9 +374,14 @@ $$
 P^*\subseteq Q^*,
 $$
 the inclusion is strict.
+
 :::
 
-<1>9. There is no prime ideal strictly between
+:::
+
+::: pf-step
+
+There is no prime ideal strictly between
 $$
 P^*
 $$
@@ -331,7 +390,9 @@ $$
 Q^*.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 T
@@ -379,9 +440,14 @@ is a prime ideal properly contained in $Q^*$, contradicting minimality of $Q^*$ 
 
 Both alternatives are impossible.
 Therefore no such $T$ exists.
+
 :::
 
-<1>10. Hence there exist prime ideals
+:::
+
+::: pf-step
+
+Hence there exist prime ideals
 $$
 \boxed{
 P\subseteq P^*
@@ -391,13 +457,19 @@ Q^*\subseteq Q
 $$
 with no prime ideal strictly between $P^*$ and $Q^*$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3, <1>7, <1>8, and <1>9 establish all required properties.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the desired conclusion.
+
 :::
+
 :::

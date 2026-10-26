@@ -20,7 +20,6 @@ Let R be a commutative ring with 1 and let $f ( x ) \ \in \ R [ x ]$ be nilpoten
 Show that the coefficients of f are nilpotent.
 :::
 
-::: {.solution}
 Write
 $$
 f(x)
@@ -36,7 +35,11 @@ $$
 N\ge1.
 $$
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 \mathfrak p
 $$
@@ -49,7 +52,9 @@ $$
 $$
 is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the quotient homomorphism
 $$
 R[x]\to(R/\mathfrak p)[x]
@@ -68,15 +73,22 @@ $$
 \overline f
 $$
 is nilpotent.
+
 :::
 
-<1>2. The ring
+:::
+
+::: pf-step
+
+The ring
 $$
 (R/\mathfrak p)[x]
 $$
 is an integral domain.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \mathfrak p
@@ -87,9 +99,14 @@ R/\mathfrak p
 $$
 is an integral domain.
 A polynomial ring over an integral domain is again an integral domain.
+
 :::
 
-<1>3. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 \overline f
 $$
@@ -98,7 +115,9 @@ $$
 (R/\mathfrak p)[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \overline f^{\,N}=0.
@@ -108,9 +127,14 @@ Hence
 $$
 \overline f=0.
 $$
+
 :::
 
-<1>4. Every coefficient
+:::
+
+::: pf-step
+
+Every coefficient
 $$
 a_i
 $$
@@ -120,7 +144,9 @@ $$
 $$
 of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 The equality
 $$
 \overline f=0
@@ -142,15 +168,22 @@ $$
 a_i\in\mathfrak p.
 $$
 The prime ideal $\mathfrak p$ was arbitrary.
+
 :::
 
-<1>5. If an element
+:::
+
+::: pf-step
+
+If an element
 $$
 a\in R
 $$
 lies in every prime ideal of $R$, then $a$ is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 a
@@ -244,15 +277,22 @@ a\notin P.
 $$
 Hence $a$ does not lie in every prime ideal, contradiction.
 Therefore $a$ is nilpotent.
+
 :::
 
-<1>6. Each coefficient
+:::
+
+::: pf-step
+
+Each coefficient
 $$
 a_i
 $$
 of $f$ is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 a_i
@@ -263,25 +303,36 @@ $$
 a_i
 $$
 is nilpotent.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \text{every coefficient of }f\text{ is nilpotent}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 applies to each
 $$
 i=0,\ldots,n.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

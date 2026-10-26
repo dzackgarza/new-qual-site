@@ -26,7 +26,6 @@ Indeed, no prime ideal contains $R$ itself.
 The proof below establishes the intended statement for nonzero proper ideals.
 :::
 
-::: {.solution}
 Call a nonzero proper ideal
 $$
 I\trianglelefteq R
@@ -50,7 +49,11 @@ P_1P_2\cdots P_m
 I.
 $$
 
-<1>1. Suppose, for contradiction, that some nonzero proper ideal is not good.
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that some nonzero proper ideal is not good.
 Let
 $$
 \mathcal B
@@ -62,13 +65,22 @@ I\ne(0),\ I\ne R,\ I\text{ is not good}
 $$
 Then $\mathcal B$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of the corrected statement.
+
 :::
 
-<1>2. The set $\mathcal B$ has a maximal element under inclusion.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $\mathcal B$ has a maximal element under inclusion.
+
+
+::: pf-proof
+
 Since $R$ is Noetherian, its ideals satisfy the ascending chain condition.
 If $\mathcal B$ had no maximal element, one could construct a strictly increasing infinite chain
 $$
@@ -85,11 +97,18 @@ Choose a maximal element
 $$
 I\in\mathcal B.
 $$
+
 :::
 
-<1>3. The ideal $I$ is not prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is not prime.
+
+
+::: pf-proof
+
 If $I$ were prime, then the one-factor product
 $$
 I
@@ -99,9 +118,14 @@ Thus $I$ would be good, contradicting
 $$
 I\in\mathcal B.
 $$
+
 :::
 
-<1>4. There exist
+:::
+
+::: pf-step
+
+There exist
 $$
 a,b\in R\setminus I
 $$
@@ -110,12 +134,19 @@ $$
 ab\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $I$ is proper but not prime, the prime-ideal condition fails.
 Thus such $a,b$ exist.
+
 :::
 
-<1>5. The ideals
+:::
+
+::: pf-step
+
+The ideals
 $$
 I+(a)
 \qquad\text{and}\qquad
@@ -123,21 +154,30 @@ I+(b)
 $$
 strictly contain $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a,b\notin I,
 $$
 adjoining either generator strictly enlarges $I$.
+
 :::
 
-<1>6. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 I+(a)
 $$
 is proper.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that
 $$
 I+(a)=R.
@@ -176,15 +216,22 @@ Therefore
 $$
 I+(a)\ne R.
 $$
+
 :::
 
-<1>7. The ideal
+:::
+
+::: pf-step
+
+The ideal
 $$
 I+(b)
 $$
 is proper.
 
-::: {.proof}
+
+::: pf-proof
+
 The argument is symmetric to step <1>6.
 If
 $$
@@ -199,9 +246,14 @@ $$
 a\in I,
 $$
 contradicting step <1>4.
+
 :::
 
-<1>8. Both
+:::
+
+::: pf-step
+
+Both
 $$
 I+(a)
 \qquad\text{and}\qquad
@@ -209,13 +261,20 @@ I+(b)
 $$
 are good.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5--<1>7, both are nonzero proper ideals strictly containing the maximal counterexample $I$.
 If either were not good, it would belong to $\mathcal B$ and properly contain $I$, contradicting maximality.
 Hence both are good.
+
 :::
 
-<1>9. Choose prime ideals
+:::
+
+::: pf-step
+
+Choose prime ideals
 $$
 P_1,\ldots,P_r
 $$
@@ -250,11 +309,18 @@ Q_1\cdots Q_s
 I+(b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of goodness applied in step <1>8.
+
 :::
 
-<1>10. Every prime ideal among the
+:::
+
+::: pf-step
+
+Every prime ideal among the
 $$
 P_i
 $$
@@ -264,7 +330,9 @@ Q_j
 $$
 contains $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 $$
 P_i
@@ -283,16 +351,23 @@ $$
 I+(b),
 $$
 which contains $I$.
+
 :::
 
-<1>11. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (I+(a))(I+(b))
 \subseteq
 I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand:
 $$
 (I+(a))(I+(b))
@@ -316,15 +391,22 @@ $$
 (ab)\subseteq I.
 $$
 Thus the whole product is contained in $I$.
+
 :::
 
-<1>12. The product
+:::
+
+::: pf-step
+
+The product
 $$
 P_1\cdots P_rQ_1\cdots Q_s
 $$
 is contained in $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9,
 $$
 P_1\cdots P_r
@@ -344,11 +426,18 @@ P_1\cdots P_rQ_1\cdots Q_s
 (I+(a))(I+(b)).
 $$
 Apply step <1>11.
+
 :::
 
-<1>13. The ideal $I$ is good.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is good.
+
+
+::: pf-proof
+
 By step <1>10, every prime factor
 $$
 P_i
@@ -358,20 +447,34 @@ $$
 contains $I.
 By step <1>12, their product is contained in $I$.
 Thus $I$ satisfies the definition of goodness.
+
 :::
 
-<1>14. This contradicts
+:::
+
+::: pf-step
+
+This contradicts
 $$
 I\in\mathcal B.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Membership in $\mathcal B$ means that $I$ is not good, whereas step <1>13 shows that it is good.
+
 :::
 
-<1>15. Therefore every nonzero proper ideal $A$ of $R$ contains a product of prime ideals, each of which contains $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every nonzero proper ideal $A$ of $R$ contains a product of prime ideals, each of which contains $A$.
+
+
+::: pf-proof
+
 The assumption that a counterexample exists leads to the contradiction in step <1>14.
 Hence
 $$
@@ -384,11 +487,15 @@ A\subseteq P_i
 \text{ for all }i.
 }
 $$
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 proves the intended corrected statement.
+
 :::
+
 :::

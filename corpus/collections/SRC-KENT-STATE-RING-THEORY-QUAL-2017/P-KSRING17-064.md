@@ -20,8 +20,11 @@ Let R be a commutative ring with identity.
 Show that R is an integral domain if and only if R is a subring of a field.
 :::
 
-::: {.solution}
-<1>1. Assume first that $R$ is an integral domain.
+::: pf
+
+::: pf-step
+
+Assume first that $R$ is an integral domain.
 Define
 $$
 F
@@ -41,7 +44,9 @@ $$
 ad=bc.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $R$ is an integral domain, the usual fraction relation is an equivalence relation, and the operations
 $$
 \frac ab+\frac cd
@@ -61,11 +66,18 @@ bd
 $$
 is nonzero because $R$ has no zero divisors.
 This gives the usual fraction ring of $R$.
+
 :::
 
-<1>2. The ring $F$ is a field.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $F$ is a field.
+
+
+::: pf-proof
+
 The fraction
 $$
 \frac10
@@ -99,9 +111,14 @@ $$
 $$
 Thus every nonzero element of $F$ is invertible.
 Since $F$ is commutative with identity, it is a field.
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \iota:R\to F,
 \qquad
@@ -111,7 +128,9 @@ $$
 $$
 is an injective ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 r,s\in R,
@@ -156,11 +175,18 @@ $$
 r=s.
 $$
 Thus $\iota$ is injective.
+
 :::
 
-<1>4. Therefore every integral domain is isomorphic to a subring of a field.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every integral domain is isomorphic to a subring of a field.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 F=\operatorname{Frac}(R)
@@ -174,12 +200,19 @@ Thus $R$ identifies with the subring
 $$
 \iota(R)\subseteq F.
 $$
+
 :::
 
-<1>5. Conversely, suppose $R$ is a subring of a field $K$.
+:::
+
+::: pf-step
+
+Conversely, suppose $R$ is a subring of a field $K$.
 Then $R$ has no nonzero zero divisors.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 a,b\in R
@@ -197,18 +230,30 @@ a=0
 b=0.
 $$
 Thus $R$ has no nonzero zero divisors.
+
 :::
 
-<1>6. Hence a nonzero subring of a field is an integral domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence a nonzero subring of a field is an integral domain.
+
+
+::: pf-proof
+
 A subring of a field is commutative.
 Under the standard unital-subring convention, it contains the same identity and is nonzero.
 By step <1>5 it has no nonzero zero divisors.
 Therefore it is an integral domain.
+
 :::
 
-<1>7. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 R\text{ is an integral domain}
@@ -217,13 +262,19 @@ R\text{ is isomorphic to a subring of a field}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The forward implication is step <1>4, and the converse is step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required equivalence.
+
 :::
+
 :::

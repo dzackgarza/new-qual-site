@@ -20,7 +20,6 @@ Let D be an integral domain and F its field of fractions.
 Let P be a prime ideal in D and $D _ { P } = \{ a b ^ { - 1 } \mid a , b \in D , \ b \notin P \} \subseteq F$ . Show that $D _ { P }$ has a unique maximal ideal.
 :::
 
-::: {.solution}
 Define
 $$
 M
@@ -33,9 +32,15 @@ a\in P
 \right\}.
 $$
 
-<1>1. The set $M$ is well-defined.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $M$ is well-defined.
+
+
+::: pf-proof
+
 Suppose
 $$
 \frac ab
@@ -71,11 +76,18 @@ $$
 c\in P.
 $$
 Thus membership in $M$ is independent of the chosen representative.
+
 :::
 
-<1>2. The set $M$ is closed under subtraction.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $M$ is closed under subtraction.
+
+
+::: pf-proof
+
 Let
 $$
 \frac ab,\frac cd
@@ -117,11 +129,18 @@ $$
 \in
 M.
 $$
+
 :::
 
-<1>3. The set $M$ absorbs multiplication by arbitrary elements of $D_P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $M$ absorbs multiplication by arbitrary elements of $D_P$.
+
+
+::: pf-proof
+
 Let
 $$
 \frac rs
@@ -168,9 +187,14 @@ $$
 \in
 M.
 $$
+
 :::
 
-<1>4. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{
 M
@@ -179,13 +203,22 @@ D_P.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives the additive-subgroup condition, and step <1>3 gives absorption under multiplication by arbitrary elements of $D_P$.
+
 :::
 
-<1>5. The ideal $M$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $M$ is proper.
+
+
+::: pf-proof
+
 The identity of $D_P$ is
 $$
 1=\frac11.
@@ -202,9 +235,14 @@ Therefore
 $$
 M\ne D_P.
 $$
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac ab
 \in
@@ -220,7 +258,9 @@ $$
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\notin P,
@@ -245,9 +285,14 @@ $$
 \in
 D_P^\times.
 $$
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac ab
 \in
@@ -259,7 +304,9 @@ $$
 $$
 is not a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 a\in P
@@ -308,11 +355,18 @@ $$
 \frac ab
 $$
 is not invertible.
+
 :::
 
-<1>8. The nonunits of $D_P$ are exactly the elements of $M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The nonunits of $D_P$ are exactly the elements of $M$.
+
+
+::: pf-proof
+
 Step <1>6 shows that every fraction outside $M$ is a unit.
 Step <1>7 shows that every fraction in $M$ is a nonunit.
 Hence
@@ -323,11 +377,18 @@ M
 D_P\setminus D_P^\times.
 }
 $$
+
 :::
 
-<1>9. The ideal $M$ is maximal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $M$ is maximal.
+
+
+::: pf-proof
+
 The quotient
 $$
 D_P/M
@@ -357,11 +418,18 @@ D_P/M
 $$
 is invertible, so the quotient is a field.
 Hence $M$ is maximal.
+
 :::
 
-<1>10. The ideal $M$ is the unique maximal ideal of $D_P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $M$ is the unique maximal ideal of $D_P$.
+
+
+::: pf-proof
+
 Let
 $$
 N
@@ -387,9 +455,14 @@ are maximal proper ideals, this containment forces
 $$
 N=M.
 $$
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D_P
@@ -403,13 +476,19 @@ a\in P,\ b\notin P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 proves uniqueness, and the displayed description is the definition of $M$.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required conclusion.
+
 :::
+
 :::

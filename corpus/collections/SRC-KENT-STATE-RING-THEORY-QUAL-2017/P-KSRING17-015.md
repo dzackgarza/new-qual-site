@@ -21,7 +21,6 @@ The Jacobson Radical $J ( R )$ of a ring R is defined to be the intersection of 
 Let R be a commutative ring with 1 and let $x \in R$ . Show that $x \in J ( R )$ if and only if $1 - x y$ is a unit for all y in R.
 :::
 
-::: {.solution}
 Recall that
 $$
 J(R)
@@ -29,7 +28,11 @@ J(R)
 \bigcap_{\mathfrak m\in\operatorname{MaxSpec}R}\mathfrak m.
 $$
 
-<1>1. Assume
+::: pf
+
+::: pf-step
+
+Assume
 $$
 x\in J(R).
 $$
@@ -43,7 +46,9 @@ $$
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 y\in R.
@@ -90,9 +95,14 @@ $$
 1-xy
 $$
 must be a unit.
+
 :::
 
-<1>2. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 $$
 1-xy
 $$
@@ -105,7 +115,9 @@ $$
 x\in J(R).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 x\notin J(R).
@@ -158,9 +170,14 @@ Thus
 $$
 x\in J(R).
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 x\in J(R)
@@ -170,19 +187,28 @@ x\in J(R)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves the forward implication, and step <1>2 proves the converse.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required equivalence.
-:::
+
 :::
 
-::: {.solution}
-<1>1. Assume
+:::
+
+::: pf
+
+::: pf-step
+
+Assume
 $$
 x\in J(R).
 $$
@@ -192,7 +218,9 @@ $$
 $$
 is a unit for every $y\in R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 y\in R.
@@ -230,9 +258,14 @@ $$
 \in M,
 $$
 contradicting the fact that a maximal ideal is proper. Thus $1-xy$ must be a unit.
+
 :::
 
-<1>2. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 1-xy
 $$
@@ -241,7 +274,9 @@ $$
 x\in J(R).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 x\notin J(R).
@@ -286,9 +321,14 @@ Therefore $x$ lies in every maximal ideal, so
 $$
 x\in J(R).
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 x\in J(R)
@@ -298,13 +338,19 @@ x\in J(R)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves the forward implication, and step <1>2 proves the reverse implication.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required characterization.
+
 :::
+
 :::

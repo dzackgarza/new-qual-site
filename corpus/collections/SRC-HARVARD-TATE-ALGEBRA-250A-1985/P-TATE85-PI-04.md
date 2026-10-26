@@ -47,12 +47,17 @@ The ideals of type IV which contain a given $f(X)A$ of type II are those for whi
 Errata to the statement: in type IV the ideal is $\pi^* A + g(X)A$ with $M = \pi^* B$; $h(X) \in B[X]$; and the closing parenthetical should read $\bar{f} = f \pmod{\pi_i} = 1$.
 :::
 
-::: {.solution}
 Write $A=B[X]$, and use the conclusions of Problem 3 proved in [[P-TATE85-PI-03]].
 
-<1>1. Every prime ideal $P\subseteq A$ has one of the four stated forms.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every prime ideal $P\subseteq A$ has one of the four stated forms.
+
+
+::: pf-proof
+
 Since $B$ is a PID, every prime ideal of $B$ is either $(0)$ or $\pi B$ for a prime element $\pi$.
 
 If $P\cap B=(0)$, Problem 3(a) gives either
@@ -76,11 +81,18 @@ P=\pi A+g(X)A,
 $$
 where $\bar g$ is irreducible in $(B/\pi B)[X]$.
 These are types III and IV.
+
 :::
 
-<1>2. The four types are distinct.
+:::
 
-::: {.proof}
+::: pf-step
+
+The four types are distinct.
+
+
+::: pf-proof
+
 Types I and II have contraction $(0)$ to $B$, whereas types III and IV have nonzero contraction $\pi B$.
 Type I is zero and type II is nonzero.
 In the nonzero-contraction case, type III has image zero in
@@ -89,15 +101,22 @@ A/\pi A\cong(B/\pi B)[X],
 $$
 whereas type IV has nonzero image $(\bar g)$.
 Hence no two of the four types coincide.
+
 :::
 
-<1>3. Every type-IV ideal
+:::
+
+::: pf-step
+
+Every type-IV ideal
 $$
 Q=\pi A+gA
 $$
 is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 Reduction modulo $\pi$ gives
 $$
 A/Q
@@ -106,11 +125,18 @@ A/Q
 $$
 The ring $B/\pi B$ is a field and $\bar g$ is irreducible, so the quotient is a field.
 Hence $Q$ is maximal.
+
 :::
 
-<1>4. No type-IV ideal is principal.
+:::
 
-::: {.proof}
+::: pf-step
+
+No type-IV ideal is principal.
+
+
+::: pf-proof
+
 Because $B$ is a PID, it is a UFD, and therefore $A=B[X]$ is a UFD. Suppose
 $$
 Q=\pi A+gA=(h)
@@ -122,15 +148,22 @@ Since $\pi$ is irreducible in $A$, either $h$ is a unit or $h$ is associated to 
 The first case would give $Q=A$, impossible.
 In the second case $Q=\pi A$, which would force $g\in\pi A$.
 But then $\bar g=0$ in $(B/\pi B)[X]$, contradicting the irreducibility required in type IV. Thus $Q$ is not principal.
+
 :::
 
-<1>5. A type-IV ideal
+:::
+
+::: pf-step
+
+A type-IV ideal
 $$
 Q=\pi^*A+gA
 $$
 contains the type-III ideal $\pi A$ if and only if $\pi^*$ is associated to $\pi$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $\pi A\subseteq Q$, then
 $$
 \pi\in Q\cap B=\pi^*B.
@@ -139,9 +172,14 @@ Thus $\pi^*$ divides $\pi$ in the PID $B$.
 Since both are prime elements, they are associated.
 
 Conversely, if $\pi^*B=\pi B$, then $\pi A= \pi^*A\subseteq Q$.
+
 :::
 
-<1>6. Let $P=fA$ be of type II, and let
+:::
+
+::: pf-step
+
+Let $P=fA$ be of type II, and let
 $$
 Q=\pi A+gA
 $$
@@ -150,7 +188,9 @@ $$
 \boxed{P\subseteq Q\iff \bar g\mid\bar f\text{ in }(B/\pi B)[X]}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has $P\subseteq Q$ if and only if $f\in Q$.
 Reducing modulo $\pi A$ identifies this condition with
 $$
@@ -158,11 +198,18 @@ $$
 $$
 inside the PID $(B/\pi B)[X]$.
 This is equivalent to $\bar g$ dividing $\bar f$.
+
 :::
 
-<1>7. If $B$ has infinitely many maximal ideals, then no type-II ideal is maximal.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $B$ has infinitely many maximal ideals, then no type-II ideal is maximal.
+
+
+::: pf-proof
+
 Let $P=fA$ be of type II. The polynomial $f$ is nonconstant.
 Only finitely many prime elements of $B$ divide its leading coefficient.
 Since $B$ has infinitely many maximal ideals, choose a prime element $\pi$ whose ideal is maximal and which does not divide that leading coefficient.
@@ -176,9 +223,14 @@ fA\subseteq \pi A+gA.
 $$
 The ideal on the right is type IV and hence maximal by step <1>3. Its contraction to $B$ is $\pi B$, while $fA\cap B=(0)$, so the containment is strict.
 Therefore $fA$ is not maximal.
+
 :::
 
-<1>8. Suppose instead that the maximal ideals of $B$ are exactly
+:::
+
+::: pf-step
+
+Suppose instead that the maximal ideals of $B$ are exactly
 $$
 \pi_1B,\ldots,\pi_mB.
 $$
@@ -189,7 +241,9 @@ f(X)=1+\pi_1\cdots\pi_m Xh(X),
 $$
 Then $P$ is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $i$,
 $$
 \bar f=1
@@ -210,12 +264,16 @@ Since both $f$ and $f_1$ are irreducible in the PID $K[X]$, they are associates,
 Thus no prime ideal properly contains $fA$.
 If $fA$ were not maximal, it would be contained in some maximal ideal, which is prime, contradicting the preceding paragraph.
 Hence $fA$ is maximal.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 give the classification.
 Steps <1>3--<1>6 establish the assertions about type IV and containment, while steps <1>7 and <1>8 prove the final maximality statements.
+
 :::
+
 :::

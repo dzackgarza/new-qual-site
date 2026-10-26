@@ -19,30 +19,42 @@ audit:
 Verify that $\int _ { 1 } ^ { \infty } \mathrm { d } t \frac { e ^ { - x t } } { \sqrt { t ^ { 2 } - 1 } }$ is a solution to the differential equation $y ^ { \prime \prime } { + } \frac { 1 } { x } y ^ { \prime } { - } y =$ 0.
 :::
 
-::: {.solution}
 For $x>0$, set
 \[
 y(x)=\int_1^\infty\frac{e^{-xt}}{\sqrt{t^2-1}}\,dt.
 \]
 
-<1>1. Differentiation under the integral sign gives
+::: pf
+
+::: pf-step
+
+Differentiation under the integral sign gives
 \[
 y'(x)=-\int_1^\infty\frac{t e^{-xt}}{\sqrt{t^2-1}}\,dt,
 \qquad
 y''(x)=\int_1^\infty\frac{t^2 e^{-xt}}{\sqrt{t^2-1}}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $x$ in any compact subinterval of $(0,\infty)$, the integrands obtained after one or two $x$-derivatives are bounded at infinity by a polynomial in $t$ times $e^{-ct}$ for some $c>0$, and near $t=1$ by a constant multiple of $(t-1)^{-1/2}$. These bounds are integrable, so differentiation under the integral sign is justified by dominated convergence.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 y''(x)-y(x)
 =\int_1^\infty e^{-xt}\sqrt{t^2-1}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the defining integral for $y$ from the expression for $y''$ in step <1>1:
 \[
 y''-y
@@ -50,15 +62,22 @@ y''-y
 \frac{(t^2-1)e^{-xt}}{\sqrt{t^2-1}}\,dt,
 \]
 which simplifies to the displayed integral.
+
 :::
 
-<1>3. Integration by parts gives
+:::
+
+::: pf-step
+
+Integration by parts gives
 \[
 \int_1^\infty e^{-xt}\sqrt{t^2-1}\,dt
 =-\frac1x y'(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \frac d{dt}\sqrt{t^2-1}=\frac{t}{\sqrt{t^2-1}},
@@ -70,20 +89,31 @@ integration by parts with $u=\sqrt{t^2-1}$ and $dv=e^{-xt}dt$ yields
 +\frac1x\int_1^\infty\frac{t e^{-xt}}{\sqrt{t^2-1}}\,dt.
 \]
 The boundary term vanishes at both endpoints, and step <1>1 identifies the remaining integral as $-y'(x)$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{y''+\frac1x y'-y=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>3 to obtain $y''-y=-y'/x$, and rearrange.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 verifies the required differential equation for every $x>0$.
+
 :::
+
 :::

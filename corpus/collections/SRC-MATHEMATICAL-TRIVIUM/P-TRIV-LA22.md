@@ -21,11 +21,14 @@ Is this sufficient for their commutator to be zero?
 Is this necessary for their commutator to be zero?
 :::
 
-::: {.solution}
 Interpret “sharing the same eigenvectors” as having a basis of common
 eigenvectors.
 
-<1>1. If $A$ and $B$ have a basis
+::: pf
+
+::: pf-step
+
+If $A$ and $B$ have a basis
 $$
 v_1,\ldots,v_n
 $$
@@ -34,7 +37,9 @@ $$
 [A,B]=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For each $j$, write
 $$
 Av_j=\lambda_jv_j,
@@ -65,18 +70,32 @@ for every basis vector $v_j$. Therefore
 $$
 AB-BA=0.
 $$
+
 :::
 
-<1>2. Thus a common eigenbasis is sufficient for the commutator to vanish.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus a common eigenbasis is sufficient for the commutator to vanish.
+
+
+::: pf-proof
+
 This is step <1>1.
+
 :::
 
-<1>3. A common eigenbasis is not necessary for two transformations to
+:::
+
+::: pf-step
+
+A common eigenbasis is not necessary for two transformations to
 commute.
 
-::: {.proof}
+
+::: pf-proof
+
 In $\mathbb R^2$, take
 $$
 A=I,
@@ -104,21 +123,32 @@ $$
 $$
 which is one-dimensional. Thus $B$ has no eigenbasis, and consequently there
 cannot be a basis of common eigenvectors of $A$ and $B$.
+
 :::
 
-<1>4. Therefore the answers are
+:::
+
+::: pf-step
+
+Therefore the answers are
 $$
 \boxed{\text{sufficient: yes; necessary: no}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 proves sufficiency, and step <1>3 gives a counterexample to
 necessity.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 answers both questions.
+
 :::
+
 :::

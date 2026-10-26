@@ -19,14 +19,17 @@ audit:
 Let R be a commutative ring with 1 such that for every x in R there is an integer $n > 1$ (depending on x) such that $x ^ { n } = x$ . Show that every prime ideal of R is maximal.
 :::
 
-::: {.solution}
 Let
 $$
 P
 $$
 be a prime ideal of $R$.
 
-<1>1. The quotient
+::: pf
+
+::: pf-step
+
+The quotient
 $$
 D
 \coloneqq
@@ -34,15 +37,22 @@ R/P
 $$
 is an integral domain.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the prime-ideal quotient criterion: because $P$ is prime,
 $$
 R/P
 $$
 is an integral domain.
+
 :::
 
-<1>2. Every element
+:::
+
+::: pf-step
+
+Every element
 $$
 y\in D
 $$
@@ -56,7 +66,9 @@ n>1
 $$
 depending on $y$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 y=x+P
@@ -85,11 +97,18 @@ x+P
 =
 y.
 $$
+
 :::
 
-<1>3. Every nonzero element of $D$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $D$ is invertible.
+
+
+::: pf-proof
+
 Let
 $$
 0\ne y\in D.
@@ -123,33 +142,51 @@ $$
 y^{n-2}
 $$
 is a multiplicative inverse of $y$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{D=R/P\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $D$ is a nonzero commutative ring with identity. By step <1>3, every nonzero element of $D$ is invertible. Hence $D$ is a field.
+
 :::
 
-<1>5. Consequently
+:::
+
+::: pf-step
+
+Consequently
 $$
 \boxed{P\text{ is maximal}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 R/P
 $$
 is a field. The maximal-ideal quotient criterion therefore implies that $P$ is maximal.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Since $P$ was an arbitrary prime ideal, step <1>5 proves that every prime ideal of $R$ is maximal.
+
 :::
+
 :::

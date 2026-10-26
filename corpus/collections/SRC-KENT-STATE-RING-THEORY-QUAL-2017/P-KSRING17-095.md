@@ -29,7 +29,6 @@ for all nonzero $a,b\in D$.
 The proof below uses this monotonicity axiom.
 :::
 
-::: {.solution}
 Assume throughout that
 $$
 \varphi(a)\le\varphi(ab)
@@ -46,7 +45,11 @@ $$
 $$
 whenever the displayed values are defined.
 
-<1>1. The value
+::: pf
+
+::: pf-step
+
+The value
 $$
 \varphi(1)
 $$
@@ -55,7 +58,9 @@ $$
 D\setminus\{0\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 0\ne a\in D.
@@ -79,9 +84,14 @@ $$
 \varphi(1)
 $$
 is minimal.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 u\in D^\times,
 $$
@@ -90,7 +100,9 @@ $$
 \varphi(u)=\varphi(1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Monotonicity gives
 $$
 \varphi(1)
@@ -113,9 +125,14 @@ Therefore
 $$
 \varphi(u)=\varphi(1).
 $$
+
 :::
 
-<1>3. Conversely, if
+:::
+
+::: pf-step
+
+Conversely, if
 $$
 0\ne a\in D
 $$
@@ -125,7 +142,9 @@ $$
 $$
 then $a$ is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Euclidean division to
 $$
 1
@@ -160,9 +179,14 @@ $$
 1=qa.
 $$
 Thus $a$ is a unit.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D^\times
@@ -174,11 +198,18 @@ a\ne0:
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>3.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 $$
 F
 \coloneqq
@@ -186,7 +217,9 @@ D^\times\cup\{0\}.
 $$
 Then $F$ is closed under addition.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 a,b\in F.
@@ -252,11 +285,18 @@ Hence
 $$
 a+b\in F.
 $$
+
 :::
 
-<1>6. The set $F$ is a subfield of $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F$ is a subfield of $D$.
+
+
+::: pf-proof
+
 It contains
 $$
 0
@@ -284,19 +324,31 @@ $$
 F
 $$
 is a field.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 D=F,
 $$
 then $D$ is a field.
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from step <1>6.
+
 :::
 
-<1>8. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 $$
 D\ne F.
 $$
@@ -316,7 +368,9 @@ a\in D\setminus F
 \}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set
 $$
 D\setminus F
@@ -324,11 +378,18 @@ $$
 is nonempty by assumption.
 Its $\varphi$-values form a nonempty subset of $\NN$, so they have a least element.
 Choose $x$ realizing it.
+
 :::
 
-<1>9. The element $x$ is transcendental over $F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $x$ is transcendental over $F$.
+
+
+::: pf-proof
+
 Suppose
 $$
 x
@@ -356,9 +417,14 @@ $$
 x\in D\setminus F.
 $$
 Therefore $x$ is transcendental over $F$.
+
 :::
 
-<1>10. If
+:::
+
+::: pf-step
+
+If
 $$
 0\ne a\in D
 $$
@@ -375,7 +441,9 @@ $$
 \varphi(a+c)=\varphi(a).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 c=0,
@@ -434,9 +502,14 @@ $$
 $$
 where the last equality uses step <1>1.
 Thus equality holds.
+
 :::
 
-<1>11. If
+:::
+
+::: pf-step
+
+If
 $$
 0\ne a,b\in D
 $$
@@ -446,7 +519,9 @@ $$
 $$
 then $b$ is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 b
@@ -523,9 +598,14 @@ $$
 b
 $$
 is a unit.
+
 :::
 
-<1>12. If
+:::
+
+::: pf-step
+
+If
 $$
 b
 $$
@@ -538,21 +618,30 @@ $$
 \varphi(a)<\varphi(ab).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Monotonicity gives
 $$
 \varphi(a)\le\varphi(ab).
 $$
 Equality would imply, by step <1>11, that $b$ is a unit.
 Hence equality is impossible and the inequality is strict.
+
 :::
 
-<1>13. Every element of $D$ belongs to
+:::
+
+::: pf-step
+
+Every element of $D$ belongs to
 $$
 F[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 We use strong induction on
 $$
 \varphi(a)
@@ -670,14 +759,21 @@ a=sx+r
 F[x].
 $$
 This completes the induction.
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 D=F[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>13 gives
 $$
 D\subseteq F[x].
@@ -691,9 +787,14 @@ $$
 x\in D.
 $$
 Thus equality holds.
+
 :::
 
-<1>15. Since $x$ is transcendental over $F$, the evaluation homomorphism
+:::
+
+::: pf-step
+
+Since $x$ is transcendental over $F$, the evaluation homomorphism
 $$
 F[T]\to D,
 \qquad
@@ -701,7 +802,9 @@ T\longmapsto x
 $$
 is an isomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 The map is surjective by step <1>14.
 Its kernel consists of polynomials in
 $$
@@ -719,9 +822,14 @@ D
 \cong
 F[T].
 $$
+
 :::
 
-<1>16. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 D
@@ -729,7 +837,9 @@ D
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 D=F,
@@ -744,11 +854,15 @@ $$
 D\cong F[T]
 $$
 for the field $F$ from step <1>6.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>16 is the required classification under the intended Euclidean-function convention.
+
 :::
+
 :::

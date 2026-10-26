@@ -33,7 +33,6 @@ Likewise the prime ideals $Q_n = (x_n, x_{n+1}, \ldots)$, with $R/Q_n \cong k[x_
 The statement becomes true, by Zorn's lemma, for a non-empty set of prime ideals that contains the union and the intersection of each of its non-empty chains (the union and the intersection of a chain of prime ideals are prime); for example, the set of all prime ideals of a nonzero ring, or the set of all prime ideals containing a given proper ideal.
 :::
 
-::: {.solution}
 The source statement is false, as shown by the counterexamples in the remark.
 We prove the corrected statement recorded there.
 
@@ -57,9 +56,15 @@ $$
 $$
 belong to $\mathcal S$.
 
-<1>1. The union of a chain of prime ideals is an ideal.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The union of a chain of prime ideals is an ideal.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal C
@@ -117,11 +122,18 @@ $$
 rx\in P\subseteq U.
 $$
 Hence $U$ is an ideal.
+
 :::
 
-<1>2. The union of a nonempty chain of prime ideals is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The union of a nonempty chain of prime ideals is prime.
+
+
+::: pf-proof
+
 Let
 $$
 U
@@ -168,15 +180,22 @@ a\in U
 b\in U.
 $$
 Thus $U$ is prime.
+
 :::
 
-<1>3. The poset
+:::
+
+::: pf-step
+
+The poset
 $$
 (\mathcal S,\subseteq)
 $$
 has a maximal element.
 
-::: {.proof}
+
+::: pf-proof
+
 The poset is nonempty by hypothesis.
 Let
 $$
@@ -205,11 +224,18 @@ Thus $U$ is an upper bound for the chain.
 The empty chain has an upper bound because $\mathcal S$ is nonempty.
 Therefore every chain has an upper bound in $\mathcal S$.
 Zorn's lemma yields a maximal element.
+
 :::
 
-<1>4. The intersection of a chain of prime ideals is an ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The intersection of a chain of prime ideals is an ideal.
+
+
+::: pf-proof
+
 An arbitrary intersection of ideals is an ideal.
 Thus
 $$
@@ -218,11 +244,18 @@ I
 \bigcap_{P\in\mathcal C}P
 $$
 is an ideal.
+
 :::
 
-<1>5. The intersection of a nonempty chain of prime ideals is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The intersection of a nonempty chain of prime ideals is prime.
+
+
+::: pf-proof
+
 Set
 $$
 I
@@ -275,9 +308,14 @@ a\in I
 b\in I.
 $$
 Hence $I$ is prime.
+
 :::
 
-<1>6. Order $\mathcal S$ by reverse inclusion:
+:::
+
+::: pf-step
+
+Order $\mathcal S$ by reverse inclusion:
 $$
 P\preceq Q
 \quad\Longleftrightarrow\quad
@@ -285,7 +323,9 @@ Q\subseteq P.
 $$
 Then every chain has an upper bound.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal C
@@ -314,20 +354,32 @@ $$
 Thus $I$ is an upper bound in the reverse order.
 
 Again, the empty chain has an upper bound because $\mathcal S$ is nonempty.
+
 :::
 
-<1>7. The family $\mathcal S$ has a minimal element under ordinary inclusion.
+:::
 
-::: {.proof}
+::: pf-step
+
+The family $\mathcal S$ has a minimal element under ordinary inclusion.
+
+
+::: pf-proof
+
 Apply Zorn's lemma to the reverse-inclusion order from step <1>6.
 There is a maximal element with respect to
 $$
 \preceq.
 $$
 Maximality in reverse inclusion is exactly minimality in ordinary inclusion.
+
 :::
 
-<1>8. Therefore the corrected statement holds:
+:::
+
+::: pf-step
+
+Therefore the corrected statement holds:
 $$
 \boxed{
 \mathcal S
@@ -335,13 +387,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives a maximal element, and step <1>7 gives a minimal element.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The original source statement is false; step <1>8 proves the corrected version stated in the remark.
+
 :::
+
 :::

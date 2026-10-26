@@ -19,10 +19,15 @@ audit:
 Let R be a commutative ring with identity and let U be maximal among non-finitely generated ideals of R. Prove U is a prime ideal.
 :::
 
-::: {.solution}
-<1>1. The ideal $U$ is proper.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ideal $U$ is proper.
+
+
+::: pf-proof
+
 The whole ring is the principal ideal
 $$
 R=(1),
@@ -31,9 +36,14 @@ so it is finitely generated. Since $U$ is assumed not finitely generated,
 $$
 U\ne R.
 $$
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 ab\in U
 $$
@@ -47,7 +57,9 @@ U+(a)
 $$
 properly contains $U$ and is finitely generated.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 a\notin U,
@@ -61,9 +73,14 @@ $$
 U+(a)
 $$
 is finitely generated.
+
 :::
 
-<1>3. There exist
+:::
+
+::: pf-step
+
+There exist
 $$
 u_1,\ldots,u_r\in U
 $$
@@ -74,7 +91,9 @@ U+(a)
 (u_1,\ldots,u_r,a).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, choose generators
 $$
 y_1,\ldots,y_r
@@ -114,9 +133,14 @@ $$
 a\in U+(a).
 $$
 Thus equality holds.
+
 :::
 
-<1>4. Define the colon ideal
+:::
+
+::: pf-step
+
+Define the colon ideal
 $$
 (U:a)
 \coloneqq
@@ -127,7 +151,9 @@ $$
 U\subseteq(U:a).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 u\in U,
@@ -140,9 +166,14 @@ because $U$ is an ideal. Hence
 $$
 u\in(U:a).
 $$
+
 :::
 
-<1>5. If, in addition,
+:::
+
+::: pf-step
+
+If, in addition,
 $$
 b\notin U,
 $$
@@ -151,7 +182,9 @@ $$
 U\subsetneq(U:a).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis
 $$
 ab\in U
@@ -165,9 +198,14 @@ $$
 b\notin U,
 $$
 then the containment from step <1>4 is strict.
+
 :::
 
-<1>6. Under the hypotheses
+:::
+
+::: pf-step
+
+Under the hypotheses
 $$
 ab\in U,
 \qquad
@@ -181,7 +219,9 @@ $$
 $$
 is finitely generated.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 (U:a)
@@ -191,9 +231,14 @@ $$
 (U:a)
 $$
 to be finitely generated.
+
 :::
 
-<1>7. Choose generators
+:::
+
+::: pf-step
+
+Choose generators
 $$
 c_1,\ldots,c_s
 $$
@@ -208,7 +253,9 @@ U
 (u_1,\ldots,u_r,c_1a,\ldots,c_sa).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each displayed generator lies in $U$: the $u_i$ do by construction, and
 $$
 c_j\in(U:a)
@@ -271,9 +318,14 @@ x
 \sum_{j=1}^s t_j(c_ja),
 $$
 so $x$ lies in the displayed finitely generated ideal.
+
 :::
 
-<1>8. The hypotheses
+:::
+
+::: pf-step
+
+The hypotheses
 $$
 ab\in U,
 \qquad
@@ -283,16 +335,25 @@ b\notin U
 $$
 are impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 Under those hypotheses, step <1>7 expresses $U$ as a finitely generated ideal, contradicting the assumption that $U$ is not finitely generated.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{U\text{ is prime}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows $U$ is proper. If
 $$
 ab\in U,
@@ -312,11 +373,15 @@ a\in U
 b\in U.
 $$
 This is exactly the definition of a prime ideal.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

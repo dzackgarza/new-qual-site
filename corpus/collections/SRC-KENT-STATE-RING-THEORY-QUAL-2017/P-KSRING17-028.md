@@ -25,7 +25,6 @@ Let p be a prime and $F _ { p }$ the set of all $2 \times 2$ matrices of the for
 (c) Show that $F _ { 1 3 }$ is not a field.
 :::
 
-::: {.solution}
 For
 $$
 a,b\in\FF_p,
@@ -40,9 +39,15 @@ a&b\\
 \end{pmatrix}.
 $$
 
-<1>1. The set $F_p$ is closed under addition and additive inverses.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $F_p$ is closed under addition and additive inverses.
+
+
+::: pf-proof
+
 One has
 $$
 M(a,b)+M(c,d)
@@ -60,11 +65,18 @@ $$
 M(0,0).
 $$
 Thus $F_p$ is an additive subgroup of $M_2(\FF_p)$.
+
 :::
 
-<1>2. The set $F_p$ is closed under multiplication, and multiplication is commutative.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F_p$ is closed under multiplication, and multiplication is commutative.
+
+
+::: pf-proof
+
 Direct multiplication gives
 $$
 \begin{aligned}
@@ -85,11 +97,18 @@ M(a,b)M(c,d)
 M(c,d)M(a,b).
 $$
 Thus multiplication is closed and commutative.
+
 :::
 
-<1>3. The identity matrix belongs to $F_p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The identity matrix belongs to $F_p$.
+
+
+::: pf-proof
+
 One has
 $$
 I_2
@@ -97,9 +116,14 @@ I_2
 M(1,0).
 $$
 Therefore $F_p$ is a commutative ring with identity.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 $$
 M(a,b)\in F_p,
 $$
@@ -110,7 +134,9 @@ $$
 a^2+b^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \det
@@ -123,11 +149,18 @@ a^2-(-b)b
 =
 a^2+b^2.
 $$
+
 :::
 
-<1>5. In $\FF_7$, the element $-1$ is not a square.
+:::
 
-::: {.proof}
+::: pf-step
+
+In $\FF_7$, the element $-1$ is not a square.
+
+
+::: pf-proof
+
 The nonzero squares modulo $7$ are
 $$
 1^2\equiv1,
@@ -150,11 +183,18 @@ $$
 -1\equiv6
 $$
 is not among them.
+
 :::
 
-<1>6. Every nonzero element of $F_7$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $F_7$ is invertible.
+
+
+::: pf-proof
+
 Let
 $$
 M(a,b)\in F_7
@@ -193,23 +233,37 @@ M(1,0)
 I_2.
 $$
 Thus every nonzero element is invertible.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{F_7\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>3, $F_7$ is a commutative ring with identity, and step <1>6 shows every nonzero element is invertible.
+
 :::
 
-<1>8. In $\FF_{13}$,
+:::
+
+::: pf-step
+
+In $\FF_{13}$,
 $$
 5^2\equiv-1\pmod{13}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 $$
 5^2
@@ -221,11 +275,18 @@ $$
 -1
 \pmod{13}.
 $$
+
 :::
 
-<1>9. The ring $F_{13}$ has nonzero zero divisors.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $F_{13}$ has nonzero zero divisors.
+
+
+::: pf-proof
+
 Consider
 $$
 A
@@ -250,20 +311,31 @@ M(0,0)
 $$
 in characteristic $13$.
 Thus $A$ and $B$ are nonzero zero divisors.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{F_{13}\text{ is not a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A field has no nonzero zero divisors, whereas step <1>9 exhibits such zero divisors in $F_{13}$.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (a), step <1>7 proves part (b), and step <1>10 proves part (c).
+
 :::
+
 :::

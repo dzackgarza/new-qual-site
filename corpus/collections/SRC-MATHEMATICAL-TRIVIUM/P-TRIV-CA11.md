@@ -19,20 +19,25 @@ audit:
 What is the image of $\{ z | \mathrm { R e } ( z ) > \mathrm { I m } ( z ) > 0 \}$ under the mapping $e ^ { z ^ { 2 } } ?$
 :::
 
-::: {.solution}
 Let
 $$
 S=
 \{z=x+iy\in\CC:x>y>0\}.
 $$
 
-<1>1. The sector $S$ can be written as
+::: pf
+
+::: pf-step
+
+The sector $S$ can be written as
 $$
 S=
 \{re^{i\theta}:r>0,\ 0<\theta<\pi/4\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The inequalities $x>y>0$ place $z$ in the first quadrant and give
 $$
 0<\frac yx<1.
@@ -43,15 +48,22 @@ $$
 $$
 Conversely, every point with argument strictly between $0$ and $\pi/4$
 satisfies $x>y>0$.
+
 :::
 
-<1>2. Squaring maps $S$ bijectively onto the open first quadrant
+:::
+
+::: pf-step
+
+Squaring maps $S$ bijectively onto the open first quadrant
 $$
 Q=
 \{u+iv:u>0,\ v>0\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 z=re^{i\theta}\in S,
@@ -82,14 +94,21 @@ z=\sqrt\rho\,e^{i\phi/2}
 $$
 belongs to $S$ and satisfies $z^2=w$. Uniqueness follows because the other
 square root has argument differing by $\pi$ and does not lie in $S$.
+
 :::
 
-<1>3. If $w=u+iv\in Q$, then
+:::
+
+::: pf-step
+
+If $w=u+iv\in Q$, then
 $$
 |e^w|>1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 e^w=e^u e^{iv},
@@ -99,15 +118,22 @@ $$
 |e^w|=e^u.
 $$
 Since $u>0$, one has $e^u>1$.
+
 :::
 
-<1>4. Every complex number $\zeta$ with
+:::
+
+::: pf-step
+
+Every complex number $\zeta$ with
 $$
 |\zeta|>1
 $$
 equals $e^w$ for some $w\in Q$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 \zeta=\rho e^{i\psi},
@@ -136,24 +162,35 @@ e^u e^{iv}
 =
 \zeta.
 $$
+
 :::
 
-<1>5. Therefore the image of $S$ under $z\mapsto e^{z^2}$ is
+:::
+
+::: pf-step
+
+Therefore the image of $S$ under $z\mapsto e^{z^2}$ is
 $$
 \boxed{
 \{\zeta\in\CC:|\zeta|>1\}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $z^2$ ranges over all of $Q$. Step <1>3 shows that exponentiating
 $Q$ produces only points outside the closed unit disk, while step <1>4 shows
 that every such point occurs.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required image.
+
 :::
+
 :::

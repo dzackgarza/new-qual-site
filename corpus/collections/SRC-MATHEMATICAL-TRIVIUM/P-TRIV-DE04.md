@@ -19,20 +19,30 @@ audit:
 Solve $y ^ { \prime } ( x ) = f ( x ) y ( x ) + g ( x ) y ^ { n } ( x )$
 :::
 
-::: {.solution}
 Assume $f$ and $g$ are continuous on an interval $I$.
 
-<1>1. First suppose
+::: pf
+
+::: pf-step
+
+First suppose
 $$
 n\neq1
 $$
 and work on a subinterval where $y$ is nonzero and the power $y^{1-n}$ is defined.
 
-::: {.proof}
+
+::: pf-proof
+
 The Bernoulli substitution used below contains the factor $y^{-n}$, so it is applied where $y\neq0$.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 z=y^{1-n}.
 $$
@@ -43,11 +53,18 @@ z'
 (1-n)y^{-n}y'.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $y^{1-n}$ by the chain rule.
+
 :::
 
-<1>3. Substituting the differential equation into step <1>2 gives
+:::
+
+::: pf-step
+
+Substituting the differential equation into step <1>2 gives
 $$
 z'
 =
@@ -56,7 +73,9 @@ z'
 (1-n)g(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 y'
@@ -76,9 +95,14 @@ z'
 \end{aligned}
 $$
 Now use $z=y^{1-n}$.
+
 :::
 
-<1>4. Thus $z$ satisfies the linear equation
+:::
+
+::: pf-step
+
+Thus $z$ satisfies the linear equation
 $$
 z'
 -
@@ -87,11 +111,18 @@ z'
 (1-n)g(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange step <1>3.
+
 :::
 
-<1>5. Choose a reference point $x_0\in I$ and define
+:::
+
+::: pf-step
+
+Choose a reference point $x_0\in I$ and define
 $$
 F(x)
 =
@@ -104,7 +135,9 @@ $$
 e^{(n-1)F(x)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficient of $z$ in step <1>4 is
 $$
 -(1-n)f=(n-1)f.
@@ -115,9 +148,14 @@ $$
 =
 e^{(n-1)F}.
 $$
+
 :::
 
-<1>6. Multiplying by $\mu$ gives
+:::
+
+::: pf-step
+
+Multiplying by $\mu$ gives
 $$
 \frac d{dx}
 \left(
@@ -128,11 +166,18 @@ e^{(n-1)F(x)}z(x)
 e^{(n-1)F(x)}g(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining property of the integrating factor from step <1>5.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 e^{(n-1)F(x)}z(x)
 =
@@ -144,11 +189,18 @@ e^{(n-1)F(s)}g(s)
 \,ds.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate step <1>6 from $x_0$ to $x$ and absorb the initial value into the constant $C$.
+
 :::
 
-<1>8. Therefore, for $n\neq1$,
+:::
+
+::: pf-step
+
+Therefore, for $n\neq1$,
 $$
 \boxed{
 y(x)
@@ -165,7 +217,9 @@ e^{(n-1)F(s)}g(s)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 z(x)
@@ -181,9 +235,14 @@ e^{(n-1)F(s)}g(s)
 \right].
 $$
 Use $z=y^{1-n}$ and raise both sides to the power $1/(1-n)$.
+
 :::
 
-<1>9. Now suppose
+:::
+
+::: pf-step
+
+Now suppose
 $$
 n=1.
 $$
@@ -194,11 +253,18 @@ y'
 (f+g)y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $n=1$ into the original equation.
+
 :::
 
-<1>10. Hence, for $n=1$,
+:::
+
+::: pf-step
+
+Hence, for $n=1$,
 $$
 \boxed{
 y(x)
@@ -211,17 +277,26 @@ C
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Separate variables in step <1>9:
 $$
 \frac{y'}y=f+g.
 $$
 Integrate and exponentiate. The case $C=0$ gives the zero solution.
+
 :::
 
-<1>11. When the original power $y^n$ is defined at $y=0$, the identically zero function is also a solution for every $n$ for which the right-hand side vanishes at $y=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+When the original power $y^n$ is defined at $y=0$, the identically zero function is also a solution for every $n$ for which the right-hand side vanishes at $y=0$.
+
+
+::: pf-proof
+
 Substituting $y\equiv0$ gives $y'=0$ and right-hand side
 $$
 f(x)\cdot0
@@ -229,11 +304,15 @@ f(x)\cdot0
 g(x)0^n.
 $$
 Whenever $0^n$ is defined and equals $0$, the equation is satisfied.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives the Bernoulli family for $n\neq1$, and step <1>10 gives the exceptional linear case $n=1$.
+
 :::
+
 :::

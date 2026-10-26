@@ -20,62 +20,92 @@ Consider a spherically symmetric potential satisfying the Laplace equation in d 
 Show that this potential can be written as $\textstyle u ( r ) = { \frac { a } { r ^ { b } } }$ , where a is a constant, and find the value of b.
 :::
 
-::: {.solution}
 Let $u=u(r)$ with $r=|x|$ in $\mathbb R^d$, where $d\geq3$.
 
-<1>1. For $r>0$, the radial Laplacian is
+::: pf
+
+::: pf-step
+
+For $r>0$, the radial Laplacian is
 \[
 \Delta u=u''(r)+\frac{d-1}{r}u'(r).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a radial function, $\partial_{x_i}u=u'(r)x_i/r$. Differentiating once more and summing over $i=1,\ldots,d$ gives
 \[
 \sum_i\partial_{x_i}^2u
 =u''(r)+\frac{d-1}{r}u'(r).
 \]
+
 :::
 
-<1>2. The harmonicity equation is equivalent to
+:::
+
+::: pf-step
+
+The harmonicity equation is equivalent to
 \[
 \frac d{dr}\left(r^{d-1}u'(r)\right)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the equation in step <1>1 by $r^{d-1}$:
 \[
 r^{d-1}u''+(d-1)r^{d-2}u'=0.
 \]
 The left side is the derivative of $r^{d-1}u'$.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 u(r)=C_0+C_1r^{2-d}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives $r^{d-1}u'=C$, so $u'=Cr^{1-d}$. Since $d\ne2$,
 \[
 u=C_0+\frac{C}{2-d}r^{2-d}.
 \]
 Rename the second constant as $C_1$.
+
 :::
 
-<1>4. Vanishing at infinity forces $C_0=0$, so
+:::
+
+::: pf-step
+
+Vanishing at infinity forces $C_0=0$, so
 \[
 \boxed{u(r)=\frac{a}{r^{d-2}}},
 \qquad
 \boxed{b=d-2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $d\geq3$, $r^{2-d}\to0$ as $r\to\infty$, whereas the constant term tends to $C_0$. Thus $u(r)\to0$ requires $C_0=0$. Writing $C_1=a$ gives the required form and exponent.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives every radial harmonic potential on $r>0$ that vanishes at infinity.
+
 :::
+
 :::

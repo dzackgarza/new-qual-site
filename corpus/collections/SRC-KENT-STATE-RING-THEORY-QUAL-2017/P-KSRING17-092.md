@@ -20,7 +20,6 @@ Let D be a unique factorization domain and F its field of fractions.
 Prove that if d is an irreducible element in D, then there is no $x \in F$ such that $x ^ { 2 } = d .$
 :::
 
-::: {.solution}
 Suppose, for contradiction, that there exists
 $$
 x\in F
@@ -30,7 +29,11 @@ $$
 x^2=d.
 $$
 
-<1>1. Write
+::: pf
+
+::: pf-step
+
+Write
 $$
 x=\frac ab
 $$
@@ -42,16 +45,23 @@ b\ne0,
 $$
 and with $a$ and $b$ having no common irreducible factor.
 
-::: {.proof}
+
+::: pf-proof
+
 Every element of the fraction field has a representation
 $$
 a/b.
 $$
 Because $D$ is a UFD, common irreducible factors of numerator and denominator can be cancelled finitely many times.
 Thus one may choose a representation in lowest terms.
+
 :::
 
-<1>2. The equation
+:::
+
+::: pf-step
+
+The equation
 $$
 x^2=d
 $$
@@ -60,7 +70,9 @@ $$
 a^2=db^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 x=a/b
@@ -73,15 +85,27 @@ by
 $$
 b^2.
 $$
+
 :::
 
-<1>3. Since $d$ is irreducible in a UFD, $d$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+Since $d$ is irreducible in a UFD, $d$ is prime.
+
+
+::: pf-proof
+
 In a unique factorization domain, every irreducible element is prime.
+
 :::
 
-<1>4. The relation
+:::
+
+::: pf-step
+
+The relation
 $$
 a^2=db^2
 $$
@@ -90,7 +114,9 @@ $$
 d\mid a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 $$
 d\mid a^2.
@@ -104,9 +130,14 @@ primality implies
 $$
 d\mid a.
 $$
+
 :::
 
-<1>5. Write
+:::
+
+::: pf-step
+
+Write
 $$
 a=dc
 $$
@@ -119,7 +150,9 @@ $$
 b^2=dc^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 a=dc
@@ -139,14 +172,21 @@ Cancelling one factor of $d$ gives
 $$
 dc^2=b^2.
 $$
+
 :::
 
-<1>6. The relation in step <1>5 implies
+:::
+
+::: pf-step
+
+The relation in step <1>5 implies
 $$
 d\mid b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives
 $$
 d\mid b^2.
@@ -156,11 +196,18 @@ Thus
 $$
 d\mid b.
 $$
+
 :::
 
-<1>7. This contradicts the choice of $a/b$ in lowest terms.
+:::
 
-::: {.proof}
+::: pf-step
+
+This contradicts the choice of $a/b$ in lowest terms.
+
+
+::: pf-proof
+
 Steps <1>4 and <1>6 show that the irreducible element
 $$
 d
@@ -174,9 +221,14 @@ $$
 b.
 $$
 This is a common irreducible factor of numerator and denominator, contradicting step <1>1.
+
 :::
 
-<1>8. Therefore no such $x\in F$ exists:
+:::
+
+::: pf-step
+
+Therefore no such $x\in F$ exists:
 $$
 \boxed{
 x^2\ne d
@@ -184,13 +236,19 @@ x^2\ne d
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption that such an $x$ exists leads to the contradiction in step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

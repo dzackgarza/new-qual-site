@@ -19,10 +19,13 @@ audit:
 The modified Bessel function of the second kind has the following integral representation: $K _ { \nu } ( x ) = \frac { 1 } { 2 } \int _ { 0 } ^ { \infty } \exp \left( - \frac { x } { 2 } \left( s + \frac { 1 } { s } \right) \right) \frac { \mathrm { d } s } { s ^ { 1 - \nu } }$ . Find the asymptotic expansion for $x \gg 1$
 :::
 
-::: {.solution}
 Assume $x>0$ and $\nu$ is fixed.
 
-<1>1. With the substitution
+::: pf
+
+::: pf-step
+
+With the substitution
 $$
 s=e^t,
 $$
@@ -36,7 +39,9 @@ e^{-x\cosh t+\nu t}
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 ds=e^t,dt=s,dt,
@@ -57,9 +62,14 @@ s+\frac1s
 \cosh t.
 $$
 Substituting gives the displayed integral.
+
 :::
 
-<1>2. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 K_\nu(x)
 =
@@ -69,7 +79,9 @@ e^{-x\cosh t}
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral from step <1>1 at $0$ and substitute $t\mapsto -t$ in
 the negative half. Since $\cosh t$ is even,
 $$
@@ -81,16 +93,23 @@ $$
 =
 \cosh(\nu t).
 $$
+
 :::
 
-<1>3. The phase $\cosh t$ has a unique minimum at $t=0$, with
+:::
+
+::: pf-step
+
+The phase $\cosh t$ has a unique minimum at $t=0$, with
 $$
 \cosh0=1,
 \qquad
 (\cosh t)''\big|_{t=0}=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 (\cosh t)'=\sinh t,
@@ -100,9 +119,14 @@ $$
 (\cosh t)''=\cosh t>0.
 $$
 Thus $t=0$ is the unique nondegenerate minimum.
+
 :::
 
-<1>4. The leading saddle-point approximation is
+:::
+
+::: pf-step
+
+The leading saddle-point approximation is
 $$
 K_\nu(x)
 \sim
@@ -110,7 +134,9 @@ e^{-x}
 \sqrt{\frac{\pi}{2x}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Near $t=0$,
 $$
 \cosh t
@@ -143,9 +169,14 @@ $$
 e^{-x}
 \sqrt{\frac{\pi}{2x}}.
 $$
+
 :::
 
-<1>5. The function $K_\nu$ satisfies
+:::
+
+::: pf-step
+
+The function $K_\nu$ satisfies
 $$
 x^2K_\nu''(x)
 +
@@ -156,7 +187,9 @@ xK_\nu'(x)
 0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Starting from step <1>2, differentiation under the integral gives
 $$
 K_\nu'(x)
@@ -218,9 +251,14 @@ $$
 K_\nu''(x)-K_\nu(x).
 $$
 Rearranging gives the differential equation.
+
 :::
 
-<1>6. Write the saddle expansion in the form
+:::
+
+::: pf-step
+
+Write the saddle expansion in the form
 $$
 K_\nu(x)
 \sim
@@ -239,7 +277,9 @@ a_{k+1}
 a_k.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 A(x)
@@ -298,14 +338,21 @@ a_{k+1}
 a_k,
 $$
 which is the displayed recurrence.
+
 :::
 
-<1>7. The leading coefficient is
+:::
+
+::: pf-step
+
+The leading coefficient is
 $$
 a_0=\sqrt{\frac\pi2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compare the general ansatz in step <1>6 with the leading saddle estimate from
 step <1>4:
 $$
@@ -314,9 +361,14 @@ K_\nu(x)
 e^{-x}x^{-1/2}
 \sqrt{\frac\pi2}.
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 K_\nu(x)
@@ -337,7 +389,9 @@ k!\,(8x)^k
 $$
 as $x\to\infty$, with the empty product equal to $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Starting from $a_0$ in step <1>7 and iterating the recurrence in step <1>6
 gives
 $$
@@ -354,9 +408,14 @@ k!\,8^k
 }.
 $$
 Substitute these coefficients into the expansion of step <1>6.
+
 :::
 
-<1>9. In particular,
+:::
+
+::: pf-step
+
+In particular,
 $$
 K_\nu(x)
 \sim
@@ -377,14 +436,20 @@ e^{-x}
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the first two nontrivial terms of step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>8 give the leading saddle approximation and the full
 asymptotic expansion, respectively.
+
 :::
+
 :::

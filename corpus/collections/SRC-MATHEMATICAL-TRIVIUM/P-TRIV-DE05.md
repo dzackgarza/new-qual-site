@@ -19,22 +19,34 @@ audit:
 Solve $y ^ { \prime \prime } - y ^ { \prime } - 2 y = 0$
 :::
 
-::: {.solution}
-<1>1. Seek a solution of the form
+::: pf
+
+::: pf-step
+
+Seek a solution of the form
 $$
 y=e^{\lambda x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a linear differential equation with constant coefficients, exponential trial functions reduce the equation to its characteristic polynomial.
+
 :::
 
-<1>2. Substitution gives
+:::
+
+::: pf-step
+
+Substitution gives
 $$
 \lambda^2-\lambda-2=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 y'=\lambda e^{\lambda x},
@@ -42,34 +54,53 @@ y'=\lambda e^{\lambda x},
 y''=\lambda^2e^{\lambda x}.
 $$
 Substitute into the differential equation and divide by the nonzero factor $e^{\lambda x}$.
+
 :::
 
-<1>3. The characteristic polynomial factors as
+:::
+
+::: pf-step
+
+The characteristic polynomial factors as
 $$
 (\lambda-2)(\lambda+1)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the product:
 $$
 (\lambda-2)(\lambda+1)
 =
 \lambda^2-\lambda-2.
 $$
+
 :::
 
-<1>4. Hence the two distinct characteristic roots are
+:::
+
+::: pf-step
+
+Hence the two distinct characteristic roots are
 $$
 \lambda_1=2,
 \qquad
 \lambda_2=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the two linear factors from step <1>3.
+
 :::
 
-<1>5. Therefore two independent solutions are
+:::
+
+::: pf-step
+
+Therefore two independent solutions are
 $$
 e^{2x}
 $$
@@ -78,11 +109,18 @@ $$
 e^{-x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each exponential corresponds to one characteristic root. Distinct roots give linearly independent solutions.
+
 :::
 
-<1>6. Thus the general solution is
+:::
+
+::: pf-step
+
+Thus the general solution is
 $$
 \boxed{
 y(x)=C_1e^{2x}+C_2e^{-x},
@@ -90,13 +128,19 @@ y(x)=C_1e^{2x}+C_2e^{-x},
 $$
 with arbitrary constants $C_1,C_2\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 A second-order homogeneous linear equation has a two-dimensional solution space, and step <1>5 provides a basis.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the complete solution family.
+
 :::
+
 :::

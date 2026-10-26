@@ -20,7 +20,6 @@ Let R be a commutative ring with identity and let $x \in R$ be a non-nilpotent e
 Prove that there exists a prime ideal P of R such that $x \notin P$
 :::
 
-::: {.solution}
 Define
 $$
 S
@@ -28,9 +27,15 @@ S
 \{1,x,x^2,x^3,\ldots\}.
 $$
 
-<1>1. The set $S$ is multiplicatively closed and does not contain $0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $S$ is multiplicatively closed and does not contain $0$.
+
+
+::: pf-proof
+
 If
 $$
 x^m,x^n\in S,
@@ -66,9 +71,14 @@ Therefore
 $$
 0\notin S.
 $$
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \mathcal P
 \coloneqq
@@ -80,7 +90,9 @@ $$
 ordered by inclusion.
 Then $\mathcal P$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 (0)\cap S=\varnothing.
@@ -89,11 +101,18 @@ Hence
 $$
 (0)\in\mathcal P.
 $$
+
 :::
 
-<1>3. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal C
@@ -153,24 +172,38 @@ $$
 U\in\mathcal P,
 $$
 and clearly every member of $\mathcal C$ is contained in $U$.
+
 :::
 
-<1>4. There exists an ideal
+:::
+
+::: pf-step
+
+There exists an ideal
 $$
 P\in\mathcal P
 $$
 that is maximal with respect to inclusion.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the poset $\mathcal P$ is nonempty. By step <1>3, every chain has an upper bound in $\mathcal P$. Zorn's lemma therefore yields a maximal element
 $$
 P\in\mathcal P.
 $$
+
 :::
 
-<1>5. The ideal $P$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $P$ is prime.
+
+
+::: pf-proof
+
 Suppose
 $$
 ab\in P
@@ -261,11 +294,18 @@ $$
 P\cap S=\varnothing.
 $$
 Hence $P$ is prime.
+
 :::
 
-<1>6. The prime ideal $P$ does not contain $x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The prime ideal $P$ does not contain $x$.
+
+
+::: pf-proof
+
 By definition,
 $$
 x\in S.
@@ -278,20 +318,31 @@ one has
 $$
 x\notin P.
 $$
+
 :::
 
-<1>7. Therefore there exists a prime ideal $P$ such that
+:::
+
+::: pf-step
+
+Therefore there exists a prime ideal $P$ such that
 $$
 \boxed{x\notin P.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4--<1>6 construct such a prime ideal.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

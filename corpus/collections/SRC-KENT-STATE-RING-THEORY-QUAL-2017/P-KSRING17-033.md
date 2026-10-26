@@ -32,15 +32,20 @@ $$
 (d) If n is a positive integer and $f \in R$ is such that $f ^ { n } = 0 _ { R }$ , then $f = 0 _ { R }$
 :::
 
-::: {.solution}
 Let
 $$
 R=C([0,1],\RR).
 $$
 
-<1>1. The set $R$ is closed under the stated addition and multiplication.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $R$ is closed under the stated addition and multiplication.
+
+
+::: pf-proof
+
 If
 $$
 f,g\in R,
@@ -54,11 +59,18 @@ $$
 fg
 $$
 are continuous real-valued functions on $[0,1]$, because sums and products of continuous functions are continuous. Hence both lie in $R$.
+
 :::
 
-<1>2. With these operations, $R$ is a commutative ring with identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+With these operations, $R$ is a commutative ring with identity.
+
+
+::: pf-proof
+
 All ring axioms hold pointwise because they hold in $\RR$.
 For example,
 $$
@@ -85,9 +97,14 @@ $$
 1_R(x)=1.
 $$
 Thus $R$ is a commutative ring with identity.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 f\in R
 $$
@@ -100,7 +117,9 @@ $$
 x\in[0,1].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is a unit, there exists
 $$
 g\in R
@@ -121,9 +140,14 @@ Hence
 $$
 f(x)\ne0.
 $$
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 f(x)\ne0
 $$
@@ -133,7 +157,9 @@ x\in[0,1],
 $$
 then $f$ is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 $$
 g(x)
@@ -157,9 +183,14 @@ $$
 fg=1_R.
 $$
 Thus $f$ is a unit.
+
 :::
 
-<1>5. Therefore the units of $R$ are exactly the nowhere-zero functions:
+:::
+
+::: pf-step
+
+Therefore the units of $R$ are exactly the nowhere-zero functions:
 $$
 \boxed{
 R^\times
@@ -168,11 +199,18 @@ R^\times
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 f^2=f,
 $$
@@ -185,7 +223,9 @@ $$
 f(x)\in\{0,1\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluating the identity
 $$
 f^2=f
@@ -204,11 +244,18 @@ f(x)=0
 \quad\text{or}\quad
 f(x)=1.
 $$
+
 :::
 
-<1>7. Every idempotent in $R$ is either $0_R$ or $1_R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every idempotent in $R$ is either $0_R$ or $1_R$.
+
+
+::: pf-proof
+
 By step <1>6, the image of $f$ lies in
 $$
 \{0,1\}.
@@ -230,9 +277,14 @@ f=0_R
 f=1_R.
 }
 $$
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 $$
 f^n=0_R
 $$
@@ -241,7 +293,9 @@ $$
 f=0_R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For each
 $$
 x\in[0,1],
@@ -262,11 +316,15 @@ This holds for every $x$, so
 $$
 \boxed{f=0_R.}
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), step <1>5 proves part (b), step <1>7 proves part (c), and step <1>8 proves part (d).
+
 :::
+
 :::

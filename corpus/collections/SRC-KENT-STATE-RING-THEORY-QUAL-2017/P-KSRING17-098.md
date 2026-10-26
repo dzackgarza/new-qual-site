@@ -23,8 +23,11 @@ Let D be a unique factorization domain and p a fixed irreducible element of D su
 (b) D is a Euclidean domain.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 0\ne d\in D.
 $$
@@ -33,16 +36,23 @@ $$
 d=dp^0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This gives the required form with
 $$
 u=d
 \qquad\text{and}\qquad
 n=0.
 $$
+
 :::
 
-<1>2. If $d$ is a nonunit, then
+:::
+
+::: pf-step
+
+If $d$ is a nonunit, then
 $$
 d
 =
@@ -50,13 +60,22 @@ u q_1q_2\cdots q_n
 $$
 for a unit $u$ and irreducibles $q_i$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the existence part of unique factorization in the UFD $D$.
+
 :::
 
-<1>3. Every irreducible factor $q_i$ in step <1>2 is associate to $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every irreducible factor $q_i$ in step <1>2 is associate to $p$.
+
+
+::: pf-proof
+
 This is exactly the hypothesis on the fixed irreducible element $p$.
 Thus for each $i$ there is a unit
 $$
@@ -66,9 +85,14 @@ such that
 $$
 q_i=u_ip.
 $$
+
 :::
 
-<1>4. Every nonzero element $d\in D$ has an expression
+:::
+
+::: pf-step
+
+Every nonzero element $d\in D$ has an expression
 $$
 d=up^n
 $$
@@ -79,7 +103,9 @@ u\in D^\times,
 n\ge0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For units, use step <1>1.
 For nonunits, substitute
 $$
@@ -100,11 +126,18 @@ p^n.
 \end{aligned}
 $$
 The product of units is a unit.
+
 :::
 
-<1>5. The exponent $n$ in step <1>4 is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The exponent $n$ in step <1>4 is unique.
+
+
+::: pf-proof
+
 Suppose
 $$
 up^m
@@ -154,11 +187,18 @@ Hence
 $$
 m=n.
 $$
+
 :::
 
-<1>6. Once the exponent is fixed, the unit factor is also unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+Once the exponent is fixed, the unit factor is also unique.
+
+
+::: pf-proof
+
 If
 $$
 up^n
@@ -173,9 +213,14 @@ gives
 $$
 u=v.
 $$
+
 :::
 
-<1>7. Therefore every nonzero element has a unique expression
+:::
+
+::: pf-step
+
+Therefore every nonzero element has a unique expression
 $$
 \boxed{
 d=up^n,
@@ -186,11 +231,18 @@ n\in\ZZ_{\ge0}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Existence is step <1>4, and uniqueness is steps <1>5--<1>6.
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \delta:D\setminus\{0\}\to\ZZ_{\ge0}
 $$
@@ -201,11 +253,18 @@ $$
 n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 makes this definition unambiguous.
+
 :::
 
-<1>9. Let
+:::
+
+::: pf-step
+
+Let
 $$
 a,b\in D,
 \qquad
@@ -220,11 +279,18 @@ $$
 a=0\cdot b+0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is a valid Euclidean division with zero remainder.
+
 :::
 
-<1>10. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 a\ne0
 $$
@@ -241,7 +307,9 @@ m\ge n,
 $$
 then $b$ divides $a$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 m\ge n,
@@ -269,9 +337,14 @@ with
 $$
 q=uv^{-1}p^{m-n}\in D.
 $$
+
 :::
 
-<1>11. If
+:::
+
+::: pf-step
+
+If
 $$
 m<n,
 $$
@@ -284,7 +357,9 @@ $$
 \delta(a)<\delta(b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The displayed equality is immediate.
 By definition,
 $$
@@ -297,11 +372,18 @@ $$
 m<n,
 $$
 the remainder $a$ has strictly smaller Euclidean value than $b$.
+
 :::
 
-<1>12. The function $\delta$ is a Euclidean function on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $\delta$ is a Euclidean function on $D$.
+
+
+::: pf-proof
+
 Let
 $$
 a,b\in D,
@@ -334,9 +416,14 @@ m<n,
 $$
 step <1>11 gives a remainder of strictly smaller $\delta$-value.
 Thus the Euclidean division axiom holds.
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D
@@ -344,15 +431,21 @@ D
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring $D$ is already an integral domain because it is a UFD.
 Step <1>12 supplies a Euclidean function.
 Hence $D$ is Euclidean.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>13 proves part (b).
+
 :::
+
 :::

@@ -19,16 +19,21 @@ audit:
 Let R be a non-zero commutative ring with 1 and S a multiplicative subset of R not containing 0. Show that if P is maximal in the set of ideals of R not intersecting S, then P is a prime ideal.
 :::
 
-::: {.solution}
 Assume
 $$
 P\cap S=\varnothing
 $$
 and that $P$ is maximal among ideals with this property.
 
-<1>1. The ideal $P$ is proper.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ideal $P$ is proper.
+
+
+::: pf-proof
+
 By the standard definition of a multiplicative subset,
 $$
 1\in S.
@@ -49,9 +54,14 @@ Thus
 $$
 P\ne R.
 $$
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 ab\in P
 $$
@@ -65,7 +75,9 @@ P+(a)
 $$
 meets $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\notin P,
@@ -83,9 +95,14 @@ Therefore
 $$
 (P+(a))\cap S\ne\varnothing.
 $$
+
 :::
 
-<1>3. If also
+:::
+
+::: pf-step
+
+If also
 $$
 b\notin P,
 $$
@@ -95,11 +112,18 @@ P+(b)
 $$
 meets $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the same argument as in step <1>2, with $b$ in place of $a$.
+
 :::
 
-<1>4. Under the assumptions
+:::
+
+::: pf-step
+
+Under the assumptions
 $$
 ab\in P,
 \qquad
@@ -128,7 +152,9 @@ s=p+ra,
 t=q+ub.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Existence of $s$ and $t$ follows from steps <1>2--<1>3.
 Membership in
 $$
@@ -139,15 +165,22 @@ $$
 P+(b)
 $$
 gives the displayed decompositions.
+
 :::
 
-<1>5. The product
+:::
+
+::: pf-step
+
+The product
 $$
 st
 $$
 belongs to $P$.
 
-::: {.proof}
+
+::: pf-proof
+
 Using the expressions from step <1>4,
 $$
 \begin{aligned}
@@ -184,15 +217,22 @@ Thus
 $$
 st\in P.
 $$
+
 :::
 
-<1>6. The product
+:::
+
+::: pf-step
+
+The product
 $$
 st
 $$
 also belongs to $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 s,t\in S.
@@ -201,9 +241,14 @@ Since $S$ is multiplicatively closed,
 $$
 st\in S.
 $$
+
 :::
 
-<1>7. Therefore it is impossible to have
+:::
+
+::: pf-step
+
+Therefore it is impossible to have
 $$
 ab\in P
 $$
@@ -214,7 +259,9 @@ a\notin P
 b\notin P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>5--<1>6 give
 $$
 st\in P\cap S,
@@ -223,14 +270,21 @@ contradicting
 $$
 P\cap S=\varnothing.
 $$
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{P\text{ is prime}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows $P$ is proper. Step <1>7 shows
 $$
 ab\in P
@@ -240,11 +294,15 @@ a\in P
 b\in P.
 $$
 These are exactly the defining conditions for a prime ideal.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

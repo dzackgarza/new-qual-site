@@ -19,7 +19,6 @@ audit:
 Show that if p is a prime such that there is an integer b with $p = b ^ { 2 } + 4$ , then $\mathbb { Z } [ { \sqrt { p } } ]$ is not a unique factorization domain.
 :::
 
-::: {.solution}
 Set
 $$
 R
@@ -39,14 +38,20 @@ N(\alpha)
 a^2-pc^2.
 $$
 
-<1>1. The norm is multiplicative:
+::: pf
+
+::: pf-step
+
+The norm is multiplicative:
 $$
 N(\alpha\beta)
 =
 N(\alpha)N(\beta).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \overline{\alpha}
@@ -82,9 +87,14 @@ N(\alpha\beta)
 N(\alpha)N(\beta).
 \end{aligned}
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 u\in R
 $$
@@ -93,7 +103,9 @@ $$
 N(u)=\pm1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 uv=1
@@ -114,14 +126,21 @@ Both norms are integers, so
 $$
 N(u)=\pm1.
 $$
+
 :::
 
-<1>3. The integer $b$ is odd and
+:::
+
+::: pf-step
+
+The integer $b$ is odd and
 $$
 p\equiv5\pmod8.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 b
@@ -149,9 +168,14 @@ b^2+4
 5
 \pmod8.
 $$
+
 :::
 
-<1>4. There is no element
+:::
+
+::: pf-step
+
+There is no element
 $$
 \alpha\in R
 $$
@@ -162,7 +186,9 @@ N(\alpha)=2
 N(\alpha)=-2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \alpha=a+c\sqrt p
@@ -228,15 +254,22 @@ Neither $3$ nor $7$ is a square modulo $8$.
 Again this is impossible.
 
 Therefore no element of $R$ has norm $\pm2$.
+
 :::
 
-<1>5. The element
+:::
+
+::: pf-step
+
+The element
 $$
 2\in R
 $$
 is irreducible.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 2=\alpha\beta
@@ -290,16 +323,23 @@ Therefore
 $$
 \boxed{2\text{ is irreducible}.}
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (b+\sqrt p)(b-\sqrt p)
 =
 -4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -312,9 +352,14 @@ b^2-(b^2+4)\\
 -4.
 \end{aligned}
 $$
+
 :::
 
-<1>7. The element
+:::
+
+::: pf-step
+
+The element
 $$
 2
 $$
@@ -323,7 +368,9 @@ $$
 (b+\sqrt p)(b-\sqrt p).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 $$
 (b+\sqrt p)(b-\sqrt p)
@@ -338,9 +385,14 @@ $$
 \mid
 (b+\sqrt p)(b-\sqrt p).
 $$
+
 :::
 
-<1>8. The element
+:::
+
+::: pf-step
+
+The element
 $$
 2
 $$
@@ -353,7 +405,9 @@ $$
 b-\sqrt p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 b+\sqrt p
@@ -405,21 +459,33 @@ Hence
 $$
 2\nmid b-\sqrt p.
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 2
 $$
 is irreducible but not prime in $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Irreducibility is step <1>5.
 Steps <1>7--<1>8 show that $2$ divides a product without dividing either factor.
 Thus $2$ is not prime.
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \ZZ[\sqrt p]
@@ -427,15 +493,21 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In a UFD, every irreducible element is prime.
 Step <1>9 exhibits an irreducible element of $R$ that is not prime.
 Therefore $R$ cannot be a UFD.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

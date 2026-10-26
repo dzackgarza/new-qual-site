@@ -19,7 +19,6 @@ audit:
 Let R be the field of real numbers and let F be the set of all $2 \times 2$ matrices of the form $\left[ { \begin{array} { r r } { a } & { b } \\ { - 3 b } & { a } \end{array} } \right]$ , where $a , b \in \mathbb { R }$ . Show that F is a field under the usual matrix operations.
 :::
 
-::: {.solution}
 For
 $$
 a,b\in\RR,
@@ -34,9 +33,15 @@ a&b\\
 \end{pmatrix}.
 $$
 
-<1>1. The set $F$ is closed under addition and additive inverses.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $F$ is closed under addition and additive inverses.
+
+
+::: pf-proof
+
 For
 $$
 a,b,c,d\in\RR,
@@ -68,11 +73,18 @@ $$
 M(0,0).
 $$
 Thus $F$ is an additive subgroup of $M_2(\RR)$.
+
 :::
 
-<1>2. The set $F$ is closed under multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F$ is closed under multiplication.
+
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -96,11 +108,18 @@ M(ac-3bd,ad+bc).
 \end{aligned}
 $$
 Hence the product again lies in $F$.
+
 :::
 
-<1>3. Multiplication in $F$ is commutative.
+:::
 
-::: {.proof}
+::: pf-step
+
+Multiplication in $F$ is commutative.
+
+
+::: pf-proof
+
 The multiplication formula from step <1>2 is symmetric in the pairs
 $$
 (a,b)
@@ -115,9 +134,14 @@ M(ac-3bd,ad+bc)
 M(c,d)M(a,b).
 $$
 Thus multiplication is commutative.
+
 :::
 
-<1>4. The multiplicative identity of $M_2(\RR)$ lies in $F$:
+:::
+
+::: pf-step
+
+The multiplicative identity of $M_2(\RR)$ lies in $F$:
 $$
 \boxed{
 I_2
@@ -126,7 +150,9 @@ M(1,0).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 $$
 M(1,0)
@@ -136,9 +162,14 @@ M(1,0)
 0&1
 \end{pmatrix}.
 $$
+
 :::
 
-<1>5. A matrix
+:::
+
+::: pf-step
+
+A matrix
 $$
 M(a,b)
 $$
@@ -151,17 +182,26 @@ $$
 a^2+3b^2>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first assertion follows by inspection of the matrix entries.
 If $(a,b)\ne(0,0)$, then at least one of $a^2$ and $b^2$ is positive, so
 $$
 a^2+3b^2>0.
 $$
+
 :::
 
-<1>6. Every nonzero element of $F$ has a multiplicative inverse in $F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $F$ has a multiplicative inverse in $F$.
+
+
+::: pf-proof
+
 Let
 $$
 M(a,b)\ne0.
@@ -199,20 +239,31 @@ $$
 NM(a,b)=I_2.
 $$
 Thus $N$ is the inverse of $M(a,b)$ and lies in $F$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{F\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The usual matrix operations are associative and distributive. Steps <1>1--<1>4 show that $F$ is a commutative ring with identity, and step <1>6 shows that every nonzero element is invertible. Hence $F$ is a field.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

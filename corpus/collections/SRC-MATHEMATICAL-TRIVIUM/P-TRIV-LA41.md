@@ -23,13 +23,18 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. Subtract twice the first equation from the second. The result is
+::: pf
+
+::: pf-step
+
+Subtract twice the first equation from the second. The result is
 $$
 y+2z=-9.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The left-hand side is
 $$
 (2x+3y+4z)-2(x+2y+3z)
@@ -48,15 +53,22 @@ equivalently
 $$
 y+2z=-9.
 $$
+
 :::
 
-<1>2. Subtract three times the first equation from the third. The result is
+:::
+
+::: pf-step
+
+Subtract three times the first equation from the third. The result is
 again
 $$
 y+2z=-9.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The left-hand side becomes
 $$
 (3x+4y+5z)-3(x+2y+3z)
@@ -72,17 +84,29 @@ $$
 -2y-4z=18,
 $$
 which reduces to the same equation as in step <1>1.
+
 :::
 
-<1>3. The system is consistent and has one free parameter.
+:::
 
-::: {.proof}
+::: pf-step
+
+The system is consistent and has one free parameter.
+
+
+::: pf-proof
+
 Steps <1>1--<1>2 show that the second and third equations impose the same
 condition after eliminating $x$. Thus no contradictory equation arises, and
 the rank is $2<3$.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 z=t.
 $$
@@ -91,16 +115,25 @@ $$
 y=-9-2t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the equation from step <1>1 for $y$.
+
 :::
 
-<1>5. Substituting into the first equation gives
+:::
+
+::: pf-step
+
+Substituting into the first equation gives
 $$
 x=14+t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first equation becomes
 $$
 x+2(-9-2t)+3t=-4.
@@ -113,9 +146,14 @@ so
 $$
 x=14+t.
 $$
+
 :::
 
-<1>6. Therefore the complete solution set is
+:::
+
+::: pf-step
+
+Therefore the complete solution set is
 $$
 \boxed{
 (x,y,z)
@@ -126,14 +164,20 @@ t\in\mathbb R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4--<1>5 give every solution. Conversely, direct substitution shows
 that every displayed triple satisfies all three original equations.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the full solution family.
+
 :::
+
 :::

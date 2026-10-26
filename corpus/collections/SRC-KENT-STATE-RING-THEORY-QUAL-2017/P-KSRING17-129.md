@@ -20,7 +20,6 @@ Let D be a principal ideal domain and let P be a non-zero prime ideal.
 Show that $D _ { P }$ , the localization of D at P , is a principal ideal domain and has a unique irreducible element, up to associates.
 :::
 
-::: {.solution}
 Set
 $$
 S
@@ -40,7 +39,11 @@ $$
 p\ne0.
 $$
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 J\trianglelefteq D_P.
 $$
@@ -55,7 +58,9 @@ a\in D:
 $$
 Then $I$ is an ideal of $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The contraction of an ideal along any ring homomorphism is an ideal.
 Explicitly, if
 $$
@@ -95,14 +100,21 @@ so
 $$
 ra\in I.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 J=S^{-1}I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \frac as\in J.
@@ -162,11 +174,18 @@ Therefore
 $$
 S^{-1}I\subseteq J.
 $$
+
 :::
 
-<1>3. The ideal $J$ is principal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $J$ is principal.
+
+
+::: pf-proof
+
 Since $D$ is a PID,
 $$
 I=(d)
@@ -187,16 +206,28 @@ S^{-1}(d)
 $$
 as an ideal of $D_P$.
 Thus every ideal of $D_P$ is principal.
+
 :::
 
-<1>4. The ring $D_P$ is an integral domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $D_P$ is an integral domain.
+
+
+::: pf-proof
+
 It is a subring of the fraction field of the integral domain $D$.
 Hence it has no zero divisors.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D_P
@@ -204,13 +235,22 @@ D_P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows every ideal is principal, and step <1>4 shows $D_P$ is an integral domain.
+
 :::
 
-<1>6. The element $p$ is irreducible in $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $p$ is irreducible in $D$.
+
+
+::: pf-proof
+
 Suppose
 $$
 p=ab.
@@ -252,9 +292,14 @@ $$
 so $b$ is a unit.
 The other case similarly makes $a$ a unit.
 Thus $p$ is irreducible.
+
 :::
 
-<1>7. A fraction
+:::
+
+::: pf-step
+
+A fraction
 $$
 \frac as\in D_P
 $$
@@ -263,7 +308,9 @@ $$
 a\notin P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 a\notin P,
@@ -284,9 +331,14 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>8. A fraction
+:::
+
+::: pf-step
+
+A fraction
 $$
 \frac as\in D_P
 $$
@@ -296,7 +348,9 @@ a\in P
 $$
 is not a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose it were a unit.
 Then for some
 $$
@@ -328,9 +382,14 @@ $$
 s,t\notin P
 $$
 and $P$ is prime, contradiction.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \frac as
@@ -340,17 +399,26 @@ a\notin P.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>7 and <1>8.
+
 :::
 
-<1>10. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \frac p1
 $$
 is a nonunit of $D_P$.
 
-::: {.proof}
+
+::: pf-proof
+
 Its numerator
 $$
 p
@@ -360,15 +428,22 @@ $$
 P.
 $$
 Apply step <1>9.
+
 :::
 
-<1>11. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \frac p1
 $$
 is irreducible in $D_P$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \frac p1
@@ -419,9 +494,14 @@ $$
 p/1
 $$
 is irreducible.
+
 :::
 
-<1>12. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \alpha
 =
@@ -433,15 +513,22 @@ $$
 a\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An irreducible element is a nonunit.
 By step <1>9, a nonunit fraction must have numerator in
 $$
 P.
 $$
+
 :::
 
-<1>13. Write
+:::
+
+::: pf-step
+
+Write
 $$
 a=pd
 $$
@@ -456,7 +543,9 @@ $$
 \frac p1\frac ds.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>12,
 $$
 a\in P=(p).
@@ -474,15 +563,22 @@ $$
 =
 \frac p1\frac ds.
 $$
+
 :::
 
-<1>14. The factor
+:::
+
+::: pf-step
+
+The factor
 $$
 \frac ds
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 The element
 $$
 \alpha
@@ -504,14 +600,21 @@ $$
 d/s
 $$
 to be a unit.
+
 :::
 
-<1>15. Every irreducible element of $D_P$ is associate to
+:::
+
+::: pf-step
+
+Every irreducible element of $D_P$ is associate to
 $$
 p/1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>13 gives
 $$
 \alpha
@@ -532,9 +635,14 @@ $$
 p/1
 $$
 by multiplication by a unit.
+
 :::
 
-<1>16. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 D_P
@@ -542,17 +650,23 @@ D_P
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>11 gives the irreducible
 $$
 p/1,
 $$
 and step <1>15 shows every irreducible is associate to it.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves that $D_P$ is a PID, and step <1>16 proves uniqueness of the irreducible up to associates.
+
 :::
+
 :::

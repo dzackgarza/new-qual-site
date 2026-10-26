@@ -19,7 +19,6 @@ audit:
 Let R be a commutative Noetherian ring with identity and let I be an ideal in R. Let $J = { \mathrm { R a d } } ( I )$ . Prove that there exists a positive integer n such that $j ^ { n } \in I$ for all $j \in J$
 :::
 
-::: {.solution}
 Let
 $$
 J
@@ -29,9 +28,15 @@ J
 \{r\in R:r^m\in I\text{ for some }m\ge1\}.
 $$
 
-<1>1. The ideal $J$ is finitely generated.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ideal $J$ is finitely generated.
+
+
+::: pf-proof
+
 The radical
 $$
 \sqrt I
@@ -46,9 +51,14 @@ such that
 $$
 J=(x_1,\ldots,x_r).
 $$
+
 :::
 
-<1>2. For each
+:::
+
+::: pf-step
+
+For each
 $$
 i=1,\ldots,r,
 $$
@@ -61,7 +71,9 @@ $$
 x_i^{n_i}\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 $$
 x_i
@@ -71,9 +83,14 @@ $$
 J=\sqrt I.
 $$
 By definition of the radical, some positive power of $x_i$ lies in $I$.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 N
 \coloneqq
@@ -93,7 +110,9 @@ x_i^{n_i}
 $$
 for some $i$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that
 $$
 e_i<n_i
@@ -120,15 +139,22 @@ $$
 e_i\ge n_i
 $$
 for at least one index $i$.
+
 :::
 
-<1>4. Every degree-$N$ monomial in
+:::
+
+::: pf-step
+
+Every degree-$N$ monomial in
 $$
 x_1,\ldots,x_r
 $$
 belongs to $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, such a monomial is divisible by
 $$
 x_i^{n_i}
@@ -143,16 +169,23 @@ $$
 x_i^{n_i}
 $$
 also lies in $I$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 J^N\subseteq I.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 J=(x_1,\ldots,x_r),
@@ -174,9 +207,14 @@ Therefore
 $$
 J^N\subseteq I.
 $$
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 $$
 j\in J,
 $$
@@ -185,7 +223,9 @@ $$
 j^N\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 j\in J,
@@ -202,9 +242,14 @@ Hence
 $$
 j^N\in I.
 $$
+
 :::
 
-<1>7. Therefore there exists a single positive integer $N$ such that
+:::
+
+::: pf-step
+
+Therefore there exists a single positive integer $N$ such that
 $$
 \boxed{
 j^N\in I
@@ -213,13 +258,19 @@ j^N\in I
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the integer $N$ defined in step <1>3 and apply step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

@@ -25,7 +25,6 @@ $$
 where y is the amplitude of the oscillations (assume the amplitude to be small and the wave velocity to be v). Find $y ( x , t )$
 :::
 
-::: {.solution}
 The string satisfies
 \[
 y_{tt}=v^2y_{xx},
@@ -33,53 +32,80 @@ y_{tt}=v^2y_{xx},
 y(0,t)=y(L,t)=0.
 \]
 
-<1>1. A fixed-end solution with zero initial displacement has the expansion
+::: pf
+
+::: pf-step
+
+A fixed-end solution with zero initial displacement has the expansion
 \[
 y(x,t)=\sum_{n=1}^{\infty}B_n
 \sin\frac{n\pi x}{L}
 \sin\frac{n\pi vt}{L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Dirichlet eigenfunctions are $\sin(n\pi x/L)$. For each spatial eigenvalue $(n\pi/L)^2$, the temporal equation is
 \[
 T_n''+v^2\frac{n^2\pi^2}{L^2}T_n=0.
 \]
 Zero initial displacement removes the cosine term, leaving the displayed sine-in-time expansion.
+
 :::
 
-<1>2. Its initial velocity is
+:::
+
+::: pf-step
+
+Its initial velocity is
 \[
 y_t(x,0)=\sum_{n=1}^{\infty}B_n\frac{n\pi v}{L}
 \sin\frac{n\pi x}{L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the series in step <1>1 with respect to $t$ and set $t=0$.
+
 :::
 
-<1>3. On $(0,L)$, the delta distribution has the sine-series expansion
+:::
+
+::: pf-step
+
+On $(0,L)$, the delta distribution has the sine-series expansion
 \[
 \delta(x-a)=\frac2L\sum_{n=1}^{\infty}
 \sin\frac{n\pi a}{L}
 \sin\frac{n\pi x}{L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the sine basis, the coefficient of a distribution $g$ is
 \[
 c_n=\frac2L\left\langle g,\sin\frac{n\pi x}{L}\right\rangle.
 \]
 Taking $g=\delta_a$ gives $c_n=(2/L)\sin(n\pi a/L)$.
+
 :::
 
-<1>4. Matching the prescribed initial velocity gives
+:::
+
+::: pf-step
+
+Matching the prescribed initial velocity gives
 \[
 B_n=\frac{2Lv_0}{n\pi v}
 \sin\frac{n\pi a}{L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The initial condition is
 \[
 y_t(x,0)=Lv_0\delta(x-a)
@@ -91,9 +117,14 @@ Compare this with step <1>2 and solve
 \[
 B_n\frac{n\pi v}{L}=2v_0\sin\frac{n\pi a}{L}.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 y(x,t)=\frac{2Lv_0}{\pi v}
@@ -103,13 +134,19 @@ y(x,t)=\frac{2Lv_0}{\pi v}
 \sin\frac{n\pi vt}{L}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the coefficients from step <1>4 into step <1>1. The series satisfies the wave equation and fixed-end conditions termwise, has zero initial displacement, and step <1>4 verifies its initial velocity distributionally.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the displacement of the struck string.
+
 :::
+
 :::

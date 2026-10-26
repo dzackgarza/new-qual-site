@@ -23,10 +23,15 @@ Let R be a commutative ring with identity that has exactly one prime ideal P . P
 (b) R is isomorphic to $R _ { P }$ , the ring of quotients of R with respect to the multiplicative set $R - P = \{ s \in R \mid s \not \in P \}$
 :::
 
-::: {.solution}
-<1>1. The prime ideal $P$ is contained in some maximal ideal $M$ of $R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The prime ideal $P$ is contained in some maximal ideal $M$ of $R$.
+
+
+::: pf-proof
+
 The ideal $P$ is proper because it is prime.
 Every proper ideal in a commutative ring with identity is contained in a maximal ideal.
 Hence there exists a maximal ideal
@@ -37,25 +42,39 @@ with
 $$
 P\subseteq M.
 $$
+
 :::
 
-<1>2. The maximal ideal $M$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The maximal ideal $M$ is prime.
+
+
+::: pf-proof
+
 Every maximal ideal of a commutative ring with identity is prime.
 Thus
 $$
 M
 $$
 is a prime ideal.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 M=P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 $$
 P
@@ -66,46 +85,74 @@ Therefore
 $$
 M=P.
 $$
+
 :::
 
-<1>4. The ideal $P$ is maximal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $P$ is maximal.
+
+
+::: pf-proof
+
 Step <1>3 identifies $P$ with the maximal ideal $M$ from step <1>1.
 Hence
 $$
 \boxed{P\text{ is maximal}.}
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{R/P\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $P$ is maximal.
 The maximal-ideal quotient criterion gives that
 $$
 R/P
 $$
 is a field.
+
 :::
 
-<1>6. The ideal $P$ is the unique maximal ideal of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $P$ is the unique maximal ideal of $R$.
+
+
+::: pf-proof
+
 Every maximal ideal is prime.
 Since $P$ is the unique prime ideal by hypothesis, there can be no maximal ideal other than $P$.
+
 :::
 
-<1>7. Every element
+:::
+
+::: pf-step
+
+Every element
 $$
 s\in R\setminus P
 $$
 is a unit of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 s\notin P
@@ -131,9 +178,14 @@ s\in P,
 $$
 contradicting the choice of $s$.
 Therefore every element outside $P$ is a unit.
+
 :::
 
-<1>8. Let
+:::
+
+::: pf-step
+
+Let
 $$
 S
 \coloneqq
@@ -151,7 +203,9 @@ $$
 $$
 Then $\varphi$ is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \frac rs
@@ -176,11 +230,18 @@ $$
 \varphi(rs^{-1}).
 $$
 Thus every element of $R_P$ lies in the image of $\varphi$.
+
 :::
 
-<1>9. The map $\varphi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is injective.
+
+
+::: pf-proof
+
 Suppose
 $$
 \varphi(r)
@@ -212,9 +273,14 @@ $$
 \ker\varphi=0,
 $$
 so $\varphi$ is injective.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R
@@ -223,15 +289,21 @@ R_P.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The natural localization map $\varphi$ is a ring homomorphism.
 Steps <1>8--<1>9 show that it is bijective.
 Hence it is a ring isomorphism.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>10 proves part (b).
+
 :::
+
 :::

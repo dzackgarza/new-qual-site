@@ -20,7 +20,6 @@ Let R be a principal ideal domain.
 Show that if (a) is a nonzero ideal in R, then there are only finitely many ideals in R containing (a).
 :::
 
-::: {.solution}
 Assume
 $$
 (a)\ne(0).
@@ -30,7 +29,11 @@ $$
 a\ne0.
 $$
 
-<1>1. Every ideal of $R$ containing $(a)$ has the form
+::: pf
+
+::: pf-step
+
+Every ideal of $R$ containing $(a)$ has the form
 $$
 (d)
 $$
@@ -39,7 +42,9 @@ $$
 d\mid a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 I
@@ -76,9 +81,14 @@ so
 $$
 d\mid a.
 $$
+
 :::
 
-<1>2. Conversely, if
+:::
+
+::: pf-step
+
+Conversely, if
 $$
 d\mid a,
 $$
@@ -87,7 +97,9 @@ $$
 (a)\subseteq(d).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 a=dr.
@@ -108,26 +120,45 @@ Hence
 $$
 (a)\subseteq(d).
 $$
+
 :::
 
-<1>3. Since $R$ is a PID, it is a UFD.
+:::
 
-::: {.proof}
+::: pf-step
+
+Since $R$ is a PID, it is a UFD.
+
+
+::: pf-proof
+
 Every principal ideal domain is a unique factorization domain.
 Hence every nonzero nonunit of $R$ has a factorization into irreducibles, unique up to order and associates.
+
 :::
 
-<1>4. If $a$ is a unit, then the only ideal containing $(a)$ is $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $a$ is a unit, then the only ideal containing $(a)$ is $R$.
+
+
+::: pf-proof
+
 If $a$ is a unit, then
 $$
 (a)=R.
 $$
 The only ideal containing $R$ is $R$ itself.
+
 :::
 
-<1>5. Suppose $a$ is not a unit.
+:::
+
+::: pf-step
+
+Suppose $a$ is not a unit.
 Choose a factorization
 $$
 a
@@ -154,7 +185,9 @@ $$
 0\le f_i\le e_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 d\mid a.
@@ -180,11 +213,18 @@ with
 $$
 0\le f_i\le e_i.
 $$
+
 :::
 
-<1>6. There are only finitely many divisors of $a$ up to associates.
+:::
 
-::: {.proof}
+::: pf-step
+
+There are only finitely many divisors of $a$ up to associates.
+
+
+::: pf-proof
+
 By step <1>5, an associate class of a divisor is determined by the finite tuple
 $$
 (f_1,\ldots,f_r)
@@ -199,11 +239,18 @@ $$
 $$
 such tuples.
 Hence there are finitely many divisor classes up to associates.
+
 :::
 
-<1>7. Associate elements generate the same principal ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Associate elements generate the same principal ideal.
+
+
+::: pf-proof
+
 If
 $$
 d'=vd
@@ -219,11 +266,18 @@ $$
 =(d),
 $$
 because multiplication by a unit does not change the set of multiples.
+
 :::
 
-<1>8. Therefore there are only finitely many ideals containing $(a)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore there are only finitely many ideals containing $(a)$.
+
+
+::: pf-proof
+
 By steps <1>1--<1>2, ideals containing
 $$
 (a)
@@ -243,11 +297,15 @@ $$
 \text{only finitely many ideals of }R\text{ contain }(a).
 }
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

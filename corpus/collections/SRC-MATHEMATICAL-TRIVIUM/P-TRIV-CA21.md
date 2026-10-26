@@ -31,7 +31,6 @@ We choose to have a branch cut on the positive real axis.
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
 
-::: {.solution}
 Use the branch
 $$
 z^p
@@ -43,7 +42,11 @@ z=re^{i\theta},
 0<\theta<2\pi.
 $$
 
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 $$
 F(z)
 =
@@ -56,22 +59,31 @@ z=i
 z=-i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator vanishes exactly at $\pm i$. Both points lie in the branch
 domain
 $$
 0<\arg z<2\pi.
 $$
+
 :::
 
-<1>2. The residue at $z=i$ is
+:::
+
+::: pf-step
+
+The residue at $z=i$ is
 $$
 \operatorname{Res}_{z=i}F(z)
 =
 \frac{e^{i\pi p/2}}{2i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the chosen branch,
 $$
 i^p
@@ -84,16 +96,23 @@ $$
 =
 \frac{i^p}{2i}.
 $$
+
 :::
 
-<1>3. The residue at $z=-i$ is
+:::
+
+::: pf-step
+
+The residue at $z=-i$ is
 $$
 \operatorname{Res}_{z=-i}F(z)
 =
 -\frac{e^{3\pi i p/2}}{2i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the branch $0<\arg z<2\pi$,
 $$
 \arg(-i)=\frac{3\pi}{2},
@@ -105,9 +124,14 @@ $$
 e^{3\pi i p/2}.
 $$
 The derivative of $z^2+1$ at $-i$ is $-2i$, giving the result.
+
 :::
 
-<1>4. Hence the limiting contour integral is
+:::
+
+::: pf-step
+
+Hence the limiting contour integral is
 $$
 I_1
 =
@@ -119,7 +143,9 @@ e^{3\pi i p/2}
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The residue theorem gives
 $$
 I_1
@@ -133,11 +159,18 @@ I_1
 $$
 provided the two circular arcs vanish. That vanishing is verified in
 steps <1>5--<1>6.
+
 :::
 
-<1>5. The outer-circle contribution tends to zero as $R\to\infty$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The outer-circle contribution tends to zero as $R\to\infty$.
+
+
+::: pf-proof
+
 On $|z|=R>1$,
 $$
 |z^p|=R^p
@@ -157,12 +190,19 @@ $$
 \frac{2\pi R^{p+1}}{R^2-1}.
 $$
 Since $p<1$, the right-hand side tends to zero.
+
 :::
 
-<1>6. The inner-circle contribution tends to zero as
+:::
+
+::: pf-step
+
+The inner-circle contribution tends to zero as
 $\varepsilon\to0^+$.
 
-::: {.proof}
+
+::: pf-proof
+
 On $|z|=\varepsilon<1$,
 $$
 |z^p|=\varepsilon^p
@@ -184,9 +224,14 @@ $$
 \longrightarrow0
 $$
 because $p>0$.
+
 :::
 
-<1>7. The upper-ray contribution tends to
+:::
+
+::: pf-step
+
+The upper-ray contribution tends to
 $$
 I_2
 =
@@ -194,7 +239,9 @@ I_2
 \frac{x^p}{1+x^2}\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the upper side of the positive axis,
 $$
 \arg z=0,
@@ -205,14 +252,21 @@ z^p=x^p.
 $$
 The ray is traversed from $\varepsilon$ to $R$, producing the truncated
 integral for $I_2$.
+
 :::
 
-<1>8. The lower-ray contribution tends to
+:::
+
+::: pf-step
+
+The lower-ray contribution tends to
 $$
 -e^{2\pi ip}I_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the lower side of the positive-axis cut,
 $$
 \arg z=2\pi,
@@ -234,21 +288,33 @@ $$
 \frac{x^p}{1+x^2}\,dx.
 $$
 Take the limits.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 I_1
 =
 (1-e^{2\pi ip})I_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5--<1>6 the circular arcs vanish, and by steps <1>7--<1>8 the
 two ray contributions sum to the displayed expression.
+
 :::
 
-<1>10. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 I_2
@@ -261,7 +327,9 @@ I_2
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4 and <1>9,
 $$
 I_2
@@ -309,12 +377,16 @@ $$
 \cos\left(\frac{\pi p}{2}\right),
 $$
 which yields the stated formula.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 evaluates the contour integral $I_1$, step <1>9 gives its relation
 to $I_2$, and step <1>10 gives the requested real integral.
+
 :::
+
 :::

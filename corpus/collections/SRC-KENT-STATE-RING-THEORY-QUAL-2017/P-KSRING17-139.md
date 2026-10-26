@@ -20,7 +20,6 @@ Let P be a nonzero prime ideal of the commutative Noetherian domain R. Assume P 
 Prove that there does not exist a prime ideal Q satisfying $( 0 ) < Q < P$
 :::
 
-::: {.solution}
 Write
 $$
 P=(p)
@@ -42,12 +41,18 @@ Q
 P.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 p\notin Q.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 p\in Q,
@@ -67,9 +72,14 @@ Hence
 $$
 p\notin Q.
 $$
+
 :::
 
-<1>2. Choose
+:::
+
+::: pf-step
+
+Choose
 $$
 0\ne q_0\in Q.
 $$
@@ -86,7 +96,9 @@ $$
 q_0=pq_1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ideal $Q$ is nonzero, so a nonzero element
 $$
 q_0
@@ -101,15 +113,22 @@ $$
 p\mid q_0
 $$
 gives the displayed expression.
+
 :::
 
-<1>3. The element
+:::
+
+::: pf-step
+
+The element
 $$
 q_1
 $$
 belongs to $Q$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 pq_1=q_0\in Q.
@@ -122,15 +141,22 @@ by step <1>1, primality forces
 $$
 q_1\in Q.
 $$
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 q_1
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 q_1=0,
@@ -143,9 +169,14 @@ contradicting the choice
 $$
 q_0\ne0.
 $$
+
 :::
 
-<1>5. Inductively, for every
+:::
+
+::: pf-step
+
+Inductively, for every
 $$
 n\ge0,
 $$
@@ -158,7 +189,9 @@ $$
 q_n=pq_{n+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 0\ne q_n\in Q.
@@ -198,9 +231,14 @@ $$
 q_{n+1}\ne0.
 $$
 Thus the construction continues indefinitely.
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 $$
 n\ge0,
 $$
@@ -211,7 +249,9 @@ $$
 (q_{n+1}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 q_n=pq_{n+1}.
@@ -221,11 +261,18 @@ Hence
 $$
 (q_n)\subseteq(q_{n+1}).
 $$
+
 :::
 
-<1>7. Each containment in step <1>6 is strict.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each containment in step <1>6 is strict.
+
+
+::: pf-proof
+
 Suppose for some $n$ that
 $$
 (q_n)
@@ -281,9 +328,14 @@ $$
 (q_{n+1})
 $$
 for every $n$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 (q_0)
 \subsetneq
@@ -295,21 +347,37 @@ $$
 $$
 is an infinite strictly ascending chain of ideals.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly steps <1>6--<1>7.
+
 :::
 
-<1>9. The chain in step <1>8 contradicts Noetherianity of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The chain in step <1>8 contradicts Noetherianity of $R$.
+
+
+::: pf-proof
+
 A Noetherian ring satisfies the ascending chain condition on ideals.
 The chain from step <1>8 never stabilizes because every inclusion is strict.
 This is impossible.
+
 :::
 
-<1>10. Hence no such prime ideal $Q$ exists.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence no such prime ideal $Q$ exists.
+
+
+::: pf-proof
+
 The assumption
 $$
 (0)
@@ -327,11 +395,15 @@ $$
 (0)<Q<P.
 }
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

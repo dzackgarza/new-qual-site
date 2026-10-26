@@ -27,7 +27,6 @@ Let $R$ be a commutative ring with identity and $\sigma : R \to R$ a ring automo
 (b) Show that if $\sigma^2$ is the identity map on $R$, then each element of $R$ is the root of a monic polynomial of degree two in $F[x]$.
 :::
 
-::: {.solution}
 Let
 $$
 F
@@ -35,9 +34,15 @@ F
 \{r\in R:\sigma(r)=r\}.
 $$
 
-<1>1. The set $F$ contains $0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $F$ contains $0$.
+
+
+::: pf-proof
+
 Every ring homomorphism sends $0$ to $0$:
 $$
 \sigma(0)
@@ -54,11 +59,18 @@ Hence
 $$
 0\in F.
 $$
+
 :::
 
-<1>2. The set $F$ is closed under subtraction.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F$ is closed under subtraction.
+
+
+::: pf-proof
+
 Let
 $$
 a,b\in F.
@@ -81,11 +93,18 @@ Thus
 $$
 a-b\in F.
 $$
+
 :::
 
-<1>3. The set $F$ is closed under multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F$ is closed under multiplication.
+
+
+::: pf-proof
+
 Let
 $$
 a,b\in F.
@@ -102,11 +121,18 @@ Hence
 $$
 ab\in F.
 $$
+
 :::
 
-<1>4. The identity element $1_R$ belongs to $F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The identity element $1_R$ belongs to $F$.
+
+
+::: pf-proof
+
 Because $\sigma$ is surjective, for every
 $$
 r\in R
@@ -148,9 +174,14 @@ Hence
 $$
 1_R\in F.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 F
@@ -159,11 +190,18 @@ F
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 give closure under the ring operations, and step <1>4 gives the identity.
+
 :::
 
-<1>6. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 $$
 \sigma^2
 =
@@ -190,7 +228,9 @@ $$
 t_r,n_r\in F.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 \sigma^2(r)=r,
@@ -231,9 +271,14 @@ Hence
 $$
 n_r\in F.
 $$
+
 :::
 
-<1>7. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 p_r(X)
 \coloneqq
@@ -245,7 +290,9 @@ F[X]
 $$
 and is monic of degree $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 $$
 t_r,n_r\in F.
@@ -258,11 +305,18 @@ X^2-t_rX+n_r
 $$
 has coefficients in $F$.
 Its leading coefficient is $1\in F$ and its degree is $2$.
+
 :::
 
-<1>8. The element $r$ is a root of $p_r$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $r$ is a root of $p_r$.
+
+
+::: pf-proof
+
 Substitute
 $$
 X=r:
@@ -282,11 +336,18 @@ Thus
 $$
 p_r(r)=0.
 $$
+
 :::
 
-<1>9. Hence every element of $R$ is the root of a monic quadratic polynomial over $F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence every element of $R$ is the root of a monic quadratic polynomial over $F$.
+
+
+::: pf-proof
+
 The element
 $$
 r\in R
@@ -300,11 +361,15 @@ of degree $2$ with
 $$
 p_r(r)=0.
 $$
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

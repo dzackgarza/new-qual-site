@@ -27,13 +27,16 @@ $$
 is defined here for an odd prime $p$. Thus the intended hypothesis is that $p$ is odd.
 :::
 
-::: {.solution}
 Assume $p$ is an odd prime and
 $$
 \gcd(a,p)=1.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 a^{(p-1)/2}
 \equiv
@@ -41,7 +44,9 @@ a^{(p-1)/2}
 \pmod p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fermat's little theorem gives
 $$
 a^{p-1}\equiv1\pmod p.
@@ -65,9 +70,14 @@ a^{(p-1)/2}+1
 =0.
 $$
 Since $\FF_p$ is a field, one of the two factors is zero.
+
 :::
 
-<1>2. If $a$ is a quadratic residue modulo $p$, then
+:::
+
+::: pf-step
+
+If $a$ is a quadratic residue modulo $p$, then
 $$
 a^{(p-1)/2}
 \equiv
@@ -75,7 +85,9 @@ a^{(p-1)/2}
 \pmod p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $a$ is a nonzero square modulo $p$, write
 $$
 a\equiv b^2\pmod p
@@ -90,15 +102,22 @@ b^{p-1}
 \pmod p
 $$
 by Fermat's little theorem.
+
 :::
 
-<1>3. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 X^{(p-1)/2}-1
 $$
 has exactly the nonzero quadratic residues as its roots in $\FF_p$.
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 $$
 \FF_p^\times\longrightarrow\FF_p^\times,
@@ -120,9 +139,14 @@ $$
 X^{(p-1)/2}-1.
 $$
 This polynomial has degree $(p-1)/2$, so over the field $\FF_p$ it has at most $(p-1)/2$ roots. Therefore these quadratic residues are all its roots.
+
 :::
 
-<1>4. If $a$ is a quadratic nonresidue modulo $p$, then
+:::
+
+::: pf-step
+
+If $a$ is a quadratic nonresidue modulo $p$, then
 $$
 a^{(p-1)/2}
 \equiv
@@ -130,7 +154,9 @@ a^{(p-1)/2}
 \pmod p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, a nonresidue is not a root of
 $$
 X^{(p-1)/2}-1.
@@ -149,9 +175,14 @@ a^{(p-1)/2}
 -1
 \pmod p.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 a^{(p-1)/2}
@@ -161,7 +192,9 @@ a^{(p-1)/2}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 \left(\frac ap\right)
@@ -172,11 +205,15 @@ $$
 \end{cases}
 $$
 Steps <1>2 and <1>4 give exactly these two congruences.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is Euler's criterion.
+
 :::
+
 :::

@@ -24,15 +24,20 @@ Calculate its rang and signature.
 (b) Write the transition matrix to the basis where f (x) has the canonical form.
 :::
 
-::: {.solution}
-<1>1. Complete the square in $x_1$:
+::: pf
+
+::: pf-step
+
+Complete the square in $x_1$:
 $$
 2x_1^2+4x_1x_2+3x_2^2
 =
 2(x_1+x_2)^2+x_2^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 2(x_1+x_2)^2
@@ -40,9 +45,14 @@ $$
 2x_1^2+4x_1x_2+2x_2^2.
 $$
 Adding the remaining $x_2^2$ gives the original three terms.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 f
 =
@@ -51,18 +61,27 @@ f
 x_2^2+4x_2x_3+5x_3^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the identity from step <1>1 into the original quadratic form.
+
 :::
 
-<1>3. Complete the square in the remaining two variables:
+:::
+
+::: pf-step
+
+Complete the square in the remaining two variables:
 $$
 x_2^2+4x_2x_3+5x_3^2
 =
 (x_2+2x_3)^2+x_3^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 (x_2+2x_3)^2
@@ -70,9 +89,14 @@ $$
 x_2^2+4x_2x_3+4x_3^2,
 $$
 then add $x_3^2$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 f
@@ -85,11 +109,18 @@ x_3^2.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2--<1>3.
+
 :::
 
-<1>5. Define new coordinates
+:::
+
+::: pf-step
+
+Define new coordinates
 $$
 u_1=\sqrt2(x_1+x_2),
 \qquad
@@ -102,20 +133,34 @@ $$
 \boxed{f=u_1^2+u_2^2+u_3^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the definitions of the $u_i$ into step <1>4.
+
 :::
 
-<1>6. The rank is
+:::
+
+::: pf-step
+
+The rank is
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The canonical form in step <1>5 has three nonzero square terms.
+
 :::
 
-<1>7. The inertia is
+:::
+
+::: pf-step
+
+The inertia is
 $$
 \boxed{(3,0)},
 $$
@@ -124,18 +169,32 @@ $$
 \boxed{3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 All three coefficients in the canonical form are positive and none are
 negative.
+
 :::
 
-<1>8. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>5--<1>7 give the canonical form, rank, and signature.
+
 :::
 
-<1>9. The coordinate change from old coordinates $x$ to canonical coordinates
+:::
+
+::: pf-step
+
+The coordinate change from old coordinates $x$ to canonical coordinates
 $u$ is
 $$
 u=Cx,
@@ -152,11 +211,18 @@ C=
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This matrix encodes exactly the three equations in step <1>5.
+
 :::
 
-<1>10. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 x=P u,
 $$
@@ -173,7 +239,9 @@ P=C^{-1}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>5,
 $$
 x_3=u_3,
@@ -188,9 +256,14 @@ x_1=\frac{u_1}{\sqrt2}-x_2
 \frac{u_1}{\sqrt2}-u_2+2u_3.
 $$
 These relations are the rows of the displayed matrix $P$.
+
 :::
 
-<1>11. In matrix form, if
+:::
+
+::: pf-step
+
+In matrix form, if
 $$
 Q=
 \begin{pmatrix}
@@ -204,7 +277,9 @@ $$
 \boxed{P^TQP=I_3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The identity
 $$
 f(x)=x^TQx=u^Tu
@@ -217,18 +292,29 @@ for every $u$. Hence
 $$
 P^TQP=I_3.
 $$
+
 :::
 
-<1>12. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Step <1>10 gives the transition matrix from canonical coordinates to the
 original basis, while step <1>9 gives the inverse coordinate transformation.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>8 and <1>12 establish parts (a) and (b).
+
 :::
+
 :::

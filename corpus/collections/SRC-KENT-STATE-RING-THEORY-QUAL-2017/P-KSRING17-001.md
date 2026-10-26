@@ -53,13 +53,18 @@ Give an example of each of the following.
 (q) A non-commutative ring with exactly two maximal ideals.
 :::
 
-::: {.solution}
-<1>1. For part (a), take
+::: pf
+
+::: pf-step
+
+For part (a), take
 $$
 \boxed{x^3-x+1\in\FF_3[x].}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A cubic over a field is reducible if and only if it has a root in that field. At the three elements of $\FF_3$,
 $$
 f(0)=1,
@@ -69,14 +74,21 @@ f(1)=1,
 f(2)=8-2+1=7\equiv1\pmod3.
 $$
 Thus $f$ has no root in $\FF_3$ and is irreducible.
+
 :::
 
-<1>2. For part (b), take
+:::
+
+::: pf-step
+
+For part (b), take
 $$
 \boxed{2x+2\in\ZZ[x].}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In $\ZZ[x]$,
 $$
 2x+2
@@ -84,14 +96,21 @@ $$
 2(x+1),
 $$
 and neither factor is a unit, so the polynomial is reducible. In $\QQ[x]$, the constant $2$ is a unit and $2x+2$ has degree $1$, so it is irreducible.
+
 :::
 
-<1>3. For part (c), take
+:::
+
+::: pf-step
+
+For part (c), take
 $$
 \boxed{M_2(\FF_p).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Its characteristic is $p$ because scalar addition is entrywise over $\FF_p$. It is noncommutative for $2\times2$ matrices; for example,
 $$
 E_{12}E_{21}
@@ -102,14 +121,21 @@ E_{22}
 =
 E_{21}E_{12}.
 $$
+
 :::
 
-<1>4. For part (d), take
+:::
+
+::: pf-step
+
+For part (d), take
 $$
 \boxed{\ZZ/9\ZZ.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The units modulo $9$ are exactly the residue classes relatively prime to $9$:
 $$
 1,2,4,5,7,8.
@@ -119,14 +145,21 @@ $$
 \varphi(9)=6
 $$
 units.
+
 :::
 
-<1>5. For part (e), take
+:::
+
+::: pf-step
+
+For part (e), take
 $$
 \boxed{M_2(\QQ).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring is infinite and noncommutative. A full matrix ring over a field is simple: any nonzero two-sided ideal containing a nonzero matrix contains a matrix unit after multiplication on the left and right by suitable matrix units, and hence contains every matrix unit. Therefore its only two-sided ideals are
 $$
 0
@@ -134,23 +167,37 @@ $$
 M_2(\QQ).
 $$
 Thus it has finitely many ideals.
+
 :::
 
-<1>6. For part (f), take
+:::
+
+::: pf-step
+
+For part (f), take
 $$
 \boxed{M_2(\FF_p(t)).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The rational-function field $\FF_p(t)$ is infinite and has characteristic $p$. Hence its $2\times2$ matrix ring is infinite, has characteristic $p$, and is noncommutative.
+
 :::
 
-<1>7. For part (g), take
+:::
+
+::: pf-step
+
+For part (g), take
 $$
 \boxed{\ZZ[\sqrt{-5}].}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is an integral domain because it is a subring of the field $\QQ(\sqrt{-5})$.
 Use the multiplicative norm
 $$
@@ -173,14 +220,21 @@ $$
 (1+\sqrt{-5})(1-\sqrt{-5}).
 $$
 The only units have norm $1$, hence are $\pm1$. The irreducibles in the two factorizations are therefore not associates. Thus factorization is not unique, so the domain is not a UFD.
+
 :::
 
-<1>8. For part (h), take
+:::
+
+::: pf-step
+
+For part (h), take
 $$
 \boxed{\QQ[x,y].}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A polynomial ring over a field is a UFD, and adjoining another indeterminate preserves the UFD property, so $\QQ[x,y]$ is a UFD.
 
 It is not a PID. Indeed, if
@@ -192,9 +246,14 @@ $$
 (x,y)=\QQ[x,y],
 $$
 contrary to the fact that every element of $(x,y)$ has zero constant term.
+
 :::
 
-<1>9. For part (i), let
+:::
+
+::: pf-step
+
+For part (i), let
 $$
 \boxed{
 R
@@ -204,7 +263,9 @@ R
 $$
 Then $R$ is a PID but is not a Euclidean domain.
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 \omega
@@ -290,14 +351,21 @@ $$
 3.
 $$
 Hence $R$ is not Euclidean.
+
 :::
 
-<1>10. For part (j), take
+:::
+
+::: pf-step
+
+For part (j), take
 $$
 \boxed{\FF_2[x].}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For nonzero polynomials $f,g\in\FF_2[x]$, polynomial division gives
 $$
 f=qg+r,
@@ -307,22 +375,34 @@ r=0
 \deg r<\deg g.
 $$
 Thus degree is a Euclidean function. The ring is neither a field nor the ring of integers.
+
 :::
 
-<1>11. For part (k), take
+:::
+
+::: pf-step
+
+For part (k), take
 $$
 \boxed{M_2(\FF_2).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring has
 $$
 2^4=16
 $$
 elements and is noncommutative by the matrix-unit computation in step <1>3.
+
 :::
 
-<1>12. For part (l), take
+:::
+
+::: pf-step
+
+For part (l), take
 $$
 \boxed{
 R
@@ -337,7 +417,9 @@ P_n
 (x_1,\ldots,x_n).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient is
 $$
 R/P_n
@@ -361,9 +443,14 @@ P_n
 P_{n+1}
 $$
 for every $n$.
+
 :::
 
-<1>13. For part (m), take
+:::
+
+::: pf-step
+
+For part (m), take
 $$
 \boxed{
 (x)
@@ -372,7 +459,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ideal is nonzero. Moreover,
 $$
 \QQ[x,y]/(x)
@@ -380,16 +469,23 @@ $$
 \QQ[y],
 $$
 which is an integral domain, so $(x)$ is prime. The quotient is not a field, so $(x)$ is not maximal.
+
 :::
 
-<1>14. For part (n), take the element
+:::
+
+::: pf-step
+
+For part (n), take the element
 $$
 \boxed{
 2\in\ZZ[\sqrt{-5}].
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7, $2$ is irreducible. It is not prime because
 $$
 2
@@ -405,25 +501,39 @@ $$
 2(a+b\sqrt{-5})
 $$
 would force the integer coefficient $1$ to be even. Thus $2$ is irreducible but not prime in this commutative ring.
+
 :::
 
-<1>15. The same example answers part (o):
+:::
+
+::: pf-step
+
+The same example answers part (o):
 $$
 \boxed{
 2\in\ZZ[\sqrt{-5}].
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring $\ZZ[\sqrt{-5}]$ is an integral domain, and step <1>14 proves that $2$ is irreducible but not prime.
+
 :::
 
-<1>16. For part (p), take
+:::
+
+::: pf-step
+
+For part (p), take
 $$
 \boxed{\ZZ/4\ZZ.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Its ideals are
 $$
 (0),
@@ -433,9 +543,14 @@ $$
 \ZZ/4\ZZ.
 $$
 Thus $(2)$ is its unique maximal ideal. The ring is not a field because the nonzero class of $2$ is not invertible.
+
 :::
 
-<1>17. For part (q), take
+:::
+
+::: pf-step
+
+For part (q), take
 $$
 \boxed{
 M_2(\FF_2)
@@ -444,7 +559,9 @@ M_2(\FF_2).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 A=M_2(\FF_2).
@@ -474,11 +591,15 @@ A\times0,
 0\times A.
 $$
 The last two are maximal because the corresponding quotients are each isomorphic to the simple ring $A$. Thus the ring has exactly two maximal two-sided ideals.
+
 :::
 
-<1>18. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>17 provide and justify examples for parts (a)--(q), respectively.
+
 :::
+
 :::

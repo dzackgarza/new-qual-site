@@ -19,8 +19,11 @@ audit:
 Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the same identity) then S is an integral extension of R if every element of S satisfies some monic polynomial with coefficients in R. Prove that if $R \subseteq S \subseteq T$ are commutative rings with the same identity, then S is integral over R and T is integral over S if and only if T is integral over R.
 :::
 
-::: {.solution}
-<1>1. Assume first that
+::: pf
+
+::: pf-step
+
+Assume first that
 $$
 T
 $$
@@ -37,7 +40,9 @@ $$
 R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every element
 $$
 s\in S
@@ -56,11 +61,18 @@ R,
 $$
 the element $s$ satisfies a monic polynomial with coefficients in $R$.
 Thus every element of $S$ is integral over $R$.
+
 :::
 
-<1>2. Under the same hypothesis, $T$ is integral over $S$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Under the same hypothesis, $T$ is integral over $S$.
+
+
+::: pf-proof
+
 Let
 $$
 t\in T.
@@ -85,9 +97,14 @@ S[X].
 $$
 Hence $t$ is integral over $S$.
 Since $t$ was arbitrary, $T$ is integral over $S$.
+
 :::
 
-<1>3. Now assume conversely that
+:::
+
+::: pf-step
+
+Now assume conversely that
 $$
 S
 $$
@@ -108,11 +125,18 @@ $$
 t\in T.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 It suffices to prove that this arbitrary element $t$ is integral over $R$.
+
 :::
 
-<1>4. Since $t$ is integral over $S$, there exist
+:::
+
+::: pf-step
+
+Since $t$ is integral over $S$, there exist
 $$
 n\ge1
 $$
@@ -135,11 +159,18 @@ s_0
 0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of integrality of $t$ over $S$.
+
 :::
 
-<1>5. Set
+:::
+
+::: pf-step
+
+Set
 $$
 A
 \coloneqq
@@ -147,7 +178,9 @@ R[s_0,\ldots,s_{n-1}].
 $$
 Then $A$ is finitely generated as an $R$-module.
 
-::: {.proof}
+
+::: pf-proof
+
 Each coefficient
 $$
 s_i\in S
@@ -191,11 +224,18 @@ A
 R[s_0,\ldots,s_{n-1}]
 $$
 is finitely generated as an $R$-module.
+
 :::
 
-<1>6. The element $t$ is integral over $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $t$ is integral over $A$.
+
+
+::: pf-proof
+
 The monic relation in step <1>4 has all coefficients
 $$
 s_i
@@ -208,9 +248,14 @@ Therefore $t$ satisfies a monic polynomial in
 $$
 A[X].
 $$
+
 :::
 
-<1>7. The ring
+:::
+
+::: pf-step
+
+The ring
 $$
 B
 \coloneqq
@@ -218,7 +263,9 @@ A[t]
 $$
 is finitely generated as an $A$-module.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, $t$ is integral over $A$.
 Using the monic equation from step <1>4, every power
 $$
@@ -244,11 +291,18 @@ A\cdot t
 +
 A\cdot t^{n-1}.
 $$
+
 :::
 
-<1>8. The ring $B$ is finitely generated as an $R$-module.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $B$ is finitely generated as an $R$-module.
+
+
+::: pf-proof
+
 By step <1>5, choose finitely many $R$-module generators
 $$
 a_1,\ldots,a_r
@@ -265,12 +319,19 @@ a_i b_j
 $$
 generate $B$ as an $R$-module.
 Indeed, an arbitrary element of $B$ is an $A$-linear combination of the $b_j$, and each coefficient in $A$ is an $R$-linear combination of the $a_i$.
+
 :::
 
-<1>9. Regard $B$ as an $R[t]$-module by multiplication.
+:::
+
+::: pf-step
+
+Regard $B$ as an $R[t]$-module by multiplication.
 Then $B$ is faithful as an $R[t]$-module.
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 R[t]\subseteq A[t]=B.
@@ -294,9 +355,14 @@ f(t)
 $$
 in $B$.
 Therefore the annihilator of $B$ in $R[t]$ is zero, so the module is faithful.
+
 :::
 
-<1>10. Choose $R$-module generators
+:::
+
+::: pf-step
+
+Choose $R$-module generators
 $$
 m_1,\ldots,m_N
 $$
@@ -312,7 +378,9 @@ $$
 a_{ij}\in R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Finite generation of $B$ over $R$ was proved in step <1>8.
 Because
 $$
@@ -323,9 +391,14 @@ $$
 t m_j\in B.
 $$
 Hence it can be expressed as an $R$-linear combination of the chosen generators.
+
 :::
 
-<1>11. Let
+:::
+
+::: pf-step
+
+Let
 $$
 A_0
 \coloneqq
@@ -339,7 +412,9 @@ $$
 $$
 annihilates every generator $m_j$.
 
-::: {.proof}
+
+::: pf-proof
+
 The relations from step <1>10 can be written as
 $$
 (tI_N-A_0)\mathbf m=0,
@@ -373,15 +448,22 @@ $$
 0.
 $$
 Thus the determinant annihilates each generator.
+
 :::
 
-<1>12. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \det(tI_N-A_0)=0
 $$
 in $B$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>11, the element
 $$
 \det(tI_N-A_0)
@@ -394,9 +476,14 @@ Therefore
 $$
 \det(tI_N-A_0)=0.
 $$
+
 :::
 
-<1>13. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 \chi(X)
 \coloneqq
@@ -407,7 +494,9 @@ $$
 \chi(t)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant
 $$
 \det(XI_N-A_0)
@@ -426,11 +515,18 @@ $$
 =
 0.
 $$
+
 :::
 
-<1>14. Therefore $t$ is integral over $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $t$ is integral over $R$.
+
+
+::: pf-proof
+
 Step <1>13 gives a monic polynomial
 $$
 \chi(X)\in R[X]
@@ -440,11 +536,18 @@ $$
 \chi(t)=0.
 $$
 This is exactly the definition of integrality of $t$ over $R$.
+
 :::
 
-<1>15. Therefore $T$ is integral over $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $T$ is integral over $R$.
+
+
+::: pf-proof
+
 The element
 $$
 t\in T
@@ -459,9 +562,14 @@ is integral over
 $$
 R.
 $$
+
 :::
 
-<1>16. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 \bigl(S\text{ integral over }R
@@ -472,7 +580,9 @@ T\text{ integral over }R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 prove the reverse implication from
 $$
 T/R
@@ -484,11 +594,15 @@ S/R
 T/S.
 $$
 Steps <1>3--<1>15 prove transitivity.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>16 is the required equivalence.
+
 :::
+
 :::

@@ -27,8 +27,11 @@ Show the following.
 (c) If every irreducible ideal of R is a prime ideal, then 0 is the only nilpotent element of R.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 P
 $$
@@ -47,11 +50,18 @@ a\in I\setminus J,
 b\in J\setminus I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the meaning of incomparability under inclusion.
+
 :::
 
-<1>2. Under the assumptions of step <1>1,
+:::
+
+::: pf-step
+
+Under the assumptions of step <1>1,
 $$
 a\notin P,
 \qquad
@@ -62,7 +72,9 @@ $$
 ab\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 P=I\cap J,
@@ -106,11 +118,18 @@ ab\in I\cap J
 =
 P.
 $$
+
 :::
 
-<1>3. Every prime ideal is irreducible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every prime ideal is irreducible.
+
+
+::: pf-proof
+
 If
 $$
 P=I\cap J
@@ -128,9 +147,14 @@ Hence no such decomposition exists, and
 $$
 \boxed{P\text{ is irreducible}.}
 $$
+
 :::
 
-<1>4. Fix
+:::
+
+::: pf-step
+
+Fix
 $$
 0\ne x\in R
 $$
@@ -146,7 +170,9 @@ $$
 ordered by inclusion.
 Then $\mathcal P_x$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 x\ne0,
@@ -159,11 +185,18 @@ Thus
 $$
 (0)\in\mathcal P_x.
 $$
+
 :::
 
-<1>5. Every chain in $\mathcal P_x$ has an upper bound in $\mathcal P_x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every chain in $\mathcal P_x$ has an upper bound in $\mathcal P_x$.
+
+
+::: pf-proof
+
 Let
 $$
 \mathcal C
@@ -203,9 +236,14 @@ $$
 U\in\mathcal P_x.
 $$
 Clearly every member of the chain lies in $U$, so $U$ is an upper bound.
+
 :::
 
-<1>6. There exists an ideal
+:::
+
+::: pf-step
+
+There exists an ideal
 $$
 I_x
 $$
@@ -214,17 +252,26 @@ $$
 x\notin I_x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5, Zorn's lemma applies to $\mathcal P_x$.
 Hence there exists a maximal element
 $$
 I_x\in\mathcal P_x.
 $$
+
 :::
 
-<1>7. The ideal $I_x$ is irreducible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I_x$ is irreducible.
+
+
+::: pf-proof
+
 Suppose
 $$
 I_x=J\cap K.
@@ -259,26 +306,40 @@ In particular, $I_x$ cannot be written as an intersection of two incomparable id
 $$
 \boxed{I_x\text{ is irreducible}.}
 $$
+
 :::
 
-<1>8. Assume every irreducible ideal of $R$ is prime.
+:::
+
+::: pf-step
+
+Assume every irreducible ideal of $R$ is prime.
 Suppose, for contradiction, that
 $$
 0\ne x\in R
 $$
 is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 This sets up the contradiction argument for part (c).
+
 :::
 
-<1>9. Let $I_x$ be the irreducible ideal from steps <1>6--<1>7.
+:::
+
+::: pf-step
+
+Let $I_x$ be the irreducible ideal from steps <1>6--<1>7.
 Then $I_x$ is prime and
 $$
 x\notin I_x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By construction,
 $$
 x\notin I_x.
@@ -290,15 +351,22 @@ $$
 I_x
 $$
 is prime.
+
 :::
 
-<1>10. The nilpotence of $x$ forces
+:::
+
+::: pf-step
+
+The nilpotence of $x$ forces
 $$
 x\in I_x,
 $$
 a contradiction.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 n\ge1
@@ -326,9 +394,14 @@ $$
 x\in I_x.
 $$
 This contradicts step <1>9.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 0
@@ -336,13 +409,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>8--<1>10 show that no nonzero nilpotent element can exist.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), steps <1>4--<1>7 prove part (b), and step <1>11 proves part (c).
+
 :::
+
 :::

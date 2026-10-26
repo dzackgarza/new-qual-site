@@ -27,7 +27,6 @@ Consider the matrix $A = \left[ \begin{array} { l l } { a } & { b } \\ { c } & {
 (d) Show that this decomposition is unique.
 :::
 
-::: {.solution}
 Write
 $$
 g_1=
@@ -41,7 +40,11 @@ $$
 r=\sqrt{a^2+c^2}>0.
 $$
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 $$
 R=
 \frac1r
@@ -52,7 +55,9 @@ c&a
 $$
 Then $R$ is a rotation matrix.
 
-::: {.proof}
+
+::: pf-proof
+
 Its columns are orthonormal because
 $$
 a^2+c^2=r^2,
@@ -65,16 +70,23 @@ $$
 =1.
 $$
 Thus $R\in SO(2)$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 R^{-1}g_1
 =
 \begin{pmatrix}r\\0\end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 R^{-1}=R^T
@@ -97,9 +109,14 @@ a^2+c^2\\
 =
 \begin{pmatrix}r\\0\end{pmatrix}.
 $$
+
 :::
 
-<1>3. The transformed second column is
+:::
+
+::: pf-step
+
+The transformed second column is
 $$
 R^{-1}g_2
 =
@@ -109,7 +126,9 @@ R^{-1}g_2
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives first component $(ab+cd)/r$. The second is
 $$
 \frac{-cb+ad}{r}
@@ -119,16 +138,28 @@ $$
 \frac1r,
 $$
 because $\det A=1$.
+
 :::
 
-<1>4. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>1--<1>3 construct the required rotation and describe its action on
 both columns.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 $$
 P^{-1}
 =
@@ -146,7 +177,9 @@ $$
 P^{-1}R^{-1}g_1=e_1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant is $r^{-1}r=1$. By step <1>2,
 $$
 P^{-1}
@@ -154,9 +187,14 @@ P^{-1}
 =
 \begin{pmatrix}1\\0\end{pmatrix}.
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 P^{-1}R^{-1}g_2
 =
@@ -165,7 +203,9 @@ P^{-1}R^{-1}g_2
 x=\frac{ab+cd}{r^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply $P^{-1}$ to the vector in step <1>3:
 $$
 \begin{pmatrix}
@@ -182,16 +222,28 @@ r^{-1}&0\\
 1
 \end{pmatrix}.
 $$
+
 :::
 
-<1>7. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>5--<1>6 give the required diagonal transformation and the claimed
 coordinates of the second column.
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 $$
 T^{-1}
 =
@@ -212,7 +264,9 @@ T^{-1}
 e_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 \begin{pmatrix}
@@ -233,14 +287,21 @@ $$
 =
 \begin{pmatrix}0\\1\end{pmatrix}.
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 T^{-1}P^{-1}R^{-1}A=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $A$ are $g_1,g_2$. By steps <1>5--<1>6, the first two inverse
 steps send those columns to
 $$
@@ -250,9 +311,14 @@ e_1
 $$
 Step <1>8 sends these to $e_1,e_2$, respectively. Hence the resulting matrix
 is the identity.
+
 :::
 
-<1>10. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{A=RPT},
 $$
@@ -283,20 +349,36 @@ T=
 x=\frac{ab+cd}{a^2+c^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Invert the identity in step <1>9. The formulas for $P$ and $T$ are the
 inverses of those in steps <1>5 and <1>8, and $r^2=a^2+c^2$.
+
 :::
 
-<1>11. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 Steps <1>8--<1>10 construct the required shear and yield the decomposition.
+
 :::
 
-<1>12. The factor $R$ is uniquely determined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The factor $R$ is uniquely determined.
+
+
+::: pf-proof
+
 In any decomposition of the required form, the first column of $A$ is
 $$
 A e_1=RPT e_1.
@@ -315,11 +397,18 @@ g_1=rRe_1.
 $$
 Thus $r=\|g_1\|$ and $Re_1=g_1/\|g_1\|$. A rotation in $SO(2)$ is uniquely
 determined by its first column, so $R$ is unique.
+
 :::
 
-<1>13. The factor $P$ is uniquely determined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The factor $P$ is uniquely determined.
+
+
+::: pf-proof
+
 Step <1>12 fixes
 $$
 r=\|g_1\|=\sqrt{a^2+c^2}.
@@ -329,11 +418,18 @@ entry $r$ is uniquely
 $$
 P=\operatorname{diag}(r,r^{-1}).
 $$
+
 :::
 
-<1>14. The factor $T$ is uniquely determined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The factor $T$ is uniquely determined.
+
+
+::: pf-proof
+
 Once $R$ and $P$ are fixed,
 $$
 T=P^{-1}R^{-1}A.
@@ -342,28 +438,46 @@ Equivalently, step <1>6 uniquely determines its shear parameter
 $$
 x=\frac{ab+cd}{r^2}.
 $$
+
 :::
 
-<1>15. Therefore the decomposition
+:::
+
+::: pf-step
+
+Therefore the decomposition
 $$
 \boxed{A=RPT}
 $$
 with $R\in SO(2)$, $P=\operatorname{diag}(r,r^{-1})$ for $r>0$, and
 $T=\begin{pmatrix}1&x\\0&1\end{pmatrix}$ is unique.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>12--<1>14 show uniqueness of the three factors successively.
+
 :::
 
-<1>16. Part (d) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (d) follows.
+
+
+::: pf-proof
+
 This is step <1>15.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4, <1>7, <1>11, and <1>16 establish parts (a)--(d).
+
 :::
+
 :::

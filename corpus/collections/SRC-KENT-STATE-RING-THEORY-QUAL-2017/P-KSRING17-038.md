@@ -19,19 +19,24 @@ audit:
 Show that if p is a prime such that $p \equiv 1 { \ : } ( \mathrm { m o d \ : } 6 )$ , then $x ^ { 3 } + 1$ splits in $\mathbb { Z } _ { p } [ x ]$
 :::
 
-::: {.solution}
 Assume
 $$
 p\equiv1\pmod6.
 $$
 
-<1>1. The integer
+::: pf
+
+::: pf-step
+
+The integer
 $$
 p-1
 $$
 is divisible by $3$.
 
-::: {.proof}
+
+::: pf-proof
+
 The congruence
 $$
 p\equiv1\pmod6
@@ -41,9 +46,14 @@ $$
 p-1
 $$
 is divisible by $6$, hence in particular by $3$.
+
 :::
 
-<1>2. The multiplicative group
+:::
+
+::: pf-step
+
+The multiplicative group
 $$
 \FF_p^\times
 $$
@@ -53,7 +63,9 @@ $$
 $$
 of order $3$.
 
-::: {.proof}
+
+::: pf-proof
+
 The group
 $$
 \FF_p^\times
@@ -71,9 +83,14 @@ $$
 \omega\in\FF_p^\times
 $$
 of order $3$.
+
 :::
 
-<1>3. The elements
+:::
+
+::: pf-step
+
+The elements
 $$
 1,\omega,\omega^2
 $$
@@ -83,7 +100,9 @@ t^3-1
 $$
 in $\FF_p$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 \omega^3=1,
@@ -103,9 +122,14 @@ $$
 t^3-1
 $$
 has degree $3$, so it has at most three roots in the field $\FF_p$. Hence these are all of its roots.
+
 :::
 
-<1>4. The elements
+:::
+
+::: pf-step
+
+The elements
 $$
 -1,
 \qquad
@@ -118,7 +142,9 @@ $$
 x^3+1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 \eta^3=1,
@@ -136,9 +162,14 @@ $$
 \eta\in\{1,\omega,\omega^2\}.
 $$
 The three negatives remain distinct.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 x^3+1
@@ -151,7 +182,9 @@ $$
 \FF_p[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, the monic cubic
 $$
 x^3+1
@@ -161,11 +194,15 @@ $$
 -1,-\omega,-\omega^2.
 $$
 A monic degree-$3$ polynomial is therefore the product of the corresponding monic linear factors.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 shows that $x^3+1$ splits completely over $\FF_p$.
+
 :::
+
 :::

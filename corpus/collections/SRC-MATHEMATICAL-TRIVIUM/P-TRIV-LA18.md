@@ -23,7 +23,6 @@ Consider the rotation by an angle θ around a line determined by a unit radius-v
 (b) Relate the trace of this matrix to the angle θ.
 :::
 
-::: {.solution}
 Let
 $$
 n=
@@ -42,7 +41,11 @@ c=\cos\theta,
 s=\sin\theta.
 $$
 
-<1>1. Every vector $v\in\mathbb R^3$ decomposes as
+::: pf
+
+::: pf-step
+
+Every vector $v\in\mathbb R^3$ decomposes as
 $$
 v=v_\parallel+v_\perp,
 $$
@@ -55,12 +58,19 @@ $$
 v_\perp=v-(n\cdot v)n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $n$ is a unit vector, $(n\cdot v)n$ is the orthogonal projection of
 $v$ onto the rotation axis, and the difference is perpendicular to $n$.
+
 :::
 
-<1>2. A right-handed rotation by $\theta$ about the axis $n$ sends $v$ to
+:::
+
+::: pf-step
+
+A right-handed rotation by $\theta$ about the axis $n$ sends $v$ to
 $$
 Rv
 =
@@ -71,16 +81,23 @@ c,v_\perp
 s(n\times v_\perp).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The parallel component is fixed. In the oriented plane $n^\perp$, ordinary
 planar rotation sends a vector $w$ to
 $$
 c,w+s(n\times w).
 $$
 Apply this to $w=v_\perp$.
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 $$
 n\times v_\parallel=0,
 $$
@@ -95,7 +112,9 @@ c,v
 s(n\times v).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 v_\perp=v-v_\parallel
@@ -104,9 +123,14 @@ into step <1>2 and use
 $$
 v_\parallel=(n\cdot v)n.
 $$
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 $$
 [n]_\times
 =
@@ -121,11 +145,18 @@ $$
 [n]_\times v=n\times v.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the coordinate formula for the cross product.
+
 :::
 
-<1>5. The rotation matrix is
+:::
+
+::: pf-step
+
+The rotation matrix is
 $$
 \boxed{
 R
@@ -138,7 +169,9 @@ s[n]_\times.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The three terms in step <1>3 are respectively the actions of
 $$
 cI,
@@ -147,9 +180,14 @@ cI,
 \qquad
 s[n]_\times.
 $$
+
 :::
 
-<1>6. Explicitly,
+:::
+
+::: pf-step
+
+Explicitly,
 $$
 \boxed{
 R=
@@ -161,7 +199,9 @@ c+(1-c)n_x^2&(1-c)n_xn_y-sn_z&(1-c)n_xn_z+sn_y\\
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the matrix expression in step <1>5 using
 $$
 nn^T
@@ -173,20 +213,34 @@ n_zn_x&n_zn_y&n_z^2
 \end{pmatrix}
 $$
 and the matrix from step <1>4.
+
 :::
 
-<1>7. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>5--<1>6 give the rotation matrix.
+
 :::
 
-<1>8. The trace is
+:::
+
+::: pf-step
+
+The trace is
 $$
 \boxed{\operatorname{Tr}R=1+2\cos\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take traces in step <1>5:
 $$
 \operatorname{Tr}R
@@ -213,9 +267,14 @@ $$
 =
 1+2c.
 $$
+
 :::
 
-<1>9. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 \boxed{
 \cos\theta
@@ -224,19 +283,32 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve step <1>8 for $\cos\theta$.
+
 :::
 
-<1>10. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>8--<1>9 give the requested relation.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7 and <1>10 establish parts (a) and (b), respectively.
+
 :::
+
 :::

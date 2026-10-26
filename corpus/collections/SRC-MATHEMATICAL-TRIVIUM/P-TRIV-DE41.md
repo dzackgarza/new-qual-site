@@ -19,8 +19,11 @@ audit:
 Find the most general solution of $\left( { \frac { \partial } { \partial x } } + { \frac { \partial } { \partial y } } + { \frac { \partial } { \partial z } } \right) f ( x , y , z ) = x - y$
 :::
 
-::: {.solution}
-<1>1. The characteristic curves satisfy
+::: pf
+
+::: pf-step
+
+The characteristic curves satisfy
 \[
 \frac{dx}{ds}=\frac{dy}{ds}=\frac{dz}{ds}=1.
 \]
@@ -32,11 +35,18 @@ Consequently
 \]
 are constant along each characteristic.
 
-::: {.proof}
+
+::: pf-proof
+
 The transport vector field is $\partial_x+\partial_y+\partial_z$. Along its integral curves, $x'=y'=z'=1$, so $(y-x)'=(z-x)'=0$.
+
 :::
 
-<1>2. Along a characteristic with fixed $(\eta,\zeta)$, one has
+:::
+
+::: pf-step
+
+Along a characteristic with fixed $(\eta,\zeta)$, one has
 \[
 x-y=-\eta,
 \]
@@ -45,32 +55,48 @@ and therefore
 \frac{df}{dx}=-\eta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using $x$ itself as the characteristic parameter,
 \[
 \frac{df}{dx}=f_x+f_y+f_z.
 \]
 The PDE identifies this with $x-y$, while $y=x+\eta$ by step <1>1.
+
 :::
 
-<1>3. Integration along the characteristic gives
+:::
+
+::: pf-step
+
+Integration along the characteristic gives
 \[
 f=-\eta x+C(\eta,\zeta),
 \]
 where $C$ is an arbitrary function of two variables.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 has constant right side along a fixed characteristic, so integration in $x$ gives the displayed formula. The integration constant may depend arbitrarily on the two independent characteristic invariants.
+
 :::
 
-<1>4. Hence the most general solution is
+:::
+
+::: pf-step
+
+Hence the most general solution is
 \[
 \boxed{
 f(x,y,z)=x(x-y)+\Phi(y-x,z-x)},
 \]
 where $\Phi$ is arbitrary.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $\eta=y-x$ and $\zeta=z-x$ into step <1>3. Conversely,
 \[
 (\partial_x+\partial_y+\partial_z)\Phi(y-x,z-x)=0
@@ -80,11 +106,15 @@ because both arguments are characteristic invariants, while
 (\partial_x+\partial_y+\partial_z)\bigl(x(x-y)\bigr)=x-y.
 \]
 Thus every displayed function solves the PDE.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives and verifies the general characteristic solution.
+
 :::
+
 :::

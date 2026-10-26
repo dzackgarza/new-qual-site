@@ -25,8 +25,11 @@ OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z +
 (d) $0 < | z + 1 | < 1 .$
 :::
 
-::: {.solution}
-<1>1. The partial-fraction decomposition is
+::: pf
+
+::: pf-step
+
+The partial-fraction decomposition is
 $$
 f(z)
 =
@@ -35,7 +38,9 @@ f(z)
 \frac1{z+2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \frac1{z+1}
@@ -46,9 +51,14 @@ $$
 =
 \frac1{(z+1)(z+2)}.
 $$
+
 :::
 
-<1>2. For $|z|<1$,
+:::
+
+::: pf-step
+
+For $|z|<1$,
 $$
 \frac1{z+1}
 =
@@ -62,7 +72,9 @@ $$
 \frac{(-1)^n}{2^{n+1}}z^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 \frac1{1+z}
@@ -80,9 +92,14 @@ $$
 \left(-\frac z2\right)^n,
 $$
 valid for $|z|<2$.
+
 :::
 
-<1>3. Therefore, for $|z|<1$,
+:::
+
+::: pf-step
+
+Therefore, for $|z|<1$,
 $$
 \boxed{
 f(z)
@@ -95,11 +112,18 @@ f(z)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the two series in step <1>2 using step <1>1.
+
 :::
 
-<1>4. For $1<|z|<2$,
+:::
+
+::: pf-step
+
+For $1<|z|<2$,
 $$
 \frac1{z+1}
 =
@@ -114,7 +138,9 @@ $$
 \frac{(-1)^n}{2^{n+1}}z^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the first term,
 $$
 \frac1{z+1}
@@ -129,9 +155,14 @@ which converges when $|z|>1$.
 
 The second expansion is the one from step <1>2 and converges when $|z|<2$.
 Thus both are valid simultaneously on $1<|z|<2$.
+
 :::
 
-<1>5. Hence, for $1<|z|<2$,
+:::
+
+::: pf-step
+
+Hence, for $1<|z|<2$,
 $$
 \boxed{
 f(z)
@@ -144,11 +175,18 @@ f(z)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>4 into the partial fractions from step <1>1.
+
 :::
 
-<1>6. For $|z|>2$,
+:::
+
+::: pf-step
+
+For $|z|>2$,
 $$
 \frac1{z+1}
 =
@@ -163,7 +201,9 @@ $$
 (-2)^n z^{-n-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first series is from step <1>4. For the second,
 $$
 \frac1{z+2}
@@ -175,9 +215,14 @@ $$
 \left(-\frac2z\right)^n,
 $$
 which converges for $|z|>2$.
+
 :::
 
-<1>7. Therefore, for $|z|>2$,
+:::
+
+::: pf-step
+
+Therefore, for $|z|>2$,
 $$
 \boxed{
 f(z)
@@ -188,11 +233,18 @@ z^{-n-1}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the two negative-power series in step <1>6.
+
 :::
 
-<1>8. For part (d), set
+:::
+
+::: pf-step
+
+For part (d), set
 $$
 w=z+1.
 $$
@@ -203,7 +255,9 @@ f(z)
 \frac1{w(w+1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 z+1=w
@@ -211,9 +265,14 @@ z+1=w
 z+2=w+1,
 $$
 the displayed identity follows.
+
 :::
 
-<1>9. For $0<|z+1|<1$,
+:::
+
+::: pf-step
+
+For $0<|z+1|<1$,
 $$
 \boxed{
 f(z)
@@ -223,7 +282,9 @@ f(z)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 $$
 f(z)
@@ -238,12 +299,16 @@ $$
 $$
 Multiplying by $w^{-1}$ gives the stated Laurent series. The point $w=0$
 must be excluded because it is a pole.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3, <1>5, <1>7, and <1>9 give the requested Laurent series on all
 four regions.
+
 :::
+
 :::

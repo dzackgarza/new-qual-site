@@ -25,18 +25,28 @@ Let $\sigma _ { i } , i = 1 , 2 , 3$ be the Pauli matrices.
 (c) Calculate $[ \sigma _ { i } , [ \sigma _ { j } , \sigma _ { k } ] ] + [ \sigma _ { j } , [ \sigma _ { k } , \sigma _ { i } ] ] + [ \sigma _ { k } , [ \sigma _ { i } , \sigma _ { j } ] ] .$
 :::
 
-::: {.solution}
-<1>1. The Pauli matrices satisfy
+::: pf
+
+::: pf-step
+
+The Pauli matrices satisfy
 $$
 \sigma_1^2=\sigma_2^2=\sigma_3^2=I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication of each Pauli matrix by itself gives the identity
 matrix.
+
 :::
 
-<1>2. Their cyclic products satisfy
+:::
+
+::: pf-step
+
+Their cyclic products satisfy
 $$
 \sigma_1\sigma_2=i\sigma_3,
 \qquad
@@ -45,7 +55,9 @@ $$
 \sigma_3\sigma_1=i\sigma_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For example,
 $$
 \sigma_1\sigma_2
@@ -67,9 +79,14 @@ i&0\\
 i\sigma_3.
 $$
 The other two identities follow by the same direct multiplication.
+
 :::
 
-<1>3. Reversing the order changes the sign:
+:::
+
+::: pf-step
+
+Reversing the order changes the sign:
 $$
 \sigma_2\sigma_1=-i\sigma_3,
 \qquad
@@ -78,12 +95,19 @@ $$
 \sigma_1\sigma_3=-i\sigma_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This follows by direct multiplication, or by taking the adjoint of the
 identities in step <1>2 and using $\sigma_i^\dagger=\sigma_i$.
+
 :::
 
-<1>4. Therefore, for all $i,j\in\{1,2,3\}$,
+:::
+
+::: pf-step
+
+Therefore, for all $i,j\in\{1,2,3\}$,
 $$
 \boxed{
 \sigma_i\sigma_j
@@ -94,12 +118,19 @@ i\sum_{k=1}^3\varepsilon_{ijk}\sigma_k.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $i=j$, step <1>1 gives the identity. If $i\neq j$, steps <1>2--<1>3
 give the product with the sign determined by the Levi-Civita symbol.
+
 :::
 
-<1>5. The commutator is
+:::
+
+::: pf-step
+
+The commutator is
 $$
 \boxed{
 [\sigma_i,\sigma_j]
@@ -108,21 +139,35 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the formula in step <1>4 with $i,j$ interchanged. The Kronecker
 delta terms cancel, while
 $$
 \varepsilon_{jik}=-\varepsilon_{ijk}.
 $$
+
 :::
 
-<1>6. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>5.
+
 :::
 
-<1>7. The anticommutator is
+:::
+
+::: pf-step
+
+The anticommutator is
 $$
 \boxed{
 \{\sigma_i,\sigma_j\}
@@ -131,23 +176,39 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the formula in step <1>4 to the same formula with $i,j$ interchanged.
 The Levi-Civita terms cancel and the two Kronecker-delta terms add.
+
 :::
 
-<1>8. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>7.
+
 :::
 
-<1>9. Matrix commutators satisfy the Jacobi identity
+:::
+
+::: pf-step
+
+Matrix commutators satisfy the Jacobi identity
 $$
 [X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand all three commutators:
 $$
 \begin{aligned}
@@ -160,9 +221,14 @@ $$
 \end{aligned}
 $$
 Every monomial cancels with its opposite.
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 [\sigma_i,[\sigma_j,\sigma_k]]
@@ -174,7 +240,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>9 with
 $$
 X=\sigma_i,
@@ -183,17 +251,28 @@ Y=\sigma_j,
 \qquad
 Z=\sigma_k.
 $$
+
 :::
 
-<1>11. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 This is step <1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6, <1>8, and <1>11 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

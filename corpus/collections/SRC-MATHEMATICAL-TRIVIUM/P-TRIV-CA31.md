@@ -19,8 +19,11 @@ audit:
 Find an analytic continuation $g ( z )$ of the function $f ( z ) = \int _ { 0 } ^ { \infty } t e ^ { - z t } d t . \ f ( z )$ is defined only for $z > 0$ . What is the domain of $g ( z ) ?$
 :::
 
-::: {.solution}
-<1>1. The integral
+::: pf
+
+::: pf-step
+
+The integral
 $$
 F(z)
 =
@@ -32,7 +35,9 @@ $$
 \operatorname{Re}z>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 \operatorname{Re}z=a>0,
@@ -48,9 +53,14 @@ $$
 \int_0^\infty t e^{-at}\,dt
 $$
 converges.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 \operatorname{Re}z>0,
 $$
@@ -59,7 +69,9 @@ $$
 F(z)=\frac1{z^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate by parts:
 $$
 u=t,
@@ -95,9 +107,14 @@ F(z)
 \end{aligned}
 $$
 The boundary terms vanish because $\operatorname{Re}z>0$.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 g(z)=\frac1{z^2}.
 $$
@@ -106,13 +123,22 @@ $$
 \CC\setminus\{0\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The rational function $1/z^2$ is holomorphic at every nonzero complex number.
+
 :::
 
-<1>4. The function $g$ analytically continues the original function $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ analytically continues the original function $f$.
+
+
+::: pf-proof
+
 For positive real $z$, step <1>2 gives
 $$
 f(z)
@@ -124,24 +150,35 @@ f(z)
 g(z).
 $$
 Thus $g$ agrees with $f$ on the original domain.
+
 :::
 
-<1>5. The maximal domain of this analytic continuation is
+:::
+
+::: pf-step
+
+The maximal domain of this analytic continuation is
 $$
 \boxed{\CC\setminus\{0\}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives analyticity on $\CC\setminus\{0\}$. At $z=0$,
 $$
 g(z)=\frac1{z^2}
 $$
 has a pole of order $2$, so no holomorphic extension through $0$ exists.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4--<1>5 give the analytic continuation and its maximal domain.
+
 :::
+
 :::

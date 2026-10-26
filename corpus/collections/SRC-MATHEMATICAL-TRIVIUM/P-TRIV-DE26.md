@@ -19,16 +19,21 @@ audit:
 The function $K _ { \nu } ( x )$ is the solution of the equation $x ^ { 2 } y ^ { \prime \prime } + x y ^ { \prime } - ( x ^ { 2 } + \nu ^ { 2 } ) y = 0$ that diverges when $x \to 0$ . Find the asymptotic behavior for small x for $\nu \neq 0$ What happens for $\nu = 0 ?$ For the sake of completeness, $K _ { \nu } ( x )$ is called modified Bessel function of the second kind.
 :::
 
-::: {.solution}
 Take $x>0$. Recall that $K_{-\nu}=K_\nu$.
 
-<1>1. For $\nu\ne0$, the indicial equation at $x=0$ is
+::: pf
+
+::: pf-step
+
+For $\nu\ne0$, the indicial equation at $x=0$ is
 \[
 r^2-\nu^2=0,
 \]
 with roots $r=\pm\nu$.
 
-::: {.proof}
+
+::: pf-proof
+
 Insert a Frobenius leading term $y\sim x^r$ into
 \[
 x^2y''+xy'-(x^2+\nu^2)y=0.
@@ -39,15 +44,22 @@ The terms of lowest order are
 =(r^2-\nu^2)x^r.
 \]
 Thus the two local powers are $x^\nu$ and $x^{-\nu}$.
+
 :::
 
-<1>2. If $\nu\ne0$, the divergent branch has leading power $x^{-|\nu|}$, and the standard normalization of $K_\nu$ gives
+:::
+
+::: pf-step
+
+If $\nu\ne0$, the divergent branch has leading power $x^{-|\nu|}$, and the standard normalization of $K_\nu$ gives
 \[
 \boxed{K_\nu(x)\sim 2^{|\nu|-1}\Gamma(|\nu|)x^{-|\nu|}}
 \qquad(x\to0^+).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By $K_{-\nu}=K_\nu$, it suffices to take $\nu>0$. For nonintegral $\nu$,
 \[
 K_\nu(x)=\frac{\pi}{2\sin(\pi\nu)}\bigl(I_{-\nu}(x)-I_\nu(x)\bigr).
@@ -68,16 +80,23 @@ K_\nu(x)\sim\frac12\Gamma(\nu)(x/2)^{-\nu}
 =2^{\nu-1}\Gamma(\nu)x^{-\nu}.
 \]
 The same leading formula at positive integral $\nu$ follows by continuity in the order.
+
 :::
 
-<1>3. For $\nu=0$, the two indicial roots coalesce at $r=0$, and the divergent solution is logarithmic rather than a power:
+:::
+
+::: pf-step
+
+For $\nu=0$, the two indicial roots coalesce at $r=0$, and the divergent solution is logarithmic rather than a power:
 \[
 \boxed{K_0(x)\sim-\log(x/2)-\gamma}
 \qquad(x\to0^+),
 \]
 where $\gamma$ is Euler's constant.
 
-::: {.proof}
+
+::: pf-proof
+
 Use the representation from step <1>2 and take the limit $\nu\to0$. The expansions
 \[
 I_\nu(x)=I_0(x)+O(\nu),
@@ -90,11 +109,15 @@ together with
 (x/2)^\nu=1+\nu\log(x/2)+O(\nu^2)
 \]
 show that the cancellation of the two coincident power branches leaves the logarithmic term $-\log(x/2)-\gamma$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>3 give the requested small-$x$ behavior for nonzero and zero order, respectively.
+
 :::
+
 :::

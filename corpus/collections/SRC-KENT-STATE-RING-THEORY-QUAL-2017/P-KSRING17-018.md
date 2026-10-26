@@ -24,7 +24,6 @@ Show the following.
 (b) The homomorphism in part (a) is surjective if and only if $A + B = R$
 :::
 
-::: {.solution}
 Define
 $$
 \varphi:R\to R/A\times R/B
@@ -36,9 +35,15 @@ $$
 (r+A,r+B).
 $$
 
-<1>1. The map $\varphi$ preserves addition.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ preserves addition.
+
+
+::: pf-proof
+
 For
 $$
 r,s\in R,
@@ -57,11 +62,18 @@ $$
 \varphi(r)+\varphi(s).
 \end{aligned}
 $$
+
 :::
 
-<1>2. The map $\varphi$ preserves multiplication and identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ preserves multiplication and identity.
+
+
+::: pf-proof
+
 For
 $$
 r,s\in R,
@@ -90,14 +102,21 @@ $$
 R/A\times R/B.
 $$
 Hence $\varphi$ is a ring homomorphism.
+
 :::
 
-<1>3. If $\varphi$ is surjective, then
+:::
+
+::: pf-step
+
+If $\varphi$ is surjective, then
 $$
 A+B=R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Assume $\varphi$ is surjective. Then the element
 $$
 (1+A,0+B)
@@ -132,9 +151,14 @@ Since an ideal containing $1$ is the whole ring,
 $$
 A+B=R.
 $$
+
 :::
 
-<1>4. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 A+B=R.
 $$
@@ -149,7 +173,9 @@ $$
 a+b=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equality
 $$
 A+B=R
@@ -168,11 +194,18 @@ a\in A,
 \qquad
 b\in B.
 $$
+
 :::
 
-<1>5. Under the hypothesis of step <1>4, the map $\varphi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+Under the hypothesis of step <1>4, the map $\varphi$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 (r+A,s+B)
@@ -233,9 +266,14 @@ $$
 (r+A,s+B),
 $$
 and $\varphi$ is surjective.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \varphi\text{ is surjective}
@@ -244,13 +282,19 @@ A+B=R.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves the forward implication, and step <1>5 proves the converse.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 prove part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

@@ -24,7 +24,6 @@ Give an example of a field $F$ and a one-to-one ring homomorphism $\varphi : F \
 Verify your example.
 :::
 
-::: {.solution}
 Take
 $$
 \boxed{
@@ -42,9 +41,15 @@ f(t^2).
 }
 $$
 
-<1>1. The map $\varphi$ is a well-defined ring homomorphism.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is a well-defined ring homomorphism.
+
+
+::: pf-proof
+
 An element of $\QQ(t)$ has the form
 $$
 \frac{p(t)}{q(t)}
@@ -72,11 +77,18 @@ $$
 t\longmapsto t^2
 $$
 preserves addition, multiplication, and $1$, so $\varphi$ is a unital ring homomorphism.
+
 :::
 
-<1>2. The map $\varphi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is injective.
+
+
+::: pf-proof
+
 Suppose
 $$
 \varphi\left(\frac{p(t)}{q(t)}\right)=0.
@@ -98,14 +110,21 @@ $$
 \ker\varphi=0,
 $$
 so $\varphi$ is injective.
+
 :::
 
-<1>3. The image of $\varphi$ is contained in
+:::
+
+::: pf-step
+
+The image of $\varphi$ is contained in
 $$
 \QQ(t^2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every image element has the form
 $$
 f(t^2)
@@ -120,9 +139,14 @@ $$
 \subseteq
 \QQ(t^2).
 $$
+
 :::
 
-<1>4. Every element of
+:::
+
+::: pf-step
+
+Every element of
 $$
 \QQ(t^2)
 $$
@@ -133,7 +157,9 @@ $$
 \sigma(t)=-t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 g\in\QQ(t^2),
@@ -156,15 +182,22 @@ h(t^2)
 =
 g.
 $$
+
 :::
 
-<1>5. The element
+:::
+
+::: pf-step
+
+The element
 $$
 t\in F
 $$
 does not lie in $\operatorname{im}\varphi$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \operatorname{im}\varphi
@@ -184,15 +217,27 @@ Thus
 $$
 t\notin\operatorname{im}\varphi.
 $$
+
 :::
 
-<1>6. Therefore $\varphi$ is not surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $\varphi$ is not surjective.
+
+
+::: pf-proof
+
 Step <1>5 exhibits an element of $F$ with no preimage.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 F=\QQ(t),
@@ -202,13 +247,19 @@ F=\QQ(t),
 $$
 is the required example.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 show that $\varphi$ is an injective ring homomorphism, while step <1>6 shows that it is not onto.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 verifies the requested example.
+
 :::
+
 :::

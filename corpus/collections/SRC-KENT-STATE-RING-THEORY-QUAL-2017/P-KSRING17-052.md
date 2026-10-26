@@ -23,10 +23,15 @@ Let R be a non-zero commutative ring with 1.
 (b) Show that the set of nilpotent elements of R is the intersection of all prime ideals.
 :::
 
-::: {.solution}
-<1>1. In part (a), the ideal $P$ is proper.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+In part (a), the ideal $P$ is proper.
+
+
+::: pf-proof
+
 Since $S$ is multiplicative,
 $$
 1\in S.
@@ -43,9 +48,14 @@ Hence
 $$
 P\ne R.
 $$
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 ab\in P
 $$
@@ -59,7 +69,9 @@ P+(a)
 $$
 meets $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 a\notin P,
@@ -76,9 +88,14 @@ then $P+(a)$ would be an ideal disjoint from $S$ properly containing $P$, contra
 $$
 (P+(a))\cap S\ne\varnothing.
 $$
+
 :::
 
-<1>3. If also
+:::
+
+::: pf-step
+
+If also
 $$
 b\notin P,
 $$
@@ -88,11 +105,18 @@ P+(b)
 $$
 meets $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 The proof is identical to step <1>2, with $b$ in place of $a$.
+
 :::
 
-<1>4. Under the assumptions
+:::
+
+::: pf-step
+
+Under the assumptions
 $$
 ab\in P,
 \qquad
@@ -111,7 +135,9 @@ $$
 st\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 s=p+ra,
@@ -142,11 +168,18 @@ Thus
 $$
 st\in P.
 $$
+
 :::
 
-<1>5. The assumptions in step <1>4 are impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumptions in step <1>4 are impossible.
+
+
+::: pf-proof
+
 Since
 $$
 s,t\in S
@@ -167,14 +200,21 @@ contradicting
 $$
 P\cap S=\varnothing.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{P\text{ is prime}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that $P$ is proper. If
 $$
 ab\in P,
@@ -186,9 +226,14 @@ a\in P
 b\in P.
 $$
 Thus $P$ is prime.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \mathcal N
 \coloneqq
@@ -197,7 +242,9 @@ $$
 be the set of nilpotent elements.
 Every prime ideal contains $\mathcal N$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathfrak p
@@ -249,20 +296,32 @@ $$
 \mathcal N\subseteq\mathfrak p
 $$
 for every prime ideal $\mathfrak p$.
+
 :::
 
-<1>8. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \mathcal N
 \subseteq
 \bigcap_{\mathfrak p\text{ prime}}\mathfrak p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>7 after intersecting over all prime ideals.
+
 :::
 
-<1>9. Let
+:::
+
+::: pf-step
+
+Let
 $$
 x\in R
 $$
@@ -277,7 +336,9 @@ $$
 0\notin S_x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 0\in S_x,
@@ -299,9 +360,14 @@ $$
 n\ge1,
 $$
 which would make $x$ nilpotent. This contradicts the choice of $x$.
+
 :::
 
-<1>10. There exists an ideal
+:::
+
+::: pf-step
+
+There exists an ideal
 $$
 P
 $$
@@ -310,7 +376,9 @@ $$
 S_x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \mathcal P_x
@@ -361,11 +429,18 @@ $$
 and it is an upper bound for the chain.
 
 By Zorn's lemma, $\mathcal P_x$ has a maximal element $P$.
+
 :::
 
-<1>11. The ideal $P$ from step <1>10 is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $P$ from step <1>10 is prime.
+
+
+::: pf-proof
+
 The multiplicative set
 $$
 S_x
@@ -374,11 +449,18 @@ does not contain $0$ by step <1>9, and $P$ is maximal among ideals disjoint from
 $$
 P\text{ prime}.
 $$
+
 :::
 
-<1>12. The prime ideal $P$ from step <1>11 does not contain $x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The prime ideal $P$ from step <1>11 does not contain $x$.
+
+
+::: pf-proof
+
 One has
 $$
 x\in S_x.
@@ -391,11 +473,18 @@ Therefore
 $$
 x\notin P.
 $$
+
 :::
 
-<1>13. Hence every non-nilpotent element is omitted by some prime ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence every non-nilpotent element is omitted by some prime ideal.
+
+
+::: pf-proof
+
 Given any non-nilpotent
 $$
 x\in R,
@@ -404,16 +493,23 @@ steps <1>9--<1>12 construct a prime ideal $P$ with
 $$
 x\notin P.
 $$
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \bigcap_{\mathfrak p\text{ prime}}\mathfrak p
 \subseteq
 \mathcal N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 x\notin\mathcal N.
@@ -428,9 +524,14 @@ x\notin
 \bigcap_{\mathfrak p\text{ prime}}\mathfrak p.
 $$
 Taking the contrapositive yields the claimed containment.
+
 :::
 
-<1>15. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 \mathcal N
@@ -439,13 +540,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 gives one inclusion and step <1>14 gives the reverse inclusion.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves part (a), and step <1>15 proves part (b).
+
 :::
+
 :::

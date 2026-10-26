@@ -20,7 +20,6 @@ audit:
 Find the asymptotic behavior as $x \gg 1$
 :::
 
-::: {.solution}
 Write
 $$
 \Phi(z)
@@ -31,12 +30,18 @@ z-\frac1z
 \right).
 $$
 
-<1>1. The saddle points of $\Phi$ are
+::: pf
+
+::: pf-step
+
+The saddle points of $\Phi$ are
 $$
 z=\pm i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \Phi'(z)
@@ -52,20 +57,32 @@ $$
 \iff
 z^2=-1.
 $$
+
 :::
 
-<1>2. For the contour defining $H_\nu^{(1)}$, the relevant saddle is
+:::
+
+::: pf-step
+
+For the contour defining $H_\nu^{(1)}$, the relevant saddle is
 $$
 z_0=i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The contour lies above the negative-real-axis branch cut and may be deformed
 through the upper half-plane without crossing the cut. Hence it passes through
 the upper saddle $i$ rather than the lower saddle $-i$.
+
 :::
 
-<1>3. At the saddle,
+:::
+
+::: pf-step
+
+At the saddle,
 $$
 \Phi(i)=i
 $$
@@ -74,7 +91,9 @@ $$
 \Phi''(i)=-i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 \Phi(i)
@@ -94,9 +113,14 @@ one obtains
 $$
 \Phi''(i)=-i.
 $$
+
 :::
 
-<1>4. A local steepest-descent coordinate at $i$ is
+:::
+
+::: pf-step
+
+A local steepest-descent coordinate at $i$ is
 $$
 z
 =
@@ -106,7 +130,9 @@ e^{-i\pi/4}
 \frac{u}{\sqrt x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 With
 $$
 \delta
@@ -132,9 +158,14 @@ x\frac{-i}{2}
 -\frac{u^2}{2},
 $$
 which is real and negative.
+
 :::
 
-<1>5. Along this local coordinate,
+:::
+
+::: pf-step
+
+Along this local coordinate,
 $$
 x\Phi(z)
 =
@@ -147,7 +178,9 @@ O\left(
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Taylor-expand $\Phi$ at $i$:
 $$
 \Phi(i+\delta)
@@ -159,9 +192,14 @@ $$
 O(\delta^3).
 $$
 Use steps <1>3--<1>4 and multiply by $x$.
+
 :::
 
-<1>6. The amplitude satisfies
+:::
+
+::: pf-step
+
+The amplitude satisfies
 $$
 z^{-\nu-1}
 =
@@ -177,7 +215,9 @@ i^{-\nu-1}
 e^{-i\pi(\nu+1)/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The chosen branch is analytic near $z=i$. Hence $z^{-\nu-1}$ has a Taylor
 expansion there. Since the branch argument of $i$ is $\pi/2$,
 $$
@@ -185,12 +225,19 @@ i^{-\nu-1}
 =
 e^{-(\nu+1)i\pi/2}.
 $$
+
 :::
 
-<1>7. With the contour orientation inherited from the original integral, the
+:::
+
+::: pf-step
+
+With the contour orientation inherited from the original integral, the
 local steepest-descent parameter $u$ runs from $+\infty$ to $-\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 The direction
 $$
 e^{-i\pi/4}
@@ -211,9 +258,14 @@ e^{-i\pi/4}
 $$
 the incoming part has $u>0$ and the outgoing part has $u<0$. Hence the
 oriented local integral runs from $+\infty$ to $-\infty$.
+
 :::
 
-<1>8. The leading saddle contribution is
+:::
+
+::: pf-step
+
+The leading saddle contribution is
 $$
 H_\nu^{(1)}(x)
 \sim
@@ -225,7 +277,9 @@ i^{-\nu-1}
 \sqrt{\frac{2\pi}{x}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5--<1>7,
 $$
 \begin{aligned}
@@ -249,9 +303,14 @@ e^{-u^2/2}\,du.
 \end{aligned}
 $$
 The Gaussian integral equals $\sqrt{2\pi}$.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 H_\nu^{(1)}(x)
@@ -270,7 +329,9 @@ x
 $$
 as $x\to+\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 i^{-\nu-1}
@@ -295,9 +356,14 @@ $$
 =
 \sqrt{\frac{2}{\pi x}}.
 $$
+
 :::
 
-<1>10. More generally, the full large-$x$ expansion has the form
+:::
+
+::: pf-step
+
+More generally, the full large-$x$ expansion has the form
 $$
 H_\nu^{(1)}(x)
 \sim
@@ -311,7 +377,9 @@ e^{i(x-\pi\nu/2-\pi/4)}
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The saddle expansion produces an asymptotic series in integer powers of
 $x^{-1}$. Write
 $$
@@ -362,9 +430,14 @@ a_0
 e^{-i\pi\nu/2-i\pi/4}.
 $$
 Iterating the recurrence gives the displayed series.
+
 :::
 
-<1>11. In particular,
+:::
+
+::: pf-step
+
+In particular,
 $$
 H_\nu^{(1)}(x)
 \sim
@@ -385,14 +458,20 @@ i\frac{4\nu^2-1}{8x}
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the first terms of the series in step <1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 gives the leading asymptotic behavior, and step <1>10 gives the full
 asymptotic expansion.
+
 :::
+
 :::

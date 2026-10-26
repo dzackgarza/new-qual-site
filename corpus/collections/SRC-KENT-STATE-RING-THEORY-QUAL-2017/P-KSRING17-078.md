@@ -33,7 +33,6 @@ a\ne0.
 $$
 :::
 
-::: {.solution}
 Assume
 $$
 IJ=(a)
@@ -43,7 +42,11 @@ $$
 a\ne0.
 $$
 
-<1>1. There exist finitely many elements
+::: pf
+
+::: pf-step
+
+There exist finitely many elements
 $$
 x_1,\ldots,x_n\in I
 $$
@@ -58,7 +61,9 @@ a
 \sum_{i=1}^{n}x_i y_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the product ideal
 $$
 IJ
@@ -78,9 +83,14 @@ $$
 a\in(a)=IJ,
 $$
 such a finite representation exists.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 x\in I.
 $$
@@ -99,7 +109,9 @@ xy_i
 ar_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 x\in I
@@ -126,9 +138,14 @@ for some
 $$
 r_i\in R.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 ax
 =
@@ -136,7 +153,9 @@ a
 \sum_{i=1}^{n}x_i r_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity from step <1>1 by $x$:
 $$
 \begin{aligned}
@@ -166,9 +185,14 @@ a
 \end{aligned}
 $$
 using commutativity of $R$.
+
 :::
 
-<1>4. Since $R$ is a domain and
+:::
+
+::: pf-step
+
+Since $R$ is a domain and
 $$
 a\ne0,
 $$
@@ -179,7 +203,9 @@ x
 \sum_{i=1}^{n}x_i r_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives
 $$
 a
@@ -200,15 +226,22 @@ x
 =
 \sum_{i=1}^{n}x_i r_i.
 $$
+
 :::
 
-<1>5. The elements
+:::
+
+::: pf-step
+
+The elements
 $$
 x_1,\ldots,x_n
 $$
 generate $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 $$
 x_i
@@ -235,11 +268,18 @@ I
 (x_1,\ldots,x_n).
 $$
 Therefore $I$ is finitely generated.
+
 :::
 
-<1>6. By symmetry, $J$ is finitely generated.
+:::
 
-::: {.proof}
+::: pf-step
+
+By symmetry, $J$ is finitely generated.
+
+
+::: pf-proof
+
 Interchange the roles of
 $$
 I
@@ -253,22 +293,33 @@ $$
 y_1,\ldots,y_n
 $$
 generate $J$.
+
 :::
 
-<1>7. Therefore, under the corrected nonzero-product hypothesis,
+:::
+
+::: pf-step
+
+Therefore, under the corrected nonzero-product hypothesis,
 $$
 \boxed{
 I\text{ and }J\text{ are finitely generated}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 proves the assertion for $I$, and step <1>6 proves it for $J$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the intended conclusion.
+
 :::
+
 :::

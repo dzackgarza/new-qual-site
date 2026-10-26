@@ -19,7 +19,6 @@ audit:
 Find if the vectors ${ \left[ \begin{array} { l } { 1 } \\ { 2 } \\ { 3 } \end{array} \right] } , { \left[ \begin{array} { l } { 1 } \\ { 3 } \\ { 5 } \end{array} \right] } , { \left[ \begin{array} { l } { 5 } \\ { 1 3 } \\ { 1 5 } \end{array} \right] }$ are linear independent or not.
 :::
 
-::: {.solution}
 Let
 $$
 M=
@@ -31,12 +30,18 @@ M=
 $$
 whose columns are the three given vectors.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \det M=-6.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding along the first row,
 $$
 \begin{aligned}
@@ -47,23 +52,41 @@ $$
 &=-6.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The matrix $M$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $M$ is invertible.
+
+
+::: pf-proof
+
 By step <1>1, $\det M\neq0$, so $M$ is invertible.
+
 :::
 
-<1>3. The three given vectors are linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The three given vectors are linearly independent.
+
+
+::: pf-proof
+
 The columns of an invertible matrix are linearly independent. Since the given vectors are exactly the columns of $M$, step <1>2 proves the claim.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

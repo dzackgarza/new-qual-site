@@ -22,8 +22,11 @@ Consider the quadratic forms $f ( { \vec { x } } ) = x _ { 1 } ^ { 2 } + 2 x _ {
 (b) Find the change of coordinates that reduces f (x) and g(x) to the diagonal form.
 :::
 
-::: {.solution}
-<1>1. The symmetric matrix of $f$ is
+::: pf
+
+::: pf-step
+
+The symmetric matrix of $f$ is
 $$
 F=
 \begin{pmatrix}
@@ -32,38 +35,66 @@ F=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The cross term $2x_1x_2$ corresponds to off-diagonal entries $1$.
+
 :::
 
-<1>2. The leading principal minors of $F$ are
+:::
+
+::: pf-step
+
+The leading principal minors of $F$ are
 $$
 1
 \qquad\text{and}\qquad
 \det F=2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 \det F=1\cdot3-1\cdot1=2.
 $$
+
 :::
 
-<1>3. Hence $f$ is positive definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $f$ is positive definite.
+
+
+::: pf-proof
+
 Both leading principal minors in step <1>2 are positive. Sylvester's criterion
 therefore gives positive definiteness.
+
 :::
 
-<1>4. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Step <1>3 shows that at least one form is sign definite.
+
 :::
 
-<1>5. Complete the square in $f$:
+:::
+
+::: pf-step
+
+Complete the square in $f$:
 $$
 f
 =
@@ -72,16 +103,23 @@ f
 2x_2^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the right-hand side:
 $$
 x_1^2+2x_1x_2+x_2^2+2x_2^2
 =
 x_1^2+2x_1x_2+3x_2^2.
 $$
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 $$
 y_1=x_1+x_2,
 \qquad
@@ -92,11 +130,18 @@ $$
 f=y_1^2+y_2^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the definitions into step <1>5.
+
 :::
 
-<1>7. In the $y$-coordinates,
+:::
+
+::: pf-step
+
+In the $y$-coordinates,
 $$
 g
 =
@@ -107,7 +152,9 @@ g
 3y_2^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>6,
 $$
 x_2=\frac{y_2}{\sqrt2},
@@ -119,9 +166,14 @@ $$
 g=4x_1^2+16x_1x_2+6x_2^2
 $$
 and simplify.
+
 :::
 
-<1>8. The symmetric matrix of $g$ in the $y$-coordinates is
+:::
+
+::: pf-step
+
+The symmetric matrix of $g$ in the $y$-coordinates is
 $$
 G_y=
 \begin{pmatrix}
@@ -130,19 +182,28 @@ G_y=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficient of $y_1y_2$ in step <1>7 is $4\sqrt2$, so the off-diagonal
 matrix entries are $2\sqrt2$.
+
 :::
 
-<1>9. The eigenvalues of $G_y$ are
+:::
+
+::: pf-step
+
+The eigenvalues of $G_y$ are
 $$
 5
 \qquad\text{and}\qquad
 -4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 $$
 \begin{aligned}
@@ -155,9 +216,14 @@ $$
 (\lambda-5)(\lambda+4).
 \end{aligned}
 $$
+
 :::
 
-<1>10. Corresponding orthonormal eigenvectors are
+:::
+
+::: pf-step
+
+Corresponding orthonormal eigenvectors are
 $$
 e_+=
 \frac13
@@ -177,7 +243,9 @@ e_-=
 $$
 for eigenvalue $-4$.
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution shows
 $$
 G_y e_+=5e_+,
@@ -185,9 +253,14 @@ G_y e_+=5e_+,
 G_y e_-=-4e_-.
 $$
 Their norms equal $1$, and their inner product is $0$.
+
 :::
 
-<1>11. Define new coordinates $z_1,z_2$ by
+:::
+
+::: pf-step
+
+Define new coordinates $z_1,z_2$ by
 $$
 \begin{pmatrix}
 z_1\\
@@ -210,12 +283,19 @@ R=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $R$ are the orthonormal eigenvectors from step <1>10, so $R$
 is orthogonal.
+
 :::
 
-<1>12. In the $z$-coordinates,
+:::
+
+::: pf-step
+
+In the $z$-coordinates,
 $$
 \boxed{f=z_1^2+z_2^2}
 $$
@@ -224,7 +304,9 @@ $$
 \boxed{g=5z_1^2-4z_2^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $R$ is orthogonal,
 $$
 y_1^2+y_2^2=z_1^2+z_2^2,
@@ -240,9 +322,14 @@ R^TG_yR=
 \end{pmatrix}
 $$
 by step <1>10, giving the stated form of $g$.
+
 :::
 
-<1>13. Explicitly, the simultaneous coordinate change from $x$ to $z$ is
+:::
+
+::: pf-step
+
+Explicitly, the simultaneous coordinate change from $x$ to $z$ is
 $$
 \boxed{
 z_1
@@ -255,7 +342,9 @@ z_2
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 $$
 \begin{pmatrix}y_1\\y_2\end{pmatrix}
@@ -267,9 +356,14 @@ $$
 \begin{pmatrix}x_1\\x_2\end{pmatrix}.
 $$
 Apply $R^T=R$ from step <1>11 and simplify.
+
 :::
 
-<1>14. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 \boxed{
 x_1
@@ -282,20 +376,33 @@ x_2
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the two linear equations in step <1>13 for $x_1,x_2$.
+
 :::
 
-<1>15. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>12--<1>14 give the simultaneous diagonalization and the explicit
 change of coordinates.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>15 establish parts (a) and (b), respectively.
+
 :::
+
 :::

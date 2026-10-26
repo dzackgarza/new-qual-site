@@ -21,7 +21,6 @@ Construct the field of fractions F of R by defining the set F and the two binary
 Show that F has a multiplicative identity element and that every nonzero element of F has a multiplicative inverse.
 :::
 
-::: {.solution}
 Let
 $$
 S
@@ -35,9 +34,15 @@ $$
 ad=bc.
 $$
 
-<1>1. The relation $\sim$ is reflexive.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The relation $\sim$ is reflexive.
+
+
+::: pf-proof
+
 For
 $$
 (a,b)\in S,
@@ -51,11 +56,18 @@ Hence
 $$
 (a,b)\sim(a,b).
 $$
+
 :::
 
-<1>2. The relation $\sim$ is symmetric.
+:::
 
-::: {.proof}
+::: pf-step
+
+The relation $\sim$ is symmetric.
+
+
+::: pf-proof
+
 If
 $$
 (a,b)\sim(c,d),
@@ -72,11 +84,18 @@ so
 $$
 (c,d)\sim(a,b).
 $$
+
 :::
 
-<1>3. The relation $\sim$ is transitive.
+:::
 
-::: {.proof}
+::: pf-step
+
+The relation $\sim$ is transitive.
+
+
+::: pf-proof
+
 Suppose
 $$
 (a,b)\sim(c,d)
@@ -125,15 +144,27 @@ so
 $$
 (a,b)\sim(e,f).
 $$
+
 :::
 
-<1>4. Therefore $\sim$ is an equivalence relation on $S$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $\sim$ is an equivalence relation on $S$.
+
+
+::: pf-proof
+
 Combine steps <1>1--<1>3.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 $$
 F
 \coloneqq
@@ -144,11 +175,18 @@ $$
 \frac ab.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 makes the quotient set well-defined.
+
 :::
 
-<1>6. Define addition on $F$ by
+:::
+
+::: pf-step
+
+Define addition on $F$ by
 $$
 \boxed{
 \frac ab+\frac cd
@@ -157,7 +195,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 b,d\ne0
@@ -171,11 +211,18 @@ $$
 (ad+bc,bd)\in S,
 $$
 so the displayed expression determines an element of $F$.
+
 :::
 
-<1>7. Addition is independent of the representatives.
+:::
 
-::: {.proof}
+::: pf-step
+
+Addition is independent of the representatives.
+
+
+::: pf-proof
+
 Suppose
 $$
 \frac ab=\frac{a'}{b'}
@@ -225,9 +272,14 @@ a'd'bd
 \end{aligned}
 $$
 Thus the two sums represent the same equivalence class.
+
 :::
 
-<1>8. Define multiplication on $F$ by
+:::
+
+::: pf-step
+
+Define multiplication on $F$ by
 $$
 \boxed{
 \frac ab\cdot\frac cd
@@ -236,7 +288,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Again,
 $$
 bd\ne0
@@ -246,11 +300,18 @@ $$
 b,d\ne0.
 $$
 Thus the displayed fraction is an element of $F$.
+
 :::
 
-<1>9. Multiplication is independent of the representatives.
+:::
 
-::: {.proof}
+::: pf-step
+
+Multiplication is independent of the representatives.
+
+
+::: pf-proof
+
 Suppose
 $$
 \frac ab=\frac{a'}{b'}
@@ -292,9 +353,14 @@ a'c'\,bd.
 \end{aligned}
 $$
 Hence multiplication is well-defined.
+
 :::
 
-<1>10. The element
+:::
+
+::: pf-step
+
+The element
 $$
 0_F
 \coloneqq
@@ -302,7 +368,9 @@ $$
 $$
 is an additive identity.
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 $$
 \frac ab\in F,
@@ -314,9 +382,14 @@ $$
 =
 \frac ab.
 $$
+
 :::
 
-<1>11. The additive inverse of
+:::
+
+::: pf-step
+
+The additive inverse of
 $$
 \frac ab
 $$
@@ -325,7 +398,9 @@ $$
 \frac{-a}{b}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \frac ab+\frac{-a}{b}
@@ -342,9 +417,14 @@ $$
 =
 0\cdot b^2.
 $$
+
 :::
 
-<1>12. The element
+:::
+
+::: pf-step
+
+The element
 $$
 1_F
 \coloneqq
@@ -352,7 +432,9 @@ $$
 $$
 is a multiplicative identity.
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 $$
 \frac ab\in F,
@@ -362,9 +444,14 @@ $$
 =
 \frac{a}{b}.
 $$
+
 :::
 
-<1>13. A fraction
+:::
+
+::: pf-step
+
+A fraction
 $$
 \frac ab
 $$
@@ -373,7 +460,9 @@ $$
 a=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \frac ab
@@ -390,9 +479,14 @@ Thus
 $$
 a=0.
 $$
+
 :::
 
-<1>14. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac ab\ne0,
 $$
@@ -401,11 +495,18 @@ $$
 a\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the contrapositive direction of step <1>13.
+
 :::
 
-<1>15. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac ab\ne0,
 $$
@@ -415,7 +516,9 @@ $$
 $$
 is a well-defined element of $F$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>14,
 $$
 a\ne0.
@@ -429,11 +532,18 @@ $$
 b/a
 $$
 defines an element of $F$.
+
 :::
 
-<1>16. Every nonzero element of $F$ has a multiplicative inverse.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $F$ has a multiplicative inverse.
+
+
+::: pf-proof
+
 Let
 $$
 \frac ab\ne0.
@@ -462,11 +572,18 @@ $$
 =
 \frac ba.
 $$
+
 :::
 
-<1>17. The operations are associative and commutative and satisfy distributivity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The operations are associative and commutative and satisfy distributivity.
+
+
+::: pf-proof
+
 These identities follow by direct calculation from the corresponding identities in $R$.
 For example,
 $$
@@ -503,9 +620,14 @@ $$
 \end{aligned}
 $$
 The multiplicative and distributive checks are similar.
+
 :::
 
-<1>18. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 F
@@ -513,15 +635,22 @@ F
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>6--<1>9 define well-defined binary operations.
 Steps <1>10--<1>12 give additive and multiplicative identities and additive inverses.
 Step <1>16 gives multiplicative inverses for every nonzero element.
 Step <1>17 supplies the remaining ring axioms.
 Hence $F$ is a field.
+
 :::
 
-<1>19. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \iota:R\to F,
 \qquad
@@ -531,7 +660,9 @@ $$
 $$
 is an injective ring homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 The formulas for addition and multiplication give
 $$
 \iota(r+s)
@@ -561,12 +692,16 @@ $$
 r=s.
 $$
 Thus $\iota$ is injective.
+
 :::
 
-<1>20. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5--<1>18 construct the field of fractions and verify its operations, identity, and inverses.
 Step <1>19 identifies $R$ with a subring of its fraction field.
+
 :::
+
 :::

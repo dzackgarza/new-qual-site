@@ -19,7 +19,6 @@ audit:
 Let R be a ring with identity such that the identity map is the only ring automorphism of R. Prove that the set N of all nilpotent elements of R is an ideal of R.
 :::
 
-::: {.solution}
 Let
 $$
 N
@@ -27,9 +26,15 @@ N
 \{n\in R:n^k=0\text{ for some }k\ge1\}.
 $$
 
-<1>1. Every unit of $R$ is central.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every unit of $R$ is central.
+
+
+::: pf-proof
+
 Let
 $$
 u\in R^\times.
@@ -61,9 +66,14 @@ Thus
 $$
 u\in Z(R).
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 n\in N,
 $$
@@ -73,7 +83,9 @@ $$
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 k\ge1
@@ -102,11 +114,18 @@ $$
 \in
 R^\times.
 $$
+
 :::
 
-<1>3. Every nilpotent element of $R$ is central.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nilpotent element of $R$ is central.
+
+
+::: pf-proof
+
 Let
 $$
 n\in N.
@@ -134,9 +153,14 @@ $$
 N\subseteq Z(R).
 }
 $$
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 n,m\in N,
 $$
@@ -147,7 +171,9 @@ n+m
 N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 $$
 a,b\ge1
@@ -197,9 +223,14 @@ Hence
 $$
 n+m\in N.
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 n\in N,
 $$
@@ -208,7 +239,9 @@ $$
 -n\in N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 n^k=0,
@@ -221,20 +254,32 @@ $$
 =
 0.
 $$
+
 :::
 
-<1>6. The set $N$ is an additive subgroup of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $N$ is an additive subgroup of $R$.
+
+
+::: pf-proof
+
 The element
 $$
 0
 $$
 is nilpotent.
 Step <1>4 gives closure under addition, and step <1>5 gives closure under additive inverses.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 r\in R
 $$
@@ -255,7 +300,9 @@ nr
 N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 n
@@ -292,9 +339,14 @@ one also has
 $$
 nr\in N.
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 N
@@ -302,17 +354,23 @@ N
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 shows that $N$ is an additive subgroup, and step <1>7 shows that it absorbs multiplication from both sides by arbitrary elements of $R$.
 Hence
 $$
 N\trianglelefteq R.
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

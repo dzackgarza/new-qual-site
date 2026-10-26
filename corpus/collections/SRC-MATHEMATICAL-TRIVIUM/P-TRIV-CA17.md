@@ -26,13 +26,18 @@ nonintegrable singularity at $x=\pm1$. The solution below treats every real
 $\theta$ for which the ordinary improper integral is finite.
 :::
 
-::: {.solution}
-<1>1. The integral depends on $\theta$ only through
+::: pf
+
+::: pf-step
+
+The integral depends on $\theta$ only through
 $$
 |\sin\theta|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator contains $\theta$ only through
 $$
 \cos2\theta
@@ -41,30 +46,44 @@ $$
 $$
 Thus replacing $\theta$ by any angle with the same value of
 $|\sin\theta|$ leaves the integrand unchanged.
+
 :::
 
-<1>2. It suffices to compute the integral for
+:::
+
+::: pf-step
+
+It suffices to compute the integral for
 $$
 0<\theta<\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $\sin\theta\ne0$, choose $\vartheta\in(0,\pi)$ with
 $$
 \sin\vartheta=|\sin\theta|.
 $$
 By step <1>1 the two integrands coincide. After computing the formula in this
 range, replace $\sin\vartheta$ by $|\sin\theta|$.
+
 :::
 
-<1>3. For $0<\theta<\pi$,
+:::
+
+::: pf-step
+
+For $0<\theta<\pi$,
 $$
 z^4-2z^2\cos2\theta+1
 =
 (z^2-e^{2i\theta})(z^2-e^{-2i\theta}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying gives
 $$
 z^4
@@ -79,9 +98,14 @@ e^{2i\theta}+e^{-2i\theta}
 =
 2\cos2\theta.
 $$
+
 :::
 
-<1>4. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 0<\theta<\pi
 \qquad\text{and}\qquad
@@ -95,7 +119,9 @@ z_2=-e^{-i\theta},
 $$
 and both are simple.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3 the four poles are
 $$
 \pm e^{i\theta},
@@ -106,9 +132,14 @@ For $0<\theta<\pi$, the roots $e^{i\theta}$ and
 $-e^{-i\theta}=e^{i(\pi-\theta)}$ lie in the upper half-plane. The other
 two lie in the lower half-plane. The two upper poles coincide only when
 $\theta=\pi/2$, which is excluded here.
+
 :::
 
-<1>5. For
+:::
+
+::: pf-step
+
+For
 $$
 F(z)
 =
@@ -127,7 +158,9 @@ $$
 \frac{e^{-i\theta}}{4i\sin2\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 P(z)=z^4-2z^2\cos2\theta+1.
@@ -163,14 +196,21 @@ z^2-\cos2\theta
 -i\sin2\theta,
 $$
 and direct substitution gives the second displayed residue.
+
 :::
 
-<1>6. The sum of the two residues in step <1>5 is
+:::
+
+::: pf-step
+
+The sum of the two residues in step <1>5 is
 $$
 \frac1{4i\sin\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Their sum is
 $$
 \frac{e^{i\theta}+e^{-i\theta}}
@@ -182,9 +222,14 @@ $$
 \frac1{4i\sin\theta}.
 $$
 The cancellation is valid because $\theta\ne\pi/2$.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 0<\theta<\pi,
 \qquad
@@ -199,7 +244,9 @@ $$
 \frac{\pi}{2\sin\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Close the real segment by an upper semicircle. On $|z|=R>1$,
 $$
 |z^2-e^{2i\theta}|
@@ -229,9 +276,14 @@ $$
 =
 \frac{\pi}{2\sin\theta}.
 $$
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 $$
 \theta=\frac\pi2,
 $$
@@ -243,7 +295,9 @@ $$
 \frac\pi2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\theta=\pi/2$,
 $$
 x^4-2x^2\cos\pi+1
@@ -274,9 +328,14 @@ $$
 =
 \frac\pi2.
 $$
+
 :::
 
-<1>9. For every
+:::
+
+::: pf-step
+
+For every
 $$
 0<\theta<\pi,
 $$
@@ -289,12 +348,19 @@ $$
 \frac{\pi}{2\sin\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 proves the formula away from $\theta=\pi/2$, and step <1>8 gives
 the same value at $\theta=\pi/2$ because $\sin(\pi/2)=1$.
+
 :::
 
-<1>10. Therefore, for every real $\theta$ with $\sin\theta\ne0$,
+:::
+
+::: pf-step
+
+Therefore, for every real $\theta$ with $\sin\theta\ne0$,
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -305,14 +371,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Reduce to an angle in $(0,\pi)$ using step <1>2, apply step <1>9, and replace
 $\sin\vartheta$ by $|\sin\theta|$.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the maximal real-parameter form of the requested integral.
+
 :::
+
 :::

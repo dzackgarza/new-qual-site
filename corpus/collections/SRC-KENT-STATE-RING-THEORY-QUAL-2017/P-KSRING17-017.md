@@ -20,14 +20,19 @@ Let m, n be positive integers such that m divides n. Then the natural map $\varp
 If $U _ { n } , U _ { m }$ are the units of $\mathbb { Z } _ { n }$ and $\mathbb { Z } _ { m }$ , respectively, show that $\varphi : U _ { n } \to U _ { m }$ is a surjective group homomorphism.
 :::
 
-::: {.solution}
-<1>1. The restriction
+::: pf
+
+::: pf-step
+
+The restriction
 $$
 \varphi:U_n\to U_m
 $$
 is a group homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\varphi$ is a ring homomorphism,
 $$
 \varphi(\overline a\,\overline b)
@@ -47,9 +52,14 @@ $$
 \overline1,
 $$
 so $\varphi(\overline a)\in U_m$. Thus the restriction is well-defined and multiplicative.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \overline a\in U_m.
 $$
@@ -62,7 +72,9 @@ $$
 \gcd(b,n)=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\overline a$ is a unit modulo $m$,
 $$
 \gcd(a,m)=1.
@@ -96,15 +108,22 @@ so again $p\nmid b$. Thus no prime divisor of $n$ divides $b$, and therefore
 $$
 \gcd(b,n)=1.
 $$
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \varphi:U_n\to U_m
 $$
 is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\overline a\in U_m$. Choose $b$ as in step <1>2. Then
 $$
 \overline b\in U_n
@@ -116,9 +135,14 @@ $$
 \overline a
 $$
 because $b\equiv a\pmod m$. Hence every unit modulo $m$ has a preimage in $U_n$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \varphi:U_n\to U_m
@@ -126,13 +150,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

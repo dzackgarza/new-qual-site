@@ -24,7 +24,6 @@ $$
 $$
 :::
 
-::: {.solution}
 Let
 $$
 M=
@@ -34,7 +33,11 @@ C&D
 \end{pmatrix}.
 $$
 
-<1>1. Since $D$ is nondegenerate, the block matrix
+::: pf
+
+::: pf-step
+
+Since $D$ is nondegenerate, the block matrix
 $$
 L=
 \begin{pmatrix}
@@ -47,7 +50,9 @@ $$
 \det L=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $L$ is block upper triangular with identity blocks on its diagonal.
 Hence
 $$
@@ -56,9 +61,14 @@ $$
 (\det I)(\det I)
 =1.
 $$
+
 :::
 
-<1>2. Multiplying $M$ on the left by $L$ gives
+:::
+
+::: pf-step
+
+Multiplying $M$ on the left by $L$ gives
 $$
 LM
 =
@@ -68,7 +78,9 @@ C&D
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Block multiplication gives
 $$
 \begin{aligned}
@@ -94,16 +106,23 @@ C&D
 \end{pmatrix}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \det M
 =
 \det(A-BD^{-1}C)\det D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \det(LM)
@@ -118,14 +137,21 @@ $$
 =
 \det(A-BD^{-1}C)\det D.
 $$
+
 :::
 
-<1>4. The right-hand side in step <1>3 equals
+:::
+
+::: pf-step
+
+The right-hand side in step <1>3 equals
 $$
 \det\left(AD-BD^{-1}CD\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By multiplicativity of the determinant,
 $$
 \det(A-BD^{-1}C)\det D
@@ -138,9 +164,14 @@ $$
 =
 AD-BD^{-1}CD.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \det
@@ -153,13 +184,19 @@ C&D
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required identity.
+
 :::
+
 :::

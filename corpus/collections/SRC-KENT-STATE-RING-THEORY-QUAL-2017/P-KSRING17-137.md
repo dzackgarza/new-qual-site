@@ -20,7 +20,6 @@ Let R be a ring satisfying the descending chain condition on right ideals.
 If J(R) denotes the Jacobson radical of R, prove that J(R) is nilpotent.
 :::
 
-::: {.solution}
 Write
 $$
 J
@@ -28,7 +27,11 @@ J
 J(R).
 $$
 
-<1>1. The descending chain
+::: pf
+
+::: pf-step
+
+The descending chain
 $$
 J
 \supseteq
@@ -40,7 +43,9 @@ J^3
 $$
 stabilizes.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 $$
 J^n
@@ -60,9 +65,14 @@ J^{n+2}
 =
 \cdots.
 $$
+
 :::
 
-<1>2. Set
+:::
+
+::: pf-step
+
+Set
 $$
 A
 \coloneqq
@@ -75,7 +85,9 @@ A
 AJ.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 J^n
@@ -92,9 +104,14 @@ Hence
 $$
 A=AJ.
 $$
+
 :::
 
-<1>3. Suppose, for contradiction, that
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that
 $$
 A\ne0.
 $$
@@ -107,16 +124,23 @@ $$
 CA\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The collection is nonempty because
 $$
 RA=A\ne0.
 $$
 The descending chain condition implies that every nonempty collection of right ideals has a minimal element under inclusion.
 Choose such a minimal right ideal and call it $C$.
+
 :::
 
-<1>4. There exists
+:::
+
+::: pf-step
+
+There exists
 $$
 c\in C
 $$
@@ -125,7 +149,9 @@ $$
 cA\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 $$
 CA\ne0
@@ -146,15 +172,22 @@ Choose $c$ with
 $$
 cA\ne0.
 $$
+
 :::
 
-<1>5. The set
+:::
+
+::: pf-step
+
+The set
 $$
 cA
 $$
 is a nonzero right ideal contained in $C$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $A$ is a two-sided ideal,
 $$
 cA
@@ -194,14 +227,21 @@ c\in C
 $$
 and $C$ is a right ideal.
 It is nonzero by step <1>4.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (cA)A\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 A=AJ.
@@ -243,14 +283,21 @@ cA^2
 cA
 \ne0.
 $$
+
 :::
 
-<1>7. By minimality of $C$,
+:::
+
+::: pf-step
+
+By minimality of $C$,
 $$
 cA=C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives a nonzero right ideal
 $$
 cA
@@ -266,9 +313,14 @@ Minimality of $C$ forces
 $$
 cA=C.
 $$
+
 :::
 
-<1>8. Since
+:::
+
+::: pf-step
+
+Since
 $$
 c\in C=cA,
 $$
@@ -281,7 +333,9 @@ $$
 c=ca.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Membership
 $$
 c\in cA
@@ -294,15 +348,22 @@ for some
 $$
 a\in A.
 $$
+
 :::
 
-<1>9. The element
+:::
+
+::: pf-step
+
+The element
 $$
 1-a
 $$
 is a unit of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 A=J^n
@@ -326,9 +387,14 @@ $$
 1-a
 $$
 is a unit.
+
 :::
 
-<1>10. The equality
+:::
+
+::: pf-step
+
+The equality
 $$
 c=ca
 $$
@@ -337,7 +403,9 @@ $$
 c=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearranging step <1>8 gives
 $$
 c(1-a)=0.
@@ -355,14 +423,21 @@ gives
 $$
 c=0.
 $$
+
 :::
 
-<1>11. This contradicts
+:::
+
+::: pf-step
+
+This contradicts
 $$
 cA\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 c=0,
@@ -372,14 +447,21 @@ $$
 cA=0,
 $$
 contrary to the choice of $c$ in step <1>4.
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 A=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption
 $$
 A\ne0
@@ -389,9 +471,14 @@ Hence
 $$
 A=0.
 $$
+
 :::
 
-<1>13. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 J(R)^n=0
@@ -402,7 +489,9 @@ $$
 n\ge1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 A=J^n.
@@ -416,11 +505,15 @@ $$
 J^n=0.
 $$
 This is exactly nilpotence of the Jacobson radical.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 is the required conclusion.
+
 :::
+
 :::

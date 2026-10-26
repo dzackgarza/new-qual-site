@@ -20,7 +20,6 @@ Let $I \subseteq J$ be right ideals of a ring R such that $J / I \cong R$ as rig
 Prove that there exists a right ideal K such that $I \cap K = ( 0 )$ and $I + K = J$
 :::
 
-::: {.solution}
 Let
 $$
 \pi:J\to J/I
@@ -30,7 +29,11 @@ $$
 \theta:R\overset{\sim}{\longrightarrow}J/I.
 $$
 
-<1>1. Choose
+::: pf
+
+::: pf-step
+
+Choose
 $$
 y\in J
 $$
@@ -39,7 +42,9 @@ $$
 \pi(y)=\theta(1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient map
 $$
 \pi:J\to J/I
@@ -52,9 +57,14 @@ has a lift
 $$
 y\in J.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 K
 \coloneqq
@@ -62,7 +72,9 @@ yR.
 $$
 Then $K$ is a right ideal of $R$ contained in $J$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 y\in J
@@ -97,9 +109,14 @@ y(rt)
 yR.
 $$
 Hence $K$ is a right ideal.
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 $$
 r\in R,
 $$
@@ -108,7 +125,9 @@ $$
 \pi(yr)=\theta(r).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\pi$ and $\theta$ are right $R$-module homomorphisms,
 $$
 \begin{aligned}
@@ -121,14 +140,21 @@ $$
 \theta(r).
 \end{aligned}
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 I\cap K=(0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 x\in I\cap K.
@@ -173,14 +199,21 @@ Therefore
 $$
 I\cap K=(0).
 $$
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 I+K=J.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 I,K\subseteq J,
@@ -234,9 +267,14 @@ Therefore
 $$
 I+K=J.
 $$
+
 :::
 
-<1>6. Consequently
+:::
+
+::: pf-step
+
+Consequently
 $$
 \boxed{
 J
@@ -246,7 +284,9 @@ I\oplus K
 $$
 as right $R$-modules.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives
 $$
 I\cap K=(0),
@@ -256,11 +296,15 @@ $$
 I+K=J.
 $$
 These are exactly the conditions for the internal direct sum.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The right ideal $K=yR$ from step <1>2 satisfies both required properties by steps <1>4--<1>5.
+
 :::
+
 :::

@@ -20,14 +20,17 @@ audit:
 Suppose R contains an idempotent element a other than 0 or 1. Show that every prime ideal in R contains an idempotent element other than 0 or 1. (An element $a \in R$ is idempotent if $a ^ { 2 } = a . )$
 :::
 
-::: {.solution}
 Let
 $$
 P
 $$
 be an arbitrary prime ideal of $R$.
 
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 $$
 a^2=a,
 $$
@@ -36,7 +39,9 @@ $$
 a(1-a)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange the idempotent relation:
 $$
 a-a^2=0.
@@ -45,16 +50,23 @@ Factoring gives
 $$
 a(1-a)=0.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 a\in P
 \quad\text{or}\quad
 1-a\in P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 a(1-a)=0\in P.
@@ -65,15 +77,22 @@ a\in P
 \quad\text{or}\quad
 1-a\in P.
 $$
+
 :::
 
-<1>3. The element
+:::
+
+::: pf-step
+
+The element
 $$
 1-a
 $$
 is idempotent.
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 a^2=a,
@@ -91,9 +110,14 @@ $$
 \end{aligned}
 $$
 Thus $1-a$ is idempotent.
+
 :::
 
-<1>4. Both
+:::
+
+::: pf-step
+
+Both
 $$
 a
 \qquad\text{and}\qquad
@@ -106,7 +130,9 @@ $$
 1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis already gives
 $$
 a\ne0,
@@ -132,11 +158,18 @@ a=0,
 $$
 contradiction.
 Therefore $1-a$ is also nontrivial.
+
 :::
 
-<1>5. Therefore every prime ideal $P$ contains a nontrivial idempotent.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every prime ideal $P$ contains a nontrivial idempotent.
+
+
+::: pf-proof
+
 By step <1>2, the ideal $P$ contains either $a$ or $1-a$. By steps <1>3--<1>4, whichever element occurs is an idempotent different from both $0$ and $1$.
 Thus
 $$
@@ -144,11 +177,15 @@ $$
 \text{every prime ideal of }R\text{ contains a nontrivial idempotent.}
 }
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

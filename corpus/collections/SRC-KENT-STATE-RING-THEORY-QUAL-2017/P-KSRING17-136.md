@@ -26,7 +26,6 @@ Indeed, if $R$ is a field, then $R$ is its only nonzero ideal and $R$ has no non
 The proof below establishes the intended non-field statement.
 :::
 
-::: {.solution}
 Assume that $R$ is not a field.
 Call an ideal
 $$
@@ -41,9 +40,15 @@ $$
 m\ge1.
 $$
 
-<1>1. The unit ideal $R$ is good.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The unit ideal $R$ is good.
+
+
+::: pf-proof
+
 Because $R$ is not a field, there exists a nonzero nonunit
 $$
 a\in R.
@@ -72,9 +77,14 @@ $$
 M\subseteq R.
 $$
 Therefore $R$ is good.
+
 :::
 
-<1>2. Suppose, for contradiction, that some nonzero ideal of $R$ is not good.
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that some nonzero ideal of $R$ is not good.
 Let
 $$
 \mathcal B
@@ -87,13 +97,22 @@ I\ne(0)
 $$
 Then $\mathcal B$ is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of the desired conclusion.
+
 :::
 
-<1>3. The poset $\mathcal B$, ordered by inclusion, has a maximal element.
+:::
 
-::: {.proof}
+::: pf-step
+
+The poset $\mathcal B$, ordered by inclusion, has a maximal element.
+
+
+::: pf-proof
+
 Because $R$ is Noetherian, its ideals satisfy the ascending chain condition.
 If $\mathcal B$ had no maximal element, starting from some
 $$
@@ -116,11 +135,18 @@ Choose one and call it
 $$
 I.
 $$
+
 :::
 
-<1>4. The ideal $I$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is proper.
+
+
+::: pf-proof
+
 Step <1>1 shows that
 $$
 R
@@ -134,11 +160,18 @@ is not good,
 $$
 I\ne R.
 $$
+
 :::
 
-<1>5. The ideal $I$ is not prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is not prime.
+
+
+::: pf-proof
+
 If $I$ were prime, then because
 $$
 I\ne(0)
@@ -153,9 +186,14 @@ $$
 I\in\mathcal B.
 $$
 Therefore $I$ is not prime.
+
 :::
 
-<1>6. There exist
+:::
+
+::: pf-step
+
+There exist
 $$
 a,b\in R\setminus I
 $$
@@ -164,12 +202,19 @@ $$
 ab\in I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5, the ideal $I$ is proper but not prime.
 The negation of the prime-ideal condition therefore gives such elements $a$ and $b$.
+
 :::
 
-<1>7. The ideals
+:::
+
+::: pf-step
+
+The ideals
 $$
 I+(a)
 \qquad\text{and}\qquad
@@ -177,7 +222,9 @@ I+(b)
 $$
 strictly contain $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\notin I,
@@ -194,9 +241,14 @@ gives
 $$
 I\subsetneq I+(b).
 $$
+
 :::
 
-<1>8. Each of the ideals
+:::
+
+::: pf-step
+
+Each of the ideals
 $$
 I+(a)
 \qquad\text{and}\qquad
@@ -204,15 +256,22 @@ I+(b)
 $$
 is good.
 
-::: {.proof}
+
+::: pf-proof
+
 Both ideals strictly contain the maximal counterexample $I$ from step <1>3.
 They are also nonzero because they contain the nonzero ideal $I$.
 
 If either were not good, it would belong to $\mathcal B$ and properly contain $I$, contradicting maximality.
 Therefore both are good.
+
 :::
 
-<1>9. Choose nonzero prime ideals
+:::
+
+::: pf-step
+
+Choose nonzero prime ideals
 $$
 P_1,\ldots,P_r
 $$
@@ -233,18 +292,27 @@ Q_1\cdots Q_s
 I+(b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the meaning of step <1>8.
+
 :::
 
-<1>10. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (I+(a))(I+(b))
 \subseteq
 I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the product of ideals:
 $$
 (I+(a))(I+(b))
@@ -268,15 +336,22 @@ $$
 (ab)\subseteq I.
 $$
 Hence the entire product ideal is contained in $I$.
+
 :::
 
-<1>11. The product
+:::
+
+::: pf-step
+
+The product
 $$
 P_1\cdots P_rQ_1\cdots Q_s
 $$
 is contained in $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9,
 $$
 P_1\cdots P_r
@@ -296,15 +371,22 @@ P_1\cdots P_rQ_1\cdots Q_s
 (I+(a))(I+(b)).
 $$
 Apply step <1>10.
+
 :::
 
-<1>12. The product ideal
+:::
+
+::: pf-step
+
+The product ideal
 $$
 P_1\cdots P_rQ_1\cdots Q_s
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Each prime ideal
 $$
 P_i
@@ -329,11 +411,18 @@ $$
 P_1\cdots P_rQ_1\cdots Q_s.
 $$
 Hence the product ideal is nonzero.
+
 :::
 
-<1>13. The ideal $I$ is good.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is good.
+
+
+::: pf-proof
+
 By step <1>11,
 $$
 I
@@ -344,24 +433,38 @@ P_1\cdots P_rQ_1\cdots Q_s
 $$
 of nonzero prime ideals.
 Thus, by definition, $I$ is good.
+
 :::
 
-<1>14. This contradicts the choice
+:::
+
+::: pf-step
+
+This contradicts the choice
 $$
 I\in\mathcal B.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Membership in
 $$
 \mathcal B
 $$
 means that $I$ is not good, whereas step <1>13 shows that it is good.
+
 :::
 
-<1>15. Therefore every nonzero ideal of a non-field Noetherian domain contains a product of nonzero prime ideals.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every nonzero ideal of a non-field Noetherian domain contains a product of nonzero prime ideals.
+
+
+::: pf-proof
+
 The assumption that
 $$
 \mathcal B\ne\varnothing
@@ -378,11 +481,15 @@ $$
 \text{ contains a finite product of nonzero prime ideals}.
 }
 $$
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 proves the intended statement under the necessary non-field qualification recorded in the remark.
+
 :::
+
 :::

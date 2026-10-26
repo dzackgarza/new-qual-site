@@ -19,7 +19,6 @@ audit:
 Let p be a prime and let R be the ring of all $2 \times 2$ matrices of the form $\left[ \begin{array} { c c } { a } & { b } \\ { p b } & { a } \end{array} \right]$ , where $a , b \in \mathbb { Z }$ . Prove that R is isomorphic to $\mathbb { Z } [ { \sqrt { p } } ]$
 :::
 
-::: {.solution}
 Define
 $$
 \Phi:\ZZ[\sqrt p]\to R
@@ -36,9 +35,15 @@ pb&a
 }
 $$
 
-<1>1. The map $\Phi$ is well-defined and bijective.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is well-defined and bijective.
+
+
+::: pf-proof
+
 Every element of
 $$
 \ZZ[\sqrt p]
@@ -68,11 +73,18 @@ pb&a
 a+b\sqrt p.
 $$
 Therefore $\Phi$ is bijective.
+
 :::
 
-<1>2. The map $\Phi$ preserves addition.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ preserves addition.
+
+
+::: pf-proof
+
 For
 $$
 x=a+b\sqrt p,
@@ -92,11 +104,18 @@ p(b+d)&a+c
 \Phi(x)+\Phi(y).
 \end{aligned}
 $$
+
 :::
 
-<1>3. The map $\Phi$ preserves multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ preserves multiplication.
+
+
+::: pf-proof
+
 In $\ZZ[\sqrt p]$,
 $$
 xy
@@ -140,11 +159,18 @@ $$
 =
 \Phi(x)\Phi(y).
 $$
+
 :::
 
-<1>4. The map $\Phi$ preserves the identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ preserves the identity.
+
+
+::: pf-proof
+
 One has
 $$
 \Phi(1)
@@ -154,9 +180,14 @@ $$
 0&1
 \end{pmatrix}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R\cong\ZZ[\sqrt p]
@@ -164,13 +195,19 @@ R\cong\ZZ[\sqrt p]
 $$
 as rings.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives bijectivity, and steps <1>2--<1>4 show that $\Phi$ is a unital ring homomorphism. Hence it is a ring isomorphism.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

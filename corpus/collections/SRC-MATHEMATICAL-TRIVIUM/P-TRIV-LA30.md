@@ -20,16 +20,21 @@ Let U be $n \times n$ unitary matrix.
 Calculate the number of independent elements of $U .$
 :::
 
-::: {.solution}
 Interpret “independent elements” as independent real parameters.
 
-<1>1. The first column of a unitary matrix has
+::: pf
+
+::: pf-step
+
+The first column of a unitary matrix has
 $$
 2n-1
 $$
 independent real parameters.
 
-::: {.proof}
+
+::: pf-proof
+
 A column of a complex $n\times n$ matrix lies in $\mathbb C^n$, which has
 real dimension $2n$. Unitarity requires the column to have norm $1$, imposing
 one real equation. Thus the first column lies on the sphere
@@ -37,15 +42,22 @@ $$
 S^{2n-1}
 $$
 and has $2n-1$ real parameters.
+
 :::
 
-<1>2. Once the first $k-1$ orthonormal columns are fixed, the $k$th column has
+:::
+
+::: pf-step
+
+Once the first $k-1$ orthonormal columns are fixed, the $k$th column has
 $$
 2(n-k+1)-1
 $$
 independent real parameters.
 
-::: {.proof}
+
+::: pf-proof
+
 The orthogonal complement of the first $k-1$ columns is a complex vector space
 of complex dimension
 $$
@@ -60,44 +72,69 @@ real dimension
 $$
 2(n-k+1)-1.
 $$
+
 :::
 
-<1>3. Therefore the total number of independent real parameters is
+:::
+
+::: pf-step
+
+Therefore the total number of independent real parameters is
 $$
 \sum_{k=1}^{n}
 \bigl(2(n-k+1)-1\bigr).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the independent choices from step <1>2 for all $n$ columns.
+
 :::
 
-<1>4. This sum equals
+:::
+
+::: pf-step
+
+This sum equals
 $$
 (2n-1)+(2n-3)+\cdots+3+1=n^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The sum of the first $n$ positive odd integers is $n^2$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{n^2}
 $$
 independent real parameters are needed to specify an $n\times n$ unitary
 matrix.
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>4. Equivalently,
 $$
 \dim_{\mathbb R}U(n)=n^2.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required count.
+
 :::
+
 :::

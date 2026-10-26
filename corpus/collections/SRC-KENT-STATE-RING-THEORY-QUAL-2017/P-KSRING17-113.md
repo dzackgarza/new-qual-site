@@ -21,7 +21,6 @@ audit:
 (b) Find an ideal I of $\mathbb { Z } [ x ]$ such that $( 2 x - 1 ) \subsetneq I \subsetneq \mathbb { Z } [ x ]$
 :::
 
-::: {.solution}
 Define
 $$
 \varphi:\ZZ[x]\to\ZZ\left[\frac12\right]
@@ -33,9 +32,15 @@ $$
 f\left(\frac12\right).
 $$
 
-<1>1. The map $\varphi$ is a ring homomorphism.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is a ring homomorphism.
+
+
+::: pf-proof
+
 Evaluation at a fixed element of a commutative ring preserves addition, multiplication, and the identity:
 $$
 \varphi(f+g)
@@ -55,11 +60,18 @@ Also
 $$
 \varphi(1)=1.
 $$
+
 :::
 
-<1>2. The map $\varphi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\varphi$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 \frac{a}{2^n}
@@ -79,16 +91,23 @@ $$
 \ZZ[1/2]
 $$
 lies in the image.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (2x-1)
 \subseteq
 \ker\varphi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the generator:
 $$
 \varphi(2x-1)
@@ -102,9 +121,14 @@ $$
 2x-1
 $$
 lies in the kernel.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 f(x)\in\ker\varphi.
 $$
@@ -117,7 +141,9 @@ $$
 \QQ[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 $$
 f\in\ker\varphi
@@ -136,9 +162,14 @@ $$
 2x-1
 $$
 divides $f$ in $\QQ[x]$.
+
 :::
 
-<1>5. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 2x-1
 $$
@@ -147,7 +178,9 @@ $$
 \ZZ[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Its coefficients are
 $$
 2
@@ -155,14 +188,21 @@ $$
 -1,
 $$
 whose greatest common divisor is $1$.
+
 :::
 
-<1>6. The divisibility in step <1>4 already holds in
+:::
+
+::: pf-step
+
+The divisibility in step <1>4 already holds in
 $$
 \ZZ[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 $$
 2x-1
@@ -194,25 +234,37 @@ in
 $$
 \ZZ[x].
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \ker\varphi
 =
 (2x-1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives one inclusion.
 Steps <1>4--<1>6 show that every element of the kernel is divisible by
 $$
 2x-1,
 $$
 giving the reverse inclusion.
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \ZZ[x]/(2x-1)
@@ -221,15 +273,22 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>7, $\varphi$ is surjective with kernel
 $$
 (2x-1).
 $$
 The first isomorphism theorem gives the result.
+
 :::
 
-<1>9. For part (b), set
+:::
+
+::: pf-step
+
+For part (b), set
 $$
 \boxed{
 I
@@ -244,7 +303,9 @@ $$
 I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The containment is immediate from the definition.
 It is strict because
 $$
@@ -267,11 +328,18 @@ $$
 3=0,
 $$
 impossible.
+
 :::
 
-<1>10. The ideal $I$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $I$ is proper.
+
+
+::: pf-proof
+
 Define
 $$
 \psi:\ZZ[x]\to\FF_3
@@ -317,9 +385,14 @@ I
 \subsetneq
 \ZZ[x].
 $$
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 (2x-1)
@@ -330,13 +403,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>9 and <1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves part (a), and step <1>11 proves part (b).
+
 :::
+
 :::

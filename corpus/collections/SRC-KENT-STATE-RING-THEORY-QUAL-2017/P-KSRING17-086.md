@@ -20,13 +20,16 @@ Let D be an integral domain and F a subring of D that is a field.
 Show that if each element of D is algebraic over F , then D is a field.
 :::
 
-::: {.solution}
 Let
 $$
 0\ne a\in D.
 $$
 
-<1>1. Since $a$ is algebraic over $F$, there is a nonzero polynomial
+::: pf
+
+::: pf-step
+
+Since $a$ is algebraic over $F$, there is a nonzero polynomial
 $$
 f(X)
 \in
@@ -38,12 +41,19 @@ f(a)=0.
 $$
 Choose such a polynomial of minimal degree.
 
-::: {.proof}
+
+::: pf-proof
+
 Algebraicity of $a$ over the field $F$ gives at least one nonzero polynomial relation.
 The set of degrees of such relations is a nonempty subset of the nonnegative integers, so it has a least element.
+
 :::
 
-<1>2. We may assume the chosen polynomial is monic:
+:::
+
+::: pf-step
+
+We may assume the chosen polynomial is monic:
 $$
 f(X)
 =
@@ -62,18 +72,27 @@ $$
 c_i\in F.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The leading coefficient of the minimal-degree polynomial is a nonzero element of the field $F$, hence a unit.
 Multiplying the polynomial by the inverse of its leading coefficient preserves its degree and its set of roots, and makes it monic.
+
 :::
 
-<1>3. The constant coefficient
+:::
+
+::: pf-step
+
+The constant coefficient
 $$
 c_0
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 c_0=0.
@@ -133,9 +152,14 @@ Therefore
 $$
 c_0\ne0.
 $$
+
 :::
 
-<1>4. Rearranging
+:::
+
+::: pf-step
+
+Rearranging
 $$
 f(a)=0
 $$
@@ -155,21 +179,30 @@ c_1
 -c_0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 X=a
 $$
 in the monic relation from step <1>2 and factor $a$ from all positive-degree terms.
+
 :::
 
-<1>5. The element
+:::
+
+::: pf-step
+
+The element
 $$
 c_0
 $$
 is a unit of $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 c_0\ne0.
@@ -196,11 +229,18 @@ c_0^{-1}
 $$
 lie in $D$.
 Thus $c_0$ is a unit of $D$.
+
 :::
 
-<1>6. The element $a$ is a unit of $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $a$ is a unit of $D$.
+
+
+::: pf-proof
+
 Multiply the identity in step <1>4 by
 $$
 -c_0^{-1}.
@@ -232,35 +272,53 @@ $$
 c_i,c_0^{-1}\in F\subseteq D.
 $$
 Thus $a$ has a multiplicative inverse in $D$.
+
 :::
 
-<1>7. Every nonzero element of $D$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $D$ is invertible.
+
+
+::: pf-proof
+
 The nonzero element
 $$
 a\in D
 $$
 was arbitrary.
 Step <1>6 shows that every such $a$ is a unit.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 D\text{ is a field}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring $D$ is already assumed to be an integral domain, hence a nonzero commutative ring with identity.
 Step <1>7 shows that every nonzero element is invertible.
 This is exactly the definition of a field.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

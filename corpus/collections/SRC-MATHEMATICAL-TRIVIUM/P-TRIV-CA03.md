@@ -23,8 +23,11 @@ z ^ { 2 } + 3 z + 1 2 = 0 , \qquad z ^ { 4 } + 5 z ^ { 2 } + 4 = 0 , \qquad z ^ 
 $$
 :::
 
-::: {.solution}
-<1>1. The roots of
+::: pf
+
+::: pf-step
+
+The roots of
 $$
 z^2+3z+12=0
 $$
@@ -35,7 +38,9 @@ z=\frac{-3\pm i\sqrt{39}}{2}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quadratic formula gives
 $$
 z
@@ -46,9 +51,14 @@ z
 =
 \frac{-3\pm i\sqrt{39}}{2}.
 $$
+
 :::
 
-<1>2. The roots of
+:::
+
+::: pf-step
+
+The roots of
 $$
 z^4+5z^2+4=0
 $$
@@ -57,7 +67,9 @@ $$
 \boxed{z=\pm i,\ \pm2i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 w=z^2.
@@ -74,9 +86,14 @@ z^2=-1
 z^2=-4,
 $$
 which gives the four stated roots.
+
 :::
 
-<1>3. The solutions of
+:::
+
+::: pf-step
+
+The solutions of
 $$
 z^6=1
 $$
@@ -89,7 +106,9 @@ k=0,1,2,3,4,5.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 1=e^{2\pi i m},
@@ -108,9 +127,14 @@ $$
 \theta=\frac{\pi m}{3}.
 $$
 Modulo $2\pi$, exactly six values occur, represented by $m=0,\ldots,5$.
+
 :::
 
-<1>4. The solutions of
+:::
+
+::: pf-step
+
+The solutions of
 $$
 z^3=-1
 $$
@@ -125,7 +149,9 @@ e^{i5\pi/3}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 -1=e^{i(\pi+2\pi m)}.
@@ -137,9 +163,14 @@ z
 e^{i(\pi+2\pi m)/3}.
 $$
 Modulo $2\pi$, the three distinct values arise from $m=0,1,2$.
+
 :::
 
-<1>5. Equivalently, the roots in step <1>4 are
+:::
+
+::: pf-step
+
+Equivalently, the roots in step <1>4 are
 $$
 \boxed{
 \frac12+i\frac{\sqrt3}{2},
@@ -150,13 +181,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Euler's formula to the three polar forms from step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 give all roots requested in the four equations.
+
 :::
+
 :::

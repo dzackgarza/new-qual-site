@@ -23,7 +23,6 @@ Let R be a commutative ring with identity and M a maximal ideal of R. Let $R _ {
 (b) The fields $R / M$ and $R _ { M } / M _ { M }$ are isomorphic.
 :::
 
-::: {.solution}
 Let
 $$
 S
@@ -32,7 +31,11 @@ R\setminus M.
 $$
 Since $M$ is maximal in a commutative ring, it is prime.
 
-<1>1. The set
+::: pf
+
+::: pf-step
+
+The set
 $$
 M_M
 \coloneqq
@@ -43,7 +46,9 @@ a\in M,\ s\in S
 $$
 is well-defined as a subset of $R_M$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \frac as
@@ -97,11 +102,18 @@ $$
 b\in M.
 $$
 Thus membership in $M_M$ does not depend on the chosen representative.
+
 :::
 
-<1>2. The set $M_M$ is closed under subtraction.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $M_M$ is closed under subtraction.
+
+
+::: pf-proof
+
 Let
 $$
 \frac as,\frac bt
@@ -138,11 +150,18 @@ Therefore the difference belongs to
 $$
 M_M.
 $$
+
 :::
 
-<1>3. The set $M_M$ absorbs multiplication by arbitrary elements of $R_M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $M_M$ absorbs multiplication by arbitrary elements of $R_M$.
+
+
+::: pf-proof
+
 Let
 $$
 \frac rs
@@ -177,9 +196,14 @@ the product lies in
 $$
 M_M.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 M_M
@@ -188,11 +212,18 @@ R_M.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives the additive-subgroup condition, and step <1>3 gives absorption under multiplication by arbitrary elements.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac as
 \in
@@ -208,7 +239,9 @@ $$
 $$
 is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 a\notin M,
@@ -234,9 +267,14 @@ $$
 \frac as
 $$
 is invertible.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 \frac as
 \in
@@ -248,7 +286,9 @@ $$
 $$
 is not a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 a\in M,
@@ -309,11 +349,18 @@ $$
 \frac as
 $$
 is not a unit.
+
 :::
 
-<1>7. The nonunits of $R_M$ are exactly the elements of $M_M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The nonunits of $R_M$ are exactly the elements of $M_M$.
+
+
+::: pf-proof
+
 Step <1>5 shows every element outside $M_M$ is a unit.
 Step <1>6 shows every element of $M_M$ is a nonunit.
 Thus
@@ -324,11 +371,18 @@ M_M
 R_M\setminus R_M^\times.
 }
 $$
+
 :::
 
-<1>8. The ideal $M_M$ is the unique maximal ideal of $R_M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $M_M$ is the unique maximal ideal of $R_M$.
+
+
+::: pf-proof
+
 By step <1>4, the set of nonunits is an ideal.
 A commutative ring is local exactly when its nonunits form an ideal, and in that case this ideal is the unique maximal ideal.
 Hence
@@ -338,9 +392,14 @@ M_M
 \text{ is the unique maximal ideal of }R_M.
 }
 $$
+
 :::
 
-<1>9. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \Phi:R_M\to R/M
 $$
@@ -353,7 +412,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 s\notin M,
@@ -368,11 +429,18 @@ R/M,
 $$
 and hence invertible.
 Thus the displayed formula makes sense.
+
 :::
 
-<1>10. The map $\Phi$ is well-defined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is well-defined.
+
+
+::: pf-proof
+
 Suppose
 $$
 \frac as
@@ -436,11 +504,18 @@ $$
 (b+M)(t+M)^{-1}.
 $$
 Thus $\Phi$ is well-defined.
+
 :::
 
-<1>11. The map $\Phi$ is a ring homomorphism.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is a ring homomorphism.
+
+
+::: pf-proof
+
 For
 $$
 \frac as,\frac bt
@@ -478,11 +553,18 @@ Also
 $$
 \Phi(1)=1+M.
 $$
+
 :::
 
-<1>12. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 r+M
@@ -498,11 +580,18 @@ $$
 r+M.
 $$
 Thus every element is in the image.
+
 :::
 
-<1>13. The kernel of $\Phi$ is exactly $M_M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The kernel of $\Phi$ is exactly $M_M$.
+
+
+::: pf-proof
+
 One has
 $$
 \Phi\left(\frac as\right)=0+M
@@ -531,9 +620,14 @@ Thus
 $$
 \ker\Phi=M_M.
 $$
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 R_M/M_M
@@ -542,7 +636,9 @@ R/M.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>11--<1>13, $\Phi$ is a surjective ring homomorphism with kernel
 $$
 M_M.
@@ -553,11 +649,15 @@ R_M/M_M
 \cong
 R/M.
 $$
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves part (a), and step <1>14 proves part (b).
+
 :::
+
 :::

@@ -20,7 +20,6 @@ Let R be a non-zero ring with identity.
 Show that every proper ideal of R is contained in a maximal ideal.
 :::
 
-::: {.solution}
 Let
 $$
 I\trianglelefteq R
@@ -37,17 +36,28 @@ I\subseteq J\subsetneq R
 $$
 ordered by inclusion.
 
-<1>1. The partially ordered set $\mathcal P$ is nonempty.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The partially ordered set $\mathcal P$ is nonempty.
+
+
+::: pf-proof
+
 The ideal
 $$
 I
 $$
 itself lies in $\mathcal P$, because it is proper by hypothesis.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 \mathcal C
 \subseteq
@@ -62,7 +72,9 @@ U
 $$
 is an ideal of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 The union is nonempty because every member of $\mathcal C$ contains $I$.
 
 Let
@@ -105,11 +117,18 @@ $$
 rx,xr\in J\subseteq U.
 $$
 Hence $U$ is a two-sided ideal.
+
 :::
 
-<1>3. The ideal $U$ from step <1>2 is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $U$ from step <1>2 is proper.
+
+
+::: pf-proof
+
 Suppose
 $$
 U=R.
@@ -138,11 +157,18 @@ Therefore
 $$
 U\subsetneq R.
 $$
+
 :::
 
-<1>4. The ideal $U$ is an upper bound for the chain $\mathcal C$ in $\mathcal P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $U$ is an upper bound for the chain $\mathcal C$ in $\mathcal P$.
+
+
+::: pf-proof
+
 Every member
 $$
 J\in\mathcal C
@@ -156,20 +182,34 @@ $$
 U\in\mathcal P
 $$
 and is an upper bound for $\mathcal C$.
+
 :::
 
-<1>5. The poset $\mathcal P$ has a maximal element.
+:::
 
-::: {.proof}
+::: pf-step
+
+The poset $\mathcal P$ has a maximal element.
+
+
+::: pf-proof
+
 By step <1>1, $\mathcal P$ is nonempty. By step <1>4, every chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore gives a maximal element
 $$
 M\in\mathcal P.
 $$
+
 :::
 
-<1>6. The ideal $M$ from step <1>5 is a maximal ideal of $R$ containing $I$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ideal $M$ from step <1>5 is a maximal ideal of $R$ containing $I$.
+
+
+::: pf-proof
+
 By definition of $\mathcal P$,
 $$
 I\subseteq M\subsetneq R.
@@ -191,22 +231,33 @@ $$
 J=M.
 $$
 Thus there is no proper ideal strictly between $M$ and $R$, so $M$ is maximal.
+
 :::
 
-<1>7. Therefore every proper ideal is contained in a maximal ideal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every proper ideal is contained in a maximal ideal.
+
+
+::: pf-proof
+
 Starting from an arbitrary proper ideal $I$, step <1>6 constructs a maximal ideal $M$ with
 $$
 \boxed{
 I\subseteq M.
 }
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

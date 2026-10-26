@@ -20,8 +20,11 @@ Let R be a finite commutative ring with more than one element and no zero-diviso
 Show that R is a field.
 :::
 
-::: {.solution}
-<1>1. For every nonzero $a\in R$, the map
+::: pf
+
+::: pf-step
+
+For every nonzero $a\in R$, the map
 $$
 L_a:R\to R,
 \qquad
@@ -29,7 +32,9 @@ L_a(x)=ax
 $$
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 ax=ay.
@@ -47,17 +52,31 @@ $$
 x=y,
 $$
 so $L_a$ is injective.
+
 :::
 
-<1>2. For every nonzero $a\in R$, the map $L_a$ is bijective.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every nonzero $a\in R$, the map $L_a$ is bijective.
+
+
+::: pf-proof
+
 The set $R$ is finite. Any injective self-map of a finite set is surjective. Apply this to $L_a$ from step <1>1.
+
 :::
 
-<1>3. The ring $R$ has a multiplicative identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ has a multiplicative identity.
+
+
+::: pf-proof
+
 Because $R$ has more than one element, choose
 $$
 a\in R,
@@ -100,11 +119,18 @@ $$
 xe=x.
 $$
 Hence $e$ is a multiplicative identity.
+
 :::
 
-<1>4. Every nonzero element of $R$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $R$ is invertible.
+
+
+::: pf-proof
+
 Let
 $$
 x\in R,
@@ -128,20 +154,31 @@ $$
 yx=e
 $$
 as well. Thus $y$ is the multiplicative inverse of $x$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{R\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $R$ is a nonzero commutative ring with identity. By step <1>4, every nonzero element has a multiplicative inverse. This is exactly the definition of a field.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

@@ -25,12 +25,17 @@ Prove that R is a field.
 Erratum: the literal statement cannot hold under the standard definition of prime ideal, because the improper ideal $R$ itself is never prime. The intended hypothesis is that every proper ideal of $R$ is prime.
 :::
 
-::: {.solution}
 Assume the corrected hypothesis that every proper ideal of $R$ is prime.
 
-<1>1. The zero ideal is prime.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The zero ideal is prime.
+
+
+::: pf-proof
+
 If
 $$
 (0)=R,
@@ -50,11 +55,18 @@ $$
 (0)
 $$
 is prime.
+
 :::
 
-<1>2. The ring $R$ is an integral domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $R$ is an integral domain.
+
+
+::: pf-proof
+
 Since
 $$
 (0)
@@ -80,9 +92,14 @@ a=0
 b=0.
 $$
 Hence $R$ is a domain.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 0\ne a\in R.
 $$
@@ -92,7 +109,9 @@ $$
 $$
 then $a$ is a unit.
 
-::: {.proof}
+
+::: pf-proof
+
 The equality
 $$
 (a)=R
@@ -110,9 +129,14 @@ $$
 r\in R.
 $$
 Thus $a$ is invertible.
+
 :::
 
-<1>4. Suppose instead that
+:::
+
+::: pf-step
+
+Suppose instead that
 $$
 (a)
 \subsetneq
@@ -130,7 +154,9 @@ $$
 $$
 is prime.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 (a^2)\subseteq(a)
@@ -144,14 +170,21 @@ $$
 (a^2)
 $$
 is proper. By the corrected hypothesis, every proper ideal is prime.
+
 :::
 
-<1>5. Under the assumptions of step <1>4,
+:::
+
+::: pf-step
+
+Under the assumptions of step <1>4,
 $$
 a\in(a^2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 a\cdot a
@@ -168,11 +201,18 @@ is prime, primality implies
 $$
 a\in(a^2).
 $$
+
 :::
 
-<1>6. The element $a$ is a unit.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $a$ is a unit.
+
+
+::: pf-proof
+
 By step <1>5, there exists
 $$
 r\in R
@@ -200,11 +240,18 @@ $$
 ar=1,
 $$
 so $a$ is invertible.
+
 :::
 
-<1>7. Every nonzero element of $R$ is a unit.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $R$ is a unit.
+
+
+::: pf-proof
+
 Let
 $$
 0\ne a\in R.
@@ -218,20 +265,31 @@ $$
 (a)\subsetneq R,
 $$
 steps <1>4--<1>6 give invertibility. Thus every nonzero element is a unit.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{R\text{ is a field}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The ring is commutative with identity, and by step <1>7 every nonzero element is invertible.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves the corrected statement intended by the source.
+
 :::
+
 :::

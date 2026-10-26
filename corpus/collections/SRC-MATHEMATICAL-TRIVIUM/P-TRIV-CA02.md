@@ -23,23 +23,33 @@ e ^ { i \theta } , \qquad 3 e ^ { i \pi / 4 } , \qquad { \frac { 1 } { 2 } } e ^
 $$
 :::
 
-::: {.solution}
-<1>1. Euler's formula gives
+::: pf
+
+::: pf-step
+
+Euler's formula gives
 $$
 e^{i\theta}
 =
 \cos\theta+i\sin\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard identity
 $$
 e^{it}=\cos t+i\sin t
 $$
 for real $t$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 3e^{i\pi/4}
 =
@@ -50,7 +60,9 @@ i\frac{3\sqrt2}{2}
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 3e^{i\pi/4}
@@ -70,16 +82,23 @@ $$
 \frac{\sqrt2}{2},
 $$
 the displayed value follows.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \frac12e^{i\pi}
 =
 \boxed{-\frac12}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \cos\pi=-1
@@ -90,16 +109,23 @@ Euler's formula gives
 $$
 e^{i\pi}=-1.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 2e^{2i\pi/3}
 =
 \boxed{-1+i\sqrt3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Euler's formula gives
 $$
 2e^{2i\pi/3}
@@ -121,9 +147,14 @@ $$
 \frac{\sqrt3}{2}.
 $$
 Multiplying by $2$ gives the result.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 e^{-3i\pi/4}
 =
@@ -134,7 +165,9 @@ i\frac{\sqrt2}{2}
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By Euler's formula,
 $$
 e^{-3i\pi/4}
@@ -155,11 +188,15 @@ $$
 =
 -\frac{\sqrt2}{2}.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 give the Cartesian forms of all five numbers.
+
 :::
+
 :::

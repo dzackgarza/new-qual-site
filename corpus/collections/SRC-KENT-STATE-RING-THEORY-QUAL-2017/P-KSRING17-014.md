@@ -19,8 +19,11 @@ audit:
 Let R be a subring of a field F such that for each x in F either $x \in R { \mathrm { ~ o r ~ } } x ^ { - 1 } \in R$ . Prove that if I and J are two ideals of R, then either $I \subseteq J { \mathrm { ~ o r ~ } } J \subseteq I$
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that neither
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that neither
 $$
 I\subseteq J
 $$
@@ -35,7 +38,9 @@ a\in I\setminus J,
 b\in J\setminus I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Failure of
 $$
 I\subseteq J
@@ -57,9 +62,14 @@ $$
 0\in I\cap J,
 $$
 both $a$ and $b$ are nonzero.
+
 :::
 
-<1>2. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \frac ab\in F
 $$
@@ -72,7 +82,9 @@ $$
 \frac ba\in R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the defining hypothesis on $R\subseteq F$ to the nonzero field element
 $$
 x=\frac ab.
@@ -85,11 +97,18 @@ or
 $$
 x^{-1}=\frac ba\in R.
 $$
+
 :::
 
-<1>3. The first alternative in step <1>2 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The first alternative in step <1>2 is impossible.
+
+
+::: pf-proof
+
 If
 $$
 \frac ab\in R,
@@ -109,11 +128,18 @@ This contradicts
 $$
 a\notin J.
 $$
+
 :::
 
-<1>4. The second alternative in step <1>2 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The second alternative in step <1>2 is impossible.
+
+
+::: pf-proof
+
 If
 $$
 \frac ba\in R,
@@ -133,9 +159,14 @@ This contradicts
 $$
 b\notin I.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I\subseteq J
@@ -144,13 +175,19 @@ J\subseteq I.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If the two ideals were incomparable, step <1>1 would produce $a,b$, while step <1>2 says one of the two alternatives in steps <1>3--<1>4 must hold. Both alternatives are impossible. Hence the ideals are comparable.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

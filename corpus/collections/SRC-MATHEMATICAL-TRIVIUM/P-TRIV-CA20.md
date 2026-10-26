@@ -23,7 +23,6 @@ We choose to have a branch cut on the positive real axis.
 (b) Find a relation between the integral $I _ { 1 }$ and $I _ { 2 } = \int _ { 0 } ^ { \infty } \frac { 1 } { ( x + i ) \sqrt { x } } \mathrm { d } x$ ,then use the result from the previous point to find the value of $I _ { 2 }$ .
 :::
 
-::: {.solution}
 Use the branch
 $$
 \sqrt z
@@ -36,7 +35,11 @@ z=re^{i\theta},
 $$
 This places the branch cut on the positive real axis.
 
-<1>1. The integrand
+::: pf
+
+::: pf-step
+
+The integrand
 $$
 F(z)
 =
@@ -47,14 +50,21 @@ $$
 z=-i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The factor $z+i$ vanishes only at $-i$. The square root has a branch point at
 $0$ rather than a pole, and the contour excludes $0$ by the inner circle.
 With the chosen branch, $-i$ has argument $3\pi/2$ and lies in the branch
 domain.
+
 :::
 
-<1>2. On the chosen branch,
+:::
+
+::: pf-step
+
+On the chosen branch,
 $$
 \sqrt{-i}
 =
@@ -67,7 +77,9 @@ $$
 e^{-3\pi i/4}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 -i=e^{3\pi i/2}
@@ -84,11 +96,18 @@ $$
 =
 e^{-3\pi i/4}.
 $$
+
 :::
 
-<1>3. The outer-circle contribution tends to zero as $R\to\infty$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The outer-circle contribution tends to zero as $R\to\infty$.
+
+
+::: pf-proof
+
 On $|z|=R>1$,
 $$
 |z+i|
@@ -108,12 +127,19 @@ $$
 \frac{2\pi R}{(R-1)\sqrt R}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. The inner-circle contribution tends to zero as
+:::
+
+::: pf-step
+
+The inner-circle contribution tends to zero as
 $\varepsilon\to0^+$.
 
-::: {.proof}
+
+::: pf-proof
+
 On $|z|=\varepsilon<1$,
 $$
 |z+i|
@@ -136,9 +162,14 @@ $$
 \frac{2\pi\sqrt\varepsilon}{1-\varepsilon}
 \longrightarrow0.
 $$
+
 :::
 
-<1>5. In the limit
+:::
+
+::: pf-step
+
+In the limit
 $$
 R\to\infty,
 \qquad
@@ -152,7 +183,9 @@ I_2
 \frac{dx}{(x+i)\sqrt x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the upper side of the positive real axis,
 $$
 \arg z=0,
@@ -163,11 +196,18 @@ $$
 $$
 The ray is traversed from $\varepsilon$ to $R$, giving exactly the truncated
 version of $I_2$.
+
 :::
 
-<1>6. The lower-ray contribution also tends to $I_2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The lower-ray contribution also tends to $I_2$.
+
+
+::: pf-proof
+
 On the lower side of the cut,
 $$
 \arg z=2\pi,
@@ -190,19 +230,31 @@ $$
 \frac{dx}{(x+i)\sqrt x}.
 $$
 Taking the limits gives $I_2$.
+
 :::
 
-<1>7. Therefore the limiting keyhole integral satisfies
+:::
+
+::: pf-step
+
+Therefore the limiting keyhole integral satisfies
 $$
 I_1=2I_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>4 show that both circular arcs vanish in the limit, while
 steps <1>5--<1>6 show that the two ray contributions both tend to $I_2$.
+
 :::
 
-<1>8. The residue theorem gives
+:::
+
+::: pf-step
+
+The residue theorem gives
 $$
 I_1
 =
@@ -211,7 +263,9 @@ I_1
 \sqrt2\pi(1-i).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the contour encloses exactly one pole with residue
 $$
 e^{-3\pi i/4}
@@ -229,9 +283,14 @@ $$
 =
 \sqrt2\pi(1-i).
 $$
+
 :::
 
-<1>9. Consequently
+:::
+
+::: pf-step
+
+Consequently
 $$
 \boxed{
 I_2
@@ -243,17 +302,23 @@ I_2
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 $$
 I_2=\frac{I_1}{2}.
 $$
 Substitute the value of $I_1$ from step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 solves part (a), and steps <1>7 and <1>9 solve part (b).
+
 :::
+
 :::

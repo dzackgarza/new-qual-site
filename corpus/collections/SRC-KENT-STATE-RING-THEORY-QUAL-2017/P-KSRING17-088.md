@@ -23,8 +23,11 @@ Let D be an integral domain.
 (b) For $x \in D$ denote $( x ) = \{ d x \mid d \in D \}$ . Prove that if $( a ) + ( b ) = ( d )$ , then d is a greatest common divisor of a and b.
 :::
 
-::: {.solution}
-<1>1. A greatest common divisor of
+::: pf
+
+::: pf-step
+
+A greatest common divisor of
 $$
 a,b\in D
 $$
@@ -49,12 +52,19 @@ $$
 c\mid d.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard divisibility definition of a greatest common divisor in an integral domain.
 Such a gcd is unique only up to multiplication by a unit.
+
 :::
 
-<1>2. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 (a)+(b)=(d).
 $$
@@ -65,7 +75,9 @@ d\mid a
 d\mid b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 a\in(a)
@@ -104,9 +116,14 @@ Thus
 $$
 d\mid b.
 $$
+
 :::
 
-<1>3. Because
+:::
+
+::: pf-step
+
+Because
 $$
 d\in(d)
 =(a)+(b),
@@ -120,7 +137,9 @@ $$
 d=ua+vb.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 (a)+(b)
@@ -134,9 +153,14 @@ d
 (a)+(b),
 $$
 the displayed representation follows.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 c\in D
 $$
@@ -146,7 +170,9 @@ $$
 c\mid d.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 c\mid a
@@ -179,9 +205,14 @@ Hence
 $$
 c\mid d.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 d
@@ -189,15 +220,21 @@ d
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that $d$ is a common divisor.
 Step <1>4 shows that every common divisor divides $d$.
 These are exactly the two conditions in the definition from step <1>1.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

@@ -27,7 +27,6 @@ Verify your example.
 (c) Show that if R is a commutative ring with identity, then there is a proper ideal I of R such that $R / I$ is nilpotent-free, and find the ideal A of part (a).
 :::
 
-::: {.solution}
 For part (a), let
 $$
 \mathcal F
@@ -48,13 +47,24 @@ A
 \bigcap_{J\in\mathcal F}J.
 $$
 
-<1>1. The set $A$ is an ideal of $R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $A$ is an ideal of $R$.
+
+
+::: pf-proof
+
 An arbitrary intersection of ideals is an ideal.
+
 :::
 
-<1>2. The canonical map
+:::
+
+::: pf-step
+
+The canonical map
 $$
 \Phi:
 R/A
@@ -69,7 +79,9 @@ $$
 $$
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 The map is well-defined because
 $$
 A\subseteq J
@@ -105,11 +117,18 @@ Hence
 $$
 \ker\Phi=0.
 $$
+
 :::
 
-<1>3. A direct product of nilpotent-free rings is nilpotent-free.
+:::
 
-::: {.proof}
+::: pf-step
+
+A direct product of nilpotent-free rings is nilpotent-free.
+
+
+::: pf-proof
+
 Let
 $$
 (x_J)_{J\in\mathcal F}
@@ -137,15 +156,22 @@ x_J=0
 $$
 for every $J$.
 Therefore the product element is zero.
+
 :::
 
-<1>4. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 R/A
 $$
 is nilpotent-free.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 R/A
@@ -158,9 +184,14 @@ $$
 R/A
 $$
 is nilpotent-free.
+
 :::
 
-<1>5. The ideal $A$ is contained in every ideal
+:::
+
+::: pf-step
+
+The ideal $A$ is contained in every ideal
 $$
 J
 $$
@@ -170,16 +201,23 @@ R/J
 $$
 is nilpotent-free.
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from the definition
 $$
 A
 =
 \bigcap_{J\in\mathcal F}J.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 A
@@ -188,13 +226,20 @@ A
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows that $A$ itself has the required property.
 Step <1>5 shows that every ideal with the required property contains $A$.
 Thus $A$ is the unique smallest such ideal.
+
 :::
 
-<1>7. For part (b), take
+:::
+
+::: pf-step
+
+For part (b), take
 $$
 \boxed{
 R=M_2(F)
@@ -203,7 +248,9 @@ $$
 for any field $F$.
 Then $R$ is simple and not nilpotent-free.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix
 $$
 E_{12}
@@ -254,11 +301,18 @@ Hence the only proper ideal is
 $$
 (0).
 $$
+
 :::
 
-<1>8. For the ring in step <1>7, every proper quotient is not nilpotent-free.
+:::
 
-::: {.proof}
+::: pf-step
+
+For the ring in step <1>7, every proper quotient is not nilpotent-free.
+
+
+::: pf-proof
+
 The only proper ideal is
 $$
 I=(0).
@@ -274,9 +328,14 @@ $$
 E_{12}.
 $$
 Thus every proper quotient fails to be nilpotent-free.
+
 :::
 
-<1>9. Now assume $R$ is commutative with identity and set
+:::
+
+::: pf-step
+
+Now assume $R$ is commutative with identity and set
 $$
 \mathcal N
 \coloneqq
@@ -284,7 +343,9 @@ $$
 $$
 Then $\mathcal N$ is an ideal.
 
-::: {.proof}
+
+::: pf-proof
+
 The element $0$ is nilpotent.
 If
 $$
@@ -331,15 +392,22 @@ r^m x^m
 0.
 $$
 Hence $\mathcal N$ is an ideal.
+
 :::
 
-<1>10. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 R/\mathcal N
 $$
 is nilpotent-free.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 (r+\mathcal N)^n
@@ -373,9 +441,14 @@ r+\mathcal N
 0+\mathcal N.
 $$
 So the quotient has no nonzero nilpotents.
+
 :::
 
-<1>11. If
+:::
+
+::: pf-step
+
+If
 $$
 I\trianglelefteq R
 $$
@@ -388,7 +461,9 @@ $$
 \mathcal N\subseteq I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 n\in\mathcal N.
@@ -421,9 +496,14 @@ Thus
 $$
 n\in I.
 $$
+
 :::
 
-<1>12. Therefore, in the commutative case,
+:::
+
+::: pf-step
+
+Therefore, in the commutative case,
 $$
 \boxed{
 A
@@ -433,7 +513,9 @@ A
 $$
 the nilradical of $R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 shows
 $$
 R/\mathcal N
@@ -447,11 +529,18 @@ By the characterization of the smallest ideal in part (a),
 $$
 A=\mathcal N.
 $$
+
 :::
 
-<1>13. In particular, if $R$ is nonzero, there is a proper ideal with nilpotent-free quotient.
+:::
 
-::: {.proof}
+::: pf-step
+
+In particular, if $R$ is nonzero, there is a proper ideal with nilpotent-free quotient.
+
+
+::: pf-proof
+
 Take
 $$
 I=\mathcal N.
@@ -469,11 +558,15 @@ Hence
 $$
 \mathcal N\subsetneq R.
 $$
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves part (a), step <1>8 proves part (b), and steps <1>12--<1>13 prove part (c).
+
 :::
+
 :::

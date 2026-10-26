@@ -21,7 +21,6 @@ Suppose that for every $a \in R$ , either a or $1 - a$ is invertible.
 Prove that $N = \{ a \in R \mid$ a is not invertible} is an ideal of R.
 :::
 
-::: {.solution}
 Let
 $$
 N
@@ -29,21 +28,32 @@ N
 \{a\in R:a\text{ is not a unit}\}.
 $$
 
-<1>1. The element
+::: pf
+
+::: pf-step
+
+The element
 $$
 0
 $$
 lies in $N$.
 
-::: {.proof}
+
+::: pf-proof
+
 The zero element is not invertible in a nonzero ring with identity.
 Hence
 $$
 0\in N.
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 a\in N,
 $$
@@ -52,7 +62,9 @@ $$
 -a\in N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 -a
@@ -71,9 +83,14 @@ $$
 -a
 $$
 is not invertible.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 a\in N
 $$
@@ -86,7 +103,9 @@ $$
 ra\in N.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 ra
@@ -112,9 +131,14 @@ Therefore
 $$
 ra\in N.
 $$
+
 :::
 
-<1>4. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 a,b\in N.
 $$
@@ -124,7 +148,9 @@ a+b
 $$
 is not invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 u
@@ -188,20 +214,32 @@ $$
 a+b
 $$
 cannot be a unit.
+
 :::
 
-<1>5. The set $N$ is an additive subgroup of $R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $N$ is an additive subgroup of $R$.
+
+
+::: pf-proof
+
 Step <1>1 gives
 $$
 0\in N.
 $$
 Step <1>2 gives closure under additive inverses, and step <1>4 gives closure under addition.
 Hence $N$ is an additive subgroup.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 N
@@ -209,18 +247,24 @@ N
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, $N$ is an additive subgroup of $R$.
 By step <1>3, it is closed under multiplication by arbitrary elements of $R$.
 Thus
 $$
 N\trianglelefteq R.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

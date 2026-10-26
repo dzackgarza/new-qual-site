@@ -30,7 +30,6 @@ Problem 34 of the source reads: Solve the integral $\int_0^\infty \frac{1}{1 + x
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
 
-::: {.solution}
 Use the branch
 $$
 \Log z=\log|z|+i\arg z,
@@ -39,19 +38,30 @@ $$
 $$
 on the slit plane $\CC\setminus[0,\infty)$.
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 F(z)=\frac{(\Log z)^3}{1+z^2}.
 $$
 Inside the standard keyhole contour about the positive real axis, the poles of
 $F$ are $z=i$ and $z=-i$.
 
-::: {.proof}
+
+::: pf-proof
+
 The only poles of $1/(1+z^2)$ are at $\pm i$, and both lie away from the
 branch cut.
+
 :::
 
-<1>2. The residues are
+:::
+
+::: pf-step
+
+The residues are
 $$
 \operatorname{Res}_{z=i}F(z)
 =
@@ -64,7 +74,9 @@ $$
 \frac{27\pi^3}{16}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the chosen branch,
 $$
 \Log i=i\frac\pi2,
@@ -87,14 +99,21 @@ $$
 =
 \frac{27\pi^3}{16}.
 $$
+
 :::
 
-<1>3. Hence the keyhole contour integral tends to
+:::
+
+::: pf-step
+
+Hence the keyhole contour integral tends to
 $$
 \frac{13\pi^4 i}{4}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The sum of the residues is
 $$
 \frac{26\pi^3}{16}
@@ -117,9 +136,14 @@ $$
 \varepsilon(|\log\varepsilon|+2\pi)^3
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. Set
+:::
+
+::: pf-step
+
+Set
 $$
 I_j
 =
@@ -136,7 +160,9 @@ $$
 8\pi^3 i,I_0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the upper side of the positive real axis,
 $$
 \Log x=\log x,
@@ -171,9 +197,14 @@ $$
 $$
 Letting $\varepsilon\to0^+$ and $R\to\infty$ yields the displayed
 combination of $I_0,I_1,I_2$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 I_0=\frac\pi2
 $$
@@ -182,7 +213,9 @@ $$
 I_1=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first identity is
 $$
 \int_0^\infty\frac{dx}{1+x^2}
@@ -198,9 +231,14 @@ I_1
 \cot\left(\frac\pi2\right)
 =0.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 -6\pi i,I_2
 +
@@ -209,7 +247,9 @@ $$
 \frac{13\pi^4 i}{4}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, the limiting contour integral is
 $$
 -6\pi i,I_2
@@ -231,9 +271,14 @@ $$
 4\pi^4i.
 $$
 Step <1>3 gives the value of the same contour integral.
+
 :::
 
-<1>7. Solving the equation in step <1>6 gives
+:::
+
+::: pf-step
+
+Solving the equation in step <1>6 gives
 $$
 \boxed{
 \int_0^\infty
@@ -243,7 +288,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>6,
 $$
 -6\pi i,I_2
@@ -262,11 +309,15 @@ I_2
 =
 \frac{\pi^3}{8}.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required value.
+
 :::
+
 :::

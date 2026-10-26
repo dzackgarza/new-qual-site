@@ -19,22 +19,32 @@ audit:
 Show that if p is a prime such that $p \equiv 1 { \bigl ( } { \mathrm { m o d ~ } } 4 { \bigr ) }$ , then $x ^ { 2 } + 1$ is not irreducible in $\mathbb { Z } _ { p } [ x ]$
 :::
 
-::: {.solution}
 Write
 $$
 p=4m+1.
 $$
 
-<1>1. Wilson's theorem gives
+::: pf
+
+::: pf-step
+
+Wilson's theorem gives
 $$
 (p-1)!\equiv-1\pmod p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is Wilson's theorem for the prime $p$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 (p-1)!
 \equiv
@@ -45,7 +55,9 @@ $$
 \pmod p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Pair the factors
 $$
 1,2,\ldots,p-1
@@ -78,9 +90,14 @@ k(p-k)\\
 \pmod p.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 $$
 p\equiv1\pmod4,
 $$
@@ -89,7 +106,9 @@ $$
 (-1)^{(p-1)/2}=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The congruence
 $$
 p\equiv1\pmod4
@@ -103,9 +122,14 @@ $$
 \frac{p-1}{2}
 $$
 is even.
+
 :::
 
-<1>4. The element
+:::
+
+::: pf-step
+
+The element
 $$
 a
 \coloneqq
@@ -118,7 +142,9 @@ $$
 a^2=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1--<1>3:
 $$
 -1
@@ -133,9 +159,14 @@ $$
 a^2+1=0
 $$
 in $\FF_p$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 x^2+1
 $$
@@ -144,7 +175,9 @@ $$
 \FF_p[x].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 a
@@ -161,11 +194,15 @@ x^2+1
 $$
 in $\FF_p[x]$.
 Both factors have positive degree, so the polynomial is not irreducible.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

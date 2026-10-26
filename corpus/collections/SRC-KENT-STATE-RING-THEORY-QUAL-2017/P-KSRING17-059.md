@@ -20,7 +20,6 @@ Let D be a principal ideal domain.
 Prove that every nonzero prime ideal of D is a maximal ideal.
 :::
 
-::: {.solution}
 Let
 $$
 P
@@ -35,9 +34,15 @@ $$
 p\ne0.
 $$
 
-<1>1. The element $p$ is irreducible.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The element $p$ is irreducible.
+
+
+::: pf-proof
+
 Suppose
 $$
 p=ab.
@@ -93,9 +98,14 @@ b\in(p)
 $$
 similarly implies that $a$ is a unit.
 Hence every factorization of $p$ has a unit factor, so $p$ is irreducible.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 I
 $$
@@ -108,15 +118,22 @@ $$
 I=(a).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every ideal of a PID is principal, so such an
 $$
 a\in D
 $$
 exists.
+
 :::
 
-<1>3. The inclusion
+:::
+
+::: pf-step
+
+The inclusion
 $$
 (p)\subseteq(a)
 $$
@@ -129,7 +146,9 @@ $$
 r\in D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 p\in(p)\subseteq(a),
@@ -143,9 +162,14 @@ for some
 $$
 r\in D.
 $$
+
 :::
 
-<1>4. Either
+:::
+
+::: pf-step
+
+Either
 $$
 I=D
 $$
@@ -154,7 +178,9 @@ $$
 I=(p).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 p=ar.
@@ -190,14 +216,21 @@ Thus
 $$
 I=(p).
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{P\text{ is maximal}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows that there is no proper ideal strictly between
 $$
 P=(p)
@@ -207,11 +240,15 @@ $$
 D.
 $$
 Since $P$ is prime, it is proper. Hence it is maximal.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Since $P$ was an arbitrary nonzero prime ideal, step <1>5 proves the theorem.
+
 :::
+
 :::

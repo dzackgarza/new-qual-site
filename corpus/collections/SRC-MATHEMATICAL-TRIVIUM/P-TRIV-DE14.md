@@ -23,8 +23,11 @@ audit:
 Solve $y'' - 6y' + 15y = 2\sin 3t$ with $y(0) = -1$ and $y'(0) = 4$.
 :::
 
-::: {.solution}
-<1>1. The homogeneous characteristic polynomial is
+::: pf
+
+::: pf-step
+
+The homogeneous characteristic polynomial is
 $$
 \lambda^2-6\lambda+15,
 $$
@@ -33,7 +36,9 @@ $$
 \lambda=3\pm i\sqrt6.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the quadratic formula:
 $$
 \lambda
@@ -42,9 +47,14 @@ $$
 =
 3\pm i\sqrt6.
 $$
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 y_h(t)
 =
@@ -56,27 +66,43 @@ C_2\sin(\sqrt6,t)
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard real basis associated with the conjugate roots in step <1>1.
+
 :::
 
-<1>3. Seek a particular solution
+:::
+
+::: pf-step
+
+Seek a particular solution
 $$
 y_p=A\sin3t+B\cos3t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The forcing has frequency $3$, and $\pm3i$ are not characteristic roots.
+
 :::
 
-<1>4. Substitution gives
+:::
+
+::: pf-step
+
+Substitution gives
 $$
 A+3B=\frac13,
 \qquad
 B-3A=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the ansatz,
 $$
 y_p'=3A\cos3t-3B\sin3t,
@@ -93,9 +119,14 @@ y_p''-6y_p'+15y_p
 (6B-18A)\cos3t.
 $$
 Match coefficients with $2\sin3t$ and divide by $6$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 A=\frac1{30},
 \qquad
@@ -110,11 +141,18 @@ y_p
 \frac1{10}\cos3t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From $B-3A=0$, one has $B=3A$. Substitution into the first equation of step <1>4 gives $10A=1/3$.
+
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 y(t)
 =
@@ -130,23 +168,37 @@ C_2\sin(\sqrt6,t)
 \frac1{10}\cos3t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the homogeneous solution from step <1>2 and the particular solution from step <1>5.
+
 :::
 
-<1>7. The condition $y(0)=-1$ gives
+:::
+
+::: pf-step
+
+The condition $y(0)=-1$ gives
 $$
 C_1=-\frac{11}{10}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 At $t=0$, the sine terms vanish and the cosine terms equal $1$, so
 $$
 C_1+\frac1{10}=-1.
 $$
+
 :::
 
-<1>8. The derivative at $t=0$ is
+:::
+
+::: pf-step
+
+The derivative at $t=0$ is
 $$
 y'(0)
 =
@@ -157,18 +209,27 @@ y'(0)
 \frac1{10}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate step <1>6. At $t=0$, the homogeneous derivative contributes $3C_1+\sqrt6 C_2$, while the derivative of the particular part contributes $1/10$.
+
 :::
 
-<1>9. The condition $y'(0)=4$ therefore gives
+:::
+
+::: pf-step
+
+The condition $y'(0)=4$ therefore gives
 $$
 C_2
 =
 \frac{6\sqrt6}{5}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $C_1=-11/10$ from step <1>7 into step <1>8:
 $$
 4
@@ -193,9 +254,14 @@ C_2
 =
 \frac{6\sqrt6}{5}.
 $$
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \begin{aligned}
@@ -216,13 +282,19 @@ e^{3t}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>7 and <1>9 into step <1>6.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the unique solution satisfying the differential equation and both initial conditions.
+
 :::
+
 :::

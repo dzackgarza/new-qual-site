@@ -25,7 +25,6 @@ Prove that $M_n(F)$ is a simple ring.
 Equivalently, $\operatorname{End}_F(V)$ is a simple ring if $V$ is a finite dimensional vector space over $F$.
 :::
 
-::: {.solution}
 Let
 $$
 J
@@ -34,7 +33,11 @@ M_n(F)
 $$
 be a nonzero two-sided ideal.
 
-<1>1. Choose a nonzero matrix
+::: pf
+
+::: pf-step
+
+Choose a nonzero matrix
 $$
 A=(a_{ij})\in J.
 $$
@@ -44,7 +47,9 @@ a_{ij}
 $$
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 A\ne0,
@@ -58,9 +63,14 @@ with
 $$
 a_{ij}\ne0.
 $$
+
 :::
 
-<1>2. For any indices
+:::
+
+::: pf-step
+
+For any indices
 $$
 k,\ell,
 $$
@@ -71,7 +81,9 @@ E_{ki}AE_{j\ell}
 a_{ij}E_{k\ell}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Left multiplication by
 $$
 E_{ki}
@@ -94,9 +106,14 @@ Thus the product is
 $$
 a_{ij}E_{k\ell}.
 $$
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 $$
 k,\ell,
 $$
@@ -106,7 +123,9 @@ a_{ij}E_{k\ell}
 $$
 belongs to $J$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 A\in J
@@ -118,15 +137,22 @@ E_{ki}AE_{j\ell}
 J.
 $$
 Apply step <1>2.
+
 :::
 
-<1>4. Every matrix unit
+:::
+
+::: pf-step
+
+Every matrix unit
 $$
 E_{k\ell}
 $$
 belongs to $J$.
 
-::: {.proof}
+
+::: pf-proof
+
 The scalar
 $$
 a_{ij}
@@ -149,15 +175,22 @@ E_{k\ell}
 \in
 J.
 $$
+
 :::
 
-<1>5. Every matrix in
+:::
+
+::: pf-step
+
+Every matrix in
 $$
 M_n(F)
 $$
 belongs to $J$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every matrix
 $$
 B=(b_{k\ell})
@@ -185,9 +218,14 @@ Thus
 $$
 J=M_n(F).
 $$
+
 :::
 
-<1>6. Therefore the only two-sided ideals of
+:::
+
+::: pf-step
+
+Therefore the only two-sided ideals of
 $$
 M_n(F)
 $$
@@ -198,12 +236,19 @@ $$
 M_n(F).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The zero ideal always exists.
 Step <1>5 shows that every nonzero two-sided ideal is the whole ring.
+
 :::
 
-<1>7. The ring
+:::
+
+::: pf-step
+
+The ring
 $$
 M_n(F)
 $$
@@ -212,7 +257,9 @@ $$
 M_n(F)^2\ne0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The identity matrix
 $$
 I_n
@@ -221,9 +268,14 @@ is nonzero and satisfies
 $$
 I_n^2=I_n\ne0.
 $$
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 M_n(F)
@@ -231,18 +283,27 @@ M_n(F)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives the required ideal structure, and step <1>7 gives the nonzero product condition.
+
 :::
 
-<1>9. If $V$ is a finite-dimensional $F$-vector space of dimension $n$, then
+:::
+
+::: pf-step
+
+If $V$ is a finite-dimensional $F$-vector space of dimension $n$, then
 $$
 \operatorname{End}_F(V)
 \cong
 M_n(F).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a basis of
 $$
 V.
@@ -253,9 +314,14 @@ n\times n
 $$
 matrix over $F$, and composition corresponds to matrix multiplication.
 Thus the matrix-representation map is a ring isomorphism.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \operatorname{End}_F(V)
@@ -263,14 +329,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Simplicity is preserved by ring isomorphism.
 Apply step <1>8 through the isomorphism in step <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves the matrix-ring statement, and step <1>10 proves the equivalent endomorphism-ring formulation.
+
 :::
+
 :::

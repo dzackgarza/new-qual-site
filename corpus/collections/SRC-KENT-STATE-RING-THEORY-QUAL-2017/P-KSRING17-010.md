@@ -19,7 +19,6 @@ audit:
 Let $R _ { 1 }$ and $R _ { 2 }$ be commutative rings with identities and let $R = R _ { 1 } \times R _ { 2 }$ . Show that every ideal I of R is of the form $I = I _ { 1 } \times I _ { 2 }$ with $I _ { i }$ an ideal of $R _ { i }$ for $i = 1 , 2$
 :::
 
-::: {.solution}
 Let
 $$
 I\trianglelefteq R_1\times R_2.
@@ -35,9 +34,15 @@ I_2
 \{b\in R_2:(0,b)\in I\}.
 $$
 
-<1>1. The subset $I_1$ is an ideal of $R_1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The subset $I_1$ is an ideal of $R_1$.
+
+
+::: pf-proof
+
 Since
 $$
 (0,0)\in I,
@@ -83,11 +88,18 @@ $$
 ra\in I_1.
 $$
 Therefore $I_1$ is an ideal of $R_1$.
+
 :::
 
-<1>2. The subset $I_2$ is an ideal of $R_2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subset $I_2$ is an ideal of $R_2$.
+
+
+::: pf-proof
+
 The proof is identical to step <1>1, using pairs of the form
 $$
 (0,b)
@@ -98,14 +110,21 @@ $$
 \qquad
 s\in R_2.
 $$
+
 :::
 
-<1>3. Every element of $I$ lies in
+:::
+
+::: pf-step
+
+Every element of $I$ lies in
 $$
 I_1\times I_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 (a,b)\in I.
@@ -142,15 +161,22 @@ Therefore
 $$
 I\subseteq I_1\times I_2.
 $$
+
 :::
 
-<1>4. Every element of
+:::
+
+::: pf-step
+
+Every element of
 $$
 I_1\times I_2
 $$
 lies in $I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 (a,b)\in I_1\times I_2.
@@ -172,9 +198,14 @@ Thus
 $$
 I_1\times I_2\subseteq I.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I
@@ -191,13 +222,19 @@ $$
 i=1,2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 show that $I_1$ and $I_2$ are ideals, while steps <1>3--<1>4 prove the two inclusions.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required decomposition.
+
 :::
+
 :::

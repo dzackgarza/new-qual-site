@@ -19,31 +19,43 @@ audit:
 Compute $\int _ { - \infty } ^ { \infty } \delta ^ { \prime \prime } ( x - 2 ) \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x$
 :::
 
-::: {.solution}
 Set
 \[
 f(x)=\frac1{1+x^2}.
 \]
 
-<1>1. The distributional derivative identity gives
+::: pf
+
+::: pf-step
+
+The distributional derivative identity gives
 \[
 \int_{-\infty}^{\infty}\delta''(x-2)f(x)\,dx=f''(2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a smooth test function $f$,
 \[
 \langle\delta_a^{(n)},f\rangle=(-1)^nf^{(n)}(a).
 \]
 Here $n=2$ and $a=2$, so the sign is positive.
+
 :::
 
-<1>2. The second derivative of $f$ is
+:::
+
+::: pf-step
+
+The second derivative of $f$ is
 \[
 f''(x)=\frac{6x^2-2}{(1+x^2)^3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate twice:
 \[
 f'(x)=-\frac{2x}{(1+x^2)^2},
@@ -53,26 +65,37 @@ and hence
 f''(x)=-\frac2{(1+x^2)^2}+\frac{8x^2}{(1+x^2)^3}
 =\frac{6x^2-2}{(1+x^2)^3}.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{-\infty}^{\infty}\delta''(x-2)\frac{dx}{1+x^2}
 =\frac{22}{125}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 \[
 f''(2)=\frac{6\cdot4-2}{(1+4)^3}
 =\frac{22}{125}.
 \]
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::
