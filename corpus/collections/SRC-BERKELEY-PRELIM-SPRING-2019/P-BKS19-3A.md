@@ -36,6 +36,8 @@ $$
 and find an example where equality holds.
 :::
 
+::: {.solution}
+
 Set
 $$
 M\coloneqq\max_{x\in[0,1]}|f''(x)|.
@@ -139,6 +141,8 @@ Hence $\max|f|=1/8=(1/8)\max|f''|$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the inequality, and step [](#s1-4){.pf-ref} supplies an equality example.
+
+:::
 
 :::
 
