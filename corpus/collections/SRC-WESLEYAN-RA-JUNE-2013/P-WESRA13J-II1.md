@@ -26,27 +26,39 @@ Prove
 \]
 :::
 
-::: {.solution}
 For $n\geq1$, set
 $$
 B_n=\bigcup_{k=n}^\infty A_k.
 $$
 
-<1>1. For every $n$,
+::: pf
+
+::: pf-step
+
+For every $n$,
 $$
 \mu(B_n)\leq\sum_{k=n}^\infty\mu(A_k).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is countable subadditivity applied to the family $(A_k)_{k\geq n}$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \mu(B_n)\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 $$
 \sum_{k=1}^\infty\mu(A_k)<\infty.
@@ -56,34 +68,52 @@ $$
 \sum_{k=n}^\infty\mu(A_k)
 $$
 tend to zero. Step <1>1 then implies $0\leq\mu(B_n)$ is bounded above by a sequence tending to zero.
+
 :::
 
-<1>3. The set
+:::
+
+::: pf-step
+
+The set
 $$
 L=\bigcap_{n=1}^\infty B_n
 $$
 has measure zero.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $n$, one has $L\subseteq B_n$, so monotonicity of measure gives
 $$
 0\leq\mu(L)\leq\mu(B_n).
 $$
 Letting $n\to\infty$ and using step <1>2 yields $\mu(L)=0$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\mu\!\left(\bigcap_{n=1}^\infty\bigcup_{k=n}^\infty A_k\right)=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the set inside the measure is exactly $L$ from step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

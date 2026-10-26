@@ -20,7 +20,6 @@ audit:
 Show that a Möbius transformation maps a straight line or circle onto a straight line or circle.
 :::
 
-::: {.solution}
 Let
 $$
 T(z)=\frac{az+b}{cz+d},
@@ -29,7 +28,11 @@ ad-bc\ne0.
 $$
 Work on the Riemann sphere, so a straight line is regarded as a circle through $\infty$.
 
-<1>1. Every straight line or circle in $\CC$ is the zero set of an equation
+::: pf
+
+::: pf-step
+
+Every straight line or circle in $\CC$ is the zero set of an equation
 $$
 \boxed{
 A|z|^2+Bz+\overline B\,\overline z+C=0}
@@ -42,7 +45,9 @@ B\in\CC,
 $$
 not all coefficients zero.
 
-::: {.proof}
+
+::: pf-proof
+
 A circle with center $z_0$ and radius $r>0$ has equation
 $$
 |z-z_0|^2=r^2.
@@ -72,11 +77,18 @@ $$
 \beta z+\overline\beta\,\overline z-2\lambda=0,
 $$
 which is the same form with $A=0$.
+
 :::
 
-<1>2. Conversely, a nonempty zero set of an equation from step <1>1 is either a straight line or a circle.
+:::
 
-::: {.proof}
+::: pf-step
+
+Conversely, a nonempty zero set of an equation from step <1>1 is either a straight line or a circle.
+
+
+::: pf-proof
+
 If $A=0$, then
 $$
 Bz+\overline B\,\overline z+C=0.
@@ -101,16 +113,23 @@ z+\frac{\overline B}{A}
 -\frac CA.
 $$
 Whenever the zero set is nonempty and not a single degenerate point, this is a circle.
+
 :::
 
-<1>3. If $w=T(z)$, then
+:::
+
+::: pf-step
+
+If $w=T(z)$, then
 $$
 z=T^{-1}(w)
 =
 \frac{dw-b}{-cw+a}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Starting from
 $$
 w(cz+d)=az+b,
@@ -124,9 +143,14 @@ $$
 ad-bc\ne0,
 $$
 the inverse Möbius transformation exists and is given by the displayed formula.
+
 :::
 
-<1>4. Substituting $z=T^{-1}(w)$ into a generalized-circle equation and multiplying by
+:::
+
+::: pf-step
+
+Substituting $z=T^{-1}(w)$ into a generalized-circle equation and multiplying by
 $$
 |-cw+a|^2
 $$
@@ -139,7 +163,9 @@ $$
 A',C'\in\RR.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Start from
 $$
 A|z|^2+Bz+\overline B\,\overline z+C=0.
@@ -184,21 +210,32 @@ w,
 1.
 $$
 Hence it has the stated form, with the coefficients of $w$ and $\overline w$ conjugate and the coefficients of $|w|^2$ and $1$ real.
+
 :::
 
-<1>5. Therefore every Möbius transformation maps every straight line or circle onto a straight line or circle.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every Möbius transformation maps every straight line or circle onto a straight line or circle.
+
+
+::: pf-proof
+
 Let $C$ be the original line or circle. By step <1>1 it is described by a generalized-circle equation. Step <1>4 shows that
 $$
 T(C)
 $$
 is described by another equation of the same form. Since $T$ is bijective on the Riemann sphere, the image is nonempty and nondegenerate. By step <1>2 it is a straight line or circle.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

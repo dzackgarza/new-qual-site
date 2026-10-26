@@ -19,8 +19,11 @@ audit:
 Show that if $X$ is a Hausdorff space and $A,B\subseteq X$ are disjoint finite subsets of $X$, then there are disjoint open sets $U,V$ in $X$ with $A\subseteq U$ and $B\subseteq V$.
 :::
 
-::: {.solution}
-<1>1. If either
+::: pf
+
+::: pf-step
+
+If either
 $$
 A=\varnothing
 $$
@@ -30,7 +33,9 @@ B=\varnothing,
 $$
 the conclusion is immediate.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 A=\varnothing,
@@ -51,9 +56,14 @@ U=X,
 \qquad
 V=\varnothing.
 $$
+
 :::
 
-<1>2. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 $$
 A\ne\varnothing
 \quad\text{and}\quad
@@ -76,7 +86,9 @@ a\in U_{a,b},
 b\in V_{a,b}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 A\cap B=\varnothing,
@@ -94,9 +106,14 @@ $$
 X
 $$
 is Hausdorff, distinct points admit disjoint open neighborhoods.
+
 :::
 
-<1>3. For each
+:::
+
+::: pf-step
+
+For each
 $$
 a\in A,
 $$
@@ -115,7 +132,9 @@ $$
 a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set
 $$
 B
@@ -138,9 +157,14 @@ so their intersection contains
 $$
 a.
 $$
+
 :::
 
-<1>4. For each
+:::
+
+::: pf-step
+
+For each
 $$
 b\in B,
 $$
@@ -159,14 +183,21 @@ $$
 b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The proof is identical to step <1>3, using finiteness of
 $$
 A.
 $$
+
 :::
 
-<1>5. For every
+:::
+
+::: pf-step
+
+For every
 $$
 a\in A
 $$
@@ -180,7 +211,9 @@ $$
 U_a\cap V_b=\varnothing}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 U_a\subseteq U_{a,b}
@@ -201,9 +234,14 @@ U_a\cap V_b
 =
 \varnothing.
 $$
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 $$
 U
 \coloneqq
@@ -230,7 +268,9 @@ $$
 B\subseteq V.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Unions of open sets are open.
 
 For every
@@ -249,9 +289,14 @@ Similarly, step <1>4 gives
 $$
 B\subseteq V.
 $$
+
 :::
 
-<1>7. The open sets
+:::
+
+::: pf-step
+
+The open sets
 $$
 U
 $$
@@ -261,7 +306,9 @@ V
 $$
 are disjoint.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 x\in U\cap V.
@@ -292,11 +339,15 @@ Therefore
 $$
 U\cap V=\varnothing.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 handles the empty cases, and steps <1>2--<1>7 construct the required disjoint open neighborhoods when both finite sets are nonempty.
+
 :::
+
 :::

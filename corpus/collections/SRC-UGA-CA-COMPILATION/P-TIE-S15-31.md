@@ -21,19 +21,31 @@ Let Ω be a simply connected open set and let γ be a simple closed contour in 
 Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
 :::
 
-::: {.solution}
-<1>1. The bounded region $U$ enclosed by $\gamma$ satisfies
+::: pf
+
+::: pf-step
+
+The bounded region $U$ enclosed by $\gamma$ satisfies
 $$
 U\subset\Omega.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\Omega$ is simply connected, every simple closed curve contained in $\Omega$ bounds its Jordan interior inside $\Omega$. Equivalently, every point outside $\Omega$ has winding number $0$ with respect to $\gamma$, whereas every point of $U$ has winding number $1$ because $\gamma$ is positively oriented. Hence no point of $U$ can lie outside $\Omega$.
+
 :::
 
-<1>2. The function $f$ is holomorphic on a neighborhood of $\overline U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is holomorphic on a neighborhood of $\overline U$.
+
+
+::: pf-proof
+
 By step <1>1,
 $$
 U\subset\Omega,
@@ -47,28 +59,42 @@ $$
 \overline U\subset\Omega.
 $$
 Since $\Omega$ is open, $f$ is holomorphic on an open neighborhood of the compact set $\overline U$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \max_{\overline U}\abs f
 =
 \max_{\gamma}\abs f.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The continuous function $\abs f$ attains its maximum on the compact set $\overline U$. If $f$ is nonconstant, the strong maximum modulus principle forbids an interior maximum. If $f$ is constant, the equality is immediate. Hence in every case the maximum over $\overline U$ is attained on the boundary
 $$
 \gamma=\partial U.
 $$
+
 :::
 
-<1>4. For every $z\in U$,
+:::
+
+::: pf-step
+
+For every $z\in U$,
 $$
 \boxed{\abs{f(z)}\le M.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \abs{f(z)}
@@ -83,11 +109,15 @@ for every $\zeta\in\gamma$. Therefore
 $$
 \abs{f(z)}\le M.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

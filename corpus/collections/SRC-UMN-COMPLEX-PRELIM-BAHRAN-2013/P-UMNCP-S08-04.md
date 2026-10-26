@@ -24,7 +24,6 @@ z+e^{-z}=\lambda
 has exactly one solution with positive real part.
 :::
 
-::: {.solution}
 Set
 $$
 f(z)
@@ -42,7 +41,11 @@ D_R
 \{z\in\CC:\operatorname{Re}z>0,\ |z|<R\}.
 $$
 
-<1>1. On the semicircular part of
+::: pf
+
+::: pf-step
+
+On the semicircular part of
 $$
 \partial D_R,
 $$
@@ -51,7 +54,9 @@ $$
 |e^{-z}|<|z-\lambda|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 |z|=R
@@ -80,9 +85,14 @@ Thus
 $$
 |e^{-z}|<|z-\lambda|.
 $$
+
 :::
 
-<1>2. On the imaginary-axis part of
+:::
+
+::: pf-step
+
+On the imaginary-axis part of
 $$
 \partial D_R,
 $$
@@ -91,7 +101,9 @@ $$
 |e^{-z}|<|z-\lambda|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 z=iy
@@ -118,9 +130,14 @@ $$
 1.
 $$
 Hence the same strict inequality holds.
+
 :::
 
-<1>3. The functions
+:::
+
+::: pf-step
+
+The functions
 $$
 f(z)
 =(z-\lambda)+e^{-z}
@@ -131,7 +148,9 @@ z-\lambda
 $$
 have the same number of zeros in $D_R$, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 give
 $$
 |e^{-z}|<|z-\lambda|
@@ -141,11 +160,18 @@ $$
 \partial D_R.
 $$
 Both functions are entire. Rouché's theorem therefore applies.
+
 :::
 
-<1>4. The function $f$ has exactly one zero in $D_R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ has exactly one zero in $D_R$.
+
+
+::: pf-proof
+
 The comparison function
 $$
 z-\lambda
@@ -163,15 +189,22 @@ $$
 R>\lambda+1,
 $$
 this zero lies in $D_R$. Step <1>3 therefore gives exactly one zero of $f$ in $D_R$.
+
 :::
 
-<1>5. The equation
+:::
+
+::: pf-step
+
+The equation
 $$
 z+e^{-z}=\lambda
 $$
 has exactly one solution with positive real part.
 
-::: {.proof}
+
+::: pf-proof
+
 The right half-plane is the union of the nested domains
 $$
 D_R
@@ -195,11 +228,15 @@ $$
 R>R_0,
 $$
 the same point $z_0$ lies in $D_R$, and step <1>4 says $D_R$ contains no other zero. Since every point of the open right half-plane lies in some sufficiently large $D_R$, there is no second zero with positive real part.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required existence-and-uniqueness statement.
+
 :::
+
 :::

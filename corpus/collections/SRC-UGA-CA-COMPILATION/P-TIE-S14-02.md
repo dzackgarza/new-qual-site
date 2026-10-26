@@ -24,7 +24,6 @@ Without using Cauchy's theorem, evaluate
 for every integer $n$, where $\gamma$ is any positively oriented circle that does not contain the origin.
 :::
 
-::: {.solution}
 Write the circle as
 $$
 \gamma(t)=c+\rho e^{it},
@@ -33,12 +32,18 @@ $$
 $$
 where $\rho>0$ and $\abs{c}>\rho$, since the origin is outside the enclosed disk.
 
-<1>1. If $n\ne-1$, then
+::: pf
+
+::: pf-step
+
+If $n\ne-1$, then
 $$
 \int_\gamma z^n\,dz=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $n\ne-1$, the function
 $$
 F(z)\coloneqq\frac{z^{n+1}}{n+1}
@@ -54,9 +59,14 @@ $$
 F(\gamma(2\pi))-F(\gamma(0))
 =0.
 $$
+
 :::
 
-<1>2. On $\gamma$,
+:::
+
+::: pf-step
+
+On $\gamma$,
 $$
 \frac1z
 =
@@ -65,7 +75,9 @@ $$
 $$
 and this series converges uniformly in $t\in[0,2\pi]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\abs{c}>\rho$,
 $$
 \abs{\frac{\rho}{c}}<1.
@@ -87,14 +99,21 @@ $$
 \end{aligned}
 $$
 The ratio has modulus $\rho/\abs{c}<1$ independently of $t$, so the geometric series converges uniformly.
+
 :::
 
-<1>3. For $n=-1$,
+:::
+
+::: pf-step
+
+For $n=-1$,
 $$
 \int_\gamma z^{-1}\,dz=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 and
 $$
 dz=i\rho e^{it}\,dt,
@@ -115,22 +134,33 @@ $$
 \int_0^{2\pi}e^{i(k+1)t}\,dt=0,
 $$
 so the whole sum is $0$.
+
 :::
 
-<1>4. Therefore, for every integer $n$,
+:::
+
+::: pf-step
+
+Therefore, for every integer $n$,
 $$
 \boxed{
 \int_\gamma z^n\,dz=0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 covers $n\ne-1$, and step <1>3 covers $n=-1$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value for every integer $n$ without using Cauchy's theorem.
+
 :::
+
 :::

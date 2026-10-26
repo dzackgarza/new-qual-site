@@ -31,10 +31,17 @@ Give definitions of each of the following:
 6. a normed vector space.
 :::
 
-::: {.solution}
-<1>1. A Dynkin system on \(\Omega\) is a collection \(\mathcal D\subseteq\mathcal P(\Omega)\) such that \(\Omega\in\mathcal D\), whenever \(A,B\in\mathcal D\) with \(A\subseteq B\) one has \(B\setminus A\in\mathcal D\), and whenever \((A_n)_{n\ge1}\subseteq\mathcal D\) are pairwise disjoint one has \(\bigcup_{n=1}^\infty A_n\in\mathcal D\).
+::: pf
 
-<1>2. An outer measure on \(\Omega\) is a function
+::: pf-step
+
+A Dynkin system on \(\Omega\) is a collection \(\mathcal D\subseteq\mathcal P(\Omega)\) such that \(\Omega\in\mathcal D\), whenever \(A,B\in\mathcal D\) with \(A\subseteq B\) one has \(B\setminus A\in\mathcal D\), and whenever \((A_n)_{n\ge1}\subseteq\mathcal D\) are pairwise disjoint one has \(\bigcup_{n=1}^\infty A_n\in\mathcal D\).
+
+:::
+
+::: pf-step
+
+An outer measure on \(\Omega\) is a function
 \[
 \mu^*:\mathcal P(\Omega)\longrightarrow[0,\infty]
 \]
@@ -45,24 +52,40 @@ such that \(\mu^*(\varnothing)=0\), \(A\subseteq B\) implies \(\mu^*(A)\le\mu^*(
 \]
 for every sequence \((A_n)_{n\ge1}\subseteq\mathcal P(\Omega)\).
 
-<1>3. If \(\mu^*\) is an outer measure on \(\Omega\), a set \(E\subseteq\Omega\) is \(\mu^*\)-measurable when
+:::
+
+::: pf-step
+
+If \(\mu^*\) is an outer measure on \(\Omega\), a set \(E\subseteq\Omega\) is \(\mu^*\)-measurable when
 \[
 \mu^*(A)=\mu^*(A\cap E)+\mu^*(A\setminus E)
 \]
 for every \(A\subseteq\Omega\).
 
-<1>4. A real- or complex-valued function \(f\) on \((\Omega,\mathcal A,\mu)\) is integrable when it is \(\mathcal A\)-measurable and
+:::
+
+::: pf-step
+
+A real- or complex-valued function \(f\) on \((\Omega,\mathcal A,\mu)\) is integrable when it is \(\mathcal A\)-measurable and
 \[
 \int_\Omega |f|\,d\mu<\infty.
 \]
 
-<1>5. For measures \(\mu\) and \(\nu\) on the same measurable space, \(\mu\) is absolutely continuous with respect to \(\nu\), written \(\mu\ll\nu\), when
+:::
+
+::: pf-step
+
+For measures \(\mu\) and \(\nu\) on the same measurable space, \(\mu\) is absolutely continuous with respect to \(\nu\), written \(\mu\ll\nu\), when
 \[
 \nu(E)=0\quad\Longrightarrow\quad\mu(E)=0
 \]
 for every measurable set \(E\).
 
-<1>6. A normed vector space is a vector space \(V\) over \(\mathbb R\) or \(\mathbb C\) together with a function \(\|\cdot\|:V\to[0,\infty)\) such that, for all \(x,y\in V\) and scalars \(\lambda\),
+:::
+
+::: pf-step
+
+A normed vector space is a vector space \(V\) over \(\mathbb R\) or \(\mathbb C\) together with a function \(\|\cdot\|:V\to[0,\infty)\) such that, for all \(x,y\in V\) and scalars \(\lambda\),
 \[
 \|x\|=0\Longleftrightarrow x=0,
 \qquad
@@ -71,9 +94,12 @@ for every measurable set \(E\).
 \|x+y\|\le\|x\|+\|y\|.
 \]
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>6 give the six requested definitions.
 :::
+
+::: pf-qed
+
+Steps <1>1 through <1>6 give the six requested definitions.
+
+:::
+
 :::

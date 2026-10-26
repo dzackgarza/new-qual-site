@@ -23,8 +23,11 @@ f'(z)\ne0\qquad(z\in D).
 \]
 :::
 
-::: {.solution}
-<1>1. If $a\in D$ and $f'(a)=0$, then there is an integer $m\ge2$ and a
+::: pf
+
+::: pf-step
+
+If $a\in D$ and $f'(a)=0$, then there is an integer $m\ge2$ and a
 holomorphic function $g$ near $a$ such that
 \[
 f(z)-f(a)=(z-a)^m g(z),
@@ -32,21 +35,30 @@ f(z)-f(a)=(z-a)^m g(z),
 g(a)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is injective, it is nonconstant. Hence the Taylor expansion of
 $f-f(a)$ at $a$ has a first nonzero term. Since $f'(a)=0$, its order $m$ is at
 least $2$. Factoring out $(z-a)^m$ gives the displayed expression, with
 $g(a)\ne0$.
+
 :::
 
-<1>2. There is a neighborhood $U$ of $a$ and a biholomorphic coordinate
+:::
+
+::: pf-step
+
+There is a neighborhood $U$ of $a$ and a biholomorphic coordinate
 $\phi:U\to\phi(U)$ with $\phi(a)=0$ such that
 \[
 f(z)-f(a)=\phi(z)^m
 \qquad(z\in U).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, after shrinking to a simply connected disk $U$ about $a$, the
 function $g$ has no zeros on $U$. Therefore $g$ admits a holomorphic $m$-th
 root $h$ on $U$, so $h^m=g$. Define
@@ -63,11 +75,18 @@ Moreover,
 \]
 so the holomorphic inverse function theorem allows $U$ to be shrunk further
 so that $\phi$ is biholomorphic onto the open neighborhood $\phi(U)$ of $0$.
+
 :::
 
-<1>3. The assumption $f'(a)=0$ contradicts injectivity of $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumption $f'(a)=0$ contradicts injectivity of $f$.
+
+
+::: pf-proof
+
 By step <1>2, the open set $\phi(U)$ contains a disk centered at $0$.
 Choose a nonzero $w$ in that disk small enough that
 \[
@@ -87,21 +106,32 @@ f(z_1)-f(a)=w^m
 =f(z_2)-f(a).
 \]
 Thus $f(z_1)=f(z_2)$, contradicting injectivity.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{f'(z)\ne0\qquad(z\in D)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $f'$ vanished at any $a\in D$, step <1>3 would contradict the hypothesis
 that $f$ is injective.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

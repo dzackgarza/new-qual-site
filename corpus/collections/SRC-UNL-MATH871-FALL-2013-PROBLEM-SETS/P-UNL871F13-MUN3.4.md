@@ -28,10 +28,15 @@ a_0\sim a_1\quad\Longleftrightarrow\quad f(a_0)=f(a_1).
    Show that there is a bijective correspondence between $A^*$ and $B$.
 :::
 
-::: {.solution}
-<1>1. The relation $\sim$ is reflexive.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The relation $\sim$ is reflexive.
+
+
+::: pf-proof
+
 For every
 \[
 a\in A,
@@ -44,11 +49,18 @@ Hence
 \[
 a\sim a.
 \]
+
 :::
 
-<1>2. The relation $\sim$ is symmetric.
+:::
 
-::: {.proof}
+::: pf-step
+
+The relation $\sim$ is symmetric.
+
+
+::: pf-proof
+
 Suppose
 \[
 a_0\sim a_1.
@@ -65,11 +77,18 @@ so
 \[
 a_1\sim a_0.
 \]
+
 :::
 
-<1>3. The relation $\sim$ is transitive.
+:::
 
-::: {.proof}
+::: pf-step
+
+The relation $\sim$ is transitive.
+
+
+::: pf-proof
+
 Suppose
 \[
 a_0\sim a_1
@@ -92,9 +111,14 @@ so
 \[
 a_0\sim a_2.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \sim
@@ -102,11 +126,18 @@ a_0\sim a_2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 verify reflexivity, symmetry, and transitivity.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \Phi:A^*\to B
 \]
@@ -119,7 +150,9 @@ f(a).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Here
 \[
 [a]
@@ -127,11 +160,18 @@ Here
 denotes the equivalence class of $a$.
 The next step verifies that the displayed rule does not depend on the chosen
 representative.
+
 :::
 
-<1>6. The map $\Phi$ is well defined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is well defined.
+
+
+::: pf-proof
+
 Suppose
 \[
 [a]=[a'].
@@ -154,11 +194,18 @@ f(a')
 =
 \Phi([a']).
 \]
+
 :::
 
-<1>7. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is injective.
+
+
+::: pf-proof
+
 Suppose
 \[
 \Phi([a_0])
@@ -178,11 +225,18 @@ so
 [a_0]=[a_1].
 \]
 Thus $\Phi$ is injective.
+
 :::
 
-<1>8. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+
+::: pf-proof
+
 Let
 \[
 b\in B.
@@ -206,9 +260,14 @@ Then
 b.
 \]
 Thus every element of $B$ is in the image.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 A^*
@@ -218,13 +277,19 @@ B
 \]
 is a bijection.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>6--<1>8 show that $\Phi$ is a well-defined bijection.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (1), and step <1>9 proves part (2).
+
 :::
+
 :::

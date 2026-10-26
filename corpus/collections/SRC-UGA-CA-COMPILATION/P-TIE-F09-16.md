@@ -20,10 +20,13 @@ audit:
 Let $f ( z )$ be analytic in an open set Ω except possibly at a point $z _ { \mathrm { 0 } }$ inside Ω. Show that if $f ( z )$ is bounded in near $z _ { \mathrm { 0 } }$ , then $\int _ { \Delta } f ( z ) d z = 0$ for all triangles $\Delta$ in Ω.
 :::
 
-::: {.solution}
 Let $z_0$ be the possible exceptional point.
 
-<1>1. There exist $r>0$ and $M>0$ such that
+::: pf
+
+::: pf-step
+
+There exist $r>0$ and $M>0$ such that
 $$
 |f(z)|\le M
 $$
@@ -32,11 +35,18 @@ $$
 0<|z-z_0|<r.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is precisely the hypothesis that $f$ is bounded near $z_0$.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 g(z)=
 \begin{cases}
@@ -46,7 +56,9 @@ g(z)=
 $$
 Then $g$ is analytic on all of $\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 Away from $z_0$, the function is a product of analytic functions. At $z_0$,
 $$
 \frac{g(z)-g(z_0)}{z-z_0}
@@ -64,11 +76,18 @@ $$
 g'(z_0)=0.
 $$
 Thus $g$ is analytic throughout $\Omega$.
+
 :::
 
-<1>3. The function $g$ has a zero of order at least $2$ at $z_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ has a zero of order at least $2$ at $z_0$.
+
+
+::: pf-proof
+
 By definition,
 $$
 g(z_0)=0,
@@ -82,11 +101,18 @@ $$
 g(z)=(z-z_0)^2h(z)
 $$
 for some analytic function $h$ near $z_0$.
+
 :::
 
-<1>4. The function $f$ has a removable singularity at $z_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ has a removable singularity at $z_0$.
+
+
+::: pf-proof
+
 For $0<|z-z_0|<r$, steps <1>2 and <1>3 give
 $$
 (z-z_0)^2f(z)
@@ -103,25 +129,36 @@ $$
 f(z_0)=h(z_0)
 $$
 therefore extends $f$ analytically across $z_0$.
+
 :::
 
-<1>5. For every triangle $\Delta$ whose closed interior lies in $\Omega$,
+:::
+
+::: pf-step
+
+For every triangle $\Delta$ whose closed interior lies in $\Omega$,
 $$
 \boxed{\int_{\partial\Delta}f(z)\,dz=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $f$ may be regarded as analytic on all of $\Omega$. Goursat's theorem applied
 to the triangle $\Delta$ then gives
 $$
 \int_{\partial\Delta}f(z)\,dz=0.
 $$
 This is the triangle integral denoted $\int_\Delta f(z)\,dz$ in the source.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required assertion.
+
 :::
+
 :::

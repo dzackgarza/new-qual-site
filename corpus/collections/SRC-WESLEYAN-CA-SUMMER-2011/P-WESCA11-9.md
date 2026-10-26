@@ -24,8 +24,11 @@ Prove, using the maximum principle, that
 for $|z|<1$.
 :::
 
-::: {.solution}
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 g(z)
 \coloneqq
@@ -36,7 +39,9 @@ f'(0),&z=0.
 \]
 Then $g$ is holomorphic on the unit disk.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f(0)=0,
@@ -57,9 +62,14 @@ which extends holomorphically across $0$ with value
 \[
 a_1=f'(0).
 \]
+
 :::
 
-<1>2. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 0<r<1.
 \]
@@ -74,7 +84,9 @@ one has
 \frac1r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 |z|=r,
@@ -91,9 +103,14 @@ Hence
 \le
 \frac1r.
 \]
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 \[
 |z|\le r,
 \]
@@ -104,7 +121,9 @@ one has
 \frac1r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $g$ is holomorphic on a neighborhood of the closed disk
 \[
 \{|z|\le r\}.
@@ -116,9 +135,14 @@ By the maximum modulus principle,
 \max_{|z|=r}|g(z)|.
 \]
 Apply the boundary estimate from step <1>2.
+
 :::
 
-<1>4. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 z\in\mathbb D.
 \]
@@ -127,7 +151,9 @@ Then
 |g(z)|\le1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose any
 \[
 r
@@ -150,9 +176,14 @@ gives
 \[
 |g(z)|\le1.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 |f(z)|\le|z|
@@ -161,7 +192,9 @@ gives
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 z\ne0,
@@ -190,11 +223,15 @@ because
 \[
 f(0)=0.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is Schwarz's estimate obtained from the maximum principle.
+
 :::
+
 :::

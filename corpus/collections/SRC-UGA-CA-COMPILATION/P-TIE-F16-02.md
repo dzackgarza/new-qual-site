@@ -35,8 +35,11 @@ The source labels the first subpart of (b) "(c)"; it is subpart (i) of the list 
 In (b)(ii) the source reads "the level curves $\operatorname{Re}(f) = 0$ and $\operatorname{Im}(f)$", evidently meaning the level curves $\operatorname{Re}(f) = 0$ and $\operatorname{Im}(f) = 0$.
 :::
 
-::: {.solution}
-<1>1. At $z_0$, both gradients
+::: pf
+
+::: pf-step
+
+At $z_0$, both gradients
 $$
 \nabla u(z_0)
 \qquad\text{and}\qquad
@@ -44,7 +47,9 @@ $$
 $$
 are nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 f'(z_0)\ne0,
@@ -79,11 +84,18 @@ $$
 v_x(z_0)^2+v_y(z_0)^2
 >0.
 $$
+
 :::
 
-<1>2. The gradients $\nabla u(z_0)$ and $\nabla v(z_0)$ are perpendicular.
+:::
 
-::: {.proof}
+::: pf-step
+
+The gradients $\nabla u(z_0)$ and $\nabla v(z_0)$ are perpendicular.
+
+
+::: pf-proof
+
 Using the Cauchy--Riemann equations,
 $$
 \begin{aligned}
@@ -97,9 +109,14 @@ u_x(-u_y)+u_yu_x\\
 \end{aligned}
 $$
 Thus the two nonzero gradients are orthogonal at $z_0$.
+
 :::
 
-<1>3. The tangent lines to the level curves
+:::
+
+::: pf-step
+
+The tangent lines to the level curves
 $$
 u=c_1
 \qquad\text{and}\qquad
@@ -107,11 +124,18 @@ v=c_2
 $$
 at $z_0$ are perpendicular.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and the implicit function theorem, both level sets are smooth curves near $z_0$. Their tangent lines are perpendicular to their respective gradients. Rotating both perpendicular gradient vectors through $90^\circ$ preserves the angle between them, so by step <1>2 the two tangent lines are perpendicular.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 $$
 f(z)=z^2,
 \qquad
@@ -124,7 +148,9 @@ $$
 \operatorname{Im}f=2xy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand:
 $$
 z^2
@@ -132,9 +158,14 @@ z^2
 =
 x^2-y^2+2ixy.
 $$
+
 :::
 
-<1>5. The level curves of $\operatorname{Re}f$ are
+:::
+
+::: pf-step
+
+The level curves of $\operatorname{Re}f$ are
 $$
 x^2-y^2=c.
 $$
@@ -145,15 +176,22 @@ y=x,
 y=-x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard classification of the real conics
 $$
 x^2-y^2=c
 $$
 obtained from step <1>4.
+
 :::
 
-<1>6. The level curves of $\operatorname{Im}f$ are
+:::
+
+::: pf-step
+
+The level curves of $\operatorname{Im}f$ are
 $$
 2xy=c.
 $$
@@ -164,15 +202,22 @@ x=0
 y=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This follows directly from
 $$
 \operatorname{Im}f=2xy
 $$
 in step <1>4.
+
 :::
 
-<1>7. The zero level curves
+:::
+
+::: pf-step
+
+The zero level curves
 $$
 \operatorname{Re}f=0
 \qquad\text{and}\qquad
@@ -183,7 +228,9 @@ $$
 \boxed{\frac\pi4}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first zero level set is
 $$
 y=\pm x,
@@ -195,11 +242,18 @@ x=0
 y=0.
 $$
 Their only common point is $(0,0)$. Each line $y=\pm x$ makes an angle of $\pi/4$ with each coordinate axis, so the acute intersection angle is $\pi/4$.
+
 :::
 
-<1>8. This does not contradict part (a).
+:::
 
-::: {.proof}
+::: pf-step
+
+This does not contradict part (a).
+
+
+::: pf-proof
+
 For
 $$
 f(z)=z^2,
@@ -217,11 +271,15 @@ $$
 f'(0)=0.
 $$
 Thus the nonvanishing-derivative hypothesis of part (a) fails exactly at the point where the level curves are not orthogonal.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>8 answer part (b).
+
 :::
+
 :::

@@ -25,7 +25,6 @@ are analytic.
 Prove that \(f\) is analytic.
 :::
 
-::: {.solution}
 The analytic functions
 $$
 g=f^2
@@ -38,7 +37,11 @@ $$
 $$
 on $\mathbb D$.
 
-<1>1. On the open set
+::: pf
+
+::: pf-step
+
+On the open set
 $$
 U
 \coloneqq
@@ -49,7 +52,9 @@ $$
 \boxed{f=\frac hg}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 g(z)=f(z)^2\ne0,
@@ -66,9 +71,14 @@ $$
 =
 f(z).
 $$
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 a\in\mathbb D
 $$
@@ -81,7 +91,9 @@ $$
 h(a)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 g(a)=f(a)^2=0,
@@ -94,9 +106,14 @@ Then
 $$
 h(a)=f(a)^3=0.
 $$
+
 :::
 
-<1>3. If $g$ is not identically zero near $a$ and
+:::
+
+::: pf-step
+
+If $g$ is not identically zero near $a$ and
 $$
 \operatorname{ord}_a(g)=m,
 \qquad
@@ -107,7 +124,9 @@ $$
 \boxed{2n=3m}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The identity
 $$
 h^2=g^3
@@ -121,15 +140,22 @@ $$
 \operatorname{ord}_a(g^3)=3m.
 $$
 Equality of the functions forces equality of the orders.
+
 :::
 
-<1>4. At every zero $a$ of $g$ that is not contained in a neighborhood on which $g\equiv0$,
+:::
+
+::: pf-step
+
+At every zero $a$ of $g$ that is not contained in a neighborhood on which $g\equiv0$,
 $$
 \frac hg
 $$
 has a removable singularity and its holomorphic extension vanishes at $a$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 n=\frac32m.
@@ -171,11 +197,18 @@ $$
 n-m>0,
 $$
 the right-hand side extends holomorphically across $a$ with value $0$.
+
 :::
 
-<1>5. If $g$ vanishes identically on a nonempty open set, then $f$ vanishes there and is analytic there.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $g$ vanishes identically on a nonempty open set, then $f$ vanishes there and is analytic there.
+
+
+::: pf-proof
+
 If
 $$
 g=f^2\equiv0
@@ -185,11 +218,18 @@ $$
 f\equiv0
 $$
 there. The zero function is analytic.
+
 :::
 
-<1>6. The function $f$ is analytic on all of $\mathbb D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is analytic on all of $\mathbb D$.
+
+
+::: pf-proof
+
 On the open set
 $$
 U=\{g\ne0\},
@@ -218,11 +258,15 @@ $$
 f\equiv0.
 $$
 Thus every point of the disk has a neighborhood on which $f$ is analytic.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

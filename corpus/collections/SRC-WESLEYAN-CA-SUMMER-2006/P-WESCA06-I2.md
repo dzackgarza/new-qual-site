@@ -19,7 +19,6 @@ audit:
 Define the multiplicity of an analytic function $f$ at a point $z_0$ in the domain of $f$.
 :::
 
-::: {.solution}
 Let
 \[
 f(z)
@@ -29,7 +28,11 @@ a_n(z-z_0)^n
 \]
 be the Taylor expansion of $f$ at $z_0$.
 
-<1>1. If $f$ is not locally constant near $z_0$, the **multiplicity of
+::: pf
+
+::: pf-step
+
+If $f$ is not locally constant near $z_0$, the **multiplicity of
 $f$ at $z_0$** is the least positive integer
 \[
 m\ge1
@@ -39,7 +42,9 @@ such that
 a_m\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently,
 \[
 a_1=a_2=\cdots=a_{m-1}=0,
@@ -66,15 +71,22 @@ f^{(m)}(z_0)
 \ne
 0.
 \]
+
 :::
 
-<1>2. Equivalently, $m$ is the order of the zero of
+:::
+
+::: pf-step
+
+Equivalently, $m$ is the order of the zero of
 \[
 f(z)-f(z_0)
 \]
 at $z_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor series gives
 \[
 f(z)-f(z_0)
@@ -100,16 +112,23 @@ is holomorphic near $z_0$ and
 g(z_0)=a_m\ne0.
 \]
 Thus the zero has order $m$.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 f(z_0)=0,
 \]
 then the multiplicity of $f$ at $z_0$ is exactly the usual multiplicity of
 the zero $z_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 In this case
 \[
 f(z)-f(z_0)
@@ -117,12 +136,16 @@ f(z)-f(z_0)
 f(z),
 \]
 so step <1>2 becomes the usual zero-order definition.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 give the requested definition and its standard equivalent
 formulations.
+
 :::
+
 :::

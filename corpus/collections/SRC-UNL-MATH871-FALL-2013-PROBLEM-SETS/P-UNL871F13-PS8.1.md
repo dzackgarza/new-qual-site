@@ -28,7 +28,6 @@ Consider:
 - the subspace $[0,1]\subset\mathbb R_\ell$.
 :::
 
-::: {.solution}
 Use the standard hierarchy
 \[
 T_0,T_1,T_2,T_3,T_4,
@@ -42,9 +41,15 @@ T_3=\text{regular }T_1,
 T_4=\text{normal }T_1.
 \]
 
-<1>1. The excluded-point real line is compact.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The excluded-point real line is compact.
+
+
+::: pf-proof
+
 Let
 \[
 0
@@ -74,9 +79,14 @@ Hence the one-element family
 \{\mathbb R\}
 \]
 is already a finite subcover.
+
 :::
 
-<1>2. The excluded-point real line is
+:::
+
+::: pf-step
+
+The excluded-point real line is
 \[
 T_0
 \]
@@ -85,7 +95,9 @@ but not
 T_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 x\ne y.
@@ -114,9 +126,14 @@ nonzero point.
 Equivalently, a nonzero singleton is not closed:
 its complement contains $0$ but is not all of $\mathbb R$, hence is not
 open.
+
 :::
 
-<1>3. Therefore, for the excluded-point topology,
+:::
+
+::: pf-step
+
+Therefore, for the excluded-point topology,
 \[
 \boxed{
 \text{compact: yes},
@@ -125,13 +142,22 @@ open.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1--<1>2.
+
 :::
 
-<1>4. The included-point real line is not compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The included-point real line is not compact.
+
+
+::: pf-proof
+
 Let
 \[
 0
@@ -159,9 +185,14 @@ Any finite subfamily covers only
 and finitely many nonzero points.
 Thus no finite subfamily covers all of $\mathbb R$.
 Hence the space is not compact.
+
 :::
 
-<1>5. The included-point real line is
+:::
+
+::: pf-step
+
+The included-point real line is
 \[
 T_0
 \]
@@ -170,7 +201,9 @@ but not
 T_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For distinct nonzero points
 \[
 x,y,
@@ -197,9 +230,14 @@ It is not $T_1$ because every nonempty open set containing a nonzero point
 also contains $0$.
 Hence one cannot find an open neighborhood of a nonzero point excluding
 $0$.
+
 :::
 
-<1>6. Therefore, for the included-point topology,
+:::
+
+::: pf-step
+
+Therefore, for the included-point topology,
 \[
 \boxed{
 \text{compact: no},
@@ -208,17 +246,26 @@ $0$.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>5.
+
 :::
 
-<1>7. The lower-limit line
+:::
+
+::: pf-step
+
+The lower-limit line
 \[
 \mathbb R_\ell
 \]
 is Hausdorff.
 
-::: {.proof}
+
+::: pf-proof
+
 Its standard basis consists of intervals
 \[
 [a,b).
@@ -241,11 +288,18 @@ Thus
 \mathbb R_\ell
 \]
 is Hausdorff, hence $T_1$.
+
 :::
 
-<1>8. The lower-limit line is normal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The lower-limit line is normal.
+
+
+::: pf-proof
+
 Let
 \[
 A,B\subseteq\mathbb R_\ell
@@ -346,9 +400,14 @@ Hence
 \mathbb R_\ell
 \]
 is normal.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \mathbb R_\ell
 \]
@@ -357,16 +416,25 @@ is
 T_4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7 it is $T_1$, and by step <1>8 it is normal.
 Thus it is $T_4$.
 In fact, the Sorgenfrey line is perfectly normal, but $T_4$ is the highest
 level requested in the standard finite hierarchy.
+
 :::
 
-<1>10. The lower-limit line is not compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The lower-limit line is not compact.
+
+
+::: pf-proof
+
 The family
 \[
 \mathcal U
@@ -384,9 +452,14 @@ Any finite subfamily is bounded above and below, so it cannot cover all of
 \mathbb R.
 \]
 Thus no finite subcover exists.
+
 :::
 
-<1>11. Therefore, for the lower-limit line,
+:::
+
+::: pf-step
+
+Therefore, for the lower-limit line,
 \[
 \boxed{
 \text{compact: no},
@@ -395,11 +468,18 @@ Thus no finite subcover exists.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>9--<1>10.
+
 :::
 
-<1>12. The subspace
+:::
+
+::: pf-step
+
+The subspace
 \[
 [0,1]\subset\mathbb R_\ell
 \]
@@ -408,7 +488,9 @@ is
 T_4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The interval
 \[
 [0,1]
@@ -439,15 +521,22 @@ Hence
 [0,1]
 \]
 is $T_4$.
+
 :::
 
-<1>13. The subspace
+:::
+
+::: pf-step
+
+The subspace
 \[
 [0,1]\subset\mathbb R_\ell
 \]
 is not compact.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 n\ge2,
@@ -509,9 +598,14 @@ the interval
 \]
 remains uncovered.
 Thus there is no finite subcover.
+
 :::
 
-<1>14. Therefore, for
+:::
+
+::: pf-step
+
+Therefore, for
 \[
 [0,1]\subset\mathbb R_\ell,
 \]
@@ -523,11 +617,18 @@ Thus there is no finite subcover.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>12--<1>13.
+
 :::
 
-<1>15. The complete table is
+:::
+
+::: pf-step
+
+The complete table is
 \[
 \boxed{
 \begin{array}{c|cc}
@@ -551,13 +652,19 @@ Combine steps <1>12--<1>13.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>3, <1>6, <1>11, and <1>14.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 gives all requested classifications.
+
 :::
+
 :::

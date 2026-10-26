@@ -24,15 +24,20 @@ Let $f _ { n } , f$ be analytic functions on the unit disk D. Show that the foll
 (ii) $\int _ { | z | = r } | f _ { n } ( z ) - f ( z ) | | d z |$ converges to 0 if $0 < r < 1$
 :::
 
-::: {.solution}
 Set
 $$
 h_n\coloneqq f_n-f.
 $$
 
-<1>1. Condition (i) implies condition (ii).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Condition (i) implies condition (ii).
+
+
+::: pf-proof
+
 Fix $0<r<1$. The circle
 $$
 C_r\coloneqq\{z:\abs{z}=r\}
@@ -53,9 +58,14 @@ $$
 \end{aligned}
 $$
 Thus condition (ii) holds.
+
 :::
 
-<1>2. Assume condition (ii). Let $0<\rho<r<1$. Then
+:::
+
+::: pf-step
+
+Assume condition (ii). Let $0<\rho<r<1$. Then
 $$
 \sup_{\abs{z}\le\rho}\abs{h_n(z)}
 \le
@@ -64,7 +74,9 @@ $$
 \abs{h_n(\zeta)}\,\abs{d\zeta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\abs{z}\le\rho$, Cauchy's integral formula on the circle $\abs{\zeta}=r$ gives
 $$
 h_n(z)
@@ -90,11 +102,18 @@ $$
 \abs{h_n(\zeta)}\,\abs{d\zeta}.
 $$
 The right-hand side is independent of $z$, so taking the supremum over $\abs{z}\le\rho$ gives the stated estimate.
+
 :::
 
-<1>3. Condition (ii) implies uniform convergence on every closed disk $\abs{z}\le\rho<1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (ii) implies uniform convergence on every closed disk $\abs{z}\le\rho<1$.
+
+
+::: pf-proof
+
 Fix $\rho<1$ and choose $r$ with
 $$
 \rho<r<1.
@@ -111,11 +130,18 @@ $$
 \longrightarrow0.
 $$
 Since $h_n=f_n-f$, this is uniform convergence of $f_n$ to $f$ on the closed disk.
+
 :::
 
-<1>4. Condition (ii) implies condition (i).
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (ii) implies condition (i).
+
+
+::: pf-proof
+
 Let $K$ be any compact subset of the unit disk. Then
 $$
 \rho\coloneqq\max_{z\in K}\abs{z}<1.
@@ -125,17 +151,28 @@ $$
 K\subset\{z:\abs{z}\le\rho\}.
 $$
 Step <1>3 gives uniform convergence on that closed disk, hence on $K$. Therefore condition (i) holds.
+
 :::
 
-<1>5. The two conditions are equivalent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two conditions are equivalent.
+
+
+::: pf-proof
+
 Step <1>1 proves (i)$\Rightarrow$(ii), and step <1>4 proves (ii)$\Rightarrow$(i).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required equivalence.
+
 :::
+
 :::

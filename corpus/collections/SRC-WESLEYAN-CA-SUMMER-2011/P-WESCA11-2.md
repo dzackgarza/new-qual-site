@@ -23,7 +23,6 @@ Represent
 by partial fractions.
 :::
 
-::: {.solution}
 Let
 \[
 \omega=e^{2\pi i/3},
@@ -35,7 +34,11 @@ so
 \omega^3=1.
 \]
 
-<1>1. Polynomial division gives
+::: pf
+
+::: pf-step
+
+Polynomial division gives
 \[
 \boxed{
 \frac{z^4}{z^3-1}
@@ -43,15 +46,22 @@ so
 z+\frac{z}{z^3-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 z(z^3-1)=z^4-z,
 \]
 the remainder after division by \(z^3-1\) is \(z\).
+
 :::
 
-<1>2. Factor
+:::
+
+::: pf-step
+
+Factor
 \[
 \boxed{
 z^3-1
@@ -59,14 +69,21 @@ z^3-1
 (z-1)(z-\omega)(z-\omega^2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The three cube roots of \(1\) are
 \[
 1,\omega,\omega^2.
 \]
+
 :::
 
-<1>3. Write
+:::
+
+::: pf-step
+
+Write
 \[
 \frac{z}{z^3-1}
 =
@@ -77,12 +94,19 @@ The three cube roots of \(1\) are
 \frac{C}{z-\omega^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All three roots of \(z^3-1\) are simple, so the proper rational function has
 a partial-fraction expansion with one simple term at each root.
+
 :::
 
-<1>4. For a simple root \(r\) of \(z^3-1\), the coefficient of
+:::
+
+::: pf-step
+
+For a simple root \(r\) of \(z^3-1\), the coefficient of
 \[
 \frac1{z-r}
 \]
@@ -95,7 +119,9 @@ is
 \boxed{\frac1{3r}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficient is
 \[
 \lim_{z\to r}
@@ -120,18 +146,30 @@ the limit is
 =
 \frac1{3r}.
 \]
+
 :::
 
-<1>5. At \(r=1\),
+:::
+
+::: pf-step
+
+At \(r=1\),
 \[
 \boxed{A=\frac13}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>4.
+
 :::
 
-<1>6. At \(r=\omega\),
+:::
+
+::: pf-step
+
+At \(r=\omega\),
 \[
 \boxed{
 B=\frac1{3\omega}
@@ -139,7 +177,9 @@ B=\frac1{3\omega}
 \frac{\omega^2}{3}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \omega^3=1,
@@ -148,9 +188,14 @@ one has
 \[
 \omega^{-1}=\omega^2.
 \]
+
 :::
 
-<1>7. At \(r=\omega^2\),
+:::
+
+::: pf-step
+
+At \(r=\omega^2\),
 \[
 \boxed{
 C=\frac1{3\omega^2}
@@ -158,14 +203,21 @@ C=\frac1{3\omega^2}
 \frac{\omega}{3}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again use
 \[
 \omega^{-2}=\omega.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{z^4}{z^3-1}
@@ -179,11 +231,18 @@ z
 \frac{\omega}{3(z-\omega^2)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>3--<1>7.
+
 :::
 
-<1>9. Over the real quadratic factorization
+:::
+
+::: pf-step
+
+Over the real quadratic factorization
 \[
 z^3-1
 =
@@ -198,11 +257,18 @@ one may instead write
 \frac{Bz+C}{z^2+z+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard partial-fraction form over the real coefficients.
+
 :::
 
-<1>10. Clearing denominators gives
+:::
+
+::: pf-step
+
+Clearing denominators gives
 \[
 z
 =
@@ -211,14 +277,21 @@ A(z^2+z+1)
 (Bz+C)(z-1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity in step <1>9 by
 \[
 (z-1)(z^2+z+1).
 \]
+
 :::
 
-<1>11. Comparing coefficients yields
+:::
+
+::: pf-step
+
+Comparing coefficients yields
 \[
 \boxed{
 A=\frac13,
@@ -228,7 +301,9 @@ B=-\frac13,
 C=\frac13}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding step <1>10 gives
 \[
 z
@@ -248,9 +323,14 @@ A-B+C=1,
 A-C=0.
 \]
 Solving gives the displayed values.
+
 :::
 
-<1>12. Hence an equivalent real-coefficient form is
+:::
+
+::: pf-step
+
+Hence an equivalent real-coefficient form is
 \[
 \boxed{
 \frac{z^4}{z^3-1}
@@ -262,14 +342,20 @@ z
 \frac{1-z}{3(z^2+z+1)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert step <1>11 into step <1>9 and combine with step <1>1.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives the complete complex partial-fraction decomposition, and
 step <1>12 gives the equivalent real-coefficient form.
+
 :::
+
 :::

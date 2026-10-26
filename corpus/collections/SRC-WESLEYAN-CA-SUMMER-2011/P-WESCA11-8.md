@@ -23,18 +23,23 @@ z^4-6z+3=0
 have absolute value strictly between $1$ and $2$?
 :::
 
-::: {.solution}
 Let
 \[
 P(z)=z^4-6z+3.
 \]
 
-<1>1. The polynomial $P$ has exactly one zero in the disk
+::: pf
+
+::: pf-step
+
+The polynomial $P$ has exactly one zero in the disk
 \[
 |z|<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle
 \[
 |z|=1,
@@ -80,14 +85,21 @@ counted with multiplicity. The latter has exactly one zero there, namely
 z=0.
 \]
 Hence $P$ has exactly one zero in the unit disk.
+
 :::
 
-<1>2. The polynomial $P$ has exactly four zeros in the disk
+:::
+
+::: pf-step
+
+The polynomial $P$ has exactly four zeros in the disk
 \[
 |z|<2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle
 \[
 |z|=2,
@@ -130,28 +142,42 @@ have the same number of zeros in
 \]
 counted with multiplicity. The polynomial $z^4$ has four zeros there,
 counted with multiplicity. Therefore $P$ has four zeros in the disk.
+
 :::
 
-<1>3. The polynomial has no zero on either boundary circle
+:::
+
+::: pf-step
+
+The polynomial has no zero on either boundary circle
 \[
 |z|=1
 \qquad\text{or}\qquad
 |z|=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The strict Rouché inequalities in steps <1>1 and <1>2 imply that on each
 boundary circle the dominant term has strictly larger modulus than the
 remaining terms. Hence their sum cannot vanish there.
+
 :::
 
-<1>4. Exactly
+:::
+
+::: pf-step
+
+Exactly
 \[
 \boxed{3}
 \]
 roots of $P$ have modulus strictly between $1$ and $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives four zeros in
 \[
 |z|<2,
@@ -169,11 +195,15 @@ contains
 4-1=3
 \]
 zeros, counted with multiplicity.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested count.
+
 :::
+
 :::

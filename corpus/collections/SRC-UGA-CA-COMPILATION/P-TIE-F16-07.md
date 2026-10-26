@@ -20,7 +20,6 @@ audit:
 Find the conformal map that takes the upper half-plane comformally onto the half-strip $\{ w = x + i y : \ - \pi / 2 < x < \pi / 2 \ y > 0 \}$
 :::
 
-::: {.solution}
 Let
 $$
 S
@@ -32,9 +31,15 @@ w=x+iy:
 \right\}.
 $$
 
-<1>1. The sine function maps $S$ into the upper half-plane $\HH$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The sine function maps $S$ into the upper half-plane $\HH$.
+
+
+::: pf-proof
+
 For
 $$
 w=x+iy,
@@ -64,11 +69,18 @@ Hence
 $$
 \sin(S)\subset\HH.
 $$
+
 :::
 
-<1>2. The derivative of $\sin$ does not vanish on $S$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The derivative of $\sin$ does not vanish on $S$.
+
+
+::: pf-proof
+
 One has
 $$
 (\sin w)'=\cos w.
@@ -84,15 +96,22 @@ $$
 \cos w\ne0
 $$
 for every $w\in S$.
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \sin:S\to\HH
 $$
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \sin w_1=\sin w_2.
@@ -132,15 +151,22 @@ $$
 \pi,
 $$
 so it cannot equal any odd multiple of $\pi$. Thus the second case is impossible.
+
 :::
 
-<1>4. For every $z\in\HH$, the equation
+:::
+
+::: pf-step
+
+For every $z\in\HH$, the equation
 $$
 \sin w=z
 $$
 has a solution $w\in S$.
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 q=e^{iw}.
@@ -234,19 +260,31 @@ Thus
 $$
 w\in S.
 $$
+
 :::
 
-<1>5. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \sin:S\longrightarrow\HH
 $$
 is a conformal bijection.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that the image lies in $\HH$, step <1>2 gives local conformality, step <1>3 gives injectivity, and step <1>4 gives surjectivity.
+
 :::
 
-<1>6. Therefore the required conformal map is the inverse branch
+:::
+
+::: pf-step
+
+Therefore the required conformal map is the inverse branch
 $$
 \boxed{
 F(z)
@@ -266,17 +304,23 @@ $$
 $$
 for $z\in\HH$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, $\sin:S\to\HH$ is a conformal bijection. Its inverse is therefore a conformal bijection
 $$
 F:\HH\to S.
 $$
 This inverse is precisely the indicated branch of the inverse sine.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the requested conformal map.
+
 :::
+
 :::

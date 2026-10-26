@@ -20,7 +20,6 @@ audit:
 Assume $f _ { n } \in H ( \Omega )$ is a sequence of holomorphic functions on the region Ω that are uniformly bounded on compact subsets and $f \in H ( \Omega )$ is such that the set $\{ z \in \Omega : \lim _ { n \to \infty } f _ { n } ( z ) = f ( z ) \}$ has a limit point in Ω. Show that $f _ { n }$ converges to f uniformly on compact subsets of Ω.
 :::
 
-::: {.solution}
 Let
 $$
 E
@@ -29,9 +28,15 @@ E
 $$
 By hypothesis, $E$ has a limit point in $\Omega$.
 
-<1>1. Every subsequence of $(f_n)$ has a further subsequence that converges uniformly on compact subsets of $\Omega$ to a holomorphic function.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every subsequence of $(f_n)$ has a further subsequence that converges uniformly on compact subsets of $\Omega$ to a holomorphic function.
+
+
+::: pf-proof
+
 The family
 $$
 \mathcal F
@@ -39,11 +44,18 @@ $$
 \{f_n:n\ge1\}
 $$
 is locally uniformly bounded by hypothesis. Montel's theorem therefore implies that $\mathcal F$ is a normal family. Hence every sequence drawn from $\mathcal F$, and in particular every subsequence of $(f_n)$, has a further subsequence converging uniformly on compact subsets of $\Omega$ to a holomorphic function.
+
 :::
 
-<1>2. Every locally uniform subsequential limit of $(f_n)$ equals $f$ on all of $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every locally uniform subsequential limit of $(f_n)$ equals $f$ on all of $\Omega$.
+
+
+::: pf-proof
+
 Let
 $$
 f_{n_j}\longrightarrow g
@@ -73,11 +85,18 @@ $$
 g\equiv f
 $$
 on $\Omega$.
+
 :::
 
-<1>3. The full sequence $(f_n)$ converges uniformly to $f$ on every compact subset of $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The full sequence $(f_n)$ converges uniformly to $f$ on every compact subset of $\Omega$.
+
+
+::: pf-proof
+
 Suppose not. Then there exist a compact set
 $$
 K\subset\Omega,
@@ -115,11 +134,15 @@ f_n\longrightarrow f
 \text{uniformly on compact subsets of }\Omega.
 }
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

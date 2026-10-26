@@ -21,7 +21,6 @@ a. State the chromatic recurrence satisfied by the chromatic polynomial $\chi ( 
 b. Prove the for any graph G the number of acyclic orientations of G is $\chi ( G ; - 1 )$ . [An orientation of a graph G is an assignment of a direction to every edge of G. Such an orientation is acyclic if the resulting directed graph contains no directed cycles.]
 :::
 
-::: {.solution}
 The printed statement in part (b) is missing the standard sign. If
 $$
 a(G)
@@ -48,7 +47,11 @@ $$
 $$
 so the unsigned formula is false.
 
-<1>1. For every non-loop edge
+::: pf
+
+::: pf-step
+
+For every non-loop edge
 $$
 e
 $$
@@ -65,7 +68,9 @@ $$
 -\chi(G/e;k)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every proper
 $$
 k
@@ -103,9 +108,14 @@ $$
 +\chi(G/e;k),
 $$
 which rearranges to the displayed recurrence.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 e=uv.
 $$
@@ -136,15 +146,22 @@ $$
 y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If both directed paths existed, their concatenation would produce a directed cycle in
 $$
 G-e,
 $$
 contradicting acyclicity.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 u\leadsto v
 $$
@@ -173,7 +190,9 @@ $$
 v\to u.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 u\leadsto v.
@@ -223,9 +242,14 @@ $$
 was already acyclic, no directed cycle occurs.
 
 The other case is symmetric.
+
 :::
 
-<1>4. If neither
+:::
+
+::: pf-step
+
+If neither
 $$
 u\leadsto v
 $$
@@ -247,7 +271,9 @@ $$
 $$
 acyclically.
 
-::: {.proof}
+
+::: pf-proof
+
 If one orientation of
 $$
 e
@@ -273,9 +299,14 @@ $$
 e.
 $$
 By hypothesis no such directed path exists in either direction.
+
 :::
 
-<1>5. The acyclic orientations of
+:::
+
+::: pf-step
+
+The acyclic orientations of
 $$
 G/e
 $$
@@ -297,7 +328,9 @@ v\leadsto u
 $$
 occurs.
 
-::: {.proof}
+
+::: pf-proof
+
 Given an acyclic orientation of
 $$
 G/e,
@@ -363,9 +396,14 @@ $$
 to the other. Both alternatives are excluded.
 
 The two constructions are inverse to each other.
+
 :::
 
-<1>6. The number of acyclic orientations satisfies
+:::
+
+::: pf-step
+
+The number of acyclic orientations satisfies
 $$
 \boxed{
 a(G)
@@ -374,7 +412,9 @@ a(G-e)
 +a(G/e)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Start with an acyclic orientation of
 $$
 G-e.
@@ -409,9 +449,14 @@ a(G)
 a(G-e)
 +a(G/e).
 $$
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 $$
 b(G)
 \coloneqq
@@ -425,7 +470,9 @@ b(G-e)
 +b(G/e).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 n=|V(G)|.
@@ -458,9 +505,14 @@ b(G-e)
 +b(G/e).
 \end{aligned}
 $$
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 $$
 G
 $$
@@ -473,7 +525,9 @@ $$
 a(G)=b(G)=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There is exactly one orientation of an edgeless graph, and it is acyclic. Thus
 $$
 a(G)=1.
@@ -490,9 +544,14 @@ b(G)
 (-1)^n(-1)^n
 =1.
 $$
+
 :::
 
-<1>9. For every finite loopless graph,
+:::
+
+::: pf-step
+
+For every finite loopless graph,
 $$
 \boxed{
 a(G)
@@ -500,7 +559,9 @@ a(G)
 (-1)^{|V(G)|}\chi(G;-1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Induct on the number of edges.
 
 The base case is step <1>8.
@@ -533,11 +594,15 @@ b(G-e)+b(G/e)
 =
 b(G).
 $$
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the chromatic recurrence. Step <1>9 proves the corrected acyclic-orientation theorem and explains why the unsigned statement printed in the source cannot be correct.
+
 :::
+
 :::

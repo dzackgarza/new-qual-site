@@ -28,7 +28,6 @@ Let
 Prove your answer.
 :::
 
-::: {.solution}
 On $\Omega_1$, use the branch
 \[
 \Log z=\log|z|+i\arg z,
@@ -41,7 +40,11 @@ z^{\pi/\alpha}
 =\exp\!\left(\frac{\pi}{\alpha}\Log z\right).
 \]
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 \[
 P(z)=z^{\pi/\alpha}
 \]
@@ -50,7 +53,9 @@ is a conformal bijection from $\Omega_1$ onto the upper half-disk
 H_1=\{w:|w|<1,\ \operatorname{Im}w>0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $z=re^{i\theta}$ with
 \[
 0<r<1,
@@ -79,9 +84,14 @@ Its derivative is
 P'(z)=\frac{\pi}{\alpha}z^{\pi/\alpha-1},
 \]
 which never vanishes on $\Omega_1$, so $P$ is conformal.
+
 :::
 
-<1>2. The Möbius transformation
+:::
+
+::: pf-step
+
+The Möbius transformation
 \[
 C(w)=\frac{1+w}{1-w}
 \]
@@ -91,7 +101,9 @@ is a conformal bijection from $H_1$ onto
 \operatorname{Im}\zeta>0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse Möbius transformation is
 \[
 C^{-1}(\zeta)=\frac{\zeta-1}{\zeta+1}.
@@ -121,9 +133,14 @@ Hence
 \]
 Thus $C$ maps $H_1$ bijectively onto $\Omega_2$. Being Möbius with no pole on
 $H_1$, it is conformal.
+
 :::
 
-<1>3. An explicit conformal map in part (a) is
+:::
+
+::: pf-step
+
+An explicit conformal map in part (a) is
 \[
 \boxed{
 F(z)=
@@ -131,7 +148,9 @@ F(z)=
      {1-z^{\pi/\alpha}} }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1 and <1>2,
 \[
 F=C\circ P
@@ -141,12 +160,19 @@ is a composition of conformal bijections
 \Omega_1\xrightarrow{\ P\ }H_1\xrightarrow{\ C\ }\Omega_2.
 \]
 Hence it is a conformal bijection from $\Omega_1$ to $\Omega_2$.
+
 :::
 
-<1>4. There are at least $\mathfrak c$ conformal maps
+:::
+
+::: pf-step
+
+There are at least $\mathfrak c$ conformal maps
 $\Omega_1\to\Omega_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every real $t>0$, multiplication
 \[
 \zeta\longmapsto t\zeta
@@ -160,12 +186,19 @@ $t$ give distinct maps, and
 \[
 |(0,\infty)|=\mathfrak c.
 \]
+
 :::
 
-<1>5. There are at most $\mathfrak c$ conformal maps
+:::
+
+::: pf-step
+
+There are at most $\mathfrak c$ conformal maps
 $\Omega_1\to\Omega_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a countable dense subset $Q\subseteq\Omega_1$. A continuous function
 on $\Omega_1$ is uniquely determined by its values on $Q$, because equality
 on a dense set passes to all points by continuity. Hence restriction gives an
@@ -187,21 +220,32 @@ one has
 =\mathfrak c.
 \]
 Thus there are at most $\mathfrak c$ such maps.
+
 :::
 
-<1>6. The answer to part (b) is
+:::
+
+::: pf-step
+
+The answer to part (b) is
 \[
 \boxed{\mathfrak c\text{ conformal maps}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives the lower bound and step <1>5 gives the upper bound.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the explicit map requested in part (a), and step <1>6 answers
 part (b).
+
 :::
+
 :::

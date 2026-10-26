@@ -20,24 +20,33 @@ Let $U\subset\mathbb C$ be open and let $\sigma$ be a cycle in $U$.
 Define what it means for $\sigma$ to be homologous to zero in $U$.
 :::
 
-::: {.solution}
-<1>1. The cycle $\sigma$ is homologous to zero in $U$ if
+::: pf
+
+::: pf-step
+
+The cycle $\sigma$ is homologous to zero in $U$ if
 \[
 \boxed{n(\sigma,a)=0\qquad\text{for every }a\in\mathbb C\setminus U},
 \]
 where $n(\sigma,a)$ denotes the winding number, or index, of the cycle
 $\sigma$ about $a$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because the cycle lies in $U$, every point of $\mathbb C\setminus U$ lies
 off the image of the cycle, so its winding number about such a point is
 defined. Vanishing of all these winding numbers is the definition that the
 cycle is homologous to zero in the open set $U$.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition.
+
 :::
+
 :::

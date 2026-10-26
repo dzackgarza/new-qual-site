@@ -23,14 +23,17 @@ f(x)=0
 for every integer $x$. Prove that for each $n\in\mathbb N$, the $n$th derivative $f^{(n)}$ has at least one root.
 :::
 
-::: {.solution}
 We prove the stronger statement that every derivative
 \[
 f^{(n)}
 \]
 has infinitely many zeros.
 
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 \[
 f
 \]
@@ -43,15 +46,22 @@ k,
 k\in\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the hypothesis
 \[
 f(k)=0
 \]
 for every integer $k$.
+
 :::
 
-<1>2. Suppose for some
+:::
+
+::: pf-step
+
+Suppose for some
 \[
 m\ge0
 \]
@@ -72,16 +82,23 @@ x_1^{(m)}
 \cdots.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the induction hypothesis.
 The case
 \[
 m=0
 \]
 is step <1>1.
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 \[
 k\in\mathbb Z,
 \]
@@ -104,7 +121,9 @@ x_k^{(m+1)}
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 f^{(m)}
@@ -139,15 +158,22 @@ strictly between the endpoints where
 f^{(m+1)}
 \]
 vanishes.
+
 :::
 
-<1>4. The sequence
+:::
+
+::: pf-step
+
+The sequence
 \[
 \{x_k^{(m+1)}\}_{k\in\mathbb Z}
 \]
 is strictly increasing.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $k$,
 \[
 x_k^{(m+1)}
@@ -168,9 +194,14 @@ x_{k+1}^{(m)}
 <
 x_{k+1}^{(m+1)}.
 \]
+
 :::
 
-<1>5. Thus if
+:::
+
+::: pf-step
+
+Thus if
 \[
 f^{(m)}
 \]
@@ -179,15 +210,22 @@ has infinitely many zeros, then so does
 f^{(m+1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>4 construct a strictly increasing bi-infinite sequence of
 zeros of
 \[
 f^{(m+1)}.
 \]
+
 :::
 
-<1>6. By induction, for every
+:::
+
+::: pf-step
+
+By induction, for every
 \[
 n\in\mathbb N,
 \]
@@ -197,12 +235,19 @@ f^{(n)}
 \]
 has infinitely many roots.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the base case.
 Step <1>5 gives the induction step.
+
 :::
 
-<1>7. In particular, for every
+:::
+
+::: pf-step
+
+In particular, for every
 \[
 n\in\mathbb N,
 \]
@@ -212,13 +257,19 @@ f^{(n)}
 \]
 has at least one root.
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from the stronger conclusion in step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

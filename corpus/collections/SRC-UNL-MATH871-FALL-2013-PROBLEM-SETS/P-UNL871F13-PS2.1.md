@@ -16,14 +16,19 @@ Give $X$ the included-point topology with included point $0$, and give $Y$ the f
 Determine whether $(X,\mathcal T_{ip})$ and $(Y,\mathcal T_{fc})$ are homeomorphic, and prove your answer.
 :::
 
-::: {.solution}
-<1>1. In the finite-complement topology on
+::: pf
+
+::: pf-step
+
+In the finite-complement topology on
 \[
 Y=\mathbb R,
 \]
 every singleton is closed.
 
-::: {.proof}
+
+::: pf-proof
+
 For any
 \[
 y\in Y,
@@ -55,9 +60,14 @@ is a
 T_1
 \]
 space.
+
 :::
 
-<1>2. In the included-point topology on
+:::
+
+::: pf-step
+
+In the included-point topology on
 \[
 X=\mathbb R
 \]
@@ -67,7 +77,9 @@ with included point $0$, the singleton
 \]
 is not closed.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the open sets are
 \[
 \varnothing
@@ -103,15 +115,22 @@ is not
 \[
 T_1.
 \]
+
 :::
 
-<1>3. The property of being
+:::
+
+::: pf-step
+
+The property of being
 \[
 T_1
 \]
 is preserved by homeomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 h:Z\to W
@@ -138,9 +157,14 @@ Since a homeomorphism maps closed sets to closed sets,
 is closed.
 Thus $W$ is $T_1$.
 The converse follows from $h^{-1}$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 (X,\mathcal T_{ip})
@@ -149,7 +173,9 @@ The converse follows from $h^{-1}$.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 (Y,\mathcal T_{fc})
@@ -162,11 +188,15 @@ By step <1>2,
 is not $T_1$.
 Step <1>3 says homeomorphic spaces must agree on this property.
 Hence no homeomorphism exists.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

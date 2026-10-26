@@ -23,7 +23,6 @@ f(z)=\frac1{(z^2+1)^2},
 and determine where the series converges.
 :::
 
-::: {.solution}
 Set
 \[
 w=z-i.
@@ -42,7 +41,11 @@ f(z)
 
 ## The annulus \(0<|w|<2\)
 
-<1>1. Rewrite
+::: pf
+
+::: pf-step
+
+Rewrite
 \[
 \frac1{(w+2i)^2}
 =
@@ -50,11 +53,18 @@ f(z)
 \frac1{\left(1+\frac{w}{2i}\right)^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Factor \(2i\) out of \(w+2i\).
+
 :::
 
-<1>2. For \(|u|<1\),
+:::
+
+::: pf-step
+
+For \(|u|<1\),
 \[
 \boxed{
 \frac1{(1+u)^2}
@@ -63,7 +73,9 @@ Factor \(2i\) out of \(w+2i\).
 (-1)^n(n+1)u^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the geometric series
 \[
 \frac1{1+u}
@@ -78,9 +90,14 @@ term by term:
 (-1)^n n u^{n-1}.
 \]
 Reindex.
+
 :::
 
-<1>3. Therefore, when
+:::
+
+::: pf-step
+
+Therefore, when
 \[
 \left|\frac{w}{2i}\right|<1,
 \]
@@ -94,7 +111,9 @@ one has
 \left(\frac{w}{2i}\right)^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 u=\frac{w}{2i}
@@ -103,9 +122,14 @@ into step <1>2 and use
 \[
 (2i)^2=-4.
 \]
+
 :::
 
-<1>4. Multiplying by \(w^{-2}\),
+:::
+
+::: pf-step
+
+Multiplying by \(w^{-2}\),
 \[
 \boxed{
 f(z)
@@ -116,14 +140,21 @@ f(z)
 \left(\frac{w}{2i}\right)^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the factorization
 \[
 f(z)=w^{-2}(w+2i)^{-2}.
 \]
+
 :::
 
-<1>5. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 \[
 \boxed{
 f(z)
@@ -136,17 +167,26 @@ f(z)
 +\cdots }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the first few terms of the series in step <1>4.
+
 :::
 
-<1>6. This Laurent series converges exactly on
+:::
+
+::: pf-step
+
+This Laurent series converges exactly on
 \[
 \boxed{
 0<|z-i|<2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The geometric-series condition is
 \[
 \left|\frac{w}{2i}\right|<1,
@@ -161,11 +201,14 @@ The center \(w=0\) is a pole, so it is excluded. The boundary circle
 \]
 contains the other pole \(w=-2i\), corresponding to \(z=-i\), so the
 maximal annulus cannot extend across it.
+
 :::
 
-## The exterior annulus \(|w|>2\)
+:::
 
-<1>7. Rewrite
+::: pf-step
+
+Rewrite
 \[
 \frac1{(w+2i)^2}
 =
@@ -173,11 +216,18 @@ maximal annulus cannot extend across it.
 \frac1{\left(1+\frac{2i}{w}\right)^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Factor \(w\) out of \(w+2i\).
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 \[
 \left|\frac{2i}{w}\right|<1,
 \]
@@ -191,14 +241,21 @@ then
 \left(\frac{2i}{w}\right)^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>2 with
 \[
 u=\frac{2i}{w}.
 \]
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 f(z)
@@ -208,14 +265,21 @@ f(z)
 \,w^{-n-4}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply step <1>8 by the additional factor \(w^{-2}\) from
 \[
 f(z)=w^{-2}(w+2i)^{-2}.
 \]
+
 :::
 
-<1>10. The first terms are
+:::
+
+::: pf-step
+
+The first terms are
 \[
 \boxed{
 f(z)
@@ -227,20 +291,29 @@ f(z)
 +\cdots }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 n=0,1,2,3
 \]
 in step <1>9.
+
 :::
 
-<1>11. The exterior Laurent series converges exactly on
+:::
+
+::: pf-step
+
+The exterior Laurent series converges exactly on
 \[
 \boxed{|z-i|>2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 \[
 \left|\frac{2i}{w}\right|<1
@@ -251,15 +324,22 @@ is equivalent to
 \]
 Again the circle \(|w|=2\) contains the singularity \(w=-2i\), so this is
 the maximal exterior annulus.
+
 :::
 
-<1>12. Thus the complete Laurent expansions centered at \(i\) are the series
+:::
+
+::: pf-step
+
+Thus the complete Laurent expansions centered at \(i\) are the series
 in steps <1>4 and <1>9 on the two maximal annuli separated by
 \[
 |z-i|=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only finite singularities are
 \[
 z=i
@@ -268,12 +348,16 @@ z=-i.
 \]
 Their distances from the center \(i\) are \(0\) and \(2\), so these are
 exactly the maximal Laurent annuli.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4--<1>6 give the local Laurent expansion and its region, while
 steps <1>9--<1>11 give the exterior expansion and its region.
+
 :::
+
 :::

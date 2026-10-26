@@ -25,7 +25,6 @@ Define each of the following for an analytic function:
 3. an essential singularity.
 :::
 
-::: {.solution}
 Let
 \[
 z_0\in\mathbb C
@@ -39,14 +38,20 @@ the function $f$ is holomorphic on
 0<|z-z_0|<r.
 \]
 
-<1>1. The point $z_0$ is a **pole** of $f$ if
+::: pf
+
+::: pf-step
+
+The point $z_0$ is a **pole** of $f$ if
 \[
 |f(z)|\longrightarrow\infty
 \qquad
 (z\to z_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, $z_0$ is a pole if there exists an integer
 \[
 m\ge1
@@ -65,9 +70,14 @@ f(z)
 
 Equivalently, the Laurent series of $f$ at $z_0$ has a finite nonzero
 principal part.
+
 :::
 
-<1>2. The **order** of a pole $z_0$ is the unique integer
+:::
+
+::: pf-step
+
+The **order** of a pole $z_0$ is the unique integer
 \[
 m\ge1
 \]
@@ -77,7 +87,9 @@ such that
 \]
 extends holomorphically across $z_0$ with a nonzero value there.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, if
 \[
 f(z)
@@ -94,12 +106,19 @@ It is also the least positive integer $m$ such that
 (z-z_0)^m f(z)
 \]
 has a removable singularity at $z_0$.
+
 :::
 
-<1>3. The isolated singularity $z_0$ is **essential** if it is neither
+:::
+
+::: pf-step
+
+The isolated singularity $z_0$ is **essential** if it is neither
 removable nor a pole.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, the Laurent expansion
 \[
 f(z)
@@ -114,12 +133,16 @@ Thus the three isolated-singularity types are:
 1. removable: no negative Laurent terms;
 2. pole: finitely many negative Laurent terms, at least one nonzero;
 3. essential: infinitely many nonzero negative Laurent terms.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 give the requested definitions and their standard
 equivalent formulations.
+
 :::
+
 :::

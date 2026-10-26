@@ -29,7 +29,6 @@ The source omits the defining expression between "Let" and "denote", so the coef
 From the conclusions, the missing text defines $c_n$ as the coefficients of the power series expansion of $f$ in the open unit disc, $f(z) = \sum_{n=0}^\infty c_n z^n$ for $\abs{z} < 1$; the source does not supply this wording.
 :::
 
-::: {.solution}
 Use the intended coefficients described in the remark:
 $$
 f(z)=\sum_{n=0}^{\infty}c_nz^n,
@@ -38,7 +37,11 @@ f(z)=\sum_{n=0}^{\infty}c_nz^n,
 $$
 Let the pole of $f$ at $z_0$ have order $m\ge1$.
 
-<1>1. There exist coefficients $a_{-1},\ldots,a_{-m}$ with $a_{-m}\ne0$ and a function $h$ holomorphic on a disk $\abs{z}<\rho$ for some $\rho>1$ such that
+::: pf
+
+::: pf-step
+
+There exist coefficients $a_{-1},\ldots,a_{-m}$ with $a_{-m}\ne0$ and a function $h$ holomorphic on a disk $\abs{z}<\rho$ for some $\rho>1$ such that
 $$
 f(z)
 =
@@ -48,7 +51,9 @@ h(z)
 \frac{a_{-j}}{(z-z_0)^j}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is holomorphic in an open neighborhood of the closed unit disk except for the pole at $z_0$, compactness gives a number $\rho>1$ such that $f$ is meromorphic on $\abs{z}<\rho$ with no singularity there except $z_0$. The Laurent expansion of $f$ at the pole has a finite principal part
 $$
 \sum_{j=1}^{m}\frac{a_{-j}}{(z-z_0)^j},
@@ -56,9 +61,14 @@ $$
 a_{-m}\ne0.
 $$
 Subtracting this principal part removes the pole, so the difference extends holomorphically across $z_0$. Denote the resulting holomorphic function by $h$.
+
 :::
 
-<1>2. For every $j\ge1$ and $\abs{z}<1$,
+:::
+
+::: pf-step
+
+For every $j\ge1$ and $\abs{z}<1$,
 $$
 \frac1{(z-z_0)^j}
 =
@@ -68,7 +78,9 @@ $$
 z_0^{-n-j}z^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\abs{z}<1=\abs{z_0}$,
 $$
 \abs{\frac{z}{z_0}}<1.
@@ -88,9 +100,14 @@ $$
 \end{aligned}
 $$
 which is the claimed expansion.
+
 :::
 
-<1>3. There is a polynomial $P(n)$ of degree $m-1$ with nonzero leading coefficient such that
+:::
+
+::: pf-step
+
+There is a polynomial $P(n)$ of degree $m-1$ with nonzero leading coefficient such that
 $$
 c_n
 =
@@ -101,7 +118,9 @@ $$
 h(z)=\sum_{n=0}^{\infty}h_nz^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1 and <1>2, comparison of Taylor coefficients gives
 $$
 c_n
@@ -126,15 +145,22 @@ $$
 \frac{a_{-m}(-1)^mz_0^{-m}}{(m-1)!},
 $$
 which is nonzero. Thus $\deg P=m-1$.
+
 :::
 
-<1>4. For some $r>1$ and some constant $C>0$,
+:::
+
+::: pf-step
+
+For some $r>1$ and some constant $C>0$,
 $$
 \abs{h_n}\le Cr^{-n}
 $$
 for all $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $r$ with
 $$
 1<r<\rho.
@@ -148,11 +174,18 @@ $$
 \abs{h_n}\le M_rr^{-n}.
 $$
 Take $C=M_r$.
+
 :::
 
-<1>5. The coefficients $c_n$ are nonzero for all sufficiently large $n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The coefficients $c_n$ are nonzero for all sufficiently large $n$.
+
+
+::: pf-proof
+
 Since $\abs{z_0}=1$, step <1>3 gives
 $$
 z_0^nc_n
@@ -191,16 +224,23 @@ $$
 >0,
 $$
 so $c_n\ne0$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \lim_{n\to\infty}\frac{c_n}{c_{n+1}}=z_0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 \varepsilon_n\coloneqq z_0^nh_n.
@@ -236,11 +276,15 @@ $$
 \longrightarrow1,
 $$
 which proves the claimed limit.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (1), and step <1>6 proves part (2).
+
 :::
+
 :::

@@ -23,14 +23,17 @@ g(z)=\overline{f(\overline z)}
 is holomorphic there as well.
 :::
 
-::: {.solution}
 Let
 \[
 g(z)=\overline{f(\overline z)}
 \]
 for \(|z|<1\).
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 |z|<1,
 \]
@@ -39,15 +42,22 @@ then
 |\overline z|<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Complex conjugation preserves modulus:
 \[
 |\overline z|=|z|.
 \]
 Thus \(f(\overline z)\) is defined on the whole unit disk.
+
 :::
 
-<1>2. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 z_0\in\mathbb D
 \]
@@ -57,12 +67,19 @@ h\ne0
 \]
 be sufficiently small.
 
-::: {.proof}
+
+::: pf-proof
+
 Since the unit disk is open, \(z_0+h\in\mathbb D\) for all sufficiently
 small \(h\).
+
 :::
 
-<1>3. The difference quotient is
+:::
+
+::: pf-step
+
+The difference quotient is
 \[
 \frac{g(z_0+h)-g(z_0)}{h}
 =
@@ -75,7 +92,9 @@ f(\overline{z_0})
 }{h}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \overline{z_0+h}
@@ -83,9 +102,14 @@ Use
 \overline{z_0}+\overline h
 \]
 and the definition of \(g\).
+
 :::
 
-<1>4. Rewrite this quotient as
+:::
+
+::: pf-step
+
+Rewrite this quotient as
 \[
 \boxed{
 \frac{g(z_0+h)-g(z_0)}{h}
@@ -99,7 +123,9 @@ f(\overline{z_0}+\overline h)-f(\overline{z_0})
 }}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(h\ne0\),
 \[
 \overline{\frac{A}{\overline h}}
@@ -110,9 +136,14 @@ since
 \[
 \overline{\overline h}=h.
 \]
+
 :::
 
-<1>5. As
+:::
+
+::: pf-step
+
+As
 \[
 h\to0,
 \]
@@ -121,14 +152,21 @@ one has
 \overline h\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again,
 \[
 |\overline h|=|h|.
 \]
+
 :::
 
-<1>6. Since \(f\) is holomorphic,
+:::
+
+::: pf-step
+
+Since \(f\) is holomorphic,
 \[
 \lim_{h\to0}
 \frac{
@@ -140,12 +178,19 @@ f(\overline{z_0}+\overline h)-f(\overline{z_0})
 f'(\overline{z_0}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 says the increment \(\overline h\) tends to \(0\), so this is the
 ordinary complex derivative of \(f\) at \(\overline{z_0}\).
+
 :::
 
-<1>7. Taking conjugates,
+:::
+
+::: pf-step
+
+Taking conjugates,
 \[
 \boxed{
 g'(z_0)
@@ -153,25 +198,38 @@ g'(z_0)
 \overline{f'(\overline{z_0})}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply continuity of complex conjugation to the limit in step <1>6 and use
 the difference quotient identity in step <1>4.
+
 :::
 
-<1>8. Since \(z_0\in\mathbb D\) was arbitrary,
+:::
+
+::: pf-step
+
+Since \(z_0\in\mathbb D\) was arbitrary,
 \[
 \boxed{
 g\text{ is holomorphic on }\mathbb D}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 proves existence of the complex derivative at every point of the
 unit disk.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

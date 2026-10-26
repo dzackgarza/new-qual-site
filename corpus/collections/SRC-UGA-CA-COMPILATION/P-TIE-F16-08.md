@@ -33,7 +33,6 @@ $$
 which is exactly the strip in which the integral is absolutely convergent.
 :::
 
-::: {.solution}
 Fix
 $$
 \xi\in\CC,
@@ -47,7 +46,11 @@ F(z)
 \frac{e^{-2\pi i\xi z}}{\cosh\pi z}.
 $$
 
-<1>1. The integral
+::: pf
+
+::: pf-step
+
+The integral
 $$
 I(\xi)
 \coloneqq
@@ -56,7 +59,9 @@ I(\xi)
 $$
 converges absolutely.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 \xi=u+iv.
@@ -88,16 +93,23 @@ e^{-(\pi+2\pi v)\abs{x}}
 \right),
 $$
 which is integrable because $v>-1/2$. Hence the full integral converges absolutely.
+
 :::
 
-<1>2. The function $F$ satisfies
+:::
+
+::: pf-step
+
+The function $F$ satisfies
 $$
 F(z+i)
 =
 -e^{2\pi\xi}F(z).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \cosh\pi(z+i)
@@ -114,9 +126,14 @@ e^{2\pi\xi}
 e^{-2\pi i\xi z}.
 $$
 Dividing gives the identity.
+
 :::
 
-<1>3. The only pole of $F$ in the strip
+:::
+
+::: pf-step
+
+The only pole of $F$ in the strip
 $$
 0<\operatorname{Im}z<1
 $$
@@ -131,7 +148,9 @@ $$
 \frac{e^{\pi\xi}}{\pi i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The zeros of $\cosh\pi z$ occur when
 $$
 \pi z
@@ -170,15 +189,22 @@ e^{-2\pi i\xi(i/2)}
 \frac{e^{\pi\xi}}{\pi i}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Let $\Gamma_R$ be the positively oriented rectangle with vertices
+:::
+
+::: pf-step
+
+Let $\Gamma_R$ be the positively oriented rectangle with vertices
 $$
 -R,\quad R,\quad R+i,\quad -R+i.
 $$
 The two vertical-edge integrals tend to $0$ as $R\to\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 z=\pm R+iy,
@@ -221,9 +247,14 @@ $$
 e^{\pi R},
 $$
 the quotient tends uniformly to $0$ on each unit-length vertical edge. Therefore both vertical integrals tend to $0$.
+
 :::
 
-<1>5. The bottom and top edges satisfy
+:::
+
+::: pf-step
+
+The bottom and top edges satisfy
 $$
 \lim_{R\to\infty}
 \int_{\partial\Gamma_R}
@@ -235,7 +266,9 @@ F(z)\,dz
 I(\xi).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The bottom edge contributes
 $$
 \int_{-R}^{R}
@@ -256,9 +289,14 @@ F(x)\,dx.
 \end{aligned}
 $$
 By step <1>4, the vertical contributions vanish as $R\to\infty$, and by step <1>1 the horizontal integrals converge to $I(\xi)$. This gives the displayed limit.
+
 :::
 
-<1>6. The residue theorem gives
+:::
+
+::: pf-step
+
+The residue theorem gives
 $$
 \left(
 1+e^{2\pi\xi}
@@ -268,7 +306,9 @@ I(\xi)
 2e^{\pi\xi}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For sufficiently large $R$, step <1>3 shows that $\Gamma_R$ encloses exactly the one pole $i/2$. Hence
 $$
 \int_{\partial\Gamma_R}
@@ -280,9 +320,14 @@ F(z)\,dz
 2e^{\pi\xi}.
 $$
 Letting $R\to\infty$ and applying step <1>5 yields the identity.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I(\xi)
@@ -291,7 +336,9 @@ I(\xi)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 1+e^{2\pi\xi}
@@ -311,11 +358,15 @@ I(\xi)
 \frac1{\cosh\pi\xi}.
 $$
 In particular, this holds for every real $\xi$, which is the Fourier-transform case requested by the problem.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required evaluation.
+
 :::
+
 :::

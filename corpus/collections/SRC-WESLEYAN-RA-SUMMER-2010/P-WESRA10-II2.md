@@ -27,13 +27,18 @@ for every bounded interval $I$ and rational $r$.
 (b) Prove $\mu(I)=\mu(I+a)$ for every bounded interval $I$ and every real $a$.
 :::
 
-::: {.solution}
-<1>1. For every $x\in\mathbb R$ and every rational $r$,
+::: pf
+
+::: pf-step
+
+For every $x\in\mathbb R$ and every rational $r$,
 \[
 \mu(\{x\})=\mu(\{x+r\}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $n\ge1$, let
 \[
 I_n=(x-1/n,x+1/n).
@@ -54,14 +59,21 @@ continuity from above gives
 =\lim_{n\to\infty}\mu(I_n)
 =\mu(\{x\}).
 \]
+
 :::
 
-<1>2. For every $x\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every $x\in\mathbb R$,
 \[
 \boxed{\mu(\{x\})=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x$ and set
 \[
 c=\mu(\{x\}).
@@ -83,14 +95,21 @@ bounded interval $[x,x+1]$. Hence for every $N$,
 =Nc.
 \]
 The left-hand side is finite, so $c=0$.
+
 :::
 
-<1>3. For every $y\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every $y\in\mathbb R$,
 \[
 \lim_{\delta\downarrow0}\mu((y-\delta,y+\delta))=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any sequence $\delta_n\downarrow0$, the intervals
 \[
 (y-\delta_n,y+\delta_n)
@@ -104,9 +123,14 @@ and step <1>2 give
 \]
 Since this holds for every sequence $\delta_n\downarrow0$, the displayed
 one-sided limit is $0$.
+
 :::
 
-<1>4. Let $I$ be a bounded interval and let $r_n\in\mathbb Q$ satisfy
+:::
+
+::: pf-step
+
+Let $I$ be a bounded interval and let $r_n\in\mathbb Q$ satisfy
 \[
 r_n\to a\in\mathbb R.
 \]
@@ -115,7 +139,9 @@ Then
 \mu(I+r_n)\to\mu(I+a).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write the endpoints of $I$ as $u<v$. Because singletons have measure zero by
 step <1>2, the measure of an interval is unchanged by adding or removing its
 endpoints. Thus it is enough to compare the open intervals
@@ -138,14 +164,21 @@ Since
 \mu\bigl((I+r_n)\triangle(I+a)\bigr),
 \]
 the desired convergence follows.
+
 :::
 
-<1>5. For every bounded interval $I$ and every real $a$,
+:::
+
+::: pf-step
+
+For every bounded interval $I$ and every real $a$,
 \[
 \boxed{\mu(I)=\mu(I+a)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose rationals $r_n\to a$. By hypothesis,
 \[
 \mu(I+r_n)=\mu(I)
@@ -156,11 +189,15 @@ for every $n$. Step <1>4 gives
 =\lim_{n\to\infty}\mu(I+r_n)
 =\mu(I).
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

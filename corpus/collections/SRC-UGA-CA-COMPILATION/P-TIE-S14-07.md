@@ -41,14 +41,17 @@ $$
 With $n = 1$ and $a = 1 - s$ for $0 < s < 1$ it reads $\int_0^\infty \frac{v^{-s}}{1+v}\,dv = \frac{\pi}{\sin \pi s}$, which the hint turns into the reflection formula.
 :::
 
-::: {.solution}
 For $t>0$ and complex $s$, write
 $$
 t^{s-1}\coloneqq e^{(s-1)\log t},
 $$
 where $\log t$ is the real logarithm.
 
-<1>1. For every compact set
+::: pf
+
+::: pf-step
+
+For every compact set
 $$
 K\subset\{s\in\CC:\operatorname{Re}(s)>0\},
 $$
@@ -58,7 +61,9 @@ $$
 $$
 converges uniformly for $s\in K$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \sigma_0\coloneqq\min_{s\in K}\operatorname{Re}(s)>0,
@@ -80,9 +85,14 @@ $$
 e^{-t}t^{\sigma_1-1},
 $$
 which is integrable on $[1,\infty)$. The two bounds are independent of $s\in K$, so the improper integral converges uniformly on $K$ by the Weierstrass criterion for improper integrals.
+
 :::
 
-<1>2. The function
+:::
+
+::: pf-step
+
+The function
 $$
 \Gamma(s)
 \coloneqq
@@ -90,7 +100,9 @@ $$
 $$
 is analytic on the half-plane $\operatorname{Re}(s)>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<\varepsilon<R<\infty$, define
 $$
 \Gamma_{\varepsilon,R}(s)
@@ -105,16 +117,23 @@ $$
 e^{-t}e^{(s-1)\log t}\log t\,dt,
 $$
 so $\Gamma_{\varepsilon,R}$ is entire. By step <1>1, as $\varepsilon\downarrow0$ and $R\to\infty$, these functions converge uniformly on every compact subset of $\operatorname{Re}(s)>0$ to $\Gamma(s)$. A locally uniform limit of holomorphic functions is holomorphic, so $\Gamma$ is analytic on the half-plane.
+
 :::
 
-<1>3. For real $s$ with $0<s<1$,
+:::
+
+::: pf-step
+
+For real $s$ with $0<s<1$,
 $$
 \Gamma(s)\Gamma(1-s)
 =
 \int_0^\infty\frac{v^{-s}}{1+v}\,dv.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $t>0$, the substitution $u=vt$ in the defining integral for $\Gamma(1-s)$ gives
 $$
 \Gamma(1-s)
@@ -150,16 +169,23 @@ v^{-s}
 \int_0^\infty\frac{v^{-s}}{1+v}\,dv.
 \end{aligned}
 $$
+
 :::
 
-<1>4. For real $0<s<1$,
+:::
+
+::: pf-step
+
+For real $0<s<1$,
 $$
 \Gamma(s)\Gamma(1-s)
 =
 \frac{\pi}{\sin\pi s}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The formula quoted in the remark, with $n=1$ and $a=1-s$, gives
 $$
 \int_0^\infty\frac{v^{-s}}{1+v}\,dv
@@ -169,9 +195,14 @@ $$
 \frac{\pi}{\sin\pi s}.
 $$
 Combine this with step <1>3.
+
 :::
 
-<1>5. The reflection formula
+:::
+
+::: pf-step
+
+The reflection formula
 $$
 \boxed{
 \Gamma(s)\Gamma(1-s)
@@ -184,13 +215,19 @@ $$
 0<\operatorname{Re}(s)<1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on the strip $0<\operatorname{Re}(s)<1$. The function $\pi/\sin\pi s$ is analytic there as well, because the zeros of $\sin\pi s$ are the integers and no integer lies in the strip. Step <1>4 shows that the two analytic functions agree for every real $s\in(0,1)$. This set has accumulation points in the strip, so the identity theorem implies equality throughout the strip.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>5 proves part (b) on the natural domain where both gamma factors are defined by the integral from part (a).
+
 :::
+
 :::

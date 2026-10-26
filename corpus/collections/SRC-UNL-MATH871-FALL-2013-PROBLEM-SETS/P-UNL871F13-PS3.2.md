@@ -27,20 +27,25 @@ If equality fails, determine which, if either, of the containments
 holds, and prove your answer.
 :::
 
-::: {.solution}
 Write
 \[
 Z=\mathbb Z\times\mathbb Z.
 \]
 
-<1>1. Every cofinite-open subset of $Z$ is open in the product topology:
+::: pf
+
+::: pf-step
+
+Every cofinite-open subset of $Z$ is open in the product topology:
 \[
 \mathcal T_{mathrm{fc}}
 \subseteq
 \mathcal T_{mathrm{prod}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 O\in\mathcal T_{mathrm{fc}}.
@@ -137,11 +142,18 @@ $O$, so
 \[
 O\in\mathcal T_{mathrm{prod}}.
 \]
+
 :::
 
-<1>2. The reverse containment fails.
+:::
 
-::: {.proof}
+::: pf-step
+
+The reverse containment fails.
+
+
+::: pf-proof
+
 Consider
 \[
 W
@@ -183,9 +195,14 @@ Thus
 \nsubseteq
 \mathcal T_{mathrm{fc}}.
 \]
+
 :::
 
-<1>3. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \mathcal T_{mathrm{fc}}
@@ -194,13 +211,19 @@ Thus
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the containment, and step <1>2 proves it is strict.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the complete comparison of the two topologies.
+
 :::
+
 :::

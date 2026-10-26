@@ -26,7 +26,6 @@ Consider the following statement about real numbers:
 (c) Write its converse in verbal form.
 :::
 
-::: {.solution}
 Let
 $$
 P(x,y)\coloneqq (x\le 0)\land(x<y),
@@ -34,19 +33,32 @@ P(x,y)\coloneqq (x\le 0)\land(x<y),
 Q(x,y)\coloneqq \exists z\in\RR\;(xz>y).
 $$
 
-<1>1. The symbolic form of the statement is
+::: pf
+
+::: pf-step
+
+The symbolic form of the statement is
 $$
 \boxed{\forall x\in\RR\;\forall y\in\RR\;
 \bigl(P(x,y)\to Q(x,y)\bigr).}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The original sentence makes an assertion for arbitrary real numbers $x$ and $y$, so both are universally quantified. Its hypothesis is $P(x,y)$, and its conclusion is that there exists a real number $z$ satisfying $xz>y$, which is $Q(x,y)$.
+
 :::
 
-<1>2. The negation, without using the word "not," is: there exist real numbers $x$ and $y$ such that $x\le0$ and $x<y$, and for every real number $z$ one has $xz\le y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The negation, without using the word "not," is: there exist real numbers $x$ and $y$ such that $x\le0$ and $x<y$, and for every real number $z$ one has $xz\le y$.
+
+
+::: pf-proof
+
 By step <1>1,
 $$
 \neg\!\left(\forall x\in\RR\;\forall y\in\RR\;(P(x,y)\to Q(x,y))\right)
@@ -65,22 +77,33 @@ $$
 \forall z\in\RR\;(xz\le y).
 $$
 Translating this last formula into words gives the sentence in the claim.
+
 :::
 
-<1>3. The converse is: for all real numbers $x$ and $y$, if there is a real number $z$ such that $xz>y$, then $x\le0$ and $x<y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The converse is: for all real numbers $x$ and $y$, if there is a real number $z$ such that $xz>y$, then $x\le0$ and $x<y$.
+
+
+::: pf-proof
+
 The converse of an implication $A\to B$ is $B\to A$. Thus the converse of the formula in step <1>1 is
 $$
 \forall x\in\RR\;\forall y\in\RR\;
 \bigl(Q(x,y)\to P(x,y)\bigr),
 $$
 which is exactly the verbal statement in the claim.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+
 :::
+
 :::

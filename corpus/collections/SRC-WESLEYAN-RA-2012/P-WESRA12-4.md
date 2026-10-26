@@ -19,7 +19,6 @@ audit:
 Which theorem or theorems from the course seem most interesting, and why?
 :::
 
-::: {.solution}
 One reasonable answer is that the **Dominated Convergence Theorem** and the
 **Uniform Boundedness Theorem** are especially interesting because they
 share the same broad pattern:
@@ -29,10 +28,16 @@ share the same broad pattern:
 - the passage from local information to global control is impossible without
   an additional structural hypothesis.
 
-<1>1. The Dominated Convergence Theorem is striking because almost-everywhere
+::: pf
+
+::: pf-step
+
+The Dominated Convergence Theorem is striking because almost-everywhere
 pointwise convergence alone does not justify exchanging limit and integral.
 
-::: {.proof}
+
+::: pf-proof
+
 There are sequences
 \[
 f_n\to f
@@ -65,11 +70,18 @@ then
 \]
 Thus one fixed integrable majorant converts pointwise convergence into
 convergence of the global integral.
+
 :::
 
-<1>2. The Uniform Boundedness Theorem is analogous in functional analysis.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Uniform Boundedness Theorem is analogous in functional analysis.
+
+
+::: pf-proof
+
 Let
 \[
 \mathcal F
@@ -103,11 +115,18 @@ The completeness of
 X
 \]
 is the structural hypothesis that makes the conclusion possible.
+
 :::
 
-<1>3. The two theorems are therefore conceptually parallel.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two theorems are therefore conceptually parallel.
+
+
+::: pf-proof
+
 Dominated convergence starts from
 \[
 f_n(x)\to f(x)
@@ -125,9 +144,14 @@ using completeness and the Baire category theorem.
 In both cases, the main content is not an algebraic manipulation but the
 identification of the exact hypothesis that permits pointwise information to
 be upgraded to a uniform or integral statement.
+
 :::
 
-<1>4. A concise response to the prompt is therefore:
+:::
+
+::: pf-step
+
+A concise response to the prompt is therefore:
 
 > The Dominated Convergence Theorem and the Uniform Boundedness Theorem are
 > particularly interesting because both explain when pointwise information
@@ -138,13 +162,19 @@ be upgraded to a uniform or integral statement.
 > bound. In both cases the theorem isolates a structural hypothesis that is
 > genuinely necessary for a much stronger conclusion.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 justify every mathematical assertion in the response.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 supplies a complete answer to the reflective prompt.
+
 :::
+
 :::

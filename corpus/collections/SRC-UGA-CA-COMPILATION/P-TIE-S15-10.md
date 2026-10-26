@@ -34,10 +34,15 @@ Hint: Verify the mean value property for your new function obtained by Schwarz r
 The source adds "cf. Theorem 5.6 on p.60 of Stein et al." to part (3), a pointer to the Schwarz reflection principle for holomorphic functions in Stein and Shakarchi, *Complex Analysis*; part (3) asks for the harmonic analogue and does not depend on the reference.
 :::
 
-::: {.solution}
-<1>1. The assertion in part (1) is false, even when $O$ is a region.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The assertion in part (1) is false, even when $O$ is a region.
+
+
+::: pf-proof
+
 Take
 $$
 O=\DD,
@@ -59,11 +64,18 @@ $$
 z_n\longrightarrow0\in\DD.
 $$
 Thus an accumulating sequence of zeros does not force a harmonic function to vanish identically.
+
 :::
 
-<1>2. The assertion in part (2) is false for an arbitrary open set $O$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assertion in part (2) is false for an arbitrary open set $O$.
+
+
+::: pf-proof
+
 Let
 $$
 O
@@ -82,15 +94,22 @@ u(z)
 \end{cases}
 $$
 The function is harmonic on the open set $O$ and vanishes on the entire first disk, but it is not identically zero on $O$.
+
 :::
 
-<1>3. If $O$ is a region and a harmonic function $u$ vanishes on a nonempty disk contained in $O$, then
+:::
+
+::: pf-step
+
+If $O$ is a region and a harmonic function $u$ vanishes on a nonempty disk contained in $O$, then
 $$
 u\equiv0
 $$
 on $O$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 E
@@ -120,9 +139,14 @@ $$
 on $B(z_0,r)$. Thus $z_0\in E$.
 
 Hence $E$ is nonempty, open, and closed in the connected set $O$. Therefore $E=O$, so $u\equiv0$ on $O$.
+
 :::
 
-<1>4. Harmonic Schwarz reflection principle: let $G\subset\CC$ be a region symmetric under complex conjugation, let
+:::
+
+::: pf-step
+
+Harmonic Schwarz reflection principle: let $G\subset\CC$ be a region symmetric under complex conjugation, let
 $$
 G^+\coloneqq G\cap\{z:\operatorname{Im}z>0\},
 \qquad
@@ -144,7 +168,9 @@ u(z),&\operatorname{Im}z>0,\\
 $$
 Then $U$ is harmonic on $G$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $U$ is continuous across $I$ because $u$ extends continuously to $I$ with value $0$. Away from $I$, it is harmonic: in the upper half it equals $u$, while in the lower half it is the composition of $u$ with reflection followed by multiplication by $-1$, which preserves harmonicity.
 
 It remains to verify harmonicity at a point $x_0\in I$. Choose $r>0$ such that the closed disk
@@ -165,11 +191,15 @@ U(x_0+\rho e^{i(2\pi-t)})
 -U(x_0+\rho e^{it}).
 $$
 Hence the two semicircle contributions cancel, and the average is $0=U(x_0)$. Thus $U$ satisfies the mean value property at every point of $I$. Since $U$ is continuous and has the mean value property locally at every point of $G$, it is harmonic on $G$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (1), steps <1>2--<1>3 answer part (2), and step <1>4 formulates and proves the harmonic Schwarz reflection principle requested in part (3).
+
 :::
+
 :::

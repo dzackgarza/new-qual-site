@@ -31,38 +31,57 @@ Show that
 Hint: represent $f(z)$ as a path integral along a convenient path.
 :::
 
-::: {.solution}
-<1>1. The derivative $f'$ maps $D$ into the unit disk and satisfies
+::: pf
+
+::: pf-step
+
+The derivative $f'$ maps $D$ into the unit disk and satisfies
 $$
 f'(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the given hypothesis
 $$
 |f'(z)|<1
 $$
 for $z\in D$, together with $f'(0)=0$.
+
 :::
 
-<1>2. For every $w\in D$,
+:::
+
+::: pf-step
+
+For every $w\in D$,
 $$
 |f'(w)|\le |w|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f'$ is holomorphic on $D$, maps $D$ into itself by step <1>1, and vanishes at $0$. Schwarz's lemma therefore gives
 $$
 |f'(w)|\le|w|.
 $$
+
 :::
 
-<1>3. For every $z\in D$,
+:::
+
+::: pf-step
+
+For every $z\in D$,
 $$
 f(z)=\int_0^1 f'(tz)\,z\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate $f'$ along the straight-line path
 $$
 \gamma(t)=tz,
@@ -74,15 +93,22 @@ f(z)-f(0)
 =\int_\gamma f'(w)\,dw
 =\int_0^1 f'(tz)\,z\,dt.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{|f(z)|\le\frac{|z|^2}{2}}
 $$
 for every $z\in D$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>3,
 $$
 \begin{aligned}
@@ -92,11 +118,15 @@ $$
 &=\frac{|z|^2}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required estimate.
+
 :::
+
 :::

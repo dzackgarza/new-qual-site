@@ -53,13 +53,16 @@ Discuss why \\(f_i:S^2\\to\\mathbb R\\) is continuous.
 (d) Use the Borsuk--Ulam theorem to prove that there is a plane in \\(\\mathbb R^3\\) that simultaneously divides each block \\(A_i\\) into two pieces of equal volume.
 :::
 
-::: {.solution}
 Write
 \[
 V_i=\operatorname{vol}(A_i).
 \]
 
-<1>1. The plane and half-spaces are exactly
+::: pf
+
+::: pf-step
+
+The plane and half-spaces are exactly
 \[
 P_{q,t}=\{x:x\cdot q=t\},
 \qquad
@@ -68,7 +71,9 @@ H_{q,t}=\{x:x\cdot q>t\},
 J_{q,t}=\{x:x\cdot q<t\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vector $q$ has length $1$, so the affine plane perpendicular to
 $q$ through $tq$ consists of the points $x$ satisfying
 \[
@@ -77,9 +82,14 @@ $q$ through $tq$ consists of the points $x$ satisfying
 equivalently $x\cdot q=t$. The point $(t+1)q$ has dot product
 $t+1>t$, so the component containing it is $H_{q,t}$; the other
 component is $J_{q,t}$.
+
 :::
 
-<1>2. For a block $A_i$,
+:::
+
+::: pf-step
+
+For a block $A_i$,
 \[
 \boxed{
 \operatorname{vol}(A_i\cap H_{q,t})
@@ -88,7 +98,9 @@ component is $J_{q,t}$.
 \operatorname{area}(A_i\cap P_{q,s})\,ds}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose an orthogonal coordinate system whose third coordinate is
 \[
 u=x\cdot q.
@@ -98,9 +110,14 @@ expresses the volume above the level $u=t$ as the integral, over
 $s>t$, of the cross-sectional areas in the parallel planes $P_{q,s}$.
 For a rectangular block these cross-sections are polygons, so their areas
 can be computed by elementary multivariable geometry.
+
 :::
 
-<1>3. For each fixed block $A_i$, the function
+:::
+
+::: pf-step
+
+For each fixed block $A_i$, the function
 \[
 F_i:S^2\times\mathbb R\to\mathbb R,
 \qquad
@@ -108,7 +125,9 @@ F_i(q,t)=\operatorname{vol}(A_i\cap H_{q,t}),
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 (q_n,t_n)\to(q,t).
@@ -131,9 +150,14 @@ convergence therefore gives
 \[
 F_i(q_n,t_n)\to F_i(q,t).
 \]
+
 :::
 
-<1>4. For fixed $q\in S^2$, the function
+:::
+
+::: pf-step
+
+For fixed $q\in S^2$, the function
 \[
 t\longmapsto F_3(q,t)
 \]
@@ -147,7 +171,9 @@ F_3(q,t)=0
 \]
 for all sufficiently positive $t$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $t_1<t_2$, then
 \[
 H_{q,t_2}\subset H_{q,t_1},
@@ -157,23 +183,37 @@ so the volume is nonincreasing. Continuity follows from step <1>3.
 Since $A_3$ is compact, the continuous function $x\mapsto x\cdot q$
 attains a minimum and maximum on $A_3$. Below the minimum, the whole block
 lies in $H_{q,t}$; above the maximum, none of it does.
+
 :::
 
-<1>5. For each $q\in S^2$, there exists $t_q\in\mathbb R$ such that
+:::
+
+::: pf-step
+
+For each $q\in S^2$, there exists $t_q\in\mathbb R$ such that
 \[
 \boxed{F_3(q,t_q)=\frac{V_3}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, the continuous function $F_3(q,-)$ takes the values
 $V_3$ and $0$. The intermediate value theorem gives a level where it
 equals $V_3/2$.
+
 :::
 
-<1>6. For fixed $q$, the function $F_3(q,t)$ is strictly decreasing
+:::
+
+::: pf-step
+
+For fixed $q$, the function $F_3(q,t)$ is strictly decreasing
 while the plane $P_{q,t}$ passes through the interior of $A_3$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 t_1<t_2
@@ -193,18 +233,30 @@ Therefore
 \[
 F_3(q,t_1)-F_3(q,t_2)>0.
 \]
+
 :::
 
-<1>7. The number $t_q$ from step <1>5 is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The number $t_q$ from step <1>5 is unique.
+
+
+::: pf-proof
+
 The value $V_3/2$ is strictly between $0$ and $V_3$, so any level
 where it occurs lies between the minimum and maximum values of
 $x\cdot q$ on $A_3$. Step <1>6 gives strict decrease there, so the
 level is unique.
+
 :::
 
-<1>8. The plane $P_{q,t_q}$ bisects $A_3$:
+:::
+
+::: pf-step
+
+The plane $P_{q,t_q}$ bisects $A_3$:
 \[
 \boxed{
 \operatorname{vol}(A_3\cap H_{q,t_q})
@@ -214,19 +266,28 @@ level is unique.
 \frac{V_3}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives the first equality to $V_3/2$. The plane
 $P_{q,t_q}$ has three-dimensional volume zero, so the two open
 half-spaces partition $A_3$ up to a null set. Hence the other half also
 has volume $V_3/2$.
+
 :::
 
-<1>9. The half-volume level satisfies
+:::
+
+::: pf-step
+
+The half-volume level satisfies
 \[
 \boxed{t_{-q}=-t_q}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 H_{-q,-t_q}
@@ -243,15 +304,22 @@ step <1>7 gives
 \[
 t_{-q}=-t_q.
 \]
+
 :::
 
-<1>10. The map
+:::
+
+::: pf-step
+
+The map
 \[
 q\longmapsto t_q
 \]
 is continuous on $S^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $q_n\to q$, and write $t_n=t_{q_n}$. Since $A_3$ is contained
 in some ball $B(0,R)$, every half-volume plane meeting the block has
 \[
@@ -276,30 +344,44 @@ subsequence of $(t_n)$ converges to $t_q$, forcing
 \[
 t_n\to t_q.
 \]
+
 :::
 
-<1>11. For $i=1,2$, the function
+:::
+
+::: pf-step
+
+For $i=1,2$, the function
 \[
 f_i(q)=F_i(q,t_q)
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 q\longmapsto(q,t_q)
 \]
 is continuous by step <1>10, and $F_i$ is continuous by step <1>3.
 Their composition is $f_i$.
+
 :::
 
-<1>12. For $i=1,2$,
+:::
+
+::: pf-step
+
+For $i=1,2$,
 \[
 \boxed{
 f_i(-q)=V_i-f_i(q)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9,
 \[
 H_{-q,t_{-q}}
@@ -323,9 +405,14 @@ V_i-
 =
 V_i-f_i(q).
 \]
+
 :::
 
-<1>13. Define
+:::
+
+::: pf-step
+
+Define
 \[
 F:S^2\to\mathbb R^2,
 \qquad
@@ -333,32 +420,48 @@ F(q)=(f_1(q),f_2(q)).
 \]
 Then $F$ is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from step <1>11 componentwise.
+
 :::
 
-<1>14. By the Borsuk--Ulam theorem, there exists $q\in S^2$ such that
+:::
+
+::: pf-step
+
+By the Borsuk--Ulam theorem, there exists $q\in S^2$ such that
 \[
 \boxed{F(q)=F(-q)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Borsuk--Ulam theorem states that every continuous map
 \[
 S^2\to\mathbb R^2
 \]
 takes the same value at some antipodal pair. Apply it to the map in step
 <1>13.
+
 :::
 
-<1>15. For the $q$ from step <1>14,
+:::
+
+::: pf-step
+
+For the $q$ from step <1>14,
 \[
 \boxed{
 f_i(q)=\frac{V_i}{2}
 \qquad(i=1,2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>14,
 \[
 f_i(q)=f_i(-q).
@@ -371,25 +474,36 @@ Hence
 \[
 2f_i(q)=V_i.
 \]
+
 :::
 
-<1>16. The plane
+:::
+
+::: pf-step
+
+The plane
 \[
 \boxed{P_{q,t_q}}
 \]
 simultaneously bisects all three blocks $(A_1,A_2,A_3)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 says this plane bisects $A_3$. Step <1>15 says its
 $H_{q,t_q}$-side contains half the volume of each of $A_1$ and $A_2$;
 since the plane itself has zero volume, their other halves also have half
 the volume. Thus all three blocks are bisected by the same plane.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 address part (a), steps <1>3--<1>10 prove part (b), step
 <1>11 proves part (c), and steps <1>12--<1>16 prove part (d).
+
 :::
+
 :::

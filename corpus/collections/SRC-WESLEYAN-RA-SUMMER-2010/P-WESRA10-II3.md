@@ -21,8 +21,11 @@ audit:
 (b) If $A$ is such a set and $f:\mathbb R^2\to\mathbb R$ satisfies $f=\chi_A$ almost everywhere, prove that there is a set $B$ of positive measure such that $f$ is discontinuous at every point of $B$.
 :::
 
-::: {.solution}
-<1>1. Let $C\subset[0,1]$ be a fat Cantor set: $C$ is closed, has empty
+::: pf
+
+::: pf-step
+
+Let $C\subset[0,1]$ be a fat Cantor set: $C$ is closed, has empty
 interior, and has positive one-dimensional Lebesgue measure.
 Set
 \[
@@ -31,7 +34,9 @@ A=C\times[0,1].
 Then $A$ is closed, has positive two-dimensional Lebesgue measure, and
 contains no nonempty open set.
 
-::: {.proof}
+
+::: pf-proof
+
 Since both factors are closed, $A$ is closed in $\mathbb R^2$. By the product
 measure formula,
 \[
@@ -40,9 +45,14 @@ m_2(A)=m_1(C)\,m_1([0,1])=m_1(C)>0.
 If $A$ contained a nonempty open ball, its projection to the first coordinate
 would contain a nonempty open interval lying in $C$, contradicting that
 $C$ has empty interior. Hence $A$ contains no nonempty open set.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 N=\{x\in\mathbb R^2:f(x)\ne\chi_A(x)\}.
 \]
@@ -52,7 +62,9 @@ B=A\setminus N
 \]
 has positive measure.
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis $f=\chi_A$ almost everywhere means exactly that $N$ is null.
 Since $m_2(A)>0$,
 \[
@@ -62,26 +74,40 @@ For every $x\in B$ one has
 \[
 f(x)=\chi_A(x)=1.
 \]
+
 :::
 
-<1>3. Every point of $A$ is a boundary point of $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every point of $A$ is a boundary point of $A$.
+
+
+::: pf-proof
+
 The set $A$ is closed and has empty interior by step <1>1. Therefore
 \[
 \partial A
 =A\setminus\operatorname{int}(A)
 =A.
 \]
+
 :::
 
-<1>4. For every $x\in B$ and every $r>0$, there is
+:::
+
+::: pf-step
+
+For every $x\in B$ and every $r>0$, there is
 \[
 y\in B_r(x)\setminus A
 \]
 such that $f(y)=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\in B\subseteq A$. By step <1>3, every ball $B_r(x)$ meets
 $\mathbb R^2\setminus A$. Since $A$ is closed, $\mathbb R^2\setminus A$ is
 open, so
@@ -99,11 +125,18 @@ Then
 \[
 f(y)=\chi_A(y)=0.
 \]
+
 :::
 
-<1>5. The function $f$ is discontinuous at every point of $B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is discontinuous at every point of $B$.
+
+
+::: pf-proof
+
 Fix $x\in B$. By step <1>2,
 \[
 f(x)=1.
@@ -112,13 +145,17 @@ By step <1>4, every neighborhood of $x$ contains a point $y$ with
 $f(y)=0$. Hence there are points arbitrarily close to $x$ at which the
 function value differs from $f(x)$ by $1$. Therefore $f$ is not continuous
 at $x$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 solves part (a). Steps <1>2 through <1>5 produce a set
 $B$ of positive measure on which every point is a discontinuity of $f$, which
 proves part (b).
+
 :::
+
 :::

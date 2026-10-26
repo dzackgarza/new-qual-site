@@ -21,7 +21,6 @@ Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
 Suppose there are distinct points \(p,q\in\mathbb D\) such that \(f(p)=p\) and \(f(q)=q\). Show that \(f(z)=z\) for every \(z\in\mathbb D\).
 :::
 
-::: {.solution}
 Let
 $$
 \phi_p(z)
@@ -35,13 +34,19 @@ g
 \phi_p\circ f\circ\phi_p^{-1}.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 g:\mathbb D\to\mathbb D
 $$
 is holomorphic and fixes $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The maps
 $$
 \phi_p
@@ -59,9 +64,14 @@ g(0)
 \phi_p(f(p))
 =0.
 $$
+
 :::
 
-<1>2. The nonzero point
+:::
+
+::: pf-step
+
+The nonzero point
 $$
 a
 \coloneqq
@@ -69,7 +79,9 @@ a
 $$
 is also fixed by $g$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 p\ne q
@@ -98,9 +110,14 @@ f(\phi_p^{-1}(\phi_p(q)))
 a.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Schwarz's lemma gives
+:::
+
+::: pf-step
+
+Schwarz's lemma gives
 $$
 |g(z)|\le|z|
 $$
@@ -109,30 +126,46 @@ $$
 z\in\mathbb D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a holomorphic self-map of the unit disk fixing the origin. Schwarz's lemma applies.
+
 :::
 
-<1>4. Equality holds in Schwarz's lemma at the nonzero point $a$:
+:::
+
+::: pf-step
+
+Equality holds in Schwarz's lemma at the nonzero point $a$:
 $$
 |g(a)|=|a|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 g(a)=a.
 $$
 Taking absolute values gives the equality.
+
 :::
 
-<1>5. Therefore there is a real number $\theta$ such that
+:::
+
+::: pf-step
+
+Therefore there is a real number $\theta$ such that
 $$
 g(z)=e^{i\theta}z
 $$
 for every $z\in\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The equality case of Schwarz's lemma states that if a holomorphic self-map of the disk fixing $0$ satisfies
 $$
 |g(a)|=|a|
@@ -142,15 +175,22 @@ $$
 a\ne0,
 $$
 then $g$ is a rotation.
+
 :::
 
-<1>6. In fact,
+:::
+
+::: pf-step
+
+In fact,
 $$
 \boxed{g(z)=z}
 $$
 for every $z\in\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 g(a)=a
@@ -168,15 +208,22 @@ $$
 e^{i\theta}=1,
 $$
 so $g$ is the identity.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f(z)=z}
 $$
 for every $z\in\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 g
@@ -191,16 +238,19 @@ f
 =
 \operatorname{id}_{\mathbb D}.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
-:::
+
 :::
 
-::: {.solution}
+:::
+
 Let
 $$
 \phi_p(z)
@@ -214,7 +264,11 @@ g
 \phi_p\circ f\circ\phi_p^{-1}.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 g:\mathbb D\to\mathbb D
 $$
@@ -223,7 +277,9 @@ $$
 g(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map $\phi_p$ is an automorphism of the unit disk, so the conjugate $g$ is a holomorphic self-map of the disk. Since
 $$
 f(p)=p
@@ -239,9 +295,14 @@ g(0)
 \phi_p(f(p))
 =0.
 $$
+
 :::
 
-<1>2. The nonzero point
+:::
+
+::: pf-step
+
+The nonzero point
 $$
 w_0
 \coloneqq
@@ -249,7 +310,9 @@ w_0
 $$
 is fixed by $g$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $p\ne q$ and $\phi_p$ is injective,
 $$
 w_0\ne0.
@@ -271,9 +334,14 @@ f(\phi_p^{-1}(\phi_p(q)))
 w_0.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Schwarz's lemma gives
+:::
+
+::: pf-step
+
+Schwarz's lemma gives
 $$
 |g(w)|\le|w|
 $$
@@ -282,44 +350,67 @@ $$
 w\in\mathbb D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a holomorphic self-map of the disk fixing the origin.
+
 :::
 
-<1>4. Equality holds in Schwarz's estimate at the nonzero point $w_0$:
+:::
+
+::: pf-step
+
+Equality holds in Schwarz's estimate at the nonzero point $w_0$:
 $$
 |g(w_0)|=|w_0|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 g(w_0)=w_0.
 $$
 Taking absolute values gives the equality.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 g(w)=e^{i\theta}w
 $$
 for some $\theta\in\RR$.
 
-::: {.proof}
+
+::: pf-proof
+
 The equality case in Schwarz's lemma says that if equality
 $$
 |g(w)|=|w|
 $$
 occurs at some nonzero point of the disk, then $g$ is a rotation.
+
 :::
 
-<1>6. In fact
+:::
+
+::: pf-step
+
+In fact
 $$
 \boxed{g(w)=w}
 $$
 for every $w\in\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>5,
 $$
 w_0
@@ -333,15 +424,22 @@ $$
 e^{i\theta}=1.
 $$
 Thus $g$ is the identity.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f(z)=z}
 $$
 for every $z\in\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 g
@@ -356,11 +454,15 @@ f
 =
 \operatorname{id}_{\mathbb D}.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

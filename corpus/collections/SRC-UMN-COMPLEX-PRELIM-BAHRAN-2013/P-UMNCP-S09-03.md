@@ -27,7 +27,6 @@ onto the upper half-plane.
 The intended region is the part inside \(|z-i|<1\) and outside \(|z-i/2|\le 1/2\).
 :::
 
-::: {.solution}
 Let
 $$
 \Omega
@@ -41,7 +40,11 @@ z:
 $$
 Both boundary circles pass through $0$, which is not contained in $\Omega$.
 
-<1>1. For $a>0$, the circle
+::: pf
+
+::: pf-step
+
+For $a>0$, the circle
 $$
 |z-ia|=a
 $$
@@ -54,7 +57,9 @@ $$
 \operatorname{Im}w=-\frac1{2a}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The circle equation expands to
 $$
 |z|^2
@@ -87,9 +92,14 @@ so
 $$
 v=-\frac1{2a}.
 $$
+
 :::
 
-<1>2. Under $w=1/z$, the two boundary circles become
+:::
+
+::: pf-step
+
+Under $w=1/z$, the two boundary circles become
 $$
 \operatorname{Im}w=-1
 $$
@@ -99,7 +109,9 @@ $$
 $$
 respectively.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 with
 $$
 a=\frac12
@@ -116,9 +128,14 @@ for
 $$
 |z-i|=1.
 $$
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 $$
 z\longmapsto\frac1z
 $$
@@ -133,7 +150,9 @@ w:
 \right\}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The reciprocal map is a Möbius transformation, hence biholomorphic away from $0$.
 By step <1>2, it sends the two boundary circles to the two boundary lines of $S$.
 
@@ -158,9 +177,14 @@ $$
 $$
 whose imaginary part lies strictly between $-1$ and $-1/2$.
 Hence the image component is exactly $S$.
+
 :::
 
-<1>4. The exponential map
+:::
+
+::: pf-step
+
+The exponential map
 $$
 E(w)=e^{2\pi w}
 $$
@@ -171,7 +195,9 @@ $$
 \{\zeta:\operatorname{Im}\zeta>0\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 w=u+iv,
@@ -196,11 +222,18 @@ Therefore
 $$
 \operatorname{Im}E(w)>0.
 $$
+
 :::
 
-<1>5. The map $E:S\to\mathbb H$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $E:S\to\mathbb H$ is injective.
+
+
+::: pf-proof
+
 If
 $$
 e^{2\pi w_1}
@@ -226,11 +259,18 @@ $$
 |k|\ge1.
 $$
 Thus $k=0$ and $w_1=w_2$.
+
 :::
 
-<1>6. The map $E:S\to\mathbb H$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $E:S\to\mathbb H$ is surjective.
+
+
+::: pf-proof
+
 Let
 $$
 \zeta\in\mathbb H.
@@ -274,9 +314,14 @@ e^{i(\theta-2\pi)}
 =
 \zeta.
 $$
+
 :::
 
-<1>7. An explicit conformal equivalence is
+:::
+
+::: pf-step
+
+An explicit conformal equivalence is
 $$
 \boxed{
 F(z)
@@ -284,7 +329,9 @@ F(z)
 \exp\!\left(\frac{2\pi}{z}\right)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 z\mapsto1/z
@@ -296,11 +343,15 @@ w\mapsto e^{2\pi w}
 $$
 is a biholomorphism from $S$ to $\mathbb H$.
 Their composition is the displayed map.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the requested explicit conformal equivalence.
+
 :::
+
 :::

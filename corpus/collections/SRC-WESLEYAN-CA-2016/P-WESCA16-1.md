@@ -19,26 +19,38 @@ audit:
 State the principle of analytic continuation for holomorphic functions and give a specific example of how it is used in complex analysis.
 :::
 
-::: {.solution}
-<1>1. If $D$ is connected and open and $f,g:D\to\mathbb C$ are holomorphic,
+::: pf
+
+::: pf-step
+
+If $D$ is connected and open and $f,g:D\to\mathbb C$ are holomorphic,
 then agreement on a subset of $D$ having an accumulation point in $D$ implies
 \[
 \boxed{f=g\text{ on }D}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the identity theorem. Equivalently, analytic continuation through
 overlapping connected domains is unique wherever two continuations overlap.
+
 :::
 
-<1>2. A concrete example is
+:::
+
+::: pf-step
+
+A concrete example is
 \[
 \sum_{n=0}^{\infty}z^n=\frac1{1-z}\qquad(|z|<1).
 \]
 Thus the power-series function continues uniquely as $(1-z)^{-1}$ on
 $\mathbb C\setminus\{1\}$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $|z|<1$, the finite geometric-sum identity gives
 \[
 \sum_{n=0}^{N}z^n=\frac{1-z^{N+1}}{1-z}.
@@ -47,11 +59,15 @@ Letting $N\to\infty$ gives the displayed identity. The function
 $(1-z)^{-1}$ is holomorphic on $\mathbb C\setminus\{1\}$ and agrees with the
 series on the unit disk. Step <1>1 gives uniqueness of any analytic
 continuation from that germ to a connected overlapping domain.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states the principle and step <1>2 gives a specific application.
+
 :::
+
 :::

@@ -22,8 +22,11 @@ z=1+\sqrt3\,i.
 Express $z^3$ and all cube roots of $z$ in the form $a+bi$.
 :::
 
-::: {.solution}
-<1>1. The modulus and argument of
+::: pf
+
+::: pf-step
+
+The modulus and argument of
 \[
 z=1+\sqrt3,i
 \]
@@ -42,7 +45,9 @@ z
 2e^{i\pi/3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The modulus is
 \[
 |z|
@@ -65,16 +70,23 @@ one has
 \[
 \theta=\frac\pi3.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 z^3=-8.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By De Moivre's formula,
 \[
 z^3
@@ -99,9 +111,14 @@ and multiplying once more by
 1+\sqrt3,i
 \]
 gives $-8$.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 w^3=z,
 \]
@@ -119,7 +136,9 @@ and its argument must satisfy
 \pmod{2\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Taking moduli gives
 \[
 |w|^3=|z|=2,
@@ -136,9 +155,14 @@ Taking arguments gives
 \frac\pi3+2\pi k
 \]
 for some integer $k$.
+
 :::
 
-<1>4. The three distinct arguments are
+:::
+
+::: pf-step
+
+The three distinct arguments are
 \[
 \theta_k
 =
@@ -149,7 +173,9 @@ for some integer $k$.
 k=0,1,2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the congruence from step <1>3 by $3$:
 \[
 \theta
@@ -163,9 +189,14 @@ Modulo $2\pi$, the values
 k=0,1,2
 \]
 give the three distinct cube roots.
+
 :::
 
-<1>5. Therefore the cube roots, in the form
+:::
+
+::: pf-step
+
+Therefore the cube roots, in the form
 \[
 a+bi,
 \]
@@ -202,7 +233,9 @@ i\sin\frac{13\pi}{9}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 k=0,1,2
@@ -222,11 +255,15 @@ rectangular forms
 \[
 a+bi.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives $z^3$, and step <1>5 lists all three cube roots.
+
 :::
+
 :::

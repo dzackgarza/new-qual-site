@@ -29,7 +29,6 @@ Show that
 exists and calculate it.
 :::
 
-::: {.solution}
 Let
 \[
 L
@@ -39,10 +38,16 @@ L
 \in\mathbb C.
 \]
 
-<1>1. The function \(g\) is not identically zero in a neighborhood of
+::: pf
+
+::: pf-step
+
+The function \(g\) is not identically zero in a neighborhood of
 \(z_0\).
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient
 \[
 \frac{f'(z)}{g'(z)}
@@ -54,9 +59,14 @@ identically there. Hence \(g\) is not locally constant, and since
 g(z_0)=0,
 \]
 it is not identically zero near \(z_0\).
+
 :::
 
-<1>2. Suppose first that \(f\) is not identically zero near \(z_0\). Then
+:::
+
+::: pf-step
+
+Suppose first that \(f\) is not identically zero near \(z_0\). Then
 there are integers
 \[
 m,n\ge1
@@ -76,15 +86,22 @@ g(z)
 (z-z_0)^nG(z)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A nonzero analytic function has an isolated zero of finite order. Since
 \[
 f(z_0)=g(z_0)=0,
 \]
 their orders of vanishing are positive integers \(m,n\).
+
 :::
 
-<1>3. Differentiating the factorizations in step <1>2 gives
+:::
+
+::: pf-step
+
+Differentiating the factorizations in step <1>2 gives
 \[
 f'(z)
 =
@@ -103,11 +120,18 @@ nG(z)+(z-z_0)G'(z)
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the product rule.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 F_1(z)
 =
@@ -130,7 +154,9 @@ and
 G_1(z_0)=nG(z_0)\ne0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(z=z_0\). The nonvanishing follows from
 \[
 m,n\ge1
@@ -139,9 +165,14 @@ and
 \[
 F(z_0),G(z_0)\ne0.
 \]
+
 :::
 
-<1>5. For \(z\ne z_0\) sufficiently close to \(z_0\),
+:::
+
+::: pf-step
+
+For \(z\ne z_0\) sufficiently close to \(z_0\),
 \[
 \boxed{
 \frac{f'(z)}{g'(z)}
@@ -150,17 +181,26 @@ F(z_0),G(z_0)\ne0.
 \frac{F_1(z)}{G_1(z)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the two derivative formulas in step <1>3. By step <1>4,
 \(G_1\) is nonzero in some neighborhood of \(z_0\).
+
 :::
 
-<1>6. The existence of the finite limit \(L\) forces
+:::
+
+::: pf-step
+
+The existence of the finite limit \(L\) forces
 \[
 \boxed{m\ge n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(m<n\), then step <1>5 gives
 \[
 \left|
@@ -180,9 +220,14 @@ The second factor tends to the nonzero finite number
 \]
 while \(m-n<0\), so the first factor tends to \(+\infty\). This contradicts
 the assumed finite limit.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 \[
 m>n,
 \]
@@ -191,7 +236,9 @@ then
 \boxed{L=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>5, the analytic quotient
 \[
 F_1/G_1
@@ -201,9 +248,14 @@ tends to a finite nonzero value, while
 (z-z_0)^{m-n}\to0.
 \]
 Thus the derivative ratio tends to \(0\).
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 \[
 m=n,
 \]
@@ -215,7 +267,9 @@ L
 \frac{F(z_0)}{G(z_0)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives
 \[
 L
@@ -226,9 +280,14 @@ L
 =
 \frac{F(z_0)}{G(z_0)}.
 \]
+
 :::
 
-<1>9. For \(z\ne z_0\) sufficiently close to \(z_0\),
+:::
+
+::: pf-step
+
+For \(z\ne z_0\) sufficiently close to \(z_0\),
 \[
 \boxed{
 \frac{f(z)}{g(z)}
@@ -237,11 +296,18 @@ L
 \frac{F(z)}{G(z)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the factorizations from step <1>2.
+
 :::
 
-<1>10. If \(m>n\), then
+:::
+
+::: pf-step
+
+If \(m>n\), then
 \[
 \boxed{
 \lim_{z\to z_0}
@@ -252,7 +318,9 @@ Divide the factorizations from step <1>2.
 L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>9,
 \[
 F(z)/G(z)
@@ -264,9 +332,14 @@ a finite nonzero number, while
 (z-z_0)^{m-n}\to0.
 \]
 Use step <1>7 for the value of \(L\).
+
 :::
 
-<1>11. If \(m=n\), then
+:::
+
+::: pf-step
+
+If \(m=n\), then
 \[
 \boxed{
 \lim_{z\to z_0}
@@ -277,12 +350,19 @@ Use step <1>7 for the value of \(L\).
 L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set \(m-n=0\) in step <1>9 and use continuity of \(F/G\), then apply
 step <1>8.
+
 :::
 
-<1>12. If \(f\) is identically zero in a neighborhood of \(z_0\), then
+:::
+
+::: pf-step
+
+If \(f\) is identically zero in a neighborhood of \(z_0\), then
 \[
 \boxed{L=0}
 \]
@@ -295,7 +375,9 @@ and
 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Then
 \[
 f'(z)=0
@@ -309,9 +391,14 @@ For all \(z\ne z_0\) sufficiently close to \(z_0\) with \(g(z)\ne0\),
 \frac{f(z)}{g(z)}=0.
 \]
 Hence the quotient limit is \(0\).
+
 :::
 
-<1>13. Therefore in all cases,
+:::
+
+::: pf-step
+
+Therefore in all cases,
 \[
 \boxed{
 \lim_{z\to z_0}
@@ -323,14 +410,20 @@ Hence the quotient limit is \(0\).
 L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(f\) is locally nonzero, steps <1>6, <1>10, and <1>11 exhaust the
 possibilities. If \(f\) is locally identically zero, use step <1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 proves existence of the requested limit and calculates it.
+
 :::
+
 :::

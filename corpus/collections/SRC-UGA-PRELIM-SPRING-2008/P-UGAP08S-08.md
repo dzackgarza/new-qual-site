@@ -32,8 +32,11 @@ is false.
 (c) A sequence $(f_n)$ of real-valued functions $\mathbb R\to\mathbb R$ which converges pointwise but not uniformly.
 :::
 
-::: {.solution}
-<1>1. For part (a), take the universe to be
+::: pf
+
+::: pf-step
+
+For part (a), take the universe to be
 \[
 \mathbb R
 \]
@@ -46,7 +49,9 @@ Q(x):
 x\le0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every real number satisfies at least one of
 \[
 x\ge0
@@ -84,9 +89,14 @@ Hence
 [\forall x,Q(x)]
 \]
 is false.
+
 :::
 
-<1>2. For part (b), take
+:::
+
+::: pf-step
+
+For part (b), take
 \[
 \boxed{
 \sum_{n=1}^{\infty}
@@ -94,7 +104,9 @@ is false.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficients relative to the center
 \[
 2
@@ -158,9 +170,14 @@ Hence the domain of convergence is exactly
 \[
 [0,4).
 \]
+
 :::
 
-<1>3. For part (c), define
+:::
+
+::: pf-step
+
+For part (c), define
 \[
 \boxed{
 f_n(x)=\frac{x}{n}
@@ -169,7 +186,9 @@ f_n(x)=\frac{x}{n}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every fixed
 \[
 x\in\mathbb R,
@@ -205,12 +224,16 @@ n,
 +\infty.
 \]
 In particular the supremum does not tend to $0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 provide the three requested examples and verify their
 properties.
+
 :::
+
 :::

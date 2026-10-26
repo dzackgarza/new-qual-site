@@ -23,7 +23,6 @@ Show that $f+g$ has either a removable singularity at $z_0$ or a pole of order a
 \]
 :::
 
-::: {.solution}
 Set
 \[
 M
@@ -31,7 +30,11 @@ M
 \max\{m,n\}.
 \]
 
-<1>1. There are holomorphic functions
+::: pf
+
+::: pf-step
+
+There are holomorphic functions
 \[
 F,G
 \]
@@ -54,11 +57,18 @@ F(z_0)\ne0,
 G(z_0)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the local factorization characterizing a pole and its order.
+
 :::
 
-<1>2. The function
+:::
+
+::: pf-step
+
+The function
 \[
 H(z)
 \coloneqq
@@ -69,7 +79,9 @@ f(z)+g(z)
 \]
 extends holomorphically across $z_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 \begin{aligned}
@@ -88,15 +100,22 @@ M-n
 \]
 are nonnegative integers.
 Hence each term is holomorphic near $z_0$, and so is their sum.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 H(z_0)\ne0,
 \]
 then $f+g$ has a pole of order exactly $M$ at $z_0$.
 
-::: {.proof}
+
+::: pf-proof
+
 In that case,
 \[
 f(z)+g(z)
@@ -106,9 +125,14 @@ f(z)+g(z)
 \]
 with $H$ holomorphic and nonzero at $z_0$.
 That is precisely a pole of order $M$.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 H(z_0)=0,
 \]
@@ -128,7 +152,9 @@ with $K$ holomorphic and
 K(z_0)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard factorization of a nonzero holomorphic function at a
 zero.
 If $H$ vanishes identically on a neighborhood, then
@@ -136,9 +162,14 @@ If $H$ vanishes identically on a neighborhood, then
 f+g=0
 \]
 there, so the singularity is removable; that case is already settled.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 0<r<M,
 \]
@@ -147,7 +178,9 @@ then $f+g$ has a pole of order
 M-r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 f(z)+g(z)
@@ -170,15 +203,22 @@ In particular,
 \[
 M-r<M.
 \]
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 r\ge M,
 \]
 then the singularity of $f+g$ at $z_0$ is removable.
 
-::: {.proof}
+
+::: pf-proof
+
 Again using step <1>4,
 \[
 f(z)+g(z)
@@ -191,9 +231,14 @@ r-M
 \]
 is nonnegative, so the right-hand side extends holomorphically across
 $z_0$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f+g
@@ -202,16 +247,23 @@ f+g
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $H(z_0)\ne0$, step <1>3 gives pole order
 \[
 M.
 \]
 If $H(z_0)=0$, steps <1>4--<1>6 give either a smaller pole order or a
 removable singularity.
+
 :::
 
-<1>8. More sharply, if
+:::
+
+::: pf-step
+
+More sharply, if
 \[
 m\ne n,
 \]
@@ -220,7 +272,9 @@ then the pole order of $f+g$ is exactly
 \max\{m,n\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for example,
 \[
 m>n.
@@ -256,12 +310,16 @@ Only when
 m=n
 \]
 can leading terms cancel.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves the required statement; step <1>8 records the sharper
 non-equal-order case.
+
 :::
+
 :::

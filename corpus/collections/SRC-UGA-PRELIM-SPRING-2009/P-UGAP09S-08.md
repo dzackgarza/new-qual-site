@@ -30,8 +30,11 @@ No proofs are required.
    \]
 :::
 
-::: {.solution}
-<1>1. One example of a non-diagonalizable matrix is
+::: pf
+
+::: pf-step
+
+One example of a non-diagonalizable matrix is
 \[
 \boxed{
 A=
@@ -41,7 +44,9 @@ A=
 \end{pmatrix}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 \[
 (\lambda-1)^2,
@@ -52,14 +57,21 @@ while
 =\operatorname{span}\!\left\{\binom10\right\}
 \]
 is one-dimensional. Hence there is no eigenbasis.
+
 :::
 
-<1>2. The line integral is
+:::
+
+::: pf-step
+
+The line integral is
 \[
 \boxed{\int_C xy^2\,dy=\frac1{12}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the counterclockwise parametrization of the three edges
 \[
 (0,0)\to(1,0)\to(0,1)\to(0,0).
@@ -76,14 +88,21 @@ Then $dy=dt$, so its contribution is
 =\frac1{12}.
 \]
 On the final vertical edge, $x=0$, so the contribution is again $0$.
+
 :::
 
-<1>3. For $f(x)=\cos(x^2)$,
+:::
+
+::: pf-step
+
+For $f(x)=\cos(x^2)$,
 \[
 \boxed{f^{(10)}(0)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The power series is
 \[
 \cos(x^2)
@@ -94,11 +113,15 @@ There is no $x^{10}$ term, so the coefficient of $x^{10}$ is $0$. Therefore
 \[
 f^{(10)}(0)=10!\,[x^{10}]f(x)=0.
 \]
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 through <1>3 give the three requested computations.
+
 :::
+
 :::

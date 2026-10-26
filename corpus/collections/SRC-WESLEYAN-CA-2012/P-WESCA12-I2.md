@@ -19,8 +19,11 @@ audit:
 State a theorem expressing the $m$th derivative of an analytic function as a contour integral.
 :::
 
-::: {.solution}
-<1>1. **Cauchy's integral formula for derivatives.**
+::: pf
+
+::: pf-step
+
+**Cauchy's integral formula for derivatives.**
 
 Let
 \[
@@ -56,7 +59,9 @@ f^{(m)}(z_0)
 \]
 The circle is positively oriented.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 m=0,
@@ -84,9 +89,14 @@ Evaluation at
 z=z_0
 \]
 gives the displayed formula.
+
 :::
 
-<1>2. More generally, if $\gamma$ is a positively oriented simple closed
+:::
+
+::: pf-step
+
+More generally, if $\gamma$ is a positively oriented simple closed
 contour in $D$ whose interior lies in $D$ and contains $z_0$, then
 \[
 f^{(m)}(z_0)
@@ -98,14 +108,20 @@ f^{(m)}(z_0)
 \,d\zeta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Cauchy integral formula on the region bounded by $\gamma$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the requested theorem, with step <1>2 recording the standard
 contour-generalized form.
+
 :::
+
 :::

@@ -26,18 +26,23 @@ Show that there is $C\in\mathcal B$ of positive measure such that for every $x\i
 \]
 :::
 
-::: {.solution}
 Define the measurable function
 $$
 g(x)=\frac1N\sum_{i=1}^N\chi_{B_i}(x).
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \int_X g\,d\mu>\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity of the integral,
 $$
 \begin{aligned}
@@ -47,15 +52,22 @@ $$
 \end{aligned}
 $$
 Every term in the average is strictly greater than $1/2$, so the average is strictly greater than $1/2$.
+
 :::
 
-<1>2. The set
+:::
+
+::: pf-step
+
+The set
 $$
 C=\left\{x\in X:g(x)>\frac12\right\}
 $$
 has positive measure.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that $\mu(C)=0$. Then
 $$
 g(x)\leq\frac12
@@ -67,20 +79,31 @@ $$
 =\frac12,
 $$
 contradicting step <1>1. Hence $\mu(C)>0$.
+
 :::
 
-<1>3. Every $x\in C$ satisfies
+:::
+
+::: pf-step
+
+Every $x\in C$ satisfies
 $$
 \frac1N\sum_{i=1}^N\chi_{B_i}(x)>\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the defining inequality for membership in $C$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives a measurable set $C$ of positive measure, and step <1>3 gives the required pointwise inequality on it.
+
 :::
+
 :::

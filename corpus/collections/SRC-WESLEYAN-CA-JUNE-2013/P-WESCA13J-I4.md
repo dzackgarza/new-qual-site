@@ -19,8 +19,11 @@ audit:
 Define an essential singularity of an analytic function.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 f
 $$
@@ -37,11 +40,18 @@ $$
 f.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard ambient situation in which removable singularities, poles, and essential singularities are defined.
+
 :::
 
-<1>2. The point
+:::
+
+::: pf-step
+
+The point
 $$
 a
 $$
@@ -51,7 +61,9 @@ f
 $$
 if it is neither a removable singularity nor a pole.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently:
 
 1. there is no holomorphic extension of
@@ -77,9 +89,14 @@ $$
 with nonzero value there.
 
 These two exclusions distinguish an essential singularity from the other two possible types of isolated singularity.
+
 :::
 
-<1>3. In terms of the Laurent expansion
+:::
+
+::: pf-step
+
+In terms of the Laurent expansion
 $$
 f(z)
 =
@@ -96,7 +113,9 @@ c_{-1},c_{-2},\ldots
 $$
 are nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 If every negative-power coefficient vanishes, the Laurent series is a Taylor series and the singularity is removable.
 
 If only finitely many negative-power coefficients are nonzero, then the principal part has a highest negative power
@@ -115,9 +134,14 @@ m.
 $$
 
 Thus the remaining case, namely infinitely many nonzero negative-power terms, is exactly the essential case.
+
 :::
 
-<1>4. Therefore the requested definition is
+:::
+
+::: pf-step
+
+Therefore the requested definition is
 $$
 \boxed{
 a\text{ is essential for }f
@@ -125,7 +149,13 @@ a\text{ is essential for }f
 a\text{ is an isolated singularity that is neither removable nor a pole}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives the definition, and step <1>3 gives the standard equivalent Laurent-series criterion.
+
 :::
+
+:::
+
 :::

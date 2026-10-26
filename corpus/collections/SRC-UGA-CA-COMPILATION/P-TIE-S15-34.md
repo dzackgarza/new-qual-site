@@ -26,18 +26,23 @@ $$
 where $\| f \| _ { ( \infty , s ) } = \operatorname* { s u p } _ { z \in D _ { s } ( z _ { 0 } ) } | f ( z ) | { \mathrm { ~ a n d ~ } } \| f \| _ { ( 1 , r ) } = \int _ { D _ { r } ( z _ { 0 } ) } | f ( z ) | d x d y .$
 :::
 
-::: {.solution}
 Set
 $$
 \rho\coloneqq r-s>0.
 $$
 
-<1>1. If $z\in D_s(z_0)$, then
+::: pf
+
+::: pf-step
+
+If $z\in D_s(z_0)$, then
 $$
 D_\rho(z)\subset D_r(z_0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $w\in D_\rho(z)$,
 $$
 \abs{w-z_0}
@@ -49,9 +54,14 @@ $$
 r.
 $$
 Hence $w\in D_r(z_0)$.
+
 :::
 
-<1>2. For every $z\in D_s(z_0)$,
+:::
+
+::: pf-step
+
+For every $z\in D_s(z_0)$,
 $$
 \abs{f(z)}
 \le
@@ -60,7 +70,9 @@ $$
 \abs{f(w)}\,dA(w).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For each $0<t<\rho$, Cauchy's integral formula on the circle
 $$
 \abs{w-z}=t
@@ -90,9 +102,14 @@ $$
 \abs{f(w)}\,dA(w).
 $$
 Division by $\rho^2$ proves the estimate.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \norm{f}_{(\infty,s)}
@@ -102,7 +119,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 D_\rho(z)\subset D_r(z_0).
@@ -116,16 +135,20 @@ $$
 \abs{f(w)}\,dA(w)
 $$
 for every $z\in D_s(z_0)$. Taking the supremum over $z$ gives the displayed inequality.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the result with
 $$
 \boxed{
 c=\frac1{\pi(r-s)^2}>0.
 }
 $$
+
 :::
+
 :::

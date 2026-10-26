@@ -19,10 +19,15 @@ audit:
 State Morera's theorem.
 :::
 
-::: {.solution}
-<1>1. Morera's theorem states the following.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Morera's theorem states the following.
+
+
+::: pf-proof
+
 Let $D\subseteq\mathbb C$ be a domain and let
 $$
 f:D\to\mathbb C
@@ -34,11 +39,15 @@ $$
 Then $f$ is holomorphic on $D$.
 
 Equivalently, it is enough to assume that the integral of $f$ around every closed triangular path lying with its interior in $D$ vanishes.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested precise statement, including the continuity hypothesis and the triangular-contour condition.
+
 :::
+
 :::

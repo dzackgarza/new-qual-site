@@ -27,7 +27,6 @@ $$
 Use this to show that $f ( z )$ must be a constant (Liouville’s theorem).
 :::
 
-::: {.solution}
 Choose $M>0$ such that
 $$
 \abs{f(z)}\le M
@@ -44,12 +43,18 @@ I_R
 \frac{f(z)}{(z-a)(z-b)}\,dz.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \lim_{R\to\infty}I_R=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On $\abs{z}=R$,
 $$
 \abs{z-a}\ge R-\abs{a},
@@ -67,9 +72,14 @@ $$
 \end{aligned}
 $$
 The right-hand side tends to $0$ as $R\to\infty$, so the asserted limit exists and equals $0$.
+
 :::
 
-<1>2. For every sufficiently large $R$,
+:::
+
+::: pf-step
+
+For every sufficiently large $R$,
 $$
 I_R
 =
@@ -77,7 +87,9 @@ I_R
 \left(f(a)-f(b)\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The partial-fraction identity
 $$
 \frac1{(z-a)(z-b)}
@@ -111,14 +123,21 @@ $$
 2\pi i f(b).
 $$
 Substitution proves the formula.
+
 :::
 
-<1>3. For every pair $a\ne b$ in $\CC$,
+:::
+
+::: pf-step
+
+For every pair $a\ne b$ in $\CC$,
 $$
 f(a)=f(b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The expression in step <1>2 is independent of $R$, while step <1>1 says its limit as $R\to\infty$ is $0$. Hence
 $$
 \frac{2\pi i}{a-b}
@@ -126,17 +145,28 @@ $$
 =0.
 $$
 Since $a\ne b$, it follows that $f(a)=f(b)$.
+
 :::
 
-<1>4. The function $f$ is constant on $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant on $\CC$.
+
+
+::: pf-proof
+
 The points $a\ne b$ were arbitrary. By step <1>3, any two distinct points have the same image under $f$, so $f$ is constant. This is Liouville's theorem.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 establishes the requested limit, and step <1>4 gives the stated consequence.
+
 :::
+
 :::

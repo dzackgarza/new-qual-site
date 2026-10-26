@@ -24,7 +24,6 @@ f(\mathbb C)\subseteq\{z\in\mathbb C:\operatorname{Im}z>0\}.
 Show that \(f\) is constant.
 :::
 
-::: {.solution}
 Define
 $$
 g(z)
@@ -32,19 +31,32 @@ g(z)
 e^{if(z)}.
 $$
 
-<1>1. The function $g$ is entire.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is entire.
+
+
+::: pf-proof
+
 The function $f$ is entire by hypothesis, multiplication by $i$ preserves entire functions, and the exponential is entire. Therefore their composition $g$ is entire.
+
 :::
 
-<1>2. The function $g$ is bounded:
+:::
+
+::: pf-step
+
+The function $g$ is bounded:
 $$
 \boxed{|g(z)|<1}
 $$
 for every $z\in\CC$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 f(z)=u(z)+iv(z),
@@ -68,17 +80,31 @@ $$
 e^{-v(z)}
 <1.
 $$
+
 :::
 
-<1>3. The function $g$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is constant.
+
+
+::: pf-proof
+
 By step <1>1, $g$ is entire, and by step <1>2 it is bounded. Liouville's theorem therefore implies that $g$ is constant.
+
 :::
 
-<1>4. The derivative $f'$ vanishes identically.
+:::
 
-::: {.proof}
+::: pf-step
+
+The derivative $f'$ vanishes identically.
+
+
+::: pf-proof
+
 Since $g$ is constant,
 $$
 g'(z)=0
@@ -94,17 +120,28 @@ $$
 f'(z)=0
 $$
 for every $z\in\CC$.
+
 :::
 
-<1>5. Therefore $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ is constant.
+
+
+::: pf-proof
+
 An entire function with identically zero derivative is constant on the connected domain $\CC$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

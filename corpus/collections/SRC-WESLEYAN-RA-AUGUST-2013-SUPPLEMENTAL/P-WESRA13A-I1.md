@@ -19,8 +19,11 @@ audit:
 State Fatou's lemma.
 :::
 
-::: {.solution}
-<1>1. Fatou's lemma states: if $(X,\mathcal A,\mu)$ is a measure space and $(f_n)$ is a sequence of nonnegative measurable functions, then
+::: pf
+
+::: pf-step
+
+Fatou's lemma states: if $(X,\mathcal A,\mu)$ is a measure space and $(f_n)$ is a sequence of nonnegative measurable functions, then
 $$
 \boxed{
 \int_X \liminf_{n\to\infty} f_n\,d\mu
@@ -30,13 +33,19 @@ $$
 $$
 Both sides are allowed to take the value $+\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the statement requested in the problem.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives Fatou's lemma with its hypotheses and conclusion.
+
 :::
+
 :::

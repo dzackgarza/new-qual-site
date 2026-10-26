@@ -28,7 +28,6 @@ V=\mathbb R^3/\!\sim
 and prove that it is a basis.
 :::
 
-::: {.solution}
 Let
 $$
 \sigma:\RR^3\longrightarrow\RR,
@@ -36,12 +35,18 @@ $$
 \sigma(x,y,z)=x+y+z.
 $$
 
-<1>1. Two vectors are equivalent exactly when their difference lies in
+::: pf
+
+::: pf-step
+
+Two vectors are equivalent exactly when their difference lies in
 $$
 \ker\sigma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 (x,y,z)\sim(x',y',z')
@@ -62,11 +67,18 @@ Thus the equivalence classes are precisely the cosets of
 $$
 \ker\sigma.
 $$
+
 :::
 
-<1>2. The quotient vector space $V$ is naturally isomorphic to $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The quotient vector space $V$ is naturally isomorphic to $\RR$.
+
+
+::: pf-proof
+
 The map $\sigma$ is linear and surjective, since
 $$
 \sigma(t,0,0)=t
@@ -87,9 +99,14 @@ V
 =
 \RR.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 e_1=(1,0,0).
 $$
@@ -99,7 +116,9 @@ $$
 $$
 spans $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Take any class
 $$
 [(x,y,z)]\in V
@@ -125,11 +144,18 @@ $$
 s[e_1].
 $$
 So every vector in $V$ is a scalar multiple of $[e_1]$.
+
 :::
 
-<1>4. The vector $[e_1]$ is nonzero and hence linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vector $[e_1]$ is nonzero and hence linearly independent.
+
+
+::: pf-proof
+
 If
 $$
 c[e_1]=0
@@ -143,9 +169,14 @@ $$
 c=0.
 $$
 Thus the only scalar relation on $[e_1]$ is the trivial one.
+
 :::
 
-<1>5. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 \{[(1,0,0)]\}
@@ -153,13 +184,19 @@ $$
 $$
 is a basis of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves spanning and step <1>4 proves linear independence.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested basis and proof.
+
 :::
+
 :::

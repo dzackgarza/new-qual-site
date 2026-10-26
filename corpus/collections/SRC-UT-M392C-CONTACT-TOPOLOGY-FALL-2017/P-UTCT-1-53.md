@@ -38,7 +38,6 @@ This is an example of a contactomorphism.
 Example 1.52 of the source prints $\alpha' = dx + \frac{1}{2} r^2 d\theta$ and gives its rectangular form as $\frac{x\,dy - y\,dx}{2}$; both omit $dz$, which is needed for $\alpha'$ to be a contact form and for $\phi^*\alpha' = \alpha$ to hold.
 :::
 
-::: {.solution}
 Write the target coordinates of \(\phi\) as
 \[
 (X,Y,Z)
@@ -48,7 +47,11 @@ x,\ y,\ z+\frac{xy}{2}
 \right).
 \]
 
-<1>1. The pullbacks of the coordinate functions are
+::: pf
+
+::: pf-step
+
+The pullbacks of the coordinate functions are
 \[
 \boxed{
 \phi^*X=x,
@@ -58,7 +61,9 @@ x,\ y,\ z+\frac{xy}{2}
 \phi^*Z=z+\frac{xy}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the map
 \[
 \phi(x,y,z)
@@ -67,9 +72,14 @@ This is the definition of the map
 x,y,z+\frac{xy}{2}
 \right).
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \phi^*dX=dx}
@@ -80,7 +90,9 @@ and
 \phi^*dY=dy}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Pullback commutes with exterior differentiation:
 \[
 \phi^*(dX)
@@ -90,9 +102,14 @@ d(\phi^*X)
 dx,
 \]
 and similarly for \(Y\).
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \phi^*dZ
@@ -100,7 +117,9 @@ and similarly for \(Y\).
 dz+\frac12(x\,dy+y\,dx)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \phi^*Z
@@ -117,20 +136,32 @@ dz+\frac12\,d(xy)
 =
 dz+\frac12(x\,dy+y\,dx).
 \]
+
 :::
 
-<1>4. The cylindrically symmetric contact form is
+:::
+
+::: pf-step
+
+The cylindrically symmetric contact form is
 \[
 \alpha'
 =
 dZ+\frac12(X\,dY-Y\,dX).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the rectangular-coordinate expression stated in the problem.
+
 :::
 
-<1>5. Pulling back the skew term gives
+:::
+
+::: pf-step
+
+Pulling back the skew term gives
 \[
 \boxed{
 \phi^*\!\left(
@@ -140,7 +171,9 @@ This is the rectangular-coordinate expression stated in the problem.
 \frac12(x\,dy-y\,dx)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>1--<1>2,
 \[
 \begin{aligned}
@@ -154,9 +187,14 @@ x\,dy-y\,dx.
 \end{aligned}
 \]
 Multiply by \(1/2\).
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \begin{aligned}
 \phi^*\alpha'
@@ -173,12 +211,19 @@ dz+\frac12(x\,dy+y\,dx)
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply linearity of pullback to the decomposition in step <1>4, then use
 steps <1>3 and <1>5.
+
 :::
 
-<1>7. The \(y\,dx\)-terms cancel, so
+:::
+
+::: pf-step
+
+The \(y\,dx\)-terms cancel, so
 \[
 \boxed{
 \phi^*\alpha'
@@ -188,7 +233,9 @@ dz+x\,dy
 \alpha}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>6,
 \[
 \frac12y\,dx-\frac12y\,dx=0,
@@ -197,9 +244,14 @@ while
 \[
 \frac12x\,dy+\frac12x\,dy=x\,dy.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \phi_*(\ker\alpha)
@@ -207,7 +259,9 @@ while
 \ker\alpha'}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any tangent vector \(v\),
 \[
 \alpha(v)=0
@@ -218,22 +272,33 @@ For any tangent vector \(v\),
 \]
 Since \(\phi\) is a diffeomorphism, this identifies the two contact
 hyperplane fields.
+
 :::
 
-<1>9. Hence \(\phi\) is a contactomorphism from the standard contact
+:::
+
+::: pf-step
+
+Hence \(\phi\) is a contactomorphism from the standard contact
 structure to the cylindrically symmetric one.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 \[
 \phi^*\alpha'=\alpha,
 \]
 which is stronger than merely preserving the kernel distribution.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves the required pullback identity.
+
 :::
+
 :::

@@ -26,8 +26,11 @@ A=\begin{pmatrix}
 Find an orthogonal matrix $Q$ such that $Q^{-1}AQ$ is diagonal.
 :::
 
-::: {.solution}
-<1>1. Write
+::: pf
+
+::: pf-step
+
+Write
 \[
 A
 =
@@ -44,12 +47,19 @@ J
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Adding the identity matrix to the all-ones matrix changes each diagonal
 entry from $1$ to $2$ and leaves the off-diagonal entries equal to $1$.
+
 :::
 
-<1>2. The vector
+:::
+
+::: pf-step
+
+The vector
 \[
 u_1
 =
@@ -64,7 +74,9 @@ is an eigenvector with eigenvalue
 4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 Ju_1
@@ -81,9 +93,14 @@ u_1+3u_1
 =
 4u_1.
 \]
+
 :::
 
-<1>3. Every vector
+:::
+
+::: pf-step
+
+Every vector
 \[
 v
 \]
@@ -92,7 +109,9 @@ orthogonal to $u_1$ is an eigenvector with eigenvalue
 1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 v
@@ -125,9 +144,14 @@ Av
 =
 v.
 \]
+
 :::
 
-<1>4. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 u_2
 =
@@ -153,7 +177,9 @@ u_1,u_2,u_3
 \]
 are pairwise orthogonal eigenvectors.
 
-::: {.proof}
+
+::: pf-proof
+
 The coordinate sums of $u_2$ and $u_3$ are zero, so step <1>3 gives
 eigenvalue $1$ for both.
 
@@ -180,9 +206,14 @@ u_2\cdot u_3
 =
 0.
 \]
+
 :::
 
-<1>5. Their norms are
+:::
+
+::: pf-step
+
+Their norms are
 \[
 \|u_1\|
 =
@@ -197,7 +228,9 @@ u_2\cdot u_3
 \sqrt6.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute directly:
 \[
 1^2+1^2+1^2=3,
@@ -209,9 +242,14 @@ and
 \[
 1^2+1^2+(-2)^2=6.
 \]
+
 :::
 
-<1>6. Hence an orthonormal eigenbasis is
+:::
+
+::: pf-step
+
+Hence an orthonormal eigenbasis is
 \[
 v_1
 =
@@ -237,11 +275,18 @@ v_3
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Normalize the pairwise orthogonal eigenvectors from steps <1>4--<1>5.
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 Q
@@ -269,7 +314,9 @@ Q
 \]
 Then $Q$ is orthogonal.
 
-::: {.proof}
+
+::: pf-proof
+
 Its columns are the orthonormal vectors
 \[
 v_1,v_2,v_3.
@@ -286,9 +333,14 @@ Q^{-1}
 =
 Q^T.
 \]
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 \[
 AQ
 =
@@ -300,16 +352,23 @@ Q
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $Q$ are eigenvectors of $A$ with eigenvalues
 \[
 4,1,1,
 \]
 respectively.
 Multiplying $A$ by $Q$ therefore multiplies each column by its eigenvalue.
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 Q^{-1}AQ
@@ -324,17 +383,23 @@ Q^TAQ
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Left-multiply the identity in step <1>8 by
 \[
 Q^{-1}=Q^T.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives an explicit orthogonal matrix and step <1>9 gives the
 required diagonalization.
+
 :::
+
 :::

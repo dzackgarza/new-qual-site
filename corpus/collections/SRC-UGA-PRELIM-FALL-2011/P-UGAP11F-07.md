@@ -21,8 +21,11 @@ f\bigl(f^{-1}(S)\bigr)=S.
 \]
 :::
 
-::: {.solution}
-<1>1. For every map $f:X\to Y$ and every subset $S\subseteq Y$,
+::: pf
+
+::: pf-step
+
+For every map $f:X\to Y$ and every subset $S\subseteq Y$,
 $$
 \boxed{
 f\bigl(f^{-1}(S)\bigr)
@@ -30,7 +33,9 @@ f\bigl(f^{-1}(S)\bigr)
 S\cap f(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 First suppose
 $$
 y\in f(f^{-1}(S)).
@@ -81,9 +86,14 @@ $$
 y=f(x)\in f(f^{-1}(S)).
 $$
 This proves the equality.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 f(f^{-1}(S))=S
 $$
@@ -92,7 +102,9 @@ $$
 \boxed{S\subseteq f(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 f(f^{-1}(S))
@@ -111,11 +123,18 @@ The latter equality holds exactly when every element of $S$ lies in $f(X)$, i.e.
 $$
 S\subseteq f(X).
 $$
+
 :::
 
-<1>3. Equivalently, the necessary and sufficient condition is that every point of $S$ have at least one preimage under $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Equivalently, the necessary and sufficient condition is that every point of $S$ have at least one preimage under $f$.
+
+
+::: pf-proof
+
 The condition
 $$
 S\subseteq f(X)
@@ -124,11 +143,15 @@ means precisely that for every $y\in S$ there exists some $x\in X$ such that
 $$
 f(x)=y.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>3 give the requested necessary and sufficient condition.
+
 :::
+
 :::

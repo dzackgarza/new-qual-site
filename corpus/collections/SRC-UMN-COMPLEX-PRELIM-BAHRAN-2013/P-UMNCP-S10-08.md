@@ -21,7 +21,6 @@ Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
 Suppose \(c\in\mathbb D\) is a fixed point and \(|f'(c)|<1\). For any \(z_0\in\mathbb D\), define \(z_n=f(z_{n-1})\). Prove that \(z_n\to c\).
 :::
 
-::: {.solution}
 Define the disk automorphism
 $$
 \phi(z)
@@ -39,7 +38,11 @@ g
 \phi\circ f\circ\phi^{-1}.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 g:\mathbb D\to\mathbb D
 $$
@@ -52,7 +55,9 @@ $$
 |g'(0)|=|f'(c)|<1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map $\phi$ is a disk automorphism, so $g$ is a holomorphic self-map of the disk. Since $f(c)=c$,
 $$
 g(0)
@@ -79,9 +84,14 @@ g'(0)
 f'(c).
 $$
 Hence the asserted derivative bound holds.
+
 :::
 
-<1>2. Schwarz's lemma gives
+:::
+
+::: pf-step
+
+Schwarz's lemma gives
 $$
 |g(w)|\le|w|
 $$
@@ -90,11 +100,18 @@ $$
 w\in\mathbb D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a holomorphic self-map of the disk fixing $0$, so Schwarz's lemma applies.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 $$
 h(w)=
 \begin{cases}
@@ -108,7 +125,9 @@ $$
 $$
 for every $w\in\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $g(0)=0$, the quotient has a removable singularity at $0$, with value $g'(0)$. Thus $h$ is holomorphic.
 
 Step <1>2 gives
@@ -123,9 +142,14 @@ $$
 <1
 $$
 by step <1>1. Therefore equality never occurs.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 w_0=\phi(z_0),
 \qquad
@@ -137,7 +161,9 @@ w_n=\phi(z_n)
 $$
 for every $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=0$ this is the definition. If
 $$
 w_{n-1}=\phi(z_{n-1}),
@@ -159,15 +185,22 @@ f(\phi^{-1}(\phi(z_{n-1})))
 \end{aligned}
 $$
 Thus induction proves the identity.
+
 :::
 
-<1>5. The orbit satisfies
+:::
+
+::: pf-step
+
+The orbit satisfies
 $$
 |w_n|\le|w_0|
 $$
 for every $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 |w_n|
@@ -177,9 +210,14 @@ $$
 |w_{n-1}|.
 $$
 Iteration gives the claim.
+
 :::
 
-<1>6. If $w_0\ne0$, there exists
+:::
+
+::: pf-step
+
+If $w_0\ne0$, there exists
 $$
 q<1
 $$
@@ -189,7 +227,9 @@ $$
 $$
 for every $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 r=|w_0|<1.
@@ -215,14 +255,21 @@ $$
 \le
 q|w_n|.
 $$
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{w_n\to0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $w_0=0$, then $w_n=0$ for every $n$ because $g(0)=0$.
 
 If $w_0\ne0$, step <1>6 gives
@@ -236,14 +283,21 @@ $$
 q^n\to0.
 $$
 Thus $w_n\to0$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{z_n\to c}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 z_n=\phi^{-1}(w_n).
@@ -256,11 +310,15 @@ z_n
 =
 c.
 $$
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required convergence.
+
 :::
+
 :::

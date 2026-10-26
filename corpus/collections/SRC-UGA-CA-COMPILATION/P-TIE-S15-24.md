@@ -43,8 +43,11 @@ $$
 is undefined there. For $\alpha=0$, the normalized integral equals $1$, which is also the limit of the displayed expression as $\alpha\to0$.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \psi_\alpha'(z)
 =
@@ -52,7 +55,9 @@ $$
 {(1-\overline\alpha z)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 $$
 \psi_\alpha(z)
@@ -76,11 +81,18 @@ $$
 \end{aligned}
 $$
 which is the stated formula.
+
 :::
 
-<1>2. The map $\psi_\alpha$ is a conformal automorphism of $\DD$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\psi_\alpha$ is a conformal automorphism of $\DD$.
+
+
+::: pf-proof
+
 For $\abs{\alpha}<1$,
 $$
 \psi_\alpha(z)
@@ -96,9 +108,14 @@ $$
 \psi_\alpha'(z)\ne0
 $$
 on $\DD$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \frac1\pi
@@ -108,7 +125,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a holomorphic map, the real Jacobian determinant is
 $$
 J_{\psi_\alpha}(z)
@@ -127,9 +146,14 @@ $$
 \pi.
 $$
 Dividing by $\pi$ gives the result.
+
 :::
 
-<1>4. Put
+:::
+
+::: pf-step
+
+Put
 $$
 r\coloneqq\abs{\alpha}.
 $$
@@ -142,7 +166,9 @@ $$
 \frac{2\pi}{1-r^2\rho^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rotating the variable $z$ does not change planar area, so the integral depends on $\alpha$ only through $r=\abs\alpha$. For $r\rho<1$,
 $$
 \frac1{1-r\rho e^{i\theta}}
@@ -169,9 +195,14 @@ r^{2n}\rho^{2n}
 =
 \frac{2\pi}{1-r^2\rho^2}.
 $$
+
 :::
 
-<1>5. If $0<\abs{\alpha}<1$, then
+:::
+
+::: pf-step
+
+If $0<\abs{\alpha}<1$, then
 $$
 \boxed{
 \frac1\pi
@@ -183,7 +214,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \abs{\psi_\alpha'(z)}
@@ -223,9 +256,14 @@ $$
 \log\frac1{1-r^2}.
 $$
 Replacing $r$ by $\abs\alpha$ gives the formula.
+
 :::
 
-<1>6. If $\alpha=0$, then
+:::
+
+::: pf-step
+
+If $\alpha=0$, then
 $$
 \boxed{
 \frac1\pi
@@ -235,7 +273,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $\alpha=0$,
 $$
 \psi_0(z)=-z,
@@ -258,11 +298,15 @@ $$
 =1,
 $$
 so this is precisely the continuous extension of the formula in step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), while steps <1>5--<1>6 prove part (b), including the source's omitted $\alpha=0$ interpretation.
+
 :::
+
 :::

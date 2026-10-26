@@ -19,8 +19,11 @@ audit:
 State the Casorati–Weierstrass theorem.
 :::
 
-::: {.solution}
-<1>1. **Casorati--Weierstrass Theorem.**
+::: pf
+
+::: pf-step
+
+**Casorati--Weierstrass Theorem.**
 
 Let $f$ be holomorphic on a punctured neighborhood
 \[
@@ -42,7 +45,9 @@ is dense in
 \mathbb C.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, for every
 \[
 w\in\mathbb C
@@ -74,11 +79,15 @@ z_n\to z_0,
 \qquad
 z_n\ne z_0.
 \]
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the requested theorem statement.
+
 :::
+
 :::

@@ -35,7 +35,6 @@ This is part 3 of question 1 of the Spring 2014 list in the source, whose openin
 The source prints $dz$ twice in the integral.
 :::
 
-::: {.solution}
 Use the intended integral with a single differential,
 $$
 I
@@ -44,7 +43,11 @@ I
 \frac{1}{(z-a)(z-b)}\,dz.
 $$
 
-<1>1. One has the partial-fraction identity
+::: pf
+
+::: pf-step
+
+One has the partial-fraction identity
 $$
 \frac{1}{(z-a)(z-b)}
 =
@@ -54,7 +57,9 @@ $$
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The right-hand side equals
 $$
 \frac1{a-b}
@@ -62,9 +67,14 @@ $$
 =
 \frac1{(z-a)(z-b)}.
 $$
+
 :::
 
-<1>2. On $\abs{z}=r$,
+:::
+
+::: pf-step
+
+On $\abs{z}=r$,
 $$
 \frac1{z-a}
 =
@@ -72,7 +82,9 @@ $$
 $$
 and the series converges uniformly on $\gamma$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\abs{a}<r=\abs{z}$,
 $$
 \abs{\frac{a}{z}}<1.
@@ -90,16 +102,23 @@ $$
 \sum_{k=0}^{\infty}a^kz^{-k-1}.
 $$
 The ratio has constant modulus $\abs{a}/r<1$ on the circle, so the convergence is uniform.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_\gamma\frac{dz}{z-a}
 =
 2\pi i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, uniform convergence permits termwise integration:
 $$
 \int_\gamma\frac{dz}{z-a}
@@ -118,9 +137,14 @@ $$
 \end{cases}
 $$
 for every integer $m$. Hence only the term $k=0$ survives, giving $2\pi i$.
+
 :::
 
-<1>4. On $\abs{z}=r$,
+:::
+
+::: pf-step
+
+On $\abs{z}=r$,
 $$
 \frac1{z-b}
 =
@@ -128,7 +152,9 @@ $$
 $$
 and the series converges uniformly on $\gamma$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $r<\abs{b}$,
 $$
 \abs{\frac{z}{b}}<1
@@ -143,15 +169,22 @@ $$
 -\sum_{k=0}^{\infty}\frac{z^k}{b^{k+1}}.
 $$
 The ratio has constant modulus $r/\abs{b}<1$, so the convergence is uniform.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_\gamma\frac{dz}{z-b}
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, integrate term by term:
 $$
 \int_\gamma\frac{dz}{z-b}
@@ -165,9 +198,14 @@ $$
 \int_\gamma z^k\,dz=0.
 $$
 Therefore the whole sum is $0$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I
@@ -176,7 +214,9 @@ I
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 I
@@ -196,11 +236,15 @@ I
 =
 \frac{2\pi i}{a-b}.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required evaluation, obtained without Cauchy's theorem.
+
 :::
+
 :::

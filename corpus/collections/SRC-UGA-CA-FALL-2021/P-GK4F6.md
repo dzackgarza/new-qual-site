@@ -23,15 +23,20 @@ is analytic on the complement of the curve $\gamma$.
 
 :::
 
-::: {.solution}
 Let $K=\gamma([0,1])$ and $U=\mathbb C\setminus K$. The compactness of $K$ implies that $U$ is open. Let $L$ be the length of the piecewise smooth curve $\gamma$.
 
-<1>1. For every $z_0\in U$, the derivative exists and equals
+::: pf
+
+::: pf-step
+
+For every $z_0\in U$, the derivative exists and equals
 \[
 \boxed{f'(z_0)=\int_\gamma\frac{F(w)}{(w-z_0)^2}\,dw}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $z_0\in U$ and let $d=\operatorname{dist}(z_0,K)>0$. For $0<|h|<d/2$, subtraction of the two integrals yields
 \[
 \frac{f(z_0+h)-f(z_0)}{h}
@@ -42,17 +47,28 @@ For every $w\in K$, the difference between the integrand on the right and $F(w)/
 \frac{2\|F\|_{\infty,K}|h|}{d^3}.
 \]
 The integral of that difference therefore has absolute value at most $2L\|F\|_{\infty,K}|h|/d^3$, which tends to zero with $h$. This proves the asserted derivative formula.
+
 :::
 
-<1>2. The function $f$ is holomorphic on $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is holomorphic on $U$.
+
+
+::: pf-proof
+
 Step <1>1 establishes complex differentiability at every point of the open set $U$. Hence $f$ is holomorphic on $U$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves the assertion.
+
 :::
+
 :::

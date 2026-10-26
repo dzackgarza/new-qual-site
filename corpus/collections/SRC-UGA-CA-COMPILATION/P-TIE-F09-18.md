@@ -20,20 +20,25 @@ audit:
 Show that $f ( z ) = z ^ { 2 }$ is uniformly continuous in any open disk $| z | < R$ , where $R > 0$ is fixed, but it is not uniformly continuous on C.
 :::
 
-::: {.solution}
 Let
 $$
 f(z)=z^2.
 $$
 
-<1>1. If $|z|<R$ and $|w|<R$, then
+::: pf
+
+::: pf-step
+
+If $|z|<R$ and $|w|<R$, then
 $$
 |f(z)-f(w)|
 <
 2R|z-w|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor the difference:
 $$
 |z^2-w^2|
@@ -49,14 +54,21 @@ $$
 2R,
 $$
 the claimed estimate follows.
+
 :::
 
-<1>2. The function $f$ is uniformly continuous on the open disk
+:::
+
+::: pf-step
+
+The function $f$ is uniformly continuous on the open disk
 $$
 D_R=\{z\in\CC:|z|<R\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Given $\varepsilon>0$, choose
 $$
 \delta=\frac{\varepsilon}{2R}.
@@ -70,9 +82,14 @@ $$
 \varepsilon.
 $$
 The same $\delta$ works for every pair of points in $D_R$, so the continuity is uniform.
+
 :::
 
-<1>3. There are sequences $z_n,w_n\in\CC$ such that
+:::
+
+::: pf-step
+
+There are sequences $z_n,w_n\in\CC$ such that
 $$
 |z_n-w_n|\longrightarrow0
 $$
@@ -81,7 +98,9 @@ $$
 |f(z_n)-f(w_n)|\not\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 z_n=n,
@@ -105,23 +124,34 @@ $$
 \end{aligned}
 $$
 which tends to $2$.
+
 :::
 
-<1>4. The function $f(z)=z^2$ is not uniformly continuous on $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f(z)=z^2$ is not uniformly continuous on $\CC$.
+
+
+::: pf-proof
+
 If $f$ were uniformly continuous, then for every two sequences with
 $|z_n-w_n|\to0$ one would have
 $$
 |f(z_n)-f(w_n)|\to0.
 $$
 Step <1>3 provides a contradiction.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves uniform continuity on every fixed open disk, and step <1>4 proves failure
 of uniform continuity on the whole plane.
+
 :::
+
 :::

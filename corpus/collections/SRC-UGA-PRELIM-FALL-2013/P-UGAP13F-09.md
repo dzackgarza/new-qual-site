@@ -18,7 +18,6 @@ audit:
 Give an example, with proof, of a linear map from $\mathbb R^3$ to some vector space whose kernel is exactly the subspace spanned by $(1,2,3)$.
 :::
 
-::: {.solution}
 Define
 \[
 \boxed{
@@ -30,9 +29,15 @@ T(x,y,z)
 }
 \]
 
-<1>1. The map $T$ is linear.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $T$ is linear.
+
+
+::: pf-proof
+
 It is given by the matrix
 \[
 \begin{pmatrix}
@@ -53,15 +58,22 @@ T(au+bv)
 =
 aT(u)+bT(v).
 \]
+
 :::
 
-<1>2. The vector
+:::
+
+::: pf-step
+
+The vector
 \[
 (1,2,3)
 \]
 lies in the kernel of $T$.
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 T(1,2,3)
@@ -76,9 +88,14 @@ Therefore
 \subseteq
 \ker T.
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 (x,y,z)\in\ker T,
 \]
@@ -89,7 +106,9 @@ y=2x
 z=3x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 \[
 T(x,y,z)=(0,0)
@@ -101,16 +120,23 @@ is exactly the system
 3x-z=0.
 \]
 Solving gives the two displayed equations.
+
 :::
 
-<1>4. Hence every vector in the kernel has the form
+:::
+
+::: pf-step
+
+Hence every vector in the kernel has the form
 \[
 (x,y,z)
 =
 x(1,2,3).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the equations from step <1>3:
 \[
 (x,y,z)
@@ -125,9 +151,14 @@ Therefore
 \subseteq
 \operatorname{span}\{(1,2,3)\}.
 \]
+
 :::
 
-<1>5. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \ker T
@@ -136,14 +167,20 @@ Therefore
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the two inclusions from steps <1>2 and <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 verifies that the displayed linear map has exactly the prescribed
 kernel.
+
 :::
+
 :::

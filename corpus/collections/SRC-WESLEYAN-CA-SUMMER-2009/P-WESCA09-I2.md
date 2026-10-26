@@ -20,8 +20,11 @@ Let $U\subset\mathbb C$ and let $\alpha_i:[0,1]\to U$ for $i=1,2$ be closed path
 Define what it means for $\alpha_1$ to be freely homotopic to $\alpha_2$.
 :::
 
-::: {.solution}
-<1>1. The closed paths $\alpha_1$ and $\alpha_2$ are freely homotopic if there exists a continuous map
+::: pf
+
+::: pf-step
+
+The closed paths $\alpha_1$ and $\alpha_2$ are freely homotopic if there exists a continuous map
 \[
 \boxed{H:[0,1]\times[0,1]\to U}
 \]
@@ -37,7 +40,9 @@ H(0,t)=H(1,t)
 \]
 for every $t\in[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 For each fixed $t$, the path
 \[
 s\longmapsto H(s,t)
@@ -47,11 +52,15 @@ the family starts at $\alpha_1$ and ends at $\alpha_2$. No value of
 $H(0,t)=H(1,t)$ is required to remain fixed as $t$ varies, which is precisely
 the distinction between free homotopy of closed paths and based homotopy of
 loops.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition.
+
 :::
+
 :::

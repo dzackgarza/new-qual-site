@@ -19,8 +19,11 @@ audit:
 State the Argument Principle.
 :::
 
-::: {.solution}
-<1>1. **Argument Principle.**
+::: pf
+
+::: pf-step
+
+**Argument Principle.**
 
 Let $f$ be meromorphic on a domain containing a positively oriented simple
 closed contour
@@ -51,7 +54,9 @@ N-P.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At a zero $a$ of multiplicity $m$,
 \[
 f(z)
@@ -104,9 +109,14 @@ The residue theorem therefore gives
 =
 N-P.
 \]
+
 :::
 
-<1>2. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 \[
 N-P
 \]
@@ -116,7 +126,9 @@ f\circ\gamma
 \]
 about the origin.
 
-::: {.proof}
+
+::: pf-proof
+
 Along $\gamma$,
 \[
 w=f(z)
@@ -140,12 +152,16 @@ which is precisely
 \[
 \operatorname{Ind}(f\circ\gamma,0).
 \]
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the standard Argument Principle, and step <1>2 records its
 winding-number interpretation.
+
 :::
+
 :::

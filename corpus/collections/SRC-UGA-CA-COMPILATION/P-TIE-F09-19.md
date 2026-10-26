@@ -33,7 +33,6 @@ is the solution on $D=\{(x,y)\mid x^2+y^2<1\}$ of the Cauchy problem for the Lap
 (2) Show that there exist points $(x,y)\in D$ such that $\limsup_{n\to\infty}|u(x,y)|=\infty$.
 :::
 
-::: {.solution}
 Write
 $$
 u_n(x,y)
@@ -41,14 +40,20 @@ u_n(x,y)
 \frac{e^{ny}-e^{-ny}}{2n^2}\sin(nx).
 $$
 
-<1>1. The second derivative with respect to $x$ is
+::: pf
+
+::: pf-step
+
+The second derivative with respect to $x$ is
 $$
 \frac{\partial^2u_n}{\partial x^2}
 =
 -\frac{e^{ny}-e^{-ny}}2\sin(nx).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate twice:
 $$
 \frac{\partial u_n}{\partial x}
@@ -61,16 +66,23 @@ $$
 =
 -\frac{e^{ny}-e^{-ny}}2\sin(nx).
 $$
+
 :::
 
-<1>2. The second derivative with respect to $y$ is
+:::
+
+::: pf-step
+
+The second derivative with respect to $y$ is
 $$
 \frac{\partial^2u_n}{\partial y^2}
 =
 \frac{e^{ny}-e^{-ny}}2\sin(nx).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 First,
 $$
 \frac{\partial u_n}{\partial y}
@@ -83,9 +95,14 @@ $$
 =
 \frac{e^{ny}-e^{-ny}}2\sin(nx).
 $$
+
 :::
 
-<1>3. The function $u_n$ satisfies the Laplace equation on $D$:
+:::
+
+::: pf-step
+
+The function $u_n$ satisfies the Laplace equation on $D$:
 $$
 \boxed{
 \frac{\partial^2u_n}{\partial x^2}
@@ -95,11 +112,18 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The expressions in steps <1>1 and <1>2 cancel.
+
 :::
 
-<1>4. On $y=0$, the Cauchy data are
+:::
+
+::: pf-step
+
+On $y=0$, the Cauchy data are
 $$
 \boxed{
 u_n(x,0)=0,
@@ -108,7 +132,9 @@ u_n(x,0)=0,
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $y=0$ into the formula for $u_n$ gives
 $$
 u_n(x,0)
@@ -124,15 +150,22 @@ $$
 =
 \frac{\sin(nx)}n.
 $$
+
 :::
 
-<1>5. The point
+:::
+
+::: pf-step
+
+The point
 $$
 (x,y)=\left(\frac\pi6,\frac12\right)
 $$
 lies in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 x^2+y^2
@@ -141,9 +174,14 @@ x^2+y^2
 <1.
 $$
 Indeed, this inequality is equivalent to $\pi^2<27$.
+
 :::
 
-<1>6. Along the subsequence
+:::
+
+::: pf-step
+
+Along the subsequence
 $$
 n=12k+3,
 $$
@@ -155,7 +193,9 @@ $$
 =1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=12k+3$,
 $$
 \frac{n\pi}{6}
@@ -163,14 +203,21 @@ $$
 2k\pi+\frac\pi2,
 $$
 whose sine is $1$.
+
 :::
 
-<1>7. At the point from step <1>5,
+:::
+
+::: pf-step
+
+At the point from step <1>5,
 $$
 \limsup_{n\to\infty}|u_n(x,y)|=\boxed{\infty}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Along the subsequence from step <1>6,
 $$
 \begin{aligned}
@@ -188,11 +235,15 @@ u_n\left(\frac\pi6,\frac12\right)
 $$
 The last expression tends to $\infty$, because exponential growth dominates the polynomial
 $n^2$. Hence the limsup over all $n$ is infinite.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 prove part (1), and steps <1>5--<1>7 prove part (2).
+
 :::
+
 :::

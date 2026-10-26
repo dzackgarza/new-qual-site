@@ -18,7 +18,6 @@ audit:
 Give an example, with proof, of a real power series that converges exactly on the interval $[2,4)$.
 :::
 
-::: {.solution}
 Consider
 \[
 \boxed{
@@ -27,12 +26,18 @@ Consider
 }
 \]
 
-<1>1. The radius of convergence is
+::: pf
+
+::: pf-step
+
+The radius of convergence is
 \[
 R=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficients are
 \[
 a_n=\frac1n.
@@ -65,9 +70,14 @@ and diverges for
 \[
 |x-3|>1.
 \]
+
 :::
 
-<1>2. At the left endpoint
+:::
+
+::: pf-step
+
+At the left endpoint
 \[
 x=2,
 \]
@@ -78,7 +88,9 @@ the series becomes
 \]
 which converges.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the alternating harmonic series.
 The terms
 \[
@@ -86,9 +98,14 @@ The terms
 \]
 decrease monotonically to $0$, so the alternating-series test gives
 convergence.
+
 :::
 
-<1>3. At the right endpoint
+:::
+
+::: pf-step
+
+At the right endpoint
 \[
 x=4,
 \]
@@ -99,11 +116,18 @@ the series becomes
 \]
 which diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the harmonic series.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 x<2
 \quad\text{or}\quad
@@ -111,7 +135,9 @@ x>4,
 \]
 the series diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 |x-3|>1.
@@ -128,16 +154,23 @@ does not tend to $0$; indeed the exponential factor
 \]
 dominates the linear denominator $n$.
 Therefore the necessary term test fails.
+
 :::
 
-<1>5. Hence the exact interval of convergence is
+:::
+
+::: pf-step
+
+Hence the exact interval of convergence is
 \[
 \boxed{
 [2,4).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>4 show:
 
 - convergence for every
@@ -161,11 +194,15 @@ Thus the convergence set is exactly
 \[
 [2,4).
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required example and proof.
+
 :::
+
 :::

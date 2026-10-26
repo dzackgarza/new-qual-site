@@ -22,7 +22,6 @@ Evaluate
 \]
 :::
 
-::: {.solution}
 Let
 \[
 h(z)
@@ -30,13 +29,19 @@ h(z)
 \Log(z+e).
 \]
 
-<1>1. The function $h$ is holomorphic on a neighborhood of the closed unit
+::: pf
+
+::: pf-step
+
+The function $h$ is holomorphic on a neighborhood of the closed unit
 disk
 \[
 \overline{\mathbb D}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 |z|\le1,
@@ -70,9 +75,14 @@ is holomorphic on a neighborhood of
 \[
 \overline{\mathbb D}.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 h'(z)
 =
@@ -85,7 +95,9 @@ h'(0)
 \frac1e.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the logarithm:
 \[
 \frac{d}{dz}\Log(z+e)
@@ -97,9 +109,14 @@ Evaluation at
 z=0
 \]
 gives the stated value.
+
 :::
 
-<1>3. By Cauchy's integral formula for derivatives,
+:::
+
+::: pf-step
+
+By Cauchy's integral formula for derivatives,
 \[
 \int_{|z|=1}
 \frac{h(z)}{z^2}
@@ -108,7 +125,9 @@ gives the stated value.
 2\pi i\,h'(0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative form of Cauchy's formula says
 \[
 h'(0)
@@ -120,9 +139,14 @@ h'(0)
 \,dz.
 \]
 Rearrange.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{|z|=1}
@@ -133,18 +157,27 @@ Rearrange.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 h'(0)=\frac1e
 \]
 from step <1>2 into step <1>3.
+
 :::
 
-<1>5. The value is unchanged if one uses any other analytic branch of
+:::
+
+::: pf-step
+
+The value is unchanged if one uses any other analytic branch of
 the logarithm on the relevant right-half-plane neighborhood.
 
-::: {.proof}
+
+::: pf-proof
+
 Any two analytic logarithm branches on a connected domain differ by a
 constant
 \[
@@ -172,11 +205,15 @@ z^{-2}
 at $0$ is zero.
 Thus the answer is branch-independent whenever the branch is analytic on
 the needed neighborhood.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required value.
+
 :::
+
 :::

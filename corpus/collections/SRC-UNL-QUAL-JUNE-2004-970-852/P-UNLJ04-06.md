@@ -24,10 +24,15 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. The stated inequality is necessary.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The stated inequality is necessary.
+
+
+::: pf-proof
+
 Assume there are pairwise-disjoint subsets
 $$
 D_i\subseteq A_i,
@@ -58,9 +63,14 @@ $$
 =
 \sum_{i\in I}d_i.
 $$
+
 :::
 
-<1>2. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 $$
 \left|
 \bigcup_{i\in I}A_i
@@ -88,7 +98,9 @@ R
 \bigcup_{i=1}^nA_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For every left vertex
 $$
 (i,j)
@@ -121,9 +133,14 @@ all have neighborhood
 $$
 A_i.
 $$
+
 :::
 
-<1>3. This bipartite graph satisfies Hall's condition:
+:::
+
+::: pf-step
+
+This bipartite graph satisfies Hall's condition:
 $$
 \boxed{
 |N(S)|\ge|S|
@@ -134,7 +151,9 @@ $$
 S\subseteq L.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 S\subseteq L
@@ -191,14 +210,21 @@ Combining the two inequalities yields
 $$
 |N(S)|\ge|S|.
 $$
+
 :::
 
-<1>4. By Hall's marriage theorem, there is a matching saturating every vertex of
+:::
+
+::: pf-step
+
+By Hall's marriage theorem, there is a matching saturating every vertex of
 $$
 L.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 is exactly Hall's condition for the finite bipartite graph constructed in step <1>2. Hall's theorem therefore gives an injective assignment
 $$
 m:L\to R
@@ -211,9 +237,14 @@ for every
 $$
 (i,j)\in L.
 $$
+
 :::
 
-<1>5. For each
+:::
+
+::: pf-step
+
+For each
 $$
 i,
 $$
@@ -235,7 +266,9 @@ $$
 |D_i|=d_i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every matched element
 $$
 m(i,j)
@@ -257,15 +290,22 @@ are distinct. Hence
 $$
 |D_i|=d_i.
 $$
+
 :::
 
-<1>6. The sets
+:::
+
+::: pf-step
+
+The sets
 $$
 D_1,\ldots,D_n
 $$
 are pairwise disjoint.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 i\ne i',
@@ -290,11 +330,18 @@ and
 $$
 D_{i'}.
 $$
+
 :::
 
-<1>7. Thus the stated condition is sufficient.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus the stated condition is sufficient.
+
+
+::: pf-proof
+
 Steps <1>5--<1>6 produce pairwise-disjoint subsets
 $$
 D_i\subseteq A_i
@@ -307,9 +354,14 @@ for every
 $$
 i.
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \exists\text{ pairwise-disjoint }D_i\subseteq A_i, |D_i|=d_i
@@ -322,13 +374,19 @@ $$
 \text{ for all }I.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves necessity, and step <1>7 proves sufficiency.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required equivalence.
+
 :::
+
 :::

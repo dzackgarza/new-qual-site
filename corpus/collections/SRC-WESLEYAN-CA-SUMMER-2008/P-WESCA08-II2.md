@@ -26,8 +26,11 @@ and
 \]
 :::
 
-::: {.solution}
-<1>1. Expand the first integrand:
+::: pf
+
+::: pf-step
+
+Expand the first integrand:
 \[
 \boxed{
 \left(z+\frac1z\right)^4
@@ -35,7 +38,9 @@ and
 z^4+4z^2+6+\frac4{z^2}+\frac1{z^4}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the binomial theorem:
 \[
 \begin{aligned}
@@ -50,9 +55,14 @@ z^4
 z^4+4z^2+6+\frac4{z^2}+\frac1{z^4}.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The only singularity of the first integrand is
+:::
+
+::: pf-step
+
+The only singularity of the first integrand is
 \[
 z=0,
 \]
@@ -61,15 +71,22 @@ and it lies inside the circle
 |z-i|=10.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The expansion in step <1>1 shows that the only negative powers occur at
 \(z=0\). Moreover,
 \[
 |0-i|=1<10.
 \]
+
 :::
 
-<1>3. The residue at \(z=0\) is zero:
+:::
+
+::: pf-step
+
+The residue at \(z=0\) is zero:
 \[
 \boxed{
 \operatorname{Res}_{z=0}
@@ -77,12 +94,19 @@ The expansion in step <1>1 shows that the only negative powers occur at
 =0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The residue is the coefficient of \(z^{-1}\) in the Laurent expansion.
 Step <1>1 contains no \(z^{-1}\)-term.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{|z-i|=10}
@@ -90,7 +114,9 @@ Step <1>1 contains no \(z^{-1}\)-term.
 =0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the residue theorem,
 \[
 \int_{|z-i|=10}
@@ -101,9 +127,14 @@ By the residue theorem,
 \left(z+\frac1z\right)^4.
 \]
 Apply step <1>3.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g(z)
 =
@@ -114,7 +145,9 @@ g(z)
 \]
 Then \(g\) is entire.
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor series
 \[
 \sin z
@@ -130,35 +163,54 @@ gives, for \(z\ne0\),
 The right-hand side is a power series converging on all of \(\mathbb C\),
 and its value at \(0\) is \(1\). Thus the apparent singularity at \(0\) is
 removable and the specified extension is entire.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 g(z)^{100}}
 \]
 is entire.
 
-::: {.proof}
+
+::: pf-proof
+
 A finite product of entire functions is entire.
+
 :::
 
-<1>7. On the circle \(|z|=4\),
+:::
+
+::: pf-step
+
+On the circle \(|z|=4\),
 \[
 g(z)^{100}
 =
 \left(\frac{\sin z}{z}\right)^{100}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The circle \(|z|=4\) does not contain \(z=0\), so the defining formula for
 \(g\) there is exactly
 \[
 g(z)=\frac{\sin z}{z}.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{|z|=4}
@@ -166,15 +218,21 @@ g(z)=\frac{\sin z}{z}.
 =0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>6--<1>7, the integrand on the contour is the restriction of the
 entire function \(g^{100}\). Cauchy's integral theorem gives zero around the
 closed circle.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>8 evaluate the two requested contour integrals.
+
 :::
+
 :::

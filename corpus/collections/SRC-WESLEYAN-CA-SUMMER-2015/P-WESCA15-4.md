@@ -25,13 +25,18 @@ Calculate the following counterclockwise contour integrals:
 3. $\displaystyle\int_{|z|=1/2}\frac{e^{\sin z}}{z^3\cos z}\,dz$.
 :::
 
-::: {.solution}
-<1>1. The first integral is
+::: pf
+
+::: pf-step
+
+The first integral is
 $$
 \boxed{0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The circle $|z-i|=10$ contains the only singularity $z=0$ of the integrand. Expanding,
 $$
 \left(z+\frac1z\right)^4
@@ -43,14 +48,21 @@ $$
 =2\pi i\operatorname{Res}_{z=0}\left(z+\frac1z\right)^4
 =0.
 $$
+
 :::
 
-<1>2. The second integral is
+:::
+
+::: pf-step
+
+The second integral is
 $$
 \boxed{0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient
 $$
 \frac{\sin z}{z}
@@ -63,11 +75,18 @@ is entire, so Cauchy's theorem gives
 $$
 \int_{|z|=4}\left(\frac{\sin z}{z}\right)^4\,dz=0.
 $$
+
 :::
 
-<1>3. Inside $|z|=1/2$, the third integrand has only the singularity $z=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Inside $|z|=1/2$, the third integrand has only the singularity $z=0$.
+
+
+::: pf-proof
+
 The zeros of $\cos z$ are
 $$
 z=\frac\pi2+k\pi,
@@ -78,14 +97,21 @@ $$
 \frac{e^{\sin z}}{z^3\cos z}
 $$
 is the pole contributed by $z^3$ at the origin.
+
 :::
 
-<1>4. The residue of the third integrand at $z=0$ is
+:::
+
+::: pf-step
+
+The residue of the third integrand at $z=0$ is
 $$
 \operatorname{Res}_{z=0}\frac{e^{\sin z}}{z^3\cos z}=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 It suffices to compute the coefficient of $z^2$ in
 $$
 \frac{e^{\sin z}}{\cos z}.
@@ -110,28 +136,39 @@ $$
 =1+z+z^2+O(z^3).
 $$
 After division by $z^3$, the coefficient of $z^{-1}$ is therefore $1$.
+
 :::
 
-<1>5. The third integral is
+:::
+
+::: pf-step
+
+The third integral is
 $$
 \boxed{2\pi i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4 and the residue theorem,
 $$
 \int_{|z|=1/2}\frac{e^{\sin z}}{z^3\cos z}\,dz
 =2\pi i\operatorname{Res}_{z=0}\frac{e^{\sin z}}{z^3\cos z}
 =2\pi i.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1, <1>2, and <1>5 give the three requested values, respectively:
 $$
 \boxed{0,\quad0,\quad2\pi i}.
 $$
+
 :::
+
 :::

@@ -36,7 +36,6 @@ $$
 where on each component of $\partial F$, either $v$ is parallel to $\partial F$ or $v$ is perpendicular to $\partial F$.
 :::
 
-::: {.solution}
 Choose a Riemannian metric on \(F\). Let
 \[
 T
@@ -44,11 +43,17 @@ T
 denote the positively oriented unit tangent vector field along
 \(\partial F\).
 
-<1>1. On each connected component \(C\subset\partial F\), a nowhere-zero
+::: pf
+
+::: pf-step
+
+On each connected component \(C\subset\partial F\), a nowhere-zero
 vector field \(v\) that is everywhere parallel to \(C\) is homotopic through
 nowhere-zero sections of \(TF|_C\) to \(T|_C\).
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(v\) is everywhere parallel to \(C\), there is a continuous
 nowhere-zero function
 \[
@@ -62,13 +67,20 @@ Because \(C\) is connected, \(\lambda\) has constant sign. After positive
 rescaling, \(v\) is homotopic either to \(T\) or to \(-T\). The fields
 \(T\) and \(-T\) are homotopic through nonzero vectors by rotating through
 angle \(\pi\) in the oriented plane \(TF|_C\).
+
 :::
 
-<1>2. On each connected component \(C\subset\partial F\), a nowhere-zero
+:::
+
+::: pf-step
+
+On each connected component \(C\subset\partial F\), a nowhere-zero
 vector field \(v\) that is everywhere perpendicular to \(C\) is likewise
 homotopic through nowhere-zero sections to \(T|_C\).
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(N\) be the unit normal to \(C\) inside the oriented plane \(TF|_C\),
 chosen so that \((T,N)\) is an oriented orthonormal frame. A nonzero field
 perpendicular to \(C\) is a nonzero scalar multiple of \(N\), hence is
@@ -77,25 +89,39 @@ homotopic to \(N\) or \(-N\). Rotating by the constant angle
 \pm\frac{\pi}{2}
 \]
 gives a homotopy through nowhere-zero vectors from either \(\pm N\) to \(T\).
+
 :::
 
-<1>3. Therefore the given boundary section \(v\) is homotopic through
+:::
+
+::: pf-step
+
+Therefore the given boundary section \(v\) is homotopic through
 nowhere-zero boundary sections to \(T\).
 
-::: {.proof}
+
+::: pf-proof
+
 Apply steps <1>1 and <1>2 independently on each connected component of
 \(\partial F\). The boundary components are disjoint, so the homotopies
 combine.
+
 :::
 
-<1>4. The relative Euler class is unchanged under a homotopy of the
+:::
+
+::: pf-step
+
+The relative Euler class is unchanged under a homotopy of the
 nowhere-zero boundary section. Hence
 \[
 \boxed{
 e(TF,v)=e(TF,T)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A homotopy of nowhere-zero boundary sections can be viewed as a nowhere-zero
 section over
 \[
@@ -106,36 +132,55 @@ isomorphism between the corresponding relative obstruction problems.
 Equivalently, the relative Euler class depends only on the homotopy class of
 the boundary trivialization. Therefore homotopic boundary sections determine
 the same relative Euler number.
+
 :::
 
-<1>5. Choose an extension
+:::
+
+::: pf-step
+
+Choose an extension
 \[
 w:F\to TF
 \]
 of \(T\) that is transverse to the zero section.
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of the relative Euler class, one may choose any extension
 of the prescribed nonzero boundary section and perturb it in the interior to
 be transverse to the zero section while fixing the boundary.
+
 :::
 
-<1>6. We may further arrange that on a collar
+:::
+
+::: pf-step
+
+We may further arrange that on a collar
 \[
 \partial F\times[0,\varepsilon)
 \]
 the field \(w\) is independent of the collar coordinate and equals the
 boundary tangent field \(T\).
 
-::: {.proof}
+
+::: pf-proof
+
 The boundary field \(T\) is nowhere zero. Extend it constantly in the collar
 direction. Since the relative Euler number is independent of the chosen
 extension and zeros can be kept away from the collar, replace the original
 extension by this collar-standard one and perturb only in the remaining
 interior.
+
 :::
 
-<1>7. The relative Euler number is the signed sum of the isolated zeros of
+:::
+
+::: pf-step
+
+The relative Euler number is the signed sum of the isolated zeros of
 \(w\):
 \[
 \boxed{
@@ -145,16 +190,23 @@ e(TF,T)
 \operatorname{ind}_x(w)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The extension \(w\) is transverse to the zero section, so its zeros are
 isolated and carry the usual local signs. This signed count is the defining
 evaluation of the relative Euler class on the relative fundamental class
 \[
 [F,\partial F].
 \]
+
 :::
 
-<1>8. Let
+:::
+
+::: pf-step
+
+Let
 \[
 DF
 =
@@ -162,20 +214,29 @@ F_+\cup_{\partial F}F_-
 \]
 be the oriented double of \(F\).
 
-::: {.proof}
+
+::: pf-proof
+
 Take two copies of \(F\), reverse the orientation on the second copy, and
 identify corresponding boundary points. The result is a closed oriented
 surface.
+
 :::
 
-<1>9. Reflection across the seam defines a diffeomorphism
+:::
+
+::: pf-step
+
+Reflection across the seam defines a diffeomorphism
 \[
 \rho:F_-\to F_+
 \]
 that fixes \(\partial F\), preserves tangent directions to the boundary, and
 reverses the collar-normal direction.
 
-::: {.proof}
+
+::: pf-proof
+
 In collar coordinates
 \[
 (s,t)\in\partial F\times(-\varepsilon,\varepsilon),
@@ -185,9 +246,14 @@ the reflection is
 \rho(s,t)=(s,-t).
 \]
 It fixes the \(s\)-direction and reverses the \(t\)-direction.
+
 :::
 
-<1>10. Define a vector field \(W\) on the double by
+:::
+
+::: pf-step
+
+Define a vector field \(W\) on the double by
 \[
 W|_{F_+}=w
 \]
@@ -197,35 +263,56 @@ W|_{F_-}=\rho^*w,
 \]
 using the reflected copy of \(w\).
 
-::: {.proof}
+
+::: pf-proof
+
 On the collar, step <1>6 says \(w=T\) and is independent of the normal
 coordinate. Since \(\rho\) fixes the tangential vector \(T\), the two
 definitions agree smoothly along the seam. Thus they glue to a smooth vector
 field \(W\) on \(DF\).
+
 :::
 
-<1>11. The field \(W\) has no zeros on the seam.
+:::
 
-::: {.proof}
+::: pf-step
+
+The field \(W\) has no zeros on the seam.
+
+
+::: pf-proof
+
 Along the seam,
 \[
 W=T,
 \]
 and \(T\) is a unit tangent vector field, hence nowhere zero.
+
 :::
 
-<1>12. Every zero \(x\) of \(w\) in \(F_+\) has a reflected zero
+:::
+
+::: pf-step
+
+Every zero \(x\) of \(w\) in \(F_+\) has a reflected zero
 \[
 x^-=\rho^{-1}(x)
 \]
 in \(F_-\), and there are no other zeros of \(W\).
 
-::: {.proof}
+
+::: pf-proof
+
 On each copy away from the seam, \(W\) is exactly \(w\) or its reflected
 copy. Step <1>11 rules out seam zeros.
+
 :::
 
-<1>13. The two corresponding zeros have the same index:
+:::
+
+::: pf-step
+
+The two corresponding zeros have the same index:
 \[
 \boxed{
 \operatorname{ind}_{x^-}(W)
@@ -233,15 +320,22 @@ copy. Step <1>11 rules out seam zeros.
 \operatorname{ind}_{x}(w)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The local index of a vector field is invariant under diffeomorphic change of
 coordinates when the vector field is transported by the derivative. The
 reflection reverses orientation both in the local domain and in the tangent
 plane identification, so the two orientation signs cancel. Thus the degree
 of the normalized vector field around the reflected zero is the same.
+
 :::
 
-<1>14. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \sum_{z\in W^{-1}(0)}
@@ -250,13 +344,20 @@ of the normalized vector field around the reflected zero is the same.
 2e(TF,T)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>12--<1>13, the zeros of \(W\) occur in reflected pairs with equal
 indices. Summing the two copies of the index sum from step <1>7 gives the
 formula.
+
 :::
 
-<1>15. By the Poincaré--Hopf theorem for the closed surface \(DF\),
+:::
+
+::: pf-step
+
+By the Poincaré--Hopf theorem for the closed surface \(DF\),
 \[
 \boxed{
 \sum_{z\in W^{-1}(0)}
@@ -265,18 +366,27 @@ formula.
 \chi(DF)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The double \(DF\) is closed and oriented, and \(W\) has isolated zeros.
 Apply the usual boundaryless Poincaré--Hopf theorem.
+
 :::
 
-<1>16. The Euler characteristic of the double is
+:::
+
+::: pf-step
+
+The Euler characteristic of the double is
 \[
 \boxed{
 \chi(DF)=2\chi(F)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Give \(F\) a finite CW structure with \(\partial F\) as a subcomplex.
 The double is the union of two copies of \(F\) intersecting in
 \(\partial F\). Euler characteristic is additive:
@@ -293,48 +403,73 @@ Hence
 \[
 \chi(\partial F)=0.
 \]
+
 :::
 
-<1>17. Combining steps <1>14--<1>16,
+:::
+
+::: pf-step
+
+Combining steps <1>14--<1>16,
 \[
 2e(TF,T)
 =
 2\chi(F).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>14 identifies the index sum with \(2e(TF,T)\), step <1>15 identifies
 the same sum with \(\chi(DF)\), and step <1>16 identifies
 \(\chi(DF)\) with \(2\chi(F)\).
+
 :::
 
-<1>18. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 e(TF,T)=\chi(F)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the equality in step <1>17 by \(2\).
+
 :::
 
-<1>19. Finally,
+:::
+
+::: pf-step
+
+Finally,
 \[
 \boxed{
 e(TF,v)=\chi(F)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives
 \[
 e(TF,v)=e(TF,T),
 \]
 and step <1>18 computes the latter as \(\chi(F)\).
+
 :::
 
-<1>20. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>19 is the Poincaré--Hopf formula requested in the exercise.
+
 :::
+
 :::

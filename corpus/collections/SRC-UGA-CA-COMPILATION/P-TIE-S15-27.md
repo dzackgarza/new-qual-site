@@ -21,8 +21,11 @@ Compute the following integrals.
 (i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
 :::
 
-::: {.solution}
-<1>1. For $0<a<n$,
+::: pf
+
+::: pf-step
+
+For $0<a<n$,
 $$
 \boxed{
 \int_0^\infty
@@ -33,7 +36,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 t=x^n.
@@ -79,9 +84,14 @@ $$
 \frac{\pi}{\sin(\pi a/n)}.
 $$
 Multiplying by $1/n$ proves the formula.
+
 :::
 
-<1>2. For $0<s<4$, define
+:::
+
+::: pf-step
+
+For $0<s<4$, define
 $$
 J(s)
 \coloneqq
@@ -96,7 +106,9 @@ J(s)
 {4\sin(\pi s/2)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the substitution
 $$
 t=x^2.
@@ -141,9 +153,14 @@ J(s)
 \frac{\pi(2-s)}
 {4\sin(\pi s/2)}.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_0^\infty
@@ -153,7 +170,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $s$ in a small closed interval around $1$, the derivative of the integrand in step <1>2 is
 $$
 \frac{x^{s-1}\log x}{(1+x^2)^2},
@@ -184,11 +203,15 @@ J'(1)
 -\frac\pi4.
 $$
 This is the desired value.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 evaluates part (i), and step <1>3 evaluates part (ii).
+
 :::
+
 :::

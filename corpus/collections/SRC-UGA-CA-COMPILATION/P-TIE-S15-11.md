@@ -32,18 +32,23 @@ where $\norm{f}_{(\infty,s)} = \sup_{z\in D_s(z_0)} \abs{f(z)}$ and $\norm{f}_{(
 The source adds "Note: Exercise 3.8.20 on p.107 in Stein et al is a straightforward consequence of this stronger result using the integral form of the Cauchy-Schwarz inequality in real analysis.", a pointer to Stein and Shakarchi, *Complex Analysis*; the statement does not depend on it.
 :::
 
-::: {.solution}
 Set
 $$
 \rho\coloneqq r-s>0.
 $$
 
-<1>1. If $z\in D_s(z_0)$, then
+::: pf
+
+::: pf-step
+
+If $z\in D_s(z_0)$, then
 $$
 D_\rho(z)\subset D_r(z_0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $w\in D_\rho(z)$. Then
 $$
 \abs{w-z_0}
@@ -55,9 +60,14 @@ $$
 r.
 $$
 Thus $w\in D_r(z_0)$.
+
 :::
 
-<1>2. For every $z\in D_s(z_0)$ and every $0<t<\rho$,
+:::
+
+::: pf-step
+
+For every $z\in D_s(z_0)$ and every $0<t<\rho$,
 $$
 \abs{f(z)}
 \le
@@ -66,7 +76,9 @@ $$
 \abs{f(z+te^{i\theta})}\,d\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the closed circle
 $$
 \abs{w-z}=t
@@ -80,9 +92,14 @@ f(z)
 f(z+te^{i\theta})\,d\theta.
 $$
 Taking absolute values yields the estimate.
+
 :::
 
-<1>3. For every $z\in D_s(z_0)$,
+:::
+
+::: pf-step
+
+For every $z\in D_s(z_0)$,
 $$
 \abs{f(z)}
 \le
@@ -91,7 +108,9 @@ $$
 \abs{f(w)}\,dA(w).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the inequality in step <1>2 by $2t$ and integrate from $t=0$ to $t=\rho$:
 $$
 \abs{f(z)}
@@ -112,9 +131,14 @@ $$
 \int_{D_\rho(z)}\abs{f(w)}\,dA(w),
 $$
 division by $\rho^2$ gives the claimed estimate.
+
 :::
 
-<1>4. For every $z\in D_s(z_0)$,
+:::
+
+::: pf-step
+
+For every $z\in D_s(z_0)$,
 $$
 \abs{f(z)}
 \le
@@ -122,7 +146,9 @@ $$
 \norm{f}_{(1,r)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 D_\rho(z)\subset D_r(z_0).
@@ -142,9 +168,14 @@ $$
 \end{aligned}
 $$
 Since $\rho=r-s$, this is the stated inequality.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \norm{f}_{(\infty,s)}
@@ -154,16 +185,22 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the supremum of the pointwise estimate in step <1>4 over all $z\in D_s(z_0)$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the assertion with
 $$
 \boxed{c=\frac1{\pi(r-s)^2}>0}.
 $$
+
 :::
+
 :::

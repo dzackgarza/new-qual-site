@@ -23,8 +23,11 @@ For every $\beta\in I$, prove that the coordinate projection
 is an open map.
 :::
 
-::: {.solution}
-<1>1. A basis for the product topology consists of sets
+::: pf
+
+::: pf-step
+
+A basis for the product topology consists of sets
 \[
 B
 =
@@ -40,18 +43,27 @@ U_\alpha=X_\alpha
 \]
 for all but finitely many $\alpha$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard basis for the product topology.
+
 :::
 
-<1>2. For such a basis element,
+:::
+
+::: pf-step
+
+For such a basis element,
 \[
 \pi_\beta(B)
 =
 U_\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x=(x_\alpha)_{\alpha\in I}
@@ -101,14 +113,21 @@ U_\beta
 \subseteq
 \pi_\beta(B).
 \]
+
 :::
 
-<1>3. Therefore the projection of every product-basic open set is open in
+:::
+
+::: pf-step
+
+Therefore the projection of every product-basic open set is open in
 \[
 X_\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \pi_\beta(B)
@@ -116,9 +135,14 @@ By step <1>2,
 U_\beta,
 \]
 and $U_\beta$ is open by construction.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 O
 \subseteq
@@ -131,7 +155,9 @@ Then
 \]
 is open in $X_\beta$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write $O$ as a union of basis elements:
 \[
 O
@@ -151,9 +177,14 @@ Each set
 \]
 is open by step <1>3.
 Hence their union is open.
+
 :::
 
-<1>5. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \pi_\beta:
@@ -164,13 +195,19 @@ X_\beta
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 verifies the definition of an open map.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

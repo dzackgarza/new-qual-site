@@ -25,8 +25,11 @@ Then use the definition to show that
 \]
 :::
 
-::: {.solution}
-<1>1. A finite limit $\lim_{x\to x_0}f(x)$ exists if there is an $L\in\RR$ such that for every $\varepsilon>0$ there is a $\delta>0$ for which
+::: pf
+
+::: pf-step
+
+A finite limit $\lim_{x\to x_0}f(x)$ exists if there is an $L\in\RR$ such that for every $\varepsilon>0$ there is a $\delta>0$ for which
 $$
 0<|x-x_0|<\delta
 \quad\Longrightarrow\quad
@@ -34,31 +37,47 @@ $$
 $$
 for every $x$ in the domain of $f$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the $\varepsilon$-$\delta$ definition of the assertion that $f(x)$ tends to the finite real number $L$ as $x$ tends to $x_0$.
+
 :::
 
-<1>2. For every $x\ge0$,
+:::
+
+::: pf-step
+
+For every $x\ge0$,
 $$
 \left|\sqrt{x}-\frac12\right|
 \le 2\left|x-\frac14\right|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rationalizing gives
 $$
 \left|\sqrt{x}-\frac12\right|
 =\frac{\left|x-\frac14\right|}{\sqrt{x}+\frac12}.
 $$
 Since $x\ge0$, one has $\sqrt{x}+\frac12\ge\frac12$, and the claimed inequality follows.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{\lim_{x\to1/4}\sqrt{x}=\frac12}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varepsilon>0$ and choose
 $$
 \delta\coloneqq\frac{\varepsilon}{2}.
@@ -71,11 +90,15 @@ $$
 =\varepsilon.
 $$
 By the definition in step <1>1, the stated limit follows.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition and step <1>3 proves the requested limit.
+
 :::
+
 :::

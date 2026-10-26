@@ -25,14 +25,19 @@ Classify each indicated isolated singularity as removable, a pole, or essential;
 3. $\displaystyle \frac{\cos(1/z)}{z^3}$ at $z=0$.
 :::
 
-::: {.solution}
-<1>1. The singularity of
+::: pf
+
+::: pf-step
+
+The singularity of
 $$
 f(z)=\frac{(e^z-1)^3}{z^6}
 $$
 at $z=0$ is a pole of order $3$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 $$
 \phi(z)=\frac{e^z-1}{z}
@@ -58,15 +63,22 @@ f(z)
 =\frac{\phi(z)^3}{z^3}.
 $$
 The numerator is holomorphic and nonzero at $0$, so $f$ has a pole of order $3$ there.
+
 :::
 
-<1>2. The singularity of
+:::
+
+::: pf-step
+
+The singularity of
 $$
 g(z)=\frac{\sin z}{z^2-\pi^2}
 $$
 at $z=\pi$ is removable.
 
-::: {.proof}
+
+::: pf-proof
+
 Factor the denominator:
 $$
 z^2-\pi^2=(z-\pi)(z+\pi).
@@ -88,15 +100,22 @@ $$
 g(\pi)=-\frac1{2\pi}.
 $$
 Thus the singularity is removable.
+
 :::
 
-<1>3. The singularity of
+:::
+
+::: pf-step
+
+The singularity of
 $$
 h(z)=\frac{\cos(1/z)}{z^3}
 $$
 at $z=0$ is essential.
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\ne0$, the Laurent expansion is
 $$
 \cos(1/z)
@@ -108,9 +127,14 @@ h(z)
 =\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}z^{-(2k+3)}.
 $$
 The principal part contains infinitely many nonzero negative-power terms. Therefore the singularity is neither removable nor a pole of finite order, so it is essential.
+
 :::
 
-<1>4. Therefore the classifications are
+:::
+
+::: pf-step
+
+Therefore the classifications are
 $$
 \boxed{
 \begin{array}{c|c}
@@ -121,13 +145,19 @@ $$
 \end{array}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the combination of steps <1>1--<1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives all three requested classifications, including the order of the only pole.
+
 :::
+
 :::

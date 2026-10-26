@@ -32,7 +32,6 @@ $$
 where $\gamma _ { x } : = \{ z \mid z = x + i t , 0 \leq t \leq b \}$
 :::
 
-::: {.solution}
 Parametrize the vertical segment by
 $$
 \gamma_x(t)=x+it,
@@ -40,22 +39,33 @@ $$
 0\le t\le b.
 $$
 
-<1>1. For every $x\ge x_0$,
+::: pf
+
+::: pf-step
+
+For every $x\ge x_0$,
 $$
 \int_{\gamma_x}f(z)\,dz
 =
 i\int_0^b f(x+it)\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Along the parametrization,
 $$
 d\gamma_x(t)=i\,dt.
 $$
 Substitution into the contour integral gives the stated identity.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \abs{
 \int_{\gamma_x}f(z)\,dz-iAb
@@ -66,7 +76,9 @@ b
 \abs{f(x+it)-A}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \begin{aligned}
@@ -89,9 +101,14 @@ b
 \abs{f(x+it)-A}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \lim_{x\to+\infty}
@@ -101,7 +118,9 @@ iAb.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis says precisely that
 $$
 \sup_{0\le t\le b}
@@ -109,11 +128,15 @@ $$
 \longrightarrow0
 $$
 as $x\to+\infty$. The estimate in step <1>2 therefore forces the difference between the contour integral and $iAb$ to tend to $0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required limit.
+
 :::
+
 :::

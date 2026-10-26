@@ -22,8 +22,11 @@ f(x)>0\qquad(x\in X).
 \]
 :::
 
-::: {.solution}
-<1>1. Assume first that
+::: pf
+
+::: pf-step
+
+Assume first that
 \[
 \mu
 \]
@@ -48,14 +51,21 @@ and
 (n\ge1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of
 \[
 \sigma\text{-finiteness}.
 \]
+
 :::
 
-<1>2. Define disjoint measurable sets
+:::
+
+::: pf-step
+
+Define disjoint measurable sets
 \[
 A_1=E_1,
 \]
@@ -81,7 +91,9 @@ and
 \mu(A_n)<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each $A_n$ is measurable and satisfies
 \[
 A_n\subseteq E_n,
@@ -99,9 +111,14 @@ By construction the $A_n$ are pairwise disjoint.
 Every point $x\in X$ lies in at least one $E_n$; taking the least such $n$
 places $x$ in $A_n$.
 Thus the $A_n$ partition $X$.
+
 :::
 
-<1>3. For each
+:::
+
+::: pf-step
+
+For each
 \[
 n\ge1,
 \]
@@ -117,12 +134,19 @@ Then
 c_n>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator is a finite positive number by step <1>2, so each $c_n$ is
 strictly positive.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 f
 \coloneqq
@@ -138,7 +162,9 @@ for every
 x\in X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The indicator functions are measurable, and the countable sum of
 nonnegative measurable functions is measurable.
 
@@ -152,14 +178,21 @@ then
 \[
 f(x)=c_n>0.
 \]
+
 :::
 
-<1>5. The function $f$ belongs to
+:::
+
+::: pf-step
+
+The function $f$ belongs to
 \[
 L^1(\mu).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the disjoint partition,
 \[
 \begin{aligned}
@@ -185,9 +218,14 @@ Hence
 <
 \infty.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \mu
 \text{ is }\sigma\text{-finite}
@@ -196,11 +234,18 @@ Hence
 \text{ with }f>0\text{ everywhere}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>5 construct such an $f$.
+
 :::
 
-<1>7. Conversely, suppose
+:::
+
+::: pf-step
+
+Conversely, suppose
 \[
 f\in L^1(\mu)
 \]
@@ -224,11 +269,18 @@ f(x)\ge\frac1n
 \right\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is measurable, every superlevel set $F_n$ is measurable.
+
 :::
 
-<1>8. The sets
+:::
+
+::: pf-step
+
+The sets
 \[
 F_n
 \]
@@ -239,7 +291,9 @@ X
 \bigcup_{n=1}^{\infty}F_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x\in X.
@@ -262,11 +316,18 @@ Hence
 \[
 x\in F_n.
 \]
+
 :::
 
-<1>9. Each $F_n$ has finite measure.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each $F_n$ has finite measure.
+
+
+::: pf-proof
+
 On
 \[
 F_n,
@@ -296,9 +357,14 @@ n
 <
 \infty.
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \mu
 \]
@@ -307,16 +373,23 @@ is
 \sigma\text{-finite}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8, the measurable sets $F_n$ cover $X$.
 By step <1>9, each has finite measure.
 That is exactly the definition of
 \[
 \sigma\text{-finiteness}.
 \]
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \mu\text{ is }\sigma\text{-finite}
@@ -326,14 +399,20 @@ That is exactly the definition of
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 proves the forward implication and step <1>10 proves the reverse
 implication.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the desired equivalence.
+
 :::
+
 :::

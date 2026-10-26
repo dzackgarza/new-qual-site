@@ -20,12 +20,17 @@ audit:
 Let $f ( z )$ be a non-constant analytic function in $| z | > 0$ such that $f ( z _ { n } ) = 0$ for infinite many points $z _ { n }$ with $\operatorname* { l i m } _ { n \to \infty } z _ { n } = 0$ . Show that $z = 0$ is an essential singularity for $f ( z )$ . (An example of such a function is $f ( z ) = \sin ( 1 / z ) . )$
 :::
 
-::: {.solution}
 The point $0$ is an isolated singularity of $f$, so it is removable, a pole, or essential.
 
-<1>1. The singularity at $0$ is not removable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The singularity at $0$ is not removable.
+
+
+::: pf-proof
+
 Suppose that $0$ were removable. Then $f$ would extend to a holomorphic function
 $$
 \widetilde f:\CC\to\CC.
@@ -39,11 +44,18 @@ $$
 \widetilde f\equiv0.
 $$
 Hence $f\equiv0$ on $\CC\setminus\{0\}$, contradicting the hypothesis that $f$ is nonconstant.
+
 :::
 
-<1>2. The singularity at $0$ is not a pole.
+:::
 
-::: {.proof}
+::: pf-step
+
+The singularity at $0$ is not a pole.
+
+
+::: pf-proof
+
 Suppose that $0$ were a pole of order $m\ge1$. Then
 $$
 g(z)\coloneqq z^m f(z)
@@ -67,20 +79,31 @@ g(0)
 =0,
 $$
 contradicting $g(0)\ne0$.
+
 :::
 
-<1>3. Therefore $0$ is an essential singularity of $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $0$ is an essential singularity of $f$.
+
+
+::: pf-proof
+
 An isolated singularity is exactly one of removable, pole, or essential. Steps <1>1 and <1>2 exclude the first two possibilities. Hence
 $$
 \boxed{0\text{ is an essential singularity of }f.}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

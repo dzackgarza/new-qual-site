@@ -28,15 +28,20 @@ $$
 (Note that in general the area of $f ( D _ { 1 } )$ is infinite.)
 :::
 
-::: {.solution}
 Fix $0<r<1$ and write
 $$
 D_r\coloneqq\{z:\abs{z}<r\}.
 $$
 
-<1>1. The derivative $f'(z)$ is nonzero for every $z\in D_r$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The derivative $f'(z)$ is nonzero for every $z\in D_r$.
+
+
+::: pf-proof
+
 Suppose $f'(z_0)=0$. Since $f$ is nonconstant and holomorphic, there is an integer $m\ge2$ and a holomorphic function $h$ with $h(z_0)\ne0$ such that
 $$
 f(z)-f(z_0)
@@ -44,16 +49,23 @@ f(z)-f(z_0)
 (z-z_0)^m h(z)
 $$
 near $z_0$. The local mapping theorem then implies that nearby values of $f$ have $m$ preimages near $z_0$, contradicting injectivity. Hence $f'(z)\ne0$.
+
 :::
 
-<1>2. The area $S$ of $f(D_r)$ satisfies
+:::
+
+::: pf-step
+
+The area $S$ of $f(D_r)$ satisfies
 $$
 S
 =
 \int_{D_r}\abs{f'(z)}^2\,dA(z).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write $f=u+iv$. The real Jacobian determinant of the map
 $$
 (x,y)\longmapsto(u(x,y),v(x,y))
@@ -86,9 +98,14 @@ $$
 =
 \int_{D_r}\abs{f'(z)}^2\,dA.
 $$
+
 :::
 
-<1>3. For every $0\le\rho\le r$,
+:::
+
+::: pf-step
+
+For every $0\le\rho\le r$,
 $$
 \frac1{2\pi}
 \int_0^{2\pi}
@@ -98,7 +115,9 @@ $$
 n^2\abs{c_n}^2\rho^{2n-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $s$ with $r<s<1$. The differentiated power series
 $$
 f'(z)
@@ -122,9 +141,14 @@ $$
 n^2\abs{c_n}^2\rho^{2n-2}.
 $$
 The uniform convergence $P_N\to f'$ on $\abs{z}\le r$ implies uniform convergence of the squared moduli on each circle, so letting $N\to\infty$ yields the identity.
+
 :::
 
-<1>4. The area of $f(D_r)$ is
+:::
+
+::: pf-step
+
+The area of $f(D_r)$ is
 $$
 \boxed{
 S
@@ -134,7 +158,9 @@ n\abs{c_n}^2r^{2n}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using polar coordinates in step <1>2 and then step <1>3,
 $$
 \begin{aligned}
@@ -171,21 +197,32 @@ n^2\abs{c_n}^2
 n\abs{c_n}^2r^{2n}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The area is finite for every $r<1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The area is finite for every $r<1$.
+
+
+::: pf-proof
+
 Since $f'$ is continuous on the compact closed disk $\abs{z}\le r$, it is bounded there. Hence
 $$
 \int_{D_r}\abs{f'(z)}^2\,dA<\infty.
 $$
 By step <1>2, this integral is exactly the area $S$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the stated formula, and step <1>5 gives finiteness.
+
 :::
+
 :::

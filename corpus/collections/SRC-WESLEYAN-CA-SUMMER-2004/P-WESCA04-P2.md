@@ -26,7 +26,6 @@ D_1\cup D_2
 are simply connected.
 :::
 
-::: {.solution}
 We use the standard planar-domain characterization:
 
 > A domain
@@ -43,19 +42,30 @@ This is the classical complement criterion for plane domains; see, for
 example, Conway, *Functions of One Complex Variable I*, the chapter on
 simply connected regions.
 
-<1>1. The intersection
+::: pf
+
+::: pf-step
+
+The intersection
 \[
 D_1\cap D_2
 \]
 is a domain.
 
-::: {.proof}
+
+::: pf-proof
+
 It is open because it is the intersection of two open sets.
 It is nonempty and connected by hypothesis.
 Thus it is a domain.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 j=1,2,
 \]
@@ -67,16 +77,23 @@ K_j
 \]
 is connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 \[
 D_j
 \]
 is a simply connected plane domain.
 Apply the planar-domain complement criterion.
+
 :::
 
-<1>3. Both sets
+:::
+
+::: pf-step
+
+Both sets
 \[
 K_1
 \quad\text{and}\quad
@@ -87,7 +104,9 @@ contain the point at infinity
 \infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 \[
 D_j
@@ -106,15 +125,22 @@ Hence
 \[
 \infty\in K_j.
 \]
+
 :::
 
-<1>4. The union
+:::
+
+::: pf-step
+
+The union
 \[
 K_1\cup K_2
 \]
 is connected.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, both $K_1$ and $K_2$ are connected.
 By step <1>3,
 \[
@@ -126,9 +152,14 @@ contains
 \]
 so the two connected sets meet.
 The union of two connected subsets with nonempty intersection is connected.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \widehat{\mathbb C}
 \setminus
@@ -137,7 +168,9 @@ The union of two connected subsets with nonempty intersection is connected.
 K_1\cup K_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is De Morgan's law:
 \[
 \widehat{\mathbb C}
@@ -148,9 +181,14 @@ This is De Morgan's law:
 \cup
 (\widehat{\mathbb C}\setminus D_2).
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 D_1\cap D_2
@@ -158,7 +196,9 @@ D_1\cap D_2
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 D_1\cap D_2
@@ -166,15 +206,22 @@ D_1\cap D_2
 is a domain.
 By steps <1>4--<1>5, its complement in the Riemann sphere is connected.
 Apply the planar-domain complement criterion.
+
 :::
 
-<1>7. The intersection
+:::
+
+::: pf-step
+
+The intersection
 \[
 D_1\cap D_2
 \]
 is path-connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Every open connected subset of
 \[
 \mathbb R^2\cong\mathbb C
@@ -187,15 +234,22 @@ Apply this to
 \[
 U=D_1\cap D_2.
 \]
+
 :::
 
-<1>8. The union
+:::
+
+::: pf-step
+
+The union
 \[
 D_1\cup D_2
 \]
 is simply connected.
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 D_1
@@ -230,12 +284,16 @@ Hence
 D_1\cup D_2
 \]
 is simply connected.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves the assertion for the intersection, and step <1>8 proves
 the assertion for the union.
+
 :::
+
 :::

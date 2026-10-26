@@ -24,7 +24,6 @@ b. Prove that if G is a graph with $n \geq r + 1$ vertices and $t _ { r - 1 } ( 
 c. From the previous part deduce Tur´an’s theorem, and also the stronger fact that such a G contains two $K _ { r }$ subgraphs sharing $r - 1$ vertices.
 :::
 
-::: {.solution}
 Write
 $$
 q=r-1,
@@ -42,7 +41,11 @@ $$
 T_q(n).
 $$
 
-<1>1. Turán's theorem states:
+::: pf
+
+::: pf-step
+
+Turán's theorem states:
 $$
 \boxed{
 K_r\nsubseteq G
@@ -55,7 +58,9 @@ T_{r-1}(n(G))
 $$
 up to isomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, among all graphs on
 $$
 n
@@ -69,9 +74,14 @@ $$
 (r-1)
 $$
 -partite graph has the maximum possible number of edges.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 m\ge2,
 $$
@@ -85,7 +95,9 @@ t_q(m)-t_q(m-1)
 \right\rfloor}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Construct
 $$
 T_q(m)
@@ -118,9 +130,14 @@ $$
 \frac{(q-1)m}{q}
 \right\rfloor.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 m\ge q+2
 $$
@@ -152,7 +169,9 @@ $$
 t_q(m)-t_q(m-1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 d
@@ -299,9 +318,14 @@ $$
 d+1
 $$
 is impossible.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 H
 $$
@@ -327,7 +351,9 @@ t_q(m-1)+1
 $$
 edges.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 H
@@ -385,9 +411,14 @@ $$
 H,
 $$
 the claim follows.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 G
 $$
@@ -423,7 +454,9 @@ e(H)
 t_{r-1}(n')+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>4 repeatedly, reducing the number of vertices one at a time.
 
 At each stage
@@ -445,9 +478,14 @@ $$
 G
 $$
 with the asserted number of vertices and edges.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 t_{r-1}(r)
@@ -455,7 +493,9 @@ t_{r-1}(r)
 \binom r2-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The balanced complete
 $$
 (r-1)
@@ -482,11 +522,18 @@ with exactly the edge inside the two-vertex part removed. Hence its edge count i
 $$
 \binom r2-1.
 $$
+
 :::
 
-<1>7. Turán's theorem follows from part (b).
+:::
 
-::: {.proof}
+::: pf-step
+
+Turán's theorem follows from part (b).
+
+
+::: pf-proof
+
 Suppose
 $$
 G
@@ -552,9 +599,14 @@ $$
 K_r,
 $$
 which is the asserted extremal bound.
+
 :::
 
-<1>8. Assume
+:::
+
+::: pf-step
+
+Assume
 $$
 r\ge3.
 $$
@@ -566,7 +618,9 @@ t_{r-1}(r+1)
 \binom{r+1}{2}-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Put
 $$
 q=r-1.
@@ -593,9 +647,14 @@ $$
 K_{r+1},
 $$
 the only missing edges are the one internal edge in each of the two two-vertex parts. Hence exactly two edges are missing.
+
 :::
 
-<1>9. For
+:::
+
+::: pf-step
+
+For
 $$
 r\ge3,
 $$
@@ -621,7 +680,9 @@ r-1
 $$
 vertices.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>5 with
 $$
 n'=r+1.
@@ -695,14 +756,21 @@ $$
 r-1
 $$
 vertices.
+
 :::
 
-<1>10. The stronger assertion in part (c) requires
+:::
+
+::: pf-step
+
+The stronger assertion in part (c) requires
 $$
 r\ge3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 r=2,
@@ -729,11 +797,15 @@ step <1>9 proves the intended assertion for
 $$
 r\ge3.
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states Turán's theorem, step <1>5 proves part (b), step <1>7 deduces Turán's theorem from part (b), and steps <1>8--<1>10 prove the stronger conclusion in its correct range.
+
 :::
+
 :::

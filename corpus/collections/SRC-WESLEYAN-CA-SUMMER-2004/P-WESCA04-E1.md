@@ -25,8 +25,11 @@ Give an example each of an analytic function having at the origin:
 3. an essential singularity.
 :::
 
-::: {.solution}
-<1>1. A removable singularity at the origin is given by
+::: pf
+
+::: pf-step
+
+A removable singularity at the origin is given by
 \[
 f_1(z)
 \coloneqq
@@ -35,7 +38,9 @@ f_1(z)
 z\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor series for sine is
 \[
 \sin z
@@ -58,16 +63,23 @@ f_1(0)=1
 \]
 extends $f_1$ holomorphically across the origin. Hence the singularity is
 removable.
+
 :::
 
-<1>2. A pole at the origin is given by
+:::
+
+::: pf-step
+
+A pole at the origin is given by
 \[
 f_2(z)
 \coloneqq
 \frac1z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Laurent expansion of $f_2$ at $0$ is simply
 \[
 f_2(z)=z^{-1}.
@@ -79,9 +91,14 @@ z f_2(z)=1
 \]
 extends holomorphically and nonvanishingly across $0$. Hence $0$ is a pole
 of order $1$.
+
 :::
 
-<1>3. An essential singularity at the origin is given by
+:::
+
+::: pf-step
+
+An essential singularity at the origin is given by
 \[
 f_3(z)
 \coloneqq
@@ -90,7 +107,9 @@ e^{1/z},
 z\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $1/z$ into the exponential series:
 \[
 e^{1/z}
@@ -108,9 +127,14 @@ Its Laurent series has infinitely many nonzero negative-power terms.
 
 A removable singularity has no negative-power terms, while a pole has only
 finitely many. Therefore the singularity of $e^{1/z}$ at $0$ is essential.
+
 :::
 
-<1>4. Thus one valid list is
+:::
+
+::: pf-step
+
+Thus one valid list is
 \[
 \boxed{
 \frac{\sin z}{z},
@@ -122,13 +146,19 @@ e^{1/z},
 \]
 for removable, pole, and essential singularities respectively.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the content of steps <1>1--<1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 supplies and classifies all three requested examples.
+
 :::
+
 :::

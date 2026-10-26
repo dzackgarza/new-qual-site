@@ -20,8 +20,11 @@ Let $f:[0,1]\to\mathbb R$ be absolutely continuous.
 Prove directly from the definitions that $f$ has bounded variation.
 :::
 
-::: {.solution}
-<1>1. By absolute continuity, there exists $\delta>0$ such that for every finite family of pairwise disjoint intervals
+::: pf
+
+::: pf-step
+
+By absolute continuity, there exists $\delta>0$ such that for every finite family of pairwise disjoint intervals
 $$
 (a_j,b_j)\subset[0,1]
 $$
@@ -34,11 +37,18 @@ $$
 \sum_j\abs{f(b_j)-f(a_j)}<1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of absolute continuity applied with $\varepsilon=1$.
+
 :::
 
-<1>2. Choose an integer $M$ such that
+:::
+
+::: pf-step
+
+Choose an integer $M$ such that
 $$
 \frac1M<\delta,
 $$
@@ -60,7 +70,9 @@ $$
 \sum_{[u,v]\in P'}\abs{f(v)-f(u)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Each interval $[x_{i-1},x_i]$ is subdivided by $P'$ into finitely many consecutive subintervals
 $$
 [u_0,u_1],\ldots,[u_{r-1},u_r]
@@ -72,35 +84,56 @@ $$
 \sum_{j=1}^r\abs{f(u_j)-f(u_{j-1})}.
 $$
 Summing over $i$ yields the stated inequality.
+
 :::
 
-<1>3. For each $r=1,\ldots,M$, the sum of the increments of $f$ over those refined partition intervals contained in $[t_{r-1},t_r]$ is less than $1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For each $r=1,\ldots,M$, the sum of the increments of $f$ over those refined partition intervals contained in $[t_{r-1},t_r]$ is less than $1$.
+
+
+::: pf-proof
+
 Fix $r$. The refined partition intervals inside $[t_{r-1},t_r]$ are pairwise disjoint, and the sum of their lengths is exactly
 $$
 t_r-t_{r-1}=\frac1M<\delta.
 $$
 Apply step <1>1 to this finite family. The resulting sum of absolute increments is less than $1$.
+
 :::
 
-<1>4. Every partition $P$ of $[0,1]$ satisfies
+:::
+
+::: pf-step
+
+Every partition $P$ of $[0,1]$ satisfies
 $$
 \sum_{i=1}^n\abs{f(x_i)-f(x_{i-1})}<M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the variation sum for $P$ is bounded by that of the refinement $P'$. Group the intervals of $P'$ according to the fixed subintervals
 $$
 [t_{r-1},t_r],
 \qquad r=1,\ldots,M.
 $$
 By step <1>3, each group contributes less than $1$. Hence the full refined sum is less than $M$.
+
 :::
 
-<1>5. Therefore $f$ has bounded variation on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ has bounded variation on $[0,1]$.
+
+
+::: pf-proof
+
 The total variation is
 $$
 V_0^1(f)
@@ -112,11 +145,15 @@ where the supremum is over all finite partitions of $[0,1]$. Step <1>4 gives the
 $$
 V_0^1(f)\le M<\infty.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is exactly the assertion that $f$ is of bounded variation.
+
 :::
+
 :::

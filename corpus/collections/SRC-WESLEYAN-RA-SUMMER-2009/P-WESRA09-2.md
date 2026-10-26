@@ -27,8 +27,11 @@ State the following theorems:
 4. the Uniform Boundedness (Banach–Steinhaus) Theorem.
 :::
 
-::: {.solution}
-<1>1. The uniqueness theorem for premeasures on rings is the following: let \(\mathcal R\) be a ring of subsets of a set \(\Omega\), and let \(\mu_0:\mathcal R\to[0,\infty]\) be a premeasure. Suppose \(\mu_0\) is \(\sigma\)-finite on \(\mathcal R\), meaning that there are sets \(E_n\in\mathcal R\) with
+::: pf
+
+::: pf-step
+
+The uniqueness theorem for premeasures on rings is the following: let \(\mathcal R\) be a ring of subsets of a set \(\Omega\), and let \(\mu_0:\mathcal R\to[0,\infty]\) be a premeasure. Suppose \(\mu_0\) is \(\sigma\)-finite on \(\mathcal R\), meaning that there are sets \(E_n\in\mathcal R\) with
 \[
 \Omega=\bigcup_{n=1}^\infty E_n,
 \qquad
@@ -41,7 +44,11 @@ If \(\mu\) and \(\nu\) are measures on \(\sigma(\mathcal R)\) satisfying
 \]
 then \(\boxed{\mu=\nu\text{ on }\sigma(\mathcal R)}\).
 
-<1>2. The Dominated Convergence Theorem is the following: let \((\Omega,\mathcal A,\mu)\) be a measure space, let \(f_n:\Omega\to\mathbb R\) or \(\mathbb C\) be measurable, and suppose \(f_n\to f\) almost everywhere. If there is \(g\in L^1(\mu)\) such that \(|f_n|\le g\) almost everywhere for every \(n\), then \(f\in L^1(\mu)\),
+:::
+
+::: pf-step
+
+The Dominated Convergence Theorem is the following: let \((\Omega,\mathcal A,\mu)\) be a measure space, let \(f_n:\Omega\to\mathbb R\) or \(\mathbb C\) be measurable, and suppose \(f_n\to f\) almost everywhere. If there is \(g\in L^1(\mu)\) such that \(|f_n|\le g\) almost everywhere for every \(n\), then \(f\in L^1(\mu)\),
 \[
 \boxed{\int_\Omega |f_n-f|\,d\mu\longrightarrow0},
 \]
@@ -50,14 +57,22 @@ and in particular
 \boxed{\int_\Omega f_n\,d\mu\longrightarrow\int_\Omega f\,d\mu}.
 \]
 
-<1>3. The Hahn--Banach Theorem in normed-space form is the following: let \(X\) be a normed vector space over \(\mathbb R\) or \(\mathbb C\), let \(M\subseteq X\) be a linear subspace, and let \(f:M\to\mathbb R\) or \(\mathbb C\) be a bounded linear functional. Then there is a bounded linear functional \(F:X\to\mathbb R\) or \(\mathbb C\) such that
+:::
+
+::: pf-step
+
+The Hahn--Banach Theorem in normed-space form is the following: let \(X\) be a normed vector space over \(\mathbb R\) or \(\mathbb C\), let \(M\subseteq X\) be a linear subspace, and let \(f:M\to\mathbb R\) or \(\mathbb C\) be a bounded linear functional. Then there is a bounded linear functional \(F:X\to\mathbb R\) or \(\mathbb C\) such that
 \[
 \boxed{F|_M=f,
 \qquad
 \|F\|=\|f\|}.
 \]
 
-<1>4. The Uniform Boundedness Theorem is the following: let \(X\) be a Banach space, let \(Y\) be a normed vector space, and let \(\mathcal F\) be a family of bounded linear maps \(T:X\to Y\). If
+:::
+
+::: pf-step
+
+The Uniform Boundedness Theorem is the following: let \(X\) be a Banach space, let \(Y\) be a normed vector space, and let \(\mathcal F\) be a family of bounded linear maps \(T:X\to Y\). If
 \[
 \sup_{T\in\mathcal F}\|Tx\|_Y<\infty
 \qquad\text{for every }x\in X,
@@ -67,9 +82,12 @@ then
 \boxed{\sup_{T\in\mathcal F}\|T\|<\infty}.
 \]
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 state the four requested theorems, including the hypotheses needed for each conclusion.
 :::
+
+::: pf-qed
+
+Steps <1>1 through <1>4 state the four requested theorems, including the hypotheses needed for each conclusion.
+
+:::
+
 :::

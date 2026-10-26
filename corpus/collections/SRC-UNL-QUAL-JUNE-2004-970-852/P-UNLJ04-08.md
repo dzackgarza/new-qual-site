@@ -19,7 +19,6 @@ audit:
 Prove that every graph has a bipartition $V ( G ) = X \cup Y$ with the property that $e ( X , Y ) \geq e ( G ) / 2$ . Further, show that if G is cubic then we can achieve $e ( X , Y ) \geq$ $n ( G ) = 2 e ( G ) / 3$
 :::
 
-::: {.solution}
 For a bipartition
 $$
 V(G)=X\sqcup Y,
@@ -37,7 +36,11 @@ $$
 Y.
 $$
 
-<1>1. Choose a bipartition
+::: pf
+
+::: pf-step
+
+Choose a bipartition
 $$
 V(G)=X\sqcup Y
 $$
@@ -47,7 +50,9 @@ e(X,Y)
 $$
 is maximal.
 
-::: {.proof}
+
+::: pf-proof
+
 There are finitely many bipartitions of the finite vertex set
 $$
 V(G),
@@ -57,9 +62,14 @@ $$
 (X,Y)\longmapsto e(X,Y)
 $$
 attains a maximum.
+
 :::
 
-<1>2. For every vertex
+:::
+
+::: pf-step
+
+For every vertex
 $$
 v\in V(G),
 $$
@@ -72,7 +82,9 @@ $$
 v.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 v\in X.
@@ -144,15 +156,22 @@ The argument is identical if
 $$
 v\in Y.
 $$
+
 :::
 
-<1>3. For every graph,
+:::
+
+::: pf-step
+
+For every graph,
 $$
 \boxed{
 e(X,Y)\ge\frac{e(G)}2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 E_{\mathrm{cross}}
@@ -213,15 +232,22 @@ e(X,Y)
 \ge
 \frac{e(G)}2.
 $$
+
 :::
 
-<1>4. Now suppose
+:::
+
+::: pf-step
+
+Now suppose
 $$
 G
 $$
 is cubic. Then every vertex is incident to at least two crossing edges.
 
-::: {.proof}
+
+::: pf-proof
+
 For every vertex
 $$
 v,
@@ -250,15 +276,22 @@ this forces
 $$
 c(v)\ge2.
 $$
+
 :::
 
-<1>5. For a cubic graph,
+:::
+
+::: pf-step
+
+For a cubic graph,
 $$
 \boxed{
 e(X,Y)\ge n(G)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Sum the inequality
 $$
 c(v)\ge2
@@ -289,14 +322,21 @@ so
 $$
 e(X,Y)\ge n(G).
 $$
+
 :::
 
-<1>6. In a cubic graph,
+:::
+
+::: pf-step
+
+In a cubic graph,
 $$
 n(G)=\frac{2e(G)}3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The handshaking lemma gives
 $$
 \sum_{v\in V(G)}\deg(v)
@@ -323,9 +363,14 @@ n(G)
 =
 \frac{2e(G)}3.
 $$
+
 :::
 
-<1>7. Therefore, if $G$ is cubic, one can achieve
+:::
+
+::: pf-step
+
+Therefore, if $G$ is cubic, one can achieve
 $$
 \boxed{
 e(X,Y)
@@ -335,13 +380,19 @@ n(G)
 \frac{2e(G)}3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5--<1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the general bound, and step <1>7 proves the stronger cubic bound.
+
 :::
+
 :::

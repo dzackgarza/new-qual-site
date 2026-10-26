@@ -19,11 +19,16 @@ audit:
 Prove that no two of the unit disk $\mathbb D$, the complex plane $\mathbb C$, and the Riemann sphere are conformally equivalent.
 :::
 
-::: {.solution}
-<1>1. The unit disk $\mathbb D$ and the complex plane $\mathbb C$ are not
+::: pf
+
+::: pf-step
+
+The unit disk $\mathbb D$ and the complex plane $\mathbb C$ are not
 conformally equivalent.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose there were a conformal equivalence
 \[
 F:\mathbb C\longrightarrow\mathbb D.
@@ -41,12 +46,19 @@ G^{-1}:\mathbb C\longrightarrow\mathbb D
 \]
 would contradict the preceding argument. Hence no conformal equivalence
 exists.
+
 :::
 
-<1>2. The Riemann sphere is not conformally equivalent to either
+:::
+
+::: pf-step
+
+The Riemann sphere is not conformally equivalent to either
 $\mathbb C$ or $\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The Riemann sphere is compact. The complex plane is not compact, since the
 open cover
 \[
@@ -61,18 +73,29 @@ has no finite subcover.
 A conformal equivalence is, in particular, a homeomorphism. Compactness is
 preserved by homeomorphisms. Therefore the compact Riemann sphere cannot be
 conformally equivalent to either noncompact domain.
+
 :::
 
-<1>3. Consequently the three spaces are pairwise not conformally equivalent.
+:::
 
-::: {.proof}
+::: pf-step
+
+Consequently the three spaces are pairwise not conformally equivalent.
+
+
+::: pf-proof
+
 Step <1>1 separates $\mathbb D$ from $\mathbb C$, while step <1>2 separates
 the Riemann sphere from each of them.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

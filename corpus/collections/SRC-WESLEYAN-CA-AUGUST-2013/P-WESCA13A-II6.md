@@ -24,8 +24,11 @@ g(z)=f(\sqrt z).
 Show that $g$ is well-defined and analytic on $B(0,r^2)$, and express $g^{(n)}(0)$ in terms of derivatives of $f$ at $0$.
 :::
 
-::: {.solution}
-<1>1. Since $f$ is analytic on
+::: pf
+
+::: pf-step
+
+Since $f$ is analytic on
 \[
 B(0,r),
 \]
@@ -41,7 +44,9 @@ for
 |w|<r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Taylor-series theorem for holomorphic functions on a disk.
 Moreover,
 \[
@@ -49,15 +54,22 @@ a_m
 =
 \frac{f^{(m)}(0)}{m!}.
 \]
+
 :::
 
-<1>2. Because $f$ is even,
+:::
+
+::: pf-step
+
+Because $f$ is even,
 \[
 a_m=0
 \]
 for every odd integer $m$.
 
-::: {.proof}
+
+::: pf-proof
+
 Evenness gives
 \[
 f(-w)=f(w).
@@ -82,9 +94,14 @@ so
 \[
 a_m=0.
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 f(w)
 =
@@ -92,11 +109,18 @@ f(w)
 a_{2n}w^{2n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Delete the odd terms using step <1>2.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 z\in B(0,r^2),
 \]
@@ -105,7 +129,9 @@ then every square root $w$ of $z$ satisfies
 |w|<r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 w^2=z,
@@ -122,15 +148,22 @@ Therefore
 \[
 |w|<r.
 \]
+
 :::
 
-<1>5. The value
+:::
+
+::: pf-step
+
+The value
 \[
 f(\sqrt z)
 \]
 is independent of the choice of square root.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 z\ne0,
@@ -154,9 +187,14 @@ Thus the value is well defined for every
 \[
 z\in B(0,r^2).
 \]
+
 :::
 
-<1>6. For
+:::
+
+::: pf-step
+
+For
 \[
 z\in B(0,r^2),
 \]
@@ -170,7 +208,9 @@ a_{2n}z^n.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose any
 \[
 w
@@ -196,14 +236,21 @@ a_{2n}(w^2)^n\\
 a_{2n}z^n.
 \end{aligned}
 \]
+
 :::
 
-<1>7. The series in step <1>6 converges for every
+:::
+
+::: pf-step
+
+The series in step <1>6 converges for every
 \[
 |z|<r^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 |z|<r^2,
@@ -233,34 +280,53 @@ Hence
 a_{2n}z^n
 \]
 converges.
+
 :::
 
-<1>8. Therefore $g$ is analytic on
+:::
+
+::: pf-step
+
+Therefore $g$ is analytic on
 \[
 B(0,r^2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 represents $g$ by a convergent power series throughout
 \[
 B(0,r^2).
 \]
 Thus $g$ is holomorphic there.
+
 :::
 
-<1>9. The Taylor coefficient of $z^n$ in $g$ is
+:::
+
+::: pf-step
+
+The Taylor coefficient of $z^n$ in $g$ is
 \[
 a_{2n}
 =
 \frac{f^{(2n)}(0)}{(2n)!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first equality follows from step <1>6.
 The second follows from the Taylor coefficient formula in step <1>1.
+
 :::
 
-<1>10. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 g^{(n)}(0)
@@ -270,7 +336,9 @@ f^{(2n)}(0).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a power series
 \[
 g(z)
@@ -294,12 +362,16 @@ a_{2n}
 \]
 by step <1>9.
 Substitute.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves well-definedness, step <1>8 proves analyticity, and step
 <1>10 gives the requested derivative formula.
+
 :::
+
 :::

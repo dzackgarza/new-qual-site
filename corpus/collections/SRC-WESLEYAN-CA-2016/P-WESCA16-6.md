@@ -23,28 +23,40 @@ Determine the conformal automorphism group of
 and prove your claim.
 :::
 
-::: {.solution}
-<1>1. Let $f:\mathbb D^*\to\mathbb D^*$ be a conformal automorphism. Then
+::: pf
+
+::: pf-step
+
+Let $f:\mathbb D^*\to\mathbb D^*$ be a conformal automorphism. Then
 $f$ extends holomorphically across $0$ to a map
 \[
 F:\mathbb D\to\mathbb D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is bounded by $1$ on a punctured neighborhood of $0$, so
 the removable singularity theorem gives a holomorphic extension $F$ to
 $\mathbb D$. The extension satisfies $|F(0)|\le1$. If $|F(0)|=1$, then the
 maximum modulus principle would force $F$ to be constant, contradicting that
 $f$ is bijective. Hence $|F(0)|<1$, so $F(\mathbb D)\subseteq\mathbb D$.
+
 :::
 
-<1>2. The inverse $f^{-1}$ extends to a holomorphic map
+:::
+
+::: pf-step
+
+The inverse $f^{-1}$ extends to a holomorphic map
 \[
 G:\mathbb D\to\mathbb D,
 \]
 and $F$ and $G$ are inverse automorphisms of $\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 to $f^{-1}$ to obtain $G$. On $\mathbb D^*$,
 \[
 G(F(z))=z.
@@ -58,11 +70,18 @@ Similarly,
 F\circ G=\operatorname{id}_{\mathbb D}.
 \]
 Thus $F$ is a conformal automorphism of the full unit disk, with inverse $G$.
+
 :::
 
-<1>3. The disk automorphism $F$ fixes $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The disk automorphism $F$ fixes $0$.
+
+
+::: pf-proof
+
 By hypothesis,
 \[
 F(\mathbb D^*)=f(\mathbb D^*)=\mathbb D^*.
@@ -80,15 +99,22 @@ one must have
 \[
 F(0)=0.
 \]
+
 :::
 
-<1>4. There is $\lambda\in\mathbb C$ with $|\lambda|=1$ such that
+:::
+
+::: pf-step
+
+There is $\lambda\in\mathbb C$ with $|\lambda|=1$ such that
 \[
 F(z)=\lambda z
 \qquad(z\in\mathbb D).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $F:\mathbb D\to\mathbb D$ is holomorphic and fixes $0$.
 Schwarz's lemma gives
 \[
@@ -113,9 +139,14 @@ F(z)=\lambda z,
 \qquad
 |\lambda|=1.
 \]
+
 :::
 
-<1>5. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \operatorname{Aut}(\mathbb D^*)
@@ -123,7 +154,9 @@ F(z)=\lambda z,
 \cong S^1 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows that every conformal automorphism has this form. Conversely,
 for every $|\lambda|=1$, the map
 \[
@@ -132,11 +165,15 @@ z\longmapsto\lambda z
 is a conformal bijection of $\mathbb D^*$ with inverse
 $z\mapsto\overline\lambda z$. Composition corresponds to multiplication in
 $S^1$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 determines the automorphism group.
+
 :::
+
 :::

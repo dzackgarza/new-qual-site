@@ -24,7 +24,6 @@ e^{z^2}-4z^2
 in the open unit disk.
 :::
 
-::: {.solution}
 Let
 $$
 f(z)
@@ -32,12 +31,18 @@ f(z)
 e^{z^2}-4z^2.
 $$
 
-<1>1. On the unit circle,
+::: pf
+
+::: pf-step
+
+On the unit circle,
 $$
 |e^{z^2}|<|-4z^2|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 |z|=1,
@@ -61,9 +66,14 @@ e
 <4.
 $$
 Thus the strict inequality holds on the whole boundary circle.
+
 :::
 
-<1>2. The functions
+:::
+
+::: pf-step
+
+The functions
 $$
 f(z)
 =
@@ -79,27 +89,40 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 is exactly the Rouché inequality on the unit circle. Both functions are entire, so Rouché's theorem applies.
+
 :::
 
-<1>3. The function $f$ has exactly
+:::
+
+::: pf-step
+
+The function $f$ has exactly
 $$
 \boxed{2}
 $$
 zeros in the open unit disk, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The comparison function
 $$
 -4z^2
 $$
 has a zero of multiplicity $2$ at the origin and no other zeros. Step <1>2 transfers this zero count to $f$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required answer.
+
 :::
+
 :::

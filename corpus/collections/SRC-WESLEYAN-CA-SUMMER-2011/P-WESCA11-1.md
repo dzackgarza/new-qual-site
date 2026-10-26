@@ -19,7 +19,6 @@ audit:
 Find algebraic expressions involving real square roots, sums, and differences for the real and imaginary parts of both square roots of $2-4i$.
 :::
 
-::: {.solution}
 Let
 \[
 w=a+ib
@@ -30,18 +29,29 @@ be a square root of
 \]
 with \(a,b\in\mathbb R\).
 
-<1>1. Expanding \(w^2\),
+::: pf
+
+::: pf-step
+
+Expanding \(w^2\),
 \[
 (a+ib)^2
 =
 a^2-b^2+2abi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply out and use \(i^2=-1\).
+
 :::
 
-<1>2. Comparing real and imaginary parts with
+:::
+
+::: pf-step
+
+Comparing real and imaginary parts with
 \[
 2-4i,
 \]
@@ -54,26 +64,42 @@ and
 \boxed{2ab=-4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equality of complex numbers implies equality of their real and imaginary
 parts.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{ab=-2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the second equation in step <1>2 by \(2\).
+
 :::
 
-<1>4. The modulus of \(2-4i\) is
+:::
+
+::: pf-step
+
+The modulus of \(2-4i\) is
 \[
 \boxed{|2-4i|=2\sqrt5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 |2-4i|
 =
@@ -83,9 +109,14 @@ Divide the second equation in step <1>2 by \(2\).
 =
 2\sqrt5.
 \]
+
 :::
 
-<1>5. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |w|^2=|w^2|,
 \]
@@ -94,7 +125,9 @@ one has
 \boxed{a^2+b^2=2\sqrt5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 |w|^2=a^2+b^2,
 \]
@@ -103,9 +136,14 @@ and
 |w|^2=|w^2|=|2-4i|.
 \]
 Apply step <1>4.
+
 :::
 
-<1>6. Adding the equations
+:::
+
+::: pf-step
+
+Adding the equations
 \[
 a^2-b^2=2
 \]
@@ -118,42 +156,70 @@ gives
 2a^2=2+2\sqrt5.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The \(b^2\)-terms cancel.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 a^2=1+\sqrt5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>6 by \(2\).
+
 :::
 
-<1>8. Subtracting the first equation from the second gives
+:::
+
+::: pf-step
+
+Subtracting the first equation from the second gives
 \[
 2b^2=2\sqrt5-2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 (a^2+b^2)-(a^2-b^2)=2b^2.
 \]
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 b^2=\sqrt5-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>8 by \(2\).
+
 :::
 
-<1>10. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 |a|
 =
@@ -166,20 +232,34 @@ and
 \sqrt{\sqrt5-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take nonnegative square roots in steps <1>7--<1>9.
+
 :::
 
-<1>11. The signs of \(a\) and \(b\) must be opposite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The signs of \(a\) and \(b\) must be opposite.
+
+
+::: pf-proof
+
 Step <1>3 gives
 \[
 ab=-2<0.
 \]
+
 :::
 
-<1>12. Taking \(a>0\) forces
+:::
+
+::: pf-step
+
+Taking \(a>0\) forces
 \[
 \boxed{
 a=\sqrt{1+\sqrt5},
@@ -187,16 +267,25 @@ a=\sqrt{1+\sqrt5},
 b=-\sqrt{\sqrt5-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>10 and the opposite-sign condition from step <1>11.
+
 :::
 
-<1>13. The product of these two numbers is indeed
+:::
+
+::: pf-step
+
+The product of these two numbers is indeed
 \[
 ab=-2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 ab
@@ -208,9 +297,14 @@ ab
 -2.
 \end{aligned}
 \]
+
 :::
 
-<1>14. Therefore one square root is
+:::
+
+::: pf-step
+
+Therefore one square root is
 \[
 \boxed{
 \sqrt{1+\sqrt5}
@@ -218,11 +312,18 @@ ab
 i\sqrt{\sqrt5-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>12 into \(w=a+ib\).
+
 :::
 
-<1>15. The other square root is its negative:
+:::
+
+::: pf-step
+
+The other square root is its negative:
 \[
 \boxed{
 -\sqrt{1+\sqrt5}
@@ -230,12 +331,19 @@ Substitute step <1>12 into \(w=a+ib\).
 i\sqrt{\sqrt5-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(w^2=z\), then \((-w)^2=z\). A nonzero complex number has exactly two
 square roots, which are opposites.
+
 :::
 
-<1>16. Hence the real and imaginary parts of the two roots are
+:::
+
+::: pf-step
+
+Hence the real and imaginary parts of the two roots are
 \[
 \boxed{
 \left(
@@ -252,13 +360,19 @@ and
 \right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Read off the real and imaginary parts from steps <1>14--<1>15.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>16 gives the requested algebraic expressions.
+
 :::
+
 :::

@@ -32,10 +32,15 @@ Let $g$ be analytic for $\abs{z} \le 1$ and $\abs{g(z)} < 1$ for $\abs{z} = 1$.
 Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be useful.
 :::
 
-::: {.solution}
-<1>1. Under the hypotheses of part (a), $g$ has exactly one fixed point in $\abs{z}<1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Under the hypotheses of part (a), $g$ has exactly one fixed point in $\abs{z}<1$.
+
+
+::: pf-proof
+
 A fixed point of $g$ is a zero of
 $$
 H(z)\coloneqq z-g(z).
@@ -50,11 +55,18 @@ $$
 \abs{z}.
 $$
 By Rouché's theorem, $H$ and $z$ have the same number of zeros in $\abs{z}<1$, counted with multiplicity. Since $z$ has exactly one zero there, $H$ has exactly one zero there. Thus $g$ has a unique fixed point in the open unit disk.
+
 :::
 
-<1>2. If the boundary hypothesis is weakened to $\abs{g(z)}\le1$ on $\abs{z}=1$, the conclusion of part (a) can fail.
+:::
 
-::: {.proof}
+::: pf-step
+
+If the boundary hypothesis is weakened to $\abs{g(z)}\le1$ on $\abs{z}=1$, the conclusion of part (a) can fail.
+
+
+::: pf-proof
+
 Consider
 $$
 g(z)=\frac{z+1}{2}.
@@ -73,15 +85,22 @@ $$
 whose unique solution is $z=1$. Hence $g$ has no fixed point in $\abs{z}<1$. Thus the strict boundary inequality in part (a) cannot be replaced by a non-strict one.
 
 Moreover, uniqueness can also fail under the non-strict hypothesis: the identity map $g(z)=z$ satisfies $\abs{g(z)}=1$ on $\abs{z}=1$ and every point of the disk is fixed.
+
 :::
 
-<1>3. For $\alpha\in\DD$, the map
+:::
+
+::: pf-step
+
+For $\alpha\in\DD$, the map
 $$
 \psi_\alpha(z)=\frac{\alpha-z}{1-\overline\alpha z}
 $$
 is an automorphism of $\DD$ satisfying $\psi_\alpha(\alpha)=0$ and $\psi_\alpha^{-1}=\psi_\alpha$.
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator does not vanish for $\abs{z}<1$, because
 $$
 \abs{\overline\alpha z}<1.
@@ -98,11 +117,18 @@ $$
 \psi_\alpha(\psi_\alpha(z))=z,
 $$
 so $\psi_\alpha$ is an automorphism and is its own inverse.
+
 :::
 
-<1>4. If $f:\DD\to\DD$ is analytic, $f\not\equiv\operatorname{id}$, and $\alpha\in\DD$ is a fixed point of $f$, then $f$ has no second fixed point in $\DD$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f:\DD\to\DD$ is analytic, $f\not\equiv\operatorname{id}$, and $\alpha\in\DD$ is a fixed point of $f$, then $f$ has no second fixed point in $\DD$.
+
+
+::: pf-proof
+
 Suppose, for contradiction, that $\beta\in\DD$ is another fixed point with $\beta\ne\alpha$. Define
 $$
 h
@@ -126,20 +152,31 @@ $$
 h(z)=e^{it}z
 $$
 for some real $t$. Since $h(\gamma)=\gamma$ and $\gamma\ne0$, one has $e^{it}=1$, hence $h=\operatorname{id}$. Conjugating by $\psi_\alpha$ then gives $f=\operatorname{id}$, contradicting the hypothesis. Therefore no second fixed point exists.
+
 :::
 
-<1>5. Consequently, the answer to part (c) is
+:::
+
+::: pf-step
+
+Consequently, the answer to part (c) is
 $$
 \boxed{\text{$f$ cannot have more than one fixed point in $\abs{z}<1$ unless $f\equiv\operatorname{id}$.}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ has a fixed point, step <1>4 shows that it is unique unless $f$ is the identity. If $f$ has no fixed point, the assertion is immediate.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), step <1>2 proves part (b), and step <1>5 proves part (c).
+
 :::
+
 :::

@@ -19,13 +19,18 @@ audit:
 State the global Cauchy Theorem.
 :::
 
-::: {.solution}
-<1>1. The global Cauchy theorem states: let \(U\subseteq\mathbb C\) be open, let \(f:U\to\mathbb C\) be analytic, and let \(\Gamma\) be a cycle in \(U\) that is homologous to zero in \(U\). Then
+::: pf
+
+::: pf-step
+
+The global Cauchy theorem states: let \(U\subseteq\mathbb C\) be open, let \(f:U\to\mathbb C\) be analytic, and let \(\Gamma\) be a cycle in \(U\) that is homologous to zero in \(U\). Then
 \[
 \boxed{\int_\Gamma f(z)\,dz=0.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Here “\(\Gamma\) is homologous to zero in \(U\)” means that its winding number satisfies
 \[
 \operatorname{Ind}(\Gamma,w)=0
@@ -33,11 +38,15 @@ Here “\(\Gamma\) is homologous to zero in \(U\)” means that its winding numb
 \text{for every }w\in\mathbb C\setminus U.
 \]
 Under this hypothesis the global Cauchy theorem asserts precisely the displayed vanishing of the contour integral.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the requested statement of the theorem.
+
 :::
+
 :::

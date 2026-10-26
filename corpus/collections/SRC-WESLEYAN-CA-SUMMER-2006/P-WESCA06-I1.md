@@ -19,7 +19,6 @@ audit:
 Define the winding number of a path $\gamma$ about a point $z\in\mathbb C$.
 :::
 
-::: {.solution}
 Assume
 \[
 \gamma:[a,b]\to\mathbb C
@@ -29,7 +28,11 @@ is a closed piecewise $C^1$ path and
 z\notin\gamma([a,b]).
 \]
 
-<1>1. The winding number, or index, of $\gamma$ about $z$ is
+::: pf
+
+::: pf-step
+
+The winding number, or index, of $\gamma$ about $z$ is
 \[
 \boxed{
 \operatorname{Ind}(\gamma,z)
@@ -40,15 +43,22 @@ z\notin\gamma([a,b]).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard analytic definition of the winding number.
 The denominator never vanishes because
 \[
 z\notin\gamma([a,b]).
 \]
+
 :::
 
-<1>2. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 \[
 \operatorname{Ind}(\gamma,z)
 \]
@@ -61,7 +71,9 @@ divided by
 2\pi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 \gamma(t)-z\ne0,
@@ -104,12 +116,16 @@ so
 2\pi\mathbb Z.
 \]
 Thus the winding number is an integer.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 give the requested definition and its geometric
 interpretation.
+
 :::
+
 :::

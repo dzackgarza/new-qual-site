@@ -24,8 +24,11 @@ P(z)=z^7+z^3+\frac1{16}
 in the closed disk \(|z|\le\frac12\).
 :::
 
-::: {.solution}
-<1>1. On the circle
+::: pf
+
+::: pf-step
+
+On the circle
 $$
 |z|=\frac12,
 $$
@@ -38,7 +41,9 @@ z^7+\frac1{16}
 |z^3|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 |z|=\frac12,
@@ -71,9 +76,14 @@ $$
 \frac18,
 $$
 the desired strict inequality follows.
+
 :::
 
-<1>2. The polynomial $P$ and the monomial
+:::
+
+::: pf-step
+
+The polynomial $P$ and the monomial
 $$
 z^3
 $$
@@ -83,7 +93,9 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 P(z)
@@ -95,28 +107,42 @@ z^7+\frac1{16}
 \right).
 $$
 Step <1>1 gives the strict Rouché inequality on the boundary circle. Hence Rouché's theorem applies.
+
 :::
 
-<1>3. The polynomial $P$ has exactly three zeros in
+:::
+
+::: pf-step
+
+The polynomial $P$ has exactly three zeros in
 $$
 |z|<\frac12,
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 $$
 z^3
 $$
 has a zero of multiplicity $3$ at the origin and no other zeros. Step <1>2 transfers this zero count to $P$.
+
 :::
 
-<1>4. The polynomial $P$ has no zeros on
+:::
+
+::: pf-step
+
+The polynomial $P$ has no zeros on
 $$
 |z|=\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 P(z)=0
@@ -130,9 +156,14 @@ z^7+\frac1{16}
 \right),
 $$
 so the two sides would have equal modulus. This contradicts the strict inequality in step <1>1.
+
 :::
 
-<1>5. Therefore the number of zeros in the closed disk
+:::
+
+::: pf-step
+
+Therefore the number of zeros in the closed disk
 $$
 |z|\le\frac12
 $$
@@ -141,13 +172,19 @@ $$
 \boxed{3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 counts the interior zeros and step <1>4 shows that no additional zeros lie on the boundary.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required answer.
+
 :::
+
 :::

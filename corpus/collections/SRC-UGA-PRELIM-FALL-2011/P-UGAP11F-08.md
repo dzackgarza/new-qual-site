@@ -26,8 +26,11 @@ f(x,y)=x^2-y^2.
 Next compute and draw $\nabla f$ at a representative collection of points in $\mathbb R^2$. Explain how gradients and level sets must be related in general.
 :::
 
-::: {.solution}
-<1>1. The level set
+::: pf
+
+::: pf-step
+
+The level set
 $$
 f^{-1}(c)
 =
@@ -35,7 +38,9 @@ f^{-1}(c)
 $$
 has three different forms according to the sign of $c$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $c>0$, then
 $$
 \frac{x^2}{c}
@@ -85,16 +90,23 @@ f^{-1}(0)
 \{y=-x\}.
 $$
 These descriptions determine the requested representative sketches.
+
 :::
 
-<1>2. The gradient is
+:::
+
+::: pf-step
+
+The gradient is
 $$
 \boxed{
 \nabla f(x,y)
 =(2x,-2y)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 f_x=2x,
@@ -102,9 +114,14 @@ f_x=2x,
 f_y=-2y,
 $$
 the definition of the gradient gives the formula.
+
 :::
 
-<1>3. Representative gradient vectors include
+:::
+
+::: pf-step
+
+Representative gradient vectors include
 $$
 \begin{array}{c|c}
 (x,y)&\nabla f(x,y)\\
@@ -122,13 +139,22 @@ $$
 \nabla f(0,0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the listed points into the formula from step <1>2. These vectors give representative arrows for the gradient sketch.
+
 :::
 
-<1>4. At every regular point of a level set, the gradient is perpendicular to the level set.
+:::
 
-::: {.proof}
+::: pf-step
+
+At every regular point of a level set, the gradient is perpendicular to the level set.
+
+
+::: pf-proof
+
 Let
 $$
 \gamma:(-\varepsilon,\varepsilon)\to\RR^2
@@ -162,11 +188,18 @@ $$
 \nabla f\ne0,
 $$
 the level set is locally a smooth curve, so this means the gradient is a normal vector to that curve.
+
 :::
 
-<1>5. For the present function, the only critical point is the origin.
+:::
 
-::: {.proof}
+::: pf-step
+
+For the present function, the only critical point is the origin.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 \nabla f(x,y)=0
@@ -182,11 +215,15 @@ $$
 y=\pm x,
 $$
 so there is no single tangent line there. This is exactly where the usual nonzero-gradient normal-vector picture fails.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 describe the level sets and gradient field, while steps <1>4--<1>5 establish their general geometric relation and identify the exceptional critical point.
+
 :::
+
 :::

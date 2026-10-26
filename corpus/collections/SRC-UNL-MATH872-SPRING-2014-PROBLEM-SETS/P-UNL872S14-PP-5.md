@@ -20,7 +20,6 @@ Let Y be any finite path-connected graph.
 Show how to compute the simplicial homology groups of Y, and write these groups in terms of the Euler characteristic of Y (see problem (9.B.4) for the definition).
 :::
 
-::: {.solution}
 Let
 \[
 v
@@ -31,7 +30,11 @@ e
 \]
 be the number of edges. Choose an orientation on every edge.
 
-<1>1. The simplicial chain groups are
+::: pf
+
+::: pf-step
+
+The simplicial chain groups are
 \[
 \boxed{
 C_1(Y)\cong\mathbb Z^e,
@@ -41,13 +44,20 @@ C_0(Y)\cong\mathbb Z^v,
 C_n(Y)=0\text{ for }n\ge2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A graph is a \(1\)-dimensional \(\Delta\)-complex. Its \(1\)-simplices are
 the \(e\) oriented edges and its \(0\)-simplices are the \(v\) vertices.
 There are no simplices in higher dimensions.
+
 :::
 
-<1>2. For an oriented edge
+:::
+
+::: pf-step
+
+For an oriented edge
 \[
 \epsilon:u\to w,
 \]
@@ -57,17 +67,26 @@ the simplicial boundary is
 \partial_1\epsilon=w-u}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the degree-one simplicial boundary formula.
+
 :::
 
-<1>3. Every element of
+:::
+
+::: pf-step
+
+Every element of
 \[
 \operatorname{im}\partial_1
 \]
 has total coefficient sum \(0\) in \(C_0(Y)\).
 
-::: {.proof}
+
+::: pf-proof
+
 Each generator boundary
 \[
 w-u
@@ -77,9 +96,14 @@ has coefficient sum
 1-1=0.
 \]
 The same is true for every integer linear combination of such boundaries.
+
 :::
 
-<1>4. Define the augmentation homomorphism
+:::
+
+::: pf-step
+
+Define the augmentation homomorphism
 \[
 \varepsilon:C_0(Y)\to\mathbb Z
 \]
@@ -93,11 +117,18 @@ by
 \sum_{i=1}^{v}n_i}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a homomorphism of free abelian groups.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \operatorname{im}\partial_1
@@ -105,22 +136,36 @@ This is a homomorphism of free abelian groups.
 \ker\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>3.
+
 :::
 
-<1>6. Choose a spanning tree
+:::
+
+::: pf-step
+
+Choose a spanning tree
 \[
 T\subseteq Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every finite connected graph has a spanning tree: start with one vertex and
 successively add an edge leading to a new vertex until all vertices have been
 included, omitting any edge that would create a cycle.
+
 :::
 
-<1>7. Fix a root vertex
+:::
+
+::: pf-step
+
+Fix a root vertex
 \[
 v_0\in T.
 \]
@@ -133,7 +178,9 @@ lies in
 \operatorname{im}\partial_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In the tree \(T\), there is a unique edge path
 \[
 v_0=w_0,w_1,\dots,w_m=v_i.
@@ -147,9 +194,14 @@ edge boundaries telescopes:
 v_i-v_0.
 \]
 Hence \(v_i-v_0\) is a \(1\)-boundary.
+
 :::
 
-<1>8. The elements
+:::
+
+::: pf-step
+
+The elements
 \[
 v_1-v_0,\dots,v_{v-1}-v_0
 \]
@@ -158,7 +210,9 @@ generate
 \ker\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 z
@@ -191,9 +245,14 @@ n_iv_i
 n_i(v_i-v_0).
 \end{aligned}
 \]
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{im}\partial_1
@@ -201,12 +260,19 @@ n_i(v_i-v_0).
 \ker\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives one inclusion. Steps <1>7 and <1>8 show that every generator
 of \(\ker\varepsilon\) lies in \(\operatorname{im}\partial_1\).
+
 :::
 
-<1>10. The group
+:::
+
+::: pf-step
+
+The group
 \[
 \ker\varepsilon
 \]
@@ -215,7 +281,9 @@ is free abelian of rank
 \boxed{v-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The elements
 \[
 v_i-v_0,
@@ -224,23 +292,35 @@ v_i-v_0,
 \]
 form a basis: they generate by step <1>8, and linear independence follows
 by comparing coefficients of the distinct vertices \(v_i\).
+
 :::
 
-<1>11. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \operatorname{rank}\partial_1=v-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9,
 \[
 \operatorname{im}\partial_1=\ker\varepsilon,
 \]
 whose rank is \(v-1\) by step <1>10.
+
 :::
 
-<1>12. Since
+:::
+
+::: pf-step
+
+Since
 \[
 C_1(Y)\cong\mathbb Z^e,
 \]
@@ -249,7 +329,9 @@ the kernel of \(\partial_1\) is free abelian of rank
 \boxed{e-v+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The kernel of a homomorphism between free abelian groups is free. Rank-nullity
 over \(\mathbb Q\) gives
 \[
@@ -259,9 +341,14 @@ e-(v-1)
 =
 e-v+1.
 \]
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 H_1(Y)
@@ -271,7 +358,9 @@ H_1(Y)
 \mathbb Z^{e-v+1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are no \(2\)-simplices, so
 \[
 \operatorname{im}\partial_2=0.
@@ -283,9 +372,14 @@ H_1(Y)
 \ker\partial_1.
 \]
 Apply step <1>12.
+
 :::
 
-<1>14. Also
+:::
+
+::: pf-step
+
+Also
 \[
 \boxed{
 H_0(Y)
@@ -293,7 +387,9 @@ H_0(Y)
 \mathbb Z}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 H_0(Y)
@@ -315,34 +411,53 @@ By the first isomorphism theorem,
 \mathbb Z.
 \]
 This also reflects path connectedness.
+
 :::
 
-<1>15. For every \(n\ge2\),
+:::
+
+::: pf-step
+
+For every \(n\ge2\),
 \[
 \boxed{
 H_n(Y)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The chain groups \(C_n(Y)\) vanish in these dimensions by step <1>1.
+
 :::
 
-<1>16. The Euler characteristic of \(Y\) is
+:::
+
+::: pf-step
+
+The Euler characteristic of \(Y\) is
 \[
 \boxed{
 \chi(Y)=v-e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A graph has only \(0\)- and \(1\)-cells, so
 \[
 \chi(Y)
 =
 v-e.
 \]
+
 :::
 
-<1>17. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 e-v+1
@@ -350,14 +465,21 @@ e-v+1
 1-\chi(Y)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange
 \[
 \chi(Y)=v-e.
 \]
+
 :::
 
-<1>18. Therefore the simplicial homology groups are
+:::
+
+::: pf-step
+
+Therefore the simplicial homology groups are
 \[
 \boxed{
 H_n^{\mathrm{simpl}}(Y)
@@ -369,29 +491,42 @@ H_n^{\mathrm{simpl}}(Y)
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>13--<1>17.
+
 :::
 
-<1>19. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 1-\chi(Y)\ge0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 It is the rank of the free abelian group \(H_1(Y)\) from step <1>18.
 Equivalently, a connected finite graph satisfies
 \[
 e\ge v-1
 \]
 because it contains a spanning tree with \(v-1\) edges.
+
 :::
 
-<1>20. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>18 gives the requested homology groups in terms of the Euler
 characteristic.
+
 :::
+
 :::

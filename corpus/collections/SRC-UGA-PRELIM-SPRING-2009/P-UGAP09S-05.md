@@ -25,10 +25,15 @@ is a subspace of $W$ and that
 \]
 :::
 
-::: {.solution}
-<1>1. The zero vector of $W$ belongs to $\operatorname{Range}(T)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The zero vector of $W$ belongs to $\operatorname{Range}(T)$.
+
+
+::: pf-proof
+
 Since $T$ is linear,
 \[
 T(0_V)=0_W.
@@ -37,11 +42,18 @@ Thus
 \[
 0_W\in\operatorname{Range}(T).
 \]
+
 :::
 
-<1>2. The range is closed under linear combinations.
+:::
 
-::: {.proof}
+::: pf-step
+
+The range is closed under linear combinations.
+
+
+::: pf-proof
+
 Let
 \[
 y_1=T(x_1),
@@ -58,18 +70,30 @@ Hence
 \[
 ay_1+by_2\in\operatorname{Range}(T).
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\operatorname{Range}(T)\text{ is a subspace of }W}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 verify the subspace criteria.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 \{v_1,\dots,v_n\}
 \]
@@ -79,7 +103,9 @@ is a basis of $V$, then
 \]
 spans $\operatorname{Range}(T)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $y\in\operatorname{Range}(T)$. Then
 \[
 y=T(x)
@@ -96,14 +122,21 @@ y
 =\sum_{i=1}^n c_i T(v_i).
 \]
 Thus every vector in the range lies in the span of the listed images.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\dim\operatorname{Range}(T)\le\dim V}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 n=\dim V.
@@ -114,12 +147,16 @@ most $n$. Hence
 \[
 \dim\operatorname{Range}(T)\le n=\dim V.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the subspace assertion and step <1>5 proves the dimension
 bound.
+
 :::
+
 :::

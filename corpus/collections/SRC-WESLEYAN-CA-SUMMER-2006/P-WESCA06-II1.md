@@ -26,8 +26,11 @@ f_3(z)=\sqrt z.
 \]
 :::
 
-::: {.solution}
-<1>1. The only finite singularity of
+::: pf
+
+::: pf-step
+
+The only finite singularity of
 \[
 f_1(z)
 =
@@ -38,7 +41,9 @@ is
 z=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The numerator and denominator are entire, and the denominator vanishes only
 at
 \[
@@ -48,16 +53,23 @@ Thus $f_1$ is holomorphic on
 \[
 \mathbb C\setminus\{0\}.
 \]
+
 :::
 
-<1>2. The singularity of $f_1$ at $0$ is removable, with removable value
+:::
+
+::: pf-step
+
+The singularity of $f_1$ at $0$ is removable, with removable value
 \[
 \boxed{
 f_1(0)=-\frac12.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor expansion is
 \[
 \cos z
@@ -89,9 +101,14 @@ The right-hand side extends holomorphically to $z=0$ with value
 \[
 -\frac12.
 \]
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 \[
 f_2(z)
 =
@@ -102,7 +119,9 @@ is holomorphic on
 \mathbb C\setminus\{0,1\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 e^{1/z^2}
@@ -119,15 +138,22 @@ vanishes only at
 \[
 z=1.
 \]
+
 :::
 
-<1>4. The point
+:::
+
+::: pf-step
+
+The point
 \[
 z=1
 \]
 is a simple pole of $f_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The numerator
 \[
 e^{1/z^2}
@@ -151,15 +177,22 @@ where
 g(1)=e\ne0.
 \]
 Hence $z=1$ is a pole of order $1$.
+
 :::
 
-<1>5. The point
+:::
+
+::: pf-step
+
+The point
 \[
 z=0
 \]
 is an essential singularity of $f_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The Laurent expansion
 \[
 e^{1/z^2}
@@ -182,9 +215,14 @@ is holomorphic and nonzero near $0$.
 Multiplication by a holomorphic nonvanishing factor cannot turn an essential
 singularity into a pole or a removable singularity.
 Hence $f_2$ is also essential at $0$.
+
 :::
 
-<1>6. The expression
+:::
+
+::: pf-step
+
+The expression
 \[
 f_3(z)=\sqrt z
 \]
@@ -193,7 +231,9 @@ does not define a single-valued holomorphic function on
 \mathbb C\setminus\{0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose there were a holomorphic function
 \[
 g
@@ -246,9 +286,14 @@ a contradiction.
 
 Therefore no single-valued holomorphic square root exists on a punctured
 neighborhood of $0$.
+
 :::
 
-<1>7. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 z=0
@@ -257,7 +302,9 @@ z=0
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An isolated singularity requires a single-valued holomorphic function on a
 full punctured disk around the point.
 Step <1>6 proves that no such branch of
@@ -273,9 +320,14 @@ On any slit domain, for example
 one may choose a holomorphic branch of the square root, but then $0$ lies on
 the boundary of the branch domain rather than being an isolated singularity
 in that domain.
+
 :::
 
-<1>8. The complete classification is therefore
+:::
+
+::: pf-step
+
+The complete classification is therefore
 \[
 \boxed{
 \begin{array}{c|c}
@@ -295,13 +347,19 @@ in that domain.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>1--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives all requested classifications.
+
 :::
+
 :::

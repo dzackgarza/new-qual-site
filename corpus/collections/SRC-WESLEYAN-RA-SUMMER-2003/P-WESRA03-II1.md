@@ -24,7 +24,6 @@ A\longmapsto \int_A f\,dm
 is a measure.
 :::
 
-::: {.solution}
 Define
 \[
 \mu_f(A)
@@ -38,12 +37,18 @@ for every Borel set
 A\in\mathcal B(\mathbb R).
 \]
 
-<1>1. For every Borel set \(A\),
+::: pf
+
+::: pf-step
+
+For every Borel set \(A\),
 \[
 \boxed{\mu_f(A)\in[0,\infty]}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f\ge0
@@ -58,14 +63,21 @@ the function
 \]
 is nonnegative and measurable. Its Lebesgue integral therefore lies in
 \([0,\infty]\).
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\mu_f(\varnothing)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The indicator of the empty set is the zero function:
 \[
 \mathbf 1_{\varnothing}=0.
@@ -78,9 +90,14 @@ Hence
 =
 0.
 \]
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 A_1,A_2,\dots
 \]
@@ -89,11 +106,18 @@ be pairwise disjoint Borel sets, and set
 A=\bigcup_{n=1}^{\infty}A_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A countable union of Borel sets is Borel, so \(A\in\mathcal B(\mathbb R)\).
+
 :::
 
-<1>4. For every \(N\ge1\),
+:::
+
+::: pf-step
+
+For every \(N\ge1\),
 \[
 \boxed{
 \mathbf 1_{\bigcup_{n=1}^{N}A_n}
@@ -101,13 +125,20 @@ A countable union of Borel sets is Borel, so \(A\in\mathcal B(\mathbb R)\).
 \sum_{n=1}^{N}\mathbf 1_{A_n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because the sets \(A_n\) are pairwise disjoint, at each point \(x\) at most
 one of the indicators \(\mathbf 1_{A_n}(x)\) is equal to \(1\). Thus the sum
 is \(1\) exactly when \(x\) belongs to the finite union.
+
 :::
 
-<1>5. Multiplying by \(f\),
+:::
+
+::: pf-step
+
+Multiplying by \(f\),
 \[
 \boxed{
 \mathbf 1_{\bigcup_{n=1}^{N}A_n}f
@@ -115,12 +146,19 @@ is \(1\) exactly when \(x\) belongs to the finite union.
 \sum_{n=1}^{N}\mathbf 1_{A_n}f}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity from step <1>4 by the nonnegative measurable function
 \(f\).
+
 :::
 
-<1>6. The sequence
+:::
+
+::: pf-step
+
+The sequence
 \[
 g_N
 =
@@ -131,7 +169,9 @@ is nondecreasing and converges pointwise to
 \mathbf 1_Af.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The finite unions
 \[
 \bigcup_{n=1}^{N}A_n
@@ -144,9 +184,14 @@ increase with \(N\), so their indicators increase pointwise to
 \]
 Since \(f\ge0\), multiplication by \(f\) preserves the inequalities and the
 pointwise limit.
+
 :::
 
-<1>7. By the monotone convergence theorem,
+:::
+
+::: pf-step
+
+By the monotone convergence theorem,
 \[
 \mu_f(A)
 =
@@ -154,7 +199,9 @@ pointwise limit.
 \int_{\mathbb R}g_N\,dm.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives a monotone increasing sequence of nonnegative measurable
 functions converging pointwise to \(\mathbf 1_Af\). Apply the monotone
 convergence theorem:
@@ -163,16 +210,23 @@ convergence theorem:
 =
 \lim_{N\to\infty}\int_{\mathbb R}g_N\,dm.
 \]
+
 :::
 
-<1>8. For every \(N\),
+:::
+
+::: pf-step
+
+For every \(N\),
 \[
 \int_{\mathbb R}g_N\,dm
 =
 \sum_{n=1}^{N}\mu_f(A_n).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5 and finite additivity of the Lebesgue integral,
 \[
 \begin{aligned}
@@ -187,9 +241,14 @@ By step <1>5 and finite additivity of the Lebesgue integral,
 \sum_{n=1}^{N}\mu_f(A_n).
 \end{aligned}
 \]
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \mu_f\!\left(
@@ -199,7 +258,9 @@ By step <1>5 and finite additivity of the Lebesgue integral,
 \sum_{n=1}^{\infty}\mu_f(A_n)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>7 and <1>8:
 \[
 \begin{aligned}
@@ -212,9 +273,14 @@ Combine steps <1>7 and <1>8:
 \end{aligned}
 \]
 The equality is valid in \([0,\infty]\).
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 A\longmapsto\int_A f\,dm
@@ -225,15 +291,21 @@ is a measure on
 (\mathbb R,\mathcal B(\mathbb R)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 the set function is nonnegative, by step <1>2 it vanishes on
 the empty set, and by step <1>9 it is countably additive on pairwise disjoint
 Borel sets. These are exactly the defining axioms of a measure.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

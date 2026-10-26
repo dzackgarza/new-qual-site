@@ -24,8 +24,11 @@ L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu).
 (b) Give a measure space and a function $f$ such that $f\in L^4$ but $f\notin L^3$.
 :::
 
-::: {.solution}
-<1>1. If $\mu(X)<\infty$ and $f\in L^4(X)$, then
+::: pf
+
+::: pf-step
+
+If $\mu(X)<\infty$ and $f\in L^4(X)$, then
 \[
 \int_X |f|^3\,d\mu
 \le
@@ -33,7 +36,9 @@ L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu).
 \mu(X)^{1/4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Hölder's inequality with conjugate exponents
 \[
 \frac43
@@ -48,23 +53,35 @@ to the functions $|f|^3$ and $1$:
 \left(\int_X1^4\,d\mu\right)^{1/4}.
 \]
 This is exactly the displayed inequality.
+
 :::
 
-<1>2. Therefore, when $\mu(X)<\infty$,
+:::
+
+::: pf-step
+
+Therefore, when $\mu(X)<\infty$,
 \[
 \boxed{L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $f\in L^4$, the first factor in step <1>1 is finite, and the second is
 finite because $\mu(X)<\infty$. Hence
 \[
 \int_X|f|^3\,d\mu<\infty,
 \]
 so $f\in L^3$.
+
 :::
 
-<1>3. On the infinite-measure space
+:::
+
+::: pf-step
+
+On the infinite-measure space
 \[
 X=(1,\infty)
 \]
@@ -77,7 +94,9 @@ satisfies
 \boxed{f\in L^4(X)\setminus L^3(X)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the fourth power,
 \[
 \int_1^\infty |f(x)|^4\,dx
@@ -91,12 +110,16 @@ For the third power,
 =\infty.
 \]
 Thus $f\in L^4$ but $f\notin L^3$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>3 gives the counterexample required in
 part (b).
+
 :::
+
 :::

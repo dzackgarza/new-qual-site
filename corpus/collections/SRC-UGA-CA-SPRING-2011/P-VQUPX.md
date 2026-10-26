@@ -26,8 +26,11 @@ b. Apply (a) to show that the above Taylor series converges uniformly on every b
 c. Determine those functions $f$ for which the above Taylor series converges uniformly on all of $\CC$.
 :::
 
-::: {.solution}
-<1>1. For every $R>0$ and every $n\ge0$,
+::: pf
+
+::: pf-step
+
+For every $R>0$ and every $n\ge0$,
 $$
 \boxed{
 a_n=\frac{1}{2\pi i}
@@ -35,7 +38,9 @@ a_n=\frac{1}{2\pi i}
 \frac{f(\zeta)}{\zeta^{n+1}}\,d\zeta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is entire, it is holomorphic on a neighborhood of the closed
 disk $|z|\le R$. Cauchy's formula for derivatives gives
 $$
@@ -45,16 +50,23 @@ f^{(n)}(0)
 \frac{f(\zeta)}{\zeta^{n+1}}\,d\zeta.
 $$
 Since $a_n=f^{(n)}(0)/n!$, the displayed coefficient formula follows.
+
 :::
 
-<1>2. For every $R>0$,
+:::
+
+::: pf-step
+
+For every $R>0$,
 $$
 |a_n|\le \frac{M_R}{R^n},
 \qquad
 M_R=\max_{|\zeta|=R}|f(\zeta)|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the ML estimate to the integral in step <1>1:
 $$
 |a_n|
@@ -64,12 +76,19 @@ $$
 \frac{M_R}{R^{n+1}}
 =\frac{M_R}{R^n}.
 $$
+
 :::
 
-<1>3. The Taylor series of $f$ converges uniformly on every bounded
+:::
+
+::: pf-step
+
+The Taylor series of $f$ converges uniformly on every bounded
 subset of $\CC$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $E\subset\CC$ be bounded. Choose $r>0$ with
 $$
 E\subseteq\{z:|z|\le r\},
@@ -86,12 +105,19 @@ M_R\left(\frac rR\right)^n
 $$
 converges because $r/R<1$. Hence the Weierstrass $M$-test shows that
 $\sum a_nz^n$ converges uniformly on $E$.
+
 :::
 
-<1>4. If the Taylor series converges uniformly on all of $\CC$, then
+:::
+
+::: pf-step
+
+If the Taylor series converges uniformly on all of $\CC$, then
 $f$ is a polynomial.
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence of the series implies that its terms converge
 uniformly to zero. Therefore there is $N$ such that, for every $n\ge N$,
 $$
@@ -104,31 +130,49 @@ $$
 $$
 contradicting the displayed uniform bound. Hence $a_n=0$ for all
 $n\ge N$, so the Taylor series is finite and $f$ is a polynomial.
+
 :::
 
-<1>5. Conversely, the Taylor series of every polynomial converges
+:::
+
+::: pf-step
+
+Conversely, the Taylor series of every polynomial converges
 uniformly on all of $\CC$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is a polynomial of degree $d$, then $a_n=0$ for $n>d$.
 Consequently every partial sum of order at least $d$ is exactly $f$.
 Thus the partial sums converge uniformly, indeed eventually identically,
 on all of $\CC$.
+
 :::
 
-<1>6. Therefore the answer to part (c) is
+:::
+
+::: pf-step
+
+Therefore the answer to part (c) is
 $$
 \boxed{\text{exactly the polynomials}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 proves necessity, and step <1>5 proves sufficiency.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>3 proves part (b), and step <1>6
 answers part (c).
+
 :::
+
 :::

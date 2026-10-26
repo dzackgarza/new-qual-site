@@ -31,8 +31,11 @@ Let $V$ be a real vector space.
 (f) If $X,Y$ are real Banach spaces and $T:X\to Y$ is a continuous bijective linear map, prove $T^{-1}$ is linear and determine whether $T^{-1}$ is continuous, giving a reason.
 :::
 
-::: {.solution}
-<1>1. A **norm** on $V$ is a function
+::: pf
+
+::: pf-step
+
+A **norm** on $V$ is a function
 \[
 \|\cdot\|:V\to[0,\infty)
 \]
@@ -61,12 +64,19 @@ a\in\mathbb R,
    \|x\|+\|y\|.
    \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are respectively positive definiteness, absolute homogeneity, and the
 triangle inequality.
+
 :::
 
-<1>2. The metric induced by a norm is
+:::
+
+::: pf-step
+
+The metric induced by a norm is
 \[
 \boxed{
 d(x,y)
@@ -75,30 +85,46 @@ d(x,y)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 We verify the metric axioms in the next four steps.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 d(x,y)\ge0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Norms take values in
 \[
 [0,\infty).
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 d(x,y)=0
 \quad\Longleftrightarrow\quad
 x=y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By positive definiteness,
 \[
 d(x,y)=0
@@ -109,14 +135,21 @@ x-y=0
 \Longleftrightarrow
 x=y.
 \]
+
 :::
 
-<1>5. The metric is symmetric:
+:::
+
+::: pf-step
+
+The metric is symmetric:
 \[
 d(x,y)=d(y,x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using absolute homogeneity,
 \[
 \begin{aligned}
@@ -131,16 +164,23 @@ d(y,x)
 d(x,y).
 \end{aligned}
 \]
+
 :::
 
-<1>6. The triangle inequality holds:
+:::
+
+::: pf-step
+
+The triangle inequality holds:
 \[
 d(x,z)
 \le
 d(x,y)+d(y,z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 x-z
@@ -161,27 +201,46 @@ d(x,z)
 d(x,y)+d(y,z).
 \end{aligned}
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 d(x,y)=\|x-y\|
 \]
 is a metric.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>6 verify all metric axioms.
+
 :::
 
-<1>8. A **Banach space** is a normed vector space that is complete with
+:::
+
+::: pf-step
+
+A **Banach space** is a normed vector space that is complete with
 respect to the metric induced by its norm.
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, every Cauchy sequence in the norm converges in norm to a point
 of the space.
+
 :::
 
-<1>9. Let
+:::
+
+::: pf-step
+
+Let
 \[
 c_{00}
 \]
@@ -201,7 +260,9 @@ c_{00}
 \]
 is a normed vector space that is not Banach.
 
-::: {.proof}
+
+::: pf-proof
+
 The displayed formula is the usual
 \[
 \ell^2
@@ -283,9 +344,14 @@ metric space
 \]
 would force its limit to be $x$, impossible.
 Thus $c_{00}$ is incomplete.
+
 :::
 
-<1>10. **Uniform Boundedness Theorem.**
+:::
+
+::: pf-step
+
+**Uniform Boundedness Theorem.**
 
 Let
 \[
@@ -321,13 +387,20 @@ Then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Banach--Steinhaus theorem.
 The essential completeness hypothesis is on the domain $X$.
 The codomain need only be normed.
+
 :::
 
-<1>11. Now let
+:::
+
+::: pf-step
+
+Now let
 \[
 T:X\to Y
 \]
@@ -338,7 +411,9 @@ T^{-1}:Y\to X
 \]
 is linear.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 y_1,y_2\in Y
@@ -374,9 +449,14 @@ ax_1+bx_2
 aT^{-1}(y_1)+bT^{-1}(y_2).
 \]
 Hence $T^{-1}$ is linear.
+
 :::
 
-<1>12. If, in addition,
+:::
+
+::: pf-step
+
+If, in addition,
 \[
 X
 \quad\text{and}\quad
@@ -388,7 +468,9 @@ T^{-1}
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 By the Open Mapping Theorem, every surjective continuous linear map between
 Banach spaces is open.
 Since $T$ is bijective, it is surjective, so
@@ -416,9 +498,14 @@ Therefore
 T^{-1}:Y\to X
 \]
 is continuous.
+
 :::
 
-<1>13. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 T^{-1}
@@ -426,15 +513,21 @@ T^{-1}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Linearity is step <1>11 and continuity is step <1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 answer parts (a)--(b), step <1>8 answers part (c),
 step <1>9 answers part (d), step <1>10 answers part (e), and
 steps <1>11--<1>13 answer part (f).
+
 :::
+
 :::

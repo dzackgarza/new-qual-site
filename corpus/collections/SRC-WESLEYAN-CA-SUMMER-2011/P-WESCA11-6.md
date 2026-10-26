@@ -19,47 +19,78 @@ audit:
 State Cauchy's theorem for triangles.
 :::
 
-::: {.solution}
-<1>1. Let \(T\subset\mathbb C\) be a closed triangle, including its
+::: pf
+
+::: pf-step
+
+Let \(T\subset\mathbb C\) be a closed triangle, including its
 interior, and let \(U\subset\mathbb C\) be an open set containing \(T\).
 
-::: {.proof}
+
+::: pf-proof
+
 These are the geometric hypotheses in the triangle form of Cauchy's
 theorem.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 f:U\to\mathbb C
 \]
 is holomorphic.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the analytic hypothesis.
+
 :::
 
-<1>3. Orient the boundary
+:::
+
+::: pf-step
+
+Orient the boundary
 \[
 \partial T
 \]
 positively, that is, counterclockwise.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard orientation convention for contour integration around
 a planar region.
+
 :::
 
-<1>4. Cauchy's theorem for triangles states that
+:::
+
+::: pf-step
+
+Cauchy's theorem for triangles states that
 \[
 \boxed{
 \int_{\partial T}f(z)\,dz=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the theorem requested in the problem.
+
 :::
 
-<1>5. Equivalently, if the three oriented sides of the triangle are
+:::
+
+::: pf-step
+
+Equivalently, if the three oriented sides of the triangle are
 \[
 \gamma_1,\gamma_2,\gamma_3,
 \]
@@ -74,14 +105,20 @@ then
 =0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The positively oriented boundary contour is the concatenation of the three
 oriented sides.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the requested statement.
+
 :::
+
 :::

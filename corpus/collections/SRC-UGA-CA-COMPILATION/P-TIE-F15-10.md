@@ -20,16 +20,21 @@ audit:
 Let f be entire and suppose that $\operatorname* { l i m } _ { z \to \infty } f ( z ) = \infty$ . Show that f is a polynomial.
 :::
 
-::: {.solution}
 Define
 $$
 g(w)\coloneqq f(1/w)
 $$
 for $w\ne0$.
 
-<1>1. The point $w=0$ is a pole of $g$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The point $w=0$ is a pole of $g$.
+
+
+::: pf-proof
+
 The function $g$ is holomorphic on a punctured neighborhood of $0$, because $f$ is entire. Moreover,
 $$
 \abs{g(w)}
@@ -38,19 +43,31 @@ $$
 \longrightarrow\infty
 $$
 as $w\to0$, since $1/w\to\infty$. Therefore $0$ is a pole of $g$.
+
 :::
 
-<1>2. There exists an integer $m\ge0$ such that
+:::
+
+::: pf-step
+
+There exists an integer $m\ge0$ such that
 $$
 w^m g(w)
 $$
 extends holomorphically to $w=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining local property of a pole of finite order. If the pole has order $m$, then $w^m g(w)$ extends holomorphically across $0$ with nonzero value there.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 f(z)=\sum_{n=0}^{\infty}c_nz^n,
 $$
@@ -60,7 +77,9 @@ c_n=0
 $$
 for every $n>m$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is entire, its Taylor series at $0$ converges for every $z\in\CC$. For $w\ne0$,
 $$
 g(w)
@@ -76,11 +95,18 @@ w^mg(w)
 \sum_{n=0}^{\infty}c_nw^{m-n}.
 $$
 By step <1>2, the left-hand side is holomorphic at $0$. A Laurent expansion of a holomorphic function at $0$ has no negative powers. Hence every coefficient of $w^{m-n}$ with $m-n<0$ must vanish. Therefore $c_n=0$ for all $n>m$.
+
 :::
 
-<1>4. The function $f$ is a polynomial.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is a polynomial.
+
+
+::: pf-proof
+
 By step <1>3,
 $$
 \boxed{
@@ -88,11 +114,15 @@ f(z)=\sum_{n=0}^{m}c_nz^n.
 }
 $$
 This is a polynomial of degree at most $m$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

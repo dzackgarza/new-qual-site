@@ -23,14 +23,19 @@ f\circ g=f\circ h,
 then $g=h$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 x\in A
 \]
 be arbitrary.
 
-::: {.proof}
+
+::: pf-proof
+
 To prove equality of functions
 \[
 g=h,
@@ -40,9 +45,14 @@ it suffices to prove
 g(x)=h(x)
 \]
 for every $x\in A$.
+
 :::
 
-<1>2. The hypothesis
+:::
+
+::: pf-step
+
+The hypothesis
 \[
 f\circ g=f\circ h
 \]
@@ -51,16 +61,25 @@ gives
 f(g(x))=f(h(x)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the two equal functions at the chosen point $x$.
+
 :::
 
-<1>3. Since $f$ is injective,
+:::
+
+::: pf-step
+
+Since $f$ is injective,
 \[
 g(x)=h(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Injectivity means
 \[
 f(a)=f(b)
@@ -74,23 +93,34 @@ a=g(x),
 b=h(x),
 \]
 using step <1>2.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 g=h.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The point $x\in A$ was arbitrary, so step <1>3 holds for every $x$.
 Thus the two functions agree pointwise.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the desired conclusion.
+
 :::
+
 :::

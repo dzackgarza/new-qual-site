@@ -24,20 +24,30 @@ v(z)=u(z)^2
 Show that $f$ is constant on $D$.
 :::
 
-::: {.solution}
-<1>1. Since $f=u+iv$ is analytic, the Cauchy--Riemann equations give
+::: pf
+
+::: pf-step
+
+Since $f=u+iv$ is analytic, the Cauchy--Riemann equations give
 \[
 u_x=v_y,
 \qquad
 u_y=-v_x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The real and imaginary parts of a holomorphic function are continuously
 differentiable and satisfy the Cauchy--Riemann equations.
+
 :::
 
-<1>2. Since
+:::
+
+::: pf-step
+
+Since
 \[
 v=u^2,
 \]
@@ -48,15 +58,22 @@ v_x=2u,u_x,
 v_y=2u,u_y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the identity
 \[
 v(x,y)=u(x,y)^2
 \]
 with respect to $x$ and $y$.
+
 :::
 
-<1>3. Combining steps <1>1 and <1>2 gives
+:::
+
+::: pf-step
+
+Combining steps <1>1 and <1>2 gives
 \[
 u_x=2u,u_y
 \]
@@ -65,7 +82,9 @@ and
 u_y=-2u,u_x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 v_y=2u,u_y
@@ -82,15 +101,22 @@ into
 \[
 u_y=-v_x.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 u_x=0
 \]
 throughout $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the second equation of step <1>3 into the first:
 \[
 u_x
@@ -111,15 +137,22 @@ for real-valued $u$, it follows that
 \[
 u_x=0.
 \]
+
 :::
 
-<1>5. One also has
+:::
+
+::: pf-step
+
+One also has
 \[
 u_y=0
 \]
 throughout $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Use the second equation of step <1>3:
 \[
 u_y
@@ -134,11 +167,18 @@ so
 \[
 u_y=0.
 \]
+
 :::
 
-<1>6. The function $u$ is constant on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $u$ is constant on $D$.
+
+
+::: pf-proof
+
 The gradient of $u$ vanishes identically:
 \[
 \nabla u
@@ -149,19 +189,31 @@ The gradient of $u$ vanishes identically:
 \]
 Because $D$ is a domain, hence connected and path-connected, $u$ is constant
 along every path in $D$ and therefore constant on $D$.
+
 :::
 
-<1>7. The function $v$ is constant on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $v$ is constant on $D$.
+
+
+::: pf-proof
+
 By hypothesis,
 \[
 v=u^2.
 \]
 Since $u$ is constant by step <1>6, so is $v$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f=u+iv
@@ -169,13 +221,19 @@ f=u+iv
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both its real and imaginary parts are constant by steps <1>6--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the desired conclusion.
+
 :::
+
 :::

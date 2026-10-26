@@ -21,8 +21,11 @@ Use the definition of a limit to show that
 \]
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 \[
 x\ne\pm1,
 \]
@@ -38,7 +41,9 @@ one has
 {3|x^2-1|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 \begin{aligned}
@@ -57,9 +62,14 @@ Compute
 \end{aligned}
 \]
 Take absolute values.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 |x-2|<\frac12,
 \]
@@ -72,7 +82,9 @@ and
 |x^2-1|>\frac54.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inequality
 \[
 |x-2|<\frac12
@@ -108,9 +120,14 @@ Since this quantity is positive,
 >
 \frac54.
 \]
+
 :::
 
-<1>3. Under the same restriction,
+:::
+
+::: pf-step
+
+Under the same restriction,
 \[
 \left|
 \frac1{x^2-1}
@@ -121,7 +138,9 @@ Since this quantity is positive,
 \frac65|x-2|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the bounds from step <1>2 into step <1>1:
 \[
 \begin{aligned}
@@ -140,9 +159,14 @@ Insert the bounds from step <1>2 into step <1>1:
 \frac65|x-2|.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \varepsilon>0
 \]
@@ -160,7 +184,9 @@ Choose
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This choice ensures both:
 
 1. the denominator-control hypothesis
@@ -173,9 +199,14 @@ This choice ensures both:
    <
    \varepsilon.
    \]
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 0<|x-2|<\delta,
 \]
@@ -190,7 +221,9 @@ then
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \delta\le\frac12,
@@ -219,9 +252,14 @@ so
 <
 \varepsilon.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{x\to2}
@@ -231,17 +269,23 @@ so
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 is exactly the
 \[
 \varepsilon\text{--}\delta
 \]
 definition of the limit.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the desired conclusion.
+
 :::
+
 :::

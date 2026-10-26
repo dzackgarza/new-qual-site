@@ -24,7 +24,6 @@ Suppose \(f\) is analytic on the punctured unit disk \(\mathbb D\setminus\{0\}\)
 Prove that \(f\) has a removable singularity at \(0\).
 :::
 
-::: {.solution}
 Define the Cayley transform
 $$
 g(z)
@@ -32,9 +31,15 @@ g(z)
 \frac{f(z)-1}{f(z)+1}.
 $$
 
-<1>1. The denominator $f(z)+1$ never vanishes on $\mathbb D\setminus\{0\}$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The denominator $f(z)+1$ never vanishes on $\mathbb D\setminus\{0\}$.
+
+
+::: pf-proof
+
 If
 $$
 f(z)+1=0,
@@ -47,14 +52,21 @@ whose real part is $-1$, contradicting
 $$
 \operatorname{Re}f(z)>0.
 $$
+
 :::
 
-<1>2. The function $g$ is holomorphic on $\mathbb D\setminus\{0\}$ and satisfies
+:::
+
+::: pf-step
+
+The function $g$ is holomorphic on $\mathbb D\setminus\{0\}$ and satisfies
 $$
 \boxed{|g(z)|<1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Holomorphicity follows from step <1>1. Write
 $$
 w=f(z).
@@ -82,11 +94,18 @@ $$
 <1.
 $$
 Thus $|g(z)|<1$.
+
 :::
 
-<1>3. The singularity of $g$ at $0$ is removable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The singularity of $g$ at $0$ is removable.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 |g(z)|<1
@@ -95,14 +114,21 @@ throughout the punctured disk. Thus $g$ is bounded near $0$. Riemann's removable
 $$
 \widetilde g:\mathbb D\to\CC.
 $$
+
 :::
 
-<1>4. The extended value satisfies
+:::
+
+::: pf-step
+
+The extended value satisfies
 $$
 \boxed{|\widetilde g(0)|<1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Continuity of $\widetilde g$ and step <1>2 give
 $$
 |\widetilde g(0)|\le1.
@@ -121,9 +147,14 @@ Hence
 $$
 |\widetilde g(0)|<1.
 $$
+
 :::
 
-<1>5. The function
+:::
+
+::: pf-step
+
+The function
 $$
 \widetilde f(z)
 \coloneqq
@@ -132,7 +163,9 @@ $$
 $$
 is holomorphic in a neighborhood of $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 \widetilde g(0)\ne1.
@@ -142,14 +175,21 @@ $$
 1-\widetilde g(z)\ne0.
 $$
 Thus the displayed quotient is holomorphic there.
+
 :::
 
-<1>6. On the punctured disk,
+:::
+
+::: pf-step
+
+On the punctured disk,
 $$
 \widetilde f=f.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\ne0$,
 $$
 \widetilde g(z)=g(z)
@@ -165,17 +205,28 @@ f(z)
 =
 \widetilde f(z).
 $$
+
 :::
 
-<1>7. Therefore the singularity of $f$ at $0$ is removable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the singularity of $f$ at $0$ is removable.
+
+
+::: pf-proof
+
 Step <1>5 gives a holomorphic function near $0$, and step <1>6 shows that it agrees with $f$ away from $0$. Hence it is a holomorphic extension of $f$ across the puncture.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

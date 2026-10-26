@@ -21,14 +21,19 @@ Prove that $u$ has a harmonic conjugate $v$, so that $u+iv$ is analytic on $D$.
 Hint: consider $u_x-iu_y$.
 :::
 
-::: {.solution}
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 \[
 g=u_x-i u_y
 \]
 is analytic on $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 g=p+iq,
@@ -53,22 +58,36 @@ which holds because $u$ is harmonic. The second is
 u_{xy}=u_{yx},
 \]
 which holds because $u\in C^2(D)$. Hence $g$ is analytic on $D$.
+
 :::
 
-<1>2. The function $g$ has an analytic primitive $F$ on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ has an analytic primitive $F$ on $D$.
+
+
+::: pf-proof
+
 By step <1>1, $g$ is analytic. Since $D$ is simply connected, the standard
 primitive theorem for holomorphic functions on simply connected domains gives
 an analytic function $F$ on $D$ such that
 \[
 F'=g.
 \]
+
 :::
 
-<1>3. If $F=U+iV$, then $U-u$ is constant on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $F=U+iV$, then $U-u$ is constant on $D$.
+
+
+::: pf-proof
+
 Since $F$ is analytic,
 \[
 F'=U_x+iV_x.
@@ -90,11 +109,18 @@ Thus
 (U-u)_y=0.
 \]
 Because $D$ is a domain and therefore connected, $U-u$ is constant on $D$.
+
 :::
 
-<1>4. The function $u$ has a harmonic conjugate on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $u$ has a harmonic conjugate on $D$.
+
+
+::: pf-proof
+
 By step <1>3, there is a real constant $c$ such that $U=u+c$. Define
 \[
 v=V.
@@ -105,11 +131,15 @@ u+iv=F-c,
 \]
 which is analytic on $D$. Hence $v$ is a harmonic conjugate of $u$. In
 particular, as the imaginary part of an analytic function, $v$ is harmonic.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required existence of a harmonic conjugate.
+
 :::
+
 :::

@@ -24,7 +24,6 @@ f(z)-2^m z^m
 has exactly \(m\) zeros, counted with multiplicity, in \(|z|<\frac12\).
 :::
 
-::: {.solution}
 Fix
 $$
 m\ge1
@@ -36,7 +35,11 @@ F_m(z)
 f(z)-2^mz^m.
 $$
 
-<1>1. Schwarz's lemma gives
+::: pf
+
+::: pf-step
+
+Schwarz's lemma gives
 $$
 \boxed{|f(z)|\le|z|}
 $$
@@ -45,7 +48,9 @@ $$
 z\in\mathbb D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is holomorphic on the unit disk, satisfies
 $$
 f(0)=0,
@@ -55,9 +60,14 @@ $$
 |f(z)|\le1.
 $$
 These are the hypotheses of Schwarz's lemma.
+
 :::
 
-<1>2. On the circle
+:::
+
+::: pf-step
+
+On the circle
 $$
 |z|=\frac12,
 $$
@@ -68,7 +78,9 @@ $$
 |2^mz^m|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 |f(z)|
@@ -96,9 +108,14 @@ $$
 =
 |2^mz^m|.
 $$
+
 :::
 
-<1>3. The functions
+:::
+
+::: pf-step
+
+The functions
 $$
 F_m(z)
 =
@@ -114,11 +131,18 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives the strict Rouché inequality on the boundary circle. Both functions are holomorphic on a neighborhood of the closed disk, so Rouché's theorem applies.
+
 :::
 
-<1>4. The function $F_m$ has exactly
+:::
+
+::: pf-step
+
+The function $F_m$ has exactly
 $$
 \boxed{m}
 $$
@@ -128,17 +152,23 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The comparison function
 $$
 -2^mz^m
 $$
 has a zero of multiplicity $m$ at the origin and no other zeros. Step <1>3 transfers this zero count to $F_m$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

@@ -22,14 +22,19 @@ f:\mathbb R\to\mathbb R,\qquad f(x)=x^3,
 is continuous at $2$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \varepsilon>0
 \]
 be given.
 
-::: {.proof}
+
+::: pf-proof
+
 To prove continuity at $2$, we must produce
 \[
 \delta>0
@@ -42,9 +47,14 @@ implies
 \[
 |x^3-8|<\varepsilon.
 \]
+
 :::
 
-<1>2. Factor the difference:
+:::
+
+::: pf-step
+
+Factor the difference:
 \[
 |x^3-8|
 =
@@ -52,16 +62,23 @@ implies
 \,|x^2+2x+4|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 x^3-2^3
 =
 (x-2)(x^2+2x+4).
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 |x-2|<1,
 \]
@@ -70,7 +87,9 @@ then
 1<x<3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inequality
 \[
 |x-2|<1
@@ -83,14 +102,21 @@ hence
 \[
 1<x<3.
 \]
+
 :::
 
-<1>4. Under the same restriction,
+:::
+
+::: pf-step
+
+Under the same restriction,
 \[
 |x^2+2x+4|<19.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 1<x<3,
@@ -111,9 +137,14 @@ Therefore
 19.
 \end{aligned}
 \]
+
 :::
 
-<1>5. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 \boxed{
 \delta
@@ -126,15 +157,22 @@ Therefore
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This choice guarantees both the bound in step <1>4 and the final
 \[
 \varepsilon
 \]
 estimate.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 |x-2|<\delta,
 \]
@@ -145,7 +183,9 @@ then
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 \delta\le1,
@@ -166,9 +206,14 @@ Hence
 \varepsilon.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f(x)=x^3
@@ -176,17 +221,23 @@ f(x)=x^3
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 is exactly the
 \[
 \varepsilon\text{--}\delta
 \]
 definition of continuity at $2$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the desired conclusion.
+
 :::
+
 :::

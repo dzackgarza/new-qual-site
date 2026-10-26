@@ -31,14 +31,19 @@ A^{19}.
 \]
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \det(A-\lambda I)=-(\lambda+1)\lambda(\lambda-1),
 $$
 so the eigenvalues are $-1,0,1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because the first row of $A-\lambda I$ is $(-1-\lambda,0,0)$,
 $$
 \begin{aligned}
@@ -50,9 +55,14 @@ $$
 \end{aligned}
 $$
 Thus the roots are $-1,0,1$.
+
 :::
 
-<1>2. Corresponding eigenvectors are
+:::
+
+::: pf-step
+
+Corresponding eigenvectors are
 $$
 v_{-1}=\begin{pmatrix}1\\1\\1\end{pmatrix},
 \qquad
@@ -61,7 +71,9 @@ v_0=\begin{pmatrix}0\\2\\3\end{pmatrix},
 v_1=\begin{pmatrix}0\\1\\1\end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 $$
 Av_{-1}=-v_{-1},
@@ -70,9 +82,14 @@ Av_0=0,
 \qquad
 Av_1=v_1.
 $$
+
 :::
 
-<1>3. The matrix $A$ is diagonalizable. In fact, with
+:::
+
+::: pf-step
+
+The matrix $A$ is diagonalizable. In fact, with
 $$
 P=\begin{pmatrix}
 1&0&0\\
@@ -91,15 +108,22 @@ $$
 A=PDP^{-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $P$ are the eigenvectors from step <1>2. Moreover,
 $$
 \det P=2-3=-1\ne0,
 $$
 so they form a basis of $\RR^3$. Therefore $P^{-1}AP=D$, equivalently $A=PDP^{-1}$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 A^{19}=A=
@@ -111,7 +135,9 @@ A^{19}=A=
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 A^{19}=PD^{19}P^{-1}.
@@ -124,11 +150,15 @@ Hence
 $$
 A^{19}=PDP^{-1}=A.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves diagonalizability, and step <1>4 computes $A^{19}$.
+
 :::
+
 :::

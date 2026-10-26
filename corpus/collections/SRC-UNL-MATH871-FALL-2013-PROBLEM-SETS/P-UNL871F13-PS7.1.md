@@ -18,14 +18,17 @@ p\in U,\qquad C\subseteq V.
 \]
 :::
 
-::: {.solution}
 Fix a metric
 \[
 d
 \]
 that induces the topology of $X$.
 
-<1>1. Since $C$ is closed and
+::: pf
+
+::: pf-step
+
+Since $C$ is closed and
 \[
 p\notin C,
 \]
@@ -42,7 +45,9 @@ C
 \varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $C$ is closed,
 \[
 X\setminus C
@@ -62,9 +67,14 @@ B(p,\varepsilon)
 \subseteq
 X\setminus C.
 \]
+
 :::
 
-<1>2. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 d(p,c)
 \ge
@@ -73,7 +83,9 @@ d(p,c)
 (c\in C).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If some
 \[
 c\in C
@@ -87,9 +99,14 @@ then
 c\in B(p,\varepsilon),
 \]
 contradicting step <1>1.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 U
 \coloneqq
@@ -111,7 +128,9 @@ and
 C\subseteq V.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both sets are unions of open balls.
 
 Also
@@ -138,11 +157,18 @@ Thus
 \[
 C\subseteq V.
 \]
+
 :::
 
-<1>4. The open sets $U$ and $V$ are disjoint.
+:::
 
-::: {.proof}
+::: pf-step
+
+The open sets $U$ and $V$ are disjoint.
+
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 x\in U\cap V.
@@ -190,9 +216,14 @@ U\cap V
 =
 \varnothing.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 p\in U,
@@ -204,13 +235,19 @@ U\cap V=\varnothing,
 \]
 with $U$ and $V$ open.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3--<1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required separation.
+
 :::
+
 :::

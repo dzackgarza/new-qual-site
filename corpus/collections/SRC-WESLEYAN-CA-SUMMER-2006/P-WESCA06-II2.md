@@ -24,7 +24,6 @@ f(z)=x^2+i y^2,
 Show that $f$ is differentiable at every point on the line $y=x$ but is nowhere analytic.
 :::
 
-::: {.solution}
 Write
 \[
 f=u+iv,
@@ -34,7 +33,11 @@ u(x,y)=x^2,
 v(x,y)=y^2.
 \]
 
-<1>1. The first partial derivatives are
+::: pf
+
+::: pf-step
+
+The first partial derivatives are
 \[
 u_x=2x,
 \qquad
@@ -45,7 +48,9 @@ v_x=0,
 v_y=2y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the polynomial functions
 \[
 u(x,y)=x^2
@@ -55,9 +60,14 @@ and
 v(x,y)=y^2.
 \]
 All partial derivatives are continuous everywhere.
+
 :::
 
-<1>2. The Cauchy--Riemann equations are
+:::
+
+::: pf-step
+
+The Cauchy--Riemann equations are
 \[
 u_x=v_y
 \qquad\text{and}\qquad
@@ -70,12 +80,19 @@ For this function they reduce to
 0=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the derivatives from step <1>1 into the Cauchy--Riemann
 equations.
+
 :::
 
-<1>3. Hence the Cauchy--Riemann equations hold exactly at the points
+:::
+
+::: pf-step
+
+Hence the Cauchy--Riemann equations hold exactly at the points
 \[
 (x,y)
 \]
@@ -84,20 +101,29 @@ with
 y=x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The second equation is automatic.
 The first is equivalent to
 \[
 x=y.
 \]
+
 :::
 
-<1>4. The function $f$ is complex differentiable at every point on the line
+:::
+
+::: pf-step
+
+The function $f$ is complex differentiable at every point on the line
 \[
 y=x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The partial derivatives of $u$ and $v$ are continuous everywhere by
 step <1>1.
 Therefore the standard Cauchy--Riemann differentiability theorem applies:
@@ -108,9 +134,14 @@ By step <1>3, this includes every point of the line
 \[
 y=x.
 \]
+
 :::
 
-<1>5. At a point
+:::
+
+::: pf-step
+
+At a point
 \[
 z=x+ix
 \]
@@ -121,7 +152,9 @@ f'(z)=2x.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At a complex-differentiability point,
 \[
 f'
@@ -136,14 +169,21 @@ f'(z)
 =
 2x.
 \]
+
 :::
 
-<1>6. The function is not complex differentiable at any point off the line
+:::
+
+::: pf-step
+
+The function is not complex differentiable at any point off the line
 \[
 y=x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x\ne y,
@@ -160,9 +200,14 @@ v_y.
 \]
 The Cauchy--Riemann equations are necessary for complex differentiability,
 so $f$ cannot be complex differentiable there.
+
 :::
 
-<1>7. The line
+:::
+
+::: pf-step
+
+The line
 \[
 L
 =
@@ -173,17 +218,26 @@ has empty interior in
 \mathbb C.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every open disk centered at a point of $L$ contains points with
 \[
 y\ne x.
 \]
 Hence no nonempty open disk is contained in $L$.
+
 :::
 
-<1>8. The function $f$ is nowhere analytic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is nowhere analytic.
+
+
+::: pf-proof
+
 Suppose $f$ were analytic at some point
 \[
 z_0.
@@ -205,15 +259,19 @@ U\subseteq L,
 \]
 contradicting step <1>7 because $U$ is nonempty and open.
 Therefore no point has a neighborhood on which $f$ is analytic.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves differentiability along
 \[
 y=x,
 \]
 and step <1>8 proves that $f$ is nowhere analytic.
+
 :::
+
 :::

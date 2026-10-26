@@ -23,22 +23,34 @@ x+2x^2+3x^3+\cdots+nx^n
 \]
 :::
 
-::: {.solution}
 Fix $x\in\RR$ with $x\ne1$, and let $S_n\coloneqq\sum_{k=1}^n kx^k$.
 
-<1>1. The claimed identity holds for $n=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The claimed identity holds for $n=1$.
+
+
+::: pf-proof
+
 For $n=1$, the left-hand side is $S_1=x$, while
 $$
 \frac{x^3-2x^2+x}{(x-1)^2}
 =\frac{x(x-1)^2}{(x-1)^2}=x.
 $$
+
 :::
 
-<1>2. If the claimed identity holds for some $n\ge1$, then it holds for $n+1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If the claimed identity holds for some $n\ge1$, then it holds for $n+1$.
+
+
+::: pf-proof
+
 By the induction hypothesis,
 $$
 \begin{aligned}
@@ -50,21 +62,32 @@ S_{n+1}
 \end{aligned}
 $$
 This is exactly the stated formula with $n$ replaced by $n+1$.
+
 :::
 
-<1>3. For every integer $n\ge1$,
+:::
+
+::: pf-step
+
+For every integer $n\ge1$,
 $$
 \boxed{x+2x^2+\cdots+nx^n
 =\frac{nx^{n+2}-(n+1)x^{n+1}+x}{(x-1)^2}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 is the base case and step <1>2 is the induction step, so the result follows by mathematical induction.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required identity.
+
 :::
+
 :::

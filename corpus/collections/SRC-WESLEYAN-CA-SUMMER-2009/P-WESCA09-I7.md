@@ -27,14 +27,19 @@ Calculate
 \]
 :::
 
-::: {.solution}
-<1>1. Among the poles of
+::: pf
+
+::: pf-step
+
+Among the poles of
 \[
 h(z)=\frac{\cos z}{z(z^2+8)},
 \]
 only $z=0$ lies in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The poles occur at
 \[
 z=0,
@@ -49,14 +54,21 @@ $z=\pm2\sqrt2\,i$ one has
 =2\sqrt2>1,
 \]
 so these two poles lie outside $D$.
+
 :::
 
-<1>2. The residue of $h$ at $0$ is
+:::
+
+::: pf-step
+
+The residue of $h$ at $0$ is
 \[
 \operatorname{Res}(0,h)=\frac18.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The pole at $0$ is simple, and therefore
 \[
 \operatorname{Res}(0,h)
@@ -64,15 +76,22 @@ The pole at $0$ is simple, and therefore
 =\frac{\cos0}{8}
 =\frac18.
 \]
+
 :::
 
-<1>3. The required integral is
+:::
+
+::: pf-step
+
+The required integral is
 \[
 \boxed{\int_{\partial D}\frac{\cos z}{z(z^2+8)}\,dz
 =\frac{\pi i}{4}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The boundary is positively oriented, and by step <1>1 the only enclosed pole
 is $0$. Hence the residue theorem and step <1>2 give
 \[
@@ -81,11 +100,15 @@ is $0$. Hence the residue theorem and step <1>2 give
 =2\pi i\cdot\frac18
 =\frac{\pi i}{4}.
 \]
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

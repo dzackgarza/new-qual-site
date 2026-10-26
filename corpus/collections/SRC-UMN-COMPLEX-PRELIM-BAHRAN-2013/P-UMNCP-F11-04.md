@@ -20,7 +20,6 @@ audit:
 Let \(f\) be holomorphic on the right half-plane \(\{z:\operatorname{Re}z>0\}\). Suppose \(|f(z)|<1\) throughout the domain and \(f(1)=0\). Find the largest possible value of \(|f(2)|\).
 :::
 
-::: {.solution}
 Let
 $$
 \phi(z)
@@ -28,7 +27,11 @@ $$
 \frac{z-1}{z+1}.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 \phi:\{z:\operatorname{Re}z>0\}\longrightarrow\mathbb D
 $$
@@ -37,7 +40,9 @@ $$
 \phi(1)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 z=x+iy
@@ -87,9 +92,14 @@ is a biholomorphism onto the disk. Finally,
 $$
 \phi(1)=0.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 g(w)
 \coloneqq
@@ -104,7 +114,9 @@ $$
 g(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse map
 $$
 \phi^{-1}
@@ -124,9 +136,14 @@ g(0)
 f(1)
 =0.
 $$
+
 :::
 
-<1>3. Schwarz's lemma gives
+:::
+
+::: pf-step
+
+Schwarz's lemma gives
 $$
 |g(w)|\le|w|
 $$
@@ -135,16 +152,25 @@ $$
 w\in\mathbb D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives exactly the hypotheses of Schwarz's lemma.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \phi(2)=\frac13.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \phi(2)
@@ -153,9 +179,14 @@ $$
 =
 \frac13.
 $$
+
 :::
 
-<1>5. Every admissible function satisfies
+:::
+
+::: pf-step
+
+Every admissible function satisfies
 $$
 \boxed{
 |f(2)|
@@ -163,7 +194,9 @@ $$
 \frac13}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 f(2)
@@ -178,15 +211,22 @@ $$
 =
 \frac13.
 $$
+
 :::
 
-<1>6. The bound
+:::
+
+::: pf-step
+
+The bound
 $$
 \frac13
 $$
 is attained.
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 f=\phi.
@@ -201,20 +241,31 @@ $$
 =
 \frac13.
 $$
+
 :::
 
-<1>7. Therefore the largest possible value is
+:::
+
+::: pf-step
+
+Therefore the largest possible value is
 $$
 \boxed{\frac13}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives the universal upper bound and step <1>6 shows that it is sharp.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required extremal value.
+
 :::
+
 :::

@@ -25,10 +25,15 @@ A=\begin{pmatrix}
 Find an invertible complex matrix $P$ for which $P^{-1}AP$ is diagonal.
 :::
 
-::: {.solution}
-<1>1. The eigenvalues of $A$ are $1$ and $4$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The eigenvalues of $A$ are $1$ and $4$.
+
+
+::: pf-proof
+
 The characteristic polynomial is
 $$
 \begin{aligned}
@@ -40,16 +45,23 @@ $$
 \end{aligned}
 $$
 Thus the eigenvalues are $1$ and $4$.
+
 :::
 
-<1>2. Eigenvectors for the eigenvalues $1$ and $4$ are respectively
+:::
+
+::: pf-step
+
+Eigenvectors for the eigenvalues $1$ and $4$ are respectively
 $$
 v_1=\begin{pmatrix}-(1+i)\\1\end{pmatrix},
 \qquad
 v_4=\begin{pmatrix}1\\1-i\end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\lambda=1$, the equation $(A-I)v=0$ includes
 $$
 x+(1+i)y=0,
@@ -59,9 +71,14 @@ $$
 -2x+(1+i)y=0.
 $$
 Taking $y=1-i$ gives $(1+i)(1-i)=2$, hence $x=1$, which gives $v_4$.
+
 :::
 
-<1>3. The matrix
+:::
+
+::: pf-step
+
+The matrix
 $$
 \boxed{
 P=\begin{pmatrix}
@@ -75,7 +92,9 @@ $$
 \boxed{P^{-1}AP=\begin{pmatrix}1&0\\0&4\end{pmatrix}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $P$ are the eigenvectors from step <1>2, so
 $$
 AP=P\begin{pmatrix}1&0\\0&4\end{pmatrix}.
@@ -85,11 +104,15 @@ $$
 \det P=(-(1+i))(1-i)-1=-2-1=-3\ne0,
 $$
 so $P$ is invertible. Multiplying the displayed relation on the left by $P^{-1}$ gives the claimed diagonalization.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 provides the required invertible matrix and diagonal form.
+
 :::
+
 :::

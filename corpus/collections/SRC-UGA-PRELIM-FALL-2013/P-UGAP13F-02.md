@@ -30,21 +30,26 @@ Give quick proofs, citing relevant facts about trace, determinant, and eigenvalu
 (d) $B$ and $C$ have the same eigenvalues.
 :::
 
-::: {.solution}
 Since
 \[
 C=ABA^{-1},
 \]
 the matrices $B$ and $C$ are similar.
 
-<1>1. Statement (a) is true:
+::: pf
+
+::: pf-step
+
+Statement (a) is true:
 \[
 \boxed{
 \det B=\det C.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using multiplicativity of the determinant,
 \[
 \begin{aligned}
@@ -59,9 +64,14 @@ Using multiplicativity of the determinant,
 \det B.
 \end{aligned}
 \]
+
 :::
 
-<1>2. Statement (b) is true:
+:::
+
+::: pf-step
+
+Statement (b) is true:
 \[
 \boxed{
 \operatorname{tr}B
@@ -70,7 +80,9 @@ Using multiplicativity of the determinant,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the cyclic property of trace:
 \[
 \operatorname{tr}(XY)
@@ -89,11 +101,18 @@ Then
 \operatorname{tr}B.
 \end{aligned}
 \]
+
 :::
 
-<1>3. Statement (c) is false in general.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (c) is false in general.
+
+
+::: pf-proof
+
 Take
 \[
 B
@@ -152,9 +171,14 @@ Ce_2
 \]
 which is not a scalar multiple of $e_2$.
 Thus $B$ and $C$ need not have the same eigenvectors.
+
 :::
 
-<1>4. What similarity preserves is the eigenspace structure up to $A$:
+:::
+
+::: pf-step
+
+What similarity preserves is the eigenspace structure up to $A$:
 if
 \[
 Bv=\lambda v,
@@ -164,7 +188,9 @@ then
 C(Av)=\lambda(Av).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Starting from
 \[
 Bv=\lambda v,
@@ -191,9 +217,14 @@ Av\ne0.
 \]
 Thus $A$ carries each eigenspace of $B$ isomorphically onto the
 corresponding eigenspace of $C$.
+
 :::
 
-<1>5. Statement (d) is true:
+:::
+
+::: pf-step
+
+Statement (d) is true:
 \[
 \boxed{
 B
@@ -203,7 +234,9 @@ C
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Their characteristic polynomials agree:
 \[
 \begin{aligned}
@@ -226,9 +259,14 @@ by step <1>1 applied to
 \]
 Therefore the roots of the two characteristic polynomials, with algebraic
 multiplicity, are identical.
+
 :::
 
-<1>6. The complete classification is
+:::
+
+::: pf-step
+
+The complete classification is
 \[
 \boxed{
 \begin{array}{c|cccc}
@@ -243,13 +281,19 @@ multiplicity, are identical.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>1--<1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the requested answer.
+
 :::
+
 :::

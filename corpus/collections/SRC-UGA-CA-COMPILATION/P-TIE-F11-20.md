@@ -29,15 +29,20 @@ Under this number the source also prints, as parts (1) and (2), the Cauchy probl
 It is a separate problem, carried by its own card.
 :::
 
-::: {.solution}
-<1>1. For all $z,w$ with $\abs{z}<R$ and $\abs{w}<R$,
+::: pf
+
+::: pf-step
+
+For all $z,w$ with $\abs{z}<R$ and $\abs{w}<R$,
 $$
 \abs{z^2-w^2}
 <
 2R\abs{z-w}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor the difference:
 $$
 z^2-w^2=(z-w)(z+w).
@@ -54,11 +59,18 @@ $$
 2R\abs{z-w}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The function $f(z)=z^2$ is uniformly continuous on the open disk $\abs{z}<R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f(z)=z^2$ is uniformly continuous on the open disk $\abs{z}<R$.
+
+
+::: pf-proof
+
 Let $\varepsilon>0$ and choose
 $$
 \delta\coloneqq\frac{\varepsilon}{2R}.
@@ -72,11 +84,18 @@ $$
 \varepsilon.
 $$
 The choice of $\delta$ depends only on $\varepsilon$ and $R$, not on the points $z,w$, so $f$ is uniformly continuous on the disk.
+
 :::
 
-<1>3. The function $f(z)=z^2$ is not uniformly continuous on $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f(z)=z^2$ is not uniformly continuous on $\CC$.
+
+
+::: pf-proof
+
 For each positive integer $n$, let
 $$
 z_n=n,
@@ -104,11 +123,15 @@ $$
 \end{aligned}
 $$
 If $f$ were uniformly continuous on $\CC$, pairs of points whose distance tends to $0$ would have image distances tending to $0$. The displayed sequences contradict this.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves uniform continuity on every fixed open disk, and step <1>3 proves failure of uniform continuity on $\CC$.
+
 :::
+
 :::

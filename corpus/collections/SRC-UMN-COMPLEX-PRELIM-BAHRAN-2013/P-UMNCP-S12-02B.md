@@ -27,19 +27,24 @@ in the annulus
 \]
 :::
 
-::: {.solution}
 Let
 $$
 p(z)=z^4+5z+3.
 $$
 
-<1>1. The polynomial $p$ has exactly four zeros in
+::: pf
+
+::: pf-step
+
+The polynomial $p$ has exactly four zeros in
 $$
 |z|<2,
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle
 $$
 |z|=2,
@@ -69,15 +74,22 @@ $$
 z^4
 $$
 have the same number of zeros in $|z|<2$. The function $z^4$ has four zeros there, counted with multiplicity.
+
 :::
 
-<1>2. The polynomial $p$ has exactly one zero in
+:::
+
+::: pf-step
+
+The polynomial $p$ has exactly one zero in
 $$
 |z|<1,
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle
 $$
 |z|=1,
@@ -107,20 +119,32 @@ $$
 5z
 $$
 have the same number of zeros in $|z|<1$. The function $5z$ has exactly one zero there.
+
 :::
 
-<1>3. The polynomial $p$ has no zeros on either boundary circle
+:::
+
+::: pf-step
+
+The polynomial $p$ has no zeros on either boundary circle
 $$
 |z|=1
 \quad\text{or}\quad
 |z|=2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The strict Rouché inequalities in steps <1>1 and <1>2 imply that $p$ cannot vanish on either contour: if $p(z)=0$, then the two compared terms would have equal modulus, contradicting the strict inequality.
+
 :::
 
-<1>4. Hence the number of zeros in
+:::
+
+::: pf-step
+
+Hence the number of zeros in
 $$
 1<|z|<2
 $$
@@ -129,17 +153,23 @@ $$
 \boxed{3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 there are four zeros in $|z|<2$, while by step <1>2 there is one zero in $|z|<1$. Step <1>3 ensures that no zero lies on either boundary. Therefore the annulus contains
 $$
 4-1=3
 $$
 zeros, counted with multiplicity.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required zero count.
+
 :::
+
 :::

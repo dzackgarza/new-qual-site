@@ -20,13 +20,18 @@ True or false: satisfying the Cauchy–Riemann equations on a domain $D$ is suff
 Justify your answer.
 :::
 
-::: {.solution}
-<1>1. The statement is
+::: pf
+
+::: pf-step
+
+The statement is
 \[
 \boxed{\mathrm{False}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Consider
 \[
 f(z)=
@@ -63,12 +68,16 @@ f(t e^{i\pi/4})=e^{1/t^4},
 which is unbounded as $t\to0^+$. Therefore $f$ is not continuous at $0$, so
 it is not analytic on $\mathbb C$. Thus the Cauchy--Riemann equations alone,
 without an additional regularity hypothesis, are not sufficient.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives a counterexample satisfying the equations throughout a domain
 but failing to be analytic there.
+
 :::
+
 :::

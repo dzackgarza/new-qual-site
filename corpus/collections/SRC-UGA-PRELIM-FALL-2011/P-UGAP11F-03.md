@@ -18,7 +18,6 @@ audit:
 Give an example, with proof, of a real power series that converges exactly on the interval $(1,3]$.
 :::
 
-::: {.solution}
 Consider
 $$
 \boxed{
@@ -26,9 +25,15 @@ $$
 \frac{(-1)^n}{n}(x-2)^n}.
 $$
 
-<1>1. The radius of convergence is $1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The radius of convergence is $1$.
+
+
+::: pf-proof
+
 The coefficients are
 $$
 a_n=\frac{(-1)^n}{n}.
@@ -49,22 +54,36 @@ $$
 |x-2|<1,
 $$
 i.e. for $1<x<3$, and diverges for $|x-2|>1$.
+
 :::
 
-<1>2. At $x=3$, the series converges.
+:::
 
-::: {.proof}
+::: pf-step
+
+At $x=3$, the series converges.
+
+
+::: pf-proof
+
 Substituting $x=3$ gives
 $$
 \sum_{n=1}^\infty
 \frac{(-1)^n}{n},
 $$
 the alternating harmonic series, which converges by the alternating-series test.
+
 :::
 
-<1>3. At $x=1$, the series diverges.
+:::
 
-::: {.proof}
+::: pf-step
+
+At $x=1$, the series diverges.
+
+
+::: pf-proof
+
 Substituting $x=1$ gives
 $$
 \sum_{n=1}^\infty
@@ -73,20 +92,31 @@ $$
 \sum_{n=1}^\infty\frac1n,
 $$
 which is the harmonic series and diverges.
+
 :::
 
-<1>4. Therefore the set of real points where the power series converges is exactly
+:::
+
+::: pf-step
+
+Therefore the set of real points where the power series converges is exactly
 $$
 \boxed{(1,3]}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives convergence on $(1,3)$ and divergence outside $[1,3]$. Steps <1>2--<1>3 determine the two endpoints.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested example and its exact interval of convergence.
+
 :::
+
 :::

@@ -34,8 +34,11 @@ n(\overline\gamma,\overline z)=-n(\gamma,z).
 \]
 :::
 
-::: {.solution}
-<1>1. In part (a), the only singularity inside
+::: pf
+
+::: pf-step
+
+In part (a), the only singularity inside
 $$
 |z|=2
 $$
@@ -44,7 +47,9 @@ $$
 z=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is
 $$
 \frac{e^z}{(z+1)^2}.
@@ -57,9 +62,14 @@ which satisfies
 $$
 |-1|<2.
 $$
+
 :::
 
-<1>2. The integral in part (a) is
+:::
+
+::: pf-step
+
+The integral in part (a) is
 $$
 \boxed{
 \int_{|z|=2}
@@ -69,7 +79,9 @@ $$
 \frac{2\pi i}{e}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Cauchy's differentiation formula states
 $$
 \int_{|z|=2}
@@ -102,9 +114,14 @@ $$
 =
 2\pi i e^{-1}.
 $$
+
 :::
 
-<1>3. In part (b), the path
+:::
+
+::: pf-step
+
+In part (b), the path
 $$
 \gamma(t)
 =
@@ -117,7 +134,9 @@ $$
 \frac{x^2}{4}+y^2=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Writing
 $$
 z=x+iy,
@@ -148,9 +167,14 @@ $$
 \gamma'(0)=i,
 $$
 so the traversal initially moves upward from the rightmost point and is counterclockwise.
+
 :::
 
-<1>4. Of the two poles
+:::
+
+::: pf-step
+
+Of the two poles
 $$
 0
 \quad\text{and}\quad
@@ -169,7 +193,9 @@ $$
 \gamma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor the denominator:
 $$
 z^2+2iz
@@ -197,9 +223,14 @@ $$
 >1,
 $$
 so it lies outside.
+
 :::
 
-<1>5. The residue at the enclosed pole is
+:::
+
+::: pf-step
+
+The residue at the enclosed pole is
 $$
 \operatorname{Res}_{z=0}
 \frac1{z(z+2i)}
@@ -207,7 +238,9 @@ $$
 \frac1{2i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The pole at
 $$
 0
@@ -222,9 +255,14 @@ $$
 =
 \frac1{2i}.
 $$
+
 :::
 
-<1>6. The integral in part (b) is
+:::
+
+::: pf-step
+
+The integral in part (b) is
 $$
 \boxed{
 \int_\gamma
@@ -233,7 +271,9 @@ $$
 \pi}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the residue theorem and steps <1>4--<1>5,
 $$
 \int_\gamma
@@ -246,9 +286,14 @@ $$
 =
 \pi.
 $$
+
 :::
 
-<1>7. For part (c), assume
+:::
+
+::: pf-step
+
+For part (c), assume
 $$
 z\notin\gamma([a,b]).
 $$
@@ -263,11 +308,18 @@ n(\gamma,z)
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard integral definition of the winding number of a piecewise smooth closed path about a point outside its image.
+
 :::
 
-<1>8. The conjugate path satisfies
+:::
+
+::: pf-step
+
+The conjugate path satisfies
 $$
 \overline\gamma'(t)
 =
@@ -284,7 +336,9 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Parametrize
 $$
 \overline\gamma
@@ -328,9 +382,14 @@ $$
 }.
 \end{aligned}
 $$
+
 :::
 
-<1>9. Since
+:::
+
+::: pf-step
+
+Since
 $$
 \int_\gamma
 \frac{d\zeta}{\zeta-z}
@@ -347,7 +406,9 @@ $$
 -2\pi i\,n(\gamma,z).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The winding number
 $$
 n(\gamma,z)
@@ -360,9 +421,14 @@ $$
 =
 -2\pi i\,n(\gamma,z).
 $$
+
 :::
 
-<1>10. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 \boxed{
 n(\overline\gamma,\overline z)
@@ -370,7 +436,9 @@ n(\overline\gamma,\overline z)
 -n(\gamma,z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>8--<1>9,
 $$
 \begin{aligned}
@@ -388,11 +456,15 @@ n(\overline\gamma,\overline z)
 -n(\gamma,z).
 \end{aligned}
 $$
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 solves part (a), step <1>6 solves part (b), and step <1>10 proves part (c).
+
 :::
+
 :::

@@ -20,7 +20,6 @@ audit:
 Prove that $f ( z ) = - \frac { 1 } { 2 } \left( z + \frac { 1 } { z } \right)$ is a conformal map from half disc $\left\{ z = x + i y : \ | z | < 1 , \ y > 0 \right\}$ to upper half plane $\mathbb { H } \overset { \cdot } { = } \left\{ z = \overset { \cdot } { x } + i y : \ y > 0 \right\}$
 :::
 
-::: {.solution}
 Let
 $$
 D
@@ -37,13 +36,19 @@ z+\frac1z
 \right).
 $$
 
-<1>1. The function $f$ is holomorphic on $D$ and
+::: pf
+
+::: pf-step
+
+The function $f$ is holomorphic on $D$ and
 $$
 f'(z)\ne0
 $$
 for every $z\in D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The point $0$ is not contained in $D$, so $f$ is holomorphic there. Moreover,
 $$
 f'(z)
@@ -60,11 +65,18 @@ $$
 z=\pm1,
 $$
 and both points lie on the boundary of $D$. Hence $f'(z)\ne0$ throughout $D$.
+
 :::
 
-<1>2. The map $f$ sends $D$ into the upper half-plane $\HH$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $f$ sends $D$ into the upper half-plane $\HH$.
+
+
+::: pf-proof
+
 Write
 $$
 z=x+iy.
@@ -103,11 +115,18 @@ so the right-hand side is positive. Hence
 $$
 f(D)\subset\HH.
 $$
+
 :::
 
-<1>3. The map $f$ is injective on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $f$ is injective on $D$.
+
+
+::: pf-proof
+
 Suppose
 $$
 f(z_1)=f(z_2).
@@ -139,15 +158,22 @@ $$
 \abs{z_1z_2}<1,
 $$
 so the second alternative is impossible. Hence $z_1=z_2$.
+
 :::
 
-<1>4. For every $w\in\HH$, the equation
+:::
+
+::: pf-step
+
+For every $w\in\HH$, the equation
 $$
 f(z)=w
 $$
 has exactly one solution $z\in D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The equation $f(z)=w$ is equivalent to
 $$
 z+\frac1z=-2w,
@@ -185,9 +211,14 @@ $$
 Thus $z\in D$.
 
 The other root has modulus greater than $1$, so it does not lie in $D$. Hence the solution in $D$ is unique.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 f:D\longrightarrow\HH
@@ -195,13 +226,19 @@ f:D\longrightarrow\HH
 $$
 is a conformal bijection.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives holomorphy and nonvanishing derivative. Step <1>2 shows that the image lies in $\HH$, step <1>3 proves injectivity, and step <1>4 proves surjectivity. Hence $f$ is a conformal map of $D$ onto $\HH$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

@@ -29,8 +29,11 @@ and for the third function, which the deterministic extraction renders as
 The third formula is not holomorphic on a punctured neighborhood and therefore cannot literally fit the requested isolated-singularity classification; its source formula remains unresolved.
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 \[
 f_1(z)
 =
@@ -41,20 +44,29 @@ the only possible finite singularity is
 z=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The numerator is entire and the denominator vanishes only at
 \[
 z=0.
 \]
+
 :::
 
-<1>2. The point
+:::
+
+::: pf-step
+
+The point
 \[
 z=0
 \]
 is a removable singularity of $f_1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Use the Taylor expansion
 \[
 \cos z
@@ -77,23 +89,35 @@ Hence the singularity is removable, with extended value
 \[
 f_1(0)=-\frac12.
 \]
+
 :::
 
-<1>3. The residue of $f_1$ at $0$ is
+:::
+
+::: pf-step
+
+The residue of $f_1$ at $0$ is
 \[
 \boxed{0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The residue is the coefficient of
 \[
 z^{-1}
 \]
 in the Laurent expansion.
 Step <1>2 shows there is no such term.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 f_2(z)
 =
@@ -106,7 +130,9 @@ z=0
 z=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The factor
 \[
 e^{1/z^2}
@@ -123,9 +149,14 @@ vanishes only at
 \[
 z=1.
 \]
+
 :::
 
-<1>5. The point
+:::
+
+::: pf-step
+
+The point
 \[
 z=1
 \]
@@ -134,7 +165,9 @@ is a simple pole of $f_2$ with residue
 \boxed{e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The numerator is holomorphic and nonzero at $1$:
 \[
 e^{1/1^2}
@@ -159,15 +192,22 @@ g(1)
 =
 e.
 \]
+
 :::
 
-<1>6. The point
+:::
+
+::: pf-step
+
+The point
 \[
 z=0
 \]
 is an essential singularity of $f_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The Laurent expansion
 \[
 e^{1/z^2}
@@ -189,16 +229,23 @@ The factor
 is holomorphic and nonzero near $0$.
 Multiplying by such a factor preserves essentiality.
 Therefore $f_2$ is essential at $0$.
+
 :::
 
-<1>7. The residue of $f_2$ at $0$ is
+:::
+
+::: pf-step
+
+The residue of $f_2$ at $0$ is
 \[
 \boxed{
 1-e.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Near
 \[
 z=0,
@@ -260,9 +307,14 @@ Therefore
 =
 1-e.
 \]
+
 :::
 
-<1>8. For the third extracted expression
+:::
+
+::: pf-step
+
+For the third extracted expression
 \[
 f_3(z)
 =
@@ -270,7 +322,9 @@ f_3(z)
 \]
 the requested isolated-singularity classification does not apply.
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 z\longmapsto\overline z
@@ -294,9 +348,14 @@ The standard notions
 \]
 apply only to a function holomorphic on a punctured neighborhood.
 Hence the third subpart cannot be completed from the retained formula.
+
 :::
 
-<1>9. The recoverable classification is therefore
+:::
+
+::: pf-step
+
+The recoverable classification is therefore
 \[
 \boxed{
 \begin{array}{c|c}
@@ -313,15 +372,21 @@ Hence the third subpart cannot be completed from the retained formula.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>1--<1>7.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 completely solve the two source-recoverable functions.
 Step <1>8 records why the third extracted expression cannot be classified
 as an isolated singularity without recovering the intended source formula.
+
 :::
+
 :::

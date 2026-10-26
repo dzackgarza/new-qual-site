@@ -19,8 +19,11 @@ audit:
 State Cauchy's Integral Formula.
 :::
 
-::: {.solution}
-<1>1. **Cauchy's Integral Formula.**
+::: pf
+
+::: pf-step
+
+**Cauchy's Integral Formula.**
 
 Let $f$ be holomorphic on a domain containing a positively oriented simple
 closed contour
@@ -44,7 +47,9 @@ f(z_0)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, if
 \[
 \overline{B(z_0,r)}
@@ -60,9 +65,14 @@ f(z_0)
 \,d\zeta.
 \]
 This is the standard circle form of Cauchy's formula.
+
 :::
 
-<1>2. More generally, for every integer
+:::
+
+::: pf-step
+
+More generally, for every integer
 \[
 m\ge0,
 \]
@@ -76,15 +86,21 @@ f^{(m)}(z_0)
 \,d\zeta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the formula in step <1>1 under the integral sign.
 This is Cauchy's integral formula for derivatives.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the requested theorem statement; step <1>2 records its standard
 derivative extension.
+
 :::
+
 :::

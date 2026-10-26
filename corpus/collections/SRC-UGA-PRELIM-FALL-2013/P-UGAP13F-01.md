@@ -25,8 +25,11 @@ A function $f:\mathbb R\to\mathbb R$ is uniformly continuous if for every $\vare
 (b) Give an example, with brief explanation, of a function $f:\mathbb R\to\mathbb R$ that is continuous but not uniformly continuous.
 :::
 
-::: {.solution}
-<1>1. The negation of uniform continuity is:
+::: pf
+
+::: pf-step
+
+The negation of uniform continuity is:
 \[
 \boxed{
 \exists\varepsilon_0>0
@@ -40,7 +43,9 @@ A function $f:\mathbb R\to\mathbb R$ is uniformly continuous if for every $\vare
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform continuity is the statement
 \[
 \forall\varepsilon>0+\exists\delta>0+\forall x,y\in\mathbb R,
@@ -69,9 +74,14 @@ and
 \[
 |f(x)-f(y)|\ge\varepsilon_0.
 \]
+
 :::
 
-<1>2. Take
+:::
+
+::: pf-step
+
+Take
 \[
 \boxed{
 f(x)=x^2.
@@ -79,17 +89,26 @@ f(x)=x^2.
 \]
 Then $f$ is continuous on $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 It is a polynomial.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 \[
 f(x)=x^2
 \]
 is not uniformly continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 \varepsilon_0=1.
@@ -142,11 +161,15 @@ Thus the fixed number
 \]
 defeats every choice of $\delta$.
 By step <1>1, $f$ is not uniformly continuous.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and steps <1>2--<1>3 answer part (b).
+
 :::
+
 :::

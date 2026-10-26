@@ -19,8 +19,11 @@ audit:
 Give the definition of a cycle.
 :::
 
-::: {.solution}
-<1>1. In the contour-integration setting, a cycle in an open set \(U\subseteq\mathbb C\) is a finite formal integer linear combination
+::: pf
+
+::: pf-step
+
+In the contour-integration setting, a cycle in an open set \(U\subseteq\mathbb C\) is a finite formal integer linear combination
 \[
 \boxed{\Gamma=\sum_{j=1}^N n_j\gamma_j}
 \]
@@ -29,7 +32,9 @@ where \(n_j\in\mathbb Z\) and each \(\gamma_j:[a_j,b_j]\to U\) is a closed piece
 \gamma_j(a_j)=\gamma_j(b_j).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition. The adjective “formal” means that the cycle records the oriented curves together with their integer multiplicities; integration is extended linearly by
 \[
 \int_\Gamma f(z)\,dz
@@ -37,11 +42,15 @@ This is the definition. The adjective “formal” means that the cycle records 
 \sum_{j=1}^N n_j\int_{\gamma_j}f(z)\,dz.
 \]
 Equivalently, a cycle is an integral \(1\)-chain whose boundary is zero.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition.
+
 :::
+
 :::

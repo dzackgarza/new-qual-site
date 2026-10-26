@@ -20,7 +20,6 @@ audit:
 Let \(f\) be analytic on the upper half-plane \(\{z:\operatorname{Im}z>0\}\). Suppose \(|f(z)|<1\) throughout the domain and \(f(i)=0\). Find the largest possible value of \(|f(2i)|\).
 :::
 
-::: {.solution}
 Let
 $$
 \phi(z)
@@ -28,7 +27,11 @@ $$
 \frac{z-i}{z+i}.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 \phi:\mathbb H\longrightarrow\mathbb D
 $$
@@ -37,7 +40,9 @@ $$
 \phi(i)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Möbius transformation
 $$
 \phi(z)=\frac{z-i}{z+i}
@@ -77,9 +82,14 @@ which maps $\mathbb D$ to $\mathbb H$. Finally,
 $$
 \phi(i)=0.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 g(w)
 \coloneqq
@@ -94,7 +104,9 @@ $$
 g(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 $$
 \phi^{-1}
@@ -115,9 +127,14 @@ we have
 $$
 g(0)=0.
 $$
+
 :::
 
-<1>3. Schwarz's lemma gives
+:::
+
+::: pf-step
+
+Schwarz's lemma gives
 $$
 |g(w)|\le|w|
 $$
@@ -126,16 +143,25 @@ $$
 w\in\mathbb D.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives exactly the hypotheses of Schwarz's lemma.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \phi(2i)=\frac13.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \phi(2i)
@@ -146,9 +172,14 @@ $$
 =
 \frac13.
 $$
+
 :::
 
-<1>5. Every admissible function $f$ satisfies
+:::
+
+::: pf-step
+
+Every admissible function $f$ satisfies
 $$
 \boxed{
 |f(2i)|
@@ -156,7 +187,9 @@ $$
 \frac13}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 f(2i)
@@ -171,15 +204,22 @@ $$
 =
 \frac13.
 $$
+
 :::
 
-<1>6. The bound
+:::
+
+::: pf-step
+
+The bound
 $$
 \frac13
 $$
 is attained.
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 f=\phi.
@@ -194,20 +234,31 @@ $$
 =
 \frac13.
 $$
+
 :::
 
-<1>7. Therefore the largest possible value is
+:::
+
+::: pf-step
+
+Therefore the largest possible value is
 $$
 \boxed{\frac13}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives the universal upper bound and step <1>6 shows it is sharp.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required extremal value.
+
 :::
+
 :::

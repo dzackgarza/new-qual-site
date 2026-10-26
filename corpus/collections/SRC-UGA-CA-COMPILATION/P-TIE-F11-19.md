@@ -27,7 +27,6 @@ $$
 where $\gamma _ { r } : = \lbrace z \mid z = a + r e ^ { i t } , 0 \leq t \leq \beta _ { 0 } \rbrace$
 :::
 
-::: {.solution}
 For $0<r\le R$, parametrize $\gamma_r$ by
 $$
 z(t)=a+re^{it},
@@ -35,7 +34,11 @@ z(t)=a+re^{it},
 0\le t\le\beta_0.
 $$
 
-<1>1. The integral over $\gamma_r$ satisfies
+::: pf
+
+::: pf-step
+
+The integral over $\gamma_r$ satisfies
 $$
 \int_{\gamma_r}f(z)\,dz
 =
@@ -43,7 +46,9 @@ i\int_0^{\beta_0}
 re^{it}f(a+re^{it})\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Under the stated parametrization,
 $$
 dz=ire^{it}\,dt.
@@ -56,9 +61,14 @@ $$
 f(a+re^{it})ire^{it}\,dt,
 $$
 which is the asserted identity.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \lim_{r\to0^+}
 \int_0^{\beta_0}
@@ -68,7 +78,9 @@ re^{it}f(a+re^{it})-A
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 (z-a)f(z)\longrightarrow A
@@ -99,9 +111,14 @@ re^{it}f(a+re^{it})-A
 \end{aligned}
 $$
 This proves the asserted limit.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \lim_{r\to0^+}
@@ -111,7 +128,9 @@ iA\beta_0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \int_{\gamma_r}f(z)\,dz-iA\beta_0
@@ -122,11 +141,15 @@ re^{it}f(a+re^{it})-A
 \right)dt.
 $$
 The right-hand side tends to $0$ by step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required limit.
+
 :::
+
 :::

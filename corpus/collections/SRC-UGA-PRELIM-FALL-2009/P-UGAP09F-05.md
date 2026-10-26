@@ -33,14 +33,19 @@ but $f$ is not continuous at $(0,0)$.
 (b) Give a sufficient condition, stated in terms of the partial derivatives, for a function $g:\mathbb R^2\to\mathbb R$ to be differentiable at a point $P$.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \frac{\partial f}{\partial x}(0,0)
 =\frac{\partial f}{\partial y}(0,0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the definitions of the partial derivatives,
 $$
 \frac{\partial f}{\partial x}(0,0)
@@ -53,11 +58,18 @@ $$
 =\lim_{k\to0}\frac{f(0,k)-f(0,0)}{k}
 =0.
 $$
+
 :::
 
-<1>2. The function $f$ is not continuous at $(0,0)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is not continuous at $(0,0)$.
+
+
+::: pf-proof
+
 Along the line $y=x$, for every $t\ne0$,
 $$
 f(t,t)=\frac{t^2}{2t^2}=\frac12.
@@ -67,11 +79,18 @@ $$
 \lim_{t\to0}f(t,t)=\frac12\ne0=f(0,0).
 $$
 Therefore the two-variable limit of $f(x,y)$ at $(0,0)$ cannot equal $f(0,0)$, so $f$ is not continuous there.
+
 :::
 
-<1>3. A sufficient condition for $g:\RR^2\to\RR$ to be differentiable at $P=(a,b)$ is that $g_x$ and $g_y$ exist on a neighborhood of $P$ and are continuous at $P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+A sufficient condition for $g:\RR^2\to\RR$ to be differentiable at $P=(a,b)$ is that $g_x$ and $g_y$ exist on a neighborhood of $P$ and are continuous at $P$.
+
+
+::: pf-proof
+
 Assume this condition. For $(h,k)$ sufficiently small, apply the one-variable mean value theorem first along the horizontal segment from $(a,b+k)$ to $(a+h,b+k)$ and then along the vertical segment from $(a,b)$ to $(a,b+k)$. There exist $\theta,\eta\in(0,1)$ such that
 $$
 \begin{aligned}
@@ -93,11 +112,15 @@ g(a+h,b+k)
 =g(a,b)+g_x(a,b)h+g_y(a,b)k+o\!\left(\sqrt{h^2+k^2}\right),
 $$
 which is precisely differentiability of $g$ at $P$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 prove part (a), and step <1>3 gives and justifies the sufficient condition requested in part (b).
+
 :::
+
 :::

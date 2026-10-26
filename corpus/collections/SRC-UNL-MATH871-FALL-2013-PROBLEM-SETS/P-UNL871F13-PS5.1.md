@@ -23,29 +23,46 @@ g\circ f:X\to Z
 are homeomorphisms.
 :::
 
-::: {.solution}
-<1>1. Since $f$ is a homeomorphism,
+::: pf
+
+::: pf-step
+
+Since $f$ is a homeomorphism,
 \[
 f^{-1}:Y\to X
 \]
 is bijective.
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse of any bijection is again a bijection.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 f^{-1}:Y\to X
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 This is part of the definition of a homeomorphism:
 $f$ is a continuous bijection whose inverse is continuous.
+
 :::
 
-<1>3. The inverse of
+:::
+
+::: pf-step
+
+The inverse of
 \[
 f^{-1}
 \]
@@ -55,15 +72,22 @@ f,
 \]
 which is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 (f^{-1})^{-1}=f.
 \]
 Since $f$ is a homeomorphism, it is continuous.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f^{-1}:Y\to X
@@ -71,28 +95,44 @@ f^{-1}:Y\to X
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 show that $f^{-1}$ is a continuous bijection with
 continuous inverse.
+
 :::
 
-<1>5. The composite
+:::
+
+::: pf-step
+
+The composite
 \[
 g\circ f:X\to Z
 \]
 is bijective.
 
-::: {.proof}
+
+::: pf-proof
+
 The composition of bijections is a bijection.
+
 :::
 
-<1>6. The composite
+:::
+
+::: pf-step
+
+The composite
 \[
 g\circ f
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Both
 \[
 f:X\to Y
@@ -103,16 +143,23 @@ g:Y\to Z
 \]
 are continuous.
 The composition of continuous maps is continuous.
+
 :::
 
-<1>7. The inverse of the composite is
+:::
+
+::: pf-step
+
+The inverse of the composite is
 \[
 (g\circ f)^{-1}
 =
 f^{-1}\circ g^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 (f^{-1}\circ g^{-1})\circ(g\circ f)
@@ -129,15 +176,22 @@ and similarly
 =
 \operatorname{id}_Z.
 \]
+
 :::
 
-<1>8. The inverse
+:::
+
+::: pf-step
+
+The inverse
 \[
 f^{-1}\circ g^{-1}
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 f^{-1}
@@ -149,9 +203,14 @@ g^{-1}
 \]
 is continuous.
 Their composition is therefore continuous.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 g\circ f:X\to Z
@@ -159,15 +218,21 @@ g\circ f:X\to Z
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>5--<1>8 show that $g\circ f$ is a continuous bijection with
 continuous inverse.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the inverse statement, and step <1>9 proves the composition
 statement.
+
 :::
+
 :::

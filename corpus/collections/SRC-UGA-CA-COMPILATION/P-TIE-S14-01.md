@@ -31,7 +31,6 @@ This is part 1 of question 1 of the Spring 2014 list in the source.
 Part 2 (the same integral over circles not containing the origin) and part 3 (the integral of $\frac{1}{(z-a)(z-b)}$ over $\abs{z} = r$ with $\abs{a} < r < \abs{b}$) are separate cards.
 :::
 
-::: {.solution}
 Let the positively oriented circle be
 $$
 \gamma(t)=\rho e^{it},
@@ -40,7 +39,11 @@ $$
 $$
 with $\rho>0$.
 
-<1>1. For every integer $n$,
+::: pf
+
+::: pf-step
+
+For every integer $n$,
 $$
 \int_\gamma z^n\,dz
 =
@@ -48,7 +51,9 @@ i\rho^{n+1}
 \int_0^{2\pi}e^{i(n+1)t}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Along the parametrization,
 $$
 z^n=\rho^ne^{int},
@@ -66,14 +71,21 @@ i\rho e^{it}\,dt
 i\rho^{n+1}
 \int_0^{2\pi}e^{i(n+1)t}\,dt.
 $$
+
 :::
 
-<1>2. If $n\ne-1$, then
+:::
+
+::: pf-step
+
+If $n\ne-1$, then
 $$
 \int_\gamma z^n\,dz=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $n\ne-1$, then $n+1$ is a nonzero integer, so
 $$
 \begin{aligned}
@@ -88,16 +100,23 @@ $$
 \end{aligned}
 $$
 Step <1>1 then gives the stated value.
+
 :::
 
-<1>3. If $n=-1$, then
+:::
+
+::: pf-step
+
+If $n=-1$, then
 $$
 \int_\gamma z^{-1}\,dz
 =
 \boxed{2\pi i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $n=-1$, the integrand in step <1>1 becomes $e^0=1$ and $\rho^{n+1}=1$. Hence
 $$
 \int_\gamma z^{-1}\,dz
@@ -106,9 +125,14 @@ i\int_0^{2\pi}1\,dt
 =
 2\pi i.
 $$
+
 :::
 
-<1>4. Therefore, for every integer $n$,
+:::
+
+::: pf-step
+
+Therefore, for every integer $n$,
 $$
 \boxed{
 \int_\gamma z^n\,dz
@@ -120,13 +144,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This combines steps <1>2 and <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the value for every integer $n$ without using Cauchy's theorem.
+
 :::
+
 :::

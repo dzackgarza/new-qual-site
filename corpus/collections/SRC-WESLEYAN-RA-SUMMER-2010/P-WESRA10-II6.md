@@ -30,10 +30,15 @@ H_E=\{f\in\mathcal H:f=f\chi_E\}.
 Calculate $\|P\|$.
 :::
 
-::: {.solution}
-<1>1. The set $H_E$ is a linear subspace of $\mathcal H$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $H_E$ is a linear subspace of $\mathcal H$.
+
+
+::: pf-proof
+
 If $f,g\in H_E$ and $a,b$ are scalars, then
 \[
 (af+bg)\chi_E
@@ -41,11 +46,18 @@ If $f,g\in H_E$ and $a,b$ are scalars, then
 =af+bg.
 \]
 Hence $af+bg\in H_E$.
+
 :::
 
-<1>2. The subspace $H_E$ is closed in $L^2([0,1])$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subspace $H_E$ is closed in $L^2([0,1])$.
+
+
+::: pf-proof
+
 Let $f_n\in H_E$ and suppose
 \[
 f_n\to f
@@ -71,14 +83,21 @@ in $L^2$, so
 f=f\chi_E.
 \]
 Hence $f\in H_E$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{H_E^\perp=H_{E^c}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $g\in H_{E^c}$ and $f\in H_E$, then
 \[
 f\overline g=0
@@ -109,9 +128,14 @@ Thus $g=0$ almost everywhere on $E$, which means
 g=g\chi_{E^c}.
 \]
 Therefore $g\in H_{E^c}$.
+
 :::
 
-<1>4. The operator
+:::
+
+::: pf-step
+
+The operator
 \[
 P(f)=f\chi_E
 \]
@@ -120,7 +144,9 @@ satisfies
 \|P\|\le1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $f\in L^2([0,1])$,
 \[
 \|Pf\|_2^2
@@ -130,14 +156,21 @@ For every $f\in L^2([0,1])$,
 =\|f\|_2^2.
 \]
 Hence $\|Pf\|_2\le\|f\|_2$, so $\|P\|\le1$.
+
 :::
 
-<1>5. If $m(E)>0$, then
+:::
+
+::: pf-step
+
+If $m(E)>0$, then
 \[
 \boxed{\|P\|=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $m(E)>0$ and $E\subset[0,1]$ has finite measure,
 \[
 \chi_E\in L^2([0,1])
@@ -154,25 +187,36 @@ Therefore
 =1.
 \]
 Together with step <1>4, this gives $\|P\|=1$.
+
 :::
 
-<1>6. If $m(E)=0$, then
+:::
+
+::: pf-step
+
+If $m(E)=0$, then
 \[
 \boxed{\|P\|=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $m(E)=0$, then
 \[
 f\chi_E=0
 \]
 in $L^2$ for every $f$. Hence $P$ is the zero operator, whose norm is $0$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 prove part (a), step <1>3 proves part (b), and steps
 <1>4 through <1>6 compute the norm in all cases for part (c).
+
 :::
+
 :::

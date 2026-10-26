@@ -26,13 +26,18 @@ Prove
 \]
 :::
 
-::: {.solution}
-<1>1. For every $\rho$ with $0<\rho<r$,
+::: pf
+
+::: pf-step
+
+For every $\rho$ with $0<\rho<r$,
 \[
 |f'(z_0)|\le \frac m\rho.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 g(z)=f(z)-f(z_0).
@@ -53,23 +58,34 @@ Therefore
 \le \frac1{2\pi}(2\pi\rho)\frac m{\rho^2}
 =\frac m\rho.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{|f'(z_0)|\le\frac mr}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 holds for every $0<\rho<r$. Letting $\rho\uparrow r$ yields
 \[
 |f'(z_0)|\le\frac mr.
 \]
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 is the required estimate.
+
 :::
+
 :::

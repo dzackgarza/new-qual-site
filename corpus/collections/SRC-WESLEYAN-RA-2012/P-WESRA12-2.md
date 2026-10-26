@@ -32,8 +32,11 @@ Let $X=[0,1]$ with its Borel $\sigma$-algebra and Lebesgue measure $\lambda$.
 Explain why $f$ is integrable and calculate $\int_Xf\,d\lambda$.
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 \[
 x\in(0,1],
 \]
@@ -55,7 +58,9 @@ k+1
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 \sin(2\pi t)
@@ -72,9 +77,14 @@ for integers
 \[
 k\ge0.
 \]
+
 :::
 
-<1>2. Intersecting with
+:::
+
+::: pf-step
+
+Intersecting with
 \[
 t\ge1
 \]
@@ -91,7 +101,9 @@ is
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 k\ge1,
@@ -121,9 +133,14 @@ corresponding to the single point
 x=1,
 \]
 which has measure zero.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lambda
 \{x\in[0,1]:\sin(2\pi/x)\le0\}
@@ -136,20 +153,29 @@ which has measure zero.
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The intervals in step <1>2 have pairwise disjoint interiors, and endpoints
 do not affect Lebesgue measure.
 The measure is therefore the sum of their lengths.
+
 :::
 
-<1>4. The series in step <1>3 equals
+:::
+
+::: pf-step
+
+The series in step <1>3 equals
 \[
 \boxed{
 2\log2-1.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The classical alternating harmonic series gives
 \[
 \log2
@@ -175,9 +201,14 @@ Removing it leaves
 \[
 2\log2-1.
 \]
+
 :::
 
-<1>5. For part (a2), let
+:::
+
+::: pf-step
+
+For part (a2), let
 \[
 E_m
 \]
@@ -192,7 +223,9 @@ Then
 \right)^m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Ignoring the countable set of numbers having two decimal expansions, fixing
 the first $m$ decimal digits determines an interval of length
 \[
@@ -211,9 +244,14 @@ allowed digit blocks, giving total measure
 \frac9{10}
 \right)^m.
 \]
+
 :::
 
-<1>6. The set
+:::
+
+::: pf-step
+
+The set
 \[
 E
 \]
@@ -225,21 +263,30 @@ E
 \]
 up to the countable decimal-expansion ambiguity.
 
-::: {.proof}
+
+::: pf-proof
+
 A decimal expansion contains no digit $7$ exactly when none of its finite
 initial blocks contains a $7$.
 The numbers with two decimal expansions form a countable set, hence have
 measure zero.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lambda(E)=0.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets $E_m$ decrease with $m$ and have finite measure.
 By continuity from above,
 \[
@@ -255,9 +302,14 @@ By continuity from above,
 =
 0.
 \]
+
 :::
 
-<1>8. For part (a3), for each
+:::
+
+::: pf-step
+
+For part (a3), for each
 \[
 k\ge1,
 \]
@@ -278,15 +330,22 @@ Then
 \lambda(F_k)=\frac1{100}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fixing two prescribed decimal digits reduces measure by a factor of
 \[
 10^{-2}.
 \]
 Again the countable set of ambiguous decimal expansions is irrelevant.
+
 :::
 
-<1>9. The measure of numbers for which none of the first $m$ disjoint digit
+:::
+
+::: pf-step
+
+The measure of numbers for which none of the first $m$ disjoint digit
 pairs equals $56$ is
 \[
 \left(
@@ -294,7 +353,9 @@ pairs equals $56$ is
 \right)^m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Among the
 \[
 100
@@ -313,9 +374,14 @@ Thus the measure is
 \[
 \frac{99^m}{100^m}.
 \]
+
 :::
 
-<1>10. Hence the set of numbers containing the consecutive digits
+:::
+
+::: pf-step
+
+Hence the set of numbers containing the consecutive digits
 \[
 56
 \]
@@ -324,7 +390,9 @@ somewhere has measure
 \boxed{1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $G$ be the set of numbers that never contain $56$.
 In particular, no disjoint pair
 \[
@@ -354,9 +422,14 @@ gives
 \lambda(G)=0.
 \]
 Its complement, the set containing $56$ somewhere, has measure $1$.
+
 :::
 
-<1>11. **Dominated Convergence Theorem.**
+:::
+
+::: pf-step
+
+**Dominated Convergence Theorem.**
 
 Let
 \[
@@ -392,14 +465,21 @@ and
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Dominated Convergence Theorem on the measure space
 \[
 ([0,1],\mathcal B,\lambda).
 \]
+
 :::
 
-<1>12. For part (c), set
+:::
+
+::: pf-step
+
+For part (c), set
 \[
 a_n
 \coloneqq
@@ -434,7 +514,9 @@ I_1
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The nearest-reciprocal boundary between
 \[
 \frac1n
@@ -459,11 +541,18 @@ occurs inside $[0,1]$, and the midpoint is
 \[
 \frac34.
 \]
+
 :::
 
-<1>13. The midpoint tie set is countable and therefore has measure zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The midpoint tie set is countable and therefore has measure zero.
+
+
+::: pf-proof
+
 There is one tie point between each consecutive pair
 \[
 \frac1n,
@@ -472,9 +561,14 @@ There is one tie point between each consecutive pair
 Thus the set of ties is countable.
 Any ambiguity in the choice of $n(x)$ affects $f$ only on this null set and
 does not affect the integral.
+
 :::
 
-<1>14. On
+:::
+
+::: pf-step
+
+On
 \[
 I_n,
 \]
@@ -503,7 +597,9 @@ R_n
 \frac1{2n(n-1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The left endpoint is
 \[
 \frac12
@@ -537,9 +633,14 @@ R_n
 =
 \frac1{2n(n-1)}.
 \]
+
 :::
 
-<1>15. For
+:::
+
+::: pf-step
+
+For
 \[
 n\ge2,
 \]
@@ -555,7 +656,9 @@ d(x)\,dx
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The graph of
 \[
 d(x)
@@ -574,9 +677,14 @@ Therefore
 \frac12R_n^2.
 \]
 Substitute the values from step <1>14.
+
 :::
 
-<1>16. For
+:::
+
+::: pf-step
+
+For
 \[
 n=1,
 \]
@@ -586,7 +694,9 @@ n=1,
 \frac1{32}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On
 \[
 I_1=[3/4,1],
@@ -605,11 +715,18 @@ Thus
 =
 \frac1{32}.
 \]
+
 :::
 
-<1>17. The function $f$ is measurable and integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is measurable and integrable.
+
+
+::: pf-proof
+
 Up to the countable tie set, $f$ is given on each interval $I_n$ by either
 \[
 \left|
@@ -631,9 +748,14 @@ Therefore
 1\in L^1([0,1]).
 \]
 Hence $f$ is integrable.
+
 :::
 
-<1>18. Its integral is
+:::
+
+::: pf-step
+
+Its integral is
 \[
 \int_0^1f(x)\,dx
 =
@@ -648,14 +770,21 @@ Hence $f$ is integrable.
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The intervals $I_n$ partition $(0,1]$ up to their shared endpoints.
 The function vanishes on even-indexed cells and equals the distance function
 on odd-indexed cells.
 Apply steps <1>15--<1>16.
+
 :::
 
-<1>19. For
+:::
+
+::: pf-step
+
+For
 \[
 n\ge2,
 \]
@@ -678,7 +807,9 @@ n\ge2,
 \frac1{4n^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Bring the right-hand side over the common denominator
 \[
 8n^2(n-1)^2(n+1)^2
@@ -689,9 +820,14 @@ Both sides reduce to
 \frac{n^2+1}
 {4n^2(n^2-1)^2}.
 \]
+
 :::
 
-<1>20. Summing the first-order terms in step <1>19 over odd
+:::
+
+::: pf-step
+
+Summing the first-order terms in step <1>19 over odd
 \[
 n\ge3
 \]
@@ -700,7 +836,9 @@ gives
 -\frac18.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 n=2k+1,
@@ -728,16 +866,23 @@ The series telescopes:
 =
 -\frac18.
 \]
+
 :::
 
-<1>21. Summing the two shifted-square terms gives
+:::
+
+::: pf-step
+
+Summing the two shifted-square terms gives
 \[
 \frac{\pi^2}{96}
 -
 \frac1{32}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again set
 \[
 n=2k+1.
@@ -785,9 +930,14 @@ this becomes
 -
 \frac1{32}.
 \]
+
 :::
 
-<1>22. Summing the final term
+:::
+
+::: pf-step
+
+Summing the final term
 \[
 \frac1{4n^2}
 \]
@@ -802,7 +952,9 @@ gives
 \frac14.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sum of reciprocal squares over positive odd integers is
 \[
 \sum_{\substack{n\ge1\\n\text{ odd}}}
@@ -827,9 +979,14 @@ Multiply by
 \[
 \frac14.
 \]
+
 :::
 
-<1>23. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^1f(x)\,dx
@@ -842,7 +999,9 @@ Multiply by
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>18--<1>22,
 \[
 \begin{aligned}
@@ -877,9 +1036,14 @@ Finally,
 =
 \frac{\pi^2-9}{24}.
 \]
+
 :::
 
-<1>24. The answers to part (a) are
+:::
+
+::: pf-step
+
+The answers to part (a) are
 \[
 \boxed{
 2\log2-1,
@@ -890,14 +1054,20 @@ Finally,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are steps <1>4, <1>7, and <1>10.
+
 :::
 
-<1>25. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>10 solve part (a), step <1>11 states the Dominated
 Convergence Theorem for part (b), and steps <1>12--<1>23 solve part (c).
+
 :::
+
 :::

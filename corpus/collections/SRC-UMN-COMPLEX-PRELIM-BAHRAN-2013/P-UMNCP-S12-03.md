@@ -25,8 +25,11 @@ Suppose there are positive real numbers \(a,b,k\) such that
 for every \(z\in\mathbb C\). Prove that \(f\) is a polynomial.
 :::
 
-::: {.solution}
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 $$
 R>0,
 $$
@@ -37,14 +40,21 @@ $$
 a+bR^k.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the assumed growth estimate restricted to the circle
 $$
 |z|=R.
 $$
+
 :::
 
-<1>2. Fix an integer
+:::
+
+::: pf-step
+
+Fix an integer
 $$
 m>k.
 $$
@@ -53,7 +63,9 @@ $$
 \boxed{f^{(m)}(0)=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Cauchy's estimate for the $m$th derivative on the circle
 $$
 |z|=R
@@ -93,11 +105,18 @@ forces the right-hand side to tend to $0$. Hence
 $$
 f^{(m)}(0)=0.
 $$
+
 :::
 
-<1>3. Every Taylor coefficient of degree strictly larger than $k$ vanishes.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every Taylor coefficient of degree strictly larger than $k$ vanishes.
+
+
+::: pf-proof
+
 The coefficient of
 $$
 z^m
@@ -110,9 +129,14 @@ Step <1>2 shows that this is zero for every integer
 $$
 m>k.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 f
 $$
@@ -121,7 +145,9 @@ $$
 \boxed{\lfloor k\rfloor}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is entire, its Taylor series at $0$ converges everywhere:
 $$
 f(z)
@@ -138,11 +164,15 @@ $$
 \lfloor k\rfloor.
 $$
 Thus the series is finite.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required polynomiality, with the sharper degree bound.
+
 :::
+
 :::

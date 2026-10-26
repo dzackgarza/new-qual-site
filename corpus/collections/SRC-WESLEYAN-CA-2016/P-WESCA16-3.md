@@ -25,13 +25,18 @@ Compute:
 (c) $\displaystyle\int_{-\infty}^{\infty}\frac{x+1}{(x^2+1)^2}\,dx$.
 :::
 
-::: {.solution}
-<1>1. The integral in part (a) is
+::: pf
+
+::: pf-step
+
+The integral in part (a) is
 \[
 \boxed{\int_\gamma e^{2z^2}\,dz=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 z\longmapsto e^{2z^2}
@@ -40,41 +45,62 @@ is entire. The contour $\gamma$ is closed, so Cauchy's integral theorem gives
 \[
 \int_\gamma e^{2z^2}\,dz=0.
 \]
+
 :::
 
-<1>2. The Laurent expansion of the integrand in part (b) is
+:::
+
+::: pf-step
+
+The Laurent expansion of the integrand in part (b) is
 \[
 \left(\frac1z-\frac1{z^2}\right)^3
 =\frac1{z^3}-\frac3{z^4}+\frac3{z^5}-\frac1{z^6}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the cube:
 \[
 \left(z^{-1}-z^{-2}\right)^3
 =z^{-3}-3z^{-4}+3z^{-5}-z^{-6}.
 \]
+
 :::
 
-<1>3. The integral in part (b) is
+:::
+
+::: pf-step
+
+The integral in part (b) is
 \[
 \boxed{
 \int_{|z|=5}
 \left(\frac1z-\frac1{z^2}\right)^3\,dz=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only singularity inside the circle is $z=0$. By step <1>2, the coefficient
 of $z^{-1}$ in the Laurent expansion is $0$, so the residue at $0$ is $0$.
 The residue theorem therefore gives the stated value.
+
 :::
 
-<1>4. The odd part of the integrand in part (c) integrates to zero:
+:::
+
+::: pf-step
+
+The odd part of the integrand in part (c) integrates to zero:
 \[
 \int_{-\infty}^{\infty}\frac{x}{(x^2+1)^2}\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 x\longmapsto\frac{x}{(x^2+1)^2}
@@ -82,15 +108,22 @@ x\longmapsto\frac{x}{(x^2+1)^2}
 is odd and absolutely integrable on $\mathbb R$. Its integral over the
 symmetric interval $[-R,R]$ is zero for every $R$, and passing to the limit
 gives the claim.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_{-\infty}^{\infty}\frac{dx}{(x^2+1)^2}
 =\frac{\pi}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set $x=\tan\theta$. Then
 \[
 dx=\sec^2\theta\,d\theta,
@@ -104,24 +137,35 @@ $\theta$ ranges from $-\pi/2$ to $\pi/2$. Hence
 =\int_{-\pi/2}^{\pi/2}\cos^2\theta\,d\theta
 =\frac{\pi}{2}.
 \]
+
 :::
 
-<1>6. The integral in part (c) is
+:::
+
+::: pf-step
+
+The integral in part (c) is
 \[
 \boxed{
 \int_{-\infty}^{\infty}\frac{x+1}{(x^2+1)^2}\,dx
 =\frac{\pi}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral into the sum of its $x$ numerator term and its constant
 numerator term. Step <1>4 evaluates the first as $0$, and step <1>5 evaluates
 the second as $\pi/2$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1, <1>3, and <1>6 give the three requested values.
+
 :::
+
 :::

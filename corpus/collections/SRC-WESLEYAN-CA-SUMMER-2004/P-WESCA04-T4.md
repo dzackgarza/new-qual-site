@@ -19,8 +19,11 @@ audit:
 State the Open Mapping Theorem.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \Omega\subseteq\mathbb C
 \]
@@ -38,12 +41,19 @@ f(\Omega)
 Equivalently, $f$ maps every open subset of $\Omega$ to an open subset of
 $\mathbb C$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Open Mapping Theorem. The remaining steps prove the local
 statement at an arbitrary point of $\Omega$.
+
 :::
 
-<1>2. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 z_0\in\Omega
 \]
@@ -64,7 +74,9 @@ f(z)-w_0
 g(z_0)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The holomorphic function
 \[
 f-w_0
@@ -75,9 +87,14 @@ zero.
 
 Therefore $z_0$ is a zero of finite order $m\ge1$, which gives the stated
 factorization with $g(z_0)\ne0$.
+
 :::
 
-<1>3. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 r>0
 \]
@@ -88,15 +105,22 @@ such that
 \]
 and $z_0$ is the only zero of $f-w_0$ in that closed disk.
 
-::: {.proof}
+
+::: pf-proof
+
 Zeros of a nonzero holomorphic function are isolated. Thus there is a
 neighborhood of $z_0$ containing no other zero of $f-w_0$.
 
 Because $\Omega$ is open, choose $r>0$ small enough that the closed disk
 lies in both that neighborhood and $\Omega$.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \delta
 \coloneqq
@@ -108,7 +132,9 @@ Then
 \delta>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the continuous function
 \[
 |f(z)-w_0|
@@ -118,9 +144,14 @@ is strictly positive on the compact circle
 |z-z_0|=r.
 \]
 It therefore attains a positive minimum there.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 |w-w_0|<\delta,
 \]
@@ -129,7 +160,9 @@ then $f(z)=w$ has at least one solution in
 B(z_0,r).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle
 \[
 |z-z_0|=r,
@@ -162,16 +195,23 @@ $z_0$ and no other zero in the disk by step <1>3. Hence
 f(z)-w
 \]
 has $m$ zeros in the disk, in particular at least one.
+
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 B(w_0,\delta)
 \subseteq
 f(\Omega).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 w\in B(w_0,\delta).
@@ -185,15 +225,22 @@ with
 f(z)=w.
 \]
 Hence every point of the disk around $w_0$ lies in the image.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 f(\Omega)
 \]
 is open.
 
-::: {.proof}
+
+::: pf-proof
+
 Every point
 \[
 w_0\in f(\Omega)
@@ -206,9 +253,14 @@ for some $z_0\in\Omega$. Step <1>6 gives an open disk centered at $w_0$
 contained in $f(\Omega)$.
 
 Thus every point of $f(\Omega)$ is an interior point, so the image is open.
+
 :::
 
-<1>8. More generally, if
+:::
+
+::: pf-step
+
+More generally, if
 \[
 V\subseteq\Omega
 \]
@@ -218,7 +270,9 @@ f(V)
 \]
 is open.
 
-::: {.proof}
+
+::: pf-proof
+
 Each connected component $V_\alpha$ of $V$ is an open connected subset of
 $\Omega$.
 
@@ -243,12 +297,16 @@ f(V)
 \bigcup_\alpha f(V_\alpha)
 \]
 is a union of open sets.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the standard Open Mapping Theorem, and step <1>8 gives the
 equivalent open-map formulation.
+
 :::
+
 :::

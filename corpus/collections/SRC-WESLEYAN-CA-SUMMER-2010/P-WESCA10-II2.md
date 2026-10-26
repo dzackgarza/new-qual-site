@@ -30,14 +30,19 @@ Prove that for every piecewise smooth closed path $\gamma$ avoiding the poles an
 \]
 :::
 
-::: {.solution}
-<1>1. If $f$ has a simple pole at $a$ and $g$ is analytic near $a$, then
+::: pf
+
+::: pf-step
+
+If $f$ has a simple pole at $a$ and $g$ is analytic near $a$, then
 \[
 \boxed{\operatorname{Res}(a,fg)
 =g(a)\operatorname{Res}(a,f)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ has a simple pole at $a$, there is a function $h$ analytic near $a$
 such that
 \[
@@ -58,9 +63,14 @@ f(z)g(z)
 \]
 The final two terms are analytic near $a$, so the coefficient of
 $(z-a)^{-1}$ is $c_{-1}g(a)$. This is exactly the residue of $fg$ at $a$.
+
 :::
 
-<1>2. Under the hypotheses of part (b),
+:::
+
+::: pf-step
+
+Under the hypotheses of part (b),
 \[
 \boxed{
 \frac1{2\pi i}\int_\gamma f(z)g(z)\,dz
@@ -68,7 +78,9 @@ $(z-a)^{-1}$ is $c_{-1}g(a)$. This is exactly the residue of $fg$ at $a$.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The product $fg$ is analytic on $D\setminus\{a_1,\dots,a_n\}$, and its only
 possible singularities in $D$ are the points $a_k$. Since $\gamma$ is
 null-homologous in $D$ and avoids these points, the residue theorem gives
@@ -83,11 +95,15 @@ Applying step <1>1 at each $a_k$ gives
 =g(a_k)\operatorname{Res}(a_k,f),
 \]
 and substitution yields the displayed formula.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and step <1>2 proves part (b).
+
 :::
+
 :::

@@ -22,8 +22,11 @@ f(x)=x+\frac1x
 is continuous at $x=3$.
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 |x-3|<1,
 \]
@@ -34,7 +37,9 @@ then
 \frac76|x-3|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inequality $|x-3|<1$ implies
 \[
 2<x<4,
@@ -62,14 +67,21 @@ one has
 \frac76|x-3|.
 \end{aligned}
 \]
+
 :::
 
-<1>2. Given $\varepsilon>0$, choose
+:::
+
+::: pf-step
+
+Given $\varepsilon>0$, choose
 \[
 \boxed{\delta=\min\left\{1,\frac{6\varepsilon}{7}\right\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $|x-3|<\delta$, then $|x-3|<1$, so step <1>1 applies, and
 \[
 \left|f(x)-f(3)\right|
@@ -81,12 +93,16 @@ If $|x-3|<\delta$, then $|x-3|<1$, so step <1>1 applies, and
 \varepsilon.
 \]
 Thus the $\varepsilon$-$\delta$ condition for continuity at $3$ is satisfied.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves directly from the definition that $f$ is continuous at
 $x=3$.
+
 :::
+
 :::

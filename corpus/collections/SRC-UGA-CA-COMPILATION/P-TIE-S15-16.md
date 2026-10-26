@@ -37,16 +37,21 @@ $$
 The intended statement is correct when the closed interior bounded by $\gamma$ lies in $\Omega$.
 :::
 
-::: {.solution}
 Assume the corrected hypothesis that the closure of the Jordan interior $D$ of $\gamma$ is contained in $\Omega$.
 Write
 $$
 f=u+iv.
 $$
 
-<1>1. The harmonic function $v$ vanishes on $\gamma$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The harmonic function $v$ vanishes on $\gamma$.
+
+
+::: pf-proof
+
 The hypothesis
 $$
 f(\gamma)\subset\RR
@@ -60,15 +65,22 @@ $$
 v=0
 $$
 on $\partial D=\gamma$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 v\equiv0
 $$
 on $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is holomorphic on a neighborhood of $\overline D$, the function $v$ is harmonic on $D$ and continuous on $\overline D$. By step <1>1,
 $$
 v=0
@@ -88,21 +100,35 @@ $$
 v\equiv0
 $$
 on $D$.
+
 :::
 
-<1>3. The function $f$ is constant on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant on $D$.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 f(D)\subset\RR.
 $$
 If $f$ were nonconstant on the open connected set $D$, the open mapping theorem would imply that $f(D)$ is open in $\CC$. But no nonempty subset of $\RR$ is open in $\CC$. Hence $f$ is constant on $D$.
+
 :::
 
-<1>4. The function $f$ is constant on all of $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant on all of $\Omega$.
+
+
+::: pf-proof
+
 Let
 $$
 f|_D\equiv c.
@@ -116,11 +142,15 @@ $$
 f-c\equiv0
 $$
 throughout $\Omega$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 prove the corrected theorem. The remark gives a counterexample to the uncorrected source statement.
+
 :::
+
 :::

@@ -25,13 +25,16 @@ Prove that
 for every \(z\) in the unit disk.
 :::
 
-::: {.solution}
 Fix
 $$
 z_0\in\mathbb D.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 0<r<1-|z_0|,
 $$
@@ -41,7 +44,9 @@ $$
 $$
 lies inside the unit disk.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 |\zeta-z_0|\le r,
@@ -57,9 +62,14 @@ r+|z_0|
 1.
 $$
 Thus every point of the closed disk lies in $\mathbb D$.
+
 :::
 
-<1>2. For every such $r$, Cauchy's integral formula gives
+:::
+
+::: pf-step
+
+For every such $r$, Cauchy's integral formula gives
 $$
 f'(z_0)
 =
@@ -70,11 +80,18 @@ f'(z_0)
 \,d\zeta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $f$ is holomorphic on an open neighborhood of the closed disk centered at $z_0$ of radius $r$. The derivative form of Cauchy's integral formula therefore applies.
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 $$
 0<r<1-|z_0|,
 $$
@@ -86,7 +103,9 @@ $$
 \frac Mr}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2 and the ML estimate,
 $$
 \begin{aligned}
@@ -110,9 +129,14 @@ $$
 |\zeta-z_0|=r
 $$
 on the contour.
+
 :::
 
-<1>4. Letting
+:::
+
+::: pf-step
+
+Letting
 $$
 r\uparrow1-|z_0|
 $$
@@ -124,7 +148,9 @@ $$
 \frac{M}{1-|z_0|}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 holds for every
 $$
 r<1-|z_0|.
@@ -140,21 +166,32 @@ $$
 \frac{M}{r_j}
 $$
 for every $j$. Passing to the limit gives the displayed estimate.
+
 :::
 
-<1>5. The estimate holds for every point of the unit disk.
+:::
 
-::: {.proof}
+::: pf-step
+
+The estimate holds for every point of the unit disk.
+
+
+::: pf-proof
+
 The point
 $$
 z_0\in\mathbb D
 $$
 was arbitrary.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4--<1>5 prove the required bound.
+
 :::
+
 :::

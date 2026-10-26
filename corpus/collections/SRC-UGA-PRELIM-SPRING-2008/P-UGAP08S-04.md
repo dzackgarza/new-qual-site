@@ -28,8 +28,11 @@ Tx_{k+1},Tx_{k+2},\ldots,Tx_n
 is a basis for $\operatorname{range}T$.
 :::
 
-::: {.solution}
-<1>1. The vectors
+::: pf
+
+::: pf-step
+
+The vectors
 \[
 Tx_{k+1},\dots,Tx_n
 \]
@@ -38,7 +41,9 @@ span
 \operatorname{range}T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 y\in\operatorname{range}T.
@@ -94,9 +99,14 @@ a_{k+1}Tx_{k+1}
 a_nTx_n.
 \]
 Thus the displayed vectors span the range.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 a_{k+1}Tx_{k+1}
 +\cdots+
@@ -113,7 +123,9 @@ a_nx_n
 \ker T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity,
 \[
 T
@@ -127,9 +139,14 @@ a_nx_n
 \]
 This is exactly the condition for the vector in parentheses to lie in the
 kernel.
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 \[
 x_1,dots,x_k
 \]
@@ -150,7 +167,9 @@ a_nx_n
 b_1x_1+cdots+b_kx_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 places the left-hand side in
 \[
 \ker T.
@@ -159,9 +178,14 @@ Every vector in the kernel is a linear combination of its basis
 \[
 x_1,dots,x_k.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 b_1x_1+cdots+b_kx_k
 -
@@ -172,11 +196,18 @@ a_nx_n
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Move all terms in step <1>3 to one side.
+
 :::
 
-<1>5. Because
+:::
+
+::: pf-step
+
+Because
 \[
 x_1,dots,x_n
 \]
@@ -192,23 +223,37 @@ a_n
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A basis is linearly independent.
 Thus the only linear relation among the basis vectors is the trivial one.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 Tx_{k+1},\dots,Tx_n
 \]
 are linearly independent.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows that every linear relation among them has only zero
 coefficients.
+
 :::
 
-<1>7. Combining spanning and independence,
+:::
+
+::: pf-step
+
+Combining spanning and independence,
 \[
 \boxed{
 Tx_{k+1},Tx_{k+2},\ldots,Tx_n
@@ -219,13 +264,19 @@ is a basis of
 \operatorname{range}T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives spanning and step <1>6 gives linear independence.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the desired conclusion.
+
 :::
+
 :::

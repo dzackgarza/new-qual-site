@@ -27,7 +27,6 @@ R_2=\{z\in\mathbb C:\operatorname{Re}z>0,\ \operatorname{Im}z>0\}.
 \]
 :::
 
-::: {.solution}
 Define
 $$
 \boxed{
@@ -36,7 +35,11 @@ F(z)
 \frac{1+z^2}{1-z^2}}.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 S(z)=z^2
 $$
@@ -47,7 +50,9 @@ D_+
 \{w\in\CC:|w|<1,\ \operatorname{Im}w>0\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 z=re^{i\theta}
@@ -93,9 +98,14 @@ $$
 S'(z)=2z\ne0
 $$
 on $R_1$, so $S$ is conformal.
+
 :::
 
-<1>2. The Möbius map
+:::
+
+::: pf-step
+
+The Möbius map
 $$
 T(w)
 =
@@ -103,7 +113,9 @@ T(w)
 $$
 maps $D_+$ into $R_2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 w=u+iv\in D_+.
@@ -147,11 +159,18 @@ Thus
 $$
 T(w)\in R_2.
 $$
+
 :::
 
-<1>3. The map $T:D_+\to R_2$ is bijective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $T:D_+\to R_2$ is bijective.
+
+
+::: pf-proof
+
 The inverse Möbius transformation is
 $$
 T^{-1}(\zeta)
@@ -197,9 +216,14 @@ $$
 w\in D_+.
 $$
 Therefore $T$ is onto $R_2$, and injectivity follows from the fact that it is a Möbius transformation.
+
 :::
 
-<1>4. The composition
+:::
+
+::: pf-step
+
+The composition
 $$
 F=T\circ S
 $$
@@ -208,7 +232,9 @@ $$
 R_1\xrightarrow{\sim}R_2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 S:R_1\to D_+
@@ -223,11 +249,15 @@ $$
 =
 \frac{1+z^2}{1-z^2}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested explicit conformal equivalence.
+
 :::
+
 :::

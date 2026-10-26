@@ -18,8 +18,11 @@ For each of the following topologies on the underlying set $\mathbb R$, determin
 2. The included-point topology (with included point $0$).
 :::
 
-::: {.solution}
-<1>1. In the excluded-point topology with excluded point $0$, the open sets
+::: pf
+
+::: pf-step
+
+In the excluded-point topology with excluded point $0$, the open sets
 are
 \[
 \mathbb R
@@ -29,13 +32,20 @@ and all subsets of
 \mathbb R\setminus\{0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the excluded-point topology.
 Equivalently, every subset not containing $0$ is open, while the only open
 set containing $0$ is the whole space.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 x,y\in\mathbb R
 \]
@@ -56,7 +66,9 @@ y,&\frac12<t\le1.
 \]
 Then $\gamma$ is continuous for the excluded-point topology.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 U
@@ -100,11 +112,18 @@ Each is open in the subspace topology on
 [0,1].
 \]
 Therefore $\gamma$ is continuous.
+
 :::
 
-<1>3. Every nonzero point can also be joined to $0$ by a path.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero point can also be joined to $0$ by a path.
+
+
+::: pf-proof
+
 For
 \[
 x\ne0,
@@ -137,41 +156,67 @@ U=\mathbb R
 \]
 and the preimage is all of $[0,1]$.
 Thus $\eta$ is continuous.
+
 :::
 
-<1>4. Hence the excluded-point real line is path-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence the excluded-point real line is path-connected.
+
+
+::: pf-proof
+
 If both endpoints are nonzero, use step <1>2.
 If one endpoint is $0$, use step <1>3 or reverse that path.
 Thus every two points can be joined by a path.
+
 :::
 
-<1>5. Therefore, in the excluded-point topology,
+:::
+
+::: pf-step
+
+Therefore, in the excluded-point topology,
 \[
 \boxed{
 \text{there is exactly one path component and exactly one connected component, namely }\mathbb R.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Path-connected spaces are connected.
 By step <1>4, the whole space is path-connected, so it is itself the unique
 path component and therefore also the unique connected component.
+
 :::
 
-<1>6. In the included-point topology with included point $0$, the open sets
+:::
+
+::: pf-step
+
+In the included-point topology with included point $0$, the open sets
 are
 \[
 \varnothing
 \]
 and all subsets containing $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the included-point topology.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 \[
 x,y\in\mathbb R.
 \]
@@ -191,7 +236,9 @@ y,&t=1.
 \]
 Then $\gamma$ is continuous for the included-point topology.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 U
@@ -219,30 +266,49 @@ Depending on whether $x$ and $y$ lie in $U$, the preimage is one of
 \]
 Each is open in the subspace topology on $[0,1]$.
 Hence $\gamma$ is continuous.
+
 :::
 
-<1>8. Therefore the included-point real line is path-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the included-point real line is path-connected.
+
+
+::: pf-proof
+
 Step <1>7 constructs a path between arbitrary
 \[
 x,y\in\mathbb R.
 \]
+
 :::
 
-<1>9. Consequently, in the included-point topology,
+:::
+
+::: pf-step
+
+Consequently, in the included-point topology,
 \[
 \boxed{
 \text{there is exactly one path component and exactly one connected component, namely }\mathbb R.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 As in step <1>5, path-connectedness implies connectedness, and the whole
 space is the unique component of each type.
+
 :::
 
-<1>10. The complete answer is:
+:::
+
+::: pf-step
+
+The complete answer is:
 \[
 \boxed{
 \begin{array}{c|cc|cc}
@@ -265,13 +331,19 @@ space is the unique component of each type.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>4--<1>5 and <1>8--<1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 gives all requested classifications.
+
 :::
+
 :::

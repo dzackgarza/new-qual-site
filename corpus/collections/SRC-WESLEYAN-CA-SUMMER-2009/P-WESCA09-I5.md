@@ -20,21 +20,30 @@ Let $U\subset\mathbb C$ be open and let $f:U\to\mathbb C$.
 Define what it means for a function $F$ to be a primitive of $f$.
 :::
 
-::: {.solution}
-<1>1. A function $F:U\to\mathbb C$ is a primitive of $f$ on $U$ if $F$ is
+::: pf
+
+::: pf-step
+
+A function $F:U\to\mathbb C$ is a primitive of $f$ on $U$ if $F$ is
 holomorphic on $U$ and
 \[
 \boxed{F'(z)=f(z)\qquad\text{for every }z\in U}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of a primitive, or antiderivative, of a complex-valued
 function on an open set.
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition.
+
 :::
+
 :::

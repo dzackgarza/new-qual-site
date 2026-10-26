@@ -18,8 +18,11 @@ audit:
 State both parts of the Fundamental Theorem of Calculus and outline a proof of one of them.
 :::
 
-::: {.solution}
-<1>1. **Fundamental Theorem of Calculus, Part I.**
+::: pf
+
+::: pf-step
+
+**Fundamental Theorem of Calculus, Part I.**
 
 Let
 \[
@@ -42,12 +45,19 @@ F'(x)=f(x).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the first standard form of the theorem.
 The proof is given in steps <1>3--<1>6.
+
 :::
 
-<1>2. **Fundamental Theorem of Calculus, Part II.**
+:::
+
+::: pf-step
+
+**Fundamental Theorem of Calculus, Part II.**
 
 Let
 \[
@@ -74,12 +84,19 @@ G(b)-G(a).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equivalently, definite integration computes the net change of any
 antiderivative.
+
 :::
 
-<1>3. To prove Part I, fix
+:::
+
+::: pf-step
+
+To prove Part I, fix
 \[
 x\in(a,b)
 \]
@@ -95,7 +112,9 @@ Then
 \int_x^{x+h}f(t)\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By additivity of the integral,
 \[
 F(x+h)-F(x)
@@ -107,9 +126,14 @@ F(x+h)-F(x)
 \int_x^{x+h}f.
 \]
 Divide by $h$.
+
 :::
 
-<1>4. Subtracting $f(x)$ gives
+:::
+
+::: pf-step
+
+Subtracting $f(x)$ gives
 \[
 \frac{F(x+h)-F(x)}{h}
 -
@@ -121,7 +145,9 @@ f(x)
 \,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f(x)
@@ -130,9 +156,14 @@ f(x)
 \int_x^{x+h}f(x)\,dt,
 \]
 subtract the two averages.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \left|
 \frac{F(x+h)-F(x)}{h}
@@ -144,7 +175,9 @@ f(x)
 |f(t)-f(x)|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>4,
 \[
 \begin{aligned}
@@ -164,9 +197,14 @@ Using step <1>4,
 |f(t)-f(x)|.
 \end{aligned}
 \]
+
 :::
 
-<1>6. Letting
+:::
+
+::: pf-step
+
+Letting
 \[
 h\to0,
 \]
@@ -175,7 +213,9 @@ the right-hand side tends to $0$, so
 F'(x)=f(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Continuity of $f$ at $x$ implies
 \[
 |f(t)-f(x)|
@@ -191,11 +231,18 @@ Hence
 =
 f(x).
 \]
+
 :::
 
-<1>7. Part II follows immediately from Part I.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part II follows immediately from Part I.
+
+
+::: pf-proof
+
 Define
 \[
 F(x)
@@ -238,11 +285,15 @@ so
 =
 G(b)-G(a).
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 state both parts, and steps <1>3--<1>6 prove Part I.
+
 :::
+
 :::

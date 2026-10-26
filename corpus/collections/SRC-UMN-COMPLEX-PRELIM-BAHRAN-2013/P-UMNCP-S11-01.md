@@ -24,27 +24,37 @@ az^n+z+1
 has at least one root in \(|z|\le2\).
 :::
 
-::: {.solution}
 Let
 $$
 p(z)=az^n+z+1.
 $$
 
-<1>1. If $a=0$, then $p$ has the root
+::: pf
+
+::: pf-step
+
+If $a=0$, then $p$ has the root
 $$
 z=-1,
 $$
 which lies in $|z|\le2$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $a=0$, then
 $$
 p(z)=z+1.
 $$
 Its unique root is $-1$.
+
 :::
 
-<1>2. Assume $a\ne0$ and, toward a contradiction, suppose every root
+:::
+
+::: pf-step
+
+Assume $a\ne0$ and, toward a contradiction, suppose every root
 $$
 r_1,\ldots,r_n
 $$
@@ -57,7 +67,9 @@ $$
 \boxed{|a|<2^{-n}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $a\ne0$, the polynomial has degree $n$. By Viète's formula,
 $$
 r_1r_2\cdots r_n
@@ -76,9 +88,14 @@ Hence
 $$
 |a|<2^{-n}.
 $$
+
 :::
 
-<1>3. On the circle
+:::
+
+::: pf-step
+
+On the circle
 $$
 |z|=2,
 $$
@@ -87,7 +104,9 @@ $$
 |az^n|<|z+1|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 |az^n|
@@ -107,45 +126,70 @@ $$
 |az^n|<|z+1|
 $$
 on the whole circle.
+
 :::
 
-<1>4. The polynomial $p$ has exactly one zero in
+:::
+
+::: pf-step
+
+The polynomial $p$ has exactly one zero in
 $$
 |z|<2,
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 p(z)
 =(z+1)+az^n.
 $$
 By step <1>3, Rouché's theorem shows that $p$ and $z+1$ have the same number of zeros in $|z|<2$. The function $z+1$ has exactly one such zero, namely $-1$.
+
 :::
 
-<1>5. The assumption in step <1>2 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumption in step <1>2 is impossible.
+
+
+::: pf-proof
+
 Step <1>2 assumed that every root of $p$ satisfies
 $$
 |r_j|>2,
 $$
 so $p$ would have no root in $|z|<2$. Step <1>4 gives one root there, a contradiction.
+
 :::
 
-<1>6. Therefore $p$ has at least one root in
+:::
+
+::: pf-step
+
+Therefore $p$ has at least one root in
 $$
 \boxed{|z|\le2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 handles $a=0$, and steps <1>2--<1>5 handle $a\ne0$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

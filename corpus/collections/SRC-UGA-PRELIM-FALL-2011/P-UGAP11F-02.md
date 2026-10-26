@@ -25,7 +25,6 @@ Find an invertible matrix $A$ and a diagonal matrix $B$ such that
 \]
 :::
 
-::: {.solution}
 Let
 $$
 M=
@@ -35,12 +34,18 @@ M=
 \end{pmatrix}.
 $$
 
-<1>1. The characteristic polynomial of $M$ is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of $M$ is
 $$
 \boxed{\chi_M(\lambda)=(\lambda-2)(\lambda+1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One computes
 $$
 \begin{aligned}
@@ -61,9 +66,14 @@ $$
 (\lambda-2)(\lambda+1).
 \end{aligned}
 $$
+
 :::
 
-<1>2. An eigenvector for the eigenvalue $2$ is
+:::
+
+::: pf-step
+
+An eigenvector for the eigenvalue $2$ is
 $$
 v_2=
 \begin{pmatrix}
@@ -80,7 +90,9 @@ v_{-1}=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\lambda=2$,
 $$
 M-2I
@@ -116,9 +128,14 @@ Hence
 $$
 Mv_{-1}=-v_{-1}.
 $$
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \boxed{
 A=
@@ -135,7 +152,9 @@ B=
 $$
 Then $A$ is invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $A$ are the two eigenvectors from step <1>2. Moreover,
 $$
 \det A
@@ -144,14 +163,21 @@ $$
 =1\ne0.
 $$
 Thus $A$ is invertible.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 M=ABA^{-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since the columns of $A$ are eigenvectors with eigenvalues given by the diagonal entries of $B$,
 $$
 MA=AB.
@@ -160,11 +186,15 @@ Right-multiplying by $A^{-1}$ gives
 $$
 M=ABA^{-1}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>4 provide the requested matrices and verify the similarity relation.
+
 :::
+
 :::

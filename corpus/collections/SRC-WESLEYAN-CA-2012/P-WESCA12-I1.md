@@ -19,14 +19,17 @@ audit:
 Give three equivalent characterizations of analyticity of a complex-valued function $f$ on a domain $D\subset\mathbb C$.
 :::
 
-::: {.solution}
 Let
 \[
 f:D\to\mathbb C.
 \]
 The following are equivalent.
 
-<1>1. **Complex differentiability at every point.**
+::: pf
+
+::: pf-step
+
+**Complex differentiability at every point.**
 
 For every
 \[
@@ -41,12 +44,19 @@ f'(z_0)
 \]
 exists.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the usual definition that $f$ is holomorphic on $D$.
 In one complex variable, “holomorphic” and “analytic” are equivalent.
+
 :::
 
-<1>2. **Local power-series representation.**
+:::
+
+::: pf-step
+
+**Local power-series representation.**
 
 For every
 \[
@@ -74,7 +84,9 @@ a_n(z-z_0)^n
 (|z-z_0|<r).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is holomorphic, Cauchy's integral formula gives
 \[
 a_n
@@ -85,9 +97,14 @@ and the Taylor series converges to $f$ on every sufficiently small disk.
 
 Conversely, a convergent power series may be differentiated term-by-term
 inside its radius of convergence, so it defines a holomorphic function.
+
 :::
 
-<1>3. **Morera's criterion.**
+:::
+
+::: pf-step
+
+**Morera's criterion.**
 
 The function $f$ is continuous on $D$ and
 \[
@@ -101,15 +118,22 @@ for every closed triangle
 T\subset D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is holomorphic, Cauchy's theorem gives vanishing of the integral
 around every triangle.
 
 Conversely, Morera's theorem says that a continuous function whose integral
 around every triangle vanishes is holomorphic.
+
 :::
 
-<1>4. Therefore each of the three statements
+:::
+
+::: pf-step
+
+Therefore each of the three statements
 \[
 \boxed{
 \begin{array}{c}
@@ -120,13 +144,19 @@ f\text{ is continuous and has zero integral around every triangle}
 \]
 is equivalent to analyticity on $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 give the three standard equivalent characterizations.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 answers the prompt.
+
 :::
+
 :::

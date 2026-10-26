@@ -26,13 +26,18 @@ S=\{x+iy:0\le x\le2,\ 0\le y\le2\}.
 2. Find the set of points in $S$ where this maximum is attained.
 :::
 
-::: {.solution}
-<1>1. If \(z=x+iy\), then
+::: pf
+
+::: pf-step
+
+If \(z=x+iy\), then
 \[
 |e^{z^2}|=e^{x^2-y^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 z^2=(x+iy)^2=x^2-y^2+2ixy.
@@ -46,14 +51,21 @@ Therefore
 |e^{z^2}|=e^{\operatorname{Re}(z^2)}
 =e^{x^2-y^2}.
 \]
+
 :::
 
-<1>2. On the square \(S\),
+:::
+
+::: pf-step
+
+On the square \(S\),
 \[
 x^2-y^2\le4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(0\le x\le2\),
 \[
 x^2\le4,
@@ -66,9 +78,14 @@ Adding gives
 \[
 x^2-y^2\le4.
 \]
+
 :::
 
-<1>3. Equality
+:::
+
+::: pf-step
+
+Equality
 \[
 x^2-y^2=4
 \]
@@ -77,7 +94,9 @@ holds in \(S\) exactly at
 z=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Equality in step <1>2 requires both
 \[
 x^2=4
@@ -89,9 +108,14 @@ Because \(0\le x,y\le2\), this forces
 x=2,\qquad y=0.
 \]
 Conversely, at \((x,y)=(2,0)\) one has \(x^2-y^2=4\).
+
 :::
 
-<1>4. The maximum modulus is
+:::
+
+::: pf-step
+
+The maximum modulus is
 \[
 \boxed{\max_{z\in S}|f(z)|=e^4,}
 \]
@@ -100,17 +124,23 @@ and it is attained exactly at
 \boxed{z=2.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The real exponential function is strictly increasing. By steps <1>1 through <1>3,
 \[
 |f(z)|=e^{x^2-y^2}\le e^4,
 \]
 with equality exactly when \(z=2\).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives both the requested maximum value and the complete set of maximizers.
+
 :::
+
 :::

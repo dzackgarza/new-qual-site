@@ -23,8 +23,11 @@ b. Let us define a snarl as a graph that can be obtained from $K _ { 4 }$ by rep
    (In fact it is true that every 3-connected cubic graph is a snarl.)
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 G
 $$
@@ -35,7 +38,9 @@ G
 $$
 has no cut vertex.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 v
@@ -87,9 +92,14 @@ $$
 G,
 $$
 contradicting $3$-edge-connectivity.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 \{u,v\}
 $$
@@ -107,7 +117,9 @@ G
 $$
 has an edge cut of size at most $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 At most
 $$
 \deg(u)+\deg(v)=6
@@ -140,9 +152,14 @@ $$
 G,
 $$
 contradicting $3$-edge-connectivity.
+
 :::
 
-<1>3. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 G-\{u,v\}
 $$
@@ -164,7 +181,9 @@ G
 $$
 has an edge cut of size at most $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 For either component, the set of edges joining it to
 $$
 \{u,v\}
@@ -175,9 +194,14 @@ $$
 2,
 $$
 deleting it disconnects the graph, contradicting $3$-edge-connectivity.
+
 :::
 
-<1>4. Hence, in the only remaining case, exactly three edges join
+:::
+
+::: pf-step
+
+Hence, in the only remaining case, exactly three edges join
 $$
 A
 $$
@@ -198,7 +222,9 @@ $$
 uv\notin E(G).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, each of the two components has at least three boundary edges, so together they account for at least six edges incident to
 $$
 u
@@ -247,9 +273,14 @@ $$
 A\cup B,
 $$
 contradicting the six boundary edges just obtained.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 a
 $$
@@ -285,7 +316,9 @@ $$
 $$
 are impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 The equation
 $$
 a+b=3
@@ -343,9 +376,14 @@ $$
 (a,b)=(0,3)
 $$
 is symmetric.
+
 :::
 
-<1>6. In the remaining cases
+:::
+
+::: pf-step
+
+In the remaining cases
 $$
 (a,b)=(1,2)
 \quad\text{or}\quad
@@ -353,7 +391,9 @@ $$
 $$
 the graph has a $2$-edge cut.
 
-::: {.proof}
+
+::: pf-proof
+
 Assume
 $$
 (a,b)=(1,2).
@@ -409,11 +449,18 @@ is symmetric, using
 $$
 A\cup\{u\}.
 $$
+
 :::
 
-<1>7. Therefore every cubic $3$-edge-connected graph is $3$-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every cubic $3$-edge-connected graph is $3$-connected.
+
+
+::: pf-proof
+
 Step <1>1 rules out vertex cuts of size
 $$
 1.
@@ -431,15 +478,22 @@ $$
 G
 $$
 is $3$-connected.
+
 :::
 
-<1>8. The graph
+:::
+
+::: pf-step
+
+The graph
 $$
 K_4
 $$
 is cubic and $3$-connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Every vertex of
 $$
 K_4
@@ -462,9 +516,14 @@ $$
 K_4
 $$
 is $3$-connected.
+
 :::
 
-<1>9. Let
+:::
+
+::: pf-step
+
+Let
 $$
 G
 $$
@@ -499,7 +558,9 @@ G'
 $$
 is cubic.
 
-::: {.proof}
+
+::: pf-proof
+
 Subdividing
 $$
 ab
@@ -551,9 +612,14 @@ All original vertices retain degree
 $$
 3.
 $$
+
 :::
 
-<1>10. If
+:::
+
+::: pf-step
+
+If
 $$
 S\subseteq V(G')
 $$
@@ -571,7 +637,9 @@ G'-S
 $$
 is connected.
 
-::: {.proof}
+
+::: pf-proof
+
 The graph
 $$
 G-(S\cap V(G))
@@ -621,9 +689,14 @@ $$
 y
 $$
 are attached to surviving endpoints of their subdivided edges or to each other, so every surviving new vertex lies in that same component.
+
 :::
 
-<1>11. If
+:::
+
+::: pf-step
+
+If
 $$
 S=\{x,z\}
 $$
@@ -646,7 +719,9 @@ y
 $$
 interchanged.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 G
@@ -719,15 +794,22 @@ $$
 G'-\{x,z\}
 $$
 is connected.
+
 :::
 
-<1>12. The graph
+:::
+
+::: pf-step
+
+The graph
 $$
 G'-\{x,y\}
 $$
 is connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Deleting
 $$
 x
@@ -770,11 +852,18 @@ $$
 G'-\{x,y\}
 $$
 is connected.
+
 :::
 
-<1>13. The snarl operation preserves $3$-connectivity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The snarl operation preserves $3$-connectivity.
+
+
+::: pf-proof
+
 Let
 $$
 S\subseteq V(G')
@@ -819,11 +908,18 @@ $$
 G'
 $$
 never disconnects it.
+
 :::
 
-<1>14. Every snarl is $3$-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every snarl is $3$-connected.
+
+
+::: pf-proof
+
 Proceed by induction on the number of snarl operations.
 
 The initial graph
@@ -840,11 +936,15 @@ $$
 K_4
 $$
 by finitely many such operations is $3$-connected.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>14 proves part (b).
+
 :::
+
 :::

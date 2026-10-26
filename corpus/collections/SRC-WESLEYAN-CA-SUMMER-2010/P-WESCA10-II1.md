@@ -26,14 +26,19 @@ Calculate
 \]
 :::
 
-::: {.solution}
-<1>1. For every $r>0$,
+::: pf
+
+::: pf-step
+
+For every $r>0$,
 \[
 \left|\int_{\gamma_r}\frac{e^{iz}}{z^2}\,dz\right|
 \le \frac{\pi}{r}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\in\gamma_r$, one has $|z|=r$ and
 \[
 |e^{iz}|=e^{-\operatorname{Im}z}\le 1,
@@ -48,20 +53,31 @@ The length of $\gamma_r$ is $\pi r$, so the ML inequality gives
 \le (\pi r)\frac1{r^2}
 =\frac\pi r.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\lim_{r\to\infty}\int_{\gamma_r}\frac{e^{iz}}{z^2}\,dz=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the absolute value of the integral is bounded by $\pi/r$, which tends to $0$ as $r\to\infty$. The squeeze theorem gives the stated limit.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested value.
+
 :::
+
 :::

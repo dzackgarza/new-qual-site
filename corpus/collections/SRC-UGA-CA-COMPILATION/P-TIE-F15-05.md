@@ -33,14 +33,17 @@ A, & z\in\Omega_1,\\
 \]
 :::
 
-::: {.solution}
 Take the standard positive orientation on $\gamma$. For sufficiently large $R$, let
 $$
 C_R\coloneqq\{\xi:\abs{\xi}=R\}
 $$
 with positive orientation, chosen so that $\gamma$ and the fixed point $z$ lie inside $C_R$.
 
-<1>1. For every fixed $z\in\CC$,
+::: pf
+
+::: pf-step
+
+For every fixed $z\in\CC$,
 $$
 \lim_{R\to\infty}
 \int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi
@@ -48,7 +51,9 @@ $$
 2\pi iA.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $R>\abs{z}$,
 $$
 \int_{C_R}\frac{f(\xi)}{\xi-z}\,d\xi
@@ -77,16 +82,23 @@ $$
 \frac{R}{R-\abs{z}}\longrightarrow1.
 $$
 Hence the error term tends to $0$, proving the claim.
+
 :::
 
-<1>2. If $z\in\Omega_1$, then
+:::
+
+::: pf-step
+
+If $z\in\Omega_1$, then
 $$
 \int_\gamma\frac{f(\xi)}{\xi-z}\,d\xi
 =
 2\pi iA.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $R$ as above. The function
 $$
 \xi\longmapsto\frac{f(\xi)}{\xi-z}
@@ -99,16 +111,23 @@ $$
 =0.
 $$
 Thus the integral over $\gamma$ equals the integral over $C_R$. Letting $R\to\infty$ and using step <1>1 gives the result.
+
 :::
 
-<1>3. If $z\in\Omega_2$, then
+:::
+
+::: pf-step
+
+If $z\in\Omega_2$, then
 $$
 \int_\gamma\frac{f(\xi)}{\xi-z}\,d\xi
 =
 2\pi i\left(A-f(z)\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $R$ so large that $z$ lies between $\gamma$ and $C_R$. On this annular region,
 $$
 \xi\longmapsto\frac{f(\xi)}{\xi-z}
@@ -135,9 +154,14 @@ $$
 =
 2\pi iA-2\pi i f(z).
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \frac{1}{2\pi i}
@@ -150,13 +174,19 @@ A,&z\in\Omega_1,\\
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the identity in step <1>2 or step <1>3 by $2\pi i$, according to the location of $z$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required exterior Cauchy formula.
+
 :::
+
 :::

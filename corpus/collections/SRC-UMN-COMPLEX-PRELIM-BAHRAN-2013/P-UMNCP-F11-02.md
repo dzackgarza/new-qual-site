@@ -24,14 +24,19 @@ e^g=h.
 \]
 :::
 
-::: {.solution}
-<1>1. The logarithmic derivative
+::: pf
+
+::: pf-step
+
+The logarithmic derivative
 $$
 \frac{h'}h
 $$
 is entire.
 
-::: {.proof}
+
+::: pf-proof
+
 The functions
 $$
 h'
@@ -47,9 +52,14 @@ $$
 z\in\CC.
 $$
 Therefore the quotient is entire.
+
 :::
 
-<1>2. There exists an entire function $G$ such that
+:::
+
+::: pf-step
+
+There exists an entire function $G$ such that
 $$
 \boxed{
 G'(z)
@@ -57,15 +67,22 @@ G'(z)
 \frac{h'(z)}{h(z)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every entire function has an entire primitive because
 $$
 \CC
 $$
 is simply connected. Apply this to the entire function from step <1>1.
+
 :::
 
-<1>3. The entire function
+:::
+
+::: pf-step
+
+The entire function
 $$
 H(z)
 \coloneqq
@@ -73,7 +90,9 @@ h(z)e^{-G(z)}
 $$
 has derivative identically zero.
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 $$
 \begin{aligned}
@@ -101,9 +120,14 @@ $$
 H'(z)=0
 $$
 for every $z$.
+
 :::
 
-<1>4. There is a nonzero constant
+:::
+
+::: pf-step
+
+There is a nonzero constant
 $$
 c\in\CC^*
 $$
@@ -113,7 +137,9 @@ $$
 h(z)=ce^{G(z)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 H
@@ -139,9 +165,14 @@ $$
 h(z)e^{-G(z)}=c
 $$
 gives the displayed formula.
+
 :::
 
-<1>5. Choose
+:::
+
+::: pf-step
+
+Choose
 $$
 \lambda\in\CC
 $$
@@ -160,7 +191,9 @@ $$
 \boxed{e^g=h}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every nonzero complex number has a complex logarithm, so such a
 $$
 \lambda
@@ -179,11 +212,15 @@ ce^{G(z)}
 =
 h(z).
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 constructs the required entire logarithm.
+
 :::
+
 :::

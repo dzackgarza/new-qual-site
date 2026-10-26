@@ -20,8 +20,11 @@ Let $f:U\to\mathbb C$ be analytic, and let $D\subset f(U)$ be a domain.
 Define what it means for $g$ to be a branch of $f^{-1}$ on $D$.
 :::
 
-::: {.solution}
-<1>1. A **branch of $f^{-1}$ on $D$** is an analytic function
+::: pf
+
+::: pf-step
+
+A **branch of $f^{-1}$ on $D$** is an analytic function
 $$
 \boxed{g:D\to U}
 $$
@@ -30,17 +33,26 @@ $$
 \boxed{f(g(w))=w\qquad\text{for every }w\in D.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition: $g$ chooses, analytically on the domain $D$, one preimage under $f$ of each point of $D$.
+
 :::
 
-<1>2. Such a branch is automatically injective, and
+:::
+
+::: pf-step
+
+Such a branch is automatically injective, and
 $$
 g\circ f=\operatorname{id}
 $$
 on the subset $g(D)\subseteq U$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $g(w_1)=g(w_2)$, applying $f$ gives
 $$
 w_1=f(g(w_1))=f(g(w_2))=w_2,
@@ -49,11 +61,15 @@ so $g$ is injective. If $z=g(w)\in g(D)$, then
 $$
 g(f(z))=g(f(g(w)))=g(w)=z.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the requested definition; step <1>2 records its immediate consequences.
+
 :::
+
 :::

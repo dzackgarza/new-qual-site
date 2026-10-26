@@ -24,13 +24,18 @@ g(z)=6z^3+e^z+1
 have in the unit disk \(|z|<1\)?
 :::
 
-::: {.solution}
-<1>1. On the unit circle,
+::: pf
+
+::: pf-step
+
+On the unit circle,
 $$
 |e^z+1|<|6z^3|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 |z|=1,
@@ -60,9 +65,14 @@ $$
 e+1
 <6.
 $$
+
 :::
 
-<1>2. The functions
+:::
+
+::: pf-step
+
+The functions
 $$
 g(z)=6z^3+e^z+1
 $$
@@ -76,31 +86,44 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the strict Rouché inequality
 $$
 |e^z+1|<|6z^3|
 $$
 on the boundary circle. Rouché's theorem therefore applies.
+
 :::
 
-<1>3. The function $g$ has exactly
+:::
+
+::: pf-step
+
+The function $g$ has exactly
 $$
 \boxed{3}
 $$
 zeros in the unit disk, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The comparison function
 $$
 6z^3
 $$
 has a zero of multiplicity $3$ at $z=0$ and no other zeros. By step <1>2, $g$ has the same zero count in $|z|<1$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required number of roots.
+
 :::
+
 :::

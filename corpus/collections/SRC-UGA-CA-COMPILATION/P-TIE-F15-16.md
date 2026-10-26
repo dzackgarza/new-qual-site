@@ -20,14 +20,17 @@ audit:
 Assume $f ( z )$ is analytic in D and $f ( 0 ) = 0$ and is not a rotation $( { \mathrm { i . e . ~ } } f ( z ) \neq e ^ { i \theta } z )$ . Show that $\sum _ { n = 1 } ^ { \infty } f ^ { n } ( z )$ converges uniformly to an analytic function on compact subsets of D, where $f ^ { n + 1 } ( z ) = f ( f ^ { n } ( z ) )$
 :::
 
-::: {.solution}
 The iterates in the statement require the intended hypothesis
 $$
 f:\DD\to\DD.
 $$
 For $n\ge1$, write $f^n$ for the $n$-fold iterate.
 
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 $$
 g(z)
 \coloneqq
@@ -42,7 +45,9 @@ $$
 $$
 for every $z\in\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f(0)=0$, the quotient $f(z)/z$ has a removable singularity at $0$, whose extension has value $f'(0)$. Hence $g$ is holomorphic.
 
 Schwarz's lemma gives
@@ -54,15 +59,22 @@ $$
 f(z)=e^{i\theta}z
 $$
 for some real $\theta$, contrary to the hypothesis. Therefore $\abs{g(z)}<1$ everywhere.
+
 :::
 
-<1>2. For every $0<r<1$, there exists $q_r<1$ such that
+:::
+
+::: pf-step
+
+For every $0<r<1$, there exists $q_r<1$ such that
 $$
 \abs{f(z)}\le q_r\abs{z}
 $$
 whenever $\abs{z}\le r$.
 
-::: {.proof}
+
+::: pf-proof
+
 The closed disk $\abs{z}\le r$ is compact, and $\abs{g(z)}<1$ there by step <1>1. Hence
 $$
 q_r
@@ -70,9 +82,14 @@ q_r
 \max_{\abs{z}\le r}\abs{g(z)}
 $$
 exists and satisfies $q_r<1$. Since $f(z)=zg(z)$, the asserted inequality follows.
+
 :::
 
-<1>3. If $\abs{z}\le r<1$, then for every $n\ge1$,
+:::
+
+::: pf-step
+
+If $\abs{z}\le r<1$, then for every $n\ge1$,
 $$
 \abs{f^n(z)}
 \le
@@ -81,7 +98,9 @@ q_r^n\abs{z}
 r q_r^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Schwarz's lemma gives
 $$
 \abs{f(w)}\le\abs{w}
@@ -98,15 +117,22 @@ $$
 \le
 q_r^n\abs{z}.
 $$
+
 :::
 
-<1>4. The series
+:::
+
+::: pf-step
+
+The series
 $$
 \sum_{n=1}^{\infty}f^n(z)
 $$
 converges uniformly on every closed disk $\abs{z}\le r<1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \abs{f^n(z)}
@@ -118,19 +144,31 @@ $$
 \sum_{n=1}^{\infty}r q_r^n
 $$
 is a convergent geometric series, the Weierstrass $M$-test gives uniform convergence on the closed disk.
+
 :::
 
-<1>5. The series converges uniformly on every compact subset of $\DD$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The series converges uniformly on every compact subset of $\DD$.
+
+
+::: pf-proof
+
 Let $K\subset\DD$ be compact. Then
 $$
 r\coloneqq\max_{z\in K}\abs{z}<1,
 $$
 so $K\subset\{z:\abs{z}\le r\}$. Step <1>4 gives uniform convergence on that closed disk, hence on $K$.
+
 :::
 
-<1>6. The sum
+:::
+
+::: pf-step
+
+The sum
 $$
 \boxed{
 F(z)\coloneqq\sum_{n=1}^{\infty}f^n(z)
@@ -138,13 +176,19 @@ F(z)\coloneqq\sum_{n=1}^{\infty}f^n(z)
 $$
 is analytic on $\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each iterate $f^n$ is holomorphic on $\DD$. By step <1>5, the series of holomorphic functions converges locally uniformly on $\DD$. The Weierstrass theorem therefore implies that its sum $F$ is holomorphic.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required compact-uniform convergence, and step <1>6 proves that the limit is analytic.
+
 :::
+
 :::

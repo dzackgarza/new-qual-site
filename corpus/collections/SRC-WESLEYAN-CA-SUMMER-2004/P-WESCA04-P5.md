@@ -21,8 +21,11 @@ Suppose each $f_n$ is continuous on $\overline D$ and analytic on $D$.
 If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniformly on $\overline D$.
 :::
 
-::: {.solution}
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 \[
 f_n|_{\partial D}
 \]
@@ -31,7 +34,9 @@ converges uniformly, the sequence is uniformly Cauchy on
 \partial D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence in the supremum norm implies the Cauchy property:
 for every
 \[
@@ -51,9 +56,14 @@ m,n\ge N,
 <
 \varepsilon.
 \]
+
 :::
 
-<1>2. For fixed $m,n$, define
+:::
+
+::: pf-step
+
+For fixed $m,n$, define
 \[
 h_{m,n}
 \coloneqq
@@ -65,11 +75,18 @@ Then $h_{m,n}$ is continuous on
 \]
 and holomorphic on $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Both properties are preserved under subtraction.
+
 :::
 
-<1>3. For every $m,n$,
+:::
+
+::: pf-step
+
+For every $m,n$,
 \[
 \boxed{
 \sup_{z\in\overline D}
@@ -80,7 +97,9 @@ Both properties are preserved under subtraction.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $D$ is bounded,
 \[
 \overline D
@@ -99,9 +118,14 @@ In that constant case the same modulus occurs on the boundary as well.
 
 Thus in all cases the supremum on the closure is bounded by the supremum on
 the boundary.
+
 :::
 
-<1>4. The sequence
+:::
+
+::: pf-step
+
+The sequence
 \[
 (f_n)
 \]
@@ -110,7 +134,9 @@ is uniformly Cauchy on
 \overline D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 \varepsilon>0.
@@ -139,9 +165,14 @@ step <1>3 gives
 \varepsilon.
 \end{aligned}
 \]
+
 :::
 
-<1>5. There exists a continuous function
+:::
+
+::: pf-step
+
+There exists a continuous function
 \[
 f:\overline D\to\mathbb C
 \]
@@ -154,7 +185,9 @@ uniformly on
 \overline D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The compact space
 \[
 \overline D
@@ -172,9 +205,14 @@ Hence it converges in the supremum norm to some
 \[
 f\in C(\overline D).
 \]
+
 :::
 
-<1>6. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 f_n\to f
@@ -182,13 +220,22 @@ f_n\to f
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the conclusion of step <1>5.
+
 :::
 
-<1>7. Moreover, the limit $f$ is holomorphic on $D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Moreover, the limit $f$ is holomorphic on $D$.
+
+
+::: pf-proof
+
 Uniform convergence on
 \[
 \overline D
@@ -201,11 +248,15 @@ f|_D
 \]
 is holomorphic.
 This extra conclusion is not required for the uniform-convergence claim.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>6 prove the required uniform convergence on the closure.
+
 :::
+
 :::

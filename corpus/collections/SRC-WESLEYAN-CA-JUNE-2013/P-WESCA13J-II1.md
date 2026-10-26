@@ -25,8 +25,11 @@ For each function, classify the singularity at the indicated point and find the 
 (c) $f(z)=\dfrac{\sin(z^3)}{(1-\cos z)^3}$ at $z_0=0$.
 :::
 
-::: {.solution}
-<1>1. For part (a),
+::: pf
+
+::: pf-step
+
+For part (a),
 $$
 z^2e^{-1/z^3}
 =
@@ -35,7 +38,9 @@ z^2e^{-1/z^3}
 z^{2-3n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the exponential series
 $$
 e^w
@@ -59,11 +64,18 @@ $$
 z^2
 $$
 gives the displayed Laurent series.
+
 :::
 
-<1>2. The singularity in part (a) is essential.
+:::
 
-::: {.proof}
+::: pf-step
+
+The singularity in part (a) is essential.
+
+
+::: pf-proof
+
 The Laurent expansion from step <1>1 contains infinitely many negative powers
 $$
 z^{2-3n},
@@ -75,14 +87,21 @@ $$
 z=0
 $$
 is an essential singularity.
+
 :::
 
-<1>3. The residue in part (a) is
+:::
+
+::: pf-step
+
+The residue in part (a) is
 $$
 \boxed{-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The residue is the coefficient of
 $$
 z^{-1}.
@@ -101,9 +120,14 @@ $$
 =
 -1.
 $$
+
 :::
 
-<1>4. For part (b), writing
+:::
+
+::: pf-step
+
+For part (b), writing
 $$
 w=z-1,
 $$
@@ -118,7 +142,9 @@ $$
 +1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 z=1+w,
@@ -134,9 +160,14 @@ and divide by
 $$
 w^2.
 $$
+
 :::
 
-<1>5. The singularity in part (b) is a pole of order
+:::
+
+::: pf-step
+
+The singularity in part (b) is a pole of order
 $$
 \boxed{2}
 $$
@@ -145,7 +176,9 @@ $$
 \boxed{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Laurent expansion from step <1>4 has leading term
 $$
 w^{-2}
@@ -167,9 +200,14 @@ $$
 2,
 $$
 which is the residue.
+
 :::
 
-<1>6. For part (c),
+:::
+
+::: pf-step
+
+For part (c),
 $$
 \sin(z^3)
 =
@@ -185,7 +223,9 @@ $$
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor series give
 $$
 \sin(z^3)
@@ -207,9 +247,14 @@ $$
 z^2/2
 $$
 from the second expression yields the displayed form.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \frac1{(1-\cos z)^3}
 =
@@ -219,7 +264,9 @@ $$
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 $$
 (1-\cos z)^{-3}
@@ -247,9 +294,14 @@ $$
 =
 1+\frac{z^2}{4}+O(z^4).
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \frac{\sin(z^3)}{(1-\cos z)^3}
 =
@@ -258,7 +310,9 @@ $$
 +O(z).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the expansions from steps <1>6--<1>7:
 $$
 \begin{aligned}
@@ -283,9 +337,14 @@ z^3+O(z^9)
 +O(z).
 \end{aligned}
 $$
+
 :::
 
-<1>9. The singularity in part (c) is a pole of order
+:::
+
+::: pf-step
+
+The singularity in part (c) is a pole of order
 $$
 \boxed{3}
 $$
@@ -294,7 +353,9 @@ $$
 \boxed{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 has leading term
 $$
 8z^{-3},
@@ -312,11 +373,15 @@ $$
 2,
 $$
 which is the residue.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>3 solve part (a), steps <1>4--<1>5 solve part (b), and steps <1>6--<1>9 solve part (c).
+
 :::
+
 :::

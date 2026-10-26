@@ -23,22 +23,32 @@ State one of Littlewood's three principles:
 (b) in a precise mathematical formulation.
 :::
 
-::: {.solution}
 One of Littlewood's principles is the principle that **pointwise convergence
 is nearly uniform convergence**.
 
-<1>1. In words:
+::: pf
+
+::: pf-step
+
+In words:
 
 > On a set of finite measure, if a sequence of measurable functions
 > converges pointwise almost everywhere, then after discarding a set of
 > arbitrarily small measure, the convergence becomes uniform.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the informal content of Egorov's theorem, one of the standard
 precise forms of Littlewood's principles.
+
 :::
 
-<1>2. Precisely, let
+:::
+
+::: pf-step
+
+Precisely, let
 \[
 (X,\mathcal M,\mu)
 \]
@@ -83,13 +93,20 @@ uniformly on
 X\setminus E.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is Egorov's theorem.
 It is the exact mathematical statement corresponding to the phrase
 “pointwise convergence is nearly uniform.”
+
 :::
 
-<1>3. Equivalently, the exceptional set can be made arbitrarily small:
+:::
+
+::: pf-step
+
+Equivalently, the exceptional set can be made arbitrarily small:
 for every
 \[
 \varepsilon>0
@@ -109,15 +126,21 @@ such that
 |f_n(x)-f(x)|<\eta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is simply the definition of uniform convergence written with all
 quantifiers displayed.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested verbal form and step <1>2 gives the precise
 mathematical formulation.
+
 :::
+
 :::

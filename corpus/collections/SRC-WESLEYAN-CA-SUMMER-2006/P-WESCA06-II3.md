@@ -26,7 +26,6 @@ takes its maximum on the boundary $\partial D$.
 Hint: consider $f(z)e^{i\alpha}+g(z)e^{i\beta}$ for suitable $\alpha,\beta$.
 :::
 
-::: {.solution}
 As written, the source statement is missing a boundary-regularity hypothesis:
 if $f$ and $g$ are only holomorphic on $D$, they need not extend to
 $\partial D$.
@@ -36,9 +35,15 @@ f,g\in C(\overline D)
 \]
 and are holomorphic on $D$.
 
-<1>1. The literal statement is false without boundary regularity.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The literal statement is false without boundary regularity.
+
+
+::: pf-proof
+
 Take
 \[
 D=\{z:|z|<1\},
@@ -64,9 +69,14 @@ and
 \]
 as $z\to1$ from within $D$.
 Thus the boundary maximum in the literal statement is not defined.
+
 :::
 
-<1>2. Assume henceforth that $f$ and $g$ are continuous on
+:::
+
+::: pf-step
+
+Assume henceforth that $f$ and $g$ are continuous on
 \[
 \overline D
 \]
@@ -79,7 +89,9 @@ h(z)
 \]
 attains a maximum on $\overline D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $h$ is continuous on the compact set
 \[
 \overline D.
@@ -96,23 +108,35 @@ M
 \coloneqq
 \max_{z\in\overline D}h(z).
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 z_0\in\partial D,
 \]
 then the desired conclusion already holds.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 h(z_0)=M.
 \]
 Thus $h$ attains its maximum on the boundary.
+
 :::
 
-<1>4. Suppose instead that
+:::
+
+::: pf-step
+
+Suppose instead that
 \[
 z_0\in D.
 \]
@@ -133,7 +157,9 @@ e^{i\beta}g(z_0)
 |g(z_0)|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 f(z_0)\ne0,
@@ -150,9 +176,14 @@ f(z_0)=0,
 \]
 choose any $\alpha$.
 The same construction gives $\beta$ for $g(z_0)$.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 F(z)
 \coloneqq
@@ -162,11 +193,18 @@ e^{i\beta}g(z).
 \]
 Then $F$ is holomorphic on $D$ and continuous on $\overline D$.
 
-::: {.proof}
+
+::: pf-proof
+
 It is a fixed complex linear combination of $f$ and $g$.
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 \[
 z\in\overline D,
 \]
@@ -182,7 +220,9 @@ At $z_0$,
 |F(z_0)|=M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first inequality is the triangle inequality.
 The second is the definition of $M$.
 
@@ -199,12 +239,19 @@ Hence
 \[
 |F(z_0)|=M.
 \]
+
 :::
 
-<1>7. Since $z_0$ is an interior point where $|F|$ attains its global
+:::
+
+::: pf-step
+
+Since $z_0$ is an interior point where $|F|$ attains its global
 maximum, the maximum modulus principle implies that $F$ is constant on $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 The domain $D$ is connected and $F$ is holomorphic.
 By step <1>6,
 \[
@@ -214,9 +261,14 @@ M
 \]
 throughout $D$, with equality at the interior point $z_0$.
 The strong maximum modulus principle therefore makes $F$ constant.
+
 :::
 
-<1>8. For every boundary point
+:::
+
+::: pf-step
+
+For every boundary point
 \[
 \zeta\in\partial D,
 \]
@@ -225,7 +277,9 @@ one has
 |F(\zeta)|=M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 \[
 F
@@ -244,9 +298,14 @@ Therefore
 =
 M.
 \]
+
 :::
 
-<1>9. For every
+:::
+
+::: pf-step
+
+For every
 \[
 \zeta\in\partial D,
 \]
@@ -254,7 +313,9 @@ M.
 h(\zeta)=M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the triangle inequality,
 \[
 |F(\zeta)|
@@ -279,9 +340,14 @@ Therefore
 \[
 h(\zeta)=M.
 \]
+
 :::
 
-<1>10. Consequently, under the intended boundary-continuity hypothesis,
+:::
+
+::: pf-step
+
+Consequently, under the intended boundary-continuity hypothesis,
 \[
 \boxed{
 |f(z)|+|g(z)|
@@ -289,18 +355,24 @@ h(\zeta)=M.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If the maximizing point from step <1>2 lies on the boundary, apply
 step <1>3.
 If it lies in the interior, step <1>9 shows that every boundary point also
 has the same maximal value.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 records the defect in the literal source statement.
 Steps <1>2--<1>10 prove the corrected theorem using the source's
 phase-alignment hint.
+
 :::
+
 :::

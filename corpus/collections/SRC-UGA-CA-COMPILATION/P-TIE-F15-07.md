@@ -22,7 +22,6 @@ Prove by justifying all steps that for all $\xi \in \mathbb { C }$ we have $e ^ 
 Hint: You may use that fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of $\xi .$
 :::
 
-::: {.solution}
 Define
 $$
 F(\xi)
@@ -31,9 +30,15 @@ F(\xi)
 e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
 $$
 
-<1>1. For every $\xi\in\CC$, the defining integral for $F(\xi)$ converges absolutely.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For every $\xi\in\CC$, the defining integral for $F(\xi)$ converges absolutely.
+
+
+::: pf-proof
+
 Write
 $$
 \xi=u+iv,
@@ -59,9 +64,14 @@ e^{\pi v^2}e^{-\pi(x+v)^2}.
 \end{aligned}
 $$
 The final function is integrable over $\RR$, so the integral converges absolutely.
+
 :::
 
-<1>2. Let $K\subset\CC$ be compact. There is an integrable function $g_K:\RR\to[0,\infty)$ such that
+:::
+
+::: pf-step
+
+Let $K\subset\CC$ be compact. There is an integrable function $g_K:\RR\to[0,\infty)$ such that
 $$
 \abs{
 e^{-\pi x^2}e^{2\pi i x\xi}
@@ -71,7 +81,9 @@ g_K(x)
 $$
 for every $x\in\RR$ and every $\xi\in K$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $K$ is compact, there exists $M>0$ such that
 $$
 \abs{\operatorname{Im}\xi}\le M
@@ -97,11 +109,18 @@ $$
 -\frac{\pi}{2}x^2.
 $$
 Hence $g_K$ is dominated outside a bounded interval by $e^{-\pi x^2/2}$ and is continuous on the remaining bounded interval. Therefore $g_K$ is integrable on $\RR$.
+
 :::
 
-<1>3. The function $F$ is entire.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $F$ is entire.
+
+
+::: pf-proof
+
 For $R>0$, define
 $$
 F_R(\xi)
@@ -128,9 +147,14 @@ $$
 \longrightarrow0.
 $$
 Hence $F_R\to F$ uniformly on every compact subset of $\CC$. By the Weierstrass theorem on locally uniform limits of holomorphic functions, $F$ is entire.
+
 :::
 
-<1>4. The function
+:::
+
+::: pf-step
+
+The function
 $$
 G(\xi)
 \coloneqq
@@ -142,7 +166,9 @@ F(\xi)=G(\xi)
 $$
 for every real $\xi$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $G$ is the exponential of the polynomial $-\pi\xi^2$, so it is entire. The equality
 $$
 e^{-\pi\xi^2}
@@ -151,9 +177,14 @@ e^{-\pi\xi^2}
 e^{-\pi x^2}e^{2\pi i x\xi}\,dx
 $$
 for real $\xi$ is exactly the real-frequency identity that the problem permits us to assume.
+
 :::
 
-<1>5. For every $\xi\in\CC$,
+:::
+
+::: pf-step
+
+For every $\xi\in\CC$,
 $$
 \boxed{
 e^{-\pi\xi^2}
@@ -163,17 +194,23 @@ e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3 and <1>4, the functions $F$ and $G$ are entire and agree on the real axis. The real axis has accumulation points in $\CC$, so the identity theorem implies
 $$
 F\equiv G
 $$
 on $\CC$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required identity for every complex frequency $\xi$.
+
 :::
+
 :::

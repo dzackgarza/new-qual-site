@@ -21,7 +21,6 @@ Suppose both sequences are uniformly bounded: there is $M$ such that $|f_n(z)|,|
 Prove that $(f_ng_n)$ converges uniformly on $A$.
 :::
 
-::: {.solution}
 Let
 $$
 f_n\to f
@@ -33,7 +32,11 @@ $$
 A.
 $$
 
-<1>1. The limits satisfy
+::: pf
+
+::: pf-step
+
+The limits satisfy
 $$
 \boxed{
 |f(z)|\le M,
@@ -46,7 +49,9 @@ $$
 z\in A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 z\in A.
@@ -74,9 +79,14 @@ The same argument gives
 $$
 |g(z)|\le M.
 $$
+
 :::
 
-<1>2. For every
+:::
+
+::: pf-step
+
+For every
 $$
 z\in A
 $$
@@ -93,7 +103,9 @@ M|g_n(z)-g(z)|
 M|f_n(z)-f(z)|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add and subtract
 $$
 f_n(z)g(z):
@@ -122,9 +134,14 @@ M|g_n-g|
 +M|f_n-f|.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Taking suprema over
+:::
+
+::: pf-step
+
+Taking suprema over
 $$
 A
 $$
@@ -137,20 +154,29 @@ M\|g_n-g\|_{\infty}
 M\|f_n-f\|_{\infty}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The pointwise inequality of step <1>2 holds for every
 $$
 z\in A.
 $$
 Taking the supremum of the left-hand side and bounding the supremum of the sum by the sum of the suprema yields the estimate.
+
 :::
 
-<1>4. The right-hand side in step <1>3 tends to
+:::
+
+::: pf-step
+
+The right-hand side in step <1>3 tends to
 $$
 0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence means precisely that
 $$
 \|f_n-f\|_{\infty}\to0
@@ -164,27 +190,38 @@ $$
 M
 $$
 preserves convergence to zero, and so does addition.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 f_ng_n\to fg
 \text{ uniformly on }A.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4,
 $$
 \|f_ng_n-fg\|_{\infty}
 \longrightarrow0,
 $$
 which is the definition of uniform convergence.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required conclusion.
+
 :::
+
 :::

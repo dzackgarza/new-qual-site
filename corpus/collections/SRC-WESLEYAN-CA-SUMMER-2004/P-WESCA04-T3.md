@@ -19,8 +19,11 @@ audit:
 State the most general version of Cauchy's Theorem.
 :::
 
-::: {.solution}
-<1>1. Let $U\subset\mathbb C$ be open and let
+::: pf
+
+::: pf-step
+
+Let $U\subset\mathbb C$ be open and let
 \[
 f:U\to\mathbb C
 \]
@@ -42,12 +45,19 @@ Then the general Cauchy theorem is
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the homological form of Cauchy's integral theorem. The following
 steps give a proof.
+
 :::
 
-<1>2. Write
+:::
+
+::: pf-step
+
+Write
 \[
 f=u+iv
 \]
@@ -66,7 +76,9 @@ is closed:
 d\omega=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 \[
 \omega
@@ -110,9 +122,14 @@ makes this zero as well. Hence
 \[
 d\omega=0.
 \]
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 \[
 [\Gamma]=0
 \in
@@ -123,21 +140,30 @@ there is a finite oriented $2$-chain $C$ in $U$ with
 \partial C=\Gamma.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the meaning of the cycle $\Gamma$ representing the zero
 homology class. A singular chain may be replaced, after subdivision and
 smooth approximation inside the open set $U$, by a piecewise-smooth chain
 with the same boundary for purposes of integration.
+
 :::
 
-<1>4. Stokes' theorem gives
+:::
+
+::: pf-step
+
+Stokes' theorem gives
 \[
 \int_\Gamma f(z)\,dz
 =
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 \[
 \begin{aligned}
@@ -152,9 +178,14 @@ By steps <1>2--<1>3,
 0.
 \end{aligned}
 \]
+
 :::
 
-<1>5. For a closed cycle $\Gamma\subset U$, the condition that it be
+:::
+
+::: pf-step
+
+For a closed cycle $\Gamma\subset U$, the condition that it be
 null-homologous in $U$ can equivalently be expressed by the winding-number
 condition
 \[
@@ -172,14 +203,21 @@ where
 \int_\Gamma\frac{dz}{z-a}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For planar domains, the homology class of a closed cycle is detected by its
 winding numbers around the complementary components. Thus the class
 vanishes precisely when the index about every point outside the domain is
 zero.
+
 :::
 
-<1>6. Consequently an equivalent standard formulation is:
+:::
+
+::: pf-step
+
+Consequently an equivalent standard formulation is:
 if $f$ is holomorphic on $U$ and $\Gamma$ is a closed piecewise-$C^1$
 cycle in $U$ satisfying
 \[
@@ -194,30 +232,43 @@ then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, the winding-number hypothesis says exactly that $\Gamma$ is
 homologous to zero in $U$. Apply step <1>4.
+
 :::
 
-<1>7. In particular, if $U$ is simply connected, then every closed curve
+:::
+
+::: pf-step
+
+In particular, if $U$ is simply connected, then every closed curve
 in $U$ is null-homologous, so
 \[
 \int_\Gamma f(z)\,dz=0
 \]
 for every closed piecewise-$C^1$ curve $\Gamma\subset U$.
 
-::: {.proof}
+
+::: pf-proof
+
 A simply connected domain has
 \[
 H_1(U;\mathbb Z)=0.
 \]
 Apply step <1>1.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>6 state the most general planar Cauchy theorem in its
 homological and winding-number forms; steps <1>2--<1>4 prove it.
+
 :::
+
 :::

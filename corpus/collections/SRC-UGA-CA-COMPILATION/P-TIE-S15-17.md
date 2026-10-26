@@ -22,7 +22,6 @@ audit:
 (2) Show that $h ( z ) ~ = ~ \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } - g ( z )$ is bounded on C and conclude that $\frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } =$ $\sum _ { n = - \infty } ^ { \infty } \frac { 1 } { ( z - n ) ^ { 2 } } .$
 :::
 
-::: {.solution}
 Define
 $$
 g(z)
@@ -32,9 +31,15 @@ g(z)
 $$
 for $z\notin\ZZ$.
 
-<1>1. The series defining $g$ converges absolutely and locally uniformly on $\CC\setminus\ZZ$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The series defining $g$ converges absolutely and locally uniformly on $\CC\setminus\ZZ$.
+
+
+::: pf-proof
+
 Let $K\subset\CC\setminus\ZZ$ be compact. Choose $R>0$ such that
 $$
 \abs{z}\le R
@@ -58,14 +63,21 @@ $$
 \sum_{n\ne0}\frac1{n^2}
 $$
 converges, the Weierstrass $M$-test gives absolute locally uniform convergence.
+
 :::
 
-<1>2. At every integer $m$, the principal part of $g$ is
+:::
+
+::: pf-step
+
+At every integer $m$, the principal part of $g$ is
 $$
 \frac1{(z-m)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Split the series as
 $$
 g(z)
@@ -79,9 +91,14 @@ By step <1>1, the second sum is holomorphic in a neighborhood of $m$. Hence the 
 $$
 (z-m)^{-2}.
 $$
+
 :::
 
-<1>3. At every integer $m$, the principal part of
+:::
+
+::: pf-step
+
+At every integer $m$, the principal part of
 $$
 \frac{\pi^2}{\sin^2\pi z}
 $$
@@ -90,7 +107,9 @@ $$
 \frac1{(z-m)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 z=m+w.
@@ -124,9 +143,14 @@ $$
 \frac1{(z-m)^2}+O(1).
 $$
 Thus the principal part is exactly $(z-m)^{-2}$.
+
 :::
 
-<1>4. The function
+:::
+
+::: pf-step
+
+The function
 $$
 h(z)
 \coloneqq
@@ -136,13 +160,22 @@ g(z)
 $$
 extends to an entire function on $\CC$.
 
-::: {.proof}
+
+::: pf-proof
+
 Away from the integers, both terms are holomorphic. By steps <1>2 and <1>3, their principal parts cancel at every integer. Thus each apparent singularity of $h$ at an integer is removable. Filling in those removable singularities gives an entire function.
+
 :::
 
-<1>5. The function $h$ is $1$-periodic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h$ is $1$-periodic.
+
+
+::: pf-proof
+
 Since
 $$
 \sin\pi(z+1)
@@ -170,9 +203,14 @@ g(z),
 \end{aligned}
 $$
 where $m=n-1$. Hence $h(z+1)=h(z)$.
+
 :::
 
-<1>6. On the strip
+:::
+
+::: pf-step
+
+On the strip
 $$
 S
 \coloneqq
@@ -187,7 +225,9 @@ g(z)\longrightarrow0
 $$
 uniformly as $\abs y\to\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $\abs{x}\le1/2$,
 $$
 \abs{x-n}
@@ -237,16 +277,23 @@ $$
 \frac{\pi}{\abs y},
 $$
 which tends to $0$ as $\abs y\to\infty$.
+
 :::
 
-<1>7. On the same strip,
+:::
+
+::: pf-step
+
+On the same strip,
 $$
 \frac{\pi^2}{\sin^2\pi z}
 \longrightarrow0
 $$
 uniformly as $\abs y\to\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $z=x+iy$,
 $$
 \abs{\sin\pi z}^2
@@ -260,11 +307,18 @@ $$
 \frac{\pi^2}{\sinh^2\pi y},
 $$
 and the right-hand side tends to $0$ as $\abs y\to\infty$, independently of $x$.
+
 :::
 
-<1>8. The entire function $h$ is bounded on $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The entire function $h$ is bounded on $\CC$.
+
+
+::: pf-proof
+
 By steps <1>6 and <1>7, $h$ is bounded on the parts of the fundamental strip $S$ with sufficiently large $\abs y$. On the remaining compact rectangle
 $$
 \left\{
@@ -276,20 +330,32 @@ $$
 the entire function $h$ is bounded by continuity. Hence $h$ is bounded on all of $S$.
 
 By step <1>5, every point of $\CC$ is congruent modulo an integer translation to a point of $S$, and $h$ is unchanged by such translation. Therefore $h$ is bounded on $\CC$.
+
 :::
 
-<1>9. The function $h$ is identically zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h$ is identically zero.
+
+
+::: pf-proof
+
 By step <1>8 and Liouville's theorem, $h$ is constant. Along the imaginary axis,
 $$
 h(iy)
 \longrightarrow0
 $$
 as $\abs y\to\infty$ by steps <1>6 and <1>7. Hence the constant value must be $0$.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \frac{\pi^2}{\sin^2\pi z}
@@ -300,7 +366,9 @@ $$
 $$
 for every $z\notin\ZZ$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>9 says
 $$
 h(z)
@@ -311,11 +379,15 @@ g(z)
 \equiv0.
 $$
 Substituting the definition of $g$ gives the identity.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>3 prove part (1), and steps <1>4--<1>10 prove part (2).
+
 :::
+
 :::

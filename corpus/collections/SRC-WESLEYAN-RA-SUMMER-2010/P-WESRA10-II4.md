@@ -24,14 +24,19 @@ Prove
 If $A\subset\mathbb R$ has finite Lebesgue measure, explain what this says about the translates $A+t$.
 :::
 
-::: {.solution}
-<1>1. If $g\in C_c(\mathbb R)$, then
+::: pf
+
+::: pf-step
+
+If $g\in C_c(\mathbb R)$, then
 \[
 \|g-g_t\|_1\longrightarrow0
 \qquad(t\to0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $R>0$ such that
 \[
 \operatorname{supp}(g)\subseteq[-R,R].
@@ -51,15 +56,22 @@ as $t\to0$. Hence, for $|t|\le1$,
 2(R+1)\sup_{x\in\mathbb R}|g(x)-g(x-t)|,
 \]
 and the right-hand side tends to $0$.
+
 :::
 
-<1>2. Translation preserves the $L^1$ norm:
+:::
+
+::: pf-step
+
+Translation preserves the $L^1$ norm:
 \[
 \|h_t\|_1=\|h\|_1
 \]
 for every $h\in L^1(\mathbb R)$ and every $t\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the translation invariance of Lebesgue measure,
 \[
 \|h_t\|_1
@@ -67,15 +79,22 @@ By the translation invariance of Lebesgue measure,
 =\int_{\mathbb R}|h(u)|\,du
 =\|h\|_1.
 \]
+
 :::
 
-<1>3. For every $f\in L^1(\mathbb R)$,
+:::
+
+::: pf-step
+
+For every $f\in L^1(\mathbb R)$,
 \[
 \boxed{\|f-f_t\|_1\longrightarrow0}
 \qquad(t\to0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$,
 choose $g\in C_c(\mathbb R)$ such that
 \[
@@ -100,15 +119,22 @@ Therefore
 <\varepsilon.
 \]
 This proves the limit.
+
 :::
 
-<1>4. If $A\subseteq\mathbb R$ is measurable with finite measure, then
+:::
+
+::: pf-step
+
+If $A\subseteq\mathbb R$ is measurable with finite measure, then
 \[
 \boxed{m(A\triangle(A+t))\longrightarrow0}
 \qquad(t\to0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 f=\chi_A\in L^1(\mathbb R).
@@ -128,12 +154,16 @@ m(A\triangle(A+t))
 =\|\chi_A-\chi_{A+t}\|_1
 \longrightarrow0.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the translation-continuity statement, and step <1>4 gives
 its consequence for finite-measure sets.
+
 :::
+
 :::

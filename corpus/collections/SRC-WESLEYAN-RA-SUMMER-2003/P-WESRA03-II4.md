@@ -27,11 +27,14 @@ Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that
 \]
 :::
 
-::: {.solution}
 Suppose, toward a contradiction, that the asserted \(\varepsilon\)-\(\delta\)
 statement is false.
 
-<1>1. Then there exists
+::: pf
+
+::: pf-step
+
+Then there exists
 \[
 \varepsilon_0>0
 \]
@@ -44,16 +47,23 @@ but
 \nu(A)\ge\varepsilon_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of
 \[
 \forall\varepsilon>0\ \exists\delta>0\
 \forall A\in\mathcal A:
 \mu(A)<\delta\Rightarrow\nu(A)<\varepsilon.
 \]
+
 :::
 
-<1>2. For each \(n\ge1\), choose
+:::
+
+::: pf-step
+
+For each \(n\ge1\), choose
 \[
 A_n\in\mathcal A
 \]
@@ -68,47 +78,75 @@ and
 \nu(A_n)\ge\varepsilon_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 with
 \[
 \delta=2^{-n}.
 \]
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 B_n=\bigcup_{k=n}^{\infty}A_k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a countable union of measurable sets, hence measurable.
+
 :::
 
-<1>4. The sequence \((B_n)\) is decreasing:
+:::
+
+::: pf-step
+
+The sequence \((B_n)\) is decreasing:
 \[
 \boxed{
 B_{n+1}\subseteq B_n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The union defining \(B_{n+1}\) omits the first set \(A_n\) from the union
 defining \(B_n\).
+
 :::
 
-<1>5. By countable subadditivity,
+:::
+
+::: pf-step
+
+By countable subadditivity,
 \[
 \mu(B_n)
 \le
 \sum_{k=n}^{\infty}\mu(A_k).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply countable subadditivity of the measure \(\mu\) to the union in step
 <1>3.
+
 :::
 
-<1>6. Using step <1>2,
+:::
+
+::: pf-step
+
+Using step <1>2,
 \[
 \mu(B_n)
 <
@@ -117,7 +155,9 @@ Apply countable subadditivity of the measure \(\mu\) to the union in step
 2^{1-n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The geometric tail satisfies
 \[
 \sum_{k=n}^{\infty}2^{-k}
@@ -126,23 +166,35 @@ The geometric tail satisfies
 =
 2^{1-n}.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \mu(B_n)\longrightarrow0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives
 \[
 0\le\mu(B_n)<2^{1-n}\to0.
 \]
 Apply the squeeze theorem.
+
 :::
 
-<1>8. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \boxed{
 B=\bigcap_{n=1}^{\infty}B_n}.
@@ -152,7 +204,9 @@ Then
 \boxed{\mu(B)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 B\subseteq B_n
@@ -162,14 +216,21 @@ for every \(n\),
 0\le\mu(B)\le\mu(B_n).
 \]
 Use step <1>7.
+
 :::
 
-<1>9. By the assumed absolute continuity,
+:::
+
+::: pf-step
+
+By the assumed absolute continuity,
 \[
 \boxed{\nu(B)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis says
 \[
 \mu(A)=0
@@ -177,50 +238,78 @@ The hypothesis says
 \nu(A)=0
 \]
 for every measurable \(A\). Apply it to \(A=B\) using step <1>8.
+
 :::
 
-<1>10. For every \(n\),
+:::
+
+::: pf-step
+
+For every \(n\),
 \[
 A_n\subseteq B_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The union defining \(B_n\) includes the term \(A_n\).
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \nu(B_n)\ge\nu(A_n)\ge\varepsilon_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Measures are monotone, so step <1>10 gives
 \[
 \nu(B_n)\ge\nu(A_n).
 \]
 Apply step <1>2.
+
 :::
 
-<1>12. Since \(\nu\) is finite,
+:::
+
+::: pf-step
+
+Since \(\nu\) is finite,
 \[
 \nu(B_1)<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The measure \(\nu\) is finite on the whole space \(X\), so
 \[
 \nu(B_1)\le\nu(X)<\infty.
 \]
+
 :::
 
-<1>13. By continuity from above,
+:::
+
+::: pf-step
+
+By continuity from above,
 \[
 \boxed{
 \nu(B_n)\longrightarrow\nu(B)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets \(B_n\) decrease by step <1>4, and the first one has finite
 \(\nu\)-measure by step <1>12. The continuity-from-above theorem for measures
 therefore gives
@@ -230,22 +319,36 @@ therefore gives
 \lim_{n\to\infty}\nu(B_n).
 \]
 The intersection is \(B\).
+
 :::
 
-<1>14. Steps <1>11 and <1>13 imply
+:::
+
+::: pf-step
+
+Steps <1>11 and <1>13 imply
 \[
 \boxed{
 \nu(B)\ge\varepsilon_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every term of the sequence \(\nu(B_n)\) is at least \(\varepsilon_0\), so
 its limit is also at least \(\varepsilon_0\).
+
 :::
 
-<1>15. Steps <1>9 and <1>14 contradict one another.
+:::
 
-::: {.proof}
+::: pf-step
+
+Steps <1>9 and <1>14 contradict one another.
+
+
+::: pf-proof
+
 Step <1>9 gives
 \[
 \nu(B)=0,
@@ -254,15 +357,27 @@ while step <1>14 gives
 \[
 \nu(B)\ge\varepsilon_0>0.
 \]
+
 :::
 
-<1>16. Therefore the negation in step <1>1 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the negation in step <1>1 is impossible.
+
+
+::: pf-proof
+
 It leads to the contradiction in step <1>15.
+
 :::
 
-<1>17. Hence for every \(\varepsilon>0\), there exists \(\delta>0\) such
+:::
+
+::: pf-step
+
+Hence for every \(\varepsilon>0\), there exists \(\delta>0\) such
 that
 \[
 \boxed{
@@ -272,13 +387,19 @@ that
 \]
 for every measurable \(A\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the logical negation of the impossible statement in step <1>1.
+
 :::
 
-<1>18. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>17 is the required conclusion.
+
 :::
+
 :::

@@ -30,7 +30,6 @@ Show that $H_+$ supports the standard contact structure $\xi$ on $S^3$ using the
 Show also that $H_-$ supports a different homotopy class of contact structure, which must therefore be overtwisted because $\#\mathcal{T}(S^3) = 1$.
 :::
 
-::: {.solution}
 Write
 \[
 S^3
@@ -59,7 +58,11 @@ s\,d\theta_1+(1-s)\,d\theta_2}.
 
 ## The positive Hopf open book
 
-<1>1. The positive Hopf binding is
+::: pf
+
+::: pf-step
+
+The positive Hopf binding is
 \[
 \boxed{
 L_+
@@ -67,12 +70,19 @@ L_+
 \{z_1=0\}\cup\{z_2=0\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two coordinate circles are fibers of the Hopf fibration and form the
 positive Hopf link with their complex orientations.
+
 :::
 
-<1>2. On \(S^3-L_+\), define
+:::
+
+::: pf-step
+
+On \(S^3-L_+\), define
 \[
 \boxed{
 \pi_+(z_1,z_2)
@@ -82,18 +92,27 @@ positive Hopf link with their complex orientations.
 e^{i(\theta_1+\theta_2)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Away from the coordinate circles,
 \[
 z_1z_2\ne0,
 \]
 so its argument defines a map to \(S^1\).
+
 :::
 
-<1>3. The fibers of \(\pi_+\) are the interiors of annuli whose boundary is
+:::
+
+::: pf-step
+
+The fibers of \(\pi_+\) are the interiors of annuli whose boundary is
 \(L_+\), so \((L_+,\pi_+)\) is the positive Hopf open book \(H_+\).
 
-::: {.proof}
+
+::: pf-proof
+
 Fixing
 \[
 \theta_1+\theta_2=\vartheta
@@ -102,9 +121,14 @@ leaves the radial parameter \(s\in(0,1)\) and one angular parameter free,
 giving an open annulus. As \(s\to0\) and \(s\to1\), its two ends approach
 the two coordinate circles. The induced boundary orientations give linking
 number \(+1\).
+
 :::
 
-<1>4. For \(0\le t<1\), define
+:::
+
+::: pf-step
+
+For \(0\le t<1\), define
 \[
 f_t(s)
 =
@@ -117,11 +141,18 @@ g_t(s)
 \frac{1-s}{1-t+t(1-s)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(t<1\), both denominators are strictly positive on \([0,1]\).
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 \alpha_t
@@ -131,7 +162,9 @@ f_t(s)\,d\theta_1
 g_t(s)\,d\theta_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Near \(s=0\),
 \[
 f_t(s)
@@ -145,9 +178,14 @@ g_t(s)=O(r_2^2),
 \]
 so \(\alpha_t\) extends smoothly across both binding circles for every
 \(t<1\).
+
 :::
 
-<1>6. At \(t=0\),
+:::
+
+::: pf-step
+
+At \(t=0\),
 \[
 \boxed{
 \alpha_0
@@ -157,11 +195,18 @@ s\,d\theta_1+(1-s)\,d\theta_2
 \alpha_{\mathrm{std}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(t=0\) into the functions in step <1>4.
+
 :::
 
-<1>7. The derivatives are
+:::
+
+::: pf-step
+
+The derivatives are
 \[
 \boxed{
 f_t'(s)
@@ -177,12 +222,19 @@ g_t'(s)
 {(1-t+t(1-s))^2}<0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the two quotient expressions from step <1>4. Since \(t<1\),
 the numerator \(1-t\) is positive.
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 \[
 d\alpha_t
 =
@@ -191,12 +243,19 @@ f_t'(s)\,ds\wedge d\theta_1
 g_t'(s)\,ds\wedge d\theta_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficient functions depend only on \(s\), and the angular
 \(1\)-forms are closed on the complement of the binding.
+
 :::
 
-<1>9. The contact volume form is
+:::
+
+::: pf-step
+
+The contact volume form is
 \[
 \boxed{
 \alpha_t\wedge d\alpha_t
@@ -207,7 +266,9 @@ g_t f_t'-f_t g_t'
 ds\wedge d\theta_1\wedge d\theta_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the wedge product. The terms involving
 \[
 d\theta_1\wedge ds\wedge d\theta_1
@@ -217,15 +278,22 @@ or
 d\theta_2\wedge ds\wedge d\theta_2
 \]
 vanish, and the two cross terms combine with the displayed coefficient.
+
 :::
 
-<1>10. For every \(t<1\),
+:::
+
+::: pf-step
+
+For every \(t<1\),
 \[
 \boxed{
 g_t f_t'-f_t g_t'>0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On \(0<s<1\),
 \[
 f_t>0,\qquad g_t>0
@@ -243,32 +311,46 @@ and
 -f_tg_t'>0,
 \]
 so their sum is positive.
+
 :::
 
-<1>11. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \xi_t=\ker\alpha_t}
 \]
 is a positive contact structure for every \(0\le t<1\).
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>9--<1>10 show
 \[
 \alpha_t\wedge d\alpha_t
 \]
 is a positive volume form on the complement of the binding, and the smooth
 local models from step <1>5 extend this positivity across the binding.
+
 :::
 
-<1>12. For \(0<s<1\),
+:::
+
+::: pf-step
+
+For \(0<s<1\),
 \[
 \lim_{t\to1^-}f_t(s)=1
 \qquad\text{and}\qquad
 \lim_{t\to1^-}g_t(s)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed \(s\in(0,1)\),
 \[
 1-t+ts\to s
@@ -278,9 +360,14 @@ and
 1-t+t(1-s)\to1-s.
 \]
 Divide numerator by the corresponding limit.
+
 :::
 
-<1>13. Hence away from the binding,
+:::
+
+::: pf-step
+
+Hence away from the binding,
 \[
 \boxed{
 \alpha_t
@@ -288,17 +375,26 @@ Divide numerator by the corresponding limit.
 d\theta_1+d\theta_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>12 coefficientwise.
+
 :::
 
-<1>14. The plane field
+:::
+
+::: pf-step
+
+The plane field
 \[
 \ker(d\theta_1+d\theta_2)
 \]
 is tangent to the pages of \(H_+\).
 
-::: {.proof}
+
+::: pf-proof
+
 The pages are the level sets of
 \[
 \theta_1+\theta_2.
@@ -307,12 +403,19 @@ Their tangent spaces are exactly the kernel of its differential
 \[
 d\theta_1+d\theta_2.
 \]
+
 :::
 
-<1>15. The contact structures \(\xi_t\) are transverse to the binding for
+:::
+
+::: pf-step
+
+The contact structures \(\xi_t\) are transverse to the binding for
 every \(t<1\).
 
-::: {.proof}
+
+::: pf-proof
+
 At the component \(s=1\), the binding tangent is
 \[
 \partial_{\theta_1}
@@ -338,15 +441,22 @@ g_t(0)
 1.
 \]
 Thus neither binding tangent lies in \(\xi_t\).
+
 :::
 
-<1>16. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 H_+\text{ supports }\xi_{\mathrm{std}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 \xi_0=\ker\alpha_{\mathrm{std}}.
@@ -354,16 +464,23 @@ By step <1>6,
 Steps <1>11 and <1>15 give contact structures transverse to the binding for
 all \(t<1\). Steps <1>13--<1>14 show that the limiting plane field away
 from the binding is the page foliation. This is exactly Definition 4.51.
+
 :::
 
-<1>17. This construction is the Hopf-fibration construction: the binding
+:::
+
+::: pf-step
+
+This construction is the Hopf-fibration construction: the binding
 components are Hopf fibers, and the pages are inverse images of meridional
 arcs in
 \[
 S^2-\{\text{north},\text{south}\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hopf fibration
 \[
 h:S^3\to\mathbb{CP}^1\cong S^2
@@ -374,68 +491,106 @@ coordinate on the punctured base is represented in Hopf coordinates by
 \theta_1+\theta_2,
 \]
 so its level arcs lift to the pages in step <1>3.
+
 :::
 
-## The negative Hopf open book
+:::
 
-<1>18. The negative Hopf open book \(H_-\) has annular pages whose two
+::: pf-step
+
+The negative Hopf open book \(H_-\) has annular pages whose two
 boundary components form a Hopf link of linking number
 \[
 \boxed{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining difference between the positive and negative Hopf
 bands: the annulus has the opposite full twist.
+
 :::
 
-<1>19. By Theorem 4.52, \(H_-\) supports a unique positive contact structure
+:::
+
+::: pf-step
+
+By Theorem 4.52, \(H_-\) supports a unique positive contact structure
 up to isotopy; denote it by
 \[
 \boxed{\xi_-}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Theorem 4.52 states that every open book supports a unique positive contact
 structure up to isotopy.
+
 :::
 
-<1>20. By Definition 4.51, \(\xi_-\) is homotopic as an oriented plane field
+:::
+
+::: pf-step
+
+By Definition 4.51, \(\xi_-\) is homotopic as an oriented plane field
 to the canonical plane field obtained by smoothing the tangent planes to the
 pages of \(H_-\) near the binding.
 
-::: {.proof}
+
+::: pf-proof
+
 A supporting family begins at \(\xi_-\) and ends, away from the binding, at
 the page foliation. The standard local smoothing near each binding component
 extends this limiting page plane field to a nonsingular plane field on all of
 \(S^3\). The family itself supplies the homotopy.
+
 :::
 
-<1>21. Under the Pontryagin--Thom correspondence from Section 1.3, the
+:::
+
+::: pf-step
+
+Under the Pontryagin--Thom correspondence from Section 1.3, the
 canonical plane field of an open book is represented by a binding component
 with its page framing.
 
-::: {.proof}
+
+::: pf-proof
+
 Near a binding component, the smoothed page plane field rotates from the
 page tangent plane to a nonsingular plane. Choose a regular value of the
 associated Gauss map in this local rotation. Its inverse image is the binding
 circle, and the derivative identifies its normal bundle with the framing
 given by the inward normal direction in the page. This is precisely the page
 framing.
+
 :::
 
-<1>22. For a Hopf band, the framing number of either binding component with
+:::
+
+::: pf-step
+
+For a Hopf band, the framing number of either binding component with
 its page framing equals the linking number of the two boundary components.
 
-::: {.proof}
+
+::: pf-proof
+
 Push one binding component slightly into the annulus in the page-framing
 direction. The pushed-off curve is isotopic through the annulus complement
 of the original component to the other boundary component. Therefore the
 linking number of the original component with its page-framed push-off is
 the linking number of the two Hopf-link components.
+
 :::
 
-<1>23. Hence the Pontryagin--Thom framing integer is
+:::
+
+::: pf-step
+
+Hence the Pontryagin--Thom framing integer is
 \[
 \boxed{+1}
 \]
@@ -445,16 +600,25 @@ for \(H_+\) and
 \]
 for \(H_-\), with the same choice of orientation convention.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>22 identifies the framing integer with the Hopf-link linking number.
 The positive and negative Hopf links have linking numbers \(+1\) and \(-1\),
 respectively.
+
 :::
 
-<1>24. Framed links in \(S^3\) with different framing integers are not
+:::
+
+::: pf-step
+
+Framed links in \(S^3\) with different framing integers are not
 framed cobordant.
 
-::: {.proof}
+
+::: pf-proof
+
 The Pontryagin--Thom correspondence identifies framed-cobordism classes of
 framed \(1\)-manifolds in \(S^3\) with
 \[
@@ -467,64 +631,103 @@ framed \(1\)-manifolds in \(S^3\) with
 The integer can be computed as the linking number of a framed link with a
 small framed push-off. Distinct integers therefore represent distinct
 classes.
+
 :::
 
-<1>25. Consequently, the plane field supported by \(H_-\) is not homotopic
+:::
+
+::: pf-step
+
+Consequently, the plane field supported by \(H_-\) is not homotopic
 to the standard contact plane field:
 \[
 \boxed{
 \xi_-\not\simeq\xi_{\mathrm{std}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>16 and <1>20--<1>23, the two plane fields correspond under
 Pontryagin--Thom to framed links with different integer invariants. Step
 <1>24 says they cannot be homotopic.
+
 :::
 
-<1>26. If \(\xi_-\) were tight, then it would be isotopic to
+:::
+
+::: pf-step
+
+If \(\xi_-\) were tight, then it would be isotopic to
 \(\xi_{\mathrm{std}}\).
 
-::: {.proof}
+
+::: pf-proof
+
 Corollary 4.32 gives
 \[
 \#\mathcal T(S^3)=1.
 \]
 Thus every positive tight contact structure on \(S^3\) is isotopic to the
 standard one.
+
 :::
 
-<1>27. Isotopic contact structures are homotopic as oriented plane fields.
+:::
 
-::: {.proof}
+::: pf-step
+
+Isotopic contact structures are homotopic as oriented plane fields.
+
+
+::: pf-proof
+
 An isotopy is, in particular, a continuous one-parameter family of contact
 plane fields.
+
 :::
 
-<1>28. Therefore \(\xi_-\) is not tight.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(\xi_-\) is not tight.
+
+
+::: pf-proof
+
 If it were tight, step <1>26 would make it isotopic to
 \(\xi_{\mathrm{std}}\), and step <1>27 would make the two plane fields
 homotopic. This contradicts step <1>25.
+
 :::
 
-<1>29. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 H_-\text{ supports an overtwisted contact structure on }S^3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A contact structure in dimension \(3\) is either tight or overtwisted.
 Step <1>28 rules out tightness.
+
 :::
 
-<1>30. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>16 proves that \(H_+\) supports the standard contact structure.
 Steps <1>25 and <1>29 show that \(H_-\) supports a different homotopy class
 and that its supported contact structure is overtwisted.
+
 :::
+
 :::

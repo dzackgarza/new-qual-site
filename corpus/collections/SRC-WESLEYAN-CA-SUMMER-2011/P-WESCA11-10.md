@@ -23,7 +23,6 @@ Evaluate
 using the residue theorem.
 :::
 
-::: {.solution}
 Set
 \[
 F(z)
@@ -33,7 +32,11 @@ F(z)
 \frac{z^2}{(z^2+2)(z^2+3)}.
 \]
 
-<1>1. One has the partial-fraction decomposition
+::: pf
+
+::: pf-step
+
+One has the partial-fraction decomposition
 \[
 F(z)
 =
@@ -42,7 +45,9 @@ F(z)
 \frac{3}{z^2+3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 \frac{z^2}{(z^2+2)(z^2+3)}
@@ -69,16 +74,23 @@ A=-2,
 \qquad
 B=3.
 \]
+
 :::
 
-<1>2. The poles of $F$ in the upper half-plane are
+:::
+
+::: pf-step
+
+The poles of $F$ in the upper half-plane are
 \[
 z=i\sqrt2
 \qquad\text{and}\qquad
 z=i\sqrt3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator factors as
 \[
 (z-i\sqrt2)(z+i\sqrt2)
@@ -86,9 +98,14 @@ The denominator factors as
 \]
 Exactly the two roots with positive imaginary part lie in the upper
 half-plane.
+
 :::
 
-<1>3. The residues are
+:::
+
+::: pf-step
+
+The residues are
 \[
 \operatorname{Res}_{z=i\sqrt2}F
 =
@@ -101,7 +118,9 @@ and
 -\frac{i\sqrt3}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 \operatorname{Res}_{z=i\sqrt2}F
@@ -140,9 +159,14 @@ Similarly,
 =
 -\frac{i\sqrt3}{2}.
 \]
+
 :::
 
-<1>4. Let $C_R$ be the upper semicircle of radius $R$, with $R>\sqrt3$.
+:::
+
+::: pf-step
+
+Let $C_R$ be the upper semicircle of radius $R$, with $R>\sqrt3$.
 Then
 \[
 \int_{C_R}F(z)\,dz
@@ -152,7 +176,9 @@ Then
 (R\to\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For sufficiently large $R$ and
 \[
 |z|=R,
@@ -184,9 +210,14 @@ The ML inequality therefore gives
 O(R^{-1})
 \longrightarrow0.
 \]
+
 :::
 
-<1>5. The integral over the full real line is
+:::
+
+::: pf-step
+
+The integral over the full real line is
 \[
 \int_{-\infty}^{\infty}
 \frac{x^2}{x^4+5x^2+6}\,dx
@@ -194,7 +225,9 @@ O(R^{-1})
 \pi(\sqrt3-\sqrt2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the residue theorem to the upper-half-plane semicircular contour.
 Steps <1>2--<1>3 give
 \[
@@ -237,9 +270,14 @@ By step <1>4, the arc integral vanishes. Thus
 \pi(\sqrt3-\sqrt2).
 \end{aligned}
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^\infty
@@ -250,7 +288,9 @@ By step <1>4, the arc integral vanishes. Thus
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is even, so
 \[
 \int_{-\infty}^{\infty}F(x)\,dx
@@ -259,11 +299,15 @@ The integrand is even, so
 \int_0^\infty F(x)\,dx.
 \]
 Apply step <1>5 and divide by $2$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required residue-theorem evaluation.
+
 :::
+
 :::

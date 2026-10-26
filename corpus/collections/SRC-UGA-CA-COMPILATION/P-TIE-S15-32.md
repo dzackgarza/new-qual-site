@@ -25,8 +25,11 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. For $0<a<n$,
+::: pf
+
+::: pf-step
+
+For $0<a<n$,
 $$
 \boxed{
 \int_0^\infty
@@ -37,7 +40,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set $t=x^n$. Then
 $$
 dx=\frac1n t^{1/n-1}\,dt,
@@ -62,9 +67,14 @@ $$
 \frac{\pi}{\sin(\pi a/n)}
 $$
 by Euler's beta integral and the reflection formula. Multiplying by $1/n$ gives the result.
+
 :::
 
-<1>2. Define, for $0<s<4$,
+:::
+
+::: pf-step
+
+Define, for $0<s<4$,
 $$
 J(s)
 \coloneqq
@@ -79,7 +89,9 @@ J(s)
 {4\sin(\pi s/2)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 With $t=x^2$,
 $$
 \begin{aligned}
@@ -111,9 +123,14 @@ J(s)
 \frac{\pi(2-s)}
 {4\sin(\pi s/2)}.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_0^\infty
@@ -123,7 +140,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $s$ near $1$, differentiation under the integral sign is justified by an integrable majorant for
 $$
 \frac{x^{s-1}\log x}{(1+x^2)^2}.
@@ -145,11 +164,15 @@ J'(1)
 =
 -\frac\pi4.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (i), and step <1>3 proves part (ii).
+
 :::
+
 :::

@@ -24,26 +24,38 @@ S = \pi \sum _ { n = - \infty } ^ { \infty } n | c _ { n } | ^ { 2 } ( R ^ { 2 n
 $$
 :::
 
-::: {.solution}
 Write
 $$
 A(r,R)\coloneqq\{z:r<\abs{z}<R\}.
 $$
 
-<1>1. The derivative $f'(z)$ is nonzero throughout $A(r,R)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The derivative $f'(z)$ is nonzero throughout $A(r,R)$.
+
+
+::: pf-proof
+
 If $f'(z_0)=0$, then the local power-series expansion of the nonconstant holomorphic function $f-f(z_0)$ has a zero of order at least $2$ at $z_0$. The local mapping theorem would then make $f$ at least two-to-one near $z_0$, contradicting the assumed injectivity. Hence $f'(z)\ne0$.
+
 :::
 
-<1>2. The area $S$ of $f(A(r,R))$ is
+:::
+
+::: pf-step
+
+The area $S$ of $f(A(r,R))$ is
 $$
 S
 =
 \int_{A(r,R)}\abs{f'(z)}^2\,dA(z).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a holomorphic function $f=u+iv$, the real Jacobian is
 $$
 J_f
@@ -62,9 +74,14 @@ $$
 =
 \int_{A(r,R)}\abs{f'(z)}^2\,dA.
 $$
+
 :::
 
-<1>3. For every $\rho$ with $r\le\rho\le R$,
+:::
+
+::: pf-step
+
+For every $\rho$ with $r\le\rho\le R$,
 $$
 \frac1{2\pi}
 \int_0^{2\pi}
@@ -74,7 +91,9 @@ $$
 n^2\abs{c_n}^2\rho^{2n-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Laurent series of $f$ and its termwise derivative
 $$
 f'(z)
@@ -95,9 +114,14 @@ n c_n\rho^{n-1}e^{i(n-1)\theta}
 n^2\abs{c_n}^2\rho^{2n-2}.
 $$
 Uniform convergence of the derivative series on the compact annulus permits passage to the limit, proving the identity.
+
 :::
 
-<1>4. The area is
+:::
+
+::: pf-step
+
+The area is
 $$
 \boxed{
 S
@@ -109,7 +133,9 @@ n\abs{c_n}^2
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>3 and polar coordinates,
 $$
 \begin{aligned}
@@ -148,11 +174,18 @@ n\abs{c_n}^2
 \end{aligned}
 $$
 Adding the zero $n=0$ term gives the displayed formula.
+
 :::
 
-<1>5. Every term in the series in step <1>4 is nonnegative.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every term in the series in step <1>4 is nonnegative.
+
+
+::: pf-proof
+
 For $n>0$,
 $$
 R^{2n}-r^{2n}>0,
@@ -162,11 +195,18 @@ $$
 R^{2n}-r^{2n}<0,
 $$
 and multiplying by the negative integer $n$ again gives a positive number.
+
 :::
 
-<1>6. The area $S$ is finite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The area $S$ is finite.
+
+
+::: pf-proof
+
 The derivative $f'$ is continuous on the compact annulus
 $$
 \{z:r\le\abs{z}\le R\},
@@ -176,11 +216,15 @@ $$
 \int_{A(r,R)}\abs{f'(z)}^2\,dA<\infty.
 $$
 By step <1>2, this integral is exactly $S$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the stated area formula, and step <1>6 proves finiteness.
+
 :::
+
 :::

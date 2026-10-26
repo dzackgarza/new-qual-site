@@ -38,7 +38,6 @@ and computing $\alpha \wedge d\alpha$.
 Can you show that this form restricted to $S^3 - \{*\}$ is contactomorphic to $(\mathbb{R}^3, dz + x\,dy)$?
 :::
 
-::: {.solution}
 Write
 \[
 z_j=x_j+iy_j
@@ -53,7 +52,11 @@ dx_1\wedge dy_1\wedge dx_2\wedge dy_2.
 
 ## The contact condition
 
-<1>1. With the normalization used in the notes,
+::: pf
+
+::: pf-step
+
+With the normalization used in the notes,
 \[
 \boxed{
 \alpha
@@ -63,7 +66,9 @@ x_1\,dy_1-y_1\,dx_1
 x_2\,dy_2-y_2\,dx_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the standard complex structure with
 \[
 J(\partial_{x_j})=-\partial_{y_j},
@@ -77,9 +82,14 @@ d(r^2)\circ J
 is a positive constant multiple of the displayed form. Multiplying a
 defining contact form by a positive constant does not change its kernel or
 its contact orientation, so the source adopts the displayed normalization.
+
 :::
 
-<1>2. Its exterior derivative is
+:::
+
+::: pf-step
+
+Its exterior derivative is
 \[
 \boxed{
 d\alpha
@@ -89,7 +99,9 @@ d\alpha
 2\,dx_2\wedge dy_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each \(j\),
 \[
 d(x_j\,dy_j-y_j\,dx_j)
@@ -99,9 +111,14 @@ dx_j\wedge dy_j-dy_j\wedge dx_j
 2\,dx_j\wedge dy_j.
 \]
 Sum over \(j=1,2\).
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \begin{aligned}
@@ -116,7 +133,9 @@ Sum over \(j=1,2\).
 \end{aligned}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 \[
 \alpha\wedge
@@ -125,9 +144,14 @@ Expand
 The terms from the \(j=1\) part of \(\alpha\) vanish when wedged with
 \(dx_1\wedge dy_1\), and similarly for \(j=2\). Reordering the surviving
 terms into the displayed coordinate order gives the formula.
+
 :::
 
-<1>4. The differential of the squared radius is
+:::
+
+::: pf-step
+
+The differential of the squared radius is
 \[
 \boxed{
 d(r^2)
@@ -135,14 +159,21 @@ d(r^2)
 2(x_1\,dx_1+y_1\,dy_1+x_2\,dx_2+y_2\,dy_2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 \[
 r^2=x_1^2+y_1^2+x_2^2+y_2^2.
 \]
+
 :::
 
-<1>5. Wedge multiplication gives
+:::
+
+::: pf-step
+
+Wedge multiplication gives
 \[
 \boxed{
 d(r^2)\wedge\alpha\wedge d\alpha
@@ -150,7 +181,9 @@ d(r^2)\wedge\alpha\wedge d\alpha
 4r^2\,\Omega}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>3, only one term of \(d(r^2)\) can complete each displayed
 \(3\)-form to the ordered \(4\)-form \(\Omega\):
 
@@ -194,23 +227,35 @@ After reordering, all four contributions have positive sign. Their sum is
 =
 4r^2\Omega.
 \]
+
 :::
 
-<1>6. On
+:::
+
+::: pf-step
+
+On
 \[
 \mathbb C^2-\{0\},
 \]
 the \(4\)-form in step <1>5 is positive.
 
-::: {.proof}
+
+::: pf-proof
+
 For \(r>0\),
 \[
 4r^2>0,
 \]
 and \(\Omega\) is the chosen positive volume form.
+
 :::
 
-<1>7. In particular, along
+:::
+
+::: pf-step
+
+In particular, along
 \[
 S^3=\{r^2=1\},
 \]
@@ -221,7 +266,9 @@ the \(3\)-form
 \]
 is a positive volume form on the outward-oriented sphere.
 
-::: {.proof}
+
+::: pf-proof
+
 The outward normal is positively paired with \(d(r^2)\). By step <1>5,
 \[
 d(r^2)\wedge\alpha\wedge d\alpha
@@ -232,38 +279,37 @@ the restriction of
 \alpha\wedge d\alpha
 \]
 to the oriented level set \(S^3\) be positive.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \xi=\ker(\alpha|_{S^3})}
 \]
 is a positive contact structure on \(S^3\).
 
-::: {.proof}
+
+::: pf-proof
+
 A \(1\)-form on an oriented \(3\)-manifold is a positive contact form exactly
 when
 \[
 \alpha\wedge d\alpha
 \]
 is a positive volume form. Apply step <1>7.
+
 :::
 
-## The punctured sphere and the Heisenberg model
+:::
 
-Let
-\[
-(\zeta,t)\in\mathbb C\times\mathbb R,
-\qquad
-\zeta=u+iv,
-\]
-and set
-\[
-D=1+|\zeta|^2-it.
-\]
+::: pf-step
 
-<1>9. Define
+Define
 \[
 \boxed{
 \mathcal C(\zeta,t)
@@ -274,14 +320,23 @@ D=1+|\zeta|^2-it.
 \right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard Cayley transform from the Heisenberg model to the
 sphere.
+
 :::
 
-<1>10. The image of \(\mathcal C\) lies in \(S^3\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The image of \(\mathcal C\) lies in \(S^3\).
+
+
+::: pf-proof
+
 Let
 \[
 w_1=\frac{2\zeta}{D},
@@ -316,15 +371,22 @@ one has
 1.
 \end{aligned}
 \]
+
 :::
 
-<1>11. The point
+:::
+
+::: pf-step
+
+The point
 \[
 (0,-1)\in S^3
 \]
 is not in the image of \(\mathcal C\).
 
-::: {.proof}
+
+::: pf-proof
+
 If \(w_1=0\), then \(\zeta=0\). In that case
 \[
 w_2
@@ -338,9 +400,14 @@ For finite \(t\), this cannot equal \(-1\), since
 -(1-it)
 \]
 would imply \(1=-1\).
+
 :::
 
-<1>12. The map \(\mathcal C\) is a diffeomorphism
+:::
+
+::: pf-step
+
+The map \(\mathcal C\) is a diffeomorphism
 \[
 \boxed{
 \mathbb C\times\mathbb R
@@ -348,7 +415,9 @@ would imply \(1=-1\).
 S^3-\{(0,-1)\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a point
 \[
 (w_1,w_2)\in S^3
@@ -390,9 +459,14 @@ These formulas define a smooth inverse on
 \[
 S^3-\{(0,-1)\}.
 \]
+
 :::
 
-<1>13. On \(\mathbb C\times\mathbb R\), define the Heisenberg contact form
+:::
+
+::: pf-step
+
+On \(\mathbb C\times\mathbb R\), define the Heisenberg contact form
 \[
 \boxed{
 \beta
@@ -400,11 +474,18 @@ S^3-\{(0,-1)\}.
 dt+2\,\operatorname{Im}(\overline\zeta\,d\zeta)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard contact form in complex notation.
+
 :::
 
-<1>14. Writing \(\zeta=u+iv\),
+:::
+
+::: pf-step
+
+Writing \(\zeta=u+iv\),
 \[
 \boxed{
 \beta
@@ -412,7 +493,9 @@ This is the standard contact form in complex notation.
 dt+2(u\,dv-v\,du)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 \overline\zeta\,d\zeta
@@ -424,9 +507,14 @@ u\,du+v\,dv
 i(u\,dv-v\,du).
 \]
 Take the imaginary part.
+
 :::
 
-<1>15. A direct differentiation of the Cayley transform gives
+:::
+
+::: pf-step
+
+A direct differentiation of the Cayley transform gives
 \[
 \boxed{
 \mathcal C^*(\alpha|_{S^3})
@@ -439,7 +527,9 @@ Take the imaginary part.
 \,\beta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the two component functions from step <1>9 into
 \[
 \alpha
@@ -466,15 +556,27 @@ collecting the terms in \(dt\) and
 (1+|\zeta|^2)^2+t^2
 \]
 yields the displayed formula.
+
 :::
 
-<1>16. The scalar factor in step <1>15 is everywhere positive.
+:::
 
-::: {.proof}
+::: pf-step
+
+The scalar factor in step <1>15 is everywhere positive.
+
+
+::: pf-proof
+
 Its denominator is a sum of squares and its numerator is \(2>0\).
+
 :::
 
-<1>17. Hence \(\mathcal C\) is a contactomorphism from
+:::
+
+::: pf-step
+
+Hence \(\mathcal C\) is a contactomorphism from
 \[
 (\mathbb C\times\mathbb R,\ker\beta)
 \]
@@ -483,7 +585,9 @@ to
 (S^3-\{(0,-1)\},\ker\alpha).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>15--<1>16,
 \[
 \mathcal C^*\alpha
@@ -498,33 +602,23 @@ d\mathcal C(\ker\beta)
 \ker\alpha.
 \]
 Step <1>12 gives the diffeomorphism.
+
 :::
 
-## Converting to \(dz+x\,dy\)
+:::
 
-Let
-\[
-\Phi:\mathbb R^3\to\mathbb C\times\mathbb R
-\]
-be
-\[
-\boxed{
-\Phi(x,y,z)
-=
-\left(
-\frac{x+iy}{2},
-z+\frac{xy}{2}
-\right)}.
-\]
+::: pf-step
 
-<1>18. Under \(\Phi\),
+Under \(\Phi\),
 \[
 2\,\operatorname{Im}(\overline\zeta\,d\zeta)
 =
 \frac12(x\,dy-y\,dx).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \zeta=\frac{x+iy}{2},
@@ -540,23 +634,35 @@ Thus
 \frac14(x\,dy-y\,dx).
 \]
 Multiply by \(2\).
+
 :::
 
-<1>19. Also
+:::
+
+::: pf-step
+
+Also
 \[
 dt
 =
 dz+\frac12(x\,dy+y\,dx).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 \[
 t=z+\frac{xy}{2}.
 \]
+
 :::
 
-<1>20. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \Phi^*\beta
@@ -564,7 +670,9 @@ t=z+\frac{xy}{2}.
 dz+x\,dy}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>18--<1>19,
 \[
 \begin{aligned}
@@ -581,9 +689,14 @@ dz+\frac12(x\,dy+y\,dx)
 dz+x\,dy.
 \end{aligned}
 \]
+
 :::
 
-<1>21. The composite
+:::
+
+::: pf-step
+
+The composite
 \[
 \boxed{
 \Psi
@@ -599,7 +712,9 @@ is a contactomorphism from
 \]
 onto the punctured standard contact sphere.
 
-::: {.proof}
+
+::: pf-proof
+
 The map \(\Phi\) is a diffeomorphism from \(\mathbb R^3\) to
 \(\mathbb C\times\mathbb R\). By step <1>20, it is a strict
 contactomorphism from
@@ -609,13 +724,17 @@ dz+x\,dy
 to \(\beta\). Step <1>17 says \(\mathcal C\) is a contactomorphism from
 \(\ker\beta\) to the punctured sphere. Their composite is therefore a
 contactomorphism.
+
 :::
 
-<1>22. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>8 verify the positive contact form on \(S^3\), and steps
 <1>9--<1>21 give the explicit contactomorphism with standard
 \(\mathbb R^3\) after deleting one point.
+
 :::
+
 :::

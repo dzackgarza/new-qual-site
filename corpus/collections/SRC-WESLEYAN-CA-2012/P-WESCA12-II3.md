@@ -27,8 +27,11 @@ Prove that
 both exist and are equal.
 :::
 
-::: {.solution}
-<1>1. Since $f$ and $g$ both have zeros of order $7$ at $0$, there are
+::: pf
+
+::: pf-step
+
+Since $f$ and $g$ both have zeros of order $7$ at $0$, there are
 analytic functions
 \[
 F,G
@@ -46,7 +49,9 @@ F(0)\ne0,
 G(0)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Having a zero of order exactly $7$ means precisely that the first nonzero
 Taylor coefficient occurs in degree $7$.
 Factoring out
@@ -54,16 +59,23 @@ Factoring out
 z^7
 \]
 leaves analytic functions that are nonzero at the origin.
+
 :::
 
-<1>2. For $z\ne0$ sufficiently near $0$,
+:::
+
+::: pf-step
+
+For $z\ne0$ sufficiently near $0$,
 \[
 \frac{f(z)}{g(z)}
 =
 \frac{F(z)}{G(z)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 \frac{f(z)}{g(z)}
@@ -77,9 +89,14 @@ Since
 G(0)\ne0,
 \]
 continuity implies that $G$ is nonzero on some neighborhood of $0$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{z\to0}
@@ -89,16 +106,23 @@ continuity implies that $G$ is nonzero on some neighborhood of $0$.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient
 \[
 \frac{F}{G}
 \]
 is analytic, hence continuous, near $0$.
 Apply step <1>2 and take the limit.
+
 :::
 
-<1>4. Differentiating the factorizations gives
+:::
+
+::: pf-step
+
+Differentiating the factorizations gives
 \[
 f'(z)
 =
@@ -117,7 +141,9 @@ z^6
 \bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the product rule to
 \[
 f(z)=z^7F(z)
@@ -126,15 +152,22 @@ and
 \[
 g(z)=z^7G(z).
 \]
+
 :::
 
-<1>5. The function
+:::
+
+::: pf-step
+
+The function
 \[
 7G(z)+zG'(z)
 \]
 is nonzero for all sufficiently small $z$.
 
-::: {.proof}
+
+::: pf-proof
+
 At
 \[
 z=0,
@@ -145,9 +178,14 @@ its value is
 \]
 which is nonzero by step <1>1.
 Continuity therefore gives a neighborhood on which it does not vanish.
+
 :::
 
-<1>6. For $z\ne0$ sufficiently near $0$,
+:::
+
+::: pf-step
+
+For $z\ne0$ sufficiently near $0$,
 \[
 \frac{f'(z)}{g'(z)}
 =
@@ -158,16 +196,23 @@ Continuity therefore gives a neighborhood on which it does not vanish.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Cancel the common factor
 \[
 z^6
 \]
 from the formulas in step <1>4.
 Step <1>5 guarantees the remaining denominator is nonzero near $0$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{z\to0}
@@ -177,7 +222,9 @@ Step <1>5 guarantees the remaining denominator is nonzero near $0$.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take the limit in step <1>6:
 \[
 7F(z)+zF'(z)
@@ -199,9 +246,14 @@ Thus
 =
 \frac{F(0)}{G(0)}.
 \]
+
 :::
 
-<1>8. The two limits exist and are equal:
+:::
+
+::: pf-step
+
+The two limits exist and are equal:
 \[
 \boxed{
 \lim_{z\to0}
@@ -214,13 +266,19 @@ Thus
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is exactly the desired conclusion.
+
 :::
+
 :::

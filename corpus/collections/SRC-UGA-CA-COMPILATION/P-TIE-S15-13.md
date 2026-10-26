@@ -47,15 +47,20 @@ Erratum: integral (ii) diverges for $a = 0$, where the integrand is $\cos x / x^
 The hypothesis should be $a \in \mathbb{R}$, $a \ne 0$.
 :::
 
-::: {.solution}
-<1>1. For $n=1$,
+::: pf
+
+::: pf-step
+
+For $n=1$,
 $$
 \int_0^\infty\frac{dx}{(1+x)^2}
 =
 \boxed{1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative is
 $$
 -\frac1{1+x},
@@ -67,9 +72,14 @@ $$
 \left[-\frac1{1+x}\right]_{0}^{\infty}
 =1.
 $$
+
 :::
 
-<1>2. For every integer $n>1$,
+:::
+
+::: pf-step
+
+For every integer $n>1$,
 $$
 \boxed{
 \int_0^\infty\frac{dx}{(1+x^n)^2}
@@ -79,7 +89,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 t=x^n.
@@ -141,9 +153,14 @@ $$
 \frac{\pi(n-1)}
 {n^2\sin(\pi/n)}.
 $$
+
 :::
 
-<1>3. For $a>0$,
+:::
+
+::: pf-step
+
+For $a>0$,
 $$
 \boxed{
 \int_0^\infty
@@ -153,7 +170,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Consider
 $$
 F(z)
@@ -208,9 +227,14 @@ $$
 \frac{\pi e^{-a}(a+1)}{2a^3},
 $$
 which gives the result.
+
 :::
 
-<1>4. For every real $a\ne0$,
+:::
+
+::: pf-step
+
+For every real $a\ne0$,
 $$
 \boxed{
 \int_0^\infty
@@ -221,11 +245,18 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand depends on $a$ only through $a^2$. Thus replacing $a$ by $\abs{a}>0$ in step <1>3 gives the formula for every nonzero real $a$. The case $a=0$ diverges, as recorded in the erratum.
+
 :::
 
-<1>5. For $a>1$,
+:::
+
+::: pf-step
+
+For $a>1$,
 $$
 \boxed{
 \int_0^\pi
@@ -236,7 +267,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the tangent half-angle substitution
 $$
 t=\tan\frac{\theta}{2},
@@ -285,9 +318,14 @@ $$
 \arctan\sqrt{a^2-1}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. For $a>0$,
+:::
+
+::: pf-step
+
+For $a>0$,
 $$
 \boxed{
 \int_0^{\pi/2}
@@ -297,7 +335,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 t=\tan\theta.
@@ -332,9 +372,14 @@ t\sqrt{\frac{a+1}{a}}
 \frac{\pi}{2\sqrt{a(a+1)}}.
 \end{aligned}
 $$
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_{\abs{z}=2}
@@ -344,7 +389,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The poles inside $\abs{z}=2$ are the five fifth roots of unity. The only other finite pole is at $z=3$. The rational function
 $$
 R(z)
@@ -374,9 +421,14 @@ $$
 =
 -\frac{\pi i}{121}.
 $$
+
 :::
 
-<1>8. For $0<a<1$ and $\xi\ne0$,
+:::
+
+::: pf-step
+
+For $0<a<1$ and $\xi\ne0$,
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -388,7 +440,9 @@ e^{-ix\xi}\,dx
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 F(z)
@@ -481,9 +535,14 @@ I(\xi)
 =
 \frac{2\sinh(a\xi)}{\sinh\xi}.
 $$
+
 :::
 
-<1>9. At $\xi=0$,
+:::
+
+::: pf-step
+
+At $\xi=0$,
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -494,7 +553,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The kernel
 $$
 \frac{\sin\pi a}
@@ -509,9 +570,14 @@ I(0)
 =
 2a.
 $$
+
 :::
 
-<1>10. Finally,
+:::
+
+::: pf-step
+
+Finally,
 $$
 \boxed{
 \int_{\abs{z}=1}\cot^2z\,dz
@@ -519,7 +585,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The poles of $\cot z$ occur at the integer multiples of $\pi$. Inside $\abs{z}=1$, the only pole is at $z=0$. The Laurent expansion
 $$
 \cot z
@@ -539,11 +607,15 @@ $$
 \operatorname{Res}_{z=0}\cot^2z=0.
 $$
 The residue theorem therefore gives the stated contour integral.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 evaluate part (i), steps <1>3--<1>4 evaluate part (ii) with the corrected hypothesis $a\ne0$, and steps <1>5--<1>10 evaluate parts (iii)--(vii).
+
 :::
+
 :::

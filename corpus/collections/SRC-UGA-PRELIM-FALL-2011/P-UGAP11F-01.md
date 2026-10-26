@@ -30,7 +30,6 @@ Assume the following statement is true:
 (e) What, if anything, can be concluded if Michael failed the course?
 :::
 
-::: {.solution}
 Let
 $$
 P=\text{“Michael scored at least $80$ on the final”}
@@ -44,14 +43,20 @@ $$
 P\Longrightarrow Q.
 $$
 
-<1>1. The contrapositive is:
+::: pf
+
+::: pf-step
+
+The contrapositive is:
 
 $$
 \boxed{
 \text{If Michael did not pass the history class, then he scored below $80$ on the final.}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The contrapositive of
 $$
 P\Longrightarrow Q
@@ -69,16 +74,23 @@ $$
 \neg P
 $$
 means that his score was below $80$.
+
 :::
 
-<1>2. The converse is:
+:::
+
+::: pf-step
+
+The converse is:
 
 $$
 \boxed{
 \text{If Michael passed the history class, then he scored at least $80$ on the final.}}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The converse of
 $$
 P\Longrightarrow Q
@@ -88,11 +100,18 @@ $$
 Q\Longrightarrow P.
 $$
 The converse need not follow from the original implication.
+
 :::
 
-<1>3. If Michael's final-exam score was $75$, nothing can be concluded about whether he passed the class.
+:::
 
-::: {.proof}
+::: pf-step
+
+If Michael's final-exam score was $75$, nothing can be concluded about whether he passed the class.
+
+
+::: pf-proof
+
 A score of $75$ means
 $$
 \neg P.
@@ -110,11 +129,18 @@ $$
 \neg P\Longrightarrow\neg Q.
 $$
 Thus both passing and failing are logically compatible with the given information.
+
 :::
 
-<1>4. If Michael passed the course, nothing can be concluded about whether his final-exam score was at least $80$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If Michael passed the course, nothing can be concluded about whether his final-exam score was at least $80$.
+
+
+::: pf-proof
+
 Passing the course means
 $$
 Q.
@@ -128,11 +154,18 @@ $$
 Q
 $$
 would use the converse from step <1>2, which is not assumed true.
+
 :::
 
-<1>5. If Michael failed the course, then his final-exam score was below $80$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If Michael failed the course, then his final-exam score was below $80$.
+
+
+::: pf-proof
+
 Failing the course means
 $$
 \neg Q.
@@ -142,11 +175,15 @@ $$
 \neg Q\Longrightarrow\neg P.
 $$
 Therefore his score was below $80$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 answer parts (a)--(e), respectively.
+
 :::
+
 :::

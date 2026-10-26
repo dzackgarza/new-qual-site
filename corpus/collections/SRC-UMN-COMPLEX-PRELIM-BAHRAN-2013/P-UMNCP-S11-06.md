@@ -24,7 +24,6 @@ Suppose \(f\) is entire and there is \(M>0\) such that
 whenever \(|z|\ge M\). Prove that \(f\) is constant.
 :::
 
-::: {.solution}
 Write
 $$
 f(z)
@@ -38,7 +37,11 @@ u=\operatorname{Re}f,
 v=\operatorname{Im}f.
 $$
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 $$
 |z|\ge M,
 $$
@@ -48,7 +51,9 @@ $$
 \operatorname{Re}(f(z)^2)\ge0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 f(z)^2
@@ -69,9 +74,14 @@ implies
 $$
 u(z)^2-v(z)^2\ge0.
 $$
+
 :::
 
-<1>2. The entire function
+:::
+
+::: pf-step
+
+The entire function
 $$
 g(z)
 \coloneqq
@@ -86,7 +96,9 @@ $$
 |z|\ge M.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $g$ is entire because $f$ and the exponential are entire. Moreover,
 $$
 |g(z)|
@@ -101,11 +113,18 @@ so
 $$
 |g(z)|\le1.
 $$
+
 :::
 
-<1>3. The function $g$ is bounded on all of $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is bounded on all of $\CC$.
+
+
+::: pf-proof
+
 Step <1>2 gives a bound outside the closed disk
 $$
 |z|\le M.
@@ -115,21 +134,35 @@ $$
 \max_{|z|\le M}|g(z)|
 $$
 is finite. Combining the two bounds gives a global bound.
+
 :::
 
-<1>4. The function $g$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is constant.
+
+
+::: pf-proof
+
 Step <1>3 gives a bounded entire function. Liouville's theorem implies that it is constant.
+
 :::
 
-<1>5. The function
+:::
+
+::: pf-step
+
+The function
 $$
 f^2
 $$
 is constant.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 g(z)=e^{-f(z)^2}
@@ -154,11 +187,18 @@ $$
 =0
 $$
 identically. Hence $f^2$ is constant.
+
 :::
 
-<1>6. The function $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant.
+
+
+::: pf-proof
+
 Suppose
 $$
 f(z)^2\equiv c.
@@ -178,11 +218,15 @@ $$
 \{\sqrt c,-\sqrt c\}.
 $$
 Since $f$ is continuous and $\CC$ is connected, its image is connected. A connected subset of a two-point set consists of one point. Thus $f$ is constant.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

@@ -21,17 +21,27 @@ Use induction to show that
 \]
 :::
 
-::: {.solution}
-<1>1. The identity holds for $n=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The identity holds for $n=1$.
+
+
+::: pf-proof
+
 For $n=1$,
 $$
 1^3=1=(1)^2.
 $$
+
 :::
 
-<1>2. Assume for some $n\ge1$ that
+:::
+
+::: pf-step
+
+Assume for some $n\ge1$ that
 $$
 1^3+\cdots+n^3
 =
@@ -44,7 +54,9 @@ $$
 \left(1+\cdots+n+(n+1)\right)^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the induction hypothesis,
 $$
 1^3+\cdots+n^3
@@ -79,9 +91,14 @@ $$
 \frac{(n+1)(n+2)}2.
 $$
 Thus the formula holds for $n+1$.
+
 :::
 
-<1>3. Hence, for every $n\ge1$,
+:::
+
+::: pf-step
+
+Hence, for every $n\ge1$,
 $$
 \boxed{
 1^3+2^3+\cdots+n^3
@@ -89,13 +106,19 @@ $$
 (1+2+\cdots+n)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the base case and step <1>2 gives the induction step.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required induction result.
+
 :::
+
 :::

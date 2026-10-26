@@ -28,10 +28,13 @@ Using $g$ and the fact that $g$ maps $D$ to $D$, prove that
 \]
 :::
 
-::: {.solution}
 Write \(a=f(0)\).
 
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 \[
 g(z)=\frac{f(z)-a}{1-\overline a\,f(z)}
 \]
@@ -40,7 +43,9 @@ satisfies
 g(0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(f(0)=a\),
 \[
 g(0)
@@ -49,27 +54,41 @@ g(0)
 =0.
 \]
 The denominator is nonzero because \(|a|<1\).
+
 :::
 
-<1>2. For every \(z\in D\),
+:::
+
+::: pf-step
+
+For every \(z\in D\),
 \[
 |g(z)|\le|z|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis, \(g\) is an analytic self-map of the unit disk. Step <1>1 gives \(g(0)=0\). Schwarz's lemma therefore yields
 \[
 |g(z)|\le|z|
 \]
 for every \(z\in D\).
+
 :::
 
-<1>3. Solving the defining equation for \(f\) gives
+:::
+
+::: pf-step
+
+Solving the defining equation for \(f\) gives
 \[
 f(z)=\frac{a+g(z)}{1+\overline a\,g(z)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Starting with
 \[
 g(1-\overline a f)=f-a,
@@ -84,16 +103,23 @@ Since \(|a|<1\) and \(|g(z)|<1\), one has
 |\overline a\,g(z)|<1,
 \]
 so \(1+\overline a\,g(z)\ne0\). Division gives the displayed formula.
+
 :::
 
-<1>4. For every \(z\in D\),
+:::
+
+::: pf-step
+
+For every \(z\in D\),
 \[
 |f(z)|
 \le
 \frac{|a|+|g(z)|}{1-|a||g(z)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3 and the triangle inequalities,
 \[
 |a+g(z)|\le|a|+|g(z)|
@@ -105,9 +131,14 @@ and
 1-|a||g(z)|.
 \]
 The latter denominator is positive because \(|a|,|g(z)|<1\). Dividing gives the claim.
+
 :::
 
-<1>5. For every \(z\in D\),
+:::
+
+::: pf-step
+
+For every \(z\in D\),
 \[
 \boxed{
 |f(z)|
@@ -115,7 +146,9 @@ The latter denominator is positive because \(|a|,|g(z)|<1\). Dividing gives the 
 \frac{|f(0)|+|z|}{1-|f(0)||z|}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 r=|z|.
@@ -143,11 +176,15 @@ Therefore
 \frac{|a|+r}{1-|a|r}.
 \]
 Since \(a=f(0)\), this is exactly the stated inequality.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required bound.
+
 :::
+
 :::

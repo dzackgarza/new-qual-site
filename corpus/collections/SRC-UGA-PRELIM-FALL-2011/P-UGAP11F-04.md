@@ -21,8 +21,11 @@ Give an $\varepsilon$-$\delta$ proof that
 \]
 :::
 
-::: {.solution}
-<1>1. For every $x\ne3$,
+::: pf
+
+::: pf-step
+
+For every $x\ne3$,
 $$
 \left|
 \frac1{3-x}-1
@@ -31,7 +34,9 @@ $$
 \frac{|x-2|}{|3-x|}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \frac1{3-x}-1
@@ -41,9 +46,14 @@ $$
 \frac{x-2}{3-x},
 $$
 and take absolute values.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 |x-2|<\frac12,
 $$
@@ -52,7 +62,9 @@ $$
 |3-x|>\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the reverse triangle inequality,
 $$
 |3-x|
@@ -63,9 +75,14 @@ $$
 >
 \frac12.
 $$
+
 :::
 
-<1>3. Given $\varepsilon>0$, set
+:::
+
+::: pf-step
+
+Given $\varepsilon>0$, set
 $$
 \boxed{
 \delta
@@ -76,11 +93,18 @@ $$
 \right\}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This choice is positive for every $\varepsilon>0$.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 0<|x-2|<\delta,
 $$
@@ -92,7 +116,9 @@ $$
 <\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 |x-2|<\delta\le\frac12,
@@ -115,21 +141,32 @@ $$
 \le
 \varepsilon.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \lim_{x\to2}\frac1{3-x}=1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 verifies the definition of the limit for the arbitrary $\varepsilon>0$ chosen in step <1>3.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required $\varepsilon$-$\delta$ conclusion.
+
 :::
+
 :::

@@ -28,8 +28,11 @@ A map $f:X\to Y$ is called closed if $f(F)$ is closed in $Y$ for every closed su
    need not be a closed map.
 :::
 
-::: {.solution}
-<1>1. Suppose
+::: pf
+
+::: pf-step
+
+Suppose
 \[
 f:X\to Y
 \]
@@ -49,7 +52,9 @@ f^B\text{ is closed}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 F\subseteq X
@@ -81,11 +86,18 @@ B\cap f(F).
 The right-hand side is the intersection of $B$ with a closed subset of $Y$,
 so it is closed in $B$.
 Thus every closed subset of $X$ has closed image under $f^B$.
+
 :::
 
-<1>2. Coordinate projections from products need not be closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Coordinate projections from products need not be closed.
+
+
+::: pf-proof
+
 Take
 \[
 X_1=X_2=\mathbb R
@@ -154,22 +166,33 @@ Therefore
 \pi_1
 \]
 is not a closed map.
+
 :::
 
-<1>3. Thus the answer is:
+:::
+
+::: pf-step
+
+Thus the answer is:
 
 1. corestricting a closed map to any subspace containing its image preserves
    closedness;
 2. coordinate projections in product spaces need not be closed.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the content of steps <1>1--<1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (1), and step <1>2 supplies the required counterexample
 for part (2).
+
 :::
+
 :::

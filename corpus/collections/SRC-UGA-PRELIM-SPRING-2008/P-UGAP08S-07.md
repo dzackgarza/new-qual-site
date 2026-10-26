@@ -36,10 +36,15 @@ g(x,y)=
 \]
 :::
 
-::: {.solution}
-<1>1. Away from the origin, both $f$ and $g$ are continuous.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Away from the origin, both $f$ and $g$ are continuous.
+
+
+::: pf-proof
+
 For
 \[
 (x,y)\ne(0,0),
@@ -51,9 +56,14 @@ x^2+y^2
 is nonzero.
 Thus each displayed formula is a quotient of polynomial functions with
 nonvanishing denominator.
+
 :::
 
-<1>2. Along the line
+:::
+
+::: pf-step
+
+Along the line
 \[
 y=x,
 \]
@@ -66,7 +76,9 @@ one has
 f(x,x)=\frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute:
 \[
 f(x,x)
@@ -75,9 +87,14 @@ f(x,x)
 =
 \frac12.
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 f
 \]
@@ -86,7 +103,9 @@ is not continuous at
 (0,0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Along the sequence
 \[
 (x_n,y_n)
@@ -110,9 +129,14 @@ f(x_n,y_n)
 f(0,0).
 \]
 Thus the limit at the origin does not equal the defined value.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 (x,y)\ne(0,0),
 \]
@@ -124,7 +148,9 @@ Thus the limit at the origin does not equal the defined value.
 |y|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 0
@@ -137,16 +163,23 @@ multiply by
 \[
 |y|.
 \]
+
 :::
 
-<1>5. Also
+:::
+
+::: pf-step
+
+Also
 \[
 |y|
 \le
 \sqrt{x^2+y^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 y^2
@@ -154,9 +187,14 @@ y^2
 x^2+y^2,
 \]
 taking square roots gives the inequality.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 g(x,y)\to0
 \]
@@ -165,7 +203,9 @@ as
 (x,y)\to(0,0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5,
 \[
 |g(x,y)|
@@ -182,9 +222,14 @@ Since
 g(0,0)=0,
 \]
 $g$ is continuous at the origin.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 f\text{ is not continuous on }\mathbb R^2,
@@ -193,17 +238,23 @@ g\text{ is continuous on }\mathbb R^2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows $f$ fails continuity at the origin.
 Step <1>1 gives continuity elsewhere.
 
 Steps <1>1 and <1>6 show $g$ is continuous both away from and at the
 origin.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the requested classification.
+
 :::
+
 :::

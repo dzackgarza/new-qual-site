@@ -28,7 +28,6 @@ with the subspace topology.
 4. Prove that $X$ has exactly two path components, one of which is not closed in $X$.
 :::
 
-::: {.solution}
 Set
 \[
 p\coloneqq(0,1)
@@ -38,12 +37,18 @@ and
 Y\coloneqq X\setminus\{p\}.
 \]
 
-<1>1. Every point of $Y$ can be joined by a path in $Y$ to the point
+::: pf
+
+::: pf-step
+
+Every point of $Y$ can be joined by a path in $Y$ to the point
 \[
 (0,0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 q\in Y.
@@ -80,15 +85,22 @@ then travel along the horizontal base to
 \]
 
 Both pieces lie in $Y$.
+
 :::
 
-<1>2. The space
+:::
+
+::: pf-step
+
+The space
 \[
 Y
 \]
 is path-connected.
 
-::: {.proof}
+
+::: pf-proof
+
 Given
 \[
 q_0,q_1\in Y,
@@ -103,15 +115,22 @@ and another path from $q_1$ to
 \]
 Reverse the second path and concatenate.
 This gives a path in $Y$ from $q_0$ to $q_1$.
+
 :::
 
-<1>3. The point
+:::
+
+::: pf-step
+
+The point
 \[
 p=(0,1)
 \]
 lies in the closure of $Y$.
 
-::: {.proof}
+
+::: pf-proof
+
 For each
 \[
 n\in\mathbb N,
@@ -131,14 +150,21 @@ p_n\to(0,1)=p
 \]
 in the Euclidean plane, hence also in the subspace topology on $X$.
 Therefore every neighborhood of $p$ in $X$ meets $Y$.
+
 :::
 
-<1>4. The closure of $Y$ in $X$ is all of $X$:
+:::
+
+::: pf-step
+
+The closure of $Y$ in $X$ is all of $X$:
 \[
 \overline Y^X=X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Clearly
 \[
 Y\subseteq\overline Y^X.
@@ -156,11 +182,18 @@ Y\cup\{p\}
 \overline Y^X.
 \]
 The reverse inclusion is automatic.
+
 :::
 
-<1>5. The space $X$ is connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X$ is connected.
+
+
+::: pf-proof
+
 By step <1>2, $Y$ is path-connected and therefore connected.
 The closure of a connected subset is connected.
 By step <1>4,
@@ -170,9 +203,14 @@ X
 \overline Y^X.
 \]
 Hence $X$ is connected.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 S
 \coloneqq
@@ -185,7 +223,9 @@ S
 \]
 Every connected subset of $S$ is a singleton.
 
-::: {.proof}
+
+::: pf-proof
+
 Every connected subset of
 \[
 \mathbb R
@@ -193,9 +233,14 @@ Every connected subset of
 is an interval.
 But $S$ contains no nondegenerate interval.
 Therefore a connected subset of $S$ can contain at most one point.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \gamma:[0,1]\to X
 \]
@@ -215,7 +260,9 @@ around $t_0$ in $[0,1]$ such that
 (t\in J).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 \gamma(t)
@@ -292,9 +339,14 @@ Hence
 \gamma(t)=p
 \]
 throughout $J$.
+
 :::
 
-<1>8. For any path
+:::
+
+::: pf-step
+
+For any path
 \[
 \gamma:[0,1]\to X,
 \]
@@ -309,7 +361,9 @@ is both open and closed in
 [0,1].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set $A$ is closed because
 \[
 A
@@ -325,11 +379,18 @@ is closed in the Hausdorff space $X$.
 Step <1>7 shows that every point of $A$ has a neighborhood contained in
 $A$.
 Thus $A$ is open.
+
 :::
 
-<1>9. Any path that starts at $p$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+Any path that starts at $p$ is constant.
+
+
+::: pf-proof
+
 Suppose
 \[
 \gamma(0)=p.
@@ -352,11 +413,18 @@ Hence
 \gamma(t)=p
 \]
 for all $t$.
+
 :::
 
-<1>10. The space $X$ is not path-connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X$ is not path-connected.
+
+
+::: pf-proof
+
 By step <1>9, there is no path from
 \[
 p
@@ -366,9 +434,14 @@ to any point of
 Y.
 \]
 Since $Y$ is nonempty, $X$ is not path-connected.
+
 :::
 
-<1>11. The path components of $X$ are exactly
+:::
+
+::: pf-step
+
+The path components of $X$ are exactly
 \[
 \boxed{
 \{p\}
@@ -377,7 +450,9 @@ Y.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $Y$ is one path-connected subset.
 By step <1>9, the point $p$ cannot be joined by a path to any point of $Y$,
 so
@@ -386,15 +461,22 @@ so
 \]
 is the other path component.
 There are no further points in $X$.
+
 :::
 
-<1>12. The path component
+:::
+
+::: pf-step
+
+The path component
 \[
 Y
 \]
 is not closed in $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 p\in\overline Y^X.
@@ -408,12 +490,16 @@ Hence
 Y\ne\overline Y^X,
 \]
 so $Y$ is not closed.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (1), step <1>5 proves part (2),
 step <1>10 proves part (3), and steps <1>11--<1>12 prove part (4).
+
 :::
+
 :::

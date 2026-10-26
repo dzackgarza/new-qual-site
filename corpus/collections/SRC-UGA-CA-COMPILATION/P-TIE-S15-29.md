@@ -26,18 +26,23 @@ $$
 where $\| f \| _ { ( \infty , s ) } = \operatorname* { s u p } _ { z \in D _ { s } ( z _ { 0 } ) } | f ( z ) | { \mathrm { ~ a n d ~ } } \| f \| _ { ( 1 , r ) } = \int _ { D _ { r } ( z _ { 0 } ) } | f ( z ) | d x d y .$
 :::
 
-::: {.solution}
 Set
 $$
 \rho\coloneqq r-s>0.
 $$
 
-<1>1. If $z\in D_s(z_0)$, then
+::: pf
+
+::: pf-step
+
+If $z\in D_s(z_0)$, then
 $$
 D_\rho(z)\subset D_r(z_0).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $w\in D_\rho(z)$, then
 $$
 \abs{w-z_0}
@@ -49,9 +54,14 @@ $$
 r.
 $$
 Thus $w\in D_r(z_0)$.
+
 :::
 
-<1>2. For every $z\in D_s(z_0)$ and every $0<t<\rho$,
+:::
+
+::: pf-step
+
+For every $z\in D_s(z_0)$ and every $0<t<\rho$,
 $$
 \abs{f(z)}
 \le
@@ -60,7 +70,9 @@ $$
 \abs{f(z+te^{i\theta})}\,d\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the circle
 $$
 \abs{w-z}=t
@@ -74,9 +86,14 @@ f(z)
 f(z+te^{i\theta})\,d\theta.
 $$
 Taking absolute values yields the estimate.
+
 :::
 
-<1>3. For every $z\in D_s(z_0)$,
+:::
+
+::: pf-step
+
+For every $z\in D_s(z_0)$,
 $$
 \abs{f(z)}
 \le
@@ -85,7 +102,9 @@ $$
 \abs{f(w)}\,dA(w).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the estimate in step <1>2 by $2t$ and integrate from $0$ to $\rho$:
 $$
 \abs{f(z)}
@@ -107,9 +126,14 @@ $$
 \abs{f(w)}\,dA(w).
 $$
 Division by $\rho^2$ gives the result.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \norm{f}_{(\infty,s)}
@@ -119,7 +143,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 D_\rho(z)\subset D_r(z_0),
@@ -133,16 +159,20 @@ $$
 \abs{f(w)}\,dA(w)
 $$
 for every $z\in D_s(z_0)$. Taking the supremum over $z$ yields the displayed inequality.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the assertion with
 $$
 \boxed{
 c=\frac1{\pi(r-s)^2}>0.
 }
 $$
+
 :::
+
 :::

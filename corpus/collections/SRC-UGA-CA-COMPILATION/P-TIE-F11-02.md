@@ -32,21 +32,26 @@ $$
 where L is the part of the circle $| z | = R ^ { \prime }$ which lies in the region D.
 :::
 
-::: {.solution}
 For $r>R$, parametrize the positively oriented arc $L_r$ by
 $$
 z(t)=re^{it},
 \qquad 0\le t\le\theta.
 $$
 
-<1>1. The integral over $L_r$ satisfies
+::: pf
+
+::: pf-step
+
+The integral over $L_r$ satisfies
 $$
 \int_{L_r} f(z)\,dz
 =
 i\int_0^\theta re^{it}f(re^{it})\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Under the parametrization above,
 $$
 dz=ire^{it}\,dt.
@@ -59,9 +64,14 @@ $$
 =
 i\int_0^\theta re^{it}f(re^{it})\,dt.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \lim_{r\to\infty}
 \int_0^\theta
@@ -69,7 +79,9 @@ $$
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $zf(z)\to k$ as $z\to\infty$ in $D$, for every $\varepsilon>0$ there exists $M>0$ such that
 $$
 \abs{zf(z)-k}<\frac{\varepsilon}{1+\theta}
@@ -90,9 +102,14 @@ $$
 \end{aligned}
 $$
 This proves the asserted limit.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \lim_{r\to\infty}\int_{L_r}f(z)\,dz
@@ -100,7 +117,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \int_{L_r}f(z)\,dz-i\theta k
@@ -109,11 +128,15 @@ i\int_0^\theta
 \left(re^{it}f(re^{it})-k\right)\,dt.
 $$
 The right-hand side tends to $0$ by step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required limit.
+
 :::
+
 :::

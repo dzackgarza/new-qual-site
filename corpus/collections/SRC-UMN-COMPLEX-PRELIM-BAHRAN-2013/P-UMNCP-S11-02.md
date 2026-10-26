@@ -24,13 +24,18 @@ h(z)^2=\overline{h(z)}
 for every \(z\in V\), then \(h\) is constant on \(V\). Find all possible values of such a function.
 :::
 
-::: {.solution}
-<1>1. For every $z\in V$,
+::: pf
+
+::: pf-step
+
+For every $z\in V$,
 $$
 |h(z)|\in\{0,1\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Taking absolute values in
 $$
 h(z)^2=\overline{h(z)}
@@ -53,22 +58,36 @@ so
 $$
 r\in\{0,1\}.
 $$
+
 :::
 
-<1>2. The image of $h$ satisfies
+:::
+
+::: pf-step
+
+The image of $h$ satisfies
 $$
 h(V)
 \subseteq
 \{0\}\cup S^1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the content of step <1>1.
+
 :::
 
-<1>3. The function $h$ is constant on $V$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h$ is constant on $V$.
+
+
+::: pf-proof
+
 Suppose $h$ were nonconstant. Since $V$ is connected and open and $h$ is holomorphic, the open mapping theorem would imply that
 $$
 h(V)
@@ -82,9 +101,14 @@ h(V)
 \{0\}\cup S^1,
 $$
 and this set has empty interior in $\CC$. Hence it contains no nonempty open subset. This contradiction shows that $h$ must be constant.
+
 :::
 
-<1>4. A constant value $c$ is allowed exactly when
+:::
+
+::: pf-step
+
+A constant value $c$ is allowed exactly when
 $$
 c=0
 $$
@@ -93,7 +117,9 @@ $$
 c^3=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A constant function $h\equiv c$ satisfies the hypothesis exactly when
 $$
 c^2=\overline c.
@@ -120,9 +146,14 @@ hence to
 $$
 c^3=1.
 $$
+
 :::
 
-<1>5. Thus the complete list of possible values is
+:::
+
+::: pf-step
+
+Thus the complete list of possible values is
 $$
 \boxed{
 0,quad
@@ -131,16 +162,22 @@ e^{2\pi i/3},quad
 e^{4\pi i/3}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are $0$ together with the three cube roots of unity from step <1>4, and each directly satisfies
 $$
 c^2=\overline c.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves constancy, and step <1>5 gives all possible constant values.
+
 :::
+
 :::

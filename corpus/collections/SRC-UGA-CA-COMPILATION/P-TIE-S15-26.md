@@ -21,19 +21,31 @@ Let Ω be a simply connected open set and let γ be a simple closed contour in 
 Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
 :::
 
-::: {.solution}
-<1>1. The bounded Jordan interior $U$ of $\gamma$ is contained in $\Omega$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The bounded Jordan interior $U$ of $\gamma$ is contained in $\Omega$.
+
+
+::: pf-proof
+
 For a simply connected region $\Omega\subset\CC$, every simple closed curve contained in $\Omega$ bounds a region contained in $\Omega$. Equivalently, the winding number of such a curve about every point outside $\Omega$ is zero. Since $\gamma$ is positively oriented and has winding number $1$ about every point of its bounded Jordan interior, no point of $U$ can lie outside $\Omega$. Hence
 $$
 U\subset\Omega.
 $$
+
 :::
 
-<1>2. The function $f$ is holomorphic on a neighborhood of $\overline U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is holomorphic on a neighborhood of $\overline U$.
+
+
+::: pf-proof
+
 By step <1>1,
 $$
 U\subset\Omega,
@@ -51,30 +63,44 @@ U\cup\gamma
 \Omega.
 $$
 Since $\Omega$ is open, every point of the compact set $\overline U$ has a neighborhood contained in $\Omega$. Hence $f$ is holomorphic on an open neighborhood of $\overline U$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \max_{z\in\overline U}\abs{f(z)}
 =
 \max_{z\in\gamma}\abs{f(z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $f$ is holomorphic on a neighborhood of $\overline U$, so it is continuous on $\overline U$. The compactness of $\overline U$ implies that $\abs f$ attains its maximum there.
 
 If a maximum were attained at an interior point of $U$ and $f$ were nonconstant, the strong maximum modulus principle would be violated. If $f$ is constant, the equality is immediate. Therefore in all cases the maximum on $\overline U$ is attained on the boundary
 $$
 \partial U=\gamma.
 $$
+
 :::
 
-<1>4. For every $z\in U$,
+:::
+
+::: pf-step
+
+For every $z\in U$,
 $$
 \boxed{\abs{f(z)}\le M.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \abs{f(z)}
@@ -89,11 +115,15 @@ for every $\zeta\in\gamma$. Hence
 $$
 \abs{f(z)}\le M.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

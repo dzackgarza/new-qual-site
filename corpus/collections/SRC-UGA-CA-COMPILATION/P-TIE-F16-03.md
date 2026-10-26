@@ -47,8 +47,11 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. The complex line integral of $f$ along a smooth curve
+::: pf
+
+::: pf-step
+
+The complex line integral of $f$ along a smooth curve
 $$
 \alpha:[a,b]\to D
 $$
@@ -62,15 +65,22 @@ f(\alpha(t))\alpha'(t)\,dt.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The composition
 $$
 t\longmapsto f(\alpha(t))\alpha'(t)
 $$
 is continuous on $[a,b]$ because $f$ is continuous and $\alpha$ is smooth. Hence the ordinary complex-valued Riemann integral on the right exists, and this is the definition of the line integral along the parametrized curve.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 \abs{f(\tau)}\le M
 $$
@@ -83,7 +93,9 @@ M\,\operatorname{length}(\alpha).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and the triangle inequality,
 $$
 \begin{aligned}
@@ -111,9 +123,14 @@ $$
 \abs{\alpha'(t)}\,dt.
 $$
 Substitution gives the estimate.
+
 :::
 
-<1>3. Along
+:::
+
+::: pf-step
+
+Along
 $$
 C_R:
 z(t)=Re^{it},
@@ -127,7 +144,9 @@ $$
 \sqrt{(\log R)^2+4\pi^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 \Log_{C_R}(Re^{it})
@@ -142,9 +161,14 @@ $$
 \le
 \sqrt{(\log R)^2+4\pi^2}.
 $$
+
 :::
 
-<1>4. On $C_R$,
+:::
+
+::: pf-step
+
+On $C_R$,
 $$
 \abs{
 \frac{\Log_{C_R}z}{z^2}
@@ -155,7 +179,9 @@ $$
 }{R^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\in C_R$,
 $$
 \abs z=R,
@@ -165,9 +191,14 @@ $$
 \abs{z^2}=R^2.
 $$
 Combine this with step <1>3.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \abs{
@@ -180,7 +211,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The circle $C_R$ has length
 $$
 2\pi R.
@@ -202,11 +235,15 @@ $$
 \sqrt{(\log R)^2+4\pi^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the precise definition requested in part (a), step <1>2 proves part (b), and step <1>5 gives the requested $R$-dependent bound for part (c) after specifying the logarithm determination omitted by the source.
+
 :::
+
 :::

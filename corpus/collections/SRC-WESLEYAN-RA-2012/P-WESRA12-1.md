@@ -27,8 +27,11 @@ Let $X$ be nonempty and let $\mathcal A$ be a collection of subsets of $X$.
 (d) If $X$ has exactly four points, determine the possible cardinalities of $\sigma$-algebras on $X$, and for each cardinality determine how many such $\sigma$-algebras exist.
 :::
 
-::: {.solution}
-<1>1. A collection
+::: pf
+
+::: pf-step
+
+A collection
 \[
 \mathcal A\subseteq\mathcal P(X)
 \]
@@ -56,7 +59,9 @@ is a **$\sigma$-algebra** if:
    \mathcal A.
    \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard definition.
 The empty set also belongs to $\mathcal A$ because
 \[
@@ -64,9 +69,14 @@ The empty set also belongs to $\mathcal A$ because
 =
 X\setminus X.
 \]
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 A,B\in\mathcal A,
 \]
@@ -75,7 +85,9 @@ then
 A\cap B\in\mathcal A.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By closure under complements,
 \[
 A^c,B^c\in\mathcal A.
@@ -96,9 +108,14 @@ By De Morgan's law,
 =
 A\cap B.
 \]
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 X=\mathbb N
 \]
@@ -111,7 +128,9 @@ E\text{ is finite or cofinite}\}.
 \]
 Then $\mathcal R$ is a ring of sets.
 
-::: {.proof}
+
+::: pf-proof
+
 The empty set is finite, so
 \[
 \varnothing\in\mathcal R.
@@ -139,9 +158,14 @@ is finite or cofinite:
 
 Thus $\mathcal R$ is closed under finite unions and differences, so it is
 a ring of sets.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 n\ge1,
 \]
@@ -162,7 +186,9 @@ for every $n$, but
 \mathcal R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each $A_n$ is cofinite, so
 \[
 A_n\in\mathcal R.
@@ -181,9 +207,14 @@ Hence it is neither finite nor cofinite, so it does not belong to
 \[
 \mathcal R.
 \]
+
 :::
 
-<1>5. Let $X$ be finite and let
+:::
+
+::: pf-step
+
+Let $X$ be finite and let
 \[
 \mathcal A
 \]
@@ -204,7 +235,9 @@ Then
 P_x\in\mathcal A.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $X$ is finite, its power set is finite, so
 \[
 \mathcal A
@@ -220,11 +253,18 @@ Also
 \[
 x\in P_x.
 \]
+
 :::
 
-<1>6. The distinct sets among the $P_x$ form a partition of $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The distinct sets among the $P_x$ form a partition of $X$.
+
+
+::: pf-proof
+
 Every point lies in its own atom, so the atoms cover $X$.
 
 Suppose
@@ -278,15 +318,22 @@ This implies
 P_x=P_y.
 \]
 Hence distinct atoms are disjoint.
+
 :::
 
-<1>7. Every set
+:::
+
+::: pf-step
+
+Every set
 \[
 E\in\mathcal A
 \]
 is a union of atoms.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 x\in E.
@@ -303,21 +350,33 @@ E
 \bigcup_{x\in E}P_x.
 \]
 After removing duplicates, this is a union of distinct atoms.
+
 :::
 
-<1>8. Conversely, every union of atoms belongs to
+:::
+
+::: pf-step
+
+Conversely, every union of atoms belongs to
 \[
 \mathcal A.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each atom belongs to $\mathcal A$ by step <1>5.
 There are only finitely many atoms.
 Finite unions of members of a $\sigma$-algebra belong to the
 $\sigma$-algebra.
+
 :::
 
-<1>9. If a finite $\sigma$-algebra has exactly
+:::
+
+::: pf-step
+
+If a finite $\sigma$-algebra has exactly
 \[
 k
 \]
@@ -328,7 +387,9 @@ atoms, then
 2^k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>7--<1>8, measurable sets are exactly unions of atoms.
 Choosing a measurable set is therefore equivalent to choosing an arbitrary
 subset of the set of $k$ atoms.
@@ -337,9 +398,14 @@ There are
 2^k
 \]
 such choices.
+
 :::
 
-<1>10. If
+:::
+
+::: pf-step
+
+If
 \[
 |X|=4,
 \]
@@ -354,17 +420,26 @@ Hence the possible cardinalities of $\sigma$-algebras are
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A partition of a four-point set has between one and four nonempty blocks.
 Apply step <1>9.
+
 :::
 
-<1>11. There is exactly one $\sigma$-algebra of cardinality
+:::
+
+::: pf-step
+
+There is exactly one $\sigma$-algebra of cardinality
 \[
 2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This corresponds to the one-block partition
 \[
 \{X\}.
@@ -373,9 +448,14 @@ The resulting $\sigma$-algebra is
 \[
 \{\varnothing,X\}.
 \]
+
 :::
 
-<1>12. There are exactly
+:::
+
+::: pf-step
+
+There are exactly
 \[
 7
 \]
@@ -384,7 +464,9 @@ $\sigma$-algebras of cardinality
 4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A four-element $\sigma$-algebra has exactly two atoms, so it has the form
 \[
 \{\varnothing,A,A^c,X\}
@@ -408,9 +490,14 @@ Therefore the number is
 =
 7.
 \]
+
 :::
 
-<1>13. There are exactly
+:::
+
+::: pf-step
+
+There are exactly
 \[
 6
 \]
@@ -419,7 +506,9 @@ $\sigma$-algebras of cardinality
 8.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An eight-element $\sigma$-algebra has three atoms.
 A partition of a four-point set into three nonempty blocks must have block
 sizes
@@ -434,14 +523,21 @@ There are
 6
 \]
 choices.
+
 :::
 
-<1>14. There is exactly one $\sigma$-algebra of cardinality
+:::
+
+::: pf-step
+
+There is exactly one $\sigma$-algebra of cardinality
 \[
 16.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This corresponds to the four singleton atoms.
 Every subset is then a union of atoms, so the $\sigma$-algebra is the full
 power set
@@ -449,9 +545,14 @@ power set
 \mathcal P(X),
 \]
 which is unique.
+
 :::
 
-<1>15. The complete table is
+:::
+
+::: pf-step
+
+The complete table is
 \[
 \boxed{
 \begin{array}{c|cccc}
@@ -464,14 +565,20 @@ which is unique.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>11--<1>14.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>2 answers part (b),
 steps <1>3--<1>4 answer part (c), and steps <1>5--<1>15 answer part (d).
+
 :::
+
 :::

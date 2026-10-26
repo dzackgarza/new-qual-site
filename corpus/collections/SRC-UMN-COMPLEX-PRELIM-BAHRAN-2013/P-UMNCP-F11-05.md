@@ -29,7 +29,6 @@ for every \(z\in\mathbb C\), and
 for every \(z\in\mathbb C\). Prove that \(f\) is constant.
 :::
 
-::: {.solution}
 For each integer
 $$
 n\in\ZZ
@@ -48,7 +47,11 @@ e^{-2\pi i n(x+iy)}
 \,dx.
 $$
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 $$
 n\in\ZZ,
 $$
@@ -58,7 +61,9 @@ c_n(y)
 $$
 is independent of $y$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix real numbers
 $$
 y_0<y_1
@@ -104,9 +109,14 @@ c_n(y_0)
 \quad\text{and}\quad
 c_n(y_1).
 $$
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 0\le x\le1,
 $$
@@ -117,7 +127,9 @@ $$
 e^{1+|y|}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the triangle inequality,
 $$
 |x+iy|
@@ -134,9 +146,14 @@ e^{|x+iy|}
 \le
 e^{1+|y|}.
 $$
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 $$
 n>0,
 $$
@@ -145,7 +162,9 @@ $$
 \boxed{c_n=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, write simply
 $$
 c_n
@@ -188,9 +207,14 @@ forces the right-hand side to tend to $0$. Hence
 $$
 c_n=0.
 $$
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 n<0,
 $$
@@ -199,7 +223,9 @@ $$
 \boxed{c_n=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 y>0,
@@ -231,15 +257,22 @@ forces the right-hand side to $0$. Therefore
 $$
 c_n=0.
 $$
+
 :::
 
-<1>5. For each fixed real $y$, the ordinary Fourier coefficients of the continuous $1$-periodic function
+:::
+
+::: pf-step
+
+For each fixed real $y$, the ordinary Fourier coefficients of the continuous $1$-periodic function
 $$
 x\longmapsto f(x+iy)
 $$
 vanish in every nonzero degree.
 
-::: {.proof}
+
+::: pf-proof
+
 Its $n$th Fourier coefficient is
 $$
 \widehat f_y(n)
@@ -268,21 +301,35 @@ $$
 \widehat f_y(n)=0
 $$
 for every nonzero integer $n$.
+
 :::
 
-<1>6. For every fixed $y$, the function
+:::
+
+::: pf-step
+
+For every fixed $y$, the function
 $$
 x\longmapsto f(x+iy)
 $$
 is constant in $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, all nonconstant Fourier coefficients of this continuous $1$-periodic function vanish. Uniqueness of Fourier coefficients for continuous periodic functions therefore implies that the function equals its constant Fourier mode.
+
 :::
 
-<1>7. The constant from step <1>6 is independent of $y$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The constant from step <1>6 is independent of $y$.
+
+
+::: pf-proof
+
 The constant Fourier mode is
 $$
 \widehat f_y(0)
@@ -298,20 +345,31 @@ $$
 c_0(y)
 $$
 is independent of $y$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f\text{ is constant on }\CC}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 says that $f$ is constant along every horizontal line, and step <1>7 says that these constants are all the same.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

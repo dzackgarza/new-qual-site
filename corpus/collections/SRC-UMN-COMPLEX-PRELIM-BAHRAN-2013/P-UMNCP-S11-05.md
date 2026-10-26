@@ -20,24 +20,34 @@ audit:
 Prove that a nonconstant entire function maps \(\mathbb C\) onto a dense subset of \(\mathbb C\).
 :::
 
-::: {.solution}
 Let
 $$
 f:\CC\to\CC
 $$
 be a nonconstant entire function.
 
-<1>1. Suppose, toward a contradiction, that
+::: pf
+
+::: pf-step
+
+Suppose, toward a contradiction, that
 $$
 f(\CC)
 $$
 is not dense in $\CC$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the negation of the desired conclusion.
+
 :::
 
-<1>2. There exist
+:::
+
+::: pf-step
+
+There exist
 $$
 a\in\CC
 $$
@@ -50,7 +60,9 @@ $$
 D(a,r)\cap f(\CC)=\varnothing.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If
 $$
 f(\CC)
@@ -64,9 +76,14 @@ $$
 D(a,r)
 $$
 lies entirely in that complement.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 $$
 g(z)
 \coloneqq
@@ -74,7 +91,9 @@ g(z)
 $$
 is entire and bounded.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 f(z)\ne a
@@ -91,17 +110,31 @@ $$
 \le
 \frac1r.
 $$
+
 :::
 
-<1>4. The function $g$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is constant.
+
+
+::: pf-proof
+
 Step <1>3 gives a bounded entire function. Liouville's theorem implies that it is constant.
+
 :::
 
-<1>5. The function $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant.
+
+
+::: pf-proof
+
 If
 $$
 g(z)\equiv c,
@@ -123,15 +156,27 @@ f(z)
 a+\frac1c
 $$
 for every $z$.
+
 :::
 
-<1>6. This contradicts the hypothesis that $f$ is nonconstant.
+:::
 
-::: {.proof}
+::: pf-step
+
+This contradicts the hypothesis that $f$ is nonconstant.
+
+
+::: pf-proof
+
 Step <1>5 contradicts the standing assumption on $f$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \overline{f(\CC)}
@@ -139,13 +184,19 @@ $$
 \CC}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption in step <1>1 led to a contradiction, so the image must be dense.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is exactly the required conclusion.
+
 :::
+
 :::

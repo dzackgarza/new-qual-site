@@ -30,13 +30,16 @@ Find a conformal map
 5. from $\{ z : | z | < 1 , \mathrm { R e } ( z ) > 0 \} \backslash ( 0 , 1 / 2 ]$ to H.
 :::
 
-::: {.solution}
 Write
 $$
 \HH\coloneqq\{w\in\CC:\operatorname{Im}w>0\}.
 $$
 
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 $$
 D_1
 \coloneqq
@@ -52,7 +55,9 @@ F_1(z)
 $$
 is a conformal bijection $D_1\to\HH$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\ne0$,
 $$
 \abs{z-\tfrac12}^2>\frac14
@@ -111,9 +116,14 @@ w
 \frac{i}{\pi}\log\abs\zeta
 $$
 lies in the strip and satisfies $e^{\pi i w}=\zeta$.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 D_2
 \coloneqq
@@ -140,7 +150,9 @@ F_2(z)
 $$
 is a conformal bijection $D_2\to\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u=\frac1{1-z}.
@@ -190,9 +202,14 @@ $$
 \zeta\longmapsto\frac{\zeta-i}{\zeta+i}
 $$
 is a Möbius conformal bijection $\HH\to\DD$. Their composition is $F_2$.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 D_3
 \coloneqq
@@ -214,7 +231,9 @@ F_3(z)
 $$
 is a conformal bijection $D_3\to\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 The real axis and the circle
 $$
 \abs{z+i}=\sqrt2
@@ -258,9 +277,14 @@ $$
 \zeta\longmapsto\frac{\zeta-i}{\zeta+i}
 $$
 maps $\HH$ conformally onto $\DD$. The displayed $F_3$ is the composition.
+
 :::
 
-<1>4. For $0<a<1$, define
+:::
+
+::: pf-step
+
+For $0<a<1$, define
 $$
 \boxed{
 F_4(z)
@@ -277,7 +301,9 @@ F_4:
 $$
 is a conformal bijection.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $a\in(0,1)$ is real,
 $$
 F_4(z)
@@ -303,9 +329,14 @@ $$
 \frac{1-a^2}{(1-ax)^2}>0.
 $$
 Hence it maps the slit $[a,1)$ bijectively onto $[0,1)$. Removing the slit on both sides therefore yields the asserted conformal bijection.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 $$
 D_5
 \coloneqq
@@ -344,7 +375,9 @@ F_5(z)
 $$
 is a conformal bijection $D_5\to\HH$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 -\frac\pi2
@@ -427,11 +460,15 @@ $$
 u\longmapsto M(u)^2
 $$
 maps the right half-disk conformally onto $\HH$, and composing the four conformal bijections gives the displayed $F_5$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 construct and verify a conformal map for each of the five requested domains.
+
 :::
+
 :::

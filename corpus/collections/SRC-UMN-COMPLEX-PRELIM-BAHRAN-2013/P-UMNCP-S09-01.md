@@ -24,7 +24,6 @@ Suppose \(f\) is entire and
 is bounded as \(|z|\to\infty\). Prove that \(f\) is constant.
 :::
 
-::: {.solution}
 By hypothesis, there exist constants
 $$
 C>0
@@ -46,7 +45,11 @@ $$
 |z|\ge R_0.
 $$
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 $$
 R\ge R_0,
 $$
@@ -57,14 +60,21 @@ $$
 C(1+R^{1/2}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the growth hypothesis restricted to the circle
 $$
 |z|=R.
 $$
+
 :::
 
-<1>2. For every integer
+:::
+
+::: pf-step
+
+For every integer
 $$
 m\ge1,
 $$
@@ -73,7 +83,9 @@ $$
 \boxed{f^{(m)}(0)=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 $$
 m\ge1.
@@ -117,11 +129,18 @@ forces the right-hand side to tend to zero. Hence
 $$
 f^{(m)}(0)=0.
 $$
+
 :::
 
-<1>3. The Taylor series of $f$ at $0$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Taylor series of $f$ at $0$ is constant.
+
+
+::: pf-proof
+
 Because $f$ is entire,
 $$
 f(z)
@@ -138,20 +157,31 @@ $$
 f(z)=f(0)
 $$
 for every $z$.
+
 :::
 
-<1>4. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{f\text{ is constant}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the conclusion of step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the claim.
+
 :::
+
 :::

@@ -25,8 +25,11 @@ where $\gamma$ is a closed smooth curve in $\mathbb C\setminus\{i,-i\}$.
 (b) Answer the same question when $\gamma$ is a positively oriented circle, and describe which circles give each possible value.
 :::
 
-::: {.solution}
-<1>1. One has the partial-fraction identity
+::: pf
+
+::: pf-step
+
+One has the partial-fraction identity
 \[
 \frac1{z^2+1}
 =
@@ -38,7 +41,9 @@ where $\gamma$ is a closed smooth curve in $\mathbb C\setminus\{i,-i\}$.
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 z^2+1
@@ -59,9 +64,14 @@ A=\frac1{2i},
 \qquad
 B=-\frac1{2i}.
 \]
+
 :::
 
-<1>2. For any closed smooth curve
+:::
+
+::: pf-step
+
+For any closed smooth curve
 \[
 \gamma
 \subset
@@ -81,7 +91,9 @@ B=-\frac1{2i}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \begin{aligned}
@@ -111,9 +123,14 @@ a=i
 a=-i
 \]
 gives the formula.
+
 :::
 
-<1>3. Every value
+:::
+
+::: pf-step
+
+Every value
 \[
 \pi m,
 \qquad
@@ -121,7 +138,9 @@ m\in\mathbb Z,
 \]
 occurs.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a small positively oriented circle around $i$ that does not enclose
 $-i$.
 Traversing it $m$ times if $m>0$, or $|m|$ times with reverse orientation if
@@ -143,9 +162,14 @@ For
 m=0,
 \]
 take a small circle enclosing neither pole.
+
 :::
 
-<1>4. These are the only possible values:
+:::
+
+::: pf-step
+
+These are the only possible values:
 \[
 \boxed{
 \left\{
@@ -161,12 +185,19 @@ take a small circle enclosing neither pole.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both winding numbers in step <1>2 are integers, so their difference is an
 integer. Step <1>3 shows every integer difference is realized.
+
 :::
 
-<1>5. Now let $\gamma$ be a positively oriented circle
+:::
+
+::: pf-step
+
+Now let $\gamma$ be a positively oriented circle
 \[
 |z-c|=R
 \]
@@ -181,7 +212,9 @@ Then
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A positively oriented simple circle winds once around every point in its
 interior and zero times around every exterior point.
 The equalities
@@ -192,9 +225,14 @@ are excluded because the curve must avoid
 \[
 a=\pm i.
 \]
+
 :::
 
-<1>6. If the circle contains $i$ but not $-i$, then
+:::
+
+::: pf-step
+
+If the circle contains $i$ but not $-i$, then
 \[
 \boxed{
 \int_\gamma
@@ -204,7 +242,9 @@ a=\pm i.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition is
 \[
 |c-i|<R<|c+i|.
@@ -216,9 +256,14 @@ Hence
 \operatorname{Ind}(\gamma,-i)=0.
 \]
 Apply step <1>2.
+
 :::
 
-<1>7. If the circle contains $-i$ but not $i$, then
+:::
+
+::: pf-step
+
+If the circle contains $-i$ but not $i$, then
 \[
 \boxed{
 \int_\gamma
@@ -228,7 +273,9 @@ Apply step <1>2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition is
 \[
 |c+i|<R<|c-i|.
@@ -240,9 +287,14 @@ Thus
 \operatorname{Ind}(\gamma,-i)=1.
 \]
 Apply step <1>2.
+
 :::
 
-<1>8. If the circle contains both poles or neither pole, then
+:::
+
+::: pf-step
+
+If the circle contains both poles or neither pole, then
 \[
 \boxed{
 \int_\gamma
@@ -252,7 +304,9 @@ Apply step <1>2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If both poles are inside, then
 \[
 \operatorname{Ind}(\gamma,i)
@@ -274,23 +328,34 @@ and
 R<
 \min\{|c-i|,|c+i|\}.
 \]
+
 :::
 
-<1>9. Hence for positively oriented circles the only possible values are
+:::
+
+::: pf-step
+
+Hence for positively oriented circles the only possible values are
 \[
 \boxed{
 -\pi, 0, \pi.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>6--<1>8 exhaust the four possibilities for whether each of the two
 poles lies inside the circle.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 solves part (a), and steps <1>5--<1>9 solve part (b).
+
 :::
+
 :::

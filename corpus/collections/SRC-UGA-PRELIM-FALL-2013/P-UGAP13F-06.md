@@ -26,8 +26,11 @@ s_k\le 2-\frac1k.
 Prove or disprove: $(s_k)$ is a Cauchy sequence.
 :::
 
-::: {.solution}
-<1>1. For every integer $j\ge2$,
+::: pf
+
+::: pf-step
+
+For every integer $j\ge2$,
 $$
 \frac1{j^2}
 \le
@@ -36,7 +39,9 @@ $$
 \frac1{j-1}-\frac1j.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $j-1\le j$ and both are positive,
 $$
 j(j-1)\le j^2,
@@ -45,14 +50,21 @@ so taking reciprocals gives the inequality. The identity is the elementary parti
 $$
 \frac1{j(j-1)}=\frac1{j-1}-\frac1j.
 $$
+
 :::
 
-<1>2. For every $k\ge1$,
+:::
+
+::: pf-step
+
+For every $k\ge1$,
 $$
 \boxed{s_k\le2-\frac1k}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $k=1$, both sides equal $1$. For $k\ge2$, step <1>1 gives
 $$
 \begin{aligned}
@@ -63,11 +75,18 @@ s_k
 &=2-\frac1k.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The sequence $(s_k)$ is $\boxed{\text{Cauchy}}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(s_k)$ is $\boxed{\text{Cauchy}}$.
+
+
+::: pf-proof
+
 Let $n>m\ge1$. By step <1>1,
 $$
 \begin{aligned}
@@ -83,11 +102,15 @@ $$
 |s_n-s_m|<\frac1m\le\frac1N<\varepsilon.
 $$
 Hence $(s_k)$ satisfies the Cauchy criterion.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves the required bound, and step <1>3 proves that $(s_k)$ is Cauchy.
+
 :::
+
 :::

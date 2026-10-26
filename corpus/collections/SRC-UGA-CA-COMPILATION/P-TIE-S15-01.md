@@ -20,10 +20,13 @@ audit:
 Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } | a _ { n } ( z ) |$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ^ { \prime } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of D.
 :::
 
-::: {.solution}
 Let $K\subset D$ be an arbitrary bounded closed subregion.
 
-<1>1. There exists $\delta>0$ such that
+::: pf
+
+::: pf-step
+
+There exists $\delta>0$ such that
 $$
 K_\delta
 \coloneqq
@@ -31,15 +34,22 @@ K_\delta
 $$
 is a compact subset of $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $K$ is compact and $D$ is open,
 $$
 d\coloneqq\operatorname{dist}(K,\CC\setminus D)>0.
 $$
 Choose $0<\delta<d$. Then every point at distance at most $\delta$ from $K$ still lies in $D$. The set $K_\delta$ is closed and bounded, hence compact.
+
 :::
 
-<1>2. For every $z\in K$ and every $n\ge0$,
+:::
+
+::: pf-step
+
+For every $z\in K$ and every $n\ge0$,
 $$
 \abs{a_n'(z)}
 \le
@@ -48,7 +58,9 @@ $$
 \abs{a_n(z+\delta e^{it})}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The closed disk $\abs{w-z}\le\delta$ lies in $D$ by step <1>1. Cauchy's integral formula for derivatives gives
 $$
 a_n'(z)
@@ -58,9 +70,14 @@ a_n'(z)
 \frac{a_n(w)}{(w-z)^2}\,dw.
 $$
 Parametrize the circle by $w=z+\delta e^{it}$. Taking absolute values yields the stated inequality.
+
 :::
 
-<1>3. For integers $M\ge N$ and every $z\in K$,
+:::
+
+::: pf-step
+
+For integers $M\ge N$ and every $z\in K$,
 $$
 \sum_{n=N}^{M}\abs{a_n'(z)}
 \le
@@ -69,7 +86,9 @@ $$
 \sum_{n=N}^{M}\abs{a_n(w)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Sum the estimate in step <1>2 over $n=N,\ldots,M$:
 $$
 \begin{aligned}
@@ -85,9 +104,14 @@ $$
 \sum_{n=N}^{M}\abs{a_n(w)}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The series
+:::
+
+::: pf-step
+
+The series
 $$
 \boxed{
 \sum_{n=0}^{\infty}\abs{a_n'(z)}
@@ -95,7 +119,9 @@ $$
 $$
 converges uniformly on $K$.
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 $$
 \sum_{n=0}^{\infty}\abs{a_n(w)}
@@ -113,11 +139,15 @@ $$
 \longrightarrow0.
 $$
 Thus the derivative series is uniformly Cauchy on $K$, and hence converges uniformly there.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The bounded closed subregion $K$ was arbitrary, so step <1>4 proves the assertion on every such subregion of $D$.
+
 :::
+
 :::

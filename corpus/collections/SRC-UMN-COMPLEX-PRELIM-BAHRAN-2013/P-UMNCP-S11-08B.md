@@ -20,7 +20,6 @@ audit:
 Use Rouché's theorem to prove the fundamental theorem of algebra.
 :::
 
-::: {.solution}
 Let
 $$
 p(z)
@@ -34,7 +33,11 @@ n\ge1,
 a_n\ne0.
 $$
 
-<1>1. There exists $R>0$ such that on the circle
+::: pf
+
+::: pf-step
+
+There exists $R>0$ such that on the circle
 $$
 |z|=R
 $$
@@ -47,7 +50,9 @@ a_{n-1}z^{n-1}+\cdots+a_0
 |a_nz^n|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 |z|=R,
@@ -81,9 +86,14 @@ $$
 k-n
 $$
 is negative, so this sum tends to $0$ as $R\to\infty$. Hence for sufficiently large $R$ it is strictly less than $1$, which gives the required inequality.
+
 :::
 
-<1>2. For such an $R$, the polynomial $p$ and the monomial
+:::
+
+::: pf-step
+
+For such an $R$, the polynomial $p$ and the monomial
 $$
 a_nz^n
 $$
@@ -93,7 +103,9 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 p(z)
@@ -105,15 +117,22 @@ a_{n-1}z^{n-1}+\cdots+a_0
 \right).
 $$
 The strict inequality from step <1>1 holds on the boundary circle. Rouché's theorem therefore applies and gives the same zero count inside the circle.
+
 :::
 
-<1>3. The polynomial $p$ has exactly $n$ zeros in
+:::
+
+::: pf-step
+
+The polynomial $p$ has exactly $n$ zeros in
 $$
 |z|<R,
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The monomial
 $$
 a_nz^n
@@ -123,11 +142,18 @@ $$
 z=0
 $$
 and no other zeros. By step <1>2, $p$ has the same total number of zeros inside the disk.
+
 :::
 
-<1>4. In particular, every nonconstant complex polynomial has at least one complex zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+In particular, every nonconstant complex polynomial has at least one complex zero.
+
+
+::: pf-proof
+
 Since
 $$
 n\ge1,
@@ -136,9 +162,14 @@ step <1>3 gives at least one zero of $p$ in
 $$
 |z|<R.
 $$
+
 :::
 
-<1>5. Repeated factorization gives the full fundamental theorem of algebra:
+:::
+
+::: pf-step
+
+Repeated factorization gives the full fundamental theorem of algebra:
 $$
 \boxed{
 p(z)
@@ -153,7 +184,9 @@ r_1,\ldots,r_n\in\CC,
 $$
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives one zero
 $$
 r_1.
@@ -180,11 +213,15 @@ $$
 q_1
 $$
 and continue. Induction on the degree gives the displayed factorization into $n$ linear factors.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 prove the fundamental theorem of algebra using Rouché's theorem.
+
 :::
+
 :::

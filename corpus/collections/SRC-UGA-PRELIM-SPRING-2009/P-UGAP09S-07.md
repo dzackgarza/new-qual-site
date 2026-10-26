@@ -33,21 +33,33 @@ g(x,y)=
 \]
 :::
 
-::: {.solution}
-<1>1. The function $f$ is continuous at every point other than the origin.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is continuous at every point other than the origin.
+
+
+::: pf-proof
+
 Away from $(0,0)$ one has
 \[
 x^4+y^4>0,
 \]
 so $f$ is a quotient of polynomial functions with nonzero denominator and is
 therefore continuous there.
+
 :::
 
-<1>2. The function $f$ is not continuous at $(0,0)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is not continuous at $(0,0)$.
+
+
+::: pf-proof
+
 Along the line $y=x$, for $x\ne0$,
 \[
 f(x,x)
@@ -63,26 +75,40 @@ whereas
 f(0,0)=0.
 \]
 Hence the two-variable limit at the origin cannot equal the function value.
+
 :::
 
-<1>3. The function $g$ is continuous at every point other than the origin.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is continuous at every point other than the origin.
+
+
+::: pf-proof
+
 Away from $(0,0)$,
 \[
 (x^2+y^2)^2>0,
 \]
 so $g$ is again a quotient of polynomial functions with nonzero denominator.
+
 :::
 
-<1>4. For every $(x,y)\ne(0,0)$,
+:::
+
+::: pf-step
+
+For every $(x,y)\ne(0,0)$,
 \[
 |g(x,y)|
 \le
 \sqrt{x^2+y^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 r=\sqrt{x^2+y^2}.
@@ -108,11 +134,18 @@ Hence
 =\frac{|x^3y^2|}{(x^2+y^2)^2}
 \le r.
 \]
+
 :::
 
-<1>5. The function $g$ is continuous at $(0,0)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is continuous at $(0,0)$.
+
+
+::: pf-proof
+
 By step <1>4,
 \[
 |g(x,y)-g(0,0)|
@@ -125,21 +158,32 @@ gives
 \[
 g(x,y)\to0=g(0,0).
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f\text{ is discontinuous only at }(0,0),\qquad
 g\text{ is continuous on }\mathbb R^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 through <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the requested determination.
+
 :::
+
 :::

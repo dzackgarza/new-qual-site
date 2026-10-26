@@ -33,8 +33,11 @@ f\bigl(f^{-1}(C)\bigr)\qquad C.
 \]
 :::
 
-::: {.solution}
-<1>1. For part (a),
+::: pf
+
+::: pf-step
+
+For part (a),
 \[
 \boxed{
 f(A\cap B)
@@ -43,7 +46,9 @@ f(A)\cap f(B).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 y\in f(A\cap B),
@@ -92,9 +97,14 @@ f(A)\cap f(B)
 =
 \{0\}.
 \]
+
 :::
 
-<1>2. For part (b),
+:::
+
+::: pf-step
+
+For part (b),
 \[
 \boxed{
 f^{-1}(C-D)
@@ -103,7 +113,9 @@ f^{-1}(C)-f^{-1}(D).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 x\in X,
@@ -124,9 +136,14 @@ x\in
 f^{-1}(C)-f^{-1}(D).
 \end{aligned}
 \]
+
 :::
 
-<1>3. For part (c),
+:::
+
+::: pf-step
+
+For part (c),
 \[
 \boxed{
 f\bigl(f^{-1}(C)\bigr)
@@ -135,7 +152,9 @@ C.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 More precisely,
 \[
 f\bigl(f^{-1}(C)\bigr)
@@ -180,9 +199,14 @@ f(f^{-1}(C))
 =
 C.
 \]
+
 :::
 
-<1>4. Therefore the best relations are
+:::
+
+::: pf-step
+
+Therefore the best relations are
 \[
 \boxed{
 \begin{array}{c|c}
@@ -193,13 +217,19 @@ C.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>1--<1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested choices.
+
 :::
+
 :::

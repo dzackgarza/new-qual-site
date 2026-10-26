@@ -26,8 +26,11 @@ Find all injective conformal maps of $G$ onto $\DD$.
 These may be expressed as compositions of maps, but explain why this list is complete.
 :::
 
-::: {.solution}
-<1>1. The inversion
+::: pf
+
+::: pf-step
+
+The inversion
 $$
 T(z)=\frac1z
 $$
@@ -36,7 +39,9 @@ $$
 S=\left\{w:0<\Re w<\frac12\right\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\Re z>0$, the point $z=0$ does not lie in $G$, so $T$ is
 holomorphic there. Also
 $$
@@ -54,15 +59,22 @@ $$
 $$
 Thus $T(G)=S$. Since inversion is its own inverse, it is a
 biholomorphism between these domains.
+
 :::
 
-<1>2. The exponential map
+:::
+
+::: pf-step
+
+The exponential map
 $$
 E(w)=e^{2\pi i w}
 $$
 maps $S$ biholomorphically onto the upper half-plane $\HH$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write $w=x+iy$. Then
 $$
 E(w)=e^{-2\pi y}e^{2\pi i x}.
@@ -86,15 +98,22 @@ If $E(w_1)=E(w_2)$, then $w_1-w_2\in\ZZ$. But both real parts lie in
 $(0,1/2)$, so their difference has real part in $(-1/2,1/2)$; the only
 possible integer is $0$. Thus $w_1=w_2$. Since
 $E'(w)=2\pi iE(w)\ne0$, the map is biholomorphic.
+
 :::
 
-<1>3. The Cayley map
+:::
+
+::: pf-step
+
+The Cayley map
 $$
 C(\zeta)=\frac{\zeta-i}{\zeta+i}
 $$
 maps $\HH$ biholomorphically onto $\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard Cayley transform. Directly, if $\Im\zeta>0$, then
 $$
 |\zeta-i|^2
@@ -107,9 +126,14 @@ $$
 C^{-1}(w)=i\frac{1+w}{1-w},
 $$
 which maps $\DD$ into $\HH$ and is holomorphic there.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \Phi(z)
 =C(E(T(z)))
@@ -117,12 +141,19 @@ $$
 $$
 is a biholomorphism $G\to\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the composition of the three biholomorphisms in steps
 <1>1--<1>3.
+
 :::
 
-<1>5. Every biholomorphism $F:G\to\DD$ has the form
+:::
+
+::: pf-step
+
+Every biholomorphism $F:G\to\DD$ has the form
 $$
 \boxed{
 F=A_{a,\theta}\circ\Phi,
@@ -132,7 +163,9 @@ A_{a,\theta}(w)
 $$
 for some $a\in\DD$ and $\theta\in\RR$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $F:G\to\DD$ be any biholomorphism. Since $\Phi$ is a
 biholomorphism by step <1>4,
 $$
@@ -149,12 +182,16 @@ $F=A_{a,\theta}\circ\Phi$.
 
 Conversely, each $A_{a,\theta}$ is a disk automorphism, so every displayed
 composition is again a biholomorphism from $G$ onto $\DD$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the complete list of injective conformal maps of $G$ onto
 $\DD$ and proves its completeness.
+
 :::
+
 :::

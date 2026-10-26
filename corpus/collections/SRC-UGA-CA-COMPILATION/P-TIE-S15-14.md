@@ -44,8 +44,11 @@ Compute the following integrals.
 The source labels the first three integrals (i)–(iii) and then, at the top of the next page, restarts the labels at (i) for the remaining five, (i)–(v); here they are numbered consecutively (i)–(viii).
 :::
 
-::: {.solution}
-<1>1. The Dirichlet integral is
+::: pf
+
+::: pf-step
+
+The Dirichlet integral is
 $$
 \boxed{
 \int_0^\infty\frac{\sin x}{x}\,dx
@@ -54,7 +57,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\varepsilon>0$ and $b\ge0$, define
 $$
 F_\varepsilon(b)
@@ -102,9 +107,14 @@ h_\varepsilon(x)\sin x\,dx
 \frac{2}{R}
 $$
 uniformly in $\varepsilon\ge0$. On $[0,R]$, dominated convergence applies as $\varepsilon\downarrow0$. Thus the Abel-regularized integrals converge to the ordinary improper integral, proving the value $\pi/2$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_0^\infty
@@ -114,7 +124,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \sin^2x
@@ -155,9 +167,14 @@ $$
 =
 \frac\pi2.
 $$
+
 :::
 
-<1>3. For $0<a<2$,
+:::
+
+::: pf-step
+
+For $0<a<2$,
 $$
 \boxed{
 \int_0^\infty
@@ -172,7 +189,9 @@ $$
 $$
 at $a=1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Euler's beta integral gives
 $$
 \int_0^\infty
@@ -202,9 +221,14 @@ $$
 \int_0^\infty\frac{dx}{(1+x)^2}=1,
 $$
 which is also the limit of the displayed formula as $a\to1$.
+
 :::
 
-<1>4. For $a,b>0$,
+:::
+
+::: pf-step
+
+For $a,b>0$,
 $$
 \boxed{
 \int_0^\infty
@@ -214,7 +238,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate by parts with
 $$
 u=\cos ax-\cos bx,
@@ -253,9 +279,14 @@ $$
 =
 \frac\pi2(b-a).
 $$
+
 :::
 
-<1>5. For $0<a<n$,
+:::
+
+::: pf-step
+
+For $0<a<n$,
 $$
 \boxed{
 \int_0^\infty
@@ -266,7 +297,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 t=x^n.
@@ -303,9 +336,14 @@ $$
 \frac{\pi}{\sin(\pi a/n)}.
 $$
 Multiplying by $1/n$ gives the formula.
+
 :::
 
-<1>6. For $n\ge2$,
+:::
+
+::: pf-step
+
+For $n\ge2$,
 $$
 \boxed{
 \int_0^\infty
@@ -317,7 +355,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<a<n$, define
 $$
 I_n(a)
@@ -348,9 +388,14 @@ I_n'(a)
 \cot\frac{\pi a}{n}.
 $$
 Setting $a=1$ gives the stated value.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_0^\infty
@@ -360,7 +405,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<a<4$, set
 $$
 J(a)
@@ -405,9 +452,14 @@ J'(1)
 =
 -\frac\pi4.
 $$
+
 :::
 
-<1>8. For $a\in\CC$, choose a root $q$ of
+:::
+
+::: pf-step
+
+For $a\in\CC$, choose a root $q$ of
 $$
 a q^2-2q+a=0
 $$
@@ -430,7 +482,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $a=0$, take $q=0$, for which the displayed formula is immediate. Assume now that $a\ne0$. The two roots of
 $$
 a q^2-2q+a=0
@@ -505,11 +559,15 @@ $$
 \log\abs{1-qe^{i\phi}};
 $$
 any singularity is logarithmic and integrable. Thus the same identity holds on the boundary by radial passage to the limit.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>8 evaluate parts (i)--(viii), respectively.
+
 :::
+
 :::

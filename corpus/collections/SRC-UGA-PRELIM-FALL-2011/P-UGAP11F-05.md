@@ -22,7 +22,6 @@ Let $C$ be the positively oriented boundary of the upper semicircle of radius $3
 both directly and by Green's theorem.
 :::
 
-::: {.solution}
 Write
 $$
 P(x,y)=2x+y,
@@ -31,9 +30,15 @@ Q(x,y)=y.
 $$
 Let $D$ be the upper half-disk of radius $3$, so $C=\partial D$ with positive orientation.
 
-<1>1. The contribution from the diameter is $0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The contribution from the diameter is $0$.
+
+
+::: pf-proof
+
 Positive orientation traverses the diameter from
 $$
 (-3,0)
@@ -59,14 +64,21 @@ $$
 \int_{-3}^3 2t\,dt
 =0.
 $$
+
 :::
 
-<1>2. The contribution from the semicircular arc is
+:::
+
+::: pf-step
+
+The contribution from the semicircular arc is
 $$
 \boxed{-\frac{9\pi}{2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Parametrize the arc by
 $$
 \gamma_2(t)
@@ -114,9 +126,14 @@ $$
 -\frac{9\pi}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Direct computation gives
+:::
+
+::: pf-step
+
+Direct computation gives
 $$
 \boxed{
 \oint_C(2x+y)\,dx+y\,dy
@@ -124,13 +141,22 @@ $$
 -\frac{9\pi}{2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the diameter contribution from step <1>1 and the arc contribution from step <1>2.
+
 :::
 
-<1>4. Green's theorem gives the same value.
+:::
 
-::: {.proof}
+::: pf-step
+
+Green's theorem gives the same value.
+
+
+::: pf-proof
+
 Green's theorem states
 $$
 \oint_C P\,dx+Q\,dy
@@ -162,11 +188,15 @@ $$
 =
 -\frac{9\pi}{2}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>4 compute the integral both directly and via Green's theorem, with the same value.
+
 :::
+
 :::

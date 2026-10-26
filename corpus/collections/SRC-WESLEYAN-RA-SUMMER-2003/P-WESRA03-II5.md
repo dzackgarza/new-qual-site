@@ -33,7 +33,6 @@ Show that
 \]
 :::
 
-::: {.solution}
 Let
 \[
 D=\{(x,y)\in\mathbb R^2:x=y\}
@@ -43,9 +42,15 @@ be the diagonal. Then
 f=\mathbf 1_D.
 \]
 
-<1>1. The function \(f\) is Borel measurable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) is Borel measurable.
+
+
+::: pf-proof
+
 The diagonal is closed:
 \[
 D
@@ -57,32 +62,44 @@ is the inverse image of the closed set \(\{0\}\) under the continuous map
 (x,y)\longmapsto x-y.
 \]
 Hence \(D\) is Borel, so its indicator is Borel measurable.
+
 :::
 
-## First order of integration
+:::
 
-<1>2. Fix \(y\in\mathbb R\). Then
+::: pf-step
+
+Fix \(y\in\mathbb R\). Then
 \[
 \boxed{
 f(x,y)=\mathbf 1_{\{y\}}(x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 f(x,y)=1
 \iff
 x=y.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{\mathbb R}f(x,y)\,dm(x)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The singleton \(\{y\}\) has Lebesgue measure zero. Hence
 \[
 \int_{\mathbb R}\mathbf 1_{\{y\}}\,dm
@@ -91,9 +108,14 @@ m(\{y\})
 =
 0.
 \]
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \int_{\mathbb R}
@@ -106,35 +128,49 @@ d\sigma(y)
 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the inner integral is the zero function of \(y\). The integral
 of the zero function with respect to any measure is zero.
+
 :::
 
-## Second order of integration
+:::
 
-<1>5. Fix \(x\in\mathbb R\). Then
+::: pf-step
+
+Fix \(x\in\mathbb R\). Then
 \[
 \boxed{
 f(x,y)=\mathbf 1_{\{x\}}(y)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again,
 \[
 f(x,y)=1
 \iff
 y=x.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{\mathbb R}f(x,y)\,d\sigma(y)=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Counting measure assigns to a singleton the value
 \[
 \sigma(\{x\})=1.
@@ -145,9 +181,14 @@ Hence
 =
 1.
 \]
+
 :::
 
-<1>7. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \int_{\mathbb R}
 \left(
@@ -159,16 +200,25 @@ dm(x)
 \int_{\mathbb R}1\,dm(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the constant value from step <1>6.
+
 :::
 
-<1>8. The last integral equals
+:::
+
+::: pf-step
+
+The last integral equals
 \[
 \boxed{+\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Lebesgue measure of \(\mathbb R\) is infinite:
 \[
 \int_{\mathbb R}1\,dm
@@ -177,9 +227,14 @@ m(\mathbb R)
 =
 \infty.
 \]
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_X\!\int_X
@@ -196,29 +251,49 @@ f(x,y)\,d\sigma(y)\,dm(x)
 \infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first equality is step <1>4 and the second is steps <1>7--<1>8.
+
 :::
 
-<1>10. Therefore the two iterated integrals are unequal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the two iterated integrals are unequal.
+
+
+::: pf-proof
+
 One is \(0\) and the other is \(+\infty\).
+
 :::
 
-<1>11. This does not contradict Tonelli--Fubini because counting measure on
+:::
+
+::: pf-step
+
+This does not contradict Tonelli--Fubini because counting measure on
 the uncountable set \(\mathbb R\) is not \(\sigma\)-finite.
 
-::: {.proof}
+
+::: pf-proof
+
 Every set of finite counting measure is finite. A countable union of finite
 sets is countable, so \(\mathbb R\) cannot be written as a countable union of
 sets of finite counting measure. Thus \(\sigma\) is not \(\sigma\)-finite,
 and the usual Tonelli--Fubini hypotheses fail.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required inequality.
+
 :::
+
 :::

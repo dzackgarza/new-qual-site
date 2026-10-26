@@ -24,10 +24,15 @@ review: draft
    is open when $B$ has the subspace topology.
 :::
 
-::: {.solution}
-<1>1. A composition of open maps is open.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A composition of open maps is open.
+
+
+::: pf-proof
+
 Let
 \[
 f:X\to Y,
@@ -61,9 +66,14 @@ Thus
 g\circ f
 \]
 is open.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 f_i:X_i\to Y_i,
 \qquad
@@ -81,7 +91,9 @@ F
 \]
 is open.
 
-::: {.proof}
+
+::: pf-proof
+
 It suffices to check a basis for the finite product topology.
 Let
 \[
@@ -116,11 +128,18 @@ is open in the finite product.
 An arbitrary open subset of the domain is a union of such basis elements,
 and images commute with unions.
 Therefore $F$ is open.
+
 :::
 
-<1>3. The corresponding assertion is false for an infinite product.
+:::
 
-::: {.proof}
+::: pf-step
+
+The corresponding assertion is false for an infinite product.
+
+
+::: pf-proof
+
 For every
 \[
 n\in\mathbb N,
@@ -192,9 +211,14 @@ That point does not lie in
 Hence no basic neighborhood of $x$ is contained in the image.
 
 Therefore $F$ is not an open map.
+
 :::
 
-<1>4. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 f:X\to Y
 \]
@@ -208,7 +232,9 @@ f^B:X\to B
 \]
 is open.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 U\subseteq X
@@ -241,22 +267,33 @@ B\cap f(U)
 \]
 is open in the subspace topology on $B$.
 Therefore $f^B$ is open.
+
 :::
 
-<1>5. The complete answer is:
+:::
+
+::: pf-step
+
+The complete answer is:
 
 1. compositions of open maps are open;
 2. finite products of open maps are open;
 3. infinite products of open maps need not be open;
 4. corestriction to a subspace containing the image preserves openness.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly steps <1>1--<1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 settle every part of the problem.
+
 :::
+
 :::

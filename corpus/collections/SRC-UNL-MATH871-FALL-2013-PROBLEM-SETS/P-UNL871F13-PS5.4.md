@@ -22,7 +22,6 @@ Let $M$ be the resulting quotient space.
 Give a concrete construction showing that $M$ is homeomorphic to the closed orientable surface of genus $2$ (the surface of a doughnut with two holes).
 :::
 
-::: {.solution}
 Write the boundary word of the octagon as
 \[
 [a,b][c,d]
@@ -30,7 +29,11 @@ Write the boundary word of the octagon as
 aba^{-1}b^{-1}cdc^{-1}d^{-1}.
 \]
 
-<1>1. Draw an embedded arc
+::: pf
+
+::: pf-step
+
+Draw an embedded arc
 \[
 e
 \]
@@ -53,7 +56,9 @@ P_1
 P_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The arc joins two distinct boundary vertices and is otherwise contained in
 the interior of the octagon.
 Hence it separates the disk into two closed disks meeting exactly along the
@@ -67,9 +72,14 @@ while the second contains
 \[
 c,d,c^{-1},d^{-1}.
 \]
+
 :::
 
-<1>2. After performing the identifications
+:::
+
+::: pf-step
+
+After performing the identifications
 \[
 a\sim a^{-1},
 \qquad
@@ -78,7 +88,9 @@ b\sim b^{-1}
 inside $P_1$, the quotient of $P_1$ is a torus with the interior of a disk
 removed.
 
-::: {.proof}
+
+::: pf-proof
+
 Ignore the cutting edge $e$ momentarily.
 The familiar square-polygon presentation
 \[
@@ -98,9 +110,14 @@ The resulting surface is a once-punctured torus,
 \[
 T^2\setminus\operatorname{int}D^2.
 \]
+
 :::
 
-<1>3. Similarly, after identifying
+:::
+
+::: pf-step
+
+Similarly, after identifying
 \[
 c\sim c^{-1},
 \qquad
@@ -108,7 +125,9 @@ d\sim d^{-1},
 \]
 the quotient of $P_2$ is another once-punctured torus.
 
-::: {.proof}
+
+::: pf-proof
+
 The boundary word
 \[
 cdc^{-1}d^{-1}
@@ -121,9 +140,14 @@ P_2/{\sim}
 \cong
 T^2\setminus\operatorname{int}D^2.
 \]
+
 :::
 
-<1>4. In the original octagon, the two copies of the cutting arc $e$ are
+:::
+
+::: pf-step
+
+In the original octagon, the two copies of the cutting arc $e$ are
 glued to one another.
 Therefore
 \[
@@ -131,7 +155,9 @@ M
 \]
 is obtained by gluing two once-punctured tori along their boundary circles.
 
-::: {.proof}
+
+::: pf-proof
+
 Cutting the octagon along $e$ creates two copies
 \[
 e_1\subset\partial P_1,
@@ -154,14 +180,21 @@ T^2\setminus\operatorname{int}D^2
 T^2\setminus\operatorname{int}D^2
 \bigr).
 \]
+
 :::
 
-<1>5. The space in step <1>4 is the connected sum
+:::
+
+::: pf-step
+
+The space in step <1>4 is the connected sum
 \[
 T^2\#T^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the connected sum of two closed surfaces is obtained by
 removing an open disk from each and gluing the resulting boundary circles by
 a homeomorphism.
@@ -170,11 +203,18 @@ Thus
 \[
 M\cong T^2\#T^2.
 \]
+
 :::
 
-<1>6. The quotient has one $0$-cell, four $1$-cells, and one $2$-cell.
+:::
 
-::: {.proof}
+::: pf-step
+
+The quotient has one $0$-cell, four $1$-cells, and one $2$-cell.
+
+
+::: pf-proof
+
 The edge identifications identify all eight vertices of the octagon to one
 vertex.
 The paired edge labels give four $1$-cells
@@ -190,9 +230,14 @@ c_1=4,
 \qquad
 c_2=1.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \chi(M)
 =
@@ -201,7 +246,9 @@ c_2=1.
 -2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the CW Euler-characteristic formula
 \[
 \chi
@@ -209,11 +256,18 @@ Use the CW Euler-characteristic formula
 c_0-c_1+c_2.
 \]
 Substitute the cell counts from step <1>6.
+
 :::
 
-<1>8. The quotient surface is orientable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The quotient surface is orientable.
+
+
+::: pf-proof
+
 Each pair of equally labeled sides is identified with opposite boundary
 orientation:
 \[
@@ -227,9 +281,14 @@ d\text{ with }d^{-1}.
 \]
 Thus the orientation of the polygon extends across each edge identification.
 Hence the resulting closed surface is orientable.
+
 :::
 
-<1>9. A closed connected orientable surface of genus $g$ has Euler
+:::
+
+::: pf-step
+
+A closed connected orientable surface of genus $g$ has Euler
 characteristic
 \[
 2-2g.
@@ -243,7 +302,9 @@ so
 g=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solve:
 \[
 2-2g=-2
@@ -252,9 +313,14 @@ Solve:
 \Longrightarrow
 g=2.
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 M
@@ -264,15 +330,21 @@ T^2\#T^2,
 \]
 the closed orientable surface of genus $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The concrete connected-sum construction is given in steps <1>1--<1>5.
 Steps <1>6--<1>9 independently verify the genus from the quotient CW
 structure.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required identification.
+
 :::
+
 :::

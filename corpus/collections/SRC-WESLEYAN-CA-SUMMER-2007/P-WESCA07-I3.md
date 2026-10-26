@@ -19,8 +19,11 @@ audit:
 State the local Cauchy Theorem.
 :::
 
-::: {.solution}
-<1>1. **Local Cauchy Theorem.** Let $U\subseteq\CC$ be open and let $f:U\to\CC$ be analytic. For every $z_0\in U$, there exists $r>0$ such that
+::: pf
+
+::: pf-step
+
+**Local Cauchy Theorem.** Let $U\subseteq\CC$ be open and let $f:U\to\CC$ be analytic. For every $z_0\in U$, there exists $r>0$ such that
 $$
 \overline{B(z_0,r)}\subseteq U
 $$
@@ -30,22 +33,35 @@ $$
 $$
 for every closed piecewise $C^1$ path $\gamma$ contained in $B(z_0,r)$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the local form of Cauchy's theorem: on a sufficiently small disk contained in the domain, a holomorphic function has zero integral around every closed path.
+
 :::
 
-<1>2. Equivalently, for every $z_0\in U$ there is a neighborhood $V\subseteq U$ of $z_0$ on which $f$ has a holomorphic primitive $F$, so that
+:::
+
+::: pf-step
+
+Equivalently, for every $z_0\in U$ there is a neighborhood $V\subseteq U$ of $z_0$ on which $f$ has a holomorphic primitive $F$, so that
 $$
 F'=f\quad\text{on }V.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Vanishing of all closed-path integrals on a connected open set is equivalent to path independence of the integral from a base point, which defines a primitive. Conversely, the integral of a derivative over every closed path is zero.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the requested theorem statement; step <1>2 gives its standard equivalent formulation.
+
 :::
+
 :::

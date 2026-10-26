@@ -34,8 +34,11 @@ R=\{(x,y,z)\in\mathbb R^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
 \]
 :::
 
-::: {.solution}
-<1>1. For part (a),
+::: pf
+
+::: pf-step
+
+For part (a),
 $$
 \boxed{
 f'(x)=6x\sec^3\!\bigl(\tan(x^2)\bigr)
@@ -43,7 +46,9 @@ f'(x)=6x\sec^3\!\bigl(\tan(x^2)\bigr)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set $g(x)=\tan(x^2)$. Then
 $$
 g'(x)=2x\sec^2(x^2).
@@ -57,9 +62,14 @@ f'(x)
 \tan\!\bigl(\tan(x^2)\bigr)\sec^2(x^2).
 \end{aligned}
 $$
+
 :::
 
-<1>2. For part (b), the Taylor expansion about $a=2$ is
+:::
+
+::: pf-step
+
+For part (b), the Taylor expansion about $a=2$ is
 $$
 \boxed{
 \ln x
@@ -72,7 +82,9 @@ $$
 $$
 and its radius of convergence is $\boxed{2}$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 \ln x
@@ -87,9 +99,14 @@ $$
 \frac{|x-2|}{2}.
 $$
 Hence the series converges for $|x-2|<2$ and diverges for $|x-2|>2$, so its radius of convergence is $2$.
+
 :::
 
-<1>3. For part (c), one suitable iterated integral is
+:::
+
+::: pf-step
+
+For part (c), one suitable iterated integral is
 $$
 \boxed{
 \int_0^2
@@ -99,7 +116,9 @@ x\sin(y+z)\,dx\,dz\,dy.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Project $R$ onto the $yz$-plane. The conditions there are
 $$
 y^2+z^2\le4,
@@ -117,11 +136,15 @@ $$
 0\le x\le\sqrt{4-y^2-z^2}.
 $$
 Using these three bounds with the integrand $x\sin(y+z)$ gives the displayed iterated integral.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+
 :::
+
 :::

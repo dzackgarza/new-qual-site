@@ -24,7 +24,6 @@ For \(\alpha>0\), evaluate
 carefully justifying all steps.
 :::
 
-::: {.solution}
 Set
 $$
 I(\alpha)
@@ -36,9 +35,15 @@ I(\alpha)
 \alpha>0.
 $$
 
-<1>1. The integral defining $I(\alpha)$ converges absolutely.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The integral defining $I(\alpha)$ converges absolutely.
+
+
+::: pf-proof
+
 Near $0$,
 $$
 \frac{|\log x|}{x^2+\alpha^2}
@@ -61,9 +66,14 @@ $$
 \int_1^\infty\frac{\log x}{x^2}\,dx<\infty.
 $$
 Thus the improper integral is absolutely convergent.
+
 :::
 
-<1>2. The substitution
+:::
+
+::: pf-step
+
+The substitution
 $$
 x=\alpha t
 $$
@@ -78,7 +88,9 @@ I(\alpha)
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 x=\alpha t,
@@ -109,9 +121,14 @@ I(\alpha)
 \end{aligned}
 $$
 Absolute convergence from step <1>1 justifies the substitution and separation of terms.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_0^\infty
@@ -120,7 +137,9 @@ $$
 =0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 J
@@ -162,9 +181,14 @@ $$
 2J=0,
 $$
 so $J=0$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_0^\infty
 \frac{dt}{1+t^2}
@@ -172,7 +196,9 @@ $$
 \frac\pi2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The antiderivative is
 $$
 \arctan t.
@@ -189,9 +215,14 @@ $$
 =
 \frac\pi2.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 I(\alpha)
@@ -199,7 +230,9 @@ I(\alpha)
 \frac{\pi}{2\alpha}\log\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral in step <1>2:
 $$
 I(\alpha)
@@ -214,11 +247,15 @@ I(\alpha)
 \,dt.
 $$
 Now apply steps <1>3--<1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required evaluation.
+
 :::
+
 :::

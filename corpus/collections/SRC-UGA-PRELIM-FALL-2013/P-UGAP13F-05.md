@@ -24,8 +24,11 @@ depends on the choice of $C$.
 (b) Give an example of a function defined on the plane whose gradient always points toward the origin.
 :::
 
-::: {.solution}
-<1>1. Consider first the path $C_1$ that goes horizontally from
+::: pf
+
+::: pf-step
+
+Consider first the path $C_1$ that goes horizontally from
 \[
 (0,1)
 \]
@@ -53,7 +56,9 @@ y e^x\,dx+x e^y\,dy
 e-1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On this segment,
 \[
 y e^x\,dx
@@ -61,9 +66,14 @@ y e^x\,dx
 e^x\,dx
 \]
 and the second term vanishes.
+
 :::
 
-<1>2. Along the vertical segment of $C_1$,
+:::
+
+::: pf-step
+
+Along the vertical segment of $C_1$,
 \[
 x=1,
 \qquad
@@ -79,7 +89,9 @@ y e^x\,dx+x e^y\,dy
 e^2-e.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first term vanishes because
 \[
 dx=0,
@@ -90,9 +102,14 @@ x e^y\,dy
 =
 e^y\,dy.
 \]
+
 :::
 
-<1>3. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \int_{C_1}
 y e^x\,dx+x e^y\,dy
@@ -102,16 +119,23 @@ e^2-1
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Add the two segment integrals:
 \[
 (e-1)+(e^2-e)
 =
 e^2-1.
 \]
+
 :::
 
-<1>4. Now let $C_2$ go vertically from
+:::
+
+::: pf-step
+
+Now let $C_2$ go vertically from
 \[
 (0,1)
 \]
@@ -128,7 +152,9 @@ The vertical segment contributes
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Along this segment,
 \[
 x=0,
@@ -144,9 +170,14 @@ and
 x e^y\,dy
 \]
 vanish.
+
 :::
 
-<1>5. Along the horizontal segment of $C_2$,
+:::
+
+::: pf-step
+
+Along the horizontal segment of $C_2$,
 \[
 y=2,
 \qquad
@@ -163,14 +194,21 @@ y e^x\,dx+x e^y\,dy
 2e-2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Only the first term survives and
 \[
 y=2.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_{C_2}
 y e^x\,dx+x e^y\,dy
@@ -180,11 +218,18 @@ y e^x\,dx+x e^y\,dy
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>5.
+
 :::
 
-<1>7. The two values are different:
+:::
+
+::: pf-step
+
+The two values are different:
 \[
 (e^2-1)-(2e-2)
 =
@@ -194,13 +239,20 @@ Combine steps <1>4--<1>5.
 \]
 Hence the integral depends on the path.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3 and <1>6 give two paths with the same endpoints but different
 line integrals.
 Therefore the integral is not path-independent.
+
 :::
 
-<1>8. This is consistent with the differential-form test.
+:::
+
+::: pf-step
+
+This is consistent with the differential-form test.
 If
 \[
 M(x,y)=y e^x,
@@ -218,7 +270,9 @@ These are not equal on all of
 \mathbb R^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On a simply connected domain such as
 \[
 \mathbb R^2,
@@ -232,9 +286,14 @@ is exact only if
 M_y=N_x.
 \]
 Here that equality fails in general, so the form is not conservative.
+
 :::
 
-<1>9. For part (b), define
+:::
+
+::: pf-step
+
+For part (b), define
 \[
 \boxed{
 F(x,y)
@@ -251,7 +310,9 @@ Then
 -2(x,y).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 \[
 F_x=-2x,
@@ -259,9 +320,14 @@ F_x=-2x,
 F_y=-2y.
 \]
 Thus the gradient is a negative scalar multiple of the position vector.
+
 :::
 
-<1>10. For every
+:::
+
+::: pf-step
+
+For every
 \[
 (x,y)\ne(0,0),
 \]
@@ -271,7 +337,9 @@ the vector
 \]
 points directly toward the origin.
 
-::: {.proof}
+
+::: pf-proof
+
 The vector from
 \[
 (x,y)
@@ -291,11 +359,15 @@ At the origin itself,
 \[
 \nabla F(0,0)=0.
 \]
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 answers part (a), and steps <1>9--<1>10 answer part (b).
+
 :::
+
 :::
