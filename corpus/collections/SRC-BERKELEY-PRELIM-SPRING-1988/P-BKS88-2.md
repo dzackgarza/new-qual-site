@@ -32,9 +32,12 @@ N:=23^{23^{23^{23}}}
 E:=23^{23^{23}}.
 \]
 
-<1>1. $E\equiv 3\pmod 4$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #exponent-modulo-four}
+$E\equiv 3\pmod 4$.
+
+::: pf-proof
 Since $23\equiv 3\pmod 4$ and $23^{23}$ is odd,
 \[
 E=23^{23^{23}}
@@ -45,9 +48,12 @@ E=23^{23^{23}}
 because $3^m\equiv 3\pmod 4$ for every odd integer $m$.
 :::
 
-<1>2. $N\equiv \boxed{7}\pmod{10}$.
+:::
 
-::: {.proof}
+::: pf-step
+$N\equiv \boxed{7}\pmod{10}$.
+
+::: pf-proof
 Modulo $10$, the powers of $3$ have period $4$:
 \[
 3,9,7,1,3,\ldots.
@@ -56,16 +62,15 @@ Since $23\equiv 3\pmod{10}$, one has
 \[
 N=23^E\equiv 3^E\pmod{10}.
 \]
-By step <1>1, $E\equiv 3\pmod 4$, so
+By [](#exponent-modulo-four){.pf-ref}, $E\equiv 3\pmod 4$, so
 \[
 3^E\equiv 3^3\equiv 7\pmod{10}.
 \]
 Thus the last digit of $N$ is $7$.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 gives the requested last digit.
 :::
+
+:::
+
 :::
