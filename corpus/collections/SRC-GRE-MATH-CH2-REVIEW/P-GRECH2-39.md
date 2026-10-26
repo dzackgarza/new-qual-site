@@ -29,13 +29,18 @@ Find the positive value of $a$ that satisfies the equation:
 (E) $\frac{\pi}{2}$
 :::
 
-::: {.solution}
-<1>1. For every $a>0$,
+::: pf
+
+::: pf-step
+
+For every $a>0$,
 $$
 \int_0^a\frac{dx}{\sqrt{a^2-x^2}}=\frac{\pi}{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<b<a$, set $x=a\sin\theta$. Since $a>0$, this gives
 $$
 \begin{aligned}
@@ -46,14 +51,21 @@ $$
 \end{aligned}
 $$
 Taking $b\to a^-$ gives the claimed value $\arcsin(1)=\pi/2$.
+
 :::
 
-<1>2. For every $a>0$,
+:::
+
+::: pf-step
+
+For every $a>0$,
 $$
 \int_0^a\frac{x\,dx}{\sqrt{a^2-x^2}}=a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<b<a$,
 $$
 \begin{aligned}
@@ -63,25 +75,36 @@ $$
 \end{aligned}
 $$
 because $a>0$. Letting $b\to a^-$ gives the value $a$.
+
 :::
 
-<1>3. The required positive value is
+:::
+
+::: pf-step
+
+The required positive value is
 $$
 \boxed{a=\frac{\pi}{2}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1 and <1>2, the displayed equation in the problem is equivalent to
 $$
 \frac{\pi}{2}=a.
 $$
 The resulting value is positive and therefore satisfies the stated requirement.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value and corresponding choice.
+
 :::
+
 :::

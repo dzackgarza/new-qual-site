@@ -25,24 +25,36 @@ What is $\operatorname{Log}(-e^3)$?
 (E) $3 + 2\pi i$
 :::
 
-::: {.solution}
-<1>1. The modulus of $-e^3$ is $e^3$, and its principal argument is $\pi$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The modulus of $-e^3$ is $e^3$, and its principal argument is $\pi$.
+
+
+::: pf-proof
+
 The complex number $-e^3$ lies on the negative real axis at distance $e^3$ from the origin. Hence
 $$
 |-e^3|=e^3.
 $$
 With the principal argument chosen in $(-\pi,\pi]$, the argument of a negative real number is $\pi$.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\operatorname{Log}(-e^3)=3+\pi i},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of the principal logarithm,
 $$
 \operatorname{Log}z=\log|z|+i\operatorname{Arg}z.
@@ -53,11 +65,15 @@ $$
 =\log(e^3)+i\pi
 =3+\pi i.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested principal logarithm.
+
 :::
+
 :::

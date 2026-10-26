@@ -31,47 +31,77 @@ III. $C - B \subseteq C - A$
 (E) I, II, and III
 :::
 
-::: {.solution}
-<1>1. Statement I is true:
+::: pf
+
+::: pf-step
+
+Statement I is true:
 $$
 A\cup B=B.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $A\subseteq B$, every element of $A$ is already in $B$. Thus adjoining $A$ to $B$ adds no elements, so their union is $B$.
+
 :::
 
-<1>2. Statement II is true:
+:::
+
+::: pf-step
+
+Statement II is true:
 $$
 A-B=\varnothing.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An element of $A-B$ would have to belong to $A$ but not to $B$. This is impossible because $A\subseteq B$.
+
 :::
 
-<1>3. Statement III is true:
+:::
+
+::: pf-step
+
+Statement III is true:
 $$
 C-B\subseteq C-A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $x\in C-B$. Then $x\in C$ and $x\notin B$. Since $A\subseteq B$, membership $x\in A$ would imply $x\in B$. Therefore $x\notin A$, so $x\in C-A$. Hence every element of $C-B$ belongs to $C-A$.
+
 :::
 
-<1>4. Therefore all three statements must be true:
+:::
+
+::: pf-step
+
+Therefore all three statements must be true:
 $$
 \boxed{\text{I, II, and III}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 establish I, II, and III respectively.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

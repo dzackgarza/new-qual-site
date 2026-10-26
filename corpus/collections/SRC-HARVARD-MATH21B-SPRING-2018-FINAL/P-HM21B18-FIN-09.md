@@ -73,10 +73,15 @@ E=2Q+5Q^{-1}+7I
 and you may leave the answer in terms of eigenvalues of the basic circulant matrix $Q$.
 :::
 
-::: {.solution}
-<1>1. $\det A=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$\det A=1$.
+
+
+::: pf-proof
+
 The matrix $A$ is the permutation matrix for
 \[
 (1,2,3,4,5)\longmapsto(1,5,4,3,2).
@@ -84,11 +89,18 @@ The matrix $A$ is the permutation matrix for
 This permutation is $(2\,5)(3\,4)$, a product of two transpositions.
 Therefore its sign, and hence the determinant of its permutation matrix,
 is $(-1)^2=1$.
+
 :::
 
-<1>2. $\det B=-120$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$\det B=-120$.
+
+
+::: pf-proof
+
 Expand along the first column. Its only nonzero entry is the $1$ in
 position $(5,1)$, whose cofactor sign is $(-1)^{5+1}=1$. Hence
 \[
@@ -110,11 +122,18 @@ This matrix is block upper triangular, so
 \det\begin{pmatrix}4&1\\0&5\end{pmatrix}
 =(-6)(20)=-120.
 \]
+
 :::
 
-<1>3. $\det C=-450$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$\det C=-450$.
+
+
+::: pf-proof
+
 The matrix $C$ is block upper triangular with diagonal blocks
 \[
 C_1=
@@ -141,11 +160,18 @@ while $\det C_2=6-1=5$. Therefore
 \[
 \det C=(-90)(5)=-450.
 \]
+
 :::
 
-<1>4. $\det D=190000$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$\det D=190000$.
+
+
+::: pf-proof
+
 Let
 \[
 u=(1,1,1,1,1)^T,
@@ -166,9 +192,14 @@ $19,10,10,10,10$, and
 \[
 \det D=19\cdot10^4=190000.
 \]
+
 :::
 
-<1>5. If $\zeta_k=e^{2\pi i k/5}$ for $k=0,\ldots,4$, then
+:::
+
+::: pf-step
+
+If $\zeta_k=e^{2\pi i k/5}$ for $k=0,\ldots,4$, then
 \[
 \det E
 =\prod_{k=0}^4
@@ -176,7 +207,9 @@ $19,10,10,10,10$, and
 =6314.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cyclic shift $Q$ has eigenvalues $\zeta_k$, so $Q^{-1}$ has
 eigenvalues $\zeta_k^{-1}$. Thus $E=2Q+5Q^{-1}+7I$ has eigenvalues
 \[
@@ -203,9 +236,14 @@ Hence
 \[
 \det E=2\cdot3157=6314.
 \]
+
 :::
 
-<1>6. The five requested determinants are
+:::
+
+::: pf-step
+
+The five requested determinants are
 \[
 \boxed{
 \det A=1,\qquad
@@ -215,13 +253,19 @@ Hence
 \det E=6314.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the results of steps <1>1 through <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 records all five determinants.
+
 :::
+
 :::

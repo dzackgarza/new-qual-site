@@ -29,22 +29,34 @@ f(x) = \arcsin(\log \sqrt{x})
 (E) $[1, e^2]$
 :::
 
-::: {.solution}
-<1>1. The inverse-sine condition is
+::: pf
+
+::: pf-step
+
+The inverse-sine condition is
 $$
 -1\leq \log\sqrt{x}\leq1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The inner expression $\log\sqrt{x}$ first requires $x>0$. On that domain, the real function $\arcsin u$ is defined exactly for $u\in[-1,1]$, which gives the displayed inequalities. Step <1>2 will show that those inequalities force $x\ge e^{-2}>0$, so no additional domain restriction remains.
+
 :::
 
-<1>2. The condition in step <1>1 is equivalent to
+:::
+
+::: pf-step
+
+The condition in step <1>1 is equivalent to
 $$
 e^{-2}\leq x\leq e^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Exponentiation is increasing, so step <1>1 gives
 $$
 e^{-1}\leq\sqrt{x}\leq e.
@@ -53,21 +65,32 @@ All three quantities are positive, hence squaring preserves the inequalities:
 $$
 e^{-2}\leq x\leq e^2.
 $$
+
 :::
 
-<1>3. The domain is
+:::
+
+::: pf-step
+
+The domain is
 $$
 \boxed{\left[\frac1{e^2},e^2\right]},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives exactly the set of real $x$ for which every operation in $f(x)$ is defined.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested domain and corresponding choice.
+
 :::
+
 :::

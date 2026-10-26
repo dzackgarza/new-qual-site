@@ -25,8 +25,11 @@ $\lim_{x \to 0} (x + e^{3x})^{1/x} =$
 (E) $e^4$
 :::
 
-::: {.solution}
-<1>1. For $x$ sufficiently close to $0$ with $x\ne0$, set
+::: pf
+
+::: pf-step
+
+For $x$ sufficiently close to $0$ with $x\ne0$, set
 $$
 y(x)=(x+e^{3x})^{1/x}.
 $$
@@ -35,42 +38,62 @@ $$
 \log y(x)=\frac{\log(x+e^{3x})}{x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x+e^{3x}\to1$ as $x\to0$, the base is positive for all sufficiently
 small $|x|$. Taking the natural logarithm of the positive quantity $y(x)$
 gives the displayed identity.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \lim_{x\to0}\log y(x)=4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both numerator and denominator in step <1>1 tend to $0$. By L'Hopital's rule,
 $$
 \lim_{x\to0}\frac{\log(x+e^{3x})}{x}
 =\lim_{x\to0}\frac{1+3e^{3x}}{x+e^{3x}}
 =\frac{1+3}{1}=4.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \lim_{x\to0}(x+e^{3x})^{1/x}=\boxed{e^4},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 and continuity of the exponential function,
 $$
 y(x)=\exp(\log y(x))\longrightarrow e^4.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required limit.
+
 :::
+
 :::

@@ -25,8 +25,11 @@ Which of the following is a harmonic conjugate $u(x, y)$ of the harmonic functio
 (E) $-x^3 + 3xy^2$
 :::
 
-::: {.solution}
-<1>1. If $u$ is a harmonic conjugate of
+::: pf
+
+::: pf-step
+
+If $u$ is a harmonic conjugate of
 $$
 v(x,y)=x-3x^2y+y^3,
 $$
@@ -39,7 +42,9 @@ $$
 u_y=-1+6xy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For an analytic function $f=u+iv$, the Cauchy--Riemann equations are
 $$
 u_x=v_y,
@@ -55,49 +60,74 @@ $$
 v_x=1-6xy,
 $$
 which gives the displayed requirements.
+
 :::
 
-<1>2. Integrating the first equation in step <1>1 with respect to $x$ gives
+:::
+
+::: pf-step
+
+Integrating the first equation in step <1>1 with respect to $x$ gives
 $$
 u(x,y)=-x^3+3xy^2+g(y)
 $$
 for some function $g$ of $y$ alone.
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative in $x$ of $-3x^2+3y^2$ is
 $$
 -x^3+3xy^2.
 $$
 The integration constant may depend on the parameter $y$, giving $g(y)$.
+
 :::
 
-<1>3. The second Cauchy--Riemann equation forces
+:::
+
+::: pf-step
+
+The second Cauchy--Riemann equation forces
 $$
 g(y)=-y+C
 $$
 for some real constant $C$.
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiating the expression in step <1>2 with respect to $y$ gives
 $$
 u_y=6xy+g'(y).
 $$
 Comparing with $u_y=-1+6xy$ from step <1>1 yields $g'(y)=-1$, hence $g(y)=-y+C$.
+
 :::
 
-<1>4. Thus one harmonic conjugate is
+:::
+
+::: pf-step
+
+Thus one harmonic conjugate is
 $$
 \boxed{u(x,y)=-x^3+3xy^2-y},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Take $C=0$ in step <1>3. Adding a real constant gives the other harmonic conjugates, and the displayed choice is exactly option (B).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested harmonic conjugate.
+
 :::
+
 :::

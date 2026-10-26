@@ -30,13 +30,18 @@ at the point where $y=8$ and $z=4$?
 (E) $\hat{\mathbf{j}}-3\hat{\mathbf{k}}$
 :::
 
-::: {.solution}
-<1>1. The point on the surface with $y=8$ and $z=4$ is
+::: pf
+
+::: pf-step
+
+The point on the surface with $y=8$ and $z=4$ is
 $$
 P=(1,8,4).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $y=8$ and $z=4$ into the surface equation gives
 $$
 \log x=x-1,
@@ -50,9 +55,14 @@ $$
 g'(x)=1-\frac1x=\frac{x-1}{x},
 $$
 so $g$ decreases on $(0,1)$ and increases on $(1,\infty)$. Since $g(1)=0$, its unique zero is $x=1$.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 F(x,y,z)=\log(x+y^2-z^3)-x+1,
 $$
@@ -61,7 +71,9 @@ $$
 \nabla F(P)=(0,16,-48)=16(0,1,-3).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Writing $S=x+y^2-z^3$, the partial derivatives are
 $$
 F_x=\frac1S-1,\qquad
@@ -76,25 +88,36 @@ Therefore
 $$
 \nabla F(P)=(0,16,-48)=16(0,1,-3).
 $$
+
 :::
 
-<1>3. A normal vector to the surface at $P$ is
+:::
+
+::: pf-step
+
+A normal vector to the surface at $P$ is
 $$
 \boxed{\hat{\mathbf{j}}-3\hat{\mathbf{k}}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 The surface is the level set $F=0$. Since the gradient in step <1>2 is nonzero, it is normal to that level surface at $P$. Any nonzero scalar multiple is also normal, and
 $$
 \frac1{16}\nabla F(P)=(0,1,-3)
 =\hat{\mathbf{j}}-3\hat{\mathbf{k}}.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested normal vector and corresponding choice.
+
 :::
+
 :::

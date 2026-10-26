@@ -31,14 +31,19 @@ At what value of $x$ on the interval $(0, \frac{3\pi}{2})$ does this function at
 (E) $\frac{2\pi}{3}$
 :::
 
-::: {.solution}
-<1>1. For $x>0$,
+::: pf
+
+::: pf-step
+
+For $x>0$,
 $$
 f'(x)=\frac{\sin 2x-\sin x}{x}
 =\frac{\sin x(2\cos x-1)}{x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the fundamental theorem of calculus and the chain rule,
 $$
 \begin{aligned}
@@ -48,16 +53,23 @@ f'(x)
 \end{aligned}
 $$
 Using $\sin 2x=2\sin x\cos x$ gives the factored form.
+
 :::
 
-<1>2. The critical points in $(0,3\pi/2)$ are
+:::
+
+::: pf-step
+
+The critical points in $(0,3\pi/2)$ are
 $$
 x=\frac\pi3
 \quad\text{and}\quad
 x=\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x>0$, step <1>1 shows that $f'(x)=0$ exactly when
 $$
 \sin x=0
@@ -65,27 +77,45 @@ $$
 \cos x=\frac12.
 $$
 In $(0,3\pi/2)$, the first equation gives $x=\pi$, and the second gives $x=\pi/3$.
+
 :::
 
-<1>3. $f'$ changes sign from positive to negative at $x=\pi/3$, and from negative to positive at $x=\pi$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$f'$ changes sign from positive to negative at $x=\pi/3$, and from negative to positive at $x=\pi$.
+
+
+::: pf-proof
+
 The denominator in step <1>1 is positive on the interval. On $(0,\pi/3)$, both $\sin x$ and $2\cos x-1$ are positive, so $f'(x)>0$. On $(\pi/3,\pi)$, one has $\sin x>0$ and $2\cos x-1<0$, so $f'(x)<0$. On $(\pi,3\pi/2)$, both factors are negative, so $f'(x)>0$.
+
 :::
 
-<1>4. The local maximum occurs at
+:::
+
+::: pf-step
+
+The local maximum occurs at
 $$
 \boxed{x=\frac\pi3},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $f'$ changes from positive to negative at $\pi/3$, so $f$ has a local maximum there. The other critical point, $\pi$, is a local minimum because the sign change there is from negative to positive.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the requested local-maximum point and corresponding choice.
+
 :::
+
 :::

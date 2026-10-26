@@ -38,26 +38,43 @@ Which of the following correctly represents the algorithm described above?
 (E) $a_n = \begin{cases} \frac{1}{2}a_{n-1} \text{ for } a_n \text{ odd} \\ 3a_{n-1} + 1 \text{ for } a_n \text{ even} \end{cases}$
 :::
 
-::: {.solution}
-<1>1. If $a_{n-1}$ is even, then the next value is
+::: pf
+
+::: pf-step
+
+If $a_{n-1}$ is even, then the next value is
 $$
 a_n=\frac12 a_{n-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When the current value satisfies $a\bmod 2=0$, the `if` branch replaces $a$ by $a/2$. Thus an even current value $a_{n-1}$ produces $a_n=a_{n-1}/2$.
+
 :::
 
-<1>2. If $a_{n-1}$ is odd, then the next value is
+:::
+
+::: pf-step
+
+If $a_{n-1}$ is odd, then the next value is
 $$
 a_n=3a_{n-1}+1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $a_{n-1}$ is odd, the condition $a\bmod 2=0$ is false, so the `else` branch replaces $a$ by $3a+1$. Hence $a_n=3a_{n-1}+1$.
+
 :::
 
-<1>3. Therefore the recurrence is
+:::
+
+::: pf-step
+
+Therefore the recurrence is
 $$
 \boxed{
 a_n=
@@ -68,13 +85,19 @@ a_n=
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the even case and step <1>2 gives the odd case. Both branches test the parity of the current value $a_{n-1}$ before assigning the next value $a_n$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the recurrence implemented by the algorithm.
+
 :::
+
 :::

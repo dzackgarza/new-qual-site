@@ -31,10 +31,15 @@ III. $\int_{0}^{2} \frac{dx}{(2 - x)^2}$
 (E) II and III only
 :::
 
-::: {.solution}
-<1>1. Integral I converges.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Integral I converges.
+
+
+::: pf-proof
+
 The integrand is continuous on every bounded interval. For $\abs{x}\ge1$,
 $$
 0<\frac1{(x^2+1)^2}\le\frac1{x^4}.
@@ -47,11 +52,18 @@ $$
 $$
 the comparison test shows that both tails of integral I converge. Hence
 $\int_{-\infty}^{\infty}dx/(x^2+1)^2$ converges.
+
 :::
 
-<1>2. Integral II converges.
+:::
 
-::: {.proof}
+::: pf-step
+
+Integral II converges.
+
+
+::: pf-proof
+
 Integration by parts gives
 $$
 \int xe^{-x}\,dx=-(x+1)e^{-x}.
@@ -68,11 +80,18 @@ $$
 \end{aligned}
 $$
 because $(b+1)e^{-b}\to0$.
+
 :::
 
-<1>3. Integral III diverges.
+:::
 
-::: {.proof}
+::: pf-step
+
+Integral III diverges.
+
+
+::: pf-proof
+
 For $0<b<2$,
 $$
 \int_0^b\frac{dx}{(2-x)^2}
@@ -80,20 +99,31 @@ $$
 =\frac1{2-b}-\frac12.
 $$
 As $b\to2^-$, the right-hand side tends to $+\infty$. Hence integral III diverges.
+
 :::
 
-<1>4. Exactly I and II converge, so the answer is
+:::
+
+::: pf-step
+
+Exactly I and II converge, so the answer is
 $$
 \boxed{\text{(B) I and II only}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This follows directly from steps <1>1--<1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested choice.
+
 :::
+
 :::

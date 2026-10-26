@@ -16,7 +16,6 @@ audit:
 Show that the complex plane minus a finite nonempty set is not simply connected.
 :::
 
-::: {.solution}
 Let
 $$
 F=\{a_1,\ldots,a_n\}\subset\CC,
@@ -24,22 +23,33 @@ F=\{a_1,\ldots,a_n\}\subset\CC,
 $$
 with the $a_j$ distinct, and put $\Omega=\CC\setminus F$.
 
-<1>1. There is an $r>0$ such that the circle
+::: pf
+
+::: pf-step
+
+There is an $r>0$ such that the circle
 $$
 \gamma(t)=a_1+re^{it},
 \qquad 0\leq t\leq2\pi,
 $$
 is contained in $\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $n=1$, any $r>0$ works. If $n>1$, choose
 $$
 0<r<\min_{2\leq j\leq n}\abs{a_j-a_1}.
 $$
 Then no point of the circle is one of the deleted points.
+
 :::
 
-<1>2. The function
+:::
+
+::: pf-step
+
+The function
 $$
 h(z)=\frac1{z-a_1}
 $$
@@ -48,7 +58,9 @@ $$
 \int_\gamma h(z)\,dz=2\pi i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The only pole of $h$ is at $a_1\notin\Omega$. Along the parametrization in
 step <1>1,
 $$
@@ -63,31 +75,49 @@ $$
 =\int_0^{2\pi}i\,dt
 =2\pi i.
 $$
+
 :::
 
-<1>3. If $\Omega$ were simply connected, then
+:::
+
+::: pf-step
+
+If $\Omega$ were simply connected, then
 $$
 \int_\gamma h(z)\,dz=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Under the homotopy definition of simple connectivity used in the source, the
 closed curve $\gamma$ would be homotopic in $\Omega$ to the constant curve at
 $\gamma(0)$. The homotopy version of Cauchy's theorem would then make the
 integral of $h$ along $\gamma$ equal to its integral along that constant curve,
 which is zero.
+
 :::
 
-<1>4. The set $\Omega=\CC\setminus F$ is not simply connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $\Omega=\CC\setminus F$ is not simply connected.
+
+
+::: pf-proof
+
 Steps <1>2 and <1>3 would give the contradiction $2\pi i=0$ if $\Omega$ were
 simply connected.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

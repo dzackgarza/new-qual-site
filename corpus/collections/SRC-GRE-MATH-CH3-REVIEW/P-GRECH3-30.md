@@ -33,21 +33,31 @@ Determine the value of the integral:
 (E) $e^4+2(\sqrt{2}-1)$
 :::
 
-::: {.solution}
-<1>1. The curve $C$ is the positively oriented boundary of the triangle with vertices
+::: pf
+
+::: pf-step
+
+The curve $C$ is the positively oriented boundary of the triangle with vertices
 $$
 (0,0),\qquad (2,0),\qquad (2,2),
 $$
 whose area is $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The arrows in the supplied figure run from $(0,0)$ to $(2,0)$, then to $(2,2)$, and then back to $(0,0)$ along the diagonal. Thus the enclosed triangular region remains on the left, so the orientation is counterclockwise. Its base and height both have length $2$, hence
 $$
 \operatorname{Area}(R)=\frac12(2)(2)=2.
 $$
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 M(x,y)=e^{2x}-y,
 \qquad
@@ -62,7 +72,9 @@ $$
 $$
 throughout the triangular region.
 
-::: {.proof}
+
+::: pf-proof
+
 Direct differentiation gives
 $$
 \frac{\partial N}{\partial x}=2
@@ -70,15 +82,22 @@ $$
 \frac{\partial M}{\partial y}=-1.
 $$
 Their difference is therefore $3$.
+
 :::
 
-<1>3. The line integral is
+:::
+
+::: pf-step
+
+The line integral is
 $$
 \boxed{6},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 By Green's theorem and the positive orientation established in step <1>1,
 $$
 \int_C M\,dx+N\,dy
@@ -97,11 +116,15 @@ $$
 =3\cdot2
 =6.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested integral value and corresponding choice.
+
 :::
+
 :::

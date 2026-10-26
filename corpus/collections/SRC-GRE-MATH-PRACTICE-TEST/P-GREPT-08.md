@@ -25,13 +25,18 @@ If $\int_0^b \tan x \, dx = 2$, then $b$ could equal
 (E) $\operatorname{arcsec}(e^2)$
 :::
 
-::: {.solution}
-<1>1. On every interval containing $0$ on which $\tan x$ is continuous,
+::: pf
+
+::: pf-step
+
+On every interval containing $0$ on which $\tan x$ is continuous,
 $$
 \int_0^b\tan x\,dx=-\log(\cos b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \tan x=\frac{\sin x}{\cos x},
@@ -48,14 +53,21 @@ $$
 =\left[-\log(\cos x)\right]_0^b
 =-\log(\cos b).
 $$
+
 :::
 
-<1>2. If $b=\operatorname{arcsec}(e^2)$, then
+:::
+
+::: pf-step
+
+If $b=\operatorname{arcsec}(e^2)$, then
 $$
 \int_0^b\tan x\,dx=2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the principal inverse secant,
 $b=\operatorname{arcsec}(e^2)$ lies in $(0,\pi/2)$ and satisfies
 $$
@@ -68,22 +80,33 @@ $$
 \int_0^b\tan x\,dx
 =-\log(e^{-2})=2.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 b=\boxed{\operatorname{arcsec}(e^2)}
 $$
 is a possible value, so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 verifies directly that this choice satisfies the required integral
 equation.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested choice.
+
 :::
+
 :::

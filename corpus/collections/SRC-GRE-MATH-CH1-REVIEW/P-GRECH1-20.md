@@ -38,15 +38,20 @@ find a formula for $\tanh^{-1} x$.
 (E) $\frac{1}{2} \log \frac{1 + x}{1 - x}$
 :::
 
-::: {.solution}
 Let $y=\tanh^{-1}x$, so that $x=\tanh y$.
 
-<1>1. The equation $x=\tanh y$ is equivalent to
+::: pf
+
+::: pf-step
+
+The equation $x=\tanh y$ is equivalent to
 $$
 e^{2y}=\frac{1+x}{1-x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using the definitions of $\sinh$ and $\cosh$,
 $$
 x=\frac{e^y-e^{-y}}{e^y+e^{-y}}.
@@ -60,25 +65,36 @@ $$
 (1-x)e^{2y}=1+x,
 $$
 which yields the displayed identity for $-1<x<1$, the range of $\tanh$.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{\tanh^{-1}x=\frac12\log\frac{1+x}{1-x}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient in step <1>1 is positive for $-1<x<1$. Taking logarithms gives
 $$
 2y=\log\frac{1+x}{1-x},
 $$
 and division by $2$ gives the claimed formula.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested inverse formula on the full domain of $\tanh^{-1}$.
+
 :::
+
 :::

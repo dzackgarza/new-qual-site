@@ -26,23 +26,35 @@ Let $L$ be the line in space that passes through the points $P=(-1,-2,4)$ and $Q
 (E) $(9,6,-2)$
 :::
 
-::: {.solution}
-<1>1. A parametrization of $L$ is
+::: pf
+
+::: pf-step
+
+A parametrization of $L$ is
 $$
 (x,y,z)=(-1,-2,4)+t(5,4,-3).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The direction vector from $P$ to $Q$ is
 $$
 Q-P=(4,2,1)-(-1,-2,4)=(5,4,-3).
 $$
 Therefore every point of the line through $P$ and $Q$ has the displayed form.
+
 :::
 
-<1>2. The point of $L$ lying in the plane occurs at $t=2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The point of $L$ lying in the plane occurs at $t=2$.
+
+
+::: pf-proof
+
 From step <1>1,
 $$
 x=-1+5t,\qquad y=-2+4t,\qquad z=4-3t.
@@ -56,24 +68,35 @@ $$
 5+3t=11,
 $$
 and hence $t=2$.
+
 :::
 
-<1>3. The intersection point is
+:::
+
+::: pf-step
+
+The intersection point is
 $$
 \boxed{(9,6,-2)},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $t=2$ from step <1>2 into the parametrization from step <1>1 gives
 $$
 (-1+10,-2+8,4-6)=(9,6,-2).
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested intersection point and corresponding choice.
+
 :::
+
 :::

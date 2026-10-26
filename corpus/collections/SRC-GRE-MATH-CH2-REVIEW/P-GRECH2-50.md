@@ -29,8 +29,11 @@ is finite and nonzero. What is this value of $k$, and what is the limit, $L$?
 (E) $k = 4$, $L = \frac{1}{2}$
 :::
 
-::: {.solution}
-<1>1. As $x\to0$,
+::: pf
+
+::: pf-step
+
+As $x\to0$,
 $$
 e^{x^2}-x^2-1=\frac{x^4}{2}+O(x^6)
 $$
@@ -39,7 +42,9 @@ $$
 \cos x-1=-\frac{x^2}{2}+O(x^4).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor expansions at $0$ are
 $$
 e^{x^2}
@@ -51,24 +56,36 @@ $$
 =1-\frac{x^2}{2}+\frac{x^4}{24}+O(x^6).
 $$
 Subtracting the indicated lower-order terms gives the two displayed expansions.
+
 :::
 
-<1>2. The numerator has leading term $-x^6/4$:
+:::
+
+::: pf-step
+
+The numerator has leading term $-x^6/4$:
 $$
 (e^{x^2}-x^2-1)(\cos x-1)
 =-\frac{x^6}{4}+O(x^8).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying the expansions in step <1>1 gives
 $$
 \left(\frac{x^4}{2}+O(x^6)\right)
 \left(-\frac{x^2}{2}+O(x^4)\right)
 =-\frac{x^6}{4}+O(x^8).
 $$
+
 :::
 
-<1>3. The unique exponent producing a finite nonzero limit is
+:::
+
+::: pf-step
+
+The unique exponent producing a finite nonzero limit is
 $$
 \boxed{k=6},
 $$
@@ -77,7 +94,9 @@ $$
 \boxed{L=-\frac14}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \frac{(e^{x^2}-x^2-1)(\cos x-1)}{x^k}
@@ -87,17 +106,28 @@ For the quotient to tend to a finite nonzero value, the factor $x^{6-k}$ must ha
 $$
 -\frac14+O(x^2)\longrightarrow-\frac14.
 $$
+
 :::
 
-<1>4. Therefore the answer is (D).
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the answer is (D).
+
+
+::: pf-proof
+
 Step <1>3 gives exactly the pair listed in choice (D).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the requested choice.
+
 :::
+
 :::

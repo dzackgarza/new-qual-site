@@ -47,13 +47,18 @@ Conclude that
 \]
 :::
 
-::: {.solution}
 For $|z|\le1$, write $s=\sqrt{1-|z|^2}$ and denote the matrix in part 1 by $U_z$.
 Let $\|\cdot\|$ denote the operator norm induced by the Euclidean norm on $\mathbb C^{n+1}$.
 
-<1>1. The matrix $U_z$ is unitary, and every eigenvalue of $U_z$ has modulus $1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $U_z$ is unitary, and every eigenvalue of $U_z$ has modulus $1$.
+
+
+::: pf-proof
+
 The first and last columns of $U_z$ are
 $$
 c_1=ze_1+se_2,
@@ -82,14 +87,21 @@ $$
 \|v\|=\|U_zv\|=|\lambda|\,\|v\|,
 $$
 and hence $|\lambda|=1$.
+
 :::
 
-<1>2. For every integer $k$ with $0\le k\le n$,
+:::
+
+::: pf-step
+
+For every integer $k$ with $0\le k\le n$,
 $$
 e_1^TU_z^ke_1=z^k.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $k=0$ the equality is $e_1^Te_1=1$. For $1\le k\le n$, the stronger identity
 $$
 U_z^ke_1
@@ -109,14 +121,21 @@ U_z^{k+1}e_1
 $$
 Thus the identity follows by induction. Taking the first coordinate
 gives $e_1^TU_z^ke_1=z^k$.
+
 :::
 
-<1>3. For every $|z|\le1$,
+:::
+
+::: pf-step
+
+For every $|z|\le1$,
 $$
 p(z)=e_1^Tp(U_z)e_1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \begin{aligned}
@@ -126,9 +145,14 @@ e_1^Tp(U_z)e_1
 &=p(z).
 \end{aligned}
 $$
+
 :::
 
-<1>4. Let $z_0$ satisfy
+:::
+
+::: pf-step
+
+Let $z_0$ satisfy
 $$
 |p(z_0)|=\max_{|z|\le1}|p(z)|,
 $$
@@ -137,7 +161,9 @@ $$
 \max_{|z|\le1}|p(z)|\le\|p(U)\|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Such a point $z_0$ exists because $p$ is continuous on the compact
 closed unit disk. Since the standard basis vector $e_1$ has real
 coordinates, $e_1^T=e_1^*$, and step <1>3 gives
@@ -150,15 +176,22 @@ $$
 &\le \|p(U)\|.
 \end{aligned}
 $$
+
 :::
 
-<1>5. If $\lambda_1,\ldots,\lambda_{n+1}$ are the eigenvalues of $U$ and
+:::
+
+::: pf-step
+
+If $\lambda_1,\ldots,\lambda_{n+1}$ are the eigenvalues of $U$ and
 $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, then
 $$
 \|p(U)\|=\|p(D)\|=\max_{1\le i\le n+1}|p(\lambda_i)|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $U$ is unitary. The spectral theorem for unitary matrices
 therefore gives a unitary matrix $V$ such that
 $$
@@ -186,14 +219,21 @@ where the maximum is attained. Hence
 $$
 \|p(D)\|=\max_i|p(\lambda_i)|.
 $$
+
 :::
 
-<1>6. The maximum modulus of $p$ on the closed unit disk is attained on the unit circle:
+:::
+
+::: pf-step
+
+The maximum modulus of $p$ on the closed unit disk is attained on the unit circle:
 $$
 \boxed{\max_{|z|\le1}|p(z)|=\max_{|z|=1}|p(z)|}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, every eigenvalue $\lambda_i$ of $U$ satisfies
 $|\lambda_i|=1$. Hence steps <1>4 and <1>5 give
 $$
@@ -203,12 +243,16 @@ $$
 $$
 The reverse inequality is immediate because the unit circle is a
 subset of the closed unit disk. Therefore the two maxima are equal.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 establish the four requested intermediate claims,
 and step <1>6 gives the required conclusion.
+
 :::
+
 :::

@@ -31,13 +31,18 @@ Simplify the following:
 (E) $\frac{5}{3}$
 :::
 
-::: {.solution}
-<1>1. For $x\ne1,2$,
+::: pf
+
+::: pf-step
+
+For $x\ne1,2$,
 $$
 \frac1{x^2-3x+2}=-\frac1{x-1}+\frac1{x-2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 x^2-3x+2=(x-1)(x-2),
@@ -48,14 +53,21 @@ $$
 =\frac{-(x-2)+(x-1)}{(x-1)(x-2)}
 =\frac1{(x-1)(x-2)}.
 $$
+
 :::
 
-<1>2. The definite integral is
+:::
+
+::: pf-step
+
+The definite integral is
 $$
 \int_3^5\frac{dx}{x^2-3x+2}=\log\frac32.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On $[3,5]$, both $x-1$ and $x-2$ are positive, so step <1>1 gives the antiderivative
 $$
 -\log(x-1)+\log(x-2)
@@ -70,24 +82,35 @@ $$
 &=\log\frac32.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{\exp\int_3^5\frac{dx}{x^2-3x+2}=\frac32},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 and the inverse relation between the exponential and logarithm functions,
 $$
 \exp\left(\log\frac32\right)=\frac32.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested simplification and corresponding choice.
+
 :::
+
 :::

@@ -32,14 +32,19 @@ is exact and $g(0, y) = 0$ for all $y \neq 0$. What is $g(x, 1)$?
 (E) $\sin x - x\cos x + 1$
 :::
 
-::: {.solution}
-<1>1. Exactness requires
+::: pf
+
+::: pf-step
+
+Exactness requires
 $$
 \frac{\partial g}{\partial x}
 =x\cos(xy).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 M(x,y)=\sin(xy),
@@ -51,9 +56,14 @@ $$
 M_y=x\cos(xy),
 $$
 the displayed identity follows.
+
 :::
 
-<1>2. For $y\ne0$,
+:::
+
+::: pf-step
+
+For $y\ne0$,
 $$
 g(x,y)
 =\frac{x}{y}\sin(xy)
@@ -62,7 +72,9 @@ g(x,y)
 $$
 for some function $h$.
 
-::: {.proof}
+
+::: pf-proof
+
 Integrating step <1>1 with respect to $x$, set $u=xy$. Then
 $$
 \int x\cos(xy)\,dx
@@ -78,34 +90,52 @@ $$
 \frac{x}{y}\sin(xy)+\frac1{y^2}\cos(xy),
 $$
 and the constant of integration may depend on $y$.
+
 :::
 
-<1>3. The condition $g(0,y)=0$ forces
+:::
+
+::: pf-step
+
+The condition $g(0,y)=0$ forces
 $$
 h(y)=-\frac1{y^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Putting $x=0$ into step <1>2 gives
 $$
 0=g(0,y)=\frac1{y^2}+h(y)
 $$
 for every nonzero $y$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{g(x,1)=x\sin x+\cos x-1},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $y=1$ and the function $h$ from step <1>3 into step <1>2.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested function and corresponding choice.
+
 :::
+
 :::

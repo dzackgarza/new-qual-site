@@ -36,10 +36,15 @@ Which of these functions is/are continuous at the origin?
 (E) All three
 :::
 
-::: {.solution}
-<1>1. The function $f_1$ is not continuous at $(0,0)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $f_1$ is not continuous at $(0,0)$.
+
+
+::: pf-proof
+
 At the origin, $x+y=0$, so
 $$
 f_1(0,0)=1.
@@ -55,11 +60,18 @@ $$
 \lim_{x\to0}f_1(x,2x)=-\frac13\ne1=f_1(0,0),
 $$
 so $f_1$ is not continuous at the origin.
+
 :::
 
-<1>2. The function $f_2$ is not continuous at $(0,0)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f_2$ is not continuous at $(0,0)$.
+
+
+::: pf-proof
+
 By definition, $f_2(0,0)=0$. Along the line $y=x$, for $x\ne0$,
 $$
 f_2(x,x)
@@ -71,11 +83,18 @@ $$
 \lim_{x\to0}f_2(x,x)=\frac12\ne0=f_2(0,0),
 $$
 so $f_2$ is not continuous at the origin.
+
 :::
 
-<1>3. The function $f_3$ is continuous at $(0,0)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f_3$ is continuous at $(0,0)$.
+
+
+::: pf-proof
+
 For $(x,y)\ne(0,0)$, set
 $$
 \rho=\sqrt{x^2+y^2}.
@@ -101,20 +120,31 @@ $$
 \lim_{(x,y)\to(0,0)}f_3(x,y)=0=f_3(0,0).
 $$
 Hence $f_3$ is continuous at the origin.
+
 :::
 
-<1>4. Exactly $f_3$ is continuous at the origin, so the answer is
+:::
+
+::: pf-step
+
+Exactly $f_3$ is continuous at the origin, so the answer is
 $$
 \boxed{\text{(D)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 exclude $f_1$ and $f_2$, while step <1>3 proves continuity of $f_3$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies precisely which of the three functions is continuous at the origin.
+
 :::
+
 :::

@@ -26,18 +26,23 @@ Set up, but do not evaluate, a double integral that gives the volume of the soli
 (E) $\int_{-1}^1\int_{-3\sqrt{1-x^2}}^{3\sqrt{1-x^2}}\left(2-x^2-\frac{1}{9}y^2-\sqrt{x^2+\frac{1}{9}y^2}\right)dy\,dx$
 :::
 
-::: {.solution}
 Write
 $$
 q(x,y)=x^2+\frac19y^2.
 $$
 
-<1>1. The two surfaces intersect above the ellipse
+::: pf
+
+::: pf-step
+
+The two surfaces intersect above the ellipse
 $$
 q(x,y)=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 At an intersection,
 $$
 1-q=\sqrt q-1,
@@ -51,15 +56,22 @@ $$
 2-r^2-r=(1-r)(r+2)=0.
 $$
 Thus $r=1$, hence $q=1$.
+
 :::
 
-<1>2. The projection of the solid to the $xy$-plane is
+:::
+
+::: pf-step
+
+The projection of the solid to the $xy$-plane is
 $$
 R=\left\{(x,y):-1\le x\le1,
 -3\sqrt{1-x^2}\le y\le3\sqrt{1-x^2}\right\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the boundary of the projection is the ellipse
 $$
 x^2+\frac19y^2=1.
@@ -71,9 +83,14 @@ $$
 =(1-r)(r+2)\ge0.
 $$
 Thus the bounded solid projects to the ellipse interior $q\le1$. Solving the ellipse inequality for $y$ gives the displayed iterated-integral bounds.
+
 :::
 
-<1>3. The required volume integral is
+:::
+
+::: pf-step
+
+The required volume integral is
 $$
 \boxed{
 \int_{-1}^1
@@ -86,7 +103,9 @@ dy\,dx
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Over the region $R$ from step <1>2, the upper surface is
 $$
 z_{\mathrm{top}}=1-q
@@ -102,11 +121,15 @@ z_{\mathrm{top}}-z_{\mathrm{bottom}}
 =2-x^2-\frac19y^2-\sqrt{x^2+\frac19y^2}.
 $$
 Integrating this vertical thickness over the bounds from step <1>2 yields the displayed integral.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested double-integral setup and corresponding choice.
+
 :::
+
 :::

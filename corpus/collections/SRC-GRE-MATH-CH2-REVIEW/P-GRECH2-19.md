@@ -26,34 +26,50 @@ What does the Mean-Value theorem say about $f$?
 (E) There exists a number $c$ in the interval $(a, b)$ such that $(b - a)f'(c) = 2$.
 :::
 
-::: {.solution}
-<1>1. There exists $c\in(a,b)$ such that
+::: pf
+
+::: pf-step
+
+There exists $c\in(a,b)$ such that
 $$
 f'(c)=\frac{2}{b-a}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypotheses state that $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, so the mean value theorem applies. Hence some $c\in(a,b)$ satisfies
 $$
 f'(c)=\frac{f(b)-f(a)}{b-a}
 =\frac{3-1}{b-a}
 =\frac2{b-a}.
 $$
+
 :::
 
-<1>2. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 \boxed{(b-a)f'(c)=2},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Since $a\ne b$, one has $b-a\ne0$. Multiplying the equality in step <1>1 by $b-a$ gives the displayed conclusion.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 is exactly the conclusion among the listed choices guaranteed by the mean value theorem.
+
 :::
+
 :::

@@ -34,7 +34,6 @@ slope, candidate C is elongated along the opposite diagonal direction, and
 candidate D has a broader opposite shear.
 :::
 
-::: {.solution}
 Set
 \[
 \lambda_\pm=\frac{3\pm\sqrt5}{2},
@@ -44,12 +43,18 @@ Set
 \beta=\frac{\sqrt5+1}{2}.
 \]
 
-<1>1. The characteristic polynomial is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial is
 \[
 \chi_A(\lambda)=\lambda^2-3\lambda+1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 \det(\lambda I-A)
@@ -62,9 +67,14 @@ One has
 =(\lambda-2)(\lambda-1)-1
 =\lambda^2-3\lambda+1.
 \]
+
 :::
 
-<1>2. The eigenvalues are $\lambda_+$ and $\lambda_-$, with respective
+:::
+
+::: pf-step
+
+The eigenvalues are $\lambda_+$ and $\lambda_-$, with respective
 eigenvectors
 \[
 u_+=\begin{pmatrix}1\\\alpha\end{pmatrix},
@@ -72,7 +82,9 @@ u_+=\begin{pmatrix}1\\\alpha\end{pmatrix},
 u_-=\begin{pmatrix}-1\\\beta\end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solving the quadratic in step <1>1 gives
 $\lambda_\pm=(3\pm\sqrt5)/2$. Directly,
 \[
@@ -91,11 +103,18 @@ Au_-
 \begin{pmatrix}-1\\\beta\end{pmatrix}.
 \]
 Thus the displayed vectors are eigenvectors for the stated eigenvalues.
+
 :::
 
-<1>3. The discrete system $x(t+1)=Ax(t)$ is not asymptotically stable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The discrete system $x(t+1)=Ax(t)$ is not asymptotically stable.
+
+
+::: pf-proof
+
 Since
 \[
 \lambda_+=\frac{3+\sqrt5}{2}>1,
@@ -106,11 +125,18 @@ x(t)=A^tu_+=\lambda_+^t u_+,
 \]
 which does not tend to $0$. Hence the origin is not asymptotically
 stable.
+
 :::
 
-<1>4. The eigenvectors $u_+$ and $u_-$ are orthogonal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The eigenvectors $u_+$ and $u_-$ are orthogonal.
+
+
+::: pf-proof
+
 Their dot product is
 \[
 u_+\cdot u_-
@@ -118,9 +144,14 @@ u_+\cdot u_-
 =-1+\frac{(\sqrt5-1)(\sqrt5+1)}4
 =0.
 \]
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 n_+=\sqrt{\frac{5-\sqrt5}{2}},
 \qquad
@@ -142,7 +173,9 @@ B=
 \]
 Then $S$ is orthogonal and $B=S^{-1}AS$.
 
-::: {.proof}
+
+::: pf-proof
+
 One computes
 \[
 \|u_+\|^2=1+\alpha^2=\frac{5-\sqrt5}{2}=n_+^2,
@@ -156,20 +189,32 @@ eigenvalues $\lambda_+,\lambda_-$, hence
 AS=SB.
 \]
 Multiplying on the left by $S^{-1}$ gives $S^{-1}AS=B$.
+
 :::
 
-<1>6. In part (e), the transformed picture is candidate B.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (e), the transformed picture is candidate B.
+
+
+::: pf-proof
+
 The eigendirection $u_+=(1,\alpha)^T$ has positive slope
 $\alpha>0$ and is expanded by the factor $\lambda_+>1$. The perpendicular
 eigendirection $u_-$ is contracted by
 $0<\lambda_-<1$. Therefore the image of a generic figure is strongly
 elongated along the positive-slope direction $u_+$. Among the source
 candidates, this is precisely picture B.
+
 :::
 
-<1>7. The requested answers are
+:::
+
+::: pf-step
+
+The requested answers are
 \[
 \boxed{
 \begin{gathered}
@@ -182,14 +227,20 @@ B=S^{-1}AS\text{ for the }S,B\text{ of step <1>5},\qquad
 \end{gathered}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>6 establish parts (a)--(e), respectively, with step <1>5
 providing the requested orthogonal diagonalization.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 records all requested outputs.
+
 :::
+
 :::

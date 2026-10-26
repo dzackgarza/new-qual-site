@@ -25,13 +25,18 @@ Let $A = \{\varnothing, a\}$, where $\varnothing$ is the empty set. If $B$ is th
 (E) $8$
 :::
 
-::: {.solution}
-<1>1. If $a=\{\varnothing\}$, then
+::: pf
+
+::: pf-step
+
+If $a=\{\varnothing\}$, then
 $$
 |A\cup B|=4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For this choice,
 $$
 A=\{\varnothing,\{\varnothing\}\}.
@@ -39,14 +44,21 @@ $$
 Its power set $B=\mathcal P(A)$ has four elements. Moreover,
 $\varnothing\in B$ and $a=\{\varnothing\}\in B$, so $A\subseteq B$.
 Therefore $A\cup B=B$ and $|A\cup B|=4$.
+
 :::
 
-<1>2. If $a=\{\{\varnothing\}\}$, then
+:::
+
+::: pf-step
+
+If $a=\{\{\varnothing\}\}$, then
 $$
 |A\cup B|=5.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Now
 $$
 A=\{\varnothing,\{\{\varnothing\}\}\},
@@ -56,24 +68,35 @@ $a=\{\{\varnothing\}\}$ is $\{\varnothing\}$, which is not an element of
 $A$. Hence $a\nsubseteq A$, so $a\notin\mathcal P(A)=B$. Since
 $\varnothing\in B$, adjoining the two elements of $A$ to $B$ adds exactly the
 new element $a$. Thus $|A\cup B|=5$.
+
 :::
 
-<1>3. Therefore the requested cardinality is
+:::
+
+::: pf-step
+
+Therefore the requested cardinality is
 $$
 \boxed{\text{not determined by the stated hypotheses}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives cardinality $4$, while step <1>2 gives cardinality $5$, and
 both choices of $a$ satisfy the printed statement. Thus no single listed
 choice follows from the stated hypotheses.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves that the problem is underdetermined as written.
+
 :::
+
 :::
 
 ::: {.remark}

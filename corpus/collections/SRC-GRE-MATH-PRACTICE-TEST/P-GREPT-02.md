@@ -25,40 +25,56 @@ $$\frac{d}{dx}\left(\frac{1}{x} - \frac{1}{\log x}\right) =$$
 (E) $\frac{2x - 1}{(x \log x)^2}$
 :::
 
-::: {.solution}
-<1>1. Differentiating the two terms gives
+::: pf
+
+::: pf-step
+
+Differentiating the two terms gives
 $$
 \frac{d}{dx}\left(\frac1x-\frac1{\log x}\right)
 =-\frac1{x^2}+\frac1{x(\log x)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative of $x^{-1}$ is $-x^{-2}$. Also,
 $$
 \frac{d}{dx}\bigl[-(\log x)^{-1}\bigr]
 =(\log x)^{-2}\frac1x
 $$
 by the chain rule. Adding the two derivatives proves the claim.
+
 :::
 
-<1>2. The derivative simplifies to
+:::
+
+::: pf-step
+
+The derivative simplifies to
 $$
 \boxed{\frac{x-(\log x)^2}{(x\log x)^2}},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Using the common denominator $x^2(\log x)^2$ in step <1>1 gives
 $$
 -\frac1{x^2}+\frac1{x(\log x)^2}
 =\frac{-(\log x)^2+x}{x^2(\log x)^2}
 =\frac{x-(\log x)^2}{(x\log x)^2}.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the required derivative.
+
 :::
+
 :::

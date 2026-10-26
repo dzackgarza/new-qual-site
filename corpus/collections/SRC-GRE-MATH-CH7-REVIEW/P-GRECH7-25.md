@@ -25,19 +25,24 @@ In the complex plane, the set of all points that satisfy the equation $(\bar{z})
 (E) two lines
 :::
 
-::: {.solution}
 Write
 $$
 z=x+iy,
 \qquad x,y\in\RR.
 $$
 
-<1>1. The equation $(\bar z)^2=z^2$ is equivalent to
+::: pf
+
+::: pf-step
+
+The equation $(\bar z)^2=z^2$ is equivalent to
 $$
 xy=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\bar z=x-iy$,
 $$
 (x-iy)^2=(x+iy)^2.
@@ -47,27 +52,45 @@ $$
 x^2-2ixy-y^2=x^2+2ixy-y^2,
 $$
 so $4ixy=0$, equivalently $xy=0$.
+
 :::
 
-<1>2. The solution set is the union of the real and imaginary axes.
+:::
 
-::: {.proof}
+::: pf-step
+
+The solution set is the union of the real and imaginary axes.
+
+
+::: pf-proof
+
 By step <1>1, a point $(x,y)$ is a solution exactly when $x=0$ or $y=0$. The locus $x=0$ is the imaginary axis, and the locus $y=0$ is the real axis.
+
 :::
 
-<1>3. Therefore the locus is
+:::
+
+::: pf-step
+
+Therefore the locus is
 $$
 \boxed{\text{two lines}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 The two axes in step <1>2 are distinct lines through the origin.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested geometric description.
+
 :::
+
 :::

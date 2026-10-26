@@ -30,10 +30,15 @@ a^{(\log_a x) + (\log_A x)}
 (E) $x\sqrt{x}$
 :::
 
-::: {.solution}
-<1>1. $\log_A x=\frac12\log_a x$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$\log_A x=\frac12\log_a x$.
+
+
+::: pf-proof
+
 Since $A=a^2$, the change-of-base formula gives
 $$
 \log_A x
@@ -41,27 +46,41 @@ $$
 =\frac{\log_a x}{2}.
 $$
 Here the logarithms are understood on their usual domains, so in particular $a\ne1$.
+
 :::
 
-<1>2. The exponent simplifies to
+:::
+
+::: pf-step
+
+The exponent simplifies to
 $$
 (\log_a x)+(\log_A x)=\frac32\log_a x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the identity from step <1>1:
 $$
 \log_a x+\frac12\log_a x=\frac32\log_a x.
 $$
+
 :::
 
-<1>3. The expression is
+:::
+
+::: pf-step
+
+The expression is
 $$
 \boxed{x\sqrt{x}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 a^{(\log_a x)+(\log_A x)}
@@ -71,11 +90,15 @@ a^{(\log_a x)+(\log_A x)}
 =x\sqrt{x},
 $$
 where $x>0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested simplified form and corresponding choice.
+
 :::
+
 :::

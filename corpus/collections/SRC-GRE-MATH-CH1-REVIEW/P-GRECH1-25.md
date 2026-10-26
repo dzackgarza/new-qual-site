@@ -26,12 +26,17 @@ Determine the exact value of the sum $\arctan 1 + \arctan 2 + \arctan 3$.
 (E) $\frac{\pi}{2}-1$
 :::
 
-::: {.solution}
 Set $\alpha=\arctan 2$ and $\beta=\arctan 3$.
 
-<1>1. $\alpha+\beta=\frac{3\pi}{4}$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$\alpha+\beta=\frac{3\pi}{4}$.
+
+
+::: pf-proof
+
 Since $2,3>0$, one has
 $$
 0<\alpha<\frac\pi2,
@@ -46,26 +51,37 @@ $$
 =-1.
 $$
 The unique angle in $(0,\pi)$ with tangent $-1$ is $3\pi/4$.
+
 :::
 
-<1>2. The requested sum is
+:::
+
+::: pf-step
+
+The requested sum is
 $$
 \boxed{\pi},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 The principal value satisfies $\arctan1=\pi/4$. Combining this with step <1>1 gives
 $$
 \arctan1+\arctan2+\arctan3
 =\frac\pi4+\frac{3\pi}{4}
 =\pi.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested exact value and corresponding choice.
+
 :::
+
 :::

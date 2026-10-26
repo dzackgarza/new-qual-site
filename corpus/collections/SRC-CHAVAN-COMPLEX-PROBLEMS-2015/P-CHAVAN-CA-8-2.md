@@ -16,14 +16,17 @@ audit:
 Show that there is no nonconstant entire function whose range is contained in the complement of a half-line.
 :::
 
-::: {.solution}
 Write the half-line as
 $$
 L=\{a+te^{i\alpha}:t\geq0\}
 $$
 for some $a\in\CC$ and $\alpha\in\RR$.
 
-<1>1. Suppose, for contradiction, that a nonconstant entire function $f$
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that a nonconstant entire function $f$
 satisfies $f(\CC)\subseteq\CC\setminus L$. Then
 $$
 g(z)=e^{-i\alpha}(f(z)-a)
@@ -33,12 +36,19 @@ $$
 g(\CC)\subseteq\CC\setminus[0,\infty).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The affine map $w\mapsto e^{-i\alpha}(w-a)$ sends $L$ onto
 $[0,\infty)$ and preserves holomorphy and nonconstancy.
+
 :::
 
-<1>2. There is an entire function $h$ such that
+:::
+
+::: pf-step
+
+There is an entire function $h$ such that
 $$
 h^2=g
 \qquad\text{and}\qquad
@@ -46,7 +56,9 @@ h^2=g
 \quad(z\in\CC).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the slit plane $\CC\setminus[0,\infty)$, use the holomorphic logarithm
 $$
 \Log(re^{i\theta})=\log r+i\theta,
@@ -63,15 +75,22 @@ $$
 h(z)=\sqrt r\,e^{i\theta/2},
 $$
 whose argument lies in $(0,\pi)$; hence $\operatorname{Im}h(z)>0$.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 $$
 k(z)=e^{ih(z)}
 $$
 is a bounded entire function.
 
-::: {.proof}
+
+::: pf-proof
+
 It is entire because $h$ is entire. Moreover,
 $$
 \abs{k(z)}
@@ -79,29 +98,47 @@ $$
 <1
 $$
 by step <1>2.
+
 :::
 
-<1>4. The function $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant.
+
+
+::: pf-proof
+
 Liouville's theorem applied to step <1>3 makes $k$ constant. Since
 $$
 k'(z)=ih'(z)e^{ih(z)}
 $$
 and $e^{ih(z)}$ never vanishes, $h'\equiv0$. Thus $h$ is constant, so
 $g=h^2$ is constant, and step <1>1 then implies that $f$ is constant.
+
 :::
 
-<1>5. No nonconstant entire function can have range contained in the complement
+:::
+
+::: pf-step
+
+No nonconstant entire function can have range contained in the complement
 of a half-line.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 contradicts the nonconstancy assumed in step <1>1.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

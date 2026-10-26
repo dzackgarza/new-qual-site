@@ -21,10 +21,15 @@ be the principal argument.
 Show that $\arg$ is not continuous, and determine its set of discontinuities.
 :::
 
-::: {.solution}
-<1>1. The function $\arg$ is discontinuous at every positive real number.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $\arg$ is discontinuous at every positive real number.
+
+
+::: pf-proof
+
 Fix $x>0$. For $m\ge1$, set
 $$
 z_m=xe^{-i/m}.
@@ -39,14 +44,21 @@ $$
 \arg(z_m)\not\longrightarrow\arg(x),
 $$
 so $\arg$ is not continuous at $x$.
+
 :::
 
-<1>2. The function $\arg$ is continuous at every point
+:::
+
+::: pf-step
+
+The function $\arg$ is continuous at every point
 $$
 z_0\in\mathbb C^*\setminus(0,\infty).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 z_0=r_0e^{i\theta_0},
@@ -93,24 +105,35 @@ $$
 for $z\in S$. The map $z\mapsto z/|z|$ is continuous on
 $\mathbb C^*$, so this composition is continuous on $S$, in
 particular at $z_0$.
+
 :::
 
-<1>3. The set of discontinuities of $\arg$ is
+:::
+
+::: pf-step
+
+The set of discontinuities of $\arg$ is
 $$
 \boxed{(0,\infty)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that every positive real number is a discontinuity.
 Step <1>2 shows that every other point of the domain $\mathbb C^*$ is
 a continuity point. Since $0\notin\mathbb C^*$, these exhaust the
 domain.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the complete discontinuity set and, in particular,
 shows that $\arg$ is not continuous on $\mathbb C^*$.
+
 :::
+
 :::

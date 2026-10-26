@@ -33,14 +33,19 @@ where $\arg$ is the principal argument.
 3. Show that $f$ has no analytic logarithm on $\Omega$.
 :::
 
-::: {.solution}
-<1>1. The function $g$ is well-defined on $\Omega$ and satisfies
+::: pf
+
+::: pf-step
+
+The function $g$ is well-defined on $\Omega$ and satisfies
 $$
 g(z)^2=f(z)
 $$
 for every $z\in\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\in\Omega$, neither $z-1$ nor $z+1$ is zero, so both principal
 arguments in the definition of $g$ are defined. Moreover,
 $$
@@ -62,14 +67,21 @@ e^{i\arg(z-1)}e^{i\arg(z+1)}\\
 $$
 Thus the displayed formula defines a single value $g(z)$ and its
 square is $f(z)$.
+
 :::
 
-<1>2. The function $g$ is continuous on
+:::
+
+::: pf-step
+
+The function $g$ is continuous on
 $$
 \Omega\setminus(1,\infty).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By Problem 3.1, the principal argument is continuous away from the
 positive real axis. Hence $z\mapsto\arg(z-1)$ can be discontinuous
 only when $z\in(1,\infty)$, while
@@ -79,11 +91,18 @@ $\Omega=\mathbb C\setminus[-1,1]$, both possible discontinuity sets
 reduce to $(1,\infty)$. Thus away from that ray both argument terms
 are continuous. Since $f$ is continuous and nonzero on $\Omega$, so
 is $|f|^{1/2}$, and the defining product for $g$ is continuous there.
+
 :::
 
-<1>3. The function $g$ is continuous at every $x\in(1,\infty)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is continuous at every $x\in(1,\infty)$.
+
+
+::: pf-proof
+
 Fix $x>1$ and choose a disk about $x$ small enough that its real points
 all lie in $(1,\infty)$. As $z\to x$ through the upper half-plane,
 both $z-1$ and $z+1$ approach positive real numbers from above, so
@@ -109,18 +128,32 @@ Along the positive real axis itself the two arguments are both $0$.
 Thus for every approach to $x$ the exponential factor tends to $1$.
 Also $|f(z)|^{1/2}\to|f(x)|^{1/2}$, and the defining formula gives
 $g(x)=|f(x)|^{1/2}$. Hence $g(z)\to g(x)$.
+
 :::
 
-<1>4. The function $g$ is continuous on all of $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is continuous on all of $\Omega$.
+
+
+::: pf-proof
+
 Step <1>2 gives continuity away from $(1,\infty)$, and step <1>3 gives
 continuity at every point of that remaining ray.
+
 :::
 
-<1>5. The function $g$ is analytic on $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is analytic on $\Omega$.
+
+
+::: pf-proof
+
 Fix $z_0\in\Omega$. By step <1>1,
 $$
 g(z_0)^2=f(z_0)\ne0,
@@ -140,9 +173,14 @@ $$
 $$
 Thus $g$ is complex differentiable at every point of $\Omega$, hence
 analytic there.
+
 :::
 
-<1>6. If an analytic function $L$ on $\Omega$ satisfied
+:::
+
+::: pf-step
+
+If an analytic function $L$ on $\Omega$ satisfied
 $$
 e^{L(z)}=f(z),
 $$
@@ -152,7 +190,9 @@ L'(z)=\frac{f'(z)}{f(z)}
 =\frac1{z-1}+\frac1{z+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiating $e^L=f$ gives
 $$
 L'(z)e^{L(z)}=f'(z).
@@ -163,11 +203,18 @@ L'(z)=\frac{f'(z)}{f(z)}
 =\frac{2z}{z^2-1}
 =\frac1{z-1}+\frac1{z+1}.
 $$
+
 :::
 
-<1>7. The function $f$ has no analytic logarithm on $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ has no analytic logarithm on $\Omega$.
+
+
+::: pf-proof
+
 Suppose such an $L$ existed. Choose $R>1$ and let
 $$
 \gamma(t)=Re^{it},
@@ -191,12 +238,16 @@ $$
 $$
 because both $1$ and $-1$ lie inside the circle. This contradiction
 shows that no analytic logarithm of $f$ exists on $\Omega$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 prove part 1, step <1>5 proves part 2, and step <1>7
 proves part 3.
+
 :::
+
 :::

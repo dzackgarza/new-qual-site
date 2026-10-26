@@ -32,13 +32,18 @@ What is the equation of this curve, given that it passes through the point $(1, 
 (E) $x^2y^2 + xy^3 + x - y = 1$
 :::
 
-::: {.solution}
-<1>1. The slope equation is equivalent to the exact differential equation
+::: pf
+
+::: pf-step
+
+The slope equation is equivalent to the exact differential equation
 $$
 (2xy-1)\,dx+(x^2+3y^2+1)\,dy=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The given slope is
 $$
 \frac{dy}{dx}
@@ -55,14 +60,21 @@ $$
 M_y=2x=N_x,
 $$
 so the equation is exact.
+
 :::
 
-<1>2. A potential for this differential form is
+:::
+
+::: pf-step
+
+A potential for this differential form is
 $$
 F(x,y)=x^2y-x+y^3+y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrating $M=2xy-1$ with respect to $x$ gives
 $$
 F=x^2y-x+h(y).
@@ -76,15 +88,22 @@ $$
 N=x^2+3y^2+1.
 $$
 Thus $h'(y)=3y^2+1$, so one may take $h(y)=y^3+y$.
+
 :::
 
-<1>3. The curve through $(1,1)$ is
+:::
+
+::: pf-step
+
+The curve through $(1,1)$ is
 $$
 \boxed{x^2y+y^3-x+y=2},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Integral curves of the exact equation satisfy $F(x,y)=C$. At $(1,1)$,
 $$
 C
@@ -93,11 +112,15 @@ C
 =2.
 $$
 Substituting this value into the potential from step <1>2 gives the displayed curve.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required curve and corresponding choice.
+
 :::
+
 :::

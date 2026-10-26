@@ -25,22 +25,34 @@ What is the area of the region in the first quadrant bounded by the curve $y = x
 (E) $\frac{\pi+4}{4}$
 :::
 
-::: {.solution}
-<1>1. The required area is
+::: pf
+
+::: pf-step
+
+The required area is
 $$
 \int_0^1 x\arctan x\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0\le x\le1$, both $x$ and $\arctan x$ are nonnegative, so the graph lies above the $x$-axis. It meets the axis at $x=0$, and the vertical boundary is $x=1$, hence the first-quadrant area is the displayed integral.
+
 :::
 
-<1>2. An antiderivative of $x\arctan x$ is
+:::
+
+::: pf-step
+
+An antiderivative of $x\arctan x$ is
 $$
 \frac12(x^2+1)\arctan x-\frac{x}{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate by parts with
 $$
 u=\arctan x,
@@ -62,15 +74,22 @@ $$
 &=\frac12(x^2+1)\arctan x-\frac{x}{2}+C.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The area is
+:::
+
+::: pf-step
+
+The area is
 $$
 \boxed{\frac{\pi-2}{4}},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2,
 $$
 \begin{aligned}
@@ -80,11 +99,15 @@ $$
 &=\frac{\pi-2}{4}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested area and corresponding choice.
+
 :::
+
 :::

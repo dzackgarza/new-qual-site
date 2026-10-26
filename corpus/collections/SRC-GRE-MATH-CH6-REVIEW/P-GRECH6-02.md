@@ -26,10 +26,15 @@ Let $L$ be the least common multiple of $1001$ and $10101$. What's the sum of th
 (E) $33$
 :::
 
-::: {.solution}
-<1>1. The greatest common divisor of $1001$ and $10101$ is $91$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The greatest common divisor of $1001$ and $10101$ is $91$.
+
+
+::: pf-proof
+
 The Euclidean algorithm gives
 $$
 10101=10\cdot1001+91,
@@ -40,14 +45,21 @@ Hence the last nonzero remainder is $91$, so
 $$
 \gcd(1001,10101)=91.
 $$
+
 :::
 
-<1>2. Their least common multiple is
+:::
+
+::: pf-step
+
+Their least common multiple is
 $$
 L=111111.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For positive integers $m,n$,
 $$
 \operatorname{lcm}(m,n)\gcd(m,n)=mn.
@@ -59,21 +71,32 @@ L
 =11\cdot10101
 =111111.
 $$
+
 :::
 
-<1>3. The sum of the digits of $L$ is
+:::
+
+::: pf-step
+
+The sum of the digits of $L$ is
 $$
 \boxed{6},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $L$ has six digits, each equal to $1$. Their sum is therefore $1+1+1+1+1+1=6$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested digit sum.
+
 :::
+
 :::

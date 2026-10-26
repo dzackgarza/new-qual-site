@@ -26,14 +26,24 @@ Which one of the following is in the domain of the function $f(x) = \log(\sin x)
 (E) None of these
 :::
 
-::: {.solution}
-<1>1. A real number $t$ lies in the domain of $f$ exactly when $\sin t>0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A real number $t$ lies in the domain of $f$ exactly when $\sin t>0$.
+
+
+::: pf-proof
+
 The real logarithm $\log u$ is defined exactly for $u>0$. Therefore $\log(\sin t)$ is defined exactly when $\sin t>0$.
+
 :::
 
-<1>2. The four candidates lie in the intervals
+:::
+
+::: pf-step
+
+The four candidates lie in the intervals
 $$
 3\pi<11<4\pi,\qquad
 35\pi<111<36\pi,
@@ -43,7 +53,9 @@ $$
 3536\pi<11111<3537\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using the standard decimal bounds $3.1415<\pi<3.1416$ gives
 $$
 3\pi<9.4248<11<12.566<4\pi,
@@ -58,27 +70,45 @@ and
 $$
 3536\pi<11108.6976<11111<11111.4855<3537\pi.
 $$
+
 :::
 
-<1>3. Among the listed numbers, only $11111$ has positive sine.
+:::
 
-::: {.proof}
+::: pf-step
+
+Among the listed numbers, only $11111$ has positive sine.
+
+
+::: pf-proof
+
 Sine is negative on $(m\pi,(m+1)\pi)$ when $m$ is odd and positive there when $m$ is even. In step <1>2, the first three left endpoints have odd indices $3$, $35$, and $353$, while the last has even index $3536$. Hence the first three sines are negative and $\sin(11111)>0$.
+
 :::
 
-<1>4. The answer is
+:::
+
+::: pf-step
+
+The answer is
 $$
 \boxed{11111},
 $$
 namely choice (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Combine step <1>1 with step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the unique listed input in the domain of $f$.
+
 :::
+
 :::

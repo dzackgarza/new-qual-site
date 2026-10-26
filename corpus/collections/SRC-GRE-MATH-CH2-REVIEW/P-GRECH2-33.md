@@ -25,15 +25,20 @@ Let $a$ and $b$ be positive numbers. The region in the second quadrant bounded b
 (E) $b^2 = 2a^3$
 :::
 
-::: {.solution}
-<1>1. The two boundary curves meet at
+::: pf
+
+::: pf-step
+
+The two boundary curves meet at
 $$
 x=-\frac{b}{a}
 \quad\text{and}\quad
 x=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Their intersections satisfy
 $$
 ax^2=-bx,
@@ -43,14 +48,21 @@ $$
 x(ax+b)=0.
 $$
 Since $a,b>0$, the two solutions are $x=0$ and $x=-b/a$.
+
 :::
 
-<1>2. The volume of revolution is
+:::
+
+::: pf-step
+
+The volume of revolution is
 $$
 V=\frac{2\pi}{15}\frac{b^5}{a^3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $-b/a\le x\le0$, the line $y=-bx$ is above the parabola $y=ax^2$. Rotating about the $x$-axis gives washers with outer radius $-bx$ and inner radius $ax^2$. Hence
 $$
 \begin{aligned}
@@ -60,15 +72,22 @@ V
 &=\frac{2\pi b^5}{15a^3}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The relation
+:::
+
+::: pf-step
+
+The relation
 $$
 \boxed{b^5=2a^3}
 $$
 makes $V$ independent of $a$ and $b$, so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Under the displayed relation,
 $$
 \frac{b^5}{a^3}=2,
@@ -78,11 +97,15 @@ $$
 V=\frac{4\pi}{15}.
 $$
 Thus choice (C) has the required property.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 verifies the stated parameter relation produces a constant volume.
+
 :::
+
 :::

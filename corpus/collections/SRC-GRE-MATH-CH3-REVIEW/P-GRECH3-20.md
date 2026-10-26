@@ -30,15 +30,20 @@ Let $f(x,y)$ be a function that is differentiable everywhere. At a certain point
 The source prints choice (C) as the digits $4$ and $3$ followed by $\sqrt{2}$, with no fraction bar.
 :::
 
-::: {.solution}
-<1>1. The given directional derivatives imply
+::: pf
+
+::: pf-step
+
+The given directional derivatives imply
 $$
 f_x(P)-f_y(P)=2
 \qquad\text{and}\qquad
 f_x(P)+f_y(P)=6.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The unit vectors in the stated directions are
 $$
 \mathbf{u}=\frac{(1,-1)}{\sqrt2},
@@ -64,24 +69,38 @@ gives
 $$
 f_x(P)+f_y(P)=6.
 $$
+
 :::
 
-<1>2. The gradient at $P$ is
+:::
+
+::: pf-step
+
+The gradient at $P$ is
 $$
 \nabla f(P)=(4,2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Adding the two equations in step <1>1 gives $2f_x(P)=8$, hence $f_x(P)=4$. Subtracting them gives $2f_y(P)=4$, hence $f_y(P)=2$.
+
 :::
 
-<1>3. The maximum directional derivative of $f$ at $P$ is
+:::
+
+::: pf-step
+
+The maximum directional derivative of $f$ at $P$ is
 $$
 \boxed{2\sqrt5},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 For any unit vector $\mathbf{w}$,
 $$
 D_{\mathbf{w}}f(P)=\nabla f(P)\cdot\mathbf{w}
@@ -94,11 +113,15 @@ $$
 =\sqrt{20}
 =2\sqrt5.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested maximum directional derivative and corresponding choice.
+
 :::
+
 :::

@@ -25,18 +25,23 @@ Let $y = \frac{1}{\sqrt{x^3 + 1}}$. If $x$ increases from 2 to 2.09, which of th
 (E) $-0.09$
 :::
 
-::: {.solution}
 Let
 $$
 f(x)=(x^3+1)^{-1/2}.
 $$
 
-<1>1. The derivative at $x=2$ is
+::: pf
+
+::: pf-step
+
+The derivative at $x=2$ is
 $$
 f'(2)=-\frac29.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The chain rule gives
 $$
 f'(x)
@@ -50,15 +55,22 @@ f'(2)
 =-6\cdot\frac1{27}
 =-\frac29.
 $$
+
 :::
 
-<1>2. The linear approximation to the change in $y$ is
+:::
+
+::: pf-step
+
+The linear approximation to the change in $y$ is
 $$
 \boxed{-0.02},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Here
 $$
 \Delta x=2.09-2=0.09=\frac9{100}.
@@ -70,11 +82,15 @@ $$
 =-\frac1{50}
 =-0.02.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested approximation and corresponding choice.
+
 :::
+
 :::

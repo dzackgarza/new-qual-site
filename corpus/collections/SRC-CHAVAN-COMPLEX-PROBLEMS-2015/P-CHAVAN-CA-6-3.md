@@ -21,26 +21,38 @@ f:\mathbb D\to\mathbb D
 such that $f(a)=b$.
 :::
 
-::: {.solution}
 For $c\in\DD$, define
 $$
 \psi_c(z)=\frac{c-z}{1-\overline c z}.
 $$
 
-<1>1. For every $c\in\DD$, the map $\psi_c$ is holomorphic on $\DD$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For every $c\in\DD$, the map $\psi_c$ is holomorphic on $\DD$.
+
+
+::: pf-proof
+
 If $z\in\DD$, then
 $$
 \abs{\overline c z}=\abs{c}\,\abs{z}<1,
 $$
 so $1-\overline c z\neq0$. Hence the displayed rational function is holomorphic
 throughout $\DD$.
+
 :::
 
-<1>2. For every $c,z\in\DD$, one has $\psi_c(z)\in\DD$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $c,z\in\DD$, one has $\psi_c(z)\in\DD$.
+
+
+::: pf-proof
+
 A direct calculation gives
 $$
 1-\abs{\psi_c(z)}^2
@@ -53,12 +65,19 @@ $$
 $$
 Since $c,z\in\DD$, the right-hand side is positive. Thus
 $\abs{\psi_c(z)}<1$.
+
 :::
 
-<1>3. Each $\psi_c$ is an involution of $\DD$, hence a biholomorphism
+:::
+
+::: pf-step
+
+Each $\psi_c$ is an involution of $\DD$, hence a biholomorphism
 $\DD\to\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 Put $w=\psi_c(z)$. Then
 $$
 c-w
@@ -75,15 +94,22 @@ $$
 $$
 By steps <1>1 and <1>2, $\psi_c$ is a holomorphic self-map of $\DD$, and the
 identity above shows that its inverse is the same holomorphic map.
+
 :::
 
-<1>4. For every $a,b\in\DD$, the biholomorphism
+:::
+
+::: pf-step
+
+For every $a,b\in\DD$, the biholomorphism
 $$
 f=\psi_b\circ\psi_a
 $$
 satisfies $f(a)=b$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that both factors are automorphisms of $\DD$, so their
 composition is an automorphism. Moreover,
 $$
@@ -92,12 +118,16 @@ $$
 \psi_b(0)=b,
 $$
 and hence $f(a)=b$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives an automorphism carrying an arbitrary $a\in\DD$ to an arbitrary
 $b\in\DD$, which is exactly transitivity.
+
 :::
+
 :::

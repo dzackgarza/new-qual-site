@@ -25,13 +25,18 @@ Which of the following is the solution set of the inequality $x + \frac{6}{x} > 
 (E) $(-\infty, 0)$
 :::
 
-::: {.solution}
-<1>1. For $x\ne0$, the inequality is equivalent to
+::: pf
+
+::: pf-step
+
+For $x\ne0$, the inequality is equivalent to
 $$
 \frac{(x-2)(x-3)}{x}>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 x+\frac6x-5
@@ -39,14 +44,21 @@ x+\frac6x-5
 =\frac{(x-2)(x-3)}{x}.
 $$
 The original expression is undefined at $x=0$, so $x=0$ is excluded from the domain.
+
 :::
 
-<1>2. The expression in step <1>1 is positive exactly on
+:::
+
+::: pf-step
+
+The expression in step <1>1 is positive exactly on
 $$
 (0,2)\cup(3,\infty).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The only sign-change points are $0$, $2$, and $3$. On the four resulting intervals:
 $$
 \begin{array}{c|c}
@@ -58,21 +70,32 @@ $$
 \end{array}
 $$
 The inequality is strict, so the zeros $2$ and $3$ are excluded, as is the undefined point $0$.
+
 :::
 
-<1>3. Therefore the solution set is
+:::
+
+::: pf-step
+
+Therefore the solution set is
 $$
 \boxed{(0,2)\cup(3,\infty)},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the positive-sign set found in step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested solution set.
+
 :::
+
 :::

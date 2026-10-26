@@ -25,13 +25,18 @@ If $\ZZ_n$ denotes the ring of integers modulo $n$, for which of the pairs of ri
 (E) $(\ZZ_3, \ZZ_4)$
 :::
 
-::: {.solution}
 Write $[k]_r$ for the residue class of an integer $k$ in $\ZZ_r$.
 
-<1>1. If there is a ring homomorphism
+::: pf
+
+::: pf-step
+
+If there is a ring homomorphism
 $\phi\colon\ZZ_m\to\ZZ_n$ with $\phi([1]_m)=[1]_n$, then $n\mid m$.
 
-::: {.proof}
+
+::: pf-proof
+
 In $\ZZ_m$ one has $m[1]_m=[0]_m$. Therefore
 \[
 [0]_n
@@ -42,11 +47,18 @@ In $\ZZ_m$ one has $m[1]_m=[0]_m$. Therefore
 =[m]_n.
 \]
 Thus $m\equiv0\pmod n$, which is exactly $n\mid m$.
+
 :::
 
-<1>2. If $n\mid m$, then such a homomorphism exists.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $n\mid m$, then such a homomorphism exists.
+
+
+::: pf-proof
+
 Define
 \[
 \phi([k]_m)=[k]_n.
@@ -56,26 +68,44 @@ that $n\mid(k-\ell)$, so $[k]_n=[\ell]_n$. Hence $\phi$ is
 well-defined. Reduction modulo $n$ preserves addition and multiplication,
 and $\phi([1]_m)=[1]_n$, so $\phi$ is a ring homomorphism with the
 required property.
+
 :::
 
-<1>3. Among the listed pairs, the condition in steps <1>1 and <1>2 holds only for
+:::
+
+::: pf-step
+
+Among the listed pairs, the condition in steps <1>1 and <1>2 holds only for
 $(m,n)=(6,3)$.
 
-::: {.proof}
+
+::: pf-proof
+
 The required divisibility is $n\mid m$. Of the five choices, only
 $3\mid6$ holds: $6\nmid4$, $4\nmid6$, $6\nmid3$, and $4\nmid3$.
+
 :::
 
-<1>4. The correct answer is $\boxed{\text{(D) }(\ZZ_6,\ZZ_3)}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The correct answer is $\boxed{\text{(D) }(\ZZ_6,\ZZ_3)}$.
+
+
+::: pf-proof
+
 By step <1>3, choice (D) is the unique listed pair satisfying the
 necessary and sufficient condition established in steps <1>1 and <1>2.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required pair.
+
 :::
+
 :::

@@ -25,10 +25,15 @@ Which of the following sets in $\mathbb{R}^3$ is compact?
 (E) $\{x, y, z \mid 2 < x^2 + y^2 + z^2 < 8\}$
 :::
 
-::: {.solution}
-<1>1. Choice (C) is closed and bounded in $\RR^3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Choice (C) is closed and bounded in $\RR^3$.
+
+
+::: pf-proof
+
 Choice (C) is the box
 $$
 [0,3]^3.
@@ -37,17 +42,31 @@ It is closed as a finite product of closed intervals, and it is bounded because 
 $$
 \|(x,y,z)\|^2=x^2+y^2+z^2\le 27.
 $$
+
 :::
 
-<1>2. Choices (B) and (D) are not bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+Choices (B) and (D) are not bounded.
+
+
+::: pf-proof
+
 For every positive integer $n$, the point $(-n,0,0)$ lies in (B), so (B) is unbounded. Likewise $(n,0,0)$ lies in (D) for every positive integer $n$, so (D) is unbounded.
+
 :::
 
-<1>3. Choices (A) and (E) are not closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Choices (A) and (E) are not closed.
+
+
+::: pf-proof
+
 For (A), the points
 $$
 \left(5-\frac1n,0,0\right)
@@ -59,21 +78,32 @@ $$
 \left(\sqrt{2+\frac1n},0,0\right)
 $$
 belong to the set for all sufficiently large $n$ and converge to $(\sqrt2,0,0)$, which is excluded because its squared norm is exactly $2$.
+
 :::
 
-<1>4. Therefore the compact set is
+:::
+
+::: pf-step
+
+Therefore the compact set is
 $$
 \boxed{[0,3]^3},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 By the Heine--Borel theorem, a subset of $\RR^3$ is compact exactly when it is closed and bounded. Step <1>1 proves these properties for (C), while steps <1>2 and <1>3 rule out the other choices.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

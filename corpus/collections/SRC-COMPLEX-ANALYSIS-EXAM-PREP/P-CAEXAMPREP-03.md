@@ -20,23 +20,33 @@ Evaluate
 \]
 :::
 
-::: {.solution}
 Set
 \[
 f(z)=\frac{z^2}{1+z^4}.
 \]
 
-<1>1. The improper integral in the statement converges absolutely.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The improper integral in the statement converges absolutely.
+
+
+::: pf-proof
+
 The integrand is continuous on every bounded interval. For \(|x|\ge1\),
 \[
 0\le\frac{x^2}{1+x^4}\le\frac1{x^2},
 \]
 and \(\int_1^\infty x^{-2}\,dx<\infty\). Thus both tails converge absolutely.
+
 :::
 
-<1>2. The poles of \(f\) in the upper half-plane are the simple poles
+:::
+
+::: pf-step
+
+The poles of \(f\) in the upper half-plane are the simple poles
 \[
 z_1=e^{i\pi/4},
 \qquad
@@ -48,7 +58,9 @@ and
 =-\frac{i\sqrt2}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The zeros of \(1+z^4\) are \(e^{(2j+1)i\pi/4}\), \(j=0,1,2,3\), and each is simple because the derivative \(4z^3\) is nonzero there. The two with positive imaginary part are \(z_1,z_2\). At either such root \(z_k\),
 \[
 \operatorname{Res}_{z=z_k}f
@@ -63,15 +75,22 @@ Hence
 &=-\frac{i\sqrt2}{4}.
 \end{aligned}
 \]
+
 :::
 
-<1>3. If \(C_R\) is the upper semicircle \(z=Re^{i\theta}\), \(0\le\theta\le\pi\), then
+:::
+
+::: pf-step
+
+If \(C_R\) is the upper semicircle \(z=Re^{i\theta}\), \(0\le\theta\le\pi\), then
 \[
 \int_{C_R}f(z)\,dz\longrightarrow0
 \qquad\text{as }R\to\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(R>1\) and \(|z|=R\),
 \[
 |1+z^4|\ge R^4-1,
@@ -84,14 +103,21 @@ The length of \(C_R\) is \(\pi R\), so the ML estimate gives
 \le\frac{\pi R^3}{R^4-1}
 \longrightarrow0.
 \]
+
 :::
 
-<1>4. The requested integral is
+:::
+
+::: pf-step
+
+The requested integral is
 \[
 \boxed{\frac{\pi}{\sqrt2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(R>1\), integrate \(f\) counterclockwise around the boundary of the upper half-disc of radius \(R\). By the residue theorem and step <1>2,
 \[
 \int_{-R}^{R}\frac{x^2}{1+x^4}\,dx
@@ -100,11 +126,15 @@ For \(R>1\), integrate \(f\) counterclockwise around the boundary of the upper h
 =\frac{\pi}{\sqrt2}.
 \]
 Let \(R\to\infty\). Step <1>1 identifies the limit of the real-axis integral with the improper integral in the problem, and step <1>3 makes the semicircle contribution vanish. The displayed value follows.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required evaluation.
+
 :::
+
 :::

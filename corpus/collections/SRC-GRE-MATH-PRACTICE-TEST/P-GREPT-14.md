@@ -27,8 +27,11 @@ $$\frac{d^2y}{dx^2} = \left(\frac{dy}{dx}\right)^2$$
 (E) $y = c_2 - \log(c_1 + x)$
 :::
 
-::: {.solution}
-<1>1. With
+::: pf
+
+::: pf-step
+
+With
 $$
 u=y',
 $$
@@ -37,30 +40,46 @@ $$
 u'=u^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition $u'=y''$, while $u^2=(y')^2$, so the two equations are
 equivalent.
+
 :::
 
-<1>2. Every constant function
+:::
+
+::: pf-step
+
+Every constant function
 $$
 y\equiv C
 $$
 is a solution.
 
-::: {.proof}
+
+::: pf-proof
+
 For a constant function, $y'=0$ and $y''=0$, so both sides of
 $y''=(y')^2$ are zero. In particular, every $C\ne0$ gives a nonzero solution
 of the equation as printed.
+
 :::
 
-<1>3. Every nonconstant real solution on a connected interval has the form
+:::
+
+::: pf-step
+
+Every nonconstant real solution on a connected interval has the form
 $$
 y=C_2-\log|x+C_1|,
 $$
 where the interval does not contain $-C_1$.
 
-::: {.proof}
+
+::: pf-proof
+
 For a nonconstant solution, $u=y'$ cannot vanish at a point: the initial-value
 problem $u'=u^2$, $u(x_0)=0$ has the unique solution $u\equiv0$, which would
 make $y$ constant. Hence $u$ is nowhere zero. Separating variables in step
@@ -78,26 +97,37 @@ Integrating once more gives
 $$
 y=C_2-\log|x+C_1|.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\text{none of the listed choices gives all nonzero solutions}}
 $$
 for the problem as stated.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that $y\equiv1$, for example, is a nonzero solution. Every
 listed choice (A)--(E) is a nonconstant family and therefore omits this
 solution. Step <1>3 gives the remaining nonconstant solutions.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>4 classify the literal solutions and prove that no listed
 answer is complete.
+
 :::
+
 :::
 
 ::: {.remark}

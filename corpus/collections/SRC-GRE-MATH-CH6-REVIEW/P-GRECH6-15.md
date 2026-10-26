@@ -26,16 +26,28 @@ Let $G$ be a group of order $9$, and let $e$ denote the identity of $G$. Which o
 (E) $G$ is Abelian.
 :::
 
-::: {.solution}
-<1>1. No group of order $9$ can contain a nonidentity element $x$ satisfying $x^{-1}=x$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+No group of order $9$ can contain a nonidentity element $x$ satisfying $x^{-1}=x$.
+
+
+::: pf-proof
+
 If $x^{-1}=x$, then multiplying by $x$ gives $x^2=e$. Since $x\ne e$, the order of $x$ would therefore be $2$. The cyclic subgroup $\langle x\rangle$ would have order $2$, contradicting Lagrange's theorem because $2\nmid9$.
+
 :::
 
-<1>2. Each of statements (B)--(E) can hold for a group of order $9$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each of statements (B)--(E) can hold for a group of order $9$.
+
+
+::: pf-proof
+
 Take the additive group $G=\ZZ_9$. It is cyclic and Abelian, so (D) and (E) hold. The element $\overline3$ generates the subgroup
 $$
 \{\overline0,\overline3,\overline6\},
@@ -45,21 +57,32 @@ $$
 2\overline3=\overline6=5\overline3,
 $$
 so (B) also holds.
+
 :::
 
-<1>3. Therefore the statement that cannot be true is
+:::
+
+::: pf-step
+
+Therefore the statement that cannot be true is
 $$
 \boxed{\text{(A)}},
 $$
 namely the existence of a nonidentity element satisfying $x^{-1}=x$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves that (A) is impossible for every group of order $9$, while step <1>2 exhibits a group of order $9$ for which each of (B)--(E) is true.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies the required statement.
+
 :::
+
 :::

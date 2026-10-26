@@ -27,19 +27,24 @@ Find the largest number $a$ that makes the following statement true:
 (E) $9$
 :::
 
-::: {.solution}
 For fixed $x$, write
 \[
 u_n=\frac{(n!)^3}{(3n)!}x^{2n}.
 \]
 
-<1>1. If $x\neq 0$, the ratio of successive absolute values satisfies
+::: pf
+
+::: pf-step
+
+If $x\neq 0$, the ratio of successive absolute values satisfies
 \[
 \lim_{n\to\infty}\left|\frac{u_{n+1}}{u_n}\right|
 =\frac{x^2}{27}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\neq 0$,
 \[
 \left|\frac{u_{n+1}}{u_n}\right|
@@ -47,36 +52,61 @@ For $x\neq 0$,
 \]
 Dividing numerator and denominator by $n^3$ and taking the limit gives
 $x^2/(3\cdot3\cdot3)=x^2/27$.
+
 :::
 
-<1>2. The series converges for every $x$ with $|x|<3\sqrt3$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The series converges for every $x$ with $|x|<3\sqrt3$.
+
+
+::: pf-proof
+
 If $x=0$, the series is $1$ and therefore converges. If
 $0<|x|<3\sqrt3$, then $x^2/27<1$, so step <1>1 and the ratio test imply
 absolute convergence.
+
 :::
 
-<1>3. For every $x$ with $|x|>3\sqrt3$, the series diverges.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $x$ with $|x|>3\sqrt3$, the series diverges.
+
+
+::: pf-proof
+
 If $|x|>3\sqrt3$, then the limit in step <1>1 is greater than $1$.
 Hence $|u_{n+1}/u_n|>1$ for all sufficiently large $n$, so in particular
 $u_n$ does not tend to $0$. Therefore the series diverges.
+
 :::
 
-<1>4. The largest admissible number is $\boxed{3\sqrt3}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The largest admissible number is $\boxed{3\sqrt3}$.
+
+
+::: pf-proof
+
 Step <1>2 shows that $a=3\sqrt3$ has the required property. If
 $a>3\sqrt3$, choose $x$ with $3\sqrt3<|x|<a$. Step <1>3 then shows that
 the series diverges at this $x$, so such an $a$ cannot have the required
 property. Thus the correct choice is (B).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 establishes the largest possible value of $a$.
+
 :::
+
 :::

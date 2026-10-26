@@ -36,24 +36,36 @@ a_0^2+\sum_{n=1}^\infty(a_n^2+b_n^2).
 \]
 :::
 
-::: {.solution}
-<1>1. Every sine coefficient is zero.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every sine coefficient is zero.
+
+
+::: pf-proof
+
 The function $f$ is even, while $\sin(nx)$ is odd. Hence
 $f(x)\sin(nx)$ is odd and
 \[
 b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin(nx)\,dx=0
 \]
 for every $n\geq1$.
+
 :::
 
-<1>2. For every $n\geq1$,
+:::
+
+::: pf-step
+
+For every $n\geq1$,
 \[
 a_n=-\frac{4\sin n}{\pi n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By evenness,
 \[
 \begin{aligned}
@@ -76,14 +88,21 @@ a_n
 &=-\frac{4\sin n}{\pi n}.
 \end{aligned}
 \]
+
 :::
 
-<1>3. The constant coefficient is
+:::
+
+::: pf-step
+
+The constant coefficient is
 \[
 a_0=\frac{\sqrt2(\pi-2)}{\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 With the stated convention,
 \[
 a_0
@@ -100,9 +119,14 @@ a_0
 =\frac{\sqrt2(\pi-2)}{\pi}.
 \end{aligned}
 \]
+
 :::
 
-<1>4. The Fourier series is
+:::
+
+::: pf-step
+
+The Fourier series is
 \[
 \boxed{
 f(x)\sim
@@ -111,7 +135,9 @@ f(x)\sim
 \frac{\sin n}{n}\cos(nx).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>1--<1>3 into
 \[
 \frac{a_0}{\sqrt2}
@@ -121,14 +147,21 @@ The constant term is
 $a_0/\sqrt2=(\pi-2)/\pi$, giving the displayed series.
 At continuity points it converges to $f(x)$; at the jump points
 $x=\pm1$ it converges to the midpoint value $0$.
+
 :::
 
-<1>5. The sum of the squares of all Fourier coefficients is
+:::
+
+::: pf-step
+
+The sum of the squares of all Fourier coefficients is
 \[
 \boxed{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the inner product underlying the stated coefficient normalization,
 Parseval's identity gives
 \[
@@ -139,12 +172,16 @@ Since $|f(x)|=1$ everywhere,
 \[
 \frac1\pi\int_{-\pi}^{\pi}1\,dx=2.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the Fourier series and step <1>5 gives the requested
 Parseval sum.
+
 :::
+
 :::

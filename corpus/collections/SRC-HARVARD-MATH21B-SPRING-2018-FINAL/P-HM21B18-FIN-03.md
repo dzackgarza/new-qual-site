@@ -55,10 +55,15 @@ f(x)=\frac{a_0}{\sqrt2}+\sum_{n\ge1}a_n\cos(nx)+b_n\sin(nx),
 decide which of the assertions $a_0=0$, all $a_n=0$ for $n>0$, and all $b_n=0$ hold for every even $f$, every odd $f$, and every $f$ with no real zeros.
 :::
 
-::: {.solution}
-<1>1. In part (a), only $B$ is diagonalizable over $\mathbb R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+In part (a), only $B$ is diagonalizable over $\mathbb R$.
+
+
+::: pf-proof
+
 Let $\omega=e^{2\pi i/5}$. For
 \[
 v=(1,\omega,\omega^2,\omega^3,\omega^4)^T
@@ -73,12 +78,19 @@ The matrix $C$ is strictly upper triangular, hence nilpotent, and it is
 nonzero. Therefore its only eigenvalue is $0$. If it were diagonalizable,
 it would be similar to the zero diagonal matrix and hence would itself be
 zero, a contradiction.
+
 :::
 
-<1>2. In part (b), Loaf has a nonreal eigenvalue, while Boat has only real
+:::
+
+::: pf-step
+
+In part (b), Loaf has a nonreal eigenvalue, while Boat has only real
 eigenvalues.
 
-::: {.proof}
+
+::: pf-proof
+
 The first and sixth coordinates of the Loaf matrix are zero direct
 summands. On the remaining four coordinates its matrix is
 \[
@@ -107,11 +119,18 @@ nonreal conjugate pair. Thus Loaf has nonreal eigenvalues.
 
 The Boat matrix is real symmetric, so all of its eigenvalues are real by
 the spectral theorem.
+
 :::
 
-<1>3. Both sets in part (c) are linear subspaces of $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Both sets in part (c) are linear subspaces of $X$.
+
+
+::: pf-proof
+
 Evaluation $f\mapsto f(1)$, differentiation followed by evaluation
 $f\mapsto f'(1)$, and the Fourier coefficient functional
 $f\mapsto b_1(f)$ are linear. Therefore
@@ -125,11 +144,18 @@ and
 =\ker\bigl(f\mapsto f'(1)\bigr)
 \]
 are kernels of linear maps, hence linear subspaces.
+
 :::
 
-<1>4. Neither map in part (c) is linear.
+:::
 
-::: {.proof}
+::: pf-step
+
+Neither map in part (c) is linear.
+
+
+::: pf-proof
+
 For $S(f)=a_1(f)f$, take $f(x)=\cos x$. Then $a_1(f)\neq0$, and
 \[
 S(2f)=a_1(2f)(2f)=4a_1(f)f=4S(f)\neq2S(f),
@@ -141,33 +167,54 @@ For $R(f)=\|f\|\sin x$, any nonzero $f$ gives
 R(-f)=\|-f\|\sin x=\|f\|\sin x=R(f)\neq-R(f).
 \]
 Thus $R$ is not linear.
+
 :::
 
-<1>5. For every even $f$, all sine coefficients $b_n$ vanish, and neither
+:::
+
+::: pf-step
+
+For every even $f$, all sine coefficients $b_n$ vanish, and neither
 of the two assertions about the cosine coefficients is forced.
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is even, then $f(x)\sin(nx)$ is odd, so its integral over
 $[-\pi,\pi]$ is zero and hence $b_n=0$ for every $n\geq1$.
 The constant function $1$ is even and has $a_0\neq0$, while $\cos x$ is
 even and has $a_1\neq0$. Therefore neither $a_0=0$ nor
 $a_n=0$ for all $n>0$ holds for every even function.
+
 :::
 
-<1>6. For every odd $f$, one has $a_0=0$ and $a_n=0$ for all $n>0$, while
+:::
+
+::: pf-step
+
+For every odd $f$, one has $a_0=0$ and $a_n=0$ for all $n>0$, while
 the sine coefficients need not all vanish.
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is odd, then both $f(x)$ and $f(x)\cos(nx)$ are odd. Their
 integrals over $[-\pi,\pi]$ vanish, giving $a_0=0$ and $a_n=0$ for every
 $n>0$. The odd function $\sin x$ has $b_1\neq0$, so the sine coefficients
 are not forced to vanish.
+
 :::
 
-<1>7. For a continuous periodic function having no real zeros, none of
+:::
+
+::: pf-step
+
+For a continuous periodic function having no real zeros, none of
 the three Fourier-vanishing assertions is forced.
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 f(x)=3+\cos x+\sin x
@@ -180,9 +227,14 @@ for every real $x$, so it has no real zeros. Its constant coefficient,
 its first cosine coefficient, and its first sine coefficient are all
 nonzero. Hence none of the three proposed vanishing conditions holds for
 every nowhere-zero function.
+
 :::
 
-<1>8. The complete answers are
+:::
+
+::: pf-step
+
+The complete answers are
 \[
 \boxed{
 \begin{gathered}
@@ -195,14 +247,20 @@ every nowhere-zero function.
 \end{gathered}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 through <1>7 establish the corresponding assertions in parts
 (a)--(d).
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 records all requested decisions.
+
 :::
+
 :::

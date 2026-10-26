@@ -38,42 +38,65 @@ What is the sequence of outputs when the input value is 17?
 (E) The sequence does not end.
 :::
 
-::: {.solution}
-<1>1. Starting from $17$, the first four outputs are
+::: pf
+
+::: pf-step
+
+Starting from $17$, the first four outputs are
 $$
 52,\ 26,\ 13,\ 40.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The input $17$ is odd, so the algorithm first replaces it by $3(17)+1=52$ and then outputs $52$. Since $52$ and $26$ are even, the next two replacements are $52/2=26$ and $26/2=13$. Since $13$ is odd, the next replacement is $3(13)+1=40$.
+
 :::
 
-<1>2. Continuing from $40$, the remaining outputs are
+:::
+
+::: pf-step
+
+Continuing from $40$, the remaining outputs are
 $$
 20,\ 10,\ 5,\ 16,\ 8,\ 4,\ 2,\ 1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Successive applications of the two branches give
 $$
 40\mapsto20\mapsto10\mapsto5\mapsto16\mapsto8\mapsto4\mapsto2\mapsto1.
 $$
 Indeed, every even term is halved, while the odd term $5$ is replaced by $3(5)+1=16$. Once $1$ is output, the condition $a>1$ is false, so the loop stops.
+
 :::
 
-<1>3. Hence the output sequence is
+:::
+
+::: pf-step
+
+Hence the output sequence is
 $$
 \boxed{52,\ 26,\ 13,\ 40,\ 20,\ 10,\ 5,\ 16,\ 8,\ 4,\ 2,\ 1},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Concatenating the outputs from steps <1>1 and <1>2 gives the displayed sequence. The input $17$ itself is not output before the first iteration.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the complete sequence requested.
+
 :::
+
 :::

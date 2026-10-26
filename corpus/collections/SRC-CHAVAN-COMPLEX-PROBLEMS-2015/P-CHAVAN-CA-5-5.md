@@ -24,42 +24,68 @@ If $f$ is holomorphic on $D$, prove that
 Show also that the conclusion can fail when $B$ is unbounded.
 :::
 
-::: {.solution}
-<1>1. If $B=\varnothing$, then
+::: pf
+
+::: pf-step
+
+If $B=\varnothing$, then
 $$
 \partial(f(B))\subseteq f(\partial B).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In this case $f(B)=\varnothing$, so its boundary is empty.
+
 :::
 
-<1>2. If $B\neq\varnothing$ and $f$ is constant, then
+:::
+
+::: pf-step
+
+If $B\neq\varnothing$ and $f$ is constant, then
 $$
 \partial(f(B))\subseteq f(\partial B).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write $f\equiv c$. Since $B$ is a nonempty bounded open subset of the connected
 space $\CC$, its boundary is nonempty. Hence
 $$
 \partial(f(B))=\partial\{c\}=\{c\}=f(\partial B).
 $$
+
 :::
 
-<1>3. Suppose that $B\neq\varnothing$ and $f$ is nonconstant. Then $f(B)$ is
+:::
+
+::: pf-step
+
+Suppose that $B\neq\varnothing$ and $f$ is nonconstant. Then $f(B)$ is
 open.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $D$ is a domain and $f$ is a nonconstant holomorphic function on $D$, the
 open mapping theorem says that $f:D\to\CC$ is open. Since $B$ is open in $D$,
 $f(B)$ is open in $\CC$.
+
 :::
 
-<1>4. Under the hypotheses of step <1>3, every
+:::
+
+::: pf-step
+
+Under the hypotheses of step <1>3, every
 $w\in\partial(f(B))$ belongs to $f(\partial B)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $w\in\partial(f(B))$. Since $w\in\overline{f(B)}$, choose a sequence
 $z_n\in B$ such that
 $$
@@ -74,21 +100,35 @@ $$
 If $z\in B$, then $w=f(z)\in f(B)$. This is impossible because step <1>3 shows
 that $f(B)$ is open, hence disjoint from its boundary. Therefore
 $z\in\overline B\setminus B=\partial B$, and so $w=f(z)\in f(\partial B)$.
+
 :::
 
-<1>5. For bounded $B$,
+:::
+
+::: pf-step
+
+For bounded $B$,
 $$
 \partial(f(B))\subseteq f(\partial B).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The empty case is step <1>1, the constant case is step <1>2, and the remaining
 case is step <1>4.
+
 :::
 
-<1>6. The inclusion can fail for unbounded $B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The inclusion can fail for unbounded $B$.
+
+
+::: pf-proof
+
 Take
 $$
 D=\CC\setminus\{-1\},
@@ -122,12 +162,16 @@ f(it)=\frac{1}{1+it}\neq0
 \qquad(t\in\RR).
 $$
 Thus $0\notin f(\partial B)$, proving that the inclusion fails.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the bounded case, and step <1>6 gives the requested unbounded
 counterexample.
+
 :::
+
 :::

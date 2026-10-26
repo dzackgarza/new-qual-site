@@ -30,13 +30,18 @@ Determine the set of positive values of $x$ that satisfy the following inequalit
 (E) $(1, \sqrt{2}) \cup (2, 2\sqrt{2})$
 :::
 
-::: {.solution}
-<1>1. For $x\notin\{0,1,2\}$, the inequality is equivalent to
+::: pf
+
+::: pf-step
+
+For $x\notin\{0,1,2\}$, the inequality is equivalent to
 $$
 \frac{2-x^2}{x(x-1)(x-2)}>0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Move the right-hand term to the left and combine fractions:
 $$
 \frac1x-\frac1{x-1}-\frac1{x-2}
@@ -45,15 +50,22 @@ $$
 =
 \frac{2-x^2}{x(x-1)(x-2)}.
 $$
+
 :::
 
-<1>2. On the positive axis, the expression in step <1>1 is positive exactly
+:::
+
+::: pf-step
+
+On the positive axis, the expression in step <1>1 is positive exactly
 on
 $$
 (0,1)\cup(\sqrt2,2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The positive critical points are $1$, $\sqrt2$, and $2$. On the four resulting
 intervals the signs of the numerator and denominator are:
 $$
@@ -67,21 +79,32 @@ $$
 $$
 The points $1$ and $2$ are outside the domain, and $\sqrt2$ makes the
 numerator zero; the inequality is strict, so none is included.
+
 :::
 
-<1>3. The solution set is
+:::
+
+::: pf-step
+
+The solution set is
 $$
 \boxed{(0,1)\cup(\sqrt2,2)},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the positive set obtained in step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested set and choice.
+
 :::
+
 :::

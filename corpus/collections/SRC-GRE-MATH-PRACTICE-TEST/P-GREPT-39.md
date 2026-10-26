@@ -25,10 +25,15 @@ Let $g(x) = x^3 + x^2 + x + 1$ be defined for all real $x$. If $f(x) = \frac{1}{
 (E) The domain of $f$ is the set of all real $x$ such that $x \neq 1$, and $f^{-1}(-2) = \frac{5}{8}$.
 :::
 
-::: {.solution}
-<1>1. The function $g$ is a bijection from $\RR$ to $\RR$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is a bijection from $\RR$ to $\RR$.
+
+
+::: pf-proof
+
 Its derivative is
 $$
 g'(x)=3x^2+2x+1
@@ -38,14 +43,21 @@ for every real $x$, so $g$ is strictly increasing and hence injective.
 Moreover, $g(x)\to\pm\infty$ as $x\to\pm\infty$, so continuity and the
 intermediate value theorem show that $g$ is surjective. Thus $g^{-1}$ is
 defined on all of $\RR$.
+
 :::
 
-<1>2. The domain of $f$ is
+:::
+
+::: pf-step
+
+The domain of $f$ is
 $$
 \RR\setminus\{1\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient
 $$
 f(x)=\frac1{g^{-1}(x)}
@@ -60,14 +72,21 @@ Moreover, $g^{-1}$ maps $\RR\setminus\{1\}$ bijectively onto
 $\RR\setminus\{0\}$, and $t\mapsto1/t$ is a bijection of
 $\RR\setminus\{0\}$ with itself. Hence $f$ is bijective from its domain onto
 $\RR\setminus\{0\}$, so $f^{-1}(-2)$ is well-defined.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 f^{-1}(-2)=\frac58.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $a=f^{-1}(-2)$. Then $f(a)=-2$, so
 $$
 \frac1{g^{-1}(a)}=-2
@@ -80,21 +99,32 @@ a=g\left(-\frac12\right)
 =-\frac18+\frac14-\frac12+1
 =\frac58.
 $$
+
 :::
 
-<1>4. Therefore the true statement is
+:::
+
+::: pf-step
+
+Therefore the true statement is
 $$
 \boxed{\text{(E)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives the stated domain in choice (E), and step <1>3 gives its
 stated value of $f^{-1}(-2)$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

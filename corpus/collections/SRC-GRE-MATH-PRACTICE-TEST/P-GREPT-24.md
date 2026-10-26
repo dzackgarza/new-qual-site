@@ -25,38 +25,57 @@ A six-sided die (whose faces are numbered $1$ through $6$, as usual) is known to
 (E) Cannot be determined from the information given
 :::
 
-::: {.solution}
-<1>1. If $p$ is the probability of each odd face, then the probability of
+::: pf
+
+::: pf-step
+
+If $p$ is the probability of each odd face, then the probability of
 each even face is $2p$ and
 $$
 p=\frac19.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 There are three odd faces and three even faces, so the total probability is
 $$
 3p+3(2p)=9p.
 $$
 Since the six face probabilities sum to $1$, one has $9p=1$ and hence
 $p=1/9$.
+
 :::
 
-<1>2. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 P(5)=\frac19
 \qquad\text{and}\qquad
 P(6)=\frac29.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The face $5$ is odd, so its probability is $p$. The face $6$ is even, so its
 probability is $2p$. Substitute the value of $p$ from step <1>1.
+
 :::
 
-<1>3. The information given does not determine the joint probability of
+:::
+
+::: pf-step
+
+The information given does not determine the joint probability of
 rolling first a $5$ and then a $6$.
 
-::: {.proof}
+
+::: pf-proof
+
 One joint model is to take the two throws to be independent. Then step <1>2
 gives
 $$
@@ -71,23 +90,34 @@ P(5\text{ then }6)=0.
 $$
 Thus the same stated one-throw probabilities admit different values of the
 requested two-throw probability.
+
 :::
 
-<1>4. Therefore the answer from the stated hypotheses is
+:::
+
+::: pf-step
+
+Therefore the answer from the stated hypotheses is
 $$
 \boxed{\text{(E) Cannot be determined from the information given}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 exhibits two probability models satisfying all stated marginal
 conditions but giving different answers.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the literal answer to the question as stated.
+
 :::
+
 :::
 
 ::: {.remark}

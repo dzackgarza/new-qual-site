@@ -31,10 +31,15 @@ III. If $A$ and $C$ are Hausdorff, then $B$ is Hausdorff.
 (E) I, II, and III
 :::
 
-::: {.solution}
-<1>1. Statement I is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement I is false.
+
+
+::: pf-proof
+
 Take $X=\RR$ with its usual topology and set
 $$
 A=\{0\},
@@ -49,11 +54,18 @@ $$
 B=\{0\}\sqcup(1,2]
 $$
 is a separation into two nonempty relatively open subsets of $B$.
+
 :::
 
-<1>2. Statement II is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement II is false.
+
+
+::: pf-proof
+
 Again take $X=\RR$ and set
 $$
 A=\{0\},
@@ -65,31 +77,49 @@ $$
 The sets $A$ and $C$ are compact, whereas $B$ is not compact. Indeed, in the
 Hausdorff space $\RR$, every compact subset is closed, but $[0,2)$ is not
 closed in $\RR$.
+
 :::
 
-<1>3. Statement III is true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement III is true.
+
+
+::: pf-proof
+
 The assumption that $C$ is Hausdorff is sufficient. If $x,y\in B$ are
 distinct, then as points of $C$ they have disjoint open neighborhoods
 $U,V\subseteq C$. Their intersections $U\cap B$ and $V\cap B$ are disjoint
 open neighborhoods of $x$ and $y$ in the subspace $B$. Hence $B$ is
 Hausdorff.
+
 :::
 
-<1>4. Therefore exactly statement III is true, so the answer is
+:::
+
+::: pf-step
+
+Therefore exactly statement III is true, so the answer is
 $$
 \boxed{\text{(D) III only}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 show respectively that I is false, II is false, and III is
 true.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

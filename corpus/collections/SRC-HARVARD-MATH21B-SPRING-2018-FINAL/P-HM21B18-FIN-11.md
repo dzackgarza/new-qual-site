@@ -34,7 +34,6 @@ B and D do not have that saddle/first-quadrant-attracting-spiral
 configuration.
 :::
 
-::: {.solution}
 Write
 \[
 F(x,y)=x+y-xy,
@@ -42,12 +41,18 @@ F(x,y)=x+y-xy,
 G(x,y)=x-3y+xy.
 \]
 
-<1>1. The equilibrium points are
+::: pf
+
+::: pf-step
+
+The equilibrium points are
 \[
 (0,0)\qquad\text{and}\qquad(2,2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At an equilibrium, $F=G=0$. Adding these two equations gives
 \[
 2x-2y=0,
@@ -57,9 +62,14 @@ so $x=y$. Substituting into $F=0$ gives
 2x-x^2=x(2-x)=0.
 \]
 Hence $x=y=0$ or $x=y=2$.
+
 :::
 
-<1>2. The Jacobian matrix is
+:::
+
+::: pf-step
+
+The Jacobian matrix is
 \[
 J(x,y)=
 \begin{pmatrix}
@@ -82,7 +92,9 @@ J(2,2)=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $F$ and $G$:
 \[
 F_x=1-y,\quad F_y=1-x,\quad
@@ -90,11 +102,18 @@ G_x=1+y,\quad G_y=-3+x.
 \]
 Evaluation at the two equilibria from step <1>1 gives the displayed
 matrices.
+
 :::
 
-<1>3. The equilibrium $(0,0)$ is unstable and is a saddle.
+:::
 
-::: {.proof}
+::: pf-step
+
+The equilibrium $(0,0)$ is unstable and is a saddle.
+
+
+::: pf-proof
+
 The characteristic polynomial of $J(0,0)$ is
 \[
 \lambda^2-(\operatorname{tr}J)\lambda+\det J
@@ -107,12 +126,19 @@ Its roots are
 One is positive and one is negative, so the linearization is a saddle.
 Because the equilibrium is hyperbolic, the nonlinear equilibrium has the
 same local saddle type and is unstable.
+
 :::
 
-<1>4. The equilibrium $(2,2)$ is locally asymptotically stable and is an
+:::
+
+::: pf-step
+
+The equilibrium $(2,2)$ is locally asymptotically stable and is an
 attracting spiral.
 
-::: {.proof}
+
+::: pf-proof
+
 For $J(2,2)$,
 \[
 \operatorname{tr}J=-2,\qquad \det J=4,
@@ -128,17 +154,29 @@ The eigenvalues are
 whose real parts are negative. The equilibrium is hyperbolic, so the
 linearization criterion implies that the nonlinear equilibrium is locally
 asymptotically stable. The nonzero imaginary parts give the spiral type.
+
 :::
 
-<1>5. The source phase portrait is candidate A.
+:::
 
-::: {.proof}
+::: pf-step
+
+The source phase portrait is candidate A.
+
+
+::: pf-proof
+
 Steps <1>3 and <1>4 require a saddle at $(0,0)$ and an attracting spiral
 at $(2,2)$ in the first quadrant. Among the source candidates described in
 the problem, exactly portrait A has this configuration.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \begin{gathered}
@@ -151,13 +189,19 @@ J(2,2)=\begin{pmatrix}-1&-1\\3&-1\end{pmatrix}
 \end{gathered}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 through <1>5 establish parts (a)--(d).
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 records every requested answer.
+
 :::
+
 :::

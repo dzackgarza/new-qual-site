@@ -27,10 +27,15 @@ $$\oint_C \sqrt{2x+1} \, dx + \left(2xy + \sqrt{y^2 - y}\right) dy$$
 (E) $4$
 :::
 
-::: {.solution}
-<1>1. The terms depending only on $x$ or only on $y$ contribute zero around $C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The terms depending only on $x$ or only on $y$ contribute zero around $C$.
+
+
+::: pf-proof
+
 On the ranges occurring on $C$, the functions $\sqrt{2x+1}$ and
 $\sqrt{y^2-y}$ are continuous, so they have antiderivatives $F(x)$ and
 $G(y)$, respectively. Hence
@@ -40,26 +45,47 @@ $G(y)$, respectively. Hence
 \oint_C \sqrt{y^2-y}\,dy=\oint_C dG=0.
 \]
 Therefore the given integral equals $\oint_C 2xy\,dy$.
+
 :::
 
-<1>2. The contribution of the horizontal edge from $(0,1)$ to $(1,1)$ is $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The contribution of the horizontal edge from $(0,1)$ to $(1,1)$ is $0$.
+
+
+::: pf-proof
+
 Along this edge, $dy=0$.
+
 :::
 
-<1>3. The contribution of the vertical edge from $(1,1)$ to $(1,3)$ is $8$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The contribution of the vertical edge from $(1,1)$ to $(1,3)$ is $8$.
+
+
+::: pf-proof
+
 Here $x=1$ and $y$ increases from $1$ to $3$, so
 \[
 \int_1^3 2y\,dy=[y^2]_1^3=8.
 \]
+
 :::
 
-<1>4. The contribution of the diagonal edge from $(1,3)$ to $(0,1)$ is $-\frac{14}{3}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The contribution of the diagonal edge from $(1,3)$ to $(0,1)$ is $-\frac{14}{3}$.
+
+
+::: pf-proof
+
 The diagonal has equation $y=2x+1$, hence $x=(y-1)/2$. With the
 counterclockwise orientation, $y$ decreases from $3$ to $1$. Therefore
 \[
@@ -67,21 +93,32 @@ counterclockwise orientation, $y$ decreases from $3$ to $1$. Therefore
 =\int_3^1 (y^2-y)\,dy
 =-\frac{14}{3}.
 \]
+
 :::
 
-<1>5. The value of the integral is $\boxed{\frac{10}{3}}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The value of the integral is $\boxed{\frac{10}{3}}$.
+
+
+::: pf-proof
+
 By steps <1>1, <1>2, <1>3, and <1>4, the integral is
 \[
 0+8-\frac{14}{3}=\frac{10}{3}.
 \]
 Thus the correct choice is (D).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested value.
+
 :::
+
 :::

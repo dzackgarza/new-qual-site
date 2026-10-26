@@ -24,37 +24,56 @@ Show that at least one partial sum has a zero in the disk
 \]
 :::
 
-::: {.solution}
-<1>1. The partial sum through the quadratic term is
+::: pf
+
+::: pf-step
+
+The partial sum through the quadratic term is
 $$
 p_1(z)=1-\frac{z^2}{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Taking the terms with $k=0$ and $k=1$ in the cosine series gives
 $$
 p_1(z)
 =\frac{(-1)^0z^0}{0!}+\frac{(-1)^1z^2}{2!}
 =1-\frac{z^2}{2}.
 $$
+
 :::
 
-<1>2. The zeros of $p_1$ are
+:::
+
+::: pf-step
+
+The zeros of $p_1$ are
 $$
 z=\pm\sqrt2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equation $p_1(z)=0$ is equivalent to
 $$
 1-\frac{z^2}{2}=0,
 $$
 hence to $z^2=2$. Thus its two zeros are $\sqrt2$ and $-\sqrt2$.
+
 :::
 
-<1>3. Both zeros from step <1>2 lie in the disk $|z|<\pi/2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Both zeros from step <1>2 lie in the disk $|z|<\pi/2$.
+
+
+::: pf-proof
+
 Since
 $$
 2\sqrt2<3<\pi,
@@ -71,18 +90,29 @@ Therefore
 $$
 |\pm\sqrt2|=\sqrt2<\frac{\pi}{2}.
 $$
+
 :::
 
-<1>4. At least one partial sum of the cosine series has a zero in $|z|<\pi/2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+At least one partial sum of the cosine series has a zero in $|z|<\pi/2$.
+
+
+::: pf-proof
+
 The partial sum $p_1$ from step <1>1 has the two zeros identified in
 step <1>2, and step <1>3 places both of them in the required disk.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

@@ -26,41 +26,64 @@ If the roots of the equation $x^2 + Bx + 1 = 0$ are the squares of the roots of 
 (E) $b^2 - 2$
 :::
 
-::: {.solution}
 Let $r$ and $s$ be the roots of $x^2+bx+1$.
 
-<1>1. $r+s=-b$ and $rs=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$r+s=-b$ and $rs=1$.
+
+
+::: pf-proof
+
 These are Viète's formulas for the monic quadratic $x^2+bx+1$.
+
 :::
 
-<1>2. $r^2+s^2=b^2-2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$r^2+s^2=b^2-2$.
+
+
+::: pf-proof
+
 Using step <1>1,
 $$
 r^2+s^2=(r+s)^2-2rs=(-b)^2-2=b^2-2.
 $$
+
 :::
 
-<1>3. The coefficient is
+:::
+
+::: pf-step
+
+The coefficient is
 $$
 \boxed{B=2-b^2},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis, the roots of $x^2+Bx+1$ are $r^2$ and $s^2$. Their sum is therefore $-B$ by Viète's formulas. Step <1>2 gives
 $$
 -B=b^2-2,
 $$
 which is equivalent to the displayed value of $B$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested expression and corresponding choice.
+
 :::
+
 :::

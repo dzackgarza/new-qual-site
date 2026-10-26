@@ -25,8 +25,11 @@ The smallest positive integer $x$ for which the power series $\sum_{n=1}^{\infty
 (E) $9$
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 c_n(x)=\frac{n!(2n)!}{(3n)!}x^n,
 $$
@@ -36,7 +39,9 @@ $$
 =\frac{4\abs{x}}{27}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Cancelling factorials gives
 $$
 \abs{\frac{c_{n+1}(x)}{c_n(x)}}
@@ -46,31 +51,49 @@ $$
 $$
 Dividing numerator and denominator by $n^3$ and taking the limit yields
 $4\abs{x}/27$.
+
 :::
 
-<1>2. The series converges absolutely for $\abs{x}<27/4$ and diverges for $\abs{x}>27/4$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The series converges absolutely for $\abs{x}<27/4$ and diverges for $\abs{x}>27/4$.
+
+
+::: pf-proof
+
 This is the ratio test applied to the limit in step <1>1. At $x=0$ the series is identically zero, so it also converges.
+
 :::
 
-<1>3. The smallest positive integer for which the series does not converge is
+:::
+
+::: pf-step
+
+The smallest positive integer for which the series does not converge is
 $$
 \boxed{x=7},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 The positive integers $1,\ldots,6$ all satisfy $x<27/4$, so step <1>2 gives convergence. Since
 $$
 7>\frac{27}{4},
 $$
 step <1>2 gives divergence at $x=7$. Thus $7$ is the first positive integer outside the convergence interval.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested integer and corresponding choice.
+
 :::
+
 :::

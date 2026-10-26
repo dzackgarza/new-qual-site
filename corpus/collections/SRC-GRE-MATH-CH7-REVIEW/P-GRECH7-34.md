@@ -25,8 +25,11 @@ Let $(X, T)$ be a topological space, and let $A$ be the subset $(0, 1) \cup [4, 
 (E) $(-\infty, 0) \cup (6, \infty)$
 :::
 
-::: {.solution}
-<1>1. The closure of
+::: pf
+
+::: pf-step
+
+The closure of
 $$
 A=(0,1)\cup[4,6)
 $$
@@ -35,16 +38,25 @@ $$
 \overline A=[0,1]\cup[4,6].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The interval $(0,1)$ has closure $[0,1]$, while $[4,6)$ has closure $[4,6]$. Since the closure of a finite union is the union of the closures, the displayed formula follows.
+
 :::
 
-<1>2. The exterior of $A$ is
+:::
+
+::: pf-step
+
+The exterior of $A$ is
 $$
 \operatorname{ext}(A)=\RR\setminus\overline A.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the exterior is the interior of the complement:
 $$
 \operatorname{ext}(A)=\operatorname{int}(\RR\setminus A).
@@ -54,22 +66,33 @@ $$
 \operatorname{int}(X\setminus A)=X\setminus\overline A.
 $$
 Applying this identity in $\RR$ gives the claim.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \operatorname{ext}(A)
 =\boxed{(-\infty,0)\cup(1,4)\cup(6,\infty)},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Taking the complement of the closed set in step <1>1 yields exactly the three displayed open intervals, by step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested exterior.
+
 :::
+
 :::

@@ -29,27 +29,39 @@ Determine the image under $f$ of each of the following:
 4. the imaginary axis.
 :::
 
-::: {.solution}
 Regard \(f\) as the Möbius transformation of the Riemann sphere \(\mathbb C^*=\mathbb C\cup\{\infty\}\), so that \(f(-1)=\infty\) and \(f(\infty)=1\). For \(w\ne1\), solving \(w=f(z)\) gives
 \[
 z=\frac{1+w}{1-w}.
 \]
 
-<1>1. The image of the extended real axis is the extended real axis:
+::: pf
+
+::: pf-step
+
+The image of the extended real axis is the extended real axis:
 \[
 \boxed{f(\mathbb R\cup\{\infty\})=\mathbb R\cup\{\infty\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(z\in\mathbb R\setminus\{-1\}\), then \((z-1)/(z+1)\in\mathbb R\). Also \(f(-1)=\infty\) and \(f(\infty)=1\). Conversely, if \(w\in\mathbb R\setminus\{1\}\), then the inverse formula gives \(z=(1+w)/(1-w)\in\mathbb R\). Thus the image is exactly the extended real axis.
+
 :::
 
-<1>2. The image of \(|z|=2\) is the circle
+:::
+
+::: pf-step
+
+The image of \(|z|=2\) is the circle
 \[
 \boxed{\left|w-\frac53\right|=\frac43}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(w=f(z)\), the inverse formula gives
 \[
 |z|=2
@@ -65,14 +77,21 @@ which rearranges to
 \left(u-\frac53\right)^2+v^2=\frac{16}{9}.
 \]
 The point \(w=1\) does not satisfy this equation, so the inverse formula proves both inclusions.
+
 :::
 
-<1>3. The image of \(|z|=1\) is the extended imaginary axis:
+:::
+
+::: pf-step
+
+The image of \(|z|=1\) is the extended imaginary axis:
 \[
 \boxed{f(\{|z|=1\})=i\mathbb R\cup\{\infty\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For finite \(w\ne1\),
 \[
 |z|=1
@@ -84,14 +103,21 @@ If \(w=u+iv\), squaring this equality gives
 (1+u)^2+v^2=(1-u)^2+v^2,
 \]
 hence \(u=0\). Conversely, every finite \(w\) with \(\operatorname{Re}w=0\) satisfies the equality and therefore has a preimage on \(|z|=1\). Finally \(z=-1\) lies on the source circle and maps to \(\infty\).
+
 :::
 
-<1>4. The image of the extended imaginary axis is the unit circle:
+:::
+
+::: pf-step
+
+The image of the extended imaginary axis is the unit circle:
 \[
 \boxed{f(i\mathbb R\cup\{\infty\})=\{|w|=1\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(z=iy\) with \(y\in\mathbb R\), then
 \[
 |f(iy)|
@@ -110,11 +136,15 @@ and the inverse formula satisfies
 =-\frac{1+w}{1-w}.
 \]
 Thus its real part is zero, so its preimage lies on the imaginary axis. The remaining point \(w=1\) is the image of \(z=\infty\).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 determine all four requested images.
+
 :::
+
 :::

@@ -33,10 +33,15 @@ are eigenvectors and find their eigenvalues.
 \]
 :::
 
-::: {.solution}
-<1>1. The vectors $v_1,v_2,v_3$ have eigenvalues $1,2,6$, respectively.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The vectors $v_1,v_2,v_3$ have eigenvalues $1,2,6$, respectively.
+
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 Av_1
@@ -58,14 +63,21 @@ Av_3
 =6v_3.
 \]
 Thus the corresponding eigenvalues are $1,2,6$.
+
 :::
 
-<1>2. The initial vector decomposes as
+:::
+
+::: pf-step
+
+The initial vector decomposes as
 \[
 \vec x(0)=v_1+3v_2+3v_3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 \[
 v_1+3v_2+3v_3
@@ -76,14 +88,21 @@ v_1+3v_2+3v_3
 =
 \begin{pmatrix}7\\12\\6\end{pmatrix}.
 \]
+
 :::
 
-<1>3. For every integer $t\geq0$,
+:::
+
+::: pf-step
+
+For every integer $t\geq0$,
 \[
 \vec x(t)=v_1+3\cdot2^t v_2+3\cdot6^t v_3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The recurrence gives $\vec x(t)=A^t\vec x(0)$. Applying $A^t$ to the
 decomposition in step <1>2 and using the eigenvalue equations from
 step <1>1 yields
@@ -93,9 +112,14 @@ A^t v_2=2^t v_2,\qquad
 A^t v_3=6^t v_3,
 \]
 which proves the displayed formula.
+
 :::
 
-<1>4. Equivalently, the closed form is
+:::
+
+::: pf-step
+
+Equivalently, the closed form is
 \[
 \boxed{
 \vec x(t)=
@@ -107,14 +131,20 @@ which proves the displayed formula.
 \qquad t\geq0.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the expression in step <1>3 using the coordinates of
 $v_1,v_2,v_3$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>4 answers part (b).
+
 :::
+
 :::

@@ -25,10 +25,15 @@ Suppose X is a nonempty set for which $\delta: X \times X \to \mathbb{R}$ is a r
 (E) $\delta(x, z) = \delta(x, y) + \delta(y, z)$
 :::
 
-::: {.solution}
-<1>1. Properties (A), (C), and (D) are metric axioms.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Properties (A), (C), and (D) are metric axioms.
+
+
+::: pf-proof
+
 By definition, a metric is nonnegative,
 $$
 \delta(x,y)\ge0,
@@ -42,21 +47,35 @@ $$
 \delta(x,y)=0\iff x=y.
 $$
 These are exactly (A), (C), and (D).
+
 :::
 
-<1>2. Property (B) is the triangle inequality and is also a metric axiom.
+:::
 
-::: {.proof}
+::: pf-step
+
+Property (B) is the triangle inequality and is also a metric axiom.
+
+
+::: pf-proof
+
 Every metric satisfies
 $$
 \delta(x,z)\le\delta(x,y)+\delta(y,z)
 $$
 for all $x,y,z\in X$, which is precisely statement (B).
+
 :::
 
-<1>3. Property (E) is not required of a metric and can fail.
+:::
 
-::: {.proof}
+::: pf-step
+
+Property (E) is not required of a metric and can fail.
+
+
+::: pf-proof
+
 Take $X=\RR$ with the usual metric $\delta(s,t)=|s-t|$, and choose
 $$
 x=0,\qquad y=1,\qquad z=0.
@@ -70,21 +89,32 @@ $$
 \delta(x,y)+\delta(y,z)=1+1=2.
 $$
 Thus equality in the triangle inequality need not hold.
+
 :::
 
-<1>4. Therefore the condition that is not a metric property is
+:::
+
+::: pf-step
+
+Therefore the condition that is not a metric property is
 $$
 \boxed{\delta(x,z)=\delta(x,y)+\delta(y,z)},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 identify (A)--(D) as metric axioms, while step <1>3 gives a metric violating (E).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

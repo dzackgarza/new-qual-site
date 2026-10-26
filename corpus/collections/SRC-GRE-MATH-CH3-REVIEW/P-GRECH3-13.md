@@ -29,39 +29,58 @@ If the variables $P$, $V$, and $T$ are related by the equation $PV=nRT$, where $
 (E) $\frac{1}{nR}$
 :::
 
-::: {.solution}
-<1>1. Holding $P$ fixed,
+::: pf
+
+::: pf-step
+
+Holding $P$ fixed,
 $$
 \left(\frac{\partial V}{\partial T}\right)_P=\frac{nR}{P}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From $PV=nRT$,
 $$
 V=\frac{nRT}{P}.
 $$
 Differentiating with respect to $T$ while $P$ is fixed gives the displayed derivative.
+
 :::
 
-<1>2. Holding $V$ fixed,
+:::
+
+::: pf-step
+
+Holding $V$ fixed,
 $$
 \left(\frac{\partial T}{\partial P}\right)_V=\frac{V}{nR}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solving the relation for $T$ gives
 $$
 T=\frac{PV}{nR}.
 $$
 Differentiating with respect to $P$ while $V$ is fixed gives the displayed derivative.
+
 :::
 
-<1>3. Holding $T$ fixed,
+:::
+
+::: pf-step
+
+Holding $T$ fixed,
 $$
 \left(\frac{\partial P}{\partial V}\right)_T=-\frac{nRT}{V^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solving the relation for $P$ gives
 $$
 P=\frac{nRT}{V}.
@@ -71,15 +90,22 @@ $$
 \left(\frac{\partial P}{\partial V}\right)_T
 =-\frac{nRT}{V^2}.
 $$
+
 :::
 
-<1>4. The cyclic product is
+:::
+
+::: pf-step
+
+The cyclic product is
 $$
 \boxed{-1},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying the derivatives from steps <1>1--<1>3 gives
 $$
 \frac{nR}{P}\cdot\frac{V}{nR}\cdot
@@ -87,11 +113,15 @@ $$
 =-\frac{nRT}{PV}.
 $$
 The defining relation $PV=nRT$ therefore reduces this expression to $-1$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the simplified value and corresponding choice.
+
 :::
+
 :::

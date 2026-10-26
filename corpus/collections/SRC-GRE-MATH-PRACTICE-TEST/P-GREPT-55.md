@@ -25,13 +25,18 @@ Let $A$ be the set of all ordered pairs of integers $(m, n)$ such that $7m + 12n
 (E) $-1$
 :::
 
-::: {.solution}
-<1>1. Every integer solution satisfies
+::: pf
+
+::: pf-step
+
+Every integer solution satisfies
 $$
 n\equiv3\pmod7.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Reducing
 $$
 7m+12n=22
@@ -42,9 +47,14 @@ $$
 $$
 Since $5^{-1}\equiv3\pmod7$, multiplication by $3$ gives
 $n\equiv3\pmod7$.
+
 :::
 
-<1>2. All integer solutions are
+:::
+
+::: pf-step
+
+All integer solutions are
 $$
 n=3+7k,
 \qquad
@@ -52,43 +62,63 @@ m=-2-12k,
 \qquad k\in\ZZ.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, write $n=3+7k$. Substitution gives
 $$
 7m+12(3+7k)=22,
 $$
 hence $7m=-14-84k$ and $m=-2-12k$. Conversely, these formulas satisfy the
 original equation for every integer $k$.
+
 :::
 
-<1>3. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 $$
 B=\{1-5k:k\in\ZZ\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the solutions in step <1>2,
 $$
 m+n=(-2-12k)+(3+7k)=1-5k.
 $$
 Every integer solution occurs there, so these are exactly the elements of
 $B$.
+
 :::
 
-<1>4. The greatest negative element of $B$ is
+:::
+
+::: pf-step
+
+The greatest negative element of $B$ is
 $$
 \boxed{-4},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 The value $1-5k$ is negative exactly when $k\ge1$. Among those integers it is
 largest when $k=1$, yielding $1-5=-4$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested greatest negative value.
+
 :::
+
 :::

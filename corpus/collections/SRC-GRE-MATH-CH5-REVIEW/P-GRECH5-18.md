@@ -26,42 +26,65 @@ If $A$ is an invertible matrix with an eigenvalue of $3$ corresponding to the ei
 (E) The matrix $A^2$ has an eigenvalue of $3$ corresponding to the eigenvector $3\mathbf{x}$.
 :::
 
-::: {.solution}
-<1>1. The eigenvalue equation is
+::: pf
+
+::: pf-step
+
+The eigenvalue equation is
 $$
 A\mathbf x=3\mathbf x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is precisely the meaning of the statement that $3$ is an eigenvalue of $A$ corresponding to the eigenvector $\mathbf x$.
+
 :::
 
-<1>2. The same vector $\mathbf x$ satisfies
+:::
+
+::: pf-step
+
+The same vector $\mathbf x$ satisfies
 $$
 A^{-1}\mathbf x=\frac13\mathbf x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply $A^{-1}$ to both sides of step <1>1. Since $A$ is invertible,
 $$
 \mathbf x=3A^{-1}\mathbf x,
 $$
 and division by $3$ gives the displayed equation.
+
 :::
 
-<1>3. Therefore the statement that must be true is
+:::
+
+::: pf-step
+
+Therefore the statement that must be true is
 $$
 \boxed{A^{-1}\mathbf x=\frac13\mathbf x},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 says exactly that $1/3$ is an eigenvalue of $A^{-1}$ corresponding to the same eigenvector $\mathbf x$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies the required statement.
+
 :::
+
 :::

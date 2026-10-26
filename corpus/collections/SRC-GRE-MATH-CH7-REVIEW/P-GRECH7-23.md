@@ -25,13 +25,18 @@ Given set $A = \{a, b\}$, set $B = \{c, d, e, f\}$, and set $C = \{g, h, i\}$. I
 (E) $P[P(A) \times P(B)]$
 :::
 
-::: {.solution}
-<1>1. The set $D=P(C)\times B$ has cardinality
+::: pf
+
+::: pf-step
+
+The set $D=P(C)\times B$ has cardinality
 $$
 |D|=32.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $|C|=3$, its power set has
 $$
 |P(C)|=2^3=8
@@ -40,20 +45,34 @@ elements. Since $|B|=4$,
 $$
 |D|=|P(C)|\,|B|=8\cdot4=32.
 $$
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 |P(D)|=2^{32}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The power set of a finite set with $n$ elements has $2^n$ elements. Apply this with $n=32$ from step <1>1.
+
 :::
 
-<1>3. Choice (A) also has cardinality $2^{32}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Choice (A) also has cardinality $2^{32}$.
+
+
+::: pf-proof
+
 Because $|A|=2$ and $|C|=3$,
 $$
 |P(A)|=4,
@@ -68,11 +87,18 @@ and therefore
 $$
 \bigl|P[P(A)\times P(C)]\bigr|=2^{32}.
 $$
+
 :::
 
-<1>4. None of choices (B)--(E) has cardinality $2^{32}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+None of choices (B)--(E) has cardinality $2^{32}$.
+
+
+::: pf-proof
+
 Their cardinalities are respectively
 $$
 2^{|A\times C|}=2^6,
@@ -87,21 +113,32 @@ and
 $$
 2^{|P(A)\times P(B)|}=2^{4\cdot16}=2^{64}.
 $$
+
 :::
 
-<1>5. Hence the required set is
+:::
+
+::: pf-step
+
+Hence the required set is
 $$
 \boxed{P[P(A)\times P(C)]},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2 and <1>3 show that choice (A) has the same cardinality as $P(D)$, while step <1>4 rules out the remaining choices.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required choice.
+
 :::
+
 :::

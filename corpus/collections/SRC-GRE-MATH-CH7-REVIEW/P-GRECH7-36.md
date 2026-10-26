@@ -25,60 +25,90 @@ Let $C$ be the counterclockwise-oriented circle $|z| = 5$. If $h(a) = \int_C \fr
 (E) $56\pi i$
 :::
 
-::: {.solution}
 Let
 $$
 f(z)=3z^2+z-4.
 $$
 Interpreting the displayed contour integral in the standard form $h(a)=\int_C f(z)/(z-a)\,dz$, one has the following.
 
-<1>1. The point $a=3$ lies inside $C$, and $f$ is holomorphic on and inside $C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The point $a=3$ lies inside $C$, and $f$ is holomorphic on and inside $C$.
+
+
+::: pf-proof
+
 The contour is the circle $|z|=5$, so $|3|<5$. The function $f$ is a polynomial, hence entire.
+
 :::
 
-<1>2. The Cauchy integral formula gives
+:::
+
+::: pf-step
+
+The Cauchy integral formula gives
 $$
 h(3)=2\pi i\,f(3).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, all hypotheses of the Cauchy integral formula apply to the positively oriented contour $C$. Therefore
 $$
 \frac{1}{2\pi i}\int_C\frac{f(z)}{z-3}\,dz=f(3),
 $$
 which is equivalent to the displayed identity.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 f(3)=26.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives
 $$
 f(3)=3(3^2)+3-4=27+3-4=26.
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{h(3)=52\pi i},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2:
 $$
 h(3)=2\pi i\cdot26=52\pi i.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value.
+
 :::
+
 :::

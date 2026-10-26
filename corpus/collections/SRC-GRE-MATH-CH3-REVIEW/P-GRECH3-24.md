@@ -26,14 +26,19 @@ A vertical fence is constructed whose base is the curve $y=x\sqrt{x}$, from $(0,
 (E) $27$
 :::
 
-::: {.solution}
-<1>1. A parametrization of the base curve is
+::: pf
+
+::: pf-step
+
+A parametrization of the base curve is
 $$
 x=t^2,\qquad y=t^3,\qquad 0\le t\le1,
 $$
 and along this curve the fence height is constantly $27$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $0\le t\le1$,
 $$
 y=t^3=(t^2)\sqrt{t^2}=x\sqrt{x},
@@ -44,14 +49,21 @@ x^3-y^2+27
 =(t^2)^3-(t^3)^2+27
 =27.
 $$
+
 :::
 
-<1>2. The arc-length element of the base curve is
+:::
+
+::: pf-step
+
+The arc-length element of the base curve is
 $$
 ds=t\sqrt{4+9t^2}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>1,
 $$
 \frac{dx}{dt}=2t,\qquad
@@ -65,15 +77,22 @@ ds
 =\sqrt{4t^2+9t^4}\,dt
 =t\sqrt{4+9t^2}\,dt.
 $$
+
 :::
 
-<1>3. The fence area is
+:::
+
+::: pf-step
+
+The fence area is
 $$
 \boxed{13\sqrt{13}-8},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 The area of a vertical fence of height $H$ over a base curve $C$ is
 $$
 \int_C H\,ds.
@@ -92,11 +111,15 @@ A
 =13^{3/2}-4^{3/2}
 =13\sqrt{13}-8.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested area and corresponding choice.
+
 :::
+
 :::

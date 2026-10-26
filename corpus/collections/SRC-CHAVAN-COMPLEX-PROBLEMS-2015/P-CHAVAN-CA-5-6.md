@@ -18,11 +18,16 @@ Let $f$ be a nonconstant holomorphic function on a bounded open set $\Omega$, co
 Show that either $f$ has a zero in $\Omega$ or $|f|$ assumes its minimum on $\partial\Omega$.
 :::
 
-::: {.solution}
-<1>1. The function $|f|$ attains a minimum at some point
+::: pf
+
+::: pf-step
+
+The function $|f|$ attains a minimum at some point
 $a\in\overline\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is nonconstant, $\Omega$ is nonempty. Since $\Omega$ is bounded,
 $\overline\Omega$ is compact. The function $|f|$ is continuous on
 $\overline\Omega$, so the extreme value theorem gives
@@ -31,27 +36,48 @@ $$
 \abs{f(a)}\leq\abs{f(z)}
 \qquad\text{for every }z\in\overline\Omega.
 $$
+
 :::
 
-<1>2. If $f$ has a zero in $\Omega$, then the first alternative holds.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f$ has a zero in $\Omega$, then the first alternative holds.
+
+
+::: pf-proof
+
 This is immediate.
+
 :::
 
-<1>3. Suppose that $f$ has no zero in $\Omega$. If $a\in\partial\Omega$, then
+:::
+
+::: pf-step
+
+Suppose that $f$ has no zero in $\Omega$. If $a\in\partial\Omega$, then
 $|f|$ assumes its minimum on $\partial\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 The point $a$ is a global minimizer on $\overline\Omega$ by step <1>1, so if it
 lies on $\partial\Omega$, its value is the required boundary minimum.
+
 :::
 
-<1>4. Suppose instead that $f$ has no zero in $\Omega$ and $a\in\Omega$. If $U$
+:::
+
+::: pf-step
+
+Suppose instead that $f$ has no zero in $\Omega$ and $a\in\Omega$. If $U$
 is the connected component of $\Omega$ containing $a$, then $f$ is constant on
 $U$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ has no zero on $U$, the function
 $$
 g=\frac1f
@@ -65,12 +91,19 @@ $$
 $$
 Thus $|g|$ has a local maximum at the interior point $a$. The maximum modulus
 principle makes $g$, and hence $f$, constant on the domain $U$.
+
 :::
 
-<1>5. Under the hypotheses of step <1>4, there is a point
+:::
+
+::: pf-step
+
+Under the hypotheses of step <1>4, there is a point
 $b\in\partial\Omega$ such that $|f(b)|=|f(a)|$.
 
-::: {.proof}
+
+::: pf-proof
+
 The component $U$ is a nonempty bounded open subset of $\CC$, so
 $\partial U\neq\varnothing$. Moreover,
 $$
@@ -89,21 +122,32 @@ $$
 f(b)=\lim_{n\to\infty}f(z_n)=f(a).
 $$
 Hence $b\in\partial\Omega$ and $\abs{f(b)}=\abs{f(a)}$.
+
 :::
 
-<1>6. If $f$ has no zero in $\Omega$, then $|f|$ assumes its minimum on
+:::
+
+::: pf-step
+
+If $f$ has no zero in $\Omega$, then $|f|$ assumes its minimum on
 $\partial\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $a$ be the minimizing point from step <1>1. If $a\in\partial\Omega$, apply
 step <1>3. If $a\in\Omega$, step <1>5 produces a boundary point with the same
 minimum value.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the first alternative when $f$ has an interior zero. Otherwise
 step <1>6 gives the second alternative.
+
 :::
+
 :::

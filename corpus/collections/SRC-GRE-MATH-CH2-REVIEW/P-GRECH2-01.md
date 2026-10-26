@@ -31,13 +31,18 @@ for each integer $n \ge 1$. Given that this sequence converges, what is its limi
 (E) $\sqrt[4]{e}$
 :::
 
-::: {.solution}
-<1>1. For every $n\geq1$,
+::: pf
+
+::: pf-step
+
+For every $n\geq1$,
 $$
 |x_n|\leq \frac{1}{n^{1/e}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $|\cos(n\pi)|\leq1$ and $0\leq\sin^2 n\leq1$,
 $$
 |x_n|
@@ -45,11 +50,18 @@ $$
 \leq\frac1{\sqrt[e]{n}}
 =\frac1{n^{1/e}}.
 $$
+
 :::
 
-<1>2. $\lim_{n\to\infty}x_n=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$\lim_{n\to\infty}x_n=0$.
+
+
+::: pf-proof
+
 Because $1/e>0$,
 $$
 \lim_{n\to\infty}\frac1{n^{1/e}}=0.
@@ -59,21 +71,32 @@ $$
 -\frac1{n^{1/e}}\leq x_n\leq\frac1{n^{1/e}},
 $$
 so the squeeze theorem yields $x_n\to0$.
+
 :::
 
-<1>3. The limit is
+:::
+
+::: pf-step
+
+The limit is
 $$
 \boxed{0},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the limit established in step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested limit and corresponding choice.
+
 :::
+
 :::

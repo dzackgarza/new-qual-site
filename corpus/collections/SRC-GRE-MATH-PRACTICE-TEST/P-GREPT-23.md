@@ -25,13 +25,18 @@ Determine the slope of the curve $y = x^{\pi} - \pi^{x}$ at the point $(\pi, 0)$
 (E) $0$
 :::
 
-::: {.solution}
-<1>1. The derivative of the curve is
+::: pf
+
+::: pf-step
+
+The derivative of the curve is
 $$
 y'=\pi x^{\pi-1}-\pi^x\log\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\pi$ is constant,
 $$
 \frac{d}{dx}x^\pi=\pi x^{\pi-1}.
@@ -41,14 +46,21 @@ $$
 \frac{d}{dx}\pi^x=\pi^x\log\pi.
 $$
 Subtracting gives the displayed derivative.
+
 :::
 
-<1>2. At $x=\pi$, the slope is
+:::
+
+::: pf-step
+
+At $x=\pi$, the slope is
 $$
 y'(\pi)=\pi^\pi(1-\log\pi).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $x=\pi$ into step <1>1 gives
 $$
 y'(\pi)
@@ -56,21 +68,32 @@ y'(\pi)
 =\pi^\pi-\pi^\pi\log\pi
 =\pi^\pi(1-\log\pi).
 $$
+
 :::
 
-<1>3. Therefore the requested slope is
+:::
+
+::: pf-step
+
+Therefore the requested slope is
 $$
 \boxed{\pi^\pi(1-\log\pi)},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 evaluates the derivative at the specified point.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required slope.
+
 :::
+
 :::

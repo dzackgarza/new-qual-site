@@ -26,26 +26,38 @@ Let $x_1$ and $x_2$ be the two smallest positive integers for which the followin
 (E) $47$
 :::
 
-::: {.solution}
-<1>1. The divisibility condition is equivalent to
+::: pf
+
+::: pf-step
+
+The divisibility condition is equivalent to
 $$
 9x\equiv 12\pmod{19}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The statement that $85x-12$ is a multiple of $19$ means
 $$
 85x\equiv12\pmod{19}.
 $$
 Since $85\equiv9\pmod{19}$, this is equivalent to the displayed congruence.
+
 :::
 
-<1>2. The solutions are precisely
+:::
+
+::: pf-step
+
+The solutions are precisely
 $$
 x\equiv14\pmod{19}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 $$
 9\cdot17=153\equiv1\pmod{19},
@@ -54,21 +66,32 @@ the inverse of $9$ modulo $19$ is $17$. Multiplying the congruence in step <1>1 
 $$
 x\equiv17\cdot12=204\equiv14\pmod{19}.
 $$
+
 :::
 
-<1>3. The two smallest positive solutions are $x_1=14$ and $x_2=33$, and therefore
+:::
+
+::: pf-step
+
+The two smallest positive solutions are $x_1=14$ and $x_2=33$, and therefore
 $$
 \boxed{x_1+x_2=47},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, every solution has the form $14+19t$ with $t\in\ZZ$. The two smallest positive values occur for $t=0$ and $t=1$, namely $14$ and $33$, whose sum is $47$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested sum.
+
 :::
+
 :::

@@ -25,25 +25,37 @@ If the matrix $A = \begin{pmatrix} t & 1-t \\ 1 & 2t \end{pmatrix}$ has $1$ as a
 (E) $4$
 :::
 
-::: {.solution}
-<1>1. Since $1$ is an eigenvalue,
+::: pf
+
+::: pf-step
+
+Since $1$ is an eigenvalue,
 $$
 \det(A-I)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A scalar $\lambda$ is an eigenvalue exactly when $A-\lambda I$ is singular.
 Applying this with $\lambda=1$ gives the stated determinant equation.
+
 :::
 
-<1>2. The condition in step <1>1 forces
+:::
+
+::: pf-step
+
+The condition in step <1>1 forces
 $$
 t=0
 \qquad\text{or}\qquad
 t=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 A-I=
@@ -61,31 +73,49 @@ $$
 \end{aligned}
 $$
 Thus $t=0$ or $t=1$.
+
 :::
 
-<1>3. If $t=0$, the other eigenvalue is $-1$; if $t=1$, the other
+:::
+
+::: pf-step
+
+If $t=0$, the other eigenvalue is $-1$; if $t=1$, the other
 eigenvalue is $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 For a $2\times2$ matrix, the sum of the two eigenvalues equals the trace.
 Here $\operatorname{tr}(A)=3t$. Since one eigenvalue is $1$, the other is
 $3t-1$. Substituting the two values from step <1>2 gives $-1$ and $2$.
+
 :::
 
-<1>4. Therefore another eigenvalue could be
+:::
+
+::: pf-step
+
+Therefore another eigenvalue could be
 $$
 \boxed{2},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 lists all possible second eigenvalues, and among the choices only
 $2$ occurs.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

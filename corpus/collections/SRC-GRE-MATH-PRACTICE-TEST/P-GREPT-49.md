@@ -29,14 +29,19 @@ Which of the following statements is true about this sequence?
 (E) The sequence diverges for any $x_1 \neq 0$.
 :::
 
-::: {.solution}
-<1>1. If $x_1>0$, then every $x_n>0$ and
+::: pf
+
+::: pf-step
+
+If $x_1>0$, then every $x_n>0$ and
 $$
 x_n\ge\sqrt2
 $$
 for every $n\ge2$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $x_n>0$, then both $x_n$ and $2/x_n$ are positive, so $x_{n+1}>0$.
 Thus positivity is preserved. Moreover, for positive $t$,
 $$
@@ -44,11 +49,18 @@ $$
 $$
 by the arithmetic--geometric mean inequality. Applying this with $t=x_n$
 gives the bound for every $n\ge2$.
+
 :::
 
-<1>2. If $x_1>0$, the tail $(x_n)_{n\ge2}$ is nonincreasing.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $x_1>0$, the tail $(x_n)_{n\ge2}$ is nonincreasing.
+
+
+::: pf-proof
+
 For $n\ge2$, step <1>1 gives $x_n\ge\sqrt2$. Hence
 $$
 x_{n+1}-x_n
@@ -56,14 +68,21 @@ x_{n+1}-x_n
 =\frac{2-x_n^2}{2x_n}
 \le0.
 $$
+
 :::
 
-<1>3. If $x_1>0$, then
+:::
+
+::: pf-step
+
+If $x_1>0$, then
 $$
 x_n\longrightarrow\sqrt2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the tail is decreasing and bounded below by $\sqrt2$,
 so it converges to some $L\ge\sqrt2$. Passing to the limit in the continuous
 recursion gives
@@ -71,14 +90,21 @@ $$
 L=\frac12\left(L+\frac2L\right),
 $$
 so $L^2=2$. Since $L>0$, one has $L=\sqrt2$.
+
 :::
 
-<1>4. If $x_1<0$, then
+:::
+
+::: pf-step
+
+If $x_1<0$, then
 $$
 x_n\longrightarrow-\sqrt2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set $y_n=-x_n$. Since $x_1<0$, one has $y_1>0$. Directly from the recursion,
 $$
 y_{n+1}
@@ -87,21 +113,32 @@ y_{n+1}
 $$
 Thus $(y_n)$ satisfies the positive recursion treated in step <1>3, so
 $y_n\to\sqrt2$ and therefore $x_n=-y_n\to-\sqrt2$.
+
 :::
 
-<1>5. Therefore the true statement is
+:::
+
+::: pf-step
+
+Therefore the true statement is
 $$
 \boxed{\text{(D)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>4 give exactly the two sign-dependent limits stated in choice
 (D).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required choice.
+
 :::
+
 :::

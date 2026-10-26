@@ -25,13 +25,18 @@ If $-1 < x < 1$, then $\sum_{n=1}^{\infty} n x^{2n} =$
 (E) $\frac{x^2}{(1+x^2)^2}$
 :::
 
-::: {.solution}
-<1>1. For $\abs{t}<1$,
+::: pf
+
+::: pf-step
+
+For $\abs{t}<1$,
 $$
 \sum_{n=1}^\infty n t^n=\frac{t}{(1-t)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The geometric series satisfies
 $$
 \sum_{n=0}^\infty t^n=\frac1{1-t}
@@ -41,30 +46,48 @@ $$
 \sum_{n=1}^\infty n t^{n-1}=\frac1{(1-t)^2}.
 $$
 Multiplying by $t$ yields the stated identity.
+
 :::
 
-<1>2. For $-1<x<1$,
+:::
+
+::: pf-step
+
+For $-1<x<1$,
 $$
 \sum_{n=1}^\infty n x^{2n}
 =\frac{x^2}{(1-x^2)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\abs{x}<1$, one has $\abs{x^2}<1$. Substitute $t=x^2$ into the identity from step <1>1.
+
 :::
 
-<1>3. Therefore the answer is
+:::
+
+::: pf-step
+
+Therefore the answer is
 $$
 \boxed{\text{(B) }\frac{x^2}{(1-x^2)^2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 is exactly the series in the problem.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested expression and corresponding choice.
+
 :::
+
 :::

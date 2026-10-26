@@ -25,24 +25,36 @@ Let $x = r \cos \theta$ and $y = r \sin \theta$. Which of the following expressi
 (E) $-r^{-1} \csc \theta$
 :::
 
-::: {.solution}
-<1>1. Keeping $x$ constant gives
+::: pf
+
+::: pf-step
+
+Keeping $x$ constant gives
 $$
 r\cos\theta=x=\text{constant}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining polar-coordinate relation for $x$, with the condition in
 the problem that $x$ is held fixed while $r$ varies.
+
 :::
 
-<1>2. Differentiating the relation in step <1>1 with respect to $r$ gives
+:::
+
+::: pf-step
+
+Differentiating the relation in step <1>1 with respect to $r$ gives
 $$
 \cos\theta-r\sin\theta
 \left(\frac{\partial\theta}{\partial r}\right)_x=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the product rule to $r\cos\theta$, remembering that $\theta$ depends on
 $r$ when $x$ is held constant:
 $$
@@ -51,27 +63,38 @@ $$
 \left(\frac{\partial\theta}{\partial r}\right)_x.
 $$
 The derivative of the constant $x$ is zero.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \left(\frac{\partial\theta}{\partial r}\right)_x
 =\boxed{r^{-1}\cot\theta},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Solving the equation in step <1>2 for the partial derivative gives
 $$
 \left(\frac{\partial\theta}{\partial r}\right)_x
 =\frac{\cos\theta}{r\sin\theta}
 =r^{-1}\cot\theta.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required expression.
+
 :::
+
 :::

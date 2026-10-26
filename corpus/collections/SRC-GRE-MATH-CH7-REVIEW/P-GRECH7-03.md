@@ -25,19 +25,31 @@ In a State Lottery, players choose 6 numbers from among the integers 1 through 5
 (E) 17,596,287,801
 :::
 
-::: {.solution}
-<1>1. A guaranteed win requires one ticket for every $6$-element subset of $\{1,\dots,51\}$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A guaranteed win requires one ticket for every $6$-element subset of $\{1,\dots,51\}$.
+
+
+::: pf-proof
+
 The six numbers drawn form an unordered $6$-element subset. A ticket wins exactly for the one subset printed on it. If some $6$-element subset were omitted from the purchased tickets, that subset could be drawn and no purchased ticket would win. Conversely, purchasing one ticket for every possible subset guarantees that the drawn subset appears on one of the tickets.
+
 :::
 
-<1>2. The number of such subsets is
+:::
+
+::: pf-step
+
+The number of such subsets is
 $$
 \binom{51}{6}=18{,}009{,}460.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the binomial-coefficient formula,
 $$
 \begin{aligned}
@@ -47,21 +59,32 @@ $$
 &=18{,}009{,}460.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore the minimum number of tickets is
+:::
+
+::: pf-step
+
+Therefore the minimum number of tickets is
 $$
 \boxed{18{,}009{,}460},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that every possible $6$-element subset is both necessary and sufficient, and step <1>2 counts those subsets.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required minimum.
+
 :::
+
 :::

@@ -26,23 +26,35 @@ Let $f$ be a function such that $f(n+1) = 1 - [f(n)]^2$ for all nonnegative inte
 (E) $2[f(n)]^2 + [f(n)]^4$
 :::
 
-::: {.solution}
-<1>1. Applying the recurrence at $n+1$ gives
+::: pf
+
+::: pf-step
+
+Applying the recurrence at $n+1$ gives
 $$
 f(n+2)=1-[f(n+1)]^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $n$ is nonnegative, so is $n+1$, and the given recurrence therefore applies with $n+1$ in place of $n$.
+
 :::
 
-<1>2. Substituting the recurrence for $f(n+1)$ gives
+:::
+
+::: pf-step
+
+Substituting the recurrence for $f(n+1)$ gives
 $$
 f(n+2)=\boxed{2[f(n)]^2-[f(n)]^4},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and the given recurrence,
 $$
 \begin{aligned}
@@ -52,11 +64,15 @@ f(n+2)
 &=2[f(n)]^2-[f(n)]^4.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested expression and identifies the corresponding choice.
+
 :::
+
 :::

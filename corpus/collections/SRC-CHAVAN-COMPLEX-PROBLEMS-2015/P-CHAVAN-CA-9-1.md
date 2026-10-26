@@ -21,20 +21,30 @@ Show that the set
 is dense in $M_n(\mathbb C)$.
 :::
 
-::: {.solution}
-<1>1. For every $A\in M_n(\CC)$, the polynomial
+::: pf
+
+::: pf-step
+
+For every $A\in M_n(\CC)$, the polynomial
 $$
 p(t)=\det(A+tI_n)
 $$
 is a nonzero polynomial of degree $n$ in $t$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the determinant as a polynomial in $t$, the term obtained by taking
 $t$ from every diagonal entry is $t^n$, and no other term has degree $n$.
 Hence $p$ is monic of degree $n$.
+
 :::
 
-<1>2. There is a sequence $t_k\in\CC\setminus\{0\}$ such that
+:::
+
+::: pf-step
+
+There is a sequence $t_k\in\CC\setminus\{0\}$ such that
 $$
 t_k\longrightarrow0
 \qquad\text{and}\qquad
@@ -42,19 +52,28 @@ p(t_k)\neq0
 $$
 for every $k$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the zero set of $p$ is finite. The sequence $1/m$ tends to zero,
 and only finitely many of its terms can belong to that finite zero set. Deleting
 those terms gives the required sequence.
+
 :::
 
-<1>3. The matrices
+:::
+
+::: pf-step
+
+The matrices
 $$
 A_k=A+t_kI_n
 $$
 are invertible and satisfy $A_k\to A$ in $M_n(\CC)$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \det A_k=p(t_k)\neq0,
@@ -64,18 +83,29 @@ $$
 A_k-A=t_kI_n\longrightarrow0,
 $$
 so $A_k\to A$ in the usual finite-dimensional topology on $M_n(\CC)$.
+
 :::
 
-<1>4. The set of invertible matrices is dense in $M_n(\CC)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set of invertible matrices is dense in $M_n(\CC)$.
+
+
+::: pf-proof
+
 The matrix $A$ was arbitrary, and step <1>3 approximates it by invertible
 matrices.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

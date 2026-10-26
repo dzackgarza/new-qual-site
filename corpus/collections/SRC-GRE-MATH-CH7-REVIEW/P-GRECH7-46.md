@@ -29,8 +29,11 @@ For what complex number $z$ does $\cos z=3$?
 As printed in the source, choices (B) and (C) coincide, as do (A), (D) and (E). From $e^{iz}+e^{-iz}=6$, one gets $e^{iz}=3\pm2\sqrt2$, so the solutions are $z=2k\pi-i\log(3\pm2\sqrt2)$ for $k\in\mathbb{Z}$.
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 w=e^{iz},
 $$
@@ -39,7 +42,9 @@ $$
 w^2-6w+1=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 \cos z=\frac{e^{iz}+e^{-iz}}{2},
@@ -53,14 +58,21 @@ $$
 w^2+1=6w,
 $$
 which is the displayed quadratic equation.
+
 :::
 
-<1>2. The two possible values of $w$ are
+:::
+
+::: pf-step
+
+The two possible values of $w$ are
 $$
 w=3\pm2\sqrt2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quadratic formula applied to step <1>1 gives
 $$
 w=\frac{6\pm\sqrt{36-4}}{2}
@@ -68,41 +80,66 @@ w=\frac{6\pm\sqrt{36-4}}{2}
 =3\pm2\sqrt2.
 $$
 Both values are positive real numbers, and their product is $1$.
+
 :::
 
-<1>3. For either value of $w$ in step <1>2, all solutions of $e^{iz}=w$ are
+:::
+
+::: pf-step
+
+For either value of $w$ in step <1>2, all solutions of $e^{iz}=w$ are
 $$
 z=2k\pi-i\log w,
 \qquad k\in\ZZ.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $w>0$, the solutions of $e^{iz}=w$ satisfy
 $$
 iz=\log w+2k\pi i,
 \qquad k\in\ZZ.
 $$
 Multiplying by $-i$ gives the displayed formula.
+
 :::
 
-<1>4. Hence the complete solution set is
+:::
+
+::: pf-step
+
+Hence the complete solution set is
 $$
 \boxed{z=2k\pi-i\log(3\pm2\sqrt2),\qquad k\in\ZZ}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the two values of $w$ from step <1>2 into step <1>3. Conversely, every number obtained this way satisfies $e^{iz}=3\pm2\sqrt2$ and hence the quadratic relation in step <1>1, so it satisfies $\cos z=3$.
+
 :::
 
-<1>5. None of the answer choices in the retained scan is correct as printed; the source's Chapter 8 solution gives the formula in step <1>4 and labels it choice (C).
+:::
 
-::: {.proof}
+::: pf-step
+
+None of the answer choices in the retained scan is correct as printed; the source's Chapter 8 solution gives the formula in step <1>4 and labels it choice (C).
+
+
+::: pf-proof
+
 Direct inspection of the retained page shows $\sqrt{2i}$, not $\sqrt2$, in every choice; moreover choices (B) and (C) are identical, as are (A), (D), and (E). Step <1>4 shows that the required quantity is $\sqrt2$. Thus the printed choices do not contain the derived solution, although the Chapter 8 derivation does.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>5 give the complete mathematical solution and the status of the printed choices.
+
 :::
+
 :::

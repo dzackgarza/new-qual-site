@@ -26,13 +26,18 @@ The equation $x^3z^5-y^2z^3-3xy=1$ defines an implicit function $z=f(x,y)$. What
 (E) $8$
 :::
 
-::: {.solution}
-<1>1. At $(x,y)=(-1,1)$, the implicit equation has the unique real solution
+::: pf
+
+::: pf-step
+
+At $(x,y)=(-1,1)$, the implicit equation has the unique real solution
 $$
 z=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $x=-1$ and $y=1$ into
 $$
 x^3z^5-y^2z^3-3xy=1
@@ -46,16 +51,23 @@ $$
 z^5+z^3=2.
 $$
 The value $z=1$ satisfies this equation. If $z\le0$, then $z^5+z^3\le0$; if $0<z<1$, then $z^5+z^3<2$; and if $z>1$, then $z^5+z^3>2$. Thus no other real value is possible.
+
 :::
 
-<1>2. Implicit differentiation with respect to $y$, holding $x$ fixed, gives
+:::
+
+::: pf-step
+
+Implicit differentiation with respect to $y$, holding $x$ fixed, gives
 $$
 \frac{\partial z}{\partial y}
 =
 \frac{2yz^3+3x}{5x^3z^4-3y^2z^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiating the defining equation yields
 $$
 5x^3z^4\frac{\partial z}{\partial y}
@@ -70,15 +82,22 @@ $$
 =2yz^3+3x,
 $$
 which gives the displayed formula whenever the coefficient on the left is nonzero.
+
 :::
 
-<1>3. At $(x,y,z)=(-1,1,1)$,
+:::
+
+::: pf-step
+
+At $(x,y,z)=(-1,1,1)$,
 $$
 \boxed{\frac{\partial f}{\partial y}=\frac18},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the relevant point on the surface has $z=1$. Substitution into step <1>2 gives
 $$
 \frac{\partial f}{\partial y}
@@ -88,11 +107,15 @@ $$
 =\frac18.
 $$
 The denominator is $-8\ne0$, so the implicit derivative is well-defined there.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested partial derivative and corresponding choice.
+
 :::
+
 :::

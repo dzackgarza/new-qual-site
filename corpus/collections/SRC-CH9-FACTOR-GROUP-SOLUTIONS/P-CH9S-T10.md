@@ -34,7 +34,6 @@ Explain why this proves that the left cosets of $H$ do not form a group under co
 In Table 5.1, $\alpha_6 = (243)$, $\alpha_7 = (142)$, $\alpha_9 = (132)$ and $\alpha_{11} = (234)$, as identified in the source's solution.
 :::
 
-::: {.solution}
 Let
 $$
 t=(12)(34),
@@ -42,9 +41,15 @@ t=(12)(34),
 H=\{(1),t\}.
 $$
 
-<1>1. The subgroup $H$ is not normal in $A_4$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The subgroup $H$ is not normal in $A_4$.
+
+
+::: pf-proof
+
 Take $g=(123)$. Direct multiplication gives
 $$
 gH=\{(123),(134)\},
@@ -56,16 +61,23 @@ $$
 These two cosets are not equal. A subgroup is normal exactly when its
 left and right cosets agree for every group element, so
 $H\not\trianglelefteq A_4$.
+
 :::
 
-<1>2. The stated pairs of left cosets are equal:
+:::
+
+::: pf-step
+
+The stated pairs of left cosets are equal:
 $$
 \alpha_6H=\alpha_7H,
 \qquad
 \alpha_9H=\alpha_{11}H.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using the permutations specified in the problem,
 $$
 \alpha_6^{-1}\alpha_7
@@ -82,14 +94,21 @@ $$
 $$
 For left cosets, $aH=bH$ exactly when $a^{-1}b\in H$. The two displayed
 computations therefore give the required equalities.
+
 :::
 
-<1>3. The products of the chosen representatives determine different left cosets:
+:::
+
+::: pf-step
+
+The products of the chosen representatives determine different left cosets:
 $$
 \alpha_6\alpha_9H\neq\alpha_7\alpha_{11}H.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 $$
 \alpha_6\alpha_9
@@ -112,11 +131,18 @@ $$
 \alpha_7\alpha_{11}H=(14)(23)H\neq H.
 $$
 Thus the two product cosets are different.
+
 :::
 
-<1>4. Coset multiplication is not well-defined on the set of left cosets of $H$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Coset multiplication is not well-defined on the set of left cosets of $H$.
+
+
+::: pf-proof
+
 By step <1>2, the first factors $\alpha_6H$ and $\alpha_7H$ represent
 the same left coset, and the second factors $\alpha_9H$ and
 $\alpha_{11}H$ also represent the same left coset. If the rule
@@ -126,20 +152,31 @@ $$
 were well-defined, replacing either representative by another
 representative of the same coset could not change the product coset.
 Step <1>3 shows that it does change. Hence the rule is not well-defined.
+
 :::
 
-<1>5. The left cosets of $H$ do not form a group under coset multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The left cosets of $H$ do not form a group under coset multiplication.
+
+
+::: pf-proof
+
 A group operation must first be a well-defined binary operation on the
 underlying set. Step <1>4 shows that the proposed coset multiplication
 is not well-defined, so it cannot make the set of left cosets into a
 group.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and steps <1>2--<1>5 prove part (b).
+
 :::
+
 :::

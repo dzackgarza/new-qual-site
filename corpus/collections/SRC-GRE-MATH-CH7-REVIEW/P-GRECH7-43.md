@@ -31,35 +31,54 @@ III. Two of the tables have at least $31$ flowers combined.
 (E) I, II, and III
 :::
 
-::: {.solution}
 Let the four table counts be nonnegative integers $a,b,c,d$ with
 $$
 a+b+c+d=61.
 $$
 
-<1>1. Statement I need not be true.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement I need not be true.
+
+
+::: pf-proof
+
 The distribution
 $$
 (a,b,c,d)=(16,15,15,15)
 $$
 uses all $61$ flowers, but every table has at least $15$ flowers. Thus no table has $13$ or fewer.
+
 :::
 
-<1>2. Statement II must be true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement II must be true.
+
+
+::: pf-proof
+
 If every table had at most $15$ flowers, then
 $$
 a+b+c+d\le4\cdot15=60,
 $$
 contradicting the total of $61$. Hence some table has at least $16$ flowers.
+
 :::
 
-<1>3. Statement III must be true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement III must be true.
+
+
+::: pf-proof
+
 Reorder the four counts so that
 $$
 a\ge b\ge c\ge d.
@@ -77,21 +96,32 @@ $$
 a+b+c+d\le60,
 $$
 again contradicting the total $61$. Thus some two tables contain at least $31$ flowers combined.
+
 :::
 
-<1>4. Therefore the statements that must be true are
+:::
+
+::: pf-step
+
+Therefore the statements that must be true are
 $$
 \boxed{\text{II and III only}},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a counterexample to I, while steps <1>2 and <1>3 prove II and III.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

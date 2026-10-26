@@ -32,46 +32,76 @@ III. $\ZZ_{p^2}$, where $p$ is a prime
 (E) I and III only
 :::
 
-::: {.solution}
-<1>1. The ring $\ZZ\oplus\ZZ$ is not an integral domain.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ring $\ZZ\oplus\ZZ$ is not an integral domain.
+
+
+::: pf-proof
+
 The nonzero elements $(1,0)$ and $(0,1)$ satisfy
 $$
 (1,0)(0,1)=(0,0),
 $$
 so $\ZZ\oplus\ZZ$ has zero divisors.
+
 :::
 
-<1>2. The ring $\ZZ_p$ is an integral domain when $p$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $\ZZ_p$ is an integral domain when $p$ is prime.
+
+
+::: pf-proof
+
 Suppose $\overline a\,\overline b=\overline0$ in $\ZZ_p$. Then $p\mid ab$. Since $p$ is prime, Euclid's lemma gives $p\mid a$ or $p\mid b$, so $\overline a=\overline0$ or $\overline b=\overline0$. Thus $\ZZ_p$ has no zero divisors. It is commutative and has identity, so it is an integral domain.
+
 :::
 
-<1>3. The ring $\ZZ_{p^2}$ is not an integral domain.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $\ZZ_{p^2}$ is not an integral domain.
+
+
+::: pf-proof
+
 The residue class $\overline p$ is nonzero modulo $p^2$, but
 $$
 \overline p\,\overline p=\overline{p^2}=\overline0.
 $$
 Hence $\overline p$ is a nonzero zero divisor.
+
 :::
 
-<1>4. Therefore the only integral domain listed is
+:::
+
+::: pf-step
+
+Therefore the only integral domain listed is
 $$
 \boxed{\text{II only}},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 show that I and III are not integral domains and II is an integral domain.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

@@ -25,28 +25,40 @@ Find the Laurent series expansions of the function $f(z) = \frac{1}{z - 3}$ that
 (E) $\sum_{n=1}^{\infty} (z - 4)^{-n-1}$
 :::
 
-::: {.solution}
-<1>1. For $|z-4|>1$,
+::: pf
+
+::: pf-step
+
+For $|z-4|>1$,
 $$
 \frac1{z-3}
 =\frac1{z-4}\frac1{1+\frac1{z-4}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $z-3=(z-4)+1$, factoring $z-4$ from the denominator gives
 $$
 z-3=(z-4)\left(1+\frac1{z-4}\right),
 $$
 which yields the displayed identity.
+
 :::
 
-<1>2. The geometric-series expansion is
+:::
+
+::: pf-step
+
+The geometric-series expansion is
 $$
 \frac1{z-3}
 =\sum_{n=0}^{\infty}(-1)^n(z-4)^{-n-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis $|z-4|>1$ gives
 $$
 \left|\frac{-1}{z-4}\right|<1.
@@ -60,21 +72,32 @@ $$
 \end{aligned}
 $$
 The convergence condition is exactly $|z-4|>1$.
+
 :::
 
-<1>3. Therefore the required Laurent series is
+:::
+
+::: pf-step
+
+Therefore the required Laurent series is
 $$
 \boxed{\sum_{n=0}^{\infty}(-1)^n(z-4)^{-n-1}},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 derives the expansion on the stated annulus. In particular, the $n=0$ term $(z-4)^{-1}$ is present, so the otherwise similar choice (C), whose sum starts at $n=1$, omits the leading term and cannot equal $f$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required expansion.
+
 :::
+
 :::

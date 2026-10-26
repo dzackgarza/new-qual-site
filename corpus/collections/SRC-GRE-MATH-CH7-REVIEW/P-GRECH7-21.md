@@ -25,10 +25,15 @@ Which of the following is NOT a tautology?
 (E) $A \lor (B \land C) \leftrightarrow (A \land B) \lor (A \land C)$
 :::
 
-::: {.solution}
-<1>1. Choices (A), (B), and (D) are tautologies.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Choices (A), (B), and (D) are tautologies.
+
+
+::: pf-proof
+
 Choice (A) is the law of double negation,
 $$
 \neg\neg A\leftrightarrow A.
@@ -42,11 +47,18 @@ $$
 \neg(C\land D)\leftrightarrow\neg C\lor\neg D.
 $$
 Each identity holds for every assignment of truth values.
+
 :::
 
-<1>2. Choice (C) is not a tautology.
+:::
 
-::: {.proof}
+::: pf-step
+
+Choice (C) is not a tautology.
+
+
+::: pf-proof
+
 Take $A$ true, $B$ false, and $C$ false. Then
 $$
 (A\land B)\to C
@@ -56,11 +68,18 @@ $$
 A\to(B\lor C)
 $$
 is false because its antecedent is true and its consequent is false. Hence the biconditional in (C) is false for this assignment.
+
 :::
 
-<1>3. Choice (E), as printed, is also not a tautology.
+:::
 
-::: {.proof}
+::: pf-step
+
+Choice (E), as printed, is also not a tautology.
+
+
+::: pf-proof
+
 Take $A$ true, $B$ false, and $C$ false. Then
 $$
 A\lor(B\land C)
@@ -70,14 +89,21 @@ $$
 (A\land B)\lor(A\land C)
 $$
 is false. Thus the biconditional in (E) is false for this assignment.
+
 :::
 
-<1>4. The source's explanation identifies (E) as the distributive law, whose correct right-hand side is
+:::
+
+::: pf-step
+
+The source's explanation identifies (E) as the distributive law, whose correct right-hand side is
 $$
 (A\lor B)\land(A\lor C).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The valid distributive law for disjunction over conjunction is
 $$
 A\lor(B\land C)
@@ -85,20 +111,31 @@ A\lor(B\land C)
 (A\lor B)\land(A\lor C).
 $$
 With this correction, (E) is a tautology, leaving (C) as the unique non-tautology and matching the source's stated answer.
+
 :::
 
-<1>5. Therefore the problem as printed has two correct choices, (C) and (E); under the evident correction in step <1>4, the intended answer is
+:::
+
+::: pf-step
+
+Therefore the problem as printed has two correct choices, (C) and (E); under the evident correction in step <1>4, the intended answer is
 $$
 \boxed{\text{(C)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2 and <1>3 show that both (C) and the printed (E) are non-tautologies. Step <1>4 identifies the source's evident intended version of (E), under which only (C) remains non-tautological.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives both the literal status of the printed question and the intended answer.
+
 :::
+
 :::

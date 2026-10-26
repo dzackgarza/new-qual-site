@@ -21,13 +21,18 @@ A=\{x+iy:xy>1,\ x>0,\ y>0\}.
 What is the image of $A$ under the map $f(z)=z^2$?
 :::
 
-::: {.solution}
-<1>1. If \(z=x+iy\in A\), then
+::: pf
+
+::: pf-step
+
+If \(z=x+iy\in A\), then
 \[
 \operatorname{Im}(z^2)>2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(z=x+iy\),
 \[
 z^2=(x^2-y^2)+2ixy.
@@ -40,11 +45,18 @@ Thus
 \[
 f(A)\subseteq\{w:\operatorname{Im}w>2\}.
 \]
+
 :::
 
-<1>2. Every \(w\) with \(\operatorname{Im}w>2\) is equal to \(z^2\) for some \(z\in A\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Every \(w\) with \(\operatorname{Im}w>2\) is equal to \(z^2\) for some \(z\in A\).
+
+
+::: pf-proof
+
 Let \(w\) satisfy \(\operatorname{Im}w>2\). Then \(w\ne0\) and its argument may be chosen as \(\theta\in(0,\pi)\). Write
 \[
 w=re^{i\theta},
@@ -59,20 +71,31 @@ Because \(0<\theta/2<\pi/2\), one has \(x>0\) and \(y>0\). Moreover \(z^2=w\), s
 2xy=\operatorname{Im}(z^2)=\operatorname{Im}w>2,
 \]
 hence \(xy>1\). Therefore \(z\in A\).
+
 :::
 
-<1>3. The image is
+:::
+
+::: pf-step
+
+The image is
 \[
 \boxed{f(A)=\{w\in\mathbb C:\operatorname{Im}w>2\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives one inclusion and step <1>2 gives the reverse inclusion.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 determines the requested image.
+
 :::
+
 :::

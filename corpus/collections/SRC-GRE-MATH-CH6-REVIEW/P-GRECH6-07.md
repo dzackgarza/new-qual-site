@@ -26,20 +26,32 @@ Which one of the following groups is cyclic?
 (E) $\ZZ_4 \times \ZZ_6$
 :::
 
-::: {.solution}
-<1>1. The direct product $\ZZ_m\times\ZZ_n$ is cyclic exactly when $\gcd(m,n)=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The direct product $\ZZ_m\times\ZZ_n$ is cyclic exactly when $\gcd(m,n)=1$.
+
+
+::: pf-proof
+
 The order of an element $(\overline a,\overline b)$ is
 $$
 \operatorname{lcm}\bigl(\operatorname{ord}(\overline a),\operatorname{ord}(\overline b)\bigr),
 $$
 which divides $\operatorname{lcm}(m,n)$. If $\gcd(m,n)>1$, then $\operatorname{lcm}(m,n)<mn=|\ZZ_m\times\ZZ_n|$, so no element can generate the product. If $\gcd(m,n)=1$, then $(\overline1,\overline1)$ has order $\operatorname{lcm}(m,n)=mn$, so it generates the product.
+
 :::
 
-<1>2. Among the five pairs of moduli, only $3$ and $4$ are relatively prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+Among the five pairs of moduli, only $3$ and $4$ are relatively prime.
+
+
+::: pf-proof
+
 The greatest common divisors for the choices are
 $$
 \gcd(2,4)=2,\quad
@@ -48,21 +60,32 @@ $$
 \gcd(3,6)=3,\quad
 \gcd(4,6)=2.
 $$
+
 :::
 
-<1>3. Hence the cyclic group is
+:::
+
+::: pf-step
+
+Hence the cyclic group is
 $$
 \boxed{\ZZ_3\times\ZZ_4},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies the unique cyclic choice.
+
 :::
+
 :::

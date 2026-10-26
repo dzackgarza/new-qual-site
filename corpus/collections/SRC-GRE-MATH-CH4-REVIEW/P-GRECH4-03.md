@@ -26,28 +26,40 @@ Every curve in a certain family, $y = f(x, c)$, has the following property: the 
 (E) $c\sqrt{x}$
 :::
 
-::: {.solution}
-<1>1. Every curve in the family satisfies
+::: pf
+
+::: pf-step
+
+Every curve in the family satisfies
 $$
 \int_0^x f(t,c)\,dt
 =\frac13 x f(x,c).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the point $(x,y)$ on a curve, one has $y=f(x,c)$. The area under the curve from $0$ to $x$ is
 $$
 \int_0^x f(t,c)\,dt,
 $$
 while the rectangle with opposite vertices $(0,0)$ and $(x,y)$ has area $xy=x f(x,c)$. The stated area relation gives the displayed identity.
+
 :::
 
-<1>2. Writing $y=f(x,c)$, every such curve satisfies
+:::
+
+::: pf-step
+
+Writing $y=f(x,c)$, every such curve satisfies
 $$
 xy'=2y
 $$
 for $x>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the identity in step <1>1 with respect to $x$. The fundamental theorem of calculus gives
 $$
 y
@@ -55,15 +67,22 @@ y
 =\frac13(y+xy').
 $$
 Multiplying by $3$ and rearranging yields $xy'=2y$.
+
 :::
 
-<1>3. The family is
+:::
+
+::: pf-step
+
+The family is
 $$
 \boxed{f(x,c)=cx^2},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 For a nonzero solution of the equation in step <1>2,
 $$
 \frac{y'}{y}=\frac2x,
@@ -73,11 +92,15 @@ $$
 \log|y|=2\log x+C,
 $$
 and hence $y=cx^2$ for a constant $c$. The zero solution is obtained by taking $c=0$, so the same formula describes the full family.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested family and corresponding choice.
+
 :::
+
 :::

@@ -25,8 +25,11 @@ Let $C$ be the circle in the $yz$-plane whose equation is $(y - 3)^2 + z^2 = 1$.
 (E) $(x^2 + y^2 + z^2 + 8)^2 = 36(y^2 + z^2)$
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 \rho=\sqrt{x^2+y^2},
 $$
@@ -35,19 +38,28 @@ $$
 (\rho-3)^2+z^2=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Revolving the circle $(y-3)^2+z^2=1$ about the $z$-axis replaces the
 nonnegative distance $y$ from the axis in the generating half-plane by the
 radial distance $\rho=\sqrt{x^2+y^2}$ from the $z$-axis. Hence the generating
 circle equation becomes the displayed equation.
+
 :::
 
-<1>2. The equation in step <1>1 is equivalent to
+:::
+
+::: pf-step
+
+The equation in step <1>1 is equivalent to
 $$
 x^2+y^2+z^2+8=6\sqrt{x^2+y^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding step <1>1 gives
 $$
 \rho^2-6\rho+9+z^2=1,
@@ -57,24 +69,35 @@ $$
 \rho^2+z^2+8=6\rho.
 $$
 Substitute $\rho^2=x^2+y^2$.
+
 :::
 
-<1>3. Therefore the torus has equation
+:::
+
+::: pf-step
+
+Therefore the torus has equation
 $$
 \boxed{(x^2+y^2+z^2+8)^2=36(x^2+y^2)},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Squaring the equality in step <1>2 gives the displayed polynomial equation.
 Conversely, its left unsquared quantity $x^2+y^2+z^2+8$ is strictly positive
 and $\sqrt{x^2+y^2}\ge0$, so the squared equation forces the positive sign and
 recovers step <1>2. Thus no extraneous branch is introduced.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required equation of the surface.
+
 :::
+
 :::

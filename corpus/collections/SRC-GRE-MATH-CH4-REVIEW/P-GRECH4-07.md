@@ -32,13 +32,18 @@ such that $f(\pi) = 1$. What is the value of $f(\frac{1}{2}\pi)$?
 (E) $\frac{\pi}{2} + 1$
 :::
 
-::: {.solution}
-<1>1. On the positive $x$-axis, multiplication by the integrating factor $x$ gives
+::: pf
+
+::: pf-step
+
+On the positive $x$-axis, multiplication by the integrating factor $x$ gives
 $$
 (xy)'=x\sin x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The differential equation is
 $$
 y'+\frac1x y=\sin x.
@@ -48,25 +53,39 @@ $$
 xy'+y=x\sin x.
 $$
 The left-hand side is $(xy)'$ by the product rule.
+
 :::
 
-<1>2. The general solution on this interval is
+:::
+
+::: pf-step
+
+The general solution on this interval is
 $$
 y=-\cos x+\frac{\sin x+C}{x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrating step <1>1 gives
 $$
 xy=\int x\sin x\,dx
 =-x\cos x+\sin x+C,
 $$
 where integration by parts was used. Division by $x>0$ gives the displayed formula.
+
 :::
 
-<1>3. The condition $f(\pi)=1$ forces $C=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The condition $f(\pi)=1$ forces $C=0$.
+
+
+::: pf-proof
+
 By step <1>2,
 $$
 1=f(\pi)
@@ -74,15 +93,22 @@ $$
 =1+\frac{C}{\pi}.
 $$
 Hence $C=0$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f\left(\frac{\pi}{2}\right)=\frac{2}{\pi}},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>3 in step <1>2,
 $$
 f\left(\frac{\pi}{2}\right)
@@ -90,11 +116,15 @@ f\left(\frac{\pi}{2}\right)
 +\frac{\sin(\pi/2)}{\pi/2}
 =\frac{2}{\pi}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value and corresponding choice.
+
 :::
+
 :::

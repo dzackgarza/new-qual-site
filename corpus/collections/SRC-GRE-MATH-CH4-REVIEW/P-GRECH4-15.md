@@ -32,8 +32,11 @@ then $w$ could equal
 (E) $\sqrt{2x + 3y}$
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 s=3x+2y,
 $$
@@ -42,16 +45,25 @@ $$
 2s_x-3s_y=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The partial derivatives are $s_x=3$ and $s_y=2$, so
 $$
 2s_x-3s_y=2(3)-3(2)=0.
 $$
+
 :::
 
-<1>2. Every differentiable function of $s=3x+2y$ satisfies the PDE.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every differentiable function of $s=3x+2y$ satisfies the PDE.
+
+
+::: pf-proof
+
 Let $w=H(s)$ for a differentiable one-variable function $H$. By the chain rule,
 $$
 w_x=H'(s)s_x,
@@ -64,25 +76,36 @@ $$
 =H'(s)(2s_x-3s_y)
 =0.
 $$
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 $$
 \boxed{w=e^{\arctan(3x+2y)}}
 $$
 satisfies the PDE, so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 This function has the form $H(3x+2y)$ with
 $$
 H(s)=e^{\arctan s}.
 $$
 Hence step <1>2 applies.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies a listed solution of the given PDE.
+
 :::
+
 :::

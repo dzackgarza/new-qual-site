@@ -25,43 +25,62 @@ $\int_{-1/2}^{1/2} \frac{dx}{1 - x^2} =$
 (E) $3 \log 3$
 :::
 
-::: {.solution}
-<1>1. On $[-1/2,1/2]$,
+::: pf
+
+::: pf-step
+
+On $[-1/2,1/2]$,
 $$
 \frac1{1-x^2}
 =\frac12\left(\frac1{1+x}+\frac1{1-x}\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combining the two fractions on the right gives
 $$
 \frac12\frac{(1-x)+(1+x)}{(1+x)(1-x)}
 =\frac1{1-x^2}.
 $$
+
 :::
 
-<1>2. An antiderivative on this interval is
+:::
+
+::: pf-step
+
+An antiderivative on this interval is
 $$
 \frac12\log\frac{1+x}{1-x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrating the decomposition from step <1>1 gives
 $$
 \frac12\log(1+x)-\frac12\log(1-x)
 =\frac12\log\frac{1+x}{1-x}.
 $$
 Both $1+x$ and $1-x$ are positive on the interval.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_{-1/2}^{1/2}\frac{dx}{1-x^2}
 =\boxed{\log3},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \begin{aligned}
@@ -73,11 +92,15 @@ $$
 =\log3.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required integral.
+
 :::
+
 :::

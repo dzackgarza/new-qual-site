@@ -32,10 +32,15 @@ III. $K_3 = \{a + bi : a, b \in \ZZ \text{ and } i = \sqrt{-1}\}$
 (E) None of the $K_i$ are subfields of $\CC$.
 :::
 
-::: {.solution}
-<1>1. The set $K_1$ equals $\QQ(\sqrt6)=\{a+b\sqrt6:a,b\in\QQ\}$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $K_1$ equals $\QQ(\sqrt6)=\{a+b\sqrt6:a,b\in\QQ\}$.
+
+
+::: pf-proof
+
 Since
 $$
 \sqrt{\frac23}=\frac{\sqrt6}{3},
@@ -45,11 +50,18 @@ $$
 a+c\sqrt6=a+(3c)\sqrt{\frac23},
 $$
 so the two displayed sets coincide.
+
 :::
 
-<1>2. The set $K_1$ is a subfield of $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K_1$ is a subfield of $\CC$.
+
+
+::: pf-proof
+
 It contains $0$ and $1$, and it is closed under addition, subtraction, and multiplication because
 $$
 (a+b\sqrt6)(c+d\sqrt6)
@@ -61,11 +73,18 @@ $$
 =\frac{a-b\sqrt6}{a^2-6b^2}.
 $$
 The denominator is nonzero: otherwise, if $b\ne0$, then $(a/b)^2=6$, contradicting the irrationality of $\sqrt6$, while if $b=0$ then $a=0$, contrary to the element being nonzero. Thus the inverse again has rational coefficients and lies in $K_1$.
+
 :::
 
-<1>3. The set $K_2$ is not a subfield of $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K_2$ is not a subfield of $\CC$.
+
+
+::: pf-proof
+
 The element
 $$
 u=1+\sqrt2
@@ -75,31 +94,49 @@ $$
 u+u=2+2\sqrt2
 $$
 does not lie in $K_2$, since $2\cdot2=4>\sqrt2$. Hence $K_2$ is not closed under addition.
+
 :::
 
-<1>4. The set $K_3$ is not a subfield of $\CC$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K_3$ is not a subfield of $\CC$.
+
+
+::: pf-proof
+
 The nonzero element $1+i$ lies in $K_3$, but
 $$
 (1+i)^{-1}=\frac{1-i}{2}=\frac12-\frac12 i
 $$
 does not lie in $K_3$ because its real and imaginary coefficients are not integers. Thus $K_3$ is not closed under inverses of nonzero elements.
+
 :::
 
-<1>5. Therefore the listed subfields are
+:::
+
+::: pf-step
+
+Therefore the listed subfields are
 $$
 \boxed{\text{I only}},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 proves that $K_1$ is a subfield, while steps <1>3 and <1>4 rule out $K_2$ and $K_3$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required choice.
+
 :::
+
 :::

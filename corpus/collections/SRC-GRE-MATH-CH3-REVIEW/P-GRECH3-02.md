@@ -26,15 +26,20 @@ If $\hat{\mathbf{i}}=(1,0,0)$, $\hat{\mathbf{j}}=(0,1,0)$, and $\hat{\mathbf{k}}
 (E) $2\hat{\mathbf{i}}+\hat{\mathbf{j}}-\hat{\mathbf{k}}$
 :::
 
-::: {.solution}
 Write
 $$
 \mathbf v=(2,-1,3).
 $$
 
-<1>1. The vectors in choices (A), (B), (C), and (E) are orthogonal to $\mathbf v$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The vectors in choices (A), (B), (C), and (E) are orthogonal to $\mathbf v$.
+
+
+::: pf-proof
+
 Their dot products with $\mathbf v$ are
 $$
 \begin{aligned}
@@ -45,11 +50,18 @@ $$
 \end{aligned}
 $$
 Thus each of these four vectors is orthogonal to $\mathbf v$.
+
 :::
 
-<1>2. The vector in choice (D) is not orthogonal to $\mathbf v$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vector in choice (D) is not orthogonal to $\mathbf v$.
+
+
+::: pf-proof
+
 For choice (D),
 $$
 (2,-1,3)\cdot(1,3,-1)
@@ -57,20 +69,31 @@ $$
 =-4\ne0.
 $$
 Hence this vector is not orthogonal to $\mathbf v$.
+
 :::
 
-<1>3. Therefore the answer is
+:::
+
+::: pf-step
+
+Therefore the answer is
 $$
 \boxed{\text{(D) }\hat{\mathbf{i}}+3\hat{\mathbf{j}}-\hat{\mathbf{k}}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 show that (D) is the unique listed vector whose dot product with $\mathbf v$ is nonzero.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested vector and corresponding choice.
+
 :::
+
 :::

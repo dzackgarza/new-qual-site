@@ -29,10 +29,15 @@ What is the polar form of a complex number equal to $(i - \sqrt{3})^6$?
 The source prints a stray empty "$2^6(\ )$" after choice (D).
 :::
 
-::: {.solution}
-<1>1. The complex number $i-\sqrt3$ has modulus $2$ and argument $5\pi/6$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The complex number $i-\sqrt3$ has modulus $2$ and argument $5\pi/6$.
+
+
+::: pf-proof
+
 Its real and imaginary parts are $-\sqrt3$ and $1$, so its modulus is
 $$
 \sqrt{(-\sqrt3)^2+1^2}=2.
@@ -45,22 +50,34 @@ so the principal argument is $\theta=5\pi/6$. Thus
 $$
 i-\sqrt3=2e^{5\pi i/6}.
 $$
+
 :::
 
-<1>2. Its sixth power is
+:::
+
+::: pf-step
+
+Its sixth power is
 $$
 (i-\sqrt3)^6=2^6e^{5\pi i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply De Moivre's formula to the polar form in step <1>1:
 $$
 \left(2e^{5\pi i/6}\right)^6
 =2^6e^{5\pi i}.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 (i-\sqrt3)^6
 =2^6(\cos5\pi+i\sin5\pi)
@@ -68,13 +85,19 @@ $$
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\cos5\pi=-1$ and $\sin5\pi=0$, the expression from step <1>2 is the negative real number $-2^6$. Equivalently, its polar form may be written $2^6e^{i\pi}$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value in polar form and the matching choice.
+
 :::
+
 :::

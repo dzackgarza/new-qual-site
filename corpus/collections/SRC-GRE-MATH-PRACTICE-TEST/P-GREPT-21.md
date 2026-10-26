@@ -29,17 +29,27 @@ for $b = \frac{1}{2}$.
 (E) does not exist
 :::
 
-::: {.solution}
-<1>1. For $b=\frac12$, the integral is
+::: pf
+
+::: pf-step
+
+For $b=\frac12$, the integral is
 $$
 \int_{-1/2}^{1}(x-[x])\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $b=1/2$ into the limits $-b$ and $2b$ gives $-1/2$ and $1$.
+
 :::
 
-<1>2. On the relevant subintervals,
+:::
+
+::: pf-step
+
+On the relevant subintervals,
 $$
 x-[x]=
 \begin{cases}
@@ -48,20 +58,29 @@ x, & 0\le x<1.
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $-1\le x<0$, the defining integer is $[x]=-1$, while for
 $0\le x<1$ it is $[x]=0$. The values at the single endpoints do not affect
 the integral.
+
 :::
 
-<1>3. The two pieces have integrals
+:::
+
+::: pf-step
+
+The two pieces have integrals
 $$
 \int_{-1/2}^{0}(x+1)\,dx=\frac38
 \qquad\text{and}\qquad
 \int_0^1x\,dx=\frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct calculation gives
 $$
 \left[\frac{x^2}{2}+x\right]_{-1/2}^{0}=\frac38
@@ -70,25 +89,36 @@ and
 $$
 \left[\frac{x^2}{2}\right]_0^1=\frac12.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_{-1/2}^{1}(x-[x])\,dx
 =\boxed{\frac78},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Adding the two values from step <1>3 gives
 $$
 \frac38+\frac12=\frac78.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required integral.
+
 :::
+
 :::

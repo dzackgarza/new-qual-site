@@ -22,7 +22,6 @@ z+e^{-z}=2.
 Hint: use a contour in the right half-plane bounded by a large semicircle and a vertical line $\operatorname{Re}z=\varepsilon$, with $R>3$ and $\varepsilon>0$ small, so in particular the ball of radius $1$ centered at $2$ lies inside the contour.
 :::
 
-::: {.solution}
 Set
 \[
 f(z)=z+e^{-z}-2,
@@ -35,12 +34,18 @@ D_{R,\varepsilon}
 =\{z\in\mathbb C:\operatorname{Re}z>\varepsilon,\ |z|<R\}.
 \]
 
-<1>1. On \(\partial D_{R,\varepsilon}\),
+::: pf
+
+::: pf-step
+
+On \(\partial D_{R,\varepsilon}\),
 \[
 |f(z)-g(z)|<|g(z)|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(f-g=e^{-z}\) and every point of \(\partial D_{R,\varepsilon}\) has \(\operatorname{Re}z\ge\varepsilon\),
 \[
 |f(z)-g(z)|=e^{-\operatorname{Re}z}\le e^{-\varepsilon}<1.
@@ -54,23 +59,44 @@ On the circular part, \(|z|=R\), so the reverse triangle inequality gives
 |z-2|\ge R-2>1.
 \]
 Thus \(|f-g|<1<|g|\) everywhere on the boundary.
+
 :::
 
-<1>2. The function \(f\) has exactly one zero in \(D_{R,\varepsilon}\), counted with multiplicity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) has exactly one zero in \(D_{R,\varepsilon}\), counted with multiplicity.
+
+
+::: pf-proof
+
 By step <1>1 and Rouché's theorem, \(f\) and \(g\) have the same number of zeros in \(D_{R,\varepsilon}\), counted with multiplicity. The function \(g(z)=z-2\) has exactly one zero, namely \(2\), and \(2\in D_{R,\varepsilon}\) because \(\varepsilon<1<2<R\). Hence \(f\) has exactly one zero there.
+
 :::
 
-<1>3. The function \(f\) has at least one zero in the right half-plane.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) has at least one zero in the right half-plane.
+
+
+::: pf-proof
+
 For example, step <1>2 applied with \(\varepsilon=1/2\) and \(R=4\) gives one zero in \(D_{4,1/2}\), which is contained in \(\{\operatorname{Re}z>0\}\).
+
 :::
 
-<1>4. The function \(f\) has at most one zero in the right half-plane.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) has at most one zero in the right half-plane.
+
+
+::: pf-proof
+
 Suppose \(z_1\) and \(z_2\) were two distinct zeros with positive real part. Choose
 \[
 0<\varepsilon<\min\{1,\operatorname{Re}z_1,\operatorname{Re}z_2\}
@@ -80,21 +106,32 @@ and
 R>\max\{3,|z_1|,|z_2|\}.
 \]
 Then both zeros lie in \(D_{R,\varepsilon}\), contradicting step <1>2, which says that this domain contains only one zero even when multiplicity is counted.
+
 :::
 
-<1>5. Therefore there is exactly
+:::
+
+::: pf-step
+
+Therefore there is exactly
 \[
 \boxed{1}
 \]
 point \(z\) with \(\operatorname{Re}z>0\) satisfying \(z+e^{-z}=2\).
 
-::: {.proof}
+
+::: pf-proof
+
 Such a point exists by step <1>3 and is unique by step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

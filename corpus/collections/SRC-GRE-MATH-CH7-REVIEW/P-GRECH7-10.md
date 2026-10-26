@@ -25,42 +25,65 @@ Let $g(x)$ be a polynomial function whose derivative is continuous and nonzero o
 (E) $x_{n+1}=x_n-\dfrac{g'(x)}{g(x)}$
 :::
 
-::: {.solution}
-<1>1. The tangent line to $g$ at $x_n$ is
+::: pf
+
+::: pf-step
+
+The tangent line to $g$ at $x_n$ is
 $$
 L_n(t)=g(x_n)+g'(x_n)(t-x_n).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The tangent line through $(x_n,g(x_n))$ has slope $g'(x_n)$, so its point-slope equation is exactly the displayed formula.
+
 :::
 
-<1>2. Its $x$-intercept is
+:::
+
+::: pf-step
+
+Its $x$-intercept is
 $$
 x_{n+1}=x_n-\frac{g(x_n)}{g'(x_n)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of $x_{n+1}$, one has $L_n(x_{n+1})=0$. Using step <1>1,
 $$
 0=g(x_n)+g'(x_n)(x_{n+1}-x_n).
 $$
 Since $g'(x_n)\ne0$ by hypothesis, solving for $x_{n+1}$ gives the displayed recurrence.
+
 :::
 
-<1>3. Therefore Newton's iteration is
+:::
+
+::: pf-step
+
+Therefore Newton's iteration is
 $$
 \boxed{x_{n+1}=x_n-\frac{g(x_n)}{g'(x_n)}},
 $$
 which is choice (D), with the $x$ in its displayed quotient evaluated at $x_n$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 derives the recurrence directly from the tangent-intercept construction in the problem.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested approximation formula.
+
 :::
+
 :::

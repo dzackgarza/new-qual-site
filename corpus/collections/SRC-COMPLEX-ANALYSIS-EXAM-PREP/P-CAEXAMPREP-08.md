@@ -27,15 +27,20 @@ q(z)=a_{n-1}z^{n-1}+\cdots+a_1z+a_0
 with those of $z^n$.
 :::
 
-::: {.solution}
 Write
 \[
 q(z)=p(z)-z^n.
 \]
 
-<1>1. If \(|p(z)|<1\) for every \(|z|=1\), then \(q\) and \(-z^n\) have the same number of zeros in the unit disc, counted with multiplicity.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If \(|p(z)|<1\) for every \(|z|=1\), then \(q\) and \(-z^n\) have the same number of zeros in the unit disc, counted with multiplicity.
+
+
+::: pf-proof
+
 On \(|z|=1\),
 \[
 |q(z)-(-z^n)|
@@ -45,26 +50,44 @@ On \(|z|=1\),
 =|-z^n|.
 \]
 Rouché's theorem therefore gives the same zero count for \(q\) and \(-z^n\) in \(|z|<1\). Since \(-z^n\) has a zero of multiplicity \(n\) at \(0\), that count is \(n\).
+
 :::
 
-<1>2. The hypothesis \(|p(z)|<1\) for every \(|z|=1\) is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The hypothesis \(|p(z)|<1\) for every \(|z|=1\) is impossible.
+
+
+::: pf-proof
+
 Under that hypothesis, \(q\) cannot be the zero polynomial: if \(q\equiv0\), then \(p(z)=z^n\) and \(|p(z)|=1\) on the unit circle. Hence \(q\) is a nonzero polynomial of degree at most \(n-1\), so it has at most \(n-1\) zeros in \(\mathbb C\), counted with multiplicity. This contradicts step <1>1, which gives \(n\) zeros already in the unit disc.
+
 :::
 
-<1>3. Consequently there exists \(z_0\) with \(|z_0|=1\) such that
+:::
+
+::: pf-step
+
+Consequently there exists \(z_0\) with \(|z_0|=1\) such that
 \[
 \boxed{|p(z_0)|\ge1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If no such point existed, then \(|p(z)|<1\) at every point of the unit circle, contrary to step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the required conclusion.
+
 :::
+
 :::

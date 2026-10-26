@@ -26,20 +26,25 @@ What's the area of the triangle whose vertices are $(0,0,1)$, $(0,2,0)$, and $(3
 (E) $7$
 :::
 
-::: {.solution}
 Let
 $$
 A=(0,0,1),\qquad B=(0,2,0),\qquad C=(3,0,0).
 $$
 
-<1>1. Two side vectors issuing from $C$ are
+::: pf
+
+::: pf-step
+
+Two side vectors issuing from $C$ are
 $$
 \overrightarrow{CB}=(-3,2,0),
 \qquad
 \overrightarrow{CA}=(-3,0,1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtracting the coordinates of $C$ from those of $B$ and $A$ gives
 $$
 B-C=(0,2,0)-(3,0,0)=(-3,2,0)
@@ -48,15 +53,22 @@ and
 $$
 A-C=(0,0,1)-(3,0,0)=(-3,0,1).
 $$
+
 :::
 
-<1>2. Their cross product is
+:::
+
+::: pf-step
+
+Their cross product is
 $$
 \overrightarrow{CB}\times\overrightarrow{CA}
 =(2,3,6).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 $$
 \begin{aligned}
@@ -67,15 +79,22 @@ $$
 &=(2,3,6).
 \end{aligned}
 $$
+
 :::
 
-<1>3. The triangle has area
+:::
+
+::: pf-step
+
+The triangle has area
 $$
 \boxed{\frac72},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 The area is one half the area of the parallelogram spanned by the two side vectors. By step <1>2,
 $$
 \begin{aligned}
@@ -86,11 +105,15 @@ $$
 =\frac72.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested area and corresponding choice.
+
 :::
+
 :::

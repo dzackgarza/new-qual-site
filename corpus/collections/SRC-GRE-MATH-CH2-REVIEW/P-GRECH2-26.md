@@ -25,19 +25,31 @@ If $[x]$ denotes the greatest integer $\le x$, then $\int_{0}^{\frac{7}{2}} [x] 
 (E) $\frac{37}{2}$
 :::
 
-::: {.solution}
-<1>1. On the intervals $[0,1)$, $[1,2)$, $[2,3)$, and $[3,7/2]$, the function $[x]$ is respectively $0$, $1$, $2$, and $3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+On the intervals $[0,1)$, $[1,2)$, $[2,3)$, and $[3,7/2]$, the function $[x]$ is respectively $0$, $1$, $2$, and $3$.
+
+
+::: pf-proof
+
 By definition, $[x]$ is the greatest integer not exceeding $x$. Hence it is constant with the stated values on each interval between consecutive integers.
+
 :::
 
-<1>2. The integral equals
+:::
+
+::: pf-step
+
+The integral equals
 $$
 0\cdot1+1\cdot1+2\cdot1+3\cdot\frac12=\frac92.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1 and additivity of the integral,
 $$
 \begin{aligned}
@@ -47,21 +59,32 @@ $$
 &=\frac92.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\frac92},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the value obtained in step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested integral and corresponding choice.
+
 :::
+
 :::

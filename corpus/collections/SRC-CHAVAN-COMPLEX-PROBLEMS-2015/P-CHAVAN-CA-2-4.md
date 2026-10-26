@@ -30,10 +30,15 @@ R=\sqrt{|a_0|^2+\cdots+|a_{n-1}|^2+1}.
 Conclude that every zero of $p$ lies in the open disk $|z|<R$.
 :::
 
-::: {.solution}
-<1>1. If $R=1$, then the zero set of $p$ is $\{0\}$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $R=1$, then the zero set of $p$ is $\{0\}$.
+
+
+::: pf-proof
+
 The equality $R=1$ means
 $$
 |a_0|^2+\cdots+|a_{n-1}|^2+1=1.
@@ -43,9 +48,14 @@ $$
 a_0=a_1=\cdots=a_{n-1}=0,
 $$
 so $p(z)=z^n$. Thus the only zero of $p$ is $0$.
+
 :::
 
-<1>2. Assume $R>1$ and $|z|=R$. Then
+:::
+
+::: pf-step
+
+Assume $R>1$ and $|z|=R$. Then
 $$
 |z^n-p(z)|
 \le
@@ -53,7 +63,9 @@ $$
 \sqrt{1+R^2+\cdots+R^{2n-2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 z^n-p(z)=-\sum_{k=0}^{n-1}a_kz^k,
@@ -71,14 +83,21 @@ $$
 \end{aligned}
 $$
 because $\sum_{k=0}^{n-1}|a_k|^2=R^2-1$ and $|z|=R$.
+
 :::
 
-<1>3. Under the hypotheses of step <1>2,
+:::
+
+::: pf-step
+
+Under the hypotheses of step <1>2,
 $$
 |z^n-p(z)|<|z^n|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The geometric-series identity gives
 $$
 (R^2-1)(1+R^2+\cdots+R^{2n-2})=R^{2n}-1.
@@ -94,11 +113,18 @@ $$
 <R^n
 =|z^n|.
 $$
+
 :::
 
-<1>4. Every zero of $p$ lies in the open disk $|z|<R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every zero of $p$ lies in the open disk $|z|<R$.
+
+
+::: pf-proof
+
 If $R=1$, this follows from step <1>1. Assume $R>1$. On the circle
 $|z|=R$, step <1>3 gives
 $$
@@ -109,13 +135,17 @@ $|z|<R$, counted with multiplicity. The polynomial $z^n$ has exactly
 $n$ zeros there, counted with multiplicity, so $p$ also has $n$ zeros
 in $|z|<R$. Since $p$ has degree $n$, these account for all of its
 zeros. Therefore every zero of $p$ lies in the open disk.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the case $R=1$, steps <1>2 and <1>3 establish the
 requested boundary estimate for $R>1$, and step <1>4 gives the final
 zero-location conclusion.
+
 :::
+
 :::

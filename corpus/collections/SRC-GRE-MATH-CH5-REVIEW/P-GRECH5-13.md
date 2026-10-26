@@ -32,13 +32,18 @@ forms
 (E) a parabola with vertex $(1, y_2)$
 :::
 
-::: {.solution}
-<1>1. The determinant equation is equivalent to
+::: pf
+
+::: pf-step
+
+The determinant equation is equivalent to
 $$
 x(y_1-y_2)+y-y_1=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the determinant along the first row gives
 $$
 x\begin{vmatrix}y_1&1\\ y_2&1\end{vmatrix}
@@ -46,9 +51,14 @@ x\begin{vmatrix}y_1&1\\ y_2&1\end{vmatrix}
 +\begin{vmatrix}0&y_1\\ 1&y_2\end{vmatrix}.
 $$
 The three $2\times2$ determinants are $y_1-y_2$, $-1$, and $-y_1$, respectively. Hence the displayed determinant equals $x(y_1-y_2)+y-y_1$.
+
 :::
 
-<1>2. The locus is the line
+:::
+
+::: pf-step
+
+The locus is the line
 $$
 y=(y_2-y_1)x+y_1,
 $$
@@ -58,17 +68,23 @@ $$
 $$
 Thus the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Solving the equation in step <1>1 for $y$ gives
 $$
 y=y_1-x(y_1-y_2)=(y_2-y_1)x+y_1.
 $$
 This is the slope-intercept equation of a line with slope $y_2-y_1$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 identifies the locus and its slope.
+
 :::
+
 :::

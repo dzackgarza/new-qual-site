@@ -21,8 +21,11 @@ Show that for $p>0$ and $q>0$,
 \]
 :::
 
-::: {.solution}
-<1>1. The integrals
+::: pf
+
+::: pf-step
+
+The integrals
 \[
 \int_0^\infty\frac{|\log t|}{1+t^2}\,dt
 \qquad\text{and}\qquad
@@ -33,7 +36,9 @@ are finite, and
 \int_0^\infty\frac{dt}{1+t^2}=\frac\pi2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On \((0,1]\), one has \((1+t^2)^{-1}\le1\), and
 \[
 \int_0^1|\log t|\,dt=1.
@@ -42,14 +47,21 @@ On \([1,\infty)\), \((1+t^2)^{-1}\le t^{-2}\), and \(\int_1^\infty (\log t)t^{-2
 \[
 \left[\arctan t\right]_{0}^{\infty}=\frac\pi2.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_0^\infty\frac{\log t}{1+t^2}\,dt=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 J=\int_0^\infty\frac{\log t}{1+t^2}\,dt,
@@ -65,16 +77,23 @@ J
 \end{aligned}
 \]
 Thus \(2J=0\), so \(J=0\).
+
 :::
 
-<1>3. For \(p,q>0\),
+:::
+
+::: pf-step
+
+For \(p,q>0\),
 \[
 \boxed{
 \int_0^\infty \frac{\log(px)}{q^2+x^2}\,dx
 =\frac{\pi}{2q}\log(pq)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(x=qt\). Then
 \[
 \begin{aligned}
@@ -85,11 +104,15 @@ Substitute \(x=qt\). Then
 \end{aligned}
 \]
 Step <1>1 evaluates the first integral as \(\pi/2\), and step <1>2 makes the second integral zero. This gives the claimed formula.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the required identity.
+
 :::
+
 :::

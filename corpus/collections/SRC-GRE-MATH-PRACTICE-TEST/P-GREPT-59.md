@@ -25,26 +25,45 @@ Let $\omega = e^{2\pi i/5}$ be a fifth root of $1$. What is the value of the fun
 (E) $2$
 :::
 
-::: {.solution}
-<1>1. $1+\omega+\omega^2+\omega^3+\omega^4=0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$1+\omega+\omega^2+\omega^3+\omega^4=0$.
+
+
+::: pf-proof
+
 Since $\omega=e^{2\pi i/5}$, one has $\omega^5=1$ and $\omega\neq 1$. Thus
 \[
 0=\omega^5-1=(\omega-1)(\omega^4+\omega^3+\omega^2+\omega+1).
 \]
 Because $\omega-1\neq 0$, the second factor must vanish.
+
 :::
 
-<1>2. $\omega^2+\omega+1+\omega^{-1}+\omega^{-2}=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$\omega^2+\omega+1+\omega^{-1}+\omega^{-2}=0$.
+
+
+::: pf-proof
+
 Divide the identity in step <1>1 by the nonzero number $\omega^2$.
+
 :::
 
-<1>3. $f(\omega+\omega^{-1})=\boxed{1}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$f(\omega+\omega^{-1})=\boxed{1}$.
+
+
+::: pf-proof
+
 Expanding and then applying step <1>2 gives
 \[
 \begin{aligned}
@@ -56,11 +75,15 @@ f(\omega+\omega^{-1})
 \end{aligned}
 \]
 Hence the correct choice is (D).
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

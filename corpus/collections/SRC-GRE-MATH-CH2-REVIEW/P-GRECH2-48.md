@@ -25,40 +25,63 @@ If $k_i$ ($i = 0, 1, 2, 3, 4$) are constants such that $x^4 = k_0 + k_1(x+1) + k
 (E) $4$
 :::
 
-::: {.solution}
-<1>1. Set $y=x+1$, so $x=y-1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Set $y=x+1$, so $x=y-1$.
+
+
+::: pf-proof
+
 This is a change of variable in the polynomial identity, chosen so that powers of $x+1$ become ordinary powers of $y$.
+
 :::
 
-<1>2. In powers of $y$,
+:::
+
+::: pf-step
+
+In powers of $y$,
 $$
 x^4=(y-1)^4
 =y^4-4y^3+6y^2-4y+1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the binomial expansion of $(y-1)^4$.
+
 :::
 
-<1>3. The coefficient of $(x+1)^3$ is
+:::
+
+::: pf-step
+
+The coefficient of $(x+1)^3$ is
 $$
 \boxed{k_3=-4},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 The given identity becomes
 $$
 (y-1)^4=k_0+k_1y+k_2y^2+k_3y^3+k_4y^4.
 $$
 Comparing the coefficient of $y^3$ with step <1>2 gives $k_3=-4$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested coefficient and corresponding choice.
+
 :::
+
 :::

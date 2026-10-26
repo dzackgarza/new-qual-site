@@ -25,8 +25,11 @@ Let $S$ be the surface whose equation is $x^2 - xy^2z + z^2 = 1$. The plane tang
 (E) $x - 1 = 2(y - 1) = z - 1$
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 F(x,y,z)=x^2-xy^2z+z^2.
 $$
@@ -35,7 +38,9 @@ $$
 \nabla F(P)=(1,-2,1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The partial derivatives are
 $$
 F_x=2x-y^2z,
@@ -45,29 +50,43 @@ F_y=-2xyz,
 F_z=-xy^2+2z.
 $$
 Evaluating at $(1,1,1)$ gives $(1,-2,1)$.
+
 :::
 
-<1>2. The tangent plane to $S$ at $P$ is
+:::
+
+::: pf-step
+
+The tangent plane to $S$ at $P$ is
 $$
 x-2y+z=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\nabla F(P)\ne0$, it is a normal vector to the level surface
 $F=1$ at $P$. Thus the tangent plane is
 $$
 (1,-2,1)\cdot(x-1,y-1,z-1)=0,
 $$
 which simplifies to $x-2y+z=0$.
+
 :::
 
-<1>3. The line
+:::
+
+::: pf-step
+
+The line
 $$
 \boxed{x=y=z}
 $$
 lies in this tangent plane, so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Every point on the line has the form $(t,t,t)$. Substitution into the plane
 equation from step <1>2 gives
 $$
@@ -78,11 +97,15 @@ The remaining choices are not contained in it: choices (B), (C), and (D)
 contain respectively $(0,0,1)$, $(0,1,0)$, and $(1,0,0)$, none of which
 satisfies $x-2y+z=0$; choice (E) contains $(2,3/2,2)$, which also does not
 satisfy that equation.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies one of the listed lines contained in the tangent plane.
+
 :::
+
 :::

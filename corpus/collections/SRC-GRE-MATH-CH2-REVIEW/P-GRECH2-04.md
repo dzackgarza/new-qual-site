@@ -29,14 +29,19 @@ Evaluate the following limit:
 (E) $1$
 :::
 
-::: {.solution}
-<1>1. After one application of L'Hôpital's rule, the limit becomes
+::: pf
+
+::: pf-step
+
+After one application of L'Hôpital's rule, the limit becomes
 $$
 \lim_{x\to0}
 \frac{(1-x^2)^{-1/2}-1}{3x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both numerator and denominator of the original quotient tend to $0$. Differentiating them gives
 $$
 \frac{d}{dx}(\arcsin x-x)
@@ -47,11 +52,18 @@ $$
 \frac{d}{dx}(x^3)=3x^2.
 $$
 Thus L'Hôpital's rule gives the displayed limit.
+
 :::
 
-<1>2. The limit in step <1>1 equals $1/6$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit in step <1>1 equals $1/6$.
+
+
+::: pf-proof
+
 The quotient in step <1>1 again has the indeterminate form $0/0$. A second application of L'Hôpital's rule gives
 $$
 \lim_{x\to0}
@@ -62,21 +74,32 @@ $$
 \frac{(1-x^2)^{-3/2}}6,
 $$
 whose limit at $0$ is $1/6$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\lim_{x\to0}\frac{\arcsin x-x}{x^3}=\frac16},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested limit and corresponding choice.
+
 :::
+
 :::

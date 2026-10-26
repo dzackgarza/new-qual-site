@@ -36,7 +36,6 @@ then
 (E) $8d$
 :::
 
-::: {.solution}
 Let
 $$
 M=
@@ -48,13 +47,24 @@ p&q&r
 \qquad \det M=d.
 $$
 
-<1>1. Transposing $M$ and then interchanging its first two columns produces a matrix of determinant $-d$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Transposing $M$ and then interchanging its first two columns produces a matrix of determinant $-d$.
+
+
+::: pf-proof
+
 Transposition preserves determinant, so $\det(M^{\mathsf T})=d$. Interchanging two columns multiplies the determinant by $-1$.
+
 :::
 
-<1>2. Starting from the matrix in step <1>1, add its first column to its third column, multiply its second column by $2$, and then subtract twice its first column from its second column. The resulting matrix is
+:::
+
+::: pf-step
+
+Starting from the matrix in step <1>1, add its first column to its third column, multiply its second column by $2$, and then subtract twice its first column from its second column. The resulting matrix is
 $$
 \begin{pmatrix}
 k&2(a-k)&p+k\\
@@ -63,7 +73,9 @@ m&2(c-m)&r+m
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $M^{\mathsf T}$ are
 $$
 \begin{pmatrix}a\\ b\\ c\end{pmatrix},
@@ -81,21 +93,32 @@ $$
 \begin{pmatrix}p+k\\ q+l\\ r+m\end{pmatrix},
 $$
 which are precisely the columns of the displayed matrix.
+
 :::
 
-<1>3. The determinant in the question is
+:::
+
+::: pf-step
+
+The determinant in the question is
 $$
 \boxed{-2d},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Adding a multiple of one column to another does not change the determinant. Thus, among the operations in step <1>2, only multiplying the second column by $2$ changes the determinant, multiplying it by $2$. By step <1>1, the determinant before those operations is $-d$, so the final determinant is $2(-d)=-2d$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested determinant.
+
 :::
+
 :::

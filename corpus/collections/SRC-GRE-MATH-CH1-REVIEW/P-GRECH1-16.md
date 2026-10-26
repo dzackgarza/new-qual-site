@@ -32,47 +32,70 @@ given that every root of this equation has the form $1 + bi$ (where $b$ is real)
 (E) $3$
 :::
 
-::: {.solution}
-<1>1. The cubic factors as
+::: pf
+
+::: pf-step
+
+The cubic factors as
 $$
 x^3-3x^2+6x-4=(x-1)(x^2-2x+4).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying out the right-hand side gives
 $$
 x^3-2x^2+4x-x^2+2x-4
 =x^3-3x^2+6x-4.
 $$
+
 :::
 
-<1>2. The three roots are
+:::
+
+::: pf-step
+
+The three roots are
 $$
 1,\qquad 1+i\sqrt3,\qquad 1-i\sqrt3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the real root $x=1$. For the quadratic factor,
 $$
 x=\frac{2\pm\sqrt{4-16}}2
 =\frac{2\pm\sqrt{-12}}2
 =1\pm i\sqrt3.
 $$
+
 :::
 
-<1>3. The largest real $b$ for which $1+bi$ is a root is
+:::
+
+::: pf-step
+
+The largest real $b$ for which $1+bi$ is a root is
 $$
 \boxed{\sqrt3},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the three corresponding values of $b$ are $0$, $\sqrt3$, and $-\sqrt3$. Their largest value is $\sqrt3$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value and corresponding choice.
+
 :::
+
 :::

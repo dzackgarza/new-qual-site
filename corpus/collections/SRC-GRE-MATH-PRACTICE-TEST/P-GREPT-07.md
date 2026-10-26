@@ -25,8 +25,11 @@ Let $f(x, y) = xy(x - y)$, where $x(t, u) = t(t - u)$ and $y(t, u) = u(u - t)$. 
 (E) $8$
 :::
 
-::: {.solution}
-<1>1. The partial derivatives needed for the chain rule are
+::: pf
+
+::: pf-step
+
+The partial derivatives needed for the chain rule are
 $$
 f_x=2xy-y^2,
 \qquad
@@ -39,14 +42,21 @@ x_t=2t-u,
 y_t=-u.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f(x,y)=x^2y-xy^2$, differentiating with respect to $x$ and $y$
 gives the first two formulas. From $x=t(t-u)=t^2-tu$ and
 $y=u(u-t)=u^2-ut$, differentiating with respect to $t$ while holding $u$
 fixed gives the second pair.
+
 :::
 
-<1>2. At $(t,u)=(1,-1)$ one has
+:::
+
+::: pf-step
+
+At $(t,u)=(1,-1)$ one has
 $$
 (x,y)=(2,2),
 $$
@@ -61,7 +71,9 @@ x_t=3,
 y_t=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitution gives
 $$
 x=1(1-(-1))=2,
@@ -70,26 +82,37 @@ y=(-1)(-1-1)=2.
 $$
 The remaining values follow by substituting $(x,y,t,u)=(2,2,1,-1)$ into
 the formulas of step <1>1.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \left.\frac{\partial f}{\partial t}\right|_{(1,-1)}=\boxed{8},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By the multivariable chain rule and steps <1>1--<1>2,
 $$
 \frac{\partial f}{\partial t}
 =f_xx_t+f_yy_t
 =4(3)+(-4)(1)=8.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

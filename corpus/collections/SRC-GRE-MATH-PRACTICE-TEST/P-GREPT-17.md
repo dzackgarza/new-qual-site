@@ -25,8 +25,11 @@ $1 + \cot^2 \left(\arcsin \frac{\pi}{4}\right) =$
 (E) $\frac{16}{\pi^2}$
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 \theta=\arcsin\frac\pi4.
 $$
@@ -35,28 +38,44 @@ $$
 \sin\theta=\frac\pi4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining property of the inverse sine. Since
 $0<\pi/4<1$, the expression is well-defined.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 1+\cot^2\theta=\csc^2\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Pythagorean identity relating cotangent and cosecant.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 1+\cot^2\left(\arcsin\frac\pi4\right)
 =\boxed{\frac{16}{\pi^2}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 $$
 1+\cot^2\theta
@@ -65,11 +84,15 @@ $$
 =\frac1{(\pi/4)^2}
 =\frac{16}{\pi^2}.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

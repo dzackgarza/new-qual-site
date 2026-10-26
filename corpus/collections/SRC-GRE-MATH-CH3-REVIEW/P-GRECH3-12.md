@@ -30,22 +30,34 @@ in a curve, $C$. Find the slope of the tangent line to $C$ at the point where $x
 (E) $\frac{1}{2}$
 :::
 
-::: {.solution}
-<1>1. On the slice $y=1$, the curve $C$ is the graph
+::: pf
+
+::: pf-step
+
+On the slice $y=1$, the curve $C$ is the graph
 $$
 z=\arctan\frac{x+1}{1-x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $y=1$ into the given surface equation gives the displayed one-variable relation between $x$ and $z$.
+
 :::
 
-<1>2. Along $C$,
+:::
+
+::: pf-step
+
+Along $C$,
 $$
 \frac{dz}{dx}=\frac{1}{1+x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u(x)=\frac{x+1}{1-x}.
@@ -65,26 +77,37 @@ $$
 =\frac{2}{(1-x)^2+(x+1)^2}
 =\frac{1}{1+x^2}.
 $$
+
 :::
 
-<1>3. At $x=2$, the tangent slope is
+:::
+
+::: pf-step
+
+At $x=2$, the tangent slope is
 $$
 \boxed{\frac15},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $x=2$ into the derivative from step <1>2 gives
 $$
 \left.\frac{dz}{dx}\right|_{x=2}
 =\frac{1}{1+2^2}
 =\frac15.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested tangent slope and corresponding choice.
+
 :::
+
 :::

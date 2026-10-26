@@ -27,8 +27,11 @@ $$\int_C e^x (\sin y \, dx + \cos y \, dy)$$
 (E) $\pi e$
 :::
 
-::: {.solution}
-<1>1. The differential form
+::: pf
+
+::: pf-step
+
+The differential form
 $$
 e^x\sin y\,dx+e^x\cos y\,dy
 $$
@@ -37,7 +40,9 @@ $$
 F(x,y)=e^x\sin y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct differentiation gives
 $$
 F_x=e^x\sin y
@@ -45,11 +50,18 @@ F_x=e^x\sin y
 F_y=e^x\cos y,
 $$
 which are exactly the coefficients of $dx$ and $dy$ in the integrand.
+
 :::
 
-<1>2. The curve $C$ starts at $(0,0)$ and ends at $(1,\pi/2)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The curve $C$ starts at $(0,0)$ and ends at $(1,\pi/2)$.
+
+
+::: pf-proof
+
 At $t=0$,
 $$
 x=0e^1=0,
@@ -62,15 +74,22 @@ x=1e^0=1,
 \qquad
 y=\arcsin1=\frac\pi2.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_C e^x(\sin y\,dx+\cos y\,dy)=\boxed{e},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 By the fundamental theorem for line integrals and steps <1>1--<1>2,
 $$
 \begin{aligned}
@@ -80,11 +99,15 @@ $$
 &=e.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required integral.
+
 :::
+
 :::

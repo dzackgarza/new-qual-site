@@ -25,51 +25,74 @@ Let $f(x, y) = x^y$, for $x > 0$. Then $\left.\frac{\partial f}{\partial x}\righ
 (E) $e^e$
 :::
 
-::: {.solution}
-<1>1. For $x>0$,
+::: pf
+
+::: pf-step
+
+For $x>0$,
 $$
 \frac{\partial f}{\partial x}=yx^{y-1}
 \qquad\text{and}\qquad
 \frac{\partial f}{\partial y}=x^y\log x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Holding $y$ fixed and differentiating $x^y$ with respect to $x$ gives the
 first formula. For the second, write
 $$
 x^y=e^{y\log x}
 $$
 and differentiate with respect to $y$.
+
 :::
 
-<1>2. At $P=(e,y_0)$, equality of the two partial derivatives is equivalent
+:::
+
+::: pf-step
+
+At $P=(e,y_0)$, equality of the two partial derivatives is equivalent
 to
 $$
 y_0=e.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting $x=e$ into the formulas of step <1>1 gives
 $$
 y_0e^{y_0-1}=e^{y_0}\log e=e^{y_0}.
 $$
 Since $e^{y_0-1}>0$, dividing by it gives $y_0=e$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 y_0=\boxed{e},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 determines the unique value for which the two partial derivatives
 agree at the prescribed point.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

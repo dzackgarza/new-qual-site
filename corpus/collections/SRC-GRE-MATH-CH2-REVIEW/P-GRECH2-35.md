@@ -25,18 +25,23 @@ Calculate the length of the portion of the hypocycloid $x^{2/3} + y^{2/3} = 1$ i
 (E) $\frac{\sqrt{3}}{2}$
 :::
 
-::: {.solution}
 On the first-quadrant branch,
 $$
 y=(1-x^{2/3})^{3/2}.
 $$
 
-<1>1. For $0<x<1$,
+::: pf
+
+::: pf-step
+
+For $0<x<1$,
 $$
 y'=-x^{-1/3}(1-x^{2/3})^{1/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the displayed expression by the chain rule:
 $$
 \begin{aligned}
@@ -45,14 +50,21 @@ y'
 &=-x^{-1/3}(1-x^{2/3})^{1/2}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The arc-length integrand simplifies to
+:::
+
+::: pf-step
+
+The arc-length integrand simplifies to
 $$
 \sqrt{1+(y')^2}=x^{-1/3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 $$
 \begin{aligned}
@@ -62,15 +74,22 @@ $$
 \end{aligned}
 $$
 Since $x>0$, its positive square root is $x^{-1/3}$.
+
 :::
 
-<1>3. The required length is
+:::
+
+::: pf-step
+
+The required length is
 $$
 \boxed{\frac98},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 The endpoint abscissas are $1/8$ and $1$. Therefore, by step <1>2,
 $$
 \begin{aligned}
@@ -81,11 +100,15 @@ L
 &=\frac98.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested arc length and corresponding choice.
+
 :::
+
 :::

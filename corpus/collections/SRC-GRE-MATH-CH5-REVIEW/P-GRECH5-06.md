@@ -26,14 +26,24 @@ The vectors $\mathbf{v}_1 = (-1, 1, 1)$, $\mathbf{v}_2 = (1, 1, 1)$, and $\mathb
 (E) $2$
 :::
 
-::: {.solution}
-<1>1. The three vectors form a basis of $\RR^3$ exactly when the determinant of the matrix having them as rows is nonzero.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The three vectors form a basis of $\RR^3$ exactly when the determinant of the matrix having them as rows is nonzero.
+
+
+::: pf-proof
+
 Three vectors in $\RR^3$ form a basis exactly when they are linearly independent. The rows of a square matrix are linearly independent exactly when that matrix is invertible, equivalently when its determinant is nonzero.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 M=
 \begin{pmatrix}
@@ -47,7 +57,9 @@ $$
 \det M=-2(k+1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Replace the second row by the sum of the first and second rows, and replace the third row by the sum of the first and third rows. These row replacements do not change the determinant and give
 $$
 \begin{pmatrix}
@@ -57,21 +69,32 @@ $$
 \end{pmatrix}.
 $$
 This matrix is upper triangular, so its determinant is the product of its diagonal entries, namely $(-1)\cdot 2\cdot(k+1)=-2(k+1)$.
+
 :::
 
-<1>3. The exceptional parameter is
+:::
+
+::: pf-step
+
+The exceptional parameter is
 $$
 \boxed{k=-1},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, failure to be a basis occurs exactly when $\det M=0$. By step <1>2, this is equivalent to $-2(k+1)=0$, hence to $k=-1$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the unique real parameter for which the three vectors fail to form a basis.
+
 :::
+
 :::

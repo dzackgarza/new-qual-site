@@ -26,26 +26,38 @@ Simplify $\sqrt{\csc^2\left(\operatorname{arccot}\frac{\pi}{4}\right)-1}$.
 (E) $\frac{\sqrt{\pi}}{2}$
 :::
 
-::: {.solution}
 Set $\theta=\operatorname{arccot}(\pi/4)$.
 
-<1>1. $\csc^2\theta-1=\cot^2\theta$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$\csc^2\theta-1=\cot^2\theta$.
+
+
+::: pf-proof
+
 The Pythagorean identity
 $$
 1+\cot^2\theta=\csc^2\theta
 $$
 rearranges to the claimed equality.
+
 :::
 
-<1>2. The requested expression is
+:::
+
+::: pf-step
+
+The requested expression is
 $$
 \boxed{\frac{\pi}{4}},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \sqrt{\csc^2\theta-1}
@@ -57,11 +69,15 @@ $$
 \cot\theta=\frac{\pi}{4}>0.
 $$
 Thus $|\cot\theta|=\pi/4$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested simplified value and corresponding choice.
+
 :::
+
 :::

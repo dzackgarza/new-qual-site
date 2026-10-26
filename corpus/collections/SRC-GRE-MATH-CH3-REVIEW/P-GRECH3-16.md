@@ -30,8 +30,11 @@ at the point $Q=(1,1,1)$. Which of the following points also lies in $P$?
 (E) $(-2,4,2)$
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 $$
 F(x,y,z)=y^2z-2xz^2+3x^2y,
 $$
@@ -40,7 +43,9 @@ $$
 \nabla F(Q)=(4,5,-3).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The partial derivatives are
 $$
 F_x=-2z^2+6xy,\qquad
@@ -51,14 +56,21 @@ Evaluating at $Q=(1,1,1)$ gives
 $$
 F_x(Q)=4,\qquad F_y(Q)=5,\qquad F_z(Q)=-3.
 $$
+
 :::
 
-<1>2. The tangent plane at $Q$ has equation
+:::
+
+::: pf-step
+
+The tangent plane at $Q$ has equation
 $$
 4x+5y-3z=6.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The given surface is the level surface $F=2$. Since the gradient in step <1>1 is nonzero, it is normal to the tangent plane at $Q$. Hence the tangent plane is
 $$
 (4,5,-3)\cdot\bigl((x,y,z)-(1,1,1)\bigr)=0.
@@ -67,15 +79,22 @@ Expanding gives
 $$
 4x+5y-3z=4+5-3=6.
 $$
+
 :::
 
-<1>3. Among the listed points, exactly
+:::
+
+::: pf-step
+
+Among the listed points, exactly
 $$
 \boxed{(-2,4,2)}
 $$
 lies in the tangent plane, so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Substitution into the equation from step <1>2 gives
 $$
 4(-2)+5(4)-3(2)=-8+20-6=6,
@@ -85,11 +104,15 @@ $$
 50,\quad -5,\quad -8,\quad 41,
 $$
 none of which is $6$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies the requested point and corresponding choice.
+
 :::
+
 :::

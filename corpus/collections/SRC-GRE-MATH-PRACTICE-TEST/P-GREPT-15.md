@@ -31,38 +31,57 @@ III. The series $\sum_{n=2}^{\infty} (-1)^n a_n^2$ converges.
 (E) I, II, and III
 :::
 
-::: {.solution}
-<1>1. Statement I is true: the sequence $(a_n)$ converges to $0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement I is true: the sequence $(a_n)$ converges to $0$.
+
+
+::: pf-proof
+
 Since $\log n\to\infty$ as $n\to\infty$,
 $$
 a_n=\frac1{\log n}\longrightarrow0.
 $$
+
 :::
 
-<1>2. Statement II is false: the series
+:::
+
+::: pf-step
+
+Statement II is false: the series
 $$
 \sum_{n=2}^\infty a_n
 $$
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $n\ge2$, one has $\log n<n$, so
 $$
 a_n=\frac1{\log n}>\frac1n.
 $$
 Since the harmonic series $\sum_{n=2}^\infty 1/n$ diverges, the comparison
 test implies that $\sum_{n=2}^\infty a_n$ diverges.
+
 :::
 
-<1>3. Statement III is true: the series
+:::
+
+::: pf-step
+
+Statement III is true: the series
 $$
 \sum_{n=2}^\infty(-1)^na_n^2
 $$
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 The positive terms
 $$
 a_n^2=\frac1{(\log n)^2}
@@ -70,21 +89,32 @@ $$
 decrease monotonically for $n\ge2$ and tend to $0$ by step <1>1. Hence the
 alternating-series test gives convergence of
 $\sum_{n=2}^\infty(-1)^na_n^2$.
+
 :::
 
-<1>4. Therefore exactly I and III are true, so the answer is
+:::
+
+::: pf-step
+
+Therefore exactly I and III are true, so the answer is
 $$
 \boxed{\text{(C) I and III only}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 establish respectively that I is true, II is false, and III
 is true.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

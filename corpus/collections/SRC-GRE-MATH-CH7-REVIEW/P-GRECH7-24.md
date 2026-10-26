@@ -25,12 +25,17 @@ What are the complex roots of the equation $e^{2z} = i$?
 (E) $\left(\frac{i}{2}\right)\left(\frac{\pi}{2} + 2n\pi\right)$
 :::
 
-::: {.solution}
 Write $z=x+iy$ with $x,y\in\RR$.
 
-<1>1. Any solution satisfies $x=0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Any solution satisfies $x=0$.
+
+
+::: pf-proof
+
 Taking absolute values in
 $$
 e^{2z}=i
@@ -40,15 +45,22 @@ $$
 e^{2x}=|i|=1.
 $$
 Since the real exponential is injective, $2x=0$, hence $x=0$.
+
 :::
 
-<1>2. The imaginary part satisfies
+:::
+
+::: pf-step
+
+The imaginary part satisfies
 $$
 2y=\frac\pi2+2n\pi,
 \qquad n\in\ZZ.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the equation becomes
 $$
 e^{2iy}=i.
@@ -59,15 +71,22 @@ $$
 \qquad n\in\ZZ,
 $$
 so the displayed congruence for $2y$ follows.
+
 :::
 
-<1>3. Therefore all solutions are
+:::
+
+::: pf-step
+
+Therefore all solutions are
 $$
 \boxed{z=\frac{i}{2}\left(\frac\pi2+2n\pi\right),\qquad n\in\ZZ},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Solving step <1>2 for $y$ gives
 $$
 y=\frac12\left(\frac\pi2+2n\pi\right).
@@ -77,11 +96,15 @@ $$
 e^{2z}=e^{i(\pi/2+2n\pi)}=i,
 $$
 so every listed value is indeed a solution.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the complete solution set.
+
 :::
+
 :::

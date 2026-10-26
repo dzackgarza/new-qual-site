@@ -26,13 +26,18 @@ Let $f$ be nonconstant and holomorphic on an open set containing the closed unit
 Thus the image of $f$ contains the unit disk.
 :::
 
-::: {.solution}
-<1>1. For every $|z|\le1$,
+::: pf
+
+::: pf-step
+
+For every $|z|\le1$,
 $$
 |f(z)|\le1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is holomorphic on an open neighborhood of the closed
 unit disk, and $|f|=1$ on its boundary. The maximum modulus principle
 therefore gives
@@ -40,11 +45,18 @@ $$
 |f(z)|\le\max_{|w|=1}|f(w)|=1
 $$
 throughout the closed unit disk.
+
 :::
 
-<1>2. The function $f$ has a zero in the open unit disk.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ has a zero in the open unit disk.
+
+
+::: pf-proof
+
 Suppose instead that $f$ has no zero in the open unit disk. Since
 $|f|=1$ on the unit circle, $f$ is then nowhere zero on the closed
 unit disk. Hence $1/f$ is holomorphic on a neighborhood of that compact
@@ -65,11 +77,18 @@ throughout the unit disk. Thus $|f|$ attains its maximum at every
 interior point. The strong maximum modulus principle then forces $f$
 to be constant, contrary to the hypothesis. Therefore $f$ has a zero
 in the open unit disk.
+
 :::
 
-<1>3. For every $w_0$ with $|w_0|<1$, the functions $f$ and $f-w_0$ have the same number of zeros in the open unit disk, counted with multiplicity.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $w_0$ with $|w_0|<1$, the functions $f$ and $f-w_0$ have the same number of zeros in the open unit disk, counted with multiplicity.
+
+
+::: pf-proof
+
 On the unit circle,
 $$
 |f(z)|=1>|w_0|=|-w_0|.
@@ -77,30 +96,48 @@ $$
 Thus Rouché's theorem, applied to $f$ and the constant function
 $-w_0$, shows that $f$ and $f-w_0$ have the same number of zeros in
 the open unit disk, counted with multiplicity.
+
 :::
 
-<1>4. For every $|w_0|<1$, there is a $z$ with $|z|<1$ such that
+:::
+
+::: pf-step
+
+For every $|w_0|<1$, there is a $z$ with $|z|<1$ such that
 $$
 f(z)=w_0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $f$ has at least one zero in the open unit disk. By step
 <1>3, $f-w_0$ has the same number of zeros there, hence at least one.
 Any such zero satisfies $f(z)=w_0$.
+
 :::
 
-<1>5. The image of $f$ contains the open unit disk.
+:::
 
-::: {.proof}
+::: pf-step
+
+The image of $f$ contains the open unit disk.
+
+
+::: pf-proof
+
 Step <1>4 applies to every $w_0$ with $|w_0|<1$, so every point of the
 open unit disk lies in the image of $f$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part 1, steps <1>3 and <1>4 prove part 2, and step
 <1>5 gives the stated image containment.
+
 :::
+
 :::

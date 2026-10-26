@@ -27,8 +27,11 @@ $$\int_{0}^{\infty} \frac{e^{-x}}{\sqrt{x}} \, dx$$
 (E) $\frac{1}{4}\pi$
 :::
 
-::: {.solution}
-<1>1. Under the substitution
+::: pf
+
+::: pf-step
+
+Under the substitution
 $$
 x=u^2,
 $$
@@ -38,7 +41,9 @@ $$
 =2\int_0^\infty e^{-u^2}\,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $u\ge0$, the substitution $x=u^2$ gives
 $dx=2u\,du$ and $\sqrt{x}=u$. Therefore
 $$
@@ -48,27 +53,38 @@ $$
 $$
 The endpoints $x=0$ and $x\to\infty$ correspond to $u=0$ and
 $u\to\infty$.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^\infty\frac{e^{-x}}{\sqrt{x}}\,dx
 =\boxed{\sqrt\pi},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Using the given Gaussian integral in step <1>1,
 $$
 2\int_0^\infty e^{-u^2}\,du
 =2\left(\frac12\sqrt\pi\right)
 =\sqrt\pi.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the required value.
+
 :::
+
 :::

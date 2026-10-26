@@ -31,20 +31,32 @@ III. $\RR$ is Hausdorff.
 (E) II and III only
 :::
 
-::: {.solution}
-<1>1. Statement I is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement I is false.
+
+
+::: pf-proof
+
 The closed subsets of $\RR$ are precisely $\RR$ itself and the finite
 subsets. Indeed, a proper subset $F$ is closed exactly when
 $\RR\setminus F$ is open, which by the definition of the topology is
 equivalent to $F$ being finite. Thus, for example, $\ZZ$ is an infinite
 proper subset of $\RR$ that is not closed.
+
 :::
 
-<1>2. Statement II is true: every subset $A\subseteq\RR$ is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement II is true: every subset $A\subseteq\RR$ is compact.
+
+
+::: pf-proof
+
 Let $\mathcal U$ be an open cover of $A$. If $A$ is empty, the empty
 subfamily is a finite subcover. Otherwise choose $a\in A$ and some
 $U_0\in\mathcal U$ containing $a$. By the definition of the subspace
@@ -54,28 +66,46 @@ $A\setminus U_0=A\setminus O_0$ is finite. For each point of
 $A\setminus U_0$, choose one member of $\mathcal U$ containing that
 point. Together with $U_0$, these finitely many sets cover $A$.
 Therefore $A$ is compact.
+
 :::
 
-<1>3. Statement III is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement III is false.
+
+
+::: pf-proof
+
 Any two nonempty open subsets $U,V\subseteq\RR$ intersect. Their
 complements are finite, so
 $\RR\setminus(U\cap V)=(\RR\setminus U)\cup(\RR\setminus V)$ is finite.
 Since $\RR$ is infinite, $U\cap V$ cannot be empty. Hence two distinct
 points cannot have disjoint open neighborhoods, so the space is not
 Hausdorff.
+
 :::
 
-<1>4. Therefore the correct answer is $\boxed{\text{(B) II only}}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the correct answer is $\boxed{\text{(B) II only}}$.
+
+
+::: pf-proof
+
 Step <1>1 disproves I, step <1>2 proves II, and step <1>3 disproves III.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

@@ -25,8 +25,11 @@ Let $T\colon \RR^2 \to \RR^2$ be the linear transformation that maps the point $
 (E) $(-3, 1)$
 :::
 
-::: {.solution}
-<1>1. The vectors
+::: pf
+
+::: pf-step
+
+The vectors
 $$
 \mathbf a=(1,2),
 \qquad
@@ -34,35 +37,51 @@ $$
 $$
 form a basis of $\RR^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant of the matrix with columns $\mathbf a,\mathbf b$ is
 $$
 \det\begin{pmatrix}1&-1\\2&2\end{pmatrix}=4\ne0,
 $$
 so the vectors are linearly independent and hence form a basis.
+
 :::
 
-<1>2. The vector $(2,1)$ has the basis expansion
+:::
+
+::: pf-step
+
+The vector $(2,1)$ has the basis expansion
 $$
 (2,1)=\frac54\mathbf a-\frac34\mathbf b.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 $$
 \frac54(1,2)-\frac34(-1,2)
 =\left(\frac54+\frac34,\frac{10}4-\frac64\right)
 =(2,1).
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 T(2,1)=\boxed{(1,6)},
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity and the given values of $T$,
 $$
 \begin{aligned}
@@ -72,11 +91,15 @@ T(2,1)
 &=(1,6).
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required image.
+
 :::
+
 :::

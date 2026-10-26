@@ -25,18 +25,28 @@ Let $f(x)$ be a function whose graph passes through the origin. If $f(2n) = n^2 
 (E) Cannot be determined from the information given
 :::
 
-::: {.solution}
-<1>1. The condition that the graph passes through the origin gives
+::: pf
+
+::: pf-step
+
+The condition that the graph passes through the origin gives
 $$
 f(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The origin is the point $(0,0)$, so membership of this point in the graph of
 $f$ means exactly that $f(0)=0$.
+
 :::
 
-<1>2. Successive use of the recursion gives
+:::
+
+::: pf-step
+
+Successive use of the recursion gives
 $$
 f(2)=1,
 \qquad
@@ -45,7 +55,9 @@ f(4)=5,
 f(6)=14.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=1,2,3$ respectively,
 $$
 \begin{aligned}
@@ -54,24 +66,35 @@ f(4)&=2^2+f(2)=4+1=5,\\
 f(6)&=3^2+f(4)=9+5=14.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 f(8)=\boxed{30},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Applying the recursion with $n=4$ and using step <1>2 gives
 $$
 f(8)=4^2+f(6)=16+14=30.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested value.
+
 :::
+
 :::

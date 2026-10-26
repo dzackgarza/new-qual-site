@@ -29,36 +29,55 @@ What positive value of $a$ satisfies the following equation?
 (E) $e^2$
 :::
 
-::: {.solution}
-<1>1. For $a>0$ and $x>0$,
+::: pf
+
+::: pf-step
+
+For $a>0$ and $x>0$,
 $$
 \int_a^{ax}\frac{dy}{y}=\log x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct evaluation gives
 $$
 \int_a^{ax}\frac{dy}{y}
 =\log(ax)-\log a
 =\log x.
 $$
+
 :::
 
-<1>2. Any positive $a$ satisfying the equation must have $a>1$, and the equation becomes
+:::
+
+::: pf-step
+
+Any positive $a$ satisfying the equation must have $a>1$, and the equation becomes
 $$
 \int_e^{a^e}\frac{dx}{x\log x}=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives the displayed integrand. If $0<a\le1$, then $a^e\le1$, so the interval from $e$ to $a^e$ reaches the singular point $x=1$ of $1/(x\log x)$; the corresponding improper integral does not converge to a finite value. Hence a solution must satisfy $a>1$, and step <1>1 reduces the original equation to the displayed one.
+
 :::
 
-<1>3. The equation in step <1>2 is equivalent to
+:::
+
+::: pf-step
+
+The equation in step <1>2 is equivalent to
 $$
 \log(e\log a)=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $x>1$,
 $$
 \frac{d}{dx}\log(\log x)=\frac1{x\log x}.
@@ -73,25 +92,36 @@ $$
 \end{aligned}
 $$
 because $\log e=1$.
+
 :::
 
-<1>4. The unique positive solution is
+:::
+
+::: pf-step
+
+The unique positive solution is
 $$
 \boxed{a=e},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Exponentiating step <1>3 gives
 $$
 e\log a=e,
 $$
 so $\log a=1$ and hence $a=e$. This value is admissible and therefore is the unique solution.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested positive value and corresponding choice.
+
 :::
+
 :::

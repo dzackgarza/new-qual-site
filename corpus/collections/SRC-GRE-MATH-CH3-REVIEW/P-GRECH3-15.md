@@ -26,13 +26,18 @@ A right circular cylinder has base radius $r=100$ cm and height $h=100$ cm. Whic
 (E) Volume will increase by approximately $3\pi(100)^2$ cubic cm
 :::
 
-::: {.solution}
-<1>1. For a cylinder with volume $V(r,h)=\pi r^2h$, the first-order change is
+::: pf
+
+::: pf-step
+
+For a cylinder with volume $V(r,h)=\pi r^2h$, the first-order change is
 $$
 \Delta V\approx 2\pi rh\,\Delta r+\pi r^2\,\Delta h.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The partial derivatives are
 $$
 \frac{\partial V}{\partial r}=2\pi rh,
@@ -47,14 +52,21 @@ $$
 +\frac{\partial V}{\partial h}\Delta h,
 $$
 which is the displayed formula.
+
 :::
 
-<1>2. At $(r,h)=(100,100)$ with $\Delta r=1$ and $\Delta h=-1$,
+:::
+
+::: pf-step
+
+At $(r,h)=(100,100)$ with $\Delta r=1$ and $\Delta h=-1$,
 $$
 \Delta V\approx \pi(100)^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substituting the stated changes into step <1>1 gives
 $$
 \Delta V
@@ -63,21 +75,32 @@ $$
 +\pi(100)^2(-1)
 =\pi(100)^2.
 $$
+
 :::
 
-<1>3. The volume therefore increases by approximately
+:::
+
+::: pf-step
+
+The volume therefore increases by approximately
 $$
 \boxed{\pi(100)^2\text{ cubic cm}},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 The approximation in step <1>2 is positive, so it represents an increase, with magnitude $\pi(100)^2$ cubic cm.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested approximate change and corresponding choice.
+
 :::
+
 :::

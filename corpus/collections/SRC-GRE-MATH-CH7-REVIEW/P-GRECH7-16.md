@@ -25,10 +25,13 @@ Of the 600 residents of Clermontville, 35 percent watch the television show Isla
 (E) $\frac{7}{200}$
 :::
 
-::: {.solution}
 Let $n_1,n_2,n_3$ denote the numbers of residents who watch exactly one, exactly two, and exactly three of the shows, respectively.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 n_1+n_2+n_3=600
 $$
@@ -37,29 +40,45 @@ $$
 n_2=0.18\cdot600=108.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every resident watches at least one show, so the three disjoint classes counted by $n_1,n_2,n_3$ exhaust all $600$ residents. The second equality is the stated $18\%$ of $600$.
+
 :::
 
-<1>2. Counting show memberships with multiplicity gives
+:::
+
+::: pf-step
+
+Counting show memberships with multiplicity gives
 $$
 n_1+2n_2+3n_3=0.35(600)+0.40(600)+0.50(600)=750.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The three individual show audiences have sizes
 $$
 210,\qquad240,\qquad300,
 $$
 whose sum is $750$. A resident who watches exactly one show contributes once to this sum, one who watches exactly two contributes twice, and one who watches all three contributes three times.
+
 :::
 
-<1>3. The number of residents who watch all three shows is
+:::
+
+::: pf-step
+
+The number of residents who watch all three shows is
 $$
 n_3=21.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>1,
 $$
 n_1=600-108-n_3=492-n_3.
@@ -69,21 +88,32 @@ $$
 (492-n_3)+216+3n_3=750,
 $$
 so $708+2n_3=750$ and hence $n_3=21$.
+
 :::
 
-<1>4. Therefore the requested probability is
+:::
+
+::: pf-step
+
+Therefore the requested probability is
 $$
 \boxed{\frac{21}{600}=\frac{7}{200}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 There are $21$ favorable residents by step <1>3, and the resident is chosen uniformly from all $600$ residents.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested probability.
+
 :::
+
 :::

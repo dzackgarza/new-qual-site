@@ -26,10 +26,13 @@ Choose a nonzero vector $\mathbf{v} = (a, b, c)^T$ in $\RR^3$ and define a linea
 (E) $\begin{pmatrix} 0 & a & b \\ a & 1 & c \\ b & c & 0 \end{pmatrix}$
 :::
 
-::: {.solution}
 Write $\mathbf x=(x,y,z)^T$.
 
-<1>1. The cross product is
+::: pf
+
+::: pf-step
+
+The cross product is
 $$
 \mathbf v\times\mathbf x
 =
@@ -40,7 +43,9 @@ ay-bx
 \end{pmatrix}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the defining determinant for the cross product gives
 $$
 \mathbf v\times\mathbf x
@@ -53,9 +58,14 @@ x&y&z
 =(bz-cy)\mathbf e_1-(az-cx)\mathbf e_2+(ay-bx)\mathbf e_3,
 $$
 which is the displayed vector.
+
 :::
 
-<1>2. Therefore the matrix of $T$ in the standard basis is
+:::
+
+::: pf-step
+
+Therefore the matrix of $T$ in the standard basis is
 $$
 \boxed{
 A=
@@ -67,7 +77,9 @@ c&0&-a\\
 $$
 so the answer is (A).
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying the displayed matrix by $(x,y,z)^T$ yields
 $$
 \begin{pmatrix}
@@ -77,11 +89,15 @@ cx-az\\
 \end{pmatrix},
 $$
 which equals $\mathbf v\times\mathbf x$ by step <1>1 for every $\mathbf x\in\RR^3$. Thus it is the required matrix representative.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the required matrix.
+
 :::
+
 :::

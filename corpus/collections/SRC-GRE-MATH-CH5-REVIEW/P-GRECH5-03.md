@@ -30,10 +30,15 @@ III. $A$ is invertible and $A = A^{-1} \Rightarrow A = I$ or $A = -I$
 (E) None of the above
 :::
 
-::: {.solution}
-<1>1. Statement I is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement I is false.
+
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -51,11 +56,18 @@ A^2=
 \end{pmatrix}.
 $$
 Thus $A^2=0$ does not imply $A=0$.
+
 :::
 
-<1>2. Statement II is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement II is false.
+
+
+::: pf-proof
+
 Use the matrix $A$ from step <1>1 and set
 $$
 B=I,
@@ -80,11 +92,18 @@ AC=
 =A.
 $$
 Hence $AB=AC$ need not imply $B=C$.
+
 :::
 
-<1>3. Statement III is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement III is false.
+
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -103,20 +122,31 @@ A\ne I
 \qquad\text{and}\qquad
 A\ne-I.
 $$
+
 :::
 
-<1>4. None of statements I--III is true, so the answer is
+:::
+
+::: pf-step
+
+None of statements I--III is true, so the answer is
 $$
 \boxed{\text{(E)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 provide explicit counterexamples to I, II, and III respectively.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the correct choice.
+
 :::
+
 :::

@@ -33,13 +33,18 @@ as $t$ increases from $0$ to $\frac{\pi}{2}$. Evaluate the integral:
 (E) $2$
 :::
 
-::: {.solution}
-<1>1. The integrand is the exact differential of
+::: pf
+
+::: pf-step
+
+The integrand is the exact differential of
 $$
 \Phi(x,y)=\sin(xy)-x+y.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The partial derivatives of $\Phi$ are
 $$
 \Phi_x=y\cos(xy)-1,
@@ -52,15 +57,22 @@ d\Phi
 =(y\cos xy-1)\,dx+(1+x\cos xy)\,dy,
 $$
 which is exactly the integrand.
+
 :::
 
-<1>2. The line integral depends only on the endpoints and equals
+:::
+
+::: pf-step
+
+The line integral depends only on the endpoints and equals
 $$
 \boxed{2},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and the fundamental theorem for line integrals,
 $$
 \int_C d\Phi
@@ -78,11 +90,15 @@ Hence
 $$
 \int_C d\Phi=1-(-1)=2.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested integral value and corresponding choice.
+
 :::
+
 :::

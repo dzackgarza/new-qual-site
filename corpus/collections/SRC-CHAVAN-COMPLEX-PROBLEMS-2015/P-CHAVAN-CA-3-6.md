@@ -21,10 +21,15 @@ Show that the equation
 has exactly one solution in the right half-plane, and that this solution is real.
 :::
 
-::: {.solution}
-<1>1. Every solution with $\operatorname{Re}z>0$ is real.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every solution with $\operatorname{Re}z>0$ is real.
+
+
+::: pf-proof
+
 Write
 $$
 z=x+iy,
@@ -54,9 +59,14 @@ $$
 where the first inequality uses $e^{-x}<1$ and the strict inequality uses
 $|\sin y|<|y|$ for $y\ne0$. This is impossible. Hence $y=0$, so every
 solution in the right half-plane is real.
+
 :::
 
-<1>2. The real function
+:::
+
+::: pf-step
+
+The real function
 $$
 h(x)=x+e^{-x}
 $$
@@ -67,42 +77,62 @@ $$
 \lim_{x\to\infty}h(x)=\infty.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $x>0$,
 $$
 h'(x)=1-e^{-x}>0,
 $$
 so $h$ is strictly increasing. The two limits follow directly from
 the definition of $h$.
+
 :::
 
-<1>3. There is a unique $x_\lambda>0$ such that
+:::
+
+::: pf-step
+
+There is a unique $x_\lambda>0$ such that
 $$
 h(x_\lambda)=\lambda.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\lambda>1$, step <1>2 and the intermediate value theorem give
 an $x_\lambda>0$ with $h(x_\lambda)=\lambda$. Strict monotonicity in
 step <1>2 makes this $x_\lambda$ unique.
+
 :::
 
-<1>4. The equation $\lambda=z+e^{-z}$ has exactly one solution in the right half-plane, namely the real number
+:::
+
+::: pf-step
+
+The equation $\lambda=z+e^{-z}$ has exactly one solution in the right half-plane, namely the real number
 $$
 \boxed{z=x_\lambda}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives one positive real solution, hence one solution in the
 right half-plane. Step <1>1 shows that every solution in that
 half-plane is real, and step <1>3 shows that the real solution is
 unique.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives both the uniqueness and the reality of the required
 solution.
+
 :::
+
 :::

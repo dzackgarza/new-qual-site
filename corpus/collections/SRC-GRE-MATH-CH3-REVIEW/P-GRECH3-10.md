@@ -24,13 +24,18 @@ The five graphical choices (A)–(E) appear on the source page:
 ![Scanned source page preserving the figure for Question 10.](../../../assets/attachments/gre-math-ch3-review/page-2.png)
 :::
 
-::: {.solution}
-<1>1. In Cartesian coordinates the surface equation is
+::: pf
+
+::: pf-step
+
+In Cartesian coordinates the surface equation is
 $$
 z=x^2-y^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 x=r\cos\theta,\qquad y=r\sin\theta,
@@ -43,20 +48,34 @@ r^2\cos 2\theta
 =x^2-y^2.
 $$
 Thus $z=x^2-y^2$.
+
 :::
 
-<1>2. The level curve at height $z=c$ is
+:::
+
+::: pf-step
+
+The level curve at height $z=c$ is
 $$
 x^2-y^2=c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fixing the value of $z$ in the Cartesian equation from step <1>1 gives exactly the displayed equation in the $xy$-plane.
+
 :::
 
-<1>3. These level curves consist of the two diagonal lines when $c=0$, hyperbolas opening in the $x$-direction when $c>0$, and hyperbolas opening in the $y$-direction when $c<0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+These level curves consist of the two diagonal lines when $c=0$, hyperbolas opening in the $x$-direction when $c>0$, and hyperbolas opening in the $y$-direction when $c<0$.
+
+
+::: pf-proof
+
 If $c=0$, step <1>2 gives
 $$
 x^2-y^2=(x-y)(x+y)=0,
@@ -70,20 +89,31 @@ $$
 \frac{y^2}{d}-\frac{x^2}{d}=1,
 $$
 which is a hyperbola with transverse axis on the $y$-axis.
+
 :::
 
-<1>4. Therefore the required depiction is
+:::
+
+::: pf-step
+
+Therefore the required depiction is
 $$
 \boxed{\text{(C)}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Among the five source figures, choice (C) is the one showing the level-curve family characterized in step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the requested graphical choice.
+
 :::
+
 :::

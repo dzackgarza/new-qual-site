@@ -31,13 +31,18 @@ then the value of $k$ for which $\int_{-1}^{1} f(x) dx = 1$ is
 (E) $3$
 :::
 
-::: {.solution}
-<1>1. The integral over $[-1,0]$ is
+::: pf
+
+::: pf-step
+
+The integral over $[-1,0]$ is
 $$
 \int_{-1}^0 -2(x+1)\,dx=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative is
 $$
 -x^2-2x.
@@ -49,14 +54,21 @@ $$
 =0-1
 =-1.
 $$
+
 :::
 
-<1>2. The integral over $[0,1]$ is
+:::
+
+::: pf-step
+
+The integral over $[0,1]$ is
 $$
 \int_0^1 k(1-x^2)\,dx=\frac{2k}{3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since the value at the single point $x=0$ does not affect the integral,
 $$
 \int_0^1 k(1-x^2)\,dx
@@ -64,25 +76,36 @@ $$
 =k\left(1-\frac13\right)
 =\frac{2k}{3}.
 $$
+
 :::
 
-<1>3. The condition $\int_{-1}^1 f(x)\,dx=1$ forces
+:::
+
+::: pf-step
+
+The condition $\int_{-1}^1 f(x)\,dx=1$ forces
 $$
 \boxed{k=3},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 $$
 -1+\frac{2k}{3}=1.
 $$
 Thus $2k/3=2$, hence $k=3$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the unique constant satisfying the integral condition.
+
 :::
+
 :::

@@ -33,10 +33,15 @@ IV. This structure is a group.
 (E) IV only
 :::
 
-::: {.solution}
-<1>1. The operation $\bullet$ is associative.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The operation $\bullet$ is associative.
+
+
+::: pf-proof
+
 For every integer $m$, set $\phi(m)=m+1$. Then
 $$
 \phi(m\bullet n)
@@ -56,11 +61,18 @@ $$
 $$
 Since $\phi$ is injective, $(m\bullet n)\bullet q=m\bullet(n\bullet q)$.
 Thus statement I is false.
+
 :::
 
-<1>2. The integer $0$ is an identity element for $\bullet$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The integer $0$ is an identity element for $\bullet$.
+
+
+::: pf-proof
+
 For every $m\in\ZZ$,
 $$
 m\bullet0=m+0+m0=m
@@ -70,11 +82,18 @@ $$
 0\bullet m=0+m+0m=m.
 $$
 Thus statement II is false.
+
 :::
 
-<1>3. The element $1$ has no inverse in $(\ZZ,\bullet)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $1$ has no inverse in $(\ZZ,\bullet)$.
+
+
+::: pf-proof
+
 If $n\in\ZZ$ were an inverse of $1$, then by step <1>2 it would satisfy
 $$
 1\bullet n=0.
@@ -85,22 +104,33 @@ $$
 $$
 so this would require $2n=-1$, which has no integer solution. Hence not every
 element has an inverse, and statement III is true.
+
 :::
 
-<1>4. Therefore exactly statement III is true, so the answer is
+:::
+
+::: pf-step
+
+Therefore exactly statement III is true, so the answer is
 $$
 \boxed{\text{(D) III only}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 show that I and II are false while III is true. Since a
 group requires every element to have an inverse, step <1>3 also shows that IV
 is false.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required choice.
+
 :::
+
 :::

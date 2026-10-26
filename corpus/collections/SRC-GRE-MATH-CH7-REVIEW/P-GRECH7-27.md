@@ -29,25 +29,37 @@ What's the value of the integral $\int_{C} \frac{z+1}{(z+3)(z^2+1)} dz$ where C 
 The source shows the curve $C$ in a figure that is not reproduced here.
 :::
 
-::: {.solution}
 Let
 $$
 f(z)=\frac{z+1}{(z+3)(z^2+1)}
 =\frac{z+1}{(z+3)(z-i)(z+i)}.
 $$
 
-<1>1. The source figure shows $C$ oriented counterclockwise and enclosing the poles $i$ and $-i$, while the pole $-3$ lies outside.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The source figure shows $C$ oriented counterclockwise and enclosing the poles $i$ and $-i$, while the pole $-3$ lies outside.
+
+
+::: pf-proof
+
 The arrow on the upper-right portion of the drawn curve points from right to left, which is the counterclockwise orientation. The points $i$ and $-i$ lie inside the drawn loop, whereas $-3$ lies to the left of the loop.
+
 :::
 
-<1>2. The residue of $f$ at $i$ is
+:::
+
+::: pf-step
+
+The residue of $f$ at $i$ is
 $$
 \operatorname{Res}(f;i)=\frac{1-2i}{10}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $i$ is a simple pole,
 $$
 \operatorname{Res}(f;i)
@@ -60,14 +72,21 @@ $$
 =\frac{4-8i}{40}
 =\frac{1-2i}{10}.
 $$
+
 :::
 
-<1>3. The residue of $f$ at $-i$ is
+:::
+
+::: pf-step
+
+The residue of $f$ at $-i$ is
 $$
 \operatorname{Res}(f;-i)=\frac{1+2i}{10}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Similarly,
 $$
 \operatorname{Res}(f;-i)
@@ -80,16 +99,23 @@ $$
 =\frac{4+8i}{40}
 =\frac{1+2i}{10}.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_C f(z)\,dz
 =\boxed{\frac{2}{5}\pi i},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 By the residue theorem and step <1>1,
 $$
 \int_C f(z)\,dz
@@ -100,11 +126,15 @@ $$
 \frac{1-2i}{10}+\frac{1+2i}{10}=\frac15,
 $$
 which yields $2\pi i/5$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested contour integral.
+
 :::
+
 :::

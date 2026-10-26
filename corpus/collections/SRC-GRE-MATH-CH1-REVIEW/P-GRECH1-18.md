@@ -30,12 +30,17 @@ What are the roots of the following equation?
 (E) all real $x$
 :::
 
-::: {.solution}
 Set $y=\log x$.
 
-<1>1. $y=0$ or $y=2$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$y=0$ or $y=2$.
+
+
+::: pf-proof
+
 The given equation becomes
 $$
 y^2=2y,
@@ -45,15 +50,22 @@ $$
 y(y-2)=0.
 $$
 Thus $y=0$ or $y=2$.
+
 :::
 
-<1>2. The roots are
+:::
+
+::: pf-step
+
+The roots are
 $$
 \boxed{x=1\ \text{or}\ x=e^2},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Since the logarithm is defined only for $x>0$, exponentiating the alternatives from step <1>1 gives
 $$
 x=e^0=1
@@ -61,11 +73,15 @@ x=e^0=1
 x=e^2.
 $$
 Both values are positive and therefore lie in the domain of the original equation.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives all solutions of the transformed equation within the logarithm's domain.
+
 :::
+
 :::

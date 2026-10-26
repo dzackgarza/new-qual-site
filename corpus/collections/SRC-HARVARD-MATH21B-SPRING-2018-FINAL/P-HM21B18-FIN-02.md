@@ -37,13 +37,18 @@ curve; graph C is an increasing straight line; graph D is an increasing,
 upward-convex parabolic arc.
 :::
 
-::: {.solution}
 Let $\mathbf 1=(1,1,1,1)^T$.
 
-<1>1. In part (a), $A$ is invertible, symmetric, and diagonalizable over
+::: pf
+
+::: pf-step
+
+In part (a), $A$ is invertible, symmetric, and diagonalizable over
 $\mathbb R$, and it is not a projection, reflection, or orthogonal matrix.
 
-::: {.proof}
+
+::: pf-proof
+
 Write $A=J-I$, where $J$ is the $4\times4$ all-ones matrix. Since
 $J\mathbf 1=4\mathbf 1$,
 \[
@@ -63,12 +68,19 @@ not a reflection. Finally,
 Ae_1=(0,1,1,1)^T
 \]
 has norm $\sqrt3\neq1=\|e_1\|$, so $A$ is not orthogonal.
+
 :::
 
-<1>2. In part (b), every listed assertion is true except
+:::
+
+::: pf-step
+
+In part (b), every listed assertion is true except
 $\operatorname{tr}A=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 For a noninvertible $2\times2$ matrix, $\det A=0$. Its characteristic
 polynomial is therefore
 \[
@@ -84,40 +96,68 @@ its two rows are parallel. The trace need not vanish: for
 A=\begin{pmatrix}1&0\\0&0\end{pmatrix}
 \]
 one has $\det A=0$ but $\operatorname{tr}A=1$.
+
 :::
 
-<1>3. In part (c), $f''=1$ matches graph D.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), $f''=1$ matches graph D.
+
+
+::: pf-proof
+
 Integrating twice gives
 \[
 f(t)=\frac12t^2+ct+d.
 \]
 Every such solution is a parabola opening upward, which is the qualitative
 shape of graph D.
+
 :::
 
-<1>4. In part (c), $f'=1$ matches graph C.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), $f'=1$ matches graph C.
+
+
+::: pf-proof
+
 Integrating gives $f(t)=t+c$, an increasing straight line of slope $1$.
 This is graph C.
+
 :::
 
-<1>5. In part (c), $f'=-f+1$ matches graph A.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), $f'=-f+1$ matches graph A.
+
+
+::: pf-proof
+
 The equation is $f'+f=1$, whose general solution is
 \[
 f(t)=1+Ce^{-t}.
 \]
 For $C>0$ this is decreasing and convex while approaching the horizontal
 asymptote $f=1$, exactly as graph A does.
+
 :::
 
-<1>6. In part (c), $f'''=-f'$ matches graph B.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), $f'''=-f'$ matches graph B.
+
+
+::: pf-proof
+
 The equation is
 \[
 (f''+f)'=0,
@@ -128,9 +168,14 @@ f(t)=C+a\cos t+b\sin t.
 \]
 Nonconstant solutions are periodic sinusoidal curves about the level $C$,
 which is the qualitative shape of graph B.
+
 :::
 
-<1>7. The complete answers are
+:::
+
+::: pf-step
+
+The complete answers are
 \[
 \boxed{
 \begin{aligned}
@@ -150,14 +195,20 @@ f'''=-f'\mapsto B.
 \end{aligned}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Part (a) is established by step <1>1, part (b) by step <1>2, and the four
 matches in part (c) by steps <1>3 through <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 records all requested selections and matches.
+
 :::
+
 :::

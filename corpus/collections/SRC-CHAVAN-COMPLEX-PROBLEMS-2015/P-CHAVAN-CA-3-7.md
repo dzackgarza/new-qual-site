@@ -20,13 +20,18 @@ Find the number of zeros of
 in the closed unit disk centered at the origin.
 :::
 
-::: {.solution}
-<1>1. On the unit circle,
+::: pf
+
+::: pf-step
+
+On the unit circle,
 $$
 |3e^z|>|z|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $|z|=1$, then $\operatorname{Re}z\ge-1$, so
 $$
 |3e^z|=3e^{\operatorname{Re}z}
@@ -41,47 +46,79 @@ $$
 since $n!\ge2^{n-1}$ for $n\ge2$, with strict inequality for
 $n\ge3$. Thus $3/e>1=|z|$, proving the strict inequality on the whole
 unit circle.
+
 :::
 
-<1>2. The functions $3e^z$ and $3e^z-z$ have the same number of zeros in the open unit disk, counted with multiplicity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The functions $3e^z$ and $3e^z-z$ have the same number of zeros in the open unit disk, counted with multiplicity.
+
+
+::: pf-proof
+
 Step <1>1 gives
 $$
 |-z|=|z|<|3e^z|
 $$
 on the unit circle. Rouché's theorem applied to $3e^z$ and $-z$
 therefore gives the claim.
+
 :::
 
-<1>3. The function $3e^z-z$ has no zero in the open unit disk.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $3e^z-z$ has no zero in the open unit disk.
+
+
+::: pf-proof
+
 The exponential function never vanishes, so $3e^z$ has no zeros.
 By step <1>2, $3e^z-z$ has the same zero count in the open unit disk,
 namely zero.
+
 :::
 
-<1>4. The function $3e^z-z$ has no zero on the unit circle.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $3e^z-z$ has no zero on the unit circle.
+
+
+::: pf-proof
+
 If $|z|=1$ and $3e^z-z=0$, then $|3e^z|=|z|$, contradicting the
 strict inequality in step <1>1.
+
 :::
 
-<1>5. The number of zeros in the closed unit disk is
+:::
+
+::: pf-step
+
+The number of zeros in the closed unit disk is
 $$
 \boxed{0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 excludes zeros in the open unit disk, and step <1>4 excludes
 zeros on its boundary.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested zero count.
+
 :::
+
 :::

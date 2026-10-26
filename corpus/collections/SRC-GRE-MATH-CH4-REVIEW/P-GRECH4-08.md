@@ -32,13 +32,18 @@ such that $f(0) = f'(0) = f''(0) = 0$ and $f'''(0) = -1$. What is $f(x)$?
 (E) $\cosh x + \sinh x$
 :::
 
-::: {.solution}
-<1>1. The general real solution is
+::: pf
+
+::: pf-step
+
+The general real solution is
 $$
 y=A+Bx+C\cosh x+D\sinh x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The differential equation is
 $$
 y^{(4)}-y''=0,
@@ -48,14 +53,21 @@ $$
 r^4-r^2=r^2(r-1)(r+1).
 $$
 Thus $0$ is a double root and $\pm1$ are simple roots, giving the displayed general solution.
+
 :::
 
-<1>2. The conditions $f(0)=f''(0)=0$ imply
+:::
+
+::: pf-step
+
+The conditions $f(0)=f''(0)=0$ imply
 $$
 A=0,\qquad C=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>1,
 $$
 y(0)=A+C=0.
@@ -65,14 +77,21 @@ $$
 y''=C\cosh x+D\sinh x,
 $$
 so $y''(0)=C=0$. Substituting this into $A+C=0$ gives $A=0$.
+
 :::
 
-<1>3. The conditions $f'(0)=0$ and $f'''(0)=-1$ imply
+:::
+
+::: pf-step
+
+The conditions $f'(0)=0$ and $f'''(0)=-1$ imply
 $$
 B=1,\qquad D=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiating step <1>1 gives
 $$
 y'=B+C\sinh x+D\cosh x,
@@ -90,21 +109,32 @@ $$
 y'''(0)=D=-1.
 $$
 Therefore $B=1$.
+
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+
+Consequently
 $$
 \boxed{f(x)=x-\sinh x},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the constants from steps <1>2 and <1>3 into the general solution in step <1>1.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested solution and corresponding choice.
+
 :::
+
 :::

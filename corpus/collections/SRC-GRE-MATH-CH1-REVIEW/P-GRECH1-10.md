@@ -26,10 +26,15 @@ Every point on the parabola $y = \sqrt{2x - 1}$ is equidistant from the $y$-axis
 (E) $(\frac{5}{2}, 0)$
 :::
 
-::: {.solution}
-<1>1. Every point $(x,y)$ on the given graph is equidistant from the $y$-axis and $(1,0)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every point $(x,y)$ on the given graph is equidistant from the $y$-axis and $(1,0)$.
+
+
+::: pf-proof
+
 On the graph,
 $$
 y^2=2x-1,
@@ -41,25 +46,36 @@ $$
 =x^2.
 $$
 Because $x>0$, the distance to $(1,0)$ is also $x$.
+
 :::
 
-<1>2. The required point is uniquely
+:::
+
+::: pf-step
+
+The required point is uniquely
 $$
 \boxed{(1,0)},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 The graph contains $(1,1)$. If a point $(p,0)$ is equidistant from every point of the graph and the $y$-axis, then at $(1,1)$ its distance must equal $1$. Thus
 $$
 (1-p)^2+1=1,
 $$
 so $p=1$. Step <1>1 shows that this value indeed works for every point on the graph.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 identifies the unique listed point with the required property.
+
 :::
+
 :::

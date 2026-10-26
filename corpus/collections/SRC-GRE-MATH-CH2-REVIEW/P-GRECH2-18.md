@@ -25,13 +25,18 @@ If $n$ is a positive integer, what is the value of the $n^{\text{th}}$ derivativ
 (E) $\frac{n^n}{n!}$
 :::
 
-::: {.solution}
-<1>1. For every integer $n\geq0$,
+::: pf
+
+::: pf-step
+
+For every integer $n\geq0$,
 $$
 f^{(n)}(x)=2^n n!(1-2x)^{-(n+1)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=0$, the formula is
 $$
 f(x)=(1-2x)^{-1},
@@ -45,14 +50,21 @@ f^{(n+1)}(x)
 \end{aligned}
 $$
 Thus the formula follows by induction.
+
 :::
 
-<1>2. At $x=-1/2$,
+:::
+
+::: pf-step
+
+At $x=-1/2$,
 $$
 f^{(n)}\left(-\frac12\right)=\frac{n!}{2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $x=-1/2$ into step <1>1:
 $$
 \begin{aligned}
@@ -62,21 +74,32 @@ f^{(n)}\left(-\frac12\right)
 &=\frac{n!}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore the requested value is
+:::
+
+::: pf-step
+
+Therefore the requested value is
 $$
 \boxed{\frac12 n!},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the value established in step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the $n^{\mathrm{th}}$ derivative at the specified point and corresponding choice.
+
 :::
+
 :::

@@ -25,7 +25,6 @@ If $f(1) = 1$ and $f'(1) = -1$, then the value of $\frac{d}{dx} \left[ \frac{f(x
 (E) $-3$
 :::
 
-::: {.solution}
 Set
 $$
 N(x)=f(x^3),
@@ -33,14 +32,20 @@ N(x)=f(x^3),
 D(x)=x f(x^2).
 $$
 
-<1>1. At $x=1$,
+::: pf
+
+::: pf-step
+
+At $x=1$,
 $$
 N(1)=1,
 \qquad
 N'(1)=-3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis gives $N(1)=f(1)=1$. By the chain rule,
 $$
 N'(x)=3x^2 f'(x^3),
@@ -49,16 +54,23 @@ so
 $$
 N'(1)=3f'(1)=3(-1)=-3.
 $$
+
 :::
 
-<1>2. At $x=1$,
+:::
+
+::: pf-step
+
+At $x=1$,
 $$
 D(1)=1,
 \qquad
 D'(1)=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 First,
 $$
 D(1)=1\cdot f(1)=1.
@@ -71,15 +83,22 @@ Therefore
 $$
 D'(1)=f(1)+2f'(1)=1-2=-1.
 $$
+
 :::
 
-<1>3. The requested derivative is
+:::
+
+::: pf-step
+
+The requested derivative is
 $$
 \boxed{-2},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient rule and steps <1>1--<1>2 give
 $$
 \left(\frac ND\right)'(1)
@@ -87,11 +106,15 @@ $$
 =\frac{(-3)(1)-(1)(-1)}{1}
 =-2.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested derivative value and corresponding choice.
+
 :::
+
 :::

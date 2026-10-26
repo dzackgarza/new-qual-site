@@ -30,13 +30,18 @@ What is the general solution of the differential equation
 (E) $x = 2t + c_1 + c_2e^{-t/2} + c_3e^{-3t}$
 :::
 
-::: {.solution}
-<1>1. The general solution of the associated homogeneous equation is
+::: pf
+
+::: pf-step
+
+The general solution of the associated homogeneous equation is
 $$
 x_h(t)=c_1+c_2e^{-t/2}+c_3e^{-3t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The homogeneous characteristic polynomial is
 $$
 2m^3+7m^2+3m
@@ -48,14 +53,21 @@ $$
 0,\qquad -\frac12,\qquad -3,
 $$
 which gives the displayed homogeneous solution.
+
 :::
 
-<1>2. A particular solution of the nonhomogeneous equation is
+:::
+
+::: pf-step
+
+A particular solution of the nonhomogeneous equation is
 $$
 x_p(t)=2t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Try $x_p(t)=At$. Then
 $$
 x_p'=A,\qquad x_p''=0,\qquad x_p'''=0.
@@ -65,21 +77,32 @@ $$
 2x'''+7x''+3x'=6
 $$
 gives $3A=6$, hence $A=2$.
+
 :::
 
-<1>3. Therefore the general solution is
+:::
+
+::: pf-step
+
+Therefore the general solution is
 $$
 \boxed{x(t)=2t+c_1+c_2e^{-t/2}+c_3e^{-3t}},
 $$
 so the answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 For a linear nonhomogeneous differential equation, adding any particular solution to the general homogeneous solution gives the full solution family. Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested general solution and corresponding choice.
+
 :::
+
 :::

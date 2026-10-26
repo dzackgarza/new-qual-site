@@ -25,10 +25,15 @@ Let $X$ be a random variable on $\mathbb{Z}^+$ whose distribution function is $F
 (E) $1/6$
 :::
 
-::: {.solution}
-<1>1. The functions printed in the problem cannot be cumulative distribution functions.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The functions printed in the problem cannot be cumulative distribution functions.
+
+
+::: pf-proof
+
 For a random variable $X$, the cumulative distribution function
 $$
 F_X(t)=\mathbb P(X\le t)
@@ -38,16 +43,23 @@ $$
 F_X(1)=\frac13>\frac19=F_X(2),
 $$
 and similarly $F_Y(1)=1/4>1/16=F_Y(2)$. Thus neither printed function is a cumulative distribution function.
+
 :::
 
-<1>2. The source solution instead treats the printed quantities as tail probabilities
+:::
+
+::: pf-step
+
+The source solution instead treats the printed quantities as tail probabilities
 $$
 \mathbb P(X>t)=3^{-t},
 \qquad
 \mathbb P(Y>t)=4^{-t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 At $t=2$, that interpretation gives
 $$
 \mathbb P(X\le2)=1-\frac19=\frac89
@@ -57,11 +69,18 @@ $$
 \mathbb P(Y\le2)=1-\frac1{16}=\frac{15}{16},
 $$
 which are exactly the two factors used in the source's computation. Equivalently, the intended cumulative distribution functions would be $1-3^{-t}$ and $1-4^{-t}$ on the relevant positive-integer values.
+
 :::
 
-<1>3. Even after the correction in step <1>2, the requested probability is not determined unless a dependence relation between $X$ and $Y$ is specified.
+:::
 
-::: {.proof}
+::: pf-step
+
+Even after the correction in step <1>2, the requested probability is not determined unless a dependence relation between $X$ and $Y$ is specified.
+
+
+::: pf-proof
+
 Let
 $$
 A=\{X>2\},\qquad B=\{Y>2\}.
@@ -78,15 +97,22 @@ $$
 =\frac19+\frac1{16}-\mathbb P(A\cap B),
 $$
 and the marginal distributions do not determine $\mathbb P(A\cap B)$. For example, an independent coupling gives $\mathbb P(A\cap B)=1/144$, whereas a coupling in which $B\subseteq A$ almost surely gives $\mathbb P(A\cap B)=1/16$. Such couplings with the prescribed marginals can be obtained from independent uniforms in the first case and a common uniform via inverse-transform sampling in the second. Hence the union probability is not fixed by the stated marginal information.
+
 :::
 
-<1>4. If one additionally assumes independence, as the source solution does, then
+:::
+
+::: pf-step
+
+If one additionally assumes independence, as the source solution does, then
 $$
 \mathbb P(X>2\text{ or }Y>2)=\boxed{\frac16},
 $$
 so the intended answer is (E).
 
-::: {.proof}
+
+::: pf-proof
+
 Under independence,
 $$
 \begin{aligned}
@@ -98,11 +124,15 @@ $$
 &=\frac16.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>3 show that the problem is not well-posed as printed; step <1>4 gives the source's intended answer after making both implicit corrections explicit.
+
 :::
+
 :::

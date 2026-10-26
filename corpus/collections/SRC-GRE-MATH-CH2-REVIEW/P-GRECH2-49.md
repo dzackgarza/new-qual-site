@@ -25,15 +25,20 @@ If the function $f(x) = e^x$ is expanded in powers of $x$, what is the minimum n
 (E) $7$
 :::
 
-::: {.solution}
 Since $\sqrt[5]{e}=e^{1/5}$, set
 $$
 t_k=\frac{(1/5)^k}{k!}.
 $$
 
-<1>1. Five Taylor terms are not sufficient.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Five Taylor terms are not sufficient.
+
+
+::: pf-proof
+
 Using five terms gives the degree-$4$ Taylor polynomial
 $$
 P_4(1/5)=\sum_{k=0}^4 t_k.
@@ -48,11 +53,18 @@ e^{1/5}-P_4(1/5)
 >10^{-6}.
 $$
 Thus five terms cannot give the required accuracy.
+
 :::
 
-<1>2. Six Taylor terms are sufficient.
+:::
 
-::: {.proof}
+::: pf-step
+
+Six Taylor terms are sufficient.
+
+
+::: pf-proof
+
 Using six terms gives
 $$
 P_5(1/5)=\sum_{k=0}^5 t_k,
@@ -78,21 +90,32 @@ $$
 \end{aligned}
 $$
 Hence six terms ensure the required accuracy.
+
 :::
 
-<1>3. The minimum number of terms is
+:::
+
+::: pf-step
+
+The minimum number of terms is
 $$
 \boxed{6},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 rules out five terms, while step <1>2 proves that six terms suffice. Therefore six is minimal.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested minimum and corresponding choice.
+
 :::
+
 :::

@@ -23,8 +23,11 @@ best fits the data
 \]
 :::
 
-::: {.solution}
-<1>1. The four observations give the least-squares system
+::: pf
+
+::: pf-step
+
+The four observations give the least-squares system
 \[
 M
 \begin{pmatrix}a\\b\end{pmatrix}
@@ -40,13 +43,20 @@ M=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each data point, the coefficient of $a$ is $x/(3y)$ and the
 coefficient of $b$ is $-1$. The four values of $x/(3y)$ are
 $1,2,-1,0$, respectively, which gives the displayed matrix.
+
 :::
 
-<1>2. The normal equations are
+:::
+
+::: pf-step
+
+The normal equations are
 \[
 \begin{pmatrix}
 6&-2\\
@@ -57,7 +67,9 @@ $1,2,-1,0$, respectively, which gives the displayed matrix.
 \begin{pmatrix}4\\-8\end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>1,
 \[
 M^TM=
@@ -83,14 +95,21 @@ M^T
 =
 \begin{pmatrix}4\\-8\end{pmatrix}.
 \]
+
 :::
 
-<1>3. The unique least-squares parameters are
+:::
+
+::: pf-step
+
+The unique least-squares parameters are
 \[
 \boxed{a=0,\qquad b=-2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitution into the normal equations of step <1>2 gives
 \[
 \begin{pmatrix}
@@ -104,11 +123,15 @@ Substitution into the normal equations of step <1>2 gives
 The determinant of the normal-equation matrix is
 $24-4=20\neq0$, so this solution is unique. In fact,
 $M(0,-2)^T=(2,2,2,2)^T$, so the residual is zero.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the required least-squares fit.
+
 :::
+
 :::

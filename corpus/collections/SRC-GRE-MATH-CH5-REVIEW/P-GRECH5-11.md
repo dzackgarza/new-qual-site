@@ -30,15 +30,20 @@ What is the dimension of the following subspace of $\RR^5$?
 (E) $5$
 :::
 
-::: {.solution}
 Label the six displayed vectors $v_1,\dots,v_6$ in the order in which they occur.
 
-<1>1. The displayed subspace is
+::: pf
+
+::: pf-step
+
+The displayed subspace is
 $$
 \operatorname{span}\{v_1,v_2,v_5\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The third vector is $v_3=0$, while
 $$
 v_4=-v_1,
@@ -46,31 +51,49 @@ v_4=-v_1,
 v_6=-v_2.
 $$
 Thus $v_3,v_4,v_6$ add no new vectors to the span, and the span of all six vectors equals the span of $v_1,v_2,v_5$.
+
 :::
 
-<1>2. The vectors $v_1,v_2,v_5$ are linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vectors $v_1,v_2,v_5$ are linearly independent.
+
+
+::: pf-proof
+
 Suppose
 $$
 \alpha v_1+\beta v_2+\gamma v_5=0.
 $$
 The first coordinate gives $\alpha=0$, and the second coordinate gives $\beta=0$. With these values, the third coordinate gives $\gamma=0$. Hence the only linear relation is the trivial one.
+
 :::
 
-<1>3. The dimension of the subspace is
+:::
+
+::: pf-step
+
+The dimension of the subspace is
 $$
 \boxed{3},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the subspace is spanned by $v_1,v_2,v_5$, and by step <1>2 these three vectors are linearly independent. They therefore form a basis of the subspace, which consequently has dimension $3$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested dimension.
+
 :::
+
 :::

@@ -29,7 +29,6 @@ If $f(x)$ is a function that's differentiable everywhere, what is the value of t
 (E) The limit does not exist.
 :::
 
-::: {.solution}
 Because $f$ is differentiable at $x$, write
 $$
 f(x+u)=f(x)+f'(x)u+r(u),
@@ -38,13 +37,19 @@ f(x+u)=f(x)+f'(x)u+r(u),
 $$
 as $u\to0$.
 
-<1>1. The numerator satisfies
+::: pf
+
+::: pf-step
+
+The numerator satisfies
 $$
 f(x+3h^2)-f(x-h^2)
 =4f'(x)h^2+o(h^2).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the differentiability expansion with $u=3h^2$ and $u=-h^2$:
 $$
 f(x+3h^2)
@@ -59,26 +64,37 @@ $$
 4f'(x)h^2+r(3h^2)-r(-h^2).
 $$
 Since $r(u)=o(u)$, both $r(3h^2)$ and $r(-h^2)$ are $o(h^2)$, proving the claim.
+
 :::
 
-<1>2. The limit is
+:::
+
+::: pf-step
+
+The limit is
 $$
 \boxed{2f'(x)},
 $$
 so the answer is (B).
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the relation in step <1>1 by $2h^2$ for $h\ne0$:
 $$
 \frac{f(x+3h^2)-f(x-h^2)}{2h^2}
 =2f'(x)+o(1).
 $$
 Taking $h\to0$ gives the displayed limit.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the requested value using only the stated differentiability hypothesis.
+
 :::
+
 :::

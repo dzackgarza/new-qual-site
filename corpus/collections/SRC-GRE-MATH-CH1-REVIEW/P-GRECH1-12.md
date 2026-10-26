@@ -26,25 +26,37 @@ Which one of the following polynomials $p(x)$ has the property that $\sqrt{3} - 
 (E) $x^4 - 5x^2 + 6$
 :::
 
-::: {.solution}
 Set $\alpha=\sqrt3-\sqrt2$.
 
-<1>1. $\alpha^2-5=-2\sqrt6$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+$\alpha^2-5=-2\sqrt6$.
+
+
+::: pf-proof
+
 Directly,
 $$
 \alpha^2=(\sqrt3-\sqrt2)^2=3+2-2\sqrt6=5-2\sqrt6.
 $$
 Rearranging gives the claim.
+
 :::
 
-<1>2. $\alpha$ satisfies
+:::
+
+::: pf-step
+
+$\alpha$ satisfies
 $$
 \alpha^4-10\alpha^2+1=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Squaring the equality in step <1>1 gives
 $$
 (\alpha^2-5)^2=24.
@@ -54,21 +66,32 @@ $$
 \alpha^4-10\alpha^2+25-24=0,
 $$
 which is the claimed relation.
+
 :::
 
-<1>3. The required polynomial is
+:::
+
+::: pf-step
+
+The required polynomial is
 $$
 \boxed{p(x)=x^4-10x^2+1},
 $$
 so the answer is (D).
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 states exactly that substituting $x=\alpha$ into the polynomial in choice (D) gives zero.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 identifies the requested listed polynomial.
+
 :::
+
 :::

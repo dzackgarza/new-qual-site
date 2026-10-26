@@ -33,8 +33,11 @@ What is the smallest number $m$ that makes the statement $f(1) \leq m$ true?
 (E) $8$
 :::
 
-::: {.solution}
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 $$
 h(x)=
 \begin{cases}
@@ -48,7 +51,9 @@ h^{(n)}(0)=0
 $$
 for every $n\ge0$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\ne0$, repeated differentiation shows that each derivative has the
 form
 $$
@@ -64,15 +69,22 @@ The same estimate, with one additional factor $|x|^{-1}$, shows that the
 difference quotient of each extended derivative at $0$ also tends to $0$.
 Inductively, each derivative therefore extends differentiably across $0$ with
 derivative $0$, proving that $h$ is smooth and flat at $0$.
+
 :::
 
-<1>2. For every $M>0$, the function
+:::
+
+::: pf-step
+
+For every $M>0$, the function
 $$
 f_M(x)=x+x^2+Mh(x)
 $$
 satisfies all three hypotheses of the problem.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $h^{(n)}(0)=0$ for every $n$. Therefore
 $$
 f_M(0)=0,
@@ -86,35 +98,53 @@ $$
 f_M^{(n)}(0)=0
 \le\frac{n!}{2^{n-3}}.
 $$
+
 :::
 
-<1>3. The values $f_M(1)$ are unbounded above as $M$ varies.
+:::
 
-::: {.proof}
+::: pf-step
+
+The values $f_M(1)$ are unbounded above as $M$ varies.
+
+
+::: pf-proof
+
 Since $h(1)=e^{-1}$,
 $$
 f_M(1)=1+1+Me^{-1}=2+\frac{M}{e}.
 $$
 This tends to $+\infty$ as $M\to\infty$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\text{no finite number }m\text{ makes }f(1)\le m\text{ follow from the stated hypotheses}},
 $$
 so none of choices (A)--(E) is correct as written.
 
-::: {.proof}
+
+::: pf-proof
+
 Given any proposed finite $m$, choose $M>e(m-2)$. Then the function $f_M$
 from step <1>2 satisfies every printed hypothesis, while step <1>3 gives
 $f_M(1)>m$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the literal conclusion.
+
 :::
+
 :::
 
 ::: {.remark}

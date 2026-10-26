@@ -26,14 +26,19 @@ A population of bacteria grows at a rate proportional to the number present. Aft
 (E) $81$
 :::
 
-::: {.solution}
-<1>1. If $N(t)$ denotes the population at time $t$, then
+::: pf
+
+::: pf-step
+
+If $N(t)$ denotes the population at time $t$, then
 $$
 N(t)=N(0)e^{ct}
 $$
 for some constant $c$.
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis that the growth rate is proportional to the population means
 $$
 N'(t)=cN(t)
@@ -45,28 +50,42 @@ $$
 \log N=ct+C,
 $$
 and hence $N(t)=Ae^{ct}$. Evaluating at $t=0$ gives $A=N(0)$.
+
 :::
 
-<1>2. The tripling condition implies
+:::
+
+::: pf-step
+
+The tripling condition implies
 $$
 e^{2c}=3.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 3N(0)=N(2)=N(0)e^{2c}.
 $$
 Since the population is nonzero, division by $N(0)$ gives the displayed identity.
+
 :::
 
-<1>3. After four hours the population has increased by the factor
+:::
+
+::: pf-step
+
+After four hours the population has increased by the factor
 $$
 \boxed{k=9},
 $$
 so the answer is (C).
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>1 and <1>2,
 $$
 \frac{N(4)}{N(0)}
@@ -75,11 +94,15 @@ $$
 =3^2
 =9.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested growth factor and corresponding choice.
+
 :::
+
 :::
