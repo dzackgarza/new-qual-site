@@ -35,6 +35,8 @@ $$
 be a nested sequence of closed nonempty connected subsets of a compact metric space $X$. Prove that $\bigcap_{i=1}^{\infty}X_i$ is nonempty and connected.
 :::
 
+::: {.solution}
+
 Set
 $$
 K\coloneqq\bigcap_{i=1}^{\infty}X_i.
@@ -148,6 +150,8 @@ Nonemptiness is step [](#s1-1){.pf-ref}. Steps [](#s1-2){.pf-ref} through [](#s1
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
