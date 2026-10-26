@@ -37,6 +37,8 @@ $$
 Prove that $f = 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -146,6 +148,8 @@ The function $|f|^2$ is continuous and nonnegative. If $f(x_0)\neq0$ at some $x_
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
