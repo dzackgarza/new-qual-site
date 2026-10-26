@@ -31,6 +31,8 @@ audit:
 Let $A$ be a real $n\times n$ matrix such that every off-diagonal entry is positive and the sum of the entries in each row is negative. Show that $\det A\ne0$.
 :::
 
+::: {.solution}
+
 Write $A=(a_{ij})$.
 
 ::: pf
@@ -129,6 +131,8 @@ Step [](#s1-2){.pf-ref} shows that the linear map defined by the square matrix $
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
