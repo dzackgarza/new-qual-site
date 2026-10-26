@@ -193,6 +193,15 @@ test-push:
 test-ci:
     @PYTEST_ADDOPTS="" just -f ~/ai-review-ci/justfiles/python.just -d . test-ci
 
+# Provision the mathematical document toolchain used by the hosted test suite
+[private]
+_ci-setup:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    sudo apt-get update
+    sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-science texlive-pictures pdf2svg
+    git clone --depth 1 https://github.com/dzackgarza/pandoc-config.git "$HOME/.pandoc"
+
 # Run the scheduled whole-tree audit (semgrep and debt scans) through the central implementation.
 ambient:
     @just -f ~/ai-review-ci/justfiles/python.just -d . ambient
