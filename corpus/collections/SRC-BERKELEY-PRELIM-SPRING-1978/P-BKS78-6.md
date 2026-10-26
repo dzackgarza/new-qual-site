@@ -18,18 +18,24 @@ Here an algebraic number means a complex root of a polynomial with rational coef
 ::: {.solution}
 Let $\alpha,\beta\in\mathbb C$ be algebraic over $\mathbb Q$.
 
-<1>1. The field extension $\mathbb Q(\alpha)/\mathbb Q$ is finite.
+::: pf
 
-::: {.proof}
+::: {.pf-step #first-finite-extension}
+The field extension $\mathbb Q(\alpha)/\mathbb Q$ is finite.
+
+::: pf-proof
 Since $\alpha$ is algebraic, it has a nonzero minimal polynomial over $\mathbb Q$ of finite degree. The standard basis theorem for a simple algebraic extension gives
 $$
 [\mathbb Q(\alpha):\mathbb Q]<\infty.
 $$
 :::
 
-<1>2. The number $\beta$ is algebraic over $\mathbb Q(\alpha)$.
+:::
 
-::: {.proof}
+::: {.pf-step #algebraic-over-intermediate-field}
+The number $\beta$ is algebraic over $\mathbb Q(\alpha)$.
+
+::: pf-proof
 There is a nonzero polynomial
 $$
 p(x)\in\mathbb Q[x]
@@ -41,18 +47,21 @@ $$
 the same polynomial witnesses that $\beta$ is algebraic over $\mathbb Q(\alpha)$.
 :::
 
-<1>3. The extension
+:::
+
+::: {.pf-step #composite-finite-extension}
+The extension
 $$
 \mathbb Q(\alpha,\beta)/\mathbb Q
 $$
 is finite.
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+[](#algebraic-over-intermediate-field){.pf-ref} gives
 $$
 [\mathbb Q(\alpha,\beta):\mathbb Q(\alpha)]<\infty.
 $$
-Combining this with step <1>1 and the tower law,
+Combining this with [](#first-finite-extension){.pf-ref} and the tower law,
 $$
 [\mathbb Q(\alpha,\beta):\mathbb Q]
 =
@@ -62,9 +71,12 @@ $$
 $$
 :::
 
-<1>4. Every element of a finite extension of $\mathbb Q$ is algebraic over $\mathbb Q$.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-implies-algebraic}
+Every element of a finite extension of $\mathbb Q$ is algebraic over $\mathbb Q$.
+
+::: pf-proof
 Let $L/\mathbb Q$ be finite and let $\gamma\in L$. If
 $$
 d=[L:\mathbb Q],
@@ -80,19 +92,21 @@ $$
 Thus $\gamma$ is a root of a nonzero polynomial in $\mathbb Q[x]$.
 :::
 
-<1>5. The sum $\alpha+\beta$ is algebraic.
+:::
 
-::: {.proof}
+::: pf-step
+The sum $\alpha+\beta$ is algebraic.
+
+::: pf-proof
 One has
 $$
 \alpha+\beta\in\mathbb Q(\alpha,\beta).
 $$
-The field on the right is finite over $\mathbb Q$ by step <1>3, so step <1>4 applies.
+The field on the right is finite over $\mathbb Q$ by [](#composite-finite-extension){.pf-ref}, so [](#finite-implies-algebraic){.pf-ref} applies.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the assertion.
 :::
+
+:::
+
 :::
