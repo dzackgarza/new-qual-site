@@ -19,12 +19,15 @@ For which values of $k$ does $(f_n)$ converge uniformly on $\mathbb R$? For whic
 :::
 
 ::: {.solution}
-<1>1. For every integer $k\geq0$ and every fixed $x\in\mathbb R$,
+::: pf
+
+::: pf-step
+For every integer $k\geq0$ and every fixed $x\in\mathbb R$,
 $$
 f_n(x)\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
 For fixed $x$, the numerator $x^k$ is constant in $n$, while
 $$
 x^2+n\longrightarrow\infty.
@@ -35,9 +38,12 @@ $$
 $$
 :::
 
-<1>2. For every $k\geq0$, the convergence $f_n\to0$ is uniform on every bounded subset of $\mathbb R$.
+:::
 
-::: {.proof}
+::: {.pf-step #bounded-subsets}
+For every $k\geq0$, the convergence $f_n\to0$ is uniform on every bounded subset of $\mathbb R$.
+
+::: pf-proof
 Let $S\subseteq\mathbb R$ be bounded. Choose $M\geq1$ such that
 $$
 |x|\leq M
@@ -59,9 +65,12 @@ $$
 $$
 :::
 
-<1>3. For $k=0$, the convergence is uniform on $\mathbb R$.
+:::
 
-::: {.proof}
+::: {.pf-step #case-zero}
+For $k=0$, the convergence is uniform on $\mathbb R$.
+
+::: pf-proof
 One has
 $$
 0<f_n(x)
@@ -79,7 +88,10 @@ $$
 $$
 :::
 
-<1>4. For $k=1$,
+:::
+
+::: {.pf-step #case-one}
+For $k=1$,
 $$
 \sup_{x\in\mathbb R}|f_n(x)|
 =
@@ -87,7 +99,7 @@ $$
 $$
 so the convergence is uniform on $\mathbb R$.
 
-::: {.proof}
+::: pf-proof
 Because the expression is even after taking absolute values, set $t=|x|\geq0$ and consider
 $$
 \phi_n(t)=\frac{t}{t^2+n}.
@@ -109,9 +121,12 @@ $$
 This tends to $0$.
 :::
 
-<1>5. For $k=2$, the convergence is not uniform on $\mathbb R$.
+:::
 
-::: {.proof}
+::: {.pf-step #case-two}
+For $k=2$, the convergence is not uniform on $\mathbb R$.
+
+::: pf-proof
 One has
 $$
 f_n(x)=\frac{x^2}{x^2+n}.
@@ -127,9 +142,12 @@ $$
 for every $n$, so the suprema do not tend to $0$.
 :::
 
-<1>6. For every $k>2$, the convergence is not uniform on $\mathbb R$.
+:::
 
-::: {.proof}
+::: {.pf-step #case-greater-than-two}
+For every $k>2$, the convergence is not uniform on $\mathbb R$.
+
+::: pf-proof
 For fixed $n$,
 $$
 |f_n(x)|
@@ -148,7 +166,10 @@ $$
 $$
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{
 \text{$f_n\to0$ uniformly on $\mathbb R$ exactly for $k=0,1$}
@@ -161,13 +182,12 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>3--<1>6 classify uniform convergence on $\mathbb R$, and step <1>2 handles every bounded subset.
+::: pf-proof
+[](#case-zero){.pf-ref}, [](#case-one){.pf-ref}, [](#case-two){.pf-ref}, and [](#case-greater-than-two){.pf-ref} classify uniform convergence on $\mathbb R$, and [](#bounded-subsets){.pf-ref} handles every bounded subset.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 gives both requested classifications.
 :::
+
+:::
+
 :::
