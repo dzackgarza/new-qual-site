@@ -35,6 +35,8 @@ $$
 with $|z|<1$ that have positive imaginary part.
 :::
 
+::: {.solution}
+
 Set
 $$
 F(z)\coloneqq e^z-3z^6.
@@ -155,6 +157,8 @@ This is the conclusion of step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
