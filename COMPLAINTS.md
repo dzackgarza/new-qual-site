@@ -2174,19 +2174,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Workflow and rendering papercuts
 
-### Pages build rejects undefined authored macros
-
-- **Object and need:** the full-corpus Pages build at `d612c977e`.
-
-- **Observed evidence:** [run 40188235893](https://github.com/dzackgarza/new-qual-site/actions/runs/40188235893) passed its test job but failed `Build catalog and static site` on 2026-10-25.
-  Diagnostics include undefined `\inv` in `FE-TORDUAL`, `\dual` in `PR-CRVAUT`, `\isom` in `PR-DIVLB`, and `\unitsof` in `wiki/algebra/resources/syllabus.md`.
-
-- **Impact and owner:** deployment is blocked by the authored macro vocabulary and its preamble mirror.
-
-- **Uncertainty:** the failed build log establishes the rejected commands; the intended definitions and full diagnostic population need source review.
-
-- **Repair:** reconcile these uses with the owning preamble and macro mirror, then verify through Pages CI.
-
 ### Shared QC installation lacks its PR workflow and branch protection
 
 - **Object and need:** the shared QC installation declared in `justfile`.

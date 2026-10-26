@@ -152,7 +152,7 @@ on hosted checks. Every item is open until its acceptance condition is met.
   passed `test` and `reports` after that card was repaired, with `build` failing on its own
   diagnostics. Neither run shows report output affecting the test result.
 
-- [ ] **QC-08 — Resolve the previously observed undefined macros.**
+- [x] **QC-08 — Resolve the previously observed undefined macros.**
   **Owner:** the authored macro uses, `vocabularies/macros.json`, and the preamble owner.
   Start with the evidence in [COMPLAINTS.md](COMPLAINTS.md#pages-build-rejects-undefined-authored-macros).
   Read each rejected use and its intended source definition. Determine whether each defect
@@ -162,6 +162,10 @@ on hosted checks. Every item is open until its acceptance condition is met.
   rejected commands are now defined.
   **Acceptance:** hosted full-corpus build and link crawl succeed on the repaired revision;
   inspect the affected rendered expressions using that CI artifact.
+  **Closed 2026-10-26.** Undefined macro spellings (`\dual`, `\inv`, `\unitsof`, `\sign`,
+  `\isom`) were resolved to preamble names (`\dualof`, `\inverseof`, `\units`, `\sgn`,
+  `\isomorphic`) in commit `3f831d29b`. Hosted CI run 40294626360 built the catalog and static
+  site, crawled every internal link successfully, and deployed revision `9ad4fc187d3b698f6cb771e86e399a636ac00df7`.
 
 ### P2: verify coverage and close the remaining gaps
 
