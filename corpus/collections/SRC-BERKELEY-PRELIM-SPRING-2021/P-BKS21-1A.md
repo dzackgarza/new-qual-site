@@ -34,6 +34,8 @@ x^2+z^2\le1,\qquad y^2+z^2\le1.
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -111,6 +113,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested volume.
+
+:::
 
 :::
 
