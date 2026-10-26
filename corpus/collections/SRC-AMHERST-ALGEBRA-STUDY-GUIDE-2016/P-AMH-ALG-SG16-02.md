@@ -22,11 +22,16 @@ Let $H\subsetneq G$ be a proper subgroup (i.e., $H$ is a subgroup but is not the
 :::
 
 ::: {.solution}
-<1>1. The order of $H$ is one of
+
+::: pf
+
+::: {.pf-step #s1-1}
+The order of $H$ is one of
 $$
 1,\ p,\ q.
 $$
-::: {.proof}
+
+::: pf-proof
 By Lagrange's theorem,
 $$
 |H|\mid |G|=pq.
@@ -38,8 +43,12 @@ $$
 Since $H\subsetneq G$, one has $|H|<pq$, so the case $|H|=pq$ is excluded.
 :::
 
-<1>2. In every remaining case, $H$ is cyclic.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-2}
+In every remaining case, $H$ is cyclic.
+
+::: pf-proof
 If $|H|=1$, then
 $$
 H=\{e\}=\langle e\rangle.
@@ -47,16 +56,20 @@ $$
 If $|H|=p$ or $|H|=q$, then $H$ has prime order. Any nonidentity element of a finite group of prime order has order equal to the whole group order by Lagrange's theorem, and hence generates the group. Therefore $H$ is cyclic.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{H\text{ is cyclic}}.
 $$
-::: {.proof}
-Step <1>1 exhausts the possible orders of $H$, and step <1>2 proves cyclicity in each case.
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} exhausts the possible orders of $H$, and step [](#s1-2){.pf-ref} proves cyclicity in each case.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+:::
+
 :::
