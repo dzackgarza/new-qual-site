@@ -21,6 +21,8 @@ Show informally that if $\gamma$ is a simple closed curve traveled counterclockw
 \]
 :::
 
+::: {.solution}
+
 Assume, as implicit in the statement, that \(f\) is meromorphic on the Riemann sphere and has no pole on \(\gamma\). Let \(I\) be the set of poles of \(f\) in the bounded component of \(\mathbb C\setminus\gamma\), and let \(O\) be the set of all remaining poles on \(\mathbb C^*\), including \(\infty\) when it is a pole.
 
 ::: pf
@@ -88,6 +90,8 @@ Substituting this identity into step [](#s1-1){.pf-ref} gives the claimed outsid
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required identity.
+
+:::
 
 :::
 
