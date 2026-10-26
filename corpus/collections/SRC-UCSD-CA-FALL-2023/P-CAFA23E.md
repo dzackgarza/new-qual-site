@@ -17,6 +17,8 @@ Let $f$ be continuous on $\mathbb{C}$ and analytic on $\mathbb{C} \setminus \mat
 Prove that $f$ is analytic on $\mathbb{C}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -160,6 +162,8 @@ $\CC$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is exactly the desired conclusion.
+
+:::
 
 :::
 
