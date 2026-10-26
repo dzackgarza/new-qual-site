@@ -22,12 +22,16 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. In $\FF_2[X]$,
+
+::: pf
+
+::: {.pf-step #s1-1}
+In $\FF_2[X]$,
 $$
 X^4+X^2+1=(X^2+X+1)^2.
 $$
 
-::: {.proof}
+::: pf-proof
 Because the characteristic is $2$,
 $$
 (a+b+c)^2=a^2+b^2+c^2
@@ -39,10 +43,13 @@ $$
 $$
 :::
 
-<1>2. The polynomial $f(X)=X^4+X^2+1$ is reducible in $\FF_2[X]$.
+:::
 
-::: {.proof}
-Step <1>1 expresses $f$ as a product of two degree-$2$ polynomials:
+::: {.pf-step #s1-2}
+The polynomial $f(X)=X^4+X^2+1$ is reducible in $\FF_2[X]$.
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} expresses $f$ as a product of two degree-$2$ polynomials:
 $$
 f=(X^2+X+1)(X^2+X+1).
 $$
@@ -50,19 +57,25 @@ Both factors have positive degree strictly less than $4$, so this is a
 nontrivial factorization.
 :::
 
-<1>3. Part (a) follows.
-
-::: {.proof}
-This is step <1>2.
 :::
 
-<1>4. The cubic
+::: pf-step
+Part (a) follows.
+
+::: pf-proof
+This is step [](#s1-2){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #s1-4}
+The cubic
 $$
 g(X)=X^3+2X^2+2X+3
 $$
 has no root in $\FF_5$.
 
-::: {.proof}
+::: pf-proof
 Evaluating at the five elements of $\FF_5$ gives
 $$
 g(0)=3,
@@ -83,23 +96,28 @@ $$
 None of these values is zero.
 :::
 
-<1>5. The polynomial $g$ is irreducible in $\FF_5[X]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-5}
+The polynomial $g$ is irreducible in $\FF_5[X]$.
+
+::: pf-proof
 A cubic polynomial over a field is reducible if and only if it has a root in
-that field.  Step <1>4 shows that $g$ has no root in $\FF_5$, so $g$ is
+that field.  Step [](#s1-4){.pf-ref} shows that $g$ has no root in $\FF_5$, so $g$ is
 irreducible.
 :::
 
-<1>6. Part (b) follows.
-
-::: {.proof}
-This is step <1>5.
 :::
 
-<1>7. Q.E.D.
+::: pf-step
+Part (b) follows.
 
-::: {.proof}
-Steps <1>3 and <1>6 establish parts (a) and (b), respectively.
+::: pf-proof
+This is step [](#s1-5){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::
