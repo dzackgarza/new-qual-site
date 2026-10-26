@@ -25,6 +25,7 @@ b. Classify all groups of order $2p$ and justify your answer.
 For the nonabelian group(s), give a presentation by generators and relations.
 :::
 
+::: {.solution}
 
 Let $|G|=2p$.
 
@@ -102,6 +103,8 @@ Hence, for $p=2$, the groups are $C_4$ and $C_2\times C_2$; for odd $p$, the gro
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} establishes part (a), and steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} classify all groups and give the required nonabelian presentation for part (b).
+
+:::
 
 :::
 
