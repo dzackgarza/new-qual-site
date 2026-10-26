@@ -33,11 +33,13 @@ c.
 Prove that the minimal polynomial of $11^{1/3} + 2^{1/2}$ over $\QQ$ has degree 6.
 :::
 
+::: {.solution}
+
 Let $a=\sqrt[3]{11}$ and let $\omega$ be a primitive cube root of unity.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The splitting field $E=\mathbb Q(a,\omega)$ has degree six and Galois group $S_3$.
 
@@ -107,6 +109,8 @@ As $\theta$ is real, the factor $3\theta^2+2$ is nonzero. Therefore $\sqrt2=(\th
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
