@@ -42,6 +42,8 @@ $$
 and show that your solution is unique. Hint: Multiply by $R^{-1T}$ and $R^{-1}$.
 :::
 
+::: {.solution}
+
 Set
 $$
 C\coloneqq R^{-T}AR^{-1}.
@@ -151,6 +153,8 @@ using step [](#s1-2){.pf-ref}. Step [](#s1-1){.pf-ref} shows that this $E$ satis
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the explicit entries and proves existence and uniqueness.
+
+:::
 
 :::
 
