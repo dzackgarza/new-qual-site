@@ -26,12 +26,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. One has
+::: pf
+
+::: {.pf-step #polynomial-value}
+One has
 $$
 \boxed{P_{n-1}(1)=n}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $x\neq1$,
 $$
 \frac{x^n-1}{x-1}
@@ -47,7 +50,10 @@ P_{n-1}(1)
 $$
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #polygon-coordinates}
+Let
 $$
 \zeta\coloneqq e^{2\pi i/n}.
 $$
@@ -59,19 +65,22 @@ Q_j=\zeta^{j-1},
 $$
 on the unit circle.
 
-::: {.proof}
+::: pf-proof
 Multiplication by a complex number of modulus $1$ is a Euclidean rotation, so it preserves all chord lengths. A regular $n$-gon on the unit circle has vertices obtained by successive rotations through angle $2\pi/n$, hence after one such overall rotation they have the displayed form.
 :::
 
-<1>3. For $i=2,\ldots,n$,
+:::
+
+::: {.pf-step #chord-lengths}
+For $i=2,\ldots,n$,
 $$
 \lambda_i
 =
 |1-\zeta^{i-1}|.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By [](#polygon-coordinates){.pf-ref},
 $$
 Q_1=1,
 \qquad
@@ -89,14 +98,17 @@ $$
 $$
 :::
 
-<1>4. The factorization of $x^n-1$ gives
+:::
+
+::: {.pf-step #root-factorization}
+The factorization of $x^n-1$ gives
 $$
 P_{n-1}(x)
 =
 \prod_{k=1}^{n-1}(x-\zeta^k).
 $$
 
-::: {.proof}
+::: pf-proof
 The $n$ distinct roots of $x^n-1$ are
 $$
 1,\zeta,\zeta^2,\ldots,\zeta^{n-1}.
@@ -109,13 +121,16 @@ $$
 Dividing by $x-1$ yields the displayed identity of polynomials.
 :::
 
-<1>5. The product of the chord lengths is
+:::
+
+::: pf-step
+The product of the chord lengths is
 $$
 \boxed{\prod_{i=2}^n\lambda_i=n}.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By [](#chord-lengths){.pf-ref},
 $$
 \prod_{i=2}^n\lambda_i
 =
@@ -125,7 +140,7 @@ $$
 \prod_{k=1}^{n-1}(1-\zeta^k)
 \right|.
 $$
-By step <1>4, the product inside the modulus equals $P_{n-1}(1)$. Step <1>1 gives
+By [](#root-factorization){.pf-ref}, the product inside the modulus equals $P_{n-1}(1)$. [](#polynomial-value){.pf-ref} gives
 $$
 P_{n-1}(1)=n,
 $$
@@ -137,9 +152,8 @@ $$
 $$
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>1 answers part 1, and step <1>5 proves part 2.
 :::
+
+:::
+
 :::
