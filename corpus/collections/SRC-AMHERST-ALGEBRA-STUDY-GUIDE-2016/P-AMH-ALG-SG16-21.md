@@ -22,13 +22,17 @@ Prove that the quotient ring $R/I$ is commutative.
 :::
 
 ::: {.solution}
-<1>1. For all $a,b\in R$,
+
+::: pf
+
+::: {.pf-step #s1-1}
+For all $a,b\in R$,
 $$
 I+ab=I+ba
 $$
 in the quotient ring $R/I$.
 
-::: {.proof}
+::: pf-proof
 By hypothesis,
 $$
 ab-ba\in I.
@@ -40,11 +44,14 @@ I+ab=I+ba.
 $$
 :::
 
-<1>2. Multiplication in $R/I$ is commutative.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+Multiplication in $R/I$ is commutative.
+
+::: pf-proof
 Let $I+a,I+b\in R/I$.  Using the definition of multiplication in the quotient
-ring and step <1>1,
+ring and step [](#s1-1){.pf-ref},
 $$
 \begin{aligned}
 (I+a)(I+b)
@@ -56,18 +63,20 @@ $$
 Thus any two elements of $R/I$ commute.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{R/I\text{ is commutative}.}
 $$
 
-::: {.proof}
-This is exactly the conclusion of step <1>2.
+::: pf-proof
+This is exactly the conclusion of step [](#s1-2){.pf-ref}.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves the assertion.
 :::
+
+:::
+
 :::
