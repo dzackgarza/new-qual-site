@@ -20,8 +20,11 @@ audit:
 Let $z = e^{2\pi i/5}$. Evaluate $1 + z + z^2 + z^3 + 5z^4 + 4z^5 + 4z^6 + 4z^7 + 4z^8 + 5z^9$.
 :::
 
-::: {.solution}
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 \[
 z=e^{2\pi i/5},
 \]
@@ -30,19 +33,28 @@ one has
 z^5=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 \[
 z^5=e^{2\pi i}=1.
 \]
+
 :::
 
-<1>2. The given expression simplifies to
+:::
+
+::: pf-step
+
+The given expression simplifies to
 \[
 5+5z+5z^2+5z^3+10z^4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 z^5=1,\qquad
@@ -55,28 +67,42 @@ Substitution and collection of like powers gives
 \[
 5+5z+5z^2+5z^3+10z^4.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 1+z+z^2+z^3+z^4=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $z\ne1$ and $z^5=1$,
 \[
 1+z+z^2+z^3+z^4
 =\frac{z^5-1}{z-1}
 =0.
 \]
+
 :::
 
-<1>4. Therefore the value of the expression is
+:::
+
+::: pf-step
+
+Therefore the value of the expression is
 \[
 \boxed{5z^4=5e^{8\pi i/5}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \begin{aligned}
@@ -90,11 +116,15 @@ by step <1>3. Finally,
 \[
 z^4=e^{8\pi i/5}.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value.
+
 :::
+
 :::

@@ -31,13 +31,16 @@ f(x)e^{-ipx}
 $$
 :::
 
-::: {.solution}
 Choose
 $$
 f(x)=e^{-x^2/2}.
 $$
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 $$
 I(p)
 =
@@ -46,11 +49,18 @@ e^{-x^2/2}e^{-ipx}
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the unnormalized Fourier integral of the chosen Gaussian.
+
 :::
 
-<1>2. Differentiating under the integral sign gives
+:::
+
+::: pf-step
+
+Differentiating under the integral sign gives
 $$
 I'(p)
 =
@@ -60,13 +70,20 @@ x e^{-x^2/2}e^{-ipx}
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative of $e^{-ipx}$ with respect to $p$ is $-ix e^{-ipx}$. The
 integrand is dominated by $|x|e^{-x^2/2}$, which is integrable, so dominated
 convergence justifies differentiation under the integral sign.
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 $$
 x e^{-x^2/2}
 =
@@ -81,7 +98,9 @@ x e^{-x^2/2}e^{-ipx}
 -ip,I(p).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 \begin{aligned}
@@ -96,14 +115,21 @@ $$
 \end{aligned}
 $$
 The boundary term vanishes because of Gaussian decay, leaving $-ipI(p)$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 I'(p)=-pI(p).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2:
 $$
 I'(p)
@@ -112,14 +138,21 @@ I'(p)
 =
 -pI(p).
 $$
+
 :::
 
-<1>5. The initial value is
+:::
+
+::: pf-step
+
+The initial value is
 $$
 I(0)=\sqrt{2\pi}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 At $p=0$,
 $$
 I(0)
@@ -135,9 +168,14 @@ I(0)
 =
 \sqrt{2\pi}.
 $$
+
 :::
 
-<1>6. Solving the differential equation from step <1>4 gives
+:::
+
+::: pf-step
+
+Solving the differential equation from step <1>4 gives
 $$
 I(p)
 =
@@ -145,7 +183,9 @@ I(p)
 e^{-p^2/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The equation
 $$
 I'=-pI
@@ -155,9 +195,14 @@ $$
 I(p)=Ce^{-p^2/2}.
 $$
 Step <1>5 gives $C=\sqrt{2\pi}$.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \widetilde f(p)
 =
@@ -167,11 +212,18 @@ $$
 e^{-p^2/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Fourier normalization from the remark to the value in step <1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \widetilde f(p)
@@ -186,17 +238,23 @@ $$
 \boxed{f(x)=e^{-x^2/2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 f(p)=e^{-p^2/2},
 $$
 step <1>7 is exactly the required eigenfunction relation.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 supplies the requested function and constant.
+
 :::
+
 :::

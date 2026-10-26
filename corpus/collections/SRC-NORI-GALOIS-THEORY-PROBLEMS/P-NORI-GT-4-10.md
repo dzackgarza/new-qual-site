@@ -21,7 +21,6 @@ Let F be a field of characteristic $p > 0$ . With $\sigma$ as in the previous pr
 Do you know what $F [ X ] ^ { \sigma }$ and $F ( X ) ^ { \sigma }$ are?
 :::
 
-::: {.solution}
 Let
 $$
 L=F(X)
@@ -31,9 +30,15 @@ $$
 \sigma(f(X))=f(X+1).
 $$
 
-<1>1. The automorphism $\sigma$ has order exactly $p$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The automorphism $\sigma$ has order exactly $p$.
+
+
+::: pf-proof
+
 For every integer $r\ge0$,
 $$
 \sigma^r(X)=X+r.
@@ -48,9 +53,14 @@ $$
 \sigma^r(X)=X+r\ne X.
 $$
 Thus the order is exactly $p$.
+
 :::
 
-<1>2. By Artin's fixed-field theorem,
+:::
+
+::: pf-step
+
+By Artin's fixed-field theorem,
 $$
 \boxed{L/L^\sigma\text{ is Galois of degree }p}
 $$
@@ -59,7 +69,9 @@ $$
 \operatorname{Gal}(L/L^\sigma)=\langle\sigma\rangle.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The finite cyclic group
 $$
 G=\langle\sigma\rangle
@@ -69,15 +81,22 @@ $$
 [L:L^G]=|G|=p
 $$
 and identifies the full Galois group with $G$. Since $L^G=L^\sigma$, the claim follows.
+
 :::
 
-<1>3. The element
+:::
+
+::: pf-step
+
+The element
 $$
 Y=X^p-X
 $$
 is fixed by $\sigma$.
 
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $p$,
 $$
 (X+1)^p=X^p+1.
@@ -89,20 +108,34 @@ $$
 =X^p+1-X-1
 =Y.
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 F(Y)\subseteq L^\sigma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that $Y$ is fixed, and every element of $F$ is fixed. Therefore every rational function in $Y$ with coefficients in $F$ is fixed by $\sigma$.
+
 :::
 
-<1>5. The element $X$ is algebraic over $F(Y)$ of degree at most $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $X$ is algebraic over $F(Y)$ of degree at most $p$.
+
+
+::: pf-proof
+
 It satisfies
 $$
 X^p-X-Y=0.
@@ -119,14 +152,21 @@ one obtains
 $$
 [L:F(Y)]\le p.
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{F(X)^\sigma=F(X^p-X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 F(Y)\subseteq L^\sigma\subseteq L.
@@ -145,28 +185,42 @@ $$
 [L^\sigma:F(Y)]=1.
 $$
 Thus $L^\sigma=F(Y)$.
+
 :::
 
-<1>7. The ring $F[X]$ is generated as an $F[Y]$-module by
+:::
+
+::: pf-step
+
+The ring $F[X]$ is generated as an $F[Y]$-module by
 $$
 1,X,\ldots,X^{p-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The relation
 $$
 X^p=X+Y
 $$
 allows every power $X^m$ with $m\ge p$ to be reduced recursively to an $F[Y]$-linear combination of lower powers. Hence every polynomial in $X$ lies in the $F[Y]$-span of the displayed elements.
+
 :::
 
-<1>8. The elements
+:::
+
+::: pf-step
+
+The elements
 $$
 1,X,\ldots,X^{p-1}
 $$
 are linearly independent over $F(Y)$, and therefore over $F[Y]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 and step <1>2 give
 $$
 [F(X):F(Y)]=p.
@@ -176,25 +230,39 @@ $$
 1,X,\ldots,X^{p-1}
 $$
 are linearly independent over $F(Y)$.
+
 :::
 
-<1>9. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 F[X]
 =
 F[Y]\oplus F[Y]X\oplus\cdots\oplus F[Y]X^{p-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Spanning is step <1>7 and directness is step <1>8.
+
 :::
 
-<1>10. The polynomial invariants are
+:::
+
+::: pf-step
+
+The polynomial invariants are
 $$
 \boxed{F[X]^\sigma=F[X^p-X]}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The inclusion
 $$
 F[Y]\subseteq F[X]^\sigma
@@ -218,9 +286,14 @@ $$
 b_1=\cdots=b_{p-1}=0.
 $$
 Hence $f=b_0(Y)\in F[Y]$.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 F[X]^\sigma=F[X^p-X],
@@ -229,13 +302,19 @@ F(X)^\sigma=F(X^p-X).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6 and <1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves the Galois-degree assertion, and step <1>11 identifies both invariant rings requested in the problem.
+
 :::
+
 :::

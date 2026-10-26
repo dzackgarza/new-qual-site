@@ -24,21 +24,26 @@ r_*:\pi_1(X)\to\pi_1(A)
 is surjective.
 :::
 
-::: {.solution}
 Fix a basepoint $a_0\in A$ and let
 \[
 i:A\hookrightarrow X
 \]
 be the inclusion.
 
-<1>1. Both $i$ and $r$ preserve the basepoint $a_0$, and
+::: pf
+
+::: pf-step
+
+Both $i$ and $r$ preserve the basepoint $a_0$, and
 \[
 r\circ i
 =
 \operatorname{id}_A.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $r$ is a retraction onto $A$,
 \[
 r(a)=a
@@ -58,16 +63,23 @@ r(a)
 a.
 \]
 Thus $r\circ i=\operatorname{id}_A$ as based maps.
+
 :::
 
-<1>2. The induced homomorphisms on fundamental groups satisfy
+:::
+
+::: pf-step
+
+The induced homomorphisms on fundamental groups satisfy
 \[
 r_*\circ i_*
 =
 \operatorname{id}_{\pi_1(A,a_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Functoriality of the fundamental group gives
 \[
 (r\circ i)_*
@@ -88,9 +100,14 @@ r_*\circ i_*
 =
 \operatorname{id}_{\pi_1(A,a_0)}.
 \]
+
 :::
 
-<1>3. The homomorphism
+:::
+
+::: pf-step
+
+The homomorphism
 \[
 r_*:
 \pi_1(X,a_0)
@@ -99,7 +116,9 @@ r_*:
 \]
 is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 [\gamma]\in\pi_1(A,a_0).
@@ -113,11 +132,15 @@ By step <1>2,
 r_*\bigl(i_*([\gamma])\bigr).
 \]
 Thus every element of $\pi_1(A,a_0)$ lies in the image of $r_*$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required surjectivity.
+
 :::
+
 :::

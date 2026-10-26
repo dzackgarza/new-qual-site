@@ -23,10 +23,15 @@ G=\langle x\mid x^2\rangle.
 Find the presentation complex $X_G$, identify it as a familiar space, and then find its universal cover $\widetilde X_G$.
 :::
 
-::: {.solution}
-<1>1. The presentation complex $X_G$ has one $0$-cell, one $1$-cell, and one $2$-cell.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The presentation complex $X_G$ has one $0$-cell, one $1$-cell, and one $2$-cell.
+
+
+::: pf-proof
+
 For a presentation
 \[
 \langle x_1,\dots,x_m\mid r_1,\dots,r_k\rangle,
@@ -34,41 +39,62 @@ For a presentation
 the presentation complex is formed from one $0$-cell, one oriented $1$-cell for each generator, and one $2$-cell for each relator.
 
 Here there is one generator $x$ and one relator $x^2$. Thus $X_G$ has one cell in each of dimensions $0,1,2$ and no higher-dimensional cells.
+
 :::
 
-<1>2. The $1$-skeleton of $X_G$ is a circle.
+:::
 
-::: {.proof}
+::: pf-step
+
+The $1$-skeleton of $X_G$ is a circle.
+
+
+::: pf-proof
+
 The single $1$-cell has both endpoints attached to the unique $0$-cell. Therefore the $1$-skeleton is
 \[
 S^1.
 \]
 The oriented loop represented by that circle is the generator $x$.
+
 :::
 
-<1>3. The attaching map of the $2$-cell is the degree-$2$ map
+:::
+
+::: pf-step
+
+The attaching map of the $2$-cell is the degree-$2$ map
 \[
 S^1\to S^1,
 \qquad
 z\longmapsto z^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The relator is
 \[
 x^2.
 \]
 Traversing the boundary circle of the $2$-cell according to this word means going twice around the unique $1$-cell in its positive orientation. Hence the attaching map has degree $2$.
+
 :::
 
-<1>4. The resulting CW complex is homeomorphic to the real projective plane:
+:::
+
+::: pf-step
+
+The resulting CW complex is homeomorphic to the real projective plane:
 \[
 \boxed{
 X_G\cong\mathbb{RP}^2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A standard CW decomposition of $\mathbb{RP}^2$ has one cell in each dimension $0,1,2$. Its $1$-skeleton is
 \[
 \mathbb{RP}^1\cong S^1,
@@ -82,9 +108,14 @@ which has degree $2$ after identifying
 \mathbb{RP}^1\cong S^1.
 \]
 Thus its CW attaching data agree exactly with steps <1>1--<1>3, so the presentation complex is homeomorphic to $\mathbb{RP}^2$.
+
 :::
 
-<1>5. The quotient map
+:::
+
+::: pf-step
+
+The quotient map
 \[
 p:S^2\to\mathbb{RP}^2,
 \qquad
@@ -92,7 +123,9 @@ p(v)=[v],
 \]
 is a two-sheeted covering map.
 
-::: {.proof}
+
+::: pf-proof
+
 The real projective plane is the quotient of the sphere by the antipodal relation
 \[
 v\sim -v.
@@ -106,26 +139,40 @@ U\xrightarrow{\cong}p(U),
 -U\xrightarrow{\cong}p(U).
 \]
 Hence every point of $\mathbb{RP}^2$ has an evenly covered neighborhood, so $p$ is a two-sheeted covering.
+
 :::
 
-<1>6. The sphere $S^2$ is simply connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sphere $S^2$ is simply connected.
+
+
+::: pf-proof
+
 One has
 \[
 \pi_1(S^2)=0.
 \]
 Equivalently, every loop on the $2$-sphere is null-homotopic.
+
 :::
 
-<1>7. Therefore the covering in step <1>5 is the universal cover, and
+:::
+
+::: pf-step
+
+Therefore the covering in step <1>5 is the universal cover, and
 \[
 \boxed{
 \widetilde X_G\cong S^2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 X_G\cong\mathbb{RP}^2.
@@ -135,11 +182,15 @@ Step <1>5 gives a covering
 S^2\to X_G,
 \]
 and step <1>6 says the covering space $S^2$ is simply connected. A connected simply connected covering is universal.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the presentation complex and step <1>7 identifies its universal cover.
+
 :::
+
 :::

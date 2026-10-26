@@ -19,13 +19,16 @@ audit:
 Find the cohomology ring of $\Omega \mathbb { C P } ^ { n } , \Omega \mathbb { R P } ^ { n }$ . (Hint: use a spectral sequence argument)
 :::
 
-::: {.solution}
 Use integral coefficients and based loop spaces. Write $\Gamma_{mathbb Z}(y)$ for the divided-power algebra with basis $\gamma_j(y)$, $j\geq0$, and multiplication
 \[
 \gamma_i(y)\gamma_j(y)=\binom{i+j}{i}\gamma_{i+j}(y).
 \]
 
-<1>1. Looping the Hopf fibration
+::: pf
+
+::: pf-step
+
+Looping the Hopf fibration
 \[
 S^1\longrightarrow S^{2n+1}\longrightarrow\mathbb{CP}^n
 \]
@@ -35,28 +38,42 @@ gives a fibration
 \longrightarrow S^1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any fibration $F\to E\to B$, the associated homotopy-fiber sequence contains
 \[
 \Omega E\to\Omega B\to F.
 \]
 Apply this to the Hopf fibration. Since $\Omega S^1$ is discrete and the relevant identity component is contractible, the displayed part is the resulting fibration over $S^1$.
+
 :::
 
-<1>2. The fibration in step <1>1 splits up to homotopy:
+:::
+
+::: pf-step
+
+The fibration in step <1>1 splits up to homotopy:
 \[
 \Omega\mathbb{CP}^n\simeq S^1\times\Omega S^{2n+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The connecting map $\Omega\mathbb{CP}^n\to S^1$ induces an isomorphism on $\pi_1$: from the long exact sequence of the Hopf fibration,
 \[
 \pi_2(\mathbb{CP}^n)\cong\pi_1(S^1)\cong\mathbb Z.
 \]
 A loop representing the corresponding generator gives a homotopy section $S^1\to\Omega\mathbb{CP}^n$. The fiber is the H-space $\Omega S^{2n+1}$, and multiplication by the section gives the stated homotopy product decomposition.
+
 :::
 
-<1>3. The path-loop Serre spectral sequence for
+:::
+
+::: pf-step
+
+The path-loop Serre spectral sequence for
 \[
 \Omega S^{2n+1}\to PS^{2n+1}\to S^{2n+1}
 \]
@@ -67,7 +84,9 @@ H^*(\Omega S^{2n+1};\mathbb Z)
 \qquad |y_{2n}|=2n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The total space $PS^{2n+1}$ is contractible. In the cohomology Serre spectral sequence, the sphere's top class in bidegree $(2n+1,0)$ must transgress to a generator in fiber degree $2n$. Multiplicativity then forces one free rank-one group in each degree $2nj$, and comparison of products through the transgression gives
 \[
 \gamma_i(y)\gamma_j(y)=\binom{i+j}{i}\gamma_{i+j}(y),
@@ -76,9 +95,14 @@ the divided-power multiplication. Equivalently, this is dual to
 \[
 H_*(\Omega S^{2n+1};\mathbb Z)\cong\mathbb Z[t_{2n}].
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 H^*(\Omega\mathbb{CP}^n;\mathbb Z)
@@ -86,25 +110,39 @@ H^*(\Omega\mathbb{CP}^n;\mathbb Z)
 \Gamma_{mathbb Z}(y_{2n}).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Künneth theorem to step <1>2. The cohomology of $S^1$ is $\Lambda(a_1)$, and step <1>3 gives the other factor. Both are torsion-free, so there are no Tor terms.
+
 :::
 
-<1>5. For $n\geq2$, the covering
+:::
+
+::: pf-step
+
+For $n\geq2$, the covering
 \[
 S^n\to\mathbb{RP}^n
 \]
 identifies each path component of $\Omega\mathbb{RP}^n$ with a space homotopy equivalent to $\Omega S^n$, and there are exactly two components.
 
-::: {.proof}
+
+::: pf-proof
+
 The components of a based loop space are indexed by $\pi_1$, so
 \[
 \pi_0(\Omega\mathbb{RP}^n)=\pi_1(\mathbb{RP}^n)=\mathbb Z/2.
 \]
 Every null-homotopic based loop lifts uniquely to a based loop in the universal cover $S^n$, giving a homeomorphism of the identity component with $\Omega S^n$. Multiplication by any loop representing the nontrivial element of $\pi_1$ is a homotopy equivalence from the identity component to the other component.
+
 :::
 
-<1>6. Therefore, as a graded ring,
+:::
+
+::: pf-step
+
+Therefore, as a graded ring,
 \[
 \boxed{
 H^*(\Omega\mathbb{RP}^n;\mathbb Z)
@@ -114,11 +152,18 @@ H^*(\Omega S^n;\mathbb Z),
 \qquad n\geq2.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives $\Omega\mathbb{RP}^n$ as the disjoint union of two components, each homotopy equivalent to $\Omega S^n$. Cohomology sends a finite disjoint union to the direct product of the component rings.
+
 :::
 
-<1>7. If $n=2m+1$ is odd, then the component ring has the explicit presentation
+:::
+
+::: pf-step
+
+If $n=2m+1$ is odd, then the component ring has the explicit presentation
 \[
 H^*(\Omega S^{2m+1};\mathbb Z)
 \cong\Gamma_{mathbb Z}(z_{2m}),
@@ -130,27 +175,40 @@ H^*(\Omega\mathbb{RP}^{2m+1};\mathbb Z)
 \cong\Gamma(z_{2m})\times\Gamma(z_{2m}).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 with $2n+1$ replaced by $2m+1$, then substitute into step <1>6.
+
 :::
 
-<1>8. For even $n$, the integral component ring is the graded shuffle algebra dual to the tensor Hopf algebra
+:::
+
+::: pf-step
+
+For even $n$, the integral component ring is the graded shuffle algebra dual to the tensor Hopf algebra
 \[
 H_*(\Omega S^n;\mathbb Z)\cong T(t_{n-1});
 \]
 step <1>6 remains the complete reduction of the projective-space calculation to the standard sphere-loop calculation.
 
-::: {.proof}
+
+::: pf-proof
+
 The James--Bott--Samelson calculation gives
 \[
 H_*(\Omega S^n;\mathbb Z)\cong T(\widetilde H_*(S^{n-1};\mathbb Z))=T(t_{n-1}).
 \]
 The cohomology ring is its graded Hopf dual, whose multiplication is the signed shuffle product. When $n$ is even, $|t|=n-1$ is odd, so the Koszul signs are essential and the ring is not the ordinary divided-power algebra of step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the ring for $\Omega\mathbb{CP}^n$, and steps <1>5--<1>8 give the ring of $\Omega\mathbb{RP}^n$ componentwise, including the explicit odd-dimensional presentation.
+
 :::
+
 :::

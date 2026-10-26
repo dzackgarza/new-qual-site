@@ -23,8 +23,11 @@ audit:
 Find $\displaystyle\lim_{x \to 0} \frac{\sin\tan x - \tan\sin x}{\arcsin\arctan x - \arctan\arcsin x}$.
 :::
 
-::: {.solution}
-<1>1. The relevant Taylor expansions at $0$ are
+::: pf
+
+::: pf-step
+
+The relevant Taylor expansions at $0$ are
 $$
 \tan x
 =
@@ -47,11 +50,18 @@ $$
 x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+O(x^9).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard Maclaurin expansions through degree $7$.
+
 :::
 
-<1>2. Composing the first two series gives
+:::
+
+::: pf-step
+
+Composing the first two series gives
 $$
 \sin(\tan x)
 =
@@ -64,20 +74,29 @@ $$
 x+\frac{x^3}{6}-\frac{x^5}{40}-\frac{107x^7}{5040}+O(x^9).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the series for $\tan x$ into the sine series and retain terms of
 degree at most $7$. Repeat with the sine series substituted into the tangent
 series. All omitted terms contribute $O(x^9)$ because the functions are odd.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \sin(\tan x)-\tan(\sin x)
 =
 -\frac{x^7}{30}+O(x^9).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the two expressions in step <1>2. The terms of degrees $1$, $3$, and
 $5$ cancel, while
 $$
@@ -91,9 +110,14 @@ $$
 =
 -\frac1{30}.
 $$
+
 :::
 
-<1>4. Composing the inverse-function series gives
+:::
+
+::: pf-step
+
+Composing the inverse-function series gives
 $$
 \arcsin(\arctan x)
 =
@@ -106,20 +130,29 @@ $$
 x-\frac{x^3}{6}+\frac{13x^5}{120}-\frac{173x^7}{5040}+O(x^9).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the series for $\arctan x$ into the series for $\arcsin x$, and
 then substitute the series for $\arcsin x$ into the series for $\arctan x$,
 again retaining terms through degree $7$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \arcsin(\arctan x)-\arctan(\arcsin x)
 =
 -\frac{x^7}{30}+O(x^9).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the expansions in step <1>4:
 $$
 -\frac{341}{5040}
@@ -130,9 +163,14 @@ $$
 =
 -\frac1{30}.
 $$
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \lim_{x\to0}
@@ -142,7 +180,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3 and <1>5,
 $$
 \frac{-x^7/30+O(x^9)}{-x^7/30+O(x^9)}
@@ -150,11 +190,15 @@ $$
 \frac{-1/30+O(x^2)}{-1/30+O(x^2)}
 \longrightarrow1.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required limit.
+
 :::
+
 :::

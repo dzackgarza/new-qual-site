@@ -20,8 +20,11 @@ audit:
 Compute the limit $\lim_{x \to 0} (x^{-2} - \sin(x)^{-2})$.
 :::
 
-::: {.solution}
-<1>1. Combine the two fractions:
+::: pf
+
+::: pf-step
+
+Combine the two fractions:
 \[
 \boxed{
 x^{-2}-\sin(x)^{-2}
@@ -29,27 +32,41 @@ x^{-2}-\sin(x)^{-2}
 \frac{\sin^2x-x^2}{x^2\sin^2x}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use a common denominator:
 \[
 \frac1{x^2}-\frac1{\sin^2x}
 =
 \frac{\sin^2x-x^2}{x^2\sin^2x}.
 \]
+
 :::
 
-<1>2. Factor the numerator:
+:::
+
+::: pf-step
+
+Factor the numerator:
 \[
 \sin^2x-x^2
 =
 (\sin x-x)(\sin x+x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the difference-of-squares identity.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{\sin^2x-x^2}{x^2\sin^2x}
@@ -61,7 +78,9 @@ Apply the difference-of-squares identity.
 \frac{\sin x-x}{x^3}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the three factors on the right:
 \[
 \frac{x^2(\sin x+x)(\sin x-x)}
@@ -69,9 +88,14 @@ Multiply the three factors on the right:
 =
 \frac{\sin^2x-x^2}{x^2\sin^2x}.
 \]
+
 :::
 
-<1>4. The first factor satisfies
+:::
+
+::: pf-step
+
+The first factor satisfies
 \[
 \boxed{
 \lim_{x\to0}
@@ -80,7 +104,9 @@ Multiply the three factors on the right:
 1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The standard limit
 \[
 \frac{\sin x}{x}\to1
@@ -90,9 +116,14 @@ implies
 \frac{x}{\sin x}\to1.
 \]
 Square.
+
 :::
 
-<1>5. The second factor satisfies
+:::
+
+::: pf-step
+
+The second factor satisfies
 \[
 \boxed{
 \lim_{x\to0}
@@ -101,7 +132,9 @@ Square.
 2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \frac{\sin x+x}{x}
 =
@@ -111,9 +144,14 @@ Square.
 =
 2.
 \]
+
 :::
 
-<1>6. For the third factor,
+:::
+
+::: pf-step
+
+For the third factor,
 \[
 \lim_{x\to0}
 \frac{\sin x-x}{x^3}
@@ -122,11 +160,18 @@ Square.
 \frac{\cos x-1}{3x^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both numerator and denominator tend to \(0\). Apply l’Hôpital’s rule once.
+
 :::
 
-<1>7. Applying l’Hôpital’s rule again,
+:::
+
+::: pf-step
+
+Applying l’Hôpital’s rule again,
 \[
 \lim_{x\to0}
 \frac{\cos x-1}{3x^2}
@@ -135,11 +180,18 @@ Both numerator and denominator tend to \(0\). Apply l’Hôpital’s rule once.
 \frac{-\sin x}{6x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again both numerator and denominator tend to \(0\).
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{x\to0}
@@ -148,7 +200,9 @@ Again both numerator and denominator tend to \(0\).
 -\frac16}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 \frac{\sin x}{x}\to1,
@@ -160,9 +214,14 @@ step <1>7 gives
 =
 -\frac16.
 \]
+
 :::
 
-<1>9. Combining the three factor limits,
+:::
+
+::: pf-step
+
+Combining the three factor limits,
 \[
 \begin{aligned}
 \lim_{x\to0}
@@ -176,11 +235,18 @@ x^{-2}-\sin(x)^{-2}
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>1, <1>3, <1>4, <1>5, and <1>8.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{x\to0}
@@ -191,13 +257,19 @@ x^{-2}-\sin(x)^{-2}
 -\frac13}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the requested limit.
+
 :::
+
 :::

@@ -22,7 +22,6 @@ Investigate each series for convergence, divergence, conditional convergence, an
 6. $\displaystyle\sum_{n=1}^\infty\frac1{1+r^n}$.
 :::
 
-::: {.solution}
 ## Series 1
 
 Consider
@@ -36,7 +35,11 @@ Let
 a_n=p^n n^p.
 \]
 
-<1>1. The \(n\)th root is
+::: pf
+
+::: pf-step
+
+The \(n\)th root is
 \[
 \boxed{
 a_n^{1/n}
@@ -44,21 +47,30 @@ a_n^{1/n}
 p\,n^{p/n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 (p^nn^p)^{1/n}
 =
 p\,n^{p/n}.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 n^{p/n}\to1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 n^{p/n}
 =
@@ -70,40 +82,66 @@ and
 \[
 \frac{\log n}{n}\to0.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}a_n^{1/n}=p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1--<1>2.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 0<p<1,
 \]
 the series converges absolutely.
 
-::: {.proof}
+
+::: pf-proof
+
 The root-test limit in step <1>3 is \(<1\). The terms are nonnegative, so
 convergence is automatically absolute.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 p>1,
 \]
 the series diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 The root-test limit is \(>1\).
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 p=1,
 \]
@@ -113,11 +151,18 @@ a_n=n,
 \]
 so the series diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 The terms do not tend to zero.
+
 :::
 
-<1>7. Thus Series 1 converges exactly for
+:::
+
+::: pf-step
+
+Thus Series 1 converges exactly for
 \[
 \boxed{0<p<1}
 \]
@@ -126,26 +171,18 @@ and diverges for
 \boxed{p\ge1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>6.
+
 :::
 
-## Series 2
+:::
 
-Consider
-\[
-\sum_{n=1}^{\infty}
-(-1)^n
-\frac{\sqrt{n+1}-\sqrt n}{n^p}.
-\]
-Let
-\[
-b_n
-=
-\frac{\sqrt{n+1}-\sqrt n}{n^p}.
-\]
+::: pf-step
 
-<1>8. Rationalizing,
+Rationalizing,
 \[
 \boxed{
 b_n
@@ -154,15 +191,22 @@ b_n
 n^p(\sqrt{n+1}+\sqrt n)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \sqrt{n+1}-\sqrt n
 =
 \frac1{\sqrt{n+1}+\sqrt n}.
 \]
+
 :::
 
-<1>9. Factoring \(\sqrt n\),
+:::
+
+::: pf-step
+
+Factoring \(\sqrt n\),
 \[
 \boxed{
 b_n
@@ -173,7 +217,9 @@ n^{-(p+1/2)}
 \sqrt{1+1/n}+1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \sqrt{n+1}+\sqrt n
 =
@@ -182,9 +228,14 @@ n^{-(p+1/2)}
 \sqrt{1+1/n}+1
 \right).
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \frac{
@@ -196,15 +247,22 @@ n^{-(p+1/2)}
 \frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator
 \[
 \sqrt{1+1/n}+1
 \]
 tends to \(2\).
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \sum b_n
 \]
@@ -213,7 +271,9 @@ converges exactly when
 \boxed{p>\frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10, \(\sum b_n\) is limit-comparable to the \(p\)-series
 \[
 \sum n^{-(p+1/2)}.
@@ -222,27 +282,41 @@ This converges exactly when
 \[
 p+\frac12>1.
 \]
+
 :::
 
-<1>12. The terms \(b_n\) tend to zero exactly when
+:::
+
+::: pf-step
+
+The terms \(b_n\) tend to zero exactly when
 \[
 \boxed{p>-\frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>9:
 - if \(p+\tfrac12>0\), then \(n^{-(p+1/2)}\to0\);
 - if \(p+\tfrac12=0\), then \(b_n\to1/2\);
 - if \(p+\tfrac12<0\), then \(b_n\to+\infty\).
+
 :::
 
-<1>13. Assume
+:::
+
+::: pf-step
+
+Assume
 \[
 p>-\frac12.
 \]
 Then \(b_n\) is eventually decreasing.
 
-::: {.proof}
+
+::: pf-proof
+
 For real \(x>0\), set
 \[
 D(x)
@@ -272,9 +346,14 @@ p+\frac12>0.
 \]
 Hence \(D'(x)>0\) for all sufficiently large \(x\), so \(D(n)\) is
 eventually increasing and \(b_n=1/D(n)\) is eventually decreasing.
+
 :::
 
-<1>14. Therefore the alternating series
+:::
+
+::: pf-step
+
+Therefore the alternating series
 \[
 \sum (-1)^n b_n
 \]
@@ -283,27 +362,41 @@ converges whenever
 \boxed{p>-\frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>12, \(b_n\to0\), and by step <1>13, \(b_n\) is eventually
 decreasing. The alternating-series test applies after discarding finitely
 many initial terms.
+
 :::
 
-<1>15. If
+:::
+
+::: pf-step
+
+If
 \[
 p\le-\frac12,
 \]
 the alternating series diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>12, \(b_n\not\to0\). Therefore the terms
 \[
 (-1)^n b_n
 \]
 do not tend to zero.
+
 :::
 
-<1>16. Hence Series 2 is
+:::
+
+::: pf-step
+
+Hence Series 2 is
 \[
 \boxed{\text{absolutely convergent for }p>\frac12,}
 \]
@@ -315,23 +408,20 @@ and
 \boxed{\text{divergent for }p\le-\frac12.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Absolute convergence is step <1>11. Ordinary convergence is steps
 <1>14--<1>15. The conditional range is the difference between the ordinary
 and absolute convergence ranges.
+
 :::
 
-## Series 3
+:::
 
-Consider
-\[
-\sum_{n=1}^{\infty}
-\frac1{p^n-q^n},
-\qquad
-0<q<p.
-\]
+::: pf-step
 
-<1>17. Write
+Write
 \[
 \boxed{
 \frac1{p^n-q^n}
@@ -340,11 +430,18 @@ Consider
 p^n\left(1-(q/p)^n\right)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Factor \(p^n\) from the denominator.
+
 :::
 
-<1>18. Since
+:::
+
+::: pf-step
+
+Since
 \[
 0<\frac qp<1,
 \]
@@ -353,11 +450,18 @@ one has
 \left(\frac qp\right)^n\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a geometric sequence with ratio in \((0,1)\).
+
 :::
 
-<1>19. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{
@@ -370,20 +474,34 @@ This is a geometric sequence with ratio in \((0,1)\).
 \longrightarrow1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>18.
+
 :::
 
-<1>20. Hence Series 3 has the same convergence behavior as
+:::
+
+::: pf-step
+
+Hence Series 3 has the same convergence behavior as
 \[
 \sum\frac1{p^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the limit-comparison test using step <1>19.
+
 :::
 
-<1>21. Thus Series 3 converges exactly when
+:::
+
+::: pf-step
+
+Thus Series 3 converges exactly when
 \[
 \boxed{p>1}
 \]
@@ -392,26 +510,22 @@ and diverges when
 \boxed{0<p\le1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The comparison series is geometric with ratio \(1/p\). It converges exactly
 when
 \[
 1/p<1.
 \]
+
 :::
 
-## Series 4
+:::
 
-Consider
-\[
-\sum_{n=1}^{\infty}\frac{n!}{n^n}.
-\]
-Set
-\[
-a_n=\frac{n!}{n^n}.
-\]
+::: pf-step
 
-<1>22. The ratio is
+The ratio is
 \[
 \boxed{
 \frac{a_{n+1}}{a_n}
@@ -421,7 +535,9 @@ a_n=\frac{n!}{n^n}.
 \right)^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 \frac{a_{n+1}}{a_n}
@@ -436,9 +552,14 @@ a_n=\frac{n!}{n^n}.
 \right)^n.
 \end{aligned}
 \]
+
 :::
 
-<1>23. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \left(
@@ -451,47 +572,43 @@ a_n=\frac{n!}{n^n}.
 \longrightarrow e^{-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard limit
 \[
 \left(
 1+\frac1n
 \right)^n\to e.
 \]
+
 :::
 
-<1>24. Therefore Series 4
+:::
+
+::: pf-step
+
+Therefore Series 4
 \[
 \boxed{\text{converges absolutely}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The ratio-test limit is
 \[
 e^{-1}<1.
 \]
 The terms are nonnegative.
+
 :::
 
-## Series 5
+:::
 
-Consider
-\[
-\sum_{n=1}^{\infty}
-\left(
-n^{1/n}-1
-\right)^n.
-\]
-Set
-\[
-a_n
-=
-\left(
-n^{1/n}-1
-\right)^n.
-\]
+::: pf-step
 
-<1>25. The \(n\)th root is
+The \(n\)th root is
 \[
 \boxed{
 a_n^{1/n}
@@ -499,17 +616,26 @@ a_n^{1/n}
 n^{1/n}-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The terms are nonnegative.
+
 :::
 
-<1>26. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 n^{1/n}\to1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 n^{1/n}
 =
@@ -519,39 +645,50 @@ e^0
 =
 1.
 \]
+
 :::
 
-<1>27. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 a_n^{1/n}\to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract \(1\) from the limit in step <1>26.
+
 :::
 
-<1>28. Therefore Series 5
+:::
+
+::: pf-step
+
+Therefore Series 5
 \[
 \boxed{\text{converges absolutely}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The root-test limit is
 \[
 0<1.
 \]
+
 :::
 
-## Series 6
+:::
 
-Consider
-\[
-\sum_{n=1}^{\infty}\frac1{1+r^n},
-\]
-for real \(r\) whenever the terms are defined.
+::: pf-step
 
-<1>29. If
+If
 \[
 |r|<1,
 \]
@@ -565,44 +702,67 @@ and therefore
 \frac1{1+r^n}\to1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use continuity of
 \[
 x\mapsto\frac1{1+x}
 \]
 at \(x=0\).
+
 :::
 
-<1>30. Hence the series diverges when
+:::
+
+::: pf-step
+
+Hence the series diverges when
 \[
 \boxed{|r|<1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The terms do not tend to zero.
+
 :::
 
-<1>31. If
+:::
+
+::: pf-step
+
+If
 \[
 r=1,
 \]
 then every term equals \(1/2\), so the series diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \frac1{1+1^n}
 =
 \frac12.
 \]
+
 :::
 
-<1>32. If
+:::
+
+::: pf-step
+
+If
 \[
 r=-1,
 \]
 the series is not defined.
 
-::: {.proof}
+
+::: pf-proof
+
 For odd \(n\),
 \[
 1+r^n
@@ -611,9 +771,14 @@ For odd \(n\),
 =
 0.
 \]
+
 :::
 
-<1>33. Assume
+:::
+
+::: pf-step
+
+Assume
 \[
 |r|>1.
 \]
@@ -625,11 +790,18 @@ Then
 \frac{r^{-n}}{1+r^{-n}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide numerator and denominator by \(r^n\).
+
 :::
 
-<1>34. Since
+:::
+
+::: pf-step
+
+Since
 \[
 r^{-n}\to0,
 \]
@@ -638,7 +810,9 @@ there exists \(N\) such that for \(n\ge N\),
 |1+r^{-n}|\ge\frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose \(N\) so that
 \[
 |r^{-n}|<\frac12.
@@ -651,9 +825,14 @@ Then the reverse triangle inequality gives
 >
 \frac12.
 \]
+
 :::
 
-<1>35. For \(n\ge N\),
+:::
+
+::: pf-step
+
+For \(n\ge N\),
 \[
 \left|
 \frac1{1+r^n}
@@ -662,16 +841,25 @@ Then the reverse triangle inequality gives
 2|r|^{-n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>33 and the denominator bound in step <1>34.
+
 :::
 
-<1>36. Therefore Series 6 converges absolutely for
+:::
+
+::: pf-step
+
+Therefore Series 6 converges absolutely for
 \[
 \boxed{|r|>1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The geometric series
 \[
 \sum |r|^{-n}
@@ -681,9 +869,14 @@ converges because
 |r|^{-1}<1.
 \]
 Apply the comparison test using step <1>35.
+
 :::
 
-<1>37. Thus, for real \(r\), Series 6 is
+:::
+
+::: pf-step
+
+Thus, for real \(r\), Series 6 is
 \[
 \boxed{\text{absolutely convergent for }|r|>1,}
 \]
@@ -696,11 +889,18 @@ while
 \]
 does not define a series.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>29--<1>36.
+
 :::
 
-<1>38. Collecting the six classifications:
+:::
+
+::: pf-step
+
+Collecting the six classifications:
 \[
 \boxed{
 \begin{array}{c|c}
@@ -715,13 +915,19 @@ Combine steps <1>29--<1>36.
 \end{array}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>7, <1>16, <1>21, <1>24, <1>28, and <1>37.
+
 :::
 
-<1>39. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>38 gives the complete convergence classification.
+
 :::
+
 :::

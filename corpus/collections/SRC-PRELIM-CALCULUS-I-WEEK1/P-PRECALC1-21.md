@@ -15,7 +15,6 @@ review: draft
 Find the first derivative of $\begin{array} { r } { f ( x ) = \frac { x ^ { 3 } } { ( 6 x ^ { 2 } + 1 ) \sqrt [ 3 ] { ( x + 3 ) ^ { 4 } } } } \end{array}$ when $x > 0$
 :::
 
-::: {.solution}
 For \(x>0\), one also has
 \[
 x+3>0,
@@ -35,7 +34,11 @@ f(x)
 {(6x^2+1)(x+3)^{4/3}}.
 \]
 
-<1>1. Since \(f(x)>0\) for \(x>0\), take logarithms:
+::: pf
+
+::: pf-step
+
+Since \(f(x)>0\) for \(x>0\), take logarithms:
 \[
 \boxed{
 \log f(x)
@@ -47,11 +50,18 @@ f(x)
 \frac43\log(x+3)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply logarithm rules to the product and powers in the denominator.
+
 :::
 
-<1>2. Differentiate both sides:
+:::
+
+::: pf-step
+
+Differentiate both sides:
 \[
 \frac{f'(x)}{f(x)}
 =
@@ -62,7 +72,9 @@ Apply logarithm rules to the product and powers in the denominator.
 \frac{4}{3(x+3)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \frac{d}{dx}\log f(x)
@@ -75,9 +87,14 @@ together with the chain rule:
 =
 \frac{12x}{6x^2+1}.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f'(x)
@@ -92,11 +109,18 @@ f(x)
 \right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity in step <1>2 by \(f(x)\).
+
 :::
 
-<1>4. Substituting the original formula for \(f\),
+:::
+
+::: pf-step
+
+Substituting the original formula for \(f\),
 \[
 \boxed{
 f'(x)
@@ -112,13 +136,19 @@ f'(x)
 \right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Replace \(f(x)\) in step <1>3 by its explicit expression.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the requested derivative.
+
 :::
+
 :::

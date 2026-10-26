@@ -19,7 +19,6 @@ audit:
 Let $x _ { 1 } , x _ { 2 } , x _ { 3 } \in \textit { F }$ Find a monic degree eight $\begin{array} { r l r } { f } & { { } \in } & { F [ X ] } \end{array}$ which has ${ \sqrt { x _ { 1 } } } + { \sqrt { x _ { 2 } } } + { \sqrt { x _ { 3 } } }$ as a root.
 :::
 
-::: {.solution}
 Put
 \[
 a=x_1,
@@ -29,7 +28,11 @@ a=x_1,
 \alpha=\sqrt a+\sqrt b+\sqrt c.
 \]
 
-<1>1. Consider
+::: pf
+
+::: pf-step
+
+Consider
 \[
 P(X)=
 \prod_{(\varepsilon_1,\varepsilon_2,\varepsilon_3)\in\{\pm1\}^3}
@@ -37,18 +40,27 @@ P(X)=
 \]
 Then $P$ is monic of degree $8$ and $P(\alpha)=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 There are eight sign triples, so the product is monic of degree eight. The factor corresponding to $(1,1,1)$ is $X-\alpha$, hence $P(\alpha)=0$.
+
 :::
 
-<1>2. Pairing each signed sum with its negative gives
+:::
+
+::: pf-step
+
+Pairing each signed sum with its negative gives
 \[
 P(X)=
 \prod_{\varepsilon_2,\varepsilon_3\in\{\pm1\}}
 \left(X^2-(\sqrt a+\varepsilon_2\sqrt b+\varepsilon_3\sqrt c)^2\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each choice of $(\varepsilon_2,\varepsilon_3)$, the two sign triples
 \[
 (1,\varepsilon_2,\varepsilon_3)
@@ -56,9 +68,14 @@ For each choice of $(\varepsilon_2,\varepsilon_3)$, the two sign triples
 (-1,-\varepsilon_2,-\varepsilon_3)
 \]
 give roots $r$ and $-r$. Their factors multiply to $(X-r)(X+r)=X^2-r^2$.
+
 :::
 
-<1>3. Set
+:::
+
+::: pf-step
+
+Set
 \[
 S=a+b+c,
 \qquad Y=X^2-S.
@@ -68,7 +85,9 @@ Then the four factors in step <1>2 are
 Y-2(\varepsilon_2\sqrt{ab}+\varepsilon_3\sqrt{ac}+\varepsilon_2\varepsilon_3\sqrt{bc}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding gives
 \[
 (\sqrt a+\varepsilon_2\sqrt b+\varepsilon_3\sqrt c)^2
@@ -77,9 +96,14 @@ Expanding gives
 +2\varepsilon_2\varepsilon_3\sqrt{bc}.
 \]
 Subtract this from $X^2$ and use $Y=X^2-S$.
+
 :::
 
-<1>4. Put
+:::
+
+::: pf-step
+
+Put
 \[
 u=2\sqrt{ab},
 \qquad v=2\sqrt{ac},
@@ -91,22 +115,36 @@ P(X)=
 (Y-u-v-w)(Y-u+v+w)(Y+u-v+w)(Y+u+v-w).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are exactly the four choices $(\varepsilon_2,\varepsilon_3)=(1,1),(1,-1),(-1,1),(-1,-1)$ in step <1>3, reordered.
+
 :::
 
-<1>5. Multiplying the first two and the last two factors yields
+:::
+
+::: pf-step
+
+Multiplying the first two and the last two factors yields
 \[
 P(X)
 =\left((Y-u)^2-(v+w)^2\right)
 \left((Y+u)^2-(v-w)^2\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use $(A-B)(A+B)=A^2-B^2$ on the first pair with $A=Y-u$, $B=v+w$, and on the second pair with $A=Y+u$, $B=v-w$.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 A=Y^2+u^2-v^2-w^2.
 \]
@@ -115,7 +153,9 @@ Then
 P(X)=(A-2Yu-2vw)(A+2Yu+2vw).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the two factors from step <1>5 gives
 \[
 (Y-u)^2-(v+w)^2
@@ -126,18 +166,30 @@ and
 (Y+u)^2-(v-w)^2
 =A+2Yu+2vw.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 P(X)=A^2-4(Yu+vw)^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the difference-of-squares identity to step <1>6.
+
 :::
 
-<1>8. Substituting
+:::
+
+::: pf-step
+
+Substituting
 \[
 u^2=4ab,
 \quad v^2=4ac,
@@ -154,7 +206,9 @@ P(X)=
 Y=X^2-(a+b+c).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>7,
 \[
 A^2-4(Yu+vw)^2
@@ -169,9 +223,14 @@ This is equivalently
 \left(Y^2-4(ab+ac+bc)\right)^2-64abcY,
 \]
 which is the boxed expression.
+
 :::
 
-<1>9. Therefore an explicit answer is
+:::
+
+::: pf-step
+
+Therefore an explicit answer is
 \[
 \boxed{
 f(X)=
@@ -182,13 +241,19 @@ f(X)=
 -64x_1x_2x_3\bigl(X^2-x_1-x_2-x_3\bigr).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the corrected simplification at the end of step <1>8 and substitute back $a=x_1$, $b=x_2$, $c=x_3$, and $Y=X^2-(a+b+c)$. The polynomial lies in $F[X]$, is monic of degree eight, and equals the product in step <1>1, so $f(\alpha)=0$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 supplies the requested monic degree-eight polynomial over $F$ and step <1>1 verifies the required root.
+
 :::
+
 :::

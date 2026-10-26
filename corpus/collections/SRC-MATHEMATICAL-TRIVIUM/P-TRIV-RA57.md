@@ -19,13 +19,16 @@ audit:
 Compute the following series: (a) $\sum _ { k = 0 } ^ { n } r ^ { k } e ^ { i k \phi } ,$ (b) $\sum _ { k = 0 } ^ { n } r ^ { k } \cos k \phi ,$ (c) $\sum _ { k = 0 } ^ { n } r ^ { k } \sin k \phi .$
 :::
 
-::: {.solution}
 Put
 $$
 z=re^{i\phi}.
 $$
 
-<1>1. If $z\neq1$, then
+::: pf
+
+::: pf-step
+
+If $z\neq1$, then
 $$
 \boxed{
 \sum_{k=0}^{n}r^ke^{ik\phi}
@@ -35,7 +38,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The sum is
 $$
 1+z+z^2+\cdots+z^n.
@@ -47,15 +52,27 @@ $$
 1-z^{n+1}.
 $$
 Divide by $1-z$.
+
 :::
 
-<1>2. Part (a) follows for $z\neq1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows for $z\neq1$.
+
+
+::: pf-proof
+
 This is step <1>1.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 D
 =
@@ -64,7 +81,9 @@ D
 1-2r\cos\phi+r^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply
 $$
 (1-re^{i\phi})(1-re^{-i\phi})
@@ -73,9 +92,14 @@ and use
 $$
 e^{i\phi}+e^{-i\phi}=2\cos\phi.
 $$
+
 :::
 
-<1>4. Rationalizing the expression in step <1>1 gives
+:::
+
+::: pf-step
+
+Rationalizing the expression in step <1>1 gives
 $$
 \sum_{k=0}^{n}r^ke^{ik\phi}
 =
@@ -88,16 +112,23 @@ r^{n+2}e^{in\phi}
 }{D}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply numerator and denominator in step <1>1 by
 $$
 1-re^{-i\phi}.
 $$
 The denominator becomes $D$, and expanding the numerator gives the displayed
 expression.
+
 :::
 
-<1>5. Taking real parts gives
+:::
+
+::: pf-step
+
+Taking real parts gives
 $$
 \boxed{
 \sum_{k=0}^{n}r^k\cos(k\phi)
@@ -114,7 +145,9 @@ r^{n+2}\cos(n\phi)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By Euler's formula,
 $$
 \operatorname{Re}(r^ke^{ik\phi})
@@ -122,15 +155,27 @@ $$
 r^k\cos(k\phi).
 $$
 Take real parts of step <1>4 term by term.
+
 :::
 
-<1>6. Part (b) follows for $z\neq1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows for $z\neq1$.
+
+
+::: pf-proof
+
 This is step <1>5.
+
 :::
 
-<1>7. Taking imaginary parts of step <1>4 gives
+:::
+
+::: pf-step
+
+Taking imaginary parts of step <1>4 gives
 $$
 \boxed{
 \sum_{k=0}^{n}r^k\sin(k\phi)
@@ -147,7 +192,9 @@ r^{n+2}\sin(n\phi)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The imaginary parts in the numerator of step <1>4 are
 $$
 r\sin\phi,
@@ -162,15 +209,27 @@ $$
 =
 r^k\sin(k\phi).
 $$
+
 :::
 
-<1>8. Part (c) follows for $z\neq1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows for $z\neq1$.
+
+
+::: pf-proof
+
 This is step <1>7.
+
 :::
 
-<1>9. If
+:::
+
+::: pf-step
+
+If
 $$
 re^{i\phi}=1,
 $$
@@ -192,7 +251,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $re^{i\phi}=1$, then every factor
 $$
 r^ke^{ik\phi}
@@ -202,11 +263,15 @@ r^ke^{ik\phi}
 $$
 Thus the complex sum consists of $n+1$ copies of $1$, and its real and
 imaginary parts are $n+1$ and $0$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2, <1>6, <1>8, and <1>9 give all three finite sums in every case.
+
 :::
+
 :::

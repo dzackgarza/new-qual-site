@@ -35,7 +35,6 @@ Compute $\limsup\sqrt[n]{|a_n|}$ and $\limsup|a_{n+1}/a_n|$. Show that the serie
 \]
 :::
 
-::: {.solution}
 For part (a), define
 \[
 r_n=\frac{a_{n+1}}{a_n},
@@ -52,7 +51,11 @@ L=\liminf_{n\to\infty}r_n,
 R=\limsup_{n\to\infty}r_n.
 \]
 
-<1>1. Suppose first that
+::: pf
+
+::: pf-step
+
+Suppose first that
 \[
 q>R.
 \]
@@ -62,11 +65,18 @@ Then there exists \(N\) such that
 \]
 for every \(n\ge N\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining eventual upper-bound property of the limsup.
+
 :::
 
-<1>2. For every \(n>N\),
+:::
+
+::: pf-step
+
+For every \(n>N\),
 \[
 a_n
 =
@@ -74,7 +84,9 @@ a_N
 \prod_{k=N}^{n-1}r_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The product telescopes:
 \[
 a_N
@@ -85,9 +97,14 @@ a_N
 =
 a_n.
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 a_n
@@ -96,11 +113,18 @@ a_N q^{\,n-N}}
 \]
 for every \(n>N\).
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the bound \(r_k<q\) from step <1>1 to every factor in step <1>2.
+
 :::
 
-<1>4. Taking \(n\)th roots,
+:::
+
+::: pf-step
+
+Taking \(n\)th roots,
 \[
 \rho_n
 \le
@@ -108,19 +132,28 @@ a_N^{1/n}
 q^{1-N/n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All quantities are positive, so taking \(n\)th roots preserves the
 inequality.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \limsup_{n\to\infty}\rho_n
 \le
 q.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 As \(n\to\infty\),
 \[
 a_N^{1/n}\to1
@@ -130,9 +163,14 @@ and
 q^{1-N/n}\to q.
 \]
 Apply step <1>4.
+
 :::
 
-<1>6. Letting \(q\downarrow R\),
+:::
+
+::: pf-step
+
+Letting \(q\downarrow R\),
 \[
 \boxed{
 \limsup_{n\to\infty}\rho_n
@@ -140,11 +178,18 @@ Apply step <1>4.
 R}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 holds for every \(q>R\).
+
 :::
 
-<1>7. Suppose now that
+:::
+
+::: pf-step
+
+Suppose now that
 \[
 0<q<L.
 \]
@@ -154,11 +199,18 @@ Then there exists \(N\) such that
 \]
 for every \(n\ge N\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining eventual lower-bound property of the liminf.
+
 :::
 
-<1>8. For every \(n>N\),
+:::
+
+::: pf-step
+
+For every \(n>N\),
 \[
 \boxed{
 a_n
@@ -166,12 +218,19 @@ a_n
 a_N q^{\,n-N}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the product identity from step <1>2 and bound every factor below by \(q\)
 using step <1>7.
+
 :::
 
-<1>9. Taking \(n\)th roots,
+:::
+
+::: pf-step
+
+Taking \(n\)th roots,
 \[
 \rho_n
 \ge
@@ -179,40 +238,68 @@ a_N^{1/n}
 q^{1-N/n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All quantities are positive.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \liminf_{n\to\infty}\rho_n
 \ge
 q.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take \(n\to\infty\) in step <1>9.
+
 :::
 
-<1>11. If \(L>0\), letting \(q\uparrow L\) gives
+:::
+
+::: pf-step
+
+If \(L>0\), letting \(q\uparrow L\) gives
 \[
 \liminf\rho_n\ge L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 holds for every \(q\in(0,L)\).
+
 :::
 
-<1>12. If \(L=0\), one still has
+:::
+
+::: pf-step
+
+If \(L=0\), one still has
 \[
 \liminf\rho_n\ge0=L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every \(\rho_n\) is positive.
+
 :::
 
-<1>13. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 L
@@ -220,11 +307,18 @@ L
 \liminf_{n\to\infty}\rho_n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>11--<1>12.
+
 :::
 
-<1>14. Trivially,
+:::
+
+::: pf-step
+
+Trivially,
 \[
 \boxed{
 \liminf\rho_n
@@ -232,11 +326,18 @@ Combine steps <1>11--<1>12.
 \limsup\rho_n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every real sequence, the liminf is at most the limsup.
+
 :::
 
-<1>15. Combining steps <1>6, <1>13, and <1>14,
+:::
+
+::: pf-step
+
+Combining steps <1>6, <1>13, and <1>14,
 \[
 \boxed{
 \liminf\frac{a_{n+1}}{a_n}
@@ -248,13 +349,18 @@ For every real sequence, the liminf is at most the limsup.
 \limsup\frac{a_{n+1}}{a_n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the chain of inequalities established above.
+
 :::
 
-## Part (b): ratio test implies root test
+:::
 
-<1>16. Suppose \(\sum a_n\) converges by the ratio test. Then
+::: pf-step
+
+Suppose \(\sum a_n\) converges by the ratio test. Then
 \[
 \boxed{
 \limsup_{n\to\infty}
@@ -264,13 +370,20 @@ This is exactly the chain of inequalities established above.
 <1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the convergence hypothesis in the generalized ratio test; in the
 usual version where the ratio limit exists, the same strict inequality holds
 for that limit.
+
 :::
 
-<1>17. Applying part (a) to the positive sequence \((|a_n|)\),
+:::
+
+::: pf-step
+
+Applying part (a) to the positive sequence \((|a_n|)\),
 \[
 \limsup_{n\to\infty}\sqrt[n]{|a_n|}
 \le
@@ -280,40 +393,52 @@ for that limit.
 \right|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>15 with \(a_n\) replaced by \(|a_n|\).
+
 :::
 
-<1>18. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \limsup_{n\to\infty}\sqrt[n]{|a_n|}<1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>16--<1>17.
+
 :::
 
-<1>19. Therefore the root test also proves that
+:::
+
+::: pf-step
+
+Therefore the root test also proves that
 \[
 \boxed{\sum a_n\text{ converges absolutely}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The root-test convergence criterion is exactly the strict inequality in
 step <1>18.
+
 :::
 
-## Part (c)
+:::
 
-Let
-\[
-a_n
-=
-\frac1{2^{n+(-1)^n}}.
-\]
+::: pf-step
 
-<1>20. The \(n\)th root is
+The \(n\)th root is
 \[
 \boxed{
 |a_n|^{1/n}
@@ -321,7 +446,9 @@ a_n
 2^{-1-(-1)^n/n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \left(
 2^{-n-(-1)^n}
@@ -329,9 +456,14 @@ a_n
 =
 2^{-1-(-1)^n/n}.
 \]
+
 :::
 
-<1>21. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}|a_n|^{1/n}
@@ -339,15 +471,22 @@ a_n
 \frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \frac{(-1)^n}{n}\to0,
 \]
 the exponent in step <1>20 tends to \(-1\).
+
 :::
 
-<1>22. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 \limsup_{n\to\infty}|a_n|^{1/n}
@@ -355,18 +494,27 @@ the exponent in step <1>20 tends to \(-1\).
 \frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The full sequence has a limit by step <1>21.
+
 :::
 
-<1>23. The ratio is
+:::
+
+::: pf-step
+
+The ratio is
 \[
 \frac{a_{n+1}}{a_n}
 =
 2^{-1+2(-1)^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 \frac{a_{n+1}}{a_n}
@@ -378,37 +526,56 @@ The full sequence has a limit by step <1>21.
 2^{-1+2(-1)^n}.
 \end{aligned}
 \]
+
 :::
 
-<1>24. If \(n\) is even,
+:::
+
+::: pf-step
+
+If \(n\) is even,
 \[
 \boxed{
 \frac{a_{n+1}}{a_n}=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Then
 \[
 (-1)^n=1,
 \]
 so the exponent in step <1>23 is \(1\).
+
 :::
 
-<1>25. If \(n\) is odd,
+:::
+
+::: pf-step
+
+If \(n\) is odd,
 \[
 \boxed{
 \frac{a_{n+1}}{a_n}=\frac18}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Then
 \[
 (-1)^n=-1,
 \]
 so the exponent is \(-3\).
+
 :::
 
-<1>26. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \limsup_{n\to\infty}
@@ -429,26 +596,42 @@ and
 \frac18}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The ratio alternates between the two values in steps <1>24--<1>25.
+
 :::
 
-<1>27. The series
+:::
+
+::: pf-step
+
+The series
 \[
 \sum a_n
 \]
 converges absolutely by the root test.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>22, the root-test limsup is
 \[
 1/2<1.
 \]
+
 :::
 
-<1>28. The ratio test does not decide convergence.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ratio test does not decide convergence.
+
+
+::: pf-proof
+
 The sufficient convergence condition
 \[
 \limsup |a_{n+1}/a_n|<1
@@ -459,16 +642,14 @@ fails because the limsup is \(2\), while the sufficient divergence condition
 \]
 also fails because the liminf is \(1/8\). Thus the generalized ratio test is
 inconclusive.
+
 :::
 
-## Part (d)
+:::
 
-Let
-\[
-b_n=\frac{n^n}{n!}.
-\]
+::: pf-step
 
-<1>29. The consecutive ratio is
+The consecutive ratio is
 \[
 \boxed{
 \frac{b_{n+1}}{b_n}
@@ -478,7 +659,9 @@ b_n=\frac{n^n}{n!}.
 \right)^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 \frac{b_{n+1}}{b_n}
@@ -493,30 +676,49 @@ b_n=\frac{n^n}{n!}.
 \right)^n.
 \end{aligned}
 \]
+
 :::
 
-<1>30. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{b_{n+1}}{b_n}\to e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard limit
 \[
 \left(
 1+\frac1n
 \right)^n\to e.
 \]
+
 :::
 
-<1>31. Hence both the liminf and limsup of the ratios equal \(e\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence both the liminf and limsup of the ratios equal \(e\).
+
+
+::: pf-proof
+
 The ratio sequence converges by step <1>30.
+
 :::
 
-<1>32. Applying the inequality from part (a),
+:::
+
+::: pf-step
+
+Applying the inequality from part (a),
 \[
 e
 \le
@@ -527,25 +729,38 @@ e
 e.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>15 together with step <1>31.
+
 :::
 
-<1>33. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}\sqrt[n]{b_n}=e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The liminf and limsup are both \(e\) by step <1>32, so the sequence
 converges to \(e\).
+
 :::
 
-<1>34. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 proves part (a), step <1>19 proves part (b), steps <1>22--<1>28
 prove part (c), and step <1>33 proves part (d).
+
 :::
+
 :::

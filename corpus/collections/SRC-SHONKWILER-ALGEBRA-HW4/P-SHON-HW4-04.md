@@ -23,7 +23,6 @@ S_n=\langle (12),(12\cdots n)\rangle
 for every $n\ge2$.
 :::
 
-::: {.solution}
 Let
 \[
 \tau=(12\cdots n)
@@ -37,7 +36,11 @@ Set
 G=\langle \sigma,\tau\rangle.
 \]
 
-<1>1. For each
+::: pf
+
+::: pf-step
+
+For each
 \[
 1\le i\le n-1,
 \]
@@ -49,7 +52,9 @@ one has
 (i\,\,i+1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Conjugation sends a transposition \((a\,b)\) to
 \[
 (\tau^{i-1}(a)\,\,\tau^{i-1}(b)).
@@ -63,20 +68,32 @@ and
 \tau^{i-1}(2)=i+1
 \]
 for \(1\le i\le n-1\), the formula follows.
+
 :::
 
-<1>2. Therefore every adjacent transposition
+:::
+
+::: pf-step
+
+Therefore every adjacent transposition
 \[
 \boxed{
 (12),(23),\dots,(n-1\,\,n)}
 \]
 belongs to \(G\).
 
-::: {.proof}
+
+::: pf-proof
+
 Each one is one of the conjugates from step <1>1.
+
 :::
 
-<1>3. Every transposition \((i\,j)\) with \(i<j\) can be written as a product of adjacent transpositions:
+:::
+
+::: pf-step
+
+Every transposition \((i\,j)\) with \(i<j\) can be written as a product of adjacent transpositions:
 \[
 \boxed{
 (i\,j)
@@ -85,19 +102,35 @@ Each one is one of the conjugates from step <1>1.
 (i+1\,\,i+2)\cdots(j-1\,\,j)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The right-hand side moves \(i\) successively to \(j\), then moves the intermediate entries back, fixing all points except \(i\) and \(j\). Hence it is exactly the transposition \((i\,j)\).
+
 :::
 
-<1>4. Thus every transposition in \(S_n\) belongs to \(G\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus every transposition in \(S_n\) belongs to \(G\).
+
+
+::: pf-proof
+
 Step <1>2 puts all adjacent transpositions in \(G\), and step <1>3 expresses any transposition as their product.
+
 :::
 
-<1>5. The transpositions generate \(S_n\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The transpositions generate \(S_n\).
+
+
+::: pf-proof
+
 Every permutation decomposes into disjoint cycles, and every cycle
 \[
 (a_1a_2\cdots a_m)
@@ -107,18 +140,30 @@ can be written as
 (a_1a_m)(a_1a_{m-1})\cdots(a_1a_2).
 \]
 Hence every permutation is a product of transpositions.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 S_n\subseteq G.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5, every element of \(S_n\) is a product of elements already in \(G\).
+
 :::
 
-<1>7. Since by definition
+:::
+
+::: pf-step
+
+Since by definition
 \[
 G\le S_n,
 \]
@@ -128,13 +173,19 @@ one obtains
 S_n=\langle(12),(12\cdots n)\rangle}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the two inclusions.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required generation statement.
+
 :::
+
 :::

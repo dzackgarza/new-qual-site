@@ -20,7 +20,6 @@ audit:
 If $f(z) = (2x + 3y) + i\,g(x, y)$ is analytic and $g(2, 3) = 1$, what is $g(x, y)$?
 :::
 
-::: {.solution}
 Let
 \[
 u(x,y)=2x+3y,
@@ -28,14 +27,20 @@ u(x,y)=2x+3y,
 v(x,y)=g(x,y).
 \]
 
-<1>1. The Cauchy--Riemann equations give
+::: pf
+
+::: pf-step
+
+The Cauchy--Riemann equations give
 \[
 g_y=2
 \qquad\text{and}\qquad
 g_x=-3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f=u+iv$ is analytic,
 \[
 u_x=v_y
@@ -56,14 +61,21 @@ and
 \[
 g_x=v_x=-3.
 \]
+
 :::
 
-<1>2. There is a real constant $C$ such that
+:::
+
+::: pf-step
+
+There is a real constant $C$ such that
 \[
 g(x,y)=-3x+2y+C.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrating
 \[
 g_x=-3
@@ -81,34 +93,52 @@ so
 \[
 h(y)=2y+C.
 \]
+
 :::
 
-<1>3. The condition $g(2,3)=1$ gives
+:::
+
+::: pf-step
+
+The condition $g(2,3)=1$ gives
 \[
 C=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 1=g(2,3)
 =-3(2)+2(3)+C
 =C.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{g(x,y)=-3x+2y+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the value of $C$ from step <1>3 into the formula from step <1>2.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required harmonic conjugate.
+
 :::
+
 :::

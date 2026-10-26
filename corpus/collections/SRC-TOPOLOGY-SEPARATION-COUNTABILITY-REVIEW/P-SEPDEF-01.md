@@ -23,13 +23,18 @@ Prove that a topological space $X$ is regular if and only if $X$ is $T_1$ and, f
 \]
 :::
 
-::: {.solution}
-<1>1. Suppose $X$ is regular. Then $X$ is $T_1$, and for every $x\in U$ with $U$ open there is an open set $V$ containing $x$ such that
+::: pf
+
+::: pf-step
+
+Suppose $X$ is regular. Then $X$ is $T_1$, and for every $x\in U$ with $U$ open there is an open set $V$ containing $x$ such that
 $$
 \overline V\subseteq U.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Regularity includes the $T_1$ condition. Let $x\in U$ with $U$ open, and put
 $$
 F\coloneqq X\setminus U.
@@ -49,11 +54,18 @@ $$
 X\setminus W\subseteq X\setminus F=U.
 $$
 Therefore $\overline V\subseteq U$.
+
 :::
 
-<1>2. Conversely, suppose $X$ is $T_1$ and has the stated closure-neighborhood property. Then $X$ is regular.
+:::
 
-::: {.proof}
+::: pf-step
+
+Conversely, suppose $X$ is $T_1$ and has the stated closure-neighborhood property. Then $X$ is regular.
+
+
+::: pf-proof
+
 Let $x\in X$ and let $F\subseteq X$ be closed with $x\notin F$. The set
 $$
 U\coloneqq X\setminus F
@@ -69,11 +81,15 @@ $$
 W\coloneqq X\setminus\overline V.
 $$
 Then $W$ is open. Since $\overline V\subseteq X\setminus F$, one has $F\subseteq W$. Moreover $V\cap W=\varnothing$. Thus the point $x$ and the closed set $F$ have disjoint open neighborhoods. Together with the assumed $T_1$ property, this is regularity.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the forward implication, and step <1>2 proves the converse.
+
 :::
+
 :::

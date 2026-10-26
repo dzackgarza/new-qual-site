@@ -23,13 +23,18 @@ Suppose $f:\mathbb R\to\mathbb R$ is twice differentiable and $|f''(x)|\le B$.
 (b) Use part (a) to justify \[\left|\int_a^b f(x)\,dx-\frac{b-a}{n}\sum_{k=1}^n f\!\left(a+\frac{2k-1}{2n}(b-a)\right)\right|\le Cn^{-2},\] where $C$ is independent of $n$.
 :::
 
-::: {.solution}
-<1>1. For every $x\in\mathbb R$,
+::: pf
+
+::: pf-step
+
+For every $x\in\mathbb R$,
 \[
 |f'(x)-f'(0)|\le B|x|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $x=0$, the inequality is immediate. If $x\ne0$, apply the mean value theorem to $f'$ on the interval with endpoints $0$ and $x$. Since $f''$ exists everywhere, there is a point $\xi$ between $0$ and $x$ such that
 \[
 f'(x)-f'(0)=f''(\xi)x.
@@ -40,16 +45,23 @@ Therefore
 \le
 B|x|.
 \]
+
 :::
 
-<1>2. For every $x\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every $x\in\mathbb R$,
 \[
 \left|f(x)-f(0)-xf'(0)\right|
 \le
 \frac B2x^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f'$ is differentiable, it is continuous. Hence
 \[
 f(x)-f(0)-xf'(0)
@@ -64,9 +76,14 @@ Using step <1>1,
 =
 \frac B2x^2.
 \]
+
 :::
 
-<1>3. For every $A>0$,
+:::
+
+::: pf-step
+
+For every $A>0$,
 \[
 \boxed{
 \left|
@@ -77,7 +94,9 @@ Using step <1>1,
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \left|f(x)-f(0)-xf'(0)\right|
@@ -102,9 +121,14 @@ one obtains
 \frac{A^3}{3}B.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For part (b), set
+:::
+
+::: pf-step
+
+For part (b), set
 \[
 h=\frac{b-a}{n}
 \]
@@ -123,15 +147,22 @@ Then
 \]
 with disjoint interiors.
 
-::: {.proof}
+
+::: pf-proof
+
 The $k$th interval is
 \[
 \left[a+(k-1)h,\ a+kh\right].
 \]
 These are exactly the $n$ equal subintervals of the uniform partition of $[a,b]$.
+
 :::
 
-<1>5. For each $k$,
+:::
+
+::: pf-step
+
+For each $k$,
 \[
 \left|
 \int_{c_k-h/2}^{c_k+h/2}f(x)\,dx
@@ -141,7 +172,9 @@ These are exactly the $n$ equal subintervals of the uniform partition of $[a,b]$
 \frac{Bh^3}{24}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 to the translated function
 \[
 g_k(t)=f(c_k+t)
@@ -167,9 +200,14 @@ h f(c_k)
 \frac{Bh^3}{24}.
 \]
 Changing variables $x=c_k+t$ gives the stated estimate.
+
 :::
 
-<1>6. The midpoint quadrature error satisfies
+:::
+
+::: pf-step
+
+The midpoint quadrature error satisfies
 \[
 \boxed{
 \left|
@@ -184,7 +222,9 @@ f\!\left(a+\frac{2k-1}{2n}(b-a)\right)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 \int_a^b f(x)\,dx
@@ -212,15 +252,19 @@ and apply the triangle inequality together with step <1>5:
 \end{aligned}
 \]
 Substituting the definitions of $h$ and $c_k$ gives exactly the displayed formula.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>6 proves part (b) with
 \[
 C=\frac{B(b-a)^3}{24},
 \]
 which is independent of $n$.
+
 :::
+
 :::

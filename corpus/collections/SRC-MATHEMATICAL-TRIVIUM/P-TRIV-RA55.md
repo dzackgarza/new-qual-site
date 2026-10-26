@@ -23,8 +23,11 @@ Consider the function $J ( a ) = \sum _ { n = 0 } ^ { \infty } n e ^ { - a n }$ 
 (b) Expand J(a) around the point a = 0 up to $O ( a ^ { 0 } )$
 :::
 
-::: {.solution}
-<1>1. Put
+::: pf
+
+::: pf-step
+
+Put
 $$
 q=e^{-a}.
 $$
@@ -34,44 +37,72 @@ $$
 $$
 because $a>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The exponential of a negative positive number lies strictly between $0$ and $1$.
+
 :::
 
-<1>2. The geometric series gives
+:::
+
+::: pf-step
+
+The geometric series gives
 $$
 \sum_{n=0}^{\infty}q^n
 =
 \frac1{1-q}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard geometric-series formula for $|q|<1$.
+
 :::
 
-<1>3. Differentiating with respect to $q$ gives
+:::
+
+::: pf-step
+
+Differentiating with respect to $q$ gives
 $$
 \sum_{n=1}^{\infty}nq^{n-1}
 =
 \frac1{(1-q)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The geometric series converges uniformly on every closed disk $|q|\leq r<1$, so termwise differentiation is valid there.
+
 :::
 
-<1>4. Multiplying by $q$ gives
+:::
+
+::: pf-step
+
+Multiplying by $q$ gives
 $$
 \sum_{n=0}^{\infty}nq^n
 =
 \frac{q}{(1-q)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $n=0$ term is zero, so multiplying step <1>3 by $q$ gives the stated series.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 J(a)
@@ -80,11 +111,18 @@ J(a)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $q=e^{-a}$ from step <1>1 into step <1>4.
+
 :::
 
-<1>6. Equivalently,
+:::
+
+::: pf-step
+
+Equivalently,
 $$
 \boxed{
 J(a)
@@ -93,7 +131,9 @@ J(a)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 1-e^{-a}
@@ -110,15 +150,27 @@ $$
 4e^{-a}\sinh^2(a/2).
 $$
 Substitute this into step <1>5.
+
 :::
 
-<1>7. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>5--<1>6 give two explicit equivalent formulas.
+
 :::
 
-<1>8. As $a\to0$,
+:::
+
+::: pf-step
+
+As $a\to0$,
 $$
 \sinh\frac a2
 =
@@ -129,7 +181,9 @@ $$
 O(a^5).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the Taylor series
 $$
 \sinh z
@@ -137,9 +191,14 @@ $$
 z+\frac{z^3}{3!}+O(z^5)
 $$
 with $z=a/2$.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 4\sinh^2\frac a2
 =
@@ -150,7 +209,9 @@ a^2
 O(a^6).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Square the expansion from step <1>8:
 $$
 \left(
@@ -164,9 +225,14 @@ $$
 O(a^6).
 $$
 Multiply by $4$.
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 J(a)
 =
@@ -174,11 +240,18 @@ J(a)
 \frac1{1+a^2/12+O(a^4)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Factor $a^2$ from the denominator in step <1>9 and use step <1>6.
+
 :::
 
-<1>11. Using
+:::
+
+::: pf-step
+
+Using
 $$
 \frac1{1+u}
 =
@@ -197,7 +270,9 @@ O(a^2).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>10, take
 $$
 u=\frac{a^2}{12}+O(a^4).
@@ -209,17 +284,28 @@ $$
 1-\frac{a^2}{12}+O(a^4).
 $$
 Multiplying by $a^{-2}$ gives the result.
+
 :::
 
-<1>12. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Step <1>11 includes every term through order $a^0$.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7 and <1>12 establish parts (a) and (b), respectively.
+
 :::
+
 :::

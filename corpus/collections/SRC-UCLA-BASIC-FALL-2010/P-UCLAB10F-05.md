@@ -34,10 +34,15 @@ Problem 5. Prove or disprove each statement for arbitrary subsets $S,S'$ of a ve
 \]
 :::
 
-::: {.solution}
-<1>1. Statement (a) is false in general.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement (a) is false in general.
+
+
+::: pf-proof
+
 Take
 \[
 V=\mathbb R^2,
@@ -75,16 +80,23 @@ so
 \{0\}.
 \]
 Thus the claimed equality fails.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \operatorname{span}(S)+\operatorname{span}(S')
 \subseteq
 \operatorname{span}(S\cup S').
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every vector in $\operatorname{span}(S)$ is a finite linear combination of elements of $S$, hence of elements of $S\cup S'$. Thus
 \[
 \operatorname{span}(S)\subseteq\operatorname{span}(S\cup S').
@@ -94,16 +106,23 @@ Similarly,
 \operatorname{span}(S')\subseteq\operatorname{span}(S\cup S').
 \]
 Since the right-hand side is a subspace, it contains every sum of one vector from each of these two subspaces.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \operatorname{span}(S\cup S')
 \subseteq
 \operatorname{span}(S)+\operatorname{span}(S').
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sum
 \[
 \operatorname{span}(S)+\operatorname{span}(S')
@@ -120,9 +139,14 @@ By minimality of the span, every subspace containing $S\cup S'$ must contain
 \[
 \operatorname{span}(S\cup S').
 \]
+
 :::
 
-<1>4. Statement (b) is true:
+:::
+
+::: pf-step
+
+Statement (b) is true:
 \[
 \boxed{
 \operatorname{span}(S)+\operatorname{span}(S')
@@ -131,13 +155,19 @@ By minimality of the span, every subspace containing $S\cup S'$ must contain
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2 and <1>3 prove the two inclusions.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 disproves part (a), and step <1>4 proves part (b).
+
 :::
+
 :::

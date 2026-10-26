@@ -20,13 +20,18 @@ audit:
 Let $G$ be a non-empty set with a binary operation which is associative and fully cancellative (i.e. $xz = yz \implies x = y$ and $zx = zy \implies x = y$ for all $x, y, z \in G$). Further assume that $\{x^n : n = 1, 2, 3, \ldots\}$ is finite for all $x \in G$. Show that $G$ is a group.
 :::
 
-::: {.solution}
-<1>1. For every $x\in G$, there is an integer $r\ge1$ such that
+::: pf
+
+::: pf-step
+
+For every $x\in G$, there is an integer $r\ge1$ such that
 \[
 x^{r+1}=x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set of positive powers of $x$ is finite, so there exist integers
 \[
 1\le m<n
@@ -50,9 +55,14 @@ Set
 \[
 r=n-m\ge1.
 \]
+
 :::
 
-<1>2. For the integer $r$ from step <1>1, the element
+:::
+
+::: pf-step
+
+For the integer $r$ from step <1>1, the element
 \[
 e_x=x^r
 \]
@@ -61,7 +71,9 @@ is idempotent:
 e_x^2=e_x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>1,
 \[
 x^{r+1}=x.
@@ -78,12 +90,19 @@ Thus in every case
 \[
 (x^r)^2=x^r.
 \]
+
 :::
 
-<1>3. Any idempotent element $e\in G$ is a two-sided identity for all of
+:::
+
+::: pf-step
+
+Any idempotent element $e\in G$ is a two-sided identity for all of
 $G$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 e^2=e.
@@ -105,19 +124,33 @@ Right cancellation of the common factor $e$ gives
 ae=a.
 \]
 Hence $e$ is a global two-sided identity.
+
 :::
 
-<1>4. The set $G$ has a two-sided identity element $e$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $G$ has a two-sided identity element $e$.
+
+
+::: pf-proof
+
 Choose any $x\in G$, which is possible because $G$ is nonempty. Step <1>2
 produces an idempotent $e_x$, and step <1>3 shows that $e_x$ is a global
 identity. Denote it by $e$.
+
 :::
 
-<1>5. Every $x\in G$ has a two-sided inverse.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every $x\in G$ has a two-sided inverse.
+
+
+::: pf-proof
+
 Fix $x\in G$ and choose $r\ge1$ as in step <1>1. By steps <1>2 and <1>3,
 \[
 x^r=e.
@@ -137,22 +170,33 @@ and
 yx=x^r=e.
 \]
 Thus $y$ is a two-sided inverse of $x$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{G\text{ is a group}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Associativity is assumed. Step <1>4 supplies an identity, and step <1>5
 supplies a two-sided inverse for every element. These are precisely the
 remaining group axioms.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

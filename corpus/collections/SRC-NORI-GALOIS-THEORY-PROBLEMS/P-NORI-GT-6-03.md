@@ -27,7 +27,6 @@ Let $f _ { A } \in F [ X ]$ be the product of $( X - a )$ , taken over all $a \i
 Hint: Let $C = F [ Y ]$ and let $h ( X ) = - f _ { A } ( X + Y ) + f _ { A } ( X ) + f _ { A } ( Y ) \in C [ X ]$ . Use (i) to find more $c \in C$ such that $h ( c ) = 0$ than the degree of $h \in C [ X ]$
 :::
 
-::: {.solution}
 Let
 $$
 q=\abs{A},
@@ -35,12 +34,18 @@ q=\abs{A},
 f_A(X)=\prod_{b\in A}(X-b).
 $$
 
-<1>1. For every $a\in A$,
+::: pf
+
+::: pf-step
+
+For every $a\in A$,
 $$
 \boxed{f_A(X+a)=f_A(X)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $a\in A$. Since $A$ is an additive subgroup, translation by $a$ permutes $A$. Therefore
 $$
 \begin{aligned}
@@ -51,9 +56,14 @@ f_A(X+a)
 \end{aligned}
 $$
 where in the second product we reindex by $c=b-a$. This proves part (i).
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 h(X)=-f_A(X+Y)+f_A(X)+f_A(Y)
 \in F[Y][X].
@@ -63,17 +73,26 @@ $$
 \deg_X h\leq q-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial $f_A$ is monic of degree $q$. Hence both $f_A(X+Y)$ and $f_A(X)$ have leading $X$-term $X^q$. These leading terms cancel in
 $$
 -f_A(X+Y)+f_A(X),
 $$
 while $f_A(Y)$ has $X$-degree $0$. Therefore $\deg_X h\leq q-1$.
+
 :::
 
-<1>3. Every element $a\in A$ is a root of $h(X)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every element $a\in A$ is a root of $h(X)$.
+
+
+::: pf-proof
+
 Because $0\in A$, one has
 $$
 f_A(a)=0
@@ -91,35 +110,53 @@ h(a)
 &=0.
 \end{aligned}
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 h(X)=0
 $$
 in $F[Y][X]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The coefficient ring $F[Y]$ is an integral domain. A nonzero polynomial of degree at most $q-1$ over an integral domain has at most $q-1$ distinct roots in that domain. By step <1>3, the polynomial $h$ has the $q$ distinct roots given by the elements of $A\subseteq F\subseteq F[Y]$. Together with the degree bound in step <1>2, this forces $h=0$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f_A(X+Y)=f_A(X)+f_A(Y)}
 $$
 in $F[X,Y]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 says precisely that
 $$
 -f_A(X+Y)+f_A(X)+f_A(Y)=0.
 $$
 Rearranging gives the asserted identity, proving part (ii).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (i), and step <1>5 proves part (ii).
+
 :::
+
 :::

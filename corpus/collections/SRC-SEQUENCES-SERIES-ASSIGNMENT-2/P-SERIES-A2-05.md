@@ -19,31 +19,43 @@ Let $\{a_n\}_{n=0}^\infty$ be a sequence of real numbers satisfying
 Show that the sequence converges. Hint: show that the sequence is Cauchy.
 :::
 
-::: {.solution}
 For \(n\ge1\), define
 \[
 d_n=|a_n-a_{n-1}|.
 \]
 
-<1>1. The hypothesis is
+::: pf
+
+::: pf-step
+
+The hypothesis is
 \[
 \boxed{
 d_{n+1}\le\frac12d_n}
 \]
 for every \(n\ge1\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the given inequality written in terms of \(d_n\).
+
 :::
 
-<1>2. For every \(n\ge1\),
+:::
+
+::: pf-step
+
+For every \(n\ge1\),
 \[
 \boxed{
 d_n\le
 \left(\frac12\right)^{n-1}d_1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use induction.
 
 For \(n=1\), the statement is equality.
@@ -59,9 +71,14 @@ d_{n+1}
 =
 \left(\frac12\right)^n d_1.
 \]
+
 :::
 
-<1>3. Let \(m>n\). Then
+:::
+
+::: pf-step
+
+Let \(m>n\). Then
 \[
 a_m-a_n
 =
@@ -69,27 +86,41 @@ a_m-a_n
 (a_k-a_{k-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sum telescopes:
 \[
 (a_{n+1}-a_n)+\cdots+(a_m-a_{m-1})
 =
 a_m-a_n.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 |a_m-a_n|
 \le
 \sum_{k=n+1}^{m}d_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the triangle inequality to step <1>3.
+
 :::
 
-<1>5. Using step <1>2,
+:::
+
+::: pf-step
+
+Using step <1>2,
 \[
 |a_m-a_n|
 \le
@@ -98,11 +129,18 @@ d_1
 \left(\frac12\right)^{k-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Bound each \(d_k\) in step <1>4 by the geometric estimate from step <1>2.
+
 :::
 
-<1>6. Extending the finite sum to an infinite geometric tail,
+:::
+
+::: pf-step
+
+Extending the finite sum to an infinite geometric tail,
 \[
 |a_m-a_n|
 \le
@@ -111,11 +149,18 @@ d_1
 \left(\frac12\right)^{k-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All terms are nonnegative.
+
 :::
 
-<1>7. The geometric tail is
+:::
+
+::: pf-step
+
+The geometric tail is
 \[
 \boxed{
 \sum_{k=n+1}^{\infty}
@@ -124,7 +169,9 @@ All terms are nonnegative.
 2^{1-n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set \(j=k-1\):
 \[
 \sum_{j=n}^{\infty}2^{-j}
@@ -133,9 +180,14 @@ Set \(j=k-1\):
 =
 2^{1-n}.
 \]
+
 :::
 
-<1>8. Therefore, for every \(m>n\),
+:::
+
+::: pf-step
+
+Therefore, for every \(m>n\),
 \[
 \boxed{
 |a_m-a_n|
@@ -143,11 +195,18 @@ Set \(j=k-1\):
 d_1\,2^{1-n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6--<1>7.
+
 :::
 
-<1>9. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \varepsilon>0.
 \]
@@ -156,15 +215,22 @@ Choose \(N\) so large that
 d_1\,2^{1-N}<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 2^{1-N}\to0,
 \]
 such \(N\) exists. If \(d_1=0\), any \(N\) works.
+
 :::
 
-<1>10. Then for all
+:::
+
+::: pf-step
+
+Then for all
 \[
 m>n\ge N,
 \]
@@ -174,7 +240,9 @@ one has
 |a_m-a_n|<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 \[
 |a_m-a_n|
@@ -185,27 +253,45 @@ d_1\,2^{1-N}
 <
 \varepsilon.
 \]
+
 :::
 
-<1>11. Thus \((a_n)\) is a Cauchy sequence.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus \((a_n)\) is a Cauchy sequence.
+
+
+::: pf-proof
+
 Step <1>10 is exactly the Cauchy criterion.
+
 :::
 
-<1>12. Since \(\mathbb R\) is complete,
+:::
+
+::: pf-step
+
+Since \(\mathbb R\) is complete,
 \[
 \boxed{
 (a_n)\text{ converges in }\mathbb R}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every Cauchy sequence of real numbers converges.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 is the required conclusion.
+
 :::
+
 :::

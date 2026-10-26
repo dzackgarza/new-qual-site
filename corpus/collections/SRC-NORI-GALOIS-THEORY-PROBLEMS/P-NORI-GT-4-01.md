@@ -23,14 +23,19 @@ Hint: This is a consequence of the definition of the adjoint matrix adj(T ) and 
 Remark: In reality, the above adjoint matrix is simply $\Lambda ^ { n - 1 } ( T )$ Therefore this problem could be stated and solved entirely within the framework of exterior algebras, with no reference to matrices.
 :::
 
-::: {.solution}
-<1>1. Let $\operatorname{adj}(T)$ be the adjugate matrix of $T$, whose $(i,j)$ entry is the $(j,i)$ cofactor of $T$.
+::: pf
+
+::: pf-step
+
+Let $\operatorname{adj}(T)$ be the adjugate matrix of $T$, whose $(i,j)$ entry is the $(j,i)$ cofactor of $T$.
 Then
 $$
 T\operatorname{adj}(T)=\det(T)I_n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $(i,j)$ entry of $T\operatorname{adj}(T)$ is
 $$
 \sum_{k=1}^n t_{ik}C_{jk},
@@ -42,9 +47,14 @@ If $i\ne j$, it is the determinant of the matrix obtained from $T$ by replacing 
 Thus the product has diagonal entries $\det(T)$ and off-diagonal entries $0$.
 
 The argument uses only addition, multiplication, and signs, so it is valid over any commutative ring.
+
 :::
 
-<1>2. For $v\in R^n$, define
+:::
+
+::: pf-step
+
+For $v\in R^n$, define
 $$
 w=\operatorname{adj}(T)v.
 $$
@@ -53,7 +63,9 @@ $$
 Tw=\det(T)v.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 Tw
@@ -61,20 +73,31 @@ Tw
 =\det(T)I_nv
 =\det(T)v.
 $$
+
 :::
 
-<1>3. Therefore for every $v\in R^n$ there exists $w\in R^n$ satisfying
+:::
+
+::: pf-step
+
+Therefore for every $v\in R^n$ there exists $w\in R^n$ satisfying
 $$
 \boxed{Tw=\det(T)v}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The vector constructed in step <1>2 has the required property.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the assertion of the problem.
+
 :::
+
 :::

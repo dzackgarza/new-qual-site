@@ -30,24 +30,36 @@ Each of its five relays is closed with the probability $p$ independently of othe
 Figure 7 of the source (the circuit) is a bridge: from the input the line splits into an upper branch through relay $A$ to an upper node and a lower branch through relay $C$ to a lower node; the upper node is joined to the output through relay $B$, the lower node is joined to the output through relay $D$, and relay $E$ joins the upper node to the lower node.
 :::
 
-::: {.solution}
 Let $S$ be the event that a signal passes from input to output.
 
-<1>1. Conditional on $E$ being open, the circuit consists of the two parallel series paths $AB$ and $CD$, so
+::: pf
+
+::: pf-step
+
+Conditional on $E$ being open, the circuit consists of the two parallel series paths $AB$ and $CD$, so
 \[
 P(S\mid E\text{ open})=1-(1-p^2)^2=2p^2-p^4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 With $E$ open, passage occurs exactly when $A$ and $B$ are both closed or $C$ and $D$ are both closed. The two path events depend on disjoint relays and are independent, each with probability $p^2$. Taking the complement gives the formula.
+
 :::
 
-<1>2. Conditional on $E$ being closed, passage occurs exactly when at least one of $A,C$ is closed and at least one of $B,D$ is closed, so
+:::
+
+::: pf-step
+
+Conditional on $E$ being closed, passage occurs exactly when at least one of $A,C$ is closed and at least one of $B,D$ is closed, so
 \[
 P(S\mid E\text{ closed})=(2p-p^2)^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When $E$ is closed, the two intermediate nodes are connected and behave as one node. The probability that at least one of $A,C$ is closed is $1-(1-p)^2=2p-p^2$, and the same holds independently for $B,D$. Thus
 \[
 P(S\mid E\text{ closed})
@@ -55,40 +67,66 @@ P(S\mid E\text{ closed})
 =(2p-p^2)^2.
 \]
 This direct characterization subsumes the failure cases described in the claim.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 P(S)=(1-p)(2p^2-p^4)+p(2p-p^2)^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the law of total probability, with $P(E\text{ open})=1-p$ and $P(E\text{ closed})=p$, and substitute steps <1>1--<1>2.
+
 :::
 
-<1>4. Simplifying gives
+:::
+
+::: pf-step
+
+Simplifying gives
 \[
 \boxed{P(S)=2p^2+2p^3-5p^4+2p^5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand step <1>3:
 \[
 (1-p)(2p^2-p^4)+p(4p^2-4p^3+p^4)
 =2p^2+2p^3-5p^4+2p^5.
 \]
+
 :::
 
-<1>5. The joint probability that $E$ is open and the signal passes is
+:::
+
+::: pf-step
+
+The joint probability that $E$ is open and the signal passes is
 \[
 P(E\text{ open}\cap S)=(1-p)(2p^2-p^4).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply $P(E\text{ open})=1-p$ by the conditional probability in step <1>1.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 P(E\text{ open}\mid S)
@@ -96,17 +134,23 @@ P(E\text{ open}\mid S)
 \]
 for $p>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of conditional probability,
 \[
 P(E\text{ open}\mid S)=\frac{P(E\text{ open}\cap S)}{P(S)}.
 \]
 Substitute steps <1>4--<1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 answers part (a), and step <1>6 answers part (b).
+
 :::
+
 :::

@@ -35,20 +35,25 @@ let $M$ be the minimum value of $Q$ on $S$, and choose $u\in S$ with $Q(u)=M$.
 Use Lagrange multipliers to prove that $u$ is an eigenvector of $A$ with eigenvalue $M$.
 :::
 
-::: {.solution}
 Write
 \[
 v=(v_1,\ldots,v_n)^t.
 \]
 
-<1>1. For each $k\in\{1,\ldots,n\}$,
+::: pf
+
+::: pf-step
+
+For each $k\in\{1,\ldots,n\}$,
 \[
 \frac{\partial Q}{\partial v_k}(v)
 =
 2\sum_{j=1}^n a_{kj}v_j.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 Q(v)=\sum_{i,j=1}^n a_{ij}v_iv_j,
@@ -71,22 +76,34 @@ so the two sums are equal. Hence
 =
 2\sum_{j=1}^n a_{kj}v_j.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\nabla Q(v)=2Av}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $k$th coordinate of $2Av$ is
 \[
 2\sum_{j=1}^n a_{kj}v_j,
 \]
 which equals the $k$th coordinate of $\nabla Q(v)$ by step <1>1.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 h(v)=\|v\|^2.
 \]
@@ -99,7 +116,9 @@ and
 \nabla h(u)=2u\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 h(v)=v_1^2+\cdots+v_n^2,
@@ -109,14 +128,21 @@ so
 \nabla h(v)=2v.
 \]
 Since $u\in S$, one has $\|u\|=1$, hence $u\ne0$ and therefore $\nabla h(u)\ne0$.
+
 :::
 
-<1>4. There exists $\lambda\in\mathbb R$ such that
+:::
+
+::: pf-step
+
+There exists $\lambda\in\mathbb R$ such that
 \[
 Au=\lambda u.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The point $u$ minimizes $Q$ subject to the regular constraint
 \[
 h(v)=1.
@@ -134,14 +160,21 @@ Dividing by $2$ gives
 Au=\lambda u.
 \]
 Since $u\ne0$, this shows that $u$ is an eigenvector of $A$.
+
 :::
 
-<1>5. The eigenvalue in step <1>4 is
+:::
+
+::: pf-step
+
+The eigenvalue in step <1>4 is
 \[
 \boxed{\lambda=M}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Taking the dot product of
 \[
 Au=\lambda u
@@ -161,11 +194,15 @@ By hypothesis,
 Q(u)=M.
 \]
 Hence $\lambda=M$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and steps <1>4--<1>5 prove part (b).
+
 :::
+
 :::

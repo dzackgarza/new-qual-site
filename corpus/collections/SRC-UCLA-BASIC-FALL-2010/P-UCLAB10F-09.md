@@ -34,7 +34,6 @@ B=\begin{pmatrix}2&1\\1&2\end{pmatrix}.
 Justify your answer.
 :::
 
-::: {.solution}
 Since
 \[
 A^{-1}=\frac12I,
@@ -62,12 +61,18 @@ and
 \end{pmatrix}.
 \]
 
-<1>1. If the iteration converges to a vector $\vec x$, then
+::: pf
+
+::: pf-step
+
+If the iteration converges to a vector $\vec x$, then
 \[
 \vec x=C\vec x+\vec d.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Assume
 \[
 \vec x_k\to\vec x.
@@ -80,9 +85,14 @@ gives
 \[
 \vec x=C\vec x+\vec d.
 \]
+
 :::
 
-<1>2. The unique fixed point is
+:::
+
+::: pf-step
+
+The unique fixed point is
 \[
 \boxed{
 \vec x=
@@ -93,7 +103,9 @@ gives
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The fixed-point equation from step <1>1 is
 \[
 (I-C)\vec x=\vec d.
@@ -118,9 +130,14 @@ Hence
 x_1=x_2=-1.
 \]
 Thus any convergent iteration must converge to the displayed vector.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 \vec x_*=
 \begin{pmatrix}
@@ -135,7 +152,9 @@ then
 \vec e_{k+1}=C\vec e_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \vec x_*=C\vec x_*+\vec d.
@@ -150,9 +169,14 @@ to obtain
 =
 C(\vec x_k-\vec x_*).
 \]
+
 :::
 
-<1>4. The matrix $C$ has eigenvalue
+:::
+
+::: pf-step
+
+The matrix $C$ has eigenvalue
 \[
 \frac32
 \]
@@ -165,7 +189,9 @@ u=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 Cu
@@ -181,11 +207,18 @@ Cu
 1
 \end{pmatrix}.
 \]
+
 :::
 
-<1>5. The iteration does not converge for arbitrary initial vectors.
+:::
 
-::: {.proof}
+::: pf-step
+
+The iteration does not converge for arbitrary initial vectors.
+
+
+::: pf-proof
+
 Take
 \[
 \vec x_0=
@@ -217,11 +250,15 @@ Therefore
 \|\vec e_k\|\to\infty,
 \]
 so $\vec x_k$ does not converge.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 answers part (a), and step <1>5 answers part (b) negatively.
+
 :::
+
 :::

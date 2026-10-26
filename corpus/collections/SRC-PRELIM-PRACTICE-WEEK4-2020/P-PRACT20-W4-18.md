@@ -22,14 +22,19 @@ If $A,B$ are subspaces of $V$, which of the following are necessarily subspaces 
 (d) $A^c=\{x\in V:x\notin A\}$
 :::
 
-::: {.solution}
-<1>1. The sum
+::: pf
+
+::: pf-step
+
+The sum
 \[
 \boxed{A+B}
 \]
 is always a subspace of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 0=0+0
@@ -60,15 +65,22 @@ Hence
 \[
 \lambda u+\mu v\in A+B.
 \]
+
 :::
 
-<1>2. The intersection
+:::
+
+::: pf-step
+
+The intersection
 \[
 \boxed{A\cap B}
 \]
 is always a subspace of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Both subspaces contain $0$, so
 \[
 0\in A\cap B.
@@ -79,15 +91,22 @@ of $A$ and $B$. Since each is a subspace,
 \lambda u+\mu v
 \]
 belongs to both $A$ and $B$, hence to their intersection.
+
 :::
 
-<1>3. The union
+:::
+
+::: pf-step
+
+The union
 \[
 A\cup B
 \]
 need not be a subspace.
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 V=\mathbb R^2,
@@ -109,15 +128,22 @@ but
 \notin A\cup B.
 \]
 Thus $A\cup B$ is not closed under addition.
+
 :::
 
-<1>4. The complement
+:::
+
+::: pf-step
+
+The complement
 \[
 A^c
 \]
 is never a subspace.
 
-::: {.proof}
+
+::: pf-proof
+
 Every subspace $A$ contains the zero vector, so
 \[
 0\notin A^c.
@@ -128,21 +154,32 @@ that a subspace contain $0$. If $A=V$, then
 A^c=\varnothing,
 \]
 which also does not contain $0$ and is not a subspace.
+
 :::
 
-<1>5. Therefore the necessarily-subspace choices are exactly
+:::
+
+::: pf-step
+
+Therefore the necessarily-subspace choices are exactly
 \[
 \boxed{\text{(a) and (c)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 prove that (a) and (c) always work, while steps <1>3
 and <1>4 give the failures of (b) and (d).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the complete answer.
+
 :::
+
 :::

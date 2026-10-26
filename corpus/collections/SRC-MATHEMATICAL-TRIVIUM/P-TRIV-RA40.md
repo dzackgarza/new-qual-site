@@ -27,19 +27,29 @@ audit:
 (d) Assuming the watermelon rind has a thickness 0.1 of its radius, find what fraction of the total volume of the 20-dimensional watermelon would be occupied by its rind.
 :::
 
-::: {.solution}
-<1>1. The one-dimensional Gaussian integral satisfies
+::: pf
+
+::: pf-step
+
+The one-dimensional Gaussian integral satisfies
 $$
 \int_{-\infty}^{\infty}e^{-x^2}\,dx
 =
 \sqrt\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard Gaussian integral.
+
 :::
 
-<1>2. Therefore, in $\mathbb R^{n+1}$,
+:::
+
+::: pf-step
+
+Therefore, in $\mathbb R^{n+1}$,
 $$
 \int_{\mathbb R^{n+1}}
 e^{-\|x\|^2}
@@ -48,12 +58,19 @@ e^{-\|x\|^2}
 \pi^{(n+1)/2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By Fubini's theorem, the integral factors into $n+1$ copies of the
 one-dimensional integral from step <1>1.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 A_n=\operatorname{Area}(S^n)
 $$
@@ -67,16 +84,23 @@ e^{-r^2}r^n
 \,dr.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In radial coordinates on $\mathbb R^{n+1}$, the volume element is
 $$
 r^n\,dr\,d\omega,
 $$
 where $d\omega$ is surface measure on $S^n$. Integrating over the angular
 variables gives the factor $A_n$.
+
 :::
 
-<1>4. The radial integral equals
+:::
+
+::: pf-step
+
+The radial integral equals
 $$
 \int_0^\infty
 e^{-r^2}r^n
@@ -86,7 +110,9 @@ e^{-r^2}r^n
 \Gamma\left(\frac{n+1}{2}\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u=r^2.
@@ -109,9 +135,14 @@ e^{-u}u^{(n-1)/2}
 \,du,
 $$
 which is the displayed Gamma value.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \operatorname{Area}(S^n)
@@ -121,43 +152,71 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the identity in step <1>3 for $A_n$ using step <1>4.
+
 :::
 
-<1>6. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>5.
+
 :::
 
-<1>7. Let $V_n(R)$ be the volume of the radius-$R$ ball in $\mathbb R^n$.
+:::
+
+::: pf-step
+
+Let $V_n(R)$ be the volume of the radius-$R$ ball in $\mathbb R^n$.
 Then
 $$
 V_n(R)=V_n(1)R^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The dilation $x\mapsto Rx$ multiplies every $n$-dimensional volume by $R^n$.
+
 :::
 
-<1>8. Differentiating step <1>7 with respect to $R$ at $R=1$ gives
+:::
+
+::: pf-step
+
+Differentiating step <1>7 with respect to $R$ at $R=1$ gives
 $$
 \operatorname{Area}(S^{n-1})
 =
 nV_n(1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative of ball volume with respect to radius is the surface area of
 the boundary sphere. Differentiating
 $$
 V_n(1)R^n
 $$
 at $R=1$ gives $nV_n(1)$.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 V_n
 \coloneqq
@@ -167,11 +226,18 @@ V_n(1)
 \operatorname{Area}(S^{n-1}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange step <1>8.
+
 :::
 
-<1>10. Using step <1>5 with $n-1$ in place of $n$,
+:::
+
+::: pf-step
+
+Using step <1>5 with $n-1$ in place of $n$,
 $$
 \boxed{
 V_n
@@ -181,7 +247,9 @@ V_n
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives
 $$
 \operatorname{Area}(S^{n-1})
@@ -203,35 +271,61 @@ $$
 \frac n2\Gamma\left(\frac n2\right)
 $$
 gives the formula.
+
 :::
 
-<1>11. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>10.
+
 :::
 
-<1>12. The inner ball obtained by removing a boundary layer of depth $a$ has
+:::
+
+::: pf-step
+
+The inner ball obtained by removing a boundary layer of depth $a$ has
 radius
 $$
 1-a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The original ball has radius $1$, so removing an outer layer of radial
 thickness $a$ leaves the concentric ball of radius $1-a$.
+
 :::
 
-<1>13. Its volume is
+:::
+
+::: pf-step
+
+Its volume is
 $$
 V_n(1-a)^n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the scaling relation from step <1>7 with $R=1-a$.
+
 :::
 
-<1>14. Therefore the shell volume is
+:::
+
+::: pf-step
+
+Therefore the shell volume is
 $$
 V_{n,a}
 =
@@ -241,16 +335,23 @@ V_n
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the inner-ball volume from the total volume:
 $$
 V_{n,a}
 =
 V_n-V_n(1-a)^n.
 $$
+
 :::
 
-<1>15. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \frac{V_{n,a}}{V_n}
@@ -259,11 +360,18 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>14 by $V_n>0$.
+
 :::
 
-<1>16. For fixed $0<a<1$,
+:::
+
+::: pf-step
+
+For fixed $0<a<1$,
 $$
 \boxed{
 \lim_{n\to\infty}
@@ -272,7 +380,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 0<1-a<1,
@@ -282,22 +392,36 @@ $$
 (1-a)^n\to0.
 $$
 Apply step <1>15.
+
 :::
 
-<1>17. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 Steps <1>15--<1>16 give the ratio and its high-dimensional limit.
+
 :::
 
-<1>18. For a $20$-dimensional ball with rind thickness $0.1$ of its radius,
+:::
+
+::: pf-step
+
+For a $20$-dimensional ball with rind thickness $0.1$ of its radius,
 $$
 \frac{V_{20,0.1}}{V_{20}}
 =
 1-0.9^{20}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 $$
 n=20,
@@ -305,9 +429,14 @@ n=20,
 a=0.1
 $$
 into step <1>15.
+
 :::
 
-<1>19. Numerically,
+:::
+
+::: pf-step
+
+Numerically,
 $$
 0.9^{20}
 =
@@ -323,19 +452,32 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the expression in step <1>18.
+
 :::
 
-<1>20. Part (d) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (d) follows.
+
+
+::: pf-proof
+
 This is step <1>19.
+
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6, <1>11, <1>17, and <1>20 establish parts (a)--(d).
+
 :::
+
 :::

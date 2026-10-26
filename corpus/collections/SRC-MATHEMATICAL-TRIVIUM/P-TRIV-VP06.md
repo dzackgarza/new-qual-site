@@ -25,8 +25,11 @@ $$
 and U is $\mathrm { ~ a ~ } C ^ { 1 }$ function of $x , y , z$ . Write the system of equations on $x ( t ) , y ( t ) , z ( t )$ whose solution is an extremum of $S [ x , y , z ]$ in a class of $C ^ { 2 } ( [ t _ { 1 } , t _ { 2 } ] )$ functions with fixed boundary conditions.
 :::
 
-::: {.solution}
-<1>1. For the coordinate $x$, the Euler--Lagrange equation is
+::: pf
+
+::: pf-step
+
+For the coordinate $x$, the Euler--Lagrange equation is
 $$
 \frac d{dt}
 \frac{\partial L}{\partial x'}
@@ -35,13 +38,20 @@ $$
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The endpoint values are fixed, so admissible variations vanish at
 $t_1,t_2$. The usual first-variation argument for the coordinate $x$ gives
 the Euler--Lagrange equation.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \frac{\partial L}{\partial x'}=mx'
 $$
@@ -50,7 +60,9 @@ $$
 \frac{\partial L}{\partial x}=-U_x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 $$
 L
@@ -63,26 +75,40 @@ L
 U(x,y,z)
 $$
 with respect to $x'$ and $x$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{mx''=-U_x(x,y,z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>2 into step <1>1:
 $$
 \frac d{dt}(mx')+U_x=0.
 $$
+
 :::
 
-<1>4. The same argument for the coordinate $y$ gives
+:::
+
+::: pf-step
+
+The same argument for the coordinate $y$ gives
 $$
 \boxed{my''=-U_y(x,y,z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Now
 $$
 \frac{\partial L}{\partial y'}=my',
@@ -90,23 +116,35 @@ $$
 \frac{\partial L}{\partial y}=-U_y.
 $$
 Substitute into the Euler--Lagrange equation for $y$.
+
 :::
 
-<1>5. The same argument for the coordinate $z$ gives
+:::
+
+::: pf-step
+
+The same argument for the coordinate $z$ gives
 $$
 \boxed{mz''=-U_z(x,y,z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 \frac{\partial L}{\partial z'}=mz',
 \qquad
 \frac{\partial L}{\partial z}=-U_z.
 $$
+
 :::
 
-<1>6. Hence the extremals satisfy
+:::
+
+::: pf-step
+
+Hence the extremals satisfy
 $$
 \boxed{
 m
@@ -120,13 +158,19 @@ z''
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Collect the three scalar equations from steps <1>3--<1>5 into vector form.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required Euler--Lagrange system.
+
 :::
+
 :::

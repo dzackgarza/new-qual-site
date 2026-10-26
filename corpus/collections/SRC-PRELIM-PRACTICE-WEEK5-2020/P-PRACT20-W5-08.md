@@ -20,10 +20,15 @@ audit:
 Let $G$ be a group and define $\Aut(G)$ to be the set of all isomorphisms of $G$ to itself. Prove that $\Aut(G)$ is a group under the operation of functional composition. For each $g \in G$, define the map $\phi_g(x) = gxg^{-1}$ for $x \in G$ and let $\operatorname{Inn}(G) = \{\phi_g : g \in G\}$. Show that $\operatorname{Inn}(G)$ is a subgroup of $\Aut(G)$. What does $\operatorname{Inn}(G)$ look like if $G$ is abelian?
 :::
 
-::: {.solution}
-<1>1. The composition of two automorphisms of $G$ is an automorphism of $G$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The composition of two automorphisms of $G$ is an automorphism of $G$.
+
+
+::: pf-proof
+
 Let $\alpha,\beta\in\Aut(G)$. Since both maps are bijections, their
 composition $\alpha\circ\beta$ is a bijection. For $x,y\in G$,
 \[
@@ -33,11 +38,18 @@ composition $\alpha\circ\beta$ is a bijection. For $x,y\in G$,
 =\alpha(\beta(x))\alpha(\beta(y)).
 \]
 Thus $\alpha\circ\beta$ is a homomorphism and therefore an automorphism.
+
 :::
 
-<1>2. The set $\Aut(G)$ is a group under composition.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $\Aut(G)$ is a group under composition.
+
+
+::: pf-proof
+
 Composition of functions is associative. By step <1>1, $\Aut(G)$ is closed
 under composition. The identity map
 \[
@@ -54,15 +66,22 @@ also a homomorphism because, writing $u=\alpha(x)$ and $v=\alpha(y)$,
 =\alpha^{-1}(u)\alpha^{-1}(v).
 \]
 Hence every element has an inverse in $\Aut(G)$.
+
 :::
 
-<1>3. For every $g\in G$, the map
+:::
+
+::: pf-step
+
+For every $g\in G$, the map
 \[
 \phi_g(x)=gxg^{-1}
 \]
 is an automorphism of $G$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $x,y\in G$,
 \[
 \phi_g(xy)
@@ -77,15 +96,22 @@ Thus $\phi_g$ is a homomorphism. Its inverse is $\phi_{g^{-1}}$, since
 =x.
 \]
 Hence $\phi_g\in\Aut(G)$.
+
 :::
 
-<1>4. The inner automorphisms satisfy
+:::
+
+::: pf-step
+
+The inner automorphisms satisfy
 \[
 \phi_g\circ\phi_h=\phi_{gh}
 \qquad(g,h\in G).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in G$,
 \[
 (\phi_g\circ\phi_h)(x)
@@ -93,14 +119,21 @@ For every $x\in G$,
 =(gh)x(gh)^{-1}
 =\phi_{gh}(x).
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\operatorname{Inn}(G)\le\Aut(G)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, every inner automorphism belongs to $\Aut(G)$. Also
 \[
 \phi_e=\operatorname{id}_G.
@@ -110,25 +143,36 @@ By step <1>4, the product of two inner automorphisms is inner, and
 \phi_g^{-1}=\phi_{g^{-1}}
 \]
 is inner. Hence $\operatorname{Inn}(G)$ is a subgroup.
+
 :::
 
-<1>6. If $G$ is abelian, then
+:::
+
+::: pf-step
+
+If $G$ is abelian, then
 \[
 \boxed{\operatorname{Inn}(G)=\{\operatorname{id}_G\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $G$ is abelian, then for all $g,x\in G$,
 \[
 \phi_g(x)=gxg^{-1}=xgg^{-1}=x.
 \]
 Thus every inner automorphism is the identity.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves that $\Aut(G)$ is a group, step <1>5 proves the subgroup
 claim, and step <1>6 settles the abelian case.
+
 :::
+
 :::

@@ -15,7 +15,6 @@ review: draft
 Compute $\int _ { 0 } ^ { \pi / 2 } \frac { d x } { 1 + \tan ( x ) ^ { 2 0 2 0 } } .$
 :::
 
-::: {.solution}
 Let
 \[
 I
@@ -24,31 +23,49 @@ I
 \frac{dx}{1+\tan^{2020}x}.
 \]
 
-<1>1. Make the substitution
+::: pf
+
+::: pf-step
+
+Make the substitution
 \[
 \boxed{
 u=\frac{\pi}{2}-x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This substitution reflects the interval about its midpoint and exchanges
 \(\tan\) with \(\cot\).
+
 :::
 
-<1>2. Then
+:::
+
+::: pf-step
+
+Then
 \[
 dx=-du,
 \]
 and the bounds \(x=0,\pi/2\) become \(u=\pi/2,0\).
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 \[
 u=\frac{\pi}{2}-x.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 I
 =
@@ -56,7 +73,9 @@ I
 \frac{du}{1+\cot^{2020}u}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>2 and reverse the limits:
 \[
 \begin{aligned}
@@ -70,9 +89,14 @@ I
 \frac{du}{1+\cot^{2020}u}.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For \(0<u<\pi/2\),
+:::
+
+::: pf-step
+
+For \(0<u<\pi/2\),
 \[
 \boxed{
 \frac1{1+\cot^{2020}u}
@@ -81,7 +105,9 @@ I
 {1+\tan^{2020}u}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \cot u=\frac1{\tan u},
@@ -97,9 +123,14 @@ one has
 {1+\tan^{2020}u}.
 \end{aligned}
 \]
+
 :::
 
-<1>5. Adding the original and transformed integrands gives
+:::
+
+::: pf-step
+
+Adding the original and transformed integrands gives
 \[
 \boxed{
 \frac1{1+\tan^{2020}u}
@@ -109,7 +140,9 @@ one has
 1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>4:
 \[
 \frac1{1+t}
@@ -122,48 +155,73 @@ with
 \[
 t=\tan^{2020}u.
 \]
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 2I
 =
 \int_0^{\pi/2}1\,du.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Add the original representation of \(I\) to the representation in step
 <1>3 and use step <1>5.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 2I
 =
 \frac{\pi}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \int_0^{\pi/2}1\,du
 =
 \frac{\pi}{2}.
 \]
+
 :::
 
-<1>8. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 I=\frac{\pi}{4}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>7 by \(2\).
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested value.
+
 :::
+
 :::

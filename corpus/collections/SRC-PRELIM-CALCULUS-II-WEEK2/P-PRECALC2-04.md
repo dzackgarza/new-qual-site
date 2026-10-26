@@ -15,8 +15,11 @@ review: draft
 Perform the integral $\int _ { - \infty } ^ { x } { \frac { d t } { \cosh ( t ) } }$ . (Recall $\begin{array} { r } { \cosh ( t ) = \frac { e ^ { t } + e ^ { - t } } { 2 } ) } \end{array}$
 :::
 
-::: {.solution}
-<1>1. Rewrite the integrand as
+::: pf
+
+::: pf-step
+
+Rewrite the integrand as
 \[
 \boxed{
 \frac1{\cosh t}
@@ -24,7 +27,9 @@ Perform the integral $\int _ { - \infty } ^ { x } { \frac { d t } { \cosh ( t ) 
 \frac{2e^t}{1+e^{2t}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 \cosh t
@@ -41,27 +46,46 @@ Multiply numerator and denominator by \(e^t\):
 \[
 \frac{2e^t}{e^{2t}+1}.
 \]
+
 :::
 
-<1>2. Set
+:::
+
+::: pf-step
+
+Set
 \[
 \boxed{u=e^t}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This substitution matches the numerator \(e^t\,dt\).
+
 :::
 
-<1>3. Then
+:::
+
+::: pf-step
+
+Then
 \[
 \boxed{du=e^t\,dt}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate \(u=e^t\).
+
 :::
 
-<1>4. As
+:::
+
+::: pf-step
+
+As
 \[
 t\to-\infty,
 \]
@@ -70,34 +94,55 @@ one has
 \boxed{u\to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 e^t\to0
 \qquad(t\to-\infty).
 \]
+
 :::
 
-<1>5. At the upper endpoint \(t=x\),
+:::
+
+::: pf-step
+
+At the upper endpoint \(t=x\),
 \[
 \boxed{u=e^x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(t=x\) into \(u=e^t\).
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_{-\infty}^{x}\frac{dt}{\cosh t}
 =
 2\int_0^{e^x}\frac{du}{1+u^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply steps <1>1--<1>5.
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \frac{d}{du}\arctan u
 =
@@ -112,11 +157,18 @@ one has
 \right]_0^{e^x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard antiderivative of \(1/(1+u^2)\).
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_{-\infty}^{x}\frac{dt}{\cosh t}
@@ -124,7 +176,9 @@ Use the standard antiderivative of \(1/(1+u^2)\).
 2\arctan(e^x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \arctan0=0,
@@ -133,11 +187,15 @@ step <1>7 gives
 \[
 2\arctan(e^x).
 \]
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested antiderivative-with-limit.
+
 :::
+
 :::

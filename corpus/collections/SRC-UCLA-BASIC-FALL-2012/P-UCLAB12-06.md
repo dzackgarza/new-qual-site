@@ -24,14 +24,19 @@ $$
 Hint: You may assume the double integral in (a) equals the iterated integral $\textstyle \int ( \int F ( x , y ) d x ) d y$ and equals the iterated integral $\textstyle \int ( \int F ( x , y ) d y ) d x$
 :::
 
-::: {.solution}
-<1>1. Under the hypotheses of part (a), one has
+::: pf
+
+::: pf-step
+
+Under the hypotheses of part (a), one has
 \[
 \boxed{F(x,y)=0}
 \]
 for every $(x,y)\in\mathbb R^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $(x_0,y_0)\in\mathbb R^2$. Suppose, for contradiction, that
 \[
 F(x_0,y_0)>0.
@@ -61,9 +66,14 @@ is identical, giving a square on which $F<0$ and hence a strictly negative integ
 F(x_0,y_0)=0.
 \]
 Since the point was arbitrary, $F\equiv0$.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 G(x,y)
 =
@@ -75,11 +85,18 @@ G(x,y)
 \]
 Then $G$ is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Both mixed partial derivatives appearing in the definition are continuous by hypothesis, so their difference is continuous.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 S=[a,b]\times[c,d]
 \]
@@ -93,7 +110,9 @@ be any square with sides parallel to the axes. Then
 f(b,d)-f(a,d)-f(b,c)+f(a,c).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the permitted iterated-integral interpretation,
 \[
 \begin{aligned}
@@ -115,9 +134,14 @@ Using the permitted iterated-integral interpretation,
 \end{aligned}
 \]
 This is the displayed expression.
+
 :::
 
-<1>4. For the same square $S$,
+:::
+
+::: pf-step
+
+For the same square $S$,
 \[
 \iint_S
 \frac{\partial}{\partial x}
@@ -127,7 +151,9 @@ This is the displayed expression.
 f(b,d)-f(a,d)-f(b,c)+f(a,c).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the other order of integration,
 \[
 \begin{aligned}
@@ -149,18 +175,30 @@ Using the other order of integration,
 \end{aligned}
 \]
 which simplifies to the same quantity as in step <1>3.
+
 :::
 
-<1>5. For every square $S$ with sides parallel to the axes,
+:::
+
+::: pf-step
+
+For every square $S$ with sides parallel to the axes,
 \[
 \iint_S G(x,y)\,dx\,dy=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the equal values in steps <1>3 and <1>4.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{\partial}{\partial y}
@@ -172,17 +210,23 @@ Subtract the equal values in steps <1>3 and <1>4.
 \]
 everywhere in the plane.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $G$ is continuous by step <1>2 and has integral zero over every axis-parallel square by step <1>5. Part (a), proved in step <1>1, therefore gives
 \[
 G\equiv0.
 \]
 This is exactly the stated equality of mixed partial derivatives.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and steps <1>2--<1>6 prove part (b).
+
 :::
+
 :::

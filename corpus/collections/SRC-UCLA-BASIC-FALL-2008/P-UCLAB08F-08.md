@@ -25,14 +25,24 @@ span $\mathbb C^n$?
 Prove your assertion.
 :::
 
-::: {.solution}
-<1>1. The answer is no in general.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The answer is no in general.
+
+
+::: pf-proof
+
 It suffices to give one complex linear transformation whose eigenvectors do not span its ambient vector space.
+
 :::
 
-<1>2. Consider
+:::
+
+::: pf-step
+
+Consider
 \[
 T:\mathbb C^2\to\mathbb C^2
 \]
@@ -46,7 +56,9 @@ A=
 \]
 Its only eigenvalue is $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 \[
 \det(\lambda I-A)
@@ -60,16 +72,23 @@ The characteristic polynomial is
 (\lambda-1)^2.
 \]
 Thus the only eigenvalue is $1$.
+
 :::
 
-<1>3. The eigenspace for the eigenvalue $1$ is
+:::
+
+::: pf-step
+
+The eigenspace for the eigenvalue $1$ is
 \[
 E_1
 =
 \operatorname{span}_{\mathbb C}\{(1,0)\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 A-I
@@ -96,26 +115,44 @@ which vanishes exactly when $y=0$. Therefore
 =
 \operatorname{span}_{\mathbb C}\{(1,0)\}.
 \]
+
 :::
 
-<1>4. The eigenvectors of $T$ do not span $\mathbb C^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The eigenvectors of $T$ do not span $\mathbb C^2$.
+
+
+::: pf-proof
+
 Every eigenvector belongs to the one-dimensional eigenspace $E_1$ from step <1>3. Thus the span of all eigenvectors is $E_1$, which has dimension $1$ and is strictly smaller than $\mathbb C^2$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\text{eigenvectors of a complex linear transformation need not span the space}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives the required counterexample.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 answers the question.
+
 :::
+
 :::

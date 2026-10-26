@@ -15,20 +15,30 @@ review: draft
 Classify all abelian groups of order 600 (up to isomorphism).
 :::
 
-::: {.solution}
-<1>1. The prime factorization is
+::: pf
+
+::: pf-step
+
+The prime factorization is
 \[
 600=2^3\cdot3\cdot5^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 \[
 600=8\cdot3\cdot25.
 \]
+
 :::
 
-<1>2. The fundamental theorem of finite abelian groups implies that the
+:::
+
+::: pf-step
+
+The fundamental theorem of finite abelian groups implies that the
 $2$-primary part is one of
 \[
 \mathbb Z_8,\qquad
@@ -41,7 +51,9 @@ the $3$-primary part is $\mathbb Z_3$, and the $5$-primary part is one of
 \mathbb Z_5^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a finite abelian $p$-group of order $p^r$, isomorphism types correspond
 to partitions of $r$. The partitions of $3$ are
 \[
@@ -53,22 +65,34 @@ the only partition of $1$ is $1$, and the partitions of $2$ are
 \]
 The displayed primary components are exactly the groups attached to those
 partitions.
+
 :::
 
-<1>3. Hence there are exactly
+:::
+
+::: pf-step
+
+Hence there are exactly
 \[
 3\cdot1\cdot2=6
 \]
 isomorphism classes.
 
-::: {.proof}
+
+::: pf-proof
+
 The primary decomposition is unique, and the choices for distinct primes are
 independent. Thus every choice of one $2$-primary type and one $5$-primary
 type, together with the unique $3$-primary type, gives one isomorphism class,
 and no two such choices are isomorphic.
+
 :::
 
-<1>4. In invariant-factor form, the six groups are
+:::
+
+::: pf-step
+
+In invariant-factor form, the six groups are
 \[
 \boxed{
 \begin{aligned}
@@ -81,7 +105,9 @@ and no two such choices are isomorphic.
 \end{aligned}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combining cyclic factors of pairwise coprime orders gives the equivalent
 elementary-divisor descriptions
 \[
@@ -107,11 +133,15 @@ elementary-divisor descriptions
 \end{aligned}
 \]
 These are the six cases counted in step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the complete classification up to isomorphism.
+
 :::
+
 :::

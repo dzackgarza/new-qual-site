@@ -23,7 +23,6 @@ f(x)\in\partial D^2.
 \]
 :::
 
-::: {.solution}
 Write
 \[
 \mathring D^2
@@ -32,14 +31,20 @@ D^2\setminus\partial D^2
 \]
 for the open unit disk.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 f(\mathring D^2)
 \subseteq
 \mathring D^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x\in\mathring D^2.
@@ -77,31 +82,45 @@ Thus
 \[
 f(x)\in\mathring D^2.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f^{-1}(\mathring D^2)
 \subseteq
 \mathring D^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse
 \[
 f^{-1}:D^2\to D^2
 \]
 is also a homeomorphism. Apply step <1>1 to $f^{-1}$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 f(\mathring D^2)
 =
 \mathring D^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives one inclusion. For the reverse inclusion, let
 \[
 y\in\mathring D^2.
@@ -118,16 +137,23 @@ f(f^{-1}(y))
 \in
 f(\mathring D^2).
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f(\partial D^2)
 =
 \partial D^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is a bijection,
 \[
 f(D^2\setminus\mathring D^2)
@@ -146,11 +172,13 @@ D^2\setminus\mathring D^2
 =
 \partial D^2.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 implies in particular that every
 \[
 x\in\partial D^2
@@ -159,5 +187,7 @@ satisfies
 \[
 f(x)\in\partial D^2.
 \]
+
 :::
+
 :::

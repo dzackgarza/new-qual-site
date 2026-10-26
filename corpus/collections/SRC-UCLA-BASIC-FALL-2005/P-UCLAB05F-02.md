@@ -26,7 +26,6 @@ at every point of $\mathbb R^2$.
 Then prove that your conditions do in fact guarantee this equality.
 :::
 
-::: {.solution}
 Assume that $f\in C^2(\mathbb R^2)$; equivalently, all second partial derivatives of $f$ exist and are continuous on $\mathbb R^2$.
 
 Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, define
@@ -36,7 +35,11 @@ Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, define
 f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
 \]
 
-<1>1. For every nonzero $h,k$, there are points $\xi$ between $a$ and $a+h$ and $\eta$ between $b$ and $b+k$ such that
+::: pf
+
+::: pf-step
+
+For every nonzero $h,k$, there are points $\xi$ between $a$ and $a+h$ and $\eta$ between $b$ and $b+k$ such that
 \[
 \frac{\Delta(h,k)}{hk}
 =
@@ -44,7 +47,9 @@ f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
 \left(\frac{\partial f}{\partial x}\right)(\xi,\eta).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 G(x)=f(x,b+k)-f(x,b).
@@ -65,9 +70,14 @@ k\frac{\partial}{\partial y}
 \left(\frac{\partial f}{\partial x}\right)(\xi,\eta).
 \]
 Combining the two equalities and dividing by $hk$ proves the claim.
+
 :::
 
-<1>2. For every nonzero $h,k$, there are points $\xi'$ between $a$ and $a+h$ and $\eta'$ between $b$ and $b+k$ such that
+:::
+
+::: pf-step
+
+For every nonzero $h,k$, there are points $\xi'$ between $a$ and $a+h$ and $\eta'$ between $b$ and $b+k$ such that
 \[
 \frac{\Delta(h,k)}{hk}
 =
@@ -75,7 +85,9 @@ Combining the two equalities and dividing by $hk$ proves the claim.
 \left(\frac{\partial f}{\partial y}\right)(\xi',\eta').
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Regroup the same increment as
 \[
 \Delta(h,k)
@@ -102,9 +114,14 @@ h\frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)(\xi',\eta').
 \]
 Dividing the resulting identity by $hk$ proves the claim.
+
 :::
 
-<1>3. At the fixed point $(a,b)$,
+:::
+
+::: pf-step
+
+At the fixed point $(a,b)$,
 \[
 \frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)(a,b)
@@ -113,7 +130,9 @@ Dividing the resulting identity by $hk$ proves the claim.
 \left(\frac{\partial f}{\partial x}\right)(a,b).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 show that, for each nonzero $h,k$,
 \[
 \frac{\partial}{\partial y}
@@ -125,17 +144,28 @@ Steps <1>1 and <1>2 show that, for each nonzero $h,k$,
 \left(\frac{\partial f}{\partial y}\right)(\xi',\eta').
 \]
 As $(h,k)\to(0,0)$, the points $(\xi,\eta)$ and $(\xi',\eta')$ both tend to $(a,b)$. The two mixed second partials are continuous because $f\in C^2(\mathbb R^2)$. Taking limits in the displayed equality therefore gives the claimed equality at $(a,b)$.
+
 :::
 
-<1>4. The mixed partial derivatives agree at every point of $\mathbb R^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The mixed partial derivatives agree at every point of $\mathbb R^2$.
+
+
+::: pf-proof
+
 The point $(a,b)$ was arbitrary, so step <1>3 applies throughout $\mathbb R^2$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves that the stated $C^2$ condition guarantees the required equality.
+
 :::
+
 :::

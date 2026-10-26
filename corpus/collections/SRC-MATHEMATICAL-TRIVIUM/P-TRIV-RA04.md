@@ -19,8 +19,11 @@ audit:
 Find $f ^ { ( 1 0 0 ) } ( 0 )$ , if $f ( x ) = ( x ^ { 1 0 0 } + x ) e ^ { 1 0 0 x }$
 :::
 
-::: {.solution}
-<1>1. Expand
+::: pf
+
+::: pf-step
+
+Expand
 $$
 e^{100x}
 =
@@ -28,22 +31,36 @@ e^{100x}
 \frac{100^k}{k!}x^k.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Taylor series of the exponential function.
+
 :::
 
-<1>2. The coefficient of $x^{100}$ in
+:::
+
+::: pf-step
+
+The coefficient of $x^{100}$ in
 $$
 x^{100}e^{100x}
 $$
 is $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 To obtain degree $100$, one must multiply $x^{100}$ by the constant term $1$
 of the exponential series.
+
 :::
 
-<1>3. The coefficient of $x^{100}$ in
+:::
+
+::: pf-step
+
+The coefficient of $x^{100}$ in
 $$
 x e^{100x}
 $$
@@ -52,21 +69,35 @@ $$
 \frac{100^{99}}{99!}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 To obtain degree $100$, the factor $x$ must be multiplied by the $x^{99}$ term
 of the exponential series, whose coefficient is $100^{99}/99!$.
+
 :::
 
-<1>4. Therefore the coefficient of $x^{100}$ in $f(x)$ is
+:::
+
+::: pf-step
+
+Therefore the coefficient of $x^{100}$ in $f(x)$ is
 $$
 1+\frac{100^{99}}{99!}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the contributions from steps <1>2--<1>3.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 f^{(100)}(0)
 =
@@ -76,7 +107,9 @@ f^{(100)}(0)
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a Taylor series
 $$
 f(x)=\sum_{k=0}^{\infty}a_kx^k,
@@ -86,14 +119,21 @@ $$
 f^{(100)}(0)=100!a_{100}.
 $$
 Apply step <1>4.
+
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{f^{(100)}(0)=100!+100^{100}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \frac{100!}{99!}=100,
@@ -102,11 +142,15 @@ the second term in step <1>5 is
 $$
 100\cdot100^{99}=100^{100}.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required value.
+
 :::
+
 :::

@@ -34,8 +34,11 @@ $$
 In part (a), assume $a\neq0$.
 :::
 
-::: {.solution}
-<1>1. Suppose
+::: pf
+
+::: pf-step
+
+Suppose
 $$
 f(x)=g(ax),
 \qquad
@@ -51,11 +54,18 @@ g(ax)e^{-ikx}
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the Fourier transform applied to $f$.
+
 :::
 
-<1>2. With
+:::
+
+::: pf-step
+
+With
 $$
 u=ax,
 $$
@@ -69,7 +79,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $a>0$, then
 $$
 dx=\frac{du}{a}
@@ -89,15 +101,27 @@ $$
 
 If $a<0$, the substitution reverses the endpoints, contributing an additional
 minus sign that changes $1/a$ to $1/|a|$. The argument remains $k/a$.
+
 :::
 
-<1>3. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>2.
+
 :::
 
-<1>4. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 f(x)=g(x-x_0).
 $$
@@ -111,11 +135,18 @@ g(x-x_0)e^{-ikx}
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Again this is the Fourier-transform definition.
+
 :::
 
-<1>5. Set
+:::
+
+::: pf-step
+
+Set
 $$
 u=x-x_0.
 $$
@@ -128,7 +159,9 @@ e^{-ikx_0}\widetilde g(k).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The substitution gives
 $$
 x=u+x_0,
@@ -154,17 +187,28 @@ g(u)e^{-iku}
 e^{-ikx_0}\widetilde g(k).
 \end{aligned}
 $$
+
 :::
 
-<1>6. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>6 establish parts (a) and (b), respectively.
+
 :::
+
 :::

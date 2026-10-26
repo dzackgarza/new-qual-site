@@ -32,19 +32,29 @@ Prove that
 \]
 :::
 
-::: {.solution}
 Let
 \[
 I=\int_a^b f(t)\,dt\in\mathbb R^n.
 \]
 
-<1>1. If $I=0$, then the desired inequality holds.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $I=0$, then the desired inequality holds.
+
+
+::: pf-proof
+
 The left side is $0$, while the right side is nonnegative because $\|f(t)\|\ge0$.
+
 :::
 
-<1>2. Suppose $I\ne0$ and define
+:::
+
+::: pf-step
+
+Suppose $I\ne0$ and define
 \[
 u=\frac{I}{\|I\|}.
 \]
@@ -57,7 +67,9 @@ and
 \|I\|=u\mathbin{\cdot} I.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By construction,
 \[
 \|u\|=\frac{\|I\|}{\|I\|}=1.
@@ -72,16 +84,23 @@ u\mathbin{\cdot}I
 =
 \|I\|.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 u\mathbin{\cdot}I
 =
 \int_a^b u\mathbin{\cdot}f(t)\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Writing
 \[
 u=(u_1,\ldots,u_n),
@@ -102,14 +121,21 @@ u_j\int_a^b f_j(t)\,dt\\
 \int_a^b u\mathbin{\cdot}f(t)\,dt.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For every $t\in[a,b]$,
+:::
+
+::: pf-step
+
+For every $t\in[a,b]$,
 \[
 u\mathbin{\cdot}f(t)\le\|f(t)\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the Cauchy--Schwarz inequality,
 \[
 u\mathbin{\cdot}f(t)
@@ -121,9 +147,14 @@ u\mathbin{\cdot}f(t)
 \|f(t)\|,
 \]
 using step <1>2.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \left\|\int_a^b f(t)\,dt\right\|
@@ -132,7 +163,9 @@ using step <1>2.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $I=0$, apply step <1>1. If $I\ne0$, steps <1>2--<1>4 give
 \[
 \begin{aligned}
@@ -145,11 +178,15 @@ u\mathbin{\cdot}I\\
 \int_a^b\|f(t)\|\,dt.
 \end{aligned}
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required inequality.
+
 :::
+
 :::

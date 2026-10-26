@@ -19,8 +19,11 @@ audit:
 A body moves in (xy)-plane along the trajectory y = log cos x. Find the path length of the body when $x \in [ 0 , \frac { \pi } { 6 } ]$
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 $$
 y=\log(\cos x),
 $$
@@ -29,7 +32,9 @@ $$
 y'=-\tan x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate by the chain rule:
 $$
 \frac{d}{dx}\log(\cos x)
@@ -38,9 +43,14 @@ $$
 =
 -\tan x.
 $$
+
 :::
 
-<1>2. The arc length is
+:::
+
+::: pf-step
+
+The arc length is
 $$
 L
 =
@@ -49,18 +59,27 @@ L
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard arc-length formula for a graph $y=y(x)$.
+
 :::
 
-<1>3. On the interval $[0,\pi/6]$,
+:::
+
+::: pf-step
+
+On the interval $[0,\pi/6]$,
 $$
 \sqrt{1+\tan^2x}
 =
 \sec x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 1+\tan^2x=\sec^2x.
@@ -69,25 +88,39 @@ Since $\cos x>0$ on the interval,
 $$
 \sqrt{\sec^2x}=\sec x.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 L
 =
 \int_0^{\pi/6}\sec x\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>1--<1>3 into the arc-length formula.
+
 :::
 
-<1>5. An antiderivative of $\sec x$ is
+:::
+
+::: pf-step
+
+An antiderivative of $\sec x$ is
 $$
 \log|\sec x+\tan x|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 $$
 \frac{d}{dx}\log(\sec x+\tan x)
@@ -96,9 +129,14 @@ $$
 =
 \sec x.
 $$
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 L
 =
@@ -109,11 +147,18 @@ L
 \log1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the antiderivative from step <1>5 between $0$ and $\pi/6$.
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 $$
 \sec\frac\pi6
 =
@@ -136,7 +181,9 @@ L
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The endpoint sum is
 $$
 \frac2{\sqrt3}
@@ -145,11 +192,15 @@ $$
 =
 \sqrt3.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required path length.
+
 :::
+
 :::

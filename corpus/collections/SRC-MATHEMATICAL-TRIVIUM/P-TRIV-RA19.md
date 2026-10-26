@@ -19,13 +19,18 @@ audit:
 $\mathrm { C a l c u l a t e } \int \frac { d x } { \sin x }$
 :::
 
-::: {.solution}
-<1>1. Use the half-angle substitution
+::: pf
+
+::: pf-step
+
+Use the half-angle substitution
 $$
 t=\tan\frac x2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Then
 $$
 \sin x=\frac{2t}{1+t^2}
@@ -34,16 +39,23 @@ and
 $$
 dx=\frac{2\,dt}{1+t^2}.
 $$
+
 :::
 
-<1>2. Under this substitution,
+:::
+
+::: pf-step
+
+Under this substitution,
 $$
 \frac{dx}{\sin x}
 =
 \frac{dt}{t}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the identities from step <1>1:
 $$
 \frac{dx}{\sin x}
@@ -56,16 +68,23 @@ $$
 =
 \frac{dt}{t}.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int\frac{dx}{\sin x}
 =
 \log|t|+C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \int\frac{dx}{\sin x}
@@ -74,9 +93,14 @@ $$
 =
 \log|t|+C.
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \int\frac{dx}{\sin x}
@@ -85,14 +109,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute back $t=\tan(x/2)$ into step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required antiderivative on each interval avoiding zeros of
 $\sin x$.
+
 :::
+
 :::

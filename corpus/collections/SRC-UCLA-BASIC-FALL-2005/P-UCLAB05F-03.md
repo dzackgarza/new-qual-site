@@ -34,10 +34,15 @@ exists but is not equal to
 \]
 :::
 
-::: {.solution}
-<1>1. The sequence $(f_j)$ is uniformly bounded for all sufficiently large $j$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The sequence $(f_j)$ is uniformly bounded for all sufficiently large $j$.
+
+
+::: pf-proof
+
 Since $F$ is continuous on the compact interval $[0,1]$, there is
 \[
 K=\|F\|_\infty<\infty.
@@ -55,14 +60,21 @@ for $j\ge J$. Hence
 K+1
 \]
 for all $j\ge J$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \|f_j^2-F^2\|_\infty\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $j\ge J$ and every $x\in[0,1]$,
 \[
 \begin{aligned}
@@ -82,9 +94,14 @@ Taking the supremum over $x$ gives
 \le
 (2K+1)\|f_j-F\|_\infty\to0.
 \]
+
 :::
 
-<1>3. In part (a),
+:::
+
+::: pf-step
+
+In part (a),
 \[
 \boxed{
 \int_0^1F(x)^2\,dx
@@ -93,7 +110,9 @@ Taking the supremum over $x$ gives
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \begin{aligned}
@@ -109,9 +128,14 @@ By step <1>2,
 \longrightarrow0.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For part (b), define $F=0$ and, for each positive integer $j$, define $f_j:[0,1]\to\mathbb R$ by
+:::
+
+::: pf-step
+
+For part (b), define $F=0$ and, for each positive integer $j$, define $f_j:[0,1]\to\mathbb R$ by
 \[
 f_j(x)=
 \begin{cases}
@@ -127,7 +151,9 @@ f_j(x)=
 \]
 Then every $f_j$ is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 The four formulas agree at the three break points:
 \[
 f_j\left(\frac1{2j}\right)=0,
@@ -137,11 +163,18 @@ f_j\left(\frac1j\right)=\sqrt j,
 f_j\left(\frac3{2j}\right)=0.
 \]
 Each piece is linear or constant, so $f_j$ is continuous on $[0,1]$.
+
 :::
 
-<1>5. The sequence $f_j$ converges pointwise to $F=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $f_j$ converges pointwise to $F=0$.
+
+
+::: pf-proof
+
 At $x=0$, every $f_j(0)=0$. Fix $x>0$. Since
 \[
 \frac3{2j}\to0,
@@ -155,14 +188,21 @@ Then $x$ lies outside the support
 \left[\frac1{2j},\frac3{2j}\right]
 \]
 of $f_j$, so $f_j(x)=0$. Thus $f_j(x)\to0$ for every $x\in[0,1]$.
+
 :::
 
-<1>6. For every $j$,
+:::
+
+::: pf-step
+
+For every $j$,
 \[
 \int_0^1 f_j(x)^2\,dx=\frac13.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By symmetry of the triangular graph about $x=1/j$,
 \[
 \begin{aligned}
@@ -179,9 +219,14 @@ By symmetry of the triangular graph about $x=1/j$,
 \frac13.
 \end{aligned}
 \]
+
 :::
 
-<1>7. The example in steps <1>4--<1>6 satisfies
+:::
+
+::: pf-step
+
+The example in steps <1>4--<1>6 satisfies
 \[
 \lim_{j\to\infty}\int_0^1f_j(x)^2\,dx
 =
@@ -192,13 +237,19 @@ By symmetry of the triangular graph about $x=1/j$,
 \int_0^1F(x)^2\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 makes the left side constantly $1/3$, while $F=0$ makes the right side zero.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>7 provides the counterexample required in part (b).
+
 :::
+
 :::

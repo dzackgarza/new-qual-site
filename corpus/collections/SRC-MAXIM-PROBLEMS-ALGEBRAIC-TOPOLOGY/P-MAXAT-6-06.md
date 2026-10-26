@@ -19,12 +19,15 @@ audit:
 Show that $\mathbb { R } \mathbb { P } ^ { 2 k + 1 }$ cannot be a boundary.
 :::
 
-::: {.solution}
 The literal statement is false.
 In fact every odd-dimensional real projective space is a boundary.
 The standard nonboundary statement is the even-dimensional one.
 
-<1>1. Regard
+::: pf
+
+::: pf-step
+
+Regard
 \[
 S^{2k+1}
 \subset
@@ -41,7 +44,9 @@ Then $R$ descends to a smooth involution
 T:\mathbb{RP}^{2k+1}\to\mathbb{RP}^{2k+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $z$ and $-z$ represent the same real projective point, then
 \[
 R(-z)=-iz=-R(z),
@@ -57,11 +62,18 @@ The vectors $z$ and $-z$ define the same point of real projective space, so
 T^2=\operatorname{id}_{\mathbb{RP}^{2k+1}}.
 \]
 Thus $T$ is an involution.
+
 :::
 
-<1>2. The involution $T$ has no fixed point.
+:::
 
-::: {.proof}
+::: pf-step
+
+The involution $T$ has no fixed point.
+
+
+::: pf-proof
+
 Suppose
 \[
 T([z])=[z].
@@ -84,11 +96,18 @@ i=\lambda,
 \]
 which is impossible because $lambda$ is real.
 Hence $T$ is fixed-point free.
+
 :::
 
-<1>3. If a closed smooth manifold $M$ admits a fixed-point-free smooth involution $T$, then $M$ is the boundary of a compact smooth manifold.
+:::
 
-::: {.proof}
+::: pf-step
+
+If a closed smooth manifold $M$ admits a fixed-point-free smooth involution $T$, then $M$ is the boundary of a compact smooth manifold.
+
+
+::: pf-proof
+
 Let
 \[
 \tau:M\times[-1,1]\to M\times[-1,1]
@@ -129,9 +148,14 @@ Hence
 \[
 \partial W\cong M.
 \]
+
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \mathbb{RP}^{2k+1}
@@ -139,17 +163,31 @@ Hence
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 to the fixed-point-free involution from steps <1>1--<1>2.
+
 :::
 
-<1>5. Therefore the literal problem statement cannot be proved.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the literal problem statement cannot be proved.
+
+
+::: pf-proof
+
 Step <1>4 proves the negation of the stated assertion.
+
 :::
 
-<1>6. The standard corrected statement is
+:::
+
+::: pf-step
+
+The standard corrected statement is
 \[
 \boxed{
 \mathbb{RP}^{2k}
@@ -157,17 +195,26 @@ Step <1>4 proves the negation of the stated assertion.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 It remains to prove this corrected assertion in steps <1>7--<1>9.
+
 :::
 
-<1>7. If a closed manifold $M$ is the boundary of a compact manifold, then
+:::
+
+::: pf-step
+
+If a closed manifold $M$ is the boundary of a compact manifold, then
 \[
 \chi(M)
 \]
 is even.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 M=\partial W,
@@ -205,14 +252,21 @@ The coefficient
 1-(-1)^m
 \]
 is either $0$ or $2$, so $chi(M)$ is even.
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \chi(\mathbb{RP}^{2k})=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The standard CW structure on $mathbb{RP}^{2k}$ has exactly one cell in
 each dimension
 \[
@@ -226,11 +280,18 @@ Therefore
 =
 1.
 \]
+
 :::
 
-<1>9. Thus $\mathbb{RP}^{2k}$ cannot be a boundary.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus $\mathbb{RP}^{2k}$ cannot be a boundary.
+
+
+::: pf-proof
+
 If
 \[
 \mathbb{RP}^{2k}=\partial W
@@ -241,12 +302,16 @@ for some compact manifold $W$, step <1>7 would make
 \]
 even.
 Step <1>8 says it equals $1$, a contradiction.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 refute the literal source statement by constructing a bounding manifold for every $\mathbb{RP}^{2k+1}$.
 Steps <1>6--<1>9 prove the standard corrected even-dimensional statement.
+
 :::
+
 :::

@@ -24,7 +24,6 @@ Diagonalize the matrix
 \]
 :::
 
-::: {.solution}
 Let
 \[
 A=
@@ -34,12 +33,18 @@ A=
 \end{pmatrix}.
 \]
 
-<1>1. The characteristic polynomial of \(A\) is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of \(A\) is
 \[
 \chi_A(\lambda)=(\lambda-3)(\lambda-1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 \det(A-\lambda I)
@@ -57,9 +62,14 @@ Factoring gives
 =(1-\lambda)(3-\lambda)
 =(\lambda-1)(\lambda-3).
 \]
+
 :::
 
-<1>2. An eigenvector for \(\lambda=3\) is
+:::
+
+::: pf-step
+
+An eigenvector for \(\lambda=3\) is
 \[
 v_3=
 \begin{pmatrix}
@@ -76,7 +86,9 @@ v_1=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 A
@@ -109,9 +121,14 @@ A
 -1
 \end{pmatrix}.
 \]
+
 :::
 
-<1>3. The matrix
+:::
+
+::: pf-step
+
+The matrix
 \[
 P=
 \begin{pmatrix}
@@ -130,7 +147,9 @@ P^{-1}
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant is
 \[
 \det P=-2\ne0,
@@ -145,9 +164,14 @@ P^2=
 =2I,
 \]
 which gives the displayed formula for \(P^{-1}\).
+
 :::
 
-<1>4. A diagonalization of \(A\) is
+:::
+
+::: pf-step
+
+A diagonalization of \(A\) is
 \[
 \boxed{
 P^{-1}AP=
@@ -157,7 +181,9 @@ P^{-1}AP=
 \end{pmatrix}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of \(P\) are the eigenvectors \(v_3\) and \(v_1\) from step <1>2. Therefore
 \[
 AP
@@ -169,11 +195,15 @@ P
 \end{pmatrix}.
 \]
 Multiplying on the left by \(P^{-1}\) yields the claimed diagonalization.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested diagonal form and change-of-basis matrix.
+
 :::
+
 :::

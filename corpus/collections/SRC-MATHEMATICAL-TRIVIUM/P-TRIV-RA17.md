@@ -19,8 +19,11 @@ audit:
 $\mathrm { C a l c u l a t e } \int \frac { x ^ { 5 } + 2 } { x ^ { 2 } - 1 } d x$
 :::
 
-::: {.solution}
-<1>1. Polynomial division gives
+::: pf
+
+::: pf-step
+
+Polynomial division gives
 $$
 \frac{x^5+2}{x^2-1}
 =
@@ -29,7 +32,9 @@ x^3+x
 \frac{x+2}{x^2-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 (x^2-1)(x^3+x)
@@ -37,9 +42,14 @@ $$
 x^5-x.
 $$
 Subtracting from $x^5+2$ leaves the remainder $x+2$.
+
 :::
 
-<1>2. The proper rational term decomposes as
+:::
+
+::: pf-step
+
+The proper rational term decomposes as
 $$
 \frac{x+2}{x^2-1}
 =
@@ -48,7 +58,9 @@ $$
 \frac{1/2}{x+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 \frac{x+2}{(x-1)(x+1)}
@@ -77,9 +89,14 @@ A=\frac32,
 \qquad
 B=-\frac12.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int\frac{x^5+2}{x^2-1}\,dx
 =
@@ -90,11 +107,18 @@ $$
 \frac12\int\frac{dx}{x+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>1--<1>2 into the integral and use linearity.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \int\frac{x^5+2}{x^2-1}\,dx
@@ -111,14 +135,20 @@ C.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate each term in step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required antiderivative on each interval avoiding
 $x=\pm1$.
+
 :::
+
 :::

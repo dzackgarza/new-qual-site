@@ -20,10 +20,15 @@ Let $f$ be a bounded real-valued function on $[0,1]$.
 Show that $f$ is Riemann integrable if and only if $f^3$ is Riemann integrable.
 :::
 
-::: {.solution}
-<1>1. Let $h:[0,1]\to\mathbb R$ be bounded and Riemann integrable, and let $\phi$ be continuous on a closed interval containing the range of $h$. Then $\phi\circ h$ is Riemann integrable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Let $h:[0,1]\to\mathbb R$ be bounded and Riemann integrable, and let $\phi$ be continuous on a closed interval containing the range of $h$. Then $\phi\circ h$ is Riemann integrable.
+
+
+::: pf-proof
+
 Choose $M>0$ such that
 \[
 |h(x)|\le M
@@ -94,11 +99,18 @@ U(\phi\circ h,P)-L(\phi\circ h,P)
 \end{aligned}
 \]
 By the Darboux criterion, $\phi\circ h$ is Riemann integrable.
+
 :::
 
-<1>2. If $f$ is Riemann integrable, then $f^3$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f$ is Riemann integrable, then $f^3$ is Riemann integrable.
+
+
+::: pf-proof
+
 Apply step <1>1 with
 \[
 h=f
@@ -108,11 +120,18 @@ and
 \phi(t)=t^3.
 \]
 The function $\phi$ is continuous on every bounded interval.
+
 :::
 
-<1>3. If $f^3$ is Riemann integrable, then $f$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f^3$ is Riemann integrable, then $f$ is Riemann integrable.
+
+
+::: pf-proof
+
 Since $f$ is bounded, so is $f^3$. Apply step <1>1 with
 \[
 h=f^3
@@ -130,9 +149,14 @@ The real cube-root function is continuous on every bounded interval, and
 f(x).
 \]
 Thus $f$ is Riemann integrable.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f\text{ is Riemann integrable}
@@ -141,13 +165,19 @@ f^3\text{ is Riemann integrable}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 proves the forward implication, and step <1>3 proves the reverse implication.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required equivalence.
+
 :::
+
 :::

@@ -51,10 +51,13 @@ end
 ```
 :::
 
-::: {.solution}
 ## Part (A)
 
-<1>1. Initially,
+::: pf
+
+::: pf-step
+
+Initially,
 \[
 a=273,
 \qquad
@@ -66,7 +69,9 @@ The first remainder is
 273\bmod110=53}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 273=2\cdot110+53.
 \]
@@ -77,15 +82,22 @@ a=110,
 b=53
 \]
 and prints \(53\).
+
 :::
 
-<1>2. The next remainder is
+:::
+
+::: pf-step
+
+The next remainder is
 \[
 \boxed{
 110\bmod53=4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 110=2\cdot53+4.
 \]
@@ -96,15 +108,22 @@ a=53,
 b=4
 \]
 and prints \(4\).
+
 :::
 
-<1>3. The next remainder is
+:::
+
+::: pf-step
+
+The next remainder is
 \[
 \boxed{
 53\bmod4=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 53=13\cdot4+1.
 \]
@@ -115,15 +134,22 @@ a=4,
 b=1
 \]
 and prints \(1\).
+
 :::
 
-<1>4. The final remainder is
+:::
+
+::: pf-step
+
+The final remainder is
 \[
 \boxed{
 4\bmod1=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 4=4\cdot1+0.
 \]
@@ -134,60 +160,93 @@ a=1,
 b=0
 \]
 and prints \(0\).
+
 :::
 
-<1>5. The loop then stops.
+:::
 
-::: {.proof}
+::: pf-step
+
+The loop then stops.
+
+
+::: pf-proof
+
 Its condition is
 \[
 b>0.
 \]
 After step <1>4, \(b=0\).
+
 :::
 
-<1>6. Hence the output of (A) is
+:::
+
+::: pf-step
+
+Hence the output of (A) is
 \[
 \boxed{
 53,\ 4,\ 1,\ 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the values printed in steps <1>1--<1>4.
+
 :::
 
-## Part (B)
+:::
 
-<1>7. At the start of each outer-loop iteration, \(i<88\), and the first
+::: pf-step
+
+At the start of each outer-loop iteration, \(i<88\), and the first
 operation is
 \[
 i=i+1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the first command inside the outer loop.
+
 :::
 
-<1>8. Therefore the values of \(i\) used by the inner loop are
+:::
+
+::: pf-step
+
+Therefore the values of \(i\) used by the inner loop are
 \[
 \boxed{
 2,3,\dots,88}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The initial value is \(i=1\). Each outer iteration increases it by one before
 the inner loop begins. When \(i=87\) at the outer-loop test, the loop runs
 once more and changes \(i\) to \(88\). The next outer-loop test fails because
 \(88<88\) is false.
+
 :::
 
-<1>9. Fix one such value of \(i\). The inner loop starts with
+:::
+
+::: pf-step
+
+Fix one such value of \(i\). The inner loop starts with
 \[
 k=88
 \]
 and decreases \(k\) by one until \(k<i\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the assignment and loop condition
 \[
 k=88,
@@ -196,45 +255,69 @@ k=88,
 \qquad
 k=k-1.
 \]
+
 :::
 
-<1>10. During that inner loop, the equality
+:::
+
+::: pf-step
+
+During that inner loop, the equality
 \[
 k=i
 \]
 occurs exactly once.
 
-::: {.proof}
+
+::: pf-proof
+
 The integer \(k\) takes the values
 \[
 88,87,\dots,i
 \]
 once each before being decremented to \(i-1\), which terminates the loop.
+
 :::
 
-<1>11. Hence the inner loop prints the current value of \(i\) exactly once.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence the inner loop prints the current value of \(i\) exactly once.
+
+
+::: pf-proof
+
 The print command is executed precisely when
 \[
 i=k,
 \]
 which occurs exactly once by step <1>10.
+
 :::
 
-<1>12. Therefore the output of (B) is
+:::
+
+::: pf-step
+
+Therefore the output of (B) is
 \[
 \boxed{
 2,3,4,\dots,88}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>11 to the successive outer-loop values listed in step <1>8.
+
 :::
 
-## Part (C)
+:::
 
-<1>13. Initially,
+::: pf-step
+
+Initially,
 \[
 n=123456.
 \]
@@ -244,7 +327,9 @@ Thus
 n\bmod100=56}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 123456
 =
@@ -256,9 +341,14 @@ The algorithm prints \(56\), then replaces \(n\) by
 =
 1234.
 \]
+
 :::
 
-<1>14. With
+:::
+
+::: pf-step
+
+With
 \[
 n=1234,
 \]
@@ -268,7 +358,9 @@ one has
 n\bmod100=34}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 1234
 =
@@ -280,9 +372,14 @@ The algorithm prints \(34\), then replaces \(n\) by
 =
 12.
 \]
+
 :::
 
-<1>15. With
+:::
+
+::: pf-step
+
+With
 \[
 n=12,
 \]
@@ -292,7 +389,9 @@ one has
 n\bmod100=12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 12<100,
@@ -304,32 +403,50 @@ replaces \(n\) by
 =
 0.
 \]
+
 :::
 
-<1>16. The loop then stops.
+:::
 
-::: {.proof}
+::: pf-step
+
+The loop then stops.
+
+
+::: pf-proof
+
 Its condition is
 \[
 n>0,
 \]
 and step <1>15 leaves \(n=0\).
+
 :::
 
-<1>17. Hence the output of (C) is
+:::
+
+::: pf-step
+
+Hence the output of (C) is
 \[
 \boxed{
 56,\ 34,\ 12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the printed values from steps <1>13--<1>15.
+
 :::
 
-<1>18. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6, <1>12, and <1>17 give the outputs of (A), (B), and (C),
 respectively.
+
 :::
+
 :::

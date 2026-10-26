@@ -22,18 +22,23 @@ We have an action of the permutation group $S _ { d }$ on the polynomial ring $F
 Employ Emil Artin’s theorem to deduce that there is a finite Galois extension of fields with $S _ { d }$ as Galois group.
 :::
 
-::: {.solution}
 Let
 $$
 L=F(X_1,\ldots,X_d).
 $$
 
-<1>1. The variable-permutation action defines an injective homomorphism
+::: pf
+
+::: pf-step
+
+The variable-permutation action defines an injective homomorphism
 $$
 S_d\hookrightarrow\operatorname{Aut}_F(L).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A permutation $\sigma\in S_d$ acts on the polynomial ring by
 $$
 \sigma(f)(X_1,\ldots,X_d)
@@ -50,20 +55,32 @@ $$
 \sigma(X_i)=X_{\sigma(i)}\ne X_i
 $$
 in the rational function field. Thus the action is faithful.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 K=L^{S_d}
 =\{a\in L:\sigma(a)=a\text{ for every }\sigma\in S_d\}
 $$
 be the fixed field.
 
-::: {.proof}
+
+::: pf-proof
+
 The set of elements fixed by every automorphism in a group is closed under addition, multiplication, additive inverses, and inversion of nonzero elements, so it is a subfield of $L$. Since every permutation fixes $F$, one has $F\subseteq K$.
+
 :::
 
-<1>3. Artin's theorem on fixed fields gives
+:::
+
+::: pf-step
+
+Artin's theorem on fixed fields gives
 $$
 [L:K]=|S_d|=d!
 $$
@@ -72,7 +89,9 @@ $$
 \operatorname{Gal}(L/K)=S_d.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Artin's theorem states: if a finite group $G$ acts faithfully by automorphisms on a field $L$ and $K=L^G$ is its fixed field, then
 $$
 [L:K]=|G|,
@@ -84,9 +103,14 @@ $$
 G=S_d
 $$
 and the faithful action from step <1>1.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 F(X_1,\ldots,X_d)
@@ -99,13 +123,19 @@ $$
 \boxed{S_d}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the conclusion of step <1>3 written for the present fields.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 supplies the requested finite Galois extension realizing $S_d$ as a Galois group.
+
 :::
+
 :::

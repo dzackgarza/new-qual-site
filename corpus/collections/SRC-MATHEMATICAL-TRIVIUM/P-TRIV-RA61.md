@@ -19,26 +19,36 @@ audit:
 Show that $\int _ { 0 } ^ { \pi } \log ( 1 - 2 a \cos x + a ^ { 2 } ) d x = 0 { \mathrm { ~ f o r ~ } } | a | < 1$
 :::
 
-::: {.solution}
 Assume $a\in\mathbb R$ and $|a|<1$.
 
-<1>1. For every real $x$,
+::: pf
+
+::: pf-step
+
+For every real $x$,
 $$
 1-2a\cos x+a^2
 =
 (1-ae^{ix})(1-ae^{-ix}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the right-hand side:
 $$
 1-a(e^{ix}+e^{-ix})+a^2
 =
 1-2a\cos x+a^2.
 $$
+
 :::
 
-<1>2. Since $|a|<1$, one has
+:::
+
+::: pf-step
+
+Since $|a|<1$, one has
 $$
 \log(1-ae^{ix})
 =
@@ -53,7 +63,9 @@ $$
 \frac{a^n e^{-inx}}n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The power series
 $$
 \log(1-z)
@@ -61,9 +73,14 @@ $$
 -\sum_{n=1}^{\infty}\frac{z^n}{n}
 $$
 converges absolutely for $|z|<1$. Substitute $z=ae^{\pm ix}$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \log(1-2a\cos x+a^2)
 =
@@ -73,7 +90,9 @@ $$
 \cos(nx).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the positive real number
 $$
 1-2a\cos x+a^2
@@ -88,11 +107,18 @@ $$
 (e^{inx}+e^{-inx}),
 $$
 which is the displayed cosine series.
+
 :::
 
-<1>4. The series in step <1>3 converges uniformly in $x\in[0,\pi]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The series in step <1>3 converges uniformly in $x\in[0,\pi]$.
+
+
+::: pf-proof
+
 For every $x$,
 $$
 \left|
@@ -106,9 +132,14 @@ $$
 \sum_{n=1}^{\infty}\frac{|a|^n}{n}
 $$
 converges, so the Weierstrass $M$-test applies.
+
 :::
 
-<1>5. Hence termwise integration gives
+:::
+
+::: pf-step
+
+Hence termwise integration gives
 $$
 \int_0^\pi
 \log(1-2a\cos x+a^2)
@@ -120,16 +151,25 @@ $$
 \int_0^\pi\cos(nx)\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence from step <1>4 justifies exchanging the sum and integral.
+
 :::
 
-<1>6. For every integer $n\geq1$,
+:::
+
+::: pf-step
+
+For every integer $n\geq1$,
 $$
 \int_0^\pi\cos(nx)\,dx=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 $$
 \int_0^\pi\cos(nx)\,dx
@@ -139,9 +179,14 @@ $$
 \right]_0^\pi
 =0.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \int_0^\pi
@@ -151,13 +196,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every term on the right-hand side of step <1>5 vanishes by step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required identity.
+
 :::
+
 :::

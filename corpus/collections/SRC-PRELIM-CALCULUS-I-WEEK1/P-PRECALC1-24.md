@@ -18,7 +18,6 @@ Calculate
 \]
 :::
 
-::: {.solution}
 For \(t\ne0\) near \(0\), define
 \[
 g(t)
@@ -26,13 +25,19 @@ g(t)
 (1+\sin(2t))^{1/t}.
 \]
 
-<1>1. For \(t\) sufficiently close to \(0\),
+::: pf
+
+::: pf-step
+
+For \(t\) sufficiently close to \(0\),
 \[
 \boxed{
 1+\sin(2t)>0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \sin(2t)\to0,
@@ -42,9 +47,14 @@ one has
 1+\sin(2t)\to1>0.
 \]
 Therefore the base is positive in some neighborhood of \(0\).
+
 :::
 
-<1>2. Taking logarithms,
+:::
+
+::: pf-step
+
+Taking logarithms,
 \[
 \boxed{
 \log g(t)
@@ -52,7 +62,9 @@ Therefore the base is positive in some neighborhood of \(0\).
 \frac{\log(1+\sin(2t))}{t}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \log(a^{1/t})
@@ -60,9 +72,14 @@ Use
 \frac1t\log a
 \]
 for the positive base from step <1>1.
+
 :::
 
-<1>3. Factor the logarithmic quotient:
+:::
+
+::: pf-step
+
+Factor the logarithmic quotient:
 \[
 \frac{\log(1+\sin(2t))}{t}
 =
@@ -72,11 +89,18 @@ for the positive base from step <1>1.
 \cdot2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply and divide by \(\sin(2t)\) and \(2t\).
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \lim_{u\to0}
@@ -85,12 +109,19 @@ Multiply and divide by \(\sin(2t)\) and \(2t\).
 1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard logarithmic limit, equivalently the derivative of
 \(\log(1+u)\) at \(u=0\).
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lim_{t\to0}
 \frac{\log(1+\sin(2t))}{\sin(2t)}
@@ -98,7 +129,9 @@ This is the standard logarithmic limit, equivalently the derivative of
 1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \sin(2t)\to0,
@@ -107,9 +140,14 @@ apply step <1>4 with
 \[
 u=\sin(2t).
 \]
+
 :::
 
-<1>6. Also,
+:::
+
+::: pf-step
+
+Also,
 \[
 \boxed{
 \lim_{t\to0}
@@ -118,31 +156,47 @@ u=\sin(2t).
 1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard limit
 \[
 \frac{\sin u}{u}\to1
 \]
 with \(u=2t\).
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{t\to0}\log g(t)=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take limits in step <1>3 using steps <1>5--<1>6.
+
 :::
 
-<1>8. Exponentiating,
+:::
+
+::: pf-step
+
+Exponentiating,
 \[
 \boxed{
 \lim_{t\to0}g(t)=e^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The exponential function is continuous, so step <1>7 gives
 \[
 g(t)
@@ -151,19 +205,31 @@ e^{\log g(t)}
 \to
 e^2.
 \]
+
 :::
 
-<1>9. Extend \(g\) continuously to \(t=0\) by defining
+:::
+
+::: pf-step
+
+Extend \(g\) continuously to \(t=0\) by defining
 \[
 \boxed{
 g(0)=e^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 shows that this removes the singularity at \(t=0\).
+
 :::
 
-<1>10. For \(x\ne0\) sufficiently close to \(0\), the integral mean-value
+:::
+
+::: pf-step
+
+For \(x\ne0\) sufficiently close to \(0\), the integral mean-value
 theorem gives a point \(c_x\) between \(0\) and \(x\) such that
 \[
 \boxed{
@@ -172,7 +238,9 @@ theorem gives a point \(c_x\) between \(0\) and \(x\) such that
 g(c_x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The extended function \(g\) is continuous near \(0\). If \(x>0\), apply the
 integral mean-value theorem on \([0,x]\). If \(x<0\), apply it on \([x,0]\):
 \[
@@ -181,21 +249,33 @@ integral mean-value theorem on \([0,x]\). If \(x<0\), apply it on \([x,0]\):
 g(c_x)(0-x),
 \]
 which is equivalent to the displayed identity after changing signs.
+
 :::
 
-<1>11. As \(x\to0\),
+:::
+
+::: pf-step
+
+As \(x\to0\),
 \[
 \boxed{c_x\to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The point \(c_x\) lies between \(0\) and \(x\), so
 \[
 |c_x|\le|x|.
 \]
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lim_{x\to0}
 \frac1x
@@ -205,7 +285,9 @@ The point \(c_x\) lies between \(0\) and \(x\), so
 e^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10, the quotient equals \(g(c_x)\). By step <1>11,
 \[
 c_x\to0,
@@ -214,9 +296,14 @@ and by continuity of the extension in step <1>9,
 \[
 g(c_x)\to g(0)=e^2.
 \]
+
 :::
 
-<1>13. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{x\to0}
@@ -227,13 +314,19 @@ g(c_x)\to g(0)=e^2.
 e^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 is the requested limit.
+
 :::
+
 :::

@@ -23,8 +23,11 @@ audit:
 Find $f'(x)$, if $f(x) = \log\frac{a}{x}$, $\cos\arcsin x$, $\frac{x^2+1}{x^3+1}$.
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 $$
 f(x)=\log\frac{a}{x},
 $$
@@ -34,7 +37,9 @@ $$
 $$
 wherever the logarithm is defined.
 
-::: {.proof}
+
+::: pf-proof
+
 On any interval on which $a/x>0$,
 $$
 \log\frac{a}{x}
@@ -45,9 +50,14 @@ Therefore
 $$
 f'(x)=-\frac1x.
 $$
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 f(x)=\cos(\arcsin x),
 $$
@@ -57,7 +67,9 @@ $$
 $$
 for $|x|<1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the chain rule,
 $$
 f'(x)
@@ -71,9 +83,14 @@ $$
 \sin(\arcsin x)=x,
 $$
 the formula follows.
+
 :::
 
-<1>3. For
+:::
+
+::: pf-step
+
+For
 $$
 f(x)=\frac{x^2+1}{x^3+1},
 $$
@@ -87,7 +104,9 @@ f'(x)
 $$
 for $x\neq-1$.
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient rule gives
 $$
 \begin{aligned}
@@ -106,11 +125,15 @@ f'(x)
 \frac{-x^4-3x^2+2x}{(x^3+1)^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 give the three requested derivatives.
+
 :::
+
 :::

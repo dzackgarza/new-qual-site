@@ -19,7 +19,6 @@ audit:
 Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { 1 } \to S ^ { 2 }$ and $S ^ { 1 } \to \mathbb { C P } ^ { n }$
 :::
 
-::: {.solution}
 Write
 \[
 LX
@@ -29,14 +28,20 @@ LX
 for the free loop space, with the compact-open topology.
 All cohomology groups below have integral coefficients.
 
-<1>1. Since $S^3$ is a topological group, there is a homeomorphism
+::: pf
+
+::: pf-step
+
+Since $S^3$ is a topological group, there is a homeomorphism
 \[
 LS^3
 \cong
 S^3\times\Omega S^3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Identify $S^3$ with the unit quaternions. For a free loop
 \[
 \gamma:S^1\to S^3,
@@ -59,9 +64,14 @@ define
 \Psi(g,\omega)(t)=g\omega(t).
 \]
 These maps are continuous and inverse to one another.
+
 :::
 
-<1>2. The based loop space has
+:::
+
+::: pf-step
+
+The based loop space has
 \[
 H_*(\Omega S^3;\mathbb Z)
 \cong
@@ -77,7 +87,9 @@ H^*(\Omega S^3;\mathbb Z)
 \]
 where $\Gamma$ denotes the divided-power algebra.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 S^3
@@ -107,9 +119,14 @@ with multiplication
 =
 \binom{i+j}{i}\gamma_{i+j}(u_2).
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 H^*(LS^3;\mathbb Z)
@@ -129,7 +146,9 @@ H^q(LS^3;\mathbb Z)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, apply the integral Künneth theorem. The cohomology of $S^3$
 is
 \[
@@ -143,9 +162,14 @@ Tor term occurs.
 The divided-power factor has one copy of $\mathbb Z$ in every nonnegative
 even degree. Multiplying by $z_3$ gives one copy in every odd degree at
 least $3$, proving the additive statement.
+
 :::
 
-<1>4. For $n\ge1$, Cohen--Jones--Yan compute the shifted loop homology
+:::
+
+::: pf-step
+
+For $n\ge1$, Cohen--Jones--Yan compute the shifted loop homology
 algebra
 \[
 \mathbb H_*(L\mathbb{CP}^n)
@@ -165,7 +189,9 @@ as
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the integral Cohen--Jones--Yan calculation from
 R. Cohen, J. Jones, and J. Yan,
 *The loop homology algebra of spheres and projective spaces*.
@@ -182,9 +208,14 @@ The grading displayed here is the string-topology grading shifted downward by
 \[
 \dim_{\mathbb R}\mathbb{CP}^n=2n.
 \]
+
 :::
 
-<1>5. As an ordinary homology group,
+:::
+
+::: pf-step
+
+As an ordinary homology group,
 \[
 H_q(L\mathbb{CP}^n;\mathbb Z)
 \cong
@@ -200,7 +231,9 @@ H_q(L\mathbb{CP}^n;\mathbb Z)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the monomial basis of the algebra in step <1>4.
 
 First consider monomials without $x$:
@@ -260,9 +293,14 @@ because $x^2=a^nx=0$. Their ordinary degrees are
 As $(i,k)$ varies, these run through every positive odd integer exactly
 once, and all such monomials are free. This proves the displayed homology
 groups.
+
 :::
 
-<1>6. The integral cohomology groups of the free loop space of
+:::
+
+::: pf-step
+
+The integral cohomology groups of the free loop space of
 $\mathbb{CP}^n$ are therefore
 \[
 \boxed{
@@ -283,7 +321,9 @@ In particular,
 H^1(L\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the universal coefficient theorem:
 \[
 0
@@ -327,9 +367,14 @@ The resulting short exact sequence splits because its free quotient is
 \mathbb Z,
 \]
 so the group is the displayed direct sum.
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \mathbb{CP}^1\cong S^2,
 \]
@@ -346,7 +391,9 @@ H^q(LS^2;\mathbb Z)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $n=1$ into step <1>6. The exceptional odd degrees are
 \[
 2r+1,
@@ -354,11 +401,13 @@ Substitute $n=1$ into step <1>6. The exceptional odd degrees are
 r\ge1,
 \]
 which are exactly the odd degrees at least $3$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 computes the cohomology of
 \[
 \operatorname{Map}(S^1,S^3).
@@ -371,5 +420,7 @@ and step <1>6 computes the cohomology of
 \[
 \operatorname{Map}(S^1,\mathbb{CP}^n).
 \]
+
 :::
+
 :::

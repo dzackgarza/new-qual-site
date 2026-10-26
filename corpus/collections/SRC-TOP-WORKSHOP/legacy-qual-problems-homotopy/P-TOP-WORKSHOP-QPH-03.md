@@ -22,7 +22,6 @@ Show that the compositions $\phi\circ\psi$ and $\psi\circ\phi$ are homotopic.
 Hint: Is this true for $f(z)=z^n$, where $n\in\mathbb Z$?
 :::
 
-::: {.solution}
 Let
 \[
 p:\mathbb R\to S^1,
@@ -33,7 +32,11 @@ be the universal covering map.
 
 ## Maps of equal degree are homotopic
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 f,g:S^1\to S^1
 \]
@@ -42,11 +45,18 @@ have the same degree
 d\in\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This sets up the classification statement needed below.
+
 :::
 
-<1>2. Choose lifts
+:::
+
+::: pf-step
+
+Choose lifts
 \[
 F,G:\mathbb R\to\mathbb R
 \]
@@ -59,15 +69,22 @@ and
 p\circ G=g\circ p.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The domain \(\mathbb R\) is simply connected, so both maps
 \[
 f\circ p,\qquad g\circ p
 \]
 lift through the covering \(p\).
+
 :::
 
-<1>3. The common degree \(d\) is characterized by
+:::
+
+::: pf-step
+
+The common degree \(d\) is characterized by
 \[
 \boxed{
 F(t+1)=F(t)+d}
@@ -78,15 +95,22 @@ and
 G(t+1)=G(t)+d}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a lift of a circle map, the difference
 \[
 F(t+1)-F(t)
 \]
 is integer-valued and continuous in \(t\), hence constant. That constant is the degree of the circle map. The same holds for \(G\).
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 s\in[0,1],
 \]
@@ -97,17 +121,26 @@ K_s(t)
 (1-s)F(t)+sG(t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a continuous linear interpolation between the two lifts.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 K_s(t+1)=K_s(t)+d}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>3,
 \[
 \begin{aligned}
@@ -118,15 +151,22 @@ K_s(t+1)
 K_s(t)+d.
 \end{aligned}
 \]
+
 :::
 
-<1>6. Therefore the formula
+:::
+
+::: pf-step
+
+Therefore the formula
 \[
 H(p(t),s)=p(K_s(t))
 \]
 is well defined.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 p(t)=p(t+k)
@@ -140,15 +180,22 @@ Since \(kd\in\mathbb Z\),
 p(K_s(t+k))=p(K_s(t)).
 \]
 Thus the value depends only on the point \(p(t)\in S^1\).
+
 :::
 
-<1>7. The map
+:::
+
+::: pf-step
+
+The map
 \[
 H:S^1\times[0,1]\to S^1
 \]
 is a homotopy from \(f\) to \(g\).
 
-::: {.proof}
+
+::: pf-proof
+
 Continuity follows from the quotient property of \(p\). At \(s=0\),
 \[
 H(p(t),0)=p(F(t))=f(p(t)).
@@ -157,9 +204,14 @@ At \(s=1\),
 \[
 H(p(t),1)=p(G(t))=g(p(t)).
 \]
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \deg f=\deg g
@@ -167,26 +219,26 @@ H(p(t),1)=p(G(t))=g(p(t)).
 f\simeq g}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the conclusion of steps <1>1--<1>7.
+
 :::
 
-## The two compositions
+:::
 
-Let
-\[
-m=\deg\phi,
-\qquad
-n=\deg\psi.
-\]
+::: pf-step
 
-<1>9. Degree is multiplicative under composition:
+Degree is multiplicative under composition:
 \[
 \boxed{
 \deg(\phi\circ\psi)=mn}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On fundamental groups,
 \[
 \phi_*:\mathbb Z\to\mathbb Z
@@ -202,19 +254,31 @@ is multiplication by \(n\). Therefore
 \phi_*\circ\psi_*
 \]
 is multiplication by \(mn\).
+
 :::
 
-<1>10. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 \[
 \boxed{
 \deg(\psi\circ\phi)=nm}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Reverse the order in step <1>9.
+
 :::
 
-<1>11. Since integer multiplication is commutative,
+:::
+
+::: pf-step
+
+Since integer multiplication is commutative,
 \[
 \boxed{
 \deg(\phi\circ\psi)
@@ -222,13 +286,20 @@ Reverse the order in step <1>9.
 \deg(\psi\circ\phi)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 mn=nm.
 \]
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \phi\circ\psi
@@ -236,13 +307,19 @@ mn=nm.
 \psi\circ\phi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>8 to the two maps whose degrees agree by step <1>11.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 is the required homotopy statement.
+
 :::
+
 :::

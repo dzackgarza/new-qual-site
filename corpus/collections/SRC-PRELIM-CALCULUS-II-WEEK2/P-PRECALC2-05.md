@@ -15,8 +15,11 @@ review: draft
 Compute $\int { \frac { x + 2 } { x ^ { 3 } - x ^ { 2 } + 2 x - 2 } } d x .$
 :::
 
-::: {.solution}
-<1>1. Factor the denominator:
+::: pf
+
+::: pf-step
+
+Factor the denominator:
 \[
 \boxed{
 x^3-x^2+2x-2
@@ -24,7 +27,9 @@ x^3-x^2+2x-2
 (x-1)(x^2+2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Group terms:
 \[
 x^3-x^2+2x-2
@@ -33,9 +38,14 @@ x^2(x-1)+2(x-1)
 =
 (x-1)(x^2+2).
 \]
+
 :::
 
-<1>2. Seek constants \(A,B,C\) such that
+:::
+
+::: pf-step
+
+Seek constants \(A,B,C\) such that
 \[
 \frac{x+2}{(x-1)(x^2+2)}
 =
@@ -44,12 +54,19 @@ x^2(x-1)+2(x-1)
 \frac{Bx+C}{x^2+2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator has one linear factor and one irreducible quadratic factor,
 so this is the standard partial-fraction form.
+
 :::
 
-<1>3. Clearing denominators gives
+:::
+
+::: pf-step
+
+Clearing denominators gives
 \[
 x+2
 =
@@ -58,14 +75,21 @@ A(x^2+2)
 (Bx+C)(x-1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity in step <1>2 by
 \[
 (x-1)(x^2+2).
 \]
+
 :::
 
-<1>4. Expanding the right-hand side gives
+:::
+
+::: pf-step
+
+Expanding the right-hand side gives
 \[
 x+2
 =
@@ -76,7 +100,9 @@ x+2
 (2A-C).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 A(x^2+2)+(Bx+C)(x-1)
@@ -86,9 +112,14 @@ Ax^2+2A+Bx^2-Bx+Cx-C\\
 (A+B)x^2+(C-B)x+(2A-C).
 \end{aligned}
 \]
+
 :::
 
-<1>5. Comparing coefficients gives
+:::
+
+::: pf-step
+
+Comparing coefficients gives
 \[
 A+B=0,
 \]
@@ -100,15 +131,22 @@ and
 2A-C=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial on the left is
 \[
 0x^2+1x+2.
 \]
 Equate corresponding coefficients with step <1>4.
+
 :::
 
-<1>6. The unique solution is
+:::
+
+::: pf-step
+
+The unique solution is
 \[
 \boxed{
 A=1,\qquad
@@ -116,7 +154,9 @@ B=-1,\qquad
 C=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 A+B=0
@@ -146,9 +186,14 @@ so
 3A=3
 \]
 and \(A=1\). Hence \(B=-1\) and \(C=0\).
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{x+2}{x^3-x^2+2x-2}
@@ -158,34 +203,50 @@ and \(A=1\). Hence \(B=-1\) and \(C=0\).
 \frac{x}{x^2+2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the coefficients from step <1>6 into step <1>2.
+
 :::
 
-<1>8. Integrating term by term,
+:::
+
+::: pf-step
+
+Integrating term by term,
 \[
 \int\frac{dx}{x-1}
 =
 \log|x-1|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard antiderivative
 \[
 \int\frac{du}{u}
 =
 \log|u|.
 \]
+
 :::
 
-<1>9. Also,
+:::
+
+::: pf-step
+
+Also,
 \[
 \int\frac{x}{x^2+2}\,dx
 =
 \frac12\log(x^2+2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 u=x^2+2,
@@ -205,9 +266,14 @@ Since
 x^2+2>0,
 \]
 no absolute value is needed.
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int
@@ -220,13 +286,19 @@ no absolute value is needed.
 C}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>7--<1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the requested antiderivative.
+
 :::
+
 :::

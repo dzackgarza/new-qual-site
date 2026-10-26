@@ -33,7 +33,6 @@ A^{n+1}=0?
 Give an example or a proof of nonexistence.
 :::
 
-::: {.solution}
 For $n\ge2$, let $N\in M_n(\mathbb R)$ be the matrix with ones on the superdiagonal and zeros elsewhere:
 \[
 N=
@@ -46,7 +45,11 @@ N=
 \end{pmatrix}.
 \]
 
-<1>1. For the standard basis $e_1,\ldots,e_n$,
+::: pf
+
+::: pf-step
+
+For the standard basis $e_1,\ldots,e_n$,
 \[
 Ne_1=0
 \qquad\text{and}\qquad
@@ -54,18 +57,27 @@ Ne_j=e_{j-1}
 \]
 for $2\le j\le n$.
 
-::: {.proof}
+
+::: pf-proof
+
 The $j$th column of $N$ is $e_{j-1}$ for $j\ge2$, while the first column is zero. Since the $j$th column is $Ne_j$, the formulas follow.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 N^n=0
 \qquad\text{but}\qquad
 N^{n-1}\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By repeated application of step <1>1,
 \[
 N^ke_j=
@@ -79,15 +91,27 @@ Thus $N^ne_j=0$ for every $j$, so $N^n=0$. On the other hand,
 N^{n-1}e_n=e_1\ne0,
 \]
 so $N^{n-1}\ne0$.
+
 :::
 
-<1>3. The answer to part (a) is yes for every $n\ge2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The answer to part (a) is yes for every $n\ge2$.
+
+
+::: pf-proof
+
 The matrix $N$ from steps <1>1--<1>2 is an explicit example.
+
 :::
 
-<1>4. Suppose an $n\times n$ matrix $A$ satisfies
+:::
+
+::: pf-step
+
+Suppose an $n\times n$ matrix $A$ satisfies
 \[
 A^{n+1}=0
 \qquad\text{and}\qquad
@@ -98,17 +122,26 @@ Then there is a vector $v$ for which
 A^nv\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $A^nv=0$ for every vector $v$, then $A^n$ would be the zero operator. This contradicts $A^n\ne0$.
+
 :::
 
-<1>5. Under the assumptions of step <1>4, the vectors
+:::
+
+::: pf-step
+
+Under the assumptions of step <1>4, the vectors
 \[
 v,Av,A^2v,\ldots,A^nv
 \]
 are linearly independent.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 \sum_{j=0}^n c_jA^jv=0.
@@ -126,28 +159,46 @@ whose exponent is at least $n+1$, so it vanishes because $A^{n+1}=0$. Hence
 c_rA^nv=0.
 \]
 By step <1>4, $A^nv\ne0$, so $c_r=0$, a contradiction. Therefore all coefficients are zero.
+
 :::
 
-<1>6. No $n\times n$ matrix can satisfy
+:::
+
+::: pf-step
+
+No $n\times n$ matrix can satisfy
 \[
 A^n\ne0
 \qquad\text{and}\qquad
 A^{n+1}=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If such a matrix existed, step <1>5 would produce $n+1$ linearly independent vectors in the $n$-dimensional space $\mathbb R^n$, which is impossible.
+
 :::
 
-<1>7. The answer to part (b) is no.
+:::
 
-::: {.proof}
+::: pf-step
+
+The answer to part (b) is no.
+
+
+::: pf-proof
+
 Step <1>6 rules out such a matrix even without the additional hypothesis that it be upper triangular.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 answers part (a), and step <1>7 answers part (b).
+
 :::
+
 :::

@@ -21,15 +21,20 @@ The Bolzano--Weierstrass theorem in $\mathbb R^n$ states that if $S\subset\mathb
 Assume this theorem for $n=1$ and use it to prove the theorem for $n=2$.
 :::
 
-::: {.solution}
 Let
 \[
 x_k=(a_k,b_k)\in S\subseteq\mathbb R^2.
 \]
 
-<1>1. The real sequence $(a_k)$ is bounded.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The real sequence $(a_k)$ is bounded.
+
+
+::: pf-proof
+
 Since $S$ is bounded in $\mathbb R^2$, there is $R>0$ such that
 \[
 \|(a,b)\|\le R
@@ -39,25 +44,39 @@ for every $(a,b)\in S$. Hence
 |a_k|\le R
 \]
 for every $k$.
+
 :::
 
-<1>2. There is a subsequence
+:::
+
+::: pf-step
+
+There is a subsequence
 \[
 (a_{k_j})
 \]
 converging to some $a\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $(a_k)$ is bounded. Apply the one-dimensional Bolzano--Weierstrass theorem to obtain a convergent subsequence.
+
 :::
 
-<1>3. The real sequence
+:::
+
+::: pf-step
+
+The real sequence
 \[
 (b_{k_j})
 \]
 has a convergent subsequence.
 
-::: {.proof}
+
+::: pf-proof
+
 The same bound on $S$ gives
 \[
 |b_{k_j}|\le R
@@ -66,9 +85,14 @@ for every $j$. The one-dimensional Bolzano--Weierstrass theorem therefore gives 
 \[
 b_{k_{j_\ell}}\to b.
 \]
+
 :::
 
-<1>4. The subsequence
+:::
+
+::: pf-step
+
+The subsequence
 \[
 x_{k_{j_\ell}}
 \]
@@ -77,7 +101,9 @@ converges in $\mathbb R^2$ to
 (a,b).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $(a_{k_j})\to a$, every subsequence also converges to $a$, so
 \[
 a_{k_{j_\ell}}\to a.
@@ -96,26 +122,44 @@ Therefore
 \longrightarrow0.
 \]
 Thus $x_{k_{j_\ell}}\to(a,b)$.
+
 :::
 
-<1>5. The limit $(a,b)$ belongs to $S$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit $(a,b)$ belongs to $S$.
+
+
+::: pf-proof
+
 Every term $x_{k_{j_\ell}}$ lies in $S$, and $S$ is closed. A closed subset of $\mathbb R^2$ contains the limits of all convergent sequences of its points. Hence
 \[
 (a,b)\in S.
 \]
+
 :::
 
-<1>6. The Bolzano--Weierstrass theorem holds in $\mathbb R^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Bolzano--Weierstrass theorem holds in $\mathbb R^2$.
+
+
+::: pf-proof
+
 Steps <1>4--<1>5 produce a subsequence of the arbitrary sequence $(x_k)$ converging to a point of $S$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is exactly the desired $n=2$ case.
+
 :::
+
 :::

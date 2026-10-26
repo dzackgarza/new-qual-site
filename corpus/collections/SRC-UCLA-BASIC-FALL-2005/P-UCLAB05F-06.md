@@ -23,32 +23,44 @@ audit:
 (c) Check part (b) by verifying directly that $\det(A^2)$ and $\operatorname{trace}(A^2)$ are nonnegative when $A$ is real symmetric.
 :::
 
-::: {.solution}
 Let
 \[
 P(X)=c_0+c_1X+\cdots+c_mX^m.
 \]
 
-<1>1. Since $A$ is real symmetric, there is an orthonormal basis
+::: pf
+
+::: pf-step
+
+Since $A$ is real symmetric, there is an orthonormal basis
 \[
 v_1,\ldots,v_n
 \]
 of $\mathbb R^n$ consisting of eigenvectors of $A$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the spectral theorem for real symmetric matrices. Write
 \[
 Av_i=\lambda_i v_i
 \]
 with $\lambda_i\in\mathbb R$.
+
 :::
 
-<1>2. For every $i$,
+:::
+
+::: pf-step
+
+For every $i$,
 \[
 P(A)v_i=P(\lambda_i)v_i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A^kv_i=\lambda_i^k v_i
@@ -65,25 +77,39 @@ P(A)v_i
 P(\lambda_i)v_i.
 \end{aligned}
 \]
+
 :::
 
-<1>3. The eigenvalues of $P(A)$ are exactly
+:::
+
+::: pf-step
+
+The eigenvalues of $P(A)$ are exactly
 \[
 \boxed{P(\lambda_1),\ldots,P(\lambda_n)},
 \]
 counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, every basis vector $v_i$ is an eigenvector of $P(A)$ with eigenvalue $P(\lambda_i)$. Since the $v_i$ form a basis by step <1>1, the matrix of $P(A)$ in this basis is diagonal with diagonal entries
 \[
 P(\lambda_1),\ldots,P(\lambda_n).
 \]
 Therefore these are precisely all eigenvalues of $P(A)$.
+
 :::
 
-<1>4. Every eigenvalue of $A^2$ is nonnegative.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every eigenvalue of $A^2$ is nonnegative.
+
+
+::: pf-proof
+
 Apply step <1>3 to
 \[
 P(X)=X^2.
@@ -93,11 +119,18 @@ The eigenvalues of $A^2$ are
 \lambda_1^2,\ldots,\lambda_n^2,
 \]
 all of which are nonnegative.
+
 :::
 
-<1>5. The matrix $A^2$ is nonnegative definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $A^2$ is nonnegative definite.
+
+
+::: pf-proof
+
 The matrix $A^2$ is symmetric because
 \[
 (A^2)^t=(A^t)^2=A^2.
@@ -114,27 +147,41 @@ v\mathbin{\cdot}A^2v
 \ge0
 \]
 by step <1>4. Hence $A^2$ is nonnegative definite.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\det(A^2)=(\det A)^2\ge0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplicativity of determinant gives
 \[
 \det(A^2)=\det(A)\det(A)=(\det A)^2.
 \]
 The square of a real number is nonnegative.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\operatorname{trace}(A^2)=\sum_{i,j=1}^n a_{ij}^2\ge0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $i$th diagonal entry of $A^2$ is
 \[
 (A^2)_{ii}
@@ -154,11 +201,15 @@ Therefore
 \sum_{i,j=1}^n a_{ij}^2
 \ge0.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), steps <1>4--<1>5 prove part (b), and steps <1>6--<1>7 verify the two nonnegativity statements in part (c).
+
 :::
+
 :::

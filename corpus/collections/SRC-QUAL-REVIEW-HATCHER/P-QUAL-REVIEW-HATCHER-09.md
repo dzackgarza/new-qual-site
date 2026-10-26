@@ -35,7 +35,6 @@ Prove that $n$ is odd.
 (In fact $n$ must be $1$, $3$, or $7$, but this stronger result is considerably harder.)
 :::
 
-::: {.solution}
 Let
 \[
 u\in H^n(S^n;\mathbb Z)
@@ -55,7 +54,11 @@ in
 H^n(S^n\times S^n;\mathbb Z).
 \]
 
-<1>1. By the Künneth theorem,
+::: pf
+
+::: pf-step
+
+By the Künneth theorem,
 \[
 \boxed{
 H^n(S^n\times S^n;\mathbb Z)
@@ -63,7 +66,9 @@ H^n(S^n\times S^n;\mathbb Z)
 \mathbb Z a\oplus\mathbb Z b}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only nonzero cohomology groups of \(S^n\) are in degrees \(0\) and \(n\). Thus in total degree \(n\), the Künneth decomposition has exactly the two summands
 \[
 H^n(S^n)\otimes H^0(S^n)
@@ -72,51 +77,59 @@ and
 \[
 H^0(S^n)\otimes H^n(S^n).
 \]
+
 :::
 
-<1>2. Therefore there exist integers \(r,s\) such that
+:::
+
+::: pf-step
+
+Therefore there exist integers \(r,s\) such that
 \[
 \mu^*u
 =
 ra+sb.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the basis from step <1>1.
+
 :::
 
-Let
-\[
-i_1:S^n\to S^n\times S^n,
-\qquad
-i_1(x)=(x,e),
-\]
-and
-\[
-i_2:S^n\to S^n\times S^n,
-\qquad
-i_2(x)=(e,x).
-\]
+:::
 
-<1>3. One has
+::: pf-step
+
+One has
 \[
 \boxed{
 \mu\circ i_1=\operatorname{id}_{S^n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 \mu(x,e)=x.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 i_1^*\mu^*u=u.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By functoriality,
 \[
 i_1^*\mu^*
@@ -125,16 +138,23 @@ i_1^*\mu^*
 =
 \operatorname{id}^*.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 i_1^*a=u
 \qquad\text{and}\qquad
 i_1^*b=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \pi_1\circ i_1=\operatorname{id},
@@ -150,14 +170,21 @@ is the constant map at \(e\), its induced map in positive-degree cohomology is z
 \[
 i_1^*b=0.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{r=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply \(i_1^*\) to
 \[
 \mu^*u=ra+sb.
@@ -167,14 +194,21 @@ Using steps <1>4--<1>5 gives
 u=ru.
 \]
 Since \(u\) generates an infinite cyclic group, \(r=1\).
+
 :::
 
-<1>7. Similarly,
+:::
+
+::: pf-step
+
+Similarly,
 \[
 \boxed{s=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The identity
 \[
 \mu(e,x)=x
@@ -194,19 +228,31 @@ Applying \(i_2^*\) to step <1>2 yields
 u=su,
 \]
 hence \(s=1\).
+
 :::
 
-<1>8. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \mu^*u=a+b}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2, <1>6, and <1>7.
+
 :::
 
-<1>9. Since
+:::
+
+::: pf-step
+
+Since
 \[
 H^{2n}(S^n;\mathbb Z)=0,
 \]
@@ -215,11 +261,18 @@ one has
 \boxed{u\smile u=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sphere has no cohomology in degree \(2n>n\), because \(n>0\).
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 0
@@ -229,7 +282,9 @@ The sphere has no cohomology in degree \(2n>n\), because \(n>0\).
 \mu^*u\smile\mu^*u}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Cup product is natural:
 \[
 \mu^*(u\smile u)
@@ -237,9 +292,14 @@ Cup product is natural:
 \mu^*u\smile\mu^*u.
 \]
 Use step <1>9.
+
 :::
 
-<1>11. Using step <1>8,
+:::
+
+::: pf-step
+
+Using step <1>8,
 \[
 0
 =
@@ -248,17 +308,26 @@ Use step <1>9.
 a^2+a\smile b+b\smile a+b^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand bilinearly.
+
 :::
 
-<1>12. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 a^2=b^2=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 a=\pi_1^*u,
@@ -267,9 +336,14 @@ a=\pi_1^*u,
 a^2=\pi_1^*(u^2)=0
 \]
 by step <1>9. The same argument gives \(b^2=0\).
+
 :::
 
-<1>13. Graded commutativity gives
+:::
+
+::: pf-step
+
+Graded commutativity gives
 \[
 \boxed{
 b\smile a
@@ -279,7 +353,9 @@ b\smile a
 (-1)^n a\smile b}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For degree-\(n\) cohomology classes,
 \[
 \beta\smile\alpha
@@ -290,9 +366,14 @@ Since \(n^2\) and \(n\) have the same parity,
 \[
 (-1)^{n^2}=(-1)^n.
 \]
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 0
@@ -301,11 +382,18 @@ Since \(n^2\) and \(n\) have the same parity,
 a\smile b}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>12--<1>13 into step <1>11.
+
 :::
 
-<1>15. By the Künneth theorem,
+:::
+
+::: pf-step
+
+By the Künneth theorem,
 \[
 \boxed{
 H^{2n}(S^n\times S^n;\mathbb Z)
@@ -317,7 +405,9 @@ with generator
 \boxed{a\smile b}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In total degree \(2n\), the only nonzero Künneth term is
 \[
 H^n(S^n)\otimes H^n(S^n)
@@ -328,9 +418,14 @@ and the cross product corresponds to
 \[
 a\smile b.
 \]
+
 :::
 
-<1>16. If \(n\) were even, then
+:::
+
+::: pf-step
+
+If \(n\) were even, then
 \[
 1+(-1)^n=2,
 \]
@@ -339,45 +434,72 @@ so step <1>14 would give
 2(a\smile b)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For even \(n\),
 \[
 (-1)^n=1.
 \]
+
 :::
 
-<1>17. This is impossible because
+:::
+
+::: pf-step
+
+This is impossible because
 \[
 a\smile b
 \]
 generates an infinite cyclic group.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>15,
 \[
 H^{2n}(S^n\times S^n;\mathbb Z)\cong\mathbb Z
 \]
 has no nonzero torsion.
+
 :::
 
-<1>18. Therefore \(n\) is not even.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(n\) is not even.
+
+
+::: pf-proof
+
 The assumption of evenness led to the contradiction in step <1>17.
+
 :::
 
-<1>19. Since \(n>0\),
+:::
+
+::: pf-step
+
+Since \(n>0\),
 \[
 \boxed{n\text{ is odd}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every positive integer is either even or odd, and step <1>18 excludes the even case.
+
 :::
 
-<1>20. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>19 is the required conclusion.
+
 :::
+
 :::

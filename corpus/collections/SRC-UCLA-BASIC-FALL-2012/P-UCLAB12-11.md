@@ -15,12 +15,17 @@ review: draft
 Show that an n by n matrix A can be factored as $A = L U ,$ where L is lower triangular, and U is upper triangular, provided each determinant det $A _ { j }$ ,for $j = 1 , \ldots , n - 1$ , is non-zero, where $A _ { j }$ is the submatrix of A consisting of the first $j$ rows and the first j columns.
 :::
 
-::: {.solution}
 The proof is by induction on $n$.
 
-<1>1. The result holds for $n=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The result holds for $n=1$.
+
+
+::: pf-proof
+
 If
 \[
 A=(a),
@@ -32,9 +37,14 @@ L=(1),
 U=(a).
 \]
 Then $A=LU$, with $L$ lower triangular and $U$ upper triangular.
+
 :::
 
-<1>2. Assume $n\ge2$ and write
+:::
+
+::: pf-step
+
+Assume $n\ge2$ and write
 \[
 A=
 \begin{pmatrix}
@@ -48,7 +58,9 @@ Then
 a\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first leading principal minor is
 \[
 A_1=(a).
@@ -57,9 +69,14 @@ By hypothesis,
 \[
 \det A_1=a\ne0.
 \]
+
 :::
 
-<1>3. Define the Schur complement
+:::
+
+::: pf-step
+
+Define the Schur complement
 \[
 S=D-\frac1a\,cr.
 \]
@@ -68,7 +85,9 @@ For each $j=1,\ldots,n-2$, the leading $j\times j$ principal minor $S_j$ of $S$ 
 \det S_j=\frac{\det A_{j+1}}{a}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The leading $(j+1)\times(j+1)$ principal block of $A$ has the form
 \[
 A_{j+1}
@@ -105,11 +124,18 @@ The left multiplier has determinant $1$. Hence
 a\det S_j,
 \]
 which gives the formula.
+
 :::
 
-<1>4. Every leading principal minor of $S$ required by the induction hypothesis is nonzero.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every leading principal minor of $S$ required by the induction hypothesis is nonzero.
+
+
+::: pf-proof
+
 For $j=1,\ldots,n-2$, step <1>3 gives
 \[
 \det S_j
@@ -120,18 +146,30 @@ The numerator is nonzero by the hypothesis on $A$, and the denominator is nonzer
 \[
 \det S_j\ne0.
 \]
+
 :::
 
-<1>5. By induction, there exist an $(n-1)\times(n-1)$ lower triangular matrix $L_1$ and upper triangular matrix $U_1$ such that
+:::
+
+::: pf-step
+
+By induction, there exist an $(n-1)\times(n-1)$ lower triangular matrix $L_1$ and upper triangular matrix $U_1$ such that
 \[
 S=L_1U_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 verifies exactly the leading-principal-minor hypothesis for the matrix $S$ of size $n-1$. The induction hypothesis therefore applies.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 L=
 \begin{pmatrix}
@@ -149,16 +187,25 @@ a&r\\
 \]
 Then $L$ is lower triangular and $U$ is upper triangular.
 
-::: {.proof}
+
+::: pf-proof
+
 The block forms are triangular because $L_1$ is lower triangular and $U_1$ is upper triangular.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{A=LU}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the two block matrices from step <1>6:
 \[
 \begin{aligned}
@@ -198,11 +245,15 @@ c&D
 \end{pmatrix}
 =A.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 is the base case, and steps <1>2--<1>7 prove the induction step. Thus the factorization exists for every $n$ under the stated hypotheses.
+
 :::
+
 :::

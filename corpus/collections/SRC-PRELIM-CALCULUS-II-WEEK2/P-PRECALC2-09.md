@@ -15,7 +15,6 @@ review: draft
 Compute $\int _ { 0 } ^ { \infty } \frac { \log ( t ) } { 1 + t ^ { 2 } } d t .$
 :::
 
-::: {.solution}
 Let
 \[
 I
@@ -24,9 +23,15 @@ I
 \frac{\log t}{1+t^2}\,dt.
 \]
 
-<1>1. The improper integral is absolutely convergent.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The improper integral is absolutely convergent.
+
+
+::: pf-proof
+
 On \((0,1]\),
 \[
 0<
@@ -54,9 +59,14 @@ Integration by parts gives
 \int_1^\infty\frac{\log t}{t^2}\,dt<\infty.
 \]
 Thus the original integral converges absolutely.
+
 :::
 
-<1>2. Split the integral at \(1\):
+:::
+
+::: pf-step
+
+Split the integral at \(1\):
 \[
 I
 =
@@ -67,26 +77,40 @@ I
 \frac{\log t}{1+t^2}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Absolute convergence from step <1>1 justifies splitting the improper
 integral.
+
 :::
 
-<1>3. In the second integral, set
+:::
+
+::: pf-step
+
+In the second integral, set
 \[
 \boxed{t=\frac1u}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This substitution exchanges the intervals
 \[
 [1,\infty)
 \qquad\text{and}\qquad
 (0,1].
 \]
+
 :::
 
-<1>4. Then
+:::
+
+::: pf-step
+
+Then
 \[
 dt=-\frac{du}{u^2}
 \]
@@ -99,15 +123,22 @@ and
 \frac{1+u^2}{u^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 \[
 t=u^{-1}
 \]
 and simplify the denominator.
+
 :::
 
-<1>5. Also,
+:::
+
+::: pf-step
+
+Also,
 \[
 \log t
 =
@@ -116,15 +147,22 @@ and simplify the denominator.
 -\log u.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \log(u^{-1})=-\log u
 \]
 for \(u>0\).
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_1^\infty
 \frac{\log t}{1+t^2}\,dt
@@ -133,7 +171,9 @@ for \(u>0\).
 \frac{\log u}{1+u^2}\,du.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>4--<1>5,
 \[
 \begin{aligned}
@@ -151,9 +191,14 @@ Using steps <1>4--<1>5,
 \frac{\log u}{1+u^2}\,du.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Hence the two pieces cancel:
+:::
+
+::: pf-step
+
+Hence the two pieces cancel:
 \[
 \begin{aligned}
 I
@@ -168,12 +213,19 @@ I
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>6 into step <1>2 and rename the dummy variable \(u\) as
 \(t\).
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^\infty
@@ -182,13 +234,19 @@ Substitute step <1>6 into step <1>2 and rename the dummy variable \(u\) as
 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested value.
+
 :::
+
 :::

@@ -33,7 +33,6 @@ Equivalently, $\varphi ( m )$ is the cardinality of the set of natural numbers $
 $\varphi ( 1 ) = 1$ . If $p$ is a prime, then $\varphi ( p ^ { k } ) = p ^ { k - 1 } ( p - 1 ) { \mathrm { ~ i f ~ } } k > 0 .$
 :::
 
-::: {.solution}
 Write
 \[
 n=mp^k,
@@ -41,9 +40,15 @@ n=mp^k,
 \qquad p\nmid m.
 \]
 
-<1>1. If $k=0$, then $n=m$ and $\Phi_n=\Phi_m$ has as its roots exactly the primitive $m$-th roots of unity, each with multiplicity $1=\varphi(1)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $k=0$, then $n=m$ and $\Phi_n=\Phi_m$ has as its roots exactly the primitive $m$-th roots of unity, each with multiplicity $1=\varphi(1)$.
+
+
+::: pf-proof
+
 Because $p\nmid m$, the derivative of $X^m-1$ is
 \[
 mX^{m-1}\ne0,
@@ -53,52 +58,80 @@ so all $m$-th roots of unity are simple. The defining factorization
 X^m-1=\prod_{d\mid m}\Phi_d(X)
 \]
 then partitions them by exact order; hence the roots of $\Phi_m$ are precisely those of order $m$.
+
 :::
 
-<1>2. Assume $k>0$. In $\mathbb F_p[X]$ one has
+:::
+
+::: pf-step
+
+Assume $k>0$. In $\mathbb F_p[X]$ one has
 \[
 X^{mp^k}-1=(X^m-1)^{p^k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $p$, Frobenius gives
 \[
 (A-B)^{p^k}=A^{p^k}-B^{p^k}.
 \]
 Take $A=X^m$ and $B=1$.
+
 :::
 
-<1>3. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 \[
 X^{mp^{k-1}}-1=(X^m-1)^{p^{k-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the same Frobenius identity with exponent $p^{k-1}$.
+
 :::
 
-<1>4. Over $\mathbb Z[X]$, one has
+:::
+
+::: pf-step
+
+Over $\mathbb Z[X]$, one has
 \[
 \frac{X^{mp^k}-1}{X^{mp^{k-1}}-1}
 =\prod_{d\mid m}\Phi_{dp^k}(X).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cyclotomic factorization of the numerator contains $\Phi_e$ for every divisor $e$ of $mp^k$, while the denominator contains those for divisors of $mp^{k-1}$. The divisors occurring only in the numerator are exactly
 \[
 e=dp^k
 \]
 with $d\mid m$. Cancelling the common factors gives the identity.
+
 :::
 
-<1>5. Reducing step <1>4 modulo $p$ and using steps <1>2--<1>3 gives
+:::
+
+::: pf-step
+
+Reducing step <1>4 modulo $p$ and using steps <1>2--<1>3 gives
 \[
 \prod_{d\mid m}\Phi_{dp^k}(X)
 =(X^m-1)^{p^k-p^{k-1}}
 =(X^m-1)^{\varphi(p^k)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient of the two powers from steps <1>2--<1>3 is
 \[
 (X^m-1)^{p^k-p^{k-1}},
@@ -107,9 +140,14 @@ and for $k>0$,
 \[
 p^k-p^{k-1}=p^{k-1}(p-1)=\varphi(p^k).
 \]
+
 :::
 
-<1>6. Since
+:::
+
+::: pf-step
+
+Since
 \[
 X^m-1=\prod_{d\mid m}\Phi_d(X),
 \]
@@ -120,32 +158,60 @@ step <1>5 becomes
 \]
 in characteristic $p$.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the cyclotomic factorization of $X^m-1$ into the right side of step <1>5 and distribute the common exponent over the product.
+
 :::
 
-<1>7. For distinct divisors $d,e$ of $m$, the polynomials $\Phi_d$ and $\Phi_e$ have disjoint root sets in $F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For distinct divisors $d,e$ of $m$, the polynomials $\Phi_d$ and $\Phi_e$ have disjoint root sets in $F$.
+
+
+::: pf-proof
+
 Because $p\nmid m$, every $m$-th root of unity is simple. A root of $\Phi_d$ has exact order $d$, while a root of $\Phi_e$ has exact order $e$. A root cannot have two different exact orders.
+
 :::
 
-<1>8. The roots of $\Phi_{mp^k}$ are exactly the primitive $m$-th roots of unity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The roots of $\Phi_{mp^k}$ are exactly the primitive $m$-th roots of unity.
+
+
+::: pf-proof
+
 In step <1>6, the factor indexed by $d=m$ on the right has exactly the primitive $m$-th roots by step <1>1. By step <1>7 these roots occur in no factor indexed by a proper divisor $d<m$. Equality of the two products therefore forces them to occur in the corresponding left factor $\Phi_{mp^k}$ and nowhere else. Conversely, any root of $\Phi_{mp^k}$ contributes to the left product and hence, by step <1>6, is an $m$-th root of unity; its placement in the $d=m$ factor forces exact order $m$.
+
 :::
 
-<1>9. Each primitive $m$-th root occurs in $\Phi_{mp^k}$ with multiplicity
+:::
+
+::: pf-step
+
+Each primitive $m$-th root occurs in $\Phi_{mp^k}$ with multiplicity
 \[
 \varphi(p^k).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix a primitive $m$-th root $\zeta$. On the right side of step <1>6, it is a simple root of $\Phi_m$ by $p\nmid m$, hence has total multiplicity $\varphi(p^k)$. By step <1>7 it occurs in no other right-hand factor. By step <1>8 it occurs on the left only in $\Phi_{mp^k}$. Equality of the products therefore gives precisely that multiplicity in $\Phi_{mp^k}$.
+
 :::
 
-<1>10. Thus for every $k\ge0$, the roots in $F$ of
+:::
+
+::: pf-step
+
+Thus for every $k\ge0$, the roots in $F$ of
 \[
 \Phi_{n}(X)=\Phi_{mp^k}(X)
 \]
@@ -154,13 +220,19 @@ are precisely the primitive $m=n'$-th roots of unity, each occurring with multip
 \boxed{\varphi(p^k)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves the case $k=0$. Steps <1>8--<1>9 prove the assertion for $k>0$.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is exactly the required statement.
+
 :::
+
 :::

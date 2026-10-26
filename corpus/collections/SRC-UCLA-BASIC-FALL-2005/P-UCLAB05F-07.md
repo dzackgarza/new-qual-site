@@ -20,19 +20,24 @@ Let $A$ be a real $n\times m$ matrix.
 Prove that the maximum number of linearly independent rows of $A$ equals the maximum number of linearly independent columns of $A$.
 :::
 
-::: {.solution}
 Let
 \[
 T:\mathbb R^m\to\mathbb R^n
 \]
 be the linear map whose standard matrix is $A$.
 
-<1>1. The column rank of $A$ is
+::: pf
+
+::: pf-step
+
+The column rank of $A$ is
 \[
 \operatorname{rank}(T).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $A$ are
 \[
 T(e_1),\ldots,T(e_m),
@@ -41,14 +46,21 @@ where $e_1,\ldots,e_m$ is the standard basis of $\mathbb R^m$. Hence their span 
 \[
 \dim\operatorname{im}T=\operatorname{rank}(T).
 \]
+
 :::
 
-<1>2. The row rank of $A$ is
+:::
+
+::: pf-step
+
+The row rank of $A$ is
 \[
 \operatorname{rank}(T^t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The standard matrix of the transpose map
 \[
 T^t:(\mathbb R^n)^*\to(\mathbb R^m)^*
@@ -57,15 +69,22 @@ is $A^t$. The columns of $A^t$ are the rows of $A$. By step <1>1 applied to $T^t
 \[
 \operatorname{rank}(T^t).
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \ker(T^t)=(\operatorname{im}T)^0,
 \]
 the annihilator of $\operatorname{im}T$ in $(\mathbb R^n)^*$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varphi\in(\mathbb R^n)^*$. Then
 \[
 T^t\varphi=0
@@ -75,14 +94,21 @@ if and only if
 (T^t\varphi)(v)=\varphi(Tv)=0
 \]
 for every $v\in\mathbb R^m$. This holds exactly when $\varphi$ vanishes on every vector in $\operatorname{im}T$.
+
 :::
 
-<1>4. If $Y$ is a subspace of a finite-dimensional vector space $W$, then
+:::
+
+::: pf-step
+
+If $Y$ is a subspace of a finite-dimensional vector space $W$, then
 \[
 \dim Y^0=\dim W-\dim Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a basis
 \[
 y_1,\ldots,y_r
@@ -99,11 +125,18 @@ Thus
 \[
 \dim Y^0=s-r=\dim W-\dim Y.
 \]
+
 :::
 
-<1>5. The ranks of $T$ and $T^t$ are equal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ranks of $T$ and $T^t$ are equal.
+
+
+::: pf-proof
+
 By rank-nullity for
 \[
 T^t:(\mathbb R^n)^*\to(\mathbb R^m)^*,
@@ -122,17 +155,28 @@ n-(n-\dim\operatorname{im}T)\\
 \operatorname{rank}(T).
 \end{aligned}
 \]
+
 :::
 
-<1>6. The row rank of $A$ equals its column rank.
+:::
 
-::: {.proof}
+::: pf-step
+
+The row rank of $A$ equals its column rank.
+
+
+::: pf-proof
+
 By step <1>1, the column rank is $\operatorname{rank}(T)$. By step <1>2, the row rank is $\operatorname{rank}(T^t)$. These are equal by step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

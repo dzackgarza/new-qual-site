@@ -24,13 +24,18 @@ g:T\to S^1\vee S^1
 such that $f\circ g$ is the identity map on $T$.
 :::
 
-::: {.solution}
-<1>1. The second homology group of the wedge is
+::: pf
+
+::: pf-step
+
+The second homology group of the wedge is
 \[
 H_2(S^1\vee S^1;\mathbb Z)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space
 \[
 S^1\vee S^1
@@ -45,14 +50,21 @@ Therefore
 \[
 H_2(S^1\vee S^1;\mathbb Z)=0.
 \]
+
 :::
 
-<1>2. The second homology group of the torus is
+:::
+
+::: pf-step
+
+The second homology group of the torus is
 \[
 H_2(T;\mathbb Z)\cong\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard CW structure on the torus with one $0$-cell, two $1$-cells $a,b$, and one $2$-cell attached by the word
 \[
 aba^{-1}b^{-1}.
@@ -75,9 +87,14 @@ H_2(T;\mathbb Z)
 \cong
 \mathbb Z.
 \]
+
 :::
 
-<1>3. Suppose there were a continuous map
+:::
+
+::: pf-step
+
+Suppose there were a continuous map
 \[
 g:T\to S^1\vee S^1
 \]
@@ -92,7 +109,9 @@ f_*\circ g_*
 \operatorname{id}_{H_2(T;\mathbb Z)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Singular homology is functorial, so
 \[
 (f\circ g)_*
@@ -109,11 +128,18 @@ the left-hand side is
 =
 \operatorname{id}_{H_2(T;\mathbb Z)}.
 \]
+
 :::
 
-<1>4. The identity in step <1>3 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The identity in step <1>3 is impossible.
+
+
+::: pf-proof
+
 By step <1>1,
 \[
 H_2(S^1\vee S^1;\mathbb Z)=0.
@@ -135,17 +161,28 @@ But by step <1>2,
 H_2(T;\mathbb Z)\cong\mathbb Z\ne0,
 \]
 so its identity homomorphism is not the zero map. This contradicts step <1>3.
+
 :::
 
-<1>5. Therefore no such continuous map $g$ exists.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore no such continuous map $g$ exists.
+
+
+::: pf-proof
+
 The assumption that $g$ exists leads to the contradiction in step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is exactly the required conclusion.
+
 :::
+
 :::

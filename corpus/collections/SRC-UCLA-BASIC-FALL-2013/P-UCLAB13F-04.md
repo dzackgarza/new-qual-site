@@ -25,8 +25,11 @@ where $a,b\in\mathbb Q$ and $n\ge1$,
 Prove that $f(x,y)=0$ for all $(x,y)\in\mathbb R^2$.
 :::
 
-::: {.solution}
-<1>1. Suppose there exists a point
+::: pf
+
+::: pf-step
+
+Suppose there exists a point
 \[
 p=(x_0,y_0)
 \]
@@ -39,7 +42,9 @@ Then there is a nonempty open rectangle $U$ on which
 f>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By continuity of $f$ at $p$, choose $\delta>0$ such that
 \[
 |f(x,y)-f(p)|
@@ -58,9 +63,14 @@ Choose a nonempty open axis-parallel rectangle
 \[
 U\subseteq B(p,\delta).
 \]
+
 :::
 
-<1>2. Every nonempty open rectangle in $\mathbb R^2$ contains a square of the form
+:::
+
+::: pf-step
+
+Every nonempty open rectangle in $\mathbb R^2$ contains a square of the form
 \[
 S=
 \left\{
@@ -75,7 +85,9 @@ a,b\in\mathbb Q,
 n\in\mathbb N.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 U=(\alpha,\beta)\times(\gamma,\eta).
@@ -99,15 +111,22 @@ choose $n$ sufficiently large that
 \min\{\beta-a,\eta-b\}.
 \]
 Then the square with lower-left corner $(a,b)$ and side length $1/n$ lies in $U$.
+
 :::
 
-<1>3. The assumption
+:::
+
+::: pf-step
+
+The assumption
 \[
 f(p)>0
 \]
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 Take the square $S\subseteq U$ supplied by step <1>2.
 By step <1>1,
 \[
@@ -120,14 +139,21 @@ Since $f$ is continuous and $S$ has positive area,
 \]
 But $S$ is one of the squares covered by the hypothesis, so its integral must be $0$.
 This contradiction rules out $f(p)>0$.
+
 :::
 
-<1>4. There is no point $p$ with
+:::
+
+::: pf-step
+
+There is no point $p$ with
 \[
 f(p)<0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 f(p)<0,
@@ -138,22 +164,33 @@ Step <1>2 then gives an allowed rational square $S$ contained in that rectangle,
 \iint_S f(x,y)\,dx\,dy<0,
 \]
 again contradicting the hypothesis.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f(x,y)=0}
 \]
 for every $(x,y)\in\mathbb R^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 At each point, steps <1>3--<1>4 rule out both positive and negative values.
 The only remaining value is $0$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

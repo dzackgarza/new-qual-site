@@ -23,8 +23,11 @@ audit:
 Find $\sin^{100} 0.1$ with $10\%$ accuracy.
 :::
 
-::: {.solution}
-<1>1. The alternating Taylor series for sine gives
+::: pf
+
+::: pf-step
+
+The alternating Taylor series for sine gives
 $$
 0.1-\frac{0.1^3}{6}
 <
@@ -33,7 +36,9 @@ $$
 0.1-\frac{0.1^3}{6}+\frac{0.1^5}{120}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<x<1$, the sine series
 $$
 \sin x
@@ -43,9 +48,14 @@ $$
 is alternating with decreasing term magnitudes. Truncating after a negative
 term gives a lower bound and after the following positive term gives an upper
 bound.
+
 :::
 
-<1>2. Dividing by $0.1$ gives
+:::
+
+::: pf-step
+
+Dividing by $0.1$ gives
 $$
 1-\frac1{600}
 <
@@ -54,7 +64,9 @@ $$
 1-\frac1{600}+\frac1{1,200,000}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \frac{0.1^2}{6}=\frac1{600}
@@ -64,9 +76,14 @@ $$
 \frac{0.1^4}{120}=\frac1{1,200,000},
 $$
 the bounds follow from step <1>1.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 r=\frac{\sin0.1}{0.1}.
 $$
@@ -79,7 +96,9 @@ r^{100}
 e^{-0.166}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<u<1$,
 $$
 -\frac{u}{1-u}
@@ -115,9 +134,14 @@ $$
 -0.166.
 $$
 Exponentiating gives the result.
+
 :::
 
-<1>4. Numerically,
+:::
+
+::: pf-step
+
+Numerically,
 $$
 0.8462
 <
@@ -126,7 +150,9 @@ r^{100}
 0.8471.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The endpoint exponentials in step <1>3 satisfy
 $$
 e^{-0.167}>0.8462
@@ -135,9 +161,14 @@ and
 $$
 e^{-0.166}<0.8471.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \sin^{100}0.1
 =
@@ -152,7 +183,9 @@ $$
 8.471\times10^{-101}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \sin0.1=0.1r,
@@ -166,21 +199,32 @@ $$
 10^{-100}r^{100}.
 $$
 Apply step <1>4.
+
 :::
 
-<1>6. Thus a convenient answer with much better than $10\%$ accuracy is
+:::
+
+::: pf-step
+
+Thus a convenient answer with much better than $10\%$ accuracy is
 $$
 \boxed{\sin^{100}0.1\approx8.47\times10^{-101}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The interval in step <1>5 has relative width far below $10\%$, and the stated
 approximation lies inside that interval.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the requested approximation.
+
 :::
+
 :::

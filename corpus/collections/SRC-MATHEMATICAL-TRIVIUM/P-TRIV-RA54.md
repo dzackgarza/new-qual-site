@@ -19,7 +19,6 @@ audit:
 Compute the sum $\sum _ { n = 1 } ^ { \infty } { \frac { x ^ { n - 1 } } { n ( n + 1 ) } }$ for all possible values of x.
 :::
 
-::: {.solution}
 Define
 $$
 S(x)
@@ -28,12 +27,18 @@ S(x)
 \frac{x^{n-1}}{n(n+1)}.
 $$
 
-<1>1. The series converges absolutely for
+::: pf
+
+::: pf-step
+
+The series converges absolutely for
 $$
 |x|\leq1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $|x|\leq1$, then
 $$
 \left|
@@ -49,43 +54,69 @@ $$
 \frac1n-\frac1{n+1}
 $$
 telescopes.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 |x|>1,
 $$
 the series diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 The term magnitudes are
 $$
 \frac{|x|^{n-1}}{n(n+1)}.
 $$
 Exponential growth dominates the quadratic denominator, so these terms do not tend to $0$.
+
 :::
 
-<1>3. Therefore the complete convergence set is
+:::
+
+::: pf-step
+
+Therefore the complete convergence set is
 $$
 \boxed{|x|\leq1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1--<1>2.
+
 :::
 
-<1>4. For every $n\geq1$,
+:::
+
+::: pf-step
+
+For every $n\geq1$,
 $$
 \frac1{n(n+1)}
 =
 \frac1n-\frac1{n+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the two fractions on the right over the common denominator $n(n+1)$.
+
 :::
 
-<1>5. For $|x|<1$ and $x\neq0$,
+:::
+
+::: pf-step
+
+For $|x|<1$ and $x\neq0$,
 $$
 S(x)
 =
@@ -96,12 +127,19 @@ S(x)
 \frac{x^{n-1}}{n+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>4 term by term.
 Absolute convergence permits splitting the series.
+
 :::
 
-<1>6. The first sum in step <1>5 is
+:::
+
+::: pf-step
+
+The first sum in step <1>5 is
 $$
 \sum_{n=1}^{\infty}
 \frac{x^{n-1}}n
@@ -109,7 +147,9 @@ $$
 -\frac{\log(1-x)}x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $|x|<1$,
 $$
 -\log(1-x)
@@ -117,9 +157,14 @@ $$
 \sum_{n=1}^{\infty}\frac{x^n}{n}.
 $$
 Divide by $x$.
+
 :::
 
-<1>7. The second sum in step <1>5 is
+:::
+
+::: pf-step
+
+The second sum in step <1>5 is
 $$
 \sum_{n=1}^{\infty}
 \frac{x^{n-1}}{n+1}
@@ -127,7 +172,9 @@ $$
 \frac{-\log(1-x)-x}{x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set $m=n+1$:
 $$
 \sum_{n=1}^{\infty}
@@ -143,9 +190,14 @@ $$
 =
 -\log(1-x)-x.
 $$
+
 :::
 
-<1>8. Therefore, for $|x|<1$ and $x\neq0$,
+:::
+
+::: pf-step
+
+Therefore, for $|x|<1$ and $x\neq0$,
 $$
 \boxed{
 S(x)
@@ -154,30 +206,46 @@ S(x)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>6--<1>7 into step <1>5 and combine over the denominator $x^2$.
+
 :::
 
-<1>9. At $x=0$,
+:::
+
+::: pf-step
+
+At $x=0$,
 $$
 \boxed{S(0)=\frac12}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In the original series, every term with $n\geq2$ contains a positive power of $x$ and vanishes at $x=0$.
 The $n=1$ term is
 $$
 \frac1{1\cdot2}.
 $$
 The formula in step <1>8 has the same removable limit.
+
 :::
 
-<1>10. At $x=1$,
+:::
+
+::: pf-step
+
+At $x=1$,
 $$
 \boxed{S(1)=1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The series becomes
 $$
 \sum_{n=1}^{\infty}
@@ -189,25 +257,36 @@ $$
 \right),
 $$
 which telescopes to $1$.
+
 :::
 
-<1>11. At $x=-1$,
+:::
+
+::: pf-step
+
+At $x=-1$,
 $$
 \boxed{S(-1)=2\log2-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because the series converges absolutely at $x=-1$, its value equals the continuous boundary limit of the power-series expression in step <1>8. Thus
 $$
 S(-1)
 =
 -1+2\log2.
 $$
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the full convergence set, and steps <1>8--<1>11 give the sum at every point of that set.
+
 :::
+
 :::

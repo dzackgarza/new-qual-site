@@ -27,14 +27,17 @@ Prove that $B$ is a free $A$-module with basis (as the image in $B$) of the mono
 Prove this for $n = 3$.
 :::
 
-::: {.solution}
 Write
 $$
 f_0(T)=f(T)=T^n-a_1T^{n-1}+\cdots+(-1)^n a_n.
 $$
 We construct a tower of $A$-algebras by adjoining the roots one at a time.
 
-<1>1. Define recursively
+::: pf
+
+::: pf-step
+
+Define recursively
 $$
 R_0=A,
 $$
@@ -52,7 +55,9 @@ f(T)=\prod_{j=1}^i(T-x_j)f_i(T)
 $$
 in $R_i[T]$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $i=1$, the class $x_1\in R_1$ satisfies $f_0(x_1)=0$. Since $T-x_1$ is monic, polynomial division in $R_1[T]$ gives
 $$
 f_0(T)=(T-x_1)q(T)+r
@@ -63,14 +68,21 @@ The same argument applies inductively. In $R_i$, the element $x_i$ is a root of 
 $$
 f(T)=\prod_{j=1}^i(T-x_j)f_i(T).
 $$
+
 :::
 
-<1>2. For each $1\leq i\leq n$, the algebra $R_i$ is free as an $R_{i-1}$-module with basis
+:::
+
+::: pf-step
+
+For each $1\leq i\leq n$, the algebra $R_i$ is free as an $R_{i-1}$-module with basis
 $$
 1,x_i,x_i^2,\ldots,x_i^{n-i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial $f_{i-1}(T)$ is monic of degree $n-i+1$. For any commutative ring $R$ and monic polynomial $h(T)$ of degree $d$, every polynomial admits a unique division
 $$
 q(T)h(T)+r(T),
@@ -82,15 +94,22 @@ $$
 1,T,\ldots,T^{d-1}.
 $$
 Applying this with $R=R_{i-1}$, $h=f_{i-1}$, and $d=n-i+1$ gives the asserted basis.
+
 :::
 
-<1>3. The algebra $R_n$ is free as an $A$-module with basis
+:::
+
+::: pf-step
+
+The algebra $R_n$ is free as an $A$-module with basis
 $$
 \boxed{x_1^{m_1}x_2^{m_2}\cdots x_n^{m_n}
 : 0\leq m_i\leq n-i}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>2 successively through the tower
 $$
 A=R_0\subseteq R_1\subseteq\cdots\subseteq R_n.
@@ -104,9 +123,14 @@ $$
 x_1^{m_1}\cdots x_n^{m_n}
 $$
 with $0\leq m_i\leq n-i$, equivalently $m_i+i\leq n$.
+
 :::
 
-<1>4. In $R_n[T]$ one has
+:::
+
+::: pf-step
+
+In $R_n[T]$ one has
 $$
 f(T)=\prod_{i=1}^n(T-x_i).
 $$
@@ -116,7 +140,9 @@ s_i(x_1,\ldots,x_n)=a_i
 $$
 for $1\leq i\leq n$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 with $i=n$ gives
 $$
 f(T)=\prod_{j=1}^n(T-x_j)f_n(T).
@@ -130,15 +156,22 @@ $$
 f(T)=T^n-a_1T^{n-1}+\cdots+(-1)^na_n
 $$
 gives $s_i(x_1,\ldots,x_n)=a_i$ for every $i$.
+
 :::
 
-<1>5. There is an $A$-algebra homomorphism
+:::
+
+::: pf-step
+
+There is an $A$-algebra homomorphism
 $$
 \Phi:B\longrightarrow R_n
 $$
 sending the class of $X_i$ to $x_i$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, the elements $x_1,\ldots,x_n$ satisfy all relations
 $$
 s_i-a_i=0
@@ -150,15 +183,22 @@ A[X_1,\ldots,X_n]\longrightarrow R_n,
 X_i\longmapsto x_i,
 $$
 annihilates the ideal $(s_1-a_1,\ldots,s_n-a_n)$ and therefore factors through $B$.
+
 :::
 
-<1>6. There is an $A$-algebra homomorphism
+:::
+
+::: pf-step
+
+There is an $A$-algebra homomorphism
 $$
 \Psi:R_n\longrightarrow B
 $$
 sending $x_i$ to the class of $X_i$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\overline X_i$ denote the class of $X_i$ in $B$. By the defining relations of $B$,
 $$
 \prod_{i=1}^n(T-\overline X_i)
@@ -182,11 +222,18 @@ $$
 \Psi:R_n\to B
 $$
 with $\Psi(x_i)=\overline X_i$ for all $i$.
+
 :::
 
-<1>7. The homomorphisms $\Phi$ and $\Psi$ are inverse isomorphisms.
+:::
 
-::: {.proof}
+::: pf-step
+
+The homomorphisms $\Phi$ and $\Psi$ are inverse isomorphisms.
+
+
+::: pf-proof
+
 The algebra $B$ is generated over $A$ by the classes $\overline X_1,\ldots,\overline X_n$, and
 $$
 (\Psi\circ\Phi)(\overline X_i)=\overline X_i
@@ -198,24 +245,38 @@ $$
 (\Phi\circ\Psi)(x_i)=x_i
 $$
 for each $i$. Hence $\Phi\circ\Psi=\operatorname{id}_{R_n}$.
+
 :::
 
-<1>8. Therefore $B$ is a free $A$-module with basis
+:::
+
+::: pf-step
+
+Therefore $B$ is a free $A$-module with basis
 $$
 \boxed{X_1^{m_1}X_2^{m_2}\cdots X_n^{m_n}
 : m_i\geq0,\ m_i+i\leq n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7, $B\cong R_n$ via an isomorphism carrying the class of $X_i$ to $x_i$. The basis of step <1>3 therefore transports to the displayed basis of $B$.
+
 :::
 
-<1>9. For $n=3$, a basis is
+:::
+
+::: pf-step
+
+For $n=3$, a basis is
 $$
 \boxed{1,\ X_1,\ X_1^2,\ X_2,\ X_1X_2,\ X_1^2X_2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $n=3$, the inequalities $m_i+i\leq3$ give
 $$
 0\leq m_1\leq2,
@@ -239,11 +300,15 @@ $$
 q(T)=T^2+(x_1-a_1)T+(x_1^2-a_1x_1+a_2).
 $$
 The first extension has basis $1,x_1,x_1^2$ and the second has basis $1,x_2$, giving the same six $A$-basis elements.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves the general statement, and step <1>9 gives the requested case $n=3$ explicitly.
+
 :::
+
 :::

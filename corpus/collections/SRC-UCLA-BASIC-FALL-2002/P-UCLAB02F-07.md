@@ -31,7 +31,6 @@ where $(\operatorname{im}T)^0$ is the annihilator of the image of $T$.
 \]
 :::
 
-::: {.solution}
 Define
 \[
 T^t:W^*\to V^*
@@ -41,12 +40,18 @@ by
 T^t(\varphi)=\varphi\circ T.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 (\operatorname{im}T)^0\subseteq\ker(T^t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varphi\in(\operatorname{im}T)^0$. For every $v\in V$,
 \[
 (T^t\varphi)(v)
@@ -54,14 +59,21 @@ Let $\varphi\in(\operatorname{im}T)^0$. For every $v\in V$,
 \varphi(Tv).
 \]
 Since $Tv\in\operatorname{im}T$ and $\varphi$ vanishes on $\operatorname{im}T$, this is $0$. Hence $T^t\varphi=0$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \ker(T^t)\subseteq(\operatorname{im}T)^0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varphi\in\ker(T^t)$. If $w\in\operatorname{im}T$, then $w=Tv$ for some $v\in V$, and
 \[
 \varphi(w)
@@ -72,23 +84,37 @@ Let $\varphi\in\ker(T^t)$. If $w\in\operatorname{im}T$, then $w=Tv$ for some $v\
 =0.
 \]
 Thus $\varphi$ vanishes on $\operatorname{im}T$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{(\operatorname{im}T)^0=\ker(T^t)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 prove the two inclusions.
+
 :::
 
-<1>4. For every subspace $Y\subseteq W$,
+:::
+
+::: pf-step
+
+For every subspace $Y\subseteq W$,
 \[
 \dim Y^0=\dim W-\dim Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $y_1,\ldots,y_r$ be a basis of $Y$ and extend it to a basis
 \[
 y_1,\ldots,y_r,w_{r+1},\ldots,w_m
@@ -101,14 +127,21 @@ Hence
 \[
 \dim Y^0=m-r=\dim W-\dim Y.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \operatorname{rank}(T^t)=\operatorname{rank}(T).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By rank-nullity for $T^t:W^*\to V^*$,
 \[
 \operatorname{rank}(T^t)
@@ -135,11 +168,15 @@ Therefore
 =
 \operatorname{rank}(T).
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (i), and step <1>5 proves part (ii).
+
 :::
+
 :::

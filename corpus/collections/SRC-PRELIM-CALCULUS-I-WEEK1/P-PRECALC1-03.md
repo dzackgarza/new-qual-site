@@ -15,22 +15,32 @@ review: draft
 Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { \cos ( \beta x ) - 1 } { x ^ { 2 } } }$ for $\beta \in \mathbb { R }$
 :::
 
-::: {.solution}
-<1>1. Use the identity
+::: pf
+
+::: pf-step
+
+Use the identity
 \[
 \boxed{
 \cos u-1=-2\sin^2\frac u2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 \cos u=1-2\sin^2\frac u2,
 \]
 subtract \(1\).
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \frac{\cos(\beta x)-1}{x^2}
 =
@@ -42,14 +52,21 @@ x^2
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 with
 \[
 u=\beta x.
 \]
+
 :::
 
-<1>3. Rewrite the quotient as
+:::
+
+::: pf-step
+
+Rewrite the quotient as
 \[
 \boxed{
 \frac{\cos(\beta x)-1}{x^2}
@@ -65,7 +82,9 @@ u=\beta x.
 \]
 when \(\beta x\ne0\).
 
-::: {.proof}
+
+::: pf-proof
+
 Factor
 \[
 \sin^2(\beta x/2)
@@ -87,19 +106,31 @@ Then
 =
 -\frac{\beta^2}{2}.
 \]
+
 :::
 
-<1>4. The standard limit gives
+:::
+
+::: pf-step
+
+The standard limit gives
 \[
 \boxed{
 \lim_{y\to0}\frac{\sin y}{y}=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the basic trigonometric limit.
+
 :::
 
-<1>5. If \(\beta\ne0\), then as \(x\to0\),
+:::
+
+::: pf-step
+
+If \(\beta\ne0\), then as \(x\to0\),
 \[
 \frac{
 \sin(\beta x/2)
@@ -109,15 +140,22 @@ This is the basic trigonometric limit.
 \longrightarrow1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 y=\frac{\beta x}{2}.
 \]
 Then \(y\to0\), so apply step <1>4.
+
 :::
 
-<1>6. Hence for \(\beta\ne0\),
+:::
+
+::: pf-step
+
+Hence for \(\beta\ne0\),
 \[
 \boxed{
 \lim_{x\to0}
@@ -126,17 +164,26 @@ Then \(y\to0\), so apply step <1>4.
 -\frac{\beta^2}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take limits in step <1>3 and use step <1>5.
+
 :::
 
-<1>7. If \(\beta=0\), the quotient is identically \(0\), and the same
+:::
+
+::: pf-step
+
+If \(\beta=0\), the quotient is identically \(0\), and the same
 formula gives
 \[
 -\frac{\beta^2}{2}=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When \(\beta=0\),
 \[
 \cos(\beta x)-1
@@ -145,9 +192,14 @@ When \(\beta=0\),
 =
 0.
 \]
+
 :::
 
-<1>8. Therefore for every \(\beta\in\mathbb R\),
+:::
+
+::: pf-step
+
+Therefore for every \(\beta\in\mathbb R\),
 \[
 \boxed{
 \lim_{x\to0}
@@ -156,13 +208,19 @@ When \(\beta=0\),
 -\frac{\beta^2}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested limit.
+
 :::
+
 :::

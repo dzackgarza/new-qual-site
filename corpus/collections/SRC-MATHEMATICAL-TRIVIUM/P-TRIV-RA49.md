@@ -33,16 +33,21 @@ $$
 For an ordinary absolutely convergent Fourier integral, assume $\mu>0$.
 :::
 
-::: {.solution}
 Put
 $$
 k=|\vec k|.
 $$
 
-<1>1. Because $f$ is radial, rotate coordinates so that $\vec k$ points
+::: pf
+
+::: pf-step
+
+Because $f$ is radial, rotate coordinates so that $\vec k$ points
 along the polar axis.
 
-::: {.proof}
+
+::: pf-proof
+
 The integration measure and the radial function $f(\vec r)$ are rotation
 invariant, so an orthogonal change of coordinates does not change the value of
 the integral. In the rotated coordinates,
@@ -51,9 +56,14 @@ $$
 =
 kr\cos\theta.
 $$
+
 :::
 
-<1>2. In spherical coordinates,
+:::
+
+::: pf-step
+
+In spherical coordinates,
 $$
 \widetilde f(\vec k)
 =
@@ -68,7 +78,9 @@ e^{-ikr\cos\theta}
 \,d\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The volume element is
 $$
 d^3r
@@ -80,9 +92,14 @@ $$
 f(r)=\alpha\frac{e^{-\mu r}}r
 $$
 leaves the radial factor $\alpha e^{-\mu r}r$.
+
 :::
 
-<1>3. The polar-angle integral is
+:::
+
+::: pf-step
+
+The polar-angle integral is
 $$
 \int_0^\pi
 e^{-ikr\cos\theta}
@@ -92,7 +109,9 @@ e^{-ikr\cos\theta}
 \frac{2\sin(kr)}{kr}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u=\cos\theta,
@@ -112,9 +131,14 @@ e^{-ikr\cos\theta}\sin\theta\,d\theta
 \frac{2\sin(kr)}{kr}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Therefore, for $k>0$,
+:::
+
+::: pf-step
+
+Therefore, for $k>0$,
 $$
 \widetilde f(\vec k)
 =
@@ -124,12 +148,19 @@ e^{-\mu r}\sin(kr)
 \,dr.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $\varphi$-integral gives $2\pi$. Substitute step <1>3 into step <1>2;
 the factor $r$ cancels with the $r$ in $kr$.
+
 :::
 
-<1>5. The remaining integral is
+:::
+
+::: pf-step
+
+The remaining integral is
 $$
 \int_0^\infty
 e^{-\mu r}\sin(kr)
@@ -138,7 +169,9 @@ e^{-\mu r}\sin(kr)
 \frac{k}{\mu^2+k^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the imaginary part of
 $$
 \int_0^\infty
@@ -150,9 +183,14 @@ e^{-(\mu-ik)r}
 \frac{\mu+ik}{\mu^2+k^2},
 $$
 which is valid because $\mu>0$.
+
 :::
 
-<1>6. Hence, for $k>0$,
+:::
+
+::: pf-step
+
+Hence, for $k>0$,
 $$
 \widetilde f(\vec k)
 =
@@ -160,11 +198,18 @@ $$
 \frac1{\mu^2+k^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>5 into step <1>4 and cancel the factor $k$.
+
 :::
 
-<1>7. Simplifying the normalization gives
+:::
+
+::: pf-step
+
+Simplifying the normalization gives
 $$
 \boxed{
 \widetilde f(\vec k)
@@ -174,7 +219,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 (2\pi)^3=8\pi^3,
@@ -185,11 +232,18 @@ $$
 =
 \frac1{2\pi^2}.
 $$
+
 :::
 
-<1>8. The same formula holds at $k=0$ by continuity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The same formula holds at $k=0$ by continuity.
+
+
+::: pf-proof
+
 The right-hand side tends to
 $$
 \frac{\alpha}{2\pi^2\mu^2}
@@ -204,11 +258,15 @@ $$
 \frac{4\pi\alpha}{(2\pi)^3\mu^2},
 $$
 which is the same value.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7--<1>8 give the Fourier image for all $\vec k\in\mathbb R^3$.
+
 :::
+
 :::

@@ -24,12 +24,17 @@ Prove that $C[0,1]$, the space of continuous functions from $[0,1]$ to $\mathbb 
 You may use without proof that a uniform limit of continuous functions is continuous.
 :::
 
-::: {.solution}
 Let $(f_n)$ be a Cauchy sequence in $C[0,1]$ with respect to the supremum norm.
 
-<1>1. For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy.
+
+
+::: pf-proof
+
 Let $\varepsilon>0$. Since $(f_n)$ is Cauchy in the supremum norm, there is $N$ such that
 \[
 \|f_n-f_m\|_\infty<\varepsilon
@@ -43,21 +48,35 @@ whenever $m,n\ge N$. Hence for every $x\in[0,1]$,
 \varepsilon.
 \]
 Thus $(f_n(x))$ is Cauchy in $\mathbb R$.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 f(x)=\lim_{n\to\infty}f_n(x)
 \]
 for each $x\in[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and completeness of $\mathbb R$, the displayed limit exists for every $x\in[0,1]$.
+
 :::
 
-<1>3. The convergence $f_n\to f$ is uniform on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The convergence $f_n\to f$ is uniform on $[0,1]$.
+
+
+::: pf-proof
+
 Let $\varepsilon>0$. Choose $N$ such that
 \[
 \|f_n-f_m\|_\infty<\frac{\varepsilon}{2}
@@ -79,11 +98,18 @@ This bound is independent of $x$, so
 \|f_n-f\|_\infty<\varepsilon
 \]
 for every $n\ge N$.
+
 :::
 
-<1>4. The function $f$ is continuous on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is continuous on $[0,1]$.
+
+
+::: pf-proof
+
 Fix $x_0\in[0,1]$ and $\varepsilon>0$. By step <1>3, choose $N$ such that
 \[
 \|f-f_N\|_\infty<\frac{\varepsilon}{3}.
@@ -107,11 +133,18 @@ Then
 \end{aligned}
 \]
 Thus $f$ is continuous at every $x_0\in[0,1]$.
+
 :::
 
-<1>5. The Cauchy sequence $(f_n)$ converges in $C[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Cauchy sequence $(f_n)$ converges in $C[0,1]$.
+
+
+::: pf-proof
+
 By step <1>4,
 \[
 f\in C[0,1].
@@ -121,20 +154,31 @@ By step <1>3,
 \|f_n-f\|_\infty\to0.
 \]
 Thus $(f_n)$ converges to an element of the metric space $C[0,1]$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{C[0,1]\text{ is complete for }\|\cdot\|_\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Cauchy sequence $(f_n)$ was arbitrary, and step <1>5 proves that every such sequence converges in $C[0,1]$. The argument in step <1>4 also proves the uniform-limit theorem directly, so it covers the stricter Fall 2003 appearance of this problem as well.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required completeness statement.
+
 :::
+
 :::

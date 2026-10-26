@@ -20,14 +20,19 @@ audit:
 Suppose $G$ is a group and $x \in G$ is only element in $G$ of order $2$. Show that $xa = ax$ for all $a \in G$.
 :::
 
-::: {.solution}
-<1>1. For every $a\in G$, the conjugate
+::: pf
+
+::: pf-step
+
+For every $a\in G$, the conjugate
 \[
 axa^{-1}
 \]
 has order $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x$ has order $2$,
 \[
 x^2=e.
@@ -42,24 +47,38 @@ Therefore
 Also $axa^{-1}\ne e$, because otherwise conjugating by $a^{-1}$ would give
 $x=e$, contradicting that $x$ has order $2$. Hence $axa^{-1}$ has order
 exactly $2$.
+
 :::
 
-<1>2. For every $a\in G$,
+:::
+
+::: pf-step
+
+For every $a\in G$,
 \[
 axa^{-1}=x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $axa^{-1}$ is an element of order $2$. By hypothesis, $x$ is
 the unique element of $G$ of order $2$. Hence the two elements are equal.
+
 :::
 
-<1>3. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{xa=ax\qquad(a\in G)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>2,
 \[
 axa^{-1}=x.
@@ -69,11 +88,15 @@ Multiplying on the right by $a$ gives
 ax=xa,
 \]
 equivalently $xa=ax$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves that $x$ commutes with every element of $G$.
+
 :::
+
 :::

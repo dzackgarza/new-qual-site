@@ -19,13 +19,16 @@ audit:
 $\mathrm { C a l c u l a t e } \int e ^ { 2 x } \sin { x } d x .$
 :::
 
-::: {.solution}
 Let
 $$
 I=\int e^{2x}\sin x\,dx.
 $$
 
-<1>1. Integration by parts gives
+::: pf
+
+::: pf-step
+
+Integration by parts gives
 $$
 I
 =
@@ -34,11 +37,18 @@ I
 \frac12\int e^{2x}\cos x\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take $u=\sin x$ and $dv=e^{2x}\,dx$.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 $$
 J=\int e^{2x}\cos x\,dx,
 $$
@@ -51,11 +61,18 @@ J
 \frac12I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate $J$ by parts with $u=\cos x$ and $dv=e^{2x}\,dx$.
+
 :::
 
-<1>3. Substituting step <1>2 into step <1>1 gives
+:::
+
+::: pf-step
+
+Substituting step <1>2 into step <1>1 gives
 $$
 I
 =
@@ -66,11 +83,18 @@ I
 \frac14I.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Replace the cosine integral in step <1>1 by $J$ from step <1>2.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \int e^{2x}\sin x\,dx
@@ -82,7 +106,9 @@ C.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Move $-I/4$ in step <1>3 to the left:
 $$
 \frac54I
@@ -100,11 +126,15 @@ I
 +
 C.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required antiderivative.
+
 :::
+
 :::

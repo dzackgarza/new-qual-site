@@ -19,14 +19,17 @@ audit:
 Find $\int _ { 0 } ^ { \infty } e ^ { - x ^ { 2 } } d x .$
 :::
 
-::: {.solution}
 Let
 $$
 I=
 \int_0^\infty e^{-x^2}\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 I^2
 =
@@ -36,7 +39,9 @@ e^{-(x^2+y^2)}
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both one-dimensional integrals converge and the integrand is nonnegative, so
 Tonelli's theorem gives
 $$
@@ -54,9 +59,14 @@ I^2
 e^{-(x^2+y^2)}
 \,dx\,dy.
 $$
+
 :::
 
-<1>2. Passing to polar coordinates in the first quadrant gives
+:::
+
+::: pf-step
+
+Passing to polar coordinates in the first quadrant gives
 $$
 I^2
 =
@@ -66,7 +76,9 @@ e^{-r^2}r
 \,dr\,d\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 x=r\cos\theta,
@@ -80,16 +92,23 @@ r\geq0,
 0\leq\theta\leq\frac\pi2.
 $$
 The Jacobian is $r$.
+
 :::
 
-<1>3. The radial integral equals
+:::
+
+::: pf-step
+
+The radial integral equals
 $$
 \int_0^\infty e^{-r^2}r\,dr
 =
 \frac12.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u=r^2,
@@ -105,9 +124,14 @@ $$
 =
 \frac12.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 I^2
 =
@@ -116,25 +140,38 @@ I^2
 \frac\pi4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2 and integrate $d\theta$ from $0$ to
 $\pi/2$.
+
 :::
 
-<1>5. Since $I>0$,
+:::
+
+::: pf-step
+
+Since $I>0$,
 $$
 \boxed{
 I=\frac{\sqrt\pi}{2}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the positive square root of step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required value.
+
 :::
+
 :::

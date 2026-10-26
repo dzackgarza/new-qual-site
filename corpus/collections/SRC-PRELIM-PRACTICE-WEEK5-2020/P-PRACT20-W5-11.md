@@ -20,14 +20,19 @@ audit:
 Let $G$ be a group and $H \subset G$ be a subgroup. $H$ is said to be a normal subgroup of $G$ if $ghg^{-1} \in H$ whenever $h \in H$ and $g \in G$. If $\phi : G \to G'$ is a homomorphism (where $G'$ is some other arbitrary group), show that $\ker \phi$ is a normal subgroup of $G$.
 :::
 
-::: {.solution}
-<1>1. The set
+::: pf
+
+::: pf-step
+
+The set
 \[
 \ker\phi=\{x\in G:\phi(x)=e_{G'}\}
 \]
 is a subgroup of $G$.
 
-::: {.proof}
+
+::: pf-proof
+
 The identity belongs to the kernel because
 \[
 \phi(e_G)=e_{G'}.
@@ -43,14 +48,21 @@ Thus $xy^{-1}\in\ker\phi$. By the subgroup test,
 \[
 \ker\phi\le G.
 \]
+
 :::
 
-<1>2. For every $h\in\ker\phi$ and every $g\in G$,
+:::
+
+::: pf-step
+
+For every $h\in\ker\phi$ and every $g\in G$,
 \[
 ghg^{-1}\in\ker\phi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $h\in\ker\phi$,
 \[
 \phi(h)=e_{G'}.
@@ -65,21 +77,32 @@ Therefore
 \end{aligned}
 \]
 Hence $ghg^{-1}$ belongs to the kernel.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\ker\phi\trianglelefteq G}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 shows that the kernel is a subgroup, and step <1>2 verifies the
 defining conjugation condition for normality.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

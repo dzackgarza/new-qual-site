@@ -20,8 +20,11 @@ audit:
 Using the substitution $z = e^{ix}$ (or otherwise), evaluate $\int_0^{2\pi} \frac{dx}{10 - 8\cos(x)}$.
 :::
 
-::: {.solution}
-<1>1. Under the substitution
+::: pf
+
+::: pf-step
+
+Under the substitution
 \[
 z=e^{ix},
 \]
@@ -32,16 +35,23 @@ dx=\frac{dz}{iz}
 \cos x=\frac12\left(z+\frac1z\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $z=e^{ix}$ to obtain $dz=iz\,dx$. Also
 \[
 e^{ix}+e^{-ix}=2\cos x.
 \]
 As $x$ runs from $0$ to $2\pi$, $z$ traverses the unit circle once
 counterclockwise.
+
 :::
 
-<1>2. The real integral becomes
+:::
+
+::: pf-step
+
+The real integral becomes
 \[
 \int_0^{2\pi}\frac{dx}{10-8\cos x}
 =
@@ -49,7 +59,9 @@ counterclockwise.
 \frac{i\,dz}{2(2z-1)(z-2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 10-8\cos x
@@ -70,9 +82,14 @@ Since
 =-2(2z-1)(z-2),
 \]
 and $1/(-2i)=i/2$, the displayed contour integral follows.
+
 :::
 
-<1>3. The only pole inside the unit circle is
+:::
+
+::: pf-step
+
+The only pole inside the unit circle is
 \[
 z=\frac12,
 \]
@@ -81,7 +98,9 @@ and its residue is
 -\frac{i}{6}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The poles are $1/2$ and $2$, so only $1/2$ lies inside $|z|=1$. For
 \[
 F(z)=\frac{i}{2(2z-1)(z-2)},
@@ -99,16 +118,23 @@ one has
 -\frac{i}{6}.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^{2\pi}\frac{dx}{10-8\cos x}
 =\frac{\pi}{3}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the residue theorem and step <1>3,
 \[
 \oint_{|z|=1}F(z)\,dz
@@ -117,11 +143,15 @@ By the residue theorem and step <1>3,
 =
 \frac{\pi}{3}.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the requested value.
+
 :::
+
 :::

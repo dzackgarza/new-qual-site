@@ -20,10 +20,13 @@ Let $T:V\to W$ be a linear transformation between finite-dimensional vector spac
 Compute, with proof, \[\dim(\operatorname{Null}T)+\dim(\operatorname{Range}T)\] and \[\dim(\operatorname{Null}T^*)+\dim(\operatorname{Range}T)\] in terms of $\dim V$ and $\dim W$, where $T^*$ is the adjoint of $T$.
 :::
 
-::: {.solution}
 The use of the adjoint implicitly equips $V$ and $W$ with inner products.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \dim(\operatorname{Null}T)
@@ -34,21 +37,30 @@ The use of the adjoint implicitly equips $V$ and $W$ with inner products.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the rank-nullity theorem for the linear map
 \[
 T:V\to W.
 \]
+
 :::
 
-<1>2. The orthogonal complement of $\operatorname{Range}T$ is
+:::
+
+::: pf-step
+
+The orthogonal complement of $\operatorname{Range}T$ is
 \[
 (\operatorname{Range}T)^\perp
 =
 \operatorname{Null}T^*.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $w\in W$. Then
 \[
 w\in(\operatorname{Range}T)^\perp
@@ -68,16 +80,23 @@ Thus the displayed vanishing holds for all $v\in V$ if and only if
 T^*w=0.
 \]
 Hence the two subspaces are equal.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \dim(\operatorname{Null}T^*)
 =
 \dim W-\dim(\operatorname{Range}T).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \operatorname{Null}T^*
@@ -92,9 +111,14 @@ Apply this to
 \[
 Y=\operatorname{Range}T.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \dim(\operatorname{Null}T^*)
@@ -105,13 +129,19 @@ Y=\operatorname{Range}T.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Add $\dim(\operatorname{Range}T)$ to both sides of the equality in step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the first requested quantity, and step <1>4 gives the second.
+
 :::
+
 :::

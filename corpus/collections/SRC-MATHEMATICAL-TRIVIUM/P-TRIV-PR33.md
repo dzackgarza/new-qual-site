@@ -48,25 +48,35 @@ x = 0 , 1 2 3 4 5 6 7 8 9 1 0 1 1 1 2 1 3 . . .\tag{58}
 $$
 :::
 
-::: {.solution}
 Choose $x$ uniformly from $[0,1)$. The ambiguity of terminating decimal expansions occurs only for a countable set and hence has probability zero.
 
-<1>1. For each fixed digit $i\in\{0,\ldots,9\}$, define
+::: pf
+
+::: pf-step
+
+For each fixed digit $i\in\{0,\ldots,9\}$, define
 \[
 X_k^{(i)}=\mathbf1_{\{a_k=i\}}.
 \]
 Then the variables $X_k^{(i)}$ are independent Bernoulli variables with parameter $1/10$.
 
-::: {.proof}
+
+::: pf-proof
+
 For any prescribed digits $d_1,\ldots,d_m$, the set of $x\in[0,1)$ whose first $m$ decimal digits equal this string is a half-open interval of length $10^{-m}$. Therefore
 \[
 P(a_1=d_1,\ldots,a_m=d_m)=10^{-m}
 =\prod_{k=1}^mP(a_k=d_k),
 \]
 with each marginal probability $1/10$. Thus the decimal digits are independent and uniform, and the indicators have the claimed Bernoulli law.
+
 :::
 
-<1>2. Since
+:::
+
+::: pf-step
+
+Since
 \[
 I_n(i)=\sum_{k=1}^nX_k^{(i)},
 \]
@@ -75,50 +85,84 @@ the strong law of large numbers gives
 P\left(\lim_{n\to\infty}\frac{I_n(i)}n=\frac1{10}\right)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The variables in step <1>1 are iid and integrable with mean $1/10$. The strong law states that their sample averages converge almost surely to their common mean.
+
 :::
 
-<1>3. In fact, with probability one the limit in step <1>2 holds simultaneously for all ten digits.
+:::
 
-::: {.proof}
+::: pf-step
+
+In fact, with probability one the limit in step <1>2 holds simultaneously for all ten digits.
+
+
+::: pf-proof
+
 For each digit $i$, let $E_i$ be the probability-one event from step <1>2. Since there are only ten digits,
 \[
 P\left(\bigcap_{i=0}^9E_i\right)
 =1-P\left(\bigcup_{i=0}^9E_i^c\right)
 \geq1-\sum_{i=0}^9P(E_i^c)=1.
 \]
+
 :::
 
-<1>4. A rational number has an eventually periodic decimal expansion.
+:::
 
-::: {.proof}
+::: pf-step
+
+A rational number has an eventually periodic decimal expansion.
+
+
+::: pf-proof
+
 In the long-division algorithm for a rational $a/b$, each successive digit is determined by the current remainder modulo $b$. There are only finitely many possible remainders, so either remainder $0$ occurs, giving a terminating expansion, or a remainder repeats, after which the digits repeat periodically.
+
 :::
 
-<1>5. Rational numbers are not necessarily normal in the digit-frequency sense used in the problem; for example,
+:::
+
+::: pf-step
+
+Rational numbers are not necessarily normal in the digit-frequency sense used in the problem; for example,
 \[
 \boxed{1/3=0.333\ldots}
 \]
 is not normal.
 
-::: {.proof}
+
+::: pf-proof
+
 For $1/3$, the limiting frequency of digit $3$ is $1$, while the limiting frequency of every other digit is $0$, rather than $1/10$. Thus the class of rational numbers is not contained in the normal numbers. Some specially chosen periodic blocks can have equal single-digit frequencies, so the stronger statement that no rational satisfies this problem's single-digit criterion would be false.
+
 :::
 
-<1>6. The number in part (c),
+:::
+
+::: pf-step
+
+The number in part (c),
 \[
 0.1234567891011121314\ldots,
 \]
 obtained by concatenating the positive integers, is normal in base $10$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is Champernowne's number. To see the required single-digit conclusion directly, consider the concatenation through all $m$-digit integers. There are $9\cdot10^{m-1}$ such integers and hence $9m10^{m-1}$ digit positions in that block. For every non-leading position, each digit occurs exactly equally often. At the leading position, digits $1,\ldots,9$ each occur $10^{m-1}$ times and $0$ never occurs; this discrepancy is only $O(10^{m-1})$, whereas the block length is $\Theta(m10^{m-1})$. Thus each digit's frequency in the $m$-digit block differs from $1/10$ by $O(1/m)$. Earlier blocks contain only $O((m-1)10^{m-2})$ digits, negligible compared with the $m$-digit block. The same estimates remain valid for a terminal partial block of $m$-digit integers, by counting complete cycles in each decimal position, with boundary error $O(m)$ per cycle decomposition. Hence the cumulative frequency of every digit tends to $1/10$. Champernowne's stronger theorem gives normality for every finite block as well.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 answer part (b), and step <1>6 answers part (c).
+
 :::
+
 :::

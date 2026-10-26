@@ -29,19 +29,24 @@ Assume furthermore that $p$ does not divide the order of $\operatorname{Gal}(K/F
 Show hat there is some $b \in F$ such that $L = K(b^{1/p})$.
 :::
 
-::: {.solution}
 Let
 $$
 m=\abs{G}=[K:F].
 $$
 By hypothesis, $p\nmid m$.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 L=K(a^{1/p}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By Problem 5.9, for every $\sigma\in G$ there exists $c_\sigma\in K^\times$ such that
 $$
 \sigma(a)=a c_\sigma^p.
@@ -58,9 +63,14 @@ For the identity element of $G$, the field $L$ contains a $p$-th root of $a$, so
 $$
 L=K(\alpha)=K(a^{1/p}).
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 b=N_{K/F}(a)=\prod_{\sigma\in G}\sigma(a).
 $$
@@ -69,7 +79,9 @@ $$
 b=a^m c^p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The norm $b=N_{K/F}(a)$ belongs to $F^\times$. By Problem 5.9, write
 $$
 \sigma(a)=a c_\sigma^p
@@ -86,14 +98,21 @@ $$
 c=\prod_{\sigma\in G}c_\sigma\in K^\times
 $$
 gives the claim.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 K(b^{1/p})\subseteq K(a^{1/p}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\alpha^p=a$. By step <1>2,
 $$
 b=a^m c^p=(c\alpha^m)^p.
@@ -102,14 +121,21 @@ Thus $c\alpha^m$ is a $p$-th root of $b$ lying in $K(\alpha)$. Since $K$ contain
 $$
 K(b^{1/p})\subseteq K(\alpha)=K(a^{1/p}).
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 K(a^{1/p})\subseteq K(b^{1/p}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $p\nmid m$, choose integers $r,s$ such that
 $$
 rm+sp=1.
@@ -126,14 +152,21 @@ $$
 \alpha\in K(b^{1/p}),
 $$
 and hence $K(a^{1/p})\subseteq K(b^{1/p})$.
+
 :::
 
-<1>5. There exists $b\in F^\times$ such that
+:::
+
+::: pf-step
+
+There exists $b\in F^\times$ such that
 $$
 \boxed{L=K(b^{1/p})}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take $b=N_{K/F}(a)$ from step <1>2. By steps <1>3 and <1>4,
 $$
 K(a^{1/p})=K(b^{1/p}).
@@ -142,11 +175,15 @@ Combining this with step <1>1 gives
 $$
 L=K(b^{1/p}).
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required statement.
+
 :::
+
 :::

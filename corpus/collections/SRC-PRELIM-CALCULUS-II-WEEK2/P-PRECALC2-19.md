@@ -15,14 +15,17 @@ review: draft
 Suppose that $( x ( t ) , y ( t ) )$ for $t \in [ a , b ]$ is the parameterization a curve and that $x ^ { \prime } ( t ) \neq 0$ for all $t \in [ a , b ]$ . Find $\textstyle { \frac { d y } { d x } }$ and $\textstyle { \frac { d ^ { 2 } y } { d x ^ { 2 } } }$ as functions of t.
 :::
 
-::: {.solution}
 Assume
 \[
 x'(t)\ne0
 \]
 throughout the parameter interval.
 
-<1>1. By the chain rule,
+::: pf
+
+::: pf-step
+
+By the chain rule,
 \[
 \boxed{
 \frac{dy}{dt}
@@ -30,16 +33,23 @@ throughout the parameter interval.
 \frac{dy}{dx}\frac{dx}{dt}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Locally, the condition \(x'(t)\ne0\) allows \(x\) to be used as a coordinate
 along the curve. Thus
 \[
 y(t)=y(x(t)),
 \]
 and differentiating with respect to \(t\) gives the displayed identity.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{dy}{dx}
@@ -47,14 +57,21 @@ and differentiating with respect to \(t\) gives the displayed identity.
 \frac{y'(t)}{x'(t)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solve step <1>1 for \(dy/dx\), using
 \[
 x'(t)\ne0.
 \]
+
 :::
 
-<1>3. Differentiation with respect to \(x\) along the curve is
+:::
+
+::: pf-step
+
+Differentiation with respect to \(x\) along the curve is
 \[
 \boxed{
 \frac{d}{dx}
@@ -63,7 +80,9 @@ x'(t)\ne0.
 \frac{d}{dt}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any differentiable quantity \(F(t)\),
 \[
 \frac{dF}{dt}
@@ -77,9 +96,14 @@ Thus
 \frac1{x'(t)}
 \frac{dF}{dt}.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \frac{d^2y}{dx^2}
 =
@@ -90,7 +114,9 @@ Thus
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 to the function
 \[
 F(t)=\frac{dy}{dx}
@@ -98,9 +124,14 @@ F(t)=\frac{dy}{dx}
 \frac{y'}{x'}
 \]
 from step <1>2.
+
 :::
 
-<1>5. The derivative in step <1>4 is
+:::
+
+::: pf-step
+
+The derivative in step <1>4 is
 \[
 \frac{d}{dt}
 \left(
@@ -110,11 +141,18 @@ from step <1>2.
 \frac{x'y''-y'x''}{(x')^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the quotient rule.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{d^2y}{dx^2}
@@ -123,7 +161,9 @@ Apply the quotient rule.
 {(x'(t))^3}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>5 into step <1>4:
 \[
 \frac1{x'}
@@ -132,12 +172,16 @@ Substitute step <1>5 into step <1>4:
 =
 \frac{x'y''-y'x''}{(x')^3}.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2 and <1>6 give the requested first and second derivatives as
 functions of \(t\).
+
 :::
+
 :::

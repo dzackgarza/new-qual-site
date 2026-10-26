@@ -26,7 +26,6 @@ where $r , a > 0$ are constants and $\phi$ varies from $0$ to $\infty$.
 Find the length of the helix as a function of $\phi$
 :::
 
-::: {.solution}
 Let
 $$
 \gamma(t)
@@ -36,25 +35,38 @@ $$
 0\leq t\leq\phi.
 $$
 
-<1>1. The derivative is
+::: pf
+
+::: pf-step
+
+The derivative is
 $$
 \gamma'(t)
 =
 \bigl(-r\sin t,r\cos t,a\bigr).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate each coordinate with respect to $t$.
+
 :::
 
-<1>2. The speed is constant:
+:::
+
+::: pf-step
+
+The speed is constant:
 $$
 \|\gamma'(t)\|
 =
 \sqrt{r^2+a^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -70,9 +82,14 @@ r^2+a^2.
 \end{aligned}
 $$
 Taking the positive square root gives the speed.
+
 :::
 
-<1>3. The arc length from parameter $0$ to parameter $\phi$ is
+:::
+
+::: pf-step
+
+The arc length from parameter $0$ to parameter $\phi$ is
 $$
 L(\phi)
 =
@@ -81,11 +98,18 @@ L(\phi)
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard arc-length formula for a parametrized curve.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 L(\phi)
@@ -94,7 +118,9 @@ L(\phi)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the constant speed from step <1>2 into step <1>3:
 $$
 L(\phi)
@@ -104,11 +130,15 @@ L(\phi)
 =
 \phi\sqrt{r^2+a^2}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required length function.
+
 :::
+
 :::

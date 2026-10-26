@@ -25,8 +25,11 @@ and the corresponding partial derivatives of $f$ are assumed nonzero so that
 the implicit derivatives are locally defined.
 :::
 
-::: {.solution}
-<1>1. Along the surface
+::: pf
+
+::: pf-step
+
+Along the surface
 $$
 f(x,y,z)=0,
 $$
@@ -35,26 +38,40 @@ $$
 f_y,dy+f_z,dz=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The total differential is
 $$
 df=f_x,dx+f_y,dy+f_z,dz.
 $$
 Along the level surface $df=0$, and holding $x$ fixed gives $dx=0$.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \left(\frac{\partial z}{\partial y}\right)_x
 =
 -\frac{f_y}{f_z}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the relation in step <1>1 for $dz/dy$.
+
 :::
 
-<1>3. Similarly,
+:::
+
+::: pf-step
+
+Similarly,
 $$
 \left(\frac{\partial y}{\partial x}\right)_z
 =
@@ -67,11 +84,18 @@ $$
 -\frac{f_z}{f_x}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Repeat step <1>1 while holding $z$ fixed and then while holding $y$ fixed.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \left(\frac{\partial z}{\partial y}\right)_x
@@ -82,7 +106,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the three formulas from steps <1>2--<1>3:
 $$
 \left(-\frac{f_y}{f_z}\right)
@@ -92,9 +118,14 @@ $$
 -1.
 $$
 All factors involving derivatives of $f$ cancel.
+
 :::
 
-<1>5. Now let
+:::
+
+::: pf-step
+
+Now let
 $$
 f(x_1,\ldots,x_n)=0,
 $$
@@ -110,7 +141,9 @@ f_{x_{i+1}},dx_{i+1}
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In the total differential
 $$
 df
@@ -119,9 +152,14 @@ df
 $$
 all differentials except $dx_i$ and $dx_{i+1}$ vanish under the stated
 constraint, while $df=0$ along the level hypersurface.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \left(
 \frac{\partial x_{i+1}}{\partial x_i}
@@ -130,11 +168,18 @@ $$
 -\frac{f_{x_i}}{f_{x_{i+1}}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Solve step <1>5 for $dx_{i+1}/dx_i$.
+
 :::
 
-<1>7. Multiplying cyclically for $i=1,\ldots,n$ gives
+:::
+
+::: pf-step
+
+Multiplying cyclically for $i=1,\ldots,n$ gives
 $$
 \boxed{
 \prod_{i=1}^{n}
@@ -148,7 +193,9 @@ x_{n+1}=x_1.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 $$
 \prod_{i=1}^{n}
@@ -162,12 +209,16 @@ $$
 =
 (-1)^n.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the three-variable identity, and step <1>7 gives its
 $n$-variable analogue.
+
 :::
+
 :::

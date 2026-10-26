@@ -20,47 +20,66 @@ audit:
 Calculate $\displaystyle\lim_{n \to \infty} \frac{3}{n} \sum_{i=1}^{n} \left[ \left(\frac{3i}{n}\right)^2 - \left(\frac{3i}{n}\right) \right]$.
 :::
 
-::: {.solution}
 Let
 \[
 f(x)=x^2-x
 \]
 on \([0,3]\).
 
-<1>1. Partition \([0,3]\) into \(n\) equal subintervals. Then
+::: pf
+
+::: pf-step
+
+Partition \([0,3]\) into \(n\) equal subintervals. Then
 \[
 \boxed{
 \Delta x=\frac3n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The interval length is \(3-0=3\), so dividing by \(n\) gives the common
 width \(3/n\).
+
 :::
 
-<1>2. The right endpoint of the \(i\)th subinterval is
+:::
+
+::: pf-step
+
+The right endpoint of the \(i\)th subinterval is
 \[
 \boxed{
 x_i=\frac{3i}{n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Starting at \(0\), the \(i\)th right endpoint is
 \[
 0+i\Delta x
 =
 \frac{3i}{n}.
 \]
+
 :::
 
-<1>3. Therefore the given expression is
+:::
+
+::: pf-step
+
+Therefore the given expression is
 \[
 \boxed{
 \sum_{i=1}^{n}
 f(x_i)\,\Delta x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>1--<1>2,
 \[
 f(x_i)
@@ -82,25 +101,39 @@ f(x_i)\Delta x
 \left(\frac{3i}{n}\right)
 \right].
 \]
+
 :::
 
-<1>4. Hence, as \(n\to\infty\), the expression converges to
+:::
+
+::: pf-step
+
+Hence, as \(n\to\infty\), the expression converges to
 \[
 \int_0^3(x^2-x)\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(f\) is continuous on \([0,3]\), so its right-endpoint Riemann
 sums converge to its definite integral.
+
 :::
 
-<1>5. An antiderivative is
+:::
+
+::: pf-step
+
+An antiderivative is
 \[
 \boxed{
 \frac{x^3}{3}-\frac{x^2}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 \[
 \frac{d}{dx}
@@ -110,9 +143,14 @@ Differentiate:
 =
 x^2-x.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \begin{aligned}
 \int_0^3(x^2-x)\,dx
@@ -125,11 +163,18 @@ x^2-x.
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the endpoints.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_0^3(x^2-x)\,dx
@@ -137,7 +182,9 @@ Substitute the endpoints.
 \frac92}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 9-\frac92
 =
@@ -145,9 +192,14 @@ Substitute the endpoints.
 =
 \frac92.
 \]
+
 :::
 
-<1>8. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -162,13 +214,19 @@ Substitute the endpoints.
 \frac92}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested limit.
+
 :::
+
 :::

@@ -15,8 +15,11 @@ review: draft
 Suppose that f is differentiable at $x = x _ { 0 }$ . What is $\operatorname* { l i m } _ { h \to 0 } { \frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } - h ) } { h } } \ ?$
 :::
 
-::: {.solution}
-<1>1. Add and subtract \(f(x_0)\) in the numerator:
+::: pf
+
+::: pf-step
+
+Add and subtract \(f(x_0)\) in the numerator:
 \[
 \begin{aligned}
 f(x_0+h)-f(x_0-h)
@@ -27,11 +30,18 @@ f(x_0+h)-f(x_0-h)
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two added terms \(+f(x_0)\) and \(-f(x_0)\) cancel.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{f(x_0+h)-f(x_0-h)}{h}
@@ -41,16 +51,23 @@ The two added terms \(+f(x_0)\) and \(-f(x_0)\) cancel.
 \frac{f(x_0-h)-f(x_0)}{-h}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>1 by \(h\), and rewrite
 \[
 \frac{f(x_0)-f(x_0-h)}{h}
 =
 \frac{f(x_0-h)-f(x_0)}{-h}.
 \]
+
 :::
 
-<1>3. Since \(f\) is differentiable at \(x_0\),
+:::
+
+::: pf-step
+
+Since \(f\) is differentiable at \(x_0\),
 \[
 \boxed{
 \lim_{h\to0}
@@ -59,11 +76,18 @@ Divide step <1>1 by \(h\), and rewrite
 f'(x_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the derivative.
+
 :::
 
-<1>4. Also,
+:::
+
+::: pf-step
+
+Also,
 \[
 \boxed{
 \lim_{h\to0}
@@ -72,7 +96,9 @@ This is the definition of the derivative.
 f'(x_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 k=-h.
@@ -82,9 +108,14 @@ Then \(k\to0\) as \(h\to0\), and the quotient becomes
 \frac{f(x_0+k)-f(x_0)}{k}.
 \]
 Apply differentiability.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{h\to0}
@@ -93,13 +124,19 @@ Apply differentiability.
 2f'(x_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take limits in step <1>2 and use steps <1>3--<1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the requested limit.
+
 :::
+
 :::

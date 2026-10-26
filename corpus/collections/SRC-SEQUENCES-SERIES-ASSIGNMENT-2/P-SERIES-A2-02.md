@@ -22,7 +22,6 @@ S=\{x\in\mathbb R:\text{there is a subsequence }a_{n_k}\to x\}.
 (b) Formulate and prove the analogous statement for $\liminf a_n$.
 :::
 
-::: {.solution}
 The unrestricted statement in part (a) is false when
 \[
 \limsup a_n=+\infty.
@@ -39,7 +38,11 @@ number, while
 The retained source proof implicitly assumes that the limsup is finite. Under
 that intended hypothesis, the theorem is correct.
 
-<1>1. Assume
+::: pf
+
+::: pf-step
+
+Assume
 \[
 L
 \coloneqq
@@ -51,7 +54,9 @@ Then there exists a subsequence
 a_{n_k}\to L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition
 \[
 L
@@ -105,24 +110,38 @@ Thus
 \[
 a_{n_k}\to L.
 \]
+
 :::
 
-<1>2. Under the hypothesis of step <1>1,
+:::
+
+::: pf-step
+
+Under the hypothesis of step <1>1,
 \[
 L\in S.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 constructs a subsequence converging to $L$, which is exactly the
 definition of membership in $S$.
+
 :::
 
-<1>3. Every $x\in S$ satisfies
+:::
+
+::: pf-step
+
+Every $x\in S$ satisfies
 \[
 x\le L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 x\in S.
@@ -154,9 +173,14 @@ Since $\varepsilon>0$ was arbitrary,
 \[
 x\le L.
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 L=\limsup a_n\in\mathbb R,
 \]
@@ -167,7 +191,9 @@ L=\max S=\sup S.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 \[
 L\in S,
@@ -191,9 +217,14 @@ Hence
 \sup S=L,
 \]
 and because $L\in S$, the supremum is attained.
+
 :::
 
-<1>5. Conversely, suppose
+:::
+
+::: pf-step
+
+Conversely, suppose
 \[
 S\ne\varnothing
 \]
@@ -210,7 +241,9 @@ for each $\varepsilon>0$, then
 \limsup a_n=L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The eventual upper bound gives
 \[
 \limsup a_n\le L.
@@ -225,9 +258,14 @@ above by the limsup, so
 L\le\limsup a_n.
 \]
 Therefore equality holds.
+
 :::
 
-<1>6. In the intended bounded-sequence setting, the condition
+:::
+
+::: pf-step
+
+In the intended bounded-sequence setting, the condition
 \[
 L=\sup S
 \]
@@ -240,7 +278,9 @@ and
 \limsup a_n=L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Assume $(a_n)$ is bounded. Then every subsequence has a convergent
 subsubsequence by Bolzano--Weierstrass, so the set $S$ of subsequential
 limits is nonempty and compact.
@@ -277,20 +317,32 @@ a contradiction. Thus the sequence is eventually bounded above by
 $L+\varepsilon$ for every $\varepsilon>0$.
 
 Apply step <1>5.
+
 :::
 
-<1>7. Therefore, for a bounded real sequence,
+:::
+
+::: pf-step
+
+Therefore, for a bounded real sequence,
 \[
 \boxed{
 \limsup a_n=\max S=\sup S.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The forward implication is step <1>4. The reverse implication is step <1>6.
+
 :::
 
-<1>8. The analogous statement for the lower limit is
+:::
+
+::: pf-step
+
+The analogous statement for the lower limit is
 \[
 \boxed{
 \liminf a_n=\min S=\inf S
@@ -298,7 +350,9 @@ The forward implication is step <1>4. The reverse implication is step <1>6.
 \]
 for every bounded real sequence.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>7 to the sequence
 \[
 b_n=-a_n.
@@ -333,9 +387,14 @@ Since $S$ is compact, its infimum is attained, so it is also
 \[
 \min S.
 \]
+
 :::
 
-<1>9. If
+:::
+
+::: pf-step
+
+If
 \[
 \liminf a_n\in\mathbb R
 \]
@@ -345,21 +404,27 @@ but the sequence is not assumed bounded above, the forward implication
 \]
 still holds by the same direct argument as steps <1>1--<1>4.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply those steps to
 \[
 -a_n.
 \]
 A finite liminf of $a_n$ is a finite limsup of $-a_n$, so the same
 subsequence construction and extremality argument apply.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves the intended bounded-sequence form of part (a), and step
 <1>8 proves the corresponding statement for $\liminf$. The opening
 counterexample records why the unrestricted literal statement requires the
 missing finiteness/boundedness hypothesis.
+
 :::
+
 :::

@@ -19,8 +19,11 @@ audit:
 Find the surface area of a body formed by rotation of a curve $y = \sin x$ around x-axis in $\mathbb { R } ^ { 3 } , x \in [ 0 , \pi ]$
 :::
 
-::: {.solution}
-<1>1. For a graph $y=y(x)\geq0$ rotated about the $x$-axis, the surface area is
+::: pf
+
+::: pf-step
+
+For a graph $y=y(x)\geq0$ rotated about the $x$-axis, the surface area is
 $$
 S
 =
@@ -31,11 +34,18 @@ y(x)
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard surface-of-revolution formula.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 y=\sin x,
 $$
@@ -44,11 +54,18 @@ $$
 y'=\cos x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the sine function.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 S
 =
@@ -59,12 +76,19 @@ S
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On $[0,\pi]$, one has $\sin x\geq0$. Substitute step <1>2 into the formula
 from step <1>1.
+
 :::
 
-<1>4. Set
+:::
+
+::: pf-step
+
+Set
 $$
 u=\cos x.
 $$
@@ -79,11 +103,18 @@ x=0\longmapsto u=1,
 x=\pi\longmapsto u=-1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $u=\cos x$ and evaluate the endpoints.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 S
 =
@@ -98,11 +129,18 @@ S
 \,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>4. The integrand is even, giving the second equality.
+
 :::
 
-<1>6. An antiderivative is
+:::
+
+::: pf-step
+
+An antiderivative is
 $$
 \int\sqrt{1+u^2}\,du
 =
@@ -116,7 +154,9 @@ u\sqrt{1+u^2}
 C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the right-hand side, using
 $$
 \frac{d}{du}\operatorname{arsinh}u
@@ -124,9 +164,14 @@ $$
 \frac1{\sqrt{1+u^2}}.
 $$
 The derivative simplifies to $\sqrt{1+u^2}$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^1
 \sqrt{1+u^2}
@@ -140,11 +185,18 @@ $$
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the antiderivative from step <1>6 at $u=1$ and $u=0$.
+
 :::
 
-<1>8. Since
+:::
+
+::: pf-step
+
+Since
 $$
 \operatorname{arsinh}1
 =
@@ -164,14 +216,20 @@ S
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>7 into step <1>5 and use the logarithmic formula for
 $\operatorname{arsinh}$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required surface area.
+
 :::
+
 :::

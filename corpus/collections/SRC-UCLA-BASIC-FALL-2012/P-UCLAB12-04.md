@@ -17,7 +17,6 @@ Hint: Assume $X = \textstyle \bigcup _ { n } K _ { n }$ where each $K _ { n }$ i
 Show there is $x _ { 1 } \in X$ and $0 < \delta _ { 1 } < 1 / 2$ such that $B _ { 1 } = B ( x _ { 1 } , \delta _ { 1 } ) = \{ y \in X : d ( y , x ) < \delta _ { 1 } \}$ satisfies $B _ { 1 } \cap K _ { 1 } = \emptyset$ and there is $x _ { 2 } \in X$ and $\begin{array} { r } { 0 < \delta _ { 2 } < \frac { \delta _ { 1 } } { 2 } } \end{array}$ such that $B _ { 2 } = B ( x _ { 2 } , \delta _ { 2 } )$ satisfies $B _ { 2 } \subset B _ { 1 }$ and $B _ { 2 } \cap K _ { 2 } = \emptyset$ . Then continue by induction to find a sequence $\{ x _ { n } \}$ in X that converges to $x \in X \backslash \bigcup _ { n = 1 } ^ { \infty } K _ { n }$
 :::
 
-::: {.solution}
 Assume $X\ne\varnothing$, as is standard in the Baire category theorem.
 Suppose for contradiction that
 \[
@@ -25,7 +24,11 @@ X=\bigcup_{n=1}^{\infty}K_n,
 \]
 where every $K_n$ is closed and nowhere dense.
 
-<1>1. If $U\subseteq X$ is nonempty and open, and $K\subseteq X$ is closed and nowhere dense, then there is a closed ball
+::: pf
+
+::: pf-step
+
+If $U\subseteq X$ is nonempty and open, and $K\subseteq X$ is closed and nowhere dense, then there is a closed ball
 \[
 \overline B(x,r)
 \]
@@ -34,7 +37,9 @@ with $r>0$ such that
 \overline B(x,r)\subseteq U\setminus K.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $K$ is nowhere dense, it has empty interior. Thus the nonempty open set $U$ cannot be contained in $K$, so choose
 \[
 x\in U\setminus K.
@@ -55,9 +60,14 @@ Then
 \[
 \overline B(x,r)\subseteq B(x,\rho)\subseteq U\setminus K.
 \]
+
 :::
 
-<1>2. There are points $x_n\in X$ and radii $\delta_n>0$ such that for every $n\ge1$,
+:::
+
+::: pf-step
+
+There are points $x_n\in X$ and radii $\delta_n>0$ such that for every $n\ge1$,
 \[
 \delta_n<2^{-n},
 \]
@@ -71,7 +81,9 @@ and
 \overline B(x_n,\delta_n)\cap K_n=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 to
 \[
 U=X
@@ -99,11 +111,18 @@ Then
 B(x_n,\delta_n)\setminus K_{n+1}.
 \]
 This completes the induction.
+
 :::
 
-<1>3. The sequence $(x_n)$ is Cauchy.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(x_n)$ is Cauchy.
+
+
+::: pf-proof
+
 If $m>n$, repeated nesting from step <1>2 gives
 \[
 x_m\in B(x_n,\delta_n).
@@ -121,23 +140,37 @@ Then for $m>n\ge N$,
 d(x_m,x_n)<2^{-n}\le2^{-N}<\varepsilon.
 \]
 Thus $(x_n)$ is Cauchy.
+
 :::
 
-<1>4. There exists $x\in X$ such that
+:::
+
+::: pf-step
+
+There exists $x\in X$ such that
 \[
 x_n\to x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space $X$ is complete and $(x_n)$ is Cauchy by step <1>3.
+
 :::
 
-<1>5. For every $n$,
+:::
+
+::: pf-step
+
+For every $n$,
 \[
 x\in\overline B(x_n,\delta_n).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $n$. For every $m>n$,
 \[
 x_m\in B(x_n,\delta_n)
@@ -153,14 +186,21 @@ is closed, and the tail $(x_m)_{m>n}$ converges to $x$. Therefore
 \[
 x\in\overline B(x_n,\delta_n).
 \]
+
 :::
 
-<1>6. For every $n$,
+:::
+
+::: pf-step
+
+For every $n$,
 \[
 x\notin K_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 x\in\overline B(x_n,\delta_n),
@@ -170,31 +210,49 @@ while step <1>2 gives
 \overline B(x_n,\delta_n)\cap K_n=\varnothing.
 \]
 Hence $x\notin K_n$.
+
 :::
 
-<1>7. The assumed covering
+:::
+
+::: pf-step
+
+The assumed covering
 \[
 X=\bigcup_{n=1}^{\infty}K_n
 \]
 is impossible.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives $x\in X$, while step <1>6 gives
 \[
 x\notin\bigcup_{n=1}^{\infty}K_n.
 \]
 This contradicts the assumed equality.
+
 :::
 
-<1>8. Therefore a nonempty complete metric space cannot be a countable union of closed nowhere dense sets.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore a nonempty complete metric space cannot be a countable union of closed nowhere dense sets.
+
+
+::: pf-proof
+
 This is exactly the contradiction established in step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the Baire category theorem in the form requested.
+
 :::
+
 :::

@@ -25,12 +25,15 @@ Construct the functional $S [ \psi , \psi ^ { \dagger } ]$ whose variation with 
 Here $\hat { H }$ is some hermitian operator.
 :::
 
-::: {.solution}
 Treat $\psi$ and $\psi^\dagger$ as independent variables in the variational
 calculation. Assume variations vanish at the temporal endpoints and satisfy
 spatial boundary conditions for which $\hat H$ is Hermitian.
 
-<1>1. Define the time-dependent action
+::: pf
+
+::: pf-step
+
+Define the time-dependent action
 $$
 \boxed{
 S[\psi,\psi^\dagger]
@@ -50,13 +53,20 @@ S[\psi,\psi^\dagger]
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first term is the standard real first-order kinetic term for a complex
 field, and the second is the expectation-density associated with the
 Hamiltonian.
+
 :::
 
-<1>2. Varying $S$ with respect to $\psi^\dagger$ gives
+:::
+
+::: pf-step
+
+Varying $S$ with respect to $\psi^\dagger$ gives
 $$
 \delta_{\psi^\dagger}S
 =
@@ -72,12 +82,19 @@ $$
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the integrand from step <1>1 with respect to
 $\psi^\dagger$ and $\dot\psi^\dagger$, keeping $\psi$ fixed.
+
 :::
 
-<1>3. Integrating the middle term in step <1>2 by parts in time gives
+:::
+
+::: pf-step
+
+Integrating the middle term in step <1>2 by parts in time gives
 $$
 \delta_{\psi^\dagger}S
 =
@@ -90,7 +107,9 @@ i\hbar\dot\psi
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since the variation vanishes at $t_1,t_2$,
 $$
 -
@@ -103,9 +122,14 @@ $$
 \delta\psi^\dagger\dot\psi,dt.
 $$
 This combines with the first term in step <1>2.
+
 :::
 
-<1>4. Therefore stationarity with respect to $\psi^\dagger$ gives
+:::
+
+::: pf-step
+
+Therefore stationarity with respect to $\psi^\dagger$ gives
 $$
 \boxed{
 i\hbar\frac{\partial\psi}{\partial t}
@@ -114,12 +138,19 @@ i\hbar\frac{\partial\psi}{\partial t}
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The variation $\delta\psi^\dagger$ is arbitrary, so the coefficient in
 step <1>3 must vanish.
+
 :::
 
-<1>5. Varying $S$ with respect to $\psi$ gives
+:::
+
+::: pf-step
+
+Varying $S$ with respect to $\psi$ gives
 $$
 \delta_\psi S
 =
@@ -132,14 +163,21 @@ $$
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The time-derivative terms are treated exactly as in steps <1>2--<1>3, with
 $\psi$ and $\psi^\dagger$ interchanged. For the Hamiltonian term, hermiticity
 of $\hat H$ and the assumed spatial boundary conditions move all derivatives
 off $\delta\psi$ and onto $\psi^\dagger$.
+
 :::
 
-<1>6. Hence stationarity with respect to $\psi$ gives the conjugate
+:::
+
+::: pf-step
+
+Hence stationarity with respect to $\psi$ gives the conjugate
 Schrödinger equation
 $$
 \boxed{
@@ -149,18 +187,32 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The variation $\delta\psi$ is arbitrary in step <1>5, so its coefficient must
 vanish.
+
 :::
 
-<1>7. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>4 and <1>6 give the Schrödinger equation and its Hermitian conjugate.
+
 :::
 
-<1>8. For the stationary problem, define
+:::
+
+::: pf-step
+
+For the stationary problem, define
 $$
 \boxed{
 S_E[\psi,\psi^\dagger]
@@ -172,11 +224,18 @@ S_E[\psi,\psi^\dagger]
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This functional is quadratic and vanishes on an eigenstate of energy $E$.
+
 :::
 
-<1>9. Variation with respect to $\psi^\dagger$ gives
+:::
+
+::: pf-step
+
+Variation with respect to $\psi^\dagger$ gives
 $$
 \delta_{\psi^\dagger}S_E
 =
@@ -186,22 +245,36 @@ $$
 \psi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The functional in step <1>8 is linear in $\psi^\dagger$.
+
 :::
 
-<1>10. Therefore stationarity with respect to $\psi^\dagger$ gives
+:::
+
+::: pf-step
+
+Therefore stationarity with respect to $\psi^\dagger$ gives
 $$
 \boxed{
 \hat H\psi=E\psi.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The variation $\delta\psi^\dagger$ is arbitrary in step <1>9.
+
 :::
 
-<1>11. Variation with respect to $\psi$ gives
+:::
+
+::: pf-step
+
+Variation with respect to $\psi$ gives
 $$
 \boxed{
 (\hat H\psi)^\dagger
@@ -210,22 +283,35 @@ E\psi^\dagger.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Hermiticity of $\hat H$ allows the variation to be transferred from
 $\hat H\delta\psi$ onto the conjugate field, exactly as in step <1>5. Since
 $E$ is real for a Hermitian Hamiltonian, the result is the Hermitian conjugate
 of step <1>10.
+
 :::
 
-<1>12. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>10--<1>11 give the stationary Schrödinger equation and its conjugate.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7 and <1>12 establish parts (a) and (b), respectively.
+
 :::
+
 :::

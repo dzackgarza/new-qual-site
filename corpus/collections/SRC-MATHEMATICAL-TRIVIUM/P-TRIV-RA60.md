@@ -23,13 +23,16 @@ $$
 $$
 :::
 
-::: {.solution}
 Fix any integer
 $$
 n\geq0.
 $$
 
-<1>1. Choose a smooth cutoff function
+::: pf
+
+::: pf-step
+
+Choose a smooth cutoff function
 $$
 \chi\in C_c^\infty(\mathbb R)
 $$
@@ -42,27 +45,41 @@ $$
 |x|\leq1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Such cutoff functions exist. For example, start from a standard smooth bump
 supported in $(-2,2)$ and equal to $1$ on $[-1,1]$.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 $$
 \boxed{
 f(x)=\frac{x^n}{n!}\chi(x).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is a product of smooth functions, so
 $$
 f\in C^\infty(\mathbb R).
 $$
 Because $\chi$ has compact support, so does $f$.
+
 :::
 
-<1>3. On the interval
+:::
+
+::: pf-step
+
+On the interval
 $$
 |x|\leq1,
 $$
@@ -71,21 +88,35 @@ $$
 f(x)=\frac{x^n}{n!}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $\chi(x)=1$ on this interval. Substitute into step <1>2.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{f^{(n)}(0)=1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $f$ agrees with $x^n/n!$ on a neighborhood of $0$. The $n$th
 derivative of this polynomial is identically $1$.
+
 :::
 
-<1>5. For every integer
+:::
+
+::: pf-step
+
+For every integer
 $$
 i\geq0,
 \qquad
@@ -96,35 +127,55 @@ $$
 \boxed{f^{(i)}(0)=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Again use step <1>3. If $i<n$, then the $i$th derivative of $x^n/n!$ still
 contains the factor $x^{n-i}$ and vanishes at $0$. If $i>n$, the $i$th
 derivative of the degree-$n$ polynomial is identically zero.
+
 :::
 
-<1>6. The function is absolutely integrable on $[0,\infty)$:
+:::
+
+::: pf-step
+
+The function is absolutely integrable on $[0,\infty)$:
 $$
 \boxed{
 \int_0^\infty |f(x)|\,dx<\infty.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $f$ has compact support. A continuous compactly supported
 function is bounded and vanishes outside a finite interval, hence has finite
 absolute integral.
+
 :::
 
-<1>7. Thus the function in step <1>2 satisfies all three required properties.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus the function in step <1>2 satisfies all three required properties.
+
+
+::: pf-proof
+
 Step <1>4 gives property (1), step <1>5 gives property (2), and step <1>6
 gives property (3).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 verifies the construction.
+
 :::
+
 :::

@@ -26,8 +26,11 @@ Consider the functional $S [ f ] = 2 \pi ^ { 2 } \int _ { 0 } ^ { \infty } d x x
 (c) Compute the value of S[f] on these solutions.
 :::
 
-::: {.solution}
-<1>1. The Euler--Lagrange equation for
+::: pf
+
+::: pf-step
+
+The Euler--Lagrange equation for
 $$
 S[f]
 =
@@ -48,7 +51,9 @@ f''+\frac3x f'+\lambda f^3=0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Ignoring the constant factor $2\pi^2$, the Lagrangian is
 $$
 L(x,f,f')
@@ -76,15 +81,27 @@ $$
 =0.
 $$
 Divide by $x^3$ for $x>0$.
+
 :::
 
-<1>2. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>1.
+
 :::
 
-<1>3. Set
+:::
+
+::: pf-step
+
+Set
 $$
 x=e^t,
 \qquad
@@ -95,7 +112,9 @@ $$
 u''-u+\lambda u^3=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $d/dx=e^{-t}d/dt$, one computes
 $$
 f'
@@ -121,9 +140,14 @@ $$
 \lambda e^{-3t}u^3.
 $$
 Substitution and multiplication by $e^{3t}$ give the autonomous equation.
+
 :::
 
-<1>4. Regularity of $f$ at $x=0$ implies
+:::
+
+::: pf-step
+
+Regularity of $f$ at $x=0$ implies
 $$
 u(t)\to0
 $$
@@ -133,7 +157,9 @@ u'(t)\to0
 $$
 as $t\to-\infty$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 u(t)=x f(x),
@@ -144,9 +170,14 @@ $$
 u'=xf+x^2f',
 $$
 which tends to $0$ because $f$ and $f'$ remain finite at the origin.
+
 :::
 
-<1>5. The autonomous equation in step <1>3 has first integral
+:::
+
+::: pf-step
+
+The autonomous equation in step <1>3 has first integral
 $$
 \frac12(u')^2
 -
@@ -156,28 +187,42 @@ $$
 =C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply
 $$
 u''-u+\lambda u^3=0
 $$
 by $u'$ and integrate with respect to $t$.
+
 :::
 
-<1>6. For every regular solution arising from step <1>4,
+:::
+
+::: pf-step
+
+For every regular solution arising from step <1>4,
 $$
 C=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $t\to-\infty$ in the first integral from step <1>5. Step <1>4 gives
 $$
 u,u'\to0,
 $$
 so every term tends to zero.
+
 :::
 
-<1>7. Every nonzero zero-energy solution satisfies
+:::
+
+::: pf-step
+
+Every nonzero zero-energy solution satisfies
 $$
 u(t)
 =
@@ -186,7 +231,9 @@ u(t)
 $$
 for some $t_0\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 From steps <1>5--<1>6,
 $$
 (u')^2
@@ -213,9 +260,14 @@ u(t)
 $$
 The translation parameter $t_0$ is arbitrary because the equation is
 autonomous.
+
 :::
 
-<1>8. Returning to $x$, let
+:::
+
+::: pf-step
+
+Returning to $x$, let
 $$
 \rho=e^{t_0}>0.
 $$
@@ -231,7 +283,9 @@ f(x)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x=e^t$,
 $$
 e^{-t}
@@ -245,9 +299,14 @@ $$
 \frac{2\rho}{x^2+\rho^2}.
 $$
 Multiply by $\sqrt{2/\lambda}$.
+
 :::
 
-<1>9. Together with
+:::
+
+::: pf-step
+
+Together with
 $$
 \boxed{f\equiv0},
 $$
@@ -256,19 +315,33 @@ $$
 f(\infty)=f'(\infty)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The functions in step <1>8 decay as $x^{-2}$, and their derivatives decay as $x^{-3}$, so they satisfy the boundary conditions.
 Step <1>7 exhausts the nonzero zero-energy trajectories compatible with regularity at $x=0$.
 The zero solution is immediate.
+
 :::
 
-<1>10. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>9.
+
 :::
 
-<1>11. For a nonzero solution from step <1>8, write
+:::
+
+::: pf-step
+
+For a nonzero solution from step <1>8, write
 $$
 A=\sqrt{\frac8\lambda}.
 $$
@@ -286,11 +359,18 @@ f'
 \frac{x}{(x^2+\rho^2)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the explicit formula from step <1>8. The action depends only on $f^2$ and $f^4$, so the sign does not matter.
+
 :::
 
-<1>12. The action density simplifies to
+:::
+
+::: pf-step
+
+The action density simplifies to
 $$
 \frac12(f')^2
 -
@@ -300,7 +380,9 @@ $$
 \frac{\rho^2(x^2-\rho^2)}{(x^2+\rho^2)^4}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using $A^2=8/\lambda$,
 $$
 \frac12(f')^2
@@ -316,9 +398,14 @@ $$
 \frac{\rho^4}{(x^2+\rho^2)^4}.
 $$
 Subtract the numerators.
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 S[f]
 =
@@ -328,11 +415,18 @@ S[f]
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>12 into the definition of $S[f]$ and multiply by the factor $2\pi^2$.
+
 :::
 
-<1>14. With
+:::
+
+::: pf-step
+
+With
 $$
 x=\rho t,
 $$
@@ -343,12 +437,19 @@ $$
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $x=\rho t$ and $dx=\rho dt$.
 All powers of $\rho$ cancel.
+
 :::
 
-<1>15. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_0^\infty
 \frac{t^3(t^2-1)}{(1+t^2)^4}
@@ -357,7 +458,9 @@ $$
 \frac1{12}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 u=t^2,
@@ -412,9 +515,14 @@ $$
 =
 \frac1{12}.
 $$
+
 :::
 
-<1>16. Hence every nonzero solution has action
+:::
+
+::: pf-step
+
+Hence every nonzero solution has action
 $$
 \boxed{
 S[f]
@@ -423,7 +531,9 @@ S[f]
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>13--<1>15:
 $$
 S[f]
@@ -434,26 +544,44 @@ S[f]
 =
 \frac{8\pi^2}{3\lambda}.
 $$
+
 :::
 
-<1>17. The zero solution has action
+:::
+
+::: pf-step
+
+The zero solution has action
 $$
 \boxed{S[0]=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $f=0$ into the functional.
+
 :::
 
-<1>18. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 Steps <1>16--<1>17 give the action on all solutions from part (b).
+
 :::
 
-<1>19. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2, <1>10, and <1>18 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

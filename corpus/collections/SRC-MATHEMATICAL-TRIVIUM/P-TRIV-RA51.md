@@ -32,7 +32,6 @@ $$
 For ordinary convergence, assume $a>0$.
 :::
 
-::: {.solution}
 Put
 $$
 k=|\vec k|
@@ -42,7 +41,11 @@ $$
 \mu=\frac2a.
 $$
 
-<1>1. For any radial function $F(r)$,
+::: pf
+
+::: pf-step
+
+For any radial function $F(r)$,
 $$
 \frac1{(2\pi)^3}
 \int_{\mathbb R^3}
@@ -56,7 +59,9 @@ rF(r)\sin(kr)
 $$
 for $k>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose spherical coordinates with polar axis parallel to $\vec k$. Then
 $$
 \vec k\cdot\vec r=kr\cos\theta.
@@ -71,9 +76,14 @@ e^{-ikr\cos\theta}\sin\theta\,d\theta
 $$
 Multiplying by the spherical volume factor $r^2dr$ and by $(2\pi)^{-3}$
 gives the stated radial formula.
+
 :::
 
-<1>2. For the present function,
+:::
+
+::: pf-step
+
+For the present function,
 $$
 r f(r)
 =
@@ -83,7 +93,9 @@ f_0
 \right)e^{-\mu r}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply
 $$
 f(r)
@@ -94,9 +106,14 @@ f_0
 \right)e^{-2r/a}
 $$
 by $r$ and use $\mu=2/a$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \widetilde f(\vec k)
 =
@@ -109,12 +126,19 @@ $$
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>2 into the radial transform formula of step <1>1 and split
 the integral linearly.
+
 :::
 
-<1>4. The first integral equals
+:::
+
+::: pf-step
+
+The first integral equals
 $$
 \int_0^\infty
 e^{-\mu r}\sin(kr)
@@ -123,7 +147,9 @@ e^{-\mu r}\sin(kr)
 \frac{k}{\mu^2+k^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the imaginary part of
 $$
 \int_0^\infty
@@ -135,9 +161,14 @@ e^{-(\mu-ik)r}
 \frac{\mu+ik}{\mu^2+k^2}.
 $$
 The integral converges because $\mu>0$.
+
 :::
 
-<1>5. The second integral equals
+:::
+
+::: pf-step
+
+The second integral equals
 $$
 \int_0^\infty
 r e^{-\mu r}\sin(kr)
@@ -146,7 +177,9 @@ r e^{-\mu r}\sin(kr)
 \frac{2\mu k}{(\mu^2+k^2)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the identity in step <1>4 with respect to $\mu$:
 $$
 \frac{\partial}{\partial\mu}
@@ -166,9 +199,14 @@ $$
 -\frac{2\mu k}{(\mu^2+k^2)^2}.
 $$
 Negating gives the result.
+
 :::
 
-<1>6. Substituting steps <1>4--<1>5 into step <1>3 gives
+:::
+
+::: pf-step
+
+Substituting steps <1>4--<1>5 into step <1>3 gives
 $$
 \widetilde f(\vec k)
 =
@@ -180,11 +218,18 @@ $$
 \right].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both integrals contain a factor $k$, which cancels the $1/k$ in step <1>3.
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 $$
 \mu=\frac2a,
 $$
@@ -201,11 +246,18 @@ $$
 \frac4{a^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $\mu=2/a$ directly.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \widetilde f(\vec k)
@@ -216,7 +268,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>7 in step <1>6 and combine the two fractions:
 $$
 \frac1D+\frac{4/a^2}{D^2}
@@ -226,11 +280,18 @@ $$
 D=k^2+4/a^2.
 $$
 Thus the numerator becomes $k^2+8/a^2$.
+
 :::
 
-<1>9. The same formula holds at $k=0$ by continuity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The same formula holds at $k=0$ by continuity.
+
+
+::: pf-proof
+
 The right-hand side of step <1>8 is continuous at $k=0$. Direct substitution
 there gives
 $$
@@ -239,11 +300,15 @@ $$
 \frac{f_0a^2}{4\pi^2},
 $$
 which also equals the normalized spatial integral of $f$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>8--<1>9 give the Fourier image for every $\vec k$.
+
 :::
+
 :::

@@ -20,21 +20,33 @@ Let $V$ be a complex inner product space.
 State and prove the Cauchy--Schwarz inequality.
 :::
 
-::: {.solution}
 Use the convention that the inner product is linear in its first argument and conjugate-linear in its second.
 
-<1>1. The Cauchy--Schwarz inequality states that for all $x,y\in V$,
+::: pf
+
+::: pf-step
+
+The Cauchy--Schwarz inequality states that for all $x,y\in V$,
 \[
 \boxed{|\langle x,y\rangle|\le \|x\|\,\|y\|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the assertion to be proved.
+
 :::
 
-<1>2. If $y=0$, then the inequality in step <1>1 holds with equality.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $y=0$, then the inequality in step <1>1 holds with equality.
+
+
+::: pf-proof
+
 One has
 \[
 \langle x,0\rangle=0
@@ -44,9 +56,14 @@ and
 \|0\|=0,
 \]
 so both sides of the inequality are zero.
+
 :::
 
-<1>3. Suppose $y\ne0$ and set
+:::
+
+::: pf-step
+
+Suppose $y\ne0$ and set
 \[
 \lambda=\frac{\langle x,y\rangle}{\langle y,y\rangle}.
 \]
@@ -56,7 +73,9 @@ x-\lambda y
 \]
 is orthogonal to $y$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since the inner product is linear in the first argument,
 \[
 \langle x-\lambda y,y\rangle
@@ -64,9 +83,14 @@ Since the inner product is linear in the first argument,
 \langle x,y\rangle-\lambda\langle y,y\rangle
 =0.
 \]
+
 :::
 
-<1>4. If $y\ne0$, then
+:::
+
+::: pf-step
+
+If $y\ne0$, then
 \[
 \|x\|^2
 =
@@ -75,7 +99,9 @@ Since the inner product is linear in the first argument,
 \frac{|\langle x,y\rangle|^2}{\|y\|^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 x=(x-\lambda y)+\lambda y
@@ -98,16 +124,23 @@ Also
 =
 \frac{|\langle x,y\rangle|^2}{\|y\|^2}.
 \]
+
 :::
 
-<1>5. If $y\ne0$, then
+:::
+
+::: pf-step
+
+If $y\ne0$, then
 \[
 |\langle x,y\rangle|^2
 \le
 \|x\|^2\|y\|^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first term on the right side of step <1>4 is nonnegative. Therefore
 \[
 \|x\|^2
@@ -115,22 +148,36 @@ The first term on the right side of step <1>4 is nonnegative. Therefore
 \frac{|\langle x,y\rangle|^2}{\|y\|^2}.
 \]
 Multiplying by $\|y\|^2>0$ gives the claim.
+
 :::
 
-<1>6. For all $x,y\in V$,
+:::
+
+::: pf-step
+
+For all $x,y\in V$,
 \[
 |\langle x,y\rangle|
 \le
 \|x\|\,\|y\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 handles $y=0$. If $y\ne0$, step <1>5 gives the squared inequality. Both sides are nonnegative, so taking square roots gives the desired inequality.
+
 :::
 
-<1>7. Equality holds if and only if $x$ and $y$ are linearly dependent.
+:::
 
-::: {.proof}
+::: pf-step
+
+Equality holds if and only if $x$ and $y$ are linearly dependent.
+
+
+::: pf-proof
+
 If $y=0$, the vectors are linearly dependent and equality holds by step <1>2. Suppose $y\ne0$. By step <1>4, equality in Cauchy--Schwarz holds exactly when
 \[
 \|x-\lambda y\|^2=0,
@@ -140,11 +187,15 @@ equivalently when
 x=\lambda y.
 \]
 Thus equality is equivalent to linear dependence.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves the Cauchy--Schwarz inequality, and step <1>7 gives its equality criterion.
+
 :::
+
 :::

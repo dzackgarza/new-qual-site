@@ -19,10 +19,13 @@ audit:
 Calculate $H _ { * } ( \Omega S ^ { n } )$ and the ring structure on $H ^ { \ast } ( \Omega S ^ { n } )$
 :::
 
-::: {.solution}
 Assume $n\geq2$ and use integral coefficients. Put $d=n-1$.
 
-<1>1. The James--Bott--Samelson theorem gives
+::: pf
+
+::: pf-step
+
+The James--Bott--Samelson theorem gives
 \[
 H_*(\Omega S^n;\mathbb Z)
 \cong T(t_d),
@@ -30,15 +33,22 @@ H_*(\Omega S^n;\mathbb Z)
 \]
 as a graded algebra under the Pontryagin product.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $S^n=\Sigma S^{n-1}$, the James construction $J(S^{n-1})$ is homotopy equivalent to $\Omega\Sigma S^{n-1}=\Omega S^n$. The James filtration has associated graded homology the tensor algebra on the reduced homology of $S^{n-1}$. Because
 \[
 \widetilde H_*(S^{n-1};\mathbb Z)=\mathbb Z\{t_d\}
 \]
 is free on one class of degree $d$, Bott--Samelson identifies the Pontryagin algebra with $T(t_d)$.
+
 :::
 
-<1>2. Since there is only one generator, additively
+:::
+
+::: pf-step
+
+Since there is only one generator, additively
 \[
 H_q(\Omega S^n;\mathbb Z)
 \cong
@@ -48,15 +58,22 @@ H_q(\Omega S^n;\mathbb Z)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The tensor algebra on one generator has basis
 \[
 1,t,t^2,t^3,\ldots,
 \]
 with $|t^j|=jd$. Thus it has rank one exactly in the displayed degrees.
+
 :::
 
-<1>3. The cohomology ring is the graded Hopf dual of the homology Hopf algebra. If $x_j\in H^{jd}(\Omega S^n;\mathbb Z)$ is dual to $t^j$, then
+:::
+
+::: pf-step
+
+The cohomology ring is the graded Hopf dual of the homology Hopf algebra. If $x_j\in H^{jd}(\Omega S^n;\mathbb Z)$ is dual to $t^j$, then
 \[
 x_i x_j
 =\sum_{\sigma\in\operatorname{Sh}(i,j)}
@@ -64,20 +81,34 @@ x_i x_j
 \]
 where $\epsilon(\sigma)$ is the Koszul sign obtained by shuffling degree-$d$ generators.
 
-::: {.proof}
+
+::: pf-proof
+
 Cup product in cohomology is dual to the coproduct in homology. Under the James model, the diagonal induces the shuffle coproduct on tensor words. Pairing the coproduct of $t^{i+j}$ with $x_i\otimes x_j$ sums the Koszul signs of all $(i,j)$-shuffles, giving the stated coefficient.
+
 :::
 
-<1>4. If $n$ is odd, then $d$ is even and all shuffle signs are $+1$. Hence
+:::
+
+::: pf-step
+
+If $n$ is odd, then $d$ is even and all shuffle signs are $+1$. Hence
 \[
 x_i x_j=\binom{i+j}{i}x_{i+j}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When $d$ is even, interchanging two degree-$d$ factors contributes sign $(-1)^{d^2}=1$. There are exactly $\binom{i+j}{i}$ $(i,j)$-shuffles, so step <1>3 reduces to the displayed formula.
+
 :::
 
-<1>5. Thus, for $n=2m+1$,
+:::
+
+::: pf-step
+
+Thus, for $n=2m+1$,
 \[
 \boxed{
 H^*(\Omega S^{2m+1};\mathbb Z)
@@ -85,16 +116,23 @@ H^*(\Omega S^{2m+1};\mathbb Z)
 \]
 the divided-power algebra on a class of degree $2m$.
 
-::: {.proof}
+
+::: pf-proof
+
 The defining multiplication in the divided-power algebra is
 \[
 \gamma_i(x)\gamma_j(x)
 =\binom{i+j}{i}\gamma_{i+j}(x).
 \]
 Identify $x_j$ from step <1>4 with $\gamma_j(x_{2m})$.
+
 :::
 
-<1>6. If $n$ is even, then $d$ is odd. The signed shuffle sum is zero when both $i$ and $j$ are odd and otherwise equals the corresponding unsigned binomial coefficient after pairing adjacent odd letters. Equivalently,
+:::
+
+::: pf-step
+
+If $n$ is even, then $d$ is odd. The signed shuffle sum is zero when both $i$ and $j$ are odd and otherwise equals the corresponding unsigned binomial coefficient after pairing adjacent odd letters. Equivalently,
 \[
 H^*(\Omega S^{2m};\mathbb Z)
 \cong
@@ -103,11 +141,18 @@ H^*(\Omega S^{2m};\mathbb Z)
 \]
 where $b$ corresponds to the dual of $t^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 For odd $d$, the basic degree-$d$ class $a=x_1$ satisfies $a^2=0$ by graded commutativity and torsion-freeness. The even tensor powers $t^{2j}$ define classes $\gamma_j(b)=x_{2j}$ of degree $2jd$, and their shuffle coefficients are the ordinary divided-power coefficients after grouping the odd generators in pairs. The odd-index classes are $a\gamma_j(b)=x_{2j+1}$. Thus the graded group from step <1>2 and the signed shuffle multiplication of step <1>3 are exactly the tensor product $\Lambda(a)\otimes\Gamma(b)$, with $|a|=d=2m-1$ and $|b|=2d=4m-2$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{H_*(\Omega S^n;\mathbb Z)=T(t_{n-1})}
 \]
@@ -122,13 +167,19 @@ H^*(\Omega S^n;\mathbb Z)
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The homology statement is step <1>1. The two cohomology cases are steps <1>5 and <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives both the requested homology and the full integral cohomology-ring structure.
+
 :::
+
 :::

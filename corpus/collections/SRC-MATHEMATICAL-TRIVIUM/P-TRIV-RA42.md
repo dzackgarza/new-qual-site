@@ -37,7 +37,6 @@ $$
 so the divergence acquires a point-source term at $0$.
 :::
 
-::: {.solution}
 Put
 $$
 u(x,y,z)=\frac1r.
@@ -47,7 +46,11 @@ $$
 \vec A=\nabla u.
 $$
 
-<1>1. In Cartesian coordinates,
+::: pf
+
+::: pf-step
+
+In Cartesian coordinates,
 $$
 \boxed{
 \vec A
@@ -56,7 +59,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 r=(x^2+y^2+z^2)^{1/2},
@@ -68,28 +73,42 @@ $$
 -\frac{x}{r^3},
 $$
 and similarly for $y,z$.
+
 :::
 
-<1>2. The divergence satisfies
+:::
+
+::: pf-step
+
+The divergence satisfies
 $$
 \operatorname{div}\vec A
 =
 \Delta u.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 \operatorname{div}(\nabla u)=\Delta u.
 $$
+
 :::
 
-<1>3. For $r>0$,
+:::
+
+::: pf-step
+
+For $r>0$,
 $$
 \Delta\frac1r=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a radial scalar function $f(r)$ in $\mathbb R^3$,
 $$
 \Delta f
@@ -109,24 +128,38 @@ $$
 r^2\frac{df}{dr}=-1,
 $$
 whose derivative is zero.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\operatorname{div}\vec A=0}
 $$
 for $r>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2--<1>3.
+
 :::
 
-<1>5. The curl vanishes:
+:::
+
+::: pf-step
+
+The curl vanishes:
 $$
 \boxed{\operatorname{curl}\vec A=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \vec A=\nabla u
@@ -135,40 +168,66 @@ and $u=1/r$ is smooth on $\mathbb R^3\setminus\{0\}$,
 $$
 \nabla\times\nabla u=0.
 $$
+
 :::
 
-<1>6. The vector Laplacian satisfies
+:::
+
+::: pf-step
+
+The vector Laplacian satisfies
 $$
 \Delta\vec A
 =
 \nabla(\Delta u).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In Cartesian coordinates the vector Laplacian is applied componentwise, and
 partial derivatives commute on the smooth function $u$:
 $$
 \Delta(\nabla u)=\nabla(\Delta u).
 $$
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{\Delta\vec A=0}
 $$
 for $r>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>3 in step <1>6.
+
 :::
 
-<1>8. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>4, <1>5, and <1>7 give the divergence, curl, and vector Laplacian.
+
 :::
 
-<1>9. The geometric values of
+:::
+
+::: pf-step
+
+The geometric values of
 $$
 \operatorname{div}\vec A
 $$
@@ -178,31 +237,51 @@ $$
 $$
 do not depend on the coordinate system.
 
-::: {.proof}
+
+::: pf-proof
+
 Divergence and the Euclidean vector Laplacian are intrinsic differential
 operators determined by the Euclidean metric. Their coordinate formulas change
 when Cartesian coordinates are replaced by cylindrical or spherical
 coordinates, but the resulting scalar or vector field is the same geometric
 object.
+
 :::
 
-<1>10. In particular, their values remain zero in every regular coordinate
+:::
+
+::: pf-step
+
+In particular, their values remain zero in every regular coordinate
 chart on $\mathbb R^3\setminus\{0\}$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4 and <1>7 show that the geometric fields are identically zero.
 Changing coordinates cannot change the zero scalar field or zero vector field.
+
 :::
 
-<1>11. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>9--<1>10 give the requested coordinate-independence statement.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>8 and <1>11 establish parts (a) and (b).
+
 :::
+
 :::

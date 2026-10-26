@@ -55,19 +55,29 @@ $$
 $$
 :::
 
-::: {.solution}
-<1>1. The scaling family satisfies
+::: pf
+
+::: pf-step
+
+The scaling family satisfies
 $$
 \phi_\lambda(x)=\phi_0(\lambda x),
 \qquad
 \phi_1=\phi_0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the one-parameter family in the problem.
+
 :::
 
-<1>2. Since $\phi_0$ is an extremum of $E$, one has
+:::
+
+::: pf-step
+
+Since $\phi_0$ is an extremum of $E$, one has
 $$
 \boxed{
 \left.
@@ -76,17 +86,31 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An extremum has zero derivative along every differentiable admissible curve through it. Apply this to the curve $\lambda\mapsto\phi_\lambda$ from step <1>1.
+
 :::
 
-<1>3. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>2.
+
 :::
 
-<1>4. Under the change of variables
+:::
+
+::: pf-step
+
+Under the change of variables
 $$
 y=\lambda x,
 $$
@@ -95,11 +119,18 @@ $$
 d^dx=\lambda^{-d}d^dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The dilation $x\mapsto y=\lambda x$ has Jacobian determinant $\lambda^d$.
+
 :::
 
-<1>5. The derivatives of the scaled field satisfy
+:::
+
+::: pf-step
+
+The derivatives of the scaled field satisfy
 $$
 \partial_i\phi_\lambda^a(x)
 =
@@ -107,29 +138,50 @@ $$
 \partial_i\phi_0^a(\lambda x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the chain rule to $\phi_0^a(\lambda x)$.
+
 :::
 
-<1>6. Hence the gradient contribution to $E(\lambda)$ is
+:::
+
+::: pf-step
+
+Hence the gradient contribution to $E(\lambda)$ is
 $$
 \lambda^{2-d}\Gamma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The two derivatives in the quadratic gradient term contribute $\lambda^2$, while step <1>4 contributes $\lambda^{-d}$. After changing variables, the remaining integral is exactly $\Gamma$.
+
 :::
 
-<1>7. The potential contribution to $E(\lambda)$ is
+:::
+
+::: pf-step
+
+The potential contribution to $E(\lambda)$ is
 $$
 \lambda^{-d}\Pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The potential contains no derivatives, so only the measure factor $\lambda^{-d}$ from step <1>4 appears.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 E(\lambda)
@@ -140,52 +192,89 @@ E(\lambda)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Add the contributions from steps <1>6--<1>7.
+
 :::
 
-<1>9. Differentiating and setting $\lambda=1$ gives
+:::
+
+::: pf-step
+
+Differentiating and setting $\lambda=1$ gives
 $$
 E'(1)
 =
 (2-d)\Gamma-d\Pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the two powers of $\lambda$ in step <1>8 and evaluate at $1$.
+
 :::
 
-<1>10. Combining steps <1>2 and <1>9 gives
+:::
+
+::: pf-step
+
+Combining steps <1>2 and <1>9 gives
 $$
 \boxed{
 (2-d)\Gamma-d\Pi=0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives $E'(1)=0$, while step <1>9 computes that derivative explicitly.
+
 :::
 
-<1>11. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>10.
+
 :::
 
-<1>12. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \Gamma\geq0,
 \qquad
 \Pi\geq0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The positive-definiteness hypothesis makes the gradient integrand defining $\Gamma$ nonnegative, and $V(\phi)\geq0$ makes the potential integrand defining $\Pi$ nonnegative.
+
 :::
 
-<1>13. If $d>2$, no nonzero extremum can exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $d>2$, no nonzero extremum can exist.
+
+
+::: pf-proof
+
 For $d>2$, both coefficients in
 $$
 (2-d)\Gamma-d\Pi=0
@@ -195,34 +284,60 @@ $$
 \Gamma=\Pi=0.
 $$
 The hypotheses on the kinetic and potential terms then force the trivial configuration, contradicting the assumed nonzero extremum.
+
 :::
 
-<1>14. If $d=2$, no nonzero extremum can exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $d=2$, no nonzero extremum can exist.
+
+
+::: pf-proof
+
 Step <1>10 becomes
 $$
 -2\Pi=0,
 $$
 so $\Pi=0$. Since $V\geq0$ and $V(\phi)=0$ only for $\phi=0$, continuity forces $\phi_0=0$, again contradicting nontriviality.
+
 :::
 
-<1>15. If $d=1$, the Derrick condition is
+:::
+
+::: pf-step
+
+If $d=1$, the Derrick condition is
 $$
 \boxed{\Gamma=\Pi}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set $d=1$ in step <1>10.
+
 :::
 
-<1>16. Therefore the scaling argument does not exclude nonzero extrema in one spatial dimension.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the scaling argument does not exclude nonzero extrema in one spatial dimension.
+
+
+::: pf-proof
+
 The equality $\Gamma=\Pi$ is compatible with positive values of both terms, so no contradiction follows.
+
 :::
 
-<1>17. The dimension-by-dimension conclusion is
+:::
+
+::: pf-step
+
+The dimension-by-dimension conclusion is
 $$
 \boxed{
 \begin{array}{c|c}
@@ -233,19 +348,32 @@ d=1&\text{not excluded; necessarily }\Gamma=\Pi
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>13--<1>16.
+
 :::
 
-<1>18. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 This is step <1>17.
+
 :::
 
-<1>19. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3, <1>11, and <1>18 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

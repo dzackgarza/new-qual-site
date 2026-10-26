@@ -27,15 +27,20 @@ It is not assumed that E is an algebraic extension of F Prove that
 (3) If K is a finite Galois extension of F , then EK is a finite Galois extension of E .
 :::
 
-::: {.solution}
 All composita are taken inside the given ambient field $E'$.
 
-<1>1. If $K/F$ is finite, then $EK/E$ is finite and
+::: pf
+
+::: pf-step
+
+If $K/F$ is finite, then $EK/E$ is finite and
 $$
 [EK:E]\le [K:F].
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose an $F$-basis
 $$
 k_1,\ldots,k_n
@@ -54,32 +59,53 @@ Since $V$ is spanned over $E$ by $n$ elements,
 $$
 [EK:E]\le n=[K:F].
 $$
+
 :::
 
-<1>2. Suppose $K/F$ is finite separable. Then there exists $\alpha\in K$ with
+:::
+
+::: pf-step
+
+Suppose $K/F$ is finite separable. Then there exists $\alpha\in K$ with
 $$
 K=F(\alpha).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the primitive element theorem for finite separable extensions.
+
 :::
 
-<1>3. Under the hypothesis of step <1>2,
+:::
+
+::: pf-step
+
+Under the hypothesis of step <1>2,
 $$
 EK=E(\alpha).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $K=F(\alpha)$ and $F\subset E$,
 $$
 EK=E F(\alpha)=E(\alpha).
 $$
+
 :::
 
-<1>4. The minimal polynomial of $\alpha$ over $E$ is separable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The minimal polynomial of $\alpha$ over $E$ is separable.
+
+
+::: pf-proof
+
 Let
 $$
 f\in F[X]
@@ -91,18 +117,30 @@ $$
 g\in E[X]
 $$
 be the minimal polynomial of $\alpha$ over $E$. Since $f(\alpha)=0$, the polynomial $g$ divides $f$ in $E[X]$. Every divisor of a separable polynomial is separable, so $g$ is separable.
+
 :::
 
-<1>5. Therefore if $K/F$ is finite separable, then
+:::
+
+::: pf-step
+
+Therefore if $K/F$ is finite separable, then
 $$
 \boxed{EK/E\text{ is finite separable}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Finiteness is step <1>1. By step <1>3, $EK=E(\alpha)$, and step <1>4 shows that the minimal polynomial of the generator $\alpha$ over $E$ is separable.
+
 :::
 
-<1>6. Suppose $K/F$ is finite normal. Choose elements
+:::
+
+::: pf-step
+
+Suppose $K/F$ is finite normal. Choose elements
 $$
 \alpha_1,\ldots,\alpha_r\in K
 $$
@@ -113,16 +151,25 @@ $$
 and let $f_i\in F[X]$ be the minimal polynomial of $\alpha_i$ over $F$.
 Then every $f_i$ splits completely over $K$.
 
-::: {.proof}
+
+::: pf-proof
+
 The extension is finite, so it is finitely generated. Normality means that every irreducible polynomial over $F$ having a root in $K$ splits completely over $K$. Each $f_i$ is irreducible over $F$ and has root $\alpha_i\in K$.
+
 :::
 
-<1>7. The field $EK$ is the splitting field over $E$ of the finite family
+:::
+
+::: pf-step
+
+The field $EK$ is the splitting field over $E$ of the finite family
 $$
 f_1,\ldots,f_r.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, every root of every $f_i$ lies in $K$, hence in $EK$. Thus all the polynomials split over $EK$.
 
 Conversely, any field containing $E$ in which all $f_i$ split contains in particular the chosen roots $\alpha_i$. Hence it contains
@@ -130,29 +177,47 @@ $$
 E(\alpha_1,\ldots,\alpha_r)=EK.
 $$
 Therefore $EK$ is the smallest extension of $E$ splitting all the $f_i$.
+
 :::
 
-<1>8. Therefore if $K/F$ is finite normal, then
+:::
+
+::: pf-step
+
+Therefore if $K/F$ is finite normal, then
 $$
 \boxed{EK/E\text{ is finite normal}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Finiteness is step <1>1. By step <1>7, $EK$ is a splitting field over $E$ of a finite family of polynomials. Hence $EK/E$ is normal.
+
 :::
 
-<1>9. If $K/F$ is finite Galois, then
+:::
+
+::: pf-step
+
+If $K/F$ is finite Galois, then
 $$
 \boxed{EK/E\text{ is finite Galois}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A finite Galois extension is both separable and normal. Apply step <1>5 to obtain separability of $EK/E$ and step <1>8 to obtain normality. A finite extension that is both separable and normal is Galois.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5, <1>8, and <1>9 prove parts (1), (2), and (3), respectively.
+
 :::
+
 :::

@@ -27,8 +27,11 @@ as using $|\log x|^\beta=(-\log x)^\beta$ in part (a). This interpretation
 also makes the endpoint singularity at $x=1$ explicit.
 :::
 
-::: {.solution}
-<1>1. In part (a), set
+::: pf
+
+::: pf-step
+
+In part (a), set
 $$
 t=-\log x.
 $$
@@ -43,18 +46,27 @@ $$
 |\log x|=t.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These identities follow directly from the substitution $t=-\log x$.
+
 :::
 
-<1>2. The integral in part (a) becomes
+:::
+
+::: pf-step
+
+The integral in part (a) becomes
 $$
 \int_0^\infty
 e^{(\alpha-1)t}t^{-\beta}
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 As $x$ runs from $0$ to $1$, $t$ runs from $\infty$ to $0$. Also
 $$
 x^{-\alpha}dx
@@ -64,23 +76,35 @@ e^{\alpha t}(-e^{-t}dt)
 -e^{(\alpha-1)t}dt.
 $$
 Reversing the endpoints gives the displayed integral.
+
 :::
 
-<1>3. Near $t=0$, the integral in step <1>2 converges exactly when
+:::
+
+::: pf-step
+
+Near $t=0$, the integral in step <1>2 converges exactly when
 $$
 \beta<1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The exponential factor tends to $1$ as $t\to0^+$. Thus the local behavior is
 that of
 $$
 \int_0^1 t^{-\beta}\,dt,
 $$
 which converges exactly for $-\beta>-1$, equivalently $\beta<1$.
+
 :::
 
-<1>4. As $t\to\infty$, the integral in step <1>2 converges if
+:::
+
+::: pf-step
+
+As $t\to\infty$, the integral in step <1>2 converges if
 $$
 \alpha<1,
 $$
@@ -90,7 +114,9 @@ $$
 $$
 and for $\alpha=1$ converges exactly when $\beta>1$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $\alpha<1$, the exponential factor decays like
 $$
 e^{-(1-\alpha)t},
@@ -99,21 +125,33 @@ which dominates any power of $t$. If $\alpha>1$, the exponential grows and
 the integrand cannot be integrable at infinity. If $\alpha=1$, the integrand
 is $t^{-\beta}$, whose integral over $[1,\infty)$ converges exactly for
 $\beta>1$.
+
 :::
 
-<1>5. Therefore part (a) converges exactly when
+:::
+
+::: pf-step
+
+Therefore part (a) converges exactly when
 $$
 \boxed{\alpha<1\quad\text{and}\quad\beta<1.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 requires $\beta<1$. Under that condition, the exceptional case
 $\alpha=1$ from step <1>4 would require the incompatible condition
 $\beta>1$. Hence the only possible convergence regime is $\alpha<1$ together
 with $\beta<1$, and steps <1>3--<1>4 show this regime is sufficient.
+
 :::
 
-<1>6. In part (b), set
+:::
+
+::: pf-step
+
+In part (b), set
 $$
 t=\log x.
 $$
@@ -124,18 +162,27 @@ x=e^t,
 dx=e^t\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard relations for the logarithmic substitution.
+
 :::
 
-<1>7. The integral in part (b) becomes
+:::
+
+::: pf-step
+
+The integral in part (b) becomes
 $$
 \int_0^\infty
 e^{(1-\alpha)t}t^{-\beta}
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Now
 $$
 x^{-\alpha}dx
@@ -145,19 +192,31 @@ e^{-\alpha t}e^t\,dt
 e^{(1-\alpha)t}\,dt,
 $$
 and $\log x=t$.
+
 :::
 
-<1>8. Near $t=0$, convergence again requires
+:::
+
+::: pf-step
+
+Near $t=0$, convergence again requires
 $$
 \beta<1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 As in step <1>3, the exponential tends to $1$, so the behavior is
 $t^{-\beta}$.
+
 :::
 
-<1>9. As $t\to\infty$, the integral in step <1>7 converges if
+:::
+
+::: pf-step
+
+As $t\to\infty$, the integral in step <1>7 converges if
 $$
 \alpha>1,
 $$
@@ -167,26 +226,39 @@ $$
 $$
 and for $\alpha=1$ converges exactly when $\beta>1$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the same argument as step <1>4 with the exponential sign reversed.
+
 :::
 
-<1>10. Therefore part (b) converges exactly when
+:::
+
+::: pf-step
+
+Therefore part (b) converges exactly when
 $$
 \boxed{\alpha>1\quad\text{and}\quad\beta<1.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 requires $\beta<1$. The borderline case $\alpha=1$ from step
 <1>9 requires $\beta>1$, so it cannot satisfy the endpoint condition at
 $x=1$. Hence only $\alpha>1$, $\beta<1$ remains, and it is sufficient by
 steps <1>8--<1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5 and <1>10 give the complete convergence regions for parts (a) and
 (b), respectively.
+
 :::
+
 :::

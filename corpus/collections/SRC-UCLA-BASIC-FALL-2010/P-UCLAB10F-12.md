@@ -32,7 +32,6 @@ in terms of a surface integral.
 You may use standard calculus theorems without proof.
 :::
 
-::: {.solution}
 Fix a time $t$ with $r(t)\ne0$, and write
 \[
 R(t)=|r(t)|.
@@ -42,7 +41,11 @@ Then
 D(t)=\{x\in\mathbb R^2:\|x\|\le R(t)\}.
 \]
 
-<1>1. In polar coordinates,
+::: pf
+
+::: pf-step
+
+In polar coordinates,
 \[
 \int_{D(t)}u(x,t)\,dx
 =
@@ -51,15 +54,22 @@ u(\rho\cos\theta,\rho\sin\theta,t)\,
 \rho\,d\rho\,d\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard change-of-variables formula
 \[
 x=(\rho\cos\theta,\rho\sin\theta),
 \]
 whose Jacobian is $\rho$, for the disk of radius $R(t)$.
+
 :::
 
-<1>2. Differentiating the expression in step <1>1 gives
+:::
+
+::: pf-step
+
+Differentiating the expression in step <1>1 gives
 \[
 \begin{aligned}
 \frac d{dt}\int_{D(t)}u(x,t)\,dx
@@ -72,7 +82,9 @@ u(R(t)\cos\theta,R(t)\sin\theta,t)\,d\theta.
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the one-variable Leibniz rule to the inner integral in $\rho$, then integrate in $\theta$. The derivative of the integrand with respect to $t$ contributes
 \[
 \int_0^{2\pi}\int_0^{R(t)}
@@ -83,9 +95,14 @@ which is
 \int_{D(t)}u_t(x,t)\,dx.
 \]
 The moving upper endpoint contributes the second term displayed above.
+
 :::
 
-<1>3. The boundary arclength element on $\partial D(t)$ is
+:::
+
+::: pf-step
+
+The boundary arclength element on $\partial D(t)$ is
 \[
 dS=R(t)\,d\theta.
 \]
@@ -98,7 +115,9 @@ u(R(t)\cos\theta,R(t)\sin\theta,t)\,d\theta
 \int_{\partial D(t)}u(x,t)\,dS.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Parametrize the circle by
 \[
 \gamma(\theta)
@@ -110,9 +129,14 @@ Then
 \|\gamma'(\theta)\|=R(t),
 \]
 so the line element is $dS=R(t)\,d\theta$.
+
 :::
 
-<1>4. Therefore, whenever $r(t)\ne0$,
+:::
+
+::: pf-step
+
+Therefore, whenever $r(t)\ne0$,
 \[
 \boxed{
 \frac d{dt}\left(\int_{D(t)}u(x,t)\,dx\right)
@@ -123,11 +147,18 @@ R'(t)\int_{\partial D(t)}u(x,t)\,dS
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the identity from step <1>3 into step <1>2 and subtract the interior $u_t$ integral.
+
 :::
 
-<1>5. In terms of the function $r$ appearing in the problem,
+:::
+
+::: pf-step
+
+In terms of the function $r$ appearing in the problem,
 \[
 R'(t)
 =
@@ -152,7 +183,9 @@ r'(t)\int_{\partial D(t)}u(x,t)\,dS
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $r(t)\ne0$,
 \[
 \frac d{dt}|r(t)|
@@ -160,11 +193,18 @@ For $r(t)\ne0$,
 \operatorname{sgn}(r(t))\,r'(t).
 \]
 Insert this into step <1>4.
+
 :::
 
-<1>6. If $r(t)=0$, the moving-boundary contribution is $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $r(t)=0$, the moving-boundary contribution is $0$.
+
+
+::: pf-proof
+
 Near such a time, smoothness of $u$ gives
 \[
 \int_{D(t)}u(x,t)\,dx
@@ -176,11 +216,15 @@ Because
 \frac d{dt}r(t)^2=2r(t)r'(t)=0
 \]
 at a zero of $r$, the first-order contribution caused by the changing disk is zero. The boundary has zero arclength there, so the surface-integral expression also vanishes in the natural limiting sense.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4--<1>6 give the requested surface-integral expression, including the sign convention forced by the fact that the disk depends on $r(t)^2$.
+
 :::
+
 :::

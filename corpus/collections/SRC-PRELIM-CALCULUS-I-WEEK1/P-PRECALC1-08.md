@@ -20,8 +20,11 @@ audit:
 If $f : \mathbb{R} \to \mathbb{R}$ is continuously differentiable on $(-1, 4)$ with $f(3) = 5$ and $f'(x) \geq 1$ for all $x \in (-1, 4)$, what is the greatest possible value of $f(0)$?
 :::
 
-::: {.solution}
-<1>1. By the fundamental theorem of calculus,
+::: pf
+
+::: pf-step
+
+By the fundamental theorem of calculus,
 \[
 \boxed{
 f(3)-f(0)
@@ -29,12 +32,19 @@ f(3)-f(0)
 \int_0^3 f'(x)\,dx}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(f\) is continuously differentiable on an interval containing
 \([0,3]\), so the fundamental theorem applies.
+
 :::
 
-<1>2. Since
+:::
+
+::: pf-step
+
+Since
 \[
 f'(x)\ge1
 \]
@@ -45,17 +55,26 @@ for every \(x\in[0,3]\),
 \int_0^3 1\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrating a pointwise inequality preserves the inequality.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f(3)-f(0)\ge3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \int_0^3 f'(x)\,dx
@@ -63,9 +82,14 @@ By step <1>2,
 3.
 \]
 Use step <1>1.
+
 :::
 
-<1>4. Since
+:::
+
+::: pf-step
+
+Since
 \[
 f(3)=5,
 \]
@@ -74,82 +98,137 @@ one has
 5-f(0)\ge3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the given value into step <1>3.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 f(0)\le2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange step <1>4.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g(x)=x+2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a continuously differentiable function on \(\mathbb R\).
+
 :::
 
-<1>7. The function \(g\) satisfies
+:::
+
+::: pf-step
+
+The function \(g\) satisfies
 \[
 \boxed{
 g'(x)=1\ge1}
 \]
 for every \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate \(g(x)=x+2\).
+
 :::
 
-<1>8. It also satisfies
+:::
+
+::: pf-step
+
+It also satisfies
 \[
 \boxed{
 g(3)=5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 g(3)=3+2=5.
 \]
+
 :::
 
-<1>9. Finally,
+:::
+
+::: pf-step
+
+Finally,
 \[
 \boxed{
 g(0)=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 g(0)=0+2=2.
 \]
+
 :::
 
-<1>10. Therefore the bound in step <1>5 is attained.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the bound in step <1>5 is attained.
+
+
+::: pf-proof
+
 Steps <1>6--<1>9 exhibit an admissible function with \(f(0)=2\).
+
 :::
 
-<1>11. Hence the greatest possible value is
+:::
+
+::: pf-step
+
+Hence the greatest possible value is
 \[
 \boxed{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives the upper bound, and step <1>10 shows it is sharp.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the requested value.
+
 :::
+
 :::

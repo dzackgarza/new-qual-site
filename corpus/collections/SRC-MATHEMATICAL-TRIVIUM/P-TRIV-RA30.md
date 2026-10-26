@@ -26,13 +26,16 @@ $\operatorname{Ci}(x)$ does not. Thus the requested “region” is necessarily 
 union of intervals excluding neighborhoods of the zeros of $\sin x$.
 :::
 
-::: {.solution}
 Let
 $$
 A(x)=\frac{\sin x}{x}.
 $$
 
-<1>1. Integration by parts gives
+::: pf
+
+::: pf-step
+
+Integration by parts gives
 $$
 \operatorname{Ci}(x)
 =
@@ -41,7 +44,9 @@ $$
 \int_x^\infty\frac{\sin t}{t^2}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Starting from
 $$
 \operatorname{Ci}(x)
@@ -69,20 +74,32 @@ $$
 \int_x^\infty\frac{\sin t}{t^2}\,dt.
 $$
 Negating gives the formula.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \operatorname{Ci}(x)-A(x)
 =
 -\int_x^\infty\frac{\sin t}{t^2}\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract $A(x)=\sin x/x$ from step <1>1.
+
 :::
 
-<1>3. For $x>0$,
+:::
+
+::: pf-step
+
+For $x>0$,
 $$
 \left|
 \int_x^\infty\frac{\sin t}{t^2}\,dt
@@ -91,7 +108,9 @@ $$
 \frac{2}{x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 F(T)=\int_x^T\sin t\,dt
@@ -116,25 +135,37 @@ $$
 =
 \frac{2}{x^2}.
 $$
+
 :::
 
-<1>4. Hence, whenever $\sin x\neq0$,
+:::
+
+::: pf-step
+
+Hence, whenever $\sin x\neq0$,
 $$
 \frac{|\operatorname{Ci}(x)-A(x)|}{|A(x)|}
 \leq
 \frac{2}{x|\sin x|}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2--<1>3 and divide by
 $$
 |A(x)|
 =
 \frac{|\sin x|}{x}.
 $$
+
 :::
 
-<1>5. Put
+:::
+
+::: pf-step
+
+Put
 $$
 q(x)=\frac{2}{x|\sin x|}.
 $$
@@ -145,7 +176,9 @@ $$
 \frac{q(x)}{1-q(x)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives
 $$
 |\operatorname{Ci}(x)-A(x)|
@@ -161,14 +194,21 @@ $$
 (1-q(x))|A(x)|.
 $$
 Divide the two estimates.
+
 :::
 
-<1>6. A sufficient condition for true relative error below $10^{-4}$ is
+:::
+
+::: pf-step
+
+A sufficient condition for true relative error below $10^{-4}$ is
 $$
 \boxed{x|\sin x|>20002}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \varepsilon=10^{-4}.
@@ -193,9 +233,14 @@ x|\sin x|
 =
 20002.
 $$
+
 :::
 
-<1>7. The large-$x$ asymptotic expansion begins
+:::
+
+::: pf-step
+
+The large-$x$ asymptotic expansion begins
 $$
 \operatorname{Ci}(x)
 =
@@ -206,7 +251,9 @@ $$
 O(x^{-3}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the remainder in step <1>1 once more by parts:
 $$
 \int_x^\infty\frac{\sin t}{t^2}\,dt
@@ -217,9 +264,14 @@ $$
 $$
 The last integral is $O(x^{-3})$ by the same Dirichlet estimate used in step
 <1>3.
+
 :::
 
-<1>8. Away from zeros of $\sin x$, the pointwise relative error therefore has
+:::
+
+::: pf-step
+
+Away from zeros of $\sin x$, the pointwise relative error therefore has
 the asymptotic form
 $$
 \boxed{
@@ -231,15 +283,24 @@ O(x^{-2}).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the leading approximation from step <1>7 and divide by
 $|\sin x|/x$.
+
 :::
 
-<1>9. No condition of the form $x>X$ alone can guarantee relative error below
+:::
+
+::: pf-step
+
+No condition of the form $x>X$ alone can guarantee relative error below
 $10^{-4}$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $X$ there is an integer $n$ with $n\pi>X$. At $x=n\pi$,
 $$
 A(x)=\frac{\sin(n\pi)}{n\pi}=0,
@@ -254,14 +315,18 @@ O(n^{-3}),
 $$
 which is nonzero for all sufficiently large $n$. Thus the approximation cannot
 have small relative error on an entire tail interval.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the leading approximation, step <1>6 gives a rigorous region
 with relative error below $10^{-4}$, and steps <1>8--<1>9 describe the
 asymptotically sharp pointwise behavior and the unavoidable exclusions near
 zeros of $\sin x$.
+
 :::
+
 :::

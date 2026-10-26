@@ -19,70 +19,117 @@ audit:
 For which primes p is there some $1 \neq \omega \in \mathbb { F } _ { p }$ such that $\omega ^ { 3 } = 1$ . For such a prime $p ,$ how many elements are there in a splitting field of $X ^ { p } - \omega X \in \mathbb { F } _ { p } [ X ]$
 :::
 
-::: {.solution}
-<1>1. For $p\ne3$, the multiplicative group $\mathbb F_p^\times$ is cyclic of order $p-1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For $p\ne3$, the multiplicative group $\mathbb F_p^\times$ is cyclic of order $p-1$.
+
+
+::: pf-proof
+
 The multiplicative group of every finite field is cyclic; for $\mathbb F_p$ its order is $p-1$.
+
 :::
 
-<1>2. A nontrivial element $\omega\in\mathbb F_p$ satisfying $\omega^3=1$ exists if and only if
+:::
+
+::: pf-step
+
+A nontrivial element $\omega\in\mathbb F_p$ satisfying $\omega^3=1$ exists if and only if
 \[
 3\mid(p-1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Such an $\omega$ has multiplicative order exactly $3$. A cyclic group of order $p-1$ contains an element of order $3$ exactly when $3$ divides $p-1$.
+
 :::
 
-<1>3. The prime $p=3$ does not admit such an $\omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The prime $p=3$ does not admit such an $\omega$.
+
+
+::: pf-proof
+
 In characteristic $3$,
 \[
 X^3-1=(X-1)^3,
 \]
 so the only cube root of unity in $\mathbb F_3$ is $1$.
+
 :::
 
-<1>4. Therefore the required primes are precisely
+:::
+
+::: pf-step
+
+Therefore the required primes are precisely
 \[
 \boxed{p\equiv1\pmod3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>3 cover all primes. For a prime different from $3$, divisibility $3\mid p-1$ is equivalent to $p\equiv1\pmod3$.
+
 :::
 
-<1>5. Fix such a prime $p$ and a nontrivial cube root $\omega\in\mathbb F_p$. Let
+:::
+
+::: pf-step
+
+Fix such a prime $p$ and a nontrivial cube root $\omega\in\mathbb F_p$. Let
 \[
 f(X)=X^p-\omega X.
 \]
 Then $f$ is separable.
 
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $p$,
 \[
 f'(X)=pX^{p-1}-\omega=-\omega\ne0.
 \]
 Thus $f$ has no repeated roots.
+
 :::
 
-<1>6. If $\alpha$ is a root, then
+:::
+
+::: pf-step
+
+If $\alpha$ is a root, then
 \[
 \alpha^p=\omega\alpha.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the equation $f(\alpha)=0$.
+
 :::
 
-<1>7. Every root satisfies
+:::
+
+::: pf-step
+
+Every root satisfies
 \[
 \alpha^{p^3}=\alpha.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\omega\in\mathbb F_p$, one has $\omega^p=\omega$. Applying the $p$-power map successively to step <1>6 gives
 \[
 \alpha^{p^2}
@@ -98,69 +145,115 @@ and then
 =\omega^3\alpha
 =\alpha.
 \]
+
 :::
 
-<1>8. Hence all roots lie in $\mathbb F_{p^3}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence all roots lie in $\mathbb F_{p^3}$.
+
+
+::: pf-proof
+
 The roots of $X^{p^3}-X$ in an algebraic closure are exactly the elements of $\mathbb F_{p^3}$. Apply step <1>7.
+
 :::
 
-<1>9. The root set
+:::
+
+::: pf-step
+
+The root set
 \[
 V=\{x\in\mathbb F_{p^3}:x^p=\omega x\}
 \]
 is a one-dimensional vector space over $\mathbb F_p$, so it consists of the $p$ roots of $f$.
 
-::: {.proof}
+
+::: pf-proof
+
 The equation is the kernel of the $\mathbb F_p$-linear map
 \[
 T(x)=x^p-\omega x.
 \]
 By step <1>5, $f$ has exactly $p$ distinct roots in its splitting field, and step <1>8 puts all of them in $\mathbb F_{p^3}$. Hence $|V|=p$, so $V$ has dimension one over $\mathbb F_p$.
+
 :::
 
-<1>10. If $0\ne\alpha\in V$, then the splitting field is
+:::
+
+::: pf-step
+
+If $0\ne\alpha\in V$, then the splitting field is
 \[
 E=\mathbb F_p(\alpha).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9, every root is $c\alpha$ for some $c\in\mathbb F_p$. Thus adjoining one nonzero root adjoins every root, and conversely the splitting field contains such a root.
+
 :::
 
-<1>11. The element $\alpha$ does not lie in $\mathbb F_p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The element $\alpha$ does not lie in $\mathbb F_p$.
+
+
+::: pf-proof
+
 If $\alpha\in\mathbb F_p$, then $\alpha^p=\alpha$. Step <1>6 would give
 \[
 \alpha=\omega\alpha.
 \]
 Since $\alpha\ne0$, this would imply $\omega=1$, contrary to the choice of $\omega$.
+
 :::
 
-<1>12. Since $\alpha\in\mathbb F_{p^3}\setminus\mathbb F_p$ and $3$ is prime,
+:::
+
+::: pf-step
+
+Since $\alpha\in\mathbb F_{p^3}\setminus\mathbb F_p$ and $3$ is prime,
 \[
 \mathbb F_p(\alpha)=\mathbb F_{p^3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The extension $\mathbb F_{p^3}/\mathbb F_p$ has degree $3$. By the tower law, an intermediate field has degree over $\mathbb F_p$ dividing $3$, hence degree $1$ or $3$. Step <1>11 excludes degree $1$ for $\mathbb F_p(\alpha)$.
+
 :::
 
-<1>13. Therefore the splitting field has
+:::
+
+::: pf-step
+
+Therefore the splitting field has
 \[
 \boxed{p^3}
 \]
 elements.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>10--<1>12 identify the splitting field with $\mathbb F_{p^3}$, which by definition has $p^3$ elements.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 identifies the primes, and step <1>13 gives the size of the splitting field for each such prime.
+
 :::
+
 :::

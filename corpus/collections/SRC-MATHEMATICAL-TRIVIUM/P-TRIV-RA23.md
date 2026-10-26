@@ -19,10 +19,13 @@ audit:
 Find $\int _ { 0 } ^ { x _ { 0 } } { \sqrt { 1 - { \frac { x ^ { 2 } } { x _ { 0 } ^ { 2 } } } } } d x .$
 :::
 
-::: {.solution}
 Assume $x_0>0$.
 
-<1>1. Set
+::: pf
+
+::: pf-step
+
+Set
 $$
 u=\frac{x}{x_0}.
 $$
@@ -33,22 +36,36 @@ x=x_0u,
 dx=x_0\,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the linear change of variables $x=x_0u$.
+
 :::
 
-<1>2. The limits transform as
+:::
+
+::: pf-step
+
+The limits transform as
 $$
 x=0\longmapsto u=0,
 \qquad
 x=x_0\longmapsto u=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the endpoints into $u=x/x_0$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^{x_0}
 \sqrt{1-\frac{x^2}{x_0^2}}\,dx
@@ -57,18 +74,27 @@ x_0
 \int_0^1\sqrt{1-u^2}\,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the relations from steps <1>1--<1>2.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_0^1\sqrt{1-u^2}\,du
 =
 \frac\pi4.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The graph
 $$
 v=\sqrt{1-u^2},
@@ -85,9 +111,14 @@ $$
 =
 \frac\pi4.
 $$
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \int_0^{x_0}
@@ -97,13 +128,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required value.
+
 :::
+
 :::

@@ -20,13 +20,18 @@ audit:
 Suppose that $r^2 = r$ for all $r$ in a ring $R$. Show that $R$ is commutative.
 :::
 
-::: {.solution}
-<1>1. For every $r\in R$,
+::: pf
+
+::: pf-step
+
+For every $r\in R$,
 \[
 2r=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The element $r+r$ is also idempotent, so
 \[
 (r+r)^2=r+r.
@@ -43,14 +48,21 @@ Subtracting $2r$ in the additive group of $R$ yields
 \[
 2r=0.
 \]
+
 :::
 
-<1>2. For every $r,s\in R$,
+:::
+
+::: pf-step
+
+For every $r,s\in R$,
 \[
 rs+sr=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The element $r+s$ is idempotent, so
 \[
 (r+s)^2=r+s.
@@ -63,14 +75,21 @@ Using $r^2=r$ and $s^2=s$ and cancelling $r+s$ yields
 \[
 rs+sr=0.
 \]
+
 :::
 
-<1>3. For every $r,s\in R$,
+:::
+
+::: pf-step
+
+For every $r,s\in R$,
 \[
 \boxed{rs=sr}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 rs=-sr.
@@ -84,17 +103,28 @@ so
 -sr=sr.
 \]
 Therefore $rs=sr$.
+
 :::
 
-<1>4. Hence $R$ is commutative.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $R$ is commutative.
+
+
+::: pf-proof
+
 Step <1>3 shows that every pair of elements commutes.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

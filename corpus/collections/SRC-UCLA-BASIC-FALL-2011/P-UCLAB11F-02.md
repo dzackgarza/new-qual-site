@@ -31,7 +31,6 @@ for all $x,y\in\mathbb R^n$.
 Show that $f$ is convex.
 :::
 
-::: {.solution}
 Fix $x,y\in\mathbb R^n$ and define
 \[
 v=x-y,
@@ -41,16 +40,27 @@ g(t)=f(y+tv),
 0\le t\le1.
 \]
 
-<1>1. The derivative of $g$ is
+::: pf
+
+::: pf-step
+
+The derivative of $g$ is
 \[
 g'(t)=\nabla f(y+tv)\cdot v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from the chain rule, since $f$ is continuously differentiable and the path $t\mapsto y+tv$ has derivative $v$.
+
 :::
 
-<1>2. For $0\le s<t\le1$,
+:::
+
+::: pf-step
+
+For $0\le s<t\le1$,
 \[
 g'(t)-g'(s)
 \ge
@@ -58,7 +68,9 @@ c(t-s)\|v\|^2
 \ge0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \begin{aligned}
@@ -84,22 +96,36 @@ the hypothesis gives
 c(t-s)^2\|v\|^2.
 \]
 Divide by the positive number $t-s$ to obtain the displayed inequality.
+
 :::
 
-<1>3. The function $g'$ is nondecreasing on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g'$ is nondecreasing on $[0,1]$.
+
+
+::: pf-proof
+
 This is the second inequality in step <1>2.
+
 :::
 
-<1>4. For every $0\le\alpha\le1$,
+:::
+
+::: pf-step
+
+For every $0\le\alpha\le1$,
 \[
 g(\alpha)
 \le
 (1-\alpha)g(0)+\alpha g(1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<\alpha<1$, the fundamental theorem of calculus gives
 \[
 g(\alpha)-g(0)
@@ -131,9 +157,14 @@ g(\alpha)
 (1-\alpha)g(0)+\alpha g(1).
 \]
 The cases $\alpha=0,1$ are equalities.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f(\alpha x+(1-\alpha)y)
 \le
@@ -141,7 +172,9 @@ f(\alpha x+(1-\alpha)y)
 \]
 for all $x,y\in\mathbb R^n$ and $0\le\alpha\le1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 g(0)=f(y),
@@ -157,20 +190,31 @@ f(y+\alpha(x-y))
 f(\alpha x+(1-\alpha)y).
 \]
 Substitute these identities into step <1>4.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f\text{ is convex}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 is exactly the defining convexity inequality.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

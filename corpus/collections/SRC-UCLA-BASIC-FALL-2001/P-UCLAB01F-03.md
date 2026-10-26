@@ -21,38 +21,64 @@ Suppose $f_n\to f$ uniformly on $E$.
 Prove that $f$ is continuous on $E$.
 :::
 
-::: {.solution}
-<1>1. Fix $x_0\in E$ and $\varepsilon>0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Fix $x_0\in E$ and $\varepsilon>0$.
+
+
+::: pf-proof
+
 To prove continuity of $f$ on $E$, it is enough to prove continuity at an arbitrary point $x_0\in E$. Let $\varepsilon>0$ be arbitrary.
+
 :::
 
-<1>2. There exists $N$ such that
+:::
+
+::: pf-step
+
+There exists $N$ such that
 \[
 |f_N(x)-f(x)|<\frac{\varepsilon}{3}
 \]
 for every $x\in E$.
 
-::: {.proof}
+
+::: pf-proof
+
 The convergence $f_n\to f$ is uniform on $E$. Apply the definition of uniform convergence with tolerance $\varepsilon/3$.
+
 :::
 
-<1>3. There exists $\delta>0$ such that, whenever $x\in E$ and $|x-x_0|<\delta$,
+:::
+
+::: pf-step
+
+There exists $\delta>0$ such that, whenever $x\in E$ and $|x-x_0|<\delta$,
 \[
 |f_N(x)-f_N(x_0)|<\frac{\varepsilon}{3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f_N$ is continuous at $x_0$, because every $f_n$ is continuous on $E$. Apply continuity of $f_N$ at $x_0$ with tolerance $\varepsilon/3$.
+
 :::
 
-<1>4. Whenever $x\in E$ and $|x-x_0|<\delta$,
+:::
+
+::: pf-step
+
+Whenever $x\in E$ and $|x-x_0|<\delta$,
 \[
 |f(x)-f(x_0)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For such $x$, the triangle inequality and steps <1>2--<1>3 give
 \[
 \begin{aligned}
@@ -66,17 +92,28 @@ For such $x$, the triangle inequality and steps <1>2--<1>3 give
 =\varepsilon.
 \end{aligned}
 \]
+
 :::
 
-<1>5. The function $f$ is continuous on $E$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is continuous on $E$.
+
+
+::: pf-proof
+
 Step <1>4 proves continuity of $f$ at the arbitrary point $x_0\in E$. Therefore $f$ is continuous at every point of $E$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

@@ -25,62 +25,95 @@ Find the distribution of a random variable $\xi_1 + \xi_2$.
 Repeat the exercise in case if $\xi_{1,2}$ are distributed according to the Poisson distribution with parameters $\lambda_1$ and $\lambda_2$.
 :::
 
-::: {.solution}
 Let $S=\xi_1+\xi_2$.
 
-<1>1. If $\xi_i\sim N(a_i,\sigma_i^2)$, then its characteristic function is
+::: pf
+
+::: pf-step
+
+If $\xi_i\sim N(a_i,\sigma_i^2)$, then its characteristic function is
 \[
 \varphi_i(t)=\exp\left(ia_it-\frac12\sigma_i^2t^2\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is obtained by completing the square in the Fourier transform of the normal density, or equivalently from the standard-normal characteristic function after the affine transformation $\xi_i=a_i+\sigma_iZ$.
+
 :::
 
-<1>2. Independence gives
+:::
+
+::: pf-step
+
+Independence gives
 \[
 \varphi_S(t)=\varphi_1(t)\varphi_2(t)
 =\exp\left(i(a_1+a_2)t
 -\frac12(\sigma_1^2+\sigma_2^2)t^2\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\xi_1$ and $\xi_2$ are independent,
 \[
 \mathbf E e^{it(\xi_1+\xi_2)}
 =\mathbf E e^{it\xi_1}\,\mathbf E e^{it\xi_2}.
 \]
 Substitute step <1>1 and combine exponents.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\xi_1+\xi_2\sim
 N(a_1+a_2,\sigma_1^2+\sigma_2^2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic function in step <1>2 is exactly that of the displayed normal distribution, and characteristic functions determine probability distributions uniquely.
+
 :::
 
-<1>4. If instead $\xi_i\sim\operatorname{Poisson}(\lambda_i)$, then for every integer $n\geq0$,
+:::
+
+::: pf-step
+
+If instead $\xi_i\sim\operatorname{Poisson}(\lambda_i)$, then for every integer $n\geq0$,
 \[
 P(S=n)=\sum_{k=0}^{n}
 e^{-\lambda_1}\frac{\lambda_1^k}{k!}
 e^{-\lambda_2}\frac{\lambda_2^{n-k}}{(n-k)!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The disjoint possibilities for $S=n$ are $\xi_1=k$ and $\xi_2=n-k$ for $k=0,\ldots,n$. Independence makes each joint probability the product of the two Poisson probabilities.
+
 :::
 
-<1>5. The sum in step <1>4 simplifies to
+:::
+
+::: pf-step
+
+The sum in step <1>4 simplifies to
 \[
 P(S=n)=e^{-(\lambda_1+\lambda_2)}
 \frac{(\lambda_1+\lambda_2)^n}{n!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Factor out $e^{-(\lambda_1+\lambda_2)}/n!$ and use
 \[
 \frac{n!}{k!(n-k)!}=\binom nk.
@@ -92,21 +125,32 @@ The remaining sum is
 =(\lambda_1+\lambda_2)^n
 \]
 by the binomial theorem.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\xi_1+\xi_2\sim
 \operatorname{Poisson}(\lambda_1+\lambda_2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 is the Poisson mass function with parameter $\lambda_1+\lambda_2$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>6 give the two requested sum distributions.
+
 :::
+
 :::

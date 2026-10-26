@@ -50,7 +50,6 @@ with all other homology groups zero, determine the homology groups of $\underlin
 Use the same circle of ideas used in proving the Künneth theorem.
 :::
 
-::: {.solution}
 Use the standard homological grading on the internal Hom complex:
 \[
 \underline{\operatorname{Hom}}_n(C,D)
@@ -76,10 +75,16 @@ that $C_*$ is a bounded-below complex of free abelian groups, or equivalently
 that the total Hom is being computed from a free model of $C_*$. Without
 this hypothesis, the listed homology groups do not determine the answer.
 
-<1>1. The numerical assertion is not determined by homology for arbitrary
+::: pf
+
+::: pf-step
+
+The numerical assertion is not determined by homology for arbitrary
 bounded-below chain complexes.
 
-::: {.proof}
+
+::: pf-proof
+
 Consider the bounded acyclic complex
 \[
 A:
@@ -146,9 +151,14 @@ So adding the acyclic summand $A$ to a complex does not change its homology
 but can change the homology of raw total Hom.
 Hence the second half of the source needs a free/projective model
 hypothesis.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 f,g:C_*\to C'_*
 \]
@@ -164,12 +174,19 @@ f-g
 d_{C'}h+hd_C.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of a chain homotopy between the chain maps $f$ and
 $g$.
+
 :::
 
-<1>3. Precomposition gives chain maps
+:::
+
+::: pf-step
+
+Precomposition gives chain maps
 \[
 f^*,g^*:
 \underline{\operatorname{Hom}}(C'_*,D_*)
@@ -183,7 +200,9 @@ f^*(\phi)=\phi f,
 g^*(\phi)=\phi g.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 \phi:C'_i\to D_{i+n}
@@ -203,9 +222,14 @@ differential satisfies
 \]
 and similarly for $g$.
 Thus both precomposition maps are chain maps.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 K:
 \underline{\operatorname{Hom}}_n(C'_*,D_*)
@@ -221,7 +245,9 @@ K(\phi)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The homotopy
 \[
 h:C_i\to C'_{i+1}
@@ -236,9 +262,14 @@ then
 \phi h:C_i\to D_{i+(n+1)},
 \]
 so $K$ has degree $+1$ as required for a chain homotopy.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \partial K+K\partial
@@ -247,7 +278,9 @@ f^*-g^*.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \phi
@@ -308,9 +341,14 @@ h d_C+d_{C'}h
 f^*(\phi)-g^*(\phi).
 \end{aligned}
 \]
+
 :::
 
-<1>6. Therefore the functor
+:::
+
+::: pf-step
+
+Therefore the functor
 \[
 C_*
 \longmapsto
@@ -318,12 +356,19 @@ C_*
 \]
 sends chain-homotopic maps to chain-homotopic maps.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 explicitly constructs the required chain homotopy.
 This proves assertion (2) from the source.
+
 :::
 
-<1>7. Assume henceforth that $C_*$ is degreewise free.
+:::
+
+::: pf-step
+
+Assume henceforth that $C_*$ is degreewise free.
 Then, noncanonically,
 \[
 H_n
@@ -342,7 +387,9 @@ H_i(C),H_j(D)
 \bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Over
 \[
 \mathbb Z,
@@ -407,9 +454,14 @@ Taking the direct sum over all homological degrees gives the displayed
 decomposition.
 This is the Hom analogue of the elementary-complex proof of the Künneth
 theorem.
+
 :::
 
-<1>8. The required elementary abelian-group calculations are
+:::
+
+::: pf-step
+
+The required elementary abelian-group calculations are
 \[
 \operatorname{Hom}(\mathbb Z,B)
 \cong
@@ -440,7 +492,9 @@ and
 \mathbb Z/\gcd(m,n).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hom formulas are immediate.
 
 For Ext, resolve
@@ -485,9 +539,14 @@ it is
 \[
 \mathbb Z/\gcd(m,n).
 \]
+
 :::
 
-<1>9. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=2,
 \]
@@ -500,7 +559,9 @@ H_2
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only pair with
 \[
 j-i=2
@@ -522,9 +583,14 @@ There is no Ext contribution with
 \[
 j-i-1=2.
 \]
+
 :::
 
-<1>10. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=1,
 \]
@@ -541,7 +607,9 @@ H_1
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hom contributions with
 \[
 j-i=1
@@ -572,9 +640,14 @@ so
 0\oplus\mathbb Z/2.
 \]
 There is no Ext contribution.
+
 :::
 
-<1>11. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=0,
 \]
@@ -595,7 +668,9 @@ H_0
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hom terms with
 \[
 j=i
@@ -647,9 +722,14 @@ but
 0.
 \]
 Thus there is no Ext contribution.
+
 :::
 
-<1>12. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=-1,
 \]
@@ -666,7 +746,9 @@ H_{-1}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hom terms with
 \[
 j-i=-1
@@ -720,9 +802,14 @@ and
 \mathbb Z/2.
 \]
 Adding these summands gives the displayed group.
+
 :::
 
-<1>13. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=-2,
 \]
@@ -737,7 +824,9 @@ H_{-2}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hom terms with
 \[
 j-i=-2
@@ -781,9 +870,14 @@ and
 \cong
 \mathbb Z/2.
 \]
+
 :::
 
-<1>14. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=-3,
 \]
@@ -798,7 +892,9 @@ H_{-3}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Hom contribution is
 \[
 \operatorname{Hom}
@@ -827,9 +923,14 @@ and
 \cong
 \mathbb Z/2.
 \]
+
 :::
 
-<1>15. In degree
+:::
+
+::: pf-step
+
+In degree
 \[
 n=-4,
 \]
@@ -842,7 +943,9 @@ H_{-4}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There is no Hom contribution.
 The only Ext contribution has
 \[
@@ -857,11 +960,18 @@ and equals
 \cong
 \mathbb Z/2.
 \]
+
 :::
 
-<1>16. All remaining homology groups vanish.
+:::
 
-::: {.proof}
+::: pf-step
+
+All remaining homology groups vanish.
+
+
+::: pf-proof
+
 The only nonzero homology degrees of $C$ are
 \[
 0,1,2,3,
@@ -895,9 +1005,14 @@ to
 1.
 \]
 Steps <1>9--<1>15 have exhausted all nonzero Hom and Ext contributions.
+
 :::
 
-<1>17. Under the intended free-source hypothesis, the complete answer is
+:::
+
+::: pf-step
+
+Under the intended free-source hypothesis, the complete answer is
 \[
 \boxed{
 H_n
@@ -925,17 +1040,23 @@ H_n
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Collect steps <1>9--<1>16.
+
 :::
 
-<1>18. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>6 prove the chain-homotopy preservation assertion.
 Step <1>1 records why the numerical half needs the missing free/projective
 hypothesis.
 Under that intended hypothesis, steps <1>7--<1>17 compute all homology
 groups of the total Hom complex.
+
 :::
+
 :::

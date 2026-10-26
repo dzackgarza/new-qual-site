@@ -28,7 +28,6 @@ is continuous, but
 does not converge to $\int_0^1 f(t)\,dt$.
 :::
 
-::: {.solution}
 For each integer $n\ge2$, define
 \[
 f_n(t)=
@@ -42,9 +41,15 @@ n^2\left(\frac2n-t\right),
 \end{cases}
 \]
 
-<1>1. Each $f_n$ is continuous on $[0,1]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Each $f_n$ is continuous on $[0,1]$.
+
+
+::: pf-proof
+
 Each piece is linear or constant. At the break points,
 \[
 n^2\cdot\frac1n
@@ -58,14 +63,21 @@ and
 n^2\left(\frac2n-\frac2n\right)=0.
 \]
 Thus the pieces match continuously.
+
 :::
 
-<1>2. The sequence $(f_n)$ converges pointwise to the zero function
+:::
+
+::: pf-step
+
+The sequence $(f_n)$ converges pointwise to the zero function
 \[
 f(t)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At $t=0$,
 \[
 f_n(0)=0
@@ -85,20 +97,34 @@ Then the third case in the definition gives
 f_n(t)=0.
 \]
 Hence $f_n(t)\to0$ for every $t\in[0,1]$.
+
 :::
 
-<1>3. The pointwise limit $f$ is continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The pointwise limit $f$ is continuous.
+
+
+::: pf-proof
+
 The limit function is the constant zero function.
+
 :::
 
-<1>4. For every $n\ge2$,
+:::
+
+::: pf-step
+
+For every $n\ge2$,
 \[
 \int_0^1 f_n(t)\,dt=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The graph of $f_n$ is a triangle of base length
 \[
 \frac2n
@@ -112,11 +138,18 @@ Therefore its area is
 \frac12\cdot\frac2n\cdot n=1.
 \]
 Equivalently, the same value follows by integrating the two linear pieces directly.
+
 :::
 
-<1>5. The integrals do not converge to the integral of the pointwise limit.
+:::
 
-::: {.proof}
+::: pf-step
+
+The integrals do not converge to the integral of the pointwise limit.
+
+
+::: pf-proof
+
 By step <1>4,
 \[
 \lim_{n\to\infty}\int_0^1f_n(t)\,dt=1.
@@ -137,11 +170,15 @@ Hence
 \int_0^1f(t)\,dt
 }.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>5 give the required example.
+
 :::
+
 :::

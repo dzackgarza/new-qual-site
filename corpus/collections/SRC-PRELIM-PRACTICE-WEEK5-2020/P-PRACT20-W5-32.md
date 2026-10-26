@@ -20,8 +20,11 @@ audit:
 Find two different Laurent expansions for $f(z) = \frac{1}{z(z^2 + 1)}$ and specify the regions in which they converge.
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 \[
 0<|z|<1,
 \]
@@ -35,7 +38,9 @@ f(z)
 \frac1z-z+z^3-z^5+\cdots }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When $|z|<1$, the geometric series gives
 \[
 \frac1{1+z^2}
@@ -50,9 +55,14 @@ Multiplying by $1/z$ yields
 \]
 The center $z=0$ is a pole, so the region of convergence is the punctured
 disk $0<|z|<1$.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 |z|>1,
 \]
@@ -66,7 +76,9 @@ f(z)
 \frac1{z^3}-\frac1{z^5}+\frac1{z^7}-\cdots }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Rewrite
 \[
 f(z)
@@ -81,27 +93,38 @@ When $|z|>1$, one has $|z^{-2}|<1$, so the geometric series gives
 \]
 Multiplying by $z^{-3}$ gives the displayed Laurent series. It converges
 exactly for $|z|>1$.
+
 :::
 
-<1>3. The two Laurent expansions are therefore separated by the circle
+:::
+
+::: pf-step
+
+The two Laurent expansions are therefore separated by the circle
 \[
 |z|=1,
 \]
 which contains the additional poles $z=\pm i$.
 
-::: {.proof}
+
+::: pf-proof
+
 The singularities of $f$ are
 \[
 0,\qquad i,\qquad -i.
 \]
 Thus the maximal annuli centered at $0$ on which $f$ is holomorphic are
 $0<|z|<1$ and $|z|>1$, exactly the regions in steps <1>1 and <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 give the two requested Laurent expansions and their
 regions of convergence.
+
 :::
+
 :::

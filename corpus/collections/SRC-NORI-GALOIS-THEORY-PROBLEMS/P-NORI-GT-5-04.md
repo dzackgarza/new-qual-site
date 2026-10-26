@@ -29,7 +29,6 @@ Show that $\sigma \mapsto \sigma|_K$ gives an isomorphism $\operatorname{Gal}(EK
 So, state precisely where you appeal to this thm.
 :::
 
-::: {.solution}
 Define
 $$
 \rho:\operatorname{Gal}(EK/E)\to\operatorname{Gal}(K/K\cap E),
@@ -37,22 +36,35 @@ $$
 \rho(\sigma)=\sigma|_K.
 $$
 
-<1>1. For every $\sigma\in\operatorname{Gal}(EK/E)$, one has
+::: pf
+
+::: pf-step
+
+For every $\sigma\in\operatorname{Gal}(EK/E)$, one has
 $$
 \sigma(K)=K.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\sigma$ fixes $E$ pointwise and $F\subseteq E$, the restriction of $\sigma$ to $K$ is an $F$-embedding
 $$
 K\hookrightarrow E'.
 $$
 The extension $K/F$ is normal. Therefore every $F$-embedding of $K$ into an extension field has image $K$. Hence $\sigma(K)=K$.
+
 :::
 
-<1>2. The map $\rho$ is well defined and is a group homomorphism.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\rho$ is well defined and is a group homomorphism.
+
+
+::: pf-proof
+
 By step <1>1, $\sigma|_K$ is an automorphism of $K$. It fixes $F$ because $F\subseteq E$, and it fixes every element of
 $$
 K\cap E
@@ -62,11 +74,18 @@ $$
 \sigma|_K\in\operatorname{Gal}(K/K\cap E).
 $$
 Restriction clearly respects composition, so $\rho$ is a homomorphism.
+
 :::
 
-<1>3. The homomorphism $\rho$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The homomorphism $\rho$ is injective.
+
+
+::: pf-proof
+
 Suppose
 $$
 \rho(\sigma)=\operatorname{id}_K.
@@ -76,9 +95,14 @@ $$
 \sigma=\operatorname{id}_{EK}.
 $$
 Thus $\ker\rho$ is trivial.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 $$
 J=\rho(\operatorname{Gal}(EK/E))\subseteq\operatorname{Gal}(K/F).
 $$
@@ -87,16 +111,25 @@ $$
 K\cap E\subseteq K^J.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every element of $J$ is the restriction of an automorphism of $EK$ fixing $E$ pointwise. Hence every element of $K\cap E$ is fixed by every element of $J$.
+
 :::
 
-<1>5. Conversely,
+:::
+
+::: pf-step
+
+Conversely,
 $$
 K^J\subseteq K\cap E.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $x\in K^J$. Then $x\in K$, and every element of $J$ fixes $x$. By definition of $J$, this means every
 $$
 \sigma\in\operatorname{Gal}(EK/E)
@@ -111,23 +144,37 @@ Thus $x\in E$. Since already $x\in K$, one has
 $$
 x\in K\cap E.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{K^J=K\cap E}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>5.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 $$
 J=\operatorname{Gal}(K/K\cap E).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Here is the second explicit use of the Fundamental Theorem of Galois Theory: since $K/F$ is finite Galois, the correspondence
 $$
 H\longmapsto K^H
@@ -140,15 +187,27 @@ By step <1>6, the subgroup $J$ has fixed field $K\cap E$. Therefore the unique s
 $$
 J=\operatorname{Gal}(K/K\cap E).
 $$
+
 :::
 
-<1>8. Hence $\rho$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $\rho$ is surjective.
+
+
+::: pf-proof
+
 Its image is $J$, and step <1>7 identifies this image with the entire target group.
+
 :::
 
-<1>9. Therefore restriction gives an isomorphism
+:::
+
+::: pf-step
+
+Therefore restriction gives an isomorphism
 $$
 \boxed{
 \operatorname{Gal}(EK/E)
@@ -159,13 +218,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives a homomorphism, step <1>3 gives injectivity, and step <1>8 gives surjectivity.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required natural-irrationalities isomorphism, and steps <1>5 and <1>7 explicitly identify the two uses of the Fundamental Theorem of Galois Theory requested by the warning in the source.
+
 :::
+
 :::

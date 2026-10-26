@@ -30,15 +30,20 @@ for all $(x,y),(x_1,y_1)\in\mathbb R^2$.
 (c) Give an example for which that value of $M$ makes the inequality an equality.
 :::
 
-::: {.solution}
-<1>1. For all $(x,y),(x_1,y_1)\in\mathbb R^2$,
+::: pf
+
+::: pf-step
+
+For all $(x,y),(x_1,y_1)\in\mathbb R^2$,
 \[
 |f(x,y)-f(x_1,y_1)|
 \le
 A|x-x_1|+A|y-y_1|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the intermediate point $(x_1,y)$ and use the triangle inequality:
 \[
 |f(x,y)-f(x_1,y_1)|
@@ -60,14 +65,21 @@ Likewise, applying the mean value theorem to $v\mapsto f(x_1,v)$ gives
 A|y-y_1|.
 \]
 Combining these inequalities proves the claim.
+
 :::
 
-<1>2. One may take
+:::
+
+::: pf-step
+
+One may take
 \[
 M=A\sqrt2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and the Cauchy--Schwarz inequality,
 \[
 \begin{aligned}
@@ -79,11 +91,18 @@ A\sqrt2\sqrt{(x-x_1)^2+(y-y_1)^2}.
 \end{aligned}
 \]
 Thus the required estimate holds with $M=A\sqrt2$.
+
 :::
 
-<1>3. No smaller universal value of $M$ can work.
+:::
 
-::: {.proof}
+::: pf-step
+
+No smaller universal value of $M$ can work.
+
+
+::: pf-proof
+
 Consider
 \[
 f(x,y)=A(x+y).
@@ -109,15 +128,22 @@ so
 M\ge A\sqrt2.
 \]
 Together with step <1>2, this proves that $A\sqrt2$ is optimal.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 f(x,y)=A(x+y),
 \]
 the optimal estimate becomes an equality for any two points whose difference vector is a nonzero scalar multiple of $(1,1)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 (x-x_1,y-y_1)=(t,t).
@@ -137,20 +163,31 @@ A\sqrt2\sqrt{2t^2}
 2A|t|.
 \]
 Thus equality holds.
+
 :::
 
-<1>5. Therefore the smallest possible constant is
+:::
+
+::: pf-step
+
+Therefore the smallest possible constant is
 \[
 \boxed{M=A\sqrt2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 proves this constant always works, step <1>3 proves no smaller universal constant can work, and step <1>4 supplies an equality example.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 answers parts (a)--(c).
+
 :::
+
 :::

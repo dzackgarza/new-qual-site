@@ -18,14 +18,17 @@ $$a\in U,\qquad b\in V,\qquad \overline U\cap\overline V=\varnothing.$$
 Show that the product of two completely Hausdorff spaces is completely Hausdorff.
 :::
 
-::: {.solution}
 Let \(X\) and \(Y\) be completely Hausdorff, and let
 \[
 (x_1,y_1),(x_2,y_2)\in X\times Y
 \]
 be distinct.
 
-<1>1. Since the two points are distinct, at least one coordinate differs:
+::: pf
+
+::: pf-step
+
+Since the two points are distinct, at least one coordinate differs:
 \[
 \boxed{
 x_1\ne x_2
@@ -33,13 +36,18 @@ x_1\ne x_2
 y_1\ne y_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If both coordinates were equal, the ordered pairs would be equal.
+
 :::
 
-## Case 1: \(x_1\ne x_2\)
+:::
 
-<1>2. Since \(X\) is completely Hausdorff, there exist open sets
+::: pf-step
+
+Since \(X\) is completely Hausdorff, there exist open sets
 \[
 U_1,U_2\subseteq X
 \]
@@ -55,28 +63,49 @@ and
 \overline{U_1}\cap\overline{U_2}=\varnothing}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the definition of complete Hausdorffness in \(X\) to the distinct points \(x_1,x_2\).
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 W_1=U_1\times Y,
 \qquad
 W_2=U_2\times Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the natural product neighborhoods of the two points.
+
 :::
 
-<1>4. The sets \(W_1,W_2\) are open in \(X\times Y\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The sets \(W_1,W_2\) are open in \(X\times Y\).
+
+
+::: pf-proof
+
 Each is a product of an open subset of \(X\) with the open set \(Y\subseteq Y\).
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 (x_1,y_1)\in W_1
 \]
@@ -85,11 +114,18 @@ and
 (x_2,y_2)\in W_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from the containments in step <1>2.
+
 :::
 
-<1>6. For every subset \(A\subseteq X\),
+:::
+
+::: pf-step
+
+For every subset \(A\subseteq X\),
 \[
 \boxed{
 \overline{A\times Y}
@@ -97,7 +133,9 @@ This follows from the containments in step <1>2.
 \overline A\times Y}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 First,
 \[
 A\times Y\subseteq\overline A\times Y.
@@ -125,9 +163,14 @@ Thus
 \[
 (x,y)\in\overline{A\times Y}.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \overline{W_1}
 =
@@ -140,11 +183,18 @@ and
 \overline{U_2}\times Y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>6 with \(A=U_1\) and \(A=U_2\).
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \overline{W_1}\cap\overline{W_2}
@@ -152,7 +202,9 @@ Apply step <1>6 with \(A=U_1\) and \(A=U_2\).
 \varnothing}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 \[
 \overline{W_1}\cap\overline{W_2}
@@ -160,11 +212,14 @@ By step <1>7,
 (\overline{U_1}\cap\overline{U_2})\times Y,
 \]
 which is empty by step <1>2.
+
 :::
 
-## Case 2: \(y_1\ne y_2\)
+:::
 
-<1>9. If \(x_1=x_2\), then \(y_1\ne y_2\), and there exist open sets
+::: pf-step
+
+If \(x_1=x_2\), then \(y_1\ne y_2\), and there exist open sets
 \[
 V_1,V_2\subseteq Y
 \]
@@ -180,11 +235,18 @@ and
 \overline{V_1}\cap\overline{V_2}=\varnothing}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply complete Hausdorffness of \(Y\) to the distinct points \(y_1,y_2\).
+
 :::
 
-<1>10. Define
+:::
+
+::: pf-step
+
+Define
 \[
 W_1=X\times V_1,
 \qquad
@@ -198,7 +260,9 @@ Then \(W_1,W_2\) are open neighborhoods of the two points and
 \varnothing}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The argument from steps <1>4--<1>8 applies with the factors reversed:
 \[
 \overline{X\times V_i}
@@ -212,28 +276,46 @@ X\times
 =
 \varnothing.
 \]
+
 :::
 
-<1>11. Therefore every pair of distinct points in \(X\times Y\) has open neighborhoods with disjoint closures.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every pair of distinct points in \(X\times Y\) has open neighborhoods with disjoint closures.
+
+
+::: pf-proof
+
 By step <1>1, either Case 1 or Case 2 applies. The required neighborhoods are supplied by step <1>8 or step <1>10.
+
 :::
 
-<1>12. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 X\times Y
 \text{ is completely Hausdorff}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>11 is exactly the definition of complete Hausdorffness.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 is the required conclusion.
+
 :::
+
 :::

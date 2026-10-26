@@ -19,8 +19,11 @@ Let $f ( x )$ be a bounded real-valued function on the closed interval $[ 0 , 1 
 (b) Use your answer to (a) to prove that $\int _ { 0 } ^ { 1 } f ( x ) dx$ exists if $f$ is non-decreasing (i.e. $f ( x ) \leq f ( y )$ whenever $x \leq y )$
 :::
 
-::: {.solution}
-<1>1. For a partition
+::: pf
+
+::: pf-step
+
+For a partition
 \[
 P:\quad 0=x_0<x_1<\cdots<x_m=1,
 \]
@@ -37,11 +40,18 @@ U(f,P)=\sum_{i=1}^mM_i(x_i-x_{i-1}),
 L(f,P)=\sum_{i=1}^m m_i(x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function is bounded by hypothesis, so all $M_i$ and $m_i$ are finite.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \overline{\int_0^1}f
 =
@@ -61,16 +71,25 @@ Then $f$ is Riemann integrable exactly when
 \]
 Their common value is the Riemann integral.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Darboux formulation of the definition of the Riemann integral.
+
 :::
 
-<1>3. Equivalently, $f$ is Riemann integrable if and only if for every $\varepsilon>0$ there exists a partition $P$ such that
+:::
+
+::: pf-step
+
+Equivalently, $f$ is Riemann integrable if and only if for every $\varepsilon>0$ there exists a partition $P$ such that
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every partition $P$,
 \[
 L(f,P)
@@ -84,16 +103,23 @@ U(f,P).
 Thus arbitrarily small upper-minus-lower gaps force equality of the upper and lower integrals.
 
 Conversely, if the upper and lower integrals are equal, choose one partition whose upper sum is within $\varepsilon/2$ of the common value and another whose lower sum is within $\varepsilon/2$. Passing to their common refinement can only decrease the upper sum and increase the lower sum, so the resulting gap is less than $\varepsilon$.
+
 :::
 
-<1>4. Assume now that $f$ is non-decreasing. For every partition $P$,
+:::
+
+::: pf-step
+
+Assume now that $f$ is non-decreasing. For every partition $P$,
 \[
 M_i=f(x_i)
 \qquad\text{and}\qquad
 m_i=f(x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x_{i-1}\le x\le x_i,
@@ -103,9 +129,14 @@ monotonicity gives
 f(x_{i-1})\le f(x)\le f(x_i).
 \]
 Hence the infimum and supremum on the subinterval are attained at its endpoints.
+
 :::
 
-<1>5. For every partition $P$,
+:::
+
+::: pf-step
+
+For every partition $P$,
 \[
 U(f,P)-L(f,P)
 =
@@ -113,11 +144,18 @@ U(f,P)-L(f,P)
 \bigl(f(x_i)-f(x_{i-1})\bigr)(x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the endpoint formulas from step <1>4 into the definitions of the upper and lower sums.
+
 :::
 
-<1>6. If the mesh of $P$ satisfies
+:::
+
+::: pf-step
+
+If the mesh of $P$ satisfies
 \[
 \max_i(x_i-x_{i-1})\le\delta,
 \]
@@ -128,7 +166,9 @@ U(f,P)-L(f,P)
 \delta\bigl(f(1)-f(0)\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every difference
 \[
 f(x_i)-f(x_{i-1})
@@ -146,14 +186,21 @@ U(f,P)-L(f,P)
 \end{aligned}
 \]
 because the sum telescopes.
+
 :::
 
-<1>7. For every $\varepsilon>0$, there exists a partition $P$ such that
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$, there exists a partition $P$ such that
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 f(1)=f(0),
@@ -171,17 +218,28 @@ U(f,P)-L(f,P)
 <
 \varepsilon.
 \]
+
 :::
 
-<1>8. Therefore every bounded non-decreasing function on $[0,1]$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every bounded non-decreasing function on $[0,1]$ is Riemann integrable.
+
+
+::: pf-proof
+
 Apply the criterion from step <1>3 using step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 answer part (a), and steps <1>4--<1>8 prove part (b).
+
 :::
+
 :::

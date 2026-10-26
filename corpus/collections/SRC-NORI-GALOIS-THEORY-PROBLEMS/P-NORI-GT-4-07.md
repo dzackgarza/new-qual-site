@@ -19,7 +19,6 @@ audit:
 Show that every finite group can be realised as the Galois group of some finite Galois extension of fields.
 :::
 
-::: {.solution}
 Let $G$ be a finite group and let $F$ be any field. Introduce algebraically independent indeterminates
 $$
 \{X_h:h\in G\}
@@ -29,13 +28,19 @@ $$
 L=F(X_h:h\in G).
 $$
 
-<1>1. The group $G$ acts on $L$ by $F$-automorphisms via
+::: pf
+
+::: pf-step
+
+The group $G$ acts on $L$ by $F$-automorphisms via
 $$
 g(X_h)=X_{gh}
 $$
 for $g,h\in G$.
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $g\in G$, the assignment
 $$
 X_h\longmapsto X_{gh}
@@ -50,19 +55,31 @@ g_1(g_2(X_h))
 =(g_1g_2)(X_h),
 $$
 so this is a group action.
+
 :::
 
-<1>2. The action in step <1>1 is faithful.
+:::
 
-::: {.proof}
+::: pf-step
+
+The action in step <1>1 is faithful.
+
+
+::: pf-proof
+
 If $g\ne e$, then
 $$
 g(X_e)=X_g\ne X_e.
 $$
 Thus no nonidentity element acts trivially.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 $$
 K=L^G
 $$
@@ -75,7 +92,9 @@ $$
 \operatorname{Gal}(L/K)\cong G.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Artin's fixed-field theorem states that if a finite group $G$ acts faithfully by automorphisms on a field $L$, then for the fixed field $K=L^G$ one has
 $$
 [L:K]=|G|
@@ -85,17 +104,28 @@ $$
 \operatorname{Gal}(L/K)=G.
 $$
 The hypotheses are verified by steps <1>1--<1>2.
+
 :::
 
-<1>4. Therefore every finite group is realizable as the Galois group of a finite Galois extension.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every finite group is realizable as the Galois group of a finite Galois extension.
+
+
+::: pf-proof
+
 For the arbitrary finite group $G$, step <1>3 explicitly constructs such an extension $L/L^G$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is exactly the required assertion.
+
 :::
+
 :::

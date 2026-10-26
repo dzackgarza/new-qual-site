@@ -31,7 +31,6 @@ $$
 The source Gaussian $\psi_\sigma(x)=\sqrt{\pi\sigma^2}\,e^{-x^2/(2\sigma^2)}$ is not normalized. This does not affect the optimal width or eigenvalue, because an overall nonzero scalar cancels from the Rayleigh quotient and does not change an eigenvalue equation.
 :::
 
-::: {.solution}
 Write
 $$
 \psi_\sigma(x)=A(\sigma)e^{-x^2/(2\sigma^2)},
@@ -39,7 +38,11 @@ $$
 A(\sigma)=\sqrt{\pi\sigma^2}.
 $$
 
-<1>1. The derivatives are
+::: pf
+
+::: pf-step
+
+The derivatives are
 $$
 \psi_\sigma'=-\frac{x}{\sigma^2}\psi_\sigma,
 $$
@@ -48,11 +51,18 @@ $$
 \psi_\sigma''=\left(\frac{x^2}{\sigma^4}-\frac1{\sigma^2}\right)\psi_\sigma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the Gaussian once and then differentiate the result again.
+
 :::
 
-<1>2. Acting with the Hamiltonian gives
+:::
+
+::: pf-step
+
+Acting with the Hamiltonian gives
 $$
 \hat H\psi_\sigma
 =
@@ -68,29 +78,50 @@ $$
 \psi_\sigma.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>1 into the definition of $\hat H$ and collect the constant and $x^2$ coefficients.
+
 :::
 
-<1>3. The Gaussian is an exact eigenfunction precisely when
+:::
+
+::: pf-step
+
+The Gaussian is an exact eigenfunction precisely when
 $$
 \frac{m\omega^2}{2}-\frac{\hbar^2}{2m\sigma^4}=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $\hat H\psi_\sigma=E\psi_\sigma$ with constant $E$, the bracket in step <1>2 must be independent of $x$.
+
 :::
 
-<1>4. Therefore the distinguished width is
+:::
+
+::: pf-step
+
+Therefore the distinguished width is
 $$
 \boxed{\sigma_*^2=\frac{\hbar}{m\omega}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives $m^2\omega^2\sigma^4=\hbar^2$. Since $\sigma>0$, take the positive square root.
+
 :::
 
-<1>5. The same width is the unique minimum of the Gaussian Rayleigh quotient
+:::
+
+::: pf-step
+
+The same width is the unique minimum of the Gaussian Rayleigh quotient
 $$
 \mathcal E(\sigma)
 =
@@ -98,7 +129,9 @@ $$
 {\langle\psi_\sigma,\psi_\sigma\rangle}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The overall factor $A(\sigma)$ cancels. For this Gaussian,
 $$
 \frac{\int x^2|\psi_\sigma|^2dx}{\int|\psi_\sigma|^2dx}
@@ -136,9 +169,14 @@ $$
 \frac{m\omega^2}{2}
 >0.
 $$
+
 :::
 
-<1>6. Hence the Gaussian extremum occurs at
+:::
+
+::: pf-step
+
+Hence the Gaussian extremum occurs at
 $$
 \boxed{
 \psi_*(x)
@@ -150,55 +188,96 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the minimizing width from step <1>4 into the source ansatz.
+
 :::
 
-<1>7. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>4--<1>6 identify the extremizing member of the Gaussian family.
+
 :::
 
-<1>8. At this width, step <1>2 reduces to
+:::
+
+::: pf-step
+
+At this width, step <1>2 reduces to
 $$
 \hat H\psi_*
 =
 \frac{\hbar^2}{2m\sigma_*^2}\psi_*.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $x^2$ coefficient vanishes by step <1>3.
+
 :::
 
-<1>9. Hence the corresponding eigenvalue is
+:::
+
+::: pf-step
+
+Hence the corresponding eigenvalue is
 $$
 \boxed{E_0=\frac{\hbar\omega}{2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use $\sigma_*^2=\hbar/(m\omega)$ in step <1>8.
+
 :::
 
-<1>10. At $E=E_0$, the functional is stationary at $\psi_*$ even under full independent variations of $\psi$ and $\psi^\dagger$.
+:::
 
-::: {.proof}
+::: pf-step
+
+At $E=E_0$, the functional is stationary at $\psi_*$ even under full independent variations of $\psi$ and $\psi^\dagger$.
+
+
+::: pf-proof
+
 At the pair from steps <1>6 and <1>9,
 $$
 (E_0-\hat H)\psi_*=0.
 $$
 Since $\hat H$ is Hermitian, the conjugate equation also holds. Therefore the first variation of $S$ vanishes for arbitrary independent variations, and hence in particular inside the Gaussian ansatz family.
+
 :::
 
-<1>11. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Step <1>9 gives the requested eigenvalue.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7 and <1>11 establish parts (a) and (b), respectively.
+
 :::
+
 :::

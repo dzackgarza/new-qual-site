@@ -20,8 +20,11 @@ Suppose $a_n\ge0$ and $\sum_{n=1}^{\infty}a_n=\infty$.
 Does it follow that \[\sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty?\] Prove your answer.
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 a_n\ge1
 \]
@@ -30,7 +33,9 @@ for infinitely many $n$, then
 \sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Whenever $a_n\ge1$,
 \[
 \frac{a_n}{1+a_n}
@@ -38,9 +43,14 @@ Whenever $a_n\ge1$,
 \frac12.
 \]
 Thus the transformed series has infinitely many terms at least $1/2$, so its partial sums are unbounded.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 a_n<1
 \]
@@ -50,7 +60,9 @@ for all sufficiently large $n$, then
 \]
 for all sufficiently large $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $0\le a_n<1$, then
 \[
 1+a_n\le2.
@@ -59,14 +71,21 @@ Since $a_n\ge0$,
 \[
 \frac{a_n}{1+a_n}\ge\frac{a_n}{2}.
 \]
+
 :::
 
-<1>3. In the case of step <1>2,
+:::
+
+::: pf-step
+
+In the case of step <1>2,
 \[
 \sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $N$ such that $a_n<1$ for all $n\ge N$. By hypothesis,
 \[
 \sum_{n=N}^{\infty}a_n=\infty,
@@ -78,22 +97,33 @@ because removing finitely many terms does not change divergence. By step <1>2,
 \frac12\sum_{n=N}^{M}a_n.
 \]
 The right side tends to $+\infty$ as $M\to\infty$, so the transformed series diverges.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Either $a_n\ge1$ for infinitely many $n$, in which case step <1>1 applies, or $a_n<1$ eventually, in which case step <1>3 applies. These cases exhaust all possibilities.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 answers the question affirmatively.
+
 :::
+
 :::

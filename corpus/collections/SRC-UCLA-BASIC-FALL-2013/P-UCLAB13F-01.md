@@ -24,19 +24,24 @@ Prove that $\lim_{n\to\infty}P_n$ exists and is a nonzero real number if and onl
 \]
 :::
 
-::: {.solution}
 Since every $a_n>0$, one has
 \[
 P_n>0
 \]
 for every $n$.
 
-<1>1. For every $x\ge0$,
+::: pf
+
+::: pf-step
+
+For every $x\ge0$,
 \[
 \log(1+x)\le x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 h(x)=x-\log(1+x).
@@ -55,9 +60,14 @@ h'(x)
 \ge0.
 \]
 Thus $h(x)\ge0$ for $x\ge0$, which is the stated inequality.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 \sum_{n=1}^{\infty}a_n<\infty,
 \]
@@ -67,21 +77,30 @@ then
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 0<\log(1+a_n)\le a_n.
 \]
 The comparison test therefore gives convergence.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 \sum_n a_n<\infty,
 \]
 then $P_n$ converges to a finite positive number.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \log P_n
@@ -98,9 +117,14 @@ P_n
 e^L.
 \]
 Since $e^L>0$, the limit is a nonzero real number.
+
 :::
 
-<1>4. Conversely, suppose
+:::
+
+::: pf-step
+
+Conversely, suppose
 \[
 P_n\to P
 \]
@@ -110,7 +134,9 @@ Then
 a_n\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $n\ge2$,
 \[
 1+a_n
@@ -131,14 +157,21 @@ Therefore
 \[
 a_n\to0.
 \]
+
 :::
 
-<1>5. For every $x\in[0,1]$,
+:::
+
+::: pf-step
+
+For every $x\in[0,1]$,
 \[
 \log(1+x)\ge\frac{x}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 g(x)=\log(1+x)-\frac{x}{2}.
@@ -158,15 +191,22 @@ g'(x)
 \]
 for $0\le x\le1$.
 Thus $g(x)\ge0$ on $[0,1]$.
+
 :::
 
-<1>6. Under the assumption in step <1>4,
+:::
+
+::: pf-step
+
+Under the assumption in step <1>4,
 \[
 \sum_{n=1}^{\infty}\log(1+a_n)
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 P_n\to P>0,
@@ -182,14 +222,21 @@ But
 \sum_{j=1}^n\log(1+a_j).
 \]
 Thus the displayed series converges.
+
 :::
 
-<1>7. Under the assumption in step <1>4,
+:::
+
+::: pf-step
+
+Under the assumption in step <1>4,
 \[
 \sum_{n=1}^{\infty}a_n<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, there exists $N$ such that
 \[
 0<a_n\le1
@@ -207,9 +254,14 @@ The series on the right converges by step <1>6, so the comparison test gives
 \sum_{n=N}^{\infty}a_n<\infty.
 \]
 Adding the finitely many initial terms proves convergence of the full series.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}P_n
@@ -219,13 +271,19 @@ Adding the finitely many initial terms proves convergence of the full series.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves the forward construction from convergence of $\sum a_n$, and step <1>7 proves the converse.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required equivalence.
+
 :::
+
 :::

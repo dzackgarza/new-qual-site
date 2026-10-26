@@ -36,13 +36,16 @@ Prove that
 at every point of $\mathbb R^2$.
 :::
 
-::: {.solution}
 Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, set
 \[
 D(h,k)=f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
 \]
 
-<1>1. For every nonzero $h,k$, there are points $\xi$ between $a$ and $a+h$ and $\eta$ between $b$ and $b+k$ such that
+::: pf
+
+::: pf-step
+
+For every nonzero $h,k$, there are points $\xi$ between $a$ and $a+h$ and $\eta$ between $b$ and $b+k$ such that
 \[
 \frac{D(h,k)}{hk}
 =
@@ -50,7 +53,9 @@ D(h,k)=f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
 \left(\frac{\partial f}{\partial x}\right)(\xi,\eta).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set $G(x)=f(x,b+k)-f(x,b)$. The one-variable mean value theorem gives some $\xi$ between $a$ and $a+h$ with
 \[
 D(h,k)=h\bigl(f_x(\xi,b+k)-f_x(\xi,b)\bigr).
@@ -60,9 +65,14 @@ Applying the mean value theorem to $y\mapsto f_x(\xi,y)$ gives some $\eta$ betwe
 f_x(\xi,b+k)-f_x(\xi,b)=k(f_x)_y(\xi,\eta).
 \]
 Combining these identities proves the claim.
+
 :::
 
-<1>2. For every nonzero $h,k$, there are points $\xi'$ between $a$ and $a+h$ and $\eta'$ between $b$ and $b+k$ such that
+:::
+
+::: pf-step
+
+For every nonzero $h,k$, there are points $\xi'$ between $a$ and $a+h$ and $\eta'$ between $b$ and $b+k$ such that
 \[
 \frac{D(h,k)}{hk}
 =
@@ -70,7 +80,9 @@ Combining these identities proves the claim.
 \left(\frac{\partial f}{\partial y}\right)(\xi',\eta').
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set $H(y)=f(a+h,y)-f(a,y)$. The mean value theorem gives some $\eta'$ between $b$ and $b+k$ with
 \[
 D(h,k)=k\bigl(f_y(a+h,\eta')-f_y(a,\eta')\bigr).
@@ -80,9 +92,14 @@ Applying the mean value theorem to $x\mapsto f_y(x,\eta')$ gives some $\xi'$ bet
 f_y(a+h,\eta')-f_y(a,\eta')=h(f_y)_x(\xi',\eta').
 \]
 Combining these identities proves the claim.
+
 :::
 
-<1>3. At $(a,b)$,
+:::
+
+::: pf-step
+
+At $(a,b)$,
 \[
 \frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)(a,b)
@@ -91,7 +108,9 @@ Combining these identities proves the claim.
 \left(\frac{\partial f}{\partial x}\right)(a,b).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 give
 \[
 (f_x)_y(\xi,\eta)
@@ -104,17 +123,28 @@ As $(h,k)\to(0,0)$, both intermediate points tend to $(a,b)$. Continuity of the 
 \[
 (f_x)_y(a,b)=(f_y)_x(a,b).
 \]
+
 :::
 
-<1>4. The mixed partial derivatives agree at every point of $\mathbb R^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The mixed partial derivatives agree at every point of $\mathbb R^2$.
+
+
+::: pf-proof
+
 The point $(a,b)$ was arbitrary, so step <1>3 holds throughout $\mathbb R^2$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

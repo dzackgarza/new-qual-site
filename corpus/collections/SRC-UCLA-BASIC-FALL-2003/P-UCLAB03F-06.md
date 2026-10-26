@@ -34,25 +34,37 @@ U\subseteq F(U).
 \]
 :::
 
-::: {.solution}
 Set
 \[
 Y=F(U)\cap U.
 \]
 
-<1>1. The set $Y$ is nonempty.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $Y$ is nonempty.
+
+
+::: pf-proof
+
 By hypothesis there is $p\in U$ such that
 \[
 F(p)\in U.
 \]
 Since also $F(p)\in F(U)$, one has $F(p)\in Y$.
+
 :::
 
-<1>2. The set $F(U)$ is open in $\mathbb R^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F(U)$ is open in $\mathbb R^2$.
+
+
+::: pf-proof
+
 At every $x\in U$, the Jacobian determinant of $F$ is nonzero. Hence the derivative
 \[
 DF(x):\mathbb R^2\to\mathbb R^2
@@ -66,21 +78,35 @@ is open in $\mathbb R^2$. Therefore
 F(U)=\bigcup_{x\in U}F(N_x)
 \]
 is open.
+
 :::
 
-<1>3. The set $Y$ is open in the subspace $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $Y$ is open in the subspace $U$.
+
+
+::: pf-proof
+
 By step <1>2, $F(U)$ is open in $\mathbb R^2$. Hence
 \[
 Y=F(U)\cap U
 \]
 is open in the subspace topology on $U$.
+
 :::
 
-<1>4. The set $Y$ is closed in the subspace $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $Y$ is closed in the subspace $U$.
+
+
+::: pf-proof
+
 Let $(y_n)$ be a sequence in $Y$ converging to some $y\in U$. For each $n$, choose $x_n\in U$ such that
 \[
 F(x_n)=y_n.
@@ -111,36 +137,54 @@ contradicting $F(x)=y\in U$. Therefore $x\notin\partial U$. Since $x\in\overline
 y=F(x)\in F(U),
 \]
 and therefore $y\in Y$. Thus $Y$ is closed in $U$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 Y=U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The open unit disk $U$ is connected. By steps <1>1, <1>3, and <1>4, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$. Connectedness therefore forces
 \[
 Y=U.
 \]
+
 :::
 
-<1>6. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{U\subseteq F(U)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 Y=F(U)\cap U.
 \]
 Step <1>5 says this intersection equals $U$, which is exactly the stated inclusion.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

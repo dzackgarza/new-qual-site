@@ -24,15 +24,20 @@ Prove that
 \]
 :::
 
-::: {.solution}
-<1>1. For any subspaces $U_1,U_2\subseteq V$,
+::: pf
+
+::: pf-step
+
+For any subspaces $U_1,U_2\subseteq V$,
 \[
 (U_1+U_2)^\perp
 =
 U_1^\perp\cap U_2^\perp.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $v\in V$. Then
 \[
 v\in(U_1+U_2)^\perp
@@ -51,15 +56,22 @@ Taking $u_2=0$ shows that this implies $v\in U_1^\perp$, and taking $u_1=0$ show
 =0.
 \]
 Thus the two subspaces are equal.
+
 :::
 
-<1>2. In a finite-dimensional inner-product space,
+:::
+
+::: pf-step
+
+In a finite-dimensional inner-product space,
 \[
 (U^\perp)^\perp=U
 \]
 for every subspace $U\subseteq V$.
 
-::: {.proof}
+
+::: pf-proof
+
 One always has
 \[
 U\subseteq(U^\perp)^\perp.
@@ -77,16 +89,23 @@ so
 \dim U.
 \]
 Thus the inclusion is between subspaces of equal dimension and is therefore equality.
+
 :::
 
-<1>3. Applying step <1>1 to $W_1^\perp$ and $W_2^\perp$ gives
+:::
+
+::: pf-step
+
+Applying step <1>1 to $W_1^\perp$ and $W_2^\perp$ gives
 \[
 (W_1^\perp+W_2^\perp)^\perp
 =
 W_1\cap W_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 yields
 \[
 (W_1^\perp+W_2^\perp)^\perp
@@ -100,9 +119,14 @@ By step <1>2,
 (W_i^\perp)^\perp=W_i
 \]
 for $i=1,2$, giving the stated equality.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 (W_1\cap W_2)^\perp
@@ -111,7 +135,9 @@ W_1^\perp+W_2^\perp
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take orthogonal complements of both sides of step <1>3. By step <1>2,
 \[
 \bigl((W_1^\perp+W_2^\perp)^\perp\bigr)^\perp
@@ -122,11 +148,15 @@ while the orthogonal complement of the right side of step <1>3 is
 \[
 (W_1\cap W_2)^\perp.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required identity.
+
 :::
+
 :::

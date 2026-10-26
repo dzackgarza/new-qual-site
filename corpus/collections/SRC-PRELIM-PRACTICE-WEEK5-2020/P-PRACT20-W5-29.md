@@ -20,7 +20,6 @@ audit:
 Let $C$ be the circle $\abs{z} = 2$, oriented positively. Evaluate $\oint_C \frac{\cosh(\pi z)\,dz}{z(z^2 + 1)}$.
 :::
 
-::: {.solution}
 Let
 \[
 F(z)=\frac{\cosh(\pi z)}{z(z^2+1)}
@@ -28,25 +27,38 @@ F(z)=\frac{\cosh(\pi z)}{z(z^2+1)}
 \frac{\cosh(\pi z)}{z(z-i)(z+i)}.
 \]
 
-<1>1. The poles of $F$ inside $C$ are the three simple poles
+::: pf
+
+::: pf-step
+
+The poles of $F$ inside $C$ are the three simple poles
 \[
 0,\qquad i,\qquad -i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are exactly the zeros of
 \[
 z(z^2+1),
 \]
 and all have modulus less than $2$.
+
 :::
 
-<1>2. The residue at $0$ is
+:::
+
+::: pf-step
+
+The residue at $0$ is
 \[
 \operatorname{Res}(F,0)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since the pole is simple,
 \[
 \operatorname{Res}(F,0)
@@ -55,14 +67,21 @@ Since the pole is simple,
 \frac{\cosh(\pi z)}{z^2+1}
 =1.
 \]
+
 :::
 
-<1>3. The residues at $i$ and $-i$ are both
+:::
+
+::: pf-step
+
+The residues at $i$ and $-i$ are both
 \[
 \frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At $i$,
 \[
 \begin{aligned}
@@ -89,16 +108,23 @@ At $-i$,
 =\frac12.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \oint_C\frac{\cosh(\pi z)}{z(z^2+1)}\,dz
 =4\pi i }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the residue theorem and steps <1>2 and <1>3,
 \[
 \oint_C F(z)\,dz
@@ -109,11 +135,15 @@ By the residue theorem and steps <1>2 and <1>3,
 \right)
 =4\pi i.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value.
+
 :::
+
 :::

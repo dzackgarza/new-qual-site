@@ -27,8 +27,11 @@ L(\gamma)\le 1+f(1)-f(0).
 (b) Show that there exists continuous nondecreasing $f$ on $[0,1]$ with $f(0)=0$, $f(1)=1$, and $L(\gamma)=2$ for $\gamma(t)=(t,f(t))$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 0\le t_1<\cdots<t_n\le1.
 \]
@@ -41,7 +44,9 @@ If $f$ is nondecreasing, then for every $j$,
 \bigl(f(t_{j+1})-f(t_j)\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since both coordinate increments are nonnegative,
 \[
 \begin{aligned}
@@ -63,9 +68,14 @@ using
 \sqrt{a^2+b^2}\le a+b
 \]
 for $a,b\ge0$.
+
 :::
 
-<1>2. For every such partition,
+:::
+
+::: pf-step
+
+For every such partition,
 \[
 \sum_{j=1}^{n-1}
 |\gamma(t_{j+1})-\gamma(t_j)|
@@ -73,7 +83,9 @@ for $a,b\ge0$.
 1+f(1)-f(0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Sum the estimate from step <1>1:
 \[
 \begin{aligned}
@@ -102,18 +114,30 @@ f(t_n)-f(t_1)
 \le
 f(1)-f(0).
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{L(\gamma)\le1+f(1)-f(0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The length is the supremum of the partition sums appearing in step <1>2, all of which satisfy the same upper bound.
+
 :::
 
-<1>4. For part (b), let $f$ be the Cantor--Lebesgue function on $[0,1]$.
+:::
+
+::: pf-step
+
+For part (b), let $f$ be the Cantor--Lebesgue function on $[0,1]$.
 Then $f$ is continuous and nondecreasing, with
 \[
 f(0)=0,
@@ -121,7 +145,9 @@ f(0)=0,
 f(1)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Recall the standard Cantor-function construction.
 On the middle-third Cantor set, write
 \[
@@ -137,9 +163,14 @@ f(x)
 \]
 Extend $f$ constantly across every complementary middle-third interval.
 This gives the classical Cantor--Lebesgue function, which is continuous, nondecreasing, and has the stated endpoint values.
+
 :::
 
-<1>5. At stage $k$ of the Cantor construction, there are $2^k$ closed basic intervals, each of length
+:::
+
+::: pf-step
+
+At stage $k$ of the Cantor construction, there are $2^k$ closed basic intervals, each of length
 \[
 3^{-k},
 \]
@@ -153,7 +184,9 @@ The complementary gaps created by stages at most $k$ have total length
 \]
 and $f$ is constant on each of them.
 
-::: {.proof}
+
+::: pf-proof
+
 After $k$ stages, the Cantor construction leaves $2^k$ intervals, each obtained by choosing left or right thirds $k$ times, so each has length $3^{-k}$.
 The total remaining length is therefore
 \[
@@ -167,9 +200,14 @@ so the removed gaps have total length
 \]
 
 The binary description of the Cantor function shows that changing from the left endpoint to the right endpoint of one stage-$k$ basic interval changes the binary value by exactly $2^{-k}$.
+
 :::
 
-<1>6. Let $P_k$ be the partition consisting of all endpoints of the stage-$k$ basic intervals and all gaps between them.
+:::
+
+::: pf-step
+
+Let $P_k$ be the partition consisting of all endpoints of the stage-$k$ basic intervals and all gaps between them.
 Then the corresponding polygonal sum for the graph of $f$ is
 \[
 L_k
@@ -180,7 +218,9 @@ L_k
 \sqrt{3^{-2k}+2^{-2k}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Across every removed gap, $f$ is constant, so the graph increment has length equal to the horizontal length of that gap.
 The total contribution from all gaps is therefore
 \[
@@ -193,9 +233,14 @@ Thus each contributes
 \sqrt{3^{-2k}+2^{-2k}},
 \]
 giving the displayed total.
+
 :::
 
-<1>7. The quantity in step <1>6 satisfies
+:::
+
+::: pf-step
+
+The quantity in step <1>6 satisfies
 \[
 L_k
 =
@@ -207,7 +252,9 @@ L_k
 \longrightarrow2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 \begin{aligned}
@@ -224,14 +271,21 @@ Since
 \left(\frac23\right)^k\to0,
 \]
 the first term tends to $1$ and the square-root term tends to $1$.
+
 :::
 
-<1>8. For the Cantor function,
+:::
+
+::: pf-step
+
+For the Cantor function,
 \[
 L(\gamma)\ge2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, $L(\gamma)$ is the supremum over all partition sums.
 Each $L_k$ from step <1>6 is one such partition sum.
 Hence
@@ -243,14 +297,21 @@ Taking $k\to\infty$ and using step <1>7 gives
 \[
 L(\gamma)\ge2.
 \]
+
 :::
 
-<1>9. For the Cantor function,
+:::
+
+::: pf-step
+
+For the Cantor function,
 \[
 L(\gamma)\le2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply part (a), proved in step <1>3, using
 \[
 f(0)=0,
@@ -264,21 +325,32 @@ L(\gamma)
 1+1-0
 =2.
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{L(\gamma)=2}
 \]
 for the graph of the Cantor--Lebesgue function.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>8 and <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and steps <1>4--<1>10 give the required example for part (b).
+
 :::
+
 :::

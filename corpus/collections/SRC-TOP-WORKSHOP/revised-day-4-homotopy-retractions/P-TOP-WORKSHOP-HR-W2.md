@@ -24,21 +24,26 @@ p_*:\pi_1(Y)\to\pi_1(B)
 is an isomorphism.
 :::
 
-::: {.solution}
 Fix a basepoint $b_0\in B$ and let
 \[
 j:B\hookrightarrow Y
 \]
 be the inclusion.
 
-<1>1. Since $p$ is a deformation retraction,
+::: pf
+
+::: pf-step
+
+Since $p$ is a deformation retraction,
 \[
 p\circ j
 =
 \operatorname{id}_B.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A deformation retraction is, in particular, a retraction. Thus
 \[
 p(b)=b
@@ -46,9 +51,14 @@ p(b)=b
 (b\in B),
 \]
 which is exactly the displayed identity.
+
 :::
 
-<1>2. There is a homotopy
+:::
+
+::: pf-step
+
+There is a homotopy
 \[
 H:Y\times I\to Y
 \]
@@ -67,13 +77,22 @@ H(b,t)=b
 (b\in B, t\in I).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining homotopy of a deformation retraction of $Y$ onto $B$.
+
 :::
 
-<1>3. The homotopy in step <1>2 is a based homotopy at $b_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The homotopy in step <1>2 is a based homotopy at $b_0$.
+
+
+::: pf-proof
+
 Since $b_0\in B$, step <1>2 gives
 \[
 H(b_0,t)=b_0
@@ -81,16 +100,23 @@ H(b_0,t)=b_0
 (t\in I).
 \]
 Thus the basepoint remains fixed throughout the homotopy.
+
 :::
 
-<1>4. On fundamental groups,
+:::
+
+::: pf-step
+
+On fundamental groups,
 \[
 p_*\circ j_*
 =
 \operatorname{id}_{\pi_1(B,b_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By functoriality and step <1>1,
 \[
 p_*\circ j_*
@@ -101,16 +127,23 @@ p_*\circ j_*
 =
 \operatorname{id}_{\pi_1(B,b_0)}.
 \]
+
 :::
 
-<1>5. On fundamental groups,
+:::
+
+::: pf-step
+
+On fundamental groups,
 \[
 j_*\circ p_*
 =
 \operatorname{id}_{\pi_1(Y,b_0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By functoriality,
 \[
 j_*\circ p_*
@@ -131,9 +164,14 @@ are based-homotopic. Based-homotopic maps induce the same homomorphism on fundam
 =
 \operatorname{id}_{\pi_1(Y,b_0)}.
 \]
+
 :::
 
-<1>6. The homomorphism
+:::
+
+::: pf-step
+
+The homomorphism
 \[
 p_*:
 \pi_1(Y,b_0)
@@ -142,7 +180,9 @@ p_*:
 \]
 is an isomorphism with inverse $j_*$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4 and <1>5 show that
 \[
 p_*\circ j_*
@@ -154,11 +194,15 @@ j_*\circ p_*
 \operatorname{id}.
 \]
 Hence $j_*$ is a two-sided inverse of $p_*$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required isomorphism.
+
 :::
+
 :::

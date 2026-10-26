@@ -24,7 +24,6 @@ d(f(x),f(y))<d(x,y)\qquad\text{for all }x\ne y.
 Prove that there is a unique point $x\in X$ such that $f(x)=x$.
 :::
 
-::: {.solution}
 Define
 \[
 h:X\to\mathbb R,
@@ -32,9 +31,15 @@ h:X\to\mathbb R,
 h(x)=d(x,f(x)).
 \]
 
-<1>1. The map $f$ is continuous.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $f$ is continuous.
+
+
+::: pf-proof
+
 For $x\ne y$,
 \[
 d(f(x),f(y))<d(x,y),
@@ -44,11 +49,18 @@ and for $x=y$ both sides are zero. Hence for all $x,y\in X$,
 d(f(x),f(y))\le d(x,y).
 \]
 Thus $f$ is $1$-Lipschitz, and therefore continuous.
+
 :::
 
-<1>2. The function $h$ is continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h$ is continuous.
+
+
+::: pf-proof
+
 The map
 \[
 x\longmapsto (x,f(x))
@@ -68,23 +80,37 @@ Therefore their composition
 h(x)=d(x,f(x))
 \]
 is continuous.
+
 :::
 
-<1>3. There exists $x_0\in X$ such that
+:::
+
+::: pf-step
+
+There exists $x_0\in X$ such that
 \[
 h(x_0)=\min_{x\in X}h(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space $X$ is compact and $h$ is continuous by step <1>2. The extreme value theorem therefore gives a minimizer $x_0$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 h(x_0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that
 \[
 h(x_0)>0.
@@ -105,11 +131,18 @@ h(f(x_0))<h(x_0),
 \]
 contradicting the minimality of $x_0$ from step <1>3.
 Thus $h(x_0)=0$.
+
 :::
 
-<1>5. The point $x_0$ is a fixed point of $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The point $x_0$ is a fixed point of $f$.
+
+
+::: pf-proof
+
 By step <1>4,
 \[
 d(x_0,f(x_0))=0.
@@ -118,11 +151,18 @@ Since $d$ is a metric,
 \[
 \boxed{f(x_0)=x_0}.
 \]
+
 :::
 
-<1>6. The fixed point is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The fixed point is unique.
+
+
+::: pf-proof
+
 Suppose $x$ and $y$ are distinct fixed points. Then
 \[
 d(x,y)
@@ -132,11 +172,15 @@ d(f(x),f(y))
 d(x,y),
 \]
 an impossibility. Hence no two distinct fixed points exist.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves existence, and step <1>6 proves uniqueness.
+
 :::
+
 :::

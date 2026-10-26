@@ -24,12 +24,17 @@ Show that if $f_n\to f$ uniformly on the bounded closed interval $[a,b]$, then
 \]
 :::
 
-::: {.solution}
 The displayed integrals require the usual implicit hypothesis that each $f_n$ is Riemann integrable. Under that hypothesis, uniform convergence also implies that $f$ is Riemann integrable.
 
-<1>1. The uniform limit $f$ is Riemann integrable on $[a,b]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The uniform limit $f$ is Riemann integrable on $[a,b]$.
+
+
+::: pf-proof
+
 Let $\varepsilon>0$. Choose $N$ such that
 \[
 \|f-f_N\|_\infty
@@ -62,9 +67,14 @@ U(f_N,P)-L(f_N,P)+2\delta(b-a)
 \varepsilon.
 \]
 By the Darboux criterion, $f$ is Riemann integrable.
+
 :::
 
-<1>2. For every $n$,
+:::
+
+::: pf-step
+
+For every $n$,
 \[
 \left|
 \int_a^b f_n(x)\,dx
@@ -75,7 +85,9 @@ By the Darboux criterion, $f$ is Riemann integrable.
 (b-a)\|f_n-f\|_\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f_n-f$ is Riemann integrable by step <1>1 and linearity of the Riemann integral. Since
 \[
 -\|f_n-f\|_\infty
@@ -93,9 +105,14 @@ for every $x\in[a,b]$, monotonicity of the integral gives
 (b-a)\|f_n-f\|_\infty.
 \]
 Taking absolute values yields the claim.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \int_a^b f_n(x)\,dx
@@ -104,17 +121,23 @@ Taking absolute values yields the claim.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence means
 \[
 \|f_n-f\|_\infty\to0.
 \]
 Therefore the right side of the estimate in step <1>2 tends to $0$, forcing the difference of the integrals to tend to $0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 justifies the existence of the limiting integral, and step <1>3 proves the stated convergence.
+
 :::
+
 :::

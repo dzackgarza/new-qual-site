@@ -18,7 +18,6 @@ Calculate
 \]
 :::
 
-::: {.solution}
 For integers \(n\ge2\), define
 \[
 I_n
@@ -26,7 +25,11 @@ I_n
 \int_1^n x^{-n}\,dx.
 \]
 
-<1>1. Since \(n\ne1\),
+::: pf
+
+::: pf-step
+
+Since \(n\ne1\),
 \[
 \boxed{
 \int x^{-n}\,dx
@@ -34,7 +37,9 @@ I_n
 \frac{x^{1-n}}{1-n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 \[
 \frac{d}{dx}
@@ -44,9 +49,14 @@ Differentiate:
 =
 x^{-n}.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 I_n
 =
@@ -55,22 +65,36 @@ I_n
 \right]_1^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the fundamental theorem of calculus using step <1>1.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 I_n
 =
 \frac{n^{1-n}-1}{1-n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the endpoints \(x=n\) and \(x=1\).
+
 :::
 
-<1>4. Rewriting,
+:::
+
+::: pf-step
+
+Rewriting,
 \[
 \boxed{
 I_n
@@ -78,18 +102,27 @@ I_n
 \frac{1-n^{1-n}}{n-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply numerator and denominator in step <1>3 by \(-1\).
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 0<n^{1-n}\le1}
 \]
 for \(n\ge2\).
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 n^{1-n}
@@ -97,9 +130,14 @@ n^{1-n}
 \frac1{n^{n-1}},
 \]
 the denominator is at least \(1\).
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 0
 \le
@@ -108,15 +146,22 @@ I_n
 \frac1{n-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>5,
 \[
 0\le1-n^{1-n}\le1.
 \]
 Divide by the positive number \(n-1\).
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \frac1{n-1}\to0,
 \]
@@ -126,11 +171,18 @@ the squeeze theorem gives
 I_n\to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the squeeze theorem to step <1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -139,13 +191,19 @@ Apply the squeeze theorem to step <1>6.
 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested limit.
+
 :::
+
 :::

@@ -15,7 +15,6 @@ review: draft
 Let $\begin{array} { r } { f ( x ) = \int _ { 0 } ^ { x } \cos ^ { 2 } ( t ^ { 2 } ) d t } \end{array}$ . Find $( f ^ { - 1 } ) ^ { \prime } ( y )$ for $y = f ( 3 )$
 :::
 
-::: {.solution}
 Let
 \[
 f(x)
@@ -24,23 +23,36 @@ f(x)
 \cos^2(t^2)\,dt.
 \]
 
-<1>1. By the fundamental theorem of calculus,
+::: pf
+
+::: pf-step
+
+By the fundamental theorem of calculus,
 \[
 \boxed{
 f'(x)=\cos^2(x^2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is continuous, so differentiation with respect to the upper
 limit gives
 \[
 f'(x)=\cos^2(x^2).
 \]
+
 :::
 
-<1>2. The function \(f\) is strictly increasing.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) is strictly increasing.
+
+
+::: pf-proof
+
 The derivative satisfies
 \[
 f'(x)=\cos^2(x^2)\ge0.
@@ -58,16 +70,28 @@ f(b)-f(a)
 0.
 \]
 Hence \(f\) is strictly increasing.
+
 :::
 
-<1>3. Therefore \(f\) has an inverse on its image.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(f\) has an inverse on its image.
+
+
+::: pf-proof
+
 Every strictly increasing function is injective, so it has a well-defined
 inverse from its image back to its domain.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 y=f(3),
 \]
@@ -77,29 +101,45 @@ one has
 f^{-1}(y)=3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply \(f^{-1}\) to
 \[
 y=f(3).
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 f'(3)=\cos^2(9)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(x=3\) into step <1>1:
 \[
 x^2=9.
 \]
+
 :::
 
-<1>6. The value \(\cos 9\) is nonzero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The value \(\cos 9\) is nonzero.
+
+
+::: pf-proof
+
 If \(\cos9=0\), then
 \[
 9=\frac{\pi}{2}+k\pi
@@ -111,20 +151,32 @@ for some integer \(k\), which would imply
 \pi=\frac{18}{2k+1},
 \]
 a rational number, contradicting the irrationality of \(\pi\).
+
 :::
 
-<1>7. Hence the inverse-function derivative formula applies:
+:::
+
+::: pf-step
+
+Hence the inverse-function derivative formula applies:
 \[
 (f^{-1})'(y)
 =
 \frac1{f'(f^{-1}(y))}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator is nonzero at the relevant point by steps <1>4--<1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (f^{-1})'(f(3))
 =
@@ -133,27 +185,40 @@ The denominator is nonzero at the relevant point by steps <1>4--<1>6.
 \frac1{\cos^2(9)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>4--<1>7.
+
 :::
 
-<1>9. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 (f^{-1})'(y)=\sec^2(9)
 \qquad\text{for }y=f(3)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \sec^2(9)=\frac1{\cos^2(9)}.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the requested derivative.
+
 :::
+
 :::

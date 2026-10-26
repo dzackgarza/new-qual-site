@@ -19,26 +19,36 @@ audit:
 $\mathrm { C a l c u l a t e } \int \log { x d x } .$
 :::
 
-::: {.solution}
 Assume $x>0$.
 
-<1>1. Use integration by parts with
+::: pf
+
+::: pf-step
+
+Use integration by parts with
 $$
 u=\log x,
 \qquad
 dv=dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Then
 $$
 du=\frac{dx}{x},
 \qquad
 v=x.
 $$
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int\log x\,dx
 =
@@ -47,15 +57,22 @@ x\log x
 \int1\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply
 $$
 \int u\,dv=uv-\int v\,du
 $$
 using step <1>1.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \int\log x\,dx
@@ -64,13 +81,19 @@ x\log x-x+C.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the remaining integral in step <1>2.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required antiderivative.
+
 :::
+
 :::

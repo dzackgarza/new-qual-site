@@ -17,19 +17,24 @@ Suppose that the set of powers $A ^ { n }$ of A, for $n \in \mathbb { Z } ,$ is 
 Show that A is diagonalizable.
 :::
 
-::: {.solution}
 Fix any matrix norm on $M_n(\mathbb C)$. By hypothesis there is $C>0$ such that
 \[
 \|A^k\|\le C
 \]
 for every $k\in\mathbb Z$.
 
-<1>1. Every eigenvalue $\lambda$ of $A$ satisfies
+::: pf
+
+::: pf-step
+
+Every eigenvalue $\lambda$ of $A$ satisfies
 \[
 |\lambda|=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 Av=\lambda v
@@ -67,9 +72,14 @@ Applying the same argument to the bounded positive powers of $A^{-1}$ gives
 |\lambda^{-1}|\le1,
 \]
 so $|\lambda|\ge1$. Therefore $|\lambda|=1$.
+
 :::
 
-<1>2. If $A$ were not diagonalizable, then there would exist an eigenvalue $\lambda$ and vectors $v,w$ with
+:::
+
+::: pf-step
+
+If $A$ were not diagonalizable, then there would exist an eigenvalue $\lambda$ and vectors $v,w$ with
 \[
 w\ne0,
 \qquad
@@ -78,7 +88,9 @@ w\ne0,
 (A-\lambda I)w=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Over $\mathbb C$, the minimal polynomial of $A$ splits into linear factors.
 A matrix is diagonalizable if and only if its minimal polynomial has no repeated root.
 
@@ -118,9 +130,14 @@ m_A(A)u
 =0.
 \]
 Thus the stated vectors exist whenever $A$ is not diagonalizable.
+
 :::
 
-<1>3. For the vectors in step <1>2 and every integer $k\ge1$,
+:::
+
+::: pf-step
+
+For the vectors in step <1>2 and every integer $k\ge1$,
 \[
 A^kv
 =
@@ -129,7 +146,9 @@ A^kv
 k\lambda^{k-1}w.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the span of $v,w$, write
 \[
 A=\lambda I+N,
@@ -153,11 +172,18 @@ The binomial theorem gives
 k\lambda^{k-1}Nv,
 \]
 because all terms involving $N^j$ for $j\ge2$ vanish on $v$. Since $Nv=w$, the formula follows.
+
 :::
 
-<1>4. The formula in step <1>3 contradicts boundedness of the powers of $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The formula in step <1>3 contradicts boundedness of the powers of $A$.
+
+
+::: pf-proof
+
 By step <1>1,
 \[
 |\lambda|=1.
@@ -182,20 +208,31 @@ On the other hand,
 C\|v\|,
 \]
 which is bounded independently of $k$. This is a contradiction.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{A\text{ is diagonalizable over }\mathbb C}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $A$ were not diagonalizable, steps <1>2--<1>4 would contradict the assumed boundedness of its integer powers. Hence $A$ must be diagonalizable.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

@@ -15,7 +15,6 @@ review: draft
 Decide whether the following integral converges: $\int _ { 0 } ^ { \infty } { \frac { d x } { 1 + x ^ { 4 } \sin ^ { 2 } ( x ) } }$
 :::
 
-::: {.solution}
 Let
 \[
 f(x)
@@ -23,13 +22,19 @@ f(x)
 \frac1{1+x^4\sin^2x}.
 \]
 
-<1>1. The integral over the initial interval
+::: pf
+
+::: pf-step
+
+The integral over the initial interval
 \[
 [0,\pi/2]
 \]
 is finite.
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(f\) is continuous on the compact interval
 \[
 [0,\pi/2],
@@ -39,9 +44,14 @@ and
 0<f(x)\le1.
 \]
 Hence its integral there is finite.
+
 :::
 
-<1>2. For every real \(u\) with
+:::
+
+::: pf-step
+
+For every real \(u\) with
 \[
 |u|\le\frac{\pi}{2},
 \]
@@ -53,7 +63,9 @@ one has
 \frac{2}{\pi}|u|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On
 \[
 [0,\pi/2],
@@ -71,9 +83,14 @@ Thus
 \frac{2u}{\pi}
 \]
 for \(0\le u\le\pi/2\). Oddness of \(\sin\) gives the absolute-value form.
+
 :::
 
-<1>3. For each integer \(n\ge1\), define
+:::
+
+::: pf-step
+
+For each integer \(n\ge1\), define
 \[
 I_n
 =
@@ -83,15 +100,22 @@ n\pi+\frac{\pi}{2}
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These intervals cover
 \[
 [\pi/2,\infty)
 \]
 and each contains exactly one zero \(n\pi\) of \(\sin x\).
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 x=n\pi+u\in I_n,
 \]
@@ -107,7 +131,9 @@ and
 |\sin u|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(n\in\mathbb Z\),
 \[
 \sin(n\pi+u)
@@ -115,9 +141,14 @@ Since \(n\in\mathbb Z\),
 (-1)^n\sin u.
 \]
 Taking absolute values gives the result.
+
 :::
 
-<1>5. For \(x\in I_n\),
+:::
+
+::: pf-step
+
+For \(x\in I_n\),
 \[
 \boxed{
 x
@@ -125,16 +156,23 @@ x
 \left(n-\frac12\right)\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The left endpoint of \(I_n\) is
 \[
 n\pi-\frac{\pi}{2}
 =
 \left(n-\frac12\right)\pi.
 \]
+
 :::
 
-<1>6. Combining steps <1>2, <1>4, and <1>5,
+:::
+
+::: pf-step
+
+Combining steps <1>2, <1>4, and <1>5,
 \[
 x^4\sin^2x
 \ge
@@ -143,7 +181,9 @@ x^4\sin^2x
 u^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>5,
 \[
 x^4
@@ -159,9 +199,14 @@ From steps <1>2 and <1>4,
 \frac{4u^2}{\pi^2}.
 \]
 Multiply the inequalities.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \int_{I_n}f(x)\,dx
 \le
@@ -171,15 +216,22 @@ Multiply the inequalities.
 4\pi^2(n-\frac12)^4u^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the substitution
 \[
 x=n\pi+u
 \]
 and the denominator bound from step <1>6.
+
 :::
 
-<1>8. Extending the domain of integration,
+:::
+
+::: pf-step
+
+Extending the domain of integration,
 \[
 \int_{I_n}f(x)\,dx
 \le
@@ -189,11 +241,18 @@ and the denominator bound from step <1>6.
 4\pi^2(n-\frac12)^4u^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is nonnegative.
+
 :::
 
-<1>9. For every \(A>0\),
+:::
+
+::: pf-step
+
+For every \(A>0\),
 \[
 \boxed{
 \int_{-\infty}^{\infty}
@@ -202,7 +261,9 @@ The integrand is nonnegative.
 \frac{\pi}{A}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 v=Au.
@@ -222,9 +283,14 @@ so
 =
 \frac{\pi}{A}.
 \]
+
 :::
 
-<1>10. Applying step <1>9 with
+:::
+
+::: pf-step
+
+Applying step <1>9 with
 \[
 A
 =
@@ -238,7 +304,9 @@ one gets
 \frac1{2(n-\frac12)^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator in step <1>8 is
 \[
 1+A^2u^2
@@ -252,16 +320,23 @@ for the displayed \(A\). Then
 =
 \frac1{2(n-\frac12)^2}.
 \]
+
 :::
 
-<1>11. The series
+:::
+
+::: pf-step
+
+The series
 \[
 \sum_{n=1}^{\infty}
 \frac1{2(n-\frac12)^2}
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 For \(n\ge1\),
 \[
 n-\frac12
@@ -278,16 +353,23 @@ Compare with the convergent \(p\)-series
 \[
 \sum\frac1{n^2}.
 \]
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_{\pi/2}^{\infty}
 f(x)\,dx
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 [\pi/2,\infty)
@@ -302,9 +384,14 @@ up to shared endpoints. Since \(f\ge0\),
 \int_{I_n}f(x)\,dx.
 \]
 Steps <1>10--<1>11 give a convergent majorant for this series.
+
 :::
 
-<1>13. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_0^\infty
@@ -312,14 +399,20 @@ Steps <1>10--<1>11 give a convergent majorant for this series.
 \text{ converges}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integral over \([0,\pi/2]\) is finite by step <1>1, and the tail
 converges by step <1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 is the required convergence decision.
+
 :::
+
 :::

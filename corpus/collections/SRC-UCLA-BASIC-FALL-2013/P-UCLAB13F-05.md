@@ -27,7 +27,6 @@ Assume that $f$ is continuously differentiable and
 for all $x,y\in\mathbb R^d$. Prove that $f$ is convex.
 :::
 
-::: {.solution}
 Fix $x,y\in\mathbb R^d$ and put
 \[
 v=x-y,
@@ -37,24 +36,37 @@ g(t)=f(y+tv),
 0\le t\le1.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 g'(t)=\nabla f(y+tv)\cdot v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the chain rule applied to the affine path
 \[
 t\longmapsto y+tv.
 \]
+
 :::
 
-<1>2. If $0\le s<t\le1$, then
+:::
+
+::: pf-step
+
+If $0\le s<t\le1$, then
 \[
 g'(t)\ge g'(s).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 g'(t)-g'(s)
@@ -84,16 +96,23 @@ Dividing by $t-s>0$ yields
 \[
 g'(t)-g'(s)\ge0.
 \]
+
 :::
 
-<1>3. For every $0<\alpha<1$,
+:::
+
+::: pf-step
+
+For every $0<\alpha<1$,
 \[
 \frac{g(\alpha)-g(0)}{\alpha}
 \le
 \frac{g(1)-g(\alpha)}{1-\alpha}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the fundamental theorem of calculus,
 \[
 g(\alpha)-g(0)
@@ -114,16 +133,23 @@ Hence the average of $g'$ on the first interval is at most its average on the se
 \frac1{1-\alpha}\int_\alpha^1g'(t)\,dt.
 \]
 Substitute the two integral identities.
+
 :::
 
-<1>4. For every $0\le\alpha\le1$,
+:::
+
+::: pf-step
+
+For every $0\le\alpha\le1$,
 \[
 g(\alpha)
 \le
 (1-\alpha)g(0)+\alpha g(1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<\alpha<1$, multiply step <1>3 by $\alpha(1-\alpha)$:
 \[
 (1-\alpha)(g(\alpha)-g(0))
@@ -132,9 +158,14 @@ For $0<\alpha<1$, multiply step <1>3 by $\alpha(1-\alpha)$:
 \]
 Rearranging gives the displayed inequality.
 For $\alpha=0$ or $1$, it is equality.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 f(\alpha x+(1-\alpha)y)
 \le
@@ -142,7 +173,9 @@ f(\alpha x+(1-\alpha)y)
 \]
 for all $x,y$ and $0\le\alpha\le1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 g(0)=f(y),
@@ -158,20 +191,31 @@ f(y+\alpha(x-y))
 f(\alpha x+(1-\alpha)y).
 \]
 Substitute these identities into step <1>4.
+
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{f\text{ is convex}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 is exactly the defining convexity inequality.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

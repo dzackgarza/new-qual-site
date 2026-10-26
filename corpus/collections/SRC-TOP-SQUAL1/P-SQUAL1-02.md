@@ -18,13 +18,16 @@ Show that there are disjoint open sets $U,V\subseteq X$ such that
 $$A\subseteq U,\qquad B\subseteq V.$$
 :::
 
-::: {.solution}
 Fix
 \[
 a\in A.
 \]
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 b\in B,
 \]
@@ -37,22 +40,36 @@ and
 V_{a,b}\ni b.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space \(X\) is Hausdorff and \(a\ne b\) because \(A\cap B=\varnothing\).
 Therefore \(a\) and \(b\) have disjoint open neighborhoods.
+
 :::
 
-<1>2. The family
+:::
+
+::: pf-step
+
+The family
 \[
 \{V_{a,b}:b\in B\}
 \]
 is an open cover of \(B\).
 
-::: {.proof}
+
+::: pf-proof
+
 Each point \(b\in B\) belongs to its chosen neighborhood \(V_{a,b}\).
+
 :::
 
-<1>3. By compactness of \(B\), choose
+:::
+
+::: pf-step
+
+By compactness of \(B\), choose
 \[
 b_1,\dots,b_m\in B
 \]
@@ -63,11 +80,18 @@ B\subseteq
 V_{a,b_1}\cup\cdots\cup V_{a,b_m}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every open cover of a compact set has a finite subcover.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 U_a
@@ -82,29 +106,52 @@ V_a
 \bigcup_{j=1}^{m}V_{a,b_j}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are finite intersections and finite unions of open sets.
+
 :::
 
-<1>5. The set \(U_a\) is open and contains \(a\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The set \(U_a\) is open and contains \(a\).
+
+
+::: pf-proof
+
 Every \(U_{a,b_j}\) is open and contains \(a\), so their finite intersection is open and still contains \(a\).
+
 :::
 
-<1>6. The set \(V_a\) is open and contains \(B\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The set \(V_a\) is open and contains \(B\).
+
+
+::: pf-proof
+
 It is a finite union of open sets, and containment of \(B\) follows from step <1>3.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 U_a\cap V_a=\varnothing}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 x\in U_a\cap V_a.
@@ -122,21 +169,31 @@ But
 U_{a,b_j}\cap V_{a,b_j}=\varnothing
 \]
 by step <1>1, contradiction.
+
 :::
 
-Now let \(a\) vary in \(A\).
+:::
 
-<1>8. The family
+::: pf-step
+
+The family
 \[
 \{U_a:a\in A\}
 \]
 is an open cover of \(A\).
 
-::: {.proof}
+
+::: pf-proof
+
 Each \(a\in A\) lies in its corresponding open set \(U_a\) by step <1>5.
+
 :::
 
-<1>9. By compactness of \(A\), choose
+:::
+
+::: pf-step
+
+By compactness of \(A\), choose
 \[
 a_1,\dots,a_r\in A
 \]
@@ -147,11 +204,18 @@ A\subseteq
 U_{a_1}\cup\cdots\cup U_{a_r}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply compactness of \(A\) to the open cover from step <1>8.
+
 :::
 
-<1>10. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 U=
@@ -164,29 +228,52 @@ V=
 \bigcap_{i=1}^{r}V_{a_i}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are respectively a finite union and a finite intersection of open sets.
+
 :::
 
-<1>11. The set \(U\) is open and contains \(A\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The set \(U\) is open and contains \(A\).
+
+
+::: pf-proof
+
 Openness follows from the union in step <1>10, and containment follows from step <1>9.
+
 :::
 
-<1>12. The set \(V\) is open and contains \(B\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The set \(V\) is open and contains \(B\).
+
+
+::: pf-proof
+
 Every \(V_{a_i}\) is open and contains \(B\) by step <1>6. Therefore their finite intersection is open and still contains \(B\).
+
 :::
 
-<1>13. The sets \(U\) and \(V\) are disjoint:
+:::
+
+::: pf-step
+
+The sets \(U\) and \(V\) are disjoint:
 \[
 \boxed{
 U\cap V=\varnothing}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 x\in U\cap V.
@@ -204,9 +291,14 @@ This contradicts
 U_{a_i}\cap V_{a_i}=\varnothing
 \]
 from step <1>7.
+
 :::
 
-<1>14. Therefore there exist disjoint open sets \(U,V\subseteq X\) such that
+:::
+
+::: pf-step
+
+Therefore there exist disjoint open sets \(U,V\subseteq X\) such that
 \[
 \boxed{
 A\subseteq U,
@@ -214,13 +306,19 @@ A\subseteq U,
 B\subseteq V}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>11--<1>13.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>14 is the required conclusion.
+
 :::
+
 :::

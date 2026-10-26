@@ -25,7 +25,6 @@ a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+\cdots+ab^{n-2}+b^{n-1})
 may be useful.
 :::
 
-::: {.solution}
 ## Part (a)
 
 Fix
@@ -41,7 +40,11 @@ Let
 p_n(x)=x^n.
 \]
 
-<1>1. The algebraic identity
+::: pf
+
+::: pf-step
+
+The algebraic identity
 \[
 x^n-a^n
 =
@@ -52,11 +55,18 @@ x^{n-1}+x^{n-2}a+\cdots+xa^{n-2}+a^{n-1}
 \]
 holds for all real \(x,a\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard factorization of a difference of \(n\)th powers.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 |x-a|<1,
 \]
@@ -65,7 +75,9 @@ then
 \boxed{|x|<|a|+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the triangle inequality,
 \[
 |x|
@@ -74,9 +86,14 @@ By the triangle inequality,
 <
 1+|a|.
 \]
+
 :::
 
-<1>3. Under the same hypothesis,
+:::
+
+::: pf-step
+
+Under the same hypothesis,
 \[
 \left|
 x^{n-1}+x^{n-2}a+\cdots+a^{n-1}
@@ -85,7 +102,9 @@ x^{n-1}+x^{n-2}a+\cdots+a^{n-1}
 n(|a|+1)^{n-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are \(n\) terms. Each term has total degree \(n-1\) in \(x\) and \(a\).
 By step <1>2,
 \[
@@ -100,9 +119,14 @@ Hence the modulus of each term is at most
 (|a|+1)^{n-1}.
 \]
 Apply the triangle inequality.
+
 :::
 
-<1>4. Therefore, whenever
+:::
+
+::: pf-step
+
+Therefore, whenever
 \[
 |x-a|<1,
 \]
@@ -114,11 +138,18 @@ one has
 n(|a|+1)^{n-1}|x-a|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take absolute values in step <1>1 and apply step <1>3.
+
 :::
 
-<1>5. Given
+:::
+
+::: pf-step
+
+Given
 \[
 \varepsilon>0,
 \]
@@ -134,11 +165,18 @@ define
 \right\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator is positive for every \(n\ge1\).
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 |x-a|<\delta,
 \]
@@ -148,7 +186,9 @@ then
 |x^n-a^n|<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \delta\le1,
@@ -168,39 +208,46 @@ n(|a|+1)^{n-1}|x-a|
 <
 \varepsilon.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 p_n(x)=x^n
 \text{ is continuous at every }a\in\mathbb R}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 is the \(\varepsilon\)-\(\delta\) definition of continuity, with
 the explicit \(\delta\) from step <1>5.
+
 :::
 
-<1>8. Therefore \(p_n\) is continuous on all of \(\mathbb R\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(p_n\) is continuous on all of \(\mathbb R\).
+
+
+::: pf-proof
+
 The point \(a\) in step <1>7 was arbitrary.
+
 :::
 
-## Part (b)
+:::
 
-Fix
-\[
-a>0.
-\]
-Let
-\[
-f(x)=\sqrt x
-\]
-on \((0,\infty)\).
+::: pf-step
 
-<1>9. For \(x>0\),
+For \(x>0\),
 \[
 \boxed{
 |\sqrt x-\sqrt a|
@@ -209,15 +256,22 @@ on \((0,\infty)\).
 {\sqrt x+\sqrt a}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Rationalize:
 \[
 (\sqrt x-\sqrt a)(\sqrt x+\sqrt a)=x-a.
 \]
 The denominator is positive.
+
 :::
 
-<1>10. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \sqrt x+\sqrt a\ge\sqrt a,
 \]
@@ -229,21 +283,35 @@ one has
 \frac{|x-a|}{\sqrt a}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the lower bound to the denominator in step <1>9.
+
 :::
 
-<1>11. Given \(\varepsilon>0\), choose
+:::
+
+::: pf-step
+
+Given \(\varepsilon>0\), choose
 \[
 \boxed{
 \delta=\varepsilon\sqrt a}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(a>0\), this \(\delta\) is positive.
+
 :::
 
-<1>12. If
+:::
+
+::: pf-step
+
+If
 \[
 x>0
 \qquad\text{and}\qquad
@@ -255,7 +323,9 @@ then
 |\sqrt x-\sqrt a|<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10,
 \[
 |\sqrt x-\sqrt a|
@@ -266,41 +336,32 @@ By step <1>10,
 =
 \varepsilon.
 \]
+
 :::
 
-<1>13. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \sqrt x
 \text{ is continuous on }(0,\infty)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>12 proves continuity at the arbitrary point \(a>0\).
+
 :::
 
-## Part (c)
+:::
 
-Fix
-\[
-n\in\mathbb N,
-\qquad
-a>0,
-\]
-and define
-\[
-f_n(x)=x^{1/n}
-\]
-for \(x>0\).
+::: pf-step
 
-Set
-\[
-u=x^{1/n},
-\qquad
-v=a^{1/n}.
-\]
-
-<1>14. The difference-of-powers identity gives
+The difference-of-powers identity gives
 \[
 x-a
 =
@@ -316,7 +377,9 @@ v^{n-1}
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 u^n=x
@@ -324,16 +387,23 @@ u^n=x
 v^n=a,
 \]
 apply the identity from the problem to \(u^n-v^n\).
+
 :::
 
-<1>15. Every term in the parenthesized sum is nonnegative, and the last term
+:::
+
+::: pf-step
+
+Every term in the parenthesized sum is nonnegative, and the last term
 equals
 \[
 \boxed{
 v^{n-1}=a^{(n-1)/n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because \(x,a>0\),
 \[
 u,v>0.
@@ -346,9 +416,14 @@ v^{n-1}
 =
 a^{(n-1)/n}.
 \]
+
 :::
 
-<1>16. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \left|
 u^{n-1}
@@ -361,11 +436,18 @@ v^{n-1}
 a^{(n-1)/n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sum is positive and contains the positive term from step <1>15.
+
 :::
 
-<1>17. Taking absolute values in step <1>14,
+:::
+
+::: pf-step
+
+Taking absolute values in step <1>14,
 \[
 \boxed{
 |x^{1/n}-a^{1/n}|
@@ -374,12 +456,19 @@ The sum is positive and contains the positive term from step <1>15.
 {a^{(n-1)/n}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The second factor in step <1>14 is positive and bounded below as in step
 <1>16. Divide by it.
+
 :::
 
-<1>18. Given
+:::
+
+::: pf-step
+
+Given
 \[
 \varepsilon>0,
 \]
@@ -392,11 +481,18 @@ choose
 a^{(n-1)/n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(a>0\), this is positive.
+
 :::
 
-<1>19. If
+:::
+
+::: pf-step
+
+If
 \[
 x>0
 \qquad\text{and}\qquad
@@ -408,7 +504,9 @@ then
 |x^{1/n}-a^{1/n}|<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>17:
 \[
 |x^{1/n}-a^{1/n}|
@@ -424,23 +522,34 @@ a^{(n-1)/n}
 =
 \varepsilon.
 \]
+
 :::
 
-<1>20. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 f_n(x)=x^{1/n}
 \text{ is continuous on }(0,\infty)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>19 proves continuity at the arbitrary point \(a>0\).
+
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5--<1>8 prove part (a) with explicit \(\delta\), steps
 <1>9--<1>13 prove part (b), and steps <1>14--<1>20 prove part (c).
+
 :::
+
 :::

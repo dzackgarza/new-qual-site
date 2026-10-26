@@ -20,30 +20,47 @@ For what values of α the following integrals are convergent?
 (a) $\int _ { 0 } ^ { 1 } { \frac { d x } { x ^ { \alpha } } } .$ (b) $\int _ { 1 } ^ { \infty } { \frac { d x } { x ^ { \alpha } } } .$
 :::
 
-::: {.solution}
-<1>1. For $\alpha\neq1$,
+::: pf
+
+::: pf-step
+
+For $\alpha\neq1$,
 $$
 \int x^{-\alpha}\,dx
 =
 \frac{x^{1-\alpha}}{1-\alpha}+C.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the right-hand side.
+
 :::
 
-<1>2. For $0<\varepsilon<1$ and $\alpha\neq1$,
+:::
+
+::: pf-step
+
+For $0<\varepsilon<1$ and $\alpha\neq1$,
 $$
 \int_\varepsilon^1 x^{-\alpha}\,dx
 =
 \frac{1-\varepsilon^{1-\alpha}}{1-\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the antiderivative from step <1>1 at the endpoints.
+
 :::
 
-<1>3. If $\alpha<1$, then
+:::
+
+::: pf-step
+
+If $\alpha<1$, then
 $$
 \int_0^1 x^{-\alpha}\,dx
 $$
@@ -52,36 +69,52 @@ $$
 \frac1{1-\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $\alpha<1$, one has $1-\alpha>0$, so
 $$
 \varepsilon^{1-\alpha}\to0
 $$
 as $\varepsilon\to0^+$. Apply step <1>2.
+
 :::
 
-<1>4. If $\alpha>1$, then
+:::
+
+::: pf-step
+
+If $\alpha>1$, then
 $$
 \int_0^1 x^{-\alpha}\,dx
 $$
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 Now $1-\alpha<0$, so
 $$
 \varepsilon^{1-\alpha}\to\infty
 $$
 as $\varepsilon\to0^+$. The expression in step <1>2 therefore has no finite
 limit.
+
 :::
 
-<1>5. If $\alpha=1$, then
+:::
+
+::: pf-step
+
+If $\alpha=1$, then
 $$
 \int_0^1\frac{dx}{x}
 $$
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<\varepsilon<1$,
 $$
 \int_\varepsilon^1\frac{dx}{x}
@@ -89,9 +122,14 @@ $$
 -\log\varepsilon
 \longrightarrow\infty.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \int_0^1 x^{-\alpha}\,dx
@@ -99,22 +137,36 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3--<1>5.
+
 :::
 
-<1>7. For $R>1$ and $\alpha\neq1$,
+:::
+
+::: pf-step
+
+For $R>1$ and $\alpha\neq1$,
 $$
 \int_1^R x^{-\alpha}\,dx
 =
 \frac{R^{1-\alpha}-1}{1-\alpha}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the antiderivative from step <1>1 between $1$ and $R$.
+
 :::
 
-<1>8. If $\alpha>1$, then
+:::
+
+::: pf-step
+
+If $\alpha>1$, then
 $$
 \int_1^\infty x^{-\alpha}\,dx
 $$
@@ -123,7 +175,9 @@ $$
 \frac1{\alpha-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Now $1-\alpha<0$, so
 $$
 R^{1-\alpha}\to0
@@ -134,25 +188,39 @@ $$
 =
 \frac1{\alpha-1}.
 $$
+
 :::
 
-<1>9. If $\alpha<1$, then
+:::
+
+::: pf-step
+
+If $\alpha<1$, then
 $$
 \int_1^\infty x^{-\alpha}\,dx
 $$
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 Then $1-\alpha>0$, so $R^{1-\alpha}\to\infty$ in step <1>7.
+
 :::
 
-<1>10. If $\alpha=1$, then
+:::
+
+::: pf-step
+
+If $\alpha=1$, then
 $$
 \int_1^\infty\frac{dx}{x}
 $$
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 For $R>1$,
 $$
 \int_1^R\frac{dx}{x}
@@ -160,9 +228,14 @@ $$
 \log R
 \longrightarrow\infty.
 $$
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \int_1^\infty x^{-\alpha}\,dx
@@ -170,13 +243,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>8--<1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6 and <1>11 answer parts (a) and (b), respectively.
+
 :::
+
 :::

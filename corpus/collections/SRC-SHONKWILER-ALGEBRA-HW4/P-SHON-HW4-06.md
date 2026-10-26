@@ -23,7 +23,6 @@ Let $G^{\mathrm{op}}$ be the group with the same underlying set as $G$ and multi
 Prove that $G^{\mathrm{op}}\cong G$.
 :::
 
-::: {.solution}
 Define
 \[
 \phi:G\to G^{\mathrm{op}}
@@ -34,24 +33,42 @@ by
 \phi(g)=g^{-1}}.
 \]
 
-<1>1. The map \(\phi\) is well defined.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map \(\phi\) is well defined.
+
+
+::: pf-proof
+
 The groups \(G\) and \(G^{\mathrm{op}}\) have the same underlying set, and \(g^{-1}\in G\) for every \(g\in G\).
+
 :::
 
-<1>2. Let \(\star\) denote multiplication in \(G^{\mathrm{op}}\). Then
+:::
+
+::: pf-step
+
+Let \(\star\) denote multiplication in \(G^{\mathrm{op}}\). Then
 \[
 \boxed{
 a\star b=ba}
 \]
 where the product on the right is taken in \(G\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the opposite group.
+
 :::
 
-<1>3. For \(x,y\in G\),
+:::
+
+::: pf-step
+
+For \(x,y\in G\),
 \[
 \phi(xy)
 =
@@ -60,11 +77,18 @@ This is the definition of the opposite group.
 y^{-1}x^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the inverse-of-a-product identity in \(G\).
+
 :::
 
-<1>4. Also,
+:::
+
+::: pf-step
+
+Also,
 \[
 \phi(x)\star\phi(y)
 =
@@ -73,32 +97,55 @@ x^{-1}\star y^{-1}
 y^{-1}x^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the reversed multiplication from step <1>2.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \phi(xy)=\phi(x)\star\phi(y)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compare steps <1>3--<1>4.
+
 :::
 
-<1>6. Hence \(\phi\) is a group homomorphism
+:::
+
+::: pf-step
+
+Hence \(\phi\) is a group homomorphism
 \[
 G\to G^{\mathrm{op}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 is exactly the homomorphism condition.
+
 :::
 
-<1>7. The map \(\phi\) is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map \(\phi\) is injective.
+
+
+::: pf-proof
+
 If
 \[
 \phi(x)=\phi(y),
@@ -111,11 +158,18 @@ Taking inverses gives
 \[
 x=y.
 \]
+
 :::
 
-<1>8. The map \(\phi\) is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map \(\phi\) is surjective.
+
+
+::: pf-proof
+
 Given \(z\in G^{\mathrm{op}}\), choose
 \[
 g=z^{-1}\in G.
@@ -124,21 +178,32 @@ Then
 \[
 \phi(g)=g^{-1}=z.
 \]
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 G\cong G^{\mathrm{op}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map \(\phi\) is a bijective homomorphism by steps <1>6--<1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required isomorphism.
+
 :::
+
 :::

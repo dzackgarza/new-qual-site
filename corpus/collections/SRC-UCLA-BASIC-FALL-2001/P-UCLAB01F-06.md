@@ -34,16 +34,21 @@ Do not merely restate the Inverse Function Theorem: the requested argument is pa
 You may use without proof basic estimates expressing that the change in $F$ is approximated by its differential.
 :::
 
-::: {.solution}
 Use the Euclidean norm on $\mathbb R^2$ and the induced operator norm on matrices.
 
-<1>1. There exists $r>0$ such that
+::: pf
+
+::: pf-step
+
+There exists $r>0$ such that
 \[
 \|I-DF(x)\|\le \frac12
 \]
 whenever $\|x\|\le r$.
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative $DF$ is continuous and
 \[
 DF(0)=I.
@@ -52,16 +57,23 @@ Hence $\|DF(x)-I\|\to0$ as $x\to0$. Choose $r>0$ so that the displayed bound hol
 \[
 \overline B_r={x\in\mathbb R^2:\|x\|\le r}.
 \]
+
 :::
 
-<1>2. For all $x,z\in\overline B_r$,
+:::
+
+::: pf-step
+
+For all $x,z\in\overline B_r$,
 \[
 \|(x-F(x))-(z-F(z))\|
 \le
 \frac12\|x-z\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The line segment joining $z$ to $x$ lies in the convex set $\overline B_r$. Apply the fundamental estimate for differentiable maps to
 \[
 H(u)=u-F(u),
@@ -80,9 +92,14 @@ along the segment. Therefore
 \le
 \frac12\|x-z\|.
 \]
+
 :::
 
-<1>3. For any $y\in\mathbb R^2$ with
+:::
+
+::: pf-step
+
+For any $y\in\mathbb R^2$ with
 \[
 \|y\|<\frac r2,
 \]
@@ -97,7 +114,9 @@ sends $\overline B_r$ into itself and satisfies
 \frac12\|x-z\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $F(0)=0$, step <1>2 with $z=0$ gives
 \[
 \|x-F(x)\|\le\frac12\|x\|
@@ -121,9 +140,14 @@ Also the constant vector $y$ cancels in differences, so step <1>2 gives
 \le
 \frac12\|x-z\|.
 \]
+
 :::
 
-<1>4. For such $y$, the iteration
+:::
+
+::: pf-step
+
+For such $y$, the iteration
 \[
 x_0=0,
 \qquad
@@ -131,7 +155,9 @@ x_{n+1}=T_y(x_n)
 \]
 converges to a point $x\in\overline B_r$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows inductively that every $x_n\in\overline B_r$. It also gives
 \[
 \|x_{n+1}-x_n\|
@@ -153,14 +179,21 @@ For $m>n$,
 \|x_1-x_0\|\sum_{j=n}^{\infty}2^{-j},
 \]
 which tends to $0$ as $n\to\infty$. Thus $(x_n)$ is Cauchy. Since $\mathbb R^2$ is complete and $\overline B_r$ is closed, $x_n\to x$ for some $x\in\overline B_r$.
+
 :::
 
-<1>5. The limit $x$ satisfies
+:::
+
+::: pf-step
+
+The limit $x$ satisfies
 \[
 F(x)=y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map $T_y$ is continuous because $F$ is continuous. Passing to the limit in
 \[
 x_{n+1}=T_y(x_n)
@@ -170,15 +203,22 @@ gives
 x=T_y(x)=x+y-F(x).
 \]
 Hence $F(x)=y$.
+
 :::
 
-<1>6. With
+:::
+
+::: pf-step
+
+With
 \[
 \boxed{\delta=\frac{r^2}{4}},
 \]
 every $(a,b)$ satisfying $a^2+b^2<\delta$ lies in the image of $F$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 y=(a,b).
@@ -188,11 +228,15 @@ The inequality $a^2+b^2<r^2/4$ is exactly
 \|y\|<r/2.
 \]
 Step <1>5 therefore supplies $x\in\mathbb R^2$ with $F(x)=y=(a,b)$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required local-surjectivity statement.
+
 :::
+
 :::

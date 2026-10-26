@@ -22,13 +22,16 @@ More generally, if $x_1,\ldots,x_k>0$, evaluate
 \]
 :::
 
-::: {.solution}
 Let
 \[
 M=\max\{x_1,\dots,x_k\}.
 \]
 
-<1>1. For every \(n\ge1\),
+::: pf
+
+::: pf-step
+
+For every \(n\ge1\),
 \[
 \boxed{
 x_1^n+\cdots+x_k^n
@@ -36,11 +39,18 @@ x_1^n+\cdots+x_k^n
 M^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At least one of the \(x_i\) equals \(M\), and all terms are nonnegative.
+
 :::
 
-<1>2. Taking \(n\)th roots,
+:::
+
+::: pf-step
+
+Taking \(n\)th roots,
 \[
 \boxed{
 (x_1^n+\cdots+x_k^n)^{1/n}
@@ -48,35 +58,56 @@ At least one of the \(x_i\) equals \(M\), and all terms are nonnegative.
 M}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(t\mapsto t^{1/n}\) is increasing on \([0,\infty)\).
+
 :::
 
-<1>3. Also, for every \(i\),
+:::
+
+::: pf-step
+
+Also, for every \(i\),
 \[
 x_i^n\le M^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 x_i\le M,
 \]
 and all numbers are positive.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 x_1^n+\cdots+x_k^n
 \le
 kM^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Add the \(k\) inequalities from step <1>3.
+
 :::
 
-<1>5. Taking \(n\)th roots gives
+:::
+
+::: pf-step
+
+Taking \(n\)th roots gives
 \[
 \boxed{
 (x_1^n+\cdots+x_k^n)^{1/n}
@@ -84,22 +115,31 @@ Add the \(k\) inequalities from step <1>3.
 k^{1/n}M}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the increasing \(n\)th-root function to step <1>4:
 \[
 (kM^n)^{1/n}
 =
 k^{1/n}M.
 \]
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \lim_{n\to\infty}k^{1/n}=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Taking logarithms,
 \[
 \log(k^{1/n})
@@ -108,9 +148,14 @@ Taking logarithms,
 \longrightarrow0.
 \]
 Exponentiating gives the limit \(1\).
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -121,7 +166,9 @@ M
 \max_i x_i}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2 and <1>5 give
 \[
 M
@@ -132,9 +179,14 @@ k^{1/n}M.
 \]
 By step <1>6, both bounding expressions tend to \(M\). Apply the squeeze
 theorem.
+
 :::
 
-<1>8. For the specific expression
+:::
+
+::: pf-step
+
+For the specific expression
 \[
 (3^n+5^n)^{1/n},
 \]
@@ -144,18 +196,24 @@ one has
 \lim_{n\to\infty}(3^n+5^n)^{1/n}=5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Here
 \[
 M=\max\{3,5\}=5.
 \]
 Apply step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the general answer, and step <1>8 gives the requested
 special case.
+
 :::
+
 :::

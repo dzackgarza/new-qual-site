@@ -46,8 +46,11 @@ This convention is consistent with the normalization of the adjacent inverse
 transform problem.
 :::
 
-::: {.solution}
-<1>1. In part (a),
+::: pf
+
+::: pf-step
+
+In part (a),
 $$
 \widetilde f(k)
 =
@@ -57,12 +60,19 @@ e^{-ikx}
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function equals $f_0$ on $[-x_0,x_0]$ and vanishes elsewhere, so only
 that interval contributes to the Fourier integral.
+
 :::
 
-<1>2. For $k\neq0$,
+:::
+
+::: pf-step
+
+For $k\neq0$,
 $$
 \int_{-x_0}^{x_0}
 e^{-ikx}
@@ -71,7 +81,9 @@ e^{-ikx}
 \frac{2\sin(kx_0)}{k}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative is
 $$
 \frac{e^{-ikx}}{-ik}.
@@ -88,9 +100,14 @@ $$
 \frac{2\sin(kx_0)}k.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \widetilde f(k)
@@ -101,11 +118,18 @@ $$
 $$
 for $k\neq0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>2 into step <1>1.
+
 :::
 
-<1>4. The continuous value at $k=0$ is
+:::
+
+::: pf-step
+
+The continuous value at $k=0$ is
 $$
 \boxed{
 \widetilde f(0)
@@ -114,22 +138,36 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 \lim_{k\to0}\frac{\sin(kx_0)}k=x_0,
 $$
 step <1>3 extends continuously to the displayed value. Equivalently, set
 $k=0$ directly in step <1>1.
+
 :::
 
-<1>5. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>3--<1>4 give the complete transform.
+
 :::
 
-<1>6. In part (b),
+:::
+
+::: pf-step
+
+In part (b),
 $$
 \widetilde f(k)
 =
@@ -139,12 +177,19 @@ e^{-(a+ik)x}
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function is zero for $x<0$ and equals $e^{-ax}$ for $x\geq0$. Multiplying
 by the Fourier kernel gives $e^{-(a+ik)x}$.
+
 :::
 
-<1>7. Since $a>0$,
+:::
+
+::: pf-step
+
+Since $a>0$,
 $$
 \int_0^\infty
 e^{-(a+ik)x}
@@ -153,7 +198,9 @@ e^{-(a+ik)x}
 \frac1{a+ik}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The real part of $a+ik$ is positive, so the exponential decays at infinity.
 Thus
 $$
@@ -165,9 +212,14 @@ $$
 =
 \frac1{a+ik}.
 $$
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \widetilde f(k)
@@ -178,19 +230,32 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>7 into step <1>6 and rationalize the denominator.
+
 :::
 
-<1>9. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5 and <1>9 establish parts (a) and (b), respectively.
+
 :::
+
 :::

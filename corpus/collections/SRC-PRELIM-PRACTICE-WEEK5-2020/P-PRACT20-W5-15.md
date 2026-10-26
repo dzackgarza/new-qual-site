@@ -20,10 +20,13 @@ audit:
 Find all group and ring homomorphisms from $\ZZ \to \ZZ$.
 :::
 
-::: {.solution}
 Regard $\mathbb Z$ as an additive group when discussing group homomorphisms.
 
-<1>1. If $\phi:(\mathbb Z,+)\to(\mathbb Z,+)$ is a group homomorphism and
+::: pf
+
+::: pf-step
+
+If $\phi:(\mathbb Z,+)\to(\mathbb Z,+)$ is a group homomorphism and
 \[
 k=\phi(1),
 \]
@@ -33,7 +36,9 @@ then
 \qquad(n\in\mathbb Z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $n>0$,
 \[
 \phi(n)
@@ -49,15 +54,22 @@ so
 \[
 \phi(n)=-\phi(-n)=kn.
 \]
+
 :::
 
-<1>2. Conversely, for every $k\in\mathbb Z$, the map
+:::
+
+::: pf-step
+
+Conversely, for every $k\in\mathbb Z$, the map
 \[
 \phi_k(n)=kn
 \]
 is a group homomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 For $m,n\in\mathbb Z$,
 \[
 \phi_k(m+n)
@@ -65,23 +77,37 @@ For $m,n\in\mathbb Z$,
 =km+kn
 =\phi_k(m)+\phi_k(n).
 \]
+
 :::
 
-<1>3. Hence the group homomorphisms $\mathbb Z\to\mathbb Z$ are exactly
+:::
+
+::: pf-step
+
+Hence the group homomorphisms $\mathbb Z\to\mathbb Z$ are exactly
 \[
 \boxed{\phi_k(n)=kn,\qquad k\in\mathbb Z}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 prove both directions.
+
 :::
 
-<1>4. If $\phi:\mathbb Z\to\mathbb Z$ is a ring homomorphism, then
+:::
+
+::: pf-step
+
+If $\phi:\mathbb Z\to\mathbb Z$ is a ring homomorphism, then
 \[
 \phi(1)\in\{0,1\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every ring homomorphism is additive, so by step <1>1,
 \[
 \phi(n)=n\phi(1).
@@ -101,9 +127,14 @@ or
 k(k-1)=0.
 \]
 Since $\mathbb Z$ is an integral domain, $k=0$ or $k=1$.
+
 :::
 
-<1>5. The ring homomorphisms are exactly
+:::
+
+::: pf-step
+
+The ring homomorphisms are exactly
 \[
 \boxed{\phi(n)=0\quad\text{for all }n}
 \]
@@ -112,15 +143,21 @@ and
 \boxed{\phi(n)=n\quad\text{for all }n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 leaves only $\phi(1)=0$ or $\phi(1)=1$, and step <1>1 then gives
 the two displayed maps. Both preserve addition and multiplication.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 classifies the group homomorphisms and step <1>5 classifies the ring
 homomorphisms.
+
 :::
+
 :::

@@ -20,34 +20,53 @@ Let $K / F$ be a finite Galois extension with Galois group G. Assume that K cont
 Let $a \ \in \ K ^ { \times }$ Prove that every normal extension of F that contains $K ( a ^ { 1 / p } )$ necessarily contains the field L obtained from K by adjoining p-th roots of $\sigma ( a )$ for all $\sigma \in G )$
 :::
 
-::: {.solution}
 Choose $b$ with $b^p=a$, so that $K(a^{1/p})=K(b)$. Let $M/F$ be a normal extension containing $K(b)$.
 
-<1>1. For every $\sigma\in G$, there is an $F$-embedding
+::: pf
+
+::: pf-step
+
+For every $\sigma\in G$, there is an $F$-embedding
 $$
 \widetilde\sigma:M\longrightarrow \overline F
 $$
 whose restriction to $K$ is $\sigma$.
 
-::: {.proof}
+
+::: pf-proof
+
 The inclusion $K\subseteq M$ and the automorphism $\sigma:K\to K\subseteq\overline F$ give an $F$-embedding of the intermediate field $K$ into an algebraic closure of $F$. Since $M/F$ is algebraic, the extension theorem for embeddings extends this map to an $F$-embedding
 $$
 \widetilde\sigma:M\to\overline F.
 $$
+
 :::
 
-<1>2. For every $\sigma\in G$, the image of $M$ under $\widetilde\sigma$ is $M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $\sigma\in G$, the image of $M$ under $\widetilde\sigma$ is $M$.
+
+
+::: pf-proof
+
 The extension $M/F$ is normal. Therefore every $F$-embedding of $M$ into an algebraic closure has image $M$. Applying this to the embedding from step <1>1 gives
 $$
 \widetilde\sigma(M)=M.
 $$
+
 :::
 
-<1>3. For every $\sigma\in G$, the field $M$ contains a $p$-th root of $\sigma(a)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $\sigma\in G$, the field $M$ contains a $p$-th root of $\sigma(a)$.
+
+
+::: pf-proof
+
 Since $b\in M$, step <1>2 gives
 $$
 \widetilde\sigma(b)\in M.
@@ -60,19 +79,30 @@ $$
 =\sigma(a),
 $$
 because $a\in K$ and $\widetilde\sigma|_K=\sigma$. Hence $\widetilde\sigma(b)$ is a $p$-th root of $\sigma(a)$ lying in $M$.
+
 :::
 
-<1>4. The field $M$ contains the field $L$ obtained from $K$ by adjoining $p$-th roots of all $\sigma(a)$ with $\sigma\in G$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The field $M$ contains the field $L$ obtained from $K$ by adjoining $p$-th roots of all $\sigma(a)$ with $\sigma\in G$.
+
+
+::: pf-proof
+
 By hypothesis, $K\subseteq M$. By step <1>3, for every $\sigma\in G$ the field $M$ contains a $p$-th root of $\sigma(a)$. Therefore $M$ contains the field generated over $K$ by these roots, namely $L$.
 
 Because $K$ contains a primitive $p$-th root of unity, adjoining one $p$-th root of a given $\sigma(a)$ adjoins all of its $p$-th roots, so the field $L$ is independent of the choices of roots.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required containment $L\subseteq M$ for every normal extension $M/F$ containing $K(a^{1/p})$.
+
 :::
+
 :::

@@ -15,7 +15,6 @@ review: draft
 Let $f ( x ) = x ^ { 2 + \sin ( x ) }$ for $x > 0$ . Find $f ^ { \prime } ( x )$
 :::
 
-::: {.solution}
 Let
 \[
 f(x)=x^{2+\sin x},
@@ -23,21 +22,32 @@ f(x)=x^{2+\sin x},
 x>0.
 \]
 
-<1>1. Since \(x>0\),
+::: pf
+
+::: pf-step
+
+Since \(x>0\),
 \[
 \boxed{
 f(x)=e^{(2+\sin x)\log x}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 x^a=e^{a\log x}
 \]
 for positive \(x\).
+
 :::
 
-<1>2. Differentiate the exponent:
+:::
+
+::: pf-step
+
+Differentiate the exponent:
 \[
 \frac{d}{dx}
 \left(
@@ -49,7 +59,9 @@ for positive \(x\).
 \frac{2+\sin x}{x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the product rule:
 \[
 (2+\sin x)'\log x
@@ -64,9 +76,14 @@ and
 \[
 (\log x)'=\frac1x.
 \]
+
 :::
 
-<1>3. By the chain rule,
+:::
+
+::: pf-step
+
+By the chain rule,
 \[
 f'(x)
 =
@@ -78,11 +95,18 @@ e^{(2+\sin x)\log x}
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the exponential expression from step <1>1 using step <1>2.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f'(x)
@@ -95,14 +119,20 @@ x^{2+\sin x}
 \right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Replace the exponential factor in step <1>3 by \(x^{2+\sin x}\) using
 step <1>1.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the requested derivative.
+
 :::
+
 :::

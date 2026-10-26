@@ -29,7 +29,6 @@ At the limiting amplitude $\phi_0=\pi$, the endpoint singularity becomes
 logarithmic and the integral diverges.
 :::
 
-::: {.solution}
 Assume first that
 $$
 0<\phi_0<\pi,
@@ -43,21 +42,32 @@ $$
 0<k<1.
 $$
 
-<1>1. Use the substitution
+::: pf
+
+::: pf-step
+
+Use the substitution
 $$
 u=
 \frac{\sin(\psi/2)}{k}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For
 $$
 0\leq\psi\leq\phi_0<\pi,
 $$
 the function $\sin(\psi/2)$ is increasing, so the substitution is valid.
+
 :::
 
-<1>2. Under this substitution,
+:::
+
+::: pf-step
+
+Under this substitution,
 $$
 d\psi
 =
@@ -72,7 +82,9 @@ k^2-sin^2\frac\psi2
 k\sqrt{1-u^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiating
 $$
 ku=\sin\frac\psi2
@@ -93,9 +105,14 @@ $$
 $$
 the first formula follows. The second is immediate from the definition of
 $u$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^{\phi}
 \frac{d\psi}{
@@ -112,16 +129,25 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the two identities from step <1>2. The factors of $k$ cancel.
+
 :::
 
-<1>4. As $\phi\to\phi_0^-$,
+:::
+
+::: pf-step
+
+As $\phi\to\phi_0^-$,
 $$
 u(\phi)\to1^-.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 u(\phi)
@@ -129,9 +155,14 @@ u(\phi)
 \frac{\sin(\phi/2)}{\sin(\phi_0/2)}.
 $$
 Continuity of sine gives the limit.
+
 :::
 
-<1>5. Near $u=1$,
+:::
+
+::: pf-step
+
+Near $u=1$,
 $$
 \frac{1}{
 \sqrt{1-u^2}
@@ -141,7 +172,9 @@ $$
 O\left((1-u)^{-1/2}\right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $k<1$,
 $$
 1-k^2u^2
@@ -158,29 +191,43 @@ $$
 2(1-u).
 $$
 Hence the only singular factor has order $(1-u)^{-1/2}$.
+
 :::
 
-<1>6. The limiting integral is convergent for
+:::
+
+::: pf-step
+
+The limiting integral is convergent for
 $$
 0<\phi_0<\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, the endpoint behavior is dominated by a constant multiple of
 $$
 (1-u)^{-1/2},
 $$
 whose integral near $u=1$ is finite. Therefore the improper integral in step
 <1>3 converges as the upper endpoint tends to $1$.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 $$
 \phi_0=\pi,
 $$
 the integral diverges logarithmically.
 
-::: {.proof}
+
+::: pf-proof
+
 Now $k=1$, so the integrand in step <1>3 becomes
 $$
 \frac{2}{1-u^2}.
@@ -192,9 +239,14 @@ $$
 \frac{1}{1-u},
 $$
 whose integral diverges logarithmically.
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \text{the integral converges as }\phi\to\phi_0
@@ -202,14 +254,20 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>6; step <1>7 records the endpoint exception $\phi_0=\pi$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6--<1>8 give the complete convergence statement in the physically
 relevant range.
+
 :::
+
 :::

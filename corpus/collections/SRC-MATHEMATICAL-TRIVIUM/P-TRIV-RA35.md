@@ -25,7 +25,6 @@ Find Jacobi matrix and Jacobian for the change of coordinates in $\mathbb { R } 
 In what regions of $\mathbb { R } ^ { 3 }$ are these coordinate changes regular?
 :::
 
-::: {.solution}
 Use spherical coordinates
 $$
 x=r\sin\theta\cos\varphi,
@@ -42,7 +41,11 @@ r>0,
 $$
 and a local branch of $\varphi$.
 
-<1>1. The Jacobian matrix of the spherical-to-Cartesian map is
+::: pf
+
+::: pf-step
+
+The Jacobian matrix of the spherical-to-Cartesian map is
 $$
 \boxed{
 \frac{\partial(x,y,z)}{\partial(r,\theta,\varphi)}
@@ -55,17 +58,26 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the three coordinate formulas with respect to
 $r,\theta,\varphi$.
+
 :::
 
-<1>2. Its determinant is
+:::
+
+::: pf-step
+
+Its determinant is
 $$
 \boxed{r^2\sin\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The three column vectors are
 $$
 e_r,
@@ -81,31 +93,50 @@ $$
 =
 r^2\sin\theta.
 $$
+
 :::
 
-<1>3. Hence the spherical coordinate change is locally regular exactly where
+:::
+
+::: pf-step
+
+Hence the spherical coordinate change is locally regular exactly where
 $$
 r>0
 \qquad\text{and}\qquad
 \sin\theta\neq0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the inverse function theorem, local regularity is equivalent to nonzero
 Jacobian determinant. Step <1>2 vanishes precisely at $r=0$ or
 $\theta=0,\pi$.
+
 :::
 
-<1>4. In Cartesian language, the singular set for spherical coordinates is
+:::
+
+::: pf-step
+
+In Cartesian language, the singular set for spherical coordinates is
 the $z$-axis.
 
-::: {.proof}
+
+::: pf-proof
+
 The conditions $\theta=0$ and $\theta=\pi$ describe the positive and negative
 $z$-axes, while $r=0$ is their common origin. Away from the $z$-axis, a local
 branch of the azimuthal angle $\varphi$ may be chosen smoothly.
+
 :::
 
-<1>5. The inverse Jacobian matrix, from Cartesian to spherical coordinates, is
+:::
+
+::: pf-step
+
+The inverse Jacobian matrix, from Cartesian to spherical coordinates, is
 $$
 \boxed{
 \frac{\partial(r,\theta,\varphi)}{\partial(x,y,z)}
@@ -118,22 +149,36 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This matrix is the inverse of the matrix in step <1>1. Equivalently, its rows
 are the gradients of $r$, $\theta$, and $\varphi$ in Cartesian coordinates.
+
 :::
 
-<1>6. Its determinant is
+:::
+
+::: pf-step
+
+Its determinant is
 $$
 \boxed{\frac1{r^2\sin\theta}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant of an inverse matrix is the reciprocal of the original
 determinant from step <1>2.
+
 :::
 
-<1>7. For cylindrical coordinates, use
+:::
+
+::: pf-step
+
+For cylindrical coordinates, use
 $$
 x=\rho\cos\varphi,
 \qquad
@@ -143,11 +188,18 @@ z=z,
 $$
 with $\rho>0$ and a local branch of $\varphi$.
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard cylindrical coordinate formulas.
+
 :::
 
-<1>8. The cylindrical-to-Cartesian Jacobian matrix is
+:::
+
+::: pf-step
+
+The cylindrical-to-Cartesian Jacobian matrix is
 $$
 \boxed{
 \frac{\partial(x,y,z)}{\partial(\rho,\varphi,z)}
@@ -160,16 +212,25 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the coordinate formulas from step <1>7.
+
 :::
 
-<1>9. Its determinant is
+:::
+
+::: pf-step
+
+Its determinant is
 $$
 \boxed{\rho}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant of the upper-left $2\times2$ block is
 $$
 \rho(\cos^2\varphi+\sin^2\varphi)
@@ -177,19 +238,31 @@ $$
 \rho,
 $$
 and the last diagonal entry is $1$.
+
 :::
 
-<1>10. Hence cylindrical coordinates are locally regular exactly where
+:::
+
+::: pf-step
+
+Hence cylindrical coordinates are locally regular exactly where
 $$
 \rho>0,
 $$
 that is, away from the $z$-axis.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the inverse function theorem to the determinant in step <1>9.
+
 :::
 
-<1>11. The inverse Cartesian-to-cylindrical Jacobian matrix is
+:::
+
+::: pf-step
+
+The inverse Cartesian-to-cylindrical Jacobian matrix is
 $$
 \boxed{
 \frac{\partial(\rho,\varphi,z)}{\partial(x,y,z)}
@@ -206,7 +279,9 @@ $$
 \boxed{\frac1\rho}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Invert the matrix from step <1>8, or differentiate
 $$
 \rho=\sqrt{x^2+y^2},
@@ -214,12 +289,16 @@ $$
 \varphi=\operatorname{atan2}(y,x).
 $$
 The determinant is the reciprocal of step <1>9.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>6 solve the spherical case, and steps <1>7--<1>11 solve the
 cylindrical case and identify the regular regions.
+
 :::
+
 :::

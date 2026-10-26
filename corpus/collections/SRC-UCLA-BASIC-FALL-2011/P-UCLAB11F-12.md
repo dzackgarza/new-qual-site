@@ -25,15 +25,20 @@ x-y\in\ker A.
 \]
 :::
 
-::: {.solution}
 Let
 \[
 M=\operatorname{image}(A)\subseteq\mathbb R^m.
 \]
 
-<1>1. The nearest point in the subspace $M$ to $b$ is unique.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The nearest point in the subspace $M$ to $b$ is unique.
+
+
+::: pf-proof
+
 Suppose
 \[
 u,v\in M
@@ -72,27 +77,41 @@ If $u\ne v$, the right side is strictly smaller than $d^2$, contradicting minima
 \[
 u=v.
 \]
+
 :::
 
-<1>2. Under the hypotheses of the problem,
+:::
+
+::: pf-step
+
+Under the hypotheses of the problem,
 \[
 Ax=Ay.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vectors $Ax$ and $Ay$ both belong to
 \[
 M=\operatorname{image}(A)
 \]
 and both have minimal distance to $b$. By uniqueness from step <1>1, they are equal.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 A(x-y)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity of $A$ and step <1>2,
 \[
 A(x-y)
@@ -100,20 +119,31 @@ A(x-y)
 Ax-Ay
 =0.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{x-y\in\ker A}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 is exactly the defining condition for membership in the kernel of $A$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

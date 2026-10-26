@@ -15,7 +15,6 @@ review: draft
 (Gabriel’s Horn) Let $f ( x ) = 1 / x$ , for $x \in [ 1 , \infty )$ . Find the volume and surface area of the shape which results from rotating the graph of f about the x-axis.
 :::
 
-::: {.solution}
 The curve is
 \[
 y=f(x)=\frac1x,
@@ -25,17 +24,28 @@ x\ge1.
 
 ## Volume
 
-<1>1. Rotating the region under \(y=1/x\) about the \(x\)-axis gives disks
+::: pf
+
+::: pf-step
+
+Rotating the region under \(y=1/x\) about the \(x\)-axis gives disks
 of radius
 \[
 \boxed{r(x)=\frac1x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The distance from the graph to the \(x\)-axis is \(y=1/x\).
+
 :::
 
-<1>2. Therefore the volume is
+:::
+
+::: pf-step
+
+Therefore the volume is
 \[
 V
 =
@@ -43,7 +53,9 @@ V
 \frac{dx}{x^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cross-sectional disk area is
 \[
 \pi r(x)^2
@@ -51,9 +63,14 @@ The cross-sectional disk area is
 \frac{\pi}{x^2}.
 \]
 Integrate from \(x=1\) to infinity.
+
 :::
 
-<1>3. For \(R>1\),
+:::
+
+::: pf-step
+
+For \(R>1\),
 \[
 \int_1^R\frac{dx}{x^2}
 =
@@ -64,17 +81,26 @@ Integrate from \(x=1\) to infinity.
 1-\frac1R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative of \(x^{-2}\) is \(-x^{-1}\).
+
 :::
 
-<1>4. Letting \(R\to\infty\),
+:::
+
+::: pf-step
+
+Letting \(R\to\infty\),
 \[
 \boxed{
 V=\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 \[
 V
@@ -87,21 +113,31 @@ V
 =
 \pi.
 \]
+
 :::
 
-## Surface area
+:::
 
-<1>5. The derivative of the profile is
+::: pf-step
+
+The derivative of the profile is
 \[
 \boxed{
 f'(x)=-\frac1{x^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate \(f(x)=x^{-1}\).
+
 :::
 
-<1>6. The surface area is
+:::
+
+::: pf-step
+
+The surface area is
 \[
 S
 =
@@ -112,7 +148,9 @@ S
 \,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The surface-area formula for rotating \(y=f(x)\ge0\) about the \(x\)-axis is
 \[
 S
@@ -123,15 +161,22 @@ f(x)
 \sqrt{1+f'(x)^2}\,dx.
 \]
 Use \(f(x)=1/x\) and step <1>5.
+
 :::
 
-<1>7. For every \(x\ge1\),
+:::
+
+::: pf-step
+
+For every \(x\ge1\),
 \[
 \sqrt{1+\frac1{x^4}}
 \ge1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \frac1{x^4}\ge0,
@@ -141,9 +186,14 @@ one has
 1+\frac1{x^4}\ge1.
 \]
 Taking square roots preserves the inequality.
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 S
 \ge
@@ -152,11 +202,18 @@ S
 \frac{dx}{x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>7 pointwise to the nonnegative integrand in step <1>6.
+
 :::
 
-<1>9. The comparison integral diverges:
+:::
+
+::: pf-step
+
+The comparison integral diverges:
 \[
 \int_1^\infty
 \frac{dx}{x}
@@ -164,7 +221,9 @@ Apply step <1>7 pointwise to the nonnegative integrand in step <1>6.
 \infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(R>1\),
 \[
 \int_1^R\frac{dx}{x}
@@ -175,19 +234,31 @@ and
 \[
 \log R\to\infty.
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{S=\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>8--<1>9, the surface-area integral dominates a divergent
 nonnegative integral.
+
 :::
 
-<1>11. Thus Gabriel’s horn has
+:::
+
+::: pf-step
+
+Thus Gabriel’s horn has
 \[
 \boxed{\text{finite volume } \pi}
 \]
@@ -196,13 +267,19 @@ but
 \boxed{\text{infinite surface area}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 gives both requested quantities.
+
 :::
+
 :::

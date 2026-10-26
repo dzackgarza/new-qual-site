@@ -33,16 +33,21 @@ Let $u = p^{n-1}$ and let $c = b^u$.
 Does a $F$-automorphism $\sigma$ of $F(c)$ extend to an $F$-automorphism of $F(b)$?
 :::
 
-::: {.solution}
 Choose $b$ with $b^{p^n}=a$, and set
 $$
 E=F(b),\qquad c=b^{p^{n-1}}.
 $$
 Then $c^p=a$, so $F(c)=F(a^{1/p})$.
 
-<1>1. The extension $F(c)/F$ is Galois of degree $p$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The extension $F(c)/F$ is Galois of degree $p$.
+
+
+::: pf-proof
+
 Because $F$ contains a primitive $p^n$-th root of unity, it contains all $p$-th roots of unity. Hence every root of
 $$
 X^p-a
@@ -53,11 +58,18 @@ Every $F$-automorphism of $F(c)$ sends $c$ to $\xi c$ for some $\xi\in\mu_p$. Th
 $$
 [F(c):F]=\abs{\Gal(F(c)/F)}=p.
 $$
+
 :::
 
-<1>2. The extension $E/F$ is Galois, and every $F$-automorphism of $F(c)$ extends to an $F$-automorphism of $E$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The extension $E/F$ is Galois, and every $F$-automorphism of $F(c)$ extends to an $F$-automorphism of $E$.
+
+
+::: pf-proof
+
 Let $\zeta\in F$ be a primitive $p^n$-th root of unity. Every root of
 $$
 X^{p^n}-a
@@ -69,15 +81,22 @@ $$
 \Gal(E/F)\longrightarrow \Gal(F(c)/F)
 $$
 is surjective.
+
 :::
 
-<1>3. There exists $\sigma\in\Gal(E/F)$ such that, when
+:::
+
+::: pf-step
+
+There exists $\sigma\in\Gal(E/F)$ such that, when
 $$
 \sigma(b)=\zeta^k b,
 $$
 the integer $k$ is not divisible by $p$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $\Gal(F(c)/F)$ has order $p$, so choose a nonidentity automorphism
 $$
 \tau\in\Gal(F(c)/F).
@@ -94,11 +113,18 @@ $$
 =\zeta^{k p^{n-1}}c.
 $$
 Because $\sigma|_{F(c)}=\tau$ is nonidentity, the factor $\zeta^{k p^{n-1}}$ is not $1$. Since $\zeta$ has order $p^n$, this is equivalent to $p\nmid k$.
+
 :::
 
-<1>4. The automorphism $\sigma$ from step <1>3 has order $p^n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The automorphism $\sigma$ from step <1>3 has order $p^n$.
+
+
+::: pf-proof
+
 For every integer $m\geq 1$,
 $$
 \sigma^m(b)=\zeta^{km}b,
@@ -108,14 +134,21 @@ $$
 \zeta^{km}=1.
 $$
 By step <1>3, $p\nmid k$, so $\zeta^k$ is again a primitive $p^n$-th root of unity. Its order is therefore $p^n$, and consequently $\sigma$ has order $p^n$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{[F(a^{1/p^n}):F]=p^n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $E/F$ is Galois, and every element of $\Gal(E/F)$ sends $b$ to $\zeta^j b$ for some $j$. Thus
 $$
 \Gal(E/F)\hookrightarrow \mu_{p^n},
@@ -129,11 +162,15 @@ $$
 [E:F]=\abs{\Gal(E/F)}=p^n.
 $$
 Since $E=F(b)=F(a^{1/p^n})$, this is the required degree.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required equality.
+
 :::
+
 :::

@@ -24,8 +24,11 @@ Problem 2. Suppose $f$ is bounded on $[a,b]$.
 (b) Prove directly from the definition that every continuous $f$ is Riemann integrable.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 P:\quad a=x_0<x_1<\cdots<x_m=b
 \]
@@ -47,11 +50,18 @@ U(f,P)=\sum_{i=1}^mM_i(x_i-x_{i-1}),
 L(f,P)=\sum_{i=1}^m m_i(x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is bounded on $[a,b]$, the suprema and infima are finite, so the sums are well-defined.
+
 :::
 
-<1>2. The upper and lower Riemann integrals are
+:::
+
+::: pf-step
+
+The upper and lower Riemann integrals are
 \[
 \overline{\int_a^b}f
 =
@@ -68,16 +78,25 @@ The function $f$ is Riemann integrable if these two numbers are equal; their com
 \boxed{\int_a^b f(x)\,dx}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Darboux definition of Riemann integrability.
+
 :::
 
-<1>3. Equivalently, $f$ is Riemann integrable if for every $\varepsilon>0$ there exists a partition $P$ such that
+:::
+
+::: pf-step
+
+Equivalently, $f$ is Riemann integrable if for every $\varepsilon>0$ there exists a partition $P$ such that
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every partition $P$,
 \[
 L(f,P)
@@ -91,15 +110,27 @@ U(f,P).
 Thus if such partitions exist for every $\varepsilon>0$, the difference between upper and lower integrals is bounded by every positive $\varepsilon$, hence is zero.
 
 Conversely, if the upper and lower integrals are equal, choose partitions whose upper sum is within $\varepsilon/2$ of the upper integral and whose lower sum is within $\varepsilon/2$ of the lower integral. Passing to a common refinement can only decrease the upper sum and increase the lower sum, giving a partition with gap less than $\varepsilon$.
+
 :::
 
-<1>4. Suppose now that $f$ is continuous on $[a,b]$. Then $f$ is uniformly continuous there.
+:::
 
-::: {.proof}
+::: pf-step
+
+Suppose now that $f$ is continuous on $[a,b]$. Then $f$ is uniformly continuous there.
+
+
+::: pf-proof
+
 The interval $[a,b]$ is compact. The Heine--Cantor theorem states that every continuous function on a compact metric space is uniformly continuous.
+
 :::
 
-<1>5. Given $\varepsilon>0$, there exists $\delta>0$ such that
+:::
+
+::: pf-step
+
+Given $\varepsilon>0$, there exists $\delta>0$ such that
 \[
 |x-y|<\delta
 \quad\Longrightarrow\quad
@@ -109,15 +140,22 @@ The interval $[a,b]$ is compact. The Heine--Cantor theorem states that every con
 \]
 for all $x,y\in[a,b]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply uniform continuity from step <1>4 with tolerance
 \[
 \frac{\varepsilon}{b-a}.
 \]
 If $a=b$, the integral is trivial; assume $a<b$.
+
 :::
 
-<1>6. Choose a partition $P$ whose mesh satisfies
+:::
+
+::: pf-step
+
+Choose a partition $P$ whose mesh satisfies
 \[
 \max_i(x_i-x_{i-1})<\delta.
 \]
@@ -126,7 +164,9 @@ Then
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On each subinterval $I_i$, any two points are less than $\delta$ apart. Hence step <1>5 gives
 \[
 M_i-m_i
@@ -147,17 +187,28 @@ U(f,P)-L(f,P)
 \end{aligned}
 \]
 If strict inequality is desired, use $\varepsilon/(2(b-a))$ in step <1>5.
+
 :::
 
-<1>7. Every continuous function on $[a,b]$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every continuous function on $[a,b]$ is Riemann integrable.
+
+
+::: pf-proof
+
 By step <1>6, for every $\varepsilon>0$ there is a partition with upper-minus-lower sum less than $\varepsilon$. Step <1>3 therefore implies that $f$ is Riemann integrable.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 give the definition, and steps <1>4--<1>7 prove part (b) directly from it.
+
 :::
+
 :::

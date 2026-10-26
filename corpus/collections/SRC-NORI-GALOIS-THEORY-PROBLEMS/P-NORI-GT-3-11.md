@@ -65,7 +65,6 @@ Thus case 2 does not occur.
 The source defines $R = \{\frac{m}{2^n} : m \geq 0, n \in \mathbb{Z}\}$, which is not closed under negation; the hint uses $R$ as the ring $\mathbb{Z}[\frac{1}{2}] = \{\frac{m}{2^n} : m \in \mathbb{Z}, n \geq 0\}$ (for instance $f = X^4 - 2X^3 + X^2 - 2 = (X^2 - X)^2 - 2 \cdot 1^2$ is irreducible with $\mathbb{Q}(\sqrt{2}) \subset \mathbb{Q}(\theta)$, and every admissible $Q = X^2 + uX + v$ has $2u = -2$, so $u = -1$ is not in $R$ as printed).
 :::
 
-::: {.solution}
 The source hint uses
 $$
 R=\ZZ\left[\frac12\right]
@@ -79,12 +78,18 @@ $$
 $$
 be the given quadratic subfield.
 
-<1>1. There is a squarefree integer $c$ such that
+::: pf
+
+::: pf-step
+
+There is a squarefree integer $c$ such that
 $$
 K=\QQ(\sqrt c).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $[K:\QQ]=2$ and the characteristic is not $2$, write
 $$
 K=\QQ(\sqrt d)
@@ -97,9 +102,14 @@ for some squarefree integer $c$ and $r\in\QQ^*$. Then
 $$
 \QQ(\sqrt d)=\QQ(r\sqrt c)=\QQ(\sqrt c).
 $$
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 h(X)=X^2+aX+b\in K[X]
 $$
@@ -109,7 +119,9 @@ f=h\,\sigma(h),
 $$
 where $\sigma$ is the nontrivial automorphism of $K/\QQ$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the tower law,
 $$
 [E:K]=2,
@@ -118,11 +130,18 @@ so $h$ has degree $2$. The product $h\sigma(h)$ is fixed coefficientwise by $\si
 $$
 f=h\sigma(h).
 $$
+
 :::
 
-<1>3. The coefficients $a,b\in K$ are algebraic integers.
+:::
 
-::: {.proof}
+::: pf-step
+
+The coefficients $a,b\in K$ are algebraic integers.
+
+
+::: pf-proof
+
 The element $\theta$ is an algebraic integer because its minimal polynomial
 $$
 f\in\ZZ[X]
@@ -142,9 +161,14 @@ a=-(\theta+\theta'),
 b=\theta\theta'.
 $$
 Sums and products of algebraic integers are algebraic integers.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 $$
 \alpha=r+s\sqrt c\in K
 $$
@@ -153,7 +177,9 @@ $$
 r\in R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The conjugate
 $$
 \sigma(\alpha)=r-s\sqrt c
@@ -167,14 +193,21 @@ $$
 2r\in\ZZ.
 $$
 Therefore $r\in\frac12\ZZ\subset R$.
+
 :::
 
-<1>5. Under the hypotheses of step <1>4,
+:::
+
+::: pf-step
+
+Under the hypotheses of step <1>4,
 $$
 s\in R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The norm
 $$
 \alpha\sigma(\alpha)=r^2-cs^2
@@ -204,9 +237,14 @@ v_\ell(4cs^2)
 <0,
 $$
 contradicting $4cs^2\in\ZZ$. Hence no odd prime divides $B$, so $B$ is a power of $2$ and $s\in R$.
+
 :::
 
-<1>6. Consequently every algebraic integer in $K$ belongs to
+:::
+
+::: pf-step
+
+Consequently every algebraic integer in $K$ belongs to
 $$
 R+R\sqrt c.
 $$
@@ -217,11 +255,18 @@ a=a_0+a_1\sqrt c,
 b=b_0+b_1\sqrt c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply steps <1>4--<1>5 first to an arbitrary algebraic integer of $K$, and then specifically to $a$ and $b$, which are algebraic integers by step <1>3.
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 $$
 Q(X)=X^2+a_0X+b_0,
 \qquad
@@ -240,17 +285,26 @@ $$
 h=Q+\sqrt c\,P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This follows immediately from the decompositions in step <1>6.
+
 :::
 
-<1>8. The integral polynomial $f$ has the representation
+:::
+
+::: pf-step
+
+The integral polynomial $f$ has the representation
 $$
 \boxed{f=Q^2-cP^2}
 $$
 with $c$ squarefree and $P,Q\in R[X]$ as required.
 
-::: {.proof}
+
+::: pf-proof
+
 The nontrivial automorphism of $K/\QQ$ sends
 $$
 \sqrt c\longmapsto-\sqrt c.
@@ -265,18 +319,30 @@ f
 \end{aligned}
 $$
 Step <1>1 makes $c$ squarefree, and step <1>7 gives the dyadic coefficient condition.
+
 :::
 
-<1>9. Let $p$ be an odd prime. Reduction modulo $p$ defines a ring homomorphism
+:::
+
+::: pf-step
+
+Let $p$ be an odd prime. Reduction modulo $p$ defines a ring homomorphism
 $$
 R=\ZZ[1/2]\longrightarrow\FF_p.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $p\ne2$, the class of $2$ is invertible in $\FF_p$. Therefore every fraction whose denominator is a power of $2$ has a well-defined reduction modulo $p$.
+
 :::
 
-<1>10. Reducing step <1>8 modulo $p$ gives
+:::
+
+::: pf-step
+
+Reducing step <1>8 modulo $p$ gives
 $$
 \overline f
 =\overline Q^2-\overline c\,\overline P^2
@@ -286,23 +352,36 @@ $$
 \deg\overline P<2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the homomorphism from step <1>9 coefficientwise. The leading coefficient of $Q$ is $1$, so it remains $1$ after reduction and the degree remains $2$. Reduction cannot increase the degree of $P$.
+
 :::
 
-<1>11. The polynomial $\overline f$ has no irreducible factor of degree $3$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The polynomial $\overline f$ has no irreducible factor of degree $3$.
+
+
+::: pf-proof
+
 Suppose an irreducible monic cubic $g\in\FF_p[X]$ divided $\overline f$. The first assertion of Problem 3.9 applies to the representation in step <1>10 and says that every irreducible monic divisor of degree at least $3$ must equal the entire quartic. Thus
 $$
 g=\overline f.
 $$
 But $\deg g=3$ while $\overline f$ is monic of degree $4$, a contradiction.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>8 prove conditions (i)--(ii), interpreted with the intended ring $R=\ZZ[1/2]$, and steps <1>9--<1>11 prove the asserted absence of cubic irreducible factors modulo every odd prime.
+
 :::
+
 :::

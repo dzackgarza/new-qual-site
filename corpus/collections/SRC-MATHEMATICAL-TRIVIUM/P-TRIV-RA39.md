@@ -19,8 +19,11 @@ audit:
 Find the volume of a body formed by rotation of the curve y = arcsin x around x-axis in $\mathbb { R } ^ { 3 } , x \in [ 0 , 1 ]$
 :::
 
-::: {.solution}
-<1>1. Rotating the region under
+::: pf
+
+::: pf-step
+
+Rotating the region under
 $$
 y=\arcsin x,
 \qquad
@@ -28,12 +31,19 @@ y=\arcsin x,
 $$
 about the $x$-axis gives cross-sectional disks of radius $\arcsin x$.
 
-::: {.proof}
+
+::: pf-proof
+
 At a fixed $x$, rotation around the $x$-axis turns the vertical segment
 $0\leq y\leq\arcsin x$ into a disk of radius $\arcsin x$.
+
 :::
 
-<1>2. Therefore the volume is
+:::
+
+::: pf-step
+
+Therefore the volume is
 $$
 V
 =
@@ -43,15 +53,22 @@ V
 \,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The area of a cross-sectional disk is
 $$
 \pi(\arcsin x)^2.
 $$
 Integrate this area from $x=0$ to $x=1$.
+
 :::
 
-<1>3. Set
+:::
+
+::: pf-step
+
+Set
 $$
 t=\arcsin x.
 $$
@@ -66,12 +83,19 @@ $$
 0\leq t\leq\frac\pi2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are the inverse-function relations between sine and arcsine on
 $[-\pi/2,\pi/2]$.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \int_0^1
 (\arcsin x)^2
@@ -82,11 +106,18 @@ t^2\cos t
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the relations from step <1>3.
+
 :::
 
-<1>5. Integration by parts gives
+:::
+
+::: pf-step
+
+Integration by parts gives
 $$
 \int_0^{\pi/2}
 t^2\cos t
@@ -100,7 +131,9 @@ t\sin t
 \,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 u=t^2,
@@ -120,9 +153,14 @@ $$
 2\int_0^{\pi/2}t\sin t\,dt
 $$
 is the value of the integral, and the boundary term equals $\pi^2/4$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_0^{\pi/2}
 t\sin t
@@ -130,7 +168,9 @@ t\sin t
 =1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate by parts:
 $$
 \int t\sin t\,dt
@@ -138,9 +178,14 @@ $$
 -t\cos t+\sin t.
 $$
 Evaluating from $0$ to $\pi/2$ gives $1$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^1
 (\arcsin x)^2
@@ -149,11 +194,18 @@ $$
 \frac{\pi^2}{4}-2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5--<1>6.
+
 :::
 
-<1>8. Hence the volume is
+:::
+
+::: pf-step
+
+Hence the volume is
 $$
 \boxed{
 V
@@ -166,13 +218,19 @@ V
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>7 into step <1>2.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required volume.
+
 :::
+
 :::

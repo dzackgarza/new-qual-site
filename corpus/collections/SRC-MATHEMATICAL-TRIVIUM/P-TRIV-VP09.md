@@ -25,7 +25,6 @@ $$
 Find a functional $J [ f ]$ whose extrema in a class of $C ^ { 4 } ( \bar { D } )$ functions $f = f ( x , y )$ with fixed boundary conditions, $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , satisfy this equation.
 :::
 
-::: {.solution}
 Define
 $$
 \boxed{
@@ -42,7 +41,11 @@ $$
 \Delta f=f_{xx}+f_{yy}.
 $$
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 f_\varepsilon=f+\varepsilon\eta,
 $$
@@ -51,12 +54,19 @@ $$
 \eta\in C_c^\infty(D).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A compactly supported variation vanishes in a neighborhood of the boundary,
 so it preserves the prescribed boundary values of $f$.
+
 :::
 
-<1>2. The first variation is
+:::
+
+::: pf-step
+
+The first variation is
 $$
 \left.
 \frac d{d\varepsilon}
@@ -68,7 +78,9 @@ J[f_\varepsilon]
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \Delta f_\varepsilon
@@ -83,9 +95,14 @@ $$
 (\Delta f_\varepsilon)^2
 $$
 with respect to $\varepsilon$ at $0$.
+
 :::
 
-<1>3. Two integrations by parts give
+:::
+
+::: pf-step
+
+Two integrations by parts give
 $$
 \iint_D
 (\Delta f)(\Delta\eta)
@@ -96,7 +113,9 @@ $$
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\eta$ is compactly supported in $D$, all boundary terms vanish. First,
 $$
 \iint_D
@@ -119,9 +138,14 @@ $$
 \Delta(\Delta f)\eta
 \,dA.
 $$
+
 :::
 
-<1>4. At an extremum,
+:::
+
+::: pf-step
+
+At an extremum,
 $$
 \iint_D
 (\Delta^2 f)\eta
@@ -133,22 +157,36 @@ $$
 \eta\in C_c^\infty(D).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first variation from step <1>2 must vanish for every admissible variation.
 Use step <1>3.
+
 :::
 
-<1>5. Therefore every extremum satisfies
+:::
+
+::: pf-step
+
+Therefore every extremum satisfies
 $$
 \boxed{\Delta^2f=0}
 $$
 in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the fundamental lemma of the calculus of variations to step <1>4.
+
 :::
 
-<1>6. In Cartesian coordinates,
+:::
+
+::: pf-step
+
+In Cartesian coordinates,
 $$
 \Delta^2f
 =
@@ -159,7 +197,9 @@ f_{xxxx}
 f_{yyyy}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 \Delta^2f
@@ -167,19 +207,30 @@ $$
 (\partial_x^2+\partial_y^2)^2f.
 $$
 Mixed derivatives commute because $f\in C^4(\bar D)$.
+
 :::
 
-<1>7. Hence the functional in the boxed formula above has the required
+:::
+
+::: pf-step
+
+Hence the functional in the boxed formula above has the required
 biharmonic Euler--Lagrange equation.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>5--<1>6 reproduce exactly the differential equation stated in the
 problem.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 verifies the requested variational principle.
+
 :::
+
 :::

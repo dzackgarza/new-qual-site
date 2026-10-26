@@ -24,10 +24,13 @@ State the definition of the Riemann integral
 and prove that it exists.
 :::
 
-::: {.solution}
 Use the Darboux definition of the Riemann integral.
 
-<1>1. For a partition
+::: pf
+
+::: pf-step
+
+For a partition
 \[
 P:\quad 0=x_0<x_1<\cdots<x_n=1,
 \]
@@ -44,11 +47,18 @@ U(f,P)=\sum_{i=1}^{n}M_i(x_i-x_{i-1}),
 L(f,P)=\sum_{i=1}^{n}m_i(x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is continuous on the compact interval $[0,1]$, it is bounded. Hence every $M_i$ and $m_i$ is a finite real number, so the upper and lower sums are well-defined.
+
 :::
 
-<1>2. The upper and lower Riemann integrals are
+:::
+
+::: pf-step
+
+The upper and lower Riemann integrals are
 \[
 \overline{\int_0^1}f
 =
@@ -62,15 +72,22 @@ and
 \]
 where the infimum and supremum range over all partitions $P$ of $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 For any partitions $P,Q$, passing to the common refinement $P\cup Q$ can only decrease the upper sum and increase the lower sum. Hence
 \[
 L(f,P)\le U(f,Q)
 \]
 for all $P,Q$. Therefore the set of lower sums is bounded above and the set of upper sums is bounded below, so the two quantities are defined in $\mathbb R$.
+
 :::
 
-<1>3. The function $f$ is Riemann integrable on $[0,1]$ exactly when
+:::
+
+::: pf-step
+
+The function $f$ is Riemann integrable on $[0,1]$ exactly when
 \[
 \underline{\int_0^1}f
 =
@@ -81,11 +98,18 @@ When this equality holds, their common value is denoted
 \int_0^1 f(x)\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Darboux definition of Riemann integrability.
+
 :::
 
-<1>4. For every $\varepsilon>0$, there exists $\delta>0$ such that
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$, there exists $\delta>0$ such that
 \[
 |x-y|<\delta
 \quad\Longrightarrow\quad
@@ -93,16 +117,25 @@ This is the Darboux definition of Riemann integrability.
 \]
 for all $x,y\in[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is continuous on the compact interval $[0,1]$, so it is uniformly continuous.
+
 :::
 
-<1>5. For every $\varepsilon>0$, there exists a partition $P$ such that
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$, there exists a partition $P$ such that
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$ and choose $\delta>0$ from step <1>4. Choose a partition
 \[
 P:\quad 0=x_0<\cdots<x_n=1
@@ -131,11 +164,18 @@ U(f,P)-L(f,P)
 \end{aligned}
 \]
 If strict inequality is desired, apply step <1>4 with $\varepsilon/2$ instead.
+
 :::
 
-<1>6. The upper and lower Riemann integrals are equal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The upper and lower Riemann integrals are equal.
+
+
+::: pf-proof
+
 Let
 \[
 L=\underline{\int_0^1}f,
@@ -163,21 +203,32 @@ Then
 0\le U-L<\varepsilon.
 \]
 Since this holds for every $\varepsilon>0$, one has $U=L$.
+
 :::
 
-<1>7. The Riemann integral
+:::
+
+::: pf-step
+
+The Riemann integral
 \[
 \boxed{\int_0^1 f(x)\,dx}
 \]
 exists.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, the upper and lower Riemann integrals coincide. By the definition in step <1>3, $f$ is Riemann integrable and their common value is the displayed integral.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 state the definition, and steps <1>4--<1>7 prove existence for continuous $f$.
+
 :::
+
 :::

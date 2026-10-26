@@ -48,19 +48,29 @@ Erratum: the boundary condition in (16) is printed in the source as "$F_{f_x} n_
 The condition that makes part (a) true, and that (18) reduces to for $h = 0$, is $F_{f_x} n_x + F_{f_y} n_y = g(s)$ on $\partial D$, where $(n_x, n_y)$ is the outward unit normal and $s$ is arc length along $\partial D$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 f_\varepsilon=f+\varepsilon\eta,
 $$
 where $\eta$ is an arbitrary $C^1$ variation on $\bar D$.
 
-::: {.proof}
+
+::: pf-proof
+
 No boundary value of $f$ is prescribed in this problem, so the variation need
 not vanish on $\partial D$.
+
 :::
 
-<1>2. The first variation of
+:::
+
+::: pf-step
+
+The first variation of
 $$
 J[f]
 =
@@ -86,12 +96,19 @@ F_{f_y}\eta_y
 \int_{\partial D}g\eta\,ds.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $J[f_\varepsilon]$ with respect to $\varepsilon$ at
 $\varepsilon=0$ and apply the chain rule to the interior integrand.
+
 :::
 
-<1>3. Green's formula gives
+:::
+
+::: pf-step
+
+Green's formula gives
 $$
 \iint_D
 \left(
@@ -118,7 +135,9 @@ F_{f_y}n_y
 \eta\,ds.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the divergence theorem to the vector field
 $$
 \eta(F_{f_x},F_{f_y}).
@@ -137,9 +156,14 @@ F_{f_y}\eta_y
 \right).
 $$
 Rearrange.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \begin{aligned}
 \delta J
@@ -167,12 +191,19 @@ g
 \end{aligned}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2 and collect the interior and boundary
 terms.
+
 :::
 
-<1>5. At an extremum, the interior Euler--Lagrange equation is
+:::
+
+::: pf-step
+
+At an extremum, the interior Euler--Lagrange equation is
 $$
 \boxed{
 F_f
@@ -185,13 +216,20 @@ F_f
 $$
 in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose variations supported compactly inside $D$. Then the boundary term in
 step <1>4 vanishes, and the fundamental lemma of the calculus of variations
 forces the interior coefficient of $\eta$ to vanish.
+
 :::
 
-<1>6. Once step <1>5 holds, stationarity for arbitrary boundary values of
+:::
+
+::: pf-step
+
+Once step <1>5 holds, stationarity for arbitrary boundary values of
 $\eta$ gives the natural boundary condition
 $$
 \boxed{
@@ -204,19 +242,33 @@ g(s)
 $$
 on $\partial D$.
 
-::: {.proof}
+
+::: pf-proof
+
 With the interior term zero, step <1>4 reduces to the boundary integral. Since
 $\eta|_{\partial D}$ is arbitrary, the boundary coefficient must vanish.
+
 :::
 
-<1>7. Thus the extrema of $J$ satisfy precisely the corrected system in
+:::
+
+::: pf-step
+
+Thus the extrema of $J$ satisfy precisely the corrected system in
 part (a).
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5--<1>6.
+
 :::
 
-<1>8. For part (b), define
+:::
+
+::: pf-step
+
+For part (b), define
 $$
 \boxed{
 J_h[f]
@@ -232,12 +284,19 @@ f g(s)
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The added boundary term $\frac12hf^2$ is chosen because its first variation
 is $hf\eta$.
+
 :::
 
-<1>9. The first variation of the new boundary contribution is
+:::
+
+::: pf-step
+
+The first variation of the new boundary contribution is
 $$
 \int_{\partial D}
 \left(
@@ -246,7 +305,9 @@ h f-g
 \eta\,ds.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 $$
 \frac12h(f+\varepsilon\eta)^2
@@ -254,9 +315,14 @@ $$
 (f+\varepsilon\eta)g
 $$
 with respect to $\varepsilon$ at $0$.
+
 :::
 
-<1>10. Therefore $J_h$ has the same interior Euler--Lagrange equation as in
+:::
+
+::: pf-step
+
+Therefore $J_h$ has the same interior Euler--Lagrange equation as in
 step <1>5 and the boundary condition
 $$
 \boxed{
@@ -270,7 +336,9 @@ g(s).
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The integration-by-parts boundary contribution from the interior functional
 is still
 $$
@@ -287,12 +355,16 @@ hf
 g.
 $$
 Stationarity for arbitrary boundary variations forces it to vanish.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and steps <1>8--<1>10 give the required modified
 functional for part (b).
+
 :::
+
 :::

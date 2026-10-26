@@ -17,26 +17,43 @@ audit:
 Let $X$ be a compact metric space, let $(x_n)$ be a sequence in $X$, and let $x\in X$. Assume that every subsequence $(y_n)$ of $(x_n)$ has a subsequence $(z_n)$ converging to $x$. Prove that $x_n\to x$.
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that
 \[
 x_n\not\to x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the negation of the desired conclusion.
+
 :::
 
-<1>2. There exists $\varepsilon>0$ such that for every $N$ there is some $n\ge N$ with
+:::
+
+::: pf-step
+
+There exists $\varepsilon>0$ such that for every $N$ there is some $n\ge N$ with
 \[
 d(x_n,x)\ge\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of convergence in a metric space.
+
 :::
 
-<1>3. One can choose a subsequence
+:::
+
+::: pf-step
+
+One can choose a subsequence
 \[
 y_k=x_{n_k}
 \]
@@ -46,7 +63,9 @@ d(y_k,x)\ge\varepsilon
 \]
 for every $k$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $n_1$ using step <1>2 with $N=1$.
 After choosing $n_k$, use step <1>2 with
 \[
@@ -61,40 +80,65 @@ with
 d(x_{n_{k+1}},x)\ge\varepsilon.
 \]
 This inductively defines the required subsequence.
+
 :::
 
-<1>4. No subsequence of $(y_k)$ can converge to $x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+No subsequence of $(y_k)$ can converge to $x$.
+
+
+::: pf-proof
+
 Every term of every subsequence of $(y_k)$ remains at distance at least $\varepsilon$ from $x$.
 But any sequence converging to $x$ must eventually lie in the open ball
 \[
 B(x,\varepsilon).
 \]
 Thus no subsequence of $(y_k)$ can converge to $x$.
+
 :::
 
-<1>5. Step <1>4 contradicts the hypothesis of the problem.
+:::
 
-::: {.proof}
+::: pf-step
+
+Step <1>4 contradicts the hypothesis of the problem.
+
+
+::: pf-proof
+
 The sequence $(y_k)$ constructed in step <1>3 is itself a subsequence of $(x_n)$.
 By hypothesis, every subsequence of $(x_n)$ must have a further subsequence converging to $x$.
 Step <1>4 says this particular subsequence has no such further subsequence.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{x_n\to x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption in step <1>1 leads to the contradiction in step <1>5.
 Hence the assumption is false, and the sequence converges to $x$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

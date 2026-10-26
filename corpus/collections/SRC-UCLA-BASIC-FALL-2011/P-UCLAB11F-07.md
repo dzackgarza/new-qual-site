@@ -29,8 +29,11 @@ g(t)\le \liminf_{k\to\infty}g(t_k).
 Is $g$ always continuous?
 :::
 
-::: {.solution}
-<1>1. Fix $t\in\mathbb R$ and let
+::: pf
+
+::: pf-step
+
+Fix $t\in\mathbb R$ and let
 \[
 r=\operatorname{rank}(f(t)).
 \]
@@ -40,45 +43,75 @@ r\le\liminf_{k\to\infty}\operatorname{rank}(f(t_k))
 \]
 for every sequence $t_k\to t$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every matrix rank is a nonnegative integer, so the liminf on the right is at least $0=r$.
+
 :::
 
-<1>2. Suppose $r>0$. Then $f(t)$ has an $r\times r$ minor with nonzero determinant.
+:::
 
-::: {.proof}
+::: pf-step
+
+Suppose $r>0$. Then $f(t)$ has an $r\times r$ minor with nonzero determinant.
+
+
+::: pf-proof
+
 The rank of a matrix is the largest size of a square minor with nonzero determinant. Since
 \[
 \operatorname{rank}(f(t))=r,
 \]
 such an $r\times r$ minor exists.
+
 :::
 
-<1>3. The determinant of the corresponding $r\times r$ minor of $f(s)$ is nonzero for every $s$ sufficiently close to $t$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The determinant of the corresponding $r\times r$ minor of $f(s)$ is nonzero for every $s$ sufficiently close to $t$.
+
+
+::: pf-proof
+
 Fix the row and column indices of the nonzero minor from step <1>2. Its determinant is a polynomial in the corresponding entries of $f(s)$. Since $f:\mathbb R\to M_{n\times n}$ is continuous, every matrix entry is continuous, so this minor determinant is a continuous scalar function of $s$.
 
 Its value at $s=t$ is nonzero. Hence it remains nonzero on some neighborhood of $t$.
+
 :::
 
-<1>4. For every $s$ sufficiently close to $t$,
+:::
+
+::: pf-step
+
+For every $s$ sufficiently close to $t$,
 \[
 \operatorname{rank}(f(s))\ge r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $f(s)$ has a nonzero $r\times r$ minor. Therefore its rank is at least $r$.
+
 :::
 
-<1>5. If $t_k\to t$, then
+:::
+
+::: pf-step
+
+If $t_k\to t$, then
 \[
 \boxed{
 g(t)\le\liminf_{k\to\infty}g(t_k)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $g(t)=0$, apply step <1>1. Otherwise let
 \[
 r=g(t)>0.
@@ -91,11 +124,18 @@ eventually, and hence
 \[
 \liminf_{k\to\infty}g(t_k)\ge g(t).
 \]
+
 :::
 
-<1>6. The function $g$ need not be continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ need not be continuous.
+
+
+::: pf-proof
+
 Take
 \[
 f(t)=
@@ -113,11 +153,15 @@ g(t)=
 \end{cases}
 \]
 Thus $g$ is discontinuous at $0$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves lower semicontinuity, and step <1>6 answers the continuity question negatively.
+
 :::
+
 :::

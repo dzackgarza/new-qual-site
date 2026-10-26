@@ -19,27 +19,39 @@ audit:
 Find $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin x } { x } }$
 :::
 
-::: {.solution}
-<1>1. For $0<x<\pi/2$,
+::: pf
+
+::: pf-step
+
+For $0<x<\pi/2$,
 $$
 \sin x<x<\tan x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Comparing the inscribed triangle, circular sector, and tangent triangle in the
 unit circle gives
 $$
 \frac12\sin x<\frac x2<\frac12\tan x.
 $$
 Multiplying by $2$ gives the claim.
+
 :::
 
-<1>2. Hence, for $0<x<\pi/2$,
+:::
+
+::: pf-step
+
+Hence, for $0<x<\pi/2$,
 $$
 \cos x<\frac{\sin x}{x}<1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first inequality in step <1>1 gives $\sin x/x<1$. The second gives
 $$
 x<\frac{\sin x}{\cos x},
@@ -48,24 +60,38 @@ and since $x>0$ and $\cos x>0$, this rearranges to
 $$
 \cos x<\frac{\sin x}{x}.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \lim_{x\to0^+}\frac{\sin x}{x}=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 and $\cos x\to1$ give the result by the squeeze theorem.
+
 :::
 
-<1>4. The function
+:::
+
+::: pf-step
+
+The function
 $$
 x\longmapsto\frac{\sin x}{x}
 $$
 is even on $\mathbb R\setminus\{0\}$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\neq0$,
 $$
 \frac{\sin(-x)}{-x}
@@ -74,23 +100,34 @@ $$
 =
 \frac{\sin x}{x}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 \lim_{x\to0}\frac{\sin x}{x}=1.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, the left-hand limit equals the right-hand limit from step <1>3.
 Thus the two-sided limit exists and equals $1$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required limit.
+
 :::
+
 :::

@@ -19,13 +19,16 @@ audit:
 Let $f ~ \in ~ { \cal F } [ X ]$ Prove that $f ( X + Y ) = f ( X ) + f ( Y )$ if and only if $f \ =$ $a _ { 0 } X + a _ { 1 } X ^ { p } + \ldots + a _ { n } X ^ { p ^ { n } }$ for some $n \geq 0$ and $a _ { 0 } , . . . , a _ { n } \in F$
 :::
 
-::: {.solution}
 Write
 $$
 f(X)=\sum_{m=0}^d c_mX^m.
 $$
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 f(X)=a_0X+a_1X^p+\cdots+a_nX^{p^n},
 $$
@@ -34,7 +37,9 @@ $$
 f(X+Y)=f(X)+f(Y).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $p$, the Frobenius identity gives
 $$
 (X+Y)^p=X^p+Y^p.
@@ -53,29 +58,43 @@ f(X+Y)
 &=f(X)+f(Y).
 \end{aligned}
 $$
+
 :::
 
-<1>2. Conversely, assume
+:::
+
+::: pf-step
+
+Conversely, assume
 $$
 f(X+Y)=f(X)+f(Y).
 $$
 Then $c_0=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Set $X=Y=0$. Then
 $$
 f(0)=f(0)+f(0),
 $$
 so $f(0)=0$. Hence the constant coefficient $c_0$ is zero.
+
 :::
 
-<1>3. If $m\geq1$ and $c_m\neq0$, then
+:::
+
+::: pf-step
+
+If $m\geq1$ and $c_m\neq0$, then
 $$
 \binom{m}{k}=0
 $$
 in $F$ for every $1\leq k\leq m-1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding the assumed identity gives
 $$
 0=f(X+Y)-f(X)-f(Y)
@@ -87,16 +106,23 @@ $$
 c_m\binom{m}{k},
 $$
 which must vanish. If $c_m\neq0$, then $\binom{m}{k}=0$ in $F$.
+
 :::
 
-<1>4. If every intermediate binomial coefficient
+:::
+
+::: pf-step
+
+If every intermediate binomial coefficient
 $$
 \binom{m}{k},
 \qquad 1\leq k\leq m-1,
 $$
 vanishes in characteristic $p$, then $m$ is a power of $p$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 m=p^rq,
@@ -120,30 +146,48 @@ $$
 \binom{m}{p^r}\equiv q\not\equiv0\pmod p,
 $$
 contradicting the hypothesis. Therefore $q=1$, so $m=p^r$.
+
 :::
 
-<1>5. Every exponent occurring in $f$ with nonzero coefficient is a power of $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every exponent occurring in $f$ with nonzero coefficient is a power of $p$.
+
+
+::: pf-proof
+
 Let $m\geq1$ with $c_m\neq0$. By step <1>3, all intermediate binomial coefficients of $m$ vanish in $F$, hence modulo $p$. Step <1>4 therefore gives
 $$
 m=p^r
 $$
 for some $r\geq0$.
+
 :::
 
-<1>6. There exist $n\geq0$ and $a_0,\ldots,a_n\in F$ such that
+:::
+
+::: pf-step
+
+There exist $n\geq0$ and $a_0,\ldots,a_n\in F$ such that
 $$
 \boxed{f(X)=a_0X+a_1X^p+\cdots+a_nX^{p^n}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, no constant term occurs. By step <1>5, every nonzero remaining term has exponent $p^i$ for some $i\geq0$. Let $n$ be at least the largest such $i$ and let $a_i$ be the coefficient of $X^{p^i}$, allowing $a_i=0$ when that power is absent. This gives the displayed form. The zero polynomial is included by taking $n=0$ and $a_0=0$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the forward implication from the displayed form to additivity, and steps <1>2 through <1>6 prove the converse.
+
 :::
+
 :::

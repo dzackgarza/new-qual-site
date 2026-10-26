@@ -31,16 +31,21 @@ f(\vec r)e^{-i\vec k\cdot\vec r}
 $$
 :::
 
-::: {.solution}
 Put
 $$
 k=|\vec k|.
 $$
 
-<1>1. By rotational symmetry, choose spherical coordinates whose polar axis is
+::: pf
+
+::: pf-step
+
+By rotational symmetry, choose spherical coordinates whose polar axis is
 parallel to $\vec k$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ depends only on $r=|\vec r|$, and Lebesgue measure is rotation
 invariant. Thus rotating the coordinate system does not change the integral.
 In the chosen coordinates,
@@ -49,9 +54,14 @@ $$
 =
 kr\cos\theta.
 $$
+
 :::
 
-<1>2. The Fourier transform is
+:::
+
+::: pf-step
+
+The Fourier transform is
 $$
 \widetilde f(\vec k)
 =
@@ -64,15 +74,22 @@ e^{-ikr\cos\theta}
 \,d\theta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Inside the ball $r\leq r_0$, the function equals the constant $f_0$; outside
 it vanishes. The spherical volume element is
 $$
 r^2\sin\theta\,dr\,d\theta\,d\varphi.
 $$
+
 :::
 
-<1>3. The angular integrals give
+:::
+
+::: pf-step
+
+The angular integrals give
 $$
 \int_0^{2\pi}d\varphi
 \int_0^\pi
@@ -82,7 +99,9 @@ e^{-ikr\cos\theta}
 4\pi\frac{\sin(kr)}{kr}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The $\varphi$-integral contributes $2\pi$. For the polar integral, set
 $$
 u=\cos\theta.
@@ -96,9 +115,14 @@ e^{-ikr\cos\theta}\sin\theta\,d\theta
 =
 \frac{2\sin(kr)}{kr}.
 $$
+
 :::
 
-<1>4. For $k>0$,
+:::
+
+::: pf-step
+
+For $k>0$,
 $$
 \widetilde f(\vec k)
 =
@@ -108,11 +132,18 @@ r\sin(kr)
 \,dr.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2 and cancel one factor of $r$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \int_0^{r_0}
 r\sin(kr)
@@ -123,7 +154,9 @@ r\sin(kr)
 \frac{\sin(kr_0)}{k^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integration by parts gives
 $$
 \int r\sin(kr)\,dr
@@ -133,9 +166,14 @@ $$
 \frac{\sin(kr)}{k^2}.
 $$
 The lower endpoint contributes zero.
+
 :::
 
-<1>6. Hence, for $k>0$,
+:::
+
+::: pf-step
+
+Hence, for $k>0$,
 $$
 \boxed{
 \widetilde f(\vec k)
@@ -147,16 +185,23 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>5 into step <1>4 and use
 $$
 \frac{4\pi}{(2\pi)^3}
 =
 \frac1{2\pi^2}.
 $$
+
 :::
 
-<1>7. At $k=0$,
+:::
+
+::: pf-step
+
+At $k=0$,
 $$
 \boxed{
 \widetilde f(0)
@@ -165,7 +210,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 \widetilde f(0)
@@ -184,11 +231,15 @@ $$
 =
 \frac{z^3}{3}+O(z^5).
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6--<1>7 give the Fourier image for all $\vec k\in\mathbb R^3$.
+
 :::
+
 :::

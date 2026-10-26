@@ -24,27 +24,44 @@ for every $n$.
 Prove that there is no bijection from $\mathbb N=\{1,2,\ldots\}$ onto $S$.
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that there is a surjection
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that there is a surjection
 \[
 \phi:\mathbb N\to S.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If a bijection from $\mathbb N$ onto $S$ existed, then in particular a surjection would exist. It is therefore enough to contradict surjectivity.
+
 :::
 
-<1>2. Write
+:::
+
+::: pf-step
+
+Write
 \[
 \phi(n)=\bigl(x^{(n)}_1,x^{(n)}_2,\ldots\bigr)
 \]
 for each $n\in\mathbb N$, where every $x^{(n)}_j\in\{0,1\}$.
 
-::: {.proof}
+
+::: pf-proof
+
 This merely records the coordinates of the binary sequence $\phi(n)$.
+
 :::
 
-<1>3. Define a sequence $y=(y_1,y_2,\ldots)$ by
+:::
+
+::: pf-step
+
+Define a sequence $y=(y_1,y_2,\ldots)$ by
 \[
 y_n=
 \begin{cases}
@@ -54,38 +71,65 @@ y_n=
 \]
 Then $y\in S$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $n$, the value $y_n$ is either $0$ or $1$. Hence $y$ is a binary sequence and therefore belongs to $S$.
+
 :::
 
-<1>4. For every $n\in\mathbb N$,
+:::
+
+::: pf-step
+
+For every $n\in\mathbb N$,
 \[
 y\ne \phi(n).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By construction,
 \[
 y_n\ne x^{(n)}_n.
 \]
 Thus $y$ and $\phi(n)$ differ in their $n$th coordinate, so they are distinct sequences.
+
 :::
 
-<1>5. No surjection from $\mathbb N$ onto $S$ exists.
+:::
 
-::: {.proof}
+::: pf-step
+
+No surjection from $\mathbb N$ onto $S$ exists.
+
+
+::: pf-proof
+
 Step <1>3 gives $y\in S$, while step <1>4 shows that $y$ is not equal to $\phi(n)$ for any $n\in\mathbb N$. Hence $y$ is not in the image of $\phi$, contradicting the surjectivity assumed in step <1>1.
+
 :::
 
-<1>6. Therefore there is no bijection from $\mathbb N$ onto $S$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore there is no bijection from $\mathbb N$ onto $S$.
+
+
+::: pf-proof
+
 Every bijection is surjective, and step <1>5 rules out every surjection.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

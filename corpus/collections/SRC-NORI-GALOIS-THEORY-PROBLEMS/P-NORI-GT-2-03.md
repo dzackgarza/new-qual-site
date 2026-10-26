@@ -29,27 +29,44 @@ Hint: Use the previous problem to do this when $( b _ { 1 } , b _ { 2 } , b _ { 
 (2) Deduce that $\mathbb { Q } ( { \sqrt { a _ { 1 } } } + { \sqrt { a _ { 2 } } } + { \sqrt { a _ { 3 } } } ) = E .$ Hint: First deduce from part (1) that $\pm { \sqrt { a _ { 1 } } } + \pm { \sqrt { a _ { 2 } } } + \pm { \sqrt { a _ { 3 } } }$ are all conjugates of each other.
 :::
 
-::: {.solution}
 Put $E=\mathbb Q(\sqrt2,\sqrt3,\sqrt5)$ and $\alpha=\sqrt2+\sqrt3+\sqrt5$.
 
-<1>1. The classes $[2],[3],[5]$ are independent in $\mathbb Q^\times/(\mathbb Q^\times)^2$, so $[E:\mathbb Q]=8$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The classes $[2],[3],[5]$ are independent in $\mathbb Q^\times/(\mathbb Q^\times)^2$, so $[E:\mathbb Q]=8$.
+
+
+::: pf-proof
+
 If $2^{e_1}3^{e_2}5^{e_3}$ with $e_i\in\{0,1\}$ were a rational square, unique factorization would force every $e_i=0$. The preceding multiquadratic-extension result therefore gives degree $2^3=8$.
+
 :::
 
-<1>2. The eight monomials
+:::
+
+::: pf-step
+
+The eight monomials
 \[
 (\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3},
 \qquad e_i\in\{0,1\},
 \]
 form a $\mathbb Q$-basis of $E$.
 
-::: {.proof}
+
+::: pf-proof
+
 They span because powers of each square root reduce using $\sqrt2^2=2$, $\sqrt3^2=3$, and $\sqrt5^2=5$. There are eight spanning elements, and step <1>1 says the dimension is eight, so they form a basis.
+
 :::
 
-<1>3. For every $(b_1,b_2,b_3)\in\{\pm1\}^3$, there is a $\mathbb Q$-automorphism $\sigma_b$ of $E$ with
+:::
+
+::: pf-step
+
+For every $(b_1,b_2,b_3)\in\{\pm1\}^3$, there is a $\mathbb Q$-automorphism $\sigma_b$ of $E$ with
 \[
 \sigma_b(\sqrt2)=b_1\sqrt2,
 \quad
@@ -58,7 +75,9 @@ They span because powers of each square root reduce using $\sqrt2^2=2$, $\sqrt3^
 \sigma_b(\sqrt5)=b_3\sqrt5.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the basis in step <1>2 define
 \[
 \sigma_b\!left((\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3}\right)
@@ -66,51 +85,84 @@ On the basis in step <1>2 define
 (\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3},
 \]
 and extend $\mathbb Q$-linearly. This respects multiplication because it preserves the three defining square relations. Moreover $\sigma_b^2=\mathrm{id}$, so it is an automorphism.
+
 :::
 
-<1>4. The eight images of $\alpha$ under these automorphisms are
+:::
+
+::: pf-step
+
+The eight images of $\alpha$ under these automorphisms are
 \[
 b_1\sqrt2+b_2\sqrt3+b_3\sqrt5,
 \qquad (b_1,b_2,b_3)\in\{\pm1\}^3,
 \]
 and they are pairwise distinct.
 
-::: {.proof}
+
+::: pf-proof
+
 The displayed formula follows from step <1>3. If two such sums were equal, subtraction would give a nontrivial $\mathbb Q$-linear relation among $\sqrt2,\sqrt3,\sqrt5$. These are three distinct members of the basis in step <1>2, so no such relation exists.
+
 :::
 
-<1>5. Let $m_\alpha(T)\in\mathbb Q[T]$ be the minimal polynomial of $\alpha$. Every number in step <1>4 is a root of $m_\alpha$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Let $m_\alpha(T)\in\mathbb Q[T]$ be the minimal polynomial of $\alpha$. Every number in step <1>4 is a root of $m_\alpha$.
+
+
+::: pf-proof
+
 Since $m_\alpha(\alpha)=0$, applying any $\mathbb Q$-automorphism $\sigma_b$ gives
 \[
 0=\sigma_b(m_\alpha(\alpha))
 =m_\alpha(\sigma_b(\alpha)).
 \]
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 [\mathbb Q(\alpha):\mathbb Q]=\deg m_\alpha\ge8.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5, the polynomial $m_\alpha$ has at least eight distinct roots, so its degree is at least eight.
+
 :::
 
-<1>7. Since $\mathbb Q(\alpha)\subseteq E$ and $[E:\mathbb Q]=8$, one also has
+:::
+
+::: pf-step
+
+Since $\mathbb Q(\alpha)\subseteq E$ and $[E:\mathbb Q]=8$, one also has
 \[
 [\mathbb Q(\alpha):\mathbb Q]\le8.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from the tower law applied to
 \[
 \mathbb Q\subseteq\mathbb Q(\alpha)\subseteq E.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 [\mathbb Q(\alpha):\mathbb Q]=8=[E:\mathbb Q],
 \]
@@ -119,17 +171,23 @@ so
 \boxed{\mathbb Q(\sqrt2+\sqrt3+\sqrt5)=E.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>6--<1>7 force equality of the degrees. The tower law then gives
 \[
 [E:\mathbb Q(\alpha)]=1,
 \]
 hence the two fields are equal.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (1), and step <1>8 proves part (2).
+
 :::
+
 :::

@@ -29,7 +29,6 @@ P^{(k)}(z_j)=c_{j,k}
 for all $j,k$.
 :::
 
-::: {.solution}
 Let
 \[
 \mathcal P_N
@@ -41,7 +40,11 @@ Then
 \dim_{\mathbb C}\mathcal P_N=N+1.
 \]
 
-<1>1. Define the linear map
+::: pf
+
+::: pf-step
+
+Define the linear map
 \[
 \Phi:\mathcal P_N
 \longrightarrow
@@ -55,7 +58,9 @@ by
 {\substack{1\le j\le n\\0\le k\le m_j}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The total number of coordinates is
 \[
 \sum_{j=1}^n(m_j+1)
@@ -68,9 +73,14 @@ Each coordinate map
 P\mapsto P^{(k)}(z_j)
 \]
 is linear, so $\Phi$ is linear.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 P^{(k)}(z_j)=0
 \]
@@ -84,7 +94,9 @@ then
 \]
 divides $P(z)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expand $P$ in powers of $z-z_j$:
 \[
 P(z)
@@ -105,9 +117,14 @@ Hence every surviving term is divisible by
 \[
 (z-z_j)^{m_j+1}.
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 \Phi(P)=0,
 \]
@@ -118,7 +135,9 @@ then
 \]
 divides $P(z)$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, for each $j$,
 \[
 (z-z_j)^{m_j+1}
@@ -126,9 +145,14 @@ By step <1>2, for each $j$,
 divides $P$.
 The numbers $z_1,\ldots,z_n$ are distinct, so the corresponding linear factors are pairwise relatively prime.
 Therefore the product of these powers divides $P$.
+
 :::
 
-<1>4. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 \[
 Q(z)
 =
@@ -140,7 +164,9 @@ has degree
 N+1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of $N$,
 \[
 \deg Q
@@ -149,11 +175,18 @@ By the definition of $N$,
 =
 N+1.
 \]
+
 :::
 
-<1>5. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is injective.
+
+
+::: pf-proof
+
 Suppose
 \[
 \Phi(P)=0.
@@ -172,11 +205,18 @@ Thus
 P=0.
 \]
 Hence $\ker\Phi=\{0\}$.
+
 :::
 
-<1>6. The map $\Phi$ is bijective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is bijective.
+
+
+::: pf-proof
+
 The domain has dimension
 \[
 \dim\mathcal P_N=N+1.
@@ -185,9 +225,14 @@ The codomain $\mathbb C^{N+1}$ also has dimension $N+1$.
 By step <1>5, $\Phi$ is injective.
 A linear map between finite-dimensional vector spaces of equal dimension is injective if and only if it is surjective.
 Therefore $\Phi$ is bijective.
+
 :::
 
-<1>7. For every prescribed array
+:::
+
+::: pf-step
+
+For every prescribed array
 \[
 (c_{j,k}),
 \]
@@ -197,15 +242,21 @@ P^{(k)}(z_j)=c_{j,k}
 \]
 for all $j,k$.
 
-::: {.proof}
+
+::: pf-proof
+
 The array $(c_{j,k})$ is an arbitrary element of the codomain of $\Phi$.
 Surjectivity from step <1>6 gives existence of a preimage $P$.
 Injectivity gives uniqueness.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is exactly the Hermite interpolation statement required.
+
 :::
+
 :::

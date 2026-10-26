@@ -19,10 +19,13 @@ audit:
 Calculate $H ^ { * } ( \mathbb { R } \mathbb { P } ^ { \infty } ; \mathbb { Z } ) , H ^ { * } ( \mathbb { R } \mathbb { P } ^ { 2 n } ; \mathbb { Z } ) , H ^ { * } ( \mathbb { R } \mathbb { P } ^ { 2 n + 1 } ; \mathbb { Z } )$
 :::
 
-::: {.solution}
 Use the standard CW decomposition of $\mathbb{RP}^m$ with one cell in every dimension $0,1,\ldots,m$.
 
-<1>1. The integral cellular boundary map
+::: pf
+
+::: pf-step
+
+The integral cellular boundary map
 \[
 d_k:C_k\to C_{k-1}
 \]
@@ -39,11 +42,18 @@ d_k=
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The attaching map of the $k$-cell is the quotient map $S^{k-1}\to\mathbb{RP}^{k-1}$. Its incidence number with the unique $(k-1)$-cell is the sum of the contributions from the two hemispheres, which differ by the degree $(-1)^k$ of the antipodal map on $S^{k-1}$. Hence the coefficient is $1+(-1)^k$.
+
 :::
 
-<1>2. The cellular cochain differential
+:::
+
+::: pf-step
+
+The cellular cochain differential
 \[
 \delta^k:C^k\to C^{k+1}
 \]
@@ -56,11 +66,18 @@ is therefore
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Cellular cochains are $C^k=\operatorname{Hom}(C_k,\mathbb Z)\cong\mathbb Z$, and $\delta^k$ is dual to $d_{k+1}$. Apply step <1>1 to $k+1$.
+
 :::
 
-<1>3. For $\mathbb{RP}^{\infty}$,
+:::
+
+::: pf-step
+
+For $\mathbb{RP}^{\infty}$,
 \[
 \boxed{
 H^k(\mathbb{RP}^{\infty};\mathbb Z)
@@ -72,7 +89,9 @@ H^k(\mathbb{RP}^{\infty};\mathbb Z)
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cochain complex is
 \[
 0\to\mathbb Z\xrightarrow{0}\mathbb Z
@@ -80,9 +99,14 @@ The cochain complex is
 \xrightarrow{2}\mathbb Z\xrightarrow{0}\cdots.
 \]
 At positive even degree, the outgoing map is zero and the incoming image is $2\mathbb Z$, giving $\mathbb Z/2$. At odd degree, multiplication by $2$ is injective, giving zero. Degree $0$ gives $\mathbb Z$.
+
 :::
 
-<1>4. For $\mathbb{RP}^{2n}$,
+:::
+
+::: pf-step
+
+For $\mathbb{RP}^{2n}$,
 \[
 \boxed{
 H^k(\mathbb{RP}^{2n};\mathbb Z)
@@ -94,15 +118,22 @@ H^k(\mathbb{RP}^{2n};\mathbb Z)
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cochain complex of step <1>2 truncates in degree $2n$. The calculation below the top is identical to step <1>3. In top degree $2n$, there is no outgoing differential and the incoming differential is multiplication by $2$, so
 \[
 H^{2n}\cong\mathbb Z/2.
 \]
 This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top integral cohomology $\mathbb Z/2$.
+
 :::
 
-<1>5. For $\mathbb{RP}^{2n+1}$,
+:::
+
+::: pf-step
+
+For $\mathbb{RP}^{2n+1}$,
 \[
 \boxed{
 H^k(\mathbb{RP}^{2n+1};\mathbb Z)
@@ -114,11 +145,18 @@ H^k(\mathbb{RP}^{2n+1};\mathbb Z)
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again the calculation below the top is step <1>3. In degree $2n+1$, the incoming differential $\delta^{2n}$ is zero and there is no outgoing differential, so the top cohomology is $\mathbb Z$. This is the integral orientation class of the orientable odd-dimensional real projective space.
+
 :::
 
-<1>6. If the ring structure is also desired, let
+:::
+
+::: pf-step
+
+If the ring structure is also desired, let
 \[
 u\in H^2(\mathbb{RP}^{\infty};\mathbb Z)
 \]
@@ -128,23 +166,36 @@ be the unique nonzero class. Then
 \cong\mathbb Z[u]/(2u),\qquad |u|=2.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\mathbb{RP}^{\infty};\mathbb F_2)$. Naturality and the mod-$2$ ring $\mathbb F_2[x]$ show that $u^j$ is the unique nonzero integral class in degree $2j$. Each such class has order $2$, giving the relation $2u=0$ and no further relation in the infinite case.
+
 :::
 
-<1>7. For finite even-dimensional projective space,
+:::
+
+::: pf-step
+
+For finite even-dimensional projective space,
 \[
 \boxed{H^*(\mathbb{RP}^{2n};\mathbb Z)
 \cong\mathbb Z[u]/(2u,u^{n+1}),\qquad |u|=2.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Restrict the class $u$ from $\mathbb{RP}^{\infty}$. Step <1>4 shows that $u^j$ supplies the unique nonzero class in degrees $2j$ for $1\leq j\leq n$, and dimension forces $u^{n+1}=0$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3--<1>5 give the requested integral cohomology groups, and steps <1>6--<1>7 record the corresponding standard ring presentations where no extra top odd-degree generator is needed.
+
 :::
+
 :::

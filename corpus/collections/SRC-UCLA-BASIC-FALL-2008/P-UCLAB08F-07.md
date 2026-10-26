@@ -22,23 +22,33 @@ Suppose $\lambda_1,\ldots,\lambda_r$ are distinct eigenvalues with corresponding
 Prove that $v_1,\ldots,v_r$ are linearly independent.
 :::
 
-::: {.solution}
 Write
 \[
 Tv_i=\lambda_i v_i
 \]
 for $i=1,\ldots,r$.
 
-<1>1. Suppose
+::: pf
+
+::: pf-step
+
+Suppose
 \[
 \sum_{i=1}^r c_iv_i=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 To prove linear independence, it suffices to show that every such relation has all coefficients equal to zero.
+
 :::
 
-<1>2. Fix $j\in\{1,\ldots,r\}$ and define
+:::
+
+::: pf-step
+
+Fix $j\in\{1,\ldots,r\}$ and define
 \[
 p_j(X)
 =
@@ -51,15 +61,22 @@ p_j(T)v_i=0
 \]
 for every $i\ne j$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $i\ne j$, the product defining $p_j(T)$ contains the factor
 \[
 T-\lambda_iI,
 \]
 which annihilates $v_i$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 p_j(T)v_j
 =
@@ -68,17 +85,26 @@ p_j(T)v_j
 \right)v_j.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $v_j$ is an eigenvector with eigenvalue $\lambda_j$,
 \[
 p_j(T)v_j=p_j(\lambda_j)v_j.
 \]
 Expanding $p_j(\lambda_j)$ gives the displayed scalar.
+
 :::
 
-<1>4. The coefficient $c_j$ in step <1>1 is zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The coefficient $c_j$ in step <1>1 is zero.
+
+
+::: pf-proof
+
 Apply $p_j(T)$ to the relation from step <1>1. By steps <1>2--<1>3,
 \[
 0
@@ -92,17 +118,28 @@ The eigenvalues are distinct, so the scalar product is nonzero, and $v_j\ne0$. H
 \[
 c_j=0.
 \]
+
 :::
 
-<1>5. The vectors $v_1,\ldots,v_r$ are linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vectors $v_1,\ldots,v_r$ are linearly independent.
+
+
+::: pf-proof
+
 The index $j$ in step <1>4 was arbitrary, so every coefficient in the relation of step <1>1 is zero.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

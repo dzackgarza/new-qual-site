@@ -24,7 +24,6 @@ Assume
 Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 :::
 
-::: {.solution}
 Let
 \[
 H\le G
@@ -34,7 +33,11 @@ be any subgroup with
 |H|=|N|.
 \]
 
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 \[
 N\triangleleft G,
 \]
@@ -44,7 +47,9 @@ HN
 \]
 is a subgroup of \(G\).
 
-::: {.proof}
+
+::: pf-proof
+
 If \(N\) is normal, then for \(h_1n_1,h_2n_2\in HN\),
 \[
 (h_1n_1)(h_2n_2)
@@ -52,15 +57,22 @@ If \(N\) is normal, then for \(h_1n_1,h_2n_2\in HN\),
 h_1h_2(h_2^{-1}n_1h_2)n_2\in HN,
 \]
 and inverses are handled similarly. Thus \(HN\le G\).
+
 :::
 
-<1>2. The second isomorphism theorem gives
+:::
+
+::: pf-step
+
+The second isomorphism theorem gives
 \[
 \boxed{
 HN/N\cong H/(H\cap N)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(H\le G\) and \(N\triangleleft G\), the map
 \[
 H\to HN/N,
@@ -68,9 +80,14 @@ H\to HN/N,
 h\mapsto hN,
 \]
 is surjective with kernel \(H\cap N\).
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 |HN/N|
@@ -78,11 +95,18 @@ is surjective with kernel \(H\cap N\).
 [H:H\cap N]}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take orders in the finite-group isomorphism from step <1>2.
+
 :::
 
-<1>4. The integer
+:::
+
+::: pf-step
+
+The integer
 \[
 |HN/N|
 \]
@@ -91,7 +115,9 @@ divides
 [G:N].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 N\le HN\le G,
@@ -100,23 +126,35 @@ the quotient \(HN/N\) is a subgroup of \(G/N\). By Lagrange's theorem,
 \[
 |HN/N|\mid|G/N|=[G:N].
 \]
+
 :::
 
-<1>5. The integer
+:::
+
+::: pf-step
+
+The integer
 \[
 |HN/N|
 \]
 also divides \(|H|\).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 |HN/N|=[H:H\cap N],
 \]
 and every subgroup index divides the group order in a finite group.
+
 :::
 
-<1>6. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |H|=|N|,
 \]
@@ -126,17 +164,26 @@ one has
 |HN/N|\mid|N|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the given equality into step <1>5.
+
 :::
 
-<1>7. By the coprimality hypothesis,
+:::
+
+::: pf-step
+
+By the coprimality hypothesis,
 \[
 \boxed{
 |HN/N|=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4 and <1>6 show that \(|HN/N|\) divides both
 \[
 [G:N]
@@ -150,30 +197,49 @@ Since
 \gcd(|N|,[G:N])=1,
 \]
 the only common positive divisor is \(1\).
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{HN=N}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient \(HN/N\) has one element exactly when \(HN=N\).
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{H\subseteq N}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 H\subseteq HN=N.
 \]
+
 :::
 
-<1>10. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |H|=|N|,
 \]
@@ -182,19 +248,32 @@ the inclusion in step <1>9 is equality:
 \boxed{H=N}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A finite subgroup contained in another finite group of the same order must equal it.
+
 :::
 
-<1>11. Thus \(N\) is the unique subgroup of \(G\) of order \(|N|\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus \(N\) is the unique subgroup of \(G\) of order \(|N|\).
+
+
+::: pf-proof
+
 The subgroup \(H\) was arbitrary among subgroups with \(|H|=|N|\), and step <1>10 shows every such \(H\) equals \(N\).
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required uniqueness statement.
+
 :::
+
 :::

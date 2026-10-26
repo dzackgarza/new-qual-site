@@ -33,8 +33,11 @@ and that
 \]
 :::
 
-::: {.solution}
-<1>1. The rank-nullity theorem states that for a linear map
+::: pf
+
+::: pf-step
+
+The rank-nullity theorem states that for a linear map
 \[
 L:E\to F
 \]
@@ -43,7 +46,9 @@ between finite-dimensional vector spaces,
 \boxed{\dim E=\dim\ker L+\dim\operatorname{image}L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 e_1,\ldots,e_k
@@ -90,14 +95,21 @@ Adding gives
 \[
 \dim E=n=\dim\ker L+\dim\operatorname{image}L.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \operatorname{image}T\subseteq\ker S.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $w\in\operatorname{image}T$. Then
 \[
 w=T(v)
@@ -111,14 +123,21 @@ one has
 S(w)=S(T(v))=0.
 \]
 Hence $w\in\ker S$.
+
 :::
 
-<1>3. Since $T$ is one-to-one,
+:::
+
+::: pf-step
+
+Since $T$ is one-to-one,
 \[
 \dim\operatorname{image}T=\dim V.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Injectivity gives
 \[
 \ker T=\{0\}.
@@ -133,14 +152,21 @@ gives
 =
 0+\dim\operatorname{image}T.
 \]
+
 :::
 
-<1>4. Since $S$ is onto,
+:::
+
+::: pf-step
+
+Since $S$ is onto,
 \[
 \dim\ker S=\dim W-\dim U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Surjectivity gives
 \[
 \operatorname{image}S=U.
@@ -156,9 +182,14 @@ gives
 \dim\ker S+\dim U.
 \]
 Rearranging yields the claim.
+
 :::
 
-<1>5. For finite-dimensional spaces with
+:::
+
+::: pf-step
+
+For finite-dimensional spaces with
 \[
 \operatorname{image}T\subseteq\ker S,
 \]
@@ -169,7 +200,9 @@ one has
 \dim\ker S-\dim\operatorname{image}T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any finite-dimensional vector space $E$ and subspace $F\subseteq E$,
 \[
 \dim(E/F)=\dim E-\dim F.
@@ -181,9 +214,14 @@ E=\ker S,
 F=\operatorname{image}T,
 \]
 using step <1>2.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \dim\bigl(\ker S/\operatorname{image}T\bigr)
@@ -192,7 +230,9 @@ using step <1>2.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>5,
 \[
 \begin{aligned}
@@ -205,11 +245,15 @@ By steps <1>3--<1>5,
 -\dim V+\dim W-\dim U.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 states and proves rank-nullity, step <1>2 proves the inclusion in part (b), and step <1>6 proves the quotient-dimension identity.
+
 :::
+
 :::

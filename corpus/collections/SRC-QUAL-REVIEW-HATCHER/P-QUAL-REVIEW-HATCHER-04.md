@@ -27,7 +27,6 @@ Compute the degree of $f$.
 The source prints $S^4$, but the formula has four coordinates, so it defines a self-map of the unit sphere $S^3\subset\mathbb R^4$.
 :::
 
-::: {.solution}
 The printed formula has four coordinates, so it defines the map
 \[
 f:S^3\to S^3
@@ -37,21 +36,32 @@ recorded in the remark on the card. Its degree is
 \boxed{0}.
 \]
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 (x,y,z,w)\in S^3,
 \]
 all four coordinates of \(f(x,y,z,w)\) are nonnegative.
 
-::: {.proof}
+
+::: pf-proof
+
 The numerator is
 \[
 (x^2,y^2,z^2,w^2),
 \]
 whose coordinates are all nonnegative, and the normalizing denominator is positive.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 f(S^3)
@@ -59,36 +69,59 @@ f(S^3)
 \{(u_1,u_2,u_3,u_4)\in S^3:u_i\ge0\text{ for all }i\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>1 written as a statement about the image.
+
 :::
 
-<1>3. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 (-1,0,0,0)\notin f(S^3)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first coordinate of every image point is nonnegative by step <1>2.
+
 :::
 
-<1>4. Therefore \(f\) factors through
+:::
+
+::: pf-step
+
+Therefore \(f\) factors through
 \[
 S^3\setminus\{(-1,0,0,0)\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 says the image avoids that point.
+
 :::
 
-<1>5. The punctured sphere
+:::
+
+::: pf-step
+
+The punctured sphere
 \[
 S^3\setminus\{(-1,0,0,0)\}
 \]
 is contractible.
 
-::: {.proof}
+
+::: pf-proof
+
 Stereographic projection from the omitted point gives a homeomorphism
 \[
 S^3\setminus\{(-1,0,0,0)\}
@@ -96,42 +129,67 @@ S^3\setminus\{(-1,0,0,0)\}
 \mathbb R^3,
 \]
 and \(\mathbb R^3\) is contractible.
+
 :::
 
-<1>6. Hence \(f\) is null-homotopic as a map
+:::
+
+::: pf-step
+
+Hence \(f\) is null-homotopic as a map
 \[
 S^3\to S^3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, \(f\) factors through the contractible space in step <1>5. Any map factoring through a contractible space is null-homotopic.
+
 :::
 
-<1>7. A null-homotopic self-map of \(S^3\) induces the zero homomorphism on
+:::
+
+::: pf-step
+
+A null-homotopic self-map of \(S^3\) induces the zero homomorphism on
 \[
 H_3(S^3;\mathbb Z)\cong\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Homotopic maps induce the same map on homology. A null-homotopic map is homotopic to a constant map, and a constant map induces the zero map in positive-dimensional reduced homology.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\deg f=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the degree is the integer by which
 \[
 f_*:H_3(S^3;\mathbb Z)\to H_3(S^3;\mathbb Z)
 \]
 multiplies a fundamental class. Step <1>7 says this map is zero.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested degree for the self-map actually defined by the printed formula.
+
 :::
+
 :::

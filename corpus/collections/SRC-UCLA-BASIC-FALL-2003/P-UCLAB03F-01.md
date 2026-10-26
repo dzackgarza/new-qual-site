@@ -21,19 +21,24 @@ Prove that $\mathbb R$ is uncountable.
 If you use the Baire category theorem, you must prove it.
 :::
 
-::: {.solution}
 Let
 \[
 \Sigma=\{0,1\}^{\mathbb N}
 \]
 be the set of all infinite binary sequences.
 
-<1>1. There is no surjection
+::: pf
+
+::: pf-step
+
+There is no surjection
 \[
 \mathbb N\to\Sigma.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 s^{(1)},s^{(2)},\ldots
@@ -47,9 +52,14 @@ Define a binary sequence $t=(t_1,t_2,\ldots)$ by
 t_n=1-s^{(n)}_n.
 \]
 Then $t$ differs from $s^{(n)}$ in its $n$th coordinate for every $n$. Hence $t$ is not in the enumeration, contradicting surjectivity.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \Phi:\Sigma\to[0,1]
 \]
@@ -59,7 +69,9 @@ defined by
 \]
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 The series converges absolutely because
 \[
 0\le
@@ -88,17 +100,31 @@ Suppose $s=(s_n)$ and $t=(t_n)$ are distinct. Let $m$ be the first index for whi
 \end{aligned}
 \]
 Thus $\Phi(s)\ne\Phi(t)$, so $\Phi$ is injective.
+
 :::
 
-<1>3. The interval $[0,1]$ is uncountable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The interval $[0,1]$ is uncountable.
+
+
+::: pf-proof
+
 If $[0,1]$ were countable, then composing an enumeration of $[0,1]$ with the inverse relation supplied by the injection in step <1>2 would imply that $\Sigma$ is countable. More directly, every subset of a countable set is countable, while step <1>2 identifies $\Sigma$ with the subset $\Phi(\Sigma)\subseteq[0,1]$. This contradicts step <1>1.
+
 :::
 
-<1>4. The real numbers are uncountable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The real numbers are uncountable.
+
+
+::: pf-proof
+
 Since
 \[
 [0,1]\subseteq\mathbb R,
@@ -107,11 +133,15 @@ countability of $\mathbb R$ would imply countability of $[0,1]$, contradicting s
 \[
 \boxed{\mathbb R\text{ is uncountable}.}
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion and does not use the Baire category theorem.
+
 :::
+
 :::

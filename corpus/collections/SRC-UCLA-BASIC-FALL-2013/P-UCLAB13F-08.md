@@ -25,13 +25,18 @@ Find all matrices that $P$ could be.
 Hint: it is a very small finite set.
 :::
 
-::: {.solution}
-<1>1. For an idempotent map $P$,
+::: pf
+
+::: pf-step
+
+For an idempotent map $P$,
 \[
 V=\operatorname{im}P\oplus\ker P.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $v\in V$,
 \[
 v
@@ -57,15 +62,22 @@ Pw=P^2u=Pu=w,
 \]
 while $Pw=0$ because $w\in\ker P$.
 Thus $w=0$.
+
 :::
 
-<1>2. Under the orthogonality hypothesis
+:::
+
+::: pf-step
+
+Under the orthogonality hypothesis
 \[
 \operatorname{im}P=(\ker P)^\perp,
 \]
 the map $P$ is the orthogonal projection onto $\operatorname{im}P$ and is represented by a symmetric matrix.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, every $v$ decomposes uniquely as
 \[
 v=u+k,
@@ -85,11 +97,18 @@ Pv=u.
 \]
 Thus $P$ is the usual orthogonal projection onto $\operatorname{im}P$, hence self-adjoint.
 In the standard orthonormal basis of $\mathbb R^3$, its matrix is symmetric.
+
 :::
 
-<1>3. The rank of $P$ is $2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The rank of $P$ is $2$.
+
+
+::: pf-proof
+
 Since
 \[
 P^2=P,
@@ -114,11 +133,18 @@ Therefore
 \[
 \operatorname{rank}P=2.
 \]
+
 :::
 
-<1>4. The kernel of $P$ is one-dimensional.
+:::
 
-::: {.proof}
+::: pf-step
+
+The kernel of $P$ is one-dimensional.
+
+
+::: pf-proof
+
 By rank-nullity in $\mathbb R^3$ and step <1>3,
 \[
 \dim\ker P
@@ -126,15 +152,22 @@ By rank-nullity in $\mathbb R^3$ and step <1>3,
 3-2
 =1.
 \]
+
 :::
 
-<1>5. Let $u=(u_1,u_2,u_3)^t$ be a unit vector spanning $\ker P$.
+:::
+
+::: pf-step
+
+Let $u=(u_1,u_2,u_3)^t$ be a unit vector spanning $\ker P$.
 Then
 \[
 \boxed{P=I-uu^t}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $P$ is the orthogonal projection onto
 \[
 (\ker P)^\perp=u^\perp.
@@ -149,9 +182,14 @@ Thus
 Pv=v-(u\cdot v)u
 =(I-uu^t)v.
 \]
+
 :::
 
-<1>6. The diagonal conditions imply
+:::
+
+::: pf-step
+
+The diagonal conditions imply
 \[
 u_1^2=\frac13,
 \qquad
@@ -160,7 +198,9 @@ u_2^2=\frac12,
 u_3^2=\frac16.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 p_{ii}=1-u_i^2.
@@ -189,9 +229,14 @@ u_3^2
 \frac16.
 \]
 Their sum is $1$, consistent with $\|u\|=1$.
+
 :::
 
-<1>7. Replacing $u$ by $-u$ does not change $P$, so every possible projection is obtained by taking
+:::
+
+::: pf-step
+
+Replacing $u$ by $-u$ does not change $P$, so every possible projection is obtained by taking
 \[
 u_{\varepsilon,\delta}
 =
@@ -204,7 +249,9 @@ u_{\varepsilon,\delta}
 \varepsilon,\delta\in\{\pm1\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 determines the absolute value of every coordinate of $u$.
 There are $2^3$ sign choices, but
 \[
@@ -212,9 +259,14 @@ uu^t=(-u)(-u)^t,
 \]
 so opposite vectors define the same projection.
 Fixing the first sign to be positive leaves exactly four distinct possibilities, parameterized by $\varepsilon,\delta$.
+
 :::
 
-<1>8. The four possible matrices are
+:::
+
+::: pf-step
+
+The four possible matrices are
 \[
 \boxed{
 P_{\varepsilon,\delta}
@@ -235,7 +287,9 @@ P_{\varepsilon,\delta}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the vector from step <1>7 into
 \[
 P=I-uu^t.
@@ -262,11 +316,18 @@ and
 =
 -\frac{\varepsilon\delta}{2\sqrt3}.
 \]
+
 :::
 
-<1>9. These four matrices are all valid orthogonal projections.
+:::
 
-::: {.proof}
+::: pf-step
+
+These four matrices are all valid orthogonal projections.
+
+
+::: pf-proof
+
 For every choice of $\varepsilon,\delta$, the vector $u_{\varepsilon,\delta}$ has norm $1$.
 Hence
 \[
@@ -284,11 +345,15 @@ and
 \[
 \operatorname{im}P=(\ker P)^\perp.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>7--<1>9 show that the displayed four matrices are exactly all possibilities.
+
 :::
+
 :::

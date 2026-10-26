@@ -32,15 +32,20 @@ $$
 The solution uses this intended definition.
 :::
 
-::: {.solution}
-<1>1. For every integer $m\geq0$,
+::: pf
+
+::: pf-step
+
+For every integer $m\geq0$,
 $$
 \lim_{x\to0}
 |x|^{-m}e^{-1/x^2}
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Put
 $$
 t=\frac1{x^2}.
@@ -55,16 +60,23 @@ Exponential decay dominates every power, so
 $$
 t^{m/2}e^{-t}\longrightarrow0.
 $$
+
 :::
 
-<1>2. For every $n\geq0$, there is a polynomial $P_n$ such that for $x\neq0$,
+:::
+
+::: pf-step
+
+For every $n\geq0$, there is a polynomial $P_n$ such that for $x\neq0$,
 $$
 f^{(n)}(x)
 =
 P_n(1/x)e^{-1/x^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction. For $n=0$, take $P_0=1$.
 
 Suppose
@@ -82,28 +94,42 @@ f^{(n+1)}(x)
 \end{aligned}
 $$
 The coefficient is again a polynomial in $1/x$, so the claim follows.
+
 :::
 
-<1>3. For every $n\geq0$,
+:::
+
+::: pf-step
+
+For every $n\geq0$,
 $$
 \lim_{x\to0}f^{(n)}(x)=0
 $$
 when the derivative is taken on $x\neq0$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $f^{(n)}(x)$ is a finite sum of terms
 $$
 c_m x^{-m}e^{-1/x^2}.
 $$
 Each term tends to $0$ by step <1>1.
+
 :::
 
-<1>4. The function $f$ is differentiable at $0$ and
+:::
+
+::: pf-step
+
+The function $f$ is differentiable at $0$ and
 $$
 f'(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f(0)=0$,
 $$
 \frac{f(h)-f(0)}h
@@ -111,11 +137,18 @@ $$
 \frac{e^{-1/h^2}}h.
 $$
 Its absolute value tends to $0$ by step <1>1 with $m=1$.
+
 :::
 
-<1>5. Suppose $f^{(n)}(0)=0$. Then $f^{(n+1)}(0)$ exists and equals $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Suppose $f^{(n)}(0)=0$. Then $f^{(n+1)}(0)$ exists and equals $0$.
+
+
+::: pf-proof
+
 For $h\neq0$,
 $$
 \frac{f^{(n)}(h)-f^{(n)}(0)}h
@@ -128,20 +161,31 @@ c_m h^{-m}e^{-1/h^2},
 $$
 after increasing the exponents by one. Step <1>1 shows that every such term
 tends to $0$. Hence the derivative at $0$ exists and is $0$.
+
 :::
 
-<1>6. Therefore, for every integer $n>0$,
+:::
+
+::: pf-step
+
+Therefore, for every integer $n>0$,
 $$
 \boxed{f^{(n)}(0)=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 is the base case, and step <1>5 gives the induction step.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required value of every derivative at the origin.
+
 :::
+
 :::

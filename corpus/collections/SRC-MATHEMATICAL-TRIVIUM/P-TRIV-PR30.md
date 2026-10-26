@@ -31,34 +31,46 @@ Find
 (b) $c _ { i } .$
 :::
 
-::: {.solution}
 Assume the energy levels are indexed by the nonnegative integers $0,1,2,\ldots$, and put
 \[
 r=e^{-\alpha}\in(0,1).
 \]
 Then the one-step transition probabilities are $P_{ij}=c_i r^{|i-j|}$.
 
-<1>1. Row normalization requires
+::: pf
+
+::: pf-step
+
+Row normalization requires
 \[
 c_i^{-1}=\sum_{j=0}^{\infty}r^{|i-j|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $i$, transition probabilities must sum to one:
 \[
 1=\sum_{j=0}^{\infty}P_{ij}
 =c_i\sum_{j=0}^{\infty}r^{|i-j|}.
 \]
 Solve for $c_i$.
+
 :::
 
-<1>2. The normalizing sum is
+:::
+
+::: pf-step
+
+The normalizing sum is
 \[
 \sum_{j=0}^{\infty}r^{|i-j|}
 =\frac{1+r-r^{i+1}}{1-r}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split at $j=i$:
 \[
 \sum_{j=0}^{i}r^{i-j}
@@ -70,9 +82,14 @@ The two geometric sums equal
 \frac{1-r^{i+1}}{1-r}+\frac r{1-r}
 =\frac{1+r-r^{i+1}}{1-r}.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 c_i=\frac{1-r}{1+r-r^{i+1}}
@@ -80,20 +97,34 @@ c_i=\frac{1-r}{1+r-r^{i+1}}
 {1+e^{-\alpha}-e^{-(i+1)\alpha}}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Invert the expression in step <1>2 and substitute $r=e^{-\alpha}$.
+
 :::
 
-<1>4. By the Chapman--Kolmogorov equation,
+:::
+
+::: pf-step
+
+By the Chapman--Kolmogorov equation,
 \[
 P_{ij}(2)=\sum_{k=0}^{\infty}P_{ik}(1)P_{kj}(1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 To move from level $i$ to level $j$ in two steps, condition on the intermediate level $k$. The events corresponding to different $k$ are disjoint, and the Markov property makes the two factors the one-step transition probabilities.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 P_{ij}(2)
@@ -102,11 +133,18 @@ e^{-\alpha(|i-k|+|k-j|)}}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $P_{ik}(1)=c_i e^{-\alpha|i-k|}$ and $P_{kj}(1)=c_k e^{-\alpha|k-j|}$ into step <1>4 and factor out $c_i$.
+
 :::
 
-<1>6. Substituting the normalization from step <1>3 gives the fully explicit convergent series
+:::
+
+::: pf-step
+
+Substituting the normalization from step <1>3 gives the fully explicit convergent series
 \[
 \boxed{
 P_{ij}(2)
@@ -117,13 +155,19 @@ P_{ij}(2)
 \qquad r=e^{-\alpha}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Replace $c_i$ and $c_k$ in step <1>5 by step <1>3. Since $0<r<1$, the summand is bounded by a constant multiple of $r^{|i-k|+|k-j|}$, so the series converges absolutely.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the constants $c_i$, and steps <1>5--<1>6 give the two-step transition probabilities.
+
 :::
+
 :::

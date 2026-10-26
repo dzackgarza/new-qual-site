@@ -40,8 +40,11 @@ $$
 for the Euclidean distance and $\rho$ for the cylindrical radius.
 :::
 
-::: {.solution}
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 $$
 \log\frac1R=-\log R,
 $$
@@ -52,11 +55,18 @@ $$
 -\frac1R\nabla R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the chain rule to $-\log R$.
+
 :::
 
-<1>2. In Cartesian coordinates,
+:::
+
+::: pf-step
+
+In Cartesian coordinates,
 $$
 \nabla R
 =
@@ -67,15 +77,22 @@ $$
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 $$
 R=(x^2+y^2+z^2)^{1/2}
 $$
 with respect to $x,y,z$.
+
 :::
 
-<1>3. Therefore the Cartesian components are
+:::
+
+::: pf-step
+
+Therefore the Cartesian components are
 $$
 \boxed{
 \vec A
@@ -88,17 +105,31 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>2 into step <1>1.
+
 :::
 
-<1>4. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 This is step <1>3.
+
 :::
 
-<1>5. In cylindrical coordinates,
+:::
+
+::: pf-step
+
+In cylindrical coordinates,
 $$
 x=\rho\cos\phi,
 \qquad
@@ -107,11 +138,18 @@ y=\rho\sin\phi,
 R=\sqrt{\rho^2+z^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard cylindrical-coordinate relations.
+
 :::
 
-<1>6. The function $\log(1/R)$ is independent of $\phi$, and
+:::
+
+::: pf-step
+
+The function $\log(1/R)$ is independent of $\phi$, and
 $$
 \frac{\partial}{\partial\rho}
 \log\frac1R
@@ -125,7 +163,9 @@ $$
 -\frac{z}{\rho^2+z^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \log\frac1R
@@ -133,9 +173,14 @@ $$
 -\frac12\log(\rho^2+z^2),
 $$
 differentiate with respect to $\rho$ and $z$.
+
 :::
 
-<1>7. Hence the cylindrical components are
+:::
+
+::: pf-step
+
+Hence the cylindrical components are
 $$
 \boxed{
 (A_\rho,A_\phi,A_z)
@@ -148,7 +193,9 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a scalar function $f(\rho,\phi,z)$,
 $$
 \nabla f
@@ -160,26 +207,45 @@ e_\phi\frac1\rho\frac{\partial f}{\partial\phi}
 e_z\frac{\partial f}{\partial z}.
 $$
 Use step <1>6 and $\partial f/\partial\phi=0$.
+
 :::
 
-<1>8. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 This is step <1>7.
+
 :::
 
-<1>9. In spherical coordinates, the scalar function depends only on the radial
+:::
+
+::: pf-step
+
+In spherical coordinates, the scalar function depends only on the radial
 coordinate:
 $$
 \log\frac1R=-\log R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Euclidean distance from the origin is precisely the spherical radial
 coordinate.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \frac{\partial}{\partial R}
 \log\frac1R
@@ -188,12 +254,19 @@ $$
 $$
 while both angular derivatives vanish.
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $-\log R$ and note that there is no dependence on
 $\theta$ or $\phi$.
+
 :::
 
-<1>11. Hence the spherical components are
+:::
+
+::: pf-step
+
+Hence the spherical components are
 $$
 \boxed{
 (A_R,A_\theta,A_\phi)
@@ -206,20 +279,33 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard spherical-coordinate gradient formula and step <1>10.
+
 :::
 
-<1>12. Part (c) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (c) follows.
+
+
+::: pf-proof
+
 This is step <1>11.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4, <1>8, and <1>12 give the components in Cartesian, cylindrical,
 and spherical coordinates.
+
 :::
+
 :::

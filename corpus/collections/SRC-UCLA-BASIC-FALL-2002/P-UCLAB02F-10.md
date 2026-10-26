@@ -25,16 +25,21 @@ Let $V=\mathbb C^n$, regarded as an inner product space with its standard inner 
 Prove that there exists an orthonormal basis of $V$ consisting of eigenvectors of $A$; that is, prove this form of the spectral theorem for normal operators.
 :::
 
-::: {.solution}
 The proof is by induction on $n$.
 
-<1>1. If $B$ is a normal complex matrix, then
+::: pf
+
+::: pf-step
+
+If $B$ is a normal complex matrix, then
 \[
 \|Bx\|=\|B^*x\|
 \]
 for every vector $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 Using the standard Hermitian norm,
 \[
 \|Bx\|^2=x^*B^*Bx
@@ -44,9 +49,14 @@ and
 \|B^*x\|^2=x^*BB^*x.
 \]
 If $B$ is normal, then $B^*B=BB^*$, so the squared norms are equal.
+
 :::
 
-<1>2. If $A$ is normal and
+:::
+
+::: pf-step
+
+If $A$ is normal and
 \[
 Av=\lambda v,
 \]
@@ -55,7 +65,9 @@ then
 A^*v=\overline{\lambda}v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 B=A-\lambda I.
@@ -85,11 +97,18 @@ Thus
 B^*v=(A^*-\overline{\lambda}I)v=0,
 \]
 which proves the claim.
+
 :::
 
-<1>3. The matrix $A$ has a nonzero eigenvector.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ has a nonzero eigenvector.
+
+
+::: pf-proof
+
 The characteristic polynomial of $A$ has degree $n$. For $n\ge1$, the fundamental theorem of algebra gives a root $\lambda\in\mathbb C$. Hence
 \[
 \det(A-\lambda I)=0,
@@ -98,11 +117,18 @@ so there is a nonzero vector $v$ satisfying
 \[
 Av=\lambda v.
 \]
+
 :::
 
-<1>4. If $v$ is an eigenvector of $A$, then $v^\perp$ is invariant under both $A$ and $A^*$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $v$ is an eigenvector of $A$, then $v^\perp$ is invariant under both $A$ and $A^*$.
+
+
+::: pf-proof
+
 Let
 \[
 Av=\lambda v.
@@ -124,15 +150,22 @@ v^*A^*w=(Av)^*w=(\lambda v)^*w
 =\overline{\lambda}v^*w=0,
 \]
 so $A^*w\in v^\perp$.
+
 :::
 
-<1>5. The restriction
+:::
+
+::: pf-step
+
+The restriction
 \[
 A|_{v^\perp}:v^\perp\to v^\perp
 \]
 is normal.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, both $A$ and $A^*$ preserve $v^\perp$. Hence the adjoint of the restriction of $A$ is the restriction of $A^*$:
 \[
 (A|_{v^\perp})^*=A^*|_{v^\perp}.
@@ -147,11 +180,18 @@ on all of $V$, restricting this equality to $v^\perp$ gives
 =(A|_{v^\perp})(A|_{v^\perp})^*.
 \]
 Thus the restriction is normal.
+
 :::
 
-<1>6. Every normal operator on $\mathbb C^n$ has an orthonormal basis of eigenvectors.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every normal operator on $\mathbb C^n$ has an orthonormal basis of eigenvectors.
+
+
+::: pf-proof
+
 For $n=1$, every nonzero vector, after normalization, is an orthonormal eigenbasis.
 
 Assume the assertion holds in dimension $n-1$, and let $A$ be normal on $\mathbb C^n$. By step <1>3, choose a nonzero eigenvector $v_1$ and normalize it so that
@@ -171,11 +211,15 @@ of $v_1^\perp$ consisting of eigenvectors of the restriction, hence of $A$. Cons
 v_1,v_2,\ldots,v_n
 \]
 is an orthonormal basis of $\mathbb C^n$ consisting entirely of eigenvectors of $A$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is precisely the required spectral theorem for the normal matrix $A$.
+
 :::
+
 :::

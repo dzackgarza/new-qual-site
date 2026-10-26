@@ -20,54 +20,84 @@ Consider the particle moving in a gas of other particles.
 Given that the last collision of the particle occurred at $t = 0$ , the probability that the next collision will occur between t and $t + \Delta t$ equals $\lambda \Delta t + o ( \Delta t )$ , when $\Delta t \to 0$ . Find the probability $P ( t )$ that the time between the nearest collisions will exceed t.
 :::
 
-::: {.solution}
 Interpret the stated infinitesimal law as a constant conditional collision rate: given no collision before time $t$, the probability of a collision during $(t,t+\Delta t]$ is $\lambda\Delta t+o(\Delta t)$.
 
-<1>1. The survival probability satisfies
+::: pf
+
+::: pf-step
+
+The survival probability satisfies
 \[
 P(t+\Delta t)
 =P(t)\bigl(1-\lambda\Delta t+o(\Delta t)\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the waiting time to exceed $t+\Delta t$, it must first exceed $t$ and then no collision may occur in the following interval. Conditional on survival to $t$, the latter probability is $1-\lambda\Delta t+o(\Delta t)$.
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 P'(t)=-\lambda P(t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract $P(t)$ from step <1>1, divide by $\Delta t$, and let $\Delta t\to0$:
 \[
 \frac{P(t+\Delta t)-P(t)}{\Delta t}
 =-\lambda P(t)+P(t)o(1).
 \]
+
 :::
 
-<1>3. The initial condition is
+:::
+
+::: pf-step
+
+The initial condition is
 \[
 P(0)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Immediately after the collision at time $0$, the waiting time to the next collision is nonnegative and exceeds $0$ with probability $1$ under the continuous waiting-time model.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{P(t)=e^{-\lambda t}},
 \qquad t\geq0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The unique solution of the differential equation in step <1>2 with the initial condition in step <1>3 is $P(t)=e^{-\lambda t}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the probability that the intercollision time exceeds $t$.
+
 :::
+
 :::

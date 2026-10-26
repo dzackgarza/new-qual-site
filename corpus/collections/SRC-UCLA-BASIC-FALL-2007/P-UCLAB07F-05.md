@@ -22,17 +22,27 @@ Show that there is a sequence of polynomials, each vanishing at $1$, that conver
 (b) If $f$ is continuous on $[0,1]$ and \[\int_0^1 f(x)(x-1)^k\,dx=0\qquad(k=1,2,\ldots),\] show that $f\equiv0$.
 :::
 
-::: {.solution}
-<1>1. By the Weierstrass approximation theorem, there is a sequence of polynomials $(q_n)$ such that
+::: pf
+
+::: pf-step
+
+By the Weierstrass approximation theorem, there is a sequence of polynomials $(q_n)$ such that
 \[
 \|q_n-f\|_\infty\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is continuous on the compact interval $[0,1]$, so the Weierstrass approximation theorem applies.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 p_n(x)=q_n(x)-q_n(1).
 \]
@@ -41,19 +51,28 @@ Then each $p_n$ is a polynomial satisfying
 p_n(1)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtracting the constant $q_n(1)$ preserves polynomiality, and
 \[
 p_n(1)=q_n(1)-q_n(1)=0.
 \]
+
 :::
 
-<1>3. If $f(1)=0$, then
+:::
+
+::: pf-step
+
+If $f(1)=0$, then
 \[
 \|p_n-f\|_\infty\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in[0,1]$,
 \[
 \begin{aligned}
@@ -78,15 +97,22 @@ Therefore
 \longrightarrow0.
 \]
 This proves part (a).
+
 :::
 
-<1>4. Every polynomial $p$ satisfying $p(1)=0$ can be written as
+:::
+
+::: pf-step
+
+Every polynomial $p$ satisfying $p(1)=0$ can be written as
 \[
 p(x)=\sum_{k=1}^{m}c_k(x-1)^k
 \]
 for suitable coefficients $c_k$.
 
-::: {.proof}
+
+::: pf-proof
+
 Expand $p$ in powers of $x-1$:
 \[
 p(x)=\sum_{k=0}^{m}c_k(x-1)^k.
@@ -96,15 +122,22 @@ Evaluating at $x=1$ gives
 p(1)=c_0.
 \]
 Thus $p(1)=0$ implies $c_0=0$.
+
 :::
 
-<1>5. Under the hypotheses of part (b),
+:::
+
+::: pf-step
+
+Under the hypotheses of part (b),
 \[
 \int_0^1 f(x)p(x)\,dx=0
 \]
 for every polynomial $p$ with $p(1)=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 p(x)=\sum_{k=1}^{m}c_k(x-1)^k.
@@ -117,14 +150,21 @@ Using linearity of the integral and the moment hypotheses,
 \int_0^1f(x)(x-1)^k\,dx
 =0.
 \]
+
 :::
 
-<1>6. For every continuous function $g:[0,1]\to\mathbb R$ satisfying $g(1)=0$,
+:::
+
+::: pf-step
+
+For every continuous function $g:[0,1]\to\mathbb R$ satisfying $g(1)=0$,
 \[
 \int_0^1 f(x)g(x)\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By part (a), proved in steps <1>1--<1>3, there are polynomials $p_n$ satisfying
 \[
 p_n(1)=0
@@ -152,14 +192,21 @@ Thus
 \[
 \int_0^1 f(x)g(x)\,dx=0.
 \]
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_0^1 (1-x)f(x)^2\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>6 to the continuous function
 \[
 g(x)=(x-1)f(x),
@@ -172,11 +219,18 @@ which satisfies $g(1)=0$. Then
 =
 -\int_0^1(1-x)f(x)^2\,dx.
 \]
+
 :::
 
-<1>8. The function $f$ vanishes on $[0,1)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ vanishes on $[0,1)$.
+
+
+::: pf-proof
+
 The function
 \[
 h(x)=(1-x)f(x)^2
@@ -191,11 +245,18 @@ implies
 \[
 f(x)=0.
 \]
+
 :::
 
-<1>9. The function $f$ is identically zero on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is identically zero on $[0,1]$.
+
+
+::: pf-proof
+
 By step <1>8,
 \[
 f(x)=0
@@ -208,11 +269,15 @@ Therefore
 \[
 \boxed{f\equiv0}.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

@@ -29,7 +29,6 @@ Determine whether each statement is true or false, and give reasons.
 (c) There exists a nontrivial covering space $S^3\to S^3$.
 :::
 
-::: {.solution}
 ## Part (a)
 
 The statement is
@@ -43,89 +42,131 @@ p:S^2\to T
 \]
 is a covering map.
 
-<1>1. Since \(S^2\) is compact, the covering has finitely many sheets.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Since \(S^2\) is compact, the covering has finitely many sheets.
+
+
+::: pf-proof
+
 For any \(y\in T\), the fiber
 \[
 p^{-1}(y)
 \]
 is a discrete subset of the compact space \(S^2\), hence finite. Because \(T\) is connected, all fibers have the same finite cardinality \(d\).
+
 :::
 
-<1>2. For a finite \(d\)-sheeted covering of finite CW complexes,
+:::
+
+::: pf-step
+
+For a finite \(d\)-sheeted covering of finite CW complexes,
 \[
 \boxed{
 \chi(S^2)=d\,\chi(T)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Lift a finite CW structure on \(T\) to \(S^2\). Every cell of \(T\) has exactly \(d\) lifts, so each cellular count is multiplied by \(d\), and therefore so is the alternating sum defining Euler characteristic.
+
 :::
 
-<1>3. But
+:::
+
+::: pf-step
+
+But
 \[
 \chi(S^2)=2
 \qquad\text{and}\qquad
 \chi(T)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard Euler characteristics of the sphere and torus.
+
 :::
 
-<1>4. Thus step <1>2 would give
+:::
+
+::: pf-step
+
+Thus step <1>2 would give
 \[
 2=d\cdot0=0,
 \]
 a contradiction.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2.
+
 :::
 
-<1>5. Therefore no covering
+:::
+
+::: pf-step
+
+Therefore no covering
 \[
 S^2\to T
 \]
 exists.
 
-::: {.proof}
+
+::: pf-proof
+
 The assumed covering led to the contradiction in step <1>4.
+
 :::
 
-## Part (b)
+:::
 
-The statement is
-\[
-\boxed{\text{false}}.
-\]
+::: pf-step
 
-Suppose
-\[
-p:T\to S^2
-\]
-is a covering map.
+Since \(S^2\) is simply connected, every connected covering of \(S^2\) is trivial.
 
-<1>6. Since \(S^2\) is simply connected, every connected covering of \(S^2\) is trivial.
 
-::: {.proof}
+::: pf-proof
+
 Connected covering spaces of a path-connected, locally path-connected, semilocally simply connected space correspond to subgroups of its fundamental group. Since
 \[
 \pi_1(S^2)=0,
 \]
 there is only the trivial subgroup, hence only the one-sheeted connected cover.
+
 :::
 
-<1>7. Therefore \(p\) would have to be a homeomorphism.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(p\) would have to be a homeomorphism.
+
+
+::: pf-proof
+
 A one-sheeted covering map is a homeomorphism.
+
 :::
 
-<1>8. But \(T\) is not homeomorphic to \(S^2\).
+:::
 
-::: {.proof}
+::: pf-step
+
+But \(T\) is not homeomorphic to \(S^2\).
+
+
+::: pf-proof
+
 For example,
 \[
 \pi_1(T)\cong\mathbb Z^2
@@ -134,72 +175,98 @@ while
 \[
 \pi_1(S^2)=0.
 \]
+
 :::
 
-<1>9. Hence no covering
+:::
+
+::: pf-step
+
+Hence no covering
 \[
 T\to S^2
 \]
 exists.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>7--<1>8 contradict the assumption.
+
 :::
 
-## Part (c)
+:::
 
-The statement is
-\[
-\boxed{\text{false}}.
-\]
+::: pf-step
 
-Suppose
-\[
-p:S^3\to S^3
-\]
-is a covering map.
+Since the target \(S^3\) is simply connected, every connected covering of \(S^3\) is one-sheeted.
 
-<1>10. Since the target \(S^3\) is simply connected, every connected covering of \(S^3\) is one-sheeted.
 
-::: {.proof}
+::: pf-proof
+
 Apply the same covering-space classification as in step <1>6, using
 \[
 \pi_1(S^3)=0.
 \]
+
 :::
 
-<1>11. Therefore every covering
+:::
+
+::: pf-step
+
+Therefore every covering
 \[
 S^3\to S^3
 \]
 is a homeomorphism.
 
-::: {.proof}
+
+::: pf-proof
+
 The domain \(S^3\) is connected, so the cover is connected. By step <1>10 it has one sheet, and a one-sheeted covering is a homeomorphism.
+
 :::
 
-<1>12. Hence there is no nontrivial covering
+:::
+
+::: pf-step
+
+Hence there is no nontrivial covering
 \[
 S^3\to S^3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every such covering is equivalent to the identity cover by step <1>11.
+
 :::
 
-<1>13. Thus the three answers are
+:::
+
+::: pf-step
+
+Thus the three answers are
 \[
 \boxed{
 \text{(a) false,\qquad (b) false,\qquad (c) false}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>5, <1>9, and <1>12.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 gives the complete disposition.
+
 :::
+
 :::

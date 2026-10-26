@@ -33,7 +33,6 @@ A possible solution is to insert a chain of balls staying at rest with intermedi
 (b) Assuming $m \ll M$ , investigate the limit $n \to \infty$
 :::
 
-::: {.solution}
 Let
 $$
 q_0=M>q_1>\cdots>q_n>q_{n+1}=m
@@ -44,7 +43,11 @@ q_j=m_{n+1-j}
 $$
 for $1\leq j\leq n$ in the notation of the problem.
 
-<1>1. After all $n+1$ collisions, the final velocity of the mass $m$ is
+::: pf
+
+::: pf-step
+
+After all $n+1$ collisions, the final velocity of the mass $m$ is
 $$
 v
 =
@@ -53,16 +56,23 @@ V
 \frac{2q_j}{q_j+q_{j+1}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For one collision in which mass $q_j$ moves and the next mass $q_{j+1}$ is
 at rest, Eq. (11) multiplies the transmitted velocity by
 $$
 \frac{2q_j}{q_j+q_{j+1}}.
 $$
 Apply this successively through the chain.
+
 :::
 
-<1>2. Define the mass ratios
+:::
+
+::: pf-step
+
+Define the mass ratios
 $$
 r_j=\frac{q_{j+1}}{q_j},
 \qquad
@@ -77,7 +87,9 @@ $$
 \prod_{j=0}^{n}r_j=\frac mM.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The strict inequalities follow from the decreasing masses. The product
 telescopes:
 $$
@@ -90,9 +102,14 @@ $$
 =
 \frac mM.
 $$
+
 :::
 
-<1>3. In terms of the ratios,
+:::
+
+::: pf-step
+
+In terms of the ratios,
 $$
 \frac vV
 =
@@ -100,11 +117,18 @@ $$
 \frac{2}{1+r_j}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Divide numerator and denominator of each factor in step <1>1 by $q_j$.
+
 :::
 
-<1>4. Put
+:::
+
+::: pf-step
+
+Put
 $$
 t_j=-\log r_j>0
 $$
@@ -117,7 +141,9 @@ $$
 \sum_{j=0}^{n}t_j=L.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take logarithms of the product constraint in step <1>2:
 $$
 \sum_j\log r_j
@@ -126,15 +152,22 @@ $$
 =
 -L.
 $$
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 $$
 h(t)=\log\frac{2}{1+e^{-t}}.
 $$
 Then $h$ is strictly concave for $t>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 One may write
 $$
 h(t)
@@ -151,16 +184,23 @@ h''(t)
 \operatorname{sech}^2\frac t2
 <0.
 $$
+
 :::
 
-<1>6. The velocity is maximized exactly when
+:::
+
+::: pf-step
+
+The velocity is maximized exactly when
 $$
 t_0=t_1=\cdots=t_n
 =
 \frac{L}{n+1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4,
 $$
 \log\frac vV
@@ -176,9 +216,14 @@ $$
 h\left(\frac{L}{n+1}\right),
 $$
 with equality exactly when all $t_j$ are equal.
+
 :::
 
-<1>7. Equivalently, all consecutive mass ratios must be equal:
+:::
+
+::: pf-step
+
+Equivalently, all consecutive mass ratios must be equal:
 $$
 \boxed{
 r_j
@@ -187,7 +232,9 @@ r_j
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Exponentiate the equality from step <1>6:
 $$
 r_j
@@ -196,9 +243,14 @@ e^{-L/(n+1)}
 =
 \left(\frac mM\right)^{1/(n+1)}.
 $$
+
 :::
 
-<1>8. Therefore the optimal intermediate masses are
+:::
+
+::: pf-step
+
+Therefore the optimal intermediate masses are
 $$
 \boxed{
 m_k
@@ -210,7 +262,9 @@ k=1,\ldots,n.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The masses increase geometrically from $m$ to $M$. The displayed formula has
 $$
 m_0=m,
@@ -225,15 +279,27 @@ $$
 $$
 Reading the collision chain in decreasing order gives exactly the constant
 ratio in step <1>7.
+
 :::
 
-<1>9. Part (a) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows.
+
+
+::: pf-proof
+
 Steps <1>6--<1>8 give the unique maximizing choice of intermediate masses.
+
 :::
 
-<1>10. For the optimal chain,
+:::
+
+::: pf-step
+
+For the optimal chain,
 $$
 \boxed{
 \frac{v_n}{V}
@@ -244,12 +310,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Every factor in step <1>3 is the same under the optimal ratio from step
 <1>7, and there are $n+1$ collisions.
+
 :::
 
-<1>11. Let
+:::
+
+::: pf-step
+
+Let
 $$
 N=n+1
 $$
@@ -267,14 +340,21 @@ N
 \right).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Rewrite step <1>10 using
 $$
 (m/M)^{1/N}=e^{-L/N}.
 $$
+
 :::
 
-<1>12. As $N\to\infty$,
+:::
+
+::: pf-step
+
+As $N\to\infty$,
 $$
 \log\left(
 \frac{2}{1+e^{-L/N}}
@@ -285,7 +365,9 @@ $$
 O(N^{-2}).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For small $x$,
 $$
 \frac{2}{1+e^{-x}}
@@ -303,9 +385,14 @@ $$
 \frac x2+O(x^2).
 $$
 Take $x=L/N$.
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \lim_{n\to\infty}
 \log\frac{v_n}{V}
@@ -313,11 +400,18 @@ $$
 \frac L2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the expansion in step <1>12 by $N$ and use step <1>11.
+
 :::
 
-<1>14. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{
 \lim_{n\to\infty}v_n
@@ -326,7 +420,9 @@ V\sqrt{\frac Mm}.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Exponentiate step <1>13:
 $$
 \frac{v_n}{V}
@@ -335,11 +431,18 @@ e^{L/2}
 =
 \sqrt{\frac Mm}.
 $$
+
 :::
 
-<1>15. In this limit the kinetic-energy transfer becomes complete.
+:::
 
-::: {.proof}
+::: pf-step
+
+In this limit the kinetic-energy transfer becomes complete.
+
+
+::: pf-proof
+
 The final kinetic energy tends to
 $$
 \frac12m
@@ -350,17 +453,28 @@ V^2\frac Mm
 \frac12MV^2,
 $$
 which is the initial kinetic energy.
+
 :::
 
-<1>16. Part (b) follows.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (b) follows.
+
+
+::: pf-proof
+
 Steps <1>14--<1>15 give the infinite-chain limit and its interpretation.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>9 and <1>16 establish parts (a) and (b), respectively.
+
 :::
+
 :::

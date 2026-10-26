@@ -19,8 +19,11 @@ audit:
 Find $\int _ { 0 } ^ { \pi ^ { 2 } } \cos { \sqrt { x } } d x .$
 :::
 
-::: {.solution}
-<1>1. Set
+::: pf
+
+::: pf-step
+
+Set
 $$
 u=\sqrt x.
 $$
@@ -31,40 +34,63 @@ x=u^2,
 dx=2u\,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $x=u^2$.
+
 :::
 
-<1>2. The limits transform as
+:::
+
+::: pf-step
+
+The limits transform as
 $$
 x=0\longmapsto u=0,
 \qquad
 x=\pi^2\longmapsto u=\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take the nonnegative square root at both endpoints.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^{\pi^2}\cos\sqrt x\,dx
 =
 2\int_0^\pi u\cos u\,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the relations from steps <1>1--<1>2.
+
 :::
 
-<1>4. Integration by parts gives
+:::
+
+::: pf-step
+
+Integration by parts gives
 $$
 \int_0^\pi u\cos u\,du
 =
 -2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 a=u,
@@ -91,22 +117,33 @@ $$
 -2.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \int_0^{\pi^2}\cos\sqrt x\,dx=-4.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required value.
+
 :::
+
 :::

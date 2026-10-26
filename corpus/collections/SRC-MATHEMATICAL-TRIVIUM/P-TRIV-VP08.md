@@ -19,8 +19,11 @@ audit:
 Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partial f } { \partial x } } \right) ^ { 2 } + \left( { \frac { \partial f } { \partial y } } \right) ^ { 2 } + 2 f g \right]$ , where D is a domain in (xy)-plane with the boundary $\partial D$, and $g = g ( x , y )$ is a continuous function in $\bar { D }$ Write the equation on $f ,$ whose solution In a class of functions $f \in$ $C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 f_\varepsilon=f+\varepsilon\eta,
 $$
@@ -29,12 +32,19 @@ $$
 \eta|_{\partial D}=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The boundary values of $f$ are fixed, so every admissible first-order
 variation must vanish on $\partial D$.
+
 :::
 
-<1>2. The first variation is
+:::
+
+::: pf-step
+
+The first variation is
 $$
 \left.
 \frac d{d\varepsilon}
@@ -53,7 +63,9 @@ g\eta
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate
 $$
 (f_x+\varepsilon\eta_x)^2
@@ -63,9 +75,14 @@ $$
 2(f+\varepsilon\eta)g
 $$
 with respect to $\varepsilon$ at $0$.
+
 :::
 
-<1>3. Green's identity gives
+:::
+
+::: pf-step
+
+Green's identity gives
 $$
 \iint_D
 \left(
@@ -81,7 +98,9 @@ f_y\eta_y
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 \iint_D
@@ -97,9 +116,14 @@ $$
 \,dA.
 $$
 The boundary term vanishes because $\eta=0$ on $\partial D$.
+
 :::
 
-<1>4. Hence the first variation becomes
+:::
+
+::: pf-step
+
+Hence the first variation becomes
 $$
 2
 \iint_D
@@ -112,11 +136,18 @@ g
 \,dA.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2.
+
 :::
 
-<1>5. Therefore every extremal satisfies
+:::
+
+::: pf-step
+
+Therefore every extremal satisfies
 $$
 \boxed{
 \Delta f=g
@@ -124,16 +155,23 @@ $$
 $$
 in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 At an extremum, the expression in step <1>4 vanishes for every smooth
 variation $\eta$ with zero boundary values. The fundamental lemma of the
 calculus of variations gives
 $$
 -\Delta f+g=0.
 $$
+
 :::
 
-<1>6. Thus the boundary-value problem is
+:::
+
+::: pf-step
+
+Thus the boundary-value problem is
 $$
 \boxed{
 \Delta f=g
@@ -143,12 +181,19 @@ f|_{\partial D}=f_0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the interior Euler--Lagrange equation from step <1>5 with the fixed
 boundary data from the problem.
+
 :::
 
-<1>7. Let $f_*$ solve step <1>6, and let
+:::
+
+::: pf-step
+
+Let $f_*$ solve step <1>6, and let
 $$
 f=f_*+\eta,
 $$
@@ -165,7 +210,9 @@ J[f]-J[f_*]
 \,dA.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 |\nabla(f_*+\eta)|^2
@@ -192,11 +239,18 @@ $$
 $$
 because $\Delta f_*=g$. The remaining quadratic term is
 $\iint_D|\nabla\eta|^2dA$.
+
 :::
 
-<1>8. Therefore every solution of step <1>6 is a minimizer of $J$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every solution of step <1>6 is a minimizer of $J$.
+
+
+::: pf-proof
+
 Step <1>7 gives
 $$
 J[f]-J[f_*]
@@ -204,19 +258,30 @@ J[f]-J[f_*]
 \iint_D|\nabla\eta|^2,dA
 \geq0.
 $$
+
 :::
 
-<1>9. If $D$ is connected, the minimizer is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $D$ is connected, the minimizer is unique.
+
+
+::: pf-proof
+
 Equality in step <1>8 implies $\nabla\eta=0$, so $\eta$ is constant on $D$.
 The boundary condition $\eta=0$ forces that constant to be zero.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5--<1>6 give the required equation, and steps <1>7--<1>9 identify
 the extremum as the Dirichlet minimizer.
+
 :::
+
 :::

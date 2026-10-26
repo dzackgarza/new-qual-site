@@ -32,8 +32,11 @@ You may choose their order and use earlier statements to prove later ones.
 (c) If $A$ is a real $n\times n$ matrix, then its row rank equals its column rank.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 k=\dim\ker T.
 \]
@@ -47,17 +50,26 @@ v_1,\ldots,v_k,v_{k+1},\ldots,v_n
 \]
 of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every basis of a subspace of a finite-dimensional vector space extends to a basis of the whole space.
+
 :::
 
-<1>2. The vectors
+:::
+
+::: pf-step
+
+The vectors
 \[
 Tv_{k+1},\ldots,Tv_n
 \]
 form a basis of $\operatorname{im}T$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every $v\in V$ can be written
 \[
 v=\sum_{i=1}^n a_iv_i.
@@ -85,27 +97,41 @@ But it also lies in
 \operatorname{span}\{v_{k+1},\ldots,v_n\}.
 \]
 These two spans intersect only in $0$ because the full list is a basis. Thus all $a_i=0$, proving linear independence.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\dim(\operatorname{im}T)=\dim V-\dim(\ker T)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \dim(\operatorname{im}T)=n-k.
 \]
 Since $n=\dim V$ and $k=\dim\ker T$, the formula follows.
+
 :::
 
-<1>4. For a linear map $T:V\to V$ on a finite-dimensional real inner-product space,
+:::
+
+::: pf-step
+
+For a linear map $T:V\to V$ on a finite-dimensional real inner-product space,
 \[
 (\operatorname{im}T^*)^\perp=\ker T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let $w\in V$. Then
 \[
 w\in(\operatorname{im}T^*)^\perp
@@ -123,14 +149,21 @@ for every $v\in V$. The only vector orthogonal to every vector in $V$ is $0$, so
 Tw=0.
 \]
 Thus the two subspaces are equal.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\operatorname{im}(T^*)=(\ker T)^\perp}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take orthogonal complements in step <1>4. In a finite-dimensional inner-product space,
 \[
 (Y^\perp)^\perp=Y
@@ -143,14 +176,21 @@ for every subspace $Y$. Hence
 =
 (\ker T)^\perp.
 \]
+
 :::
 
-<1>6. For every real $n\times n$ matrix $A$,
+:::
+
+::: pf-step
+
+For every real $n\times n$ matrix $A$,
 \[
 \operatorname{rank}(A^t)=\operatorname{rank}(A).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 View $A$ as the matrix of a linear map
 \[
 T:\mathbb R^n\to\mathbb R^n
@@ -179,11 +219,18 @@ Therefore
 =
 \operatorname{rank}(A).
 \]
+
 :::
 
-<1>7. The row rank of $A$ equals its column rank.
+:::
 
-::: {.proof}
+::: pf-step
+
+The row rank of $A$ equals its column rank.
+
+
+::: pf-proof
+
 The column rank of $A$ is
 \[
 \operatorname{rank}(A),
@@ -193,11 +240,15 @@ because the columns span the image of the associated linear map. The rows of $A$
 \operatorname{rank}(A^t).
 \]
 Step <1>6 shows these two ranks are equal.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), step <1>5 proves part (b), and step <1>7 proves part (c).
+
 :::
+
 :::

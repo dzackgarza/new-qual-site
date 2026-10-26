@@ -29,23 +29,33 @@ Prove that $L$ has an eigenvalue $\lambda$ such that
 \]
 :::
 
-::: {.solution}
-<1>1. Since $L$ is self-adjoint on a finite-dimensional inner-product space, there is an orthonormal basis
+::: pf
+
+::: pf-step
+
+Since $L$ is self-adjoint on a finite-dimensional inner-product space, there is an orthonormal basis
 \[
 v_1,\ldots,v_n
 \]
 of eigenvectors of $L$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the finite-dimensional spectral theorem for self-adjoint operators. Write
 \[
 Lv_j=\lambda_jv_j,
 \qquad
 \lambda_j\in\mathbb R.
 \]
+
 :::
 
-<1>2. Write the unit vector $x$ as
+:::
+
+::: pf-step
+
+Write the unit vector $x$ as
 \[
 x=\sum_{j=1}^n c_jv_j.
 \]
@@ -54,7 +64,9 @@ Then
 \sum_{j=1}^n|c_j|^2=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The expansion exists because the $v_j$ form a basis. Since they are orthonormal,
 \[
 \|x\|^2
@@ -62,9 +74,14 @@ The expansion exists because the $v_j$ form a basis. Since they are orthonormal,
 \sum_{j=1}^n|c_j|^2.
 \]
 The hypothesis $\|x\|=1$ gives the displayed identity.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \|Lx-\mu x\|^2
 =
@@ -72,7 +89,9 @@ The hypothesis $\|x\|=1$ gives the displayed identity.
 |\lambda_j-\mu|^2|c_j|^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the eigenvector equations,
 \[
 Lx-\mu x
@@ -81,14 +100,21 @@ Lx-\mu x
 c_j(\lambda_j-\mu)v_j.
 \]
 Taking the squared norm in the orthonormal basis gives the stated sum.
+
 :::
 
-<1>4. At least one eigenvalue $\lambda_j$ satisfies
+:::
+
+::: pf-step
+
+At least one eigenvalue $\lambda_j$ satisfies
 \[
 |\lambda_j-\mu|\le\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that
 \[
 |\lambda_j-\mu|>\varepsilon
@@ -110,20 +136,31 @@ so
 \|Lx-\mu x\|>\varepsilon,
 \]
 contradicting the hypothesis.
+
 :::
 
-<1>5. Therefore $L$ has an eigenvalue $\lambda$ with
+:::
+
+::: pf-step
+
+Therefore $L$ has an eigenvalue $\lambda$ with
 \[
 \boxed{|\lambda-\mu|\le\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take $\lambda=\lambda_j$ from step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

@@ -28,7 +28,6 @@ One may ask about the convergence or divergence of the series $\sum_{n=1}^\infty
 (b) Show that otherwise the series diverges with the unit probability.
 :::
 
-::: {.solution}
 Write
 \[
 \mu=\mathbf E\xi_n=p-q=2p-1
@@ -38,12 +37,18 @@ and define the centered variables
 X_n=\frac{\xi_n-\mu}{n}.
 \]
 
-<1>1. The variables $X_n$ are independent, have mean zero, and satisfy
+::: pf
+
+::: pf-step
+
+The variables $X_n$ are independent, have mean zero, and satisfy
 \[
 \sum_{n=1}^{\infty}\mathbf E X_n^2<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Independence is preserved by applying a deterministic affine function separately to each $\xi_n$, and $\mathbf EX_n=0$ by definition of $\mu$. Moreover,
 \[
 \mathbf E X_n^2
@@ -52,16 +57,23 @@ Independence is preserved by applying a deterministic affine function separately
 =\frac{4pq}{n^2}.
 \]
 Since $\sum n^{-2}<\infty$, the variance series converges.
+
 :::
 
-<1>2. The centered series
+:::
+
+::: pf-step
+
+The centered series
 \[
 \sum_{n=1}^{\infty}X_n
 =\sum_{n=1}^{\infty}\frac{\xi_n-\mu}{n}
 \]
 converges almost surely.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $S_N=\sum_{n=1}^NX_n$. For integers $m>N$, Kolmogorov's maximal inequality gives
 \[
 P\left(\max_{N<k\leq m}|S_k-S_N|>\epsilon\right)
@@ -72,44 +84,69 @@ Choose an increasing sequence $N_j$ such that
 \sum_{n>N_j}\mathbf EX_n^2\leq2^{-3j}.
 \]
 With $\epsilon=2^{-j}$ and then $m\to\infty$, the probability that some tail partial sum after $N_j$ differs from $S_{N_j}$ by more than $2^{-j}$ is at most $2^{-j}$. The sum of these probabilities is finite, so Borel--Cantelli implies that almost surely only finitely many such events occur. Hence $(S_N)$ is almost surely Cauchy and therefore convergent.
+
 :::
 
-<1>3. If $p=q=1/2$, then $\mu=0$ and
+:::
+
+::: pf-step
+
+If $p=q=1/2$, then $\mu=0$ and
 \[
 \boxed{\sum_{n=1}^{\infty}\frac{\xi_n}{n}\text{ converges almost surely}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When $p=q=1/2$, the centered summand $X_n$ equals $\xi_n/n$. Apply step <1>2.
+
 :::
 
-<1>4. For arbitrary $p$, the partial sums decompose as
+:::
+
+::: pf-step
+
+For arbitrary $p$, the partial sums decompose as
 \[
 \sum_{n=1}^{N}\frac{\xi_n}{n}
 =\sum_{n=1}^{N}X_n
 +\mu\sum_{n=1}^{N}\frac1n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From the definition of $X_n$,
 \[
 \frac{\xi_n}{n}=X_n+\frac\mu n.
 \]
 Sum this identity from $1$ to $N$.
+
 :::
 
-<1>5. If $p\ne q$, then $\mu\ne0$, and
+:::
+
+::: pf-step
+
+If $p\ne q$, then $\mu\ne0$, and
 \[
 \boxed{\sum_{n=1}^{\infty}\frac{\xi_n}{n}\text{ diverges almost surely}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the first term on the right side of step <1>4 converges almost surely to a finite random limit. The harmonic partial sums tend to $+\infty$. Since $\mu\ne0$, the second term tends to $+\infty$ when $p>q$ and to $-\infty$ when $p<q$. Adding an almost surely convergent sequence cannot cancel this divergence.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

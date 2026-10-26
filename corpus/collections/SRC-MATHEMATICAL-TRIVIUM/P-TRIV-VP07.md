@@ -20,8 +20,11 @@ Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partia
 Write the equation for f, whose solution in a class of functions $f \in C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$
 f_\varepsilon=f+\varepsilon\eta,
 $$
@@ -30,12 +33,19 @@ $$
 \eta|_{\partial D}=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The boundary values of $f$ are fixed, so every admissible first-order
 variation must vanish on $\partial D$.
+
 :::
 
-<1>2. The first variation is
+:::
+
+::: pf-step
+
+The first variation is
 $$
 \left.
 \frac d{d\varepsilon}
@@ -52,7 +62,9 @@ f_y\eta_y
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 (f_x+\varepsilon\eta_x)^2
@@ -60,9 +72,14 @@ $$
 (f_y+\varepsilon\eta_y)^2
 $$
 and differentiate at $\varepsilon=0$.
+
 :::
 
-<1>3. Integration by parts gives
+:::
+
+::: pf-step
+
+Integration by parts gives
 $$
 \iint_D
 \left(
@@ -78,7 +95,9 @@ f_y\eta_y
 \,dx\,dy.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Green's identity:
 $$
 \iint_D
@@ -94,9 +113,14 @@ $$
 \,dA.
 $$
 The boundary term vanishes because $\eta=0$ on $\partial D$.
+
 :::
 
-<1>4. Hence every extremal satisfies
+:::
+
+::: pf-step
+
+Hence every extremal satisfies
 $$
 \boxed{
 f_{xx}+f_{yy}=0
@@ -104,7 +128,9 @@ f_{xx}+f_{yy}=0
 $$
 in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 At an extremum, the first variation in step <1>2 must vanish for every smooth
 variation $\eta$ with zero boundary values. By step <1>3,
 $$
@@ -118,9 +144,14 @@ therefore gives
 $$
 f_{xx}+f_{yy}=0.
 $$
+
 :::
 
-<1>5. Thus the extremal is a harmonic function satisfying
+:::
+
+::: pf-step
+
+Thus the extremal is a harmonic function satisfying
 $$
 \boxed{
 \Delta f=0
@@ -130,12 +161,19 @@ f|_{\partial D}=f_0.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives the interior equation, and the boundary condition is the one
 prescribed in the problem.
+
 :::
 
-<1>6. Let $f_*$ be such a harmonic solution, and let
+:::
+
+::: pf-step
+
+Let $f_*$ be such a harmonic solution, and let
 $$
 f=f_*+\eta
 $$
@@ -150,7 +188,9 @@ J[f_*]
 \,dA.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand
 $$
 |\nabla(f_*+\eta)|^2
@@ -166,12 +206,19 @@ $$
 \Delta f_*=0
 $$
 and $\eta$ vanishes on the boundary.
+
 :::
 
-<1>7. Therefore every harmonic solution of the Dirichlet problem is a
+:::
+
+::: pf-step
+
+Therefore every harmonic solution of the Dirichlet problem is a
 minimizer of $J$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives
 $$
 J[f]-J[f_*]
@@ -180,23 +227,34 @@ J[f]-J[f_*]
 \geq0.
 $$
 Thus no admissible perturbation decreases the energy.
+
 :::
 
-<1>8. If $D$ is connected, the minimizer is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $D$ is connected, the minimizer is unique.
+
+
+::: pf-proof
+
 Equality in step <1>7 forces
 $$
 \nabla\eta=0
 $$
 throughout $D$, so $\eta$ is constant on each connected component. Since
 $\eta=0$ on the boundary and $D$ is connected, the constant is zero.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4--<1>5 give the required Euler--Lagrange equation, and steps
 <1>6--<1>8 identify its solution as the Dirichlet-energy minimizer.
+
 :::
+
 :::

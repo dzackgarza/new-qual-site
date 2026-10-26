@@ -20,7 +20,6 @@ One may naively argue that in one toss of two coins the probability to have two 
 Let the first hypothesis claim that the correct value is $2 / 3$ and the second - that it is $1 / 2$ . Find how many coins tosses one should make to eliminate the first hypothesis with type I error 0.05 (probability to reject the second hypothesis when it is true) and type II error 0.05 (probability to accept the first hypothesis when it is false).
 :::
 
-::: {.solution}
 Let $X$ be the number of matching outcomes (HH or TT) in $n$ independent trials. Test
 \[
 H_0:p=\frac12
@@ -29,7 +28,11 @@ H_1:p=\frac23.
 \]
 Because larger values of $X$ favor $H_1$, use a threshold rule: accept $H_1$ when $X\geq c$ and accept $H_0$ when $X<c$.
 
-<1>1. For fixed $n,c$, the two error probabilities are
+::: pf
+
+::: pf-step
+
+For fixed $n,c$, the two error probabilities are
 \[
 \alpha_{n,c}=P_{1/2}(X\geq c)
 =2^{-n}\sum_{k=c}^{n}\binom nk
@@ -42,13 +45,22 @@ and
 \left(\frac13\right)^{n-k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Under either hypothesis, $X$ is binomial with parameters $n$ and the corresponding matching probability. The first error rejects $H_0$ when it is true, hence is the upper tail under $p=1/2$. The second accepts $H_0$ when $H_1$ is true, hence is the lower tail under $p=2/3$.
+
 :::
 
-<1>2. The likelihood ratio is strictly increasing in $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The likelihood ratio is strictly increasing in $X$.
+
+
+::: pf-proof
+
 For an observation $X=k$,
 \[
 \frac{P_{2/3}(X=k)}{P_{1/2}(X=k)}
@@ -56,16 +68,23 @@ For an observation $X=k$,
 =\left(\frac23\right)^n2^k.
 \]
 Thus larger $k$ gives a larger likelihood ratio, so a threshold test is the likelihood-ratio form and no non-threshold rule can improve the tradeoff between the two simple hypotheses.
+
 :::
 
-<1>3. For $n=98$ and $c=58$,
+:::
+
+::: pf-step
+
+For $n=98$ and $c=58$,
 \[
 \alpha_{98,58}\approx0.0427053<0.05,
 \qquad
 \beta_{98,58}\approx0.0484000<0.05.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitution in the exact binomial sums of step <1>1 gives
 \[
 2^{-98}\sum_{k=58}^{98}\binom{98}{k}
@@ -78,15 +97,27 @@ and
 \left(\frac13\right)^{98-k}
 \approx0.0484000.
 \]
+
 :::
 
-<1>4. No $n\leq97$ admits an integer threshold $c$ for which both error probabilities are at most $0.05$.
+:::
 
-::: {.proof}
+::: pf-step
+
+No $n\leq97$ admits an integer threshold $c$ for which both error probabilities are at most $0.05$.
+
+
+::: pf-proof
+
 For each fixed $n$, $\alpha_{n,c}$ decreases as $c$ increases, while $\beta_{n,c}$ increases. Hence it suffices to take the smallest $c$ for which $\alpha_{n,c}\leq0.05$ and check whether its $\beta_{n,c}$ is also at most $0.05$. Exact evaluation of the finite binomial sums in step <1>1 for $1\leq n\leq97$ shows that none satisfies the second inequality. At $n=98$, step <1>3 gives the first feasible threshold, $c=58$.
+
 :::
 
-<1>5. Therefore the minimum required number of two-coin trials is
+:::
+
+::: pf-step
+
+Therefore the minimum required number of two-coin trials is
 \[
 \boxed{n=98},
 \]
@@ -96,13 +127,19 @@ with the decision rule
 \qquad X\leq57\Rightarrow p=1/2.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves feasibility at $n=98$, and step <1>4 proves minimality.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the smallest sample size and an exact test meeting both requested error bounds.
+
 :::
+
 :::

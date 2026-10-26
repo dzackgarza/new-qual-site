@@ -22,19 +22,29 @@ a_n=\frac{n^2+2}{n^2+3n}
 converges to $1$.
 :::
 
-::: {.solution}
-<1>1. A sequence \((a_n)_{n=1}^\infty\) of real numbers converges to \(a\in\mathbb R\) if for every \(\varepsilon>0\) there is \(N\in\mathbb N\) such that
+::: pf
+
+::: pf-step
+
+A sequence \((a_n)_{n=1}^\infty\) of real numbers converges to \(a\in\mathbb R\) if for every \(\varepsilon>0\) there is \(N\in\mathbb N\) such that
 \[
 n\ge N
 \quad\Longrightarrow\quad
 |a_n-a|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the \(\varepsilon\)--\(N\) definition of convergence of a real sequence.
+
 :::
 
-<1>2. For every \(n\ge1\),
+:::
+
+::: pf-step
+
+For every \(n\ge1\),
 \[
 \left|\frac{n^2+2}{n^2+3n}-1\right|
 =
@@ -43,7 +53,9 @@ This is the \(\varepsilon\)--\(N\) definition of convergence of a real sequence.
 \frac{3}{n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct subtraction gives
 \[
 \frac{n^2+2}{n^2+3n}-1
@@ -64,9 +76,14 @@ Since \(3n-2<3n\) and \(n^2+3n>n^2\),
 =
 \frac3n.
 \]
+
 :::
 
-<1>3. Given \(\varepsilon>0\), choose an integer
+:::
+
+::: pf-step
+
+Given \(\varepsilon>0\), choose an integer
 \[
 N>\frac3\varepsilon.
 \]
@@ -75,7 +92,9 @@ Then \(n\ge N\) implies
 \left|a_n-1\right|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(n\ge N\), then
 \[
 \frac3n\le\frac3N<\varepsilon.
@@ -84,20 +103,31 @@ Combining this with step <1>2 gives
 \[
 |a_n-1|<\frac3n\le\frac3N<\varepsilon.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\displaystyle \lim_{n\to\infty}\frac{n^2+2}{n^2+3n}=1.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 verifies the definition in step <1>1 with \(a=1\).
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 gives the requested definition, and step <1>4 proves the requested convergence.
+
 :::
+
 :::

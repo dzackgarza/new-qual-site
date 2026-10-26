@@ -20,7 +20,6 @@ audit:
 Let $F$ be a finite field of order $p$. How many non-invertible $2 \times 2$ matrices with entries in $F$ have trace $1$?
 :::
 
-::: {.solution}
 Write a matrix of trace $1$ as
 \[
 A=
@@ -32,12 +31,18 @@ c&1-a
 a,b,c\in F.
 \]
 
-<1>1. The matrix $A$ is non-invertible exactly when
+::: pf
+
+::: pf-step
+
+The matrix $A$ is non-invertible exactly when
 \[
 bc=a(1-a).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 \det A
@@ -45,15 +50,22 @@ One has
 \]
 A $2\times2$ matrix over a field is non-invertible exactly when its
 determinant is zero.
+
 :::
 
-<1>2. If $a=0$ or $a=1$, there are
+:::
+
+::: pf-step
+
+If $a=0$ or $a=1$, there are
 \[
 2p-1
 \]
 choices for the pair $(b,c)$ satisfying step <1>1.
 
-::: {.proof}
+
+::: pf-proof
+
 For either value of $a$,
 \[
 a(1-a)=0,
@@ -64,15 +76,22 @@ $(0,0)$ counted twice. Hence the number is
 \[
 p+p-1=2p-1.
 \]
+
 :::
 
-<1>3. If $a\notin\{0,1\}$, there are
+:::
+
+::: pf-step
+
+If $a\notin\{0,1\}$, there are
 \[
 p-1
 \]
 choices for $(b,c)$ satisfying step <1>1.
 
-::: {.proof}
+
+::: pf-proof
+
 Now
 \[
 \lambda=a(1-a)\ne0.
@@ -82,14 +101,21 @@ $b\in F^\times$, there is exactly one choice
 \[
 c=\lambda b^{-1}.
 \]
+
 :::
 
-<1>4. The total number of non-invertible matrices of trace $1$ is
+:::
+
+::: pf-step
+
+The total number of non-invertible matrices of trace $1$ is
 \[
 \boxed{p^2+p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are two values $a=0,1$, contributing
 \[
 2(2p-1),
@@ -103,11 +129,15 @@ N
 &=p^2+p.
 \end{aligned}
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the requested count.
+
 :::
+
 :::

@@ -25,7 +25,6 @@ Let $T$ be the rotation through $60^\circ$ counterclockwise about the origin in 
 You do not have to multiply matrices out, but you must compute any inverses.
 :::
 
-::: {.solution}
 Let
 \[
 u_1=\frac1{\sqrt2}(1,-1,0),\qquad
@@ -33,9 +32,15 @@ u_2=\frac1{\sqrt3}(1,1,-1),\qquad
 u_3=\frac1{\sqrt6}(1,1,2).
 \]
 
-<1>1. The ordered triple $(u_1,u_2,u_3)$ is a positively oriented orthonormal basis of $\mathbb R^3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ordered triple $(u_1,u_2,u_3)$ is a positively oriented orthonormal basis of $\mathbb R^3$.
+
+
+::: pf-proof
+
 Direct computation gives
 \[
 u_i\cdot u_j=\delta_{ij}.
@@ -45,9 +50,14 @@ Moreover,
 (1,-1,0)\times(1,1,-1)=(1,1,2),
 \]
 so $u_1\times u_2=u_3$. Thus the basis is positively oriented.
+
 :::
 
-<1>2. In the basis $(u_1,u_2,u_3)$, the matrix of $T$ is
+:::
+
+::: pf-step
+
+In the basis $(u_1,u_2,u_3)$, the matrix of $T$ is
 \[
 R=
 \begin{pmatrix}
@@ -57,11 +67,18 @@ R=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vector $u_3$ spans the rotation axis, so $T(u_3)=u_3$. The vectors $u_1,u_2$ form the positively oriented orthonormal basis of the perpendicular plane determined by the normal $u_3$. Therefore the restriction of $T$ to that plane is the usual counterclockwise rotation through $60^\circ$, whose matrix is the upper-left $2\times2$ block displayed above.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 Q=
 \begin{pmatrix}
@@ -85,11 +102,18 @@ and
 \boxed{[T]_{\mathrm{std}}=QRQ^t}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $Q$ are the orthonormal vectors $u_1,u_2,u_3$. Hence $Q$ is orthogonal and $Q^{-1}=Q^t$. Conjugating the matrix of $T$ from step <1>2 by the change-of-basis matrix $Q$ gives the standard-basis matrix.
+
 :::
 
-<1>4. Over $\mathbb R$, the only eigenvalue of $T$ is
+:::
+
+::: pf-step
+
+Over $\mathbb R$, the only eigenvalue of $T$ is
 \[
 \boxed{1},
 \]
@@ -98,7 +122,9 @@ with eigenspace
 \boxed{E_1=\operatorname{span}_{\mathbb R}\{(1,1,2)\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In the basis $(u_1,u_2,u_3)$, the characteristic polynomial is
 \[
 (\lambda-1)
@@ -112,9 +138,14 @@ The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. Th
 =
 \operatorname{span}_{\mathbb R}\{(1,1,2)\}.
 \]
+
 :::
 
-<1>5. Over $\mathbb C$, the eigenvalues are
+:::
+
+::: pf-step
+
+Over $\mathbb C$, the eigenvalues are
 \[
 \boxed{
 1,\qquad
@@ -123,11 +154,18 @@ The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. Th
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the three roots of the characteristic polynomial computed in step <1>4.
+
 :::
 
-<1>6. Over $\mathbb C$, the corresponding eigenspaces are
+:::
+
+::: pf-step
+
+Over $\mathbb C$, the corresponding eigenspaces are
 \[
 \boxed{
 E_1=\operatorname{span}_{\mathbb C}\{u_3\},
@@ -138,7 +176,9 @@ E_{\lambda_-}=\operatorname{span}_{\mathbb C}\{u_1+i u_2\}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vector $u_3$ is fixed by $T$. On the complexification of $\operatorname{span}(u_1,u_2)$, step <1>2 gives
 \[
 T(u_1-i u_2)
@@ -152,11 +192,15 @@ T(u_1+i u_2)
 \left(\frac12-\frac{\sqrt3}{2}i\right)(u_1+i u_2).
 \]
 The three eigenvalues in step <1>5 are distinct, so each eigenspace is one-dimensional and the displayed spans are the complete eigenspaces.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives the requested standard-basis matrix and inverse, step <1>4 gives all real eigenvalues and eigenspaces, and steps <1>5--<1>6 give the complex eigenvalues and eigenspaces.
+
 :::
+
 :::

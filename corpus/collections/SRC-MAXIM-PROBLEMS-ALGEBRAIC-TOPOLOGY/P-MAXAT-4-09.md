@@ -19,7 +19,6 @@ audit:
 Show that the p-torsion in $\pi _ { i } ( S ^ { 3 } )$ appears first for $i = 2 p$ and it is $\mathbb { Z } _ { p } .$
 :::
 
-::: {.solution}
 Fix a prime $p$. Let
 \[
 u:S^3\longrightarrow K(\mathbb Z,3)
@@ -34,7 +33,11 @@ The calculation below is the standard proof of Serre's first-$p$-torsion
 theorem; see, for example, D. Ravenel, *Complex Cobordism and Stable
 Homotopy Groups of Spheres*, Lemma 1.2.3 and Corollary 1.2.4.
 
-<1>1. There is a fibration
+::: pf
+
+::: pf-step
+
+There is a fibration
 \[
 K(\mathbb Z,2)
 \longrightarrow
@@ -43,7 +46,9 @@ F
 S^3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, $F$ is the homotopy fiber of
 \[
 u:S^3\to K(\mathbb Z,3).
@@ -56,9 +61,14 @@ K(\mathbb Z,2).
 \]
 Pulling that path-space fibration back along $u$ gives the displayed
 fibration.
+
 :::
 
-<1>2. The map $u$ induces an isomorphism on $\pi_3$, and therefore
+:::
+
+::: pf-step
+
+The map $u$ induces an isomorphism on $\pi_3$, and therefore
 \[
 \pi_i(F)
 =
@@ -73,7 +83,9 @@ while
 \quad(i>3).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $S^3$ is $2$-connected, the Hurewicz theorem gives
 \[
 \pi_3(S^3)
@@ -110,9 +122,14 @@ so the same exact sequence gives
 \[
 \pi_i(F)\cong\pi_i(S^3).
 \]
+
 :::
 
-<1>3. The cohomology Serre spectral sequence of the fibration in step
+:::
+
+::: pf-step
+
+The cohomology Serre spectral sequence of the fibration in step
 <1>1 has
 \[
 E_2^{s,t}
@@ -130,7 +147,9 @@ where
 |c_2|=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The base $S^3$ is simply connected, so there is no nontrivial local
 coefficient action. Moreover,
 \[
@@ -152,14 +171,21 @@ H^*(S^3;\mathbb Z)
 \Lambda(u_3).
 \]
 Substitution into the Serre $E_2$-page gives the claim.
+
 :::
 
-<1>4. The transgression satisfies
+:::
+
+::: pf-step
+
+The transgression satisfies
 \[
 d_3(c_2)=u_3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The fibration
 \[
 K(\mathbb Z,2)\to F\to S^3
@@ -182,16 +208,23 @@ Naturality of transgression under pullback therefore gives
 \[
 d_3(c_2)=u_3.
 \]
+
 :::
 
-<1>5. For every $m\ge1$,
+:::
+
+::: pf-step
+
+For every $m\ge1$,
 \[
 d_3(c_2^m)
 =
 m u_3c_2^{m-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Serre differential is a graded derivation. Since $|c_2|$ is even,
 \[
 \begin{aligned}
@@ -204,9 +237,14 @@ m u_3c_2^{m-1}
 \end{aligned}
 \]
 by step <1>4.
+
 :::
 
-<1>6. The spectral sequence has no nonzero differential after $d_3$, and
+:::
+
+::: pf-step
+
+The spectral sequence has no nonzero differential after $d_3$, and
 for $m>1$ it yields
 \[
 H^{2m+1}(F;\mathbb Z)
@@ -215,7 +253,9 @@ H^{2m+1}(F;\mathbb Z)
 \]
 while the other positive-degree cohomology groups vanish.
 
-::: {.proof}
+
+::: pf-proof
+
 The $E_2$-page is supported only in base columns
 \[
 s=0
@@ -251,9 +291,14 @@ columns. Hence
 E_4=E_\infty,
 \]
 giving the stated cohomology groups.
+
 :::
 
-<1>7. The homology of $F$ is
+:::
+
+::: pf-step
+
+The homology of $F$ is
 \[
 H_i(F;\mathbb Z)
 \cong
@@ -264,7 +309,9 @@ H_i(F;\mathbb Z)
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The universal coefficient theorem for cohomology gives short exact
 sequences
 \[
@@ -333,9 +380,14 @@ In particular, the elementary identity
 \]
 is the torsion calculation at each induction step. This is also exactly
 the homology calculation in Ravenel, Lemma 1.2.3.
+
 :::
 
-<1>8. Let $\mathcal C_p$ be the Serre class of finite abelian groups whose
+:::
+
+::: pf-step
+
+Let $\mathcal C_p$ be the Serre class of finite abelian groups whose
 orders are prime to $p$. Then
 \[
 H_i(F)\in\mathcal C_p
@@ -350,7 +402,9 @@ is
 \mathbb Z/p.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7, the only nonzero positive homology groups below degree $2p$
 are
 \[
@@ -365,9 +419,14 @@ At degree $2p$, step <1>7 gives
 \[
 H_{2p}(F)\cong\mathbb Z/p.
 \]
+
 :::
 
-<1>9. Serre's Hurewicz theorem modulo the Serre class $\mathcal C_p$
+:::
+
+::: pf-step
+
+Serre's Hurewicz theorem modulo the Serre class $\mathcal C_p$
 implies
 \[
 \pi_i(F)
@@ -385,7 +444,9 @@ is
 \mathbb Z/p.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space $F$ is simply connected, indeed $3$-connected by step <1>2.
 Step <1>8 says that, modulo the Serre class $\mathcal C_p$, its reduced
 homology vanishes below degree $2p$ and is $\mathbb Z/p$ in degree
@@ -403,9 +464,14 @@ Consequently the $p$-primary subgroup vanishes below degree $2p$ and is
 \]
 in degree $2p$. This is precisely Serre's argument, recorded as Ravenel,
 Corollary 1.2.4.
+
 :::
 
-<1>10. For every prime $p$,
+:::
+
+::: pf-step
+
+For every prime $p$,
 \[
 \pi_i(S^3)
 \]
@@ -422,7 +488,9 @@ whereas
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $i>3$, step <1>2 gives
 \[
 \pi_i(F)
@@ -440,15 +508,19 @@ and the conclusion gives
 \pi_4(S^3)\cong\mathbb Z/2.
 \]
 For odd $p$, it gives the first $p$-primary torsion in degree $2p$.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is exactly the assertion that the first $p$-torsion in the
 homotopy groups of $S^3$ occurs in $\pi_{2p}(S^3)$ and is
 \[
 \mathbb Z/p.
 \]
+
 :::
+
 :::

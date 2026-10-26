@@ -23,15 +23,20 @@ Prove that
 \]
 :::
 
-::: {.solution}
-<1>1. For every $n$,
+::: pf
+
+::: pf-step
+
+For every $n$,
 \[
 \bigl|\rho(x_n,y)-\rho(x,y)\bigr|
 \le
 \rho(x_n,x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The triangle inequality gives
 \[
 \rho(x_n,y)
@@ -59,14 +64,21 @@ so
 \rho(x_n,x).
 \]
 Combining the two inequalities yields the claim.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \rho(x_n,y)\longrightarrow\rho(x,y).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x_n\to x$,
 \[
 \rho(x_n,x)\to0.
@@ -83,11 +95,15 @@ The squeeze theorem therefore gives
 \[
 \boxed{\rho(x_n,y)\to\rho(x,y)}.
 \]
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 is the required conclusion.
+
 :::
+
 :::

@@ -30,13 +30,16 @@ More generally, if $ab < 0$ then $ax + b(1-x)$ vanishes at $x = \frac{b}{b-a} \i
 The identity holds under the corrected hypothesis $ab > 0$, that is, $a$ and $b$ nonzero of the same sign.
 :::
 
-::: {.solution}
 Assume
 $$
 ab>0.
 $$
 
-<1>1. If $a=b$, then
+::: pf
+
+::: pf-step
+
+If $a=b$, then
 $$
 \int_0^1
 \frac{dx}{(ax+b(1-x))^2}
@@ -44,7 +47,9 @@ $$
 \frac1{a^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $a=b$,
 $$
 ax+b(1-x)=a
@@ -56,20 +61,32 @@ $$
 \frac1{a^2}.
 $$
 Since $a=b$, this equals $1/(ab)$.
+
 :::
 
-<1>2. Suppose now that $a\neq b$. Then
+:::
+
+::: pf-step
+
+Suppose now that $a\neq b$. Then
 $$
 ax+b(1-x)
 =
 b+(a-b)x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Expand $b(1-x)$ and collect the $x$-terms.
+
 :::
 
-<1>3. Set
+:::
+
+::: pf-step
+
+Set
 $$
 u=b+(a-b)x.
 $$
@@ -84,11 +101,18 @@ x=0\longmapsto u=b,
 x=1\longmapsto u=a.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the affine substitution and evaluate it at the two endpoints.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \int_0^1
 \frac{dx}{(ax+b(1-x))^2}
@@ -97,11 +121,18 @@ $$
 \int_b^a u^{-2}\,du.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>2--<1>3.
+
 :::
 
-<1>5. Evaluating the last integral gives
+:::
+
+::: pf-step
+
+Evaluating the last integral gives
 $$
 \frac1{a-b}
 \left(
@@ -113,7 +144,9 @@ $$
 \frac1{ab}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \int u^{-2}\,du=-u^{-1},
@@ -136,9 +169,14 @@ $$
 =
 \frac{a-b}{ab}.
 $$
+
 :::
 
-<1>6. Hence, under the corrected hypothesis $ab>0$,
+:::
+
+::: pf-step
+
+Hence, under the corrected hypothesis $ab>0$,
 $$
 \boxed{
 \int_0^1
@@ -148,13 +186,19 @@ $$
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 handles $a=b$, and step <1>5 handles $a\neq b$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the corrected intended identity.
+
 :::
+
 :::

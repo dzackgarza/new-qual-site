@@ -15,7 +15,6 @@ review: draft
 For $n \in \mathbb { N } ,$ evaluate $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x .$
 :::
 
-::: {.solution}
 For \(n\ge0\), define
 \[
 I_n
@@ -23,12 +22,18 @@ I_n
 \int_0^\infty x^n e^{-x}\,dx.
 \]
 
-<1>1. The base case is
+::: pf
+
+::: pf-step
+
+The base case is
 \[
 \boxed{I_0=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 I_0
 =
@@ -40,14 +45,21 @@ I_0
 =
 1.
 \]
+
 :::
 
-<1>2. For every integer \(n\ge1\),
+:::
+
+::: pf-step
+
+For every integer \(n\ge1\),
 \[
 \lim_{x\to\infty}x^ne^{-x}=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the exponential series,
 \[
 e^x
@@ -66,9 +78,14 @@ x^ne^{-x}
 \frac{(n+1)!}{x}
 \longrightarrow0.
 \]
+
 :::
 
-<1>3. For \(n\ge1\), integration by parts gives
+:::
+
+::: pf-step
+
+For \(n\ge1\), integration by parts gives
 \[
 I_n
 =
@@ -77,7 +94,9 @@ I_n
 n\int_0^\infty x^{n-1}e^{-x}\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 u=x^n,
@@ -92,15 +111,22 @@ v=-e^{-x}.
 \]
 Apply integration by parts to the improper integral, understood as the limit
 over \([0,R]\).
+
 :::
 
-<1>4. The boundary term in step <1>3 is zero:
+:::
+
+::: pf-step
+
+The boundary term in step <1>3 is zero:
 \[
 \boxed{
 \left[-x^ne^{-x}\right]_0^\infty=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At \(x=\infty\), step <1>2 gives
 \[
 x^ne^{-x}\to0.
@@ -109,26 +135,40 @@ At \(x=0\), since \(n\ge1\),
 \[
 x^ne^{-x}=0.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{I_n=nI_{n-1}}
 \qquad(n\ge1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Iterating the recurrence gives
+:::
+
+::: pf-step
+
+Iterating the recurrence gives
 \[
 I_n
 =
 n(n-1)\cdots2\cdot1\,I_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Repeatedly apply step <1>5:
 \[
 I_n=nI_{n-1}
@@ -136,9 +176,14 @@ I_n=nI_{n-1}
 =\cdots
 =n!I_0.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_0^\infty x^ne^{-x}\,dx
@@ -146,16 +191,22 @@ I_n=nI_{n-1}
 n!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6 and the base value \(I_0=1\) from step <1>1,
 \[
 I_n=n!.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the requested value.
+
 :::
+
 :::

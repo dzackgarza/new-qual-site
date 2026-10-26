@@ -23,8 +23,11 @@ a_n=\left(1+\frac1n\right)^n
 converges as $n\to\infty$.
 :::
 
-::: {.solution}
-<1>1. For every positive integer $n$,
+::: pf
+
+::: pf-step
+
+For every positive integer $n$,
 \[
 a_n
 =
@@ -34,7 +37,9 @@ a_n
 \]
 where the empty product for $k=0$ is $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the binomial theorem,
 \[
 \left(1+\frac1n\right)^n
@@ -51,11 +56,18 @@ For $k\le n$,
 \prod_{j=0}^{k-1}\left(1-\frac{j}{n}\right).
 \]
 Substituting gives the formula.
+
 :::
 
-<1>2. The sequence $(a_n)$ is increasing.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ is increasing.
+
+
+::: pf-proof
+
 Fix $n$. For each $k\le n$ and each $j\in\{0,\ldots,k-1\}$,
 \[
 1-\frac{j}{n+1}
@@ -66,14 +78,21 @@ All these factors are nonnegative. Hence the $k$th summand in the expansion from
 \[
 a_{n+1}\ge a_n.
 \]
+
 :::
 
-<1>3. For every $n$,
+:::
+
+::: pf-step
+
+For every $n$,
 \[
 a_n\le3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every factor in the product from step <1>1 lies in $[0,1]$. Therefore
 \[
 a_n
@@ -97,17 +116,28 @@ a_n
 1+\sum_{m=0}^{\infty}\frac1{2^m}
 =3.
 \]
+
 :::
 
-<1>4. The sequence $(a_n)$ converges.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ converges.
+
+
+::: pf-proof
+
 By step <1>2, $(a_n)$ is increasing, and by step <1>3 it is bounded above. The monotone convergence theorem for real sequences therefore implies that $(a_n)$ converges to its supremum.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required convergence.
+
 :::
+
 :::

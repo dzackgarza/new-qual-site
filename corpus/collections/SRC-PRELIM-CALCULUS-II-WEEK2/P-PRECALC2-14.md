@@ -15,7 +15,6 @@ review: draft
 Do the series $\sum _ { n = 1 } ^ { \infty } { \frac { n ! } { 2 ^ { n ^ { 2 } } } }$ and $\sum _ { n = 1 } ^ { \infty } { \frac { n ^ { \sqrt { n } } } { 2 ^ { n } } }$ converge or diverge?
 :::
 
-::: {.solution}
 Consider first
 \[
 \sum_{n=1}^{\infty}
@@ -26,7 +25,11 @@ Set
 a_n=\frac{n!}{2^{n^2}}.
 \]
 
-<1>1. The ratio of successive terms is
+::: pf
+
+::: pf-step
+
+The ratio of successive terms is
 \[
 \boxed{
 \frac{a_{n+1}}{a_n}
@@ -34,7 +37,9 @@ a_n=\frac{n!}{2^{n^2}}.
 \frac{n+1}{2^{2n+1}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 \frac{a_{n+1}}{a_n}
@@ -48,9 +53,14 @@ a_n=\frac{n!}{2^{n^2}}.
 \frac{n+1}{2^{2n+1}}.
 \end{aligned}
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -59,7 +69,9 @@ a_n=\frac{n!}{2^{n^2}}.
 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator grows exponentially while the numerator grows linearly.
 More explicitly,
 \[
@@ -71,9 +83,14 @@ and
 \[
 \frac{n+1}{4^n}\to0.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=1}^{\infty}
@@ -81,25 +98,22 @@ and
 \text{ converges}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the ratio-test limit is
 \[
 0<1.
 \]
 Hence the series converges absolutely.
+
 :::
 
-Now consider
-\[
-\sum_{n=1}^{\infty}
-\frac{n^{\sqrt n}}{2^n}.
-\]
-Set
-\[
-b_n=\frac{n^{\sqrt n}}{2^n}.
-\]
+:::
 
-<1>4. The \(n\)th root is
+::: pf-step
+
+The \(n\)th root is
 \[
 \boxed{
 b_n^{1/n}
@@ -107,7 +121,9 @@ b_n^{1/n}
 \frac{n^{1/\sqrt n}}2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \left(n^{\sqrt n}\right)^{1/n}
 =
@@ -119,9 +135,14 @@ and
 \[
 (2^n)^{1/n}=2.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 n^{1/\sqrt n}
@@ -129,21 +150,30 @@ n^{1/\sqrt n}
 \exp\left(\frac{\log n}{\sqrt n}\right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 x^a=e^{a\log x}.
 \]
+
 :::
 
-<1>6. The exponent satisfies
+:::
+
+::: pf-step
+
+The exponent satisfies
 \[
 \boxed{
 \frac{\log n}{\sqrt n}
 \longrightarrow0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For example, by l'Hôpital's rule on the continuous variable,
 \[
 \lim_{x\to\infty}
@@ -158,15 +188,22 @@ For example, by l'Hôpital's rule on the continuous variable,
 0.
 \]
 Hence the same holds along integers.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 n^{1/\sqrt n}\to1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the exponential function to step <1>6 and use continuity:
 \[
 \exp\left(\frac{\log n}{\sqrt n}\right)
@@ -175,9 +212,14 @@ e^0
 =
 1.
 \]
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{n\to\infty}b_n^{1/n}
@@ -185,11 +227,18 @@ e^0
 \frac12}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>7.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=1}^{\infty}
@@ -197,17 +246,23 @@ Combine steps <1>4 and <1>7.
 \text{ converges}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8, the root-test limit is
 \[
 \frac12<1.
 \]
 Hence the series converges absolutely.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>9 show that both requested series converge.
+
 :::
+
 :::

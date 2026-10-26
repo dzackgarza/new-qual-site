@@ -19,24 +19,36 @@ audit:
 Find ${ \frac { d } { d x } } \ f ( g ( x ) ) | _ { x = 0 }$ , where $f ( u ) = \cosh u , g ( u ) = \sqrt { 1 - u ^ { 2 } } .$
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 f'(u)=\sinh u.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the derivative of the hyperbolic cosine.
+
 :::
 
-<1>2. For $|x|<1$,
+:::
+
+::: pf-step
+
+For $|x|<1$,
 $$
 g'(x)
 =
 -\frac{x}{\sqrt{1-x^2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 $$
 g(x)=(1-x^2)^{1/2},
@@ -49,9 +61,14 @@ g'(x)
 =
 -\frac{x}{\sqrt{1-x^2}}.
 $$
+
 :::
 
-<1>3. At $x=0$,
+:::
+
+::: pf-step
+
+At $x=0$,
 $$
 g(0)=1
 $$
@@ -60,11 +77,18 @@ $$
 g'(0)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives both values.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \left.
 \frac{d}{dx}f(g(x))
@@ -73,7 +97,9 @@ $$
 \boxed{0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the chain rule,
 $$
 \frac{d}{dx}f(g(x))
@@ -87,11 +113,15 @@ f'(g(0))g'(0)
 \sinh(1)\cdot0
 =0.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required value.
+
 :::
+
 :::

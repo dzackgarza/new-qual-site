@@ -15,7 +15,6 @@ review: draft
 Compute the derivative $\frac { d } { d x } \int _ { 0 } ^ { x ^ { 2 } } e ^ { - t ^ { 2 } } d t$
 :::
 
-::: {.solution}
 Define
 \[
 F(u)
@@ -23,38 +22,63 @@ F(u)
 \int_0^u e^{-t^2}\,dt.
 \]
 
-<1>1. By the fundamental theorem of calculus,
+::: pf
+
+::: pf-step
+
+By the fundamental theorem of calculus,
 \[
 \boxed{
 F'(u)=e^{-u^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand \(e^{-t^2}\) is continuous on \(\mathbb R\).
+
 :::
 
-<1>2. The given function is
+:::
+
+::: pf-step
+
+The given function is
 \[
 \boxed{
 F(x^2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(u=x^2\) into the definition of \(F\).
+
 :::
 
-<1>3. By the chain rule,
+:::
+
+::: pf-step
+
+By the chain rule,
 \[
 \frac{d}{dx}F(x^2)
 =
 F'(x^2)\cdot2x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the composition \(F\circ(x\mapsto x^2)\).
+
 :::
 
-<1>4. Using step <1>1,
+:::
+
+::: pf-step
+
+Using step <1>1,
 \[
 F'(x^2)
 =
@@ -63,14 +87,21 @@ e^{-(x^2)^2}
 e^{-x^4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(u=x^2\) into
 \[
 F'(u)=e^{-u^2}.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{d}{dx}
@@ -79,13 +110,19 @@ F'(u)=e^{-u^2}.
 2x\,e^{-x^4}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3--<1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the requested derivative.
+
 :::
+
 :::

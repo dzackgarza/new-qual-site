@@ -25,7 +25,6 @@ Show that there is a rearrangement of
 which converges to $\pi$.
 :::
 
-::: {.solution}
 Write the positive terms as
 \[
 p_k=\frac1{2k}
@@ -35,14 +34,20 @@ and the negative terms as
 q_k=-\frac1{2k-1}.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \sum_{k=1}^{\infty}p_k=+\infty
 \qquad\text{and}\qquad
 \sum_{k=1}^{\infty}q_k=-\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the positive terms,
 \[
 \sum_{k=1}^{\infty}p_k
@@ -59,28 +64,49 @@ so
 \sum_{k=1}^{\infty}(-q_k)=+\infty.
 \]
 Hence the negative subseries diverges to $-\infty$.
+
 :::
 
-<1>2. Construct a rearrangement by taking unused positive terms in order until the partial sum first exceeds $\pi$, then unused negative terms in order until it first falls below $\pi$, and repeat indefinitely.
+:::
 
-::: {.proof}
+::: pf-step
+
+Construct a rearrangement by taking unused positive terms in order until the partial sum first exceeds $\pi$, then unused negative terms in order until it first falls below $\pi$, and repeat indefinitely.
+
+
+::: pf-proof
+
 Step <1>1 guarantees that each positive block and each negative block terminates after finitely many terms. Within each sign, terms are used in their original order and never repeated.
+
 :::
 
-<1>3. Every original term appears exactly once in the rearrangement.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every original term appears exactly once in the rearrangement.
+
+
+::: pf-proof
+
 Every positive block contains at least one new positive term, because it begins with the partial sum below $\pi$. Hence after $m$ positive blocks at least the first $m$ positive terms have been used, so every $p_k$ eventually occurs.
 
 Likewise, every negative block contains at least one new negative term, so every $q_k$ eventually occurs. No term is repeated by construction. Therefore the ordering defines a bijection
 \[
 n:\mathbb N\to\mathbb N.
 \]
+
 :::
 
-<1>4. The overshoot above $\pi$ after a positive block tends to $0$, and the undershoot below $\pi$ after a negative block tends to $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The overshoot above $\pi$ after a positive block tends to $0$, and the undershoot below $\pi$ after a negative block tends to $0$.
+
+
+::: pf-proof
+
 At the end of a positive block, if the last term added is $p_k$, then the preceding partial sum was at most $\pi$, so
 \[
 0<S-\pi\le p_k.
@@ -92,14 +118,21 @@ Similarly, if a negative block ends with $q_k$, then
 0<\pi-S\le -q_k,
 \]
 and $q_k\to0$.
+
 :::
 
-<1>5. The rearranged series converges to
+:::
+
+::: pf-step
+
+The rearranged series converges to
 \[
 \boxed{\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Choose $K$ such that
 \[
 p_k<\varepsilon
@@ -121,11 +154,15 @@ Within a positive block the partial sums increase between these two bounds; with
 (\pi-\varepsilon,\pi+\varepsilon).
 \]
 Thus the rearranged series converges to $\pi$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 gives a rearrangement, and step <1>5 proves that its sum is $\pi$.
+
 :::
+
 :::

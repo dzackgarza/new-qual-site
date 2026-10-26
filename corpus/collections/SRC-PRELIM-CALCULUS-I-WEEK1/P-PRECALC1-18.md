@@ -15,19 +15,24 @@ review: draft
 Let $g ( x ) = e ^ { 2 x + 1 }$ . Compute $\operatorname* { l i m } _ { x \to 0 } { \frac { g ( g ( x ) ) - g ( e ) } { x } }$
 :::
 
-::: {.solution}
 Let
 \[
 h(x)=g(g(x)).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{
 g(0)=e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 g(0)
 =
@@ -35,23 +40,35 @@ e^{2\cdot0+1}
 =
 e.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 h(0)=g(e)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 h(0)=g(g(0)).
 \]
 Apply step <1>1.
+
 :::
 
-<1>3. The given limit is
+:::
+
+::: pf-step
+
+The given limit is
 \[
 \boxed{
 \lim_{x\to0}
@@ -60,52 +77,82 @@ Apply step <1>1.
 h'(0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 identifies the numerator as the standard difference quotient for
 \(h\) at \(0\).
+
 :::
 
-<1>4. The derivative of \(g\) is
+:::
+
+::: pf-step
+
+The derivative of \(g\) is
 \[
 \boxed{
 g'(x)=2e^{2x+1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the chain rule to
 \[
 g(x)=e^{2x+1}.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 g'(0)=2e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(x=0\) into step <1>4.
+
 :::
 
-<1>6. Also,
+:::
+
+::: pf-step
+
+Also,
 \[
 \boxed{
 g'(e)=2e^{2e+1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(x=e\) into step <1>4.
+
 :::
 
-<1>7. By the chain rule,
+:::
+
+::: pf-step
+
+By the chain rule,
 \[
 h'(0)
 =
 g'(g(0))\,g'(0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 h=g\circ g,
@@ -115,9 +162,14 @@ the chain rule gives
 h'(x)=g'(g(x))g'(x).
 \]
 Set \(x=0\).
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 h'(0)
 =
@@ -127,11 +179,18 @@ h'(0)
 (2e).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>1, <1>5, <1>6, and <1>7.
+
 :::
 
-<1>9. Simplifying,
+:::
+
+::: pf-step
+
+Simplifying,
 \[
 \boxed{
 h'(0)
@@ -139,7 +198,9 @@ h'(0)
 4e^{2e+2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 2e^{2e+1}\cdot2e
 =
@@ -147,9 +208,14 @@ h'(0)
 =
 4e^{2e+2}.
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{x\to0}
@@ -158,13 +224,19 @@ h'(0)
 4e^{2e+2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the requested limit.
+
 :::
+
 :::

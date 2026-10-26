@@ -28,15 +28,20 @@ Show that there exist real-valued continuous functions $g_1,\ldots,g_n$ and $h_1
 Explain.
 :::
 
-::: {.solution}
 Let
 \[
 K=[0,1]^2.
 \]
 
-<1>1. The algebra of real polynomials in the coordinate functions $x$ and $y$ is uniformly dense in $C(K)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The algebra of real polynomials in the coordinate functions $x$ and $y$ is uniformly dense in $C(K)$.
+
+
+::: pf-proof
+
 Apply the real Stone--Weierstrass theorem. The restrictions to $K$ of real polynomials in $x$ and $y$ form a subalgebra
 \[
 \mathcal A\subseteq C(K).
@@ -46,9 +51,14 @@ It contains the constants. It separates points: if
 (x_1,y_1)\ne(x_2,y_2),
 \]
 then either $x_1\ne x_2$, in which case the coordinate function $(x,y)\mapsto x$ separates them, or $y_1\ne y_2$, in which case $(x,y)\mapsto y$ does. Since $K$ is compact Hausdorff, Stone--Weierstrass implies that $\mathcal A$ is uniformly dense in $C(K)$.
+
 :::
 
-<1>2. Given $\varepsilon>0$, there is a polynomial
+:::
+
+::: pf-step
+
+Given $\varepsilon>0$, there is a polynomial
 \[
 P(x,y)=\sum_{(r,s)\in F}c_{rs}x^ry^s
 \]
@@ -57,17 +67,26 @@ with $F\subseteq\mathbb N^2$ finite such that
 \|f-P\|_\infty\le\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows directly from the uniform density in step <1>1. If the theorem gives strict inequality $<\varepsilon$, then the displayed weak inequality follows as well.
+
 :::
 
-<1>3. The polynomial $P$ from step <1>2 can be written as a finite sum
+:::
+
+::: pf-step
+
+The polynomial $P$ from step <1>2 can be written as a finite sum
 \[
 P(x,y)=\sum_{i=1}^n g_i(x)h_i(y)
 \]
 with continuous real-valued functions $g_i,h_i$ on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Enumerate the finitely many pairs in $F$ as
 \[
 (r_1,s_1),\ldots,(r_n,s_n).
@@ -86,9 +105,14 @@ These are polynomials, hence continuous, and
 =
 P(x,y).
 \]
+
 :::
 
-<1>4. Therefore for every continuous $f$ and every $\varepsilon>0$ there are finitely many continuous $g_i,h_i$ such that
+:::
+
+::: pf-step
+
+Therefore for every continuous $f$ and every $\varepsilon>0$ there are finitely many continuous $g_i,h_i$ such that
 \[
 \boxed{
 \left|
@@ -99,17 +123,26 @@ f(x,y)-\sum_{i=1}^n g_i(x)h_i(y)
 \]
 for every $(x,y)\in[0,1]^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2--<1>3.
+
 :::
 
-<1>5. Even when $f$ is symmetric, one cannot in general require
+:::
+
+::: pf-step
+
+Even when $f$ is symmetric, one cannot in general require
 \[
 h_i=g_i
 \]
 for every $i$.
 
-::: {.proof}
+
+::: pf-proof
+
 Take the symmetric continuous function
 \[
 f(x,y)=-1.
@@ -143,11 +176,15 @@ and therefore
 \]
 a contradiction.
 Thus for $\varepsilon<1$, the symmetric function $f\equiv-1$ cannot be approximated in the requested form.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>5 gives a symmetric counterexample for part (b).
+
 :::
+
 :::

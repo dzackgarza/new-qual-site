@@ -15,7 +15,6 @@ review: draft
 Compute the integral $\int _ { 0 } ^ { 1 } \frac { \log ( 1 + t ) } { 1 + t ^ { 2 } } d t .$
 :::
 
-::: {.solution}
 Let
 \[
 I
@@ -24,43 +23,68 @@ I
 \frac{\log(1+t)}{1+t^2}\,dt.
 \]
 
-<1>1. Set
+::: pf
+
+::: pf-step
+
+Set
 \[
 \boxed{t=\tan\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This substitution removes the denominator \(1+t^2\).
+
 :::
 
-<1>2. Then
+:::
+
+::: pf-step
+
+Then
 \[
 dt=\sec^2\theta\,d\theta,
 \qquad
 1+t^2=\sec^2\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate \(t=\tan\theta\) and use the identity
 \[
 1+\tan^2\theta=\sec^2\theta.
 \]
+
 :::
 
-<1>3. The bounds \(t=0,1\) become
+:::
+
+::: pf-step
+
+The bounds \(t=0,1\) become
 \[
 \theta=0,\frac{\pi}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \arctan0=0,
 \qquad
 \arctan1=\frac{\pi}{4}.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 I
@@ -69,25 +93,39 @@ I
 \log(1+\tan\theta)\,d\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>1--<1>3 into the integral.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 1+\tan\theta
 =
 \frac{\sin\theta+\cos\theta}{\cos\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \tan\theta=\frac{\sin\theta}{\cos\theta}.
 \]
+
 :::
 
-<1>6. The numerator satisfies
+:::
+
+::: pf-step
+
+The numerator satisfies
 \[
 \boxed{
 \sin\theta+\cos\theta
@@ -95,7 +133,9 @@ Use
 \sqrt2\cos\left(\theta-\frac{\pi}{4}\right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 \cos(\theta-\pi/4)
@@ -103,9 +143,14 @@ Using
 \frac{\cos\theta+\sin\theta}{\sqrt2},
 \]
 multiply by \(\sqrt2\).
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \log(1+\tan\theta)
@@ -117,15 +162,22 @@ multiply by \(\sqrt2\).
 \log\cos\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5--<1>6 and take logarithms. On
 \[
 0\le\theta\le\frac{\pi}{4},
 \]
 all cosine factors are positive.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \begin{aligned}
 I
@@ -140,16 +192,23 @@ I
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the identity from step <1>7. The constant term contributes
 \[
 \frac12\log2\cdot\frac{\pi}{4}
 =
 \frac{\pi}{8}\log2.
 \]
+
 :::
 
-<1>9. The two logarithmic cosine integrals are equal:
+:::
+
+::: pf-step
+
+The two logarithmic cosine integrals are equal:
 \[
 \boxed{
 \int_0^{\pi/4}
@@ -159,7 +218,9 @@ Integrate the identity from step <1>7. The constant term contributes
 \log\cos\theta\,d\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 u=\frac{\pi}{4}-\theta.
@@ -173,9 +234,14 @@ Then
 \cos u.
 \]
 Reversing the bounds yields exactly the right-hand integral.
+
 :::
 
-<1>10. Hence the logarithmic integrals cancel, and
+:::
+
+::: pf-step
+
+Hence the logarithmic integrals cancel, and
 \[
 \boxed{
 I
@@ -183,13 +249,19 @@ I
 \frac{\pi}{8}\log2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>9 to step <1>8.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the requested value.
+
 :::
+
 :::

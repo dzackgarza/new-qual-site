@@ -24,10 +24,13 @@ $$
 $$
 :::
 
-::: {.solution}
 All homology and cohomology groups in the proof have integral coefficients.
 
-<1>1. The universal coefficient theorem in degree $n$ gives
+::: pf
+
+::: pf-step
+
+The universal coefficient theorem in degree $n$ gives
 \[
 0\to\operatorname{Ext}^1(H_{n-1}(M),\mathbb Z)
 \longrightarrow H^n(M)
@@ -35,17 +38,26 @@ All homology and cohomology groups in the proof have integral coefficients.
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the universal coefficient short exact sequence for cohomology applied in degree $n$.
+
 :::
 
-<1>2. Since $H_{n-1}(M)$ is finitely generated,
+:::
+
+::: pf-step
+
+Since $H_{n-1}(M)$ is finitely generated,
 \[
 \operatorname{Ext}^1(H_{n-1}(M),\mathbb Z)
 \cong\operatorname{Tor}H_{n-1}(M).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 H_{n-1}(M)\cong\mathbb Z^r\oplus
@@ -57,50 +69,78 @@ Then $\operatorname{Ext}^1(\mathbb Z,\mathbb Z)=0$ and
 \cong\mathbb Z/d_j.
 \]
 Taking direct sums gives precisely the torsion subgroup.
+
 :::
 
-<1>3. If $M$ is orientable, then
+:::
+
+::: pf-step
+
+If $M$ is orientable, then
 \[
 H_n(M)\cong\mathbb Z,
 \qquad
 H^n(M)\cong\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A closed connected orientable $n$-manifold has an integral fundamental class generating $H_n(M)$. Poincaré duality gives
 \[
 H^n(M)\cong H_0(M)\cong\mathbb Z.
 \]
+
 :::
 
-<1>4. In the orientable case,
+:::
+
+::: pf-step
+
+In the orientable case,
 \[
 \operatorname{Tor}H_{n-1}(M)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \operatorname{Hom}(H_n(M),\mathbb Z)\cong\mathbb Z.
 \]
 The right map in step <1>1 is the evaluation map $H^n(M)\to\operatorname{Hom}(H_n(M),\mathbb Z)$; on the cohomological orientation class and fundamental class it takes value $1$, hence is an isomorphism $\mathbb Z\to\mathbb Z$. Its kernel, which is the Ext term by exactness, is therefore zero. Apply step <1>2.
+
 :::
 
-<1>5. If $M$ is nonorientable, then
+:::
+
+::: pf-step
+
+If $M$ is nonorientable, then
 \[
 H_n(M)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a closed connected manifold, a nonzero integral top-dimensional homology class supplies coherent local orientation generators and hence an orientation. Since $M$ is assumed nonorientable, no such class exists.
+
 :::
 
-<1>6. If $M$ is nonorientable, then
+:::
+
+::: pf-step
+
+If $M$ is nonorientable, then
 \[
 H^n(M)\cong\mathbb Z/2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Poincaré duality with the orientation local system $\mathcal O$ gives
 \[
 H^n(M;\mathbb Z)\cong H_0(M;\mathcal O).
@@ -113,14 +153,21 @@ Nonorientability means some loop acts by $-1$. Thus the coinvariant relation ide
 \[
 H_0(M;\mathcal O)\cong\mathbb Z/2.
 \]
+
 :::
 
-<1>7. In the nonorientable case,
+:::
+
+::: pf-step
+
+In the nonorientable case,
 \[
 \operatorname{Tor}H_{n-1}(M)\cong\mathbb Z/2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 \operatorname{Hom}(H_n(M),\mathbb Z)=0.
@@ -131,9 +178,14 @@ Therefore step <1>1 identifies
 \cong H^n(M).
 \]
 Apply steps <1>2 and <1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{Tor}H_{n-1}(M;\mathbb Z)
@@ -144,13 +196,19 @@ Apply steps <1>2 and <1>6.
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two cases are steps <1>4 and <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required dichotomy.
+
 :::
+
 :::

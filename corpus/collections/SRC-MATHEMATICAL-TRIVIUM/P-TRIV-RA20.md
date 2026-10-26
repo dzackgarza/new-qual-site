@@ -19,19 +19,24 @@ audit:
 Find $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x , n \in \mathbb { Z } , n > 0 .$
 :::
 
-::: {.solution}
 For $n\geq0$, define
 $$
 I_n=
 \int_0^\infty x^n e^{-x}\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 I_0=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 I_0
@@ -41,14 +46,21 @@ I_0
 \left[-e^{-x}\right]_0^\infty
 =1.
 $$
+
 :::
 
-<1>2. For every integer $n\geq1$,
+:::
+
+::: pf-step
+
+For every integer $n\geq1$,
 $$
 I_n=nI_{n-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate by parts with
 $$
 u=x^n,
@@ -77,14 +89,21 @@ as $x\to\infty$, and it is $0$ at $x=0$. Thus
 $$
 I_n=nI_{n-1}.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 I_n=n!.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Iterating step <1>2 gives
 $$
 I_n
@@ -92,22 +111,33 @@ I_n
 n(n-1)\cdots1\,I_0.
 $$
 Use step <1>1.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \int_0^\infty x^n e^{-x}\,dx=n!.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required value.
+
 :::
+
 :::

@@ -27,7 +27,6 @@ Prove that the (monic) minimal polynomial is of the type described in the previo
 Here we are assuming that $\operatorname{char} F$ is $\neq 2$.
 :::
 
-::: {.solution}
 Let
 $$
 F\subset K\subset E=F(\theta)
@@ -39,12 +38,18 @@ $$
 [E:F]=4.
 $$
 
-<1>1. There is an element $c\in F$ that is not a square in $F$ such that
+::: pf
+
+::: pf-step
+
+There is an element $c\in F$ that is not a square in $F$ such that
 $$
 K=F(\sqrt c).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $\alpha\in K\setminus F$. Its minimal polynomial over $F$ has degree $2$, say
 $$
 X^2+sX+t.
@@ -62,15 +67,22 @@ $$
 F(\beta)=F(\alpha)=K.
 $$
 Writing $\beta=\sqrt c$ gives the claim.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 [E:K]=2,
 $$
 and $E=K(\theta)$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the tower law,
 $$
 [E:F]=[E:K][K:F].
@@ -88,23 +100,35 @@ $$
 K(\theta)
 $$
 contains $F(\theta)=E$ and is contained in $E$, hence equals $E$.
+
 :::
 
-<1>3. The minimal polynomial of $\theta$ over $K$ is a monic quadratic
+:::
+
+::: pf-step
+
+The minimal polynomial of $\theta$ over $K$ is a monic quadratic
 $$
 h(X)=X^2+aX+b
 $$
 with $a,b\in K$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 [K(\theta):K]=2.
 $$
 The degree of the minimal polynomial of $\theta$ over $K$ is therefore $2$.
+
 :::
 
-<1>4. There are unique polynomials $Q,P\in F[X]$ such that
+:::
+
+::: pf-step
+
+There are unique polynomials $Q,P\in F[X]$ such that
 $$
 h(X)=Q(X)+\sqrt c\,P(X),
 $$
@@ -113,7 +137,9 @@ $$
 \deg P<2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 K=F\oplus F\sqrt c
@@ -139,9 +165,14 @@ Q(X)=X^2+a_0X+b_0,
 P(X)=a_1X+b_1.
 $$
 Then $Q$ is monic of degree $2$ and $\deg P<2$.
+
 :::
 
-<1>5. Let $\sigma$ be the nontrivial $F$-automorphism of $K$, characterized by
+:::
+
+::: pf-step
+
+Let $\sigma$ be the nontrivial $F$-automorphism of $K$, characterized by
 $$
 \sigma(\sqrt c)=-\sqrt c.
 $$
@@ -150,11 +181,18 @@ $$
 \sigma(h)=Q-\sqrt c\,P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The quadratic extension $K/F$ is separable because $\operatorname{char}F\ne2$. Its nontrivial automorphism fixes $F$ and exchanges the two roots of $X^2-c$, hence sends $\sqrt c$ to $-\sqrt c$. Apply it coefficientwise to the expression in step <1>4.
+
 :::
 
-<1>6. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 g(X)=h(X)\sigma(h)(X)
 $$
@@ -163,7 +201,9 @@ $$
 \boxed{g(X)=Q(X)^2-cP(X)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using steps <1>4--<1>5,
 $$
 \begin{aligned}
@@ -173,34 +213,53 @@ g
 \end{aligned}
 $$
 The right-hand side has coefficients in $F$, so $g\in F[X]$.
+
 :::
 
-<1>7. The polynomial $g$ is monic of degree $4$ and satisfies
+:::
+
+::: pf-step
+
+The polynomial $g$ is monic of degree $4$ and satisfies
 $$
 g(\theta)=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both $h$ and $\sigma(h)$ are monic quadratics, so their product is monic of degree $4$. Since $h(\theta)=0$ by definition of $h$,
 $$
 g(\theta)=h(\theta)\sigma(h)(\theta)=0.
 $$
+
 :::
 
-<1>8. Let $f\in F[X]$ be the monic minimal polynomial of $\theta$ over $F$. Then
+:::
+
+::: pf-step
+
+Let $f\in F[X]$ be the monic minimal polynomial of $\theta$ over $F$. Then
 $$
 f=g.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $E=F(\theta)$ has degree $4$ over $F$,
 $$
 \deg f=4.
 $$
 By step <1>7, $g\in F[X]$ is a monic degree-$4$ polynomial vanishing at $\theta$. Therefore the minimal polynomial $f$ divides $g$. Since both are monic of the same degree, they are equal.
+
 :::
 
-<1>9. Consequently the minimal polynomial of $\theta$ has the form
+:::
+
+::: pf-step
+
+Consequently the minimal polynomial of $\theta$ has the form
 $$
 \boxed{
 f(X)=Q(X)^2-cP(X)^2,
@@ -208,13 +267,19 @@ f(X)=Q(X)^2-cP(X)^2,
 $$
 where $Q\in F[X]$ is monic of degree $2$ and $\deg P<2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6 and <1>8, together with the degree properties established in step <1>4.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is exactly the converse statement requested in Problem 3.10.
+
 :::
+
 :::

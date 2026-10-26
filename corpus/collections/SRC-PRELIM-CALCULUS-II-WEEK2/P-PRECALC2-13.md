@@ -15,39 +15,56 @@ review: draft
 Do the series $\sum _ { n = 2 } ^ { \infty } { \frac { 1 } { \log ( n ! ) } }$ and $\sum _ { n = 3 } ^ { \infty } { \frac { 1 } { \log ( n ) ^ { \log ( n ) } } }$ converge or diverge?
 :::
 
-::: {.solution}
 Consider first
 \[
 \sum_{n=2}^{\infty}\frac1{\log(n!)}.
 \]
 
-<1>1. For every \(n\ge2\),
+::: pf
+
+::: pf-step
+
+For every \(n\ge2\),
 \[
 \boxed{n!\le n^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each factor in
 \[
 n!=1\cdot2\cdots n
 \]
 is at most \(n\), so the product is at most the product of \(n\) copies of
 \(n\).
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\log(n!)\le n\log n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The logarithm is increasing on \((0,\infty)\). Apply \(\log\) to step <1>1:
 \[
 \log(n^n)=n\log n.
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \frac1{\log(n!)}
@@ -55,19 +72,28 @@ The logarithm is increasing on \((0,\infty)\). Apply \(\log\) to step <1>1:
 \frac1{n\log n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(n\ge2\), both denominators are positive. Taking reciprocals reverses
 the inequality in step <1>2.
+
 :::
 
-<1>4. The comparison series
+:::
+
+::: pf-step
+
+The comparison series
 \[
 \sum_{n=2}^{\infty}
 \frac1{n\log n}
 \]
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 By the integral test,
 \[
 \int_2^\infty
@@ -79,9 +105,14 @@ By the integral test,
 =
 \infty.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=2}^{\infty}
@@ -89,18 +120,19 @@ By the integral test,
 \text{ diverges}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The terms are nonnegative, and step <1>3 bounds them below by the terms of
 the divergent series in step <1>4.
+
 :::
 
-Now consider
-\[
-\sum_{n=3}^{\infty}
-\frac1{(\log n)^{\log n}}.
-\]
+:::
 
-<1>6. One has
+::: pf-step
+
+One has
 \[
 \boxed{
 (\log n)^{\log n}
@@ -108,7 +140,9 @@ Now consider
 n^{\log\log n}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using \(a^b=e^{b\log a}\),
 \[
 (\log n)^{\log n}
@@ -122,9 +156,14 @@ n^{\log\log n}
 e^{(\log\log n)(\log n)}.
 \]
 The two expressions are equal.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \frac1{(\log n)^{\log n}}
@@ -132,16 +171,25 @@ The two expressions are equal.
 \frac1{n^{\log\log n}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take reciprocals in step <1>6.
+
 :::
 
-<1>8. There exists \(N\) such that for every \(n\ge N\),
+:::
+
+::: pf-step
+
+There exists \(N\) such that for every \(n\ge N\),
 \[
 \boxed{\log\log n\ge2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \log\log n\longrightarrow\infty,
@@ -151,9 +199,14 @@ it eventually exceeds \(2\). For example, any
 N\ge e^{e^2}
 \]
 works.
+
 :::
 
-<1>9. Therefore, for all \(n\ge N\),
+:::
+
+::: pf-step
+
+Therefore, for all \(n\ge N\),
 \[
 \boxed{
 \frac1{n^{\log\log n}}
@@ -161,7 +214,9 @@ works.
 \frac1{n^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 \[
 \log\log n\ge2.
@@ -172,23 +227,35 @@ so
 n^{\log\log n}\ge n^2.
 \]
 Take reciprocals.
+
 :::
 
-<1>10. The series
+:::
+
+::: pf-step
+
+The series
 \[
 \sum_{n=N}^{\infty}
 \frac1{n^2}
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 This is a \(p\)-series with
 \[
 p=2>1.
 \]
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=3}^{\infty}
@@ -196,15 +263,21 @@ p=2>1.
 \text{ converges}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>7 and <1>9, its tail is bounded above by the convergent series in
 step <1>10. Finitely many initial terms do not affect convergence.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives divergence of the first series, and step <1>11 gives
 convergence of the second.
+
 :::
+
 :::

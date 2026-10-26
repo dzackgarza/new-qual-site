@@ -27,7 +27,6 @@ Prove that there is a bijection $\sigma:\mathbb N\to\mathbb N$ such that
 \]
 :::
 
-::: {.solution}
 Write
 \[
 p_k=a_{2k}=\frac1{2k},
@@ -35,9 +34,15 @@ p_k=a_{2k}=\frac1{2k},
 q_k=a_{2k-1}=-\frac1{2k-1}.
 \]
 
-<1>1. The positive subseries diverges to $+\infty$, while the negative subseries diverges to $-\infty$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The positive subseries diverges to $+\infty$, while the negative subseries diverges to $-\infty$.
+
+
+::: pf-proof
+
 One has
 \[
 \sum_{k=1}^{\infty}p_k
@@ -60,11 +65,18 @@ Hence
 \[
 \sum_{k=1}^{\infty}q_k=-\infty.
 \]
+
 :::
 
-<1>2. Construct a rearranged sequence by alternately taking unused positive terms until the running sum exceeds $\alpha$, then unused negative terms until it is below $\alpha$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Construct a rearranged sequence by alternately taking unused positive terms until the running sum exceeds $\alpha$, then unused negative terms until it is below $\alpha$.
+
+
+::: pf-proof
+
 Start with sum $0$. By step <1>1, after finitely many unused positive terms the running sum is greater than $\alpha$. Then, again by step <1>1, after finitely many unused negative terms it is less than $\alpha$. Repeat this procedure indefinitely.
 
 Within each positive block use
@@ -76,28 +88,49 @@ in their natural order, and within each negative block use
 q_1,q_2,q_3,\ldots
 \]
 in their natural order. Thus no term is ever repeated.
+
 :::
 
-<1>3. Every $p_k$ and every $q_k$ occurs after finitely many stages.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every $p_k$ and every $q_k$ occurs after finitely many stages.
+
+
+::: pf-proof
+
 Each positive block is nonempty: immediately before a positive block the running sum is below $\alpha$, so at least one positive term is required before it can exceed $\alpha$. Therefore after $r$ positive blocks at least the first $r$ positive terms have been used. Hence every fixed $p_k$ eventually occurs.
 
 Likewise, each negative block is nonempty, because immediately before it the running sum is above $\alpha$. Therefore every fixed $q_k$ eventually occurs.
+
 :::
 
-<1>4. The order constructed in step <1>2 defines a bijection
+:::
+
+::: pf-step
+
+The order constructed in step <1>2 defines a bijection
 \[
 \sigma:\mathbb N\to\mathbb N.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that no original term is used twice, so the resulting map from positions in the rearranged series to original indices is injective. Step <1>3 shows that every even index $2k$ and every odd index $2k-1$ eventually appears, so the map is surjective. Hence it is a bijection.
+
 :::
 
-<1>5. Let $S_m$ denote the partial sums of the rearranged series. The overshoots above and below $\alpha$ tend to $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Let $S_m$ denote the partial sums of the rearranged series. The overshoots above and below $\alpha$ tend to $0$.
+
+
+::: pf-proof
+
 At the end of a positive block, the running sum has just crossed from at most $\alpha$ to above $\alpha$. If the last added positive term is $p_k$, then
 \[
 0<S_m-\alpha\le p_k.
@@ -109,14 +142,21 @@ Similarly, at the end of a negative block, if the last added term is $q_k$, then
 0<\alpha-S_m\le -q_k.
 \]
 Again $k\to\infty$ through successive negative blocks and $q_k\to0$. Thus both kinds of overshoot tend to $0$.
+
 :::
 
-<1>6. The rearranged series converges to
+:::
+
+::: pf-step
+
+The rearranged series converges to
 \[
 \boxed{\alpha}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Since $p_k\to0$ and $q_k\to0$, choose $K$ such that
 \[
 p_k<\varepsilon
@@ -138,11 +178,15 @@ During a positive block the partial sums increase from the preceding negative-bl
 (\alpha-\varepsilon,\alpha+\varepsilon).
 \]
 Therefore $S_m\to\alpha$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required bijection $\sigma$, and step <1>6 proves that the rearranged series determined by $\sigma$ has sum $\alpha$.
+
 :::
+
 :::

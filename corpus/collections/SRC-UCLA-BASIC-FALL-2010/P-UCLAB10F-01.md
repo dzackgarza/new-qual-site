@@ -28,10 +28,13 @@ Problem 1. Let $F$ be a closed subset of a metric space $(X,\rho)$.
 Give a proof if it is true and a counterexample if it is false.
 :::
 
-::: {.solution}
 Assume first that $K$ and $F$ are nonempty.
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 \inf_{x\in K,\ y\in F}\rho(x,y)>0,
 \]
@@ -40,15 +43,22 @@ then
 K\cap F=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If some point $z$ belonged to $K\cap F$, then
 \[
 \rho(z,z)=0
 \]
 would be one of the distances occurring in the infimum. Hence the infimum would be $0$, contradicting the assumed positivity.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 K\cap F=\varnothing.
 \]
@@ -57,31 +67,45 @@ For every $x\in K$, there is $r_x>0$ such that
 B(x,r_x)\cap F=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x\notin F$ and $F$ is closed, the complement
 \[
 X\setminus F
 \]
 is open and contains $x$. Hence some metric ball $B(x,r_x)$ is contained in the complement.
+
 :::
 
-<1>3. There are points $x_1,\ldots,x_m\in K$ such that
+:::
+
+::: pf-step
+
+There are points $x_1,\ldots,x_m\in K$ such that
 \[
 K\subseteq
 \bigcup_{i=1}^m
 B\left(x_i,\frac{r_{x_i}}2\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The balls
 \[
 B\left(x,\frac{r_x}{2}\right),
 \qquad x\in K,
 \]
 form an open cover of the compact set $K$. Hence a finite subcover exists.
+
 :::
 
-<1>4. With
+:::
+
+::: pf-step
+
+With
 \[
 \delta=
 \min_{1\le i\le m}\frac{r_{x_i}}2,
@@ -92,7 +116,9 @@ one has
 \]
 for every $x\in K$ and $y\in F$.
 
-::: {.proof}
+
+::: pf-proof
+
 The number $\delta$ is positive.
 Fix $x\in K$ and $y\in F$. Choose $i$ as in step <1>3, so
 \[
@@ -116,9 +142,14 @@ r_{x_i}-\frac{r_{x_i}}2\\
 \delta.
 \end{aligned}
 \]
+
 :::
 
-<1>5. If $K$ is compact, then
+:::
+
+::: pf-step
+
+If $K$ is compact, then
 \[
 \boxed{
 K\cap F=\varnothing
@@ -127,13 +158,22 @@ K\cap F=\varnothing
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The forward implication follows from step <1>4, and the reverse implication is step <1>1.
+
 :::
 
-<1>6. Part (a) is false if $K$ is assumed only closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) is false if $K$ is assumed only closed.
+
+
+::: pf-proof
+
 Take
 \[
 X=\mathbb R^2,
@@ -171,11 +211,15 @@ Thus
 \[
 \inf_{x\in K,\ y\in F}\rho(x,y)=0.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>6 gives the counterexample required in part (b).
+
 :::
+
 :::

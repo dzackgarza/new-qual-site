@@ -19,7 +19,6 @@ audit:
 Prove Borsuk-Uhlam theorem.
 :::
 
-::: {.solution}
 The Borsuk--Ulam theorem states that for every continuous map
 \[
 f:S^n\to\mathbb R^n
@@ -29,17 +28,28 @@ there exists $x\in S^n$ such that
 f(x)=f(-x).
 \]
 
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that
 \[
 f(x)\ne f(-x)
 \qquad\text{for every }x\in S^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the negation of the theorem's conclusion.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g:S^n\to S^{n-1},
 \qquad
@@ -50,16 +60,23 @@ Then $g$ is continuous and odd:
 g(-x)=-g(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator is nonzero by step <1>1, so the normalization is defined and continuous. Moreover,
 \[
 g(-x)
 =\frac{f(-x)-f(x)}{\|f(-x)-f(x)\|}
 =-g(x).
 \]
+
 :::
 
-<1>3. Because $g$ is odd, it descends to a continuous map
+:::
+
+::: pf-step
+
+Because $g$ is odd, it descends to a continuous map
 \[
 \bar g:\mathbb{RP}^{n}\to\mathbb{RP}^{n-1}
 \]
@@ -69,15 +86,22 @@ q_{n-1}\circ g=\bar g\circ q_n,
 \]
 where $q_k:S^k\to\mathbb{RP}^k$ is the antipodal quotient.
 
-::: {.proof}
+
+::: pf-proof
+
 The equality $g(-x)=-g(x)$ means that antipodal pairs in $S^n$ map to antipodal pairs in $S^{n-1}$. Hence the assignment
 \[
 [x]\longmapsto[g(x)]
 \]
 is well-defined and continuous on the quotient.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 a\in H^1(\mathbb{RP}^{n};\mathbb F_2),
 \qquad
@@ -88,23 +112,37 @@ are the standard generators, then
 \bar g^*(b)=a.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The double covers $S^n\to\mathbb{RP}^n$ and $S^{n-1}\to\mathbb{RP}^{n-1}$ are classified by the nonzero classes $a$ and $b$ in $H^1(-;\mathbb F_2)$. The commutative square in step <1>3 is a map of these double covers, so the pullback of the target cover along $\bar g$ is the source antipodal cover. Therefore their classifying classes satisfy $\bar g^*(b)=a$. Equivalently, for $n\ge2$, the induced map on fundamental groups sends the nontrivial antipodal loop to the nontrivial antipodal loop; the $n=1$ case is immediate separately.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \bar g^*(b^n)=a^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Cohomology pullback is a ring homomorphism, so by step <1>4,
 \[
 \bar g^*(b^n)=(\bar g^*b)^n=a^n.
 \]
+
 :::
 
-<1>6. In the target,
+:::
+
+::: pf-step
+
+In the target,
 \[
 b^n=0,
 \]
@@ -113,7 +151,9 @@ while in the source,
 a^n\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The mod-$2$ cohomology rings are
 \[
 H^*(\mathbb{RP}^{n-1};\mathbb F_2)
@@ -125,30 +165,48 @@ H^*(\mathbb{RP}^{n};\mathbb F_2)
 \cong\mathbb F_2[a]/(a^{n+1}).
 \]
 Thus $b^n$ vanishes by the target truncation, whereas $a^n$ is the nonzero top-degree class of the source.
+
 :::
 
-<1>7. Steps <1>5--<1>6 give a contradiction.
+:::
 
-::: {.proof}
+::: pf-step
+
+Steps <1>5--<1>6 give a contradiction.
+
+
+::: pf-proof
+
 Since $b^n=0$, functoriality gives
 \[
 0=\bar g^*(b^n).
 \]
 But step <1>5 identifies this class with $a^n$, which is nonzero by step <1>6.
+
 :::
 
-<1>8. Therefore there exists $x\in S^n$ such that
+:::
+
+::: pf-step
+
+Therefore there exists $x\in S^n$ such that
 \[
 \boxed{f(x)=f(-x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The contradiction in step <1>7 disproves the assumption in step <1>1, leaving exactly the Borsuk--Ulam conclusion.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves the theorem.
+
 :::
+
 :::

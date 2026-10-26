@@ -19,15 +19,20 @@ audit:
 Prove that if for some discrete random variable ξ, $\mathbf { E } \xi ^ { 2 } = \mathbf { E } \xi ^ { 3 } = \mathbf { E } \xi ^ { 4 }$ , then $\xi$ can only take values 0 or 1.
 :::
 
-::: {.solution}
 Assume the stated moments are finite.
 
-<1>1. The moment equalities imply
+::: pf
+
+::: pf-step
+
+The moment equalities imply
 \[
 \mathbf E\bigl[\xi^2(\xi-1)^2\bigr]=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the nonnegative polynomial:
 \[
 \xi^2(\xi-1)^2=\xi^4-2\xi^3+\xi^2.
@@ -37,48 +42,73 @@ Taking expectations and using
 \mathbf E\xi^2=\mathbf E\xi^3=\mathbf E\xi^4
 \]
 gives zero.
+
 :::
 
-<1>2. The random variable
+:::
+
+::: pf-step
+
+The random variable
 \[
 Z=\xi^2(\xi-1)^2
 \]
 is nonnegative almost surely.
 
-::: {.proof}
+
+::: pf-proof
+
 Both factors $\xi^2$ and $(\xi-1)^2$ are squares, so their product is nonnegative for every real value of $\xi$.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 Z=0
 \]
 almost surely.
 
-::: {.proof}
+
+::: pf-proof
+
 A nonnegative random variable with expectation zero must vanish almost surely. Indeed, if $P(Z>0)>0$, then for some integer $n\geq1$ one has $P(Z\geq1/n)>0$, which would imply
 \[
 \mathbf EZ\geq\frac1nP(Z\geq1/n)>0,
 \]
 contradicting step <1>1.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{P(\xi\in\{0,1\})=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \xi^2(\xi-1)^2=0
 \]
 almost surely. A real number $r$ satisfies $r^2(r-1)^2=0$ exactly when $r=0$ or $r=1$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion. The argument in fact does not require discreteness.
+
 :::
+
 :::

@@ -23,8 +23,11 @@ audit:
 For what values of $\alpha$ the series $\displaystyle\sum_{n=1}^{N} \frac{1}{n^\alpha}$ diverges as $N \to \infty$?
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 $$
 \alpha\leq0,
 $$
@@ -34,24 +37,38 @@ n^{-\alpha}
 $$
 do not tend to $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $\alpha=0$, then $n^{-\alpha}=1$. If $\alpha<0$, then
 $$
 n^{-\alpha}=n^{|\alpha|}\to\infty.
 $$
+
 :::
 
-<1>2. Therefore the series diverges for
+:::
+
+::: pf-step
+
+Therefore the series diverges for
 $$
 \alpha\leq0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 A necessary condition for convergence of a series is that its terms tend to
 $0$. Step <1>1 shows this condition fails.
+
 :::
 
-<1>3. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 0<\alpha\leq1.
 $$
@@ -61,21 +78,30 @@ x\longmapsto x^{-\alpha}
 $$
 is positive and decreasing on $[1,\infty)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Its derivative is
 $$
 -\alpha x^{-\alpha-1}<0.
 $$
+
 :::
 
-<1>4. For every integer $N\geq1$,
+:::
+
+::: pf-step
+
+For every integer $N\geq1$,
 $$
 \sum_{n=1}^{N}n^{-\alpha}
 \geq
 \int_1^{N+1}x^{-\alpha}\,dx.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $x^{-\alpha}$ is decreasing, for
 $$
 x\in[n,n+1]
@@ -86,9 +112,14 @@ x^{-\alpha}\leq n^{-\alpha}.
 $$
 Integrating over each interval and summing from $n=1$ to $N$ gives the
 inequality.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 $$
 0<\alpha<1,
 $$
@@ -100,11 +131,18 @@ $$
 \longrightarrow\infty.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $1-\alpha>0$, the power $(N+1)^{1-\alpha}$ tends to infinity.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 $$
 \alpha=1,
 $$
@@ -116,27 +154,43 @@ $$
 \longrightarrow\infty.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the logarithmic antiderivative.
+
 :::
 
-<1>7. Hence the series diverges for every
+:::
+
+::: pf-step
+
+Hence the series diverges for every
 $$
 \alpha\leq1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 handles $\alpha\leq0$. For $0<\alpha\leq1$, steps <1>4--<1>6
 show that the partial sums dominate a quantity tending to infinity.
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 $$
 \alpha>1,
 $$
 the series converges.
 
-::: {.proof}
+
+::: pf-proof
+
 The integral test gives
 $$
 \int_1^\infty x^{-\alpha}\,dx
@@ -144,21 +198,32 @@ $$
 \frac1{\alpha-1}<\infty.
 $$
 Therefore the corresponding positive decreasing series converges.
+
 :::
 
-<1>9. Therefore the divergence region is exactly
+:::
+
+::: pf-step
+
+Therefore the divergence region is exactly
 $$
 \boxed{\alpha\leq1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 proves divergence there, while step <1>8 excludes every
 $\alpha>1$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required classification.
+
 :::
+
 :::

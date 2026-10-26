@@ -34,16 +34,21 @@ H_k(X;R)\times H^k(X;R)\longrightarrow R.
 This pairing is sometimes called the Kronecker product.
 :::
 
-::: {.solution}
 The first assertion in the source needs the standard missing hypothesis
 \[
 \delta\alpha=0.
 \]
 Without it, the assertion is false.
 
-<1>1. The literal first assertion fails for an arbitrary cochain.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The literal first assertion fails for an arbitrary cochain.
+
+
+::: pf-proof
+
 Take
 \[
 X=[0,1],
@@ -91,9 +96,14 @@ while
 \]
 Thus boundary-equivalent cycles need not pair equally with an arbitrary
 cochain.
+
 :::
 
-<1>2. For a singular chain
+:::
+
+::: pf-step
+
+For a singular chain
 \[
 c\in C_k(X;R)
 \]
@@ -110,7 +120,9 @@ the chain--cochain pairing satisfies
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the singular coboundary
 \[
 \delta\beta\in C^k(X;R)
@@ -145,9 +157,14 @@ then
 \langle\partial c,\beta\rangle.
 \end{aligned}
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 z-z'=\partial w
 \]
@@ -164,7 +181,9 @@ is a cocycle, then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \delta\alpha=0,
@@ -185,9 +204,14 @@ step <1>2 gives
 0.
 \end{aligned}
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 \alpha=\delta\beta
 \]
@@ -202,7 +226,9 @@ is a cycle, then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \langle z,\alpha\rangle
@@ -216,9 +242,14 @@ Since
 \partial z=0,
 \]
 the right-hand side is zero.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 z,z'\in Z_k(X;R)
 \]
@@ -233,7 +264,9 @@ represent the same cohomology class, then
 \langle z',\alpha'\rangle.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 [z]=[z'],
@@ -276,9 +309,14 @@ Hence
 \langle z',\alpha'\rangle.
 \]
 Combining the two equalities proves the claim.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \langle-,-\rangle:
@@ -293,14 +331,23 @@ R,
 \]
 is well defined.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows independence of both the cycle representative and the
 cocycle representative.
+
 :::
 
-<1>7. The pairing is bilinear.
+:::
 
-::: {.proof}
+::: pf-step
+
+The pairing is bilinear.
+
+
+::: pf-proof
+
 On chain and cochain representatives,
 \[
 \left\langle
@@ -323,13 +370,17 @@ z,\alpha_1+\alpha_2
 \]
 Scalar multiplication behaves compatibly as well.
 These identities descend through the quotient groups by step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 records the defect in the literal source statement.
 Steps <1>2--<1>7 prove the corrected Kronecker pairing on homology and
 cohomology.
+
 :::
+
 :::

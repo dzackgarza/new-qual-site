@@ -33,10 +33,13 @@ v'(t)=Av(t),\qquad v(0)=v_0.
 Explain precisely which theorems from calculus you use and why they apply.
 :::
 
-::: {.solution}
 Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\mathbb R)$, for example the operator norm induced by the Euclidean norm.
 
-<1>1. For every $R>0$, the matrix series
+::: pf
+
+::: pf-step
+
+For every $R>0$, the matrix series
 \[
 E(t)
 =
@@ -44,7 +47,9 @@ E(t)
 \]
 converges uniformly for $|t|\le R$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $|t|\le R$,
 \[
 \left\|
@@ -60,16 +65,23 @@ The scalar series
 e^{\|A\|R}
 \]
 converges. The Weierstrass $M$-test therefore gives uniform convergence of the matrix series on $[-R,R]$, equivalently uniform convergence of each entry series.
+
 :::
 
-<1>2. For every $R>0$, the series obtained by differentiating each term,
+:::
+
+::: pf-step
+
+For every $R>0$, the series obtained by differentiating each term,
 \[
 \sum_{k=1}^{\infty}
 \frac{kA^kt^{k-1}}{k!},
 \]
 also converges uniformly for $|t|\le R$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $|t|\le R$,
 \[
 \left\|
@@ -86,9 +98,14 @@ The scalar majorant satisfies
 \|A\|e^{\|A\|R},
 \]
 so the Weierstrass $M$-test again gives uniform convergence.
+
 :::
 
-<1>3. The function $E:\mathbb R\to M_n(\mathbb R)$ is differentiable and may be differentiated term by term:
+:::
+
+::: pf-step
+
+The function $E:\mathbb R\to M_n(\mathbb R)$ is differentiable and may be differentiated term by term:
 \[
 E'(t)
 =
@@ -96,18 +113,27 @@ E'(t)
 \frac{A^kt^{k-1}}{(k-1)!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the standard termwise-differentiation theorem for series of $C^1$ functions on a compact interval: if the derivative series converges uniformly and the original series converges at one point, then the original series converges to a differentiable function whose derivative is the sum of the derivative series.
 
 For each fixed $R$, step <1>2 gives uniform convergence of the derivative series on $[-R,R]$, and at $t=0$ the original series converges trivially to $I$. Applying the theorem entrywise gives the displayed derivative on $[-R,R]$. Since $R$ is arbitrary, the formula holds for every real $t$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{E'(t)=AE(t)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \begin{aligned}
@@ -124,9 +150,14 @@ AE(t),
 \end{aligned}
 \]
 where $j=k-1$. Multiplication by the fixed matrix $A$ may be pulled through the convergent series because matrix multiplication is continuous and linear in the second factor.
+
 :::
 
-<1>5. The function
+:::
+
+::: pf-step
+
+The function
 \[
 v(t)=E(t)v_0
 \]
@@ -135,7 +166,9 @@ is differentiable and satisfies
 v'(t)=Av(t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by the fixed vector $v_0$ is a linear continuous map
 \[
 M_n(\mathbb R)\to\mathbb R^n.
@@ -152,14 +185,21 @@ AE(t)v_0
 =
 Av(t).
 \]
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 v(0)=v_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At $t=0$,
 \[
 E(0)
@@ -172,9 +212,14 @@ Therefore
 \[
 v(0)=Iv_0=v_0.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{v(t)=e^{At}v_0}
 \]
@@ -185,13 +230,19 @@ v'(t)=Av(t),
 v(0)=v_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 proves the differential equation and step <1>6 proves the initial condition.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The calculus inputs used are the Weierstrass $M$-test and the termwise-differentiation theorem for uniformly convergent derivative series, with their hypotheses verified in steps <1>1--<1>3.
+
 :::
+
 :::

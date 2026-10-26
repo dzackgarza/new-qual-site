@@ -19,14 +19,17 @@ audit:
 If M is a compact, closed, oriented manifold of dimension n, show that the torsion subgroups of $H ^ { i } ( M )$ and $H ^ { n - i + 1 } ( M )$ are isomorphic.
 :::
 
-::: {.solution}
 All (co)homology groups below have integral coefficients. Write
 \[
 T(A)=\{a\in A: ma=0\text{ for some }m>0\}
 \]
 for the torsion subgroup of a finitely generated abelian group $A$.
 
-<1>1. The universal coefficient theorem gives a short exact sequence
+::: pf
+
+::: pf-step
+
+The universal coefficient theorem gives a short exact sequence
 \[
 0\to\operatorname{Ext}^1(H_{i-1}(M),\mathbb Z)
 \longrightarrow H^i(M)
@@ -34,17 +37,26 @@ for the torsion subgroup of a finitely generated abelian group $A$.
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the universal coefficient theorem for cohomology applied to the singular chain complex of $M$.
+
 :::
 
-<1>2. The group $\operatorname{Hom}(H_i(M),\mathbb Z)$ is torsion-free, and
+:::
+
+::: pf-step
+
+The group $\operatorname{Hom}(H_i(M),\mathbb Z)$ is torsion-free, and
 \[
 \operatorname{Ext}^1(H_{i-1}(M),\mathbb Z)
 \cong T(H_{i-1}(M)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The manifold has finite CW type, so its homology groups are finitely generated. Write
 \[
 H_{i-1}(M)\cong\mathbb Z^r\oplus
@@ -58,54 +70,86 @@ Then
 \cong\mathbb Z/d_j,
 \]
 so the Ext group is isomorphic to the torsion summand. Also every subgroup of a free abelian group is torsion-free, and $\operatorname{Hom}$ of a finitely generated abelian group into $\mathbb Z$ is free abelian.
+
 :::
 
-<1>3. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 T(H^i(M))
 \cong T(H_{i-1}(M)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In the exact sequence of step <1>1, the left group is torsion by step <1>2 and the right group is torsion-free. Hence every torsion element of $H^i(M)$ lies in the image of the left injection, while every element of that image is torsion. Thus the injection identifies the left group with the full torsion subgroup of $H^i(M)$. Apply the second isomorphism of step <1>2.
+
 :::
 
-<1>4. Poincaré duality gives
+:::
+
+::: pf-step
+
+Poincaré duality gives
 \[
 H^{n-i+1}(M)\cong H_{i-1}(M).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a closed oriented $n$-manifold, cap product with the fundamental class is an isomorphism
 \[
 H^k(M;\mathbb Z)\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb Z).
 \]
 Set $k=n-i+1$. Then $n-k=i-1$.
+
 :::
 
-<1>5. Taking torsion subgroups in step <1>4 gives
+:::
+
+::: pf-step
+
+Taking torsion subgroups in step <1>4 gives
 \[
 T(H^{n-i+1}(M))
 \cong T(H_{i-1}(M)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An isomorphism of abelian groups carries torsion elements exactly to torsion elements, so it restricts to an isomorphism of torsion subgroups.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 T(H^i(M))\cong T(H^{n-i+1}(M)).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3 and <1>5 identify both groups with $T(H_{i-1}(M))$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required torsion duality.
+
 :::
+
 :::

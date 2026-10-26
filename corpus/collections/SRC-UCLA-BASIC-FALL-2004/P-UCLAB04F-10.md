@@ -45,7 +45,6 @@ Hint: raise both sides of
 to a sufficiently high power.
 :::
 
-::: {.solution}
 As printed, the definition is not meaningful for nonreal $\lambda$: if $V=\mathbb R^n$, then $T-\lambda I$ is not an endomorphism of $V$.
 Replace $V$ by $\mathbb C^n$, or equivalently complexify $T$.
 
@@ -54,13 +53,19 @@ Fix $\lambda\in\mathbb C$ and put
 A=T-\lambda I.
 \]
 
-<1>1. The chain
+::: pf
+
+::: pf-step
+
+The chain
 \[
 \ker A\subseteq\ker A^2\subseteq\cdots
 \]
 stabilizes by the $n$th term.
 
-::: {.proof}
+
+::: pf-proof
+
 The dimensions
 \[
 \dim\ker A,\ \dim\ker A^2,\ \ldots
@@ -85,14 +90,21 @@ Repeating this argument shows equality of all later kernels. Since a strictly in
 \[
 \ker A^n=\ker A^{n+1}=\ker A^{n+2}=\cdots.
 \]
+
 :::
 
-<1>2. For every $\lambda\in\mathbb C$,
+:::
+
+::: pf-step
+
+For every $\lambda\in\mathbb C$,
 \[
 \boxed{V(\lambda)=\ker((T-\lambda I)^n)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 V(\lambda)
@@ -104,9 +116,14 @@ Step <1>1 shows that every kernel in this union is contained in
 \ker A^n
 \]
 and every later kernel equals it. Hence the union is exactly $\ker A^n$.
+
 :::
 
-<1>3. Suppose $\lambda\ne\mu$ and
+:::
+
+::: pf-step
+
+Suppose $\lambda\ne\mu$ and
 \[
 v\in V(\lambda)\cap V(\mu).
 \]
@@ -117,16 +134,25 @@ Then there exist positive integers $r,s$ such that
 (T-\mu I)^sv=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of membership in the two generalized eigenspaces.
+
 :::
 
-<1>4. There exist polynomials $a(X),b(X)\in\mathbb C[X]$ such that
+:::
+
+::: pf-step
+
+There exist polynomials $a(X),b(X)\in\mathbb C[X]$ such that
 \[
 a(X)(X-\lambda)^r+b(X)(X-\mu)^s=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\lambda\ne\mu$, the polynomials
 \[
 (X-\lambda)^r
@@ -134,14 +160,21 @@ Because $\lambda\ne\mu$, the polynomials
 (X-\mu)^s
 \]
 have no common root and are therefore coprime. Bézout's identity in the principal ideal domain $\mathbb C[X]$ gives the stated polynomials.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 v=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate the Bézout identity from step <1>4 at the operator $T$ and apply it to $v$:
 \[
 \begin{aligned}
@@ -155,20 +188,31 @@ b(T)(T-\mu I)^sv\\
 \end{aligned}
 \]
 using step <1>3.
+
 :::
 
-<1>6. If $\lambda\ne\mu$, then
+:::
+
+::: pf-step
+
+If $\lambda\ne\mu$, then
 \[
 \boxed{V(\lambda)\cap V(\mu)=\{0\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every vector in the intersection is zero by step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), with the uniform choice $M=n$, and step <1>6 proves part (b) for the corrected complexified statement.
+
 :::
+
 :::

@@ -29,18 +29,23 @@ Hint: Let $b \in K$ . Let $a \in K$ denote the sum of $\chi ( \sigma ) ^ { - 1 }
 Use Dedekind’s “linear independence of characters” to show that there is some $b \in K$ such that the above a is nonzero.
 :::
 
-::: {.solution}
 For $b\in K$, define
 $$
 P_\chi(b)=\sum_{\sigma\in G}\chi(\sigma)^{-1}\sigma(b).
 $$
 
-<1>1. For every $b\in K$, one has
+::: pf
+
+::: pf-step
+
+For every $b\in K$, one has
 $$
 P_\chi(b)\in V^\chi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\tau\in G$. Then
 $$
 \begin{aligned}
@@ -63,15 +68,22 @@ $$
 \end{aligned}
 $$
 Thus $P_\chi(b)$ satisfies the defining condition for $V^\chi$.
+
 :::
 
-<1>2. The $F$-linear map
+:::
+
+::: pf-step
+
+The $F$-linear map
 $$
 P_\chi:K\longrightarrow K
 $$
 is not the zero map.
 
-::: {.proof}
+
+::: pf-proof
+
 The elements of $G$ are distinct field homomorphisms $K\to K$. Dedekind's linear independence of characters says that distinct field homomorphisms are linearly independent over the target field. Therefore a relation
 $$
 \sum_{\sigma\in G}c_\sigma\sigma=0
@@ -83,21 +95,35 @@ $$
 \chi(\sigma)^{-1}\in F^\times\subseteq K^\times,
 $$
 which is nonzero for every $\sigma$. Hence the displayed linear combination of automorphisms cannot be the zero map.
+
 :::
 
-<1>3. The space $V^\chi$ contains a nonzero element.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $V^\chi$ contains a nonzero element.
+
+
+::: pf-proof
+
 By step <1>2, there exists $b\in K$ with
 $$
 P_\chi(b)\neq0.
 $$
 By step <1>1, this element lies in $V^\chi$.
+
 :::
 
-<1>4. Any two nonzero elements of $V^\chi$ differ by multiplication by an element of $F^\times$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Any two nonzero elements of $V^\chi$ differ by multiplication by an element of $F^\times$.
+
+
+::: pf-proof
+
 Let $a,c\in V^\chi$ be nonzero. For every $\sigma\in G$,
 $$
 \sigma\left(\frac ca\right)
@@ -110,11 +136,18 @@ $$
 K^G=F.
 $$
 Therefore $c/a\in F^\times$.
+
 :::
 
-<1>5. The $F$-vector space $V^\chi$ is one-dimensional.
+:::
 
-::: {.proof}
+::: pf-step
+
+The $F$-vector space $V^\chi$ is one-dimensional.
+
+
+::: pf-proof
+
 By step <1>3, choose a nonzero $a\in V^\chi$. Step <1>4 shows that every nonzero $c\in V^\chi$ has the form
 $$
 c=\lambda a
@@ -127,11 +160,15 @@ so
 $$
 \boxed{\dim_F V^\chi=1}.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required statement.
+
 :::
+
 :::

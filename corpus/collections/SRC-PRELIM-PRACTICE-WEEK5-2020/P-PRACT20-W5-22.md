@@ -20,27 +20,39 @@ audit:
 Put $(1 + i)^{10}$ in the form $a + bi$ for $a, b \in \RR$.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 (1+i)^2=2i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expanding gives
 \[
 (1+i)^2
 =1+2i+i^2
 =2i.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (1+i)^{10}=32i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 (1+i)^{10}
@@ -53,20 +65,31 @@ Since
 i^5=i,
 \]
 the value is $32i$.
+
 :::
 
-<1>3. In the requested form,
+:::
+
+::: pf-step
+
+In the requested form,
 \[
 \boxed{(1+i)^{10}=0+32i}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives real part $0$ and imaginary coefficient $32$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the requested expression.
+
 :::
+
 :::

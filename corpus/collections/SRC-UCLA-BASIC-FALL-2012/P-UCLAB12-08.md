@@ -17,7 +17,6 @@ Use H to define an Hermitian form [,] by the formula: for x, y in $\mathbb { C }
 Let W be a complex subspace of $\mathbb { C } ^ { n }$ such that $[ { w _ { 1 } } , { w _ { 2 } } ] = 0$ for all $w _ { 1 }$ and $w _ { 2 }$ in $W$ Show that dimW $\leq n / 2$ Give also for each n an example of an H for which dim $W = n / 2$ if n is even, or dim $W = ( n - 1 ) / 2$ if n is odd.
 :::
 
-::: {.solution}
 Let
 \[
 [x,y]=\overline{x}^{\,t}Hy
@@ -29,9 +28,15 @@ U^\perp
 \{v\in\mathbb C^n:[u,v]=0\text{ for every }u\in U\}.
 \]
 
-<1>1. The Hermitian form $[\ ,\ ]$ is nondegenerate.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The Hermitian form $[\ ,\ ]$ is nondegenerate.
+
+
+::: pf-proof
+
 Suppose
 \[
 [x,y]=0
@@ -47,14 +52,21 @@ Hy=0.
 \]
 Since $\det H\ne0$, the matrix $H$ is invertible, hence $y=0$.
 Thus the form is nondegenerate.
+
 :::
 
-<1>2. For every subspace $U\subseteq\mathbb C^n$,
+:::
+
+::: pf-step
+
+For every subspace $U\subseteq\mathbb C^n$,
 \[
 \dim U^\perp=n-\dim U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \Phi:\mathbb C^n\to U^*
@@ -96,27 +108,41 @@ n
 =
 \dim U^\perp+\dim U.
 \]
+
 :::
 
-<1>3. The hypothesis on $W$ implies
+:::
+
+::: pf-step
+
+The hypothesis on $W$ implies
 \[
 W\subseteq W^\perp.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $w\in W$, then for every $u\in W$ the hypothesis gives
 \[
 [u,w]=0.
 \]
 Thus $w\in W^\perp$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\dim W\le\frac n2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \dim W\le\dim W^\perp.
@@ -133,9 +159,14 @@ so
 \[
 2\dim W\le n.
 \]
+
 :::
 
-<1>5. Suppose $n=2m$. Let
+:::
+
+::: pf-step
+
+Suppose $n=2m$. Let
 \[
 H=
 \begin{pmatrix}
@@ -150,7 +181,9 @@ Then $\det H\ne0$, the matrix $H$ is Hermitian, and
 \dim W=m=\frac n2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $H$ is real symmetric, hence Hermitian.
 Also
 \[
@@ -176,9 +209,14 @@ and therefore
 =0.
 \]
 Thus $W$ is totally isotropic and has the maximal permitted dimension $m$.
+
 :::
 
-<1>6. Suppose $n=2m+1$. Let
+:::
+
+::: pf-step
+
+Suppose $n=2m+1$. Let
 \[
 H=
 \begin{pmatrix}
@@ -194,16 +232,22 @@ Then $\det H\ne0$, $H$ is Hermitian, and
 \dim W=m=\frac{n-1}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again $H$ is real symmetric.
 Its square is the identity, so it is invertible.
 The same computation as in step <1>5 shows that the form vanishes identically on $W\times W$.
 The dimension of $W$ is $m=(n-1)/2$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the dimension bound, and steps <1>5--<1>6 give examples attaining the largest possible dimension in even and odd dimensions.
+
 :::
+
 :::
