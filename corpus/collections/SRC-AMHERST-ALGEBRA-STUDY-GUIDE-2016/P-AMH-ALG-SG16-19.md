@@ -26,9 +26,13 @@ Prove that $\operatorname{Ann}(S)$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-<1>1. The set $\operatorname{Ann}(S)$ is nonempty.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1-1}
+The set $\operatorname{Ann}(S)$ is nonempty.
+
+::: pf-proof
 For every $s\in S$,
 $$
 0\cdot s=0.
@@ -36,9 +40,12 @@ $$
 Hence $0\in\operatorname{Ann}(S)$.
 :::
 
-<1>2. The set $\operatorname{Ann}(S)$ is closed under subtraction.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+The set $\operatorname{Ann}(S)$ is closed under subtraction.
+
+::: pf-proof
 Let $a,b\in\operatorname{Ann}(S)$.  For every $s\in S$,
 $$
 (a-b)s=as-bs=0-0=0.
@@ -46,10 +53,13 @@ $$
 Therefore $a-b\in\operatorname{Ann}(S)$.
 :::
 
-<1>3. The set $\operatorname{Ann}(S)$ absorbs multiplication by arbitrary
+:::
+
+::: {.pf-step #s1-3}
+The set $\operatorname{Ann}(S)$ absorbs multiplication by arbitrary
 elements of $R$.
 
-::: {.proof}
+::: pf-proof
 Let $r\in R$ and $x\in\operatorname{Ann}(S)$.  For every $s\in S$,
 $$
 (rx)s=r(xs)=r\cdot0=0.
@@ -61,17 +71,19 @@ $$
 as well.
 :::
 
-<1>4. Therefore $\operatorname{Ann}(S)$ is an ideal of $R$.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 show, by the subtraction criterion, that
-$\operatorname{Ann}(S)$ is an additive subgroup of $R$.  Step <1>3 gives the
+::: pf-step
+Therefore $\operatorname{Ann}(S)$ is an ideal of $R$.
+
+::: pf-proof
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show, by the subtraction criterion, that
+$\operatorname{Ann}(S)$ is an additive subgroup of $R$.  Step [](#s1-3){.pf-ref} gives the
 ideal absorption property.  Hence $\operatorname{Ann}(S)$ is an ideal.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+:::
+
 :::
