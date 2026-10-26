@@ -21,6 +21,8 @@ Show that for $p>0$ and $q>0$,
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ Step [](#s1-1){.pf-ref} evaluates the first integral as \(\pi/2\), and step [](#
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required identity.
+
+:::
 
 :::
 
