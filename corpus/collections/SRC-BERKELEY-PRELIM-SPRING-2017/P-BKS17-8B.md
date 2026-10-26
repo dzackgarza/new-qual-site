@@ -31,6 +31,8 @@ audit:
 Find a product of cyclic groups of prime power order isomorphic to $(\ZZ/1000000\ZZ)^*$ (the group of units of the ring of integers mod $1000000$).
 :::
 
+::: {.solution}
+
 Write
 $$
 1000000=10^6=2^6 5^6.
@@ -192,6 +194,8 @@ Combine the Chinese-remainder decomposition in step [](#s1-1){.pf-ref} with step
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested decomposition.
+
+:::
 
 :::
 
