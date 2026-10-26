@@ -37,6 +37,8 @@ $$
 where $C$ is the circle centered at the origin with radius 2, oriented counterclockwise.
 :::
 
+::: {.solution}
+
 Put
 $$
 P(z)\coloneqq z^6+z+1.
@@ -93,6 +95,8 @@ Substituting $P'(z)=6z^5+1$ gives the integral in the problem.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
