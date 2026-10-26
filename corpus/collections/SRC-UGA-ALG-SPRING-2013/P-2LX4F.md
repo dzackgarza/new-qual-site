@@ -27,6 +27,8 @@ a. Show that if $r$ is a root of $f$ in $K$, then $r^9 = 1$ but $r^3\neq 1$.
 b. Find $\gal(K/F)$ and express each intermediate field between $F$ and $K$ as $F(\beta)$ for an appropriate $\beta \in K$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -81,6 +83,8 @@ Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a); steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (b).
+
+:::
 
 :::
 
