@@ -28,6 +28,8 @@ For each statement, give a proof or counterexample.
 (d) Every complex symmetric matrix is diagonalizable over $\CC$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -146,6 +148,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish the four assertion
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested classification with proofs and counterexamples.
+
+:::
 
 :::
 
