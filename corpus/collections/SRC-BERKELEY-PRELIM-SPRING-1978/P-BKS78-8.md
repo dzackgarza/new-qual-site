@@ -36,13 +36,19 @@ $$
 \right\}.
 $$
 
-<1>1. The metric space $\mathcal X$, with the sup norm, is complete.
+::: pf
 
-::: {.proof}
+::: {.pf-step #complete-space}
+The metric space $\mathcal X$, with the sup norm, is complete.
+
+::: pf-proof
 The space $C([0,b])$ with the sup norm is Banach. The set $\mathcal X$ is the closed ball of radius $1/2$ centered at the constant function $1$, hence is a closed subset of a complete metric space and is therefore complete.
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #self-map}
+Define
 $$
 (T\varphi)(t)
 \coloneqq
@@ -54,7 +60,7 @@ $$
 T(\mathcal X)\subseteq\mathcal X.
 $$
 
-::: {.proof}
+::: pf-proof
 If $\varphi\in\mathcal X$, then
 $$
 \frac12\leq\varphi(s)\leq\frac32
@@ -85,9 +91,12 @@ $$
 so $T\varphi\in\mathcal X$.
 :::
 
-<1>3. The map $T:\mathcal X\to\mathcal X$ is a contraction with contraction constant $3/5$.
+:::
 
-::: {.proof}
+::: {.pf-step #contraction}
+The map $T:\mathcal X\to\mathcal X$ is a contraction with contraction constant $3/5$.
+
+::: pf-proof
 If $\varphi,\psi\in\mathcal X$, then
 $$
 |\varphi(s)|,|\psi(s)|\leq\frac32.
@@ -112,16 +121,22 @@ $$
 Taking the supremum over $t\in[0,b]$ gives the claim.
 :::
 
-<1>4. There is a unique $x\in\mathcal X$ satisfying
+:::
+
+::: {.pf-step #fixed-point}
+There is a unique $x\in\mathcal X$ satisfying
 $$
 x=Tx.
 $$
 
-::: {.proof}
-By steps <1>1--<1>3, $T$ is a contraction of the complete metric space $\mathcal X$ into itself. The Banach fixed-point theorem therefore gives a unique fixed point.
+::: pf-proof
+By [](#complete-space){.pf-ref}, [](#self-map){.pf-ref}, and [](#contraction){.pf-ref}, $T$ is a contraction of the complete metric space $\mathcal X$ into itself. The Banach fixed-point theorem therefore gives a unique fixed point.
 :::
 
-<1>5. The fixed point from step <1>4 is a solution of
+:::
+
+::: pf-step
+The fixed point from [](#fixed-point){.pf-ref} is a solution of
 $$
 x'=x^2+t^2,
 \qquad
@@ -132,7 +147,7 @@ $$
 \boxed{[0,1/5]}.
 $$
 
-::: {.proof}
+::: pf-proof
 The fixed-point identity is
 $$
 x(t)
@@ -151,9 +166,12 @@ $$
 answers part 2.
 :::
 
-<1>6. Any solution on an interval $[0,c]$ is positive and nondecreasing there.
+:::
 
-::: {.proof}
+::: {.pf-step #positive-solution}
+Any solution on an interval $[0,c]$ is positive and nondecreasing there.
+
+::: pf-proof
 The differential equation gives
 $$
 x'(t)=x(t)^2+t^2\geq0.
@@ -165,10 +183,13 @@ $$
 throughout its interval of existence.
 :::
 
-<1>7. No solution exists on $[0,1]$.
+:::
 
-::: {.proof}
-Suppose a solution existed on $[0,1]$. By step <1>6,
+::: {.pf-step #no-solution}
+No solution exists on $[0,1]$.
+
+::: pf-proof
+Suppose a solution existed on $[0,1]$. By [](#positive-solution){.pf-ref},
 $$
 x(t)\geq1,
 $$
@@ -198,18 +219,20 @@ $$
 contradicting the positivity of $u(1)$.
 :::
 
-<1>8. Thus an explicit value for part 3 is
+:::
+
+::: pf-step
+Thus an explicit value for part 3 is
 $$
 \boxed{c=1}.
 $$
 
-::: {.proof}
-Step <1>7 proves that there is no solution on $[0,1]$.
+::: pf-proof
+[](#no-solution){.pf-ref} proves that there is no solution on $[0,1]$.
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves parts 1--2, and step <1>8 proves part 3.
 :::
+
+:::
+
 :::
