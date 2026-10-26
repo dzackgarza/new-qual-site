@@ -40,6 +40,8 @@ $$
 converges to a real number that is not in $S$.
 :::
 
+::: {.solution}
+
 Take $\mathbb N=\{1,2,\ldots\}$. If $S=\varnothing$, the choice $g_n(m)=2m$ already suffices, so assume $S\neq\varnothing$. Choose a sequence
 $$
 s_1,s_2,\ldots
@@ -229,6 +231,8 @@ Step [](#s1-3){.pf-ref} shows that $A$ converges to a real number. Since the seq
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is exactly the desired conclusion.
+
+:::
 
 :::
 
