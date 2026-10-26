@@ -35,6 +35,8 @@ Suppose $f$ is a function from the reals to the reals satisfying $2f(x) = f(2x)$
 (b) Give an example of such a function $f$ that is continuous but not linear.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -131,6 +133,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} supplies the example required in part (b).
+
+:::
 
 :::
 
