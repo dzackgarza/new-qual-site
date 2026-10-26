@@ -24,6 +24,8 @@ $$
 converge?
 :::
 
+::: {.solution}
+
 For $x\geq3$, set
 $$
 f(x)\coloneqq x^a(\log x)^b.
@@ -200,6 +202,8 @@ Step [](#s1-4){.pf-ref} gives convergence for $a<-1$, step [](#s1-5){.pf-ref} gi
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the complete classification.
+
+:::
 
 :::
 
