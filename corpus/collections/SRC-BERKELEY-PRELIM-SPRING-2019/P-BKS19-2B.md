@@ -39,6 +39,8 @@ $$
 Show that $F(t)^2+G(t)$ is constant and deduce the value of $F(\infty)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -172,6 +174,8 @@ Since $F(\infty)>0$, the positive square root gives the displayed value.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove constancy, and step [](#s1-5){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
