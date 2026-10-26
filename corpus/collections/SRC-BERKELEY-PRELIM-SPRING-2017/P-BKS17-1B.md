@@ -37,6 +37,8 @@ $$
 for all $x \in \RR$ and all $h \neq 0$. (Hint: multiply both sides by $2h$.)
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -145,6 +147,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} shows that every solution is quadratic, and step [](#s1-5){.pf-ref} shows that every quadratic polynomial has the required property.
+
+:::
 
 :::
 
