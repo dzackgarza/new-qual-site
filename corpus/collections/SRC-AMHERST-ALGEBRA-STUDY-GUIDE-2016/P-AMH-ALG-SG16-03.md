@@ -25,8 +25,13 @@ Prove that $K$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
-<1>1. The identity lies in $K$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1-1}
+The identity lies in $K$.
+
+::: pf-proof
 Since
 $$
 He=H=eH,
@@ -34,8 +39,12 @@ $$
 one has $e\in K$.
 :::
 
-<1>2. The set $K$ is closed under products.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-2}
+The set $K$ is closed under products.
+
+::: pf-proof
 Let $a,b\in K$. Then
 $$
 Ha=aH
@@ -54,8 +63,12 @@ $$
 Hence $ab\in K$.
 :::
 
-<1>3. The set $K$ is closed under inverses.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-3}
+The set $K$ is closed under inverses.
+
+::: pf-proof
 Let $a\in K$, so
 $$
 Ha=aH.
@@ -67,16 +80,20 @@ $$
 Thus $a^{-1}\in K$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{K\le G}.
 $$
-::: {.proof}
-By step <1>1, $K$ is nonempty; step <1>2 gives closure under products, and step <1>3 gives closure under inverses. Hence $K$ is a subgroup of $G$.
+
+::: pf-proof
+By step [](#s1-1){.pf-ref}, $K$ is nonempty; step [](#s1-2){.pf-ref} gives closure under products, and step [](#s1-3){.pf-ref} gives closure under inverses. Hence $K$ is a subgroup of $G$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+:::
+
 :::
