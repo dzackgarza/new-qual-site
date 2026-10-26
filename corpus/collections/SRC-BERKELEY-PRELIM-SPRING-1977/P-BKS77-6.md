@@ -20,13 +20,16 @@ Let $G$ be the set of real $2\times2$ matrices of nonzero determinant, with ordi
 :::
 
 ::: {.solution}
-<1>1. The set
+::: pf
+
+::: pf-step
+The set
 $$
 G=GL_2(\mathbb R)
 $$
 is a group under matrix multiplication.
 
-::: {.proof}
+::: pf-proof
 Matrix multiplication is associative. The identity matrix $I$ has determinant $1$, so $I\in G$. If $A,B\in G$, then
 $$
 \det(AB)=\det(A)\det(B)\neq0,
@@ -38,14 +41,17 @@ $$
 so $A^{-1}\in G$.
 :::
 
-<1>2. The center of $G$ is
+:::
+
+::: pf-step
+The center of $G$ is
 $$
 \boxed{
 Z(G)=\{\lambda I:\lambda\in\mathbb R^\times\}
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Every nonzero scalar matrix commutes with every matrix, so the displayed set is contained in $Z(G)$.
 
 Conversely, let
@@ -82,14 +88,17 @@ $$
 the equality $AS=SA$ gives $a=d$. Hence $A=aI$, and because $A\in G$, one has $a\neq0$.
 :::
 
-<1>3. The set
+:::
+
+::: pf-step
+The set
 $$
 O\coloneqq
 \{Q\in G:QQ^T=I\}
 $$
 is a subgroup of $G$.
 
-::: {.proof}
+::: pf-proof
 The identity belongs to $O$. If $Q,R\in O$, then
 $$
 (QR)(QR)^T
@@ -109,9 +118,12 @@ $$
 so $Q^{-1}\in O$. Thus $O\leq G$.
 :::
 
-<1>4. The subgroup $O$ is not normal in $G$.
+:::
 
-::: {.proof}
+::: pf-step
+The subgroup $O$ is not normal in $G$.
+
+::: pf-proof
 Take
 $$
 A=
@@ -144,14 +156,17 @@ $$
 and therefore $O$ is not normal in $G$.
 :::
 
-<1>5. The determinant gives a nontrivial surjective homomorphism
+:::
+
+::: pf-step
+The determinant gives a nontrivial surjective homomorphism
 $$
 \boxed{
 \det:G\longrightarrow\mathbb R^\times
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The group $\mathbb R^\times$ is abelian under multiplication, and
 $$
 \det(AB)=\det(A)\det(B),
@@ -168,9 +183,8 @@ $$
 It is nontrivial, for example because $\det(\operatorname{diag}(2,1))=2\neq1$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 answer the four parts.
 :::
+
+:::
+
 :::
