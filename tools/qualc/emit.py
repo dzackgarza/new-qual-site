@@ -2122,7 +2122,11 @@ def publication_section_page(
         pf.Para(*_inlines(section.lede, inline_cache)),
     ]
     counts: Counter[str] = Counter()
+    seen: set[str] = set()
     for item in section.items:
+        if item.ref in seen:
+            continue
+        seen.add(item.ref)
         blocks.append(_transclude(_manifest_card(con, item.ref), counts))
     if section.topics:
         blocks.append(_problem_browse_link_block(manifest.area, section.topics))

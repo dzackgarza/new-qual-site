@@ -248,6 +248,70 @@ def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None
     assert "qual-section" in blocks[0].attrs["class"].split()
 
 
+def test_a_section_naming_a_card_twice_renders_it_once(tmp_path: Path) -> None:
+    """A card carries one anchor on its page, however often a section names it.
+
+    A guide section lists a card twice when two sessions both worked it, but
+    the page transcludes it under its own id, so a second copy repeats every
+    anchor on that page -- including a labelled Lamport step. The filter
+    rejects the duplicate label outright, and the build died after `check` had
+    read each ref on its own and passed.
+    """
+    proof = """
+
+::: solution
+::: pf
+
+::: {.pf-step #s1}
+The step the proof is built on.
+
+::: pf-proof
+Stated before it is used.
+:::
+
+:::
+
+::: pf-step
+Its successor, cited as [](#s1){.pf-ref}.
+
+::: pf-proof
+By step [](#s1){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Done.
+:::
+
+:::
+:::
+"""
+    card = PROBLEM.format(
+        id="PRB-DUP",
+        title="A compact Hausdorff space is normal",
+        area="topology",
+        topic="compactness",
+        body="Let $X$ be compact Hausdorff. Show $X$ is normal.",
+    ) + proof
+    work = fixture_repo(tmp_path, {"PRB-DUP.md": card})
+
+    guide = reference_manifest("first", ref="PRB-DUP")
+    sections = guide["sections"]
+    assert isinstance(sections, list)
+    first = sections[0]
+    assert isinstance(first, dict)
+    first["items"] = [{"ref": "PRB-DUP"}, {"ref": "PRB-DUP"}]
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(guide, sort_keys=False))
+
+    assert diagnostic_codes(work) == [], "each ref is valid read on its own"
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html")
+    assert len(page.root.find_all("div", id="PRB-DUP")) == 1
+
+
 def test_a_section_topic_does_not_duplicate_its_explicit_card_appearance(guide_site: Path) -> None:
     """Topic metadata discovers problems but only an explicit ref is a guide appearance.
 
