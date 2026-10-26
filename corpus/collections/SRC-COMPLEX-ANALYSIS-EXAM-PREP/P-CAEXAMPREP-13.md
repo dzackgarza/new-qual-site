@@ -23,6 +23,8 @@ T=10\quad(-1<x<0).
 \]
 :::
 
+::: {.solution}
+
 For \(z=re^{i\theta}\in A\), take
 \[
 0<r<1,
@@ -118,6 +120,8 @@ Step [](#s1-1){.pf-ref} gives a steady-state temperature field, step [](#s1-2){.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required temperature field.
+
+:::
 
 :::
 
