@@ -34,6 +34,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Set
 $$
 h(z)\coloneqq\frac{1}{z^4+1}.
@@ -178,6 +180,8 @@ Apply step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
