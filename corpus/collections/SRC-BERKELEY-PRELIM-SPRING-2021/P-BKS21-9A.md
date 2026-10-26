@@ -23,6 +23,8 @@ G\ne\bigcup_{g\in G}gHg^{-1}.
 $$
 :::
 
+::: {.solution}
+
 Let
 $$
 N\coloneqq N_G(H)
@@ -148,6 +150,8 @@ If the union were all of $G$, its cardinality would be $|G|$, contradicting step
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
