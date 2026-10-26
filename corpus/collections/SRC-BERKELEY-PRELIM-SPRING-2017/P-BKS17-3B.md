@@ -37,6 +37,8 @@ $$
 Suppose that $E_p(f) = 0$ whenever $f$ is a polynomial of degree $\leq q$. Show that $q \leq 2p + 1$ and if $q \geq 2p$ then $w_j > 0$ for all $j$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ The denominator $F_j(x_j)$ is positive by step [](#s1-2){.pf-ref}. Also $F_j$ is
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the degree bound, and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove positivity of every weight when $q\geq2p$.
+
+:::
 
 :::
 
