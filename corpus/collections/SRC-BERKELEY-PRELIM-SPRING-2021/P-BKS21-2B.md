@@ -20,6 +20,8 @@ audit:
 Let $X$ be compact metric, $Y$ metric, and $p:X\times Y\to Y$ the projection. Show that if $Z\subseteq X\times Y$ is closed, then $p(Z)$ is closed in $Y$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} show that every convergent s
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
