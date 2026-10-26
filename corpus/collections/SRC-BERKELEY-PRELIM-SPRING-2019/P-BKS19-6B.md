@@ -43,6 +43,8 @@ $$
 where $(a_1,\ldots,a_n)$ runs over all nonzero elements of $\ZZ_2^n$.
 :::
 
+::: {.solution}
+
 Let
 $$
 D(x_1,\ldots,x_n)
@@ -205,6 +207,8 @@ Since $D$ and $P$ are nonzero, $Q$ has degree $0$, hence is a nonzero constant. 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required identity.
+
+:::
 
 :::
 
