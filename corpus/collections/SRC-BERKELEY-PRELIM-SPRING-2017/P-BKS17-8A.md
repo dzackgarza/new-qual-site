@@ -37,6 +37,8 @@ $$
 is a polynomial of degree $p + 1$ in the variable $n$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ has degree at most $p$. The remaining term $(n+1)^{p+1}$ has degree $p+1$ and le
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the base case, and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} establish the induction step. Hence the assertion holds for every integer $p\geq0$.
+
+:::
 
 :::
 
