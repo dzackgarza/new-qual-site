@@ -36,6 +36,8 @@ for all $x\in\RR^n$, where $\norm{\cdot}$ denotes the Euclidean norm.
 Prove or give a counterexample.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (1), and step [](#s1-2){.pf-ref} supplies the counterexample required in part (2).
+
+:::
 
 :::
 
