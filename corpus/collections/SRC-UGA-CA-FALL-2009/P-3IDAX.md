@@ -19,6 +19,8 @@ review: draft
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 :::
 
+::: {.solution}
+
 Let
 $$
 p(z)=a_nz^n+a_{n-1}z^{n-1}+\cdots+a_0,
@@ -160,6 +162,8 @@ Algebra.
 
 Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove the Fundamental Theorem of Algebra by complex
 analysis.
+
+:::
 
 :::
 
