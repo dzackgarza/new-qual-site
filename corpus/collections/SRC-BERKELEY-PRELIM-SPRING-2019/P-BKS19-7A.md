@@ -32,6 +32,8 @@ Let $A$ be a complex $n\times n$ matrix satisfying $A^{37}=I$.
 Show that $A$ is diagonalizable.
 :::
 
+::: {.solution}
+
 Let $m_A(x)$ denote the minimal polynomial of $A$.
 
 ::: pf
@@ -90,6 +92,8 @@ By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the minimal polynomial $
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
