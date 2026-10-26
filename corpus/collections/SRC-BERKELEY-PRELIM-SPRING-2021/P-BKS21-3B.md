@@ -24,6 +24,8 @@ $$
 exists.
 :::
 
+::: {.solution}
+
 Define
 $$
 a_n\coloneqq
@@ -138,6 +140,8 @@ The expression inside the limit is exactly $a_n$, whose convergence is step [](#
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
