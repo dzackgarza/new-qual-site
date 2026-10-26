@@ -35,6 +35,8 @@ Let $S_9$ denote the group of permutations of $9$ objects.
 (b) Prove that no element of $S_9$ has order $18$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -85,6 +87,8 @@ Since $9$ divides the least common multiple, at least one $n_i$ must be divisibl
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} proves part (b).
+
+:::
 
 :::
 
