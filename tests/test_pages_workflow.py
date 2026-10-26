@@ -11,8 +11,17 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def test_pages_workflow_uses_the_direct_build_and_immutable_actions() -> None:
-    workflow = yaml.safe_load((ROOT / ".github/workflows/pages.yml").read_text())
+    workflow = yaml.safe_load((ROOT / ".github/workflows/development.yml").read_text())
     jobs = workflow["jobs"]
+    assert jobs["qc-ci"]["uses"] == "dzackgarza/ai-review-ci/.github/workflows/_qc.yml@main"
+    assert jobs["qc-ci"]["with"] == {
+        "tier": "test-ci",
+        "enforcement": "correctness",
+        "profile": "python",
+        "infra_ref": "main",
+        "setup_recipe": "_ci-setup",
+    }
+    assert jobs["build"]["needs"] == "qc-ci"
     steps = [*jobs["build"]["steps"], *jobs["deploy"]["steps"]]
     external_actions = [step["uses"] for step in steps if "uses" in step]
     commands = [step["run"] for step in steps if "run" in step]
