@@ -21,12 +21,16 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. There exist integers $a,b\in I$ and $m,n\in\ZZ$ such that
+
+::: pf
+
+::: {.pf-step #s1-1}
+There exist integers $a,b\in I$ and $m,n\in\ZZ$ such that
 $$
 ma+nb=1.
 $$
 
-::: {.proof}
+::: pf-proof
 By hypothesis, $I$ contains two relatively prime integers $a$ and $b$, so
 $\gcd(a,b)=1$.  Bézout's identity therefore gives integers $m,n\in\ZZ$ with
 $$
@@ -34,9 +38,12 @@ ma+nb=\gcd(a,b)=1.
 $$
 :::
 
-<1>2. One has $1\in I$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+One has $1\in I$.
+
+::: pf-proof
 Because $I$ is an ideal and $a,b\in I$, multiplication by arbitrary integers
 gives
 $$
@@ -44,16 +51,19 @@ ma\in I
 \qquad\text{and}\qquad
 nb\in I.
 $$
-Ideals are closed under addition, so step <1>1 gives
+Ideals are closed under addition, so step [](#s1-1){.pf-ref} gives
 $$
 1=ma+nb\in I.
 $$
 :::
 
-<1>3. Every integer belongs to $I$.
+:::
 
-::: {.proof}
-Let $x\in\ZZ$.  By step <1>2, $1\in I$, and the ideal absorption property
+::: {.pf-step #s1-3}
+Every integer belongs to $I$.
+
+::: pf-proof
+Let $x\in\ZZ$.  By step [](#s1-2){.pf-ref}, $1\in I$, and the ideal absorption property
 gives
 $$
 x=x\cdot1\in I.
@@ -61,18 +71,20 @@ $$
 Thus $\ZZ\subseteq I$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{I=\ZZ}.
 $$
 
-::: {.proof}
-By definition $I\subseteq\ZZ$, while step <1>3 gives the reverse inclusion.
+::: pf-proof
+By definition $I\subseteq\ZZ$, while step [](#s1-3){.pf-ref} gives the reverse inclusion.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+:::
+
 :::
