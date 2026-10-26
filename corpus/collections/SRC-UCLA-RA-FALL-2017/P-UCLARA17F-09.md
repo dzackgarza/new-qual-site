@@ -44,7 +44,7 @@ G(z,w)
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 
 The function $G$ is well-defined on $\mathbb C\times\mathbb C$, and for each fixed $w\in\mathbb C$ the map $z\mapsto G(z,w)$ is entire.
 
@@ -62,7 +62,7 @@ For fixed $w$, both the numerator and denominator in the definition of $G(z,w)$ 
 
 :::
 
-::: pf-step
+::: {.pf-step #s2}
 
 For all $z,w\in\mathbb C$,
 \[
@@ -72,7 +72,7 @@ G(z,w)=w.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s2-1}
 
 For all $z\in\mathbb C$,
 \[
@@ -100,7 +100,7 @@ G(0,w)
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-2}
 
 If $w\notin\{0,1\}$, then the entire function $z\mapsto G(z,w)$ omits both $0$ and $1$.
 
@@ -121,14 +121,14 @@ hence $F(z,w)=F(z,1)$, and injectivity gives $w=1$, again a contradiction.
 
 :::
 
-::: pf-step
+::: {.pf-step #s2-3}
 
 If $w\notin\{0,1\}$, then $G(z,w)=w$ for every $z\in\mathbb C$.
 
 
 ::: pf-proof
 
-By steps <1>1 and <2>2, the map $z\mapsto G(z,w)$ is an entire function omitting the two distinct values $0$ and $1$. Little Picard's theorem therefore implies that it is constant. Its value at $z=0$ is $w$ by step <2>1, so the constant is $w$.
+By steps [](#s1){.pf-ref} and [](#s2-2){.pf-ref}, the map $z\mapsto G(z,w)$ is an entire function omitting the two distinct values $0$ and $1$. Little Picard's theorem therefore implies that it is constant. Its value at $z=0$ is $w$ by step [](#s2-1){.pf-ref}, so the constant is $w$.
 
 :::
 
@@ -136,7 +136,7 @@ By steps <1>1 and <2>2, the map $z\mapsto G(z,w)$ is an entire function omitting
 
 ::: pf-qed
 
-Step <2>1 proves the claim for $w=0,1$, and step <2>3 proves it for $w\notin\{0,1\}$.
+Step [](#s2-1){.pf-ref} proves the claim for $w=0,1$, and step [](#s2-3){.pf-ref} proves it for $w\notin\{0,1\}$.
 
 :::
 
@@ -144,7 +144,7 @@ Step <2>1 proves the claim for $w=0,1$, and step <2>3 proves it for $w\notin\{0,
 
 :::
 
-::: pf-step
+::: {.pf-step #s3}
 
 Set
 \[
@@ -169,7 +169,7 @@ and
 
 ::: pf-proof
 
-Entirety follows from the hypothesis that $z\mapsto F(z,w)$ is entire for each fixed $w$. The normalization $F(0,w)=w$ gives $a(0)=1$ and $b(0)=0$. Injectivity of $F(z,\mathord\cdot)$ gives $F(z,1)\ne F(z,0)$, hence $a(z)\ne0$. Finally, step <1>2 and the definition of $G$ give
+Entirety follows from the hypothesis that $z\mapsto F(z,w)$ is entire for each fixed $w$. The normalization $F(0,w)=w$ gives $a(0)=1$ and $b(0)=0$. Injectivity of $F(z,\mathord\cdot)$ gives $F(z,1)\ne F(z,0)$, hence $a(z)\ne0$. Finally, step [](#s2){.pf-ref} and the definition of $G$ give
 \[
 F(z,w)-F(z,0)
 =
@@ -183,7 +183,7 @@ which is exactly the displayed affine formula.
 
 ::: pf-qed
 
-Step <1>3 gives all asserted properties of $a$, $b$, and $F$.
+Step [](#s3){.pf-ref} gives all asserted properties of $a$, $b$, and $F$.
 
 :::
 
