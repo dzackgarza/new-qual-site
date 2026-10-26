@@ -21,6 +21,10 @@ audit:
   by: chatgpt
   date: 2026-10-02
   note: Verified a one-dimensional counterexample to the printed sign and proved the corrected first-order inequality in every coordinate.
+- event: solution-written
+  by: deepseek-v4.1-flash-free
+  date: 2026-10-27
+  note: Added the solution section proving the corrected nonpositive sign; the earlier entry recorded the argument that the solution now states in full.
 ---
 
 ::: {.problem}
@@ -35,7 +39,64 @@ has nonnegative entries.
 
 ::: {.remark}
 Erratum: the conclusion is false as printed in the source; the correct sign is nonpositive.
-For $\varphi(x)\coloneqq\norm{y-Ax}^2$ one has $\partial\varphi/\partial x_i=-2v_i$.
-Since $x+te_i$ is a nonnegative vector for every $t>0$, minimality of $x$ gives $\partial\varphi/\partial x_i\ge0$, that is, $v_i\le0$ for every $i$; if $x_i>0$, then $x+te_i$ is also admissible for small $t<0$, so $v_i=0$.
 For $m=n=1$, $A=(1)$ and $y=-1$, the minimizer is $x=0$ and $v=-1<0$.
+The solution proves the corrected first-order condition.
 :::
+
+::: {.solution}
+The printed conclusion is false; the remark records the counterexample. We prove the corrected statement: \(v_i\le0\) for every \(i\), and \(v_i=0\) whenever \(x_i>0\). Since \(s\mapsto s^2\) is strictly increasing on \([0,\infty)\), the minimizer \(x\) also minimizes the squared distance \(\norm{y-Az}^2\) over the nonnegative vectors.
+
+::: pf
+
+::: {.pf-step #setup}
+Let \(\varphi(z)=\norm{y-Az}^2\), and let \(a_i=Ae_i\) be the \(i\)-th column of \(A\). For every real \(t\),
+\[
+\varphi(x+te_i)=\varphi(x)-2t v_i+t^2\norm{a_i}^2.
+\]
+
+::: pf-proof
+Since \(y-A(x+te_i)=y-Ax-ta_i\),
+\[
+\norm{y-Ax-ta_i}^2
+=\norm{y-Ax}^2-2t\langle a_i,y-Ax\rangle+t^2\norm{a_i}^2
+=\varphi(x)-2t v_i+t^2\norm{a_i}^2.
+\]
+:::
+
+:::
+
+::: {.pf-step #one-sided}
+For every \(i\), \(v_i\le0\).
+
+::: pf-proof
+For \(t>0\), the vector \(x+te_i\) has nonnegative entries, so minimality of \(x\) gives \(\varphi(x+te_i)\ge\varphi(x)\). By step [](#setup){.pf-ref},
+\[
+0\le\frac{\varphi(x+te_i)-\varphi(x)}{t}=-2v_i+t\norm{a_i}^2.
+\]
+Letting \(t\to0^+\) gives \(-2v_i\ge0\), hence \(v_i\le0\).
+:::
+
+:::
+
+::: {.pf-step #support}
+If \(x_i>0\), then \(v_i=0\).
+
+::: pf-proof
+Choose \(\delta>0\) with \(x_i-\delta>0\). For every \(t\in(-\delta,\delta)\), the vector \(x+te_i\) has nonnegative entries, so \(t=0\) is a local minimum of \(t\mapsto\varphi(x+te_i)\). By step [](#setup){.pf-ref}, this function is differentiable at \(0\) with derivative \(-2v_i\). Hence \(v_i=0\).
+:::
+
+:::
+
+::: {.pf-step #conclusion}
+Thus \(v\le0\), and \(x_i v_i=0\) for every \(i\).
+
+::: pf-proof
+Step [](#one-sided){.pf-ref} gives \(v_i\le0\) for every \(i\). If \(x_i>0\), step [](#support){.pf-ref} gives \(v_i=0\); if \(x_i=0\), then \(x_i v_i=0\). Hence \(x_i v_i=0\) for every \(i\), and \(x^Tv=0\). This is the corrected first-order optimality condition for nonnegative least squares.
+:::
+
+:::
+
+:::
+
+:::
+
