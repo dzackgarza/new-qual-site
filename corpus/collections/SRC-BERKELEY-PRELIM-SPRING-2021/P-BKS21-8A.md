@@ -20,6 +20,8 @@ audit:
 Find an irreducible polynomial over $\ZZ$ having $2\cos(2\pi/7)$ as a root, and use it to show that this number is not contained in any extension of $\QQ$ whose degree is a power of $2$.
 :::
 
+::: {.solution}
+
 Set
 $$
 \zeta\coloneqq e^{2\pi i/7},
@@ -147,6 +149,8 @@ Thus $3$ divides $2^m$, which is impossible.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the required irreducible polynomial, and step [](#s1-4){.pf-ref} gives the field-degree obstruction.
+
+:::
 
 :::
 
