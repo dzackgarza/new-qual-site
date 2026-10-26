@@ -32,6 +32,8 @@ Recall that $S_6$ and $A_6$ are the symmetric and alternating groups on six lett
 Prove or give a counterexample, with explanation: for every $\sigma\in A_6$ there is a $\tau\in S_6$ such that $\tau^2=\sigma$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -129,6 +131,8 @@ Step [](#s1-1){.pf-ref} gives an element $\sigma\in A_6$, while step [](#s1-4){.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} establishes the counterexample.
+
+:::
 
 :::
 
