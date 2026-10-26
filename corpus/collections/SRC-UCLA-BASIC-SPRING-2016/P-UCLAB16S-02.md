@@ -31,8 +31,11 @@ f(x)=\begin{cases}
 Using your definition, prove that $f$ is Riemann integrable on $[a,b]$.
 :::
 
-::: {.solution}
-<1>1. For a bounded function
+::: pf
+
+::: pf-step
+
+For a bounded function
 \[
 f:[a,b]\to\mathbb R
 \]
@@ -64,11 +67,18 @@ L(f,P)
 m_i(t_i-t_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard upper and lower Darboux sums.
+
 :::
 
-<1>2. The function $f$ is Riemann integrable on $[a,b]$ if
+:::
+
+::: pf-step
+
+The function $f$ is Riemann integrable on $[a,b]$ if
 \[
 \boxed{
 \inf_P U(f,P)
@@ -81,13 +91,20 @@ Equivalently, for every $\varepsilon>0$ there exists a partition $P$ such that
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The equality of the upper and lower Darboux integrals is the definition.
 The equivalent criterion follows by taking common refinements of partitions, which decrease upper sums and increase lower sums.
 This answers part 1.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \ell=\lim_{n\to\infty}x_n.
 \]
@@ -100,14 +117,21 @@ Choose $\delta>0$ so small that
 2\delta<\frac{\varepsilon}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For example, one may take
 \[
 \delta=\frac{\varepsilon}{8}.
 \]
+
 :::
 
-<1>4. There exists $N$ such that
+:::
+
+::: pf-step
+
+There exists $N$ such that
 \[
 x_n\in(\ell-\delta,\ell+\delta)
 \]
@@ -116,11 +140,18 @@ for every
 n\ge N.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of convergence of the sequence $(x_n)$ to $\ell$.
+
 :::
 
-<1>5. The finitely many points
+:::
+
+::: pf-step
+
+The finitely many points
 \[
 x_1,\ldots,x_{N-1}
 \]
@@ -129,7 +160,9 @@ can be covered by finitely many open intervals whose total length is less than
 \frac{\varepsilon}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each
 \[
 1\le j<N,
@@ -147,9 +180,14 @@ Then
 \frac{\varepsilon}{2}.
 \]
 If some $x_j$ coincide, this only makes the cover more redundant.
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 \[
 J
 =
@@ -170,7 +208,9 @@ x_n
 \]
 lies in $\mathcal U$, and the total length of these finitely many intervals is less than $\varepsilon$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, every tail point
 \[
 x_n,\quad n\ge N,
@@ -187,27 +227,41 @@ and the remaining intervals have total length less than
 \frac{\varepsilon}{2}.
 \]
 Thus the total is less than $\varepsilon$.
+
 :::
 
-<1>7. Choose a partition $P$ containing all endpoints of the finitely many intervals occurring in $\mathcal U$.
+:::
+
+::: pf-step
+
+Choose a partition $P$ containing all endpoints of the finitely many intervals occurring in $\mathcal U$.
 Then every partition subinterval that meets
 \[
 \{x_n:n\ge1\}
 \]
 is contained in $\mathcal U$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every exceptional point $x_n$ belongs to one of the finitely many intervals forming $\mathcal U$.
 Because the partition contains all their endpoints, a partition cell containing such a point cannot cross from the inside of that interval to the outside without meeting one of those endpoints.
 Thus every cell that contains an exceptional point lies inside the union $\mathcal U$.
+
 :::
 
-<1>8. If a partition subinterval contains no point $x_n$, then
+:::
+
+::: pf-step
+
+If a partition subinterval contains no point $x_n$, then
 \[
 M_i=m_i=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 f(x)=1
@@ -217,14 +271,21 @@ at every point outside the set
 \{x_n:n\ge1\}.
 \]
 Thus $f$ is identically $1$ on any such subinterval.
+
 :::
 
-<1>9. If a partition subinterval contains at least one point $x_n$, then
+:::
+
+::: pf-step
+
+If a partition subinterval contains at least one point $x_n$, then
 \[
 0\le M_i-m_i\le1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function takes only the values
 \[
 0
@@ -232,16 +293,23 @@ The function takes only the values
 1.
 \]
 Therefore every oscillation is at most $1$.
+
 :::
 
-<1>10. For the partition $P$ from step <1>7,
+:::
+
+::: pf-step
+
+For the partition $P$ from step <1>7,
 \[
 U(f,P)-L(f,P)
 <
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8, cells containing no exceptional point contribute zero to
 \[
 U-L.
@@ -256,22 +324,33 @@ U(f,P)-L(f,P)
 <
 \varepsilon.
 \]
+
 :::
 
-<1>11. Therefore $f$ is Riemann integrable on $[a,b]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ is Riemann integrable on $[a,b]$.
+
+
+::: pf-proof
+
 The function is bounded, since
 \[
 0\le f\le1.
 \]
 For every $\varepsilon>0$, step <1>10 constructs a partition with upper-minus-lower sum less than $\varepsilon$.
 Apply the criterion from step <1>2.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the definition requested in part 1, and step <1>11 proves part 2.
+
 :::
+
 :::

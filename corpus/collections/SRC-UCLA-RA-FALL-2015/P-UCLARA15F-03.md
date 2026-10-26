@@ -28,7 +28,6 @@ Let $f \in L^1_{\mathrm{loc}}(\mathbb{R}^d)$ be such that for some $0 < p < 1$, 
 for all $g \in C_0(\mathbb{R}^d)$. Show that $f(x) = 0$ a.e. Here $C_0(\mathbb{R}^d)$ is the space of continuous functions with compact support on $\mathbb{R}^d$.
 :::
 
-::: {.solution}
 Fix
 \[
 0<p<1.
@@ -42,7 +41,11 @@ K\subset\mathbb R^d
 \]
 be compact.
 
-<1>1. Choose a bounded open set \(U\) with
+::: pf
+
+::: pf-step
+
+Choose a bounded open set \(U\) with
 \[
 K\subset U
 \]
@@ -57,11 +60,18 @@ and
 |U\setminus K|<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(f\in L^1_{\mathrm{loc}}\), it is integrable on some bounded neighborhood of \(K\), and its integral is absolutely continuous with respect to Lebesgue measure there. By outer regularity of Lebesgue measure, choose bounded open \(U\supset K\) with \(|U\setminus K|\) as small as desired; then absolute continuity of the integral makes \(\int_{U\setminus K}|f|\) small as well.
+
 :::
 
-<1>2. By Urysohn's lemma on \(\mathbb R^d\), choose
+:::
+
+::: pf-step
+
+By Urysohn's lemma on \(\mathbb R^d\), choose
 \[
 g\in C_c(\mathbb R^d)
 \]
@@ -74,11 +84,18 @@ g=1\text{ on }K,
 \operatorname{supp}g\subset U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Euclidean space is normal, and \(K\) is closed while \(U\) is open with \(K\subset U\).
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \left|
 \int_{\mathbb R^d}f(x)g(x)\,dx
@@ -89,7 +106,9 @@ Euclidean space is normal, and \(K\) is closed while \(U\) is open with \(K\subs
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(g=1\) on \(K\) and \(g=0\) outside \(U\),
 \[
 \begin{aligned}
@@ -108,9 +127,14 @@ f(x)g(x)\,dx
 \end{aligned}
 \]
 by step <1>1.
+
 :::
 
-<1>4. By the hypothesis,
+:::
+
+::: pf-step
+
+By the hypothesis,
 \[
 \left|
 \int fg
@@ -121,11 +145,18 @@ by step <1>1.
 \right)^{1/p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the assumed inequality applied to the test function \(g\in C_c(\mathbb R^d)\).
+
 :::
 
-<1>5. Since
+:::
+
+::: pf-step
+
+Since
 \[
 0\le g\le1
 \]
@@ -138,15 +169,22 @@ and
 \int |g|^p\le |U|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On \(U\),
 \[
 |g|^p\le1,
 \]
 and outside \(U\), \(g=0\).
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \left|
 \int_K f
@@ -155,11 +193,18 @@ and outside \(U\), \(g=0\).
 \varepsilon+|U|^{1/p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the triangle inequality with steps <1>3--<1>5.
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |U|
 \le
@@ -173,16 +218,23 @@ Use the triangle inequality with steps <1>3--<1>5.
 \varepsilon+(|K|+\varepsilon)^{1/p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 |U|=|K|+|U\setminus K|
 <
 |K|+\varepsilon.
 \]
+
 :::
 
-<1>8. Letting \(\varepsilon\downarrow0\),
+:::
+
+::: pf-step
+
+Letting \(\varepsilon\downarrow0\),
 \[
 \boxed{
 \left|
@@ -192,15 +244,18 @@ By step <1>1,
 |K|^{1/p}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The bound in step <1>7 holds for every positive \(\varepsilon\), and the right-hand side converges to \(|K|^{1/p}\).
+
 :::
 
-## Integrals over cubes vanish
+:::
 
-Let \(Q\subset\mathbb R^d\) be a closed cube of side length \(s>0\).
+::: pf-step
 
-<1>9. Partition \(Q\) into
+Partition \(Q\) into
 \[
 N^d
 \]
@@ -213,11 +268,18 @@ of side length
 s/N.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide each coordinate interval into \(N\) equal pieces and take Cartesian products.
+
 :::
 
-<1>10. Since the overlaps of distinct subcubes lie in boundaries of measure zero,
+:::
+
+::: pf-step
+
+Since the overlaps of distinct subcubes lie in boundaries of measure zero,
 \[
 \int_Q f
 =
@@ -225,11 +287,18 @@ Divide each coordinate interval into \(N\) equal pieces and take Cartesian produ
 \int_{Q_j}f.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The interiors are disjoint and cover \(Q\) up to the union of finitely many lower-dimensional faces, which has Lebesgue measure zero.
+
 :::
 
-<1>11. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \left|
 \int_Q f
@@ -241,11 +310,18 @@ The interiors are disjoint and cover \(Q\) up to the union of finitely many lowe
 \right|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the triangle inequality to step <1>10.
+
 :::
 
-<1>12. By step <1>8,
+:::
+
+::: pf-step
+
+By step <1>8,
 \[
 \left|
 \int_{Q_j}f
@@ -258,14 +334,21 @@ Apply the triangle inequality to step <1>10.
 \right)^{1/p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each \(Q_j\) is compact, and its volume is
 \[
 (s/N)^d.
 \]
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \left|
@@ -276,7 +359,9 @@ s^{d/p}
 N^{d-d/p}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are \(N^d\) subcubes, so
 \[
 N^d
@@ -287,15 +372,22 @@ N^d
 s^{d/p}
 N^{d(1-1/p)}.
 \]
+
 :::
 
-<1>14. Since \(0<p<1\),
+:::
+
+::: pf-step
+
+Since \(0<p<1\),
 \[
 \boxed{
 d-d/p<0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 1/p>1,
@@ -305,26 +397,36 @@ one has
 1-1/p<0.
 \]
 Multiply by \(d>0\).
+
 :::
 
-<1>15. Letting \(N\to\infty\) in step <1>13 gives
+:::
+
+::: pf-step
+
+Letting \(N\to\infty\) in step <1>13 gives
 \[
 \boxed{
 \int_Q f(x)\,dx=0}
 \]
 for every closed cube \(Q\).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>14,
 \[
 N^{d-d/p}\to0.
 \]
 The left-hand side is independent of \(N\), so its absolute value is bounded by quantities tending to zero.
+
 :::
 
-## Differentiate the zero cube integrals
+:::
 
-<1>16. Since
+::: pf-step
+
+Since
 \[
 f\in L^1_{\mathrm{loc}}(\mathbb R^d),
 \]
@@ -339,34 +441,54 @@ f(x)
 \]
 where \(Q_r(x)\) is any family of cubes centered at \(x\) with side length tending to zero.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Lebesgue differentiation theorem for locally integrable functions, with cubes as the differentiation basis.
+
 :::
 
-<1>17. Every integral in step <1>16 is zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every integral in step <1>16 is zero.
+
+
+::: pf-proof
+
 Each \(Q_r(x)\) is a closed cube, so step <1>15 applies.
+
 :::
 
-<1>18. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f(x)=0}
 \]
 for almost every \(x\in\mathbb R^d\).
 
-::: {.proof}
+
+::: pf-proof
+
 At every Lebesgue differentiation point of \(f\), steps <1>16--<1>17 give
 \[
 f(x)=\lim_{r\downarrow0}0=0.
 \]
 Such points form a full-measure set.
+
 :::
 
-<1>19. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>18 is the required conclusion.
+
 :::
+
 :::

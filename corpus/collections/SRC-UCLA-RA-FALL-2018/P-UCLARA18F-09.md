@@ -35,13 +35,18 @@ a_{2k}=\sum_{n\ge1}\frac{2}{n^{2k}}.
 \]
 :::
 
-::: {.solution}
-<1>1. The poles of \(g\) are precisely the nonzero integers, every pole is simple, and for each \(n\in\mathbb Z\setminus\{0\}\),
+::: pf
+
+::: pf-step
+
+The poles of \(g\) are precisely the nonzero integers, every pole is simple, and for each \(n\in\mathbb Z\setminus\{0\}\),
 \[
 \boxed{\operatorname{Res}(g,n)=-n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 g(z)=-\pi z\,\frac{\cos(\pi z)}{\sin(\pi z)},
@@ -65,15 +70,22 @@ At \(z=0\),
 =-1,
 \]
 so the singularity at \(0\) is removable rather than a pole.
+
 :::
 
-<1>2. For \(z\notin\mathbb Z\),
+:::
+
+::: pf-step
+
+For \(z\notin\mathbb Z\),
 \[
 \pi\cot(\pi z)
 =\frac1z+2z\sum_{m=1}^{\infty}\frac1{z^2-m^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Euler's product for the sine function is
 \[
 \frac{\sin(\pi z)}{\pi z}
@@ -87,14 +99,21 @@ Taking the logarithmic derivative on a compact set avoiding the integers gives
 =2z\sum_{m=1}^{\infty}\frac1{z^2-m^2},
 \]
 which is the claimed identity.
+
 :::
 
-<1>3. For \(|z|<1\),
+:::
+
+::: pf-step
+
+For \(|z|<1\),
 \[
 g(z)=-1+2\sum_{m=1}^{\infty}\frac{z^2}{m^2-z^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplying the identity in step <1>2 by \(-z\) gives
 \[
 g(z)
@@ -102,14 +121,21 @@ g(z)
 =-1+2\sum_{m=1}^{\infty}\frac{z^2}{m^2-z^2}.
 \]
 The restriction \(|z|<1\) avoids every nonzero integer and is the disc of convergence relevant to the Taylor expansion about \(0\).
+
 :::
 
-<1>4. For every integer \(k\ge1\), the Taylor coefficient of \(z^{2k}\) is
+:::
+
+::: pf-step
+
+For every integer \(k\ge1\), the Taylor coefficient of \(z^{2k}\) is
 \[
 a_{2k}=\boxed{2\sum_{m=1}^{\infty}\frac1{m^{2k}}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix \(0<r<1\). For \(|z|\le r\) and every \(m\ge1\), the geometric-series expansion gives
 \[
 \frac{z^2}{m^2-z^2}
@@ -134,11 +160,15 @@ g(z)
 \end{aligned}
 \]
 Since \(r<1\) was arbitrary, this is the Taylor expansion of \(g\) throughout \(|z|<1\), and comparison of coefficients gives the claimed formula.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and step <1>4 proves part (b).
+
 :::
+
 :::

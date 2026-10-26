@@ -27,7 +27,6 @@ F_{2n+1}F_{2n-1}-F_{2n}^2=1
 for all $n\ge1$.
 :::
 
-::: {.solution}
 Let
 \[
 \phi=\frac{1+\sqrt5}{2},
@@ -43,7 +42,11 @@ Then
 \phi-\psi=\sqrt5.
 \]
 
-<1>1. The sequence
+::: pf
+
+::: pf-step
+
+The sequence
 \[
 G_n=\frac{\phi^n-\psi^n}{\sqrt5}
 \]
@@ -57,7 +60,9 @@ G_n=G_{n-1}+G_{n-2}
 \]
 for $n\ge2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The initial values are
 \[
 G_0=\frac{1-1}{\sqrt5}=0
@@ -81,9 +86,14 @@ Subtracting and dividing by $\sqrt5$ gives
 \[
 G_n=G_{n-1}+G_{n-2}.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 F_n
@@ -93,7 +103,9 @@ F_n
 \]
 for every $n\ge0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The Fibonacci sequence and $(G_n)$ satisfy the same second-order recurrence with the same initial values.
 The recurrence uniquely determines every subsequent term.
 Thus
@@ -101,9 +113,14 @@ Thus
 F_n=G_n
 \]
 for all $n$.
+
 :::
 
-<1>3. For $n\ge2$,
+:::
+
+::: pf-step
+
+For $n\ge2$,
 \[
 \frac{F_n}{F_{n-1}}
 =
@@ -115,7 +132,9 @@ for all $n$.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2,
 \[
 \begin{aligned}
@@ -137,14 +156,21 @@ The denominator is nonzero because
 F_{n-1}>0
 \]
 for $n\ge2$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \left|\frac{\psi}{\phi}\right|<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The numbers satisfy
 \[
 \phi>1
@@ -163,9 +189,14 @@ Therefore
 <
 1.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -177,7 +208,9 @@ Therefore
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 \left(\frac{\psi}{\phi}\right)^n
@@ -194,9 +227,14 @@ Taking the limit in step <1>3 gives
 \phi.
 \]
 This proves part (a).
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 D_m
 =
@@ -208,7 +246,9 @@ Then
 \boxed{D_{m+1}=-D_m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 F_{m+2}=F_{m+1}+F_m,
@@ -244,14 +284,21 @@ Comparing the two formulas gives
 \[
 D_{m+1}=-D_m.
 \]
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 D_1=-1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 F_0=0,
@@ -270,9 +317,14 @@ F_2F_0-F_1^2
 =
 -1.
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 F_{m+1}F_{m-1}-F_m^2
@@ -282,7 +334,9 @@ F_{m+1}F_{m-1}-F_m^2
 \]
 for every $m\ge1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, the numbers $D_m$ alternate sign:
 \[
 D_m=(-1)^{m-1}D_1.
@@ -296,9 +350,14 @@ D_m
 (-1)^m.
 \]
 This is Cassini's identity.
+
 :::
 
-<1>9. Setting
+:::
+
+::: pf-step
+
+Setting
 \[
 m=2n
 \]
@@ -311,17 +370,23 @@ F_{2n+1}F_{2n-1}-F_{2n}^2
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 (-1)^{2n}=1,
 \]
 step <1>8 becomes exactly the identity required in part (b).
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

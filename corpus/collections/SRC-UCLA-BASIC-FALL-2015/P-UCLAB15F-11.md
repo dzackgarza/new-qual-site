@@ -27,18 +27,28 @@ Prove that there is no linear operator $S:V\to V$ such that $S^2=T$.
 Does the answer change if $V\cong\mathbb R^{12}$?
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 T^{18}=0,
 \]
 then $T$ is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of nilpotence: some positive power of $T$ is zero.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 \dim V=6,
 \]
@@ -47,7 +57,9 @@ then
 T^6=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $T$ is nilpotent by step <1>1, every eigenvalue of $T$ is $0$.
 Hence the characteristic polynomial of $T$ on a six-dimensional space is
 \[
@@ -57,9 +69,14 @@ By the Cayley--Hamilton theorem,
 \[
 \chi_T(T)=T^6=0.
 \]
+
 :::
 
-<1>3. Suppose, for contradiction, that there exists
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that there exists
 \[
 S:V\to V
 \]
@@ -69,7 +86,9 @@ S^2=T.
 \]
 Then $S$ is nilpotent.
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 T^{18}=0,
@@ -82,9 +101,14 @@ S^{36}
 =0.
 \]
 Thus $S$ is nilpotent.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 \dim V=6,
 \]
@@ -93,7 +117,9 @@ then
 S^6=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $S$ is nilpotent.
 As in step <1>2, its characteristic polynomial is
 \[
@@ -103,9 +129,14 @@ Cayley--Hamilton gives
 \[
 S^6=0.
 \]
+
 :::
 
-<1>5. Under the hypothesis
+:::
+
+::: pf-step
+
+Under the hypothesis
 \[
 S^2=T,
 \]
@@ -114,20 +145,29 @@ one has
 T^3=S^6.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 T^3
 =(S^2)^3
 =S^6.
 \]
+
 :::
 
-<1>6. No such square root $S$ exists when
+:::
+
+::: pf-step
+
+No such square root $S$ exists when
 \[
 \dim V=6.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If such $S$ existed, steps <1>4--<1>5 would give
 \[
 T^3=S^6=0.
@@ -141,11 +181,18 @@ contradicting the hypothesis
 T^5\ne0.
 \]
 Therefore no such $S$ exists.
+
 :::
 
-<1>7. In dimension $12$, the answer changes: such examples do exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+In dimension $12$, the answer changes: such examples do exist.
+
+
+::: pf-proof
+
 Let
 \[
 V=\mathbb R^{12}
@@ -190,9 +237,14 @@ T^{18}
 \]
 because already $S^{12}=0$.
 Thus $T$ satisfies the hypotheses and has the square root $S$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \text{no square root exists in dimension }6,
@@ -200,13 +252,19 @@ Thus $T$ satisfies the hypotheses and has the square root $S$.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 proves impossibility in dimension $6$, and step <1>7 gives an explicit dimension-$12$ example.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 answers both parts.
+
 :::
+
 :::

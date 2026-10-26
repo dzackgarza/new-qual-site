@@ -29,10 +29,15 @@ Determine whether each statement is true or false:
 (d) If $f_n\to f$ in $L^3$, then $f_n\to f$ in measure.
 :::
 
-::: {.solution}
-<1>1. Statement (a) is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Statement (a) is false.
+
+
+::: pf-proof
+
 Define
 \[
 f_n(x)=n\mathbf 1_{[0,1/n]}(x).
@@ -56,11 +61,18 @@ Thus
 \|f_n\|_3=n^{2/3},
 \]
 which does not tend to $0$ along any subsequence. Hence no subsequence converges to the almost-everywhere limit $0$ in $L^3$.
+
 :::
 
-<1>2. Statement (b) is true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (b) is true.
+
+
+::: pf-proof
+
 Assume
 \[
 f_n\longrightarrow f
@@ -95,11 +107,18 @@ for almost every $x$. For each such $x$, the terms of this convergent nonnegativ
 f_{n_k}(x)\longrightarrow f(x).
 \]
 Thus a subsequence converges almost everywhere.
+
 :::
 
-<1>3. Statement (c) is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (c) is false.
+
+
+::: pf-proof
+
 Use the same sequence as in step <1>1:
 \[
 f_n=n\mathbf 1_{[0,1/n]}.
@@ -121,11 +140,18 @@ But step <1>1 gives
 \|f_n\|_3=n^{2/3}\not\to0.
 \]
 Thus convergence in measure does not imply convergence in $L^3$.
+
 :::
 
-<1>4. Statement (d) is true.
+:::
 
-::: {.proof}
+::: pf-step
+
+Statement (d) is true.
+
+
+::: pf-proof
+
 Assume
 \[
 \|f_n-f\|_3\longrightarrow0.
@@ -161,9 +187,14 @@ m(E_{n,\varepsilon})
 \longrightarrow0.
 \]
 This is convergence in measure.
+
 :::
 
-<1>5. The answers are
+:::
+
+::: pf-step
+
+The answers are
 \[
 \boxed{
 \text{(a) false,\quad
@@ -173,13 +204,19 @@ This is convergence in measure.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>4 establish the four assertions respectively.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 records the complete classification.
+
 :::
+
 :::

@@ -24,15 +24,20 @@ Problem 11. Let $f:\mathbb D\to\mathbb C$ be an injective holomorphic function w
 with equality if and only if $f(z)=z$ for all $z\in\mathbb D$.
 :::
 
-::: {.solution}
 Set
 \[
 R\coloneqq\inf\{|w|:w\notin f(\mathbb D)\}.
 \]
 
-<1>1. The omitted set $\mathbb C\setminus f(\mathbb D)$ is nonempty; moreover, if $R\ge1$, then $\mathbb D\subset f(\mathbb D)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The omitted set $\mathbb C\setminus f(\mathbb D)$ is nonempty; moreover, if $R\ge1$, then $\mathbb D\subset f(\mathbb D)$.
+
+
+::: pf-proof
+
 If $f(\mathbb D)=\mathbb C$, then the inverse map $f^{-1}:\mathbb C\to\mathbb D$ is an entire bounded function. Liouville's theorem would make $f^{-1}$ constant, contradicting injectivity of $f$. Thus the omitted set is nonempty and $R$ is a finite real number.
 
 If some $w\in\mathbb D$ were omitted by $f$, then $|w|<1$, so the definition of $R$ would give
@@ -40,11 +45,18 @@ If some $w\in\mathbb D$ were omitted by $f$, then $|w|<1$, so the definition of 
 R\le |w|<1,
 \]
 contrary to $R\ge1$.
+
 :::
 
-<1>2. If $R\ge1$, then $f(z)=z$ for every $z\in\mathbb D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $R\ge1$, then $f(z)=z$ for every $z\in\mathbb D$.
+
+
+::: pf-proof
+
 By step <1>1, the inverse of the injective holomorphic map $f$ is defined on $\mathbb D$. Let
 \[
 g\coloneqq f^{-1}|_{\mathbb D}:\mathbb D\to\mathbb D.
@@ -60,14 +72,21 @@ Schwarz's lemma, including its equality case, therefore gives $g(z)=z$ for every
 f^{-1}(w)=w,
 \]
 and applying $f$ gives $f(w)=w$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 R\le1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $R>1$, then step <1>2 gives $f(z)=z$ on $\mathbb D$. But then $f(\mathbb D)=\mathbb D$, so
 \[
 R
@@ -76,11 +95,18 @@ R
 =1,
 \]
 a contradiction. Hence $R\le1$.
+
 :::
 
-<1>4. The equality $R=1$ holds if and only if $f(z)=z$ for every $z\in\mathbb D$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The equality $R=1$ holds if and only if $f(z)=z$ for every $z\in\mathbb D$.
+
+
+::: pf-proof
+
 If $R=1$, then $R\ge1$, so step <1>2 gives $f(z)=z$. Conversely, if $f(z)=z$, then $f(\mathbb D)=\mathbb D$, and therefore
 \[
 R
@@ -88,11 +114,15 @@ R
 \inf\{|w|:|w|\ge1\}
 =1.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the required inequality, and step <1>4 proves the equality characterization.
+
 :::
+
 :::

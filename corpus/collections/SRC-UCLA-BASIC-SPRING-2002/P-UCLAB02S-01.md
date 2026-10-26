@@ -19,18 +19,28 @@ audit:
 Prove that the closed interval $[0,1]$ is connected.
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that
 \[
 [0,1]=U\cup V
 \]
 where $U$ and $V$ are disjoint nonempty subsets that are open in the subspace topology on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of connectedness.
+
 :::
 
-<1>2. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 u\in U
 \qquad\text{and}\qquad
@@ -41,28 +51,42 @@ After interchanging $U$ and $V$ if necessary, assume
 u<v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both sets are nonempty.
 Their chosen points are distinct because $U\cap V=\varnothing$.
 Thus one of them is smaller than the other.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 S=U\cap[u,v].
 \]
 Then $S$ is nonempty and bounded above.
 
-::: {.proof}
+
+::: pf-proof
+
 The point $u$ belongs to $S$, so $S\ne\varnothing$.
 Also
 \[
 S\subseteq[u,v],
 \]
 so $v$ is an upper bound.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 c=\sup S.
 \]
@@ -71,15 +95,24 @@ Then
 u\le c\le v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The least-upper-bound property applies by step <1>3.
 Since $u\in S$, one has $c\ge u$.
 Since $v$ is an upper bound for $S$, one has $c\le v$.
+
 :::
 
-<1>5. The point $c$ cannot belong to $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The point $c$ cannot belong to $U$.
+
+
+::: pf-proof
+
 Suppose
 \[
 c\in U.
@@ -108,11 +141,18 @@ but
 t>c,
 \]
 contradicting that $c$ is an upper bound for $S$.
+
 :::
 
-<1>6. The point $c$ cannot belong to $V$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The point $c$ cannot belong to $V$.
+
+
+::: pf-proof
+
 Suppose
 \[
 c\in V.
@@ -170,11 +210,18 @@ contradicting
 \[
 U\cap V=\varnothing.
 \]
+
 :::
 
-<1>7. The assumed separation is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumed separation is impossible.
+
+
+::: pf-proof
+
 By step <1>4,
 \[
 c\in[0,1].
@@ -185,20 +232,31 @@ Since
 \]
 the point $c$ must belong to either $U$ or $V$.
 Steps <1>5 and <1>6 rule out both possibilities.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{[0,1]\text{ is connected}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption that $[0,1]$ admits a separation leads to the contradiction in step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

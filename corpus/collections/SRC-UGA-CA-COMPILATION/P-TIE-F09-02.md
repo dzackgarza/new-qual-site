@@ -32,7 +32,6 @@ $$
 where $L$ is the part of the circle $\abs{z} = R'$ which lies in the region $D$.
 :::
 
-::: {.solution}
 For $R'>R$, parametrize the arc $L$ counterclockwise by
 $$
 \gamma_{R'}(t)=R'e^{it},
@@ -40,7 +39,11 @@ $$
 0\le t\le\theta.
 $$
 
-<1>1. The arc integral can be written as
+::: pf
+
+::: pf-step
+
+The arc integral can be written as
 $$
 \int_L f(z)\,dz
 =
@@ -48,7 +51,9 @@ i\int_0^\theta
 \gamma_{R'}(t)f(\gamma_{R'}(t))\,dt.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \gamma_{R'}'(t)=iR'e^{it}=i\gamma_{R'}(t),
@@ -63,9 +68,14 @@ f(\gamma_{R'}(t))\gamma_{R'}'(t)\,dt
 i\int_0^\theta
 \gamma_{R'}(t)f(\gamma_{R'}(t))\,dt.
 $$
+
 :::
 
-<1>2. For every $\varepsilon>0$, there exists $R_\varepsilon>R$ such that
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$, there exists $R_\varepsilon>R$ such that
 $$
 \left|
 \gamma_{R'}(t)f(\gamma_{R'}(t))-k
@@ -74,7 +84,9 @@ $$
 $$
 for every $R'>R_\varepsilon$ and every $t\in[0,\theta]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis
 $$
 \lim_{\substack{z\to\infty\\ z\in D}}zf(z)=k
@@ -92,9 +104,14 @@ $$
 |\gamma_{R'}(t)|=R'>R_\varepsilon,
 $$
 so the asserted estimate follows.
+
 :::
 
-<1>3. For $R'>R_\varepsilon$,
+:::
+
+::: pf-step
+
+For $R'>R_\varepsilon$,
 $$
 \left|
 \int_L f(z)\,dz-i\theta k
@@ -103,7 +120,9 @@ $$
 \theta\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \begin{aligned}
@@ -130,16 +149,23 @@ $$
 \theta\varepsilon.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \lim_{R'\to\infty}\int_L f(z)\,dz=i\theta k
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Given any $\delta>0$, apply step <1>3 with
 $$
 \varepsilon=\frac{\delta}{\theta}.
@@ -152,11 +178,15 @@ $$
 <\delta.
 $$
 This is exactly the asserted limit.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

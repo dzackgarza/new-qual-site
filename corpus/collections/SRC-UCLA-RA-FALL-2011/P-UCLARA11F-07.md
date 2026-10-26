@@ -23,7 +23,6 @@ Compute
 \]
 :::
 
-::: {.solution}
 Consider
 \[
 F(z)=\frac{e^{iz}}{(1+z^2)^2}
@@ -31,7 +30,11 @@ F(z)=\frac{e^{iz}}{(1+z^2)^2}
 \frac{e^{iz}}{(z-i)^2(z+i)^2}.
 \]
 
-<1>1. Integrate \(F\) over the positively oriented contour consisting of
+::: pf
+
+::: pf-step
+
+Integrate \(F\) over the positively oriented contour consisting of
 \[
 [-R,R]
 \]
@@ -40,25 +43,39 @@ and the upper semicircle
 \Gamma_R=\{Re^{i\theta}:0\le\theta\le\pi\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard upper-half-plane contour for the exponential \(e^{iz}\), whose modulus decays there.
+
 :::
 
-<1>2. The only pole of \(F\) inside the contour is
+:::
+
+::: pf-step
+
+The only pole of \(F\) inside the contour is
 \[
 \boxed{z=i},
 \]
 and it is a double pole.
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator factors as
 \[
 (z-i)^2(z+i)^2.
 \]
 The pole at \(-i\) lies in the lower half-plane.
+
 :::
 
-<1>3. The residue at \(z=i\) is
+:::
+
+::: pf-step
+
+The residue at \(z=i\) is
 \[
 \operatorname{Res}_{z=i}F
 =
@@ -70,7 +87,9 @@ The pole at \(-i\) lies in the lower half-plane.
 \right|_{z=i}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a double pole,
 \[
 \operatorname{Res}_{z=i}
@@ -82,9 +101,14 @@ with
 \[
 h(z)=\frac{e^{iz}}{(z+i)^2}.
 \]
+
 :::
 
-<1>4. Differentiate:
+:::
+
+::: pf-step
+
+Differentiate:
 \[
 \frac{d}{dz}
 \left(
@@ -96,14 +120,21 @@ h(z)=\frac{e^{iz}}{(z+i)^2}.
 \frac{2e^{iz}}{(z+i)^3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the product rule to
 \[
 e^{iz}(z+i)^{-2}.
 \]
+
 :::
 
-<1>5. At \(z=i\),
+:::
+
+::: pf-step
+
+At \(z=i\),
 \[
 e^{iz}=e^{-1}
 \]
@@ -112,13 +143,20 @@ and
 z+i=2i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 e^{i\cdot i}=e^{-1}.
 \]
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \begin{aligned}
 \operatorname{Res}_{z=i}F
@@ -134,7 +172,9 @@ e^{i\cdot i}=e^{-1}.
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 (2i)^2=-4,
@@ -155,9 +195,14 @@ and
 =
 -\frac i4.
 \]
+
 :::
 
-<1>7. On the upper semicircle,
+:::
+
+::: pf-step
+
+On the upper semicircle,
 \[
 |e^{iz}|
 =
@@ -165,7 +210,9 @@ e^{-\operatorname{Im}z}
 \le1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 z=x+iy
@@ -179,16 +226,23 @@ with \(y\ge0\), then
 e^{-y}
 \le1.
 \]
+
 :::
 
-<1>8. For \(R>2\) and \(z\in\Gamma_R\),
+:::
+
+::: pf-step
+
+For \(R>2\) and \(z\in\Gamma_R\),
 \[
 |1+z^2|
 \ge
 R^2-1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the reverse triangle inequality,
 \[
 |1+z^2|
@@ -197,9 +251,14 @@ By the reverse triangle inequality,
 =
 R^2-1.
 \]
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \left|
 \int_{\Gamma_R}F(z)\,dz
@@ -209,11 +268,18 @@ R^2-1.
 \longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The length of \(\Gamma_R\) is \(\pi R\). Combine steps <1>7--<1>8 with the \(ML\)-estimate.
+
 :::
 
-<1>10. By the residue theorem,
+:::
+
+::: pf-step
+
+By the residue theorem,
 \[
 \int_{-R}^{R}
 \frac{e^{ix}}{(1+x^2)^2}\,dx
@@ -226,11 +292,18 @@ The length of \(\Gamma_R\) is \(\pi R\). Combine steps <1>7--<1>8 with the \(ML\
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the residue from step <1>6.
+
 :::
 
-<1>11. Letting \(R\to\infty\),
+:::
+
+::: pf-step
+
+Letting \(R\to\infty\),
 \[
 \boxed{
 \int_{-\infty}^{\infty}
@@ -239,7 +312,9 @@ Use the residue from step <1>6.
 \frac{\pi}{e}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The semicircle term vanishes by step <1>9, and
 \[
 2\pi i
@@ -249,9 +324,14 @@ The semicircle term vanishes by step <1>9, and
 =
 \frac{\pi}{e}.
 \]
+
 :::
 
-<1>12. Taking real parts,
+:::
+
+::: pf-step
+
+Taking real parts,
 \[
 \boxed{
 \int_{-\infty}^{\infty}
@@ -260,20 +340,34 @@ The semicircle term vanishes by step <1>9, and
 \frac{\pi}{e}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator is real on the real axis, so the real part of the integrand in step <1>11 is
 \[
 \frac{\cos x}{(1+x^2)^2}.
 \]
+
 :::
 
-<1>13. The integrand in step <1>12 is even.
+:::
 
-::: {.proof}
+::: pf-step
+
+The integrand in step <1>12 is even.
+
+
+::: pf-proof
+
 Both \(\cos x\) and \((1+x^2)^2\) are even functions.
+
 :::
 
-<1>14. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 2
 \int_0^\infty
@@ -282,11 +376,18 @@ Both \(\cos x\) and \((1+x^2)^2\) are even functions.
 \frac{\pi}{e}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integral over the whole real line of an even integrable function is twice the integral over \([0,\infty)\).
+
 :::
 
-<1>15. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^\infty
@@ -295,13 +396,19 @@ The integral over the whole real line of an even integrable function is twice th
 \frac{\pi}{2e}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide step <1>14 by \(2\).
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 is the requested value.
+
 :::
+
 :::

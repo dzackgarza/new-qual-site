@@ -19,7 +19,6 @@ audit:
 Let $F ( x ) = \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ be a power series with $a _ { n } \in \mathbf { R }$ . Show that there exists a unique number $\rho \geq 0$ such that $F ( x )$ converges if $| x | < \rho$ and $F ( x )$ diverges if $| x | > \rho$
 :::
 
-::: {.solution}
 Define
 \[
 C=
@@ -34,7 +33,11 @@ The set $C$ is nonempty because
 0\in C.
 \]
 
-<1>1. If the series converges at some nonzero point
+::: pf
+
+::: pf-step
+
+If the series converges at some nonzero point
 \[
 x_0,
 \]
@@ -43,7 +46,9 @@ then it converges absolutely at every $x$ with
 |x|<|x_0|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Convergence of
 \[
 \sum_{n=0}^{\infty}a_nx_0^n
@@ -90,9 +95,14 @@ converges, so comparison gives absolute convergence of
 \[
 \sum_{n=0}^{\infty}a_nx^n.
 \]
+
 :::
 
-<1>2. If the series diverges at some point
+:::
+
+::: pf-step
+
+If the series diverges at some point
 \[
 x_0,
 \]
@@ -101,16 +111,23 @@ then it diverges at every $x$ with
 |x|>|x_0|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that the series converged at some $x$ satisfying
 \[
 |x|>|x_0|.
 \]
 Then step <1>1, applied to the convergence point $x$, would imply convergence at every point whose absolute value is smaller than $|x|$, in particular at $x_0$.
 This contradicts the assumed divergence at $x_0$.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \rho=\sup C
 \]
@@ -124,7 +141,9 @@ with
 |x|<\rho.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x$ with
 \[
 |x|<\rho.
@@ -150,9 +169,14 @@ and
 s\in C,
 \]
 the series converges at $x$.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 \rho<\infty,
 \]
@@ -161,7 +185,9 @@ then the series diverges for every $x$ with
 |x|>\rho.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose, for contradiction, that the series converges at some $x$ with
 \[
 |x|>\rho.
@@ -183,14 +209,21 @@ Therefore the series diverges for every
 \[
 |x|>\rho.
 \]
+
 :::
 
-<1>5. If the series converges for every real $x$, then
+:::
+
+::: pf-step
+
+If the series converges for every real $x$, then
 \[
 \rho=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In this case every
 \[
 r\ge0
@@ -200,9 +233,14 @@ Thus $C$ is unbounded above, and its supremum in the extended interval is
 \[
 \infty.
 \]
+
 :::
 
-<1>6. If the required parameter is required to lie in
+:::
+
+::: pf-step
+
+If the required parameter is required to lie in
 \[
 [0,\infty),
 \]
@@ -211,7 +249,9 @@ then either the radius is finite, or the exceptional case of convergence for eve
 \rho=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The usual radius of convergence naturally lies in the extended interval
 \[
 [0,\infty].
@@ -226,11 +266,18 @@ If only finite real numbers are allowed, then the statement is false for series 
 e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},
 \]
 which converges for every real $x$.
+
 :::
 
-<1>7. The radius is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The radius is unique.
+
+
+::: pf-proof
+
 Suppose
 \[
 \rho_1<\rho_2
@@ -247,9 +294,14 @@ with
 The property for $\rho_1$ would force divergence at $x$, while the property for $\rho_2$ would force convergence at $x$.
 This contradiction shows that two distinct radii cannot satisfy the condition.
 The same argument applies in the extended-real setting.
+
 :::
 
-<1>8. Therefore there is a unique radius of convergence
+:::
+
+::: pf-step
+
+Therefore there is a unique radius of convergence
 \[
 \boxed{
 \rho\in[0,\infty]
@@ -264,13 +316,19 @@ and diverges for
 |x|>\rho.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Existence follows from steps <1>3--<1>5, and uniqueness from step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the standard radius-of-convergence theorem, with step <1>6 recording the necessary infinite-radius case omitted by the literal finite-valued wording.
+
 :::
+
 :::

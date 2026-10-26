@@ -24,8 +24,11 @@ Let $f_n:[0,1]\to\mathbb R$ be continuous and satisfy
 Define $F_n(x)=\int_0^x f_n(t)\,dt$. Show that there is a subsequence $n_k\to\infty$ such that $F_{n_k}(x)$ converges for every $x\in[0,1]$.
 :::
 
-::: {.solution}
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 n
 \]
@@ -40,7 +43,9 @@ one has
 1+\frac{\pi}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 |f_n(t)|
@@ -73,9 +78,14 @@ The substitution is
 \[
 u=nt.
 \]
+
 :::
 
-<1>2. Fix a positive integer $m$ and consider the interval
+:::
+
+::: pf-step
+
+Fix a positive integer $m$ and consider the interval
 \[
 K_m=\left[\frac1m,1\right].
 \]
@@ -86,7 +96,9 @@ For every $n$ and every $t\in K_m$,
 \frac m2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every positive real number $u$,
 \[
 1+u^2\ge2u.
@@ -111,9 +123,14 @@ one has
 \[
 \frac1{2t}\le\frac m2.
 \]
+
 :::
 
-<1>3. On $K_m$, the family $(F_n)$ is equi-Lipschitz:
+:::
+
+::: pf-step
+
+On $K_m$, the family $(F_n)$ is equi-Lipschitz:
 \[
 \boxed{
 |F_n(x)-F_n(y)|
@@ -122,7 +139,9 @@ one has
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 x,y\in K_m,
@@ -157,21 +176,33 @@ Thus
 \le
 \left(1+\frac m2\right)(y-x).
 \]
+
 :::
 
-<1>4. For each fixed $m$, every sequence $(F_n)$ has a subsequence converging uniformly on
+:::
+
+::: pf-step
+
+For each fixed $m$, every sequence $(F_n)$ has a subsequence converging uniformly on
 \[
 K_m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the family is uniformly bounded on $K_m$.
 By step <1>3, it is equicontinuous there.
 The interval $K_m$ is compact.
 Apply the Arzelà--Ascoli theorem.
+
 :::
 
-<1>5. Choose a subsequence
+:::
+
+::: pf-step
+
+Choose a subsequence
 \[
 (F_{n^{(1)}_k})
 \]
@@ -189,16 +220,23 @@ K_2.
 \]
 Continue inductively so that the stage-$m$ subsequence converges uniformly on $K_m$.
 
-::: {.proof}
+
+::: pf-proof
+
 At each stage, apply step <1>4 to the subsequence obtained at the previous stage.
 Because
 \[
 K_m\subseteq K_{m+1},
 \]
 the process enlarges the interval on which convergence is ensured while retaining convergence on earlier intervals.
+
 :::
 
-<1>6. Define the diagonal subsequence
+:::
+
+::: pf-step
+
+Define the diagonal subsequence
 \[
 \boxed{
 n_k=n^{(k)}_k.
@@ -213,7 +251,9 @@ converges uniformly on $K_m$ as
 k\to\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 k\ge m,
@@ -221,9 +261,14 @@ k\ge m,
 the stage-$k$ subsequence is nested inside the stage-$m$ subsequence.
 Thus the tail of the diagonal subsequence is a subsequence of the sequence that converges uniformly on $K_m$.
 Every subsequence of a uniformly convergent sequence converges uniformly to the same limit on that set.
+
 :::
 
-<1>7. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in(0,1],
 \]
@@ -233,7 +278,9 @@ F_{n_k}(x)
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 \[
 m
@@ -251,9 +298,14 @@ By step <1>6,
 F_{n_k}
 \]
 converges uniformly on $K_m$, hence in particular pointwise at $x$.
+
 :::
 
-<1>8. At the remaining point,
+:::
+
+::: pf-step
+
+At the remaining point,
 \[
 x=0,
 \]
@@ -263,7 +315,9 @@ F_n(0)=0
 \]
 for every $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 F_n(0)
@@ -272,9 +326,14 @@ F_n(0)
 =0.
 \]
 Thus the sequence converges at $0$ as well.
+
 :::
 
-<1>9. Therefore there exists a subsequence
+:::
+
+::: pf-step
+
+Therefore there exists a subsequence
 \[
 \boxed{n_k\to\infty}
 \]
@@ -286,14 +345,20 @@ F_{n_k}(x)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 handles every positive $x$, and step <1>8 handles $x=0$.
 The indices $n_k$ form a subsequence of the positive integers and may be chosen strictly increasing at each extraction stage.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

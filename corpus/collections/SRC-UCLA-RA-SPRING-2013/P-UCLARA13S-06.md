@@ -30,7 +30,6 @@ Show that
 (c) $X\ne C_0(\mathbb R)$.
 :::
 
-::: {.solution}
 For $f\in L^1(\mathbb R)$, write
 \[
 \mathcal Ff(\xi)
@@ -38,9 +37,15 @@ For $f\in L^1(\mathbb R)$, write
 \int_{\mathbb R}e^{i\xi x}f(x)\,dx.
 \]
 
-<1>1. For every $f\in L^1(\mathbb R)$, the function $\mathcal Ff$ is continuous.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For every $f\in L^1(\mathbb R)$, the function $\mathcal Ff$ is continuous.
+
+
+::: pf-proof
+
 Fix $\xi_0\in\mathbb R$. If $\xi\to\xi_0$, then for every $x$,
 \[
 e^{i\xi x}f(x)
@@ -59,16 +64,23 @@ Since $|f|\in L^1$, dominated convergence gives
 \longrightarrow
 \mathcal Ff(\xi_0).
 \]
+
 :::
 
-<1>2. For every $f\in L^1(\mathbb R)$,
+:::
+
+::: pf-step
+
+For every $f\in L^1(\mathbb R)$,
 \[
 \mathcal Ff(\xi)\longrightarrow0
 \qquad
 (|\xi|\to\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Choose
 \[
 \phi\in C_c^1(\mathbb R)
@@ -106,20 +118,34 @@ For sufficiently large $|\xi|$, the first term is also less than $\varepsilon/2$
 \[
 |\mathcal Ff(\xi)|<\varepsilon.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{X\subset C_0(\mathbb R)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 show that every element of $X$ is continuous and vanishes at infinity.
+
 :::
 
-<1>4. Every Schwartz function belongs to $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every Schwartz function belongs to $X$.
+
+
+::: pf-proof
+
 The Fourier transform is a bijection
 \[
 \mathcal S(\mathbb R)
@@ -135,11 +161,18 @@ there is $g\in\mathcal S(\mathbb R)\subset L^1(\mathbb R)$ such that
 h=\mathcal Fg
 \]
 with the sign convention used here after replacing the variable by its negative if necessary. Hence $h\in X$.
+
 :::
 
-<1>5. The Schwartz space is dense in $C_0(\mathbb R)$ in the supremum norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Schwartz space is dense in $C_0(\mathbb R)$ in the supremum norm.
+
+
+::: pf-proof
+
 Fix $h\in C_0(\mathbb R)$ and $\varepsilon>0$. Choose $R>0$ so that
 \[
 |h(x)|<\varepsilon
@@ -166,21 +199,35 @@ The convolution
 \rho_\delta*(\chi h)
 \]
 is smooth and compactly supported, hence is a Schwartz function. Thus every $h\in C_0$ is uniformly approximated by Schwartz functions.
+
 :::
 
-<1>6. The subspace $X$ is dense in $C_0(\mathbb R)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subspace $X$ is dense in $C_0(\mathbb R)$.
+
+
+::: pf-proof
+
 By step <1>4, $X$ contains the Schwartz space. By step <1>5, the latter is dense in $C_0(\mathbb R)$.
+
 :::
 
-<1>7. The Fourier transform
+:::
+
+::: pf-step
+
+The Fourier transform
 \[
 \mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
 \]
 is bounded and injective.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $f\in L^1$,
 \[
 \|\mathcal Ff\|_\infty
@@ -188,9 +235,14 @@ For every $f\in L^1$,
 \|f\|_1,
 \]
 so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for the Fourier transform on $L^1(\mathbb R)$.
+
 :::
 
-<1>8. Suppose, toward a contradiction, that
+:::
+
+::: pf-step
+
+Suppose, toward a contradiction, that
 \[
 X=C_0(\mathbb R).
 \]
@@ -203,15 +255,22 @@ C\|\mathcal Ff\|_\infty
 (f\in L^1(\mathbb R)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Under the assumption, step <1>7 makes
 \[
 \mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
 \]
 a bounded linear bijection between Banach spaces. By the open mapping theorem, its inverse is bounded. The displayed estimate is exactly boundedness of that inverse.
+
 :::
 
-<1>9. There exists a sequence $(h_j)\subset C_c^\infty(\mathbb R)$ such that
+:::
+
+::: pf-step
+
+There exists a sequence $(h_j)\subset C_c^\infty(\mathbb R)$ such that
 \[
 \sup_j\|h_j\|_\infty<\infty
 \]
@@ -224,15 +283,22 @@ h
 \]
 in $L^2(\mathbb R)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Take a standard smooth approximation of the indicator with values in $[0,1]$, for example by convolving $\mathbf 1_{[-1,1]}$ with compactly supported mollifiers and, if necessary, multiplying by a fixed compactly supported cutoff equal to $1$ near $[-1,1]$. Then
 \[
 0\le h_j\le1
 \]
 and $h_j\to h$ pointwise almost everywhere with supports contained in one fixed compact interval. Dominated convergence gives convergence in $L^2$, and the supremum norms are bounded by $1$.
+
 :::
 
-<1>10. Let
+:::
+
+::: pf-step
+
+Let
 \[
 g_j=\mathcal F^{-1}h_j.
 \]
@@ -246,31 +312,47 @@ g_j(x)\longrightarrow g(x)
 \]
 for almost every $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $h_j\in C_c^\infty\subset\mathcal S$, Fourier inversion gives $g_j\in\mathcal S$.
 
 By the Plancherel theorem, the Fourier transform extends to an isomorphism of $L^2$ with itself, up to the fixed normalization constant. Since $h_j\to h$ in $L^2$, their inverse transforms converge in $L^2$ to the inverse Plancherel transform $g$ of $h$. Every $L^2$-convergent sequence has a subsequence converging pointwise almost everywhere.
+
 :::
 
-<1>11. The function $g$ from step <1>10 does not belong to $L^1(\mathbb R)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ from step <1>10 does not belong to $L^1(\mathbb R)$.
+
+
+::: pf-proof
+
 Suppose instead that $g\in L^1$. Then by step <1>3, its $L^1$ Fourier transform has a continuous representative in $C_0(\mathbb R)$. By compatibility of the $L^1$ and $L^2$ Fourier transforms, that continuous representative agrees almost everywhere with
 \[
 h=\mathbf 1_{[-1,1]}.
 \]
 
 No continuous function can agree almost everywhere with this indicator. Indeed, equality almost everywhere forces the continuous function to equal $1$ throughout $(-1,1)$, because the set on which it equals $1$ is dense there; similarly it must equal $0$ throughout $(1,\infty)$. Continuity at $1$ is then impossible. Hence $g\notin L^1$.
+
 :::
 
-<1>12. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \liminf_{j\to\infty}\|g_j\|_1
 =
 \infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Along the almost-everywhere convergent subsequence from step <1>10, Fatou's lemma gives
 \[
 \int_{\mathbb R}|g(x)|\,dx
@@ -279,11 +361,18 @@ Along the almost-everywhere convergent subsequence from step <1>10, Fatou's lemm
 \int_{\mathbb R}|g_j(x)|\,dx.
 \]
 The left-hand side is infinite by step <1>11, so the liminf is infinite.
+
 :::
 
-<1>13. The surjectivity assumption in step <1>8 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The surjectivity assumption in step <1>8 is impossible.
+
+
+::: pf-proof
+
 By step <1>8,
 \[
 \|g_j\|_1
@@ -293,20 +382,31 @@ C\|\mathcal Fg_j\|_\infty
 C\|h_j\|_\infty.
 \]
 The right-hand side is uniformly bounded by step <1>9, contradicting step <1>12.
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{X\ne C_0(\mathbb R)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>13 contradicts the only alternative $X=C_0$.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>14 proves part (c).
+
 :::
+
 :::

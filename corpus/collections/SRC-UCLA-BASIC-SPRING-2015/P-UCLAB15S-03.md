@@ -25,7 +25,6 @@ Suppose that for every $x\in\mathbb R$,
 Prove that $f$ is differentiable.
 :::
 
-::: {.solution}
 Let
 \[
 L\ge0
@@ -38,7 +37,11 @@ L|x-y|
 \]
 for all $x,y\in\mathbb R$.
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 g_n(x)
 =
@@ -52,7 +55,9 @@ Then
 \]
 for every $x$ and $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the Lipschitz estimate,
 \[
 \left|
@@ -65,18 +70,30 @@ Multiplying by $n$ gives
 \[
 |g_n(x)|\le L.
 \]
+
 :::
 
-<1>2. For every fixed $x\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every fixed $x\in\mathbb R$,
 \[
 g_n(x)\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the hypothesis of the problem.
+
 :::
 
-<1>3. Fix real numbers
+:::
+
+::: pf-step
+
+Fix real numbers
 \[
 a<b.
 \]
@@ -86,7 +103,9 @@ Then
 \longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 \[
 g_n(x)\to0
@@ -103,9 +122,14 @@ Therefore the dominated convergence theorem gives
 \int_a^b0\,dx
 =0.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_a^b g_n(x)\,dx
 =
@@ -117,7 +141,9 @@ n
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \begin{aligned}
@@ -147,16 +173,23 @@ Then
 \int_{a+1/n}^{b+1/n}f(u)\,du.
 \]
 Subtracting the integral over $[a,b]$ leaves exactly the two boundary pieces in the displayed formula.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 n\int_b^{b+1/n}f(u)\,du
 \longrightarrow
 f(b).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By continuity of $f$ at $b$,
 \[
 \sup_{u\in[b,b+1/n]}
@@ -181,36 +214,57 @@ n\int_b^{b+1/n}
 \end{aligned}
 \]
 The function is continuous because every Lipschitz function is continuous.
+
 :::
 
-<1>6. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 \[
 n\int_a^{a+1/n}f(u)\,du
 \longrightarrow
 f(a).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the same argument as in step <1>5 at the point $a$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_a^b g_n(x)\,dx
 \longrightarrow
 f(b)-f(a).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the identity in step <1>4 and the limits in steps <1>5--<1>6.
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{f(a)=f(b)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 says
 \[
 \int_a^b g_n(x)\,dx\to0,
@@ -223,32 +277,50 @@ Limits are unique, so
 \[
 f(b)-f(a)=0.
 \]
+
 :::
 
-<1>9. The function $f$ is constant on $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant on $\mathbb R$.
+
+
+::: pf-proof
+
 The points
 \[
 a<b
 \]
 were arbitrary.
 Step <1>8 therefore shows that every two real points have the same $f$-value.
+
 :::
 
-<1>10. Consequently $f$ is differentiable everywhere, with
+:::
+
+::: pf-step
+
+Consequently $f$ is differentiable everywhere, with
 \[
 \boxed{f'(x)=0}
 \]
 for every $x\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every constant function is differentiable at every point, with derivative zero.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

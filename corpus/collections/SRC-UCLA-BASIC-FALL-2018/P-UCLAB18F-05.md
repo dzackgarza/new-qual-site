@@ -29,7 +29,6 @@ is $1$-Lipschitz on $B$.
 Show that $M(g)$ is compact in $C(B)$ with the supremum norm.
 :::
 
-::: {.solution}
 Define
 \[
 f(x)
@@ -38,9 +37,15 @@ f(x)
 \bigl(g(y)+|x-y|\bigr).
 \]
 
-<1>1. The function $f$ is finite-valued on $B$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is finite-valued on $B$.
+
+
+::: pf-proof
+
 The sphere $\partial B$ is compact, and $g$ is Lipschitz, hence continuous and bounded.
 Thus there is
 \[
@@ -60,14 +65,21 @@ g(y)+|x-y|
 M+2.
 \]
 Hence the infimum is a finite real number.
+
 :::
 
-<1>2. For all $x,z\in B$,
+:::
+
+::: pf-step
+
+For all $x,z\in B$,
 \[
 f(x)\le f(z)+|x-z|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $y\in\partial B$, the triangle inequality gives
 \[
 |x-y|
@@ -88,11 +100,18 @@ f(x)
 \le
 |x-z|+f(z).
 \]
+
 :::
 
-<1>3. The function $f$ is $1$-Lipschitz on $B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is $1$-Lipschitz on $B$.
+
+
+::: pf-proof
+
 Step <1>2 gives
 \[
 f(x)-f(z)\le |x-z|.
@@ -105,14 +124,21 @@ Hence
 \[
 \boxed{|f(x)-f(z)|\le |x-z|}.
 \]
+
 :::
 
-<1>4. For every $x\in\partial B$,
+:::
+
+::: pf-step
+
+For every $x\in\partial B$,
 \[
 \boxed{f(x)=g(x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Taking $y=x$ in the defining infimum gives
 \[
 f(x)\le g(x).
@@ -128,24 +154,38 @@ Taking the infimum over $y$ gives
 g(x)\le f(x).
 \]
 Thus equality holds.
+
 :::
 
-<1>5. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 M(g)\ne\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $f$ is $1$-Lipschitz on $B$, and by step <1>4 it restricts to $g$ on $\partial B$.
 Therefore
 \[
 f\in M(g).
 \]
+
 :::
 
-<1>6. The family $M(g)$ is equicontinuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The family $M(g)$ is equicontinuous.
+
+
+::: pf-proof
+
 Every
 \[
 h\in M(g)
@@ -158,11 +198,18 @@ Thus for all $x,z\in B$,
 |x-z|,
 \]
 with the same modulus of continuity for every $h$.
+
 :::
 
-<1>7. The family $M(g)$ is uniformly bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+The family $M(g)$ is uniformly bounded.
+
+
+::: pf-proof
+
 Fix one point
 \[
 y_0\in\partial B.
@@ -180,11 +227,18 @@ For every $h\in M(g)$ and every $x\in B$,
 \end{aligned}
 \]
 Thus a single bound works for all $h\in M(g)$ and all $x\in B$.
+
 :::
 
-<1>8. The set $M(g)$ is closed in $C(B)$ with the supremum norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $M(g)$ is closed in $C(B)$ with the supremum norm.
+
+
+::: pf-proof
+
 Let
 \[
 h_n\in M(g)
@@ -223,11 +277,18 @@ Therefore
 h\in M(g),
 \]
 so $M(g)$ is closed.
+
 :::
 
-<1>9. The closure of $M(g)$ in $C(B)$ is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closure of $M(g)$ in $C(B)$ is compact.
+
+
+::: pf-proof
+
 The ball
 \[
 B=\{x\in\mathbb R^n:|x|\le1\}
@@ -239,34 +300,50 @@ The Arzelà--Ascoli theorem therefore implies that its closure in
 C(B)
 \]
 with the supremum norm is compact.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{M(g)\text{ is compact in }C(B)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8, $M(g)$ is already closed, so it equals its closure.
 Step <1>9 therefore implies compactness.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and steps <1>4--<1>10 prove part (b).
-:::
+
 :::
 
-::: {.solution}
-<1>1. For every $x,x'\in B$ and every $y\in\partial B$,
+:::
+
+::: pf
+
+::: pf-step
+
+For every $x,x'\in B$ and every $y\in\partial B$,
 \[
 g(y)+|x-y|
 \le
 g(y)+|x'-y|+|x-x'|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Euclidean triangle inequality gives
 \[
 |x-y|
@@ -274,14 +351,21 @@ The Euclidean triangle inequality gives
 |x-x'|+|x'-y|.
 \]
 Add $g(y)$ to both sides.
+
 :::
 
-<1>2. Taking the infimum over $y\in\partial B$ in step <1>1 gives
+:::
+
+::: pf-step
+
+Taking the infimum over $y\in\partial B$ in step <1>1 gives
 \[
 f(x)\le f(x')+|x-x'|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The additive term $|x-x'|$ is independent of $y$, so
 \[
 \begin{aligned}
@@ -296,15 +380,22 @@ f(x)
 f(x')+|x-x'|.
 \end{aligned}
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{|f(x)-f(x')|\le|x-x'|}
 \]
 for all $x,x'\in B$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 \[
 f(x)-f(x')\le|x-x'|.
@@ -315,14 +406,21 @@ f(x')-f(x)\le|x-x'|.
 \]
 Combining yields the absolute-value inequality.
 Thus $f$ is $1$-Lipschitz.
+
 :::
 
-<1>4. For every $x\in\partial B$,
+:::
+
+::: pf-step
+
+For every $x\in\partial B$,
 \[
 f(x)\le g(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In the infimum defining $f(x)$, choose
 \[
 y=x.
@@ -335,14 +433,21 @@ g(x)+|x-x|
 =
 g(x).
 \]
+
 :::
 
-<1>5. For every $x,y\in\partial B$,
+:::
+
+::: pf-step
+
+For every $x,y\in\partial B$,
 \[
 g(y)+|x-y|\ge g(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $g$ is $1$-Lipschitz,
 \[
 g(x)-g(y)
@@ -350,14 +455,21 @@ g(x)-g(y)
 |x-y|.
 \]
 Rearranging gives the displayed inequality.
+
 :::
 
-<1>6. For every $x\in\partial B$,
+:::
+
+::: pf-step
+
+For every $x\in\partial B$,
 \[
 f(x)\ge g(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 holds for every
 \[
 y\in\partial B.
@@ -371,9 +483,14 @@ f(x)
 \ge
 g(x).
 \]
+
 :::
 
-<1>7. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{f|_{\partial B}=g}
 \]
@@ -382,16 +499,25 @@ and in particular
 f\in M(g).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4 and <1>6 give equality on the boundary.
 Step <1>3 gives the $1$-Lipschitz property.
 Thus $f$ belongs to the set $M(g)$.
 In particular, $M(g)$ is nonempty.
+
 :::
 
-<1>8. The family $M(g)$ is equicontinuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The family $M(g)$ is equicontinuous.
+
+
+::: pf-proof
+
 Every $h\in M(g)$ is $1$-Lipschitz.
 Thus for every $\varepsilon>0$, choosing
 \[
@@ -408,11 +534,18 @@ gives
 \varepsilon
 \]
 simultaneously for every $h\in M(g)$.
+
 :::
 
-<1>9. The family $M(g)$ is uniformly bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+The family $M(g)$ is uniformly bounded.
+
+
+::: pf-proof
+
 Fix one point
 \[
 y_0\in\partial B.
@@ -447,11 +580,18 @@ Therefore
 2+|g(y_0)|
 \]
 for every $h\in M(g)$.
+
 :::
 
-<1>10. The set $M(g)$ is closed in $C(B)$ for the supremum norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $M(g)$ is closed in $C(B)$ for the supremum norm.
+
+
+::: pf-proof
+
 Let
 \[
 h_n\in M(g)
@@ -490,37 +630,62 @@ Thus
 h\in M(g).
 \]
 Hence $M(g)$ is closed.
+
 :::
 
-<1>11. The ball $B$ is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ball $B$ is compact.
+
+
+::: pf-proof
+
 It is closed and bounded in the finite-dimensional Euclidean space $\mathbb R^n$.
 Thus the Heine--Borel theorem applies.
+
 :::
 
-<1>12. The closure of $M(g)$ in $C(B)$ is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The closure of $M(g)$ in $C(B)$ is compact.
+
+
+::: pf-proof
+
 By steps <1>8--<1>9, the family is equicontinuous and uniformly bounded.
 By step <1>11, the domain $B$ is compact.
 The Arzelà--Ascoli theorem therefore says that the closure of $M(g)$ in the supremum norm is compact.
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{M(g)\text{ is compact in }C(B)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10, the set $M(g)$ is already closed.
 Thus its closure is itself.
 Step <1>12 then implies compactness.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 prove part (a), and steps <1>8--<1>13 prove part (b).
+
 :::
+
 :::

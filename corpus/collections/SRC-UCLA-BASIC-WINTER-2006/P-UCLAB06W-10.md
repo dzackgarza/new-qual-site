@@ -22,10 +22,15 @@ Show that there exists an ordered orthonormal basis for $V$ such that the matrix
 You may not use canonical-form theorems without proof.
 :::
 
-::: {.solution}
-<1>1. Every linear operator on a nonzero finite-dimensional complex vector space has an eigenvector.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every linear operator on a nonzero finite-dimensional complex vector space has an eigenvector.
+
+
+::: pf-proof
+
 Let $R$ be a linear operator on a nonzero complex vector space of dimension $n$. Its characteristic polynomial
 $$
 \det(\lambda I-R)
@@ -35,15 +40,27 @@ $$
 \det(\lambda I-R)=0,
 $$
 and therefore $\ker(\lambda I-R)\ne0$. Any nonzero vector in this kernel is an eigenvector of $R$.
+
 :::
 
-<1>2. The assertion holds in dimensions $0$ and $1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assertion holds in dimensions $0$ and $1$.
+
+
+::: pf-proof
+
 In dimension $0$ there is nothing to prove. In dimension $1$, every unit vector is an orthonormal basis and every $1\times1$ matrix is upper triangular.
+
 :::
 
-<1>3. Assume the assertion holds in dimension $n-1$, and let $\dim V=n\ge2$. Choose a unit eigenvector $e_1$ of $T$, with
+:::
+
+::: pf-step
+
+Assume the assertion holds in dimension $n-1$, and let $\dim V=n\ge2$. Choose a unit eigenvector $e_1$ of $T$, with
 $$
 T(e_1)=\lambda e_1.
 $$
@@ -56,37 +73,60 @@ $$
 R=P_W\circ T|_W:W\to W.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a nonzero eigenvector of $T$; rescale it to norm $1$. The orthogonal complement $W$ has dimension $n-1$. Orthogonal projection onto $W$ exists in finite-dimensional inner-product spaces, so the displayed formula defines a linear operator $R$ on $W$.
+
 :::
 
-<1>4. There is an ordered orthonormal basis
+:::
+
+::: pf-step
+
+There is an ordered orthonormal basis
 $$
 e_2,\ldots,e_n
 $$
 of $W$ in which the matrix of $R$ is upper triangular.
 
-::: {.proof}
+
+::: pf-proof
+
 The space $W$ has dimension $n-1$. Apply the induction hypothesis to the linear operator $R:W\to W$.
+
 :::
 
-<1>5. The ordered list
+:::
+
+::: pf-step
+
+The ordered list
 $$
 e_1,e_2,\ldots,e_n
 $$
 is an orthonormal basis of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 The vector $e_1$ is unit, and $e_2,\ldots,e_n$ is an orthonormal basis of $e_1^\perp$. Hence all $n$ vectors are pairwise orthonormal. Since $V=\CC e_1\oplus e_1^\perp$, they span $V$.
+
 :::
 
-<1>6. In the basis from step <1>5, the matrix $A=(a_{ij})$ of $T$ satisfies
+:::
+
+::: pf-step
+
+In the basis from step <1>5, the matrix $A=(a_{ij})$ of $T$ satisfies
 $$
 a_{ij}=0
 \qquad\text{whenever }j<i.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the first column,
 $$
 T(e_1)=\lambda e_1,
@@ -116,11 +156,15 @@ $$
 a_{ij}=0
 $$
 whenever $j<i$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the base cases, and steps <1>3--<1>6 prove the induction step. Thus every finite-dimensional complex linear operator has an ordered orthonormal basis in which its matrix is upper triangular, without invoking a canonical-form theorem.
+
 :::
+
 :::

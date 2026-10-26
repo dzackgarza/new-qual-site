@@ -23,7 +23,6 @@ The order of a matrix $A$ is the smallest integer $k>0$ such that $A^k=I$; if no
 Prove that there exist ten distinct real $2\times2$ matrices which are pairwise commuting and all have the same finite order.
 :::
 
-::: {.solution}
 For
 \[
 k=1,\ldots,10,
@@ -44,23 +43,36 @@ R_k
 }
 \]
 
-<1>1. Each $R_k$ is a real $2\times2$ rotation matrix.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Each $R_k$ is a real $2\times2$ rotation matrix.
+
+
+::: pf-proof
+
 Its entries are real, and it is the standard matrix for rotation through angle
 \[
 \theta_k.
 \]
+
 :::
 
-<1>2. For any real angles $\alpha,\beta$,
+:::
+
+::: pf-step
+
+For any real angles $\alpha,\beta$,
 \[
 R(\alpha)R(\beta)
 =
 R(\alpha+\beta).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the standard rotation matrices and use the angle-addition formulas
 \[
 \cos(\alpha+\beta)
@@ -72,15 +84,22 @@ Multiply the standard rotation matrices and use the angle-addition formulas
 =
 \sin\alpha\cos\beta+\cos\alpha\sin\beta.
 \]
+
 :::
 
-<1>3. The matrices
+:::
+
+::: pf-step
+
+The matrices
 \[
 R_1,\ldots,R_{10}
 \]
 are pairwise commuting.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 R_jR_k
@@ -89,15 +108,22 @@ R(\theta_j+\theta_k)
 =
 R_kR_j.
 \]
+
 :::
 
-<1>4. The matrices
+:::
+
+::: pf-step
+
+The matrices
 \[
 R_1,\ldots,R_{10}
 \]
 are pairwise distinct.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 R_j=R_k,
@@ -122,20 +148,32 @@ this forces
 \[
 j=k.
 \]
+
 :::
 
-<1>5. For every positive integer $m$,
+:::
+
+::: pf-step
+
+For every positive integer $m$,
 \[
 R_k^m
 =
 R\left(\frac{2\pi km}{11}\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>2 repeatedly.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 R_k^{11}=I
 \]
@@ -144,7 +182,9 @@ for every
 k=1,\ldots,10.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 R_k^{11}
@@ -153,9 +193,14 @@ R(2\pi k)
 =
 I.
 \]
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 \[
 1\le m<11,
 \]
@@ -164,7 +209,9 @@ then
 R_k^m\ne I.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 R_k^m=I,
@@ -194,18 +241,30 @@ contradicting
 \[
 1\le m<11.
 \]
+
 :::
 
-<1>8. Therefore every $R_k$ has order exactly
+:::
+
+::: pf-step
+
+Therefore every $R_k$ has order exactly
 \[
 \boxed{11}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 shows the order divides $11$, while step <1>7 shows no smaller positive exponent gives the identity.
+
 :::
 
-<1>9. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 R_1,\ldots,R_{10}
@@ -213,13 +272,19 @@ R_1,\ldots,R_{10}
 \]
 are ten distinct pairwise commuting real $2\times2$ matrices, all of the same finite order.
 
-::: {.proof}
+
+::: pf-proof
+
 Distinctness is step <1>4, pairwise commutativity is step <1>3, and common order $11$ is step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required construction.
+
 :::
+
 :::

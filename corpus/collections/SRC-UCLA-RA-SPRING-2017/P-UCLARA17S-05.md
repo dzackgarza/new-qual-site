@@ -27,10 +27,15 @@ Let $d\nu$ be a finite complex Borel measure on $[0,1]$ absolutely continuous wi
 \]
 :::
 
-::: {.solution}
-<1>1. The assertion is false as written for complex measures on the closed interval $[0,1]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The assertion is false as written for complex measures on the closed interval $[0,1]$.
+
+
+::: pf-proof
+
 Let
 $$
 \mu\coloneqq\delta_0-\delta_1.
@@ -55,23 +60,35 @@ $$
 \widehat\nu(n)=1
 $$
 for every integer $n$. Hence the printed conclusion fails.
+
 :::
 
-<1>2. The failure in step <1>1 comes from the fact that the characters
+:::
+
+::: pf-step
+
+The failure in step <1>1 comes from the fact that the characters
 $$
 x\longmapsto e^{2\pi i n x}
 $$
 identify the two distinct endpoints $0$ and $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every integer $n$,
 $$
 e^{2\pi i n\cdot0}=e^{2\pi i n\cdot1}=1.
 $$
 Thus the Fourier coefficients cannot distinguish $\delta_0$ from $\delta_1$, which is exactly the cancellation used in step <1>1.
+
 :::
 
-<1>3. The intended statement is true on the circle $\mathbb T=\RR/\ZZ$ (equivalently on the half-open interval $[0,1)$): if $\mu$ is a finite complex Borel measure on $\mathbb T$ with
+:::
+
+::: pf-step
+
+The intended statement is true on the circle $\mathbb T=\RR/\ZZ$ (equivalently on the half-open interval $[0,1)$): if $\mu$ is a finite complex Borel measure on $\mathbb T$ with
 $$
 \widehat\mu(n)\to0
 \qquad(n\to\infty)
@@ -81,7 +98,9 @@ $$
 \boxed{\widehat\nu(n)\to0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the Radon--Nikodym theorem for complex measures, write
 $$
 d\nu=f\,d\mu
@@ -116,11 +135,15 @@ $$
 Since $\varepsilon>0$ is arbitrary, $\widehat\nu(n)\to0$.
 
 The same proof applies on $[0,1)$ after identifying it Borel-isomorphically with $\mathbb T$ by $x\mapsto e^{2\pi i x}$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 refutes the literal source statement, and step <1>3 proves the corrected periodic version that the retained source solution attempts to use.
+
 :::
+
 :::

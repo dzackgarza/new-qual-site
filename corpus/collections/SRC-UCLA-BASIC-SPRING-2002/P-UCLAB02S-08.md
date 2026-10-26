@@ -27,7 +27,6 @@ Prove that
 \]
 :::
 
-::: {.solution}
 Let
 \[
 \dim V=n
@@ -35,7 +34,11 @@ Let
 \dim W=r.
 \]
 
-<1>1. Choose a basis
+::: pf
+
+::: pf-step
+
+Choose a basis
 \[
 w_1,\ldots,w_r
 \]
@@ -45,11 +48,18 @@ w_1,\ldots,w_r,v_{r+1},\ldots,v_n
 \]
 of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every basis of a subspace of a finite-dimensional vector space extends to a basis of the ambient vector space.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 w_1^*,\ldots,w_r^*,v_{r+1}^*,\ldots,v_n^*
 \]
@@ -60,7 +70,9 @@ v_{r+1}^*,\ldots,v_n^*
 \]
 all belong to $W^0$.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 j\ge r+1
@@ -82,15 +94,22 @@ Thus
 \[
 v_j^*\in W^0.
 \]
+
 :::
 
-<1>3. The functionals
+:::
+
+::: pf-step
+
+The functionals
 \[
 v_{r+1}^*,\ldots,v_n^*
 \]
 span $W^0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 f\in W^0.
@@ -123,24 +142,38 @@ f
 \sum_{j=r+1}^n b_jv_j^*.
 \]
 Thus the displayed functionals span $W^0$.
+
 :::
 
-<1>4. The functionals
+:::
+
+::: pf-step
+
+The functionals
 \[
 v_{r+1}^*,\ldots,v_n^*
 \]
 are linearly independent.
 
-::: {.proof}
+
+::: pf-proof
+
 They are part of the dual basis, so they are linearly independent.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \dim W^0=n-r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4,
 \[
 v_{r+1}^*,\ldots,v_n^*
@@ -151,14 +184,21 @@ There are exactly
 n-r
 \]
 such functionals.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\dim V=\dim W+\dim W^0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \dim V=n
@@ -178,11 +218,15 @@ r+(n-r)
 =
 \dim V.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required dimension formula.
+
 :::
+
 :::

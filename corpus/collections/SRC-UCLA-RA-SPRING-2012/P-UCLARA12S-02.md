@@ -25,8 +25,11 @@ Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corr
 (b) If $A\in\mathcal B(X)$ and $E\in\mathcal B(Y)$, prove that $A\times E\in\mathcal B(X\times Y)$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \mathcal F
 \coloneqq
@@ -34,7 +37,9 @@ Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corr
 \]
 Then $\mathcal F$ is a $\sigma$-algebra on $Y$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f^{-1}(Y)=X,
@@ -60,11 +65,18 @@ f^{-1}\left(\bigcup_{n=1}^\infty E_n\right)
 \mathcal B(X).
 \]
 Thus $\mathcal F$ is closed under countable unions.
+
 :::
 
-<1>2. Every open subset of $Y$ belongs to $\mathcal F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every open subset of $Y$ belongs to $\mathcal F$.
+
+
+::: pf-proof
+
 If $U\subset Y$ is open, continuity of $f$ gives
 \[
 f^{-1}(U)
@@ -74,22 +86,34 @@ open in $X$. Hence
 f^{-1}(U)\in\mathcal B(X),
 \]
 so $U\in\mathcal F$.
+
 :::
 
-<1>3. If $E\in\mathcal B(Y)$, then
+:::
+
+::: pf-step
+
+If $E\in\mathcal B(Y)$, then
 \[
 \boxed{f^{-1}(E)\in\mathcal B(X)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1 and <1>2, $\mathcal F$ is a $\sigma$-algebra containing every open subset of $Y$. Therefore
 \[
 \mathcal B(Y)\subset\mathcal F.
 \]
 The definition of $\mathcal F$ gives the claim.
+
 :::
 
-<1>4. The coordinate projections
+:::
+
+::: pf-step
+
+The coordinate projections
 \[
 \pi_X:X\times Y\to X,
 \qquad
@@ -97,11 +121,18 @@ The definition of $\mathcal F$ gives the claim.
 \]
 are continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 This is part of the definition of the product topology: the product topology is the coarsest topology on $X\times Y$ for which both coordinate projections are continuous.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 A\in\mathcal B(X),
 \qquad
@@ -115,11 +146,18 @@ then
 \mathcal B(X\times Y).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply part (a), proved in step <1>3, to the continuous maps $\pi_X$ and $\pi_Y$ from step <1>4.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 A\times E
@@ -128,7 +166,9 @@ A\times E
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By elementary set theory,
 \[
 A\times E
@@ -138,11 +178,15 @@ A\times E
 \pi_Y^{-1}(E).
 \]
 Both inverse images are Borel by step <1>5, and Borel sets are closed under finite intersections.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

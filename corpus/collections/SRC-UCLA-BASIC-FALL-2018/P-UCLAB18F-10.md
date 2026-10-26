@@ -28,17 +28,27 @@ A=\begin{pmatrix}
 Compute $\lim_{n\to\infty}A^n$.
 :::
 
-::: {.solution}
-<1>1. The eigenvalues of $A$ are
+::: pf
+
+::: pf-step
+
+The eigenvalues of $A$ are
 \[
 1,\qquad \frac12,\qquad \frac13.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $A$ is lower triangular, so its eigenvalues are its diagonal entries.
+
 :::
 
-<1>2. Corresponding eigenvectors are
+:::
+
+::: pf-step
+
+Corresponding eigenvectors are
 \[
 v_1=
 \begin{pmatrix}
@@ -62,7 +72,9 @@ v_{1/3}=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 Av_1=v_1,
@@ -100,11 +112,18 @@ Av_{1/3}
 1
 \end{pmatrix}.
 \]
+
 :::
 
-<1>3. The vectors in step <1>2 form a basis of $\mathbb R^3$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vectors in step <1>2 form a basis of $\mathbb R^3$.
+
+
+::: pf-proof
+
 The matrix with these vectors as columns is
 \[
 S=
@@ -116,9 +135,14 @@ S=
 \]
 which is lower triangular with determinant $1$.
 Hence $S$ is invertible.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 A
 =
@@ -131,12 +155,19 @@ S
 S^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $S$ are eigenvectors of $A$ for the three eigenvalues listed in step <1>1.
 Thus this is the diagonalization of $A$ in the eigenbasis from step <1>3.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 A^n
 =
@@ -149,11 +180,18 @@ S
 S^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Raise the diagonalization in step <1>4 to the $n$th power.
+
 :::
 
-<1>6. As $n\to\infty$,
+:::
+
+::: pf-step
+
+As $n\to\infty$,
 \[
 A^n
 \longrightarrow
@@ -166,7 +204,9 @@ S
 S^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 2^{-n}\to0
@@ -178,9 +218,14 @@ the diagonal matrix in step <1>5 converges entrywise to
 \operatorname{diag}(1,0,0).
 \]
 Multiplication by the fixed matrices $S$ and $S^{-1}$ is continuous.
+
 :::
 
-<1>7. The matrix in step <1>6 equals
+:::
+
+::: pf-step
+
+The matrix in step <1>6 equals
 \[
 \boxed{
 \begin{pmatrix}
@@ -191,7 +236,9 @@ Multiplication by the fixed matrices $S$ and $S^{-1}$ is continuous.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The limit is the projection onto
 \[
 \operatorname{span}\{v_1\}
@@ -238,9 +285,14 @@ x_1
 \end{pmatrix},
 \]
 whose standard matrix is the displayed matrix.
+
 :::
 
-<1>8. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \lim_{n\to\infty}A^n
@@ -253,13 +305,19 @@ whose standard matrix is the displayed matrix.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>6--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required limit.
+
 :::
+
 :::

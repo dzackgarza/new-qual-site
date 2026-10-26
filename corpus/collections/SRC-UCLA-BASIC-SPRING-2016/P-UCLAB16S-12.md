@@ -26,13 +26,18 @@ Av_k=(2k-1)v_k
 Prove that $v_1+2v_2$ is orthogonal to $3v_3+4v_4$.
 :::
 
-::: {.solution}
-<1>1. If $i\ne j$, then
+::: pf
+
+::: pf-step
+
+If $i\ne j$, then
 \[
 \boxed{\langle v_i,v_j\rangle=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $A$ is real symmetric, so
 \[
 \langle Av_i,v_j\rangle
@@ -66,9 +71,14 @@ it follows that
 \[
 \langle v_i,v_j\rangle=0.
 \]
+
 :::
 
-<1>2. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 v_1\perp v_3,
 \qquad
@@ -79,14 +89,21 @@ v_2\perp v_3,
 v_2\perp v_4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 to the four pairs
 \[
 (1,3),\ (1,4),\ (2,3),\ (2,4).
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \begin{aligned}
 \langle v_1+2v_2,\,3v_3+4v_4\rangle
@@ -101,17 +118,31 @@ Apply step <1>1 to the four pairs
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the inner product bilinearly.
+
 :::
 
-<1>4. Every term on the right-hand side of step <1>3 vanishes.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every term on the right-hand side of step <1>3 vanishes.
+
+
+::: pf-proof
+
 This is exactly step <1>2.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \langle v_1+2v_2,\,3v_3+4v_4\rangle
@@ -120,7 +151,9 @@ This is exactly step <1>2.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3--<1>4.
 Thus
 \[
@@ -130,11 +163,15 @@ is orthogonal to
 \[
 3v_3+4v_4.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

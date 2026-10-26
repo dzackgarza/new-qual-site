@@ -20,38 +20,57 @@ Let $-\infty<a<b<\infty$.
 Prove that a continuous function $f:[a,b]\to\mathbb R$ attains all values in $[f(a),f(b)]$.
 :::
 
-::: {.solution}
 Let $c$ be any real number lying between $f(a)$ and $f(b)$. If $c=f(a)$ or $c=f(b)$ there is nothing to prove, so assume $c$ lies strictly between the endpoint values. After exchanging $a$ and $b$ in the argument if necessary, assume
 $$
 f(a)<c<f(b).
 $$
 
-<1>1. The set
+::: pf
+
+::: pf-step
+
+The set
 $$
 E=\{x\in[a,b]:f(x)\le c\}
 $$
 is nonempty and bounded above.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f(a)<c$, one has $a\in E$, so $E$ is nonempty. Also $E\subseteq[a,b]$, so $b$ is an upper bound.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 s=\sup E.
 $$
 Then $s\in[a,b]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the least-upper-bound property of $\RR$ gives a real number $s=\sup E$. Since every point of $E$ lies in $[a,b]$ and $a\in E$, one has $a\le s\le b$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 f(s)\le c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of supremum, for every $n\ge1$ there exists $x_n\in E$ such that
 $$
 s-\frac1n<x_n\le s.
@@ -64,14 +83,21 @@ for every $n$. Continuity of $f$ at $s$ gives
 $$
 f(s)=\lim_{n\to\infty}f(x_n)\le c.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 f(s)\ge c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that $f(s)<c$. By continuity at $s$, there exists $\delta>0$ such that
 $$
 \abs{x-s}<\delta
@@ -83,20 +109,31 @@ $$
 x\in(s,\min\{s+\delta,b\}).
 $$
 Then $f(x)<c$, so $x\in E$, contradicting that $s$ is an upper bound for $E$.
+
 :::
 
-<1>5. Therefore there exists $s\in[a,b]$ such that
+:::
+
+::: pf-step
+
+Therefore there exists $s\in[a,b]$ such that
 $$
 f(s)=c.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3 and <1>4 give both inequalities $f(s)\le c$ and $f(s)\ge c$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The value $c$ was arbitrary between $f(a)$ and $f(b)$. Step <1>5 therefore shows that $f$ attains every intermediate value. If $f(b)<f(a)$, the same argument applies after reversing the endpoint roles.
+
 :::
+
 :::

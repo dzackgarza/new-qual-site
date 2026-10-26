@@ -24,8 +24,11 @@ F(x)=\int_0^\infty\frac{1-e^{-tx}}{t^{3/2}}\,dt.
 Show that $F:(0,\infty)\to(0,\infty)$ is well-defined, bijective, of class $C^1$, and has a $C^1$ inverse.
 :::
 
-::: {.solution}
-<1>1. For every $x>0$, the improper integral
+::: pf
+
+::: pf-step
+
+For every $x>0$, the improper integral
 \[
 F(x)
 =
@@ -35,7 +38,9 @@ F(x)
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral at $t=1$.
 
 For
@@ -76,9 +81,14 @@ t^{-3/2},
 \]
 which is integrable on $[1,\infty)$.
 Thus the integral converges absolutely.
+
 :::
 
-<1>2. For $x>0$, the substitution
+:::
+
+::: pf-step
+
+For $x>0$, the substitution
 \[
 u=tx
 \]
@@ -92,7 +102,9 @@ F(x)
 \,du.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 With
 \[
 t=\frac ux,
@@ -108,9 +120,14 @@ t^{-3/2}dt
 x^{1/2}u^{-3/2}\,du.
 \]
 Substitute into the convergent improper integral from step <1>1.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_0^\infty
 \frac{1-e^{-u}}{u^{3/2}}
@@ -119,7 +136,9 @@ Substitute into the convergent improper integral from step <1>1.
 2\sqrt{\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate by parts on
 \[
 [\varepsilon,R]
@@ -183,15 +202,22 @@ the final integral equals
 \[
 2\sqrt{\pi}.
 \]
+
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{F(x)=2\sqrt{\pi x}}
 \]
 for every $x>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>3:
 \[
 F(x)
@@ -200,15 +226,22 @@ F(x)
 =
 2\sqrt{\pi x}.
 \]
+
 :::
 
-<1>5. The map
+:::
+
+::: pf-step
+
+The map
 \[
 F:(0,\infty)\to(0,\infty)
 \]
 is bijective.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 F(x)=2\sqrt{\pi}\sqrt{x}.
@@ -225,9 +258,14 @@ and
 \]
 Since $F$ is continuous and strictly increasing, its image is exactly $(0,\infty)$.
 Thus it is surjective.
+
 :::
 
-<1>6. The function $F$ is of class $C^1$ on $(0,\infty)$, with
+:::
+
+::: pf-step
+
+The function $F$ is of class $C^1$ on $(0,\infty)$, with
 \[
 \boxed{
 F'(x)
@@ -236,7 +274,9 @@ F'(x)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the explicit formula from step <1>4:
 \[
 F(x)
@@ -252,9 +292,14 @@ F'(x)
 \sqrt{\pi}\,x^{-1/2}.
 \]
 This derivative is continuous for $x>0$.
+
 :::
 
-<1>7. The inverse of $F$ is
+:::
+
+::: pf-step
+
+The inverse of $F$ is
 \[
 \boxed{
 F^{-1}(y)
@@ -265,7 +310,9 @@ F^{-1}(y)
 y>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solve
 \[
 y=2\sqrt{\pi x}
@@ -278,11 +325,18 @@ so
 \[
 x=\frac{y^2}{4\pi}.
 \]
+
 :::
 
-<1>8. The inverse is of class $C^1$ on $(0,\infty)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The inverse is of class $C^1$ on $(0,\infty)$.
+
+
+::: pf-proof
+
 By step <1>7,
 \[
 (F^{-1})'(y)
@@ -290,11 +344,15 @@ By step <1>7,
 \frac{y}{2\pi},
 \]
 which is continuous on $(0,\infty)$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves well-definedness, step <1>5 proves bijectivity, step <1>6 proves that $F$ is $C^1$, and steps <1>7--<1>8 prove that its inverse is $C^1$.
+
 :::
+
 :::

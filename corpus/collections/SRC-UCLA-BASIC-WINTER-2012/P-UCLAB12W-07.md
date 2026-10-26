@@ -19,34 +19,51 @@ Compute the number of invertible linear maps $V\to V$.
 A lengthy algebraic expression is acceptable, provided you explain why it is correct.
 :::
 
-::: {.solution}
 Fix an ordered basis
 $$
 e_1,\ldots,e_n
 $$
 of $V$.
 
-<1>1. A linear map $T:V\to V$ is invertible if and only if
+::: pf
+
+::: pf-step
+
+A linear map $T:V\to V$ is invertible if and only if
 $$
 T(e_1),\ldots,T(e_n)
 $$
 is an ordered basis of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $T$ is invertible, it preserves linear independence, so the images of the basis vectors form a basis. Conversely, if the images form a basis, then $T$ maps a basis to a basis and is therefore an isomorphism.
+
 :::
 
-<1>2. There are
+:::
+
+::: pf-step
+
+There are
 $$
 p^n-1
 $$
 choices for $T(e_1)$.
 
-::: {.proof}
+
+::: pf-proof
+
 The vector space $V$ has $p^n$ elements. The first vector of an ordered basis may be any nonzero vector, so there are $p^n-1$ choices.
+
 :::
 
-<1>3. After linearly independent vectors
+:::
+
+::: pf-step
+
+After linearly independent vectors
 $$
 T(e_1),\ldots,T(e_k)
 $$
@@ -56,16 +73,25 @@ p^n-p^k
 $$
 choices for $T(e_{k+1})$.
 
-::: {.proof}
+
+::: pf-proof
+
 The span of $k$ linearly independent vectors is a $k$-dimensional subspace of $V$, hence has exactly $p^k$ elements. The next vector must lie outside this span, so there are $p^n-p^k$ possible choices.
+
 :::
 
-<1>4. The number of ordered bases of $V$ is
+:::
+
+::: pf-step
+
+The number of ordered bases of $V$ is
 $$
 \prod_{k=0}^{n-1}(p^n-p^k).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives the factor $p^n-p^0$ for the first basis vector. Step <1>3 gives, successively, the factors
 $$
 p^n-p,
@@ -75,9 +101,14 @@ p^n-p^2,
 p^n-p^{n-1}.
 $$
 Multiplying the independent successive numbers of choices gives the displayed product.
+
 :::
 
-<1>5. Therefore the number of invertible linear maps $V\to V$ is
+:::
+
+::: pf-step
+
+Therefore the number of invertible linear maps $V\to V$ is
 $$
 \boxed{
 \abs{\operatorname{GL}(V)}
@@ -86,13 +117,19 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, assigning an invertible linear map is equivalent to choosing the ordered basis consisting of the images of the fixed basis $e_1,\ldots,e_n$. Step <1>4 counts those ordered bases.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested count.
+
 :::
+
 :::

@@ -27,20 +27,25 @@ Prove that the limit
 exists.
 :::
 
-::: {.solution}
 Define
 \[
 a_n=h_n-\ln n.
 \]
 
-<1>1. For every $n\ge1$,
+::: pf
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 \ln\left(1+\frac1n\right)
 >
 \frac1{n+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $x>0$,
 \[
 \ln(1+x)
@@ -71,11 +76,18 @@ Then
 =
 \frac1{n+1}.
 \]
+
 :::
 
-<1>2. The sequence $(a_n)$ is strictly decreasing.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ is strictly decreasing.
+
+
+::: pf-proof
+
 Compute
 \[
 \begin{aligned}
@@ -103,16 +115,23 @@ Thus
 \[
 a_{n+1}<a_n.
 \]
+
 :::
 
-<1>3. For every $n\ge1$,
+:::
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 h_n
 \ge
 \int_1^{n+1}\frac{dx}{x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 x\longmapsto\frac1x
@@ -142,11 +161,18 @@ Summing from $k=1$ to $n$ gives
 =
 h_n.
 \]
+
 :::
 
-<1>4. The sequence $(a_n)$ is bounded below.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ is bounded below.
+
+
+::: pf-proof
+
 By step <1>3,
 \[
 h_n
@@ -172,17 +198,29 @@ Therefore
 a_n>0
 \]
 for every $n$.
+
 :::
 
-<1>5. The sequence $(a_n)$ converges.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ converges.
+
+
+::: pf-proof
+
 By step <1>2, $(a_n)$ is decreasing.
 By step <1>4, it is bounded below.
 The monotone convergence theorem for real sequences therefore gives the existence of a finite limit.
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \gamma
@@ -192,13 +230,19 @@ The monotone convergence theorem for real sequences therefore gives the existenc
 \]
 exists.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the limit of the convergent sequence $a_n$ from step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

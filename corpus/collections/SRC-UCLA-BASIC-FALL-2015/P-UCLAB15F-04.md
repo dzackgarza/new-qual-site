@@ -29,7 +29,6 @@ f(x):=\lim_{n\to\infty}f_n(x)
 exists for all $x\ge0$ and identify $f$ explicitly.
 :::
 
-::: {.solution}
 Define the Volterra operator
 \[
 (Kh)(x)=\int_0^x h(t)e^{-2t}\,dt
@@ -39,14 +38,20 @@ and
 g(x)=e^{-2x}.
 \]
 
-<1>1. For every $n\ge2$,
+::: pf
+
+::: pf-step
+
+For every $n\ge2$,
 \[
 f_n
 =
 \sum_{j=0}^{n-2}K^jg.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=2$,
 \[
 f_2=g+Kf_1=g,
@@ -68,9 +73,14 @@ K\left(
 \end{aligned}
 \]
 Thus the formula follows by induction.
+
 :::
 
-<1>2. Fix $R>0$.
+:::
+
+::: pf-step
+
+Fix $R>0$.
 For every integer $j\ge0$ and every $x\in[0,R]$,
 \[
 |K^jg(x)|
@@ -80,7 +90,9 @@ For every integer $j\ge0$ and every $x\in[0,R]$,
 \frac{R^j}{j!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction on $j$.
 For $j=0$,
 \[
@@ -108,15 +120,22 @@ Then
 \end{aligned}
 \]
 because $e^{-2t}\le1$.
+
 :::
 
-<1>3. The series
+:::
+
+::: pf-step
+
+The series
 \[
 \sum_{j=0}^{\infty}K^jg
 \]
 converges uniformly on every compact interval $[0,R]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 |K^jg(x)|
@@ -132,9 +151,14 @@ e^R
 \]
 converges.
 The Weierstrass $M$-test therefore gives uniform convergence.
+
 :::
 
-<1>4. For every $x\ge0$, the limit
+:::
+
+::: pf-step
+
+For every $x\ge0$, the limit
 \[
 f(x)=\lim_{n\to\infty}f_n(x)
 \]
@@ -143,13 +167,20 @@ exists, and
 f=\sum_{j=0}^{\infty}K^jg.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Given $x\ge0$, choose $R\ge x$.
 By step <1>1, $f_n$ is the sequence of partial sums of the series in step <1>3.
 Uniform convergence on $[0,R]$ therefore gives convergence at the point $x$.
+
 :::
 
-<1>5. The limit function satisfies the integral equation
+:::
+
+::: pf-step
+
+The limit function satisfies the integral equation
 \[
 f(x)
 =
@@ -158,7 +189,9 @@ e^{-2x}
 \int_0^x f(t)e^{-2t}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $R>0$.
 By step <1>3, $f_n\to f$ uniformly on $[0,R]$.
 The recursion gives
@@ -172,9 +205,14 @@ e^{-2x}
 Since multiplication by $e^{-2t}$ preserves uniform convergence, the integrands converge uniformly on $[0,R]$.
 Passing to the limit yields the displayed equation for every $x\in[0,R]$.
 Since $R$ is arbitrary, it holds for all $x\ge0$.
+
 :::
 
-<1>6. The function $f$ is continuously differentiable and satisfies
+:::
+
+::: pf-step
+
+The function $f$ is continuously differentiable and satisfies
 \[
 f'(x)
 =
@@ -185,7 +223,9 @@ e^{-2x}f(x),
 f(0)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integral equation in step <1>5 shows that $f$ is continuous.
 Therefore
 \[
@@ -204,9 +244,14 @@ At $x=0$,
 \[
 f(0)=1.
 \]
+
 :::
 
-<1>7. Put
+:::
+
+::: pf-step
+
+Put
 \[
 u(x)=2-f(x).
 \]
@@ -217,7 +262,9 @@ u'(x)=e^{-2x}u(x),
 u(0)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>6,
 \[
 \begin{aligned}
@@ -236,9 +283,14 @@ Also
 \[
 u(0)=2-f(0)=1.
 \]
+
 :::
 
-<1>8. The solution of the equation in step <1>7 is
+:::
+
+::: pf-step
+
+The solution of the equation in step <1>7 is
 \[
 u(x)
 =
@@ -247,7 +299,9 @@ u(x)
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $u(0)=1\ne0$, solve the separable equation:
 \[
 \frac{u'(x)}{u(x)}
@@ -269,9 +323,14 @@ Since $u(0)=1$,
 \frac{1-e^{-2x}}2.
 \]
 Exponentiation gives the formula.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f(x)
@@ -283,17 +342,23 @@ f(x)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 f=2-u.
 \]
 Substitute the formula from step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves existence of the pointwise limit for all $x\ge0$, and step <1>9 identifies it explicitly.
+
 :::
+
 :::

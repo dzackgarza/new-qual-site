@@ -25,7 +25,6 @@ $$
 Prove that there exists a differentiable function $f ( x , y )$ defined in an open neighborhood N of $( 1 , 1 )$ in $\mathbf { R } ^ { 2 }$ such that $f ( 1 , 1 ) = 1$ and $( x , y , f ( x , y ) )$ lies in S for all $( x , y ) \in \mathcal { N }$
 :::
 
-::: {.solution}
 Define
 \[
 G(x,y,z)
@@ -37,12 +36,18 @@ Then
 S=G^{-1}(0).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 G(1,1,1)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives
 \[
 1^2\cdot1^3+1^3\cdot1+2\cdot1\cdot1^4-4
@@ -50,16 +55,23 @@ Direct substitution gives
 1+1+2-4
 =0.
 \]
+
 :::
 
-<1>2. The partial derivative of $G$ with respect to $z$ is
+:::
+
+::: pf-step
+
+The partial derivative of $G$ with respect to $z$ is
 \[
 G_z(x,y,z)
 =
 x^3+8yz^3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the polynomial term by term with respect to $z$:
 \[
 \frac{\partial}{\partial z}(x^2y^3)=0,
@@ -71,14 +83,21 @@ and
 \[
 \frac{\partial}{\partial z}(2yz^4)=8yz^3.
 \]
+
 :::
 
-<1>3. At the point $(1,1,1)$,
+:::
+
+::: pf-step
+
+At the point $(1,1,1)$,
 \[
 \boxed{G_z(1,1,1)=9\ne0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 G_z(1,1,1)
@@ -88,16 +107,28 @@ G_z(1,1,1)
 1+8
 =9.
 \]
+
 :::
 
-<1>4. The function $G$ is continuously differentiable near $(1,1,1)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $G$ is continuously differentiable near $(1,1,1)$.
+
+
+::: pf-proof
+
 The function $G$ is a polynomial in $(x,y,z)$.
 Hence it is smooth, in particular $C^1$, on all of $\mathbb R^3$.
+
 :::
 
-<1>5. There exist open neighborhoods
+:::
+
+::: pf-step
+
+There exist open neighborhoods
 \[
 N\subseteq\mathbb R^2
 \]
@@ -119,7 +150,9 @@ G(x,y,f(x,y))=0
 \]
 for every $(x,y)\in N$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the implicit function theorem to
 \[
 G:\mathbb R^2\times\mathbb R\to\mathbb R
@@ -146,14 +179,21 @@ G_z(1,1,1)=9\ne0
 \]
 by step <1>3.
 Therefore the implicit function theorem gives the stated neighborhoods and function.
+
 :::
 
-<1>6. For every $(x,y)\in N$,
+:::
+
+::: pf-step
+
+For every $(x,y)\in N$,
 \[
 \boxed{(x,y,f(x,y))\in S}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 G(x,y,f(x,y))=0.
@@ -166,15 +206,19 @@ this is exactly the condition that
 \[
 (x,y,f(x,y))\in S.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the differentiable function with
 \[
 f(1,1)=1,
 \]
 and step <1>6 proves that its graph lies on the surface $S$ near $(1,1,1)$.
+
 :::
+
 :::

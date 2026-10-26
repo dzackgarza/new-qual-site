@@ -24,13 +24,18 @@ a_{n+1}=\sqrt{6+a_n}\qquad(n\ge1).
 Show that $(a_n)$ converges and determine its limit.
 :::
 
-::: {.solution}
-<1>1. For every $n\ge1$,
+::: pf
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 0\le a_n<3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The initial value satisfies
 \[
 a_1=0<3.
@@ -52,11 +57,18 @@ so
 3.
 \]
 Thus the claim follows by induction.
+
 :::
 
-<1>2. The sequence $(a_n)$ is increasing.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ is increasing.
+
+
+::: pf-proof
+
 We prove
 \[
 a_{n+1}\ge a_n.
@@ -85,25 +97,39 @@ so in fact
 \[
 a_{n+1}>a_n.
 \]
+
 :::
 
-<1>3. The sequence $(a_n)$ converges.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(a_n)$ converges.
+
+
+::: pf-proof
+
 By step <1>2, $(a_n)$ is increasing.
 By step <1>1, it is bounded above by $3$.
 The monotone convergence theorem for real sequences therefore gives a limit
 \[
 L=\lim_{n\to\infty}a_n.
 \]
+
 :::
 
-<1>4. The limit $L$ satisfies
+:::
+
+::: pf-step
+
+The limit $L$ satisfies
 \[
 L=\sqrt{6+L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The recurrence gives
 \[
 a_{n+1}=\sqrt{6+a_n}.
@@ -113,14 +139,21 @@ Continuity of the square-root function yields
 \[
 L=\sqrt{6+L}.
 \]
+
 :::
 
-<1>5. The only possible nonnegative solution is
+:::
+
+::: pf-step
+
+The only possible nonnegative solution is
 \[
 \boxed{L=3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Squaring the equation from step <1>4 gives
 \[
 L^2-L-6=0.
@@ -143,20 +176,31 @@ Hence
 \[
 L=3.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{a_n\to3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves existence of the limit, and step <1>5 identifies it.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

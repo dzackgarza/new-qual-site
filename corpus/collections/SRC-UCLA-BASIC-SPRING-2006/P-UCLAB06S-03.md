@@ -26,7 +26,6 @@ converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous funct
 State clearly any facts you assume.
 :::
 
-::: {.solution}
 For
 \[
 f_n(x)=\frac{\sin(nx)}{n^{5/2}},
@@ -36,13 +35,19 @@ write
 f(x)=\sum_{n=1}^\infty f_n(x).
 \]
 
-<1>1. The series
+::: pf
+
+::: pf-step
+
+The series
 \[
 \sum_{n=1}^\infty f_n(x)
 \]
 converges uniformly on $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in\mathbb R$,
 \[
 |f_n(x)|
@@ -56,15 +61,22 @@ The scalar $p$-series
 converges.
 By the Weierstrass $M$-test, the series of functions converges uniformly on $\mathbb R$.
 In particular, it converges for every real $x$.
+
 :::
 
-<1>2. The limit function
+:::
+
+::: pf-step
+
+The limit function
 \[
 f
 \]
 is continuous on $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each function
 \[
 f_n(x)=\frac{\sin(nx)}{n^{5/2}}
@@ -72,16 +84,23 @@ f_n(x)=\frac{\sin(nx)}{n^{5/2}}
 is continuous.
 By step <1>1, the series converges uniformly.
 A uniform limit of continuous functions is continuous.
+
 :::
 
-<1>3. Each $f_n$ is continuously differentiable and
+:::
+
+::: pf-step
+
+Each $f_n$ is continuously differentiable and
 \[
 f_n'(x)
 =
 \frac{\cos(nx)}{n^{3/2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 \[
 \frac d{dx}\sin(nx)=n\cos(nx).
@@ -97,9 +116,14 @@ Therefore
 =
 \frac{\cos(nx)}{n^{3/2}}.
 \]
+
 :::
 
-<1>4. The derivative series
+:::
+
+::: pf-step
+
+The derivative series
 \[
 \sum_{n=1}^\infty f_n'(x)
 =
@@ -108,7 +132,9 @@ Therefore
 \]
 converges uniformly on $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x$,
 \[
 |f_n'(x)|
@@ -121,9 +147,14 @@ The scalar series
 \]
 converges.
 Thus the Weierstrass $M$-test gives uniform convergence of the derivative series.
+
 :::
 
-<1>5. The sum $f$ is differentiable and
+:::
+
+::: pf-step
+
+The sum $f$ is differentiable and
 \[
 \boxed{
 f'(x)
@@ -133,7 +164,9 @@ f'(x)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the standard termwise-differentiation theorem:
 if each $f_n$ is $C^1$, if
 \[
@@ -164,11 +197,18 @@ for every $n$, so
 \]
 converges.
 Therefore the theorem applies.
+
 :::
 
-<1>6. The derivative $f'$ is continuous on $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The derivative $f'$ is continuous on $\mathbb R$.
+
+
+::: pf-proof
+
 Each partial derivative term
 \[
 x\longmapsto
@@ -181,22 +221,33 @@ Therefore its sum
 f'
 \]
 is continuous.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{f\in C^1(\mathbb R)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives continuity of $f$.
 Step <1>5 gives differentiability, and step <1>6 gives continuity of the derivative.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 prove every assertion in the problem.
 The facts used are the Weierstrass $M$-test, uniform limits of continuous functions are continuous, and the standard theorem permitting termwise differentiation under uniform convergence of the derivative series.
+
 :::
+
 :::

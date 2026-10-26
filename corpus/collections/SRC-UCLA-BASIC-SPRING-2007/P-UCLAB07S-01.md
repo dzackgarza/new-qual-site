@@ -28,14 +28,19 @@ A^TAx=A^Tb.
 \]
 :::
 
-::: {.solution}
-<1>1. The matrix
+::: pf
+
+::: pf-step
+
+The matrix
 \[
 A^TA
 \]
 is positive definite.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 v\in\mathbb R^n
@@ -55,15 +60,22 @@ v^TA^TAv
 0.
 \]
 Thus $A^TA$ is positive definite.
+
 :::
 
-<1>2. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 A^TA
 \]
 is invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 A^TAv=0,
@@ -86,9 +98,14 @@ v=0.
 \]
 Hence the kernel of $A^TA$ is trivial.
 Since it is a square matrix, it is invertible.
+
 :::
 
-<1>3. The normal equations
+:::
+
+::: pf-step
+
+The normal equations
 \[
 A^TAx=A^Tb
 \]
@@ -100,11 +117,18 @@ x^*
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows immediately from invertibility in step <1>2.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 r=b-Ax^*.
 \]
@@ -113,7 +137,9 @@ Then
 A^Tr=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vector $x^*$ satisfies the normal equations, so
 \[
 A^TAx^*
@@ -129,11 +155,18 @@ This is
 \[
 A^Tr=0.
 \]
+
 :::
 
-<1>5. The residual $r$ is orthogonal to the column space of $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The residual $r$ is orthogonal to the column space of $A$.
+
+
+::: pf-proof
+
 Every vector in the column space has the form
 \[
 Ay
@@ -159,9 +192,14 @@ Thus
 \[
 r\perp\operatorname{im}A.
 \]
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in\mathbb R^n,
 \]
@@ -172,7 +210,9 @@ Ax-b
 A(x-x^*)-r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 r=b-Ax^*.
@@ -191,9 +231,14 @@ Ax-Ax^*+Ax^*-b
 =
 Ax-b.
 \]
+
 :::
 
-<1>7. The two vectors
+:::
+
+::: pf-step
+
+The two vectors
 \[
 A(x-x^*)
 \]
@@ -203,15 +248,22 @@ r
 \]
 are orthogonal.
 
-::: {.proof}
+
+::: pf-proof
+
 The first lies in
 \[
 \operatorname{im}A.
 \]
 The second is orthogonal to $\operatorname{im}A$ by step <1>5.
+
 :::
 
-<1>8. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in\mathbb R^n,
 \]
@@ -226,7 +278,9 @@ g(x)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 Ax-b
@@ -247,11 +301,18 @@ Since
 g(x)=\|Ax-b\|_2^2,
 \]
 the formula follows.
+
 :::
 
-<1>9. The vector $x^*$ is the unique minimizer of $g$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vector $x^*$ is the unique minimizer of $g$.
+
+
+::: pf-proof
+
 Step <1>8 shows
 \[
 g(x)
@@ -274,9 +335,14 @@ Thus equality holds only when
 x=x^*.
 \]
 Hence $x^*$ is the unique minimizer.
+
 :::
 
-<1>10. Therefore the vector minimizing
+:::
+
+::: pf-step
+
+Therefore the vector minimizing
 \[
 \|Ax-b\|_2^2
 \]
@@ -285,13 +351,19 @@ is exactly the unique solution of
 \boxed{A^TAx=A^Tb}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives the unique solution of the normal equations, and step <1>9 proves that this vector is exactly the unique minimizer.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

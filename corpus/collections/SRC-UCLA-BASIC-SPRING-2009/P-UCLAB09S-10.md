@@ -30,8 +30,11 @@ Problem 10. (a) Rigorously justify
 \]
 :::
 
-::: {.solution}
-<1>1. For every integer $N\ge0$ and every $x\in[0,1]$,
+::: pf
+
+::: pf-step
+
+For every integer $N\ge0$ and every $x\in[0,1]$,
 \[
 \boxed{
 \frac1{1+x^2}
@@ -43,7 +46,9 @@ Problem 10. (a) Rigorously justify
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the finite geometric-series identity
 \[
 \frac1{1-r}
@@ -66,9 +71,14 @@ r^{N+1}
 =
 (-1)^{N+1}x^{2N+2}.
 \]
+
 :::
 
-<1>2. Integrating step <1>1 over $[0,1]$ gives
+:::
+
+::: pf-step
+
+Integrating step <1>1 over $[0,1]$ gives
 \[
 \int_0^1\frac{dx}{1+x^2}
 =
@@ -87,7 +97,9 @@ R_N
 \,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The finite sum may be integrated term by term:
 \[
 \int_0^1x^{2n}\,dx
@@ -95,9 +107,14 @@ The finite sum may be integrated term by term:
 \frac1{2n+1}.
 \]
 The last term is exactly the stated remainder.
+
 :::
 
-<1>3. The remainder satisfies
+:::
+
+::: pf-step
+
+The remainder satisfies
 \[
 \boxed{
 |R_N|
@@ -106,7 +123,9 @@ The last term is exactly the stated remainder.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 0\le x\le1,
@@ -133,22 +152,34 @@ Therefore
 \frac1{2N+3}.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 R_N\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The upper bound from step <1>3 satisfies
 \[
 \frac1{2N+3}\to0.
 \]
 Apply the squeeze theorem.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^1\frac{dx}{1+x^2}
@@ -159,23 +190,32 @@ Apply the squeeze theorem.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 N\to\infty
 \]
 in the identity from step <1>2 and use step <1>4.
 This rigorously justifies part (a) without interchanging an infinite sum and an integral.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_0^1\frac{dx}{1+x^2}
 =
 \frac{\pi}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative is
 \[
 \arctan x.
@@ -188,9 +228,14 @@ Thus
 =
 \frac{\pi}{4}.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 1-\frac13+\frac15-\frac17+\cdots
@@ -199,17 +244,23 @@ Thus
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The partial sums of the displayed alternating series are exactly
 \[
 \sum_{n=0}^N\frac{(-1)^n}{2n+1}.
 \]
 By step <1>5 their limit is the integral from step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>7 proves part (b).
+
 :::
+
 :::

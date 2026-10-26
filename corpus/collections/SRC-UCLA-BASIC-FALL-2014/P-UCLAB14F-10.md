@@ -20,14 +20,19 @@ audit:
 Problem 10. What is the largest number of $1$'s an invertible $0$-$1$ matrix of size $n\times n$ can have? You must show both that this number is possible and that no larger number is possible.
 :::
 
-::: {.solution}
-<1>1. Any invertible $n\times n$ zero-one matrix must contain at least
+::: pf
+
+::: pf-step
+
+Any invertible $n\times n$ zero-one matrix must contain at least
 \[
 n-1
 \]
 zero entries.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose a zero-one matrix contained at most
 \[
 n-2
@@ -43,15 +48,22 @@ A zero-one row containing no zeros is
 \]
 Thus those two rows are identical, so the matrix is singular.
 Hence an invertible zero-one matrix must contain at least $n-1$ zeros.
+
 :::
 
-<1>2. Consequently an invertible zero-one matrix has at most
+:::
+
+::: pf-step
+
+Consequently an invertible zero-one matrix has at most
 \[
 \boxed{n^2-n+1}
 \]
 entries equal to $1$.
 
-::: {.proof}
+
+::: pf-proof
+
 An $n\times n$ matrix has $n^2$ entries.
 By step <1>1, at least $n-1$ of them must be zero.
 Therefore the number of ones is at most
@@ -60,9 +72,14 @@ n^2-(n-1)
 =
 n^2-n+1.
 \]
+
 :::
 
-<1>3. Let $M_n$ be the zero-one matrix obtained from the all-ones matrix by changing the first $n-1$ diagonal entries to zero:
+:::
+
+::: pf-step
+
+Let $M_n$ be the zero-one matrix obtained from the all-ones matrix by changing the first $n-1$ diagonal entries to zero:
 \[
 M_n=
 \begin{pmatrix}
@@ -79,18 +96,27 @@ n^2-n+1
 \]
 ones.
 
-::: {.proof}
+
+::: pf-proof
+
 Exactly the first $n-1$ diagonal entries are zero.
 All remaining
 \[
 n^2-(n-1)
 \]
 entries are one.
+
 :::
 
-<1>4. The matrix $M_n$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $M_n$ is invertible.
+
+
+::: pf-proof
+
 For each
 \[
 i=1,\ldots,n-1,
@@ -125,21 +151,32 @@ Therefore
 \det M_n\ne0,
 \]
 so $M_n$ is invertible.
+
 :::
 
-<1>5. Hence the largest possible number of ones is
+:::
+
+::: pf-step
+
+Hence the largest possible number of ones is
 \[
 \boxed{n^2-n+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 proves that no invertible zero-one matrix can have more than this many ones.
 Steps <1>3--<1>4 exhibit an invertible zero-one matrix attaining the bound.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves both optimality and attainability.
+
 :::
+
 :::

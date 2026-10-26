@@ -26,8 +26,11 @@ g(x)=\frac{f(x)}x
 is decreasing on $(0,1)$.
 :::
 
-::: {.solution}
-<1>1. Fix
+::: pf
+
+::: pf-step
+
+Fix
 \[
 0<x<y<1.
 \]
@@ -40,7 +43,9 @@ such that
 \frac{f(x)}x=f'(\xi).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the mean value theorem to $f$ on $[0,x]$.
 Since
 \[
@@ -52,9 +57,14 @@ there is $\xi\in(0,x)$ with
 =
 f'(\xi).
 \]
+
 :::
 
-<1>2. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 \eta\in(x,y)
 \]
@@ -65,16 +75,25 @@ such that
 f'(\eta).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the mean value theorem to $f$ on $[x,y]$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f'(\eta)\le f'(\xi).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The points satisfy
 \[
 \xi<x<\eta.
@@ -83,27 +102,41 @@ Since $f'$ is decreasing on $(0,1)$,
 \[
 f'(\eta)\le f'(\xi).
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \frac{f(y)-f(x)}{y-x}
 \le
 \frac{f(x)}x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the identities from steps <1>1--<1>2 into the inequality of step <1>3.
+
 :::
 
-<1>5. The inequality in step <1>4 implies
+:::
+
+::: pf-step
+
+The inequality in step <1>4 implies
 \[
 \frac{f(y)}y
 \le
 \frac{f(x)}x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply step <1>4 by $y-x>0$:
 \[
 f(y)-f(x)
@@ -126,14 +159,21 @@ Divide by $y>0$:
 \le
 \frac{f(x)}x.
 \]
+
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{g(x)=\frac{f(x)}x\text{ is decreasing on }(0,1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The points
 \[
 0<x<y<1
@@ -142,11 +182,15 @@ were arbitrary, and step <1>5 gives
 \[
 g(y)\le g(x).
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

@@ -25,13 +25,18 @@ A^tA=I=AA^t.
 Prove that the characteristic polynomial of $A$ has $1$ as a root.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \det(A-I)=\det(I-A).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $A^tA=I$, the matrix $A$ is invertible and $A^{-1}=A^t$. Hence
 \[
 A-I=A(I-A^{-1}),
@@ -52,14 +57,21 @@ Because determinant is invariant under transpose,
 =
 \det(I-A).
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \det(A-I)=-\det(I-A).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A-I=-(I-A)
@@ -74,11 +86,18 @@ and the matrices are $3\times3$,
 =
 -\det(I-A).
 \]
+
 :::
 
-<1>3. The matrix $I-A$ is singular.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $I-A$ is singular.
+
+
+::: pf-proof
+
 Combining steps <1>1 and <1>2 gives
 \[
 \det(I-A)=-\det(I-A).
@@ -88,11 +107,18 @@ Over $\mathbb R$, this implies
 \det(I-A)=0.
 \]
 Thus $I-A$ is singular.
+
 :::
 
-<1>4. The characteristic polynomial of $A$ has $1$ as a root.
+:::
 
-::: {.proof}
+::: pf-step
+
+The characteristic polynomial of $A$ has $1$ as a root.
+
+
+::: pf-proof
+
 If
 \[
 \chi_A(t)=\det(tI-A),
@@ -102,11 +128,15 @@ then step <1>3 gives
 \boxed{\chi_A(1)=\det(I-A)=0}.
 \]
 Therefore $1$ is a root of $\chi_A$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

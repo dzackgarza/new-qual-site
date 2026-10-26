@@ -25,26 +25,38 @@ among all $f\in C^1(\mathbb R)$ such that $f(0)=0$ and $f(1)=1$.
 Is the minimizing $C^1$ function unique on $[0,1]$?
 :::
 
-::: {.solution}
-<1>1. For every admissible $f$,
+::: pf
+
+::: pf-step
+
+For every admissible $f$,
 \[
 1=f(1)-f(0)=\int_0^1f'(x)\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f\in C^1(\mathbb R)$, the fundamental theorem of calculus gives
 \[
 f(1)-f(0)=\int_0^1f'(x)\,dx.
 \]
 The endpoint conditions make the left side equal to $1$.
+
 :::
 
-<1>2. Cauchy--Schwarz gives
+:::
+
+::: pf-step
+
+Cauchy--Schwarz gives
 \[
 1\leq\int_0^1|f'(x)|^2\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Cauchy--Schwarz to $f'$ and the constant function $1$:
 \[
 \left|\int_0^1f'(x)\,dx\right|^2
@@ -53,9 +65,14 @@ Apply Cauchy--Schwarz to $f'$ and the constant function $1$:
 \left(\int_0^1 1^2\,dx\right).
 \]
 The first factor on the left is $1$ by step <1>1, and the final integral is $1$.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 \[
 f_0(x)=x
 \]
@@ -64,60 +81,108 @@ is admissible and has energy
 \int_0^1|f_0'(x)|^2\,dx=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function is $C^1(\mathbb R)$, satisfies $f_0(0)=0$ and $f_0(1)=1$, and has derivative identically equal to $1$.
+
 :::
 
-<1>4. Therefore the minimum energy is $1$, attained by $f_0(x)=x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the minimum energy is $1$, attained by $f_0(x)=x$.
+
+
+::: pf-proof
+
 Step <1>2 gives the lower bound $1$ for every admissible function, and step <1>3 exhibits an admissible function attaining it.
+
 :::
 
-<1>5. If an admissible $f$ is a minimizer, then equality holds in the Cauchy--Schwarz inequality of step <1>2.
+:::
 
-::: {.proof}
+::: pf-step
+
+If an admissible $f$ is a minimizer, then equality holds in the Cauchy--Schwarz inequality of step <1>2.
+
+
+::: pf-proof
+
 By step <1>4, a minimizer has energy exactly $1$. Thus the inequality in step <1>2 is an equality.
+
 :::
 
-<1>6. Equality in Cauchy--Schwarz implies that $f'$ is a constant function on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Equality in Cauchy--Schwarz implies that $f'$ is a constant function on $[0,1]$.
+
+
+::: pf-proof
+
 Equality in Cauchy--Schwarz for the functions $f'$ and $1$ occurs exactly when they are linearly dependent in $L^2([0,1])$. Thus $f'=c$ almost everywhere for some constant $c$. Since $f'$ is continuous, it follows that $f'(x)=c$ for every $x\in[0,1]$.
+
 :::
 
-<1>7. The endpoint conditions force this constant to be $1$ and hence
+:::
+
+::: pf-step
+
+The endpoint conditions force this constant to be $1$ and hence
 \[
 f(x)=x
 \qquad(0\leq x\leq1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives
 \[
 1=\int_0^1c\,dx=c.
 \]
 Thus $f'=1$ on $[0,1]$. Since $f(0)=0$, integration gives $f(x)=x$ there.
+
 :::
 
-<1>8. Consequently the minimizing function is unique on $[0,1]$:
+:::
+
+::: pf-step
+
+Consequently the minimizing function is unique on $[0,1]$:
 \[
 \boxed{f(x)=x.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every minimizer must equal $x$ on $[0,1]$ by step <1>7, while step <1>3 shows this function is a minimizer.
+
 :::
 
-<1>9. The extension outside $[0,1]$ is not unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The extension outside $[0,1]$ is not unique.
+
+
+::: pf-proof
+
 The functional and endpoint constraints depend only on the restriction to $[0,1]$. Any $C^1$ extension of the function $x$ from $[0,1]$ to all of $\mathbb R$ remains a minimizer. The question asks uniqueness on $[0,1]$, where step <1>8 proves uniqueness.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>4 and <1>8 give the minimum and the requested uniqueness statement.
+
 :::
+
 :::

@@ -29,7 +29,6 @@ This defines a norm on $C^\alpha([0,1])$.
 Prove that any bounded sequence in $C^{1/2}([0,1])$ admits a convergent subsequence in $C^{1/3}([0,1])$.
 :::
 
-::: {.solution}
 Let
 \[
 (f_n)
@@ -48,9 +47,15 @@ such that
 \]
 for every $n$.
 
-<1>1. The family $(f_n)$ is uniformly bounded and equicontinuous on $[0,1]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The family $(f_n)$ is uniformly bounded and equicontinuous on $[0,1]$.
+
+
+::: pf-proof
+
 The norm bound gives
 \[
 \|f_n\|_\infty\le M
@@ -64,19 +69,31 @@ M|x-y|^{1/2}
 \]
 for all $x,y$.
 Thus the family has a common Hölder modulus of continuity.
+
 :::
 
-<1>2. There is a subsequence
+:::
+
+::: pf-step
+
+There is a subsequence
 \[
 (f_{n_j})
 \]
 that converges uniformly on $[0,1]$ to a continuous function $f$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Arzelà--Ascoli theorem to step <1>1.
+
 :::
 
-<1>3. The limit $f$ belongs to
+:::
+
+::: pf-step
+
+The limit $f$ belongs to
 \[
 C^{1/2}([0,1])
 \]
@@ -92,7 +109,9 @@ where
 \frac{|g(x)-g(y)|}{|x-y|^{1/2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x,y\in[0,1]$.
 Uniform convergence implies pointwise convergence, so
 \[
@@ -106,9 +125,14 @@ M|x-y|^{1/2}.
 \end{aligned}
 \]
 Taking the supremum gives the stated bound.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 g_j=f_{n_j}-f,
 \]
@@ -121,7 +145,9 @@ and
 [g_j]_{1/2}\le2M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The uniform convergence in step <1>2 gives
 \[
 \|g_j\|_\infty\to0.
@@ -139,9 +165,14 @@ M+M
 2M
 \]
 by the triangle inequality for the Hölder seminorm and step <1>3.
+
 :::
 
-<1>5. If a function $g$ satisfies
+:::
+
+::: pf-step
+
+If a function $g$ satisfies
 \[
 \|g\|_\infty\le \eta
 \]
@@ -158,7 +189,9 @@ then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x\ne y
@@ -201,14 +234,21 @@ At that value their common value is
 \]
 For smaller $r$, the second expression is no larger than that value; for larger $r$, the first expression is no larger.
 Thus the displayed bound holds for every pair $x\ne y$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 [g_j]_{1/3}\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>5 with
 \[
 \eta=\|g_j\|_\infty
@@ -229,15 +269,22 @@ Hence
 (2M)^{2/3}
 \longrightarrow0.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \|f_{n_j}-f\|_{C^{1/3}}
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \|f_{n_j}-f\|_{C^{1/3}}
@@ -247,9 +294,14 @@ By definition,
 [g_j]_{1/3}.
 \]
 The first term tends to zero by step <1>4, and the second by step <1>6.
+
 :::
 
-<1>8. Thus every bounded sequence in
+:::
+
+::: pf-step
+
+Thus every bounded sequence in
 \[
 C^{1/2}([0,1])
 \]
@@ -258,13 +310,19 @@ has a subsequence converging in
 \boxed{C^{1/3}([0,1])}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The subsequence constructed in step <1>2 converges in the stronger sense established in step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required compact-embedding statement.
+
 :::
+
 :::

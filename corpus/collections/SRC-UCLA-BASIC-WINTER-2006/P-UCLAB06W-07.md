@@ -23,12 +23,17 @@ Prove the Cauchy--Schwarz inequality
 \]
 :::
 
-::: {.solution}
 Use the convention that the complex inner product is linear in its first argument.
 
-<1>1. If $w=0$, then the Cauchy--Schwarz inequality holds.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $w=0$, then the Cauchy--Schwarz inequality holds.
+
+
+::: pf-proof
+
 If $w=0$, then
 $$
 \langle v,w\rangle=0
@@ -42,9 +47,14 @@ $$
 \abs{\langle v,w\rangle}\le\norm{v}\,\norm{w}
 $$
 are zero.
+
 :::
 
-<1>2. Suppose $w\ne0$ and define
+:::
+
+::: pf-step
+
+Suppose $w\ne0$ and define
 $$
 \alpha=\frac{\langle v,w\rangle}{\norm{w}^2},
 \qquad
@@ -55,7 +65,9 @@ $$
 \langle u,w\rangle=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity in the first argument,
 $$
 \langle u,w\rangle
@@ -69,16 +81,23 @@ $$
 \frac{\langle v,w\rangle}{\norm{w}^2}\norm{w}^2
 =0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \norm{v}^2
 =
 \norm{u}^2+\abs{\alpha}^2\norm{w}^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $v=u+\alpha w$ and $u\perp w$ by step <1>2,
 $$
 \begin{aligned}
@@ -88,16 +107,23 @@ $$
 \end{aligned}
 $$
 because both cross terms vanish.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \abs{\langle v,w\rangle}^2
 \le
 \norm{v}^2\norm{w}^2.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 and nonnegativity of $\norm{u}^2$ give
 $$
 \norm{v}^2
@@ -111,9 +137,14 @@ $$
 \frac{\abs{\langle v,w\rangle}^2}{\norm{w}^2}.
 $$
 Multiplying by the positive number $\norm{w}^2$ gives the claim.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 \abs{\langle v,w\rangle}
@@ -122,13 +153,19 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Both sides in step <1>4 are nonnegative. Taking square roots gives the displayed inequality.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 handles $w=0$, and steps <1>2--<1>5 handle $w\ne0$.
+
 :::
+
 :::

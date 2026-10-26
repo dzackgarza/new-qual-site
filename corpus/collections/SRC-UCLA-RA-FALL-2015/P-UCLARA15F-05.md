@@ -24,7 +24,6 @@ audit:
 A function $f \in C([0,1])$ is called Hölder continuous of order $\delta > 0$ if there is a constant $C > 0$ such that $|f(x) - f(y)| \leq C|x-y|^\delta$, $x, y \in [0,1]$. Show that the Hölder continuous functions form a set of the first category (a meager set) in $C([0,1])$.
 :::
 
-::: {.solution}
 Equip
 \[
 C([0,1])
@@ -54,12 +53,18 @@ k|x-y|^{1/m}
 \right\}.}
 \]
 
-<1>1. Every Hölder continuous function of positive order belongs to some
+::: pf
+
+::: pf-step
+
+Every Hölder continuous function of positive order belongs to some
 \[
 A_{m,k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(f\) be Hölder continuous of order \(\delta>0\). Then there exists \(C>0\) such that
 \[
 |f(x)-f(y)|
@@ -92,9 +97,14 @@ C|x-y|^\delta
 k|x-y|^{1/m},
 \]
 so \(f\in A_{m,k}\).
+
 :::
 
-<1>2. Hence the set \(\mathcal H\) of all Hölder continuous functions satisfies
+:::
+
+::: pf-step
+
+Hence the set \(\mathcal H\) of all Hölder continuous functions satisfies
 \[
 \boxed{
 \mathcal H
@@ -104,13 +114,22 @@ so \(f\in A_{m,k}\).
 A_{m,k}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 to each Hölder function.
+
 :::
 
-<1>3. Each \(A_{m,k}\) is closed in \(C([0,1])\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Each \(A_{m,k}\) is closed in \(C([0,1])\).
+
+
+::: pf-proof
+
 Let
 \[
 f_j\in A_{m,k}
@@ -143,31 +162,32 @@ Since \(x,y\) were arbitrary,
 \[
 f\in A_{m,k}.
 \]
+
 :::
 
-We now show that \(A_{m,k}\) has empty interior.
+:::
 
-Fix
-\[
-f\in A_{m,k}
-\]
-and
-\[
-\varepsilon>0.
-\]
+::: pf-step
 
-<1>4. By uniform continuity of \(f\), there exists \(\eta>0\) such that
+By uniform continuity of \(f\), there exists \(\eta>0\) such that
 \[
 |x-y|<\eta
 \Longrightarrow
 |f(x)-f(y)|<\frac{\varepsilon}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every continuous function on the compact interval \([0,1]\) is uniformly continuous.
+
 :::
 
-<1>5. Choose \(h>0\) such that
+:::
+
+::: pf-step
+
+Choose \(h>0\) such that
 \[
 \boxed{
 h<\eta,
@@ -177,15 +197,22 @@ h<\frac14,
 k h^{1/m}<\frac{\varepsilon}{4}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 h^{1/m}\to0
 \]
 as \(h\downarrow0\), all three inequalities hold for sufficiently small \(h>0\).
+
 :::
 
-<1>6. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 x_0\in(0,1-h)
 \]
@@ -194,11 +221,18 @@ and set
 x_1=x_0+h.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition \(h<1/4\) ensures that such an \(x_0\) exists.
+
 :::
 
-<1>7. There exists a continuous function
+:::
+
+::: pf-step
+
+There exists a continuous function
 \[
 \varphi:[0,1]\to[0,\varepsilon/2]
 \]
@@ -210,21 +244,35 @@ such that
 \varphi(x_1)=\frac{\varepsilon}{2}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For example, define \(\varphi\) to be \(0\) on \([0,x_0]\), linear from \(0\) to \(\varepsilon/2\) on \([x_0,x_1]\), and constant \(\varepsilon/2\) on \([x_1,1]\).
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 g=f+\varphi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sum of continuous functions is continuous.
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \|g-f\|_\infty
@@ -234,7 +282,9 @@ The sum of continuous functions is continuous.
 \varepsilon.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 \[
 0\le\varphi\le\frac{\varepsilon}{2}.
@@ -247,9 +297,14 @@ Thus
 \le
 \frac{\varepsilon}{2}.
 \]
+
 :::
 
-<1>10. The oscillation of \(f\) between \(x_0\) and \(x_1\) satisfies
+:::
+
+::: pf-step
+
+The oscillation of \(f\) between \(x_0\) and \(x_1\) satisfies
 \[
 \boxed{
 |f(x_1)-f(x_0)|
@@ -257,15 +312,22 @@ Thus
 \frac{\varepsilon}{4}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 |x_1-x_0|=h<\eta.
 \]
 Apply step <1>4.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 |g(x_1)-g(x_0)|
 \ge
@@ -274,7 +336,9 @@ Apply step <1>4.
 |f(x_1)-f(x_0)|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>7--<1>8,
 \[
 g(x_1)-g(x_0)
@@ -282,9 +346,14 @@ g(x_1)-g(x_0)
 f(x_1)-f(x_0)+\frac{\varepsilon}{2}.
 \]
 Apply the reverse triangle inequality.
+
 :::
 
-<1>12. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 |g(x_1)-g(x_0)|
@@ -292,11 +361,18 @@ Apply the reverse triangle inequality.
 \frac{\varepsilon}{4}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>10 in step <1>11.
+
 :::
 
-<1>13. But
+:::
+
+::: pf-step
+
+But
 \[
 \boxed{
 k|x_1-x_0|^{1/m}
@@ -306,34 +382,57 @@ k h^{1/m}
 \frac{\varepsilon}{4}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>5--<1>6.
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 |g(x_1)-g(x_0)|
 >
 k|x_1-x_0|^{1/m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>12--<1>13.
+
 :::
 
-<1>15. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 g\notin A_{m,k}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>14 violates the defining Hölder estimate for the pair \(x_0,x_1\).
+
 :::
 
-<1>16. Thus every open ball around every \(f\in A_{m,k}\) contains a point outside \(A_{m,k}\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus every open ball around every \(f\in A_{m,k}\) contains a point outside \(A_{m,k}\).
+
+
+::: pf-proof
+
 Given any \(\varepsilon>0\), steps <1>8--<1>15 construct \(g\) with
 \[
 \|g-f\|_\infty<\varepsilon
@@ -342,21 +441,35 @@ but
 \[
 g\notin A_{m,k}.
 \]
+
 :::
 
-<1>17. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{int}(A_{m,k})=\varnothing.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>16 is exactly the statement that \(A_{m,k}\) has empty interior.
+
 :::
 
-<1>18. Since \(A_{m,k}\) is closed and has empty interior, it is nowhere dense.
+:::
 
-::: {.proof}
+::: pf-step
+
+Since \(A_{m,k}\) is closed and has empty interior, it is nowhere dense.
+
+
+::: pf-proof
+
 For a closed set,
 \[
 \overline{A_{m,k}}=A_{m,k}.
@@ -370,27 +483,45 @@ Thus
 \varnothing
 \]
 by step <1>17.
+
 :::
 
-<1>19. The countable union
+:::
+
+::: pf-step
+
+The countable union
 \[
 \bigcup_{m,k\ge1}A_{m,k}
 \]
 is meager.
 
-::: {.proof}
+
+::: pf-proof
+
 It is a countable union of nowhere-dense sets by step <1>18.
+
 :::
 
-<1>20. Therefore the set of all Hölder continuous functions is meager in \(C([0,1])\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the set of all Hölder continuous functions is meager in \(C([0,1])\).
+
+
+::: pf-proof
+
 By step <1>2, the Hölder functions form a subset of the meager set from step <1>19. Every subset of a meager set is meager.
+
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>20 is the required conclusion.
+
 :::
+
 :::

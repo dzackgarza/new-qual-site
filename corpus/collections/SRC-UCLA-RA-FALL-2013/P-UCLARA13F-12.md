@@ -24,8 +24,11 @@ Let $f:[0,1]\to\mathbb R$ be continuous and absolutely continuous on every inter
 (b) Show that if, in addition, $f$ is of bounded variation on $[0,1]$, then $f$ is absolutely continuous on $[0,1]$.
 :::
 
-::: {.solution}
-<1>1. For part (a), define
+::: pf
+
+::: pf-step
+
+For part (a), define
 \[
 f(0)=0,
 \qquad
@@ -34,25 +37,41 @@ f(x)=x\sin(1/x)
 \]
 Then $f$ is continuous on $[0,1]$ and absolutely continuous on every $[\varepsilon,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $|x\sin(1/x)|\leq x$, one has $f(x)\to0=f(0)$ as $x\downarrow0$. On every $[\varepsilon,1]$, the function is continuously differentiable, hence absolutely continuous.
+
 :::
 
-<1>2. For $x>0$,
+:::
+
+::: pf-step
+
+For $x>0$,
 \[
 f'(x)=\sin(1/x)-\frac{\cos(1/x)}x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate $x\sin(1/x)$ by the product and chain rules.
+
 :::
 
-<1>3. The derivative is not integrable on $(0,1)$:
+:::
+
+::: pf-step
+
+The derivative is not integrable on $(0,1)$:
 \[
 \int_0^1|f'(x)|\,dx=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The term $\sin(1/x)$ is bounded and hence integrable on $(0,1)$. It therefore suffices to show
 \[
 \int_0^1\frac{|\cos(1/x)|}{x}\,dx=\infty.
@@ -62,19 +81,31 @@ With $t=1/x$, this becomes
 \int_1^\infty\frac{|\cos t|}{t}\,dt.
 \]
 On each interval $[k\pi,k\pi+\pi/3]$, one has $|\cos t|\geq1/2$ after choosing the corresponding half-period subinterval, so the integral dominates a positive constant times a harmonic series and diverges.
+
 :::
 
-<1>4. Thus $f$ is not absolutely continuous on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus $f$ is not absolutely continuous on $[0,1]$.
+
+
+::: pf-proof
+
 An absolutely continuous function on a compact interval has derivative in $L^1$ and satisfies
 \[
 f(x)-f(0)=\int_0^xf'(t)\,dt.
 \]
 Step <1>3 contradicts the required $L^1$ integrability.
+
 :::
 
-<1>5. For part (b), assume additionally that $f$ has bounded variation on $[0,1]$. Let
+:::
+
+::: pf-step
+
+For part (b), assume additionally that $f$ has bounded variation on $[0,1]$. Let
 \[
 V(t)=\operatorname{Var}_{[0,t]}(f).
 \]
@@ -84,24 +115,38 @@ V(t)\longrightarrow0
 \qquad(t\downarrow0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ has bounded variation, it is the difference of two bounded monotone functions, and its total-variation function $V$ is increasing and finite. Hence $L=\lim_{t\downarrow0}V(t)$ exists. For every $t>0$,
 \[
 V(t)\geq |f(t)-f(0)|,
 \]
 but more is needed to exclude $L>0$. The variation measure associated to a BV function has an atom at $0$ of mass exactly the jump $|f(0+)-f(0)|$. On $(0,1]$, local absolute continuity implies that this variation measure is absolutely continuous with density $|f'|$. Thus its only possible singular mass is at $0$. Continuity of $f$ at $0$ makes that atom zero, so continuity from above of the finite variation measure gives $V(t)\to0$.
+
 :::
 
-<1>6. Fix $\eta>0$. Choose $\delta_0>0$ so that
+:::
+
+::: pf-step
+
+Fix $\eta>0$. Choose $\delta_0>0$ so that
 \[
 \operatorname{Var}_{[0,\delta_0]}(f)<\eta/2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from step <1>5.
+
 :::
 
-<1>7. Since $f$ is absolutely continuous on $[\delta_0/2,1]$, there exists $\delta_1>0$ such that every finite pairwise-disjoint family of intervals $(a_j,b_j)\subset[\delta_0/2,1]$ with
+:::
+
+::: pf-step
+
+Since $f$ is absolutely continuous on $[\delta_0/2,1]$, there exists $\delta_1>0$ such that every finite pairwise-disjoint family of intervals $(a_j,b_j)\subset[\delta_0/2,1]$ with
 \[
 \sum_j(b_j-a_j)<\delta_1
 \]
@@ -110,11 +155,18 @@ satisfies
 \sum_j|f(b_j)-f(a_j)|<\eta/2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining interval criterion for absolute continuity on $[\delta_0/2,1]$.
+
 :::
 
-<1>8. Set
+:::
+
+::: pf-step
+
+Set
 \[
 \delta=\min\{\delta_0/2,\delta_1\}.
 \]
@@ -123,19 +175,32 @@ Then any finite pairwise-disjoint family $(a_j,b_j)\subset[0,1]$ with total leng
 \sum_j|f(b_j)-f(a_j)|<\eta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Separate the intervals into those meeting $[0,\delta_0]$ and those lying in $[\delta_0/2,1]$. Because their total length is $<\delta_0/2$, an interval beginning below $\delta_0/2$ cannot end beyond $\delta_0$; hence every such interval lies in $[0,\delta_0]$. The sum of oscillations over all intervals in this first group is at most $\operatorname{Var}_{[0,\delta_0]}(f)<\eta/2$ by step <1>6. The remaining intervals lie in $[\delta_0/2,1]$ and have total length $<\delta_1$, so step <1>7 bounds their sum by $\eta/2$. Adding the two bounds gives $<\eta$.
+
 :::
 
-<1>9. Therefore $f$ is absolutely continuous on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ is absolutely continuous on $[0,1]$.
+
+
+::: pf-proof
+
 Step <1>8 verifies the defining $\varepsilon$--$\delta$ interval criterion for absolute continuity, with arbitrary $\eta>0$.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 prove part (a), and steps <1>5--<1>9 prove part (b).
+
 :::
+
 :::

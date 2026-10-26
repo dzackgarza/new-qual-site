@@ -25,7 +25,6 @@ f''(x)\sim \frac{f(x+h)-2f(x)+f(x-h)}{h^2},
 where $x,x+h,x-h\in(a,b)$.
 :::
 
-::: {.solution}
 Define the centered-difference approximation
 \[
 D_hf(x)
@@ -37,7 +36,11 @@ We take the approximation error to be
 E(h)=D_hf(x)-f''(x).
 \]
 
-<1>1. Taylor's theorem gives
+::: pf
+
+::: pf-step
+
+Taylor's theorem gives
 \[
 \begin{aligned}
 f(x+h)
@@ -55,16 +58,23 @@ for some
 \]
 between $x$ and $x+h$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Taylor's theorem with Lagrange remainder through degree $3$ to the function $f$ centered at $x$ and evaluated at $x+h$.
 The hypothesis
 \[
 f\in C^4([a,b])
 \]
 ensures the theorem applies.
+
 :::
 
-<1>2. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 \[
 \begin{aligned}
 f(x-h)
@@ -82,15 +92,22 @@ for some
 \]
 between $x-h$ and $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the same Taylor theorem with increment $-h$.
 The odd powers acquire minus signs, while
 \[
 (-h)^4=h^4.
 \]
+
 :::
 
-<1>3. Adding the two Taylor formulas and subtracting $2f(x)$ gives
+:::
+
+::: pf-step
+
+Adding the two Taylor formulas and subtracting $2f(x)$ gives
 \[
 \begin{aligned}
 f(x+h)-2f(x)+f(x-h)
@@ -106,7 +123,9 @@ f^{(4)}(\xi_-)
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two linear terms
 \[
 \pm hf'(x)
@@ -122,9 +141,14 @@ The two quadratic terms add to
 h^2f''(x).
 \]
 The fourth-order remainders add as displayed.
+
 :::
 
-<1>4. Dividing by $h^2$ yields
+:::
+
+::: pf-step
+
+Dividing by $h^2$ yields
 \[
 \boxed{
 D_hf(x)
@@ -140,7 +164,9 @@ f^{(4)}(\xi_-)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the identity from step <1>3 by
 \[
 h^2,
@@ -149,9 +175,14 @@ which is nonzero because the centered difference is only defined for
 \[
 h\ne0.
 \]
+
 :::
 
-<1>5. Hence the approximation error satisfies
+:::
+
+::: pf-step
+
+Hence the approximation error satisfies
 \[
 \boxed{
 E(h)
@@ -165,7 +196,9 @@ f^{(4)}(\xi_-)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 E(h)=D_hf(x)-f''(x).
@@ -175,9 +208,14 @@ Subtract
 f''(x)
 \]
 from the formula in step <1>4.
+
 :::
 
-<1>6. Since $f^{(4)}$ is continuous, there exists
+:::
+
+::: pf-step
+
+Since $f^{(4)}$ is continuous, there exists
 \[
 \xi
 \]
@@ -190,7 +228,9 @@ E(h)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two points
 \[
 \xi_-
@@ -229,9 +269,14 @@ E(h)
 =
 \frac{h^2}{12}f^{(4)}(\xi).
 \]
+
 :::
 
-<1>7. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 |E(h)|
@@ -246,19 +291,25 @@ so the centered approximation has error
 E(h)=O(h^2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply absolute values to the formula in step <1>6.
 The maximum exists because $f^{(4)}$ is continuous on the compact interval between $x-h$ and $x+h$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>5--<1>7 give the exact remainder formula and the resulting second-order error estimate.
 If the error is defined with the opposite sign,
 \[
 f''(x)-D_hf(x),
 \]
 the formulas differ only by an overall minus sign.
+
 :::
+
 :::

@@ -41,22 +41,38 @@ For (b), centers are always abelian, so $Z(H)$ is good to consider, just need to
 Use transitivity of characteristic.
 :::
 
-::: {.solution}
-<1>1. Every Sylow $p$-subgroup $S$ of $G$ contains $H$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every Sylow $p$-subgroup $S$ of $G$ contains $H$.
+
+
+::: pf-proof
+
 Since $H$ is a $p$-subgroup, Sylow's containment theorem places it in some Sylow $p$-subgroup $S_0$. For any other Sylow $p$-subgroup $S$, conjugacy gives $S=gS_0g^{-1}$ for some $g\in G$. Normality of $H$ implies $H=gHg^{-1}\subseteq gS_0g^{-1}=S$.
+
 :::
 
-<1>2. The center $Z(H)$ is a nontrivial abelian normal subgroup of $G$, of order divisible by $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The center $Z(H)$ is a nontrivial abelian normal subgroup of $G$, of order divisible by $p$.
+
+
+::: pf-proof
+
 Since $H$ is a nontrivial finite $p$-group, its class equation implies $|Z(H)|$ is a positive multiple of $p$. By definition $Z(H)$ is abelian. It is characteristic in $H$, since every automorphism of $H$ preserves the condition of commuting with all members of $H$. Conjugation by an element of $G$ restricts to an automorphism of $H$ because $H\trianglelefteq G$, so it preserves $Z(H)$. Thus $Z(H)\trianglelefteq G$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and step <1>2 proves part (b).
+
 :::
+
 :::

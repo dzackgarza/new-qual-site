@@ -31,7 +31,6 @@ for some constant $C > 0$. Show that there exists a subsequence $(f_{j_k})$ and 
 \]
 :::
 
-::: {.solution}
 Assume
 \[
 \int_{\mathbb C}
@@ -42,7 +41,11 @@ for every \(j\), where \(dA=dx\,dy\).
 
 We first obtain compactness on bounded subsets of \(\mathbb C\).
 
-<1>1. For every entire function \(g\) and every \(z_0\in\mathbb C\),
+::: pf
+
+::: pf-step
+
+For every entire function \(g\) and every \(z_0\in\mathbb C\),
 \[
 \boxed{
 |g(z_0)|^2
@@ -52,11 +55,18 @@ We first obtain compactness on bounded subsets of \(\mathbb C\).
 |g(z)|^2\,dA(z)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(|g|^2\) is subharmonic. The subharmonic mean-value inequality on the unit disk gives the displayed estimate.
+
 :::
 
-<1>2. Fix \(R>0\). If
+:::
+
+::: pf-step
+
+Fix \(R>0\). If
 \[
 |z_0|\le R
 \]
@@ -69,7 +79,9 @@ then
 |z|\le R+1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the triangle inequality,
 \[
 |z|
@@ -78,9 +90,14 @@ By the triangle inequality,
 <
 1+R.
 \]
+
 :::
 
-<1>3. Hence, for \(|z_0|\le R\),
+:::
+
+::: pf-step
+
+Hence, for \(|z_0|\le R\),
 \[
 \int_{D(z_0,1)}
 |f_j(z)|^2\,dA(z)
@@ -90,7 +107,9 @@ e^{(R+1)^2}
 |f_j(z)|^2e^{-|z|^2}\,dA(z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the disk from step <1>2,
 \[
 e^{|z|^2}
@@ -106,9 +125,14 @@ Thus
 e^{(R+1)^2}|f_j(z)|^2e^{-|z|^2}.
 \]
 Integrate over the disk.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 |f_j(z_0)|^2
@@ -117,41 +141,69 @@ Integrate over the disk.
 \]
 for all \(j\) and all \(|z_0|\le R\).
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1--<1>3 and use the global hypothesis
 \[
 \int_{\mathbb C}|f_j|^2e^{-|z|^2}\,dA\le C.
 \]
+
 :::
 
-<1>5. Thus the family \(\{f_j\}\) is locally uniformly bounded on \(\mathbb C\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus the family \(\{f_j\}\) is locally uniformly bounded on \(\mathbb C\).
+
+
+::: pf-proof
+
 For every closed disk \(\{|z|\le R\}\), step <1>4 gives a bound independent of \(j\).
+
 :::
 
-<1>6. By Montel's theorem, there is a subsequence
+:::
+
+::: pf-step
+
+By Montel's theorem, there is a subsequence
 \[
 (f_{j_k})
 \]
 converging uniformly on compact subsets of \(\mathbb C\) to an entire function \(f\).
 
-::: {.proof}
+
+::: pf-proof
+
 A locally uniformly bounded family of holomorphic functions is normal. Choose a convergent subsequence. The locally uniform limit of holomorphic functions is holomorphic.
+
 :::
 
-<1>7. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 f_{j_k}(z)\to f(z)}
 \]
 for every \(z\in\mathbb C\).
 
-::: {.proof}
+
+::: pf-proof
+
 Pointwise convergence follows from locally uniform convergence.
+
 :::
 
-<1>8. Fatou's lemma gives
+:::
+
+::: pf-step
+
+Fatou's lemma gives
 \[
 \boxed{
 \int_{\mathbb C}
@@ -159,7 +211,9 @@ Pointwise convergence follows from locally uniform convergence.
 \le C}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 \[
 |f_{j_k}(z)|^2e^{-|z|^2}
@@ -174,11 +228,14 @@ pointwise. These functions are nonnegative, so Fatou yields
 \int |f_{j_k}|^2e^{-|z|^2}
 \le C.
 \]
+
 :::
 
-We now prove convergence in the stronger Gaussian weight.
+:::
 
-<1>9. For every \(R>0\) and every \(|z|>R\),
+::: pf-step
+
+For every \(R>0\) and every \(|z|>R\),
 \[
 \boxed{
 e^{-2|z|^2}
@@ -186,7 +243,9 @@ e^{-2|z|^2}
 e^{-R^2}e^{-|z|^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(|z|>R\), then
 \[
 e^{-|z|^2}
@@ -201,9 +260,14 @@ e^{-|z|^2}e^{-|z|^2}
 \le
 e^{-R^2}e^{-|z|^2}.
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_{|z|>R}
@@ -213,11 +277,18 @@ Ce^{-R^2}}
 \]
 for every \(k\).
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>9 and the original weighted \(L^2\) bound.
+
 :::
 
-<1>11. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
 \[
 \boxed{
 \int_{|z|>R}
@@ -226,11 +297,18 @@ Use step <1>9 and the original weighted \(L^2\) bound.
 Ce^{-R^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>9 and the bound from step <1>8.
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_{|z|>R}
 |f_{j_k}(z)-f(z)|^2e^{-2|z|^2}\,dA(z)
@@ -238,7 +316,9 @@ Use step <1>9 and the bound from step <1>8.
 4Ce^{-R^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 |a-b|^2\le2|a|^2+2|b|^2,
@@ -255,23 +335,35 @@ then apply steps <1>10--<1>11:
 4Ce^{-R^2}.
 \end{aligned}
 \]
+
 :::
 
-<1>13. Fix \(\varepsilon>0\). Choose \(R>0\) so large that
+:::
+
+::: pf-step
+
+Fix \(\varepsilon>0\). Choose \(R>0\) so large that
 \[
 \boxed{
 4Ce^{-R^2}<\frac{\varepsilon}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 e^{-R^2}\to0,
 \]
 such \(R\) exists.
+
 :::
 
-<1>14. On the closed disk
+:::
+
+::: pf-step
+
+On the closed disk
 \[
 \overline{D(0,R)},
 \]
@@ -283,11 +375,18 @@ one has
 \to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is local uniform convergence from step <1>6.
+
 :::
 
-<1>15. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_{|z|\le R}
 |f_{j_k}(z)-f(z)|^2
@@ -296,7 +395,9 @@ e^{-2|z|^2}
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 e^{-2|z|^2}\le1,
@@ -313,9 +414,14 @@ e^{-2|z|^2}\le1,
 \end{aligned}
 \]
 and the right-hand side tends to zero by step <1>14.
+
 :::
 
-<1>16. Hence there exists \(K\) such that for all \(k\ge K\),
+:::
+
+::: pf-step
+
+Hence there exists \(K\) such that for all \(k\ge K\),
 \[
 \boxed{
 \int_{|z|\le R}
@@ -324,11 +430,18 @@ and the right-hand side tends to zero by step <1>14.
 \frac{\varepsilon}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>15.
+
 :::
 
-<1>17. For \(k\ge K\),
+:::
+
+::: pf-step
+
+For \(k\ge K\),
 \[
 \int_{\mathbb C}
 |f_{j_k}-f|^2e^{-2|z|^2}\,dA
@@ -336,11 +449,18 @@ Apply step <1>15.
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral into \(|z|\le R\) and \(|z|>R\). The inside contribution is \(<\varepsilon/2\) by step <1>16, while the outside contribution is \(<\varepsilon/2\) by steps <1>12--<1>13.
+
 :::
 
-<1>18. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{\mathbb C}
@@ -348,13 +468,19 @@ Split the integral into \(|z|\le R\) and \(|z|>R\). The inside contribution is \
 \longrightarrow0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>17 is the \(\varepsilon\)-definition of convergence to zero.
+
 :::
 
-<1>19. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the subsequence and entire limit, and step <1>18 gives the required weighted \(L^2\) convergence.
+
 :::
+
 :::

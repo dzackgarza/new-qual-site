@@ -24,11 +24,14 @@ audit:
 Let $X$ be a Banach space and $X^*$ its dual space. Suppose $X^*$ is separable (i.e. has a countable dense set); show that $X$ is separable. (You should assume the Axiom of Choice.)
 :::
 
-::: {.solution}
 If $X=\{0\}$, then $X$ is trivially separable. Assume henceforth that
 $X\ne\{0\}$.
 
-<1>1. Choose a countable dense set
+::: pf
+
+::: pf-step
+
+Choose a countable dense set
 \[
 \{\varphi_1,\varphi_2,\ldots\}\subseteq X^*.
 \]
@@ -44,7 +47,9 @@ and
 \frac12\|\varphi_n\|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Separability of $X^*$ gives the countable dense family. By the definition of
 the operator norm,
 \[
@@ -55,9 +60,14 @@ the operator norm,
 If $\varphi_n\ne0$, there exists a unit vector $x_n$ satisfying the displayed
 inequality. If $\varphi_n=0$, choose any unit vector. The Axiom of Choice
 allows these choices to be made simultaneously.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 M
 =
@@ -68,7 +78,9 @@ Then
 \boxed{M=X}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that $M\ne X$. Choose
 \[
 y\in X\setminus M.
@@ -124,12 +136,19 @@ in norm, so continuity of the norm gives
 \|\varphi\|=0,
 \]
 contradicting $\varphi\ne0$. Thus $M=X$.
+
 :::
 
-<1>3. The linear span of the countable set $\{x_n\}$ has a countable dense
+:::
+
+::: pf-step
+
+The linear span of the countable set $\{x_n\}$ has a countable dense
 subset.
 
-::: {.proof}
+
+::: pf-proof
+
 If $X$ is a real Banach space, let
 \[
 D
@@ -157,11 +176,18 @@ If $X$ is complex, use coefficients in
 \mathbb Q+i\mathbb Q
 \]
 instead; the same argument applies.
+
 :::
 
-<1>4. The Banach space $X$ is separable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Banach space $X$ is separable.
+
+
+::: pf-proof
+
 By step <1>2,
 \[
 \overline{\operatorname{span}}\{x_n\}=X.
@@ -171,11 +197,15 @@ By step <1>3, the span contains a countable dense subset $D$. Therefore
 \overline D=X,
 \]
 so $X$ is separable.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

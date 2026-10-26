@@ -20,8 +20,11 @@ Prove that there is a unique pair of positive Borel measures $\mu_a,\mu_s$ such 
 \]
 :::
 
-::: {.solution}
-<1>1. Set
+::: pf
+
+::: pf-step
+
+Set
 \[
 \lambda
 \coloneqq
@@ -32,7 +35,9 @@ Then
 \nu\ll\lambda.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $\lambda(E)=0$, then
 \[
 0
@@ -42,9 +47,14 @@ If $\lambda(E)=0$, then
 \mu(E)+\nu(E).
 \]
 Both terms are nonnegative, so $\nu(E)=0$.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 f
 \coloneqq
@@ -58,11 +68,18 @@ Then $f\ge0$ $\lambda$-almost everywhere and
 \]
 for every Borel set $E$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Radon--Nikodym theorem applied to step <1>1. Positivity of $\nu$ allows the Radon--Nikodym derivative to be chosen nonnegative.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 X
 \coloneqq
@@ -89,7 +106,9 @@ Then
 \mu_a+\mu_s.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets $X$ and $Y$ are measurable, disjoint, and cover $\mathbb R^n$ up to a $\lambda$-null set. Modifying $f$ on that null set if necessary, assume they partition all of $\mathbb R^n$. Then
 \[
 E
@@ -104,11 +123,18 @@ for every Borel set $E$, so
 =
 \mu_a(E)+\mu_s(E).
 \]
+
 :::
 
-<1>4. The measure $\mu_s$ is singular with respect to $\nu$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The measure $\mu_s$ is singular with respect to $\nu$.
+
+
+::: pf-proof
+
 By construction,
 \[
 \mu_s(X)=0.
@@ -130,11 +156,18 @@ which is exactly
 \[
 \mu_s\perp\nu.
 \]
+
 :::
 
-<1>5. The measure $\mu_a$ is absolutely continuous with respect to $\nu$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The measure $\mu_a$ is absolutely continuous with respect to $\nu$.
+
+
+::: pf-proof
+
 Let $E$ be Borel and suppose
 \[
 \nu(E)=0.
@@ -183,9 +216,14 @@ Because $\mu\le\lambda$,
 =0.
 \]
 Thus $\mu_a\ll\nu$.
+
 :::
 
-<1>6. Steps <1>3--<1>5 give a Lebesgue decomposition
+:::
+
+::: pf-step
+
+Steps <1>3--<1>5 give a Lebesgue decomposition
 \[
 \mu=\mu_a+\mu_s,
 \qquad
@@ -194,11 +232,18 @@ Thus $\mu_a\ll\nu$.
 \mu_s\perp\nu.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is just the collection of the conclusions already proved.
+
 :::
 
-<1>7. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 \mu
 =
@@ -214,7 +259,9 @@ are two such decompositions. Then the signed measure
 \]
 is absolutely continuous with respect to $\nu$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $\nu(E)=0$, then
 \[
 \mu_a(E)=\mu_a'(E)=0
@@ -224,11 +271,18 @@ by absolute continuity, so
 \eta(E)=0.
 \]
 Thus $\eta\ll\nu$.
+
 :::
 
-<1>8. The same signed measure $\eta$ is singular with respect to $\nu$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The same signed measure $\eta$ is singular with respect to $\nu$.
+
+
+::: pf-proof
+
 From equality of the two decompositions,
 \[
 \eta
@@ -254,11 +308,18 @@ is concentrated on
 N\cup N',
 \]
 which is $\nu$-null. Hence $\eta\perp\nu$.
+
 :::
 
-<1>9. A signed measure that is both absolutely continuous and singular with respect to $\nu$ is zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+A signed measure that is both absolutely continuous and singular with respect to $\nu$ is zero.
+
+
+::: pf-proof
+
 Let $\eta\ll\nu$ and $\eta\perp\nu$. Singularity gives a Borel set $N$ such that
 \[
 \nu(N)=0
@@ -268,11 +329,18 @@ and $\eta$ is concentrated on $N$. Absolute continuity gives
 \eta(N)=0.
 \]
 Since $\eta$ vanishes outside $N$ as well, $\eta=0$.
+
 :::
 
-<1>10. The decomposition is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The decomposition is unique.
+
+
+::: pf-proof
+
 By steps <1>7--<1>9,
 \[
 \eta
@@ -288,11 +356,15 @@ Subtracting from $\mu$ gives
 \[
 \mu_s=\mu_s'.
 \]
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves existence, and step <1>10 proves uniqueness.
+
 :::
+
 :::

@@ -28,14 +28,19 @@ Show that for each $i$,
 \]
 :::
 
-::: {.solution}
-<1>1. The matrix
+::: pf
+
+::: pf-step
+
+The matrix
 \[
 X-zI
 \]
 is invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 (X-zI)v=0
@@ -60,9 +65,14 @@ Thus
 \ker(X-zI)=\{0\},
 \]
 and the square matrix is invertible.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 G^*
@@ -70,7 +80,9 @@ G^*
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 G=(X-zI)^{-1},
@@ -89,9 +101,14 @@ Because $X^*=X$,
 =
 X-\overline z\,I.
 \]
+
 :::
 
-<1>3. The resolvent identity gives
+:::
+
+::: pf-step
+
+The resolvent identity gives
 \[
 \boxed{
 G-G^*
@@ -99,7 +116,9 @@ G-G^*
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For invertible matrices $A,B$,
 \[
 A^{-1}-B^{-1}
@@ -133,16 +152,23 @@ G-G^*
 (z-\overline z)\,GG^*.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Taking the $(i,i)$ entry in step <1>3 gives
+:::
+
+::: pf-step
+
+Taking the $(i,i)$ entry in step <1>3 gives
 \[
 2i\,\operatorname{Im}G_{ii}
 =
 2i\,\operatorname{Im}z\,(GG^*)_{ii}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The left side is
 \[
 (G-G^*)_{ii}
@@ -158,16 +184,23 @@ z-\overline z
 2i\,\operatorname{Im}z.
 \]
 Substitute these into the diagonal entry of step <1>3.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 (GG^*)_{ii}
 =
 \sum_{j=1}^n|G_{ij}|^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By matrix multiplication,
 \[
 (GG^*)_{ii}
@@ -188,9 +221,14 @@ G_{ij}\overline{G_{ij}}
 =
 \sum_{j=1}^n|G_{ij}|^2.
 \]
+
 :::
 
-<1>6. Therefore, for every $i$,
+:::
+
+::: pf-step
+
+Therefore, for every $i$,
 \[
 \boxed{
 \sum_{j=1}^n|G_{ij}|^2
@@ -200,7 +238,9 @@ G_{ij}\overline{G_{ij}}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>5 and divide by
 \[
 2i\,\operatorname{Im}z.
@@ -209,11 +249,15 @@ This denominator is nonzero because
 \[
 \operatorname{Im}z>0.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required identity.
+
 :::
+
 :::

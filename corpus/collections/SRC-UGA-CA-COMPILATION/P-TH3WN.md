@@ -24,8 +24,11 @@ $$\frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta},\q
 \frac{\partial v}{\partial r}=-\frac{1}{r}\frac{\partial u}{\partial \theta}.$$
 :::
 
-::: {.solution}
-<1>1. At the point $z=re^{i\theta}$, the Cartesian Cauchy--Riemann
+::: pf
+
+::: pf-step
+
+At the point $z=re^{i\theta}$, the Cartesian Cauchy--Riemann
 equations are
 $$
 u_x=v_y,
@@ -33,13 +36,20 @@ u_x=v_y,
 u_y=-v_x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function is complex differentiable at $z$ and has continuous real
 partial derivatives there, so the Cauchy--Riemann equations hold at that
 point.
+
 :::
 
-<1>2. The polar derivatives satisfy
+:::
+
+::: pf-step
+
+The polar derivatives satisfy
 $$
 \begin{aligned}
 u_r&=u_x\cos\theta+u_y\sin\theta,\\
@@ -49,7 +59,9 @@ v_\theta&=-r v_x\sin\theta+r v_y\cos\theta.
 \end{aligned}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 x=r\cos\theta,
@@ -57,14 +69,21 @@ x=r\cos\theta,
 y=r\sin\theta,
 $$
 the chain rule gives the four displayed formulas.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{u_r=\frac1r v_\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 and then step <1>1,
 $$
 \frac1r v_\theta
@@ -73,14 +92,21 @@ $$
 =u_r.
 $$
 The division by $r$ is valid because $r\ne0$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{v_r=-\frac1r u_\theta}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Again using steps <1>2 and <1>1,
 $$
 -\frac1r u_\theta
@@ -88,12 +114,16 @@ $$
 =v_y\sin\theta+v_x\cos\theta
 =v_r.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>4 are exactly the two polar Cauchy--Riemann equations
 required in the problem.
+
 :::
+
 :::

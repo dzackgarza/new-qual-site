@@ -29,36 +29,48 @@ Compute
 \]
 :::
 
-::: {.solution}
 Let
 \[
 \zeta=e^{2\pi i/5}.
 \]
 
-<1>1. The matrix is circulant, with associated polynomial
+::: pf
+
+::: pf-step
+
+The matrix is circulant, with associated polynomial
 \[
 p(z)
 =
 1+2z+4z^2+8z^3+16z^4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each row is obtained from the preceding row by a cyclic left shift.
 For a $5\times5$ circulant matrix with first row
 \[
 (1,2,4,8,16),
 \]
 the corresponding polynomial is the displayed polynomial.
+
 :::
 
-<1>2. The eigenvalues of the matrix are
+:::
+
+::: pf-step
+
+The eigenvalues of the matrix are
 \[
 \boxed{
 p(1),p(\zeta),p(\zeta^2),p(\zeta^3),p(\zeta^4).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 j=0,1,2,3,4,
@@ -88,9 +100,14 @@ Since the set
 \]
 is invariant under inversion, the multiset of eigenvalues is exactly the displayed set.
 The vectors $v_j$ form a basis because the Fourier matrix is invertible.
+
 :::
 
-<1>3. For every $z$,
+:::
+
+::: pf-step
+
+For every $z$,
 \[
 \boxed{
 (2z-1)p(z)
@@ -99,7 +116,9 @@ The vectors $v_j$ form a basis because the Fourier matrix is invertible.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial is a finite geometric series:
 \[
 p(z)
@@ -114,9 +133,14 @@ Thus
 =
 32z^5-1.
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 z^5=1,
 \]
@@ -129,7 +153,9 @@ p(z)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 z^5=1
@@ -150,9 +176,14 @@ because
 z=\frac12
 \]
 is not a fifth root of unity.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \det M
 =
@@ -160,12 +191,19 @@ is not a fifth root of unity.
 {\displaystyle\prod_{j=0}^4(2\zeta^j-1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant is the product of the eigenvalues from step <1>2.
 Apply step <1>4 to each fifth root of unity.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \prod_{j=0}^4(2\zeta^j-1)
@@ -174,7 +212,9 @@ Apply step <1>4 to each fifth root of unity.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The fifth roots of unity are precisely the roots of
 \[
 z^5-1.
@@ -209,9 +249,14 @@ Multiplying each factor by $2$ gives
 =
 31.
 \]
+
 :::
 
-<1>7. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \det M
@@ -222,7 +267,9 @@ Multiplying each factor by $2$ gives
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>5--<1>6:
 \[
 \det M
@@ -239,11 +286,15 @@ and
 \[
 961^2=923521.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required determinant.
+
 :::
+
 :::

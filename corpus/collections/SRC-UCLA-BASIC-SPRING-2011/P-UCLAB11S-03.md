@@ -18,14 +18,19 @@ Let $H$ be a Hermitian (self-adjoint) operator on a finite-dimensional inner-pro
 Show that there exists a unitary operator $U$ such that $UHU^*$ is diagonal.
 :::
 
-::: {.solution}
-<1>1. By the spectral theorem, there exists an orthonormal basis
+::: pf
+
+::: pf-step
+
+By the spectral theorem, there exists an orthonormal basis
 \[
 v_1,\ldots,v_n
 \]
 of eigenvectors of $H$.
 
-::: {.proof}
+
+::: pf-proof
+
 The operator $H$ is Hermitian on a finite-dimensional inner-product space.
 The spectral theorem for Hermitian operators therefore gives an orthonormal basis consisting of eigenvectors.
 Thus there are real numbers
@@ -37,9 +42,14 @@ such that
 Hv_j=\lambda_jv_j
 \]
 for every $j$.
+
 :::
 
-<1>2. Let $U^*$ be the unitary change-of-basis operator sending the standard orthonormal basis
+:::
+
+::: pf-step
+
+Let $U^*$ be the unitary change-of-basis operator sending the standard orthonormal basis
 \[
 e_1,\ldots,e_n
 \]
@@ -53,7 +63,9 @@ U
 \]
 is its inverse.
 
-::: {.proof}
+
+::: pf-proof
+
 An operator sending one orthonormal basis to another preserves inner products, hence is unitary.
 Thus
 \[
@@ -63,14 +75,21 @@ Equivalently,
 \[
 UU^*=U^*U=I.
 \]
+
 :::
 
-<1>3. For every $j$,
+:::
+
+::: pf-step
+
+For every $j$,
 \[
 UHU^*e_j=\lambda_je_j.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 U^*e_j=v_j.
@@ -89,9 +108,14 @@ U(\lambda_jv_j)\\
 \lambda_je_j.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 UHU^*
@@ -100,14 +124,20 @@ UHU^*
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that every standard basis vector $e_j$ is an eigenvector of $UHU^*$ with eigenvalue $\lambda_j$.
 Thus the matrix of $UHU^*$ in the standard basis is diagonal with those diagonal entries.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the required unitary diagonalization.
+
 :::
+
 :::

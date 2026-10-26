@@ -27,8 +27,11 @@ M=\begin{pmatrix}3&5\\1&-1\end{pmatrix}.
 2. Does there exist a real $2\times2$ matrix $A$ such that $M=\exp(A)$?
 :::
 
-::: {.solution}
-<1>1. The characteristic polynomial of $M$ is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of $M$ is
 \[
 \chi_M(\lambda)
 =
@@ -37,7 +40,9 @@ M=\begin{pmatrix}3&5\\1&-1\end{pmatrix}.
 (\lambda-4)(\lambda+2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 \det(\lambda I-M)
@@ -53,23 +58,37 @@ M=\begin{pmatrix}3&5\\1&-1\end{pmatrix}.
 \lambda^2-2\lambda-8.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The matrix $M$ is diagonalizable over $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $M$ is diagonalizable over $\mathbb R$.
+
+
+::: pf-proof
+
 Step <1>1 gives two distinct real eigenvalues, $4$ and $-2$.
 Therefore $M$ has a basis of eigenvectors.
+
 :::
 
-<1>3. The corresponding spectral projections are
+:::
+
+::: pf-step
+
+The corresponding spectral projections are
 \[
 P_4=\frac{M+2I}{6},
 \qquad
 P_{-2}=\frac{4I-M}{6}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial
 \[
 \frac{t+2}{6}
@@ -80,9 +99,14 @@ equals $1$ at $t=4$ and $0$ at $t=-2$, while
 \]
 equals $0$ at $t=4$ and $1$ at $t=-2$.
 Applying these polynomials to $M$ gives the two eigenspace projections.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \exp(M)
@@ -91,11 +115,18 @@ e^4P_4+e^{-2}P_{-2}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the eigenspace for eigenvalue $4$, the exponential acts by multiplication by $e^4$; on the eigenspace for eigenvalue $-2$, it acts by multiplication by $e^{-2}$.
+
 :::
 
-<1>5. Explicitly,
+:::
+
+::: pf-step
+
+Explicitly,
 \[
 M+2I
 =
@@ -112,11 +143,18 @@ M+2I
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These follow by direct matrix addition and subtraction.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \exp(M)
@@ -133,12 +171,19 @@ e^4+5e^{-2}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the matrices from step <1>5 into the formula of step <1>4.
 This answers part 1.
+
 :::
 
-<1>7. If a real matrix $A$ satisfied
+:::
+
+::: pf-step
+
+If a real matrix $A$ satisfied
 \[
 \exp(A)=M,
 \]
@@ -147,7 +192,9 @@ then
 \det M>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every real square matrix $A$,
 \[
 \det(\exp A)
@@ -155,9 +202,14 @@ For every real square matrix $A$,
 \exp(\operatorname{tr}A).
 \]
 The right-hand side is strictly positive.
+
 :::
 
-<1>8. But
+:::
+
+::: pf-step
+
+But
 \[
 \det M
 =
@@ -166,7 +218,9 @@ The right-hand side is strictly positive.
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct computation gives
 \[
 \det M
@@ -175,24 +229,35 @@ Direct computation gives
 =
 -8.
 \]
+
 :::
 
-<1>9. Therefore no real $2\times2$ matrix $A$ satisfies
+:::
+
+::: pf-step
+
+Therefore no real $2\times2$ matrix $A$ satisfies
 \[
 \exp(A)=M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>7--<1>8 give a contradiction to the existence of such an $A$.
 Thus the answer to part 2 is
 \[
 \boxed{\text{No}.}
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 computes $\exp(M)$, and step <1>9 answers the second question.
+
 :::
+
 :::

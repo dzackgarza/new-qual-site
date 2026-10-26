@@ -24,10 +24,15 @@ v=v_1+v_2,\qquad f(v)=f(v_1),\qquad g(v)=g(v_2).
 \]
 :::
 
-::: {.solution}
-<1>1. The restriction of $g$ to $\ker f$ is not the zero functional.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The restriction of $g$ to $\ker f$ is not the zero functional.
+
+
+::: pf-proof
+
 Suppose instead that
 \[
 g(w)=0
@@ -88,9 +93,14 @@ g
 \frac{g(u)}{f(u)}\,f,
 \]
 contradicting linear independence.
+
 :::
 
-<1>2. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 w\in\ker f
 \]
@@ -99,11 +109,18 @@ such that
 g(w)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Such a vector exists by step <1>1.
+
 :::
 
-<1>3. Given
+:::
+
+::: pf-step
+
+Given
 \[
 v\in\mathbb R^n,
 \]
@@ -118,16 +135,25 @@ and
 v_1=v-v_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The denominator is nonzero by step <1>2, so the definitions make sense.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 g(v_2)=g(v).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity,
 \[
 g(v_2)
@@ -136,14 +162,21 @@ g(v_2)
 =
 g(v).
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f(v_1)=f(v).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 w\in\ker f,
@@ -165,11 +198,18 @@ f(v)-f(v_2)
 =
 f(v).
 \]
+
 :::
 
-<1>6. The vectors $v_1,v_2$ satisfy all three required identities.
+:::
 
-::: {.proof}
+::: pf-step
+
+The vectors $v_1,v_2$ satisfy all three required identities.
+
+
+::: pf-proof
+
 By definition in step <1>3,
 \[
 v=v_1+v_2.
@@ -182,11 +222,15 @@ and step <1>4 gives
 \[
 g(v)=g(v_2).
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the required decomposition for arbitrary $v$.
+
 :::
+
 :::

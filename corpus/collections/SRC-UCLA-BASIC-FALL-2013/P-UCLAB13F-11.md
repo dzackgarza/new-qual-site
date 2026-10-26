@@ -17,7 +17,6 @@ audit:
 Define a normal linear transformation $N$ on a finite-dimensional complex inner-product space $V$. Assuming that $N$ is normal, show that there exists an orthogonal basis of $V$ consisting of eigenvectors of $N$.
 :::
 
-::: {.solution}
 A linear transformation
 \[
 N:V\to V
@@ -28,12 +27,18 @@ is called *normal* if
 \]
 where $N^*$ is the adjoint of $N$.
 
-<1>1. If $N$ is normal, then for every $v\in V$,
+::: pf
+
+::: pf-step
+
+If $N$ is normal, then for every $v\in V$,
 \[
 \|Nv\|=\|N^*v\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the adjoint relation and normality,
 \[
 \begin{aligned}
@@ -51,9 +56,14 @@ Using the adjoint relation and normality,
 \end{aligned}
 \]
 Taking nonnegative square roots gives the claim.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 Nv=\lambda v,
 \qquad
@@ -64,7 +74,9 @@ then
 N^*v=\overline{\lambda}v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 T=N-\lambda I.
@@ -97,15 +109,22 @@ that is,
 \[
 (N^*-\overline{\lambda}I)v=0.
 \]
+
 :::
 
-<1>3. If $v$ is an eigenvector of $N$, then
+:::
+
+::: pf-step
+
+If $v$ is an eigenvector of $N$, then
 \[
 v^\perp
 \]
 is invariant under both $N$ and $N^*$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 Nv=\lambda v.
@@ -141,15 +160,22 @@ so
 \[
 N^*w\in v^\perp.
 \]
+
 :::
 
-<1>4. The restriction
+:::
+
+::: pf-step
+
+The restriction
 \[
 N|_{v^\perp}:v^\perp\to v^\perp
 \]
 is normal.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, both $N$ and $N^*$ preserve $v^\perp$.
 Thus
 \[
@@ -170,15 +196,22 @@ to $v^\perp$ gives
 \left(N|_{v^\perp}\right).
 \]
 Hence the restriction is normal.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 \dim V>0,
 \]
 then $N$ has a nonzero eigenvector.
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial of $N$ has positive degree and complex coefficients.
 By the fundamental theorem of algebra, it has a root
 \[
@@ -193,11 +226,18 @@ so
 \ker(N-\lambda I)\ne\{0\}.
 \]
 Any nonzero vector in this kernel is an eigenvector.
+
 :::
 
-<1>6. Every normal operator on a finite-dimensional complex inner-product space has an orthonormal basis of eigenvectors.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every normal operator on a finite-dimensional complex inner-product space has an orthonormal basis of eigenvectors.
+
+
+::: pf-proof
+
 Proceed by induction on
 \[
 n=\dim V.
@@ -226,11 +266,15 @@ Therefore
 v_1,\ldots,v_n
 \]
 is an orthonormal basis of $V$ consisting entirely of eigenvectors of $N$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The opening sentence gives the definition of normality, and step <1>6 proves the spectral theorem for normal operators.
+
 :::
+
 :::

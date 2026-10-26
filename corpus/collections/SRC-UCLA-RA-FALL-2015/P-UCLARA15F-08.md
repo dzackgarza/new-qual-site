@@ -28,7 +28,6 @@ Assume that $f(z)$ is an entire function that is $2\pi$-periodic in the sense th
 for some $C > 0$, where $0 < \alpha < 1$. Prove that $f$ is constant.
 :::
 
-::: {.solution}
 For each integer \(n\), define the Fourier coefficient
 \[
 a_n
@@ -38,7 +37,11 @@ a_n
 f(x)e^{-inx}\,dx.
 \]
 
-<1>1. For every \(y\in\mathbb R\),
+::: pf
+
+::: pf-step
+
+For every \(y\in\mathbb R\),
 \[
 \boxed{
 a_n
@@ -48,7 +51,9 @@ a_n
 f(x+iy)e^{-in(x+iy)}\,dx}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Consider the entire function
 \[
 g_n(z)=f(z)e^{-inz}.
@@ -76,9 +81,14 @@ Cauchy's theorem gives total integral \(0\). The two vertical side integrals can
 f(x+iy)e^{-in(x+iy)}\,dx.
 \]
 Divide by \(2\pi\).
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 |a_n|
 \le
@@ -86,7 +96,9 @@ C e^{\alpha|y|}e^{ny}
 \]
 for every \(y\in\mathbb R\).
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>1,
 \[
 \begin{aligned}
@@ -117,11 +129,14 @@ Thus
 \le
 Ce^{\alpha|y|}e^{ny}.
 \]
+
 :::
 
-## Positive Fourier modes
+:::
 
-<1>3. Let
+::: pf-step
+
+Let
 \[
 n\ge1.
 \]
@@ -133,7 +148,9 @@ For \(y<0\),
 C e^{(n-\alpha)y}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When \(y<0\),
 \[
 |y|=-y.
@@ -146,9 +163,14 @@ C e^{-\alpha y}e^{ny}
 =
 C e^{(n-\alpha)y}.
 \]
+
 :::
 
-<1>4. Since
+:::
+
+::: pf-step
+
+Since
 \[
 n-\alpha>0,
 \]
@@ -162,7 +184,9 @@ gives
 \]
 for every \(n\ge1\).
 
-::: {.proof}
+
+::: pf-proof
+
 Because \(0<\alpha<1\) and \(n\ge1\),
 \[
 n-\alpha>0.
@@ -172,11 +196,14 @@ Thus
 e^{(n-\alpha)y}\to0
 \]
 as \(y\to-\infty\). Step <1>3 then forces \(|a_n|=0\).
+
 :::
 
-## Negative Fourier modes
+:::
 
-<1>5. Let
+::: pf-step
+
+Let
 \[
 n\le-1.
 \]
@@ -188,7 +215,9 @@ For \(y>0\),
 C e^{(n+\alpha)y}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When \(y>0\),
 \[
 |y|=y.
@@ -201,9 +230,14 @@ Ce^{\alpha y}e^{ny}
 =
 Ce^{(n+\alpha)y}.
 \]
+
 :::
 
-<1>6. Since
+:::
+
+::: pf-step
+
+Since
 \[
 n+\alpha<0,
 \]
@@ -217,32 +251,42 @@ gives
 \]
 for every \(n\le-1\).
 
-::: {.proof}
+
+::: pf-proof
+
 Because \(n\le-1\) and \(\alpha<1\),
 \[
 n+\alpha\le-1+\alpha<0.
 \]
 Hence the right-hand side of step <1>5 tends to zero as \(y\to+\infty\).
+
 :::
 
-<1>7. Therefore the only possibly nonzero Fourier coefficient is
+:::
+
+::: pf-step
+
+Therefore the only possibly nonzero Fourier coefficient is
 \[
 \boxed{a_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>4 and <1>6 kill every coefficient with \(n\ne0\).
+
 :::
 
-Let
-\[
-h(x)=f(x)-a_0
-\]
-for real \(x\).
+:::
 
-<1>8. Every Fourier coefficient of the continuous \(2\pi\)-periodic function \(h\) is zero.
+::: pf-step
 
-::: {.proof}
+Every Fourier coefficient of the continuous \(2\pi\)-periodic function \(h\) is zero.
+
+
+::: pf-proof
+
 For \(n\ne0\), this follows from step <1>7. For \(n=0\),
 \[
 \frac1{2\pi}\int_0^{2\pi}h(x)\,dx
@@ -251,53 +295,85 @@ a_0-a_0
 =
 0.
 \]
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{h(x)=0}
 \]
 for every real \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 A continuous periodic function is uniquely determined by its Fourier coefficients. Equivalently, the Fejér means of its Fourier series converge uniformly to \(h\); since all Fourier coefficients vanish, every Fejér mean is identically zero, so \(h\equiv0\).
+
 :::
 
-<1>10. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 f(x)=a_0}
 \]
 for every real \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of \(h\) and step <1>9.
+
 :::
 
-<1>11. Since \(f-a_0\) is entire and vanishes on the real line, it vanishes identically on \(\mathbb C\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Since \(f-a_0\) is entire and vanishes on the real line, it vanishes identically on \(\mathbb C\).
+
+
+::: pf-proof
+
 The real line has accumulation points in \(\mathbb C\). Apply the identity theorem to the entire function
 \[
 f-a_0.
 \]
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f\text{ is constant}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>11 gives
 \[
 f\equiv a_0.
 \]
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 is the required conclusion.
+
 :::
+
 :::

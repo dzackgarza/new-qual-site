@@ -30,19 +30,24 @@ Prove that there is a subsequence $(f_{n_k})$ such that
 exists for every rational number $r$.
 :::
 
-::: {.solution}
 Enumerate the rational numbers as
 \[
 \mathbb Q=\{r_1,r_2,r_3,\ldots\}.
 \]
 
-<1>1. The real sequence
+::: pf
+
+::: pf-step
+
+The real sequence
 \[
 \bigl(f_n(r_1)\bigr)_{n\ge1}
 \]
 has a convergent subsequence.
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 |f_n(r_1)|\le B
@@ -53,9 +58,14 @@ Thus the sequence is bounded in the compact interval
 [-B,B].
 \]
 By Bolzano--Weierstrass, it has a convergent subsequence.
+
 :::
 
-<1>2. Choose an infinite index sequence
+:::
+
+::: pf-step
+
+Choose an infinite index sequence
 \[
 n^{(1)}_1<n^{(1)}_2<\cdots
 \]
@@ -65,11 +75,18 @@ f_{n^{(1)}_k}(r_1)
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the subsequence supplied by step <1>1, written by its indices.
+
 :::
 
-<1>3. From the subsequence in step <1>2, extract a further subsequence
+:::
+
+::: pf-step
+
+From the subsequence in step <1>2, extract a further subsequence
 \[
 n^{(2)}_1<n^{(2)}_2<\cdots
 \]
@@ -79,7 +96,9 @@ f_{n^{(2)}_k}(r_2)
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 The values
 \[
 f_{n^{(1)}_k}(r_2)
@@ -91,9 +110,14 @@ Choose its indices as
 n^{(2)}_k.
 \]
 Because it is a subsequence of the stage-1 sequence, convergence at $r_1$ is preserved.
+
 :::
 
-<1>4. Continuing inductively, construct nested subsequences
+:::
+
+::: pf-step
+
+Continuing inductively, construct nested subsequences
 \[
 \bigl(n^{(j)}_k\bigr)_{k\ge1}
 \]
@@ -106,7 +130,9 @@ converges as $k\to\infty$ for each
 1\le i\le j.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose the stage-$j$ subsequence has been chosen.
 The real sequence
 \[
@@ -123,9 +149,14 @@ Because it is a subsequence of the stage-$j$ sequence, convergence at
 r_1,\ldots,r_j
 \]
 is retained, and by construction convergence at $r_{j+1}$ is added.
+
 :::
 
-<1>5. Define the diagonal sequence of indices by
+:::
+
+::: pf-step
+
+Define the diagonal sequence of indices by
 \[
 \boxed{n_k=n^{(k)}_k}.
 \]
@@ -134,7 +165,9 @@ Then
 n_1<n_2<\cdots.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At each stage, the sequence
 \[
 \bigl(n^{(j+1)}_k\bigr)
@@ -149,9 +182,14 @@ Thus
 \[
 n_1<n_2<\cdots.
 \]
+
 :::
 
-<1>6. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 j\ge1.
 \]
@@ -161,7 +199,9 @@ k\ge j,
 \]
 the index $n_k$ belongs to the stage-$j$ subsequence.
 
-::: {.proof}
+
+::: pf-proof
+
 For $k\ge j$, the stage-$k$ sequence is obtained by repeatedly passing to subsequences starting from stage $j$.
 Hence
 \[
@@ -172,9 +212,14 @@ is one of the indices in
 \bigl(n^{(j)}_\ell\bigr)_{\ell\ge1}.
 \]
 Thus the tail of the diagonal sequence is a subsequence of the stage-$j$ sequence.
+
 :::
 
-<1>7. For every rational number
+:::
+
+::: pf-step
+
+For every rational number
 \[
 r_j,
 \]
@@ -184,7 +229,9 @@ the limit
 \]
 exists.
 
-::: {.proof}
+
+::: pf-proof
+
 At stage $j$, the sequence
 \[
 f_{n^{(j)}_k}(r_j)
@@ -201,9 +248,14 @@ Hence
 f_{n_k}(r_j)
 \]
 converges.
+
 :::
 
-<1>8. Therefore there exists a subsequence
+:::
+
+::: pf-step
+
+Therefore there exists a subsequence
 \[
 \boxed{(f_{n_k})}
 \]
@@ -215,18 +267,24 @@ such that
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every rational number is equal to
 \[
 r_j
 \]
 for some $j$.
 Apply step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required diagonal-subsequence conclusion.
+
 :::
+
 :::

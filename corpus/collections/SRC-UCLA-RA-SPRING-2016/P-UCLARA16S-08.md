@@ -20,7 +20,6 @@ audit:
 Let $\mathbb C_+=\{z\in\mathbb C:\operatorname{Im}z>0\}$ and let $f_n:\mathbb C_+\to\mathbb C_+$ be a sequence of holomorphic functions. Show that unless $|f_n|\to\infty$ uniformly on compact subsets of $\mathbb C_+$, there exists a subsequence converging uniformly on compact subsets of $\mathbb C_+$.
 :::
 
-::: {.solution}
 Let
 \[
 \Phi(w)
@@ -33,14 +32,20 @@ i\frac{1+\zeta}{1-\zeta}.
 \]
 Then $\Phi$ is a biholomorphism from $\mathbb C_+$ onto the unit disk $\mathbb D$.
 
-<1>1. Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\mathbb C_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
+::: pf
+
+::: pf-step
+
+Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\mathbb C_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
 \[
 |f_{n_j}(z_j)|\le M
 \qquad
 (j\ge1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Failure of uniform divergence on compact subsets means that for some compact $K\subset\mathbb C_+$ there is a number $M>0$ such that, for infinitely many indices $n$, the inequality
 \[
 |f_n(z)|>M
@@ -48,9 +53,14 @@ Failure of uniform divergence on compact subsets means that for some compact $K\
 (z\in K)
 \]
 fails. Select those indices as $n_j$ and choose $z_j\in K$ at which it fails.
+
 :::
 
-<1>2. After passing to a further subsequence, the functions
+:::
+
+::: pf-step
+
+After passing to a further subsequence, the functions
 \[
 g_j
 \coloneqq
@@ -58,13 +68,22 @@ g_j
 \]
 converge uniformly on compact subsets of $\mathbb C_+$ to a holomorphic function $g:\mathbb C_+\to\overline{\mathbb D}$, and the points $z_j$ converge to some $z_\infty\in K$.
 
-::: {.proof}
+
+::: pf-proof
+
 The family $(g_j)$ is uniformly bounded by $1$, so Montel's theorem gives a locally uniformly convergent subsequence. Relabel it as $(g_j)$. Since $K$ is compact, the associated sequence $(z_j)$ has a convergent subsequence; pass to it as well and write its limit as $z_\infty\in K$. Local uniform limits of holomorphic functions are holomorphic.
+
 :::
 
-<1>3. The limit function $g$ is not identically equal to $1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit function $g$ is not identically equal to $1$.
+
+
+::: pf-proof
+
 For every $w\in\mathbb C_+$,
 \[
 1-\Phi(w)
@@ -96,17 +115,31 @@ Hence
 \frac{2}{M+1}>0.
 \]
 Thus $g(z_\infty)\ne1$, so $g$ is not the constant function $1$.
+
 :::
 
-<1>4. The function $g$ never takes the value $1$ on $\mathbb C_+$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ never takes the value $1$ on $\mathbb C_+$.
+
+
+::: pf-proof
+
 The limit satisfies $|g|\le1$. If $g(z_0)=1$ at some interior point, then $|g|$ attains its maximum value $1$ at $z_0$. The maximum-modulus principle would force $g\equiv1$, contradicting step <1>3.
+
 :::
 
-<1>5. The subsequence $(f_{n_j})$ converges uniformly on compact subsets of $\mathbb C_+$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subsequence $(f_{n_j})$ converges uniformly on compact subsets of $\mathbb C_+$.
+
+
+::: pf-proof
+
 Let $L\subset\mathbb C_+$ be compact. By steps <1>3 and <1>4, the continuous function $1-g$ has no zeros on $L$. Hence
 \[
 \delta
@@ -140,11 +173,15 @@ f_{n_j}
 i\frac{1+g}{1-g}
 \]
 uniformly on $L$. Since $L$ was arbitrary, the convergence is uniform on compact subsets of $\mathbb C_+$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required locally uniformly convergent subsequence.
+
 :::
+
 :::

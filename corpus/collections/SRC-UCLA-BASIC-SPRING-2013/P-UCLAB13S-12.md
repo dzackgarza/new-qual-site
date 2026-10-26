@@ -27,8 +27,11 @@ Prove that
 Be careful to give a complete proof.
 :::
 
-::: {.solution}
-<1>1. For every integer $N\ge0$ and every $x\in[0,1]$,
+::: pf
+
+::: pf-step
+
+For every integer $N\ge0$ and every $x\in[0,1]$,
 \[
 \boxed{
 \frac1{1+x^2}
@@ -39,7 +42,9 @@ Be careful to give a complete proof.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the finite geometric-series identity
 \[
 \frac1{1-r}
@@ -62,9 +67,14 @@ r^{N+1}
 =
 (-1)^{N+1}x^{2N+2}.
 \]
+
 :::
 
-<1>2. Integrating step <1>1 from $0$ to $1$ gives
+:::
+
+::: pf-step
+
+Integrating step <1>1 from $0$ to $1$ gives
 \[
 \int_0^1\frac{dx}{1+x^2}
 =
@@ -82,7 +92,9 @@ R_N
 \,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The finite sum may be integrated term by term:
 \[
 \int_0^1x^{2n}\,dx
@@ -90,9 +102,14 @@ The finite sum may be integrated term by term:
 \frac1{2n+1}.
 \]
 The final term is exactly the stated remainder.
+
 :::
 
-<1>3. The remainder satisfies
+:::
+
+::: pf-step
+
+The remainder satisfies
 \[
 \boxed{
 |R_N|
@@ -101,7 +118,9 @@ The final term is exactly the stated remainder.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 0\le x\le1,
@@ -128,23 +147,35 @@ Therefore
 \frac1{2N+3}.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 R_N\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 0\le|R_N|\le\frac1{2N+3},
 \]
 and the upper bound tends to zero.
 Apply the squeeze theorem.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^1\frac{dx}{1+x^2}
@@ -154,16 +185,23 @@ Apply the squeeze theorem.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take the limit
 \[
 N\to\infty
 \]
 in the identity from step <1>2 and use step <1>4.
 This argument uses only finite sums before passing to the limit, so there is no unjustified interchange of an infinite series and an integral.
+
 :::
 
-<1>6. By the definition of $\pi$ in the problem,
+:::
+
+::: pf-step
+
+By the definition of $\pi$ in the problem,
 \[
 \boxed{
 \pi
@@ -174,17 +212,23 @@ This argument uses only finite sums before passing to the limit, so there is no 
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity from step <1>5 by $4$.
 The left side becomes $\pi$ by definition, while the right side is
 \[
 4\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required Gregory series for $\pi$.
+
 :::
+
 :::

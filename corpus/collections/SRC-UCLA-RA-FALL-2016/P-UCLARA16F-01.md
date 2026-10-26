@@ -32,7 +32,6 @@ Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ suc
 Show that $\lVert f_n-f\rVert_1\to0$.
 :::
 
-::: {.solution}
 Define
 \[
 g_n(x)
@@ -40,13 +39,19 @@ g_n(x)
 |f_n(x)|-|f_n(x)-f(x)|.
 \]
 
-<1>1. For almost every \(x\in X\),
+::: pf
+
+::: pf-step
+
+For almost every \(x\in X\),
 \[
 \boxed{
 g_n(x)\to |f(x)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 f_n(x)\to f(x)
@@ -60,9 +65,14 @@ and
 |f_n(x)-f(x)|\to0.
 \]
 Subtract.
+
 :::
 
-<1>2. For every \(n\) and almost every \(x\),
+:::
+
+::: pf-step
+
+For every \(n\) and almost every \(x\),
 \[
 \boxed{
 |g_n(x)|
@@ -70,7 +80,9 @@ Subtract.
 |f(x)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the reverse triangle inequality to the pair
 \[
 f_n(x)
@@ -87,19 +99,31 @@ f_n(x)-f(x):
 |f(x)|.
 \]
 The left-hand side is \(|g_n(x)|\).
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 \[
 f\in L^1(\mu),
 \]
 the function \(|f|\) is integrable.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of membership in \(L^1(\mu)\).
+
 :::
 
-<1>4. Therefore, by the dominated convergence theorem,
+:::
+
+::: pf-step
+
+Therefore, by the dominated convergence theorem,
 \[
 \boxed{
 \int g_n\,d\mu
@@ -107,18 +131,27 @@ This is exactly the definition of membership in \(L^1(\mu)\).
 \int |f|\,d\mu}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use pointwise almost-everywhere convergence from step <1>1 and domination by the integrable function \(|f|\) from steps <1>2--<1>3.
+
 :::
 
-<1>5. For every \(n\),
+:::
+
+::: pf-step
+
+For every \(n\),
 \[
 \int g_n\,d\mu
 =
 \|f_n\|_1-\|f_n-f\|_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 g_n
@@ -134,9 +167,14 @@ implies
 f_n-f\in L^1.
 \]
 Integrate term by term.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \|f_n\|_1-\|f_n-f\|_1
@@ -144,27 +182,43 @@ Integrate term by term.
 \|f\|_1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>5.
+
 :::
 
-<1>7. By hypothesis,
+:::
+
+::: pf-step
+
+By hypothesis,
 \[
 \boxed{
 \|f_n\|_1\to\|f\|_1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is assumption (ii).
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \|f_n-f\|_1\to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>6,
 \[
 \|f_n-f\|_1
@@ -176,11 +230,15 @@ From step <1>6,
 \right).
 \]
 The first term tends to \(\|f\|_1\) by step <1>7, and the parenthesized term tends to \(\|f\|_1\) by step <1>6. Their difference tends to \(0\).
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required \(L^1\)-convergence.
+
 :::
+
 :::

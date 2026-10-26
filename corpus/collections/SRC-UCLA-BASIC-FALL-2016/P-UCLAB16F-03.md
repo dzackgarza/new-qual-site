@@ -33,7 +33,6 @@ Here R must be a $2 \times 3$ matrix with real entries.
 You must prove that your conditions are necessary and sufficient.
 :::
 
-::: {.solution}
 The necessary and sufficient condition is:
 \[
 \boxed{
@@ -46,14 +45,20 @@ Equivalently, the quadratic form defined by $A$ has inertia
 \]
 namely one positive square, one negative square, and one zero square.
 
-<1>1. Suppose
+::: pf
+
+::: pf-step
+
+Suppose
 \[
 A=R^TBR
 \]
 for a real $2\times3$ matrix $R$ of rank $2$.
 Then $A$ is symmetric.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 B^T=B,
@@ -68,14 +73,21 @@ R^TB^TR
 R^TBR
 =A.
 \]
+
 :::
 
-<1>2. Under the same hypothesis,
+:::
+
+::: pf-step
+
+Under the same hypothesis,
 \[
 \ker A=\ker R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 Rx=0,
@@ -114,14 +126,21 @@ Thus
 \[
 \ker A\subseteq\ker R.
 \]
+
 :::
 
-<1>3. Under the same hypothesis,
+:::
+
+::: pf-step
+
+Under the same hypothesis,
 \[
 \operatorname{rank}A=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $R$ has rank $2$ as a map
 \[
 \mathbb R^3\to\mathbb R^2,
@@ -141,11 +160,18 @@ Thus
 3-1
 =2.
 \]
+
 :::
 
-<1>4. Under the same hypothesis, the quadratic form defined by $A$ takes both positive and negative values.
+:::
 
-::: {.proof}
+::: pf-step
+
+Under the same hypothesis, the quadratic form defined by $A$ takes both positive and negative values.
+
+
+::: pf-proof
+
 Since $R$ has rank $2$, it is onto
 \[
 \mathbb R^2.
@@ -195,15 +221,27 @@ while
 x_-^TAx_-=-1.
 \]
 Thus $A$ is indefinite.
+
 :::
 
-<1>5. Hence symmetry, rank $2$, and indefiniteness are necessary.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence symmetry, rank $2$, and indefiniteness are necessary.
+
+
+::: pf-proof
+
 Symmetry is step <1>1, rank $2$ is step <1>3, and indefiniteness is step <1>4.
+
 :::
 
-<1>6. Conversely, suppose $A$ is real symmetric, has rank $2$, and is indefinite.
+:::
+
+::: pf-step
+
+Conversely, suppose $A$ is real symmetric, has rank $2$, and is indefinite.
 Then its eigenvalues are
 \[
 \lambda>0,\qquad -\mu<0,\qquad 0
@@ -213,7 +251,9 @@ for some
 \lambda,\mu>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the real spectral theorem, all eigenvalues of $A$ are real and $A$ has an orthonormal eigenbasis.
 Rank $2$ means exactly one eigenvalue is zero.
 Indefiniteness means among the two nonzero eigenvalues, one is positive and one is negative.
@@ -224,9 +264,14 @@ Write them as
 -\mu
 \]
 with $\lambda,\mu>0$.
+
 :::
 
-<1>7. There exists an orthogonal matrix $Q$ such that
+:::
+
+::: pf-step
+
+There exists an orthogonal matrix $Q$ such that
 \[
 A
 =
@@ -239,16 +284,23 @@ Q^T
 Q.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose an orthonormal eigenbasis of $A$, ordered so that the corresponding eigenvalues are
 \[
 \lambda,-\mu,0.
 \]
 Let $Q$ be the orthogonal change-of-basis matrix.
 The spectral theorem gives the displayed diagonalization.
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 R
 =
@@ -260,7 +312,9 @@ Q.
 \]
 Then $R$ has rank $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix
 \[
 \begin{pmatrix}
@@ -274,14 +328,21 @@ Thus
 \[
 \operatorname{rank}R=2.
 \]
+
 :::
 
-<1>9. The matrix from step <1>8 satisfies
+:::
+
+::: pf-step
+
+The matrix from step <1>8 satisfies
 \[
 \boxed{A=R^TBR}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 D=
@@ -313,17 +374,28 @@ A
 \end{aligned}
 \]
 by step <1>7.
+
 :::
 
-<1>10. Therefore the stated conditions are sufficient.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the stated conditions are sufficient.
+
+
+::: pf-proof
+
 Steps <1>6--<1>9 construct a full-rank $2\times3$ matrix $R$ satisfying the required identity.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves necessity, and step <1>10 proves sufficiency.
+
 :::
+
 :::

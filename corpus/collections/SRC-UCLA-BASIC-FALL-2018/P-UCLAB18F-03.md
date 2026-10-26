@@ -25,12 +25,17 @@ Suppose that for some $\alpha\in(0,1)$,
 Show that $f\circ g$ is Riemann integrable.
 :::
 
-::: {.solution}
 Use the Lebesgue criterion for Riemann integrability: a bounded real-valued function on a compact interval is Riemann integrable if and only if its set of discontinuities has Lebesgue measure zero.
 
-<1>1. The map $g$ is injective.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $g$ is injective.
+
+
+::: pf-proof
+
 If
 \[
 g(x)=g(y),
@@ -47,15 +52,22 @@ Since $\alpha>0$,
 \[
 x=y.
 \]
+
 :::
 
-<1>2. The inverse
+:::
+
+::: pf-step
+
+The inverse
 \[
 g^{-1}:g([0,1])\to[0,1]
 \]
 is Lipschitz with constant $1/\alpha$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 u=g(x),
@@ -78,9 +90,14 @@ Thus
 \le
 \frac1\alpha|u-v|.
 \]
+
 :::
 
-<1>3. If $E\subseteq\mathbb R$ has Lebesgue measure zero and
+:::
+
+::: pf-step
+
+If $E\subseteq\mathbb R$ has Lebesgue measure zero and
 \[
 \phi:E_0\to\mathbb R
 \]
@@ -90,7 +107,9 @@ is $L$-Lipschitz on a subset $E_0\subseteq\mathbb R$, then
 \]
 has measure zero.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$.
 Since $E$ has measure zero, there are open intervals
 \[
@@ -128,9 +147,14 @@ and their total length is less than $\varepsilon$.
 Thus the image has measure zero.
 
 If $L=0$, the image consists of at most one point and is automatically null.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 D_f
 \qquad\text{and}\qquad
@@ -139,18 +163,27 @@ D_g
 denote the sets of discontinuities of $f$ and $g$.
 Then both have measure zero.
 
-::: {.proof}
+
+::: pf-proof
+
 The functions $f$ and $g$ are Riemann integrable on $[0,1]$, hence bounded.
 By the Lebesgue criterion, their discontinuity sets have Lebesgue measure zero.
+
 :::
 
-<1>5. The set
+:::
+
+::: pf-step
+
+The set
 \[
 g^{-1}(D_f\cap g([0,1]))
 \]
 has measure zero.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 D_f
@@ -169,9 +202,14 @@ E_0=g([0,1]),
 \qquad
 \phi=g^{-1}.
 \]
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 x\notin
 D_g
@@ -180,7 +218,9 @@ g^{-1}(D_f\cap g([0,1])),
 \]
 then $f\circ g$ is continuous at $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 \[
 x\notin D_g
@@ -197,22 +237,36 @@ Hence
 f\circ g
 \]
 is continuous at $x$.
+
 :::
 
-<1>7. Therefore the discontinuity set of $f\circ g$ is contained in
+:::
+
+::: pf-step
+
+Therefore the discontinuity set of $f\circ g$ is contained in
 \[
 D_g
 \cup
 g^{-1}(D_f\cap g([0,1])).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the contrapositive of step <1>6.
+
 :::
 
-<1>8. The discontinuity set of $f\circ g$ has measure zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The discontinuity set of $f\circ g$ has measure zero.
+
+
+::: pf-proof
+
 By step <1>4,
 \[
 D_g
@@ -225,15 +279,22 @@ g^{-1}(D_f\cap g([0,1]))
 has measure zero.
 A finite union of null sets is null.
 Apply step <1>7.
+
 :::
 
-<1>9. The function
+:::
+
+::: pf-step
+
+The function
 \[
 f\circ g
 \]
 is bounded on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Riemann integrability of $f$ implies that $f$ is bounded on $[0,1]$.
 Since
 \[
@@ -244,22 +305,33 @@ the values
 f(g(x))
 \]
 are bounded by the same bound.
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{f\circ g\text{ is Riemann integrable on }[0,1]}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9, the composition is bounded.
 By step <1>8, its set of discontinuities has measure zero.
 The Lebesgue criterion for Riemann integrability therefore applies.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

@@ -30,14 +30,17 @@ then
 \]
 :::
 
-::: {.solution}
 Let
 \[
 \lambda_1,\lambda_2,\lambda_3
 \]
 be the eigenvalues of $A$, counted with algebraic multiplicity.
 
-<1>1. The trace identities give
+::: pf
+
+::: pf-step
+
+The trace identities give
 \[
 \lambda_1+\lambda_2+\lambda_3=4,
 \]
@@ -49,7 +52,9 @@ and
 \lambda_1^3+\lambda_2^3+\lambda_3^3=10.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Over $\mathbb C$, $A$ is similar to an upper triangular matrix whose diagonal entries are its eigenvalues counted with algebraic multiplicity.
 The diagonal entries of the $m$th power are then
 \[
@@ -66,16 +71,23 @@ for
 m=1,2,3.
 \]
 Substitute the given traces.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \lambda_1\lambda_2+\lambda_1\lambda_3+\lambda_2\lambda_3
 =
 5.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Square the first identity from step <1>1:
 \[
 16
@@ -96,14 +108,21 @@ so
 \[
 e_2=5.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \lambda_1\lambda_2\lambda_3=2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the identity supplied in the problem with
 \[
 b_1=4,
@@ -128,9 +147,14 @@ Thus
 \[
 \lambda_1\lambda_2\lambda_3=2.
 \]
+
 :::
 
-<1>4. The characteristic polynomial of $A$ is
+:::
+
+::: pf-step
+
+The characteristic polynomial of $A$ is
 \[
 \boxed{
 \chi_A(t)
@@ -141,7 +165,9 @@ t^3-4t^2+5t-2
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For three eigenvalues, the characteristic polynomial is
 \[
 \chi_A(t)
@@ -162,25 +188,44 @@ Factoring gives
 \[
 (t-1)^2(t-2).
 \]
+
 :::
 
-<1>5. Hence the eigenvalue $1$ has algebraic multiplicity $2$, and the eigenvalue $2$ has algebraic multiplicity $1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence the eigenvalue $1$ has algebraic multiplicity $2$, and the eigenvalue $2$ has algebraic multiplicity $1$.
+
+
+::: pf-proof
+
 This follows directly from the factorization in step <1>4.
+
 :::
 
-<1>6. For the eigenvalue $2$, the only possible Jordan block is
+:::
+
+::: pf-step
+
+For the eigenvalue $2$, the only possible Jordan block is
 \[
 [2].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Its algebraic multiplicity is $1$ by step <1>5.
 Therefore the total size of all Jordan blocks carrying eigenvalue $2$ is $1$, so there is exactly one $1\times1$ block.
+
 :::
 
-<1>7. For the eigenvalue $1$, there are exactly two possible Jordan block patterns:
+:::
+
+::: pf-step
+
+For the eigenvalue $1$, there are exactly two possible Jordan block patterns:
 \[
 [1]\oplus[1]
 \]
@@ -194,7 +239,9 @@ J_2(1)
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The algebraic multiplicity of $1$ is $2$.
 The Jordan block sizes for eigenvalue $1$ therefore form a partition of $2$.
 The only partitions are
@@ -205,9 +252,14 @@ and
 \[
 2.
 \]
+
 :::
 
-<1>8. Consequently there are exactly two similarity classes, represented by
+:::
+
+::: pf-step
+
+Consequently there are exactly two similarity classes, represented by
 \[
 \boxed{
 \begin{pmatrix}
@@ -228,14 +280,23 @@ and
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the unique block for eigenvalue $2$ from step <1>6 with each of the two possibilities for eigenvalue $1$ from step <1>7.
 Jordan normal form classifies complex matrices up to similarity, so these two block patterns give exactly the two similarity classes.
+
 :::
 
-<1>9. Both representatives satisfy the three trace conditions.
+:::
 
-::: {.proof}
+::: pf-step
+
+Both representatives satisfy the three trace conditions.
+
+
+::: pf-proof
+
 For either Jordan form, the eigenvalues counted with algebraic multiplicity are
 \[
 1,1,2.
@@ -252,11 +313,15 @@ and
 \operatorname{Tr}(A^3)=1+1+8=10.
 \]
 Thus both listed classes actually occur.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives all similarity classes, and step <1>9 verifies that both satisfy the hypotheses.
+
 :::
+
 :::

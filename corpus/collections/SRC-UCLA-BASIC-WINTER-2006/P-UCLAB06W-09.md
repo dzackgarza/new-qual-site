@@ -24,8 +24,11 @@ Let $A\in\mathbb M_3(\mathbb R)$ be invertible and satisfy $A=A^t$ and $\det A=1
 Prove that $A$ has $1$ as an eigenvalue.
 :::
 
-::: {.solution}
-<1>1. Consider the diagonal matrix
+::: pf
+
+::: pf-step
+
+Consider the diagonal matrix
 $$
 A=
 \begin{pmatrix}
@@ -36,7 +39,9 @@ A=
 $$
 Then $A$ satisfies all hypotheses of the problem.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix is real and diagonal, hence
 $$
 A^t=A.
@@ -48,11 +53,18 @@ $$
 =1.
 $$
 Thus every stated hypothesis is satisfied.
+
 :::
 
-<1>2. The matrix $A$ does not have $1$ as an eigenvalue.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ does not have $1$ as an eigenvalue.
+
+
+::: pf-proof
+
 For a diagonal matrix, the eigenvalues are its diagonal entries. Hence the eigenvalues of $A$ are
 $$
 2,
@@ -62,17 +74,28 @@ $$
 \frac14.
 $$
 None is equal to $1$.
+
 :::
 
-<1>3. Therefore the assertion in the problem is false as printed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the assertion in the problem is false as printed.
+
+
+::: pf-proof
+
 Step <1>1 gives a matrix satisfying all hypotheses, while step <1>2 shows that it fails the claimed conclusion. This is a counterexample.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 completely resolves the printed claim by disproving it.
+
 :::
+
 :::

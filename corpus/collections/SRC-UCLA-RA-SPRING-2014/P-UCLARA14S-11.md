@@ -23,8 +23,11 @@ For each $p\in(-1,1)$, compute
 \]
 :::
 
-::: {.solution}
-<1>1. The improper integral
+::: pf
+
+::: pf-step
+
+The improper integral
 \[
 I_p
 \coloneqq
@@ -32,7 +35,9 @@ I_p
 \]
 converges for every $p\in(-1,1)$.
 
-::: {.proof}
+
+::: pf-proof
+
 As $x\downarrow0$,
 \[
 \frac{x^p}{1+x^2}
@@ -56,9 +61,14 @@ and
 \int_1^\infty x^{p-2}\,dx<\infty
 \]
 exactly when $p<1$. Thus the given range of $p$ guarantees convergence at both endpoints.
+
 :::
 
-<1>2. With
+:::
+
+::: pf-step
+
+With
 \[
 a
 \coloneqq
@@ -73,7 +83,9 @@ I_p
 \frac{t^{a-1}}{1+t}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Make the substitution
 \[
 t=x^2,
@@ -93,9 +105,14 @@ t^{(p-1)/2}\,dt
 t^{a-1}\,dt.
 \]
 The denominator becomes $1+t$, giving the formula.
+
 :::
 
-<1>3. For $0<a<1$,
+:::
+
+::: pf-step
+
+For $0<a<1$,
 \[
 \int_0^\infty
 \frac{t^{a-1}}{1+t}\,dt
@@ -105,7 +122,9 @@ The denominator becomes $1+t$, giving the formula.
 \frac{\pi}{\sin(\pi a)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The substitution
 \[
 s=\frac{t}{1+t},
@@ -136,9 +155,14 @@ and Euler's reflection formula gives
 =
 \frac{\pi}{\sin(\pi a)}.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^\infty
@@ -149,7 +173,9 @@ and Euler's reflection formula gives
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>3,
 \[
 I_p
@@ -169,11 +195,15 @@ one has
 \cos\left(\frac{\pi p}{2}\right).
 \]
 Substitution gives the boxed value.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the value of the convergent improper integral for every $p\in(-1,1)$.
+
 :::
+
 :::

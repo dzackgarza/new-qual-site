@@ -27,8 +27,11 @@ z\longmapsto \log\|A(z)\|
 is subharmonic, where $\|A(z)\|$ is the operator norm on $\mathbb C^2$.
 :::
 
-::: {.solution}
-<1>1. A function
+::: pf
+
+::: pf-step
+
+A function
 \[
 u:\mathbb C\to[-\infty,\infty)
 \]
@@ -39,15 +42,22 @@ is upper-semicontinuous if for every $z_0\in\mathbb C$,
 u(z_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition. Equivalently, for every $a\in\mathbb R$, the sublevel set
 \[
 \{z:u(z)<a\}
 \]
 is open.
+
 :::
 
-<1>2. An upper-semicontinuous function
+:::
+
+::: pf-step
+
+An upper-semicontinuous function
 \[
 u:\mathbb C\to[-\infty,\infty)
 \]
@@ -65,13 +75,22 @@ u(z_0)
 u(z_0+re^{i\theta})\,d\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the standard definition of subharmonicity on an open set, specialized to the whole plane.
+
 :::
 
-<1>3. The pointwise supremum of a bounded family of subharmonic functions need not be subharmonic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The pointwise supremum of a bounded family of subharmonic functions need not be subharmonic.
+
+
+::: pf-proof
+
 For $n\ge1$, define
 \[
 u_n(z)
@@ -118,11 +137,18 @@ But
 -\infty=u(0),
 \]
 so $u$ is not upper-semicontinuous and therefore not subharmonic.
+
 :::
 
-<1>4. The pointwise infimum of a family of subharmonic functions need not be subharmonic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The pointwise infimum of a family of subharmonic functions need not be subharmonic.
+
+
+::: pf-proof
+
 The harmonic functions
 \[
 u_1(z)=\operatorname{Re}z,
@@ -158,15 +184,27 @@ u(re^{i\theta})\,d\theta
 u(0).
 \]
 Thus the sub-mean-value inequality fails at $0$, so $u$ is not subharmonic.
+
 :::
 
-<1>5. This settles part (c): both assertions are false.
+:::
 
-::: {.proof}
+::: pf-step
+
+This settles part (c): both assertions are false.
+
+
+::: pf-proof
+
 Step <1>3 refutes the supremum assertion, and step <1>4 refutes the infimum assertion.
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 \[
 v(z)
 \coloneqq
@@ -178,7 +216,9 @@ v(z)=-\infty
 \]
 when $A(z)=0$. Then $v$ is upper-semicontinuous.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix entries of $A$ are holomorphic, hence continuous, and the operator norm is a continuous function of the matrix entries. Thus
 \[
 z\longmapsto\|A(z)\|
@@ -196,16 +236,23 @@ so
 \log\|A(z)\|\to-\infty=v(z_0).
 \]
 Hence $v$ is upper-semicontinuous everywhere.
+
 :::
 
-<1>7. Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\mathbb C^2$ such that
+:::
+
+::: pf-step
+
+Suppose $A(z_0)\ne0$. There exist unit vectors $x,y\in\mathbb C^2$ such that
 \[
 |\langle A(z_0)x,y\rangle|
 =
 \|A(z_0)\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because the unit sphere of $\mathbb C^2$ is compact, there is a unit vector $x$ with
 \[
 \|A(z_0)x\|
@@ -226,9 +273,14 @@ Then $\|y\|=1$ and
 =
 \|A(z_0)\|.
 \]
+
 :::
 
-<1>8. For fixed vectors $x,y\in\mathbb C^2$, the scalar function
+:::
+
+::: pf-step
+
+For fixed vectors $x,y\in\mathbb C^2$, the scalar function
 \[
 h(z)
 \coloneqq
@@ -240,11 +292,18 @@ is holomorphic, and
 \]
 is subharmonic.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $h$ is a fixed complex linear combination of the holomorphic entries of $A$, hence holomorphic. The logarithm of the modulus of a holomorphic function is subharmonic, with value $-\infty$ at its zeros.
+
 :::
 
-<1>9. For every disk centered at $z_0$,
+:::
+
+::: pf-step
+
+For every disk centered at $z_0$,
 \[
 v(z_0)
 \le
@@ -253,7 +312,9 @@ v(z_0)
 v(z_0+re^{i\theta})\,d\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $A(z_0)=0$, then
 \[
 v(z_0)=-\infty,
@@ -291,9 +352,14 @@ Therefore the last integral is at most
 \log\|A(z_0+re^{i\theta})\|\,d\theta.
 \]
 This is the required inequality.
+
 :::
 
-<1>10. The function
+:::
+
+::: pf-step
+
+The function
 \[
 \boxed{
 z\longmapsto\log\|A(z)\|
@@ -301,13 +367,19 @@ z\longmapsto\log\|A(z)\|
 \]
 is subharmonic.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives upper-semicontinuity, and step <1>9 gives the sub-mean-value inequality. Unless $A\equiv0$, the function is not identically $-\infty$ and hence is subharmonic by step <1>2. If $A\equiv0$, the conventional extended-valued function is identically $-\infty$; under conventions that permit this degenerate subharmonic function, the conclusion holds verbatim.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 answer parts (a) and (b), step <1>5 answers part (c), and step <1>10 proves part (d).
+
 :::
+
 :::

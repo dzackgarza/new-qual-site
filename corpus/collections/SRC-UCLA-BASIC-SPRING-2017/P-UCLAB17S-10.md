@@ -24,8 +24,11 @@ Let $K\subset\mathbb R^n$ be compact. Assume that for every $\varepsilon>0$ and 
 (b) Give an example showing that $K$ need not be path connected.
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that $K$ is disconnected.
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that $K$ is disconnected.
 Then there exist disjoint nonempty subsets
 \[
 U,V\subseteq K
@@ -36,20 +39,34 @@ K=U\cup V
 \]
 and both $U$ and $V$ are open in $K$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of disconnectedness.
 Since each is the complement in $K$ of the other, both are also closed in $K$.
+
 :::
 
-<1>2. The sets $U$ and $V$ are compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sets $U$ and $V$ are compact.
+
+
+::: pf-proof
+
 The set $K$ is compact by hypothesis.
 By step <1>1, $U$ and $V$ are closed subsets of $K$.
 Closed subsets of compact spaces are compact.
+
 :::
 
-<1>3. The distance
+:::
+
+::: pf-step
+
+The distance
 \[
 \delta
 =
@@ -57,7 +74,9 @@ Closed subsets of compact spaces are compact.
 \]
 is strictly positive.
 
-::: {.proof}
+
+::: pf-proof
+
 The continuous function
 \[
 (u,v)\longmapsto\|u-v\|
@@ -76,9 +95,14 @@ Hence
 \[
 \delta>0.
 \]
+
 :::
 
-<1>4. Choose
+:::
+
+::: pf-step
+
+Choose
 \[
 a\in U,
 \qquad
@@ -97,13 +121,22 @@ in $K$ with
 \|x_k-x_{k-1}\|<\delta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the assumed chain property.
+
 :::
 
-<1>5. Some adjacent pair in the chain from step <1>4 has one point in $U$ and the other in $V$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Some adjacent pair in the chain from step <1>4 has one point in $U$ and the other in $V$.
+
+
+::: pf-proof
+
 The chain starts in $U$ and ends in $V$.
 Let $j$ be the smallest index for which
 \[
@@ -117,11 +150,18 @@ and
 \[
 x_{j-1}\in U.
 \]
+
 :::
 
-<1>6. Step <1>5 contradicts the definition of $\delta$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Step <1>5 contradicts the definition of $\delta$.
+
+
+::: pf-proof
+
 Since
 \[
 x_{j-1}\in U
@@ -141,21 +181,35 @@ But step <1>4 gives
 \delta.
 \]
 Contradiction.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{K\text{ is connected}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption of disconnectedness in step <1>1 led to the contradiction in step <1>6.
 This proves part (a).
+
 :::
 
-<1>8. Every connected metric space is $\varepsilon$-chain connected for every $\varepsilon>0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every connected metric space is $\varepsilon$-chain connected for every $\varepsilon>0$.
+
+
+::: pf-proof
+
 Let $X$ be connected, fix
 \[
 a\in X
@@ -191,9 +245,14 @@ Connectedness forces
 \[
 R=X.
 \]
+
 :::
 
-<1>9. Define the closed topologist's sine curve
+:::
+
+::: pf-step
+
+Define the closed topologist's sine curve
 \[
 \boxed{
 K_0
@@ -209,16 +268,25 @@ K_0
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a subset of
 \[
 [0,1]\times[-1,1].
 \]
+
 :::
 
-<1>10. The set $K_0$ is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K_0$ is compact.
+
+
+::: pf-proof
+
 Let
 \[
 G
@@ -251,11 +319,18 @@ K_0=\overline G
 is closed.
 It is bounded by step <1>9.
 Hence Heine--Borel implies compactness.
+
 :::
 
-<1>11. The set $K_0$ is connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K_0$ is connected.
+
+
+::: pf-proof
+
 The interval
 \[
 (0,1]
@@ -273,17 +348,31 @@ The closure of a connected set is connected, and by step <1>10,
 \[
 \overline G=K_0.
 \]
+
 :::
 
-<1>12. Consequently $K_0$ satisfies the chain hypothesis of the problem.
+:::
 
-::: {.proof}
+::: pf-step
+
+Consequently $K_0$ satisfies the chain hypothesis of the problem.
+
+
+::: pf-proof
+
 Apply step <1>8 to the connected metric space $K_0$ from step <1>11.
+
 :::
 
-<1>13. The set $K_0$ is not path connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K_0$ is not path connected.
+
+
+::: pf-proof
+
 Suppose there were a path
 \[
 \gamma(t)
@@ -352,18 +441,29 @@ v(t_n)=-1
 for every $n$.
 Both sequences of parameters converge to $t_0$, contradicting continuity of $v$ at $t_0$.
 Thus no such path exists.
+
 :::
 
-<1>14. Therefore the chain condition does not imply path connectedness.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the chain condition does not imply path connectedness.
+
+
+::: pf-proof
+
 The set $K_0$ is compact by step <1>10 and satisfies the required chain condition by step <1>12, but it is not path connected by step <1>13.
 This proves part (b).
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>14 gives the requested example for part (b).
+
 :::
+
 :::

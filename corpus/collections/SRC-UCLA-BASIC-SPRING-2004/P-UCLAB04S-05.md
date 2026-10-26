@@ -37,8 +37,11 @@ Hint: let $w$ be a unit vector such that
 \]
 :::
 
-::: {.solution}
-<1>1. The derivative
+::: pf
+
+::: pf-step
+
+The derivative
 \[
 f'(x_0):\mathbb R^n\to\mathbb R^m
 \]
@@ -61,7 +64,9 @@ In that case,
 \boxed{f'(x_0)=L}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of Fréchet differentiability at $x_0$.
 The linear map $L$, if it exists, is unique.
 
@@ -78,9 +83,14 @@ Letting $t\to0$ gives
 (L_1-L_2)u=0.
 \]
 Thus $L_1=L_2$.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 f(q)=f(p).
 \]
@@ -89,15 +99,22 @@ Then the estimate in part (b) holds for every
 c\in I.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The left-hand side is
 \[
 \|f(q)-f(p)\|_2=0,
 \]
 while the right-hand side is nonnegative.
+
 :::
 
-<1>3. Suppose now that
+:::
+
+::: pf-step
+
+Suppose now that
 \[
 f(q)\ne f(p).
 \]
@@ -118,7 +135,9 @@ and
 \|f(q)-f(p)\|_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vector is well-defined because
 \[
 f(q)-f(p)\ne0.
@@ -137,9 +156,14 @@ Its norm is $1$ by construction, and
 \|f(q)-f(p)\|_2.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Parametrize the segment $I$ by
+:::
+
+::: pf-step
+
+Parametrize the segment $I$ by
 \[
 \gamma(t)=p+t(q-p),
 \qquad
@@ -151,14 +175,21 @@ and define
 \]
 Then $\phi$ is differentiable on $(0,1)$ and continuous on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The map $\gamma$ is smooth and has image equal to the segment $I$.
 By hypothesis, $f$ is differentiable at every point of $I$.
 Differentiability implies continuity, so $f\circ\gamma$ is continuous on $[0,1]$ and differentiable on $(0,1)$.
 Taking the Euclidean inner product with the fixed vector $w$ preserves these properties.
+
 :::
 
-<1>5. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 t_0\in(0,1)
 \]
@@ -169,7 +200,9 @@ such that
 \phi'(t_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the one-variable mean value theorem to $\phi$ on $[0,1]$.
 Since the interval length is $1$,
 \[
@@ -180,9 +213,14 @@ Since the interval length is $1$,
 \phi'(t_0)
 \]
 for some $t_0\in(0,1)$.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 c=\gamma(t_0),
 \]
@@ -193,7 +231,9 @@ then
 \bigl(f'(c)(q-p)\bigr)\cdot w.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The chain rule gives
 \[
 (f\circ\gamma)'(t_0)
@@ -216,16 +256,23 @@ Differentiating the scalar product with the constant vector $w$ gives
 =
 \bigl(f'(c)(q-p)\bigr)\cdot w.
 \]
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \|f(q)-f(p)\|_2
 \le
 \|f'(c)\|\,\|q-p\|_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3, <1>5, and <1>6,
 \[
 \begin{aligned}
@@ -255,12 +302,16 @@ and by the definition of the operator norm,
 \|f'(c)\|\,\|q-p\|_2.
 \]
 Combining the inequalities proves the claim.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a).
 Step <1>2 handles the case $f(q)=f(p)$ in part (b), and steps <1>3--<1>7 prove the estimate when $f(q)\ne f(p)$.
+
 :::
+
 :::

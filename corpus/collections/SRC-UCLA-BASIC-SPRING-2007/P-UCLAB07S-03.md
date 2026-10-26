@@ -25,7 +25,6 @@ x_{n+2}=Ax_{n+1}+Bx_n\qquad(n\ge0)
 is a two-dimensional linear subspace of $\mathcal S$.
 :::
 
-::: {.solution}
 Let
 \[
 W
@@ -45,9 +44,15 @@ for every
 n\ge0.
 \]
 
-<1>1. The zero sequence belongs to $W$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The zero sequence belongs to $W$.
+
+
+::: pf-proof
+
 For the zero sequence,
 \[
 x_n=0
@@ -61,11 +66,18 @@ A\cdot0+B\cdot0
 =
 Ax_{n+1}+Bx_n.
 \]
+
 :::
 
-<1>2. The set $W$ is closed under addition.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $W$ is closed under addition.
+
+
+::: pf-proof
+
 Let
 \[
 x=(x_n)
@@ -105,11 +117,18 @@ Thus
 \[
 x+y\in W.
 \]
+
 :::
 
-<1>3. The set $W$ is closed under scalar multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $W$ is closed under scalar multiplication.
+
+
+::: pf-proof
+
 Let
 \[
 x=(x_n)\in W
@@ -140,15 +159,27 @@ Hence
 \[
 cx\in W.
 \]
+
 :::
 
-<1>4. Therefore $W$ is a linear subspace of $\mathcal S$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $W$ is a linear subspace of $\mathcal S$.
+
+
+::: pf-proof
+
 Steps <1>1--<1>3 verify that $W$ contains zero and is closed under addition and scalar multiplication.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \Phi:W\to\mathbb R^2
 \]
@@ -160,7 +191,9 @@ by
 \]
 Then $\Phi$ is linear.
 
-::: {.proof}
+
+::: pf-proof
+
 Taking the first two coordinates is linear:
 \[
 \Phi(cx+dy)
@@ -169,11 +202,18 @@ Taking the first two coordinates is linear:
 =
 c\Phi(x)+d\Phi(y).
 \]
+
 :::
 
-<1>6. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is injective.
+
+
+::: pf-proof
+
 Suppose
 \[
 \Phi(x)=\Phi(y).
@@ -212,11 +252,18 @@ Thus
 \[
 x=y.
 \]
+
 :::
 
-<1>7. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+
+::: pf-proof
+
 Let
 \[
 (u,v)\in\mathbb R^2.
@@ -246,24 +293,38 @@ belonging to $W$ and satisfying
 \Phi(x)=(u,v).
 \]
 Hence every element of $\mathbb R^2$ lies in the image.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 W\cong\mathbb R^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5--<1>7, $\Phi$ is a linear bijection.
 Hence it is a vector-space isomorphism.
+
 :::
 
-<1>9. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{\dim W=2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Isomorphic finite-dimensional vector spaces have the same dimension.
 Since
 \[
@@ -273,11 +334,15 @@ step <1>8 gives
 \[
 \dim W=2.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves that the recurrence solutions form a linear subspace of $\mathcal S$, and step <1>9 proves that this subspace is two-dimensional.
+
 :::
+
 :::

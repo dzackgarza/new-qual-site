@@ -31,7 +31,6 @@ Here $\hat{u}$ is the Fourier transform of $u$. Show that $u \in H^{1/2}(\mathbb
 \]
 :::
 
-::: {.solution}
 Let
 \[
 [u]_{1/2}^2
@@ -43,7 +42,11 @@ Let
 
 Since \(u\in L^2(\mathbb R^d)\), Plancherel's theorem applies.
 
-<1>1. For fixed \(y\in\mathbb R^d\), the Fourier transform of
+::: pf
+
+::: pf-step
+
+For fixed \(y\in\mathbb R^d\), the Fourier transform of
 \[
 x\longmapsto u(x+y)-u(x)
 \]
@@ -56,15 +59,22 @@ e^{i\xi\cdot y}-1
 \]
 up to the harmless sign convention in the Fourier transform.
 
-::: {.proof}
+
+::: pf-proof
+
 Translation by \(y\) multiplies the Fourier transform by
 \[
 e^{i\xi\cdot y}
 \]
 under the chosen convention. Subtract the transform of \(u(x)\).
+
 :::
 
-<1>2. Hence, by Plancherel,
+:::
+
+::: pf-step
+
+Hence, by Plancherel,
 \[
 \boxed{
 \int_{\mathbb R^d}
@@ -75,11 +85,18 @@ under the chosen convention. Subtract the transform of \(u(x)\).
 |\widehat u(\xi)|^2\,d\xi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Plancherel to the difference from step <1>1.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 [u]_{1/2}^2
 =
@@ -94,11 +111,18 @@ Apply Plancherel to the difference from step <1>1.
 \,d\xi\,dy.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert step <1>2 into the definition of \([u]_{1/2}^2\).
+
 :::
 
-<1>4. Tonelli's theorem permits interchange of the two integrals:
+:::
+
+::: pf-step
+
+Tonelli's theorem permits interchange of the two integrals:
 \[
 \boxed{
 [u]_{1/2}^2
@@ -117,39 +141,38 @@ Insert step <1>2 into the definition of \([u]_{1/2}^2\).
 d\xi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is nonnegative.
+
 :::
 
-Define
-\[
-I(\xi)
-=
-\int_{\mathbb R^d}
-\frac{
-|e^{i\xi\cdot y}-1|^2
-}{
-|y|^{d+1}
-}
-\,dy.
-\]
+:::
 
-<1>5. One has
+::: pf-step
+
+One has
 \[
 \boxed{I(0)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(\xi=0\), then
 \[
 e^{i\xi\cdot y}-1=0
 \]
 for every \(y\).
+
 :::
 
-Now assume \(\xi\ne0\).
+:::
 
-<1>6. By rotational invariance,
+::: pf-step
+
+By rotational invariance,
 \[
 I(\xi)
 =
@@ -157,7 +180,9 @@ I(|\xi|e_1),
 \]
 where \(e_1=(1,0,\dots,0)\).
 
-::: {.proof}
+
+::: pf-proof
+
 Choose an orthogonal map \(R\) with
 \[
 R\xi=|\xi|e_1.
@@ -174,9 +199,14 @@ Orthogonal maps preserve Lebesgue measure and Euclidean norm, and
 =
 |\xi|z_1.
 \]
+
 :::
 
-<1>7. Make the scaling change of variables
+:::
+
+::: pf-step
+
+Make the scaling change of variables
 \[
 z=\frac{w}{|\xi|}.
 \]
@@ -195,7 +225,9 @@ I(\xi)
 \,dw}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Under
 \[
 z=w/|\xi|,
@@ -216,9 +248,14 @@ e^{i|\xi|z_1}
 e^{iw_1}.
 \]
 Multiplying the scaling factors gives one remaining factor \(|\xi|\).
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 C_d
@@ -232,13 +269,22 @@ C_d
 \,dw}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the dimension-dependent constant appearing in step <1>7.
+
 :::
 
-<1>9. The constant \(C_d\) is finite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The constant \(C_d\) is finite.
+
+
+::: pf-proof
+
 Split the integral into
 \[
 |w|\le1
@@ -292,29 +338,48 @@ C
 <
 \infty.
 \]
+
 :::
 
-<1>10. The constant \(C_d\) is strictly positive.
+:::
 
-::: {.proof}
+::: pf-step
+
+The constant \(C_d\) is strictly positive.
+
+
+::: pf-proof
+
 The integrand is nonnegative and is positive on any set where
 \[
 w_1\notin2\pi\mathbb Z.
 \]
 Such a set has positive Lebesgue measure.
+
 :::
 
-<1>11. Therefore, for every \(\xi\in\mathbb R^d\),
+:::
+
+::: pf-step
+
+Therefore, for every \(\xi\in\mathbb R^d\),
 \[
 \boxed{
 I(\xi)=C_d|\xi|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(\xi\ne0\), combine steps <1>7--<1>10. For \(\xi=0\), both sides are zero by step <1>5.
+
 :::
 
-<1>12. Substituting step <1>11 into step <1>4 gives
+:::
+
+::: pf-step
+
+Substituting step <1>11 into step <1>4 gives
 \[
 \boxed{
 [u]_{1/2}^2
@@ -326,11 +391,18 @@ C_d
 \,d\xi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Replace the inner \(y\)-integral in step <1>4 by \(C_d|\xi|\).
+
 :::
 
-<1>13. Since \(C_d\in(0,\infty)\),
+:::
+
+::: pf-step
+
+Since \(C_d\in(0,\infty)\),
 \[
 \boxed{
 [u]_{1/2}<\infty
@@ -343,23 +415,35 @@ Replace the inner \(y\)-integral in step <1>4 by \(C_d|\xi|\).
 \infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by a fixed finite positive constant does not affect finiteness.
+
 :::
 
-Now compare this with the definition of \(H^{1/2}\).
+:::
 
-<1>14. Since \(u\in L^2(\mathbb R^d)\),
+::: pf-step
+
+Since \(u\in L^2(\mathbb R^d)\),
 \[
 \boxed{
 \widehat u\in L^2(\mathbb R^d)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Plancherel's theorem.
+
 :::
 
-<1>15. One has the pointwise comparability
+:::
+
+::: pf-step
+
+One has the pointwise comparability
 \[
 \boxed{
 (1+|\xi|^{1/2})^2
@@ -367,7 +451,9 @@ Apply Plancherel's theorem.
 1+|\xi|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(t\ge0\),
 \[
 (1+\sqrt t)^2
@@ -393,9 +479,14 @@ Hence
 2(1+t).
 \]
 Set \(t=|\xi|\).
+
 :::
 
-<1>16. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (1+|\xi|^{1/2})\widehat u(\xi)\in L^2
 \]
@@ -408,11 +499,18 @@ if and only if
 \infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Square the \(L^2\)-norm and use the two-sided comparison from step <1>15.
+
 :::
 
-<1>17. By step <1>14, the condition in step <1>16 is equivalent to
+:::
+
+::: pf-step
+
+By step <1>14, the condition in step <1>16 is equivalent to
 \[
 \boxed{
 \int_{\mathbb R^d}
@@ -422,15 +520,22 @@ Square the \(L^2\)-norm and use the two-sided comparison from step <1>15.
 \infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The term
 \[
 \int|\widehat u(\xi)|^2\,d\xi
 \]
 is already finite because \(u\in L^2\).
+
 :::
 
-<1>18. Combining steps <1>13 and <1>17,
+:::
+
+::: pf-step
+
+Combining steps <1>13 and <1>17,
 \[
 \boxed{
 u\in H^{1/2}(\mathbb R^d)
@@ -442,16 +547,22 @@ u\in H^{1/2}(\mathbb R^d)
 \infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both conditions are equivalent to finiteness of
 \[
 \int|\xi||\widehat u(\xi)|^2\,d\xi.
 \]
+
 :::
 
-<1>19. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>18 is the required equivalence.
+
 :::
+
 :::

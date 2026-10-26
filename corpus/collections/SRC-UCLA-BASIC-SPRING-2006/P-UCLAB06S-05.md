@@ -21,8 +21,11 @@ audit:
 B Prove that if $0 < \alpha < 1$ , then $F ( x ) = x ^ { \alpha }$ is uniformly continuous on $[ 0 , \infty )$
 :::
 
-::: {.solution}
-<1>1. A function
+::: pf
+
+::: pf-step
+
+A function
 \[
 f:X\to\mathbb R
 \]
@@ -35,12 +38,19 @@ implies
 |f(x)-f(y)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of uniform continuity.
 The same $\delta$ must work for all pairs $x,y\in X$.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 0<\alpha<1
 \]
@@ -57,7 +67,9 @@ s^\alpha+t^\alpha
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $t>0$ and write
 \[
 s=ut,
@@ -113,9 +125,14 @@ h(u)\ge0
 for all $u\ge0$.
 Multiplying by $t^\alpha$ gives the desired inequality.
 The case $t=0$ is immediate.
+
 :::
 
-<1>3. For all $x,y\ge0$,
+:::
+
+::: pf-step
+
+For all $x,y\ge0$,
 \[
 \boxed{
 |x^\alpha-y^\alpha|
@@ -124,7 +141,9 @@ The case $t=0$ is immediate.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Assume without loss of generality that
 \[
 x\ge y.
@@ -148,9 +167,14 @@ x^\alpha-y^\alpha
 (x-y)^\alpha.
 \]
 This is the stated inequality.
+
 :::
 
-<1>4. Given
+:::
+
+::: pf-step
+
+Given
 \[
 \varepsilon>0,
 \]
@@ -167,7 +191,9 @@ implies
 |x^\alpha-y^\alpha|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 |x^\alpha-y^\alpha|
@@ -178,9 +204,14 @@ By step <1>3,
 =
 \varepsilon.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 x\longmapsto x^\alpha
@@ -192,14 +223,20 @@ for every
 0<\alpha<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives, for each $\varepsilon>0$, a $\delta>0$ depending only on $\varepsilon$ and $\alpha$, not on $x$ or $y$.
 This is exactly the definition in step <1>1.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (A), and step <1>5 proves part (B).
+
 :::
+
 :::

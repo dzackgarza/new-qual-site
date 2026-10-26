@@ -21,15 +21,20 @@ b\in(\ker A^T)^\perp.
 \]
 :::
 
-::: {.solution}
-<1>1. One always has
+::: pf
+
+::: pf-step
+
+One always has
 \[
 \operatorname{im}A
 \subseteq
 (\ker A^T)^\perp.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 y\in\operatorname{im}A.
@@ -61,11 +66,18 @@ Hence
 \[
 y\in(\ker A^T)^\perp.
 \]
+
 :::
 
-<1>2. The two spaces in step <1>1 have the same dimension.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two spaces in step <1>1 have the same dimension.
+
+
+::: pf-proof
+
 By rank-nullity applied to
 \[
 A^T:\mathbb R^n\to\mathbb R^n,
@@ -94,9 +106,14 @@ n-\dim\ker A^T
 =
 \dim\operatorname{im}A.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{im}A
@@ -105,12 +122,19 @@ n-\dim\ker A^T
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives an inclusion between finite-dimensional subspaces, and step <1>2 shows that they have equal dimension.
 Hence they are equal.
+
 :::
 
-<1>4. The equation
+:::
+
+::: pf-step
+
+The equation
 \[
 Ax=b
 \]
@@ -119,14 +143,21 @@ has a solution if and only if
 b\in\operatorname{im}A.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, $b$ lies in the image of $A$ exactly when there exists an $x$ such that
 \[
 Ax=b.
 \]
+
 :::
 
-<1>5. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 Ax=b\text{ is solvable}
@@ -135,13 +166,19 @@ b\in(\ker A^T)^\perp.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required equivalence.
+
 :::
+
 :::

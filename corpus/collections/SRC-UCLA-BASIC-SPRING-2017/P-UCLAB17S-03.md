@@ -24,13 +24,18 @@ Let $M$ be a real matrix that is both orthogonal and symmetric.
 (b) Does the conclusion change if $M$ is only positive semidefinite?
 :::
 
-::: {.solution}
-<1>1. Since $M$ is orthogonal and symmetric,
+::: pf
+
+::: pf-step
+
+Since $M$ is orthogonal and symmetric,
 \[
 \boxed{M^2=I}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Orthogonality gives
 \[
 M^TM=I.
@@ -43,16 +48,23 @@ Therefore
 \[
 M^2=I.
 \]
+
 :::
 
-<1>2. Every eigenvalue of $M$ is either
+:::
+
+::: pf-step
+
+Every eigenvalue of $M$ is either
 \[
 \boxed{1}
 \qquad\text{or}\qquad
 \boxed{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 Mv=\lambda v
@@ -77,17 +89,31 @@ so
 \[
 \lambda=\pm1.
 \]
+
 :::
 
-<1>3. Because $M$ is symmetric, it has an orthonormal basis of eigenvectors.
+:::
 
-::: {.proof}
+::: pf-step
+
+Because $M$ is symmetric, it has an orthonormal basis of eigenvectors.
+
+
+::: pf-proof
+
 Apply the spectral theorem for real symmetric matrices.
+
 :::
 
-<1>4. If $M$ is positive definite, then every eigenvalue of $M$ is positive.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $M$ is positive definite, then every eigenvalue of $M$ is positive.
+
+
+::: pf-proof
+
 Let
 \[
 Mv=\lambda v
@@ -114,14 +140,21 @@ one has
 \[
 \lambda>0.
 \]
+
 :::
 
-<1>5. Therefore, if $M$ is positive definite,
+:::
+
+::: pf-step
+
+Therefore, if $M$ is positive definite,
 \[
 \boxed{M=I}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, every eigenvalue is $\pm1$.
 By step <1>4, every eigenvalue is positive.
 Thus every eigenvalue equals $1$.
@@ -136,14 +169,21 @@ so
 M=I.
 \]
 This proves part (a).
+
 :::
 
-<1>6. If $M$ is only positive semidefinite, every eigenvalue satisfies
+:::
+
+::: pf-step
+
+If $M$ is only positive semidefinite, every eigenvalue satisfies
 \[
 \lambda\ge0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For an eigenvector $v$,
 \[
 v^TMv
@@ -162,15 +202,22 @@ one gets
 \[
 \lambda\ge0.
 \]
+
 :::
 
-<1>7. The conclusion does not change:
+:::
+
+::: pf-step
+
+The conclusion does not change:
 \[
 \boxed{M=I}
 \]
 also under positive semidefiniteness.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 \[
 \lambda\in\{-1,1\}.
@@ -181,11 +228,15 @@ Using the orthonormal eigenbasis from step <1>3 gives
 \[
 M=I.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>7 answers part (b).
+
 :::
+
 :::

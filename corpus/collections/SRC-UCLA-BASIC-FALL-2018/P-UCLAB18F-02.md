@@ -28,14 +28,17 @@ where $B,C$ are separated, meaning
 Show that $A\cup B$ is connected.
 :::
 
-::: {.solution}
 Suppose, for contradiction, that
 \[
 A\cup B
 \]
 is disconnected.
 
-<1>1. There exist nonempty separated sets
+::: pf
+
+::: pf-step
+
+There exist nonempty separated sets
 \[
 U,V\subseteq A\cup B
 \]
@@ -44,7 +47,9 @@ such that
 A\cup B=U\cup V.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of disconnectedness: a space is disconnected exactly when it is the union of two nonempty separated subsets.
 Here separated means
 \[
@@ -54,11 +59,18 @@ U\cap\overline V^{\,A\cup B}
 =
 \varnothing.
 \]
+
 :::
 
-<1>2. Since $A$ is connected, it lies entirely in one of $U$ or $V$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Since $A$ is connected, it lies entirely in one of $U$ or $V$.
+
+
+::: pf-proof
+
 The sets
 \[
 A\cap U
@@ -71,14 +83,21 @@ After exchanging $U$ and $V$ if necessary, assume
 \[
 A\subseteq U.
 \]
+
 :::
 
-<1>3. Under the convention of step <1>2,
+:::
+
+::: pf-step
+
+Under the convention of step <1>2,
 \[
 V\subseteq B.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 V\subseteq A\cup B
@@ -88,14 +107,21 @@ and
 V\cap A=\varnothing,
 \]
 every point of $V$ must belong to $B$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \overline V^{\,\mathbb R^n}\cap C=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 V\subseteq B,
@@ -114,14 +140,21 @@ Hence
 \[
 \overline V\cap C=\varnothing.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \overline V^{\,\mathbb R^n}\cap U=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 V\subseteq A\cup B,
@@ -140,14 +173,21 @@ Since $U\subseteq A\cup B$, this is exactly
 \[
 \overline V^{\,\mathbb R^n}\cap U=\varnothing.
 \]
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 V\cap\overline C^{\,\mathbb R^n}=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 V\subseteq B.
@@ -160,14 +200,21 @@ Hence
 \[
 V\cap\overline C=\varnothing.
 \]
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 V\cap\overline U^{\,\mathbb R^n}=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 As in step <1>5,
 \[
 \overline U^{\,A\cup B}
@@ -182,9 +229,14 @@ Since $V\subseteq A\cup B$,
 \[
 V\cap\overline U^{\,\mathbb R^n}=\varnothing.
 \]
+
 :::
 
-<1>8. The sets
+:::
+
+::: pf-step
+
+The sets
 \[
 V
 \qquad\text{and}\qquad
@@ -192,7 +244,9 @@ U\cup C
 \]
 are separated in $\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5,
 \[
 \overline V
@@ -222,16 +276,23 @@ V\cap\overline{U\cup C}
 \varnothing.
 \]
 Thus the two sets are separated.
+
 :::
 
-<1>9. Moreover,
+:::
+
+::: pf-step
+
+Moreover,
 \[
 \mathbb R^n
 =
 V\cup(U\cup C).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the hypotheses,
 \[
 \mathbb R^n
@@ -252,30 +313,48 @@ U\cup V\cup C
 =
 V\cup(U\cup C).
 \]
+
 :::
 
-<1>10. Steps <1>8--<1>9 contradict connectedness of $\mathbb R^n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Steps <1>8--<1>9 contradict connectedness of $\mathbb R^n$.
+
+
+::: pf-proof
+
 The set $V$ is nonempty by step <1>1.
 The set $U\cup C$ is nonempty because $U$ is nonempty.
 Thus steps <1>8--<1>9 express $\mathbb R^n$ as the union of two nonempty separated sets.
 But $\mathbb R^n$ is connected.
 This is impossible.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{A\cup B\text{ is connected}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption that $A\cup B$ is disconnected leads to the contradiction in step <1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required conclusion.
+
 :::
+
 :::

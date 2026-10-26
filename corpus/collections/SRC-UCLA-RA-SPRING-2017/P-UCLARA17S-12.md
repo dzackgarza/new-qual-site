@@ -27,8 +27,11 @@ for all $z,w\in D$ and some constant $C\in\mathbb R$, then there is a constant $
 \]
 :::
 
-::: {.solution}
-<1>1. Fix $z\in D$ and set
+::: pf
+
+::: pf-step
+
+Fix $z\in D$ and set
 $$
 d\coloneqq1-|z|,
 \qquad
@@ -36,7 +39,9 @@ r\coloneqq\frac d2.
 $$
 Then the closed disk $\overline{B(z,r)}$ is contained in $D$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $|\zeta-z|\le r$, then
 $$
 |\zeta|
@@ -45,9 +50,14 @@ $$
 =\frac{1+|z|}{2}
 <1.
 $$
+
 :::
 
-<1>2. Cauchy's derivative formula gives
+:::
+
+::: pf-step
+
+Cauchy's derivative formula gives
 $$
 f'(z)
 =\frac1{2\pi i}
@@ -55,21 +65,30 @@ f'(z)
 \frac{f(\zeta)-f(z)}{(\zeta-z)^2}\,d\zeta.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The constant function $f(z)$ has derivative $0$. Apply Cauchy's derivative formula to the analytic function
 $$
 \zeta\longmapsto f(\zeta)-f(z)
 $$
 on the circle from step <1>1.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 |f'(z)|
 \le C r^{\alpha-1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On $|\zeta-z|=r$, the Hölder hypothesis gives
 $$
 |f(\zeta)-f(z)|\le C r^\alpha.
@@ -84,9 +103,14 @@ $$
 &=C r^{\alpha-1}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{
 |f'(z)|
@@ -94,7 +118,9 @@ $$
 $$
 for every $z\in D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute $r=(1-|z|)/2$ from step <1>1 into step <1>3:
 $$
 C r^{\alpha-1}
@@ -105,11 +131,15 @@ Because $0<\alpha<1$, one has $2^{1-\alpha}\le2$. Thus the required constant may
 $$
 A(C)=2C<\infty.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required derivative estimate.
+
 :::
+
 :::

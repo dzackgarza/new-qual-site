@@ -24,10 +24,13 @@ uniformly continuous on $[0,\infty)$?
 Prove your assertion.
 :::
 
-::: {.solution}
 Yes.
 
-<1>1. For all $x,y\ge0$,
+::: pf
+
+::: pf-step
+
+For all $x,y\ge0$,
 \[
 \boxed{
 |\sqrt{x}-\sqrt{y}|
@@ -36,7 +39,9 @@ Yes.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Assume without loss of generality that
 \[
 x\ge y.
@@ -70,9 +75,14 @@ x-y
 |x-y|.
 \]
 Both sides are nonnegative, so taking square roots gives the desired inequality.
+
 :::
 
-<1>2. Let $\varepsilon>0$ and choose
+:::
+
+::: pf-step
+
+Let $\varepsilon>0$ and choose
 \[
 \delta=\varepsilon^2.
 \]
@@ -85,7 +95,9 @@ then
 |\sqrt{x}-\sqrt{y}|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 |\sqrt{x}-\sqrt{y}|
@@ -96,25 +108,36 @@ By step <1>1,
 =
 \varepsilon.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f(x)=\sqrt{x}\text{ is uniformly continuous on }[0,\infty).}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The number
 \[
 \delta=\varepsilon^2
 \]
 in step <1>2 depends only on $\varepsilon$, not on the points $x,y$.
 Thus step <1>2 is exactly the definition of uniform continuity.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required assertion.
+
 :::
+
 :::

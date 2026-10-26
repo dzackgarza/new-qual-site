@@ -22,20 +22,25 @@ An orthogonal $n\times n$ matrix $A$ is called elementary if the corresponding l
 Prove that every orthogonal matrix $M$ is a product of at most $n-1$ elementary orthogonal matrices.
 :::
 
-::: {.solution}
 Assume
 \[
 n\ge2.
 \]
 
-<1>1. Let $u,v\in\mathbb R^n$ be unit vectors.
+::: pf
+
+::: pf-step
+
+Let $u,v\in\mathbb R^n$ be unit vectors.
 There exists an orthogonal transformation $E$ such that
 \[
 Eu=v
 \]
 and $E$ fixes pointwise an $(n-2)$-dimensional subspace.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 u=v,
@@ -85,21 +90,35 @@ Ew=w,
 \]
 and extend by the identity on the orthogonal complement.
 Again $E$ is orthogonal and fixes at least an $(n-2)$-dimensional subspace.
+
 :::
 
-<1>2. We prove the theorem by induction on $n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+We prove the theorem by induction on $n$.
+
+
+::: pf-proof
+
 The base case and induction step are established in the following steps.
+
 :::
 
-<1>3. For
+:::
+
+::: pf-step
+
+For
 \[
 n=2,
 \]
 every orthogonal matrix is elementary.
 
-::: {.proof}
+
+::: pf-proof
+
 The required fixed subspace has dimension
 \[
 n-2=0.
@@ -109,9 +128,14 @@ Thus every orthogonal $2\times2$ matrix is elementary, so one factor suffices:
 \[
 1=n-1.
 \]
+
 :::
 
-<1>4. Assume the result holds in dimension
+:::
+
+::: pf-step
+
+Assume the result holds in dimension
 \[
 n-1,
 \]
@@ -125,7 +149,9 @@ u=Me_n.
 \]
 Then $u$ is a unit vector.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $M$ is orthogonal,
 \[
 \|Me_n\|
@@ -133,9 +159,14 @@ Since $M$ is orthogonal,
 \|e_n\|
 =1.
 \]
+
 :::
 
-<1>5. Choose an elementary orthogonal transformation $E$ such that
+:::
+
+::: pf-step
+
+Choose an elementary orthogonal transformation $E$ such that
 \[
 Eu=e_n.
 \]
@@ -144,7 +175,9 @@ Then
 (EM)e_n=e_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 to the unit vectors $u$ and $e_n$.
 Then
 \[
@@ -156,9 +189,14 @@ Eu
 =
 e_n.
 \]
+
 :::
 
-<1>6. The subspace
+:::
+
+::: pf-step
+
+The subspace
 \[
 H=e_n^\perp
 \]
@@ -167,7 +205,9 @@ is invariant under
 EM.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 F=EM.
@@ -197,20 +237,32 @@ Thus
 \[
 Fx\in H.
 \]
+
 :::
 
-<1>7. The restriction
+:::
+
+::: pf-step
+
+The restriction
 \[
 F|_H:H\to H
 \]
 is an orthogonal transformation of the $(n-1)$-dimensional space $H$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, the restriction is well-defined.
 Since $F$ preserves the Euclidean inner product on all of $\mathbb R^n$, its restriction preserves the inner product on $H$.
+
 :::
 
-<1>8. By the induction hypothesis,
+:::
+
+::: pf-step
+
+By the induction hypothesis,
 \[
 F|_H
 \]
@@ -220,18 +272,27 @@ n-2
 \]
 elementary orthogonal transformations of $H$.
 
-::: {.proof}
+
+::: pf-proof
+
 The space $H$ has dimension
 \[
 n-1.
 \]
 Apply the induction hypothesis in that dimension.
+
 :::
 
-<1>9. Extend each factor from step <1>8 to $\mathbb R^n$ by fixing $e_n$.
+:::
+
+::: pf-step
+
+Extend each factor from step <1>8 to $\mathbb R^n$ by fixing $e_n$.
 Each extension is elementary in $\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 An elementary orthogonal transformation of $H$ fixes pointwise a subspace of $H$ of dimension
 \[
 (n-1)-2=n-3.
@@ -249,15 +310,22 @@ whose dimension is
 (n-3)+1=n-2.
 \]
 Thus the extension is elementary in $\mathbb R^n$.
+
 :::
 
-<1>10. The matrix $F=EM$ is a product of at most
+:::
+
+::: pf-step
+
+The matrix $F=EM$ is a product of at most
 \[
 n-2
 \]
 elementary orthogonal matrices.
 
-::: {.proof}
+
+::: pf-proof
+
 The extensions from step <1>9 agree with $F$ on $H$ by step <1>8.
 They also fix $e_n$, as does $F$.
 Since
@@ -267,15 +335,22 @@ Since
 H\oplus\operatorname{span}\{e_n\},
 \]
 the product of those extensions equals $F$ on all of $\mathbb R^n$.
+
 :::
 
-<1>11. The inverse
+:::
+
+::: pf-step
+
+The inverse
 \[
 E^{-1}
 \]
 is elementary.
 
-::: {.proof}
+
+::: pf-proof
+
 The transformation $E$ fixes pointwise some $(n-2)$-dimensional subspace $W$.
 For
 \[
@@ -290,15 +365,22 @@ E^{-1}w=w.
 \]
 Thus $E^{-1}$ fixes the same subspace pointwise.
 It is orthogonal because the inverse of an orthogonal matrix is orthogonal.
+
 :::
 
-<1>12. Therefore $M$ is a product of at most
+:::
+
+::: pf-step
+
+Therefore $M$ is a product of at most
 \[
 \boxed{n-1}
 \]
 elementary orthogonal matrices.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10, write
 \[
 EM
@@ -322,11 +404,15 @@ Thus the number of factors is at most
 =
 n-1.
 \]
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The base case is step <1>3 and the induction step is completed in step <1>12.
+
 :::
+
 :::

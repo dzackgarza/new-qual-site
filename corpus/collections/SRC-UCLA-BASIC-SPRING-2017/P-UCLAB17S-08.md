@@ -23,13 +23,16 @@ Show that there is a constant $C$ such that every $C^2$ function $f:\mathbb R\to
 \]
 :::
 
-::: {.solution}
 Define
 \[
 K(x)=\frac{x(1-x)}2.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 K(0)=K(1)=0,
 \]
@@ -41,14 +44,21 @@ and
 K''(x)=-1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These follow by direct differentiation of
 \[
 K(x)=\frac{x-x^2}{2}.
 \]
+
 :::
 
-<1>2. Integration by parts gives
+:::
+
+::: pf-step
+
+Integration by parts gives
 \[
 \int_0^1K(x)f''(x)\,dx
 =
@@ -56,7 +66,9 @@ K(x)=\frac{x-x^2}{2}.
 \int_0^1K'(x)f'(x)\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 K(0)=K(1)=0,
@@ -73,9 +85,14 @@ K(0)=K(1)=0,
 \int_0^1K'f'.
 \end{aligned}
 \]
+
 :::
 
-<1>3. A second integration by parts gives
+:::
+
+::: pf-step
+
+A second integration by parts gives
 \[
 \boxed{
 \int_0^1K(x)f''(x)\,dx
@@ -86,7 +103,9 @@ K(0)=K(1)=0,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Starting from step <1>2,
 \[
 \begin{aligned}
@@ -131,14 +150,21 @@ so
 \int_0^1f.
 \]
 Combine the terms.
+
 :::
 
-<1>4. On the interval $[0,1]$,
+:::
+
+::: pf-step
+
+On the interval $[0,1]$,
 \[
 0\le K(x)\le\frac18.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quadratic
 \[
 K(x)=\frac{x(1-x)}2
@@ -156,9 +182,14 @@ K\left(\frac12\right)
 =
 \frac18.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \left|
 \int_0^1K(x)f''(x)\,dx
@@ -168,7 +199,9 @@ K\left(\frac12\right)
 \int_0^1|f''(x)|\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the triangle inequality and step <1>4,
 \[
 \begin{aligned}
@@ -184,9 +217,14 @@ By the triangle inequality and step <1>4,
 \int_0^1|f''(x)|\,dx.
 \end{aligned}
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \left|
@@ -200,17 +238,23 @@ By the triangle inequality and step <1>4,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the identity from step <1>3 and the estimate from step <1>5.
 Thus the desired inequality holds with
 \[
 \boxed{C=\frac18}.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required estimate.
+
 :::
+
 :::

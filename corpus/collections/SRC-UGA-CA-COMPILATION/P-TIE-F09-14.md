@@ -29,7 +29,6 @@ Erratum: the source writes the hypothesis as $f(z) \le M\abs{z}^2$, which has no
 The intended hypothesis is $\abs{f(z)} \le M\abs{z}^2$ outside some disk.
 :::
 
-::: {.solution}
 Use the corrected hypothesis from the remark: there exists $R_0>0$ such that
 $$
 |f(z)|\le M|z|^2
@@ -41,14 +40,20 @@ $$
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
 $$
 
-<1>1. For every $r\ge R_0$ and every $n\ge0$,
+::: pf
+
+::: pf-step
+
+For every $r\ge R_0$ and every $n\ge0$,
 $$
 |a_n|
 \le
 Mr^{2-n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle $|z|=r$ the hypothesis gives
 $$
 \max_{|z|=r}|f(z)|\le Mr^2.
@@ -68,14 +73,21 @@ $$
 =
 Mr^{2-n}.
 $$
+
 :::
 
-<1>2. For every $n\ge3$,
+:::
+
+::: pf-step
+
+For every $n\ge3$,
 $$
 a_n=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $n\ge3$. Step <1>1 holds for every arbitrarily large $r$, so
 $$
 |a_n|
@@ -83,21 +95,32 @@ $$
 Mr^{2-n}.
 $$
 Since $2-n<0$, the right-hand side tends to $0$ as $r\to\infty$. Hence $a_n=0$.
+
 :::
 
-<1>3. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 \boxed{f(z)=a_0+a_1z+a_2z^2},
 $$
 so $f$ is a polynomial of degree at most $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that every coefficient of degree at least $3$ vanishes.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

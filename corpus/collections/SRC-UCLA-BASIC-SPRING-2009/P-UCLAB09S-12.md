@@ -32,14 +32,17 @@ for every ball $\Omega$ of every positive radius and center.
 You may use the standard theorems of vector calculus without proof.
 :::
 
-::: {.solution}
 Define
 \[
 G=\operatorname{div}F-\rho.
 \]
 Since $F$ and $\rho$ are smooth, $G$ is continuous.
 
-<1>1. Suppose first that
+::: pf
+
+::: pf-step
+
+Suppose first that
 \[
 \operatorname{div}F=\rho
 \]
@@ -51,7 +54,9 @@ Then for every ball $\Omega$,
 \iiint_\Omega\rho\,dx\,dy\,dz.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The divergence theorem gives
 \[
 \iint_{\partial\Omega}F\cdot dS
@@ -68,9 +73,14 @@ the right side equals
 \[
 \iiint_\Omega\rho\,dx\,dy\,dz.
 \]
+
 :::
 
-<1>2. Conversely, suppose that for every ball $\Omega$,
+:::
+
+::: pf-step
+
+Conversely, suppose that for every ball $\Omega$,
 \[
 \iint_{\partial\Omega}F\cdot dS
 =
@@ -82,7 +92,9 @@ Then
 \]
 for every ball $\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the divergence theorem,
 \[
 \iint_{\partial\Omega}F\cdot dS
@@ -102,9 +114,14 @@ This is
 \[
 \iiint_\Omega G=0.
 \]
+
 :::
 
-<1>3. Suppose, for contradiction, that
+:::
+
+::: pf-step
+
+Suppose, for contradiction, that
 \[
 G(p)>0
 \]
@@ -118,7 +135,9 @@ G>0
 \]
 throughout $\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $G$ is continuous and
 \[
 G(p)>0,
@@ -145,11 +164,18 @@ G(q)
 >
 0.
 \]
+
 :::
 
-<1>4. The situation in step <1>3 contradicts step <1>2.
+:::
 
-::: {.proof}
+::: pf-step
+
+The situation in step <1>3 contradicts step <1>2.
+
+
+::: pf-proof
+
 On the ball $\Omega$ from step <1>3,
 \[
 G(q)
@@ -167,14 +193,21 @@ Therefore
 \]
 But step <1>2 says that the integral of $G$ over every ball is zero.
 This is a contradiction.
+
 :::
 
-<1>5. No point can satisfy
+:::
+
+::: pf-step
+
+No point can satisfy
 \[
 G(p)<0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply steps <1>3--<1>4 to the continuous function
 \[
 -G.
@@ -192,14 +225,21 @@ which would produce a ball on which
 \iiint_\Omega G<0,
 \]
 again contradicting step <1>2.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{G\equiv0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At every point, steps <1>4--<1>5 rule out both positive and negative values.
 Thus
 \[
@@ -209,15 +249,22 @@ for every
 \[
 p\in\mathbb R^3.
 \]
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\operatorname{div}F=\rho}
 \]
 everywhere.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 G
@@ -232,11 +279,15 @@ so
 \[
 \operatorname{div}F=\rho.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the forward implication, and steps <1>2--<1>7 prove the converse.
+
 :::
+
 :::

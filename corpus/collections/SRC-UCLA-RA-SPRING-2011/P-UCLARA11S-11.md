@@ -21,8 +21,11 @@ with a simple pole at $s=1$.
 Compute the residue at $s=1$.
 :::
 
-::: {.solution}
-<1>1. For $x>0$, define
+::: pf
+
+::: pf-step
+
+For $x>0$, define
 \[
 r(x)
 \coloneqq
@@ -33,7 +36,9 @@ Then $r$ extends continuously to $x=0$ with
 r(0)=-\frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 e^x-1
@@ -57,9 +62,14 @@ r(x)\longrightarrow-\frac12
 \qquad
 (x\downarrow0).
 \]
+
 :::
 
-<1>2. The function
+:::
+
+::: pf-step
+
+The function
 \[
 H(s)
 \coloneqq
@@ -70,7 +80,9 @@ is holomorphic on the half-plane
 \operatorname{Re}s>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix a compact set
 \[
 K\subset\{\operatorname{Re}s>0\}.
@@ -103,9 +115,14 @@ x^{s-1}r(x)
 C x^{\sigma-1}|\log x|^m,
 \]
 which is also integrable on $(0,1)$. Therefore differentiation under the integral sign is justified on compact subsets, and $H$ is holomorphic.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 \[
 J(s)
 \coloneqq
@@ -114,7 +131,9 @@ J(s)
 \]
 is entire.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix a compact set $K\subset\mathbb C$. Choose $A>0$ such that
 \[
 \operatorname{Re}s\le A
@@ -142,9 +161,14 @@ After differentiating $m$ times with respect to $s$, an additional factor $(\log
 x^{A-1}(\log x)^m e^{-x}
 \]
 is still integrable. Hence differentiation under the integral sign is valid on every compact set, so $J$ is entire.
+
 :::
 
-<1>4. For real $s>1$,
+:::
+
+::: pf-step
+
+For real $s>1$,
 \[
 f(s)
 =
@@ -155,7 +179,9 @@ H(s)
 J(s).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the defining integral at $1$:
 \[
 f(s)
@@ -188,9 +214,14 @@ For $s>1$,
 \frac1{s-1}.
 \]
 The remaining two terms are $H(s)$ and $J(s)$.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 F(s)
 \coloneqq
@@ -208,7 +239,9 @@ s\ne1.
 \]
 Then $F$ is holomorphic on this punctured half-plane and extends the original function $f$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $H$ is holomorphic on $\Re s>0$, and by step <1>3, $J$ is entire. The function
 \[
 \frac1{s-1}
@@ -222,11 +255,18 @@ Step <1>4 shows that
 F(s)=f(s)
 \]
 for every real $s>1$, so $F$ is an analytic continuation of $f$.
+
 :::
 
-<1>6. The point $s=1$ is a simple pole of $F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The point $s=1$ is a simple pole of $F$.
+
+
+::: pf-proof
+
 The function
 \[
 H(s)+J(s)
@@ -240,20 +280,31 @@ F(s)
 \text{(holomorphic function near }1).
 \]
 Thus $s=1$ is a simple pole.
+
 :::
 
-<1>7. The residue at $s=1$ is
+:::
+
+::: pf-step
+
+The residue at $s=1$ is
 \[
 \boxed{1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From the Laurent expansion in step <1>6, the coefficient of $(s-1)^{-1}$ is exactly $1$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required analytic continuation, and steps <1>6--<1>7 identify the pole and its residue.
+
 :::
+
 :::

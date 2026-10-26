@@ -21,19 +21,29 @@ Let $f:\mathbb C\to\mathbb C$ be a nonconstant entire function.
 Without using either Picard theorem, show that there exist complex numbers $z$ of arbitrarily large modulus for which $f(z)$ is a positive real number.
 :::
 
-::: {.solution}
-<1>1. Suppose, toward a contradiction, that there is $R_0>0$ such that
+::: pf
+
+::: pf-step
+
+Suppose, toward a contradiction, that there is $R_0>0$ such that
 \[
 |z|>R_0
 \quad\Longrightarrow\quad
 f(z)\notin(0,\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of the assertion that points of arbitrarily large modulus are mapped to positive real numbers.
+
 :::
 
-<1>2. Choose a positive real number $M$ such that
+:::
+
+::: pf-step
+
+Choose a positive real number $M$ such that
 \[
 M>
 \max_{|z|\le R_0}|f(z)|
@@ -49,7 +59,9 @@ g(\mathbb C)
 \mathbb C\setminus[0,\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 First suppose $|z|\le R_0$. If
 \[
 g(z)\in[0,\infty),
@@ -65,9 +77,14 @@ Now suppose $|z|>R_0$. If $g(z)\in[0,\infty)$, then
 f(z)=M+g(z)>0
 \]
 is a positive real number, contradicting step <1>1. Thus $g$ avoids the entire nonnegative real axis.
+
 :::
 
-<1>3. There is an injective holomorphic map
+:::
+
+::: pf-step
+
+There is an injective holomorphic map
 \[
 \Phi:
 \mathbb C\setminus[0,\infty)
@@ -75,7 +92,9 @@ is a positive real number, contradicting step <1>1. Thus $g$ avoids the entire n
 \mathbb D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the slit plane
 \[
 \mathbb C\setminus[0,\infty),
@@ -103,21 +122,35 @@ maps the upper half-plane biholomorphically onto the unit disk. Thus
 \Phi=C\circ S
 \]
 is an injective holomorphic map into $\mathbb D$.
+
 :::
 
-<1>4. The entire function
+:::
+
+::: pf-step
+
+The entire function
 \[
 \Phi\circ g:\mathbb C\to\mathbb D
 \]
 is constant.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, $g$ takes values in the domain of $\Phi$. Hence the composition is entire. Its image lies in the unit disk, so it is bounded. Liouville's theorem therefore makes it constant.
+
 :::
 
-<1>5. The function $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant.
+
+
+::: pf-proof
+
 The map $\Phi$ is injective by step <1>3. Thus constancy of
 \[
 \Phi\circ g
@@ -127,15 +160,27 @@ implies constancy of $g$. Since
 f=g+M,
 \]
 the function $f$ is constant as well.
+
 :::
 
-<1>6. The assumption in step <1>1 is impossible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumption in step <1>1 is impossible.
+
+
+::: pf-proof
+
 Step <1>5 contradicts the hypothesis that $f$ is nonconstant.
+
 :::
 
-<1>7. Therefore, for every $R>0$, there exists $z\in\mathbb C$ with
+:::
+
+::: pf-step
+
+Therefore, for every $R>0$, there exists $z\in\mathbb C$ with
 \[
 |z|>R
 \]
@@ -144,13 +189,19 @@ such that
 \boxed{f(z)\in(0,\infty)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If this failed for some $R$, step <1>1 would hold with $R_0=R$, contradicting step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required statement.
+
 :::
+
 :::

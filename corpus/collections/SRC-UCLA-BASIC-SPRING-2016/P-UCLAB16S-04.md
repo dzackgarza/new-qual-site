@@ -29,7 +29,6 @@ f(x):=\lim_{n\to\infty}f_n(x)
 exists and compute its value.
 :::
 
-::: {.solution}
 Define the operator
 \[
 (K\varphi)(x)
@@ -49,7 +48,11 @@ f_{n+1}
 f_0=0.
 \]
 
-<1>1. There exists
+::: pf
+
+::: pf-step
+
+There exists
 \[
 q<1
 \]
@@ -62,7 +65,9 @@ for every
 t\in[0,1].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $\beta$ is continuous on the compact interval $[0,1]$, so it attains a maximum.
 Because its values lie in
 \[
@@ -72,9 +77,14 @@ that maximum is a number
 \[
 q<1.
 \]
+
 :::
 
-<1>2. For every
+:::
+
+::: pf-step
+
+For every
 \[
 \varphi,\psi\in C([0,1]),
 \]
@@ -85,7 +95,9 @@ one has
 q\|\varphi-\psi\|_\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 x\in[0,1],
@@ -108,9 +120,14 @@ q\|\varphi-\psi\|_\infty.
 \end{aligned}
 \]
 Take the supremum over $x$.
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \mathcal T(\varphi)
 =
@@ -122,7 +139,9 @@ C([0,1])
 \]
 with the supremum norm.
 
-::: {.proof}
+
+::: pf-proof
+
 The space
 \[
 C([0,1])
@@ -139,15 +158,22 @@ with
 q<1.
 \]
 Thus $\mathcal T$ is a contraction.
+
 :::
 
-<1>4. The sequence $(f_n)$ converges uniformly to the unique fixed point
+:::
+
+::: pf-step
+
+The sequence $(f_n)$ converges uniformly to the unique fixed point
 \[
 f
 \]
 of $\mathcal T$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 f_{n+1}
@@ -163,9 +189,14 @@ uniformly for a unique continuous function $f$ satisfying
 \mathcal T(f)=f.
 \]
 In particular, the pointwise limit exists for every $x\in[0,1]$.
+
 :::
 
-<1>5. The limit satisfies the integral equation
+:::
+
+::: pf-step
+
+The limit satisfies the integral equation
 \[
 \boxed{
 f(x)
@@ -176,14 +207,21 @@ f(x)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is precisely the fixed-point equation
 \[
 \mathcal T(f)=f.
 \]
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 B(x)
 =
@@ -203,7 +241,9 @@ Then
 H(0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At
 \[
 x=0,
@@ -216,9 +256,14 @@ H(0)
 e^{B(0)}\cdot0
 =0.
 \]
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 H'(x)
@@ -227,7 +272,9 @@ H'(x)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\alpha$ and $\beta$ are continuous,
 \[
 B'(x)=\beta(x).
@@ -250,9 +297,14 @@ e^{B(x)}
 \beta(x)\alpha(x).
 \end{aligned}
 \]
+
 :::
 
-<1>8. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 H(x)
 =
@@ -261,15 +313,22 @@ H(x)
 \,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the differential equation from step <1>7 from $0$ to $x$ and use
 \[
 H(0)=0
 \]
 from step <1>6.
+
 :::
 
-<1>9. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g(x)
 =
@@ -281,7 +340,9 @@ g
 \]
 satisfies the fixed-point equation in step <1>5.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 \[
 \begin{aligned}
@@ -302,9 +363,14 @@ g(x)
 \,dt.
 \end{aligned}
 \]
+
 :::
 
-<1>10. Therefore the limit is
+:::
+
+::: pf-step
+
+Therefore the limit is
 \[
 \boxed{
 f(x)
@@ -319,16 +385,23 @@ e^{-\int_0^t\beta(s)\,ds}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>9, the function $g$ is a fixed point of $\mathcal T$.
 By uniqueness of the fixed point from step <1>4,
 \[
 f=g.
 \]
 Substitute the definition of $H$ from step <1>6.
+
 :::
 
-<1>11. Hence for every $x\in[0,1]$,
+:::
+
+::: pf-step
+
+Hence for every $x\in[0,1]$,
 \[
 \boxed{
 \lim_{n\to\infty}f_n(x)
@@ -343,13 +416,19 @@ e^{-\int_0^t\beta(s)\,ds}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives convergence of $f_n$ to $f$, and step <1>10 computes $f$ explicitly.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required pointwise limit and its value.
+
 :::
+
 :::

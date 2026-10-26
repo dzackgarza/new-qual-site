@@ -34,14 +34,17 @@ Let $W$ be the subset of the space $C[0,1]$ of real-valued, continuous functions
 Erratum: with the strict inequality of the source, read for $x \neq y$ (for $x = y$ it would make $W$ empty), part (B) is false because $W$ is not closed. Let $c = \frac{-1 + \sqrt{11/3}}{2}$, so that $g(x) = x + c$ satisfies $\int_0^1 g^2 = \frac13 + c + c^2 = 1$. For $n \ge 2$ choose $c_n$ with $\int_0^1 \bigl((1 - \frac1n)x + c_n\bigr)^2\,dx = 1$ and $c_n \to c$, and put $f_n(x) = (1 - \frac1n)x + c_n$. Then $|f_n(x) - f_n(y)| = (1 - \frac1n)|x - y| < |x - y|$ for $x \neq y$, so $f_n \in W$, and $f_n \to g$ uniformly, but $|g(1) - g(0)| = 1 = |1 - 0|$, so $g \notin W$. Part (B) holds when the condition is $|f(x) - f(y)| \le |x - y|$ for all $x, y \in [0,1]$: that set is closed, and it is uniformly bounded by (A) and equicontinuous, hence compact by the Arzelà–Ascoli theorem.
 :::
 
-::: {.solution}
 Interpret the source's strict inequality as applying to
 \[
 x\ne y.
 \]
 Part (A) is true, while part (B) is false as printed.
 
-<1>1. For every $f\in W$ and every $x\in[0,1]$,
+::: pf
+
+::: pf-step
+
+For every $f\in W$ and every $x\in[0,1]$,
 \[
 |f(x)-f(0)|<x
 \]
@@ -52,7 +55,9 @@ when $x>0$, and hence
 |f(0)|+1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The defining inequality gives
 \[
 |f(x)-f(0)|
@@ -73,14 +78,21 @@ the triangle inequality gives
 <
 |f(0)|+1.
 \]
+
 :::
 
-<1>2. For every $f\in W$,
+:::
+
+::: pf-step
+
+For every $f\in W$,
 \[
 \boxed{|f(0)|\le2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that
 \[
 |f(0)|>2.
@@ -116,15 +128,22 @@ Hence
 \[
 |f(0)|\le2.
 \]
+
 :::
 
-<1>3. The family $W$ is uniformly bounded; for example,
+:::
+
+::: pf-step
+
+The family $W$ is uniformly bounded; for example,
 \[
 \boxed{|f(x)|\le3}
 \]
 for every $f\in W$ and every $x\in[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 \[
 |f(x)|
@@ -139,9 +158,14 @@ M=3
 \]
 works for all $f\in W$ and all $x\in[0,1]$.
 This proves part (A).
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 c=\frac{-1+\sqrt{11/3}}2
 \]
@@ -154,7 +178,9 @@ Then
 \int_0^1g(x)^2\,dx=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One computes
 \[
 \int_0^1(x+c)^2\,dx
@@ -172,9 +198,14 @@ so
 \frac13+\frac23
 =1.
 \]
+
 :::
 
-<1>5. For $n\ge2$, set
+:::
+
+::: pf-step
+
+For $n\ge2$, set
 \[
 a_n=1-\frac1n.
 \]
@@ -187,7 +218,9 @@ and
 c_n\to c.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition is
 \[
 \frac{a_n^2}{3}+a_nc_n+c_n^2=1.
@@ -212,9 +245,14 @@ continuity of this expression gives
 \[
 c_n\to c.
 \]
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 f_n(x)=a_nx+c_n.
 \]
@@ -224,7 +262,9 @@ f_n\in W
 \]
 for every $n\ge2$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 \int_0^1f_n(x)^2\,dx=1.
@@ -249,15 +289,22 @@ one has
 |x-y|.
 \]
 Thus $f_n$ satisfies both defining conditions of $W$.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f_n\to g
 \]
 uniformly on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\in[0,1]$,
 \[
 \begin{aligned}
@@ -277,11 +324,18 @@ and
 c_n\to c.
 \]
 Hence the convergence is uniform.
+
 :::
 
-<1>8. The limit $g$ does not belong to $W$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit $g$ does not belong to $W$.
+
+
+::: pf-proof
+
 Although step <1>4 gives
 \[
 \int_0^1g^2=1,
@@ -300,11 +354,18 @@ Hence
 \[
 g\notin W.
 \]
+
 :::
 
-<1>9. Therefore $W$ is not closed in $C[0,1]$ with the supremum norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $W$ is not closed in $C[0,1]$ with the supremum norm.
+
+
+::: pf-proof
+
 By step <1>6,
 \[
 f_n\in W
@@ -320,11 +381,18 @@ By step <1>8,
 g\notin W.
 \]
 Thus $W$ is not closed.
+
 :::
 
-<1>10. Consequently part (B) is false as printed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Consequently part (B) is false as printed.
+
+
+::: pf-proof
+
 The normed space
 \[
 C[0,1]
@@ -335,9 +403,14 @@ Therefore
 \[
 \boxed{W\text{ is not compact}.}
 \]
+
 :::
 
-<1>11. If the source's strict inequality is replaced by
+:::
+
+::: pf-step
+
+If the source's strict inequality is replaced by
 \[
 |f(x)-f(y)|
 \le
@@ -345,7 +418,9 @@ Therefore
 \]
 then the corrected family is compact.
 
-::: {.proof}
+
+::: pf-proof
+
 The proof of part (A) above still gives uniform boundedness.
 The common Lipschitz constant $1$ gives equicontinuity.
 The corrected family is closed under uniform limits: the non-strict Lipschitz inequality passes to the limit, and so does the condition
@@ -354,13 +429,17 @@ The corrected family is closed under uniform limits: the non-strict Lipschitz in
 \]
 because uniform convergence implies uniform convergence of squares on a uniformly bounded family.
 Therefore Arzelà--Ascoli gives compactness.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (A).
 Steps <1>4--<1>10 prove that part (B) is false for the literal strict inequality.
 Step <1>11 records the corrected non-strict version for which the intended compactness conclusion holds.
+
 :::
+
 :::

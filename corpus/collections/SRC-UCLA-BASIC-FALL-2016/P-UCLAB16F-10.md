@@ -32,15 +32,20 @@ Note: Formal calculations alone do not constitute a solution.
 You must justify rigorously that there is a point that is closest, that it is unique, and that it is the specific point that you claim that it is.
 :::
 
-::: {.solution}
 Let
 \[
 C=\{(x,y)\in\mathbb R^2:x^4+y^4=2\}.
 \]
 
-<1>1. The set $C$ is compact.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $C$ is compact.
+
+
+::: pf-proof
+
 The function
 \[
 (x,y)\longmapsto x^4+y^4
@@ -65,9 +70,14 @@ so
 \]
 Thus $C$ is bounded.
 By Heine--Borel, $C$ is compact.
+
 :::
 
-<1>2. The distance from $(x,y)$ to the line
+:::
+
+::: pf-step
+
+The distance from $(x,y)$ to the line
 \[
 y=x-100
 \]
@@ -78,7 +88,9 @@ d(x,y)
 \frac{|y-x+100|}{\sqrt2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The line has equation
 \[
 -x+y+100=0.
@@ -99,14 +111,21 @@ b=1,
 \qquad
 c=100.
 \]
+
 :::
 
-<1>3. For every $(x,y)\in C$,
+:::
+
+::: pf-step
+
+For every $(x,y)\in C$,
 \[
 y-x+100>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 |x|,|y|\le2^{1/4}<2.
@@ -121,15 +140,22 @@ y-x+100
 >
 0.
 \]
+
 :::
 
-<1>4. Minimizing the distance to the line over $C$ is equivalent to maximizing
+:::
+
+::: pf-step
+
+Minimizing the distance to the line over $C$ is equivalent to maximizing
 \[
 x-y
 \]
 over $C$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 \[
 d(x,y)
@@ -145,25 +171,39 @@ equivalently maximizing
 \[
 x-y.
 \]
+
 :::
 
-<1>5. A maximizing point exists.
+:::
 
-::: {.proof}
+::: pf-step
+
+A maximizing point exists.
+
+
+::: pf-proof
+
 The function
 \[
 (x,y)\longmapsto x-y
 \]
 is continuous on the compact set $C$.
 The extreme value theorem therefore gives a global maximum.
+
 :::
 
-<1>6. For every $(x,y)\in C$,
+:::
+
+::: pf-step
+
+For every $(x,y)\in C$,
 \[
 x-y\le2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By Hölder's inequality with exponents
 \[
 4
@@ -184,9 +224,14 @@ x-y
 2.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Equality
+:::
+
+::: pf-step
+
+Equality
 \[
 x-y=2
 \]
@@ -195,7 +240,9 @@ holds on $C$ only at
 \boxed{(x,y)=(1,-1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For equality in
 \[
 x-y\le |x|+|y|,
@@ -256,24 +303,38 @@ and
 1-(-1)=2.
 \]
 Thus it is the unique maximizer.
+
 :::
 
-<1>8. Therefore the unique point on $C$ closest to the line is
+:::
+
+::: pf-step
+
+Therefore the unique point on $C$ closest to the line is
 \[
 \boxed{(1,-1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, closest points are exactly maximizers of $x-y$.
 Step <1>5 proves existence, and step <1>7 proves that the unique maximizer is $(1,-1)$.
+
 :::
 
-<1>9. The minimum distance itself is
+:::
+
+::: pf-step
+
+The minimum distance itself is
 \[
 \boxed{49\sqrt2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At
 \[
 (1,-1),
@@ -288,11 +349,15 @@ d
 =
 49\sqrt2.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives the unique closest point, with existence and uniqueness justified, and step <1>9 gives the corresponding distance.
+
 :::
+
 :::

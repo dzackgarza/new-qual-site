@@ -25,8 +25,11 @@ Suppose also that the minimal polynomial $M_A(X)$ equals $C_A(X)$. How many clas
 Prove your answers, quoting any general theorems you need.
 :::
 
-::: {.solution}
-<1>1. The characteristic polynomial factors as
+::: pf
+
+::: pf-step
+
+The characteristic polynomial factors as
 \[
 \boxed{
 C_A(X)
@@ -34,7 +37,9 @@ C_A(X)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One computes
 \[
 (X-1)(X-2)
@@ -49,23 +54,37 @@ and therefore
 X^4-6X^3+13X^2-12X+4.
 \end{aligned}
 \]
+
 :::
 
-<1>2. Over $\mathbb C$, the similarity class of $A$ is determined by the sizes of the Jordan blocks for eigenvalues $1$ and $2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Over $\mathbb C$, the similarity class of $A$ is determined by the sizes of the Jordan blocks for eigenvalues $1$ and $2$.
+
+
+::: pf-proof
+
 The Jordan canonical form theorem states that every complex matrix is similar to a direct sum of Jordan blocks, and two Jordan forms are similar exactly when, for each eigenvalue, they have the same multiset of block sizes.
 By step <1>1, the only eigenvalues are $1$ and $2$, each with algebraic multiplicity $2$.
+
 :::
 
-<1>3. For an eigenvalue of algebraic multiplicity $2$, there are exactly two possible Jordan-block patterns:
+:::
+
+::: pf-step
+
+For an eigenvalue of algebraic multiplicity $2$, there are exactly two possible Jordan-block patterns:
 \[
 2
 \qquad\text{or}\qquad
 1+1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sizes of the Jordan blocks for a fixed eigenvalue form a partition of its algebraic multiplicity.
 The integer $2$ has exactly the two partitions
 \[
@@ -73,15 +92,22 @@ The integer $2$ has exactly the two partitions
 \quad\text{and}\quad
 1+1.
 \]
+
 :::
 
-<1>4. Hence there are exactly
+:::
+
+::: pf-step
+
+Hence there are exactly
 \[
 \boxed{4}
 \]
 similarity classes with the prescribed characteristic polynomial.
 
-::: {.proof}
+
+::: pf-proof
+
 For eigenvalue $1$, choose independently one of the two block patterns from step <1>3.
 For eigenvalue $2$, choose independently one of the two block patterns.
 Thus there are
@@ -104,15 +130,22 @@ and
 \[
 [1]\oplus[1]\oplus[2]\oplus[2].
 \]
+
 :::
 
-<1>5. For a Jordan form, the exponent of
+:::
+
+::: pf-step
+
+For a Jordan form, the exponent of
 \[
 (X-\lambda)
 \]
 in the minimal polynomial equals the size of the largest Jordan block for eigenvalue $\lambda$.
 
-::: {.proof}
+
+::: pf-proof
+
 For a Jordan block
 \[
 J_r(\lambda)=\lambda I+N,
@@ -130,25 +163,37 @@ J_r(\lambda)-\lambda I=N
 that vanishes is $r$.
 For a direct sum of blocks with the same eigenvalue, the least annihilating exponent is therefore the largest block size.
 Taking the product over distinct eigenvalues gives the stated rule for the minimal polynomial.
+
 :::
 
-<1>6. The condition
+:::
+
+::: pf-step
+
+The condition
 \[
 M_A(X)=C_A(X)
 =(X-1)^2(X-2)^2
 \]
 forces a size-$2$ Jordan block for eigenvalue $1$ and a size-$2$ Jordan block for eigenvalue $2$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, the exponent $2$ of $(X-1)$ in the minimal polynomial means that the largest Jordan block for eigenvalue $1$ has size $2$.
 Since the total algebraic multiplicity at $1$ is also $2$, the only possible block pattern is the single block
 \[
 J_2(1).
 \]
 The same argument applies to eigenvalue $2$.
+
 :::
 
-<1>7. Therefore exactly
+:::
+
+::: pf-step
+
+Therefore exactly
 \[
 \boxed{1}
 \]
@@ -157,7 +202,9 @@ similarity class satisfies the additional condition
 M_A=C_A.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 uniquely determines the Jordan form:
 \[
 \boxed{
@@ -165,11 +212,15 @@ J_2(1)\oplus J_2(2)
 }.
 \]
 Hence there is exactly one similarity class.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the number of classes with the prescribed characteristic polynomial, and step <1>7 gives the number satisfying the additional minimal-polynomial condition.
+
 :::
+
 :::

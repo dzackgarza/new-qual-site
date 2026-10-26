@@ -30,13 +30,16 @@ satisfy:
 Prove that $g(x):=f(x,x)$ is continuous on $[a,b]$.
 :::
 
-::: {.solution}
 Fix
 \[
 x_0\in[a,b].
 \]
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 x\ge x_0,
 \]
@@ -51,7 +54,9 @@ f(x_0,x).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 y\longmapsto f(x,y)
@@ -80,9 +85,14 @@ f(x,x)
 f(x_0,x).
 \]
 Thus the displayed inequalities hold.
+
 :::
 
-<1>2. As
+:::
+
+::: pf-step
+
+As
 \[
 x\to x_0^+,
 \]
@@ -95,7 +105,9 @@ and
 f(x_0,x)\to f(x_0,x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For the first limit, hold the second coordinate equal to $x_0$ and use continuity of
 \[
 x\longmapsto f(x,x_0).
@@ -104,16 +116,23 @@ For the second, hold the first coordinate equal to $x_0$ and use continuity of
 \[
 y\longmapsto f(x_0,y).
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lim_{x\to x_0^+}g(x)
 =
 g(x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 f(x,x_0)
@@ -130,9 +149,14 @@ g(x_0)
 \]
 by step <1>2.
 Apply the squeeze theorem.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 x\le x_0,
 \]
@@ -147,7 +171,9 @@ f(x,x_0).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 x\longmapsto f(x,x)
@@ -179,9 +205,14 @@ f(x,x)
 \le
 f(x,x_0).
 \]
+
 :::
 
-<1>5. As
+:::
+
+::: pf-step
+
+As
 \[
 x\to x_0^-,
 \]
@@ -194,24 +225,40 @@ and
 f(x,x_0)\to f(x_0,x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the same separate-continuity statements used in step <1>2.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lim_{x\to x_0^-}g(x)
 =
 g(x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the inequalities from step <1>4 and the limits from step <1>5, then apply the squeeze theorem.
+
 :::
 
-<1>7. Hence $g$ is continuous at $x_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $g$ is continuous at $x_0$.
+
+
+::: pf-proof
+
 At an interior point,
 \[
 x_0\in(a,b),
@@ -222,20 +269,31 @@ g(x_0).
 \]
 At the endpoint $a$, only the right-hand limit is required and step <1>3 applies.
 At the endpoint $b$, only the left-hand limit is required and step <1>6 applies.
+
 :::
 
-<1>8. Since $x_0$ was arbitrary,
+:::
+
+::: pf-step
+
+Since $x_0$ was arbitrary,
 \[
 \boxed{g\in C([a,b])}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 proves continuity at every point of the interval.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

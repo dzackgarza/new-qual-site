@@ -27,8 +27,11 @@ S=\left\{f\in L^1(\mathbb R^3):\int_{\mathbb R^3}f(x)\,dx=0\right\}.
 (b) Show that $S\cap L^2(\mathbb R^3)$ is dense in $L^2(\mathbb R^3)$.
 :::
 
-::: {.solution}
-<1>1. The linear functional
+::: pf
+
+::: pf-step
+
+The linear functional
 $$
 T:L^1(\RR^3)\to\RR,
 \qquad
@@ -36,7 +39,9 @@ T(f)=\int_{\RR^3}f(x)\,dx,
 $$
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $f\in L^1(\RR^3)$,
 $$
 \abs{T(f)}
@@ -46,21 +51,35 @@ $$
 \norm f_{L^1}.
 $$
 Thus $T$ is bounded, hence continuous.
+
 :::
 
-<1>2. The subspace $S$ is closed in $L^1(\RR^3)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subspace $S$ is closed in $L^1(\RR^3)$.
+
+
+::: pf-proof
+
 By definition,
 $$
 S=\ker T.
 $$
 The kernel of the continuous linear functional from step <1>1 is closed.
+
 :::
 
-<1>3. Every compactly supported $h\in L^2(\RR^3)$ can be approximated arbitrarily closely in $L^2$ by an element of $S\cap L^2(\RR^3)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every compactly supported $h\in L^2(\RR^3)$ can be approximated arbitrarily closely in $L^2$ by an element of $S\cap L^2(\RR^3)$.
+
+
+::: pf-proof
+
 Because $h$ has compact support, $h\in L^1(\RR^3)$ by Cauchy--Schwarz. Set
 $$
 I\coloneqq\int_{\RR^3}h(x)\,dx.
@@ -93,11 +112,18 @@ $$
 \frac{\abs I}{\sqrt V}
 <\varepsilon.
 $$
+
 :::
 
-<1>4. The subspace $S\cap L^2(\RR^3)$ is dense in $L^2(\RR^3)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subspace $S\cap L^2(\RR^3)$ is dense in $L^2(\RR^3)$.
+
+
+::: pf-proof
+
 Let $f\in L^2(\RR^3)$ and $\varepsilon>0$. Compactly supported $L^2$ functions are dense in $L^2$, so choose a compactly supported $h\in L^2$ with
 $$
 \norm{f-h}_{L^2}<\frac{\varepsilon}{2}.
@@ -114,11 +140,15 @@ $$
 +\norm{h-g}_{L^2}
 <\varepsilon.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>4 proves part (b).
+
 :::
+
 :::

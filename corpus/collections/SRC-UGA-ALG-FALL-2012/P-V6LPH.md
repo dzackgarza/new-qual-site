@@ -25,34 +25,57 @@ b. Give all possible presentations and relations for $G$.
 c. Determine how many groups of order 30 there are up to isomorphism.
 :::
 
-::: {.solution}
-<1>1. The group $G$ contains normal subgroups of orders $3$, $5$, and $15$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The group $G$ contains normal subgroups of orders $3$, $5$, and $15$.
+
+
+::: pf-proof
+
 By Sylow's theorems, $n_3$ is $1$ or $10$, and $n_5$ is $1$ or $6$. If both were greater than one, distinct Sylow subgroups would contribute $10\cdot2+6\cdot4=44$ nonidentity elements, impossible in a group of order $30$. Therefore a Sylow $3$- or $5$-subgroup $P$ is normal. Its product with a Sylow subgroup for the other odd prime is a subgroup $H$ of order $15$. Sylow's theorems inside $H$ give unique Sylow subgroups of orders $3$ and $5$, so $H\cong C_3\times C_5=C_{15}$. Since $[G:H]=2$, $H$ is normal. Its unique subgroups of orders $3$ and $5$ are characteristic in $H$, hence normal in $G$.
+
 :::
 
-<1>2. Every group of order $30$ has a presentation
+:::
+
+::: pf-step
+
+Every group of order $30$ has a presentation
 \[
 \boxed{G_a=\langle r,s\mid r^{15}=s^2=1,\ srs^{-1}=r^a\rangle,\quad a\in\{1,4,11,14\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, choose $H=\langle r\rangle\trianglelefteq G$ of order $15$. Cauchy's theorem gives an involution $s\in G$ and $H\cap\langle s\rangle=1$, so $G=H\rtimes\langle s\rangle$. Conjugation by $s$ maps $r$ to $r^a$ for a unit $a\bmod15$. Since $s^2=1$, one has $a^2\equiv1\pmod{15}$; equivalently $a\equiv\pm1\pmod3$ and $a\equiv\pm1\pmod5$. The four solutions are $1,4,11,14$. Conversely each such action defines a semidirect product of order $30$ with the displayed presentation.
+
 :::
 
-<1>3. The number of isomorphism classes of groups of order $30$ is
+:::
+
+::: pf-step
+
+The number of isomorphism classes of groups of order $30$ is
 \[
 \boxed{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives at most four. In $G_a$, the elements outside the odd-order subgroup $\langle r\rangle$ are $sr^k$, and $(sr^k)^2=r^{(a+1)k}$. Thus the number of involutions is $\gcd(a+1,15)$, equal to $1$, $5$, $3$, or $15$ for $a=1,4,11,14$, respectively. Distinct involution counts distinguish these groups, so all four isomorphism classes occur. They are $C_{30}$, $C_3\times D_{10}$, $C_5\times S_3$, and $D_{30}$, with the subscripts on $D$ indicating group orders.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 establish parts (a)--(c), respectively.
+
 :::
+
 :::

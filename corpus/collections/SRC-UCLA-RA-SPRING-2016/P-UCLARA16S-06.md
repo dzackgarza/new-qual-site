@@ -24,7 +24,6 @@ Suppose that $\{\phi_n\}$ is an orthonormal system of continuous functions in $L
 prove that $S$ is finite dimensional.
 :::
 
-::: {.solution}
 Choose $M<\infty$ such that
 \[
 \|f\|_\infty
@@ -34,14 +33,20 @@ M\|f\|_2
 (f\in S).
 \]
 
-<1>1. For every positive integer $N$ and every $x\in[0,1]$,
+::: pf
+
+::: pf-step
+
+For every positive integer $N$ and every $x\in[0,1]$,
 \[
 \sum_{n=1}^N|\phi_n(x)|^2
 \le
 M^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $N$ and $x$. For arbitrary scalars $a_1,\dots,a_N$, set
 \[
 f_a
@@ -79,11 +84,18 @@ and using the Euclidean dual-norm identity yields
 \le M.
 \]
 Squaring proves the claim.
+
 :::
 
-<1>2. Every finite orthonormal subfamily of $\{\phi_n\}$ has cardinality at most $M^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every finite orthonormal subfamily of $\{\phi_n\}$ has cardinality at most $M^2$.
+
+
+::: pf-proof
+
 Integrating the inequality from step <1>1 over $[0,1]$ and using Tonelli's theorem,
 \[
 \begin{aligned}
@@ -99,23 +111,41 @@ N
 \end{aligned}
 \]
 Thus no finite orthonormal subfamily can contain more than $M^2$ elements.
+
 :::
 
-<1>3. The orthonormal system $\{\phi_n\}$ is finite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The orthonormal system $\{\phi_n\}$ is finite.
+
+
+::: pf-proof
+
 If the system were infinite, then for every positive integer $N$ it would contain $N$ distinct elements. Choosing an integer $N>M^2$ would contradict step <1>2.
+
 :::
 
-<1>4. $S$ is finite dimensional.
+:::
 
-::: {.proof}
+::: pf-step
+
+$S$ is finite dimensional.
+
+
+::: pf-proof
+
 By step <1>3 there are only finitely many functions in the orthonormal system. Their span is therefore finite dimensional, hence closed in $L^2([0,1])$. Since $S$ is defined as the closure of that span, $S$ equals the span itself and is finite dimensional.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the desired conclusion.
+
 :::
+
 :::

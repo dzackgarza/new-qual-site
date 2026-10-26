@@ -28,7 +28,6 @@ Let $\mathcal{H}$ be a separable infinite-dimensional Hilbert space and assume t
 (b) Assume that we only have $\sum_{n=1}^{\infty} \|f_n - e_n\|^2 < \infty$. Prove that it is still true that $(e_n)$ is complete.
 :::
 
-::: {.solution}
 Let
 \[
 F:\ell^2(\mathbb N)\to\mathcal H,
@@ -59,13 +58,24 @@ Assume
 \sum_{n=1}^\infty \|f_n-e_n\|^2<1.
 \]
 
-<1>1. Suppose, toward a contradiction, that \((e_n)\) is not complete.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Suppose, toward a contradiction, that \((e_n)\) is not complete.
+
+
+::: pf-proof
+
 Then its closed linear span is a proper closed subspace of \(\mathcal H\).
+
 :::
 
-<1>2. There exists a unit vector
+:::
+
+::: pf-step
+
+There exists a unit vector
 \[
 x\in\mathcal H
 \]
@@ -75,15 +85,22 @@ such that
 \]
 for every \(n\).
 
-::: {.proof}
+
+::: pf-proof
+
 Take a nonzero vector in the orthogonal complement of
 \[
 \overline{\operatorname{span}}\{e_n\}
 \]
 and normalize it.
+
 :::
 
-<1>3. Since \((f_n)\) is a complete orthonormal system, Parseval's identity gives
+:::
+
+::: pf-step
+
+Since \((f_n)\) is a complete orthonormal system, Parseval's identity gives
 \[
 \boxed{
 1=\|x\|^2
@@ -92,25 +109,39 @@ and normalize it.
 |\langle x,f_n\rangle|^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Parseval to the orthonormal basis \((f_n)\).
+
 :::
 
-<1>4. For every \(n\),
+:::
+
+::: pf-step
+
+For every \(n\),
 \[
 \langle x,f_n\rangle
 =
 \langle x,f_n-e_n\rangle.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \langle x,e_n\rangle=0.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 |\langle x,f_n\rangle|
 \le
@@ -120,11 +151,18 @@ By step <1>2,
 \|f_n-e_n\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>4, Cauchy--Schwarz, and \(\|x\|=1\).
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 1
 =
@@ -136,36 +174,42 @@ Use step <1>4, Cauchy--Schwarz, and \(\|x\|=1\).
 <1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>3 and <1>5 and the hypothesis.
+
 :::
 
-<1>7. This contradiction shows that
+:::
+
+::: pf-step
+
+This contradiction shows that
 \[
 \boxed{(e_n)\text{ is complete}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption in step <1>1 is impossible.
+
 :::
 
-## Part (b)
+:::
 
-Assume now only that
-\[
-\sum_{n=1}^\infty
-\|f_n-e_n\|^2
-<
-\infty.
-\]
+::: pf-step
 
-<1>8. The operator
+The operator
 \[
 K=E-F:\ell^2\to\mathcal H
 \]
 is Hilbert--Schmidt.
 
-::: {.proof}
+
+::: pf-proof
+
 Let \((\delta_n)\) be the standard orthonormal basis of \(\ell^2\). Then
 \[
 K\delta_n
@@ -183,15 +227,27 @@ Therefore
 \infty.
 \]
 This is exactly the Hilbert--Schmidt condition.
+
 :::
 
-<1>9. Hence \(K\) is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence \(K\) is compact.
+
+
+::: pf-proof
+
 Every Hilbert--Schmidt operator between Hilbert spaces is compact.
+
 :::
 
-<1>10. Define
+:::
+
+::: pf-step
+
+Define
 \[
 A=F^{-1}E:\ell^2\to\ell^2.
 \]
@@ -202,7 +258,9 @@ A-I=F^{-1}(E-F)}
 \]
 is compact.
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(F\) is unitary,
 \[
 A-I
@@ -212,11 +270,18 @@ F^{-1}E-F^{-1}F
 F^{-1}(E-F).
 \]
 The operator \(E-F\) is compact by step <1>9, and composition with the bounded operator \(F^{-1}\) preserves compactness.
+
 :::
 
-<1>11. The operator \(A\) is an isometry.
+:::
 
-::: {.proof}
+::: pf-step
+
+The operator \(A\) is an isometry.
+
+
+::: pf-proof
+
 For \(u\in\ell^2\),
 \[
 \|Au\|
@@ -228,9 +293,14 @@ For \(u\in\ell^2\),
 \|u\|,
 \]
 because \(F^{-1}\) is unitary and \(E\) is an isometry.
+
 :::
 
-<1>12. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\ker A=\{0\}}
 \]
@@ -239,7 +309,9 @@ and
 \boxed{\operatorname{ran}A\text{ is closed}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An isometry is injective. Also, if \(Au_j\) converges, then
 \[
 \|u_j-u_k\|
@@ -251,15 +323,27 @@ so \((u_j)\) is Cauchy and converges to some \(u\), giving
 Au_j\to Au.
 \]
 Thus the range is closed.
+
 :::
 
-<1>13. Since \(A=I+\text{compact}\), \(A\) is Fredholm of index \(0\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Since \(A=I+\text{compact}\), \(A\) is Fredholm of index \(0\).
+
+
+::: pf-proof
+
 The identity operator is Fredholm with index \(0\), and compact perturbations preserve Fredholmness and the Fredholm index.
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \dim\ker A
 -
@@ -268,50 +352,85 @@ The identity operator is Fredholm with index \(0\), and compact perturbations pr
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the Fredholm index, using step <1>13.
+
 :::
 
-<1>15. Since \(\ker A=\{0\}\),
+:::
+
+::: pf-step
+
+Since \(\ker A=\{0\}\),
 \[
 \boxed{
 \operatorname{codim}\operatorname{ran}A=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 \dim\ker A=0
 \]
 from step <1>12 into the index formula in step <1>14.
+
 :::
 
-<1>16. Because \(\operatorname{ran}A\) is closed and has codimension \(0\),
+:::
+
+::: pf-step
+
+Because \(\operatorname{ran}A\) is closed and has codimension \(0\),
 \[
 \boxed{\operatorname{ran}A=\ell^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A closed subspace of codimension \(0\) is the whole Hilbert space.
+
 :::
 
-<1>17. Hence \(A\) is unitary.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence \(A\) is unitary.
+
+
+::: pf-proof
+
 By step <1>11, \(A\) is an isometry, and by step <1>16 it is surjective.
+
 :::
 
-<1>18. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 E=FA
 \]
 is surjective onto \(\mathcal H\).
 
-::: {.proof}
+
+::: pf-proof
+
 Both \(F\) and \(A\) are surjective by completeness of \((f_n)\) and step <1>17.
+
 :::
 
-<1>19. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \overline{\operatorname{span}}\{e_n:n\ge1\}
@@ -319,19 +438,32 @@ Both \(F\) and \(A\) are surjective by completeness of \((f_n)\) and step <1>17.
 \mathcal H}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The range of the synthesis isometry \(E\) is precisely the closed span of the orthonormal system \((e_n)\). Step <1>18 says this range is all of \(\mathcal H\).
+
 :::
 
-<1>20. Therefore \((e_n)\) is complete.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \((e_n)\) is complete.
+
+
+::: pf-proof
+
 This is exactly step <1>19.
+
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>20 proves part (b).
+
 :::
+
 :::

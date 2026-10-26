@@ -26,7 +26,6 @@ Find the matrix, in the standard basis of $\mathbb R^4$, for either rotation by 
 You need not multiply the matrices out, but you must compute any inverses that occur.
 :::
 
-::: {.solution}
 Let
 \[
 a=(1,1,1,1),
@@ -34,7 +33,11 @@ a=(1,1,1,1),
 b=(1,1,1,0).
 \]
 
-<1>1. The plane perpendicular to
+::: pf
+
+::: pf-step
+
+The plane perpendicular to
 \[
 \operatorname{span}\{a,b\}
 \]
@@ -47,7 +50,9 @@ x_1+x_2+x_3=0
 \right\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A vector
 \[
 x=(x_1,x_2,x_3,x_4)
@@ -74,9 +79,14 @@ The remaining condition is
 \[
 x_1+x_2+x_3=0.
 \]
+
 :::
 
-<1>2. An orthonormal basis of $P$ is
+:::
+
+::: pf-step
+
+An orthonormal basis of $P$ is
 \[
 u_1
 =
@@ -87,7 +97,9 @@ u_2
 \frac1{\sqrt6}(1,1,-2,0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both vectors lie in $P$ because their fourth coordinates vanish and the sums of their first three coordinates are zero.
 Also
 \[
@@ -101,9 +113,14 @@ u_1\cdot u_2
 =0.
 \]
 Since $P$ has dimension $2$, they form an orthonormal basis.
+
 :::
 
-<1>3. An orthonormal basis of
+:::
+
+::: pf-step
+
+An orthonormal basis of
 \[
 \operatorname{span}\{a,b\}
 \]
@@ -118,7 +135,9 @@ u_4
 (0,0,0,1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The vector $u_3$ is the normalized vector $b$.
 Also
 \[
@@ -126,15 +145,22 @@ a-b=(0,0,0,1)=u_4.
 \]
 Thus $u_3,u_4$ span the same subspace as $a,b$.
 They are orthonormal because $u_3$ has fourth coordinate zero and $u_4$ has only fourth coordinate nonzero.
+
 :::
 
-<1>4. The ordered list
+:::
+
+::: pf-step
+
+The ordered list
 \[
 u_1,u_2,u_3,u_4
 \]
 is an orthonormal basis of $\mathbb R^4$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3, the first two vectors form an orthonormal basis of
 \[
 \operatorname{span}\{a,b\}^{\perp},
@@ -144,9 +170,14 @@ and the last two form an orthonormal basis of
 \operatorname{span}\{a,b\}.
 \]
 The two subspaces are orthogonal complements, so the full list is an orthonormal basis of $\mathbb R^4$.
+
 :::
 
-<1>5. In the basis from step <1>4, one rotation through angle $\theta$ in the perpendicular plane, fixing
+:::
+
+::: pf-step
+
+In the basis from step <1>4, one rotation through angle $\theta$ in the perpendicular plane, fixing
 \[
 \operatorname{span}\{a,b\}
 \]
@@ -161,7 +192,9 @@ R=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The upper-left block is the standard counterclockwise rotation through angle $\theta$ in the oriented orthonormal basis
 \[
 u_1,u_2
@@ -169,9 +202,14 @@ u_1,u_2
 of the perpendicular plane.
 The last two basis vectors span the subspace to be fixed, so the final block is the identity.
 The opposite choice of orientation replaces $\theta$ by $-\theta$.
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 \[
 Q=
 \begin{pmatrix}
@@ -196,7 +234,9 @@ Q^T=
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $Q$ are the orthonormal basis vectors
 \[
 u_1,u_2,u_3,u_4.
@@ -205,9 +245,14 @@ Hence $Q$ is orthogonal, so
 \[
 Q^{-1}=Q^T.
 \]
+
 :::
 
-<1>7. In the standard basis, the required rotation matrix is
+:::
+
+::: pf-step
+
+In the standard basis, the required rotation matrix is
 \[
 \boxed{
 [T]_{\mathrm{std}}
@@ -216,7 +261,9 @@ QRQ^T
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $Q$ changes coordinates from the basis
 \[
 u_1,u_2,u_3,u_4
@@ -231,11 +278,15 @@ QRQ^{-1}
 QRQ^T.
 \]
 All inverses appearing in this expression were computed explicitly in step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the requested matrix in the standard basis.
+
 :::
+
 :::

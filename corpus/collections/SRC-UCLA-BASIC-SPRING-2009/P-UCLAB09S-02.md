@@ -24,8 +24,11 @@ A=\begin{pmatrix}2&1\\0&\sqrt3\end{pmatrix};
 that is, determine the maximum of $\|Ax\|$ over all unit vectors $x$.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 A^TA
 =
@@ -35,7 +38,9 @@ A^TA
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A=
@@ -78,14 +83,21 @@ A^TA
 \end{pmatrix}.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The eigenvalues of $A^TA$ are
+:::
+
+::: pf-step
+
+The eigenvalues of $A^TA$ are
 \[
 \boxed{6\text{ and }2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 \[
 \begin{aligned}
@@ -102,9 +114,14 @@ The characteristic polynomial is
 (\lambda-6)(\lambda-2).
 \end{aligned}
 \]
+
 :::
 
-<1>3. For every unit vector $x\in\mathbb R^2$,
+:::
+
+::: pf-step
+
+For every unit vector $x\in\mathbb R^2$,
 \[
 \|Ax\|_2^2
 =
@@ -113,7 +130,9 @@ x^TA^TAx
 6.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $A^TA$ is real symmetric.
 By the spectral theorem, it has an orthonormal eigenbasis, and its Rayleigh quotient
 \[
@@ -134,11 +153,18 @@ Since
 x^TA^TAx,
 \]
 the claimed inequality follows.
+
 :::
 
-<1>4. Equality in step <1>3 is attained.
+:::
 
-::: {.proof}
+::: pf-step
+
+Equality in step <1>3 is attained.
+
+
+::: pf-proof
+
 For
 \[
 v=
@@ -171,14 +197,21 @@ Hence
 \[
 \|Av\|_2=\sqrt6.
 \]
+
 :::
 
-<1>5. Thus the operator norm is
+:::
+
+::: pf-step
+
+Thus the operator norm is
 \[
 \boxed{\|A\|_{\mathrm{op}}=\sqrt6}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that
 \[
 \|Ax\|_2\le\sqrt6
@@ -186,11 +219,15 @@ Step <1>3 shows that
 for every unit vector $x$.
 Step <1>4 gives a unit vector for which equality holds.
 Therefore the maximum is exactly $\sqrt6$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required value of the operator norm.
+
 :::
+
 :::

@@ -32,7 +32,6 @@ If $f$ has continuous derivatives up to order three, prove that
 where $C$ does not depend on $f$.
 :::
 
-::: {.solution}
 Set
 \[
 m=\frac{a+b}{2},
@@ -48,7 +47,11 @@ Also set
 M=\max_{x\in[a,b]}|f^{(3)}(x)|.
 \]
 
-<1>1. For every $t\in[-h,h]$, Taylor's theorem at $m$ gives
+::: pf
+
+::: pf-step
+
+For every $t\in[-h,h]$, Taylor's theorem at $m$ gives
 \[
 f(m+t)
 =
@@ -65,7 +68,9 @@ and
 \boxed{|R(t)|\le\frac{M}{6}|t|^3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ has continuous derivatives through order $3$, Taylor's theorem with Lagrange remainder gives
 \[
 f(m+t)
@@ -81,9 +86,14 @@ Therefore
 \le
 \frac16M|t|^3.
 \]
+
 :::
 
-<1>2. Simpson's rule is exact for the quadratic polynomial $p$:
+:::
+
+::: pf-step
+
+Simpson's rule is exact for the quadratic polynomial $p$:
 \[
 \int_{-h}^{h}p(t)\,dt
 =
@@ -95,7 +105,9 @@ Therefore
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 p(t)=\alpha+\beta t+\gamma t^2.
@@ -139,9 +151,14 @@ Hence
 \end{aligned}
 \]
 This agrees with the integral.
+
 :::
 
-<1>3. The quadrature error for $f$ equals the quadrature error for the remainder $R$:
+:::
+
+::: pf-step
+
+The quadrature error for $f$ equals the quadrature error for the remainder $R$:
 \[
 \begin{aligned}
 \int_a^b f(x)\,dx-S_{[a,b]}f
@@ -157,7 +174,9 @@ This agrees with the integral.
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 After the change of variables
 \[
 x=m+t,
@@ -171,9 +190,14 @@ Since
 R(0)=0
 \]
 by step <1>1, this term will vanish in the estimate below.
+
 :::
 
-<1>4. The integral remainder satisfies
+:::
+
+::: pf-step
+
+The integral remainder satisfies
 \[
 \left|
 \int_{-h}^{h}R(t)\,dt
@@ -182,7 +206,9 @@ by step <1>1, this term will vanish in the estimate below.
 \frac{M}{12}h^4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \begin{aligned}
@@ -212,9 +238,14 @@ Thus
 \le
 \frac{M}{12}h^4.
 \]
+
 :::
 
-<1>5. The Simpson remainder satisfies
+:::
+
+::: pf-step
+
+The Simpson remainder satisfies
 \[
 \left|
 2h
@@ -226,7 +257,9 @@ Thus
 \frac{M}{9}h^4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 |R(\pm h)|
@@ -256,9 +289,14 @@ Since
 2h\cdot\frac16=\frac h3,
 \]
 this is the displayed bound.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \left|
 \int_a^b f(x)\,dx-S_{[a,b]}f
@@ -267,7 +305,9 @@ this is the displayed bound.
 \frac7{36}Mh^4.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the triangle inequality to the error identity in step <1>3.
 Use the estimates from steps <1>4--<1>5:
 \[
@@ -284,9 +324,14 @@ Mh^4
 =
 \frac7{36}Mh^4.
 \]
+
 :::
 
-<1>7. Since
+:::
+
+::: pf-step
+
+Since
 \[
 h=\frac{b-a}{2},
 \]
@@ -303,7 +348,9 @@ one obtains
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 h^4
@@ -323,11 +370,15 @@ Thus the estimate holds with the universal constant
 \[
 \boxed{C=\frac7{576}}.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required Simpson-rule error bound.
+
 :::
+
 :::

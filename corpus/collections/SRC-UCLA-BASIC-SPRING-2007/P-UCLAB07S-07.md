@@ -29,13 +29,16 @@ prove that if $x_0$ is sufficiently close to $x^*$, then there is a constant $C$
 for all $n$.
 :::
 
-::: {.solution}
 Let
 \[
 M=\sup_{x\in\mathbb R}|f''(x)|<\infty.
 \]
 
-<1>1. There exists $\delta>0$ such that
+::: pf
+
+::: pf-step
+
+There exists $\delta>0$ such that
 \[
 |f'(x)|\ge \frac{|f'(x^*)|}{2}
 \]
@@ -44,7 +47,9 @@ whenever
 |x-x^*|\le\delta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f'$ is continuous and
 \[
 f'(x^*)\ne0,
@@ -69,9 +74,14 @@ Then
 >
 \frac{|f'(x^*)|}{2}.
 \]
+
 :::
 
-<1>2. For every $x$ with
+:::
+
+::: pf-step
+
+For every $x$ with
 \[
 |x-x^*|\le\delta,
 \]
@@ -85,12 +95,19 @@ f(x)+f'(x)(x^*-x)
 \]
 for some $\xi$ between $x$ and $x^*$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Taylor's theorem with Lagrange remainder to $f$ centered at $x$ and evaluated at $x^*$.
 The hypotheses hold because $f\in C^2(\mathbb R)$.
+
 :::
 
-<1>3. Since
+:::
+
+::: pf-step
+
+Since
 \[
 f(x^*)=0,
 \]
@@ -103,7 +120,9 @@ F(x)-x^*
 \]
 for some $\xi$ between $x$ and $x^*$.
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>2 and
 \[
 f(x^*)=0,
@@ -146,9 +165,14 @@ x-x^*
 (x-x^*)^2.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For all $x$ with
+:::
+
+::: pf-step
+
+For all $x$ with
 \[
 |x-x^*|\le\delta,
 \]
@@ -165,7 +189,9 @@ with
 C=\frac{M}{|f'(x^*)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 |F(x)-x^*|
@@ -190,9 +216,14 @@ Hence
 \frac{M}{|f'(x^*)|}
 =C.
 \]
+
 :::
 
-<1>5. Shrink $\delta$ if necessary so that
+:::
+
+::: pf-step
+
+Shrink $\delta$ if necessary so that
 \[
 C\delta\le1.
 \]
@@ -205,7 +236,9 @@ implies
 |F(x)-x^*|\le\delta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 |F(x)-x^*|
@@ -218,9 +251,14 @@ C\delta|x-x^*|
 \le
 \delta.
 \]
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 |x_0-x^*|\le\delta,
 \]
@@ -229,7 +267,9 @@ then every Newton iterate $x_n$ is defined and satisfies
 |x_n-x^*|\le\delta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction.
 The assertion holds for $n=0$ by hypothesis.
 Suppose
@@ -249,9 +289,14 @@ Step <1>5 then gives
 \le
 \delta.
 \]
+
 :::
 
-<1>7. For every $n\ge1$,
+:::
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 \boxed{
 |x_n-x^*|
@@ -260,7 +305,9 @@ C|x_{n-1}-x^*|^2
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, every iterate
 \[
 x_{n-1}
@@ -278,11 +325,15 @@ giving
 \le
 C|x_{n-1}-x^*|^2.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required quadratic error estimate for all Newton iterates starting sufficiently close to the simple root.
+
 :::
+
 :::

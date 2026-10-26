@@ -23,7 +23,6 @@ Assume that $f(z)$ is holomorphic on $|z|<2$. Show that
 \]
 :::
 
-::: {.solution}
 Let
 \[
 M
@@ -32,7 +31,11 @@ M
 \left|f(z)-\frac1z\right|.
 \]
 
-<1>1. If $\gamma$ is the positively oriented unit circle, then
+::: pf
+
+::: pf-step
+
+If $\gamma$ is the positively oriented unit circle, then
 \[
 \int_\gamma
 \left(f(z)-\frac1z\right)\,dz
@@ -40,7 +43,9 @@ M
 -2\pi i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is holomorphic on the disk $|z|<2$, Cauchy's theorem gives
 \[
 \int_\gamma f(z)\,dz=0.
@@ -50,16 +55,23 @@ Also,
 \int_\gamma\frac{dz}{z}=2\pi i.
 \]
 Subtracting gives the asserted value.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 2\pi
 \le
 2\pi M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Taking absolute values in step <1>1 and applying the ML inequality,
 \[
 \begin{aligned}
@@ -77,9 +89,14 @@ Taking absolute values in step <1>1 and applying the ML inequality,
 2\pi M.
 \end{aligned}
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \max_{|z|=1}
@@ -87,13 +104,19 @@ Taking absolute values in step <1>1 and applying the ML inequality,
 \ge1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the inequality in step <1>2 by $2\pi>0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required estimate.
+
 :::
+
 :::

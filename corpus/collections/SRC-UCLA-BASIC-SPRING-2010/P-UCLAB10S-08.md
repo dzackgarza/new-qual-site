@@ -25,10 +25,15 @@ B_\varepsilon(x)=\{y\in X:d(x,y)<\varepsilon\}.
 Prove that $K$ is compact.
 :::
 
-::: {.solution}
-<1>1. Every Cauchy sequence in $K$ converges to a point of $K$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every Cauchy sequence in $K$ converges to a point of $K$.
+
+
+::: pf-proof
+
 Let $(x_n)$ be Cauchy in $K$.
 Since $K\subseteq X$ and $X$ is complete, there exists $x\in X$ such that
 \[
@@ -36,11 +41,18 @@ x_n\to x.
 \]
 Because $K$ is closed and every $x_n\in K$, the limit belongs to $K$.
 Thus $K$ is complete.
+
 :::
 
-<1>2. Every sequence in $K$ has a Cauchy subsequence.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every sequence in $K$ has a Cauchy subsequence.
+
+
+::: pf-proof
+
 Let $(x_n)$ be a sequence in $K$.
 
 Cover $K$ by finitely many balls of radius
@@ -81,19 +93,33 @@ Given $\varepsilon>0$, choose $j$ so that
 \]
 Then all later terms are pairwise within $\varepsilon$.
 Thus $(y_j)$ is Cauchy.
+
 :::
 
-<1>3. Every sequence in $K$ has a convergent subsequence with limit in $K$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every sequence in $K$ has a convergent subsequence with limit in $K$.
+
+
+::: pf-proof
+
 By step <1>2, every sequence has a Cauchy subsequence.
 By step <1>1, every Cauchy sequence in $K$ converges to a point of $K$.
 Therefore $K$ is sequentially compact.
+
 :::
 
-<1>4. A sequentially compact metric space is totally bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+A sequentially compact metric space is totally bounded.
+
+
+::: pf-proof
+
 Suppose a metric space $Y$ were sequentially compact but not totally bounded.
 Then for some $\varepsilon>0$, no finite collection of $\varepsilon$-balls covers $Y$.
 Choose $y_1\in Y$.
@@ -117,11 +143,18 @@ d(y_i,y_j)\ge\varepsilon
 for all $i\ne j$.
 Hence $(y_j)$ has no Cauchy subsequence and therefore no convergent subsequence, contradicting sequential compactness.
 Thus $Y$ is totally bounded.
+
 :::
 
-<1>5. Every sequentially compact metric space is compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every sequentially compact metric space is compact.
+
+
+::: pf-proof
+
 Let $\mathcal U$ be an open cover of a sequentially compact metric space $Y$.
 Suppose no finite subcover exists.
 
@@ -171,20 +204,31 @@ By step <1>4, $Y$ is totally bounded, so finitely many balls of radius $\delta/2
 Each such ball has diameter less than $\delta$, hence is contained in some member of $\mathcal U$.
 Choosing one member of $\mathcal U$ for each ball gives a finite subcover.
 Therefore $Y$ is compact.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{K\text{ is compact}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives sequential compactness of $K$, and step <1>5 gives compactness.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

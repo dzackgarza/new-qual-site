@@ -25,8 +25,11 @@ Prove that
 defines an inner product on $V$, and exhibit an orthonormal basis.
 :::
 
-::: {.solution}
-<1>1. The formula
+::: pf
+
+::: pf-step
+
+The formula
 \[
 \langle A,B\rangle
 =
@@ -34,7 +37,9 @@ defines an inner product on $V$, and exhibit an orthonormal basis.
 \]
 is bilinear in $A$ and $B$.
 
-::: {.proof}
+
+::: pf-proof
+
 Matrix multiplication is bilinear, transpose is linear, and trace is linear.
 Thus for scalars $\alpha,\beta$ and matrices $A_1,A_2,B$,
 \[
@@ -50,16 +55,23 @@ Thus for scalars $\alpha,\beta$ and matrices $A_1,A_2,B$,
 \end{aligned}
 \]
 The same argument applies in the second variable.
+
 :::
 
-<1>2. The form is symmetric:
+:::
+
+::: pf-step
+
+The form is symmetric:
 \[
 \langle A,B\rangle
 =
 \langle B,A\rangle.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using invariance of trace under transpose,
 \[
 \begin{aligned}
@@ -74,16 +86,23 @@ Using invariance of trace under transpose,
 \langle B,A\rangle.
 \end{aligned}
 \]
+
 :::
 
-<1>3. For every $A=(a_{ij})\in V$,
+:::
+
+::: pf-step
+
+For every $A=(a_{ij})\in V$,
 \[
 \langle A,A\rangle
 =
 \frac12\sum_{i,j=1}^3 a_{ij}^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $(i,i)$ entry of
 \[
 AA^T
@@ -99,11 +118,18 @@ Hence
 \sum_{i,j=1}^3a_{ij}^2.
 \]
 Multiply by $1/2$.
+
 :::
 
-<1>4. The form is positive definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The form is positive definite.
+
+
+::: pf-proof
+
 Step <1>3 gives
 \[
 \langle A,A\rangle\ge0.
@@ -113,9 +139,14 @@ Equality holds exactly when every entry $a_{ij}$ is zero, that is, exactly when
 A=0.
 \]
 Thus the form is positive definite.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \langle A,B\rangle
@@ -125,11 +156,18 @@ Thus the form is positive definite.
 \]
 defines an inner product on $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1, <1>2, and <1>4 verify bilinearity, symmetry, and positive definiteness.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 E_1=
 \begin{pmatrix}
@@ -158,7 +196,9 @@ E_1,E_2,E_3
 \]
 form a basis of $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every real $3\times3$ skew-symmetric matrix has the form
 \[
 \begin{pmatrix}
@@ -170,11 +210,18 @@ Every real $3\times3$ skew-symmetric matrix has the form
 aE_1+bE_2+cE_3.
 \]
 This representation is unique, so the three matrices form a basis.
+
 :::
 
-<1>7. The basis in step <1>6 is orthonormal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The basis in step <1>6 is orthonormal.
+
+
+::: pf-proof
+
 Each $E_i$ has exactly two nonzero entries, namely $1$ and $-1$.
 Hence step <1>3 gives
 \[
@@ -196,9 +243,14 @@ so
 \[
 \langle E_i,E_j\rangle=0.
 \]
+
 :::
 
-<1>8. Thus an orthonormal basis is
+:::
+
+::: pf-step
+
+Thus an orthonormal basis is
 \[
 \boxed{
 \left\{
@@ -221,13 +273,19 @@ so
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from steps <1>6--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the inner-product assertion, and step <1>8 gives an explicit orthonormal basis.
+
 :::
+
 :::

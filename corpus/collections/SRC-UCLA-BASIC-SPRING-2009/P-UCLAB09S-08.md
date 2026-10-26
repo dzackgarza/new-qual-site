@@ -35,8 +35,11 @@ Check that if $C$ is symmetric, then $\Phi_C$ is self-adjoint.
 (c) Prove that for every $C$, the map $\Phi_C$ is not onto.
 :::
 
-::: {.solution}
-<1>1. For matrices
+::: pf
+
+::: pf-step
+
+For matrices
 \[
 A=(a_{ij}),
 \qquad
@@ -49,7 +52,9 @@ one has
 \sum_{i,j=1}^n a_{ij}b_{ij}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $i$th diagonal entry of
 \[
 AB^T
@@ -65,9 +70,14 @@ a_{ij}(B^T)_{ji}
 a_{ij}b_{ij}.
 \]
 Summing over $i$ gives the formula.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \langle A,B\rangle
 =
@@ -75,7 +85,9 @@ Summing over $i$ gives the formula.
 \]
 is bilinear and symmetric.
 
-::: {.proof}
+
+::: pf-proof
+
 Bilinearity follows from bilinearity of matrix multiplication and linearity of trace and transpose.
 By step <1>1,
 \[
@@ -87,9 +99,14 @@ By step <1>1,
 =
 \langle B,A\rangle.
 \]
+
 :::
 
-<1>3. For every matrix $A$,
+:::
+
+::: pf-step
+
+For every matrix $A$,
 \[
 \langle A,A\rangle
 =
@@ -101,12 +118,19 @@ with equality if and only if
 A=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 with $B=A$.
 The sum of squares is nonnegative and vanishes exactly when every entry $a_{ij}$ is zero.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \langle A,B\rangle
@@ -119,11 +143,18 @@ defines an inner product on
 M_{n\times n}(\mathbb R).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>3 verify bilinearity, symmetry, and positive definiteness.
+
 :::
 
-<1>5. For all matrices $A,B$,
+:::
+
+::: pf-step
+
+For all matrices $A,B$,
 \[
 \langle \Phi_C(A),B\rangle
 =
@@ -133,7 +164,9 @@ A(B^TC-CB^T)
 \bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \Phi_C(A)=CA-AC.
@@ -168,9 +201,14 @@ Thus
 A(B^TC-CB^T)
 \bigr).
 \]
+
 :::
 
-<1>6. The adjoint of $\Phi_C$ is
+:::
+
+::: pf-step
+
+The adjoint of $\Phi_C$ is
 \[
 \boxed{
 \Phi_C^*(B)
@@ -181,7 +219,9 @@ C^TB-BC^T
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The adjoint is characterized by
 \[
 \langle\Phi_C(A),B\rangle
@@ -206,11 +246,18 @@ Transposing gives
 =
 C^TB-BC^T.
 \]
+
 :::
 
-<1>7. If $C$ is symmetric, then $\Phi_C$ is self-adjoint.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $C$ is symmetric, then $\Phi_C$ is self-adjoint.
+
+
+::: pf-proof
+
 If
 \[
 C^T=C,
@@ -227,14 +274,21 @@ Thus
 \[
 \boxed{\Phi_C\text{ is self-adjoint}.}
 \]
+
 :::
 
-<1>8. For every $A$,
+:::
+
+::: pf-step
+
+For every $A$,
 \[
 \operatorname{tr}\Phi_C(A)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using cyclicity of trace,
 \[
 \begin{aligned}
@@ -249,11 +303,18 @@ Using cyclicity of trace,
 0.
 \end{aligned}
 \]
+
 :::
 
-<1>9. The map $\Phi_C$ is not onto.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi_C$ is not onto.
+
+
+::: pf-proof
+
 By step <1>8,
 \[
 \operatorname{im}\Phi_C
@@ -273,11 +334,15 @@ Therefore
 \[
 \boxed{\Phi_C\text{ is not surjective}.}
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), steps <1>6--<1>7 prove part (b), and step <1>9 proves part (c).
+
 :::
+
 :::

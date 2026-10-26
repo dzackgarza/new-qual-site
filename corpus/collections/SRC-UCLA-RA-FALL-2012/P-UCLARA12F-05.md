@@ -27,16 +27,21 @@ Show that if $f_n$ converges almost everywhere to a function $f:\mathbb R^3\to\m
 \]
 :::
 
-::: {.solution}
 Choose $M<\infty$ such that
 $$
 \|f_n\|_{L^2}\le M
 $$
 for every $n$.
 
-<1>1. The almost-everywhere limit $f$ belongs to $L^2(\RR^3)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The almost-everywhere limit $f$ belongs to $L^2(\RR^3)$.
+
+
+::: pf-proof
+
 By Fatou's lemma,
 $$
 \int_{\RR^3}|f|^2
@@ -45,31 +50,50 @@ $$
 \int_{\RR^3}|f_n|^2
 \le M^2.
 $$
+
 :::
 
-<1>2. The sequence $(f_n)$ converges weakly to $f$ in $L^2(\RR^3)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(f_n)$ converges weakly to $f$ in $L^2(\RR^3)$.
+
+
+::: pf-proof
+
 This is exactly the result of `P-UCLARA12F-01` applied with $p=2$: an almost-everywhere convergent sequence that is uniformly bounded in $L^p$, with $1<p<\infty$, converges weakly in $L^p$ to its almost-everywhere limit.
+
 :::
 
-<1>3. For every $n$,
+:::
+
+::: pf-step
+
+For every $n$,
 $$
 |f_n|^2-|f_n-f|^2-|f|^2
 =2f(f_n-f)
 $$
 almost everywhere.
 
-::: {.proof}
+
+::: pf-proof
+
 Since the functions are real-valued,
 $$
 |f_n-f|^2
 =|f_n|^2-2f_nf+|f|^2.
 $$
 Rearranging gives the displayed identity.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \int_{\RR^3}
@@ -77,7 +101,9 @@ $$
 \longrightarrow0.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1 and <1>3,
 $$
 \int_{\RR^3}
@@ -89,11 +115,15 @@ $$
 \int f f_n\to\int f^2,
 $$
 so the right-hand side tends to $0$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

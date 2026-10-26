@@ -36,8 +36,11 @@ The Hardy--Littlewood maximal theorem may be used.
 \]
 :::
 
-::: {.solution}
-<1>1. Fix $s>0$ and define
+::: pf
+
+::: pf-step
+
+Fix $s>0$ and define
 \[
 \widetilde f_s(x)
 \coloneqq
@@ -50,7 +53,9 @@ Then
 \{x:M\widetilde f_s(x)>s/2\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose $Mf(x)>s$. Then there is a ball $B$ centered at $x$ such that
 \[
 \frac1{m(B)}
@@ -82,9 +87,14 @@ Taking the supremum over balls centered at $x$ gives
 \[
 M\widetilde f_s(x)>s/2.
 \]
+
 :::
 
-<1>2. There is a dimensional constant $C_n$ such that
+:::
+
+::: pf-step
+
+There is a dimensional constant $C_n$ such that
 \[
 \boxed{
 m(\{x:Mf(x)>s\})
@@ -94,7 +104,9 @@ m(\{x:Mf(x)>s\})
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 \int_{|f|>s/2}|f|=\infty,
@@ -118,9 +130,14 @@ m(\{M\widetilde f_s>s/2\})\\
 \end{aligned}
 \]
 Absorbing the harmless factor $2$ from the threshold $s/2$ into $C_n$ gives the displayed estimate.
+
 :::
 
-<1>3. For every nonnegative measurable function $H$,
+:::
+
+::: pf-step
+
+For every nonnegative measurable function $H$,
 \[
 \int_{\mathbb R^n}\phi(H(x))\,dx
 =
@@ -130,7 +147,9 @@ m(\{x:H(x)>t\})\,dt,
 \]
 with both sides interpreted in $[0,\infty]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\phi(0)=0$ and $\phi'>0$,
 \[
 \phi(H(x))
@@ -158,9 +177,14 @@ The integrand is nonnegative, so Tonelli's theorem gives
 m(\{H>t\})\,dt.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Applying step <1>3 with $H=Mf$ and then step <1>2 gives
+:::
+
+::: pf-step
+
+Applying step <1>3 with $H=Mf$ and then step <1>2 gives
 \[
 \int_{\mathbb R^n}\phi(Mf(x))\,dx
 \le
@@ -172,7 +196,9 @@ C_n
 \right)dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives
 \[
 \int\phi(Mf)
@@ -181,9 +207,14 @@ Step <1>3 gives
 \phi'(t)m(\{Mf>t\})\,dt.
 \]
 Substitute the estimate from step <1>2 for each $t>0$. Since every quantity is nonnegative, the inequality remains valid even when one or both sides are infinite.
+
 :::
 
-<1>5. The right-hand side in step <1>4 equals
+:::
+
+::: pf-step
+
+The right-hand side in step <1>4 equals
 \[
 C_n
 \int_{\mathbb R^n}
@@ -194,7 +225,9 @@ C_n
 \right)dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand is nonnegative, so Tonelli's theorem permits reversing the order of integration:
 \[
 \begin{aligned}
@@ -213,9 +246,14 @@ The integrand is nonnegative, so Tonelli's theorem permits reversing the order o
 \end{aligned}
 \]
 This is the claimed expression.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int \phi(Mf(x))\,dx
@@ -228,13 +266,19 @@ C_n\int |f(x)|
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

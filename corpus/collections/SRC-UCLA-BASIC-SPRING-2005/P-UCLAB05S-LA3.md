@@ -28,21 +28,33 @@ A=T^*T.
 \]
 :::
 
-::: {.solution}
-<1>1. By the spectral theorem, there are a unitary matrix $U$ and real numbers $\lambda_1,\ldots,\lambda_n$ such that
+::: pf
+
+::: pf-step
+
+By the spectral theorem, there are a unitary matrix $U$ and real numbers $\lambda_1,\ldots,\lambda_n$ such that
 $$
 A=UDU^*,
 \qquad
 D=\operatorname{diag}(\lambda_1,\ldots,\lambda_n).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since $A$ is Hermitian, the spectral theorem for Hermitian matrices gives a unitary basis of eigenvectors. In that basis $A$ is diagonal with real eigenvalues, which is exactly the displayed decomposition.
+
 :::
 
-<1>2. Every eigenvalue $\lambda_i$ is nonnegative.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every eigenvalue $\lambda_i$ is nonnegative.
+
+
+::: pf-proof
+
 Let $u_i$ be a unit eigenvector with eigenvalue $\lambda_i$. Then
 $$
 \langle Au_i,u_i\rangle
@@ -51,9 +63,14 @@ $$
 =\lambda_i.
 $$
 The hypothesis therefore implies $\lambda_i\ge0$.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 $$
 D^{1/2}\coloneqq
 \operatorname{diag}(\sqrt{\lambda_1},\ldots,\sqrt{\lambda_n})
@@ -67,7 +84,9 @@ $$
 \boxed{A=T^*T}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the square roots are real and defined. Since $D^{1/2}$ is Hermitian,
 $$
 T^*=UD^{1/2}.
@@ -80,11 +99,15 @@ T^*T
 =A
 $$
 by step <1>1.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 constructs the required matrix $T$ and verifies the factorization.
+
 :::
+
 :::

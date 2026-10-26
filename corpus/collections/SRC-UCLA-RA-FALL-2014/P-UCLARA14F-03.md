@@ -24,19 +24,24 @@ audit:
 Let $(f_n)$ be a bounded sequence in $L^2(\mathbb{R})$ and suppose that $f_n \to 0$ Lebesgue almost everywhere. Show that $f_n \to 0$ in the weak topology on $L^2(\mathbb{R})$.
 :::
 
-::: {.solution}
 Let
 \[
 M=\sup_n\|f_n\|_2<\infty.
 \]
 
-<1>1. To prove weak convergence to $0$, it suffices to show that for every
+::: pf
+
+::: pf-step
+
+To prove weak convergence to $0$, it suffices to show that for every
 $g\in L^2(\mathbb R)$,
 \[
 \int_{\mathbb R} f_n(x)g(x)\,dx\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the Riesz representation theorem, every bounded linear functional on the
 Hilbert space $L^2(\mathbb R)$ has the form
 \[
@@ -46,14 +51,21 @@ Hilbert space $L^2(\mathbb R)$ has the form
 \]
 for some $g\in L^2(\mathbb R)$. Weak convergence is exactly convergence
 against all such functionals.
+
 :::
 
-<1>2. Fix $h\in L^\infty(\mathbb R)$ with compact support. Then
+:::
+
+::: pf-step
+
+Fix $h\in L^\infty(\mathbb R)$ with compact support. Then
 \[
 \int_{\mathbb R}f_n h\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 E=\operatorname{supp}(h),
@@ -105,12 +117,19 @@ large $n$ this term is less than $\varepsilon/2$. Therefore
 <\varepsilon
 \]
 for all sufficiently large $n$.
+
 :::
 
-<1>3. The space of bounded compactly supported functions is dense in
+:::
+
+::: pf-step
+
+The space of bounded compactly supported functions is dense in
 $L^2(\mathbb R)$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $g\in L^2(\mathbb R)$, define
 \[
 h_k
@@ -128,14 +147,21 @@ pointwise and is dominated by $|g|^2\in L^1$. By dominated convergence,
 \[
 \|g-h_k\|_2\longrightarrow0.
 \]
+
 :::
 
-<1>4. For every $g\in L^2(\mathbb R)$,
+:::
+
+::: pf-step
+
+For every $g\in L^2(\mathbb R)$,
 \[
 \int_{\mathbb R}f_n g\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. If $M=0$, then every $f_n=0$ in $L^2$ and there is
 nothing to prove. Assume $M>0$.
 
@@ -169,21 +195,32 @@ large $n$. Hence
 \left|\int f_n g\right|<\varepsilon
 \]
 eventually.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f_n\rightharpoonup0\text{ in }L^2(\mathbb R)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 proves convergence against every bounded linear functional described
 in step <1>1, which is exactly weak convergence.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

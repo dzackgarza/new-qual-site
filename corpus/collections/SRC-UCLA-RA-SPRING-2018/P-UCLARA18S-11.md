@@ -24,7 +24,6 @@ A_R=\{z\in\mathbb C:1<|z|<R\}.
 Assume there is a conformal (i.e. injective, holomorphic) mapping $F$ from $A_{R_1}$ onto $A_{R_2}$. Prove that $R_1=R_2$.
 :::
 
-::: {.solution}
 Set
 \[
 L_j=\log R_j
@@ -37,7 +36,11 @@ S_j
 \{w\in\mathbb C:0<\operatorname{Re}w<L_j\}.
 \]
 
-<1>1. The exponential maps
+::: pf
+
+::: pf-step
+
+The exponential maps
 \[
 p_j:S_j\longrightarrow A_{R_j},
 \qquad
@@ -50,7 +53,9 @@ w\longmapsto w+2\pi i n,
 n\in\mathbb Z.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 w=x+iy\in S_j,
@@ -63,9 +68,14 @@ lies strictly between \(1\) and \(R_j=e^{L_j}\), so \(p_j(S_j)=A_{R_j}\).
 The strip \(S_j\) is simply connected. Two points in \(S_j\) have the same
 exponential exactly when they differ by \(2\pi i n\), giving the stated deck
 group.
+
 :::
 
-<1>2. The biholomorphism
+:::
+
+::: pf-step
+
+The biholomorphism
 \[
 F:A_{R_1}\to A_{R_2}
 \]
@@ -81,7 +91,9 @@ e^{\widetilde F(w)}
 F(e^w)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The strip \(S_1\) is simply connected, and
 \[
 p_2:S_2\to A_{R_2}
@@ -94,9 +106,14 @@ F\circ p_1:S_1\to A_{R_2}
 after choosing one value of the lift at one base point. Since \(p_2\) is a
 local biholomorphism and \(F\circ p_1\) is holomorphic, the lift is
 holomorphic.
+
 :::
 
-<1>3. There is an integer \(k\) such that
+:::
+
+::: pf-step
+
+There is an integer \(k\) such that
 \[
 \boxed{
 \widetilde F(w+2\pi i)
@@ -105,7 +122,9 @@ holomorphic.
 \qquad(w\in S_1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 e^{w+2\pi i}=e^w,
@@ -128,14 +147,21 @@ Hence
 \]
 The left-hand side is continuous in \(w\), while \(2\pi i\mathbb Z\) is
 discrete. Since \(S_1\) is connected, the integer is constant.
+
 :::
 
-<1>4. In fact,
+:::
+
+::: pf-step
+
+In fact,
 \[
 \boxed{k=\pm1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integer \(k\) is the homomorphism induced by \(F\) on
 \[
 \pi_1(A_{R_1})\cong\mathbb Z
@@ -145,9 +171,14 @@ The integer \(k\) is the homomorphism induced by \(F\) on
 Since \(F\) is a biholomorphism, it is a homeomorphism, so its induced map on
 fundamental groups is an isomorphism. The only automorphisms of
 \(\mathbb Z\) are multiplication by \(1\) and by \(-1\).
+
 :::
 
-<1>5. Write
+:::
+
+::: pf-step
+
+Write
 \[
 \widetilde F(w)
 =
@@ -170,13 +201,20 @@ v(x+i(y+2\pi))
 v(x+iy)+2\pi k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The image of \(\widetilde F\) lies in \(S_2\), so its real part lies between
 \(0\) and \(L_2\). The two periodicity identities are the real and imaginary
 parts of step <1>3.
+
 :::
 
-<1>6. Define the vertical average
+:::
+
+::: pf-step
+
+Define the vertical average
 \[
 m(x)
 =
@@ -191,7 +229,9 @@ Then
 \boxed{m'(x)=k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(\widetilde F\) is holomorphic, so the Cauchy--Riemann
 equations give
 \[
@@ -218,14 +258,21 @@ k
 \end{aligned}
 \]
 by step <1>5.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{L_1\le L_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 0<m(x)<L_2
@@ -250,9 +297,14 @@ Let \(x_1\downarrow0\) and \(x_2\uparrow L_1\). This gives
 \[
 L_1\le L_2.
 \]
+
 :::
 
-<1>8. Applying the same argument to
+:::
+
+::: pf-step
+
+Applying the same argument to
 \[
 F^{-1}:A_{R_2}\to A_{R_1}
 \]
@@ -261,27 +313,43 @@ gives
 \boxed{L_2\le L_1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse of a biholomorphic map is biholomorphic. Interchanging the roles
 of the two annuli in steps <1>1 through <1>7 therefore yields the reverse
 inequality.
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 L_1=L_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>7 and <1>8.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{R_1=R_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 L_j=\log R_j.
@@ -291,11 +359,15 @@ Step <1>9 gives
 \log R_1=\log R_2.
 \]
 The logarithm is injective on \((0,\infty)\), so \(R_1=R_2\).
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

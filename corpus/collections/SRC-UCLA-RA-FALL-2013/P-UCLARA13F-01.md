@@ -22,30 +22,49 @@ Suppose $f:U\to V$ is proper: $f^{-1}(K)$ is compact in $U$ whenever $K\subset V
 Show that $f$ is surjective.
 :::
 
-::: {.solution}
-<1>1. The map $f$ is not constant.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $f$ is not constant.
+
+
+::: pf-proof
+
 If $f\equiv c\in V$, then the compact set $K=\{c\}\subset V$ would have
 \[
 f^{-1}(K)=U.
 \]
 Properness would make $U$ compact. But a nonempty open subset of $\mathbb C$ is not compact. Hence $f$ cannot be constant.
+
 :::
 
-<1>2. By the open mapping theorem,
+:::
+
+::: pf-step
+
+By the open mapping theorem,
 \[
 f(U)
 \]
 is open in $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 A nonconstant holomorphic function on a connected open subset of $\mathbb C$ is an open map. Step <1>1 gives nonconstancy, and $f(U)\subset V$ by hypothesis.
+
 :::
 
-<1>3. The image $f(U)$ is closed in $V$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The image $f(U)$ is closed in $V$.
+
+
+::: pf-proof
+
 Let $(y_j)$ be a sequence in $f(U)$ converging to $y\in V$. Choose $x_j\in U$ with
 \[
 f(x_j)=y_j.
@@ -63,35 +82,60 @@ is compact in $U$. Hence $(x_j)$ has a subsequence $x_{j_k}\to x\in U$. Continui
 f(x)=\lim_k f(x_{j_k})=\lim_k y_{j_k}=y.
 \]
 Thus $y\in f(U)$. Since $V\subset\mathbb C$ is metrizable, sequential closedness is closedness.
+
 :::
 
-<1>4. The set $f(U)$ is nonempty, open, and closed in the connected space $V$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $f(U)$ is nonempty, open, and closed in the connected space $V$.
+
+
+::: pf-proof
+
 It is nonempty because $U$ is nonempty; openness is step <1>2 and closedness is step <1>3.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 f(U)=V.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only subsets of a connected space that are both open and closed are the empty set and the whole space. Step <1>4 excludes the empty set.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{f:U\to V\text{ is surjective}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the equality $f(U)=V$ from step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves the claim.
+
 :::
+
 :::

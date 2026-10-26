@@ -28,18 +28,30 @@ Moreover, prove that for any other decomposition $U \cong V' \oplus W'$, one has
 :::
 
 
-::: {.solution}
 Equip $U$ with its $k[t]$-module structure given by $t\cdot u=f(u)$.
 
-<1>1. The module $U$ is finitely generated over the PID $k[t]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The module $U$ is finitely generated over the PID $k[t]$.
+
+
+::: pf-proof
+
 The hypothesis says that the iterates $f^d(u_i)$ span $U$ as a $k$-vector space. Equivalently, the finitely many $u_i$ generate $U$ as a $k[t]$-module. Since $k[t]$ is Euclidean, it is a PID.
+
 :::
 
-<1>2. There exists a decomposition $U=V\oplus W$ with $V$ possessing the prescribed orbit basis and $W$ finite-dimensional over $k$.
+:::
 
-::: {.proof}
+::: pf-step
+
+There exists a decomposition $U=V\oplus W$ with $V$ possessing the prescribed orbit basis and $W$ finite-dimensional over $k$.
+
+
+::: pf-proof
+
 By the structure theorem for finitely generated modules over a PID, step <1>1 yields
 \[
 U\cong k[t]^n\oplus\bigoplus_{j=1}^s k[t]/(p_j(t)),
@@ -48,27 +60,45 @@ where each $p_j$ is nonzero. Take $V$ to be the image of the free summand and $W
 \[
 \dim_k W=\sum_{j=1}^s\deg p_j<\infty.
 \]
+
 :::
 
-<1>3. The asserted uniqueness of $W$ is false without a requirement that the summands be $f$-invariant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The asserted uniqueness of $W$ is false without a requirement that the summands be $f$-invariant.
+
+
+::: pf-proof
+
 Let $U=k[t]$ and let $f$ be multiplication by $t$. The single vector $1$ generates $U$ through its iterates. The two decompositions
 \[
 U=k[t]\oplus0,\qquad U=tk[t]\oplus k\cdot1
 \]
 both satisfy the requested orbit-basis and finite-dimensionality conditions: $k[t]$ has orbit basis $1,t,t^2,\ldots$, and $tk[t]$ has orbit basis $t,t^2,\ldots$. But the complements have dimensions zero and one over $k$, so they are not isomorphic.
+
 :::
 
-<1>4. If both summands are required to be $f$-invariant, then the finite-dimensional complement is uniquely the torsion submodule of $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If both summands are required to be $f$-invariant, then the finite-dimensional complement is uniquely the torsion submodule of $U$.
+
+
+::: pf-proof
+
 An $f$-invariant subspace is a $k[t]$-submodule. Every element of a finite-dimensional $k[t]$-module is annihilated by a nonzero polynomial, by linear dependence of its iterates, so that module is torsion. Conversely a free $k[t]$-module has no nonzero torsion elements. Hence in any $k[t]$-module direct-sum decomposition into a free summand and a finite-dimensional summand, the latter coincides with the torsion submodule of $U$. It is therefore determined intrinsically.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves the existence assertion, step <1>3 gives a counterexample to uniqueness as stated, and step <1>4 proves the invariant-summand version.
+
 :::
+
 :::

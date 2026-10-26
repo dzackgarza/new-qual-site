@@ -22,20 +22,30 @@ Suppose $T(W)\subseteq W$ for every subspace $W\subset V$ with $\dim W=\dim V-1$
 Prove that $T$ is a scalar multiple of the identity.
 :::
 
-::: {.solution}
 Let
 \[
 n=\dim V.
 \]
 
-<1>1. If $n\le1$, then $T$ is a scalar multiple of the identity.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $n\le1$, then $T$ is a scalar multiple of the identity.
+
+
+::: pf-proof
+
 If $n=0$, there is only the zero endomorphism.
 If $n=1$, every endomorphism is multiplication by a scalar.
+
 :::
 
-<1>2. Assume $n\ge2$.
+:::
+
+::: pf-step
+
+Assume $n\ge2$.
 For every nonzero $v\in V$,
 \[
 \bigcap_{\substack{W\subset V\\ \dim W=n-1\\ v\in W}}W
@@ -43,7 +53,9 @@ For every nonzero $v\in V$,
 \operatorname{span}\{v\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The line
 \[
 \operatorname{span}\{v\}
@@ -80,11 +92,18 @@ W=\ker\varphi
 is a hyperplane containing $v$ but not $u$.
 Thus $u$ is not in the intersection of all such hyperplanes.
 Hence the intersection is exactly $\operatorname{span}\{v\}$.
+
 :::
 
-<1>3. Every one-dimensional subspace of $V$ is invariant under $T$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every one-dimensional subspace of $V$ is invariant under $T$.
+
+
+::: pf-proof
+
 Fix nonzero
 \[
 v\in V.
@@ -113,23 +132,37 @@ By step <1>2,
 Tv\in\operatorname{span}\{v\}.
 \]
 Thus the line spanned by $v$ is invariant.
+
 :::
 
-<1>4. Every nonzero vector is an eigenvector of $T$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero vector is an eigenvector of $T$.
+
+
+::: pf-proof
+
 By step <1>3, for each nonzero $v$ there exists a scalar $\lambda_v$ such that
 \[
 Tv=\lambda_vv.
 \]
+
 :::
 
-<1>5. If $u,v$ are linearly independent, then
+:::
+
+::: pf-step
+
+If $u,v$ are linearly independent, then
 \[
 \lambda_u=\lambda_v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 Tu=\lambda_uu,
@@ -154,15 +187,22 @@ Since $u$ and $v$ are linearly independent,
 \[
 \lambda_u=\lambda_{u+v}=\lambda_v.
 \]
+
 :::
 
-<1>6. There is a single scalar $\lambda$ such that
+:::
+
+::: pf-step
+
+There is a single scalar $\lambda$ such that
 \[
 Tv=\lambda v
 \]
 for every $v\in V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose any nonzero
 \[
 u\in V
@@ -188,20 +228,31 @@ The zero vector also satisfies
 \[
 T0=\lambda0.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{T=\lambda I}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 says that $T$ and $\lambda I$ agree on every vector of $V$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 handles dimensions at most one, and steps <1>2--<1>7 prove the result for $n\ge2$.
+
 :::
+
 :::

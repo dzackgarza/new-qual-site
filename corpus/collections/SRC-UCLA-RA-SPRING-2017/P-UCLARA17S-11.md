@@ -24,27 +24,39 @@ Let $1\le p<\infty$ and let $U(z)$ be harmonic on $\mathbb C$ such that
 Prove that $U(z)=0$ for all $z=x+iy\in\mathbb C$.
 :::
 
-::: {.solution}
 Let
 $$
 M\coloneqq\left(\iint_{\RR^2}|U|^p\,dA\right)^{1/p}<\infty.
 $$
 
-<1>1. For every $z_0\in\CC$ and every $R>0$,
+::: pf
+
+::: pf-step
+
+For every $z_0\in\CC$ and every $R>0$,
 $$
 U(z_0)=\frac1{\pi R^2}\int_{B(z_0,R)}U(z)\,dA(z).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the mean-value property for harmonic functions, applied to the disk $B(z_0,R)$. Since $U$ is harmonic on all of $\CC$, every radius $R>0$ is allowed.
+
 :::
 
-<1>2. For every $z_0\in\CC$ and $R>0$,
+:::
+
+::: pf-step
+
+For every $z_0\in\CC$ and $R>0$,
 $$
 |U(z_0)|\le \frac{M}{(\pi R^2)^{1/p}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 |U(z_0)|
@@ -65,24 +77,35 @@ Dividing by $\pi R^2$ yields the displayed estimate. For $p=1$, the same estimat
 $$
 \int_{B(z_0,R)}|U|\le M.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{U(z)=0\text{ for every }z\in\CC}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $z_0\in\CC$. Step <1>2 gives, for every $R>0$,
 $$
 |U(z_0)|\le \frac{M}{(\pi R^2)^{1/p}}.
 $$
 Since $p<\infty$, the right-hand side tends to $0$ as $R\to\infty$. Hence $|U(z_0)|=0$. Because $z_0$ was arbitrary, $U$ vanishes identically.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

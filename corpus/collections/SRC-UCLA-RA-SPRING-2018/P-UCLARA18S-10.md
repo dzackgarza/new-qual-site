@@ -28,7 +28,6 @@ Let $f:\Omega\to\Omega$ be a holomorphic function.
 (b) Make a list of all such injective functions $f$.
 :::
 
-::: {.solution}
 Let
 \[
 \widetilde\Omega
@@ -52,7 +51,11 @@ so
 T:\widetilde\Omega\xrightarrow{\sim}\Omega.
 \]
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 f:\Omega\to\Omega
 \]
@@ -66,15 +69,24 @@ T^{-1}\circ f\circ T
 \]
 is injective and holomorphic.
 
-::: {.proof}
+
+::: pf-proof
+
 The maps \(T\) and \(T^{-1}\) are Möbius transformations and hence
 biholomorphic on the indicated domains. Composition preserves holomorphy and
 injectivity.
+
 :::
 
-<1>2. Neither \(0\) nor \(\infty\) can be an essential singularity of \(g\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Neither \(0\) nor \(\infty\) can be an essential singularity of \(g\).
+
+
+::: pf-proof
+
 Suppose \(0\) were an essential singularity. By the Great Picard theorem,
 in every punctured neighborhood of \(0\), the function \(g\) assumes every
 complex value with at most one exception infinitely often. Since
@@ -89,11 +101,18 @@ The same argument at \(\infty\), applied after the change of variable
 z\longmapsto\frac1z,
 \]
 rules out an essential singularity there.
+
 :::
 
-<1>3. Any pole of \(g\) at \(0\) or \(\infty\) has order at most \(1\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Any pole of \(g\) at \(0\) or \(\infty\) has order at most \(1\).
+
+
+::: pf-proof
+
 Suppose \(g\) had a pole of order \(m\ge2\) at \(0\). Then
 \[
 h=\frac1g
@@ -110,9 +129,14 @@ the same value of \(h\), and therefore the same value of \(g\), contradicting
 injectivity.
 
 The argument at \(\infty\) is identical after replacing \(z\) by \(1/z\).
+
 :::
 
-<1>4. Hence \(g\), viewed as a meromorphic function on the Riemann sphere,
+:::
+
+::: pf-step
+
+Hence \(g\), viewed as a meromorphic function on the Riemann sphere,
 has the form
 \[
 \boxed{
@@ -122,7 +146,9 @@ g(z)
 \]
 for some \(a,b,c\in\mathbb C\).
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>3, the only possible poles are at \(0\) and \(\infty\),
 each of order at most one. Subtract the possible principal part
 \[
@@ -134,11 +160,18 @@ cz
 \]
 corresponding to a simple pole at \(\infty\). The remainder is holomorphic
 on the entire Riemann sphere and therefore constant.
+
 :::
 
-<1>5. The coefficients \(a\) and \(c\) cannot both be nonzero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The coefficients \(a\) and \(c\) cannot both be nonzero.
+
+
+::: pf-proof
+
 If \(a\ne0\) and \(c\ne0\), then
 \[
 g(z)=0
@@ -157,15 +190,22 @@ at a point of \(\mathbb C^\times\), contradicting
 \[
 g(\mathbb C^\times)\subseteq\mathbb C^\times.
 \]
+
 :::
 
-<1>6. If \(a=0\), then
+:::
+
+::: pf-step
+
+If \(a=0\), then
 \[
 \boxed{g(z)=cz}
 \]
 for some \(c\in\mathbb C^\times\).
 
-::: {.proof}
+
+::: pf-proof
+
 With \(a=0\),
 \[
 g(z)=b+cz.
@@ -175,15 +215,22 @@ Injectivity rules out \(c=0\). If \(b\ne0\), then
 z=-\frac bc
 \]
 is a nonzero zero of \(g\), impossible. Hence \(b=0\), and \(c\ne0\).
+
 :::
 
-<1>7. If \(c=0\), then
+:::
+
+::: pf-step
+
+If \(c=0\), then
 \[
 \boxed{g(z)=\frac az}
 \]
 for some \(a\in\mathbb C^\times\).
 
-::: {.proof}
+
+::: pf-proof
+
 With \(c=0\),
 \[
 g(z)=\frac az+b.
@@ -193,9 +240,14 @@ Injectivity rules out \(a=0\). If \(b\ne0\), then
 z=-\frac ab
 \]
 is a nonzero zero of \(g\), impossible. Hence \(b=0\), and \(a\ne0\).
+
 :::
 
-<1>8. Therefore every injective holomorphic self-map of
+:::
+
+::: pf-step
+
+Therefore every injective holomorphic self-map of
 \(\mathbb C^\times\) is exactly one of
 \[
 \boxed{
@@ -206,13 +258,20 @@ h_a(z)=\frac az,
 a\in\mathbb C^\times}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>5 through <1>7 exhaust the possibilities from step <1>4.
 Conversely, both displayed maps are visibly injective holomorphic self-maps
 of \(\mathbb C^\times\).
+
 :::
 
-<1>9. The inverse Möbius transformation is
+:::
+
+::: pf-step
+
+The inverse Möbius transformation is
 \[
 \boxed{
 T^{-1}(w)
@@ -220,7 +279,9 @@ T^{-1}(w)
 \frac{w}{1-w}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solving
 \[
 w=\frac z{z+1}
@@ -233,9 +294,14 @@ w=z(1-w),
 \qquad
 z=\frac{w}{1-w}.
 \]
+
 :::
 
-<1>10. Conjugating \(g_a(z)=az\) back to \(\Omega\) gives
+:::
+
+::: pf-step
+
+Conjugating \(g_a(z)=az\) back to \(\Omega\) gives
 \[
 \boxed{
 f_a(w)
@@ -245,7 +311,9 @@ f_a(w)
 a\in\mathbb C^\times}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>9,
 \[
 \begin{aligned}
@@ -263,9 +331,14 @@ T\!\left(
 \frac{aw}{1+(a-1)w}.
 \end{aligned}
 \]
+
 :::
 
-<1>11. Conjugating \(h_a(z)=a/z\) back to \(\Omega\) gives
+:::
+
+::: pf-step
+
+Conjugating \(h_a(z)=a/z\) back to \(\Omega\) gives
 \[
 \boxed{
 \widetilde f_a(w)
@@ -276,7 +349,9 @@ T\!\left(
 a\in\mathbb C^\times}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again using step <1>9,
 \[
 \begin{aligned}
@@ -295,9 +370,14 @@ T\!\left(
 {a+(1-a)w}.
 \end{aligned}
 \]
+
 :::
 
-<1>12. The complete list in part (b) is therefore
+:::
+
+::: pf-step
+
+The complete list in part (b) is therefore
 \[
 \boxed{
 f(w)
@@ -311,17 +391,26 @@ f(w)
 a\in\mathbb C^\times}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, every injective \(f\) is conjugate to an injective \(g\) on
 \(\mathbb C^\times\). Step <1>8 classifies the latter, and steps <1>10 and
 <1>11 compute their conjugates. Conversely, every displayed map is a
 conjugate of an injective holomorphic self-map of \(\mathbb C^\times\), so
 it is injective and holomorphic on \(\Omega\).
+
 :::
 
-<1>13. Every injective holomorphic \(f:\Omega\to\Omega\) is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every injective holomorphic \(f:\Omega\to\Omega\) is surjective.
+
+
+::: pf-proof
+
 The maps
 \[
 z\mapsto az
@@ -334,12 +423,16 @@ conjugates in steps <1>10 and <1>11 are surjective on \(\Omega\). By step
 \[
 \boxed{f(\Omega)=\Omega}.
 \]
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 proves part (a), and step <1>12 gives the complete list required
 in part (b).
+
 :::
+
 :::

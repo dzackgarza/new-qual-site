@@ -23,15 +23,20 @@ Find a subset $S\subset\mathbb R$ such that both of the following hold:
 (ii) $S$ is not a countable intersection of open sets.
 :::
 
-::: {.solution}
 Let
 \[
 S=(\mathbb Q\cap(-\infty,0))\cup((\mathbb R\setminus\mathbb Q)\cap(0,\infty)).
 \]
 
-<1>1. The set $\mathbb Q\cap(-\infty,0)$ is not a countable intersection of open subsets of $(-\infty,0)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $\mathbb Q\cap(-\infty,0)$ is not a countable intersection of open subsets of $(-\infty,0)$.
+
+
+::: pf-proof
+
 Suppose instead that
 \[
 \mathbb Q\cap(-\infty,0)=\bigcap_{n=1}^{\infty}U_n
@@ -49,11 +54,18 @@ is open and dense in $(-\infty,0)$. Because $(-\infty,0)$ is a Baire space, the 
 \bigcap_{m=1}^{\infty}\bigl(( -\infty,0)\setminus\{q_m\}\bigr)
 \]
 is nonempty. But the first intersection equals $\mathbb Q\cap(-\infty,0)$, while the second excludes every rational point, so their intersection is empty. This contradiction proves the claim.
+
 :::
 
-<1>2. The set $(\mathbb R\setminus\mathbb Q)\cap(0,\infty)$ is not a countable union of closed subsets of $(0,\infty)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $(\mathbb R\setminus\mathbb Q)\cap(0,\infty)$ is not a countable union of closed subsets of $(0,\infty)$.
+
+
+::: pf-proof
+
 Suppose instead that
 \[
 (\mathbb R\setminus\mathbb Q)\cap(0,\infty)
@@ -71,11 +83,18 @@ The set $\mathbb Q\cap(0,\infty)$ is countable, so it is also a countable union 
 \bigl(\mathbb Q\cap(0,\infty)\bigr)
 \]
 would be a countable union of nowhere dense subsets of itself, contradicting the Baire category theorem.
+
 :::
 
-<1>3. The set $S$ is not a countable union of closed subsets of $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $S$ is not a countable union of closed subsets of $\mathbb R$.
+
+
+::: pf-proof
+
 Suppose
 \[
 S=\bigcup_{n=1}^{\infty}C_n
@@ -91,11 +110,18 @@ where each $C_n\cap(0,\infty)$ is closed in $(0,\infty)$. By the definition of $
 S\cap(0,\infty)=(\mathbb R\setminus\mathbb Q)\cap(0,\infty),
 \]
 contradicting step <1>2.
+
 :::
 
-<1>4. The set $S$ is not a countable intersection of open subsets of $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $S$ is not a countable intersection of open subsets of $\mathbb R$.
+
+
+::: pf-proof
+
 Suppose
 \[
 S=\bigcap_{n=1}^{\infty}V_n
@@ -111,21 +137,32 @@ where each $V_n\cap(-\infty,0)$ is open in $(-\infty,0)$. By the definition of $
 S\cap(-\infty,0)=\mathbb Q\cap(-\infty,0),
 \]
 contradicting step <1>1.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{S=(\mathbb Q\cap(-\infty,0))\cup((\mathbb R\setminus\mathbb Q)\cap(0,\infty))}
 \]
 satisfies both required conditions.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves condition (i), and step <1>4 proves condition (ii).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the requested subset.
+
 :::
+
 :::

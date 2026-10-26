@@ -19,7 +19,6 @@ audit:
 Show that the set $\mathbb Q$ of rational numbers in $\mathbb R$ cannot be expressed as the intersection of a countable collection of open subsets of $\mathbb R$.
 :::
 
-::: {.solution}
 Suppose, for contradiction, that
 \[
 \mathbb Q
@@ -28,9 +27,15 @@ Suppose, for contradiction, that
 \]
 with every $U_n\subseteq\mathbb R$ open.
 
-<1>1. Every $U_n$ is dense in $\mathbb R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every $U_n$ is dense in $\mathbb R$.
+
+
+::: pf-proof
+
 Since
 \[
 \mathbb Q\subseteq U_n
@@ -47,9 +52,14 @@ Hence
 \[
 \overline{U_n}=\mathbb R.
 \]
+
 :::
 
-<1>2. Enumerate
+:::
+
+::: pf-step
+
+Enumerate
 \[
 \mathbb Q=\{q_1,q_2,\ldots\}
 \]
@@ -59,22 +69,31 @@ V_n=\mathbb R\setminus\{q_n\}.
 \]
 Then every $V_n$ is open and dense.
 
-::: {.proof}
+
+::: pf-proof
+
 Each singleton
 \[
 \{q_n\}
 \]
 is closed and has empty interior.
 Therefore its complement is open and dense.
+
 :::
 
-<1>3. The intersection
+:::
+
+::: pf-step
+
+The intersection
 \[
 \bigcap_{n=1}^{\infty}(U_n\cap V_n)
 \]
 is nonempty.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 \[
 U_n\cap V_n
@@ -83,16 +102,23 @@ is open and dense by steps <1>1--<1>2.
 
 Apply the Baire category theorem to the complete metric space $\mathbb R$: the intersection of countably many open dense subsets of a nonempty complete metric space is dense, hence nonempty.
 Thus the displayed intersection is nonempty.
+
 :::
 
-<1>4. On the other hand,
+:::
+
+::: pf-step
+
+On the other hand,
 \[
 \bigcap_{n=1}^{\infty}(U_n\cap V_n)
 =
 \varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Distribute the intersection:
 \[
 \begin{aligned}
@@ -112,18 +138,29 @@ Distribute the intersection:
 \end{aligned}
 \]
 The second equality uses the assumed representation of $\mathbb Q$ and the definition of the $V_n$.
+
 :::
 
-<1>5. Therefore $\mathbb Q$ is not a countable intersection of open subsets of $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $\mathbb Q$ is not a countable intersection of open subsets of $\mathbb R$.
+
+
+::: pf-proof
+
 Steps <1>3 and <1>4 contradict each other.
 Hence the assumed representation cannot exist.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

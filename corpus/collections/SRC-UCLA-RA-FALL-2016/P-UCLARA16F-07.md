@@ -38,7 +38,6 @@ L_{z_0}(f)=f(z_0)=\langle f,g_{z_0}\rangle
 for all $f\in H$.
 :::
 
-::: {.solution}
 ## Part (a)
 
 Fix
@@ -54,7 +53,11 @@ Then
 \overline{D(z_0,r)}\subset D.
 \]
 
-<1>1. For every \(f\in H\),
+::: pf
+
+::: pf-step
+
+For every \(f\in H\),
 \[
 |f(z_0)|^2
 \le
@@ -63,11 +66,18 @@ Then
 |f(z)|^2\,dA(z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(|f|^2\) is subharmonic. Apply the subharmonic mean-value inequality on the disk \(D(z_0,r)\).
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 |f(z_0)|^2
 \le
@@ -75,11 +85,18 @@ The function \(|f|^2\) is subharmonic. Apply the subharmonic mean-value inequali
 \|f\|_H^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integral over \(D(z_0,r)\) is bounded above by the integral over the whole unit disk \(D\).
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 |L_{z_0}(f)|
@@ -88,19 +105,35 @@ The integral over \(D(z_0,r)\) is bounded above by the integral over the whole u
 \|f\|_H}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take square roots in step <1>2.
+
 :::
 
-<1>4. Thus \(L_{z_0}\) is bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus \(L_{z_0}\) is bounded.
+
+
+::: pf-proof
+
 Step <1>3 gives a finite operator-norm bound.
+
 :::
 
-<1>5. The functional \(L_{z_0}\) is linear.
+:::
 
-::: {.proof}
+::: pf-step
+
+The functional \(L_{z_0}\) is linear.
+
+
+::: pf-proof
+
 For scalars \(a,b\) and functions \(f,g\in H\),
 \[
 L_{z_0}(af+bg)
@@ -109,30 +142,32 @@ af(z_0)+bg(z_0)
 =
 aL_{z_0}(f)+bL_{z_0}(g).
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 L_{z_0}:H\to\mathbb C
 \text{ is a bounded linear functional}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4--<1>5.
+
 :::
 
-## Part (b)
+:::
 
-Let
-\[
-f(z)
-=
-\sum_{n=0}^{\infty}a_n z^n
-\]
-be the Taylor expansion of \(f\) at \(0\).
+::: pf-step
 
-<1>7. For integers \(m,n\ge0\),
+For integers \(m,n\ge0\),
 \[
 \boxed{
 \int_D
@@ -144,7 +179,9 @@ z^n\overline z^{\,m}\,dA(z)
 \end{cases}}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use polar coordinates
 \[
 z=re^{i\theta},
@@ -171,9 +208,14 @@ if \(n\ne m\), while for \(n=m\),
 =
 \frac{\pi}{n+1}.
 \]
+
 :::
 
-<1>8. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \|f\|_H^2
@@ -183,7 +225,9 @@ if \(n\ne m\), while for \(n=m\),
 \frac{|a_n|^2}{n+1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(0<\rho<1\), uniform convergence of the Taylor series on \(|z|\le\rho\) and step <1>7 give
 \[
 \int_{|z|<\rho}|f(z)|^2\,dA
@@ -194,17 +238,14 @@ For \(0<\rho<1\), uniform convergence of the Taylor series on \(|z|\le\rho\) and
 \rho^{2n+2}.
 \]
 Let \(\rho\uparrow1\). The left-hand side increases to \(\|f\|_H^2\), while the right-hand side increases termwise to the displayed series. Apply monotone convergence to the nonnegative sums.
+
 :::
 
-Define
-\[
-\boxed{
-g_{z_0}(z)
-=
-\frac1{\pi(1-\overline{z_0}z)^2}}.
-\]
+:::
 
-<1>9. The power-series expansion is
+::: pf-step
+
+The power-series expansion is
 \[
 \boxed{
 g_{z_0}(z)
@@ -214,7 +255,9 @@ g_{z_0}(z)
 (n+1)\overline{z_0}^{\,n}z^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 |w|<1,
@@ -236,11 +279,18 @@ Set
 w=\overline{z_0}z.
 \]
 Since \(|z_0|<1\) and \(|z|<1\), one has \(|w|<1\).
+
 :::
 
-<1>10. The function \(g_{z_0}\) belongs to \(H\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(g_{z_0}\) belongs to \(H\).
+
+
+::: pf-proof
+
 Its Taylor coefficients are
 \[
 b_n
@@ -271,9 +321,14 @@ Since \(|z_0|<1\),
 \infty.
 \]
 Thus \(g_{z_0}\in H\).
+
 :::
 
-<1>11. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \langle f,g_{z_0}\rangle
@@ -282,7 +337,9 @@ Thus \(g_{z_0}\in H\).
 a_n z_0^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>7--<1>9,
 \[
 \begin{aligned}
@@ -316,9 +373,14 @@ a_n(n+1)z_0^n
 a_nz_0^n.
 \]
 The series converges absolutely by Cauchy--Schwarz with the coefficient norm from step <1>8 and the finite norm from step <1>10.
+
 :::
 
-<1>12. Since
+:::
+
+::: pf-step
+
+Since
 \[
 f(z_0)
 =
@@ -333,11 +395,18 @@ f(z_0)
 \langle f,g_{z_0}\rangle}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor series of an entire-on-the-disk holomorphic function converges to \(f\) at every \(z_0\in D\). Combine this with step <1>11.
+
 :::
 
-<1>13. Therefore the reproducing vector is
+:::
+
+::: pf-step
+
+Therefore the reproducing vector is
 \[
 \boxed{
 g_{z_0}(z)
@@ -345,13 +414,19 @@ g_{z_0}(z)
 \frac1{\pi(1-\overline{z_0}z)^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 shows this function belongs to \(H\), and step <1>12 proves the reproducing identity.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves part (a), and step <1>13 proves part (b).
+
 :::
+
 :::

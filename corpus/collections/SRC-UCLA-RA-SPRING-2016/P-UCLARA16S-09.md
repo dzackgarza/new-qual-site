@@ -24,7 +24,6 @@ f(z)=Cz^m
 for some integer $m\ge0$ and $C\in\mathbb C$ with $|C|=1$.
 :::
 
-::: {.solution}
 Let $a_1,\dots,a_N$ be the zeros of $f$ in $\mathbb D$, listed with multiplicity, and define
 \[
 B(z)
@@ -34,14 +33,20 @@ B(z)
 \]
 If $f$ has no zeros in $\mathbb D$, take $N=0$ and $B\equiv1$.
 
-<1>1. The function $B$ is holomorphic on a neighborhood of $\overline{\mathbb D}$, has exactly the same zeros as $f$ in $\mathbb D$ with the same multiplicities, and satisfies
+::: pf
+
+::: pf-step
+
+The function $B$ is holomorphic on a neighborhood of $\overline{\mathbb D}$, has exactly the same zeros as $f$ in $\mathbb D$ with the same multiplicities, and satisfies
 \[
 |B(z)|=1
 \qquad
 (|z|=1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $|f|=1$ on the unit circle, $f$ has no zeros there. Zeros of a nonzero holomorphic function are isolated, so compactness of $\overline{\mathbb D}$ implies that there are only finitely many zeros in $\mathbb D$.
 
 For $|a_j|<1$, the denominator $1-\overline{a_j}z$ has its only zero at $1/\overline{a_j}$, whose modulus is greater than $1$. Thus every factor is holomorphic on a neighborhood of $\overline{\mathbb D}$. For $|z|=1$,
@@ -53,9 +58,14 @@ For $|a_j|<1$, the denominator $1-\overline{a_j}z$ has its only zero at $1/\over
 |1-\overline{a_j}z|,
 \]
 so each factor has modulus $1$ on the unit circle. The assertion about zeros is immediate from the numerators.
+
 :::
 
-<1>2. The quotient
+:::
+
+::: pf-step
+
+The quotient
 \[
 h\coloneqq\frac{f}{B}
 \]
@@ -66,7 +76,9 @@ extends to a holomorphic nonvanishing function on $\mathbb D$ and satisfies
 (|z|=1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $f$ and $B$ have the same zeros in $\mathbb D$ with the same multiplicities, so all apparent singularities of $f/B$ are removable and the extension has no zeros. On the unit circle, step <1>1 and the hypothesis give
 \[
 |h(z)|
@@ -74,16 +86,23 @@ By step <1>1, $f$ and $B$ have the same zeros in $\mathbb D$ with the same multi
 \frac{|f(z)|}{|B(z)|}
 =1.
 \]
+
 :::
 
-<1>3. There is a constant $C\in\mathbb C$ with $|C|=1$ such that
+:::
+
+::: pf-step
+
+There is a constant $C\in\mathbb C$ with $|C|=1$ such that
 \[
 f(z)=C B(z)
 \qquad
 (z\in\mathbb D).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the maximum-modulus principle applied to $h$,
 \[
 |h(z)|\le1
@@ -95,11 +114,18 @@ Since $h$ is nonvanishing, $1/h$ is holomorphic on $\mathbb D$ and also has boun
 |h(z)|\ge1.
 \]
 Hence $|h|\equiv1$ on $\mathbb D$. By the open mapping theorem, a nonconstant holomorphic function has open image, whereas the unit circle has empty interior. Thus $h$ is constant, say $h\equiv C$, with $|C|=1$.
+
 :::
 
-<1>4. Every zero $a_j$ equals $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every zero $a_j$ equals $0$.
+
+
+::: pf-proof
+
 Suppose that some $a_j\ne0$. Then the corresponding Blaschke factor has a pole at
 \[
 p_j
@@ -115,9 +141,14 @@ On the connected domain obtained from $\mathbb C$ by deleting the finitely many 
 f=CB
 \]
 throughout that domain. But $f$ is holomorphic at $p_j$, whereas $CB$ has a genuine pole there, a contradiction. Thus every $a_j=0$.
+
 :::
 
-<1>5. There is an integer $m\ge0$ such that
+:::
+
+::: pf-step
+
+There is an integer $m\ge0$ such that
 \[
 \boxed{f(z)=Cz^m}
 \qquad
@@ -125,7 +156,9 @@ throughout that domain. But $f$ is holomorphic at $p_j$, whereas $CB$ has a genu
 \]
 with $|C|=1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, all $N$ zeros of $f$ in $\mathbb D$ are at $0$. Therefore
 \[
 B(z)=z^N.
@@ -137,11 +170,15 @@ f(z)=Cz^N
 (z\in\mathbb D).
 \]
 Both sides are entire, so the identity theorem extends the equality to all of $\mathbb C$. Taking $m=N$ gives the claimed form, including $m=0$ when $f$ has no zeros in $\mathbb D$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required classification.
+
 :::
+
 :::

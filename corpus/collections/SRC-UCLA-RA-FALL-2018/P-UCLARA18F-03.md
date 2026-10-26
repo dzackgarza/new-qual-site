@@ -34,13 +34,18 @@ whenever $E$ is a Borel subset of $X$ such that
 where $\overline E$ is the closure of $E$ and $E^\circ$ is the interior of $E$.
 :::
 
-::: {.solution}
-<1>1. For every closed set \(F\subseteq X\),
+::: pf
+
+::: pf-step
+
+For every closed set \(F\subseteq X\),
 \[
 \limsup_{n\to\infty}\mu_n(F)\le\mu(F).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assertion is immediate for \(F=\varnothing\), so suppose \(F\ne\varnothing\). For \(k\ge1\), define
 \[
 \phi_k(x)=\max\{0,1-k\rho(x,F)\},
@@ -62,14 +67,21 @@ for every \(x\in X\). Thus the assumed convergence of integrals gives, for every
 =\int_X\phi_k\,d\mu.
 \]
 By dominated convergence, \(\int_X\phi_k\,d\mu\to\mu(F)\) as \(k\to\infty\). Letting \(k\to\infty\) proves the inequality.
+
 :::
 
-<1>2. For every open set \(G\subseteq X\),
+:::
+
+::: pf-step
+
+For every open set \(G\subseteq X\),
 \[
 \liminf_{n\to\infty}\mu_n(G)\ge\mu(G).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The complement \(X\setminus G\) is closed. Since every \(\mu_n\) and \(\mu\) is a probability measure, step <1>1 gives
 \[
 \begin{aligned}
@@ -79,9 +91,14 @@ The complement \(X\setminus G\) is closed. Since every \(\mu_n\) and \(\mu\) is 
 =\mu(G).
 \end{aligned}
 \]
+
 :::
 
-<1>3. For the Borel set \(E\) in the problem,
+:::
+
+::: pf-step
+
+For the Borel set \(E\) in the problem,
 \[
 \mu(E^\circ)
 \le\liminf_{n\to\infty}\mu_n(E)
@@ -89,7 +106,9 @@ The complement \(X\setminus G\) is closed. Since every \(\mu_n\) and \(\mu\) is 
 \le\mu(\overline E).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(E^\circ\subseteq E\subseteq\overline E\), monotonicity and steps <1>1--<1>2 give
 \[
 \begin{aligned}
@@ -101,14 +120,21 @@ Since \(E^\circ\subseteq E\subseteq\overline E\), monotonicity and steps <1>1--<
 \le\mu(\overline E).
 \end{aligned}
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{\mu_n(E)\longrightarrow\mu(E)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis, \(\mu(E^\circ)=\mu(\overline E)\). Since
 \[
 E^\circ\subseteq E\subseteq\overline E,
@@ -122,11 +148,15 @@ so all three quantities are equal. Step <1>3 then forces
 \liminf_n\mu_n(E)=\limsup_n\mu_n(E)=\mu(E),
 \]
 which is exactly the asserted convergence.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required convergence for every Borel continuity set \(E\).
+
 :::
+
 :::

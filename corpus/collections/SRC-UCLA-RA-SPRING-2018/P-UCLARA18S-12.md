@@ -28,13 +28,16 @@ f(w)=\frac1\pi\int_{\mathbb D}\frac{f(z)}{(1-\overline z w)^2}\,dA(z),
 where $dA(z)$ means integration with respect to Lebesgue measure.
 :::
 
-::: {.solution}
 Write the Taylor series of \(f\) at the origin as
 \[
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
 \]
 
-<1>1. For every \(n\ge0\),
+::: pf
+
+::: pf-step
+
+For every \(n\ge0\),
 \[
 \boxed{
 \int_{\mathbb D}
@@ -43,7 +46,9 @@ f(z)\overline z^{\,n}\,dA(z)
 \frac{\pi}{n+1}a_n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because \(f\) is bounded and \(\mathbb D\) has finite area, the function
 \[
 f(z)\overline z^{\,n}
@@ -91,9 +96,14 @@ f(z)\overline z^{\,n}\,dA(z)
 \frac{\pi}{n+1}a_n.
 \end{aligned}
 \]
+
 :::
 
-<1>2. For fixed \(w\in\mathbb D\),
+:::
+
+::: pf-step
+
+For fixed \(w\in\mathbb D\),
 \[
 \boxed{
 \frac1{(1-\overline zw)^2}
@@ -103,7 +113,9 @@ f(z)\overline z^{\,n}\,dA(z)
 \]
 uniformly for \(z\in\mathbb D\).
 
-::: {.proof}
+
+::: pf-proof
+
 The differentiated geometric series gives
 \[
 \frac1{(1-\xi)^2}
@@ -134,12 +146,19 @@ and
 <\infty.
 \]
 The Weierstrass \(M\)-test therefore gives uniform convergence in \(z\).
+
 :::
 
-<1>3. One may integrate the series in step <1>2 term by term against
+:::
+
+::: pf-step
+
+One may integrate the series in step <1>2 term by term against
 \(f(z)\,dA(z)\).
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \|f\|_\infty
@@ -158,9 +177,14 @@ The right-hand side is summable in \(n\) and independent of \(z\), while
 \(\mathbb D\) has finite area. Equivalently, the kernel series converges
 uniformly by step <1>2 and \(f\in L^1(\mathbb D)\). Hence integration and
 summation may be interchanged.
+
 :::
 
-<1>4. For every \(w\in\mathbb D\),
+:::
+
+::: pf-step
+
+For every \(w\in\mathbb D\),
 \[
 \begin{aligned}
 \frac1\pi
@@ -173,7 +197,9 @@ summation may be interchanged.
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2 and <1>3,
 \[
 \begin{aligned}
@@ -202,9 +228,14 @@ Apply step <1>1:
 \sum_{n=0}^{\infty}a_nw^n.
 \end{aligned}
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f(w)
@@ -217,15 +248,21 @@ f(w)
 \qquad(w\in\mathbb D).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The Taylor series of the holomorphic function \(f\) converges to \(f(w)\)
 for every \(w\in\mathbb D\). Thus the series on the right-hand side of
 step <1>4 equals \(f(w)\).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required reproducing formula.
+
 :::
+
 :::

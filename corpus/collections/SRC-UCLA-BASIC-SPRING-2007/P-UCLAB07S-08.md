@@ -25,14 +25,19 @@ for every $x\in[0,1]$ and $n\ge1$.
 Prove that $f$ is continuously differentiable on $[0,1]$.
 :::
 
-::: {.solution}
-<1>1. The family of derivatives
+::: pf
+
+::: pf-step
+
+The family of derivatives
 \[
 \{f_n':n\ge1\}
 \]
 is uniformly bounded on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the hypothesis
 \[
 |f_n'(x)|\le1
@@ -42,15 +47,22 @@ for every
 x\in[0,1]
 \]
 and every $n$.
+
 :::
 
-<1>2. The family
+:::
+
+::: pf-step
+
+The family
 \[
 \{f_n':n\ge1\}
 \]
 is equicontinuous on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x,y\in[0,1].
@@ -74,9 +86,14 @@ so
 for every $n$.
 Thus every derivative is $1$-Lipschitz, with a common Lipschitz constant.
 Hence the family is equicontinuous.
+
 :::
 
-<1>3. There is a subsequence
+:::
+
+::: pf-step
+
+There is a subsequence
 \[
 (f_{n_j}')
 \]
@@ -85,18 +102,27 @@ that converges uniformly on $[0,1]$ to a continuous function
 g:[0,1]\to\mathbb R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the family of derivatives is uniformly bounded and equicontinuous on the compact interval $[0,1]$.
 The Arzelà--Ascoli theorem therefore yields a uniformly convergent subsequence.
 Each $f_{n_j}'$ is continuous, so its uniform limit $g$ is continuous.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f_{n_j}(0)\to f(0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The original sequence satisfies
 \[
 f_n(x)\to f(x)
@@ -110,9 +136,14 @@ Taking
 x=0
 \]
 and passing to the subsequence gives the claim.
+
 :::
 
-<1>5. For every $j$ and every
+:::
+
+::: pf-step
+
+For every $j$ and every
 \[
 x\in[0,1],
 \]
@@ -125,7 +156,9 @@ f_{n_j}(0)
 \int_0^x f_{n_j}'(t)\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 \[
 f_{n_j}
@@ -136,9 +169,14 @@ C^2([0,1]),
 \]
 hence is continuously differentiable.
 The fundamental theorem of calculus gives the displayed identity.
+
 :::
 
-<1>6. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in[0,1],
 \]
@@ -149,7 +187,9 @@ one has
 \int_0^x g(t)\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence from step <1>3 gives
 \[
 \|f_{n_j}'-g\|_\infty\to0.
@@ -174,9 +214,14 @@ x\,
 \longrightarrow0.
 \end{aligned}
 \]
+
 :::
 
-<1>7. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in[0,1],
 \]
@@ -191,7 +236,9 @@ f(0)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take the limit
 \[
 j\to\infty
@@ -209,14 +256,21 @@ f(0)
 by step <1>4.
 The integral term converges by step <1>6.
 Thus the displayed identity follows.
+
 :::
 
-<1>8. The function $f$ is continuously differentiable and
+:::
+
+::: pf-step
+
+The function $f$ is continuously differentiable and
 \[
 \boxed{f'(x)=g(x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $g$ is continuous by step <1>3.
 By step <1>7,
 \[
@@ -243,11 +297,15 @@ Hence
 \[
 f\in C^1([0,1]).
 \]
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

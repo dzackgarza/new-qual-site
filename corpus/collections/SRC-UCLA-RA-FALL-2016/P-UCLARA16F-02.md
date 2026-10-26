@@ -25,7 +25,6 @@ Show that
 for $\mu$-almost every $x\in\mathbb R$.
 :::
 
-::: {.solution}
 Let \(m\) denote Lebesgue measure on \(\mathbb R\), and define the locally finite positive Borel measure
 \[
 \boxed{
@@ -46,7 +45,11 @@ m(E)=\int_E f\,d\nu
 \]
 for every Borel set \(E\).
 
-<1>1. Since \(\mu\perp m\), there exists a Borel set
+::: pf
+
+::: pf-step
+
+Since \(\mu\perp m\), there exists a Borel set
 \[
 S\subseteq\mathbb R
 \]
@@ -58,18 +61,27 @@ m(S)=0,
 \mu(\mathbb R\setminus S)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of mutual singularity of the positive measures \(\mu\) and \(m\).
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 f=0}
 \]
 for \(\nu\)-almost every point of \(S\).
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 m(S)=0,
@@ -87,23 +99,35 @@ Because \(f\ge0\), the integral of \(f\) over \(S\) can vanish only if
 f=0
 \]
 \(\nu\)-almost everywhere on \(S\).
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f(x)=0}
 \]
 for \(\mu\)-almost every \(x\in\mathbb R\).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, \(\mu\) is concentrated on \(S\). The exceptional subset of \(S\) in step <1>2 is \(\nu\)-null, hence also \(\mu\)-null because
 \[
 \mu\le\nu.
 \]
+
 :::
 
-<1>4. By the differentiation theorem for locally finite Borel measures on \(\mathbb R\),
+:::
+
+::: pf-step
+
+By the differentiation theorem for locally finite Borel measures on \(\mathbb R\),
 \[
 \boxed{
 f(x)
@@ -117,11 +141,18 @@ f(x)
 \]
 for \(\nu\)-almost every \(x\).
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Lebesgue differentiation theorem in the measure \(\nu\), applied locally to the function \(f\in L^1_{\mathrm{loc}}(\nu)\).
+
 :::
 
-<1>5. The numerator in step <1>4 is
+:::
+
+::: pf-step
+
+The numerator in step <1>4 is
 \[
 \boxed{
 \int_{[x-r,x+r]}f\,d\nu
@@ -129,7 +160,9 @@ This is the Lebesgue differentiation theorem in the measure \(\nu\), applied loc
 2r}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the defining Radon--Nikodym identity,
 \[
 \int_{[x-r,x+r]}f\,d\nu
@@ -138,9 +171,14 @@ m([x-r,x+r])
 =
 2r.
 \]
+
 :::
 
-<1>6. The denominator is
+:::
+
+::: pf-step
+
+The denominator is
 \[
 \boxed{
 \nu([x-r,x+r])
@@ -148,7 +186,9 @@ m([x-r,x+r])
 2r+\mu([x-r,x+r])}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \nu=\mu+m,
@@ -162,9 +202,14 @@ m([x-r,x+r])
 =
 \mu([x-r,x+r])+2r.
 \]
+
 :::
 
-<1>7. Hence, for \(\nu\)-almost every \(x\),
+:::
+
+::: pf-step
+
+Hence, for \(\nu\)-almost every \(x\),
 \[
 \boxed{
 f(x)
@@ -177,11 +222,18 @@ f(x)
 }}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute steps <1>5--<1>6 into step <1>4.
+
 :::
 
-<1>8. For \(\mu\)-almost every \(x\),
+:::
+
+::: pf-step
+
+For \(\mu\)-almost every \(x\),
 \[
 \boxed{
 \lim_{r\to0^+}
@@ -194,31 +246,29 @@ Substitute steps <1>5--<1>6 into step <1>4.
 0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The differentiation identity in step <1>7 holds \(\nu\)-almost everywhere, hence \(\mu\)-almost everywhere because \(\mu\le\nu\). At \(\mu\)-almost every such point, step <1>3 gives
 \[
 f(x)=0.
 \]
+
 :::
 
-Define
-\[
-q_r(x)
-=
-\frac{
-\mu([x-r,x+r])
-}{
-2r
-}.
-\]
+:::
 
-<1>9. The ratio in step <1>8 can be rewritten as
+::: pf-step
+
+The ratio in step <1>8 can be rewritten as
 \[
 \boxed{
 \frac1{1+q_r(x)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide numerator and denominator by \(2r>0\):
 \[
 \frac{2r}{2r+\mu([x-r,x+r])}
@@ -227,9 +277,14 @@ Divide numerator and denominator by \(2r>0\):
 1+\mu([x-r,x+r])/(2r)
 }.
 \]
+
 :::
 
-<1>10. Since
+:::
+
+::: pf-step
+
+Since
 \[
 q_r(x)\ge0,
 \]
@@ -243,15 +298,22 @@ is equivalent to
 q_r(x)\to+\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For nonnegative numbers \(q\),
 \[
 \frac1{1+q}\to0
 \]
 if and only if \(1+q\to+\infty\), equivalently \(q\to+\infty\).
+
 :::
 
-<1>11. Therefore, for \(\mu\)-almost every \(x\),
+:::
+
+::: pf-step
+
+Therefore, for \(\mu\)-almost every \(x\),
 \[
 \boxed{
 \lim_{r\to0^+}
@@ -264,13 +326,19 @@ if and only if \(1+q\to+\infty\), equivalently \(q\to+\infty\).
 +\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>8--<1>10.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required density statement.
+
 :::
+
 :::

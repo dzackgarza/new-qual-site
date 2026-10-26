@@ -33,8 +33,11 @@ converges if the operator norm of $A$ is less than one.
 (d) Show that $\exp(\ln(I+A))=I+A$ if the operator norm of $A$ is less than one.
 :::
 
-::: {.solution}
-<1>1. The operator norm of a real $n\times n$ matrix $A$ is
+::: pf
+
+::: pf-step
+
+The operator norm of a real $n\times n$ matrix $A$ is
 \[
 \boxed{
 \|A\|_{\mathrm{op}}
@@ -43,7 +46,9 @@ converges if the operator norm of $A$ is less than one.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the norm induced by the Euclidean norm on $\mathbb R^n$.
 Equivalently,
 \[
@@ -53,9 +58,14 @@ Equivalently,
 \frac{\|Ax\|_2}{\|x\|_2}.
 \]
 This answers part (a).
+
 :::
 
-<1>2. The operator norm is submultiplicative:
+:::
+
+::: pf-step
+
+The operator norm is submultiplicative:
 \[
 \|AB\|_{\mathrm{op}}
 \le
@@ -63,7 +73,9 @@ This answers part (a).
 \|B\|_{\mathrm{op}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every vector $x$,
 \[
 \|ABx\|_2
@@ -75,26 +87,40 @@ For every vector $x$,
 \|x\|_2.
 \]
 Take the supremum over unit vectors $x$.
+
 :::
 
-<1>3. For every positive integer $m$,
+:::
+
+::: pf-step
+
+For every positive integer $m$,
 \[
 \|A^m\|_{\mathrm{op}}
 \le
 \|A\|_{\mathrm{op}}^m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>2 inductively.
+
 :::
 
-<1>4. The exponential series
+:::
+
+::: pf-step
+
+The exponential series
 \[
 \sum_{m=0}^{\infty}\frac{A^m}{m!}
 \]
 converges absolutely in operator norm.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \left\|
@@ -115,11 +141,18 @@ Therefore the matrix series converges absolutely in the finite-dimensional norme
 \[
 M_n(\mathbb R).
 \]
+
 :::
 
-<1>5. Operator-norm convergence implies entrywise convergence.
+:::
 
-::: {.proof}
+::: pf-step
+
+Operator-norm convergence implies entrywise convergence.
+
+
+::: pf-proof
+
 Let
 \[
 E_j
@@ -140,9 +173,14 @@ Thus if
 \|B_m-B\|_{\mathrm{op}}\to0,
 \]
 then every entry of $B_m-B$ tends to zero.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \exp(A)
@@ -152,12 +190,19 @@ I+A+\frac{A^2}{2!}+\cdots
 \]
 converges entrywise for every real matrix $A$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives convergence in operator norm, and step <1>5 gives entrywise convergence.
 This proves part (b).
+
 :::
 
-<1>7. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 \|A\|_{\mathrm{op}}<1.
 \]
@@ -168,7 +213,9 @@ Then the logarithm series
 \]
 converges absolutely in operator norm.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 q=\|A\|_{\mathrm{op}}<1.
@@ -190,9 +237,14 @@ converges for
 0\le q<1.
 \]
 Therefore the matrix series converges absolutely.
+
 :::
 
-<1>8. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 \ln(I+A)
@@ -206,15 +258,24 @@ is well-defined whenever
 \|A\|_{\mathrm{op}}<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the convergent series from step <1>7.
 By step <1>5, it also converges entrywise.
 This proves part (c).
+
 :::
 
-<1>9. In any complete normed algebra, absolutely convergent power series in one element may be multiplied and composed according to the corresponding scalar power-series identities, provided the scalar compositions converge absolutely.
+:::
 
-::: {.proof}
+::: pf-step
+
+In any complete normed algebra, absolutely convergent power series in one element may be multiplied and composed according to the corresponding scalar power-series identities, provided the scalar compositions converge absolutely.
+
+
+::: pf-proof
+
 Let
 \[
 P(A)=\sum_{m=0}^{\infty}p_mA^m
@@ -242,9 +303,14 @@ P(A)Q(A)
 \]
 Thus Cauchy products agree with scalar Cauchy products.
 Repeated application gives the same conclusion for absolutely convergent compositions of scalar power series.
+
 :::
 
-<1>10. For scalar $z$ with
+:::
+
+::: pf-step
+
+For scalar $z$ with
 \[
 |z|<1,
 \]
@@ -262,15 +328,22 @@ where
 (-1)^{m+1}\frac{z^m}{m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the ordinary scalar power-series identity for the exponential and logarithm in the disk
 \[
 |z|<1.
 \]
 Both series converge absolutely there, and their composition represents the analytic function $1+z$.
+
 :::
 
-<1>11. If
+:::
+
+::: pf-step
+
+If
 \[
 \|A\|_{\mathrm{op}}<1,
 \]
@@ -283,7 +356,9 @@ I+A.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4 and <1>7, the exponential and logarithm matrix series converge absolutely in operator norm.
 Step <1>9 permits the same Cauchy-product and composition manipulations as for the scalar power series.
 The scalar identity from step <1>10 has power-series expansion exactly
@@ -297,11 +372,15 @@ Replacing $z$ by $A$ therefore gives
 I+A.
 \]
 This proves part (d).
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>6 proves part (b), step <1>8 proves part (c), and step <1>11 proves part (d).
+
 :::
+
 :::

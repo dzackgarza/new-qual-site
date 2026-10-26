@@ -21,14 +21,19 @@ Let $V,W,Z$ be $n$-dimensional vector spaces and let $T\colon V\to W$ and $U\col
 Prove, without using determinants, that if $UT\colon V\to Z$ is invertible, then both $T$ and $U$ are invertible.
 :::
 
-::: {.solution}
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 \[
 T:V\to W
 \]
 is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 Tv=0.
@@ -56,15 +61,22 @@ Thus
 \ker T=\{0\},
 \]
 so $T$ is injective.
+
 :::
 
-<1>2. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \dim V=\dim W=n,
 \]
 the injective map $T$ is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 By rank-nullity,
 \[
 \dim V
@@ -96,26 +108,40 @@ Hence
 \[
 \operatorname{im}T=W.
 \]
+
 :::
 
-<1>3. Therefore $T$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $T$ is invertible.
+
+
+::: pf-proof
+
 Steps <1>1--<1>2 show that $T$ is both injective and surjective.
 A linear bijection between vector spaces has a linear inverse.
 Thus
 \[
 \boxed{T\text{ is invertible}.}
 \]
+
 :::
 
-<1>4. The map
+:::
+
+::: pf-step
+
+The map
 \[
 U:W\to Z
 \]
 is surjective.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 z\in Z.
@@ -142,15 +168,22 @@ Then
 Uw=z.
 \]
 Thus every $z\in Z$ lies in the image of $U$.
+
 :::
 
-<1>5. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \dim W=\dim Z=n,
 \]
 the surjective map $U$ is injective.
 
-::: {.proof}
+
+::: pf-proof
+
 Rank-nullity gives
 \[
 \dim W
@@ -178,21 +211,32 @@ which forces
 \dim\ker U=0.
 \]
 Thus $U$ is injective.
+
 :::
 
-<1>6. Therefore $U$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $U$ is invertible.
+
+
+::: pf-proof
+
 Steps <1>4--<1>5 show that $U$ is bijective.
 Thus
 \[
 \boxed{U\text{ is invertible}.}
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves that $T$ is invertible, and step <1>6 proves that $U$ is invertible, without using determinants.
+
 :::
+
 :::

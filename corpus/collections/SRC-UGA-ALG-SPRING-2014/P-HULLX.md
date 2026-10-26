@@ -23,33 +23,56 @@ Let $p, n$ be integers such that $p$ is prime and $p$ does not divide $n$.
 Find a real number $k = k (p, n)$ such that for every integer $m\geq k$, every group of order $p^m n$ is not simple.
 :::
 
-::: {.solution}
 Assume $n$ is a positive integer, as required for $p^m n$ to be a group order.
 
-<1>1. An admissible bound is
+::: pf
+
+::: pf-step
+
+An admissible bound is
 \[
 \boxed{k(p,n)=\lfloor\log_p((n-1)!)\rfloor+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every integer $m\geq k(p,n)$, one has $p^m>(n-1)!$, hence $p^mn>n!$. This applies also when $n=1$, when the bound equals one.
+
 :::
 
-<1>2. A simple group $G$ of order $p^m n$ with $m\geq1$ and $p\nmid n$ would embed into $S_r$ for some integer $r$ dividing $n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+A simple group $G$ of order $p^m n$ with $m\geq1$ and $p\nmid n$ would embed into $S_r$ for some integer $r$ dividing $n$.
+
+
+::: pf-proof
+
 Let $r$ be the number of Sylow $p$-subgroups. If $r=1$, its unique Sylow $p$-subgroup is a proper nontrivial normal subgroup, contradicting simplicity. Therefore $r>1$. Conjugation on the Sylow $p$-subgroups yields a nontrivial homomorphism $G\to S_r$. Its kernel is normal and proper, so simplicity makes the kernel trivial. By Sylow's theorem $r$ divides $n$.
+
 :::
 
-<1>3. No group of order $p^m n$ with $m\geq k(p,n)$ is simple.
+:::
 
-::: {.proof}
+::: pf-step
+
+No group of order $p^m n$ with $m\geq k(p,n)$ is simple.
+
+
+::: pf-proof
+
 If such a group were simple, step <1>2 would give an embedding $G\hookrightarrow S_r$ with $r\leq n$, hence $p^mn=|G|\leq r!\leq n!$. This contradicts the strict inequality $p^mn>n!$ from step <1>1.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>3 give the requested bound and establish its asserted property.
+
 :::
+
 :::

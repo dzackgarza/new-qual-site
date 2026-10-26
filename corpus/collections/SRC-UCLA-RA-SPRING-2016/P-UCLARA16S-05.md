@@ -29,7 +29,6 @@ Show that
 for a set of $f$ that is dense in $L^2(\mathbb R^2)$.
 :::
 
-::: {.solution}
 Let
 \[
 \mathcal D
@@ -37,14 +36,20 @@ Let
 \{f\in C_0^\infty(\mathbb R^2):f(0)\ne0\}.
 \]
 
-<1>1. For every $f\in\mathcal D$, there are constants $c>0$ and $r_0>0$ such that
+::: pf
+
+::: pf-step
+
+For every $f\in\mathcal D$, there are constants $c>0$ and $r_0>0$ such that
 \[
 |f(\xi)|\ge c
 \qquad
 (|\xi|\le r_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is continuous and $f(0)\ne0$, choose $r_0>0$ so that
 \[
 |f(\xi)-f(0)|<\frac{|f(0)|}{2}
@@ -60,9 +65,14 @@ Then
 \frac{|f(0)|}{2}.
 \]
 Take $c=|f(0)|/2$.
+
 :::
 
-<1>2. For every $f\in\mathcal D$ there is a constant $C_f>0$, independent of $t$, such that
+:::
+
+::: pf-step
+
+For every $f\in\mathcal D$ there is a constant $C_f>0$, independent of $t$, such that
 \[
 \|u(\cdot,t)\|_{L^2}^2
 \ge
@@ -70,7 +80,9 @@ C_f
 \int_0^{t r_0}\frac{\sin^2 s}{s}\,ds.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $t>0$, set
 \[
 g_t(\xi)
@@ -114,9 +126,14 @@ C_{\mathrm P}c^2
 \end{aligned}
 \]
 Take $C_f=2\pi C_{\mathrm P}c^2$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_0^R\frac{\sin^2 s}{s}\,ds
 \longrightarrow\infty
@@ -124,7 +141,9 @@ Take $C_f=2\pi C_{\mathrm P}c^2$.
 (R\to\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every integer $k\ge0$ and every
 \[
 s\in
@@ -147,9 +166,14 @@ one has $\sin^2 s\ge1/2$. Therefore, whenever $R$ contains the first $N$ such in
 \end{aligned}
 \]
 The final series diverges by comparison with the harmonic series. Hence the integral tends to infinity.
+
 :::
 
-<1>4. For every $f\in\mathcal D$,
+:::
+
+::: pf-step
+
+For every $f\in\mathcal D$,
 \[
 \boxed{
 \lim_{t\to\infty}
@@ -157,7 +181,9 @@ The final series diverges by comparison with the harmonic series. Hence the inte
 =\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \|u(\cdot,t)\|_{L^2}^2
@@ -166,11 +192,18 @@ C_f
 \int_0^{t r_0}\frac{\sin^2 s}{s}\,ds.
 \]
 Since $t r_0\to\infty$ and the integral diverges by step <1>3, the squared norm tends to infinity, hence so does the norm.
+
 :::
 
-<1>5. The set $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+
+
+::: pf-proof
+
 Fix $F\in L^2(\mathbb R^2)$ and $\varepsilon>0$. Since $C_0^\infty(\mathbb R^2)$ is dense in $L^2(\mathbb R^2)$, choose
 \[
 \varphi\in C_0^\infty(\mathbb R^2)
@@ -200,11 +233,15 @@ belongs to $\mathcal D$, and
 \varepsilon.
 \]
 Thus every $L^2$ function can be approximated arbitrarily closely by elements of $\mathcal D$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required divergence for every $f\in\mathcal D$, and step <1>5 proves that $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+
 :::
+
 :::

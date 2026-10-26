@@ -21,7 +21,6 @@ When $B_1$ and $B_2$ are Banach spaces, call a linear operator $T:B_1\to B_2$ co
 Show that if $T$ is compact then $\operatorname{Im}T$ has a dense countable subset.
 :::
 
-::: {.solution}
 For each integer $N\ge1$, let
 \[
 A_N
@@ -29,9 +28,15 @@ A_N
 \{x\in B_1:\|x\|_{B_1}\le N\}.
 \]
 
-<1>1. For every $N\ge1$, the set $T(A_N)$ is relatively compact in $B_2$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For every $N\ge1$, the set $T(A_N)$ is relatively compact in $B_2$.
+
+
+::: pf-proof
+
 Let $(y_j)$ be any sequence in $T(A_N)$. Choose $x_j\in A_N$ with
 \[
 Tx_j=y_j.
@@ -45,15 +50,22 @@ K_N
 \overline{T(A_N)}
 \]
 is compact.
+
 :::
 
-<1>2. For every $N,m\ge1$, there is a finite set
+:::
+
+::: pf-step
+
+For every $N,m\ge1$, there is a finite set
 \[
 F_{N,m}\subset T(A_N)
 \]
 such that every point of $T(A_N)$ lies within distance $2/m$ of some point of $F_{N,m}$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the compact set $K_N$ is totally bounded. Hence there are points
 \[
 z_1,\dots,z_q\in K_N
@@ -85,9 +97,14 @@ Then
 \frac2m.
 \]
 Thus $F_{N,m}$ is a finite $2/m$-net for $T(A_N)$.
+
 :::
 
-<1>3. For each $N\ge1$, the set
+:::
+
+::: pf-step
+
+For each $N\ge1$, the set
 \[
 D_N
 \coloneqq
@@ -95,7 +112,9 @@ D_N
 \]
 is countable and dense in $T(A_N)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each $F_{N,m}$ is finite, so the countable union $D_N$ is countable.
 
 Fix $y\in T(A_N)$ and $\varepsilon>0$. Choose $m$ so large that
@@ -107,9 +126,14 @@ By step <1>2, some point $d\in F_{N,m}\subset D_N$ satisfies
 \|y-d\|<\frac2m<\varepsilon.
 \]
 Hence $D_N$ is dense in $T(A_N)$.
+
 :::
 
-<1>4. The set
+:::
+
+::: pf-step
+
+The set
 \[
 D
 \coloneqq
@@ -117,7 +141,9 @@ D
 \]
 is countable and dense in $\operatorname{Im}T$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each $D_N$ is countable by step <1>3, so $D$ is countable.
 
 Moreover,
@@ -133,20 +159,31 @@ hence
 \bigcup_{N=1}^{\infty}T(A_N).
 \]
 If $y\in\operatorname{Im}T$, then $y\in T(A_N)$ for some $N$. Step <1>3 says that $D_N\subset D$ is dense in that set, so every neighborhood of $y$ meets $D$. Thus $D$ is dense in $\operatorname{Im}T$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\operatorname{Im}T\text{ is separable}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 constructs an explicit dense countable subset of $\operatorname{Im}T$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

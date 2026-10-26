@@ -28,16 +28,21 @@ $F ( z ) = z - a - q f ( z )$ where q is a complex parameter.
 (3) $\mathrm { I f } ~ z \in { K }$ , prove that the function $\displaystyle \frac { 1 } { F ( z ) }$ can be represented as a convergent series with respect to q: ${ \frac { 1 } { F ( z ) } } = \sum _ { n = 0 } ^ { \infty } { \frac { ( q f ( z ) ) ^ { n } } { ( z - a ) ^ { n + 1 } } }$
 :::
 
-::: {.solution}
 Let $C$ denote the circle called $K$ in the problem, let its radius be $\rho$, and let
 $\overline\Delta$ be the closed disk bounded by $C$.
 
-<1>1. On $C$,
+::: pf
+
+::: pf-step
+
+On $C$,
 $$
 |qf(z)|<|z-a|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis is
 $$
 |q|
@@ -47,15 +52,22 @@ $$
 $$
 Since $f(z)\ne0$ on $C$, multiplying by $|f(z)|$ gives the asserted strict inequality for every
 $z\in C$.
+
 :::
 
-<1>2. The function
+:::
+
+::: pf-step
+
+The function
 $$
 F(z)=z-a-qf(z)
 $$
 has exactly one zero in $\Delta$, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 On $C$, step <1>1 gives
 $$
 |F(z)-(z-a)|
@@ -67,11 +79,18 @@ $$
 By Rouché's theorem, $F$ and $z-a$ have the same number of zeros in $\Delta$, counted with
 multiplicity. The function $z-a$ has exactly one zero there, namely $a$, with multiplicity one.
 Therefore $F$ has exactly one zero in $\Delta$, counted with multiplicity.
+
 :::
 
-<1>3. The unique zero $w$ of $F$ in $\overline\Delta$ lies in $\Delta$ and is simple.
+:::
 
-::: {.proof}
+::: pf-step
+
+The unique zero $w$ of $F$ in $\overline\Delta$ lies in $\Delta$ and is simple.
+
+
+::: pf-proof
+
 Step <1>1 implies
 $$
 |F(z)|
@@ -84,9 +103,14 @@ interior, counted with multiplicity one. Hence that zero $w$ is simple, so
 $$
 F'(w)\ne0.
 $$
+
 :::
 
-<1>4. If $G$ is analytic on a neighborhood of $\overline\Delta$, then
+:::
+
+::: pf-step
+
+If $G$ is analytic on a neighborhood of $\overline\Delta$, then
 $$
 \boxed{
 \frac{G(w)}{F'(w)}
@@ -95,7 +119,9 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the meromorphic function
 $$
 \frac{G(z)}{F(z)}
@@ -112,9 +138,14 @@ $$
 =
 \frac{G(w)}{F'(w)}.
 $$
+
 :::
 
-<1>5. There exists a constant $\lambda<1$ such that
+:::
+
+::: pf-step
+
+There exists a constant $\lambda<1$ such that
 $$
 \left|
 \frac{qf(z)}{z-a}
@@ -123,7 +154,9 @@ $$
 $$
 for every $z\in C$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 $$
 z\longmapsto
@@ -131,9 +164,14 @@ z\longmapsto
 $$
 is continuous on the compact circle $C$. By step <1>1 it is strictly less than $1$ at every
 point. Its maximum $\lambda$ is therefore strictly less than $1$.
+
 :::
 
-<1>6. For every $z\in C$,
+:::
+
+::: pf-step
+
+For every $z\in C$,
 $$
 \boxed{
 \frac1{F(z)}
@@ -144,7 +182,9 @@ $$
 $$
 and the series converges uniformly on $C$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 F(z)
@@ -171,12 +211,16 @@ $$
 \right)^n
 $$
 uniformly on $C$. Multiplying by $1/(z-a)$ gives the displayed expansion.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (1), step <1>4 proves part (2), and steps <1>5--<1>6 prove
 part (3).
+
 :::
+
 :::

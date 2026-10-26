@@ -32,14 +32,19 @@ Let $g$ be analytic for $\abs{z} \le 1$ and $\abs{g(z)} < 1$ for $\abs{z} = 1$.
 Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be useful.
 :::
 
-::: {.solution}
-<1>1. Under the hypotheses of part (a), the function
+::: pf
+
+::: pf-step
+
+Under the hypotheses of part (a), the function
 $$
 h(z)=z-g(z)
 $$
 has exactly one zero in $\abs{z}<1$, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 On $\abs{z}=1$,
 $$
 |g(z)|<1=|z|.
@@ -51,26 +56,40 @@ $$
 By Rouché's theorem, $h$ and $z$ have the same number of zeros in the unit disk, counted with
 multiplicity. The function $z$ has exactly one zero there, with multiplicity one. Hence so does
 $h$.
+
 :::
 
-<1>2. Therefore $g$ has a unique fixed point in $\abs{z}<1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $g$ has a unique fixed point in $\abs{z}<1$.
+
+
+::: pf-proof
+
 The fixed points of $g$ are precisely the zeros of
 $$
 h(z)=z-g(z).
 $$
 Step <1>1 gives exactly one such zero in the disk.
+
 :::
 
-<1>3. The conclusion of part (a) is false if the boundary hypothesis is weakened to
+:::
+
+::: pf-step
+
+The conclusion of part (a) is false if the boundary hypothesis is weakened to
 $$
 |g(z)|\le1
 \qquad
 \text{for }|z|=1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 $$
 g(z)=z.
@@ -80,9 +99,14 @@ $$
 |g(z)|=1
 $$
 on the unit circle, but every point of the unit disk is a fixed point. Thus uniqueness fails.
+
 :::
 
-<1>4. For $\alpha\in\DD$, the map
+:::
+
+::: pf-step
+
+For $\alpha\in\DD$, the map
 $$
 \psi_\alpha(z)=\frac{\alpha-z}{1-\bar\alpha z}
 $$
@@ -95,7 +119,9 @@ $$
 \psi_\alpha^{-1}=\psi_\alpha.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives the first two identities and
 $$
 \psi_\alpha(\psi_\alpha(z))=z.
@@ -109,15 +135,22 @@ $$
 $$
 Hence $|z|<1$ if and only if $|\psi_\alpha(z)|<1$, so $\psi_\alpha$ is a biholomorphic
 self-map of the disk.
+
 :::
 
-<1>5. Suppose the map $f$ in part (c) has a fixed point $\alpha\in\DD$. Then
+:::
+
+::: pf-step
+
+Suppose the map $f$ in part (c) has a fixed point $\alpha\in\DD$. Then
 $$
 H=\psi_\alpha\circ f\circ\psi_\alpha
 $$
 is an analytic self-map of $\DD$ with $H(0)=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows that both occurrences of $\psi_\alpha$ map $\DD$ biholomorphically onto itself,
 while the hypothesis of part (c) gives $f(\DD)\subseteq\DD$. Thus $H$ is an analytic self-map.
 Since $\psi_\alpha(0)=\alpha$ and $f(\alpha)=\alpha$,
@@ -129,16 +162,23 @@ H(0)
 \psi_\alpha(\alpha)
 =0.
 $$
+
 :::
 
-<1>6. If $H:\DD\to\DD$ is analytic, $H(0)=0$, and $H(\gamma)=\gamma$ for some
+:::
+
+::: pf-step
+
+If $H:\DD\to\DD$ is analytic, $H(0)=0$, and $H(\gamma)=\gamma$ for some
 $0\ne\gamma\in\DD$, then
 $$
 H(z)=z
 $$
 for all $z\in\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 Schwarz's lemma gives
 $$
 |H(z)|\le|z|
@@ -152,12 +192,19 @@ $$
 H(z)=\lambda z
 $$
 for some $|\lambda|=1$. Since $H(\gamma)=\gamma$ and $\gamma\ne0$, one has $\lambda=1$.
+
 :::
 
-<1>7. If $f:\DD\to\DD$ is analytic and $f\not\equiv\operatorname{id}_{\DD}$, then $f$ has
+:::
+
+::: pf-step
+
+If $f:\DD\to\DD$ is analytic and $f\not\equiv\operatorname{id}_{\DD}$, then $f$ has
 at most one fixed point in $\DD$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose $f$ had distinct fixed points $\alpha,\beta\in\DD$. Define $H$ as in step <1>5 and put
 $$
 \gamma=\psi_\alpha(\beta).
@@ -183,11 +230,15 @@ $$
 f=\operatorname{id}_{\DD},
 $$
 contrary to the hypothesis. Hence two distinct fixed points are impossible.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), step <1>3 answers part (b), and step <1>7 answers part (c).
+
 :::
+
 :::

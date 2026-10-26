@@ -24,8 +24,11 @@ Define what it means for $f$ to be differentiable at a point $x\in U$.
 (c) Prove the Chain Rule you stated in part (b).
 :::
 
-::: {.solution}
-<1>1. A function $f:U\to\RR^k$ is differentiable at $x\in U$ if there exists a linear map
+::: pf
+
+::: pf-step
+
+A function $f:U\to\RR^k$ is differentiable at $x\in U$ if there exists a linear map
 $$
 A:\RR^n\to\RR^k
 $$
@@ -36,16 +39,23 @@ $$
 $$
 where $h$ is restricted so that $x+h\in U$. The map $A$, when it exists, is denoted $Df(x)$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of differentiability in finite-dimensional Euclidean spaces. Equivalently, there is a remainder $r_f(h)$ satisfying
 $$
 f(x+h)=f(x)+Df(x)h+r_f(h),
 \qquad
 \frac{\norm{r_f(h)}}{\norm{h}}\longrightarrow0.
 $$
+
 :::
 
-<1>2. The multivariable Chain Rule is the following statement. Let $U\subset\RR^n$ and $V\subset\RR^k$ be open, let
+:::
+
+::: pf-step
+
+The multivariable Chain Rule is the following statement. Let $U\subset\RR^n$ and $V\subset\RR^k$ be open, let
 $$
 f:U\to V,
 \qquad
@@ -56,11 +66,18 @@ $$
 \boxed{D(g\circ f)(x)=Dg(f(x))\circ Df(x)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the precise chain-rule statement to be proved in the remaining steps.
+
 :::
 
-<1>3. Put
+:::
+
+::: pf-step
+
+Put
 $$
 A=Df(x),
 \qquad
@@ -79,16 +96,25 @@ g(f(x)+u)-g(f(x))=Bu+r_g(u),
 \frac{\norm{r_g(u)}}{\norm u}\to0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 These are exactly the differentiability expansions from step <1>1, first for $f$ at $x$ and then for $g$ at $f(x)$.
+
 :::
 
-<1>4. There are constants $C>0$ and $\delta>0$ such that, whenever $0<\norm{h}<\delta$,
+:::
+
+::: pf-step
+
+There are constants $C>0$ and $\delta>0$ such that, whenever $0<\norm{h}<\delta$,
 $$
 \norm{f(x+h)-f(x)}\le C\norm{h}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \frac{\norm{r_f(h)}}{\norm{h}}\to0.
@@ -106,9 +132,14 @@ $$
 (\norm{A}+1)\norm{h}.
 $$
 Take $C=\norm{A}+1$.
+
 :::
 
-<1>5. For sufficiently small $h$, if
+:::
+
+::: pf-step
+
+For sufficiently small $h$, if
 $$
 u_h=f(x+h)-f(x),
 $$
@@ -118,7 +149,9 @@ $$
 =Br_f(h)+r_g(u_h).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 u_h=Ah+r_f(h).
@@ -133,14 +166,21 @@ $$
 \end{aligned}
 $$
 Rearranging gives the identity.
+
 :::
 
-<1>6. The remainder in step <1>5 is $o(\norm{h})$:
+:::
+
+::: pf-step
+
+The remainder in step <1>5 is $o(\norm{h})$:
 $$
 \frac{\norm{Br_f(h)+r_g(u_h)}}{\norm{h}}\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For the first term,
 $$
 \frac{\norm{Br_f(h)}}{\norm{h}}
@@ -160,22 +200,33 @@ $$
 C\frac{\norm{r_g(u_h)}}{\norm{u_h}}.
 $$
 As $h\to0$, step <1>4 implies $u_h\to0$, so the last factor tends to $0$ by step <1>3. If $u_h=0$, then $r_g(u_h)=r_g(0)=0$. Hence the second term also tends to $0$ after division by $\norm{h}$.
+
 :::
 
-<1>7. The composition $g\circ f$ is differentiable at $x$ with derivative $B\circ A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The composition $g\circ f$ is differentiable at $x$ with derivative $B\circ A$.
+
+
+::: pf-proof
+
 By steps <1>5--<1>6,
 $$
 (g\circ f)(x+h)
 =(g\circ f)(x)+BAh+o(\norm{h}).
 $$
 Since $BA:\RR^n\to\RR^m$ is linear, step <1>1 identifies it as the derivative of $g\circ f$ at $x$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>7 proves the Chain Rule required in part (c).
+
 :::
+
 :::

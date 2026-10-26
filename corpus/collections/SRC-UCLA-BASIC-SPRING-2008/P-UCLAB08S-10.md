@@ -21,7 +21,6 @@ Let $A\in M_n(\mathbb C)$ have $n$ distinct eigenvalues.
 Prove that if $B\in M_n(\mathbb C)$ satisfies $AB=BA$, then $B$ is diagonalizable.
 :::
 
-::: {.solution}
 Let
 \[
 \lambda_1,\ldots,\lambda_n
@@ -31,13 +30,19 @@ be the distinct eigenvalues of $A$, and choose corresponding nonzero eigenvector
 v_1,\ldots,v_n.
 \]
 
-<1>1. The vectors
+::: pf
+
+::: pf-step
+
+The vectors
 \[
 v_1,\ldots,v_n
 \]
 are linearly independent.
 
-::: {.proof}
+
+::: pf-proof
+
 Eigenvectors belonging to distinct eigenvalues are linearly independent.
 For completeness, suppose
 \[
@@ -63,20 +68,32 @@ Hence
 c_k=0.
 \]
 Since $k$ was arbitrary, all coefficients vanish.
+
 :::
 
-<1>2. The list
+:::
+
+::: pf-step
+
+The list
 \[
 v_1,\ldots,v_n
 \]
 is a basis of $\mathbb C^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, it is a linearly independent list of $n$ vectors in the $n$-dimensional space $\mathbb C^n$.
 Therefore it is a basis.
+
 :::
 
-<1>3. Each eigenspace
+:::
+
+::: pf-step
+
+Each eigenspace
 \[
 E_{\lambda_j}
 =
@@ -89,16 +106,25 @@ E_{\lambda_j}
 \operatorname{span}\{v_j\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The direct sum of all eigenspaces contains the $n$ linearly independent vectors from step <1>1 and therefore has dimension at least $n$.
 Since the ambient space has dimension $n$, the sum of the dimensions of the eigenspaces is exactly $n$.
 There are $n$ distinct eigenvalues, and every eigenspace has dimension at least $1$.
 Hence every eigenspace has dimension exactly $1$.
+
 :::
 
-<1>4. Every eigenspace of $A$ is invariant under $B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every eigenspace of $A$ is invariant under $B$.
+
+
+::: pf-proof
+
 Let
 \[
 v\in E_{\lambda_j}.
@@ -125,9 +151,14 @@ Therefore
 \[
 Bv\in E_{\lambda_j}.
 \]
+
 :::
 
-<1>5. For each $j$, there exists
+:::
+
+::: pf-step
+
+For each $j$, there exists
 \[
 \mu_j\in\mathbb C
 \]
@@ -136,7 +167,9 @@ such that
 \boxed{Bv_j=\mu_jv_j}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 Bv_j\in E_{\lambda_j}.
@@ -152,31 +185,49 @@ Therefore
 Bv_j
 \]
 is a scalar multiple of $v_j$.
+
 :::
 
-<1>6. The basis
+:::
+
+::: pf-step
+
+The basis
 \[
 v_1,\ldots,v_n
 \]
 consists of eigenvectors of $B$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the content of step <1>5, together with the fact from step <1>2 that the vectors form a basis.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{B\text{ is diagonalizable}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A linear operator is diagonalizable precisely when the ambient vector space has a basis consisting of eigenvectors.
 Step <1>6 supplies such a basis for $B$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

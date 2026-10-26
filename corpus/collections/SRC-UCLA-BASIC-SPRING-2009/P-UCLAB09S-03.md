@@ -29,20 +29,25 @@ Is it unique?
 Explain.
 :::
 
-::: {.solution}
 Write a general quadratic polynomial as
 \[
 P(x)=a+bx+cx^2.
 \]
 
-<1>1. The conditions at $x=0$ force
+::: pf
+
+::: pf-step
+
+The conditions at $x=0$ force
 \[
 a=\alpha
 \qquad\text{and}\qquad
 b=\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 P(0)=a
@@ -67,9 +72,14 @@ a=\alpha,
 \qquad
 b=\beta.
 \]
+
 :::
 
-<1>2. The condition
+:::
+
+::: pf-step
+
+The condition
 \[
 P(1)=\gamma
 \]
@@ -78,7 +88,9 @@ then forces
 \boxed{c=\gamma-\alpha-\beta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 P(1)
@@ -89,16 +101,23 @@ Setting this equal to $\gamma$ gives
 \[
 c=\gamma-\alpha-\beta.
 \]
+
 :::
 
-<1>3. For the polynomial determined by steps <1>1--<1>2,
+:::
+
+::: pf-step
+
+For the polynomial determined by steps <1>1--<1>2,
 \[
 P'(1)
 =
 2\gamma-2\alpha-\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 P'(x)
@@ -117,9 +136,14 @@ P'(1)
 2\gamma-2\alpha-\beta.
 \end{aligned}
 \]
+
 :::
 
-<1>4. A necessary condition for all four constraints to be satisfied is
+:::
+
+::: pf-step
+
+A necessary condition for all four constraints to be satisfied is
 \[
 \boxed{
 \delta
@@ -128,7 +152,9 @@ P'(1)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Any polynomial satisfying the first three conditions must have the coefficients determined in steps <1>1--<1>2.
 For that polynomial, step <1>3 computes
 \[
@@ -139,11 +165,18 @@ The fourth condition
 P'(1)=\delta
 \]
 therefore requires the displayed equality.
+
 :::
 
-<1>5. The condition in step <1>4 is also sufficient.
+:::
 
-::: {.proof}
+::: pf-step
+
+The condition in step <1>4 is also sufficient.
+
+
+::: pf-proof
+
 Assume
 \[
 \delta
@@ -190,11 +223,18 @@ P'(1)
 \delta.
 \]
 Thus all four constraints hold.
+
 :::
 
-<1>6. Whenever the constraints are compatible, the polynomial is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+Whenever the constraints are compatible, the polynomial is unique.
+
+
+::: pf-proof
+
 The first condition forces the constant coefficient
 \[
 a=\alpha.
@@ -210,9 +250,14 @@ c=\gamma-\alpha-\beta.
 Thus there is at most one quadratic polynomial satisfying the first three constraints, and therefore at most one satisfying all four.
 Step <1>5 constructs one when the compatibility condition holds.
 Hence it is unique.
+
 :::
 
-<1>7. Therefore the complete answer is:
+:::
+
+::: pf-step
+
+Therefore the complete answer is:
 \[
 \boxed{
 \delta=2\gamma-2\alpha-\beta
@@ -228,13 +273,19 @@ P(x)
 \]
 is the unique solution.
 
-::: {.proof}
+
+::: pf-proof
+
 Necessity is step <1>4, sufficiency is step <1>5, and uniqueness is step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 answers parts (a) and (b).
+
 :::
+
 :::

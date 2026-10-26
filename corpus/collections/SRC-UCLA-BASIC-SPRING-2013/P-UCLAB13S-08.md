@@ -27,8 +27,11 @@ Let $T$ be a linear transformation from a finite-dimensional inner-product space
 (d) Use (b) and (c) to show that the row rank of a matrix equals its column rank.
 :::
 
-::: {.solution}
-<1>1. The adjoint of
+::: pf
+
+::: pf-step
+
+The adjoint of
 \[
 T:V\to W
 \]
@@ -51,12 +54,19 @@ v\in V,
 w\in W.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the adjoint.
 In finite-dimensional inner-product spaces, existence and uniqueness follow from the Riesz representation theorem.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 e_1,\ldots,e_n
 \]
@@ -76,20 +86,29 @@ a_{ij}
 \langle Te_j,f_i\rangle_W.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $j$th column of $[T]$ consists of the coordinates of $Te_j$ in the basis $(f_i)$.
 Because the basis is orthonormal, the $i$th coordinate is
 \[
 \langle Te_j,f_i\rangle_W.
 \]
+
 :::
 
-<1>3. The matrix of $T^*$ in the corresponding orthonormal bases is
+:::
+
+::: pf-step
+
+The matrix of $T^*$ in the corresponding orthonormal bases is
 \[
 \boxed{[T^*]=[T]^T}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $(j,i)$ entry of $[T^*]$ is
 \[
 \langle T^*f_i,e_j\rangle_V.
@@ -111,16 +130,23 @@ Hence
 [T^*]=[T]^T.
 \]
 This proves part (b).
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \ker T^*
 \subseteq
 (\operatorname{im}T)^\perp.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 w\in\ker T^*.
@@ -140,16 +166,23 @@ v\in V,
 =0.
 \]
 Thus $w$ is orthogonal to every vector in $\operatorname{im}T$.
+
 :::
 
-<1>5. One also has
+:::
+
+::: pf-step
+
+One also has
 \[
 (\operatorname{im}T)^\perp
 \subseteq
 \ker T^*.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 w\in(\operatorname{im}T)^\perp.
@@ -177,9 +210,14 @@ Hence
 \[
 T^*w=0.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \ker T^*
@@ -188,14 +226,23 @@ T^*w=0.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>4 and <1>5.
 This proves part (c).
+
 :::
 
-<1>7. The rank of $T^*$ equals the rank of $T$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The rank of $T^*$ equals the rank of $T$.
+
+
+::: pf-proof
+
 By rank-nullity for
 \[
 T^*:W\to V,
@@ -221,9 +268,14 @@ Thus
 =
 \operatorname{rank}T.
 \]
+
 :::
 
-<1>8. Let $A$ be the matrix of $T$ in orthonormal bases.
+:::
+
+::: pf-step
+
+Let $A$ be the matrix of $T$ in orthonormal bases.
 Then the column rank of $A$ equals
 \[
 \operatorname{rank}T,
@@ -233,7 +285,9 @@ while the row rank of $A$ equals
 \operatorname{rank}T^*.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $A$ are the coordinate vectors of
 \[
 Te_1,\ldots,Te_n.
@@ -249,9 +303,14 @@ Hence the row rank of $A$ is the column rank of $A^T$, which equals
 \[
 \operatorname{rank}T^*.
 \]
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{rowrank}A
@@ -260,7 +319,9 @@ Hence the row rank of $A$ is the column rank of $A^T$, which equals
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8, these ranks are
 \[
 \operatorname{rank}T^*
@@ -269,11 +330,15 @@ By step <1>8, these ranks are
 \]
 Step <1>7 shows they are equal.
 This proves part (d).
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), step <1>3 proves part (b), step <1>6 proves part (c), and step <1>9 proves part (d).
+
 :::
+
 :::

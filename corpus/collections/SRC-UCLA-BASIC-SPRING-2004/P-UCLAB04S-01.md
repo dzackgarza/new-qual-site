@@ -36,8 +36,11 @@ b=(a_1,\ldots,a_{n-1},1,b_{n+1},\ldots).
 \]
 :::
 
-::: {.solution}
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 a=(a_1,a_2,\ldots)\in S,
 \]
@@ -47,7 +50,9 @@ the series
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 a_k\in\{0,1\},
@@ -70,9 +75,14 @@ Therefore the comparison test gives convergence of
 \sum_{k=1}^{\infty}\frac{a_k}{10^k}.
 \]
 Thus $\theta(a)$ is well-defined.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 a,b\in S
 \]
@@ -91,13 +101,20 @@ a_n=0,
 b_n=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $a\ne b$, the set of indices where they differ is nonempty.
 The positive integers are well-ordered, so this set has a least element $n$.
 At that coordinate the two binary digits are $0$ and $1$; exchange the names of the sequences if necessary.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \theta(b)-\theta(a)
 =
@@ -107,7 +124,9 @@ At that coordinate the two binary digits are $0$ and $1$; exchange the names of 
 \frac{b_k-a_k}{10^k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 \[
 k<n,
@@ -121,9 +140,14 @@ At the first differing index,
 b_n-a_n=1.
 \]
 Subtract the two convergent series term by term.
+
 :::
 
-<1>4. The tail in step <1>3 satisfies
+:::
+
+::: pf-step
+
+The tail in step <1>3 satisfies
 \[
 \sum_{k=n+1}^{\infty}
 \frac{b_k-a_k}{10^k}
@@ -135,7 +159,9 @@ Subtract the two convergent series term by term.
 -\frac1{9\cdot10^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each $k$,
 \[
 b_k-a_k\ge-1.
@@ -155,9 +181,14 @@ The geometric-series sum is
 =
 \frac1{9\cdot10^n}.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \theta(b)-\theta(a)
 \ge
@@ -170,11 +201,18 @@ The geometric-series sum is
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\theta(a)\ne\theta(b)}
 \]
@@ -183,26 +221,39 @@ whenever
 a\ne b.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows that, after possibly interchanging the two sequences,
 \[
 \theta(b)>\theta(a).
 \]
 Thus distinct sequences have distinct images.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\theta:S\to\mathbb R\text{ is injective}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 is exactly the definition of injectivity.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves that $\theta$ is well-defined, and step <1>7 proves injectivity.
+
 :::
+
 :::

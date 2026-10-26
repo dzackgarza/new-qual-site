@@ -24,7 +24,6 @@ c_n=\sup_{x\ne y}\frac{\rho(f^n(x),f^n(y))}{\rho(x,y)}.
 If $\sum_{n=1}^\infty c_n<\infty$, prove that $f$ has a unique fixed point.
 :::
 
-::: {.solution}
 Fix an arbitrary point
 \[
 x_0\in X
@@ -36,14 +35,20 @@ x_n=f^n(x_0),
 n\ge0.
 \]
 
-<1>1. For every $n\ge1$,
+::: pf
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 \rho(x_{n+1},x_n)
 \le
 c_n\,\rho(x_1,x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 x_{n+1}
@@ -64,11 +69,18 @@ the definition of $c_n$ gives
 \le
 c_n\rho(x_1,x_0).
 \]
+
 :::
 
-<1>2. The sequence $(x_n)$ is Cauchy.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(x_n)$ is Cauchy.
+
+
+::: pf-proof
+
 If $m>n$, the triangle inequality and step <1>1 give
 \[
 \begin{aligned}
@@ -93,9 +105,14 @@ Therefore
 \rho(x_m,x_n)\to0
 \]
 uniformly for $m>n\to\infty$.
+
 :::
 
-<1>3. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 p\in X
 \]
@@ -104,13 +121,22 @@ such that
 x_n\to p.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The space $X$ is complete and $(x_n)$ is Cauchy by step <1>2.
+
 :::
 
-<1>4. The map $f$ is Lipschitz, hence continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $f$ is Lipschitz, hence continuous.
+
+
+::: pf-proof
+
 By definition,
 \[
 c_1
@@ -135,14 +161,21 @@ c_1\rho(x,y)
 \]
 for all $x,y$.
 Hence $f$ is Lipschitz and therefore continuous.
+
 :::
 
-<1>5. The limit point $p$ is a fixed point:
+:::
+
+::: pf-step
+
+The limit point $p$ is a fixed point:
 \[
 \boxed{f(p)=p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By continuity of $f$,
 \[
 f(p)
@@ -155,9 +188,14 @@ f\left(\lim_{n\to\infty}x_n\right)
 =
 p.
 \]
+
 :::
 
-<1>6. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \sum_{n=1}^{\infty}c_n<\infty,
 \]
@@ -166,13 +204,22 @@ one has
 c_n\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every convergent series has terms tending to zero.
+
 :::
 
-<1>7. The fixed point is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The fixed point is unique.
+
+
+::: pf-proof
+
 Suppose
 \[
 p,q\in X
@@ -210,17 +257,28 @@ Thus
 \rho(p,q)=0,
 \]
 so $p=q$.
+
 :::
 
-<1>8. Therefore $f$ has a unique fixed point in $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ has a unique fixed point in $X$.
+
+
+::: pf-proof
+
 Step <1>5 proves existence, and step <1>7 proves uniqueness.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

@@ -41,7 +41,6 @@ f(z)=\int_{\mathbb R}\frac{d\mu(x)}{x-z}.
 \]
 :::
 
-::: {.solution}
 Fix $\varepsilon>0$ and define
 \[
 u_\varepsilon(z)
@@ -51,7 +50,11 @@ u_\varepsilon(z)
 (z\in\mathbb H).
 \]
 
-<1>1. The function $u_\varepsilon$ is a positive bounded harmonic function on $\mathbb H$, extends continuously to $\mathbb R$, and
+::: pf
+
+::: pf-step
+
+The function $u_\varepsilon$ is a positive bounded harmonic function on $\mathbb H$, extends continuously to $\mathbb R$, and
 \[
 u_\varepsilon(x)
 =
@@ -60,7 +63,9 @@ u_\varepsilon(x)
 (x\in\mathbb R).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is holomorphic and maps $\mathbb H$ into itself, its imaginary part is positive harmonic. Translation by $i\varepsilon$ preserves harmonicity, so $u_\varepsilon$ is positive harmonic.
 
 The hypothesis
@@ -81,9 +86,14 @@ u_\varepsilon(z)
 \frac1\varepsilon.
 \]
 Since $f$ is holomorphic on the larger half-plane $\operatorname{Im}w>0$, the translated function $z\mapsto f(z+i\varepsilon)$ is holomorphic on $\operatorname{Im}z>-\varepsilon$ and hence continuous across the real axis. The boundary identity is the definition of $g_\varepsilon$.
+
 :::
 
-<1>2. For $z=x+iy\in\mathbb H$,
+:::
+
+::: pf-step
+
+For $z=x+iy\in\mathbb H$,
 \[
 u_\varepsilon(x+iy)
 =
@@ -92,7 +102,9 @@ g_\varepsilon(t)
 \frac{y}{(t-x)^2+y^2}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Poisson representation theorem for bounded harmonic functions on the upper half-plane, continuous on its boundary:
 \[
 u_\varepsilon(x+iy)
@@ -107,9 +119,14 @@ Using
 u_\varepsilon(t)=\pi g_\varepsilon(t)
 \]
 from step <1>1 gives the stated formula.
+
 :::
 
-<1>3. For every $\varepsilon>0$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$,
 \[
 g_\varepsilon\ge0
 \qquad\text{and}\qquad
@@ -118,7 +135,9 @@ g_\varepsilon\ge0
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Positivity follows from $f(\mathbb H)\subset\mathbb H$.
 
 Set $x=0$ in step <1>2 and multiply by $y$:
@@ -150,9 +169,14 @@ gives
 Y\operatorname{Im}f(iY)\longrightarrow1.
 \]
 Since $y/Y\to1$, the left-hand side above tends to $1$. Hence the integral of $g_\varepsilon$ is $1$.
+
 :::
 
-<1>4. For $z\in\mathbb H$, define
+:::
+
+::: pf-step
+
+For $z\in\mathbb H$, define
 \[
 F_\varepsilon(z)
 \coloneqq
@@ -161,7 +185,9 @@ F_\varepsilon(z)
 \]
 Then $F_\varepsilon$ is holomorphic on $\mathbb H$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $g_\varepsilon\in L^1(\mathbb R)$. If $z=x+iy\in\mathbb H$, then
 \[
 |t-z|\ge y,
@@ -179,16 +205,23 @@ so
 \frac1y.
 \]
 On compact subsets of $\mathbb H$, the same positive lower bound for $\operatorname{Im}z$ permits differentiation under the integral sign, proving holomorphy.
+
 :::
 
-<1>5. For every $z\in\mathbb H$,
+:::
+
+::: pf-step
+
+For every $z\in\mathbb H$,
 \[
 \operatorname{Im}F_\varepsilon(z)
 =
 \operatorname{Im}f(z+i\varepsilon).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $z=x+iy$,
 \[
 \operatorname{Im}\frac1{t-z}
@@ -209,9 +242,14 @@ u_\varepsilon(x+iy)
 =
 \operatorname{Im}f(x+i(y+\varepsilon)).
 \]
+
 :::
 
-<1>6. The holomorphic function
+:::
+
+::: pf-step
+
+The holomorphic function
 \[
 D_\varepsilon(z)
 \coloneqq
@@ -219,20 +257,29 @@ f(z+i\varepsilon)-F_\varepsilon(z)
 \]
 is a real constant on $\mathbb H$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 \operatorname{Im}D_\varepsilon(z)=0
 \]
 throughout the connected domain $\mathbb H$. A holomorphic function with image contained in $\mathbb R$ is constant, by the open mapping theorem.
+
 :::
 
-<1>7. In fact,
+:::
+
+::: pf-step
+
+In fact,
 \[
 D_\varepsilon\equiv0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Evaluate on the imaginary axis. The normalization implies
 \[
 f(i(y+\varepsilon))\longrightarrow0
@@ -257,9 +304,14 @@ Hence
 D_\varepsilon(iy)\to0.
 \]
 Since $D_\varepsilon$ is constant by step <1>6, that constant is $0$.
+
 :::
 
-<1>8. For every $\varepsilon>0$ and $z\in\mathbb H$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$ and $z\in\mathbb H$,
 \[
 \boxed{
 f(z+i\varepsilon)
@@ -269,11 +321,18 @@ f(z+i\varepsilon)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the identity $D_\varepsilon\equiv0$ from step <1>7.
+
 :::
 
-<1>9. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \varepsilon_n\downarrow0
 \]
@@ -292,15 +351,22 @@ After passing to a subsequence, there is a finite positive Borel measure $\mu$ o
 (\phi\in C_0(\mathbb R)).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, every $\mu_n$ is a positive measure of total mass $1$. Via the Riesz representation theorem, these measures lie in the closed unit ball of
 \[
 C_0(\mathbb R)^*.
 \]
 Banach--Alaoglu makes that ball weak-* compact. Since $C_0(\mathbb R)$ is separable, the weak-* topology on the ball is metrizable and sequentially compact. Hence a subsequence converges weak-* to a positive bounded functional, which the Riesz representation theorem identifies with a finite positive Borel measure $\mu$.
+
 :::
 
-<1>10. For every $z\in\mathbb H$,
+:::
+
+::: pf-step
+
+For every $z\in\mathbb H$,
 \[
 f(z)
 =
@@ -308,7 +374,9 @@ f(z)
 \frac{d\mu(t)}{t-z}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $z\in\mathbb H$, the function
 \[
 t\longmapsto\frac1{t-z}
@@ -326,14 +394,21 @@ By step <1>8, the left-hand side is
 f(z+i\varepsilon_n),
 \]
 which tends to $f(z)$ by continuity of $f$.
+
 :::
 
-<1>11. The measure $\mu$ has total mass
+:::
+
+::: pf-step
+
+The measure $\mu$ has total mass
 \[
 \boxed{\mu(\mathbb R)=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set $z=iy$ in step <1>10 and multiply by $y$:
 \[
 yf(iy)
@@ -366,11 +441,15 @@ The given normalization makes the same limit equal to $i$. Therefore
 \[
 \mu(\mathbb R)=1.
 \]
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves part (a). Steps <1>9--<1>11 produce a Borel probability measure $\mu$ and prove the representation required in part (b).
+
 :::
+
 :::

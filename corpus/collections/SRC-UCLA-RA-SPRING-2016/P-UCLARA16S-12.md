@@ -29,8 +29,11 @@ audit:
 for all $\theta\in(0,2\pi)$. Show that $u(z)\le0$. The function in part (a) is useful here.
 :::
 
-::: {.solution}
-<1>1. For part (a), define
+::: pf
+
+::: pf-step
+
+For part (a), define
 \[
 \boxed{
 v(z)
@@ -45,7 +48,9 @@ v(z)\longrightarrow\infty
 (z\to1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\in\mathbb D$ one has
 \[
 \operatorname{Re}(1-z)>0,
@@ -77,9 +82,14 @@ Finally, as $z\to1$,
 \left|\frac{1-z}{2}\right|\to0,
 \]
 and therefore $v(z)\to\infty$.
+
 :::
 
-<1>2. Fix $\varepsilon>0$ and set
+:::
+
+::: pf-step
+
+Fix $\varepsilon>0$ and set
 \[
 w_\varepsilon
 \coloneqq
@@ -92,12 +102,19 @@ w_\varepsilon(r\zeta)
 \le0.
 \]
 
-<2>1. If $\zeta=e^{i\theta}\ne1$, then
+
+::: pf-proof
+
+::: pf-step
+
+If $\zeta=e^{i\theta}\ne1$, then
 \[
 \limsup_{r\to1}w_\varepsilon(re^{i\theta})\le0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $v$ extends continuously to every boundary point except $1$, with finite nonnegative value there. By the hypothesis on $u$,
 \[
 \limsup_{r\to1}
@@ -112,16 +129,23 @@ w_\varepsilon(re^{i\theta})
 -\varepsilon v(e^{i\theta})
 \le0.
 \]
+
 :::
 
-<2>2. At the exceptional point $\zeta=1$,
+:::
+
+::: pf-step
+
+At the exceptional point $\zeta=1$,
 \[
 w_\varepsilon(r)\longrightarrow-\infty
 \qquad
 (r\to1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis gives $u(z)\le M$ throughout $\mathbb D$, while step <1>1 gives $v(r)\to\infty$ as $r\to1$. Therefore
 \[
 w_\varepsilon(r)
@@ -132,19 +156,28 @@ M-\varepsilon v(r)
 \longrightarrow
 -\infty.
 \]
+
 :::
 
-<2>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The function $w_\varepsilon$ is harmonic as a linear combination of harmonic functions and satisfies
 \[
 w_\varepsilon\le u\le M
 \]
 because $v>0$. Steps <2>1 and <2>2 give the boundary limsup assertion.
+
 :::
 
-<1>3. If a harmonic function $w$ on $\mathbb D$ is bounded above and satisfies
+:::
+
+:::
+
+::: pf-step
+
+If a harmonic function $w$ on $\mathbb D$ is bounded above and satisfies
 \[
 \limsup_{r\to1}w(re^{i\theta})\le0
 \qquad
@@ -157,7 +190,9 @@ w\le0
 \text{on }\mathbb D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 z=\rho e^{i\varphi}\in\mathbb D.
@@ -217,14 +252,21 @@ P_{\rho/R_n}(\varphi-\theta)
 P_\rho(\varphi-\theta)>0
 \]
 together with the assumed radial limsup inequality for $w$.
+
 :::
 
-<1>4. For every $\varepsilon>0$ and every $z\in\mathbb D$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$ and every $z\in\mathbb D$,
 \[
 u(z)\le\varepsilon v(z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 to $w_\varepsilon$ from step <1>2. Then
 \[
 u(z)-\varepsilon v(z)
@@ -232,24 +274,35 @@ u(z)-\varepsilon v(z)
 w_\varepsilon(z)
 \le0.
 \]
+
 :::
 
-<1>5. For every $z\in\mathbb D$,
+:::
+
+::: pf-step
+
+For every $z\in\mathbb D$,
 \[
 \boxed{u(z)\le0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $z\in\mathbb D$. The number $v(z)$ is finite. By step <1>4,
 \[
 u(z)\le\varepsilon v(z)
 \]
 for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives $u(z)\le0$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 solves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

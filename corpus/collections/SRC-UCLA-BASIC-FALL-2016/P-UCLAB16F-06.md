@@ -20,8 +20,11 @@ Let A be an invertible $n \times n$ matrix whose entries belong to $\mathbb { Q 
 Suppose that $A v = 3 v$ for a vector $v \in \mathbb { R } ^ { n }$ (i) Give an example in which no non-zero scalar multiple λv for $\lambda \in \mathbb { R }$ is in $\mathbb { Q } ^ { n }$ (ii) Show that there is always a non-zero $w \in \mathbb { Q } ^ { n }$ such that $A w = 3 w$
 :::
 
-::: {.solution}
-<1>1. For part (i), take
+::: pf
+
+::: pf-step
+
+For part (i), take
 \[
 n=2,
 \qquad
@@ -38,7 +41,9 @@ Then
 Av=3v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A=3I_2,
@@ -49,14 +54,21 @@ Av=3v
 \]
 for every vector $v\in\mathbb R^2$.
 The matrix $A$ is invertible and has rational entries.
+
 :::
 
-<1>2. For the vector in step <1>1, no nonzero real scalar multiple belongs to
+:::
+
+::: pf-step
+
+For the vector in step <1>1, no nonzero real scalar multiple belongs to
 \[
 \mathbb Q^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 \lambda
@@ -82,9 +94,14 @@ Dividing by the nonzero rational number $\lambda$ would imply
 \]
 a contradiction.
 Thus only $\lambda=0$ gives a rational vector.
+
 :::
 
-<1>3. For part (ii), the equation
+:::
+
+::: pf-step
+
+For part (ii), the equation
 \[
 Aw=3w
 \]
@@ -93,42 +110,65 @@ is equivalent to
 (A-3I)w=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange the eigenvalue equation:
 \[
 Aw-3w=0.
 \]
+
 :::
 
-<1>4. The matrix
+:::
+
+::: pf-step
+
+The matrix
 \[
 A-3I
 \]
  has rational entries.
 
-::: {.proof}
+
+::: pf-proof
+
 The entries of $A$ are rational by hypothesis, and the diagonal entries of $3I$ are rational.
 Their difference therefore has rational entries.
+
 :::
 
-<1>5. The real nullspace
+:::
+
+::: pf-step
+
+The real nullspace
 \[
 \ker_{\mathbb R}(A-3I)
 \]
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 The given vector $v$ satisfies
 \[
 (A-3I)v=0.
 \]
 Since $v$ is an eigenvector, it is nonzero.
 Thus the real nullspace is nontrivial.
+
 :::
 
-<1>6. A rational matrix with nontrivial real nullspace has a nonzero rational null vector.
+:::
 
-::: {.proof}
+::: pf-step
+
+A rational matrix with nontrivial real nullspace has a nonzero rational null vector.
+
+
+::: pf-proof
+
 Let $M$ be a matrix with rational entries and suppose
 \[
 \ker_{\mathbb R}M\ne\{0\}.
@@ -144,9 +184,14 @@ Thus the resulting vector is a nonzero element of
 \mathbb Q^n
 \]
 lying in the nullspace.
+
 :::
 
-<1>7. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 0\ne w\in\mathbb Q^n
 \]
@@ -155,7 +200,9 @@ such that
 Aw=3w.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>6 to
 \[
 M=A-3I.
@@ -173,11 +220,15 @@ By step <1>3, this is equivalent to
 \[
 Aw=3w.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 give the example required in part (i), and steps <1>3--<1>7 prove part (ii).
+
 :::
+
 :::

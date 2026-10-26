@@ -32,26 +32,45 @@ Justify your answer.
 Prove that $X$ is compact if and only if, for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
 :::
 
-::: {.solution}
-<1>1. The metric space $X$ is *compact* if every open cover of $X$ has a finite subcover.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The metric space $X$ is *compact* if every open cover of $X$ has a finite subcover.
+
+
+::: pf-proof
+
 This is the open-cover definition of compactness.
+
 :::
 
-<1>2. The metric space $X$ is *complete* if every Cauchy sequence in $X$ converges to a point of $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The metric space $X$ is *complete* if every Cauchy sequence in $X$ converges to a point of $X$.
+
+
+::: pf-proof
+
 This is the definition of completeness.
+
 :::
 
-<1>3. The metric space $X$ is *connected* if it cannot be written as
+:::
+
+::: pf-step
+
+The metric space $X$ is *connected* if it cannot be written as
 \[
 X=U\cup V
 \]
 where $U,V$ are disjoint nonempty subsets that are open in $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of connectedness.
 Equivalently, the only subsets of $X$ that are both open and closed are
 \[
@@ -59,11 +78,18 @@ Equivalently, the only subsets of $X$ that are both open and closed are
 \quad\text{and}\quad
 X.
 \]
+
 :::
 
-<1>4. The space $\mathbb Q$ with its usual metric is not connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $\mathbb Q$ with its usual metric is not connected.
+
+
+::: pf-proof
+
 Choose an irrational number, for example
 \[
 \alpha=\sqrt2.
@@ -103,11 +129,18 @@ Hence
 \[
 \boxed{\mathbb Q\text{ is disconnected}.}
 \]
+
 :::
 
-<1>5. If $X$ is compact, then for every $r>0$, finitely many open balls of radius $r$ cover $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $X$ is compact, then for every $r>0$, finitely many open balls of radius $r$ cover $X$.
+
+
+::: pf-proof
+
 Fix
 \[
 r>0.
@@ -129,12 +162,19 @@ B(x_1,r)
 \cup\cdots\cup
 B(x_N,r).
 \]
+
 :::
 
-<1>6. Conversely, suppose that for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
+:::
+
+::: pf-step
+
+Conversely, suppose that for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
 Then every sequence in $X$ has a Cauchy subsequence.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 (x_n)
@@ -187,19 +227,33 @@ d(y_m,y_n)<\varepsilon
 \]
 for all $m,n\ge k$.
 Thus $(y_k)$ is Cauchy.
+
 :::
 
-<1>7. If $X$ is complete and satisfies the finite-ball-cover property, then every sequence in $X$ has a convergent subsequence.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $X$ is complete and satisfies the finite-ball-cover property, then every sequence in $X$ has a convergent subsequence.
+
+
+::: pf-proof
+
 By step <1>6, every sequence has a Cauchy subsequence.
 Completeness implies that this Cauchy subsequence converges to a point of $X$.
 Thus $X$ is sequentially compact.
+
 :::
 
-<1>8. In a metric space, sequential compactness implies compactness.
+:::
 
-::: {.proof}
+::: pf-step
+
+In a metric space, sequential compactness implies compactness.
+
+
+::: pf-proof
+
 First, sequential compactness implies total boundedness.
 Indeed, if for some $\varepsilon>0$ no finite collection of $\varepsilon$-balls covered $X$, one could inductively choose
 \[
@@ -267,9 +321,14 @@ cover $X$.
 Each such ball has diameter less than $\delta$, so by the Lebesgue-number property it lies inside some member of $\mathcal U$.
 Choosing one such member for each ball gives a finite subcover of $\mathcal U$.
 Thus $X$ is compact.
+
 :::
 
-<1>9. If $X$ is complete, then
+:::
+
+::: pf-step
+
+If $X$ is complete, then
 \[
 \boxed{
 X\text{ is compact}
@@ -278,14 +337,20 @@ X\text{ is compact}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The forward implication is step <1>5.
 For the reverse implication, steps <1>6--<1>7 give sequential compactness, and step <1>8 turns sequential compactness into compactness.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 give the requested definitions, step <1>4 answers part (d), and step <1>9 proves part (e).
+
 :::
+
 :::

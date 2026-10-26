@@ -19,22 +19,34 @@ audit:
 Prove that the set of irrational numbers in $\mathbb R$ is not a countable union of closed subsets of $\mathbb R$.
 :::
 
-::: {.solution}
 Let $P=\RR\setminus\QQ$ denote the set of irrational numbers.
 
-<1>1. Every closed subset $F\subseteq P$ has empty interior in $\RR$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every closed subset $F\subseteq P$ has empty interior in $\RR$.
+
+
+::: pf-proof
+
 Suppose instead that $F$ contained a nonempty open interval $I$. Every nonempty open interval in $\RR$ contains a rational number, so there would be some
 $$
 q\in I\cap\QQ.
 $$
 But $I\subseteq F\subseteq P$ contains no rational numbers, a contradiction. Hence $F$ has empty interior.
+
 :::
 
-<1>2. Every closed subset $F\subseteq P$ is nowhere dense in $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every closed subset $F\subseteq P$ is nowhere dense in $\RR$.
+
+
+::: pf-proof
+
 Because $F$ is closed,
 $$
 \overline F=F.
@@ -44,11 +56,18 @@ $$
 \operatorname{int}(\overline F)=\varnothing,
 $$
 which is exactly the definition that $F$ is nowhere dense.
+
 :::
 
-<1>3. The rational numbers form a countable union of nowhere-dense subsets of $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The rational numbers form a countable union of nowhere-dense subsets of $\RR$.
+
+
+::: pf-proof
+
 Enumerate
 $$
 \QQ=\{q_1,q_2,\ldots\}.
@@ -58,11 +77,18 @@ $$
 \QQ=\bigcup_{n=1}^{\infty}\{q_n\}
 $$
 is a countable union of nowhere-dense sets.
+
 :::
 
-<1>4. The irrational numbers cannot be a countable union of closed subsets of $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The irrational numbers cannot be a countable union of closed subsets of $\RR$.
+
+
+::: pf-proof
+
 Assume for contradiction that
 $$
 P=\bigcup_{n=1}^{\infty}F_n,
@@ -78,11 +104,15 @@ $$
 would be a countable union of nowhere-dense subsets of $\RR$.
 
 This contradicts the Baire category theorem, because $\RR$ is a complete metric space and therefore is not a countable union of nowhere-dense subsets of itself.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves the required assertion.
+
 :::
+
 :::

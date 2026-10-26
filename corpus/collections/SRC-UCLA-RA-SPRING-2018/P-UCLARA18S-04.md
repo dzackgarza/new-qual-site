@@ -35,7 +35,6 @@ is bounded on $L^p(\mathbb R^2)$.
 converges to $f$ almost everywhere in the plane as $r\to0$.
 :::
 
-::: {.solution}
 Let \(M_1\) denote the centered one-dimensional Hardy--Littlewood maximal
 operator:
 \[
@@ -46,7 +45,11 @@ operator:
 \int_{-r}^{r}|g(x+h)|\,dh.
 \]
 
-<1>1. For every locally integrable \(f\),
+::: pf
+
+::: pf-step
+
+For every locally integrable \(f\),
 \[
 |Mf(x,y)|
 \le
@@ -55,7 +58,9 @@ M_1^x\!\left(M_1^y|f|\right)(x,y),
 where \(M_1^x\) and \(M_1^y\) apply the one-dimensional maximal operator in
 the indicated variable.
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed \(r,\rho>0\),
 \[
 \begin{aligned}
@@ -81,16 +86,23 @@ M_1^x(M_1^y|f|)(x,y).
 \end{aligned}
 \]
 Taking the supremum over \(r,\rho\) gives the claim.
+
 :::
 
-<1>2. For \(1<p<\infty\),
+:::
+
+::: pf-step
+
+For \(1<p<\infty\),
 \[
 \|M_1^y|f|\|_{L^p(\mathbb R^2)}
 \le
 C_p\|f\|_{L^p(\mathbb R^2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For almost every fixed \(x\), the section
 \[
 y\longmapsto f(x,y)
@@ -105,16 +117,23 @@ C_p^p
 \int_{\mathbb R}|f(x,y)|^p\,dy.
 \]
 Integrating in \(x\) yields the stated estimate.
+
 :::
 
-<1>3. One also has
+:::
+
+::: pf-step
+
+One also has
 \[
 \|M_1^x(M_1^y|f|)\|_{L^p(\mathbb R^2)}
 \le
 C_p^2\|f\|_{L^p(\mathbb R^2)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the same one-dimensional maximal theorem in the \(x\)-variable to the
 function
 \[
@@ -128,9 +147,14 @@ C_p\|g\|_p
 \le
 C_p^2\|f\|_p.
 \]
+
 :::
 
-<1>4. Therefore the strong maximal operator in part (a) is bounded on
+:::
+
+::: pf-step
+
+Therefore the strong maximal operator in part (a) is bounded on
 \(L^p(\mathbb R^2)\):
 \[
 \boxed{
@@ -139,11 +163,18 @@ C_p^2\|f\|_p.
 C_p^2\|f\|_{L^p(\mathbb R^2)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine the pointwise domination in step <1>1 with step <1>3.
+
 :::
 
-<1>5. For \(r>0\), define the averaging-error operator
+:::
+
+::: pf-step
+
+For \(r>0\), define the averaging-error operator
 \[
 T_rf(x,y)
 =
@@ -162,17 +193,26 @@ Then
 T_rf(x,y).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract \(f(x,y)\) from the average defining \(A_rf(x,y)\), move it inside
 the integral, and apply the triangle inequality.
+
 :::
 
-<1>6. If \(g\in C_c(\mathbb R^2)\), then
+:::
+
+::: pf-step
+
+If \(g\in C_c(\mathbb R^2)\), then
 \[
 \boxed{Tg=0\quad\text{everywhere}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every compactly supported continuous function on \(\mathbb R^2\) is uniformly
 continuous. Given \(\varepsilon>0\), choose \(\delta>0\) such that
 \[
@@ -191,9 +231,14 @@ satisfies this bound. Hence
 T_rg(x,y)\le\varepsilon
 \]
 for all \((x,y)\), and \(Tg=0\).
+
 :::
 
-<1>7. For every \(u\in L^p(\mathbb R^2)\),
+:::
+
+::: pf-step
+
+For every \(u\in L^p(\mathbb R^2)\),
 \[
 \boxed{
 Tu(x,y)
@@ -202,7 +247,9 @@ Tu(x,y)
 \]
 almost everywhere.
 
-::: {.proof}
+
+::: pf-proof
+
 For every \(r>0\),
 \[
 \begin{aligned}
@@ -226,9 +273,14 @@ T_ru(x,y)
 \end{aligned}
 \]
 Take \(\limsup_{r\to0}\).
+
 :::
 
-<1>8. Fix \(\alpha>0\). For every \(u\in L^p(\mathbb R^2)\),
+:::
+
+::: pf-step
+
+Fix \(\alpha>0\). For every \(u\in L^p(\mathbb R^2)\),
 \[
 \left|\{Tu\ge\alpha\}\right|
 \le
@@ -238,7 +290,9 @@ Take \(\limsup_{r\to0}\).
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>7,
 \[
 \{Tu\ge\alpha\}
@@ -248,9 +302,14 @@ By step <1>7,
 \{M|u|\ge\alpha/2\}.
 \]
 Apply Chebyshev's inequality to each set and add the resulting bounds.
+
 :::
 
-<1>9. There is a constant \(C_{p,\alpha}\) such that
+:::
+
+::: pf-step
+
+There is a constant \(C_{p,\alpha}\) such that
 \[
 \boxed{
 \left|\{Tu\ge\alpha\}\right|
@@ -258,7 +317,9 @@ Apply Chebyshev's inequality to each set and add the resulting bounds.
 C_{p,\alpha}\|u\|_p^p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By part (a),
 \[
 \|M|u|\|_p
@@ -274,9 +335,14 @@ Insert this into step <1>8:
 1+C_p^{2p}
 \right)\|u\|_p^p.
 \]
+
 :::
 
-<1>10. Let \(f\in L^p(\mathbb R^2)\). For every \(\varepsilon>0\), choose
+:::
+
+::: pf-step
+
+Let \(f\in L^p(\mathbb R^2)\). For every \(\varepsilon>0\), choose
 \[
 g\in C_c(\mathbb R^2)
 \]
@@ -294,7 +360,9 @@ Tf\le Tu
 \]
 almost everywhere.
 
-::: {.proof}
+
+::: pf-proof
+
 The operators \(T_r\) are subadditive:
 \[
 T_r(f)
@@ -306,15 +374,22 @@ Taking limsups gives
 Tf\le Tg+Tu.
 \]
 Step <1>6 gives \(Tg=0\).
+
 :::
 
-<1>11. For every \(\alpha>0\),
+:::
+
+::: pf-step
+
+For every \(\alpha>0\),
 \[
 \left|\{Tf\ge\alpha\}\right|
 =0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10,
 \[
 \{Tf\ge\alpha\}
@@ -333,14 +408,21 @@ The left-hand side is independent of \(\varepsilon\). Let
 \[
 \varepsilon\downarrow0.
 \]
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{Tf=0\quad\text{almost everywhere}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>11 with
 \[
 \alpha=\frac1m,
@@ -357,9 +439,14 @@ Tf\ge\frac1m
 \right\}
 \]
 is a countable union of null sets.
+
 :::
 
-<1>13. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 A_rf(x,y)\longrightarrow f(x,y)
@@ -367,7 +454,9 @@ A_rf(x,y)\longrightarrow f(x,y)
 \]
 as \(r\to0\).
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 \limsup_{r\to0}
@@ -377,11 +466,15 @@ Tf(x,y).
 \]
 Step <1>12 makes the right-hand side zero almost everywhere, forcing the
 desired convergence.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>13 proves part (b).
+
 :::
+
 :::

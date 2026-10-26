@@ -21,7 +21,6 @@ Let $(f_n)$ be measurable functions on $[0,1]$ converging almost everywhere to a
 Prove that for every $\varepsilon>0$ there exists a measurable set $E\subseteq[0,1]$ with $\lambda(E)<\varepsilon$ such that $f_n\to f$ uniformly on $[0,1]\setminus E$.
 :::
 
-::: {.solution}
 Fix
 \[
 \varepsilon>0.
@@ -39,9 +38,15 @@ x\in[0,1]:
 \right\}.}
 \]
 
-<1>1. Each set \(A_{m,N}\) is measurable.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Each set \(A_{m,N}\) is measurable.
+
+
+::: pf-proof
+
 The functions \(f_n\) and \(f\) are measurable, so
 \[
 |f_n-f|
@@ -51,28 +56,42 @@ is measurable. Hence each set
 \left\{|f_n-f|\ge\frac1m\right\}
 \]
 is measurable, and a countable union of measurable sets is measurable.
+
 :::
 
-<1>2. For fixed \(m\), the sets \(A_{m,N}\) decrease with \(N\):
+:::
+
+::: pf-step
+
+For fixed \(m\), the sets \(A_{m,N}\) decrease with \(N\):
 \[
 \boxed{
 A_{m,N+1}\subseteq A_{m,N}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The union defining \(A_{m,N+1}\) runs over the smaller index set
 \[
 \{n\ge N+1\}\subseteq\{n\ge N\}.
 \]
+
 :::
 
-<1>3. For fixed \(m\),
+:::
+
+::: pf-step
+
+For fixed \(m\),
 \[
 \bigcap_{N=1}^{\infty}A_{m,N}
 \]
 is contained in the set where \(f_n\) fails to converge to \(f\).
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x\in\bigcap_N A_{m,N},
@@ -82,9 +101,14 @@ then for every \(N\) there exists \(n\ge N\) such that
 |f_n(x)-f(x)|\ge\frac1m.
 \]
 Thus the difference does not eventually stay below \(1/m\), so \(f_n(x)\not\to f(x)\).
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \lambda\left(
@@ -92,11 +116,18 @@ Thus the difference does not eventually stay below \(1/m\), so \(f_n(x)\not\to f
 \right)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sequence converges to \(f\) almost everywhere, so the failure set has Lebesgue measure zero. Apply step <1>3.
+
 :::
 
-<1>5. Because
+:::
+
+::: pf-step
+
+Because
 \[
 A_{m,1}\subseteq[0,1],
 \]
@@ -105,11 +136,18 @@ one has
 \lambda(A_{m,1})\le1<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Lebesgue measure of \([0,1]\) is \(1\).
+
 :::
 
-<1>6. By continuity from above of measure,
+:::
+
+::: pf-step
+
+By continuity from above of measure,
 \[
 \boxed{
 \lambda(A_{m,N})\longrightarrow0
@@ -117,11 +155,18 @@ Lebesgue measure of \([0,1]\) is \(1\).
 \]
 for every fixed \(m\).
 
-::: {.proof}
+
+::: pf-proof
+
 The sets decrease by step <1>2, the first has finite measure by step <1>5, and their intersection has measure zero by step <1>4.
+
 :::
 
-<1>7. For each \(m\ge1\), choose \(N_m\) such that
+:::
+
+::: pf-step
+
+For each \(m\ge1\), choose \(N_m\) such that
 \[
 \boxed{
 \lambda(A_{m,N_m})
@@ -129,11 +174,18 @@ The sets decrease by step <1>2, the first has finite measure by step <1>5, and t
 \frac{\varepsilon}{2^m}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is possible by step <1>6.
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 E
@@ -142,17 +194,26 @@ E
 A_{m,N_m}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is a countable union of measurable sets, hence measurable.
+
 :::
 
-<1>9. The exceptional set satisfies
+:::
+
+::: pf-step
+
+The exceptional set satisfies
 \[
 \boxed{
 \lambda(E)<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By countable subadditivity and step <1>7,
 \[
 \lambda(E)
@@ -165,20 +226,22 @@ By countable subadditivity and step <1>7,
 =
 \varepsilon.
 \]
+
 :::
 
-Let
-\[
-F=[0,1]\setminus E.
-\]
+:::
 
-<1>10. For every \(m\ge1\), every \(x\in F\), and every \(n\ge N_m\),
+::: pf-step
+
+For every \(m\ge1\), every \(x\in F\), and every \(n\ge N_m\),
 \[
 \boxed{
 |f_n(x)-f(x)|<\frac1m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 x\notin E,
@@ -191,9 +254,14 @@ By definition of \(A_{m,N_m}\), this means there is no \(n\ge N_m\) for which
 \[
 |f_n(x)-f(x)|\ge\frac1m.
 \]
+
 :::
 
-<1>11. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \delta>0.
 \]
@@ -202,11 +270,18 @@ Choose \(m\) so large that
 \frac1m<\delta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sequence \(1/m\) tends to \(0\).
+
 :::
 
-<1>12. Then for every
+:::
+
+::: pf-step
+
+Then for every
 \[
 n\ge N_m
 \]
@@ -219,14 +294,21 @@ x\in F,
 |f_n(x)-f(x)|<\delta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>10,
 \[
 |f_n(x)-f(x)|<\frac1m<\delta.
 \]
+
 :::
 
-<1>13. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f_n\to f
@@ -234,11 +316,18 @@ f_n\to f
 [0,1]\setminus E}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>12 is exactly the definition of uniform convergence on \(F\): for the given \(\delta>0\), the single index \(N_m\) works simultaneously for every \(x\in F\).
+
 :::
 
-<1>14. Thus for every \(\varepsilon>0\), there exists a measurable set \(E\subseteq[0,1]\) with
+:::
+
+::: pf-step
+
+Thus for every \(\varepsilon>0\), there exists a measurable set \(E\subseteq[0,1]\) with
 \[
 \boxed{\lambda(E)<\varepsilon}
 \]
@@ -247,13 +336,19 @@ such that \(f_n\to f\) uniformly on
 \boxed{[0,1]\setminus E}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The measure estimate is step <1>9 and uniform convergence is step <1>13.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>14 is the required conclusion.
+
 :::
+
 :::

@@ -22,12 +22,17 @@ Show that $T$ is similar to a diagonal matrix.
 You may not use the Spectral Theorem.
 :::
 
-::: {.solution}
 Let $T\in M_n(\mathbb R)$ be symmetric. The proof is by induction on $n$.
 
-<1>1. The matrix $T$ has a real eigenvalue and a nonzero real eigenvector.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $T$ has a real eigenvalue and a nonzero real eigenvector.
+
+
+::: pf-proof
+
 Over $\mathbb C$, the characteristic polynomial of $T$ has a root $\lambda$ by the fundamental theorem of algebra. Choose a nonzero vector $z\in\mathbb C^n$ such that
 \[
 Tz=\lambda z.
@@ -52,15 +57,22 @@ Tx=\lambda x,
 Ty=\lambda y.
 \]
 At least one of $x,y$ is nonzero, so $T$ has a nonzero real eigenvector.
+
 :::
 
-<1>2. If $v$ is a real eigenvector of $T$, then the orthogonal complement
+:::
+
+::: pf-step
+
+If $v$ is a real eigenvector of $T$, then the orthogonal complement
 \[
 v^\perp
 \]
 is invariant under $T$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 Tv=\lambda v
@@ -75,15 +87,22 @@ and let $w\in v^\perp$. Since $T^t=T$,
 =0.
 \]
 Thus $Tw\in v^\perp$.
+
 :::
 
-<1>3. The restriction
+:::
+
+::: pf-step
+
+The restriction
 \[
 T|_{v^\perp}:v^\perp\to v^\perp
 \]
 is symmetric with respect to the Euclidean inner product.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 the restriction is well-defined. For $w_1,w_2\in v^\perp$,
 \[
 \langle T w_1,w_2\rangle
@@ -91,11 +110,18 @@ By step <1>2 the restriction is well-defined. For $w_1,w_2\in v^\perp$,
 \langle w_1,T w_2\rangle
 \]
 because $T$ is symmetric on $\mathbb R^n$. Hence the restriction is symmetric.
+
 :::
 
-<1>4. For every $n\ge1$, every real symmetric $n\times n$ matrix has an orthonormal basis of real eigenvectors.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $n\ge1$, every real symmetric $n\times n$ matrix has an orthonormal basis of real eigenvectors.
+
+
+::: pf-proof
+
 For $n=1$ the assertion is immediate.
 
 Assume it holds in dimension $n-1$, and let $T\in M_n(\mathbb R)$ be symmetric. By step <1>1, choose a real eigenvector $v_1$ and normalize it so that $\|v_1\|=1$. Then $v_1^\perp$ has dimension $n-1$, and by steps <1>2--<1>3 the restriction of $T$ to $v_1^\perp$ is symmetric. By the induction hypothesis, $v_1^\perp$ has an orthonormal basis
@@ -107,11 +133,18 @@ consisting of eigenvectors of the restriction, hence of $T$. Therefore
 v_1,\ldots,v_n
 \]
 is an orthonormal basis of $\mathbb R^n$ consisting of eigenvectors of $T$.
+
 :::
 
-<1>5. The matrix $T$ is similar to a diagonal matrix.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $T$ is similar to a diagonal matrix.
+
+
+::: pf-proof
+
 Let $v_1,\ldots,v_n$ be the basis from step <1>4, with
 \[
 Tv_i=\lambda_i v_i.
@@ -125,11 +158,15 @@ The matrix of $T$ in this eigenbasis is
 \boxed{P^{-1}TP=\operatorname{diag}(\lambda_1,\ldots,\lambda_n)}.
 \]
 Thus $T$ is similar to a diagonal matrix.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the required diagonalizability, and steps <1>1--<1>4 establish it without invoking the Spectral Theorem.
+
 :::
+
 :::

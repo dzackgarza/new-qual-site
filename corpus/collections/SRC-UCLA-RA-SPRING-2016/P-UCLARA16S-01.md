@@ -35,15 +35,20 @@ K_t*f(x)=\int_{\mathbb R^3}K_t(x-y)f(y)\,dy.
 (b) Prove that $t^{1/2}\lVert K_t*f\rVert_{L^\infty}\to0$ as $t\to0$, for $f\in L^3(\mathbb R^3)$.
 :::
 
-::: {.solution}
-<1>1. The heat kernel satisfies the scaling identity
+::: pf
+
+::: pf-step
+
+The heat kernel satisfies the scaling identity
 \[
 K_t(x)
 =
 t^{-3/2}K_1\!\left(\frac{x}{\sqrt t}\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \begin{aligned}
@@ -58,16 +63,23 @@ t^{-3/2}(4\pi)^{-3/2}
 K_t(x).
 \end{aligned}
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \|K_t\|_{L^{3/2}}
 =
 t^{-1/2}\|K_1\|_{L^{3/2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1 and the change of variables
 \[
 y=\frac{x}{\sqrt t},
@@ -94,9 +106,14 @@ t^{-3/4}
 \end{aligned}
 \]
 Raising both sides to the power $2/3$ yields the claimed scaling.
+
 :::
 
-<1>3. For every $f\in L^3(\mathbb R^3)$ and every $t>0$,
+:::
+
+::: pf-step
+
+For every $f\in L^3(\mathbb R^3)$ and every $t>0$,
 \[
 \boxed{
 t^{1/2}\|K_t*f\|_{L^\infty}
@@ -105,7 +122,9 @@ t^{1/2}\|K_t*f\|_{L^\infty}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Young's convolution inequality with exponents
 \[
 \frac{2}{3}+\frac{1}{3}=1
@@ -117,9 +136,14 @@ gives
 \|K_t\|_{3/2}\|f\|_3.
 \]
 Substitute the scaling from step <1>2 and multiply by $t^{1/2}$.
+
 :::
 
-<1>4. The operators
+:::
+
+::: pf-step
+
+The operators
 \[
 T_t:L^3(\mathbb R^3)\to L^\infty(\mathbb R^3),
 \qquad
@@ -127,7 +151,9 @@ T_tf=t^{1/2}K_t*f,
 \]
 are bounded uniformly in $t>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives
 \[
 \|T_tf\|_\infty
@@ -135,9 +161,14 @@ Step <1>3 gives
 \|K_1\|_{3/2}\|f\|_3
 \]
 with a constant independent of $t$. This proves part (a).
+
 :::
 
-<1>5. If $g\in C_c(\mathbb R^3)$, then
+:::
+
+::: pf-step
+
+If $g\in C_c(\mathbb R^3)$, then
 \[
 t^{1/2}\|K_t*g\|_\infty
 \longrightarrow0
@@ -145,7 +176,9 @@ t^{1/2}\|K_t*g\|_\infty
 (t\to0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The heat kernel has total mass $1$:
 \[
 \|K_t\|_1=1.
@@ -167,9 +200,14 @@ t^{1/2}\|K_t*g\|_\infty
 t^{1/2}\|g\|_\infty
 \longrightarrow0.
 \]
+
 :::
 
-<1>6. For every $f\in L^3(\mathbb R^3)$,
+:::
+
+::: pf-step
+
+For every $f\in L^3(\mathbb R^3)$,
 \[
 \boxed{
 t^{1/2}\|K_t*f\|_\infty
@@ -179,7 +217,9 @@ t^{1/2}\|K_t*f\|_\infty
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Since $C_c(\mathbb R^3)$ is dense in $L^3(\mathbb R^3)$, choose $g\in C_c(\mathbb R^3)$ such that
 \[
 \|f-g\|_3
@@ -211,11 +251,15 @@ t^{1/2}\|K_t*g\|_\infty\\
 \end{aligned}
 \]
 This proves part (b).
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

@@ -24,8 +24,11 @@ f(t)=e^{t^2}+\frac12\int_0^1\cos(s)f(s)\,ds
 admits a unique continuous solution $f:[0,1]\to\mathbb R$.
 :::
 
-::: {.solution}
-<1>1. If $f$ is a solution, then the quantity
+::: pf
+
+::: pf-step
+
+If $f$ is a solution, then the quantity
 \[
 c
 =
@@ -36,7 +39,9 @@ is a constant independent of $t$, and
 \boxed{f(t)=e^{t^2}+c}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integral in the equation is taken over the fixed interval $[0,1]$ and contains no $t$ outside the function value $f(s)$.
 Thus it is a single real number.
 Denote that number by $c$.
@@ -44,9 +49,14 @@ The equation then becomes
 \[
 f(t)=e^{t^2}+c.
 \]
+
 :::
 
-<1>2. Substituting the expression from step <1>1 into the definition of $c$ gives
+:::
+
+::: pf-step
+
+Substituting the expression from step <1>1 into the definition of $c$ gives
 \[
 c
 =
@@ -58,7 +68,9 @@ c
 \int_0^1\cos(s)\,ds.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 f(s)=e^{s^2}+c.
@@ -75,16 +87,23 @@ c
 \frac c2\int_0^1\cos(s)\,ds.
 \end{aligned}
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_0^1\cos(s)\,ds
 =
 \sin1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative of $\cos s$ is $\sin s$, so
 \[
 \int_0^1\cos(s)\,ds
@@ -93,9 +112,14 @@ An antiderivative of $\cos s$ is $\sin s$, so
 =
 \sin1.
 \]
+
 :::
 
-<1>4. Hence $c$ must satisfy
+:::
+
+::: pf-step
+
+Hence $c$ must satisfy
 \[
 \left(
 1-\frac{\sin1}{2}
@@ -105,21 +129,30 @@ An antiderivative of $\cos s$ is $\sin s$, so
 \int_0^1\cos(s)e^{s^2}\,ds.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>3 into step <1>2 and move the term
 \[
 \frac c2\sin1
 \]
 to the left.
+
 :::
 
-<1>5. The coefficient
+:::
+
+::: pf-step
+
+The coefficient
 \[
 1-\frac{\sin1}{2}
 \]
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 |\sin1|\le1,
@@ -132,9 +165,14 @@ one has
 >
 0.
 \]
+
 :::
 
-<1>6. Therefore there is exactly one possible value
+:::
+
+::: pf-step
+
+Therefore there is exactly one possible value
 \[
 \boxed{
 c
@@ -147,11 +185,18 @@ c
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the linear equation from step <1>4 using the nonzero coefficient from step <1>5.
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 f(t)
@@ -162,17 +207,26 @@ e^{t^2}+c
 with $c$ as in step <1>6.
 Then $f$ is continuous on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 t\longmapsto e^{t^2}
 \]
 is continuous, and adding a constant preserves continuity.
+
 :::
 
-<1>8. The function from step <1>7 satisfies the integral equation.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function from step <1>7 satisfies the integral equation.
+
+
+::: pf-proof
+
 By the defining equation for $c$ from step <1>2,
 \[
 \frac12
@@ -202,11 +256,18 @@ e^{t^2}+c
 =
 f(t).
 \]
+
 :::
 
-<1>9. The continuous solution is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The continuous solution is unique.
+
+
+::: pf-proof
+
 Any solution must have the form
 \[
 f(t)=e^{t^2}+c
@@ -215,17 +276,28 @@ by step <1>1.
 Its constant $c$ must satisfy the scalar equation from step <1>4.
 By step <1>5, that equation has exactly one solution, namely the value in step <1>6.
 Thus no second continuous solution can exist.
+
 :::
 
-<1>10. Therefore the equation admits a unique continuous solution.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the equation admits a unique continuous solution.
+
+
+::: pf-proof
+
 Existence is step <1>8 and uniqueness is step <1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

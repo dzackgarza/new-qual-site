@@ -27,42 +27,61 @@ Prove that $f_n\to f$ uniformly on $[0,1]$.
 You may use without proof that $[0,1]$ is compact and sequentially compact.
 :::
 
-::: {.solution}
 Since $(f_n)$ decreases pointwise to $f$, one has
 $$
 f_n(x)\ge f(x)
 $$
 for every $n$ and every $x\in[0,1]$.
 
-<1>1. Suppose, for contradiction, that $f_n\not\to f$ uniformly. Then there exist $\varepsilon>0$, a strictly increasing sequence of indices $(n_k)$, and points $x_k\in[0,1]$ such that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that $f_n\not\to f$ uniformly. Then there exist $\varepsilon>0$, a strictly increasing sequence of indices $(n_k)$, and points $x_k\in[0,1]$ such that
 $$
 f_{n_k}(x_k)-f(x_k)\ge\varepsilon
 $$
 for every $k$.
 
-::: {.proof}
+
+::: pf-proof
+
 Failure of uniform convergence means that there is $\varepsilon>0$ such that for every $N$ there exist $n\ge N$ and $x\in[0,1]$ with
 $$
 \abs{f_n(x)-f(x)}\ge\varepsilon.
 $$
 Because $f_n(x)\ge f(x)$, the absolute value may be removed. Choosing successively with $n_k>n_{k-1}$ gives the required sequences.
+
 :::
 
-<1>2. After passing to a subsequence, there is $x\in[0,1]$ such that
+:::
+
+::: pf-step
+
+After passing to a subsequence, there is $x\in[0,1]$ such that
 $$
 x_k\longrightarrow x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The interval $[0,1]$ is sequentially compact, so the sequence $(x_k)$ has a convergent subsequence. Relabel that subsequence as $(x_k)$.
+
 :::
 
-<1>3. For every fixed $m\ge1$,
+:::
+
+::: pf-step
+
+For every fixed $m\ge1$,
 $$
 f_m(x)\ge f(x)+\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $m$. Since $n_k\to\infty$, one has $n_k\ge m$ for all sufficiently large $k$. Because the sequence $(f_n)$ is decreasing,
 $$
 f_m(x_k)\ge f_{n_k}(x_k).
@@ -79,11 +98,18 @@ Let $k\to\infty$. Both $f_m$ and $f$ are continuous, and step <1>2 gives $x_k\to
 $$
 f_m(x)\ge f(x)+\varepsilon.
 $$
+
 :::
 
-<1>4. Step <1>3 contradicts pointwise convergence $f_m(x)\to f(x)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Step <1>3 contradicts pointwise convergence $f_m(x)\to f(x)$.
+
+
+::: pf-proof
+
 The inequality from step <1>3 holds for every $m$:
 $$
 f_m(x)-f(x)\ge\varepsilon.
@@ -93,11 +119,15 @@ $$
 f_m(x)-f(x)\longrightarrow0
 $$
 as $m\to\infty$. This is impossible for a fixed $\varepsilon>0$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The contradiction in step <1>4 shows that the assumption in step <1>1 was false. Therefore $f_n\to f$ uniformly on $[0,1]$.
+
 :::
+
 :::

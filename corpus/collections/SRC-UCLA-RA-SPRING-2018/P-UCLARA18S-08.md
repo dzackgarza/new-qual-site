@@ -28,31 +28,48 @@ among all harmonic functions $u:\mathbb D\to[0,1]$, where
 Prove that your answer is correct.
 :::
 
-::: {.solution}
-<1>1. It suffices to consider nonconstant \(u\).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+It suffices to consider nonconstant \(u\).
+
+
+::: pf-proof
+
 If \(u\) is constant, then
 \[
 u_x(0,0)=0.
 \]
 Thus constant functions cannot increase the supremum.
+
 :::
 
-<1>2. If \(u:\mathbb D\to[0,1]\) is nonconstant and harmonic, then
+:::
+
+::: pf-step
+
+If \(u:\mathbb D\to[0,1]\) is nonconstant and harmonic, then
 \[
 0<u(z)<1
 \qquad(z\in\mathbb D).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(u\) attained either its minimum \(0\) or maximum \(1\) at an interior
 point, the strong minimum or maximum principle for harmonic functions would
 force \(u\) to be constant. Hence a nonconstant \(u\) takes values in the
 open interval \((0,1)\).
+
 :::
 
-<1>3. There is a holomorphic function
+:::
+
+::: pf-step
+
+There is a holomorphic function
 \[
 F=u+iv:\mathbb D\to
 S
@@ -64,7 +81,9 @@ whose real part is \(u\), and \(v\) may be chosen so that
 F(0)=u(0)\in(0,1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The unit disk is simply connected, so the harmonic function \(u\) admits a
 harmonic conjugate \(v\). Then
 \[
@@ -77,9 +96,14 @@ Choose that constant so that
 v(0)=0.
 \]
 Step <1>2 shows that the image lies in the vertical strip \(S\).
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 T:S\longrightarrow\mathbb D,
 \qquad
@@ -89,7 +113,9 @@ T(w)
 \]
 Then \(T\) is a conformal bijection.
 
-::: {.proof}
+
+::: pf-proof
+
 If \(0<\operatorname{Re}w<1\), then
 \[
 e^{i\pi w}
@@ -101,9 +127,14 @@ half-plane. The Cayley map
 \]
 is a conformal bijection from the upper half-plane to \(\mathbb D\).
 Their composition is \(T\).
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 \[
 t=F(0)=u(0)\in(0,1),
 \qquad
@@ -117,7 +148,9 @@ Then Schwarz--Pick gives
 \frac{1-|\alpha|^2}{|T'(t)|}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \psi_\alpha(\zeta)
@@ -155,9 +188,14 @@ Since
 \frac1{1-|\alpha|^2},
 \]
 the displayed estimate follows.
+
 :::
 
-<1>6. For \(t\in(0,1)\),
+:::
+
+::: pf-step
+
+For \(t\in(0,1)\),
 \[
 \boxed{
 \frac{1-|T(t)|^2}{|T'(t)|}
@@ -167,7 +205,9 @@ the displayed estimate follows.
 \frac2\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 \zeta=e^{i\pi t},
@@ -211,9 +251,14 @@ Dividing gives
 \le
 \frac2\pi.
 \]
+
 :::
 
-<1>7. Every admissible harmonic function satisfies
+:::
+
+::: pf-step
+
+Every admissible harmonic function satisfies
 \[
 \boxed{
 |u_x(0,0)|
@@ -221,7 +266,9 @@ Dividing gives
 \frac2\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the Cauchy--Riemann equations,
 \[
 F'(0)
@@ -235,9 +282,14 @@ so
 |F'(0)|.
 \]
 Combine steps <1>5 and <1>6.
+
 :::
 
-<1>8. Let \(H=T^{-1}:\mathbb D\to S\) be the inverse conformal map,
+:::
+
+::: pf-step
+
+Let \(H=T^{-1}:\mathbb D\to S\) be the inverse conformal map,
 \[
 H(z)
 =
@@ -253,7 +305,9 @@ H(0)=\frac12
 H'(0)=-\frac{2i}{\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Solving
 \[
 z
@@ -299,9 +353,14 @@ H'(0)
 =
 -\frac{2i}{\pi}.
 \]
+
 :::
 
-<1>9. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \widetilde H(z)=H(iz)
 \]
@@ -317,7 +376,9 @@ Then \(u_*:\mathbb D\to(0,1)\) is harmonic and
 \frac2\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since multiplication by \(i\) is an automorphism of \(\mathbb D\),
 \[
 \widetilde H:\mathbb D\to S
@@ -344,21 +405,32 @@ For a holomorphic function, the real part of the derivative is the
 =
 \frac2\pi.
 \]
+
 :::
 
-<1>10. Hence the supremum is
+:::
+
+::: pf-step
+
+Hence the supremum is
 \[
 \boxed{\frac2\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 gives \(2/\pi\) as an upper bound, while step <1>9 constructs an
 admissible harmonic function attaining that value.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required sharp result.
+
 :::
+
 :::

@@ -28,10 +28,15 @@ L_n(\mu)=\int_0^1 a_n(x)\,d\mu(x).
 Show that no subsequence of $L_n$ converges in the weak-* topology on $M([0,1))^*$.
 :::
 
-::: {.solution}
-<1>1. If a subsequence $(L_{n_k})$ converges weak-* in $M([0,1))^*$, then for every $x\in[0,1)$ the scalar sequence $(a_{n_k}(x))_k$ converges.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If a subsequence $(L_{n_k})$ converges weak-* in $M([0,1))^*$, then for every $x\in[0,1)$ the scalar sequence $(a_{n_k}(x))_k$ converges.
+
+
+::: pf-proof
+
 Weak-* convergence in $M([0,1))^*$ means pointwise convergence on $M([0,1))$. For each $x\in[0,1)$, let $\delta_x$ be the Dirac measure at $x$. Then
 $$
 L_{n_k}(\delta_x)
@@ -39,9 +44,14 @@ L_{n_k}(\delta_x)
 =a_{n_k}(x).
 $$
 Thus weak-* convergence would force $(a_{n_k}(x))_k$ to converge for every $x$.
+
 :::
 
-<1>2. Given any strictly increasing sequence of indices
+:::
+
+::: pf-step
+
+Given any strictly increasing sequence of indices
 $$
 n_1<n_2<\cdots,
 $$
@@ -54,7 +64,9 @@ a_{n_k}(x)=
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Define a binary sequence $(b_n)$ by
 $$
 b_{n_k}=
@@ -76,21 +88,32 @@ $$
 a_n(x)=b_n
 $$
 for every $n$, giving the asserted values along the chosen indices.
+
 :::
 
-<1>3. No subsequence of $(L_n)$ converges weak-*.
+:::
 
-::: {.proof}
+::: pf-step
+
+No subsequence of $(L_n)$ converges weak-*.
+
+
+::: pf-proof
+
 Suppose $(L_{n_k})$ were weak-* convergent. Choose the point $x$ from step <1>2. Then
 $$
 a_{n_k}(x)=0,1,0,1,\ldots
 $$
 does not converge, contradicting step <1>1.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

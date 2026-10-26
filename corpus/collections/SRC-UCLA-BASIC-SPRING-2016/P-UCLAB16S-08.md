@@ -24,7 +24,6 @@ a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2<\frac1{10}.
 Prove that $I+A$ is invertible.
 :::
 
-::: {.solution}
 Let
 \[
 \|A\|_F
@@ -35,21 +34,32 @@ a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
 \]
 be the Frobenius norm.
 
-<1>1. The hypothesis gives
+::: pf
+
+::: pf-step
+
+The hypothesis gives
 \[
 \|A\|_F<\frac1{\sqrt{10}}<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take square roots of
 \[
 a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
 <
 \frac1{10}.
 \]
+
 :::
 
-<1>2. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in\mathbb R^2,
 \]
@@ -60,7 +70,9 @@ one has
 \|A\|_F\|x\|_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 x=
@@ -92,9 +104,14 @@ Then
 \|A\|_F^2\|x\|_2^2.
 \]
 Take square roots.
+
 :::
 
-<1>3. Suppose
+:::
+
+::: pf-step
+
+Suppose
 \[
 (I+A)x=0.
 \]
@@ -103,20 +120,29 @@ Then
 x=-Ax.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Rearrange the equation
 \[
 x+Ax=0.
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 x\ne0,
 \]
 then steps <1>1--<1>3 give a contradiction.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \|x\|_2
@@ -148,35 +174,53 @@ to obtain
 1\le\|A\|_F,
 \]
 contradicting step <1>1.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \ker(I+A)=\{0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 rules out every nonzero vector in the kernel.
+
 :::
 
-<1>6. Since $I+A$ is a linear map
+:::
+
+::: pf-step
+
+Since $I+A$ is a linear map
 \[
 \mathbb R^2\to\mathbb R^2,
 \]
 trivial kernel implies invertibility.
 
-::: {.proof}
+
+::: pf-proof
+
 For an endomorphism of a finite-dimensional vector space, injectivity is equivalent to surjectivity.
 Step <1>5 gives injectivity.
 Therefore
 \[
 \boxed{I+A\text{ is invertible}.}
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

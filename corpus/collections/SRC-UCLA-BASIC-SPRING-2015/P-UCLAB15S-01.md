@@ -25,8 +25,11 @@ f(t)\le 1+\frac1{10}f(t)^2\qquad\text{for all }t\in[0,\infty),
 then $f$ is uniformly bounded throughout $[0,\infty)$.
 :::
 
-::: {.solution}
-<1>1. The pointwise inequality is equivalent to
+::: pf
+
+::: pf-step
+
+The pointwise inequality is equivalent to
 \[
 f(t)^2-10f(t)+10\ge0
 \]
@@ -35,7 +38,9 @@ for every
 t\ge0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply
 \[
 f(t)\le1+\frac1{10}f(t)^2
@@ -46,9 +51,14 @@ by $10$ and move all terms to one side:
 \le
 f(t)^2-10f(t)+10.
 \]
+
 :::
 
-<1>2. The quadratic polynomial
+:::
+
+::: pf-step
+
+The quadratic polynomial
 \[
 q(y)=y^2-10y+10
 \]
@@ -59,7 +69,9 @@ has roots
 \beta=5+\sqrt{15}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quadratic formula gives
 \[
 y
@@ -70,9 +82,14 @@ y
 =
 5\pm\sqrt{15}.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 q(y)<0
 \]
@@ -81,12 +98,19 @@ exactly when
 \alpha<y<\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial $q$ is monic and has the two distinct real roots $\alpha<\beta$ from step <1>2.
 Therefore it is negative strictly between its roots and nonnegative outside that interval.
+
 :::
 
-<1>4. Hence for every
+:::
+
+::: pf-step
+
+Hence for every
 \[
 t\ge0,
 \]
@@ -99,17 +123,26 @@ or
 f(t)\ge\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 q(f(t))\ge0.
 \]
 Apply the sign description from step <1>3.
+
 :::
 
-<1>5. The second alternative in step <1>4 never occurs.
+:::
 
-::: {.proof}
+::: pf-step
+
+The second alternative in step <1>4 never occurs.
+
+
+::: pf-proof
+
 Suppose for contradiction that
 \[
 f(t_0)\ge\beta
@@ -146,9 +179,14 @@ But
 \]
 contradicting step <1>4.
 Therefore no such $t_0$ exists.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 0\le f(t)\le5-\sqrt{15}
@@ -159,7 +197,9 @@ for every
 t\ge0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The codomain of $f$ is
 \[
 [0,\infty),
@@ -178,22 +218,33 @@ Hence step <1>4 forces
 f(t)\le\alpha=5-\sqrt{15}
 \]
 for every $t$.
+
 :::
 
-<1>7. Thus $f$ is uniformly bounded on $[0,\infty)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus $f$ is uniformly bounded on $[0,\infty)$.
+
+
+::: pf-proof
+
 Step <1>6 provides the global bound
 \[
 \boxed{
 \sup_{t\ge0}f(t)\le5-\sqrt{15}<\infty.
 }
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

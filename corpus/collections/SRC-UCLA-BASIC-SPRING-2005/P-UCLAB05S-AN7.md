@@ -36,60 +36,97 @@ x\longmapsto F(x)^{-1}
 is continuous.
 :::
 
-::: {.solution}
 Let
 $$
 U\coloneqq\{x\in\RR:F(x)\text{ is invertible}\}.
 $$
 
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 $$
 x\longmapsto\det F(x)
 $$
 is continuous on $\RR$.
 
-::: {.proof}
+
+::: pf-proof
+
 Continuity of $F$ for the displayed Euclidean matrix metric is equivalent to continuity of each matrix-entry function $x\mapsto F_{ij}(x)$. The determinant is a polynomial in the matrix entries, so its composition with $F$ is continuous.
+
 :::
 
-<1>2. The set $U$ is open in $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $U$ is open in $\RR$.
+
+
+::: pf-proof
+
 A complex matrix is invertible exactly when its determinant is nonzero. Hence
 $$
 U=(\det\circ F)^{-1}(\CC\setminus\{0\}).
 $$
 The set $\CC\setminus\{0\}$ is open, and $\det\circ F$ is continuous by step <1>1. Therefore $U$ is open.
+
 :::
 
-<1>3. On $U$,
+:::
+
+::: pf-step
+
+On $U$,
 $$
 F(x)^{-1}=\frac{\operatorname{adj}(F(x))}{\det F(x)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is the adjugate formula for the inverse of an invertible matrix.
+
 :::
 
-<1>4. Every entry of the matrix-valued map $x\mapsto F(x)^{-1}$ is continuous on $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every entry of the matrix-valued map $x\mapsto F(x)^{-1}$ is continuous on $U$.
+
+
+::: pf-proof
+
 Each entry of $\operatorname{adj}(F(x))$ is, up to sign, a determinant of an $(n-1)\times(n-1)$ minor of $F(x)$, hence is a polynomial in the entries of $F(x)$ and therefore continuous. By definition of $U$, the denominator $\det F(x)$ never vanishes there. Thus each entry in the quotient formula from step <1>3 is continuous on $U$.
+
 :::
 
-<1>5. The map
+:::
+
+::: pf-step
+
+The map
 $$
 \boxed{U\longrightarrow M_n(\CC),\qquad x\longmapsto F(x)^{-1}}
 $$
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 The metric on $M_n(\CC)$ is the Euclidean metric on its finitely many complex coordinates. A matrix-valued map into this space is continuous exactly when all of its coordinate functions are continuous. Apply step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

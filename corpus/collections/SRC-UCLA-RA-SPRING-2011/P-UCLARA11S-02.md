@@ -24,7 +24,6 @@ f_n(x):=n\int_{\mathbb R}f(x-y)\phi(ny)\,dy\longrightarrow0
 Lebesgue almost everywhere.
 :::
 
-::: {.solution}
 Define
 \[
 h(x)
@@ -46,7 +45,11 @@ h_n(x)=nh(nx),
 g_n(x)=ng(nx).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \int_{\mathbb R}h_n
 =
@@ -55,7 +58,9 @@ g_n(x)=ng(nx).
 \frac2\pi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the change of variables $u=nx$,
 \[
 \int h_n=\int h,
@@ -74,16 +79,23 @@ and by oddness of $\sin(\pi u)$,
 =
 \frac2\pi.
 \]
+
 :::
 
-<1>2. If $x$ is a Lebesgue point of $f$, then
+:::
+
+::: pf-step
+
+If $x$ is a Lebesgue point of $f$, then
 \[
 (f*h_n)(x)
 \longrightarrow
 \frac2\pi f(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $h_n$ is supported in $[0,1/n]$,
 \[
 \begin{aligned}
@@ -110,16 +122,23 @@ n\int_0^{1/n}
 \longrightarrow0.
 \]
 Hence the claimed limit follows.
+
 :::
 
-<1>3. If $x$ is a Lebesgue point of $f$, then
+:::
+
+::: pf-step
+
+If $x$ is a Lebesgue point of $f$, then
 \[
 (f*g_n)(x)
 \longrightarrow
 \frac2\pi f(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Now $g_n$ is supported in $[-1/n,0]$. Exactly as in step <1>2,
 \[
 \left|
@@ -132,11 +151,18 @@ n\int_0^{1/n}
 |f(x+y)-f(x)|\,dy,
 \]
 which tends to $0$ at every Lebesgue point.
+
 :::
 
-<1>4. The function $f\in L^1_{\mathrm{loc}}(\mathbb R)$, so almost every point is a Lebesgue point of $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f\in L^1_{\mathrm{loc}}(\mathbb R)$, so almost every point is a Lebesgue point of $f$.
+
+
+::: pf-proof
+
 Since $f\in L^3(\mathbb R)$, Hölder's inequality gives
 \[
 \int_E|f|
@@ -144,14 +170,21 @@ Since $f\in L^3(\mathbb R)$, Hölder's inequality gives
 |E|^{2/3}\|f\|_3
 \]
 for every bounded measurable set $E$. Thus $f\in L^1_{\mathrm{loc}}$, and the Lebesgue differentiation theorem applies.
+
 :::
 
-<1>5. For almost every $x$,
+:::
+
+::: pf-step
+
+For almost every $x$,
 \[
 f_n(x)\longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The rescaled kernel in the problem is
 \[
 n\phi(n\cdot)
@@ -172,11 +205,15 @@ f_n(x)
 =0.
 \]
 Step <1>4 says this holds almost everywhere.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the desired almost-everywhere convergence.
+
 :::
+
 :::

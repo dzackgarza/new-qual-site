@@ -28,7 +28,6 @@ Here $a,b\in\mathbb R$ satisfy $3a+2b+n<0$.
 Show that $fg\in L^1(\mathbb R^n)$.
 :::
 
-::: {.solution}
 Let
 \[
 E_0\coloneqq\{x:|x|\le1\},
@@ -38,12 +37,18 @@ E_k\coloneqq
 \quad(k\ge1).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \int_{E_0}|f(x)g(x)|\,dx<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the bounded set $E_0$, Hölder's inequality with exponents $2$, $3$, and $6$ gives
 \[
 \begin{aligned}
@@ -55,9 +60,14 @@ m(E_0)^{1/6}.
 \end{aligned}
 \]
 The first two factors are finite by local $L^2$ and $L^3$ integrability, and $m(E_0)<\infty$.
+
 :::
 
-<1>2. For every $k\ge1$,
+:::
+
+::: pf-step
+
+For every $k\ge1$,
 \[
 \int_{E_k}|fg|
 \le
@@ -66,7 +76,9 @@ C_n
 \]
 for a constant $C_n$ independent of $k$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Hölder's inequality on $E_k$ with exponents $6$, $2$, and $3$:
 \[
 \int_{E_k}|fg|
@@ -109,16 +121,23 @@ C_n
 2^{(k-1)b/3}.
 \]
 Absorbing the fixed factor $2^{n/6}$ into $C_n$ gives the claimed estimate.
+
 :::
 
-<1>3. The series
+:::
+
+::: pf-step
+
+The series
 \[
 \sum_{k=1}^{\infty}
 \int_{E_k}|fg|
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 \gamma
@@ -137,14 +156,21 @@ C_n
 2^{(k-1)\gamma}.
 \]
 The last series is geometric with ratio $2^\gamma<1$, hence converges.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{fg\in L^1(\mathbb R^n)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 E_0,E_1,E_2,\dots
@@ -158,11 +184,15 @@ cover $\mathbb R^n$ up to their boundary overlaps, which have measure zero. Henc
 \sum_{k=1}^{\infty}\int_{E_k}|fg|.
 \]
 The first term is finite by step <1>1 and the series is finite by step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

@@ -32,40 +32,66 @@ Let $f(z)$ be entire and assume $f(0)\ne0$. Let $\{a_n\}$ be the zeros of $f$, r
 for all $\varepsilon>0$. Hint: estimate $\#\{n:|a_n|<R\}$ using (a) on $|z|\sim2R$.
 :::
 
-::: {.solution}
-<1>1. For fixed $R>0$ with no zeros of $f$ on $|z|=R$, there are only finitely many zeros of $f$ in $|z|<R$, counted with multiplicity.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For fixed $R>0$ with no zeros of $f$ on $|z|=R$, there are only finitely many zeros of $f$ in $|z|<R$, counted with multiplicity.
+
+
+::: pf-proof
+
 The zeros of a nonzero holomorphic function are discrete. Since the closed disk $\{|z|\le R\}$ is compact and contains no boundary zeros, it contains only finitely many zeros of $f$.
+
 :::
 
-<1>2. If $b_1,\ldots,b_N$ are the zeros of $f$ in $|z|<R$, repeated according to multiplicity, then
+:::
+
+::: pf-step
+
+If $b_1,\ldots,b_N$ are the zeros of $f$ in $|z|<R$, repeated according to multiplicity, then
 $$
 f(z)=g(z)\prod_{j=1}^N(z-b_j)
 $$
 on a neighborhood of the closed disk, where $g$ is holomorphic and nonvanishing there.
 
-::: {.proof}
+
+::: pf-proof
+
 Divide $f$ successively by the corresponding linear factors, with repetitions matching the zero multiplicities. The quotient $g$ is holomorphic. By construction it has no zeros in the closed disk, and after shrinking the neighborhood slightly if necessary it remains nonvanishing there.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \frac1{2\pi}\int_0^{2\pi}\log|g(Re^{i\theta})|\,d\theta
 =\log|g(0)|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because $g$ is holomorphic and nonvanishing on a simply connected neighborhood of the closed disk, it has a holomorphic logarithm there. Hence $\log|g|$ is harmonic. The mean-value property for harmonic functions gives the identity.
+
 :::
 
-<1>4. For every $b$ with $|b|<R$,
+:::
+
+::: pf-step
+
+For every $b$ with $|b|<R$,
 $$
 \frac1{2\pi}\int_0^{2\pi}\log|Re^{i\theta}-b|\,d\theta
 =\log R.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 Re^{i\theta}-b
@@ -81,16 +107,23 @@ $$
 \log\left|1-\frac bR e^{-i\theta}\right|\,d\theta=0.
 $$
 Adding the constant $\log R$ proves the claim.
+
 :::
 
-<1>5. Jensen's formula holds:
+:::
+
+::: pf-step
+
+Jensen's formula holds:
 $$
 \boxed{
 \frac1{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\,d\theta
 =\log|f(0)|+\sum_{|a_n|<R}\log\frac R{|a_n|}.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using the factorization from step <1>2 and then steps <1>3--<1>4,
 $$
 \begin{aligned}
@@ -108,9 +141,14 @@ $$
 =\log|f(0)|-\sum_{j=1}^N\log|b_j|,
 $$
 which gives the displayed formula.
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 $$
 N(R)\coloneqq\#\{n:|a_n|<R\},
 $$
@@ -120,7 +158,9 @@ N(R)\le C_1(1+R^\lambda)
 $$
 for every $R\ge1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $R\ge1$. The set of moduli of zeros is discrete in every compact interval, so choose
 $$
 \rho\in[2R,3R]
@@ -136,15 +176,22 @@ N(R)\log2
 \end{aligned}
 $$
 Absorbing the fixed constants into $C_1$ yields the claim.
+
 :::
 
-<1>7. For every $\varepsilon>0$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$,
 $$
 \boxed{
 \sum_n |a_n|^{-(\lambda+\varepsilon)}<\infty.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $\lambda\le0$, then $|f(z)|\le Ce$ for every $|z|\ge1$; continuity bounds $f$ on the closed unit disk as well. Thus $f$ is bounded entire, hence constant by Liouville's theorem. Since $f(0)\ne0$, it has no zeros, and the sum is empty.
 
 Assume now that $\lambda>0$.
@@ -165,11 +212,15 @@ $$
 \end{aligned}
 $$
 Summing over $k\ge0$ gives a convergent geometric series.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>7 proves part (b).
+
 :::
+
 :::

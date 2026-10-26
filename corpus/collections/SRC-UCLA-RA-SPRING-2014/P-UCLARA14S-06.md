@@ -28,8 +28,11 @@ Let $H$ be a Hilbert space and $(a_n)$ a sequence with $\|a_n\|=1$ for every $n$
 then $0$ belongs to the closed convex hull of $\{a_n:n\ge1\}$.
 :::
 
-::: {.solution}
-<1>1. For each $N\ge1$, let
+::: pf
+
+::: pf-step
+
+For each $N\ge1$, let
 \[
 S_N
 \coloneqq
@@ -37,35 +40,56 @@ S_N
 \]
 If $H$ is infinite dimensional, then every $S_N$ is closed and nowhere dense in $H$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each $S_N$ is finite dimensional, hence closed. If some $S_N$ had nonempty interior, then because $S_N$ is a linear subspace it would contain a ball about $0$. Scalar dilation would then imply that $S_N$ contains every vector of $H$, so
 \[
 S_N=H.
 \]
 That would make $H$ finite dimensional, contrary to the assumption. Thus every $S_N$ has empty interior; being closed, it is nowhere dense.
+
 :::
 
-<1>2. If $(a_n)$ spans $H$ linearly, then
+:::
+
+::: pf-step
+
+If $(a_n)$ spans $H$ linearly, then
 \[
 H
 =
 \bigcup_{N=1}^\infty S_N.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every vector in the algebraic span of the sequence is a finite linear combination of the $a_n$, hence belongs to $S_N$ for some sufficiently large $N$. The hypothesis says that this algebraic span equals $H$.
+
 :::
 
-<1>3. If $(a_n)$ spans $H$ linearly, then
+:::
+
+::: pf-step
+
+If $(a_n)$ spans $H$ linearly, then
 \[
 \boxed{H\text{ is finite dimensional}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose $H$ were infinite dimensional. By step <1>1, each $S_N$ would be nowhere dense, while step <1>2 would write the complete metric space $H$ as a countable union of nowhere dense sets. This contradicts the Baire category theorem.
+
 :::
 
-<1>4. Assume now that
+:::
+
+::: pf-step
+
+Assume now that
 \[
 \langle a_n,\xi\rangle\longrightarrow0
 \qquad
@@ -88,7 +112,9 @@ and
 (i\ne j).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $r$ so large that $1/r<\varepsilon^2/2$. Set
 \[
 n_1=1.
@@ -108,9 +134,14 @@ Since there are only finitely many previous vectors, choose $n_{k+1}>n_k$ suffic
 \frac{\varepsilon^2}{2}
 \]
 for every $j\le k$. Continue until $r$ indices have been selected.
+
 :::
 
-<1>5. The convex combination
+:::
+
+::: pf-step
+
+The convex combination
 \[
 c
 \coloneqq
@@ -122,7 +153,9 @@ satisfies
 \|c\|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using $\|a_{n_j}\|=1$,
 \[
 \begin{aligned}
@@ -156,9 +189,14 @@ r
 \end{aligned}
 \]
 Hence $\|c\|<\varepsilon$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 0\in
@@ -167,13 +205,19 @@ Hence $\|c\|<\varepsilon$.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $\varepsilon>0$, step <1>5 produces a convex combination of the $a_n$ lying in the open ball $B(0,\varepsilon)$. Thus every neighborhood of $0$ meets the convex hull, which is exactly the assertion that $0$ belongs to its closure.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

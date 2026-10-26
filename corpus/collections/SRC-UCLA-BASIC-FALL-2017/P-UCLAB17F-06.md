@@ -20,29 +20,41 @@ audit:
 For each field $F=\mathbb R$, $\mathbb C$, and $\mathbb F_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
 :::
 
-::: {.solution}
-<1>1. Over
+::: pf
+
+::: pf-step
+
+Over
 \[
 F=\mathbb R,
 \]
 every symmetric $2\times2$ matrix is diagonalizable.
 
-::: {.proof}
+
+::: pf-proof
+
 The real spectral theorem states that every real symmetric matrix is orthogonally diagonalizable.
 Hence every symmetric matrix in
 \[
 M_2(\mathbb R)
 \]
 is diagonalizable over $\mathbb R$.
+
 :::
 
-<1>2. Over
+:::
+
+::: pf-step
+
+Over
 \[
 F=\mathbb C,
 \]
 the assertion is false.
 
-::: {.proof}
+
+::: pf-proof
+
 Consider
 \[
 A=
@@ -83,15 +95,22 @@ Thus a diagonalizable nilpotent matrix must be zero, contradicting
 A\ne0.
 \]
 Hence $A$ is not diagonalizable.
+
 :::
 
-<1>3. Over
+:::
+
+::: pf-step
+
+Over
 \[
 F=\mathbb F_3,
 \]
 the assertion is also false.
 
-::: {.proof}
+
+::: pf-proof
+
 Consider
 \[
 A=
@@ -130,9 +149,14 @@ In $\mathbb F_3$, this polynomial takes the values
 \]
 Thus it has no root in $\mathbb F_3$.
 Therefore $A$ has no eigenvalue in $\mathbb F_3$, so it cannot be diagonalizable over $\mathbb F_3$.
+
 :::
 
-<1>4. Therefore the complete answer is
+:::
+
+::: pf-step
+
+Therefore the complete answer is
 \[
 \boxed{
 \begin{array}{c|c}
@@ -145,15 +169,21 @@ F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves the positive real case.
 Step <1>2 gives a complex counterexample.
 Step <1>3 gives a counterexample over $\mathbb F_3$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 records the required classification.
+
 :::
+
 :::

@@ -24,7 +24,6 @@ f=g\circ h.
 Show that if $h$ is continuous, and both $f$ and $g$ are non-constant and holomorphic, then $h$ is holomorphic as well.
 :::
 
-::: {.solution}
 Let
 \[
 Z\coloneqq\{w\in\mathbb C:g'(w)=0\},
@@ -32,15 +31,28 @@ Z\coloneqq\{w\in\mathbb C:g'(w)=0\},
 B\coloneqq h^{-1}(Z).
 \]
 
-<1>1. The set $Z$ is discrete in $\mathbb C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $Z$ is discrete in $\mathbb C$.
+
+
+::: pf-proof
+
 Since $g$ is non-constant and entire, $g'$ is not identically zero. The zeros of a nonzero holomorphic function are isolated, so $Z$ is discrete.
+
 :::
 
-<1>2. The function $h$ is holomorphic on $\mathbb C\setminus B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h$ is holomorphic on $\mathbb C\setminus B$.
+
+
+::: pf-proof
+
 Fix $z_0\notin B$. Then
 \[
 g'(h(z_0))\ne0.
@@ -54,11 +66,18 @@ is biholomorphic. By continuity of $h$, after shrinking a neighborhood $W$ of $z
 h=(g|_V)^{-1}\circ f.
 \]
 The right-hand side is holomorphic, so $h$ is holomorphic at $z_0$.
+
 :::
 
-<1>3. The set $B$ is discrete in $\mathbb C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $B$ is discrete in $\mathbb C$.
+
+
+::: pf-proof
+
 Suppose instead that $B$ has an accumulation point $z_\infty\in\mathbb C$. Choose distinct points $z_n\in B$ with
 \[
 z_n\longrightarrow z_\infty.
@@ -76,27 +95,45 @@ for all sufficiently large $n$. It follows that
 f(z_n)=g(h(z_n))=g(h(z_\infty))=f(z_\infty)
 \]
 for infinitely many distinct $z_n\to z_\infty$. The identity theorem then forces the non-constant entire function $f$ to be constant, a contradiction. Thus $B$ has no accumulation point.
+
 :::
 
-<1>4. Every point of $B$ is a removable singularity for the holomorphic function $h|_{\mathbb C\setminus B}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every point of $B$ is a removable singularity for the holomorphic function $h|_{\mathbb C\setminus B}$.
+
+
+::: pf-proof
+
 Fix $b\in B$. By step <1>3, choose $r>0$ such that
 \[
 B(b,r)\cap B=\{b\}.
 \]
 Step <1>2 shows that $h$ is holomorphic on the punctured disk $0<|z-b|<r$. Since $h$ is continuous at $b$, it is bounded on some smaller disk around $b$. Riemann's removable singularity theorem therefore extends the punctured-disk holomorphic function across $b$. The extension agrees with the given value $h(b)$ by continuity, so the original function $h$ is holomorphic at $b$.
+
 :::
 
-<1>5. $h$ is holomorphic on $\mathbb C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$h$ is holomorphic on $\mathbb C$.
+
+
+::: pf-proof
+
 Step <1>2 gives holomorphy on $\mathbb C\setminus B$, and step <1>4 gives holomorphy at every point of $B$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the desired conclusion.
+
 :::
+
 :::

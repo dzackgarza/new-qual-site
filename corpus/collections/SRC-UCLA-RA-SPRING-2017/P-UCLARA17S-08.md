@@ -24,21 +24,26 @@ B(z)=\prod_{j=1}^n\frac{z-a_j}{1-\overline{a_j}z}
 has $n$ zeros in $D$. Prove that the derivative $B'(z)$ has $n-1$ zeros in $D$.
 :::
 
-::: {.solution}
 For $a\in D$, write
 $$
 b_a(z)\coloneqq\frac{z-a}{1-\overline a z},
 $$
 so that $B=\prod_{j=1}^n b_{a_j}$.
 
-<1>1. Wherever $B(z)\ne0$,
+::: pf
+
+::: pf-step
+
+Wherever $B(z)\ne0$,
 $$
 \frac{B'(z)}{B(z)}
 =\sum_{j=1}^n
 \frac{1-|a_j|^2}{(z-a_j)(1-\overline{a_j}z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For one factor,
 $$
 b_a'(z)
@@ -50,27 +55,41 @@ $$
 =\frac{1-|a|^2}{(z-a)(1-\overline a z)}.
 $$
 Taking the logarithmic derivative of the product defining $B$ gives the displayed sum.
+
 :::
 
-<1>2. For every $z$ with $|z|=1$,
+:::
+
+::: pf-step
+
+For every $z$ with $|z|=1$,
 $$
 \boxed{
 \frac{zB'(z)}{B(z)}
 =\sum_{j=1}^n\frac{1-|a_j|^2}{|z-a_j|^2}>0.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $|z|=1$, then
 $$
 (z-a)(1-\overline a z)
 =z|z-a|^2.
 $$
 Substituting this into step <1>1 gives the equality. Since every $|a_j|<1$, each numerator $1-|a_j|^2$ is positive, so the sum is strictly positive.
+
 :::
 
-<1>3. The function $B'$ has no zeros on the unit circle, and along $|z|=1$ its change of argument equals the change of argument of $B(z)/z$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $B'$ has no zeros on the unit circle, and along $|z|=1$ its change of argument equals the change of argument of $B(z)/z$.
+
+
+::: pf-proof
+
 Each factor $b_{a_j}$ has modulus $1$ on the unit circle, so $B(z)\ne0$ there. Step <1>2 writes
 $$
 B'(z)=\frac{B(z)}{z}\,c(z),
@@ -80,41 +99,62 @@ $$
 \Delta_{|z|=1}\arg B'
 =\Delta_{|z|=1}\arg(B/z).
 $$
+
 :::
 
-<1>4. As $z$ traverses the positively oriented unit circle once,
+:::
+
+::: pf-step
+
+As $z$ traverses the positively oriented unit circle once,
 $$
 \Delta\arg B(z)=2\pi n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $B$ is holomorphic on a neighborhood of the closed unit disk: if $a_j\ne0$, the corresponding factor has its only pole at $1/\overline{a_j}$, outside the closed unit disk, while the factor for $a_j=0$ is simply $z$. It has exactly the $n$ zeros $a_1,\ldots,a_n$ in the disk, counted with multiplicity, and no zeros on the boundary. By the argument principle,
 $$
 \frac1{2\pi}\Delta_{|z|=1}\arg B=n.
 $$
+
 :::
 
-<1>5. As $z$ traverses the unit circle once,
+:::
+
+::: pf-step
+
+As $z$ traverses the unit circle once,
 $$
 \Delta\arg B'(z)=2\pi(n-1).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 $$
 \Delta\arg B'
 =\Delta\arg B-\Delta\arg z.
 $$
 Step <1>4 gives the first term as $2\pi n$, while $z$ itself winds once around $0$, so $\Delta\arg z=2\pi$. Thus the difference is $2\pi(n-1)$.
+
 :::
 
-<1>6. The derivative $B'$ has exactly
+:::
+
+::: pf-step
+
+The derivative $B'$ has exactly
 $$
 \boxed{n-1}
 $$
 zeros in $D$, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $B'$ is holomorphic on a neighborhood of the closed unit disk and has no boundary zeros by step <1>3. Applying the argument principle to $B'$ and using step <1>5 gives
 $$
 \#\{\text{zeros of }B'\text{ in }D\}
@@ -122,11 +162,15 @@ $$
 =n-1,
 $$
 counting multiplicities.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

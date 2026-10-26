@@ -21,14 +21,19 @@ y(x)=e^x+\frac{y(x^2)}2,
 \]
 :::
 
-::: {.solution}
-<1>1. The series
+::: pf
+
+::: pf-step
+
+The series
 $$
 y(x)=\sum_{k=0}^{\infty}2^{-k}e^{x^{2^k}}
 $$
 converges uniformly on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\in[0,1]$,
 $$
 0\le x^{2^k}\le1,
@@ -48,25 +53,39 @@ $$
 \sum_{k=0}^{\infty}e2^{-k}
 $$
 converges, the Weierstrass $M$-test gives uniform convergence.
+
 :::
 
-<1>2. The function $y$ defined in step <1>1 is continuous on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $y$ defined in step <1>1 is continuous on $[0,1]$.
+
+
+::: pf-proof
+
 Each function
 $$
 x\longmapsto 2^{-k}e^{x^{2^k}}
 $$
 is continuous. By step <1>1, their series converges uniformly, so its sum is continuous.
+
 :::
 
-<1>3. The function $y$ satisfies
+:::
+
+::: pf-step
+
+The function $y$ satisfies
 $$
 y(x)=e^x+\frac12y(x^2)
 $$
 for every $x\in[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Using the uniformly convergent series from step <1>1,
 $$
 \begin{aligned}
@@ -88,11 +107,18 @@ e^x+
 =
 y(x).
 $$
+
 :::
 
-<1>4. Any continuous solution of the functional equation is equal to the function in step <1>1.
+:::
 
-::: {.proof}
+::: pf-step
+
+Any continuous solution of the functional equation is equal to the function in step <1>1.
+
+
+::: pf-proof
+
 Let $z:[0,1]\to\RR$ be any continuous solution. Since $[0,1]$ is compact, $z$ is bounded; choose $M>0$ such that
 $$
 \abs{z(t)}\le M
@@ -126,22 +152,33 @@ z(x)
 =y(x).
 $$
 Thus every continuous solution equals $y$.
+
 :::
 
-<1>5. Hence there exists exactly one continuous solution, namely
+:::
+
+::: pf-step
+
+Hence there exists exactly one continuous solution, namely
 $$
 \boxed{
 y(x)=\sum_{k=0}^{\infty}2^{-k}e^{x^{2^k}}
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Existence follows from steps <1>1--<1>3, and uniqueness follows from step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required existence-and-uniqueness statement.
+
 :::
+
 :::

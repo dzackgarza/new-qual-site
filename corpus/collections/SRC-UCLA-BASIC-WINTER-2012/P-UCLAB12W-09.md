@@ -29,8 +29,11 @@ Compute the eigenvalues of $A$ and use them to determine
 \]
 :::
 
-::: {.solution}
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 $$
 A=
 \begin{pmatrix}
@@ -45,7 +48,9 @@ A\binom{a_{n+1}}{a_n}
 \binom{a_{n+2}}{a_{n+1}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the recurrence,
 $$
 4a_{n+1}-3a_n=a_{n+2}.
@@ -58,16 +63,23 @@ A\binom{a_{n+1}}{a_n}
 =
 \binom{a_{n+2}}{a_{n+1}}.
 $$
+
 :::
 
-<1>2. For every $n\ge1$,
+:::
+
+::: pf-step
+
+For every $n\ge1$,
 $$
 A^n\binom10
 =
 \binom{a_{n+1}}{a_n}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $n=1$,
 $$
 A\binom10
@@ -84,14 +96,21 @@ A^{n+1}\binom10
 \binom{a_{n+2}}{a_{n+1}}.
 $$
 Thus the claim follows by induction.
+
 :::
 
-<1>3. The eigenvalues of $A$ are
+:::
+
+::: pf-step
+
+The eigenvalues of $A$ are
 $$
 \boxed{1\text{ and }3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 $$
 \det(\lambda I-A)
@@ -105,14 +124,21 @@ $$
 \lambda^2-4\lambda+3
 =(\lambda-1)(\lambda-3).
 $$
+
 :::
 
-<1>4. The recurrence has the closed form
+:::
+
+::: pf-step
+
+The recurrence has the closed form
 $$
 \boxed{a_n=\frac{3^n-1}{2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Because the characteristic roots of the recurrence are the distinct numbers $1$ and $3$ from step <1>3, every sequence satisfying the recurrence has the form
 $$
 a_n=c_1+c_2 3^n.
@@ -124,14 +150,21 @@ c_1+3c_2=1,
 c_1+9c_2=4.
 $$
 Subtracting yields $6c_2=3$, so $c_2=1/2$ and then $c_1=-1/2$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{\lim_{n\to\infty}a_n^{1/n}=3}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 $$
 a_n
@@ -146,11 +179,15 @@ a_n^{1/n}
 =3\left(\frac{1-3^{-n}}2\right)^{1/n}.
 $$
 The factor in parentheses tends to $1/2>0$, so its $n$-th root tends to $1$. Therefore the limit is $3$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 gives the required matrix identity, step <1>3 computes the eigenvalues, and step <1>5 gives the requested limit.
+
 :::
+
 :::

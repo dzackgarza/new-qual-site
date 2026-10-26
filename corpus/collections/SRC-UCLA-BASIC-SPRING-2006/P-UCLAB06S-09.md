@@ -23,8 +23,11 @@ Let $S$ be a real $n\times n$ symmetric matrix, i.e. ${}^tS=S$.
 (B) State and prove the Spectral Theorem for $S$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \lambda\in\mathbb C
 \]
@@ -37,7 +40,9 @@ Then
 \lambda\in\mathbb R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The eigenvalue equation is
 \[
 Sz=\lambda z.
@@ -77,11 +82,18 @@ Therefore
 \in
 \mathbb R.
 \]
+
 :::
 
-<1>2. Every real symmetric matrix has a nonzero real eigenvector.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every real symmetric matrix has a nonzero real eigenvector.
+
+
+::: pf-proof
+
 The characteristic polynomial of $S$ has a complex root by the fundamental theorem of algebra.
 By step <1>1, every eigenvalue is real.
 Choose
@@ -104,9 +116,14 @@ Sy=\lambda y.
 \]
 At least one of $x,y$ is nonzero.
 Thus there is a nonzero real eigenvector.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 Sv=\lambda v
 \]
@@ -116,7 +133,9 @@ v^\perp
 \]
 is invariant under $S$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 w\in v^\perp.
@@ -143,15 +162,22 @@ Therefore
 \[
 Sw\in v^\perp.
 \]
+
 :::
 
-<1>4. The restriction
+:::
+
+::: pf-step
+
+The restriction
 \[
 S|_{v^\perp}:v^\perp\to v^\perp
 \]
 is symmetric.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the restriction is well-defined.
 For
 \[
@@ -165,11 +191,18 @@ one has
 \]
 because $S$ is symmetric on all of $\mathbb R^n$.
 Thus the restricted operator is symmetric on the inner-product space $v^\perp$.
+
 :::
 
-<1>5. Spectral Theorem: every real symmetric matrix has an orthonormal basis of real eigenvectors.
+:::
 
-::: {.proof}
+::: pf-step
+
+Spectral Theorem: every real symmetric matrix has an orthonormal basis of real eigenvectors.
+
+
+::: pf-proof
+
 Proceed by induction on
 \[
 n.
@@ -206,14 +239,21 @@ Therefore
 v_1,\ldots,v_n
 \]
 is an orthonormal basis of $\mathbb R^n$ consisting of eigenvectors of $S$.
+
 :::
 
-<1>6. Equivalently, there exists an orthogonal matrix $Q$ and a real diagonal matrix $D$ such that
+:::
+
+::: pf-step
+
+Equivalently, there exists an orthogonal matrix $Q$ and a real diagonal matrix $D$ such that
 \[
 \boxed{Q^TSQ=D}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let the columns of $Q$ be the orthonormal eigenbasis from step <1>5.
 Then
 \[
@@ -237,12 +277,16 @@ Q^{-1}SQ
 Q^TSQ
 =D.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (A).
 Steps <1>2--<1>6 state and prove the spectral theorem requested in part (B).
+
 :::
+
 :::

@@ -30,14 +30,19 @@ g_n(x):=\sum_{m=1}^n(-1)^m f_m(x).
 Prove that $g_n(x)$ converges to some $g(x)\in\mathbb R$ for every $x\in[-1,1]$ and that the resulting function $g:[-1,1]\to\mathbb R$ is continuous.
 :::
 
-::: {.solution}
-<1>1. For each fixed $x\in[-1,1]$, the series
+::: pf
+
+::: pf-step
+
+For each fixed $x\in[-1,1]$, the series
 \[
 \sum_{m=1}^{\infty}(-1)^mf_m(x)
 \]
 converges.
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $x$, the numbers
 \[
 f_1(x)\ge f_2(x)\ge\cdots\ge0
@@ -52,11 +57,18 @@ Thus
 g_n(x)\to g(x)
 \]
 for every fixed $x$.
+
 :::
 
-<1>2. The sequence $(f_n)$ converges uniformly to $0$ on $[-1,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(f_n)$ converges uniformly to $0$ on $[-1,1]$.
+
+
+::: pf-proof
+
 Fix $\varepsilon>0$ and define
 \[
 U_n=\{x\in[-1,1]:f_n(x)<\varepsilon\}.
@@ -95,16 +107,23 @@ Therefore
 \[
 \|f_n\|_\infty\to0.
 \]
+
 :::
 
-<1>3. For every $n$ and every $x\in[-1,1]$,
+:::
+
+::: pf-step
+
+For every $n$ and every $x\in[-1,1]$,
 \[
 |g(x)-g_n(x)|
 \le
 f_{n+1}(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $x$, the series from step <1>1 is an alternating series whose term magnitudes
 \[
 f_m(x)
@@ -122,15 +141,22 @@ The left side is exactly
 \[
 |g(x)-g_n(x)|.
 \]
+
 :::
 
-<1>4. The convergence
+:::
+
+::: pf-step
+
+The convergence
 \[
 g_n\to g
 \]
 is uniform on $[-1,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 \|g-g_n\|_\infty
@@ -142,11 +168,18 @@ Therefore
 \[
 \|g-g_n\|_\infty\to0.
 \]
+
 :::
 
-<1>5. Each $g_n$ is continuous on $[-1,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each $g_n$ is continuous on $[-1,1]$.
+
+
+::: pf-proof
+
 The function
 \[
 g_n
@@ -154,22 +187,33 @@ g_n
 \sum_{m=1}^n(-1)^mf_m
 \]
 is a finite linear combination of continuous functions.
+
 :::
 
-<1>6. The limit function $g$ is continuous on $[-1,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit function $g$ is continuous on $[-1,1]$.
+
+
+::: pf-proof
+
 By step <1>4, $g_n\to g$ uniformly, and by step <1>5 every $g_n$ is continuous.
 A uniform limit of continuous functions is continuous.
 Thus
 \[
 \boxed{g\in C([-1,1])}.
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves pointwise existence of the limit, and steps <1>2--<1>6 prove continuity of the resulting function.
+
 :::
+
 :::

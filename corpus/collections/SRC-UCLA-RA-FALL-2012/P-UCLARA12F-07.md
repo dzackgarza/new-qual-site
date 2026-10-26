@@ -25,35 +25,54 @@ Show that
 (b) $f'(1)\ge1$.
 :::
 
-::: {.solution}
-<1>1. For every $z\in\mathbb D$,
+::: pf
+
+::: pf-step
+
+For every $z\in\mathbb D$,
 $$
 |f(z)|\le |z|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The map $f$ is holomorphic on $\mathbb D$, satisfies $f(0)=0$, and maps $\mathbb D$ into itself. Schwarz's lemma therefore gives the estimate.
+
 :::
 
-<1>2. For every $\zeta$ on the unit circle,
+:::
+
+::: pf-step
+
+For every $\zeta$ on the unit circle,
 $$
 |f(\zeta)|\le1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $|\zeta|=1$. For $0<r<1$, step <1>1 gives
 $$
 |f(r\zeta)|\le r.
 $$
 Since $f$ is entire, it is continuous at $\zeta$. Letting $r\uparrow1$ yields $|f(\zeta)|\le1$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{f'(1)\in\RR}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 $$
 \phi(t)\coloneqq |f(e^{it})|^2.
@@ -76,14 +95,21 @@ $$
 \operatorname{Im}f'(1)=0.
 $$
 Hence $f'(1)$ is real.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \operatorname{Re}f'(1)\ge1.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<r<1$, step <1>1 gives
 $$
 |f(r)|\le r.
@@ -105,20 +131,31 @@ Subtract $1$, divide by $-2h<0$, and let $h\downarrow0$. The inequality reverses
 $$
 \operatorname{Re}f'(1)\ge1.
 $$
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{f'(1)\ge1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $f'(1)$ is real. Step <1>4 then gives the stated inequality.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

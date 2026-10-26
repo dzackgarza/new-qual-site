@@ -32,7 +32,6 @@ x_n\to x\text{ in }(X,\rho).
 Prove both properties, together with all other assertions used in your construction.
 :::
 
-::: {.solution}
 Define
 \[
 \boxed{
@@ -46,9 +45,15 @@ Define
 x,y\in X.
 \]
 
-<1>1. The function $\rho$ is a metric on $X$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $\rho$ is a metric on $X$.
+
+
+::: pf-proof
+
 Nonnegativity and symmetry are immediate.
 
 If
@@ -86,9 +91,14 @@ Adding the two inequalities gives
 \rho(x,y)+\rho(y,z).
 \]
 Thus $\rho$ is a metric.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 x_n\to x
 \]
@@ -97,7 +107,9 @@ in the metric $\rho$, then
 |x_n-x|\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 |x_n-x|
@@ -105,9 +117,14 @@ By definition,
 \rho(x_n,x).
 \]
 Hence convergence in $\rho$ implies ordinary convergence.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 |x_n-x|\to0
 \]
@@ -116,7 +133,9 @@ for some $x\in X$, then
 \left|\frac1{x_n}-\frac1x\right|\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x\ne0$, choose $N$ such that for $n\ge N$,
 \[
 |x_n-x|<\frac{|x|}{2}.
@@ -140,9 +159,14 @@ Therefore, for $n\ge N$,
 \frac{2}{|x|^2}|x_n-x|.
 \]
 The right side tends to $0$.
+
 :::
 
-<1>4. Ordinary convergence to a point of $X$ is equivalent to convergence in $\rho$:
+:::
+
+::: pf-step
+
+Ordinary convergence to a point of $X$ is equivalent to convergence in $\rho$:
 \[
 \boxed{
 |x_n-x|\to0
@@ -151,7 +175,9 @@ The right side tends to $0$.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The forward implication follows from step <1>3:
 \[
 \rho(x_n,x)
@@ -164,9 +190,14 @@ The forward implication follows from step <1>3:
 \longrightarrow0.
 \]
 The reverse implication is step <1>2.
+
 :::
 
-<1>5. Let $(x_n)$ be a $\rho$-Cauchy sequence.
+:::
+
+::: pf-step
+
+Let $(x_n)$ be a $\rho$-Cauchy sequence.
 Then both real sequences
 \[
 (x_n)
@@ -175,7 +206,9 @@ Then both real sequences
 \]
 are Cauchy in $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 For all $m,n$,
 \[
 |x_n-x_m|
@@ -191,25 +224,39 @@ and
 \rho(x_n,x_m).
 \]
 Thus the Cauchy property for $\rho$ implies the ordinary Cauchy property for each coordinate sequence.
+
 :::
 
-<1>6. There exist real numbers $a,b$ such that
+:::
+
+::: pf-step
+
+There exist real numbers $a,b$ such that
 \[
 x_n\to a
 \qquad\text{and}\qquad
 \frac1{x_n}\to b.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The real line is complete, and both sequences are Cauchy by step <1>5.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 ab=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $n$,
 \[
 x_n\cdot\frac1{x_n}=1.
@@ -222,9 +269,14 @@ ab
 x_n\frac1{x_n}
 =1.
 \]
+
 :::
 
-<1>8. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 a\ne0,
 \]
@@ -233,7 +285,9 @@ so $a\in X$, and
 b=\frac1a.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The identity
 \[
 ab=1
@@ -243,11 +297,18 @@ Solving for $b$ gives
 \[
 b=1/a.
 \]
+
 :::
 
-<1>9. The sequence $(x_n)$ converges to $a$ in the metric $\rho$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(x_n)$ converges to $a$ in the metric $\rho$.
+
+
+::: pf-proof
+
 By steps <1>6 and <1>8,
 \[
 |x_n-a|\to0
@@ -270,20 +331,31 @@ Therefore
 \right|
 \longrightarrow0.
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{(X,\rho)\text{ is complete}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every $\rho$-Cauchy sequence converges in $\rho$ to a point $a\in X$ by steps <1>5--<1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves that $\rho$ is a metric, step <1>4 proves that it induces the same sequential convergence as the usual metric on $X$, and step <1>10 proves completeness.
+
 :::
+
 :::

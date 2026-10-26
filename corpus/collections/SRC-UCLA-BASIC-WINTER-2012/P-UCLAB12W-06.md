@@ -21,7 +21,6 @@ I(\gamma)=\int_\gamma\frac{y\,dx-x\,dy}{x^2+y^2}.
 \]
 :::
 
-::: {.solution}
 Choose a smooth parametrization
 $$
 \gamma(t)=(x(t),y(t)),
@@ -29,14 +28,20 @@ $$
 $$
 with $\gamma(0)=\gamma(1)=(1,0)$.
 
-<1>1. There is a smooth real-valued argument function $\theta(t)$ such that
+::: pf
+
+::: pf-step
+
+There is a smooth real-valued argument function $\theta(t)$ such that
 $$
 \frac{x(t)+iy(t)}{\sqrt{x(t)^2+y(t)^2}}
 =e^{i\theta(t)}
 $$
 for all $t$, with $\theta(0)=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The normalized path
 $$
 t\longmapsto \frac{x(t)+iy(t)}{\sqrt{x(t)^2+y(t)^2}}
@@ -48,16 +53,23 @@ $$
 \theta\longmapsto e^{i\theta}
 $$
 has the path-lifting property, so the normalized path has a unique lift beginning at $0$. Because the original path is smooth, the lift is smooth.
+
 :::
 
-<1>2. Along the path,
+:::
+
+::: pf-step
+
+Along the path,
 $$
 \theta'(t)
 =
 \frac{x(t)y'(t)-y(t)x'(t)}{x(t)^2+y(t)^2}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 x(t)=r(t)\cos\theta(t),
@@ -82,15 +94,22 @@ x y'-y x'
 =(x^2+y^2)\theta',
 $$
 which yields the formula.
+
 :::
 
-<1>3. The integral satisfies
+:::
+
+::: pf-step
+
+The integral satisfies
 $$
 I(\gamma)
 =-\bigl(\theta(1)-\theta(0)\bigr).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using the parametrization and step <1>2,
 $$
 \begin{aligned}
@@ -101,32 +120,50 @@ I(\gamma)
 &=-\bigl(\theta(1)-\theta(0)\bigr).
 \end{aligned}
 $$
+
 :::
 
-<1>4. Since $\gamma$ winds once clockwise around the origin,
+:::
+
+::: pf-step
+
+Since $\gamma$ winds once clockwise around the origin,
 $$
 \theta(1)-\theta(0)=-2\pi.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For a closed loop in $\RR^2\setminus\{0\}$, the total change of a lifted argument is $2\pi$ times its winding number about the origin. A single clockwise winding has winding number $-1$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{I(\gamma)=2\pi}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the value from step <1>4 into step <1>3:
 $$
 I(\gamma)=-(-2\pi)=2\pi.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the requested value of the integral.
+
 :::
+
 :::

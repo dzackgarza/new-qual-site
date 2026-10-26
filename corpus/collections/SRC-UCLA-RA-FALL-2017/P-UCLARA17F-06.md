@@ -24,7 +24,6 @@ g(z)=\int_{\{w\in\mathbb C:|w-z|\le1\}}\frac{|f(w)|}{|w-z|}\,dA(w),
 where $dA$ denotes integration with respect to Lebesgue measure on $\mathbb C\cong\mathbb R^2$. Show that $|g(z)|<\infty$ for almost every $z\in\mathbb C$ and that $g\in L^2(\mathbb C)$.
 :::
 
-::: {.solution}
 Define
 \[
 k(u)
@@ -33,9 +32,15 @@ k(u)
 \]
 on \(\mathbb C\cong\mathbb R^2\).
 
-<1>1. The kernel \(k\) belongs to \(L^1(\mathbb C)\).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The kernel \(k\) belongs to \(L^1(\mathbb C)\).
+
+
+::: pf-proof
+
 Using polar coordinates,
 \[
 \int_{\mathbb C}k(u)\,dA(u)
@@ -47,19 +52,31 @@ Using polar coordinates,
 2\pi.
 \]
 Thus the integral is finite.
+
 :::
 
-<1>2. More precisely,
+:::
+
+::: pf-step
+
+More precisely,
 \[
 \boxed{
 \|k\|_1=2\pi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the value computed in step <1>1.
+
 :::
 
-<1>3. After the change of variables
+:::
+
+::: pf-step
+
+After the change of variables
 \[
 u=w-z,
 \]
@@ -72,7 +89,9 @@ g(z)
 |f(z+u)|\,k(u)\,dA(u)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition
 \[
 |w-z|\le1
@@ -91,31 +110,48 @@ Thus
 =
 |f(z+u)|\,k(u).
 \]
+
 :::
 
-<1>4. The function
+:::
+
+::: pf-step
+
+The function
 \[
 (z,u)\longmapsto |f(z+u)|k(u)
 \]
 is measurable on \(\mathbb C\times\mathbb C\).
 
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 (z,u)\mapsto z+u
 \]
 is continuous, \(f\) has a measurable representative, and \(k\) is measurable. Products and compositions of measurable functions are measurable.
+
 :::
 
-<1>5. Therefore \(g\) is measurable as an extended-valued nonnegative function.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(g\) is measurable as an extended-valued nonnegative function.
+
+
+::: pf-proof
+
 By step <1>4, Tonelli's theorem implies that the integral in \(u\) defines a measurable function of \(z\), possibly taking the value \(+\infty\).
+
 :::
 
-Now apply Minkowski's integral inequality.
+:::
 
-<1>6. One has
+::: pf-step
+
+One has
 \[
 \|g\|_2
 \le
@@ -128,7 +164,9 @@ k(u)
 dA(u).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Minkowski's integral inequality to the nonnegative function
 \[
 H(z,u)=|f(z+u)|k(u):
@@ -151,9 +189,14 @@ k(u)
 \int |f(z+u)|^2\,dA(z)
 \right)^{1/2}.
 \]
+
 :::
 
-<1>7. For every \(u\in\mathbb C\),
+:::
+
+::: pf-step
+
+For every \(u\in\mathbb C\),
 \[
 \boxed{
 \left(
@@ -164,7 +207,9 @@ k(u)
 \|f\|_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Lebesgue measure is translation invariant. With
 \[
 w=z+u,
@@ -174,9 +219,14 @@ w=z+u,
 =
 \int_{\mathbb C}|f(w)|^2\,dA(w).
 \]
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \|g\|_2
 \le
@@ -184,11 +234,18 @@ w=z+u,
 \int_{\mathbb C}k(u)\,dA(u).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the constant value from step <1>7 into step <1>6.
+
 :::
 
-<1>9. Using step <1>2,
+:::
+
+::: pf-step
+
+Using step <1>2,
 \[
 \boxed{
 \|g\|_2
@@ -196,42 +253,62 @@ Substitute the constant value from step <1>7 into step <1>6.
 2\pi\|f\|_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \int_{\mathbb C}k(u)\,dA(u)
 =
 2\pi.
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 g\in L^2(\mathbb C)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The right-hand side of step <1>9 is finite because
 \[
 f\in L^2(\mathbb C).
 \]
 Thus \(\|g\|_2<\infty\).
+
 :::
 
-<1>11. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 |g(z)|<\infty}
 \]
 for almost every \(z\in\mathbb C\).
 
-::: {.proof}
+
+::: pf-proof
+
 An \(L^2\)-function is finite almost everywhere; otherwise the integral of its square would be infinite.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 proves \(g\in L^2\), and step <1>11 gives the almost-everywhere finiteness.
+
 :::
+
 :::

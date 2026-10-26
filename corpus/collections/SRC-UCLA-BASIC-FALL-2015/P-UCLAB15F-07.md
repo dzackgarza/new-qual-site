@@ -26,7 +26,6 @@ Find all possible values of $\operatorname{rank}C$.
 For each possible rank, give explicit matrices realizing it, and prove that all other values are impossible.
 :::
 
-::: {.solution}
 Regard
 \[
 B:\mathbb R^5\to\mathbb R^4
@@ -36,12 +35,18 @@ and
 A^T:\mathbb R^4\to\mathbb R^5.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \dim\ker(A^T)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \operatorname{rank}A=3,
@@ -57,9 +62,14 @@ The domain of $A^T$ has dimension $4$, so rank-nullity gives
 4-3
 =1.
 \]
+
 :::
 
-<1>2. The rank of $C=A^TB$ is
+:::
+
+::: pf-step
+
+The rank of $C=A^TB$ is
 \[
 \operatorname{rank}C
 =
@@ -68,7 +78,9 @@ The domain of $A^T$ has dimension $4$, so rank-nullity gives
 \dim\bigl(\operatorname{im}B\cap\ker A^T\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Restrict $A^T$ to the three-dimensional subspace
 \[
 \operatorname{im}B\subseteq\mathbb R^4.
@@ -100,14 +112,21 @@ Since
 \dim\operatorname{im}B=\operatorname{rank}B=3,
 \]
 this is the displayed formula.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \operatorname{rank}C\in\{2,3\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \ker A^T
@@ -127,11 +146,18 @@ Step <1>2 then gives
 2.
 \]
 Thus no other rank is possible.
+
 :::
 
-<1>4. Rank $3$ occurs.
+:::
 
-::: {.proof}
+::: pf-step
+
+Rank $3$ occurs.
+
+
+::: pf-proof
+
 Take
 \[
 A=B=
@@ -156,11 +182,18 @@ A^TB
 \end{pmatrix},
 \]
 which has rank $3$.
+
 :::
 
-<1>5. Rank $2$ occurs.
+:::
 
-::: {.proof}
+::: pf-step
+
+Rank $2$ occurs.
+
+
+::: pf-proof
+
 Take
 \[
 A=
@@ -195,20 +228,31 @@ A^TB
 \end{pmatrix},
 \]
 which has rank $2$.
+
 :::
 
-<1>6. Hence the complete list of possible values is
+:::
+
+::: pf-step
+
+Hence the complete list of possible values is
 \[
 \boxed{\operatorname{rank}(A^TB)\in\{2,3\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 rules out every other value, while steps <1>4--<1>5 realize both listed values.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required classification.
+
 :::
+
 :::

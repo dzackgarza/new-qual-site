@@ -21,7 +21,6 @@ Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be $2\pi$-periodic.
 Show that linear combinations of the translates $f(x-a)$, $a\in\mathbb R$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
 :::
 
-::: {.solution}
 For a $2\pi$-periodic integrable function $h$, write
 \[
 \widehat h(n)
@@ -38,9 +37,15 @@ Let
 \{f(\cdot-a):a\in\mathbb R\}.
 \]
 
-<1>1. If $\widehat f(n_0)=0$ for some $n_0\in\mathbb Z$, then $\mathcal T_f$ is not dense in $L^1((0,2\pi))$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $\widehat f(n_0)=0$ for some $n_0\in\mathbb Z$, then $\mathcal T_f$ is not dense in $L^1((0,2\pi))$.
+
+
+::: pf-proof
+
 For a translate,
 \[
 \begin{aligned}
@@ -78,9 +83,14 @@ It is proper because
 \widehat{e^{in_0x}}(n_0)=1.
 \]
 Thus $\mathcal T_f$ cannot be dense.
+
 :::
 
-<1>2. Now suppose that
+:::
+
+::: pf-step
+
+Now suppose that
 \[
 \widehat f(n)\ne0
 \qquad
@@ -101,7 +111,9 @@ h(x)\overline{g(x)}\,dx
 (h\in X).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $X$ is a proper closed subspace of $L^1((0,2\pi))$, the Hahn--Banach theorem gives a nonzero continuous linear functional
 \[
 \Lambda\in(L^1)^*
@@ -118,9 +130,14 @@ gives a nonzero $g\in L^\infty((0,2\pi))$ such that
 h(x)\overline{g(x)}\,dx.
 \]
 Since $\Lambda$ vanishes on $X$, the displayed annihilation identity follows.
+
 :::
 
-<1>3. Under the assumption of step <1>2, define
+:::
+
+::: pf-step
+
+Under the assumption of step <1>2, define
 \[
 H(a)
 \coloneqq
@@ -134,11 +151,18 @@ H(a)=0
 (a\in\mathbb R).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each $a$, the translate $f(\cdot-a)$ belongs to $\mathcal T_f\subset X$. The annihilation identity in step <1>2 therefore gives $H(a)=0$.
+
 :::
 
-<1>4. For every $n\in\mathbb Z$,
+:::
+
+::: pf-step
+
+For every $n\in\mathbb Z$,
 \[
 \widehat H(n)
 =
@@ -147,7 +171,9 @@ For each $a$, the translate $f(\cdot-a)$ belongs to $\mathcal T_f\subset X$. The
 \overline{\widehat g(-n)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f\in L^1(0,2\pi)$ and $g\in L^\infty(0,2\pi)$, the function
 \[
 (a,x)
@@ -195,16 +221,23 @@ Hence
 \overline{\widehat g(-n)}.
 \end{aligned}
 \]
+
 :::
 
-<1>5. The assumption that all Fourier coefficients of $f$ are nonzero forces
+:::
+
+::: pf-step
+
+The assumption that all Fourier coefficients of $f$ are nonzero forces
 \[
 \widehat g(n)=0
 \qquad
 (n\in\mathbb Z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, $H\equiv0$, so
 \[
 \widehat H(n)=0
@@ -222,11 +255,18 @@ Since $\widehat f(-n)\ne0$ by hypothesis,
 \widehat g(-n)=0
 \]
 for every $n$, which is equivalent to the stated conclusion.
+
 :::
 
-<1>6. The function $g$ in step <1>2 must vanish almost everywhere.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ in step <1>2 must vanish almost everywhere.
+
+
+::: pf-proof
+
 Since the interval $(0,2\pi)$ has finite measure,
 \[
 g\in L^\infty
@@ -238,20 +278,31 @@ By step <1>5 all Fourier coefficients of $g$ vanish. The uniqueness theorem for 
 g=0
 \]
 almost everywhere.
+
 :::
 
-<1>7. If every Fourier coefficient of $f$ is nonzero, then $\mathcal T_f$ is dense in $L^1((0,2\pi))$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If every Fourier coefficient of $f$ is nonzero, then $\mathcal T_f$ is dense in $L^1((0,2\pi))$.
+
+
+::: pf-proof
+
 If the closure $X$ were proper, step <1>2 would produce a nonzero annihilator $g\in L^\infty$, whereas step <1>6 would force that annihilator to be zero almost everywhere. This contradiction shows
 \[
 X=L^1((0,2\pi)).
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves necessity, and step <1>7 proves sufficiency.
+
 :::
+
 :::

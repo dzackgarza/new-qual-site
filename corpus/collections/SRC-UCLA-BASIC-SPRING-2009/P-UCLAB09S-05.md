@@ -29,13 +29,18 @@ x(t)=e^{At}x(0).
 \]
 :::
 
-::: {.solution}
-<1>1. The characteristic polynomial of $A$ is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of $A$ is
 \[
 \boxed{\chi_A(\lambda)=\lambda^2(\lambda-4)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 \begin{aligned}
@@ -61,11 +66,18 @@ Therefore
 =
 \lambda^2(\lambda-4).
 \]
+
 :::
 
-<1>2. The eigenspace for eigenvalue $0$ is one-dimensional.
+:::
 
-::: {.proof}
+::: pf-step
+
+The eigenspace for eigenvalue $0$ is one-dimensional.
+
+
+::: pf-proof
+
 Solving
 \[
 Av=0
@@ -99,14 +111,21 @@ Hence
 \right\},
 \]
 which has dimension $1$.
+
 :::
 
-<1>3. The minimal polynomial of $A$ is
+:::
+
+::: pf-step
+
+The minimal polynomial of $A$ is
 \[
 \boxed{\mu_A(\lambda)=\lambda^2(\lambda-4)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, the characteristic polynomial is
 \[
 \lambda^2(\lambda-4).
@@ -121,16 +140,23 @@ Thus the only possibilities are
 If the first polynomial were the minimal polynomial, it would have distinct roots, and $A$ would be diagonalizable.
 But step <1>2 shows that eigenvalue $0$ has algebraic multiplicity $2$ and geometric multiplicity $1$, so $A$ is not diagonalizable.
 Therefore the repeated factor $\lambda^2$ is necessary.
+
 :::
 
-<1>4. For every $t$, there are unique scalars $b(t),c(t)$ such that
+:::
+
+::: pf-step
+
+For every $t$, there are unique scalars $b(t),c(t)$ such that
 \[
 e^{At}
 =
 I+b(t)A+c(t)A^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 A^2(A-4I)=0,
@@ -160,9 +186,14 @@ p_t'(0)=t,
 p_t(4)=e^{4t}.
 \]
 These three interpolation conditions determine $b(t),c(t)$ uniquely.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 b(t)=t
 \]
@@ -175,7 +206,9 @@ c(t)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 p_t'(0)=t,
@@ -198,9 +231,14 @@ c(t)
 =
 \frac{e^{4t}-1-4t}{16}.
 \]
+
 :::
 
-<1>6. The square of $A$ is
+:::
+
+::: pf-step
+
+The square of $A$ is
 \[
 A^2
 =
@@ -211,7 +249,9 @@ A^2
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication of
 \[
 A
@@ -223,9 +263,14 @@ A
 \end{pmatrix}
 \]
 by itself gives the displayed matrix.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 e^{At}
@@ -236,7 +281,9 @@ I+tA
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 E(t)
@@ -302,9 +349,14 @@ one has
 E(t)=e^{At}.
 \]
 Using step <1>6 gives a fully explicit matrix.
+
 :::
 
-<1>8. Explicitly, with
+:::
+
+::: pf-step
+
+Explicitly, with
 \[
 c=\frac{e^{4t}-1-4t}{16},
 \]
@@ -321,13 +373,19 @@ t+3c&c&1+t+6c
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the matrices $A$ and $A^2$ into the formula in step <1>7 and add the entries.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested matrix exponential.
+
 :::
+
 :::

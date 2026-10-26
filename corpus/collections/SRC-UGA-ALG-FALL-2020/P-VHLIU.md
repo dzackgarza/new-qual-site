@@ -36,13 +36,18 @@ a. Find the minimal polynomial of $B$.
 b. Find a $3\times 3$ matrix $J$ in Jordan canonical form and an invertible matrix $P$ such that $B = PJ\inverseof{P}$.
 :::
 
-::: {.solution}
-<1>1. The minimal polynomial of $B$ is
+::: pf
+
+::: pf-step
+
+The minimal polynomial of $B$ is
 \[
 \boxed{m_B(x)=(x+1)(x-1)^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 \[
 \chi_B(x)=\det(xI-B)=(x+1)(x-1)^2.
@@ -63,15 +68,22 @@ Therefore the factor $(x-1)$ must occur with exponent $2$, and
 \[
 m_B(x)=(x+1)(x-1)^2.
 \]
+
 :::
 
-<1>2. A Jordan canonical form and an invertible conjugating matrix are
+:::
+
+::: pf-step
+
+A Jordan canonical form and an invertible conjugating matrix are
 \[
 \boxed{J=\begin{pmatrix}-1&0&0\\0&1&1\\0&0&1\end{pmatrix},\qquad
 P=\begin{pmatrix}-3&3&1\\1&3&1\\1&-3&0\end{pmatrix}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A Jordan form is
 \[
 J=
@@ -101,11 +113,15 @@ PJP^{-1}=
 \end{bmatrix}=B.
 \]
 Thus $B$ is similar to the displayed Jordan matrix.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 prove parts (a) and (b), respectively.
+
 :::
+
 :::

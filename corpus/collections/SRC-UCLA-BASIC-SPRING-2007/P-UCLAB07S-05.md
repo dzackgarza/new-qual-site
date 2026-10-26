@@ -21,7 +21,6 @@ Let $T$ be a normal linear operator on a finite-dimensional complex inner-produc
 Prove that if $v$ is an eigenvector of $T$, then $v$ is also an eigenvector of $T^*$.
 :::
 
-::: {.solution}
 Suppose
 \[
 Tv=\lambda v
@@ -31,13 +30,19 @@ with
 v\ne0.
 \]
 
-<1>1. The operator
+::: pf
+
+::: pf-step
+
+The operator
 \[
 S=T-\lambda I
 \]
 is normal.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $T$ is normal,
 \[
 T^*T=TT^*.
@@ -71,15 +76,22 @@ These are equal because
 T^*T=TT^*.
 \]
 Thus $S$ is normal.
+
 :::
 
-<1>2. For every normal operator $N$ on a finite-dimensional complex inner-product space,
+:::
+
+::: pf-step
+
+For every normal operator $N$ on a finite-dimensional complex inner-product space,
 \[
 \|Nx\|=\|N^*x\|
 \]
 for all $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 Normality gives
 \[
 N^*N=NN^*.
@@ -101,14 +113,21 @@ Therefore
 \end{aligned}
 \]
 Taking nonnegative square roots gives the claim.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 Sv=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 Sv
@@ -116,14 +135,21 @@ Sv
 =Tv-\lambda v
 =0.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 S^*v=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, $S$ is normal.
 Therefore step <1>2 gives
 \[
@@ -143,14 +169,21 @@ so
 \[
 S^*v=0.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{T^*v=\overline{\lambda}v}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 S^*=T^*-\overline{\lambda}I,
@@ -163,18 +196,29 @@ Thus
 \[
 T^*v=\overline{\lambda}v.
 \]
+
 :::
 
-<1>6. Hence $v$ is an eigenvector of $T^*$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $v$ is an eigenvector of $T^*$.
+
+
+::: pf-proof
+
 The vector $v$ is nonzero by hypothesis, and step <1>5 shows that it is taken to a scalar multiple of itself by $T^*$.
 Therefore $v$ is an eigenvector of $T^*$, with eigenvalue $\overline{\lambda}$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

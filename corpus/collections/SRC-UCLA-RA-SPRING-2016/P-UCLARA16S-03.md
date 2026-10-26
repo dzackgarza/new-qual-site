@@ -28,14 +28,19 @@ f(x+a)\ge f(x)
 for almost all $x\in\mathbb R$.
 :::
 
-::: {.solution}
-<1>1. For every nonnegative rational number $q$,
+::: pf
+
+::: pf-step
+
+For every nonnegative rational number $q$,
 \[
 f(x+q)\ge f(x)
 \]
 for almost every $x\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 q=\frac{m}{n}
@@ -69,9 +74,14 @@ f\!\left(x+\frac{m-1}{n}\right)
 f(x).
 \]
 The case $m=0$ is equality.
+
 :::
 
-<1>2. If $a\ge0$ and $(q_k)$ is a sequence of nonnegative rationals with $q_k\to a$, then for every compact interval $K\subset\mathbb R$,
+:::
+
+::: pf-step
+
+If $a\ge0$ and $(q_k)$ is a sequence of nonnegative rationals with $q_k\to a$, then for every compact interval $K\subset\mathbb R$,
 \[
 f(\cdot+q_k)
 \longrightarrow
@@ -79,7 +89,9 @@ f(\cdot+a)
 \quad\text{in }L^1(K).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a compact interval $J$ containing
 \[
 K+a
@@ -120,15 +132,22 @@ After translating variables, this implies
 \|f(\cdot+q_k)-f(\cdot+a)\|_{L^1(K)}
 \longrightarrow0.
 \]
+
 :::
 
-<1>3. Fix $a\ge0$. For every compact interval $K\subset\mathbb R$,
+:::
+
+::: pf-step
+
+Fix $a\ge0$. For every compact interval $K\subset\mathbb R$,
 \[
 f(x+a)-f(x)\ge0
 \]
 for almost every $x\in K$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose nonnegative rationals $q_k\to a$ and define
 \[
 h_k(x)
@@ -170,9 +189,14 @@ Thus
 \longrightarrow0.
 \]
 Hence $h_-=0$ almost everywhere on $K$, which is equivalent to $h\ge0$ almost everywhere there.
+
 :::
 
-<1>4. For every real number $a\ge0$,
+:::
+
+::: pf-step
+
+For every real number $a\ge0$,
 \[
 \boxed{
 f(x+a)\ge f(x)
@@ -180,7 +204,9 @@ f(x+a)\ge f(x)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>3 to the compact intervals
 \[
 [-N,N],
@@ -188,11 +214,15 @@ Apply step <1>3 to the compact intervals
 N=1,2,\dots.
 \]
 The exceptional set in each interval is null, and the countable union of these exceptional sets is null. Since the intervals exhaust $\mathbb R$, the stated inequality holds almost everywhere on $\mathbb R$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

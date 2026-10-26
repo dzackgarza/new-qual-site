@@ -25,20 +25,32 @@ A=\{z\in\mathbb D:\lim_{n\to\infty}f_n(z)\text{ exists}\}.
 Show that if $A$ has an accumulation point in $\mathbb D$, then there exists a holomorphic function $f$ on $\mathbb D$ such that $f_n\to f$ locally uniformly on $\mathbb D$.
 :::
 
-::: {.solution}
-<1>1. The family $\{f_n:n\ge1\}$ is normal on $\mathbb D$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The family $\{f_n:n\ge1\}$ is normal on $\mathbb D$.
+
+
+::: pf-proof
+
 The functions satisfy
 $$
 |f_n(z)|\le1
 $$
 for every $z\in\mathbb D$ and every $n$. Thus the family is locally uniformly bounded. By Montel's theorem, every sequence in this family has a subsequence that converges locally uniformly on $\mathbb D$ to a holomorphic function.
+
 :::
 
-<1>2. Any two locally uniform subsequential limits of $(f_n)$ are equal.
+:::
 
-::: {.proof}
+::: pf-step
+
+Any two locally uniform subsequential limits of $(f_n)$ are equal.
+
+
+::: pf-proof
+
 Let $(f_{n_k})$ converge locally uniformly to a holomorphic function $g$, and let $(f_{m_j})$ converge locally uniformly to a holomorphic function $h$.
 
 For every $z\in A$, the full scalar sequence $(f_n(z))$ converges by definition of $A$. Therefore both subsequences have the same pointwise limit at $z$, and local uniform convergence gives
@@ -53,17 +65,31 @@ $$
 g\equiv h
 $$
 on $\mathbb D$.
+
 :::
 
-<1>3. There exists a holomorphic function $f$ on $\mathbb D$ that is the locally uniform limit of some subsequence of $(f_n)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+There exists a holomorphic function $f$ on $\mathbb D$ that is the locally uniform limit of some subsequence of $(f_n)$.
+
+
+::: pf-proof
+
 Apply step <1>1 to the sequence $(f_n)$ itself. Montel's theorem gives a subsequence $(f_{n_k})$ converging locally uniformly to some holomorphic function $f$.
+
 :::
 
-<1>4. The full sequence $(f_n)$ converges locally uniformly to the function $f$ from step <1>3.
+:::
 
-::: {.proof}
+::: pf-step
+
+The full sequence $(f_n)$ converges locally uniformly to the function $f$ from step <1>3.
+
+
+::: pf-proof
+
 Suppose not. Then there exist a compact set $K\subset\mathbb D$, a number $\varepsilon>0$, and a subsequence $(f_{m_j})$ such that
 $$
 \sup_{z\in K}|f_{m_j}(z)-f(z)|\ge\varepsilon
@@ -75,20 +101,31 @@ $$
 \sup_{z\in K}|f_{m_{j_\ell}}(z)-f(z)|\longrightarrow0,
 $$
 contradicting the displayed lower bound by $\varepsilon$.
+
 :::
 
-<1>5. Therefore there exists a holomorphic function $f$ on $\mathbb D$ such that
+:::
+
+::: pf-step
+
+Therefore there exists a holomorphic function $f$ on $\mathbb D$ such that
 $$
 \boxed{f_n\to f\text{ locally uniformly on }\mathbb D.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 constructs a holomorphic candidate, and step <1>4 proves convergence of the full sequence to it.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

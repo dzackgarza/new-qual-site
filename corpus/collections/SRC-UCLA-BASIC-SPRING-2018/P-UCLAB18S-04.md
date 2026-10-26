@@ -32,13 +32,16 @@ Which pairs are similar over $\mathbb R$?
 Fully justify your answer.
 :::
 
-::: {.solution}
 For each matrix $X$ in the list, write
 \[
 N_X=X-I.
 \]
 
-<1>1. For each of
+::: pf
+
+::: pf-step
+
+For each of
 \[
 X=A,B,C,D,E,
 \]
@@ -47,7 +50,9 @@ one has
 \boxed{N_X\ne0,\qquad N_X^2=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The five nilpotent parts are
 \[
 N_A=
@@ -89,9 +94,14 @@ N_E=
 \]
 Each is nonzero and has exactly one nonzero matrix-unit position.
 Hence its square is zero.
+
 :::
 
-<1>2. For each
+:::
+
+::: pf-step
+
+For each
 \[
 X=A,B,C,D,E,
 \]
@@ -100,7 +110,9 @@ the minimal polynomial is
 \boxed{(t-1)^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives
 \[
 (X-I)^2=0,
@@ -122,9 +134,14 @@ Therefore the minimal polynomial is exactly
 \[
 (t-1)^2.
 \]
+
 :::
 
-<1>3. Each of
+:::
+
+::: pf-step
+
+Each of
 \[
 A,B,C,D,E
 \]
@@ -135,7 +152,9 @@ J_2(1)\oplus[1].
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All six matrices are unipotent upper- or lower-triangular with characteristic polynomial
 \[
 (t-1)^3.
@@ -149,20 +168,32 @@ Thus the Jordan form is
 \[
 J_2(1)\oplus[1].
 \]
+
 :::
 
-<1>4. Therefore any two matrices among
+:::
+
+::: pf-step
+
+Therefore any two matrices among
 \[
 \boxed{A,B,C,D,E}
 \]
 are similar over $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, all five have the same real Jordan normal form.
 Matrices with the same Jordan form are similar.
+
 :::
 
-<1>5. For
+:::
+
+::: pf-step
+
+For
 \[
 F,
 \]
@@ -192,34 +223,50 @@ N_F^2
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply $N_F$ by itself directly.
 Only the path
 \[
 1\to2\to3
 \]
 contributes a nonzero entry, namely the $(1,3)$ entry.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{N_F^3=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only nonzero entry of $N_F^2$ is in column $3$, while the third row of $N_F$ is zero.
 Thus
 \[
 N_F^3=N_F^2N_F=0.
 \]
+
 :::
 
-<1>7. The minimal polynomial of $F$ is
+:::
+
+::: pf-step
+
+The minimal polynomial of $F$ is
 \[
 \boxed{(t-1)^3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives
 \[
 (F-I)^3=0.
@@ -237,28 +284,42 @@ Hence the minimal polynomial is
 \[
 (t-1)^3.
 \]
+
 :::
 
-<1>8. Thus $F$ has Jordan form
+:::
+
+::: pf-step
+
+Thus $F$ has Jordan form
 \[
 \boxed{J_3(1)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The characteristic polynomial is
 \[
 (t-1)^3,
 \]
 and step <1>7 says the largest Jordan block has size $3$.
 Since the whole space has dimension $3$, there is exactly one block.
+
 :::
 
-<1>9. The matrix $F$ is not similar to any of
+:::
+
+::: pf-step
+
+The matrix $F$ is not similar to any of
 \[
 A,B,C,D,E.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Similarity preserves the minimal polynomial.
 By step <1>2, each of
 \[
@@ -274,9 +335,14 @@ while step <1>7 gives
 \]
 for $F$.
 Thus no such similarity is possible.
+
 :::
 
-<1>10. Therefore the complete similarity classification is:
+:::
+
+::: pf-step
+
+Therefore the complete similarity classification is:
 \[
 \boxed{
 A\sim B\sim C\sim D\sim E,
@@ -285,15 +351,21 @@ F\text{ is in a separate similarity class}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 proves all similarities among the first five matrices.
 Step <1>9 separates $F$ from that class.
 There are no other matrices in the list.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 gives all and only the similar pairs.
+
 :::
+
 :::

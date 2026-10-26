@@ -26,8 +26,11 @@ Problem 6. Let $f:[0,1]\to\mathbb R$ be a $C^1$ function. Prove that
 \]
 :::
 
-::: {.solution}
-<1>1. For each $n$ and each
+::: pf
+
+::: pf-step
+
+For each $n$ and each
 \[
 k=0,\ldots,n-1,
 \]
@@ -45,15 +48,22 @@ f\!\left(\frac{k}{n}\right)
 \frac1n f'(\xi_{k,n}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the mean value theorem to $f$ on the interval
 \[
 \left[\frac{k}{n},\frac{k+1}{n}\right].
 \]
 The hypotheses hold because $f$ is $C^1$, hence continuous on the closed interval and differentiable in its interior.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \left|
 f\!\left(\frac{k+1}{n}\right)
@@ -64,11 +74,18 @@ f\!\left(\frac{k}{n}\right)
 \frac1n|f'(\xi_{k,n})|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take absolute values in the identity from step <1>1 and use $1/n>0$.
+
 :::
 
-<1>3. The sum in the problem equals the tagged Riemann sum
+:::
+
+::: pf-step
+
+The sum in the problem equals the tagged Riemann sum
 \[
 \frac1n
 \sum_{k=0}^{n-1}
@@ -80,31 +97,47 @@ g(t)=|f'(t)|
 \]
 on the uniform partition of $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Sum the identities from step <1>2 over
 \[
 k=0,\ldots,n-1.
 \]
 The point $\xi_{k,n}$ is a tag in the $k$th interval of the uniform partition, whose width is $1/n$.
+
 :::
 
-<1>4. The function
+:::
+
+::: pf-step
+
+The function
 \[
 g(t)=|f'(t)|
 \]
 is continuous on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative $f'$ is continuous because $f$ is $C^1$, and the absolute-value function is continuous.
 Therefore their composition is continuous.
+
 :::
 
-<1>5. The tagged Riemann sums in step <1>3 converge to
+:::
+
+::: pf-step
+
+The tagged Riemann sums in step <1>3 converge to
 \[
 \int_0^1|f'(t)|\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each $n$, the mesh of the uniform partition is
 \[
 \frac1n,
@@ -112,9 +145,14 @@ For each $n$, the mesh of the uniform partition is
 which tends to $0$.
 For a continuous function on a compact interval, every sequence of tagged Riemann sums whose mesh tends to $0$ converges to the Riemann integral.
 Applying this theorem to the continuous function $g=|f'|$ from step <1>4 gives the claim.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -129,13 +167,19 @@ f\!\left(\frac{k}{n}\right)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the left side is exactly the sequence of tagged Riemann sums considered in step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required identity.
+
 :::
+
 :::

@@ -22,32 +22,51 @@ exists for every $x\in[a,b]$ and is continuous on $[a,b]$.
 Prove that $f_n\to f$ uniformly.
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that $f_n\not\to f$ uniformly. Then there exist $\varepsilon>0$, a strictly increasing sequence $(n_k)$, and points $x_k\in[a,b]$ such that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that $f_n\not\to f$ uniformly. Then there exist $\varepsilon>0$, a strictly increasing sequence $(n_k)$, and points $x_k\in[a,b]$ such that
 $$
 \abs{f_{n_k}(x_k)-f(x_k)}\ge\varepsilon
 $$
 for every $k$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the negation of uniform convergence, with the indices chosen successively so that $n_k\to\infty$.
+
 :::
 
-<1>2. After passing to a subsequence, there is $x\in[a,b]$ such that
+:::
+
+::: pf-step
+
+After passing to a subsequence, there is $x\in[a,b]$ such that
 $$
 x_k\longrightarrow x.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The interval $[a,b]$ is compact and hence sequentially compact.
+
 :::
 
-<1>3. If $x\in(a,b)$, then
+:::
+
+::: pf-step
+
+If $x\in(a,b)$, then
 $$
 f_{n_k}(x_k)\longrightarrow f(x).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write $g_k=f_{n_k}$. Choose fixed points
 $$
 p<x<q
@@ -104,14 +123,21 @@ $$
 \liminf_{k\to\infty}g_k(x_k)\ge f(x).
 $$
 Combining the upper and lower bounds proves the claim.
+
 :::
 
-<1>4. If $x=a$, then
+:::
+
+::: pf-step
+
+If $x=a$, then
 $$
 f_{n_k}(x_k)\longrightarrow f(a).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Again write $g_k=f_{n_k}$. Fix $y\in(a,b]$. For all sufficiently large $k$, $a\le x_k<y$. By convexity,
 $$
 g_k(x_k)
@@ -155,14 +181,21 @@ $$
 \liminf_{k\to\infty}g_k(x_k)\ge f(a).
 $$
 Together with the upper bound, this proves the claim.
+
 :::
 
-<1>5. If $x=b$, then
+:::
+
+::: pf-step
+
+If $x=b$, then
 $$
 f_{n_k}(x_k)\longrightarrow f(b).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 This is symmetric to step <1>4. For the upper bound, fix $y\in[a,b)$ and use convexity on $[y,b]$; as $x_k\to b$, the convex coefficient of $g_k(b)$ tends to $1$, giving
 $$
 \limsup_{k\to\infty}g_k(x_k)\le f(b).
@@ -194,28 +227,39 @@ $$
 2f(b-\delta)-f(b-2\delta).
 $$
 Continuity at $b$ and $\delta\downarrow0$ give the required lower bound $f(b)$.
+
 :::
 
-<1>6. In every case,
+:::
+
+::: pf-step
+
+In every case,
 $$
 f_{n_k}(x_k)-f(x_k)\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>3--<1>5 show that $f_{n_k}(x_k)\to f(x)$, according as $x$ is interior, $a$, or $b$. By step <1>2 and continuity of $f$,
 $$
 f(x_k)\to f(x).
 $$
 Subtracting gives the claim.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 contradicts the fixed lower bound
 $$
 \abs{f_{n_k}(x_k)-f(x_k)}\ge\varepsilon
 $$
 from step <1>1. Therefore $f_n\to f$ uniformly on $[a,b]$.
+
 :::
+
 :::

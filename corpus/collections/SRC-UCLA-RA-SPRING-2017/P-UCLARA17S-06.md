@@ -34,19 +34,24 @@ has positive area.
 Hint: for $-1<x<1$ consider $\#\{n:D_n\cap\{\operatorname{Re}z=x\}\ne\varnothing\}$.
 :::
 
-::: {.solution}
 For $-1<x<1$, let
 $$
 N(x)\coloneqq
 \#\{n:D_n\cap\{\operatorname{Re}z=x\}\ne\varnothing\}.
 $$
 
-<1>1. The function $N$ is integrable on $(-1,1)$ and
+::: pf
+
+::: pf-step
+
+The function $N$ is integrable on $(-1,1)$ and
 $$
 \int_{-1}^1N(x)\,dx=2\sum_{n=1}^{\infty}r_n<\infty.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write $p_n=a_n+ib_n$. The vertical line $\operatorname{Re}z=x$ meets $D_n$ exactly when
 $$
 |x-a_n|\le r_n.
@@ -65,21 +70,35 @@ $$
 \end{aligned}
 $$
 Here $[a_n-r_n,a_n+r_n]\subset(-1,1)$ because the closed disk $D_n$ is contained in the open unit disk $\mathbb D$.
+
 :::
 
-<1>2. For almost every $x\in(-1,1)$, only finitely many disks $D_n$ meet the vertical line $\operatorname{Re}z=x$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For almost every $x\in(-1,1)$, only finitely many disks $D_n$ meet the vertical line $\operatorname{Re}z=x$.
+
+
+::: pf-proof
+
 By step <1>1, the nonnegative function $N$ has finite integral. Therefore $N(x)<\infty$ for almost every $x$.
+
 :::
 
-<1>3. If $N(x)<\infty$, then the vertical section
+:::
+
+::: pf-step
+
+If $N(x)<\infty$, then the vertical section
 $$
 X_x\coloneqq\{y\in\RR:x+iy\in X\}
 $$
 has positive one-dimensional Lebesgue measure.
 
-::: {.proof}
+
+::: pf-proof
+
 The section of the closed unit disk on the line $\operatorname{Re}z=x$ is the interval
 $$
 I_x=
@@ -92,11 +111,18 @@ $$
 \left(-\sqrt{1-x^2},\sqrt{1-x^2}\right).
 $$
 Consequently it stays a positive distance from both endpoints of $I_x$. Its complement in $I_x$, which is exactly $X_x$, therefore contains a nondegenerate interval and has positive length.
+
 :::
 
-<1>4. The set $X$ has positive area.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $X$ has positive area.
+
+
+::: pf-proof
+
 Let
 $$
 m(x)\coloneqq |X_x|.
@@ -109,11 +135,15 @@ By steps <1>2 and <1>3, one has $m(x)>0$ for almost every $x\in(-1,1)$. Since $m
 $$
 \boxed{|X|>0}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

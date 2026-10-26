@@ -24,8 +24,11 @@ Let $V=M_n(\mathbb R)$. Prove that
 defines an inner product on $V$. For $n=2$, find an orthonormal basis.
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 \[
 A=(a_{ij}),
 \qquad
@@ -40,7 +43,9 @@ one has
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $j$th diagonal entry of $A^TB$ is
 \[
 (A^TB)_{jj}
@@ -52,11 +57,18 @@ The $j$th diagonal entry of $A^TB$ is
 a_{ij}b_{ij}.
 \]
 Summing over $j$ gives the formula.
+
 :::
 
-<1>2. The form is bilinear.
+:::
 
-::: {.proof}
+::: pf-step
+
+The form is bilinear.
+
+
+::: pf-proof
+
 Using step <1>1,
 \[
 \langle A,B\rangle
@@ -65,16 +77,23 @@ Using step <1>1,
 \]
 This expression is linear in the entries of $A$ while $B$ is fixed and linear in the entries of $B$ while $A$ is fixed.
 Thus the form is bilinear.
+
 :::
 
-<1>3. The form is symmetric:
+:::
+
+::: pf-step
+
+The form is symmetric:
 \[
 \langle A,B\rangle
 =
 \langle B,A\rangle.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \langle A,B\rangle
@@ -85,9 +104,14 @@ By step <1>1,
 =
 \langle B,A\rangle.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \langle A,A\rangle
 =
@@ -96,15 +120,22 @@ By step <1>1,
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 with
 \[
 B=A.
 \]
 The result is a sum of squares.
+
 :::
 
-<1>5. Equality
+:::
+
+::: pf-step
+
+Equality
 \[
 \langle A,A\rangle=0
 \]
@@ -113,7 +144,9 @@ holds if and only if
 A=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 \langle A,A\rangle
@@ -121,9 +154,14 @@ By step <1>4,
 \sum_{i,j}a_{ij}^2.
 \]
 This sum vanishes exactly when every entry $a_{ij}$ is zero.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \langle A,B\rangle
@@ -136,11 +174,18 @@ defines an inner product on
 M_n(\mathbb R).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>2--<1>5 establish bilinearity, symmetry, and positive definiteness.
+
 :::
 
-<1>7. For
+:::
+
+::: pf-step
+
+For
 \[
 n=2,
 \]
@@ -176,13 +221,22 @@ E_{22}
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard matrix units.
+
 :::
 
-<1>8. The four matrices in step <1>7 are orthonormal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The four matrices in step <1>7 are orthonormal.
+
+
+::: pf-proof
+
 By step <1>1,
 \[
 \langle E_{ij},E_{kl}\rangle
@@ -205,14 +259,21 @@ and
 0
 \]
 otherwise.
+
 :::
 
-<1>9. The four matrices form a basis of
+:::
+
+::: pf-step
+
+The four matrices form a basis of
 \[
 M_2(\mathbb R).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every matrix
 \[
 \begin{pmatrix}
@@ -231,9 +292,14 @@ cE_{21}
 dE_{22}.
 \]
 Thus the four matrix units span and are linearly independent.
+
 :::
 
-<1>10. Hence an orthonormal basis for
+:::
+
+::: pf-step
+
+Hence an orthonormal basis for
 \[
 M_2(\mathbb R)
 \]
@@ -244,13 +310,19 @@ is
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>8--<1>9.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves the inner-product assertion, and step <1>10 gives the requested orthonormal basis for $n=2$.
+
 :::
+
 :::

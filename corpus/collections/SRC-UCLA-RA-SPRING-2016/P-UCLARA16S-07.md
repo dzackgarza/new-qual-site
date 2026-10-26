@@ -24,7 +24,6 @@ Determine
 for $0<a<1$ and $\operatorname{Re}z>0$. Justify all manipulations.
 :::
 
-::: {.solution}
 On the right half-plane, use the principal branch
 \[
 z^{a-1}
@@ -32,14 +31,20 @@ z^{a-1}
 \exp\bigl((a-1)\Log z\bigr).
 \]
 
-<1>1. For $x>0$ and $\operatorname{Re}z>0$,
+::: pf
+
+::: pf-step
+
+For $x>0$ and $\operatorname{Re}z>0$,
 \[
 \frac1{x+z}
 =
 \int_0^\infty e^{-(x+z)t}\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \operatorname{Re}(x+z)=x+\operatorname{Re}z>0,
@@ -54,9 +59,14 @@ the exponential tends to $0$ as $t\to\infty$, and direct integration gives
 =
 \frac1{x+z}.
 \]
+
 :::
 
-<1>2. The function
+:::
+
+::: pf-step
+
+The function
 \[
 (x,t)
 \longmapsto
@@ -64,7 +74,9 @@ x^{a-1}e^{-(x+z)t}
 \]
 is absolutely integrable on $(0,\infty)^2$.
 
-::: {.proof}
+
+::: pf-proof
+
 Writing $\sigma=\operatorname{Re}z>0$ and using Tonelli's theorem for the nonnegative absolute value,
 \[
 \begin{aligned}
@@ -85,9 +97,14 @@ t^{-a}e^{-\sigma t}\,dt\\
 \end{aligned}
 \]
 The last quantity is finite because $0<a<1$ and $\sigma>0$.
+
 :::
 
-<1>3. For $\operatorname{Re}z>0$,
+:::
+
+::: pf-step
+
+For $\operatorname{Re}z>0$,
 \[
 \int_0^\infty
 t^{-a}e^{-zt}\,dt
@@ -95,7 +112,9 @@ t^{-a}e^{-zt}\,dt
 \Gamma(1-a)z^{a-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 H(z)
@@ -122,9 +141,14 @@ z^{a-1}
 \Gamma(1-a)z^{a-1}.
 \]
 Both sides are holomorphic on the connected right half-plane and agree on the positive real axis, which has accumulation points in that domain. The identity theorem gives the formula for every $\operatorname{Re}z>0$.
+
 :::
 
-<1>4. The integral equals
+:::
+
+::: pf-step
+
+The integral equals
 \[
 \boxed{
 \int_0^\infty\frac{x^{a-1}}{x+z}\,dx
@@ -133,7 +157,9 @@ Both sides are holomorphic on the connected right half-plane and agree on the po
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1 and <1>2, Fubini's theorem applies:
 \[
 \begin{aligned}
@@ -163,11 +189,15 @@ Euler's reflection formula
 \frac{\pi}{\sin(\pi a)}
 \]
 then yields the boxed expression.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested value, while steps <1>1 through <1>3 justify the integral representation, interchange of integrals, and complex Gamma integral used to obtain it.
+
 :::
+
 :::

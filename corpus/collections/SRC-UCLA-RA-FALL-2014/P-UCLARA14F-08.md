@@ -32,8 +32,11 @@ for some constants $C$ and $a$ if and only if we have
 for some constant $M$.
 :::
 
-::: {.solution}
-<1>1. Assume first that there are constants $C>0$ and $a\ge0$ such that
+::: pf
+
+::: pf-step
+
+Assume first that there are constants $C>0$ and $a\ge0$ such that
 \[
 |f(z)|\le Ce^{a|z|}
 \qquad(z\in\mathbb C).
@@ -45,7 +48,9 @@ Then for every $R>0$ and every $n\ge0$,
 \frac{n!}{R^n}Ce^{aR}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the circle $|z|=R$,
 \[
 \max_{|z|=R}|f(z)|
@@ -61,11 +66,18 @@ Cauchy's derivative estimate therefore gives
 \le
 \frac{n!}{R^n}Ce^{aR}.
 \]
+
 :::
 
-<1>2. If $a=0$, then $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $a=0$, then $f$ is constant.
+
+
+::: pf-proof
+
 The growth assumption becomes
 \[
 |f(z)|\le C
@@ -76,16 +88,23 @@ Hence
 f^{(n)}(0)=0
 \]
 for every $n\ge1$.
+
 :::
 
-<1>3. Suppose $a>0$. For every $n\ge1$,
+:::
+
+::: pf-step
+
+Suppose $a>0$. For every $n\ge1$,
 \[
 |f^{(n)}(0)|
 \le
 C(ae)^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>1 choose
 \[
 R=\frac na.
@@ -107,9 +126,14 @@ this yields
 \le
 C(ae)^n.
 \]
+
 :::
 
-<1>4. Under the exponential-growth hypothesis, there exists $M>0$ such that
+:::
+
+::: pf-step
+
+Under the exponential-growth hypothesis, there exists $M>0$ such that
 \[
 \boxed{
 |f^{(n)}(0)|
@@ -118,7 +142,9 @@ M^{n+1}
 \qquad(n\ge0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $a=0$, step <1>2 applies. Choose
 \[
 M\ge\max\{1,C\}.
@@ -145,9 +171,14 @@ C(ae)^n
 \le
 M^{n+1}.
 \]
+
 :::
 
-<1>5. Conversely, assume there is $M>0$ such that
+:::
+
+::: pf-step
+
+Conversely, assume there is $M>0$ such that
 \[
 |f^{(n)}(0)|
 \le
@@ -163,7 +194,9 @@ M e^{M|z|}
 \qquad(z\in\mathbb C)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is entire, its Taylor series at $0$ converges everywhere:
 \[
 f(z)
@@ -195,18 +228,29 @@ C=M,
 \qquad
 a=M.
 \]
+
 :::
 
-<1>6. Hence the two conditions are equivalent.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence the two conditions are equivalent.
+
+
+::: pf-proof
+
 Step <1>4 proves the forward implication and step <1>5 proves the reverse
 implication.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required equivalence.
+
 :::
+
 :::

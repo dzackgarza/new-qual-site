@@ -32,15 +32,20 @@ a_{n+1}=4a_n-4a_{n-1},\qquad a_0=a,\quad a_1=b.
 \]
 :::
 
-::: {.solution}
-<1>1. The characteristic polynomial of $A$ is
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of $A$ is
 \[
 \chi_A(\lambda)
 =
 (\lambda-2)^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 \begin{aligned}
@@ -59,9 +64,14 @@ Compute
 (\lambda-2)^2.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The eigenspace for eigenvalue $2$ is
+:::
+
+::: pf-step
+
+The eigenspace for eigenvalue $2$ is
 \[
 \ker(A-2I)
 =
@@ -73,7 +83,9 @@ Compute
 \right\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 A-2I
@@ -96,9 +108,14 @@ gives
 x=2y.
 \]
 Thus the eigenspace is the stated line.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 v=
 \begin{pmatrix}
@@ -115,7 +132,9 @@ Then
 (A-2I)w=v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 (A-2I)w
@@ -133,9 +152,14 @@ Direct multiplication gives
 \end{pmatrix}
 =v.
 \]
+
 :::
 
-<1>4. With
+:::
+
+::: pf-step
+
+With
 \[
 P=
 \begin{pmatrix}
@@ -168,7 +192,9 @@ J
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The columns of $P$ are $v,w$.
 Since
 \[
@@ -198,9 +224,14 @@ Thus the coordinate columns of $A$ in the basis $(v,w)$ are
 \]
 which gives the displayed Jordan matrix.
 This proves part (i).
+
 :::
 
-<1>5. For every positive integer $m$,
+:::
+
+::: pf-step
+
+For every positive integer $m$,
 \[
 \boxed{
 J^m
@@ -212,7 +243,9 @@ J^m
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 J=2I+N,
@@ -237,9 +270,14 @@ J^m
 m2^{m-1}N.
 \]
 This is the displayed matrix.
+
 :::
 
-<1>6. In particular,
+:::
+
+::: pf-step
+
+In particular,
 \[
 \boxed{
 J^{100}
@@ -251,15 +289,22 @@ J^{100}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 m=100
 \]
 in step <1>5.
+
 :::
 
-<1>7. For every positive integer $m$,
+:::
+
+::: pf-step
+
+For every positive integer $m$,
 \[
 A^m
 =
@@ -272,7 +317,9 @@ m&2-2m
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A=PJP^{-1},
@@ -312,9 +359,14 @@ c&d-2c
 \end{aligned}
 \]
 Substitute the values of $c,d$ and factor out $2^{m-1}$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 A^{100}
@@ -327,16 +379,23 @@ A^{100}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 m=100
 \]
 in step <1>7.
 Together with step <1>6, this completes part (ii).
+
 :::
 
-<1>9. The characteristic equation of the recurrence
+:::
+
+::: pf-step
+
+The characteristic equation of the recurrence
 \[
 a_{n+1}=4a_n-4a_{n-1}
 \]
@@ -345,7 +404,9 @@ is
 (r-2)^2=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute a trial solution
 \[
 a_n=r^n.
@@ -364,14 +425,21 @@ This factors as
 \[
 (r-2)^2=0.
 \]
+
 :::
 
-<1>10. Every solution of the recurrence has the form
+:::
+
+::: pf-step
+
+Every solution of the recurrence has the form
 \[
 a_n=(C+Dn)2^n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For a second-order linear recurrence with repeated characteristic root $r=2$, the two linearly independent solutions are
 \[
 2^n
@@ -388,16 +456,23 @@ Direct verification is also immediate:
 -
 4(C+D(n-1))2^{n-1}.
 \]
+
 :::
 
-<1>11. The initial conditions give
+:::
+
+::: pf-step
+
+The initial conditions give
 \[
 C=a
 \qquad\text{and}\qquad
 D=\frac b2-a.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At
 \[
 n=0,
@@ -423,9 +498,14 @@ D=\frac b2-C
 =
 \frac b2-a.
 \]
+
 :::
 
-<1>12. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 a_n
@@ -436,14 +516,20 @@ a+n\left(\frac b2-a\right)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the constants from step <1>11 into the formula from step <1>10.
 This proves part (iii).
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (i), steps <1>6--<1>8 prove part (ii), and step <1>12 proves part (iii).
+
 :::
+
 :::

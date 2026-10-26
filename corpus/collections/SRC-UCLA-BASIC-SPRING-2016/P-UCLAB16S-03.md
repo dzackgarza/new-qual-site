@@ -25,20 +25,30 @@ Show that the limit
 exists and compute its value.
 :::
 
-::: {.solution}
 The statement is false as printed.
 
-<1>1. Take the continuously differentiable function
+::: pf
+
+::: pf-step
+
+Take the continuously differentiable function
 \[
 \boxed{f(x)=1}
 \]
 on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Constant functions are continuously differentiable.
+
 :::
 
-<1>2. For this function,
+:::
+
+::: pf-step
+
+For this function,
 \[
 \sum_{k=0}^{n}f\left(\frac{k}{n}\right)
 =
@@ -51,7 +61,9 @@ n\int_0^1f(x)\,dx
 n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are exactly
 \[
 n+1
@@ -61,15 +73,22 @@ Also,
 \[
 \int_0^1 1\,dx=1.
 \]
+
 :::
 
-<1>3. Hence the expression in the source equals
+:::
+
+::: pf-step
+
+Hence the expression in the source equals
 \[
 \boxed{n}
 \]
 for every positive integer $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 n
@@ -79,19 +98,31 @@ n
 =
 n.
 \]
+
 :::
 
-<1>4. Therefore the displayed limit does not exist as a finite real number.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the displayed limit does not exist as a finite real number.
+
+
+::: pf-proof
+
 Step <1>3 gives
 \[
 n\to+\infty.
 \]
 Thus the literal claim that the limit exists is false.
+
 :::
 
-<1>5. The natural corrected statement is obtained by removing the outer factor $n$:
+:::
+
+::: pf-step
+
+The natural corrected statement is obtained by removing the outer factor $n$:
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -105,11 +136,18 @@ n\int_0^1f(x)\,dx
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The remaining steps prove this corrected first-order Riemann-sum formula.
+
 :::
 
-<1>6. Set
+:::
+
+::: pf-step
+
+Set
 \[
 h=\frac1n
 \]
@@ -135,7 +173,9 @@ n\int_{x_k}^{x_{k+1}}f(x)\,dx
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral into the $n$ subintervals
 \[
 [x_k,x_{k+1}]
@@ -144,9 +184,14 @@ and separate the final summand
 \[
 f(x_n)=f(1).
 \]
+
 :::
 
-<1>7. For each $k$,
+:::
+
+::: pf-step
+
+For each $k$,
 \[
 \begin{aligned}
 f(x_k)
@@ -168,7 +213,9 @@ where
 |f'(u)-f'(v)|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 x=x_k+t,
@@ -223,9 +270,14 @@ n\omega(h)\frac{h^2}{2}\\
 \frac{\omega(h)}{2n}.
 \end{aligned}
 \]
+
 :::
 
-<1>8. Summing step <1>7 over
+:::
+
+::: pf-step
+
+Summing step <1>7 over
 \[
 k=0,\ldots,n-1
 \]
@@ -252,7 +304,9 @@ where
 \frac{\omega(1/n)}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Add the $n$ estimates from step <1>7 and use step <1>6.
 The total error is at most
 \[
@@ -261,9 +315,14 @@ n\cdot
 =
 \frac{\omega(1/n)}{2}.
 \]
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \omega(1/n)\to0
 \]
@@ -276,7 +335,9 @@ f'\left(\frac{k}{n}\right)
 \int_0^1f'(x)\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The derivative $f'$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
 Therefore
 \[
@@ -288,14 +349,21 @@ h\to0.
 \]
 
 The second limit is the ordinary left-endpoint Riemann-sum convergence for the continuous function $f'$.
+
 :::
 
-<1>10. Thus the corrected expression converges to
+:::
+
+::: pf-step
+
+Thus the corrected expression converges to
 \[
 \frac{f(0)+f(1)}2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take limits in step <1>8 and use step <1>9:
 \[
 \begin{aligned}
@@ -319,12 +387,16 @@ f(1)
 \frac{f(0)+f(1)}2.
 \end{aligned}
 \]
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 disprove the literal source statement.
 Steps <1>5--<1>10 prove the natural corrected first-order Riemann-sum formula.
+
 :::
+
 :::

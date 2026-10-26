@@ -30,7 +30,6 @@ Show that $U(x,\xi)$ is well defined on $\mathbb R^2$ and that there exists a co
 Determine $C$ explicitly.
 :::
 
-::: {.solution}
 Use the Fourier transform convention
 \[
 \mathcal Fh(\eta)
@@ -45,9 +44,15 @@ for which Plancherel's theorem reads
 \int_{\mathbb R}|h(y)|^2\,dy.
 \]
 
-<1>1. For every $(x,\xi)\in\mathbb R^2$, the integral defining $U(x,\xi)$ converges absolutely.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For every $(x,\xi)\in\mathbb R^2$, the integral defining $U(x,\xi)$ converges absolutely.
+
+
+::: pf-proof
+
 Since
 \[
 \left|
@@ -80,9 +85,14 @@ e^{\xi^2/2}
 \end{aligned}
 \]
 Thus $U(x,\xi)$ is well defined.
+
 :::
 
-<1>2. For fixed $x\in\mathbb R$, define
+:::
+
+::: pf-step
+
+For fixed $x\in\mathbb R$, define
 \[
 h_x(y)
 \coloneqq
@@ -98,7 +108,9 @@ e^{-ix\xi}
 \mathcal Fh_x(-\xi).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Complete the square:
 \[
 xy-\frac{y^2}{2}
@@ -138,9 +150,14 @@ e^{-ix\xi}
 h_x(y)e^{i\xi y}\,dy.
 \]
 The last integral is $\mathcal Fh_x(-\xi)$.
+
 :::
 
-<1>3. For every fixed $x\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every fixed $x\in\mathbb R$,
 \[
 \int_{\mathbb R}
 |U(x,\xi)|^2e^{-\xi^2}\,d\xi
@@ -151,7 +168,9 @@ e^{-(x-y)^2}
 |u(y)|^2\,dy.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 |U(x,\xi)|^2e^{-\xi^2}
@@ -184,9 +203,14 @@ e^{-(x-y)^2}
 |u(y)|^2\,dy.
 \end{aligned}
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \iint_{\mathbb R^2}
@@ -197,7 +221,9 @@ e^{-(x-y)^2}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand in step <1>3 is nonnegative, so Tonelli's theorem permits integration in $x$ and $y$ in either order:
 \[
 \begin{aligned}
@@ -229,20 +255,31 @@ Since
 2\pi^{3/2},
 \]
 the boxed identity follows.
+
 :::
 
-<1>5. Thus the required constant is
+:::
+
+::: pf-step
+
+Thus the required constant is
 \[
 \boxed{C=2\pi^{3/2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compare the identity in step <1>4 with the form required in the problem.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves well-definedness, and steps <1>4 and <1>5 prove the norm identity and determine the constant.
+
 :::
+
 :::

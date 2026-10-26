@@ -35,8 +35,11 @@ A_r\chi_K(x,y)\longrightarrow 1\qquad(r\to0)
 for almost every $(x,y)\in K$.
 :::
 
-::: {.solution}
-<1>1. Let $S\subset\mathbb R^2$ be bounded and open. Then for every $t>0$,
+::: pf
+
+::: pf-step
+
+Let $S\subset\mathbb R^2$ be bounded and open. Then for every $t>0$,
 \[
 m^*\bigl(\{x\in\mathbb R^2:M\chi_S(x)>t\}\bigr)
 \le
@@ -44,7 +47,12 @@ C_0 t^{-3}m(S),
 \]
 where $C_0$ depends only on the constant in Bourgain's estimate.
 
-<2>1. There exists an increasing sequence
+
+::: pf-proof
+
+::: pf-step
+
+There exists an increasing sequence
 \[
 0\le f_k\in C_c(\mathbb R^2),
 \qquad
@@ -52,7 +60,9 @@ f_k\uparrow\chi_S
 \]
 pointwise.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $S$ is bounded and open, define for example
 \[
 f_k(x)
@@ -60,16 +70,23 @@ f_k(x)
 \min\{1,k\,\operatorname{dist}(x,S^c)\}.
 \]
 Then $f_k$ is continuous, vanishes outside $S$, has compact support contained in the compact set $\overline S$, and increases pointwise to $\chi_S$.
+
 :::
 
-<2>2. For every $k$ and $t>0$,
+:::
+
+::: pf-step
+
+For every $k$ and $t>0$,
 \[
 m\bigl(\{Mf_k>t\}\bigr)
 \le
 C_0t^{-3}m(S).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Chebyshev's inequality and Bourgain's estimate give
 \[
 \begin{aligned}
@@ -89,16 +106,23 @@ Because $0\le f_k\le\chi_S$,
 m(S).
 \]
 Take $C_0=C^3$.
+
 :::
 
-<2>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 Mf_k(x)\uparrow M\chi_S(x)
 \qquad
 (x\in\mathbb R^2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every fixed $r\in(0,1)$, monotone convergence on the circle gives
 \[
 A_rf_k(x)\uparrow A_r\chi_S(x).
@@ -122,11 +146,13 @@ Then $A_rf_k(x)>s$ for all sufficiently large $k$, so
 \sup_k Mf_k(x)\ge s.
 \]
 Letting $s\uparrow M\chi_S(x)$ proves the equality.
+
 :::
 
-<2>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 By step <2>3,
 \[
 \{M\chi_S>t\}
@@ -142,9 +168,16 @@ m(\{M\chi_S>t\})
 C_0t^{-3}m(S).
 \]
 This proves step <1>1.
+
 :::
 
-<1>2. Fix $n\ge1$ and define
+:::
+
+:::
+
+::: pf-step
+
+Fix $n\ge1$ and define
 \[
 E_n
 \coloneqq
@@ -161,12 +194,19 @@ Then
 m^*(E_n)=0.
 \]
 
-<2>1. For every $\varepsilon>0$, there is a bounded open set $U\supset K$ such that
+
+::: pf-proof
+
+::: pf-step
+
+For every $\varepsilon>0$, there is a bounded open set $U\supset K$ such that
 \[
 m(U\setminus K)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Lebesgue measure is outer regular, so choose an open set $U\supset K$ with
 \[
 m(U)<m(K)+\varepsilon.
@@ -179,9 +219,14 @@ m(U)-m(K)
 <
 \varepsilon.
 \]
+
 :::
 
-<2>2. For every $x\in K$,
+:::
+
+::: pf-step
+
+For every $x\in K$,
 \[
 \limsup_{r\downarrow0}
 |A_r\chi_K(x)-1|
@@ -189,7 +234,9 @@ m(U)-m(K)
 M\chi_{U\setminus K}(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\in K$. Since $U$ is open and contains $x$, there is $r_x>0$ such that
 \[
 B(x,r_x)\subset U.
@@ -217,16 +264,23 @@ M\chi_{U\setminus K}(x).
 \end{aligned}
 \]
 Taking the limsup proves the claim.
+
 :::
 
-<2>3. For every $\varepsilon>0$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$,
 \[
 m^*(E_n)
 \le
 C_0n^3\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <2>2,
 \[
 E_n
@@ -244,18 +298,27 @@ C_0n^3m(U\setminus K)
 <
 C_0n^3\varepsilon.
 \]
+
 :::
 
-<2>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The estimate in step <2>3 holds for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives
 \[
 m^*(E_n)=0.
 \]
+
 :::
 
-<1>3. For almost every $x\in K$,
+:::
+
+:::
+
+::: pf-step
+
+For almost every $x\in K$,
 \[
 \lim_{r\downarrow0}
 A_r\chi_K(x)
@@ -263,7 +326,9 @@ A_r\chi_K(x)
 1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, every $E_n$ has outer measure zero. Hence
 \[
 E
@@ -289,11 +354,15 @@ which is equivalent to
 \[
 A_r\chi_K(x)\to1.
 \]
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the desired almost-everywhere circular differentiation statement on $K$.
+
 :::
+
 :::

@@ -21,8 +21,11 @@ audit:
 (B) Suppose that $f _ { n } ( x )$ is a sequence of Riemann integrable functions on [0, 1] such that $\{ f _ { n } ( x ) \}$ converges uniformly to $f ( x )$ . Prove that $f ( x )$ is Riemann integrable.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 P:\quad 0=x_0<x_1<\cdots<x_m=1
 \]
@@ -49,11 +52,18 @@ L(f,P)
 \sum_{i=1}^m m_i(f)(x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the upper and lower Darboux sums associated to the partition $P$.
+
 :::
 
-<1>2. A bounded function
+:::
+
+::: pf-step
+
+A bounded function
 \[
 f:[0,1]\to\mathbb R
 \]
@@ -68,7 +78,9 @@ Equivalently, $f$ is Riemann integrable if for every $\varepsilon>0$ there exist
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The equality of the upper and lower Darboux integrals is the definition.
 The stated $\varepsilon$-criterion follows because for every partition
 \[
@@ -81,11 +93,18 @@ L(f,P)
 U(f,P),
 \]
 and common refinements can only increase lower sums and decrease upper sums.
+
 :::
 
-<1>3. The uniform limit $f$ is bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+The uniform limit $f$ is bounded.
+
+
+::: pf-proof
+
 Choose $N$ such that
 \[
 \|f-f_N\|_\infty<1.
@@ -103,32 +122,51 @@ Then
 1+M
 \]
 for every $x\in[0,1]$.
+
 :::
 
-<1>4. Fix $\varepsilon>0$.
+:::
+
+::: pf-step
+
+Fix $\varepsilon>0$.
 Choose $N$ such that
 \[
 \|f-f_N\|_\infty<\frac{\varepsilon}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is possible because
 \[
 f_n\to f
 \]
 uniformly.
+
 :::
 
-<1>5. Since $f_N$ is Riemann integrable, there exists a partition $P$ such that
+:::
+
+::: pf-step
+
+Since $f_N$ is Riemann integrable, there exists a partition $P$ such that
 \[
 U(f_N,P)-L(f_N,P)<\frac{\varepsilon}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Darboux criterion from step <1>2 to the Riemann integrable function $f_N$ with tolerance $\varepsilon/2$.
+
 :::
 
-<1>6. For every subinterval $I_i$ of $P$,
+:::
+
+::: pf-step
+
+For every subinterval $I_i$ of $P$,
 \[
 M_i(f)
 \le
@@ -141,7 +179,9 @@ m_i(f)
 m_i(f_N)-\frac{\varepsilon}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in I_i$,
 \[
 f(x)
@@ -157,16 +197,23 @@ f(x)
 f_N(x)-\frac{\varepsilon}{4},
 \]
 and taking the infimum gives the second.
+
 :::
 
-<1>7. For the partition $P$ from step <1>5,
+:::
+
+::: pf-step
+
+For the partition $P$ from step <1>5,
 \[
 U(f,P)-L(f,P)
 <
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 \begin{aligned}
@@ -202,22 +249,33 @@ one obtains
 \[
 U(f,P)-L(f,P)<\varepsilon.
 \]
+
 :::
 
-<1>8. Therefore $f$ is Riemann integrable on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ is Riemann integrable on $[0,1]$.
+
+
+::: pf-proof
+
 Step <1>3 gives boundedness.
 Step <1>7 shows that for every $\varepsilon>0$ there is a partition with upper-minus-lower sum less than $\varepsilon$.
 By the criterion in step <1>2,
 \[
 \boxed{f\text{ is Riemann integrable}.}
 \]
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>2 answer part (A), and steps <1>3--<1>8 prove part (B).
+
 :::
+
 :::

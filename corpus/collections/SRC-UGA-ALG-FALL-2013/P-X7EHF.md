@@ -38,43 +38,73 @@ d.
 Deduce from (a) and (b) that the set of nilpotent elements of $R$ is the intersection of all prime ideals of $R$.
 :::
 
-::: {.solution}
 Let $\mathcal N=\{a\in R:a^n=0\text{ for some }n\geq1\}$.
 
-<1>1. The set $\mathcal N$ is an ideal of $R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $\mathcal N$ is an ideal of $R$.
+
+
+::: pf-proof
+
 The element $0$ is nilpotent. If $a^m=b^n=0$, then every term in the binomial expansion of $(a-b)^{m+n-1}$ contains at least $m$ factors $a$ or at least $n$ factors $b$, hence vanishes. Therefore $a-b$ is nilpotent. For any $r\in R$, $(ra)^m=r^ma^m=0$, proving closure under scalar multiplication.
+
 :::
 
-<1>2. Every prime ideal of $R$ contains $\mathcal N$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every prime ideal of $R$ contains $\mathcal N$.
+
+
+::: pf-proof
+
 If $a^m=0\in\mathfrak p$ with $\mathfrak p$ prime, repeated application of the implication $uv\in\mathfrak p\Rightarrow u\in\mathfrak p$ or $v\in\mathfrak p$ yields $a\in\mathfrak p$. Thus $\mathcal N\subseteq\mathfrak p$.
+
 :::
 
-<1>3. If $x$ is not nilpotent and $I$ is maximal among ideals disjoint from $S=\{x^n:n\geq1\}$, then $I$ is prime.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $x$ is not nilpotent and $I$ is maximal among ideals disjoint from $S=\{x^n:n\geq1\}$, then $I$ is prime.
+
+
+::: pf-proof
+
 The ideal $I$ is proper, because $1\in S$ would belong to $R$. Suppose $ab\in I$ but $a,b\notin I$. Then the larger ideals $I+(a)$ and $I+(b)$ cannot be disjoint from $S$ by maximality. Hence $x^m=i+ra$ and $x^n=j+sb$ for suitable $i,j\in I$, $r,s\in R$, and positive integers $m,n$. Multiplying gives
 \[
 x^{m+n}=ij+is b+jr a+rsab\in I,
 \]
 contradicting $I\cap S=\varnothing$. Therefore $a\in I$ or $b\in I$, proving primality.
+
 :::
 
-<1>4. The nilradical equals the intersection of all prime ideals:
+:::
+
+::: pf-step
+
+The nilradical equals the intersection of all prime ideals:
 \[
 \boxed{\mathcal N=\bigcap_{\mathfrak p\in\operatorname{Spec}R}\mathfrak p}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives containment from left to right. Conversely, if $x\notin\mathcal N$, step <1>3 supplies a prime ideal disjoint from the powers of $x$, so in particular it does not contain $x$. Thus no nonnilpotent element belongs to the displayed intersection.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>4 establish parts (a)--(d), respectively.
+
 :::
+
 :::

@@ -20,7 +20,6 @@ audit:
 Let $X$ be compact metric and let $\mathcal F\subset C(X)$ be nonempty. Prove that $\mathcal F$ is compact in the supremum norm if and only if it is closed, bounded, and equicontinuous. Give precise definitions of all terms used.
 :::
 
-::: {.solution}
 Write
 \[
 \|f\|_\infty
@@ -52,18 +51,31 @@ The meanings of the terms are:
   d_\infty(f,g)=\|f-g\|_\infty.
   \]
 
-<1>1. Suppose $\mathcal F$ is compact in the supremum norm.
+::: pf
+
+::: pf-step
+
+Suppose $\mathcal F$ is compact in the supremum norm.
 Then $\mathcal F$ is closed.
 
-::: {.proof}
+
+::: pf-proof
+
 The metric space $C(X)$ with $d_\infty$ is Hausdorff.
 Every compact subset of a Hausdorff space is closed.
 Hence $\mathcal F$ is closed.
+
 :::
 
-<1>2. If $\mathcal F$ is compact, then it is bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $\mathcal F$ is compact, then it is bounded.
+
+
+::: pf-proof
+
 Every compact metric space is bounded.
 Thus there exist
 \[
@@ -87,11 +99,18 @@ Then
 R+\|f_0\|_\infty.
 \]
 So $\mathcal F$ is bounded.
+
 :::
 
-<1>3. If $\mathcal F$ is compact, then it is equicontinuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $\mathcal F$ is compact, then it is equicontinuous.
+
+
+::: pf-proof
+
 Suppose not.
 Then there exist
 \[
@@ -151,15 +170,27 @@ Therefore
 The first and third terms tend to zero by uniform convergence, and the middle term tends to zero by continuity of $f$.
 Thus the left side tends to zero, contradicting its lower bound $\varepsilon_0$.
 Hence $\mathcal F$ is equicontinuous.
+
 :::
 
-<1>4. Thus compactness implies closedness, boundedness, and equicontinuity.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus compactness implies closedness, boundedness, and equicontinuity.
+
+
+::: pf-proof
+
 Combine steps <1>1--<1>3.
+
 :::
 
-<1>5. Assume conversely that $\mathcal F$ is closed, bounded, and equicontinuous.
+:::
+
+::: pf-step
+
+Assume conversely that $\mathcal F$ is closed, bounded, and equicontinuous.
 Then the equicontinuity is uniform in the following sense:
 for every $\varepsilon>0$ there exists $\delta>0$ such that
 \[
@@ -178,7 +209,9 @@ and every
 x,y\in X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$.
 For each $x\in X$, equicontinuity gives $\eta_x>0$ such that
 \[
@@ -247,11 +280,18 @@ Hence
 \[
 |f(x)-f(y)|<\varepsilon.
 \]
+
 :::
 
-<1>6. The compact metric space $X$ has a countable dense subset.
+:::
 
-::: {.proof}
+::: pf-step
+
+The compact metric space $X$ has a countable dense subset.
+
+
+::: pf-proof
+
 For each positive integer $m$, compactness gives a finite
 \[
 \frac1m
@@ -269,9 +309,14 @@ It is dense because for every $x\in X$ and every radius $r>0$, choosing $m$ with
 \frac1m<r
 \]
 gives a point of $D_m$ inside $B(x,r)$.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 \[
 D=\{x_1,x_2,\ldots\}
 \]
@@ -282,7 +327,9 @@ For any sequence
 \]
 there exists a subsequence that converges at every point $x_j\in D$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because $\mathcal F$ is bounded, there exists $M$ such that
 \[
 |f(x)|\le M
@@ -307,11 +354,18 @@ Continue inductively.
 
 Take the diagonal subsequence.
 For each fixed $j$, its tail lies inside the $j$th selected subsequence, so its values at $x_j$ converge.
+
 :::
 
-<1>8. The subsequence from step <1>7 is uniformly Cauchy.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subsequence from step <1>7 is uniformly Cauchy.
+
+
+::: pf-proof
+
 Let
 \[
 (g_n)
@@ -379,15 +433,22 @@ Thus
 \|g_m-g_n\|_\infty<\varepsilon
 \]
 for all $m,n\ge N$.
+
 :::
 
-<1>9. The space
+:::
+
+::: pf-step
+
+The space
 \[
 C(X)
 \]
 is complete in the supremum norm.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $(h_n)$ be uniformly Cauchy.
 For each $x\in X$, the scalar sequence
 \[
@@ -421,40 +482,73 @@ A uniform limit of continuous functions is continuous, so
 h\in C(X).
 \]
 Therefore $C(X)$ is complete.
+
 :::
 
-<1>10. The uniformly Cauchy subsequence from step <1>8 converges uniformly to some
+:::
+
+::: pf-step
+
+The uniformly Cauchy subsequence from step <1>8 converges uniformly to some
 \[
 g\in C(X).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply completeness of $C(X)$ from step <1>9.
+
 :::
 
-<1>11. The limit $g$ belongs to $\mathcal F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit $g$ belongs to $\mathcal F$.
+
+
+::: pf-proof
+
 Every term of the subsequence lies in $\mathcal F$, and the convergence is in the supremum norm.
 Since $\mathcal F$ is closed, its uniform limit belongs to $\mathcal F$.
+
 :::
 
-<1>12. Every sequence in $\mathcal F$ has a uniformly convergent subsequence whose limit belongs to $\mathcal F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every sequence in $\mathcal F$ has a uniformly convergent subsequence whose limit belongs to $\mathcal F$.
+
+
+::: pf-proof
+
 Start with an arbitrary sequence in $\mathcal F$.
 Step <1>7 gives a diagonally convergent subsequence, steps <1>8--<1>10 show that this subsequence converges uniformly, and step <1>11 puts the limit in $\mathcal F$.
+
 :::
 
-<1>13. Hence $\mathcal F$ is compact in the supremum norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $\mathcal F$ is compact in the supremum norm.
+
+
+::: pf-proof
+
 In metric spaces, compactness is equivalent to sequential compactness.
 Step <1>12 proves sequential compactness of $\mathcal F$.
 Therefore $\mathcal F$ is compact.
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \mathcal F\text{ is compact in }\|\cdot\|_\infty
@@ -463,13 +557,19 @@ Therefore $\mathcal F$ is compact.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 proves the forward implication, and steps <1>5--<1>13 prove the reverse implication.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>14 is the stated Arzelà--Ascoli theorem, with all terms defined at the start of the solution.
+
 :::
+
 :::

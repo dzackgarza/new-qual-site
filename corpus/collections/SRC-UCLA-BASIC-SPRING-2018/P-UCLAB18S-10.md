@@ -22,10 +22,15 @@ Suppose $f:U\to\mathbb R$ has all first partial derivatives at every point of $U
 Prove that $f$ is constant.
 :::
 
-::: {.solution}
-<1>1. The function $f$ is constant on a neighborhood of each point of $U$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant on a neighborhood of each point of $U$.
+
+
+::: pf-proof
+
 Fix $x=(x_1,\ldots,x_n)\in U$. Since $U$ is open, there exists $r>0$ such that the open cube
 $$
 Q=\prod_{j=1}^n(x_j-r,x_j+r)
@@ -49,31 +54,49 @@ $$
 f(z^{(k)})=f(z^{(k-1)})
 $$
 for every $k$. Chaining these equalities gives $f(y)=f(x)$. Since $y\in Q$ was arbitrary, $f$ is constant on $Q$.
+
 :::
 
-<1>2. For any $c\in\RR$, the level set
+:::
+
+::: pf-step
+
+For any $c\in\RR$, the level set
 $$
 E_c=\{x\in U:f(x)=c\}
 $$
 is open in $U$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $x\in E_c$, step <1>1 gives an open neighborhood $Q\subset U$ of $x$ on which $f$ is constant with value $f(x)=c$. Hence $Q\subset E_c$, so $E_c$ is open in the subspace topology of $U$.
+
 :::
 
-<1>3. Fix $x_0\in U$ and put $c=f(x_0)$. Then $E_c=U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Fix $x_0\in U$ and put $c=f(x_0)$. Then $E_c=U$.
+
+
+::: pf-proof
+
 The set $E_c$ is nonempty because $x_0\in E_c$, and it is open by step <1>2. Its complement is
 $$
 U\setminus E_c=\bigcup_{d\ne c}E_d,
 $$
 which is open by step <1>2. Thus $E_c$ is both open and closed in the connected space $U$. Since it is nonempty, connectedness forces $E_c=U$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 By step <1>3, every $x\in U$ satisfies $f(x)=f(x_0)$, so $f$ is constant on $U$.
+
 :::
+
 :::

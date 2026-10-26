@@ -24,8 +24,11 @@ Let $f:[a,b]\to\mathbb R$ be continuous and suppose
 for every integer $n\ge0$. Prove that $f=0$.
 :::
 
-::: {.solution}
-<1>1. For every polynomial
+::: pf
+
+::: pf-step
+
+For every polynomial
 \[
 p(x)=\sum_{k=0}^N c_kx^k,
 \]
@@ -34,7 +37,9 @@ one has
 \int_a^b f(x)p(x)\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity of the integral,
 \[
 \begin{aligned}
@@ -45,38 +50,59 @@ By linearity of the integral,
 \end{aligned}
 \]
 Every moment on the right is zero by hypothesis.
+
 :::
 
-<1>2. There exists a sequence of polynomials $(p_m)$ such that
+:::
+
+::: pf-step
+
+There exists a sequence of polynomials $(p_m)$ such that
 \[
 \|p_m-f\|_\infty\to0
 \]
 on $[a,b]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is continuous on the compact interval $[a,b]$.
 By the Weierstrass approximation theorem, polynomials are uniformly dense in
 \[
 C([a,b]).
 \]
 Thus such a sequence exists.
+
 :::
 
-<1>3. For every $m$,
+:::
+
+::: pf-step
+
+For every $m$,
 \[
 \int_a^b f(x)p_m(x)\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each $p_m$ is a polynomial, so step <1>1 applies.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_a^b f(x)^2\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is continuous on $[a,b]$, it is bounded.
 Hence
 \[
@@ -99,11 +125,18 @@ Using step <1>3 and taking $m\to\infty$ gives
 \[
 \int_a^b f(x)^2\,dx=0.
 \]
+
 :::
 
-<1>5. The function $f$ is identically zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is identically zero.
+
+
+::: pf-proof
+
 The continuous function
 \[
 f^2
@@ -127,11 +160,15 @@ Therefore
 \[
 \boxed{f\equiv0}.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

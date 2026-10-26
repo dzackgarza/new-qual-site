@@ -25,13 +25,16 @@ for all $x\in X$, with $f_n(x)\to0$ pointwise.
 Prove Dini's theorem in this setting: $f_n\to0$ uniformly on $X$.
 :::
 
-::: {.solution}
 Fix
 \[
 \varepsilon>0.
 \]
 
-<1>1. For each $n$, define
+::: pf
+
+::: pf-step
+
+For each $n$, define
 \[
 U_n
 =
@@ -39,7 +42,9 @@ U_n
 \]
 Then $U_n$ is open in $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 f_n:X\to\mathbb R
@@ -52,14 +57,21 @@ U_n
 f_n^{-1}((-\infty,\varepsilon))
 \]
 is open in the subspace topology on $X$.
+
 :::
 
-<1>2. The sets $U_n$ are increasing:
+:::
+
+::: pf-step
+
+The sets $U_n$ are increasing:
 \[
 U_n\subseteq U_{n+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x\in U_n,
@@ -76,15 +88,22 @@ Hence
 \[
 x\in U_{n+1}.
 \]
+
 :::
 
-<1>3. The family
+:::
+
+::: pf-step
+
+The family
 \[
 \{U_n:n\ge1\}
 \]
 covers $X$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix
 \[
 x\in X.
@@ -105,14 +124,21 @@ Since $x$ was arbitrary,
 \[
 X=\bigcup_{n=1}^\infty U_n.
 \]
+
 :::
 
-<1>4. There exists $N$ such that
+:::
+
+::: pf-step
+
+There exists $N$ such that
 \[
 U_N=X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets $U_n$ form an open cover of the compact space $X$ by step <1>3.
 Hence there is a finite subcover
 \[
@@ -141,14 +167,21 @@ Thus
 \[
 U_N=X.
 \]
+
 :::
 
-<1>5. For every $n\ge N$ and every $x\in X$,
+:::
+
+::: pf-step
+
+For every $n\ge N$ and every $x\in X$,
 \[
 0\le f_n(x)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 U_N=X,
@@ -166,25 +199,36 @@ then
 \[
 0\le f_n(x)\le f_N(x)<\varepsilon.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f_n\to0\text{ uniformly on }X}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows that for every $\varepsilon>0$ there is $N$ such that
 \[
 |f_n(x)|<\varepsilon
 \]
 for every $n\ge N$ and every $x\in X$.
 This is exactly uniform convergence to $0$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves Dini's theorem in the stated setting.
+
 :::
+
 :::

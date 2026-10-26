@@ -26,33 +26,56 @@ a. Show that $G$ is not simple.
 b. Exhibit 3 nonisomorphic groups of order 70 and prove that they are not isomorphic.
 :::
 
-::: {.solution}
 Let $D_{2n}$ denote the dihedral group of order $2n$.
 
-<1>1. Every group $G$ of order $70$ is nonsimple.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every group $G$ of order $70$ is nonsimple.
+
+
+::: pf-proof
+
 The number $n_5$ of Sylow $5$-subgroups divides $14$ and is congruent to $1$ modulo $5$. The divisors $1,2,7,14$ of $14$ leave only $1$ satisfying the congruence. Thus the Sylow $5$-subgroup is unique and normal. It has order $5$, so is proper and nontrivial.
+
 :::
 
-<1>2. Three groups of order $70$ are
+:::
+
+::: pf-step
+
+Three groups of order $70$ are
 \[
 \boxed{C_{70},\quad D_{70},\quad C_5\times D_{14}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The cyclic group $C_{70}$ has order $70$. The dihedral group $D_{70}$ has order $2\cdot35=70$, and the direct product $C_5\times D_{14}$ has order $5\cdot14=70$.
+
 :::
 
-<1>3. The three groups in step <1>2 are pairwise nonisomorphic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The three groups in step <1>2 are pairwise nonisomorphic.
+
+
+::: pf-proof
+
 The group $C_{70}$ is abelian, whereas both dihedral groups $D_{70}$ and $D_{14}$ are nonabelian, so the latter property holds for their indicated direct product as well. For odd $n\geq3$, the center of $D_{2n}$ is trivial: a central rotation $r^j$ must satisfy $r^{2j}=1$, giving $j\equiv0\pmod n$, and a reflection does not commute with $r$. Consequently $Z(D_{70})=1$, while $Z(C_5\times D_{14})=C_5\times Z(D_{14})\cong C_5$. Their centers have different orders, so they are not isomorphic.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves part (a), and steps <1>2 and <1>3 prove part (b).
+
 :::
+
 :::

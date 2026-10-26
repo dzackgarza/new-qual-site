@@ -26,7 +26,6 @@ Show that:
 (b) $(f*g)(x)\to0$ as $|x|\to\infty$.
 :::
 
-::: {.solution}
 For
 \[
 x\in\mathbb R^3,
@@ -70,14 +69,20 @@ For \(h\in\mathbb R^3\), write
 (\tau_h u)(z)=u(z+h).
 \]
 
-<1>1. If \(\varphi\in C_c(\mathbb R^3)\), then
+::: pf
+
+::: pf-step
+
+If \(\varphi\in C_c(\mathbb R^3)\), then
 \[
 \boxed{
 \|\tau_h\varphi-\varphi\|_{L^q}\to0
 \qquad(h\to0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(K\) contain the support of \(\varphi\), and choose a bounded neighborhood \(K'\) containing
 \[
 K\cup(K-h)
@@ -96,16 +101,23 @@ Therefore
 \|\tau_h\varphi-\varphi\|_\infty^q
 \to0.
 \]
+
 :::
 
-<1>2. For every \(u\in L^q(\mathbb R^3)\),
+:::
+
+::: pf-step
+
+For every \(u\in L^q(\mathbb R^3)\),
 \[
 \boxed{
 \|\tau_hu-u\|_{L^q}\to0
 \qquad(h\to0)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix \(\varepsilon>0\). Choose
 \[
 \varphi\in C_c(\mathbb R^3)
@@ -133,16 +145,14 @@ Translations preserve the \(L^q\)-norm, so
 \end{aligned}
 \]
 By step <1>1, the final term is \(<\varepsilon\) for sufficiently small \(h\). Since \(\varepsilon\) is arbitrary, the result follows.
+
 :::
 
-## Part (a): continuity
+:::
 
-Define
-\[
-\widetilde g(z)=g(-z).
-\]
+::: pf-step
 
-<1>3. One has
+One has
 \[
 \boxed{
 (f*g)(x)
@@ -152,7 +162,9 @@ f(y)\,
 (\tau_x\widetilde g)(y)\,dy}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 (\tau_x\widetilde g)(y)
@@ -173,9 +185,14 @@ T_xu(y)=u(y-x),
 (f*g)(x)=\int f(y)(T_x\widetilde g)(y)\,dy.
 \]
 The \(T_x\)-translations satisfy the same norm-continuity as \(\tau_h\).
+
 :::
 
-<1>4. For \(x,h\in\mathbb R^3\),
+:::
+
+::: pf-step
+
+For \(x,h\in\mathbb R^3\),
 \[
 |(f*g)(x+h)-(f*g)(x)|
 \le
@@ -184,11 +201,18 @@ The \(T_x\)-translations satisfy the same norm-continuity as \(\tau_h\).
 \|T_{x+h}\widetilde g-T_x\widetilde g\|_q.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Subtract the two integral expressions from step <1>3 and apply Hölder's inequality.
+
 :::
 
-<1>5. The norm on the right satisfies
+:::
+
+::: pf-step
+
+The norm on the right satisfies
 \[
 \boxed{
 \|T_{x+h}\widetilde g-T_x\widetilde g\|_q
@@ -196,7 +220,9 @@ Subtract the two integral expressions from step <1>3 and apply Hölder's inequal
 \|T_h\widetilde g-\widetilde g\|_q}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Translation invariance of Lebesgue measure gives
 \[
 \|T_xv\|_q=\|v\|_q.
@@ -205,16 +231,23 @@ Also
 \[
 T_{x+h}=T_xT_h.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 (f*g)(x+h)\to(f*g)(x)}
 \]
 as \(h\to0\).
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>5,
 \[
 |(f*g)(x+h)-(f*g)(x)|
@@ -224,21 +257,31 @@ By steps <1>4--<1>5,
 \|T_h\widetilde g-\widetilde g\|_q.
 \]
 The final norm tends to \(0\) by step <1>2.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 f*g\in C(\mathbb R^3)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The point \(x\) was arbitrary in step <1>6.
+
 :::
 
-## Part (b): decay at infinity
+:::
 
-<1>8. Let
+::: pf-step
+
+Let
 \[
 \varepsilon>0.
 \]
@@ -263,11 +306,18 @@ and
 \frac{\varepsilon}{2(\|f_0\|_p+1)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compactly supported functions are dense in \(L^p\) and \(L^q\). After choosing \(f_0\), choose \(g_0\) with the stated bounds.
+
 :::
 
-<1>9. For every \(x\),
+:::
+
+::: pf-step
+
+For every \(x\),
 \[
 (f*g)(x)-(f_0*g_0)(x)
 =
@@ -276,7 +326,9 @@ Compactly supported functions are dense in \(L^p\) and \(L^q\). After choosing \
 (f_0*(g-g_0))(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Add and subtract \(f_0*g\):
 \[
 f*g-f_0*g_0
@@ -285,9 +337,14 @@ f*g-f_0*g_0
 +
 f_0*(g-g_0).
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \|f*g-f_0*g_0\|_\infty
@@ -295,7 +352,9 @@ f_0*(g-g_0).
 \varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the Hölder convolution bound at the start,
 \[
 \begin{aligned}
@@ -313,16 +372,23 @@ Using the Hölder convolution bound at the start,
 \end{aligned}
 \]
 The harmless \(+1\) terms in the denominators ensure the strict inequalities even when one norm vanishes.
+
 :::
 
-<1>11. Since \(f_0\) and \(g_0\) have compact support,
+:::
+
+::: pf-step
+
+Since \(f_0\) and \(g_0\) have compact support,
 \[
 \boxed{
 f_0*g_0
 \text{ has compact support}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 \operatorname{supp}f_0\subseteq K,
@@ -338,26 +404,40 @@ K+L
 \{k+\ell:k\in K,\ \ell\in L\},
 \]
 which is compact.
+
 :::
 
-<1>12. Hence there exists \(R>0\) such that
+:::
+
+::: pf-step
+
+Hence there exists \(R>0\) such that
 \[
 \boxed{
 (f_0*g_0)(x)=0
 \qquad\text{whenever }|x|>R}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A compact subset of \(\mathbb R^3\) is bounded. Choose \(R\) containing the compact support from step <1>11.
+
 :::
 
-<1>13. For \(|x|>R\),
+:::
+
+::: pf-step
+
+For \(|x|>R\),
 \[
 \boxed{
 |(f*g)(x)|<\varepsilon}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>12,
 \[
 (f_0*g_0)(x)=0.
@@ -373,22 +453,33 @@ Hence
 \varepsilon
 \]
 by step <1>10.
+
 :::
 
-<1>14. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 (f*g)(x)\to0
 \qquad(|x|\to\infty)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>13 is the definition of vanishing at infinity.
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves part (a), and step <1>14 proves part (b).
+
 :::
+
 :::

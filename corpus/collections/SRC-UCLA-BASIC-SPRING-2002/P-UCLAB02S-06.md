@@ -32,19 +32,24 @@ such that
 is one-to-one on some neighborhood of $(0,0,0)$.
 :::
 
-::: {.solution}
 Since
 \[
 \nabla f(0,0,0)\ne0,
 \]
 at least one first partial derivative of $f$ at the origin is nonzero.
 
-<1>1. After permuting the coordinates if necessary, assume
+::: pf
+
+::: pf-step
+
+After permuting the coordinates if necessary, assume
 \[
 f_x(0,0,0)\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The gradient is
 \[
 \nabla f(0,0,0)
@@ -57,9 +62,14 @@ f_z(0,0,0)
 \]
 Since this vector is nonzero, at least one coordinate is nonzero.
 Relabel the coordinate axes so that it is the first.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g(x,y,z)=y
 \qquad\text{and}\qquad
@@ -77,12 +87,19 @@ f(x,y,z),y,z
 \]
 is continuously differentiable.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $f$ is $C^1$ by hypothesis, while the coordinate functions $y$ and $z$ are smooth.
 Therefore $\Phi$ is $C^1$.
+
 :::
 
-<1>3. The derivative matrix of $\Phi$ at the origin is
+:::
+
+::: pf-step
+
+The derivative matrix of $\Phi$ at the origin is
 \[
 D\Phi(0)
 =
@@ -93,15 +110,22 @@ f_x(0)&f_y(0)&f_z(0)\\
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the three component functions
 \[
 f,\quad y,\quad z
 \]
 with respect to the variables $x,y,z$.
+
 :::
 
-<1>4. The determinant of $D\Phi(0)$ is
+:::
+
+::: pf-step
+
+The determinant of $D\Phi(0)$ is
 \[
 \det D\Phi(0)
 =
@@ -109,16 +133,23 @@ f_x(0,0,0)
 \ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix in step <1>3 is upper triangular.
 Its determinant is the product of its diagonal entries:
 \[
 f_x(0,0,0)\cdot1\cdot1.
 \]
 This is nonzero by step <1>1.
+
 :::
 
-<1>5. There exists an open neighborhood
+:::
+
+::: pf-step
+
+There exists an open neighborhood
 \[
 U
 \]
@@ -128,7 +159,9 @@ of $(0,0,0)$ such that
 \]
 is one-to-one.
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse function theorem applies to the $C^1$ map $\Phi$ because
 \[
 \det D\Phi(0)\ne0
@@ -152,22 +185,33 @@ such that
 \]
 is a $C^1$ diffeomorphism.
 In particular, it is one-to-one.
+
 :::
 
-<1>6. Therefore the functions
+:::
+
+::: pf-step
+
+Therefore the functions
 \[
 \boxed{g(x,y,z)=y,\qquad h(x,y,z)=z}
 \]
 have the required property.
 
-::: {.proof}
+
+::: pf-proof
+
 For these choices, the map in the problem is exactly $\Phi$ from step <1>2.
 Step <1>5 proves that it is one-to-one on some neighborhood of the origin.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required construction.
+
 :::
+
 :::

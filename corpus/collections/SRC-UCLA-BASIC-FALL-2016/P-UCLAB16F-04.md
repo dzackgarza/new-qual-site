@@ -31,15 +31,20 @@ $$
 $$
 :::
 
-::: {.solution}
 Let
 \[
 r=\operatorname{rank}(B).
 \]
 
-<1>1. If $r=0$, then the desired inequality is immediate.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $r=0$, then the desired inequality is immediate.
+
+
+::: pf-proof
+
 Every matrix rank is nonnegative, so
 \[
 0
@@ -47,17 +52,29 @@ Every matrix rank is nonnegative, so
 \liminf_{n\to\infty}\operatorname{rank}(A_n).
 \]
 Since $r=0$, this is exactly the desired inequality.
+
 :::
 
-<1>2. Assume $r>0$.
+:::
+
+::: pf-step
+
+Assume $r>0$.
 Then $B$ has an $r\times r$ minor whose determinant is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of matrix rank, $r$ is the largest size of a square minor with nonzero determinant.
 Hence some $r\times r$ minor of $B$ has nonzero determinant.
+
 :::
 
-<1>3. Fix the row and column indices of such a minor, and let
+:::
+
+::: pf-step
+
+Fix the row and column indices of such a minor, and let
 \[
 D_n
 \]
@@ -72,7 +89,9 @@ D\ne0
 \]
 is the determinant of the chosen minor of $B$.
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant is a polynomial in the entries.
 Since the entries of $A_n$ converge to those of $B$, the selected minor converges entrywise to the chosen minor of $B$.
 Continuity of the determinant therefore gives
@@ -80,15 +99,22 @@ Continuity of the determinant therefore gives
 D_n\to D.
 \]
 By construction, $D\ne0$.
+
 :::
 
-<1>4. There exists $N$ such that
+:::
+
+::: pf-step
+
+There exists $N$ such that
 \[
 D_n\ne0
 \]
 for every $n\ge N$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 D_n\to D\ne0,
@@ -108,19 +134,31 @@ Then
 >
 0.
 \]
+
 :::
 
-<1>5. For every $n\ge N$,
+:::
+
+::: pf-step
+
+For every $n\ge N$,
 \[
 \operatorname{rank}(A_n)\ge r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $A_n$ has a nonzero $r\times r$ minor for every sufficiently large $n$.
 Hence its rank is at least $r$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{rank}(B)
@@ -129,18 +167,24 @@ Hence its rank is at least $r$.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $r=0$, use step <1>1.
 If $r>0$, step <1>5 shows that the ranks are eventually bounded below by
 \[
 r=\operatorname{rank}(B).
 \]
 Hence their lower limit is at least $r$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required inequality.
+
 :::
+
 :::

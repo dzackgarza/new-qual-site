@@ -31,7 +31,6 @@ Let $f$ be a continuous complex-valued function on the closed unit disk $\overli
 where $|E|$ denotes the Lebesgue measure of $E\subset[0,2\pi]$.
 :::
 
-::: {.solution}
 ## Part (a)
 
 Fix
@@ -43,46 +42,52 @@ and assume
 \inf_{|z|=r}|f(z)|>0.
 \]
 
-<1>1. The function \(f\) has no zeros on the circle \(|z|=r\).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) has no zeros on the circle \(|z|=r\).
+
+
+::: pf-proof
+
 The stated positive lower bound on \(|f|\) excludes zeros there.
+
 :::
 
-<1>2. The function \(f\) has only finitely many zeros in the closed disk
+:::
+
+::: pf-step
+
+The function \(f\) has only finitely many zeros in the closed disk
 \[
 \{|z|\le r\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Zeros of a nonzero holomorphic function are isolated. Since
 \[
 f(0)\ne0,
 \]
 the function is not identically zero. An infinite set of zeros in the compact disk would have an accumulation point there, contradicting the identity theorem.
+
 :::
 
-Let
-\[
-a_1,\dots,a_N
-\]
-be the zeros of \(f\) in \(|z|<r\), listed with multiplicity.
+:::
 
-For \(a\) with \(|a|<r\), define the radius-\(r\) Blaschke factor
-\[
-\boxed{
-B_a(z)
-=
-\frac{r(z-a)}{r^2-\overline a z}}.
-\]
+::: pf-step
 
-<1>3. The denominator
+The denominator
 \[
 r^2-\overline a z
 \]
 does not vanish on \(|z|\le r\).
 
-::: {.proof}
+
+::: pf-proof
+
 For \(|z|\le r\),
 \[
 |\overline a z|
@@ -95,14 +100,21 @@ Hence
 \[
 r^2-\overline a z\ne0.
 \]
+
 :::
 
-<1>4. On the boundary circle \(|z|=r\),
+:::
+
+::: pf-step
+
+On the boundary circle \(|z|=r\),
 \[
 \boxed{|B_a(z)|=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(|z|=r\), then
 \[
 |r^2-\overline a z|
@@ -119,9 +131,14 @@ Therefore
 =
 1.
 \]
+
 :::
 
-<1>5. At \(z=0\),
+:::
+
+::: pf-step
+
+At \(z=0\),
 \[
 \boxed{
 |B_a(0)|
@@ -129,7 +146,9 @@ Therefore
 \frac{|a|}{r}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 B_a(0)
 =
@@ -137,34 +156,44 @@ B_a(0)
 =
 -\frac ar.
 \]
+
 :::
 
-Define
-\[
-\boxed{
-g(z)
-=
-\frac{f(z)}
-{\prod_{j=1}^{N}B_{a_j}(z)}}.
-\]
+:::
 
-<1>6. The function \(g\) extends holomorphically to \(|z|<r\) and has no zeros there.
+::: pf-step
 
-::: {.proof}
+The function \(g\) extends holomorphically to \(|z|<r\) and has no zeros there.
+
+
+::: pf-proof
+
 Each \(B_{a_j}\) has exactly one zero at \(a_j\), with the same multiplicity contribution used in the list of zeros. Dividing by the product cancels all zeros of \(f\) in \(|z|<r\). Step <1>3 shows the Blaschke denominators introduce no singularities in the disk. Thus the quotient extends holomorphically and is zero-free.
+
 :::
 
-<1>7. The function
+:::
+
+::: pf-step
+
+The function
 \[
 \log|g(z)|
 \]
 is harmonic on \(|z|<r\).
 
-::: {.proof}
+
+::: pf-proof
+
 A zero-free holomorphic function has locally a holomorphic logarithm, whose real part is \(\log|g|\). Hence \(\log|g|\) is harmonic.
+
 :::
 
-<1>8. By the mean-value property,
+:::
+
+::: pf-step
+
+By the mean-value property,
 \[
 \boxed{
 \log|g(0)|
@@ -174,20 +203,34 @@ A zero-free holomorphic function has locally a holomorphic logarithm, whose real
 \log|g(re^{i\theta})|\,d\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the harmonic mean-value property to \(\log|g|\) on the disk of radius \(r\).
+
 :::
 
-<1>9. On \(|z|=r\),
+:::
+
+::: pf-step
+
+On \(|z|=r\),
 \[
 \boxed{|g(z)|=|f(z)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, every factor \(B_{a_j}\) has modulus \(1\) on the boundary circle.
+
 :::
 
-<1>10. At the origin,
+:::
+
+::: pf-step
+
+At the origin,
 \[
 |g(0)|
 =
@@ -196,7 +239,9 @@ By step <1>4, every factor \(B_{a_j}\) has modulus \(1\) on the boundary circle.
 \frac r{|a_j|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>5,
 \[
 \left|
@@ -207,9 +252,14 @@ Using step <1>5,
 \frac{|a_j|}{r}.
 \]
 Since \(f(0)\ne0\), none of the zeros \(a_j\) equals \(0\). Divide.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac1{2\pi}
@@ -222,13 +272,22 @@ Since \(f(0)\ne0\), none of the zeros \(a_j\) equals \(0\). Divide.
 \log\frac r{|a_j|}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>8--<1>10 and take logarithms of the product in step <1>10.
+
 :::
 
-<1>12. Every term in the sum in step <1>11 is positive.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every term in the sum in step <1>11 is positive.
+
+
+::: pf-proof
+
 Each zero satisfies
 \[
 |a_j|<r,
@@ -237,9 +296,14 @@ so
 \[
 r/|a_j|>1.
 \]
+
 :::
 
-<1>13. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \frac1{2\pi}
@@ -249,41 +313,52 @@ r/|a_j|>1.
 \log|f(0)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Drop the nonnegative sum from step <1>11.
+
 :::
 
-## Part (b)
+:::
 
-Let
-\[
-E
-=
-\{\theta\in[0,2\pi]:
-f(e^{i\theta})=0\}.
-\]
+::: pf-step
 
-<1>14. The set of radii
+The set of radii
 \[
 \{|a|:f(a)=0,\ a\in D\}
 \]
 is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 The zeros of a nonzero holomorphic function are discrete in \(D\). A discrete subset of a second-countable space is countable.
+
 :::
 
-<1>15. Therefore one can choose a sequence
+:::
+
+::: pf-step
+
+Therefore one can choose a sequence
 \[
 r_n\uparrow1
 \]
 such that \(f\) has no zeros on \(|z|=r_n\).
 
-::: {.proof}
+
+::: pf-proof
+
 Avoid the countable set of zero moduli from step <1>14 while choosing \(r_n\to1\).
+
 :::
 
-<1>16. For every \(n\),
+:::
+
+::: pf-step
+
+For every \(n\),
 \[
 \boxed{
 \frac1{2\pi}
@@ -293,22 +368,31 @@ Avoid the countable set of zero moduli from step <1>14 while choosing \(r_n\to1\
 \log|f(0)|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(f\) is continuous on the compact circle \(|z|=r_n\) and has no zeros there, its modulus has a positive minimum. Apply part (a), step <1>13.
+
 :::
 
-Suppose, toward a contradiction, that
-\[
-|E|>0.
-\]
+:::
 
-<1>17. Since \(f\) is continuous on the compact closed disk, it is uniformly continuous.
+::: pf-step
 
-::: {.proof}
+Since \(f\) is continuous on the compact closed disk, it is uniformly continuous.
+
+
+::: pf-proof
+
 Every continuous function on a compact metric space is uniformly continuous.
+
 :::
 
-<1>18. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \delta_n
 =
@@ -320,7 +404,9 @@ Then
 \boxed{\delta_n\to0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For \(\theta\in E\),
 \[
 f(e^{i\theta})=0.
@@ -338,9 +424,14 @@ uniformly in \(\theta\). Uniform continuity from step <1>17 therefore gives
 \to0.
 \]
 The second term is zero on \(E\).
+
 :::
 
-<1>19. Let
+:::
+
+::: pf-step
+
+Let
 \[
 M
 =
@@ -351,15 +442,22 @@ Then
 \boxed{0<M<\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Continuity on the compact closed disk gives a finite maximum. Since
 \[
 f(0)\ne0,
 \]
 the maximum is positive.
+
 :::
 
-<1>20. For every \(n\),
+:::
+
+::: pf-step
+
+For every \(n\),
 \[
 \int_0^{2\pi}
 \log|f(r_ne^{i\theta})|\,d\theta
@@ -369,7 +467,9 @@ the maximum is positive.
 (2\pi-|E|)\log M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On \(E\),
 \[
 |f(r_ne^{i\theta})|
@@ -389,9 +489,14 @@ On the complement of \(E\),
 M,
 \]
 so the logarithm is at most \(\log M\). Integrate the two bounds over the two measurable pieces.
+
 :::
 
-<1>21. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |E|>0
 \]
@@ -401,14 +506,21 @@ and
 \]
 the right-hand side in step <1>20 tends to \(-\infty\).
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \log\delta_n\to-\infty,
 \]
 and it is multiplied by the positive number \(|E|\). The remaining term is constant in \(n\).
+
 :::
 
-<1>22. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac1{2\pi}
@@ -418,31 +530,51 @@ and it is multiplied by the positive number \(|E|\). The remaining term is const
 -\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use steps <1>20--<1>21.
+
 :::
 
-<1>23. This contradicts the uniform lower bound in step <1>16.
+:::
 
-::: {.proof}
+::: pf-step
+
+This contradicts the uniform lower bound in step <1>16.
+
+
+::: pf-proof
+
 Step <1>16 says every average is at least the finite number
 \[
 \log|f(0)|.
 \]
+
 :::
 
-<1>24. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{|E|=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption \(|E|>0\) led to the contradiction in step <1>23.
+
 :::
 
-<1>25. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>13 proves part (a), and step <1>24 proves part (b).
+
 :::
+
 :::

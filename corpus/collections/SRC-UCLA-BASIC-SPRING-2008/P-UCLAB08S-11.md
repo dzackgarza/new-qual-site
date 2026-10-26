@@ -21,13 +21,18 @@ Let $A\in M_n(\mathbb C)$ and suppose that $A^m=I_n$ for some positive integer $
 Prove that $A$ is diagonalizable.
 :::
 
-::: {.solution}
-<1>1. The matrix $A$ is annihilated by the polynomial
+::: pf
+
+::: pf-step
+
+The matrix $A$ is annihilated by the polynomial
 \[
 p(t)=t^m-1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis
 \[
 A^m=I_n
@@ -40,15 +45,22 @@ Thus
 \[
 p(A)=0.
 \]
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 \[
 p(t)=t^m-1
 \]
 has no repeated root over $\mathbb C$.
 
-::: {.proof}
+
+::: pf-proof
+
 Its derivative is
 \[
 p'(t)=mt^{m-1}.
@@ -69,9 +81,14 @@ p(0)=-1\ne0.
 \]
 This is impossible.
 Hence all roots are simple.
+
 :::
 
-<1>3. The minimal polynomial
+:::
+
+::: pf-step
+
+The minimal polynomial
 \[
 \mu_A(t)
 \]
@@ -80,7 +97,9 @@ divides
 t^m-1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The minimal polynomial is the monic polynomial of least positive degree annihilating $A$.
 If a polynomial $q$ annihilates $A$, divide $q$ by $\mu_A$:
 \[
@@ -97,11 +116,18 @@ Minimality forces
 r=0.
 \]
 Thus $\mu_A$ divides every annihilating polynomial, in particular the polynomial from step <1>1.
+
 :::
 
-<1>4. The minimal polynomial $\mu_A$ splits into distinct linear factors.
+:::
 
-::: {.proof}
+::: pf-step
+
+The minimal polynomial $\mu_A$ splits into distinct linear factors.
+
+
+::: pf-proof
+
 By step <1>3,
 \[
 \mu_A
@@ -117,11 +143,18 @@ Thus
 \prod_{j=1}^r(t-\lambda_j)
 \]
 with pairwise distinct complex numbers $\lambda_j$.
+
 :::
 
-<1>5. A complex matrix whose minimal polynomial splits into distinct linear factors is diagonalizable.
+:::
 
-::: {.proof}
+::: pf-step
+
+A complex matrix whose minimal polynomial splits into distinct linear factors is diagonalizable.
+
+
+::: pf-proof
+
 Let
 \[
 \mu_A(t)
@@ -176,21 +209,32 @@ is therefore a sum of eigenvectors belonging to the eigenspaces of $A$.
 Thus the eigenspaces span $\mathbb C^n$.
 Choosing a basis in each eigenspace gives a basis of eigenvectors for $A$.
 Therefore $A$ is diagonalizable.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{A\text{ is diagonalizable over }\mathbb C}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 shows that the minimal polynomial of $A$ splits into distinct linear factors.
 Step <1>5 then gives diagonalizability.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

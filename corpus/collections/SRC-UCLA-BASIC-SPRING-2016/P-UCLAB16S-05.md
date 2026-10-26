@@ -29,13 +29,16 @@ Show that there is $\lambda\in\mathbb R$ such that
 \]
 :::
 
-::: {.solution}
 Let
 \[
 p_0=(x_0,y_0).
 \]
 
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 \[
 \nabla g(p_0)\ne0,
 \]
@@ -47,7 +50,9 @@ g_y(p_0)
 \]
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 The gradient is
 \[
 \nabla g(p_0)
@@ -55,23 +60,35 @@ The gradient is
 \bigl(g_x(p_0),g_y(p_0)\bigr).
 \]
 A vector in $\mathbb R^2$ is nonzero exactly when at least one coordinate is nonzero.
+
 :::
 
-<1>2. After interchanging the coordinate names if necessary, assume
+:::
+
+::: pf-step
+
+After interchanging the coordinate names if necessary, assume
 \[
 \boxed{g_y(p_0)\ne0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 supplies a nonzero partial derivative.
 If
 \[
 g_x(p_0)\ne0
 \]
 instead, the same argument below is obtained by exchanging $x$ and $y$.
+
 :::
 
-<1>3. There exist an open interval
+:::
+
+::: pf-step
+
+There exist an open interval
 \[
 I
 \]
@@ -91,7 +108,9 @@ g(x,\phi(x))=0
 \]
 for every $x\in I$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the implicit function theorem to
 \[
 g(x,y)=0
@@ -106,9 +125,14 @@ and
 g_y(x_0,y_0)\ne0
 \]
 by step <1>2.
+
 :::
 
-<1>4. The one-variable function
+:::
+
+::: pf-step
+
+The one-variable function
 \[
 h(x)
 =
@@ -119,7 +143,9 @@ has a local minimum at
 x=x_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 g(x,\phi(x))=0
@@ -146,19 +172,31 @@ this means
 h(x_0)\le h(x)
 \]
 near $x_0$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 h'(x_0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $h$ is differentiable because both $f$ and $\phi$ are $C^1$.
 A differentiable one-variable function has derivative zero at an interior local minimum.
+
 :::
 
-<1>6. Differentiating the identity
+:::
+
+::: pf-step
+
+Differentiating the identity
 \[
 g(x,\phi(x))=0
 \]
@@ -172,7 +210,9 @@ at $x_0$ gives
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The chain rule gives
 \[
 0
@@ -189,9 +229,14 @@ Divide by
 \[
 g_y(p_0)\ne0.
 \]
+
 :::
 
-<1>7. Differentiating
+:::
+
+::: pf-step
+
+Differentiating
 \[
 h(x)=f(x,\phi(x))
 \]
@@ -204,7 +249,9 @@ f_x(p_0)
 f_y(p_0)\phi'(x_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the chain rule,
 \[
 h'(x_0)
@@ -217,9 +264,14 @@ Step <1>5 gives
 \[
 h'(x_0)=0.
 \]
+
 :::
 
-<1>8. Substituting step <1>6 into step <1>7 gives
+:::
+
+::: pf-step
+
+Substituting step <1>6 into step <1>7 gives
 \[
 \boxed{
 f_x(p_0)g_y(p_0)
@@ -230,7 +282,9 @@ f_y(p_0)g_x(p_0)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 becomes
 \[
 0
@@ -244,9 +298,14 @@ Multiply by
 \[
 g_y(p_0).
 \]
+
 :::
 
-<1>9. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \lambda
 =
@@ -261,7 +320,9 @@ and
 f_x(p_0)=\lambda g_x(p_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first equality is the definition of $\lambda$.
 From step <1>8,
 \[
@@ -281,9 +342,14 @@ to obtain
 \[
 f_x(p_0)=\lambda g_x(p_0).
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \nabla f(x_0,y_0)
@@ -292,13 +358,19 @@ f_x(p_0)=\lambda g_x(p_0).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>9 gives equality of the two coordinate components.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required Lagrange-multiplier condition.
+
 :::
+
 :::

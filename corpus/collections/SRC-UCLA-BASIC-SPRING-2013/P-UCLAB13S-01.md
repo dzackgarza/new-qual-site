@@ -23,8 +23,11 @@ audit:
 (c) Use part (b) to give an example of a Riemann integrable function on $[0,1]$ which has infinitely many discontinuities.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 P:\quad 0=x_0<x_1<\cdots<x_m=1
 \]
@@ -53,11 +56,18 @@ L(f,P)
 m_i(x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the standard Darboux sums associated to a bounded function and a partition.
+
 :::
 
-<1>2. A bounded function
+:::
+
+::: pf-step
+
+A bounded function
 \[
 f:[0,1]\to\mathbb R
 \]
@@ -74,7 +84,9 @@ Equivalently, for every $\varepsilon>0$ there exists a partition $P$ with
 U(f,P)-L(f,P)<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The equality of the upper and lower Darboux integrals is the definition of Riemann integrability.
 
 The equivalent criterion follows because
@@ -89,9 +101,14 @@ U(f,P)
 \]
 for every partition $P$, while passing to a common refinement can only increase lower sums and decrease upper sums.
 This answers part (a).
+
 :::
 
-<1>3. Let $f$ be monotone increasing on $[0,1]$.
+:::
+
+::: pf-step
+
+Let $f$ be monotone increasing on $[0,1]$.
 Then for every partition $P$,
 \[
 M_i=f(x_i)
@@ -99,7 +116,9 @@ M_i=f(x_i)
 m_i=f(x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x_{i-1}\le x\le x_i,
@@ -113,9 +132,14 @@ f(x)
 f(x_i).
 \]
 Thus the infimum and supremum on $I_i$ are attained at the endpoints.
+
 :::
 
-<1>4. For a monotone increasing $f$,
+:::
+
+::: pf-step
+
+For a monotone increasing $f$,
 \[
 U(f,P)-L(f,P)
 =
@@ -126,18 +150,27 @@ f(x_i)-f(x_{i-1})
 (x_i-x_{i-1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the formulas from step <1>3 into the definitions of the Darboux sums.
+
 :::
 
-<1>5. If the mesh of $P$ is at most $\delta$, then
+:::
+
+::: pf-step
+
+If the mesh of $P$ is at most $\delta$, then
 \[
 U(f,P)-L(f,P)
 \le
 \delta\bigl(f(1)-f(0)\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every increment
 \[
 f(x_i)-f(x_{i-1})
@@ -161,11 +194,18 @@ f(1)-f(0)
 \end{aligned}
 \]
 because the sum telescopes.
+
 :::
 
-<1>6. Every monotone increasing function on $[0,1]$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every monotone increasing function on $[0,1]$ is Riemann integrable.
+
+
+::: pf-proof
+
 If
 \[
 f(1)=f(0),
@@ -189,9 +229,14 @@ U(f,P)-L(f,P)<\varepsilon.
 \]
 By the criterion in step <1>2, $f$ is Riemann integrable.
 This proves part (b).
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 g(x)
@@ -203,7 +248,9 @@ g(x)
 \]
 Then $g$ is monotone increasing on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Each summand
 \[
 x\longmapsto
@@ -229,21 +276,35 @@ and
 \[
 \sum_{n=1}^{\infty}2^{-n}=1.
 \]
+
 :::
 
-<1>8. The function $g$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is Riemann integrable.
+
+
+::: pf-proof
+
 By step <1>7, $g$ is monotone increasing.
 Apply part (b), proved in step <1>6.
+
 :::
 
-<1>9. For every positive integer $m$, the function $g$ is discontinuous at
+:::
+
+::: pf-step
+
+For every positive integer $m$, the function $g$ is discontinuous at
 \[
 x=\frac1m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At
 \[
 x=\frac1m,
@@ -270,11 +331,18 @@ g(1/m)
 0.
 \]
 Hence $g$ is discontinuous at $1/m$.
+
 :::
 
-<1>10. Therefore $g$ is a Riemann integrable function with infinitely many discontinuities.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $g$ is a Riemann integrable function with infinitely many discontinuities.
+
+
+::: pf-proof
+
 Step <1>8 gives Riemann integrability.
 Step <1>9 gives a discontinuity at every point
 \[
@@ -282,11 +350,15 @@ Step <1>9 gives a discontinuity at every point
 \]
 which is an infinite set.
 This proves part (c).
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 answers part (a), step <1>6 proves part (b), and step <1>10 gives the example required in part (c).
+
 :::
+
 :::

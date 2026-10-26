@@ -27,29 +27,41 @@ Prove that
 exists.
 :::
 
-::: {.solution}
 Let
 \[
 s_N=\sum_{j=1}^N a_j.
 \]
 
-<1>1. The sequence of partial sums
+::: pf
+
+::: pf-step
+
+The sequence of partial sums
 \[
 t_N=\sum_{j=1}^N|a_j|
 \]
 is Cauchy.
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis
 \[
 \sum_{j=1}^{\infty}|a_j|<\infty
 \]
 means precisely that the sequence \((t_N)\) converges in \(\mathbb R\). Every convergent real sequence is Cauchy.
+
 :::
 
-<1>2. The sequence \((s_N)\) is Cauchy.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence \((s_N)\) is Cauchy.
+
+
+::: pf-proof
+
 Let \(\varepsilon>0\). By step <1>1, there is \(N_0\) such that whenever \(m>n\ge N_0\),
 \[
 \sum_{j=n+1}^{m}|a_j|
@@ -67,28 +79,46 @@ For such \(m,n\), the triangle inequality gives
 <\varepsilon.
 \]
 Hence \((s_N)\) is Cauchy.
+
 :::
 
-<1>3. The sequence \((s_N)\) converges to a real number.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence \((s_N)\) converges to a real number.
+
+
+::: pf-proof
+
 The real numbers are complete, so every Cauchy sequence in \(\mathbb R\) converges. Apply completeness to step <1>2.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\displaystyle
 \lim_{N\to\infty}\sum_{j=1}^{N}a_j
 \text{ exists in }\mathbb R.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the convergence of the partial-sum sequence established in step <1>3.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

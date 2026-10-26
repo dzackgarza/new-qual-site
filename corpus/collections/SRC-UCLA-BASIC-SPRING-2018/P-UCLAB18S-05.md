@@ -25,10 +25,15 @@ Prove or disprove each assertion:
 2. $AB+BA$ is positive definite.
 :::
 
-::: {.solution}
-<1>1. Assertion 1 is true.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Assertion 1 is true.
+
+
+::: pf-proof
+
 Let
 \[
 x\in\mathbb R^2
@@ -55,11 +60,18 @@ Hence
 \[
 \boxed{A+B\text{ is positive definite}.}
 \]
+
 :::
 
-<1>2. Assertion 2 is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Assertion 2 is false.
+
+
+::: pf-proof
+
 Consider
 \[
 A=
@@ -75,11 +87,18 @@ B=
 \end{pmatrix}.
 \]
 The following steps verify that $A$ and $B$ are positive definite while $AB+BA$ is not.
+
 :::
 
-<1>3. The matrix $A$ is positive definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ is positive definite.
+
+
+::: pf-proof
+
 For
 \[
 x=
@@ -96,11 +115,18 @@ x^TAx
 >
 0.
 \]
+
 :::
 
-<1>4. The matrix $B$ is positive definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrix $B$ is positive definite.
+
+
+::: pf-proof
+
 The matrix is symmetric.
 Its leading principal minors are
 \[
@@ -117,9 +143,14 @@ and
 0.
 \]
 By Sylvester's criterion, $B$ is positive definite.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 AB+BA
@@ -131,7 +162,9 @@ AB+BA
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 AB
@@ -151,9 +184,14 @@ BA
 \end{pmatrix}.
 \]
 Adding yields the displayed matrix.
+
 :::
 
-<1>6. The nonzero vector
+:::
+
+::: pf-step
+
+The nonzero vector
 \[
 v=
 \begin{pmatrix}
@@ -166,7 +204,9 @@ satisfies
 (AB+BA)v=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>5,
 \[
 \begin{pmatrix}
@@ -188,11 +228,18 @@ Using step <1>5,
 0
 \end{pmatrix}.
 \]
+
 :::
 
-<1>7. Therefore $AB+BA$ is not positive definite.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $AB+BA$ is not positive definite.
+
+
+::: pf-proof
+
 Positive definiteness would require
 \[
 v^T(AB+BA)v>0
@@ -207,11 +254,15 @@ Thus
 \[
 \boxed{AB+BA\text{ need not be positive definite}.}
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves assertion 1, and steps <1>2--<1>7 disprove assertion 2.
+
 :::
+
 :::

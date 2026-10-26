@@ -19,13 +19,16 @@ Evaluate
 \]
 :::
 
-::: {.solution}
 Set
 \[
 z_0=\frac i2.
 \]
 
-<1>1. The Möbius transformation
+::: pf
+
+::: pf-step
+
+The Möbius transformation
 \[
 M(z)
 \coloneqq
@@ -38,7 +41,9 @@ Q
 \{w:\operatorname{Re}w>0,\ \operatorname{Im}w>0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The standard Cayley transform $M$ maps the unit disk biholomorphically onto the right half-plane, so
 \[
 |z|<1
@@ -60,9 +65,14 @@ Thus
 Hence $M(\Omega)\subset Q$.
 
 Conversely, $M^{-1}$ maps the right half-plane to $\mathbb D$ and the upper half-plane to itself, so every point of $Q$ has preimage in $\Omega$.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 S(w)=w^2
 \]
@@ -73,7 +83,9 @@ maps $Q$ biholomorphically onto the upper half-plane
 \{\zeta:\operatorname{Im}\zeta>0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every $w\in Q$ has argument in $(0,\pi/2)$, so $w^2$ has argument in $(0,\pi)$ and therefore lies in $\mathbb H$.
 
 Conversely, every $\zeta\in\mathbb H$ has a unique square root with argument in $(0,\pi/2)$, so $S:Q\to\mathbb H$ is bijective. Its derivative
@@ -81,9 +93,14 @@ Conversely, every $\zeta\in\mathbb H$ has a unique square root with argument in 
 S'(w)=2w
 \]
 never vanishes on $Q$, so the inverse is holomorphic.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \Phi(z)
 \coloneqq
@@ -96,11 +113,18 @@ is a biholomorphism
 \Phi:\Omega\to\mathbb H.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>1 and <1>2.
+
 :::
 
-<1>4. At
+:::
+
+::: pf-step
+
+At
 \[
 z_0=\frac i2,
 \]
@@ -119,7 +143,9 @@ q_0
 -\frac7{25}+\frac{24}{25}i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 M(i/2)
@@ -140,16 +166,23 @@ q_0
 =
 -\frac7{25}+\frac{24}{25}i.
 \]
+
 :::
 
-<1>5. The derivative of $\Phi$ at $z_0$ satisfies
+:::
+
+::: pf-step
+
+The derivative of $\Phi$ at $z_0$ satisfies
 \[
 |\Phi'(z_0)|
 =
 \frac{16}{5}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 M'(z)
@@ -186,9 +219,14 @@ Therefore
 =
 \frac{16}{5}.
 \]
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 \[
 G:\mathbb H\to\mathbb D
 \]
@@ -201,7 +239,9 @@ be holomorphic. Then
 \frac1{2\operatorname{Im}q_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 a=G(q_0).
@@ -256,9 +296,14 @@ The chain rule therefore gives
 \le1,
 \]
 which is the first inequality. The second follows from $1-|a|^2\le1$.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 \[
 f:\Omega\to\mathbb D
 \]
@@ -269,7 +314,9 @@ is holomorphic, then
 \frac53.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 G
@@ -310,9 +357,14 @@ Therefore
 =
 \frac53.
 \]
+
 :::
 
-<1>8. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \operatorname{Re}f'(z_0)
 \le
@@ -320,17 +372,26 @@ Therefore
 \]
 for every admissible $f$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every complex number $w$,
 \[
 \operatorname{Re}w\le|w|.
 \]
 Apply step <1>7 to $w=f'(z_0)$.
+
 :::
 
-<1>9. The bound $5/3$ is attained.
+:::
 
-::: {.proof}
+::: pf-step
+
+The bound $5/3$ is attained.
+
+
+::: pf-proof
+
 Use the map
 \[
 \chi(w)
@@ -364,9 +425,14 @@ steps <1>4--<1>5 give
 \frac53.
 \]
 The phase $e^{i\theta}$ makes this derivative equal to the positive real number $5/3$.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sup\left\{
@@ -379,13 +445,19 @@ f:\Omega\to\mathbb D
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 gives the upper bound and step <1>9 attains it.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required value.
+
 :::
+
 :::

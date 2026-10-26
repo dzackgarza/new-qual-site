@@ -28,7 +28,6 @@ Prove that there is a constant $A$ such that for every $\alpha>0$,
 If you use a covering lemma, prove it.
 :::
 
-::: {.solution}
 Fix
 \[
 \alpha>0
@@ -42,7 +41,11 @@ E_\alpha
 
 ## A finite covering lemma
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \mathcal I=\{I_1,\dots,I_N\}
 \]
@@ -59,7 +62,9 @@ such that
 \]
 where \(3J_k\) denotes the interval with the same center as \(J_k\) and three times its length.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose \(J_1\) to be an interval of maximal length in \(\mathcal I\). Remove \(J_1\) and every interval meeting it. From the remaining family choose \(J_2\) of maximal length, remove it and every interval meeting it, and continue. Since the original family is finite, the process stops.
 
 The selected intervals are pairwise disjoint by construction.
@@ -89,13 +94,18 @@ Thus \(y\in3J_k\), so
 I\subseteq3J_k.
 \]
 Hence the union of the entire family is contained in the union of the triples of the selected intervals.
+
 :::
 
-## The superlevel set is open
+:::
 
-<1>2. The set \(E_\alpha\) is open.
+::: pf-step
 
-::: {.proof}
+The set \(E_\alpha\) is open.
+
+
+::: pf-proof
+
 Take \(x\in E_\alpha\). Then for some \(h>0\),
 \[
 \frac1{2h}
@@ -134,17 +144,14 @@ Therefore
 \alpha.
 \]
 Hence \(Mf(x')>\alpha\), so a neighborhood of \(x\) lies in \(E_\alpha\).
+
 :::
 
-## Estimate on compact subsets
+:::
 
-Let
-\[
-K\subseteq E_\alpha
-\]
-be compact.
+::: pf-step
 
-<1>3. For every \(x\in K\), choose \(h_x>0\) such that
+For every \(x\in K\), choose \(h_x>0\) such that
 \[
 \boxed{
 \frac1{2h_x}
@@ -153,35 +160,51 @@ be compact.
 \alpha}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of \(Mf(x)>\alpha\).
+
 :::
 
-Define
-\[
-I_x=(x-h_x,x+h_x).
-\]
+:::
 
-<1>4. The family
+::: pf-step
+
+The family
 \[
 \{I_x:x\in K\}
 \]
 is an open cover of \(K\).
 
-::: {.proof}
+
+::: pf-proof
+
 Each \(x\in K\) belongs to its interval \(I_x\).
+
 :::
 
-<1>5. By compactness, choose a finite subcover
+:::
+
+::: pf-step
+
+By compactness, choose a finite subcover
 \[
 I_1,\dots,I_N.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every open cover of a compact set has a finite subcover.
+
 :::
 
-<1>6. Apply the covering lemma from step <1>1 to obtain pairwise disjoint intervals
+:::
+
+::: pf-step
+
+Apply the covering lemma from step <1>1 to obtain pairwise disjoint intervals
 \[
 J_1,\dots,J_m
 \]
@@ -193,7 +216,9 @@ K
 \bigcup_{k=1}^{m}3J_k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The finite subcover satisfies
 \[
 K\subseteq\bigcup_{j=1}^{N}I_j.
@@ -204,16 +229,23 @@ The covering lemma gives
 \subseteq
 \bigcup_{k=1}^{m}3J_k.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lambda(K)
 \le
 3\sum_{k=1}^{m}|J_k|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By subadditivity,
 \[
 \lambda(K)
@@ -222,9 +254,14 @@ By subadditivity,
 =
 3\sum_{k=1}^{m}|J_k|.
 \]
+
 :::
 
-<1>8. Every selected interval \(J_k\) satisfies
+:::
+
+::: pf-step
+
+Every selected interval \(J_k\) satisfies
 \[
 \boxed{
 \alpha|J_k|
@@ -232,15 +269,22 @@ By subadditivity,
 \int_{J_k}|f(y)|\,dy}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each \(J_k\) is one of the intervals chosen in step <1>3. Since
 \[
 |J_k|=2h_x,
 \]
 the average inequality from step <1>3 is exactly the displayed inequality.
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 3\sum_{k=1}^{m}|J_k|
 <
@@ -249,11 +293,18 @@ the average inequality from step <1>3 is exactly the displayed inequality.
 \int_{J_k}|f(y)|\,dy.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the inequalities in step <1>8 by \(\alpha\) and sum.
+
 :::
 
-<1>10. Since the \(J_k\) are pairwise disjoint,
+:::
+
+::: pf-step
+
+Since the \(J_k\) are pairwise disjoint,
 \[
 \sum_{k=1}^{m}
 \int_{J_k}|f(y)|\,dy
@@ -261,11 +312,18 @@ Divide the inequalities in step <1>8 by \(\alpha\) and sum.
 \|f\|_{L^1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sum of the integrals over pairwise disjoint measurable sets is the integral over their union, which is bounded by the integral over all of \(\mathbb R\).
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lambda(K)
@@ -274,24 +332,36 @@ The sum of the integrals over pairwise disjoint measurable sets is the integral 
 \|f\|_{L^1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>7--<1>10.
+
 :::
 
-## Pass from compact sets to \(E_\alpha\)
+:::
 
-<1>12. Since \(E_\alpha\) is open,
+::: pf-step
+
+Since \(E_\alpha\) is open,
 \[
 \lambda(E_\alpha)
 =
 \sup\{\lambda(K):K\subseteq E_\alpha,\ K\text{ compact}\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Lebesgue measure is inner regular on open subsets of \(\mathbb R\).
+
 :::
 
-<1>13. Taking the supremum in step <1>11 gives
+:::
+
+::: pf-step
+
+Taking the supremum in step <1>11 gives
 \[
 \boxed{
 \lambda(E_\alpha)
@@ -300,16 +370,25 @@ Lebesgue measure is inner regular on open subsets of \(\mathbb R\).
 \|f\|_{L^1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The same upper bound holds for every compact \(K\subseteq E_\alpha\), so it also bounds their supremum.
+
 :::
 
-<1>14. Thus the weak type \((1,1)\) estimate holds with
+:::
+
+::: pf-step
+
+Thus the weak type \((1,1)\) estimate holds with
 \[
 \boxed{A=3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>13 is precisely
 \[
 \lambda\{Mf>\alpha\}
@@ -317,11 +396,15 @@ Step <1>13 is precisely
 \frac{A}{\alpha}\|f\|_1
 \]
 with \(A=3\).
+
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 proves the required covering lemma, and step <1>14 proves the maximal-function estimate.
+
 :::
+
 :::

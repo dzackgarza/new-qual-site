@@ -22,8 +22,11 @@ A=\begin{pmatrix}1&3\\4&2\end{pmatrix}.
 (b) Prove that such a polynomial $P(x)$ is unique up to multiplication by a constant.
 :::
 
-::: {.solution}
-<1>1. The characteristic polynomial of
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of
 $$
 A=\begin{pmatrix}1&3\\4&2\end{pmatrix}
 $$
@@ -32,7 +35,9 @@ $$
 P(x)=x^2-3x-10.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 \begin{aligned}
@@ -43,14 +48,21 @@ $$
 &=x^2-3x-10.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The polynomial from step <1>1 annihilates $A$:
+:::
+
+::: pf-step
+
+The polynomial from step <1>1 annihilates $A$:
 $$
 \boxed{P(A)=A^2-3A-10I=0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 $$
 A^2
@@ -71,11 +83,18 @@ $$
 \begin{pmatrix}13&9\\12&16\end{pmatrix}.
 $$
 Hence $A^2=3A+10I$, which is equivalent to $P(A)=0$.
+
 :::
 
-<1>3. No nonzero polynomial of degree at most $1$ annihilates $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+No nonzero polynomial of degree at most $1$ annihilates $A$.
+
+
+::: pf-proof
+
 Suppose
 $$
 R(x)=rx+s
@@ -89,11 +108,18 @@ $$
 A=-\frac sr I,
 $$
 so $A$ would be a scalar matrix. But $A$ has nonzero off-diagonal entries $3$ and $4$, a contradiction. Thus $r=0$, and then $sI=0$ forces $s=0$. Therefore $R=0$.
+
 :::
 
-<1>4. Every degree-$2$ polynomial $Q$ satisfying $Q(A)=0$ is a nonzero scalar multiple of $P$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every degree-$2$ polynomial $Q$ satisfying $Q(A)=0$ is a nonzero scalar multiple of $P$.
+
+
+::: pf-proof
+
 Let
 $$
 Q(x)=cx^2+dx+e,
@@ -111,11 +137,15 @@ Step <1>3 therefore gives $R=0$. Hence
 $$
 Q=cP.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 answers part (a), and step <1>4 proves the uniqueness up to multiplication by a nonzero constant required in part (b).
+
 :::
+
 :::

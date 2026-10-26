@@ -37,8 +37,11 @@ U_n(\cos\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}.
 \]
 :::
 
-::: {.solution}
-<1>1. For
+::: pf
+
+::: pf-step
+
+For
 \[
 n=0,
 \]
@@ -55,14 +58,21 @@ whenever
 \sin\theta\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from
 \[
 U_0(x)=1.
 \]
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 n=1,
 \]
@@ -79,7 +89,9 @@ whenever
 \sin\theta\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 U_1(x)=2x.
@@ -92,9 +104,14 @@ the quotient equals
 \[
 2\cos\theta.
 \]
+
 :::
 
-<1>3. Suppose for some $n\ge1$ that
+:::
+
+::: pf-step
+
+Suppose for some $n\ge1$ that
 \[
 U_n(\cos\theta)
 =
@@ -113,7 +130,9 @@ U_{n+1}(\cos\theta)
 \frac{\sin((n+2)\theta)}{\sin\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the recurrence,
 \[
 \begin{aligned}
@@ -144,9 +163,14 @@ reduces the numerator to
 \[
 \sin((n+2)\theta).
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 U_n(\cos\theta)
@@ -159,7 +183,9 @@ for every $n\ge0$ and every $\theta$ with
 \sin\theta\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 give the induction.
 At points where
 \[
@@ -167,9 +193,14 @@ At points where
 \]
 the quotient has a removable singularity and the identity extends by continuity.
 This proves part (a).
+
 :::
 
-<1>5. In the integral from part (b), make the substitution
+:::
+
+::: pf-step
+
+In the integral from part (b), make the substitution
 \[
 x=\cos\theta,
 \qquad
@@ -184,7 +215,9 @@ and
 \sqrt{1-x^2}=\sin\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On
 \[
 [0,\pi],
@@ -207,9 +240,14 @@ Also,
 =
 -\sin\theta.
 \]
+
 :::
 
-<1>6. The weighted inner product becomes
+:::
+
+::: pf-step
+
+The weighted inner product becomes
 \[
 \int_{-1}^1
 U_m(x)U_n(x)\sqrt{1-x^2}\,dx
@@ -220,7 +258,9 @@ U_m(x)U_n(x)\sqrt{1-x^2}\,dx
 \,d\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>5,
 \[
 \begin{aligned}
@@ -248,9 +288,14 @@ U_m(\cos\theta)\sin\theta
 and similarly for $n$.
 The endpoint values do not affect the integral.
 Thus the displayed identity follows.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 \[
 m\ne n,
 \]
@@ -264,7 +309,9 @@ then
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the product-to-sum identity
 \[
 \sin(a\theta)\sin(b\theta)
@@ -304,9 +351,14 @@ For every nonzero integer $k$,
 =0.
 \]
 Hence the integral vanishes.
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 \[
 m=n,
 \]
@@ -318,7 +370,9 @@ then
 \frac{\pi}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \sin^2 u
@@ -343,9 +397,14 @@ Then
 \end{aligned}
 \]
 because the cosine integral is zero.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{-1}^1 U_m(x)U_n(x)\sqrt{1-x^2}\,dx
@@ -357,14 +416,20 @@ because the cosine integral is zero.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine step <1>6 with steps <1>7--<1>8.
 This proves part (b).
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

@@ -20,10 +20,15 @@ audit:
 Problem 2. Let $A,B$ be two closed subsets of $\mathbb R^n$ such that $A\cup B$ and $A\cap B$ are connected. Prove that $A$ is connected.
 :::
 
-::: {.solution}
-<1>1. Suppose, for contradiction, that $A$ is disconnected.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Suppose, for contradiction, that $A$ is disconnected.
+
+
+::: pf-proof
+
 Then there exist nonempty disjoint subsets
 \[
 U,V\subseteq A
@@ -33,15 +38,22 @@ such that
 A=U\cup V
 \]
 and both $U$ and $V$ are open and closed in the subspace topology on $A$.
+
 :::
 
-<1>2. Since $A\cap B$ is connected,
+:::
+
+::: pf-step
+
+Since $A\cap B$ is connected,
 \[
 A\cap B
 \]
 is contained entirely in one of $U$ or $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 The sets
 \[
 (A\cap B)\cap U
@@ -51,9 +63,14 @@ The sets
 are disjoint, relatively open and relatively closed subsets of $A\cap B$, and their union is $A\cap B$.
 Connectedness therefore forces one of them to be empty.
 Thus $A\cap B$ lies entirely in the other.
+
 :::
 
-<1>3. After exchanging $U$ and $V$ if necessary, assume
+:::
+
+::: pf-step
+
+After exchanging $U$ and $V$ if necessary, assume
 \[
 A\cap B\subseteq U.
 \]
@@ -62,22 +79,36 @@ Then
 V\cap B=\varnothing.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $v\in V\cap B$, then $v\in A\cap B$, hence $v\in U$ by the assumption.
 But $U\cap V=\varnothing$.
 Thus no such $v$ exists.
+
 :::
 
-<1>4. The set $V$ is closed in $A\cup B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $V$ is closed in $A\cup B$.
+
+
+::: pf-proof
+
 The set $V$ is closed in $A$.
 Since $A$ is closed in $\mathbb R^n$, it is also closed in the subspace $A\cup B$.
 A subset closed in a closed subspace is closed in the ambient subspace.
 Hence $V$ is closed in $A\cup B$.
+
 :::
 
-<1>5. The complement of $V$ in $A\cup B$ is
+:::
+
+::: pf-step
+
+The complement of $V$ in $A\cup B$ is
 \[
 (A\cup B)\setminus V
 =
@@ -85,7 +116,9 @@ U\cup B,
 \]
 and this set is closed in $A\cup B$.
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 A=U\cup V
@@ -98,44 +131,76 @@ and $V\cap B=\varnothing$ by step <1>3,
 The set $U$ is closed in $A$, hence closed in $A\cup B$ because $A$ is closed there.
 The set $B$ is closed in $\mathbb R^n$, hence closed in $A\cup B$.
 Therefore their finite union $U\cup B$ is closed in $A\cup B$.
+
 :::
 
-<1>6. The set $V$ is both open and closed in $A\cup B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $V$ is both open and closed in $A\cup B$.
+
+
+::: pf-proof
+
 Step <1>4 gives that $V$ is closed.
 Step <1>5 gives that its complement in $A\cup B$ is closed, so $V$ is open.
+
 :::
 
-<1>7. The set $V$ is a nonempty proper subset of $A\cup B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $V$ is a nonempty proper subset of $A\cup B$.
+
+
+::: pf-proof
+
 It is nonempty by the assumed disconnection of $A$.
 It is proper because $U$ is nonempty and
 \[
 U\subseteq(A\cup B)\setminus V.
 \]
+
 :::
 
-<1>8. Steps <1>6--<1>7 contradict connectedness of $A\cup B$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Steps <1>6--<1>7 contradict connectedness of $A\cup B$.
+
+
+::: pf-proof
+
 A connected space has no nonempty proper subset that is both open and closed.
 But $V$ has exactly these properties.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{A\text{ is connected}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption that $A$ is disconnected leads to the contradiction in step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

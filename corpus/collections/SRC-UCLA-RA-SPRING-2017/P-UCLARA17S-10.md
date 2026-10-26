@@ -28,15 +28,20 @@ H(\Omega)/R(\Omega)
 has dimension $n$, find a basis for this space, and prove it is a basis.
 :::
 
-::: {.solution}
 For $u\in H(\Omega)$, define
 $$
 g_u(z)\coloneqq u_x(z)-i u_y(z).
 $$
 
-<1>1. The function $g_u$ is holomorphic on $\Omega$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $g_u$ is holomorphic on $\Omega$.
+
+
+::: pf-proof
+
 Since $u$ is harmonic, $u_{xx}+u_{yy}=0$. Writing
 $$
 g_u=u_x-i u_y,
@@ -48,15 +53,22 @@ $$
 (u_x)_y=-(-u_y)_x,
 $$
 which are respectively harmonicity of $u$ and equality of mixed partial derivatives. Thus $g_u$ is holomorphic.
+
 :::
 
-<1>2. A harmonic function $u$ belongs to $R(\Omega)$ if and only if the holomorphic differential
+:::
+
+::: pf-step
+
+A harmonic function $u$ belongs to $R(\Omega)$ if and only if the holomorphic differential
 $$
 g_u(z)\,dz
 $$
 has zero integral around every closed curve in $\Omega$.
 
-::: {.proof}
+
+::: pf-proof
+
 If $u=\operatorname{Re}F$ for an analytic function $F$, the Cauchy--Riemann equations give
 $$
 F'=u_x-i u_y=g_u,
@@ -68,15 +80,22 @@ $$
 F'=g_u=u_x-i u_y,
 $$
 the gradients of $u$ and $\operatorname{Re}F$ agree. The domain $\Omega$ is connected, so their difference is constant. A real constant is itself the real part of a constant analytic function, hence $u\in R(\Omega)$.
+
 :::
 
-<1>3. Let $\gamma_j$ be a positively oriented small circle about $a_j$ containing no other puncture, and define
+:::
+
+::: pf-step
+
+Let $\gamma_j$ be a positively oriented small circle about $a_j$ containing no other puncture, and define
 $$
 c_j(u)\coloneqq\frac1{2\pi i}\int_{\gamma_j}g_u(z)\,dz.
 $$
 Then $c_j(u)\in\RR$.
 
-::: {.proof}
+
+::: pf-proof
+
 Along any closed piecewise smooth curve $z=x+iy$,
 $$
 \begin{aligned}
@@ -86,9 +105,14 @@ g_u(z)\,dz
 \end{aligned}
 $$
 The integral of $du$ around a closed curve is $0$, so the integral of $g_u\,dz$ is purely imaginary. Therefore division by $2\pi i$ gives a real number.
+
 :::
 
-<1>4. For each $j$, the function
+:::
+
+::: pf-step
+
+For each $j$, the function
 $$
 \ell_j(z)\coloneqq\log|z-a_j|
 $$
@@ -97,21 +121,30 @@ $$
 g_{\ell_j}(z)=\frac1{z-a_j}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The function $\log|z-a_j|$ is harmonic away from $a_j$. A direct differentiation gives
 $$
 (\ell_j)_x-i(\ell_j)_y
 =\frac1{z-a_j}.
 $$
+
 :::
 
-<1>5. For every $u\in H(\Omega)$, the harmonic function
+:::
+
+::: pf-step
+
+For every $u\in H(\Omega)$, the harmonic function
 $$
 v\coloneqq u-\sum_{j=1}^n c_j(u)\ell_j
 $$
 belongs to $R(\Omega)$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>4,
 $$
 g_v(z)
@@ -130,15 +163,22 @@ $$
 \operatorname{Res}_{a_j}(g_v).
 $$
 The vanishing integrals around the small circles imply that every residue $\operatorname{Res}_{a_j}(g_v)$ is $0$. Hence every closed-curve integral of $g_v$ vanishes. Step <1>2 therefore gives $v\in R(\Omega)$.
+
 :::
 
-<1>6. The classes
+:::
+
+::: pf-step
+
+The classes
 $$
 \boxed{[\ell_1],\ldots,[\ell_n]}
 $$
 span $H(\Omega)/R(\Omega)$.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 gives
 $$
 u-\sum_{j=1}^n c_j(u)\ell_j\in R(\Omega),
@@ -147,11 +187,18 @@ so in the quotient
 $$
 [u]=\sum_{j=1}^n c_j(u)[\ell_j].
 $$
+
 :::
 
-<1>7. The classes $[\ell_1],\ldots,[\ell_n]$ are linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+The classes $[\ell_1],\ldots,[\ell_n]$ are linearly independent.
+
+
+::: pf-proof
+
 Suppose
 $$
 \sum_{j=1}^n d_j\ell_j\in R(\Omega)
@@ -163,9 +210,14 @@ $$
 =2\pi i\,d_k.
 $$
 Thus $d_k=0$ for every $k$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{\dim_{\RR}H(\Omega)/R(\Omega)=n},
 $$
@@ -174,13 +226,19 @@ $$
 \boxed{[\log|z-a_1|],\ldots,[\log|z-a_n|]}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 proves spanning and step <1>7 proves linear independence.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required dimension and basis statement.
+
 :::
+
 :::

@@ -20,24 +20,36 @@ x^5-3x+1=0.
 \]
 :::
 
-::: {.solution}
 Define
 \[
 p(x)=x^5-3x+1.
 \]
 
-<1>1. The function $p$ is continuous on $\mathbb R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $p$ is continuous on $\mathbb R$.
+
+
+::: pf-proof
+
 The function $p$ is a polynomial, and every polynomial is continuous.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 p(0)=1>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives
 \[
 p(0)
@@ -45,14 +57,21 @@ p(0)
 0^5-3\cdot0+1
 =1.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 p(1)=-1<0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct substitution gives
 \[
 p(1)
@@ -61,9 +80,14 @@ p(1)
 =
 -1.
 \]
+
 :::
 
-<1>4. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 c\in(0,1)
 \]
@@ -72,7 +96,9 @@ such that
 \boxed{c^5-3c+1=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>3, the continuous function $p$ takes opposite signs at $0$ and $1$.
 The intermediate value theorem therefore gives
 \[
@@ -82,11 +108,15 @@ with
 \[
 p(c)=0.
 \]
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required existence statement.
+
 :::
+
 :::

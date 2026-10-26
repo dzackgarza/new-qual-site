@@ -21,8 +21,11 @@ audit:
 (b) Prove that a function $f:(0,1)\to\mathbb R$ is the restriction to $(0,1)$ of a continuous function $F:[0,1]\to\mathbb R$ if and only if $f$ is uniformly continuous on $(0,1)$.
 :::
 
-::: {.solution}
-<1>1. A function
+::: pf
+
+::: pf-step
+
+A function
 \[
 F:X\to\mathbb R
 \]
@@ -35,19 +38,28 @@ implies
 |F(x)-F(y)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of uniform continuity.
 The crucial point is that the same $\delta$ works simultaneously for every pair $x,y\in X$.
+
 :::
 
-<1>2. Suppose there exists a continuous
+:::
+
+::: pf-step
+
+Suppose there exists a continuous
 \[
 F:[0,1]\to\mathbb R
 \]
 whose restriction to $(0,1)$ is $f$.
 Then $f$ is uniformly continuous on $(0,1)$.
 
-::: {.proof}
+
+::: pf-proof
+
 The interval $[0,1]$ is compact.
 By the Heine--Cantor theorem, the continuous function $F$ is uniformly continuous on $[0,1]$.
 Thus for every $\varepsilon>0$ there is $\delta>0$ such that
@@ -65,16 +77,23 @@ Since
 F|_{(0,1)}=f,
 \]
 the function $f$ is uniformly continuous.
+
 :::
 
-<1>3. Conversely, assume $f:(0,1)\to\mathbb R$ is uniformly continuous.
+:::
+
+::: pf-step
+
+Conversely, assume $f:(0,1)\to\mathbb R$ is uniformly continuous.
 Then for every sequence $(x_n)$ in $(0,1)$ with
 \[
 x_n\to0,
 \]
 the sequence $(f(x_n))$ is Cauchy.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varepsilon>0$.
 Uniform continuity gives $\delta>0$ such that
 \[
@@ -102,14 +121,21 @@ Hence
 |f(x_n)-f(x_m)|<\varepsilon.
 \]
 So $(f(x_n))$ is Cauchy.
+
 :::
 
-<1>4. There exists a real number $L_0$ such that
+:::
+
+::: pf-step
+
+There exists a real number $L_0$ such that
 \[
 \lim_{x\to0^+}f(x)=L_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose one sequence
 \[
 x_n\in(0,1),
@@ -151,14 +177,21 @@ By the sequential criterion for one-sided limits,
 \[
 \lim_{x\to0^+}f(x)=L_0.
 \]
+
 :::
 
-<1>5. There exists a real number $L_1$ such that
+:::
+
+::: pf-step
+
+There exists a real number $L_1$ such that
 \[
 \lim_{x\to1^-}f(x)=L_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the same argument as in steps <1>3--<1>4 to sequences
 \[
 x_n\to1
@@ -180,9 +213,14 @@ so uniform continuity forces
 |f(x_n)-f(y_n)|\to0.
 \]
 Thus the one-sided limit exists and is finite.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 F:[0,1]\to\mathbb R
 \]
@@ -197,7 +235,9 @@ L_1,&x=1.
 \]
 Then $F$ is continuous on $[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 On $(0,1)$, the function $F$ equals $f$.
 Uniform continuity implies ordinary continuity, so $f$ is continuous there.
 
@@ -225,9 +265,14 @@ F(1).
 \]
 Thus $F$ is continuous at $1$.
 Hence $F$ is continuous on all of $[0,1]$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f\text{ extends continuously to }[0,1]
@@ -236,14 +281,20 @@ f\text{ is uniformly continuous on }(0,1)
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 proves the forward implication.
 Steps <1>3--<1>6 prove the reverse implication.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>7 proves part (b).
+
 :::
+
 :::

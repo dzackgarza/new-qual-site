@@ -20,14 +20,17 @@ audit:
 Let $V_1$ be a finite-dimensional subspace of the Banach space $V$. Show that there exists a continuous projection $P:V\to V_1$, i.e. a continuous linear map $P:V\to V$ such that $P^2=P$ and the range of $P$ is equal to $V_1$.
 :::
 
-::: {.solution}
 Choose a basis
 \[
 e_1,\dots,e_n
 \]
 of $V_1$.
 
-<1>1. For each $j=1,\dots,n$, the coordinate functional
+::: pf
+
+::: pf-step
+
+For each $j=1,\dots,n$, the coordinate functional
 \[
 \lambda_j:V_1\to\mathbb F,
 \qquad
@@ -35,21 +38,35 @@ of $V_1$.
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Every linear map from a finite-dimensional normed space to a normed space is continuous. Since $V_1$ is finite dimensional, each coordinate functional $\lambda_j$ is continuous.
+
 :::
 
-<1>2. For each $j$, there exists a continuous linear functional
+:::
+
+::: pf-step
+
+For each $j$, there exists a continuous linear functional
 \[
 \widetilde\lambda_j:V\to\mathbb F
 \]
 whose restriction to $V_1$ is $\lambda_j$.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the Hahn--Banach theorem to the bounded linear functional $\lambda_j$ on the subspace $V_1\subset V$.
+
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+
+Define
 \[
 P:V\to V_1,
 \qquad
@@ -60,7 +77,9 @@ P(x)
 \]
 Then $P$ is linear and continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Linearity follows from linearity of the functionals $\widetilde\lambda_j$. Moreover,
 \[
 \begin{aligned}
@@ -77,11 +96,18 @@ Linearity follows from linearity of the functionals $\widetilde\lambda_j$. Moreo
 \end{aligned}
 \]
 Thus $P$ is bounded, hence continuous.
+
 :::
 
-<1>4. The restriction of $P$ to $V_1$ is the identity map.
+:::
 
-::: {.proof}
+::: pf-step
+
+The restriction of $P$ to $V_1$ is the identity map.
+
+
+::: pf-proof
+
 If
 \[
 v=\sum_{k=1}^n a_ke_k\in V_1,
@@ -101,9 +127,14 @@ P(v)
 \sum_{j=1}^n a_je_j
 =v.
 \]
+
 :::
 
-<1>5. The map $P$ satisfies
+:::
+
+::: pf-step
+
+The map $P$ satisfies
 \[
 \boxed{
 P^2=P,
@@ -112,7 +143,9 @@ P^2=P,
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, $P(x)\in V_1$ for every $x\in V$. Applying step <1>4 to $P(x)$ gives
 \[
 P^2(x)
@@ -131,11 +164,15 @@ Conversely, step <1>4 says that every $v\in V_1$ satisfies $P(v)=v$, so every el
 \[
 \operatorname{range}(P)=V_1.
 \]
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>5 show that $P$ is a continuous projection of $V$ onto $V_1$.
+
 :::
+
 :::

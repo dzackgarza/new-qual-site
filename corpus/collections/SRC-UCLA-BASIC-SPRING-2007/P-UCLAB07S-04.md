@@ -28,13 +28,16 @@ L=\left\{\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}:x\in X\right\}.
 \]
 :::
 
-::: {.solution}
 For each distinct eigenvalue $\lambda_j$, let
 \[
 E_j=\ker(A-\lambda_jI).
 \]
 
-<1>1. Since $A$ is real symmetric,
+::: pf
+
+::: pf-step
+
+Since $A$ is real symmetric,
 \[
 \mathbb R^n
 =
@@ -42,12 +45,19 @@ E_j=\ker(A-\lambda_jI).
 \]
 orthogonally.
 
-::: {.proof}
+
+::: pf-proof
+
 By the spectral theorem for real symmetric matrices, $\mathbb R^n$ has an orthonormal basis of eigenvectors of $A$.
 Grouping basis vectors with the same eigenvalue yields the stated orthogonal direct sum of eigenspaces.
+
 :::
 
-<1>2. Every
+:::
+
+::: pf-step
+
+Every
 \[
 x\in\mathbb R^n
 \]
@@ -67,7 +77,9 @@ x^TA^{2k}x
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The decomposition is given by step <1>1.
 Since
 \[
@@ -100,9 +112,14 @@ x^TA^{2k}x
 \lambda_j^{2k}\|x_j\|_2^2.
 \end{aligned}
 \]
+
 :::
 
-<1>3. For
+:::
+
+::: pf-step
+
+For
 \[
 x\ne0,
 \]
@@ -125,7 +142,9 @@ x^TA^{2k}x
 M(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 x^TA^{2k}x
@@ -175,15 +194,22 @@ x^TA^{2k}x
 \]
 Both scalar factors tend to $1$ as $k\to\infty$.
 Hence the squeeze theorem gives the stated limit.
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 x=0,
 \]
 the limit exists and equals $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $k$,
 \[
 x^TA^{2k}x=0.
@@ -195,24 +221,38 @@ x^TA^{2k}x
 \right)^{1/k}
 =0.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{X=\mathbb R^n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 proves existence of the limit for every nonzero $x$, and step <1>4 handles $x=0$.
 Thus every vector belongs to $X$.
+
 :::
 
-<1>6. Every nonzero limit value is one of the numbers
+:::
+
+::: pf-step
+
+Every nonzero limit value is one of the numbers
 \[
 \lambda_1^2,\ldots,\lambda_\ell^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $x\ne0$, step <1>3 says that the limit equals
 \[
 \max\left\{
@@ -224,15 +264,22 @@ Since the eigenvalues are real,
 |\lambda_j|^2=\lambda_j^2.
 \]
 The maximum of a finite nonempty subset of the numbers $\lambda_j^2$ is one of those numbers.
+
 :::
 
-<1>7. Every number
+:::
+
+::: pf-step
+
+Every number
 \[
 \lambda_j^2
 \]
 occurs as a limit.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose a nonzero eigenvector
 \[
 v\in E_j.
@@ -259,9 +306,14 @@ v^TA^{2k}v
 \lambda_j^2.
 \end{aligned}
 \]
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 L
@@ -272,16 +324,22 @@ L
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The value $0$ occurs at $x=0$ by step <1>4.
 Step <1>6 shows that no other values can occur.
 Step <1>7 shows that every listed square does occur.
 Repeated squares, such as those coming from eigenvalues $\lambda$ and $-\lambda$, appear only once because $L$ is a set.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 determines $X$, and step <1>8 determines $L$.
+
 :::
+
 :::

@@ -28,7 +28,6 @@ A \coloneqq \left\{ f \in L^3(\mathbb{R}) : \int_{\mathbb{R}} |f(x)|^2\,dx < \in
 is a Borel subset of $L^3(\mathbb{R})$.
 :::
 
-::: {.solution}
 For each $n\in\mathbb N$, define
 \[
 \phi_n:L^3(\mathbb R)\to[0,\infty),
@@ -36,14 +35,20 @@ For each $n\in\mathbb N$, define
 \phi_n(f)=\int_{-n}^{n}|f(x)|^2\,dx.
 \]
 
-<1>1. For every measurable $h$ on $[-n,n]$,
+::: pf
+
+::: pf-step
+
+For every measurable $h$ on $[-n,n]$,
 \[
 \|h\|_{L^2([-n,n])}
 \le
 (2n)^{1/6}\|h\|_{L^3([-n,n])}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply Hölder's inequality with exponents
 \[
 \frac32
@@ -64,9 +69,14 @@ Thus
 \|h\|_3^2(2n)^{1/3},
 \]
 and taking square roots gives the claim.
+
 :::
 
-<1>2. For every $f,g\in L^3(\mathbb R)$,
+:::
+
+::: pf-step
+
+For every $f,g\in L^3(\mathbb R)$,
 \[
 |\phi_n(f)-\phi_n(g)|
 \le
@@ -75,7 +85,9 @@ and taking square roots gives the claim.
 \bigl(\|f\|_3+\|g\|_3\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On $[-n,n]$,
 \[
 \bigl||f|^2-|g|^2\bigr|
@@ -104,15 +116,22 @@ The resulting factor is
 =(2n)^{1/3},
 \]
 which yields the displayed estimate.
+
 :::
 
-<1>3. Each functional
+:::
+
+::: pf-step
+
+Each functional
 \[
 \phi_n:L^3(\mathbb R)\to\mathbb R
 \]
 is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $f\in L^3(\mathbb R)$ and let $g\to f$ in $L^3$. Then
 \[
 \|g\|_3
@@ -127,9 +146,14 @@ remains bounded near $f$. Step <1>2 then implies
 \[
 |\phi_n(g)-\phi_n(f)|\to0.
 \]
+
 :::
 
-<1>4. For every $f\in L^3(\mathbb R)$,
+:::
+
+::: pf-step
+
+For every $f\in L^3(\mathbb R)$,
 \[
 \int_{\mathbb R}|f(x)|^2\,dx
 =
@@ -137,16 +161,23 @@ remains bounded near $f$. Step <1>2 then implies
 \]
 in $[0,\infty]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The nonnegative functions
 \[
 |f|^2\chi_{[-n,n]}
 \]
 increase pointwise to $|f|^2$. The monotone convergence theorem therefore
 gives the equality.
+
 :::
 
-<1>5. The set $A$ has the representation
+:::
+
+::: pf-step
+
+The set $A$ has the representation
 \[
 \boxed{
 A
@@ -156,7 +187,9 @@ A
 \{f\in L^3(\mathbb R):\phi_n(f)\le m\}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 \int_{\mathbb R}|f|^2<\infty,
@@ -179,11 +212,18 @@ for every $n$, then step <1>4 gives
 \le m<\infty.
 \]
 Thus $f\in A$.
+
 :::
 
-<1>6. The set $A$ is Borel in $L^3(\mathbb R)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $A$ is Borel in $L^3(\mathbb R)$.
+
+
+::: pf-proof
+
 By step <1>3, each set
 \[
 \{f:\phi_n(f)\le m\}
@@ -193,11 +233,15 @@ By step <1>3, each set
 is closed, hence Borel. Step <1>5 expresses $A$ using only countable
 intersections and a countable union of these Borel sets. Therefore $A$ is
 Borel.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

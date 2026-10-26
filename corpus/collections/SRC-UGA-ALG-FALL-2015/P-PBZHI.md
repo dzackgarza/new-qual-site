@@ -31,35 +31,58 @@ With $K/F$ as in (b), does an intermediate field $L$ necessarily exist satisfyin
 Give a proof or counterexample.
 :::
 
-::: {.solution}
-<1>1. Every finite group $G$ occurs as a Galois group of a field extension.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every finite group $G$ occurs as a Galois group of a field extension.
+
+
+::: pf-proof
+
 Let $n=|G|$. Cayley's theorem embeds $G$ into $S_n$ by its left regular action. By the stated assumption choose a finite Galois extension $M/F$ with $\operatorname{Gal}(M/F)\cong S_n$ and identify $G$ with the corresponding subgroup. Set $E=M^G$. The fundamental theorem of Galois theory gives $M/E$ finite Galois with
 \[
 \boxed{\operatorname{Gal}(M/E)\cong G}.
 \]
 Thus taking $K=M$ and the base field to be $E$ realizes $G$.
+
 :::
 
-<1>2. Every Galois extension $K/F$ of degree $12$ contains an intermediate field of degree $3$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every Galois extension $K/F$ of degree $12$ contains an intermediate field of degree $3$.
+
+
+::: pf-proof
+
 Put $\Gamma=\operatorname{Gal}(K/F)$, of order $12$. By Sylow's theorem $\Gamma$ contains a subgroup $H$ of order $4$. The fixed field $E=K^H$ is intermediate, and the fundamental theorem of Galois theory gives
 \[
 \boxed{[E:F]=[\Gamma:H]=12/4=3}.
 \]
+
 :::
 
-<1>3. An intermediate field of degree $2$ need not exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+An intermediate field of degree $2$ need not exist.
+
+
+::: pf-proof
+
 By step <1>1 there exists a finite Galois extension $K/F$ with $\operatorname{Gal}(K/F)\cong A_4$, of order $12$. Were there an intermediate field $L$ with $[L:F]=2$, the corresponding subgroup $\operatorname{Gal}(K/L)$ would have index $2$ and hence be normal, giving a surjective homomorphism $A_4\to C_2$. Every $3$-cycle maps to the identity because $C_2$ has no nonidentity element of order dividing $3$. But $3$-cycles generate $A_4$, so this homomorphism would be trivial, a contradiction.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
+
 :::
+
 :::

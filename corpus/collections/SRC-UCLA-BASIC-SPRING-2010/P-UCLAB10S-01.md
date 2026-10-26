@@ -24,8 +24,11 @@ Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\mathbb R^n$, and le
 Prove that $u_1+y_1,\ldots,u_n+y_n$ are linearly independent.
 :::
 
-::: {.solution}
-<1>1. Suppose
+::: pf
+
+::: pf-step
+
+Suppose
 \[
 \sum_{i=1}^n a_i(u_i+y_i)=0
 \]
@@ -34,22 +37,36 @@ for some scalars
 a_1,\ldots,a_n\in\mathbb R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 To prove linear independence, it suffices to show that every such linear relation has all coefficients zero.
+
 :::
 
-<1>2. The relation in step <1>1 implies
+:::
+
+::: pf-step
+
+The relation in step <1>1 implies
 \[
 \sum_{i=1}^n a_i u_i
 =
 -\sum_{i=1}^n a_i y_i.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Move the perturbation sum to the right-hand side.
+
 :::
 
-<1>3. Since $u_1,\ldots,u_n$ is orthonormal,
+:::
+
+::: pf-step
+
+Since $u_1,\ldots,u_n$ is orthonormal,
 \[
 \left\|
 \sum_{i=1}^n a_i u_i
@@ -58,7 +75,9 @@ Move the perturbation sum to the right-hand side.
 \sum_{i=1}^n a_i^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the squared norm:
 \[
 \left\|
@@ -72,9 +91,14 @@ Orthonormality gives
 \langle u_i,u_j\rangle=\delta_{ij},
 \]
 so only the diagonal terms remain.
+
 :::
 
-<1>4. By Cauchy--Schwarz,
+:::
+
+::: pf-step
+
+By Cauchy--Schwarz,
 \[
 \left\|
 \sum_{i=1}^n a_i y_i
@@ -88,7 +112,9 @@ so only the diagonal terms remain.
 \right)^{1/2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the triangle inequality,
 \[
 \left\|
@@ -103,9 +129,14 @@ Apply the scalar Cauchy--Schwarz inequality to the sequences
 \quad\text{and}\quad
 (\|y_i\|).
 \]
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 \[
 A=
 \left(
@@ -124,7 +155,9 @@ Then
 A\le A\eta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>4,
 \[
 A
@@ -139,14 +172,21 @@ A
 \le
 A\eta.
 \]
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \eta<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The hypothesis gives
 \[
 \sum_i\|y_i\|^2<1.
@@ -155,14 +195,21 @@ Taking square roots yields
 \[
 \eta<1.
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 A=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 A>0,
@@ -176,14 +223,21 @@ Hence
 \[
 A=0.
 \]
+
 :::
 
-<1>8. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 a_1=\cdots=a_n=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 A^2=\sum_{i=1}^n a_i^2.
@@ -193,20 +247,31 @@ Step <1>7 gives
 \sum_i a_i^2=0.
 \]
 Each term is nonnegative, so every coefficient vanishes.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{u_1+y_1,\ldots,u_n+y_n\text{ are linearly independent}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>8 shows that the only linear relation among these vectors is the trivial one.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

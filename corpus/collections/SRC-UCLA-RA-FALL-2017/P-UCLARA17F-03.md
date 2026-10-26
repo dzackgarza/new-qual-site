@@ -28,7 +28,6 @@ Suppose the sequence $\{F_n\}$ converges uniformly on $\mathbb R$. Show that for
 converge as $n\to\infty$.
 :::
 
-::: {.solution}
 Let
 \[
 M=\|f\|_\infty.
@@ -54,7 +53,11 @@ Fix
 
 Since \(F_n\) converges uniformly, it is uniformly Cauchy.
 
-<1>1. Choose \(N_0\) such that for every \(n\ge N_0\),
+::: pf
+
+::: pf-step
+
+Choose \(N_0\) such that for every \(n\ge N_0\),
 \[
 \boxed{
 \sup_{x\in\mathbb R}
@@ -64,17 +67,18 @@ Since \(F_n\) converges uniformly, it is uniformly Cauchy.
 \]
 where \(\delta>0\) will be chosen below.
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform convergence implies the uniform Cauchy property. Fix one sufficiently late index \(N_0\) and compare all later functions to \(F_{N_0}\).
+
 :::
 
-Choose
-\[
-\boxed{
-\delta<\frac{\varepsilon}{32M}}.
-\]
+:::
 
-<1>2. There exists \(R>0\) such that
+::: pf-step
+
+There exists \(R>0\) such that
 \[
 \boxed{
 F_{N_0}(-R)<\delta}
@@ -85,7 +89,9 @@ and
 1-F_{N_0}(R)<\delta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(F_{N_0}\) is the distribution function of a probability measure,
 \[
 F_{N_0}(x)\to0
@@ -96,15 +102,22 @@ and
 F_{N_0}(x)\to1
 \quad(x\to+\infty).
 \]
+
 :::
 
-<1>3. For every \(n\ge N_0\),
+:::
+
+::: pf-step
+
+For every \(n\ge N_0\),
 \[
 \boxed{
 F_n(-R)<2\delta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 F_n(-R)
@@ -113,15 +126,22 @@ F_{N_0}(-R)+\delta
 <
 2\delta.
 \]
+
 :::
 
-<1>4. For every \(n\ge N_0\),
+:::
+
+::: pf-step
+
+For every \(n\ge N_0\),
 \[
 \boxed{
 1-F_n(R)<2\delta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again by step <1>1,
 \[
 F_n(R)
@@ -136,9 +156,14 @@ so
 <
 2\delta.
 \]
+
 :::
 
-<1>5. Therefore, for every \(n\ge N_0\),
+:::
+
+::: pf-step
+
+Therefore, for every \(n\ge N_0\),
 \[
 \boxed{
 \mu_n((-\infty,-R])
@@ -148,7 +173,9 @@ so
 4\delta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \mu_n((-\infty,-R])
@@ -162,11 +189,14 @@ and
 1-F_n(R).
 \]
 Use steps <1>3--<1>4.
+
 :::
 
-Now approximate \(f\) on \([-R,R]\).
+:::
 
-<1>6. Since \(f\) is uniformly continuous on \([-R,R]\), there exists a partition
+::: pf-step
+
+Since \(f\) is uniformly continuous on \([-R,R]\), there exists a partition
 \[
 -R=x_0<x_1<\cdots<x_J=R
 \]
@@ -179,7 +209,9 @@ is less than
 \boxed{\eta=\frac{\varepsilon}{8}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Uniform continuity gives \(\rho>0\) such that
 \[
 |x-y|<\rho
@@ -187,42 +219,35 @@ Uniform continuity gives \(\rho>0\) such that
 |f(x)-f(y)|<\varepsilon/8
 \]
 for \(x,y\in[-R,R]\). Choose a partition of mesh \(<\rho\).
+
 :::
 
-For each \(j\), choose
-\[
-\xi_j\in[x_{j-1},x_j]
-\]
-and set
-\[
-c_j=f(\xi_j).
-\]
+:::
 
-Define the step function
-\[
-s(x)
-=
-\begin{cases}
-c_j,&x\in(x_{j-1},x_j],\ 1\le j\le J,\\
-0,&x\le-R\text{ or }x>R.
-\end{cases}
-\]
+::: pf-step
 
-<1>7. For every \(x\in(-R,R]\),
+For every \(x\in(-R,R]\),
 \[
 \boxed{
 |f(x)-s(x)|<\eta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x\in(x_{j-1},x_j],
 \]
 then both \(x\) and \(\xi_j\) lie in the same partition interval, whose oscillation is \(<\eta\) by step <1>6.
+
 :::
 
-<1>8. For every \(n\ge N_0\),
+:::
+
+::: pf-step
+
+For every \(n\ge N_0\),
 \[
 \boxed{
 \left|
@@ -234,7 +259,9 @@ then both \(x\) and \(\xi_j\) lie in the same partition interval, whose oscillat
 \eta+4M\delta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral of \(|f-s|\) into
 \[
 (-R,R]
@@ -252,9 +279,14 @@ Outside \((-R,R]\), one has \(s=0\) and
 |f|\le M.
 \]
 By step <1>5, the outside mass is \(<4\delta\), so the tail contribution is \(<4M\delta\).
+
 :::
 
-<1>9. By the choices of \(\eta\) and \(\delta\),
+:::
+
+::: pf-step
+
+By the choices of \(\eta\) and \(\delta\),
 \[
 \boxed{
 \eta+4M\delta
@@ -262,7 +294,9 @@ By step <1>5, the outside mass is \(<4\delta\), so the tail contribution is \(<4
 \frac{\varepsilon}{4}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 \eta=\frac{\varepsilon}{8}
@@ -276,18 +310,14 @@ and
 \frac{\varepsilon}{8}.
 \]
 Thus the sum is \(<\varepsilon/4\).
+
 :::
 
-For the step function,
-\[
-\int s\,d\mu_n
-=
-\sum_{j=1}^{J}
-c_j
-\mu_n((x_{j-1},x_j]).
-\]
+:::
 
-<1>10. One has
+::: pf-step
+
+One has
 \[
 \boxed{
 \mu_n((x_{j-1},x_j])
@@ -295,16 +325,23 @@ c_j
 F_n(x_j)-F_n(x_{j-1})}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of the distribution function,
 \[
 F_n(b)-F_n(a)
 =
 \mu_n((a,b]).
 \]
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int s\,d\mu_n
@@ -316,11 +353,18 @@ F_n(x_j)-F_n(x_{j-1})
 \bigr)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute step <1>10 into the step-function integral.
+
 :::
 
-<1>12. The sequence
+:::
+
+::: pf-step
+
+The sequence
 \[
 \left(
 \int s\,d\mu_n
@@ -328,7 +372,9 @@ Substitute step <1>10 into the step-function integral.
 \]
 is Cauchy.
 
-::: {.proof}
+
+::: pf-proof
+
 Since \(F_n\) converges uniformly, it is uniformly Cauchy. For \(n,m\),
 \[
 \begin{aligned}
@@ -351,9 +397,14 @@ Since \(F_n\) converges uniformly, it is uniformly Cauchy. For \(n,m\),
 \end{aligned}
 \]
 The final quantity tends to \(0\) as \(n,m\to\infty\).
+
 :::
 
-<1>13. Hence there exists \(N_1\ge N_0\) such that for \(n,m\ge N_1\),
+:::
+
+::: pf-step
+
+Hence there exists \(N_1\ge N_0\) such that for \(n,m\ge N_1\),
 \[
 \boxed{
 \left|
@@ -365,11 +416,18 @@ The final quantity tends to \(0\) as \(n,m\to\infty\).
 \frac{\varepsilon}{2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>12.
+
 :::
 
-<1>14. For \(n,m\ge N_1\),
+:::
+
+::: pf-step
+
+For \(n,m\ge N_1\),
 \[
 \left|
 \int f\,d\mu_n
@@ -380,7 +438,9 @@ Use step <1>12.
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the step-function integrals:
 \[
 \begin{aligned}
@@ -402,9 +462,14 @@ Insert the step-function integrals:
 \end{aligned}
 \]
 The first and third terms are \(<\varepsilon/4\) by steps <1>8--<1>9, and the middle term is \(<\varepsilon/2\) by step <1>13.
+
 :::
 
-<1>15. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{
 \left(
@@ -413,24 +478,37 @@ The first and third terms are \(<\varepsilon/4\) by steps <1>8--<1>9, and the mi
 \text{ is Cauchy in }\mathbb R}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>14 is the Cauchy criterion.
+
 :::
 
-<1>16. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{\mathbb R}f\,d\mu_n
 \text{ converges as }n\to\infty}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The real numbers are complete.
+
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>16 is the required conclusion.
+
 :::
+
 :::

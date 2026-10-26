@@ -26,25 +26,37 @@ F(x)=f(x)
 for every $x\in(0,1)$.
 :::
 
-::: {.solution}
-<1>1. The function \(f:(0,1)\to\mathbb R\) is uniformly continuous if for every \(\varepsilon>0\) there exists \(\delta>0\) such that for all \(x,y\in(0,1)\),
+::: pf
+
+::: pf-step
+
+The function \(f:(0,1)\to\mathbb R\) is uniformly continuous if for every \(\varepsilon>0\) there exists \(\delta>0\) such that for all \(x,y\in(0,1)\),
 \[
 |x-y|<\delta
 \quad\Longrightarrow\quad
 |f(x)-f(y)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of uniform continuity. The essential point is that the same \(\delta\) works simultaneously for all \(x,y\) in the domain.
+
 :::
 
-<1>2. If \(f\) is uniformly continuous, then the sequence
+:::
+
+::: pf-step
+
+If \(f\) is uniformly continuous, then the sequence
 \[
 \left(f\left(\frac1n\right)\right)_{n\ge2}
 \]
 is Cauchy in \(\mathbb R\).
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(\varepsilon>0\). By uniform continuity, choose \(\delta>0\) such that
 \[
 |x-y|<\delta
@@ -63,14 +75,21 @@ Hence
 \left|f\left(\frac1m\right)-f\left(\frac1n\right)\right|<\varepsilon.
 \]
 Thus the sequence is Cauchy.
+
 :::
 
-<1>3. There exists \(L_0\in\mathbb R\) such that
+:::
+
+::: pf-step
+
+There exists \(L_0\in\mathbb R\) such that
 \[
 \lim_{x\to0^+}f(x)=L_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 and completeness of \(\mathbb R\), there is
 \[
 L_0=\lim_{n\to\infty}f(1/n).
@@ -101,14 +120,21 @@ Therefore
 <\varepsilon.
 \]
 Thus \(f(x)\to L_0\) as \(x\to0^+\).
+
 :::
 
-<1>4. There exists \(L_1\in\mathbb R\) such that
+:::
+
+::: pf-step
+
+There exists \(L_1\in\mathbb R\) such that
 \[
 \lim_{x\to1^-}f(x)=L_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the argument of steps <1>2 and <1>3 to the sequence
 \[
 1-\frac1n.
@@ -118,9 +144,14 @@ Uniform continuity makes
 \left(f\left(1-\frac1n\right)\right)_{n\ge2}
 \]
 Cauchy, hence convergent in \(\mathbb R\); comparison with a sufficiently late term then proves that \(f(x)\) approaches the same limit as \(x\to1^-\).
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 F(x)=
@@ -132,7 +163,9 @@ L_1,&x=1.
 \]
 Then \(F:[0,1]\to\mathbb R\) is continuous.
 
-::: {.proof}
+
+::: pf-proof
+
 On \((0,1)\), the function \(F\) agrees with the continuous function \(f\). At \(0\), step <1>3 gives
 \[
 \lim_{x\to0^+}F(x)
@@ -148,11 +181,15 @@ so \(F\) is continuous at \(0\). Likewise, step <1>4 gives
 =F(1),
 \]
 so \(F\) is continuous at \(1\).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and step <1>5 constructs the continuous extension required in part (b).
+
 :::
+
 :::

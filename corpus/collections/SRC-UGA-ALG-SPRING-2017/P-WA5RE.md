@@ -32,40 +32,68 @@ Fully justify your answer.
 c. Show that the extension $E/F$ in (b) is a Galois extension.
 :::
 
-::: {.solution}
-<1>1. A splitting field of $f\in F[x]$ over $F$ is an extension $L/F$ in which $f$ factors into linear factors and which is generated over $F$ by all the roots of $f$ in $L$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A splitting field of $f\in F[x]$ over $F$ is an extension $L/F$ in which $f$ factors into linear factors and which is generated over $F$ by all the roots of $f$ in $L$.
+
+
+::: pf-proof
+
 These are the defining properties of a splitting field.
+
 :::
 
-Suppose henceforth that $|F|=q$ and $[E:F]=n>0$.
+:::
 
-<1>2. The polynomial
+::: pf-step
+
+The polynomial
 \[
 \boxed{g(x)=x^{q^n}-x\in F[x]}
 \]
 has as its distinct roots exactly the elements of $E$.
 
-::: {.proof}
+
+::: pf-proof
+
 As an $n$-dimensional vector space over the field of cardinality $q$, the field $E$ has $q^n$ elements. For each $a\in E^\times$, Lagrange's theorem applied to the finite group $E^\times$ of order $q^n-1$ gives $a^{q^n-1}=1$, hence $a^{q^n}=a$. The equality also holds for $a=0$. Therefore all $q^n$ elements of $E$ are roots of $g$. Since $g$ has degree $q^n$, these are all its roots, each of multiplicity one.
+
 :::
 
-<1>3. The extension $E/F$ is a splitting field of $g$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The extension $E/F$ is a splitting field of $g$.
+
+
+::: pf-proof
+
 By step <1>2, the polynomial $g$ splits completely over $E$, and its roots comprise every element of $E$. Consequently the subfield of $E$ generated over $F$ by these roots is $E$ itself. Step <1>1 therefore identifies $E$ as a splitting field.
+
 :::
 
-<1>4. The extension $E/F$ is Galois.
+:::
 
-::: {.proof}
+::: pf-step
+
+The extension $E/F$ is Galois.
+
+
+::: pf-proof
+
 By step <1>2, the polynomial $g$ has no repeated root and is therefore separable. Step <1>3 exhibits $E$ as its splitting field, so $E/F$ is a finite normal and separable extension. Hence $E/F$ is Galois.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), steps <1>2 and <1>3 answer part (b), and step <1>4 answers part (c).
+
 :::
+
 :::

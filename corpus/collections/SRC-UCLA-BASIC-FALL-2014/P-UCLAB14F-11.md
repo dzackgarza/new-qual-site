@@ -27,10 +27,15 @@ Prove that
 \]
 :::
 
-::: {.solution}
-<1>1. The matrix $A$ is diagonalizable over $\mathbb R$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $A$ is diagonalizable over $\mathbb R$.
+
+
+::: pf-proof
+
 The four eigenvalues
 \[
 \lambda_1,\lambda_2,\lambda_3,\lambda_4
@@ -49,9 +54,14 @@ A
 \operatorname{diag}
 (\lambda_1,\lambda_2,\lambda_3,\lambda_4).
 \]
+
 :::
 
-<1>2. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 A^2
 \sim
@@ -59,7 +69,9 @@ A^2
 (\lambda_1^2,\lambda_2^2,\lambda_3^2,\lambda_4^2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 A=SDS^{-1},
@@ -71,16 +83,23 @@ A^2
 SD^2S^{-1}.
 \]
 Apply this with the diagonal matrix $D$ from step <1>1.
+
 :::
 
-<1>3. The trace of $A^2$ is
+:::
+
+::: pf-step
+
+The trace of $A^2$ is
 \[
 \operatorname{Tr}(A^2)
 =
 \lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Trace is invariant under similarity.
 By step <1>2,
 \[
@@ -91,15 +110,22 @@ By step <1>2,
 (\lambda_1^2,\lambda_2^2,\lambda_3^2,\lambda_4^2),
 \]
 which is the sum of the diagonal entries.
+
 :::
 
-<1>4. The number
+:::
+
+::: pf-step
+
+The number
 \[
 \operatorname{Tr}(A^2)
 \]
 is an integer.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $A$ has integer entries.
 Therefore the product
 \[
@@ -111,9 +137,14 @@ In particular, every diagonal entry of $A^2$ is an integer, so their sum
 \operatorname{Tr}(A^2)
 \]
 is an integer.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2
@@ -121,13 +152,19 @@ is an integer.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>3 and <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

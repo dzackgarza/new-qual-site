@@ -30,14 +30,19 @@ f(z)=-\pi z\cot(\pi z).
 \]
 :::
 
-::: {.solution}
-<1>1. The point $z=0$ is a removable singularity of $f$, with
+::: pf
+
+::: pf-step
+
+The point $z=0$ is a removable singularity of $f$, with
 \[
 f(0)=-1
 \]
 after removal.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \sin(\pi z)
@@ -57,11 +62,18 @@ one has
 -1
 \]
 as $z\to0$.
+
 :::
 
-<1>2. The poles of $f$ are exactly the nonzero integers, and each is simple.
+:::
 
-::: {.proof}
+::: pf-step
+
+The poles of $f$ are exactly the nonzero integers, and each is simple.
+
+
+::: pf-proof
+
 Write
 \[
 f(z)
@@ -79,16 +91,23 @@ which is nonzero at every integer. At a nonzero integer $m$, the numerator
 -\pi m\cos(\pi m)
 \]
 is nonzero, so there is a simple pole. Step <1>1 shows that the singularity at $0$ cancels.
+
 :::
 
-<1>3. For every nonzero integer $m$,
+:::
+
+::: pf-step
+
+For every nonzero integer $m$,
 \[
 \boxed{
 \operatorname{Res}(f;m)=-m
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using the simple-zero quotient formula,
 \[
 \begin{aligned}
@@ -100,9 +119,14 @@ Using the simple-zero quotient formula,
 -m.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For $z\notin\mathbb Z$, the standard cotangent partial fraction expansion is
+:::
+
+::: pf-step
+
+For $z\notin\mathbb Z$, the standard cotangent partial fraction expansion is
 \[
 \pi\cot(\pi z)
 =
@@ -113,15 +137,22 @@ Using the simple-zero quotient formula,
 \]
 with locally uniform convergence away from the integers.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the classical Mittag--Leffler expansion of $\pi\cot(\pi z)$, obtained by pairing the terms at $k$ and $-k$ in
 \[
 \sum_{k\in\mathbb Z}\frac1{z-k}.
 \]
 The paired series converges locally uniformly off $\mathbb Z$ because its terms are $O(k^{-2})$ on compact sets.
+
 :::
 
-<1>5. For $|z|<1$,
+:::
+
+::: pf-step
+
+For $|z|<1$,
 \[
 f(z)
 =
@@ -131,7 +162,9 @@ f(z)
 \frac{2z^2}{k^2-z^2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity in step <1>4 by $-z$:
 \[
 \begin{aligned}
@@ -148,9 +181,14 @@ Multiply the identity in step <1>4 by $-z$:
 \frac{2z^2}{k^2-z^2}.
 \end{aligned}
 \]
+
 :::
 
-<1>6. Fix $0<r<1$. On $|z|\le r$, the double series
+:::
+
+::: pf-step
+
+Fix $0<r<1$. On $|z|\le r$, the double series
 \[
 \sum_{k=1}^{\infty}
 \sum_{n=1}^{\infty}
@@ -158,7 +196,9 @@ Multiply the identity in step <1>4 by $-z$:
 \]
 converges absolutely and uniformly.
 
-::: {.proof}
+
+::: pf-proof
+
 For $|z|\le r$,
 \[
 \begin{aligned}
@@ -186,9 +226,14 @@ the last sum is bounded by
 \infty.
 \]
 The Weierstrass M-test gives absolute uniform convergence.
+
 :::
 
-<1>7. For $|z|<1$,
+:::
+
+::: pf-step
+
+For $|z|<1$,
 \[
 f(z)
 =
@@ -201,7 +246,9 @@ f(z)
 \right)z^{2n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each fixed $k$ and $|z|<1$,
 \[
 \frac{2z^2}{k^2-z^2}
@@ -213,22 +260,33 @@ For each fixed $k$ and $|z|<1$,
 \frac{2z^{2n}}{k^{2n}}.
 \]
 Substitute this into step <1>5. Step <1>6 justifies interchanging the sums.
+
 :::
 
-<1>8. For every $n\ge1$, the coefficient of $z^{2n}$ in the Taylor expansion of $f$ at $0$ is
+:::
+
+::: pf-step
+
+For every $n\ge1$, the coefficient of $z^{2n}$ in the Taylor expansion of $f$ at $0$ is
 \[
 \boxed{
 \sum_{k=1}^{\infty}\frac{2}{k^{2n}}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The power series in step <1>7 converges on $|z|<1$ and is the Taylor expansion of $f$ there. Reading off the coefficient of $z^{2n}$ gives the stated value.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>2--<1>3 prove part (a), and step <1>8 proves part (b).
+
 :::
+
 :::

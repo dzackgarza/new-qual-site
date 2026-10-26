@@ -36,16 +36,21 @@ Prove that
 where all three derivatives are evaluated at $(0,0)$ in their corresponding variable pairs.
 :::
 
-::: {.solution}
 Write
 \[
 F_x,F_y,F_z
 \]
 for the three partial derivatives of $F$, evaluated at $(0,0,0)$ when no arguments are displayed.
 
-<1>1. The implicit function theorem defines each of the three local functions in the statement.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The implicit function theorem defines each of the three local functions in the statement.
+
+
+::: pf-proof
+
 Since
 \[
 F_x(0,0,0)\ne0,
@@ -75,9 +80,14 @@ gives
 z=z(x,y).
 \]
 All three functions are continuously differentiable near the origin.
+
 :::
 
-<1>2. Differentiating
+:::
+
+::: pf-step
+
+Differentiating
 \[
 F(x(y,z),y,z)=F(0,0,0)
 \]
@@ -90,7 +100,9 @@ F_y
 \]
 at the origin.
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the chain rule while holding $z$ fixed:
 \[
 \frac{\partial}{\partial y}
@@ -102,9 +114,14 @@ F_y(x(y,z),y,z).
 \]
 The right side of the level equation is constant, so its derivative is zero.
 Evaluating at $(y,z)=(0,0)$ gives the displayed identity.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \frac{\partial x}{\partial y}
@@ -114,12 +131,19 @@ Evaluating at $(y,z)=(0,0)$ gives the displayed identity.
 \]
 at the origin.
 
-::: {.proof}
+
+::: pf-proof
+
 Solve the identity in step <1>2 for $x_y$.
 The denominator is nonzero by hypothesis.
+
 :::
 
-<1>4. Differentiating
+:::
+
+::: pf-step
+
+Differentiating
 \[
 F(x,y(x,z),z)=F(0,0,0)
 \]
@@ -133,15 +157,22 @@ with respect to $z$ gives
 \]
 at the origin.
 
-::: {.proof}
+
+::: pf-proof
+
 Holding $x$ fixed and applying the chain rule gives
 \[
 F_y\,y_z+F_z=0.
 \]
 Since $F_y\ne0$, solve for $y_z$.
+
 :::
 
-<1>5. Differentiating
+:::
+
+::: pf-step
+
+Differentiating
 \[
 F(x,y,z(x,y))=F(0,0,0)
 \]
@@ -155,15 +186,22 @@ with respect to $x$ gives
 \]
 at the origin.
 
-::: {.proof}
+
+::: pf-proof
+
 Holding $y$ fixed and applying the chain rule gives
 \[
 F_x+F_z\,z_x=0.
 \]
 Since $F_z\ne0$, solve for $z_x$.
+
 :::
 
-<1>6. Multiplying the three identities gives
+:::
+
+::: pf-step
+
+Multiplying the three identities gives
 \[
 \boxed{
 \frac{\partial x}{\partial y}
@@ -174,7 +212,9 @@ Since $F_z\ne0$, solve for $z_x$.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3--<1>5,
 \[
 \begin{aligned}
@@ -188,11 +228,15 @@ x_y\,y_z\,z_x
 \end{aligned}
 \]
 All factors cancel because each of $F_x,F_y,F_z$ is nonzero.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required cyclic derivative identity.
+
 :::
+
 :::

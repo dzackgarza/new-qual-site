@@ -27,13 +27,18 @@ W_1^0\cap W_2^0=(W_1+W_2)^0.
 \]
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 W_1^0\cap W_2^0\subseteq (W_1+W_2)^0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(f\in W_1^0\cap W_2^0\). Then
 \[
 f(w_1)=0
@@ -51,14 +56,21 @@ Thus \(f\) vanishes on \(W_1+W_2\), so
 \[
 f\in(W_1+W_2)^0.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 (W_1+W_2)^0\subseteq W_1^0\cap W_2^0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(f\in(W_1+W_2)^0\). Since
 \[
 W_1\subseteq W_1+W_2
@@ -72,20 +84,31 @@ f\in W_1^0
 f\in W_2^0,
 \]
 so \(f\in W_1^0\cap W_2^0\).
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{W_1^0\cap W_2^0=(W_1+W_2)^0.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1 and <1>2 prove the two inclusions.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required equality.
+
 :::
+
 :::

@@ -35,58 +35,89 @@ Prove that $f$ is infinitely differentiable.
 \]
 :::
 
-::: {.solution}
-<1>1. For every integer $m\geq0$,
+::: pf
+
+::: pf-step
+
+For every integer $m\geq0$,
 \[
 \lim_{x\downarrow0}x^{-m}e^{-1/x}=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set $t=1/x$. Then $x\downarrow0$ means $t\to\infty$, and
 \[
 x^{-m}e^{-1/x}=t^me^{-t}.
 \]
 Repeated l'Hopital, or the power-series estimate $e^t\geq t^{m+1}/(m+1)!$, shows $t^me^{-t}\to0$.
+
 :::
 
-<1>2. For every $k\geq0$ there is a polynomial $P_k$ such that, for $x>0$,
+:::
+
+::: pf-step
+
+For every $k\geq0$ there is a polynomial $P_k$ such that, for $x>0$,
 \[
 f^{(k)}(x)=P_k(1/x)e^{-1/x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $k=0$, take $P_0=1$. If the formula holds for $k$, differentiation gives
 \[
 f^{(k+1)}(x)
 =\left[-x^{-2}P_k'(1/x)+x^{-2}P_k(1/x)\right]e^{-1/x},
 \]
 which again has the required form with a polynomial in $1/x$.
+
 :::
 
-<1>3. For every $k\geq0$,
+:::
+
+::: pf-step
+
+For every $k\geq0$,
 \[
 \lim_{x\downarrow0}f^{(k)}(x)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand the polynomial in step <1>2 into finitely many monomials $c_mx^{-m}$. Each monomial times $e^{-1/x}$ tends to zero by step <1>1.
+
 :::
 
-<1>4. The function $f$ is $C^\infty$ on $\mathbb R$, and
+:::
+
+::: pf-step
+
+The function $f$ is $C^\infty$ on $\mathbb R$, and
 \[
 f^{(k)}(0)=0
 \qquad(k\geq0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On $(-\infty,0)$ the function is identically zero and on $(0,\infty)$ it is smooth. Induct on $k$. Suppose $f^{(k)}$ extends continuously to $0$ with value $0$. Its derivative at zero is
 \[
 \lim_{h\to0}\frac{f^{(k)}(h)-f^{(k)}(0)}h.
 \]
 For $h<0$ the quotient is zero. For $h>0$, step <1>2 expresses it as a finite sum of terms $h^{-m}e^{-1/h}$, which tend to zero by step <1>1. Thus the derivative exists and equals zero; step <1>3 gives continuity of the next derivative. This proves the assertion for all $k$.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \psi(x)=f(1-|x|^2),
 \qquad x\in\mathbb R^n.
@@ -97,21 +128,35 @@ Then $\psi\in C^\infty(\mathbb R^n)$, $\psi\geq0$, and
 \]
 while $\psi(x)>0$ for $|x|<1$.
 
-::: {.proof}
+
+::: pf-proof
+
 The map $x\mapsto1-|x|^2$ is smooth, and step <1>4 says $f$ is smooth, so their composition is smooth. The defining formula for $f$ gives nonnegativity and the support statement immediately.
+
 :::
 
-<1>6. The number
+:::
+
+::: pf-step
+
+The number
 \[
 C=\int_{\mathbb R^n}\psi(x)\,dx
 \]
 is finite and strictly positive.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $\psi$ is continuous and supported in the compact unit ball, hence integrable with finite integral. It is nonnegative everywhere and strictly positive on the open unit ball, so its integral is positive.
+
 :::
 
-<1>7. Set
+:::
+
+::: pf-step
+
+Set
 \[
 \varphi(x)=C^{-1}\psi(x).
 \]
@@ -126,16 +171,22 @@ and
 \int_{\mathbb R^n}\varphi(x)\,dx=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All regularity, positivity, and support properties follow from step <1>5 because $C>0$. By the definition of $C$,
 \[
 \int\varphi=C^{-1}\int\psi=1.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>7 constructs the function required in part (b).
+
 :::
+
 :::

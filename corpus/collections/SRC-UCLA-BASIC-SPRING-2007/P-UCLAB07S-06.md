@@ -31,10 +31,15 @@ converge uniformly to a solution $y$.
 Show that if $Y$ is another solution satisfying $|Y(t)-y_0|\le C$ on $[0,T]$, then $Y(t)=y(t)$ for all $t\in[0,T]$.
 :::
 
-::: {.solution}
-<1>1. The solution $y$ is bounded on $[0,T]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The solution $y$ is bounded on $[0,T]$.
+
+
+::: pf-proof
+
 The Picard iterates
 \[
 y^n
@@ -57,15 +62,22 @@ Therefore
 1+M_N
 \]
 for every $t\in[0,T]$.
+
 :::
 
-<1>2. There exists $M>0$ such that
+:::
+
+::: pf-step
+
+There exists $M>0$ such that
 \[
 |Y(t)-y(t)|\le M
 \]
 for every $t\in[0,T]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 |Y(t)-y_0|\le C.
@@ -89,16 +101,23 @@ Take
 \[
 M=C+C'.
 \]
+
 :::
 
-<1>3. For every $t\in[0,T]$,
+:::
+
+::: pf-step
+
+For every $t\in[0,T]$,
 \[
 |Y(t)-y(t)|
 \le
 K\int_0^t|Y(s)-y(s)|\,ds.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both $Y$ and $y$ satisfy the integral equation:
 \[
 Y(t)
@@ -137,9 +156,14 @@ K\int_0^t
 \,ds.
 \end{aligned}
 \]
+
 :::
 
-<1>4. For every integer $n\ge0$ and every $t\in[0,T]$,
+:::
+
+::: pf-step
+
+For every integer $n\ge0$ and every $t\in[0,T]$,
 \[
 \boxed{
 |Y(t)-y(t)|
@@ -148,7 +172,9 @@ M\frac{(Kt)^n}{n!}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction on $n$.
 
 For $n=0$, the claim is
@@ -178,29 +204,43 @@ M\frac{(Kt)^{n+1}}{(n+1)!}.
 \end{aligned}
 \]
 Thus the induction closes.
+
 :::
 
-<1>5. For fixed $t\in[0,T]$,
+:::
+
+::: pf-step
+
+For fixed $t\in[0,T]$,
 \[
 \frac{(Kt)^n}{n!}
 \longrightarrow0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The exponential series
 \[
 \sum_{n=0}^{\infty}\frac{(Kt)^n}{n!}
 \]
 converges.
 Hence its terms tend to $0$.
+
 :::
 
-<1>6. For every $t\in[0,T]$,
+:::
+
+::: pf-step
+
+For every $t\in[0,T]$,
 \[
 Y(t)=y(t).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $t$.
 By step <1>4,
 \[
@@ -221,11 +261,15 @@ Thus
 Y(t)=y(t).
 \]
 Since $t$ was arbitrary, the equality holds on all of $[0,T]$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves uniqueness of the solution within the stated bounded class.
+
 :::
+
 :::

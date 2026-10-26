@@ -32,10 +32,13 @@ Prove any TWO of the following statements about (X, dist):
 (c) It is not separable. (d) It is not complete.
 :::
 
-::: {.solution}
 The proof establishes (b) and (d).
 
-<1>1. The metric satisfies the strong triangle inequality
+::: pf
+
+::: pf-step
+
+The metric satisfies the strong triangle inequality
 \[
 \operatorname{dist}(f,h)
 \le
@@ -45,7 +48,9 @@ The proof establishes (b) and (d).
 \}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 a=\operatorname{dist}(f,g),
@@ -93,11 +98,18 @@ Since this holds for every
 r>\max\{a,b\},
 \]
 the strong triangle inequality follows.
+
 :::
 
-<1>2. Every open ball in $(X,\operatorname{dist})$ is also closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every open ball in $(X,\operatorname{dist})$ is also closed.
+
+
+::: pf-proof
+
 Fix
 \[
 f\in X
@@ -148,11 +160,18 @@ B(g,\rho)
 X\setminus U.
 \]
 So the complement of $U$ is open, and $U$ is closed.
+
 :::
 
-<1>3. The space $X$ is not connected.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $X$ is not connected.
+
+
+::: pf-proof
+
 Let
 \[
 f_0(t)=0.
@@ -193,9 +212,14 @@ g\notin U.
 \]
 Thus $U$ is a nonempty proper clopen subset of $X$, and therefore $X$ is not connected.
 This proves (b).
+
 :::
 
-<1>4. Define, for $0<t\le1$,
+:::
+
+::: pf-step
+
+Define, for $0<t\le1$,
 \[
 h(t)
 =
@@ -212,7 +236,9 @@ h(1)=0,
 \]
 and $h$ has no limit as $t\downarrow0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 -1\le\sin(1/t)\le1,
@@ -247,9 +273,14 @@ tends to $1$, while
 \]
 oscillates between values arbitrarily close to $0$ and $1$.
 Hence $h$ has no limit at $0$.
+
 :::
 
-<1>5. For each $n\ge1$, define
+:::
+
+::: pf-step
+
+For each $n\ge1$, define
 \[
 f_n(t)
 =
@@ -263,7 +294,9 @@ Then
 f_n\in X.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two formulas agree at
 \[
 t=1/n,
@@ -275,16 +308,23 @@ Also
 f_n(1)=h(1)=0.
 \]
 Thus $f_n\in X$.
+
 :::
 
-<1>6. If $m\ge n$, then
+:::
+
+::: pf-step
+
+If $m\ge n$, then
 \[
 \operatorname{dist}(f_m,f_n)
 \le
 \frac1n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 \[
 t\ge\frac1n,
@@ -303,11 +343,18 @@ Hence they agree on
 \left[\frac1n,1\right],
 \]
 so the defining infimum of the distance is at most $1/n$.
+
 :::
 
-<1>7. The sequence $(f_n)$ is Cauchy in $(X,\operatorname{dist})$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(f_n)$ is Cauchy in $(X,\operatorname{dist})$.
+
+
+::: pf-proof
+
 Let $\varepsilon>0$.
 Choose $N$ with
 \[
@@ -328,9 +375,14 @@ Then step <1>6 gives
 <
 \varepsilon.
 \]
+
 :::
 
-<1>8. If $(f_n)$ converged in $X$ to some $f$, then
+:::
+
+::: pf-step
+
+If $(f_n)$ converged in $X$ to some $f$, then
 \[
 f(t)=h(t)
 \]
@@ -339,7 +391,9 @@ for every
 t>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $t>0$.
 Choose $N$ so large that
 \[
@@ -383,11 +437,18 @@ Therefore
 \[
 f(t)=h(t).
 \]
+
 :::
 
-<1>9. The Cauchy sequence $(f_n)$ has no limit in $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Cauchy sequence $(f_n)$ has no limit in $X$.
+
+
+::: pf-proof
+
 If it converged to some
 \[
 f\in X,
@@ -404,18 +465,29 @@ Since $f$ is continuous on $[0,1]$, the limit
 would exist and equal $f(0)$.
 But step <1>4 says $h(t)$ has no limit as $t\downarrow0$.
 This is a contradiction.
+
 :::
 
-<1>10. Therefore $(X,\operatorname{dist})$ is not complete.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $(X,\operatorname{dist})$ is not complete.
+
+
+::: pf-proof
+
 Step <1>7 gives a Cauchy sequence in $X$, and step <1>9 shows that it does not converge to any point of $X$.
 This proves (d).
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves (b), and step <1>10 proves (d), as requested.
+
 :::
+
 :::

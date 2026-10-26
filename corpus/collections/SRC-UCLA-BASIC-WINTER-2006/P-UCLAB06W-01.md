@@ -24,19 +24,29 @@ Show that for each $\varepsilon>0$ there exists a sequence of intervals $(I_n)$ 
 \]
 :::
 
-::: {.solution}
 Fix $\varepsilon>0$.
 
-<1>1. Enumerate the rational numbers as
+::: pf
+
+::: pf-step
+
+Enumerate the rational numbers as
 $$
 \QQ=\{q_1,q_2,\ldots\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set $\QQ$ is countable, so such an enumeration exists.
+
 :::
 
-<1>2. For each $n\ge1$, define
+:::
+
+::: pf-step
+
+For each $n\ge1$, define
 $$
 I_n=
 \left(
@@ -49,25 +59,41 @@ $$
 |I_n|=\frac{\varepsilon}{2^{n+2}}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The interval has radius $\varepsilon/2^{n+3}$, so its length is twice that number.
+
 :::
 
-<1>3. The intervals cover $\QQ$:
+:::
+
+::: pf-step
+
+The intervals cover $\QQ$:
 $$
 \QQ\subseteq\bigcup_{n=1}^{\infty}I_n.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For every $n$, the center $q_n$ belongs to $I_n$. Hence every rational number belongs to at least one interval in the union.
+
 :::
 
-<1>4. Their total length satisfies
+:::
+
+::: pf-step
+
+Their total length satisfies
 $$
 \sum_{n=1}^{\infty}|I_n|<\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 \sum_{n=1}^{\infty}|I_n|
@@ -77,11 +103,15 @@ $$
 \frac{\varepsilon}{4}
 <\varepsilon.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>3 and <1>4 give exactly the two required properties.
+
 :::
+
 :::

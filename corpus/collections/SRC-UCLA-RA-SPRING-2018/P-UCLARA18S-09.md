@@ -27,7 +27,6 @@ Problem 9. Consider the formal product
 (b) Show that the resulting function extends from this interval to an entire function of $z\in\mathbb C$.
 :::
 
-::: {.solution}
 For \(n\ge1\), define the entire function
 \[
 q_n(z)
@@ -41,7 +40,11 @@ e^{z a_n}
 a_n=\log\left(1+\frac1n\right).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \left|
@@ -51,7 +54,9 @@ a_n-\frac1n
 \frac1{2n^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 \log(1+x)
@@ -82,9 +87,14 @@ The integrand is nonnegative and at most \(t\), so
 =
 \frac1{2n^2}.
 \]
+
 :::
 
-<1>2. Fix \(R>0\). There is a constant \(C_R\) such that for every
+:::
+
+::: pf-step
+
+Fix \(R>0\). There is a constant \(C_R\) such that for every
 \[
 |z|\le R
 \]
@@ -96,7 +106,9 @@ and all sufficiently large \(n\),
 \frac{C_R}{n^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 w=za_n.
@@ -158,9 +170,14 @@ e^{za_n}-1
 \]
 The first term is \(O_R(n^{-2})\), and the second is also
 \(O_R(n^{-2})\). This proves the bound.
+
 :::
 
-<1>3. For every compact set \(K\subset\mathbb C\),
+:::
+
+::: pf-step
+
+For every compact set \(K\subset\mathbb C\),
 \[
 \boxed{
 \sum_{n=1}^{\infty}
@@ -168,7 +185,9 @@ The first term is \(O_R(n^{-2})\), and the second is also
 <\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose \(R\) with
 \[
 K\subseteq\{z:|z|\le R\}.
@@ -178,9 +197,14 @@ Step <1>2 bounds the tail by a constant multiple of
 \sum_{n=1}^{\infty}\frac1{n^2},
 \]
 and the finitely many initial terms cause no problem.
+
 :::
 
-<1>4. The partial products
+:::
+
+::: pf-step
+
+The partial products
 \[
 P_N(z)
 =
@@ -188,7 +212,9 @@ P_N(z)
 \]
 converge uniformly on every compact subset of \(\mathbb C\).
 
-::: {.proof}
+
+::: pf-proof
+
 Fix a compact \(K\). Put
 \[
 u_n(z)=q_n(z)-1.
@@ -223,9 +249,14 @@ is uniformly bounded on \(K\), since
 \right).
 \]
 Hence \((P_N)\) is uniformly Cauchy on \(K\).
+
 :::
 
-<1>5. The locally uniform limit
+:::
+
+::: pf-step
+
+The locally uniform limit
 \[
 \boxed{
 P(z)
@@ -236,15 +267,24 @@ P(z)
 \]
 is entire on \(\mathbb C\).
 
-::: {.proof}
+
+::: pf-proof
+
 Each finite product \(P_N\) is entire because every \(q_n\) is entire.
 Step <1>4 gives locally uniform convergence on \(\mathbb C\). By the
 Weierstrass theorem, the locally uniform limit \(P\) is entire.
+
 :::
 
-<1>6. Fix \(z<0\). Then every factor \(q_n(z)\) is positive.
+:::
 
-::: {.proof}
+::: pf-step
+
+Fix \(z<0\). Then every factor \(q_n(z)\) is positive.
+
+
+::: pf-proof
+
 For real \(z<0\),
 \[
 \left(1+\frac1n\right)^z>0
@@ -254,12 +294,19 @@ and
 1-\frac zn>1>0.
 \]
 Thus their product is positive.
+
 :::
 
-<1>7. For each fixed \(z<0\), the infinite product converges to a strictly
+:::
+
+::: pf-step
+
+For each fixed \(z<0\), the infinite product converges to a strictly
 positive finite number.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2, applied to the compact singleton \(\{z\}\), gives
 \[
 \sum_{n=1}^{\infty}|q_n(z)-1|<\infty.
@@ -288,18 +335,32 @@ converges, and therefore
 \right)
 \]
 converges to a positive finite number.
+
 :::
 
-<1>8. Part (a) holds for every \(z\in(-\infty,0)\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) holds for every \(z\in(-\infty,0)\).
+
+
+::: pf-proof
+
 This is exactly step <1>7.
+
 :::
 
-<1>9. The function obtained in part (a) extends to the entire function \(P\)
+:::
+
+::: pf-step
+
+The function obtained in part (a) extends to the entire function \(P\)
 from step <1>5.
 
-::: {.proof}
+
+::: pf-proof
+
 For every negative real \(z\), both constructions are limits of the same
 partial products
 \[
@@ -307,11 +368,15 @@ P_N(z).
 \]
 Hence the entire function \(P\) restricts on \((-\infty,0)\) to the
 convergent product from part (a).
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves part (a), and steps <1>5 and <1>9 prove part (b).
+
 :::
+
 :::

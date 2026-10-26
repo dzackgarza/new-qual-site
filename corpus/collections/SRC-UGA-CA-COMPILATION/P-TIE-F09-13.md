@@ -37,38 +37,57 @@ They are a separate problem, carried by the card for question 1.
 The source prints this problem three times, as Fall 2009, question 13, and Fall 2011, questions 13 and 14.
 :::
 
-::: {.solution}
-<1>1. There exist $a\in\CC$ and $r>0$ such that
+::: pf
+
+::: pf-step
+
+There exist $a\in\CC$ and $r>0$ such that
 $$
 B(a,r)\subseteq\Omega.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The set $\Omega$ is open and nonempty. Choose $a\in\Omega$. By openness there is $r>0$ such
 that the disk $B(a,r)$ is contained in $\Omega$.
+
 :::
 
-<1>2. For every $z\in\CC$,
+:::
+
+::: pf-step
+
+For every $z\in\CC$,
 $$
 |f(z)-a|\ge r.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 $$
 f(\CC)\subseteq\CC\setminus\Omega.
 $$
 Since $B(a,r)\subseteq\Omega$ by step <1>1, no value $f(z)$ lies in $B(a,r)$. Thus its distance
 from $a$ is at least $r$.
+
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+
+The function
 $$
 g(z)=\frac1{f(z)-a}
 $$
 is entire and bounded.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that $f(z)-a$ never vanishes, so $g$ is entire. The same estimate gives
 $$
 |g(z)|
@@ -76,22 +95,33 @@ $$
 \frac1r
 $$
 for all $z\in\CC$.
+
 :::
 
-<1>4. The function $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant.
+
+
+::: pf-proof
+
 By Liouville's theorem, the bounded entire function $g$ from step <1>3 is constant. Since
 $g$ never vanishes,
 $$
 f(z)=a+\frac1{g(z)}
 $$
 is constant as well.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

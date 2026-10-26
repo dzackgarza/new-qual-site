@@ -24,30 +24,42 @@ Show that there exists a unique linear transformation $T^t:W\to V$ such that
 for all $v\in V$ and $w\in W$, where $\langle\ ,\ \rangle_X$ denotes the inner product on $X=V$ or $W$.
 :::
 
-::: {.solution}
 Choose an orthonormal basis
 $$
 e_1,\ldots,e_n
 $$
 of $V$.
 
-<1>1. For $w\in W$, define
+::: pf
+
+::: pf-step
+
+For $w\in W$, define
 $$
 T^t(w)=\sum_{j=1}^n\langle T(e_j),w\rangle_W e_j.
 $$
 Then $T^t(w)\in V$ is well defined.
 
-::: {.proof}
+
+::: pf-proof
+
 The displayed sum is a finite linear combination of basis vectors of $V$, so it defines a vector of $V$ for each $w\in W$.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 $$
 T^t:W\to V
 $$
 is linear.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $w_1,w_2\in W$ and $a,b\in\RR$. By linearity of the real inner product in either variable,
 $$
 \begin{aligned}
@@ -59,16 +71,23 @@ T^t(aw_1+bw_2)
 &=aT^t(w_1)+bT^t(w_2).
 \end{aligned}
 $$
+
 :::
 
-<1>3. For every $v\in V$ and $w\in W$,
+:::
+
+::: pf-step
+
+For every $v\in V$ and $w\in W$,
 $$
 \langle T(v),w\rangle_W
 =
 \langle v,T^t(w)\rangle_V.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 v=\sum_{j=1}^n v_j e_j.
@@ -93,11 +112,18 @@ $$
 \end{aligned}
 $$
 Thus the two sides are equal.
+
 :::
 
-<1>4. The map satisfying the adjoint identity is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map satisfying the adjoint identity is unique.
+
+
+::: pf-proof
+
 Suppose $A,B:W\to V$ both satisfy
 $$
 \langle T(v),w\rangle_W
@@ -119,11 +145,15 @@ $$
 \norm{A(w)-B(w)}^2=0,
 $$
 so $A(w)=B(w)$. Since $w$ was arbitrary, $A=B$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 construct a linear map $T^t$ satisfying the required identity, and step <1>4 proves uniqueness.
+
 :::
+
 :::

@@ -29,19 +29,24 @@ Prove that
 Here the rank of a linear transformation is the dimension of its image.
 :::
 
-::: {.solution}
 Let
 $$
 R=\operatorname{im}T\subseteq W.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 \operatorname{rank}(S\circ T)
 =\dim S(R).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 $$
 \operatorname{im}(S\circ T)
@@ -49,9 +54,14 @@ $$
 =S(R).
 $$
 Taking dimensions gives the equality.
+
 :::
 
-<1>2. The restriction
+:::
+
+::: pf-step
+
+The restriction
 $$
 S|_R:R\to X
 $$
@@ -61,15 +71,22 @@ $$
 =\dim R-\dim(R\cap\ker S).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The image of $S|_R$ is $S(R)$, and its kernel is
 $$
 \ker(S|_R)=R\cap\ker S.
 $$
 Applying the rank-nullity theorem to $S|_R$ gives the formula.
+
 :::
 
-<1>3. The lower bound
+:::
+
+::: pf-step
+
+The lower bound
 $$
 \operatorname{rank}(S\circ T)
 \ge
@@ -77,7 +94,9 @@ $$
 $$
 holds.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2,
 $$
 \operatorname{rank}(S\circ T)
@@ -104,16 +123,23 @@ $$
 \dim W-\operatorname{rank}(S).
 $$
 Substitution yields the required lower bound.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \operatorname{rank}(S\circ T)
 \le
 \operatorname{rank}(T).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \operatorname{rank}(S\circ T)=\dim S(R).
@@ -122,16 +148,23 @@ The image of a linear map on the finite-dimensional space $R$ has dimension at m
 $$
 \dim S(R)\le\dim R=\operatorname{rank}(T).
 $$
+
 :::
 
-<1>5. One also has
+:::
+
+::: pf-step
+
+One also has
 $$
 \operatorname{rank}(S\circ T)
 \le
 \operatorname{rank}(S).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 $$
 \operatorname{im}(S\circ T)
@@ -140,9 +173,14 @@ $$
 S(W)=\operatorname{im}S,
 $$
 taking dimensions gives the inequality.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \operatorname{rank}(S\circ T)
 \le
@@ -151,13 +189,19 @@ $$
 \max\{\operatorname{rank}(T),\operatorname{rank}(S)\}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The first inequality is the conjunction of steps <1>4 and <1>5. The second is immediate for two real numbers.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves the required lower bound, and step <1>6 proves the requested upper bound.
+
 :::
+
 :::

@@ -37,7 +37,6 @@ F\bigl(\{(x,y):x^2+y^2<1\}\bigr)
 Hint: if $U=\{(x,y):x^2+y^2<1\}$, prove that $F(U)\cap U$ is open and closed in $U$.
 :::
 
-::: {.solution}
 Let
 \[
 U=\{p\in\mathbb R^2:\|p\|<1\}
@@ -47,9 +46,15 @@ and define
 Y=F(U)\cap U.
 \]
 
-<1>1. The set $Y$ is nonempty.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $Y$ is nonempty.
+
+
+::: pf-proof
+
 By hypothesis,
 \[
 F(0,0)=(0,0).
@@ -62,11 +67,18 @@ one has
 \[
 (0,0)\in F(U)\cap U=Y.
 \]
+
 :::
 
-<1>2. The set $F(U)$ is open in $\mathbb R^2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $F(U)$ is open in $\mathbb R^2$.
+
+
+::: pf-proof
+
 Fix
 \[
 p\in U.
@@ -92,20 +104,32 @@ F(U)
 \bigcup_{p\in U}F(N_p),
 \]
 the set $F(U)$ is open.
+
 :::
 
-<1>3. The set $Y$ is open in the subspace $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $Y$ is open in the subspace $U$.
+
+
+::: pf-proof
+
 By step <1>2, $F(U)$ is open in $\mathbb R^2$.
 Therefore
 \[
 Y=F(U)\cap U
 \]
 is open in the subspace topology on $U$.
+
 :::
 
-<1>4. Let $(y_n)$ be a sequence in $Y$ converging to a point
+:::
+
+::: pf-step
+
+Let $(y_n)$ be a sequence in $Y$ converging to a point
 \[
 y\in U.
 \]
@@ -118,11 +142,18 @@ such that
 F(x_n)=y_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every $y_n$ belongs to $F(U)$ by definition of $Y$, so such an $x_n$ exists.
+
 :::
 
-<1>5. The sequence $(x_n)$ has a convergent subsequence
+:::
+
+::: pf-step
+
+The sequence $(x_n)$ has a convergent subsequence
 \[
 x_{n_k}\to x
 \]
@@ -131,7 +162,9 @@ with
 x\in\overline U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The closed unit disk
 \[
 \overline U
@@ -141,14 +174,21 @@ The closed unit disk
 is compact.
 Every $x_n$ belongs to $U\subseteq\overline U$.
 Hence Bolzano--Weierstrass gives a convergent subsequence with limit in $\overline U$.
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 F(x)=y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The map $F$ is continuous because its derivative matrix is continuous.
 Therefore
 \[
@@ -162,11 +202,18 @@ F\!\left(\lim_{k\to\infty}x_{n_k}\right)
 =
 y.
 \]
+
 :::
 
-<1>7. The limit point $x$ lies in $U$, not on $\partial U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The limit point $x$ lies in $U$, not on $\partial U$.
+
+
+::: pf-proof
+
 Suppose
 \[
 \|x\|=1.
@@ -193,11 +240,18 @@ Thus
 \|x\|<1,
 \]
 so $x\in U$.
+
 :::
 
-<1>8. The set $Y$ is closed in $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $Y$ is closed in $U$.
+
+
+::: pf-proof
+
 Let
 \[
 y_n\in Y
@@ -219,28 +273,42 @@ Hence
 y\in F(U)\cap U=Y.
 \]
 Thus $Y$ contains every limit in $U$ of sequences from $Y$, so it is closed in the metric space $U$.
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 \[
 Y=U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The open unit disk $U$ is connected.
 By steps <1>1, <1>3, and <1>8, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$.
 Connectedness therefore forces
 \[
 Y=U.
 \]
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{F(U)\supseteq U}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 Y=F(U)\cap U,
@@ -253,11 +321,15 @@ This is equivalent to
 \[
 U\subseteq F(U).
 \]
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

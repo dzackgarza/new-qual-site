@@ -23,13 +23,16 @@ Let $(a_n)$ be a non-increasing sequence of positive real numbers with $\sum_{n=
 \]
 :::
 
-::: {.solution}
 For each $n\ge2$, set
 \[
 m_n=\left\lfloor\frac n2\right\rfloor.
 \]
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 k=m_n+1,\ldots,n,
 \]
@@ -38,7 +41,9 @@ one has
 a_k\ge a_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sequence $(a_n)$ is non-increasing.
 Since
 \[
@@ -48,30 +53,44 @@ one has
 \[
 a_k\ge a_n.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (n-m_n)a_n
 \le
 \sum_{k=m_n+1}^{n}a_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 There are exactly
 \[
 n-m_n
 \]
 terms in the sum.
 By step <1>1, each of them is at least $a_n$.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 n-m_n\ge\frac n2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 m_n=\left\lfloor\frac n2\right\rfloor
@@ -84,16 +103,23 @@ n-m_n
 \ge
 \frac n2.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 0\le n a_n
 \le
 2\sum_{k=m_n+1}^{n}a_k.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>2--<1>3,
 \[
 \frac n2 a_n
@@ -103,11 +129,18 @@ By steps <1>2--<1>3,
 \sum_{k=m_n+1}^na_k.
 \]
 Multiply by $2$.
+
 :::
 
-<1>5. The right-hand side in step <1>4 tends to $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The right-hand side in step <1>4 tends to $0$.
+
+
+::: pf-proof
+
 Since
 \[
 \sum_{k=1}^{\infty}a_k
@@ -131,14 +164,21 @@ one has
 \sum_{k=m_n+1}^{\infty}a_k
 \longrightarrow0.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\lim_{n\to\infty}na_n=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 0\le na_n
@@ -147,11 +187,15 @@ By step <1>4,
 \]
 The right side tends to zero by step <1>5.
 The squeeze theorem gives the conclusion.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required limit.
+
 :::
+
 :::

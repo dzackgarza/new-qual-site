@@ -24,7 +24,6 @@ Suppose $f:\mathbb R\to\mathbb R$ is bounded and Lebesgue measurable, and
 Show that $f$ is almost everywhere constant on $[0,1]$.
 :::
 
-::: {.solution}
 Define
 \[
 F(x)
@@ -32,7 +31,11 @@ F(x)
 \int_0^x f(t)\,dt.
 \]
 
-<1>1. There is a measurable set $E\subset[0,1]$ of full measure such that for every $x\in E$,
+::: pf
+
+::: pf-step
+
+There is a measurable set $E\subset[0,1]$ of full measure such that for every $x\in E$,
 \[
 \lim_{h\to0^+}
 \frac{F(x+h)-F(x)}{h}
@@ -40,7 +43,9 @@ F(x)
 f(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is bounded, it belongs to $L^1_{\mathrm{loc}}(\mathbb R)$. The Lebesgue differentiation theorem therefore gives
 \[
 \lim_{h\to0^+}
@@ -56,14 +61,21 @@ F(x+h)-F(x)
 \int_x^{x+h}f(t)\,dt,
 \]
 the displayed limit follows on a full-measure subset $E$ of $[0,1]$.
+
 :::
 
-<1>2. If $a,b\in E$ with $a<b$, then
+:::
+
+::: pf-step
+
+If $a,b\in E$ with $a<b$, then
 \[
 f(a)=f(b).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $0<h<b-a$, one has
 \[
 \begin{aligned}
@@ -106,15 +118,22 @@ The last quantity tends to $0$ by hypothesis. By step <1>1, the left-hand side t
 |f(a)-f(b)|.
 \]
 Therefore $f(a)=f(b)$.
+
 :::
 
-<1>3. There is a constant $c\in\mathbb R$ such that
+:::
+
+::: pf-step
+
+There is a constant $c\in\mathbb R$ such that
 \[
 f(x)=c
 \]
 for almost every $x\in[0,1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The set $E$ from step <1>1 has full measure and is therefore nonempty. Fix $a_0\in E$ and set
 \[
 c=f(a_0).
@@ -124,11 +143,15 @@ For any $x\in E$, step <1>2 applied to the ordered pair $a_0,x$ gives
 f(x)=c.
 \]
 Thus $f=c$ on the full-measure set $E$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the desired almost-everywhere constancy.
+
 :::
+
 :::

@@ -22,13 +22,16 @@ Assume that for every $y\in\mathbb R$, the preimage $f^{-1}(\{y\})$ is closed.
 Prove that $f$ is continuous.
 :::
 
-::: {.solution}
 Fix
 \[
 x_0\in[0,1].
 \]
 
-<1>1. Suppose, for contradiction, that $f$ is not continuous at $x_0$.
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that $f$ is not continuous at $x_0$.
 Then there exist
 \[
 \varepsilon>0
@@ -43,11 +46,18 @@ such that
 \]
 for every $n$.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the sequential criterion for failure of continuity in a metric space.
+
 :::
 
-<1>2. After passing to a subsequence, one of the following alternatives holds for every $n$:
+:::
+
+::: pf-step
+
+After passing to a subsequence, one of the following alternatives holds for every $n$:
 \[
 f(x_n)\ge f(x_0)+\varepsilon,
 \]
@@ -56,7 +66,9 @@ or
 f(x_n)\le f(x_0)-\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each $n$, the inequality
 \[
 |f(x_n)-f(x_0)|\ge\varepsilon
@@ -64,9 +76,14 @@ For each $n$, the inequality
 places $f(x_n)$ in one of the two displayed regions.
 At least one of these two alternatives occurs infinitely often.
 Pass to the corresponding subsequence.
+
 :::
 
-<1>3. Assume first that
+:::
+
+::: pf-step
+
+Assume first that
 \[
 f(x_n)\ge f(x_0)+\varepsilon
 \]
@@ -79,7 +96,9 @@ Then for every $n$ there exists a point $z_n$ strictly between $x_0$ and $x_n$ s
 f(z_n)=y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The number $y$ lies strictly between
 \[
 f(x_0)
@@ -99,11 +118,18 @@ f(x_0)+\varepsilon
 f(x_n).
 \]
 Apply the intermediate value property on the interval with endpoints $x_0$ and $x_n$.
+
 :::
 
-<1>4. The sequence $(z_n)$ converges to $x_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(z_n)$ converges to $x_0$.
+
+
+::: pf-proof
+
 Because $z_n$ lies between $x_0$ and $x_n$,
 \[
 |z_n-x_0|
@@ -119,9 +145,14 @@ Hence
 \[
 z_n\to x_0.
 \]
+
 :::
 
-<1>5. The closedness of the fiber
+:::
+
+::: pf-step
+
+The closedness of the fiber
 \[
 f^{-1}(\{y\})
 \]
@@ -131,7 +162,9 @@ f(x_0)=y,
 \]
 a contradiction.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3,
 \[
 z_n\in f^{-1}(\{y\})
@@ -154,15 +187,22 @@ But
 y=f(x_0)+\frac{\varepsilon}{2},
 \]
 which is impossible.
+
 :::
 
-<1>6. The alternative
+:::
+
+::: pf-step
+
+The alternative
 \[
 f(x_n)\le f(x_0)-\varepsilon
 \]
 also leads to a contradiction.
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 y=f(x_0)-\frac{\varepsilon}{2}.
@@ -187,28 +227,46 @@ f(x_0)=y
 f(x_0)-\frac{\varepsilon}{2},
 \]
 a contradiction.
+
 :::
 
-<1>7. Therefore $f$ is continuous at $x_0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $f$ is continuous at $x_0$.
+
+
+::: pf-proof
+
 The assumption of discontinuity in step <1>1 leads, after step <1>2, to one of the two alternatives.
 Steps <1>3--<1>5 rule out the first, and step <1>6 rules out the second.
 Hence $f$ must be continuous at $x_0$.
+
 :::
 
-<1>8. Since $x_0$ was arbitrary,
+:::
+
+::: pf-step
+
+Since $x_0$ was arbitrary,
 \[
 \boxed{f\text{ is continuous on }[0,1].}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 applies at every point of the domain, including the endpoints because the argument uses only points of $[0,1]$ and one-sided sequences there.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

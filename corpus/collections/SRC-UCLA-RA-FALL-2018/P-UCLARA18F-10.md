@@ -23,10 +23,15 @@ Problem 10. For $-1<\beta<1$, evaluate
 \]
 :::
 
-::: {.solution}
-<1>1. The improper integral converges for every \(-1<\beta<1\).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The improper integral converges for every \(-1<\beta<1\).
+
+
+::: pf-proof
+
 On \((0,1]\),
 \[
 0\le \frac{x^\beta}{1+x^2}\le x^\beta,
@@ -36,9 +41,14 @@ and \(\int_0^1x^\beta\,dx<\infty\) because \(\beta>-1\). On \([1,\infty)\),
 0\le \frac{x^\beta}{1+x^2}\le x^{\beta-2},
 \]
 and \(\int_1^\infty x^{\beta-2}\,dx<\infty\) because \(\beta<1\).
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 F(z)=\frac{z^\beta}{1+z^2},
 \qquad
@@ -50,7 +60,9 @@ where \(\Log z=\log|z|+i\arg z\) with \(-\pi/2<\arg z<3\pi/2\). If \(0<\varepsil
 =\pi e^{i\pi\beta/2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The chosen branch is holomorphic on a neighborhood of the closed upper half-annulus. Inside \(C_{\varepsilon,R}\), the only pole of \(F\) is the simple pole at \(z=i\). Its residue is
 \[
 \operatorname{Res}(F,i)
@@ -63,11 +75,18 @@ The residue theorem therefore gives
 =2\pi i\,\operatorname{Res}(F,i)
 =\pi e^{i\pi\beta/2}.
 \]
+
 :::
 
-<1>3. The contributions from the outer and inner semicircles tend to \(0\) as \(R\to\infty\) and \(\varepsilon\to0\), respectively.
+:::
 
-::: {.proof}
+::: pf-step
+
+The contributions from the outer and inner semicircles tend to \(0\) as \(R\to\infty\) and \(\varepsilon\to0\), respectively.
+
+
+::: pf-proof
+
 On the outer semicircle \(|z|=R\), one has \(|z^\beta|=R^\beta\) and \(|1+z^2|\ge R^2-1\). Hence
 \[
 \left|\int_{|z|=R,\ \operatorname{Im}z\ge0}F(z)\,dz\right|
@@ -81,9 +100,14 @@ because \(\beta<1\). On the inner semicircle \(|z|=\varepsilon\),
 \longrightarrow0
 \]
 because \(\beta>-1\).
+
 :::
 
-<1>4. The two straight sides of the contour satisfy
+:::
+
+::: pf-step
+
+The two straight sides of the contour satisfy
 \[
 \int_{\varepsilon}^{R}\frac{x^\beta}{1+x^2}\,dx
 +\int_{-R}^{-\varepsilon}F(z)\,dz
@@ -91,23 +115,32 @@ because \(\beta>-1\).
 \int_{\varepsilon}^{R}\frac{x^\beta}{1+x^2}\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the positive real axis, \(z^\beta=x^\beta\). On the negative real axis approached through the upper half-plane, \(z=-x\) has argument \(\pi\), so \((-x)^\beta=e^{i\pi\beta}x^\beta\). Parametrizing the segment from \(-R\) to \(-\varepsilon\) by \(z=-x\), with \(x\) decreasing from \(R\) to \(\varepsilon\), gives
 \[
 \int_{-R}^{-\varepsilon}F(z)\,dz
 =e^{i\pi\beta}\int_{\varepsilon}^{R}\frac{x^\beta}{1+x^2}\,dx.
 \]
 Adding the positive-axis contribution proves the claim.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_0^\infty\frac{x^\beta}{1+x^2}\,dx
 =\frac{\pi}{2\cos(\pi\beta/2)}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(R\to\infty\) and \(\varepsilon\to0\) in step <1>2. By steps <1>1, <1>3, and <1>4,
 \[
 \bigl(1+e^{i\pi\beta}\bigr)
@@ -120,11 +153,15 @@ Since
 =2e^{i\pi\beta/2}\cos(\pi\beta/2)
 \]
 and \(-1<\beta<1\) implies \(\cos(\pi\beta/2)>0\), division gives the displayed value.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required evaluation.
+
 :::
+
 :::

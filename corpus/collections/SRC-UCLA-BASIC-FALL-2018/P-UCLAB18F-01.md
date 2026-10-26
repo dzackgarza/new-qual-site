@@ -25,8 +25,11 @@ Show that
 also diverges.
 :::
 
-::: {.solution}
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 a_n\ge1
 \]
@@ -36,7 +39,9 @@ for infinitely many $n$, then
 \]
 diverges.
 
-::: {.proof}
+
+::: pf-proof
+
 Whenever
 \[
 a_n\ge1,
@@ -55,9 +60,14 @@ and therefore
 \]
 Thus the transformed series has infinitely many terms at least $1/3$.
 Since all terms are nonnegative, its partial sums are unbounded.
+
 :::
 
-<1>2. Suppose instead that
+:::
+
+::: pf-step
+
+Suppose instead that
 \[
 a_n<1
 \]
@@ -69,7 +79,9 @@ Then for all sufficiently large $n$,
 \frac{a_n}{3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 0\le a_n<1,
@@ -84,11 +96,18 @@ Hence
 \ge
 \frac{a_n}{3}.
 \]
+
 :::
 
-<1>3. In the case of step <1>2, the transformed series diverges.
+:::
 
-::: {.proof}
+::: pf-step
+
+In the case of step <1>2, the transformed series diverges.
+
+
+::: pf-proof
+
 Choose $N$ such that
 \[
 a_n<1
@@ -114,9 +133,14 @@ By step <1>2,
 \]
 The right side tends to $+\infty$ as $M\to\infty$.
 Thus the transformed series diverges.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=1}^{\infty}\frac{a_n}{2a_n+1}
@@ -124,14 +148,20 @@ Thus the transformed series diverges.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Either $a_n\ge1$ infinitely often, in which case step <1>1 applies, or $a_n<1$ eventually, in which case step <1>3 applies.
 These cases exhaust all possibilities.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

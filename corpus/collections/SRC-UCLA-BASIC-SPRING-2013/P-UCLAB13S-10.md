@@ -32,7 +32,6 @@ Let $C$ be the set of matrices in $G$ commuting with $M$.
 (b) Find the dimension of $C$.
 :::
 
-::: {.solution}
 Write
 \[
 M=I+N,
@@ -68,7 +67,11 @@ Y=
 \end{pmatrix}.
 \]
 
-<1>1. The commutation relation
+::: pf
+
+::: pf-step
+
+The commutation relation
 \[
 XM=MX
 \]
@@ -77,7 +80,9 @@ is equivalent to
 \boxed{YN=NY}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 X=I+Y
@@ -108,9 +113,14 @@ The common terms cancel, leaving
 \[
 YN=NY.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 YN
 =
@@ -122,7 +132,9 @@ YN
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the displayed matrices $Y$ and $N$.
 The only potentially nonzero entries are above the diagonal.
 For example,
@@ -140,9 +152,14 @@ a+b,
 d.
 \]
 All other strictly upper-triangular entries vanish.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 NY
 =
@@ -154,7 +171,9 @@ NY
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Again multiply directly.
 The relevant entries are
 \[
@@ -164,9 +183,14 @@ The relevant entries are
 \qquad
 (NY)_{24}=f.
 \]
+
 :::
 
-<1>4. The equation
+:::
+
+::: pf-step
+
+The equation
 \[
 YN=NY
 \]
@@ -177,7 +201,9 @@ a=d,\qquad d=f,\qquad a+b=e+f.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compare the corresponding entries of the matrices in steps <1>2--<1>3.
 Equality of the $(1,3)$ entries gives
 \[
@@ -192,9 +218,14 @@ Equality of the $(1,4)$ entries gives
 a+b=e+f.
 \]
 No other entries impose additional conditions.
+
 :::
 
-<1>5. These equations reduce to
+:::
+
+::: pf-step
+
+These equations reduce to
 \[
 \boxed{
 d=f=a,
@@ -203,7 +234,9 @@ e=b.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first two equations in step <1>4 give
 \[
 d=f=a.
@@ -216,9 +249,14 @@ Thus
 \[
 e=b.
 \]
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 C=
@@ -234,7 +272,9 @@ C=
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, every commuting matrix in $G$ must have exactly the displayed form.
 Conversely, any matrix of this form has
 \[
@@ -243,11 +283,18 @@ d=f=a
 e=b,
 \]
 so it satisfies the equations in step <1>4 and therefore commutes with $M$.
+
 :::
 
-<1>7. The set $C$ is an affine subspace of $\mathbb R^{16}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $C$ is an affine subspace of $\mathbb R^{16}$.
+
+
+::: pf-proof
+
 Let
 \[
 E_1=
@@ -282,15 +329,22 @@ I+\operatorname{span}\{E_1,E_2,E_3\}.
 \]
 The translate of a linear subspace is an affine subspace.
 This proves part (a).
+
 :::
 
-<1>8. The matrices
+:::
+
+::: pf-step
+
+The matrices
 \[
 E_1,E_2,E_3
 \]
 are linearly independent.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 \alpha E_1+\beta E_2+\gamma E_3=0.
@@ -308,14 +362,21 @@ and the $(1,4)$ entry gives
 \gamma=0.
 \]
 Thus the three matrices are linearly independent.
+
 :::
 
-<1>9. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\dim C=3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The translation space of the affine subspace $C$ is
 \[
 \operatorname{span}\{E_1,E_2,E_3\}.
@@ -323,11 +384,15 @@ The translation space of the affine subspace $C$ is
 By step <1>8, this space has dimension $3$.
 Therefore the affine dimension of $C$ is $3$.
 This proves part (b).
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 proves that $C$ is an affine subspace, and step <1>9 computes its dimension.
+
 :::
+
 :::

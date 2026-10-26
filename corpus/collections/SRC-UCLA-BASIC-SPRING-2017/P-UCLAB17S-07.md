@@ -23,7 +23,6 @@ f(x)=1-\left(\int_0^x t f(t)\,dt\right)^2.
 \]
 :::
 
-::: {.solution}
 Suppose first that $f:[0,1]\to[0,1]$ is a continuous solution, and define
 \[
 F(x)
@@ -31,14 +30,20 @@ F(x)
 \int_0^x t f(t)\,dt.
 \]
 
-<1>1. The function $F$ is continuously differentiable and satisfies
+::: pf
+
+::: pf-step
+
+The function $F$ is continuously differentiable and satisfies
 \[
 F'(x)=xf(x),
 \qquad
 F(0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrand
 \[
 t\longmapsto tf(t)
@@ -52,9 +57,14 @@ Also,
 \[
 F(0)=0.
 \]
+
 :::
 
-<1>2. The integral equation is equivalent to
+:::
+
+::: pf-step
+
+The integral equation is equivalent to
 \[
 \boxed{
 F'(x)=x\bigl(1-F(x)^2\bigr),
@@ -63,7 +73,9 @@ F(0)=0.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The original equation says
 \[
 f(x)=1-F(x)^2.
@@ -73,9 +85,14 @@ Substitute this into the identity
 F'(x)=xf(x)
 \]
 from step <1>1.
+
 :::
 
-<1>3. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in[0,1],
 \]
@@ -84,7 +101,9 @@ one has
 0\le F(x)\le\frac{x^2}{2}\le\frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 0\le f(t)\le1,
@@ -101,9 +120,14 @@ F(x)
 =
 \frac{x^2}{2}.
 \]
+
 :::
 
-<1>4. Since
+:::
+
+::: pf-step
+
+Since
 \[
 |F(x)|<1,
 \]
@@ -118,22 +142,31 @@ to obtain
 x.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 gives
 \[
 0\le F(x)\le\frac12<1.
 \]
 Hence the denominator is strictly positive.
+
 :::
 
-<1>5. Integrating from $0$ to $x$ gives
+:::
+
+::: pf-step
+
+Integrating from $0$ to $x$ gives
 \[
 \operatorname{arctanh}F(x)
 =
 \frac{x^2}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An antiderivative of
 \[
 \frac1{1-u^2}
@@ -161,9 +194,14 @@ Since
 F(0)=0,
 \]
 the initial term vanishes.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 F(x)
@@ -172,15 +210,22 @@ F(x)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the inverse function
 \[
 \tanh
 \]
 to both sides of step <1>5.
+
 :::
 
-<1>7. Any continuous solution must therefore satisfy
+:::
+
+::: pf-step
+
+Any continuous solution must therefore satisfy
 \[
 \boxed{
 f(x)
@@ -192,7 +237,9 @@ f(x)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integral equation gives
 \[
 f(x)=1-F(x)^2.
@@ -204,9 +251,14 @@ Substitute step <1>6 and use
 \operatorname{sech}^2u.
 \]
 This proves uniqueness if a solution exists.
+
 :::
 
-<1>8. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 f_0(x)
@@ -220,7 +272,9 @@ f_0:[0,1]\to[0,1]
 \]
 is continuous and nonnegative.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $\operatorname{sech}^2$ is continuous and takes values in
 \[
 (0,1].
@@ -230,9 +284,14 @@ Composing with
 x\mapsto x^2/2
 \]
 preserves continuity.
+
 :::
 
-<1>9. For
+:::
+
+::: pf-step
+
+For
 \[
 F_0(x)
 =
@@ -249,7 +308,9 @@ and
 F_0(0)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate:
 \[
 \begin{aligned}
@@ -265,9 +326,14 @@ Also,
 \[
 F_0(0)=\tanh0=0.
 \]
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \int_0^x t f_0(t)\,dt
 =
@@ -276,13 +342,22 @@ F_0(x)
 \tanh\left(\frac{x^2}{2}\right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the differential identity in step <1>9 from $0$ to $x$.
+
 :::
 
-<1>11. The function $f_0$ satisfies the original integral equation.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f_0$ satisfies the original integral equation.
+
+
+::: pf-proof
+
 By step <1>10,
 \[
 \left(
@@ -307,9 +382,14 @@ f_0(x).
 \end{aligned}
 \]
 Thus existence holds.
+
 :::
 
-<1>12. Therefore there exists exactly one nonnegative continuous solution, namely
+:::
+
+::: pf-step
+
+Therefore there exists exactly one nonnegative continuous solution, namely
 \[
 \boxed{
 f(x)
@@ -318,13 +398,19 @@ f(x)
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Existence is step <1>11 and uniqueness is step <1>7.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 is the required existence-and-uniqueness statement.
+
 :::
+
 :::

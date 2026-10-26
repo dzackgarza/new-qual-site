@@ -21,8 +21,11 @@ Let $T:\mathbb R^n\to\mathbb R^n$ be linear and satisfy $T^2=T$.
 Show that there is a basis in which the matrix of $T$ is diagonal with entries consisting only of $1$'s followed by $0$'s.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \mathbb R^n
 =
@@ -31,7 +34,9 @@ Show that there is a basis in which the matrix of $T$ is diagonal with entries c
 \ker T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 \[
 v\in\mathbb R^n,
@@ -81,11 +86,18 @@ Tw=T^2u=Tu=w.
 \]
 Hence $w=0$.
 Therefore the sum is direct.
+
 :::
 
-<1>2. The restriction of $T$ to $\operatorname{im}T$ is the identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The restriction of $T$ to $\operatorname{im}T$ is the identity.
+
+
+::: pf-proof
+
 If
 \[
 w\in\operatorname{im}T,
@@ -99,20 +111,32 @@ Therefore
 \[
 Tw=T^2u=Tu=w.
 \]
+
 :::
 
-<1>3. The restriction of $T$ to $\ker T$ is zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The restriction of $T$ to $\ker T$ is zero.
+
+
+::: pf-proof
+
 This is the definition of the kernel:
 \[
 w\in\ker T
 \quad\Longrightarrow\quad
 Tw=0.
 \]
+
 :::
 
-<1>4. Choose a basis
+:::
+
+::: pf-step
+
+Choose a basis
 \[
 u_1,\ldots,u_m
 \]
@@ -127,11 +151,18 @@ u_1,\ldots,u_m,v_1,\ldots,v_{n-m}
 \]
 is a basis of $\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from the direct-sum decomposition in step <1>1.
+
 :::
 
-<1>5. In the basis from step <1>4, the matrix of $T$ is
+:::
+
+::: pf-step
+
+In the basis from step <1>4, the matrix of $T$ is
 \[
 \boxed{
 \operatorname{diag}
@@ -140,7 +171,9 @@ This follows from the direct-sum decomposition in step <1>1.
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 Tu_i=u_i
@@ -152,11 +185,15 @@ Tv_j=0
 \]
 for every $j=1,\ldots,n-m$.
 Thus the coordinate matrix is diagonal with the stated entries.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required normal form.
+
 :::
+
 :::

@@ -22,8 +22,11 @@ Problem 7. (a) Define what it means for $f:\mathbb R^n\to\mathbb R^m$ to be diff
 (b) Using this definition, formulate and prove the chain rule for the derivative of $g(f(x))$ at $x=a$.
 :::
 
-::: {.solution}
-<1>1. A function
+::: pf
+
+::: pf-step
+
+A function
 \[
 f:\mathbb R^n\to\mathbb R^m
 \]
@@ -52,7 +55,9 @@ The map $A$ is denoted
 Df(a).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of Fréchet differentiability in finite-dimensional Euclidean spaces.
 Equivalently, one may write
 \[
@@ -66,14 +71,21 @@ where
 \to0
 \]
 as $h\to0$.
+
 :::
 
-<1>2. Differentiability of $f$ at $a$ implies
+:::
+
+::: pf-step
+
+Differentiability of $f$ at $a$ implies
 \[
 f(a+h)-f(a)=O(\|h\|).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 f(a+h)-f(a)
@@ -99,9 +111,14 @@ Hence for sufficiently small $h$,
 \le
 (\|A\|+1)\|h\|.
 \]
+
 :::
 
-<1>3. Chain Rule: suppose
+:::
+
+::: pf-step
+
+Chain Rule: suppose
 \[
 f:\mathbb R^n\to\mathbb R^m
 \]
@@ -126,11 +143,18 @@ Dg(f(a))\circ Df(a).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the statement to be proved in the following steps.
+
 :::
 
-<1>4. Set
+:::
+
+::: pf-step
+
+Set
 \[
 A=Df(a),
 \qquad
@@ -159,11 +183,18 @@ with
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the differentiability definition from step <1>1 applied first to $f$ at $a$ and then to $g$ at $b$.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 k(h)
 =
@@ -180,7 +211,9 @@ and
 \|k(h)\|=O(\|h\|).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $O(\|h\|)$ estimate is step <1>2.
 In particular,
 \[
@@ -190,9 +223,14 @@ so
 \[
 k(h)\to0.
 \]
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \begin{aligned}
 g(f(a+h))-g(f(a))
@@ -205,7 +243,9 @@ s(k(h)).
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 f(a+h)
@@ -233,9 +273,14 @@ Since
 g(b)=g(f(a)),
 \]
 subtracting yields the displayed identity.
+
 :::
 
-<1>7. The term
+:::
+
+::: pf-step
+
+The term
 \[
 Br(h)
 \]
@@ -245,7 +290,9 @@ satisfies
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Boundedness of the linear map $B$ gives
 \[
 \frac{\|Br(h)\|}{\|h\|}
@@ -254,9 +301,14 @@ Boundedness of the linear map $B$ gives
 \frac{\|r(h)\|}{\|h\|}.
 \]
 The final factor tends to $0$ by step <1>4.
+
 :::
 
-<1>8. The term
+:::
+
+::: pf-step
+
+The term
 \[
 s(k(h))
 \]
@@ -266,7 +318,9 @@ satisfies
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $h$ such that $k(h)\ne0$,
 \[
 \frac{\|s(k(h))\|}{\|h\|}
@@ -293,9 +347,14 @@ then
 s(k(h))=s(0)=0,
 \]
 so the conclusion remains valid.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \frac{
 \|g(f(a+h))-g(f(a))-BAh\|
@@ -305,7 +364,9 @@ so the conclusion remains valid.
 \to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 g(f(a+h))-g(f(a))-BAh
@@ -313,9 +374,14 @@ g(f(a+h))-g(f(a))-BAh
 Br(h)+s(k(h)).
 \]
 Divide by $\|h\|$ and use the triangle inequality together with steps <1>7--<1>8.
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 D(g\circ f)(a)
@@ -326,17 +392,23 @@ Dg(f(a))\,Df(a).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>9 is exactly the differentiability criterion from step <1>1 with derivative
 \[
 BA.
 \]
 Thus the chain rule follows.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 answers part (a), and steps <1>3--<1>10 formulate and prove the chain rule requested in part (b).
+
 :::
+
 :::

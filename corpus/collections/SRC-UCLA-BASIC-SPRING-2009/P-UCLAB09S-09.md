@@ -32,7 +32,6 @@ Ay=x,
 and that this reflection is unique.
 :::
 
-::: {.solution}
 Let
 \[
 d=\|x-y\|_2.
@@ -46,7 +45,11 @@ Define the unit vector
 u=\frac{x-y}{d}.
 \]
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 \boxed{
 A=I-2uu^T.
@@ -54,7 +57,9 @@ A=I-2uu^T.
 \]
 Then $A$ is real symmetric.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 (uu^T)^T=uu^T,
@@ -68,14 +73,21 @@ I-2(uu^T)^T
 I-2uu^T
 =A.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 A^2=I.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 \|u\|_2=1,
@@ -104,14 +116,21 @@ I-4uu^T+4(uu^T)^2\\
 I.
 \end{aligned}
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \operatorname{rank}(A-I)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A-I=-2uu^T,
@@ -130,14 +149,21 @@ Hence
 \operatorname{rank}(A-I)=1.
 \]
 Thus $A$ is a reflection in the sense of the problem.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 2u(u^Tx)=x-y.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 c=x^Ty.
@@ -177,14 +203,21 @@ Therefore
 x-y.
 \end{aligned}
 \]
+
 :::
 
-<1>5. The matrix $A$ satisfies
+:::
+
+::: pf-step
+
+The matrix $A$ satisfies
 \[
 \boxed{Ax=y}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>4,
 \[
 \begin{aligned}
@@ -197,14 +230,21 @@ x-(x-y)\\
 y.
 \end{aligned}
 \]
+
 :::
 
-<1>6. The matrix $A$ also satisfies
+:::
+
+::: pf-step
+
+The matrix $A$ also satisfies
 \[
 \boxed{Ay=x}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 u=\frac{x-y}{d},
@@ -237,20 +277,32 @@ y+(x-y)\\
 x.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Thus a reflection interchanging $x$ and $y$ exists.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus a reflection interchanging $x$ and $y$ exists.
+
+
+::: pf-proof
+
 Steps <1>1--<1>3 verify that the matrix $A$ is a reflection, and steps <1>5--<1>6 verify
 \[
 Ax=y,
 \qquad
 Ay=x.
 \]
+
 :::
 
-<1>8. Let $B$ be any reflection satisfying
+:::
+
+::: pf-step
+
+Let $B$ be any reflection satisfying
 \[
 Bx=y,
 \qquad
@@ -261,7 +313,9 @@ Then
 B(x-y)=-(x-y).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity,
 \[
 \begin{aligned}
@@ -275,11 +329,18 @@ y-x\\
 \end{aligned}
 \]
 Thus $x-y$ is a $(-1)$-eigenvector of $B$.
+
 :::
 
-<1>9. For any reflection $B$, the $(-1)$-eigenspace is one-dimensional.
+:::
 
-::: {.proof}
+::: pf-step
+
+For any reflection $B$, the $(-1)$-eigenspace is one-dimensional.
+
+
+::: pf-proof
+
 Since
 \[
 B^2=I,
@@ -317,14 +378,21 @@ Hence
 \[
 \dim E_{-1}(B)=1.
 \]
+
 :::
 
-<1>10. For such a $B$,
+:::
+
+::: pf-step
+
+For such a $B$,
 \[
 E_{-1}(B)=\operatorname{span}\{u\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 \[
 x-y
@@ -344,14 +412,21 @@ By step <1>9, this eigenspace is one-dimensional, so it equals
 \[
 \operatorname{span}\{u\}.
 \]
+
 :::
 
-<1>11. The $1$-eigenspace of $B$ is
+:::
+
+::: pf-step
+
+The $1$-eigenspace of $B$ is
 \[
 u^\perp.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $B$ is symmetric.
 Eigenvectors of a real symmetric matrix corresponding to distinct eigenvalues are orthogonal.
 Thus
@@ -379,14 +454,21 @@ Hence
 \[
 E_1(B)=u^\perp.
 \]
+
 :::
 
-<1>12. The reflection $B$ must equal
+:::
+
+::: pf-step
+
+The reflection $B$ must equal
 \[
 I-2uu^T.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every vector $z\in\mathbb R^n$ decomposes uniquely as
 \[
 z=z_\perp+(u^Tz)u,
@@ -417,21 +499,32 @@ Thus
 \[
 B=I-2uu^T.
 \]
+
 :::
 
-<1>13. Therefore the reflection is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the reflection is unique.
+
+
+::: pf-proof
+
 Step <1>7 constructs the reflection
 \[
 A=I-2uu^T,
 \]
 and step <1>12 shows that every reflection satisfying the two interchange conditions must equal this matrix.
+
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>7 prove existence, and steps <1>8--<1>13 prove uniqueness.
+
 :::
+
 :::

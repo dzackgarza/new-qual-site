@@ -25,14 +25,24 @@ P(z)Q(z)=z^n|P(z)|^2
 whenever $|z|=1$.
 :::
 
-::: {.solution}
-<1>1. If $P\equiv0$, the conclusion holds with $n=0$ and $Q=0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $P\equiv0$, the conclusion holds with $n=0$ and $Q=0$.
+
+
+::: pf-proof
+
 Both sides of the required identity are then identically zero.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: pf-step
+
+Suppose
 $$
 P(z)=a_0+a_1z+\cdots+a_mz^m,
 \qquad
@@ -51,7 +61,9 @@ $$
 Q(z)=z^m\overline{P(z)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 When $\abs z=1$, one has $\overline z=z^{-1}$. Hence
 $$
 \begin{aligned}
@@ -67,15 +79,22 @@ z^m
 Q(z).
 \end{aligned}
 $$
+
 :::
 
-<1>3. With $n=m$ and the polynomial $Q$ from step <1>2,
+:::
+
+::: pf-step
+
+With $n=m$ and the polynomial $Q$ from step <1>2,
 $$
 \boxed{P(z)Q(z)=z^m\abs{P(z)}^2}
 $$
 for every $\abs z=1$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 $$
 P(z)Q(z)
@@ -85,11 +104,15 @@ P(z)z^m\overline{P(z)}
 z^m\abs{P(z)}^2.
 $$
 Thus the required integer may be taken to be the degree of $P$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 handles the zero polynomial, and step <1>3 proves the assertion for every nonzero polynomial.
+
 :::
+
 :::

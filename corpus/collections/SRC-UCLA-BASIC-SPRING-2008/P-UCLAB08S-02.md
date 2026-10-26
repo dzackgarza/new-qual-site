@@ -24,10 +24,13 @@ Prove or give a counterexample to the assertion
 \]
 :::
 
-::: {.solution}
 The assertion is false.
 
-<1>1. For each integer
+::: pf
+
+::: pf-step
+
+For each integer
 \[
 n\ge2,
 \]
@@ -45,7 +48,9 @@ n^2\left(\frac2n-x\right),
 \end{cases}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The formulas agree at the break points:
 \[
 n^2\cdot\frac1n
@@ -63,9 +68,14 @@ All three pieces are nonnegative, so
 f_n(x)\ge0
 \]
 on $[0,1]$.
+
 :::
 
-<1>2. For every fixed
+:::
+
+::: pf-step
+
+For every fixed
 \[
 x\in[0,1],
 \]
@@ -74,7 +84,9 @@ one has
 f_n(x)\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x=0,
@@ -114,16 +126,23 @@ Thus
 \[
 f_n(x)\to0.
 \]
+
 :::
 
-<1>3. For every $n\ge2$,
+:::
+
+::: pf-step
+
+For every $n\ge2$,
 \[
 \boxed{
 \int_0^1 f_n(x)\,dx=1
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The graph of $f_n$ is a triangle supported on
 \[
 \left[0,\frac2n\right],
@@ -145,9 +164,14 @@ Therefore
 \[
 \int_0^1f_n(x)\,dx=1.
 \]
+
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \lim_{n\to\infty}\int_0^1f_n(x)\,dx
 =1
@@ -155,24 +179,37 @@ Therefore
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, the integral is identically $1$ for all $n$.
 Thus its limit is $1$.
+
 :::
 
-<1>5. Therefore pointwise convergence
+:::
+
+::: pf-step
+
+Therefore pointwise convergence
 \[
 f_n(x)\to0
 \]
 of continuous nonnegative functions does not imply convergence of the integrals to $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 verify all hypotheses of the problem for this sequence, while step <1>4 contradicts the asserted conclusion.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 gives the required counterexample.
+
 :::
+
 :::

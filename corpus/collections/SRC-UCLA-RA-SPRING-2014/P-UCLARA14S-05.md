@@ -25,10 +25,15 @@ T:\ell^2(\mathbb N)\to\ell^1(\mathbb N).
 \]
 :::
 
-::: {.solution}
-<1>1. For $p\in\{1,2\}$, the space $\ell^p(\mathbb N)$ is complete.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For $p\in\{1,2\}$, the space $\ell^p(\mathbb N)$ is complete.
+
+
+::: pf-proof
+
 Let $(x^{(m)})_{m\ge1}$ be Cauchy in $\ell^p$, where
 \[
 x^{(m)}
@@ -68,11 +73,18 @@ Thus for every $m\ge M$,
 \varepsilon.
 \]
 In particular $x-x^{(M)}\in\ell^p$, so $x\in\ell^p$, and $x^{(m)}\to x$ in $\ell^p$. Hence $\ell^p$ is Banach.
+
 :::
 
-<1>2. The spaces $\ell^1(\mathbb N)$ and $\ell^2(\mathbb N)$ are separable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The spaces $\ell^1(\mathbb N)$ and $\ell^2(\mathbb N)$ are separable.
+
+
+::: pf-proof
+
 Let $\mathbb F_0$ be $\mathbb Q$ in the real case and $\mathbb Q+i\mathbb Q$ in the complex case. Define
 \[
 D
@@ -106,11 +118,18 @@ Then
 \varepsilon^p.
 \]
 Thus $D$ is countable and dense in both $\ell^1$ and $\ell^2$.
+
 :::
 
-<1>3. The space $\ell^\infty(\mathbb N)$ is not separable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $\ell^\infty(\mathbb N)$ is not separable.
+
+
+::: pf-proof
+
 For each subset $A\subset\mathbb N$, let
 \[
 \chi_A(k)
@@ -135,9 +154,14 @@ If $D$ were a countable dense subset of $\ell^\infty$, the disjoint open balls
 B(\chi_A,1/3)
 \]
 would each contain a distinct point of $D$, which is impossible. Hence $\ell^\infty$ is not separable.
+
 :::
 
-<1>4. Suppose, toward a contradiction, that
+:::
+
+::: pf-step
+
+Suppose, toward a contradiction, that
 \[
 T:\ell^2\to\ell^1
 \]
@@ -148,11 +172,18 @@ Tx=y
 \|x\|_2\le C\|y\|_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The spaces $\ell^2$ and $\ell^1$ are Banach by step <1>1. Since $T$ is bounded and surjective, the open mapping theorem implies that $T$ maps some ball about $0$ in $\ell^2$ onto a set containing a ball about $0$ in $\ell^1$. Rescaling gives the displayed uniform preimage estimate.
+
 :::
 
-<1>5. The adjoint
+:::
+
+::: pf-step
+
+The adjoint
 \[
 T^*:(\ell^1)^*=\ell^\infty
 \longrightarrow
@@ -167,7 +198,9 @@ C\|T^*\phi\|_2
 (\phi\in\ell^\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\phi\in\ell^\infty$. For every $y\in\ell^1$ with $\|y\|_1\le1$, step <1>4 gives $x\in\ell^2$ with
 \[
 Tx=y,
@@ -185,11 +218,18 @@ Therefore
 C\|T^*\phi\|_2.
 \]
 Taking the supremum over the unit ball of $\ell^1$ gives the claim.
+
 :::
 
-<1>6. The range $T^*(\ell^\infty)$ is a closed subspace of $\ell^2$, and $T^*$ is an isomorphism from $\ell^\infty$ onto that range.
+:::
 
-::: {.proof}
+::: pf-step
+
+The range $T^*(\ell^\infty)$ is a closed subspace of $\ell^2$, and $T^*$ is an isomorphism from $\ell^\infty$ onto that range.
+
+
+::: pf-proof
+
 Step <1>5 shows that $T^*$ is injective and that its inverse on its range is bounded.
 
 To see that the range is closed, suppose
@@ -207,11 +247,18 @@ so $(\phi_n)$ is Cauchy in the Banach space $\ell^\infty$. Let $\phi_n\to\phi$. 
 T^*\phi=y.
 \]
 Thus the range is closed.
+
 :::
 
-<1>7. The assumed surjection $T$ cannot exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+The assumed surjection $T$ cannot exist.
+
+
+::: pf-proof
+
 By step <1>2, $\ell^2$ is separable. Every subspace of a separable metric space is separable, so the closed subspace
 \[
 T^*(\ell^\infty)
@@ -220,11 +267,15 @@ T^*(\ell^\infty)
 is separable.
 
 But step <1>6 says that $\ell^\infty$ is homeomorphic, via a bounded linear isomorphism, to this range. Hence $\ell^\infty$ would be separable, contradicting step <1>3.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>7 prove part (b).
+
 :::
+
 :::

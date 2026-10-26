@@ -25,7 +25,6 @@ Suppose $u:\Omega\to\mathbb R$ is bounded, continuous, and harmonic on $\Omega$,
 Determine $u(2)$.
 :::
 
-::: {.solution}
 Set
 \[
 r\coloneqq2-\sqrt3.
@@ -35,7 +34,11 @@ Then $0<r<1$ and
 r^2-4r+1=0.
 \]
 
-<1>1. The inversion
+::: pf
+
+::: pf-step
+
+The inversion
 \[
 I(z)=\frac1z
 \]
@@ -49,7 +52,9 @@ w\in\mathbb D:
 \right\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition $|z|>1$ is equivalent under $w=1/z$ to $|w|<1$. Also
 \[
 \operatorname{Re}z>-2
@@ -79,9 +84,14 @@ The point $w=1/2$, corresponding to $z=2\in\Omega$, lies outside this small circ
 \left|w+\frac14\right|>\frac14.
 \]
 Inversion is holomorphic with nonzero derivative on $\Omega$, so it is conformal there.
+
 :::
 
-<1>2. The disk automorphism
+:::
+
+::: pf-step
+
+The disk automorphism
 \[
 \phi(w)
 \coloneqq
@@ -93,7 +103,9 @@ maps the outer boundary $|w|=1$ to $|\zeta|=1$ and the inner boundary
 \]
 to $|\zeta|=r$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $r\in(0,1)$, $\phi$ is an automorphism of $\mathbb D$, so it maps the unit circle to itself.
 
 On the inner circle, step <1>1 gives
@@ -140,9 +152,14 @@ Thus
 =r^2
 \]
 on the inner boundary.
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 \[
 F
 \coloneqq
@@ -155,7 +172,9 @@ A_r
 \{\zeta\in\mathbb C:r<|\zeta|<1\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1, inversion maps $\Omega$ conformally onto the doubly connected region $\Omega'$. By step <1>2, $\phi$ is a homeomorphism of the closed unit disk and carries the two boundary components of $\Omega'$ onto the circles $|\zeta|=1$ and $|\zeta|=r$.
 
 The image $\phi(\Omega')$ is connected and lies between those two boundary circles. It contains
@@ -163,9 +182,14 @@ The image $\phi(\Omega')$ is connected and lies between those two boundary circl
 \phi(1/2),
 \]
 whose modulus is strictly greater than $r$. Therefore the image is exactly the annulus $A_r$.
+
 :::
 
-<1>4. The function
+:::
+
+::: pf-step
+
+The function
 \[
 V(\zeta)
 \coloneqq
@@ -174,7 +198,9 @@ V(\zeta)
 \]
 is harmonic on $A_r$, equals $0$ on $|\zeta|=r$, and equals $1$ on $|\zeta|=1$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $\log|\zeta|$ is harmonic away from $0$, hence on $A_r$. The displayed affine rescaling is therefore harmonic. Its boundary values are
 \[
 V(\zeta)=0
@@ -185,16 +211,23 @@ and
 V(\zeta)=1
 \quad\text{when }|\zeta|=1.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 u(z)=V(F(z))
 \qquad
 (z\in\Omega).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3 and <1>4, the function $V\circ F$ is bounded and harmonic on $\Omega$, with boundary value $1$ on $|z|=1$ and boundary value $0$ on $\operatorname{Re}z=-2$.
 
 To prove uniqueness, compose the difference
@@ -202,9 +235,14 @@ To prove uniqueness, compose the difference
 u-V\circ F
 \]
 with $F^{-1}$. This gives a bounded harmonic function on the bounded annulus $A_r$ that extends continuously with value $0$ on both boundary circles. The maximum principle applied to this function and to its negative gives that it is identically zero. Hence $u=V\circ F$.
+
 :::
 
-<1>6. The required value is
+:::
+
+::: pf-step
+
+The required value is
 \[
 \boxed{
 u(2)
@@ -221,7 +259,9 @@ r=2-\sqrt3
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 I(2)=\frac12,
@@ -245,11 +285,15 @@ This number is positive, so
 \frac{1+2r}{2r+r^2}.
 \]
 Substituting into step <1>4 and using step <1>5 gives the boxed value.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 determines $u(2)$.
+
 :::
+
 :::

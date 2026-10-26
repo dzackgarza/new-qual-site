@@ -23,8 +23,11 @@ f(x)=g(x)\qquad(0\le x<1).
 \]
 :::
 
-::: {.solution}
-<1>1. Suppose first that there exists a continuous function
+::: pf
+
+::: pf-step
+
+Suppose first that there exists a continuous function
 \[
 g:[0,1]\to\mathbb R
 \]
@@ -34,7 +37,9 @@ g|_{[0,1)}=f.
 \]
 Then $f$ is uniformly continuous on $[0,1)$.
 
-::: {.proof}
+
+::: pf-proof
+
 The interval
 \[
 [0,1]
@@ -69,9 +74,14 @@ Since
 f=g
 \]
 there, $f$ is uniformly continuous.
+
 :::
 
-<1>2. Conversely, suppose $f$ is uniformly continuous on $[0,1)$.
+:::
+
+::: pf-step
+
+Conversely, suppose $f$ is uniformly continuous on $[0,1)$.
 Then the sequence
 \[
 \left(
@@ -80,7 +90,9 @@ f\left(1-\frac1n\right)
 \]
 is Cauchy.
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \varepsilon>0.
@@ -119,9 +131,14 @@ f\left(1-\frac1n\right)
 \varepsilon.
 \]
 Thus the displayed sequence is Cauchy.
+
 :::
 
-<1>3. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 L\in\mathbb R
 \]
@@ -130,19 +147,28 @@ such that
 f\left(1-\frac1n\right)\to L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The real numbers are complete.
 Apply completeness to the Cauchy sequence from step <1>2.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \lim_{x\to1^-}f(x)=L
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 \varepsilon>0.
@@ -214,9 +240,14 @@ Thus
 f(x)\to L
 \]
 as $x\to1^-$.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 g:[0,1]\to\mathbb R
 \]
@@ -231,14 +262,23 @@ L,&x=1.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The value $L$ is the finite one-sided limit supplied by step <1>4.
 Thus the definition makes sense.
+
 :::
 
-<1>6. The function $g$ is continuous on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $g$ is continuous on $[0,1]$.
+
+
+::: pf-proof
+
 On
 \[
 [0,1),
@@ -255,9 +295,14 @@ L
 g(1).
 \]
 Thus $g$ is continuous at $1$ as well.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f\text{ is uniformly continuous on }[0,1)
@@ -266,14 +311,20 @@ f\text{ extends continuously to }[0,1].
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 proves the reverse implication.
 Steps <1>2--<1>6 prove the forward implication.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required equivalence.
+
 :::
+
 :::

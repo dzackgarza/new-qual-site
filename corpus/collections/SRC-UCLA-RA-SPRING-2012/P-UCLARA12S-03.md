@@ -26,16 +26,21 @@ whenever $x\in[k/n,(k+1)/n)$ and $0\le k\le n-1$.
 Prove that $f_n\to f$ in $L^1([0,1])$.
 :::
 
-::: {.solution}
 For each $n$, let $A_n:L^1([0,1])\to L^1([0,1])$ denote the averaging operator $A_nf=f_n$.
 
-<1>1. Each $A_n$ is an $L^1$-contraction:
+::: pf
+
+::: pf-step
+
+Each $A_n$ is an $L^1$-contraction:
 $$
 \boxed{\norm{A_nh}_{L^1}\le\norm h_{L^1}}
 $$
 for every $h\in L^1([0,1])$.
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 $$
 I_{k,n}=\left[\frac{k}{n},\frac{k+1}{n}\right).
@@ -59,14 +64,21 @@ $$
 \norm h_{L^1}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. If $g\in C([0,1])$, then
+:::
+
+::: pf-step
+
+If $g\in C([0,1])$, then
 $$
 \norm{A_ng-g}_{L^1}\longrightarrow0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 $$
 \omega_g(\delta)
@@ -92,14 +104,21 @@ $$
 \omega_g(1/n)
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. For every $f\in L^1([0,1])$,
+:::
+
+::: pf-step
+
+For every $f\in L^1([0,1])$,
 $$
 \boxed{\norm{f_n-f}_{L^1}\longrightarrow0}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Since continuous functions are dense in $L^1([0,1])$, choose $g\in C([0,1])$ such that
 $$
 \norm{f-g}_{L^1}<\varepsilon.
@@ -122,11 +141,15 @@ $$
 \le2\varepsilon.
 $$
 Since $\varepsilon>0$ is arbitrary, the limit is zero.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is exactly the required $L^1$ convergence.
+
 :::
+
 :::

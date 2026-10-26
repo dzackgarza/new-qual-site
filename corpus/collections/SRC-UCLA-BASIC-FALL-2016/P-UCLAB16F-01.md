@@ -19,19 +19,29 @@ audit:
 Suppose $A , B$ are invertible $n \times n$ matrices with complex entries, such that $A B A ^ { - 1 } = B ^ { 3 }$ . Show that all the eigenvalues of B are roots of unity.
 :::
 
-::: {.solution}
-<1>1. The matrices $B$ and $B^3$ have the same characteristic polynomial.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrices $B$ and $B^3$ have the same characteristic polynomial.
+
+
+::: pf-proof
+
 The hypothesis gives
 \[
 B^3=ABA^{-1}.
 \]
 Thus $B^3$ is similar to $B$.
 Similar matrices have the same characteristic polynomial.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 \lambda
 \]
@@ -41,7 +51,9 @@ is an eigenvalue of $B$, then
 \]
 is an eigenvalue of $B$.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 Bv=\lambda v
@@ -53,15 +65,22 @@ B^3v=\lambda^3v.
 Thus $\lambda^3$ is an eigenvalue of $B^3$.
 By step <1>1, $B$ and $B^3$ have the same eigenvalues with algebraic multiplicity.
 Hence $\lambda^3$ is also an eigenvalue of $B$.
+
 :::
 
-<1>3. For every integer $r\ge0$,
+:::
+
+::: pf-step
+
+For every integer $r\ge0$,
 \[
 \lambda^{3^r}
 \]
 is an eigenvalue of $B$.
 
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction on $r$.
 For $r=0$, the number is $\lambda$, an eigenvalue by hypothesis.
 If
@@ -73,9 +92,14 @@ is an eigenvalue, step <1>2 implies that its cube
 \lambda^{3^{r+1}}
 \]
 is also an eigenvalue.
+
 :::
 
-<1>4. There exist integers
+:::
+
+::: pf-step
+
+There exist integers
 \[
 0\le s<r
 \]
@@ -86,7 +110,9 @@ such that
 \lambda^{3^s}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>3, all numbers
 \[
 \lambda,\lambda^3,\lambda^{3^2},\ldots
@@ -94,23 +120,37 @@ By step <1>3, all numbers
 belong to the finite set of eigenvalues of the $n\times n$ matrix $B$.
 An infinite sequence taking values in a finite set must repeat.
 Thus two terms with distinct indices are equal.
+
 :::
 
-<1>5. Since $B$ is invertible,
+:::
+
+::: pf-step
+
+Since $B$ is invertible,
 \[
 \lambda\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 An invertible matrix has no zero eigenvalue.
+
 :::
 
-<1>6. The eigenvalue $\lambda$ satisfies
+:::
+
+::: pf-step
+
+The eigenvalue $\lambda$ satisfies
 \[
 \lambda^{3^s(3^{r-s}-1)}=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 From step <1>4,
 \[
 \lambda^{3^r}
@@ -131,11 +171,18 @@ Factor the exponent:
 =
 3^s(3^{r-s}-1).
 \]
+
 :::
 
-<1>7. Therefore every eigenvalue of $B$ is a root of unity.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every eigenvalue of $B$ is a root of unity.
+
+
+::: pf-proof
+
 The exponent in step <1>6 is a positive integer because
 \[
 r>s.
@@ -145,11 +192,15 @@ Thus every eigenvalue $\lambda$ satisfies
 \lambda^N=1
 \]
 for some positive integer $N$, which is exactly the definition of a root of unity.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

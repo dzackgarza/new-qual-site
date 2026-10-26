@@ -35,24 +35,36 @@ For $U\subset V^*$, define
 Give an explicit isomorphism between $(V/W)^*$ and $W^\perp$, and prove that it is an isomorphism.
 :::
 
-::: {.solution}
 Let
 $$
 S\coloneqq\operatorname{span}(W).
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 S\subseteq{}^\perp(W^\perp).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $v\in S$. Then $v$ is a finite linear combination of elements of $W$. Every $\phi\in W^\perp$ vanishes on $W$, hence by linearity vanishes on every linear combination of elements of $W$. Thus $\phi(v)=0$ for every $\phi\in W^\perp$, so $v\in{}^\perp(W^\perp)$.
+
 :::
 
-<1>2. If $v\notin S$, then there is a functional $\phi\in W^\perp$ such that $\phi(v)\ne0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $v\notin S$, then there is a functional $\phi\in W^\perp$ such that $\phi(v)\ne0$.
+
+
+::: pf-proof
+
 Choose a basis $s_1,\ldots,s_r$ of $S$. Since $v\notin S$, the list
 $$
 s_1,\ldots,s_r,v
@@ -64,18 +76,30 @@ $$
 \phi(v)=1,
 $$
 and assign value $0$ to the remaining basis vectors. Then $\phi$ vanishes on $S$, hence on $W$, so $\phi\in W^\perp$, while $\phi(v)=1\ne0$.
+
 :::
 
-<1>3. For every subset $W\subseteq V$,
+:::
+
+::: pf-step
+
+For every subset $W\subseteq V$,
 $$
 \boxed{{}^\perp(W^\perp)=\operatorname{span}(W)}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives one inclusion. If $v\notin S$, step <1>2 produces $\phi\in W^\perp$ with $\phi(v)\ne0$, so $v\notin{}^\perp(W^\perp)$. Thus ${}^\perp(W^\perp)\subseteq S$ as well.
+
 :::
 
-<1>4. Let $W\le V$ and let
+:::
+
+::: pf-step
+
+Let $W\le V$ and let
 $$
 \pi:V\to V/W
 $$
@@ -86,27 +110,43 @@ $$
 \boxed{\Phi(\lambda)=\lambda\circ\pi}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For $w\in W$, one has $\pi(w)=W=0$ in $V/W$, so
 $$
 (\lambda\circ\pi)(w)=\lambda(0)=0.
 $$
 Hence $\lambda\circ\pi\in W^\perp$. The map $\Phi$ is linear because composition with the fixed linear map $\pi$ respects sums and scalar multiples.
+
 :::
 
-<1>5. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is injective.
+
+
+::: pf-proof
+
 Suppose $\Phi(\lambda)=0$. Then $\lambda\circ\pi=0$. Since $\pi$ is surjective, every element of $V/W$ has the form $\pi(v)$, and therefore
 $$
 \lambda(\pi(v))=0
 $$
 for every $v\in V$. Thus $\lambda=0$.
+
 :::
 
-<1>6. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+
+::: pf-proof
+
 Let $\phi\in W^\perp$. Define
 $$
 \lambda:V/W\to\CC,
@@ -122,21 +162,32 @@ $$
 (\lambda\circ\pi)(v)=\lambda(v+W)=\phi(v)
 $$
 for every $v\in V$. Thus $\Phi(\lambda)=\phi$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{(V/W)^*\cong W^\perp}
 $$
 via $\lambda\mapsto\lambda\circ\pi$.
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>4--<1>6, $\Phi$ is a linear bijection.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>7 proves part (b).
+
 :::
+
 :::

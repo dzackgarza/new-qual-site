@@ -24,19 +24,24 @@ Prove that
 \]
 :::
 
-::: {.solution}
 Define
 \[
 C=I-A-B.
 \]
 By hypothesis, $C$ is invertible.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{CA=-BA}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 A^2=A,
@@ -55,14 +60,21 @@ A-A-BA\\
 -BA.
 \end{aligned}
 \]
+
 :::
 
-<1>2. One also has
+:::
+
+::: pf-step
+
+One also has
 \[
 \boxed{BC=-BA}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 B^2=B,
@@ -81,27 +93,41 @@ B-BA-B\\
 -BA.
 \end{aligned}
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{CA=BC}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Both sides equal
 \[
 -BA
 \]
 by steps <1>1--<1>2.
+
 :::
 
-<1>4. Since $C$ is invertible,
+:::
+
+::: pf-step
+
+Since $C$ is invertible,
 \[
 \boxed{B=CAC^{-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the identity
 \[
 CA=BC
@@ -114,18 +140,32 @@ This gives
 \[
 CAC^{-1}=B.
 \]
+
 :::
 
-<1>5. Thus $A$ and $B$ are similar.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus $A$ and $B$ are similar.
+
+
+::: pf-proof
+
 Step <1>4 expresses $B$ as a conjugate of $A$ by the invertible matrix $C$.
 That is precisely similarity.
+
 :::
 
-<1>6. Similar matrices have the same rank.
+:::
 
-::: {.proof}
+::: pf-step
+
+Similar matrices have the same rank.
+
+
+::: pf-proof
+
 Multiplication on either side by an invertible matrix does not change rank.
 Hence
 \[
@@ -139,22 +179,33 @@ Using step <1>4,
 =
 \operatorname{rank}(A).
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{rank}(A)=\operatorname{rank}(B).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

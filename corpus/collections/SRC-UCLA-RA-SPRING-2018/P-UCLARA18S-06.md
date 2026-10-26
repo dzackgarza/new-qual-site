@@ -33,10 +33,15 @@ F(\gamma)=\iint_{\mathbb T\times\mathbb T}
 achieves its minimum on $\mathcal M$.
 :::
 
-::: {.solution}
-<1>1. The set \(\mathcal M\) is nonempty.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set \(\mathcal M\) is nonempty.
+
+
+::: pf-proof
+
 The product probability measure
 \[
 \mu\times\nu
@@ -56,9 +61,14 @@ Thus
 \[
 \mu\times\nu\in\mathcal M.
 \]
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 x=e^{i\theta},
 \qquad
@@ -79,7 +89,9 @@ the cost satisfies
 \right)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \sin^2\frac{\alpha}{2}
@@ -101,9 +113,14 @@ Since
 \operatorname{Im}(e^{i\theta})=\sin\theta,
 \]
 the displayed identity follows.
+
 :::
 
-<1>3. For every \(\gamma\in\mathcal M\),
+:::
+
+::: pf-step
+
+For every \(\gamma\in\mathcal M\),
 \[
 \begin{aligned}
 F(\gamma)
@@ -121,7 +138,9 @@ F(\gamma)
 \end{aligned}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The functions
 \[
 1,\qquad
@@ -136,11 +155,18 @@ are continuous on \(\mathbb T\). Apply the defining identity of
 \operatorname{Im}(x)\operatorname{Im}(y),
 \]
 and then use the cost decomposition from step <1>2.
+
 :::
 
-<1>4. The value in step <1>3 is independent of \(\gamma\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The value in step <1>3 is independent of \(\gamma\).
+
+
+::: pf-proof
+
 Every quantity on the right-hand side depends only on the fixed measures
 \[
 \mu
@@ -148,19 +174,30 @@ Every quantity on the right-hand side depends only on the fixed measures
 \nu.
 \]
 Thus the same value is obtained for every \(\gamma\in\mathcal M\).
+
 :::
 
-<1>5. Therefore \(F\) attains its minimum on \(\mathcal M\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(F\) attains its minimum on \(\mathcal M\).
+
+
+::: pf-proof
+
 By step <1>1, \(\mathcal M\ne\varnothing\). By step <1>4, \(F\) is constant
 on \(\mathcal M\). Hence every \(\gamma\in\mathcal M\), in particular
 \(\mu\times\nu\), is a minimizer.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves the claim.
+
 :::
+
 :::

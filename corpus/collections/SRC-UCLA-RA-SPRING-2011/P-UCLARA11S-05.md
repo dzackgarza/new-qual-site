@@ -22,14 +22,19 @@ review: draft
 (c) Deduce that $\ell^1(\mathbb Z)$ is not reflexive.
 :::
 
-::: {.solution}
-<1>1. There are continuum many subsets
+::: pf
+
+::: pf-step
+
+There are continuum many subsets
 \[
 A\subset\mathbb Z
 \]
 containing $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The power set of $\mathbb Z\setminus\{0\}$ has cardinality
 \[
 2^{\aleph_0}.
@@ -39,9 +44,14 @@ The map
 B\longmapsto B\cup\{0\}
 \]
 is a bijection from that power set onto the family of subsets of $\mathbb Z$ containing $0$.
+
 :::
 
-<1>2. For each subset $A\subset\mathbb Z$ containing $0$, let
+:::
+
+::: pf-step
+
+For each subset $A\subset\mathbb Z$ containing $0$, let
 \[
 x_A(j)
 =
@@ -52,20 +62,29 @@ Then
 \|x_A\|_\infty=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $0\in A$,
 \[
 x_A(0)=1,
 \]
 while $x_A$ takes only the values $0$ and $1$. Hence its supremum norm is exactly $1$.
+
 :::
 
-<1>3. If $A\ne B$, then
+:::
+
+::: pf-step
+
+If $A\ne B$, then
 \[
 \|x_A-x_B\|_\infty=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose
 \[
 j\in A\triangle B.
@@ -75,17 +94,31 @@ Then
 |x_A(j)-x_B(j)|=1.
 \]
 At every coordinate the difference has absolute value at most $1$, so the supremum norm is exactly $1$.
+
 :::
 
-<1>4. This proves part (a).
+:::
 
-::: {.proof}
+::: pf-step
+
+This proves part (a).
+
+
+::: pf-proof
+
 Combine steps <1>1--<1>3.
+
 :::
 
-<1>5. Let $X$ be a Banach space. If $X^*$ is separable, then $X$ is separable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Let $X$ be a Banach space. If $X^*$ is separable, then $X$ is separable.
+
+
+::: pf-proof
+
 Assume $X^*$ is separable. Choose a sequence
 \[
 (\varphi_n)_{n\ge1}
@@ -143,34 +176,55 @@ contradicting
 |\varphi_n(x_n)|>\frac12.
 \]
 Thus $Y=X$, so $X$ is separable.
+
 :::
 
-<1>6. The dual
+:::
+
+::: pf-step
+
+The dual
 \[
 (\ell^\infty(\mathbb Z))^*
 \]
 is not separable.
 
-::: {.proof}
+
+::: pf-proof
+
 By part (a), $\ell^\infty(\mathbb Z)$ contains an uncountable $1$-separated set, so it is not separable.
 
 If its dual were separable, step <1>5 would imply that $\ell^\infty(\mathbb Z)$ itself is separable, a contradiction.
+
 :::
 
-<1>7. This proves part (b).
+:::
 
-::: {.proof}
+::: pf-step
+
+This proves part (b).
+
+
+::: pf-proof
+
 Step <1>6 is exactly the assertion of part (b).
+
 :::
 
-<1>8. One has the canonical isometric identification
+:::
+
+::: pf-step
+
+One has the canonical isometric identification
 \[
 (\ell^1(\mathbb Z))^*
 \cong
 \ell^\infty(\mathbb Z).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $a=(a_j)\in\ell^\infty$, the formula
 \[
 T_a(x)
@@ -192,11 +246,18 @@ where $e_j$ is the standard basis vector. Then
 \|T\|,
 \]
 so $a\in\ell^\infty$, and density of finitely supported sequences gives $T=T_a$.
+
 :::
 
-<1>9. The space $\ell^1(\mathbb Z)$ is not reflexive.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $\ell^1(\mathbb Z)$ is not reflexive.
+
+
+::: pf-proof
+
 Suppose instead that $\ell^1$ were reflexive. Then
 \[
 (\ell^1)^{**}
@@ -216,11 +277,15 @@ Hence
 \ell^1.
 \]
 But $\ell^1(\mathbb Z)$ is separable, while step <1>6 says $(\ell^\infty)^*$ is not separable. This contradiction proves that $\ell^1$ is not reflexive.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), step <1>7 proves part (b), and step <1>9 proves part (c).
+
 :::
+
 :::

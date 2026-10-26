@@ -20,15 +20,20 @@ audit:
 Let $M$ be a real $n\times n$ matrix. Prove that $M$ and $MM^T$ have the same range.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \operatorname{im}(MM^T)
 \subseteq
 \operatorname{im}M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Every vector in the range of $MM^T$ has the form
 \[
 MM^Tx
@@ -41,9 +46,14 @@ MM^Tx
 M(M^Tx),
 \]
 which lies in the range of $M$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{
 \ker(MM^T)
@@ -52,7 +62,9 @@ which lies in the range of $M$.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 M^Tx=0,
@@ -87,9 +99,14 @@ Hence
 M^Tx=0.
 \]
 Thus the reverse inclusion also holds.
+
 :::
 
-<1>3. The two matrices have the same rank:
+:::
+
+::: pf-step
+
+The two matrices have the same rank:
 \[
 \boxed{
 \operatorname{rank}(MM^T)
@@ -98,7 +115,9 @@ Thus the reverse inclusion also holds.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By rank-nullity and step <1>2,
 \[
 \begin{aligned}
@@ -117,9 +136,14 @@ The row rank equals the column rank, so
 =
 \operatorname{rank}M.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \operatorname{im}(MM^T)
@@ -128,15 +152,21 @@ The row rank equals the column rank, so
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives an inclusion of finite-dimensional subspaces.
 Step <1>3 shows that the two subspaces have the same dimension.
 Hence the inclusion is equality.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

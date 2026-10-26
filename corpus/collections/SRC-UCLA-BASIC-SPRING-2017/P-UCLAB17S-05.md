@@ -20,14 +20,17 @@ audit:
 Let $V$ be a finite-dimensional complex vector space, $T:V\to V$ linear, and $F(X)\in\mathbb C[X]$. Show that $F(T)$ is invertible if and only if $F$ and the minimal polynomial of $T$ have no common factor.
 :::
 
-::: {.solution}
 Let
 \[
 m_T(X)
 \]
 denote the minimal polynomial of $T$.
 
-<1>1. Suppose
+::: pf
+
+::: pf-step
+
+Suppose
 \[
 \gcd(F,m_T)=1.
 \]
@@ -42,23 +45,32 @@ A(X)F(X)+B(X)m_T(X)=1.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The polynomial ring
 \[
 \mathbb C[X]
 \]
 is a Euclidean domain.
 Therefore Bézout's identity applies to relatively prime polynomials.
+
 :::
 
-<1>2. Evaluating the identity from step <1>1 at $T$ gives
+:::
+
+::: pf-step
+
+Evaluating the identity from step <1>1 at $T$ gives
 \[
 \boxed{
 A(T)F(T)=I.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of the minimal polynomial,
 \[
 m_T(T)=0.
@@ -71,9 +83,14 @@ A(T)F(T)
 =
 I.
 \]
+
 :::
 
-<1>3. The operators
+:::
+
+::: pf-step
+
+The operators
 \[
 A(T)
 \quad\text{and}\quad
@@ -81,14 +98,23 @@ F(T)
 \]
 commute.
 
-::: {.proof}
+
+::: pf-proof
+
 Both are polynomials in the same operator $T$.
 Any two polynomials in $T$ commute.
+
 :::
 
-<1>4. Hence $F(T)$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $F(T)$ is invertible.
+
+
+::: pf-proof
+
 Step <1>2 gives
 \[
 A(T)F(T)=I.
@@ -103,22 +129,36 @@ Thus
 F(T)^{-1}=A(T).
 }
 \]
+
 :::
 
-<1>5. Conversely, suppose $F$ and $m_T$ have a nonconstant common factor.
+:::
+
+::: pf-step
+
+Conversely, suppose $F$ and $m_T$ have a nonconstant common factor.
 Then they have a common root
 \[
 \lambda\in\mathbb C.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Over the algebraically closed field $\mathbb C$, every nonconstant polynomial has a root.
 Any nonconstant common divisor of $F$ and $m_T$ therefore has a root $\lambda$ that is simultaneously a root of both polynomials.
+
 :::
 
-<1>6. The scalar $\lambda$ from step <1>5 is an eigenvalue of $T$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The scalar $\lambda$ from step <1>5 is an eigenvalue of $T$.
+
+
+::: pf-proof
+
 Since
 \[
 m_T(\lambda)=0,
@@ -162,9 +202,14 @@ is not invertible, so
 \lambda
 \]
 is an eigenvalue.
+
 :::
 
-<1>7. Choose a nonzero eigenvector
+:::
+
+::: pf-step
+
+Choose a nonzero eigenvector
 \[
 v
 \]
@@ -177,7 +222,9 @@ Then
 \boxed{F(T)v=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every polynomial
 \[
 P(X)=\sum_j c_jX^j,
@@ -201,11 +248,18 @@ Thus
 \[
 F(T)v=0.
 \]
+
 :::
 
-<1>8. Therefore $F(T)$ is not invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $F(T)$ is not invertible.
+
+
+::: pf-proof
+
 Step <1>7 gives a nonzero vector
 \[
 v\in\ker F(T).
@@ -215,9 +269,14 @@ Hence
 F(T)
 \]
 is not injective and therefore not invertible.
+
 :::
 
-<1>9. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 F(T)\text{ is invertible}
@@ -226,14 +285,20 @@ F(T)\text{ is invertible}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>4 prove the forward implication from coprimality to invertibility.
 Steps <1>5--<1>8 prove the contrapositive of the reverse implication.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required equivalence.
+
 :::
+
 :::

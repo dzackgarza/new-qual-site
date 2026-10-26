@@ -30,8 +30,11 @@ Show that there is a differentiable parametrized surface
 through $(x_0,y_0,z_0)$ on which $f=0$.
 :::
 
-::: {.solution}
-<1>1. Since
+::: pf
+
+::: pf-step
+
+Since
 \[
 \nabla f(x_0,y_0,z_0)\ne0,
 \]
@@ -45,25 +48,39 @@ f_z(x_0,y_0,z_0)
 \]
 is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 The gradient is the vector of these three partial derivatives.
 A vector is nonzero exactly when at least one of its coordinates is nonzero.
+
 :::
 
-<1>2. After relabeling the coordinate variables if necessary, assume
+:::
+
+::: pf-step
+
+After relabeling the coordinate variables if necessary, assume
 \[
 \boxed{
 f_z(x_0,y_0,z_0)\ne0.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>1 gives a nonzero partial derivative.
 If the nonzero derivative is $f_x$ or $f_y$ instead, interchange the names of the coordinates so that the corresponding variable is called $z$.
 The argument below is unchanged under such a relabeling.
+
 :::
 
-<1>3. There exist neighborhoods
+:::
+
+::: pf-step
+
+There exist neighborhoods
 \[
 U\subseteq\mathbb R^2
 \]
@@ -94,7 +111,9 @@ for all
 (x,y)\in U.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the implicit function theorem to the equation
 \[
 f(x,y,z)=0
@@ -114,9 +133,14 @@ f_z(x_0,y_0,z_0)\ne0
 \]
 by step <1>2.
 Therefore the theorem solves uniquely for $z$ as a $C^1$ function of $(x,y)$ near $(x_0,y_0)$.
+
 :::
 
-<1>4. Choose $\varepsilon>0$ so small that
+:::
+
+::: pf-step
+
+Choose $\varepsilon>0$ so small that
 \[
 (x_0+s,y_0+t)\in U
 \]
@@ -127,13 +151,20 @@ whenever
 |t|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The set $U$ is an open neighborhood of $(x_0,y_0)$.
 Hence it contains an open rectangle centered at that point.
 Choose $\varepsilon$ so that the displayed square lies inside that rectangle.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 x(s,t)=x_0+s,
 \]
@@ -151,12 +182,19 @@ for
 |s|,|t|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The first two component functions are affine, and the third is the composition of the $C^1$ function $\phi$ with an affine map.
 Thus all three component functions are continuously differentiable.
+
 :::
 
-<1>6. The parametrization passes through the prescribed point:
+:::
+
+::: pf-step
+
+The parametrization passes through the prescribed point:
 \[
 \boxed{
 (x(0,0),y(0,0),z(0,0))
@@ -164,7 +202,9 @@ Thus all three component functions are continuously differentiable.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5,
 \[
 x(0,0)=x_0,
@@ -179,9 +219,14 @@ z(0,0)
 =
 z_0.
 \]
+
 :::
 
-<1>7. The entire parametrized surface lies in the zero level set of $f$:
+:::
+
+::: pf-step
+
+The entire parametrized surface lies in the zero level set of $f$:
 \[
 \boxed{
 f(x(s,t),y(s,t),z(s,t))=0
@@ -189,7 +234,9 @@ f(x(s,t),y(s,t),z(s,t))=0
 \]
 for all sufficiently small $s,t$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4,
 \[
 (x_0+s,y_0+t)\in U.
@@ -208,9 +255,14 @@ y_0+t,
 0.
 \end{aligned}
 \]
+
 :::
 
-<1>8. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \Psi(s,t)
 =
@@ -222,7 +274,9 @@ z(s,t)
 \]
 is a differentiable parametrized surface near $(0,0)$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, $\Psi$ is $C^1$.
 Its partial derivatives are
 \[
@@ -247,20 +301,31 @@ These two vectors are linearly independent because their first two coordinates a
 (0,1).
 \]
 Thus the parametrization has rank $2$ and defines a regular differentiable surface.
+
 :::
 
-<1>9. Therefore there exists a differentiable parametrized surface through $(x_0,y_0,z_0)$ on which
+:::
+
+::: pf-step
+
+Therefore there exists a differentiable parametrized surface through $(x_0,y_0,z_0)$ on which
 \[
 \boxed{f=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>6 gives passage through the required point, step <1>7 places the image in the level set, and step <1>8 proves regularity of the parametrization.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required conclusion.
+
 :::
+
 :::

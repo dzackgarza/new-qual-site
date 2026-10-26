@@ -25,7 +25,6 @@ Prove that
 for Lebesgue-almost every $a\in\mathbb R$.
 :::
 
-::: {.solution}
 For $a\in\mathbb R$, define
 \[
 F(a)
@@ -41,7 +40,11 @@ w(a)
 \frac1{1+a^2}.
 \]
 
-<1>1. There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\mathbb R$,
+::: pf
+
+::: pf-step
+
+There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\mathbb R$,
 \[
 \int_{\mathbb R}
 \frac{w(a)}{|x-a|^\beta}\,da
@@ -49,7 +52,9 @@ w(a)
 C_\beta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral into the regions $|a-x|<1$ and $|a-x|\ge1$.
 
 On the first region, $w(a)\le1$, so after the change of variables $h=a-x$,
@@ -78,9 +83,14 @@ C_\beta
 =
 \frac{2}{1-\beta}+\pi.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_{\mathbb R}w(a)F(a)\,da
 \le
@@ -89,7 +99,9 @@ C_\beta\|f\|_{L^1(\mathbb R)}
 \infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 (a,x)
@@ -121,9 +133,14 @@ C_\beta
 \int_{\mathbb R}|f(x)|\,dx.
 \]
 The right-hand side is finite because $f\in L^1(\mathbb R)$.
+
 :::
 
-<1>3. The set
+:::
+
+::: pf-step
+
+The set
 \[
 E
 \coloneqq
@@ -131,7 +148,9 @@ E
 \]
 has Lebesgue measure zero.
 
-::: {.proof}
+
+::: pf-proof
+
 The weight $w(a)=(1+a^2)^{-1}$ is strictly positive for every $a\in\mathbb R$. If $E$ had positive measure, then
 \[
 w(a)F(a)=\infty
@@ -143,9 +162,14 @@ so the nonnegative integral
 \int_{\mathbb R}w(a)F(a)\,da
 \]
 would be infinite. This contradicts step <1>2. Hence $m(E)=0$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{\mathbb R}
@@ -156,13 +180,19 @@ would be infinite. This contradicts step <1>2. Hence $m(E)=0$.
 \]
 for Lebesgue-almost every $a\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 By definition, the integral is $F(a)$, and step <1>3 shows that $F(a)<\infty$ outside a null set.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

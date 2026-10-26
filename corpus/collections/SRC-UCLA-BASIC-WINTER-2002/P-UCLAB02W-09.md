@@ -25,14 +25,24 @@ Show that
 is linearly independent.
 :::
 
-::: {.solution}
-<1>1. The assertion is true when $m=1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The assertion is true when $m=1$.
+
+
+::: pf-proof
+
 The single vector $v_1$ is nonzero by hypothesis, so the set $\{v_1\}$ is linearly independent.
+
 :::
 
-<1>2. Assume the assertion holds for every collection of $m-1$ eigenvectors belonging to distinct eigenvalues, and suppose
+:::
+
+::: pf-step
+
+Assume the assertion holds for every collection of $m-1$ eigenvectors belonging to distinct eigenvalues, and suppose
 $$
 a_1v_1+\cdots+a_mv_m=0.
 $$
@@ -44,7 +54,9 @@ a_1(\lambda_1-\lambda_m)v_1
 =0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the linear map $T-\lambda_m I$ to the assumed relation. Since
 $$
 Tv_i=\lambda_i v_i,
@@ -54,14 +66,21 @@ $$
 (T-\lambda_m I)v_i=(\lambda_i-\lambda_m)v_i.
 $$
 For $i=m$ this is zero, while for $1\le i<m$ it gives the displayed relation.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 $$
 a_1=\cdots=a_{m-1}=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The eigenvalues $\lambda_1,\ldots,\lambda_{m-1}$ are distinct, so by the induction hypothesis the vectors
 $$
 v_1,\ldots,v_{m-1}
@@ -75,27 +94,45 @@ $$
 \lambda_i-\lambda_m\ne0,
 $$
 so $a_i=0$ for every $i<m$.
+
 :::
 
-<1>4. One also has $a_m=0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+One also has $a_m=0$.
+
+
+::: pf-proof
+
 Substituting the conclusion of step <1>3 into the original relation gives
 $$
 a_mv_m=0.
 $$
 Since $v_m\ne0$, it follows that $a_m=0$.
+
 :::
 
-<1>5. Hence $\{v_1,\ldots,v_m\}$ is linearly independent.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $\{v_1,\ldots,v_m\}$ is linearly independent.
+
+
+::: pf-proof
+
 Steps <1>3--<1>4 show that every linear relation among $v_1,\ldots,v_m$ has all coefficients equal to zero. This is the definition of linear independence.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 supplies the base case, and steps <1>2--<1>5 establish the induction step. Therefore the assertion holds for every $m\ge1$.
+
 :::
+
 :::

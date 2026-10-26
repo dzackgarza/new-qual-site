@@ -21,11 +21,16 @@ Prove that a metric space is sequentially compact if and only if it is complete 
 A metric space is totally bounded when for every $\varepsilon>0$ it can be covered by finitely many balls of radius $\varepsilon$.
 :::
 
-::: {.solution}
-<1>1. Suppose first that $X$ is sequentially compact.
+::: pf
+
+::: pf-step
+
+Suppose first that $X$ is sequentially compact.
 Then $X$ is complete.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $(x_n)$ be a Cauchy sequence in $X$.
 Sequential compactness gives a convergent subsequence
 \[
@@ -64,11 +69,18 @@ Thus
 x_n\to x.
 \]
 Hence every Cauchy sequence converges, so $X$ is complete.
+
 :::
 
-<1>2. If $X$ is sequentially compact, then $X$ is totally bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $X$ is sequentially compact, then $X$ is totally bounded.
+
+
+::: pf-proof
+
 Suppose not.
 Then there exists
 \[
@@ -113,9 +125,14 @@ i\ne j.
 Hence no subsequence can be Cauchy, and therefore no subsequence can converge.
 This contradicts sequential compactness.
 Thus $X$ is totally bounded.
+
 :::
 
-<1>3. Now suppose conversely that $X$ is complete and totally bounded.
+:::
+
+::: pf-step
+
+Now suppose conversely that $X$ is complete and totally bounded.
 Let
 \[
 (x_n)
@@ -123,7 +140,9 @@ Let
 be any sequence in $X$.
 Then $(x_n)$ has a Cauchy subsequence.
 
-::: {.proof}
+
+::: pf-proof
+
 Cover $X$ by finitely many balls of radius
 \[
 \frac12.
@@ -169,24 +188,43 @@ d(y_m,y_n)<\varepsilon
 \]
 for all $m,n\ge k$.
 Thus $(y_k)$ is Cauchy.
+
 :::
 
-<1>4. The Cauchy subsequence from step <1>3 converges in $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Cauchy subsequence from step <1>3 converges in $X$.
+
+
+::: pf-proof
+
 The space $X$ is complete by hypothesis.
 Therefore every Cauchy sequence in $X$, including the subsequence $(y_k)$, converges to a point of $X$.
+
 :::
 
-<1>5. Hence $X$ is sequentially compact.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence $X$ is sequentially compact.
+
+
+::: pf-proof
+
 The original sequence $(x_n)$ was arbitrary.
 Steps <1>3--<1>4 show that every sequence has a convergent subsequence.
 This is the definition of sequential compactness.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 X\text{ is sequentially compact}
@@ -195,13 +233,19 @@ X\text{ is complete and totally bounded}.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>2 prove the forward implication, and steps <1>3--<1>5 prove the converse.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required equivalence.
+
 :::
+
 :::

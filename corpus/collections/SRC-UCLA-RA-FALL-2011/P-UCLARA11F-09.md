@@ -25,7 +25,6 @@ where $dA$ is two-dimensional Lebesgue measure.
 Show that $f$ extends holomorphically to the unit disc $\mathbb D$.
 :::
 
-::: {.solution}
 Since \(f\) is holomorphic on the punctured disk, it has a Laurent expansion
 \[
 \boxed{
@@ -36,7 +35,11 @@ converging on
 0<|z|<1.
 \]
 
-<1>1. Fix
+::: pf
+
+::: pf-step
+
+Fix
 \[
 0<r<1.
 \]
@@ -48,25 +51,39 @@ f(re^{i\theta})
 a_k r^k e^{ik\theta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 z=re^{i\theta}
 \]
 into the Laurent series.
+
 :::
 
-<1>2. The Laurent series converges uniformly on the circle \(|z|=r\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The Laurent series converges uniformly on the circle \(|z|=r\).
+
+
+::: pf-proof
+
 Every compact subset of the annulus
 \[
 0<|z|<1
 \]
 lies in a smaller closed annulus on which the Laurent series converges uniformly. A fixed circle is compact.
+
 :::
 
-<1>3. Therefore Parseval's identity gives
+:::
+
+::: pf-step
+
+Therefore Parseval's identity gives
 \[
 \boxed{
 \frac1{2\pi}
@@ -77,7 +94,9 @@ lies in a smaller closed annulus on which the Laurent series converges uniformly
 |a_k|^2r^{2k}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed \(r\), the function
 \[
 \theta\mapsto f(re^{i\theta})
@@ -87,9 +106,14 @@ has Fourier series with coefficients
 a_k r^k.
 \]
 Uniform convergence permits the usual Fourier/Parseval identity.
+
 :::
 
-<1>4. In polar coordinates,
+:::
+
+::: pf-step
+
+In polar coordinates,
 \[
 \int_{\mathbb D^*}|f(z)|^2\,dA(z)
 =
@@ -99,14 +123,21 @@ Uniform convergence permits the usual Fourier/Parseval identity.
 \,r\,d\theta\,dr.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The planar area element is
 \[
 dA=r\,dr\,d\theta.
 \]
+
 :::
 
-<1>5. Using step <1>3,
+:::
+
+::: pf-step
+
+Using step <1>3,
 \[
 \int_{\mathbb D^*}|f|^2\,dA
 =
@@ -118,11 +149,18 @@ dA=r\,dr\,d\theta.
 r\,dr.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the Parseval identity into step <1>4.
+
 :::
 
-<1>6. Since all summands are nonnegative, Tonelli's theorem gives
+:::
+
+::: pf-step
+
+Since all summands are nonnegative, Tonelli's theorem gives
 \[
 \boxed{
 \int_{\mathbb D^*}|f|^2\,dA
@@ -135,11 +173,18 @@ r^{2k+1}\,dr},
 \]
 where the right side may a priori be \(+\infty\).
 
-::: {.proof}
+
+::: pf-proof
+
 Tonelli permits interchange of the sum and integral for nonnegative functions.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 \[
 k=-1,
 \]
@@ -152,11 +197,18 @@ then
 \infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute \(k=-1\).
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 \[
 k\le-2,
 \]
@@ -169,15 +221,22 @@ so
 \int_0^1r^{2k+1}\,dr=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For any exponent \(a\le-1\),
 \[
 \int_0^1r^a\,dr
 \]
 diverges at \(0\).
+
 :::
 
-<1>9. Hence for every
+:::
+
+::: pf-step
+
+Hence for every
 \[
 k<0,
 \]
@@ -186,15 +245,22 @@ the finiteness assumption forces
 \boxed{a_k=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If some \(a_k\ne0\) with \(k<0\), then the corresponding nonnegative term in the sum in step <1>6 would be
 \[
 2\pi|a_k|^2\cdot\infty=\infty,
 \]
 forcing the whole \(L^2\)-integral to diverge.
+
 :::
 
-<1>10. Therefore the Laurent expansion reduces to
+:::
+
+::: pf-step
+
+Therefore the Laurent expansion reduces to
 \[
 \boxed{
 f(z)=\sum_{k=0}^{\infty}a_k z^k}
@@ -204,21 +270,35 @@ for
 0<|z|<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All negative-power coefficients vanish by step <1>9.
+
 :::
 
-<1>11. The power series
+:::
+
+::: pf-step
+
+The power series
 \[
 \sum_{k=0}^{\infty}a_k z^k
 \]
 converges on the whole unit disk.
 
-::: {.proof}
+
+::: pf-proof
+
 It is the nonnegative part of the Laurent series whose outer radius of convergence is at least \(1\). Thus it converges for every \(|z|<1\), including \(z=0\).
+
 :::
 
-<1>12. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \boxed{
 \widetilde f(z)
@@ -230,39 +310,66 @@ for
 |z|<1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The series is well-defined by step <1>11.
+
 :::
 
-<1>13. The function \(\widetilde f\) is holomorphic on \(\mathbb D\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(\widetilde f\) is holomorphic on \(\mathbb D\).
+
+
+::: pf-proof
+
 A power series is holomorphic on its disk of convergence.
+
 :::
 
-<1>14. On the punctured disk,
+:::
+
+::: pf-step
+
+On the punctured disk,
 \[
 \boxed{
 \widetilde f=f}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 0<|z|<1,
 \]
 the defining power series for \(\widetilde f\) is exactly the Laurent series for \(f\) after the negative coefficients were shown to vanish in step <1>10.
+
 :::
 
-<1>15. Therefore \(f\) extends holomorphically across \(0\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore \(f\) extends holomorphically across \(0\).
+
+
+::: pf-proof
+
 The function \(\widetilde f\) from steps <1>12--<1>14 is a holomorphic extension to the whole disk.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>15 is the required conclusion.
+
 :::
+
 :::

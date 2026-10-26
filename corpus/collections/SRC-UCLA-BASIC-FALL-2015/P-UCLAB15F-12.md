@@ -30,7 +30,6 @@ M=\begin{pmatrix}
 is positive definite.
 :::
 
-::: {.solution}
 Let
 \[
 \mathbf1=
@@ -46,12 +45,18 @@ and let
 D=\operatorname{diag}(1,2,\ldots,n).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{M=D+\mathbf1\mathbf1^t}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix
 \[
 \mathbf1\mathbf1^t
@@ -67,9 +72,14 @@ changes the diagonal entries to
 \]
 while leaving every off-diagonal entry equal to $1$.
 This is exactly $M$.
+
 :::
 
-<1>2. For every vector
+:::
+
+::: pf-step
+
+For every vector
 \[
 x=(x_1,\ldots,x_n)^t\in\mathbb R^n,
 \]
@@ -82,7 +92,9 @@ x^tMx
 \left(\sum_{j=1}^n x_j\right)^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>1,
 \[
 \begin{aligned}
@@ -101,14 +113,21 @@ x^t\mathbf1\mathbf1^tx\\
 \left(\sum_{j=1}^n x_j\right)^2.
 \end{aligned}
 \]
+
 :::
 
-<1>3. If $x\ne0$, then
+:::
+
+::: pf-step
+
+If $x\ne0$, then
 \[
 \sum_{j=1}^n jx_j^2>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 All coefficients
 \[
 j
@@ -119,14 +138,21 @@ If $x\ne0$, at least one coordinate $x_j$ is nonzero, so the corresponding term
 jx_j^2
 \]
 is strictly positive, while every other term is nonnegative.
+
 :::
 
-<1>4. Hence for every nonzero $x$,
+:::
+
+::: pf-step
+
+Hence for every nonzero $x$,
 \[
 \boxed{x^tMx>0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 x^tMx
@@ -137,25 +163,36 @@ x^tMx
 \]
 The first term is strictly positive by step <1>3, and the second is nonnegative.
 Thus their sum is positive.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{M\text{ is positive definite}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A real symmetric matrix is positive definite precisely when
 \[
 x^tMx>0
 \]
 for every nonzero real vector $x$.
 Step <1>4 verifies this condition.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

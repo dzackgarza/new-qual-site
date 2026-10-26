@@ -23,10 +23,15 @@ Characterize all entire functions $f$ such that $|f(z)|>0$ for all sufficiently 
 \]
 :::
 
-::: {.solution}
-<1>1. Such a function $f$ has only finitely many zeros in $\mathbb C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Such a function $f$ has only finitely many zeros in $\mathbb C$.
+
+
+::: pf-proof
+
 By hypothesis, there is $R_0>0$ such that
 \[
 f(z)\ne0
@@ -34,15 +39,22 @@ f(z)\ne0
 (|z|\ge R_0).
 \]
 Thus every zero lies in the compact disk $|z|\le R_0$. Since $f$ is not identically zero and zeros of a nonzero entire function are isolated, there can be only finitely many zeros in that compact disk.
+
 :::
 
-<1>2. There is a polynomial $p$ and an entire function $h$ such that
+:::
+
+::: pf-step
+
+There is a polynomial $p$ and an entire function $h$ such that
 \[
 f(z)=p(z)e^{h(z)},
 \]
 where $p$ has exactly the zeros of $f$, with the same multiplicities.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $a_1,\dots,a_N$ be the zeros of $f$, listed with multiplicity, and set
 \[
 p(z)
@@ -74,9 +86,14 @@ for some nonzero constant $C$. Choosing a logarithm of $C$ and absorbing it into
 g=e^h
 \]
 for an entire function $h$.
+
 :::
 
-<1>3. There are constants $A>0$ and $R_1>0$ such that
+:::
+
+::: pf-step
+
+There are constants $A>0$ and $R_1>0$ such that
 \[
 |\operatorname{Re}h(z)|
 \le
@@ -85,7 +102,9 @@ A|z|
 (|z|\ge R_1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The limsup hypothesis gives constants $C>0$ and $R_1$ such that
 \[
 |\log|f(z)||\le C|z|
@@ -118,9 +137,14 @@ for suitable constants $C_p,C_p'$. Hence
 (C+C_p')|z|.
 \]
 Take $A=C+C_p'$.
+
 :::
 
-<1>4. Write
+:::
+
+::: pf-step
+
+Write
 \[
 h(z)=\sum_{n=0}^\infty c_n z^n.
 \]
@@ -132,7 +156,9 @@ For every integer $k\ge1$ and every sufficiently large $R$,
 \operatorname{Re}h(Re^{i\theta})e^{-ik\theta}\,d\theta.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed $R$, the power series for $h$ converges uniformly on the circle $|z|=R$. Thus
 \[
 \operatorname{Re}h(Re^{i\theta})
@@ -151,16 +177,23 @@ Multiply by $e^{-ik\theta}$ and integrate term-by-term over $[0,2\pi]$. Orthogon
 =
 \pi c_kR^k.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 c_k=0
 \qquad
 (k\ge2).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3 and <1>4, for sufficiently large $R$,
 \[
 \begin{aligned}
@@ -179,9 +212,14 @@ Therefore
 2A R^{1-k}.
 \]
 If $k\ge2$, letting $R\to\infty$ gives $c_k=0$.
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 h(z)=az+b
 \]
@@ -193,21 +231,30 @@ f(z)=p(z)e^{az+b}
 \]
 with $p$ a polynomial.
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>5 shows that the Taylor series of $h$ has no terms of degree at least $2$. Thus
 \[
 h(z)=c_1z+c_0.
 \]
 Rename $a=c_1$ and $b=c_0$, and substitute into the factorization from step <1>2.
+
 :::
 
-<1>7. Conversely, every function
+:::
+
+::: pf-step
+
+Conversely, every function
 \[
 f(z)=p(z)e^{az+b},
 \]
 with $p$ a nonzero polynomial and $a,b\in\mathbb C$, satisfies the two hypotheses.
 
-::: {.proof}
+
+::: pf-proof
+
 Such a function is entire. Its zeros are exactly the finitely many zeros of $p$, so
 \[
 |f(z)|>0
@@ -233,11 +280,15 @@ for suitable constants $C_1,C_2$. Dividing by $|z|$ shows that
 <
 \infty.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>6 prove necessity, and step <1>7 proves sufficiency.
+
 :::
+
 :::

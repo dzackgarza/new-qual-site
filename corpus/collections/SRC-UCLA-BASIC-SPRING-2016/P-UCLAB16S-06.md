@@ -25,7 +25,6 @@ A metric $\rho$ on a metric space $(X,\rho)$ is an ultrametric if
 Prove that every open ball $\{y:\rho(x,y)<r\}$ is closed and every closed ball $\{y:\rho(x,y)\le r\}$ is open.
 :::
 
-::: {.solution}
 Fix
 \[
 x\in X
@@ -45,7 +44,11 @@ and
 \{y\in X:\rho(x,y)\le r\}.
 \]
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 y\notin B(x,r).
 \]
@@ -54,14 +57,21 @@ Then
 \rho(x,y)\ge r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of the defining inequality
 \[
 \rho(x,y)<r.
 \]
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 z\in B(y,\rho(x,y)),
 \]
@@ -70,7 +80,9 @@ then
 \rho(x,z)=\rho(x,y).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption
 \[
 z\in B(y,\rho(x,y))
@@ -103,11 +115,18 @@ forces
 \rho(x,z)\ge\rho(x,y).
 \]
 Thus equality holds.
+
 :::
 
-<1>3. The complement of the open ball $B(x,r)$ is open.
+:::
 
-::: {.proof}
+::: pf-step
+
+The complement of the open ball $B(x,r)$ is open.
+
+
+::: pf-proof
+
 Take
 \[
 y\notin B(x,r).
@@ -139,18 +158,30 @@ B(y,\rho(x,y))
 X\setminus B(x,r).
 \]
 So every point of the complement has an open neighborhood contained in the complement.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{B(x,r)\text{ is closed}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>3 shows that its complement is open.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 \[
 y\in\overline B(x,r).
 \]
@@ -159,11 +190,18 @@ Then
 \rho(x,y)\le r.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the closed ball.
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 z\in B(y,r),
 \]
@@ -172,7 +210,9 @@ then
 z\in\overline B(x,r).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumptions give
 \[
 \rho(y,z)<r
@@ -193,14 +233,21 @@ Thus
 \[
 z\in\overline B(x,r).
 \]
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\overline B(x,r)\text{ is open}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every
 \[
 y\in\overline B(x,r),
@@ -212,11 +259,15 @@ B(y,r)
 \overline B(x,r).
 \]
 Thus every point of the closed ball has an open neighborhood contained in it.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves that every open ball is closed, and step <1>7 proves that every closed ball is open.
+
 :::
+
 :::

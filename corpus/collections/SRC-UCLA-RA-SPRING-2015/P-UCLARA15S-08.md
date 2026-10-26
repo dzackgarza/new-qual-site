@@ -28,7 +28,6 @@ and
 Deduce that $f(z)$ is constant.
 :::
 
-::: {.solution}
 Choose $M\ge0$ such that
 \[
 |f(x)|\le M,
@@ -38,13 +37,24 @@ Choose $M\ge0$ such that
 (x\in\mathbb R).
 \]
 
-<1>1. If $M=0$, then $f\equiv0$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+If $M=0$, then $f\equiv0$.
+
+
+::: pf-proof
+
 If $M=0$, then $f(x)=0$ for every real $x$. The real axis has accumulation points in $\mathbb C$, so the identity theorem gives $f\equiv0$.
+
 :::
 
-<1>2. Assume $M>0$. In the first quadrant
+:::
+
+::: pf-step
+
+Assume $M>0$. In the first quadrant
 \[
 Q
 \coloneqq
@@ -55,7 +65,12 @@ one has
 |f(z)|\le M.
 \]
 
-<2>1. Fix $\varepsilon>0$ and define
+
+::: pf-proof
+
+::: pf-step
+
+Fix $\varepsilon>0$ and define
 \[
 g_\varepsilon(z)
 \coloneqq
@@ -68,15 +83,22 @@ f(z)
 \]
 where the principal branch of the $3/2$-power is used.
 
-::: {.proof}
+
+::: pf-proof
+
 For $z\in Q$, the number
 \[
 e^{-i\pi/4}z
 \]
 has argument in $(-\pi/4,\pi/4)$, so it avoids the negative real axis. The principal $3/2$-power is therefore holomorphic on this rotated quadrant, and hence $g_\varepsilon$ is holomorphic on $Q$ and continuous on its closure.
+
 :::
 
-<2>2. There is a constant
+:::
+
+::: pf-step
+
+There is a constant
 \[
 \delta
 \coloneqq
@@ -91,7 +113,9 @@ R-\varepsilon\delta R^{3/2}
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The growth hypothesis gives
 \[
 |f(z)|\le e^R.
@@ -119,15 +143,22 @@ so
 \delta R^{3/2}.
 \]
 Taking absolute values in the definition of $g_\varepsilon$ gives the estimate.
+
 :::
 
-<2>3. There exists $R_\varepsilon>0$ such that
+:::
+
+::: pf-step
+
+There exists $R_\varepsilon>0$ such that
 \[
 |g_\varepsilon(z)|\le M
 \]
 whenever $z\in\overline Q$ and $|z|\ge R_\varepsilon$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <2>2,
 \[
 |g_\varepsilon(z)|
@@ -137,14 +168,21 @@ R-\varepsilon\delta R^{3/2}
 \right).
 \]
 The exponent tends to $-\infty$ as $R\to\infty$, so the right-hand side tends to $0$. Since $M>0$, it is at most $M$ for all sufficiently large $R$.
+
 :::
 
-<2>4. On the two boundary rays of $Q$,
+:::
+
+::: pf-step
+
+On the two boundary rays of $Q$,
 \[
 |g_\varepsilon(z)|\le M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On either boundary ray, $|f(z)|\le M$ by the definition of $M$. Moreover,
 \[
 \operatorname{Re}
@@ -152,29 +190,43 @@ On either boundary ray, $|f(z)|\le M$ by the definition of $M$. Moreover,
 \ge0,
 \]
 so the exponential multiplier in $g_\varepsilon$ has modulus at most $1$.
+
 :::
 
-<2>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 |g_\varepsilon(z)|\le M
 \qquad
 (z\in Q).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $R\ge R_\varepsilon$ and apply the maximum-modulus principle to the bounded quarter-disk
 \[
 Q\cap\{|z|<R\}.
 \]
 Step <2>4 bounds $|g_\varepsilon|$ by $M$ on the two radial sides, and step <2>3 bounds it by $M$ on the circular side. Hence the same bound holds throughout that quarter-disk. Letting $R\to\infty$ proves the claim on all of $Q$.
+
 :::
 
-<2>6. For every $z\in Q$,
+:::
+
+::: pf-step
+
+For every $z\in Q$,
 \[
 |f(z)|\le M.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <2>5 gives
 \[
 |f(z)|
@@ -190,33 +242,55 @@ For fixed $z$, the real number in the exponent is finite. Letting $\varepsilon\d
 \[
 |f(z)|\le M.
 \]
+
 :::
 
-<2>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <2>6 proves the claim of step <1>2.
+
 :::
 
-<1>3. The bound
+:::
+
+:::
+
+::: pf-step
+
+The bound
 \[
 |f(z)|\le M
 \]
 holds for every $z\in\mathbb C$.
 
-::: {.proof}
+
+::: pf-proof
+
 The argument of step <1>2 depends only on a quadrant being bounded by two rays on which $|f|\le M$. Rotate the construction by $\pi/2$, $\pi$, and $3\pi/2$ to treat the other three quadrants. The real and imaginary axes themselves already satisfy the bound by definition of $M$.
+
 :::
 
-<1>4. The function $f$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is constant.
+
+
+::: pf-proof
+
 By step <1>3, $f$ is a bounded entire function. Liouville's theorem therefore implies that $f$ is constant.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 handles the case $M=0$, and step <1>4 handles the case $M>0$.
+
 :::
+
 :::

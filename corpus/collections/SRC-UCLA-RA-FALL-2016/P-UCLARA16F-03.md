@@ -34,7 +34,6 @@ Here $|z|$ denotes the Euclidean norm of $z\in\mathbb R^d$.
 Show that $E:P(K)\to[0,\infty]$ attains its minimum on $P(K)$ (which could possibly be $\infty$).
 :::
 
-::: {.solution}
 ## Part (a)
 
 Let
@@ -57,21 +56,34 @@ m,\
 \right\}.}
 \]
 
-<1>1. For every \(m\),
+::: pf
+
+::: pf-step
+
+For every \(m\),
 \[
 \boxed{0\le \phi_m\le m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(\phi\) is nonnegative, and the distance term is nonnegative, so the infimum is nonnegative. The outer minimum bounds \(\phi_m\) by \(m\).
+
 :::
 
-<1>2. For every \(x\in X\),
+:::
+
+::: pf-step
+
+For every \(x\in X\),
 \[
 \boxed{\phi_m(x)\le\phi(x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In the infimum defining \(\phi_m(x)\), choose \(y=x\). Then
 \[
 \inf_y
@@ -82,11 +94,18 @@ In the infimum defining \(\phi_m(x)\), choose \(y=x\). Then
 \phi(x).
 \]
 Taking the minimum with \(m\) preserves the inequality.
+
 :::
 
-<1>3. The function \(\phi_m\) is \(m\)-Lipschitz and hence continuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(\phi_m\) is \(m\)-Lipschitz and hence continuous.
+
+
+::: pf-proof
+
 Set
 \[
 g_m(x)
@@ -131,11 +150,18 @@ is \(1\)-Lipschitz, so
 \phi_m=\min\{m,g_m\}
 \]
 is also \(m\)-Lipschitz.
+
 :::
 
-<1>4. The sequence \((\phi_m)\) is pointwise nondecreasing.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence \((\phi_m)\) is pointwise nondecreasing.
+
+
+::: pf-proof
+
 If \(m_2\ge m_1\), then for every \(y\),
 \[
 \phi(y)+m_2 d(x,y)
@@ -156,14 +182,21 @@ Therefore
 \ge
 \min\{m_1,g_{m_1}(x)\}.
 \]
+
 :::
 
-<1>5. If \(\phi(x)<\infty\), then
+:::
+
+::: pf-step
+
+If \(\phi(x)<\infty\), then
 \[
 \boxed{\phi_m(x)\to\phi(x)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 \phi_m(x)\le\phi(x),
@@ -210,14 +243,21 @@ contradicting
 L+2\varepsilon<\phi(x).
 \]
 Hence \(L=\phi(x)\).
+
 :::
 
-<1>6. If \(\phi(x)=+\infty\), then
+:::
+
+::: pf-step
+
+If \(\phi(x)=+\infty\), then
 \[
 \boxed{\phi_m(x)\to+\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that \(\phi_m(x)\) remains bounded along some sequence \(m_j\to\infty\):
 \[
 \phi_{m_j}(x)\le M.
@@ -248,25 +288,31 @@ Lower semicontinuity would imply
 M+1,
 \]
 contradicting \(\phi(x)=+\infty\).
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\phi_m\uparrow\phi}
 \]
 pointwise on \(X\).
 
-::: {.proof}
+
+::: pf-proof
+
 Monotonicity is step <1>4, and pointwise convergence is steps <1>5--<1>6.
+
 :::
 
-Now assume
-\[
-\mu_n\overset{*}{\rightharpoonup}\mu
-\]
-in \(P(X)\).
+:::
 
-<1>8. For each fixed \(m\),
+::: pf-step
+
+For each fixed \(m\),
 \[
 \boxed{
 \int_X\phi_m\,d\mu_n
@@ -274,11 +320,18 @@ in \(P(X)\).
 \int_X\phi_m\,d\mu}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function \(\phi_m\) is bounded and continuous by steps <1>1 and <1>3. Weak-star convergence of probability measures is exactly convergence against continuous functions.
+
 :::
 
-<1>9. Since
+:::
+
+::: pf-step
+
+Since
 \[
 \phi_m\le\phi,
 \]
@@ -289,11 +342,18 @@ one has
 \int_X\phi\,d\mu_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the pointwise inequality from step <1>2 against the positive measure \(\mu_n\).
+
 :::
 
-<1>10. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \int_X\phi_m\,d\mu
@@ -302,11 +362,18 @@ Integrate the pointwise inequality from step <1>2 against the positive measure \
 \int_X\phi\,d\mu_n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take \(n\to\infty\) in step <1>9 and use step <1>8 on the left.
+
 :::
 
-<1>11. By monotone convergence,
+:::
+
+::: pf-step
+
+By monotone convergence,
 \[
 \boxed{
 \int_X\phi\,d\mu
@@ -315,11 +382,18 @@ Take \(n\to\infty\) in step <1>9 and use step <1>8 on the left.
 \int_X\phi_m\,d\mu}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>7 and the monotone convergence theorem.
+
 :::
 
-<1>12. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_X\phi\,d\mu
@@ -328,17 +402,22 @@ Use step <1>7 and the monotone convergence theorem.
 \int_X\phi\,d\mu_n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The right-hand side of step <1>10 is independent of \(m\). Let \(m\to\infty\) and use step <1>11.
+
 :::
 
-## Part (b)
+:::
 
-Assume \(K\subset\mathbb R^d\) is nonempty and compact.
+::: pf-step
 
-<1>13. The space \(P(K)\) is compact in the weak-star topology.
+The space \(P(K)\) is compact in the weak-star topology.
 
-::: {.proof}
+
+::: pf-proof
+
 Identify finite signed Borel measures on \(K\) with the dual \(C(K)^*\) by the Riesz representation theorem. Probability measures lie in the weak-star compact unit ball of \(C(K)^*\) by Banach--Alaoglu.
 
 They form a weak-star closed subset: positivity is preserved under weak-star limits because
@@ -350,25 +429,22 @@ for every continuous \(g\ge0\), and total mass is preserved because
 \mu(K)=\int1\,d\mu.
 \]
 Therefore \(P(K)\) is weak-star compact.
+
 :::
 
-Define the Coulomb kernel
-\[
-\kappa(x,y)
-=
-\begin{cases}
-|x-y|^{-1},&x\ne y,\\
-+\infty,&x=y.
-\end{cases}
-\]
+:::
 
-<1>14. The function
+::: pf-step
+
+The function
 \[
 \kappa:K\times K\to[0,\infty]
 \]
 is lower semicontinuous.
 
-::: {.proof}
+
+::: pf-proof
+
 Off the diagonal it is continuous. If
 \[
 (x_n,y_n)\to(x,x)
@@ -382,9 +458,14 @@ so
 \kappa(x_n,y_n)\to+\infty.
 \]
 Thus the lower-semicontinuity inequality also holds on the diagonal.
+
 :::
 
-<1>15. If
+:::
+
+::: pf-step
+
+If
 \[
 \mu_n\overset{*}{\rightharpoonup}\mu
 \]
@@ -397,7 +478,9 @@ in \(P(K)\), then
 \]
 in \(P(K\times K)\).
 
-::: {.proof}
+
+::: pf-proof
+
 First consider a product function
 \[
 G(x,y)=a(x)b(y)
@@ -428,9 +511,14 @@ which converges to
 Finite linear combinations of product functions form a subalgebra of \(C(K\times K)\) that contains the constants and separates points. By Stone--Weierstrass, they are uniformly dense in \(C(K\times K)\).
 
 Since all the product measures have total mass \(1\), uniform approximation transfers convergence from the dense algebra to every continuous \(G\in C(K\times K)\). Hence the product measures converge weak-star.
+
 :::
 
-<1>16. The energy can be written as
+:::
+
+::: pf-step
+
+The energy can be written as
 \[
 \boxed{
 E(\mu)
@@ -440,13 +528,22 @@ E(\mu)
 d(\mu\otimes\mu)(x,y)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the iterated-integral definition of \(E\), interpreted by Tonelli's theorem for the nonnegative kernel.
+
 :::
 
-<1>17. The functional \(E\) is weak-star lower semicontinuous on \(P(K)\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The functional \(E\) is weak-star lower semicontinuous on \(P(K)\).
+
+
+::: pf-proof
+
 Let
 \[
 \mu_n\overset{*}{\rightharpoonup}\mu.
@@ -463,16 +560,14 @@ E(\mu)
 \le
 \liminf_{n\to\infty}E(\mu_n).
 \]
+
 :::
 
-Let
-\[
-m
-=
-\inf_{\mu\in P(K)}E(\mu)\in[0,\infty].
-\]
+:::
 
-<1>18. Choose a minimizing sequence
+::: pf-step
+
+Choose a minimizing sequence
 \[
 (\mu_n)\subseteq P(K)
 \]
@@ -482,26 +577,40 @@ such that
 E(\mu_n)\to m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(m<\infty\), choose \(\mu_n\) with
 \[
 E(\mu_n)<m+\frac1n.
 \]
 If \(m=\infty\), every probability measure has infinite energy, so any sequence may be chosen.
+
 :::
 
-<1>19. By compactness of \(P(K)\), after passing to a subsequence,
+:::
+
+::: pf-step
+
+By compactness of \(P(K)\), after passing to a subsequence,
 \[
 \boxed{
 \mu_n\overset{*}{\rightharpoonup}\mu}
 \]
 for some \(\mu\in P(K)\).
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>13.
+
 :::
 
-<1>20. Lower semicontinuity gives
+:::
+
+::: pf-step
+
+Lower semicontinuity gives
 \[
 E(\mu)
 \le
@@ -510,37 +619,64 @@ E(\mu)
 m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use step <1>17 and the minimizing property from step <1>18.
+
 :::
 
-<1>21. By definition of the infimum,
+:::
+
+::: pf-step
+
+By definition of the infimum,
 \[
 m\le E(\mu).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The measure \(\mu\) belongs to \(P(K)\).
+
 :::
 
-<1>22. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{E(\mu)=m}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>20--<1>21.
+
 :::
 
-<1>23. Hence \(E\) attains its minimum on \(P(K)\), possibly with value \(+\infty\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence \(E\) attains its minimum on \(P(K)\), possibly with value \(+\infty\).
+
+
+::: pf-proof
+
 Step <1>22 constructs a minimizer.
+
 :::
 
-<1>24. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>12 proves part (a), and step <1>23 proves part (b).
+
 :::
+
 :::

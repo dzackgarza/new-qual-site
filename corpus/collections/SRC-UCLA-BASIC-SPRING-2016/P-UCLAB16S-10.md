@@ -25,8 +25,11 @@ Call $S$ dense if every matrix in $\operatorname{Mat}(3,\mathbb C)$ is a limit o
 2. Prove that the set of matrices with one Jordan block is not dense in $\operatorname{Mat}(3,\mathbb C)$.
 :::
 
-::: {.solution}
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 A\in\operatorname{Mat}(3,\mathbb C).
 \]
@@ -38,11 +41,18 @@ T
 \]
 is upper triangular.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the complex Schur theorem.
+
 :::
 
-<1>2. Write the diagonal entries of $T$ as
+:::
+
+::: pf-step
+
+Write the diagonal entries of $T$ as
 \[
 \lambda_1,\lambda_2,\lambda_3.
 \]
@@ -55,19 +65,28 @@ such that
 |\mu_i-\lambda_i|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each open disk
 \[
 B(\lambda_i,\varepsilon)
 \]
 contains infinitely many points.
 Choose the $\mu_i$ successively, avoiding the finitely many previous choices.
+
 :::
 
-<1>3. Let $T_\varepsilon$ be obtained from $T$ by replacing $\lambda_i$ by $\mu_i$ on the diagonal.
+:::
+
+::: pf-step
+
+Let $T_\varepsilon$ be obtained from $T$ by replacing $\lambda_i$ by $\mu_i$ on the diagonal.
 Then $T_\varepsilon$ has three distinct eigenvalues and is diagonalizable.
 
-::: {.proof}
+
+::: pf-proof
+
 The eigenvalues of an upper-triangular matrix are its diagonal entries.
 Thus
 \[
@@ -77,9 +96,14 @@ Thus
 \]
 They are pairwise distinct by step <1>2.
 A $3\times3$ matrix with three distinct eigenvalues has three linearly independent eigenvectors and is therefore diagonalizable.
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 A_\varepsilon
 =
@@ -91,7 +115,9 @@ A_\varepsilon\to A
 \]
 and each $A_\varepsilon$ has distinct eigenvalues.
 
-::: {.proof}
+
+::: pf-proof
+
 Similarity preserves eigenvalues, so $A_\varepsilon$ has the same three distinct eigenvalues as $T_\varepsilon$.
 Also,
 \[
@@ -107,19 +133,31 @@ Hence
 \[
 A_\varepsilon\to A.
 \]
+
 :::
 
-<1>5. Therefore matrices with distinct eigenvalues are dense in
+:::
+
+::: pf-step
+
+Therefore matrices with distinct eigenvalues are dense in
 \[
 \boxed{\operatorname{Mat}(3,\mathbb C)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $A$ was arbitrary, and step <1>4 constructs matrices with distinct eigenvalues arbitrarily close to it.
 This proves part 1.
+
 :::
 
-<1>6. Let
+:::
+
+::: pf-step
+
+Let
 \[
 D
 =
@@ -127,7 +165,9 @@ D
 \]
 Then there exists an open neighborhood of $D$ in which every matrix has three distinct eigenvalues.
 
-::: {.proof}
+
+::: pf-proof
+
 The discriminant of the characteristic polynomial is a polynomial in its coefficients, and those coefficients are polynomial functions of the matrix entries.
 Thus the discriminant
 \[
@@ -153,11 +193,18 @@ Hence
 \]
 By continuity, $\Delta(A)$ remains nonzero for all matrices $A$ in some open neighborhood of $D$.
 Nonzero discriminant means the characteristic polynomial has no repeated root, so every matrix in that neighborhood has three distinct eigenvalues.
+
 :::
 
-<1>7. Any $3\times3$ matrix with one Jordan block has only one eigenvalue.
+:::
 
-::: {.proof}
+::: pf-step
+
+Any $3\times3$ matrix with one Jordan block has only one eigenvalue.
+
+
+::: pf-proof
+
 A single $3\times3$ Jordan block has the form
 \[
 J_3(\lambda)
@@ -173,30 +220,48 @@ Its characteristic polynomial is
 (t-\lambda)^3.
 \]
 Thus any matrix similar to a single Jordan block has exactly one eigenvalue, of algebraic multiplicity $3$.
+
 :::
 
-<1>8. Hence the open neighborhood from step <1>6 contains no matrix with one Jordan block.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence the open neighborhood from step <1>6 contains no matrix with one Jordan block.
+
+
+::: pf-proof
+
 Every matrix in that neighborhood has three distinct eigenvalues by step <1>6.
 Every matrix with one Jordan block has only one eigenvalue by step <1>7.
 Thus the two sets are disjoint.
+
 :::
 
-<1>9. Therefore the set of matrices with one Jordan block is not dense in
+:::
+
+::: pf-step
+
+Therefore the set of matrices with one Jordan block is not dense in
 \[
 \boxed{\operatorname{Mat}(3,\mathbb C)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A dense subset must meet every nonempty open set.
 Step <1>8 exhibits a nonempty open neighborhood that contains no matrix with one Jordan block.
 This proves part 2.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part 1, and step <1>9 proves part 2.
+
 :::
+
 :::

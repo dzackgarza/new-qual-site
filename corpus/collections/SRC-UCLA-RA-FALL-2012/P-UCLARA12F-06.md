@@ -33,7 +33,6 @@ Using this, show that
 for almost every $x\in\mathbb R$.
 :::
 
-::: {.solution}
 Define
 $$
 D f(x)
@@ -43,13 +42,19 @@ D f(x)
 \int_{-r}^r|f(x-y)-f(x)|\,dy.
 $$
 
-<1>1. If $g\in C_c(\RR)$, then
+::: pf
+
+::: pf-step
+
+If $g\in C_c(\RR)$, then
 $$
 Dg(x)=0
 $$
 for every $x\in\RR$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x$. By continuity of $g$ at $x$, for every $\varepsilon>0$ there is $\delta>0$ such that
 $$
 |g(x-y)-g(x)|<\varepsilon
@@ -59,16 +64,23 @@ $$
 \frac1{2r}\int_{-r}^r|g(x-y)-g(x)|\,dy<\varepsilon.
 $$
 Thus the limsup is $0$.
+
 :::
 
-<1>2. For every $g\in C_c(\RR)$ and almost every $x$,
+:::
+
+::: pf-step
+
+For every $g\in C_c(\RR)$ and almost every $x$,
 $$
 Df(x)
 \le
 M(f-g)(x)+|f(x)-g(x)|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Write $h=f-g$. Then
 $$
 |f(x-y)-f(x)|
@@ -87,16 +99,23 @@ $$
 \end{aligned}
 $$
 Taking the limsup as $r\to0$, using step <1>1 and the definition of the maximal function, yields the inequality.
+
 :::
 
-<1>3. For every $\lambda>0$ and every $g\in C_c(\RR)$,
+:::
+
+::: pf-step
+
+For every $\lambda>0$ and every $g\in C_c(\RR)$,
 $$
 \bigl|\{x:Df(x)>2\lambda\}\bigr|
 \le
 \frac4\lambda\|f-g\|_{L^1}.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Set $h=f-g$. By step <1>2,
 $$
 \{Df>2\lambda\}
@@ -114,14 +133,21 @@ $$
 \le\frac1\lambda\|h\|_1.
 $$
 Adding the bounds proves the claim.
+
 :::
 
-<1>4. For every $\lambda>0$,
+:::
+
+::: pf-step
+
+For every $\lambda>0$,
 $$
 \bigl|\{x:Df(x)>2\lambda\}\bigr|=0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The space $C_c(\RR)$ is dense in $L^1(\RR)$. Given $\varepsilon>0$, choose $g\in C_c(\RR)$ such that
 $$
 \|f-g\|_1<\frac{\varepsilon\lambda}{4}.
@@ -131,26 +157,37 @@ $$
 |\{Df>2\lambda\}|<\varepsilon.
 $$
 Since $\varepsilon>0$ is arbitrary, the set has measure zero.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 Df(x)=0
 \quad\text{for almost every }x\in\RR.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 For each positive rational $q$, step <1>4 shows that the set
 $$
 \{x:Df(x)>q\}
 $$
 has measure zero. Their countable union is the set where $Df(x)>0$. Hence $Df=0$ almost everywhere.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is exactly the required differentiation statement.
+
 :::
+
 :::

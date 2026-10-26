@@ -30,17 +30,27 @@ Show that
 \]
 :::
 
-::: {.solution}
-<1>1. First suppose that $A$ is invertible and define the Schur complement
+::: pf
+
+::: pf-step
+
+First suppose that $A$ is invertible and define the Schur complement
 \[
 E=D-CA^{-1}B.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This definition is available under the temporary assumption that $A$ is invertible.
+
 :::
 
-<1>2. One has the block factorization
+:::
+
+::: pf-step
+
+One has the block factorization
 \[
 \boxed{
 \begin{pmatrix}
@@ -59,7 +69,9 @@ A&B\\
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply the two block matrices.
 The lower-left block is
 \[
@@ -74,9 +86,14 @@ and the lower-right block is
 =
 E.
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 \det M
@@ -85,18 +102,27 @@ E.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The left factor in step <1>2 is block lower triangular with identity matrices on its diagonal, so its determinant is $1$.
 The right side is block upper triangular, so its determinant is
 \[
 \det A\,\det E.
 \]
 Therefore the same is true of $\det M$.
+
 :::
 
-<1>4. Since $M$ is invertible, the Schur complement $E$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+Since $M$ is invertible, the Schur complement $E$ is invertible.
+
+
+::: pf-proof
+
 By step <1>3,
 \[
 \det M
@@ -108,14 +134,21 @@ Hence
 \[
 \det E\ne0.
 \]
+
 :::
 
-<1>5. Under the assumption that $A$ is invertible, the lower-right block of $M^{-1}$ is
+:::
+
+::: pf-step
+
+Under the assumption that $A$ is invertible, the lower-right block of $M^{-1}$ is
 \[
 \boxed{S=E^{-1}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the block factorization
 \[
 M
@@ -147,16 +180,23 @@ Multiplying these inverses in reverse order shows that the lower-right block of 
 \[
 E^{-1}.
 \]
+
 :::
 
-<1>6. Therefore, when $A$ is invertible,
+:::
+
+::: pf-step
+
+Therefore, when $A$ is invertible,
 \[
 \boxed{
 \det(M)\det(S)=\det(A).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3 and <1>5,
 \[
 \begin{aligned}
@@ -167,9 +207,14 @@ By steps <1>3 and <1>5,
 \det(A).
 \end{aligned}
 \]
+
 :::
 
-<1>7. Now drop the assumption that $A$ is invertible.
+:::
+
+::: pf-step
+
+Now drop the assumption that $A$ is invertible.
 For real or complex $t$, define
 \[
 M_t
@@ -189,7 +234,9 @@ M_t
 \]
 are invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant
 \[
 \det(A+tI)
@@ -218,9 +265,14 @@ Therefore one may choose a sequence
 t_j\to0
 \]
 avoiding the finitely many zeros of both polynomials.
+
 :::
 
-<1>8. For such a sequence $t_j$, write
+:::
+
+::: pf-step
+
+For such a sequence $t_j$, write
 \[
 M_{t_j}^{-1}
 =
@@ -236,21 +288,30 @@ Then
 \det(A+t_jI).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each $j$, the upper-left block
 \[
 A+t_jI
 \]
 is invertible, and $M_{t_j}$ is invertible.
 Therefore step <1>6 applies to $M_{t_j}$.
+
 :::
 
-<1>9. One has
+:::
+
+::: pf-step
+
+One has
 \[
 M_{t_j}^{-1}\to M^{-1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 M_{t_j}\to M
@@ -260,26 +321,40 @@ Therefore
 \[
 M_{t_j}^{-1}\to M^{-1}.
 \]
+
 :::
 
-<1>10. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 S_j\to S.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The lower-right $k\times k$ block is obtained by selecting fixed matrix entries.
 Entrywise convergence of the full inverse matrices in step <1>9 therefore gives entrywise convergence of the corresponding blocks.
+
 :::
 
-<1>11. Taking limits in step <1>8 gives
+:::
+
+::: pf-step
+
+Taking limits in step <1>8 gives
 \[
 \boxed{
 \det(M)\det(S)=\det(A).
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant is continuous in the matrix entries.
 Thus
 \[
@@ -297,11 +372,15 @@ Take the limit
 j\to\infty
 \]
 in the identity from step <1>8.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 proves the identity without any invertibility assumption on $A$.
+
 :::
+
 :::

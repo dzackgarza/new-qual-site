@@ -28,8 +28,11 @@ defines an inner product on $V$.
 (b) Find an orthonormal basis of $V$.
 :::
 
-::: {.solution}
-<1>1. For $f,g\in V$, the quantity
+::: pf
+
+::: pf-step
+
+For $f,g\in V$, the quantity
 \[
 \langle f,g\rangle
 =
@@ -42,7 +45,9 @@ is conjugate symmetric:
 \overline{\langle g,f\rangle}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 \[
 \begin{aligned}
 \overline{\langle g,f\rangle}
@@ -57,11 +62,18 @@ is conjugate symmetric:
 \langle f,g\rangle.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The form is linear in the first variable and conjugate-linear in the second.
+:::
 
-::: {.proof}
+::: pf-step
+
+The form is linear in the first variable and conjugate-linear in the second.
+
+
+::: pf-proof
+
 For $\alpha,\beta\in\mathbb C$,
 \[
 \begin{aligned}
@@ -83,15 +95,22 @@ Similarly,
 +
 \overline{\beta}\langle f,h\rangle.
 \]
+
 :::
 
-<1>3. For every $f\in V$,
+:::
+
+::: pf-step
+
+For every $f\in V$,
 \[
 \langle f,f\rangle\ge0,
 \]
 with equality if and only if $f=0$.
 
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 \langle f,f\rangle
@@ -108,9 +127,14 @@ Hence $f(t)=0$ for every $t$ in that interval.
 A polynomial vanishing on infinitely many points is the zero polynomial.
 Thus $f=0$.
 The converse is immediate.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \langle f,g\rangle
@@ -120,11 +144,18 @@ The converse is immediate.
 \]
 defines an inner product on $V$.
 
-::: {.proof}
+
+::: pf-proof
+
 Steps <1>1--<1>3 verify conjugate symmetry, sesquilinearity, and positive definiteness.
+
 :::
 
-<1>5. Define
+:::
+
+::: pf-step
+
+Define
 \[
 p_0(t)=1,
 \qquad
@@ -137,7 +168,9 @@ p_3(t)=5t^3-3t.
 \]
 Then $p_0,p_1,p_2,p_3$ are pairwise orthogonal.
 
-::: {.proof}
+
+::: pf-proof
+
 The functions $p_0,p_2$ are even and $p_1,p_3$ are odd.
 Hence every inner product between one even and one odd polynomial vanishes by symmetry of the interval.
 
@@ -172,9 +205,14 @@ Also,
 \end{aligned}
 \]
 Thus all distinct pairs are orthogonal.
+
 :::
 
-<1>6. Their squared norms are
+:::
+
+::: pf-step
+
+Their squared norms are
 \[
 \|p_0\|^2=2,
 \qquad
@@ -186,7 +224,9 @@ Thus all distinct pairs are orthogonal.
 \|p_3\|^2=\frac87.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $p_0$ and $p_1$,
 \[
 \|p_0\|^2
@@ -247,9 +287,14 @@ For $p_3$,
 \frac87.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Therefore an orthonormal basis is
+:::
+
+::: pf-step
+
+Therefore an orthonormal basis is
 \[
 \boxed{
 \left\{
@@ -264,7 +309,9 @@ For $p_3$,
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, the four displayed polynomials are mutually orthogonal.
 Step <1>6 gives the normalization factors.
 Their degrees are
@@ -274,11 +321,15 @@ Their degrees are
 so they are linearly independent.
 Since $\dim_{\mathbb C}V=4$, they form a basis.
 After normalization, it is orthonormal.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>7 proves part (b).
+
 :::
+
 :::

@@ -25,7 +25,6 @@ Show that
 converges to a finite limit as $N\to\infty$.
 :::
 
-::: {.solution}
 Define
 \[
 D_N
@@ -35,7 +34,11 @@ D_N
 \sum_{n=1}^Nf(n).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 D_N
 =
@@ -46,7 +49,9 @@ f(n)-\int_n^{n+1}f(x)\,dx
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split the integral into unit intervals:
 \[
 \int_1^{N+1}f(x)\,dx
@@ -59,16 +64,23 @@ Subtract
 \sum_{n=1}^Nf(n)
 \]
 and collect the terms.
+
 :::
 
-<1>2. For every $n\ge1$,
+:::
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 0
 \le
 f(n)-\int_n^{n+1}f(x)\,dx.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is decreasing,
 \[
 f(x)\le f(n)
@@ -83,16 +95,23 @@ Therefore
 \le
 f(n).
 \]
+
 :::
 
-<1>3. For every $n\ge1$,
+:::
+
+::: pf-step
+
+For every $n\ge1$,
 \[
 f(n)-\int_n^{n+1}f(x)\,dx
 \le
 f(n)-f(n+1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is decreasing,
 \[
 f(x)\ge f(n+1)
@@ -108,9 +127,14 @@ Hence
 f(n+1).
 \]
 Subtract from $f(n)$.
+
 :::
 
-<1>4. The partial sums
+:::
+
+::: pf-step
+
+The partial sums
 \[
 S_N
 =
@@ -121,17 +145,26 @@ f(n)-\int_n^{n+1}f(x)\,dx
 \]
 form an increasing sequence.
 
-::: {.proof}
+
+::: pf-proof
+
 Every summand is nonnegative by step <1>2.
 Therefore
 \[
 S_{N+1}\ge S_N.
 \]
+
 :::
 
-<1>5. The sequence $(S_N)$ is bounded above by $f(1)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(S_N)$ is bounded above by $f(1)$.
+
+
+::: pf-proof
+
 By step <1>3,
 \[
 \begin{aligned}
@@ -149,20 +182,32 @@ because
 \[
 f(N+1)\ge0.
 \]
+
 :::
 
-<1>6. Hence $(S_N)$ converges to a finite limit
+:::
+
+::: pf-step
+
+Hence $(S_N)$ converges to a finite limit
 \[
 S.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $(S_N)$ is increasing.
 By step <1>5, it is bounded above.
 The monotone convergence theorem for real sequences therefore gives a finite limit.
+
 :::
 
-<1>7. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \boxed{
 D_N\to -S
@@ -173,15 +218,22 @@ as
 N\to\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 D_N=-S_N.
 \]
 Take the limit from step <1>6.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_1^{N+1}f(x)\,dx
@@ -191,13 +243,19 @@ Take the limit from step <1>6.
 \]
 converges to a finite limit.
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the required conclusion.
+
 :::
+
 :::

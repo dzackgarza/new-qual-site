@@ -20,30 +20,42 @@ audit:
 Problem 9. Let $A\neq0$ be an $n\times n$ complex matrix. Prove that there is a matrix $B$ such that $B$ and $A+B$ have no eigenvalues in common.
 :::
 
-::: {.solution}
-<1>1. If $A$ is invertible, the choice
+::: pf
+
+::: pf-step
+
+If $A$ is invertible, the choice
 \[
 \boxed{B=0}
 \]
 works.
 
-::: {.proof}
+
+::: pf-proof
+
 The zero matrix has only the eigenvalue $0$.
 If $A$ is invertible, then $0$ is not an eigenvalue of
 \[
 A+B=A.
 \]
 Thus the spectra are disjoint.
+
 :::
 
-<1>2. Assume henceforth that $A$ is singular and nonzero.
+:::
+
+::: pf-step
+
+Assume henceforth that $A$ is singular and nonzero.
 Then there exists a vector $v$ such that
 \[
 Av\ne0
 \]
 and $Av$ is not a scalar multiple of $v$.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose no such vector existed.
 Then every nonzero vector $v$ with $Av\ne0$ would satisfy
 \[
@@ -70,9 +82,14 @@ A=\lambda I.
 \]
 Since $A$ is singular, $\lambda=0$, contradicting $A\ne0$.
 Therefore the required $v$ exists.
+
 :::
 
-<1>3. Choose a basis
+:::
+
+::: pf-step
+
+Choose a basis
 \[
 e_1,\ldots,e_n
 \]
@@ -82,7 +99,9 @@ e_1=v
 \]
 and the coefficient of $e_n$ in $Ae_1$ is nonzero.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, the vectors
 \[
 v,\ Av
@@ -103,9 +122,14 @@ so the matrix entry in row $n$, column $1$ is
 \[
 a_{n1}=1\ne0.
 \]
+
 :::
 
-<1>4. In the basis from step <1>3, let
+:::
+
+::: pf-step
+
+In the basis from step <1>3, let
 \[
 N=
 \begin{pmatrix}
@@ -118,7 +142,9 @@ N=
 \]
 Then $N$ is nilpotent and has only the eigenvalue $0$.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $N$ is strictly upper triangular.
 Hence
 \[
@@ -129,15 +155,22 @@ Any eigenvalue $\lambda$ satisfies
 \lambda^n=0,
 \]
 so $\lambda=0$.
+
 :::
 
-<1>5. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 \[
 p(t)=\det(A+tN)
 \]
 is not identically zero.
 
-::: {.proof}
+
+::: pf-proof
+
 Consider the coefficient of
 \[
 t^{n-1}
@@ -166,15 +199,22 @@ By step <1>3,
 a_{n1}\ne0.
 \]
 Hence $p(t)$ is a nonzero polynomial.
+
 :::
 
-<1>6. There exists $t\in\mathbb C$ such that
+:::
+
+::: pf-step
+
+There exists $t\in\mathbb C$ such that
 \[
 A+tN
 \]
 is invertible.
 
-::: {.proof}
+
+::: pf-proof
+
 The nonzero polynomial $p(t)$ from step <1>5 has only finitely many roots.
 Choose $t$ that is not one of them.
 Then
@@ -185,15 +225,22 @@ p(t)
 \ne0.
 \]
 Thus $A+tN$ is invertible.
+
 :::
 
-<1>7. For such a $t$, set
+:::
+
+::: pf-step
+
+For such a $t$, set
 \[
 \boxed{B=tN}.
 \]
 Then $B$ and $A+B$ have no eigenvalues in common.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, $B=tN$ is nilpotent and therefore has only the eigenvalue $0$.
 By step <1>6,
 \[
@@ -208,11 +255,15 @@ Hence
 =
 \varnothing.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>1 handles the invertible case, and steps <1>2--<1>7 handle the singular nonzero case.
+
 :::
+
 :::

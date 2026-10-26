@@ -23,7 +23,6 @@ x ^ { 2 } + y ^ { 2 } + z ^ { 2 } \leq 4 , \qquad x ^ { 2 } - 2 x + y ^ { 2 } + 
 $$
 :::
 
-::: {.solution}
 Let
 \[
 B_2=\{(x,y,z):x^2+y^2+z^2\le4\}
@@ -33,9 +32,15 @@ and
 B_1=\{(x,y,z):(x-1)^2+y^2+z^2\le1\}.
 \]
 
-<1>1. The second inequality is equivalent to being outside the interior of $B_1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The second inequality is equivalent to being outside the interior of $B_1$.
+
+
+::: pf-proof
+
 Complete the square:
 \[
 x^2-2x+y^2+z^2
@@ -50,11 +55,18 @@ if and only if
 \[
 (x-1)^2+y^2+z^2\ge1.
 \]
+
 :::
 
-<1>2. The small ball $B_1$ is contained in the large ball $B_2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The small ball $B_1$ is contained in the large ball $B_2$.
+
+
+::: pf-proof
+
 Write a point of $B_1$ as
 \[
 p=e_1+u,
@@ -73,15 +85,22 @@ Then
 =2.
 \]
 Hence $p\in B_2$.
+
 :::
 
-<1>3. The plane
+:::
+
+::: pf-step
+
+The plane
 \[
 z=x
 \]
 passes through the center of $B_2$ and divides $B_2$ into two congruent halves.
 
-::: {.proof}
+
+::: pf-proof
+
 The plane contains the origin.
 Reflection across this plane preserves Euclidean distance from the origin and interchanges the halfspaces
 \[
@@ -90,9 +109,14 @@ z\ge x
 z\le x.
 \]
 Thus the two pieces of the centered ball $B_2$ have equal volume.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \operatorname{Vol}(B_2\cap\{z\ge x\})
 =
@@ -101,7 +125,9 @@ Thus the two pieces of the centered ball $B_2$ have equal volume.
 \frac{16\pi}{3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The volume of a radius-$2$ ball is
 \[
 \frac43\pi 2^3
@@ -109,9 +135,14 @@ The volume of a radius-$2$ ball is
 \frac{32\pi}{3}.
 \]
 Apply step <1>3.
+
 :::
 
-<1>5. Let
+:::
+
+::: pf-step
+
+Let
 \[
 \nu=\frac1{\sqrt2}(-1,0,1),
 \]
@@ -125,7 +156,9 @@ of $B_1$,
 \nu\cdot c=-\frac1{\sqrt2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inequality
 \[
 z\ge x
@@ -143,9 +176,14 @@ Then
 =
 -\frac1{\sqrt2}.
 \]
+
 :::
 
-<1>6. In coordinates centered at $c$ with first coordinate
+:::
+
+::: pf-step
+
+In coordinates centered at $c$ with first coordinate
 \[
 s=\nu\cdot(p-c),
 \]
@@ -158,7 +196,9 @@ is the spherical cap
 \frac1{\sqrt2}\le s\le1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $p\in B_1$,
 \[
 \|p-c\|\le1.
@@ -180,9 +220,14 @@ this condition becomes
 s\ge\frac1{\sqrt2}.
 \]
 Inside the unit ball centered at $c$, the coordinate $s$ ranges from $-1$ to $1$.
+
 :::
 
-<1>7. The volume of this cap is
+:::
+
+::: pf-step
+
+The volume of this cap is
 \[
 \boxed{
 \operatorname{Vol}(B_1\cap\{z\ge x\})
@@ -191,7 +236,9 @@ Inside the unit ball centered at $c$, the coordinate $s$ ranges from $-1$ to $1$
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At fixed coordinate $s$, the cross-section of the unit ball is a disk of radius
 \[
 \sqrt{1-s^2},
@@ -220,9 +267,14 @@ s-\frac{s^3}{3}
 \frac{\pi}{12}(8-5\sqrt2).
 \end{aligned}
 \]
+
 :::
 
-<1>8. The required region has volume
+:::
+
+::: pf-step
+
+The required region has volume
 \[
 \boxed{
 \frac{16\pi}{3}
@@ -233,7 +285,9 @@ s-\frac{s^3}{3}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1--<1>2, the desired region is
 \[
 \bigl(B_2\cap\{z\ge x\}\bigr)
@@ -245,11 +299,15 @@ Since $B_1\subseteq B_2$, the part removed is exactly
 B_1\cap\{z\ge x\}.
 \]
 Subtract the cap volume from step <1>7 from the half-ball volume in step <1>4.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 is the requested volume.
+
 :::
+
 :::

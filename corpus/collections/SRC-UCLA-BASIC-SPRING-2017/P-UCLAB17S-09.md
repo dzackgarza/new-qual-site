@@ -26,7 +26,6 @@ Let $(X,d)$ be a bounded metric space and suppose $C(X)$, with the supremum norm
 (b) Deduce that $X$ is separable.
 :::
 
-::: {.solution}
 For each
 \[
 x\in X,
@@ -38,9 +37,15 @@ define the distance function
 y\in X.
 \]
 
-<1>1. Each $\phi_x$ belongs to $C(X)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Each $\phi_x$ belongs to $C(X)$.
+
+
+::: pf-proof
+
 The reverse triangle inequality gives
 \[
 |\phi_x(y)-\phi_x(z)|
@@ -61,19 +66,31 @@ Hence
 0\le\phi_x(y)\le D,
 \]
 so $\phi_x$ is bounded and belongs to the supremum-norm space $C(X)$.
+
 :::
 
-<1>2. Since $C(X)$ is separable, choose a countable dense set
+:::
+
+::: pf-step
+
+Since $C(X)$ is separable, choose a countable dense set
 \[
 \mathcal D=\{g_1,g_2,\ldots\}
 \subseteq C(X).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of separability.
+
 :::
 
-<1>3. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 \varepsilon>0.
 \]
@@ -98,23 +115,32 @@ with
 \frac{\varepsilon}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each such $j$, the intersection condition supplies at least one
 \[
 \phi_z\in\Phi
 \]
 inside the ball of radius $\varepsilon/2$ around $g_j$.
 Choose one corresponding point $z_j$.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 Z_\varepsilon
 \]
 be the set of all selected points $z_j$.
 Then $Z_\varepsilon$ is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 At most one point was chosen for each
 \[
 j\in\mathbb N.
@@ -124,9 +150,14 @@ Thus
 Z_\varepsilon
 \]
 is the image of a subset of $\mathbb N$ and is countable.
+
 :::
 
-<1>5. For every
+:::
+
+::: pf-step
+
+For every
 \[
 x\in X,
 \]
@@ -141,7 +172,9 @@ such that
 \varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\mathcal D$ is dense in $C(X)$, choose $g_j$ with
 \[
 \|\phi_x-g_j\|_\infty
@@ -164,9 +197,14 @@ The triangle inequality gives
 <
 \varepsilon.
 \]
+
 :::
 
-<1>6. Hence for every
+:::
+
+::: pf-step
+
+Hence for every
 \[
 x\in X,
 \]
@@ -183,7 +221,9 @@ satisfies
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The supremum-norm inequality in step <1>5 means precisely that
 \[
 \sup_{y\in X}
@@ -192,9 +232,14 @@ The supremum-norm inequality in step <1>5 means precisely that
 \varepsilon.
 \]
 This proves part (a).
+
 :::
 
-<1>7. For every positive integer $m$, choose the countable set
+:::
+
+::: pf-step
+
+For every positive integer $m$, choose the countable set
 \[
 Z_{1/m}
 \]
@@ -206,18 +251,27 @@ Z
 \]
 Then $Z$ is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 Each
 \[
 Z_{1/m}
 \]
 is countable by step <1>4.
 A countable union of countable sets is countable.
+
 :::
 
-<1>8. The set $Z$ is dense in $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $Z$ is dense in $X$.
+
+
+::: pf-proof
+
 Fix
 \[
 x\in X
@@ -261,21 +315,32 @@ d(x,z)
 \eta.
 \]
 Thus every open ball around $x$ meets $Z$.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{X\text{ is separable}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>7 gives a countable subset $Z\subseteq X$, and step <1>8 shows that it is dense.
 This is the definition of separability.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::

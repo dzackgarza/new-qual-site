@@ -32,7 +32,6 @@ F_{N,\varepsilon}=\{y\in[0,1]:|f_n(y)-f_m(y)|\le\varepsilon\text{ for all }n,m>N
 (b) Prove that $f$ cannot be the characteristic function $\chi_{\mathbb Q\cap[0,1]}$, where $\mathbb Q$ is the set of rational numbers.
 :::
 
-::: {.solution}
 Fix \(\varepsilon>0\). For \(N\ge1\), set
 \[
 F_N=F_{N,\varepsilon}
@@ -40,12 +39,18 @@ F_N=F_{N,\varepsilon}
 \text{ for all }n,m>N\right\}.
 \]
 
-<1>1. Each \(F_N\) is closed in \([0,1]\), the sequence \((F_N)\) is increasing, and
+::: pf
+
+::: pf-step
+
+Each \(F_N\) is closed in \([0,1]\), the sequence \((F_N)\) is increasing, and
 \[
 \bigcup_{N=1}^\infty F_N=[0,1].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed \(n,m\), continuity of \(f_n-f_m\) shows that
 \[
 \{y:|f_n(y)-f_m(y)|\le\varepsilon\}
@@ -53,15 +58,22 @@ For fixed \(n,m\), continuity of \(f_n-f_m\) shows that
 is closed. The set \(F_N\) is the intersection of these closed sets over all \(n,m>N\), so it is closed. The inclusions \(F_N\subseteq F_{N+1}\) are immediate.
 
 For each fixed \(y\in[0,1]\), the scalar sequence \(f_n(y)\) converges and hence is Cauchy. Therefore there is some \(N\) for which \(|f_n(y)-f_m(y)|\le\varepsilon\) whenever \(n,m>N\), so \(y\in F_N\).
+
 :::
 
-<1>2. The set
+:::
+
+::: pf-step
+
+The set
 \[
 D_\varepsilon=(0,1)\cap\bigcup_{N=1}^\infty\operatorname{Int}_{[0,1]}(F_N)
 \]
 is dense in \([0,1]\).
 
-::: {.proof}
+
+::: pf-proof
+
 It is enough to show that \(\bigcup_N\operatorname{Int}(F_N)\) meets every nonempty relatively open subset of \([0,1]\). Let \(U\subseteq[0,1]\) be nonempty and relatively open. Choose a nondegenerate closed interval \(J\subseteq U\). By step <1>1,
 \[
 J=\bigcup_{N=1}^\infty(F_N\cap J),
@@ -69,15 +81,22 @@ J=\bigcup_{N=1}^\infty(F_N\cap J),
 where every \(F_N\cap J\) is closed in the complete metric space \(J\). By the [[FT-6WPJI|Baire category theorem]], some \(F_N\cap J\) has nonempty interior relative to \(J\). Since \(J\subseteq U\), this yields a nonempty relatively open interval contained in \(U\cap F_N\), hence a point of \(U\cap\operatorname{Int}_{[0,1]}(F_N)\).
 
 Thus the union of the interiors is dense. Intersecting it with the dense open set \((0,1)\) leaves a dense subset of \([0,1]\), proving the claim.
+
 :::
 
-<1>3. If \(x\in D_\varepsilon\), then there are an open interval \(I\ni x\) with \(I\subset(0,1)\) and an integer \(N_x\) such that
+:::
+
+::: pf-step
+
+If \(x\in D_\varepsilon\), then there are an open interval \(I\ni x\) with \(I\subset(0,1)\) and an integer \(N_x\) such that
 \[
 \sup_{y\in I}|f_n(y)-f(y)|\le\varepsilon
 \qquad(n>N_x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By the definition of \(D_\varepsilon\), choose \(N_x\) and an open interval \(I\ni x\) such that \(I\subseteq F_{N_x}\cap(0,1)\). Then, for every \(y\in I\) and every \(n,m>N_x\),
 \[
 |f_n(y)-f_m(y)|\le\varepsilon.
@@ -87,20 +106,34 @@ Fix \(n>N_x\) and let \(m\to\infty\). Since \(f_m(y)\to f(y)\),
 |f_n(y)-f(y)|\le\varepsilon
 \]
 for every \(y\in I\). Taking the supremum over \(I\) proves the assertion.
+
 :::
 
-<1>4. Part (a) follows: for every \(\varepsilon>0\), the dense set \(\boxed{D_\varepsilon}\) from step <1>2 has the required local uniform-tail property.
+:::
 
-::: {.proof}
+::: pf-step
+
+Part (a) follows: for every \(\varepsilon>0\), the dense set \(\boxed{D_\varepsilon}\) from step <1>2 has the required local uniform-tail property.
+
+
+::: pf-proof
+
 This is exactly step <1>3 for every \(x\in D_\varepsilon\).
+
 :::
 
-<1>5. No continuous function \(g\) on a nonempty open interval \(I\subseteq[0,1]\) can satisfy
+:::
+
+::: pf-step
+
+No continuous function \(g\) on a nonempty open interval \(I\subseteq[0,1]\) can satisfy
 \[
 \sup_{y\in I}|g(y)-\chi_{\mathbb Q\cap[0,1]}(y)|<\frac12.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose such a \(g\) existed. Fix \(x\in I\). There are sequences of rational points \(q_j\in I\) and irrational points \(r_j\in I\) with \(q_j\to x\) and \(r_j\to x\). The displayed bound gives
 \[
 g(q_j)>\frac12,
@@ -114,21 +147,32 @@ g(q_j)\ge1-c,
 g(r_j)\le c.
 \]
 Continuity at \(x\) would imply simultaneously \(g(x)\ge1-c\) and \(g(x)\le c\), impossible because \(1-c>c\).
+
 :::
 
-<1>6. The pointwise limit \(f\) cannot equal \(\boxed{\chi_{\mathbb Q\cap[0,1]}}\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The pointwise limit \(f\) cannot equal \(\boxed{\chi_{\mathbb Q\cap[0,1]}}\).
+
+
+::: pf-proof
+
 Assume otherwise and apply part (a), step <1>4, with \(\varepsilon=1/3\). Choose \(x\in D_{1/3}\), and let \(I\ni x\) and \(N_x\) be supplied by step <1>3. For any \(n>N_x\), the continuous function \(f_n\) satisfies
 \[
 \sup_{y\in I}|f_n(y)-\chi_{\mathbb Q\cap[0,1]}(y)|\le\frac13<\frac12,
 \]
 contradicting step <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (a), and step <1>6 proves part (b).
+
 :::
+
 :::

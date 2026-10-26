@@ -24,8 +24,11 @@ Does there exist a function $f(z)$ holomorphic in the disk $|z|<1$ such that
 Either find one or prove that none exist.
 :::
 
-::: {.solution}
-<1>1. If such a function $f$ existed, all of its zeros would lie in some smaller closed disk
+::: pf
+
+::: pf-step
+
+If such a function $f$ existed, all of its zeros would lie in some smaller closed disk
 \[
 \{|z|\le r\}
 \qquad
@@ -33,7 +36,9 @@ Either find one or prove that none exist.
 \]
 and there would be only finitely many of them, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 The boundary-growth hypothesis implies that there is $r<1$ such that
 \[
 |f(z)|>1
@@ -41,9 +46,14 @@ The boundary-growth hypothesis implies that there is $r<1$ such that
 (r<|z|<1).
 \]
 Hence every zero lies in $|z|\le r$. The function is not identically zero because its modulus tends to infinity near the boundary. Zeros of a nonzero holomorphic function are isolated, so a compact subset of the disk contains only finitely many zeros.
+
 :::
 
-<1>2. Let $a_1,\dots,a_N$ be those zeros, listed with multiplicity, and set
+:::
+
+::: pf-step
+
+Let $a_1,\dots,a_N$ be those zeros, listed with multiplicity, and set
 \[
 g(z)
 \coloneqq
@@ -57,7 +67,9 @@ Then $g$ is holomorphic and nonvanishing on $\mathbb D$, and
 (|z|\to1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The quotient has removable singularities at the zeros $a_j$, and after removal it is holomorphic with no zeros in $\mathbb D$.
 
 For $|z|<1$,
@@ -76,9 +88,14 @@ Therefore
 \frac{|f(z)|}{C},
 \]
 and the asserted boundary divergence follows from that of $f$.
+
 :::
 
-<1>3. The reciprocal
+:::
+
+::: pf-step
+
+The reciprocal
 \[
 h\coloneqq\frac1g
 \]
@@ -89,7 +106,9 @@ h(\zeta)=0
 (|\zeta|=1).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $g$ is holomorphic and nonvanishing on $\mathbb D$, the function $h=1/g$ is holomorphic there. Step <1>2 gives
 \[
 |h(z)|
@@ -100,28 +119,46 @@ Since $g$ is holomorphic and nonvanishing on $\mathbb D$, the function $h=1/g$ i
 (|z|\to1).
 \]
 Thus defining $h=0$ on the unit circle gives a continuous extension to the closed disk.
+
 :::
 
-<1>4. Such an $h$ cannot exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+Such an $h$ cannot exist.
+
+
+::: pf-proof
+
 The continuous function $|h|$ on the compact disk $\overline{\mathbb D}$ attains its maximum. Since $h$ vanishes on the boundary, if $h$ were not identically zero then its positive maximum would be attained at an interior point. The maximum-modulus principle would then force $h$ to be constant, which is impossible for a nonzero constant with zero boundary values. Hence $h\equiv0$.
 
 But $h=1/g$ on $\mathbb D$, so $h$ cannot vanish anywhere there. This is a contradiction.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\text{no such holomorphic function }f\text{ exists}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumption of existence leads to the contradiction in step <1>4.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 answers the problem.
+
 :::
+
 :::

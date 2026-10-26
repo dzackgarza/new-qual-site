@@ -21,8 +21,11 @@ Show that for every $0<t<\infty$, the number of solutions $z\in\Omega$ to
 is finite and independent of $t$.
 :::
 
-::: {.solution}
-<1>1. The principal logarithm is a biholomorphism
+::: pf
+
+::: pf-step
+
+The principal logarithm is a biholomorphism
 \[
 \log:
 \Omega
@@ -38,15 +41,22 @@ with inverse
 w\longmapsto e^w.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the defining property of the branch of the logarithm on the slit plane
 \[
 \mathbb C\setminus(-\infty,0].
 \]
 Its argument takes values in $(-\pi,\pi)$, so its image is exactly the stated horizontal strip, and exponentiation is its inverse.
+
 :::
 
-<1>2. A point $z\in\Omega$ solves
+:::
+
+::: pf-step
+
+A point $z\in\Omega$ solves
 \[
 \log z=\frac tz
 \]
@@ -57,7 +67,9 @@ w e^w=t,
 w=\log z\in S.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 z=e^w,
@@ -73,9 +85,14 @@ equivalently
 w e^w=t.
 \]
 The equivalence is reversible because $z=e^w$ and $w=\log z$ are inverse coordinates by step <1>1.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 w=a+ib\in S
 \]
@@ -88,7 +105,9 @@ Then
 a\sin b+b\cos b=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 \begin{aligned}
@@ -108,14 +127,21 @@ a\sin b+b\cos b
 \end{aligned}
 \]
 Because $t$ is real, the imaginary part must vanish.
+
 :::
 
-<1>4. No solution in the strip can have
+:::
+
+::: pf-step
+
+No solution in the strip can have
 \[
 b\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose $b\ne0$. Since
 \[
 -\pi<b<\pi,
@@ -168,9 +194,14 @@ contradicting
 we^w=t>0.
 \]
 Therefore $b=0$.
+
 :::
 
-<1>5. Every solution has
+:::
+
+::: pf-step
+
+Every solution has
 \[
 w=a\in(0,\infty)
 \]
@@ -179,21 +210,30 @@ and satisfies
 a e^a=t.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 gives $w=a\in\mathbb R$. The equation becomes
 \[
 a e^a=t.
 \]
 Since $e^a>0$ and $t>0$, necessarily $a>0$.
+
 :::
 
-<1>6. For each $t>0$, the equation
+:::
+
+::: pf-step
+
+For each $t>0$, the equation
 \[
 a e^a=t
 \]
 has exactly one solution $a>0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \phi(a)=a e^a
@@ -215,11 +255,18 @@ so $\phi$ is strictly increasing. Moreover,
 \lim_{a\to\infty}\phi(a)=\infty.
 \]
 By the intermediate value theorem, for each $t>0$ there is exactly one $a>0$ with $\phi(a)=t$.
+
 :::
 
-<1>7. For every $t>0$, the original equation has exactly one solution in $\Omega$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For every $t>0$, the original equation has exactly one solution in $\Omega$.
+
+
+::: pf-proof
+
 By steps <1>2--<1>6, there is exactly one solution
 \[
 w=a>0
@@ -232,9 +279,14 @@ in the strip $S$. Step <1>1 gives the corresponding unique point
 \[
 z=e^a\in(1,\infty)\subset\Omega.
 \]
+
 :::
 
-<1>8. Therefore the number of solutions is finite and independent of $t$:
+:::
+
+::: pf-step
+
+Therefore the number of solutions is finite and independent of $t$:
 \[
 \boxed{
 \#\left\{
@@ -248,13 +300,19 @@ z\in\Omega:
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly step <1>7, now stated as the requested count.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 proves both finiteness and independence of $t$.
+
 :::
+
 :::

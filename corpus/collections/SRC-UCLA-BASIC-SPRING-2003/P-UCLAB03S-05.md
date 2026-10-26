@@ -36,7 +36,6 @@ b&c
 \]
 :::
 
-::: {.solution}
 Set
 \[
 M=\begin{pmatrix}a&b\\b&c\end{pmatrix},
@@ -44,45 +43,72 @@ M=\begin{pmatrix}a&b\\b&c\end{pmatrix},
 h(x,y)=x^2+y^2.
 \]
 
-<1>1. The set $A$ is compact.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $A$ is compact.
+
+
+::: pf-proof
+
 The set
 \[
 A=\{(x,y)\in\mathbb R^2:h(x,y)=1\}
 \]
 is closed because $h$ is continuous and $\{1\}$ is closed. It is bounded because every $(x,y)\in A$ satisfies $x^2+y^2=1$. Hence $A$ is compact by the Heine--Borel theorem.
+
 :::
 
-<1>2. The function $F$ attains both a maximum and a minimum on $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $F$ attains both a maximum and a minimum on $A$.
+
+
+::: pf-proof
+
 The polynomial
 \[
 F(x,y)=ax^2+2bxy+cy^2
 \]
 is continuous on $\mathbb R^2$. By step <1>1, $A$ is compact and nonempty. The extreme value theorem therefore gives points of $A$ at which $F$ attains its maximum and minimum.
+
 :::
 
-<1>3. If $F$ attains its maximum on $A$ at $(x_0,y_0)$, then there is $\lambda\in\mathbb R$ such that
+:::
+
+::: pf-step
+
+If $F$ attains its maximum on $A$ at $(x_0,y_0)$, then there is $\lambda\in\mathbb R$ such that
 \[
 \nabla F(x_0,y_0)=\lambda\nabla h(x_0,y_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At every point $(x,y)\in A$,
 \[
 \nabla h(x,y)=(2x,2y)\neq(0,0),
 \]
 because $x^2+y^2=1$. Thus the constraint is regular at the maximizing point supplied by step <1>2. The Lagrange multiplier theorem therefore gives the stated scalar $\lambda$.
+
 :::
 
-<1>4. The vector $(x_0,y_0)^T$ satisfies
+:::
+
+::: pf-step
+
+The vector $(x_0,y_0)^T$ satisfies
 \[
 M\binom{x_0}{y_0}=\lambda\binom{x_0}{y_0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct differentiation gives
 \[
 \nabla F(x,y)
@@ -101,17 +127,28 @@ M\binom{x_0}{y_0}
 =
 \lambda\binom{x_0}{y_0}.
 \]
+
 :::
 
-<1>5. The maximizing vector $(x_0,y_0)^T$ is an eigenvector of $M$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The maximizing vector $(x_0,y_0)^T$ is an eigenvector of $M$.
+
+
+::: pf-proof
+
 Since $(x_0,y_0)\in A$, one has $x_0^2+y_0^2=1$, so $(x_0,y_0)^T\neq0$. Step <1>4 therefore exhibits this nonzero vector as an eigenvector of $M$ with eigenvalue $\lambda$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves part (a), and step <1>5 proves part (b).
+
 :::
+
 :::

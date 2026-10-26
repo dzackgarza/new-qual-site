@@ -28,38 +28,57 @@ is Lebesgue-area integrable:
 Prove that $f$ is constant.
 :::
 
-::: {.solution}
 Put \(u(z)=\log|f(z)|\).
 
-<1>1. If \(f\) is nonconstant, then there is \(z_0\in\mathbb C\) such that
+::: pf
+
+::: pf-step
+
+If \(f\) is nonconstant, then there is \(z_0\in\mathbb C\) such that
 \[
 u(z_0)>1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If \(|f(z)|\le e\) for every \(z\in\mathbb C\), then Liouville's theorem would make \(f\) constant. Hence a nonconstant entire \(f\) has some \(z_0\) with \(|f(z_0)|>e\), which is equivalent to the displayed inequality.
+
 :::
 
-<1>2. For every \(r>0\),
+:::
+
+::: pf-step
+
+For every \(r>0\),
 \[
 \int_0^{2\pi}u(z_0+re^{i\theta})\,d\theta>2\pi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For an entire function, \(\log|f|\) is subharmonic, with the value \(-\infty\) allowed at zeros. Its submean inequality at \(z_0\) gives
 \[
 u(z_0)
 \le\frac1{2\pi}\int_0^{2\pi}u(z_0+re^{i\theta})\,d\theta.
 \]
 Step <1>1 now yields the asserted strict lower bound.
+
 :::
 
-<1>3. If \(f\) were nonconstant, then
+:::
+
+::: pf-step
+
+If \(f\) were nonconstant, then
 \[
 \int_{\mathbb C}|u(z)|\,dx\,dy=\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2 and the triangle inequality,
 \[
 \int_0^{2\pi}|u(z_0+re^{i\theta})|\,d\theta
@@ -76,17 +95,28 @@ for every \(r>0\). Tonelli's theorem in polar coordinates centered at \(z_0\) th
 =\infty.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Hence \(\boxed{f\text{ is constant}}\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence \(\boxed{f\text{ is constant}}\).
+
+
+::: pf-proof
+
 Step <1>3 contradicts the assumed absolute integrability of \(U=u\) whenever \(f\) is nonconstant. Therefore \(f\) must be constant.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

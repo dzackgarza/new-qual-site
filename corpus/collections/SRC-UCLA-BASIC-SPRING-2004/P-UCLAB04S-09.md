@@ -28,10 +28,15 @@ Show that the following are equivalent:
 (d) $TT^*=\operatorname{Id}_V$.
 :::
 
-::: {.solution}
-<1>1. Condition (a) implies condition (b).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Condition (a) implies condition (b).
+
+
+::: pf-proof
+
 Assume
 \[
 (Tx,Ty)=(x,y)
@@ -48,11 +53,18 @@ Both norms are nonnegative, so
 \[
 \|Tx\|=\|x\|.
 \]
+
 :::
 
-<1>2. Condition (b) implies condition (a).
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (b) implies condition (a).
+
+
+::: pf-proof
+
 Assume
 \[
 \|Tx\|=\|x\|
@@ -86,11 +98,18 @@ Therefore
 \end{aligned}
 \]
 Thus (a) holds.
+
 :::
 
-<1>3. Condition (a) implies condition (c).
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (a) implies condition (c).
+
+
+::: pf-proof
+
 Assume (a).
 For all $x,y\in V$,
 \[
@@ -119,11 +138,18 @@ for every $x$, so
 \[
 \boxed{T^*T=I}.
 \]
+
 :::
 
-<1>4. Condition (c) implies condition (b).
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (c) implies condition (b).
+
+
+::: pf-proof
+
 Assume
 \[
 T^*T=I.
@@ -146,11 +172,18 @@ Taking square roots gives
 \[
 \|Tx\|=\|x\|.
 \]
+
 :::
 
-<1>5. Condition (c) implies that $T$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (c) implies that $T$ is injective.
+
+
+::: pf-proof
+
 If
 \[
 Tx=0,
@@ -166,14 +199,21 @@ Thus
 \[
 \ker T=\{0\}.
 \]
+
 :::
 
-<1>6. Because $V$ is finite-dimensional, condition (c) implies that $T$ is invertible and
+:::
+
+::: pf-step
+
+Because $V$ is finite-dimensional, condition (c) implies that $T$ is invertible and
 \[
 T^{-1}=T^*.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>5, $T$ is injective.
 For an endomorphism of a finite-dimensional vector space, injectivity implies surjectivity, hence invertibility.
 From
@@ -184,11 +224,18 @@ multiply on the right by $T^{-1}$ to obtain
 \[
 T^*=T^{-1}.
 \]
+
 :::
 
-<1>7. Condition (c) implies condition (d).
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (c) implies condition (d).
+
+
+::: pf-proof
+
 By step <1>6,
 \[
 T^*=T^{-1}.
@@ -200,11 +247,18 @@ TT^*
 TT^{-1}
 =I.
 \]
+
 :::
 
-<1>8. Condition (d) implies condition (c).
+:::
 
-::: {.proof}
+::: pf-step
+
+Condition (d) implies condition (c).
+
+
+::: pf-proof
+
 Assume
 \[
 TT^*=I.
@@ -226,11 +280,18 @@ T^*T
 T^*(T^*)^{-1}
 =I.
 \]
+
 :::
 
-<1>9. Hence conditions (a), (b), (c), and (d) are equivalent.
+:::
 
-::: {.proof}
+::: pf-step
+
+Hence conditions (a), (b), (c), and (d) are equivalent.
+
+
+::: pf-proof
+
 Steps <1>1--<1>4 prove
 \[
 (a)\iff(b)\iff(c),
@@ -240,11 +301,15 @@ and steps <1>7--<1>8 prove
 (c)\iff(d).
 \]
 Therefore all four conditions are equivalent.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 is the required equivalence.
+
 :::
+
 :::

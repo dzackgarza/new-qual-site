@@ -24,29 +24,41 @@ L_x(f)=f(x)
 is $\mathcal F$-measurable. Show that $\mathcal F$ contains all open sets.
 :::
 
-::: {.solution}
 Enumerate the dense set $\QQ\cap[0,1]$ as $q_1,q_2,\ldots$.
 
-<1>1. For every $h\in C([0,1])$,
+::: pf
+
+::: pf-step
+
+For every $h\in C([0,1])$,
 $$
 \|h\|_\infty=\sup_{j\ge1}|h(q_j)|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The right-hand side is at most $\|h\|_\infty$. Conversely, continuity on the compact interval implies that $|h|$ attains its maximum at some $x_0\in[0,1]$. Choose rationals $q_{j_k}\to x_0$. By continuity,
 $$
 |h(q_{j_k})|\to |h(x_0)|=\|h\|_\infty.
 $$
 Hence the supremum over the rational points is at least $\|h\|_\infty$.
+
 :::
 
-<1>2. For each fixed $g\in C([0,1])$, the map
+:::
+
+::: pf-step
+
+For each fixed $g\in C([0,1])$, the map
 $$
 N_g(f)\coloneqq\|f-g\|_\infty
 $$
 is $\mathcal F$-measurable.
 
-::: {.proof}
+
+::: pf-proof
+
 For every $j$, the function
 $$
 f\longmapsto |L_{q_j}(f)-g(q_j)|
@@ -62,21 +74,35 @@ $$
 \{f:|L_{q_j}(f)-g(q_j)|\le a\}
 \in\mathcal F.
 $$
+
 :::
 
-<1>3. Every open ball in $C([0,1])$ belongs to $\mathcal F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every open ball in $C([0,1])$ belongs to $\mathcal F$.
+
+
+::: pf-proof
+
 For $g\in C([0,1])$ and $r>0$,
 $$
 B(g,r)=\{f:N_g(f)<r\}.
 $$
 This set is $\mathcal F$-measurable by step <1>2.
+
 :::
 
-<1>4. The space $C([0,1])$ has a countable dense subset.
+:::
 
-::: {.proof}
+::: pf-step
+
+The space $C([0,1])$ has a countable dense subset.
+
+
+::: pf-proof
+
 Let $\mathcal P_{\QQ}$ be the set of polynomials with rational coefficients. It is countable. To see that it is dense, let $f\in C([0,1])$ and $\varepsilon>0$. By the Weierstrass approximation theorem there is a real-coefficient polynomial
 $$
 p(x)=\sum_{k=0}^d a_kx^k
@@ -96,11 +122,18 @@ $$
 <\frac\varepsilon2.
 $$
 Thus $\|f-q\|_\infty<\varepsilon$.
+
 :::
 
-<1>5. The topology of $C([0,1])$ has a countable basis consisting of $\mathcal F$-measurable sets.
+:::
 
-::: {.proof}
+::: pf-step
+
+The topology of $C([0,1])$ has a countable basis consisting of $\mathcal F$-measurable sets.
+
+
+::: pf-proof
+
 Let $D\subseteq C([0,1])$ be the countable dense set from step <1>4. The collection
 $$
 \mathcal B\coloneqq\{B(g,r):g\in D,\ r\in\QQ_{>0}\}
@@ -118,21 +151,32 @@ $$
 f\in B(g,r)\subseteq B(f,\varepsilon)\subseteq O.
 $$
 Every element of $\mathcal B$ belongs to $\mathcal F$ by step <1>3.
+
 :::
 
-<1>6. Every open set in $C([0,1])$ belongs to $\mathcal F$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every open set in $C([0,1])$ belongs to $\mathcal F$.
+
+
+::: pf-proof
+
 Let $O$ be open. Since $\mathcal B$ is a countable basis,
 $$
 O=\bigcup\{B\in\mathcal B:B\subseteq O\}.
 $$
 The union is countable, and every member belongs to $\mathcal F$ by step <1>5. Since $\mathcal F$ is a $\sigma$-algebra, $O\in\mathcal F$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

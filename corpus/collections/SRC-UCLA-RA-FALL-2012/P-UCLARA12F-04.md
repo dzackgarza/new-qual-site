@@ -24,7 +24,6 @@ Prove that
 \]
 :::
 
-::: {.solution}
 Let
 $$
 D_n(t)=\sum_{k=-n}^n e^{ikt}
@@ -35,14 +34,20 @@ $$
 s_n(x)=\frac1{2\pi}\int_{-\pi}^{\pi}f(x-t)D_n(t)\,dt.
 $$
 
-<1>1. There is an absolute constant $C_0$ such that
+::: pf
+
+::: pf-step
+
+There is an absolute constant $C_0$ such that
 $$
 \frac1{2\pi}\|D_n\|_{L^1(-\pi,\pi)}
 \le C_0(1+\log n)
 $$
 for every $n\ge2$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $|t|\le\pi$,
 $$
 |D_n(t)|
@@ -71,15 +76,22 @@ $$
 \end{aligned}
 $$
 Dividing by $2\pi$ proves the claim.
+
 :::
 
-<1>2. For every continuous $g$ on $\mathbb T$,
+:::
+
+::: pf-step
+
+For every continuous $g$ on $\mathbb T$,
 $$
 \|s_n(g)\|_\infty
 \le C_0(1+\log n)\|g\|_\infty.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Using the convolution formula and step <1>1,
 $$
 \begin{aligned}
@@ -91,27 +103,46 @@ $$
 \end{aligned}
 $$
 Taking the supremum over $x$ gives the estimate.
+
 :::
 
-<1>3. Let $\varepsilon>0$. There is a trigonometric polynomial $P$ such that
+:::
+
+::: pf-step
+
+Let $\varepsilon>0$. There is a trigonometric polynomial $P$ such that
 $$
 \|f-P\|_\infty<\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Trigonometric polynomials are uniformly dense in $C(\mathbb T)$ by the Stone--Weierstrass theorem.
+
 :::
 
-<1>4. If $N$ is the degree of $P$, then for every $n\ge N$,
+:::
+
+::: pf-step
+
+If $N$ is the degree of $P$, then for every $n\ge N$,
 $$
 s_n(P)=P.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 The Fourier series of a trigonometric polynomial has only finitely many nonzero coefficients. Once the partial sum includes all frequencies occurring in $P$, it equals $P$ identically.
+
 :::
 
-<1>5. For every $n\ge N$,
+:::
+
+::: pf-step
+
+For every $n\ge N$,
 $$
 \|s_n(f)\|_\infty
 \le
@@ -119,7 +150,9 @@ $$
 +C_0(1+\log n)\varepsilon.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By linearity and step <1>4,
 $$
 s_n(f)=P+s_n(f-P).
@@ -133,16 +166,23 @@ $$
 &<\|P\|_\infty+C_0(1+\log n)\varepsilon.
 \end{aligned}
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: pf-step
+
+One has
 $$
 \boxed{
 \lim_{n\to\infty}
 \frac{\|s_n\|_{L^\infty(\mathbb T)}}{\log n}=0.}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the estimate from step <1>5 by $\log n$ and let $n\to\infty$:
 $$
 \limsup_{n\to\infty}
@@ -150,11 +190,15 @@ $$
 \le C_0\varepsilon.
 $$
 Since $\varepsilon>0$ was arbitrary, the limsup is $0$. The quotient is nonnegative, so the limit is $0$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

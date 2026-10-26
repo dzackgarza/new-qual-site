@@ -38,15 +38,20 @@ f(z)=\sum_{n\ge1}a_nz^n
 to belong to $\mathcal D$.
 :::
 
-::: {.solution}
 Write \(dA=dx\,dy\).
 
-<1>1. For every \(0<r<1\) there is a constant \(C_r>0\) such that every holomorphic \(h\in L^2(\mathbb D,dA)\) satisfies
+::: pf
+
+::: pf-step
+
+For every \(0<r<1\) there is a constant \(C_r>0\) such that every holomorphic \(h\in L^2(\mathbb D,dA)\) satisfies
 \[
 \sup_{|z|\le r}|h(z)|\le C_r\|h\|_{L^2(\mathbb D)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Put \(\rho=(1-r)/2\). If \(|z|\le r\), then \(B(z,\rho)\subset\mathbb D\). The area mean-value formula for the holomorphic function \(h\), followed by Cauchy--Schwarz, gives
 \[
 \begin{aligned}
@@ -58,11 +63,18 @@ Put \(\rho=(1-r)/2\). If \(|z|\le r\), then \(B(z,\rho)\subset\mathbb D\). The a
 \end{aligned}
 \]
 Thus one may take \(C_r=1/(\sqrt\pi\rho)\).
+
 :::
 
-<1>2. Let \((f_j)\) be Cauchy in \(\mathcal D\). Then \((f_j')\) converges in \(L^2(\mathbb D)\) to some \(g\in L^2(\mathbb D)\), and it also converges locally uniformly on \(\mathbb D\) to a holomorphic function \(h\).
+:::
 
-::: {.proof}
+::: pf-step
+
+Let \((f_j)\) be Cauchy in \(\mathcal D\). Then \((f_j')\) converges in \(L^2(\mathbb D)\) to some \(g\in L^2(\mathbb D)\), and it also converges locally uniformly on \(\mathbb D\) to a holomorphic function \(h\).
+
+
+::: pf-proof
+
 By definition of the norm,
 \[
 \|f_j'-f_k'\|_{L^2}=\|f_j-f_k\|_{\mathcal D},
@@ -75,15 +87,27 @@ Fix \(0<r<1\). Applying step <1>1 to \(h=f_j'-f_k'\) gives
 \le C_r\|f_j'-f_k'\|_{L^2}\longrightarrow0.
 \]
 Thus \((f_j')\) is uniformly Cauchy on every closed disc \(\{|z|\le r\}\). It therefore has a locally uniform limit \(h\), and a locally uniform limit of holomorphic functions is holomorphic.
+
 :::
 
-<1>3. The functions \(g\) and \(h\) agree almost everywhere on \(\mathbb D\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The functions \(g\) and \(h\) agree almost everywhere on \(\mathbb D\).
+
+
+::: pf-proof
+
 From \(f_j'\to g\) in \(L^2\), choose a subsequence \((f_{j_k}')\) converging to \(g\) almost everywhere. The same subsequence converges pointwise everywhere to the locally uniform limit \(h\). Hence \(g=h\) almost everywhere.
+
 :::
 
-<1>4. There is a unique holomorphic function \(F\) on \(\mathbb D\) such that
+:::
+
+::: pf-step
+
+There is a unique holomorphic function \(F\) on \(\mathbb D\) such that
 \[
 F(0)=0,
 \qquad
@@ -91,7 +115,9 @@ F'=h,
 \]
 and \(F\in\mathcal D\).
 
-::: {.proof}
+
+::: pf-proof
+
 The unit disc is simply connected, so the holomorphic function \(h\) has a primitive. Fix the additive constant by requiring \(F(0)=0\). By step <1>3,
 \[
 \int_{\mathbb D}|F'|^2\,dA
@@ -99,11 +125,18 @@ The unit disc is simply connected, so the holomorphic function \(h\) has a primi
 =\int_{\mathbb D}|g|^2\,dA<\infty,
 \]
 so \(F\in\mathcal D\). Uniqueness follows because two primitives with the same value at \(0\) differ by the zero constant.
+
 :::
 
-<1>5. One has \(f_j\to F\) in \(\mathcal D\). Consequently \(\boxed{\mathcal D\text{ is complete}}\).
+:::
 
-::: {.proof}
+::: pf-step
+
+One has \(f_j\to F\) in \(\mathcal D\). Consequently \(\boxed{\mathcal D\text{ is complete}}\).
+
+
+::: pf-proof
+
 By steps <1>2--<1>4,
 \[
 \|f_j-F\|_{\mathcal D}
@@ -111,9 +144,14 @@ By steps <1>2--<1>4,
 =\|f_j'-g\|_{L^2}\longrightarrow0.
 \]
 Thus every Cauchy sequence converges in \(\mathcal D\).
+
 :::
 
-<1>6. If
+:::
+
+::: pf-step
+
+If
 \[
 f(z)=\sum_{n\ge1}a_nz^n
 \]
@@ -123,7 +161,9 @@ is analytic on \(\mathbb D\), then for every \(0<R<1\),
 =\pi\sum_{n=1}^\infty n|a_n|^2R^{2n}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On \(|z|\le R\), the differentiated power series
 \[
 f'(z)=\sum_{n=1}^\infty na_nz^{n-1}
@@ -142,20 +182,32 @@ Integrating in \(r\) from \(0\) to \(R\) yields
 &=\pi\sum_{n=1}^\infty n|a_n|^2R^{2n}.
 \end{aligned}
 \]
+
 :::
 
-<1>7. The exact norm identity is
+:::
+
+::: pf-step
+
+The exact norm identity is
 \[
 \|f\|_{\mathcal D}^2
 =\pi\sum_{n=1}^\infty n|a_n|^2,
 \]
 with either side allowed to be \(+\infty\).
 
-::: {.proof}
+
+::: pf-proof
+
 Let \(R\uparrow1\) in step <1>6. The discs \(\{|z|<R\}\) increase to \(\mathbb D\), so monotone convergence gives convergence of the left side to \(\int_{\mathbb D}|f'|^2dA\). On the right, each nonnegative term \(n|a_n|^2R^{2n}\) increases to \(n|a_n|^2\), so monotone convergence for series gives the displayed identity.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f\in\mathcal D
@@ -163,13 +215,19 @@ f\in\mathcal D
 \sum_{n=1}^\infty n|a_n|^2<\infty}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function already has \(f(0)=0\) because its power series starts at \(n=1\). By step <1>7, the defining integral for \(\mathcal D\) is finite exactly when the displayed weighted square sum is finite.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 proves part (a), and step <1>8 proves part (b).
+
 :::
+
 :::

@@ -27,10 +27,13 @@ t^4+1.
 (b) Show that the usual real linear map determined by $v\mapsto Av$ has no nontrivial invariant subspace.
 :::
 
-::: {.solution}
 Part (a) has a straightforward example. Part (b) is false as printed.
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 \boxed{
 A=
@@ -47,7 +50,9 @@ Then
 A^4=-I.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 e_1,e_2,e_3,e_4
@@ -65,29 +70,43 @@ Hence
 \[
 A^4=-I.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (A^4+I)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from step <1>1.
 Thus the polynomial
 \[
 t^4+1
 \]
 annihilates $A$.
+
 :::
 
-<1>3. The vectors
+:::
+
+::: pf-step
+
+The vectors
 \[
 e_1,\ Ae_1,\ A^2e_1,\ A^3e_1
 \]
 form a basis of $\mathbb R^4$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 e_1,\ Ae_1,\ A^2e_1,\ A^3e_1
@@ -95,11 +114,18 @@ e_1,\ Ae_1,\ A^2e_1,\ A^3e_1
 e_1,e_2,e_3,e_4.
 \]
 This is the standard basis.
+
 :::
 
-<1>4. No nonzero polynomial of degree at most $3$ annihilates $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+No nonzero polynomial of degree at most $3$ annihilates $A$.
+
+
+::: pf-proof
+
 Suppose
 \[
 p(t)
@@ -130,14 +156,21 @@ Hence
 c_0=c_1=c_2=c_3=0.
 \]
 Thus only the zero polynomial of degree at most $3$ annihilates $A$.
+
 :::
 
-<1>5. The minimal polynomial of $A$ is
+:::
+
+::: pf-step
+
+The minimal polynomial of $A$ is
 \[
 \boxed{\mu_A(t)=t^4+1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 shows that the minimal polynomial divides
 \[
 t^4+1.
@@ -146,9 +179,14 @@ Step <1>4 shows that its degree cannot be at most $3$.
 Therefore it has degree $4$.
 Since it is monic and divides the monic degree-$4$ polynomial $t^4+1$, it must equal that polynomial.
 This proves part (a).
+
 :::
 
-<1>6. Over the real numbers,
+:::
+
+::: pf-step
+
+Over the real numbers,
 \[
 \boxed{
 t^4+1
@@ -158,7 +196,9 @@ t^4+1
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply:
 \[
 \begin{aligned}
@@ -171,9 +211,14 @@ t^4+1.
 \end{aligned}
 \]
 The two quadratic factors are distinct and relatively prime.
+
 :::
 
-<1>7. Define
+:::
+
+::: pf-step
+
+Define
 \[
 q(t)=t^2+\sqrt2\,t+1
 \]
@@ -186,7 +231,9 @@ Then
 q(A)r(A)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 q(t)r(t)=t^4+1.
@@ -199,30 +246,44 @@ Therefore
 \[
 q(A)r(A)=0.
 \]
+
 :::
 
-<1>8. The operator
+:::
+
+::: pf-step
+
+The operator
 \[
 r(A)
 \]
 is not the zero operator.
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 r(A)=0,
 \]
 Then the nonzero polynomial $r$ of degree $2$ would annihilate $A$.
 This contradicts step <1>5, because the minimal polynomial has degree $4$.
+
 :::
 
-<1>9. The subspace
+:::
+
+::: pf-step
+
+The subspace
 \[
 W=\operatorname{im}r(A)
 \]
 is nonzero and invariant under $A$.
 
-::: {.proof}
+
+::: pf-proof
+
 Nonzeroness follows from step <1>8.
 
 If
@@ -247,11 +308,18 @@ r(A)Av
 W.
 \]
 Thus $W$ is $A$-invariant.
+
 :::
 
-<1>10. The invariant subspace $W$ is proper.
+:::
 
-::: {.proof}
+::: pf-step
+
+The invariant subspace $W$ is proper.
+
+
+::: pf-proof
+
 By step <1>7,
 \[
 q(A)r(A)=0.
@@ -286,11 +354,18 @@ Together with step <1>9,
 \[
 \boxed{0\ne W\ne\mathbb R^4}.
 \]
+
 :::
 
-<1>11. Therefore part (b) is false as printed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore part (b) is false as printed.
+
+
+::: pf-proof
+
 The matrix in part (a) has minimal polynomial
 \[
 t^4+1
@@ -301,12 +376,16 @@ Steps <1>9--<1>10 exhibit a nonzero proper invariant real subspace
 W=\operatorname{im}r(A).
 \]
 Thus the assertion that the associated real linear map has no nontrivial invariant subspace is false.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 answers part (a).
 Step <1>11 gives the mathematically correct disposition of part (b), namely a counterexample to the source assertion.
+
 :::
+
 :::

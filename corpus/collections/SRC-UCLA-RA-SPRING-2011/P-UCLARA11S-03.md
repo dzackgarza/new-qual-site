@@ -20,8 +20,11 @@ Suppose that
 Show that $\mu$ is supported at $\{0\}$.
 :::
 
-::: {.solution}
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 f(0)=1
 \]
@@ -32,7 +35,9 @@ and
 \int_{\mathbb R}(1-\cos(tx))\,d\mu(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $\mu$ is a probability measure,
 \[
 f(0)
@@ -47,9 +52,14 @@ Also
 \int_{\mathbb R}\cos(tx)\,d\mu(x),
 \]
 so subtracting from $f(0)=1$ gives the identity.
+
 :::
 
-<1>2. The hypothesis implies
+:::
+
+::: pf-step
+
+The hypothesis implies
 \[
 \lim_{t\to0}
 \int_{\mathbb R}
@@ -59,20 +69,29 @@ so subtracting from $f(0)=1$ gives the identity.
 0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The assumed complex limit
 \[
 \frac{f(0)-f(t)}{t^2}\longrightarrow0
 \]
 implies convergence of its real part to $0$. Apply step <1>1.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_{\mathbb R}x^2\,d\mu(x)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For $t\ne0$ and every $x$,
 \[
 \frac{1-\cos(tx)}{t^2}\ge0.
@@ -104,11 +123,18 @@ Choose any sequence $t_n\to0$ with $t_n\ne0$. Fatou's lemma and step <1>2 give
 \end{aligned}
 \]
 The integral of $x^2$ is nonnegative, so it must vanish.
+
 :::
 
-<1>4. The measure $\mu$ is supported at $\{0\}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The measure $\mu$ is supported at $\{0\}$.
+
+
+::: pf-proof
+
 For every $\delta>0$,
 \[
 x^2\ge\delta^2
@@ -144,11 +170,15 @@ so
 \mu(\mathbb R\setminus\{0\})=0.
 \]
 Thus $\mu$ is supported at $0$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the desired conclusion.
+
 :::
+
 :::

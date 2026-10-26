@@ -30,10 +30,13 @@ exists for every $x\in[a,b]$, using one-sided limits at the endpoints.
 (c) Prove that $f$ is Riemann integrable.
 :::
 
-::: {.solution}
 All limits below are taken relative to $[a,b]$, so at the endpoints they are one-sided.
 
-<1>1. Fix $x_0\in[a,b]$ and $\varepsilon>0$.
+::: pf
+
+::: pf-step
+
+Fix $x_0\in[a,b]$ and $\varepsilon>0$.
 There exists $\delta>0$ such that
 \[
 0<|y-x_0|<\delta
@@ -43,14 +46,21 @@ implies
 |f(y)-L(x_0)|<\frac{\varepsilon}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of
 \[
 L(x_0)=\lim_{y\to x_0}f(y).
 \]
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 0<|x-x_0|<\frac{\delta}{2},
 \]
@@ -61,7 +71,9 @@ then
 \frac{\varepsilon}{2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix such an $x$.
 Choose a sequence
 \[
@@ -99,11 +111,18 @@ gives
 \le
 \frac{\varepsilon}{2}.
 \]
+
 :::
 
-<1>3. The function $L$ is continuous on $[a,b]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $L$ is continuous on $[a,b]$.
+
+
+::: pf-proof
+
 At $x=x_0$,
 \[
 |L(x)-L(x_0)|=0.
@@ -122,9 +141,14 @@ step <1>2 gives
 \]
 Thus $L$ is continuous at the arbitrary point $x_0$.
 This proves part (a).
+
 :::
 
-<1>4. Define
+:::
+
+::: pf-step
+
+Define
 \[
 h(x)=f(x)-L(x).
 \]
@@ -133,7 +157,9 @@ Then for every $x_0\in[a,b]$,
 \lim_{\substack{x\to x_0\\x\ne x_0}}h(x)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 As $x\to x_0$ with $x\ne x_0$,
 \[
 f(x)\to L(x_0)
@@ -152,9 +178,14 @@ f(x)-L(x)
 \to
 0.
 \]
+
 :::
 
-<1>5. For each positive integer $m$, define
+:::
+
+::: pf-step
+
+For each positive integer $m$, define
 \[
 E_m
 =
@@ -165,7 +196,9 @@ x\in[a,b]:
 \]
 Then $E_m$ is finite.
 
-::: {.proof}
+
+::: pf-proof
+
 Suppose $E_m$ were infinite.
 Since $[a,b]$ is compact, the Bolzano--Weierstrass theorem gives an accumulation point
 \[
@@ -191,15 +224,22 @@ But
 \]
 for every $k$, a contradiction.
 Thus $E_m$ is finite.
+
 :::
 
-<1>6. The set
+:::
+
+::: pf-step
+
+The set
 \[
 D=\{x\in[a,b]:f(x)\ne L(x)\}
 \]
 is countable.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f(x)\ne L(x)
@@ -221,11 +261,18 @@ Indeed, if $h(x)\ne0$, choose $m$ so large that
 Each $E_m$ is finite by step <1>5.
 A countable union of finite sets is countable.
 This proves part (b).
+
 :::
 
-<1>7. The function $f$ is bounded on $[a,b]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is bounded on $[a,b]$.
+
+
+::: pf-proof
+
 For each $x\in[a,b]$, the existence of the finite limit
 \[
 L(x)
@@ -249,11 +296,18 @@ Taking the maximum of the finitely many local bounds gives a global bound
 |f|\le M
 \]
 on $[a,b]$.
+
 :::
 
-<1>8. The function $h=f-L$ is bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $h=f-L$ is bounded.
+
+
+::: pf-proof
+
 The function $f$ is bounded by step <1>7.
 The function $L$ is continuous on the compact interval $[a,b]$ by step <1>3, hence bounded.
 Therefore their difference $h$ is bounded.
@@ -262,14 +316,21 @@ Choose
 |h(x)|\le M
 \]
 for all $x$.
+
 :::
 
-<1>9. The function $h$ is Riemann integrable and
+:::
+
+::: pf-step
+
+The function $h$ is Riemann integrable and
 \[
 \int_a^b h(x)\,dx=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$.
 Choose $m$ so large that
 \[
@@ -330,11 +391,18 @@ Hence
 \[
 \int_a^b h=0.
 \]
+
 :::
 
-<1>10. The function $f$ is Riemann integrable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is Riemann integrable.
+
+
+::: pf-proof
+
 By step <1>3, $L$ is continuous on $[a,b]$, hence Riemann integrable.
 By step <1>9, $h=f-L$ is Riemann integrable.
 Therefore
@@ -343,11 +411,15 @@ f=L+h
 \]
 is Riemann integrable.
 This proves part (c).
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>10 proves part (c).
+
 :::
+
 :::

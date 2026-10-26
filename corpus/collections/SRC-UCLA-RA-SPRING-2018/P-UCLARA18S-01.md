@@ -24,13 +24,16 @@ Problem 1. Suppose $f\in L^1(\mathbb R)$ satisfies
 Show that $f=0$ almost everywhere.
 :::
 
-::: {.solution}
 Define
 \[
 F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
 \]
 
-<1>1. For every $x\in\mathbb R$ and every $h\ne0$,
+::: pf
+
+::: pf-step
+
+For every $x\in\mathbb R$ and every $h\ne0$,
 \[
 \left|
 \frac{F(x+h)-F(x)}{h}
@@ -42,7 +45,9 @@ F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
 \right|\,dt.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 First suppose $h>0$. By the change of variables $s=t+h$,
 \[
 F(x+h)
@@ -81,9 +86,14 @@ identical final bound, namely
 \frac{f(t+h)-f(t)}{h}
 \right|\,dt.
 \]
+
 :::
 
-<1>2. The hypothesis implies
+:::
+
+::: pf-step
+
+The hypothesis implies
 \[
 \lim_{h\to0}
 \int_{\mathbb R}
@@ -93,17 +103,26 @@ identical final bound, namely
 =0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The integrals are nonnegative. A nonnegative function of $h$ whose
 $\limsup$ at $0$ is $0$ has limit $0$.
+
 :::
 
-<1>3. The function $F$ is differentiable at every $x$ and
+:::
+
+::: pf-step
+
+The function $F$ is differentiable at every $x$ and
 \[
 \boxed{F'(x)=0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\in\mathbb R$. By step <1>1,
 \[
 \left|
@@ -117,25 +136,39 @@ step <1>2. Therefore
 \frac{F(x+h)-F(x)}{h}
 =0.
 \]
+
 :::
 
-<1>4. The function $F$ is constant on $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $F$ is constant on $\mathbb R$.
+
+
+::: pf-proof
+
 By step <1>3, $F$ is differentiable everywhere with derivative identically
 zero. The ordinary mean value theorem therefore gives
 \[
 F(y)-F(x)=0
 \]
 for every $x<y$.
+
 :::
 
-<1>5. In fact,
+:::
+
+::: pf-step
+
+In fact,
 \[
 \boxed{F\equiv0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $|f|\in L^1(\mathbb R)$,
 \[
 \int_{-\infty}^{x}|f(t)|\,dt
@@ -143,14 +176,21 @@ Since $|f|\in L^1(\mathbb R)$,
 \qquad(x\to-\infty).
 \]
 Thus the constant value from step <1>4 must be $0$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \int_{\mathbb R}|f(t)|\,dt=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By monotone convergence,
 \[
 \int_{\mathbb R}|f(t)|\,dt
@@ -162,21 +202,32 @@ By monotone convergence,
 =0
 \]
 by step <1>5.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{f=0\quad\text{almost everywhere}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 A nonnegative integrable function with integral zero vanishes almost
 everywhere. Apply this to $|f|$ using step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 is the required conclusion.
+
 :::
+
 :::

@@ -24,19 +24,24 @@ F(x)=\frac1{|K|}\int_K f(x+t)\,dt
 is uniformly continuous on $\mathbb R$. Here $|K|$ denotes the Lebesgue measure of $K$.
 :::
 
-::: {.solution}
 Let
 $$
 M\coloneqq\|f\|_{L^\infty(\RR)}.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 |(K+h)\triangle K|\longrightarrow0
 \qquad\text{as }h\to0.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Let $\varepsilon>0$. By outer regularity of Lebesgue measure, choose an open set $U\supseteq K$ such that
 $$
 |U\setminus K|<\varepsilon.
@@ -62,16 +67,23 @@ $$
 |(K+h)\triangle K|<2\varepsilon.
 $$
 This proves the limit.
+
 :::
 
-<1>2. For every $x,h\in\RR$,
+:::
+
+::: pf-step
+
+For every $x,h\in\RR$,
 $$
 |F(x+h)-F(x)|
 \le
 \frac{M}{|K|}|(K+h)\triangle K|.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 By the change of variables $s=t+h$,
 $$
 F(x+h)=\frac1{|K|}\int_{K+h}f(x+s)\,ds.
@@ -86,11 +98,18 @@ $$
 \end{aligned}
 $$
 The bound is independent of $x$.
+
 :::
 
-<1>3. The function $F$ is uniformly continuous on $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $F$ is uniformly continuous on $\RR$.
+
+
+::: pf-proof
+
 Let $\varepsilon>0$. By step <1>1, choose $\delta>0$ such that
 $$
 |(K+h)\triangle K|
@@ -103,11 +122,15 @@ $$
 <\varepsilon.
 $$
 Since the same $\delta$ works for every $x$, the continuity is uniform.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the required conclusion.
+
 :::
+
 :::

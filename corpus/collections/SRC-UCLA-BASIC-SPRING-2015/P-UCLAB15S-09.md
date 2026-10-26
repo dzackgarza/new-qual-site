@@ -28,8 +28,11 @@ T(U_1)=U_2,\qquad T(W_1)=W_2.
 \]
 :::
 
-::: {.solution}
-<1>1. Choose a basis
+::: pf
+
+::: pf-step
+
+Choose a basis
 \[
 c_1,\ldots,c_\ell
 \]
@@ -47,16 +50,23 @@ c_1,\ldots,c_\ell,w_{\ell+1},\ldots,w_d
 \]
 of $W_1$.
 
-::: {.proof}
+
+::: pf-proof
+
 Every basis of a subspace extends to a basis of any larger finite-dimensional subspace.
 Since
 \[
 \dim(U_1\cap W_1)=\ell,
 \]
 the chosen intersection basis extends by exactly $d-\ell$ vectors to each $d$-dimensional subspace.
+
 :::
 
-<1>2. The list
+:::
+
+::: pf-step
+
+The list
 \[
 \mathcal B_1
 =
@@ -71,7 +81,9 @@ is a basis of
 U_1+W_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The list clearly spans
 \[
 U_1+W_1.
@@ -91,9 +103,14 @@ By the dimension formula,
 2d-\ell.
 \]
 A spanning list with exactly the dimension of the space is a basis.
+
 :::
 
-<1>3. Likewise, choose a basis
+:::
+
+::: pf-step
+
+Likewise, choose a basis
 \[
 c'_1,\ldots,c'_\ell
 \]
@@ -125,14 +142,21 @@ is a basis of
 U_2+W_2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply the same argument as in steps <1>1--<1>2, using
 \[
 \dim(U_2\cap W_2)=\ell.
 \]
+
 :::
 
-<1>4. The two sums have equal dimension:
+:::
+
+::: pf-step
+
+The two sums have equal dimension:
 \[
 \dim(U_1+W_1)
 =
@@ -141,7 +165,9 @@ Apply the same argument as in steps <1>1--<1>2, using
 2d-\ell.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from the dimension formula and the common values of
 \[
 \dim U_i=\dim W_i=d
@@ -150,9 +176,14 @@ and
 \[
 \dim(U_i\cap W_i)=\ell.
 \]
+
 :::
 
-<1>5. Extend $\mathcal B_1$ to a basis of $V$ by adding vectors
+:::
+
+::: pf-step
+
+Extend $\mathcal B_1$ to a basis of $V$ by adding vectors
 \[
 z_1,\ldots,z_r,
 \]
@@ -165,16 +196,23 @@ where
 r=n-(2d-\ell).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>4, the two subspaces have the same dimension.
 Each basis therefore requires the same number
 \[
 r
 \]
 of additional vectors to become a basis of the $n$-dimensional space $V$.
+
 :::
 
-<1>6. Define $T:V\to V$ on the first basis by
+:::
+
+::: pf-step
+
+Define $T:V\to V$ on the first basis by
 \[
 T(c_i)=c'_i
 \qquad
@@ -198,24 +236,40 @@ T(z_q)=z'_q
 \]
 then extend linearly.
 
-::: {.proof}
+
+::: pf-proof
+
 A linear map is uniquely determined by its values on a basis.
 Step <1>5 gives a basis of $V$ on which the displayed prescription is defined.
+
 :::
 
-<1>7. The operator $T$ is invertible.
+:::
 
-::: {.proof}
+::: pf-step
+
+The operator $T$ is invertible.
+
+
+::: pf-proof
+
 By construction, $T$ sends the basis from step <1>5 bijectively onto the target basis from the same step.
 A linear map sending a basis to a basis is an isomorphism.
+
 :::
 
-<1>8. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{T(U_1)=U_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The subspace $U_1$ has basis
 \[
 c_1,\ldots,c_\ell,u_{\ell+1},\ldots,u_d.
@@ -229,14 +283,21 @@ Therefore
 \[
 T(U_1)=U_2.
 \]
+
 :::
 
-<1>9. One also has
+:::
+
+::: pf-step
+
+One also has
 \[
 \boxed{T(W_1)=W_2}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The basis
 \[
 c_1,\ldots,c_\ell,w_{\ell+1},\ldots,w_d
@@ -250,11 +311,15 @@ Hence
 \[
 T(W_1)=W_2.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>8--<1>9 give the required operator, and step <1>7 shows it may in fact be chosen invertible.
+
 :::
+
 :::

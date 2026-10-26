@@ -36,7 +36,6 @@ Prove that the limit
 exists and compute its value.
 :::
 
-::: {.solution}
 Let
 \[
 D_n=\det M_n,
@@ -44,7 +43,11 @@ D_n=\det M_n,
 D_0=1.
 \]
 
-<1>1. The determinants satisfy
+::: pf
+
+::: pf-step
+
+The determinants satisfy
 \[
 \boxed{
 D_n=aD_{n-1}+b^2D_{n-2}
@@ -61,7 +64,9 @@ D_0=1,
 D_1=a.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Expand $\det M_n$ along the first row.
 The contribution from the entry $a$ is
 \[
@@ -83,9 +88,14 @@ Thus the second contribution is
 =
 b^2D_{n-2}.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \boxed{D_n>0}
 \]
@@ -94,7 +104,9 @@ for every
 n\ge0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The initial values satisfy
 \[
 D_0=1>0,
@@ -120,9 +132,14 @@ because
 a,b>0.
 \]
 The claim follows by induction.
+
 :::
 
-<1>3. Let
+:::
+
+::: pf-step
+
+Let
 \[
 r_\pm
 =
@@ -139,7 +156,9 @@ r_-<0,
 |r_-|<r_+.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 These are the two roots of
 \[
 r^2-ar-b^2=0.
@@ -162,9 +181,14 @@ r_+
 =
 |r_-|.
 \]
+
 :::
 
-<1>4. For every
+:::
+
+::: pf-step
+
+For every
 \[
 n\ge0,
 \]
@@ -181,7 +205,9 @@ r_+-r_-
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sequence on the right satisfies the recurrence in step <1>1 because each $r_\pm$ satisfies
 \[
 r_\pm^2
@@ -213,9 +239,14 @@ a
 D_1.
 \]
 The recurrence with two initial values determines the sequence uniquely.
+
 :::
 
-<1>5. Writing
+:::
+
+::: pf-step
+
+Writing
 \[
 q=\frac{r_-}{r_+},
 \]
@@ -239,7 +270,9 @@ r_+-r_-
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inequality
 \[
 |q|<1
@@ -250,9 +283,14 @@ Factor
 r_+^{n+1}
 \]
 from the numerator in step <1>4.
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 \log D_n
 =
@@ -263,7 +301,9 @@ from the numerator in step <1>4.
 \log(1-q^{n+1}).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>2 gives
 \[
 D_n>0,
@@ -282,9 +322,14 @@ because
 |q|<1.
 \]
 Taking logarithms gives the identity.
+
 :::
 
-<1>7. If
+:::
+
+::: pf-step
+
+If
 \[
 r_+>1,
 \]
@@ -293,7 +338,9 @@ then
 \log D_n\to+\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 In step <1>6,
 \[
 (n+1)\log r_+\to+\infty.
@@ -310,9 +357,14 @@ because
 \[
 q^{n+1}\to0.
 \]
+
 :::
 
-<1>8. If
+:::
+
+::: pf-step
+
+If
 \[
 0<r_+<1,
 \]
@@ -321,7 +373,9 @@ then
 \log D_n\to-\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Now
 \[
 \log r_+<0,
@@ -332,9 +386,14 @@ so the linear term
 \]
 tends to $-\infty$.
 The remaining terms in step <1>6 stay bounded.
+
 :::
 
-<1>9. If
+:::
+
+::: pf-step
+
+If
 \[
 r_+=1,
 \]
@@ -348,7 +407,9 @@ then
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 r_+r_-=-b^2,
@@ -381,9 +442,14 @@ Thus
 D_n\to\frac1{1+b^2},
 \]
 and taking logarithms gives the displayed limit.
+
 :::
 
-<1>10. The condition
+:::
+
+::: pf-step
+
+The condition
 \[
 r_+=1
 \]
@@ -392,7 +458,9 @@ is equivalent to
 \boxed{a+b^2=1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The number $r_+=1$ is a root of the characteristic equation
 \[
 r^2-ar-b^2=0
@@ -401,11 +469,18 @@ exactly when
 \[
 1-a-b^2=0.
 \]
+
 :::
 
-<1>11. Therefore the literal source claim of a finite real limit is false in general.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the literal source claim of a finite real limit is false in general.
+
+
+::: pf-proof
+
 For example, if
 \[
 a=b=1,
@@ -434,9 +509,14 @@ The complete extended-real behavior is:
 \end{cases}
 }
 \]
+
 :::
 
-<1>12. The natural normalized statement is
+:::
+
+::: pf-step
+
+The natural normalized statement is
 \[
 \boxed{
 \lim_{n\to\infty}
@@ -451,7 +531,9 @@ a+\sqrt{a^2+4b^2}
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Divide the identity in step <1>6 by $n$.
 Then
 \[
@@ -464,12 +546,16 @@ while the constant term divided by $n$ tends to $0$, and
 \frac1n\log(1-q^{n+1})\to0.
 \]
 Substitute the definition of $r_+$ from step <1>3.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 proves positivity of every determinant.
 Steps <1>7--<1>11 give the correct disposition of the literal logarithmic limit, and step <1>12 records the finite normalized limit naturally associated to the problem.
+
 :::
+
 :::

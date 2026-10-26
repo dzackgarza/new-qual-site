@@ -29,14 +29,17 @@ for $(x,y)\ne(0,0)$ and set $f(0,0)=0$.
 Prove your answer.
 :::
 
-::: {.solution}
 Let
 \[
 v=(a,b)\in\mathbb R^2
 \]
 be a nonzero direction vector.
 
-<1>1. For $t\ne0$,
+::: pf
+
+::: pf-step
+
+For $t\ne0$,
 \[
 f(tv)
 =
@@ -47,7 +50,9 @@ f(tv)
 \frac{ab}{\sqrt{a^2+b^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute
 \[
 (x,y)=(ta,tb)
@@ -67,9 +72,14 @@ f(ta,tb)
 \frac{ab}{\sqrt{a^2+b^2}}.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The two-sided directional difference quotient at the origin is
+:::
+
+::: pf-step
+
+The two-sided directional difference quotient at the origin is
 \[
 \frac{f(tv)-f(0,0)}{t}
 =
@@ -77,21 +87,30 @@ f(ta,tb)
 \frac{ab}{\sqrt{a^2+b^2}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 f(0,0)=0,
 \]
 divide the formula in step <1>1 by $t$.
+
 :::
 
-<1>3. If
+:::
+
+::: pf-step
+
+If
 \[
 ab\ne0,
 \]
 the directional derivative in direction $v$ does not exist.
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 t>0,
@@ -119,9 +138,14 @@ ab\ne0,
 \]
 these one-sided limits are different.
 Hence the two-sided limit does not exist.
+
 :::
 
-<1>4. If
+:::
+
+::: pf-step
+
+If
 \[
 ab=0,
 \]
@@ -130,7 +154,9 @@ then the directional derivative exists and equals
 \boxed{0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 When
 \[
 ab=0,
@@ -140,11 +166,18 @@ the quotient in step <1>2 is identically zero for every
 t\ne0.
 \]
 Thus its limit is zero.
+
 :::
 
-<1>5. Therefore the directional derivatives at the origin exist exactly in the nonzero directions parallel to one of the coordinate axes, and all such derivatives equal $0$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore the directional derivatives at the origin exist exactly in the nonzero directions parallel to one of the coordinate axes, and all such derivatives equal $0$.
+
+
+::: pf-proof
+
 For a nonzero vector
 \[
 v=(a,b),
@@ -161,11 +194,18 @@ b=0.
 \]
 Apply steps <1>3--<1>4.
 This answers part (a).
+
 :::
 
-<1>6. If $f$ were differentiable at $(0,0)$, then its derivative would be the zero linear map.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f$ were differentiable at $(0,0)$, then its derivative would be the zero linear map.
+
+
+::: pf-proof
+
 Differentiability implies existence of the partial derivatives, and they are the directional derivatives in the coordinate directions.
 By step <1>4,
 \[
@@ -177,9 +217,14 @@ Thus the Jacobian matrix, and hence the derivative, would have to be
 \[
 Df(0,0)=0.
 \]
+
 :::
 
-<1>7. Along the line
+:::
+
+::: pf-step
+
+Along the line
 \[
 y=x,
 \]
@@ -195,7 +240,9 @@ for every
 t\ne0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For
 \[
 t\ne0,
@@ -221,11 +268,18 @@ Therefore
 =
 \frac12.
 \]
+
 :::
 
-<1>8. The function $f$ is not differentiable at $(0,0)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is not differentiable at $(0,0)$.
+
+
+::: pf-proof
+
 If $f$ were differentiable there, step <1>6 says the derivative would be zero.
 The differentiability condition would then require
 \[
@@ -253,11 +307,15 @@ Hence
 \[
 \boxed{f\text{ is not differentiable at }(0,0).}
 \]
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 answers part (a), and step <1>8 answers part (b).
+
 :::
+
 :::

@@ -16,7 +16,6 @@ Prove Goursat's theorem: if $f:\mathbb C\to\mathbb C$ is complex differentiable 
 where the line integral is over the three sides of the triangle.
 :::
 
-::: {.solution}
 Let
 \[
 I(\Delta)
@@ -24,25 +23,38 @@ I(\Delta)
 \oint_{\partial\Delta}f(z)\,dz.
 \]
 
-<1>1. If a triangle $\Delta$ is subdivided by joining the midpoints of its three sides into four congruent triangles $\Delta_1,\dots,\Delta_4$, then
+::: pf
+
+::: pf-step
+
+If a triangle $\Delta$ is subdivided by joining the midpoints of its three sides into four congruent triangles $\Delta_1,\dots,\Delta_4$, then
 \[
 I(\Delta)
 =
 \sum_{j=1}^4 I(\Delta_j).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each interior segment of the subdivision occurs twice in the sum of the four oriented boundary integrals, once in each direction, so those contributions cancel. The remaining oriented segments are exactly the three sides of $\partial\Delta$.
+
 :::
 
-<1>2. Among the four subtriangles, at least one satisfies
+:::
+
+::: pf-step
+
+Among the four subtriangles, at least one satisfies
 \[
 |I(\Delta_j)|
 \ge
 \frac14|I(\Delta)|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1 and the triangle inequality,
 \[
 |I(\Delta)|
@@ -50,9 +62,14 @@ By step <1>1 and the triangle inequality,
 \sum_{j=1}^4|I(\Delta_j)|.
 \]
 If every term on the right were strictly smaller than $|I(\Delta)|/4$, their sum would be strictly smaller than $|I(\Delta)|$, a contradiction.
+
 :::
 
-<1>3. Starting from $\Delta_0=\Delta$, one can choose nested closed triangles
+:::
+
+::: pf-step
+
+Starting from $\Delta_0=\Delta$, one can choose nested closed triangles
 \[
 \Delta_0\supset\Delta_1\supset\Delta_2\supset\cdots
 \]
@@ -75,25 +92,39 @@ and
 2^{-n}\operatorname{per}(\Delta_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 At each stage subdivide $\Delta_n$ into four congruent midpoint triangles and choose a child satisfying step <1>2. Each such child has all side lengths halved, hence both diameter and perimeter are halved. Iterating the integral estimate gives
 \[
 |I(\Delta_n)|
 \ge
 4^{-n}|I(\Delta_0)|.
 \]
+
 :::
 
-<1>4. There is a unique point
+:::
+
+::: pf-step
+
+There is a unique point
 \[
 z_0\in\bigcap_{n=0}^{\infty}\Delta_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sets $\Delta_n$ are nonempty compact and nested, so their intersection is nonempty. Their diameters tend to zero by step <1>3, hence the intersection contains at most one point.
+
 :::
 
-<1>5. For every $\varepsilon>0$, there is $N$ such that whenever $z\in\Delta_N$,
+:::
+
+::: pf-step
+
+For every $\varepsilon>0$, there is $N$ such that whenever $z\in\Delta_N$,
 \[
 f(z)
 =
@@ -108,7 +139,9 @@ with
 |\eta(z)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Complex differentiability at $z_0$ means
 \[
 \frac{f(z)-f(z_0)}{z-z_0}
@@ -136,9 +169,14 @@ By step <1>3, choose $N$ so large that
 \operatorname{diam}(\Delta_N)<\delta.
 \]
 Since $z_0\in\Delta_N$, every $z\in\Delta_N$ satisfies $|z-z_0|<\delta$. Define $\eta(z)$ by the displayed remainder formula for $z\ne z_0$ and set $\eta(z_0)=0$.
+
 :::
 
-<1>6. For every $n\ge N$,
+:::
+
+::: pf-step
+
+For every $n\ge N$,
 \[
 I(\Delta_n)
 =
@@ -146,7 +184,9 @@ I(\Delta_n)
 (z-z_0)\eta(z)\,dz.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Insert the expansion from step <1>5 into the contour integral. The constant term contributes
 \[
 f(z_0)\oint_{\partial\Delta_n}dz
@@ -162,9 +202,14 @@ f'(z_0)
 =0.
 \]
 Only the remainder remains.
+
 :::
 
-<1>7. For every $n\ge N$,
+:::
+
+::: pf-step
+
+For every $n\ge N$,
 \[
 |I(\Delta_n)|
 \le
@@ -173,7 +218,9 @@ Only the remainder remains.
 \operatorname{per}(\Delta_n).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5 and <1>6,
 \[
 |(z-z_0)\eta(z)|
@@ -183,9 +230,14 @@ By steps <1>5 and <1>6,
 \varepsilon\operatorname{diam}(\Delta_n)
 \]
 on $\partial\Delta_n$. The ML inequality then gives the stated bound.
+
 :::
 
-<1>8. The original integral satisfies
+:::
+
+::: pf-step
+
+The original integral satisfies
 \[
 |I(\Delta_0)|
 \le
@@ -194,7 +246,9 @@ on $\partial\Delta_n$. The ML inequality then gives the stated bound.
 \operatorname{per}(\Delta_0).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>3 and <1>7,
 \[
 4^{-n}|I(\Delta_0)|
@@ -213,26 +267,37 @@ The right-hand side is
 \operatorname{per}(\Delta_0).
 \]
 Multiply by $4^n$.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \oint_{\partial\Delta}f(z)\,dz=0.
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The estimate in step <1>8 holds for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ forces
 \[
 |I(\Delta_0)|=0.
 \]
 Since $\Delta_0=\Delta$, this is the desired conclusion.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 proves Goursat's theorem for the given triangle.
+
 :::
+
 :::

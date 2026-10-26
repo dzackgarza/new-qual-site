@@ -24,13 +24,16 @@ z\mapsto F(z,z)
 is holomorphic.
 :::
 
-::: {.solution}
 Define
 \[
 f(z)=F(z,z).
 \]
 
-<1>1. Fix \(z_0\in\mathbb C\) and \(R>0\). For every
+::: pf
+
+::: pf-step
+
+Fix \(z_0\in\mathbb C\) and \(R>0\). For every
 \[
 a,b\in D(z_0,R),
 \]
@@ -47,7 +50,9 @@ F(a,b)
 \,d\xi\,d\zeta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For fixed \(b\), the map
 \[
 \zeta\longmapsto F(\zeta,b)
@@ -77,9 +82,14 @@ Substituting this identity into the first formula gives the displayed
 iterated integral. Joint continuity ensures that the integrand is continuous
 on the compact product of the two contour circles, so the iterated contour
 integral is well-defined.
+
 :::
 
-<1>2. For every \(z\in D(z_0,R)\),
+:::
+
+::: pf-step
+
+For every \(z\in D(z_0,R)\),
 \[
 \boxed{
 f(z)
@@ -92,14 +102,21 @@ f(z)
 \,d\xi\,d\zeta}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Apply step <1>1 with
 \[
 a=b=z.
 \]
+
 :::
 
-<1>3. For every \(0<r<R\), the integrand in step <1>2 and its derivative
+:::
+
+::: pf-step
+
+For every \(0<r<R\), the integrand in step <1>2 and its derivative
 with respect to \(z\) are uniformly bounded for
 \[
 |z-z_0|\le r
@@ -109,7 +126,9 @@ and
 |\zeta-z_0|=|\xi-z_0|=R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the compact contour product,
 \[
 M_R
@@ -152,11 +171,18 @@ whose absolute value is at most
 \]
 Multiplying by \(M_R\) gives a uniform bound for the differentiated
 integrand.
+
 :::
 
-<1>4. The function \(f\) is holomorphic on \(D(z_0,R)\).
+:::
 
-::: {.proof}
+::: pf-step
+
+The function \(f\) is holomorphic on \(D(z_0,R)\).
+
+
+::: pf-proof
+
 By steps <1>2 and <1>3, differentiation under the two contour integrals is
 valid on every smaller closed disk
 \[
@@ -181,22 +207,33 @@ d\xi\,d\zeta.
 \end{aligned}
 \]
 Thus the complex derivative exists at every \(z\in D(z_0,R)\).
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{z\longmapsto F(z,z)\text{ is entire}}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The center \(z_0\) was arbitrary, and one may choose any \(R>0\). Step
 <1>4 therefore proves holomorphy in a neighborhood of every point of
 \(\mathbb C\).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

@@ -29,8 +29,11 @@ Prove both of the following:
 \]
 :::
 
-::: {.solution}
-<1>1. Suppose first that $F$ is not uniformly bounded. Then for every integer $n\geq1$ there exist
+::: pf
+
+::: pf-step
+
+Suppose first that $F$ is not uniformly bounded. Then for every integer $n\geq1$ there exist
 \[
 f_n\in F,
 \qquad x_n\in[0,1]
@@ -40,13 +43,22 @@ such that
 |f_n(x_n)|>n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the negation of the existence of a common finite bound for all values $|f(x)|$ with $f\in F$ and $x\in[0,1]$.
+
 :::
 
-<1>2. The sequence $(f_n)$ cannot have a uniformly convergent subsequence.
+:::
 
-::: {.proof}
+::: pf-step
+
+The sequence $(f_n)$ cannot have a uniformly convergent subsequence.
+
+
+::: pf-proof
+
 If $f_{n_j}\to f$ uniformly, then for all sufficiently large $j$,
 \[
 \|f_{n_j}-f\|_\infty<1.
@@ -60,15 +72,27 @@ But step <1>1 gives
 \|f_{n_j}\|_\infty\geq|f_{n_j}(x_{n_j})|>n_j\to\infty,
 \]
 a contradiction.
+
 :::
 
-<1>3. Therefore $F$ is uniformly bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore $F$ is uniformly bounded.
+
+
+::: pf-proof
+
 The hypothesis says every sequence in $F$ has a uniformly convergent subsequence. Step <1>2 contradicts that hypothesis under the assumption of step <1>1. Hence the assumption was false.
+
 :::
 
-<1>4. Suppose next that $F$ is not equicontinuous. Then there exist $\varepsilon_0>0$, functions $f_n\in F$, and points $x_n,y_n\in[0,1]$ such that
+:::
+
+::: pf-step
+
+Suppose next that $F$ is not equicontinuous. Then there exist $\varepsilon_0>0$, functions $f_n\in F$, and points $x_n,y_n\in[0,1]$ such that
 \[
 |x_n-y_n|<\frac1n
 \]
@@ -77,28 +101,49 @@ but
 |f_n(x_n)-f_n(y_n)|\geq\varepsilon_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Negating equicontinuity gives an $\varepsilon_0>0$ such that for every $\delta>0$ there are $f\in F$ and $x,y$ with $|x-y|<\delta$ but $|f(x)-f(y)|\geq\varepsilon_0$. Apply this with $\delta=1/n$.
+
 :::
 
-<1>5. By hypothesis, $(f_n)$ has a subsequence $(f_{n_j})$ converging uniformly to some continuous function $f$ on $[0,1]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+By hypothesis, $(f_n)$ has a subsequence $(f_{n_j})$ converging uniformly to some continuous function $f$ on $[0,1]$.
+
+
+::: pf-proof
+
 This is the assumed sequential compactness property applied to the sequence constructed in step <1>4. A uniform limit of continuous functions is continuous.
+
 :::
 
-<1>6. Since $[0,1]$ is compact, $f$ is uniformly continuous. Hence there exists $\delta>0$ such that
+:::
+
+::: pf-step
+
+Since $[0,1]$ is compact, $f$ is uniformly continuous. Hence there exists $\delta>0$ such that
 \[
 |x-y|<\delta
 \quad\Longrightarrow\quad
 |f(x)-f(y)|<\varepsilon_0/3.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the Heine--Cantor theorem applied to the continuous function $f$ on the compact interval.
+
 :::
 
-<1>7. Choose $j$ sufficiently large that
+:::
+
+::: pf-step
+
+Choose $j$ sufficiently large that
 \[
 \|f_{n_j}-f\|_\infty<\varepsilon_0/3
 \]
@@ -111,7 +156,9 @@ Then
 |f_{n_j}(x_{n_j})-f_{n_j}(y_{n_j})|<\varepsilon_0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>6 and the triangle inequality,
 \[
 \begin{aligned}
@@ -123,23 +170,41 @@ Using step <1>6 and the triangle inequality,
 =\varepsilon_0.
 \end{aligned}
 \]
+
 :::
 
-<1>8. Step <1>7 contradicts the construction in step <1>4. Therefore $F$ is equicontinuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+Step <1>7 contradicts the construction in step <1>4. Therefore $F$ is equicontinuous.
+
+
+::: pf-proof
+
 Step <1>4 requires the same quantity to be at least $\varepsilon_0$ for every index, including $n_j$, whereas step <1>7 makes it strictly smaller than $\varepsilon_0$.
+
 :::
 
-<1>9. Thus $F$ is both uniformly bounded and equicontinuous.
+:::
 
-::: {.proof}
+::: pf-step
+
+Thus $F$ is both uniformly bounded and equicontinuous.
+
+
+::: pf-proof
+
 Uniform boundedness is step <1>3 and equicontinuity is step <1>8.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>9 proves both requested conclusions.
+
 :::
+
 :::

@@ -26,10 +26,13 @@ $$
 (2) Deduce Liouville’s theorem from (1).
 :::
 
-::: {.solution}
 Fix $0<r<R$.
 
-<1>1. On $|z|=r$, the series
+::: pf
+
+::: pf-step
+
+On $|z|=r$, the series
 $$
 f(re^{i\theta})
 =
@@ -37,7 +40,9 @@ f(re^{i\theta})
 $$
 converges absolutely and uniformly in $\theta\in[0,2\pi]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $\rho$ with
 $$
 r<\rho<R.
@@ -55,9 +60,14 @@ $$
 |c_n|\rho^n.
 $$
 The Weierstrass $M$-test therefore gives absolute uniform convergence.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 |f(re^{i\theta})|^2
 =
@@ -67,7 +77,9 @@ r^{n+m}e^{i(n-m)\theta},
 $$
 and the double series may be integrated term by term on $[0,2\pi]$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 $$
 \sum_{n=0}^{\infty}|c_n|r^n<\infty.
@@ -83,9 +95,14 @@ $$
 Thus the product of the two uniformly absolutely convergent series for
 $f(re^{i\theta})$ and its complex conjugate is itself uniformly absolutely
 convergent, so termwise integration is valid.
+
 :::
 
-<1>3. For integers $n,m\ge0$,
+:::
+
+::: pf-step
+
+For integers $n,m\ge0$,
 $$
 \frac1{2\pi}\int_0^{2\pi}e^{i(n-m)\theta}\,d\theta
 =
@@ -95,7 +112,9 @@ $$
 \end{cases}
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 If $n=m$, the integrand is $1$. If $n\ne m$, direct integration gives
 $$
 \int_0^{2\pi}e^{i(n-m)\theta}\,d\theta
@@ -105,9 +124,14 @@ $$
 \right]_0^{2\pi}
 =0.
 $$
+
 :::
 
-<1>4. Parseval's identity in the problem holds:
+:::
+
+::: pf-step
+
+Parseval's identity in the problem holds:
 $$
 \boxed{
 \frac1{2\pi}\int_0^{2\pi}|f(re^{i\theta})|^2\,d\theta
@@ -116,15 +140,24 @@ $$
 }.
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate the expansion from step <1>2 term by term. By step <1>3, every term with
 $n\ne m$ integrates to zero, while the term with $n=m$ contributes
 $|c_n|^2r^{2n}$.
+
 :::
 
-<1>5. If $f$ is entire and bounded, then every coefficient $c_n$ with $n\ge1$ vanishes.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f$ is entire and bounded, then every coefficient $c_n$ with $n\ge1$ vanishes.
+
+
+::: pf-proof
+
 Suppose
 $$
 |f(z)|\le M
@@ -150,21 +183,32 @@ $$
 |c_n|\le \frac{M}{r^n}.
 $$
 Letting $r\to\infty$ yields $c_n=0$.
+
 :::
 
-<1>6. Every bounded entire function is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every bounded entire function is constant.
+
+
+::: pf-proof
+
 By step <1>5,
 $$
 f(z)=c_0.
 $$
 This is Liouville's theorem.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part (1), and step <1>6 proves part (2).
+
 :::
+
 :::

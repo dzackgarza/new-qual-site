@@ -25,7 +25,6 @@ for all $x\in\mathbb R$.
 Justify all manipulations.
 :::
 
-::: {.solution}
 Let
 \[
 h(y)
@@ -39,12 +38,18 @@ Use the Fourier transform convention
 \int_{\mathbb R}h(y)e^{-i\xi y}\,dy.
 \]
 
-<1>1. The integral in the problem is
+::: pf
+
+::: pf-step
+
+The integral in the problem is
 \[
 (h*h)(x).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition of convolution,
 \[
 (h*h)(x)
@@ -57,23 +62,35 @@ h(y)h(x-y)\,dy
 {(1+y^2)(1+(x-y)^2)}.
 \]
 Since $h\in L^1(\mathbb R)$, the convolution is absolutely convergent for almost every $x$; in the present case the displayed integrand is continuous and decays like $|y|^{-4}$, so it is absolutely integrable for every fixed $x$.
+
 :::
 
-<1>2. For every $\xi\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every $\xi\in\mathbb R$,
 \[
 \widehat h(\xi)
 =
 \pi e^{-|\xi|}.
 \]
 
-<2>1. If $\xi>0$, then
+
+::: pf-proof
+
+::: pf-step
+
+If $\xi>0$, then
 \[
 \widehat h(\xi)
 =
 \pi e^{-\xi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Integrate
 \[
 F_\xi(z)
@@ -117,16 +134,23 @@ Because the contour is clockwise, the residue theorem gives
 =
 \pi e^{-\xi}.
 \]
+
 :::
 
-<2>2. If $\xi<0$, then
+:::
+
+::: pf-step
+
+If $\xi<0$, then
 \[
 \widehat h(\xi)
 =
 \pi e^{\xi}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Use the upper semicircle instead. Since $\xi<0$ and $\operatorname{Im}z\ge0$ there,
 \[
 |e^{-i\xi z}|
@@ -151,14 +175,21 @@ The positively oriented residue theorem gives
 =
 \pi e^{\xi}.
 \]
+
 :::
 
-<2>3. If $\xi=0$, then
+:::
+
+::: pf-step
+
+If $\xi=0$, then
 \[
 \widehat h(0)=\pi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 \[
 \widehat h(0)
@@ -170,11 +201,13 @@ Directly,
 =
 \pi.
 \]
+
 :::
 
-<2>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <2>1 through <2>3 combine to give
 \[
 \widehat h(\xi)
@@ -182,16 +215,25 @@ Steps <2>1 through <2>3 combine to give
 \pi e^{-|\xi|}
 \]
 for all real $\xi$.
+
 :::
 
-<1>3. The Fourier transform of the convolution is
+:::
+
+:::
+
+::: pf-step
+
+The Fourier transform of the convolution is
 \[
 \widehat{h*h}(\xi)
 =
 \pi^2e^{-2|\xi|}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since $h\in L^1(\mathbb R)$, Fubini's theorem applies to the convolution-transform calculation and gives
 \[
 \widehat{h*h}
@@ -199,9 +241,14 @@ Since $h\in L^1(\mathbb R)$, Fubini's theorem applies to the convolution-transfo
 \widehat h\,\widehat h.
 \]
 Apply step <1>2.
+
 :::
 
-<1>4. For every $x\in\mathbb R$,
+:::
+
+::: pf-step
+
+For every $x\in\mathbb R$,
 \[
 (h*h)(x)
 =
@@ -211,7 +258,9 @@ Apply step <1>2.
 e^{ix\xi}\,d\xi.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function $h*h$ belongs to $L^1(\mathbb R)$ because $h\in L^1$, and step <1>3 gives
 \[
 \widehat{h*h}(\xi)
@@ -221,9 +270,14 @@ The function $h*h$ belongs to $L^1(\mathbb R)$ because $h\in L^1$, and step <1>3
 L^1(\mathbb R).
 \]
 Fourier inversion therefore gives the displayed formula at every point of continuity of $h*h$. Convolution of two $L^1$ functions is continuous, so the formula holds for every real $x$.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_{\mathbb R}
 e^{-2|\xi|}
@@ -232,7 +286,9 @@ e^{ix\xi}\,d\xi
 \frac4{x^2+4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using symmetry,
 \[
 \begin{aligned}
@@ -254,9 +310,14 @@ e^{-(2-ix)\xi}\,d\xi\\
 \end{aligned}
 \]
 The integral is absolutely convergent because $e^{-2|\xi|}\in L^1$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \int_{-\infty}^{\infty}
@@ -269,7 +330,9 @@ The integral is absolutely convergent because $e^{-2|\xi|}\in L^1$.
 (x\in\mathbb R).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>1, <1>4, and <1>5,
 \[
 \begin{aligned}
@@ -281,11 +344,15 @@ By steps <1>1, <1>4, and <1>5,
 \frac{2\pi}{x^2+4}.
 \end{aligned}
 \]
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 gives the requested value for every real $x$, and the preceding steps justify the contour, Fubini, convolution, and Fourier inversion manipulations.
+
 :::
+
 :::

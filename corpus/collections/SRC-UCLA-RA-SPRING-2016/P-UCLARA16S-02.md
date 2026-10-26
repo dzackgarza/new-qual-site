@@ -24,7 +24,6 @@ Let $f\in L^1(\mathbb R)$. Show that the series
 converges absolutely for almost all $x\in\mathbb R$.
 :::
 
-::: {.solution}
 Define
 \[
 G(x)
@@ -34,13 +33,22 @@ G(x)
 |f(x-\sqrt n)|.
 \]
 
-<1>1. For every integer $M$,
+::: pf
+
+::: pf-step
+
+For every integer $M$,
 \[
 \int_M^{M+1}G(x)\,dx
 <\infty.
 \]
 
-<2>1. Tonelli's theorem gives
+
+::: pf-proof
+
+::: pf-step
+
+Tonelli's theorem gives
 \[
 \int_M^{M+1}G(x)\,dx
 =
@@ -50,7 +58,9 @@ G(x)
 |f(y)|\,dy.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The summands defining $G$ are nonnegative and measurable. Hence Tonelli's theorem allows interchange of the sum and integral:
 \[
 \begin{aligned}
@@ -66,9 +76,14 @@ The change of variables
 y=x-\sqrt n
 \]
 gives the stated formula.
+
 :::
 
-<2>2. For each integer $k\ge1$, the integers $n$ satisfying
+:::
+
+::: pf-step
+
+For each integer $k\ge1$, the integers $n$ satisfying
 \[
 k\le\sqrt n<k+1
 \]
@@ -83,7 +98,9 @@ and have
 [M-k-1,M+1-k].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The condition is equivalent to
 \[
 k^2\le n<(k+1)^2,
@@ -96,9 +113,14 @@ integer values of $n$. The weight bound follows from $\sqrt n\ge k$. The interva
 \[
 k\le\sqrt n<k+1.
 \]
+
 :::
 
-<2>3. The contribution of all indices with
+:::
+
+::: pf-step
+
+The contribution of all indices with
 \[
 k\le\sqrt n<k+1
 \]
@@ -108,7 +130,9 @@ to the sum in step <2>1 is at most
 \int_{M-k-1}^{M+1-k}|f(y)|\,dy.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <2>2, the group contains at most $2k+1$ terms, each with coefficient at most $1/k$, and every integration interval is contained in
 \[
 [M-k-1,M+1-k].
@@ -126,9 +150,14 @@ Since
 (k\ge1),
 \]
 the claim follows.
+
 :::
 
-<2>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \sum_{k=1}^{\infty}
 \int_{M-k-1}^{M+1-k}|f(y)|\,dy
@@ -136,7 +165,9 @@ the claim follows.
 2\|f\|_{L^1}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Split each interval into two unit intervals:
 \[
 [M-k-1,M+1-k]
@@ -160,11 +191,13 @@ and
 \|f\|_1.
 \]
 Adding the two estimates gives the result.
+
 :::
 
-<2>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Combining steps <2>1 through <2>4,
 \[
 \int_M^{M+1}G(x)\,dx
@@ -173,25 +206,41 @@ Combining steps <2>1 through <2>4,
 <\infty.
 \]
 This proves step <1>1.
+
 :::
 
-<1>2. For every integer $M$,
+:::
+
+:::
+
+::: pf-step
+
+For every integer $M$,
 \[
 G(x)<\infty
 \]
 for almost every $x\in[M,M+1]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The function $G$ is nonnegative and measurable. By step <1>1 it is integrable on $[M,M+1]$. A nonnegative integrable function is finite almost everywhere.
+
 :::
 
-<1>3. One has
+:::
+
+::: pf-step
+
+One has
 \[
 G(x)<\infty
 \]
 for almost every $x\in\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 The real line is the countable union
 \[
 \mathbb R
@@ -199,9 +248,14 @@ The real line is the countable union
 \bigcup_{M\in\mathbb Z}[M,M+1].
 \]
 By step <1>2, the exceptional set in each interval has measure zero. A countable union of null sets is null.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \sum_{n=1}^{\infty}
@@ -210,7 +264,9 @@ By step <1>2, the exceptional set in each interval has measure zero. A countable
 }
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 G(x)
@@ -222,11 +278,15 @@ f(x-\sqrt n)
 \right|.
 \]
 Step <1>3 says this sum is finite for almost every $x$, which is exactly absolute convergence of the original series.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 is the required conclusion.
+
 :::
+
 :::

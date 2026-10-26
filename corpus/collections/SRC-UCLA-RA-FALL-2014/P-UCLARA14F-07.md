@@ -28,7 +28,6 @@ Find an explicit conformal mapping from the upper half-plane slit along the vert
 to the unit disc $\{ z \in \mathbb{C} ; |z| < 1 \}$.
 :::
 
-::: {.solution}
 Let
 \[
 \Omega
@@ -38,7 +37,11 @@ Let
 \{it:0<t\le h\}.
 \]
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 \[
 T_1(z)=\frac{ih}{z}
 \]
@@ -50,7 +53,9 @@ is a conformal bijection from $\Omega$ onto
 \setminus[1,\infty).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write $z=x+iy$ with $y>0$. Then
 \[
 \frac{ih}{z}
@@ -80,9 +85,14 @@ w\longmapsto\frac{ih}{w}
 sends the right half-plane to the upper half-plane and avoids the slit
 precisely when $w\notin[1,\infty)$. Thus $T_1$ is bijective. It is Möbius
 and has nonzero derivative on $\Omega$, hence is conformal.
+
 :::
 
-<1>2. The squaring map
+:::
+
+::: pf-step
+
+The squaring map
 \[
 T_2(w)=w^2
 \]
@@ -95,7 +105,9 @@ is a conformal bijection from $\Omega_1$ onto
 \bigl((-\infty,0]\cup[1,\infty)\bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the right half-plane,
 \[
 -\frac{\pi}{2}<\arg w<\frac{\pi}{2},
@@ -112,9 +124,14 @@ It is injective there because $w$ and $-w$ cannot both lie in the right
 half-plane. The removed ray $[1,\infty)$ is carried exactly to
 $[1,\infty)$. Since $T_2'(w)=2w\ne0$ on the right half-plane, the map is
 conformal.
+
 :::
 
-<1>3. The Möbius map
+:::
+
+::: pf-step
+
+The Möbius map
 \[
 T_3(\zeta)=\frac1\zeta-1
 \]
@@ -125,7 +142,9 @@ is a conformal bijection from $\Omega_2$ onto
 \mathbb C\setminus(-\infty,0].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The inverse is
 \[
 T_3^{-1}(u)=\frac1{u+1}.
@@ -147,9 +166,14 @@ $\Omega_2$. The derivative
 -\frac1{\zeta^2}
 \]
 never vanishes on $\Omega_2$.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 T_4(u)=\sqrt{u}
 \]
@@ -162,7 +186,9 @@ Then $T_4$ is a conformal bijection onto the right half-plane
 H_R=\{s\in\mathbb C:\operatorname{Re}s>0\}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 On the slit plane choose
 \[
 -\pi<\arg u<\pi.
@@ -180,15 +206,22 @@ has argument in
 so its real part is positive. Conversely, squaring is a conformal bijection
 from $H_R$ onto the slit plane, as in step <1>2. Thus the principal square
 root is its conformal inverse.
+
 :::
 
-<1>5. The Cayley map
+:::
+
+::: pf-step
+
+The Cayley map
 \[
 T_5(s)=\frac{s-1}{s+1}
 \]
 is a conformal bijection from $H_R$ onto the unit disk $\mathbb D$.
 
-::: {.proof}
+
+::: pf-proof
+
 For $\operatorname{Re}s>0$,
 \[
 |s-1|^2
@@ -208,9 +241,14 @@ The inverse is
 \xi\longmapsto\frac{1+\xi}{1-\xi},
 \]
 which maps $\mathbb D$ to $H_R$. Thus $T_5$ is a conformal bijection.
+
 :::
 
-<1>6. The composite
+:::
+
+::: pf-step
+
+The composite
 \[
 F
 =
@@ -221,13 +259,20 @@ is therefore a conformal bijection
 \Omega\xrightarrow{\sim}\mathbb D.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each map in steps <1>1 through <1>5 is a conformal bijection onto the next
 domain. Their composition is therefore a conformal bijection from the
 original slit upper half-plane to the unit disk.
+
 :::
 
-<1>7. Explicitly,
+:::
+
+::: pf-step
+
+Explicitly,
 \[
 \boxed{
 F(z)
@@ -241,7 +286,9 @@ F(z)
 where the square root is the principal branch after the preceding maps place
 its argument in $\mathbb C\setminus(-\infty,0]$.
 
-::: {.proof}
+
+::: pf-proof
+
 The first three maps give
 \[
 T_3(T_2(T_1(z)))
@@ -251,12 +298,16 @@ T_3(T_2(T_1(z)))
 -\frac{z^2}{h^2}-1.
 \]
 Applying $T_4$ and then $T_5$ gives the displayed formula.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives the requested explicit conformal map, and steps <1>1 through
 <1>6 prove that it has the required source and target.
+
 :::
+
 :::

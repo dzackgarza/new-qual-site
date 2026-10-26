@@ -30,10 +30,15 @@ Suppose $f_n\colon\mathbb R\to\mathbb R$ satisfy:
 Prove that $f_n\to f$ uniformly on $\mathbb R$.
 :::
 
-::: {.solution}
-<1>1. The limit function $f$ is increasing.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The limit function $f$ is increasing.
+
+
+::: pf-proof
+
 If
 \[
 x<y,
@@ -47,9 +52,14 @@ Passing to the pointwise limit gives
 \[
 f(x)\le f(y).
 \]
+
 :::
 
-<1>2. Fix $\varepsilon>0$.
+:::
+
+::: pf-step
+
+Fix $\varepsilon>0$.
 There exists $M>0$ such that
 \[
 f(-M)<\frac{\varepsilon}{4}
@@ -59,7 +69,9 @@ and
 f(M)>1-\frac{\varepsilon}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 f(x)\to0
@@ -77,9 +89,14 @@ as
 x\to+\infty.
 \]
 Choose $M$ large enough that both inequalities hold.
+
 :::
 
-<1>3. There exists $N_0$ such that for every $n\ge N_0$,
+:::
+
+::: pf-step
+
+There exists $N_0$ such that for every $n\ge N_0$,
 \[
 |f_n(-M)-f(-M)|<\frac{\varepsilon}{4}
 \]
@@ -88,21 +105,30 @@ and
 |f_n(M)-f(M)|<\frac{\varepsilon}{4}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This follows from pointwise convergence at the two fixed points
 \[
 -M
 \quad\text{and}\quad
 M.
 \]
+
 :::
 
-<1>4. For every $n\ge N_0$ and every $x\le -M$,
+:::
+
+::: pf-step
+
+For every $n\ge N_0$ and every $x\le -M$,
 \[
 |f_n(x)-f(x)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since both $f_n$ and $f$ are increasing and nonnegative,
 \[
 0\le f_n(x)\le f_n(-M)
@@ -133,14 +159,21 @@ f_n(x)+f(x)
 <
 \varepsilon.
 \]
+
 :::
 
-<1>5. For every $n\ge N_0$ and every $x\ge M$,
+:::
+
+::: pf-step
+
+For every $n\ge N_0$ and every $x\ge M$,
 \[
 |f_n(x)-f(x)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because
 \[
 0\le f_n,f\le1
@@ -195,15 +228,27 @@ Therefore
 \varepsilon.
 \end{aligned}
 \]
+
 :::
 
-<1>6. The continuous function $f$ is uniformly continuous on the compact interval $[-M,M]$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The continuous function $f$ is uniformly continuous on the compact interval $[-M,M]$.
+
+
+::: pf-proof
+
 Apply the Heine--Cantor theorem.
+
 :::
 
-<1>7. Choose a partition
+:::
+
+::: pf-step
+
+Choose a partition
 \[
 -M=x_0<x_1<\cdots<x_r=M
 \]
@@ -215,7 +260,9 @@ f(x_j)-f(x_{j-1})
 \]
 for every $j$.
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6, choose $\delta>0$ such that
 \[
 |x-y|<\delta
@@ -232,26 +279,40 @@ f(x_j)-f(x_{j-1})
 <
 \frac{\varepsilon}{3}.
 \]
+
 :::
 
-<1>8. There exists $N_1$ such that for every $n\ge N_1$ and every partition point $x_j$,
+:::
+
+::: pf-step
+
+There exists $N_1$ such that for every $n\ge N_1$ and every partition point $x_j$,
 \[
 |f_n(x_j)-f(x_j)|
 <
 \frac{\varepsilon}{3}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each fixed $j$, pointwise convergence gives such an index.
 There are finitely many partition points, so take the maximum of those indices.
+
 :::
 
-<1>9. For every $n\ge N_1$ and every $x\in[-M,M]$,
+:::
+
+::: pf-step
+
+For every $n\ge N_1$ and every $x\in[-M,M]$,
 \[
 |f_n(x)-f(x)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Choose $j$ such that
 \[
 x_{j-1}\le x\le x_j.
@@ -306,9 +367,14 @@ Therefore
 <
 \varepsilon.
 \]
+
 :::
 
-<1>10. For every
+:::
+
+::: pf-step
+
+For every
 \[
 n\ge\max\{N_0,N_1\}
 \]
@@ -321,7 +387,9 @@ one has
 |f_n(x)-f(x)|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 x\le-M,
@@ -338,20 +406,31 @@ x\ge M,
 \]
 apply step <1>5.
 These three regions cover $\mathbb R$.
+
 :::
 
-<1>11. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f_n\to f\text{ uniformly on }\mathbb R}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>10 is exactly the definition of uniform convergence.
+
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>11 is the required conclusion.
+
 :::
+
 :::

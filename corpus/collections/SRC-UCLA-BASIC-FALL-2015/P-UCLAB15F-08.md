@@ -28,8 +28,11 @@ M=\begin{pmatrix}
 \]
 :::
 
-::: {.solution}
-<1>1. The inverse of $M$ is
+::: pf
+
+::: pf-step
+
+The inverse of $M$ is
 \[
 \boxed{
 M^{-1}
@@ -43,7 +46,9 @@ M^{-1}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 N=
@@ -69,16 +74,23 @@ Hence
 \[
 N=M^{-1}.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 M^{-2}
 =
 (M^{-1})^2.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 M^{-2}
@@ -91,9 +103,14 @@ Since $M$ is invertible,
 M^{-1}M^{-1}
 =(M^{-1})^2.
 \]
+
 :::
 
-<1>3. Squaring the matrix in step <1>1 gives
+:::
+
+::: pf-step
+
+Squaring the matrix in step <1>1 gives
 \[
 \boxed{
 M^{-2}
@@ -107,7 +124,9 @@ M^{-2}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Multiply
 \[
 \begin{pmatrix}
@@ -137,11 +156,15 @@ and the remaining rows similarly give
 \quad
 (0,-2,-1,5).
 \]
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 is the requested value of $M^{-2}$.
+
 :::
+
 :::

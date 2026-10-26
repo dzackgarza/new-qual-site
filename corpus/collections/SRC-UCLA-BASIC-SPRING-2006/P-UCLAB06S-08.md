@@ -19,28 +19,40 @@ audit:
 A linear transformation T is called orthogonal if it is nonsingular and ${ } ^ { t } T = T ^ { - 1 }$ . Prove that if $T : { \mathbf { R } } ^ { 2 n + 1 } \to { \mathbf { R } } ^ { 2 n + 1 }$ is orthogonal, then there exists a vector $\boldsymbol { v } \in \mathbf { R } ^ { 2 n + 1 }$ such that $T v = \pm v$
 :::
 
-::: {.solution}
-<1>1. The characteristic polynomial
+::: pf
+
+::: pf-step
+
+The characteristic polynomial
 \[
 \chi_T(\lambda)=\det(\lambda I-T)
 \]
 has a real root.
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $T$ has size $(2n+1)\times(2n+1)$, so $\chi_T$ is a real polynomial of odd degree $2n+1$ with leading coefficient $1$.
 Hence $\chi_T(\lambda)\to+\infty$ as $\lambda\to+\infty$ and $\chi_T(\lambda)\to-\infty$ as $\lambda\to-\infty$.
 By the intermediate value theorem, there exists $\lambda_0\in\mathbb R$ such that
 \[
 \chi_T(\lambda_0)=0.
 \]
+
 :::
 
-<1>2. There exists a nonzero real vector $v$ such that
+:::
+
+::: pf-step
+
+There exists a nonzero real vector $v$ such that
 \[
 Tv=\lambda_0v.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \det(\lambda_0I-T)=0,
@@ -55,15 +67,22 @@ so
 \[
 Tv=\lambda_0v.
 \]
+
 :::
 
-<1>3. The orthogonality relation implies
+:::
+
+::: pf-step
+
+The orthogonality relation implies
 \[
 \|Tx\|_2=\|x\|_2
 \]
 for every $x\in\mathbb R^{2n+1}$.
 
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 T^t=T^{-1},
@@ -84,14 +103,21 @@ x^tx
 \|x\|_2^2.
 \]
 Taking square roots gives the claim.
+
 :::
 
-<1>4. The real eigenvalue $\lambda_0$ satisfies
+:::
+
+::: pf-step
+
+The real eigenvalue $\lambda_0$ satisfies
 \[
 |\lambda_0|=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2,
 \[
 Tv=\lambda_0v
@@ -108,18 +134,30 @@ Using step <1>3,
 |\lambda_0|\|v\|_2.
 \]
 Since $\|v\|_2>0$, division gives $|\lambda_0|=1$.
+
 :::
 
-<1>5. Since $\lambda_0$ is real,
+:::
+
+::: pf-step
+
+Since $\lambda_0$ is real,
 \[
 \lambda_0=\pm1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The only real numbers with absolute value $1$ are $1$ and $-1$.
+
 :::
 
-<1>6. Therefore there exists a nonzero vector
+:::
+
+::: pf-step
+
+Therefore there exists a nonzero vector
 \[
 v\in\mathbb R^{2n+1}
 \]
@@ -128,13 +166,19 @@ such that
 \boxed{Tv=\pm v}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Combine steps <1>2 and <1>5.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>6 is the required conclusion.
+
 :::
+
 :::

@@ -29,10 +29,15 @@ d(A,B)=\left(\sum_{1\le i,j\le3}|a_{ij}-b_{ij}|^2\right)^{1/2}.
 \]
 :::
 
-::: {.solution}
-<1>1. Claim 1 is false.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Claim 1 is false.
+
+
+::: pf-proof
+
 Consider the zero matrix
 \[
 0\in M_3(\mathbb R).
@@ -59,11 +64,18 @@ But
 \]
 for every $n$, so the left side converges to $1$, a contradiction.
 Thus the determinant-one matrices are not dense.
+
 :::
 
-<1>2. In fact, there is an open neighborhood of the zero matrix containing no determinant-one matrix.
+:::
 
-::: {.proof}
+::: pf-step
+
+In fact, there is an open neighborhood of the zero matrix containing no determinant-one matrix.
+
+
+::: pf-proof
+
 By continuity of determinant at $0$, there exists $\delta>0$ such that
 \[
 d(A,0)<\delta
@@ -76,9 +88,14 @@ No such matrix can satisfy
 \[
 \det A=1.
 \]
+
 :::
 
-<1>3. Claim 2 is true.
+:::
+
+::: pf-step
+
+Claim 2 is true.
 Let
 \[
 A\in M_3(\mathbb C).
@@ -91,11 +108,18 @@ T
 \]
 is upper triangular.
 
-::: {.proof}
+
+::: pf-proof
+
 This is the complex Schur theorem.
+
 :::
 
-<1>4. Write
+:::
+
+::: pf-step
+
+Write
 \[
 T=
 \begin{pmatrix}
@@ -113,19 +137,28 @@ such that
 |\mu_i-\lambda_i|<\varepsilon.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Each open disk centered at $\lambda_i$ with radius $\varepsilon$ contains infinitely many complex numbers.
 Choose $\mu_1$, then choose $\mu_2$ different from $\mu_1$, then choose $\mu_3$ different from both preceding choices.
+
 :::
 
-<1>5. Let $T_\varepsilon$ be obtained from $T$ by replacing the diagonal entries $\lambda_i$ by $\mu_i$ and leaving the off-diagonal entries unchanged.
+:::
+
+::: pf-step
+
+Let $T_\varepsilon$ be obtained from $T$ by replacing the diagonal entries $\lambda_i$ by $\mu_i$ and leaving the off-diagonal entries unchanged.
 Then
 \[
 T_\varepsilon
 \]
 has three distinct eigenvalues and is therefore diagonalizable.
 
-::: {.proof}
+
+::: pf-proof
+
 An upper-triangular matrix has eigenvalues equal to its diagonal entries.
 Thus the eigenvalues of $T_\varepsilon$ are
 \[
@@ -134,9 +167,14 @@ Thus the eigenvalues of $T_\varepsilon$ are
 which are pairwise distinct by construction.
 Eigenvectors for distinct eigenvalues are linearly independent.
 Hence a $3\times3$ matrix with three distinct eigenvalues is diagonalizable.
+
 :::
 
-<1>6. Define
+:::
+
+::: pf-step
+
+Define
 \[
 A_\varepsilon
 =
@@ -148,7 +186,9 @@ A_\varepsilon\to A
 \]
 as $\varepsilon\to0$.
 
-::: {.proof}
+
+::: pf-proof
+
 Similarity preserves diagonalizability, so $A_\varepsilon$ is diagonalizable by step <1>5.
 
 Also,
@@ -174,29 +214,47 @@ Multiplication by the fixed matrices $U$ and $U^*$ is continuous, hence
 \[
 A_\varepsilon\to A.
 \]
+
 :::
 
-<1>7. Therefore matrices with distinct eigenvalues are dense in
+:::
+
+::: pf-step
+
+Therefore matrices with distinct eigenvalues are dense in
 \[
 \boxed{M_3(\mathbb C)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The matrix $A$ was arbitrary, and step <1>6 constructs matrices with distinct eigenvalues arbitrarily close to it.
+
 :::
 
-<1>8. Hence the answers are:
+:::
+
+::: pf-step
+
+Hence the answers are:
 \[
 \boxed{\text{Claim 1 is false; Claim 2 is true}.}
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Claim 1 is disproved in steps <1>1--<1>2, and Claim 2 is proved in steps <1>3--<1>7.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>8 gives the complete disposition of both claims.
+
 :::
+
 :::

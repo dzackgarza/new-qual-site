@@ -31,10 +31,13 @@ Determine, with proof, whether each assertion must hold:
 \]
 :::
 
-::: {.solution}
 Both assertions are false.
 
-<1>1. For part (a), define
+::: pf
+
+::: pf-step
+
+For part (a), define
 \[
 g_n(x)
 =
@@ -56,7 +59,9 @@ but
 \max_{x\in[0,1]}g_n(x)=n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The graph is a triangle of base
 \[
 2n^{-2}
@@ -73,19 +78,31 @@ Thus its area is
 \]
 The maximum value is the height $n$.
 Therefore no constant $B$ can bound all the functions simultaneously.
+
 :::
 
-<1>2. Consequently assertion (a) is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Consequently assertion (a) is false.
+
+
+::: pf-proof
+
 The sequence $(g_n)$ from step <1>1 consists of continuous nonnegative functions with integrals tending to $0$, but
 \[
 \sup_{n,x}g_n(x)=\infty.
 \]
 Hence the asserted uniform bound need not exist.
+
 :::
 
-<1>3. For part (b), for each positive integer $m$ and each
+:::
+
+::: pf-step
+
+For part (b), for each positive integer $m$ and each
 \[
 j=0,1,\ldots,m-1,
 \]
@@ -116,7 +133,9 @@ outside
 \right)\cap[0,1].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Such a function may be chosen piecewise linear:
 take value $1$ on the closed cell
 \[
@@ -126,24 +145,36 @@ take value $1$ on the closed cell
 \]
 taper linearly to $0$ across each adjacent interval of length $1/m$ when present, and set it equal to $0$ elsewhere.
 This gives a continuous function with values in $[0,1]$.
+
 :::
 
-<1>4. Each function in step <1>3 satisfies
+:::
+
+::: pf-step
+
+Each function in step <1>3 satisfies
 \[
 \int_0^1h_{m,j}(x)\,dx
 \le
 \frac3m.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The function takes values in $[0,1]$ and is supported in an interval of length at most
 \[
 \frac3m.
 \]
 Therefore its integral is at most the support length.
+
 :::
 
-<1>5. Enumerate the functions block by block:
+:::
+
+::: pf-step
+
+Enumerate the functions block by block:
 first all functions with $m=1$, then all with $m=2$, then all with $m=3$, and so on.
 Call the resulting sequence
 \[
@@ -154,7 +185,9 @@ Then
 \int_0^1f_n(x)\,dx\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $f_n$ belongs to the block indexed by $m$, step <1>4 gives
 \[
 \int_0^1f_n(x)\,dx
@@ -170,9 +203,14 @@ and the squeeze theorem gives
 \[
 \int_0^1f_n\to0.
 \]
+
 :::
 
-<1>6. Fix
+:::
+
+::: pf-step
+
+Fix
 \[
 x\in[0,1].
 \]
@@ -188,7 +226,9 @@ x\in
 \right].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The $m$ intervals
 \[
 \left[
@@ -198,22 +238,34 @@ The $m$ intervals
 j=0,\ldots,m-1,
 \]
 cover $[0,1]$.
+
 :::
 
-<1>7. For every $x\in[0,1]$, there are infinitely many indices $n$ for which
+:::
+
+::: pf-step
+
+For every $x\in[0,1]$, there are infinitely many indices $n$ for which
 \[
 f_n(x)=1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x$.
 For each block $m$, choose a cell containing $x$ as in step <1>6.
 The corresponding function $h_{m,j}$ equals $1$ on that entire cell by step <1>3.
 Thus each block contributes at least one term of the enumerated sequence with value $1$ at $x$.
 Since there are infinitely many blocks, this happens infinitely often.
+
 :::
 
-<1>8. There is no point
+:::
+
+::: pf-step
+
+There is no point
 \[
 x_0\in[0,1]
 \]
@@ -222,24 +274,37 @@ such that
 f_n(x_0)\to0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For every fixed $x_0$, step <1>7 gives infinitely many indices $n$ with
 \[
 f_n(x_0)=1.
 \]
 A sequence having infinitely many terms equal to $1$ cannot converge to $0$.
 Thus no such $x_0$ exists.
+
 :::
 
-<1>9. Consequently assertion (b) is false.
+:::
 
-::: {.proof}
+::: pf-step
+
+Consequently assertion (b) is false.
+
+
+::: pf-proof
+
 The sequence from step <1>5 consists of nonnegative continuous functions whose integrals tend to $0$, while step <1>8 shows that no point has pointwise limit $0$ along the full sequence.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>2 disproves assertion (a), and step <1>9 disproves assertion (b).
+
 :::
+
 :::

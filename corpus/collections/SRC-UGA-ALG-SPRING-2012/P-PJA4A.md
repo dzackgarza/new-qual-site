@@ -28,24 +28,40 @@ b. Assume that there are at least two distinct intermediate subfields $F \subset
 Prove that $\gal(E/F)$ is nonabelian.
 :::
 
-::: {.solution}
 Let $G=\operatorname{Gal}(E/F)$, with $|G|=14$.
 
-<1>1. There exists exactly one intermediate field of degree two over $F$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+There exists exactly one intermediate field of degree two over $F$.
+
+
+::: pf-proof
+
 By the Galois correspondence, a field $K$ with $[K:F]=2$ corresponds to a subgroup $\operatorname{Gal}(E/K)$ of order $[E:K]=7$. The Sylow number $n_7$ satisfies $n_7\mid2$ and $n_7\equiv1\pmod7$, forcing $n_7=1$. Thus there is exactly one subgroup of order seven and exactly one corresponding quadratic intermediate field.
+
 :::
 
-<1>2. If there exist two distinct intermediate fields of degree seven over $F$, then $G$ is nonabelian.
+:::
 
-::: {.proof}
+::: pf-step
+
+If there exist two distinct intermediate fields of degree seven over $F$, then $G$ is nonabelian.
+
+
+::: pf-proof
+
 The two fields correspond to distinct subgroups $H_1,H_2\leq G$ of order two by the Galois correspondence. Both are Sylow $2$-subgroups. If $G$ were abelian, all subgroups would be normal, and Sylow conjugacy would force all Sylow $2$-subgroups to coincide, contrary to $H_1\neq H_2$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1 and <1>2 prove parts (a) and (b), respectively.
+
 :::
+
 :::

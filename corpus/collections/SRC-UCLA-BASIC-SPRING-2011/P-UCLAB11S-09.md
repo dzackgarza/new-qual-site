@@ -22,13 +22,16 @@ Prove that
 implies $f\equiv0$.
 :::
 
-::: {.solution}
 Assume the standard nondegenerate-interval convention
 \[
 a<b.
 \]
 
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that
 \[
 f(x_0)>0
 \]
@@ -37,11 +40,18 @@ for some
 x_0\in[a,b].
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the negation of the desired conclusion, because $f$ is assumed nonnegative.
+
 :::
 
-<1>2. There exist
+:::
+
+::: pf-step
+
+There exist
 \[
 \delta>0
 \]
@@ -58,7 +68,9 @@ for every
 x\in[a,b]\cap(x_0-\delta,x_0+\delta).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Take
 \[
 \eta=\frac12f(x_0)>0.
@@ -81,15 +93,22 @@ f(x)
 =
 \eta.
 \]
+
 :::
 
-<1>3. The set
+:::
+
+::: pf-step
+
+The set
 \[
 I=[a,b]\cap(x_0-\delta,x_0+\delta)
 \]
 contains a nondegenerate interval.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 x_0\in[a,b]
@@ -99,14 +118,21 @@ and
 a<b,
 \]
 the intersection contains an interval of positive length.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \int_a^b f(x)\,dx>0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By nonnegativity,
 \[
 \int_a^b f(x)\,dx
@@ -127,14 +153,21 @@ Thus
 0,
 \]
 where $|I|$ denotes the positive length of the interval.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f\equiv0}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>4 contradicts the hypothesis
 \[
 \int_a^b f(x)\,dx=0.
@@ -148,11 +181,15 @@ Since $f\ge0$, one must have
 f(x)=0
 \]
 for every $x\in[a,b]$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 is the required conclusion.
+
 :::
+
 :::

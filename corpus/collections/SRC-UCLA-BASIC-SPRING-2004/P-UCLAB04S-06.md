@@ -35,14 +35,17 @@ Hint: use continuity of $N$ on the sphere $\{x:\|x\|_2=1\}$.
 (c) Show that if $L$ is an $n$-dimensional subspace of an arbitrary normed vector space $V$, then $L$ is closed.
 :::
 
-::: {.solution}
 Let
 \[
 e_1,\ldots,e_n
 \]
 be the standard basis of $\mathbb R^n$.
 
-<1>1. For every
+::: pf
+
+::: pf-step
+
+For every
 \[
 x=(x_1,\ldots,x_n)\in\mathbb R^n,
 \]
@@ -53,7 +56,9 @@ one has
 \sum_{j=1}^n|x_j|\,\|e_j\|.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 x=\sum_{j=1}^n x_je_j.
@@ -70,9 +75,14 @@ Repeated use of the triangle inequality and absolute homogeneity gives
 \sum_{j=1}^n
 |x_j|\,\|e_j\|.
 \]
+
 :::
 
-<1>2. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 d>0
 \]
@@ -84,7 +94,9 @@ such that
 \]
 for every $x\in\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 By Cauchy--Schwarz,
 \[
 \sum_{j=1}^n
@@ -112,15 +124,22 @@ Then step <1>1 gives
 d\|x\|_2.
 \]
 Because every basis vector is nonzero, $d>0$.
+
 :::
 
-<1>3. The norm function
+:::
+
+::: pf-step
+
+The norm function
 \[
 N(x)=\|x\|
 \]
 is continuous in the Euclidean topology.
 
-::: {.proof}
+
+::: pf-proof
+
 The reverse triangle inequality gives
 \[
 \bigl|\|x\|-\|y\|\bigr|
@@ -140,9 +159,14 @@ Hence
 d\|x-y\|_2.
 \]
 Thus $N$ is Lipschitz with respect to the Euclidean norm, hence continuous.
+
 :::
 
-<1>4. Let
+:::
+
+::: pf-step
+
+Let
 \[
 S^{n-1}
 =
@@ -158,7 +182,9 @@ such that
 \]
 for every $u\in S^{n-1}$.
 
-::: {.proof}
+
+::: pf-proof
+
 The Euclidean unit sphere is compact.
 By step <1>3, $N$ is continuous, so it attains a minimum
 \[
@@ -173,16 +199,23 @@ Therefore the attained minimum satisfies
 \[
 c>0.
 \]
+
 :::
 
-<1>5. For every $x\in\mathbb R^n$,
+:::
+
+::: pf-step
+
+For every $x\in\mathbb R^n$,
 \[
 \boxed{
 \|x\|\ge c\|x\|_2
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $x=0$, the inequality is equality.
 If $x\ne0$, set
 \[
@@ -204,9 +237,14 @@ By homogeneity,
 \ge
 c\|x\|_2.
 \]
+
 :::
 
-<1>6. Let $L$ be an $n$-dimensional subspace of an arbitrary normed vector space
+:::
+
+::: pf-step
+
+Let $L$ be an $n$-dimensional subspace of an arbitrary normed vector space
 \[
 (V,\|\cdot\|_V),
 \]
@@ -237,7 +275,9 @@ c_L\|a\|_2
 \]
 for every $a\in\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 Define a norm on $\mathbb R^n$ by
 \[
 \|a\|_L
@@ -251,9 +291,14 @@ Because $v_1,\ldots,v_n$ is a basis, $\Phi$ is injective, so
 only when $a=0$.
 Thus $\|\cdot\|_L$ is a norm.
 Apply part (b), proved in step <1>5, to this norm.
+
 :::
 
-<1>7. Let
+:::
+
+::: pf-step
+
+Let
 \[
 (x_k)
 \]
@@ -271,7 +316,9 @@ Then
 \]
 is a Cauchy sequence in $\mathbb R^n$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $x_k\to x$ in $V$, the sequence $(x_k)$ is Cauchy.
 By step <1>6,
 \[
@@ -286,9 +333,14 @@ c_L
 \]
 The right side tends to zero as $k,\ell\to\infty$.
 Hence the coordinate sequence is Cauchy in Euclidean space.
+
 :::
 
-<1>8. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 a\in\mathbb R^n
 \]
@@ -301,7 +353,9 @@ and
 x=\Phi(a)\in L.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Euclidean space is complete, so step <1>7 gives
 \[
 a^{(k)}\to a
@@ -334,22 +388,33 @@ Limits are unique, so
 \[
 x=\Phi(a)\in L.
 \]
+
 :::
 
-<1>9. Therefore every finite-dimensional subspace of a normed vector space is closed.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore every finite-dimensional subspace of a normed vector space is closed.
+
+
+::: pf-proof
+
 Step <1>8 shows that every convergent sequence in $L$ whose limit lies in $V$ has its limit still in $L$.
 Since normed spaces are metric spaces, sequential closedness is equivalent to closedness.
 Hence
 \[
 \boxed{L\text{ is closed in }V}.
 \]
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (b), and steps <1>6--<1>9 prove part (c).
+
 :::
+
 :::

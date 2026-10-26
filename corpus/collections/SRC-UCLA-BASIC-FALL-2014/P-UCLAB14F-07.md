@@ -30,7 +30,6 @@ Problem 7. Among all solutions to the system
 find the solution with minimal length.
 :::
 
-::: {.solution}
 Let
 \[
 A=
@@ -48,9 +47,15 @@ b=
 \end{pmatrix}.
 \]
 
-<1>1. The third row equation is the difference between the second row equation and four times the first.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The third row equation is the difference between the second row equation and four times the first.
+
+
+::: pf-proof
+
 For the coefficient rows,
 \[
 (2,3,5,7)-4(1,1,1,1)
@@ -62,9 +67,14 @@ and for the right-hand side,
 7-4\cdot2=-1.
 \]
 Thus the third equation is redundant.
+
 :::
 
-<1>2. Every solution has the form
+:::
+
+::: pf-step
+
+Every solution has the form
 \[
 x(s,t)
 =
@@ -78,7 +88,9 @@ t
 s,t\in\mathbb R.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 x_3=s,
@@ -105,9 +117,14 @@ x_1
 =
 2s+4t-1.
 \]
+
 :::
 
-<1>3. The squared Euclidean norm of $x(s,t)$ is
+:::
+
+::: pf-step
+
+The squared Euclidean norm of $x(s,t)$ is
 \[
 \|x(s,t)\|^2
 =
@@ -116,7 +133,9 @@ x_1
 \bigr).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Substitute the coordinates from step <1>2:
 \[
 \begin{aligned}
@@ -130,9 +149,14 @@ s^2+t^2.
 \end{aligned}
 \]
 Expanding and collecting terms gives the displayed quadratic polynomial.
+
 :::
 
-<1>4. A minimizer of the squared norm must satisfy
+:::
+
+::: pf-step
+
+A minimizer of the squared norm must satisfy
 \[
 14s+23t=11
 \]
@@ -141,7 +165,9 @@ and
 23s+42t=19.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Differentiate the quadratic polynomial from step <1>3:
 \[
 \frac{\partial}{\partial s}\|x(s,t)\|^2
@@ -154,9 +180,14 @@ Differentiate the quadratic polynomial from step <1>3:
 2(23s+42t-19).
 \]
 At an interior minimum in $\mathbb R^2$, both partial derivatives vanish.
+
 :::
 
-<1>5. The system in step <1>4 has the unique solution
+:::
+
+::: pf-step
+
+The system in step <1>4 has the unique solution
 \[
 \boxed{
 s=\frac{25}{59},
@@ -165,7 +196,9 @@ t=\frac{13}{59}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant of the coefficient matrix is
 \[
 14\cdot42-23^2
@@ -193,11 +226,18 @@ t
 =
 \frac{13}{59}.
 \]
+
 :::
 
-<1>6. The critical point in step <1>5 is the unique global minimum of the squared norm.
+:::
 
-::: {.proof}
+::: pf-step
+
+The critical point in step <1>5 is the unique global minimum of the squared norm.
+
+
+::: pf-proof
+
 The Hessian of
 \[
 \frac12\|x(s,t)\|^2
@@ -219,9 +259,14 @@ and its determinant is
 \]
 Hence the Hessian is positive definite.
 Therefore the quadratic function is strictly convex and its unique critical point is its unique global minimizer.
+
 :::
 
-<1>7. Substituting the minimizing parameters gives
+:::
+
+::: pf-step
+
+Substituting the minimizing parameters gives
 \[
 \boxed{
 x_{\min}
@@ -236,7 +281,9 @@ x_{\min}
 }.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Using step <1>2 and
 \[
 s=\frac{25}{59},
@@ -264,11 +311,15 @@ x_3=\frac{25}{59},
 \qquad
 x_4=\frac{13}{59}.
 \]
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Steps <1>6--<1>7 prove that the displayed solution is the unique solution of minimal Euclidean length.
+
 :::
+
 :::

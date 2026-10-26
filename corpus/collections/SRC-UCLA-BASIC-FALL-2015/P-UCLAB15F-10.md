@@ -30,8 +30,11 @@ Let $F,G:\mathbb R^n\to\mathbb R^n$ be linear operators, with
 2. Give an example of non-commuting linear operators for which this equality fails.
 :::
 
-::: {.solution}
-<1>1. If $FG=GF$, then for every integer $n\ge0$,
+::: pf
+
+::: pf-step
+
+If $FG=GF$, then for every integer $n\ge0$,
 \[
 (F+G)^n
 =
@@ -40,18 +43,27 @@ Let $F,G:\mathbb R^n\to\mathbb R^n$ be linear operators, with
 F^kG^{n-k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 This is the binomial theorem for commuting operators.
 The ordinary inductive proof applies because $F$ and $G$ commute, hence every power of $F$ commutes with every power of $G$.
+
 :::
 
-<1>2. The exponential series
+:::
+
+::: pf-step
+
+The exponential series
 \[
 \sum_{n=0}^{\infty}\frac{F^n}{n!}
 \]
 converges absolutely in any operator norm, and likewise for $G$ and $F+G$.
 
-::: {.proof}
+
+::: pf-proof
+
 In finite dimension, fix a submultiplicative operator norm.
 Then
 \[
@@ -70,9 +82,14 @@ e^{\|F\|}
 converges.
 Thus the operator series converges absolutely.
 The same argument applies to $G$ and $F+G$.
+
 :::
 
-<1>3. If $FG=GF$, then
+:::
+
+::: pf-step
+
+If $FG=GF$, then
 \[
 \exp(F)\exp(G)
 =
@@ -81,7 +98,9 @@ The same argument applies to $G$ and $F+G$.
 \frac{F^kG^{n-k}}{k!(n-k)!}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>2, both exponential series converge absolutely.
 Therefore their product may be computed by the Cauchy product:
 \[
@@ -100,14 +119,21 @@ Therefore their product may be computed by the Cauchy product:
 \frac{F^kG^{n-k}}{k!(n-k)!}.
 \end{aligned}
 \]
+
 :::
 
-<1>4. If $FG=GF$, then
+:::
+
+::: pf-step
+
+If $FG=GF$, then
 \[
 \boxed{\exp(F+G)=\exp(F)\exp(G)}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>1,
 \[
 \begin{aligned}
@@ -124,9 +150,14 @@ By step <1>1,
 \end{aligned}
 \]
 This is exactly the expression from step <1>3.
+
 :::
 
-<1>5. For part 2, take
+:::
+
+::: pf-step
+
+For part 2, take
 \[
 F=
 \begin{pmatrix}
@@ -145,7 +176,9 @@ Then
 FG\ne GF.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 FG=
@@ -161,9 +194,14 @@ GF=
 \end{pmatrix}.
 \]
 Thus they do not commute.
+
 :::
 
-<1>6. Since
+:::
+
+::: pf-step
+
+Since
 \[
 F^2=G^2=0,
 \]
@@ -177,7 +215,9 @@ one has
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Nilpotence gives
 \[
 \exp(F)=I+F
@@ -196,9 +236,14 @@ Nilpotence gives
 \end{pmatrix}.
 \]
 Multiplying yields the displayed matrix.
+
 :::
 
-<1>7. One has
+:::
+
+::: pf-step
+
+One has
 \[
 (F+G)^2=I,
 \]
@@ -212,7 +257,9 @@ and therefore
 \end{pmatrix}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Here
 \[
 F+G
@@ -237,11 +284,18 @@ Separating the exponential series into even and odd terms gives
 \right)(F+G),
 \]
 which is the displayed matrix.
+
 :::
 
-<1>8. The matrices in steps <1>6 and <1>7 are unequal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The matrices in steps <1>6 and <1>7 are unequal.
+
+
+::: pf-proof
+
 The upper-right entry of
 \[
 \exp(F)\exp(G)
@@ -263,11 +317,15 @@ Hence
 \[
 \exp(F+G)\ne\exp(F)\exp(G).
 \]
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 proves part 1, and steps <1>5--<1>8 give the requested noncommuting counterexample for part 2.
+
 :::
+
 :::

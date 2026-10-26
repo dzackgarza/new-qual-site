@@ -27,8 +27,11 @@ If not, prove that they are not.
 If yes, find the matrix of a change of coordinates.
 :::
 
-::: {.solution}
-<1>1. Over $\CC$, define the change of coordinates
+::: pf
+
+::: pf-step
+
+Over $\CC$, define the change of coordinates
 $$
 \binom{x'}{y'}
 =
@@ -46,7 +49,9 @@ y'=x-iy.
 $$
 This change of coordinates is nonsingular.
 
-::: {.proof}
+
+::: pf-proof
+
 The determinant of the change-of-coordinates matrix is
 $$
 \det
@@ -57,14 +62,21 @@ $$
 =-i-i=-2i\ne0.
 $$
 Hence the matrix is invertible over $\CC$.
+
 :::
 
-<1>2. Under the change of coordinates in step <1>1,
+:::
+
+::: pf-step
+
+Under the change of coordinates in step <1>1,
 $$
 Q_1(x',y')=Q_2(x,y).
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 $$
 Q_1(x',y')
@@ -74,31 +86,52 @@ Q_1(x',y')
 =Q_2(x,y).
 $$
 Thus the two forms are equivalent over $\CC$.
+
 :::
 
-<1>3. The real quadratic form $Q_1(x,y)=xy$ has a nonzero isotropic vector.
+:::
 
-::: {.proof}
+::: pf-step
+
+The real quadratic form $Q_1(x,y)=xy$ has a nonzero isotropic vector.
+
+
+::: pf-proof
+
 For example,
 $$
 Q_1(1,0)=0,
 $$
 while $(1,0)\ne(0,0)$.
+
 :::
 
-<1>4. The real quadratic form $Q_2(x,y)=x^2+y^2$ has no nonzero isotropic vector.
+:::
 
-::: {.proof}
+::: pf-step
+
+The real quadratic form $Q_2(x,y)=x^2+y^2$ has no nonzero isotropic vector.
+
+
+::: pf-proof
+
 If
 $$
 x^2+y^2=0
 $$
 with $x,y\in\RR$, then both nonnegative summands must vanish. Hence $x=y=0$.
+
 :::
 
-<1>5. An invertible real change of coordinates preserves whether a quadratic form has a nonzero isotropic vector.
+:::
 
-::: {.proof}
+::: pf-step
+
+An invertible real change of coordinates preserves whether a quadratic form has a nonzero isotropic vector.
+
+
+::: pf-proof
+
 Suppose quadratic forms $Q$ and $Q'$ satisfy
 $$
 Q'(v)=Q(Mv)
@@ -108,15 +141,27 @@ $$
 Q(Mv)=0.
 $$
 Conversely, applying the same argument to $M^{-1}$ shows that a nonzero zero of $Q$ produces a nonzero zero of $Q'$. Thus the property is invariant under nonsingular coordinate changes.
+
 :::
 
-<1>6. The forms $Q_1$ and $Q_2$ are not equivalent over $\RR$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The forms $Q_1$ and $Q_2$ are not equivalent over $\RR$.
+
+
+::: pf-proof
+
 By step <1>3, $Q_1$ has a nonzero isotropic vector, while by step <1>4, $Q_2$ does not. Step <1>5 shows that equivalent real quadratic forms must agree on this property. Therefore no nonsingular real change of coordinates can relate them.
+
 :::
 
-<1>7. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{
 Q_1\sim Q_2\text{ over }\CC,
@@ -125,7 +170,9 @@ Q_1\not\sim Q_2\text{ over }\RR.
 }
 $$
 
-::: {.proof}
+
+::: pf-proof
+
 Complex equivalence is established in steps <1>1--<1>2, with explicit matrix
 $$
 \begin{pmatrix}
@@ -134,11 +181,15 @@ $$
 \end{pmatrix}.
 $$
 Real inequivalence is step <1>6.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>7 gives both requested decisions and the required complex change-of-coordinates matrix.
+
 :::
+
 :::

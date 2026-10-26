@@ -28,7 +28,6 @@ f(x) = \sum_{n=0}^{\infty} c_n \cos(nx) \quad \text{with} \quad \sum_{n=0}^{\inf
 Show that if $f \in \mathcal{G}$ and $g \in \mathcal{G}$ then $fg \in \mathcal{G}$.
 :::
 
-::: {.solution}
 Let
 \[
 f(x)=\sum_{n=0}^\infty c_n\cos(nx),
@@ -42,9 +41,15 @@ with
 \sum_{n\ge0}(1+n^2)|d_n|^2<\infty.
 \]
 
-<1>1. The coefficient sequences $(c_n)$ and $(d_n)$ belong to $\ell^1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The coefficient sequences $(c_n)$ and $(d_n)$ belong to $\ell^1$.
+
+
+::: pf-proof
+
 By Cauchy--Schwarz,
 \[
 \sum_{n=0}^\infty |c_n|
@@ -58,12 +63,19 @@ By Cauchy--Schwarz,
 <\infty.
 \]
 The same argument applies to $(d_n)$.
+
 :::
 
-<1>2. The cosine series for $f$ and $g$ converge absolutely and uniformly
+:::
+
+::: pf-step
+
+The cosine series for $f$ and $g$ converge absolutely and uniformly
 on $\mathbb R$.
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 |\cos(nx)|\le1,
@@ -71,9 +83,14 @@ Since
 step <1>1 and the Weierstrass $M$-test give absolute and uniform convergence.
 Thus the series define continuous even $2\pi$-periodic representatives of
 $f$ and $g$.
+
 :::
 
-<1>3. Define bilateral sequences $(a_k)_{k\in\mathbb Z}$ and
+:::
+
+::: pf-step
+
+Define bilateral sequences $(a_k)_{k\in\mathbb Z}$ and
 $(b_k)_{k\in\mathbb Z}$ by
 \[
 a_0=c_0,
@@ -94,16 +111,23 @@ g(x)=\sum_{k\in\mathbb Z}b_ke^{ikx},
 \]
 with absolute and uniform convergence.
 
-::: {.proof}
+
+::: pf-proof
+
 Use
 \[
 \cos(kx)=\frac{e^{ikx}+e^{-ikx}}2.
 \]
 The bilateral series are absolutely summable because step <1>1 gives
 $a,b\in\ell^1(\mathbb Z)$.
+
 :::
 
-<1>4. The weighted sequences
+:::
+
+::: pf-step
+
+The weighted sequences
 \[
 A_k=(1+k^2)^{1/2}|a_k|,
 \qquad
@@ -111,7 +135,9 @@ B_k=(1+k^2)^{1/2}|b_k|
 \]
 belong to $\ell^2(\mathbb Z)$.
 
-::: {.proof}
+
+::: pf-proof
+
 By the definitions in step <1>3,
 \[
 \sum_{k\in\mathbb Z}(1+k^2)|a_k|^2
@@ -122,9 +148,14 @@ By the definitions in step <1>3,
 <\infty.
 \]
 The same calculation applies to $b$.
+
 :::
 
-<1>5. The product has the absolutely convergent Fourier expansion
+:::
+
+::: pf-step
+
+The product has the absolutely convergent Fourier expansion
 \[
 f(x)g(x)
 =
@@ -135,13 +166,20 @@ e_n=(a*b)_n
 \sum_{k\in\mathbb Z}a_kb_{n-k}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The two Fourier series in step <1>3 are absolutely convergent. Their Cauchy
 product is therefore absolutely convergent and equals the pointwise product.
 The coefficient at frequency $n$ is exactly the convolution shown above.
+
 :::
 
-<1>6. There is an absolute constant $C$ such that for all integers $n,k$,
+:::
+
+::: pf-step
+
+There is an absolute constant $C$ such that for all integers $n,k$,
 \[
 (1+n^2)^{1/2}
 \le
@@ -152,7 +190,9 @@ C\left(
 \right).
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 |n|
@@ -174,9 +214,14 @@ Also
 \sqrt2\,(1+j^2)^{1/2}.
 \]
 Thus the inequality holds, for example with $C=\sqrt2$.
+
 :::
 
-<1>7. The weighted product coefficients satisfy
+:::
+
+::: pf-step
+
+The weighted product coefficients satisfy
 \[
 \left\|
 \bigl((1+n^2)^{1/2}e_n\bigr)_{n\in\mathbb Z}
@@ -184,7 +229,9 @@ Thus the inequality holds, for example with $C=\sqrt2$.
 <\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By steps <1>5 and <1>6,
 \[
 \begin{aligned}
@@ -224,14 +271,21 @@ C\left(
 \end{aligned}
 \]
 using steps <1>1 and <1>4.
+
 :::
 
-<1>8. The sequence $(e_n)$ is even:
+:::
+
+::: pf-step
+
+The sequence $(e_n)$ is even:
 \[
 e_{-n}=e_n.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The sequences $a$ and $b$ are even by construction. Therefore
 \[
 \begin{aligned}
@@ -246,9 +300,14 @@ e_{-n}
 =e_n.
 \end{aligned}
 \]
+
 :::
 
-<1>9. Hence $fg$ has a cosine expansion
+:::
+
+::: pf-step
+
+Hence $fg$ has a cosine expansion
 \[
 fg(x)
 =
@@ -259,7 +318,9 @@ with
 \sum_{n=0}^\infty(1+n^2)|r_n|^2<\infty.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>8,
 \[
 \sum_{n\in\mathbb Z}e_ne^{inx}
@@ -284,20 +345,31 @@ Step <1>7 gives
 \sum_{n\ge0}(1+n^2)|r_n|^2<\infty
 \]
 up to the harmless factor $4$ for $n\ge1$.
+
 :::
 
-<1>10. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{f,g\in\mathcal G\Longrightarrow fg\in\mathcal G}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Step <1>9 is exactly the defining condition for $fg\in\mathcal G$.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>10 is the required conclusion.
+
 :::
+
 :::

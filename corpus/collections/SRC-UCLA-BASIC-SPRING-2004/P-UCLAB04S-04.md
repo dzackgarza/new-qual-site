@@ -20,10 +20,13 @@ Are there infinite compact subsets of $\mathbb Q$?
 Prove your assertion.
 :::
 
-::: {.solution}
 Yes.
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 K=
 \left\{
@@ -40,7 +43,9 @@ K\subseteq\mathbb Q
 \]
 and $K$ is infinite.
 
-::: {.proof}
+
+::: pf-proof
+
 Every number
 \[
 0,\frac11,\frac12,\frac13,\ldots
@@ -51,20 +56,34 @@ The numbers
 \frac1n
 \]
 are pairwise distinct, so $K$ contains infinitely many points.
+
 :::
 
-<1>2. The set $K$ is bounded.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K$ is bounded.
+
+
+::: pf-proof
+
 Every point of $K$ lies in the interval
 \[
 [0,1].
 \]
+
 :::
 
-<1>3. The set $K$ is closed in $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K$ is closed in $\mathbb R$.
+
+
+::: pf-proof
+
 Let
 \[
 x\in\mathbb R\setminus K.
@@ -140,18 +159,32 @@ Thus
 \mathbb R\setminus K
 \]
 is open, so $K$ is closed.
+
 :::
 
-<1>4. The set $K$ is compact in $\mathbb R$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $K$ is compact in $\mathbb R$.
+
+
+::: pf-proof
+
 By steps <1>2--<1>3, $K$ is closed and bounded.
 The Heine--Borel theorem therefore implies that $K$ is compact.
+
 :::
 
-<1>5. Therefore there exist infinite compact subsets of $\mathbb Q$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Therefore there exist infinite compact subsets of $\mathbb Q$.
+
+
+::: pf-proof
+
 The set $K$ from step <1>1 is an infinite subset of $\mathbb Q$, and step <1>4 proves that it is compact.
 Hence
 \[
@@ -166,11 +199,15 @@ Hence
 }
 \]
 is an explicit example.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>5 answers the question affirmatively.
+
 :::
+
 :::

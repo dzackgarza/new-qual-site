@@ -24,10 +24,15 @@ f(z)=z^6+i z^4+1
 in the open upper half-plane.
 :::
 
-::: {.solution}
-<1>1. The polynomial $f$ has no real zeros.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $f$ has no real zeros.
+
+
+::: pf-proof
+
 Let $x\in\mathbb R$. Then
 \[
 f(x)=x^6+1+i x^4.
@@ -41,11 +46,18 @@ so $f(x)\ne0$. At $x=0$,
 f(0)=1.
 \]
 Thus $f$ has no zeros on the real axis.
+
 :::
 
-<1>2. If $z_0$ is a zero of $f$ of multiplicity $m$, then $-z_0$ is also a zero of multiplicity $m$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $z_0$ is a zero of $f$ of multiplicity $m$, then $-z_0$ is also a zero of multiplicity $m$.
+
+
+::: pf-proof
+
 The polynomial is even:
 \[
 f(-z)
@@ -57,39 +69,57 @@ z^6+i z^4+1
 f(z).
 \]
 Thus zeros occur in pairs $z_0,-z_0$. Replacing $z$ by $-z$ preserves the order of vanishing, so the multiplicities agree.
+
 :::
 
-<1>3. The map
+:::
+
+::: pf-step
+
+The map
 \[
 z\longmapsto -z
 \]
 gives a multiplicity-preserving bijection between the zeros of $f$ in the open upper half-plane and those in the open lower half-plane.
 
-::: {.proof}
+
+::: pf-proof
+
 If $\operatorname{Im}z>0$, then
 \[
 \operatorname{Im}(-z)<0,
 \]
 and conversely. Step <1>2 shows that this involution preserves zeros and their multiplicities.
+
 :::
 
-<1>4. The polynomial $f$ has exactly
+:::
+
+::: pf-step
+
+The polynomial $f$ has exactly
 \[
 \boxed{3}
 \]
 zeros in the open upper half-plane, counted with multiplicity.
 
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ has degree $6$, the fundamental theorem of algebra gives exactly six zeros in $\mathbb C$, counted with multiplicity. By step <1>1, none lies on the real axis. By step <1>3, the numbers of zeros in the upper and lower half-planes are equal, counted with multiplicity. Therefore each half-plane contains
 \[
 \frac62=3
 \]
 zeros.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>4 gives the requested count.
+
 :::
+
 :::

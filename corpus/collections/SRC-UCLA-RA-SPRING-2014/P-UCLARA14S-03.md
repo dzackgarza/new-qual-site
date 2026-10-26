@@ -24,7 +24,6 @@ Let $[a,b]$ be a finite interval and let $f:[a,b]\to\mathbb R$ be bounded and Bo
 (b) Prove that $f$ is Riemann integrable if and only if it is continuous almost everywhere.
 :::
 
-::: {.solution}
 For $x\in[a,b]$, define the oscillation
 \[
 \omega_f(x)
@@ -36,12 +35,18 @@ y,z\in[a,b]\cap(x-\delta,x+\delta)
 \}.
 \]
 
-<1>1. The function $f$ is continuous at $x$ if and only if
+::: pf
+
+::: pf-step
+
+The function $f$ is continuous at $x$ if and only if
 \[
 \omega_f(x)=0.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is continuous at $x$, then for every $\varepsilon>0$ there is $\delta>0$ such that
 \[
 |f(y)-f(x)|<\frac\varepsilon2
@@ -70,9 +75,14 @@ Taking $z=x$ gives
 |f(y)-f(x)|<\varepsilon
 \]
 whenever $y\in[a,b]$ and $|y-x|<\delta$, so $f$ is continuous at $x$.
+
 :::
 
-<1>2. For every $n\ge1$, the set
+:::
+
+::: pf-step
+
+For every $n\ge1$, the set
 \[
 E_n
 \coloneqq
@@ -80,7 +90,9 @@ E_n
 \]
 is open in the relative topology of $[a,b]$.
 
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\in E_n$. By definition of the infimum, there is $\delta>0$ such that the oscillation of $f$ on
 \[
 [a,b]\cap(x-\delta,x+\delta)
@@ -94,11 +106,18 @@ If $y\in[a,b]$ and $|y-x|<\delta/2$, then
 [a,b]\cap(x-\delta,x+\delta).
 \]
 Hence the oscillation of $f$ on the smaller neighborhood is also less than $1/n$, so $y\in E_n$. Thus $E_n$ is relatively open.
+
 :::
 
-<1>3. The set of continuity points of $f$ is Borel measurable.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set of continuity points of $f$ is Borel measurable.
+
+
+::: pf-proof
+
 By step <1>1,
 \[
 \{x:f\text{ is continuous at }x\}
@@ -106,9 +125,14 @@ By step <1>1,
 \bigcap_{n=1}^\infty E_n.
 \]
 Each $E_n$ is relatively open by step <1>2, hence Borel in $[a,b]$. A countable intersection of Borel sets is Borel.
+
 :::
 
-<1>4. Choose nested partitions
+:::
+
+::: pf-step
+
+Choose nested partitions
 \[
 P_1\subset P_2\subset\cdots
 \]
@@ -123,7 +147,9 @@ U(f,P_n)\longrightarrow\overline{\int_a^b}f,
 L(f,P_n)\longrightarrow\underline{\int_a^b}f.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 For each $n$, choose a partition $Q_n$ with mesh less than $1/n$ and satisfying
 \[
 U(f,Q_n)
@@ -139,9 +165,14 @@ Define $P_n$ to be the common refinement of $Q_1,\dots,Q_n$. Refinement decrease
 \operatorname{mesh}(P_n)\le\operatorname{mesh}(Q_n)<1/n.
 \]
 The asserted limits follow.
+
 :::
 
-<1>5. For each $n$, define step functions $L_n,U_n$ by taking on each subinterval $I$ of $P_n$ the values
+:::
+
+::: pf-step
+
+For each $n$, define step functions $L_n,U_n$ by taking on each subinterval $I$ of $P_n$ the values
 \[
 L_n|_I
 =
@@ -156,7 +187,9 @@ Then, away from partition endpoints,
 L_1\le L_2\le\cdots\le f\le\cdots\le U_2\le U_1.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 Because the partitions are nested, each interval of $P_{n+1}$ lies inside an interval of $P_n$. Infima can only increase under restriction and suprema can only decrease. Also, on every interval $I$ containing $x$,
 \[
 \inf_I f
@@ -166,9 +199,14 @@ f(x)
 \sup_I f.
 \]
 The only ambiguity is at endpoints shared by adjacent intervals; the union of all partition endpoints is countable and therefore null.
+
 :::
 
-<1>6. The pointwise limits
+:::
+
+::: pf-step
+
+The pointwise limits
 \[
 L(x)=\lim_{n\to\infty}L_n(x),
 \qquad
@@ -185,7 +223,9 @@ exist almost everywhere, satisfy $L\le f\le U$, and
 \overline{\int_a^b}f.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 The monotonicity from step <1>5 gives the pointwise limits away from the null set of partition endpoints. Since $f$ is bounded, choose $M$ with
 \[
 |f|\le M.
@@ -210,15 +250,22 @@ and similarly
 =
 \overline{\int_a^b}f.
 \]
+
 :::
 
-<1>7. At every point $x$ that is not an endpoint of any $P_n$,
+:::
+
+::: pf-step
+
+At every point $x$ that is not an endpoint of any $P_n$,
 \[
 L(x)=U(x)
 \]
 if and only if $f$ is continuous at $x$.
 
-::: {.proof}
+
+::: pf-proof
+
 Let $I_n(x)$ be the unique interval of $P_n$ containing $x$ in its interior. Since the partitions are nested and their mesh tends to zero,
 \[
 I_{n+1}(x)\subset I_n(x),
@@ -259,16 +306,23 @@ U_n(x)-L_n(x)
 \varepsilon.
 \]
 Since $x$ lies in the interior of $I_n(x)$, this gives continuity at $x$.
+
 :::
 
-<1>8. The function $f$ is Riemann integrable if and only if
+:::
+
+::: pf-step
+
+The function $f$ is Riemann integrable if and only if
 \[
 L=U
 \qquad
 \text{almost everywhere}.
 \]
 
-::: {.proof}
+
+::: pf-proof
+
 By step <1>6,
 \[
 \overline{\int_a^b}f
@@ -278,21 +332,32 @@ By step <1>6,
 \int_a^b(U-L).
 \]
 Since $U-L\ge0$, this difference is zero if and only if $U-L=0$ almost everywhere. Equality of the upper and lower Riemann integrals is exactly Riemann integrability.
+
 :::
 
-<1>9. The function $f$ is Riemann integrable if and only if it is continuous almost everywhere.
+:::
 
-::: {.proof}
+::: pf-step
+
+The function $f$ is Riemann integrable if and only if it is continuous almost everywhere.
+
+
+::: pf-proof
+
 The set of all partition endpoints is countable and hence null. Away from that set, step <1>7 says
 \[
 L=U
 \]
 exactly at the continuity points of $f$. Step <1>8 therefore identifies Riemann integrability with continuity almost everywhere.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Step <1>3 proves part (a), and step <1>9 proves part (b).
+
 :::
+
 :::
