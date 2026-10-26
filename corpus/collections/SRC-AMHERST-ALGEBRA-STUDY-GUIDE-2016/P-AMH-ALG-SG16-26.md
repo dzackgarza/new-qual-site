@@ -25,9 +25,13 @@ Prove that $I$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-<1>1. The set $I$ is nonempty.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1-1}
+The set $I$ is nonempty.
+
+::: pf-proof
 The zero polynomial satisfies
 $$
 0(2)=0(5)=0,
@@ -35,9 +39,12 @@ $$
 so $0\in I$.
 :::
 
-<1>2. The set $I$ is closed under subtraction.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+The set $I$ is closed under subtraction.
+
+::: pf-proof
 Let $f,g\in I$.  Then
 $$
 f(2)=f(5)=g(2)=g(5)=0.
@@ -53,9 +60,12 @@ $$
 Therefore $f-g\in I$.
 :::
 
-<1>3. The set $I$ absorbs multiplication by arbitrary elements of $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-3}
+The set $I$ absorbs multiplication by arbitrary elements of $R$.
+
+::: pf-proof
 Let $f\in I$ and $h\in R$.  Since $f(2)=f(5)=0$,
 $$
 (hf)(2)=h(2)f(2)=0
@@ -67,16 +77,18 @@ $$
 Thus $hf\in I$.  Since $R=\RR[x]$ is commutative, $fh=hf\in I$ as well.
 :::
 
-<1>4. Therefore $I$ is an ideal of $R$.
-
-::: {.proof}
-Steps <1>1 and <1>2 show that $I$ is an additive subgroup by the subtraction
-criterion, and step <1>3 gives the absorption property.
 :::
 
-<1>5. Q.E.D.
+::: pf-step
+Therefore $I$ is an ideal of $R$.
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-proof
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that $I$ is an additive subgroup by the subtraction
+criterion, and step [](#s1-3){.pf-ref} gives the absorption property.
 :::
+
+:::
+
+:::
+
 :::
