@@ -31,6 +31,8 @@ audit:
 Let $A$ be an $n \times n$ matrix over the complex numbers. Let $e^A = 1 + A + A^2/2 + \cdots + A^m/m! + \cdots$. Show this series converges and $\det(e^A) = e^{\operatorname{Tr}(A)}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -167,6 +169,8 @@ Substitution gives the claimed identity.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves convergence, and step [](#s1-5){.pf-ref} proves the determinant formula.
+
+:::
 
 :::
 
