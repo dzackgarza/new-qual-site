@@ -27,6 +27,8 @@ q(z)=a_{n-1}z^{n-1}+\cdots+a_1z+a_0
 with those of $z^n$.
 :::
 
+::: {.solution}
+
 Write
 \[
 q(z)=p(z)-z^n.
@@ -87,6 +89,8 @@ If no such point existed, then \(|p(z)|<1\) at every point of the unit circle, c
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the required conclusion.
+
+:::
 
 :::
 
