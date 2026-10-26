@@ -19,6 +19,8 @@ Assume $f'(z_1)\ne0$.
 Show that $f$ is not constant on any neighborhood of $z_2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -76,6 +78,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that the existence of a
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
