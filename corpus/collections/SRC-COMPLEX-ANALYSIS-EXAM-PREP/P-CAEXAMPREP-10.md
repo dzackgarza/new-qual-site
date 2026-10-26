@@ -22,6 +22,8 @@ T(z)=\frac{az+b}{cz+d}
 sends the upper half-plane to itself.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ If \(\operatorname{Im}z>0\), then step [](#s1-1){.pf-ref} makes the denominator 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required invariance statement.
+
+:::
 
 :::
 
