@@ -27,9 +27,13 @@ Prove that $I$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-<1>1. The set $I$ is nonempty.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1-1}
+The set $I$ is nonempty.
+
+::: pf-proof
 Taking $f=g=0$ gives
 $$
 6f+(x+1)g=0,
@@ -37,9 +41,12 @@ $$
 so $0\in I$.
 :::
 
-<1>2. The set $I$ is closed under subtraction.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+The set $I$ is closed under subtraction.
+
+::: pf-proof
 Let $a,b\in I$.  Then there exist
 $f_1,f_2,g_1,g_2\in R$ such that
 $$
@@ -58,9 +65,12 @@ Since $f_1-f_2,g_1-g_2\in R$, this expression has the defining form of an
 element of $I$.  Hence $a-b\in I$.
 :::
 
-<1>3. The set $I$ absorbs multiplication by arbitrary elements of $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-3}
+The set $I$ absorbs multiplication by arbitrary elements of $R$.
+
+::: pf-proof
 Let $a\in I$ and $h\in R$.  Write
 $$
 a=6f+(x+1)g
@@ -74,17 +84,19 @@ Because $hf,hg\in R$, the right-hand side belongs to $I$.  Thus both $ha$ and
 $ah$ lie in $I$.
 :::
 
-<1>4. Therefore $I$ is an ideal of $R$.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 give the additive-subgroup condition by the subtraction
-criterion, and step <1>3 gives the absorption condition.  Hence $I$ is an
+::: pf-step
+Therefore $I$ is an ideal of $R$.
+
+::: pf-proof
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the additive-subgroup condition by the subtraction
+criterion, and step [](#s1-3){.pf-ref} gives the absorption condition.  Hence $I$ is an
 ideal.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+:::
+
 :::
