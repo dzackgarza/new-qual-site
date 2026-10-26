@@ -36,6 +36,8 @@ $$
 is monotone.
 :::
 
+::: {.solution}
+
 Let $I$ be the interval on which the solution $y$ is defined.
 
 ::: pf
@@ -94,6 +96,8 @@ If $y'$ vanishes anywhere, step [](#s1-1){.pf-ref} makes $y$ constant. If $y'$ n
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
