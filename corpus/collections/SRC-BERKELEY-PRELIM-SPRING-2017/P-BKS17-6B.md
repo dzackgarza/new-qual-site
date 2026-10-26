@@ -43,6 +43,8 @@ $$
 for $1 \leq i, j \leq n$.
 :::
 
+::: {.solution}
+
 For $k\geq0$, set
 $$
 a_k\coloneqq\frac{f^{(k)}(0)}{k!},
@@ -189,6 +191,8 @@ The rank bound is step [](#s1-2){.pf-ref}. Combining steps [](#s1-3){.pf-ref} an
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required matrix and both requested estimates.
+
+:::
 
 :::
 
