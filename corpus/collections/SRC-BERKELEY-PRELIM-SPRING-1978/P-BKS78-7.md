@@ -30,7 +30,10 @@ E\coloneqq
 \right\}.
 $$
 
-<1>1. The linear change of variables
+::: pf
+
+::: {.pf-step #linear-change}
+The linear change of variables
 $$
 x=au,
 \qquad
@@ -45,7 +48,7 @@ B\coloneqq
 $$
 onto $E$.
 
-::: {.proof}
+::: pf-proof
 Substitution gives
 $$
 \frac{x^2}{a^2}
@@ -57,12 +60,15 @@ $$
 Thus the defining inequality for $E$ becomes precisely the defining inequality for $B$.
 :::
 
-<1>2. The absolute value of the Jacobian determinant of the transformation in step <1>1 is
+:::
+
+::: {.pf-step #jacobian}
+The absolute value of the Jacobian determinant of the transformation in [](#linear-change){.pf-ref} is
 $$
 |abc|.
 $$
 
-::: {.proof}
+::: pf-proof
 The derivative matrix is diagonal:
 $$
 \begin{pmatrix}
@@ -74,12 +80,15 @@ $$
 whose determinant is $abc$. Volume uses its absolute value.
 :::
 
-<1>3. The volume of the unit ball is
+:::
+
+::: {.pf-step #unit-ball-volume}
+The volume of the unit ball is
 $$
 \operatorname{Vol}(B)=\frac{4\pi}{3}.
 $$
 
-::: {.proof}
+::: pf-proof
 Using spherical coordinates,
 $$
 \begin{aligned}
@@ -102,7 +111,10 @@ r^2\sin\phi
 $$
 :::
 
-<1>4. Therefore the enclosed volume is
+:::
+
+::: pf-step
+Therefore the enclosed volume is
 $$
 \boxed{
 \operatorname{Vol}(E)
@@ -115,8 +127,8 @@ $$
 \boxed{\frac{4\pi abc}{3}}.
 $$
 
-::: {.proof}
-By the change-of-variables formula and steps <1>1--<1>3,
+::: pf-proof
+By the change-of-variables formula, [](#linear-change){.pf-ref}, [](#jacobian){.pf-ref}, and [](#unit-ball-volume){.pf-ref},
 $$
 \operatorname{Vol}(E)
 =
@@ -126,9 +138,8 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested volume.
 :::
+
+:::
+
 :::
