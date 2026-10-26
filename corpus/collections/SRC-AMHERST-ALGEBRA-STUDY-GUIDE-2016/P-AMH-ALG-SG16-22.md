@@ -26,10 +26,14 @@ Prove that the following two statements are equivalent.
 :::
 
 ::: {.solution}
-<1>1. Assume (a).  If $b^m\in I$ for some $b\in R$ and $m\geq1$, then
+
+::: pf
+
+::: {.pf-step #s1-1}
+Assume (a).  If $b^m\in I$ for some $b\in R$ and $m\geq1$, then
 $b\in I$.
 
-::: {.proof}
+::: pf-proof
 In the quotient ring,
 $$
 (I+b)^m=I+b^m=I,
@@ -43,16 +47,22 @@ $$
 which is equivalent to $b\in I$.
 :::
 
-<1>2. Therefore (a) implies (b).
+:::
 
-::: {.proof}
-Step <1>1 proves condition (b) for every $b\in R$ and every positive integer
+::: {.pf-step #s1-2}
+Therefore (a) implies (b).
+
+::: pf-proof
+Step [](#s1-1){.pf-ref} proves condition (b) for every $b\in R$ and every positive integer
 $m$ with $b^m\in I$.
 :::
 
-<1>3. Assume (b).  Then $R/I$ contains no nonzero nilpotent element.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-3}
+Assume (b).  Then $R/I$ contains no nonzero nilpotent element.
+
+::: pf-proof
 Suppose, for contradiction, that $I+b$ is a nonzero nilpotent element of
 $R/I$.  Then for some $m\geq1$,
 $$
@@ -69,23 +79,28 @@ $$
 contradicting the assumption that $I+b$ is nonzero.
 :::
 
-<1>4. Therefore (b) implies (a).
+:::
 
-::: {.proof}
-Step <1>3 says exactly that the quotient ring contains no nilpotents under the
+::: {.pf-step #s1-4}
+Therefore (b) implies (a).
+
+::: pf-proof
+Step [](#s1-3){.pf-ref} says exactly that the quotient ring contains no nilpotents under the
 problem's convention that nilpotent elements are required to be nonzero.
 :::
 
-<1>5. Hence (a) and (b) are equivalent.
+:::
 
-::: {.proof}
-Step <1>2 proves $(a)\Rightarrow(b)$ and step <1>4 proves
+::: pf-step
+Hence (a) and (b) are equivalent.
+
+::: pf-proof
+Step [](#s1-2){.pf-ref} proves $(a)\Rightarrow(b)$ and step [](#s1-4){.pf-ref} proves
 $(b)\Rightarrow(a)$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required equivalence.
 :::
+
+:::
+
 :::
