@@ -39,6 +39,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Set
 $$
 R\coloneqq1+\sum_{k=0}^{n-1}|c_k|.
@@ -127,6 +129,8 @@ This is the contrapositive of step [](#s1-2){.pf-ref} together with the definiti
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the asserted open-disc bound.
+
+:::
 
 :::
 
