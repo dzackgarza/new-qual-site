@@ -29,6 +29,8 @@ f(x) = \arcsin(\log \sqrt{x})
 (E) $[1, e^2]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -90,6 +92,8 @@ Step [](#s1-2){.pf-ref} gives exactly the set of real $x$ for which every operat
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested domain and corresponding choice.
+
+:::
 
 :::
 
