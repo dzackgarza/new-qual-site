@@ -31,6 +31,8 @@ converges. Determine the value of the integral.
 (E) $\frac{\log n}{n-1}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
