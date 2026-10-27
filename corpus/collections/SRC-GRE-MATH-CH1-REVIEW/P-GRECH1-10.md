@@ -26,6 +26,8 @@ Every point on the parabola $y = \sqrt{2x - 1}$ is equidistant from the $y$-axis
 (E) $(\frac{5}{2}, 0)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -75,6 +77,8 @@ so $p=1$. Step [](#s1-1){.pf-ref} shows that this value indeed works for every p
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} identifies the unique listed point with the required property.
+
+:::
 
 :::
 
