@@ -16,6 +16,8 @@ audit:
 Show that there is no nonconstant entire function whose range is contained in the complement of a half-line.
 :::
 
+::: {.solution}
+
 Write the half-line as
 $$
 L=\{a+te^{i\alpha}:t\geq0\}
@@ -138,6 +140,8 @@ Step [](#s1-4){.pf-ref} contradicts the nonconstancy assumed in step [](#s1-1){.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
