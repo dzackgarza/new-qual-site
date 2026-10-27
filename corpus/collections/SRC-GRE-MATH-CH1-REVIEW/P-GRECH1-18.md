@@ -30,6 +30,8 @@ What are the roots of the following equation?
 (E) all real $x$
 :::
 
+::: {.solution}
+
 Set $y=\log x$.
 
 ::: pf
@@ -81,6 +83,8 @@ Both values are positive and therefore lie in the domain of the original equatio
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives all solutions of the transformed equation within the logarithm's domain.
+
+:::
 
 :::
 
