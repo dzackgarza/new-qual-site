@@ -29,6 +29,8 @@ If $f(x)$ is a function that's differentiable everywhere, what is the value of t
 (E) The limit does not exist.
 :::
 
+::: {.solution}
+
 Because $f$ is differentiable at $x$, write
 $$
 f(x+u)=f(x)+f'(x)u+r(u),
@@ -94,6 +96,8 @@ Taking $h\to0$ gives the displayed limit.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested value using only the stated differentiability hypothesis.
+
+:::
 
 :::
 
