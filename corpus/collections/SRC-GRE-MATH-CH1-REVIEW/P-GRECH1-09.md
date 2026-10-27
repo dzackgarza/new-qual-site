@@ -26,6 +26,8 @@ Let $C$ be the curve in the $xy$-plane described by the equation $x^2 + 4y^2 = 1
 (E) $16\pi$
 :::
 
+::: {.solution}
+
 Let $(x',y')=(x/2,y)$ denote the image of a point $(x,y)$ on $C$.
 
 ::: pf
@@ -73,6 +75,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested area and corresponding choice.
+
+:::
 
 :::
 
