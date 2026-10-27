@@ -31,6 +31,8 @@ bound a common region in the first quadrant. Which of the following expressions 
 (E) $\int_0^{\frac{\pi}{3}} \frac{1}{2} (\sqrt{3} \sin \theta)^2 d\theta + \int_{\frac{\pi}{3}}^{\frac{\pi}{2}} \frac{1}{2} (3 \cos \theta)^2 d\theta$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ For a polar region whose radial boundary is $r=R(\theta)$, the area element inte
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested area expression and corresponding choice.
+
+:::
 
 :::
 
