@@ -24,6 +24,8 @@ Show that at least one partial sum has a zero in the disk
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ step [](#s1-2){.pf-ref}, and step [](#s1-3){.pf-ref} places both of them in the 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
