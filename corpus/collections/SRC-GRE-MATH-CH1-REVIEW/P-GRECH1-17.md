@@ -30,6 +30,8 @@ a^{(\log_a x) + (\log_A x)}
 (E) $x\sqrt{x}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ where $x>0$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested simplified form and corresponding choice.
+
+:::
 
 :::
 
