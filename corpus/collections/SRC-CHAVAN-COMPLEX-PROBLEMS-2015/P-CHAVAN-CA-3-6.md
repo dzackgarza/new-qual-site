@@ -21,6 +21,8 @@ Show that the equation
 has exactly one solution in the right half-plane, and that this solution is real.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -132,6 +134,8 @@ unique.
 
 Step [](#s1-4){.pf-ref} gives both the uniqueness and the reality of the required
 solution.
+
+:::
 
 :::
 
