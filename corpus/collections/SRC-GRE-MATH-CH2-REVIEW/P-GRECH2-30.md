@@ -31,6 +31,8 @@ Simplify the following:
 (E) $\frac{5}{3}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -110,6 +112,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested simplification and corresponding choice.
+
+:::
 
 :::
 
