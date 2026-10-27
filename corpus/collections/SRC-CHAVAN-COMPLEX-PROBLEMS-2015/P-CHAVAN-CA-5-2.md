@@ -20,6 +20,8 @@ Let $\Omega\subseteq\mathbb C$ be open and define
 Show that $|\Omega|$ is relatively open in $\mathbb R_{\ge0}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -130,6 +132,8 @@ $\mathbb R_{\ge0}$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
