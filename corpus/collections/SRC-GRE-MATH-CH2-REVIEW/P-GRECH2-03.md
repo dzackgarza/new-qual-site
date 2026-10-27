@@ -29,6 +29,8 @@ Let $[x]$ denote the greatest integer $\le x$. If $n$ is a positive integer, the
 (E) $2n$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
