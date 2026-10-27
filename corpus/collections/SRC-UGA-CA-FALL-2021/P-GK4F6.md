@@ -18,12 +18,14 @@ review: draft
 Let $\gamma(t)$ be a piecewise smooth curve in $\mathbb{C}, t \in[0,1]$. Let $F(w)$ be a continuous function on $\gamma$. Show that $f(z)$ defined by
 \[
 f(z):=\int_{\gamma} \frac{F(w)}{w-z} d w
-\]
-is analytic on the complement of the curve $\gamma$.
+\]is analytic on the complement of the curve $\gamma$.
 
 :::
 
-Let $K=\gamma([0,1])$ and $U=\mathbb C\setminus K$. The compactness of $K$ implies that $U$ is open. Let $L$ be the length of the piecewise smooth curve $\gamma$.
+::: {.solution}
+
+Let $K=\gamma([0,1])$ and $U=\mathbb C\setminus K$.
+ The compactness of $K$ implies that $U$ is open. Let $L$ be the length of the piecewise smooth curve $\gamma$.
 
 ::: pf
 
@@ -68,6 +70,8 @@ Step [](#s1-1){.pf-ref} establishes complex differentiability at every point of 
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
