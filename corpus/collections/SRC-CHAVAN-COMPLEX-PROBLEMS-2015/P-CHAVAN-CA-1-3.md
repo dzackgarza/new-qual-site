@@ -24,6 +24,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 For $N\ge0$, let
 $$
 p_N(z)=\sum_{n=0}^N a_nz^n,
@@ -37,7 +39,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The function $f$ is continuous on $K$, so $|f|$ attains maxima on both $K$ and $\partial K$.
 
@@ -131,6 +133,8 @@ The two quantities on the left are equal for every $N$ by step [](#s1-3){.pf-ref
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required maximum-modulus equality.
+
+:::
 
 :::
 
