@@ -21,6 +21,8 @@ audit:
 Suppose that N is a normal subgroup of a finite group G and H is a subgroup of G. If |G/N| is prime, prove that H is contained in N or that N H = G.
 :::
 
+::: {.solution}
+
 Let
 $$
 \pi:G\longrightarrow G/N
@@ -93,6 +95,8 @@ $N,H\subseteq G$, so $NH=G$.
 
 Step [](#s1-1){.pf-ref} gives the only two cases. Step [](#s1-2){.pf-ref} gives $H\subseteq N$ in
 the first case, and step [](#s1-3){.pf-ref} gives $NH=G$ in the second.
+
+:::
 
 :::
 
