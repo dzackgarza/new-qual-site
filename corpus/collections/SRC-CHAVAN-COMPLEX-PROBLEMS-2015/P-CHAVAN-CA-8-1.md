@@ -16,6 +16,8 @@ audit:
 Show that the range of every nonconstant entire function is dense in $\mathbb C$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ in step [](#s1-1){.pf-ref} is false.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
