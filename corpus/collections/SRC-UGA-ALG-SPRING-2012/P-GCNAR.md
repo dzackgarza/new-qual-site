@@ -17,6 +17,10 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: solution-reviewed
+  by: buffy
+  date: 2026-10-27
+  note: Corrected the Jordan structure for the matrix as printed. With $A_{23}=1$ the kernels of $T-I$, $(T-I)^2$, $(T-I)^3$ have dimensions $2,3,4$, so the eigenvalue-one blocks are $J_3(1)$ and $[1]$; the earlier version used the dimensions $3,4$ of the matrix with $A_{23}=0$.
 ---
 
 ::: {.problem}
@@ -43,11 +47,13 @@ Find the Jordan canonical form of $A$.
 
 Let $T$ denote the operator with matrix $A$, and let $x$ act on $V$ by $T$.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The elementary divisors of $T$ are $(x-1)^2$, $(x-1)$, $(x-1)$, and $(x-2)$.
+The elementary divisors of $T$ are $(x-1)^3$, $(x-1)$, and $(x-2)$.
 
 
 ::: pf-proof
@@ -57,7 +63,7 @@ The block upper-triangular matrix has characteristic polynomial
 \chi_T(x)=((x+1)(x-3)+4)(x-1)^2(x-2)=(x-1)^4(x-2).
 \]
 For $N=T-I$, the first two coordinates form the nilpotent block
-\(\begin{psmallmatrix}-2&1\\-4&2\end{psmallmatrix}\), whose square is zero. Direct calculation gives $\dim\ker N=3$ and $\dim\ker N^2=4$. The successive kernel increments $3,1$ show that the three Jordan blocks for eigenvalue one have sizes two, one, and one. Eigenvalue two has algebraic multiplicity one, giving one further block.
+\(\begin{psmallmatrix}-2&1\\-4&2\end{psmallmatrix}\), whose square is zero, while the entry $A_{23}=1$ couples the two diagonal blocks. Direct calculation gives $\dim\ker N=2$, $\dim\ker N^2=3$, and $\dim\ker N^3=4$. The successive kernel increments $2,1,1$ show that the two Jordan blocks for eigenvalue one have sizes three and one. Eigenvalue two has algebraic multiplicity one, giving one further block.
 
 :::
 
@@ -67,13 +73,13 @@ For $N=T-I$, the first two coordinates form the nilpotent block
 
 The invariant factors are
 \[
-\boxed{d_1=x-1,\quad d_2=x-1,\quad d_3=(x-1)^2(x-2)}.
+\boxed{d_1=x-1,\quad d_2=(x-1)^3(x-2)}.
 \]
 
 
 ::: pf-proof
 
-The elementary divisors from step [](#s1-1){.pf-ref} comprise $(x-1)^2$, two copies of $(x-1)$, and $(x-2)$. Aligning the powers of $x-1$ in increasing order and combining the sole $x-2$ factor with the last one yields the displayed monic invariant factors. They satisfy $d_1\mid d_2\mid d_3$ and $d_1d_2d_3=\chi_T$.
+The elementary divisors from step [](#s1-1){.pf-ref} comprise $(x-1)^3$, $(x-1)$, and $(x-2)$. Ordering the powers of $x-1$ in decreasing order and combining the sole $x-2$ factor with the largest power yields the displayed monic invariant factors. They satisfy $d_1\mid d_2$ and $d_1d_2=\chi_T$.
 
 :::
 
@@ -82,9 +88,8 @@ The elementary divisors from step [](#s1-1){.pf-ref} comprise $(x-1)^2$, two cop
 ::: {.pf-step #s1-3}
 
 The decomposition into indecomposable $\mathbb C[x]$-modules is
-\[
-\boxed{V\cong\mathbb C[x]/((x-1)^2)\oplus
-\bigl(\mathbb C[x]/(x-1)\bigr)^{\oplus2}\oplus\mathbb C[x]/(x-2)}.
+\[\boxed{V\cong\mathbb C[x]/((x-1)^3)\oplus
+\mathbb C[x]/(x-1)\oplus \mathbb C[x]/(x-2)}.
 \]
 
 
@@ -100,13 +105,13 @@ The structure theorem over the PID $\mathbb C[x]$ gives the elementary-divisor d
 
 The Jordan canonical form is
 \[
-\boxed{J_2(1)\oplus[1]\oplus[1]\oplus[2]}.
+\boxed{J_3(1)\oplus[1]\oplus[2]}.
 \]
 
 
 ::: pf-proof
 
-The elementary divisors determined in step [](#s1-1){.pf-ref} correspond to Jordan blocks of sizes two, one and one at eigenvalue one, and a single block at eigenvalue two.
+The elementary divisors determined in step [](#s1-1){.pf-ref} correspond to Jordan blocks of sizes three and one at eigenvalue one, and a single block at eigenvalue two. The kernel dimensions computed there force the larger block to have size three.
 
 :::
 
@@ -115,6 +120,8 @@ The elementary divisors determined in step [](#s1-1){.pf-ref} correspond to Jord
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
