@@ -47,6 +47,8 @@ Conclude that
 \]
 :::
 
+::: {.solution}
+
 For $|z|\le1$, write $s=\sqrt{1-|z|^2}$ and denote the matrix in part 1 by $U_z$.
 Let $\|\cdot\|$ denote the operator norm induced by the Euclidean norm on $\mathbb C^{n+1}$.
 
@@ -252,6 +254,8 @@ subset of the closed unit disk. Therefore the two maxima are equal.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} establish the four requested intermediate claims,
 and step [](#s1-6){.pf-ref} gives the required conclusion.
+
+:::
 
 :::
 
