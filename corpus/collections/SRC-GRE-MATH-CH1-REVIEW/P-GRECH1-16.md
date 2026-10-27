@@ -32,6 +32,8 @@ given that every root of this equation has the form $1 + bi$ (where $b$ is real)
 (E) $3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ By step [](#s1-2){.pf-ref}, the three corresponding values of $b$ are $0$, $\sqr
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
