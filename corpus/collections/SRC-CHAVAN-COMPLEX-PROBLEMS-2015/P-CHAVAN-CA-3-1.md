@@ -21,6 +21,8 @@ be the principal argument.
 Show that $\arg$ is not continuous, and determine its set of discontinuities.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -133,6 +135,8 @@ domain.
 
 Step [](#s1-3){.pf-ref} gives the complete discontinuity set and, in particular,
 shows that $\arg$ is not continuous on $\mathbb C^*$.
+
+:::
 
 :::
 
