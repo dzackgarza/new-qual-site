@@ -25,6 +25,8 @@ Calculate the area of the region in the first quadrant bounded by the graphs of 
 (E) $4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -87,6 +89,8 @@ Their sum is $32/4=8$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
+
+:::
 
 :::
 
