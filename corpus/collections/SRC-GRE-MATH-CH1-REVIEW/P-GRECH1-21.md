@@ -26,6 +26,8 @@ Let $x$ be the real number such that $\sin(\sin x) = \frac{1}{2}$ and $2 < x < 3
 (E) $\frac{\sqrt{3}}{2}$
 :::
 
+::: {.solution}
+
 Set $\theta=\sin x$.
 
 ::: pf
@@ -89,6 +91,8 @@ Apply step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
