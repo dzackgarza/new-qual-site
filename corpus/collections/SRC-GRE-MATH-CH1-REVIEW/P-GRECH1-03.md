@@ -26,6 +26,8 @@ Solve for $x: |x+1| - |x| + 2|x-1| = 2x-1$
 (E) $x \ge 1$
 :::
 
+::: {.solution}
+
 The absolute-value breakpoints are $-1$, $0$, and $1$.
 
 ::: pf
@@ -134,6 +136,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} exhaust the real line and le
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the complete solution set and choice.
+
+:::
 
 :::
 
