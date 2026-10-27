@@ -26,6 +26,8 @@ Let $f$ be nonconstant and holomorphic on an open set containing the closed unit
 Thus the image of $f$ contains the unit disk.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -137,6 +139,8 @@ open unit disk lies in the image of $f$.
 
 Step [](#s1-2){.pf-ref} proves part 1, steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove part 2, and step
 [](#s1-5){.pf-ref} gives the stated image containment.
+
+:::
 
 :::
 
