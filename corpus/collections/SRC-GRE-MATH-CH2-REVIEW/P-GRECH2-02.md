@@ -25,6 +25,8 @@ Let $(x_n)$ be the sequence with $x_1 = 2$ and $x_n = \sqrt{5x_{n-1} + 6}$ for e
 (E) $16$
 :::
 
+::: {.solution}
+
 Let $L=\lim_{n\to\infty}x_n$, which exists by hypothesis.
 
 ::: pf
@@ -89,6 +91,8 @@ Every term $x_n$ is nonnegative because it is either $x_1=2$ or a square root. T
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
+
+:::
 
 :::
 
