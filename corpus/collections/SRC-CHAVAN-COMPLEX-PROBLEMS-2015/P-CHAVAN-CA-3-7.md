@@ -20,6 +20,8 @@ Find the number of zeros of
 in the closed unit disk centered at the origin.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ zeros on its boundary.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested zero count.
+
+:::
 
 :::
 
