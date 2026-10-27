@@ -29,6 +29,8 @@ f(x) = \begin{cases} x^2 + x - 3 & \text{if } x \le 1 \\ mx + b & \text{if } x >
 (E) $m = 3, b = -4$
 :::
 
+::: {.solution}
+
 Only the joining point $x=1$ can fail to be differentiable.
 
 ::: pf
@@ -104,6 +106,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show necessity, while step [](#s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the unique pair for which $f$ is differentiable everywhere.
+
+:::
 
 :::
 
