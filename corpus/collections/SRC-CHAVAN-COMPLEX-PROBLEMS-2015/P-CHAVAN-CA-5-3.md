@@ -22,6 +22,8 @@ Define $|f|(z)=|f(z)|$.
 2. If $\overline\Omega$ is compact and $f$ is continuous on $\overline\Omega$, show that $|f|$ attains its maximum on $\partial\Omega$.
 :::
 
+::: {.solution}
+
 For part (2), the assertion necessarily presupposes that $\Omega$ is nonempty;
 otherwise $|f|$ has no maximum. We interpret continuity on $\overline\Omega$ as
 the existence of a continuous extension to $\overline\Omega$, denoted again by
@@ -169,6 +171,8 @@ places that point on $\partial\Omega$.
 ::: pf-qed
 
 Step [](#s1){.pf-ref} proves part (1), and step [](#s4){.pf-ref} proves part (2).
+
+:::
 
 :::
 
