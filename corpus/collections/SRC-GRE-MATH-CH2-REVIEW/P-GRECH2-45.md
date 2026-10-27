@@ -25,6 +25,8 @@ If $-1 < x < 1$, then $\sum_{n=1}^{\infty} n x^{2n} =$
 (E) $\frac{x^2}{(1+x^2)^2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -87,6 +89,8 @@ Step [](#s1-2){.pf-ref} is exactly the series in the problem.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested expression and corresponding choice.
+
+:::
 
 :::
 
