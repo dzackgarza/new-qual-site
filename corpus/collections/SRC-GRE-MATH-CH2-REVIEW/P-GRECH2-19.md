@@ -26,6 +26,8 @@ What does the Mean-Value theorem say about $f$?
 (E) There exists a number $c$ in the interval $(a, b)$ such that $(b - a)f'(c) = 2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -69,6 +71,8 @@ Since $a\ne b$, one has $b-a\ne0$. Multiplying the equality in step [](#s1-1){.p
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} is exactly the conclusion among the listed choices guaranteed by the mean value theorem.
+
+:::
 
 :::
 
