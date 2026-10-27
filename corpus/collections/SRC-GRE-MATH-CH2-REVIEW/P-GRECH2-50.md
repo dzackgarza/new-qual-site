@@ -29,6 +29,8 @@ is finite and nonzero. What is this value of $k$, and what is the limit, $L$?
 (E) $k = 4$, $L = \frac{1}{2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ Step [](#s1-3){.pf-ref} gives exactly the pair listed in choice (D).
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the requested choice.
+
+:::
 
 :::
 
