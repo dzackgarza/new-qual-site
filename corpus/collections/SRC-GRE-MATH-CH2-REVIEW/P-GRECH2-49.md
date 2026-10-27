@@ -25,6 +25,8 @@ If the function $f(x) = e^x$ is expanded in powers of $x$, what is the minimum n
 (E) $7$
 :::
 
+::: {.solution}
+
 Since $\sqrt[5]{e}=e^{1/5}$, set
 $$
 t_k=\frac{(1/5)^k}{k!}.
@@ -115,6 +117,8 @@ Step [](#s1-1){.pf-ref} rules out five terms, while step [](#s1-2){.pf-ref} prov
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested minimum and corresponding choice.
+
+:::
 
 :::
 
