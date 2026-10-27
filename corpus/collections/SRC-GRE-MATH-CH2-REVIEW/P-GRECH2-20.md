@@ -25,6 +25,8 @@ What is the maximum area of a rectangle inscribed in a semicircle of radius $a$?
 (E) $a^2\sqrt{2}$
 :::
 
+::: {.solution}
+
 Let $x$ be the half-width and $y$ the height of an inscribed rectangle. Then the upper-right vertex $(x,y)$ lies on the semicircle, so
 $$
 x^2+y^2=a^2,
@@ -101,6 +103,8 @@ Step [](#s1-1){.pf-ref} gives $a^2$ as an upper bound, and step [](#s1-2){.pf-re
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested maximum and corresponding choice.
+
+:::
 
 :::
 
