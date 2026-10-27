@@ -32,6 +32,8 @@ What's the value of $f(f^{-1}(f(2)))$?
 (E) $7$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -90,6 +92,8 @@ and step [](#s1-2){.pf-ref} evaluates the right-hand side.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and choice.
+
+:::
 
 :::
 
