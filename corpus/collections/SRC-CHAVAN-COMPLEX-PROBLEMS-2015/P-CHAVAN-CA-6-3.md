@@ -21,6 +21,8 @@ f:\mathbb D\to\mathbb D
 such that $f(a)=b$.
 :::
 
+::: {.solution}
+
 For $c\in\DD$, define
 $$
 \psi_c(z)=\frac{c-z}{1-\overline c z}.
@@ -127,6 +129,8 @@ and hence $f(a)=b$.
 
 Step [](#s1-4){.pf-ref} gives an automorphism carrying an arbitrary $a\in\DD$ to an arbitrary
 $b\in\DD$, which is exactly transitivity.
+
+:::
 
 :::
 
