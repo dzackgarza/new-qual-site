@@ -34,6 +34,8 @@ Explain why this proves that the left cosets of $H$ do not form a group under co
 In Table 5.1, $\alpha_6 = (243)$, $\alpha_7 = (142)$, $\alpha_9 = (132)$ and $\alpha_{11} = (234)$, as identified in the source's solution.
 :::
 
+::: {.solution}
+
 Let
 $$
 t=(12)(34),
@@ -176,6 +178,8 @@ group.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove part (b).
+
+:::
 
 :::
 
