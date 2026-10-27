@@ -24,6 +24,8 @@ If $f$ is holomorphic on $D$, prove that
 Show also that the conclusion can fail when $B$ is unbounded.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -171,6 +173,8 @@ Thus $0\notin f(\partial B)$, proving that the inclusion fails.
 
 Step [](#s1-5){.pf-ref} proves the bounded case, and step [](#s1-6){.pf-ref} gives the requested unbounded
 counterexample.
+
+:::
 
 :::
 
