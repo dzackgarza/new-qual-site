@@ -26,6 +26,8 @@ If the roots of the equation $x^2 + Bx + 1 = 0$ are the squares of the roots of 
 (E) $b^2 - 2$
 :::
 
+::: {.solution}
+
 Let $r$ and $s$ be the roots of $x^2+bx+1$.
 
 ::: pf
@@ -83,6 +85,8 @@ which is equivalent to the displayed value of $B$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested expression and corresponding choice.
+
+:::
 
 :::
 
