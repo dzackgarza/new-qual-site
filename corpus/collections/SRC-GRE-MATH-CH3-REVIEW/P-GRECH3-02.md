@@ -31,6 +31,8 @@ $$
 \mathbf v=(2,-1,3).
 $$
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that (D) is the unique list
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested vector and corresponding choice.
+
+:::
 
 :::
 
