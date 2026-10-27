@@ -25,6 +25,8 @@ In the Taylor series expansion (in powers of $x$) of the function $f(x) = e^{x^2
 (E) $\frac{3}{2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ Step [](#s1-2){.pf-ref} gives exactly the coefficient requested in the problem.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the corresponding choice.
+
+:::
 
 :::
 
