@@ -37,6 +37,8 @@ Conclude that a nonconstant polynomial cannot attain its maximum modulus in the 
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -174,6 +176,8 @@ immediate. Thus in all cases the two maxima are equal.
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} establish the requested integral identities, step
 [](#s1-4){.pf-ref} gives the nonconstant case, and step [](#s1-5){.pf-ref} gives the final
 maximum-modulus equality.
+
+:::
 
 :::
 
