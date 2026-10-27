@@ -25,6 +25,8 @@ If $[x]$ denotes the greatest integer $\le x$, then $\int_{0}^{\frac{7}{2}} [x] 
 (E) $\frac{37}{2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -84,6 +86,8 @@ This is exactly the value obtained in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested integral and corresponding choice.
+
+:::
 
 :::
 
