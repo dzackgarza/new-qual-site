@@ -21,6 +21,8 @@ audit:
 If G is non-Abelian, show that Aut(G) is not cyclic.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ $\operatorname{Aut}(G)$ cannot be cyclic.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
