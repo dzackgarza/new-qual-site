@@ -26,6 +26,8 @@ Find the sum of the roots of the equation $\sqrt{x-1} + \sqrt{2x-1} = x$.
 (E) $6$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -133,6 +135,8 @@ $1+5=6$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested sum and choice.
+
+:::
 
 :::
 
