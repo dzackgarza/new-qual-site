@@ -26,6 +26,8 @@ Simplify $\sqrt{\csc^2\left(\operatorname{arccot}\frac{\pi}{4}\right)-1}$.
 (E) $\frac{\sqrt{\pi}}{2}$
 :::
 
+::: {.solution}
+
 Set $\theta=\operatorname{arccot}(\pi/4)$.
 
 ::: pf
@@ -77,6 +79,8 @@ Thus $|\cot\theta|=\pi/4$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested simplified value and corresponding choice.
+
+:::
 
 :::
 
