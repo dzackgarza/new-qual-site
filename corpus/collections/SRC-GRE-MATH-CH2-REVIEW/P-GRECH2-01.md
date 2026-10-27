@@ -31,6 +31,8 @@ for each integer $n \ge 1$. Given that this sequence converges, what is its limi
 (E) $\sqrt[4]{e}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ This is exactly the limit established in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
+
+:::
 
 :::
 
