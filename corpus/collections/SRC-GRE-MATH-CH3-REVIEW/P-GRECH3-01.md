@@ -28,6 +28,8 @@ Find the angle between the diagonals of the back and left faces of the cube show
 (E) $120^\circ$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ The angle between two vectors is taken in $[0,\pi]$. Step [](#s1-2){.pf-ref} the
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested angle and corresponding choice.
+
+:::
 
 :::
 
