@@ -31,6 +31,8 @@ At what value of $x$ on the interval $(0, \frac{3\pi}{2})$ does this function at
 (E) $\frac{2\pi}{3}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -58,7 +60,7 @@ Using $\sin 2x=2\sin x\cos x$ gives the factored form.
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The critical points in $(0,3\pi/2)$ are
 $$
@@ -115,6 +117,8 @@ By step [](#s1-3){.pf-ref}, $f'$ changes from positive to negative at $\pi/3$, s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the requested local-maximum point and corresponding choice.
+
+:::
 
 :::
 
