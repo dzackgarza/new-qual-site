@@ -18,6 +18,8 @@ Let $p$ be a nonconstant complex polynomial in more than one variable.
 Show that every open neighborhood of a zero of $p$ contains infinitely many zeros of $p$.
 :::
 
+::: {.solution}
+
 Let $p\in\CC[z_1,\ldots,z_n]$ with $n\geq2$, and let $a\in\CC^n$ satisfy
 $p(a)=0$.
 
@@ -157,6 +159,8 @@ transports it back through the invertible affine change of coordinates.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
