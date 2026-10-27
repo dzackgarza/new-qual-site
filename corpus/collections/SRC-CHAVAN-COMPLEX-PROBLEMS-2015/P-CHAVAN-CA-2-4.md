@@ -30,6 +30,8 @@ R=\sqrt{|a_0|^2+\cdots+|a_{n-1}|^2+1}.
 Conclude that every zero of $p$ lies in the open disk $|z|<R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -145,6 +147,8 @@ zeros. Therefore every zero of $p$ lies in the open disk.
 Step [](#s1-1){.pf-ref} proves the case $R=1$, steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} establish the
 requested boundary estimate for $R>1$, and step [](#s1-4){.pf-ref} gives the final
 zero-location conclusion.
+
+:::
 
 :::
 
