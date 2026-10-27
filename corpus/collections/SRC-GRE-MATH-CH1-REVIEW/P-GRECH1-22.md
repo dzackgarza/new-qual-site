@@ -26,6 +26,8 @@ Which one of the following is in the domain of the function $f(x) = \log(\sin x)
 (E) None of these
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ Combine step [](#s1-1){.pf-ref} with step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the unique listed input in the domain of $f$.
+
+:::
 
 :::
 
