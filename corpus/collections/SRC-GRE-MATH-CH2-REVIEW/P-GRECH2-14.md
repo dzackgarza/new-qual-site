@@ -25,6 +25,8 @@ If $f(x) = 2|x - 1| + (x - 1)^2$, what is the value of $f'(0)$?
 (E) $-4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -86,6 +88,8 @@ Substituting $x=0$ into the derivative from step [](#s1-2){.pf-ref} gives $f'(0)
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested derivative value and corresponding choice.
+
+:::
 
 :::
 
