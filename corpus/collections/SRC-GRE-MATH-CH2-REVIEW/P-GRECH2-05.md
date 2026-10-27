@@ -31,6 +31,8 @@ has two asymptotes. Identify these lines.
 (E) $x = \frac{1}{2}$ and $y = 1 - x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies both requested lines and the corresponding choice.
+
+:::
 
 :::
 
