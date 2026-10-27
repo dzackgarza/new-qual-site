@@ -25,6 +25,8 @@ Integrate $\int \frac{x^2 dx}{\sqrt{1-x^2}}$.
 (E) $\frac{1}{2} \left( x \arcsin x + \sqrt{1-x^2} \right) + c$
 :::
 
+::: {.solution}
+
 Set $x=\sin\theta$ with $\theta=\arcsin x$.
 
 ::: pf
@@ -103,6 +105,8 @@ Since $\theta=\arcsin x$, $\sin\theta=x$, and $\cos\theta=\sqrt{1-x^2}$, substit
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested antiderivative and corresponding choice.
+
+:::
 
 :::
 
