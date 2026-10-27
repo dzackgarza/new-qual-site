@@ -17,6 +17,8 @@ Let $(f_n)$ be a sequence of injective holomorphic functions converging uniforml
 Show that either $f$ is constant or $f$ is injective.
 :::
 
+::: {.solution}
+
 Let $\Omega$ denote the common domain of the functions.
 
 ::: pf
@@ -165,6 +167,8 @@ if $f$ is nonconstant, then it is injective.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required dichotomy.
+
+:::
 
 :::
 
