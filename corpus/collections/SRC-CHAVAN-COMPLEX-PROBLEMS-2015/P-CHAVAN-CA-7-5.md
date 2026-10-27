@@ -16,6 +16,8 @@ audit:
 Show that the complex plane minus a finite nonempty set is not simply connected.
 :::
 
+::: {.solution}
+
 Let
 $$
 F=\{a_1,\ldots,a_n\}\subset\CC,
@@ -117,6 +119,8 @@ simply connected.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
