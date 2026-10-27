@@ -26,6 +26,8 @@ What's the equation of all points in the $xy$-plane that are equidistant from th
 (E) $(x - 2)^2 + (y - 1)^2 = 18$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -79,6 +81,8 @@ equivalently $x-y=1$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the complete equidistance locus and identifies the corresponding choice.
+
+:::
 
 :::
 
