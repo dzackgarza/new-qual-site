@@ -26,6 +26,8 @@ Given that $p(x)$ is a real polynomial of degree $\le 4$ such that one can find 
 (E) Cannot be determined from the information given
 :::
 
+::: {.solution}
+
 Define $q(x)=p(x)-5$.
 
 ::: pf
@@ -80,6 +82,8 @@ Evaluate the identity from step [](#s1-2){.pf-ref} at $x=5$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and choice.
+
+:::
 
 :::
 
