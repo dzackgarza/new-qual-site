@@ -25,6 +25,8 @@ Let $f(x) = x^k e^{-x}$, where $k$ is a positive constant. For $x > 0$, what is 
 (E) $\left(\frac{k}{e}\right)^k$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -86,6 +88,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested maximum value and corresponding choice.
+
+:::
 
 :::
 
