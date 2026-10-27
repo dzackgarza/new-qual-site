@@ -32,6 +32,8 @@ If $f(x) = x + 1$ and $g(x) = \sqrt{x}$, what is $h(x)$?
 (E) $1 + (\sqrt{x} + 2)\sqrt{x}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -94,6 +96,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested function and corresponding choice.
+
+:::
 
 :::
 
