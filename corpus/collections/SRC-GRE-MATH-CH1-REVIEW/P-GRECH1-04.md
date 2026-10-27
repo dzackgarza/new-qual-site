@@ -26,6 +26,8 @@ Let $f$ be a function such that $f(n+1) = 1 - [f(n)]^2$ for all nonnegative inte
 (E) $2[f(n)]^2 + [f(n)]^4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -72,6 +74,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested expression and identifies the corresponding choice.
+
+:::
 
 :::
 
