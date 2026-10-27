@@ -26,6 +26,8 @@ Let $P=(1,-1,1)$ and $Q=(-3,3,3)$. Find the point $R$ on the line containing $P$
 (E) $(-9,9,6)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -151,6 +153,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested point and corresponding choice.
+
+:::
 
 :::
 
