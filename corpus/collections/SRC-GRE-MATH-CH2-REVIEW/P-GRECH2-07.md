@@ -29,6 +29,8 @@ Evaluate the following limit:
 (E) $\frac{\pi}{2}$
 :::
 
+::: {.solution}
+
 Let
 $$
 F(x)=\int_0^x\frac{t+t^2}{1+\sin t}\,dt.
@@ -93,6 +95,8 @@ This is exactly the value obtained in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
+
+:::
 
 :::
 
