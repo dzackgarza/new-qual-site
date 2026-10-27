@@ -31,6 +31,8 @@ then the slope of the line tangent to the graph of $f$ at its $y$-intercept is
 (E) $\frac{\pi}{2} + 1$
 :::
 
+::: {.solution}
+
 The $y$-intercept occurs at $x=0$, so the required slope is $f'(0)$.
 
 ::: pf
@@ -92,6 +94,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the slope at the $y$-intercept and corresponding choice.
+
+:::
 
 :::
 
