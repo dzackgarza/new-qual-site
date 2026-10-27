@@ -25,6 +25,8 @@ The smallest positive integer $x$ for which the power series $\sum_{n=1}^{\infty
 (E) $9$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ step [](#s1-2){.pf-ref} gives divergence at $x=7$. Thus $7$ is the first positiv
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested integer and corresponding choice.
+
+:::
 
 :::
 
