@@ -26,6 +26,8 @@ When the polynomial $p(x)$ is divided by $x - 1$, it leaves a remainder of 1, an
 (E) $2x$
 :::
 
+::: {.solution}
+
 Write the remainder upon division by $x^2-1$ as $r(x)=ax+b$.
 
 ::: pf
@@ -87,6 +89,8 @@ Substitute the coefficients from step [](#s1-2){.pf-ref} into $r(x)=ax+b$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the unique remainder of degree less than $2$.
+
+:::
 
 :::
 
