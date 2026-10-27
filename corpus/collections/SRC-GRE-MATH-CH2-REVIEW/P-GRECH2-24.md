@@ -25,6 +25,8 @@ The function $f(x) = \int_{e^x}^{e^{2x}} t \log t \, dt$ has an absolute minimum
 (E) $\log 4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -52,7 +54,7 @@ $$
 
 :::
 
-::: pf-step
+::: {.pf-step #s1-2}
 
 The critical points are
 $$
@@ -122,6 +124,8 @@ Step [](#s1-3){.pf-ref} identifies the local maximum point among the two critica
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
