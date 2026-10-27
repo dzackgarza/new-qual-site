@@ -26,6 +26,8 @@ Let $L$ be the line in space that passes through the points $P=(-1,-2,4)$ and $Q
 (E) $(9,6,-2)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested intersection point and corresponding choice.
+
+:::
 
 :::
 
