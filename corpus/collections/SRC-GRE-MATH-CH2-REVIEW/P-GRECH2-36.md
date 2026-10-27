@@ -29,6 +29,8 @@ What positive value of $a$ satisfies the following equation?
 (E) $e^2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ so $\log a=1$ and hence $a=e$. This value is admissible and therefore is the uni
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested positive value and corresponding choice.
+
+:::
 
 :::
 
