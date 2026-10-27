@@ -25,6 +25,8 @@ The region bounded by the graphs of $y = x^2$ and $y = 6 - |x|$ is revolved arou
 (E) $\frac{16}{3}\pi$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested volume and corresponding choice.
+
+:::
 
 :::
 
