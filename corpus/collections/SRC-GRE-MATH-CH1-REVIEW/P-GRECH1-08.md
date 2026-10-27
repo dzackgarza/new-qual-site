@@ -26,6 +26,8 @@ Which of the following best describes the graph of the equation $x^2 + y^2 - 2x 
 (E) point
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -71,6 +73,8 @@ Both terms in step [](#s1-1){.pf-ref} are squares of real numbers and hence are 
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} identifies the entire graph and its corresponding choice.
+
+:::
 
 :::
 
