@@ -25,13 +25,14 @@ a. Show that $G$ contains a subgroup $H$ isomorphic to $\ZZ_3 \cross \ZZ_3 \cros
 
 b. Show that $H$ is normal in $G$.
 
-c. Give generators and relations for $G$ as an abstract group, such that all generators have order 3. Also exhibit elements of $S_9$ in cycle notation corresponding to these generators.d. Without appealing to the previous parts of the problem, show that $G$ contains an element of order 9.
+c. Give generators and relations for $G$ as an abstract group, such that all generators have order 3. Also exhibit elements of $S_9$ in cycle notation corresponding to these generators.
+
+d. Without appealing to the previous parts of the problem, show that $G$ contains an element of order 9.
 :::
 
 ::: {.solution}
 
-Write $a=(123)$, $b=(456)$, $c=(789)$, and $d=(147)(258)(369)$.
- By Sylow conjugacy it suffices to construct the asserted structure in the subgroup they generate.
+Write $a=(123)$, $b=(456)$, $c=(789)$, and $d=(147)(258)(369)$. By Sylow conjugacy it suffices to construct the asserted structure in the subgroup they generate.
 
 ::: pf
 
