@@ -16,6 +16,8 @@ audit:
 Show that the complex plane minus a half-line is simply connected.
 :::
 
+::: {.solution}
+
 Write the removed half-line as
 $$
 L=\{p+re^{i\alpha}:r\geq0\}
@@ -127,6 +129,8 @@ identify it with the connected open set $(0,\infty)\times(0,2\pi)$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
