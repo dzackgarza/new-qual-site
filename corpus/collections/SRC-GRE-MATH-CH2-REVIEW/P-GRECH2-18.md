@@ -25,6 +25,8 @@ If $n$ is a positive integer, what is the value of the $n^{\text{th}}$ derivativ
 (E) $\frac{n^n}{n!}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -99,6 +101,8 @@ This is exactly the value established in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the $n^{\mathrm{th}}$ derivative at the specified point and corresponding choice.
+
+:::
 
 :::
 
