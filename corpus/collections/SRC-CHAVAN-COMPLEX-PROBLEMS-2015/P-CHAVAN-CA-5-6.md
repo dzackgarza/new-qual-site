@@ -18,6 +18,8 @@ Let $f$ be a nonconstant holomorphic function on a bounded open set $\Omega$, co
 Show that either $f$ has a zero in $\Omega$ or $|f|$ assumes its minimum on $\partial\Omega$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -147,6 +149,8 @@ minimum value.
 
 Step [](#s1-2){.pf-ref} gives the first alternative when $f$ has an interior zero. Otherwise
 step [](#s1-6){.pf-ref} gives the second alternative.
+
+:::
 
 :::
 
