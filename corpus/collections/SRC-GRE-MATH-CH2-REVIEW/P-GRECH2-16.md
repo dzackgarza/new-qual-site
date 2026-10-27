@@ -25,6 +25,8 @@ Let $y = \frac{1}{\sqrt{x^3 + 1}}$. If $x$ increases from 2 to 2.09, which of th
 (E) $-0.09$
 :::
 
+::: {.solution}
+
 Let
 $$
 f(x)=(x^3+1)^{-1/2}.
@@ -32,7 +34,7 @@ $$
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The derivative at $x=2$ is
 $$
@@ -90,6 +92,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested approximation and corresponding choice.
+
+:::
 
 :::
 
