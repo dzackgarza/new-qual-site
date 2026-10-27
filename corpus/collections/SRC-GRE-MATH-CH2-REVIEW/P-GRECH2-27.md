@@ -31,6 +31,8 @@ then the value of $k$ for which $\int_{-1}^{1} f(x) dx = 1$ is
 (E) $3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ Thus $2k/3=2$, hence $k=3$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the unique constant satisfying the integral condition.
+
+:::
 
 :::
 
