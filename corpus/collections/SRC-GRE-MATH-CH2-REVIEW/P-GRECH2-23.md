@@ -25,6 +25,8 @@ The radius of a circle is decreasing at a rate of 0.5 cm per second. At what rat
 (E) $\frac{1}{4}\pi$
 :::
 
+::: {.solution}
+
 Let $r(t)$ be the radius and $A(t)=\pi r(t)^2$ the area.
 
 ::: pf
@@ -88,6 +90,8 @@ Step [](#s1-2){.pf-ref} gives the signed rate of change as $-4\pi$. Thus the pos
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested rate of decrease and corresponding choice.
+
+:::
 
 :::
 
