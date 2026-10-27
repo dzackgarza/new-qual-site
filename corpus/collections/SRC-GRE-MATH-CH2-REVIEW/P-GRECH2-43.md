@@ -29,6 +29,8 @@ Evaluate the following limit:
 (E) $\frac{1}{12}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
+
+:::
 
 :::
 
