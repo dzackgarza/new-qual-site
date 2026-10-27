@@ -29,6 +29,8 @@ Evaluate the following limit:
 (E) $\sqrt{e}$
 :::
 
+::: {.solution}
+
 For $x$ sufficiently close to $0$, one has $\cos x>0$, so define
 $$
 y(x)=(\cos x)^{\cot^2x}.
@@ -105,6 +107,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
+
+:::
 
 :::
 
