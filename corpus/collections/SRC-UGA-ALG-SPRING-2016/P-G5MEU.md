@@ -27,6 +27,8 @@ b. Show that $K/\QQ$ is Galois, and find the Galois group $G$ of $K/\QQ$.
 c. Exhibit explicitly the correspondence between subgroups of $G$ and intermediate fields between $\QQ$ and $K$.
 :::
 
+::: {.solution}
+
 Set $\theta=\sqrt2+\sqrt5$.
 
 ::: pf
@@ -90,6 +92,8 @@ The displayed quadratic fields are fixed respectively by the indicated order-two
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} answer parts (a), (b), and (c).
+
+:::
 
 :::
 
