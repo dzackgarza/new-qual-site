@@ -31,6 +31,8 @@ $$
 A=(0,0,1),\qquad B=(0,2,0),\qquad C=(3,0,0).
 $$
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -113,6 +115,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
+
+:::
 
 :::
 
