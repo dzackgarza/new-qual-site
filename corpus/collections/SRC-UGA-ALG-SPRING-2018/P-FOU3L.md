@@ -30,6 +30,8 @@ b. A submodule $S$ of $M$ is said to be *pure* if $S \cap r M = rS$ for all $r \
 Show that if $M$ is $\generators{p}\dash$primary, then $S$ is pure if and only if $S \cap p^k M = p^k S$ for all $k \geq 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ Since $r$ was arbitrary, $S$ is pure.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove the two implications of part (b).
+
+:::
 
 :::
 
