@@ -25,6 +25,8 @@ What is the area of the region in the first quadrant bounded by the curve $y = x
 (E) $\frac{\pi+4}{4}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -107,6 +109,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
+
+:::
 
 :::
 
