@@ -33,6 +33,8 @@ where $\arg$ is the principal argument.
 3. Show that $f$ has no analytic logarithm on $\Omega$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -247,6 +249,8 @@ shows that no analytic logarithm of $f$ exists on $\Omega$.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part 1, step [](#s1-5){.pf-ref} proves part 2, and step [](#s1-7){.pf-ref}
 proves part 3.
+
+:::
 
 :::
 
