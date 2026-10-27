@@ -25,6 +25,8 @@ If $f(1) = 1$ and $f'(1) = -1$, then the value of $\frac{d}{dx} \left[ \frac{f(x
 (E) $-3$
 :::
 
+::: {.solution}
+
 Set
 $$
 N(x)=f(x^3),
@@ -114,6 +116,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested derivative value and corresponding choice.
+
+:::
 
 :::
 
