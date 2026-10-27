@@ -31,6 +31,8 @@ is continuous everywhere, what is the value of $k$?
 (E) $-1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ This is exactly the value forced by step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the unique value making the function continuous everywhere.
+
+:::
 
 :::
 
