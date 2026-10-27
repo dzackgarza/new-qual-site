@@ -29,6 +29,8 @@ Evaluate the following limit:
 (E) $1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -99,6 +101,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested limit and corresponding choice.
+
+:::
 
 :::
 
