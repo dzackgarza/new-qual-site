@@ -31,6 +31,8 @@ III. $\sum_{n=0}^{\infty} \frac{(n+1)^3}{5(n+2)(n+3)(n+4)}$
 (E) II and III only
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -120,6 +122,8 @@ This follows from steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested choice.
+
+:::
 
 :::
 
