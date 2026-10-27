@@ -25,9 +25,11 @@ What is the equation of the tangent line to the curve $y = x^3 - 3x^2 + 4x$ at t
 (E) $x + y = 1$
 :::
 
+::: {.solution}
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1-1}
 
 The curve has its inflection point at $x=1$.
 
@@ -94,6 +96,8 @@ which simplifies to $y=x+1$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested tangent line and corresponding choice.
+
+:::
 
 :::
 
