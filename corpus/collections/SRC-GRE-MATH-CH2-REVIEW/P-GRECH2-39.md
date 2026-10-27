@@ -29,6 +29,8 @@ Find the positive value of $a$ that satisfies the equation:
 (E) $\frac{\pi}{2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ The resulting value is positive and therefore satisfies the stated requirement.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
