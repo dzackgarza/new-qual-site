@@ -26,6 +26,8 @@ Which one of the following polynomials $p(x)$ has the property that $\sqrt{3} - 
 (E) $x^4 - 5x^2 + 6$
 :::
 
+::: {.solution}
+
 Set $\alpha=\sqrt3-\sqrt2$.
 
 ::: pf
@@ -91,6 +93,8 @@ Step [](#s1-2){.pf-ref} states exactly that substituting $x=\alpha$ into the pol
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the requested listed polynomial.
+
+:::
 
 :::
 
