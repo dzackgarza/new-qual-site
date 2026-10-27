@@ -27,6 +27,8 @@ If $0 \le a < b$, then the series $\sum_{n=1}^{\infty} \frac{(n!)^2 a^n}{(2n)!}$
 (E) $4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -106,6 +108,8 @@ By step [](#s1-2){.pf-ref}, every positive $b\le4$ also has the displayed implic
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} determine both the convergence threshold and the defect in the literal wording.
+
+:::
 
 :::
 
