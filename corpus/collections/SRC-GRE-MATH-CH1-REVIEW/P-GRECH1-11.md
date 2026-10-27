@@ -26,6 +26,8 @@ One of the foci of the hyperbola $y^2 = \left(\frac{x}{a}\right)^2 + 1$ is the p
 (E) $\sqrt{3}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -89,6 +91,8 @@ Step [](#s1-2){.pf-ref} gives $a=\pm1$. The equation of the hyperbola depends on
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the unique listed choice satisfying the focus condition.
+
+:::
 
 :::
 
