@@ -30,6 +30,8 @@ Determine the set of positive values of $x$ that satisfy the following inequalit
 (E) $(1, \sqrt{2}) \cup (2, 2\sqrt{2})$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ This is exactly the positive set obtained in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested set and choice.
+
+:::
 
 :::
 
