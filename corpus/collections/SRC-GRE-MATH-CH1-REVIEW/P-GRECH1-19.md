@@ -32,6 +32,8 @@ Find a formula for $\sinh^{-1} x$.
 (E) $\log(\sqrt{x^2 + 1} - x)$
 :::
 
+::: {.solution}
+
 Let $y=\sinh^{-1}x$, so that $x=\sinh y$.
 
 ::: pf
@@ -101,6 +103,8 @@ The expression inside the logarithm is positive by step [](#s1-2){.pf-ref}, so t
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested inverse formula and corresponding choice.
+
+:::
 
 :::
 
