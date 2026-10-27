@@ -26,6 +26,8 @@ Given the vector identity $\mathbf{A}\times(\mathbf{B}\times\mathbf{C})=(\mathbf
 (E) $\mathbf{A}-(\mathbf{A}\times\mathbf{B})$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ Step [](#s1-2){.pf-ref} verifies directly that the vector in choice (E) satisfie
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested vector and corresponding choice.
+
+:::
 
 :::
 
