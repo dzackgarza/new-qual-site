@@ -29,6 +29,8 @@ f(x) = \arcsin(\log \sqrt{x})
 (E) $\frac{3e}{\sqrt{2}}$
 :::
 
+::: {.solution}
+
 Set $u(x)=\log\sqrt{x}$.
 
 ::: pf
@@ -103,6 +105,8 @@ This is exactly the evaluation established in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested derivative value and corresponding choice.
+
+:::
 
 :::
 
