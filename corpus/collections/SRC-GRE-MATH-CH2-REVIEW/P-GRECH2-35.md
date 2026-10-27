@@ -25,6 +25,8 @@ Calculate the length of the portion of the hypocycloid $x^{2/3} + y^{2/3} = 1$ i
 (E) $\frac{\sqrt{3}}{2}$
 :::
 
+::: {.solution}
+
 On the first-quadrant branch,
 $$
 y=(1-x^{2/3})^{3/2}.
@@ -108,6 +110,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested arc length and corresponding choice.
+
+:::
 
 :::
 
