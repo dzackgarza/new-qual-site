@@ -26,6 +26,8 @@ Simplify $\tan(2 \arcsin \frac{1}{3})$.
 (E) $\frac{6}{5}$
 :::
 
+::: {.solution}
+
 Set $\theta=\arcsin(1/3)$.
 
 ::: pf
@@ -83,6 +85,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested simplified value and corresponding choice.
+
+:::
 
 :::
 
