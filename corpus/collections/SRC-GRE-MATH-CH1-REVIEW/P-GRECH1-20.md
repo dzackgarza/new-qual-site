@@ -38,6 +38,8 @@ find a formula for $\tanh^{-1} x$.
 (E) $\frac{1}{2} \log \frac{1 + x}{1 - x}$
 :::
 
+::: {.solution}
+
 Let $y=\tanh^{-1}x$, so that $x=\tanh y$.
 
 ::: pf
@@ -94,6 +96,8 @@ and division by $2$ gives the claimed formula.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested inverse formula on the full domain of $\tanh^{-1}$.
+
+:::
 
 :::
 
