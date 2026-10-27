@@ -25,6 +25,8 @@ If $k_i$ ($i = 0, 1, 2, 3, 4$) are constants such that $x^4 = k_0 + k_1(x+1) + k
 (E) $4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -81,6 +83,8 @@ Comparing the coefficient of $y^3$ with step [](#s1-2){.pf-ref} gives $k_3=-4$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested coefficient and corresponding choice.
+
+:::
 
 :::
 
