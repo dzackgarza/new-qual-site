@@ -25,6 +25,8 @@ What is the slope of the tangent line to the curve $xy(x + y) = x + y^4$ at the 
 (E) $-2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -87,6 +89,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the tangent slope at the specified point and the corresponding choice.
+
+:::
 
 :::
 
