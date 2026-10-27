@@ -16,6 +16,8 @@ audit:
 Show that $\operatorname{GL}_n(\mathbb C)$ is path-connected.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -79,6 +81,8 @@ identification in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
