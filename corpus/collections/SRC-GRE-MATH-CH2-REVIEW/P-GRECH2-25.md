@@ -29,6 +29,8 @@ Evaluate the following integral:
 (E) $\frac{7}{20}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ This is exactly the value established in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested integral and corresponding choice.
+
+:::
 
 :::
 
