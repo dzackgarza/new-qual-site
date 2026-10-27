@@ -25,6 +25,8 @@ Let $a$ and $b$ be positive numbers. The region in the second quadrant bounded b
 (E) $b^2 = 2a^3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -105,6 +107,8 @@ Thus choice (C) has the required property.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} verifies the stated parameter relation produces a constant volume.
+
+:::
 
 :::
 
