@@ -2174,6 +2174,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Workflow and rendering papercuts
 
+### The Lamport conversion removed the enclosing solution section from 2417 problem cards
+
+- **Object and need:** every problem card whose solution was converted from typed steps, for example `P-WESCA15-4`, `P-HM21B18-PF5-05`, `P-GRECH7-41`, `P-F13T9`, and `P-GCNAR`.
+  A card carries its proof in a `solution` section, and solution status, the unsolved queue, and the site's solution facet all follow from that section kind.
+
+- **Observed evidence:** at `259530c5f3`, 2417 problem cards under `corpus/` contain a top-level `::: pf` block and no `solution` section, and the number of problem cards the parser reports unsolved is the same 2417.
+  Each sampled card's blob before its own conversion commit holds the wrapper and the current blob does not: `git show ca8f3b5c34^:corpus/collections/SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5/P-HM21B18-PF5-05.md` has `::: {.solution}` at line 22, while the current card opens its proof with a bare `::: pf`; `4426670b52^`, `8e93fc03e4^`, and `bd771db361^` show the same loss for `P-WESCA15-4`, `P-JWPNL`, and `P-TRIV-PR22`.
+  The conversion commits are `ca8f3b5c34`, `e3817cd0d4`, `bd771db361`, `8e93fc03e4`, and `4426670b52`, with the agent batches that preceded them; the converters themselves are deleted at `e42f2e39a`.
+
+- **Impact and owner:** each affected card reads as unsolved: it is listed in `queues/C-unsolved-cards.md`, which is issue #2's worklist, although its proof is written, and the site reports the wrong solution status for it.
+  The owner is the fence structure of each card, not a program: the one-time converters are deleted and the loss is authored content, so restoring it is a per-card reading.
+
+- **Uncertainty:** the 2417 count is a measurement at that revision, and the two counts agreeing is consistent with every unsolved problem card being one of these; the repair is still decided card by card.
+  Sampled cards came from five conversion batches and four collections and all lost the same wrapper; the whole population was not read.
+
+- **Repair:** restore `::: {.solution}` around the `pf` block, together with any setup prose that precedes it, one card at a time in the unsolved queue's ID order, committing each card.
+  [TODO.md](TODO.md) owns the node and its acceptance.
+
 ### Shared QC installation lacks its PR workflow and branch protection
 
 - **Object and need:** the shared QC installation declared in `justfile`.

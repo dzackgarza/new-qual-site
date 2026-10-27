@@ -326,6 +326,12 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
 
   **Acceptance:** `git grep -E '^[[:space:]]*<[0-9]+>[0-9]+\.' -- corpus wiki` finds no file, `qualc check` reports no `lamport-proof-invalid`, and the typed-step renderer is deleted.
 
+- **`solution-section-restoration`**. **Open**, in flight since 2026-10-27. **Needs:** none.
+  The Lamport conversion dropped the enclosing `::: {.solution}` fence from 2417 problem cards, so each is reported unsolved although its proof is present; [COMPLAINTS.md](COMPLAINTS.md#the-lamport-conversion-removed-the-enclosing-solution-section-from-2417-problem-cards) holds the measurement and the per-card evidence.
+  Restore the wrapper around the card's `pf` block, together with any setup prose that precedes it, reading the card first; the section kind is authored content, so the repair is one card at a time and is never scripted.
+  Order: the unsolved list `queues/C-unsolved-cards.md` in card-ID order, committing each card. The first unrepaired entry is `P-GRECH3-01`; the repairs already made run from `P-2LX4F` through `P-GRECH2-50` (302 commits whose subject is `Give <id> a solution section`), plus the six cards that sequence passed over (`P-F13T9`, `P-FOU3L`, `P-G5MEU`, `P-GAJ7B`, `P-GCNAR`, `P-GK4F6`).
+  **Acceptance:** no problem card carries a top-level `pf` block outside a solution or proof section, so the unsolved list names no card whose solution is written; every restored card was read before its fence was added.
+
 - **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed), `lamport-conversion`.
   Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics.
   This includes the copy `unsolved-contribution` and `slogans` add.
