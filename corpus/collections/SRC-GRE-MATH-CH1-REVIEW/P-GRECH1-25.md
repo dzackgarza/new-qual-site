@@ -26,6 +26,8 @@ Determine the exact value of the sum $\arctan 1 + \arctan 2 + \arctan 3$.
 (E) $\frac{\pi}{2}-1$
 :::
 
+::: {.solution}
+
 Set $\alpha=\arctan 2$ and $\beta=\arctan 3$.
 
 ::: pf
@@ -81,6 +83,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested exact value and corresponding choice.
+
+:::
 
 :::
 
