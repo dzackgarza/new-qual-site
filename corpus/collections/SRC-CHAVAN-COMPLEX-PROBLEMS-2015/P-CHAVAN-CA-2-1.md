@@ -38,6 +38,8 @@ Deduce the fundamental theorem of algebra by applying this to a monic polynomial
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -189,6 +191,8 @@ This is the fundamental theorem of algebra.
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove the minimum-modulus estimate, step [](#s1-4){.pf-ref} proves
 the requested polynomial inequality, and step [](#s1-5){.pf-ref} deduces the
 fundamental theorem of algebra.
+
+:::
 
 :::
 
