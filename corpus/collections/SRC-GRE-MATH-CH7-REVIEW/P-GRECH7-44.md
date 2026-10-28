@@ -29,6 +29,8 @@ A fair coin is flipped $10$ times. What's the probability of getting between $40
 As printed, ten flips cannot produce forty heads; the book's solution treats one hundred flips.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -129,6 +131,8 @@ Step [](#s1-1){.pf-ref} settles the literal question. Steps [](#s1-2){.pf-ref} t
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} records both the literal result and the corrected multiple-choice result.
+
+:::
 
 :::
 
