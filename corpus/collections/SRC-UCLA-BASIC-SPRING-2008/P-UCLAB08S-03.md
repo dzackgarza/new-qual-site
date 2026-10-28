@@ -25,6 +25,8 @@ f''(x)\sim \frac{f(x+h)-2f(x)+f(x-h)}{h^2},
 where $x,x+h,x-h\in(a,b)$.
 :::
 
+::: {.solution}
+
 Define the centered-difference approximation
 \[
 D_hf(x)
@@ -309,6 +311,8 @@ If the error is defined with the opposite sign,
 f''(x)-D_hf(x),
 \]
 the formulas differ only by an overall minus sign.
+
+:::
 
 :::
 
