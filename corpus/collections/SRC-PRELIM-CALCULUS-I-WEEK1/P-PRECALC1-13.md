@@ -20,6 +20,8 @@ audit:
 Find $c \in \mathbb{R}$ such that $g : \mathbb{R} \to \mathbb{R}$ satisfies $3x^5 + 96 = \int_c^x g(t)\,dt$.
 :::
 
+::: {.solution}
+
 Assume
 \[
 3x^5+96
@@ -180,6 +182,8 @@ one indeed has
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required lower limit, and step [](#s1-6){.pf-ref} verifies it.
+
+:::
 
 :::
 
