@@ -19,6 +19,8 @@ Let $f ( x )$ be a bounded real-valued function on the closed interval $[ 0 , 1 
 (b) Use your answer to (a) to prove that $\int _ { 0 } ^ { 1 } f ( x ) dx$ exists if $f$ is non-decreasing (i.e. $f ( x ) \leq f ( y )$ whenever $x \leq y )$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -239,6 +241,8 @@ Apply the criterion from step [](#s1-3){.pf-ref} using step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} answer part (a), and steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} prove part (b).
+
+:::
 
 :::
 
