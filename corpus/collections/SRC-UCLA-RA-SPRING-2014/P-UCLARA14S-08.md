@@ -20,6 +20,8 @@ audit:
 Construct a nonconstant entire function whose zeros are all simple and are exactly the positive natural numbers.
 :::
 
+::: {.solution}
+
 Define
 \[
 E_1(w)
@@ -226,6 +228,8 @@ Entirety is step [](#s1-3){.pf-ref}, absence of all other zeros is step [](#s1-4
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} provides the required construction and verifies all of its properties.
+
+:::
 
 :::
 
