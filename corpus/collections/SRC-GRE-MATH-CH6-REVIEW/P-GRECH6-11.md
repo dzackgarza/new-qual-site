@@ -34,6 +34,8 @@ Note: $\tr(A)$ denotes the trace of $A$, which is the sum of the entries on the 
 (E) I and III only
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show respectively that $T$ i
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
