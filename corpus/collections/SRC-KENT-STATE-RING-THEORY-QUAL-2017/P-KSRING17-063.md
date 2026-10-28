@@ -24,6 +24,8 @@ Let R be a commutative ring with 1. An ideal I of R is called a primary ideal if
 (Recall that $\operatorname { R a d } ( I ) = \{ x \in R \mid x ^ { n } \in I$ for some n}.)
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -423,6 +425,8 @@ Step [](#s1-8){.pf-ref} gives properness, and step [](#s1-9){.pf-ref} gives the 
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-10){.pf-ref} proves part (b).
+
+:::
 
 :::
 
