@@ -20,6 +20,8 @@ For what values of α the following integrals are convergent?
 (a) $\int _ { 0 } ^ { 1 } { \frac { d x } { x ^ { \alpha } } } .$ (b) $\int _ { 1 } ^ { \infty } { \frac { d x } { x ^ { \alpha } } } .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -255,6 +257,8 @@ Combine steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref} answer parts (a) and (b), respectively.
+
+:::
 
 :::
 
