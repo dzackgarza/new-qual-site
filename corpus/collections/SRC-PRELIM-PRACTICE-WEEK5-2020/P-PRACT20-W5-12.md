@@ -20,6 +20,8 @@ audit:
 Let $R$ be a ring with unity. A set $I \subset R$ is said to be a right ideal of $R$ if $(I, +)$ is a subgroup of $(R, +)$ and $xr \in I$ whenever $x \in I$ and $r \in R$. Suppose $R$ has exactly two distinct right ideals. Show that every element in $R$ has a multiplicative inverse (except for the additive identity).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -160,6 +162,8 @@ multiplicative inverse.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
