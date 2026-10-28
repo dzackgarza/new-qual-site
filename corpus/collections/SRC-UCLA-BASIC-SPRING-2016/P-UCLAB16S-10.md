@@ -25,6 +25,8 @@ Call $S$ dense if every matrix in $\operatorname{Mat}(3,\mathbb C)$ is a limit o
 2. Prove that the set of matrices with one Jordan block is not dense in $\operatorname{Mat}(3,\mathbb C)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -261,6 +263,8 @@ This proves part 2.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part 1, and step [](#s1-9){.pf-ref} proves part 2.
+
+:::
 
 :::
 
