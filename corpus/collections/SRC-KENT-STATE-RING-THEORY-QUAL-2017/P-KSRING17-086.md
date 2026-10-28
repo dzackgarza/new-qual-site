@@ -20,6 +20,8 @@ Let D be an integral domain and F a subring of D that is a field.
 Show that if each element of D is algebraic over F , then D is a field.
 :::
 
+::: {.solution}
+
 Let
 $$
 0\ne a\in D.
@@ -318,6 +320,8 @@ This is exactly the definition of a field.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
