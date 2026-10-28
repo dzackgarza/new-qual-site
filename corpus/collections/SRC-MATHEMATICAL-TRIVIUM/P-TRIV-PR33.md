@@ -48,6 +48,8 @@ x = 0 , 1 2 3 4 5 6 7 8 9 1 0 1 1 1 2 1 3 . . .\tag{58}
 $$
 :::
 
+::: {.solution}
+
 Choose $x$ uniformly from $[0,1)$. The ambiguity of terminating decimal expansions occurs only for a countable set and hence has probability zero.
 
 ::: pf
@@ -162,6 +164,8 @@ This is Champernowne's number. To see the required single-digit conclusion direc
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} answer part (b), and step [](#s1-6){.pf-ref} answers part (c).
+
+:::
 
 :::
 
