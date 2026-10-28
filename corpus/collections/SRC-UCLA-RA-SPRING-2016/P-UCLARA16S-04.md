@@ -20,6 +20,8 @@ audit:
 Let $V_1$ be a finite-dimensional subspace of the Banach space $V$. Show that there exists a continuous projection $P:V\to V_1$, i.e. a continuous linear map $P:V\to V$ such that $P^2=P$ and the range of $P$ is equal to $V_1$.
 :::
 
+::: {.solution}
+
 Choose a basis
 \[
 e_1,\dots,e_n
@@ -172,6 +174,8 @@ Conversely, step [](#s1-4){.pf-ref} says that every $v\in V_1$ satisfies $P(v)=v
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} show that $P$ is a continuous projection of $V$ onto $V_1$.
+
+:::
 
 :::
 
