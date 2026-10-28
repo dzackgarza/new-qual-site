@@ -27,6 +27,8 @@ Prove that
 exists.
 :::
 
+::: {.solution}
+
 Let
 \[
 s_N=\sum_{j=1}^N a_j.
@@ -118,6 +120,8 @@ This is exactly the convergence of the partial-sum sequence established in step 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
