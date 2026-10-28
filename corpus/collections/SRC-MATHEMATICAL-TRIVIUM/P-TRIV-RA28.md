@@ -27,6 +27,8 @@ as using $|\log x|^\beta=(-\log x)^\beta$ in part (a). This interpretation
 also makes the endpoint singularity at $x=1$ explicit.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -258,6 +260,8 @@ steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 
 Steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref} give the complete convergence regions for parts (a) and
 (b), respectively.
+
+:::
 
 :::
 
