@@ -19,6 +19,8 @@ audit:
 Let $\alpha _ { 1 } , \cdots , \alpha _ { n }$ be complex numbers, and $\begin{array} { r } { V = \{ \sum _ { i = 1 } ^ { n } a _ { i } \alpha _ { i } | a _ { i } \in \mathbb { Q } \} } \end{array}$ be the vector subspace of C spanned by them over the field of rational numbers, $\mathbb { Q }$ . Let $\beta$ be a complex number such that $\beta V \subset V$ where $\beta V = \{ \beta v | v \in V \}$ Show that $\beta$ is the root of a degree n polynomial with rational coefficients.
 :::
 
+::: {.solution}
+
 As printed, the statement has the degenerate exception
 \[
 V=\{0\}.
@@ -235,6 +237,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the intended statement
 V\ne\{0\},
 \]
 while the opening observation records the counterexample in the omitted zero-span case.
+
+:::
 
 :::
 
