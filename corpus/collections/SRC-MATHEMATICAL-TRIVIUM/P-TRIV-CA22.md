@@ -25,6 +25,8 @@ Compute $\displaystyle\int_0^1 \frac{1}{\left(x^2 - x^3\right)^{1/3}}$ (**hint:*
 Figure 4 of the source (integration contour for exercise 22) shows a dogbone contour around the segment $[0, 1]$: a segment just above $[0, 1]$ traversed from $0$ to $1$, a small circle around $1$, a segment just below $[0, 1]$ traversed from $1$ to $0$, and a small circle around $0$; this dogbone is enclosed by a large circle traversed counterclockwise.
 :::
 
+::: {.solution}
+
 Write
 \[
 I=\int_0^1x^{-2/3}(1-x)^{-1/3}\,dx.
@@ -136,6 +138,8 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested integral.
+
+:::
 
 :::
 
