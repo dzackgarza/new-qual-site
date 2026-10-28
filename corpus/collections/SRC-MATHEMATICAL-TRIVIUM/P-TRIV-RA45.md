@@ -46,6 +46,8 @@ This convention is consistent with the normalization of the adjacent inverse
 transform problem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -255,6 +257,8 @@ This is step [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
