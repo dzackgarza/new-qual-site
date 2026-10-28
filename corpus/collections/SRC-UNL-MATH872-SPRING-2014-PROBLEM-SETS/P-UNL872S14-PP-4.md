@@ -19,6 +19,8 @@ audit:
 Let X be the topological space built in problem PP.2. Describe a Δ-complex structure for X, and compute the homology groups $\mathrm { H ^ { s i m p l } _ { n } ( X ) }$ for all n. (Hint: Use four prisms.)
 :::
 
+::: {.solution}
+
 Use the same quarter-turn face identifications and the same oriented CW cells
 \[
 A,B;\qquad p,q,r,s;\qquad F_x,F_y,F_z;\qquad C
@@ -778,6 +780,8 @@ H_1(X;\mathbb Z)\cong\pi_1(X)^{\mathrm{ab}}.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} describe the requested \(\Delta\)-complex, and step [](#s1-28){.pf-ref}
 gives all simplicial homology groups.
+
+:::
 
 :::
 
