@@ -19,6 +19,8 @@ audit:
 Describe the cell structure on lens spaces.
 :::
 
+::: {.solution}
+
 For the standard $(2n-1)$-dimensional lens space
 \[
 L^{2n-1}(p;q_1,\ldots,q_n)
@@ -149,6 +151,8 @@ Set $n=2$ in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}. The parameter 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} describe the cell structure and attaching differentials, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} record their standard consequences and the classical $3$-dimensional case.
+
+:::
 
 :::
 
