@@ -27,6 +27,8 @@ Let $d\nu$ be a finite complex Borel measure on $[0,1]$ absolutely continuous wi
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -143,6 +145,8 @@ The same proof applies on $[0,1)$ after identifying it Borel-isomorphically with
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} refutes the literal source statement, and step [](#s1-3){.pf-ref} proves the corrected periodic version that the retained source solution attempts to use.
+
+:::
 
 :::
 
