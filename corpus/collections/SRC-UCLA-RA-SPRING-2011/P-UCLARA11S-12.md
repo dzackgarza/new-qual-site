@@ -21,6 +21,8 @@ Show that for every $0<t<\infty$, the number of solutions $z\in\Omega$ to
 is finite and independent of $t$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -312,6 +314,8 @@ This is exactly step [](#s1-7){.pf-ref}, now stated as the requested count.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves both finiteness and independence of $t$.
+
+:::
 
 :::
 
