@@ -22,6 +22,8 @@ B_iL_iB_i^{-1}\longrightarrow A
 entrywise as $i\to\infty$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -185,6 +187,8 @@ entrywise. Apply step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} construct the required matrices $B_i$ and diagonal matrices $L_i$ with distinct eigenvalues and prove the required convergence.
+
+:::
 
 :::
 
