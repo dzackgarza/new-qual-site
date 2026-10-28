@@ -28,6 +28,8 @@ Here $a,b\in\mathbb R$ satisfy $3a+2b+n<0$.
 Show that $fg\in L^1(\mathbb R^n)$.
 :::
 
+::: {.solution}
+
 Let
 \[
 E_0\coloneqq\{x:|x|\le1\},
@@ -192,6 +194,8 @@ The first term is finite by step [](#s1-1){.pf-ref} and the series is finite by 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
