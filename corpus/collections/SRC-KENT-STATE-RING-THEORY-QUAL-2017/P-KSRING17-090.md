@@ -35,6 +35,8 @@ Let $D$ be a principal ideal domain and let $a, b \in D$.
   ii. if $a \mid e$ and $b \mid e$ then $m \mid e$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -297,6 +299,8 @@ Step [](#s1-6){.pf-ref} proves property (i), and step [](#s1-7){.pf-ref} proves 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
+
+:::
 
 :::
 
