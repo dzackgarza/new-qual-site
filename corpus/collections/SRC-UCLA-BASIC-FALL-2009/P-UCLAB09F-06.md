@@ -29,6 +29,8 @@ Define what it means for $f$ to be uniformly continuous on $S$, and prove that $
 You may use any applicable general theorem, provided you state it and justify its hypotheses.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -170,6 +172,8 @@ The Heine--Cantor theorem states that every continuous real-valued function on a
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the definition, and step [](#s1-6){.pf-ref} proves that $f$ satisfies it.
+
+:::
 
 :::
 
