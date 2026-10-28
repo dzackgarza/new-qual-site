@@ -31,6 +31,8 @@ Here $\hat{u}$ is the Fourier transform of $u$. Show that $u \in H^{1/2}(\mathbb
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 [u]_{1/2}^2
@@ -562,6 +564,8 @@ Both conditions are equivalent to finiteness of
 ::: pf-qed
 
 Step [](#s1-18){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
