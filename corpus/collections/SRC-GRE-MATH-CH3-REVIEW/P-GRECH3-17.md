@@ -26,6 +26,8 @@ The equation $x^3z^5-y^2z^3-3xy=1$ defines an implicit function $z=f(x,y)$. What
 (E) $8$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -115,6 +117,8 @@ The denominator is $-8\ne0$, so the implicit derivative is well-defined there.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested partial derivative and corresponding choice.
+
+:::
 
 :::
 
