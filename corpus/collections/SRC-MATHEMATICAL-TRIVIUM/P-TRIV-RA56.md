@@ -19,6 +19,8 @@ audit:
 Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } | 2 n + 1 | e ^ { - a | 2 n + 1 | }$ for $a > 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -218,6 +220,8 @@ $4e^{-2a}$ cancels between numerator and denominator.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required closed form.
+
+:::
 
 :::
 
