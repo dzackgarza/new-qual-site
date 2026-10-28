@@ -15,6 +15,8 @@ review: draft
 Perform the integral $\int _ { - \infty } ^ { x } { \frac { d t } { \cosh ( t ) } }$ . (Recall $\begin{array} { r } { \cosh ( t ) = \frac { e ^ { t } + e ^ { - t } } { 2 } ) } \end{array}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -195,6 +197,8 @@ step [](#s1-7){.pf-ref} gives
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested antiderivative-with-limit.
+
+:::
 
 :::
 
