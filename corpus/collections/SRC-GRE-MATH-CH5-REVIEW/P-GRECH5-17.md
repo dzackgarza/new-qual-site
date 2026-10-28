@@ -26,6 +26,8 @@ Choose a nonzero vector $\mathbf{v} = (a, b, c)^T$ in $\RR^3$ and define a linea
 (E) $\begin{pmatrix} 0 & a & b \\ a & 1 & c \\ b & c & 0 \end{pmatrix}$
 :::
 
+::: {.solution}
+
 Write $\mathbf x=(x,y,z)^T$.
 
 ::: pf
@@ -97,6 +99,8 @@ which equals $\mathbf v\times\mathbf x$ by step [](#s1-1){.pf-ref} for every $\m
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the required matrix.
+
+:::
 
 :::
 
