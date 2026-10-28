@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Find the function $g$ that minimizes
+Find the function $g$ that minimizes
 \[
 \int_0^1 |f'(x)|^2\,dx
 \]
