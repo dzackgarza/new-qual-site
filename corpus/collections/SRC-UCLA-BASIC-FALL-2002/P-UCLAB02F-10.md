@@ -25,6 +25,8 @@ Let $V=\mathbb C^n$, regarded as an inner product space with its standard inner 
 Prove that there exists an orthonormal basis of $V$ consisting of eigenvectors of $A$; that is, prove this form of the spectral theorem for normal operators.
 :::
 
+::: {.solution}
+
 The proof is by induction on $n$.
 
 ::: pf
@@ -219,6 +221,8 @@ is an orthonormal basis of $\mathbb C^n$ consisting entirely of eigenvectors of 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is precisely the required spectral theorem for the normal matrix $A$.
+
+:::
 
 :::
 
