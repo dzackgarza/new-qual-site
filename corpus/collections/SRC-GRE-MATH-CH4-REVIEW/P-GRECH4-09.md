@@ -30,6 +30,8 @@ What is the general solution of the differential equation
 (E) $x = 2t + c_1 + c_2e^{-t/2} + c_3e^{-3t}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ For a linear nonhomogeneous differential equation, adding any particular solutio
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested general solution and corresponding choice.
+
+:::
 
 :::
 
