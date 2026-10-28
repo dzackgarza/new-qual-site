@@ -19,6 +19,8 @@ audit:
 Show that $\mathbb { R P } ^ { 2 n } , \mathbb { C P } ^ { 2 n }$ , HP2n cannot be boundaries.
 :::
 
+::: {.solution}
+
 Assume $n\geq1$. By the preceding Euler-characteristic criterion, the boundary of a compact manifold must have even Euler characteristic.
 
 ::: pf
@@ -164,6 +166,8 @@ This is step [](#s1-7){.pf-ref} applied to the three projective spaces.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
