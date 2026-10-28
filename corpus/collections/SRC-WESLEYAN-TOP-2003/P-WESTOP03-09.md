@@ -20,6 +20,8 @@ Let $S$ be the Sorgenfrey line, the real numbers with basis
 2. Explain why $S\times S$ is separable, not normal, and not Lindelöf.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -232,6 +234,8 @@ The assertions for $S$ are steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref}, 
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} collects all requested properties.
+
+:::
 
 :::
 
