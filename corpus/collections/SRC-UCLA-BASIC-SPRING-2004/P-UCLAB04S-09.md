@@ -28,6 +28,8 @@ Show that the following are equivalent:
 (d) $TT^*=\operatorname{Id}_V$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -309,6 +311,8 @@ Therefore all four conditions are equivalent.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
