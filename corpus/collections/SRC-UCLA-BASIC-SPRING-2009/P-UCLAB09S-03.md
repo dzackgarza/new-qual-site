@@ -29,6 +29,8 @@ Is it unique?
 Explain.
 :::
 
+::: {.solution}
+
 Write a general quadratic polynomial as
 \[
 P(x)=a+bx+cx^2.
@@ -285,6 +287,8 @@ Necessity is step [](#s1-4){.pf-ref}, sufficiency is step [](#s1-5){.pf-ref}, an
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} answers parts (a) and (b).
+
+:::
 
 :::
 
