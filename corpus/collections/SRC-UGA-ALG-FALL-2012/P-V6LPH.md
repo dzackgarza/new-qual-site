@@ -25,6 +25,8 @@ b. Give all possible presentations and relations for $G$.
 c. Determine how many groups of order 30 there are up to isomorphism.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -75,6 +77,8 @@ Step [](#s1-2){.pf-ref} gives at most four. In $G_a$, the elements outside the o
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} establish parts (a)--(c), respectively.
+
+:::
 
 :::
 
