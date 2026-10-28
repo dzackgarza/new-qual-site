@@ -25,6 +25,8 @@ $$
 Find a functional $J [ f ]$ whose extrema in a class of $C ^ { 4 } ( \bar { D } )$ functions $f = f ( x , y )$ with fixed boundary conditions, $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , satisfy this equation.
 :::
 
+::: {.solution}
+
 Define
 $$
 \boxed{
@@ -230,6 +232,8 @@ problem.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} verifies the requested variational principle.
+
+:::
 
 :::
 
