@@ -27,6 +27,8 @@ for all $z,w\in D$ and some constant $C\in\mathbb R$, then there is a constant $
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -139,6 +141,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required derivative estimate.
+
+:::
 
 :::
 
