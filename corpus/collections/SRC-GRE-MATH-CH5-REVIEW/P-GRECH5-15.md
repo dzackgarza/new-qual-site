@@ -26,6 +26,8 @@ Let $T\colon \RR^5 \to \RR^3$ be a linear transformation whose kernel is a three
 (E) Cannot be determined from the information given
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -69,6 +71,8 @@ The displayed set is $\operatorname{im}T$, which is a linear subspace of $\RR^3$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} identifies the image.
+
+:::
 
 :::
 
