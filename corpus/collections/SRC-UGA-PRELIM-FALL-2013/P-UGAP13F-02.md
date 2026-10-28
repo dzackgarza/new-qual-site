@@ -30,6 +30,8 @@ Give quick proofs, citing relevant facts about trace, determinant, and eigenvalu
 (d) $B$ and $C$ have the same eigenvalues.
 :::
 
+::: {.solution}
+
 Since
 \[
 C=ABA^{-1},
@@ -293,6 +295,8 @@ Collect steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested answer.
+
+:::
 
 :::
 
