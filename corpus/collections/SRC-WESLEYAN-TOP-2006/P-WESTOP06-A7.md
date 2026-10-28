@@ -14,6 +14,8 @@ audit:
 Prove that if $X$ is locally compact and dense in a Hausdorff space $Y$, then $X$ is open in $Y$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -90,6 +92,8 @@ By step [](#s1-3){.pf-ref}, every \(x\in X\) lies in an open subset \(V\) of \(Y
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
