@@ -27,6 +27,8 @@ exists and compute its value.
 Hint: show that $x_{n+1}^{-2}-x_n^{-2}$ converges to a constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ Step [](#s1-3){.pf-ref} gives $y_n/n\to1/3$, hence continuity of the square-root
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} computes the limit and therefore proves its existence.
+
+:::
 
 :::
 
