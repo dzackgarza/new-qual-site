@@ -25,6 +25,8 @@ Prove that for measurable $f,g:X\to\mathbb R$,
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -168,6 +170,8 @@ Apply step [](#s1-1){.pf-ref} inside the iterated integral from step [](#s1-3){.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required identity.
+
+:::
 
 :::
 
