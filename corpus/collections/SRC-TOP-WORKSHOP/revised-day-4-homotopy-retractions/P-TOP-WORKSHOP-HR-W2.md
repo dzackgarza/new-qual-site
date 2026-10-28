@@ -24,6 +24,8 @@ p_*:\pi_1(Y)\to\pi_1(B)
 is an isomorphism.
 :::
 
+::: {.solution}
+
 Fix a basepoint $b_0\in B$ and let
 \[
 j:B\hookrightarrow Y
@@ -202,6 +204,8 @@ Hence $j_*$ is a two-sided inverse of $p_*$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required isomorphism.
+
+:::
 
 :::
 
