@@ -24,6 +24,8 @@ T = { \left( \begin{array} { l l l } { 1 } & { a } & { 0 } \\ { 0 } & { 1 } & { 
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -265,6 +267,8 @@ These cases exhaust all possibilities.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
