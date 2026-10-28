@@ -25,6 +25,8 @@ Develop a series solution for Laguerre's ODE (given in problem 27).
 Problem 27 of the source gives Laguerre's ODE as $x y'' + (1 - x) y' + a y = 0$.
 :::
 
+::: {.solution}
+
 Seek a power series
 \[
 y(x)=\sum_{n=0}^{\infty}c_nx^n.
@@ -131,6 +133,8 @@ which is the displayed polynomial after choosing $c_0=1$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} develop the requested series solution, and step [](#s1-4){.pf-ref} records its polynomial specialization.
+
+:::
 
 :::
 
