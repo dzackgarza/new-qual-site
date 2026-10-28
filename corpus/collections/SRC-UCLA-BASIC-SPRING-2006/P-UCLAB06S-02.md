@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F ( x ) = \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ be a power series with $a _ { n } \in \mathbf { R }$ . Show that there exists a unique number $\rho \geq 0$ such that $F ( x )$ converges if $| x | < \rho$ and $F ( x )$ diverges if $| x | > \rho$
+Let $F(x) = \sum_{n=0}^\infty a_n x^n$ be a power series with $a_n \in \RR$. Show that there exists a unique number $\rho \geq 0$ such that $F(x)$ converges if $\abs{x} < \rho$ and $F(x)$ diverges if $\abs{x} > \rho$.
 :::
 
 ::: {.solution}
