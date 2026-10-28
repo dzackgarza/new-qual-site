@@ -25,6 +25,8 @@ Let $\hat{\mathbf{i}} = (1, 0, 0)$, $\hat{\mathbf{j}} = (0, 1, 0)$, and $\hat{\m
 (E) $\mathbf{a} = \hat{\mathbf{i}} + 2\hat{\mathbf{j}} - 2\hat{\mathbf{k}}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -111,6 +113,8 @@ Thus only choice (C) satisfies step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required vector.
+
+:::
 
 :::
 
