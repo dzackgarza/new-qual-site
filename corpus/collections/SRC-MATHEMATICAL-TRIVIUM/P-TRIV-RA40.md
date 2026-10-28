@@ -27,6 +27,8 @@ audit:
 (d) Assuming the watermelon rind has a thickness 0.1 of its radius, find what fraction of the total volume of the 20-dimensional watermelon would be occupied by its rind.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -477,6 +479,8 @@ This is step [](#s1-19){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref}, [](#s1-11){.pf-ref}, and [](#s1-17){.pf-ref}, and [](#s1-20){.pf-ref} establish parts (a)--(d).
+
+:::
 
 :::
 
