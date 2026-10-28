@@ -18,6 +18,8 @@ Let $H$ be a Hermitian (self-adjoint) operator on a finite-dimensional inner-pro
 Show that there exists a unitary operator $U$ such that $UHU^*$ is diagonal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -137,6 +139,8 @@ Thus the matrix of $UHU^*$ in the standard basis is diagonal with those diagonal
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required unitary diagonalization.
+
+:::
 
 :::
 
