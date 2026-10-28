@@ -26,6 +26,8 @@ A=\begin{pmatrix}
 Find an orthogonal matrix $Q$ such that $Q^{-1}AQ$ is diagonal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -399,6 +401,8 @@ Q^{-1}=Q^T.
 
 Step [](#s1-7){.pf-ref} gives an explicit orthogonal matrix and step [](#s1-9){.pf-ref} gives the
 required diagonalization.
+
+:::
 
 :::
 
