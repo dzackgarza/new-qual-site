@@ -26,6 +26,8 @@ You need not multiply out matrices, but you must evaluate inverses.
 (c) Find all eigenvalues of $A$ when regarded as an element of $M_3(\mathbb C)$.
 :::
 
+::: {.solution}
+
 Let
 \[
 u_3
@@ -243,6 +245,8 @@ Together with the fixed-axis eigenvalue $1$, these are all three complex eigenva
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers part (a), step [](#s1-5){.pf-ref} answers part (b), and step [](#s1-6){.pf-ref} answers part (c).
+
+:::
 
 :::
 
