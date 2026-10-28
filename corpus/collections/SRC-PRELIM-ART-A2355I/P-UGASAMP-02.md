@@ -22,6 +22,8 @@ f(x)=x^2
 is continuous at $a=2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -120,6 +122,8 @@ Step [](#s1-3){.pf-ref} verifies the definition in step [](#s1-1){.pf-ref} with 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-4){.pf-ref} proves the required continuity.
+
+:::
 
 :::
 
