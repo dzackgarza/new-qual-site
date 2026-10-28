@@ -20,6 +20,8 @@ Let D be a principal ideal domain.
 Prove that every nonzero prime ideal of D is a maximal ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 P
@@ -248,6 +250,8 @@ Since $P$ is prime, it is proper. Hence it is maximal.
 ::: pf-qed
 
 Since $P$ was an arbitrary nonzero prime ideal, step [](#s1-5){.pf-ref} proves the theorem.
+
+:::
 
 :::
 
