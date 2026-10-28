@@ -24,6 +24,8 @@ T^{-1}=f(T).
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \chi_T(t)=t^n+c_{n-1}t^{n-1}+\cdots+c_1t+c_0
@@ -137,6 +139,8 @@ This is exactly $f(T)$ for the polynomial defined above. Since $c_0\ne0$ by step
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required polynomial expression for the inverse.
+
+:::
 
 :::
 
