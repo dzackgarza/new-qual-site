@@ -23,6 +23,8 @@ audit:
 Find $f'(x)$, if $f(x) = \log\frac{a}{x}$, $\cos\arcsin x$, $\frac{x^2+1}{x^3+1}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -133,6 +135,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three requested derivatives.
+
+:::
 
 :::
 
