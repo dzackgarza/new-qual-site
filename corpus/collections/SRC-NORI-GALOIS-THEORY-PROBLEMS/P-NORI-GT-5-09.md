@@ -27,6 +27,8 @@ Let $a \in K^\times$, and let $L$ be the field obtained from $K$ by adjoining $p
 If (i) $\operatorname{Gal}(L/F)$ is Abelian, and (ii) $F$ contains a primitive $p$-th root of unity, show that $a^{-1}\sigma(a) \in (K^\times)^p$ for every $\sigma \in \operatorname{Gal}(K/F)$.
 :::
 
+::: {.solution}
+
 Choose a primitive $p$-th root of unity $\zeta\in F$ and choose $b\in L$ with $b^p=a$.
 
 ::: pf
@@ -141,6 +143,8 @@ By step [](#s1-3){.pf-ref}, $c\in K^\times$, so this quotient is a $p$-th power 
 ::: pf-qed
 
 The element $\sigma\in G$ was arbitrary, so step [](#s1-4){.pf-ref} proves the assertion for every $\sigma\in\Gal(K/F)$.
+
+:::
 
 :::
 
