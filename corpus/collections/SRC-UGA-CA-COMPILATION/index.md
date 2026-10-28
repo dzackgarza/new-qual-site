@@ -196,7 +196,7 @@ source:
     - id: P-TIE-S15-27
       comment: Question 27
     - P-KNIPC
-    - id: P-TIE-S15-29
+    - id: P-TIE-S15-11
       comment: Question 29
     - id: P-TIE-S15-24
       comment: Question 30
@@ -205,7 +205,7 @@ source:
     - id: P-TIE-S15-32
       comment: Question 32
     - P-KNIPC
-    - id: P-TIE-S15-34
+    - id: P-TIE-S15-11
       comment: Question 34
   - name: Fall 2016
     problems:
