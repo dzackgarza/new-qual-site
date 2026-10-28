@@ -23,6 +23,8 @@ A = { \left[ \begin{array} { l l l l l l } { 0 } & { 0 } & { 0 } & { \dots } & {
 $$
 :::
 
+::: {.solution}
+
 For
 $$
 v=
@@ -177,6 +179,8 @@ $v_{\lambda_k}$.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give all eigenvalues and eigenvectors.
+
+:::
 
 :::
 
