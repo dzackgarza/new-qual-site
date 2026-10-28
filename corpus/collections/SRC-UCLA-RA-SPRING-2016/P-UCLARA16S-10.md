@@ -24,6 +24,8 @@ Does there exist a function $f(z)$ holomorphic in the disk $|z|<1$ such that
 Either find one or prove that none exist.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -158,6 +160,8 @@ The assumption of existence leads to the contradiction in step [](#s1-4){.pf-ref
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers the problem.
+
+:::
 
 :::
 
