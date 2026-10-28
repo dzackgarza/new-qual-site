@@ -30,6 +30,8 @@ f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}.
 \]
 :::
 
+::: {.solution}
+
 For $n\geq0$, define
 $$
 \varphi_n
@@ -239,6 +241,8 @@ All terms are nonnegative, so this rearrangement of the countable family of summ
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
+
+:::
 
 :::
 
