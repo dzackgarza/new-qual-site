@@ -25,6 +25,8 @@ Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a 
 (c) Show that $\sqrt { 3 }$ is not an element of D.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -442,6 +444,8 @@ so either $a=0$ or $b=0$. Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} r
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-11){.pf-ref} proves part (c).
+
+:::
 
 :::
 
