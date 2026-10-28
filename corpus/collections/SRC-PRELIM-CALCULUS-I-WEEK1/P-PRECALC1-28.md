@@ -20,6 +20,8 @@ audit:
 Calculate $\displaystyle\lim_{n \to \infty} \frac{3}{n} \sum_{i=1}^{n} \left[ \left(\frac{3i}{n}\right)^2 - \left(\frac{3i}{n}\right) \right]$.
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)=x^2-x
@@ -226,6 +228,8 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
