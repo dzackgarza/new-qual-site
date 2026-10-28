@@ -23,6 +23,8 @@ z^4-6z+3=0
 have absolute value strictly between $1$ and $2$?
 :::
 
+::: {.solution}
+
 Let
 \[
 P(z)=z^4-6z+3.
@@ -203,6 +205,8 @@ zeros, counted with multiplicity.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
