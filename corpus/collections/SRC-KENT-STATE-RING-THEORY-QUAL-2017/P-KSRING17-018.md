@@ -24,6 +24,8 @@ Show the following.
 (b) The homomorphism in part (a) is surjective if and only if $A + B = R$
 :::
 
+::: {.solution}
+
 Define
 $$
 \varphi:R\to R/A\times R/B
@@ -294,6 +296,8 @@ Step [](#s1-3){.pf-ref} proves the forward implication, and step [](#s1-5){.pf-r
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
