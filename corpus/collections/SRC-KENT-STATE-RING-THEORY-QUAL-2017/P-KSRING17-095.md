@@ -29,6 +29,8 @@ for all nonzero $a,b\in D$.
 The proof below uses this monotonicity axiom.
 :::
 
+::: {.solution}
+
 Assume throughout that
 $$
 \varphi(a)\le\varphi(ab)
@@ -862,6 +864,8 @@ for the field $F$ from step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-16){.pf-ref} is the required classification under the intended Euclidean-function convention.
+
+:::
 
 :::
 
