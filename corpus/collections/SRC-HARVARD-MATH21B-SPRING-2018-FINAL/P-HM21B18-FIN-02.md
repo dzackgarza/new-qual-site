@@ -37,6 +37,8 @@ curve; graph C is an increasing straight line; graph D is an increasing,
 upward-convex parabolic arc.
 :::
 
+::: {.solution}
+
 Let $\mathbf 1=(1,1,1,1)^T$.
 
 ::: pf
@@ -208,6 +210,8 @@ matches in part (c) by steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} records all requested selections and matches.
+
+:::
 
 :::
 
