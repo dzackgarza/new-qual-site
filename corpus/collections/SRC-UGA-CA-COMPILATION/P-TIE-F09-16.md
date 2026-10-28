@@ -20,6 +20,8 @@ audit:
 Let $f ( z )$ be analytic in an open set Ω except possibly at a point $z _ { \mathrm { 0 } }$ inside Ω. Show that if $f ( z )$ is bounded in near $z _ { \mathrm { 0 } }$ , then $\int _ { \Delta } f ( z ) d z = 0$ for all triangles $\Delta$ in Ω.
 :::
 
+::: {.solution}
+
 Let $z_0$ be the possible exceptional point.
 
 ::: pf
@@ -158,6 +160,8 @@ This is the triangle integral denoted $\int_\Delta f(z)\,dz$ in the source.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required assertion.
+
+:::
 
 :::
 
