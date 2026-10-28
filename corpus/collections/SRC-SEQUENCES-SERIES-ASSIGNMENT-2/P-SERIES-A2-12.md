@@ -25,6 +25,8 @@ a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+\cdots+ab^{n-2}+b^{n-1})
 may be useful.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Fix
@@ -549,6 +551,8 @@ Step [](#s1-19){.pf-ref} proves continuity at the arbitrary point \(a>0\).
 
 Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} prove part (a) with explicit \(\delta\), steps
 [](#s1-9){.pf-ref} through [](#s1-13){.pf-ref} prove part (b), and steps [](#s1-14){.pf-ref} through [](#s1-20){.pf-ref} prove part (c).
+
+:::
 
 :::
 
