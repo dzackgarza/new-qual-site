@@ -19,6 +19,8 @@ audit:
 Show that if p is a prime such that $p \equiv 1 ( { \bmod { 4 } } )$ , then $\mathbb { Z } [ { \sqrt { p } } ]$ is not a unique factorization domain.
 :::
 
+::: {.solution}
+
 Set
 $$
 R
@@ -351,6 +353,8 @@ Therefore $R$ cannot be a UFD.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
