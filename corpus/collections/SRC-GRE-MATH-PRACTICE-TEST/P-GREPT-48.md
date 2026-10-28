@@ -25,6 +25,8 @@ If $m$ is an integer greater than $1$, let $\ZZ_m$ denote the ring of integers m
 (E) None of the above
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ that $6$ has the required property.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required smallest value.
+
+:::
 
 :::
 
