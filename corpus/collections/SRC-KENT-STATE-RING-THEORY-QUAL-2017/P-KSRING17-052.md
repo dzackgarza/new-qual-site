@@ -23,6 +23,8 @@ Let R be a non-zero commutative ring with 1.
 (b) Show that the set of nilpotent elements of R is the intersection of all prime ideals.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -552,6 +554,8 @@ Step [](#s1-8){.pf-ref} gives one inclusion and step [](#s1-14){.pf-ref} gives t
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-15){.pf-ref} proves part (b).
+
+:::
 
 :::
 
