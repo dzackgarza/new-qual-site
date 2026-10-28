@@ -24,6 +24,8 @@ Prove that
 is measurable.
 :::
 
+::: {.solution}
+
 Let
 $$
 E=\{x\in\mathbb R^d:(f_n(x))_{n\ge0}\text{ converges in }\mathbb R\}.
@@ -122,6 +124,8 @@ By step [](#s1-3){.pf-ref}, $E=C$, and step [](#s1-2){.pf-ref} shows that $C$ is
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required measurability.
+
+:::
 
 :::
 
