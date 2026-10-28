@@ -25,6 +25,8 @@ Show that
 (b) $f'(1)\ge1$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -155,6 +157,8 @@ By step [](#s1-3){.pf-ref}, $f'(1)$ is real. Step [](#s1-4){.pf-ref} then gives 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
