@@ -25,6 +25,8 @@ Compute:
 (c) $\displaystyle\int_{-\infty}^{\infty}\frac{x+1}{(x^2+1)^2}\,dx$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -165,6 +167,8 @@ the second as $\pi/2$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-6){.pf-ref} give the three requested values.
+
+:::
 
 :::
 
