@@ -25,6 +25,8 @@ In the complex plane, the set of all points that satisfy the equation $(\bar{z})
 (E) two lines
 :::
 
+::: {.solution}
+
 Write
 $$
 z=x+iy,
@@ -90,6 +92,8 @@ The two axes in step [](#s1-2){.pf-ref} are distinct lines through the origin.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested geometric description.
+
+:::
 
 :::
 
