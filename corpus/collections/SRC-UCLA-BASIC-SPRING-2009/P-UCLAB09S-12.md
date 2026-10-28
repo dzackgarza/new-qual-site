@@ -32,6 +32,8 @@ for every ball $\Omega$ of every positive radius and center.
 You may use the standard theorems of vector calculus without proof.
 :::
 
+::: {.solution}
+
 Define
 \[
 G=\operatorname{div}F-\rho.
@@ -287,6 +289,8 @@ so
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the forward implication, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the converse.
+
+:::
 
 :::
 
