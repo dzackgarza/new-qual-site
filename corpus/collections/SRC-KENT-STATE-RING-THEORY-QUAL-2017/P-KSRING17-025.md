@@ -19,6 +19,8 @@ audit:
 Let R be the field of real numbers and let F be the set of all $2 \times 2$ matrices of the form $\left[ { \begin{array} { r r } { a } & { b } \\ { - 3 b } & { a } \end{array} } \right]$ , where $a , b \in \mathbb { R }$ . Show that F is a field under the usual matrix operations.
 :::
 
+::: {.solution}
+
 For
 $$
 a,b\in\RR,
@@ -263,6 +265,8 @@ The usual matrix operations are associative and distributive. Steps [](#s1-1){.p
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
