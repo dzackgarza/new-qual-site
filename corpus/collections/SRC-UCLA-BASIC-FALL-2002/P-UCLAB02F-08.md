@@ -25,6 +25,8 @@ Let $T$ be the rotation through $60^\circ$ counterclockwise about the origin in 
 You do not have to multiply matrices out, but you must compute any inverses.
 :::
 
+::: {.solution}
+
 Let
 \[
 u_1=\frac1{\sqrt2}(1,-1,0),\qquad
@@ -200,6 +202,8 @@ The three eigenvalues in step [](#s1-5){.pf-ref} are distinct, so each eigenspac
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested standard-basis matrix and inverse, step [](#s1-4){.pf-ref} gives all real eigenvalues and eigenspaces, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the complex eigenvalues and eigenspaces.
+
+:::
 
 :::
 
