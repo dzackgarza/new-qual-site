@@ -20,6 +20,8 @@ A local ring is a commutative ring with 1 that has a unique maximal ideal.
 Show that a ring R is local if and only if the set of non-units in R is an ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 N
@@ -380,6 +382,8 @@ Step [](#s1-4){.pf-ref} proves the forward implication, and step [](#s1-10){.pf-
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
