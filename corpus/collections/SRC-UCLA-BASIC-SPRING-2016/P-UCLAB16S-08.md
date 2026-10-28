@@ -24,6 +24,8 @@ a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2<\frac1{10}.
 Prove that $I+A$ is invertible.
 :::
 
+::: {.solution}
+
 Let
 \[
 \|A\|_F
@@ -220,6 +222,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
