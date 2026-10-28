@@ -25,6 +25,8 @@ Consider the matrices $A = { \left[ \begin{array} { l l } { \cos \phi } & { - \s
 (c) What can one say about the eigenvectors of A and B?
 :::
 
+::: {.solution}
+
 Write
 $$
 c=\cos\phi,
@@ -330,6 +332,8 @@ Steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} describe the eigendirection
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
