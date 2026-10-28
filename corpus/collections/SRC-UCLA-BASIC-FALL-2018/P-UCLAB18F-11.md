@@ -25,6 +25,8 @@ Prove that
 defines an inner product on $V$, and exhibit an orthonormal basis.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -285,6 +287,8 @@ This follows from steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the inner-product assertion, and step [](#s1-8){.pf-ref} gives an explicit orthonormal basis.
+
+:::
 
 :::
 
