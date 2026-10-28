@@ -15,6 +15,8 @@ review: draft
 Let $g ( x ) = e ^ { 2 x + 1 }$ . Compute $\operatorname* { l i m } _ { x \to 0 } { \frac { g ( g ( x ) ) - g ( e ) } { x } }$
 :::
 
+::: {.solution}
+
 Let
 \[
 h(x)=g(g(x)).
@@ -236,6 +238,8 @@ Combine steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
