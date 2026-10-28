@@ -28,6 +28,8 @@ A=\begin{pmatrix}
 Compute $\lim_{n\to\infty}A^n$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -317,6 +319,8 @@ Combine steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required limit.
+
+:::
 
 :::
 
