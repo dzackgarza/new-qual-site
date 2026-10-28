@@ -34,6 +34,8 @@ what's the value of $\frac{\partial z}{\partial v}$ at $P_0$?
 (E) $-10$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested partial derivative and corresponding choice.
+
+:::
 
 :::
 
