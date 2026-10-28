@@ -21,6 +21,8 @@ Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be $2\pi$-periodic.
 Show that linear combinations of the translates $f(x-a)$, $a\in\mathbb R$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
 :::
 
+::: {.solution}
+
 For a $2\pi$-periodic integrable function $h$, write
 \[
 \widehat h(n)
@@ -302,6 +304,8 @@ X=L^1((0,2\pi)).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves necessity, and step [](#s1-7){.pf-ref} proves sufficiency.
+
+:::
 
 :::
 
