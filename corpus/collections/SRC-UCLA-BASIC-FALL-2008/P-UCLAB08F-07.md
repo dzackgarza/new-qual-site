@@ -22,6 +22,8 @@ Suppose $\lambda_1,\ldots,\lambda_r$ are distinct eigenvalues with corresponding
 Prove that $v_1,\ldots,v_r$ are linearly independent.
 :::
 
+::: {.solution}
+
 Write
 \[
 Tv_i=\lambda_i v_i
@@ -139,6 +141,8 @@ The index $j$ in step [](#s1-4){.pf-ref} was arbitrary, so every coefficient in 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
