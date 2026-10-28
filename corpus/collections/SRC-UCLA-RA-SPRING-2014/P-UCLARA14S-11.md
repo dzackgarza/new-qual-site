@@ -23,6 +23,8 @@ For each $p\in(-1,1)$, compute
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -203,6 +205,8 @@ Substitution gives the boxed value.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the value of the convergent improper integral for every $p\in(-1,1)$.
+
+:::
 
 :::
 
