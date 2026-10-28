@@ -26,6 +26,8 @@ Prove
 \]
 :::
 
+::: {.solution}
+
 For $n\geq1$, set
 $$
 B_n=\bigcup_{k=n}^\infty A_k.
@@ -113,6 +115,8 @@ By definition, the set inside the measure is exactly $L$ from step [](#s1-3){.pf
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
