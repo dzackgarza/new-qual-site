@@ -25,6 +25,8 @@ review: draft
 (b) If$P \cap B = M$, a maximal ideal of B, then, making the identification$A / M A =$$B [ X ] / M B [ X ] \approx ( B / M ) [ X ] = k [ X ]$, where$k = B / M$, we see that P/M A is a prime ideal in$k [ X ]$. Hence show : either$P = M A$, or$P = M A + g ( x ) A$, where$g ( X )$is a polynomial with coefficients in B such that the polynomial${ \overline { { g } } } ( X )$which we obtain by reducing the coefficients of g (mod M) is an irreducible polynomial in$k [ X ]$. Moreover g is determined by P up to multiplication by an element of B not in M and addition of a polynomial whose coefficients are in M .
 :::
 
+::: {.solution}
+
 Let $S=B\setminus\{0\}$. Then $S^{-1}A=K[X]$.
 
 ::: pf
@@ -153,6 +155,8 @@ Conversely, replacing $g$ by $ug+m$ with $u\notin M$ and $m\in M[X]$ multiplies 
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove part (a), and steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} prove part (b).
+
+:::
 
 :::
 
