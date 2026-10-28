@@ -15,6 +15,8 @@ review: draft
 Suppose that f is differentiable at $x = x _ { 0 }$ . What is $\operatorname* { l i m } _ { h \to 0 } { \frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } - h ) } { h } } \ ?$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -136,6 +138,8 @@ Take limits in step [](#s1-2){.pf-ref} and use steps [](#s1-3){.pf-ref} through 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
