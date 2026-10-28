@@ -15,6 +15,8 @@ review: draft
 Let A be an m by n real matrix with $m \geq n$ Let $b \in \mathbb { R } ^ { m }$ . Let M be the set of vectors $x \in \mathbb { R } ^ { n }$ which minimize $| A x - b |$ Show that $M = x _ { 0 } + N$ where N is the kernel of A, and $x _ { 0 }$ is any element of M.
 :::
 
+::: {.solution}
+
 Let
 \[
 N=\ker A
@@ -174,6 +176,8 @@ Combine the inclusions from steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required description of the set of minimizers.
+
+:::
 
 :::
 
