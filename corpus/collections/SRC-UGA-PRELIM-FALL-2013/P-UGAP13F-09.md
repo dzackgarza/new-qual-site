@@ -27,7 +27,7 @@ T:\mathbb R^3\to\mathbb R^2,
 \qquad
 T(x,y,z)
 =
-(2x-y,,3x-z).
+(2x-y,\,3x-z).
 }
 \]
 
