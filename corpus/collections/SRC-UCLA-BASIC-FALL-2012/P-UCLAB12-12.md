@@ -16,6 +16,8 @@ Let M be an n by m matrix.
 Prove that the row rank of M equals the column rank of M. Also, however you prove it, interpret this result as an equality of the dimensions of two vector spaces naturally attached to the map defined by M.
 :::
 
+::: {.solution}
+
 Let
 \[
 T:\mathbb F^m\to\mathbb F^n
@@ -233,6 +235,8 @@ Thus row rank equals column rank precisely because these two naturally attached 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves equality of row and column rank, and step [](#s1-7){.pf-ref} gives the requested interpretation.
+
+:::
 
 :::
 
