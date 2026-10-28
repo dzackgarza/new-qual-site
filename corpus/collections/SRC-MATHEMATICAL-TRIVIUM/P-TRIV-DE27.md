@@ -25,6 +25,8 @@ Given the eigenvalue problem ${ \mathcal { L } } ( x ) \psi ( x ) = \lambda \psi
 (c) Chabyshev’s ODE: $( 1 - x ^ { 2 } ) y ^ { \prime \prime } - x y ^ { \prime } + n ^ { 2 } y = 0$
 :::
 
+::: {.solution}
+
 For an equation
 \[
 p_0y''+p_1y'+p_2y=0,
@@ -128,6 +130,8 @@ fp_0=\sqrt{1-x^2},
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} give multipliers satisfying the self-adjointness condition in all three cases.
+
+:::
 
 :::
 
