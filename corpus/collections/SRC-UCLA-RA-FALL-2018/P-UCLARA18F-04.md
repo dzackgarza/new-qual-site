@@ -34,6 +34,8 @@ for every Borel set $E\subset\mathbb T$.
 (c) Prove that, if we fix a single $\alpha\in\mathbb T$ which is not a root of unity, then $m$ is the only $\alpha$-invariant Borel probability measure on $\mathbb T$.
 :::
 
+::: {.solution}
+
 Write \(q(t)=e^{2\pi i t}\), so that \(\mathbb T\cong\mathbb R/\mathbb Z\), and let \(m\) be normalized Lebesgue measure under this identification.
 
 ::: pf
@@ -215,6 +217,8 @@ Existence is step [](#s1-1){.pf-ref}. If \(\mu\) is any other \(\alpha\)-invaria
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-8){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
