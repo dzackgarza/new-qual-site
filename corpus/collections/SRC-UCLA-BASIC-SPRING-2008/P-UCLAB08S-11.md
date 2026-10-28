@@ -183,7 +183,7 @@ The polynomial
 \[
 1-\sum_{j=1}^rq_j(t)
 \]
-vanishes at every $\lambda_i$, hence is divisible by $\mu_A$ because its degree is at most $r-1$ only if it is zero; equivalently Lagrange interpolation gives
+has degree at most $r-1$ and vanishes at the $r$ distinct numbers $\lambda_i$, so it is zero; equivalently Lagrange interpolation gives
 \[
 \sum_{j=1}^rq_j(t)=1.
 \]
