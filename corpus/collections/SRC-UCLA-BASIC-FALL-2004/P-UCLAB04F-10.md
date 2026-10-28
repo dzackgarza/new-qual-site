@@ -45,8 +45,10 @@ Hint: raise both sides of
 to a sufficiently high power.
 :::
 
+::: {.remark}
 As printed, the definition is not meaningful for nonreal $\lambda$: if $V=\mathbb R^n$, then $T-\lambda I$ is not an endomorphism of $V$.
 Replace $V$ by $\mathbb C^n$, or equivalently complexify $T$.
+:::
 
 ::: {.solution}
 
