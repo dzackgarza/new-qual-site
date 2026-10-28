@@ -27,6 +27,8 @@ $$\int_{0}^{\infty} \frac{e^{-x}}{\sqrt{x}} \, dx$$
 (E) $\frac{1}{4}\pi$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -84,6 +86,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the required value.
+
+:::
 
 :::
 
