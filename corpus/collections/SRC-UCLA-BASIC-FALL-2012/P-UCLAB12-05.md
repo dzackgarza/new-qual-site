@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-A subset E of a metric space X is a $G _ { \delta }$ set if $\textstyle E = \bigcap _ { n = 1 } ^ { \infty } G _ { n }$ where each $G _ { n }$ is open in X. Use Problem 4 to prove that the set of rational numbers is not a $G _ { \delta }$ subset of the set of real numbers.
+A subset $E$ of a metric space $X$ is a $G_\delta$ set if $E = \bigcap_{n=1}^\infty G_n$ where each $G_n$ is open in $X$. Use Problem 4 to prove that the set of rational numbers is not a $G_\delta$ subset of the set of real numbers.
 :::
 
 ::: {.solution}
