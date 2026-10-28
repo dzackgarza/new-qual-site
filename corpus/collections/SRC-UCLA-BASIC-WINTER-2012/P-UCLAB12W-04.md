@@ -25,6 +25,8 @@ Suppose $s_n$ tends to $s\in\mathbb R$ in the Cesàro sense:
 Show that $\sum_{k=1}^\infty a_k$ converges and equals $s$.
 :::
 
+::: {.solution}
+
 Let
 $$
 A_n=\frac1n\sum_{j=1}^n s_j.
@@ -171,6 +173,8 @@ This is precisely convergence of the series to $s$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
