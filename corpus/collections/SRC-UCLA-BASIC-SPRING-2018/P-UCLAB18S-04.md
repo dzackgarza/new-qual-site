@@ -32,6 +32,8 @@ Which pairs are similar over $\mathbb R$?
 Fully justify your answer.
 :::
 
+::: {.solution}
+
 For each matrix $X$ in the list, write
 \[
 N_X=X-I.
@@ -365,6 +367,8 @@ There are no other matrices in the list.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives all and only the similar pairs.
+
+:::
 
 :::
 
