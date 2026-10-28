@@ -19,6 +19,8 @@ audit:
 Let R be a non-zero commutative ring with 1 and S a multiplicative subset of R not containing 0. Show that if P is maximal in the set of ideals of R not intersecting S, then P is a prime ideal.
 :::
 
+::: {.solution}
+
 Assume
 $$
 P\cap S=\varnothing
@@ -302,6 +304,8 @@ These are exactly the defining conditions for a prime ideal.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
