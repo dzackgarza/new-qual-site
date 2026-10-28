@@ -29,6 +29,8 @@ Reduce the following quadratic forms to the canonical form and determine the ran
 (c) $\sum_{1 \leqslant i < j \leqslant n} x_i x_j$.
 :::
 
+::: {.solution}
+
 Assume $n\geq2$.
 
 ::: pf
@@ -363,6 +365,8 @@ Step [](#s1-11){.pf-ref} has one positive square and $n-1$ negative squares.
 
 Steps [](#s1-3){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} give the canonical forms, ranks, and signatures
 for parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
