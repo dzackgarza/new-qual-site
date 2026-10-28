@@ -24,6 +24,8 @@ audit:
 Justify your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -120,6 +122,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-3){.pf-ref} answers part (b).
+
+:::
 
 :::
 
