@@ -30,6 +30,8 @@ What is the value of $f_{xy}$ at the point $(0,0)$?
 (E) Undefined
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -114,6 +116,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested mixed partial derivative and corresponding choice.
+
+:::
 
 :::
 
