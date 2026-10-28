@@ -29,6 +29,8 @@ At the limiting amplitude $\phi_0=\pi$, the endpoint singularity becomes
 logarithmic and the integral diverges.
 :::
 
+::: {.solution}
+
 Assume first that
 $$
 0<\phi_0<\pi,
@@ -267,6 +269,8 @@ This is step [](#s1-6){.pf-ref}; step [](#s1-7){.pf-ref} records the endpoint ex
 
 Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give the complete convergence statement in the physically
 relevant range.
+
+:::
 
 :::
 
