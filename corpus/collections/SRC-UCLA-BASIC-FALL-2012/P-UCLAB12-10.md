@@ -16,6 +16,8 @@ Let A be a linear operator on a four dimensional complex vector space that satis
 Let $B = A + I$ and suppose dim $( r a n g e ( B ) ) = 2$ Finally, suppose that $| T r ( A ) | = 2$ Give a Jordan canonical form of A.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -271,6 +273,8 @@ Their direct sum is the displayed matrix.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required Jordan canonical form.
+
+:::
 
 :::
 
