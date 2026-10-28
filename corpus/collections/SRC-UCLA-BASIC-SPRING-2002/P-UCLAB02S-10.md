@@ -25,6 +25,8 @@ for every $w\in W$.
 Deduce that equality holds if and only if $w=v_W$.
 :::
 
+::: {.solution}
+
 Let
 \[
 w_1,\ldots,w_m
@@ -249,6 +251,8 @@ u=v_W.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves existence of a best approximant, step [](#s1-7){.pf-ref} proves uniqueness, and step [](#s1-6){.pf-ref} gives the equality criterion.
+
+:::
 
 :::
 
