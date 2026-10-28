@@ -20,6 +20,8 @@ audit:
 Let $r > 0$ and let $P : \CC \to \CC$ be a polynomial. What is $\oint_{\{\abs{z} = r\}} P(z)\,dz$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -56,6 +58,8 @@ gives zero.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} is the requested value.
+
+:::
 
 :::
 
