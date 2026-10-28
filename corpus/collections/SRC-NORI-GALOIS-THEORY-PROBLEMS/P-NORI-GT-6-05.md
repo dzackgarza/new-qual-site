@@ -20,6 +20,8 @@ Assume that F is algebraically closed.
 Show that $A \mapsto f _ { A }$ is a one-to-one correspondence from the collection of additive subgroups $A \subset F$ of order $p ^ { n }$ and the set of polynomials in $F [ X ]$ of the form $f = a _ { 0 } X + a _ { 1 } X ^ { p } + \ldots + a _ { n - 1 } X ^ { p ^ { n - 1 } } + X ^ { p ^ { n } }$ with $a _ { 0 } \neq 0$
 :::
 
+::: {.solution}
+
 As in the preceding problems of this section, $F$ has characteristic $p>0$.
 
 ::: pf
@@ -183,6 +185,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} show that the assignment lan
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is exactly the claimed one-to-one correspondence.
+
+:::
 
 :::
 
