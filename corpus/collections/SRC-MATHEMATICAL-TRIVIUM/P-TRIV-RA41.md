@@ -40,6 +40,8 @@ $$
 for the Euclidean distance and $\rho$ for the cylindrical radius.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -305,6 +307,8 @@ This is step [](#s1-11){.pf-ref}.
 
 Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-12){.pf-ref} give the components in Cartesian, cylindrical,
 and spherical coordinates.
+
+:::
 
 :::
 
