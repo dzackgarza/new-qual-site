@@ -23,6 +23,8 @@ f'(z)\ne0\qquad(z\in D).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -131,6 +133,8 @@ that $f$ is injective.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
