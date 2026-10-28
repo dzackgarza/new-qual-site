@@ -31,6 +31,8 @@ Show that
 Hint: represent $f(z)$ as a path integral along a convenient path.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -126,6 +128,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
