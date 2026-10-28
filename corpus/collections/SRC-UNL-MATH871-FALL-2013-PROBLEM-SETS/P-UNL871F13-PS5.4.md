@@ -22,6 +22,8 @@ Let $M$ be the resulting quotient space.
 Give a concrete construction showing that $M$ is homeomorphic to the closed orientable surface of genus $2$ (the surface of a doughnut with two holes).
 :::
 
+::: {.solution}
+
 Write the boundary word of the octagon as
 \[
 [a,b][c,d]
@@ -344,6 +346,8 @@ structure.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required identification.
+
+:::
 
 :::
 
