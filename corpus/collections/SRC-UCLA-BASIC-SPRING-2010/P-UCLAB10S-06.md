@@ -32,6 +32,8 @@ a_{n+1}=4a_n-4a_{n-1},\qquad a_0=a,\quad a_1=b.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -529,6 +531,8 @@ This proves part (iii).
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (i), steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} prove part (ii), and step [](#s1-12){.pf-ref} proves part (iii).
+
+:::
 
 :::
 
