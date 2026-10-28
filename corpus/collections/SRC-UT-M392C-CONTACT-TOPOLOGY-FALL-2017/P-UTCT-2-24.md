@@ -35,6 +35,8 @@ The first paragraph restates the definitions of Section 2 of the source (Definit
 As printed, with $a$ and $b$ constants, $d\alpha = 0$, and $\alpha|_{xy\text{-plane}} = a\,dx + b\,dy$ has the lines $ax + by = c$ as leaves rather than the curves $x^b y^a = c$; the source does not say how $a$ and $b$ are meant to vary.
 :::
 
+::: {.solution}
+
 Take the positive area form
 \[
 \omega=dx\wedge dy
@@ -523,6 +525,8 @@ produces the advertised leaves
 x^b y^a=c
 \]
 and the intended nonzero divergence/contact-sign discussion.
+
+:::
 
 :::
 
