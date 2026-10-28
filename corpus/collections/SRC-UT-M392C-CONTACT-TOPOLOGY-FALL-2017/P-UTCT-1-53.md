@@ -38,6 +38,8 @@ This is an example of a contactomorphism.
 Example 1.52 of the source prints $\alpha' = dx + \frac{1}{2} r^2 d\theta$ and gives its rectangular form as $\frac{x\,dy - y\,dx}{2}$; both omit $dz$, which is needed for $\alpha'$ to be a contact form and for $\phi^*\alpha' = \alpha$ to hold.
 :::
 
+::: {.solution}
+
 Write the target coordinates of \(\phi\) as
 \[
 (X,Y,Z)
@@ -298,6 +300,8 @@ which is stronger than merely preserving the kernel distribution.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves the required pullback identity.
+
+:::
 
 :::
 
