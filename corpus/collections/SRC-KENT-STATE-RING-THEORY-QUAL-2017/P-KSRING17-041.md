@@ -21,6 +21,8 @@ audit:
 (b) Give an example of a non-zero prime ideal in a ring R that is not a maximal ideal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -215,6 +217,8 @@ Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} gives the required example for part (b).
+
+:::
 
 :::
 
