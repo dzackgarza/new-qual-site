@@ -42,7 +42,7 @@ because $a>0$.
 
 ::: pf-proof
 
-The exponential of a negative positive number lies strictly between $0$ and $1$.
+The exponential of a negative number lies strictly between $0$ and $1$.
 
 :::
 
