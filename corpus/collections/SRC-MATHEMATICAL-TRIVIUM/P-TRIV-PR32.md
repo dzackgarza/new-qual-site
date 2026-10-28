@@ -28,6 +28,8 @@ One may ask about the convergence or divergence of the series $\sum_{n=1}^\infty
 (b) Show that otherwise the series diverges with the unit probability.
 :::
 
+::: {.solution}
+
 Write
 \[
 \mu=\mathbf E\xi_n=p-q=2p-1
@@ -146,6 +148,8 @@ By step [](#s1-2){.pf-ref}, the first term on the right side of step [](#s1-4){.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
