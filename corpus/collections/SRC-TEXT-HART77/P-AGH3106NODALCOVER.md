@@ -114,7 +114,7 @@ This is also the branch-gluing description used in
 
 Define an affine curve over the nodal chart by
 $$
-C=left\{
+C=\left\{
 (F,G)\in B\oplus B:
 F(1)=G(-1),\quad F(-1)=G(1)
 \right\}.
