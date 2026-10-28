@@ -19,6 +19,8 @@ Let $c_x:I\to X$ be the constant path at $x$, and let $f$ be a path from $x_0$ t
 \]
 :::
 
+::: {.solution}
+
 Use the standard concatenation convention
 \[
 (a*b)(t)=
@@ -195,6 +197,8 @@ Step [](#s1-5){.pf-ref} gives a path homotopy from \(c_{x_0}*f\) to \(f\), so th
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} establish the right- and left-identity laws requested in the problem.
+
+:::
 
 :::
 
