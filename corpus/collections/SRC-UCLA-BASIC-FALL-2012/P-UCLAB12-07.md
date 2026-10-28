@@ -17,6 +17,8 @@ Suppose that the set of powers $A ^ { n }$ of A, for $n \in \mathbb { Z } ,$ is 
 Show that A is diagonalizable.
 :::
 
+::: {.solution}
+
 Fix any matrix norm on $M_n(\mathbb C)$. By hypothesis there is $C>0$ such that
 \[
 \|A^k\|\le C
@@ -232,6 +234,8 @@ If $A$ were not diagonalizable, steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-r
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
