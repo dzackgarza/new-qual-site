@@ -22,6 +22,8 @@ and
 Both define metrics on $C[0,1]$. Which metric induces the finer topology?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -116,6 +118,8 @@ Step [](#s1-2){.pf-ref} proves fineness, and step [](#s1-3){.pf-ref} proves stri
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers the comparison question.
+
+:::
 
 :::
 
