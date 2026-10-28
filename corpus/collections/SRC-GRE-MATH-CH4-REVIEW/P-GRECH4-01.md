@@ -32,6 +32,8 @@ such that $y = 0$ when $x = 0$. What is the value of $f(1)$?
 (E) $\frac{1}{4}(4 - \pi)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
