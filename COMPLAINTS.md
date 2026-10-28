@@ -3030,3 +3030,15 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   The original sources have not been reread for a complete repair, and the remaining affected population has not been established beyond these ten cards.
 
 - **Repair:** TODO.md section 7 / issue #2. Read each retained source, restore the intended notation without changing the mathematical claims, and inspect the rendered result at the normal publication boundary.
+
+### GRE Practice Test Question 11 prints inconsistent vector data
+
+- **Object and need:** `P-GREPT-11` / `SRC-GRE-MATH-PRACTICE-TEST`, Question 11. The problem fixes $\norm{\mathbf b}=3$, $\mathbf b\cdot\mathbf c=5$, $\norm{\mathbf c}=7$ and $\mathbf b\times\mathbf c=8\hat{\mathbf j}+4\hat{\mathbf k}$.
+
+- **Observed evidence:** `assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md` line 16587 prints these values. Lagrange's identity forces $\norm{\mathbf b\times\mathbf c}^2=9\cdot49-25=416$, but $\norm{8\hat{\mathbf j}+4\hat{\mathbf k}}^2=80$.
+
+- **Impact and owner:** no pair $\mathbf b,\mathbf c$ satisfies the hypotheses, so the literal question is vacuous. The source solution (line 17532) uses only $\mathbf b\times\mathbf c$, and choice (C) is correct under that datum alone.
+
+- **Uncertainty:** none about the inconsistency; which printed value the setter intended is not recoverable.
+
+- **Repair:** `P-GREPT-11` carries a remark stating the inconsistency and the scope of its answer. Retain this entry as source errata.

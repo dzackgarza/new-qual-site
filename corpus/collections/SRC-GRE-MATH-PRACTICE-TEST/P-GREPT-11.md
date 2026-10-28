@@ -25,6 +25,17 @@ Let $\hat{\mathbf{i}} = (1, 0, 0)$, $\hat{\mathbf{j}} = (0, 1, 0)$, and $\hat{\m
 (E) $\mathbf{a} = \hat{\mathbf{i}} + 2\hat{\mathbf{j}} - 2\hat{\mathbf{k}}$
 :::
 
+::: {.remark}
+No vectors satisfy all four printed conditions. Lagrange's identity gives
+$$
+\norm{\mathbf b\times\mathbf c}^2
+=\norm{\mathbf b}^2\norm{\mathbf c}^2-(\mathbf b\cdot\mathbf c)^2
+=9\cdot49-25
+=416,
+$$
+while $\norm{8\hat{\mathbf j}+4\hat{\mathbf k}}^2=80$. The solution below uses only the value of $\mathbf b\times\mathbf c$, so its answer (C) is the answer for any $\mathbf b,\mathbf c$ with $\mathbf b\times\mathbf c=8\hat{\mathbf j}+4\hat{\mathbf k}$.
+:::
+
 ::: {.solution}
 
 ::: pf
