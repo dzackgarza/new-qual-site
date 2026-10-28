@@ -19,6 +19,8 @@ audit:
 Prove that $S^{n-1}$ is not a retract of $B^n$.
 :::
 
+::: {.solution}
+
 Assume $n\ge1$.
 
 ::: pf
@@ -175,6 +177,8 @@ The assumption that a retraction exists leads to the contradiction in step [](#s
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
