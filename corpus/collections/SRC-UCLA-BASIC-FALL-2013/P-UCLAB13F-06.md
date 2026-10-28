@@ -17,6 +17,8 @@ audit:
 Let $X$ be a compact metric space, let $(x_n)$ be a sequence in $X$, and let $x\in X$. Assume that every subsequence $(y_n)$ of $(x_n)$ has a subsequence $(z_n)$ converging to $x$. Prove that $x_n\to x$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ Hence the assumption is false, and the sequence converges to $x$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
