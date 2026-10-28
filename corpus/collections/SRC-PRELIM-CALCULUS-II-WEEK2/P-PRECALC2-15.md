@@ -19,6 +19,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -244,6 +246,8 @@ H_m
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the requested value.
+
+:::
 
 :::
 
