@@ -25,6 +25,8 @@ A^*Av=A^*w.
 \]
 :::
 
+::: {.solution}
+
 For
 \[
 v\in V,
@@ -347,6 +349,8 @@ Step [](#s1-9){.pf-ref} proves the converse.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required characterization.
+
+:::
 
 :::
 
