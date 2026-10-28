@@ -24,6 +24,8 @@ L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu).
 (b) Give a measure space and a function $f$ such that $f\in L^4$ but $f\notin L^3$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ Thus $f\in L^4$ but $f\notin L^3$.
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} gives the counterexample required in
 part (b).
+
+:::
 
 :::
 
