@@ -26,6 +26,8 @@ The linear transformation $T\colon \RR^2 \to \RR^2$ that maps $(1, 2)$ to $(-1, 
 (E) $(1, 1)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -67,6 +69,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested image.
+
+:::
 
 :::
 
