@@ -21,6 +21,8 @@ audit:
 (b) Find an ideal I of $\mathbb { Z } [ x ]$ such that $( 2 x - 1 ) \subsetneq I \subsetneq \mathbb { Z } [ x ]$
 :::
 
+::: {.solution}
+
 Define
 $$
 \varphi:\ZZ[x]\to\ZZ\left[\frac12\right]
@@ -415,6 +417,8 @@ Combine steps [](#s1-9){.pf-ref} and [](#s1-10){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves part (a), and step [](#s1-11){.pf-ref} proves part (b).
+
+:::
 
 :::
 
