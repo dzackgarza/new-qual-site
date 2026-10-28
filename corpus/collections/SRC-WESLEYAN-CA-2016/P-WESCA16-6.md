@@ -23,6 +23,8 @@ Determine the conformal automorphism group of
 and prove your claim.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -173,6 +175,8 @@ $S^1$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} determines the automorphism group.
+
+:::
 
 :::
 
