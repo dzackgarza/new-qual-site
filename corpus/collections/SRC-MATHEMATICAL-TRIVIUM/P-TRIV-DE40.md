@@ -19,6 +19,8 @@ audit:
 Find the most general solution of $x \frac { \partial f } { \partial x } - y \frac { \partial f } { \partial y } = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ xf_x-yf_y=xy\Phi'(xy)-xy\Phi'(xy)=0.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives and directly verifies the general characteristic solution.
+
+:::
 
 :::
 
