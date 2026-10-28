@@ -25,6 +25,8 @@ bc^{-1}a,
 2. Identify $X$, with justification, in terms of that classification.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #p1-s1-1}
@@ -886,6 +888,8 @@ Step [](#p2-s1-2){.pf-ref} gives exactly two components. Steps [](#p2-s1-6){.pf-
 ::: pf-qed
 
 Step [](#p2-s1-1){.pf-ref} lists the compact connected surfaces, and step [](#p2-s1-11){.pf-ref} identifies the quotient in that classification.
+
+:::
 
 :::
 
