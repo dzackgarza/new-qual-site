@@ -20,6 +20,8 @@ audit:
 The continuous functions on $[0, 1]$ form a ring under pointwise addition and pointwise multiplication. Show that this ring is not an integral domain.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ two nonzero ring elements whose product is zero.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
