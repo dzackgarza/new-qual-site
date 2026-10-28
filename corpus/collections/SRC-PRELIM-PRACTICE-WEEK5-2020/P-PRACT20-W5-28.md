@@ -20,6 +20,8 @@ audit:
 Let $C$ be the circle $\abs{z} = \pi$, oriented positively. Evaluate $\oint_C \left(\sin(z) - \frac{\cos(z)}{z - \pi/4}\right) dz$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ The minus sign comes from the minus sign in the original integrand.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
