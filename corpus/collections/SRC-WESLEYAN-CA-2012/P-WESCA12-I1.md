@@ -19,6 +19,8 @@ audit:
 Give three equivalent characterizations of analyticity of a complex-valued function $f$ on a domain $D\subset\mathbb C$.
 :::
 
+::: {.solution}
+
 Let
 \[
 f:D\to\mathbb C.
@@ -156,6 +158,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three standard equi
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers the prompt.
+
+:::
 
 :::
 
