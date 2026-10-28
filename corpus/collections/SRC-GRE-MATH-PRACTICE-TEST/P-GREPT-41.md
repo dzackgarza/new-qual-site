@@ -33,6 +33,8 @@ What is the smallest number $m$ that makes the statement $f(1) \leq m$ true?
 (E) $8$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -142,6 +144,8 @@ $f_M(1)>m$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the literal conclusion.
+
+:::
 
 :::
 
