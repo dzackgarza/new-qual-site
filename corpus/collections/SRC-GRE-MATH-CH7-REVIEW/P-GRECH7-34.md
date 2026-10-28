@@ -25,6 +25,8 @@ Let $(X, T)$ be a topological space, and let $A$ be the subset $(0, 1) \cup [4, 
 (E) $(-\infty, 0) \cup (6, \infty)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -92,6 +94,8 @@ Taking the complement of the closed set in step [](#s1-1){.pf-ref} yields exactl
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested exterior.
+
+:::
 
 :::
 
