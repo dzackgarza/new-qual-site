@@ -19,6 +19,8 @@ audit:
 Show that if M is an oriented boundary, then all its Pontrjagin numbers are zero.
 :::
 
+::: {.solution}
+
 Let $M^{4m}$ be a closed oriented manifold and suppose
 \[
 M=\partial W
@@ -197,6 +199,8 @@ The monomial $P$ in step [](#s1-3){.pf-ref} was arbitrary among all Pontryagin m
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required assertion.
+
+:::
 
 :::
 
