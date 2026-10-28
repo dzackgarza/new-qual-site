@@ -17,6 +17,8 @@ State the definition of a path-connected space. Let $X$ be path-connected and le
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -357,6 +359,8 @@ $X$.
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} construct
 the isomorphism in full detail.
+
+:::
 
 :::
 
