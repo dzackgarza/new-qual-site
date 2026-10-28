@@ -23,6 +23,8 @@ best fits the data
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -131,6 +133,8 @@ $M(0,-2)^T=(2,2,2,2)^T$, so the residual is zero.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required least-squares fit.
+
+:::
 
 :::
 
