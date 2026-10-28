@@ -31,6 +31,8 @@ We choose to have a branch cut on the positive real axis.
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
 
+::: {.solution}
+
 Use the branch
 $$
 z^p
@@ -386,6 +388,8 @@ which yields the stated formula.
 
 Step [](#s1-4){.pf-ref} evaluates the contour integral $I_1$, step [](#s1-9){.pf-ref} gives its relation
 to $I_2$, and step [](#s1-10){.pf-ref} gives the requested real integral.
+
+:::
 
 :::
 
