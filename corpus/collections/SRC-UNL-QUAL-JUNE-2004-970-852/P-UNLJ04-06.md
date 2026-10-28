@@ -24,6 +24,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -386,6 +388,8 @@ Step [](#s1-1){.pf-ref} proves necessity, and step [](#s1-7){.pf-ref} proves suf
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
