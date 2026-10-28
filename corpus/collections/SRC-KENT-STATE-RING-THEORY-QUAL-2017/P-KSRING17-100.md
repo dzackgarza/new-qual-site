@@ -19,6 +19,8 @@ audit:
 Show that the ring Z[i] of Gaussian integers is a Euclidean ring and compute the greatest common divisor of $5 + i$ and 13 using the Euclidean algorithm.
 :::
 
+::: {.solution}
+
 Let
 $$
 \ZZ[i]
@@ -386,6 +388,8 @@ $$
 \ZZ[i]
 $$
 is Euclidean, and step [](#s1-8){.pf-ref} gives the requested greatest common divisor.
+
+:::
 
 :::
 
