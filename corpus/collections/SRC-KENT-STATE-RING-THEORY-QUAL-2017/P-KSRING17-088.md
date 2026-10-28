@@ -23,6 +23,8 @@ Let D be an integral domain.
 (b) For $x \in D$ denote $( x ) = \{ d x \mid d \in D \}$ . Prove that if $( a ) + ( b ) = ( d )$ , then d is a greatest common divisor of a and b.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -234,6 +236,8 @@ These are exactly the two conditions in the definition from step [](#s1-1){.pf-r
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
