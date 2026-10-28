@@ -19,6 +19,8 @@ audit:
 Let X be the space obtained from the solid cube I x I x I by gluing opposite square faces to one another with a 90-degree righthand twist (e.g., glue $\mathrm { ~ I ~ x ~ I ~ x ~ } \{ 0 \}$to$\operatorname { I } \mathrm { \mathrm { ~ x ~ I ~ x ~ } } \{ 1 \}$by identifying (x,y,0) with (y,1-x,1)). Describe a CW structure for X and compute a presentation for$\pi _ { 1 } ( \mathrm { X } )$ .
 :::
 
+::: {.solution}
+
 Use the following cyclic-coordinate formulas for the three right-hand
 quarter-turn identifications:
 \[
@@ -522,6 +524,8 @@ an isomorphism.
 Step [](#s1-3){.pf-ref} gives the requested CW structure, step [](#s1-8){.pf-ref} gives a presentation
 directly from the cell attachments, and step [](#s1-16){.pf-ref} identifies that
 presentation with the quaternion group.
+
+:::
 
 :::
 
