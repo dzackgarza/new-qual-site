@@ -20,6 +20,8 @@ audit:
 Find all group and ring homomorphisms from $\ZZ \to \ZZ$.
 :::
 
+::: {.solution}
+
 Regard $\mathbb Z$ as an additive group when discussing group homomorphisms.
 
 ::: pf
@@ -157,6 +159,8 @@ the two displayed maps. Both preserve addition and multiplication.
 
 Step [](#s1-3){.pf-ref} classifies the group homomorphisms and step [](#s1-5){.pf-ref} classifies the ring
 homomorphisms.
+
+:::
 
 :::
 
