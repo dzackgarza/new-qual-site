@@ -31,6 +31,8 @@ with all these series converging absolutely, but such that
 \]
 :::
 
+::: {.solution}
+
 Use disjoint $2\times2$ blocks whose four entries sum to zero in each row and column, with block masses forming a divergent series.
 
 ::: pf
@@ -201,6 +203,8 @@ Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} give absolutely convergent row a
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} verifies the construction completely.
+
+:::
 
 :::
 
