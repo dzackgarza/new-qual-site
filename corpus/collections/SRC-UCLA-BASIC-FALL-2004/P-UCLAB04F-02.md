@@ -21,6 +21,8 @@ State and prove Rolle's Theorem.
 You may use without proof theorems about maxima and minima of continuous or differentiable functions.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ Step [](#s1-2){.pf-ref} handles the constant case. If $f$ is nonconstant, steps 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the theorem stated in step [](#s1-1){.pf-ref}.
+
+:::
 
 :::
 
