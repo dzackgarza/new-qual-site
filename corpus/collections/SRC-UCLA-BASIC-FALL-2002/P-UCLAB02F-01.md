@@ -24,6 +24,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 If $K=\varnothing$ or $F=\varnothing$, the set of distances is empty; with the extended-real convention $\inf\varnothing=+\infty$, the conclusion is immediate. If the infimum is understood only for nonempty subsets of $\mathbb R$, then nonemptiness of $K$ and $F$ is implicit. Consider therefore the substantive case $K,F\ne\varnothing$.
 
 ::: pf
@@ -130,6 +132,8 @@ Step [](#s1-3){.pf-ref} shows that every element of the distance set is at least
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion in the nonempty case, and the opening observation covers the empty-set convention.
+
+:::
 
 :::
 
