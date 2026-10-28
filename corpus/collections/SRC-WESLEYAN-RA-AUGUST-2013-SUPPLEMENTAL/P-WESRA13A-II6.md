@@ -20,6 +20,8 @@ Let $f:[0,1]\to\mathbb R$ be absolutely continuous.
 Prove directly from the definitions that $f$ has bounded variation.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -153,6 +155,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is exactly the assertion that $f$ is of bounded variation.
+
+:::
 
 :::
 
