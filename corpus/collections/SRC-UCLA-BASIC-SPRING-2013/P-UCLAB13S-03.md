@@ -21,6 +21,8 @@ Prove that a metric space is sequentially compact if and only if it is complete 
 A metric space is totally bounded when for every $\varepsilon>0$ it can be covered by finitely many balls of radius $\varepsilon$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -245,6 +247,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove the forward implicatio
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
