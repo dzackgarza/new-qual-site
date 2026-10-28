@@ -23,6 +23,8 @@ Consider the rotation by an angle θ around a line determined by a unit radius-v
 (b) Relate the trace of this matrix to the angle θ.
 :::
 
+::: {.solution}
+
 Let
 $$
 n=
@@ -308,6 +310,8 @@ Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the requested relation.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-10){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
