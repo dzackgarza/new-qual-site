@@ -19,6 +19,8 @@ audit:
 Find the smallest k such that $\mathbb { C P } ^ { n }$ can be smoothly embedded in $\mathbb { R } ^ { 2 n + k }$
 :::
 
+::: {.solution}
+
 As stated for arbitrary $n$, this is not a problem with a known closed-form
 answer. The exact Euclidean embedding dimension of $\mathbb{CP}^n$ is a
 classical embedding problem. The standard results give sharp answers for many
@@ -357,6 +359,8 @@ k_{\min}(n)=N(n)-2n
 with the bounds in step [](#s1-3){.pf-ref} and the exact special families in
 steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}; the source problem is too strong as a request for a general
 closed formula.
+
+:::
 
 :::
 
