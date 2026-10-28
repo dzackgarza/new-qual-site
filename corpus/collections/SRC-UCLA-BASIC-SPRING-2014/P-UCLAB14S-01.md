@@ -27,6 +27,8 @@ t^4+1.
 (b) Show that the usual real linear map determined by $v\mapsto Av$ has no nontrivial invariant subspace.
 :::
 
+::: {.solution}
+
 Part (a) has a straightforward example. Part (b) is false as printed.
 
 ::: pf
@@ -385,6 +387,8 @@ Thus the assertion that the associated real linear map has no nontrivial invaria
 
 Step [](#s1-5){.pf-ref} answers part (a).
 Step [](#s1-11){.pf-ref} gives the mathematically correct disposition of part (b), namely a counterexample to the source assertion.
+
+:::
 
 :::
 
