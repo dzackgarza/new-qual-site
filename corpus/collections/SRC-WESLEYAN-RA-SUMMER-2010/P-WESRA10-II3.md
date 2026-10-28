@@ -21,6 +21,8 @@ audit:
 (b) If $A$ is such a set and $f:\mathbb R^2\to\mathbb R$ satisfies $f=\chi_A$ almost everywhere, prove that there is a set $B$ of positive measure such that $f$ is discontinuous at every point of $B$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -155,6 +157,8 @@ at $x$.
 Step [](#s1-1){.pf-ref} solves part (a). Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} produce a set
 $B$ of positive measure on which every point is a discontinuity of $f$, which
 proves part (b).
+
+:::
 
 :::
 
