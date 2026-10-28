@@ -27,6 +27,8 @@ Prove that there is no linear operator $S:V\to V$ such that $S^2=T$.
 Does the answer change if $V\cong\mathbb R^{12}$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -264,6 +266,8 @@ Step [](#s1-6){.pf-ref} proves impossibility in dimension $6$, and step [](#s1-7
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} answers both parts.
+
+:::
 
 :::
 
