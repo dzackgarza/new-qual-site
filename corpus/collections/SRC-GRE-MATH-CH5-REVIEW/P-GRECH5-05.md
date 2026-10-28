@@ -32,6 +32,8 @@ are inverses of each other, what is the value of $c$?
 (E) $3$
 :::
 
+::: {.solution}
+
 Let
 $$
 A=
@@ -149,6 +151,8 @@ This is the value obtained in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested matrix entry and corresponding choice.
+
+:::
 
 :::
 
