@@ -20,6 +20,8 @@ Let $T:V\to V$ be linear.
 If $Tv$ and $v$ are linearly dependent for every $v\in V$, show that $T$ is a scalar multiple of the identity.
 :::
 
+::: {.solution}
+
 If $V=\{0\}$, then $T=0$ and the conclusion is immediate. Assume $V\ne\{0\}$.
 
 ::: pf
@@ -147,6 +149,8 @@ Step [](#s1-4){.pf-ref} says that $T$ and $\lambda I$ agree on every vector in $
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
