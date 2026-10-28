@@ -25,6 +25,8 @@ Consider
 Prove that if $\mathbf x$ and $\mathbf x+\alpha\mathbf z$ are both minimizers for some $\alpha\ne0$, then $\mathbf z\in\ker A$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \Phi(\mathbf y)=\|A\mathbf y-\mathbf b\|_2^2.
@@ -168,6 +170,8 @@ Step [](#s1-4){.pf-ref} is exactly the defining condition for membership in $\ke
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
