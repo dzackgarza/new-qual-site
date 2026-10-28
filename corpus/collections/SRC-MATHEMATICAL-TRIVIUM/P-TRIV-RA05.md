@@ -23,6 +23,8 @@ audit:
 Find $\sin^{100} 0.1$ with $10\%$ accuracy.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -224,6 +226,8 @@ approximation lies inside that interval.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested approximation.
+
+:::
 
 :::
 
