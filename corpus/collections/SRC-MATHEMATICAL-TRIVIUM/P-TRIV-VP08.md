@@ -19,6 +19,8 @@ audit:
 Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partial f } { \partial x } } \right) ^ { 2 } + \left( { \frac { \partial f } { \partial y } } \right) ^ { 2 } + 2 f g \right]$ , where D is a domain in (xy)-plane with the boundary $\partial D$, and $g = g ( x , y )$ is a continuous function in $\bar { D }$ Write the equation on $f ,$ whose solution In a class of functions $f \in$ $C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -281,6 +283,8 @@ The boundary condition $\eta=0$ forces that constant to be zero.
 
 Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the required equation, and steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} identify
 the extremum as the Dirichlet minimizer.
+
+:::
 
 :::
 
