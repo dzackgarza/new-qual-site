@@ -24,6 +24,8 @@ Prove
 If $A\subset\mathbb R$ has finite Lebesgue measure, explain what this says about the translates $A+t$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -163,6 +165,8 @@ m(A\triangle(A+t))
 
 Step [](#s1-3){.pf-ref} proves the translation-continuity statement, and step [](#s1-4){.pf-ref} gives
 its consequence for finite-measure sets.
+
+:::
 
 :::
 
