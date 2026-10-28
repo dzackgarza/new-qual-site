@@ -25,6 +25,8 @@ for every $x\in[0,1]$ and $n\ge1$.
 Prove that $f$ is continuously differentiable on $[0,1]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -305,6 +307,8 @@ f\in C^1([0,1]).
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
