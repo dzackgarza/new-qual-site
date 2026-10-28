@@ -29,6 +29,8 @@ Prove that for every bounded harmonic function $u:\Omega\to\mathbb R$ there is a
 \]
 :::
 
+::: {.solution}
+
 Define the conjugate differential
 \[
 \alpha
@@ -270,6 +272,8 @@ is holomorphic on $\Omega$. The imaginary part of a holomorphic function is harm
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the required harmonic conjugate.
+
+:::
 
 :::
 
