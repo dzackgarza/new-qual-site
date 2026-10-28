@@ -29,6 +29,8 @@ for every \(z\in\mathbb C\), and
 for every \(z\in\mathbb C\). Prove that \(f\) is constant.
 :::
 
+::: {.solution}
+
 For each integer
 $$
 n\in\ZZ
@@ -369,6 +371,8 @@ Step [](#s1-6){.pf-ref} says that $f$ is constant along every horizontal line, a
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
