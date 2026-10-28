@@ -43,6 +43,8 @@ $$
 is undefined there. For $\alpha=0$, the normalized integral equals $1$, which is also the limit of the displayed expression as $\alpha\to0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -306,6 +308,8 @@ so this is precisely the continuous extension of the formula in step [](#s1-5){.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), while steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b), including the source's omitted $\alpha=0$ interpretation.
+
+:::
 
 :::
 
