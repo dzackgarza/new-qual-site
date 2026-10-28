@@ -29,6 +29,8 @@ For what complex number $z$ does $\cos z=3$?
 As printed in the source, choices (B) and (C) coincide, as do (A), (D) and (E). From $e^{iz}+e^{-iz}=6$, one gets $e^{iz}=3\pm2\sqrt2$, so the solutions are $z=2k\pi-i\log(3\pm2\sqrt2)$ for $k\in\mathbb{Z}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -139,6 +141,8 @@ Direct inspection of the retained page shows $\sqrt{2i}$, not $\sqrt2$, in every
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give the complete mathematical solution and the status of the printed choices.
+
+:::
 
 :::
 
