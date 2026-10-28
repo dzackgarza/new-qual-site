@@ -28,6 +28,8 @@ Prove that $\lim_{n\to\infty}a_n/n$ exists by showing
 Hint: Treat $\liminf$ and $\limsup$ separately.
 :::
 
+::: {.solution}
+
 Set
 \[
 \alpha=\inf_{m\ge1}\frac{a_m}{m}.
@@ -239,6 +241,8 @@ Thus the ordinary limit exists and equals the stated infimum.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is Fekete's lemma in the requested form.
+
+:::
 
 :::
 
