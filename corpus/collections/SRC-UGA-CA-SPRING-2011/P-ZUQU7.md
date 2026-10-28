@@ -26,6 +26,8 @@ Find all injective conformal maps of $G$ onto $\DD$.
 These may be expressed as compositions of maps, but explain why this list is complete.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -191,6 +193,8 @@ composition is again a biholomorphism from $G$ onto $\DD$.
 
 Step [](#s1-5){.pf-ref} gives the complete list of injective conformal maps of $G$ onto
 $\DD$ and proves its completeness.
+
+:::
 
 :::
 
