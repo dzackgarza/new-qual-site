@@ -24,6 +24,8 @@ For each proposition, give a short proof if it is true and a counterexample if i
 \]
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 The proposition is false.
@@ -533,6 +535,8 @@ Use steps [](#s1-6){.pf-ref} and [](#s1-14){.pf-ref}, and [](#s1-26){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-27){.pf-ref} gives the required dispositions.
+
+:::
 
 :::
 
