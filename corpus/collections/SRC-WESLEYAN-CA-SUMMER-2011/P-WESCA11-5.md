@@ -23,6 +23,8 @@ Define
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \gamma:[a,b]\to\mathbb C
@@ -206,6 +208,8 @@ and substitution into step [](#s1-1){.pf-ref} gives the negative integral.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested definition.
+
+:::
 
 :::
 
