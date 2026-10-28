@@ -28,6 +28,8 @@ Let $f \in L^p(\mathbb{R})$, $1 < p < \infty$, and let $a \in \mathbb{R}$ be suc
 converges for almost all $x \in \mathbb{R}$.
 :::
 
+::: {.solution}
+
 Let
 \[
 q=\frac{p}{p-1}
@@ -479,6 +481,8 @@ The series has nonnegative terms, so convergence is equivalent to finiteness of 
 ::: pf-qed
 
 Step [](#s1-17){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
