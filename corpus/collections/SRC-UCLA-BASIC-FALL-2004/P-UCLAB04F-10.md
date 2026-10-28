@@ -48,6 +48,8 @@ to a sufficiently high power.
 As printed, the definition is not meaningful for nonreal $\lambda$: if $V=\mathbb R^n$, then $T-\lambda I$ is not an endomorphism of $V$.
 Replace $V$ by $\mathbb C^n$, or equivalently complexify $T$.
 
+::: {.solution}
+
 Fix $\lambda\in\mathbb C$ and put
 \[
 A=T-\lambda I.
@@ -212,6 +214,8 @@ Every vector in the intersection is zero by step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), with the uniform choice $M=n$, and step [](#s1-6){.pf-ref} proves part (b) for the corrected complexified statement.
+
+:::
 
 :::
 
