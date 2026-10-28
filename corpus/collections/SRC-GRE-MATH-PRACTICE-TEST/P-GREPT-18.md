@@ -25,6 +25,8 @@ $\lim_{x \to 0} (x + e^{3x})^{1/x} =$
 (E) $e^4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required limit.
+
+:::
 
 :::
 
