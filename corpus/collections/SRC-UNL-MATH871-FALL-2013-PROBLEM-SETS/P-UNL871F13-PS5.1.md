@@ -23,6 +23,8 @@ g\circ f:X\to Z
 are homeomorphisms.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -232,6 +234,8 @@ continuous inverse.
 
 Step [](#s1-4){.pf-ref} proves the inverse statement, and step [](#s1-9){.pf-ref} proves the composition
 statement.
+
+:::
 
 :::
 
