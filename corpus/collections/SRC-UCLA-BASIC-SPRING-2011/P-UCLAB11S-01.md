@@ -30,6 +30,8 @@ then
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \lambda_1,\lambda_2,\lambda_3
@@ -321,6 +323,8 @@ Thus both listed classes actually occur.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives all similarity classes, and step [](#s1-9){.pf-ref} verifies that both satisfy the hypotheses.
+
+:::
 
 :::
 
