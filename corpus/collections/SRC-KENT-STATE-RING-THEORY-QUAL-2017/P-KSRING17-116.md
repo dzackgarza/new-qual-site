@@ -26,6 +26,8 @@ Verify your example.
 (c) For the ring $R = \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \mid a , b , c \in \mathbb { Z } \right\}$ with the usual matrix operations, find the ideal A of part (a).
 :::
 
+::: {.solution}
+
 For
 $$
 r,s\in R,
@@ -580,6 +582,8 @@ By step [](#s1-11){.pf-ref} this is the commutator ideal, and by part (a), prove
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-13){.pf-ref} proves part (c).
+
+:::
 
 :::
 
