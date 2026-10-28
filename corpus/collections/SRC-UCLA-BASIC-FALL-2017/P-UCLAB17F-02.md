@@ -24,6 +24,8 @@ Let $A,B$ be $n\times n$ matrices.
 (b) Is the result true without assuming $A$ invertible? Prove your claim.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -218,6 +220,8 @@ Step [](#s1-5){.pf-ref} is exactly the equality of the two characteristic polyno
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove the stronger statement required in part (b).
+
+:::
 
 :::
 
