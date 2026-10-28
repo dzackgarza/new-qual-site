@@ -26,6 +26,8 @@ A right circular cylinder has base radius $r=100$ cm and height $h=100$ cm. Whic
 (E) Volume will increase by approximately $3\pi(100)^2$ cubic cm
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -100,6 +102,8 @@ The approximation in step [](#s1-2){.pf-ref} is positive, so it represents an in
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested approximate change and corresponding choice.
+
+:::
 
 :::
 
