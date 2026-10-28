@@ -31,6 +31,8 @@ Find
 (b) $c _ { i } .$
 :::
 
+::: {.solution}
+
 Assume the energy levels are indexed by the nonnegative integers $0,1,2,\ldots$, and put
 \[
 r=e^{-\alpha}\in(0,1).
@@ -167,6 +169,8 @@ Replace $c_i$ and $c_k$ in step [](#s1-5){.pf-ref} by step [](#s1-3){.pf-ref}. S
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the constants $c_i$, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the two-step transition probabilities.
+
+:::
 
 :::
 
