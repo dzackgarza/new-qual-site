@@ -19,6 +19,8 @@ audit:
 Show that if a connected manifold M is the boundary of a compact manifold, then the Euler characteristic of M is even.
 :::
 
+::: {.solution}
+
 Let $W$ be a compact manifold with boundary
 \[
 \partial W=M.
@@ -143,6 +145,8 @@ This is exactly step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the claim.
+
+:::
 
 :::
 
