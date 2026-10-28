@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Compute $e^{At}$ for
+Compute $e^{At}$ for
 \[
 A=\begin{pmatrix}2&1&5\\0&1&3\\1&0&1\end{pmatrix}.
 \]
