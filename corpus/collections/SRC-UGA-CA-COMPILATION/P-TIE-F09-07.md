@@ -41,6 +41,8 @@ $$
 With $n = 1$ and $a = 1 - s$ for $0 < s < 1$ it reads $\int_0^\infty \frac{v^{-s}}{1+v}\,dv = \frac{\pi}{\sin \pi s}$, which the hint turns into the reflection formula.
 :::
 
+::: {.solution}
+
 For $t>0$ and $s\in\CC$, write
 $$
 t^{s-1}=e^{(s-1)\log t},
@@ -273,6 +275,8 @@ the strip. The identity theorem therefore gives the equality throughout the stri
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b).
+
+:::
 
 :::
 
