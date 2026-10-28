@@ -26,6 +26,8 @@ M_n=\{x:|f_n(x)|\ge2^{-n}\}.
 (b) Prove that if $\mu(M_n)\le2^{-n}$ for every $n$, then $f_n\to0$ almost uniformly.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -123,6 +125,8 @@ for $n\ge N$. Hence $f_n\to0$ uniformly on $X\setminus E_N$, and therefore almos
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-4){.pf-ref} proves the criterion.
+
+:::
 
 :::
 
