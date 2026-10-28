@@ -28,6 +28,8 @@ converge or diverge?
 The general denominator in the source is printed as $3\sqrt{3}\sqrt[3]{3} + \cdots + \sqrt[n]{3}$, with plus signs; the pattern of the first three terms and the source's solution, which writes the series as $\sum_{n=1}^{\infty} 3^{-H_n}$ with $H_n = \sum_{k=1}^{n} \frac{1}{k}$, show that the intended $n$-th denominator is the product $3\sqrt{3}\sqrt[3]{3}\cdots\sqrt[n]{3}$.
 :::
 
+::: {.solution}
+
 Let
 \[
 H_n=\sum_{k=1}^{n}\frac1k.
@@ -246,6 +248,8 @@ the convergent series in step [](#s1-8){.pf-ref}. Apply the comparison test.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives the requested convergence decision.
+
+:::
 
 :::
 
