@@ -25,6 +25,8 @@ Let $S$ be the surface whose equation is $x^2 - xy^2z + z^2 = 1$. The plane tang
 (E) $x - 1 = 2(y - 1) = z - 1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -105,6 +107,8 @@ satisfy that equation.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies one of the listed lines contained in the tangent plane.
+
+:::
 
 :::
 
