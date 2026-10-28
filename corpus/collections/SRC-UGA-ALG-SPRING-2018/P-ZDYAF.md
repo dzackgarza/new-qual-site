@@ -48,6 +48,8 @@ c.
 Use the previous part to describe $M/N$ as a direct sum of cyclic $\ZZ\dash$modules.
 :::
 
+::: {.solution}
+
 Let $e_1,\ldots,e_4$ be the standard basis of $\mathbb Z^4$, and put $t=e_1+e_2+e_3+e_4$.
 
 ::: pf
@@ -137,6 +139,8 @@ Step [](#s1-2){.pf-ref} identifies $M$ with $\bigoplus_{i=1}^4\mathbb Zu_i$, and
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
