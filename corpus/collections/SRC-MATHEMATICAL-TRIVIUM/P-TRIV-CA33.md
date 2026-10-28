@@ -30,6 +30,8 @@ The defining integral converges exactly for $\operatorname{Re} z > 0$: at $z = 0
 The intended condition is $\operatorname{Re} z > 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -268,6 +270,8 @@ Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the order and residue for a
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
