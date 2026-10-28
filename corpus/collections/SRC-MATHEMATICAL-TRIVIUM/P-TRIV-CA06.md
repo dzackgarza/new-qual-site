@@ -19,6 +19,8 @@ audit:
 Compute the Laurent series of $f ( z ) = { \frac { z } { ( z + 1 ) ( z - 1 ) } }$ around $z _ { 0 } = 1$ ; give the region of convergence.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -144,6 +146,8 @@ from the center, so the outer radius cannot be enlarged.
 
 Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the Laurent series and its exact annulus of
 convergence.
+
+:::
 
 :::
 
