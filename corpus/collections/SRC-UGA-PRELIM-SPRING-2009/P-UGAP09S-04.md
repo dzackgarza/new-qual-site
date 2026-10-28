@@ -22,6 +22,8 @@ Prove that if $\sum a_n$ converges and $\sum b_n$ converges absolutely, then
 converges absolutely. What can be said if $\sum a_n$ and $\sum b_n$ are both only conditionally convergent?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -149,6 +151,8 @@ absolutely, while step [](#s1-4){.pf-ref} gives one whose product series diverge
 
 Step [](#s1-2){.pf-ref} proves the first assertion, and step [](#s1-5){.pf-ref} answers the conditional
 case.
+
+:::
 
 :::
 
