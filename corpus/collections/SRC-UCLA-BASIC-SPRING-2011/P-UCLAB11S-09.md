@@ -22,6 +22,8 @@ Prove that
 implies $f\equiv0$.
 :::
 
+::: {.solution}
+
 Assume the standard nondegenerate-interval convention
 \[
 a<b.
@@ -189,6 +191,8 @@ for every $x\in[a,b]$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
