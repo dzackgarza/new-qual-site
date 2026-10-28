@@ -26,6 +26,8 @@ The source's Figure 8 illustrates one sample trajectory with $A=-B=5$ and $x=2$;
 (b) Find the mean time $m ( x )$ of a random walk of the particle before it hits A or B. Assume that $m ( x ) < \infty$ . Check that if $p = q = \frac { 1 } { 2 }$ and $A = - B$ , then $m ( 0 ) = B ^ { 2 }$ . Hence the mean time of random walk is given by a square of distance traveled.
 :::
 
+::: {.solution}
+
 The particle moves left with probability $p$ and right with probability $q=1-p$. Put $N=B-A$ and $i=x-A$.
 
 ::: pf
@@ -184,6 +186,8 @@ m(0)=(0+B)(B-0)=B^2.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the absorption probabilities, and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} give the mean absorption time and the requested symmetric check.
+
+:::
 
 :::
 
