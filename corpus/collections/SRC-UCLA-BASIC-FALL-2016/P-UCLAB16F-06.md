@@ -16,8 +16,12 @@ audit:
 ---
 
 ::: {.problem}
-Let A be an invertible $n \times n$ matrix whose entries belong to $\mathbb { Q }$ the set of rational numbers.
-Suppose that $A v = 3 v$ for a vector $v \in \mathbb { R } ^ { n }$ (i) Give an example in which no non-zero scalar multiple λv for $\lambda \in \mathbb { R }$ is in $\mathbb { Q } ^ { n }$ (ii) Show that there is always a non-zero $w \in \mathbb { Q } ^ { n }$ such that $A w = 3 w$
+Let $A$ be an invertible $n \times n$ matrix whose entries belong to $\QQ$, the set of rational numbers.
+Suppose that $Av = 3v$ for a vector $v \in \RR^n$.
+
+(i) Give an example in which no non-zero scalar multiple $\lambda v$ for $\lambda \in \RR$ is in $\QQ^n$.
+
+(ii) Show that there is always a non-zero $w \in \QQ^n$ such that $Aw = 3w$.
 :::
 
 ::: {.solution}
