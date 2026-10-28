@@ -28,6 +28,8 @@ f(x+a)\ge f(x)
 for almost all $x\in\mathbb R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -222,6 +224,8 @@ The exceptional set in each interval is null, and the countable union of these e
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
