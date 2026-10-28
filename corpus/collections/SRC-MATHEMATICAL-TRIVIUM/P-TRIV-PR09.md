@@ -22,6 +22,8 @@ What is the probability to fail the meeting?
 Assume that anyone can arrive at any time within the given interval.
 :::
 
+::: {.solution}
+
 Measure arrival times $X,Y$ in minutes after 2:00, and assume they are independent and uniform on $[0,60]$.
 
 ::: pf
@@ -97,6 +99,8 @@ Divide the total failure area $2500$ from step [](#s1-3){.pf-ref} by the sample-
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested probability of failing to meet.
+
+:::
 
 :::
 
