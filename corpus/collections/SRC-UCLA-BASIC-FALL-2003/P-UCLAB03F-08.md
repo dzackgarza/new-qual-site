@@ -32,6 +32,8 @@ You may choose their order and use earlier statements to prove later ones.
 (c) If $A$ is a real $n\times n$ matrix, then its row rank equals its column rank.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -248,6 +250,8 @@ Step [](#s1-6){.pf-ref} shows these two ranks are equal.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-5){.pf-ref} proves part (b), and step [](#s1-7){.pf-ref} proves part (c).
+
+:::
 
 :::
 
