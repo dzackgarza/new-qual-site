@@ -21,6 +21,8 @@ Suppose $v_1,\ldots,v_n$ are nonzero eigenvectors of $T$, each corresponding to 
 Prove that $v_1,\ldots,v_n$ are linearly independent.
 :::
 
+::: {.solution}
+
 Let
 \[
 Tv_i=\lambda_i v_i,
@@ -139,6 +141,8 @@ The index $j$ in step [](#s1-4){.pf-ref} was arbitrary. Hence every coefficient 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
