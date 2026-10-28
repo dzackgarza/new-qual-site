@@ -21,6 +21,8 @@ Let F be a field of characteristic $p > 0$ . With $\sigma$ as in the previous pr
 Do you know what $F [ X ] ^ { \sigma }$ and $F ( X ) ^ { \sigma }$ are?
 :::
 
+::: {.solution}
+
 Let
 $$
 L=F(X)
@@ -314,6 +316,8 @@ Combine steps [](#s1-6){.pf-ref} and [](#s1-10){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the Galois-degree assertion, and step [](#s1-11){.pf-ref} identifies both invariant rings requested in the problem.
+
+:::
 
 :::
 
