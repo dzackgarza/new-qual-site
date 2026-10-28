@@ -19,6 +19,8 @@ audit:
 Compute $\int _ { 0 } ^ { \pi } ( \cos \theta ) ^ { 2 n } \mathrm { d } \theta ;$
 :::
 
+::: {.solution}
+
 Assume $n$ is a nonnegative integer.
 
 ::: pf
@@ -168,6 +170,8 @@ Apply step [](#s1-1){.pf-ref} to the value obtained in step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested integral.
+
+:::
 
 :::
 
