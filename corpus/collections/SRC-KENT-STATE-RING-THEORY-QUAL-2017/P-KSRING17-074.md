@@ -23,6 +23,8 @@ Let R be a commutative ring with identity such that not every ideal is a princip
 (b) If I is the ideal of part (a), show that $R / I$ is a principal ideal ring.
 :::
 
+::: {.solution}
+
 Let
 $$
 \mathcal P
@@ -423,6 +425,8 @@ Step [](#s1-10){.pf-ref} is exactly the defining property of a principal ideal r
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-11){.pf-ref} proves part (b).
+
+:::
 
 :::
 
