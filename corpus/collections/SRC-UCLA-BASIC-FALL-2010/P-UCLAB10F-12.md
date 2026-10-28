@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let
+Let
 \[
 D(t)=\{(x,y)\in\mathbb R^2:x^2+y^2\le r(t)^2\},
 \]
