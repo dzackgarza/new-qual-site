@@ -36,6 +36,8 @@ a. Find the minimal polynomial of $B$.
 b. Find a $3\times 3$ matrix $J$ in Jordan canonical form and an invertible matrix $P$ such that $B = PJ\inverseof{P}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ Thus $B$ is similar to the displayed Jordan matrix.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove parts (a) and (b), respectively.
+
+:::
 
 :::
 
