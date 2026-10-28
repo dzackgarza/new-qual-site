@@ -24,6 +24,8 @@ Prove Jordan's lemma: if $f:\mathbb C\to\mathbb C$ is meromorphic, $R>0$, and $k
 where $\Gamma$ is the quarter-circle $z=Re^{i\theta}$, $0\le\theta\le\pi/2$.
 :::
 
+::: {.solution}
+
 Set
 $$
 M\coloneqq\sup_{z\in\Gamma}\abs{f(z)}.
@@ -123,6 +125,8 @@ Step [](#s1-2){.pf-ref} gives the same inequality with constant $\pi/2$, and $\p
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
