@@ -23,6 +23,8 @@ P(T)=0.
 Prove that every eigenvalue of $T$ is a root of $P(X)$.
 :::
 
+::: {.solution}
+
 Let $\lambda$ be an eigenvalue of $T$, and choose a nonzero eigenvector $v$ such that
 \[
 Tv=\lambda v.
@@ -132,6 +134,8 @@ The eigenvalue $\lambda$ was arbitrary, and step [](#s1-3){.pf-ref} shows that $
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
