@@ -20,6 +20,8 @@ audit:
 Find the number of roots of $z ^ { 4 } - 6 z + 3 = 0$ in $| z | < 1$ and $1 < | z | < 2$ respectively.
 :::
 
+::: {.solution}
+
 Let
 $$
 P(z)\coloneqq z^4-6z+3.
@@ -126,6 +128,8 @@ This is the combination of steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives both requested numbers of roots.
+
+:::
 
 :::
 
