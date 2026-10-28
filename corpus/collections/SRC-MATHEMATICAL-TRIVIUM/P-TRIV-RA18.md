@@ -19,6 +19,8 @@ audit:
 $\mathrm { C a l c u l a t e } \int e ^ { 2 x } \sin { x } d x .$
 :::
 
+::: {.solution}
+
 Let
 $$
 I=\int e^{2x}\sin x\,dx.
@@ -134,6 +136,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required antiderivative.
+
+:::
 
 :::
 
