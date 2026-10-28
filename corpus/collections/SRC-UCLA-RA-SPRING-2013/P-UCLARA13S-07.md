@@ -21,6 +21,8 @@ Let $f:\mathbb C\to\mathbb C$ be entire and suppose $\log|f|$ is absolutely inte
 Show that $f$ is constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -188,6 +190,8 @@ Assuming that $f$ is nonconstant led to the contradiction in step [](#s1-5){.pf-
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
