@@ -25,6 +25,8 @@ Suppose there are positive real numbers \(a,b,k\) such that
 for every \(z\in\mathbb C\). Prove that \(f\) is a polynomial.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -172,6 +174,8 @@ Thus the series is finite.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required polynomiality, with the sharper degree bound.
+
+:::
 
 :::
 
