@@ -30,6 +30,8 @@ Show that there is a differentiable parametrized surface
 through $(x_0,y_0,z_0)$ on which $f=0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -325,6 +327,8 @@ Step [](#s1-6){.pf-ref} gives passage through the required point, step [](#s1-7)
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
