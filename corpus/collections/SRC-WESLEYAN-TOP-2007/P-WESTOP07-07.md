@@ -16,6 +16,8 @@ audit:
 3. If $X$ is separable, prove that there are at most $\mathfrak c$ continuous maps $X\to\mathbb R$, where $\mathfrak c=|\mathbb R|$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -439,6 +441,8 @@ Combine the injection from step [](#s1-5){.pf-ref} with the cardinal bound from 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (1), steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove part (2), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (3).
+
+:::
 
 :::
 
