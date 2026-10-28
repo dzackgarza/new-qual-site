@@ -22,6 +22,8 @@ f:\mathbb R\to\mathbb R,\qquad f(x)=x^3,
 is continuous at $2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -237,6 +239,8 @@ definition of continuity at $2$.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
