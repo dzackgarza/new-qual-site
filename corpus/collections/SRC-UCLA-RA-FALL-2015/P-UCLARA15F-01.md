@@ -28,6 +28,8 @@ f * g_n(x) = \int f(x-y) g_n(y)\,dy \to 0
 uniformly on each compact subset of $\mathbb{R}^d$, as $n \to \infty$.
 :::
 
+::: {.solution}
+
 Let
 \[
 K\subset\mathbb R^d
@@ -510,6 +512,8 @@ Local uniform convergence means uniform convergence on every compact subset.
 ::: pf-qed
 
 Step [](#s1-21){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
