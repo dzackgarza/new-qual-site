@@ -24,6 +24,8 @@ Prove, using the maximum principle, that
 for $|z|<1$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -231,6 +233,8 @@ f(0)=0.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is Schwarz's estimate obtained from the maximum principle.
+
+:::
 
 :::
 
