@@ -36,6 +36,8 @@ x\longmapsto F(x)^{-1}
 is continuous.
 :::
 
+::: {.solution}
+
 Let
 $$
 U\coloneqq\{x\in\RR:F(x)\text{ is invertible}\}.
@@ -126,6 +128,8 @@ The metric on $M_n(\CC)$ is the Euclidean metric on its finitely many complex co
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
