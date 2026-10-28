@@ -16,11 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-A matrix T (with entries, say, in the field $\mathbf { C }$ of complex numbers) is diagonalizable if there exists a non-singular matrix S such that $S T S ^ { - 1 }$ is diagonal.
-Prove that if $a , \lambda \in \mathbf { C }$ with $a \neq 0$ , then the following matrix is not diagonalizable:
+A matrix $T$ (with entries, say, in the field $\CC$ of complex numbers) is diagonalizable if there exists a non-singular matrix $S$ such that $STS^{-1}$ is diagonal.
+Prove that if $a, \lambda \in \CC$ with $a \neq 0$, then the following matrix is not diagonalizable:
 
 $$
-T = { \left( \begin{array} { l l l } { 1 } & { a } & { 0 } \\ { 0 } & { 1 } & { a } \\ { 0 } & { 0 } & { \lambda } \end{array} \right) }
+T = \begin{pmatrix} 1 & a & 0 \\ 0 & 1 & a \\ 0 & 0 & \lambda \end{pmatrix}.
 $$
 :::
 
