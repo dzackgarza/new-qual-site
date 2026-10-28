@@ -19,6 +19,8 @@ audit:
 Suppose $A , B$ are invertible $n \times n$ matrices with complex entries, such that $A B A ^ { - 1 } = B ^ { 3 }$ . Show that all the eigenvalues of B are roots of unity.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -200,6 +202,8 @@ for some positive integer $N$, which is exactly the definition of a root of unit
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
