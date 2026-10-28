@@ -20,6 +20,8 @@ A conducting sphere of radius a with zero total charge is exposed to a uniform e
 Find the electrostatic potential outside the sphere if we set the surface of the sphere to have potential zero.
 :::
 
+::: {.solution}
+
 Use spherical coordinates with polar axis in the direction of the applied field, so the imposed far-field potential is
 \[
 \Phi(r,\theta)\sim-Er\cos\theta
@@ -113,6 +115,8 @@ Equivalently, step [](#s1-2){.pf-ref} has no $r^{-1}$ monopole term. Thus the so
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested exterior potential, and step [](#s1-4){.pf-ref} verifies the charge condition.
+
+:::
 
 :::
 
