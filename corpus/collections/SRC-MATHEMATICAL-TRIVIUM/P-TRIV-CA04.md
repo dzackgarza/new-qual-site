@@ -19,6 +19,8 @@ audit:
 Compute the Laurent series of $f ( z ) = \frac { e ^ { z } } { ( z - 1 ) ^ { 2 } }$ around $z _ { 0 } = 1$ give the region of convergence.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -145,6 +147,8 @@ $z=1$, where the original function has a pole of order $2$.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give the Laurent series and its region of convergence.
+
+:::
 
 :::
 
