@@ -24,6 +24,8 @@ v=v_1+v_2,\qquad f(v)=f(v_1),\qquad g(v)=g(v_2).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -230,6 +232,8 @@ g(v)=g(v_2).
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the required decomposition for arbitrary $v$.
+
+:::
 
 :::
 
