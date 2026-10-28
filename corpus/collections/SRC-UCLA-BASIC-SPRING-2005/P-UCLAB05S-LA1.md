@@ -35,6 +35,8 @@ X=\sum_{j=1}^m(A_jB_j-B_jA_j).
 \]
 :::
 
+::: {.solution}
+
 Let $E_{ij}$ denote the standard matrix unit.
 
 ::: pf
@@ -155,6 +157,8 @@ The forward implication is step [](#s1-4){.pf-ref}. The reverse implication is s
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
