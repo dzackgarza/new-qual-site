@@ -19,6 +19,8 @@ audit:
 Find Stirling's approximation: consider $\begin{array} { r } { n ! = \Gamma ( n + 1 ) = \int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x } \end{array}$ for $n \gg 1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -234,6 +236,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is Stirling's formula.
+
+:::
 
 :::
 
