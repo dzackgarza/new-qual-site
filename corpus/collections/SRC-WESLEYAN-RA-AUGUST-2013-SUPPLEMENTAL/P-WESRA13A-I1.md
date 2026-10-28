@@ -19,6 +19,8 @@ audit:
 State Fatou's lemma.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -45,6 +47,8 @@ This is the statement requested in the problem.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives Fatou's lemma with its hypotheses and conclusion.
+
+:::
 
 :::
 
