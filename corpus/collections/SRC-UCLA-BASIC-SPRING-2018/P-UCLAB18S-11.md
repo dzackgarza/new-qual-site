@@ -23,6 +23,8 @@ Prove that $f$ is surjective.
 Hint: assume $x\notin f(X)$ and follow the iterates of $f$ on $x$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -84,6 +86,8 @@ By step [](#s1-2){.pf-ref}, any two distinct terms of the sequence are at distan
 ::: pf-qed
 
 Compact metric spaces are sequentially compact, so every sequence in $X$ has a convergent subsequence. Step [](#s1-3){.pf-ref} contradicts this for the sequence $(x_n)$. Therefore the assumption in step [](#s1-1){.pf-ref} was false, and $f$ is surjective.
+
+:::
 
 :::
 
