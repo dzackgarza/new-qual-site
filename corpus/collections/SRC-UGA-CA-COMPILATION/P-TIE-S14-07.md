@@ -41,6 +41,8 @@ $$
 With $n = 1$ and $a = 1 - s$ for $0 < s < 1$ it reads $\int_0^\infty \frac{v^{-s}}{1+v}\,dv = \frac{\pi}{\sin \pi s}$, which the hint turns into the reflection formula.
 :::
 
+::: {.solution}
+
 For $t>0$ and complex $s$, write
 $$
 t^{s-1}\coloneqq e^{(s-1)\log t},
@@ -227,6 +229,8 @@ By step [](#s1-2){.pf-ref}, both $\Gamma(s)$ and $\Gamma(1-s)$ are analytic on t
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b) on the natural domain where both gamma factors are defined by the integral from part (a).
+
+:::
 
 :::
 
