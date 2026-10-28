@@ -25,6 +25,8 @@ Consider the matrix $A = { \left[ \begin{array} { l l } { 1 } & { 2 } \\ { 5 } &
 (c) Write the transformation that reduces A to diagonal form.
 :::
 
+::: {.solution}
+
 Let
 $$
 A=
@@ -459,6 +461,8 @@ Steps [](#s1-12){.pf-ref} through [](#s1-14){.pf-ref} give the diagonalizing tra
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-15){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
