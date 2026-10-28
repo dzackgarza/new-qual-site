@@ -27,6 +27,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -130,6 +132,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
