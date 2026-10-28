@@ -28,6 +28,8 @@ b. Assume that there are at least two distinct intermediate subfields $F \subset
 Prove that $\gal(E/F)$ is nonabelian.
 :::
 
+::: {.solution}
+
 Let $G=\operatorname{Gal}(E/F)$, with $|G|=14$.
 
 ::: pf
@@ -61,6 +63,8 @@ The two fields correspond to distinct subgroups $H_1,H_2\leq G$ of order two by 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove parts (a) and (b), respectively.
+
+:::
 
 :::
 
