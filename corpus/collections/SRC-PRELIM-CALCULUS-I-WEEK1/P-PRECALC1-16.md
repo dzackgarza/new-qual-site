@@ -15,6 +15,8 @@ review: draft
 Let $\begin{array} { r } { f ( x ) = \int _ { 0 } ^ { x } \cos ^ { 2 } ( t ^ { 2 } ) d t } \end{array}$ . Find $( f ^ { - 1 } ) ^ { \prime } ( y )$ for $y = f ( 3 )$
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)
@@ -218,6 +220,8 @@ By definition,
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the requested derivative.
+
+:::
 
 :::
 
