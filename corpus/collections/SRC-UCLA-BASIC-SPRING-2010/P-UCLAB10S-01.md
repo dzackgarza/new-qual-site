@@ -24,6 +24,8 @@ Problem 1. Let $u_1,\ldots,u_n$ be an orthonormal basis of $\mathbb R^n$, and le
 Prove that $u_1+y_1,\ldots,u_n+y_n$ are linearly independent.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -271,6 +273,8 @@ Step [](#s1-8){.pf-ref} shows that the only linear relation among these vectors 
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
