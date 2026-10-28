@@ -19,6 +19,8 @@ audit:
 Let $f \in C ^ { 2 } ( \bar { D } )$ be an extremum of the functional $S [ f ] = \int _ { { \cal D } } d x { \cal L } ( f , f ^ { \prime } )$ in a class of functions satisfying the boundary condition $f | _ { \partial D } = f _ { 0 } \mathrm { ~ , ~ }$ What additional condition must be imposed on $f$ to make it an extremum of $S [ f ]$ in a class of $C ^ { 2 } ( \bar { D } )$ functions with all possible boundary conditions?
 :::
 
+::: {.solution}
+
 Assume
 $$
 D=[a,b].
@@ -205,6 +207,8 @@ Step [](#s1-6){.pf-ref} gives the condition at both.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required additional condition.
+
+:::
 
 :::
 
