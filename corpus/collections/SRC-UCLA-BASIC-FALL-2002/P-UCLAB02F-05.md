@@ -30,6 +30,8 @@ for all $(x,y),(x_1,y_1)\in\mathbb R^2$.
 (c) Give an example for which that value of $M$ makes the inequality an equality.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -187,6 +189,8 @@ Step [](#s1-2){.pf-ref} proves this constant always works, step [](#s1-3){.pf-re
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers parts (a)--(c).
+
+:::
 
 :::
 
