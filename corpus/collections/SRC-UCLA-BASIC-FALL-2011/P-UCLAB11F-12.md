@@ -25,6 +25,8 @@ x-y\in\ker A.
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\operatorname{image}(A)\subseteq\mathbb R^m.
@@ -143,6 +145,8 @@ Step [](#s1-3){.pf-ref} is exactly the defining condition for membership in the 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
