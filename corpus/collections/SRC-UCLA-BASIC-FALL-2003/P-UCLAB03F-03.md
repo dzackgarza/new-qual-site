@@ -23,6 +23,8 @@ a_n=\left(1+\frac1n\right)^n
 converges as $n\to\infty$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -137,6 +139,8 @@ By step [](#s1-2){.pf-ref}, $(a_n)$ is increasing, and by step [](#s1-3){.pf-ref
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required convergence.
+
+:::
 
 :::
 
