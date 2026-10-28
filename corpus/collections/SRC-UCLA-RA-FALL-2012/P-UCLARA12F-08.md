@@ -25,6 +25,8 @@ f(z)=g(z)^2
 for every $z\in\mathbb C$.
 :::
 
+::: {.solution}
+
 Let
 $$
 Z\coloneqq\{z\in\CC:f(z)=0\},
@@ -157,6 +159,8 @@ Step [](#s1-4){.pf-ref} extends $g$ holomorphically over all zeros, so $g$ is en
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required entire square root.
+
+:::
 
 :::
 
