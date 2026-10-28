@@ -19,6 +19,8 @@ audit:
 State Liouville's Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -46,6 +48,8 @@ then there is \(c\in\mathbb C\) with \(f(z)=c\) for every \(z\in\mathbb C\). Thi
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested theorem statement.
+
+:::
 
 :::
 
