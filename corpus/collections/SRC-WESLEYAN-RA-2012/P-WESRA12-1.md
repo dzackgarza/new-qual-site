@@ -27,6 +27,8 @@ Let $X$ be nonempty and let $\mathcal A$ be a collection of subsets of $X$.
 (d) If $X$ has exactly four points, determine the possible cardinalities of $\sigma$-algebras on $X$, and for each cardinality determine how many such $\sigma$-algebras exist.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -578,6 +580,8 @@ Collect steps [](#s1-11){.pf-ref} through [](#s1-14){.pf-ref}.
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b),
 steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} answer part (c), and steps [](#s1-5){.pf-ref} through [](#s1-15){.pf-ref} answer part (d).
+
+:::
 
 :::
 
