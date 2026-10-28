@@ -28,6 +28,8 @@ A^TAx=A^Tb.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -363,6 +365,8 @@ Step [](#s1-3){.pf-ref} gives the unique solution of the normal equations, and s
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
