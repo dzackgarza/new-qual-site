@@ -32,6 +32,8 @@ III. $K_3 = \{a + bi : a, b \in \ZZ \text{ and } i = \sqrt{-1}\}$
 (E) None of the $K_i$ are subfields of $\CC$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -136,6 +138,8 @@ Step [](#s1-2){.pf-ref} proves that $K_1$ is a subfield, while steps [](#s1-3){.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
