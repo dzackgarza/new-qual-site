@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Prove or disprove each statement for arbitrary subsets $S,S'$ of a vector space $V$:
+Prove or disprove each statement for arbitrary subsets $S,S'$ of a vector space $V$:
 
 (a)
 \[
