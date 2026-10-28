@@ -25,6 +25,8 @@ Let $g(x) = x^3 + x^2 + x + 1$ be defined for all real $x$. If $f(x) = \frac{1}{
 (E) The domain of $f$ is the set of all real $x$ such that $x \neq 1$, and $f^{-1}(-2) = \frac{5}{8}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -124,6 +126,8 @@ stated value of $f^{-1}(-2)$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
