@@ -32,6 +32,8 @@ Compute, with proof,
 \]
 :::
 
+::: {.solution}
+
 The space
 $$
 X
@@ -300,6 +302,8 @@ to step [](#s1-5){.pf-ref} gives the result.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required computation.
+
+:::
 
 :::
 
