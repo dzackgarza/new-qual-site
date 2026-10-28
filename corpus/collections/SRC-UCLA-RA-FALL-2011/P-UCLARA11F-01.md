@@ -21,6 +21,8 @@ Let $(f_n)$ be measurable functions on $[0,1]$ converging almost everywhere to a
 Prove that for every $\varepsilon>0$ there exists a measurable set $E\subseteq[0,1]$ with $\lambda(E)<\varepsilon$ such that $f_n\to f$ uniformly on $[0,1]\setminus E$.
 :::
 
+::: {.solution}
+
 Fix
 \[
 \varepsilon>0.
@@ -348,6 +350,8 @@ The measure estimate is step [](#s1-9){.pf-ref} and uniform convergence is step 
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
