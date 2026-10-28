@@ -21,6 +21,8 @@ Let $f:\mathbb C\to\mathbb C$ be a nonconstant entire function.
 Without using either Picard theorem, show that there exist complex numbers $z$ of arbitrarily large modulus for which $f(z)$ is a positive real number.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -201,6 +203,8 @@ If this failed for some $R$, step [](#s1-1){.pf-ref} would hold with $R_0=R$, co
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required statement.
+
+:::
 
 :::
 
