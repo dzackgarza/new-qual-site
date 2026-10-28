@@ -24,6 +24,8 @@ Let $(X_a)_{a\in A}$ be an arbitrary family of spaces.
    by declaring $G\subseteq\bigcup_aX_a$ open exactly when $G\cap X_a$ is open in $X_a$ for every $a$. Verify that this is a topology.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -170,6 +172,8 @@ Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref} verify t
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} defines the Tychonoff product topology, and step [](#s1-6){.pf-ref} defines and verifies the topology on the topological sum.
+
+:::
 
 :::
 
