@@ -15,6 +15,8 @@ review: draft
 Let $\begin{array} { r } { J = \int _ { 0 } ^ { 1 } \sqrt { 1 - x ^ { 4 } } d x , \quad K = \int _ { 0 } ^ { 1 } \sqrt { 1 + x ^ { 4 } } d x , \quad L = \int _ { 0 } ^ { 1 } \sqrt { 1 - x ^ { 8 } } d x } \end{array}$ . Order the numbers $J , K , L , 1$ in increasing order.
 :::
 
+::: {.solution}
+
 For \(0<x<1\), one has
 \[
 0<x^8<x^4<1.
@@ -226,6 +228,8 @@ Combine steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the requested ordering.
+
+:::
 
 :::
 
