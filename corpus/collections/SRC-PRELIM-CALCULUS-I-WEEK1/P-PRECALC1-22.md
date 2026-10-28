@@ -20,6 +20,8 @@ audit:
 Calculate $\displaystyle\lim_{n \to \infty} \sum_{k=n+1}^{2n} \frac{1}{k}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -203,6 +205,8 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
