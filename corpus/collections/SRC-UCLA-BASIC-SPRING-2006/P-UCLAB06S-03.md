@@ -19,10 +19,10 @@ audit:
 Prove that the series
 
 $$
-f ( x ) = \sum _ { n = 1 } ^ { \infty } { \frac { \sin n x } { n ^ { 5 / 2 } } }
+f(x) = \sum_{n=1}^\infty \frac{\sin nx}{n^{5/2}}
 $$
 
-converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous function on $\mathbf { R }$ with a continuous derivative.
+converges for all $x \in \RR$ and that $f(x)$ is a continuous function on $\RR$ with a continuous derivative.
 State clearly any facts you assume.
 :::
 
