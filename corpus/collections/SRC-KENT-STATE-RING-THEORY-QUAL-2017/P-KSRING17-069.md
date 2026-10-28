@@ -27,6 +27,8 @@ Let $R$ be a commutative ring with identity and $\sigma : R \to R$ a ring automo
 (b) Show that if $\sigma^2$ is the identity map on $R$, then each element of $R$ is the root of a monic polynomial of degree two in $F[x]$.
 :::
 
+::: {.solution}
+
 Let
 $$
 F
@@ -369,6 +371,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
