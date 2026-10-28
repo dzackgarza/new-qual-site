@@ -30,6 +30,8 @@ f ( y ) \geq f ( x ) + ( y - x ) f ^ { \prime } ( x ) \quad \text { for all } x 
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -329,6 +331,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} prove the forward implicatio
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
