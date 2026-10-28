@@ -28,6 +28,8 @@ Find an explicit conformal mapping from the upper half-plane slit along the vert
 to the unit disc $\{ z \in \mathbb{C} ; |z| < 1 \}$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \Omega
@@ -307,6 +309,8 @@ Applying $T_4$ and then $T_5$ gives the displayed formula.
 
 Step [](#s1-7){.pf-ref} gives the requested explicit conformal map, and steps [](#s1-1){.pf-ref} through
 [](#s1-6){.pf-ref} prove that it has the required source and target.
+
+:::
 
 :::
 
