@@ -17,6 +17,8 @@ Let $X$ be locally compact and Hausdorff.
 2. If $X$ also has a countable basis, prove that $X^*$ is metrizable.
 :::
 
+::: {.solution}
+
 If $X$ is already compact, one may take $X^*=X\sqcup\{\infty\}$ with $\infty$ isolated. The usual noncompact case is described below; the same metrizability argument covers both cases.
 
 ::: pf
@@ -206,6 +208,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} construct and verify the one
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} contains both requested conclusions.
+
+:::
 
 :::
 
