@@ -20,6 +20,8 @@ Let L be a finite Galois extension of F . Let $H _ { 1 }$ and $H _ { 2 }$ be sub
 Prove that $\operatorname { G a l } ( L / E _ { 1 } E _ { 2 } )$ equals $H _ { 1 } \cap H _ { 2 }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ Substitute the identities from step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the required equality.
+
+:::
 
 :::
 
