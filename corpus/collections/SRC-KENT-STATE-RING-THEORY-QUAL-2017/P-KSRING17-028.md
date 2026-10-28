@@ -25,6 +25,8 @@ Let p be a prime and $F _ { p }$ the set of all $2 \times 2$ matrices of the for
 (c) Show that $F _ { 1 3 }$ is not a field.
 :::
 
+::: {.solution}
+
 For
 $$
 a,b\in\FF_p,
@@ -335,6 +337,8 @@ A field has no nonzero zero divisors, whereas step [](#s1-9){.pf-ref} exhibits s
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), step [](#s1-7){.pf-ref} proves part (b), and step [](#s1-10){.pf-ref} proves part (c).
+
+:::
 
 :::
 
