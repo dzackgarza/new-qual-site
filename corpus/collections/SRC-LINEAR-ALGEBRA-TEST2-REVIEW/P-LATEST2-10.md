@@ -34,6 +34,8 @@ which message was sent?
 (A) RUSH  (B) COME  (C) ROME  (D) CALL  (E) not uniquely determined by the information given
 :::
 
+::: {.solution}
+
 Let
 $$
 E=\begin{pmatrix}51&-3\\31&-8\end{pmatrix}.
@@ -173,6 +175,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives answer choice $\boxed{\text{(C)}}$.
+
+:::
 
 :::
 
