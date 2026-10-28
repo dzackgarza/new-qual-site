@@ -30,6 +30,8 @@ For each definition give a quick example; for each theorem briefly indicate a us
 5. regular content.
 :::
 
+::: {.solution}
+
 Choose items (1), (2), and (3).
 
 ::: pf
@@ -328,6 +330,8 @@ This is the Jordan decomposition of $\nu$.
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give one theorem and a use,
 steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give a second theorem and a use,
 and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give a third theorem and a use.
+
+:::
 
 :::
 
