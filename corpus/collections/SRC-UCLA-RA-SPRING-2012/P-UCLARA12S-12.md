@@ -29,6 +29,8 @@ f\!\left(\frac{n}{\sqrt{1+|n|}}\right)=0
 is the zero function.
 :::
 
+::: {.solution}
+
 For $n\in\NN$, set
 $$
 a_n\coloneqq\frac{n}{\sqrt{1+n}}.
@@ -195,6 +197,8 @@ Step [](#s1-5){.pf-ref} rules out every nonzero entire function satisfying the t
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
