@@ -30,6 +30,8 @@ at the point where $y=8$ and $z=4$?
 (E) $\hat{\mathbf{j}}-3\hat{\mathbf{k}}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -117,6 +119,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested normal vector and corresponding choice.
+
+:::
 
 :::
 
