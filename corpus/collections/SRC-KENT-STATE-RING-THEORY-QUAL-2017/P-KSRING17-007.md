@@ -21,6 +21,8 @@ Let $U ( R )$ denote the group of units of a ring R. Prove that if m divides n, 
 Give an example that shows that $U ( R )$ does not have to map onto $U ( S )$ under a surjective ring homomorphism $R \to S$ .
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -228,6 +230,8 @@ is not surjective.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the first assertion, and step [](#s1-6){.pf-ref} gives the requested counterexample.
+
+:::
 
 :::
 
