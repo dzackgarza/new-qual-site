@@ -26,6 +26,8 @@ Calculate
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -77,6 +79,8 @@ By step [](#s1-1){.pf-ref}, the absolute value of the integral is bounded by $\p
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
