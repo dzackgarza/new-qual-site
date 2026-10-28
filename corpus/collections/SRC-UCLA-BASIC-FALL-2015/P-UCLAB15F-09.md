@@ -24,6 +24,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 View $A$ as a complex matrix acting on $\mathbb C^n$.
 
 ::: pf
@@ -182,6 +184,8 @@ These cases exhaust all possibilities.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
