@@ -30,6 +30,8 @@ Suppose $f_n\colon\mathbb R\to\mathbb R$ satisfy:
 Prove that $f_n\to f$ uniformly on $\mathbb R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -430,6 +432,8 @@ Step [](#s1-10){.pf-ref} is exactly the definition of uniform convergence.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
