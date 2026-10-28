@@ -56,6 +56,8 @@ Matsubara poles inside the chosen finite contour, then enlarge that contour and
 replace those residues by the finitely many remaining poles.
 :::
 
+::: {.solution}
+
 Assume $T>0$ and put
 $$
 \beta=T^{-1}.
@@ -446,6 +448,8 @@ $$
 
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} establish the bosonic formula, and steps [](#s1-8){.pf-ref} through [](#s1-13){.pf-ref}
 establish the fermionic formula.
+
+:::
 
 :::
 
