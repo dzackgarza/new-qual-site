@@ -21,6 +21,8 @@ Suppose each $f_n$ is continuous on $\overline D$ and analytic on $D$.
 If $(f_n)$ converges uniformly on $\partial D$, prove that it converges uniformly on $\overline D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -256,6 +258,8 @@ This extra conclusion is not required for the uniform-convergence claim.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove the required uniform convergence on the closure.
+
+:::
 
 :::
 
