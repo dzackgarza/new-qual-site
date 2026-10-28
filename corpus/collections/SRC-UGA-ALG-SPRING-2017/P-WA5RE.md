@@ -32,6 +32,8 @@ Fully justify your answer.
 c. Show that the extension $E/F$ in (b) is a Galois extension.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ By step [](#s1-2){.pf-ref}, the polynomial $g$ has no repeated root and is there
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} answer part (b), and step [](#s1-4){.pf-ref} answers part (c).
+
+:::
 
 :::
 
