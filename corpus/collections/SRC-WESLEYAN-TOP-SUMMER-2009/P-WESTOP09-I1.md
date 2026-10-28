@@ -19,6 +19,8 @@ audit:
    - quotient spaces.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -152,6 +154,8 @@ Hausdorff, so this quotient is not metrizable.
 
 Step [](#s1-1){.pf-ref} gives the requested definitions, step [](#s1-2){.pf-ref} gives a nonmetrizable
 example, and steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} settle the three closure questions.
+
+:::
 
 :::
 
