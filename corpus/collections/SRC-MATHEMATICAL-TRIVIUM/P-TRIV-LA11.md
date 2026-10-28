@@ -27,6 +27,8 @@ $$
 (b) Show that det $V ( x _ { 1 } , . . . , x _ { n } ) = 0$ if and only if $x _ { i } = x _ { j }$ for some $i \neq j$
 :::
 
+::: {.solution}
+
 Let
 $$
 D_n(x_1,\ldots,x_n)
@@ -247,6 +249,8 @@ This is step [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} and [](#s1-10){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
