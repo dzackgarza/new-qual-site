@@ -19,6 +19,8 @@ audit:
 Find local minima and local maxima of the function $f ( x , y ) = x y \log ( x ^ { 2 } + y ^ { 2 } )$ $( x , y ) \neq ( 0 , 0 )$
 :::
 
+::: {.solution}
+
 Use polar coordinates
 $$
 x=r\cos\theta,
@@ -386,6 +388,8 @@ Steps [](#s1-9){.pf-ref} and [](#s1-11){.pf-ref} classify the four non-axis crit
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} gives all local minima and maxima.
+
+:::
 
 :::
 
