@@ -20,6 +20,8 @@ Let R be a commutative ring with identity and let $x \in R$ be a non-nilpotent e
 Prove that there exists a prime ideal P of R such that $x \notin P$
 :::
 
+::: {.solution}
+
 Define
 $$
 S
@@ -342,6 +344,8 @@ Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} construct such a prime ideal
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
