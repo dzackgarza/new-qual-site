@@ -30,6 +30,8 @@ Problem 10. (a) Rigorously justify
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -260,6 +262,8 @@ By step [](#s1-5){.pf-ref} their limit is the integral from step [](#s1-6){.pf-r
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
+
+:::
 
 :::
 
