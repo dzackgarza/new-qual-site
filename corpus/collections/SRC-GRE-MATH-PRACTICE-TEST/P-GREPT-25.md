@@ -25,6 +25,8 @@ $\int_{-1/2}^{1/2} \frac{dx}{1 - x^2} =$
 (E) $3 \log 3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -100,6 +102,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required integral.
+
+:::
 
 :::
 
