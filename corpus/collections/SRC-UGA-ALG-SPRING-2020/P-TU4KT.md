@@ -27,6 +27,8 @@ a. Give (without proof) a classification of all abelian groups of order 2020.
 c. Describe one nonabelian group of order 2020.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -90,6 +92,8 @@ where $D_{202}$ denotes the dihedral group of order $202$; this has order $2020$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} prove the three requested assertions.
+
+:::
 
 :::
 
