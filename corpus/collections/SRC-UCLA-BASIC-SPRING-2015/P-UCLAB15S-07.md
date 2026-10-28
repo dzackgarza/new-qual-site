@@ -24,6 +24,8 @@ f(x,y,z)=9x^2+6y^2+6z^2+12xy-10xz-2yz.
 Does there exist a point $(x,y,z)$ such that $f(x,y,z)<0$?
 :::
 
+::: {.solution}
+
 No.
 
 ::: pf
@@ -210,6 +212,8 @@ Thus the answer is
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
