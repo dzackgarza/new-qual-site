@@ -24,6 +24,8 @@ AA^T=I_{2n+1}.
 Prove that at least one of $1$ or $-1$ is an eigenvalue of $A$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -154,6 +156,8 @@ By step [](#s1-2){.pf-ref}, $\lambda$ is an eigenvalue. Hence
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
