@@ -26,6 +26,8 @@ $$
 where $\| f \| _ { ( \infty , s ) } = \operatorname* { s u p } _ { z \in D _ { s } ( z _ { 0 } ) } | f ( z ) | { \mathrm { ~ a n d ~ } } \| f \| _ { ( 1 , r ) } = \int _ { D _ { r } ( z _ { 0 } ) } | f ( z ) | d x d y .$
 :::
 
+::: {.solution}
+
 Set
 $$
 \rho\coloneqq r-s>0.
@@ -172,6 +174,8 @@ $$
 c=\frac1{\pi(r-s)^2}>0.
 }
 $$
+
+:::
 
 :::
 
