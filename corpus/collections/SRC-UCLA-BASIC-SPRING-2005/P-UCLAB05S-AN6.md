@@ -25,6 +25,8 @@ Consider the set of functions $f:[0,1]\to\mathbb R$ satisfying
 Show that this is a compact subset of $C([0,1])$.
 :::
 
+::: {.solution}
+
 Let $\mathcal F$ denote the displayed family, and equip $C([0,1])$ with the uniform norm
 $$
 \|f\|_\infty\coloneqq\sup_{x\in[0,1]}|f(x)|.
@@ -136,6 +138,8 @@ By step [](#s1-3){.pf-ref}, the closure of $\mathcal F$ is compact, and by step 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
