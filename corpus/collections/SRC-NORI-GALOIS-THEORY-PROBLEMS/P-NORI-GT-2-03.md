@@ -29,6 +29,8 @@ Hint: Use the previous problem to do this when $( b _ { 1 } , b _ { 2 } , b _ { 
 (2) Deduce that $\mathbb { Q } ( { \sqrt { a _ { 1 } } } + { \sqrt { a _ { 2 } } } + { \sqrt { a _ { 3 } } } ) = E .$ Hint: First deduce from part (1) that $\pm { \sqrt { a _ { 1 } } } + \pm { \sqrt { a _ { 2 } } } + \pm { \sqrt { a _ { 3 } } }$ are all conjugates of each other.
 :::
 
+::: {.solution}
+
 Put $E=\mathbb Q(\sqrt2,\sqrt3,\sqrt5)$ and $\alpha=\sqrt2+\sqrt3+\sqrt5$.
 
 ::: pf
@@ -187,6 +189,8 @@ hence the two fields are equal.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (1), and step [](#s1-8){.pf-ref} proves part (2).
+
+:::
 
 :::
 
