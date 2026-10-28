@@ -28,6 +28,8 @@ Show that
 where $\conjugate{(\wait)}$ denotes taking the complex conjugate and $\Tr(\wait)$ is the trace.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -79,6 +81,8 @@ The eigenvalues of $A^{-1}$ are $\lambda_1^{-1},\ldots,\lambda_n^{-1}$, so
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} establishes the requested identity using step [](#s1-1){.pf-ref}.
+
+:::
 
 :::
 
