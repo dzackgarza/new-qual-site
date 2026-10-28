@@ -27,6 +27,8 @@ Solve the following systems of linear equations
 (b) $\begin{cases} x_1 + x_2 + x_3 - x_4 = 0 \\ 3x_1 + 2x_2 + x_3 - x_5 = 0 \end{cases}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -243,6 +245,8 @@ in steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} and collect coefficients.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} give the complete solution spaces for parts (a) and (b).
+
+:::
 
 :::
 
