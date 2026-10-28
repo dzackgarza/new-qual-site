@@ -25,6 +25,8 @@ Show that there is a rearrangement of
 which converges to $\pi$.
 :::
 
+::: {.solution}
+
 Write the positive terms as
 \[
 p_k=\frac1{2k}
@@ -162,6 +164,8 @@ Thus the rearranged series converges to $\pi$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives a rearrangement, and step [](#s1-5){.pf-ref} proves that its sum is $\pi$.
+
+:::
 
 :::
 
