@@ -19,6 +19,8 @@ audit:
 A linear transformation T is called orthogonal if it is nonsingular and ${ } ^ { t } T = T ^ { - 1 }$ . Prove that if $T : { \mathbf { R } } ^ { 2 n + 1 } \to { \mathbf { R } } ^ { 2 n + 1 }$ is orthogonal, then there exists a vector $\boldsymbol { v } \in \mathbf { R } ^ { 2 n + 1 }$ such that $T v = \pm v$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -178,6 +180,8 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
