@@ -26,6 +26,8 @@ Let $(X,\mathcal B,\mu)$ be a measure space and let $f\ge0$ be integrable.
 (b) Prove that $\{x:f(x)>0\}$ is a countable union of sets of finite measure.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -120,6 +122,8 @@ Step [](#s1-2){.pf-ref} with $a=1/n$ gives $\mu(E_n)<\infty$ for every $n$. This
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
+
+:::
 
 :::
 
