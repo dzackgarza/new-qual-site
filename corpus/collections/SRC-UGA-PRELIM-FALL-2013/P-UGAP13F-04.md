@@ -21,6 +21,8 @@ Use the definition of a limit to show that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -285,6 +287,8 @@ definition of the limit.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
