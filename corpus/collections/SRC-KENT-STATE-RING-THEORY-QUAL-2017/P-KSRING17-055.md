@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with identity and let C be a chain of prime ideals of R. Show that $\cup _ { P \in { \mathcal { C } } } P$ and $\cap _ { P \in { \mathcal { C } } } P$ are prime ideals of R.
 :::
 
+::: {.solution}
+
 Set
 $$
 U
@@ -383,6 +385,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves that the union of the chain is prime, and step [](#s1-8){.pf-ref} proves that the intersection is prime.
+
+:::
 
 :::
 
