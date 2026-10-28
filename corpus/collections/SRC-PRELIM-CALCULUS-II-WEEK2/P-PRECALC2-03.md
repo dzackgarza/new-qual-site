@@ -15,6 +15,8 @@ review: draft
 For $n \in \mathbb { N } ,$ evaluate $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x .$
 :::
 
+::: {.solution}
+
 For \(n\ge0\), define
 \[
 I_n
@@ -206,6 +208,8 @@ I_n=n!.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested value.
+
+:::
 
 :::
 
