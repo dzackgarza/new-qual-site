@@ -15,6 +15,8 @@ review: draft
 Define $f ( 0 ) = 0$ and $\begin{array} { r } { f ( x ) = \frac { | x | } { x } } \end{array}$ for $x \neq 0$ . Compute $\int _ { - 1 } ^ { 1 } f ( x ) d x .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -174,6 +176,8 @@ Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}:
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested integral.
+
+:::
 
 :::
 
