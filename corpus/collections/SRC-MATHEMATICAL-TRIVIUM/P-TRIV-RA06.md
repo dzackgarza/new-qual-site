@@ -19,6 +19,8 @@ audit:
 Find ${ \frac { d } { d x } } \ f ( g ( x ) ) | _ { x = 0 }$ , where $f ( u ) = \cosh u , g ( u ) = \sqrt { 1 - u ^ { 2 } } .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -121,6 +123,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required value.
+
+:::
 
 :::
 
