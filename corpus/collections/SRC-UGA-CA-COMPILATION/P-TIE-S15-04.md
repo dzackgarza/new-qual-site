@@ -31,6 +31,8 @@ $$
 The source adds "Also cf. Stein et al, 1.4.7, 3.8.17", a pointer to exercises in Stein and Shakarchi, *Complex Analysis*; the statement does not depend on them.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -247,6 +249,8 @@ In the zero-free case, take the empty product $B\equiv1$. Steps [](#s1-3){.pf-re
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} give exactly the two alternatives in the statement.
+
+:::
 
 :::
 
