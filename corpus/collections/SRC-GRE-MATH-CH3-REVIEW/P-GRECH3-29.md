@@ -29,6 +29,8 @@ If $a$ is a positive number, what's the value of the following double integral?
 (E) $2a^4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -129,6 +131,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested integral value and corresponding choice.
+
+:::
 
 :::
 
