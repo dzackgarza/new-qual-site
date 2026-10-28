@@ -20,6 +20,8 @@ audit:
 Let $G$ be a group and define $\Aut(G)$ to be the set of all isomorphisms of $G$ to itself. Prove that $\Aut(G)$ is a group under the operation of functional composition. For each $g \in G$, define the map $\phi_g(x) = gxg^{-1}$ for $x \in G$ and let $\operatorname{Inn}(G) = \{\phi_g : g \in G\}$. Show that $\operatorname{Inn}(G)$ is a subgroup of $\Aut(G)$. What does $\operatorname{Inn}(G)$ look like if $G$ is abelian?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -172,6 +174,8 @@ Thus every inner automorphism is the identity.
 
 Step [](#s1-2){.pf-ref} proves that $\Aut(G)$ is a group, step [](#s1-5){.pf-ref} proves the subgroup
 claim, and step [](#s1-6){.pf-ref} settles the abelian case.
+
+:::
 
 :::
 
