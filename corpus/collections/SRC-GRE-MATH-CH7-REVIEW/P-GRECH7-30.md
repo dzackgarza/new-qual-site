@@ -29,6 +29,8 @@ What is the polar form of a complex number equal to $(i - \sqrt{3})^6$?
 The source prints a stray empty "$2^6(\ )$" after choice (D).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ Since $\cos5\pi=-1$ and $\sin5\pi=0$, the expression from step [](#s1-2){.pf-ref
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value in polar form and the matching choice.
+
+:::
 
 :::
 
