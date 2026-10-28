@@ -26,6 +26,8 @@ If $\mathbf{F}=(3y-2x)\hat{\mathbf{i}}+(x^2+y)\hat{\mathbf{j}}$, find the value 
 (E) $3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested line-integral value and corresponding choice.
+
+:::
 
 :::
 
