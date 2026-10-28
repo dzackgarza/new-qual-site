@@ -16,16 +16,16 @@ audit:
 ---
 
 ::: {.problem}
-Find the unique point $( x , y ) \in \mathbb { R } ^ { 2 }$ on the curve
+Find the unique point $(x, y) \in \RR^2$ on the curve
 
 $$
-y ^ { 4 } + x ^ { 4 } = 2
+y^4 + x^4 = 2
 $$
 
 that is closest to the line
 
 $$
-y = x - 100 .
+y = x - 100.
 $$
 
 Note: Formal calculations alone do not constitute a solution.
