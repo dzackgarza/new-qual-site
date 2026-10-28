@@ -36,6 +36,8 @@ b&c
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 M=\begin{pmatrix}a&b\\b&c\end{pmatrix},
@@ -148,6 +150,8 @@ Since $(x_0,y_0)\in A$, one has $x_0^2+y_0^2=1$, so $(x_0,y_0)^T\neq0$. Step [](
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
