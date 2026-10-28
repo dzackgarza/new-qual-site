@@ -36,6 +36,8 @@ Prove that
 where all three derivatives are evaluated at $(0,0)$ in their corresponding variable pairs.
 :::
 
+::: {.solution}
+
 Write
 \[
 F_x,F_y,F_z
@@ -236,6 +238,8 @@ All factors cancel because each of $F_x,F_y,F_z$ is nonzero.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required cyclic derivative identity.
+
+:::
 
 :::
 
