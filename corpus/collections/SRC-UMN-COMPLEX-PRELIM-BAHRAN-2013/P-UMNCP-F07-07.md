@@ -24,6 +24,8 @@ e^{z^2}-4z^2
 in the open unit disk.
 :::
 
+::: {.solution}
+
 Let
 $$
 f(z)
@@ -122,6 +124,8 @@ has a zero of multiplicity $2$ at the origin and no other zeros. Step [](#s1-2){
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required answer.
+
+:::
 
 :::
 
