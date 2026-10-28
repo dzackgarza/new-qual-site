@@ -19,6 +19,8 @@ audit:
 State the global Cauchy Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -46,6 +48,8 @@ Under this hypothesis the global Cauchy theorem asserts precisely the displayed 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested statement of the theorem.
+
+:::
 
 :::
 
