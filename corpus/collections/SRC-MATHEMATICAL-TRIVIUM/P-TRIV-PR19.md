@@ -28,6 +28,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Let $S=\xi+\eta$. Both $\xi$ and $\eta$ are independent Bernoulli random variables with parameter $p$.
 
 ::: pf
@@ -117,6 +119,8 @@ By steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}, the conditional expectat
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} give the two requested conditional expectations.
+
+:::
 
 :::
 
