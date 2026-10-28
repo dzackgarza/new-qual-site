@@ -28,6 +28,8 @@ with the subspace topology.
 4. Prove that $X$ has exactly two path components, one of which is not closed in $X$.
 :::
 
+::: {.solution}
+
 Set
 \[
 p\coloneqq(0,1)
@@ -499,6 +501,8 @@ so $Y$ is not closed.
 
 Step [](#s1-2){.pf-ref} proves part (1), step [](#s1-5){.pf-ref} proves part (2),
 step [](#s1-10){.pf-ref} proves part (3), and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} prove part (4).
+
+:::
 
 :::
 
