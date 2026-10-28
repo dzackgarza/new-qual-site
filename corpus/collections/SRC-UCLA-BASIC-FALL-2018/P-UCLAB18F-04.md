@@ -26,6 +26,8 @@ g(x)=\frac{f(x)}x
 is decreasing on $(0,1)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -190,6 +192,8 @@ g(y)\le g(x).
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
