@@ -19,6 +19,8 @@ audit:
 Find $\int _ { 0 } ^ { x _ { 0 } } { \sqrt { 1 - { \frac { x ^ { 2 } } { x _ { 0 } ^ { 2 } } } } } d x .$
 :::
 
+::: {.solution}
+
 Assume $x_0>0$.
 
 ::: pf
@@ -140,6 +142,8 @@ Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required value.
+
+:::
 
 :::
 
