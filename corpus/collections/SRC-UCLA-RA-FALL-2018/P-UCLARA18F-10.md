@@ -23,6 +23,8 @@ Problem 10. For $-1<\beta<1$, evaluate
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -161,6 +163,8 @@ and \(-1<\beta<1\) implies \(\cos(\pi\beta/2)>0\), division gives the displayed 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required evaluation.
+
+:::
 
 :::
 
