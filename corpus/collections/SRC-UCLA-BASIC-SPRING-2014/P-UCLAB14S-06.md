@@ -25,6 +25,8 @@ for some polynomial $P(x)$ with complex coefficients.
 Here $A^*$ is the conjugate transpose of $A$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -147,6 +149,8 @@ This is exactly step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
