@@ -28,6 +28,8 @@ Tx_{k+1},Tx_{k+2},\ldots,Tx_n
 is a basis for $\operatorname{range}T$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -276,6 +278,8 @@ Step [](#s1-1){.pf-ref} gives spanning and step [](#s1-6){.pf-ref} gives linear 
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
