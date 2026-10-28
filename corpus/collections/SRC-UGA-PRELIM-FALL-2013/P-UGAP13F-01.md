@@ -25,6 +25,8 @@ A function $f:\mathbb R\to\mathbb R$ is uniformly continuous if for every $\vare
 (b) Give an example, with brief explanation, of a function $f:\mathbb R\to\mathbb R$ that is continuous but not uniformly continuous.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -169,6 +171,8 @@ By step [](#s1-1){.pf-ref}, $f$ is not uniformly continuous.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} answer part (b).
+
+:::
 
 :::
 
