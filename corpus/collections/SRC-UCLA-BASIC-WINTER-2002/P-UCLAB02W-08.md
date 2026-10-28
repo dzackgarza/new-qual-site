@@ -29,6 +29,8 @@ Prove that
 Here the rank of a linear transformation is the dimension of its image.
 :::
 
+::: {.solution}
+
 Let
 $$
 R=\operatorname{im}T\subseteq W.
@@ -201,6 +203,8 @@ The first inequality is the conjunction of steps [](#s1-4){.pf-ref} and [](#s1-5
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required lower bound, and step [](#s1-6){.pf-ref} proves the requested upper bound.
+
+:::
 
 :::
 
