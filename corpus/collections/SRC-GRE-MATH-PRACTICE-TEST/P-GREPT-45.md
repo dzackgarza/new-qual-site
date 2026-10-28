@@ -27,6 +27,8 @@ $$\int_C e^x (\sin y \, dx + \cos y \, dy)$$
 (E) $\pi e$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required integral.
+
+:::
 
 :::
 
