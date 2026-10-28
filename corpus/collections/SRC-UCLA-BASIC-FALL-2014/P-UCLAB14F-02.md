@@ -20,6 +20,8 @@ audit:
 Problem 2. Let $A,B$ be two closed subsets of $\mathbb R^n$ such that $A\cup B$ and $A\cap B$ are connected. Prove that $A$ is connected.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -200,6 +202,8 @@ The assumption that $A$ is disconnected leads to the contradiction in step [](#s
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
