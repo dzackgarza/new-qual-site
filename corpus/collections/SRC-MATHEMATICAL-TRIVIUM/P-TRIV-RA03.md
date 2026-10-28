@@ -32,6 +32,8 @@ $$
 The solution uses this intended definition.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -185,6 +187,8 @@ Step [](#s1-4){.pf-ref} is the base case, and step [](#s1-5){.pf-ref} gives the 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required value of every derivative at the origin.
+
+:::
 
 :::
 
