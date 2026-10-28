@@ -24,6 +24,8 @@ Let $f:[0,1]\to\mathbb R$ be continuous and absolutely continuous on every inter
 (b) Show that if, in addition, $f$ is of bounded variation on $[0,1]$, then $f$ is absolutely continuous on $[0,1]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -200,6 +202,8 @@ Step [](#s1-8){.pf-ref} verifies the defining $\varepsilon$--$\delta$ interval c
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part (a), and steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref} prove part (b).
+
+:::
 
 :::
 
