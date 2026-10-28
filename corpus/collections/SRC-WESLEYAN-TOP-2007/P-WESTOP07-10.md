@@ -14,6 +14,8 @@ audit:
 Let $T_n$ denote the closed orientable surface of genus $n$, for $n\ge1$. Prove that if $p$ and $q$ are distinct positive integers, then $T_p$ and $T_q$ are not homeomorphic.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -147,6 +149,8 @@ This is the contrapositive of step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
