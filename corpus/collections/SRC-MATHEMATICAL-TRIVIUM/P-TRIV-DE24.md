@@ -36,6 +36,8 @@ The normalization $a_0 = \frac{1}{2^n n!}$ in the source uses an undefined $n$.
 The stated series have leading coefficient $a_0 = \frac{1}{2^p\,\Gamma(p+1)}$ for $J_p$ and $a_0 = \frac{1}{2^{-p}\,\Gamma(1-p)}$ for $J_{-p}$; the source's formula is the case $p = n \in \mathbb{N}_0$ of the first.
 :::
 
+::: {.solution}
+
 Take
 \[
 y(x)=\sum_{m=0}^{\infty}a_mx^{r+m},
@@ -184,6 +186,8 @@ Insert this normalization into step [](#s1-5){.pf-ref} and multiply by $x^{-p+2k
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the indicial roots and recurrence, while steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} give the two normalized Frobenius series requested in the problem.
+
+:::
 
 :::
 
