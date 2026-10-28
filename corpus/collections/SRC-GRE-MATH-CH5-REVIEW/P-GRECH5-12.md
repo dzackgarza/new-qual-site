@@ -26,6 +26,8 @@ A square matrix $A$ is said to be symmetric if it equals its own transpose: $A =
 (E) $\frac{1}{2}n!$
 :::
 
+::: {.solution}
+
 For $1\le i,j\le n$, let $E_{ij}$ denote the matrix with a $1$ in position $(i,j)$ and zeros elsewhere.
 
 ::: pf
@@ -92,6 +94,8 @@ By step [](#s1-1){.pf-ref}, $\mathcal B$ is a basis, and by step [](#s1-2){.pf-r
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested dimension.
+
+:::
 
 :::
 
