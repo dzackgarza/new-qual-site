@@ -19,6 +19,8 @@ audit:
 Find algebraic expressions involving real square roots, sums, and differences for the real and imaginary parts of both square roots of $2-4i$.
 :::
 
+::: {.solution}
+
 Let
 \[
 w=a+ib
@@ -372,6 +374,8 @@ Read off the real and imaginary parts from steps [](#s1-14){.pf-ref} through [](
 ::: pf-qed
 
 Step [](#s1-16){.pf-ref} gives the requested algebraic expressions.
+
+:::
 
 :::
 
