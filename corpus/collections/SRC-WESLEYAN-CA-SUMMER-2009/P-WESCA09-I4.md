@@ -20,6 +20,8 @@ True or false: satisfying the Cauchy–Riemann equations on a domain $D$ is suff
 Justify your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -77,6 +79,8 @@ without an additional regularity hypothesis, are not sufficient.
 
 Step [](#s1-1){.pf-ref} gives a counterexample satisfying the equations throughout a domain
 but failing to be analytic there.
+
+:::
 
 :::
 
