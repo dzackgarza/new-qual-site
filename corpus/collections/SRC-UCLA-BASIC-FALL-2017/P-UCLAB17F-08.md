@@ -30,6 +30,8 @@ exists for every $x\in[a,b]$, using one-sided limits at the endpoints.
 (c) Prove that $f$ is Riemann integrable.
 :::
 
+::: {.solution}
+
 All limits below are taken relative to $[a,b]$, so at the endpoints they are one-sided.
 
 ::: pf
@@ -419,6 +421,8 @@ This proves part (c).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-10){.pf-ref} proves part (c).
+
+:::
 
 :::
 
