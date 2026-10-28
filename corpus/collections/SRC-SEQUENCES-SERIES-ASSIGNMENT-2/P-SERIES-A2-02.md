@@ -38,6 +38,8 @@ number, while
 The retained source proof implicitly assumes that the limsup is finite. Under
 that intended hypothesis, the theorem is correct.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -424,6 +426,8 @@ Step [](#s1-7){.pf-ref} proves the intended bounded-sequence form of part (a), a
 [](#s1-8){.pf-ref} proves the corresponding statement for $\liminf$. The opening
 counterexample records why the unrestricted literal statement requires the
 missing finiteness/boundedness hypothesis.
+
+:::
 
 :::
 
