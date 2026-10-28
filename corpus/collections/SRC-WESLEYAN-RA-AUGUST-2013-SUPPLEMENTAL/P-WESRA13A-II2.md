@@ -26,6 +26,8 @@ Show that there is $C\in\mathcal B$ of positive measure such that for every $x\i
 \]
 :::
 
+::: {.solution}
+
 Define the measurable function
 $$
 g(x)=\frac1N\sum_{i=1}^N\chi_{B_i}(x).
@@ -103,6 +105,8 @@ This is exactly the defining inequality for membership in $C$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives a measurable set $C$ of positive measure, and step [](#s1-3){.pf-ref} gives the required pointwise inequality on it.
+
+:::
 
 :::
 
