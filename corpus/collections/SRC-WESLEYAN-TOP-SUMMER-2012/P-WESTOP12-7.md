@@ -21,6 +21,8 @@ Prove or disprove each statement:
    is surjective.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -150,6 +152,8 @@ statement (2).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} records the complete answer.
+
+:::
 
 :::
 
