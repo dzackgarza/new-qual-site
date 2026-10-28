@@ -24,6 +24,8 @@ m^*\!\left(\bigcup_{i=1}^\infty A_i\right)
 \]
 :::
 
+::: {.solution}
+
 For an interval \(I\subset\mathbb R\), write \(|I|\) for its length.
 
 ::: pf
@@ -123,6 +125,8 @@ If the right side is infinite, step [](#s1-2){.pf-ref} applies. Otherwise step [
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-5){.pf-ref} proves countable subadditivity.
+
+:::
 
 :::
 
