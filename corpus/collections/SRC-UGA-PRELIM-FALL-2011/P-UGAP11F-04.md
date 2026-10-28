@@ -21,6 +21,8 @@ Give an $\varepsilon$-$\delta$ proof that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -166,6 +168,8 @@ Step [](#s1-4){.pf-ref} verifies the definition of the limit for the arbitrary $
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required $\varepsilon$-$\delta$ conclusion.
+
+:::
 
 :::
 
