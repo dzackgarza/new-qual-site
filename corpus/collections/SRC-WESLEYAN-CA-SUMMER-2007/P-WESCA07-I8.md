@@ -19,6 +19,8 @@ audit:
 Define the arc length of a path $\gamma:[a,b]\to\mathbb C$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -65,6 +67,8 @@ For a piecewise $C^1$ path, the standard arc-length theorem identifies the parti
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested definition; step [](#s1-2){.pf-ref} gives the usual formula for the paths used in contour integration.
+
+:::
 
 :::
 
