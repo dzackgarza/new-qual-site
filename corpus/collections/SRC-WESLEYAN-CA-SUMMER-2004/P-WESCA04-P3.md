@@ -27,6 +27,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 F(z)
@@ -432,6 +434,8 @@ Substitute steps [](#s1-2){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-8){.pf-re
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the requested contour integral.
+
+:::
 
 :::
 
