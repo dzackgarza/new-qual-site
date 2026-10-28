@@ -21,6 +21,8 @@ is holomorphic and uniformly bounded.
 Show that $f$ is constant.
 :::
 
+::: {.solution}
+
 Choose $M<\infty$ such that
 \[
 |f(z)|\le M
@@ -347,6 +349,8 @@ By step [](#s1-10){.pf-ref}, $f$ has a bounded entire extension. Liouville's the
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
