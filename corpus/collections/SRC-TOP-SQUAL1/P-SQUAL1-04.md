@@ -21,6 +21,8 @@ $$q:A\to p(A)$$
 is open, where $p(A)$ has the subspace topology from $Y$.
 :::
 
+::: {.solution}
+
 ## Part 1
 
 ::: pf
@@ -235,6 +237,8 @@ The open set \(U\subseteq A\) in step [](#s1-6){.pf-ref} was arbitrary.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers part 1, and step [](#s1-12){.pf-ref} proves part 2.
+
+:::
 
 :::
 
