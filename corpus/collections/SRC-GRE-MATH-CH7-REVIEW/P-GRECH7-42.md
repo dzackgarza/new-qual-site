@@ -25,6 +25,8 @@ If $M=(-1,3]\cup[7,8)$, what is the Lebesgue measure of $M$?
 (E) $9$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -72,6 +74,8 @@ The inclusion or exclusion of interval endpoints does not affect their measure b
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested measure.
+
+:::
 
 :::
 
