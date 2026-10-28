@@ -40,6 +40,8 @@ one-sided exponential problem. Since $\widetilde f(k)=O(1/k)$, the inverse
 integral is interpreted as an oscillatory principal value.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -297,6 +299,8 @@ which is step [](#s1-9){.pf-ref}. Step [](#s1-10){.pf-ref} handles $x=0$.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required inverse Fourier image.
+
+:::
 
 :::
 
