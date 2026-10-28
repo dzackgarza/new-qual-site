@@ -25,6 +25,8 @@ Suppose that for every $x\in\mathbb R$,
 Prove that $f$ is differentiable.
 :::
 
+::: {.solution}
+
 Let
 \[
 L\ge0
@@ -320,6 +322,8 @@ Every constant function is differentiable at every point, with derivative zero.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
