@@ -25,6 +25,8 @@ Let $C$ be the circle in the $yz$-plane whose equation is $(y - 3)^2 + z^2 = 1$.
 (E) $(x^2 + y^2 + z^2 + 8)^2 = 36(y^2 + z^2)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ recovers step [](#s1-2){.pf-ref}. Thus no extraneous branch is introduced.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required equation of the surface.
+
+:::
 
 :::
 
