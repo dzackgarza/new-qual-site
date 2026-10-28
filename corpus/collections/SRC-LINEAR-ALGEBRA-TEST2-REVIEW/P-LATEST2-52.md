@@ -25,6 +25,8 @@ Which of the following is the larger eigenvalue of
 (A) $4$  (B) $5$  (C) $6$  (D) $10$  (E) $12$
 :::
 
+::: {.solution}
+
 Let
 $$
 A=\begin{pmatrix}5&1\\1&5\end{pmatrix}.
@@ -123,6 +125,8 @@ Thus the correct choice is $\boxed{\text{(C)}}$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required answer.
+
+:::
 
 :::
 
