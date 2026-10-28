@@ -24,6 +24,8 @@ Determine the matrix of $S\circ T$ in the standard basis
 You do not have to multiply the resulting matrices, but you must determine any inverses that arise.
 :::
 
+::: {.solution}
+
 Let
 \[
 u_1=\frac1{\sqrt2}(1,-1,0),\qquad
@@ -195,6 +197,8 @@ Substitute step [](#s1-3){.pf-ref} for $[T]$ and step [](#s1-4){.pf-ref} for $[S
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested standard-basis matrix and step [](#s1-3){.pf-ref} explicitly determines the inverse arising from the change of basis.
+
+:::
 
 :::
 
