@@ -22,6 +22,8 @@ f(x)>0\qquad(x\in X).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -412,6 +414,8 @@ implication.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the desired equivalence.
+
+:::
 
 :::
 
