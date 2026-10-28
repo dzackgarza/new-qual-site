@@ -28,6 +28,8 @@ Let $f \in L^1_{\mathrm{loc}}(\mathbb{R}^d)$ be such that for some $0 < p < 1$, 
 for all $g \in C_0(\mathbb{R}^d)$. Show that $f(x) = 0$ a.e. Here $C_0(\mathbb{R}^d)$ is the space of continuous functions with compact support on $\mathbb{R}^d$.
 :::
 
+::: {.solution}
+
 Fix
 \[
 0<p<1.
@@ -488,6 +490,8 @@ Such points form a full-measure set.
 ::: pf-qed
 
 Step [](#s1-18){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
