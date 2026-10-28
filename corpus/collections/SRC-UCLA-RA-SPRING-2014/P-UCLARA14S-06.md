@@ -28,6 +28,8 @@ Let $H$ be a Hilbert space and $(a_n)$ a sequence with $\|a_n\|=1$ for every $n$
 then $0$ belongs to the closed convex hull of $\{a_n:n\ge1\}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -217,6 +219,8 @@ For every $\varepsilon>0$, step [](#s1-5){.pf-ref} produces a convex combination
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
