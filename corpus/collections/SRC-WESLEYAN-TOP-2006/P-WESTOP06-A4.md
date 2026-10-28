@@ -18,6 +18,8 @@ Let $C$ be the class of compact Hausdorff spaces. Call $I\in C$ *injective in $C
 Explain why $[0,1]$ is injective in $C$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -65,6 +67,8 @@ By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, \(X\) is a closed subspace o
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} supplies the required extension for arbitrary \(X,Y\in C\) with \(X\subseteq Y\) and arbitrary continuous \(f:X\to[0,1]\). Hence \([0,1]\) is injective in \(C\).
+
+:::
 
 :::
 
