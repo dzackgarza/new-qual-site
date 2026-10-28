@@ -25,6 +25,8 @@ Problem 5. Let $\mu$ be a real-valued Borel measure on $[0,1]$ such that
 Show that $\mu=0$.
 :::
 
+::: {.solution}
+
 For \(k\ge0\), define the moments
 \[
 a_k=\int_0^1 t^k\,d\mu(t).
@@ -255,6 +257,8 @@ Therefore the representing measure is the zero measure.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
