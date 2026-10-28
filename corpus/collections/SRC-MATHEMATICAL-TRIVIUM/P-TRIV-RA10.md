@@ -25,6 +25,8 @@ and the corresponding partial derivatives of $f$ are assumed nonzero so that
 the implicit derivatives are locally defined.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -218,6 +220,8 @@ $$
 
 Step [](#s1-4){.pf-ref} proves the three-variable identity, and step [](#s1-7){.pf-ref} gives its
 $n$-variable analogue.
+
+:::
 
 :::
 
