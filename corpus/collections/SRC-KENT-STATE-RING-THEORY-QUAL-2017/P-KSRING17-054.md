@@ -21,6 +21,8 @@ Show that there is a prime ideal P such that $P \cap S$ is empty.
 (Hint: Use Zorn’s Lemma.)
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -408,6 +410,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives the required prime ideal.
+
+:::
 
 :::
 
