@@ -29,6 +29,8 @@ Prove both of the following:
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -204,6 +206,8 @@ Uniform boundedness is step [](#s1-3){.pf-ref} and equicontinuity is step [](#s1
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} proves both requested conclusions.
+
+:::
 
 :::
 
