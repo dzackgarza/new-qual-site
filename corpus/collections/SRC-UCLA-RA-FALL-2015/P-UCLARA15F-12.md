@@ -24,6 +24,8 @@ audit:
 Find a function $u(x,y)$ harmonic in the region between the circles $|z| = 2$ and $|z - 1| = 1$ which equals 1 on the outer circle and 0 on the inner circle (except at the point where the circles are tangent to each other).
 :::
 
+::: {.solution}
+
 Let
 \[
 \Omega
@@ -546,6 +548,8 @@ Steps [](#s1-17){.pf-ref} through [](#s1-20){.pf-ref} verify harmonicity and bot
 ::: pf-qed
 
 Step [](#s1-21){.pf-ref} is the requested function.
+
+:::
 
 :::
 
