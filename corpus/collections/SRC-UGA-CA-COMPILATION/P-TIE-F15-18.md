@@ -24,6 +24,8 @@ S = \pi \sum _ { n = - \infty } ^ { \infty } n | c _ { n } | ^ { 2 } ( R ^ { 2 n
 $$
 :::
 
+::: {.solution}
+
 Write
 $$
 A(r,R)\coloneqq\{z:r<\abs{z}<R\}.
@@ -224,6 +226,8 @@ By step [](#s1-2){.pf-ref}, this integral is exactly $S$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the stated area formula, and step [](#s1-6){.pf-ref} proves finiteness.
+
+:::
 
 :::
 
