@@ -28,6 +28,8 @@ Show that for each $i$,
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -257,6 +259,8 @@ This denominator is nonzero because
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required identity.
+
+:::
 
 :::
 
