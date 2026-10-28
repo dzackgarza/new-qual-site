@@ -24,6 +24,8 @@ Problem 3. Suppose $f:\mathbb R\to\mathbb R$ and $g:\mathbb R^2\to\mathbb R$ hav
 (b) Using the statement for $f$, prove the statement for $g$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -216,6 +218,8 @@ Thus step [](#s1-6){.pf-ref} becomes precisely the formula stated in step [](#s1
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} states the one-variable theorem, step [](#s1-2){.pf-ref} states the two-variable theorem, and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} derive the latter from the former.
+
+:::
 
 :::
 
