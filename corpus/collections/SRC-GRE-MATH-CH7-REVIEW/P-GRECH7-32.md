@@ -25,6 +25,8 @@ If $f(x) = \begin{cases} \frac{x}{2} + c & \text{for } 0 \le t \le 8 \\ 0 & \tex
 (E) $-\frac{4}{3}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -106,6 +108,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify both the malformed variable in the printed statement and the mathematical impossibility of the intended density problem.
+
+:::
 
 :::
 
