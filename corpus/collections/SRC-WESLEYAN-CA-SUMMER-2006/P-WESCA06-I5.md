@@ -19,6 +19,8 @@ audit:
 State Cauchy's Integral Formula.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -100,6 +102,8 @@ This is Cauchy's integral formula for derivatives.
 
 Step [](#s1-1){.pf-ref} is the requested theorem statement; step [](#s1-2){.pf-ref} records its standard
 derivative extension.
+
+:::
 
 :::
 
