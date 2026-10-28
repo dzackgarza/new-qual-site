@@ -19,6 +19,8 @@ audit:
 Let R be a ring with identity such that the identity map is the only ring automorphism of R. Prove that the set N of all nilpotent elements of R is an ideal of R.
 :::
 
+::: {.solution}
+
 Let
 $$
 N
@@ -370,6 +372,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
