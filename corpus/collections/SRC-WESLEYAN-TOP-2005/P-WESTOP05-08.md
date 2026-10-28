@@ -28,6 +28,8 @@ for $1\le i<n$.
 Hint: let $C$ be the set of points that can be joined to $a$ by such a finite chain and analyze $C$.
 :::
 
+::: {.solution}
+
 Define
 \[
 C
@@ -316,6 +318,8 @@ This is exactly the definition of \(b\in C\) from step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required finite chain.
+
+:::
 
 :::
 
