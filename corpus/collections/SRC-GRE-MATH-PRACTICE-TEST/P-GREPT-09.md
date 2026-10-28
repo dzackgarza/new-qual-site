@@ -25,6 +25,8 @@ Let $a$ be the smallest positive value of $x$ at which the function $f(x) = (\co
 (E) $\sqrt{2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -99,6 +101,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
