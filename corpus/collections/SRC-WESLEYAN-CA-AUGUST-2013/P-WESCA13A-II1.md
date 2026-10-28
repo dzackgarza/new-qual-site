@@ -29,6 +29,8 @@ and for the third function, which the deterministic extraction renders as
 The third formula is not holomorphic on a punctured neighborhood and therefore cannot literally fit the requested isolated-singularity classification; its source formula remains unresolved.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -386,6 +388,8 @@ Collect steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref}.
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} completely solve the two source-recoverable functions.
 Step [](#s1-8){.pf-ref} records why the third extracted expression cannot be classified
 as an isolated singularity without recovering the intended source formula.
+
+:::
 
 :::
 
