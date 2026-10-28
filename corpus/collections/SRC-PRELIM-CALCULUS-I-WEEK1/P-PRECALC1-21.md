@@ -15,6 +15,8 @@ review: draft
 Find the first derivative of $\begin{array} { r } { f ( x ) = \frac { x ^ { 3 } } { ( 6 x ^ { 2 } + 1 ) \sqrt [ 3 ] { ( x + 3 ) ^ { 4 } } } } \end{array}$ when $x > 0$
 :::
 
+::: {.solution}
+
 For \(x>0\), one also has
 \[
 x+3>0,
@@ -148,6 +150,8 @@ Replace \(f(x)\) in step [](#s1-3){.pf-ref} by its explicit expression.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested derivative.
+
+:::
 
 :::
 
