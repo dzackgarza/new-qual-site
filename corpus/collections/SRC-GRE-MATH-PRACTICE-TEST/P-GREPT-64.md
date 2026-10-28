@@ -25,6 +25,8 @@ If $A$ is the $2$ by $2$ matrix whose $(i, j)$ entry is equal to $i + j$, and $B
 (E) $5$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ Thus the correct choice is (B).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
