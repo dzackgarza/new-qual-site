@@ -33,6 +33,8 @@ v'(t)=Av(t),\qquad v(0)=v_0.
 Explain precisely which theorems from calculus you use and why they apply.
 :::
 
+::: {.solution}
+
 Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\mathbb R)$, for example the operator norm induced by the Euclidean norm.
 
 ::: pf
@@ -242,6 +244,8 @@ Step [](#s1-5){.pf-ref} proves the differential equation and step [](#s1-6){.pf-
 ::: pf-qed
 
 The calculus inputs used are the Weierstrass $M$-test and the termwise-differentiation theorem for uniformly convergent derivative series, with their hypotheses verified in steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
+
+:::
 
 :::
 
