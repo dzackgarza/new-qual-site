@@ -24,6 +24,8 @@ Let
 Give an example of an unbounded harmonic function on $\Omega$ that extends continuously to $\partial\Omega$ and vanishes there.
 :::
 
+::: {.solution}
+
 Define
 $$
 \boxed{u(z)\coloneqq\operatorname{Im}\!\left(e^{\pi z^2}\right)}.
@@ -137,6 +139,8 @@ This tends to $+\infty$ as $x\to\infty$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} verify respectively harmonicity, the zero continuous boundary extension, and unboundedness.
+
+:::
 
 :::
 
