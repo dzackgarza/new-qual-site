@@ -31,6 +31,8 @@ III. The series $\sum_{n=2}^{\infty} (-1)^n a_n^2$ converges.
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -114,6 +116,8 @@ is true.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
