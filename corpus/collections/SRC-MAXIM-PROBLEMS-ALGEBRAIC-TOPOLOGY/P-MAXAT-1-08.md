@@ -19,6 +19,8 @@ audit:
 Show that the Euler characteristic of a closed, oriented, $( 4 n + 2 )$ -dimensional manifold is even.
 :::
 
+::: {.solution}
+
 Let $M$ be a closed oriented manifold of dimension
 \[
 d=4n+2.
@@ -153,6 +155,8 @@ Step [](#s1-2){.pf-ref} gives $\chi(M)\equiv b_{2n+1}\pmod2$, and step [](#s1-5)
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
