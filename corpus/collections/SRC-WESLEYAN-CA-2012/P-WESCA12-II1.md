@@ -23,6 +23,8 @@ Let $A$ and $B$ be the radii of convergence of $\sum a_kz^k$ and $\sum b_kz^k$.
 (b) Give an example for which the inequality is strict.
 :::
 
+::: {.solution}
+
 Let
 \[
 R
@@ -297,6 +299,8 @@ R>AB=1.
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} gives the strict example required
 in part (b).
+
+:::
 
 :::
 
