@@ -17,6 +17,8 @@ Let $X$ be the space obtained by identifying one point of $\RP^2$ with one point
 Find the universal covering space $\widetilde X$ of $X$ and compute its homology groups.
 :::
 
+::: {.solution}
+
 Let
 \[
 X=\mathbb{RP}^2\vee S^2
@@ -303,6 +305,8 @@ Combine steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} identifies the universal cover, and step [](#s1-13){.pf-ref} computes all of its homology groups.
+
+:::
 
 :::
 
