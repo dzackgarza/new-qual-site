@@ -20,6 +20,8 @@ Let M be a closed, oriented 4n-dimensional manifold.
 Show that the signature $\sigma ( M )$ is congruent mod 2 to the Euler characteristic $\chi ( M )$
 :::
 
+::: {.solution}
+
 Let $M$ be a closed oriented manifold of dimension $4n$, and write
 \[
 b_i=\dim_{\mathbb Q}H^i(M;\mathbb Q).
@@ -149,6 +151,8 @@ Both integers are congruent modulo $2$ to $b_{2n}$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required congruence.
+
+:::
 
 :::
 
