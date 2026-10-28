@@ -15,6 +15,8 @@ review: draft
 What volume is created if the area between $f ( x ) = x$ and $g ( x ) = x ^ { 2 }$ for $x \in [ 0 , 1 ]$ is revolved about the x-axis? What if the same area is revolved about the y-axis?
 :::
 
+::: {.solution}
+
 On \(0\le x\le1\),
 \[
 x^2\le x,
@@ -267,6 +269,8 @@ V_y=\frac{\pi}{6}}.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref} give the two requested volumes.
+
+:::
 
 :::
 
