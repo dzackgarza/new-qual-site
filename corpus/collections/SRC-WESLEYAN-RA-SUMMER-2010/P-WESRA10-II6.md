@@ -30,6 +30,8 @@ H_E=\{f\in\mathcal H:f=f\chi_E\}.
 Calculate $\|P\|$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -216,6 +218,8 @@ in $L^2$ for every $f$. Hence $P$ is the zero operator, whose norm is $0$.
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), step [](#s1-3){.pf-ref} proves part (b), and steps
 [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} compute the norm in all cases for part (c).
+
+:::
 
 :::
 
