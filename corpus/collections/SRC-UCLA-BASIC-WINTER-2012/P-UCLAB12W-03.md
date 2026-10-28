@@ -17,6 +17,8 @@ audit:
 Prove that every sequence $(a_n)$ with $a_n\in[0,1]$ has a convergent subsequence.
 :::
 
+::: {.solution}
+
 Let $(a_n)_{n\ge1}$ be a sequence in $[0,1]$.
 
 ::: pf
@@ -101,6 +103,8 @@ By completeness of $\RR$, the Cauchy sequence from step [](#s1-3){.pf-ref} conve
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} constructs a convergent subsequence of the arbitrary original sequence.
+
+:::
 
 :::
 
