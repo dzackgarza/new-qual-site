@@ -19,6 +19,8 @@ audit:
 Find the most general solution of $\left( { \frac { \partial } { \partial x } } + { \frac { \partial } { \partial y } } + { \frac { \partial } { \partial z } } \right) f ( x , y , z ) = x - y$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -114,6 +116,8 @@ Thus every displayed function solves the PDE.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives and verifies the general characteristic solution.
+
+:::
 
 :::
 
