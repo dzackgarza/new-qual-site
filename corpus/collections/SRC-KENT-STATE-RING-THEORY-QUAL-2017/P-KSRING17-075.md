@@ -25,6 +25,8 @@ Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the sa
 (iii) There exists a faithful $R [ s ]$ module which is finitely generated as an R-module.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -476,6 +478,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} establishes the equivalence of all three statements.
+
+:::
 
 :::
 
