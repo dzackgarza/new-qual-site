@@ -25,6 +25,8 @@ Of the 600 residents of Clermontville, 35 percent watch the television show Isla
 (E) $\frac{7}{200}$
 :::
 
+::: {.solution}
+
 Let $n_1,n_2,n_3$ denote the numbers of residents who watch exactly one, exactly two, and exactly three of the shows, respectively.
 
 ::: pf
@@ -113,6 +115,8 @@ There are $21$ favorable residents by step [](#s1-3){.pf-ref}, and the resident 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested probability.
+
+:::
 
 :::
 
