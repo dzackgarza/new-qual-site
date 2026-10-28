@@ -19,6 +19,8 @@ audit:
 Show that $\mathbb { C P } ^ { 4 }$ cannot be smoothly embedded in $\mathbb { R } ^ { n }$ with $n \leq 1 1$ . (Hint: use Pontrjagin classes)
 :::
 
+::: {.solution}
+
 The real dimension of $\mathbb{CP}^4$ is $8$. Suppose, for contradiction, that there is a smooth embedding
 \[
 \mathbb{CP}^4\hookrightarrow\mathbb R^N
@@ -194,6 +196,8 @@ Any such embedding would produce the rank-$\leq3$ normal bundle of step [](#s1-1
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the desired nonembedding statement.
+
+:::
 
 :::
 
