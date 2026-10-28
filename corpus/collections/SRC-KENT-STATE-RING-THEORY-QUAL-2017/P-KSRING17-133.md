@@ -20,6 +20,8 @@ Let R be a commutative Noetherian ring with identity.
 Prove that there are only finitely many minimal prime ideals of R.
 :::
 
+::: {.solution}
+
 For an ideal
 $$
 I\trianglelefteq R,
@@ -420,6 +422,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
