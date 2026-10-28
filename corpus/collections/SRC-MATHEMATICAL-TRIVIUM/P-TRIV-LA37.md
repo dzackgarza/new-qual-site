@@ -26,6 +26,8 @@ factorizations $A=SO$ with merely symmetric $S$ need not be unique even in the
 invertible case.
 :::
 
+::: {.solution}
+
 For a real matrix $A$, the left polar factor is
 $$
 S=(AA^T)^{1/2}.
@@ -417,6 +419,8 @@ unique.
 
 Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref} give the two decompositions, and step [](#s1-12){.pf-ref} determines
 their uniqueness behavior.
+
+:::
 
 :::
 
