@@ -20,6 +20,8 @@ audit:
 Prove that there is no function \(f\) analytic on the punctured disk \(\mathbb D\setminus\{0\}\) such that \(f'\) has a simple pole at \(0\).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -159,6 +161,8 @@ Step [](#s1-3){.pf-ref} says that the $z^{-1}$ coefficient of $f'$ is zero. Step
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves that no such analytic function $f$ exists.
+
+:::
 
 :::
 
