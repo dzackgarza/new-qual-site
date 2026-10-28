@@ -35,6 +35,8 @@ $$
 (c) Show that $W _ { x } ( y y _ { 1 } , . . . , y y _ { n } ) = y ^ { n } W _ { x } ( y _ { 1 } , . . . , y _ { n } )$ , where y is some $C ^ { n - 1 }$ function.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -437,6 +439,8 @@ This is step [](#s1-15){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-16){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
