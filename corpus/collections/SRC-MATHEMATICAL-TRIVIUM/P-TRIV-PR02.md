@@ -19,6 +19,8 @@ audit:
 Find the least number of students in a group such that the probability that at least two students have the same birthday is not less than $\frac { 1 } { 2 }$
 :::
 
+::: {.solution}
+
 Assume 365 equally likely birthdays and ignore leap day.
 
 ::: pf
@@ -114,6 +116,8 @@ The sequence $q_n$ is decreasing, hence $p_n=1-q_n$ is increasing. Step [](#s1-3
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} establishes the required minimum.
+
+:::
 
 :::
 
