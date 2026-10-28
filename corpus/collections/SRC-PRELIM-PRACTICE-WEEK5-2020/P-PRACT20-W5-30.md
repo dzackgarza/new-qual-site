@@ -20,6 +20,8 @@ audit:
 Evaluate $\int_{-\infty}^{\infty} \frac{dx}{1 + x^4}$.
 :::
 
+::: {.solution}
+
 Let
 \[
 F(z)=\frac1{1+z^4}.
@@ -169,6 +171,8 @@ Letting $R\to\infty$ and using step [](#s1-3){.pf-ref} gives the result.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested value.
+
+:::
 
 :::
 
