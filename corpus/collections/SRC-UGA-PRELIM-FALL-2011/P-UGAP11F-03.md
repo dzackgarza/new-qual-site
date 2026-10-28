@@ -18,6 +18,8 @@ audit:
 Give an example, with proof, of a real power series that converges exactly on the interval $(1,3]$.
 :::
 
+::: {.solution}
+
 Consider
 $$
 \boxed{
@@ -116,6 +118,8 @@ Step [](#s1-1){.pf-ref} gives convergence on $(1,3)$ and divergence outside $[1,
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested example and its exact interval of convergence.
+
+:::
 
 :::
 
