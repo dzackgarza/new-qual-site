@@ -23,6 +23,8 @@ Let $f$ be entire.
 (b) Prove that $f$ has a pole at infinity of order $m$ if and only if $f$ is a polynomial of degree $m$.
 :::
 
+::: {.solution}
+
 For $w\ne0$, set
 \[
 g(w)=f(1/w).
@@ -201,6 +203,8 @@ infinity.
 
 Step [](#s1){.pf-ref} proves part (a), while steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove both directions of
 part (b).
+
+:::
 
 :::
 
