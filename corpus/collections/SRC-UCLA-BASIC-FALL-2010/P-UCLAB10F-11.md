@@ -25,6 +25,8 @@ among smooth functions $f:[0,1]\to\mathbb R$ satisfying $f(0)=0$ and $f(1)=1$.
 Is the minimizing function unique?
 :::
 
+::: {.solution}
+
 Let
 \[
 E(f)=\int_0^1|f'(x)|^2\,dx.
@@ -182,6 +184,8 @@ Thus every minimizer equals $g(x)=x$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the minimizer, and step [](#s1-5){.pf-ref} proves its uniqueness.
+
+:::
 
 :::
 
