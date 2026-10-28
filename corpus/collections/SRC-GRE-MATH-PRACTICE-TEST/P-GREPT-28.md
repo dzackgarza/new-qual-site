@@ -29,6 +29,8 @@ Which of the following best describes the image of $f$?
 (E) All of $\RR^3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ origin. Apply this to the image identified in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required description.
+
+:::
 
 :::
 
