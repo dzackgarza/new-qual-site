@@ -37,6 +37,8 @@ F\bigl(\{(x,y):x^2+y^2<1\}\bigr)
 Hint: if $U=\{(x,y):x^2+y^2<1\}$, prove that $F(U)\cap U$ is open and closed in $U$.
 :::
 
+::: {.solution}
+
 Let
 \[
 U=\{p\in\mathbb R^2:\|p\|<1\}
@@ -329,6 +331,8 @@ U\subseteq F(U).
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
