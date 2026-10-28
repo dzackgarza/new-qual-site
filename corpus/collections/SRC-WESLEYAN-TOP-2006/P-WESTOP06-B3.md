@@ -20,6 +20,8 @@ Let $A\subset X$.
    \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -133,6 +135,8 @@ Step [](#s1-2){.pf-ref} gives a retraction onto \(S^{n-1}\), step [](#s1-3){.pf-
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-5){.pf-ref} gives the requested explicit deformation retraction.
+
+:::
 
 :::
 
