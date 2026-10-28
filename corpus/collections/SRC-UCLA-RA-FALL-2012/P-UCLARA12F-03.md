@@ -24,6 +24,8 @@ Prove that there exists a unique $x\in E$ such that
 \]
 :::
 
+::: {.solution}
+
 Set
 $$
 d\coloneqq\inf_{y\in E}\|y\|.
@@ -133,6 +135,8 @@ Thus $x=y$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves existence and step [](#s1-4){.pf-ref} proves uniqueness.
+
+:::
 
 :::
 
