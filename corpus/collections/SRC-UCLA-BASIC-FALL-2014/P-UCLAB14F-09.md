@@ -20,6 +20,8 @@ audit:
 Problem 9. Let $A\neq0$ be an $n\times n$ complex matrix. Prove that there is a matrix $B$ such that $B$ and $A+B$ have no eigenvalues in common.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -263,6 +265,8 @@ Hence
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} handles the invertible case, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} handle the singular nonzero case.
+
+:::
 
 :::
 
