@@ -35,6 +35,8 @@ For each quotient space:
 3. Determine which of the spaces are manifolds.
 :::
 
+::: {.solution}
+
 Denote the three quotient spaces by
 $$
 X_1,
@@ -828,6 +830,8 @@ This summarizes steps [](#s1-3){.pf-ref} through [](#s1-16){.pf-ref}.
 
 Step [](#s1-17){.pf-ref} answers all three requested questions for all three quotient
 spaces.
+
+:::
 
 :::
 
