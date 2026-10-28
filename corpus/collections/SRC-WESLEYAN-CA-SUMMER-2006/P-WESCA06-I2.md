@@ -19,6 +19,8 @@ audit:
 Define the multiplicity of an analytic function $f$ at a point $z_0$ in the domain of $f$.
 :::
 
+::: {.solution}
+
 Let
 \[
 f(z)
@@ -145,6 +147,8 @@ so step [](#s1-2){.pf-ref} becomes the usual zero-order definition.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definition and its standard equivalent
 formulations.
+
+:::
 
 :::
 
