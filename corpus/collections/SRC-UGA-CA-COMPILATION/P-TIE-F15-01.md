@@ -20,6 +20,8 @@ audit:
 Let $a _ { n } \neq 0$ and assume that $\operatorname* { l i m } _ { n \to \infty } { \frac { | a _ { n + 1 } | } { | a _ { n } | } } = L$ . Show that $\operatorname* { l i m } _ { n \to \infty } \sqrt [ n ] { | a _ { n } | } = L$ . In particular, this shows that when applicable, the ratio test can be used to calculate the radius of convergence of a power series.
 :::
 
+::: {.solution}
+
 Set
 $$
 b_n\coloneqq\abs{a_n}>0.
@@ -200,6 +202,8 @@ The ratio test gives absolute convergence when $L\abs{z}<1$ and divergence when 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required root limit, and step [](#s1-6){.pf-ref} gives the stated consequence for power-series radii of convergence.
+
+:::
 
 :::
 
