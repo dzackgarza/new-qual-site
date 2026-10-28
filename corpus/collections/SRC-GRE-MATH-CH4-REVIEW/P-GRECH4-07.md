@@ -32,6 +32,8 @@ such that $f(\pi) = 1$. What is the value of $f(\frac{1}{2}\pi)$?
 (E) $\frac{\pi}{2} + 1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
