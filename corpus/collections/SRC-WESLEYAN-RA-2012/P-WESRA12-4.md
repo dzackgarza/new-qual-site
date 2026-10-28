@@ -19,6 +19,8 @@ audit:
 Which theorem or theorems from the course seem most interesting, and why?
 :::
 
+::: {.solution}
+
 One reasonable answer is that the **Dominated Convergence Theorem** and the
 **Uniform Boundedness Theorem** are especially interesting because they
 share the same broad pattern:
@@ -174,6 +176,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} justify every mathematical a
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} supplies a complete answer to the reflective prompt.
+
+:::
 
 :::
 
