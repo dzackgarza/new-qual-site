@@ -26,6 +26,8 @@ Draw it schematically.
 Investigate the limit of $x$, $y$ and $r$ as $\theta \to 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -232,6 +234,8 @@ Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $x\to+\infty$ whil
 
 Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} give the polar equation, schematic behavior,
 and requested limits.
+
+:::
 
 :::
 
