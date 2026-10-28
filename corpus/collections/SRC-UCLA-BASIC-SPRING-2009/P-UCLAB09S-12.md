@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $F:\mathbb R^3\to\mathbb R^3$ and $\rho:\mathbb R^3\to\mathbb R$ be smooth.
+Let $F:\mathbb R^3\to\mathbb R^3$ and $\rho:\mathbb R^3\to\mathbb R$ be smooth.
 Prove that
 \[
 \operatorname{div}F=\rho
