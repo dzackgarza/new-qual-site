@@ -19,6 +19,8 @@ audit:
 Show that if p is a prime such that there is an integer b with $p = b ^ { 2 } + 4$ , then $\mathbb { Z } [ { \sqrt { p } } ]$ is not a unique factorization domain.
 :::
 
+::: {.solution}
+
 Set
 $$
 R
@@ -507,6 +509,8 @@ Therefore $R$ cannot be a UFD.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
