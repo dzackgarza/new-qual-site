@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } - 6 y ^ { \prime } + 9 y = 0 { \mathrm { ~ w i t h ~ } } y ( 1 ) = 1 { \mathrm { ~ a n d ~ } } y ^ { \prime } ( 3 ) = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -206,6 +208,8 @@ Substitute $x=1$ into step [](#s1-7){.pf-ref} and $x=3$ into step [](#s1-8){.pf-
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the unique solution satisfying both boundary conditions.
+
+:::
 
 :::
 
