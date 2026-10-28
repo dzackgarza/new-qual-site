@@ -26,6 +26,8 @@ Indeed, if $R$ is a field, then $R$ is its only nonzero ideal and $R$ has no non
 The proof below establishes the intended non-field statement.
 :::
 
+::: {.solution}
+
 Assume that $R$ is not a field.
 Call an ideal
 $$
@@ -489,6 +491,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} proves the intended statement under the necessary non-field qualification recorded in the remark.
+
+:::
 
 :::
 
