@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $A , B$ are invertible $n \times n$ matrices with complex entries, such that $A B A ^ { - 1 } = B ^ { 3 }$ . Show that all the eigenvalues of B are roots of unity.
+Suppose $A, B$ are invertible $n \times n$ matrices with complex entries, such that $ABA^{-1} = B^3$. Show that all the eigenvalues of $B$ are roots of unity.
 :::
 
 ::: {.solution}
