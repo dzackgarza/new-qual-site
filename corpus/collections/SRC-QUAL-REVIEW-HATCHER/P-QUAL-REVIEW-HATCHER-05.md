@@ -23,6 +23,8 @@ Compute the homology and cohomology groups of
 where $x$ and $y$ are distinct points of $\mathbb{RP}^n$.
 :::
 
+::: {.solution}
+
 Assume first
 \[
 n\ge2.
@@ -539,6 +541,8 @@ Cohomology of a disjoint union of two contractible components has rank \(2\) in 
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} and [](#s1-11){.pf-ref} through [](#s1-20){.pf-ref} compute the homotopy type, homology, and cohomology for \(n\ge2\), while steps [](#s1-21){.pf-ref} through [](#s1-23){.pf-ref} handle \(n=1\).
+
+:::
 
 :::
 
