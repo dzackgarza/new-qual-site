@@ -19,6 +19,8 @@ audit:
 Find if the vectors ${ \left[ \begin{array} { l } { 1 } \\ { 2 } \\ { 3 } \end{array} \right] } , { \left[ \begin{array} { l } { 1 } \\ { 3 } \\ { 5 } \end{array} \right] } , { \left[ \begin{array} { l } { 5 } \\ { 1 3 } \\ { 1 5 } \end{array} \right] }$ are linear independent or not.
 :::
 
+::: {.solution}
+
 Let
 $$
 M=
@@ -86,6 +88,8 @@ The columns of an invertible matrix are linearly independent. Since the given ve
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
