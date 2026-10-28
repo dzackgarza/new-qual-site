@@ -21,6 +21,8 @@ Let $f : [ 0 , 1 ] \to \mathbb { R }$ be continuous and suppose that f is differ
 (c) $f ( x ) > 0$ for all $x \in [ 0 , 1 )$
 :::
 
+::: {.solution}
+
 ## Statement (a)
 
 Define
@@ -343,6 +345,8 @@ is disproved in step [](#s1-15){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-16){.pf-ref} gives the required answer.
+
+:::
 
 :::
 
