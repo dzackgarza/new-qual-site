@@ -24,6 +24,8 @@ A\longmapsto \int_A f\,dm
 is a measure.
 :::
 
+::: {.solution}
+
 Define
 \[
 \mu_f(A)
@@ -305,6 +307,8 @@ Borel sets. These are exactly the defining axioms of a measure.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
