@@ -19,6 +19,8 @@ audit:
 State Morera's theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -47,6 +49,8 @@ Equivalently, it is enough to assume that the integral of $f$ around every close
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested precise statement, including the continuity hypothesis and the triangular-contour condition.
+
+:::
 
 :::
 
