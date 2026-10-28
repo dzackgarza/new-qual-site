@@ -19,6 +19,8 @@ audit:
 Find $H ^ { * } ( K ( \mathbb { Z } , n ) ; \mathbb { Q } )$
 :::
 
+::: {.solution}
+
 Let
 \[
 X=K(\mathbb Z,n).
@@ -144,6 +146,8 @@ Set $n=3$ in step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested rational cohomology ring.
+
+:::
 
 :::
 
