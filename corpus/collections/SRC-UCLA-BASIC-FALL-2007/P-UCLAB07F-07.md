@@ -20,6 +20,8 @@ Let $A(x)$ be a differentiable matrix-valued function on $\mathbb R$, with $A(x)
 Starting from entrywise differentiation, show that $A^{-1}(x)$ is differentiable and \[(A^{-1})'(x)=-A^{-1}(x)A'(x)A^{-1}(x).\]
 :::
 
+::: {.solution}
+
 Write
 \[
 A(x)=(a_{ij}(x)).
@@ -141,6 +143,8 @@ Rearranging gives the displayed formula.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves differentiability of the inverse matrix, and step [](#s1-5){.pf-ref} gives its derivative.
+
+:::
 
 :::
 
