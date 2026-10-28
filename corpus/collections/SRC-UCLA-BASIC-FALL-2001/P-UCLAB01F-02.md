@@ -27,6 +27,8 @@ Prove that there is a bijection $\sigma:\mathbb N\to\mathbb N$ such that
 \]
 :::
 
+::: {.solution}
+
 Write
 \[
 p_k=a_{2k}=\frac1{2k},
@@ -186,6 +188,8 @@ Therefore $S_m\to\alpha$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required bijection $\sigma$, and step [](#s1-6){.pf-ref} proves that the rearranged series determined by $\sigma$ has sum $\alpha$.
+
+:::
 
 :::
 
