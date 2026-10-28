@@ -19,6 +19,8 @@ audit:
 True or False: Any orientable manifold is a 2-fold covering of a nonorientable manifold.
 :::
 
+::: {.solution}
+
 The statement is false.
 
 ::: pf
@@ -174,6 +176,8 @@ The orientable manifold $S^3$ supplied in step [](#s1-9){.pf-ref} cannot be a tw
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} answers the true-or-false question with a proved counterexample.
+
+:::
 
 :::
 
