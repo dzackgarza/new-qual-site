@@ -19,6 +19,8 @@ audit:
 Show that if an oriented vector bundle has a non-zero section, then it’s Euler class is zero.
 :::
 
+::: {.solution}
+
 Let
 \[
 \xi:E\to X
@@ -153,6 +155,8 @@ For an oriented rank-$r$ bundle, $e(\xi)\in H^r(X;\mathbb Z)$ is the primary obs
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the required vanishing.
+
+:::
 
 :::
 
