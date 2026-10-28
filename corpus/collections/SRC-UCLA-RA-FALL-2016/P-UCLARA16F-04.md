@@ -22,6 +22,8 @@ Then $L^2\subset L^1$.
 Show that $L^2$ is a meager subset of $L^1$, i.e. $L^2$ can be written as a countable union of sets in $L^1$ that are closed and have empty interior in $L^1$.
 :::
 
+::: {.solution}
+
 For each integer \(n\ge1\), define
 \[
 \boxed{
@@ -492,6 +494,8 @@ This is the definition of a meager set.
 ::: pf-qed
 
 Step [](#s1-21){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
