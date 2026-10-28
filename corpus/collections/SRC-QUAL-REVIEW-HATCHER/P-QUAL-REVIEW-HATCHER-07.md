@@ -27,6 +27,8 @@ Determine which of these 2-manifolds is homeomorphic to the space $Y$ which is c
 The source states this problem as "Repeat the above problem for the space $Y$ which is constructed similarly to $X$, but where two of the tori making up the 'links' in the circular chain are replaced by $\RR P^2$'s," referring to [[P-QUAL-REVIEW-HATCHER-06|practice problem 6]].
 :::
 
+::: {.solution}
+
 Cut the circular chain along the five neck circles joining adjacent links.
 
 ::: pf
@@ -244,6 +246,8 @@ Apply the classification theorem using steps [](#s1-7){.pf-ref} and [](#s1-11){.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} identifies the required surface.
+
+:::
 
 :::
 
