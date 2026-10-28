@@ -21,6 +21,8 @@ Problem 3. Let $S$ and $T$ be commuting normal operators on a finite-dimensional
 Prove that $S$ and $T$ have a common basis of eigenvectors.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -233,6 +235,8 @@ By steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}, the union basis consists
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
