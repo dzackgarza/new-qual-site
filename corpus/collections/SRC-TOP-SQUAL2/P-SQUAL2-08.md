@@ -16,6 +16,8 @@ audit:
 Prove that if $\RR^n$ is homeomorphic to $\RR^m$, then $n=m$.
 :::
 
+::: {.solution}
+
 Suppose there is a homeomorphism
 \[
 h:\mathbb R^n\to\mathbb R^m.
@@ -314,6 +316,8 @@ Add \(1\) to the equality in step [](#s1-13){.pf-ref}. The zero-dimensional case
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required invariance-of-dimension conclusion.
+
+:::
 
 :::
 
