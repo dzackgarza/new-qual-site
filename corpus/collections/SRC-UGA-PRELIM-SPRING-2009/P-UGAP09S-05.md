@@ -25,6 +25,8 @@ is a subspace of $W$ and that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -156,6 +158,8 @@ most $n$. Hence
 
 Step [](#s1-3){.pf-ref} proves the subspace assertion and step [](#s1-5){.pf-ref} proves the dimension
 bound.
+
+:::
 
 :::
 
