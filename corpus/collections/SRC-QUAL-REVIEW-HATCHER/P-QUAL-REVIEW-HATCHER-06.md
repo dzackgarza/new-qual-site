@@ -29,6 +29,8 @@ Determine which of these 2-manifolds is homeomorphic to $X$.
 The source gives $X$ only by the picture; the description in the statement is a reading of that picture.
 :::
 
+::: {.solution}
+
 The surface \(X\) is orientable because it is embedded as the boundary of a thickened compact region in \(\mathbb R^3\). Thus \(X\) must be one of the orientable closed surfaces
 \[
 S^2,\ T_1,\ T_2,\dots.
@@ -197,6 +199,8 @@ By the classification theorem for closed connected orientable surfaces, the genu
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} identifies the surface in the classification list.
+
+:::
 
 :::
 
