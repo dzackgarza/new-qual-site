@@ -20,6 +20,8 @@ audit:
 Let $X$ be compact metric and let $\mathcal F\subset C(X)$ be nonempty. Prove that $\mathcal F$ is compact in the supremum norm if and only if it is closed, bounded, and equicontinuous. Give precise definitions of all terms used.
 :::
 
+::: {.solution}
+
 Write
 \[
 \|f\|_\infty
@@ -569,6 +571,8 @@ Step [](#s1-4){.pf-ref} proves the forward implication, and steps [](#s1-5){.pf-
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the stated Arzelà--Ascoli theorem, with all terms defined at the start of the solution.
+
+:::
 
 :::
 
