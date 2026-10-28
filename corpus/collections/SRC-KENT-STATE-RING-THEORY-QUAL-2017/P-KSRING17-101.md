@@ -19,6 +19,8 @@ audit:
 Show that the polynomial $f ( x ) = x ^ { 4 } + 5 x ^ { 2 } + 3 x + 2$ is irreducible over the field of rational numbers.
 :::
 
+::: {.solution}
+
 Set
 $$
 f(x)
@@ -402,6 +404,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
