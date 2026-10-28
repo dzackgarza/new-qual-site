@@ -25,6 +25,8 @@ If $f\colon \RR \to \RR$ is a bounded function that is Lebesgue integrable, then
 (E) None of the above.
 :::
 
+::: {.solution}
+
 Define $f=\mathbf 1_{\QQ}$, the characteristic function of the rational numbers.
 
 ::: pf
@@ -127,6 +129,8 @@ Step [](#s1-1){.pf-ref} supplies a function satisfying the hypotheses, while ste
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
