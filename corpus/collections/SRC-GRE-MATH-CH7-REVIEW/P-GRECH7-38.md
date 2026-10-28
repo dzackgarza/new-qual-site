@@ -25,6 +25,8 @@ Let $X$ be a random variable on $\mathbb{Z}^+$ whose distribution function is $F
 (E) $1/6$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -132,6 +134,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} show that the problem is not well-posed as printed; step [](#s1-4){.pf-ref} gives the source's intended answer after making both implicit corrections explicit.
+
+:::
 
 :::
 
