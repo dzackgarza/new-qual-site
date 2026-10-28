@@ -25,6 +25,8 @@ In how many different ways can four people sit around a restaurant table (not in
 (E) $16$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -77,6 +79,8 @@ By step [](#s1-1){.pf-ref}, each rotational equivalence class is counted exactly
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
