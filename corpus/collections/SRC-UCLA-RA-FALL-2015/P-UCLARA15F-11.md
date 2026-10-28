@@ -35,6 +35,8 @@ u(x,y) \leq ax + by, \quad (x,y) \in \Omega.
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 v(x,y)=u(x,y)-ax-by.
@@ -438,6 +440,8 @@ Step [](#s1-15){.pf-ref} gives \(v\le0\).
 ::: pf-qed
 
 Step [](#s1-16){.pf-ref} is the required Phragmén--Lindelöf bound.
+
+:::
 
 :::
 
