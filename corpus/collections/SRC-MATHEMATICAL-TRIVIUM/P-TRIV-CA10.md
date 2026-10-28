@@ -29,6 +29,8 @@ The source does not state the center of the disk.
 The question about the image of the origin suggests the disk $\{z : |z| < R\}$ centered at $0$, with the cut along $(-R, 0]$; the source does not say so, and $\log z$ is not defined at the branch point $z = 0$.
 :::
 
+::: {.solution}
+
 Interpret the domain, as in the remark, as
 $$
 D_R
@@ -212,6 +214,8 @@ limiting behavior of its nearby points.
 
 Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give respectively the image of the slit disk and the
 status of the origin.
+
+:::
 
 :::
 
