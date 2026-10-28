@@ -26,6 +26,8 @@ where $\lambda$ is planar Lebesgue measure.
 Show that $u\equiv0$.
 :::
 
+::: {.solution}
+
 Write
 \[
 M(r)=\frac1{2\pi}\int_0^{2\pi}u(re^{i\theta})\,d\theta,
@@ -223,6 +225,8 @@ The domain of $u$ in the problem is the punctured disk, and step [](#s1-8){.pf-r
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
