@@ -25,6 +25,8 @@ Which of the following is a harmonic conjugate $u(x, y)$ of the harmonic functio
 (E) $-x^3 + 3xy^2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ Take $C=0$ in step [](#s1-3){.pf-ref}. Adding a real constant gives the other ha
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested harmonic conjugate.
+
+:::
 
 :::
 
