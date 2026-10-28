@@ -19,6 +19,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 ::: pf
@@ -285,6 +287,8 @@ which diverges.
 
 Step [](#s1-5){.pf-ref} proves convergence in part (a), and step [](#s1-10){.pf-ref} proves divergence in
 part (b).
+
+:::
 
 :::
 
