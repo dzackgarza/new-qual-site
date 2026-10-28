@@ -17,6 +17,8 @@ review: draft
 (b) Now assume that $\{a_n\}$ has the property that every subsequence has a further subsequence that converges to the same limit $a$. Show that the entire sequence converges to $a$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Assume \((a_n)\) is bounded and every convergent subsequence converges to
@@ -309,6 +311,8 @@ step [](#s1-14){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} proves part (a), and step [](#s1-15){.pf-ref} proves part (b).
+
+:::
 
 :::
 
