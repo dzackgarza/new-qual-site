@@ -26,6 +26,8 @@ If $A$ is an invertible matrix with an eigenvalue of $3$ corresponding to the ei
 (E) The matrix $A^2$ has an eigenvalue of $3$ corresponding to the eigenvector $3\mathbf{x}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -84,6 +86,8 @@ Step [](#s1-2){.pf-ref} says exactly that $1/3$ is an eigenvalue of $A^{-1}$ cor
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the required statement.
+
+:::
 
 :::
 
