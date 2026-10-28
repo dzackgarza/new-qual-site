@@ -31,6 +31,8 @@ III. $C - B \subseteq C - A$
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} establish I, II, and III res
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
