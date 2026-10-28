@@ -34,6 +34,8 @@ Do not merely restate the Inverse Function Theorem: the requested argument is pa
 You may use without proof basic estimates expressing that the change in $F$ is approximated by its differential.
 :::
 
+::: {.solution}
+
 Use the Euclidean norm on $\mathbb R^2$ and the induced operator norm on matrices.
 
 ::: pf
@@ -236,6 +238,8 @@ Step [](#s1-5){.pf-ref} therefore supplies $x\in\mathbb R^2$ with $F(x)=y=(a,b)$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required local-surjectivity statement.
+
+:::
 
 :::
 
