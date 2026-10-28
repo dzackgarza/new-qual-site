@@ -25,6 +25,8 @@ Let $f(x, y) = x^y$, for $x > 0$. Then $\left.\frac{\partial f}{\partial x}\righ
 (E) $e^e$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -92,6 +94,8 @@ agree at the prescribed point.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
