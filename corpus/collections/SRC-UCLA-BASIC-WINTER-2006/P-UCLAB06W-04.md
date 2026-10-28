@@ -27,6 +27,8 @@ Prove that $f_n\to f$ uniformly on $[0,1]$.
 You may use without proof that $[0,1]$ is compact and sequentially compact.
 :::
 
+::: {.solution}
+
 Since $(f_n)$ decreases pointwise to $f$, one has
 $$
 f_n(x)\ge f(x)
@@ -127,6 +129,8 @@ as $m\to\infty$. This is impossible for a fixed $\varepsilon>0$.
 ::: pf-qed
 
 The contradiction in step [](#s1-4){.pf-ref} shows that the assumption in step [](#s1-1){.pf-ref} was false. Therefore $f_n\to f$ uniformly on $[0,1]$.
+
+:::
 
 :::
 
