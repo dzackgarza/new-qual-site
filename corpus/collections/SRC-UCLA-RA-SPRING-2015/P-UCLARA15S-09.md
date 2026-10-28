@@ -25,6 +25,8 @@ Suppose $u:\Omega\to\mathbb R$ is bounded, continuous, and harmonic on $\Omega$,
 Determine $u(2)$.
 :::
 
+::: {.solution}
+
 Set
 \[
 r\coloneqq2-\sqrt3.
@@ -293,6 +295,8 @@ Substituting into step [](#s1-4){.pf-ref} and using step [](#s1-5){.pf-ref} give
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} determines $u(2)$.
+
+:::
 
 :::
 
