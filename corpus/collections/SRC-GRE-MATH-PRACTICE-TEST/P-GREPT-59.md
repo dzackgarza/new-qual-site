@@ -25,6 +25,8 @@ Let $\omega = e^{2\pi i/5}$ be a fifth root of $1$. What is the value of the fun
 (E) $2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -83,6 +85,8 @@ Hence the correct choice is (D).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
