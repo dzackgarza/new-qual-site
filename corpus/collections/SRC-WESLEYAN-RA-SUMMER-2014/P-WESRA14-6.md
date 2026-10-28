@@ -24,6 +24,8 @@ Prove
 \]
 :::
 
+::: {.solution}
+
 Assume $f$ and $g$ are measurable and positive.
 
 ::: pf
@@ -214,6 +216,8 @@ Squaring and applying step [](#s1-5){.pf-ref} yields the conclusion.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
