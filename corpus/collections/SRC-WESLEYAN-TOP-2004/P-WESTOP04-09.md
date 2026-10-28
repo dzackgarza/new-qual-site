@@ -29,6 +29,8 @@ for $\eta<\xi$.
 Prove both assertions.
 :::
 
+::: {.solution}
+
 Write
 $$
 \operatorname{cf}(\xi)
@@ -536,6 +538,8 @@ and which are countably compact by step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the complete compactness classification, and step [](#s1-8){.pf-ref} gives the complete countable-compactness classification.
+
+:::
 
 :::
 
