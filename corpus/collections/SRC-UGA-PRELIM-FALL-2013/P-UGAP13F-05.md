@@ -24,6 +24,8 @@ depends on the choice of $C$.
 (b) Give an example of a function defined on the plane whose gradient always points toward the origin.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -367,6 +369,8 @@ At the origin itself,
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} answers part (a), and steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} answer part (b).
+
+:::
 
 :::
 
