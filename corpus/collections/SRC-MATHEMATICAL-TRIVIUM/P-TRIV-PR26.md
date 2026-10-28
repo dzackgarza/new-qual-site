@@ -20,6 +20,8 @@ From a collection of 500 goods 70 were investigated, and in 14 of them various d
 Find the interval in which the fraction of the defected goods in the whole group lies with the probability 96%.
 :::
 
+::: {.solution}
+
 Let $N=500$ be the population size, $n=70$ the sample size, and
 \[
 \widehat p=\frac{14}{70}=0.2
@@ -141,6 +143,8 @@ Multiply the endpoints in step [](#s1-5){.pf-ref} by $500$ and round outward to 
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the requested approximate 96% interval for the fraction and its equivalent population-count range.
+
+:::
 
 :::
 
