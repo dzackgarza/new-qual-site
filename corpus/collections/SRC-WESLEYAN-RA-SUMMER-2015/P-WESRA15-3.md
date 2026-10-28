@@ -24,6 +24,8 @@ B=\bigcup_{x\in A}[x-1,x+1]
 is Lebesgue measurable.
 :::
 
+::: {.solution}
+
 For each $q\in\QQ$, define
 $$
 B_q
@@ -107,6 +109,8 @@ The rationals are countable. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-r
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion. The argument actually does not require the hypothesis that $A$ itself is measurable.
+
+:::
 
 :::
 
