@@ -35,6 +35,8 @@ Suggestion: in the arc-length formula, use
 \]
 :::
 
+::: {.solution}
+
 Let $L$ denote the arc length of the graph of $F$.
 
 ::: pf
@@ -208,6 +210,8 @@ L
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
