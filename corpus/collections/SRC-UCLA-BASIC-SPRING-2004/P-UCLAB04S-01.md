@@ -36,6 +36,8 @@ b=(a_1,\ldots,a_{n-1},1,b_{n+1},\ldots).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -253,6 +255,8 @@ Step [](#s1-6){.pf-ref} is exactly the definition of injectivity.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves that $\theta$ is well-defined, and step [](#s1-7){.pf-ref} proves injectivity.
+
+:::
 
 :::
 
