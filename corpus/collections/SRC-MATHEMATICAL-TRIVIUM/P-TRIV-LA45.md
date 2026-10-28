@@ -19,6 +19,8 @@ audit:
 Find if the quadratic form $f ( \vec { x } ) = 9 x _ { 1 } ^ { 2 } + 6 x _ { 1 } x _ { 2 } + 6 x _ { 2 } ^ { 2 } + 8 x _ { 2 } x _ { 3 } + 4 x _ { 3 } ^ { 2 }$ is positive definite or not.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -178,6 +180,8 @@ This is step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
