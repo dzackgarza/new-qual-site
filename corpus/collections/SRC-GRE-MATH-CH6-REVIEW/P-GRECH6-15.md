@@ -26,6 +26,8 @@ Let $G$ be a group of order $9$, and let $e$ denote the identity of $G$. Which o
 (E) $G$ is Abelian.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ Step [](#s1-1){.pf-ref} proves that (A) is impossible for every group of order $
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the required statement.
+
+:::
 
 :::
 
