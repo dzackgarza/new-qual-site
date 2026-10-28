@@ -19,6 +19,8 @@ audit:
 Prove that the set of irrational numbers in $\mathbb R$ is not a countable union of closed subsets of $\mathbb R$.
 :::
 
+::: {.solution}
+
 Let $P=\RR\setminus\QQ$ denote the set of irrational numbers.
 
 ::: pf
@@ -112,6 +114,8 @@ This contradicts the Baire category theorem, because $\RR$ is a complete metric 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required assertion.
+
+:::
 
 :::
 
