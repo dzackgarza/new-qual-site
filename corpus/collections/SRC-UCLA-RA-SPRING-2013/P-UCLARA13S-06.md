@@ -30,6 +30,8 @@ Show that
 (c) $X\ne C_0(\mathbb R)$.
 :::
 
+::: {.solution}
+
 For $f\in L^1(\mathbb R)$, write
 \[
 \mathcal Ff(\xi)
@@ -406,6 +408,8 @@ Step [](#s1-13){.pf-ref} contradicts the only alternative $X=C_0$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-14){.pf-ref} proves part (c).
+
+:::
 
 :::
 
