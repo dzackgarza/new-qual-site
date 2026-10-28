@@ -35,6 +35,8 @@ This is part 3 of question 1 of the Spring 2014 list in the source, whose openin
 The source prints $dz$ twice in the integral.
 :::
 
+::: {.solution}
+
 Use the intended integral with a single differential,
 $$
 I
@@ -244,6 +246,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required evaluation, obtained without Cauchy's theorem.
+
+:::
 
 :::
 
