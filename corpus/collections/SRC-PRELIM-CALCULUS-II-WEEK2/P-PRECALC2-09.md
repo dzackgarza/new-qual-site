@@ -15,6 +15,8 @@ review: draft
 Compute $\int _ { 0 } ^ { \infty } \frac { \log ( t ) } { 1 + t ^ { 2 } } d t .$
 :::
 
+::: {.solution}
+
 Let
 \[
 I
@@ -246,6 +248,8 @@ This is step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested value.
+
+:::
 
 :::
 
