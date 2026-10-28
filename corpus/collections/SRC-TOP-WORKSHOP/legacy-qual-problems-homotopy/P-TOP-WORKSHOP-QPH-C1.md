@@ -23,6 +23,8 @@ G=\langle x\mid x^2\rangle.
 Find the presentation complex $X_G$, identify it as a familiar space, and then find its universal cover $\widetilde X_G$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -190,6 +192,8 @@ and step [](#s1-6){.pf-ref} says the covering space $S^2$ is simply connected. A
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the presentation complex and step [](#s1-7){.pf-ref} identifies its universal cover.
+
+:::
 
 :::
 
