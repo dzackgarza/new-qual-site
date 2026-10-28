@@ -30,6 +30,8 @@ Assume that every $A_i$ is contractible and that
 (b) Prove that $\mathbb{RP}^n$ cannot be covered by $n$ contractible subspaces.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Let
@@ -325,6 +327,8 @@ The assumed cover led to the contradiction in step [](#s1-13){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
+
+:::
 
 :::
 
