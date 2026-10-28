@@ -20,6 +20,8 @@ audit:
 Suppose that $r^2 = r$ for all $r$ in a ring $R$. Show that $R$ is commutative.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ Step [](#s1-3){.pf-ref} shows that every pair of elements commutes.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
