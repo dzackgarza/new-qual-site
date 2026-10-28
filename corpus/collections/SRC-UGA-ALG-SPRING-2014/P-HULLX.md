@@ -23,6 +23,8 @@ Let $p, n$ be integers such that $p$ is prime and $p$ does not divide $n$.
 Find a real number $k = k (p, n)$ such that for every integer $m\geq k$, every group of order $p^m n$ is not simple.
 :::
 
+::: {.solution}
+
 Assume $n$ is a positive integer, as required for $p^m n$ to be a group order.
 
 ::: pf
@@ -72,6 +74,8 @@ If such a group were simple, step [](#s1-2){.pf-ref} would give an embedding $G\
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} give the requested bound and establish its asserted property.
+
+:::
 
 :::
 
