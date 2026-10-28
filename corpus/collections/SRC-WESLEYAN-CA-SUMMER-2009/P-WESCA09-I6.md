@@ -20,6 +20,8 @@ Let $U\subset\mathbb C$ be open and let $\sigma$ be a cycle in $U$.
 Define what it means for $\sigma$ to be homologous to zero in $U$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -46,6 +48,8 @@ cycle is homologous to zero in the open set $U$.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition.
+
+:::
 
 :::
 
