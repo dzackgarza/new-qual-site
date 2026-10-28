@@ -23,6 +23,8 @@ Characterize each of the following classes in terms of familiar intrinsic proper
 5. subspaces of path-connected spaces.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -143,6 +145,8 @@ The five rows are exactly steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} collects the five required characterizations with the constructions and necessity arguments established above.
+
+:::
 
 :::
 
