@@ -25,6 +25,8 @@ Prove that $M_n(F)$ is a simple ring.
 Equivalently, $\operatorname{End}_F(V)$ is a simple ring if $V$ is a finite dimensional vector space over $F$.
 :::
 
+::: {.solution}
+
 Let
 $$
 J
@@ -342,6 +344,8 @@ Apply step [](#s1-8){.pf-ref} through the isomorphism in step [](#s1-9){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the matrix-ring statement, and step [](#s1-10){.pf-ref} proves the equivalent endomorphism-ring formulation.
+
+:::
 
 :::
 
