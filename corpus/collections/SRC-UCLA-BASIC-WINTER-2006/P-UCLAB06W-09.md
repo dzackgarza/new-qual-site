@@ -24,6 +24,8 @@ Let $A\in\mathbb M_3(\mathbb R)$ be invertible and satisfy $A=A^t$ and $\det A=1
 Prove that $A$ has $1$ as an eigenvalue.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ Step [](#s1-1){.pf-ref} gives a matrix satisfying all hypotheses, while step [](
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} completely resolves the printed claim by disproving it.
+
+:::
 
 :::
 
