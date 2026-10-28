@@ -29,6 +29,8 @@ Find out if these lines are
 (b) crossing each other at some point.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -271,6 +273,8 @@ Step [](#s1-3){.pf-ref} rules out parallelism and step [](#s1-9){.pf-ref} rules 
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} answers parts (a) and (b).
+
+:::
 
 :::
 
