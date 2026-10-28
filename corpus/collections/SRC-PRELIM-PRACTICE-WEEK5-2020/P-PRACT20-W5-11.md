@@ -20,6 +20,8 @@ audit:
 Let $G$ be a group and $H \subset G$ be a subgroup. $H$ is said to be a normal subgroup of $G$ if $ghg^{-1} \in H$ whenever $h \in H$ and $g \in G$. If $\phi : G \to G'$ is a homomorphism (where $G'$ is some other arbitrary group), show that $\ker \phi$ is a normal subgroup of $G$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ defining conjugation condition for normality.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
