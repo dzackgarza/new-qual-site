@@ -32,6 +32,8 @@ for every $f\in S$.
 Show that $S$ is finite-dimensional.
 :::
 
+::: {.solution}
+
 Argue by contradiction using an orthonormal sequence in the $L^2$ inner product.
 
 ::: pf
@@ -234,6 +236,8 @@ The assumption of infinite dimension in step [](#s1-1){.pf-ref} led to the contr
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
