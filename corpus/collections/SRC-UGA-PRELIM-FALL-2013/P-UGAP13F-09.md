@@ -18,6 +18,8 @@ audit:
 Give an example, with proof, of a linear map from $\mathbb R^3$ to some vector space whose kernel is exactly the subspace spanned by $(1,2,3)$.
 :::
 
+::: {.solution}
+
 Define
 \[
 \boxed{
@@ -180,6 +182,8 @@ Combine the two inclusions from steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 
 Step [](#s1-5){.pf-ref} verifies that the displayed linear map has exactly the prescribed
 kernel.
+
+:::
 
 :::
 
