@@ -25,6 +25,8 @@ How many structurally distinct Abelian groups have order $72$?
 (E) $12$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -122,6 +124,8 @@ types from step [](#s1-3){.pf-ref}. Hence there are $3\cdot2=6$ choices.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number of isomorphism classes.
+
+:::
 
 :::
 
