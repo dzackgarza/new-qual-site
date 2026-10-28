@@ -18,6 +18,8 @@ Let $I=[0,1]$, let $C(X,I)$ be the set of continuous functions from $X$ to $I$, 
 3. Prove that $|C(I,I)|=\mathfrak c$. The source hints that continuity allows a function on $I$ to be determined by its values on a smaller subset.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -149,6 +151,8 @@ $|C(I,I)|\ge\mathfrak c$, while step [](#s1-4){.pf-ref} gives the reverse inequa
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-5){.pf-ref} prove the three requested assertions.
+
+:::
 
 :::
 
