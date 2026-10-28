@@ -22,6 +22,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 h(z)
@@ -213,6 +215,8 @@ the needed neighborhood.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required value.
+
+:::
 
 :::
 
