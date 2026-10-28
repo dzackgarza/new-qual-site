@@ -31,6 +31,8 @@ k&1&1&\cdots&1\\
 Use the eigenvalues to compute $\det(M)$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathbf 1=
@@ -222,6 +224,8 @@ Apply step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give the requested spectrum and determinant.
+
+:::
 
 :::
 
