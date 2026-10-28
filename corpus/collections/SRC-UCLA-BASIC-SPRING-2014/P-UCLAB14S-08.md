@@ -35,6 +35,8 @@ Prove that $f$ is infinitely differentiable.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -186,6 +188,8 @@ All regularity, positivity, and support properties follow from step [](#s1-5){.p
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} constructs the function required in part (b).
+
+:::
 
 :::
 
