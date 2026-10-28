@@ -17,6 +17,8 @@ audit:
 Show that if an invertible complex matrix is diagonalizable, then every positive power of it is diagonalizable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -131,6 +133,8 @@ Hence
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
