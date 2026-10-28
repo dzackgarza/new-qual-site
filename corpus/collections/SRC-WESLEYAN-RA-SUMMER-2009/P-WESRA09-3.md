@@ -35,6 +35,8 @@ If $X,Y$ are normed and $f$ is continuous, state when a course theorem implies t
 \]
 :::
 
+::: {.solution}
+
 For part (d), write
 \[
 \mathcal S
@@ -224,6 +226,8 @@ Step [](#s1-5){.pf-ref} gives one inclusion and step [](#s1-6){.pf-ref} gives th
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} solve parts (a)--(c), and step [](#s1-7){.pf-ref} gives the uniform closure requested in part (d).
+
+:::
 
 :::
 
