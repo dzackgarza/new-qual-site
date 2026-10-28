@@ -26,6 +26,8 @@ Let $H$ be the set of all group homomorphisms $\phi\colon \ZZ_3 \to \ZZ_6$. How 
 (E) $6$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ By step [](#s1-1){.pf-ref}, distinct allowed images of $\overline1$ give distinc
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested cardinality.
+
+:::
 
 :::
 
