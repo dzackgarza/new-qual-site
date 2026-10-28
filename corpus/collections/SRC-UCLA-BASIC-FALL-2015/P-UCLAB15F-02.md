@@ -24,6 +24,8 @@ Show that if $g,h:[a,b]\to\mathbb R$ are continuous and $h\ge0$, then there is $
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -183,6 +185,8 @@ Otherwise multiply the identity in step [](#s1-5){.pf-ref} by
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required weighted mean value theorem.
+
+:::
 
 :::
 
