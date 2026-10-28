@@ -25,6 +25,8 @@ What is the coefficient of the $(z-2)^{-1}$ term in the Laurent series for $f(z)
 (E) $1$
 :::
 
+::: {.solution}
+
 Put $w=z-2$, so that
 $$
 f(z)=\frac1{w-3}.
@@ -98,6 +100,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give two distinct Laurent expans
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} records both the mathematical ambiguity and the answer corresponding to the intended exterior expansion.
+
+:::
 
 :::
 
