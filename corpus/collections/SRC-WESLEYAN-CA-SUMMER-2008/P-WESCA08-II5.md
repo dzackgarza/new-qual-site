@@ -24,6 +24,8 @@ Let $z_0\in U$.
 2. Is the residue of $fg$ at $z_0$ equal to the product of the residues of $f$ and $g$ at $z_0$?
 :::
 
+::: {.solution}
+
 Fix a punctured neighborhood of \(z_0\) on which both functions are
 holomorphic, and write their Laurent expansions
 \[
@@ -287,6 +289,8 @@ Step [](#s1-10){.pf-ref} provides a counterexample.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers part \(1\), and step [](#s1-11){.pf-ref} answers part \(2\).
+
+:::
 
 :::
 
