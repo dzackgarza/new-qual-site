@@ -19,6 +19,8 @@ audit:
 Find the most general solution of ${ \frac { \partial f } { \partial x } } + a { \frac { \partial f } { \partial y } } + ( x - 2 y ) f = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -131,6 +133,8 @@ Rename the arbitrary function $C$ in step [](#s1-4){.pf-ref} as $\Phi$. Every ch
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the most general solution.
+
+:::
 
 :::
 
