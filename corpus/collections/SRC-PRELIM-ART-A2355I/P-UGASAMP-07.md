@@ -22,6 +22,8 @@ Assume $u,v,w\in\mathbb R^n$ are linearly independent. Prove that
 are linearly independent.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -110,6 +112,8 @@ Step [](#s1-3){.pf-ref} shows that the only linear relation among the three disp
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
