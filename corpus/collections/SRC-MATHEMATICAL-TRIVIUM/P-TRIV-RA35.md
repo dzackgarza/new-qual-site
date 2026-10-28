@@ -86,7 +86,7 @@ e_r,
 \qquad
 r e_\theta,
 \qquad
-r\sin\theta,e_\varphi,
+r\sin\theta\,e_\varphi,
 $$
 where $e_r,e_\theta,e_\varphi$ form a positively oriented orthonormal frame.
 Their determinant is therefore
