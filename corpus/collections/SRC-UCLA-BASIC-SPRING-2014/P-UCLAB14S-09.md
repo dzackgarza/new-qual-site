@@ -25,6 +25,8 @@ among all $f\in C^1(\mathbb R)$ such that $f(0)=0$ and $f(1)=1$.
 Is the minimizing $C^1$ function unique on $[0,1]$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -182,6 +184,8 @@ The functional and endpoint constraints depend only on the restriction to $[0,1]
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} give the minimum and the requested uniqueness statement.
+
+:::
 
 :::
 
