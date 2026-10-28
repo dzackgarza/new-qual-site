@@ -29,6 +29,8 @@ Suppose $f: \HH\union \RR\to \CC$ satisfies the following:
 Show that $f(\HH)$ is a dense subset of $\HH$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -189,6 +191,8 @@ step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
