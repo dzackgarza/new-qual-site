@@ -20,6 +20,8 @@ Determine for which integers n the ring $\mathbb { Z } / n \mathbb { Z }$ is a d
 Prove your answer.
 :::
 
+::: {.solution}
+
 For a nonzero integer $n$, the quotient depends only on $\abs n$, so it suffices first to consider
 $$
 n>1.
@@ -226,6 +228,8 @@ For $n=\pm1$, the quotient is the zero ring. If the empty direct sum of fields i
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the substantive classification, with step [](#s1-6){.pf-ref} recording the degenerate integer cases.
+
+:::
 
 :::
 
