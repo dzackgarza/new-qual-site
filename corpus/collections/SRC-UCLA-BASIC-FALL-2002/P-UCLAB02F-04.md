@@ -27,6 +27,8 @@ prove that
 Justify carefully every step, especially taking the limit as $x\to1$ from below.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -211,6 +213,8 @@ Hence $S_N\to\pi/4$, which is exactly the displayed series identity.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the claimed Leibniz series, and step [](#s1-5){.pf-ref} supplies the required justification of the limit as $x\to1^-$ without interchanging an infinite sum with that limit.
+
+:::
 
 :::
 
