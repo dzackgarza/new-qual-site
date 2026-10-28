@@ -21,6 +21,8 @@ Prove that $\mathbb R$ is uncountable.
 If you use the Baire category theorem, you must prove it.
 :::
 
+::: {.solution}
+
 Let
 \[
 \Sigma=\{0,1\}^{\mathbb N}
@@ -141,6 +143,8 @@ countability of $\mathbb R$ would imply countability of $[0,1]$, contradicting s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion and does not use the Baire category theorem.
+
+:::
 
 :::
 
