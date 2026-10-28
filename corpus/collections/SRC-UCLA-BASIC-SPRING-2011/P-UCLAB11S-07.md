@@ -20,6 +20,8 @@ x^5-3x+1=0.
 \]
 :::
 
+::: {.solution}
+
 Define
 \[
 p(x)=x^5-3x+1.
@@ -116,6 +118,8 @@ p(c)=0.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required existence statement.
+
+:::
 
 :::
 
