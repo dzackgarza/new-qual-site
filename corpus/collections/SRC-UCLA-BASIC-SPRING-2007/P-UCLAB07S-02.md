@@ -21,6 +21,8 @@ Let $V,W,Z$ be $n$-dimensional vector spaces and let $T\colon V\to W$ and $U\col
 Prove, without using determinants, that if $UT\colon V\to Z$ is invertible, then both $T$ and $U$ are invertible.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -236,6 +238,8 @@ Thus
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves that $T$ is invertible, and step [](#s1-6){.pf-ref} proves that $U$ is invertible, without using determinants.
+
+:::
 
 :::
 
