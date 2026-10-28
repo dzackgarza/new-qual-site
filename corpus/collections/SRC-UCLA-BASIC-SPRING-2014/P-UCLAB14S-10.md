@@ -30,6 +30,8 @@ Assume that
 Prove that every sequence from $F$ has a subsequence that converges uniformly on $[0,1]$.
 :::
 
+::: {.solution}
+
 Let $(f_n)$ be an arbitrary sequence in $F$. The proof first obtains convergence on a countable dense set and then upgrades it to uniform convergence using equicontinuity.
 
 ::: pf
@@ -205,6 +207,8 @@ The original sequence $(f_n)$ was arbitrary, and steps [](#s1-2){.pf-ref} throug
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the desired Arzela--Ascoli conclusion.
+
+:::
 
 :::
 
