@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. We seek a quadratic polynomial $P$ satisfying
+We seek a quadratic polynomial $P$ satisfying
 \[
 P(0)=\alpha,\qquad P'(0)=\beta,\qquad P(1)=\gamma,\qquad P'(1)=\delta.
 \]
