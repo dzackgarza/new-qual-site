@@ -14,6 +14,8 @@ audit:
 Let $X$ be the space obtained by adjoining to $S^2$ the straight-line segment from the north pole to the south pole. Find a simply connected covering space of $X$ and use it to compute $\pi_1(X)$.
 :::
 
+::: {.solution}
+
 Let
 \[
 N,S\in S^2
@@ -398,6 +400,8 @@ and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} compute its deck group 
 \[
 \pi_1(X).
 \]
+
+:::
 
 :::
 
