@@ -20,6 +20,8 @@ audit:
 Let $f ( z ) = { \frac { 1 } { z } } + { \frac { 1 } { z ^ { 2 } - 1 } }$ . Find all the Laurent series of f and describe the largest annuli in which these series are valid.
 :::
 
+::: {.solution}
+
 The singularities of
 $$
 f(z)
@@ -166,6 +168,8 @@ A Laurent expansion about $0$ is determined on each connected annular component 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give both Laurent series and their largest annuli of validity.
+
+:::
 
 :::
 
