@@ -25,6 +25,8 @@ Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corr
 (b) If $A\in\mathcal B(X)$ and $E\in\mathcal B(Y)$, prove that $A\times E\in\mathcal B(X\times Y)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -186,6 +188,8 @@ Both inverse images are Borel by step [](#s1-5){.pf-ref}, and Borel sets are clo
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
