@@ -33,6 +33,8 @@ a\ne0.
 $$
 :::
 
+::: {.solution}
+
 Assume
 $$
 IJ=(a)
@@ -319,6 +321,8 @@ Step [](#s1-5){.pf-ref} proves the assertion for $I$, and step [](#s1-6){.pf-ref
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the intended conclusion.
+
+:::
 
 :::
 
