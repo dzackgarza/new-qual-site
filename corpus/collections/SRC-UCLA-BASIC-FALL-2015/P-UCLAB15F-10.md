@@ -30,6 +30,8 @@ Let $F,G:\mathbb R^n\to\mathbb R^n$ be linear operators, with
 2. Give an example of non-commuting linear operators for which this equality fails.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -325,6 +327,8 @@ Hence
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part 1, and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the requested noncommuting counterexample for part 2.
+
+:::
 
 :::
 
