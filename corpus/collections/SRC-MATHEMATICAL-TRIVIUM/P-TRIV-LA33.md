@@ -25,6 +25,8 @@ $(e^{A/N})^N$ is defined here only for integer $N$. The intended statement is
 for $N\in\mathbb N$.
 :::
 
+::: {.solution}
+
 Fix
 $$
 N\in\mathbb N.
@@ -131,6 +133,8 @@ This is step [](#s1-3){.pf-ref} with the two sides reversed.
 
 Step [](#s1-4){.pf-ref} proves the corrected intended statement for every
 $N\in\mathbb N$.
+
+:::
 
 :::
 
