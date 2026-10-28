@@ -29,6 +29,8 @@ Show that
 for a set of $f$ that is dense in $L^2(\mathbb R^2)$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathcal D
@@ -241,6 +243,8 @@ Thus every $L^2$ function can be approximated arbitrarily closely by elements of
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required divergence for every $f\in\mathcal D$, and step [](#s1-5){.pf-ref} proves that $\mathcal D$ is dense in $L^2(\mathbb R^2)$.
+
+:::
 
 :::
 
