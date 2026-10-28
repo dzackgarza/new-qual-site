@@ -26,6 +26,8 @@ $$
 is a polynomial of degree n, then it has n zeros in C.
 :::
 
+::: {.solution}
+
 Write
 $$
 P_n(z)=a_nz^n+Q(z),
@@ -119,6 +121,8 @@ multiplicity. Therefore these are all of the zeros of $P_n$ in $\CC$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the Fundamental Theorem of Algebra in the required form.
+
+:::
 
 :::
 
