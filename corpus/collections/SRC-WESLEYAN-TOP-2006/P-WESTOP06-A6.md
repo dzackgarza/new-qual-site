@@ -30,6 +30,8 @@ Recall the definition of a commutative ring with identity and of an ideal.
 4. Determine the maximal ideals in $C(X)$ when $X$ is compact.
 :::
 
+::: {.solution}
+
 For the intended vanishing ideal, write
 \[
 I_{\mathrm{van}}(S)=\{f\in C(X):Z(f)\supseteq S\}.
@@ -171,6 +173,8 @@ is nonempty. Choose \(x\) in it. Then every \(f\in M\) vanishes at \(x\), so \(M
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part \(1\); steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} address the literal and intended readings of part \(2\); step [](#s1-5){.pf-ref} resolves the false converse in part \(3\); and step [](#s1-6){.pf-ref} gives the maximal ideals requested in part \(4\).
+
+:::
 
 :::
 
