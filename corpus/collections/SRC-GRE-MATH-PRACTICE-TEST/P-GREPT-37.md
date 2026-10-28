@@ -27,6 +27,8 @@ $$\begin{aligned} kx + y + z &= 1 \\ x + ky + z &= k \\ x + y + kz &= k^2 \end{a
 (E) Infinitely many
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -126,6 +128,8 @@ step [](#s1-1){.pf-ref}. Only $k=-2$ is inconsistent.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
