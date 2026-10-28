@@ -20,6 +20,8 @@ audit:
 Let $F$ be a finite field of order $p$. How many non-invertible $2 \times 2$ matrices with entries in $F$ have trace $1$?
 :::
 
+::: {.solution}
+
 Write a matrix of trace $1$ as
 \[
 A=
@@ -137,6 +139,8 @@ N
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested count.
+
+:::
 
 :::
 
