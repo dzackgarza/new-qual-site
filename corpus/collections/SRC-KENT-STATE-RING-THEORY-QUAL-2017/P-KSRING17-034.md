@@ -24,6 +24,8 @@ Let I be the set of functions f in S such that $f ( t ) \to 0 { \mathrm { ~ a s 
 (b) Suppose $x \in S$ is such that there is an $i \in I$ with ix = x. Show that $x ( t ) = 0$ for all sufficiently large |t|.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -262,6 +264,8 @@ Take the constant $T$ from step [](#s1-4){.pf-ref} and apply step [](#s1-5){.pf-
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
