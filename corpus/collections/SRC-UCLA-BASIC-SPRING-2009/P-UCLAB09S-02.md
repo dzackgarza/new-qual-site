@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Compute the operator norm of
+Compute the operator norm of
 \[
 A=\begin{pmatrix}2&1\\0&\sqrt3\end{pmatrix};
 \]
