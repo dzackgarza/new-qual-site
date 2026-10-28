@@ -34,6 +34,8 @@ R=\{(x,y,z)\in\mathbb R^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -144,6 +146,8 @@ Using these three bounds with the integrand $x\sin(y+z)$ gives the displayed ite
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b), and step [](#s1-3){.pf-ref} answers part (c).
+
+:::
 
 :::
 
