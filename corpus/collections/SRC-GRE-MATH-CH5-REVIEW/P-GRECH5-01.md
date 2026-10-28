@@ -26,6 +26,8 @@ Two distinct solutions, $\mathbf{x}_1$ and $\mathbf{x}_2$, can be found to the l
 (E) There exists a solution $\mathbf{x}$ such that $\mathbf{x} \neq \mathbf{x}_1$ and $\mathbf{x} \neq \mathbf{x}_2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ so $\mathbf x-\mathbf x_2=\mathbf v\ne0$. Thus $\mathbf x$ is a third distinct s
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the necessarily true statement among the choices.
+
+:::
 
 :::
 
