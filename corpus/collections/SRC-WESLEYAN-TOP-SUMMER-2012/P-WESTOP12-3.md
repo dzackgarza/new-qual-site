@@ -17,6 +17,8 @@ Prove or disprove each statement:
 2. The image of a connected space under a continuous map is connected.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -157,6 +159,8 @@ statement (2).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} records both conclusions.
+
+:::
 
 :::
 
