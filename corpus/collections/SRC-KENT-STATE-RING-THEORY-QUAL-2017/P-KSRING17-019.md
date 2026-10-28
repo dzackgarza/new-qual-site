@@ -23,6 +23,8 @@ Let m and n be relatively prime integers.
 (b) Show that $\mathbb { Z } _ { m n }$ and $\mathbb { Z } _ { m } \times \mathbb { Z } _ { n }$ are isomorphic as rings.
 :::
 
+::: {.solution}
+
 Since
 $$
 \gcd(m,n)=1,
@@ -228,6 +230,8 @@ gives the displayed isomorphism.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
