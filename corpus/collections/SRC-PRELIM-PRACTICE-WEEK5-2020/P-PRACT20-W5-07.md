@@ -15,6 +15,8 @@ review: draft
 Show that a group is never the union of two of its proper subgroups. Show by example that a group can be the union of three of its proper subgroups.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ are proper subgroups and
 
 Step [](#s1-3){.pf-ref} proves the impossibility for two proper subgroups, and step [](#s1-4){.pf-ref}
 gives the requested three-subgroup example.
+
+:::
 
 :::
 
