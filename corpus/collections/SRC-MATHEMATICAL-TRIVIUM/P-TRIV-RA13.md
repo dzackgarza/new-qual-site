@@ -23,6 +23,8 @@ audit:
 Find $\displaystyle\lim_{x \to 0} \frac{\sin\tan x - \tan\sin x}{\arcsin\arctan x - \arctan\arcsin x}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -198,6 +200,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required limit.
+
+:::
 
 :::
 
