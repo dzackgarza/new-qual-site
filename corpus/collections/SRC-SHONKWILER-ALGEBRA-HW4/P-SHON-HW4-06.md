@@ -23,6 +23,8 @@ Let $G^{\mathrm{op}}$ be the group with the same underlying set as $G$ and multi
 Prove that $G^{\mathrm{op}}\cong G$.
 :::
 
+::: {.solution}
+
 Define
 \[
 \phi:G\to G^{\mathrm{op}}
@@ -203,6 +205,8 @@ The map \(\phi\) is a bijective homomorphism by steps [](#s1-6){.pf-ref} through
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required isomorphism.
+
+:::
 
 :::
 
