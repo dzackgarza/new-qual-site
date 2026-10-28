@@ -25,6 +25,8 @@ Find the Laurent series expansions of the function $f(z) = \frac{1}{z - 3}$ that
 (E) $\sum_{n=1}^{\infty} (z - 4)^{-n-1}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ Step [](#s1-2){.pf-ref} derives the expansion on the stated annulus. In particul
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required expansion.
+
+:::
 
 :::
 
