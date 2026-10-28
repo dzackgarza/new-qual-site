@@ -27,6 +27,8 @@ F_{2n+1}F_{2n-1}-F_{2n}^2=1
 for all $n\ge1$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \phi=\frac{1+\sqrt5}{2},
@@ -386,6 +388,8 @@ step [](#s1-8){.pf-ref} becomes exactly the identity required in part (b).
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
