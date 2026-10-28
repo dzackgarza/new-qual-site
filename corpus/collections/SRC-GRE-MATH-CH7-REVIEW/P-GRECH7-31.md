@@ -25,6 +25,8 @@ Which of the following sets in $\mathbb{R}^3$ is compact?
 (E) $\{x, y, z \mid 2 < x^2 + y^2 + z^2 < 8\}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ By the Heine--Borel theorem, a subset of $\RR^3$ is compact exactly when it is c
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
