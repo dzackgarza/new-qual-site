@@ -20,6 +20,8 @@ audit:
 Let $M$ be a real $n\times n$ matrix. Prove that $M$ and $MM^T$ have the same range.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -166,6 +168,8 @@ Hence the inclusion is equality.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
