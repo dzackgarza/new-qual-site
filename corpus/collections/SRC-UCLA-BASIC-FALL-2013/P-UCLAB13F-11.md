@@ -17,6 +17,8 @@ audit:
 Define a normal linear transformation $N$ on a finite-dimensional complex inner-product space $V$. Assuming that $N$ is normal, show that there exists an orthogonal basis of $V$ consisting of eigenvectors of $N$.
 :::
 
+::: {.solution}
+
 A linear transformation
 \[
 N:V\to V
@@ -274,6 +276,8 @@ is an orthonormal basis of $V$ consisting entirely of eigenvectors of $N$.
 ::: pf-qed
 
 The opening sentence gives the definition of normality, and step [](#s1-6){.pf-ref} proves the spectral theorem for normal operators.
+
+:::
 
 :::
 
