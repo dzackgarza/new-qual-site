@@ -20,6 +20,8 @@ Let Y be any finite path-connected graph.
 Show how to compute the simplicial homology groups of Y, and write these groups in terms of the Euler characteristic of Y (see problem (9.B.4) for the definition).
 :::
 
+::: {.solution}
+
 Let
 \[
 v
@@ -526,6 +528,8 @@ because it contains a spanning tree with \(v-1\) edges.
 
 Step [](#s1-18){.pf-ref} gives the requested homology groups in terms of the Euler
 characteristic.
+
+:::
 
 :::
 
