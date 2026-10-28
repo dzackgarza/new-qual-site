@@ -21,6 +21,8 @@ Let F be a field of characteristic $\neq 2$ and let E be a quadratic extension o
 Deduce that if there is a chain of fields $F = E _ { 0 } \subset E _ { 1 } \subset \ldots \subset E _ { n } = E$ with deg $: ( E _ { i } / E _ { i - 1 } ) = 2$ for $i = 1 , 2 , . . . , n$ , then the kernel of the natural homomorphism $F ^ { \times } / ( { F ^ { \times } } ) ^ { 2 } \to E ^ { \times } / ( E ^ { \times } ) ^ { 2 }$ has order dividing $2 ^ { n }$
 :::
 
+::: {.solution}
+
 Interpret the evident typographical expression in the first quotient as
 \[
 F^\times/(F^\times)^2.
@@ -228,6 +230,8 @@ The natural map along the entire field inclusion is the composite of the natural
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the first assertion and step [](#s1-10){.pf-ref} proves the deduction for a tower of quadratic extensions.
+
+:::
 
 :::
 
