@@ -34,6 +34,8 @@ slope, candidate C is elongated along the opposite diagonal direction, and
 candidate D has a broader opposite shear.
 :::
 
+::: {.solution}
+
 Set
 \[
 \lambda_\pm=\frac{3\pm\sqrt5}{2},
@@ -240,6 +242,8 @@ providing the requested orthogonal diagonalization.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} records all requested outputs.
+
+:::
 
 :::
 
