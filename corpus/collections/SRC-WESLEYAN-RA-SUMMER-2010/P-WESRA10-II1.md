@@ -27,6 +27,8 @@ then the set of points belonging to infinitely many $A_n$ has measure zero.
 (b) Give an example in which $\sum_n\mu(A_n)=\infty$ but the set of points belonging to infinitely many $A_n$ still has measure zero.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -133,6 +135,8 @@ $A_n$, and the limsup is empty.
 
 Step [](#s1-2){.pf-ref} proves part (a), while steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give the requested
 counterexample in part (b).
+
+:::
 
 :::
 
