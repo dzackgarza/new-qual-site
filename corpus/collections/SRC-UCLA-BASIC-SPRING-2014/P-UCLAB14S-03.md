@@ -24,6 +24,8 @@ AB-BA=A.
 Show that $A$ is not invertible.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -137,6 +139,8 @@ The assumption of invertibility in step [](#s1-1){.pf-ref} led to the contradict
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
