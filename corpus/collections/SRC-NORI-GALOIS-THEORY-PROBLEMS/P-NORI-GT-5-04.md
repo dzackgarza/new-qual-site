@@ -29,6 +29,8 @@ Show that $\sigma \mapsto \sigma|_K$ gives an isomorphism $\operatorname{Gal}(EK
 So, state precisely where you appeal to this thm.
 :::
 
+::: {.solution}
+
 Define
 $$
 \rho:\operatorname{Gal}(EK/E)\to\operatorname{Gal}(K/K\cap E),
@@ -230,6 +232,8 @@ Step [](#s1-2){.pf-ref} gives a homomorphism, step [](#s1-3){.pf-ref} gives inje
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required natural-irrationalities isomorphism, and steps [](#s1-5){.pf-ref} and [](#s1-7){.pf-ref} explicitly identify the two uses of the Fundamental Theorem of Galois Theory requested by the warning in the source.
+
+:::
 
 :::
 
