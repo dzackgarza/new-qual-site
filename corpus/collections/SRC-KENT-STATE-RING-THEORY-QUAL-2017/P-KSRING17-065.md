@@ -20,6 +20,8 @@ Let R be a commutative ring with identity.
 Show that if x and y are nilpotent elements of R then $x + y$ is nilpotent and the set of all nilpotent elements is an ideal in R.
 :::
 
+::: {.solution}
+
 Let
 $$
 \mathcal N
@@ -240,6 +242,8 @@ Thus it is an ideal.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the first assertion, and step [](#s1-6){.pf-ref} proves the second.
+
+:::
 
 :::
 
