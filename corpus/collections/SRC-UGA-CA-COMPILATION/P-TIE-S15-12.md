@@ -23,6 +23,8 @@ Show that for any w$\in \mathbb { C }$, there exists a sequence$z _ { n } \in \O
 (2) Explain the similarity and difference between the above assertion and the Weierstrass-Casorati theorem.
 :::
 
+::: {.solution}
+
 We prove the stronger statement that the sequence in part (1) may be chosen so that
 $$
 z_n\longrightarrow a.
@@ -245,6 +247,8 @@ Moreover, the poles themselves show that $\infty$ is also a spherical cluster va
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (1) in the stronger form $z_n\to a$, and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the requested comparison with Casorati--Weierstrass.
+
+:::
 
 :::
 
