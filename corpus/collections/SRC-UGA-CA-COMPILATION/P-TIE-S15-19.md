@@ -24,6 +24,8 @@ Assume $f ( z )$ is analytic in $\mathbb { D } : | z | < 1$ and $f ( 0 ) = 0$ an
 Erratum: the source omits the hypothesis $f(\DD)\subseteq\DD$. Without it, the iterates need not be defined on all of $\DD$. The proof below uses the intended hypothesis that $f:\DD\to\DD$.
 :::
 
+::: {.solution}
+
 Assume the intended hypothesis $f:\DD\to\DD$.
 
 ::: pf
@@ -127,6 +129,8 @@ Each iterate $f^n$ is holomorphic on $\DD$, and step [](#s1-4){.pf-ref} gives lo
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves compact-uniform convergence, and step [](#s1-5){.pf-ref} proves analyticity of the limit.
+
+:::
 
 :::
 
