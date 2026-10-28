@@ -26,6 +26,8 @@ This problem proves the metrizability part of the Hahn--Mazurkiewicz theorem.
 3. Prove that $X$ is metrizable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -165,6 +167,8 @@ metrization theorem therefore implies that
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part 1, step [](#s1-4){.pf-ref} proves part 2, and step [](#s1-5){.pf-ref} proves part 3.
+
+:::
 
 :::
 
