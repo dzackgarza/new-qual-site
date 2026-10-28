@@ -18,6 +18,8 @@ audit:
 State both parts of the Fundamental Theorem of Calculus and outline a proof of one of them.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -293,6 +295,8 @@ G(b)-G(a).
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} state both parts, and steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove Part I.
+
+:::
 
 :::
 
