@@ -19,6 +19,8 @@ Compute the number of invertible linear maps $V\to V$.
 A lengthy algebraic expression is acceptable, provided you explain why it is correct.
 :::
 
+::: {.solution}
+
 Fix an ordered basis
 $$
 e_1,\ldots,e_n
@@ -129,6 +131,8 @@ By step [](#s1-1){.pf-ref}, assigning an invertible linear map is equivalent to 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
