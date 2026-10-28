@@ -26,6 +26,8 @@ S^0=\{-1,1\},
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ The constant pointed map has $f(-1)=x$, so step [](#s1-4){.pf-ref} sends its cla
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the requested description, including its distinguished base class.
+
+:::
 
 :::
 
