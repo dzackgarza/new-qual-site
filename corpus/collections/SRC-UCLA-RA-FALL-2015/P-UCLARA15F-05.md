@@ -24,6 +24,8 @@ audit:
 A function $f \in C([0,1])$ is called Hölder continuous of order $\delta > 0$ if there is a constant $C > 0$ such that $|f(x) - f(y)| \leq C|x-y|^\delta$, $x, y \in [0,1]$. Show that the Hölder continuous functions form a set of the first category (a meager set) in $C([0,1])$.
 :::
 
+::: {.solution}
+
 Equip
 \[
 C([0,1])
@@ -521,6 +523,8 @@ By step [](#s1-2){.pf-ref}, the Hölder functions form a subset of the meager se
 ::: pf-qed
 
 Step [](#s1-20){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
