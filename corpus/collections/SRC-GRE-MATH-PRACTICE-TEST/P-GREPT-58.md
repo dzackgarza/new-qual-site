@@ -31,6 +31,8 @@ III. $\RR$ is Hausdorff.
 (E) II and III only
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ Step [](#s1-1){.pf-ref} disproves I, step [](#s1-2){.pf-ref} proves II, and step
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
