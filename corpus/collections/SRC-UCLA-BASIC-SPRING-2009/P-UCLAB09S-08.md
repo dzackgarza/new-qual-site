@@ -35,6 +35,8 @@ Check that if $C$ is symmetric, then $\Phi_C$ is self-adjoint.
 (c) Prove that for every $C$, the map $\Phi_C$ is not onto.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -342,6 +344,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} prove part (b), and step [](#s1-9){.pf-ref} proves part (c).
+
+:::
 
 :::
 
