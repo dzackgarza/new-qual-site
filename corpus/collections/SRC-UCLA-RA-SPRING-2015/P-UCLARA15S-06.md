@@ -21,6 +21,8 @@ When $B_1$ and $B_2$ are Banach spaces, call a linear operator $T:B_1\to B_2$ co
 Show that if $T$ is compact then $\operatorname{Im}T$ has a dense countable subset.
 :::
 
+::: {.solution}
+
 For each integer $N\ge1$, let
 \[
 A_N
@@ -183,6 +185,8 @@ Step [](#s1-4){.pf-ref} constructs an explicit dense countable subset of $\opera
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
