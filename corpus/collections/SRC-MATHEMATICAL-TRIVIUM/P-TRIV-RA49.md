@@ -33,6 +33,8 @@ $$
 For an ordinary absolutely convergent Fourier integral, assume $\mu>0$.
 :::
 
+::: {.solution}
+
 Put
 $$
 k=|\vec k|.
@@ -266,6 +268,8 @@ which is the same value.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the Fourier image for all $\vec k\in\mathbb R^3$.
+
+:::
 
 :::
 
