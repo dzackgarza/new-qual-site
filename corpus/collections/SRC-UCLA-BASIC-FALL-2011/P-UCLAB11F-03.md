@@ -20,6 +20,8 @@ audit:
 Problem 3. Prove that the set of real numbers can be written as the union of uncountably many pairwise disjoint subsets, each of which is uncountable.
 :::
 
+::: {.solution}
+
 Let $C\subseteq[0,1]$ be the middle-thirds Cantor set. Every point of $C$ has a unique ternary expansion using only the digits $0$ and $2$.
 
 ::: pf
@@ -201,6 +203,8 @@ This is exactly the partition constructed in steps [](#s1-5){.pf-ref} through []
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
