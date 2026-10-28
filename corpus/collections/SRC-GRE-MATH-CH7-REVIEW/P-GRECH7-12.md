@@ -25,6 +25,8 @@ If $x^2 = 40$, use Newton's method twice to approximate the value of $x$ to thre
 (E) $6.325$
 :::
 
+::: {.solution}
+
 Let
 $$
 f(x)=x^2-40,
@@ -107,6 +109,8 @@ which rounds to $6.325$ at three decimal places.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested approximation after two Newton iterations.
+
+:::
 
 :::
 
