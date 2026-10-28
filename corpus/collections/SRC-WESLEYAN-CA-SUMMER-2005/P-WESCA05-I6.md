@@ -23,6 +23,8 @@ Find the winding number of
 about the point $10+10i$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -95,6 +97,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required winding number.
+
+:::
 
 :::
 
