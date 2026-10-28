@@ -19,6 +19,8 @@ audit:
 Solve $\partial _ { x } ^ { 2 } u + 2 \partial _ { x } \partial _ { y } u + \partial _ { y } ^ { 2 } u = 0$ with the boundary conditions $u ( x , 0 ) = \sin { x }$ and $u ( 0 , y ) = y ^ { 2 }$
 :::
 
+::: {.solution}
+
 Introduce
 \[
 s=x+y,
@@ -157,6 +159,8 @@ Substitute the functions from step [](#s1-5){.pf-ref} into step [](#s1-2){.pf-re
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the required solution, including its continuous extension across $x=y$.
+
+:::
 
 :::
 
