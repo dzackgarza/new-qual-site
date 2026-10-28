@@ -27,6 +27,8 @@ Hint: Consider $h = \operatorname { N o r m } _ { F \left[ X \right] } ^ { E \le
 (iii) Prove that $E ( X )$ is a field extension of $F ( X )$ of degree n. More precisely, show that if $w _ { 1 } , . . . , w _ { n }$ is a F -basis for $E .$ , then $w _ { 1 } , . . . , w _ { n }$ is also a $F ( X )$ -basis for $E ( X )$ .
 :::
 
+::: {.solution}
+
 Let
 $$
 w_1,\ldots,w_n
@@ -199,6 +201,8 @@ The inclusion $F(X)\subset E(X)$ is induced from $F\subset E$. Step [](#s1-4){.p
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (i), step [](#s1-3){.pf-ref} proves part (ii), and step [](#s1-6){.pf-ref} proves part (iii).
+
+:::
 
 :::
 
