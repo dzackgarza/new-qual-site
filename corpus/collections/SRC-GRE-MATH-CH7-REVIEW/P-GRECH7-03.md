@@ -25,6 +25,8 @@ In a State Lottery, players choose 6 numbers from among the integers 1 through 5
 (E) 17,596,287,801
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -84,6 +86,8 @@ Step [](#s1-1){.pf-ref} shows that every possible $6$-element subset is both nec
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required minimum.
+
+:::
 
 :::
 
