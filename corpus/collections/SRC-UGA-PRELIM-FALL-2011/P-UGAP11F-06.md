@@ -21,6 +21,8 @@ Use induction to show that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ Step [](#s1-1){.pf-ref} gives the base case and step [](#s1-2){.pf-ref} gives th
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required induction result.
+
+:::
 
 :::
 
