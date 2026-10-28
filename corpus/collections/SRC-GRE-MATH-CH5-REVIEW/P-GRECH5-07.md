@@ -32,6 +32,8 @@ let $r$ denote its rank and $d$ denote its determinant. What is the value of $r 
 (E) $2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -100,6 +102,8 @@ By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, $r-d=2-0=2$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
