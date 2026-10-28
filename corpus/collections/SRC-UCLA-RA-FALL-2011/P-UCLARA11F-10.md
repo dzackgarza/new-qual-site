@@ -22,6 +22,8 @@ Suppose there are distinct points $z_1,z_2\in\Omega$ with $f(z_1)=z_1$ and $f(z_
 Show that $f$ is the identity on $\Omega$.
 :::
 
+::: {.solution}
+
 Since
 \[
 \Omega\subsetneq\mathbb C
@@ -334,6 +336,8 @@ This is step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
