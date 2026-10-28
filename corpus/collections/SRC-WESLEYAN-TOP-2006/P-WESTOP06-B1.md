@@ -29,6 +29,8 @@ Let $f,f':I\to X$.
    \]
 :::
 
+::: {.solution}
+
 Write \(I=[0,1]\).
 
 ::: pf
@@ -234,6 +236,8 @@ Step [](#s1-7){.pf-ref} proves that \(f\) is path-homotopic to \(g_0\). If \(f\)
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part \(1\); step [](#s1-5){.pf-ref} answers part \(2\); and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} answer part \(3\).
+
+:::
 
 :::
 
