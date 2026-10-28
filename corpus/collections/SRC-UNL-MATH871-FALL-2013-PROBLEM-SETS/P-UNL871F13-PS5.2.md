@@ -24,6 +24,8 @@ review: draft
    is open when $B$ has the subspace topology.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -293,6 +295,8 @@ This is exactly steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} settle every part of the problem.
+
+:::
 
 :::
 
