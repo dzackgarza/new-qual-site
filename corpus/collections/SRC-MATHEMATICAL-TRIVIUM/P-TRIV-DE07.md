@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime \prime } - 3 y ^ { \prime } + 2 y = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -147,6 +149,8 @@ A third-order homogeneous linear equation has a three-dimensional solution space
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the complete solution family.
+
+:::
 
 :::
 
