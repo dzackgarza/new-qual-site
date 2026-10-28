@@ -22,6 +22,8 @@ z=1+\sqrt3\,i.
 Express $z^3$ and all cube roots of $z$ in the form $a+bi$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -263,6 +265,8 @@ a+bi.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives $z^3$, and step [](#s1-5){.pf-ref} lists all three cube roots.
+
+:::
 
 :::
 
