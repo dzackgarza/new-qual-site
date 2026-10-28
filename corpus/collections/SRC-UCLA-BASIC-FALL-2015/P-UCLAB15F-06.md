@@ -32,6 +32,8 @@ x_n\to x\text{ in }(X,\rho).
 Prove both properties, together with all other assertions used in your construction.
 :::
 
+::: {.solution}
+
 Define
 \[
 \boxed{
@@ -355,6 +357,8 @@ Every $\rho$-Cauchy sequence converges in $\rho$ to a point $a\in X$ by steps []
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves that $\rho$ is a metric, step [](#s1-4){.pf-ref} proves that it induces the same sequential convergence as the usual metric on $X$, and step [](#s1-10){.pf-ref} proves completeness.
+
+:::
 
 :::
 
