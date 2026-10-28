@@ -25,6 +25,8 @@ An entire function $f:\mathbb C\to\mathbb C$ is of exponential type if there are
 Show that $f$ is of exponential type if and only if $f'$ is of exponential type.
 :::
 
+::: {.solution}
+
 ## If \(f\) is of exponential type, then \(f'\) is of exponential type
 
 Assume there are constants
@@ -390,6 +392,8 @@ The forward implication is step [](#s1-7){.pf-ref}, and the reverse implication 
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
