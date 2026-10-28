@@ -22,6 +22,8 @@ We have an action of the permutation group $S _ { d }$ on the polynomial ring $F
 Employ Emil Artin’s theorem to deduce that there is a finite Galois extension of fields with $S _ { d }$ as Galois group.
 :::
 
+::: {.solution}
+
 Let
 $$
 L=F(X_1,\ldots,X_d).
@@ -135,6 +137,8 @@ This is the conclusion of step [](#s1-3){.pf-ref} written for the present fields
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} supplies the requested finite Galois extension realizing $S_d$ as a Galois group.
+
+:::
 
 :::
 
