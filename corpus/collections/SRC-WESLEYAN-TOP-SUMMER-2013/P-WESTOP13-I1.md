@@ -27,6 +27,8 @@ with the subspace topology. For the product space $U^\omega$, determine which of
 8. normal.
 :::
 
+::: {.solution}
+
 Write a point of $U^\omega$ as
 $$
 x=(x_1,x_2,\ldots).
@@ -189,6 +191,8 @@ This is the combination of steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives all eight requested determinations.
+
+:::
 
 :::
 
