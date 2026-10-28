@@ -22,6 +22,8 @@ Suppose $f:U\to\mathbb R$ has all first partial derivatives at every point of $U
 Prove that $f$ is constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ which is open by step [](#s1-2){.pf-ref}. Thus $E_c$ is both open and closed in 
 ::: pf-qed
 
 By step [](#s1-3){.pf-ref}, every $x\in U$ satisfies $f(x)=f(x_0)$, so $f$ is constant on $U$.
+
+:::
 
 :::
 
