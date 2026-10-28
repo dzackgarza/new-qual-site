@@ -24,6 +24,8 @@ F(x)=\frac1{|K|}\int_K f(x+t)\,dt
 is uniformly continuous on $\mathbb R$. Here $|K|$ denotes the Lebesgue measure of $K$.
 :::
 
+::: {.solution}
+
 Let
 $$
 M\coloneqq\|f\|_{L^\infty(\RR)}.
@@ -130,6 +132,8 @@ Since the same $\delta$ works for every $x$, the continuity is uniform.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
