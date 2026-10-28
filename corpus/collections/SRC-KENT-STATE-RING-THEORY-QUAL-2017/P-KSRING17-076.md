@@ -19,6 +19,8 @@ audit:
 Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the same identity) then S is an integral extension of R if every element of S satisfies some monic polynomial with coefficients in R. Prove that if $R \subseteq S \subseteq T$ are commutative rings with the same identity, then S is integral over R and T is integral over S if and only if T is integral over R.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -602,6 +604,8 @@ Steps [](#s1-3){.pf-ref} through [](#s1-15){.pf-ref} prove transitivity.
 ::: pf-qed
 
 Step [](#s1-16){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
