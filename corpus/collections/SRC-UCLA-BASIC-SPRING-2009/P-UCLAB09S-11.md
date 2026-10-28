@@ -24,6 +24,8 @@ No proofs are required, but state all hypotheses and define explicitly “brough
 How can it be determined from a matrix in Jordan normal form?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -260,6 +262,8 @@ Similarity preserves polynomial identities, so this is also the minimal polynomi
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} answer part (a), and steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} answer part (b).
+
+:::
 
 :::
 
