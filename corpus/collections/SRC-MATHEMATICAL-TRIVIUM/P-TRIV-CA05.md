@@ -19,6 +19,8 @@ audit:
 Compute the Laurent series of $f ( z ) = { \frac { 1 } { ( z - 3 ) ^ { 3 } } }$ around $z _ { 0 } = i ;$ give the region of convergence.
 :::
 
+::: {.solution}
+
 Set
 $$
 w=z-i.
@@ -192,6 +194,8 @@ of convergence.
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give the requested series and its region of convergence.
+
+:::
 
 :::
 
