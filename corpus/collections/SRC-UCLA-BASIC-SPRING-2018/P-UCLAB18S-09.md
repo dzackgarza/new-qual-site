@@ -22,6 +22,8 @@ Prove that $f$ is Riemann integrable on every finite interval $(a,b)$.
 If using Lebesgue integration theory, provide complete statements and proofs of all facts used.
 :::
 
+::: {.solution}
+
 Fix a finite interval with $a<b$.
 
 ::: pf
@@ -121,6 +123,8 @@ The Darboux criterion states that a bounded function on a closed finite interval
 ::: pf-qed
 
 The endpoints $a<b$ were arbitrary, so step [](#s1-4){.pf-ref} proves the claim for every finite interval.
+
+:::
 
 :::
 
