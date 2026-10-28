@@ -27,6 +27,8 @@ R_2=\{z\in\mathbb C:\operatorname{Re}z>0,\ \operatorname{Im}z>0\}.
 \]
 :::
 
+::: {.solution}
+
 Define
 $$
 \boxed{
@@ -257,6 +259,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested explicit conformal equivalence.
+
+:::
 
 :::
 
