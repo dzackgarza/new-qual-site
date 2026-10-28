@@ -20,6 +20,8 @@ Let D be a unique factorization domain such that if p and q are irreducible elem
 Show that if A and B are ideals of D, then either $A \subseteq B$ or $B \subseteq A$
 :::
 
+::: {.solution}
+
 If $D$ is a field, then its only ideals are $(0)$ and $D$, so the conclusion is immediate.
 Assume henceforth that $D$ is not a field.
 
@@ -384,6 +386,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
