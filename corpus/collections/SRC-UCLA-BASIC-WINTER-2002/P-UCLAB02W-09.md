@@ -25,6 +25,8 @@ Show that
 is linearly independent.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -132,6 +134,8 @@ Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} show that every linear relat
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} supplies the base case, and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} establish the induction step. Therefore the assertion holds for every $m\ge1$.
+
+:::
 
 :::
 
