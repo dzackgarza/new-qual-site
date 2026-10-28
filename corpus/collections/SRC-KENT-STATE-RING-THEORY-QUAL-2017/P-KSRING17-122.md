@@ -20,6 +20,8 @@ Let R be a commutative ring with $1 \neq 0$ in which the set of nonunits is clos
 Prove that R is local, i.e., has a unique maximal ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 N
@@ -368,6 +370,8 @@ Step [](#s1-10){.pf-ref} shows that $R$ has exactly one maximal ideal.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
