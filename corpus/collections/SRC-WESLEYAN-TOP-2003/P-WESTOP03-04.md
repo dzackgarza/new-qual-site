@@ -16,6 +16,8 @@ audit:
 3. Identify, within this classification, the connected sum of a torus and a real projective plane, and justify the identification.
 :::
 
+::: {.solution}
+
 All surfaces below are understood to be compact, connected, and without boundary.
 
 ::: pf
@@ -178,6 +180,8 @@ Step [](#s1-6){.pf-ref} places $T^2\#\mathbb{RP}^2$ in the nonorientable class w
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the classification list, steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} distinguish all entries, and steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} identify the requested connected sum.
+
+:::
 
 :::
 
