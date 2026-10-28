@@ -23,6 +23,8 @@ Find the general solution to each differential equation:
 6. $f''(t)-f(t)=e^{-3t}$.
 :::
 
+::: {.solution}
+
 In the formulas below, the constants are arbitrary real numbers and may
 differ from one equation to another.
 
@@ -189,6 +191,8 @@ These are exactly the solutions established in steps [](#s1-1){.pf-ref} through 
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} records the general solution of every requested equation.
+
+:::
 
 :::
 
