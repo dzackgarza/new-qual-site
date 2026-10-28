@@ -30,6 +30,8 @@ If $\{u_1,\ldots,u_m\}$ is a basis for $U$ and $\{v_1,\ldots,v_n\}$ is a basis f
 is a basis for $U+V$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ By step [](#s1-1){.pf-ref} the set spans $U+V$, and by step [](#s1-2){.pf-ref} i
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
