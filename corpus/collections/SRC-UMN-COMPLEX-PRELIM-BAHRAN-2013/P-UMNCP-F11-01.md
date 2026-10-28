@@ -24,6 +24,8 @@ z^5+3z^3+7
 has all of its zeros in the disk \(|z|<2\).
 :::
 
+::: {.solution}
+
 Let
 $$
 p(z)=z^5+3z^3+7.
@@ -140,6 +142,8 @@ The polynomial $p$ has degree $5$, so by the fundamental theorem of algebra it h
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
