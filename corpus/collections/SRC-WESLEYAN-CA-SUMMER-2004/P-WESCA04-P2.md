@@ -26,6 +26,8 @@ D_1\cup D_2
 are simply connected.
 :::
 
+::: {.solution}
+
 We use the standard planar-domain characterization:
 
 > A domain
@@ -293,6 +295,8 @@ is simply connected.
 
 Step [](#s1-6){.pf-ref} proves the assertion for the intersection, and step [](#s1-8){.pf-ref} proves
 the assertion for the union.
+
+:::
 
 :::
 
