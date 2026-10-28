@@ -15,6 +15,8 @@ review: draft
 Do the series $\sum _ { n = 1 } ^ { \infty } { \frac { n ! } { 2 ^ { n ^ { 2 } } } }$ and $\sum _ { n = 1 } ^ { \infty } { \frac { n ^ { \sqrt { n } } } { 2 ^ { n } } }$ converge or diverge?
 :::
 
+::: {.solution}
+
 Consider first
 \[
 \sum_{n=1}^{\infty}
@@ -262,6 +264,8 @@ Hence the series converges absolutely.
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref} show that both requested series converge.
+
+:::
 
 :::
 
