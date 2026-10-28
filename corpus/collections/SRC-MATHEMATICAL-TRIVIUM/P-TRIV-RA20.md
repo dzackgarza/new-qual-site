@@ -19,6 +19,8 @@ audit:
 Find $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x , n \in \mathbb { Z } , n > 0 .$
 :::
 
+::: {.solution}
+
 For $n\geq0$, define
 $$
 I_n=
@@ -137,6 +139,8 @@ This is step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required value.
+
+:::
 
 :::
 
