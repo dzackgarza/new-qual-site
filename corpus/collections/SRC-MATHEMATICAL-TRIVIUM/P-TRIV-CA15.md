@@ -25,6 +25,8 @@ Fourier-transform interpretation, and the contour choice according to the sign
 of $\alpha$, use $\alpha\in\RR$.
 :::
 
+::: {.solution}
+
 Let
 $$
 F_\alpha(z)
@@ -271,6 +273,8 @@ formulas equal $\pi/2$.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required integral.
+
+:::
 
 :::
 
