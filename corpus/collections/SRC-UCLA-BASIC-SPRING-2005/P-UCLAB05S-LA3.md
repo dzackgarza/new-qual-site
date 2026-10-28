@@ -28,6 +28,8 @@ A=T^*T.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ by step [](#s1-1){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} constructs the required matrix $T$ and verifies the factorization.
+
+:::
 
 :::
 
