@@ -26,6 +26,8 @@ The function $f(x,y)=x^3+y^3-3xy$ has a local minimum at exactly one point, $P$.
 (E) $0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
