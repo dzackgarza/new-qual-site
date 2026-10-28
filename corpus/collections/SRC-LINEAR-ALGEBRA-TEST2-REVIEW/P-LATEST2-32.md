@@ -30,6 +30,8 @@ Find the dimension of the subspace spanned by
 (A) $2$  (B) $3$  (C) $4$  (D) $5$  (E) $6$
 :::
 
+::: {.solution}
+
 Let
 $$
 v_1=\begin{pmatrix}1\\1\\0\\0\end{pmatrix},
@@ -147,6 +149,8 @@ Thus the dimension is exactly $3$, which is answer choice $\boxed{\text{(B)}}$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required dimension.
+
+:::
 
 :::
 
