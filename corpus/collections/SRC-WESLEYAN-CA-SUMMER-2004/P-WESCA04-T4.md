@@ -19,6 +19,8 @@ audit:
 State the Open Mapping Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -306,6 +308,8 @@ is a union of open sets.
 
 Step [](#s1-7){.pf-ref} is the standard Open Mapping Theorem, and step [](#s1-8){.pf-ref} gives the
 equivalent open-map formulation.
+
+:::
 
 :::
 
