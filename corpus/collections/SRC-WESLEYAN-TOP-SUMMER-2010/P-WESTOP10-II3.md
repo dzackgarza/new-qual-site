@@ -31,6 +31,8 @@ audit:
    \]
 :::
 
+::: {.solution}
+
 All homology and cohomology groups below have integral coefficients.
 
 ::: pf
@@ -442,6 +444,8 @@ Compare steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} solves part (1), and step [](#s1-9){.pf-ref} solves part (2).
+
+:::
 
 :::
 
