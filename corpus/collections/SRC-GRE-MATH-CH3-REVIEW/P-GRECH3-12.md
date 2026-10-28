@@ -30,6 +30,8 @@ in a curve, $C$. Find the slope of the tangent line to $C$ at the point where $x
 (E) $\frac{1}{2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested tangent slope and corresponding choice.
+
+:::
 
 :::
 
