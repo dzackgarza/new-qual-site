@@ -24,6 +24,8 @@ az^n+z+1
 has at least one root in \(|z|\le2\).
 :::
 
+::: {.solution}
+
 Let
 $$
 p(z)=az^n+z+1.
@@ -189,6 +191,8 @@ Step [](#s1-1){.pf-ref} handles $a=0$, and steps [](#s1-2){.pf-ref} through [](#
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
