@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. (a) Rigorously justify
+(a) Rigorously justify
 \[
 \int_0^1\frac{dx}{1+x^2}
 =
