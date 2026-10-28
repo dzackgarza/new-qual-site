@@ -32,6 +32,8 @@ is exact and $g(0, y) = 0$ for all $y \neq 0$. What is $g(x, 1)$?
 (E) $\sin x - x\cos x + 1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -135,6 +137,8 @@ Substitute $y=1$ and the function $h$ from step [](#s1-3){.pf-ref} into step [](
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested function and corresponding choice.
+
+:::
 
 :::
 
