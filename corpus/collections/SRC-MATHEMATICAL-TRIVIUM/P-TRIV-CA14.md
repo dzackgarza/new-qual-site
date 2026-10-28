@@ -24,6 +24,8 @@ The source allows $m=0$, but then the ordinary improper integral diverges at
 $x=0$. The finite Fourier-transform formula therefore requires $m\ne0$.
 :::
 
+::: {.solution}
+
 Set
 $$
 a=|m|>0
@@ -294,6 +296,8 @@ formula.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required Fourier-transform integral in every convergent case.
+
+:::
 
 :::
 
