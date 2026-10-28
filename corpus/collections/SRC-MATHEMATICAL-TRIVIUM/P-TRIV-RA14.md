@@ -27,6 +27,8 @@ $$
 Do the limits $\lim_{x \to 0}\left(\lim_{y \to 0} f(x,y)\right)$ and $\lim_{y \to 0}\left(\lim_{x \to 0} f(x,y)\right)$ exist?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -259,6 +261,8 @@ iterated limit does not exist in the standard sense.
 
 Steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-9){.pf-ref} give the double limit and both iterated-limit
 answers.
+
+:::
 
 :::
 
