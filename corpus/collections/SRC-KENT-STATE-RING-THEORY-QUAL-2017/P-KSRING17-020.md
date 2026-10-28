@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with 1 and let I and J be ideals of R such that $I + J = R$ Show that $R / ( I \cap J ) \cong R / I \oplus R / J$ .
 :::
 
+::: {.solution}
+
 Define
 $$
 \varphi:R\to R/I\oplus R/J
@@ -251,6 +253,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the desired ring isomorphism.
+
+:::
 
 :::
 
