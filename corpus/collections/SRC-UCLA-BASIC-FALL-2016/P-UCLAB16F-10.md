@@ -32,6 +32,8 @@ Note: Formal calculations alone do not constitute a solution.
 You must justify rigorously that there is a point that is closest, that it is unique, and that it is the specific point that you claim that it is.
 :::
 
+::: {.solution}
+
 Let
 \[
 C=\{(x,y)\in\mathbb R^2:x^4+y^4=2\}.
@@ -357,6 +359,8 @@ d
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives the unique closest point, with existence and uniqueness justified, and step [](#s1-9){.pf-ref} gives the corresponding distance.
+
+:::
 
 :::
 
