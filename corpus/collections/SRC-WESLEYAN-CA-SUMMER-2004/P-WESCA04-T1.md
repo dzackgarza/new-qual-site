@@ -19,6 +19,8 @@ audit:
 State the Casorati–Weierstrass theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -87,6 +89,8 @@ z_n\ne z_0.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested theorem statement.
+
+:::
 
 :::
 
