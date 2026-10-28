@@ -24,6 +24,8 @@ P(z)=z^7+z^3+\frac1{16}
 in the closed disk \(|z|\le\frac12\).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -184,6 +186,8 @@ Step [](#s1-3){.pf-ref} counts the interior zeros and step [](#s1-4){.pf-ref} sh
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required answer.
+
+:::
 
 :::
 
