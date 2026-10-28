@@ -26,6 +26,8 @@ Let $V,W$ be infinite-dimensional complex vector spaces and let $\operatorname{L
 (c) What is the intersection of these two sets? Prove all claims.
 :::
 
+::: {.solution}
+
 Let
 \[
 X=
@@ -271,6 +273,8 @@ Thus no such map exists.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers part (a), step [](#s1-6){.pf-ref} answers part (b), and step [](#s1-9){.pf-ref} answers part (c).
+
+:::
 
 :::
 
