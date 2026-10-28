@@ -18,6 +18,8 @@ $$X=\RR^3\setminus(L_1\cup L_2).$$
 Compute $\pi_1(X)$.
 :::
 
+::: {.solution}
+
 There are two geometric cases: the lines are parallel or skew.
 
 ## Parallel lines
@@ -344,6 +346,8 @@ Two disjoint affine lines are either parallel or skew. Steps [](#s1-5){.pf-ref} 
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required computation.
+
+:::
 
 :::
 
