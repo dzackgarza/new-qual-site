@@ -28,6 +28,8 @@ audit:
    - $\mathbb{RP}^2$.
 :::
 
+::: {.solution}
+
 All homology groups below have integral coefficients.
 
 ::: pf
@@ -467,6 +469,8 @@ triangulable spaces, these are also the simplicial homology groups.
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} compute the requested fundamental groups,
 steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} identify the universal covers, and
 steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref} compute the simplicial homology groups.
+
+:::
 
 :::
 
