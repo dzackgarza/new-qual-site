@@ -31,6 +31,8 @@ The displayed source definition is the usual notion of **almost uniform
 convergence**, not the standard definition of convergence in measure.
 The proof below follows the source's displayed definition literally.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -451,6 +453,8 @@ This is exactly the source's displayed definition.
 Step [](#s1-6){.pf-ref} proves part (a), in the stronger form of convergence of the full
 sequence almost everywhere.
 Steps [](#s1-7){.pf-ref} through [](#s1-10){.pf-ref} prove part (b) by Egorov's theorem.
+
+:::
 
 :::
 
