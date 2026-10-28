@@ -23,6 +23,8 @@ Characterize all entire functions $f$ such that $|f(z)|>0$ for all sufficiently 
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -288,6 +290,8 @@ for suitable constants $C_1,C_2$. Dividing by $|z|$ shows that
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove necessity, and step [](#s1-7){.pf-ref} proves sufficiency.
+
+:::
 
 :::
 
