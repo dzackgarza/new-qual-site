@@ -27,6 +27,8 @@ Compute the degree of $f$.
 The source prints $S^4$, but the formula has four coordinates, so it defines a self-map of the unit sphere $S^3\subset\mathbb R^4$.
 :::
 
+::: {.solution}
+
 The printed formula has four coordinates, so it defines the map
 \[
 f:S^3\to S^3
@@ -189,6 +191,8 @@ multiplies a fundamental class. Step [](#s1-7){.pf-ref} says this map is zero.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested degree for the self-map actually defined by the printed formula.
+
+:::
 
 :::
 
