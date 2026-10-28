@@ -24,6 +24,8 @@ Let $1<p<\infty$ and let $(f_n)$ be a sequence of functions $f_n:\mathbb R^3\to\
 Show that if $f_n$ converges almost everywhere, then $f_n$ converges weakly in $L^p$.
 :::
 
+::: {.solution}
+
 Let
 $$
 f(x)\coloneqq\lim_{n\to\infty}f_n(x)
@@ -174,6 +176,8 @@ to $\langle f,g\rangle$ for every $g\in L^q$. This is exactly weak convergence i
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
