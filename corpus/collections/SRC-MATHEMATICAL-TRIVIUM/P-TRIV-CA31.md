@@ -19,6 +19,8 @@ audit:
 Find an analytic continuation $g ( z )$ of the function $f ( z ) = \int _ { 0 } ^ { \infty } t e ^ { - z t } d t . \ f ( z )$ is defined only for $z > 0$ . What is the domain of $g ( z ) ?$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -178,6 +180,8 @@ has a pole of order $2$, so no holomorphic extension through $0$ exists.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the analytic continuation and its maximal domain.
+
+:::
 
 :::
 
