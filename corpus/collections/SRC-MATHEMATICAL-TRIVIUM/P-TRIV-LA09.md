@@ -23,6 +23,8 @@ A = \left[ { \begin{array} { l l l l l } { 1 } & { 1 } & { 1 } & { \dots } & { 1
 $$
 :::
 
+::: {.solution}
+
 Assume $A$ is $n\times n$.
 
 ::: pf
@@ -117,6 +119,8 @@ computes the determinant of the resulting matrix.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required value.
+
+:::
 
 :::
 
