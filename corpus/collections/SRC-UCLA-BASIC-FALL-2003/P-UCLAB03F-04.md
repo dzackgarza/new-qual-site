@@ -24,6 +24,8 @@ State the definition of the Riemann integral
 and prove that it exists.
 :::
 
+::: {.solution}
+
 Use the Darboux definition of the Riemann integral.
 
 ::: pf
@@ -228,6 +230,8 @@ By step [](#s1-6){.pf-ref}, the upper and lower Riemann integrals coincide. By t
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} state the definition, and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove existence for continuous $f$.
+
+:::
 
 :::
 
