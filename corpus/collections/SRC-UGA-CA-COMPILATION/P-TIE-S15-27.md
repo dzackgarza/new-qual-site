@@ -21,6 +21,8 @@ Compute the following integrals.
 (i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -211,6 +213,8 @@ This is the desired value.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} evaluates part (i), and step [](#s1-3){.pf-ref} evaluates part (ii).
+
+:::
 
 :::
 
