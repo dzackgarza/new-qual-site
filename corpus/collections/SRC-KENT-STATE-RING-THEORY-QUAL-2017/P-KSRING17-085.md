@@ -24,6 +24,8 @@ Show the following:
 (b) D is not a unique factorization domain.
 :::
 
+::: {.solution}
+
 Set
 $$
 f(x)
@@ -378,6 +380,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
