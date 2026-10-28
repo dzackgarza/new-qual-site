@@ -25,6 +25,8 @@ The students take the tickets one by one, each takes one random ticket.
 What is the probability that $j$'s student gets a happy ticket, $1 \leqslant j \leqslant N$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -76,6 +78,8 @@ By step [](#s1-2){.pf-ref}, each of the $N$ tickets has probability $1/N$ of bei
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested probability for every $1\leq j\leq N$.
+
+:::
 
 :::
 
