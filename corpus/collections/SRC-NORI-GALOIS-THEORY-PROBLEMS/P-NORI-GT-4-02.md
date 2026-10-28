@@ -22,6 +22,8 @@ Prove that $T$ : $R ^ { n } \to R ^ { n }$ is one-to-one if and only if det(T ) 
 Hint: Let K be the fraction field of R. We may regard $T$ as a member of $\mathrm { M } _ { n } ( K )$
 :::
 
+::: {.solution}
+
 Let $K=\operatorname{Frac}(R)$.
 
 ::: pf
@@ -127,6 +129,8 @@ Step [](#s1-1){.pf-ref} proves the forward condition from nonvanishing determina
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is exactly the required equivalence.
+
+:::
 
 :::
 
