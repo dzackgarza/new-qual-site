@@ -19,6 +19,8 @@ audit:
 Let $F ( x ) = \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ be a power series with $a _ { n } \in \mathbf { R }$ . Show that there exists a unique number $\rho \geq 0$ such that $F ( x )$ converges if $| x | < \rho$ and $F ( x )$ diverges if $| x | > \rho$
 :::
 
+::: {.solution}
+
 Define
 \[
 C=
@@ -328,6 +330,8 @@ Existence follows from steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref}, and 
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the standard radius-of-convergence theorem, with step [](#s1-6){.pf-ref} recording the necessary infinite-radius case omitted by the literal finite-valued wording.
+
+:::
 
 :::
 
