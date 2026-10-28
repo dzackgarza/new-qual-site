@@ -19,6 +19,8 @@ audit:
 Show that $V _ { n } ( \mathbb { R } ^ { \infty } ) , V _ { n } ( \mathbb { C } ^ { \infty } ) , V _ { n } ( \mathbb { H } ^ { \infty } )$ are contractible.
 :::
 
+::: {.solution}
+
 Let $\mathbb F$ denote any of $\mathbb R,\mathbb C,\mathbb H$, and write
 \[
 V_n(\mathbb F^m)
@@ -153,6 +155,8 @@ The proof used only the real dimension $d=1,2,4$ of the scalar division algebra,
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
