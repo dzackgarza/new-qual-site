@@ -12,8 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let M be an n by m matrix.
-Prove that the row rank of M equals the column rank of M. Also, however you prove it, interpret this result as an equality of the dimensions of two vector spaces naturally attached to the map defined by M.
+Let $M$ be an $n$ by $m$ matrix.
+Prove that the row rank of $M$ equals the column rank of $M$. Also, however you prove it, interpret this result as an equality of the dimensions of two vector spaces naturally attached to the map defined by $M$.
 :::
 
 ::: {.solution}
