@@ -23,6 +23,8 @@ a_0+a_1\alpha+\cdots+a_n\alpha^n=0.
 Prove that the set of algebraic real numbers is countable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -116,6 +118,8 @@ By step [](#s1-2){.pf-ref}, the index set $\mathcal P$ is countable. By step [](
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
