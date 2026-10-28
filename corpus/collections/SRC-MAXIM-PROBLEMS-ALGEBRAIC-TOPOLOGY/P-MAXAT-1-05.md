@@ -19,6 +19,8 @@ audit:
 Show that if $M ^ { n }$ is connected, non-compact manifold, then $H _ { i } ( M ; R ) = 0$ for $i \geq n$ •
 :::
 
+::: {.solution}
+
 Here $R$ is a coefficient ring. The assertion in degrees $i>n$ is the dimension bound for manifold homology; the substantive point is $H_n(M;R)=0$.
 
 ::: pf
@@ -142,6 +144,8 @@ Step [](#s1-6){.pf-ref} handles $i=n$, and step [](#s1-1){.pf-ref} handles every
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
