@@ -19,6 +19,8 @@ audit:
 Prove that no two of the unit disk $\mathbb D$, the complex plane $\mathbb C$, and the Riemann sphere are conformally equivalent.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ the Riemann sphere from each of them.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
