@@ -26,6 +26,8 @@ s_k\le 2-\frac1k.
 Prove or disprove: $(s_k)$ is a Cauchy sequence.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -110,6 +112,8 @@ Hence $(s_k)$ satisfies the Cauchy criterion.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the required bound, and step [](#s1-3){.pf-ref} proves that $(s_k)$ is Cauchy.
+
+:::
 
 :::
 
