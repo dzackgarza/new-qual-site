@@ -21,6 +21,8 @@ Let $Y$ be a complete countable metric space.
 Prove that there exists $y\in Y$ such that the singleton $\{y\}$ is open.
 :::
 
+::: {.solution}
+
 Assume for contradiction that no singleton in $Y$ is open.
 
 ::: pf
@@ -175,6 +177,8 @@ Step [](#s1-5){.pf-ref} shows that hypothesis is false.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
