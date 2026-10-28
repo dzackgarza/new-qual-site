@@ -24,6 +24,8 @@ Let $\Omega$ be the set of all nonempty closed subsets of $[0,1]$ and define
 Show that $(\Omega,\rho)$ is a metric space.
 :::
 
+::: {.solution}
+
 For a nonempty closed set $B\subseteq[0,1]$ and $x\in[0,1]$, write
 $$
 d(x,B)=\inf_{y\in B}\abs{x-y},
@@ -216,6 +218,8 @@ are therefore bounded above by $\rho(A,B)+\rho(B,C)$.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves well-definedness, step [](#s1-2){.pf-ref} gives nonnegativity and symmetry, step [](#s1-4){.pf-ref} gives definiteness, and step [](#s1-7){.pf-ref} proves the triangle inequality. Thus $\rho$ is a metric on $\Omega$.
+
+:::
 
 :::
 
