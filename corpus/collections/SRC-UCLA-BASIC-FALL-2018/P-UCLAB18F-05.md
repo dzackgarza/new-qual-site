@@ -29,6 +29,8 @@ is $1$-Lipschitz on $B$.
 Show that $M(g)$ is compact in $C(B)$ with the supremum norm.
 :::
 
+::: {.solution}
+
 Define
 \[
 f(x)
@@ -685,6 +687,8 @@ Step [](#p2-s1-12){.pf-ref} then implies compactness.
 ::: pf-qed
 
 Steps [](#p2-s1-1){.pf-ref} through [](#p2-s1-7){.pf-ref} prove part (a), and steps [](#p2-s1-8){.pf-ref} through [](#p2-s1-13){.pf-ref} prove part (b).
+
+:::
 
 :::
 
