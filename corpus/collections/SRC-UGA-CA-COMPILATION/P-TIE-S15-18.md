@@ -22,6 +22,8 @@ Assume that $f ( z )$ is bijective from $\mathbb { C } \backslash \{ z _ { 0 } \
 Show that there exist $a , b , c , d \in \mathbb { C }$ with $a d - b c \neq 0 , c \neq 0$ such that $f ( z ) = { \frac { a z + b } { c z + d } } .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -237,6 +239,8 @@ Thus the Möbius representation has nonzero determinant.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is exactly the required conclusion.
+
+:::
 
 :::
 
