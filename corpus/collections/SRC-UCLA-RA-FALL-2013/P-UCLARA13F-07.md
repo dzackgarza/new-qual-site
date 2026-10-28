@@ -24,6 +24,8 @@ Show that the set of functions $f\in L^2([0,1])$ such that $x\mapsto x^{-1/2}f(x
 is dense in $L^2([0,1])$.
 :::
 
+::: {.solution}
+
 Let $\mathcal D$ denote the set in the problem. It suffices to approximate functions supported away from $0$, while correcting their weighted integral by functions of arbitrarily small $L^2$ norm concentrated near $0$.
 
 ::: pf
@@ -184,6 +186,8 @@ Step [](#s1-1){.pf-ref} says $\mathcal S$ is dense in $L^2$. Steps [](#s1-5){.pf
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required density statement.
+
+:::
 
 :::
 
