@@ -25,6 +25,8 @@ is uniformly continuous on $[0,\infty)$.
 Prove each assertion.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -146,6 +148,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove uniform continuity for
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the complete classification.
+
+:::
 
 :::
 
