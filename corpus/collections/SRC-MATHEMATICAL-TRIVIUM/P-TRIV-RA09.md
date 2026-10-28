@@ -19,6 +19,8 @@ audit:
 Find local minima and local maxima of the function $f ( x , y , z ) = x ^ { 2 } + y ^ { 2 } + z ^ { 2 }$ on a surface defined by equation $\displaystyle \frac { x ^ { 2 } } { a ^ { 2 } } + \frac { y ^ { 2 } } { b ^ { 2 } } + \frac { z ^ { 2 } } { c ^ { 2 } } = 1 , 0 < a < b < c .$
 :::
 
+::: {.solution}
+
 Let
 $$
 g(x,y,z)
@@ -307,6 +309,8 @@ Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} classify all critical points
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives all constrained local minima and maxima.
+
+:::
 
 :::
 
