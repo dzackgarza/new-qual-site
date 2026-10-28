@@ -25,6 +25,8 @@ Suppose that for some $\alpha\in(0,1)$,
 Show that $f\circ g$ is Riemann integrable.
 :::
 
+::: {.solution}
+
 Use the Lebesgue criterion for Riemann integrability: a bounded real-valued function on a compact interval is Riemann integrable if and only if its set of discontinuities has Lebesgue measure zero.
 
 ::: pf
@@ -331,6 +333,8 @@ The Lebesgue criterion for Riemann integrability therefore applies.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
