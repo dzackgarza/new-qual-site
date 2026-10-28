@@ -27,6 +27,8 @@ Prove the following properties of the Bessel functions of the first kind:
 (d) $J _ { \nu - 1 } ( x ) + J _ { \nu + 1 } ( x ) = \frac { 2 \nu } { x } J _ { \nu } ( x )$
 :::
 
+::: {.solution}
+
 Use the series
 \[
 J_\nu(x)=\sum_{k=0}^{\infty}
@@ -159,6 +161,8 @@ The terms $\nu J_\nu/x$ cancel. Dividing the resulting identity by $2$ gives the
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove parts (a)--(b), step [](#s1-6){.pf-ref} proves part (c), and step [](#s1-5){.pf-ref} proves part (d).
+
+:::
 
 :::
 
