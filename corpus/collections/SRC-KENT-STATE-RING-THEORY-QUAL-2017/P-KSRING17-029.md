@@ -20,6 +20,8 @@ Let $I \subseteq J$ be right ideals of a ring R such that $J / I \cong R$ as rig
 Prove that there exists a right ideal K such that $I \cap K = ( 0 )$ and $I + K = J$
 :::
 
+::: {.solution}
+
 Let
 $$
 \pi:J\to J/I
@@ -304,6 +306,8 @@ These are exactly the conditions for the internal direct sum.
 ::: pf-qed
 
 The right ideal $K=yR$ from step [](#s1-2){.pf-ref} satisfies both required properties by steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
+
+:::
 
 :::
 
