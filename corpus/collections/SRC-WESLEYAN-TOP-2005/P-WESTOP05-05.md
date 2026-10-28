@@ -23,6 +23,8 @@ Let $X$ be completely regular Hausdorff and consider its Čech--Stone compactifi
 2. The source next asks for the cardinalities of several expressions involving $\beta$, but their arguments are unrecovered in the retained extraction. This subproblem is left explicit rather than reconstructed.
 :::
 
+::: {.solution}
+
 Let
 \[
 i:X\hookrightarrow\beta X
@@ -247,6 +249,8 @@ missing source data not present in the repository.
 Step [](#s1-5){.pf-ref} completely answers the recoverable characteristic-property
 subproblem, and step [](#s1-6){.pf-ref} records the exact source obstruction for the
 unrecoverable cardinality subproblem.
+
+:::
 
 :::
 
