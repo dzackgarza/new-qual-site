@@ -19,6 +19,8 @@ audit:
 State the Maximum Principle.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -74,6 +76,8 @@ Continuity on the compact set $\overline\Omega$ guarantees existence of a maximu
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested theorem statement; steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} record its standard equivalent and boundary forms.
+
+:::
 
 :::
 
