@@ -19,6 +19,8 @@ audit:
 Consider an semi-infinite $( x \ge 0 )$ metal rod with conductivity κ. Find the heat distribution $u ( x , t )$ if $u ( x , 0 ) = u _ { 0 } \delta ( x )$
 :::
 
+::: {.solution}
+
 Take the heat equation to be
 \[
 u_t=\kappa u_{xx},\qquad x>0, t>0.
@@ -115,6 +117,8 @@ For example, the Neumann image kernel in step [](#s1-2){.pf-ref} and the Dirichl
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the standard insulated-end solution, while step [](#s1-5){.pf-ref} records the missing boundary datum in the source.
+
+:::
 
 :::
 
