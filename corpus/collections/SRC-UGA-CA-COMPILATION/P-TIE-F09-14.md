@@ -29,6 +29,8 @@ Erratum: the source writes the hypothesis as $f(z) \le M\abs{z}^2$, which has no
 The intended hypothesis is $\abs{f(z)} \le M\abs{z}^2$ outside some disk.
 :::
 
+::: {.solution}
+
 Use the corrected hypothesis from the remark: there exists $R_0>0$ such that
 $$
 |f(z)|\le M|z|^2
@@ -120,6 +122,8 @@ Step [](#s1-2){.pf-ref} shows that every coefficient of degree at least $3$ vani
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
