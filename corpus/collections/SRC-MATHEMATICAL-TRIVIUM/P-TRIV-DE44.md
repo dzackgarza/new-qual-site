@@ -25,6 +25,8 @@ $$
 find $u ( x , y , t )$ knowing that it satisfies the wave equation with a velocity v.
 :::
 
+::: {.solution}
+
 The wave equation is
 \[
 u_{tt}=v^2(u_{xx}+u_{yy})
@@ -141,6 +143,8 @@ preserves the PDE, boundary conditions, and initial displacement while changing 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the standard zero-initial-velocity solution, and step [](#s1-5){.pf-ref} records the missing datum in the source statement.
+
+:::
 
 :::
 
