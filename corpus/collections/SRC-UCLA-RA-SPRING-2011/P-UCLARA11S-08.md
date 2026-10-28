@@ -27,6 +27,8 @@ z\longmapsto \log\|A(z)\|
 is subharmonic, where $\|A(z)\|$ is the operator norm on $\mathbb C^2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -379,6 +381,8 @@ Step [](#s1-6){.pf-ref} gives upper-semicontinuity, and step [](#s1-9){.pf-ref} 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} answer parts (a) and (b), step [](#s1-5){.pf-ref} answers part (c), and step [](#s1-10){.pf-ref} proves part (d).
+
+:::
 
 :::
 
