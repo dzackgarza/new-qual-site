@@ -23,6 +23,8 @@ Let $A$ be an $n\times n$ Hermitian matrix and, for $1\le j\le n$, let $A_j$ be 
 Give and prove a rule, in terms of the signs of the $\det(A_j)$, that determines the signature of the Hermitian form defined by $A$.
 :::
 
+::: {.solution}
+
 Write
 \[
 \Delta_j=\det(A_j),
@@ -228,6 +230,8 @@ Therefore
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} prove the rule and its relation to the signs of the leading principal minors.
+
+:::
 
 :::
 
