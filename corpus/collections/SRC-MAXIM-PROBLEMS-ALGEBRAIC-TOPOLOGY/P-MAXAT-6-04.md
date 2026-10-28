@@ -19,6 +19,8 @@ audit:
 Show that the only real projective spaces which can be parallelizable are P 1 , P 3 and $\mathbb { P } ^ { 7 }$
 :::
 
+::: {.solution}
+
 Assume $n>0$. If $\mathbb{RP}^n$ is parallelizable, its tangent bundle is trivial. The key point is that this forces the existence of a real division algebra of dimension $n+1$ in the sense needed by the classical Hopf invariant one theorem.
 
 ::: pf
@@ -171,6 +173,8 @@ Necessity is step [](#s1-3){.pf-ref} and sufficiency is step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves the assertion in the problem.
+
+:::
 
 :::
 
