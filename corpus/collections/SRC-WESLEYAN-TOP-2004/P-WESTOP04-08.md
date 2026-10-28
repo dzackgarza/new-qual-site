@@ -23,6 +23,8 @@ where $\{0,1\}$ is discrete and $\kappa$ is a cardinal. A space is zero-dimensio
 Outline a proof that a space is zero-dimensional if and only if it is homeomorphic to a subspace of a generalized Cantor space.
 :::
 
+::: {.solution}
+
 As stated with “zero-dimensional” meaning only “has a basis of clopen sets,” the converse requires a separation hypothesis. The precise statement is:
 
 $$
@@ -424,6 +426,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} records the defect in the literal statement. Step [](#s1-2){.pf-ref} proves the forward implication, and steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} prove the converse under the necessary $T_0$ hypothesis.
+
+:::
 
 :::
 
