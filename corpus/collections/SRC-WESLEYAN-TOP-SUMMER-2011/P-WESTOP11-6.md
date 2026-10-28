@@ -19,6 +19,8 @@ audit:
 2. State precisely the full Seifert--van Kampen theorem.
 :::
 
+::: {.solution}
+
 Choose a basepoint
 \[
 x_0\in U\cap V.
@@ -370,6 +372,8 @@ extending both.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} prove the simply connected special case, and step [](#s1-9){.pf-ref}
 states the full theorem.
+
+:::
 
 :::
 
