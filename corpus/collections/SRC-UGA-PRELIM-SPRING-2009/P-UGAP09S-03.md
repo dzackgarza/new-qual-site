@@ -21,6 +21,8 @@ f^{(n)}(x)=\frac1{\sqrt{3+x^4}}.
 \]
 :::
 
+::: {.solution}
+
 Fix $n\in\mathbb N$ and define
 \[
 F_0(x)=\frac1{\sqrt{3+x^4}}.
@@ -91,6 +93,8 @@ By definition of $F_0$, this is the required derivative.
 
 Step [](#s1-2){.pf-ref} constructs the required function for the arbitrary natural number
 $n$.
+
+:::
 
 :::
 
