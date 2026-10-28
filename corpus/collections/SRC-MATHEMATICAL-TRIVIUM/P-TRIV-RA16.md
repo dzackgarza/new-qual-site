@@ -19,6 +19,8 @@ audit:
 $\mathrm { C a l c u l a t e } \int \log { x d x } .$
 :::
 
+::: {.solution}
+
 Assume $x>0$.
 
 ::: pf
@@ -93,6 +95,8 @@ Evaluate the remaining integral in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required antiderivative.
+
+:::
 
 :::
 
