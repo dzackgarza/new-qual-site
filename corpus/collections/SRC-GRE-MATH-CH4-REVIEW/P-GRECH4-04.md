@@ -28,6 +28,8 @@ The five graphical choices (A)–(E) appear on the source page:
 ![Scanned source page preserving the graphical choices for Question 4.](../../../assets/attachments/gre-math-ch4-review/page-1.png)
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ For $C=0$, step [](#s1-2){.pf-ref} gives the two lines $y=\pm x$; the origin is 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the requested family of integral curves.
+
+:::
 
 :::
 
