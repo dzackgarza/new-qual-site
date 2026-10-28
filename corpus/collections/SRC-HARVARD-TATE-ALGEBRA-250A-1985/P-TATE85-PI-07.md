@@ -17,6 +17,8 @@ review: draft
 Examples:$A = \mathbb { Z } / 1 0 2 4 \mathbb { Z } , A = \mathbb { C } [ X ] / X ^ { n } \mathbb { C } [ X ]$
 :::
 
+::: {.solution}
+
 Let
 $$
 q:B\to A=B/M^n
@@ -75,6 +77,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that $M/M^n$ is prime and that no other prime ideal exists.
+
+:::
 
 :::
 
