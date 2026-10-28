@@ -22,6 +22,8 @@ Assume that for every $y\in\mathbb R$, the preimage $f^{-1}(\{y\})$ is closed.
 Prove that $f$ is continuous.
 :::
 
+::: {.solution}
+
 Fix
 \[
 x_0\in[0,1].
@@ -266,6 +268,8 @@ Step [](#s1-7){.pf-ref} applies at every point of the domain, including the endp
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
