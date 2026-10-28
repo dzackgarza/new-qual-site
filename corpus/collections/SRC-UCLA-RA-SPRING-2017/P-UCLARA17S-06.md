@@ -34,6 +34,8 @@ has positive area.
 Hint: for $-1<x<1$ consider $\#\{n:D_n\cap\{\operatorname{Re}z=x\}\ne\varnothing\}$.
 :::
 
+::: {.solution}
+
 For $-1<x<1$, let
 $$
 N(x)\coloneqq
@@ -143,6 +145,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
