@@ -15,6 +15,8 @@ audit:
 2. Show that every compact subspace of a Hausdorff space is closed.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -276,6 +278,8 @@ The first implication is step [](#s1-1){.pf-ref} and the second is step [](#s1-5
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} records both requested results.
+
+:::
 
 :::
 
