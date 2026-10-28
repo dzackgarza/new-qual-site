@@ -24,6 +24,8 @@ The electric field $\vec { E }$ created by a point charge q at a certain distanc
 Investigate the limit $R \to \infty$
 :::
 
+::: {.solution}
+
 Assume the observation point lies a distance $d>0$ from the center along the
 positive symmetry axis.
 
@@ -315,6 +317,8 @@ Steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} give the disk field and it
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} and [](#s1-13){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
