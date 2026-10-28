@@ -20,6 +20,8 @@ audit:
 Put $(1 + i)^{10}$ in the form $a + bi$ for $a, b \in \RR$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -89,6 +91,8 @@ Step [](#s1-2){.pf-ref} gives real part $0$ and imaginary coefficient $32$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the requested expression.
+
+:::
 
 :::
 
