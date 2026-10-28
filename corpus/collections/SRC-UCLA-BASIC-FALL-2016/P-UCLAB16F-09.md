@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f _ { n } : [ 0 , 1 ] \to \mathbb { C }$ be a sequence of continuous functions.
-Suppose $f _ { n }$ converge pointwise.
-Show that the sequence converges uniformly if and only if the collection of functions $\left\{ f _ { n } \right\}$ is equicontinuous.
+Let $f_n : [0, 1] \to \CC$ be a sequence of continuous functions.
+Suppose $f_n$ converge pointwise.
+Show that the sequence converges uniformly if and only if the collection of functions $\{f_n\}$ is equicontinuous.
 :::
 
 ::: {.solution}
