@@ -24,6 +24,8 @@ Prove or give a counterexample to the assertion
 \]
 :::
 
+::: {.solution}
+
 The assertion is false.
 
 ::: pf
@@ -209,6 +211,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} verify all hypotheses of the
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required counterexample.
+
+:::
 
 :::
 
