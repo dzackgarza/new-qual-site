@@ -37,6 +37,8 @@ $$
 so the divergence acquires a point-source term at $0$.
 :::
 
+::: {.solution}
+
 Put
 $$
 u(x,y,z)=\frac1r.
@@ -281,6 +283,8 @@ Steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} give the requested coordina
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} and [](#s1-11){.pf-ref} establish parts (a) and (b).
+
+:::
 
 :::
 
