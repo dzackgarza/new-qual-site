@@ -23,6 +23,8 @@ f(x)=1-\left(\int_0^x t f(t)\,dt\right)^2.
 \]
 :::
 
+::: {.solution}
+
 Suppose first that $f:[0,1]\to[0,1]$ is a continuous solution, and define
 \[
 F(x)
@@ -410,6 +412,8 @@ Existence is step [](#s1-11){.pf-ref} and uniqueness is step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required existence-and-uniqueness statement.
+
+:::
 
 :::
 
