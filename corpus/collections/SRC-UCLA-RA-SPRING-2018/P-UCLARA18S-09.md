@@ -27,6 +27,8 @@ Problem 9. Consider the formal product
 (b) Show that the resulting function extends from this interval to an entire function of $z\in\mathbb C$.
 :::
 
+::: {.solution}
+
 For \(n\ge1\), define the entire function
 \[
 q_n(z)
@@ -376,6 +378,8 @@ convergent product from part (a).
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref} prove part (b).
+
+:::
 
 :::
 
