@@ -36,6 +36,8 @@ Prove that
 at every point of $\mathbb R^2$.
 :::
 
+::: {.solution}
+
 Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, set
 \[
 D(h,k)=f(a+h,b+k)-f(a+h,b)-f(a,b+k)+f(a,b).
@@ -144,6 +146,8 @@ The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} holds throughout $\m
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
