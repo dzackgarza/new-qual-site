@@ -24,6 +24,8 @@ f(z)=Cz^m
 for some integer $m\ge0$ and $C\in\mathbb C$ with $|C|=1$.
 :::
 
+::: {.solution}
+
 Let $a_1,\dots,a_N$ be the zeros of $f$ in $\mathbb D$, listed with multiplicity, and define
 \[
 B(z)
@@ -178,6 +180,8 @@ Both sides are entire, so the identity theorem extends the equality to all of $\
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required classification.
+
+:::
 
 :::
 
