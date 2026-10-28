@@ -30,6 +30,8 @@ Prove that $f_n\in L^1$ for all $n$, that $f\in L^1$, and that
 Also show that neither assumption 2 nor assumption 3 can be omitted while making these deductions.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -231,6 +233,8 @@ Thus even the conclusion \(f_n\in L^1\) can fail without assumption 3.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} establish all asserted conclusions, while steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} show that each of assumptions 2 and 3 is indispensable.
+
+:::
 
 :::
 
