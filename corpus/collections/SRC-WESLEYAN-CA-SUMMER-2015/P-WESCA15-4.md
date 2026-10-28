@@ -25,6 +25,8 @@ Calculate the following counterclockwise contour integrals:
 3. $\displaystyle\int_{|z|=1/2}\frac{e^{\sin z}}{z^3\cos z}\,dz$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -168,6 +170,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-5){.pf-ref} give the
 $$
 \boxed{0,\quad0,\quad2\pi i}.
 $$
+
+:::
 
 :::
 
