@@ -21,6 +21,8 @@ Let $e_{x_0}$ be the constant path at $x_0=f(0)$. Construct an explicit path hom
 \]
 :::
 
+::: {.solution}
+
 Write
 \[
 g=f*\overline f.
@@ -360,6 +362,8 @@ Apply step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the desired identity.
+
+:::
 
 :::
 
