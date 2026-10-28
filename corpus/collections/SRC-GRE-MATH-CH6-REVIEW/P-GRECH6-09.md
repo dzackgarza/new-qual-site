@@ -26,6 +26,8 @@ How many subgroups does the group $\ZZ_3 \oplus \ZZ_{16}$ have?
 (E) $24$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ By step [](#s1-1){.pf-ref} the group is cyclic of order $48$; steps [](#s1-2){.p
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number of subgroups.
+
+:::
 
 :::
 
