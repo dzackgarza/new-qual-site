@@ -25,6 +25,8 @@ are analytic.
 Prove that \(f\) is analytic.
 :::
 
+::: {.solution}
+
 The analytic functions
 $$
 g=f^2
@@ -266,6 +268,8 @@ Thus every point of the disk has a neighborhood on which $f$ is analytic.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
