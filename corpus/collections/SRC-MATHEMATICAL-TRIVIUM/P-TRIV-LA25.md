@@ -25,6 +25,8 @@ A linear transformation A writes in some basis in $\mathbb { R } ^ { n }$ as fol
 (c) Determine the invariant subspaces of A.
 :::
 
+::: {.solution}
+
 Let
 $$
 A=
@@ -391,6 +393,8 @@ This is step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-13){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
