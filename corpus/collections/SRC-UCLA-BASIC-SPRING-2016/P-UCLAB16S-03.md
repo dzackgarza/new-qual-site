@@ -25,6 +25,8 @@ Show that the limit
 exists and compute its value.
 :::
 
+::: {.solution}
+
 The statement is false as printed.
 
 ::: pf
@@ -396,6 +398,8 @@ f(1)
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} disprove the literal source statement.
 Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} prove the natural corrected first-order Riemann-sum formula.
+
+:::
 
 :::
 
