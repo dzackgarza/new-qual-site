@@ -27,6 +27,8 @@ $$\oint_{C} \left( \cos z - z \cos \frac{1}{z} \right) dz$$
 (E) $2\pi i$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required contour integral.
+
+:::
 
 :::
 
