@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-A linear transformation T is called orthogonal if it is nonsingular and ${ } ^ { t } T = T ^ { - 1 }$ . Prove that if $T : { \mathbf { R } } ^ { 2 n + 1 } \to { \mathbf { R } } ^ { 2 n + 1 }$ is orthogonal, then there exists a vector $\boldsymbol { v } \in \mathbf { R } ^ { 2 n + 1 }$ such that $T v = \pm v$
+A linear transformation $T$ is called orthogonal if it is nonsingular and ${}^tT = T^{-1}$. Prove that if $T : \RR^{2n+1} \to \RR^{2n+1}$ is orthogonal, then there exists a vector $v \in \RR^{2n+1}$ such that $Tv = \pm v$.
 :::
 
 ::: {.solution}
