@@ -29,6 +29,8 @@ Which of the following represents the unoriented incidence matrix for the graph 
 The source shows the graph in a figure that is not reproduced here.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ The matrix in step [](#s1-2){.pf-ref} is exactly choice (B).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required incidence matrix.
+
+:::
 
 :::
 
