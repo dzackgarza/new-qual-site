@@ -27,6 +27,8 @@ Find the largest number $a$ that makes the following statement true:
 (E) $9$
 :::
 
+::: {.solution}
+
 For fixed $x$, write
 \[
 u_n=\frac{(n!)^3}{(3n)!}x^{2n}.
@@ -106,6 +108,8 @@ property. Thus the correct choice is (B).
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} establishes the largest possible value of $a$.
+
+:::
 
 :::
 
