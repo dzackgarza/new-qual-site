@@ -18,6 +18,8 @@ p\in U,\qquad C\subseteq V.
 \]
 :::
 
+::: {.solution}
+
 Fix a metric
 \[
 d
@@ -247,6 +249,8 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required separation.
+
+:::
 
 :::
 
