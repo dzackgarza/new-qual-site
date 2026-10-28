@@ -17,6 +17,8 @@ Compute, with proof, the fundamental group of each space:
 2. the disk $B^2$ with two points of its boundary identified.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -117,6 +119,8 @@ In the presentation from step [](#s1-4){.pf-ref}, the relation \(ab=1\) gives \(
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} computes the first fundamental group, and step [](#s1-5){.pf-ref} computes the second.
+
+:::
 
 :::
 
