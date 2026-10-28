@@ -25,6 +25,8 @@ f(t)\le 1+\frac1{10}f(t)^2\qquad\text{for all }t\in[0,\infty),
 then $f$ is uniformly bounded throughout $[0,\infty)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -244,6 +246,8 @@ Step [](#s1-6){.pf-ref} provides the global bound
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
