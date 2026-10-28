@@ -53,6 +53,8 @@ Discuss why \\(f_i:S^2\\to\\mathbb R\\) is continuous.
 (d) Use the Borsuk--Ulam theorem to prove that there is a plane in \\(\\mathbb R^3\\) that simultaneously divides each block \\(A_i\\) into two pieces of equal volume.
 :::
 
+::: {.solution}
+
 Write
 \[
 V_i=\operatorname{vol}(A_i).
@@ -503,6 +505,8 @@ the volume. Thus all three blocks are bisected by the same plane.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} address part (a), steps [](#s1-3){.pf-ref} through [](#s1-10){.pf-ref} prove part (b), step
 [](#s1-11){.pf-ref} proves part (c), and steps [](#s1-12){.pf-ref} through [](#s1-16){.pf-ref} prove part (d).
+
+:::
 
 :::
 
