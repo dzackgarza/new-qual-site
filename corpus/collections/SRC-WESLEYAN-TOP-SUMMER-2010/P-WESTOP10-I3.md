@@ -15,6 +15,8 @@ audit:
 2. Prove that the continuous image of a compact metric space in a Hausdorff space is metrizable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -418,6 +420,8 @@ Apply the Urysohn Metrization Theorem from step [](#s1-1){.pf-ref}.
 Step [](#s1-1){.pf-ref} states the requested theorem, and steps [](#s1-2){.pf-ref} through [](#s1-11){.pf-ref} prove that
 the continuous image of a compact metric space in a Hausdorff space is
 metrizable.
+
+:::
 
 :::
 
