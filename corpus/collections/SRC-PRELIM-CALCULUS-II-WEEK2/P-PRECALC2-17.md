@@ -27,6 +27,8 @@ $$
 Is it possible to choose $\left( b _ { n } \right)$ so that $\sum _ { n = 1 } ^ { \infty } b _ { n }$ converges absolutely while $\textstyle \sum _ { n = 1 } ^ { \infty } b _ { n } ^ { 2 }$ diverges?
 :::
 
+::: {.solution}
+
 ## A nonmonotone alternating-series counterexample
 
 For \(k\ge1\), define
@@ -392,6 +394,8 @@ Such a sequence would contradict step [](#s1-15){.pf-ref}.
 
 Step [](#s1-6){.pf-ref} gives the first requested sequence, steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give the
 second, and step [](#s1-16){.pf-ref} answers the final question.
+
+:::
 
 :::
 
