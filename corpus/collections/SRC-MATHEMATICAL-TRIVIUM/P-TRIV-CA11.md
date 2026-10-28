@@ -19,6 +19,8 @@ audit:
 What is the image of $\{ z | \mathrm { R e } ( z ) > \mathrm { I m } ( z ) > 0 \}$ under the mapping $e ^ { z ^ { 2 } } ?$
 :::
 
+::: {.solution}
+
 Let
 $$
 S=
@@ -190,6 +192,8 @@ that every such point occurs.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required image.
+
+:::
 
 :::
 
