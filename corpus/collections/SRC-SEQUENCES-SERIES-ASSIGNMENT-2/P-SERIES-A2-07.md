@@ -35,6 +35,8 @@ f_{n+1}f_{n-1}-f_n^2=(-1)^{n+1}.
 (e) Hence show that $\{r_n\}$ converges and compute its limit.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 ::: pf
@@ -717,6 +719,8 @@ Use the definition \(r_n=f_{n+1}/f_n\) and step [](#s1-30){.pf-ref}.
 
 Step [](#s1-3){.pf-ref} proves part (a), step [](#s1-7){.pf-ref} proves part (b), step [](#s1-10){.pf-ref} proves part
 (c), step [](#s1-17){.pf-ref} proves part (d), and steps [](#s1-23){.pf-ref} through [](#s1-31){.pf-ref} prove part (e).
+
+:::
 
 :::
 
