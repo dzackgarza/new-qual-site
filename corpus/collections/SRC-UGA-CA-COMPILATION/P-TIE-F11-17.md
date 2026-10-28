@@ -20,6 +20,8 @@ audit:
 Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } | a _ { n } ( z ) |$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ^ { \prime } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of D.
 :::
 
+::: {.solution}
+
 Let $K\subset D$ be an arbitrary bounded closed subregion.
 
 ::: pf
@@ -152,6 +154,8 @@ Thus the partial sums of $\sum\abs{a_n'(z)}$ are uniformly Cauchy on $K$, and he
 ::: pf-qed
 
 The bounded closed subregion $K\subset D$ was arbitrary, so step [](#s1-4){.pf-ref} proves the assertion on every such subregion.
+
+:::
 
 :::
 
