@@ -19,6 +19,8 @@ audit:
 Find an extremum of the functional $J [ f ] = \int _ { 0 } ^ { 1 } d x ( 3 6 0 x ^ { 2 } f - f ^ { \prime \prime 2 } )$ in a class of functions $f \in C ^ { 3 } [ 0 , 1 ]$ satisfying the boundary conditions $f ( 0 ) = 0 , f ^ { \prime } ( 0 ) = 1$ $f ( 1 ) = 0 , f ^ { \prime } ( 1 ) = 2 . 5$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -379,6 +381,8 @@ $$
 
 Steps [](#s1-9){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-13){.pf-ref} give the extremizing function, its type, and
 its value.
+
+:::
 
 :::
 
