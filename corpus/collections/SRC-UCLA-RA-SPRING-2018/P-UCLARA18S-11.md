@@ -24,6 +24,8 @@ A_R=\{z\in\mathbb C:1<|z|<R\}.
 Assume there is a conformal (i.e. injective, holomorphic) mapping $F$ from $A_{R_1}$ onto $A_{R_2}$. Prove that $R_1=R_2$.
 :::
 
+::: {.solution}
+
 Set
 \[
 L_j=\log R_j
@@ -367,6 +369,8 @@ The logarithm is injective on \((0,\infty)\), so \(R_1=R_2\).
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
