@@ -25,6 +25,8 @@ $X$ is a finite set with the following property: The number of subsets of $X$ th
 (E) $35$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number of subsets.
+
+:::
 
 :::
 
