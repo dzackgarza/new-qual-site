@@ -20,6 +20,8 @@ audit:
 Evaluate the integral $\oint_{\{\abs{z} = 3\}} \frac{e^{\frac{1}{1 - z}}}{z}\,dz$.
 :::
 
+::: {.solution}
+
 Let
 \[
 F(z)=\frac{e^{1/(1-z)}}{z}.
@@ -150,6 +152,8 @@ step [](#s1-1){.pf-ref}. By the residue theorem and step [](#s1-4){.pf-ref},
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
