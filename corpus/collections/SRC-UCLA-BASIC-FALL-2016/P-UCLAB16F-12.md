@@ -16,17 +16,17 @@ audit:
 ---
 
 ::: {.problem}
-We say that a function $f : \mathbb { R } \to \mathbb { R }$ is convex if and only if
+We say that a function $f : \RR \to \RR$ is convex if and only if
 
 $$
-f { \big ( } t x + ( 1 - t ) y { \big ) } \leq t f ( x ) + ( 1 - t ) f ( y )
+f\big(tx + (1-t)y\big) \leq t f(x) + (1-t) f(y)
 $$
 
-for all $x , y \in \mathbb { R }$ and all $t \in [ 0 , 1 ]$ . Prove the following: Suppose $f : \mathbb { R } \to \mathbb { R }$ is differentiable.
-Then f is convex if and only if
+for all $x, y \in \RR$ and all $t \in [0, 1]$. Prove the following: Suppose $f : \RR \to \RR$ is differentiable.
+Then $f$ is convex if and only if
 
 $$
-f ( y ) \geq f ( x ) + ( y - x ) f ^ { \prime } ( x ) \quad \text { for all } x , y \in \mathbb { R } .
+f(y) \geq f(x) + (y - x) f'(x) \quad \text{for all } x, y \in \RR.
 $$
 :::
 
