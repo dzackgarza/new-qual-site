@@ -28,6 +28,8 @@ L_n(\mu)=\int_0^1 a_n(x)\,d\mu(x).
 Show that no subsequence of $L_n$ converges in the weak-* topology on $M([0,1))^*$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -113,6 +115,8 @@ does not converge, contradicting step [](#s1-1){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
