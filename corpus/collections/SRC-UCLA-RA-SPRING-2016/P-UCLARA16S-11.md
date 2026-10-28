@@ -23,6 +23,8 @@ Assume that $f(z)$ is holomorphic on $|z|<2$. Show that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 M
@@ -116,6 +118,8 @@ Divide the inequality in step [](#s1-2){.pf-ref} by $2\pi>0$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
