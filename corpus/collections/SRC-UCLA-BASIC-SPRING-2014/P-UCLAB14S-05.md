@@ -25,6 +25,8 @@ D(x)=\lVert L(x)-b\rVert.
 Show that $u-v\in\ker L$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -191,6 +193,8 @@ This is exactly the statement $L(u-v)=0$ from step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the claim.
+
+:::
 
 :::
 
