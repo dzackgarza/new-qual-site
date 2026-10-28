@@ -33,6 +33,8 @@ How many possible combinations must the man try to unlock his safe?
 (E) 11,703,240
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -88,6 +90,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested number of possible combinations.
+
+:::
 
 :::
 
