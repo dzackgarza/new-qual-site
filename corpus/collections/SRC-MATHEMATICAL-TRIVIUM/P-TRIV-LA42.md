@@ -19,6 +19,8 @@ audit:
 Check if the following points belong to the same plane: (6, 1, 2), (2, 3, 1), (3, 4, 1), (6, 2, 2).
 :::
 
+::: {.solution}
+
 Let
 $$
 p_1=(6,1,2),
@@ -150,6 +152,8 @@ This is step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
