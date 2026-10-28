@@ -26,6 +26,8 @@ converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous funct
 State clearly any facts you assume.
 :::
 
+::: {.solution}
+
 For
 \[
 f_n(x)=\frac{\sin(nx)}{n^{5/2}},
@@ -247,6 +249,8 @@ Step [](#s1-5){.pf-ref} gives differentiability, and step [](#s1-6){.pf-ref} giv
 
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove every assertion in the problem.
 The facts used are the Weierstrass $M$-test, uniform limits of continuous functions are continuous, and the standard theorem permitting termwise differentiation under uniform convergence of the derivative series.
+
+:::
 
 :::
 
