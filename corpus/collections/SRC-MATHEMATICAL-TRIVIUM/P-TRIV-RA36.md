@@ -23,6 +23,8 @@ Find the surface area of
 (b) the two-dimensional torus $T ^ { 2 }$ formed by rotation of the center of a circle of radius $R _ { 1 }$ along a circle of radius $R _ { 2 } , R _ { 2 } > R _ { 1 }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -272,6 +274,8 @@ This is step [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
