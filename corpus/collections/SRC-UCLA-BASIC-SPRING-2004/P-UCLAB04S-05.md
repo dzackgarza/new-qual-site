@@ -37,6 +37,8 @@ Hint: let $w$ be a unit vector such that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -311,6 +313,8 @@ Combining the inequalities proves the claim.
 
 Step [](#s1-1){.pf-ref} answers part (a).
 Step [](#s1-2){.pf-ref} handles the case $f(q)=f(p)$ in part (b), and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} prove the estimate when $f(q)\ne f(p)$.
+
+:::
 
 :::
 
