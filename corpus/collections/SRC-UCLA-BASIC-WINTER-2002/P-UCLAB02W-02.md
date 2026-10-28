@@ -21,6 +21,8 @@ Prove directly that the unit interval $[0,1]$ is sequentially compact: every inf
 Do not merely quote a general theorem such as Heine--Borel.
 :::
 
+::: {.solution}
+
 Let $(x_n)_{n\ge1}$ be an arbitrary sequence in $[0,1]$.
 
 ::: pf
@@ -102,6 +104,8 @@ The real numbers are complete, so the Cauchy sequence from step [](#s1-3){.pf-re
 ::: pf-qed
 
 The original sequence in $[0,1]$ was arbitrary. Step [](#s1-4){.pf-ref} constructs a convergent subsequence of it whose limit lies in $[0,1]$. Therefore $[0,1]$ is sequentially compact.
+
+:::
 
 :::
 
