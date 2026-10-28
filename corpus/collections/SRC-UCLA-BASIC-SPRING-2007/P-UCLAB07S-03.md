@@ -25,6 +25,8 @@ x_{n+2}=Ax_{n+1}+Bx_n\qquad(n\ge0)
 is a two-dimensional linear subspace of $\mathcal S$.
 :::
 
+::: {.solution}
+
 Let
 \[
 W
@@ -342,6 +344,8 @@ step [](#s1-8){.pf-ref} gives
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves that the recurrence solutions form a linear subspace of $\mathcal S$, and step [](#s1-9){.pf-ref} proves that this subspace is two-dimensional.
+
+:::
 
 :::
 
