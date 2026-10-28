@@ -23,6 +23,8 @@ Let D be a principal ideal domain.
 (b) Show that $d \in D$ is a least common multiple of a and b if and only if $( a ) \cap ( b ) = ( d )$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -287,6 +289,8 @@ Step [](#s1-4){.pf-ref} proves the forward implication and step [](#s1-7){.pf-re
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-8){.pf-ref} proves part (b).
+
+:::
 
 :::
 
