@@ -55,6 +55,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -373,6 +375,8 @@ This is step [](#s1-17){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-11){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
