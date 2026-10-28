@@ -20,6 +20,8 @@ Let $D\subset\mathbb C$ be a domain.
 If every function analytic in $D$ has a primitive in $D$, prove that $D$ is simply connected, where simply connected means that every cycle in $D$ is homologous to zero.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -89,6 +91,8 @@ simple connectedness.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required conclusion.
+
+:::
 
 :::
 
