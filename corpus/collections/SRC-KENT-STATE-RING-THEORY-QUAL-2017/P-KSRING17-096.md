@@ -20,6 +20,8 @@ Let D be an integral domain and F its field of fractions.
 Show that if g is an isomorphism of D onto itself, then there is a unique isomorphism h of F onto F such that $h ( d ) = g ( d )$ for all d in D.
 :::
 
+::: {.solution}
+
 For
 $$
 a,b\in D,
@@ -383,6 +385,8 @@ Existence is step [](#s1-7){.pf-ref} together with step [](#s1-4){.pf-ref}, and 
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
