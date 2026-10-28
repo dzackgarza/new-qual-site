@@ -28,6 +28,8 @@ Let $\phi : [0,1] \to [0,1]$ be continuous and let $d\mu$ be a Borel probability
 for all continuous $f : [0,1] \to \mathbb{R}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -189,6 +191,8 @@ Combining the two identities gives the claimed formula.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required representation.
+
+:::
 
 :::
 
