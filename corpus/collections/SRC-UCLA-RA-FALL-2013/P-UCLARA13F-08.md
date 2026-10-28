@@ -30,6 +30,8 @@ Compute the following limits.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -238,6 +240,8 @@ Combine steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref} give the two requested limits.
+
+:::
 
 :::
 
