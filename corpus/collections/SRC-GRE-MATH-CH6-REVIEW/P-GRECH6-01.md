@@ -26,6 +26,8 @@ There is only one integer, $x$, between $100$ and $200$ such that integer pair $
 (E) $183$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -120,6 +122,8 @@ the only integer possibility is $t=3$. Then $x=-17+3\cdot55=148$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested integer.
+
+:::
 
 :::
 
