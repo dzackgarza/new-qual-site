@@ -20,6 +20,8 @@ audit:
 Let $V$ be a finite-dimensional complex vector space, $T:V\to V$ linear, and $F(X)\in\mathbb C[X]$. Show that $F(T)$ is invertible if and only if $F$ and the minimal polynomial of $T$ have no common factor.
 :::
 
+::: {.solution}
+
 Let
 \[
 m_T(X)
@@ -298,6 +300,8 @@ Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} prove the contrapositive of 
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
