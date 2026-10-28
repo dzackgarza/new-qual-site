@@ -19,6 +19,8 @@ audit:
 Show that if p is a prime such that $p \equiv 1 { \bigl ( } { \mathrm { m o d ~ } } 4 { \bigr ) }$ , then $x ^ { 2 } + 1$ is not irreducible in $\mathbb { Z } _ { p } [ x ]$
 :::
 
+::: {.solution}
+
 Write
 $$
 p=4m+1.
@@ -202,6 +204,8 @@ Both factors have positive degree, so the polynomial is not irreducible.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
