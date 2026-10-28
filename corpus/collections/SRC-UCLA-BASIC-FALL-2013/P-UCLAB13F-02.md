@@ -21,6 +21,8 @@ Let $f:\mathbb R\to\mathbb R$ be nondecreasing.
 (b) Let $S\subset\mathbb R$ be countable. Prove that there exists a nondecreasing function $f:\mathbb R\to\mathbb R$ whose set of discontinuities is exactly $S$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -309,6 +311,8 @@ Step [](#s1-8){.pf-ref} shows every point of $S$ is a discontinuity, while step 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and steps [](#s1-6){.pf-ref} through [](#s1-10){.pf-ref} prove part (b).
+
+:::
 
 :::
 
