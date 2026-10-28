@@ -19,17 +19,17 @@ audit:
 Let
 
 $$
-B = \left[ \begin{array} { r r } { 1 } & { 0 } \\ { 0 } & { - 1 } \end{array} \right]
+B = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}.
 $$
 
-Find necessary and sufficient conditions on a $3 \times 3$ matrix A with real entries so that the equation
+Find necessary and sufficient conditions on a $3 \times 3$ matrix $A$ with real entries so that the equation
 
 $$
-A = R ^ { T } B R
+A = R^T B R
 $$
 
-admits a solution R of full rank.
-Here R must be a $2 \times 3$ matrix with real entries.
+admits a solution $R$ of full rank.
+Here $R$ must be a $2 \times 3$ matrix with real entries.
 You must prove that your conditions are necessary and sufficient.
 :::
 
