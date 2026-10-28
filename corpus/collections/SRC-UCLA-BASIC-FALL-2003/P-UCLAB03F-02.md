@@ -27,6 +27,8 @@ f^{(m)}(x)\ne0.
 \]
 :::
 
+::: {.solution}
+
 For each positive integer $m$, define
 \[
 U_m=\{x\in[0,1]:f^{(m)}(x)\ne0\}.
@@ -119,6 +121,8 @@ Since $m_i\le M$, taking $m=m_i$ proves the claim.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is exactly the required uniform finite bound on the derivative order.
+
+:::
 
 :::
 
