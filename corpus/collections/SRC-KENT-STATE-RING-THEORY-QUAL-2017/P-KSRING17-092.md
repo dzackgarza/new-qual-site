@@ -20,6 +20,8 @@ Let D be a unique factorization domain and F its field of fractions.
 Prove that if d is an irreducible element in D, then there is no $x \in F$ such that $x ^ { 2 } = d .$
 :::
 
+::: {.solution}
+
 Suppose, for contradiction, that there exists
 $$
 x\in F
@@ -248,6 +250,8 @@ The assumption that such an $x$ exists leads to the contradiction in step [](#s1
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
