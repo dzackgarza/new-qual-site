@@ -19,6 +19,8 @@ Let $S=\{n_1,n_2,\ldots\}$ be the set of positive integers whose decimal represe
 converges.
 :::
 
+::: {.solution}
+
 For each integer \(m\ge1\), let
 \[
 S_m
@@ -223,6 +225,8 @@ does not change the sum of the nonnegative terms.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
