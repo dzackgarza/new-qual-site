@@ -37,6 +37,8 @@ $$
 The intended statement is correct when the closed interior bounded by $\gamma$ lies in $\Omega$.
 :::
 
+::: {.solution}
+
 Assume the corrected hypothesis that the closure of the Jordan interior $D$ of $\gamma$ is contained in $\Omega$.
 Write
 $$
@@ -150,6 +152,8 @@ throughout $\Omega$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove the corrected theorem. The remark gives a counterexample to the uncorrected source statement.
+
+:::
 
 :::
 
