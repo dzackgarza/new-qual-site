@@ -29,6 +29,8 @@ e^A=I+A+A^2.
 Prove or disprove that $A$ must be the zero matrix.
 :::
 
+::: {.solution}
+
 The claim is false.
 
 ::: pf
@@ -279,6 +281,8 @@ Thus $A$ is a counterexample.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} disproves the claim.
+
+:::
 
 :::
 
