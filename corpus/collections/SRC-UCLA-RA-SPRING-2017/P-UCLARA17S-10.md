@@ -28,6 +28,8 @@ H(\Omega)/R(\Omega)
 has dimension $n$, find a basis for this space, and prove it is a basis.
 :::
 
+::: {.solution}
+
 For $u\in H(\Omega)$, define
 $$
 g_u(z)\coloneqq u_x(z)-i u_y(z).
@@ -238,6 +240,8 @@ Step [](#s1-6){.pf-ref} proves spanning and step [](#s1-7){.pf-ref} proves linea
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required dimension and basis statement.
+
+:::
 
 :::
 
