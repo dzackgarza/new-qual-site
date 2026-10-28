@@ -34,6 +34,8 @@ B and D do not have that saddle/first-quadrant-attracting-spiral
 configuration.
 :::
 
+::: {.solution}
+
 Write
 \[
 F(x,y)=x+y-xy,
@@ -201,6 +203,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} establish parts (a)--(d).
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} records every requested answer.
+
+:::
 
 :::
 
