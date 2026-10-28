@@ -31,6 +31,8 @@ Let $f$ be a continuous complex-valued function on the closed unit disk $\overli
 where $|E|$ denotes the Lebesgue measure of $E\subset[0,2\pi]$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Fix
@@ -574,6 +576,8 @@ The assumption \(|E|>0\) led to the contradiction in step [](#s1-23){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} proves part (a), and step [](#s1-24){.pf-ref} proves part (b).
+
+:::
 
 :::
 
