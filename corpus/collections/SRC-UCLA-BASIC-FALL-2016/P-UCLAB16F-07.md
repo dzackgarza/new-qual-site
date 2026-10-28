@@ -16,10 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Determine the volume of the region in $\mathbb { R } ^ { 3 }$ determined by the following inequalities:
+Determine the volume of the region in $\RR^3$ determined by the following inequalities:
 
 $$
-x ^ { 2 } + y ^ { 2 } + z ^ { 2 } \leq 4 , \qquad x ^ { 2 } - 2 x + y ^ { 2 } + z ^ { 2 } \geq 0 , \quad \text { and } \quad z \geq x .
+x^2 + y^2 + z^2 \leq 4, \qquad x^2 - 2x + y^2 + z^2 \geq 0, \quad \text{and} \quad z \geq x.
 $$
 :::
 
