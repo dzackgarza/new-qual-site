@@ -20,6 +20,8 @@ Let $A$ be a real $n\times m$ matrix.
 Prove that the maximum number of linearly independent rows of $A$ equals the maximum number of linearly independent columns of $A$.
 :::
 
+::: {.solution}
+
 Let
 \[
 T:\mathbb R^m\to\mathbb R^n
@@ -176,6 +178,8 @@ By step [](#s1-1){.pf-ref}, the column rank is $\operatorname{rank}(T)$. By step
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
