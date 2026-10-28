@@ -19,6 +19,8 @@ audit:
 A body moves in (xy)-plane along the trajectory y = log cos x. Find the path length of the body when $x \in [ 0 , \frac { \pi } { 6 } ]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -200,6 +202,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required path length.
+
+:::
 
 :::
 
