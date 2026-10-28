@@ -25,6 +25,8 @@ For how many values of $a$ is the integral $\int_0^a (12x^2 + 8x + 1) \, dx$ equ
 (E) $4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ Step [](#s1-2){.pf-ref} lists exactly two distinct values.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
