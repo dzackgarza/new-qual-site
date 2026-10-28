@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with 1 such that for every x in R there is an integer $n > 1$ (depending on x) such that $x ^ { n } = x$ . Show that every prime ideal of R is maximal.
 :::
 
+::: {.solution}
+
 Let
 $$
 P
@@ -186,6 +188,8 @@ is a field. The maximal-ideal quotient criterion therefore implies that $P$ is m
 ::: pf-qed
 
 Since $P$ was an arbitrary prime ideal, step [](#s1-5){.pf-ref} proves that every prime ideal of $R$ is maximal.
+
+:::
 
 :::
 
