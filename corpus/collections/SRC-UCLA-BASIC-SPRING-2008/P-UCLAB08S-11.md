@@ -21,6 +21,8 @@ Let $A\in M_n(\mathbb C)$ and suppose that $A^m=I_n$ for some positive integer $
 Prove that $A$ is diagonalizable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -234,6 +236,8 @@ Step [](#s1-5){.pf-ref} then gives diagonalizability.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
