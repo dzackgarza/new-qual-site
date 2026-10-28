@@ -19,6 +19,8 @@ audit:
 State Cauchy's theorem for triangles.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -118,6 +120,8 @@ oriented sides.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested statement.
+
+:::
 
 :::
 
