@@ -26,6 +26,8 @@ x_2'=2x_1+3x_2.
 \]
 :::
 
+::: {.solution}
+
 Write
 \[
 x(t)=
@@ -282,6 +284,8 @@ Expand the vector formula from step [](#s1-5){.pf-ref} coordinatewise.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives all solutions of the system.
+
+:::
 
 :::
 
