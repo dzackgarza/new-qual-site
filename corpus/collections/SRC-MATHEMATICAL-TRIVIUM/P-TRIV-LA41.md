@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -177,6 +179,8 @@ that every displayed triple satisfies all three original equations.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the full solution family.
+
+:::
 
 :::
 
