@@ -19,6 +19,8 @@ audit:
 Find spaces with the same homotopy (homology) groups, but having different homotopy type.
 :::
 
+::: {.solution}
+
 Two standard pairs answer the two parenthetical versions separately.
 
 ::: pf
@@ -169,6 +171,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} establish the homology examp
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} supplies both requested kinds of examples and proves that their homotopy types differ.
+
+:::
 
 :::
 
