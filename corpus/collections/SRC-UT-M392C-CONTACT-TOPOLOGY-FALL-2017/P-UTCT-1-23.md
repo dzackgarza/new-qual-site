@@ -34,6 +34,8 @@ Analyze the lens space $L(p,q)$ in the same way.
 (Hint: $H_1(L(p,q)) = \mathbb{Z}/p\mathbb{Z}$.)
 :::
 
+::: {.solution}
+
 Let
 \[
 M=L(p,q).
@@ -447,6 +449,8 @@ This is step [](#s1-2){.pf-ref}. The parity analysis describes how those \(p\) d
 
 Steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} analyze the odd case, and steps [](#s1-12){.pf-ref} through [](#s1-15){.pf-ref} analyze the
 even case, including the \(\mathbb{RP}^3\) specialization.
+
+:::
 
 :::
 
