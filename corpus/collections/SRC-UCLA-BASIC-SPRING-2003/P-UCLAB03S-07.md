@@ -27,6 +27,8 @@ W_1^0\cap W_2^0=(W_1+W_2)^0.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove the two inclusions.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required equality.
+
+:::
 
 :::
 
