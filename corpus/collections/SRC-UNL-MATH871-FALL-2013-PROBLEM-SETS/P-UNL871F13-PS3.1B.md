@@ -23,6 +23,8 @@ For every $\beta\in I$, prove that the coordinate projection
 is an open map.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -207,6 +209,8 @@ Step [](#s1-4){.pf-ref} verifies the definition of an open map.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
