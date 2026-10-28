@@ -20,6 +20,8 @@ audit:
 Problem 10. What is the largest number of $1$'s an invertible $0$-$1$ matrix of size $n\times n$ can have? You must show both that this number is possible and that no larger number is possible.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -176,6 +178,8 @@ Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} exhibit an invertible zero-o
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves both optimality and attainability.
+
+:::
 
 :::
 
