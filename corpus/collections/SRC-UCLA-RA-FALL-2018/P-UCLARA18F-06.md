@@ -28,6 +28,8 @@ f_y(x)=f(x-y)
 is norm dense in $L^2(\mathbb R)$.
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\operatorname{span}\{f_y:y\in\mathbb R\}\subseteq L^2(\mathbb R),
@@ -138,6 +140,8 @@ Step [](#s1-3){.pf-ref} gives \(M^\perp=\{0\}\), so \(\overline M=L^2(\mathbb R)
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is exactly the required density of finite linear combinations of translates of \(f\).
+
+:::
 
 :::
 
