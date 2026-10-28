@@ -15,6 +15,8 @@ review: draft
 Let $f ( x ) = x ^ { 2 + \sin ( x ) }$ for $x > 0$ . Find $f ^ { \prime } ( x )$
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)=x^{2+\sin x},
@@ -132,6 +134,8 @@ step [](#s1-1){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested derivative.
+
+:::
 
 :::
 
