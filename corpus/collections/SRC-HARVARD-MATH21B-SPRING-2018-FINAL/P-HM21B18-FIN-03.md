@@ -55,6 +55,8 @@ f(x)=\frac{a_0}{\sqrt2}+\sum_{n\ge1}a_n\cos(nx)+b_n\sin(nx),
 decide which of the assertions $a_0=0$, all $a_n=0$ for $n>0$, and all $b_n=0$ hold for every even $f$, every odd $f$, and every $f$ with no real zeros.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -260,6 +262,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} establish the corresponding 
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} records all requested decisions.
+
+:::
 
 :::
 
