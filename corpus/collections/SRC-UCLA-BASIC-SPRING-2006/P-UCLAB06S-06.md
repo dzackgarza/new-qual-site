@@ -36,7 +36,7 @@ Erratum: with the strict inequality of the source, read for $x \neq y$ (for $x =
 
 ::: {.solution}
 
-Interpret the source's strict inequality as applying to
+Interpret the strict inequality as applying to
 \[
 x\ne y.
 \]
@@ -412,7 +412,7 @@ Therefore
 
 ::: {.pf-step #s1-11}
 
-If the source's strict inequality is replaced by
+If the strict inequality is replaced by
 \[
 |f(x)-f(y)|
 \le
