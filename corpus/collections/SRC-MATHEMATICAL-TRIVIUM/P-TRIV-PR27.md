@@ -26,6 +26,8 @@ There is a suspicion that the data about the third field is incorrect.
 Check if it should be dropped with 5% significance level.
 :::
 
+::: {.solution}
+
 Assume the eight field yields are an independent sample from a normal population and test the single suspected high observation $35.9$ using Grubbs' statistic
 \[
 G=\frac{|x_{\mathrm{sus}}-\bar x|}{s},
@@ -146,6 +148,8 @@ Step [](#s1-5){.pf-ref} shows that the data do not provide sufficient evidence, 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} answers the requested decision.
+
+:::
 
 :::
 
