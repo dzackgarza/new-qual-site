@@ -19,16 +19,16 @@ audit:
 Suppose
 
 $$
-A = \left[ { \begin{array} { r r } { 2 } & { 1 } \\ { 0 } & { 2 } \end{array} } \right] .
+A = \begin{bmatrix} 2 & 1 \\ 0 & 2 \end{bmatrix}.
 $$
 
 Find the smallest possible constant $C > 0$ so that
 
 $$
-\| e ^ { A } x \| \leq C \| x \|
+\norm{e^A x} \leq C \norm{x}
 $$
 
-for all $x \in \mathbb { R } ^ { 2 }$ . Here $\| z \|$ denotes the usual (Pythagorean/Euclidean) length of the vector $z \in \mathbb { R } ^ { 2 }$ .
+for all $x \in \RR^2$. Here $\norm{z}$ denotes the usual (Pythagorean/Euclidean) length of the vector $z \in \RR^2$.
 :::
 
 ::: {.solution}
