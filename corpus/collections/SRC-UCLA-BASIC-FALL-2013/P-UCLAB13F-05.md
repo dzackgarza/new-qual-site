@@ -27,6 +27,8 @@ Assume that $f$ is continuously differentiable and
 for all $x,y\in\mathbb R^d$. Prove that $f$ is convex.
 :::
 
+::: {.solution}
+
 Fix $x,y\in\mathbb R^d$ and put
 \[
 v=x-y,
@@ -215,6 +217,8 @@ Step [](#s1-5){.pf-ref} is exactly the defining convexity inequality.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
