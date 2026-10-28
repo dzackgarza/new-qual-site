@@ -20,6 +20,8 @@ audit:
 For each field $F=\mathbb R$, $\mathbb C$, and $\mathbb F_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -183,6 +185,8 @@ Step [](#s1-3){.pf-ref} gives a counterexample over $\mathbb F_3$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} records the required classification.
+
+:::
 
 :::
 
