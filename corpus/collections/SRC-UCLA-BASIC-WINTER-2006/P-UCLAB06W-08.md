@@ -24,6 +24,8 @@ Show that there exists a unique linear transformation $T^t:W\to V$ such that
 for all $v\in V$ and $w\in W$, where $\langle\ ,\ \rangle_X$ denotes the inner product on $X=V$ or $W$.
 :::
 
+::: {.solution}
+
 Choose an orthonormal basis
 $$
 e_1,\ldots,e_n
@@ -153,6 +155,8 @@ so $A(w)=B(w)$. Since $w$ was arbitrary, $A=B$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} construct a linear map $T^t$ satisfying the required identity, and step [](#s1-4){.pf-ref} proves uniqueness.
+
+:::
 
 :::
 
