@@ -25,6 +25,8 @@ $$
 as a power series about $x = 1$
 :::
 
+::: {.solution}
+
 Set $s=x-1$ and write
 \[
 y(s)=\sum_{n=0}^{\infty}a_ns^n.
@@ -152,6 +154,8 @@ Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} determine all coefficients from 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the two-parameter general solution as a power series about $x=1$.
+
+:::
 
 :::
 
