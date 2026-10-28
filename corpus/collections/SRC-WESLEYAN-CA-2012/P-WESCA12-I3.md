@@ -25,6 +25,8 @@ Define each of the following for an analytic function:
 3. an essential singularity.
 :::
 
+::: {.solution}
+
 Let
 \[
 z_0\in\mathbb C
@@ -142,6 +144,8 @@ Thus the three isolated-singularity types are:
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definitions and their standard
 equivalent formulations.
+
+:::
 
 :::
 
