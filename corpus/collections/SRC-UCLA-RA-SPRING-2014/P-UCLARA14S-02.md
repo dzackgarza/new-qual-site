@@ -25,6 +25,8 @@ Prove that
 for Lebesgue-almost every $a\in\mathbb R$.
 :::
 
+::: {.solution}
+
 For $a\in\mathbb R$, define
 \[
 F(a)
@@ -192,6 +194,8 @@ By definition, the integral is $F(a)$, and step [](#s1-3){.pf-ref} shows that $F
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
