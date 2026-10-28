@@ -26,6 +26,8 @@ a_{n+1}=\sqrt{2+a_n}\quad(n\geq1).
 Prove that this sequence converges and find its limit.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -195,6 +197,8 @@ Step [](#s1-3){.pf-ref} gives existence of the limit, and step [](#s1-5){.pf-ref
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
