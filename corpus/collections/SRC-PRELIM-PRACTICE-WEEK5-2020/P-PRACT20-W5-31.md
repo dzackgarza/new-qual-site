@@ -20,6 +20,8 @@ audit:
 Using the substitution $z = e^{ix}$ (or otherwise), evaluate $\int_0^{2\pi} \frac{dx}{10 - 8\cos(x)}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -151,6 +153,8 @@ By the residue theorem and step [](#s1-3){.pf-ref},
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested value.
+
+:::
 
 :::
 
