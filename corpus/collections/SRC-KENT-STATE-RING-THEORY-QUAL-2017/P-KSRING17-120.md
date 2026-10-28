@@ -21,6 +21,8 @@ Construct the field of fractions F of R by defining the set F and the two binary
 Show that F has a multiplicative identity element and that every nonzero element of F has a multiplicative inverse.
 :::
 
+::: {.solution}
+
 Let
 $$
 S
@@ -701,6 +703,8 @@ Thus $\iota$ is injective.
 
 Steps [](#s1-5){.pf-ref} through [](#s1-18){.pf-ref} construct the field of fractions and verify its operations, identity, and inverses.
 Step [](#s1-19){.pf-ref} identifies $R$ with a subring of its fraction field.
+
+:::
 
 :::
 
