@@ -20,6 +20,8 @@ audit:
 Let $f(x) = |x| + 3x^2$ for $x \in \mathbb{R}$. What is $f'(-1)$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ Substitute \(x=-1\) into step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested derivative.
+
+:::
 
 :::
 
