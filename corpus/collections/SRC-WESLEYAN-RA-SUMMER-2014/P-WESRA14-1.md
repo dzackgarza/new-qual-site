@@ -23,6 +23,8 @@ State one of Littlewood's three principles:
 (b) in a precise mathematical formulation.
 :::
 
+::: {.solution}
+
 One of Littlewood's principles is the principle that **pointwise convergence
 is nearly uniform convergence**.
 
@@ -140,6 +142,8 @@ quantifiers displayed.
 
 Step [](#s1-1){.pf-ref} gives the requested verbal form and step [](#s1-2){.pf-ref} gives the precise
 mathematical formulation.
+
+:::
 
 :::
 
