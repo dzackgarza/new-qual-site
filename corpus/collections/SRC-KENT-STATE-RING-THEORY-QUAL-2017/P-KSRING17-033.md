@@ -32,6 +32,8 @@ $$
 (d) If n is a positive integer and $f \in R$ is such that $f ^ { n } = 0 _ { R }$ , then $f = 0 _ { R }$
 :::
 
+::: {.solution}
+
 Let
 $$
 R=C([0,1],\RR).
@@ -324,6 +326,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), step [](#s1-5){.pf-ref} proves part (b), step [](#s1-7){.pf-ref} proves part (c), and step [](#s1-8){.pf-ref} proves part (d).
+
+:::
 
 :::
 
