@@ -30,6 +30,8 @@ No proofs are required.
    \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ f^{(10)}(0)=10!\,[x^{10}]f(x)=0.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three requested computations.
+
+:::
 
 :::
 
