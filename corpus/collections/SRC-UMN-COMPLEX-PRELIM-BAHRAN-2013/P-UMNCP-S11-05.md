@@ -20,6 +20,8 @@ audit:
 Prove that a nonconstant entire function maps \(\mathbb C\) onto a dense subset of \(\mathbb C\).
 :::
 
+::: {.solution}
+
 Let
 $$
 f:\CC\to\CC
@@ -196,6 +198,8 @@ The assumption in step [](#s1-1){.pf-ref} led to a contradiction, so the image m
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is exactly the required conclusion.
+
+:::
 
 :::
 
