@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring and P a prime ideal of R. Show that there is a prime ideal $P _ { 0 } \subseteq P$ that does not properly contain any prime ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 \mathcal P
@@ -286,6 +288,8 @@ Step [](#s1-5){.pf-ref} constructs $P_0\subseteq P$, and step [](#s1-6){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
