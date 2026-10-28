@@ -24,6 +24,8 @@ Let $V=M_n(\mathbb R)$. Prove that
 defines an inner product on $V$. For $n=2$, find an orthonormal basis.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -322,6 +324,8 @@ Combine steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the inner-product assertion, and step [](#s1-10){.pf-ref} gives the requested orthonormal basis for $n=2$.
+
+:::
 
 :::
 
