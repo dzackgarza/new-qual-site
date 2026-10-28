@@ -16,18 +16,18 @@ audit:
 ---
 
 ::: {.problem}
-Let B be an $7 \times 7$ matrix and $A _ { n }$ a sequence of matrices of the same size.
+Let $B$ be a $7 \times 7$ matrix and $A_n$ a sequence of matrices of the same size.
 Suppose that
 
 $$
-A _ { n } \to B \quad \text { as } \quad n \to \infty ,
+A_n \to B \quad \text{as} \quad n \to \infty,
 $$
 
 in the sense that the individual matrix entries converge.
 Show that
 
 $$
-\operatorname { r a n k } ( B ) \leq \operatorname* { l i m } _ { n \to \infty } \operatorname { i n f } \operatorname { r a n k } ( A _ { n } ) .
+\rank(B) \leq \liminf_{n \to \infty} \rank(A_n).
 $$
 :::
 
