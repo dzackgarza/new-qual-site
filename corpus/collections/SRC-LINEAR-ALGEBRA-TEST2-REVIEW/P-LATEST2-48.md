@@ -28,6 +28,8 @@ Which statement is true?
 (A) $ST=0$  (B) $ST=T$  (C) $ST=TS$  (D) $ST-TS$ is the identity map of $V$  (E) $ST+TS$ is the identity map of $V$
 :::
 
+::: {.solution}
+
 Let
 $$
 p\in V.
@@ -143,6 +145,8 @@ Thus the operator $ST-TS$ acts as the identity on every vector in $V$.
 ::: pf-qed
 
 The correct answer is $\boxed{\text{(D)}}$.
+
+:::
 
 :::
 
