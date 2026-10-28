@@ -19,6 +19,8 @@ audit:
 Find the ring structure on $H ^ { * } ( S U ( n ) ) , H ^ { * } ( U ( n ) ) , H ^ { * } ( V _ { k } ( \mathbb { C } ^ { n } ) )$
 :::
 
+::: {.solution}
+
 All cohomology groups are taken with integral coefficients. The rings are exterior algebras on odd-degree generators.
 
 ::: pf
@@ -209,6 +211,8 @@ These are steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-7){.pf-ref
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives all requested integral cohomology rings and generator degrees.
+
+:::
 
 :::
 
