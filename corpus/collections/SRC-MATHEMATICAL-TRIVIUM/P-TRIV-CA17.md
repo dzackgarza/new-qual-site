@@ -26,6 +26,8 @@ nonintegrable singularity at $x=\pm1$. The solution below treats every real
 $\theta$ for which the ordinary improper integral is finite.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -384,6 +386,8 @@ $\sin\vartheta$ by $|\sin\theta|$.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the maximal real-parameter form of the requested integral.
+
+:::
 
 :::
 
