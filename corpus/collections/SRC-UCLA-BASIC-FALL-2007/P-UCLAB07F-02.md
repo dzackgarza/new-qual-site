@@ -20,6 +20,8 @@ Let $f:(a,b)\to\mathbb R$ be continuous and differentiable on $(a,b)\setminus\{c
 If $\lim_{x\to c}f'(x)=d\in\mathbb R$, show that $f$ is differentiable at $c$ and $f'(c)=d$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -111,6 +113,8 @@ The limit in step [](#s1-3){.pf-ref} is exactly the definition of the derivative
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
