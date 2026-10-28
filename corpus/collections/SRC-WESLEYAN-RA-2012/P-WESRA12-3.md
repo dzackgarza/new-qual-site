@@ -31,6 +31,8 @@ Let $V$ be a real vector space.
 (f) If $X,Y$ are real Banach spaces and $T:X\to Y$ is a continuous bijective linear map, prove $T^{-1}$ is linear and determine whether $T^{-1}$ is continuous, giving a reason.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -527,6 +529,8 @@ Linearity is step [](#s1-11){.pf-ref} and continuity is step [](#s1-12){.pf-ref}
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} answer parts (a)--(b), step [](#s1-8){.pf-ref} answers part (c),
 step [](#s1-9){.pf-ref} answers part (d), step [](#s1-10){.pf-ref} answers part (e), and
 steps [](#s1-11){.pf-ref} through [](#s1-13){.pf-ref} answer part (f).
+
+:::
 
 :::
 
