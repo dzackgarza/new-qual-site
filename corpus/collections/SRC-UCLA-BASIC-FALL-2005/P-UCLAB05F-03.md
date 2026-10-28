@@ -34,6 +34,8 @@ exists but is not equal to
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -249,6 +251,8 @@ Step [](#s1-6){.pf-ref} makes the left side constantly $1/3$, while $F=0$ makes 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} provides the counterexample required in part (b).
+
+:::
 
 :::
 
