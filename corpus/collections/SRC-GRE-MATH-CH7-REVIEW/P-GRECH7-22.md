@@ -29,6 +29,8 @@ Which of the following graphs are isomorphic?
 The source shows the three graphs I, II and III in a figure that is not reproduced here.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -142,6 +144,8 @@ This is exactly the conclusion of step [](#s1-4){.pf-ref}. The source solution o
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested classification and identifies the source-answer error.
+
+:::
 
 :::
 
