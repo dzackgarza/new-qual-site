@@ -25,6 +25,8 @@ u(z)=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}\!\left(\frac{e^{i\theta}+z}{e^{i
 with $f:\partial\mathbb D\to\mathbb R$ continuous.
 :::
 
+::: {.solution}
+
 For $z\in\mathbb D$ and $\zeta\in\partial\mathbb D$, write
 \[
 P(z,\zeta)
@@ -236,6 +238,8 @@ Define $\widetilde u$ on $\overline{\mathbb D}$ by $\widetilde u=u$ on $\mathbb 
 ::: pf-qed
 
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the forward implication, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the converse.
+
+:::
 
 :::
 
