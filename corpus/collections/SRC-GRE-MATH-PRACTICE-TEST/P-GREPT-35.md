@@ -41,6 +41,8 @@ How many of the students surveyed are enrolled in all three of these courses?
 (E) $5$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -111,6 +113,8 @@ hence $n=1$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested number of students.
+
+:::
 
 :::
 
