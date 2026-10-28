@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime } - y = e ^ { 3 t }$ with $y ( 0 ) = 2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -158,6 +160,8 @@ Substitute step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} satisfies both the differential equation and the initial condition.
+
+:::
 
 :::
 
