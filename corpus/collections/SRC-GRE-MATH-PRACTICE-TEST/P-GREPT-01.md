@@ -25,6 +25,8 @@ If $x^2 + x = 3$, then $x^4 + x =$
 (E) $3x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -86,6 +88,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required expression.
+
+:::
 
 :::
 
