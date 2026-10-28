@@ -29,6 +29,8 @@ P^{(k)}(z_j)=c_{j,k}
 for all $j,k$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathcal P_N
@@ -256,6 +258,8 @@ Injectivity gives uniqueness.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is exactly the Hermite interpolation statement required.
+
+:::
 
 :::
 
