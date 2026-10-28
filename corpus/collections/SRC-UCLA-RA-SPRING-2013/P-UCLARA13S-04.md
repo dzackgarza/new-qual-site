@@ -29,6 +29,8 @@ R_K=\inf\{I(\mu):\mu\text{ is a Borel probability measure on }K\}.
 Show that there exists a Borel probability measure $\mu$ on $K$ such that $I(\mu)=R_K$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -332,6 +334,8 @@ Step [](#s1-8){.pf-ref} gives the reverse inequality. Hence equality holds.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} handles the case $R_K=\infty$, while steps [](#s1-2){.pf-ref} through [](#s1-9){.pf-ref} produce a minimizing probability measure when $R_K<\infty$.
+
+:::
 
 :::
 
