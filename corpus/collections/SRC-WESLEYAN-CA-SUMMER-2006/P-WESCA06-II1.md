@@ -26,6 +26,8 @@ f_3(z)=\sqrt z.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -359,6 +361,8 @@ Collect steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives all requested classifications.
+
+:::
 
 :::
 
