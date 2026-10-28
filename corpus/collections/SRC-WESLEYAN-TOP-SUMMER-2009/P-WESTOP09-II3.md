@@ -19,6 +19,8 @@ Let $X=S^1\vee S^1$.
 4. Describe the universal abelian cover of $X$, corresponding to the commutator subgroup of $\pi_1(X)$.
 :::
 
+::: {.solution}
+
 Fix the wedge point as basepoint and write
 \[
 \pi_1(X)=F(a,b),
@@ -239,6 +241,8 @@ the two circles. Its deck group is
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} classify the connected two-sheeted covers and compute
 their subgroups and deck groups; step [](#s1-5){.pf-ref} gives a nonregular cover; steps
 [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} describe the universal and universal-abelian covers.
+
+:::
 
 :::
 
