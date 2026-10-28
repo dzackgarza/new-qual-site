@@ -47,6 +47,8 @@ The ideals of type IV which contain a given $f(X)A$ of type II are those for whi
 Errata to the statement: in type IV the ideal is $\pi^* A + g(X)A$ with $M = \pi^* B$; $h(X) \in B[X]$; and the closing parenthetical should read $\bar{f} = f \pmod{\pi_i} = 1$.
 :::
 
+::: {.solution}
+
 Write $A=B[X]$, and use the conclusions of Problem 3 proved in [[P-TATE85-PI-03]].
 
 ::: pf
@@ -273,6 +275,8 @@ Hence $fA$ is maximal.
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the classification.
 Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} establish the assertions about type IV and containment, while steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} prove the final maximality statements.
+
+:::
 
 :::
 
