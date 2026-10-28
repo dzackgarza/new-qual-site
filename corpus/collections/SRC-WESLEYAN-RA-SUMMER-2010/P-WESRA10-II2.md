@@ -27,6 +27,8 @@ for every bounded interval $I$ and rational $r$.
 (b) Prove $\mu(I)=\mu(I+a)$ for every bounded interval $I$ and every real $a$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -197,6 +199,8 @@ for every $n$. Step [](#s1-4){.pf-ref} gives
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
