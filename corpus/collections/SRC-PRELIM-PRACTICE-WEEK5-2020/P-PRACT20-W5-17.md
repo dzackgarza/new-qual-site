@@ -20,6 +20,8 @@ audit:
 Let $G$ be a non-empty set with a binary operation which is associative and fully cancellative (i.e. $xz = yz \implies x = y$ and $zx = zy \implies x = y$ for all $x, y, z \in G$). Further assume that $\{x^n : n = 1, 2, 3, \ldots\}$ is finite for all $x \in G$. Show that $G$ is a group.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -196,6 +198,8 @@ remaining group axioms.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
