@@ -20,6 +20,8 @@ A collection of stories in 5 volumes is placed on a bookshelf in a random order.
 What is the probability that the order is correct (direct or inverse)?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -79,6 +81,8 @@ Divide the two favorable outcomes from step [](#s1-2){.pf-ref} by the $120$ equa
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested probability.
+
+:::
 
 :::
 
