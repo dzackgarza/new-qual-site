@@ -31,6 +31,8 @@ Justify your answers to the following.
 (b) What is the eigenvalue of this eigenvector?
 :::
 
+::: {.solution}
+
 Let
 \[
 v_1=(1,2,3),
@@ -164,6 +166,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} answers part (b).
+
+:::
 
 :::
 
