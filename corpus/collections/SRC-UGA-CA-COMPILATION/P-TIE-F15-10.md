@@ -20,6 +20,8 @@ audit:
 Let f be entire and suppose that $\operatorname* { l i m } _ { z \to \infty } f ( z ) = \infty$ . Show that f is a polynomial.
 :::
 
+::: {.solution}
+
 Define
 $$
 g(w)\coloneqq f(1/w)
@@ -122,6 +124,8 @@ This is a polynomial of degree at most $m$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
