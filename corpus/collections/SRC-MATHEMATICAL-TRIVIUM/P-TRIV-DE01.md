@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime } ( x ) = x e ^ { x ^ { 2 } - 2 \log y ( x ) }$
 :::
 
+::: {.solution}
+
 Because the equation contains $\log y$, work on an interval on which
 $$
 y(x)>0.
@@ -193,6 +195,8 @@ required by the original logarithm $\log y$.
 
 Step [](#s1-7){.pf-ref} gives the complete family of real solutions on the natural domains
 of the equation.
+
+:::
 
 :::
 
