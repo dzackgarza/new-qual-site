@@ -21,6 +21,8 @@ Suppose $f_n\to f$ uniformly on $E$.
 Prove that $f$ is continuous on $E$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -113,6 +115,8 @@ Step [](#s1-4){.pf-ref} proves continuity of $f$ at the arbitrary point $x_0\in 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
