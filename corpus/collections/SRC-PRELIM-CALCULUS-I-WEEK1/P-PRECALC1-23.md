@@ -15,6 +15,8 @@ review: draft
 How many real roots does $2 x ^ { 5 } + 8 x - 7$ have?
 :::
 
+::: {.solution}
+
 Let
 \[
 p(x)=2x^5+8x-7.
@@ -169,6 +171,8 @@ Existence is step [](#s1-7){.pf-ref} and uniqueness is step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives the requested number of real roots.
+
+:::
 
 :::
 
