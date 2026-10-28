@@ -20,6 +20,8 @@ audit:
 Show that $f ( z ) = z ^ { 2 }$ is uniformly continuous in any open disk $| z | < R$ , where $R > 0$ is fixed, but it is not uniformly continuous on C.
 :::
 
+::: {.solution}
+
 Let
 $$
 f(z)=z^2.
@@ -151,6 +153,8 @@ Step [](#s1-3){.pf-ref} provides a contradiction.
 
 Step [](#s1-2){.pf-ref} proves uniform continuity on every fixed open disk, and step [](#s1-4){.pf-ref} proves failure
 of uniform continuity on the whole plane.
+
+:::
 
 :::
 
