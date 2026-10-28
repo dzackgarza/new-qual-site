@@ -20,6 +20,8 @@ Let A be $n \times n$ real orthogonal matrix.
 Calculate the number of independent elements of A.
 :::
 
+::: {.solution}
+
 Write the columns of $A$ as
 $$
 v_1,\ldots,v_n.
@@ -142,6 +144,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required count.
+
+:::
 
 :::
 
