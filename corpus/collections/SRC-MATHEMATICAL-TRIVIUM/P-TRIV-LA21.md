@@ -25,6 +25,8 @@ $[A,B]=0$. The intended assertion is that a commutator cannot equal a
 nonzero scalar multiple $cI$ with $c\neq0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -150,6 +152,8 @@ If such an equality held, step [](#s1-4){.pf-ref} would force $c=0$, a contradic
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the corrected intended conclusion.
+
+:::
 
 :::
 
