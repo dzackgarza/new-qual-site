@@ -22,6 +22,8 @@ Problem 7. (a) Define what it means for $f:\mathbb R^n\to\mathbb R^m$ to be diff
 (b) Using this definition, formulate and prove the chain rule for the derivative of $g(f(x))$ at $x=a$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -408,6 +410,8 @@ Thus the chain rule follows.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and steps [](#s1-3){.pf-ref} through [](#s1-10){.pf-ref} formulate and prove the chain rule requested in part (b).
+
+:::
 
 :::
 
