@@ -24,6 +24,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 k=\dim U
@@ -166,6 +168,8 @@ Adding yields the displayed identity.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required dimension formula.
+
+:::
 
 :::
 
