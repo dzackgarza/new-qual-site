@@ -26,6 +26,8 @@ $$
 is a polynomial of degree n, then it has n zeros in $\mathbb { C } .$
 :::
 
+::: {.solution}
+
 Write
 $$
 P_n(z)=a_nz^n+Q(z),
@@ -94,6 +96,8 @@ The polynomial $a_nz^n$ has exactly one zero, namely $0$, of multiplicity $n$. B
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the Fundamental Theorem of Algebra for the given polynomial.
+
+:::
 
 :::
 
