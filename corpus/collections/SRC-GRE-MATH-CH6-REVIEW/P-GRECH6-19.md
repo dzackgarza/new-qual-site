@@ -26,6 +26,8 @@ How many elements $x$ in the field $\ZZ_{11}$ satisfy the equation $x^{12} - x^{
 (E) $5$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ Step [](#s1-3){.pf-ref} gives the complete solution set.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number.
+
+:::
 
 :::
 
