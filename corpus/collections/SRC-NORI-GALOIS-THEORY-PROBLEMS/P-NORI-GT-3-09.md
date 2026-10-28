@@ -21,6 +21,8 @@ Let $f = Q ^ { 2 } - c P ^ { 2 }$ where $c \in F$ and $P , Q \in F [ X ]$ with $
 Show that if $f$ is irreducible, then the field $E = F ( \theta )$ obtained by adjoining a root $\theta$ of $f ,$ necessarily contains a quadratic extension of F
 :::
 
+::: {.solution}
+
 Because $Q$ is monic of degree $2$ and $\deg P<2$, the polynomial
 $$
 f=Q^2-cP^2
@@ -229,6 +231,8 @@ Since $u\in E$, this gives the required quadratic subextension of $E/F$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the first assertion, and step [](#s1-9){.pf-ref} proves that every irreducible quartic of the prescribed form generates an extension containing a quadratic extension of $F$.
+
+:::
 
 :::
 
