@@ -28,6 +28,8 @@ for every $z_0\in\partial\Omega$, then $u(z)\le M$ for every $z\in\Omega$.
 (b) Show that if $u$ is bounded above and the condition in part (a) holds for all but finitely many $z_0\in\partial\Omega$, then still $u(z)\le M$ for every $z\in\Omega$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -182,6 +184,8 @@ for every $z\in\Omega$ and every $\eta>0$. For fixed $z$, the number $v(z)$ is f
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
