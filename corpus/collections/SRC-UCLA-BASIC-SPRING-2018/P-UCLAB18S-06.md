@@ -29,6 +29,8 @@ Compute
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \zeta=e^{2\pi i/5}.
@@ -294,6 +296,8 @@ and
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required determinant.
+
+:::
 
 :::
 
