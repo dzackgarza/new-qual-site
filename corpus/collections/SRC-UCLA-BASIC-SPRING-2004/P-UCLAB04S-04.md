@@ -20,6 +20,8 @@ Are there infinite compact subsets of $\mathbb Q$?
 Prove your assertion.
 :::
 
+::: {.solution}
+
 Yes.
 
 ::: pf
@@ -207,6 +209,8 @@ is an explicit example.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers the question affirmatively.
+
+:::
 
 :::
 
