@@ -19,6 +19,8 @@ audit:
 Let p be a prime and let R be the ring of all $2 \times 2$ matrices of the form $\left[ \begin{array} { c c } { a } & { b } \\ { p b } & { a } \end{array} \right]$ , where $a , b \in \mathbb { Z }$ . Prove that R is isomorphic to $\mathbb { Z } [ { \sqrt { p } } ]$
 :::
 
+::: {.solution}
+
 Define
 $$
 \Phi:\ZZ[\sqrt p]\to R
@@ -207,6 +209,8 @@ Step [](#s1-1){.pf-ref} gives bijectivity, and steps [](#s1-2){.pf-ref} through 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
