@@ -25,6 +25,8 @@ Which of the following is the solution set of the inequality $x + \frac{6}{x} > 
 (E) $(-\infty, 0)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -95,6 +97,8 @@ This is exactly the positive-sign set found in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested solution set.
+
+:::
 
 :::
 
