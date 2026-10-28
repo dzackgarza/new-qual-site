@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let Y be an arbitrary set of commuting matrices in $M _ { n } ( \mathbf { C } )$ $( \mathrm { i . e . , } A B = B A$ for all $A , B \in Y )$ Prove that there exists a non-zero vector $v \in \mathbf { C } ^ { n }$ which is a common eigenvector of all elements of Y.
+Let $Y$ be an arbitrary set of commuting matrices in $M_n(\CC)$ (i.e., $AB=BA$ for all $A,B\in Y$). Prove that there exists a non-zero vector $v\in\CC^n$ which is a common eigenvector of all elements of $Y$.
 :::
 
 ::: {.solution}
