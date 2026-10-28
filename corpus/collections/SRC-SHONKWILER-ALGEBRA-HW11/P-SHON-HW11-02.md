@@ -36,6 +36,8 @@ C=R[x]/(x^2+1).
 6. Deduce the algebraic closedness of the usual complex numbers from the corresponding properties of $\mathbb R$.
 :::
 
+::: {.solution}
+
 Let \(R\) be as in the problem, and let
 \[
 C=R[i],
@@ -933,6 +935,8 @@ Apply step [](#s1-41){.pf-ref} to \(R=\mathbb R\), then use step [](#s1-43){.pf-
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} prove part 1, steps [](#s1-7){.pf-ref} through [](#s1-20){.pf-ref} prove part 2, steps [](#s1-21){.pf-ref} through [](#s1-26){.pf-ref} prove part 3, steps [](#s1-27){.pf-ref} through [](#s1-33){.pf-ref} prove part 4, steps [](#s1-34){.pf-ref} through [](#s1-41){.pf-ref} prove part 5, and steps [](#s1-42){.pf-ref} through [](#s1-44){.pf-ref} prove part 6.
+
+:::
 
 :::
 
