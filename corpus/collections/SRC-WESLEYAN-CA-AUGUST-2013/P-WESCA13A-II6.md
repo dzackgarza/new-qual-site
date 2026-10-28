@@ -24,6 +24,8 @@ g(z)=f(\sqrt z).
 Show that $g$ is well-defined and analytic on $B(0,r^2)$, and express $g^{(n)}(0)$ in terms of derivatives of $f$ at $0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -371,6 +373,8 @@ Substitute.
 
 Step [](#s1-5){.pf-ref} proves well-definedness, step [](#s1-8){.pf-ref} proves analyticity, and step
 [](#s1-10){.pf-ref} gives the requested derivative formula.
+
+:::
 
 :::
 
