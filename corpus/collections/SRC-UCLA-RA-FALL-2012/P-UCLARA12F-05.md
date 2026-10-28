@@ -27,6 +27,8 @@ Show that if $f_n$ converges almost everywhere to a function $f:\mathbb R^3\to\m
 \]
 :::
 
+::: {.solution}
+
 Choose $M<\infty$ such that
 $$
 \|f_n\|_{L^2}\le M
@@ -123,6 +125,8 @@ so the right-hand side tends to $0$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
