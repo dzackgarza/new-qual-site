@@ -27,6 +27,8 @@ Let $\Omega \subset \mathbb{C}$ be open, bounded, and simply connected. Let $u$ 
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -215,6 +217,8 @@ Taking the supremum in step [](#s1-6){.pf-ref} gives the asserted inequality.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} supplies the required constant for the arbitrary compact set $K$.
+
+:::
 
 :::
 
