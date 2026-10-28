@@ -29,6 +29,8 @@ prove that if $x_0$ is sufficiently close to $x^*$, then there is a constant $C$
 for all $n$.
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\sup_{x\in\mathbb R}|f''(x)|<\infty.
@@ -333,6 +335,8 @@ C|x_{n-1}-x^*|^2.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required quadratic error estimate for all Newton iterates starting sufficiently close to the simple root.
+
+:::
 
 :::
 
