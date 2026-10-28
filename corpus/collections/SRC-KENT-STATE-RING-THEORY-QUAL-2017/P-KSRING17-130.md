@@ -33,6 +33,8 @@ Likewise the prime ideals $Q_n = (x_n, x_{n+1}, \ldots)$, with $R/Q_n \cong k[x_
 The statement becomes true, by Zorn's lemma, for a non-empty set of prime ideals that contains the union and the intersection of each of its non-empty chains (the union and the intersection of a chain of prime ideals are prime); for example, the set of all prime ideals of a nonzero ring, or the set of all prime ideals containing a given proper ideal.
 :::
 
+::: {.solution}
+
 The source statement is false, as shown by the counterexamples in the remark.
 We prove the corrected statement recorded there.
 
@@ -399,6 +401,8 @@ Step [](#s1-3){.pf-ref} gives a maximal element, and step [](#s1-7){.pf-ref} giv
 ::: pf-qed
 
 The original source statement is false; step [](#s1-8){.pf-ref} proves the corrected version stated in the remark.
+
+:::
 
 :::
 
