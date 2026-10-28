@@ -19,6 +19,8 @@ audit:
 Show that $\delta ( x ) = \operatorname* { l i m } _ { \epsilon \to 0 } \operatorname { I m } \frac { 1 } { \pi } \frac { 1 } { x - i \epsilon }$
 :::
 
+::: {.solution}
+
 The limit is understood in the sense of distributions as $\epsilon\to0^+$.
 
 ::: pf
@@ -99,6 +101,8 @@ By step [](#s1-2){.pf-ref}, the family in step [](#s1-1){.pf-ref} converges on e
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the asserted distributional identity.
+
+:::
 
 :::
 
