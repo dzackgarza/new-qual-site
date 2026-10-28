@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Let $r=\sqrt{x^2+y^2+z^2}$ and let $\delta_0$ denote the Dirac delta distribution at the origin in $\mathbb R^3$.
 
 ::: pf
@@ -107,6 +109,8 @@ Multiplying by $-\varepsilon_0$ gives the displayed charge distribution.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the charge distribution whose Poisson equation produces the stated potential.
+
+:::
 
 :::
 
