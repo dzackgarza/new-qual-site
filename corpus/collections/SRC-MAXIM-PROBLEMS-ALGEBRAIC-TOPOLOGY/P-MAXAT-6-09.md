@@ -20,6 +20,8 @@ Show that $\mathbb { C P } ^ { 2 n }$ is not an oriented boundary.
 (Hint: use the Pontrjagin number)
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\mathbb{CP}^{2n},
@@ -164,6 +166,8 @@ This is the conclusion of step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the required oriented non-bordism statement.
+
+:::
 
 :::
 
