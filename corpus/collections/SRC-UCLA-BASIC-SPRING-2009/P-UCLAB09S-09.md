@@ -32,6 +32,8 @@ Ay=x,
 and that this reflection is unique.
 :::
 
+::: {.solution}
+
 Let
 \[
 d=\|x-y\|_2.
@@ -524,6 +526,8 @@ and step [](#s1-12){.pf-ref} shows that every reflection satisfying the two inte
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove existence, and steps [](#s1-8){.pf-ref} through [](#s1-13){.pf-ref} prove uniqueness.
+
+:::
 
 :::
 
