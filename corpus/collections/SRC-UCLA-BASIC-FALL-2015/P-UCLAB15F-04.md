@@ -29,6 +29,8 @@ f(x):=\lim_{n\to\infty}f_n(x)
 exists for all $x\ge0$ and identify $f$ explicitly.
 :::
 
+::: {.solution}
+
 Define the Volterra operator
 \[
 (Kh)(x)=\int_0^x h(t)e^{-2t}\,dt
@@ -358,6 +360,8 @@ Substitute the formula from step [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves existence of the pointwise limit for all $x\ge0$, and step [](#s1-9){.pf-ref} identifies it explicitly.
+
+:::
 
 :::
 
