@@ -19,6 +19,8 @@ For the short exact sequence of chain complexes of abelian groups shown in the s
 The labels in the source diagram are unrecovered from the retained Markdown extraction.
 :::
 
+::: {.solution}
+
 Write the unrecovered short exact sequence abstractly as
 \[
 0
@@ -610,6 +612,8 @@ Steps [](#s1-4){.pf-ref} through [](#s1-11){.pf-ref} define and verify the conne
 
 Step [](#s1-1){.pf-ref} states the requested long exact sequence, and step [](#s1-12){.pf-ref} supplies
 all map definitions and well-definedness checks requested by the problem.
+
+:::
 
 :::
 
