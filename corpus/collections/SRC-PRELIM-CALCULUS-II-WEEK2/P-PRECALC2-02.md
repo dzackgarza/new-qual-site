@@ -15,6 +15,8 @@ review: draft
 Compute $\int _ { e ^ { - 3 } } ^ { e ^ { - 2 } } \frac { d x } { x \log ( x ) } .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -186,6 +188,8 @@ Use the logarithm identity
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested value.
+
+:::
 
 :::
 
