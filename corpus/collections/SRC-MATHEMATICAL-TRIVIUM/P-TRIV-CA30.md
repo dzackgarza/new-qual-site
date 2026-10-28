@@ -23,6 +23,8 @@ Using Stirling's approximation, find the leading behavior of:
 (b) $S = \log Z ( N , m )$ with $\begin{array} { r } { Z = \frac { N ! } { ( N - m ) ! m ! } } \end{array}$ for large N.
 :::
 
+::: {.solution}
+
 Use Stirling's formula
 $$
 n!
@@ -315,6 +317,8 @@ steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the standard fixed-dens
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
