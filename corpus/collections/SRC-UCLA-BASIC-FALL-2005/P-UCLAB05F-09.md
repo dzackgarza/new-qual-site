@@ -32,6 +32,8 @@ Use part (a) to show that, if $k<n$, an intersection of $k$ subspaces of dimensi
 Suggestion: use induction on $k$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -213,6 +215,8 @@ Step [](#s1-4){.pf-ref} is the base case $k=1$. Step [](#s1-5){.pf-ref} is the i
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
