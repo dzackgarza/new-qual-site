@@ -25,6 +25,8 @@ OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z +
 (d) $0 < | z + 1 | < 1 .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -308,6 +310,8 @@ must be excluded because it is a pole.
 
 Steps [](#s1-3){.pf-ref}, [](#s1-5){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1-9){.pf-ref} give the requested Laurent series on all
 four regions.
+
+:::
 
 :::
 
