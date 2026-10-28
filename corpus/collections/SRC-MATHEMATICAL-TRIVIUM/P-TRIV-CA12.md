@@ -19,6 +19,8 @@ audit:
 Compute $\int _ { 0 } ^ { \infty } \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x ;$
 :::
 
+::: {.solution}
+
 Let
 $$
 F(z)=\frac1{1+z^2}
@@ -201,6 +203,8 @@ Apply step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required value.
+
+:::
 
 :::
 
