@@ -25,6 +25,8 @@ $$
 where y is the amplitude of the oscillations (assume the amplitude to be small and the wave velocity to be v). Find $y ( x , t )$
 :::
 
+::: {.solution}
+
 The string satisfies
 \[
 y_{tt}=v^2y_{xx},
@@ -146,6 +148,8 @@ Insert the coefficients from step [](#s1-4){.pf-ref} into step [](#s1-1){.pf-ref
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the displacement of the struck string.
+
+:::
 
 :::
 
