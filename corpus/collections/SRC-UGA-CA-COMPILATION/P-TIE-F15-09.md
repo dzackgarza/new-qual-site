@@ -20,6 +20,8 @@ audit:
 Let $f ( z )$ be a non-constant analytic function in $| z | > 0$ such that $f ( z _ { n } ) = 0$ for infinite many points $z _ { n }$ with $\operatorname* { l i m } _ { n \to \infty } z _ { n } = 0$ . Show that $z = 0$ is an essential singularity for $f ( z )$ . (An example of such a function is $f ( z ) = \sin ( 1 / z ) . )$
 :::
 
+::: {.solution}
+
 The point $0$ is an isolated singularity of $f$, so it is removable, a pole, or essential.
 
 ::: pf
@@ -103,6 +105,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
