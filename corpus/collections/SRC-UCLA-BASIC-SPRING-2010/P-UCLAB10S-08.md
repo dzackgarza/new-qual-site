@@ -25,6 +25,8 @@ B_\varepsilon(x)=\{y\in X:d(x,y)<\varepsilon\}.
 Prove that $K$ is compact.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -228,6 +230,8 @@ Step [](#s1-3){.pf-ref} gives sequential compactness of $K$, and step [](#s1-5){
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
