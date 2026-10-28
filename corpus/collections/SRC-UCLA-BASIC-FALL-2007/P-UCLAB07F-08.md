@@ -20,6 +20,8 @@ Suppose $a_n\ge0$ and $\sum_{n=1}^{\infty}a_n=\infty$.
 Does it follow that \[\sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty?\] Prove your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -123,6 +125,8 @@ Either $a_n\ge1$ for infinitely many $n$, in which case step [](#s1-1){.pf-ref} 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers the question affirmatively.
+
+:::
 
 :::
 
