@@ -19,6 +19,8 @@ audit:
 Calculate $\pi _ { 4 } ( S ^ { 3 } ) , \pi _ { 5 } ( S ^ { 3 } )$
 :::
 
+::: {.solution}
+
 Let
 \[
 \eta_2:S^3\to S^2
@@ -200,6 +202,8 @@ Combine steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives both requested homotopy groups.
+
+:::
 
 :::
 
