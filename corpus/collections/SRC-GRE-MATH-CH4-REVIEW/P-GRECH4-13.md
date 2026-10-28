@@ -26,6 +26,8 @@ Consider the family $F$ of circles in the $xy$-plane, $(x - c)^2 + y^2 = c^2$, t
 (E) $y' = \frac{2xy}{y^2 - x^2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -109,6 +111,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested differential equation and corresponding choice.
+
+:::
 
 :::
 
