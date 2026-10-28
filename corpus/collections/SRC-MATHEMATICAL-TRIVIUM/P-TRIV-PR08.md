@@ -30,6 +30,8 @@ Each of its five relays is closed with the probability $p$ independently of othe
 Figure 7 of the source (the circuit) is a bridge: from the input the line splits into an upper branch through relay $A$ to an upper node and a lower branch through relay $C$ to a lower node; the upper node is joined to the output through relay $B$, the lower node is joined to the output through relay $D$, and relay $E$ joins the upper node to the lower node.
 :::
 
+::: {.solution}
+
 Let $S$ be the event that a signal passes from input to output.
 
 ::: pf
@@ -150,6 +152,8 @@ Substitute steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers part (a), and step [](#s1-6){.pf-ref} answers part (b).
+
+:::
 
 :::
 
