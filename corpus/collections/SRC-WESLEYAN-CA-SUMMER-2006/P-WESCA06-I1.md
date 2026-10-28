@@ -19,6 +19,8 @@ audit:
 Define the winding number of a path $\gamma$ about a point $z\in\mathbb C$.
 :::
 
+::: {.solution}
+
 Assume
 \[
 \gamma:[a,b]\to\mathbb C
@@ -125,6 +127,8 @@ Thus the winding number is an integer.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the requested definition and its geometric
 interpretation.
+
+:::
 
 :::
 
