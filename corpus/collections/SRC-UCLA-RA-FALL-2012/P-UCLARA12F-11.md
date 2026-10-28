@@ -24,6 +24,8 @@ f(z+1)=f(z),\qquad f(z+i)=e^{2\pi}f(z)
 for every $z\in\mathbb C$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -149,6 +151,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give exactly all solutions.
+
+:::
 
 :::
 
