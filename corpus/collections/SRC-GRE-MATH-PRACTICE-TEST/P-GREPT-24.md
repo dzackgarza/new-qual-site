@@ -25,6 +25,8 @@ A six-sided die (whose faces are numbered $1$ through $6$, as usual) is known to
 (E) Cannot be determined from the information given
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -115,6 +117,8 @@ conditions but giving different answers.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the literal answer to the question as stated.
+
+:::
 
 :::
 
