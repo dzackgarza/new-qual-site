@@ -20,6 +20,8 @@ Let $M$ be an $n$-manifold.
 Prove that $M$ is not a $k$-manifold for any $k\ne n$.
 :::
 
+::: {.solution}
+
 Fix
 \[
 x\in M.
@@ -296,6 +298,8 @@ Step [](#s1-11){.pf-ref} shows equality of dimensions is necessary.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
