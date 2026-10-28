@@ -26,6 +26,8 @@ Define linear operators $S$ and $T$ on the $xy$-plane ($\RR^2$) as follows: $S$ 
 (E) $ST = -TS$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ The two matrices in step [](#s1-2){.pf-ref} are negatives of one another. Equali
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the true relation.
+
+:::
 
 :::
 
