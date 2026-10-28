@@ -20,6 +20,8 @@ audit:
 Let \(f\) be analytic on the upper half-plane \(\{z:\operatorname{Im}z>0\}\). Suppose \(|f(z)|<1\) throughout the domain and \(f(i)=0\). Find the largest possible value of \(|f(2i)|\).
 :::
 
+::: {.solution}
+
 Let
 $$
 \phi(z)
@@ -258,6 +260,8 @@ Step [](#s1-5){.pf-ref} gives the universal upper bound and step [](#s1-6){.pf-r
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required extremal value.
+
+:::
 
 :::
 
