@@ -29,6 +29,8 @@ p\circ\widetilde f=f.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -241,6 +243,8 @@ was arbitrary. Step [](#s1-6){.pf-ref} therefore proves equality at every point 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-7){.pf-ref} proves uniqueness of a based lift.
+
+:::
 
 :::
 
