@@ -24,6 +24,8 @@ L_x(f)=f(x)
 is $\mathcal F$-measurable. Show that $\mathcal F$ contains all open sets.
 :::
 
+::: {.solution}
+
 Enumerate the dense set $\QQ\cap[0,1]$ as $q_1,q_2,\ldots$.
 
 ::: pf
@@ -176,6 +178,8 @@ The union is countable, and every member belongs to $\mathcal F$ by step [](#s1-
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
