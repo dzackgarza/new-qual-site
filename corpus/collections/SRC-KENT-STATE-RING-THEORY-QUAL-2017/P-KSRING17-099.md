@@ -19,6 +19,8 @@ audit:
 Prove that $\mathbb { Z } [ \sqrt { - 2 } ] = \{ a + b \sqrt { - 2 } \ | \ a , b \in \mathbb { Z } \}$ is a Euclidean domain.
 :::
 
+::: {.solution}
+
 Set
 $$
 D
@@ -475,6 +477,8 @@ Hence it is a Euclidean domain.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
