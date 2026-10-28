@@ -32,6 +32,8 @@ For each space and equivalence relation below, identify a familiar space homeomo
 4. Let $X=\mathbb R$ and let $\sim$ be the smallest equivalence relation satisfying $x\sim x+n$ for every $x\in\mathbb R$ and $n\in\mathbb Z$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -475,6 +477,8 @@ Collect steps [](#s1-3){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-8){.pf-ref}, an
 
 Step [](#s1-12){.pf-ref} gives all four requested quotient spaces, with the preceding
 steps proving the homeomorphisms.
+
+:::
 
 :::
 
