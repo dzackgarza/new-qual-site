@@ -17,6 +17,8 @@ Let $f:X\to Y$ be a homotopy equivalence.
 2. Prove that $f$ restricts to a homotopy equivalence from each path component of $X$ to its corresponding path component of $Y$.
 :::
 
+::: {.solution}
+
 Choose a homotopy inverse
 $$
 g:Y\to X
@@ -493,6 +495,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (1), and step [](#s1-11){.pf-ref} proves part (2).
+
+:::
 
 :::
 
