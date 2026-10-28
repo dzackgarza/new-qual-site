@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with identity and let U be maximal among non-principal ideals of R. Prove U is a prime ideal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -419,6 +421,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
