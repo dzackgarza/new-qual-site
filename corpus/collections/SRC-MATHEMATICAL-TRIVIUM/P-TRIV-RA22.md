@@ -19,6 +19,8 @@ audit:
 Find $\int _ { 0 } ^ { \pi ^ { 2 } } \cos { \sqrt { x } } d x .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -143,6 +145,8 @@ Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required value.
+
+:::
 
 :::
 
