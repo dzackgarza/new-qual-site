@@ -22,6 +22,8 @@ f(x)=x+\frac1x
 is continuous at $x=3$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ Thus the $\varepsilon$-$\delta$ condition for continuity at $3$ is satisfied.
 
 Step [](#s1-2){.pf-ref} proves directly from the definition that $f$ is continuous at
 $x=3$.
+
+:::
 
 :::
 
