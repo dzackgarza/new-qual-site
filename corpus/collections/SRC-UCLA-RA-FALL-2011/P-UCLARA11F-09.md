@@ -25,6 +25,8 @@ where $dA$ is two-dimensional Lebesgue measure.
 Show that $f$ extends holomorphically to the unit disc $\mathbb D$.
 :::
 
+::: {.solution}
+
 Since \(f\) is holomorphic on the punctured disk, it has a Laurent expansion
 \[
 \boxed{
@@ -369,6 +371,8 @@ The function \(\widetilde f\) from steps [](#s1-12){.pf-ref} through [](#s1-14){
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
