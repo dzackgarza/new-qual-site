@@ -15,6 +15,8 @@ review: draft
 Let $\{ b _ { n } \} _ { n = 1 } ^ { \infty }$ be a sequence of real numbers with bounded partial sums i.e., there is $M < \infty$ such that for all $N , | \sum _ { n = 1 } ^ { N } b _ { n } | \leq M$ , and let $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ be a sequence of positive numbers decreasing to 0. Prove the series $\sum a _ { n } b _ { n }$ converges.
 :::
 
+::: {.solution}
+
 Let
 \[
 B_n=\sum_{j=1}^n b_j,
@@ -167,6 +169,8 @@ The real numbers are complete, so the Cauchy criterion in step [](#s1-3){.pf-ref
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
