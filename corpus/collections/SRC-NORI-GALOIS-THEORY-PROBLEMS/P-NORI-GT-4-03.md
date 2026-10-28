@@ -21,6 +21,8 @@ Let R be a subring of a commutative ring S. Assume that S, when regarded as a R-
 Show that if S is an integral domain, then $\mathrm { N o r m } _ { R } ^ { S } ( \alpha ) \neq 0$
 :::
 
+::: {.solution}
+
 Let
 $$
 m_\alpha:S\to S,
@@ -127,6 +129,8 @@ Since this determinant is $\operatorname{Norm}_R^S(\alpha)$, the claim follows.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the divisibility assertion. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} resolve the second sentence literally and prove its intended form for every nonzero $\alpha$ in an integral domain $S$.
+
+:::
 
 :::
 
