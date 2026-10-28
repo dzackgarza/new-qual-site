@@ -21,6 +21,8 @@ Suppose $f\in L^2(\mathbb R)$ and $\widehat f(\xi)>0$ for almost every $\xi$.
 Show that the set of finite linear combinations of translates of $f$ is dense in $L^2(\mathbb R)$.
 :::
 
+::: {.solution}
+
 For $a\in\RR$, write
 $$
 (\tau_a f)(x)=f(x+a),
@@ -144,6 +146,8 @@ Step [](#s1-3){.pf-ref} gives $M^\perp=\{0\}$. By step [](#s1-1){.pf-ref}, $M=L^
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required density statement.
+
+:::
 
 :::
 
