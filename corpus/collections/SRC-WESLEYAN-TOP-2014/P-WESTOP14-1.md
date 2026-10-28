@@ -15,6 +15,8 @@ audit:
 2. Prove that the image of a compact space under a continuous map is compact.
 :::
 
+::: {.solution}
+
 Let $f:X\to Y$ be continuous.
 
 ::: pf
@@ -102,6 +104,8 @@ Step [](#s1-3){.pf-ref} proves that whenever $X$ is compact, its image $f(X)$ is
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} prove the two requested statements.
+
+:::
 
 :::
 
