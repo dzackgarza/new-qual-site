@@ -21,6 +21,8 @@ review: draft
 (c) The ideals of the form$\pi A$are the minimal elements in the set of nonzero prime ideals, ordered by inclusion, and they are the only nonzero principal prime ideals.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -136,6 +138,8 @@ so $a\mid x$ or $a\mid y$. Thus $a$ is a prime element. Therefore the ideal is o
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), step [](#s1-2){.pf-ref} proves part (b), and steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} prove part (c).
+
+:::
 
 :::
 
