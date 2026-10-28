@@ -19,6 +19,8 @@ audit:
 If there exists a division algebra on $\mathbb { R } ^ { n }$ , then $\mathbb { R } \mathbb { P } ^ { n - 1 }$ is orientable, hence $n = 2 ^ { r }$ , for some r.
 :::
 
+::: {.solution}
+
 Let $A$ be an $n$-dimensional real division algebra. Only bilinearity of multiplication and the absence of zero divisors are needed.
 
 ::: pf
@@ -177,6 +179,8 @@ Orientability is step [](#s1-5){.pf-ref}, and the power-of-two restriction is st
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
