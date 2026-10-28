@@ -29,6 +29,8 @@ on the set $S=\{1,2,3,4,5,6\}$?
 (E) $6$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ This is the value computed in step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested order.
+
+:::
 
 :::
 
