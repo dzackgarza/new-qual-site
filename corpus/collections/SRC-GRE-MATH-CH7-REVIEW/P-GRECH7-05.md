@@ -25,6 +25,8 @@ A fair die is tossed twice. About how many times would you expect to roll 3 or g
 (E) $0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -86,6 +88,8 @@ The distance from $4/3$ to $3/2$ is $1/6$, while its distance to $1$ is $1/3$, a
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested approximate expected number.
+
+:::
 
 :::
 
