@@ -14,6 +14,8 @@ audit:
 Explain the covering-space proof of the fundamental group of the circle $S^1$, formulating the proof as generally as possible without asserting more generality than the argument supports.
 :::
 
+::: {.solution}
+
 Use the covering map
 $$
 p:\mathbb R\to S^1,
@@ -525,6 +527,8 @@ and translation invariance of the covering makes concatenation correspond to add
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} computes the fundamental group of the circle, and step [](#s1-9){.pf-ref} states exactly the general covering-space mechanism used in the proof without claiming more structure on a general fiber than the argument supplies.
+
+:::
 
 :::
 
