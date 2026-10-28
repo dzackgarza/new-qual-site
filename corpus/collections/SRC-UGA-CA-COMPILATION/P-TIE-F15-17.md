@@ -28,6 +28,8 @@ $$
 (Note that in general the area of $f ( D _ { 1 } )$ is infinite.)
 :::
 
+::: {.solution}
+
 Fix $0<r<1$ and write
 $$
 D_r\coloneqq\{z:\abs{z}<r\}.
@@ -222,6 +224,8 @@ By step [](#s1-2){.pf-ref}, this integral is exactly the area $S$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the stated formula, and step [](#s1-5){.pf-ref} gives finiteness.
+
+:::
 
 :::
 
