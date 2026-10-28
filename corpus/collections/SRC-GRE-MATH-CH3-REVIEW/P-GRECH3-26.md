@@ -33,6 +33,8 @@ as $t$ increases from $0$ to $\frac{\pi}{2}$. Evaluate the integral:
 (E) $2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested integral value and corresponding choice.
+
+:::
 
 :::
 
