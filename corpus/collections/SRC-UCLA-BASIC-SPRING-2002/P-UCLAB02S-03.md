@@ -26,6 +26,8 @@ has a convergent subsequence.
 Do not merely quote a theorem asserting the result.
 :::
 
+::: {.solution}
+
 Let
 \[
 (x_n)_{n\ge1}
@@ -191,6 +193,8 @@ Hence some convergent subsequence must exist.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves directly from open-cover compactness that every sequence in $X$ has a convergent subsequence.
+
+:::
 
 :::
 
