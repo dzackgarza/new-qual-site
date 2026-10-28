@@ -20,6 +20,8 @@ audit:
 If $f(z) = (2x + 3y) + i\,g(x, y)$ is analytic and $g(2, 3) = 1$, what is $g(x, y)$?
 :::
 
+::: {.solution}
+
 Let
 \[
 u(x,y)=2x+3y,
@@ -138,6 +140,8 @@ Substitute the value of $C$ from step [](#s1-3){.pf-ref} into the formula from s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required harmonic conjugate.
+
+:::
 
 :::
 
