@@ -31,6 +31,8 @@ P ( | \xi | \geqslant x ) \leqslant x ^ { - m } \mathbf { E } | \xi | ^ { m } , 
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -109,6 +111,8 @@ Apply the Markov inequality proved in step [](#s1-2){.pf-ref} to the nonnegative
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b). Neither argument requires $\xi$ to have a continuous distribution.
+
+:::
 
 :::
 
