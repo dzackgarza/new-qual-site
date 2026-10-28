@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = e ^ { 3 t } \mathrm { w i t h } y ( 0 ) = 1 , y ^ { \prime } ( 0 ) = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -229,6 +231,8 @@ Substitute the constants from step [](#s1-9){.pf-ref} into step [](#s1-5){.pf-re
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} satisfies both the differential equation and the two initial conditions.
+
+:::
 
 :::
 
