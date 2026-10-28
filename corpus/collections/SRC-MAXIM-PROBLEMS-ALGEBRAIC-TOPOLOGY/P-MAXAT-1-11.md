@@ -24,6 +24,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 All homology and cohomology groups in the proof have integral coefficients.
 
 ::: pf
@@ -208,6 +210,8 @@ The two cases are steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required dichotomy.
+
+:::
 
 :::
 
