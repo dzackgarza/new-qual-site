@@ -20,6 +20,8 @@ audit:
 Find the conformal map that takes the upper half-plane comformally onto the half-strip $\{ w = x + i y : \ - \pi / 2 < x < \pi / 2 \ y > 0 \}$
 :::
 
+::: {.solution}
+
 Let
 $$
 S
@@ -320,6 +322,8 @@ This inverse is precisely the indicated branch of the inverse sine.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested conformal map.
+
+:::
 
 :::
 
