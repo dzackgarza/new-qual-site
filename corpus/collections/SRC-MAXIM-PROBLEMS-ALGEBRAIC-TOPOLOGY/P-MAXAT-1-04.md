@@ -20,6 +20,8 @@ Show that $\mathbb { C P } ^ { 2 } \# \mathbb { C P } ^ { 2 }$ cannot be the bou
 However, it is the boundary of a non-orientable manifold.
 :::
 
+::: {.solution}
+
 Put
 \[
 M=\mathbb{CP}^2\#\mathbb{CP}^2
@@ -159,6 +161,8 @@ The nonexistence of an orientable bounding manifold is step [](#s1-3){.pf-ref}, 
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves both assertions.
+
+:::
 
 :::
 
