@@ -24,6 +24,8 @@ Prove, without merely quoting the rank-nullity theorem, that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -183,6 +185,8 @@ Adding gives $n$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the desired formula without invoking rank-nullity as a black box.
+
+:::
 
 :::
 
