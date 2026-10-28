@@ -18,6 +18,8 @@ ab^{-1}cdc^{-1}bd^{-1}a.
 Find the fundamental group and first homology group of the resulting surface, and identify the surface in the standard classification.
 :::
 
+::: {.solution}
+
 Label the octagon vertices cyclically by
 \[
 v_0,v_1,\dots,v_7,
@@ -513,6 +515,8 @@ This is the group in step [](#s1-21){.pf-ref} written in standard form.
 Step [](#s1-17){.pf-ref} gives a presentation of the fundamental group, step [](#s1-22){.pf-ref} gives
 the first homology group, and step [](#s1-11){.pf-ref} identifies the surface as
 \(\#^3\mathbb{RP}^2\).
+
+:::
 
 :::
 
