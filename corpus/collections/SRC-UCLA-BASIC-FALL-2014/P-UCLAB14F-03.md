@@ -20,6 +20,8 @@ audit:
 Problem 3. Let $f_n:[0,1]\to\mathbb R$ be monotonically increasing continuous functions. Assume that $f_n$ converge pointwise to a continuous function $f:[0,1]\to\mathbb R$. Prove that $f_n$ converge uniformly to $f$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -239,6 +241,8 @@ Step [](#s1-6){.pf-ref} is exactly the definition of uniform convergence.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
