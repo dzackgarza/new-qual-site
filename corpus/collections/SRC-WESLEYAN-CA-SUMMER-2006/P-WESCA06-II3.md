@@ -35,6 +35,8 @@ f,g\in C(\overline D)
 \]
 and are holomorphic on $D$.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -372,6 +374,8 @@ has the same maximal value.
 Step [](#s1-1){.pf-ref} records the defect in the literal source statement.
 Steps [](#s1-2){.pf-ref} through [](#s1-10){.pf-ref} prove the corrected theorem using the source's
 phase-alignment hint.
+
+:::
 
 :::
 
