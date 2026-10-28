@@ -25,6 +25,8 @@ $$
 and show that if $y _ { 1 }$ is a solution to this equation, then also $\begin{array} { r } { y _ { 2 } = y _ { 1 } \int ^ { x } d s \frac { e ^ { - \int ^ { s } d t P ( t ) } } { [ y _ { 1 } ( s ) ] ^ { 2 } } } \end{array}$ is.
 :::
 
+::: {.solution}
+
 Work on an interval on which $y_1$ does not vanish, and define
 \[
 v(x)=\int^x\frac{e^{-\int^sP(t)\,dt}}{y_1(s)^2}\,ds,
@@ -112,6 +114,8 @@ Step [](#s1-1){.pf-ref} therefore gives $y_2''+Py_2'+Qy_2=0$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the asserted reduction-of-order formula on every interval where its integrand is defined.
+
+:::
 
 :::
 
