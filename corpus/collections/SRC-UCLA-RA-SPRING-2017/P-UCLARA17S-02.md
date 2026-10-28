@@ -20,6 +20,8 @@ audit:
 Let $f_n:[0,1]\to[0,\infty)$ be a sequence of functions, each non-decreasing on $[0,1]$. Suppose the sequence is uniformly bounded in $L^2([0,1])$. Show that there exists a subsequence that converges in $L^1([0,1])$.
 :::
 
+::: {.solution}
+
 Choose $C\ge0$ such that
 $$
 \|f_n\|_{L^2([0,1])}\le C
@@ -201,6 +203,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} constructs the required $L^1$-convergent subsequence.
+
+:::
 
 :::
 
