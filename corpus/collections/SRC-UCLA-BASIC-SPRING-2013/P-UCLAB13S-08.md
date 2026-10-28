@@ -27,6 +27,8 @@ Let $T$ be a linear transformation from a finite-dimensional inner-product space
 (d) Use (b) and (c) to show that the row rank of a matrix equals its column rank.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -338,6 +340,8 @@ This proves part (d).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-3){.pf-ref} proves part (b), step [](#s1-6){.pf-ref} proves part (c), and step [](#s1-9){.pf-ref} proves part (d).
+
+:::
 
 :::
 
