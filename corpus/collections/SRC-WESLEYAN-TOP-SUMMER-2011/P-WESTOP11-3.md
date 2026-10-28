@@ -15,6 +15,8 @@ audit:
 2. Use Zorn's Lemma to prove that every commutative ring with identity $1\ne0$ has a maximal ideal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -319,6 +321,8 @@ Step [](#s1-7){.pf-ref} constructs one.
 
 Step [](#s1-1){.pf-ref} states Zorn's Lemma, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} apply it to prove the
 maximal-ideal theorem.
+
+:::
 
 :::
 
