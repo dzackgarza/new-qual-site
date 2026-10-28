@@ -22,6 +22,8 @@ exists for every $x\in[a,b]$ and is continuous on $[a,b]$.
 Prove that $f_n\to f$ uniformly.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -259,6 +261,8 @@ $$
 \abs{f_{n_k}(x_k)-f(x_k)}\ge\varepsilon
 $$
 from step [](#s1-1){.pf-ref}. Therefore $f_n\to f$ uniformly on $[a,b]$.
+
+:::
 
 :::
 
