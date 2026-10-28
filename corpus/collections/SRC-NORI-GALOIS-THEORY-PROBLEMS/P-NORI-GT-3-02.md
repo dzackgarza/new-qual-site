@@ -19,6 +19,8 @@ audit:
 For which primes p is there some $1 \neq \omega \in \mathbb { F } _ { p }$ such that $\omega ^ { 3 } = 1$ . For such a prime $p ,$ how many elements are there in a splitting field of $X ^ { p } - \omega X \in \mathbb { F } _ { p } [ X ]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -253,6 +255,8 @@ Steps [](#s1-10){.pf-ref} through [](#s1-12){.pf-ref} identify the splitting fie
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the primes, and step [](#s1-13){.pf-ref} gives the size of the splitting field for each such prime.
+
+:::
 
 :::
 
