@@ -34,6 +34,8 @@ n(\overline\gamma,\overline z)=-n(\gamma,z).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -464,6 +466,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} solves part (a), step [](#s1-6){.pf-ref} solves part (b), and step [](#s1-10){.pf-ref} proves part (c).
+
+:::
 
 :::
 
