@@ -44,6 +44,8 @@ is one of the eight signed permutation matrices.
 Also find homeomorphisms $f$ realizing all eight possibilities.
 :::
 
+::: {.solution}
+
 Let
 \[
 X=S^n\times S^n,
@@ -549,6 +551,8 @@ The diagonal four are realized in step [](#s1-16){.pf-ref} and the off-diagonal 
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} proves the restriction on the matrix, and step [](#s1-21){.pf-ref} realizes all eight possibilities.
+
+:::
 
 :::
 
