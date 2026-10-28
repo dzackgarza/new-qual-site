@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\alpha _ { 1 } , \cdots , \alpha _ { n }$ be complex numbers, and $\begin{array} { r } { V = \{ \sum _ { i = 1 } ^ { n } a _ { i } \alpha _ { i } | a _ { i } \in \mathbb { Q } \} } \end{array}$ be the vector subspace of C spanned by them over the field of rational numbers, $\mathbb { Q }$ . Let $\beta$ be a complex number such that $\beta V \subset V$ where $\beta V = \{ \beta v | v \in V \}$ Show that $\beta$ is the root of a degree n polynomial with rational coefficients.
+Let $\alpha_1, \ldots, \alpha_n$ be complex numbers, and $V = \{\sum_{i=1}^n a_i \alpha_i \mid a_i \in \QQ\}$ be the vector subspace of $\CC$ spanned by them over the field of rational numbers, $\QQ$. Let $\beta$ be a complex number such that $\beta V \subset V$, where $\beta V = \{\beta v \mid v \in V\}$. Show that $\beta$ is the root of a degree $n$ polynomial with rational coefficients.
 :::
 
 ::: {.remark}
