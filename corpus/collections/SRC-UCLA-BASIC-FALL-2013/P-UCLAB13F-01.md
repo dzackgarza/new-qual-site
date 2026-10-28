@@ -24,6 +24,8 @@ Prove that $\lim_{n\to\infty}P_n$ exists and is a nonzero real number if and onl
 \]
 :::
 
+::: {.solution}
+
 Since every $a_n>0$, one has
 \[
 P_n>0
@@ -283,6 +285,8 @@ Step [](#s1-3){.pf-ref} proves the forward construction from convergence of $\su
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
