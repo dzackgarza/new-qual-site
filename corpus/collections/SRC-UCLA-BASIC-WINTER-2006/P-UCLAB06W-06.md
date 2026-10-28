@@ -20,6 +20,8 @@ Let $-\infty<a<b<\infty$.
 Prove that a continuous function $f:[a,b]\to\mathbb R$ attains all values in $[f(a),f(b)]$.
 :::
 
+::: {.solution}
+
 Let $c$ be any real number lying between $f(a)$ and $f(b)$. If $c=f(a)$ or $c=f(b)$ there is nothing to prove, so assume $c$ lies strictly between the endpoint values. After exchanging $a$ and $b$ in the argument if necessary, assume
 $$
 f(a)<c<f(b).
@@ -133,6 +135,8 @@ Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give both inequalities $f(s)\le 
 ::: pf-qed
 
 The value $c$ was arbitrary between $f(a)$ and $f(b)$. Step [](#s1-5){.pf-ref} therefore shows that $f$ attains every intermediate value. If $f(b)<f(a)$, the same argument applies after reversing the endpoint roles.
+
+:::
 
 :::
 
