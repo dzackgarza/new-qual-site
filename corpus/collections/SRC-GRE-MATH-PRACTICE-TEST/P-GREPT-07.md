@@ -25,6 +25,8 @@ Let $f(x, y) = xy(x - y)$, where $x(t, u) = t(t - u)$ and $y(t, u) = u(u - t)$. 
 (E) $8$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
