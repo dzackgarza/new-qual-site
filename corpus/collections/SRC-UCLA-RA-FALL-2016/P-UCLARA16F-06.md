@@ -36,6 +36,8 @@ With this dual pairing, $\ell^\infty=(\ell^1)^*$ is the dual space of $\ell^1$.
 (b) Show that every weakly convergent sequence $\{u_n\}$ in $\ell^1$ converges in the norm topology of $\ell^1$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Suppose, toward a contradiction, that
@@ -569,6 +571,8 @@ This is step [](#s1-22){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
+
+:::
 
 :::
 
