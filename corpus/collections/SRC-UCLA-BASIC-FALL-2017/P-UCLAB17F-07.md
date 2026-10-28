@@ -23,6 +23,8 @@ Let $(a_n)$ be a non-increasing sequence of positive real numbers with $\sum_{n=
 \]
 :::
 
+::: {.solution}
+
 For each $n\ge2$, set
 \[
 m_n=\left\lfloor\frac n2\right\rfloor.
@@ -195,6 +197,8 @@ The squeeze theorem gives the conclusion.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required limit.
+
+:::
 
 :::
 
