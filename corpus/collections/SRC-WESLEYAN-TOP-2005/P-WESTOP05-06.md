@@ -18,6 +18,8 @@ Given a pointed space $(X,x_0)$, define the fundamental group
 and sketch the proof that the resulting set of homotopy classes is in fact a group.
 :::
 
+::: {.solution}
+
 Let
 \[
 I=[0,1].
@@ -470,6 +472,8 @@ Closure and well-definedness are steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-
 
 Step [](#s1-18){.pf-ref} proves that the homotopy classes of based loops form the
 fundamental group.
+
+:::
 
 :::
 
