@@ -51,6 +51,8 @@ end
 ```
 :::
 
+::: {.solution}
+
 ## Part (A)
 
 ::: pf
@@ -446,6 +448,8 @@ These are the printed values from steps [](#s1-13){.pf-ref} through [](#s1-15){.
 
 Steps [](#s1-6){.pf-ref} and [](#s1-12){.pf-ref}, and [](#s1-17){.pf-ref} give the outputs of (A), (B), and (C),
 respectively.
+
+:::
 
 :::
 
