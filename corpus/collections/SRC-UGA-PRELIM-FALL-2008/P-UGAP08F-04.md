@@ -31,6 +31,8 @@ A^{19}.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -158,6 +160,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves diagonalizability, and step [](#s1-4){.pf-ref} computes $A^{19}$.
+
+:::
 
 :::
 
