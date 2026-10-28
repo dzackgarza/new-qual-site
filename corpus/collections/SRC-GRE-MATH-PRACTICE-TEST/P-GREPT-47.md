@@ -25,6 +25,8 @@ The curves $y = (\sin x + \cos x)^4$ and $y = (\sin x - \cos x)^4$ intersect at 
 (E) $2\pi$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required area.
+
+:::
 
 :::
 
