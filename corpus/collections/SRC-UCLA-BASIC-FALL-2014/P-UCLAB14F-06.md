@@ -26,6 +26,8 @@ Problem 6. Let $f:[0,1]\to\mathbb R$ be a $C^1$ function. Prove that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -179,6 +181,8 @@ By step [](#s1-3){.pf-ref}, the left side is exactly the sequence of tagged Riem
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required identity.
+
+:::
 
 :::
 
