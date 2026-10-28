@@ -31,6 +31,8 @@ Show that $\mathcal{B}$ becomes a *complete* space when equipped with the norm
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 d\mu(z)=e^{-|z|^2}\,dA(z),
@@ -291,6 +293,8 @@ subspace of the Hilbert space $L^2(\mu)$ and is itself complete.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
