@@ -26,6 +26,8 @@ for all $(x,y)$ in some sufficiently small neighborhood of $(0,0)$, where $C$ ma
 Then prove this estimate.
 :::
 
+::: {.solution}
+
 Define
 \[
 \boxed{
@@ -222,6 +224,8 @@ Step [](#s1-6){.pf-ref} proves the required estimate with
 \[
 C=\frac{\sqrt2\,B}{3}.
 \]
+
+:::
 
 :::
 
