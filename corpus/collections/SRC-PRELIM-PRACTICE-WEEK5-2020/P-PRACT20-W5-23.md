@@ -22,6 +22,8 @@ If $f$ is an entire function which maps the complex plane into the real axis, th
 (a) the point $0$ (b) any arbitrary point in $\RR$ (c) a half line (i.e., a set $(a, \infty)$ or $(-\infty, a)$) (d) the whole real line
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -88,6 +90,8 @@ This follows immediately from the singleton classification in step [](#s1-2){.pf
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} settles the alternatives.
+
+:::
 
 :::
 
