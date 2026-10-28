@@ -29,6 +29,8 @@ f(x):=\lim_{n\to\infty}f_n(x)
 exists and compute its value.
 :::
 
+::: {.solution}
+
 Define the operator
 \[
 (K\varphi)(x)
@@ -428,6 +430,8 @@ Step [](#s1-4){.pf-ref} gives convergence of $f_n$ to $f$, and step [](#s1-10){.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required pointwise limit and its value.
+
+:::
 
 :::
 
