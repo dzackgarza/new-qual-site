@@ -18,6 +18,8 @@ Let $(X_i)_{i\in I}$ be a family of topological spaces.
 3. Give, with justification, a sequence that converges in the product topology but not in the uniform or box topologies.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -414,6 +416,8 @@ in the box topology.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the three topology definitions, steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the characteristic property of the product topology, and steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give the requested sequence and verify all three convergence claims.
+
+:::
 
 :::
 
