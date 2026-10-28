@@ -28,6 +28,8 @@ Show that
 (b) Show by example that the converse is false.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -139,6 +141,8 @@ Thus the Cesàro means converge although the original sequence does not.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} gives the counterexample required in part (b).
+
+:::
 
 :::
 
