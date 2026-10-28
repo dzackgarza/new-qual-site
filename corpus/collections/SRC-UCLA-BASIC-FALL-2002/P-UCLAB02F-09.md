@@ -20,6 +20,8 @@ Let $V$ be a complex inner product space.
 State and prove the Cauchy--Schwarz inequality.
 :::
 
+::: {.solution}
+
 Use the convention that the inner product is linear in its first argument and conjugate-linear in its second.
 
 ::: pf
@@ -195,6 +197,8 @@ Thus equality is equivalent to linear dependence.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the Cauchy--Schwarz inequality, and step [](#s1-7){.pf-ref} gives its equality criterion.
+
+:::
 
 :::
 
