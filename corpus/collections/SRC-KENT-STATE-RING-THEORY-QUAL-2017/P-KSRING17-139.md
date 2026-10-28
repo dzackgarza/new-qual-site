@@ -20,6 +20,8 @@ Let P be a nonzero prime ideal of the commutative Noetherian domain R. Assume P 
 Prove that there does not exist a prime ideal Q satisfying $( 0 ) < Q < P$
 :::
 
+::: {.solution}
+
 Write
 $$
 P=(p)
@@ -403,6 +405,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
