@@ -17,6 +17,8 @@ audit:
 Let $A$ be an endomorphism of a vector space $V$ of dimension $d$ over a field $F$. Show from first principles, without using Jordan form or the Cayley–Hamilton theorem, that $A$ satisfies a polynomial $P(X)\in F[X]$ of degree at most $d$.
 :::
 
+::: {.solution}
+
 The proof is by induction on
 \[
 d=\dim V.
@@ -340,6 +342,8 @@ r+(d-r)
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-10){.pf-ref} prove by induction that every endomorphism of a $d$-dimensional vector space satisfies a polynomial of degree at most $d$, without using Jordan form or Cayley--Hamilton.
+
+:::
 
 :::
 
