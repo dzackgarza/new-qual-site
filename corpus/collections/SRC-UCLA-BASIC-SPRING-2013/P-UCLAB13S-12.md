@@ -27,6 +27,8 @@ Prove that
 Be careful to give a complete proof.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -228,6 +230,8 @@ The left side becomes $\pi$ by definition, while the right side is
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required Gregory series for $\pi$.
+
+:::
 
 :::
 
