@@ -19,6 +19,8 @@ audit:
 [CORRECTED] Show that if R is a commutative ring with 1 that is not a field, then $R [ x ]$ is not a principal ideal domain.
 :::
 
+::: {.solution}
+
 We prove the contrapositive.
 Assume
 $$
@@ -328,6 +330,8 @@ This is the contrapositive of step [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
