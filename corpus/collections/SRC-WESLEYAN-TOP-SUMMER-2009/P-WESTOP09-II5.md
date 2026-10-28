@@ -19,6 +19,8 @@ Consider the commutative diagram in the source, whose two rows are exact. The ve
 The objects and horizontal-map labels in the diagram are unrecovered from the retained Markdown extraction.
 :::
 
+::: {.solution}
+
 Write the two exact rows abstractly as
 \[
 A\xrightarrow{f}B\xrightarrow{g}C\xrightarrow{h}D
@@ -343,6 +345,8 @@ Thus
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is exactly the desired injectivity.
+
+:::
 
 :::
 
