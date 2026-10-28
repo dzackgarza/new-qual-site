@@ -25,6 +25,8 @@ $$\lim_{x \to 0} \frac{\sqrt{x + 1} - 1}{x} =$$
 (E) $\infty$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -77,6 +79,8 @@ because the simplified denominator is continuous at $x=0$ and nonzero there.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the required limit.
+
+:::
 
 :::
 
