@@ -24,6 +24,8 @@ b. Suppose that $\alpha \in \bar F$ satisfies $\alpha^{17} = 1$ and $\alpha\neq 
 Show that $F(\alpha)/F$ has degree 8.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -73,6 +75,8 @@ Conversely, $2^8\equiv1\pmod{17}$ implies that every root of $x^{17}-1$ belongs 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
