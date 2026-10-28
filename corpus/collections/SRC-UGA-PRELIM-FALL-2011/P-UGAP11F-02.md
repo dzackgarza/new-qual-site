@@ -25,6 +25,8 @@ Find an invertible matrix $A$ and a diagonal matrix $B$ such that
 \]
 :::
 
+::: {.solution}
+
 Let
 $$
 M=
@@ -194,6 +196,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} provide the requested matrices and verify the similarity relation.
+
+:::
 
 :::
 
