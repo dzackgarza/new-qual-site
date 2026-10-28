@@ -20,6 +20,8 @@ Let $U\subseteq\mathbb C$ be open.
 Define what it means for a function $f:U\to\mathbb C$ to be uniformly continuous on $U$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -56,6 +58,8 @@ In pointwise continuity the permissible $\delta$ may depend on the base point. U
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested definition.
+
+:::
 
 :::
 
