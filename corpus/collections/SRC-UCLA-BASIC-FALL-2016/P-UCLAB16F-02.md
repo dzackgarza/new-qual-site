@@ -31,6 +31,8 @@ $$
 for all $x \in \mathbb { R } ^ { 2 }$ . Here $\| z \|$ denotes the usual (Pythagorean/Euclidean) length of the vector $z \in \mathbb { R } ^ { 2 }$ .
 :::
 
+::: {.solution}
+
 Write
 \[
 A=2I+N,
@@ -261,6 +263,8 @@ The operator norm is attained on a unit eigenvector of $M^TM$ for its largest ei
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required optimal constant.
+
+:::
 
 :::
 
