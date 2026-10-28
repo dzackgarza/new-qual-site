@@ -19,6 +19,8 @@ audit:
 $\mathbb { C P } ^ { n }$ cannot be expressed non-trivially as a product of complex manifolds.
 :::
 
+::: {.solution}
+
 In fact, the stronger topological statement holds: for $n>0$, $\mathbb{CP}^n$ is not homotopy equivalent to a product $X\times Y$ of two connected positive-dimensional closed manifolds. Hence it cannot be biholomorphic to a nontrivial product of complex manifolds.
 
 ::: pf
@@ -158,6 +160,8 @@ The contradiction in step [](#s1-5){.pf-ref} disproves the assumption in step []
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required indecomposability statement.
+
+:::
 
 :::
 
