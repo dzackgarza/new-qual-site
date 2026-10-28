@@ -29,6 +29,8 @@ and
 Prove, without merely quoting a theorem, that $f_n\to0$ uniformly on $[0,1]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -211,6 +213,8 @@ This is uniform convergence to zero.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
