@@ -27,6 +27,8 @@ Prove that $B$ is a free $A$-module with basis (as the image in $B$) of the mono
 Prove this for $n = 3$.
 :::
 
+::: {.solution}
+
 Write
 $$
 f_0(T)=f(T)=T^n-a_1T^{n-1}+\cdots+(-1)^n a_n.
@@ -308,6 +310,8 @@ The first extension has basis $1,x_1,x_1^2$ and the second has basis $1,x_2$, gi
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the general statement, and step [](#s1-9){.pf-ref} gives the requested case $n=3$ explicitly.
+
+:::
 
 :::
 
