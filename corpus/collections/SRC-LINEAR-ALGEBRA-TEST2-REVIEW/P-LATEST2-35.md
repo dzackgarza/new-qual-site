@@ -31,6 +31,8 @@ Find the rank of
 (A) $1$  (B) $2$  (C) $3$  (D) $4$  (E) $5$
 :::
 
+::: {.solution}
+
 Let the rows be $r_1,\ldots,r_5$, and set
 $$
 u=(1,1,1,1,1).
@@ -137,6 +139,8 @@ This is answer choice $\boxed{\text{(B)}}$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required rank.
+
+:::
 
 :::
 
