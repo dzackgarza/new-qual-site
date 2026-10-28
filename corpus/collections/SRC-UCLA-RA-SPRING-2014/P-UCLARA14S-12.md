@@ -24,6 +24,8 @@ f(z)=z^6+i z^4+1
 in the open upper half-plane.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ zeros.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested count.
+
+:::
 
 :::
 
