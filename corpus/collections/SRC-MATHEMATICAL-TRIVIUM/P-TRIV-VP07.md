@@ -20,6 +20,8 @@ Consider the functional $J [ f ] = \iint d x d y \left[ \left( { \frac { \partia
 Write the equation for f, whose solution in a class of functions $f \in C ^ { 2 } ( \bar { D } )$ , satisfying the boundary condition $f ( x , y ) | _ { \partial D } = f _ { 0 } ( x , y )$ , is an extremum of $J [ f ]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -254,6 +256,8 @@ $\eta=0$ on the boundary and $D$ is connected, the constant is zero.
 
 Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the required Euler--Lagrange equation, and steps
 [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} identify its solution as the Dirichlet-energy minimizer.
+
+:::
 
 :::
 
