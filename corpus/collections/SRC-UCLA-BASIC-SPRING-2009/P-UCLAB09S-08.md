@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let $M_{n\times n}(\mathbb R)$ be the vector space of real $n\times n$ matrices.
+Let $M_{n\times n}(\mathbb R)$ be the vector space of real $n\times n$ matrices.
 
 (a) Prove that
 \[
