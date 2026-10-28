@@ -24,6 +24,8 @@ Let $X$ be the set of all infinite sequences $(\sigma_n)_{n=1}^{\infty}$ of $0$'
 Give a direct proof that every infinite subset of $X$ has an accumulation point.
 :::
 
+::: {.solution}
+
 Let $A\subseteq X$ be infinite.
 
 ::: pf
@@ -94,6 +96,8 @@ Let $\varepsilon>0$. Choose $n$ so large that $2^{-n}<\varepsilon$. By step [](#
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves that every infinite subset $A\subseteq X$ has an accumulation point.
+
+:::
 
 :::
 
