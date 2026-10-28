@@ -24,6 +24,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Define
 \[
 C=I-A-B.
@@ -205,6 +207,8 @@ This is exactly step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
