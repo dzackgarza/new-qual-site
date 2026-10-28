@@ -32,6 +32,8 @@ then $w$ could equal
 (E) $\sqrt{2x + 3y}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ Hence step [](#s1-2){.pf-ref} applies.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies a listed solution of the given PDE.
+
+:::
 
 :::
 
