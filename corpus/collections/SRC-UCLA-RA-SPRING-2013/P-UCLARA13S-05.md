@@ -31,6 +31,8 @@ with inner product
 (b) Compute its norm.
 :::
 
+::: {.solution}
+
 Let
 \[
 T:H\to\mathbb R,
@@ -287,6 +289,8 @@ so the upper bound is attained.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves boundedness in part (a), and step [](#s1-7){.pf-ref} gives the exact norm required in part (b).
+
+:::
 
 :::
 
