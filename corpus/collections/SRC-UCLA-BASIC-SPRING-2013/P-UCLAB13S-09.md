@@ -30,6 +30,8 @@ together with some diagonal entries equal to $1$ or $-1$.
 (b) Use part (a) to show that if $n$ is odd, then there is a nonzero vector $v$ such that $A^2v=v$.
 :::
 
+::: {.solution}
+
 Regard the real matrix $A$ as a complex matrix acting on $\mathbb C^n$.
 
 ::: pf
@@ -431,6 +433,8 @@ This proves part (b).
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} proves part (a), and step [](#s1-12){.pf-ref} proves part (b).
+
+:::
 
 :::
 
