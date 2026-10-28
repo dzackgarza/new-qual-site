@@ -17,6 +17,8 @@ For a space $X$, define its suspension $\Sigma X$ as the quotient of $X\times I$
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 q:X\times I\to\Sigma X
@@ -316,6 +318,8 @@ and intersect nontrivially, and step [](#s1-13){.pf-ref} gives trivial fundament
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the requested computation.
+
+:::
 
 :::
 
