@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } ( x ) - 3 y ^ { \prime } ( x ) + 2 y ( x ) = \delta ( x - 1 )$ with $y ( 0 ) = 0$ and $y ( 1 ) = 1$
 :::
 
+::: {.solution}
+
 Interpret the equation distributionally on the real line and require $y$ to be continuous at $x=1$.
 
 ::: pf
@@ -137,6 +139,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the two homogeneous branche
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} satisfies the differential equation distributionally and both prescribed values.
+
+:::
 
 :::
 
