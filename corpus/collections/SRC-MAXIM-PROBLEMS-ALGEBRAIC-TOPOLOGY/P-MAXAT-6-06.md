@@ -19,6 +19,8 @@ audit:
 Show that $\mathbb { R } \mathbb { P } ^ { 2 k + 1 }$ cannot be a boundary.
 :::
 
+::: {.solution}
+
 The literal statement is false.
 In fact every odd-dimensional real projective space is a boundary.
 The standard nonboundary statement is the even-dimensional one.
@@ -311,6 +313,8 @@ Step [](#s1-8){.pf-ref} says it equals $1$, a contradiction.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} refute the literal source statement by constructing a bounding manifold for every $\mathbb{RP}^{2k+1}$.
 Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} prove the standard corrected even-dimensional statement.
+
+:::
 
 :::
 
