@@ -27,6 +27,8 @@ f(A)=\{f(x):x\in A\}.
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 f:\mathbb R\to\mathbb R
@@ -375,6 +377,8 @@ By step [](#s1-9){.pf-ref}, \(f(A_0)\) is Borel. By step [](#s1-12){.pf-ref}, \(
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
