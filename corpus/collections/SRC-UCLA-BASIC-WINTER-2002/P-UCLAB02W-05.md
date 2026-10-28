@@ -24,6 +24,8 @@ Define what it means for $f$ to be differentiable at a point $x\in U$.
 (c) Prove the Chain Rule you stated in part (b).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -226,6 +228,8 @@ Since $BA:\RR^n\to\RR^m$ is linear, step [](#s1-1){.pf-ref} identifies it as the
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b), and step [](#s1-7){.pf-ref} proves the Chain Rule required in part (c).
+
+:::
 
 :::
 
