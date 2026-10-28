@@ -19,6 +19,8 @@ audit:
 Find $f ^ { ( 1 0 0 ) } ( 0 )$ , if $f ( x ) = ( x ^ { 1 0 0 } + x ) e ^ { 1 0 0 x }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -150,6 +152,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required value.
+
+:::
 
 :::
 
