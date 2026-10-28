@@ -24,6 +24,8 @@ z\mapsto F(z,z)
 is holomorphic.
 :::
 
+::: {.solution}
+
 Define
 \[
 f(z)=F(z,z).
@@ -233,6 +235,8 @@ The center \(z_0\) was arbitrary, and one may choose any \(R>0\). Step
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
