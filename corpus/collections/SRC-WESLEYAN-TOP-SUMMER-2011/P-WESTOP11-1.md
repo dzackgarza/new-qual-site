@@ -26,6 +26,8 @@ Then state:
 4. the Tietze Extension Theorem.
 :::
 
+::: {.solution}
+
 Throughout, the separation axioms below do **not** build the $T_1$ condition
 into the words “regular” or “normal”; whenever $T_1$ is needed, it is stated
 separately.
@@ -289,6 +291,8 @@ and then undoing that homeomorphism.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} give the four requested definitions, and
 steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} state the four requested theorems.
+
+:::
 
 :::
 
