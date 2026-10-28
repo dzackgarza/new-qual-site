@@ -19,6 +19,8 @@ audit:
 Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { 1 } \to S ^ { 2 }$ and $S ^ { 1 } \to \mathbb { C P } ^ { n }$
 :::
 
+::: {.solution}
+
 Write
 \[
 LX
@@ -420,6 +422,8 @@ and step [](#s1-6){.pf-ref} computes the cohomology of
 \[
 \operatorname{Map}(S^1,\mathbb{CP}^n).
 \]
+
+:::
 
 :::
 
