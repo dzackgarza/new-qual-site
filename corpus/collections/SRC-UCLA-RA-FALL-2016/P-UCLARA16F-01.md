@@ -32,6 +32,8 @@ Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ suc
 Show that $\lVert f_n-f\rVert_1\to0$.
 :::
 
+::: {.solution}
+
 Define
 \[
 g_n(x)
@@ -238,6 +240,8 @@ The first term tends to \(\|f\|_1\) by step [](#s1-7){.pf-ref}, and the parenthe
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required \(L^1\)-convergence.
+
+:::
 
 :::
 
