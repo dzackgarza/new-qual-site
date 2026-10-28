@@ -18,6 +18,8 @@ X\longrightarrow\mathcal P(X),
 where $\mathcal P(X)$ is the power set of $X$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -139,6 +141,8 @@ The assumed surjection in step [](#s1-1){.pf-ref} led to the contradiction in st
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is Cantor's theorem in the required form.
+
+:::
 
 :::
 
