@@ -31,6 +31,8 @@ I(S)=\{f\in C(X):S\subseteq Z(f)\}.
    for some $p\in X$.
 :::
 
+::: {.solution}
+
 For
 \[
 S\subseteq X,
@@ -602,6 +604,8 @@ shows every maximal ideal is of this form.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (1), steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} prove part (2), and
 steps [](#s1-7){.pf-ref} through [](#s1-14){.pf-ref} prove part (3).
+
+:::
 
 :::
 
