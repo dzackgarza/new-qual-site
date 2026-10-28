@@ -33,6 +33,8 @@ f\bigl(f^{-1}(C)\bigr)\qquad C.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -229,6 +231,8 @@ Collect steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested choices.
+
+:::
 
 :::
 
