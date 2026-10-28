@@ -20,6 +20,8 @@ audit:
 Let $z = e^{2\pi i/5}$. Evaluate $1 + z + z^2 + z^3 + 5z^4 + 4z^5 + 4z^6 + 4z^7 + 4z^8 + 5z^9$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ z^4=e^{8\pi i/5}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
