@@ -30,6 +30,8 @@ Problem 34 of the source reads: Solve the integral $\int_0^\infty \frac{1}{1 + x
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
 
+::: {.solution}
+
 Use the branch
 $$
 \Log z=\log|z|+i\arg z,
@@ -317,6 +319,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required value.
+
+:::
 
 :::
 
