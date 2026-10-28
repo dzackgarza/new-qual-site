@@ -28,6 +28,8 @@ B=\{f\in V:\|f\|\le1\}
 be the closed unit ball in $V$. Show that there exists a bounded linear functional $\Lambda:V\to\mathbb R$ such that $\Lambda(B)$ is an open subset of $\mathbb R$.
 :::
 
+::: {.solution}
+
 Define
 \[
 \boxed{
@@ -539,6 +541,8 @@ The interval \((-2,2)\) is open.
 ::: pf-qed
 
 Step [](#s1-20){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
