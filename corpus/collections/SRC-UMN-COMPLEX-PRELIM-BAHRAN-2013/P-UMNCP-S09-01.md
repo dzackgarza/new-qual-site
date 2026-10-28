@@ -24,6 +24,8 @@ Suppose \(f\) is entire and
 is bounded as \(|z|\to\infty\). Prove that \(f\) is constant.
 :::
 
+::: {.solution}
+
 By hypothesis, there exist constants
 $$
 C>0
@@ -181,6 +183,8 @@ This is exactly the conclusion of step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the claim.
+
+:::
 
 :::
 
