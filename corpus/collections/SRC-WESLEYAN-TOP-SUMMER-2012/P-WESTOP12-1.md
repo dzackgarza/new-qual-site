@@ -29,6 +29,8 @@ For path-connected spaces $X$ and $Y$, give an explicit example satisfying each 
 14. $\pi_1(X)\cong\pi_1(Y)$ but $H_2(X)\not\cong H_2(Y)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -417,6 +419,8 @@ This table collects steps [](#s1-1){.pf-ref} through [](#s1-14){.pf-ref}.
 
 Each possible statement has an explicit example and each impossible
 statement has a proof of impossibility above.
+
+:::
 
 :::
 
