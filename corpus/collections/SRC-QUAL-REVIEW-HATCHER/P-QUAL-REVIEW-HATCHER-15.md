@@ -31,6 +31,8 @@ H^i(Y)=0\quad\text{for all }i>0.
 \]
 :::
 
+::: {.solution}
+
 All cohomology groups below have coefficients in \(\mathbb Z\).
 
 Assume
@@ -526,6 +528,8 @@ Step [](#s1-8){.pf-ref} gives the two exclusive cases, and steps [](#s1-20){.pf-
 ::: pf-qed
 
 Step [](#s1-22){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
