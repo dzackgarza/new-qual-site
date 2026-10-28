@@ -21,6 +21,8 @@ Let F be a field which contains a primitive p-th root of unity ⇣. Show that a 
 Hint: For $p = 2$ , this was proved in class using Hilbert’s Thm.90. That proof can be mimicked, relying on 5.9.
 :::
 
+::: {.solution}
+
 Let $\zeta\in F$ be the given primitive $p$-th root of unity.
 
 ::: pf
@@ -299,6 +301,8 @@ Steps [](#s2-2){.pf-ref} through [](#s2-5){.pf-ref} construct the required cycli
 ::: pf-qed
 
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the two implications.
+
+:::
 
 :::
 
