@@ -29,6 +29,8 @@ Find the critical point(s) of this function.
 (E) $x = 1, \frac{9}{4}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ points.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the complete set of critical points.
+
+:::
 
 :::
 
