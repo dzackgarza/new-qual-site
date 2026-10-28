@@ -31,6 +31,8 @@ III. Two of the tables have at least $31$ flowers combined.
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 Let the four table counts be nonnegative integers $a,b,c,d$ with
 $$
 a+b+c+d=61.
@@ -121,6 +123,8 @@ Step [](#s1-1){.pf-ref} gives a counterexample to I, while steps [](#s1-2){.pf-r
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
