@@ -23,6 +23,8 @@ Find all possible values of
 where $\gamma$ is any closed piecewise smooth path in $\mathbb C$ avoiding $\pm i$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -110,6 +112,8 @@ Step [](#s1-2){.pf-ref} then gives the value $m\pi$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies exactly all possible values.
+
+:::
 
 :::
 
