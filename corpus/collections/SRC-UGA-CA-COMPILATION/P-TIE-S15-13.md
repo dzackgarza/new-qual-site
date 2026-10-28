@@ -47,6 +47,8 @@ Erratum: integral (ii) diverges for $a = 0$, where the integrand is $\cos x / x^
 The hypothesis should be $a \in \mathbb{R}$, $a \ne 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -615,6 +617,8 @@ The residue theorem therefore gives the stated contour integral.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} evaluate part (i), steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} evaluate part (ii) with the corrected hypothesis $a\ne0$, and steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} evaluate parts (iii)--(vii).
+
+:::
 
 :::
 
