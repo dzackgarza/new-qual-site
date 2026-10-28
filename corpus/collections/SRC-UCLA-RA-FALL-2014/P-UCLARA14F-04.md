@@ -28,6 +28,8 @@ f(x) = \sum_{n=0}^{\infty} c_n \cos(nx) \quad \text{with} \quad \sum_{n=0}^{\inf
 Show that if $f \in \mathcal{G}$ and $g \in \mathcal{G}$ then $fg \in \mathcal{G}$.
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)=\sum_{n=0}^\infty c_n\cos(nx),
@@ -369,6 +371,8 @@ Step [](#s1-9){.pf-ref} is exactly the defining condition for $fg\in\mathcal G$.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
