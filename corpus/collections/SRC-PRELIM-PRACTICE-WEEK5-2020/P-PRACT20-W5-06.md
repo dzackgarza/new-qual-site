@@ -20,6 +20,8 @@ audit:
 Up to isomorphism, how many abelian groups $G$ have order $16$ and satisfy $x + x + x + x = 0$ for all $x \in G$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -116,6 +118,8 @@ Step [](#s1-3){.pf-ref} gives exactly three qualifying groups.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested count.
+
+:::
 
 :::
 
