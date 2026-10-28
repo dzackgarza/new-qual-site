@@ -25,6 +25,8 @@ If $y' = x - y$ and $y(0) = 1$, then $y(1) =$
 (E) $e$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -99,6 +101,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
