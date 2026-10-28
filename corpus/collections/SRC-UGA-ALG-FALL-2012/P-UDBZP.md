@@ -19,6 +19,8 @@ review: draft
 Prove that any nondegenerate matrix $X\in M_n(\RR)$ can be written as $X = UT$ where $U$ is orthogonal and $T$ is upper triangular.
 :::
 
+::: {.solution}
+
 Write $X=(x_1\ \cdots\ x_n)$, where $x_j\in\mathbb R^n$.
 
 ::: pf
@@ -61,6 +63,8 @@ Let $U=(u_1\ \cdots\ u_n)$. By step [](#s1-1){.pf-ref}, for each $j$ there are u
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} establishes the required factorization.
+
+:::
 
 :::
 
