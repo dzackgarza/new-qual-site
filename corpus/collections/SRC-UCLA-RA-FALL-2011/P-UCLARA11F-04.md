@@ -24,6 +24,8 @@ Let $f\in C^\infty([0,\infty)\times[0,1])$ satisfy
 Prove that there exists $g\in L^2([0,1])$ such that $f(t,\cdot)\to g$ in $L^2([0,1])$ as $t\to\infty$.
 :::
 
+::: {.solution}
+
 For \(t\ge0\), write
 \[
 F(t)=f(t,\cdot)\in L^2([0,1]).
@@ -312,6 +314,8 @@ This is step [](#s1-12){.pf-ref} in the original notation.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
