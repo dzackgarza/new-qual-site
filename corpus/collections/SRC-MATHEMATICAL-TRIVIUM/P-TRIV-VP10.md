@@ -48,6 +48,8 @@ Erratum: the boundary condition in (16) is printed in the source as "$F_{f_x} n_
 The condition that makes part (a) true, and that (18) reduces to for $h = 0$, is $F_{f_x} n_x + F_{f_y} n_y = g(s)$ on $\partial D$, where $(n_x, n_y)$ is the outward unit normal and $s$ is arc length along $\partial D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -364,6 +366,8 @@ Stationarity for arbitrary boundary variations forces it to vanish.
 
 Step [](#s1-7){.pf-ref} proves part (a), and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} give the required modified
 functional for part (b).
+
+:::
 
 :::
 
