@@ -26,6 +26,8 @@ If yes, prove it.
 If not, give a counterexample and modify the statement so that the corresponding constant-function conclusion is true, then prove the modified statement.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -147,6 +149,8 @@ while step [](#s1-5){.pf-ref} says that $P$ contains no nonempty open set. This 
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} disproves the original statement, and step [](#s1-6){.pf-ref} proves the corrected connected-domain statement.
+
+:::
 
 :::
 
