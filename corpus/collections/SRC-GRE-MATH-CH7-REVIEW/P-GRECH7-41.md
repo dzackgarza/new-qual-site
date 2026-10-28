@@ -31,6 +31,8 @@ III. $\neg A\to\neg B$
 (E) II and III only
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -130,6 +132,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove II and III, while step [](
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
