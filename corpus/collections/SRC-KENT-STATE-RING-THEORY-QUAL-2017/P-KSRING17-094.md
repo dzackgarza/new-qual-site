@@ -19,6 +19,8 @@ audit:
 Let π be an irreducible element of a principal ideal domain R. Prove that π is a prime element (that is, π | ab implies ${ \pi } \mid a \ \mathrm { o r } \ \pi \mid b )$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ Step [](#s1-6){.pf-ref} is the defining prime-element divisibility condition.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
