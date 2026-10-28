@@ -23,6 +23,8 @@ Let R be a commutative ring with identity and M a maximal ideal of R. Let $R _ {
 (b) The fields $R / M$ and $R _ { M } / M _ { M }$ are isomorphic.
 :::
 
+::: {.solution}
+
 Let
 $$
 S
@@ -657,6 +659,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
+
+:::
 
 :::
 
