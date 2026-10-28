@@ -31,6 +31,8 @@ for all $x,y\in\mathbb R^n$.
 Show that $f$ is convex.
 :::
 
+::: {.solution}
+
 Fix $x,y\in\mathbb R^n$ and define
 \[
 v=x-y,
@@ -214,6 +216,8 @@ Step [](#s1-5){.pf-ref} is exactly the defining convexity inequality.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
