@@ -19,6 +19,8 @@ audit:
 p is an odd prime and $q = p ^ { k }$ . Let E be a splitting field of $X ^ { q } + X \in \mathbb { F } _ { p } [ X ]$ .How many elements does it have?
 :::
 
+::: {.solution}
+
 Let
 \[
 f(X)=X^q+X,
@@ -214,6 +216,8 @@ Combine steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}. By definition, $\mathbb
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives the requested number of elements.
+
+:::
 
 :::
 
