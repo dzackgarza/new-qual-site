@@ -14,6 +14,8 @@ audit:
 Describe the universal covering space of the Klein bottle.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -206,6 +208,8 @@ Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} exhibit $\mathbb R^2$ as a s
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the requested description.
+
+:::
 
 :::
 
