@@ -28,6 +28,8 @@ Y=D^2\times S^1?
 That is, does there exist a continuous map $r:Y\to X$ whose restriction to $X\subset Y$ is the identity?
 :::
 
+::: {.solution}
+
 Let
 \[
 i:X=S^1\times S^1\hookrightarrow Y=D^2\times S^1
@@ -278,6 +280,8 @@ The assumption of a retraction led to the contradiction in step [](#s1-11){.pf-r
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} answers the question.
+
+:::
 
 :::
 
