@@ -40,6 +40,8 @@ The first assertion in the source needs the standard missing hypothesis
 \]
 Without it, the assertion is false.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -380,6 +382,8 @@ These identities descend through the quotient groups by step [](#s1-6){.pf-ref}.
 Step [](#s1-1){.pf-ref} records the defect in the literal source statement.
 Steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the corrected Kronecker pairing on homology and
 cohomology.
+
+:::
 
 :::
 
