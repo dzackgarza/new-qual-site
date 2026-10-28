@@ -27,6 +27,8 @@ is valid.
 (b) Prove the formula under the conditions you stated in part (a).
 :::
 
+::: {.solution}
+
 Let $I\subset\RR$ be an open interval containing the point $x$ under consideration. A sufficient set of hypotheses is that $f:I\times[a,b]\to\RR$ is continuous, that $\partial f/\partial x$ exists on $I\times[a,b]$, and that $\partial f/\partial x$ is continuous there.
 
 ::: pf
@@ -184,6 +186,8 @@ The point $x_0\in I$ was arbitrary, and step [](#s1-5){.pf-ref} proves the formu
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested differentiation-under-the-integral formula under the sufficient hypotheses stated at the beginning of the solution.
+
+:::
 
 :::
 
