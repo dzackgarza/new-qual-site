@@ -26,6 +26,8 @@ Prove
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -85,6 +87,8 @@ Step [](#s1-1){.pf-ref} holds for every $0<\rho<r$. Letting $\rho\uparrow r$ yie
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
