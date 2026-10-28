@@ -25,6 +25,8 @@ $1 + \cot^2 \left(\arcsin \frac{\pi}{4}\right) =$
 (E) $\frac{16}{\pi^2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -92,6 +94,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
