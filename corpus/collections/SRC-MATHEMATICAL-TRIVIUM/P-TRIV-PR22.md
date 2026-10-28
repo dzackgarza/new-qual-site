@@ -23,6 +23,8 @@ What is the most probable total amount of birds in the population?
 Assume the flock was not mixed with other groups of birds.
 :::
 
+::: {.solution}
+
 Let $N$ be the unknown total population size. Necessarily
 \[
 N\geq M+n-X.
@@ -155,6 +157,8 @@ for admissible finite $N$, so the likelihood increases toward its supremum as $N
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the maximum-likelihood answer, including the integer tie and zero-recapture cases.
+
+:::
 
 :::
 
