@@ -21,6 +21,8 @@ Let Ω be a simply connected open set and let γ be a simple closed contour in 
 Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -123,6 +125,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
