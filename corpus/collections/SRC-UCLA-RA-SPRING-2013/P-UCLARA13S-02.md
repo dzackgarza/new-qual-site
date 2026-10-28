@@ -21,6 +21,8 @@ Consider the Hilbert space $\ell^2(\mathbb Z)$.
 Show that the Borel $\sigma$-algebra associated to the norm topology agrees with the Borel $\sigma$-algebra associated to the weak topology.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathcal B_{\mathrm w}
@@ -166,6 +168,8 @@ while step [](#s1-4){.pf-ref} gives the reverse inclusion.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the desired equality of Borel $\sigma$-algebras.
+
+:::
 
 :::
 
