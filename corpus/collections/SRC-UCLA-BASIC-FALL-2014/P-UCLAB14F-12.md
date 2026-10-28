@@ -24,6 +24,8 @@ a_{ij}=\frac1{i+j-1}.
 Prove that $A$ is positive definite.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -208,6 +210,8 @@ Step [](#s1-5){.pf-ref} verifies this condition.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
