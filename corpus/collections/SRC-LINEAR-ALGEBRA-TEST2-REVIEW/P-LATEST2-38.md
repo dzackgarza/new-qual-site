@@ -34,6 +34,8 @@ Determine $M^{100}$ from the following choices:
 (E) none of the above
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -130,6 +132,8 @@ This is answer choice $\boxed{\text{(A)}}$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required value.
+
+:::
 
 :::
 
