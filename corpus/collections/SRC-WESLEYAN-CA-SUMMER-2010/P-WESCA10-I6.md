@@ -20,6 +20,8 @@ Let $D\subset\mathbb C$ be a domain with $0\notin D$.
 Define what it means for a function to be a branch of the logarithm on $D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -46,6 +48,8 @@ the choices vary holomorphically with $z$.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition.
+
+:::
 
 :::
 
