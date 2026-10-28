@@ -25,6 +25,8 @@ If the matrix $A = \begin{pmatrix} t & 1-t \\ 1 & 2t \end{pmatrix}$ has $1$ as a
 (E) $4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -115,6 +117,8 @@ $2$ occurs.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
