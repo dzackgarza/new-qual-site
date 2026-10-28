@@ -28,6 +28,8 @@ M=\begin{pmatrix}
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -164,6 +166,8 @@ and the remaining rows similarly give
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the requested value of $M^{-2}$.
+
+:::
 
 :::
 
