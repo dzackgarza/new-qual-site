@@ -21,6 +21,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -115,6 +117,8 @@ Add the ten integrals from step [](#s1-3){.pf-ref}:
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
