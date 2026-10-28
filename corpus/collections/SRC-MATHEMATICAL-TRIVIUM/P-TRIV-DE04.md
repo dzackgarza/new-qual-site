@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime } ( x ) = f ( x ) y ( x ) + g ( x ) y ^ { n } ( x )$
 :::
 
+::: {.solution}
+
 Assume $f$ and $g$ are continuous on an interval $I$.
 
 ::: pf
@@ -312,6 +314,8 @@ Whenever $0^n$ is defined and equals $0$, the equation is satisfied.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives the Bernoulli family for $n\neq1$, and step [](#s1-10){.pf-ref} gives the exceptional linear case $n=1$.
+
+:::
 
 :::
 
