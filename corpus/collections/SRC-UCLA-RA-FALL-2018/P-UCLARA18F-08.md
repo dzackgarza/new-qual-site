@@ -38,6 +38,8 @@ f(z)=\sum_{n\ge1}a_nz^n
 to belong to $\mathcal D$.
 :::
 
+::: {.solution}
+
 Write \(dA=dx\,dy\).
 
 ::: pf
@@ -227,6 +229,8 @@ The function already has \(f(0)=0\) because its power series starts at \(n=1\). 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
+
+:::
 
 :::
 
