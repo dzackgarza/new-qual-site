@@ -23,6 +23,8 @@ g(z)=\overline{f(\overline z)}
 is holomorphic there as well.
 :::
 
+::: {.solution}
+
 Let
 \[
 g(z)=\overline{f(\overline z)}
@@ -229,6 +231,8 @@ unit disk.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
