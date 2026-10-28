@@ -20,6 +20,8 @@ Let $T:V\to W$ be a linear transformation between finite-dimensional vector spac
 Compute, with proof, \[\dim(\operatorname{Null}T)+\dim(\operatorname{Range}T)\] and \[\dim(\operatorname{Null}T^*)+\dim(\operatorname{Range}T)\] in terms of $\dim V$ and $\dim W$, where $T^*$ is the adjoint of $T$.
 :::
 
+::: {.solution}
+
 The use of the adjoint implicitly equips $V$ and $W$ with inner products.
 
 ::: pf
@@ -141,6 +143,8 @@ Add $\dim(\operatorname{Range}T)$ to both sides of the equality in step [](#s1-3
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the first requested quantity, and step [](#s1-4){.pf-ref} gives the second.
+
+:::
 
 :::
 
