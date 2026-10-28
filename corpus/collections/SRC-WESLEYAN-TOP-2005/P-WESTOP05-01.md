@@ -28,6 +28,8 @@ and
 Here $\mathcal P$ denotes power set.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathfrak c
@@ -306,6 +308,8 @@ Use steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives all requested cardinalities.
+
+:::
 
 :::
 
