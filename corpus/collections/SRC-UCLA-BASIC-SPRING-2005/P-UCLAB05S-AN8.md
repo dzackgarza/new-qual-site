@@ -26,6 +26,8 @@ Prove that the following are equivalent:
 Recall that a collection of open sets is a basis if every open set can be written as a union of elements of the collection.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -142,6 +144,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove (a)$\Rightarrow$(b), a
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
