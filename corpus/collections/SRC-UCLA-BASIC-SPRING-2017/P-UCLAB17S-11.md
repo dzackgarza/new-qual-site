@@ -24,6 +24,8 @@ Let $f_n:[0,1]\to\mathbb R$ be continuous and satisfy
 Define $F_n(x)=\int_0^x f_n(t)\,dt$. Show that there is a subsequence $n_k\to\infty$ such that $F_{n_k}(x)$ converges for every $x\in[0,1]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -358,6 +360,8 @@ The indices $n_k$ form a subsequence of the positive integers and may be chosen 
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
