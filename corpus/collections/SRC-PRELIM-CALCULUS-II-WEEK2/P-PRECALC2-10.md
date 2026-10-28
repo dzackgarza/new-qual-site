@@ -15,6 +15,8 @@ review: draft
 (Gabriel’s Horn) Let $f ( x ) = 1 / x$ , for $x \in [ 1 , \infty )$ . Find the volume and surface area of the shape which results from rotating the graph of f about the x-axis.
 :::
 
+::: {.solution}
+
 The curve is
 \[
 y=f(x)=\frac1x,
@@ -279,6 +281,8 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-10){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} gives both requested quantities.
+
+:::
 
 :::
 
