@@ -21,6 +21,8 @@ f:[a,b]\to\mathbb R,
 prove that the image of $f$ is a closed bounded interval.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -219,6 +221,8 @@ Step [](#s1-3){.pf-ref} gives closedness and boundedness, while step [](#s1-6){.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is exactly the required conclusion.
+
+:::
 
 :::
 
