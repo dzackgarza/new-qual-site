@@ -20,6 +20,8 @@ audit:
 Let $C$ be the circle $\abs{z} = 2$, oriented positively. Evaluate $\oint_C \frac{\cosh(\pi z)\,dz}{z(z^2 + 1)}$.
 :::
 
+::: {.solution}
+
 Let
 \[
 F(z)=\frac{\cosh(\pi z)}{z(z^2+1)}
@@ -143,6 +145,8 @@ By the residue theorem and steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
