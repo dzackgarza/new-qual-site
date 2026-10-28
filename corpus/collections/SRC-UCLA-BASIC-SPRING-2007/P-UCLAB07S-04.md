@@ -28,6 +28,8 @@ L=\left\{\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}:x\in X\right\}.
 \]
 :::
 
+::: {.solution}
+
 For each distinct eigenvalue $\lambda_j$, let
 \[
 E_j=\ker(A-\lambda_jI).
@@ -339,6 +341,8 @@ Repeated squares, such as those coming from eigenvalues $\lambda$ and $-\lambda$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} determines $X$, and step [](#s1-8){.pf-ref} determines $L$.
+
+:::
 
 :::
 
