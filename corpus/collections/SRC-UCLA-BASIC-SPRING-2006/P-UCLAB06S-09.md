@@ -23,6 +23,8 @@ Let $S$ be a real $n\times n$ symmetric matrix, i.e. ${}^tS=S$.
 (B) State and prove the Spectral Theorem for $S$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -286,6 +288,8 @@ Q^TSQ
 
 Step [](#s1-1){.pf-ref} proves part (A).
 Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} state and prove the spectral theorem requested in part (B).
+
+:::
 
 :::
 
