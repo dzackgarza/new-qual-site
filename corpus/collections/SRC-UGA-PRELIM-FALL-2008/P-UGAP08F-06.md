@@ -26,6 +26,8 @@ Prove that
 Give an example showing that the conclusion need not hold when $f$ is not continuous.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ The function $g$ is discontinuous at $1/2$. It differs from the zero function at
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the assertion under continuity, and step [](#s1-3){.pf-ref} supplies the requested counterexample without continuity.
+
+:::
 
 :::
 
