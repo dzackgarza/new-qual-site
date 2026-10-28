@@ -26,6 +26,8 @@ S^1\times S^1.
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 A=S^1\vee S^1
@@ -248,6 +250,8 @@ The assumption of a retraction led to the contradiction in step [](#s1-9){.pf-re
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
