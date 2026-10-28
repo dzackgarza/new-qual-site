@@ -51,6 +51,8 @@ Hint: Calculate $F \circ F$.
 The source labels the first condition of part (b) "(c)"; it is condition (i) of the list (i)–(iv).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -300,6 +302,8 @@ Thus $F$ is its own inverse, so it is both injective and surjective.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (a). Steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} establish conditions (i)--(iv) of part (b).
+
+:::
 
 :::
 
