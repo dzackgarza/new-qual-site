@@ -19,6 +19,8 @@ audit:
 Show that every finite group can be realised as the Galois group of some finite Galois extension of fields.
 :::
 
+::: {.solution}
+
 Let $G$ be a finite group and let $F$ be any field. Introduce algebraically independent indeterminates
 $$
 \{X_h:h\in G\}
@@ -125,6 +127,8 @@ For the arbitrary finite group $G$, step [](#s1-3){.pf-ref} explicitly construct
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is exactly the required assertion.
+
+:::
 
 :::
 
