@@ -23,6 +23,8 @@ f(x)=g(x)\qquad(0\le x<1).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -324,6 +326,8 @@ Steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove the forward implicatio
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
