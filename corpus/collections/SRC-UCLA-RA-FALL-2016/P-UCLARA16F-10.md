@@ -30,6 +30,8 @@ for $n\in\mathbb N$.
 Show that $U$ is open and $K$ is compact without “holes”, i.e. $\mathbb C\setminus K$ has no bounded connected components.
 :::
 
+::: {.solution}
+
 Let
 \[
 f(z)=z^2-1.
@@ -493,6 +495,8 @@ By definition in the problem, “no holes” means that \(\mathbb C\setminus K\)
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves part (a); steps [](#s1-11){.pf-ref} and [](#s1-15){.pf-ref} prove openness of \(U\) and compactness of \(K\); step [](#s1-23){.pf-ref} proves that \(K\) has no holes.
+
+:::
 
 :::
 
