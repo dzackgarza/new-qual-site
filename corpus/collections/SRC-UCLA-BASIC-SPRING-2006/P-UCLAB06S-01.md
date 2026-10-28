@@ -21,6 +21,8 @@ audit:
 (B) Suppose that $f _ { n } ( x )$ is a sequence of Riemann integrable functions on [0, 1] such that $\{ f _ { n } ( x ) \}$ converges uniformly to $f ( x )$ . Prove that $f ( x )$ is Riemann integrable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -275,6 +277,8 @@ By the criterion in step [](#s1-2){.pf-ref},
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} answer part (A), and steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} prove part (B).
+
+:::
 
 :::
 
