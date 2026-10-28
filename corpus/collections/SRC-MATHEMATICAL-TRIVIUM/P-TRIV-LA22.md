@@ -21,6 +21,8 @@ Is this sufficient for their commutator to be zero?
 Is this necessary for their commutator to be zero?
 :::
 
+::: {.solution}
+
 Interpret “sharing the same eigenvectors” as having a basis of common
 eigenvectors.
 
@@ -148,6 +150,8 @@ necessity.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} answers both questions.
+
+:::
 
 :::
 
