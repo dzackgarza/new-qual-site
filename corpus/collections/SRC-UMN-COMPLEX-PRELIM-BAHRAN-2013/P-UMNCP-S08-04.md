@@ -24,6 +24,8 @@ z+e^{-z}=\lambda
 has exactly one solution with positive real part.
 :::
 
+::: {.solution}
+
 Set
 $$
 f(z)
@@ -236,6 +238,8 @@ the same point $z_0$ lies in $D_R$, and step [](#s1-4){.pf-ref} says $D_R$ conta
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required existence-and-uniqueness statement.
+
+:::
 
 :::
 
