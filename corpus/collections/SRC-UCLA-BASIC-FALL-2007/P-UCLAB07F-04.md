@@ -23,6 +23,8 @@ Suppose $f:\mathbb R\to\mathbb R$ is twice differentiable and $|f''(x)|\le B$.
 (b) Use part (a) to justify \[\left|\int_a^b f(x)\,dx-\frac{b-a}{n}\sum_{k=1}^n f\!\left(a+\frac{2k-1}{2n}(b-a)\right)\right|\le Cn^{-2},\] where $C$ is independent of $n$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -264,6 +266,8 @@ Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part
 C=\frac{B(b-a)^3}{24},
 \]
 which is independent of $n$.
+
+:::
 
 :::
 
