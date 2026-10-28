@@ -26,6 +26,8 @@ $$
 (2) Deduce Liouville’s theorem from (1).
 :::
 
+::: {.solution}
+
 Fix $r<R$, and let
 $$
 S_N(z)\coloneqq\sum_{n=0}^N c_n z^n.
@@ -184,6 +186,8 @@ for all $z\in\CC$. This is Liouville's theorem.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (1), and step [](#s1-5){.pf-ref} proves part (2).
+
+:::
 
 :::
 
