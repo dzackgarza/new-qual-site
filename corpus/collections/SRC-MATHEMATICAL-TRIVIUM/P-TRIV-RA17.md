@@ -19,6 +19,8 @@ audit:
 $\mathrm { C a l c u l a t e } \int \frac { x ^ { 5 } + 2 } { x ^ { 2 } - 1 } d x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -148,6 +150,8 @@ Integrate each term in step [](#s1-3){.pf-ref}.
 
 Step [](#s1-4){.pf-ref} is the required antiderivative on each interval avoiding
 $x=\pm1$.
+
+:::
 
 :::
 
