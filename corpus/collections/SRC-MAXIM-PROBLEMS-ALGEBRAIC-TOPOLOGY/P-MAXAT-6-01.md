@@ -19,6 +19,8 @@ audit:
 Calculate $w ( \mathbb { R P } ^ { n } ) , c ( \mathbb { C P } ^ { n } ) , p ( \mathbb { C P } ^ { n } )$
 :::
 
+::: {.solution}
+
 These denote the total characteristic classes of the tangent bundles. Let
 \[
 a\in H^1(\mathbb{RP}^n;\mathbb F_2),
@@ -213,6 +215,8 @@ These are steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-6){.pf-ref
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives all three requested total characteristic classes.
+
+:::
 
 :::
 
