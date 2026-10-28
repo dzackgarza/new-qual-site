@@ -24,6 +24,8 @@ Let $P$ be a nonconstant polynomial all of whose zeros lie in the half-plane
 Show that every zero of $P'$ also lies in this half-plane.
 :::
 
+::: {.solution}
+
 Write
 \[
 P(z)
@@ -177,6 +179,8 @@ Thus in all cases $\operatorname{Re}z_0<\sigma$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
