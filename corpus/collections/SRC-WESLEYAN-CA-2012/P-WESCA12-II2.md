@@ -25,6 +25,8 @@ where $\gamma$ is a closed smooth curve in $\mathbb C\setminus\{i,-i\}$.
 (b) Answer the same question when $\gamma$ is a positively oriented circle, and describe which circles give each possible value.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -355,6 +357,8 @@ poles lies inside the circle.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} solves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-9){.pf-ref} solve part (b).
+
+:::
 
 :::
 
