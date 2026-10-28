@@ -19,6 +19,8 @@ audit:
 Let A be a real matrix with $( \operatorname* { d e t } A ) ^ { 2 } = 1$ . Give a conclusion about orthogonality of A.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -140,6 +142,8 @@ $$
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} give the precise relation between the determinant condition
 and orthogonality.
+
+:::
 
 :::
 
