@@ -26,6 +26,8 @@ $\operatorname{Ci}(x)$ does not. Thus the requested “region” is necessarily 
 union of intervals excluding neighborhoods of the zeros of $\sin x$.
 :::
 
+::: {.solution}
+
 Let
 $$
 A(x)=\frac{\sin x}{x}.
@@ -326,6 +328,8 @@ Step [](#s1-1){.pf-ref} proves the leading approximation, step [](#s1-6){.pf-ref
 with relative error below $10^{-4}$, and steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} describe the
 asymptotically sharp pointwise behavior and the unavoidable exclusions near
 zeros of $\sin x$.
+
+:::
 
 :::
 
