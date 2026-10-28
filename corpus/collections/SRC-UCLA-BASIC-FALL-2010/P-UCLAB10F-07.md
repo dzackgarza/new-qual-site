@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $V$ and $W$ be complex inner-product spaces with
+Let $V$ and $W$ be complex inner-product spaces with
 \[
 \dim V\le\dim W<\infty.
 \]
