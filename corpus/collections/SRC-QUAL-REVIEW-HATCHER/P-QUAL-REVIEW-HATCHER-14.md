@@ -23,6 +23,8 @@ Prove that there do not exist an integer $k$ and a space $X$ such that
 \]
 :::
 
+::: {.solution}
+
 Suppose, toward a contradiction, that there is a homotopy equivalence
 \[
 \mathbb{CP}^n\simeq S^k\vee X.
@@ -449,6 +451,8 @@ Step [](#s1-4){.pf-ref} reduces to the two cases \(j<n\) and \(j=n\), which are 
 ::: pf-qed
 
 Step [](#s1-21){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
