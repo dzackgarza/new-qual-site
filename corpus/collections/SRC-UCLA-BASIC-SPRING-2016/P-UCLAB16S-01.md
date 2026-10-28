@@ -30,6 +30,8 @@ satisfy:
 Prove that $g(x):=f(x,x)$ is continuous on $[a,b]$.
 :::
 
+::: {.solution}
+
 Fix
 \[
 x_0\in[a,b].
@@ -293,6 +295,8 @@ Step [](#s1-7){.pf-ref} proves continuity at every point of the interval.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
