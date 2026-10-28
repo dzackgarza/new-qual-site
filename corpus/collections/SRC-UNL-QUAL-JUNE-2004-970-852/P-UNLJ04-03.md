@@ -19,6 +19,8 @@ audit:
 Show that if $X$ is a Hausdorff space and $A,B\subseteq X$ are disjoint finite subsets of $X$, then there are disjoint open sets $U,V$ in $X$ with $A\subseteq U$ and $B\subseteq V$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -347,6 +349,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} handles the empty cases, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} construct the required disjoint open neighborhoods when both finite sets are nonempty.
+
+:::
 
 :::
 
