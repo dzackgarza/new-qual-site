@@ -20,6 +20,8 @@ Let $f$ be a bounded real-valued function on $[0,1]$.
 Show that $f$ is Riemann integrable if and only if $f^3$ is Riemann integrable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -177,6 +179,8 @@ Step [](#s1-2){.pf-ref} proves the forward implication, and step [](#s1-3){.pf-r
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
