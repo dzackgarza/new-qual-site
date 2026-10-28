@@ -19,6 +19,8 @@ audit:
 Let $x _ { 1 } , x _ { 2 } , x _ { 3 } \in \textit { F }$ Find a monic degree eight $\begin{array} { r l r } { f } & { { } \in } & { F [ X ] } \end{array}$ which has ${ \sqrt { x _ { 1 } } } + { \sqrt { x _ { 2 } } } + { \sqrt { x _ { 3 } } }$ as a root.
 :::
 
+::: {.solution}
+
 Put
 \[
 a=x_1,
@@ -253,6 +255,8 @@ Use the corrected simplification at the end of step [](#s1-8){.pf-ref} and subst
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} supplies the requested monic degree-eight polynomial over $F$ and step [](#s1-1){.pf-ref} verifies the required root.
+
+:::
 
 :::
 
