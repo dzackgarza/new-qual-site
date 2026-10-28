@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -163,6 +165,8 @@ Hence the triple satisfies all three equations.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required solution.
+
+:::
 
 :::
 
