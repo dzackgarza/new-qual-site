@@ -21,6 +21,8 @@ audit:
 2. Find an algebraic number $\alpha$ whose irreducible polynomial over $\mathbb Q$ has degree $5$ and is solvable by radicals.
 :::
 
+::: {.solution}
+
 ## Part 1
 
 ::: pf
@@ -477,6 +479,8 @@ Degree \(5\) is step [](#s1-19){.pf-ref}, and solvability by radicals is step []
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} proves part 1, and step [](#s1-22){.pf-ref} supplies the requested degree-\(5\) example in part 2.
+
+:::
 
 :::
 
