@@ -36,6 +36,8 @@ Which of these functions is/are continuous at the origin?
 (E) All three
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -144,6 +146,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} exclude $f_1$ and $f_2$, while s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies precisely which of the three functions is continuous at the origin.
+
+:::
 
 :::
 
