@@ -15,6 +15,8 @@ review: draft
 Evaluate $\int _ { 0 } ^ { a } { \frac { x ^ { 2 } + b ^ { 2 } } { x ^ { 2 } + a ^ { 2 } } }$ dx where $a , b > 0$ are constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -200,6 +202,8 @@ Insert step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested value.
+
+:::
 
 :::
 
