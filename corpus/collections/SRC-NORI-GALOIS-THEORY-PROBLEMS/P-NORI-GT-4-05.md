@@ -24,6 +24,8 @@ Let $E$ be a field extension of $F$ of degree $n$.
 Show that $E(X_1, \ldots, X_d)$ is a field extension of $F(X_1, \ldots, X_d)$ of degree $n$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -143,6 +145,8 @@ Step [](#s1-1){.pf-ref} is the base case, and steps [](#s1-2){.pf-ref} through [
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required statement.
+
+:::
 
 :::
 
