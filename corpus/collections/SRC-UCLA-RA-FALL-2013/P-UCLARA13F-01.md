@@ -22,6 +22,8 @@ Suppose $f:U\to V$ is proper: $f^{-1}(K)$ is compact in $U$ whenever $K\subset V
 Show that $f$ is surjective.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -135,6 +137,8 @@ This is exactly the equality $f(U)=V$ from step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the claim.
+
+:::
 
 :::
 
