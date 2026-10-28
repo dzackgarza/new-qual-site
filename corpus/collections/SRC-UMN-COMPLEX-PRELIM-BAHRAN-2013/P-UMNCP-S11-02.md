@@ -24,6 +24,8 @@ h(z)^2=\overline{h(z)}
 for every \(z\in V\), then \(h\) is constant on \(V\). Find all possible values of such a function.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -177,6 +179,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves constancy, and step [](#s1-5){.pf-ref} gives all possible constant values.
+
+:::
 
 :::
 
