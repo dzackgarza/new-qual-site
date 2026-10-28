@@ -26,6 +26,8 @@ a. Show that $F(\alpha) = F(\alpha^2)$.
 b. Prove that $\alpha^{2020}$ is algebraic of odd degree over $F$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -88,6 +90,8 @@ The left side is odd, so every positive divisor of it is odd. In particular $[F(
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), and step [](#s1-3){.pf-ref} proves part (b).
+
+:::
 
 :::
 
