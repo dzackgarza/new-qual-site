@@ -23,6 +23,8 @@ Prove that a topological space $X$ is regular if and only if $X$ is $T_1$ and, f
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -89,6 +91,8 @@ Then $W$ is open. Since $\overline V\subseteq X\setminus F$, one has $F\subseteq
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the forward implication, and step [](#s1-2){.pf-ref} proves the converse.
+
+:::
 
 :::
 
