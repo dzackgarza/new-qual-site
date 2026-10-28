@@ -18,6 +18,8 @@ $$F(a,b)$$
 on two generators.
 :::
 
+::: {.solution}
+
 Let
 \[
 X=S^1_a\vee S^1_b
@@ -337,6 +339,8 @@ The index statements are steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref}, and no
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} gives the required pair of subgroups.
+
+:::
 
 :::
 
