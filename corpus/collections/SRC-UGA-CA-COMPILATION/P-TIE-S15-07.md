@@ -20,6 +20,8 @@ audit:
 Suppose f is entire and there exist A, $R > 0$ and natural number N such that $| f ( z ) | \leq A | z | ^ { N }$ for $| z | \geq R .$ . Show that (i) f is a polynomial and (ii) the degree of f is at most N .
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -142,6 +144,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves both requested conclusions.
+
+:::
 
 :::
 
