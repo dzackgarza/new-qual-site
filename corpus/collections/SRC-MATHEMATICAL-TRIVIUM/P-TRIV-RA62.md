@@ -25,6 +25,8 @@ $$
 Show that $I _ { n } = \pi$ for n = 1, 2, 3, 4, 5, 6. Compute $I _ { 7 }$
 :::
 
+::: {.solution}
+
 For
 $$
 a_k=\frac1{2k+1},
@@ -354,6 +356,8 @@ Apply the sign formula from step [](#s1-4){.pf-ref} and use the count from step 
 
 Step [](#s1-7){.pf-ref} proves $I_n=\pi$ for $1\leq n\leq6$, and step [](#s1-12){.pf-ref} computes
 $I_7$.
+
+:::
 
 :::
 
