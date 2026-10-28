@@ -24,6 +24,8 @@ v(z)=u(z)^2
 Show that $f$ is constant on $D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -233,6 +235,8 @@ Both its real and imaginary parts are constant by steps [](#s1-6){.pf-ref} throu
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
