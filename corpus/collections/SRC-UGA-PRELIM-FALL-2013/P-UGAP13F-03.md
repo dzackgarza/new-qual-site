@@ -18,6 +18,8 @@ audit:
 Give an example, with proof, of a real power series that converges exactly on the interval $[2,4)$.
 :::
 
+::: {.solution}
+
 Consider
 \[
 \boxed{
@@ -202,6 +204,8 @@ Thus the convergence set is exactly
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required example and proof.
+
+:::
 
 :::
 
