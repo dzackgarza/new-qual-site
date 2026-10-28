@@ -24,6 +24,8 @@ Let $f\in L^1(\mathbb R)$. Show that the series
 converges absolutely for almost all $x\in\mathbb R$.
 :::
 
+::: {.solution}
+
 Define
 \[
 G(x)
@@ -286,6 +288,8 @@ Step [](#s3){.pf-ref} says this sum is finite for almost every $x$, which is exa
 ::: pf-qed
 
 Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
