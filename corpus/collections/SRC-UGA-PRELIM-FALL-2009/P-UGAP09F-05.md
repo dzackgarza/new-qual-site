@@ -33,6 +33,8 @@ but $f$ is not continuous at $(0,0)$.
 (b) Give a sufficient condition, stated in terms of the partial derivatives, for a function $g:\mathbb R^2\to\mathbb R$ to be differentiable at a point $P$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -120,6 +122,8 @@ which is precisely differentiability of $g$ at $P$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), and step [](#s1-3){.pf-ref} gives and justifies the sufficient condition requested in part (b).
+
+:::
 
 :::
 
