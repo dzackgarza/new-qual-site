@@ -23,6 +23,8 @@ audit:
 Find $f'(x)$, if $f(x) = x^x$.
 :::
 
+::: {.solution}
+
 Assume $x>0$ so that the real logarithm is defined.
 
 ::: pf
@@ -95,6 +97,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required derivative.
+
+:::
 
 :::
 
