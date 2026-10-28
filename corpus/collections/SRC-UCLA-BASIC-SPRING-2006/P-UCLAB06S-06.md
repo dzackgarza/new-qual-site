@@ -34,6 +34,8 @@ Let $W$ be the subset of the space $C[0,1]$ of real-valued, continuous functions
 Erratum: with the strict inequality of the source, read for $x \neq y$ (for $x = y$ it would make $W$ empty), part (B) is false because $W$ is not closed. Let $c = \frac{-1 + \sqrt{11/3}}{2}$, so that $g(x) = x + c$ satisfies $\int_0^1 g^2 = \frac13 + c + c^2 = 1$. For $n \ge 2$ choose $c_n$ with $\int_0^1 \bigl((1 - \frac1n)x + c_n\bigr)^2\,dx = 1$ and $c_n \to c$, and put $f_n(x) = (1 - \frac1n)x + c_n$. Then $|f_n(x) - f_n(y)| = (1 - \frac1n)|x - y| < |x - y|$ for $x \neq y$, so $f_n \in W$, and $f_n \to g$ uniformly, but $|g(1) - g(0)| = 1 = |1 - 0|$, so $g \notin W$. Part (B) holds when the condition is $|f(x) - f(y)| \le |x - y|$ for all $x, y \in [0,1]$: that set is closed, and it is uniformly bounded by (A) and equicontinuous, hence compact by the Arzelà–Ascoli theorem.
 :::
 
+::: {.solution}
+
 Interpret the source's strict inequality as applying to
 \[
 x\ne y.
@@ -439,6 +441,8 @@ Therefore Arzelà--Ascoli gives compactness.
 Step [](#s1-3){.pf-ref} proves part (A).
 Steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} prove that part (B) is false for the literal strict inequality.
 Step [](#s1-11){.pf-ref} records the corrected non-strict version for which the intended compactness conclusion holds.
+
+:::
 
 :::
 
