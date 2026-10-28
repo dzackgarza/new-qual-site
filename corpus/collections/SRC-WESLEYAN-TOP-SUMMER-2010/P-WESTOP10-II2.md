@@ -20,6 +20,8 @@ Let $(\widetilde X,p)$ be a covering space of $X$.
 2. The retained source states: if $X$ is compact and $p^{-1}(x)$ is finite for every $x\in X$, then show that $X$ is compact. This repeats the hypothesis and is therefore recorded as a source-sensitive conclusion rather than silently changed.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -529,6 +531,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove the Hausdorff assertio
 Step [](#s1-5){.pf-ref} answers the literal repeated compactness statement.
 Steps [](#s1-6){.pf-ref} through [](#s1-13){.pf-ref} prove the standard intended finite-sheeted compactness
 theorem.
+
+:::
 
 :::
 
