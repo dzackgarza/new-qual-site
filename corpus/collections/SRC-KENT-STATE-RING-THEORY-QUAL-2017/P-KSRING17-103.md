@@ -47,6 +47,8 @@ p^2\nmid a_0.
 $$
 :::
 
+::: {.solution}
+
 Assume the corrected hypotheses.
 
 ::: pf
@@ -440,6 +442,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} proves the corrected generalized Eisenstein criterion.
+
+:::
 
 :::
 
