@@ -15,6 +15,8 @@ review: draft
 Evaluate $\operatorname* { l i m } _ { x \to 0 } { \frac { ( 1 + x ) ^ { \alpha } - 1 } { x } }$ for $\alpha \in \mathbb { R }$
 :::
 
+::: {.solution}
+
 Define
 \[
 f(t)=t^\alpha
@@ -162,6 +164,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
