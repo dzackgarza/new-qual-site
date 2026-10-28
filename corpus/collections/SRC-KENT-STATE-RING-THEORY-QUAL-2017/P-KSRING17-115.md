@@ -20,6 +20,8 @@ Let p be a prime.
 A ring S is called a p-ring if the characteristic of S is a power of p. Show that if R is a ring with identity of finite characteristic, then R is isomorphic to a finite direct product of p-rings for distinct primes.
 :::
 
+::: {.solution}
+
 Let
 $$
 \operatorname{char}R
@@ -536,6 +538,8 @@ are distinct by construction.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
