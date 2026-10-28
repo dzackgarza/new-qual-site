@@ -27,6 +27,8 @@ Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with $|a| <
 Erratum: the trailing $\mathrm{d}x$ is printed in the source after $d\theta$ and is a typo; the integral is $\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}$ with integration variable $\theta$ and no $x$ in the integrand.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -254,6 +256,8 @@ gives $2\pi$ at $a=0$.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested value.
+
+:::
 
 :::
 
