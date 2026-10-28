@@ -32,6 +32,8 @@ $$
 where $L$ is the part of the circle $\abs{z} = R'$ which lies in the region $D$.
 :::
 
+::: {.solution}
+
 For $R'>R$, parametrize the arc $L$ counterclockwise by
 $$
 \gamma_{R'}(t)=R'e^{it},
@@ -186,6 +188,8 @@ This is exactly the asserted limit.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
