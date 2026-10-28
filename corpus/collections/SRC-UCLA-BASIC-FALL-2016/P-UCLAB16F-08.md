@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(i) For each $n \in \mathbb { N }$ let $f _ { n } : \mathbb { N } \to \mathbb { R }$ be a function with $| f _ { n } ( m ) | \leq 1$ for all $m , n \in \mathbb { N }$ . Prove that there is an infinite subsequence of distinct positive integers $n _ { i }$ , such that for each $m \in \mathbb { N } , f _ { n _ { i } } ( m )$ converges.
+(i) For each $n \in \NN$ let $f_n : \NN \to \RR$ be a function with $\abs{f_n(m)} \leq 1$ for all $m, n \in \NN$. Prove that there is an infinite subsequence of distinct positive integers $n_i$, such that for each $m \in \NN$, $f_{n_i}(m)$ converges.
 
-(ii) For $n _ { i }$ as in (i), assume that in addition $\operatorname* { l i m } _ { m \to \infty } \operatorname* { l i m } _ { i \to \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\begin{array} { r } { \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m ) } \end{array}$
+(ii) For $n_i$ as in (i), assume that in addition $\lim_{m \to \infty} \lim_{i \to \infty} f_{n_i}(m)$ exists and equals $0$. Prove or disprove: The same holds for the reverse double limit $\lim_{i \to \infty} \lim_{m \to \infty} f_{n_i}(m)$.
 :::
 
 ::: {.solution}
