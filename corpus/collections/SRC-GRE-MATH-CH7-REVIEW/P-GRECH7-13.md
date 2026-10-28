@@ -29,6 +29,8 @@ Given the undirected graph below, what is the maximum number of edges that can b
 The source shows the undirected graph in a figure that is not reproduced here.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -102,6 +104,8 @@ Step [](#s1-2){.pf-ref} shows that at most $8-4=4$ edges can be removed, while s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested maximum.
+
+:::
 
 :::
 
