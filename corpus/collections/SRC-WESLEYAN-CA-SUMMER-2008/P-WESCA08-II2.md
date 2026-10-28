@@ -26,6 +26,8 @@ and
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -232,6 +234,8 @@ closed circle.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} evaluate the two requested contour integrals.
+
+:::
 
 :::
 
