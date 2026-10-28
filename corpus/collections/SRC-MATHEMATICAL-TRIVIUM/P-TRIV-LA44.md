@@ -24,6 +24,8 @@ Calculate its rang and signature.
 (b) Write the transition matrix to the basis where f (x) has the canonical form.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -314,6 +316,8 @@ original basis, while step [](#s1-9){.pf-ref} gives the inverse coordinate trans
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b).
+
+:::
 
 :::
 
