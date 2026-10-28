@@ -19,6 +19,8 @@ audit:
 Let D be an integral domain and $D [ x ]$ the polynomial ring over D in the indeterminate x. Show that if every nonzero prime ideal of $D [ x ]$ is a maximal ideal, then D is a field.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -247,6 +249,8 @@ Hence $D$ is a field.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
