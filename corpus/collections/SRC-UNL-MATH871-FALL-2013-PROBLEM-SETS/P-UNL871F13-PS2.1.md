@@ -16,6 +16,8 @@ Give $X$ the included-point topology with included point $0$, and give $Y$ the f
 Determine whether $(X,\mathcal T_{ip})$ and $(Y,\mathcal T_{fc})$ are homeomorphic, and prove your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -196,6 +198,8 @@ Hence no homeomorphism exists.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
