@@ -29,6 +29,8 @@ Assume furthermore that $p$ does not divide the order of $\operatorname{Gal}(K/F
 Show hat there is some $b \in F$ such that $L = K(b^{1/p})$.
 :::
 
+::: {.solution}
+
 Let
 $$
 m=\abs{G}=[K:F].
@@ -183,6 +185,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required statement.
+
+:::
 
 :::
 
