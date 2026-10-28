@@ -20,6 +20,8 @@ Let U be $n \times n$ unitary matrix.
 Calculate the number of independent elements of $U .$
 :::
 
+::: {.solution}
+
 Interpret “independent elements” as independent real parameters.
 
 ::: pf
@@ -134,6 +136,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required count.
+
+:::
 
 :::
 
