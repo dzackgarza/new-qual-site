@@ -20,6 +20,8 @@ audit:
 Suppose that $f : \CC \to \CC$ is non-constant and entire. Prove that the image of $f$ is dense in $\CC$; that is, for arbitrary $z_0 \in \CC$ and $\varepsilon > 0$, show that there exists $z \in \CC$ such that $\abs{f(z) - z_0} < \varepsilon$. [Note: this is a weaker version of Picard’s Little Theorem which says that the image of $f$ omits at most one point in $\CC$; you should prove this directly without reference to Picard’s Little Theorem.]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ and every $\varepsilon>0$, there exists $z\in\mathbb C$ such that
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required density statement.
+
+:::
 
 :::
 
