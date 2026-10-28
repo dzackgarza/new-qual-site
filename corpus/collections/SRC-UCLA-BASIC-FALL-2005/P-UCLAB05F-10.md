@@ -33,6 +33,8 @@ A^{n+1}=0?
 Give an example or a proof of nonexistence.
 :::
 
+::: {.solution}
+
 For $n\ge2$, let $N\in M_n(\mathbb R)$ be the matrix with ones on the superdiagonal and zeros elsewhere:
 \[
 N=
@@ -198,6 +200,8 @@ Step [](#s1-6){.pf-ref} rules out such a matrix even without the additional hypo
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} answers part (a), and step [](#s1-7){.pf-ref} answers part (b).
+
+:::
 
 :::
 
