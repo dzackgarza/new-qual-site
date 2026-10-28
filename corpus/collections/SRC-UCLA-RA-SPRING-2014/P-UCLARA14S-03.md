@@ -24,6 +24,8 @@ Let $[a,b]$ be a finite interval and let $f:[a,b]\to\mathbb R$ be bounded and Bo
 (b) Prove that $f$ is Riemann integrable if and only if it is continuous almost everywhere.
 :::
 
+::: {.solution}
+
 For $x\in[a,b]$, define the oscillation
 \[
 \omega_f(x)
@@ -357,6 +359,8 @@ exactly at the continuity points of $f$. Step [](#s1-8){.pf-ref} therefore ident
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
