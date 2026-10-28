@@ -25,6 +25,8 @@ For each function, classify the singularity at the indicated point and find the 
 (c) $f(z)=\dfrac{\sin(z^3)}{(1-\cos z)^3}$ at $z_0=0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -381,6 +383,8 @@ which is the residue.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} solve part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} solve part (b), and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} solve part (c).
+
+:::
 
 :::
 
