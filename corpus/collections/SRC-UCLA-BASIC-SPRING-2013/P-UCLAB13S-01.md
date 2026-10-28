@@ -23,6 +23,8 @@ audit:
 (c) Use part (b) to give an example of a Riemann integrable function on $[0,1]$ which has infinitely many discontinuities.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -358,6 +360,8 @@ This proves part (c).
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} answers part (a), step [](#s1-6){.pf-ref} proves part (b), and step [](#s1-10){.pf-ref} gives the example required in part (c).
+
+:::
 
 :::
 
