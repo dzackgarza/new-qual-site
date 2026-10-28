@@ -18,6 +18,8 @@ audit:
 Write the precise definition of what it means for a function $f:\mathbb R\to\mathbb R$ to be uniformly continuous. Then, without using the word “not,” state precisely what it means for $f$ to fail to be uniformly continuous.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -74,6 +76,8 @@ the problem.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the two requested precise statements.
+
+:::
 
 :::
 
