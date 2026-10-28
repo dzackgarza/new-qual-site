@@ -22,6 +22,8 @@ F(x)=\int_3^{\sin x}\sqrt{1+t^4}\,dt.
 Compute $F'(x)$ and carefully state the theorems needed to justify the answer.
 :::
 
+::: {.solution}
+
 Let
 $$
 g(t)\coloneqq\sqrt{1+t^4}
@@ -94,6 +96,8 @@ The two required results are therefore the Fundamental Theorem of Calculus for a
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the derivative and identifies the theorems that justify it.
+
+:::
 
 :::
 
