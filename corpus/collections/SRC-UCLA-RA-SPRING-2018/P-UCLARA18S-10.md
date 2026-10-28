@@ -28,6 +28,8 @@ Let $f:\Omega\to\Omega$ be a holomorphic function.
 (b) Make a list of all such injective functions $f$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \widetilde\Omega
@@ -431,6 +433,8 @@ conjugates in steps [](#s1-10){.pf-ref} and [](#s1-11){.pf-ref} are surjective o
 
 Step [](#s1-13){.pf-ref} proves part (a), and step [](#s1-12){.pf-ref} gives the complete list required
 in part (b).
+
+:::
 
 :::
 
