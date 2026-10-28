@@ -25,6 +25,8 @@ $$
 has no nonnegative solutions $x ( t )$
 :::
 
+::: {.solution}
+
 Suppose, for contradiction, that $x(t)\geq0$ and that the displayed integral equals $e^{-y^2}$ for every real $y$.
 
 ::: pf
@@ -139,6 +141,8 @@ Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} contradict the assumption pr
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the claim.
+
+:::
 
 :::
 
