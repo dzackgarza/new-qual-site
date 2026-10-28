@@ -19,6 +19,8 @@ audit:
 ${ \mathrm { S o l v e ~ } } ( x + 1 ) { \frac { d y } { d x } } = 2 y + ( x + 1 ) ^ { 5 / 2 } { \mathrm { ~ w i t h ~ } } y ( 0 ) = 3$
 :::
 
+::: {.solution}
+
 Work on the interval
 $$
 x>-1,
@@ -197,6 +199,8 @@ Substitute $C=1$ from step [](#s1-6){.pf-ref} into step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} satisfies both the differential equation and the initial condition.
+
+:::
 
 :::
 
