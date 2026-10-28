@@ -33,6 +33,8 @@ A, & z\in\Omega_1,\\
 \]
 :::
 
+::: {.solution}
+
 Take the standard positive orientation on $\gamma$. For sufficiently large $R$, let
 $$
 C_R\coloneqq\{\xi:\abs{\xi}=R\}
@@ -186,6 +188,8 @@ Divide the identity in step [](#s1-2){.pf-ref} or step [](#s1-3){.pf-ref} by $2\
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required exterior Cauchy formula.
+
+:::
 
 :::
 
