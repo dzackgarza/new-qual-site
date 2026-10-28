@@ -33,6 +33,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 D=\{(x,y)\in\mathbb R^2:x=y\}
@@ -293,6 +295,8 @@ and the usual Tonelli--Fubini hypotheses fail.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
