@@ -26,6 +26,8 @@ If $G$ is a group of order $12$, then $G$ must have a subgroup of all of the fol
 (E) $12$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that orders $2$, $3$, $4$, 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the exceptional order.
+
+:::
 
 :::
 
