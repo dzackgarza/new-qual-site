@@ -24,6 +24,8 @@ Suppose $f:\mathbb R\to\mathbb R$ is bounded and Lebesgue measurable, and
 Show that $f$ is almost everywhere constant on $[0,1]$.
 :::
 
+::: {.solution}
+
 Define
 \[
 F(x)
@@ -151,6 +153,8 @@ Thus $f=c$ on the full-measure set $E$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the desired almost-everywhere constancy.
+
+:::
 
 :::
 
