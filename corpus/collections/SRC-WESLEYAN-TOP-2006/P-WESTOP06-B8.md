@@ -20,6 +20,8 @@ audit:
    has a unique lift $\widetilde f:[0,1]\to E$ beginning at $e_0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -178,6 +180,8 @@ Existence is step [](#s1-4){.pf-ref} and uniqueness is step [](#s1-5){.pf-ref}. 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} states the Lebesgue Number Lemma, and step [](#s1-6){.pf-ref} proves the path-lifting theorem.
+
+:::
 
 :::
 
