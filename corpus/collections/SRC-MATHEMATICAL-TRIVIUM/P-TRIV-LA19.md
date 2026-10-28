@@ -38,6 +38,8 @@ $$
 (e) Calculate the eigenvalues and the eigenvectors of $\sigma_i$, $i = 1, 2, 3$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -330,6 +332,8 @@ matrices.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref} establish parts (a)--(e).
+
+:::
 
 :::
 
