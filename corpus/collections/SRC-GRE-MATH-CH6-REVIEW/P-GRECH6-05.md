@@ -26,6 +26,8 @@ When expressed in its usual decimal notation, the number $100!$ (that is, $100$ 
 (E) $50$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -79,6 +81,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested number of trailing zeros.
+
+:::
 
 :::
 
