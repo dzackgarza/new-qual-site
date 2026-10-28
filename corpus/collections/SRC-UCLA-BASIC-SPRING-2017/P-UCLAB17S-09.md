@@ -26,6 +26,8 @@ Let $(X,d)$ be a bounded metric space and suppose $C(X)$, with the supremum norm
 (b) Deduce that $X$ is separable.
 :::
 
+::: {.solution}
+
 For each
 \[
 x\in X,
@@ -340,6 +342,8 @@ This is the definition of separability.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
