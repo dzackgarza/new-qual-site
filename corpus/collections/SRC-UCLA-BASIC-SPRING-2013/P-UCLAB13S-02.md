@@ -32,6 +32,8 @@ If $f$ has continuous derivatives up to order three, prove that
 where $C$ does not depend on $f$.
 :::
 
+::: {.solution}
+
 Set
 \[
 m=\frac{a+b}{2},
@@ -378,6 +380,8 @@ Thus the estimate holds with the universal constant
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required Simpson-rule error bound.
+
+:::
 
 :::
 
