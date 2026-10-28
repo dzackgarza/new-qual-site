@@ -26,6 +26,8 @@ Let $p$ and $q$ be distinct primes. How many (mutually nonisomorphic) Abelian gr
 (E) $16$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -109,6 +111,8 @@ This is the count established in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number.
+
+:::
 
 :::
 
