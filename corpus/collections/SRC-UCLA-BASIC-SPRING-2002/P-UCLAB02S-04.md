@@ -21,6 +21,8 @@ audit:
 (b) Prove that a function $f:(0,1)\to\mathbb R$ is the restriction to $(0,1)$ of a continuous function $F:[0,1]\to\mathbb R$ if and only if $f$ is uniformly continuous on $(0,1)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -294,6 +296,8 @@ Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove the reverse implicatio
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-7){.pf-ref} proves part (b).
+
+:::
 
 :::
 
