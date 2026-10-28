@@ -26,6 +26,8 @@ Prove that $f$ is constant.
 
 The statement is false as printed.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -200,6 +202,8 @@ Hence no proof of the requested conclusion exists without an additional hypothes
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} already contradicts the claimed conclusion, and step [](#s1-5){.pf-ref} shows that the failure is not exceptional but occurs for every square of a nonconstant entire function.
+
+:::
 
 :::
 
