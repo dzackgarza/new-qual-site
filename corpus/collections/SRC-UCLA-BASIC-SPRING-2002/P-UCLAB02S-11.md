@@ -20,6 +20,8 @@ Let $V$ be a finite-dimensional real inner-product space and let $T,S:V\to V$ be
 Show that $V$ has an orthonormal basis consisting of vectors that are simultaneously eigenvectors of $T$ and $S$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -176,6 +178,8 @@ This is exactly the basis constructed in steps [](#s1-4){.pf-ref} through [](#s1
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
