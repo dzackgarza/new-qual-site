@@ -23,6 +23,8 @@ Find a subset $S\subset\mathbb R$ such that both of the following hold:
 (ii) $S$ is not a countable intersection of open sets.
 :::
 
+::: {.solution}
+
 Let
 \[
 S=(\mathbb Q\cap(-\infty,0))\cup((\mathbb R\setminus\mathbb Q)\cap(0,\infty)).
@@ -162,6 +164,8 @@ Step [](#s1-3){.pf-ref} proves condition (i), and step [](#s1-4){.pf-ref} proves
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested subset.
+
+:::
 
 :::
 
