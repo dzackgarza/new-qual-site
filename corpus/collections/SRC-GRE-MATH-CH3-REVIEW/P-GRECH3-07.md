@@ -26,6 +26,8 @@ If $L$ is the line through the point $A=(3,2,1)$ and parallel to the vector $\ma
 (E) $2x+10y-19z=7$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ which simplifies to $x+5y-z=12$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required plane equation and corresponding choice.
+
+:::
 
 :::
 
