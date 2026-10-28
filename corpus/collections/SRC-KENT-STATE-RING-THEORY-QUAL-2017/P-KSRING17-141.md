@@ -25,6 +25,8 @@ Let $\mathcal{I}$ be the set of ideals $I$ of $R$ such that there exists an $R$-
 Show that if $A \in \mathcal{I}$ is a maximal element of $\mathcal{I}$, then $A$ is a prime ideal of $R$.
 :::
 
+::: {.solution}
+
 Fix one of the three properties
 $$
 \mathsf P
@@ -616,6 +618,8 @@ Step [](#s1-3){.pf-ref} shows $A$ is proper, and step [](#s1-16){.pf-ref} gives 
 
 The argument applies verbatim when $\mathsf P$ is Artinian, Noetherian, or finite composition length.
 Thus step [](#s1-17){.pf-ref} proves all three versions of the problem.
+
+:::
 
 :::
 
