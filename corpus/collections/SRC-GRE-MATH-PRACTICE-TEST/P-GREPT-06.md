@@ -25,6 +25,8 @@ At how many points does the graph of the curve $y = x^5 + x^3 + x - 2000$ cross 
 (E) $5$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -92,6 +94,8 @@ from step [](#s1-1){.pf-ref} is unique.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested number of crossings.
+
+:::
 
 :::
 
