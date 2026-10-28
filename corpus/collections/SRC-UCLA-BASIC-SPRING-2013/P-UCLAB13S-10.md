@@ -32,6 +32,8 @@ Let $C$ be the set of matrices in $G$ commuting with $M$.
 (b) Find the dimension of $C$.
 :::
 
+::: {.solution}
+
 Write
 \[
 M=I+N,
@@ -392,6 +394,8 @@ This proves part (b).
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves that $C$ is an affine subspace, and step [](#s1-9){.pf-ref} computes its dimension.
+
+:::
 
 :::
 
