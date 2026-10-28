@@ -22,6 +22,8 @@ An orthogonal $n\times n$ matrix $A$ is called elementary if the corresponding l
 Prove that every orthogonal matrix $M$ is a product of at most $n-1$ elementary orthogonal matrices.
 :::
 
+::: {.solution}
+
 Assume
 \[
 n\ge2.
@@ -412,6 +414,8 @@ n-1.
 ::: pf-qed
 
 The base case is step [](#s1-3){.pf-ref} and the induction step is completed in step [](#s1-12){.pf-ref}.
+
+:::
 
 :::
 
