@@ -29,6 +29,8 @@ Under this number the source also prints, as parts (1) and (2), the Cauchy probl
 It is a separate problem, carried by its own card.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -131,6 +133,8 @@ If $f$ were uniformly continuous on $\CC$, pairs of points whose distance tends 
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves uniform continuity on every fixed open disk, and step [](#s1-3){.pf-ref} proves failure of uniform continuity on $\CC$.
+
+:::
 
 :::
 
