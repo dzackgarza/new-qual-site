@@ -35,6 +35,8 @@ For $U\subset V^*$, define
 Give an explicit isomorphism between $(V/W)^*$ and $W^\perp$, and prove that it is an isomorphism.
 :::
 
+::: {.solution}
+
 Let
 $$
 S\coloneqq\operatorname{span}(W).
@@ -187,6 +189,8 @@ By steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}, $\Phi$ is a linear bijec
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
+
+:::
 
 :::
 
