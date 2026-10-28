@@ -19,6 +19,8 @@ A subset $D\subseteq X$ is called dense if $\overline D=X$.
 2. Show that if $A$ is open in $X$ and $D$ is dense in $X$, then $D\cap A$ is dense in $A$.
 :::
 
+::: {.solution}
+
 ## Part 1
 
 ::: pf
@@ -280,6 +282,8 @@ This is step [](#s1-13){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers part 1, and step [](#s1-14){.pf-ref} proves part 2.
+
+:::
 
 :::
 
