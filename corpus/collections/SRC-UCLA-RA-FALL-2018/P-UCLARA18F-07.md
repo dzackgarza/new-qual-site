@@ -28,6 +28,8 @@ is Lebesgue-area integrable:
 Prove that $f$ is constant.
 :::
 
+::: {.solution}
+
 Put \(u(z)=\log|f(z)|\).
 
 ::: pf
@@ -116,6 +118,8 @@ Step [](#s1-3){.pf-ref} contradicts the assumed absolute integrability of \(U=u\
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
