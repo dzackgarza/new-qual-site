@@ -29,6 +29,8 @@ Prove that if
 then $A$ and $B$ are similar.
 :::
 
+::: {.solution}
+
 For each eigenvalue $\lambda_i$, let
 \[
 m_i
@@ -257,6 +259,8 @@ Step [](#s1-6){.pf-ref} gives exactly this agreement.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
