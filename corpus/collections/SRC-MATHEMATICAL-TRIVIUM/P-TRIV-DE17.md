@@ -37,6 +37,8 @@ Find G(t) when
 (c) $k > \Omega > 0$ (overdamped system)
 :::
 
+::: {.solution}
+
 Take $G$ to be the retarded Green function, so $G(t)=0$ for $t<0$. Write
 \[
 L=\frac{d^2}{dt^2}+2k\frac d{dt}+\Omega^2.
@@ -140,6 +142,8 @@ Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} solve $LG=0$ for $t\ne0$ and
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} establishes the three requested formulas and states the boundary condition under which they are uniquely determined.
+
+:::
 
 :::
 
