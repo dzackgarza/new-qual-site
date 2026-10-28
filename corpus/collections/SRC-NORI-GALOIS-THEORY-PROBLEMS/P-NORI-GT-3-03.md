@@ -26,6 +26,8 @@ Let $E _ { n + 1 }$ be a field extension of $E _ { n }$ obtaing by adjoining a s
 Show that $\mathrm { d e g } ( E _ { n } / E _ { n - 1 } ) = 2$ for all $n > 0$
 :::
 
+::: {.solution}
+
 Write
 \[
 p-1=2^k m
@@ -470,6 +472,8 @@ Step [](#p2-s1-3){.pf-ref} is the base case. Steps [](#p2-s1-4){.pf-ref} and [](
 ::: pf-qed
 
 Step [](#p2-s1-11){.pf-ref} is exactly the assertion of the problem.
+
+:::
 
 :::
 
