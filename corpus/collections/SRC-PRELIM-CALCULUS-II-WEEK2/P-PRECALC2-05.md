@@ -15,6 +15,8 @@ review: draft
 Compute $\int { \frac { x + 2 } { x ^ { 3 } - x ^ { 2 } + 2 x - 2 } } d x .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -298,6 +300,8 @@ Combine steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the requested antiderivative.
+
+:::
 
 :::
 
