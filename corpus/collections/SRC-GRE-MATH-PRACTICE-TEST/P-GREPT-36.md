@@ -25,6 +25,8 @@ Let $f(x)$ be a function whose graph passes through the origin. If $f(2n) = n^2 
 (E) Cannot be determined from the information given
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -94,6 +96,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
