@@ -32,6 +32,8 @@ is false.
 (c) A sequence $(f_n)$ of real-valued functions $\mathbb R\to\mathbb R$ which converges pointwise but not uniformly.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -233,6 +235,8 @@ In particular the supremum does not tend to $0$.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} provide the three requested examples and verify their
 properties.
+
+:::
 
 :::
 
