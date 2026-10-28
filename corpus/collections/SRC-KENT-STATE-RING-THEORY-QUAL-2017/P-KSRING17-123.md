@@ -20,6 +20,8 @@ Let D be an integral domain and F its field of fractions.
 Let P be a prime ideal in D and $D _ { P } = \{ a b ^ { - 1 } \mid a , b \in D , \ b \notin P \} \subseteq F$ . Show that $D _ { P }$ has a unique maximal ideal.
 :::
 
+::: {.solution}
+
 Define
 $$
 M
@@ -488,6 +490,8 @@ Step [](#s1-10){.pf-ref} proves uniqueness, and the displayed description is the
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
