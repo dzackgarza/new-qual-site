@@ -15,6 +15,8 @@ review: draft
 What is the tangent line to the graph of $y = x + e ^ { x }$ at $x = 0 ?$
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)=x+e^x.
@@ -121,6 +123,8 @@ Simplify the equation in step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested tangent line.
+
+:::
 
 :::
 
