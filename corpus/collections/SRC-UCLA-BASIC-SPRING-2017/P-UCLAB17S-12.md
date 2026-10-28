@@ -24,6 +24,8 @@ F(y;t)=y^4+t y^2+t^2y.
 Show that $F(\,\cdot\,;t)$ attains its global minimum at a unique point $y_0(t)$.
 :::
 
+::: {.solution}
+
 Fix
 \[
 t\in\mathbb R.
@@ -534,6 +536,8 @@ These cases exhaust all real $t$.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
