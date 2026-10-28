@@ -27,6 +27,8 @@ $$
 is defined here for an odd prime $p$. Thus the intended hypothesis is that $p$ is odd.
 :::
 
+::: {.solution}
+
 Assume $p$ is an odd prime and
 $$
 \gcd(a,p)=1.
@@ -213,6 +215,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give exactly these two congruenc
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is Euler's criterion.
+
+:::
 
 :::
 
