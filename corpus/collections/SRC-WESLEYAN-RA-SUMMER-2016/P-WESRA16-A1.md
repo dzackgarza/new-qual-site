@@ -27,6 +27,8 @@ Prove that either
 2. $\lambda(W_n)>0$ for some $n$.
 :::
 
+::: {.solution}
+
 Let
 $$
 M=\{x\in\mathbb R^d:0<f(x)<1\}.
@@ -133,6 +135,8 @@ If $\lambda(W_n)>0$ for some $n$, then alternative (2) holds. Otherwise $\lambda
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required dichotomy.
+
+:::
 
 :::
 
