@@ -25,6 +25,8 @@ Determine the slope of the curve $y = x^{\pi} - \pi^{x}$ at the point $(\pi, 0)$
 (E) $0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ Step [](#s1-2){.pf-ref} evaluates the derivative at the specified point.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required slope.
+
+:::
 
 :::
 
