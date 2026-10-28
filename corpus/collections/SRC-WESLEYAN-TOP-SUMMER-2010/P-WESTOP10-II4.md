@@ -36,6 +36,8 @@ For each source space:
 4. if it is a compact connected surface, identify it in the classification as $S^2$, a connected sum of tori, or a connected sum of real projective planes.
 :::
 
+::: {.solution}
+
 Write the quotient spaces as
 $$
 X_1,qquad X_2,qquad X_3
@@ -635,6 +637,8 @@ This is exactly the content of steps [](#s1-3){.pf-ref} through [](#s1-16){.pf-r
 ::: pf-qed
 
 Step [](#s1-17){.pf-ref} answers parts (a)--(d).
+
+:::
 
 :::
 
