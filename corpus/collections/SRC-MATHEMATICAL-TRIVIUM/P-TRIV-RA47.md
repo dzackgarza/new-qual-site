@@ -97,7 +97,7 @@ $$
 x e^{-x^2/2}e^{-ipx}
 \,dx
 =
--ip,I(p).
+-ip\,I(p).
 $$
 
 
@@ -109,7 +109,7 @@ $$
 \int x e^{-x^2/2}e^{-ipx}\,dx
 &=
 -\int
-\frac{d}{dx}left(e^{-x^2/2}\right)e^{-ipx}\,dx\\
+\frac{d}{dx}\left(e^{-x^2/2}\right)e^{-ipx}\,dx\\
 &=
 -\left[e^{-x^2/2}e^{-ipx}\right]_{-\infty}^{\infty}
 +
