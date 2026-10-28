@@ -36,6 +36,8 @@ B=\begin{pmatrix}1&0&0\\0&1&1\\1&1&0\end{pmatrix},
 find $B^{-1}$ by row reduction.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -183,6 +185,8 @@ is $I_3$, so the right block is $B^{-1}$, giving part (c).
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} records all requested quantities.
+
+:::
 
 :::
 
