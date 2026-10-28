@@ -23,6 +23,8 @@ f(x)=0
 for every integer $x$. Prove that for each $n\in\mathbb N$, the $n$th derivative $f^{(n)}$ has at least one root.
 :::
 
+::: {.solution}
+
 We prove the stronger statement that every derivative
 \[
 f^{(n)}
@@ -269,6 +271,8 @@ This is immediate from the stronger conclusion in step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
