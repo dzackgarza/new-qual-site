@@ -24,6 +24,8 @@ Expand the expression $e ^ { - \lambda B } A e ^ { \lambda B }$
 (b) to any order in λ.
 :::
 
+::: {.solution}
+
 Define
 $$
 F(\lambda)
@@ -241,6 +243,8 @@ Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the expansion to arbitr
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-9){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
