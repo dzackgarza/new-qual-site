@@ -30,6 +30,8 @@ f(z)=-\pi z\cot(\pi z).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -286,6 +288,8 @@ The power series in step [](#s1-7){.pf-ref} converges on $|z|<1$ and is the Tayl
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), and step [](#s1-8){.pf-ref} proves part (b).
+
+:::
 
 :::
 
