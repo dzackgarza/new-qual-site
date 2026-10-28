@@ -25,6 +25,8 @@ $$
 Prove that there exists a differentiable function $f ( x , y )$ defined in an open neighborhood N of $( 1 , 1 )$ in $\mathbf { R } ^ { 2 }$ such that $f ( 1 , 1 ) = 1$ and $( x , y , f ( x , y ) )$ lies in S for all $( x , y ) \in \mathcal { N }$
 :::
 
+::: {.solution}
+
 Define
 \[
 G(x,y,z)
@@ -218,6 +220,8 @@ Step [](#s1-5){.pf-ref} gives the differentiable function with
 f(1,1)=1,
 \]
 and step [](#s1-6){.pf-ref} proves that its graph lies on the surface $S$ near $(1,1,1)$.
+
+:::
 
 :::
 
