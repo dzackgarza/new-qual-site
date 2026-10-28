@@ -34,6 +34,8 @@ The displayed equality in the problem holds when the scalar logarithm of
 $\det A$ is chosen compatibly with the matrix logarithm.
 :::
 
+::: {.solution}
+
 Let $L$ be a matrix logarithm of $A$, so
 $$
 e^L=A.
@@ -169,6 +171,8 @@ step [](#s1-3){.pf-ref}. Then the integer $k$ in step [](#s1-4){.pf-ref} is zero
 
 Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} give the precise branch-independent identity and the source's
 formula under compatible choices.
+
+:::
 
 :::
 
