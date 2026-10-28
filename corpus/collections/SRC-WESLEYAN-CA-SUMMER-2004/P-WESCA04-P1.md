@@ -24,6 +24,8 @@ Let $f$ be entire and suppose
 Show that $f$ is constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -181,6 +183,8 @@ connected plane $\mathbb C$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
